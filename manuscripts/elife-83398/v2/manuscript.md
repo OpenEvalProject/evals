@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03qxff017 Institute of Environmental Sciences, Hebrew University Rehovot Israel
+1. Institute of Environmental Sciences, Hebrew University Rehovot Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
@@ -26,21 +26,53 @@ Despite a strong theoretical foundation, empirical studies in recent years have 
 
 In our research, we used high-throughput nanodroplet-based microfluidics to measure over 14,000 bacterial communities composed of subsets of a library of 61 soil and leaf isolates of which six were fluorescently labeled (Figure 1). We quantified the effect of individual species and the joint effects of species pairs and trios on the growth of six focal bacterial species and found that the effects of multiple species are dominated by the strongest single-species effect, and specifically that negative effects combine non-additively.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-v2.jpg)
+
+**Figure 1.:** (A) A library of 61 soil and leaf-associated bacterial strains was used in this experiment. All strains are from four orders: Proteobacteria (orange), Firmicutes (blue), Bacteroidetes (purple), and Actinobacteria (green) (full list in Supplementary file 1a, Source data 1). Also, 6 of the 61 species were labeled with GFP and used as ‘focal’ species whose growth was tested in the presence of the other isolates (affecting species). These strains are labeled on the phylogenetic tree (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA].) (B) Each focal species was grown in monoculture, with (between 18 and 52) single affecting species, and (between 153 and 1464) pairs of affecting species. Additionally, E. coli was grown with 3009 trios of affecting species. (C) Effects of pairs and trios were then predicted using the effects of single species and single species and pairs, respectively. Predictions were made using three different models: additive, mean, and strongest (detailed in ‘Results’ and ‘Materials and methods’). (D) Equation used for calculating the effect of an affecting species on the focal species.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Droplets contained one of three different types of samples: (1) focal monoculture, containing only the focal species, (2) coculture of focal species and a single affecting species at an optical densities ratio of 2:1, and (3) blank samples, with media but no bacterial cells. Based on which two or three droplets (depending on the experimental setup) each well contained either a focal monoculture, one, two or three, affecting species. Similar communities started at different initial densities based on how many monoculture or blank droplets were in the well, but as shown in Figure 1—figure supplement 2, initial densities did not influence the effect on the focal. Ratios of focal species to affecting species 1 and 2 are detailed for different well setups.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Correlation between different ratios of initial optical density in each well. (A) Different ratios of focal to affecting species based on whether there were two droplets containing the affecting species or one and one focal monoculture droplet: nRMSE = 0.22. (B) Different ratios of focal to affecting species based on whether there were three droplets containing the affecting species or one and two focal monoculture droplets: nRMSE = 0.16. (C) Different ratios of affecting species based on whether there were two droplets containing affecting species A and one droplet containing affecting species B or vice versa: nRMSE = 0.24.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Each strain’s yield on 20 different carbon sources, assayed after 48 hr. Growth values are calculated as mean OD600 measurement from three replicates and were background-subtracted (media with no bacteria).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Each strain’s ability to grow on 11 different antibiotics after 48 hr. Growth values are calculated as mean OD600 measurement from three replicates and were background-subtracted (media with no bacteria).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Growth in kChip of each focal strain in monoculture over 72 hr. Growth is measured by fluorescent signal and each well is normalized to the value at the beginning of the experiment (all signals at time zero are equal to one). The solid line represents the mean, and the shaded area the 95% confidence interval.
+
 ## Results
 
 We conducted high-throughput assays involving 61 affecting species and 6 different focal species to understand the effects of single species, pairs, and trios on the growth of a given (focal) species. The 61 affecting species included soil and leaf isolates as well as lab strains representing 19 genera from four phyla: Proteobacteria (n = 14), Firmicutes (n = 2), Bacteroidetes (n = 2), and Actinobacteria (n = 1) (full list in Supplementary file 1, Source data 1). The focal species were a subset of six of these species (all proteobacteria) that were transformed to constitutively express a fluorescent protein: (Escherichia coli [EC], Ewingella americana [EA], Raoultella planticola [RP], Buttiauxella izardii [BI], Citrobacter freundii [CF], and Pantoea agglomerans [PA]) (see ‘Materials and methods’). Except for EC, which is a lab strain (E. coli K-12 substr. MG1655), all focals were isolated from soil samples (Kehe et al., 2021). First, we characterized each species phylogenetically by performing Sanger sequencing of their 16S ribosomal RNA gene and phenotypically by growing each species on each of 20 different carbon sources and 11 antibiotics. The species showed large variability in carbon utilization profiles with no species growing well on all carbon sources (Figure 1—figure supplement 3). There was also high variability in growth on antibiotics with 15 species showing little or no growth on any antibiotics, while 16 species showed resistance to at least seven antibiotics (Figure 1—figure supplement 4).
 
 We performed the interaction assays in the kChip microfluidics device (Kulesa et al., 2018; Kehe et al., 2019), allowing for extensive screening in parallel (see ‘Materials and methods,’ Figure 1—figure supplement 1). We measured the effects of 243 single species (18–52 for each of the six focal species), the joint effects of 5357 species pairs (between 153 and 1464 for each of the six focal species), and the joint effects of 3009 species trios (from a subset of 26 affecting species on one focal species). Cultures were normalized and mixed after pre-growth, such that the starting densities in the kChip were approximately 1:1 for all species in wells containing two droplets and two affecting species, but ratios varied in three droplet wells (see ‘Materials and methods,’ Figure 1—figure supplements 1 and 2). Interaction assays were carried out in minimal M9 media with 0.5% [w/v] glucose for 24 hr. The growth of the focal species was measured by fluorescence, and effects were calculated as the log ratio of growth in coculture to growth in monoculture (see ‘Materials and methods,’ Figure 1D). Positive and negative effects are defined as a net increase or decrease in growth compared to the monoculture respectively, while affecting species with no observable effect (see ‘Materials and methods’) were defined as neutral.
 
-## Joint effects of species pairs tend to be stronger than those of individual affecting species
+### Joint effects of species pairs tend to be stronger than those of individual affecting species
 
 We started our interaction assays by measuring the individual effects of single affecting species on each of the focal species (see ‘Materials and methods’). Individual effects covered a wide range (median = −0.15, interquartile range = 0.94) (Figure 2A), and positive effects (the focal species reaching a higher density in the presence of an affecting species than in monoculture) were common overall (32.9%, Figure 2B), in line with previous studies (Kehe et al., 2021). The distribution of effects varied based on the focal species, with E. coli and B. izardii showing the most negative (–2.83) and positive (+0.43) median effects, respectively (Figure 2D). Additionally, we found no affecting species that had strong effects across all focal species (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of the effects of single and pairs of affecting species on all focal species. Mann–Whitney–Wilcoxon test two-sided, p-value = 1e-9. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range. (B, C) Distribution of qualitative effects of single and pairs of affecting species respectively on all focal species. (D) Distribution of the effect of single and pairs of affecting species for each focal species individually. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range. Mann–Whitney–Wilcoxon test two-sided tests were performed for each focal species, and p-values are shown on the graph.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Distributions of the weakest effect of each individual species and pairs measured as the percentile within the distributions of effects for a single focal species (for affecting species that were measured against atleast four focal species). For each species or pair, the minimal value from all focals was taken to generate the above distributions. Sign was not regarded in this calculation, only strength of the effect. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range. Mann–Whitney–Wilcoxon test two-sided tests were performed, and p-value is shown on the graph.
 
 The measured traits of individual species showed no consistent correlations with their effects on the focal species. In particular, the similarity of metabolic profile, resistance profile, or phylogeny between the focal and affecting species did not correlate strongly with the effect across focal species. Some traits showed little to no correlation for most focals (e.g., antibiotic resistance), while other traits were correlated with effect for a number focal species but not all (e.g., phylogenetic distance). Most of these correlations were not statistically significant (Figure 3—figure supplement 1A).
 
 After characterizing the individual effects of all single species, we assayed each pair of affecting species against the focal species. Overall, negative effects were significantly more prevalent in joint pair effects (77.1%) than in effects of individual species (60.5%) (p=1.3e-9, Fisher’s exact test) (Figure 2B and C). The median effect on each focal was more negative by 0.28 on average, though the difference was not significant in all cases; additionally, focals with mostly positive single-species interactions showed a small increase in median effect (Figure 2D). Despite this, the minimum and maximum effects for each focal species remained similar. As with the single affecting species, pairs’ joint effects did not correlate well with species traits, with similarity between the two affecting species, or with their similarity to the focal species (Figure 3—figure supplement 1B). These results indicate that it may be challenging to connect the effects of single and pairs of species on a focal strain to a specific trait of the involved strains using simple analysis.
 
-## Negative effects combine non-additively and joint effects are dominated by the stronger single-species effect
+### Negative effects combine non-additively and joint effects are dominated by the stronger single-species effect
 
 Next, we examined how the effects of individual species relate to their joint effect. In particular, we were interested in finding a model that describes the effects of pairs based on the data from single-species effects. Based on previous studies' success in predicting community structure from pairwise interactions (Friedman et al., 2017; Meroz et al., 2021; Guo and Boedicker, 2016; Venturelli et al., 2018), we posited that predicting how effects combine based solely on the effects of the single species should also be feasible. To do so, we considered three models: an additive effect model, a mean effect model, and a strongest effect model.
 
@@ -48,13 +80,49 @@ The additive effect model proposes that the effects of each species on the focal
 
 When measured across all species and interaction types, we found that the model that best agrees with the measured effects is the strongest effect model (Figure 3B).Though supplementing the mean model with additional species information (i.e., carrying capacity) did improve the model accuracy, it was still less accurate than the strongest effect model (Figure 3—figure supplement 2). The accuracy of the models and identity of the best-fitting model varied across interaction types. The strongest effect model was the most accurate overall (nRMSE = 0.46, 0.32, and 0.16 for the additive, mean, and strongest models, correspondingly), and considerably more accurate when both species affected the focal negatively (nRMSE = 0.65, 0.25, and 0.16). The additive model was slightly more accurate when one effect was negative and the other positive (nRMSE = 0.14, 0.43, and 0.16). Overall, predictions when both effects were positive were less accurate, but here too the strongest model gave the most accurate predictions (nRMSE = 0.81, 0.78, and 0.69) (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-v2.jpg)
+
+**Figure 3.:** (A) Graphical representation for each model. The additive model assumes that the effects of each species will accumulate, indicating they are acting independently, and are unaffected by one another. The mean model assumes the combined effect will be an average of the two single-species effects. The final model, strongest effect, assumes that whichever species had a stronger effect on its own will determine the joint effect when paired with an additional species. The y-axis represents the growth of the focal species in different conditions, and in these examples effects are negative. (B) Comparison of predicted effects and the experimental data, with their respective root mean squared error normalized to the interquartile range of the observed data (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see ‘Materials and methods’). Each dot represents the joint effect of a pair of affecting species on a focal species. Colors indicate the signs of the measured effects of the individual affecting species. (C) Similar to panel (B), but data is stratified by interaction signs of the individual affecting species.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Spearman correlation value for traits of (A) single species and (B) pairs and effect on species separated for each focal species individually. Correlations with p-values<0.05 are highlighted with a black frame. The growth rate and maximum OD shown in panel (A) were measured only in M9 glucose, similar to conditions used in the interaction assays. See ‘Materials and methods’ for calculations of phenotypic and phylogenetic distances.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Correlation between four different models for how single-species effects combine into pair effects and the experimental data, with their respective normalized root mean squared error (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see ‘Materials and methods’). Similar to Figure 3B with the addition of the OD-weighted mean.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The accuracy of each model as a function of the difference between the sizes of effect of each individual species within the pair. (B) Distribution of the prediction accuracy for each model. Dots represent individual measurements, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range. The frequencies of these interaction types in the dataset are negative–negative 48%, positive–positive 14%, and negative–positive 38%.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Pearson correlation value for each trait and the deviation of the model. Correlations with p-values<0.05 are highlighted with a black frame. See ‘Materials and methods’ for calculations of phenotypic and phylogenetic distances.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Correlation between the different models for how single-species effects combine into pair effects, and the experimental data, with their respective normalized root mean squared error. Negative effects and mixed effects were limited to pairs with a combined effect no stronger than –1.2 (the maximum positive effect observed). As the negative–negative and negative–positive predictions become less accurate with these datasets, we posit part of the reason positive–positive interactions were difficult to predict is due to their small effect size.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Correlation between the different models for how single-species effects combine, and the experimental data, with their respective normalized root squared mean error. Data is divided for each focal species and interaction type individually.
+
 The distribution of errors further supported the strongest effect model (Figure 3B, Figure 3—figure supplement 3B): When both single-species effects were negative, the mean model was prone to underestimating the combined effect due to the reduction of the stronger effect by taking into account the weaker effect; while contrastingly, the additive model overestimated effects due to the addition of the weaker effect to the stronger effect, which was more accurate on its own. We saw the opposite trend when both single-species effects were positive, and no particular trend when there was one positive and negative effect. As with the effects themselves, model accuracy was not strongly correlated with any specific species trait (Figure 3—figure supplement 4).
 
 In regard to negative effects, support for the strongest model is also evident in how the difference in size of effect influences the model accuracy (Figure 3—figure supplement 3A). When effects are close to equal, the mean model is fairly accurate while the additive model does particularly poorly as these effects would be calculated as twice the strongest effect. Contrastly, when one effect is much stronger than the other, the additive model is accurate since the addition of the weak effect is negligible, whereas the mean model underestimates the joint effects by taking into account the weaker effect.
 
-## The strongest effect model is also the most accurate for larger communities
+### The strongest effect model is also the most accurate for larger communities
 
 With this information in hand, we were interested to see whether the same rules held up for larger communities. To this end, we screened trios of a subset (i.e., 26) of the affecting species against a single focal species (E. coli) and found similar trends to all those seen for pairs of affecting species. Similar to what was observed in the move from single species to pairs, effects were stronger (in this case more negative effects) in trios than in the pairs (Figure 4C). Additionally, as with joint pairs’ effects, the strongest effect model was more accurate than the additive and mean models (nRMSE = 2.65, 1.23, and 0.63 for the additive, mean, and strongest models, correspondingly), which is consistent with the fact that the single-species effects in this subset were predominantly negative. Similar distributions of error were seen as in the pairs’ effects, but further exaggerated with the more extreme under and overestimation of the combined trios’ effects by the mean and additive models, respectively (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Correlation between three different models for how (A) single-species effects and (B) pairwise species effects combine into trio effects, and the experimental data. Root squared mean error normalized (nRMSE) to the interquartile range. nRMSE values are calculated from 1000 datasets and represent the median and interquartile range in parentheses (see ‘Materials and methods’). (C) Distribution of the effects of single, pairs, and trios of affecting species on E. coli. All Mann–Whitney–Wilcoxon two-sided tests were significant, p values are shown on plot. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range. (D, E) Distribution of errors for each model based on (D) single-species data and (E) pairs data. Dots show individual effects, solid lines represent the median, boxes represent the interquartile range, and whiskers are expanded to include values no further than 1.5× interquartile range.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83398/elife-83398-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Correlation between four different models for how single-species effects combine into trio effects and the experimental data, with their respective normalized root mean squared error (nRMSE). nRMSE values are calculated from 1000 bootstrapped datasets and represent the median and interquartile range in parentheses (see ‘Materials and methods’). Similar to Figure 4A with the addition of the OD-weighted mean.
 
 We further explored the additive, mean, and strongest models in trios by basing the model on effects of the three pairs comprising each trio (i.e., joint effect of AB, AC, BC to predict effect of ABC), as opposed to only using single-effect data (i.e. ,effect of A, B, C on their own) (Figure 4A and B). The effects of single species and pairs were measured again independently in this experiment (see ‘Materials and methods,’ Figure 1—figure supplement 1). The move to pairs-based predictions improved the accuracy for both the mean and strongest model, while further pushing the additive predictions away from the observed effects (Figure 4B). These data suggest that even in the presence of additional species the strongest single-species effect still dominates the combined effect of a community.
 
@@ -74,47 +142,67 @@ Further work is needed in order to deepen our understanding of how multiple spec
 
 ## Materials and methods
 
-## Strain isolation from soil samples
+### Strain isolation from soil samples
 
 Soil (50 ml of soil, taken from a depth of ~30 cm) and leaf samples (multiple leaves from a single plant combined into a sterile 50 ml tube) were collected from various locations in the Faculty of Agriculture in Rehovot, Israel, on multiple dates (See Source data 1 file for more information). Each sample was diluted in phosphate-buffered saline (PBS) directly after collection (1 g of soil or one leaf in 10 ml of PBS) and vortexed for 5 min. 100 μl of multiple dilutions of this mixture (10–2-10–5) were seeded on different solid media NB (0.5% [w/v] peptone, 0.3% [w/v] yeast extract, 1.5% [w/v] agar); 1% NB (0.005% [w/v] peptone, 0.003%[w/v] yeast extract, 1.5% agar); M9 minimal media (0.1 mM CaCl2, 2 mM MgSO4, 1× [Enco-teknova] trace metals, 1% [w/v] glucose, 1× [Sigma] M9 Salts), additional plates were made with the same media containing various antibiotics (antibiotics and respective concentrations are listed in Supplementary file 1b) Plates were incubated at 30°C, and colonies were restreaked on NB without antibiotics until single isolates were stably obtained. Strains were selected on the basis of multiple criteria: growth of transferred colony in NB liquid medium (30°C), frozen glycerol stock revival in NB (OD600 > 0.1) (30°C), and subsequent growth on M9 minimal media + 1% (w/v) glucose (OD600 > 0.1) (30°C). Isolates were kept in single tubes as well as 96-well plates in 50% NB + 50% glycerol (glycerol stock were 60% and 80% for tubes and plates, respectively, for 30% and 40% final glycerol concentrations).
 
-## Strain identification and phylogenetic distance calculation
+### Strain identification and phylogenetic distance calculation
 
 Each bacterial isolate was classified phylogenetically with its 16S rRNA gene sequence. The full 16S gene sequences (~1500 base pairs) were obtained via Sanger sequencing and classified with a combination of RDP Classifier (Cole et al., 2014) and BLAST (Altschul et al., 1990) (list of strains in Supplementary file 1, full phylogenetic data in Source data 1). Phylogenetic distance was calculated in Geneious Prime software (version 2022.2.1, Biomatters Ltd). Sequences were aligned using MUSCLE alignment. Phylogenetic tree was built using the UPGMA method with no outgroup and a HKY genetic distance model. The pairwise phylogenetic distances between strains were calculated directly from the patristic distances of the phylogenetic tree.
 
-## Phenotypic profiling and distance calculation
+### Phenotypic profiling and distance calculation
 
 Bacterial strains were seeded from –80 stock directly into 1 ml LB medium (1% [w/v] tryptone, 1% [w/v] NaCl, 0.5% [w/v] yeast extract) in 96-well plate and grown overnight at 30°C at 900 RPM (on a Titramax 100; Heidolph Instruments, Schwabach, Germany). Cells were washed three times by centrifugation as 3600 rcf, removal of supernatant, and resuspension in M9 minimal media with no carbon. Cultures were then normalized to 0.01 OD600. 20 μl of the normalized cultures were added to 180 μl of M9 minimal media either containing 1% [w/v] of one of 20 carbon sources (Supplementary file 1) or M9 minimal media with 1% [w/v] glucose and one of 11 antibiotics (antibiotics and respective concentrations are listed in Supplementary file 1). Plates were grown at 30°C for 48 hr without shaking. Cultures were homogenized by shaking (on a Titramax 100) for 90 s before measuring OD600. Additionally, species were also grown in M9 minimal media (with the addition of 0.05% [w/v] BSA and 1% [w/v] glucose) with shaking (continuous double orbital shaking, 282 cpm) at 30°C, with OD measurements every 15 min, for 48 hr, to obtain growth kinetics (in Epoch and Synergy H1 microplate readers). Growth for carbon source experiments was normalized to the carbon source with the highest OD600 and antibiotic experiments were normalized to growth on M9 minimal media with glucose and no antibiotics. Euclidean distances of normalized values were measured for each species on carbon sources and antibiotics separately, and used to construct distance matrices. Growth kinetics (i.e., growth rate and carrying capacity) were not included in these profiles, but measured independently for correlation to effect size.
 
-## Droplet preparation and culturing
+### Droplet preparation and culturing
 
 Bacterial strains were seeded from –80 stock directly into 1 ml LB medium (1% [w/v] tryptone, 1% [w/v] NaCl, 0.5% [w/v] yeast extract) in 96-well plate and grown overnight at 30°C at 900 RPM (on a Titramax 100). Cells were washed three times by centrifugation as 3600 rcf for 3 min, removal of supernatant, and resuspension in M9 minimal media (with the addition of 0.05% [w/v] BSA and 1% [w/v] glucose). Affecting species cultures were then normalized to 0.04 OD600 and focal species cultures were to 0.02 OD600. Affecting and focal species cultures were combined at a ratio of 1:1 so that droplets contained a final concentration of 0.02 OD600 affecting species and 0.01 OD600 focal species. Each well contained droplets with the same focal species such that with this setup, in a well containing two droplets of different affecting species, the starting OD600 of each species is 0.01 (as each affecting species is diluted by the other droplet in which it is not contained, but the focal species is not). In wells with three droplets, the starting ratio of the focal to each affecting species (assuming different species in each droplet) was 3:2. When one of the droplets contains a monoculture of the focal or is empty, or more than one droplet contains the same affecting species, these ratios change (see Figure 1—figure supplement 1).
 
 Droplets were produced on a Bio-Rad QX200 Droplet Generator as described by Kulesa et al., 2018 Briefly, 20 μl input of combined cultures were emulsified into ~20,000 1 nl droplets in fluorocarbon oil (3M Novec 7500) stabilized with 2% (w/w) fluorosurfactant (RAN Biotech 008 FluoroSurfactant). 2.5 mM of fluorescent dyes (Thermo Fisher AlexaFluor: 555 [A33080], 594 [A33082], 647 [A33084]) were added to culture for droplet imaging (see Kulesa et al., 2018). For each kChip loading, about 5000 droplets for each input (~60 affecting species + focal species, 2 focal species monocultures, 2 blank cultures) were generated for a total of ~320,000 droplets. Droplets were generated together for 2 kChips (technical replicates), and then droplets were pooled separately for each chip. kChips were incubated at 30°C for 72 hr. Cultures were imaged at 24 hr intervals throughout the experiment. Data for analysis was taken from after 24 hr as monoculture growth of the focals saturated by this point (Figure 1—figure supplement 5).
 
-## Fluorescence labeling and assays
+### Fluorescence labeling and assays
 
 Focal species were transformed with commercially available plasmid pMRE132 containing GFP2 by Kehe et al., 2021. Fluorescence has some caveats as a measurement for biomass, as fluorescent signal is not always directly proportional to biomass, expression levels can vary in different physiological states, and signal stability can differ between strains. Nonetheless, as described in Appendix 1, we show that effect sizes assayed using fluorescence and standard OD600 are well correlated (Appendix 1—figure 1).
 
-## Data filtering and normalization
+### Data filtering and normalization
 
 As the kChip genreates droplet combinations stochastically, the amount of replicates for each community is different, ranging from 1 to 285, with a mean of 19. All communities with less than three replicates were not used in the analysis. Additionally, isolates were only used with focals whose monocultures were at least five times larger than the isolates autofluorescence signal, allowing to measure effects of at least –1.5. Full datasets without autofluorescence filtering can be seen in Appendix 1—figure 3. Importantly, affecting species autofluorescence would weaken measured negative effects and would not systematically generate artifacts that support the strongest effect model. Normalization was performed by subtracting the starting value for each individual well from the additional time points.
 
-## Calculating effect size
+### Calculating effect size
 
-To measure the effect of each affecting species on a given focal species, the log of the ratio of focal species yield in coculture (median of coculture replicates) to monoculture (median of monoculture replicates) was calculated:.Effecti= log(Median growth of focal in coculture with species iMedian growth of focal in monoculture)
+To measure the effect of each affecting species on a given focal species, the log of the ratio of focal species yield in coculture (median of coculture replicates) to monoculture (median of monoculture replicates) was calculated:
+
+$$
+Effect_{i}= log(\frac{Median growth of focal in coculture with species i}{Median growth of focal in monoculture})
+$$
 
 Coculture data was collected from wells with different starting concentrations in both the two-droplet experiments (i.e., one mixed droplet and one focal monoculture) and three-droplet experiments (i.e., two droplets of affecting species A and one droplet of affecting species B and vice versa, or one of each in addition to a blank droplet) (Figure 1—figure supplement 1). Our data showed that the different initial fractions did not influence the effect on the focal species (Figure 1—figure supplement 2). The standard error was calculated via bootstrapping, 100 calculations of the resampled median coculture divided by resampled median monoculture. Effects where the standard deviation was larger than the absolute value of the effect were classified as neutral.
 
-## Calculating predictions for different models and their accuracy
+### Calculating predictions for different models and their accuracy
 
-The additive model assumes that the effects of each species will accumulate, and is the combined effect is the sum of effects, calculated asEffect(1...n)=Effect1+...+Effectn
+The additive model assumes that the effects of each species will accumulate, and is the combined effect is the sum of effects, calculated as
 
-The mean model assumes the combined effect will be an average of the two single species effects and is calculated asEffect(1...n)= Effect1+...+Effectnn
+$$
+Effect_{(1...n)}=Effect_{1}+...+Effect_{n}
+$$
 
-The OD-weighted mean model weighs the mean of effects by the affecting species’ maximum OD600 in the growth curves experiment and is calculated asEffect(1...n)= Effect1∗maxOD6001+...+Effectn∗maxOD600nmaxOD6001+...+∗maxOD600n
+The mean model assumes the combined effect will be an average of the two single species effects and is calculated as
 
-The strongest effect model assumes that whichever species had a stronger effect on its own will determine the joint effect when paired with an additional species. It is calculated asEffect1…n=argmax |E|E∈[Effect1,…, Effectn]
+$$
+Effect_{(1...n)}= \frac{Effect_{1}+...+Effect_{n}}{n}
+$$
+
+The OD-weighted mean model weighs the mean of effects by the affecting species’ maximum OD600 in the growth curves experiment and is calculated as
+
+$$
+Effect_{(1...n)}= \frac{Effect_{1}∗max_{OD_{600}1}+...+Effect_{n}∗max_{OD_{600}n}}{max_{OD_{600}1}+...+∗max_{OD_{600}n}}
+$$
+
+The strongest effect model assumes that whichever species had a stronger effect on its own will determine the joint effect when paired with an additional species. It is calculated as
+
+$$
+Effect_{1…n}=argmax |E|E\in[Effect_{1},…, Effect_{n}]
+$$
 
 returning the effect with the largest absolute value (e.g., if two single species’ effects are –3 and +1, the model will predict that their joint effect is –3).
 

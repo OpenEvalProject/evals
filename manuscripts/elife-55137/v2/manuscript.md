@@ -32,19 +32,43 @@ Here we provide evidence indicating Tgfb3 controls MG quiescence via a non-canon
 
 ## Results
 
-## pSmad3 signaling is suppressed in injury-responsive MG
+### pSmad3 signaling is suppressed in injury-responsive MG
 
 pSmad3 immunofluorescence was used to detect canonical Tgfb signaling in the uninjured retina of gfap:GFP transgenic fish. This analysis revealed that pSmad3 expression was restricted to GFP+ MG (Figure 1A). Importantly, this expression was suppressed when fish were immersed in water containing the Tgfb receptor 1 (Alk5) kinase inhibitors SB431542 or SB505124 (Figure 1—figure supplement 1A; Vogt et al., 2011).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig1-v2.jpg)
+
+**Figure 1.:** (A) Retinal section from uninjured gfap:GFP fish retina with GFP (green) and pSmad3 (red) immunofluorescence. Arrowheads point to pSmad3 expressing MG. (B) pSmad3 immunofluorescence in uninjured and needle poke injured retina. Asterisk marks injury site. (C) Quantification of data shown in (B). (D) Top diagram shows time line for heat shock treatment after injury and when fish were sacrificed. Bottom panels show pSmad3 immunofluorescence in injured and heat shock-treated Wt and hsp70:ca-Alk5 transgenic fish. Asterisk marks the injury site and arrowheads point to recovery of pSmad3 expression at the injury site in heat shock-treated hsp70:ca-alk5 transgenic fish. White dot in lower panel marks non-specific autofluorescence in the photoreceptor layer. (E) Quantification of data shown in (D). (F) Top diagram is time line for experiment illustrating injury, heat shock treatment and BrdU labelling prior to sacrifice. Lower panels show BrdU immunofluorescence in Wt and hsp70:ca-alk5 fish. Asterisk marks the injury site. (G) Quantification of data presented in (F). Error bars are SD. **p<0.01, ***p<0.001. Scale bar is 50 microns.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Inhibition of Tgfb receptor kinase activity suppresses pSmad3 expression. Two different Alk5 kinase inhibitors were tested. pSmad3 immunofluorescence is shown on retinal sections from uninjured fish retina. (B) Quantification of TUNEL+ cells at the site of retinal injury in heat shock-treated Wt and hsp70:ca-Alk5 fish. Scale bar is 50 microns. Error bars are SD.
+
 We next investigated if pSmad3 expression was regulated by retinal injury. A needle poke was used to cause a focal injury (Fausett and Goldman, 2006). This manipulation stimulated a rapid depletion in pSmad3 expression at the injury site (Figure 1B–C), which was rescued after heat shock of hsp70:ca-Alk5 transgenic fish that express a constitutively active Tgfb receptor 1 (ca-Alk5, T204D) under the control of a hsp70 heat shock promoter (Figure 1D–E; Wieser et al., 1995; Zhou et al., 2011). Furthermore, forced expression of ca-Alk5 inhibited injury-dependent MG proliferation (Figure 1F–G). However, when TUNEL stain was used to identify apoptotic cells, very few TUNEL+ cells were identified (Figure 1—figure supplement 1B). Thus, the reduced injury-dependent MG proliferation noted with ca-Alk5 overexpression may reflect increased pSmad signaling and/or reduced cell death. Regardless, these data indicate that Tgfb signaling via pSmad3 expression correlates with MG proliferation in the injured retina.
 
-## tgfb3 expression correlates with injury-dependent pSmad3 expression
+#### tgfb3 expression correlates with injury-dependent pSmad3 expression
 
 To identify injury-responsive Tgfb ligands that might regulate pSmad3 signaling in the retina, we interrogated RNAseq data sets from MG and MG-derived progenitors that were isolated from uninjured gfap:GFP and injured 1016 tuba1a:GFP transgenic fish retinas, respectively (Fausett and Goldman, 2006; Kassen et al., 2007). This analysis indicated constitutive and low expression of tgfb1a; injury-dependent induction of tgfb1b and tgfb2; and injury-dependent suppression of tgfb3 (Figure 2A). qPCR was used to validate the RNAseq data (Figure 2B–C; Figure 2—figure supplement 1A). Injury-dependent reduction in tgfb3 RNA was also evident following NMDA-mediated amacrine and ganglion cell death or genetic ablation of photoreceptors using metronidazole-treated zop:nsfb-EGFP transgenic fish that harbor a zebrafish rod opsin promoter driving expression of bacterial nitroreductase that converts metronidazole into a cytotoxic product (Figure 2—figure supplement 1B; Montgomery et al., 2010; Powell et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig2-v2.jpg)
+
+**Figure 2.:** (A) RNAseq was used to quantify tgfb gene expression in FACS purified GFP+ MG isolated from uninjured and injured (2 dpi) gfap:GFP and 1016 tuba1a:GFP fish retinas, respectively. Fold change in gene expression following retinal injury is indicated above the bars. (B) qPCR quantification of tgfb gene expression in GFP+ MG FACS purified from uninjured gfap:GFP fish retina (normalized to tgfb1b). (C) qPCR quantification of tgfb gene expression following retinal injury normalized to uninjured levels. Total retinal RNA was used for qPCR. Error bars are SD. *p<0.05. (D) tgfb3 in situ hybridization and GS (glutamine synthetase) immunofluorescence in adult fish retina shows tgfb3 RNA is expressed in MG. Top panel is tgfb3 in situ hybridization; bottom panel is overlay of in situ hybridization and GS immunofluorescence. Arrowheads point to tgfb3-expressing MG. Scale bar is 50 microns. *p<0.05, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) RT-PCR shows time course of tgfb3 and gapdh RNA expression in uninjured and injured retina. (B) tgfb3 RNA expression in retinas isolated at different times post injury using zop:nsfb-EGFP transgenic fish to specifically ablate photoreceptors and intravitreal injection of NMDA to specifically ablate amacrine and ganglion cells. (C) qPCR quantification of tgfb gene expression in FACS purified GFP+ MG and GFP- neurons from uninjured gfap:GFP transgenic fish. Error bars are SD. **p<0.01, ***p<0.001.
 
 We also compared the relative expression of tgfb ligand encoding RNAs in the retinal neuron (GFP-) and MG (GFP+) cell populations that were separated by FACS using dissociated cells from uninjured gfap:GFP fish retinas. This analysis showed tgfb3 is highly enriched in MG, whereas tgfb1b and tgfb2 are more equally distributed between these different cell populations (Figure 2—figure supplement 1C). In situ hybridization assays for tgfb3 combined with glutamine synthetase (GS) immunofluorescence on retinal sections confirmed tgfb3 gene expression is restricted to GS+ MG in the uninjured retina (Figure 2D).
 
 We next used in situ hybridization assays to investigate when during development this MG-specific tgfb3 expression profile emerges. Consistent with a previous report (Cheah et al., 2005), we found transient expression of tgfb3 RNA in the lens at 24 hpf (hours post fertilization) (Figure 3A). At 96 hpf when MG are differentiating (Bernardos et al., 2005), we do not detect significant levels of tgfb3 RNA in the retina, nor do we observe significant tgfb3 expression at 7 dpf (days post fertilization). By 10 dpf, tgfb3 RNA is detected in the central region of the retina where more mature MG reside (Figure 3A). This expression continues to increase with age and the adult expression pattern is established by 3 mpf (months post fertilization) (Figure 3A). Consistent with our RNAseq and qPCR data indicating very low tgfb1b levels in the retina (Figure 1A–B), we were unable to detect zebrafish tgfb1b gene expression by in situ hybridization at any of the time points examined (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig3-v2.jpg)
+
+**Figure 3.:** (A) tgfb3 in situ hybridization identifies tgfb3 expression in lens at 24 hpf (hours post fertilization) and in MG beginning ~10 dpf (days post fertilization). This latter expression continues to increase throughout the first 3 months of development. Note tgfb1b expression remains undetectable by in situ hybridization at all the time points examined (14 dpf and 3 mpf). Size marker is 20 microns. In the 10 and 20 dpf panels, black arrowheads point to tgfb3 expressing MG in the central retina, while white arrowheads point to reduced tgfb3 expression in the retinal periphery. (B) In situ hybridization (blue/purple product) and Sox9 immunofluorescence (green fluorescence) identifies tgfb3 expression in GCL and INL, but not in MG of the mouse retina. Size marker is 25 microns. (C) Retinal injury suppresses tgfb3 expression at the injury site in 3 month old fish. In situ hybridization detects tgfb3 RNA (blue/purple product) and BrdU immunofluorescence (red/orange fluorescence) identifies proliferating cells. Size marker is 40 microns.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Effect of Tgfb3 knockdown on expression of MG differentiation at 6 dpf. Single cell zebrafish embryos were injected with the indicated MOs and assayed 6 days later for glutamine sythetase (GS) expression using immunofluorescence. (B) Representative images showing the consequences of experimental or control lissamine-tagged MO on reporter Tgfb3-EGFP expression at the 10 somite stage. Single cell embryos were injected with control or experimental MO along with tgfb3-EGFP RNA. At the 10 somite stage embryos were assayed for Tgfb3-EGFP expression using fluorescence microscopy. Arrows point to Tgfb3-EGFP expression in developing embryos that received control MO and to the reduced Tgfb3-EGFP expression in embryos that received experimental tgfb3-targeting MO. Numbers in panels indicate the number of lissamine+ embryos that also exhibited strong GFP expression. (C) Diagram of tgfb3 exon one with position of gRNA1 and gRNA2 target sequences (T1 and T2) and primers used for PCR amplification across the mutation site. (D) Genotyping of interbred tgfb3+/- fish at 5 dpf. (E) DNA sequencing identifies an insertion/frame-shift mutation in tgfb3-/- fish at the gRNA2 target site. Shown is Wt and tgfb3 mutant (Mut) exon one sequence spanning gRNA2 target sequence (bold); predicted Cas9 cleavage site is indicated by a red C residue; pam sequence is underlined; blue sequence is insertion mutation; and asterisk indicates stop codon. (F) GS immunofluorescence in tgfb3+/+, tgfb3+/- and tgfb3-/- fish at 12 dpf shows normal MG differentiation in tgfb3+/- and tgfb3-/- fish. Shown is representative images of retinal sections with GS immunofluorescence. Size marker is 50 microns.
 
 We next examined Tgfb3 expression in the 1 month old mouse retina. This analysis showed Tgfb3 expression was confined to cells in the GCL and INL (Figure 3B). Co-staining retinal sections for Tgfb3 RNA and Sox9 immunofluorescence (MG marker) showed no overlap, indicating Tgfb3+ cells in the INL are not MG (Figure 3B).
 
@@ -56,15 +80,23 @@ We next used in situ hybridization assays to investigate the spatial pattern of 
 
 Together, the above results indicate that tgfb3 expression in the zebrafish retina correlates with MG maturation, pSmad3 expression, and MG quiescence.
 
-## Injury-dependent Tgfb3 suppression is required for MG proliferation
+### Injury-dependent Tgfb3 suppression is required for MG proliferation
 
 To investigate if Tgfb3 suppression was required for injury-dependent MG proliferation, we generated hsp70:tgfb3 transgenic fish that allow conditional expression of Tgfb3 with heat shock. A 1 hr heat shock at 37°C resulted in over a 100-fold induction of tgfb3 RNA that persisted for over 3 hr and then returned to basal levels around 24 hr post heat shock (Figure 4—figure supplement 1A). To examine the effect Tgfb3 had on MG proliferation in the injured retina, hsp70:tgfb3 transgenic fish received a needle poke injury and then a 1 hr heat shock every 6 hr for 4 days. Three hours before sacrifice at 4 dpi, fish received an IP (intraperitoneal) injection of BrdU to label proliferating cells. This analysis showed that forced expression of Tgfb3 suppressed MG proliferation in the injured retina (Figure 4A–B), without any significant effect on injury-dependent cell death (Figure 6—figure supplement 1B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig4-v2.jpg)
+
+**Figure 4.:** (A) Top illustration is experimental time line. Bottom panels are BrdU immunofluorescence in injured and heat shock-treated Wt and hsp70:tgfb3 transgenic fish. Asterisk marks injury site. Scale bar is 50 microns. (B) Quantification of data in (A). (C) Top illustration is experimental time line. Fish received a needle poke injury and a 1 hr heat shock and then sacrificed at 6 hpi for RNA analysis by qPCR. Bottom graph is qPCR quantification of select reprogramming gene expression levels in the indicated fish lines at 6 hpi. (D) Experimental time line is as in (C) and tgfb3 levels were assayed in the indicated fish lines at 6 hpi. (E) Top illustration is experimental time line. Bottom panel is qPCR analysis of ascl1a and tgfb3 gene expression with and without the indicated MO treatment. MO, is morpholino-modified antisense oligonucleotide used to knockdown expression from the indicated gene. Error bars are SD. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Heat shock induction of tgfb3 RNA in hsp70:tgfb3 transgenic fish. Top illustration is experimental time line. Bottom graph is qPCR quantification of tgfb3 gene expression. (B) Tgfb3 knockdown has no effect on MG proliferation in the injured retina. Control or antisense tgfb3-targeting MOs were electroporated into the retina at the time of injury and MG proliferation assayed at 4 dpi, 3 hr after receiving an IP injection of EdU. Left-hand panel is representative image of the injury site with EdU+ cells. Right-hand panel is quantification of EdU+ cells in the INL of the injured retina. (C) Quantification of TUNEL+ cells.
 
 We next investigated if Tgfb3 depletion affected spontaneous or injury-dependent MG proliferation. Because tgfb3-/- fish do not survive to adults, we knocked down Tgfb3 with a tgfb3-targeting MO and determined if there was an effect on MG proliferation. Control or tgfb3-MO was delivered intravitreally and cellular uptake facilitated by electroporation as previously described (Thummel et al., 2011). Retinas were injured and at 3 dpi fish received an IP injection of EdU 3 hr prior to sacrifice. Quantification of EdU+ and TUNEL+ cells revealed Tgfb3 knockdown had no effect on MG proliferation or cell death at either the injury site or in undamaged regions of the retina (Figure 4—figure supplement 1B–C).
 
 Together, the above data indicate Tgfb3 suppression is necessary for injury-dependent MG proliferation, but this suppression is not sufficient to drive MG proliferation in the uninjured retina.
 
-## Tgfb3 regulates MG reprogramming
+### Tgfb3 regulates MG reprogramming
 
 Reprogramming MG for retinal repair requires the regulation of gene expression programs that stimulate MG proliferation and the expansion of a MG-derived progenitor population. Essential components of these programs are genes encoding growth factors, cytokines, and transcription factors that are rapidly induced following a retinal injury (Gorsuch et al., 2017; Nagashima et al., 2020; Nelson et al., 2013; Nelson et al., 2012; Ramachandran et al., 2010a; Ramachandran et al., 2011; Ramachandran et al., 2012; Thummel et al., 2010; Wan and Goldman, 2017; Wan et al., 2012; Wan et al., 2014; Zhao et al., 2014). Because tgfb3 expression is suppressed within a few hours post injury, we suspected it might regulate these gene expression programs. To investigate this, we injured Wt or hsp70:tgfb3 fish retinas and immediately treated fish with a single 1 hr heat shock before sacrificing fish at 6 hpi and isolating retinal RNA for gene expression analysis using qPCR. Interestingly, we found that many reprogramming genes that are normally induced after retinal injury, like ascl1a, hbegfa, lepb, crlf1a, and socs3a, were suppressed by Tgfb3 expression, while genes normally repressed soon after injury, like fgf8a and dll4 were unaffected (Figure 4C). Furthermore, forced Fgf8a expression, which we previously showed suppressed injury-dependent MG proliferation in the adult retina (Wan and Goldman, 2017), had no effect on tgfb3 expression (Figure 4D). Thus, Tgfb3 and Fgf8a appear to act independent of each other to regulate MG proliferation.
 
@@ -72,19 +104,35 @@ The observation that ascl1a gene expression is suppressed in a Tgfb3-dependent m
 
 Together, these data suggest Tgfb3 drives MG quiescence in the injured retina, at least in part, by inhibiting the expression of pro-regenerative gene expression programs.
 
-## Tgfb1b overexpression stimulates pSmad3 expression without affecting MG proliferation
+### Tgfb1b overexpression stimulates pSmad3 expression without affecting MG proliferation
 
 qPCR and RNAseq analysis of tgfb gene expression in the injured retina revealed that although tgfb1b and tgfb2 were induced in the injured retina, their levels remained below the suppressed levels of tgfb3 (Figure 2A). Furthermore, injury-dependent regulation of pSmad3 expression followed that of tgfb3, but not tgfb1a, tgfb1b, or tgfb2 (Figures 1B, 2A and 3C). These observations suggest that Tgfb3 expression largely accounts for pSmad3 expression in the uninjured and injured retina. Whether other Tgfb ligands could also inhibit MG proliferation via a pSmad3 signaling mechanism remained unknown, but seemed likely if we boosted their levels to at least that of Tgfb3 in the uninjured retina. To investigate this, we generated hsp70:tgfb1b transgenic fish.
 
 hsp70:tgfb1b fish treated with a 1 hr heat shock exhibited over a 100-fold induction of tgfb1b RNA that returned to basal levels ~ 24 hr later (Figure 5—figure supplement 1A). Overexpression of Tgfb1b had no significant effect on endogenous tgfb2b expression, but did decrease tgfb3 expression by ~50% at 6 hr post heat shock (Figure 5—figure supplement 1B). Interestingly, when comparing the consequence of Tgfb1b and Tgfb3 overexpression on MG proliferation and pSmad3 expression, only Tgfb3 suppressed injury-dependent MG proliferation (Figure 5A–B), but both Tgfb1b and Tgfb3 reestablished pSmad3 expression at the injury site (Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig5-v2.jpg)
+
+**Figure 5.:** (A) Top illustration is experimental time line. Bottom panels show BrdU immunofluorescence on retinal sections from uninjured and injured, heat shock-treated Wt, hsp70:tgfb1b, and hsp70:tgfb3 transgenic fish. (B) Quantification of data in (A). (C) pSmad3 immunofluorescence on retinal sections from uninjured and injured, heat shock-treated Wt, hsp70:tgfb1b, and hsp70:tgfb3 transgenic fish. Arrowheads point to the INL at the injury site. Asterisk marks the injury site. White dot in two right-hand panels marks non-specific autofluorescence in the photoreceptor layer. Scale bar is 50 microns. Error bars are SD. **p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top illustration is experimental time line. Bottom graph is qPCR quantification of tgfb1b gene expression. (B) Top illustration is experimental time line. Bottom graph is qPCR analysis of the effect of Tgfb1b expression on tgfb2b and tgfb3 expression. (C) tgfb1b-targeting MO affects splicing of the primary tgfb1b transcript as indicated by the larger PCR fragment identified when embryos were injected with tgfb1b-targeting MO. (D) EdU click-it chemistry was used to identify proliferating MG at four dpi in retinas +/- MO mediated Tgfb1b knockdown. Left panels are representative images and right panel is quantification of data in (D). (E) Quantification of EdU-based lineage tracing of MG-derived progenitors that were labelled with EdU at four dpi and assayed for cell type specific marker at 14 dpi. Zpr1 detects cone photoreceptors; GS detects MG, HuC/D detects amacrine cells in INL and ganglion cells in GCL.
+
 Although Tgfb1b overexpression did not regulate MG proliferation, tgfb1b RNA is induced in the injured retina (Figure 2A and C), and we wondered if this induction had any consequence on regeneration. Therefore, we knocked down Tgfb1b expression with a previously validated splice-blocking tgfb1b-targeting MO (Figure 5—figure supplement 1C; Monteiro et al., 2016). MOs were delivered to retinas at the time of injury and cellular uptake facilitated by electroporation. Four days later, fish received an IP injection of EdU and 3 hr later some fish were sacrificed to assay MG proliferation (Figure 5—figure supplement 1D), while others were allowed to survive until 14 dpi to lineage trace EdU+ MG (Figure 5—figure supplement 1E). These analyses revealed that Tgfb1b knockdown had no significant effect on injury-dependent MG proliferation or the fate of MG-derived progenitors (Figure 5—figure supplement 1D–E).
 
 Together, the above data indicate specificity in the action of Tgfb ligands on MG proliferation and suggest that pSmad3 expression does not drive MG quiescence in the injured retina.
 
-## Alk5 and PP2A inhibition rescue MG proliferation in injured retinas with Tgfb3 overexpression
+### Alk5 and PP2A inhibition rescue MG proliferation in injured retinas with Tgfb3 overexpression
 
 The above data suggested that Tgfb3-dependent activation of Alk5 may engage a non-canonical Tgfb signaling pathway to regulate MG proliferation. To investigate this, we first determined the effect Alk5 suppression had on MG proliferation in heat shock-treated hsp70:tgfb3 fish immersed in either DMSO or the Alk5 inhibitor, SB431542 (Figure 6A). As expected, Alk5 inhibition rescued MG proliferation in injured retinas from heat shock-treated hsp70:tgfb3 fish (Figure 6B–C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental time line. (B) Edu click chemistry identifies proliferating MG in retinal sections from injured Wt and hsp70:tgfb3 transgenic fish treated with heat shock, +/- okadaic acid (OKA), PD169316 (PD), or SB431542 (SB) treatment. Scale bar is 50 microns. (C) Quantification of the effects of OKA, PD, and SB on Tgfb3-mediated suppression of MG proliferation that is shown in (B). Edu values are normalized to MG proliferation in Tgfb3 overexpressing transgenic fish. Error bars are SD. **p<0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55137/elife-55137-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RNAseq data quantifying expression of RNAs encoding various subunits of PP2A and p38 MAPK isoforms, mapk14a and mapk14b at 0 and 2 dpi. (B) Quantification of TUNEL+ cells in injured retinas isolated from injured and heat shock-treated Wt and hsp70:tgfb3 fish treated +/- okadaic acid (OKA). Experimental time line as in Figure 5A.
 
 We next investigated if Tgfb3-dependent activation of Alk5 engaged a non-canonical Tgfb signaling pathway, like ERK, PI3K, p38, and PP2A (Derynck and Zhang, 2003; Petritsch et al., 2000; Yu, 2002; Zhang, 2017). Previous studies indicated that ERK and PI3K signaling are necessary for injury-dependent MG proliferation and therefore, are not candidates for conveying the quiescence-promoting effects of Tgfb3 (Wan et al., 2012; Wan et al., 2014). Therefore, we focused our analysis on PP2A and p38.
 
@@ -94,7 +142,7 @@ We next investigated if PP2A or p38 signaling participated in Tgfb3-dependent re
 
 Together, the above data suggests Alk5 and PP2A act downstream of Tgfb3 to regulate MG quiescence.
 
-## Notch inhibition rescues MG proliferation in Tgfb3-expressing injured retinas
+### Notch inhibition rescues MG proliferation in Tgfb3-expressing injured retinas
 
 Previous studies revealed that Notch signaling inhibition is required for injury-dependent MG proliferation (Conner et al., 2014; Elsaeidi et al., 2018; Wan and Goldman, 2017; Wan et al., 2012). Therefore, we wondered if Tgfb3 signaling acted through Notch signaling to inhibit MG proliferation. To investigate this, we bred hsp70:tgfb3 fish with tp1:mCherry Notch reporter fish that harbor 12 RBP-Jk binding sites upstream of a minimal promoter that drives nuclear localized mCherry expression (Parsons et al., 2009). Normally, Notch signaling is suppressed in injury-responsive MG spanning the injury site (Figure 7A, tp1:mCherry panel) (Elsaeidi et al., 2018; Wan and Goldman, 2017). However, forced Tgfb3 expression in hsp70:tgfb3;tp1:mCherry double transgenic fish prevented this injury-dependent suppression in Notch signaling (Figure 7A–B) and this correlated with reduced MG proliferation (Figure 4A–B). Furthermore, we found that Tgfb3-dependent inhibition of MG proliferation can be rescued by pharmacological suppression of Notch signaling using the γ-secretase inhibitor RO4929097 (Figure 7C–D). Consistent with these data, Tgfb3 overexpression in the uninjured retina increased expression of the Notch reporter gene hey1, and the ligand encoding gene, dll4. However, dll4 induction did not reach statistical significance (Figure 7E) and further studies are needed to determine if Tgfb3 regulates Notch signaling via dll4 expression. Nonetheless, the above studies suggest Tgfb3 acts, at least in part, via the Notch signaling pathway to regulate MG quiescence.
 
@@ -124,38 +172,279 @@ Experiments designed to rescue MG proliferation in Tgfb3 overexpressing retinas 
 
 ## Materials and methods
 
-## Animals, injury models, and cell proliferation assays
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>1016 tuba1a:GFP</td>
+      <td>Fausett and Goldman, 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>gfap:GFP</td>
+      <td>Kassen et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>tp1:mCherry</td>
+      <td>Parsons et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>zop:nsfb-EGFP</td>
+      <td>Montgomery et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>hsp70:ca-Alk5</td>
+      <td>Zhou et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>hsp70:tgfb1b</td>
+      <td>This paper; Figure 5</td>
+      <td></td>
+      <td>tgfb1b expressed under the hsp70 promoter; generated using Tol2-mediated transgenesis -Goldman lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>hsp70:tgfb3</td>
+      <td>This paper; Figure 4</td>
+      <td></td>
+      <td>tgfb3 expressed under the hsp70 promoter; generated using Tol2-mediated transgenesis – Goldman lab</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb3-MO</td>
+      <td>Gene Tools, LLC</td>
+      <td></td>
+      <td>Lissamine-tagged, tgfb3-targeting Morpholino 5’TGCATGGTTAA TATCTGCACACTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tgfb1b-MO</td>
+      <td>Gene Tools, LLC</td>
+      <td></td>
+      <td>Lissamine-tagged, tgfb1b-targeting Morpholino 5’AAGGATAGTG CCACTCACTCATTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T7 universal gRNA primer</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>T7 universal gRNA primer 5’-AAAAGCACCGACTCGGTG CCACTTTTTCAAGTTGATAAC GGACTAGCCTTATTTTAACTT GCTATTTCTAGCTCTAAAAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tgfb3 gRNA one primer</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>tgfb3 gRNA one primer: 5’-TAATACGACTCACTAT AGGGCACCTGACTAGGG CCCAGTTTTAGAGCTAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tgfb3 gRNA two primer</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>tgfb3 gRNA two primer: 5’-TAATACGACTCACTAT AGGCCCTCTACAACAGC ACCAGTTTTAGAGCTAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td></td>
+      <td></td>
+      <td>See Materials and Methods - Primers and Morpholinos section below</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+ tgfb3-EGFP</td>
+      <td>This paper; Figure 3—figure supplement 1B</td>
+      <td></td>
+      <td>Vector for generating RNA that has tgfb3 MO target sequence appended to the 5’ end of the EGFP mRNA coding sequence - Goldman lab.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-nCas9n-nanos3’UTR</td>
+      <td>Addgene, Plasmid #62542</td>
+      <td>Plasmid #62542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pSmad3, rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat. # ab52903 RRID:AB_882596</td>
+      <td>1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Zpr-1, mouse monoclonal</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>Cat. # zpr-1 RRID:AB_10013803</td>
+      <td>1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Zn-5, mouse monoclonal</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>Cat. # zn-5 RRID:AB_10013770</td>
+      <td>1/1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HuC/D, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat. # ab210554 RRID:AB_210554</td>
+      <td>1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PKCβ1, mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. # SC-8049 RRID:AB_628143</td>
+      <td>1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-glutamine synthetase (GS), mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. # MAB302 RRID:AB_2110656</td>
+      <td>1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX9, rabbit polyclonal</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. # AB5535 RRID:AB_2239761</td>
+      <td>1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU, rat monoclonal</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # MA 182088 RRID:AB_927214</td>
+      <td>1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BrdU, mouse monoclonal</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # B35128 RRID:AB_2536432</td>
+      <td>Clone MoBu-1 for co-staining with EdU Click-it Chemistry, 1/500 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Fisher Scientific</td>
+      <td>Cat # 16–141</td>
+      <td>Tgfb signaling inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB505124</td>
+      <td>Fisher Scientific</td>
+      <td>Cat # 32-631-0</td>
+      <td>Tgfb signaling inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RO4929097</td>
+      <td>Cayman Chemical</td>
+      <td>Cat # 19996</td>
+      <td>Notch signaling inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>okadaic acid</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 5934</td>
+      <td>PP2A inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD169316</td>
+      <td>Cayman Chemical</td>
+      <td>Cat # 10006727</td>
+      <td>P38 MAPK inhibitor</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGE mMACHINESP6 Transcription Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat # AM1340</td>
+      <td>mRNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Megascript T7 Transcription Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat # AM1334</td>
+      <td>mRNA synthesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In situ cell death, fluorescein</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat # 11684795910</td>
+      <td>TUNEL assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals, injury models, and cell proliferation assays
 
 Animal studies were approved by the University of Michigan’s Institutional Animal Care and Use Committee. Zebrafish were kept at 26–28°C with a 10/14 hr light/dark cycle. Adult male and female fish from 6 to 12 months of age were used in these studies. 1016 tuba1a:GFP, gfap:GFP, tp1:mCherry, zop:nsfb-EGFP, and hsp70:ca-Alk5 fish were previously described (Fausett and Goldman, 2006; Kassen et al., 2007; Montgomery et al., 2010; Parsons et al., 2009; Zhou et al., 2011). We generated hsp70:tgfb1b and hsp70:tgfb3 transgenic fish using standard recombinant DNA techniques using Tol2 vector backbone. Expression constructs were injected into single cell zebrafish embryos as previously described (Fausett and Goldman, 2006). Fish were anesthetized in tricaine and retinas were injured with a needle poke injury (2–4 injuries/retina for analysis of proliferation and protein expression on retinal sections and 8–10 injuries/retina when harvesting total RNA for qPCR), NMDA, or genetically as previously described (Fausett and Goldman, 2006; Montgomery et al., 2010; Powell et al., 2016). To investigate cell proliferation, fish received an IP injection of BrdU or EdU (10 μl of 10 mg/ml stock) as indicated in the text and detected by immunofluorescence or Click-It chemistry as previously described (Wan and Goldman, 2017). Wild-type FVB/N mice were obtained from our breeding colony.
 
-## RNA isolation, PCR, and RNAseq
+### RNA isolation, PCR, and RNAseq
 
 Total RNA was isolated using Trizol (Invitrogen). cDNA synthesis and PCR reactions were performed as previously described (Fausett et al., 2008; Ramachandran et al., 2010a). Real-time qPCR reactions were carried out in triplicate with ABsolute SYBR Green Fluorescein Master Mix (Thermo Scientific) on an iCycler real-time PCR detection system (BioRad). The ΔΔCt method was used to determine relative expression of mRNAs in control and injured retinas and normalized to either gapdh or gapdhs mRNA levels. Individual comparisons were done using unpaired 2-tailed Student t-test. ANOVA with Fisher's PLSD post hoc analysis was used for multiple parameter comparison. Error bars are standard deviation (SD).
 
 For RNAseq, retinas from 1016 tuba1a:GFP and gfap:GFP fish were dissociated and GFP+ MG were purified using FACS using the University of Michigan’s Cell Sorting Core as previously described (Powell et al., 2013; Ramachandran et al., 2010a). RNA from GFP+ cells was used to generate libraries and DNA was sequenced on an Illumina HiSeq2000 instrument. Sequencing reads were analyzed by the University of Michigan’s Bioinformatics Core. The number of reads for each expressed gene was determined and differentially expressed genes were restricted to those exhibiting at least a 2-fold difference in expression with threshold abundance greater than 5 Fragments Per Kilobase of transcript per Million mapped reads to eliminate very low abundant transcripts whose estimates of fold-change are unreliable. GEO accession for RNAseq data is GSE145330.
 
-## Generation of tgfb3 mutant fish
+### Generation of tgfb3 mutant fish
 
 Gene editing was performed as previously described (Hwang et al., 2013; Vejnar et al., 2016). Briefly, CRISPRscan (https://www.crisprscan.org/) was used to identify gRNA target sequences in exon 1 of the tgfb3 gene. gRNAs were transcribed using PCR products as a templates and the MEGAscript T7 transcription kit (Thermo Fisher Scientific #AM1334). Cas9-nanos mRNA was transcribed using NotI-digested Cas9-nanos pCS2 expression vector and the mMESSAGE mMACHINE SP6 kit (Invitrogen, #AM1340). Cas9-nanos mRNA and two gRNAs targeting tgfb3 exon1 were co-injected into one cell stage zebrafish embryos. Primers for making tgfb3 mutant fish: T7 universal gRNA primer: 5’-AAAAGCACCGACTCGGTGCCACTTTTTCAAGTTGATAACGGACTAGCCTTATTTTAACTTGCTATTTCTAGCTCTAAAAC-3’; gRNA one primer: 5’-TAATACGACTCACTATAGGGCACCTGACTAGGGCCCAGTTTTAGAGCTAGAA; gRNA two primer: 5’-TAATACGACTCACTATAGGCCCTCTACAACAGCACCAGTTTTAGAGCTAGAA.
 
-## Primers and morpholinos (MO) used in this study
+### Primers and morpholinos (MO) used in this study
 
 The following PCR primers are 5’ to 3’. tgfb3: forward GATTGGAGGGACGGATGA, reverse GTGACAGGGGCAGTGAAC; tgfb2: forward CAGCATGAGAGCCACAGAC, reverse CTCCACAGATACGGACAGG; tgfb1a: forward GTACAAACACCACAACCCTGG, reverse GGCTTACTTATCAATCCCGAC; tgfb1b: forward ACTGGCTCTTGCTCCTAT, reverse AACTGTTCCACCTTATGC; ascl1a: forward TTGAGCGTTCGTAAA, reverse GCTGAAGGACTGGATT; fgf8a: forward CAGTGTGGATACAAACGCAGG, reverse TAGCAAAACGCAAAGAGGTGA; lepb: forward CATTGCTCGAACCACCATCAGC, reverse TCTTTATGCACCGGGGTCTCG; crlf1a: forward GGGATTCTGGGATCTAGGAAAGC, reverse TCCTTGAAGAACCTGGTTGCG; socs3a: forward CACTAACTTCTCTAAAGCAGGG, reverse GGTCTTGAAGTGGTAAAACG; il-11b: forward GCTAACAGTGTCGCCTGACTCC, reverse CTGTAGTTCAGTGAGGGCAGGG; dll4: forward GGAAATTTGACGTGCTCCAT, reverse GAGAAAGGTGAGCCAAGCTG; hbegf: forward CGATGGATGGCGAGGATGTAGA, reverse GCATTAGGGCAGGACGAAGTTG; hey1: forward GTTTGCATTTTCACGCCCCT, reverse CGCCCTCTAGTGCTCACATT; tgfb3 gRNA mutation forward GGCAAAGGACTGCTGTTTGT, reverse GAGATCCCTGGATCATGTTGA; tgfb1b MO mis-splicing forward GCACACCATAGAAGATCCAACA, reverse AGGCATCTGCAACCAGTCTT.
 
 Lissamine-tagged, tgfb3-targeting MO: 5’TGCATGGTTAATATCTGCACACTAT; Lissamine-tagged, tgfb1b-targeting MO: 5’AAGGATAGTGCCACTCACTCATTGT; Gene Tools standard control MO: 5’ CCTCTTACCTCAGTTACAATTTATA.
 
-## Morpholino (MO) functional assays
+### Morpholino (MO) functional assays
 
 For testing tgfb3-targeting MO, we generated pCS2+tgfb3 EGFP construct that contained tgfb3 cDNA MO target site upstream and in-frame with the EGFP initiator AUG. Primers for generating tgfb3 MO targeting sequence are: forward primer (BamHI): 5’-GCAGGATCCGGAGCCGCTTCATTCATCTG-3’ and reverse primer (Nco1): 5’-TCACCATGGTGGACAGAGACAAGCTCATG-3’. The pCS2+tgfb3 EGFP plasmid was linearized with Not1 restriction enzyme and capped sense tgfb3-EGFP RNA was synthesized using SP6 RNA polymerase using Invitrogen’s mMESSAGE mMACHINE SP6 Transcription Kit (Invitrogen, #AM1340) according to manufactures directions. Following purification, the capped tgfb3-EGFP RNA was dissolved in nuclease free water containing 0.2% phenol red and injected with experimental or control MO into single cell zebrafish embryos. Each embryo received approximately 50 pg of RNA and 250 pg of control or experimental MO. For testing splice blocking tgfb1b-targeting MO, we injected either control MO (2.4 ng) or tgfb1b-targeting MO (0.3 ng and 2.4 ng) into single cell zebrafish embryos. RNA was extracted from embryos at 24–48 hr post injection and assayed for tgfb1b mRNA by PCR.
 
-## Heat shock and pharmacological inhibitors
+### Heat shock and pharmacological inhibitors
 
 For heat shock, fish were immersed in a water bath at 37°C for 1 hr before returning to system water at 28°C. For extended periods of heat shock, this was repeated every 6 hr. For inhibition of Tgfb signaling we used two different Tgfb receptor 1 (Alk 5) inhibitors, SB431542 and SB505124 (Fisher Scientific) and to inhibit Notch signaling we used RO4929097 (Cayman). PP2A was inhibited with okadaic acid (Cell Signaling Technology) and p38 MAPK was inhibited with PD169316 (Cayman Chemical). Pharmacological reagents were prepared in DMSO as a 10 mM stock and diluted 1/200 in fish water for immersion or PBS for intravitreal injections. Control fish were treated with vehicle.
 
-## Immunofluorescence and in situ hybridization
+### Immunofluorescence and in situ hybridization
 
 Zebrafish samples were prepared for immunofluorescence as previously described (Fausett and Goldman, 2006; Ramachandran et al., 2010a; Ramachandran et al., 2010a). Primary antibodies used in this study: anti-pSmad3, Abcam Cat. # ab52903 (1/200); Zpr-1 and Zn-5, Zebrafish International Resource Center (1/500 and 1/1000, respectively); anti-HuC/D, Abcam, Cat. #ab210554 (1/500); anti-PKCβ1, Santa Cruz Biotechnology, Cat. #SC-8049 (1/200); anti-glutamine synthetase (GS), Sigma-Aldrich, Cat. #MAB302 (1/500); anti-SOX9, EMD Millipore, Cat. #AB5535 (1/500); anti-BrdU, Thermo Fisher, Cat. # MA 1–82088 (1/500) and Cat. # B35128 (1/500, clone MoBu-1 for co-staining with EdU Click-It chemistry). Secondary antibodies: Alexa Flour 555 Donkey anti Mouse-IgG (H+L), Thermo Fisher Cat. # A31570 (1:500); Alexa flour 555 Donkey anti Rabbit IgG (H+L), Thermo Fisher, Cat # A31572 (1:500); Alexa flour 555 Donkey anti Sheep IgG (H+L) Thermo Fisher Cat #A21436. Cy3, Jakson Immuno research labs, Cat #712-166-150 (1:500); Alexa Flour 488 donkey anti mouse Thermo Fisher Cat. # A21202 (1:500); Alexa Flour 488 goat anti rabbit Thermo Fisher Cat. # A11008 (1:500); Cy5 goat anti mouse, Thermo Fisher Cat. # A10524 (1:500); and Alexa Flour 647 goat anti rabbit Thermo Fisher Cat # A21244 (1:500). In situ hybridization was performed as described previously (Barthel and Raymond, 2000).
 
-## Microscopy, TUNEL, cell quantification, and statistical analysis
+### Microscopy, TUNEL, cell quantification, and statistical analysis
 
 BrdU and EdU labelling were used to identify and quantify proliferating cells in retinal sections as previously described (Fausett and Goldman, 2006; Ramachandran et al., 2010a; Wan and Goldman, 2017; Wan et al., 2012; Wan et al., 2014). TUNEL assays were performed on retinal sections using the in situ cell death, fluorescein kit (Sigma Aldrich, Cat # 11684795910). Images were captured by a Zeiss Axiophot fluorescence microscope or a Leica DM2500 microscope. Autofluorescence is defined as variable, background fluorescence that can be detected in multiple channels. All experiments were done in triplicate (three trials) with three animals per trial unless otherwise indicated. We routinely quantify the total number of proliferating cells around the injury site in all nuclear layers and also the number of proliferating cells restricted to the INL in order to be sure proliferative changes represent MG proliferation and are not solely due to rod progenitor proliferation. Unless specifically stated, quantification shown in graphs is proliferation in all nuclear layers at the injury site. Quantification of pSmad3 immunofluorescence was restricted to the area surrounding the injury site and represents the field of view. Error bars are standard deviation (SD). ANOVA with Fisher's PLSD post hoc analysis was used for multiple parameter comparison; two-tailed Student's t test was used for single parameter comparison.

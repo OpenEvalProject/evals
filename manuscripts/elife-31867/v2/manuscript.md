@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.31867.001 Cells adapt to familiar changes in their environment by activating predefined regulatory programs that establish adaptive gene expression states. These hard-wired pathways, however, may be inadequate for adaptation to environments never encountered before. Here, we reveal evidence for an alternative mode of gene regulation that enables adaptation to adverse conditions without relying on external sensory information or genetically predetermined cis -regulation. Instead, individual genes achieve optimal expression levels through a stochastic search for improved fitness. By focusing on improving the overall health of the cell, the proposed stochastic tuning mechanism discovers global gene expression states that are fundamentally new and yet optimized for novel environments. We provide experimental evidence for stochastic tuning in the adaptation of Saccharomyces cerevisiae to laboratory-engineered environments that are foreign to its native gene-regulatory network. Stochastic tuning operates locally at individual gene promoters, and its efficacy is modulated by perturbations to chromatin modification machinery.
+Cells adapt to familiar changes in their environment by activating predefined regulatory programs that establish adaptive gene expression states. These hard-wired pathways, however, may be inadequate for adaptation to environments never encountered before. Here, we reveal evidence for an alternative mode of gene regulation that enables adaptation to adverse conditions without relying on external sensory information or genetically predetermined cis-regulation. Instead, individual genes achieve optimal expression levels through a stochastic search for improved fitness. By focusing on improving the overall health of the cell, the proposed stochastic tuning mechanism discovers global gene expression states that are fundamentally new and yet optimized for novel environments. We provide experimental evidence for stochastic tuning in the adaptation of Saccharomyces cerevisiae to laboratory-engineered environments that are foreign to its native gene-regulatory network. Stochastic tuning operates locally at individual gene promoters, and its efficacy is modulated by perturbations to chromatin modification machinery.
 
 ## Introduction
 
@@ -24,11 +24,11 @@ The capacity to adapt to changes in the external environment is a defining featu
 
 ## Results
 
-## Adaptation through fitness-driven stochastic optimization of gene expression
+### Adaptation through fitness-driven stochastic optimization of gene expression
 
 In this work we speculate whether cells have evolved alternative strategies for finding adaptive gene expression states, on more physiological timescales, without relying on their hard-coded sensory and regulatory systems. Since the perception of the external world may be of limited value under unfamiliar conditions, perhaps a more effective strategy would be to focus on maximizing the internal health of the cell—without regard to the specific parameters of the outside world. This would be a challenging strategy, as every gene in the genome would need to independently reach the expression level that maximizes the overall health of the cell, and these expression levels could vary significantly from condition to condition. In particular, we asked whether individual genes could, in principle, carry out a search process equivalent to gradient descent (Cauchy, 1847), where the health consequence of stochastic alterations in gene expression could gradually tune the expression of individual genes towards a level that is optimal for internal health. We reasoned that such an optimization process would require the existence of: (1) a source of stochastic transitions in gene expression; (2) the ability of local chromatin to maintain a record of recent changes in transcription; and (3) a central metabolic hub that integrates diverse parameters of intracellular health and continuously broadcasts whether the overall health of the cell is improving or deteriorating. In fact, we find that the foundations for meeting these requirements are already present in eukaryotic cells: (1) The expression of many genes is dominated by noisy bursts of transcription—a widespread phenomenon of largely unknown functional significance (Sanchez and Golding, 2013; Raj and van Oudenaarden, 2008; Blake et al., 2006; Raser and O'Shea, 2005; Elowitz et al., 2002); (2) Co-transcriptional histone modification can modify eukaryotic chromatin in promoters and gene bodies, establishing a short-term memory of recent transcriptional events (Li et al., 2007; Rando and Winston, 2012); and (3) Global integrators of cell health have evolved in eukaryotes. A classic example is the mTOR pathway, which integrates a vast array of intracellular parameters reflecting nutrient availability, energy, and the presence of diverse stresses (Conrad et al., 2014; González and Hall, 2017; Albert and Hall, 2015; Saxton and Sabatini, 2017).
 
-With the necessary components for gradient-based optimization of gene expression in place (Figure 1A), the promoter of each gene would be able to conduct a simple search process that culminates in finding the expression level that maximizes the overall health of the cell: if global fitness/health is increasing and there was a previous increase in transcriptional output (representing larger or more frequent transcriptional bursts), the promoter further increases its transcriptional activity (Figure 1B). If fitness is decreasing and there was a previous increase in transcriptional activity, the promoter decreases its transcriptional output. Transcriptional output is altered in the opposite direction in the event that there was a previous decrease in transcriptional output. For each gene, this tuning process can be expressed as: ΔEt = k∙sgn(ΔFt∙ΔEt-1)+η (see Figures 1 and 2A); here, E denotes the vector of gene-level transcription rates, F the current fitness/health of the cell, k is a proportionality constant, η a noise term, and sgn is a function yielding −1 if its argument is negative, 0 if its argument is zero, and +1 if its argument is positive. One can easily see how the process described here can tune the optimal expression of a single gene. What is remarkable, however, is the ability of this hypothetical stochastic tuning process to find near-optimal gene-expression states for a system with thousands of genes. As can be seen in the simulations presented in Figure 2, this is achieved through a fitness-directed stochastic search culminating in individual genes reaching specific gene expression levels that maximize the health/fitness of the cell. Such a stochastic tuning mechanism would be highly valuable to free-living organisms, enabling them to optimize their global gene expression patterns to match the specific requirements of any environment in which their dedicated sensory and regulatory networks are inadequate or sub-optimal.
+With the necessary components for gradient-based optimization of gene expression in place (Figure 1A), the promoter of each gene would be able to conduct a simple search process that culminates in finding the expression level that maximizes the overall health of the cell: if global fitness/health is increasing and there was a previous increase in transcriptional output (representing larger or more frequent transcriptional bursts), the promoter further increases its transcriptional activity (Figure 1B). If fitness is decreasing and there was a previous increase in transcriptional activity, the promoter decreases its transcriptional output. Transcriptional output is altered in the opposite direction in the event that there was a previous decrease in transcriptional output. For each gene, this tuning process can be expressed as: $ΔE_{t}$ = $k∙sgn(ΔF_{t}∙ΔE_{t-1})+η$ (see Figures 1 and 2A); here, E denotes the vector of gene-level transcription rates, F the current fitness/health of the cell, k is a proportionality constant, $η$ a noise term, and sgn is a function yielding −1 if its argument is negative, 0 if its argument is zero, and +1 if its argument is positive. One can easily see how the process described here can tune the optimal expression of a single gene. What is remarkable, however, is the ability of this hypothetical stochastic tuning process to find near-optimal gene-expression states for a system with thousands of genes. As can be seen in the simulations presented in Figure 2, this is achieved through a fitness-directed stochastic search culminating in individual genes reaching specific gene expression levels that maximize the health/fitness of the cell. Such a stochastic tuning mechanism would be highly valuable to free-living organisms, enabling them to optimize their global gene expression patterns to match the specific requirements of any environment in which their dedicated sensory and regulatory networks are inadequate or sub-optimal.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig1-v2.jpg)
 
@@ -38,15 +38,23 @@ With the necessary components for gradient-based optimization of gene expression
 
 **Figure 2.:** (A) Quantitative framework describing stochastic tuning. The transcriptional activity state of the genome is represented by the vector E, here schematically represented for a three-gene system. In any environment, there is an optimal transcriptional state vector (Eoptimal) that yields maximum fitness. At any time (t), a cell with transcriptional activity state Et has global health/fitness (Ft) defined as the negative of the Euclidean distance between the immediately preceding transcriptional activity state Et-1 and Eoptimal. Each gene promoter (i) executes a change in transcriptional activity ∆Eit which has two components: (1) a step with magnitude of k and sign (sgn) matching that of the product of the global change in fitness (∆Ft) experienced at time t and the preceding change in transcriptional activity ∆Eit-1, and (2) a noise component with a magnitude of η and a random sign (+/-). (B) The stochastic tuning process moves the transcriptional activity state towards the optimum, resulting in increasing health/fitness over time. Simulated trajectories are shown for a 1,000-gene system with k = 0.1, η = 0.1 (blue); k = 0.5, η = 0.5 (red). (C) The time evolution of the transcriptional activity state vector as a system containing 1000 genes converges to optimal transcriptional activities through stochastic tuning. The temporal profiles of 20 representative genes are shown, starting from randomly assigned initial activities, and gradually converging to activities that are near optimal for fitness (using parameters corresponding to the blue curve in panel B). (D) Trajectories of two representative genes are shown for the same simulation as in panel C). Transcriptional activities start at randomly assigned initial values and gradually converge to near the optimum (arrows).
 
-## Fitness-directed tuning of gene expression in yeast
+### Fitness-directed tuning of gene expression in yeast
 
 Informed by the simulations above, we sought to test for evidence of stochastic tuning in the eukaryotic model organism Saccharomyces cerevisiae. We engineered conditions in which the expression of a single gene was required for growth, but for which no regulatory input existed to drive appropriate expression levels. This was achieved by using a yeast strain (BY4743) that lacks the URA3 gene, which is essential when cells are grown in the absence of uracil. We placed a chromosomally integrated copy of URA3 at a different locus under the control of a weak synthetic promoter, consisting primarily of a pseudorandom sequence. All recognizable binding sites for native transcription factors were removed from the generated promoter sequence (see Materials and Methods and Supplementary file 1 for details), in an attempt to decouple it from any existing sensory and regulatory input. We henceforth refer to this synthetic promoter sequence as synprom (see Supplementary file 1 for sequence). In the experiments described below, URA3 is typically tagged with a fluorescent fusion, either mRuby (Kredel et al., 2009) or a superfolder GFP (Pédelacq et al., 2006), and a copy of a mouse DHFR gene coupled to a different fluorescent protein is inserted at the same location on the sister chromosome to act as an internal control. A schematic of the insertion constructs is shown in Figure 3A. We also added the URA3 competitive antagonist 6-azauracil (6AU) to the media to control the threshold level of URA3 production required for growth. The growth condition, SC+glu-ura media, containing x µg/ml of 6AU, will henceforth be referred to as ura-/6AUx.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the constructs used in this study. All strains are diploid, containing similar insertions at the LEU2 locus of both copies of chromosome III. X is either a synthetic promoter (synprom) or a natural promoter (PRGI1 or PHSP12) unless otherwise noted, and Y is either the same promoter as X or is the strong constitutive promoter PADH1. ‘cyc’ indicates the well-characterized CYC1 transcriptional terminator (Russo and Sherman, 1989). (B) Stochastic colony formation on ura-/6AU15 plates for cells containing URA3-mRuby under control of synprom and DHFR-GFP under control of PADH1. Error bars show central 95% credible intervals; colors show biological replicates performed on different days. ‘x’ marks are shown at the bottom of the axis for days where zero visible colonies were present at all plated dilutions. Cells plated on SC+glu uniformly form visible colonies within 1–2 days. (C) As in panel B, but with URA3-mRuby controlled by PRGI1 or PHSP12 as indicated. (D) Images of colony growth on SC+glu and ura-/6AU15 plates taken at the specified number of days after plating (1 day for SC+glu, 12 days for ura-/6AU15). Growth of colonies is nearly uniform on SC+glu plates but shows non-uniform stochastic emergence on ura-/6AU15. N.b. the plated dilutions for the two plate types are not the same. URA3 expression for the experiment shown is controlled by PHSP12, but similar behavior was observed for all promoters discussed here. (E) Early colony formation on ura-/6AU15 plates imaged by superimposed differential interference contrast and fluorescence microscopy. Cells contain PHSP12-URA3-mRuby/PADH1-DHFR-GFP. Left panel: One day after plating. By this timepoint small, macroscopic colonies would have formed on SC+glu plates, but instead cells remain in microcolonies having undergone no more than three doublings. Right panel: Same plate as left, five days after plating. While most cells have not grown since the one-day timepoint, other cells having undergone successful tuning instead form larger colonies with URA3 expression sustained throughout them.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The ‘synprom’ discussed in the main text is synprom5-sam3. Data are taken from ura-/6AU agar plates containing the listed 6AU concentration. An ‘x’ followed by a dashed line indicates the threshold of detection from the experiment, marked at the last data point prior to any colonies being observed.
 
 Even with the challenging and specific experimental layout described here, with growth highly dependent on URA3 expression, we expect that stochastic tuning might contribute to fitness through mechanisms acting in cis at the promoter driving URA3, those acting in trans through modulation of factors that (despite our best efforts) weakly affect the promoter driving URA3, and through tuning of unrelated pathways that benefit survival and growth in the –URA condition. Nevertheless, URA3 expression itself will clearly be the key driver of growth since it is the critical bottleneck for nucleotide biosynthesis in the absence of uracil supplementation.
 
 To look for evidence of fitness-directed stochastic tuning, we tracked the colony formation of cells containing synprom-driven URA3 after plating on ura-/6AU15 plates. Lacking sufficient URA3 expression to overcome high 6AU levels, these non-growing cells would be expected to succumb to starvation and die. Remarkably, however, after prolonged incubation we observed apparently stochastic transitions to rapid growth, leading to the formation of macroscopic colonies over time (Figure 3B). We eventually observed colony formation by roughly one cell in 103, a rate too high to be driven by mutation-driven adaptation in the absence of growth.
 
-## Stochastic tuning of other synthetic and natural promoters
+### Stochastic tuning of other synthetic and natural promoters
 
 The synthetic promoter referred to as ‘synprom’ throughout the text is the combination of a pseudorandom sequence with a small natural promoter-proximal region taken from the SAM3 gene, with both stripped of all recognizable matches to known transcription factor binding sites (see Materials and Methods for details). We also tested all combinations of five other synthetic promoter sequences and one other promoter proximal region, enumerated in Supplementary file 2. As shown in Figure 3—figure supplement 1, four of the six synthetic promoters support stochastic tuning, and the ability of synprom5 (the purely artificial component of the synprom referred to in the remainder of the text; see Supplementary file 2 for all synthetic promoter sequences) to undergo tuning remains even with a different promoter proximal region. These findings highlight the universality of the observed tuning phenomenon and minimize the possibility that our observations actually arise due to the presence of some residual sequence-specific transcription factor binding site present in synprom.
 
@@ -54,13 +62,25 @@ As shown in Figure 3C, we also observed similar tuning behavior for two high-noi
 
 The apparently stochastic nature of colony formation in our experiments is reflected both in the steady emergence of colonies over the course of days or weeks (Figure 3B–C and Figure 3—figure supplement 1), and in the wide variance of colony sizes observed on ura-/6AU15 plates (Figure 3D). Microscopy revealed that cells remain quiescent for days before transitioning to URA3 expression and rapid growth, with a transition rate dependent on the choice of promoter (Figure 3E). Furthermore, the change that enables growth under the ura-/6AU15 condition must be passed from mother to daughter cells, as colonies expand from a few points of initiation instead of showing random division of cells throughout the microscopic field over time. While the presence of some deterministic process, yielding colony formation over the observed timescales (dependent on the initial state of each cell), cannot be ruled out, a far simpler explanation for the observed phenomenon of a long lag followed by appearance of colonies over a wide range of times is that each cell independently undergoes a random process that can eventually lead to growth. We confirmed that the appearance of colonies is not simply due to aging of the plates; 6AU-containing plates which were pre-incubated for a week or longer prior to plating of cells showed no change in colony formation rates (data not shown).
 
-## Fitness-directed tuning operates independently of conventional regulatory input and is transcriptionally driven
+### Fitness-directed tuning operates independently of conventional regulatory input and is transcriptionally driven
 
 To provide further insights into the regulatory changes occurring during the onset of cell growth, we performed flow cytometry time courses on cells challenged by, and subsequently growing in, liquid ura-/6AU5 media, using cells with synprom-driven URA3-mRuby, and with a DHFR-GFP fusion driven by either the constitutive ADH1 promoter (Figure 4A–B) or synprom (Figure 4C–D) itself. The use of PADH1 to drive the second reporter allows us to control for extrinsic noise and global changes in gene expression, whereas coupling synprom to the non-beneficial DHFR-GFP fusion allows us to test whether the observed stochastic tuning is driven by any trans-acting input from some existing regulatory network or whether it is truly specific to the allele needed for growth, as required by our proposed tuning model.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cell counts for synprom-URA3-mRuby/PADH1-DHFR-GFP cells in liquid ura-/6AU5 media. Colors correspond to different biological replicates started on different days. Arrows indicate two timepoints from each strain for which fluorescence cumulative distribution functions (CDFs) are shown below. Error bars for cell counts show central 95% credible intervals. (B) Flow cytometry cumulative distributions of fluorescence levels for URA3-mRuby and DHFR-GFP during uracil starvation. In each CDF a given timepoint (solid line) is compared to the distribution present for cells in logarithmic growth in SC+glu (rich) media (dashed lines). The values shown are log2 ratios to the median value of cells growing exponentially in SC+glu. GFP signals are shown in green and mRuby signals in red. (C) Analogous to A, but we consider cells where synprom drives both URA3-mRuby and DHFR-GFP. (D) Analogous to B, but for cells with synprom driving both URA3-mRuby and DHFR-GFP.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Flow cytometry data on counts and fluorescence distributions for cells containing URA3-mRuby under control of the noted promoter (PRGI1 or PHSP12) and DHFR-GFP under control of PADH1. Cells were grown in liquid ura-/6AU5 media. For the cell counts (top), colors correspond to different biological replicates started on different days. Arrows indicate two timepoints from each strain for which fluorescence cumulative distribution functions (CDFs) are shown below; in each CDF a given time-point (solid line) is compared to the distribution present for cells in logarithmic growth in SC+glu media (dashed lines). The values shown are log2 ratios to the median value of cells growing exponentially in SC+glu. GFP signals are shown in green and mRuby signals in red. Error bars for cell counts show central 95% credible intervals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** RT-qPCR based quantification of URA3:DHFR ratio for synprom-URA3-mRuby/synprom-DHFR-GFP cells either in in SC+glu media (liquid or plates), from tuned liquid cultures in ura-/6AU5 media, or for tuned colonies on ura-/6AU15 plates. Large points show estimated averages obtained via a Bayesian hierarchical model (see Methods), small points show values for biological replicates, and error bars indicate 75% (strong) or 95% (thin) credible intervals. P(diff) in each case gives the posterior probability that the –URA value is greater than the corresponding SC+glu value. See Supplementary file 7 for primer sequences.
+
 Several patterns in the growth curves and flow cytometry data are immediately apparent. First, as with the agar-based growth discussed above, cells show a lag of at least 72 hr with undetectable growth, followed by the onset of steady growth until saturation. In the case of URA3-mRuby driven by synprom and DHFR-GFP by the constitutive promoter PADH1, URA3-mRuby fluorescence increases substantially in tandem with the onset of cell growth, and expression subsequently remains high until saturation; in contrast, DHFR-GFP signals do not even recover to their initial levels (Figure 4B; compare dashed and solid line distributions). This demonstrates that the URA3 induction resulting in growth is promoter-specific and does not simply reflect a general increase in protein expression. We observed qualitatively equivalent behavior when URA3 was driven by PRGI1 or PHSP12 (Figure 4—figure supplement 1). Even more strikingly, for cells with synprom driving both fluorescent fusions, we observed a specific enhancement of URA3-mRuby expression over that of DHFR-GFP (Figure 4D), showing that the transition to high URA3 expression is not only promoter-specific but allele-specific, and thus must be driven at least partly by changes occurring in cis at the specific locus whose expression is required for growth. As an additional test, we performed quantitative RT-PCR experiments to measure the ratio of URA3 and DHFR mRNA expression in tuned cells either in liquid ura-/6AU5 media or on ura-/6AU15 plates (see Figure 4—figure supplement 2). In both cases, we observed a substantial increase in the URA3:DHFR ratio in the tuned cells, indicating that the observed tuning occurs at least partly through a local cis-acting process at the locus required for growth (although we cannot rule out additional changes in other promoters that also contribute to survival and growth, which may account for the observed heterogeneity in expression levels between replicates). Consistent with our proposed tuning model, the allele-specific nature of the transcriptional induction supports a key role for a local tuning process that is independent of dedicated sensory and regulatory input.
 
-## Varying the threshold level of URA3 required for growth shifts tuning from stochastic to deterministic
+### Varying the threshold level of URA3 required for growth shifts tuning from stochastic to deterministic
 
 The presence of the competitive URA3 inhibitor 6-azauracil allows us to vary the threshold level of URA3 required for growth. Thus, it is instructive to consider how the concentration of 6AU may alter stochastic tuning behavior, both in the context of the computational model described above and in the actual behavior of the system. We made two crucial modifications to the numerical model employed in Figure 2 to mimic our experimental setup. First, rather than having the entire gene expression profile begin far from the optimal point, we begin with all genes but one (representing URA3) at their optimal values, reflecting the fact that aside from the artificial stress of lacking appropriate URA3 regulation, the cells’ native regulatory network can provide an appropriate response to ura-/6AU media. Second, we note that due to the presence of the competitive inhibitor 6AU, the URA3 in the cell will not even be able to contribute meaningfully to nucleotide biosynthesis (and thus impact the cell’s health/fitness) until it passes a threshold level. Thus, the tuning term (Figure 2A) is not applied to the gene representing URA3 until after the concentration of URA3 passes a threshold. Aside from the modifications noted above, we model tuning in the ura-/6AU environment as we did for the general case in Figure 2, and in particular, the fitness effects of changing URA3 expression must compete with noisy gene expression from the other 999 genes in the model gene expression profile to impact the direction of tuning.
 
@@ -70,7 +90,7 @@ The resulting URA3 expression profiles during simulated tuning in the presence o
 
 **Figure 5.:** We simulated the gene expression dynamics of cells containing URA3 under the control of a non-native promoter, when exposed to uracil-depletion stress with varying concentrations of the URA3 inhibitor 6AU. The model employed is equivalent to that in Figure 2A, with k = 0.1, η = 0.1, and the target expression profile equal to that for the case shown in Figure 2B except for the case of the gene corresponding to URA3, whose optimal value was set to 80. (A) Typical trajectories of URA3 expression levels for a cell in the presence of low (blue) or high (red) 6AU concentrations, which alter the minimum URA3 expression level at which fitness-directed stochastic tuning can occur. We show results for a starting URA3 level [URA3]=25, with optimal fitness occurring at [URA3]=80. The initial and optimal URA3 levels are shown as gray lines. (B) Violin plots of the distributions of the minimum time required to reach a URA3+state (defined as [URA3]>75) in the presence of increasing concentrations of 6AU (implemented as higher thresholds of URA3 required for stochastic tuning to become active). In each case distributions reflect 50 independent trajectories simulated at each 6AU level. (C) Experimental validation of model predictions. Cells were grown in liquid ura-/6AU1 media (-URA) for 3–4 hr and then had the expression of fluorescent reporter proteins compared (using flow cytometry) with those of the equivalent cells grown in SC+glu (+URA) over the same time period. Values show log2 fold changes from SC+glu to ura-/6AU1; error bars show bootstrap-based 95% confidence intervals. Biological replicates performed on different days are shown side by side; the order of replicates is matched for URA3-mRuby and DHFR-GFP.
 
-## Tuning dynamics at the single-cell level
+### Tuning dynamics at the single-cell level
 
 We utilized time-lapse fluorescence microscopy to monitor the correspondence between expression of URA3-mRuby and cell division in PHSP12-URA3-mRuby/PADH1-DHFR-GFP cells that initiated the tuning process. Consistent with our proposed tuning model, gene expression fluctuations that surpassed a threshold for alleviating the URA3 deficit were reinforced over long timescales and were sustained (inherited) across multiple generations as the tuned colony expanded (Figure 6). As expected, there is no accompanying increase in DHFR-GFP. Similar trajectories were observed for other tuning micro-colonies (Figure 7A). The apparently long autocorrelation time of URA3-mRuby fluctuations through the duration of a tuning trajectory is consistent with our proposed fitness feedback reinforcement mechanism. In order to quantitatively determine the timescale of gene expression fluctuations, also known as mixing times (Sigal et al., 2006), we utilized fluorescence-activated cell sorting (FACS) to sort a population of cells for the bottom 20%, the top 20%, and complete (mock-sorted) distribution of URA3-mRuby expression and measured the timescales over which the sorted fluorescence distributions converged to each other (Figure 7—figure supplement 1). For cells growing under uracil-replete conditions (SC+glu), we observed a relatively fast mixing time on the order of ~100 min (Figure 7—figure supplement 1; Supplementary file 3). On the other hand, cells starving in ura-/6AU10 media had mixing times that ranged from 400 to 1200 min (Figure 7—figure supplement 1; Supplementary file 3).
 
@@ -78,35 +98,120 @@ We utilized time-lapse fluorescence microscopy to monitor the correspondence bet
 
 **Figure 6.:** Shown are fluorescence microscopy time courses of microcolonies beginning after 12 hr of exposure to ura-/6AU5 media. A tuned colony is shown on top and a nearby untuned colony on the bottom. Fluorescence values are uniformly scaled but are not otherwise processed.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig7-v2.jpg)
+
+**Figure 7.:** (A) Formation of a microcolony over 24 hr of exposure to ura-/6AU5 media in PHSP12-URA3-mRuby/PADH1-DHFR-GFP cells. GFP and mRuby are shown as transparent green and red overlays. (B) Snapshots equivalent to A) for a non-tuned colony in the same field of view. (C) Observed cumulative distributions (empirical cumulative distribution function; ECDF) of mRuby (left) and GFP (right) levels for cells that either do or do not divide in the timepoint following the measurement (analyzed in four-hour intervals). Values are pooled over all timepoints except the first, for five colonies growing in a single field of view. p-values arise from a Wilcoxon rank sum test applied to the shift between the non-dividing and dividing cells. Δ indicates a point estimate for the difference in fluorescence of the dividing vs. non-dividing cells, along with a 95% confidence interval (95% CI). Values shown are raw fluorescence normalized by the median value for all observations of each fluorescent protein; note the different x scales for mRuby vs. GFP. (D) Lineage traces showing long term propagation/inheritance of URA3-mRuby protein levels. At each specified timepoint, the average fluorescence of each cell is shown on the y axis, with lines connecting each cell to the cell(s) arising from it at the subsequent timepoint; thus, forks in the lines indicate cell division. Colors specify which of five microcolonies a given cell is a part of; only the red microcolony showed notable tuning over the course of the experiment. A black ‘*’ is shown for each transition between adjacent timepoints for which the correlation of ranks between the timepoints in question is significant (p<0.05) using a Spearman correlation test, and a red ‘*’ is shown for transitions where the same criterion holds considering only the rank ordering of cells in the red (tuned) colony (the colony shown in panel A). (E) Observed distribution of mRuby/GFP ratios depending on time elapsed since a lineage of cells began to divide. The x axis divides the cells up by the time (measured in four-hour intervals) that has elapsed since the first observed division event of an ancestor of that cell; ‘Undivided’ indicates cells in lineages that have not yet divided in the analyzed trajectory, and 0 hr denotes cells that will divide before the next analyzed snapshot. Note that points are plotted for each cell at each analyzed frame relative to its own growth history, and thus not all cells at a given x position necessarily arise from the same time point in the image series.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Time-evolution of distributions of mRuby fluorescence values for cells initially sorted to contain only the top or bottom 20% of cells (Top 20% and Bottom 20%, respectively), compared with the full mock-sorted population (Complete Distribution). Distributions are shown after growth for the specified time in SC +glu media. Data for all panels is for cells with synprom-URA3-mRuby/synprom-DHFR-GFP. (B) As in panel A), but for cells exposed to uracil starvation via ura-/loflo/6AU10 media. (C) Time evolution of overlap of fluorescence distributions between the specified subpopulations for data from panels A–B). Plotted points show the distance (1-overlap) of the normalized density estimates. Solid lines show curve fits for simple exponential decay, with grey lines giving 95% confidence intervals. Numbers indicated alongside each point series in the legend give half lives for the decay process.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Analogous to Figure 7E, each panel shows the observed distribution of mRuby/GFP ratios depending on time elapsed since a lineage of cells began to divide. The x axis divides the cells up by the time (measured in four-hour intervals) that have elapsed since the first observed division event of an ancestor of that cell; ‘Undivided’ indicates cells in lineages that have not yet divided in the analyzed trajectory, and 0 h cells that will divide before the next analyzed snapshot. (A) Data from a single field of view plated on ura-/loflo/6AU5 agar after 12 hr of pregrowth in ura-/loflo/6AU5 liquid media. (B–D). Data from each of three fields of view where the cells were pregrown in SC+glu media, immobilized on poly-D-lysine coated cover slips, and subsequently covered with ura-/loflo/6AU5 media.
+
 To determine the association of URA3-mRuby levels across generations with growth, we primed cells with 12 hr of exposure to ura-/6AU5 media and then tracked the division of tuned vs. untuned microcolonies of PHSP12-URA3-mRuby/PADH1-DHFR-GFP cells over 24 hr time courses in ura-/6AU5 media. By comparing the fluorescence of cells that are about to divide with those that are not, we found that dividing cells have significantly higher levels of mRuby than non-dividing cells, whereas the separation was much smaller for GFP (Figure 7C). Furthermore, the URA3-mRuby levels within the tuning colony were highly heritable; as seen in Figure 7D, as the indicated colony tunes and grows, cells within that colony maintain a high-mRuby state through subsequent divisions, and even their internal rankings are mostly preserved. mRuby levels in other, non-tuned microcolonies are almost uniformly lower than cells in the tuned colony. The fitness-driven optimization component of our model (Figure 1) further predicts that fluorescence levels should not only be heritable, but also that cells will continue to increase URA3 expression (possibly noisily) until they reach either a local optimum fitness or some biological constraint on maximum gene expression. Consistent with our expectation, we observed that the ratio of mRuby to GFP levels (the latter of which is fused to a gene whose product is not needed for growth) became steadily higher in cell lineages that had been dividing for longer (Figure 7E). These observations demonstrate that the level of URA3 expression is correlated with fitness, is transmitted across several generations, and shows an ongoing upward trend in tuned cells over the course of time. That last finding is particularly important because a directed increase in URA3 once a lineage begins growing is predicted by our model for fitness-directed tuning, but cannot be explained by other competing hypotheses. The images and data shown in Figure 7 were taken for colonies within a single field of view of a 40x objective to ensure internal consistency in illumination and normalization, but their behavior is representative of our observations across multiple such windows. (e.g., Figure 7—figure supplement 2, panel A). Similar quantitative analysis from another experiment beginning directly from growth in SC+glu (instead of short-term pregrowth in ura-6AU media) is shown in Figure 7—figure supplement 2, panels B-D.
 
-## Growth on –ura/6AU media does not arise from genetic mutations
+### Growth on –ura/6AU media does not arise from genetic mutations
 
 It is crucial to exclude the possibility that genetic mutations underlie the observed tuning transition on –ura/6AU plates. The ongoing emergence of the tuned state in non-growing cells, over the course of many days, makes mutational mechanisms unlikely. In addition, as seen by microscopy (Figure 3E), no more than 1–3 cell divisions occur prior to the onset of sustained growth in a small fraction of cells.
 
 Nevertheless, given the phenomenon of stress-induced mutagenesis in non-growing bacterial cells (Al Mamun et al., 2012), we wished to conclusively exclude any possibility of mutational mechanisms. To this end, we note that changes in URA3 expression occurring due to mutations should be stably heritable in the progeny of the tuned cells, which would not be expected to revert to a URA3 low state even after restoration of uracil in the media. To test the reversibility of the URA3 high state, we designed an experimental setup in which tuned colonies isolated from ura-/6AU plates were grown for varying numbers of passages in uracil-replete media (SC+glu including uracil) and then re-exposed to uracil starvation (Figure 8—figure supplement 1). If any genetic mutation were responsible for increasing URA3 expression in the tuned cells, the phenotype should be stable for many generations. On the other hand, stochastic tuning would predict that cells revert to a naïve state following sufficient growth in uracil-containing conditions, as they no longer benefit from URA3 expression. As seen in Figure 8A, cells with synprom-driven URA3 show reversion toward the naïve colony formation rates upon growth in (uracil containing) SC+glu media, with recovery apparent even after a single round of growth on an SC+glu plate, and subsequently becoming stronger with additional SC+glu passages.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig8-v2.jpg)
+
+**Figure 8.:** (A) Time courses of recovery back to the naïve state for tuned synprom-URA3-mRuby/PADH1-DHFR-GFP cells grown in either SC+glu or SC+glu with 25 mM nicotinamide added (+NIC). Extremes are shown for the colony formation times of cells never exposed to –ura conditions (Naïve) and for single colonies isolated after streaking out cells from ura-/6AU15 plates onto SC+glu (Streaked –URA colony). Colors of points indicate a single lineage beginning from a single streaked out colony picked at the first SC+glu plate stage. The cells were then repeatedly passaged in liquid SC+glu media and assessed for colony formation rates on ura-/6AU15 plates on subsequent days, as detailed in Figure 8—figure supplement 1. (B) Colony formation rates on ura-/6AU15 plates in the presence of various genetic perturbations, assessed by colony counts from platings of selected dilutions of cells. An ‘x’ followed by a dashed line indicates no observed colonies and is shown at the threshold of detection from the experiment. All mutations are in a synprom-URA3-mRuby/leu2∆0 background.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Experimental setup for assessing recovery to a naïve state. Tuned colonies growing on a –ura/6AU15 plate were streaked onto an SC+glu plate, colony purified, and then grown for 48 hr cycles in liquid SC+glu. Colony formation rates were assessed after each transfer and quantified according to the amount of time needed for formation of one colony per 10,000 cells plated (see Materials and Methods for details).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/31867/elife-31867-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Loss of viability of cells with the indicated gene deletion, but not bearing any copy of URA3, in SC-ura+glu media. Separate traces indicate different biological replicates.
+
 To conclusively exclude mutational mechanisms, we performed untargeted whole-genome re-sequencing of a total of eight isolates with synprom-driven URA3-mRuby (four colonies from 6AU15 plates and four separate biological replicates taken after the onset of growth in 6AU5 liquid media; see Materials and Methods for details). For each case, we scanned the region within 25 kb of the LEU2 locus (where the URA3 cassettes were integrated) for mutations, since control of URA3 expression was shown in these cells to operate locally in cis (Figure 4 and Figure 4—figure supplement 2). The results are summarized in Supplementary file 4: Of the eight isolates, five show no mutations within 25 kb of the URA3-mRuby insertion, two show SNPs of unknown fitness contribution in a minority of the population, and one shows a duplication of the URA3-mRuby cassette (based on the presence of a read density that is twice the level observed elsewhere for the same chromosome). These data clearly indicate that the origin of growth-supporting URA3 expression levels in these cells cannot be reliant on a mutational mechanism, as only one of the eight cases – that with the URA3 duplication -- shows a mutation at high enough levels in the population to explain the onset of growth (mutations present in less than half of the population must have arisen after one or more cells in the population had already tuned and began growing, and thus by definition could not be responsible for the initial onset of the growing state). The phenotypes caused by the sequence variants observed in populations C2 and L4 are not immediately obvious, but even if they are beneficial, their presence in a minority of cells excludes the possibility that they were responsible for the onset of tuning. Note that it should not be surprising (and, indeed, would be expected) that beneficial mutations might arise in a population once it had begun expanding in a new environment due to stochastic tuning. Our findings are consistent with a non-genetically heritable basis for the observed tuning in seven out of eight of the cases examined, as in all other growing lines, mutations near the URA3 gene were either non-existent or present only in a minority of the population.
 
-## Excluding growth-selection on the basis of pre-existing variation in URA3 expression level
+### Excluding growth-selection on the basis of pre-existing variation in URA3 expression level
 
 A formal possibility for colony formation in a subset of the population is that growth occurs solely on the basis of pre-existing URA3 levels in cells prior to being exposed to uracil deprivation. Microscopic observations of starving cells (Figure 3E) argue against this possibility, as a substantial lag passes before any cells begin sustained growth. Also, colony formation continues over the course of many days (Figure 3B–D), demonstrating that even cells that were non-growing for a substantial time period after exposure to URA- stress can eventually grow under this condition. Nevertheless, to conclusively discount the possibility of pre-existing URA3 levels determining tuning, we sorted populations of cells on the basis of initial URA3 expression, isolated those with the highest mRuby levels (the top 0.5–1%, well outside of the main distribution of the population) and plated them. These experiments clearly showed that the ability to form colonies on ura-/6AU plates is not restricted to cells with initially high URA3-mRuby expression (Supplementary file 5), as the highly fluorescent cells do not form colonies on ura-/6AU plates at rates substantially higher than unsorted cells, and certainly not at a sufficiently higher rate to fully explain the observed colony formation rates. These data argue against the possibility that growth occurs only in cells that, by chance, already have high levels of URA3 expression at the time of plating (although such cells may have some slight advantage, given the nature of their initial state).
 
-## Stochastic tuning is affected by genetic perturbations to chromatin modification machinery
+### Stochastic tuning is affected by genetic perturbations to chromatin modification machinery
 
 The proposed fitness-directed tuning mechanism relies on the capacity of local chromatin to maintain a memory of recent changes in transcription, and to modulate the transcription rate based on the fitness consequences of those changes, as conveyed by the proposed central metabolic integrator of health/fitness. We hypothesized that chromatin modification machinery may be intimately involved in these processes.
 
 To probe the mechanistic basis of stochastic tuning, we focused on perturbations to histone acetylation/deacetylation (deletions of GCN5, SIN3, HST3, HST4), and chromatin remodeling (deletions of ASF1, ISW2, SWR1, UBP8), all of which provide potential pathways for coupling feedback from the cell’s physiological state to allele-specific modulation of chromatin and transcription (See Table 1 for details). We selected these targets because of their association with genes showing particularly high levels of noise (and thus, more likely to be driven by tuning) in single-cell proteomic analysis (Newman et al., 2006). In our screening, homozygous replacements of HST3, HST4, SWR1, ISW2, and UBP8 with a kanMX cassette showed little effect on colony formation rates on ura-/6AU plates, and SIN3::kanMX/SIN3::kanMX strains showed severely compromised cell survival under growth-arrested conditions; all were excluded from further analysis. On the other hand, we found that genetic perturbations to the histone acetylation machinery through deletion of the key histone acetyltransferase GCN5 essentially abolished tuning, whereas deletion of the histone chaperone ASF1, in contrast, increased tuning rate by more than an order of magnitude (Figure 8B). At the same time, we show that the observed tuning process does not rely on transcriptional memory mechanisms grounded in chromatin localization, given the lack of effect of a NUP42 deletion (Figure 8B; cf. (Guan et al., 2012)).
 
-## Variations in colony formation rate are not a result of changes in viability
+**Table 1.**
+ Summary of genetic perturbations tested for effects on tuning rates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Perturbation</th>
+      <th>Direct effect</th>
+      <th>Effect on tuning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GCN5::kanMX</td>
+      <td>Deletion of histone acetyltransferase subunit (acts in ADA, SAGA, SLIK/SALSA complexes)</td>
+      <td>Inhibits</td>
+    </tr>
+    <tr>
+      <td>SWR1::kanMX</td>
+      <td>Deletion of H2AZ exchange factor</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>UBP8::kanMX</td>
+      <td>Deletion of SAGA complex de-ubiquitinase</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>SIN3::kanMX</td>
+      <td>Deletion of Rpd3S/L histone deacetylase components</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>HST3::kanMX</td>
+      <td>Deletion of Sir2-family histone deacetylase</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>HST4::kanMX</td>
+      <td>Deletion of Sir2-family histone deacetylase</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>ISW2::kanMX</td>
+      <td>Deletion of DNA translocase involved in chromatin remodeling</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>ASF1::kanMX</td>
+      <td>Deletion of nucleosome assembly factor</td>
+      <td>Accelerates</td>
+    </tr>
+    <tr>
+      <td>NUP42::kanMX</td>
+      <td>Deletion of nuclear pore complex component known to be involved in transcriptional memory</td>
+      <td>No effect</td>
+    </tr>
+  </tbody>
+</table>
+
+### Variations in colony formation rate are not a result of changes in viability
 
 In interpreting our data on the effects of genetic perturbations on tuning (Figure 8B), it was crucial to consider the possibility that cells may lose viability at variable rates under different conditions, which could contribute to the observed differences in colony formation rates. We thus performed experiments to measure the rate of cell death in the presence of uracil starvation and compared the results with the different colony formation rates observed. As shown in Figure 8—figure supplement 2, the effects of a mutation on survival and tuning rates are not significantly correlated. For example, deletion of GCN5 resulted in the nearly complete loss of stochastic tuning, deletion of NUP42 had no effect, and deletion of ASF1 substantially enhanced tuning, yet none of these mutations shows a change in survival rates during incubation in uracil-free media compared with wild type cells sufficient to explain the observed change in colony formation rate (Figure 8—figure supplement 2). Even for the poorest surviving strain, GCN5::kanMX/GCN5::kanMX, colony formation rates after ten days are 100−1000 times lower than wild type cells even though survival rates are lower only by a factor of ten.
 
-## Chemical perturbation of histone deacetylases inhibits the maintenance of the tuned state
+### Chemical perturbation of histone deacetylases inhibits the maintenance of the tuned state
 
 Given the apparent importance of chromatin modifications in fitness-directed tuning, we also tested the effects of nicotinamide treatment (which inhibits the sirtuin class of histone deacetylases, or HDACs (Bitterman et al., 2002)) on reversion of the tuned cells back to a naïve state. As shown in Figure 8A, we found that chemical inhibition of sirtuin HDACs by nicotinamide treatment substantially accelerated the decay of a tuned population to the naïve state, further highlighting the importance of histone modification in stochastic tuning. Combined with the data on knockout strains described above, our results suggest a central role for chromatin modifications in the establishment and maintenance of the tuning process, although the molecular details cannot be discerned from these data alone.
 
-## A biologically feasible implementation of stochastic tuning
+### A biologically feasible implementation of stochastic tuning
 
 The abstract model introduced in Figures 1–2 demonstrates the potential utility of fitness-directed stochastic tuning to establish adaptive gene expression states without directly sensing the external environment. In order to substantiate the biological feasibility of stochastic tuning, we implemented its critical components in a plausible simulation incorporating generic features of chromatin modification and the information flow of the Central Dogma of Molecular Biology. We therefore designed and simulated a dynamical model tracking transcription rates, transcript levels, protein levels, and histone modifications in a single cell, with parameter distributions sampled from experimental data (Figure 9A; see Methods for details). We incorporated the possibility of adding or removing chromatin marks that can alter the transcription rates of the associated genes. Our model incorporates two classes of marks: tuning marks (T), which link cellular fitness to transcriptional output by having mark addition rates that are a function of the recent direction of change in global fitness and current number of such marks at each promoter; and stabilizing marks (S), which are added at a rate dependent on the number of tuning marks at each promoter (Figure 9B). At any time, the transcriptional output of the promoter is a function of the density of both tuning marks and stabilizing marks. As such, the tuning marks provide a critical connection between changes in global fitness and transcription rates, whereas the more slowly changing stabilizing marks capture the average transcriptional output over longer timescales, enabling a more stable optimization trajectory. Both T and S chromatin marks come in two varieties: positive (activating) and negative (repressive).
 
@@ -138,7 +243,129 @@ Fitness-directed stochastic tuning has important implications for gene regulatio
 
 ## Materials and methods
 
-## Media and strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Saccharomyces cerevisiae)</td>
+      <td>URA3</td>
+      <td>NA</td>
+      <td>YEL021W</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Entacmaea quadricolor)</td>
+      <td>mRuby</td>
+      <td>DOI: 10.1371/journal. pone.0004391</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Aequorea victoria)</td>
+      <td>GFP</td>
+      <td>DOI: 10.1038/nbt1172</td>
+      <td></td>
+      <td>Codon optimized for S. cereivisiae; sequence available as Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>PHSP12</td>
+      <td>NA</td>
+      <td></td>
+      <td>Promoter region upstream of YFL014W</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>PADH1</td>
+      <td>NA</td>
+      <td></td>
+      <td>Promoter region upstream of YOL086C</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>PRGI1</td>
+      <td>NA</td>
+      <td></td>
+      <td>Promoter region upstream of YER067W</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>synprom</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthetic promoter sequence. See Supplementary Material for complete sequence, and methods for details of construction</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>GCN5::kanMX</td>
+      <td>PMID: 10436161</td>
+      <td></td>
+      <td>Knockout cassette obtained from the yeast knockout collection strain</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>ASF1::kanMX</td>
+      <td>PMID: 10436161</td>
+      <td></td>
+      <td>Knockout cassette obtained from the yeast knockout collection strain</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (S. cerevisiae)</td>
+      <td>NUP42::kanMX</td>
+      <td>PMID: 10436161</td>
+      <td></td>
+      <td>Knockout cassette obtained from the yeast knockout collection strain</td>
+    </tr>
+    <tr>
+      <td>strain background (S. cerevisiae)</td>
+      <td>BY4743</td>
+      <td>PMID: 9483801</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>6-azauracil</td>
+      <td>ACROS Organics</td>
+      <td>Product code 153970050</td>
+      <td>Stock solution 10 mg/mL in 1 M ammonium hydroxide</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Nicotinamide</td>
+      <td>Sigma</td>
+      <td>Product number N0636</td>
+      <td>Stock solution 1 M in water; filter sterilized</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>tuning_simple</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Octave implementation provided as Source Code 2</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>tuning</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Python implementation provided as Source Code 3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media and strains
 
 For routine growth of strains, we used YPD broth (10 g/L yeast extract, 20 g/L peptone, 20 g/L dextrose) or YPD agar plates (YPD broth +20 g/L Bacto agar). We used standard recipes based on SC+glucose (SC+glu) (Kaiser et al., 1994) for all physiological experiments. SC/loflo refers to SC made with low fluorescence yeast nitrogen base (US Biologicals). In the case of SC+glu, we used dropout supplement powders interchangeably from ForMedium (DSCK012) and US Biologicals (D9515), although they differ slightly in the concentrations of adenine and para-amino benzoic acid supplied. SC+glu derivatives lacking particular nutrients are specified as SC+glu-NUTRIENT; e.g., SC+glu-ura for SC+glu lacking uracil. We also refer to the commonly used mixture of SC+glu-ura with 6-azauracil added as ura-/6AUi, where i is the final concentration of 6AU in microgram/mL. The agar for all plates used in physiological experiments was either Noble agar (Difco) or quadruple-washed Bacto agar. For the removal of the GAL-GIN11 cassette in counter-selections (see below), cells were plated on YPGA agar plates (10 g/L yeast extract, 20 g/L peptone, 20 g/L galactose, 20 g/L agar, 100 microgram/mL ampicillin). All growth was at 30°C; liquid phase growth included shaking at 200–220 rpm in an Innova 42 incubator (New Brunswick).
 
@@ -152,7 +379,7 @@ Strains containing the fusion proteins were constructed by transforming the LEU2
 
 Knockout strains were generated by beginning from appropriate haploids containing either a leu2::promoter-URA3 or leu2::promoter-DHFR construct or simply leu2∆0, amplifying an appropriate kanMX knockout cassette from the corresponding strain in the S. cerevisiae gene deletion collection (Giaever et al., 2002), and selecting on YPD+G418 plates. We confirmed the presence of kanMX at the appropriate site and absence of the native gene by PCR. Diploid knockout strains containing appropriate deletions and a URA3-mRuby insertion at leu2∆0 were generated by mating these haploids as noted above.
 
-## Colony formation assays
+### Colony formation assays
 
 Experiments showing colony formation rates over time all follow a common formula. Cells were grown overnight in SC+glu media, and then in the morning back-diluted 1:200 into fresh, prewarmed SC+glu. The cells were grown for four to five hours at 30°C with shaking and then pelleted, washed once with 25 mL deionized (DI) water, pelleted, washed with 1 mL water, pelleted, and resuspended in 1 mL water. Specified dilutions were made in DI water from this final cell suspension.
 
@@ -160,11 +387,11 @@ Cells were then either plated on full plates at pre-chosen dilutions (100 microl
 
 Cells were counted either directly from the plates or from stored digital images. Direct plate counts were done manually for all visible colonies; for those counted from saved images, we imposed a minimum size threshold of 0.2 mm in diameter (rounding up to the nearest pixel). Times for counts were rounded to the number of days since plating.
 
-## Death rate assays
+### Death rate assays
 
 To determine the survival rates of cells undergoing uracil starvation in the presence of various other perturbations, we measured the death rates of cells lacking any copy of URA3 in SC-ura+glu media. Cells were pregrown and washed as described above for plating assays, but then resuspended in liquid SC-ura+glu media and incubated at 30°C. Aliquots were regularly removed and spotted on SC+glu plates to determine the number of viable colonies. Survival rates are for leu2∆0 homozygotes (the original BY4743 diploid, possibly with a homozygous deletion of a specified gene) with no available copy of URA3.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were analyzed by flow cytometry on an LSR Fortessa (Becton Dickinson) at the Columbia University Microbiology and Immunology Flow Cytometry Core Facility or University of Michigan Flow Cytometry Core. Cells to be used in these experiments were initially prepared and washed following the same pregrowth procedure as given above for colony formation assays, except that growth was in low fluorescence SC/loflo media instead of SC. A flask containing 25 mL of prewarmed media (generally ura-/6AU5 made from an SC-ura/loflo base) was then inoculated with 200 microliters of the cell suspension, and cells were grown with shaking at 30°C. Subsequent data acquisition varied depending on the experiment to be performed.
 
@@ -176,7 +403,7 @@ For the use of FACS followed by plating to test the colony formation rates of hi
 
 For the short timescale tuning data shown in Figure 5C, the cells were grown for 3–4 hr side by side in SC/loflo + glu and –ura/loflo/6AU1 media, and then placed on ice and run directly on the flow cytometer. For each biological replicate (performed on different days), we grew leu2::synprom-URA3-mRuby/leu2::synprom-DHFR-GFP and nonfluorescent leu2::URA3/leu2∆0 cells in parallel to allow direct comparison of the observed fluorescence levels. Analysis was performed separately for each biological replicate. We first normalized all fluorescence signals by the FSC-A signal raised to the power of 1.5, which we found empirically to be an effective correction removing most of the dependence of the fluorescence on cell size. Next, a mapping of FSC signals to expected autofluorescence on each channel was fitted using the R loess function (with default parameters), and the expected autofluorescence subtracted from the observed value for each cell to yield what we refer to as the blanked fluorescence. We then calculated and compared the changes in the median blanked fluorescence of the populations for the same cells grown in SC+glu vs. ura-/6AU1 media. Confidence intervals were calculated by bootstrapping with 200 bootstrap replicates.
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 Cells for whole genome sequencing were taken directly from the growth condition of interest (ura-/6AU15 plate or ura-/6AU5 liquid media) and flash frozen in 15% glycerol or 1x TES (10 mM Tris, pH 7.5; 10 mM EDTA, 0.5% SDS). One reference sample grown under unselective conditions was taken for each starting strain to use as a baseline. Genomic DNA was isolated using a YeaStar Genomic DNA kit (Zymo Research) according to the manufacturer’s instructions. Samples were then barcoded and prepared for sequencing using a Nextera XT kit (Illumina, Inc.) and sequenced as part of a pooled library on a NextSeq (Illumina, Inc.).
 
@@ -184,11 +411,11 @@ Sequencing reads were clipped to remove adapters and commonly observed artifactu
 
 After alignment, mutational calls and read depths were obtained using the mpileup and depth modules of samtools 0.1.18 (Li et al., 2009), respectively. Reads for called variants within 25 kb of the insertion site were examined manually and compared to the sequenced parental strain; validated variants are listed in Supplementary file 4.
 
-## RNA isolation
+### RNA isolation
 
 RNA was isolated using an adaptation of the hot acid phenol method (Collart and Oliviero, 2001). Cells for RNA isolation were grown under appropriate conditions (either in liquid phase or on agar plates), and then snap-frozen in 1x TES (10 mM Tris, pH 7.5; 10 mM EDTA; 0.5% SDS) and stored below −70°C. Snapshots of 200 to 600 microliters were taken from growing liquid phase cultures, whereas from agar plates we harvested 1–20 colonies of <0.5 mm diameter taken from the same plate as each biological replicate. RNA was isolated by rapidly thawing the cell suspension and mixing 1:1 with a 5:1 acid phenol:chloroform solution, then incubating 60 min at 65°C with occasional vigorous vortexing. The solution was then chilled on ice for 5 min, and centrifuged 5 min at 16,000 x g at 4°C. The aqueous phase was mixed 1:1 with additional acid phenol:chloroform, chilled, and centrifuged as before. The aqueous phase was then mixed 1:1 with a 24:1 chloroform:isoamyl alcohol solution, and centrifuged 5 min at 4°C. The resulting aqueous phase was transferred to a fresh tube and combined with 1/10 vol 3 M sodium acetate, 2 volumes of 1:1 ethanol:isopropanol, and 1/800—1/200 vol Glycoblue (Ambion), and then precipitated for at least 1 hr at −20°C and then at least 1 hr at −80°C. RNA was recovered by centrifuging 15 min at 16,000 x g at 4°C, washed with ice cold 75% ethanol, spun an additional 5 min, and then air-dried and resuspended in RNAse-free water. The samples were then further purified using a Zymo RNA clean and concentrator five according to the manufacturer’s instructions, including an on-column DNase digestion.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was purified from cells in the desired growth condition using the hot acid-phenol procedure described above. cDNA pools were generated for each sample using random hexamer-primed reverse transcription with Protoscript II (New England Biolabs) following the manufacturer’s instructions. cDNA pools were used directly in qPCR reactions without further purifications, assembling reactions using iTaq Universal SYBR Green Supermix (BioRad) following the manufacturer’s instructions, in GeneMate PCR plates. Plates were sealed with Microseal ‘B’ adhesive film (BioRad) and run on a BioRad CFX96 detection system. Ct values calculated by the instrument software were then exported for subsequent analysis. All isolated RNA was quantified on a Bioanalyzer (Agilent) and found to have an RIN >= 6.8.
 
@@ -198,25 +425,25 @@ qRT-PCR data were analyzed using a Bayesian hierarchical model treating the ∆C
 
 Parameters not otherwise specified were assigned appropriate uninformative priors. Here ‘sample’ refers to a single biological sample and ‘class’ to a single growth condition. The key parameter of interest is µc for each class of cells under study, the overall average URA3:DHFR difference for cells grown under that condition. We fitted the model using JAGS (Plummer, 2003), and then report credible intervals and other inferences from the posterior distribution on µc. Each of the ∆Ct(sample,day) values used the median across 1–2 technical replicates for each primer pair.
 
-## Cell count data analysis
+### Cell count data analysis
 
 Data were analyzed using custom-written python and R scripts. Source code for the nontrivial analysis of flow cytometry data is provided as Source code 1. Uncertainties for cell counts (shown in plating and flow cytometry data) were calculated by treating each observed count as a Poisson random variable; using Bayesian inference with the Jeffreys prior (Jeffreys, 1961), the posterior distribution for the rate parameter I (the concentration of cells) is given in closed form by
 
-I ~ Gamma(0.5+∑i=0nin, n)
+I ~ Gamma($0.5+\sum_{i=0}^{n}i_{n}$, n)
 
-Where n is the number of observations and the in are the observed counts. Error bars then indicate a central 95% credible interval for I given the observed data.
+Where n is the number of observations and the $i_{n}$ are the observed counts. Error bars then indicate a central 95% credible interval for I given the observed data.
 
-## Recovery experiments
+### Recovery experiments
 
 Experiments to examine the reversion of tuned colonies toward a naïve state were performed as shown in Figure 8—figure supplement 1. Single colonies from a ura-/6AU15 plate were streaked out onto SC +glu and allowed to grow. From that plate, single colonies were again picked and underwent repeated passages in liquid media; each ‘passage’ refers to a 200-fold dilution, which is then allowed to grow for 48 hr (96 hr for the very first transfer). Cells were also taken for plating from the original ura-/6AU15 plate, the first SC +glu plate stage, and several subsequent time points during liquid culture. Cells taken from plates were immediately diluted in water and spotted on SC +glu and ura-/6AU15 to track colony formation rates; cells taken from liquid passages were streaked out on SC +glu plates prior to use in spottings, in order to obtain a consistent physiological state. Plots for ‘naïve’ cells refer to cells treated identically, except that they had initially been grown on SC +glu plates instead of ura-/6AU15 plates. Recovery was assessed based on the amount of time required for 1 in 10,000 cells spotted on the new ura-/6AU15 plate to form countable colonies (using linear interpolation of colony counts between observed data points); in the event that one dilution yielded no colonies passing our size threshold, but the next (10-fold more concentrated) spot gave an uncountable haze, we assigned a count of 1 to the more concentrated spot.
 
-## Numerical simulations
+### Numerical simulations
 
 The numerical simulations shown in Figures 2 and 5 were performed by implementing the model described in the text using the Matlab programming language and simulated using Matlab (Mathworks, Inc.) or GNU Octave version 3.8.1 (Eaton et al., 2009), with qualitatively equivalent results obtained in either case. All simulations were performed using the same initial conditions (but different random seeds, for the sampling shown in Figure 5). Octave code implementing this model is provided as Source code 2.
 
 The physiological tuning model employed for Figure 9 and the accompanying text was implemented in python, and simulated using python 2.7.6, making heavy use of the numpy (Svd et al., 2011) and scipy (Jones et al., 2001) libraries, with data analysis and plotting using matplotlib (Hunter, 2007) and pandas (McKinney, 2010). The details of the physiological model itself are given below.
 
-## Biologically feasible simulation of stochastic tuning
+### Biologically feasible simulation of stochastic tuning
 
 To provide a suitable mechanistic model for stochastic tuning, we developed a discrete-time model tracking the temporal evolution of transcription rates ri,t (continuous, changed in response to random fluctuations and potentially tuning input), copy number of each transcript per cell xi, and copy number of each protein per cell pi, considered separately for each gene i.
 
@@ -272,15 +499,21 @@ Here mS represents the magnitude of the effects of a single S mark, and the numb
 
 A python implementation of the model, along with sample inputs corresponding to the simulations described here, are included as Source code 3.
 
-## Fluorescence tracking of sorted populations
+### Fluorescence tracking of sorted populations
 
 In order to measure the mixing times under different stress conditions, synprom-URA3-mRuby/synprom-DHFR-GFP cells were grown overnight in SC +glu media. The next morning, the cells were back-diluted 1:100 into fresh, prewarmed low fluorescence SC +glu or ura-/6AU10. The cells in ura-/6AU10 media were kept in a 30°C incubated shaker for 24 hr before sorting, whereas the cells in the complete media were sorted after four hours of growth at 30°C. The cells were sorted based on their mRuby fluorescence level into three populations of the top 20%, bottom 20%, and the complete distribution (mock-sorted) of cells. In order to minimize the effects of both autofluorescence and size-fluorescence correlations, the cells (including those in the mock-sorted population) were tightly gated on FSC-A levels. The sorted cells were kept on ice until they were spun down and transferred to pre-warmed media identical to that in which they had previously been incubated (that is, cells from complete media to complete media and cells from ura-/6AU to fresh ura-/6AU). The cells were incubated at 30°C thereafter. A sample of each population was analyzed using flow cytometry at different time intervals, with T = 0 being the time that the fresh media was added to the samples. The last time point for the cells in SC +glu media was 630 min, and for the ura-/6AU cells was 6660 min.
 
 We calculated the distribution of mRuby fluorescence values for each sample at each time point by smoothing the observed values using a kernel density estimator. We then measured the pairwise mRuby fluorescence distribution overlap of the top 20%, bottom 20% and the complete distribution at each time point for each growth condition. The distribution overlap was calculated by numerically integrating the area under the (normalized) kernel density distribution estimates of both populations being compared.
 
-An increasing overlap relative to t = 0 signifies the amount that the two populations have moved towards each other, and therefore the higher the overlap, the more mixed the two populations have become. Therefore, we calculated ft=(max⁡x-xt)xt=0, where x is the overlap between the two distributions and max(x) is the maximum observed overlap. f(t) can be modeled as an exponential decay process according to:f(t)=ae-tτwhere τ provides a timescale for the mixing time (in particular, τ ln(2) is the half-life of the decay process). We used nonlinear curve fitting in Matlab to estimate the values of the parameters in the above equation for cells grown under each of the physiological conditions described above and report the estimated half-lives to give insight into the mixing times active in the populations studied here.
+An increasing overlap relative to t = 0 signifies the amount that the two populations have moved towards each other, and therefore the higher the overlap, the more mixed the two populations have become. Therefore, we calculated $ft=\frac{(max⁡x-xt)}{x_{t=0}}$, where x is the overlap between the two distributions and max(x) is the maximum observed overlap. f(t) can be modeled as an exponential decay process according to:
 
-## Fluorescence microscopy time courses on immobilized cells
+$$
+f(t)=ae^{-\frac{t}{\tau}}
+$$
+
+where τ provides a timescale for the mixing time (in particular, τ ln(2) is the half-life of the decay process). We used nonlinear curve fitting in Matlab to estimate the values of the parameters in the above equation for cells grown under each of the physiological conditions described above and report the estimated half-lives to give insight into the mixing times active in the populations studied here.
+
+### Fluorescence microscopy time courses on immobilized cells
 
 The images shown and analyzed in Figure 6, Figure 7, and panel A of Figure 7—figure supplement 2 were obtained on a Zeiss Axio Observer Z1, using a 40x objective lens. PHSP12-URA3-mRuby/PADH1-DHFR-GFP cells were grown overnight in SC +glu liquid media, and then back-diluted 100x into SC/loflo + glu media and grown four additional hours with shaking at 30°C. Cells were spun down, and then incubated in ura-/loflo/6AU5 liquid for 12–13 hr. The cells were then pipetted onto the prepared slides. In order to prepare slides, we added 200 µL of ura-/loflo/6AU5 media containing 1% agar to each well of a two-well slide. Using a 22 µm coverslip, the surface of the media in the wells containing the solid media was flattened. After adding the cells on to the wells, we allowed extra media to be absorbed and then added a cover slip on top. The cells were imaged on DIC, GFP, brightfield, and mRuby channels; snapshots were taken once every 30 min for approximately 24 hr.
 

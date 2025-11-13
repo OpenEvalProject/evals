@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00w6g5w60 Department of Molecular & Cellular Endocrinology, Arthur Riggs Diabetes and Metabolism Research Institute, City of Hope Medical Center Duarte United States
-2. https://ror.org/00w6g5w60 Department of Molecular & Cellular Endocrinology, Arthur Riggs Diabetes and Metabolism Research Institute and the Comprehensive Cancer Center, Beckman Research Institute, City of Hope Medical Center Duarte United States
+1. Department of Molecular & Cellular Endocrinology, Arthur Riggs Diabetes and Metabolism Research Institute, City of Hope Medical Center Duarte United States ([ROR:00w6g5w60](https://ror.org/00w6g5w60))
+2. Department of Molecular & Cellular Endocrinology, Arthur Riggs Diabetes and Metabolism Research Institute and the Comprehensive Cancer Center, Beckman Research Institute, City of Hope Medical Center Duarte United States ([ROR:00w6g5w60](https://ror.org/00w6g5w60))
 
 † Corresponding author
 

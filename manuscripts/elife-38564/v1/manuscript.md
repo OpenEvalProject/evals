@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.38564.001 Niemann-Pick C1 (NPC1) is a polytopic membrane protein with 13 transmembrane helices that exports LDL-derived cholesterol from lysosomes by carrying it through the 80 Å glycocalyx and the 40 Å lipid bilayer. Transport begins when cholesterol binds to the N-terminal domain (NTD) of NPC1, which projects to the surface of the glycocalyx. Here, we reconstitute cholesterol transport by expressing the NTD as a fragment separate from the remaining portion of NPC1. When co-expressed, the two NPC1 fragments reconstitute cholesterol transport, indicating that the NTD has the flexibility to interact with the remaining parts of NPC1 even when not covalently linked. We also show that cholesterol can be transferred from the NTD of one full-length NPC1 to another NPC1 molecule that lacks the NTD. These data support the hypothesis that cholesterol is transported through interactions between two or more NPC1 molecules.
+Niemann-Pick C1 (NPC1) is a polytopic membrane protein with 13 transmembrane helices that exports LDL-derived cholesterol from lysosomes by carrying it through the 80 Å glycocalyx and the 40 Å lipid bilayer. Transport begins when cholesterol binds to the N-terminal domain (NTD) of NPC1, which projects to the surface of the glycocalyx. Here, we reconstitute cholesterol transport by expressing the NTD as a fragment separate from the remaining portion of NPC1. When co-expressed, the two NPC1 fragments reconstitute cholesterol transport, indicating that the NTD has the flexibility to interact with the remaining parts of NPC1 even when not covalently linked. We also show that cholesterol can be transferred from the NTD of one full-length NPC1 to another NPC1 molecule that lacks the NTD. These data support the hypothesis that cholesterol is transported through interactions between two or more NPC1 molecules.
 
 ## Introduction
 
@@ -83,17 +83,265 @@ In contrast to RND proteins, NPC1 is a monomer when purified in detergents and s
 
 ## Materials and methods
 
-## Culture media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sodium dodecyl sulfate (SDS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>71736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Benzonase nuclease</td>
+      <td>Sigma-Aldrich</td>
+      <td>E1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bovine serum albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>[1-14C]Oleic acid (50 mCi/mmol)</td>
+      <td>PerkinElmer, Waltham, MA</td>
+      <td>NEC317050UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SuperSignal West Pico Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Zeocin</td>
+      <td>Life Technologies, Grand Island, NY</td>
+      <td>R25005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>FuGENE HD</td>
+      <td>Promega Corporation, Madison, WI</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Formaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>F8775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Penicillin-Streptomycin Solution</td>
+      <td>Corning</td>
+      <td>30–002 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Methanol</td>
+      <td>Fisher Scientific, Hampton, NH</td>
+      <td>A412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Hexane</td>
+      <td>Fisher Scientific</td>
+      <td>H292</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Isopropanol</td>
+      <td>Fisher Scientific</td>
+      <td>A416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Heptane</td>
+      <td>Fisher Scientific</td>
+      <td>H350</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ethyl ether</td>
+      <td>Fisher Scientific</td>
+      <td>E138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Acetic acid</td>
+      <td>Fisher Scientific</td>
+      <td>A38C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sodium compactin</td>
+      <td>Brown et al. (1978)</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sodium mevalonate</td>
+      <td>Brown et al. (1978)</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Glutamine-free DMEM</td>
+      <td>Sigma-Aldrich</td>
+      <td>D5546</td>
+      <td>culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM-low glucose  (1000 mg/l)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6046</td>
+      <td>culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ham’s F-12 medium and Dulbecco’s modified Eagle’s medium containing 2.5 mM L- glutamine (DMEM)</td>
+      <td>Corning, Manassas, VA</td>
+      <td>10–090-CV</td>
+      <td>culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Newborn calf lipoprotein-deficient serum (LPDS, d &lt; 1.215 g/mL)</td>
+      <td>Goldstein et al. (1983)</td>
+      <td>NA</td>
+      <td>culture serum</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bolt 4–12% Bis-Tris Plus gradient gels</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>NW04125BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II XL Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies, Santa Clara, CA</td>
+      <td>200522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal IgG against Flag</td>
+      <td>Sigma-Aldrich, St. Louis, MO</td>
+      <td>F7425, RRID: AB_439687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG against LAMP-2</td>
+      <td>BD Biosciences, Franklin Lakes, NJ</td>
+      <td>555803, RRID: AB_396137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal IgG against amino acids 1261–1278 of human NPC1</td>
+      <td>Abcam, Cambridge, UK</td>
+      <td>ab134113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal IgG against NPC1(NTD)-His8-FLAG</td>
+      <td>Infante et al. (2008)</td>
+      <td>Clone 491B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG conjugated to AlexaFluor 488</td>
+      <td>Invitrogen, Carlsbad, CA</td>
+      <td>A-11008, RRID: AB_143165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG conjugated to AlexaFluor 594</td>
+      <td>Invitrogen</td>
+      <td>A-11005, RRID: AB_141372</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal HRP-conjugated IgG against β-actin</td>
+      <td>Cell Signaling Technology, Danvers, MA</td>
+      <td>12262, RRID: AB_2566811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horse anti-mouse IgG conjugated to HRP</td>
+      <td>Cell Signaling Technology</td>
+      <td>7076, RRID: AB_330924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG conjugated to HRP</td>
+      <td>Cell Signaling Technology</td>
+      <td>7074, RRID: AB_2099233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgG against human NPC2</td>
+      <td>Wang et al. (2010)</td>
+      <td>Clone 13G4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Culture media
 
 Medium A is a 1:1 mixture of Ham’s F-12 medium and Dulbecco’s modified Eagle’s medium (DMEM) containing 2.5 mM L-glutamine. Medium B is L-glutamine-free DMEM. Medium C is DMEM-low glucose (1000 mg/l). All media contained 100 units/ml penicillin and 100 µg/ml streptomycin sulfate unless otherwise noted.
 
-## Cell culture
+### Cell culture
 
 NPC1-/- cells (previously referred to as 10–3 cells) are a stable line of mutant CHO-K1 cells that lack detectable NPC1 (Wojtanik and Liscum, 2003). These NPC1-/- cells and CHO-K1 cells were grown in medium A with 5% FCS. ∆NTD cells are a stable cell line of mutant NPC1-/- cells that stably express human NPC1 lacking the N-terminal domain (described below). These cells were grown in medium A with 5% FCS and 500 µg/ml Zeocin. CHO-7 cells, a clone of CHO-K1 cells selected for growth in LPDS (Metherall et al., 1989), were grown in medium A with 5% LPDS. SV589 cells are a line of SV40-immortalized human fibroblasts (Yamamoto et al., 1984). These cells were grown in medium C with 5% FCS.
 
 Stock cultures of all cell lines were maintained in monolayer culture at 37°C in an 8.8% CO2 incubator except for the SV589 cells, which were maintained at 5% CO2. All cell lines were routinely monitored for mycoplasma contamination.
 
-## Plasmid constructions
+### Plasmid constructions
 
 pNPC1 encodes wild-type human NPC1 (amino acids 1–1278) followed sequentially by three tandem copies of the Flag epitope tag (DYKDDDDK), one copy of the TEV cleavage site (ENLYFQ), and two copies of the StrepTactin epitope tag (WSHPQFEK). Expression is achieved with the cytomegalovirus (CMV) promoter. This plasmid was constructed by ligating the component DNA sequences into the 5′-XbaI and 3′-HindIII sites of pcDNA3.1/Zeo(-) (Lu et al., 2015). The original plasmid used to generate pNPC1 was constructed from pCMV-NPC1 (Origene Technologies, Rockville, MD). Deletions and point mutations were introduced into the coding region of pNPC1 by site-directed mutagenesis using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies, Santa Clara, CA).
 
@@ -101,22 +349,22 @@ p∆NTD encodes NPC1 with a deletion of amino acids 25–252. pNTD-TM1 encodes N
 
 The coding region of each plasmid was sequenced to ensure integrity of the construct.
 
-## Generation of ∆NTD cells that lack the N-terminal domain of NPC1
+### Generation of ∆NTD cells that lack the N-terminal domain of NPC1
 
 NPC1-/- CHO-K1 cells were set up on day 0 at a density of 4 × 105 cells per 100 mm dish in 10 ml of medium A with 5% LPDS. On day 2, cells were transfected with 1 μg/dish of p∆NTD using FuGENE HD transfection reagent according to the manufacturer’s instructions. At 24 hr after transfection, 700 μg/ml Zeocin was added for selection. Fresh medium was added every 2–3 days until colonies formed at ∼15 days. Individual colonies were isolated with cloning cylinders, and expression of ∆NTD was assessed by immunoblot analysis with rabbit monoclonal anti-NPC1. Cells from single colonies were cloned by limiting dilution, maintained in medium A with 5% LPDS containing 500 μg/ml Zeocin and are hereinafter referred to as ∆NTD cells.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Whole cell extracts were subjected to electrophoresis in phosphate-buffered saline (PBS) containing 0.25% SDS and a 1:1000 dilution of Benzonase Nuclease. Samples were applied to Bolt 4–12% gradient gels. After electrophoresis, the proteins were transferred to nitrocellulose filters, which were then incubated with the indicated primary antibody (see figure legends). Bound antibodies were visualized by chemiluminescence (SuperSignal West Pico Chemiluminescent Substrate, Thermo Scientific, Waltham, MA) after a 1 hr incubation with either 31 ng/ml of horse anti-mouse IgG or 13 ng/ml of goat anti-rabbit IgG conjugated to horseradish peroxidase. The immunoblot using the HRP-conjugated β-actin antibody was visualized without a secondary antibody. The images were scanned using an Odyssey FC Imager (Dual-Mode Imaging System; 2 min integration time) and analyzed using Image Studio ver. 5.0 (LI-COR Biosciences, Lincoln, NE).
 
-## Cholesterol esterification assay
+### Cholesterol esterification assay
 
 The rate of incorporation of [14C]oleate into cholesteryl [14C]oleate and [14C]triglycerides by monolayers of NPC1-/- cells and ∆NTD cells was measured as described previously (Metherall et al., 1989). The details of cell plating, incubation conditions, transfections, and pulse labeling with [14C]oleate are described in the figure legends. After a 4 hr incubation with [14C]oleate, the cells were washed, and the lipids were extracted in hexane:isopropanol (3:2, vol:vol), separated on a silica gel G thin-layer chromatogram (developed in heptane:ethylether:acetic acid, 90:30:1), and quantified by scintillation counting with the use of an internal standard for recovery (Goldstein et al., 1983). The amounts of cholesteryl [14C]oleate and [14C]triglycerides formed are expressed as nanomoles formed per hour per milligram cell protein.
 
-## Co-localization by immunofluorescence microscopy
+### Co-localization by immunofluorescence microscopy
 
 SV589 cells were set up on glass coverslips at 1.5 × 105 cells per 6-well plate in 2 ml medium C with 5% FCS. At 24 hr after plating, cells were transfected with 1 µg of the indicated plasmid using FuGENE HD as the transfection agent. At 24 hr after transfection, cells were fixed for 15 min in 3.7% formaldehyde in PBS at room temperature and permeabilized for 10 min in methanol at −20˚C. After blocking by incubation with 1 mg/ml bovine serum albumin in PBS, cells were double-labeled with 1 µg/ml mouse monoclonal anti-LAMP-2 and 0.8 µg/ml of rabbit monoclonal anti-Flag followed by 6.7 µg/ml goat anti-rabbit IgG conjugated with AlexaFluor 488 and 6.7 µg/ml goat anti-mouse IgG conjugated with AlexaFluor 594. The coverslips were than mounted in Mowiol (EMD, Darmstadt, Germany) solution (Wei and Seemann, 2009) and fluorescence images were acquired using a Plan-Neofluar 40x/1.3 DIC objective (Zeiss, Oberkochen, Germany), an Axiovert 200M microscope (Zeiss), an Orca 285 camera (Hamamatsu, Hamamatsu City, Japan), and Openlab 4.0.2 software (Improvision, Coventry, UK).
 
-## Reproducibility
+### Reproducibility
 
 All experiments were repeated three or four times on different days. Similar results were obtained.

@@ -16,13 +16,44 @@
 
 ## Abstract
 
-10.7554/eLife.13125.001 Social information allows the rapid dissemination of novel information among individuals. However, an individual’s ability to use information is likely to be dependent on phenotypic constraints operating at three successive steps: acquisition, application, and exploitation. We tested this novel framework by quantifying the sequential process of social information use with experimental food patches in wild baboons ( Papio ursinus ). We identified phenotypic constraints at each step of the information use sequence: peripheral individuals in the proximity network were less likely to acquire and apply social information, while subordinate females were less likely to exploit it successfully. Social bonds and personality also played a limiting role along the sequence. As a result of these constraints, the average individual only acquired and exploited social information on <25% and <5% of occasions. Our study highlights the sequential nature of information use and the fundamental importance of phenotypic constraints on this sequence. DOI: http://dx.doi.org/10.7554/eLife.13125.001
+Social information allows the rapid dissemination of novel information among individuals. However, an individual’s ability to use information is likely to be dependent on phenotypic constraints operating at three successive steps: acquisition, application, and exploitation. We tested this novel framework by quantifying the sequential process of social information use with experimental food patches in wild baboons (Papio ursinus). We identified phenotypic constraints at each step of the information use sequence: peripheral individuals in the proximity network were less likely to acquire and apply social information, while subordinate females were less likely to exploit it successfully. Social bonds and personality also played a limiting role along the sequence. As a result of these constraints, the average individual only acquired and exploited social information on <25% and <5% of occasions. Our study highlights the sequential nature of information use and the fundamental importance of phenotypic constraints on this sequence.
 
 ## Introduction
 
 Individuals require information to reduce uncertainty about their environment. Information can be acquired in two ways (Dall et al., 2005): by interacting with the environment directly (personal information) or by attending to the behaviour of others (social information). Individuals benefit from both personal and social information in myriad contexts, including foraging, predator avoidance, and mate choice (Giraldeau et al., 2002). Their use is moderated by their expense and reliability: personal information is usually reliable but costly and time consuming to collect, social information is less costly but more likely to become outdated and unreliable (Giraldeau et al., 2002; Laland, 2004). The low costs of social information also allow it to disseminate more rapidly across groups, such that it can play an important role in the formation of traditions and cultures (Whiten, 2000; Castro and Toro, 2004).
 
-Despite the fitness benefits of information use, we have very little understanding of how individuals vary in their ability to capture these benefits. Indeed, theory developed to explain the costs and benefits of information use usually assumes homogeneity within a population (e.g. Pradhan et al., 2012). To understand individual variation in information use, either personal or social, we suggest it is helpful to decompose the process into a sequence of three steps: the acquisition of information, its application, and the exploitation of its benefits (Table 1). Up until now, many studies have implicitly assumed that these three steps are synonymous, but recent evidence indicates that information use is substantially more complex. In particular, Carter et al. (2014) found that the time spent acquiring social information about a task did not correlate with subsequent performance (information application) in wild baboons (Papio ursinus), while Atton et al. (2012) found differences in individual performance between task discovery (information acquisition) and task solving (information exploitation) in three-spine sticklebacks (Gasterosteus aculeatus). The recognition of three sequential steps allows us to begin unpacking the complexity of information use, and to explore variation in the performance of different individuals at different points along the sequence. Distinct sensory and motor capabilities are likely to be involved at each stage, leading to different phenotypic constraints. As a result, individuals who are effective at one step may be less so at another, with significant implications for who captures the most benefits.10.7554/eLife.13125.003Table 1.The information use sequence: definitions and examples.DOI: http://dx.doi.org/10.7554/eLife.13125.003StageDefinitionExample(s) of stageAcquisitionAn individual gains knowledge1. Gaining knowledge of the location of a food patch. 2. Gaining knowledge of the location or form of a novel task.ApplicationAn individual uses the information that it has acquired in a relevant (but not necessarily successful) way1. Entering a food patch. Because information can become outdated, ‘application’ can occur even after the patch has been fully depleted, leading to no reward. 2. Using stimulus or local enhancement to manipulate a novel task, but not necessarily successfully.ExploitationAn individual successfully uses information that it has acquired and applied to gain a benefit1. Gaining food from a patch. 2. Solving a novel task.
+Despite the fitness benefits of information use, we have very little understanding of how individuals vary in their ability to capture these benefits. Indeed, theory developed to explain the costs and benefits of information use usually assumes homogeneity within a population (e.g. Pradhan et al., 2012). To understand individual variation in information use, either personal or social, we suggest it is helpful to decompose the process into a sequence of three steps: the acquisition of information, its application, and the exploitation of its benefits (Table 1). Up until now, many studies have implicitly assumed that these three steps are synonymous, but recent evidence indicates that information use is substantially more complex. In particular, Carter et al. (2014) found that the time spent acquiring social information about a task did not correlate with subsequent performance (information application) in wild baboons (Papio ursinus), while Atton et al. (2012) found differences in individual performance between task discovery (information acquisition) and task solving (information exploitation) in three-spine sticklebacks (Gasterosteus aculeatus). The recognition of three sequential steps allows us to begin unpacking the complexity of information use, and to explore variation in the performance of different individuals at different points along the sequence. Distinct sensory and motor capabilities are likely to be involved at each stage, leading to different phenotypic constraints. As a result, individuals who are effective at one step may be less so at another, with significant implications for who captures the most benefits.
+
+**Table 1.**
+ The information use sequence: definitions and examples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stage</th>
+      <th>Definition</th>
+      <th>Example(s) of stage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acquisition</td>
+      <td>An individual gains knowledge</td>
+      <td>1. Gaining knowledge of the location of a food patch. 2. Gaining knowledge of the location or form of a novel task.</td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td>An individual uses the information that it has acquired in a relevant (but not necessarily successful) way</td>
+      <td>1. Entering a food patch. Because information can become outdated, ‘application’ can occur even after the patch has been fully depleted, leading to no reward. 2. Using stimulus or local enhancement to manipulate a novel task, but not necessarily successfully.</td>
+    </tr>
+    <tr>
+      <td>Exploitation</td>
+      <td>An individual successfully uses information that it has acquired and applied to gain a benefit</td>
+      <td>1. Gaining food from a patch. 2. Solving a novel task.</td>
+    </tr>
+  </tbody>
+</table>
 
 The range of phenotypic constraints operating at each step might include cognitive, social, behavioural, ecological and demographic characteristics. The importance of these constraints is likely to differ not only between individuals but also between populations and species. Here, we focus on social, behavioural and demographic constraints on the social information use sequence. To begin with, we consider the social phenotype, i.e., phenotypic traits that emerge from social interactions with others and are likely to be under selection, in this case individual dominance rank (Moore, 1993) and position in the social network (Aplin et al., 2015). Dominant animals can aggressively monopolise resources such as mates (Cowlishaw and Dunbar, 1991) and food (Koenig, 2002), limiting the opportunities for others to apply and exploit information that they have acquired either personally or socially about these resources. This can further lead to voluntary inhibition in the use of information by subordinate animals, e.g., low-ranked rhesus monkeys (Macaca mulatta) only performed a socially-learnt task when high-ranked monkeys were not present (Drea and Wallen, 1999). The social network will likely manifest constraints on different stages of the information use sequence depending on the type of association indexed by the network, i.e., associations according to spatiotemporal proximity or direct interactions. For instance, positions in proximity networks may affect an individual’s opportunities for information acquisition, assuming individuals are more likely to acquire information from others with whom they are more frequently in visual contact (Coussi-Korbel and Fragaszy, 1995; Voelkl and Noë, 2008, 2010), e.g., stickleback proximity networks predict the flow of information about the location of a novel task (Atton et al., 2012). Similarly, positions in interaction networks may limit the application and exploitation of information about resources if social bonds are required to gain access to those resources (Henzi and Barrett, 2002; Clarke et al., 2010), e.g., vervet monkeys (Chlorocebus aethiops) allocate their social effort to access food provided by others (Fruteau et al., 2009).
 
@@ -36,31 +67,31 @@ In this study, we explore phenotypic limitations on social information use. We e
 
 ## Materials and methods
 
-## Study area and study species
+### Study area and study species
 
 We studied two habituated troops (J, L) of wild chacma baboons at Tsaobis Nature Park, Namibia (15° 45’E, 22° 23’S) from May to July 2014. Two habitat types make up the Tsaobis terrain: open desert and riparian woodland. The open desert is characterised by small herbs and shrubs, such as Monechma cleomoides, Sesamum capense, and Commiphora virgata, in a mosaic of alluvial plains and steep-sided hills surrounding the ephemeral Swakop River. The riparian woodland along the Swakop is characterised by large trees and bushes, such as Faidherbia albida, Prosopis glandulosa, and Salvadora persica (see Cowlishaw and Davies, 1997 for more details). The baboons’ diet largely consists of berries, flowers, seedpods, and immature leaves (Cowlishaw, 1997). The baboons’ main predator, the leopard (Panthera pardus), is rare at Tsaobis and the risk of predation is low.
 
 The baboon troops were followed daily from dawn until dusk. We collected data on all baboons over 2 years of age, who were individually recognisable by marks (ear notches) (NJ = 46, NJ adult female = 18, NJ adult male = 8, NJ juvenile female = 6, NJ juvenile male = 14; NL = 48, NL adult female = 19, NL adult male = 10, NL juvenile female = 2, NJ juvenile male = 17). Individuals younger than 2 years did not have marks, were not individually recognisable and did not form part of the study. Dominance ranks were assessed through aggressive interactions, recorded ad libitum, using Matman 1.1.4 (Noldus Information Technology 2003). These data included all displacements, supplants, threats, chases and attacks that occurred for which we could identify both the actor and recipient. If more than one dominance behaviour occurred in one event, such as a threat followed by a chase, only one interaction was recorded. The dominance hierarchies were strongly linear (Landau’s corrected linearity index: h’J troop = 0.162, h’L troop = 0.183, NJ = 618, NL = 856, p<0.001 in both cases). Dominance rank was expressed relatively (which controls for group size), using the formula 1-[(1-r)/(1-n)] where r is the individual’s absolute rank and n is the group size, and ranges from 0 (lowest rank) to 1 (highest rank). Personality was indexed by boldness, estimated by presenting individuals with a novel food (2 cm2 pieces of potato or sweet potato dyed blue) while foraging naturally alone and quantifying the time that the individuals spent investigating—handling and smelling—the novel food (for further details, see Carter et al., 2012b). Individuals who investigated the novel food for longer were considered bolder. We tested individuals’ boldness only once during the study period, but have previously found this test to be repeatable over three years (Carter et al., 2012b) and correlated with subjective ratings of boldness (Carter et al., 2012a). Age (in years) was estimated from a combination of known birth dates and dental patterns of tooth eruption and wear (see below). Unmarked immigrant males’ ages were estimated at 9 years old when they appeared in the study troops, as this is the age most males were observed to transfer from our study groups.
 
-## History of the study population
+### History of the study population
 
 The Tsaobis baboons are a wild population that has been under study every austral winter since 2000. The field site is on private land, and the baboons have minimal contact with people other than the research team. The troops forage entirely naturally, except during specific research events that involve troop capture or feeding experiments. These occur very rarely (five occasions over the past 10 years), are short in duration (2–4 weeks), and entail the provisioning of the entire troop with corn kernels at a single site at dawn (e.g., King et al. 2008; Carter et al., 2013). Since 2009, individuals foraging alone have also been given the opportunity to sample a small, novel, food item (e.g., a slice of apple) at a random place and time, on average once per year, as a personality test (Carter et al., 2013).
 
 During troop captures, all troop members are captured at dawn in individual cages baited with corn. They are sequentially anaesthetised using tiletamine–zolazepam and the entire troop is processed within a day, to be released together the following morning when fully awake. While the baboons are anaesthetised, age is estimated through dentition. Tooth eruption schedules are used to assign age up to molar eruption (Kahumbu and Eley, 1991), while age beyond this point is estimated from molar wear. Validation of this approach using individuals captured on multiple occasions (N = 19 over periods of 1–5 years) to compare estimated versus known age differences between captures indicates these estimates are robust (the mean difference between the observed and estimated time periods does not differ from zero: one-sample t-test, p>0.05; G. Cowlishaw, unpublished data).
 
-## Quantifying the social networks
+### Quantifying the social networks
 
 Individual associations were quantified using three proximity measures and two interaction measures.
 
-## Proximity networks
+#### Proximity networks
 
-In the first case, proximity data were collected from scans of individuals between dawn and dusk during all behavioural states. We recorded subgroups (hereafter ‘groups’) within each troop according to three proximity-based definitions of group membership. To ensure that groups were sampled randomly and individuals were sampled evenly (and there was no bias against less social individuals), we quantified the groups associated with given ‘focal’ individuals chosen randomly from the troop membership. Because the troops can spread over 1 km
+In the first case, proximity data were collected from scans of individuals between dawn and dusk during all behavioural states. We recorded subgroups (hereafter ‘groups’) within each troop according to three proximity-based definitions of group membership. To ensure that groups were sampled randomly and individuals were sampled evenly (and there was no bias against less social individuals), we quantified the groups associated with given ‘focal’ individuals chosen randomly from the troop membership. Because the troops can spread over 1 km2 while foraging and finding particular individuals can be time consuming, the observer (MTT) searched for one of the first five individuals on the randomised list of baboons to optimise the number of independent groups sampled each day. Once a focal individual was found and its group membership quantified, that individual was removed from the list until all remaining individuals had been found and a new randomised list started. If a focal baboon had already been recorded in an already-sampled group (i.e., group membership had not changed), that individual was not sampled for an hour to ensure that the sampled groups constituted independent data. We are confident that each sampled group was independent and as such have not pooled data within arbitrary time periods (c.f. Carter et al., 2009). We recorded group composition at each scan for each of our three proximity rules: (1) the identity of all individuals within a 10 m radius of the focal individual (10 m scans), (2) the identity of all individuals whose most peripheral member was within 5 m of another individual of the group (5 m chain scan) and (3) the nearest neighbour within 5 m of the focal individual (nearest neighbour scans) (Figure 1) (Castles et al., 2014). Individuals who did not have a neighbour within the given distance for each proximity rule were recorded as alone.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13125/elife-13125-fig1-v1.jpg)
 
-**Figure 1.:** The black arrow represents a connection via the 5 m nearest neighbour rule; the white lines, connections via the 5 m chain rule; and the white circle represents the 10 m threshold distance for a connection (measures not to scale).DOI: http://dx.doi.org/10.7554/eLife.13125.004
+**Figure 1.:** The black arrow represents a connection via the 5 m nearest neighbour rule; the white lines, connections via the 5 m chain rule; and the white circle represents the 10 m threshold distance for a connection (measures not to scale).
 
-## Interaction networks
+#### Interaction networks
 
 Interaction data were recorded ad libitum by observers between dawn and dusk across all individuals as they moved continuously through the troop. On any given day, 1–4 observers were present with each troop, from a total pool of 7 observers for the field season. Observers collected ad libitum data while performing other data collection tasks at the site that required them to search for every individual every day (to perform the daily census, to perform the scans [this study] and while doing focal follow observations [not this study]) and to estimate group spread and activity every 30 min. Given that the observers were required to move constantly throughout the troop to monitor all individuals, our ad libitum data collection is not biased to more spatially central and/or obvious individuals and as such we have made no correction for individual baboon observability. New observers received training from experienced observers (who had worked with the baboons over at least two prior field seasons) until they could unambiguously and correctly identify dominance interactions (grooming was never ambiguous). No formal inter-observer reliability tests were done for ad libitum data, but we have successfully validated our training system for new observers collecting focal data in previous studies. If the interaction was ambiguous (as can sometimes occur during coalition formation), the data were not recorded.
 
@@ -68,27 +99,39 @@ We recorded both grooming and dominance interactions, noting the direction of th
 
 In total, we collected 6657 proximity scans including 2220 10 m scans (NJ = 1091, NL = 1129, median scans per individual = 24, range = 13–24 scans), 2214 5 m chain scans (NJ = 1085, NL = 1129, median = 24, range = 13–24), and 2223 nearest neighbour scans (NJ = 1089, NL = 1134, median = 24, range = 13–24). We collected 23–24 scans for each individual for each proximity rule except for three individuals who were not present for the entire field season due to death or immigration (N = ~13, 14, 17 scans each), but that were present during most of the patch experiments. We recorded 2768 grooming interactions in total (NJ = 1331, NL = 1437; median per initiator = 16.0, range = 1–111). Finally, we recorded 1474 dominance interactions in total (NJ = 618, NL = 856; median per initiator = 8.5, range = 1–116).
 
-Social networks are made up of nodes (individuals) and edges (connections between the nodes). Network edges can have both weight and directionality. Weighted data, which we use in all our networks, indicate that the frequency of interactions between individuals is recorded, rather than a binary indicator of whether or not two individuals ever interacted. Directionality data indicate the degree to which interactions between individuals are reciprocal. Thus, undirected edges assume reciprocality, i.e. the relationships between dyads are equal and the association matrix is symmetrical along its diagonal, while directed edges assume non-reciprocality, e.g. A may groom B more than B grooms A and the association matrix is not symmetrical. From the records of group membership for the 10 m and 5 m chain rules, we created an undirected association matrix for each troop for each method using the simple ratio index (SRI): x/(x + y
+Social networks are made up of nodes (individuals) and edges (connections between the nodes). Network edges can have both weight and directionality. Weighted data, which we use in all our networks, indicate that the frequency of interactions between individuals is recorded, rather than a binary indicator of whether or not two individuals ever interacted. Directionality data indicate the degree to which interactions between individuals are reciprocal. Thus, undirected edges assume reciprocality, i.e. the relationships between dyads are equal and the association matrix is symmetrical along its diagonal, while directed edges assume non-reciprocality, e.g. A may groom B more than B grooms A and the association matrix is not symmetrical. From the records of group membership for the 10 m and 5 m chain rules, we created an undirected association matrix for each troop for each method using the simple ratio index (SRI): x/(x + yab + ya + yb) where x is the number of times individuals A and B have been observed in the same group, yab is the number of times individuals A and B have been observed in separate groups, ya is the number of times A has been observed without B and yb is the number of times B has been observed without A (Cairns and Schwager, 1987). The nearest neighbour data, like the interaction data, are directional (A may have B as a nearest neighbour, but B’s nearest neighbour may not be A). Thus, for these datasets, we created directed association matrices which included the frequency with which A was the 'actor' towards B. For nearest neighbour, these frequencies represented the count of times that A had B as its nearest neighbour; for grooming, the count of times A groomed B; for dominance, the count of times A was aggressive towards B. However, dyads in the directed networks may acquire social information from each other equally. As such, we also analysed all our directed networks as undirected networks (by summing the interactions given and received by a dyad so that the association matrix was symmetrical along the diagonal). In total, across the 5 proximity and interaction datasets, this resulted in 5 symmetric and 3 non-symmetric (directional) weighted association matrices for each troop, resulting in a total of 16 association matrices (see Figure 2 for diagrams of the networks according to the 5 association rules).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13125/elife-13125-fig2-v1.jpg)
 
-**Figure 2.:** Nodes (J troop: purple nodes, panels a-e; L troop: green nodes, panels f-j) represent individual baboons and edges between them indicate the strength of the measured relationship (see key). Presented are the networks based on the 10 m rule (a, f), 5 m chain rule (b, g), directed nearest neighbour rule (c, h), directed grooming interactions (d, i) and directed dominance interactions (e, j). Adults are represented by darker nodes, juveniles by lighter nodes (though we note that age was analysed as a continuous variable). Node size represents individuals’ ranks, where larger nodes are higher ranks. Node positions are conserved between network diagrams in each troop.DOI: http://dx.doi.org/10.7554/eLife.13125.005
+**Figure 2.:** Nodes (J troop: purple nodes, panels a-e; L troop: green nodes, panels f-j) represent individual baboons and edges between them indicate the strength of the measured relationship (see key). Presented are the networks based on the 10 m rule (a, f), 5 m chain rule (b, g), directed nearest neighbour rule (c, h), directed grooming interactions (d, i) and directed dominance interactions (e, j). Adults are represented by darker nodes, juveniles by lighter nodes (though we note that age was analysed as a continuous variable). Node size represents individuals’ ranks, where larger nodes are higher ranks. Node positions are conserved between network diagrams in each troop.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/13125/elife-13125-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** The rules were the 5 m chain rule (5 m), 10 m proximity (10 m), directed nearest neighbour (NN), directed grooming interactions (groom) and directed dominance interactions (dom). Colouration is conserved from Figures 2 and 3, where J troop is represented by purple points and L troops by green points, and point luminance represents the number of times the individual acquired information (darker nodes acquired social information on more occasions).DOI: http://dx.doi.org/10.7554/eLife.13125.006
+**Figure 2—figure supplement 1.:** The rules were the 5 m chain rule (5 m), 10 m proximity (10 m), directed nearest neighbour (NN), directed grooming interactions (groom) and directed dominance interactions (dom). Colouration is conserved from Figures 2 and 3, where J troop is represented by purple points and L troops by green points, and point luminance represents the number of times the individual acquired information (darker nodes acquired social information on more occasions).
 
 For two of the social networks (see below), we calculated two individual-level measures of network centrality hypothesised to be important for socially transmitted information (Croft et al., 2008): degree strength and betweenness. Degree strength (hereafter strength) sums the weighted edges each individual has with all other individuals in the network. Higher values indicate individuals who have more and/or stronger connections to others and are predicted to have greater access to information accordingly. Betweenness calculates the (weighted) number of shortest paths that travel ‘through’ a particular individual. Individuals with high betweenness connect different parts of networks and are therefore predicted to have greater access to information. We calculated both measures of centrality for the proximity, grooming and dominance networks using the igraph package (Csardi and Nepusz, 2006) in R (Team, 2011).
 
-## Information diffusion experiments
+### Information diffusion experiments
 
 We experimentally assessed the diffusion of information about the location of newly discovered food resources by introducing patches of a highly preferred food, maize kernels, to the baboons. Two considerations were key to the design of the patch presentations: first, that the presentations were representative of naturalistic diffusions of information, such as about the location of a nest of eggs, and second, that the baboons did not learn to associate the observers with food. As such, one observer (AJC) created food patches by moving ahead of a foraging troop and scattering 52.9 ± 5.3 g of maize kernels over a 0.5 m2 core area (with a little surrounding scatter enlarging this area to no more than 1 m2), in the direction of travel of the troop. To avoid the baboons observing the patch being created, the observer either (i) quickly scattered the kernels as she was walking or (ii) pretended to get something from her field backpack while scattering the kernels behind her bag. In all cases, the baboons did not see the kernels being placed. Furthermore, because the observer was present in the troops for many hours preceding and following these trials, the baboons did not associate the camera nor the waiting behaviour of the observer with the presence of the patches. Because the foraging paths of the baboons are unpredictable, and the baboons typically have to be within 2 m of the patch to see the corn kernels (median, range 0–8 m, N = 38 trials with recorded detection distances), there was variation in the spatial position of the individual who discovered the patch. In 28 of the 50 experiments (56%), it was an individual at the leading edge of the group that found the patch. In 11 experiments (22%), it was an individual at the side periphery and in a further 11 (22%) an individual in the middle-back of the troop. In total, 37 different baboons (J = 19, L = 18) discovered the patches (median = 1 time, min = 1, max = 5). Not every patch that was put out was found by a baboon, either because passing individuals failed to detect it or the troop changed their direction of travel (N < 10). In such cases, the patches were picked up by the observer after the baboons had left the area, and excluded from the analysis. In total, we performed 50 successful information diffusion experiments (25 per troop).
 
-One or two observers (which always included AJC) initially stood 15 m away from the patch and recorded each experiment using a video camera trained on the patch and surrounding area to dictate the identity and behaviour of any individuals coming within 25 m of the patch. The observer moved as required during the experiment to identify baboons. We recorded the identities of all individuals who (i) gazed at an individual in the patch, (ii) entered the patch and (iii) ate food from the patch (see Videos 1 and 2). These data were used to quantify social information (i) acquisition, (ii) application and (iii) exploitation, respectively. Note that the prolonged gazes observed during information acquisition were clearly distinct from the brief glances used in the routine monitoring of conspecifics, with most animals approaching and halting at the patch to watch its occupants (e.g., Videos 1–3). The experiment was conducted 25 times per troop. We subsequently counted the number of times each individual was recorded performing (i) – (iii) above, excluding those cases when they discovered the patch. On two occasions (in 50 experiments) an individual who acquired social information could not be identified before they left the vicinity of the patch, but otherwise we were able to identify all individuals who acquired, applied and exploited social information.10.7554/eLife.13125.007Video 1.Information diffusion experiments.The video shows rapid diffusion of information about the location of the food patch after its initial discovery. In the first experiment, several individual baboons successively enter the patch and are supplanted by more dominant individuals. In the second experiment, the patch is discovered by a low ranking female and then monopolised by high ranking juvenile male. The diffusion path is comparatively short. Please note that the videos were used to facilitate data extraction by dictating identities during rapid diffusions; we did not aim to capture all activity in the field of view of the camera.DOI: http://dx.doi.org/10.7554/eLife.13125.00710.7554/eLife.13125.008Video 2.Information acquisition, application and exploitation.The video shows an adult male monopolising the food patch, surrounded by juveniles who are obviously aware of the location of the patch, but cannot enter because of their lower rank. After the patch is depleted, the adult male exits the patch and many of the individuals subsequently apply the information they have acquired, even though it is outdated. One juvenile female (just off the bottom of the screen), has the lowest rank in the troop and could not apply the social information she had acquired. In this case, there was no social information exploitation, because the patch discoverer (the adult male) depleted the patch.DOI: http://dx.doi.org/10.7554/eLife.13125.00810.7554/eLife.13125.009Video 3.Tolerated queuing, co-feeding and vocal protest.The first video (tolerated queuing) shows an adult male monopolising the food patch, with adult females and juvenile males and females queuing to check the patch after the male leaves. They enter the patch in the same order in which they were queuing. Two lower ranking adult females leave the area after queuing without entering the patch, demonstrating these females’ unwillingness to apply the social information they had acquired after patch depletion. The second video (tolerated co-feed followed by protest) shows the initial patch discovery by an adult female who has come within 1 m of the patch (directly after she has been startled by the higher-ranking juvenile male foraging behind her). The pair subsequently co-feed in the patch, before the juvenile male vocally protests with pant-grunting.DOI: http://dx.doi.org/10.7554/eLife.13125.009
+One or two observers (which always included AJC) initially stood 15 m away from the patch and recorded each experiment using a video camera trained on the patch and surrounding area to dictate the identity and behaviour of any individuals coming within 25 m of the patch. The observer moved as required during the experiment to identify baboons. We recorded the identities of all individuals who (i) gazed at an individual in the patch, (ii) entered the patch and (iii) ate food from the patch (see Videos 1 and 2). These data were used to quantify social information (i) acquisition, (ii) application and (iii) exploitation, respectively. Note that the prolonged gazes observed during information acquisition were clearly distinct from the brief glances used in the routine monitoring of conspecifics, with most animals approaching and halting at the patch to watch its occupants (e.g., Videos 1–3). The experiment was conducted 25 times per troop. We subsequently counted the number of times each individual was recorded performing (i) – (iii) above, excluding those cases when they discovered the patch. On two occasions (in 50 experiments) an individual who acquired social information could not be identified before they left the vicinity of the patch, but otherwise we were able to identify all individuals who acquired, applied and exploited social information.
 
-## Statistical analyses
+![Video 1.](https://cdn.elifesciences.org/articles/13125/elife-13125-media1.mp4.jpg)
 
-## Identifying the diffusion path of information
+**Video 1.:** The video shows rapid diffusion of information about the location of the food patch after its initial discovery. In the first experiment, several individual baboons successively enter the patch and are supplanted by more dominant individuals. In the second experiment, the patch is discovered by a low ranking female and then monopolised by high ranking juvenile male. The diffusion path is comparatively short. Please note that the videos were used to facilitate data extraction by dictating identities during rapid diffusions; we did not aim to capture all activity in the field of view of the camera.
+
+![Video 2.](https://cdn.elifesciences.org/articles/13125/elife-13125-media2.mp4.jpg)
+
+**Video 2.:** The video shows an adult male monopolising the food patch, surrounded by juveniles who are obviously aware of the location of the patch, but cannot enter because of their lower rank. After the patch is depleted, the adult male exits the patch and many of the individuals subsequently apply the information they have acquired, even though it is outdated. One juvenile female (just off the bottom of the screen), has the lowest rank in the troop and could not apply the social information she had acquired. In this case, there was no social information exploitation, because the patch discoverer (the adult male) depleted the patch.
+
+![Video 3.](https://cdn.elifesciences.org/articles/13125/elife-13125-media3.mp4.jpg)
+
+**Video 3.:** The first video (tolerated queuing) shows an adult male monopolising the food patch, with adult females and juvenile males and females queuing to check the patch after the male leaves. They enter the patch in the same order in which they were queuing. Two lower ranking adult females leave the area after queuing without entering the patch, demonstrating these females’ unwillingness to apply the social information they had acquired after patch depletion. The second video (tolerated co-feed followed by protest) shows the initial patch discovery by an adult female who has come within 1 m of the patch (directly after she has been startled by the higher-ranking juvenile male foraging behind her). The pair subsequently co-feed in the patch, before the juvenile male vocally protests with pant-grunting.
+
+### Statistical analyses
+
+#### Identifying the diffusion path of information
 
 To identify the network that best predicted information transmission, we conducted Order of Acquisition Diffusion Analyses (Hoppitt et al., 2010). OADA models information transmission by social connections versus asocial learning and fits the model estimates to the observed data (Franz and Nunn, 2009; Hoppitt et al., 2010). In the social transmission model, the rate at which naïve individuals acquire information from informed individuals is proportional to the connection(s) they have to those individuals. In the asocial model, information is acquired independently of the social network. The parameter s estimates the social transmission relative to asocial transmission and ranges from 0, when there is no social transmission of information, to 1, when all information is transmitted socially (Hoppitt et al., 2010). In natural situations, s ≠ 1 because at least one individual must acquire personal information for it to be socially transmitted. The social and asocial models are fitted to the observed order of diffusion data using maximum likelihood, and the model with the highest support, by comparison of Akaike Information Criteria corrected for small sample size (AICC) (or a likelihood ratio test), indicates the most likely route of information diffusion.
 
@@ -96,9 +139,74 @@ Previous studies applying network-based diffusion analysis to food patch discove
 
 We fitted OADA models for the 50 diffusion events specifying each diffusion experiment with a task identity, each troop as a group and ties for individuals who acquired information simultaneously. We compared both additive and multiplicative OADA incorporating individual-level variables to control for possible sources of individual variation in asocial learning ability. We performed eight OADA models with social transmission (one for each of our eight networks) and one without social transmission. All nine models included rank, boldness, age and sex as individual-level variables and to determine the best model, we compared AICCs. After determining the network that best predicted the transmission of information (the 10 m network with multiplicative effects of the individual-level variables, see Results), we assessed which individual-level variables contributed to asocial learning by comparing the AICCs of models with all combinations of all individual-level variables, following Hoppitt and Laland (2013). We estimated the effect size of each individual-level variable using model averaging of those models with a ∆AICc≤2 (all of which were multiplicative models), but we present the AICCs of all multiplicative and additive models for comparison.
 
-## Identifying phenotypic constraints on social information use
+### Identifying phenotypic constraints on social information use
 
-To identify the phenotypic constraints on the social information use sequence, we investigated whether individuals’ (i) acquisition, (ii) application and (iii) exploitation of social information were affected by their phenotypes. Phenotypes were quantified according to social traits (dominance rank, network centrality), behavioural traits (personality), and demographic traits (age, sex). Two different measures of network centrality were used, namely the individual strength scores for the 10 m proximity and directed grooming networks, generating six phenotypic predictors in total. Individual betweenness scores were not used because they were strongly correlated with their corresponding strengths in almost all cases (Table 2; Figure 2—figure supplement 1). We chose to use the strengths and betweennesses from the 10 m proximity and directed grooming networks, because these were the best proximity and interaction network predictors of information diffusion respectively (see below). The 10 m proximity and grooming strengths were only marginally correlated with each other (r = -0.29) and below the level of collinearity concern (Dormann et al., 2013). All other combinations of phenotypic variables were similarly below the level of collinearity concern (Table 3).10.7554/eLife.13125.010Table 2.Results of Spearman rank correlations testing whether there is a correlation between strengths and betweennesses in social networks created with different proximity and interaction rules. Presented is the rule, test statistic (S), rho (ρ), and p-value.DOI: http://dx.doi.org/10.7554/eLife.13125.010RuleSρp5 m chain217907.6-0.57<0.00110 m220939.0-0.59<0.001Nearest neighbour directed81586.80.41<0.001Nearest neighbour9218.60.430.003Groom directed98412.90.300.005Groom15346.00.050.72Dominance directed67342.10.51<0.001Dominance7950.40.51<0.001
+To identify the phenotypic constraints on the social information use sequence, we investigated whether individuals’ (i) acquisition, (ii) application and (iii) exploitation of social information were affected by their phenotypes. Phenotypes were quantified according to social traits (dominance rank, network centrality), behavioural traits (personality), and demographic traits (age, sex). Two different measures of network centrality were used, namely the individual strength scores for the 10 m proximity and directed grooming networks, generating six phenotypic predictors in total. Individual betweenness scores were not used because they were strongly correlated with their corresponding strengths in almost all cases (Table 2; Figure 2—figure supplement 1). We chose to use the strengths and betweennesses from the 10 m proximity and directed grooming networks, because these were the best proximity and interaction network predictors of information diffusion respectively (see below). The 10 m proximity and grooming strengths were only marginally correlated with each other (r = -0.29) and below the level of collinearity concern (Dormann et al., 2013). All other combinations of phenotypic variables were similarly below the level of collinearity concern (Table 3).
+
+**Table 2.**
+ Results of Spearman rank correlations testing whether there is a correlation between strengths and betweennesses in social networks created with different proximity and interaction rules. Presented is the rule, test statistic (S), rho (ρ), and p-value.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rule</th>
+      <th>S</th>
+      <th>ρ</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5 m chain</td>
+      <td>217907.6</td>
+      <td>-0.57</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>10 m</td>
+      <td>220939.0</td>
+      <td>-0.59</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Nearest neighbour directed</td>
+      <td>81586.8</td>
+      <td>0.41</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Nearest neighbour</td>
+      <td>9218.6</td>
+      <td>0.43</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Groom directed</td>
+      <td>98412.9</td>
+      <td>0.30</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Groom</td>
+      <td>15346.0</td>
+      <td>0.05</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Dominance directed</td>
+      <td>67342.1</td>
+      <td>0.51</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Dominance</td>
+      <td>7950.4</td>
+      <td>0.51</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 We ran three generalised linear mixed models (GLMMs) in the lme4 package (Bates and Sarkar, 2007) with a Poisson link with the count of social information (i) acquisition, (ii) application and (iii) exploitation as the responses and troop as a random effect. For each response, we started with a full model comprising all six phenotypic predictors, and used backwards elimination of non-significant terms until we obtained the minimal model. Dropped terms were added to the minimal models to check significance.
 
@@ -106,19 +214,448 @@ All data used in these analyses are available online (Carter et al., 2015).
 
 ## Results
 
-All individuals in both troops acquired social information in at least one experiment (barring one individual who acquired personal information of one patch, but died in the last week of experiments). On average (median), 10 individuals obtained information about the location of the patches (range = 2–27 individuals) in each diffusion experiment (see Video 4 for an example of information diffusion through a network).10.7554/eLife.13125.011Video 4.Information diffusion through a social network.The animation shows the diffusion of information about the location of one of the food patches through the 5 m proximity social network of L troop. The nodes are scaled to the ranks of the individuals; the lines connecting the nodes are indicative of the strength of the connection between individuals. The nodes turn from pink to purple as they acquire social information about the location of the food patch by the initial discoverer (the original purple node).DOI: http://dx.doi.org/10.7554/eLife.13125.011
+All individuals in both troops acquired social information in at least one experiment (barring one individual who acquired personal information of one patch, but died in the last week of experiments). On average (median), 10 individuals obtained information about the location of the patches (range = 2–27 individuals) in each diffusion experiment (see Video 4 for an example of information diffusion through a network).
 
-## Identifying the diffusion path of information
+![Video 4.](https://cdn.elifesciences.org/articles/13125/elife-13125-media4.mp4.jpg)
 
-We found widespread evidence for the social transmission of information about the location of food patches (Table 4). All proximity networks and grooming networks had strong support for predicting the diffusion of information between group members in comparison to the asocial transmission model (ΔAICC for the social transmission model with the lowest AICC versus the asocial model = 192.9). In all cases, the multiplicative models had a better fit than the additive models. The dominance networks, however, had little support in either case. The social network that best predicted the transmission of information was the 10 m network (AICC = 3968.9), followed by the 5 m chain network (AICC = 3993.4, ΔAICC = 24.5). These were followed by the undirected nearest neighbour network (ΔAICC = 82.1), which performed better than the directed neighbour network (ΔAICC = 114.4). All proximity networks were better at predicting diffusion than the grooming networks (Table 4). For both grooming and dominance, there was minimal difference in the performance of the models between the directed and undirected networks (ΔAICC grooming = 3.6, dominance = 0.2). The social transmission parameter of the best multiplicative model (10 m proximity, s = 0.999) suggests that, following patch discovery, all subsequent discoveries were via social information. This was confirmed when comparing all possible combinations of individual-level variables in the 10 m model as all four of the best candidate models (ΔAICC = 0) were multiplicative and the best additive model was comparatively poor (ΔAICC = 9.85) (Supplementary file 1). Model-averaged estimates of the individual-level variables calculated from the multiplicative OADA models indicated that rank (β = 0.26), sex (β = 0.15) and age (β = -0.01) affected information diffusion, while boldness did not (β = 0.00), such that more dominant, younger male baboons were more likely to learn asocially about patch locations (see Table 5 for a list of the parameter estimates of the competing models).10.7554/eLife.13125.012Table 3.Correlation matrix of the phenotypes used in the analyses. Presented are the Spearman’s rank correlation (S) estimates.DOI: http://dx.doi.org/10.7554/eLife.13125.012PhenotypeSexaAgeRankBoldnessProximitybGroomcSex1Age-0.491Rank0.430.161Boldness0.16-0.55-0.241Proximity0.29-0.60-0.020.511Groom-0.580.630.15-0.46-0.291acoded as an integer: females = 0, male = 1.b, cRefer to strength in the identified network.10.7554/eLife.13125.013Table 4.Comparisons of the additive and multiplicative OADA models with social transmission versus the asocial learning model.DOI: http://dx.doi.org/10.7554/eLife.13125.013ModelAdd/MultiPredictor networkdfLogLikAICCSocial transmissionAdd10 m51984.73979.4Social transmissionMulti51979.43968.9Social transmissionAdd5 m51992.93995.9Social transmissionMulti51991.73993.4Social transmissionAddNN directed52037.44085.0Social transmissionMulti52036.64083.3Social transmissionAddNN52024.44059.0Social transmissionMulti52020.54051.0Social transmissionAddGroom directed52045.74101.4Social transmissionMulti52043.04096.1Social transmissionAddGroom52045.24100.6Social transmissionMulti52044.84099.7Social transmissionAddDom directed52076.84163.8Social transmissionMulti52076.84163.8Social transmissionAddDom52076.64163.3Social transmissionMulti52076.74163.6Asocial learning--42076.84161.8The predictor networks were the 10 m rule (10 m), 5 m chain rule (5 m), both of which were undirected, directed and undirected nearest neighbour rule (NN), directed and undirected grooming interactions (Groom) and directed and undirected dominance interactions (Dom). Presented are the models, degrees of freedom (df), -log-likelihoods (LogLik), corrected Akaike information criteria (AICC). Add/Multi refers to whether the model was additive (Add) or multiplicative (Multi).10.7554/eLife.13125.014Table 5.Parameter estimates of individual-level variables of the competing OADA models for asocial effects on social transmission in the 10 m networks.DOI: http://dx.doi.org/10.7554/eLife.13125.014ModelCoefficientEstimateS.E.1Social transmission0.999Sex0.1320.107Rank0.4980.174Age-0.0240.0122Social transmission0.999Boldness0.0010.001Age-0.0200.0113Social transmission0.999Sex0.3280.0864Social transmission0.999Sex0.2500.093Rank0.3530.158Presented are the bounded social transmission estimates (for completeness), the fixed effects in the models and their standard errors (S.E.).
+**Video 4.:** The animation shows the diffusion of information about the location of one of the food patches through the 5 m proximity social network of L troop. The nodes are scaled to the ranks of the individuals; the lines connecting the nodes are indicative of the strength of the connection between individuals. The nodes turn from pink to purple as they acquire social information about the location of the food patch by the initial discoverer (the original purple node).
 
-## Identifying phenotypic constraints on social information use
+### Identifying the diffusion path of information
 
-We found that individuals’ phenotypes limited the acquisition, application and exploitation of social information about the location of food patches (
+We found widespread evidence for the social transmission of information about the location of food patches (Table 4). All proximity networks and grooming networks had strong support for predicting the diffusion of information between group members in comparison to the asocial transmission model (ΔAICC for the social transmission model with the lowest AICC versus the asocial model = 192.9). In all cases, the multiplicative models had a better fit than the additive models. The dominance networks, however, had little support in either case. The social network that best predicted the transmission of information was the 10 m network (AICC = 3968.9), followed by the 5 m chain network (AICC = 3993.4, ΔAICC = 24.5). These were followed by the undirected nearest neighbour network (ΔAICC = 82.1), which performed better than the directed neighbour network (ΔAICC = 114.4). All proximity networks were better at predicting diffusion than the grooming networks (Table 4). For both grooming and dominance, there was minimal difference in the performance of the models between the directed and undirected networks (ΔAICC grooming = 3.6, dominance = 0.2). The social transmission parameter of the best multiplicative model (10 m proximity, s = 0.999) suggests that, following patch discovery, all subsequent discoveries were via social information. This was confirmed when comparing all possible combinations of individual-level variables in the 10 m model as all four of the best candidate models (ΔAICC = 0) were multiplicative and the best additive model was comparatively poor (ΔAICC = 9.85) (Supplementary file 1). Model-averaged estimates of the individual-level variables calculated from the multiplicative OADA models indicated that rank (β = 0.26), sex (β = 0.15) and age (β = -0.01) affected information diffusion, while boldness did not (β = 0.00), such that more dominant, younger male baboons were more likely to learn asocially about patch locations (see Table 5 for a list of the parameter estimates of the competing models).
+
+**Table 3.**
+ Correlation matrix of the phenotypes used in the analyses. Presented are the Spearman’s rank correlation (S) estimates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>Sexa</th>
+      <th>Age</th>
+      <th>Rank</th>
+      <th>Boldness</th>
+      <th>Proximityb</th>
+      <th>Groomc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>-0.49</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rank</td>
+      <td>0.43</td>
+      <td>0.16</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Boldness</td>
+      <td>0.16</td>
+      <td>-0.55</td>
+      <td>-0.24</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Proximity</td>
+      <td>0.29</td>
+      <td>-0.60</td>
+      <td>-0.02</td>
+      <td>0.51</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groom</td>
+      <td>-0.58</td>
+      <td>0.63</td>
+      <td>0.15</td>
+      <td>-0.46</td>
+      <td>-0.29</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_acoded as an integer: females = 0, male = 1.b, cRefer to strength in the identified network._
+
+**Table 4.**
+ Comparisons of the additive and multiplicative OADA models with social transmission versus the asocial learning model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Add/Multi</th>
+      <th>Predictor network</th>
+      <th>df</th>
+      <th>LogLik</th>
+      <th>AICC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>10 m</td>
+      <td>5</td>
+      <td>1984.7</td>
+      <td>3979.4</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>1979.4</td>
+      <td>3968.9</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>5 m</td>
+      <td>5</td>
+      <td>1992.9</td>
+      <td>3995.9</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>1991.7</td>
+      <td>3993.4</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>NN directed</td>
+      <td>5</td>
+      <td>2037.4</td>
+      <td>4085.0</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2036.6</td>
+      <td>4083.3</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>NN</td>
+      <td>5</td>
+      <td>2024.4</td>
+      <td>4059.0</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2020.5</td>
+      <td>4051.0</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>Groom directed</td>
+      <td>5</td>
+      <td>2045.7</td>
+      <td>4101.4</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2043.0</td>
+      <td>4096.1</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>Groom</td>
+      <td>5</td>
+      <td>2045.2</td>
+      <td>4100.6</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2044.8</td>
+      <td>4099.7</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>Dom directed</td>
+      <td>5</td>
+      <td>2076.8</td>
+      <td>4163.8</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2076.8</td>
+      <td>4163.8</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Add</td>
+      <td>Dom</td>
+      <td>5</td>
+      <td>2076.6</td>
+      <td>4163.3</td>
+    </tr>
+    <tr>
+      <td>Social transmission</td>
+      <td>Multi</td>
+      <td></td>
+      <td>5</td>
+      <td>2076.7</td>
+      <td>4163.6</td>
+    </tr>
+    <tr>
+      <td>Asocial learning</td>
+      <td>-</td>
+      <td>-</td>
+      <td>4</td>
+      <td>2076.8</td>
+      <td>4161.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_The predictor networks were the 10 m rule (10 m), 5 m chain rule (5 m), both of which were undirected, directed and undirected nearest neighbour rule (NN), directed and undirected grooming interactions (Groom) and directed and undirected dominance interactions (Dom). Presented are the models, degrees of freedom (df), -log-likelihoods (LogLik), corrected Akaike information criteria (AICC). Add/Multi refers to whether the model was additive (Add) or multiplicative (Multi)._
+
+**Table 5.**
+ Parameter estimates of individual-level variables of the competing OADA models for asocial effects on social transmission in the 10 m networks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Coefficient</th>
+      <th>Estimate</th>
+      <th>S.E.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Social transmission</td>
+      <td>0.999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>0.132</td>
+      <td>0.107</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rank</td>
+      <td>0.498</td>
+      <td>0.174</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>-0.024</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Social transmission</td>
+      <td>0.999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Boldness</td>
+      <td>0.001</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age</td>
+      <td>-0.020</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Social transmission</td>
+      <td>0.999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>0.328</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Social transmission</td>
+      <td>0.999</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Sex</td>
+      <td>0.250</td>
+      <td>0.093</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rank</td>
+      <td>0.353</td>
+      <td>0.158</td>
+    </tr>
+  </tbody>
+</table>
+
+_Presented are the bounded social transmission estimates (for completeness), the fixed effects in the models and their standard errors (S.E.)._
+
+### Identifying phenotypic constraints on social information use
+
+We found that individuals’ phenotypes limited the acquisition, application and exploitation of social information about the location of food patches (Table 6, Figure 3). Proximity strength was the only predictor of information acquisition: more central baboons acquired social information more frequently. Proximity strength also showed a similar pattern with information application, but not exploitation. Information application and exploitation were further limited by sex and grooming strength, with males and more central individuals in the grooming network more likely both to apply and exploit acquired information. In combination with sex, dominance rank played a further limiting role on individuals’ exploitation of information, such that females of low rank were most limited in their exploitation of patches. Finally, individuals’ behavioural phenotypes, i.e., boldness, also influenced information exploitation. Overall, individuals that were better connected in the 10 m network were more likely to acquire social information, but it was higher ranking males who were more likely to exploit this information.
+
+**Table 6.**
+ Parameter estimates of the minimal models investigating the effect of proximity and grooming strength on social information (i) acquisition, (ii) application and (iii) exploitation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Response</th>
+      <th>Predictor</th>
+      <th>Effect size</th>
+      <th>S.E.</th>
+      <th>t</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Social information acquisition</td>
+      <td>Intercept</td>
+      <td>0.23</td>
+      <td>0.21</td>
+      <td>1.11</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Proximity strength</td>
+      <td>0.66</td>
+      <td>0.07</td>
+      <td>8.87</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Social information application</td>
+      <td>Intercept</td>
+      <td>-1.30</td>
+      <td>0.38</td>
+      <td>-3.40</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Proximity strength</td>
+      <td>0.65</td>
+      <td>0.10</td>
+      <td>6.45</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Grooming strength</td>
+      <td>0.01</td>
+      <td>&lt;0.001</td>
+      <td>4.74</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sexa</td>
+      <td>0.84</td>
+      <td>0.15</td>
+      <td>5.48</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Social information exploitation</td>
+      <td>Intercept</td>
+      <td>-2.43</td>
+      <td>0.39</td>
+      <td>-6.17</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Grooming strength</td>
+      <td>0.02</td>
+      <td>&lt;0.001</td>
+      <td>4.67</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sexa</td>
+      <td>0.73</td>
+      <td>0.33</td>
+      <td>2.21</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Boldness</td>
+      <td>0.01</td>
+      <td>&lt;0.001</td>
+      <td>3.74</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Rank</td>
+      <td>1.39</td>
+      <td>0.51</td>
+      <td>2.71</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Presented are the predictor variables, their effect sizes, standard errors (S.E.), t values and p-values.aReference category: female_
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13125/elife-13125-fig3-v1.jpg)
 
-**Figure 3.:** The relationships between social information (c, d) acquired, (e) applied and (f) exploited by wild baboons and their degree strengths in the social networks. Presented are the proximity networks from which degree strengths were calculated for (a) J and (b) L troops, where nodes represent individuals, node size represents the rank of the individual, and node luminance represents the number of times the individual acquired information (darker nodes acquired social information on more occasions; this colouration is conserved throughout the figure). Lines connecting nodes represent the strengths of the connections between dyads where thicker lines are stronger connections (see legend). Presented below the networks is the relationship between (c, d) social information acquired in (c) J and (d) L troops, (e) social information applied and (f) social information exploited (both troops plotted together).DOI: http://dx.doi.org/10.7554/eLife.13125.016
+**Figure 3.:** The relationships between social information (c, d) acquired, (e) applied and (f) exploited by wild baboons and their degree strengths in the social networks. Presented are the proximity networks from which degree strengths were calculated for (a) J and (b) L troops, where nodes represent individuals, node size represents the rank of the individual, and node luminance represents the number of times the individual acquired information (darker nodes acquired social information on more occasions; this colouration is conserved throughout the figure). Lines connecting nodes represent the strengths of the connections between dyads where thicker lines are stronger connections (see legend). Presented below the networks is the relationship between (c, d) social information acquired in (c) J and (d) L troops, (e) social information applied and (f) social information exploited (both troops plotted together).
 
 As a result of these constraints on successive steps in the social information use sequence, individuals only acquired social information about the patches on average (median) 6 times, applied social information 2.5 times, and exploited social information once (across a total of 25 trials per group). However, because of phenotypic variation, there was a substantial range around these medians. Thus, while the average individual acquired and exploited social information on <25% and <5% of occasions, respectively, others were able to acquire and exploit information on >50% and >35% of occasions, or not at all, depending on their phenotype.
 

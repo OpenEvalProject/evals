@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.31019.001 Endoplasmic reticulum (ER) membrane contact sites (MCSs) are crucial regulatory hubs in cells, playing roles in signaling, organelle dynamics, and ion and lipid homeostasis. Previous work demonstrated that the highly conserved yeast Ltc/Lam sterol transporters localize and function at ER MCSs. Our analysis of the human family members, GRAMD1a and GRAMD2a, demonstrates that they are ER-PM MCS proteins, which mark separate regions of the plasma membrane (PM) and perform distinct functions in vivo. GRAMD2a, but not GRAMD1a, co-localizes with the E-Syt2/3 tethers at ER-PM contacts in a PIP lipid-dependent manner and pre-marks the subset of PI(4,5)P2-enriched ER-PM MCSs utilized for STIM1 recruitment. Data from an analysis of cells lacking GRAMD2a suggest that it is an organizer of ER-PM MCSs with pleiotropic functions including calcium homeostasis. Thus, our data demonstrate the existence of multiple ER-PM domains in human cells that are functionally specialized by GRAM-domain containing proteins.
+Endoplasmic reticulum (ER) membrane contact sites (MCSs) are crucial regulatory hubs in cells, playing roles in signaling, organelle dynamics, and ion and lipid homeostasis. Previous work demonstrated that the highly conserved yeast Ltc/Lam sterol transporters localize and function at ER MCSs. Our analysis of the human family members, GRAMD1a and GRAMD2a, demonstrates that they are ER-PM MCS proteins, which mark separate regions of the plasma membrane (PM) and perform distinct functions in vivo. GRAMD2a, but not GRAMD1a, co-localizes with the E-Syt2/3 tethers at ER-PM contacts in a PIP lipid-dependent manner and pre-marks the subset of PI(4,5)P2-enriched ER-PM MCSs utilized for STIM1 recruitment. Data from an analysis of cells lacking GRAMD2a suggest that it is an organizer of ER-PM MCSs with pleiotropic functions including calcium homeostasis. Thus, our data demonstrate the existence of multiple ER-PM domains in human cells that are functionally specialized by GRAM-domain containing proteins.
 
 ## Introduction
 
@@ -33,9 +33,17 @@ Highly conserved ER-PM tethers have been described and include the yeast tricalb
 
 A highly conserved family of ER membrane Ltc/Lam proteins was recently described (Elbaz-Alon et al., 2015; Gatta et al., 2015; Murley et al., 2015) which, within yeast cells, localize to MCSs where they facilitate the intermembrane transfer of sterol lipids via VaST domains (Figure 1A) (Elbaz-Alon et al., 2015; Gatta et al., 2015; Murley et al., 2015). In yeast, Ltc1/Lam6 localizes to ER-mitochondria and ER-lysosome/vacuole contacts via physical interactions with the protein partners, Tom70/71 and Vac8, respectively (Gatta et al., 2015; Murley et al., 2015). Ltc3/Lam4 and Ltc4/Ysp2 paralogs are localized to ER-PM MCSs, where they have been implicated in the retrograde transport of sterols from the PM to the ER and in regulation of PM TORC2 activity to coordinate sterol and sphingolipid homeostasis (Gatta et al., 2015; Murley et al., 2017). Here we examined the functions of the uncharacterized human Ltc/Lam protein orthologs, GRAMD1a and GRAMD2a. Our analysis indicates that GRAMD1a and GRAMD2a are ER-PM tethers that mark and define functionally distinct regions of the PM.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig1-v1.jpg)
+
+**Figure 1.:** (A) Human proteins GRAMD1a-c and GRAMD2a and b are members of a protein family with similarity to the yeast Ltc1/Lam proteins, which all possess an unstructured N-terminus, a GRAM domain, and an ER-anchoring hydrophobic transmembrane domain. GRAMD1a-c contain an additional predicted sterol transport START-like VaST domain, similar to yeast family member Ltc1/Lam6. (B) Alignment of conserved GRAM domains from yeast and human family members. (C–D) Localization of GRAMD1a-eGFP (C) and GRAMD2a-eGFP (D) in COS7 mammalian cells relative to ER-marker mCherry-Sec61β and PM-marker lyn-mCherry. (E–F) Examination of localization of GRAMD1aΔGRAM (E) and GRAMD2aΔGRAM (F) with mCherry-Sec61β. Representative images shown from at least 17 cells that were obtained from three biological replicates. Scale bar 10 μm in full images and 5 μm in insets (the same dimensions are maintained for all subsequent figures).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Maximum Likelihood phylogenetic tree (bootstrapped 1000 times) of proteins possessing GRAM domains and PH domains from Homo sapiens, Saccharomyces cerevisiae, and Drosophila melanogaster. Phylogenetic analysis and structure prediction programs reveal that Ltc1-4 (Lam6/5/4 and Ysp2) and GRAMD1a-c as well as GRAMD2a and GRAMD2b are orthologs of a family of proteins that is anchored by the presence of a GRAM domain. MEGA7 software was used to generate this phylogenetic tree, which reveals that the GRAMD domains from H. sapiens proteins GRAMD1a/b/c, GRAMD2a, and GRAMD2b share a common ancestor with their S. cerevisiae protein orthologs Ltc1/2/3/4 (Lam6/5/4 and Ysp2). GRAMD4 is not evolutionarily related to GRAMD1a-c, GRAMD2a, or GRAMD2b. (B–C). Orthogonal view of GRAMD1a (B) or GRAMD2a (C) reconstructed from Z-stack of Cos7 cells expressing both lyn-mCherry, and BFP-Sec61β shown in Figure 1C and D. (D–E). TIRF imaging of Cos7 cells expressing either GRAMD1a-eGFP (D) or GRAMD2a-eGFP (E), lyn-mCherry, and BFP-Sec61β. Line scans demonstrate that GRAMD1a and GRAMD2a localize to regions of cortical ER at PM contacts. Y-axis of line scans are arbitrary fluorescence units. Representative images shown from at least 12 cells that were obtained from three biological replicates.
+
 ## Results
 
-## GRAM domain-dependent targeting of GRAMD1a and GRAMD2a to ER-PM MCSs
+### GRAM domain-dependent targeting of GRAMD1a and GRAMD2a to ER-PM MCSs
 
 Yeast Ltc/Lam proteins possess a common domain structure that includes an N-terminal terminal unstructured region, a PH-like GRAM domain, which in the context of MTMR2 binds PIP lipids; one or two START-like VASt domains, which bind and facilitate sterol transport; and a C-terminal transmembrane domain (TMD) helix, which anchors them into ER membrane (Figure 1A) (Begley et al., 2003; Berger et al., 2003; Gatta et al., 2015; Murley et al., 2015). Using phylogenetic analysis and structure prediction programs, we identified the uncharacterized GRAM-domain containing proteins, GRAMD1a-c, GRAMD2, and GRAMD3 as human Ltc orthologs. Our analysis indicates that the human family is characterized by the presence of a related GRAM domain as only GRAMD1a-c share the yeast canonical domain structure (Figure 1A and B; Figure 1—figure supplement 1A). GRAMD2 and GRAMD3 lack a VASt domain and only possess a related GRAM and ER-anchoring TM domain (Figure 1A). Accordingly, with permission from the HUGO Gene Nomenclature Committee, we renamed GRAMD2 and GRAMD3 as GRAMD2a and GRAMD2b, respectively.
 
@@ -43,31 +51,87 @@ To gain insight into function, we examined the intracellular localization of tra
 
 We examined the molecular basis for GRAMD1a and GRAMD2a targeting to ER-PM MCSs. Previously, it was shown that the GRAM domain of yeast Ltc1 is required for mitochondrial localization of Ltc1 (Murley et al., 2015), suggesting that the GRAM domain is a critical determinant of MCS localization. Consistent with this model, variants of GRAMD1a and GRAMD2a lacking their GRAM domain (GRAMD1aΔGRAM-eGFP and GRAMD2aΔGRAM-eGFP, respectively) exhibited diffuse ER localization and were not observed to localize in focal structures at ER-PM MCSs (Figure 1E and F, respectively). These data indicate that GRAMD1a and GRAMD2a are targeted to the PM via their GRAM domains and further suggest that this targeting mechanism is a general feature of the family.
 
-## GRAMD1a and GRAMD2a localize to distinct ER-PM MCSs
+### GRAMD1a and GRAMD2a localize to distinct ER-PM MCSs
 
 To further characterize GRAMD1a and GRAMD2a cortical structures, we examined their relationship to each other. In cells co-expressing both GRAMD2a-mCherry and GRAMD1a-eGFP, no co-localization of GRAMD2a and GRAMD1a labeled foci was observed as only ~8% of total GRAMD2a-eGFP fluorescence pixels overlapped with GRAMD1a-eGFP fluorescent pixels and visa versa (Figure 2A). These data suggest that GRAMD1a and GRAMD2a mark distinct ER-PM contact sites. To test this idea, we examined the relationship of GRAMD2a and GRAMD1a marked cortical foci to the localization of E-Syts2/3, which are well characterized ER-PM tethers that hetero-oligomerize and localize to ER-PM contacts via interaction with PM PI(4,5)P2 lipid domains (Figure 2B and C) (Fernández-Busnadiego et al., 2015; Giordano et al., 2013). Analysis of cells expressing GRAMD2a-eGFP and either mCherry-E-Syt2 or E-Syt3-mCherry revealed that a majority of the GRAMD2a-eGFP fluorescence signal co-localized with mCherry-E-Syt2 and E-Syt3-mCherry signals (75.9 ± 2.5% and 85.7 ± 3.3% respectively; Figure 2B and D). Consistently, line-scan analysis indicated that GRAMD2a-labeled foci were co-localized with E-Syt3-labeled regions and also with a significant fraction of E-Syt2-lableled regions at the cell cortex (Figure 2B, bottom panel). Additionally, TIRF imaging of cells expressing ER marker BFP-Sec61β with GRAMD2a-eGFP and either mCherry-E-Syt2 or E-Syt3-mCherry demonstrated that co-localized regions of GRAMD2a-eGFP with either mCherry-E-Syt2 and E-Syt3-mCherry corresponded to regions of cortical ER at the cell periphery, consistent with a shared localization at ER-PM contacts (Figure 2—figure supplement 1A and B). Although GRAMD2a extensively co-localized with E-Syt2 and E-Syt3 at ER-PM MCSs, a similar GRAMD2a-eGFP punctate localization pattern at cortical ER in both wildtype and E-Syt1/2/3 triple knock out HeLa cells was observed (Figure 2—figure supplement 1C). These data indicate that GRAMD2a is targeted to ER-PM MCSs independent of E-Syts. In contrast to GRAMD2a, GRAMD1a-eGFP fluorescence was not significantly co-localized with either mCherry-E-Syt2 or E-Syt3-mCherry fluorescence at the cell cortex (8.9 ± 1.8% and 8.9 ± 1.0% respectively and Figure 2C and D; Figure 2—figure supplement 1D and E). Together our data demonstrate that GRAMD2a and GRAMD1a localize to and distinguish distinct ER-PM MCSs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig2-v1.jpg)
+
+**Figure 2.:** (A) Analysis of the relative localization of GRAMD1a-eGFP and GRAMD2a-mCherry in Cos7 cells. Two sample cells are shown. Bottom panel is quantification of the amount of overlapping total fluorescence signal pixels from GRAMD1a-eGFP and GRAMD2a-mCherry. Representative images of two different cells, that were imaged on two different days shown. 14 cells imaged and analyzed from three biological replicates. (B–C) Localization of GRAMD2a-eGFP (B) or GRAMD1a-eGFP (D) relative to mCherry-labeled ER-PM tethers E-Syt2 or E-Syt3 in Cos7 cells. Bottom panels are line scan analysis of individual GRAMD2a-eGFP (B) or GRAMD1a-eGFP (C) foci. Y-axis of line scans are arbitrary fluorescence units. (D) Quantification of co-localization of GRAMD2a or GRAMD1a with E-Syt2 and E-Syt3 as % of total fluorescence pixels of GRAMD1a or GRAMD2a (top panel) or ESyt2 or ESyt3 (bottom panel). Standard Error shown, *p<10−2 from two-tailed t-test. Specifically, GRAMD2a with E-Syt2 compared to GRAMD1a with E-Syt2, p=8.97 × 10−12; GRAMD2a with E-Syt3 compared to GRAMD1a with E-Syt3, p=3.40 × 10−17; E-Syt2 with GRAMD2a compared to E-Syt2 with GRAMD1a, p=9.56 × 10−7; E-Syt3 with GRAMD2a compared to E-Syt3 with GRAMD1a, p=3.14 × 10−13. Representative images shown from at least 16 cells that were obtained from three biological replicates. Pixel co-localization analysis was performed on all cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) TIRF imaging of Cos7 cells expressing GRAMD2a-eGFP with mCherry-E-Syt2 (A) or mCherry-E-Syt3 (B) and BFP-Sec61β. (C) Localization of GRAMD2a-eGFP in wild type HeLa cells and HeLa E-Syt1/2/3 -/- cells (Saheki et al., 2016). (D–E). TIRF imaging of Cos7 cells expressing GRAMD1a-eGFP with mCherry-E-Syt2 (D) or E-Syt3-mCherry (E), and BFP-Sec61β. Bottom panels of A-B and D-E are line scans of fluorescence associated with GRAMD2a and GRAMD1a fluorescent foci. Y-axis of line scans are arbitrary fluorescence units. Representative images shown from at least 10 cells that were obtained from two biological replicates.
+
 Localization of GRAMD2a and GRAMD1a to distinct ER-PM domains suggests that they possess distinct physiological functions. To infer potential roles of these genes, we performed gene set enrichment analysis (GSEA) using their expression levels as input phenotypes to find gene sets that co-expressed with GRAMD genes (Subramanian et al., 2005) in transcriptome data from liver samples of human (Schadt et al., 2008) and mouse populations (Wu et al., 2014b). Consistent with their different intracellular localizations, we found that GRAMD1A and GRAMD2A transcripts exhibited quite diverse correlated pathways (Figure 3A and Figure 3—figure supplement 1A), suggesting their distinct functions. Specifically, GRAMD2a/Gramd2a exhibited robust positive correlations with genes involved in lipid metabolism in human and mouse populations, while GRAMD1a/Gramd1a showed opposite correlation patterns (Figure 3A, green gene-sets; Figure 3B, upper panel; Figure 3C, left panel; and Figure 3—figure supplement 1B, left panel). These observations indicate that GRAMD1a and GRAMD2a possess distinct functions in mammals in vivo, consistent with our cellular data demonstrating that they localize to distinct ER-PM contacts.
 
-## GRAMD2a targeting to PM is dependent on PI(4,5)P2
+![Figure 3.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig3-v1.jpg)
+
+**Figure 3.:** (A) Comparison of enrichment results between GRAMD1a and GRAMD2a in transcriptome data of liver samples from 193 female human individuals. Normalized enrichment score (NES) of GRAMD1a and GRAMD2a are used to compare the GO pathway enrichment of these two genes in lipid metabolism and Ca2+ signaling gene sets highlighted in green and blue, respectively. Dot size represents the number of genes, and transparency of the dot indicates the significance (-log10(nominal p value)) of the enrichment of the two transcripts for the gene set. (B) Heat-map showing the enrichment of GRAMD1a and GRAMD2a in genes involved in lipid metabolism and Ca2+ signaling in liver samples from human male and female individuals, as well as from males of the BXD mouse genetic reference population. (C–D) Enrichment plot of GRAMD1a and GRAMD2a in human liver samples from female individuals shows their distinct physiological functions in lipid metabolism (C) and Ca2+ signaling pathways (D). FDR, false discovery rate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of enrichment results between GRAMD1a and GRAMD2a in transcriptome data of liver samples from 234 male humans. Normalized enrichment score (NES) of GRAMD1a and GRAMD2a are used to compare the GO pathway enrichment of these two genes in lipid metabolism and Ca2+ signaling gene sets highlighted in green and blue, respectively. Dot size represents the number of genes, and transparency of the dot indicates the significance (-log10(nominal p value)) of the enrichment of the two transcripts for the gene set. (C–D) Enrichment plot of GRAMD1a and GRAMD2a in human liver samples from male individuals shows their distinct physiological functions in lipid metabolism (B) and calcium signaling pathways (C). FDR, false discovery rate.
+
+### GRAMD2a targeting to PM is dependent on PI(4,5)P2
 
 PI(4,5)P2 is highly enriched in ER-PM contact sites and mediates the localization of E-Syt2/3 to ER-PM MCSs (Chang and Liou, 2016; Dickson et al., 2016a; Saheki and De Camilli, 2017a). Thus, given the co-localization of GRAMD2a with E-Syt2 and E-Syt3, we asked if GRAMD2a targets to PM MCSs in cells in a manner dependent on PIP lipids. To test this, PI(4,5)P2 was depleted from the PM by stimulating phosphoinositide-specific phospholipase C (PLC) using the muscarinic agonist oxotermorine-M (OxoM) in cells transfected with the muscarinic acetylcholine receptor (M1R) (Dickson et al., 2016b; Giordano et al., 2013). We imaged cells overexpressing untagged M1R and monitored PM PI(4,5)P2 using the specific fluorescent biosensor CFP-PH-PLCδ1. Following addition of Oxo-M, PM associated CFP-PH-PLCδ1 and GRAMD2a-mCherry coordinately and significantly decreased. Following removal of Oxo-M from the media both PM associated CFP-PH-PLCδ1 and GRAMD2a-mCherry increased but with different kinetics; PM associated GRAMD2a-mCherry fluorescence more rapidly recovered as compared the PI(4,5)P2 selective marker, CFP-PH-PLCδ1 (Figure 4A and B, top panel). In contrast, GRAMD1a-mCherry fluorescence remained associated with the cortex following addition of Oxo-M, although PM-associated CFP-PH-PLCδ1 fluorescence decreased (Figure 4A and B, bottom panel). These observations suggest that targeting of GRAMD2a to ER-PM contacts is at least in part dependent on PI(4,5)P2, while GRAMD1a targeting is PI(4,5)P2-independent, further substantiating that GRAMD2a and GRAMD1a localize to distinct ER-PM domains in human cells.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Examination of the PI(4,5)P2-dependent behavior of PM-associated GRAMD2a-eGFP (A) and GRAMD1a-eGFP (B). PM PI(4,5)P2 was reversibly depleted by 10 s addition (middle panel) and removal (left panel) of 10 μM of the muscarinic agonist oxotremorineM (OxoM) as monitored by the PI(4,5)P2 marker CFP-PH-PLCδ1. Normalized intensity of fluorescent proteins used in PI(4,5)P2 depletion experiments shown in lower panels of (A and B). Representative images shown from at least 12 cells that were obtained from two biological replicates. Fluorescence intensity dynamics were analyzed for all cells. (C) Western Blot analysis of centrifugation-based liposome binding assays with recombinant His6-GRAMD2aΔTM and liposomes of different composition. Control PM-like liposomes: 85% PC: 15% PS; PM-like liposomes with PI: 85% PC: 10% PS: 5% PI or 85% PC: 15% PI; PM-like liposomes with PI(4)P: 85% PC: 14% PS: 1% PI(4)P, 85% PC: 10% PS: 5% PI(4)P, or 85% PC: 15% PI(4)P; PM-like liposomes with PI(4,5)P2: 85% PC: 14% PS: 1% PI(4,5)P2, 85% PC: 10% PS: 5% PI(4,5)P2, or 85% PC: 15% PI(4,5)P2. S and P indicate supernatant and pellet, respectively. (D) Quantification of liposome binding experiments, n = 4 (biological replicates), Standard Error shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A. Recombinant GRAMD2aΔTM was incubated with liposomes and ultracentrifugation was used to separate liposome-protein complexes from free protein.
+
 To more directly test the idea that GRAMD2a PM targeting is dependent on PI(4,5)P2, we expressed and purified the predicted GRAMD2a cytosolic domain (amino acids 1–298, 6xHis-GRAMD2aΔTMD) and performed liposome-binding assays (Figure 4—figure supplement 1A). Western blotting analysis of liposome binding assays revealed that GRAMD2aΔTM significantly and specifically associated with liposomes containing either PI(4)P and PI(4,5)P2 in a concentration-dependent manner (Figure 4C), with an apparent higher selectivity for PI(4,5)P2 versus PI(4)P (Figure 4D). The ability of GRAMD2a to bind PI(4)P in addition to PI(4,5)P2 in vitro suggests that it may bind PI(4)P, a precursor of PI(4,5)P2 in the PM, in cells and thus could be the basis for the relatively rapid kinetics of PM binding of GRAMD2a after removal of Oxo-M after PIP depletion in cells as compared to the PI(4,5)P2 marker (Figure 4A) (Dickson et al., 2016a). These biochemical observations are consistent with our cytological data and indicate that GRAMD2a is targeted to the PM by directly interacting with PIP lipids. Thus, with data indicating that the GRAM domain is required for PM targeting (Figure 1D), GRAMD2a functions as a ER anchored-PM tether whose PM binding is mediated via a GRAM domain–PIP-lipid interaction.
 
-## GRAMD2a pre-marks a subset of ER-PM contacts used for STIM1 recruitment
+### GRAMD2a pre-marks a subset of ER-PM contacts used for STIM1 recruitment
 
 To gain insight into the cellular function of GRAMD2a, we asked whether its over-expression affected the extent or predominance of ER-PM contacts as measured by amount of cortical ER in cells. Increasing the amount of transfected GRAMD2a-mCherry plasmid DNA increased the amount of GRAMD2a expression (Figure 5—figure supplement 1A) and resulted in a significant increase in the area of cortical ER, marked by GFP-Sec61β, which co-localized with GRAMD2a (compare Figure 1D with Figure 5A, top panel). The GRAMD2a expression-dependent cortical ER expansion was similar to that previously described for ER-PM micro-domains or plasters linked to SOCE. Indeed, expression of mCherry-STIM1, an integral ER protein that regulates SOCE in response to decreased ER Ca2+ levels, also resulted in the expansion of cortical ER, consistent with published data (Figure 5A, bottom panel) (Liou et al., 2007; Orci et al., 2009). These observations suggest that GRAMD2a marks SOCE-specific ER-PM MCSs. To test the link between GRAMD2a and Ca2+ signaling, we performed GSEA on GRAMD2a and GRAMD1a with calcium signaling related pathways (Subramanian et al., 2005). GRAMD2a showed strong positive correlations with Ca2+ signaling pathways across human and mouse datasets, while GRAMD1a did not correlate consistently with Ca2+ signaling (Figure 3A, blue gene sets; Figure 3B, lower panel; Figure 3C, right panel; and Figure 3—figure supplement 1B, right panel). Indeed, regardless of the amount transfected, GRAMD1a-mCherry retained a similar cortical punctate area and distribution in cells (Figure 5—figure supplement 1A; compare Figure 1C to Figure 5—figure supplement 1B). These results suggest a unique functional role of GRAMD2a in Ca2+ signaling.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cortical ER as visualized with ER marker GFP-Sec61β in cells overexpressing GRAMD2a-mCherry (top panel) or mCherry-STIM1 (bottom panel). (B) Behavior of mCherry-STIM1 at resting Ca2+ and upon depletion of Ca2+ stores from the ER using SERCA inhibitor thapsigargin (TG). At T = 30 s, 1 μM TG was added. Two representative cells shown from two different experimental days. Lower panel left shows sample graph of total fluorescence of GRAMD2a-eGFP and mCherry-STIM1 throughout duration of experiment for a sample cell. (C) Zoomed-in images and line scans of individual GRAMD2a fluorescent puncta and associated fluorescence for duration of the TG treatment. Left and right panels are examples of puncta from two different cells. Y-axis of line scans are arbitrary fluorescence units. Scale bar is 2 μm. (D) Inset cropped from top cell in (B). showing COS7 cell expressing GRAMD2a-eGFP, mCherry-STIM1, and BFP-Sec61β at T300s of the TG-stimulated Ca2+ depletion. Corresponding zoomed-in images and line-scans are shown in the bottom panel. Representative images shown from at least 19 cells that were obtained from three biological replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western Blot analysis of GRAMD2a-eGFP and GRAMD1a-eGFP (α-GFP) in Cos7 and U2OS cells transfected with low (0.1 μg) and high (1 μg) amounts of plasmids expressing GRAMD2a-eGFP and GRAMD1a-eGFP. α-GAPDH is loading control. Three biological triplicates of western blot analysis were performed. (B) High level of expression of GRAMD1a-mCherry (1 μg of DNA per 35 mm MatTeck dish transfected) and eGFP-Sec61β. Representative images shown from 11 cells that were obtained from three biological replicates C) Four additional examples of individual GRAMD2a-eGFP puncta and associated line scans during time-lapse experiments of TG-treated Cos7 cells transfected with GRAMD2a-eGFP and mCherry-STIM1. Pucta were selected from 19 cells that were imaged on three different days. Y-axis of line scans are arbitrary fluorescence units. (D). Images of cells expressing GRAMD1a-eGFP or GRAMD2a-eGFP (duplicated from Figure 5B – top cell) at T = 300 s following TG treatment. Quantification of total signal overlap between STIM1 and either GRAMD2a or GRAMD1a after TG-induced Ca2+ depletion (right panel). Standard Error shown, *p<10−2 from two-tailed t-test. Specifically, GRAMD2a with STIM1 compared to GRAMD1a with STIM1, p=4.02 × 10−13; STIM1 with GRAMD2a compared to STIM1 with GRAMD1a, p=5.00 × 10−6. Representative images shown from at least 19 cells that were obtained from three biological replicates.
 
 To directly test whether GRAMD2a is spatially linked to SOCE, we examined whether it co-localized with STIM1 upon ER Ca2+ store depletion mediated by thapsigargin (TG), a non-competitive inhibitor of the sarcolemma ER Ca2+ ATPase (Giordano et al., 2013). We implemented a prototypic Ca2+ add back experiment to monitor the SOCE response in which TG-induces Ca2+ release from internal stores and consequent Ca2+ influx across the PM (Chen et al., 2017). As previously described, in the absence of TG, mCherry-STIM1 was diffusely distributed throughout the ER (Grigoriev et al., 2008). Upon TG addition, mCherry-STIM1 rapidly re-distributed to discrete regions marked by GRAMD2a-eGFP at the cell cortex, which, based on previous observations, represent ER-PM contact sites (Figure 5B, top panel two panels, and Figure 5—video 1 and 2) (Liou et al., 2007; Zhang et al., 2005). Consistently, after TG treatment total cortical fluorescence of mCherry-STIM1 increased significantly whereas the fluorescence intensity of cortical GRAMD2a-eGFP remained constant (Figure 5B, lower panel). To assess whether STIM1 and GRAMD2a co-localized at the cell cortex, we performed line scans of fluorescent intensity across GRAMD2a-eGFP foci before and after addition of TG. As expected, in the absence of TG, line scans indicated no significant co-localization of mCherry-STIM1 fluorescence with cortical GRAMD2a-eGFP foci (Figure 5C and Figure 5—figure supplement 1C). Initially after TG addition, line scans indicated significant co-localization of mCherry-STIM1 fluorescence with GRAMD2a foci (Figure 5C and Figure 5—figure supplement 1C, T50-T150) and, subsequently, regions of mCherry-STIM1 cortical fluorescence resolved from, but remained spatially linked to GRAMD2a-eGFP foci (Figure 5C and Figure 5—figure supplement 1C, T150-T250). Consistent with our qualitative line scan analysis, the percentage of overlapping fluorescence pixels of GRAMD2a-eGFP with mCherry-STIM1 significantly increased following TG addition (Figure 5—source data 1). The percentage of overlapping fluorescence pixels of mCherry-STIM1 with GRAMD2a-eGFP initially increased following TG addition, but as more mCherry-STIM1 translocated to the PM, the percentage of overlapping mCherry-fluorescence pixels of mCherry-STIM1 with GRAMD2a-eGFP decreased (Figure 5—source data 1). Although areas of STIM1 and GRAMD2a fluorescence spatially resolved at later time points of TG treatment, line scan analysis the ER using ER marker BFP-Sec61β revealed that STIM1 and GRAMD2a remained co-localized to a shared ER-PM contact site (Figure 5D). In contrast to GRAMD2a, STIM1 did not significantly co-localize with cortical GRAMD1a foci following TG treatment (Figure 5—figure supplement 1D). Thus, our observations further support the conclusion that GRAMD1a and GRAMD2a define distinct ER-PM contacts and indicate that GRAMD2a functions as a tether that pre-marks ER-PM contact sites specialized for STIM1 recruitment and SOCE.
 
 Depletion of Ca2+ in the ER triggers the re-localization of STIM1 to the PM via an interaction of its C-terminal polybasic tail with PM PI(4,5)P2 (Liou et al., 2007; Wu et al., 2014a). To further test whether GRAMD2a pre-marks MCSs destined for SOCE, we examined the behavior of a STIM1 mutant lacking the C-terminal PI(4,5)P2 targeting domain (STIM1ΔK) (Zhou et al., 2013). TG-induced translocation of STIM1ΔK to the PM has been reported to be strictly dependent on Orai1 overexpression (Liou et al., 2007; Park et al., 2009). We examined TG-induced STIM1ΔK behavior in HeLa and COS7 cells and observed STIM1ΔK translocation to the PM is cell type dependent, where TG-induced translocation of STIM1ΔK is observed in COS7 cells and not observed in HeLa cells (Figure 6A and Figure 6—figure supplement 1A). In COS7 cells, in contrast to wild type STIM1, the localization of STIM1ΔK did not significantly overlap at any time with GRAMD2a-eGFP-marked cortical regions (Figure 6A and B). This observation indicates that STIM1ΔK is defective for targeting to PI(4,5)P2-enriched ER-PM MCSs marked by GRAMD2a. Indeed, our analysis indicates that STIM1ΔK possessed no specificity as it co-localized to approximately the same extent to GRAMD1a-marked cortical regions (Figure 6B and C). Thus our data are consistent with GRAMD2a as a PI(4,5)P2-dependent ER-PM tether that pre-marks specific ER-PM MCSs utilized for SOCE.
 
-## GRAMD2a is required for normal PM STIM1 recruitment
+![Figure 6.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Fluorescence images of Cos7 cells expressing mCherry-STIM1ΔK, a PI(4,5)P2-insensitive mutant, and either (A) GRAMD2a-eGFP or (C) GRAMD1a-eGFP before and after TG treatment along with (B) quantification of co-localization. Standard Error shown, *p<10−2 and – p>10−2 from two-tailed t-test. Specifically, GRAMD2a with STIM1 compared to GRAMD2a with STIM1ΔK, p=4.47 × 10−12; GRAMD1a with STIM1 compared to GRAMD1a with STIM1ΔK, p=2.70 × 10−2; STIM1 with GRAMD2a compared to STIM1 with GRAMD1a, p=5.00 × 10−6; STIM1ΔK with GRAMD2a compared to STIM1ΔK with GRAMD1a, p=3.64 × 10−1. Representative images shown from at least 14 cells that were obtained from three biological replicates. Pixel co-localization analysis was performed on all cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) HeLa cells expressing mCherry-STIM1 (top panel) and mCherry-STIM1ΔK (bottom panel) before and after TG treatment to deplete ER Ca2+.
+
+### GRAMD2a is required for normal PM STIM1 recruitment
 
 Given that GRAMD2a pre-marks sites of STIM1 localization at ER-PM contacts, we asked if it was required for normal STIM1 recruitment to ER-PM contacts during SOCE. We generated a GRAMD2a knock-out (KO) U2OS cell line using CRISPR genome editing (Figure 7—figure supplement 1A) and examined the kinetics of STIM1 recruitment the cortical ER (Figure 7A and Figure 7—figure supplement 1B). In GRAMD2a KO cells, the kinetics and degree of mCherry-STIM1 accumulation at the cell cortex was significantly reduced as compared to control cells following TG treatment (Figure 7A). The defect observed in STIM1 translocation to the PM in GRAMD2a KO cells was fully complimented by transiently expressing GRAMD2a-eGFP in GRAMD2a KO cells, indicating that the defect was a consequence of loss of GRAMD2a function and that GRAMD2a-eGFP is functional (Figure 7A). In addition, although the number of mCherry-STIM1 cortical puncta was not significantly different between control and GRAMD2a KO cells, the average area of mCherry-STIM1 cortical puncta was 2-fold lower in GRAMD2a KO cells as compared to control cells (Figure 7—figure supplement 1B and C). Decreased STIM1 puncta size in GRAMD2a KO cells was not a consequence of decreased expression of endogenous STIM1 protein (Figure 7—figure supplement 1D) or differences in the expression level of transfected mCherry-STIM1 protein in wild type and GRAMD2a KO cells as assessed by Western Blot analysis (Figure 7—figure supplement 1E, left panel). These data suggest that GRAMD2a functions in the organization of the subset of ER-PM MCSs dedicated to SOCE.
 
-## Loss of GRAMD2a does not affect SOCE, but E-Syt1 localization is significantly altered
+![Figure 7.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig7-v1.jpg)
+
+**Figure 7.:** (A) Kinetics and intensity of mCherry-STIM1 recruitment to PM before, during, and after 1 uM TG treatment in wildtype U2OS cells, GRAMD2a knock out (KO) cells, and GRAMD2a KO with GRAMD2a-eGFP transiently transfected. Standard Error is shown, p<0.05 between t = 200 and t-600. (B) Cytosolic Ca2+ measurement using ratiomentric dye, Fura-PE3 AM during a Ca2+ addback experiment with wild type U2OS cells and GRAMD2a KO cells. Cells were pre-loaded with 2.5 uM Fura-PE3 AM in 0 mM Ca2+ Ringers and ER stores were loaded in 2 mM Ca2+ Ringers for 4 min prior to recording. Fluorescence was continuously recorded as cells were incubated in the following solutions: (1) Baseline was established in 2 mM Ca2+ ringers for 40 s, (2) cells were washed with 0 mM Ca2+/2 mM EGTA Ringers for 100 s, 3) ER stores were emptied using 4 uM TG in 0 mM Ca2+/2 mM EGTA Ringers for 460 s, 4) cells were returned to with 0 mM Ca2+/2 mM EGTA Ringers for 100 s, (5) cells were washed in 2 mM Ca2+ ringers to observe SOCE across the PM. Comparison of the cytosolic Ca2+ measurements (represented as Fura-PE3 Am ratio) are shown over time. Black trace represented control or wild type U2OS cells; red trace represents GRAMD2a KO U2OS cells. Standard Error is shown, differences between wild type and GRAMD2a traces were not statistically significant as determined using student t-test. nine wild type dishes and 8 GRAMD2a KO dishes were imaged over 2 days. 20–50 cells per dish were imaged. (C) Localization of mCherry-E-Syt2 (left panel) or E-Syt3-mCherry (right panel) in wild type U2OS and GRAMD2a KO cells. (D) Behavior of mCherry-E-Syt1 at resting Ca2+ and upon TG-induced ER Ca2+ depletion. At T = 30 s, 1 μM TG was added. Top panels show mCherry-E-Syt1 dynamics in wild type U2OS cells and bottom panels show mCherry-E-Syt1 dynamics in GRAMD2a KO cells. For STIM1 and E-Syt1/2/3 experiments, fluorescence intensity dynamics were analyzed for at least 12 cells, where were imaged in biological duplicate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Alignment of GRAMD2a CRISPR knock-out (KO) and wild type sequence. (B) Samples images of wildtype U2OS, GRAMD2a KO, and GRAMD2a KO with GRAMD2a-eGFP transiently transfected cells that were quantified in Figure 7A. Representative images shown from at least 12 cells that were obtained from two biological replicates. (C) Size and total number of mCherry-STIM1 puncta in wild type and GRAMD2a KO cells. Standard Error shown, *p<10−2 and from two-tailed t-test. Specifically, puncta size p=2.2 × 10−3. (D) Western Blot analysis of endogenous STIM1 protein levels in wild type U2OS cells and GRAMD2a KO cells. α-GAPDH is loading control. Three biological triplicates of western blot analysis were performed. (E) Western Blot analysis of mCherry-STIM1 and mCherry-E-Syt1 protein levels in wild type U2OS cells and GRAMD2a KO cells. α-GAPDH is loading control. Three biological triplicates of western blot analysis were performed. (F) TIRF imaging of BFP-Sec61β and lyn-mCherry in WT U2OS cells and GRAMD2a KO cells. Total pixels of cortical ER were divided by total area of cells, judged by total staining of lyn-mCherry, to determine % cortical ER at PM. Standard Error shown. (G) PM PI(4,5)P2 distribution was examined using YFP-PH-PLCδ1 in U2OS wild type and GRAMD2a KO cells. Sample images are in shown in left panel. Line scans are shown in middle panel. Y-axis of line scans are arbitrary fluorescence units. % intensity of YFP-PH-PLCδ1 at PM is shown in right panel. (H) Distribution of cholesterol marker mCherry-D4H in wild type U2OS and GRAMD2a KO cells. Line scans are shown in bottom panel. Y-axis of line scans are arbitrary fluorescence units. (I) Distribution of cholesterol-binding protein Cav1-GFP in wild type U2OS and GRAMD2a KO cells. Both PM (cell surface) and internal (cross-section) planes are shown. (J) mCherry-E-Syt1 distribution in three additional representative wild type U2OS cells and GRAMD2a KO cells at T = 0 (pre-TG treatment) and T = 250 (220 sec after TG treatment). (K) mCherry-E-Syt1 distribution in wild type U2OS and GRAMD2a KO cells after incubation in 20 min 2 mM EGTA Ringers to ensure chelation of all external Ca2+. Representative images shown from at least 12 cells that were obtained from two biological replicates.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) TIRF imaging of BFP-Sec61β and lyn-mCherry in WT U2OS cells and GRAMD2a KO cells. Total pixels of cortical ER were divided by total area of cells, judged by total staining of lyn-mCherry, to determine % cortical ER at PM. Standard Error shown. (B) PM PI(4,5)P2 distribution was examined using YFP-PH- PLCδ1 in U2OS wild type and GRAMD2a KO cells. Sample images are in shown in left panel. Line scans are shown in middle panel. Y-axis of line scans are arbitrary fluorescence units. % intensity of YFP- PH-PLCδ1 at PM is shown in right panel. (C) Distribution of cholesterol marker mCherry- D4H in wild type U2OS and GRAMD2a KO cells. Line scans are shown in bottom panel. Y-axis of line scans are arbitrary fluorescence units. (D) Distribution of cholesterol- binding protein Cav1-GFP in wild type U2OS and GRAMD2a KO cells. Both PM (cell surface) and internal (cross-section) planes are shown.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) mCherry-E- Syt1 distribution in three additional representative wild type U2OS cells and GRAMD2a KO cells at T=0 (pre-TG treatment) and T=250 (220 sec after TG treatment). (B) mCherry-E- Syt1 distribution in wild type U2OS and GRAMD2a KO cells after incubation in 20 min 2mM EGTA Ringers to ensure chelation of all external Ca2+. Representative images shown from at least 12 cells that were obtained from two biological replicates.
+
+### Loss of GRAMD2a does not affect SOCE, but E-Syt1 localization is significantly altered
 
 Given that loss of GRAMD2a significantly alters STIM1 recruitment to the PM during SOCE, we asked whether Ca2+ homeostasis was also affected in GRAMD2a KO cells during TG-induced SOCE. We examined cytosolic Ca2+ in GRAMD2a KO and control cells using the fluorescent ratiometric Ca2+-indicator dye Fura-PE3 AM, a leakage-resistant version of Fura-2 (Chen et al., 2017; Chen et al., 2016). SOCE was interrogated using the standard Ca2+ add back experiment (Figure 7B). As previously reported, wild type U2OS cells exhibited a stereotypical SOCE Ca2+ response similar to HeLa and HEK293 cells: upon TG-mediated depletion of ER Ca2+ stores, cytosolic Ca2+ increased above the baseline from Ca2+ released from internal stores and, following the addition of 2 mM Ca2+, increased above the baseline from extracellular Ca2+ influx across the PM (Figure 7B, black tracing) (Chen et al., 2017; Chen et al., 2016; Kawasaki et al., 2006). Comparison of the cytosolic Ca2+ measurements between wild type and GRAMD2a KO cells using Fura-PE3 AM indicated that there was no significant difference in the SOCE response (Figure 7B, compare black versus red tracings, respectively).
 
@@ -76,6 +140,14 @@ We explored whether additional and/or compensatory changes occurred in GRAMD2a c
 ## Discussion
 
 Our results identify GRAMD1a and GRAMD2a as a new class of ER-PM tethers in mammalian cells. GRAMD2a is a simple GRAM domain tether that is targeted to the PM via interaction of its GRAM PH-like domain with PIP lipid determinants – a mechanism shared by a majority of ER-PM tethers (Figure 8) (Chung et al., 2015; Heo et al., 2006; Raychaudhuri et al., 2006; Stefan et al., 2011). In contrast, GRAMD1a, a tether containing both GRAM and VaST domains, interacts with the PM in a PIP lipid independent manner, raising the possibility that it may have a proteinaceous PM partner and/or be targeted via another PM lipid species, such as cholesterol given the characterized role of the VaST domain in sterol transport (Gatta et al., 2015; Murley et al., 2017; Tong et al., 2018; Horenkamp et al., 2018). In this context, the localization of GRAMD1a to ER-PM contacts is cell-type specific; GRAMD1a-marked ER-PM contacts are present in Cos7, Hek293, HeLa, and Arpe19, cells but absent in U2OS or HCT116 cells (Figure 8—figure supplement 1A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig8-v1.jpg)
+
+**Figure 8.:** GRAMD2a is a constitutive PI(4,5)P2-dependent ER-PM tether that localizes to a subset of E-Syt2/3 contacts. GRAMD1a marks distinct ER-PM contacts in a PI(4,5)P2-independent manner. GRAMD2a pre-marks ER-PM contacts destined for SOCE and facilitates, STIM1 recruitment during SOCE.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/31019/elife-31019-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Localization of GRAMD1a-eGFP in COS7, U2OS, and Arpe19 cells relative to ER-marker BFP-Sec61β. Representative images shown from at least 10 cells that were obtained from three biological replicates.
 
 Our results conclusively demonstrate the co-existence of physically distinct ER-PM domains at steady state in mammalian cells, uniquely defined by GRAMD1a or GRAMD2a. Consistent with their distinct composition and spatial resolution, GRAMD1a and GRAMD2a-marked ER-PM contact sites also play discrete functional roles at both the cellular and physiological level. The cellular function of GRAMD1a ER-PM contacts sites is currently not known, but the presence of yeast Ltc/Lam-related VaST domain, which mediates inter-membrane sterol transport, suggests GRAMD1a, similar to the yeast Ltc3/4 homologs, may play a role in the regulation of sterol homeostasis (Gatta et al., 2015; Murley et al., 2017).
 
@@ -87,29 +159,153 @@ Based on our observations from yeast and mammalian cells, we speculate that memb
 
 ## Materials and methods
 
-## Antibodies and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6s-His Tag monoclonal antibody</td>
+      <td>Western Blot antibody</td>
+      <td>ThermoFisher (His.H8)</td>
+      <td>RRID:AB_557403</td>
+    </tr>
+    <tr>
+      <td>STIM1 monoclonal antibody</td>
+      <td>Western Blot antibody</td>
+      <td>ThermoFisher (CDN3H4)</td>
+      <td>RRID:AB_2197884</td>
+    </tr>
+    <tr>
+      <td>GAPDH polyclonal antibody</td>
+      <td>Western Blot antibody</td>
+      <td>SigmaAldrich (G9545)</td>
+      <td>RRID:AB_796208</td>
+    </tr>
+    <tr>
+      <td>anti-mCherry polyclonal antibody</td>
+      <td>Western Blot antibody</td>
+      <td>ThermoFisher (PA5-34974)</td>
+      <td>RRID:AB_2552323</td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse or anti-rabbit antibodies</td>
+      <td>Western Blot antibody (DyLight 800 and DyLight 680)</td>
+      <td>ThermoFisher</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oxotremorine M</td>
+      <td>Non-selective muscarinic acetylcholine receptor agonist</td>
+      <td>SigmaAldrich</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thapsigargin</td>
+      <td>Non-competative SERCA inhibitor</td>
+      <td>Invitrogen/Life-technologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fura-PE3 AM</td>
+      <td>Ratiometric cytosolic calcium indicator</td>
+      <td>Teflabs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipofectamine2000</td>
+      <td>Tissue culture transfection reagent</td>
+      <td>ThermoFisher</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipids</td>
+      <td>All lipids used for liposome binding assays</td>
+      <td>Avanti Lipids</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COS7 cells</td>
+      <td>Cercopithecus aethiops kidney cell line</td>
+      <td>G. Voeltz (U of Colorado, Boulder)</td>
+      <td>RRID:CVCL_0224</td>
+    </tr>
+    <tr>
+      <td>U2OS cells</td>
+      <td>Human bone osteosarcoma epithelial cell line</td>
+      <td>G. Voeltz (U of Colorado, Boulder)</td>
+      <td>RRID:CVCL_0042</td>
+    </tr>
+    <tr>
+      <td>HeLa cells</td>
+      <td>Homo sapiens cervix adenocarcinoma cell line</td>
+      <td>P. De Camilli (Yale U)</td>
+      <td>RRID:CVCL_0058</td>
+    </tr>
+    <tr>
+      <td>ARPE19 cells</td>
+      <td>Human retinal pigment epithelial cell line</td>
+      <td>ATCC (CRL-2302)</td>
+      <td>RRID:CVCL_0145</td>
+    </tr>
+    <tr>
+      <td>HEK293 cells</td>
+      <td>Homo sapiens embryonic kidney cell line</td>
+      <td>E. J. Dickson collection</td>
+      <td>RRID:CVCL_0045</td>
+    </tr>
+    <tr>
+      <td>Fiji (ImageJ) software</td>
+      <td>Software used to analyse all microscopy images</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_002285</td>
+    </tr>
+    <tr>
+      <td>ImageStudioLight</td>
+      <td>Software used to analyse all Western Blots</td>
+      <td>LI-COR BioSciences</td>
+      <td>RRID:SCR_014211</td>
+    </tr>
+    <tr>
+      <td>Mega7</td>
+      <td>Software used to analyse all Western Blots</td>
+      <td>MEGA Software</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and chemicals
 
 6x-His Tag monoclonal primary antibody (His.H8, ThermoFisher), STIM1 monoclonal antibody (CDN3H4, ThermoFisher), mCherry polyclonal antibody (PA5-34974, ThermoFisher), GAPDH polyclonal antibody (G9545, SigmaAldrich), goat anti-mouse and anti-rabbit secondary antibodies DyLight 800 and DyLight 680 (ThermoFisher) were used for western blots. OxotremorineM (Sigma-Aldrich), thapsigargin (Invitrogen/Life-technologies), isopropylthio-β-galactoside (ThermoFisher), Fura-PE3 AM (Teflabs), Protease Inhibitor (PI) Cocktail Set 1 (Calbiochem/EMD Millipore), 0.01% poly-L-lysine solution (Sigma), Ni-IDA resin (Protino/Macherey-Nagel), Lipofectamine2000 (ThermoFisher). Following concentration of chemicals are used in all the experiments unless noted: oxotremorineM, 10 μM; thapsigargin, 1 μM; isopropylthio-β-galactoside, 0.5 μM. All lipids were obtained from Avanti Polar Lipids; 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC), 850375C; 1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine 16:0-18:1 (POPS), 840034C; 1,2-dioleoyl-sn-glycero-3-phosphoserine (DOPS), 840035; L-α-phosphatidylinositol-4,5-bisphosphate (PI(4,5)P2), 840046; L-a-phosphatidylinositol-4-phosphate (PI(4)P), 840045X; L-a-phosphatidylinositol (PI), 84042C.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 COS7, U2OS, ARPE19, HEK293 and HeLa cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM) containing 10% fetal bovine serum (FBS) and 1% penicillin/streptomycin (P/S) at 37°C and 5% CO2. Transfection of plasmids was carried out with Lipofectamine2000 (ThermoFisher) according to manufacturer’s instructions. Wild-type as well as genome-edited U2OS cell lines were verified as free of mycoplasma contamination by a PCR-based method. All cell-based experiments were repeated at least two times.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 For imaging experiments, cells were plated at low density (120,000 to 150,000 cells/plate or cover-slip) on 35 mm poly-D-lysine glass bottom dishes (MatTek Corp) or on 25 mm circular glass coverslips (FisherScientific) that were coated with 0.01% poly-L-lysine solution (Sigma). Live cell imaging was carried out one day after transfection using one of the following three microscopes: (1) confocal microscopy was performed using spinning disc module of a Marianas SDC Real-Time 3D Confocal-TIRF microscope (Intelligent Imaging Innovations, 3i) fit with a Yokogawa spinning disk head, a 100 × 1.46 NA objective (Olympus) and EMCCD camera, controlled by Slidebook software (Intelligent Imaging Innovations, 3i); (2) confocal microscopy for all of the OxoM and some TG treatment experiments were performed using Zeiss 880 laser-scanning microscope, equipped with an Airyscan detector; a 63x oil immersion lens, controlled by Zen software (Zeiss); (3) total internal reflection fluorescence (TIRF) microscopy was performed on a Nikon motorized TIRF rig setup built around a Nikon TiE microscope equipped with perfect focus and 100x/1.49 CFI Apo TIRF oil immersion objectives, controlled by Elements software (Nikon). Unless otherwise stated, before imaging cells were transferred to Ringers solution containing 160 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM Hepes, and 8 mM glucose, pH 7.4 (NaOH). Unless otherwise stated, GRAMD1a-GFP and GRAMD2a-GFP are transfected at 100 ng per 35 mm MatTek dish. In overexpression experiments (Figure 5A and Figure 5—figure supplement 1B), 1 μg of both GRAMD1a-GFP and GRAMD2a-GFP was transfected.
 
-## GRAMD2a purification
+### GRAMD2a purification
 
 Soluble GRAMD2 without the C-terminal transmembrane domain (GRAMD2ΔTM: 1–298 aa) was cloned into pET15b vector. His6-GRAMD2ΔTM was purified from BL21 E. coli containing RIPL plasmid (encoding nonabundant tRNAs). All expression and purification were performed with cultures were grown to at 37°C. Cultures were grown to OD600 0.7 and expression was induced with 0.5 mM IPTG for 2 hr. Cells were harvested routinely by centrifugation, resuspended in a buffer (50 mM Hepes, pH 8, 500 mM NaCl, 350 µg/ml PMSF, 1x PI cocktail, 2 mM BME) and lysed in a microfluidizer, upon which Triton X-100 was added to 0.1%. Insoluble proteins and debris were removed by centrifugation at 35,000 rpm in a Beckman 45Ti rotor for 45 min. Column packed with Ni-IDA resin, which was loaded onto a BioRad FPLC, was used to purify His6-GRAMD2ΔTM. Peak fractions were collected, pooled and dialyzed into storage buffer. Recombinant protein stored in 30 uL aliquots at −80°C. Additional buffers used: wash buffer – 50 mM Hepes, pH 8, 500 mM NaCl, 1x PI cocktail, 2 mM BME, 0.1% Mega-8, 5 mM Imidazole; elution buffer – 50 mM Hepes, pH 8, 250 mM NaCl, 1x PI cocktail, 2 mM BME, 0.1% Mega-8, 250 mM Imidazole; dialysis buffer: 50 mM Hepes, pH 8, 150 mM NaCl, 2 mM BME; storage buffer – 50 mM Hepes, pH 8, 150 mM NaCl, 2 mM BME, 10% glycerol.
 
-## Liposome binding assays
+### Liposome binding assays
 
 Lipids were obtained from Avanti Polar Lipids in chloroform or methanol. Liposomes were prepared as described in DeVay et al. (2009). In short, liposomes were mixed in the appropriate ratios and dried under nitrogen gas. The dried lipids were placed under vacuum for at least 1 hr, and hydrated in 20 nM Tris-HCl, pH 8, 150 mM NaCl for 20 min using a sonicating bath. Hydrated liposomes were extruded through a 1 μm nanopore membrane (GE Healthcare) a minimum of 15 times. Compositions of liposomes used in this study were as follows. Control PM-like liposomes: 85% PC: 15% PS; PM-like liposomes with PI: 85% PC: 10% PS: 5% PI or 85% PC: 15% PI; PM-like liposomes with PI(4)P: 85% PC: 14% PS: 1% PI(4)P, 85% PC: 10% PS: 5% PI(4)P, or 85% PC: 15% PI(4)P; PM-like liposomes with PI(4,5)P2: 85% PC: 14% PS: 1% PI(4,5)P2, 85% PC: 10% PS: 5% PI(4,5)P2, or 85% PC: 15% PI(4,5)P2.
 
 Liposomes (final concentration 1.2 mg/mL) were incubated with 1.2 μM recombinant GRAMD2ΔTM at room temperature for 90 min. Following incubation, liposomes and recombinant GRAMD2ΔTM were centrifuged in a TLA-100 rotor in Beckman TLA-100 Ultracentrifuge at 40,000 g for 30 min at 4°C. Supernatant and pellet are separated and pellet was resuspended in equivalent volume of 20 mM Tris-HCl, pH 8, 150 mM NaCl as suppernatent. 6x Laemmli was added to pellet and suppernatent and western blots were performed with samples. Anti-His6 antibody was used to detect recombinant His6-GRAMD2ΔTM. Western blots were scanned on LI-COR Odyssey Imager.
 
-## Phylogenetic analysis and sequence alignment
+### Phylogenetic analysis and sequence alignment
 
 Phylogenetic analysis and structure prediction programs reveal that Ltc1/2/3/4 (Lam6/5/4/2) and GRAMD1a/b/c as well as GRAMD2/3 are orthologs of a family of proteins that is anchored via the presence of the GRAM domain (Figure S1A). MEGA7 software (Kumar et al., 2016) was used to create a Maximum Likelihood phylogenetic tree of proteins possessing GRAM domains and PH domains from Homo sapiens, Saccharomyces cerevisiae, and Drosophila melanogaster. A phylogenetic tree that was bootstrapped 1000 times indicated that the GRAMD domains from H. sapian proteins GRAMD1a/b/c, GRAMD2, and GRAMD3 share a common ancestor with their S. cerevisiae protein orthologs Ltc1/2/3/4 (Lam6/5/4/2). GRAMD4, on the other hand, is not evolutionarily related to GRAMD1a/b/c, GRAMD2, or GRAMD3. MUSCLE alignment (Edgar, 2004) of GRAM domains from Ltc1/2/3/4 (Lam6/5/4/2) and GRAMD1a/b/c as well as GRAMD2/3 reveals a high degree of conservation among these nine proteins (Figure 1B). Sequences used for GRAM domain homology alignment were the following:
 
@@ -131,27 +327,27 @@ P38800 LTC3/LAM4 548–617
 
 Q06681 LTC4/LAM2 647–716
 
-## ER Ca2+ depletion and PI(4,5)P2 depletion experiments
+### ER Ca2+ depletion and PI(4,5)P2 depletion experiments
 
 To monitor store-operated calcium entry (SOCE), cells were cultured and transfected on 35 mm MatTek poly-D-lysine coated dishes (MatTek Corporation) or on 25 mm coverslips (ThermoFisher) pre-coated with poly-L-lysine (Invitrogen). If cells that were plated on 25 mm cover slips were placed into a perfusion chamber (QCM-825-IPB, Quorum Technologies Inc, Ontario) where cells were incubated in a series of buffers. On day of imaging cells were washed twice and incubated with Ca2+-free Ringer’s solution (160 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 10 mM HEPES, 8 mM glucose, pH 7.4 (NaOH) for up to 30 min before imaging. 4 min prior to imaging ER stores were preloaded by incubating the cells in Ringer’s solution with 2 mM Ca2+. All experiments were performed at 37°C unless otherwise noted.
 
-## STIM1 (Figure 5), STIM1ΔK (Figure 6), and E-Syt1 (Figure 7) experiments
+#### STIM1 (Figure 5), STIM1ΔK (Figure 6), and E-Syt1 (Figure 7) experiments
 
 Different solutions were applied to cell by bath application. Cells were incubated in a series of buffers during which cells were imaged every 5 s: (1) after ER Ca2+ stores were preloaded in 2 mM Ca2+ Ringer’s solution, cells were washed twice and Ca2+-free Ringer’s solution was added to the cells; (2) 1 μM thapsigargin (TG) was added in 0 mM Ca2+ Ringer’s solution 30 s after start of imaging; (3) 2 mM Ca2+ Ringer’s solution was added 100 s after TG treatment. Imaging was performed using the Marianas SDC Real-Time 3D Confocal-TIRF microscope every 10 s. Excitation light was provided by 405 nm (for BFP), 488 nm (for eGFP), and 561 nm (for mCherry).
 
-## STIM1 experiments in Figure 7
+#### STIM1 experiments in Figure 7
 
 Different solutions were applied to cells using a perfusion system. Cells were incubated in a series of buffers during which cells were imaged every 5 s: (1) 2 mM Ca2+-containing Ringer’s solution for 100 s; (2) 0 mM Ca2+ Ringer’s solution for 100 s; (3) 0 mM Ca2+ Ringer’s solution with 1 μM TG for 100 s; (4) 2 mM Ca2+ Ringer’s solution. Imaging was performed using a 63x TIRF, 1.49 N.A Olympus objective mounted on an Olympus Cell TIRF system. Excitation light was provided by 488 nm (for eGFP) and 561 nm (for mCherry).
 
-## PI(4,5)P2 depletion experiments in Figure 4
+#### PI(4,5)P2 depletion experiments in Figure 4
 
 Different solutions were applied to cells using a perfusion system. Cells were incubated in a series of buffers during which cells were imaged every 5 s: (1) 2 mM Ca2+-containing Ringer’s solution; (2) between t = 100 s and t = 120 s, cells were incubated Ringer’s solution with 10 μM of oxotremorine; (3) 2 mM Ca2+-containing Ringer’s solution. Cells were imaged using the Zeiss 880 laser-scanning microscope, equipped with an Airyscan detector, every 10 s. Excitation light was provided by 435 nm (for CFP) and 561 nm (for mCherry).
 
-## Cytosolic Ca2+ experiments in Figure 7
+#### Cytosolic Ca2+ experiments in Figure 7
 
 Cytosolic Ca2+ was measured in the U2OS cells at 32°C. Cells were loaded with 2.5 uM Fura-PE3 AM, a leakage-resistant version of Fura 2 (Teflabs), at 2 µM in nominally Ca2+-free Ringer’s solution, for 45 min, followed by 45 min wash to allow de-esterification. Loading time and concentration were the minimum needed to produce acceptable signal-to-noise ratios, in order to minimize any dye-dependent Ca2+ buffering. ER stores were loaded in 2 mM Ca2+ Ringers for 4 min prior to recording fluorescence. Different solutions were applied to cells using a perfusion system: (1) 2 mM Ca2+-containing Ringer’s solution for 40 s; (2) 0 mM Ca2+/2 mM EGTA Ringers for 100 s; (3) 0 mM Ca2+/2 mM EGTA Ringers solution with 4 μM TG for 460 s; (4) 0 mM Ca2+/2 mM EGTA Ringers solution for 100 s; (5) 2 mM Ca2+ Ringer’s solution. Fluorescence was detected at 530 ± 20 nm FWHM with a photomultiplier, in response to alternating sequential excitation (10 Hz) at 340 and 380 nm, delivered by a Xe arc lamp through a Cairn Optoscan monochromator. In each experiment, fluorescence signals due to 340 and 380 nm from cells within a fixed size region of interest were demultiplexed and separately recorded. For analysis, the 340/380 fluorescence ratio was formed, with each λ first corrected by subtracting cell-free system background from a same-sized area.
 
-## Plasmids, strains, and cloning
+### Plasmids, strains, and cloning
 
 The following reagents were kind gifts: pAc-mCherry-E-Syt2 and pAc-E-Syt3-mCherry from P. De Camilli (Yale University) (Giordano et al., 2013); pcDNA3.0-HAII-M1R(dark), pYFP-PH-PLCdelta1, and pCFP-PH-PLCdelta1 from B. Hille (University of Washington) (Suh et al., 2004) (Botelho et al., 2000); pAc-mCherry-E-Syt1 from J. Liou (University of Texas, Southwestern Medical Center) (Chang et al., 2013); pmCherry-D4H from G. Fairn (University of Torono) (Maekawa and Fairn, 2015); plyn-mCherry, pAc-GFP-Sec61β, pAc-mCherry-Sec61β, pAc-TagBFP-Sec61β, and pEX-SP-YFP_STIM1(23–685) from G. Voeltz (University of Colorado, Boulder) (Friedman et al., 2011; Liou et al., 2005). pAc-Cav1-GFP was purchased from Addgene (14433).
 
@@ -159,11 +355,11 @@ Wild type HeLa and E-Syt triple knock-out (TKO) cells were kind gifts from P. De
 
 cDNA clones of human GRAMD1a and GRAMD2a/GRAMD2 were obtained from Origene (GRAMD1a: RC226692, GRAMD2a: RC220145) and cloned into pAcGFP1-N1 and pAcmCherry-N1 vectors. YFP was replaced with mCherry in pEX-SP-YFP_STIM1 to generate pEX-SP-mCherry_STIM1 using AgeI and NotI restriction cloning; poly-K domain of STIM1 was deleted from pEX-SP-mCherry_STIM1 using Gibson Assembly.
 
-## CRISPR genome editing
+### CRISPR genome editing
 
 CRISPR genome editing was performed using donor vector pX330, a human codon-optimized SpCas9 and chimeric guide RNA expression plasmid, as previously described (Haeussler et al., 2016). Briefly, primers coding for six different guide RNA sequences were cloned into pX330 with two overlapping primers each. U2OS cells were co-transfected with these vectors and pAc-GFP vector. Two days post transfection, individual GFP-expressing cells were FACS sorted into 96-well plates and clonal isolates were grown up. PCR-based genotyping was performed on ~80 clones and several candidate clones were identified with mutations in the GRAMD2a ORF. These clones were further analyzed by PCR-based genotyping. Guide 3 resulted in 4-nucleotide deletion in Exon 4 as selected for analysis. GRAMD2a exon 4 guide 3 (5’ GTTTAAGGATGTTCCCTTGG AGG) was cloned into pX330 with two overlapping primers (Forward_Exon4_Guide 3–5' CACCGTTTAAGGATGTTCCCTTGG and Reverse_Exon4_Guide 3–5' AAACCCAAGGGAACATCCTTAAAC).
 
-## Statistical analysis
+### Statistical analysis
 
 Co-localization analysis: ImageJ was used for analysis of co-localization for fluorescently labeled proteins. Confocal time series were exported to ImageJ, a background subtraction performed, and thresholded. Resulting images were made to look as similar as possible to the original confocal micrographs. Binary masks were created of all fluorescent pixels within thresholded images. Masks of fluorescent proteins were subtracted from each other and % pixel overlap was calculated. For example, in Figure 2C, the mask for GRAMD2a-GFP fluorescence was subtracted from the mask for Ch-E-Syt2 and visa versa, which resulted in the co-localization values presented in Figure 2E. At least 10 cells were quantified, imaged on at least two separate days (biological duplicates) are quantified. Two-tailed t-tests were performed wherever appropriate to access statistical significance. Percent fluorescence of YFP-PH-PLCδ1 at PM was determined using the following formula: % Fluorescence at PM = (Total integrated fluorescence density of whole cell – integrated fluorescence density of cytosol) / (Total integrated fluorescence density of whole cell) x 100 using ImageJ plugins. At least 10 cells were quantified, imaged on at least two separate days (biological duplicates) are quantified.
 
@@ -173,6 +369,6 @@ Measurement of STIM1 puncta size: Confocal time series were exported to ImageJ, 
 
 Affinity of GRAMD2ΔTM for liposomes: Western blot scans were analyzed using Image Studio Lite software. In order to standardize quantification, a standard box was created to encompass the largest band and, subsequently, this box was used to quantify the total intensity of each band, after background subtraction. Intensity of total protein in a reaction was calculated by adding the intensity of the pellet band with the supernatant band from each reaction. % binding was calculated by dividing intensity of pellet band by intensity of total protein. Each type of liposome binding experiment was performed with all controls (reaction that contained 1 – no liposomes, 2 – PC/PS liposomes) at least 4 times on four different days.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 Transcript expressions from human liver of 234 male and 193 female individuals were obtained from Gene Expression Omnibus (GEO) under the accession number GSE9588 (Schadt et al., 2008). Transcript expressions from mouse livers of 41 male BXD strains were previously described (Wu et al., 2014b), and are publicly available from GEO under the accession number GSE60149. For enrichment analysis, genes were ranked based on their Pearson correlation coefficients with the expression levels of GRAMD1A and GRAMD2A, and Gene Set Enrichment Analysis (GSEA) was performed to find the enriched gene sets co-expressed with GRAMD1A and GRAMD2A (Subramanian et al., 2005). Gene ontology (GO) gene sets were downloaded from the Molecular Signatures Database (MSigDB) (Subramanian et al., 2005).

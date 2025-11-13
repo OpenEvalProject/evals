@@ -27,7 +27,7 @@
 
 ## Abstract
 
-For a sperm to successfully fertilize an egg, it must first undergo capacitation in the female reproductive tract and later undergo acrosomal reaction (AR) upon encountering an egg surrounded by its vestment. How premature AR is avoided despite rapid surges in signaling cascades during capacitation remains unknown. Using a combination of conditional knockout (cKO) mice and cell-penetrating peptides, we show that GIV ( CCDC88A ), a guanine nucleotide-exchange modulator (GEM) for trimeric GTPases, is highly expressed in spermatocytes and is required for male fertility. GIV is rapidly phosphoregulated on key tyrosine and serine residues in human and murine spermatozoa. These phosphomodifications enable GIV-GEM to orchestrate two distinct compartmentalized signaling programs in the sperm tail and head; in the tail, GIV enhances PI3K→Akt signals, sperm motility and survival, whereas in the head it inhibits cAMP surge and premature AR. Furthermore, GIV transcripts are downregulated in the testis and semen of infertile men. These findings exemplify the spatiotemporally segregated signaling programs that support sperm capacitation and shed light on a hitherto unforeseen cause of infertility in men.
+For a sperm to successfully fertilize an egg, it must first undergo capacitation in the female reproductive tract and later undergo acrosomal reaction (AR) upon encountering an egg surrounded by its vestment. How premature AR is avoided despite rapid surges in signaling cascades during capacitation remains unknown. Using a combination of conditional knockout (cKO) mice and cell-penetrating peptides, we show that GIV (CCDC88A), a guanine nucleotide-exchange modulator (GEM) for trimeric GTPases, is highly expressed in spermatocytes and is required for male fertility. GIV is rapidly phosphoregulated on key tyrosine and serine residues in human and murine spermatozoa. These phosphomodifications enable GIV-GEM to orchestrate two distinct compartmentalized signaling programs in the sperm tail and head; in the tail, GIV enhances PI3K→Akt signals, sperm motility and survival, whereas in the head it inhibits cAMP surge and premature AR. Furthermore, GIV transcripts are downregulated in the testis and semen of infertile men. These findings exemplify the spatiotemporally segregated signaling programs that support sperm capacitation and shed light on a hitherto unforeseen cause of infertility in men.
 
 ## Introduction
 
@@ -39,27 +39,39 @@ Here we show that GIV (a.k.a., GIRDers of actIN filament, Girdin; gene: CCDC88A)
 
 ## Results and discussion
 
-## GIV is highly expressed in spermatocytes
+### GIV is highly expressed in spermatocytes
 
 At the time of its discovery in 2005, full-length GIV protein was found to be most highly expressed in two organs: testis and brain (Figure 1A). Immunohistochemical studies curated by the Human Protein Atlas further confirm that GIV is most highly expressed in the testis (Figure 1—figure supplement 2A). Single-cell sequencing (Figure 1B; Figure 1—figure supplement 2B–E) and immunohistochemistry (IHC; Figure 1C) studies on human testis pinpoint sperm as the major cell type in the testis that expresses GIV mRNA and protein. We confirmed by confocal immunofluorescence on mouse testis that GIV is indeed expressed in the spermatozoa and localizes predominantly to the acrosomal cap, as determined by colocalization with the mouse acrosomal matrix protein, sp56 (Kim et al., 2001) (tGIV; Figure 1D). As expected, a tyrosine phosphorylated pool of GIV (pYGIV), however, localized mostly to the plasma membrane (PM) (Figure 1E). Both antibodies detected the endogenous GIV protein in testicular lysates at the expected size of ~220 kDa (Figure 1F). We also noted that GIV consistently and predominantly localizes to the acrosome as it matures from a rudimentary vesicle into a vesicular cap during sperm maturation (Figure 1G). GIV’s localization to the acrosome, which is derived from the Golgi apparatus (Khawar et al., 2019), is in keeping with GIV’s predominant localization to the Golgi and Golgi-associated transport vesicles in diverse cell types (Le-Niculescu et al., 2005; Lo et al., 2015). Taken together, we conclude that GIV is highly expressed in sperm and may be important for sperm functions.
 
-## Transcripts of GIV are reduced in infertile men
+![Figure 1.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig1-v1.jpg)
+
+**Figure 1.:** (A) Bar graph displays the relative fluorescence unit (RFU) of endogenous full-length GIV protein in immunoblots of organ lysates published previously using three independent anti-GIV antibodies raised against different epitopes of GIV (Anai et al., 2005). (Figure 1—source data 1)(B) RNA expression in the single-cell-type clusters identified in the human testis visualized by a UMAP plot (inset) and a bar plot. The bar plot shows RNA expression (pTPM) in each cell-type cluster. UMAP plot visualizes the cells in each cluster, where each dot corresponds to a cell. (C) Representative images from human testis immunistochemistry studies curated in the Human Protein Atlas. Int: interstitium; Lu: lumen of seminiferous tubules. (D) Cryosections of mouse testis (8 weeks old, C57BL/6) were stained for either total GIV (tGIV; green) and DAPI (blue, nucleus) alone, or co-stained with tGIV and the sperm acrosomal matrix protein zona pellucida 3 receptor (ZP3R, formerly called sp56; red) and analyzed by confocal immunofluorescence. Representative images from two independent analyses are displayed. Scale bar = 10 µm. (E, F) Cryosections of mouse testis tissue analyzed for total (t) GIV (green), pY GIV (red), and DAPI (blue, nucleus). Representative images from two independent analyses are shown in panel (E); scale bar = 10 µm. Insets in panel (E) are magnified and displayed in panel (F, left). Schematics in panel (F, right) display various localization of GIV observed during the process of maturation of the Golgi into acrosomal cap. (G) Immunoblots on mouse testis lysates with the same tGIV and pY GIV antibodies. (Figure 1—source data 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The localization of G protein subunits and membrane and soluble adenylyl cyclases (mAC/sAC) and the calcium channel, Catsper, is shown. The intensity of the bar denotes the relative concentrations of the molecules. (B) Summary of experimental evidence and key citations and unknown (?) aspects in spatiotemporally separated signaling cascades that regulate sperm processes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) CCDC88A expression profile was queried in the Human Protein Atlas. (B) GIV protein expression data is shown for each of the 44 tissues. (C) A summary of single-cell RNA (NX) from all single-cell types. Color coding is based on cell-type groups, each consisting of cell types with functional features in common. (D) The heatmap in this section shows expression of CCDC88A and well-known cell-type markers in the different single-cell-type clusters of human testes. Normalized data is presented as log (p-TPM) Z-score. (E) UMAP plot (top) for single-cell expression of CCDC88A in human testes. A bar chart (bottom) shows RNA expression (pTPM) in each cell-type cluster.
+
+### Transcripts of GIV are reduced in infertile men
 
 Previously, in a publicly available patent (WO2017024311A1), the GIV gene (CCDC88A) was identified as one among a panel of genes whose altered expression due to DNA methylation may help diagnose male fertility status and/or the quality of the embryo (Carrell, 2016). We asked if the abundance of GIV transcripts in testis or sperm may be altered in infertile men. To this end, we curated all publicly available transcriptomic datasets from the NCBI GEO portal and analyzed them for differences in the abundance of CCDC88A transcripts across the annotated (in)fertility phenotypes (Figure 2A). CCDC88A transcripts were significantly and consistently downregulated in infertile men across all independent datasets analyzed (Figure 2B–E), regardless of whether the samples used for transcriptomic studies were testis or sperm. In Klinefelter’s syndrome (KS), the most common sex chromosomal disorder in humans that causes primary infertility, reduced CCDC88A expression was seen only after puberty and not in pre-pubertal boys (Figure 2E). This finding is in keeping with our observation that GIV is most prominently expressed in spermatocytes (Figure 1) and that spermatocytes are depleted in KS patients only at the onset of puberty (Wikström et al., 2004). Finally, in a study that segregated subfertile from fertile men using commonly used clinical parameters for semen quality, we found that sperm motility, but not concentration or morphology, was the key parameter (Figure 2F); when reduced sperm motility was used as a metric of infertility, semen from those subfertile men displayed reduced levels of GIV transcript. These results indicate that reduced GIV expression in testis and sperm is associated with clinically determined male infertility. Given the heterogeneous nature of the datasets (i.e., diagnosed cause of infertility, ranging from genetic syndromes with developmental or hormonal defects to post-chemotherapy to idiopathic), reduced GIV expression could be considered as a shared common molecular phenotype among infertile men.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig2-v1.jpg)
 
-**Figure 2.:** CCDC88A (GIV) are downregulated in infertile male testis and semen.(A) Schematic displays the approach used to search NCBI GEO database for testis and sperm transcriptomic datasets suitable to study correlations between the abundance of CCDC88A transcripts and male fertility. (B–E) Whisker plots show the relative abundance of CCDC88A (expressed as Log2 normalized expression; see Materials and methods for different normalization approaches used for microarray and RNA-seq datasets) in sperm or testis samples (as annotated using schematics) in samples annotated with fertility status, or syndromes associated with infertility. (F) Whisker plots show the relative abundance of CCDC88A transcripts in sperms classified as subfertile or not based on three properties of sperm assessed using a modified WHO criterion published by Guzick et al., 2001 (see Materials and methods). Distribution of gene expression values is illustrated using boxplots and mean as circle with 95% confidence intervals (CIs) as arrows. Numbers on top indicate the p values, which were derived from Welch’s t-test. A significance level of <0.05, corresponding to 95% CIs are indicated in black font. Insignificant p values are indicated in red font.
+**Figure 2.:** (A) Schematic displays the approach used to search NCBI GEO database for testis and sperm transcriptomic datasets suitable to study correlations between the abundance of CCDC88A transcripts and male fertility. (B–E) Whisker plots show the relative abundance of CCDC88A (expressed as Log2 normalized expression; see Materials and methods for different normalization approaches used for microarray and RNA-seq datasets) in sperm or testis samples (as annotated using schematics) in samples annotated with fertility status, or syndromes associated with infertility. (F) Whisker plots show the relative abundance of CCDC88A transcripts in sperms classified as subfertile or not based on three properties of sperm assessed using a modified WHO criterion published by Guzick et al., 2001 (see Materials and methods). Distribution of gene expression values is illustrated using boxplots and mean as circle with 95% confidence intervals (CIs) as arrows. Numbers on top indicate the p values, which were derived from Welch’s t-test. A significance level of <0.05, corresponding to 95% CIs are indicated in black font. Insignificant p values are indicated in red font.
 
-## GIV is rapidly tyrosine phosphorylated during capacitation
+### GIV is rapidly tyrosine phosphorylated during capacitation
 
 Mature sperm, by virtue of being transcriptionally and translationally inactive, rely entirely upon rapid post-translational modifications to regulate all pre-zygotic processes. Because GIV is a multimodular signal transducer that straddles both tyrosine-based and G protein signaling pathways (Ghosh, 2016; Ghosh, 2015), we sought to investigate how GIV’s functions are altered during sperm capacitation. Because PI3K-Akt signals downstream of TKs is a critical pathway for actin remodeling in the sperm flagellum and for hypermotility (Tan and Thomas, 2014; Breitbart et al., 2005; Etkovitz et al., 2007; Roa-Espitia et al., 2016), and GIV serves as a point of convergence for multi-TK-dependent PI3K signaling (Lin et al., 2011; Midde et al., 2018), we first asked if GIV is indeed tyrosine phosphorylated in human and mouse sperm during capacitation. Using the sperm swim-up assay, we first confirmed that in human ejaculates low-motile sperm have just as much total GIV as their highly motile counterparts, but by contrast, tyrosine phosphorylated GIV was significantly elevated in the latter (compare tGIV and pYGIV, lanes 1–2 in immunoblots; Figure 3A). As a positive control, we simultaneously analyzed the same samples by dual-color immunoblotting with an antibody that detects pan-tyrosine phosphoproteins. As expected (Ecroyd et al., 2003; Ficarro et al., 2003; Arcelay et al., 2008; Yunes et al., 2003), the highly motile sperms have higher tyrosine phosphorylation (pan-pY; Figure 3A). pYGIV and pan-pY signals co-migrated in the SDS page gel, indicating that GIV is one of the tyrosine phosphorylated proteins in high-motile sperms. The pan-pY and pYGIV signals were found to further increase in capacitated sperms, maximally by 4 hr, without any change in total GIV (lanes 3–4; Figure 3A). Such phosphorylation was dependent on the activity of PKA because pretreatment of sperm with the PKA inhibitor H89 virtually abolished both pan pY and pYGIV (Figure 3B); these findings are in keeping with the fact that PKA activity is essential for tyrosine phosphorylation cascades during capacitation (Luconi et al., 2005; Lamirande and Gagnon, 2004). Immunofluorescence studies on human sperm confirmed that pan-pY and pYGIV signals colocalized in the mid-piece and tails of high-motile sperm (Figure 3C) where they were significantly induced upon capacitation (Figure 3D). Findings in human sperm were mirrored in murine sperm (Figure 3E,F), with some notable differences in temporal-spatial dynamics. For example, pY/pYGIV of murine sperms are induced more rapidly and transient. During murine sperm capacitation, pYGIV is induced in 30 min and then reduced in 120 min (Figure 3F) and was not as restricted to the sperm tail and mid-piece as in humans (compare sperm head regions in Figure 3D and F). Although full-length GIV (~250 kDa expected size) could be detected in murine sperm (Figure 3F), we often detected numerous breakdown products, presumably proteolytic in nature, in both murine and human sperm lysates (Figure 3A–B and F). Regardless of the size of the breakdown products, total tGIV, pYGIV, and pan-pY co-migrated in the gels at the same size, suggesting that GIV may be one of the major phosphotyrosine proteins in capacitating sperm. We conclude that GIV is a major phosphotyrosine substrate in sperm tail during capacitation and that its phosphoactivation requires upstream activation of PKA. Our findings suggest that this PKA→TK→pYGIV axis may enhance PI3K-Akt signals and sperm motility. Because the sperm Ca2+ channel, Catsper, exerts both spatial and temporal control over tyrosine phosphorylation as sperm acquire the capacity to fertilize Chung et al., 2014, and there is some evidence that H89 may directly inhibit Catsper (Wang et al., 2020), the contributions of a possible alternative Ca2+→TK→pYGIV pathway towards sperm motility cannot be ruled out.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig3-v1.jpg)
 
-**Figure 3.:** (A) Freshly ejaculated human sperm were segregated into low-motile and high-motile populations using ‘swim-up’ technique (see Materials and methods) and subsequently capacitated in vitro for 1 or 4 hr prior to whole cell lysis. Equal aliquots of lysates were analyzed by immunoblotting for total (t) GIV, pan pY, pY1764 GIV (pYGIV), and β-tubulin (loading control) using LI-COR Odyssey (Figure 3—source data 1). (B) Whole-cell lysates of human sperms capacitated with or without preincubation with H89 (protein kinase A [PKA] inhibitor) or DMSO control were analyzed as in (A) (Figure 3—source data 2). (C, D) Human sperm with low vs. high motility (C), were capacitated or not (D), fixed and co-stained for total and pY GIV (tGIV; pY GIV), tubulin and DAPI. Representative images that capture the most frequently observed staining patterns (at >80% frequency) among ~100–150 sperms/sample, in three independent samples, derived from three unique subjects are shown. Scale bar = 10 µm. (E) Immunoblots of equal aliquots of whole-cell lysates of mouse sperm capacitated with (+) or without (-) pretreatment with PKA inhibitor (H89) or vehicle (DMSO) control. Hexokinase is used as a loading control (Figure 3—source data 3). (F) Non-capacitated (non-cap) or capacitated mouse sperm were fixed and stained as in (D) and analyzed by confocal microscopy. Representative images that capture the most frequently observed staining patterns (at >80% frequency) among ~50–100 sperms/sample, in three independent samples, derived from three mice are shown. Scale bar = 10 µm.Figure 3—source data 1.Figure 3A).Figure 3—source data 2.Figure 3B).Figure 3—source data 3.Figure 3E).
+**Figure 3.:** (A) Freshly ejaculated human sperm were segregated into low-motile and high-motile populations using ‘swim-up’ technique (see Materials and methods) and subsequently capacitated in vitro for 1 or 4 hr prior to whole cell lysis. Equal aliquots of lysates were analyzed by immunoblotting for total (t) GIV, pan pY, pY1764 GIV (pYGIV), and β-tubulin (loading control) using LI-COR Odyssey (Figure 3—source data 1). (B) Whole-cell lysates of human sperms capacitated with or without preincubation with H89 (protein kinase A [PKA] inhibitor) or DMSO control were analyzed as in (A) (Figure 3—source data 2). (C, D) Human sperm with low vs. high motility (C), were capacitated or not (D), fixed and co-stained for total and pY GIV (tGIV; pY GIV), tubulin and DAPI. Representative images that capture the most frequently observed staining patterns (at >80% frequency) among ~100–150 sperms/sample, in three independent samples, derived from three unique subjects are shown. Scale bar = 10 µm. (E) Immunoblots of equal aliquots of whole-cell lysates of mouse sperm capacitated with (+) or without (-) pretreatment with PKA inhibitor (H89) or vehicle (DMSO) control. Hexokinase is used as a loading control (Figure 3—source data 3). (F) Non-capacitated (non-cap) or capacitated mouse sperm were fixed and stained as in (D) and analyzed by confocal microscopy. Representative images that capture the most frequently observed staining patterns (at >80% frequency) among ~50–100 sperms/sample, in three independent samples, derived from three mice are shown. Scale bar = 10 µm.
 
-## The G protein modulatory function of GIV is dynamically phosphoregulated during capacitation
+### The G protein modulatory function of GIV is dynamically phosphoregulated during capacitation
 
 Next, we asked how the G protein modulatory function of GIV is regulated during capacitation. The evolutionarily conserved C-terminal GEM motif in GIV that enables it to both activate Gi (Garcia-Marcos et al., 2009) and inhibit Gs (Gupta et al., 2016) is phosphoregulated by two Ser/Thr kinases, cyclin-dependent-like kinase 5 (CDK5) (López-Sánchez et al., 2013) and protein kinase C Ɵ (PKCƟ) (López-Sánchez et al., 2013) (summarized in Figure 4A). Phosphorylation at Ser(S)1,674 induces GIV’s ability to activate Gi by ~2.5- to 3.0-fold, whereas phosphorylation at S1689 inhibits GIV’s ability to activate Gi; neither phosphoevent impacts GIV’s ability to bind and inhibit Gs. By activating the inhibitory Gi and inhibiting the stimulatory Gs proteins, GIV overall inhibits mACs and suppresses production of cellular cAMP (Getz et al., 2019). Because post-translational protein modification is the predominant way mature sperm rapidly respond to environmental cues, we used two previously validated phosphosite-specific antibodies (López-Sánchez et al., 2013; Bhandari et al., 2015) that detect pS1674-GIV and pS1689-GIV. We found that in mouse (Figure 4B, left) and human (Figure 4C, left) sperm, HCO3--induced capacitation induced the levels of phosphorylation at the activation site pS1674 in the sperm tails of both species, with two notable inter-species differences: (i) in murine sperm, the acrosomal cap showed phosphorylation at baseline with no further increase upon capacitation; and (ii) in human sperm, the mid-piece region showed phosphorylation at baseline with no further increase upon capacitation. Unlike the activating pS1674 site, distribution/intensity of phosphorylation at the inhibitory pS1689 site was observed at baseline in the head, mid-piece, and tail of the murine sperm (Figure 4B, right), and the mid-piece and tail in human sperm (Figure 4C, right) and did not change during capacitation.
 
@@ -71,27 +83,43 @@ We next repeated the studies with the sequential addition of HCO3- (for 2 hr) fo
 
 Taken together, the predominant findings can be summarized as follows (see legend of Figure 4F): GIV-GEM is inactive at baseline and activated upon capacitation. It remains active in both head and tail regions of capacitated sperm until the moment the acrosome is shed. Capacitation is also associated with robust tyrosine phosphorylation of GIV in the sperm tail and mid-piece throughout the process of acrosomal reaction (AR).
 
-## GIV is required for male fertility
+### GIV is required for male fertility
 
 To determine if GIV is required for male fertility, we next co-housed female mice with conditional GIV knockout male mice (henceforth referred to as GIV-cKO; generated using tamoxifen in Ccdc88afl/fl-UbcCre-Ert2 mice) or control littermates (WT; Ccdc88afl/fl mice) (see Materials and methods; see legend of Figure 5A) and analyzed diverse readouts. GIV knockdown was confirmed by genotyping tail tips (Figure 5B) and assessing GIV mRNA (Figure 5C) and protein (Figure 5D) in the testis. We noted a significant reduction of cumulative probability of pregnancy (100% vs. 55% rate for WT and KO groups, respectively, within 40 days after co-housing; Figure 5E) and average litter size (Figure 5F) in GIV-cKO mice. Surprisingly, both WT and GIV-cKO mice had similar sperm counts (Figure 5G), testes sizes, and weights (Figure 5—figure supplement 1). We confirmed by IHC that GIV was predominantly expressed in sperm in the testis of WT mice and that it was effectively depleted in GIV-cKO mice (Figure 5H). RNA-seq of the testis followed by unsupervised clustering showed that GIV-cKO testis differentially expressed only a handful of transcripts compared to WT testis (Figure 5I). The predominantly upregulated genes mapped to the ‘aberrant activation of PI3K/Akt signaling’ pathway (Figure 5J). This was largely attributable to Esr1 (highlighted in red; Figure 5I); polymorphisms of this gene are known to predispose to male fertility (Ge et al., 2014; Galan et al., 2005), and its induction represents a negative feedback event, resulting in the setting of inhibition of PI3K signaling (Bosch et al., 2015). The predominantly downregulated genes mapped to the IL12 pathway (Figure 5K), which is consistent with prior studies in men showing that IL12 may be important for male fertility and that its dysregulation may reflect infertility (Naz and Evans, 1998; Naz et al., 1998). Notably, both pathways reflect changes that are largely contributed by non-sperm cells in the testis; Esr1 is expressed exclusively in the Leydig cells in mouse testis (Zhou et al., 2002; Kotula-Balak et al., 2005) and IL12 is largely expressed by endothelial cells, peritubular cells, and macrophages (Terayama et al., 2014).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic showing the workflow for fertility studies in conditional GIV-cKO mice. After intraperitoneal injection of tamoxifen, male mice were first primed in two phases—first by co-housing with female littermates × 3 weeks, and subsequently by co-housing with female mice from Jackson laboratory (JAX) while the females acclimatized to the animal facility. The final ‘test’ group consisted of tamoxifen-injected WT and GIV-cKO male mice randomly assigned to and co-housed with three female mice from JAX, each with proven ability to get pregnant. (B–D) Confirmation of GIV-cKO in the mice after tamoxifen injection by genotyping (B), qPCR of testis tissues (C), and immunoblotting of testis lysates (D) (Figure 5—source data 1). (E) Kaplan–Meier plot showing the cumulative probability of pregnancy (expressed as %) in the females co-housed with either WT or GIV-cKO males. Statistical significance was assessed using log-rank analysis. *p<0.05 (Figure 5—source data 2). (F, G) Bar graphs showing the average litter size (F; Figure 5—source data 3) and sperm count (G; Figure 5—source data 4) in WT and GIV-cKO males. See also Figure 5—figure supplement 1 for quantifications of tested weight and length. (H) Immunohistochemistry staining on mouse testis. Scale bar = 200 µm. (I) Unsupervised clustering of WT and KO testis samples based on gene expression. Differentially expressed genes (DEGs) that were up- or downregulated in KO are annotated on the right side (Figure 5—source data 5). (J, K) Reactome pathway analyses showing the pathways that are up or downregulated in KO testis. (L) Summary of the most prominent conclusions from RNA-seq dataset.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** GIV was depleted in male mice by intraperitoneal injection of tamoxifen (see Figure 5A). Bar graphs show the testes weight (left; Figure 5—figure supplement 1—source data 1) and length (right; Figure 5—figure supplement 1—source data 2) in WT and GIV-cKO males. All results are presented as average ± SEM. Statistical significance was assessed using unpaired t-test, non-significant p-values>0.05.
+
 These findings demonstrate that GIV is required for male fertility and suggest that the role of GIV and its various phosphomodifications we observe in sperm is largely post-transcriptional and post-translational in nature.
 
-## GIV’s GEM function facilitates hypermotility and survival during sperm capacitation
+### GIV’s GEM function facilitates hypermotility and survival during sperm capacitation
 
 Next, we assessed the role of GIV during sperm capacitation using a previously validated approach, that is, exogenous addition of cell-permeable His-tagged GIV-derived ~210 aa long peptides (Ma et al., 2015); these peptides either have an intact functional GEM motif (WT peptides) or, as negative control, a well-characterized F1685A (FA) mutant of the same motif ,which lacks such activity (Garcia-Marcos et al., 2009; Kalogriopoulos et al., 2019; Figure 6A; top). By anti-His staining followed by flow cytometry, we confirmed that TAT-His-GIV peptides were indeed taken up as we could detect uptake only when staining was conducted under permeabilized conditions (Figure 6A, bottom). Peptide uptake was efficient, varying within the range of ~80–90% (Figure 6A, bottom). Immunofluorescence studies confirmed that uptake was seen in all segments of the sperm (Figure 6B). The peptides were detected and functional (i.e., retained their ability to bind Gαi) at 1 and 6 hr post-uptake, as determined using lysates of peptide-transduced sperm as source of GIV in pulldown assays with recombinant GDP-loaded GST-tagged G protein, Gαi3 (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Schematic (A, top) of cell-permeant His-TAT-GIV-CT wildtype (WT) and GEM-deficient mutant (F1685A; FA) peptides used in this work. Immunofluorescence images (B) representative of sperms after treatment with cell-permeant TAT-GIV-CT peptides and stained with anti-His antibody and DAPI. Scale bar = 15 µm. Histograms (A, bottom) from flow cytometry studies conducted with or without permeabilization confirm the uptake of His-TAT peptides in sperm. (C) Immunoblots of GST pulldown assays testing the ability of GDP-loaded GST-Gαi3 to bind TAT-GIVCT peptides from lysates of sperms at 1 hr (B1) and 6 hr (B2) after transduction (Figure 6—source data 1). (D, E) Immunoblots of lysates of TAT-GIVCT-transduced sperms at the indicated time points after capacitation analyzed for phospho-PKA substrates (D), phospho(p) and total (t) Akt (D; Figure 6—source data 2), pYGIV (E, left), pan-pY (E, right) (Figure 6—source data 3), and hexokinase (loading control, D). (F–I) Schematic in (F) summarizes workflow in assessing motility and survival of sperms during capacitation. Bar graphs in (G; Figure 6—source data 4) display the relative % of motile and progressively motile population of sperms. Line graphs in (H) show survival of sperms as determined by methy thiazolyl tetrazolium (MTT) assay; bar graphs in (I) show the area under the curve (AUC) of the line graphs in (H) (Figure 6—source data 5). All results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using one-way analysis of variance (ANOVA) followed by Tukey’s test for multiple comparisons. *p<0.05, ***p<0.001, ****p<0.0001, ns p>0.05. (J) Schematic summarizes the conclusions of how GIV’s GEM function impacts sperm phenotypes during capacitation.Figure 6—source data 1.Figure 6C).Figure 6—source data 2.Figure 6D).Figure 6—source data 3.Figure 6E).Figure 6—source data 4.Figure 6G).Figure 6—source data 5.Figure 6H,I).
+**Figure 6.:** (A, B) Schematic (A, top) of cell-permeant His-TAT-GIV-CT wildtype (WT) and GEM-deficient mutant (F1685A; FA) peptides used in this work. Immunofluorescence images (B) representative of sperms after treatment with cell-permeant TAT-GIV-CT peptides and stained with anti-His antibody and DAPI. Scale bar = 15 µm. Histograms (A, bottom) from flow cytometry studies conducted with or without permeabilization confirm the uptake of His-TAT peptides in sperm. (C) Immunoblots of GST pulldown assays testing the ability of GDP-loaded GST-Gαi3 to bind TAT-GIVCT peptides from lysates of sperms at 1 hr (B1) and 6 hr (B2) after transduction (Figure 6—source data 1). (D, E) Immunoblots of lysates of TAT-GIVCT-transduced sperms at the indicated time points after capacitation analyzed for phospho-PKA substrates (D), phospho(p) and total (t) Akt (D; Figure 6—source data 2), pYGIV (E, left), pan-pY (E, right) (Figure 6—source data 3), and hexokinase (loading control, D). (F–I) Schematic in (F) summarizes workflow in assessing motility and survival of sperms during capacitation. Bar graphs in (G; Figure 6—source data 4) display the relative % of motile and progressively motile population of sperms. Line graphs in (H) show survival of sperms as determined by methy thiazolyl tetrazolium (MTT) assay; bar graphs in (I) show the area under the curve (AUC) of the line graphs in (H) (Figure 6—source data 5). All results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using one-way analysis of variance (ANOVA) followed by Tukey’s test for multiple comparisons. *p<0.05, ***p<0.001, ****p<0.0001, ns p>0.05. (J) Schematic summarizes the conclusions of how GIV’s GEM function impacts sperm phenotypes during capacitation.
 
 Next, we analyzed phosphoproteins in TAT-GIV-transduced sperm undergoing in vitro capacitation by immunoblotting. Although PKA activation (Figure 6D) and pan-Y or pYGIV phosphorylation (Figure 6E) were relatively similar between WT and FA-transduced sperm, phosphorylation of Akt differed; TAT-GIV-WT induced phosphorylation of Akt much more robustly than TAT-GIV-FA (Figure 6D). This finding is consistent with the established role of GIV-GEM in the activation of the PI3K→Akt pathway via the activation of Gi and the release of ‘free’ Gβγ15. Because Akt phosphorylation has been implicated in sperm hypermotility and survival during capacitation (Quan and Liu, 2016; Pujianto et al., 2010), we performed computer-assisted sperm analysis (CASA) and MTT assays, respectively (Figure 6F). Consistent with the patterns of Akt phosphorylation, WT, but not FA peptide-transduced sperm showed greater overall motility as well as hypermotility (Figure 6G) and greater viability (Figure 6H,I).
 
 These findings indicate that GIV’s GEM function may be dispensable for the PKA→TK→tyrosine phosphorylation pathway, but is required for Akt activation, sperm motility, and survival during capacitation (Figure 6J).
 
-## GIV’s GEM function suppresses cAMP and AR
+### GIV’s GEM function suppresses cAMP and AR
 
 Prior studies have underscored the importance of mACs and their role in the regulation of cAMP and acrosome exocytosis in sperm (summarized in Figure 1—figure supplement 1A). mACs are localized most abundantly in the head (Figure 1—figure supplement 1A), and their activation by Gs or inhibition by Gi is known to finetune cAMP surge in that location, a function that is conserved in numerous species (Spehr et al., 2004). Thus, mACs and sACs regulate cAMP surges in the sperm head and tail, respectively, in a spatiotemporally segregated and independent manner (Figure 1—figure supplement 1B). Upon approaching the zona pellucida of an egg, a timely surge in cAMP in sperm head is required for the downstream activation of effectors PKA (Romarowski et al., 2015) and the exchange proteins directly activated by cAMP (EPAC) (Sosa et al., 2016; Mata-Martínez et al., 2021), which in turn coordinate the activation of several small GTPases (Branham et al., 2009; Pelletán et al., 2015; Bustos et al., 2015; Bustos et al., 2012) of the Ras superfamily. These GTPases enable rapid cytoskeletal remodeling and membrane trafficking events that culminate in acrosome exocytosis. As an activator of Gi and an inhibitor of Gs (Gupta et al., 2016) using the same conserved GEM motif (Figure 7A), GIV is known to tonically and robustly suppresses cAMP (Getz et al., 2019; Getz et al., 2020), and by that token, it is expected to inhibit the cAMP surge. Because GIV-GEM was activated upon capacitation and remained active until the acrosome was shed (Figure 4F), we hypothesized that GIV’s GEM function may be required for the prevention of a premature cAMP surge in the sperm head, and hence, premature acrosome exocytosis. We first confirmed that cAMP is modulated by a variety of stimuli targeting Gi- (adenosine) and Gs-coupled (progesterone) GPCRs (Figure 7—figure supplement 1A), consistent with what has been observed before (Wang et al., 2020; Parinaud and Milhet, 1996). When the same studies were carried out on TAT-GIV peptide-transduced sperm, the expected degree of cAMP induction were observed once again (Figure 7B), but TAT-GIV-WT, but not the GEM-deficient FA mutant peptides could significantly suppress the degree of cAMP surge across all stimuli tested (Figure 7C, Figure 7—figure supplement 1B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic summarizes the current knowledge of how Ca2+ and cAMP signaling regulates acrosome exocytosis during AR and how GIV’s ability to modulate cAMP via both Gαi/s is hypothesized to impact AR. (B) Bar graphs display the fold change in cAMP in mouse sperms treated with various stimuli in the presence of DMSO. All results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using one-way analysis of variance (ANOVA) followed by Tukey’s test for multiple comparisons. nsp>0.05, ****p<0.0001. (C) Bar graphs display the fold change in cAMP in TAT-GIVCT-transduced mouse sperms exposed to various stimuli. Dotted horizontal line represents cAMP concentration in PBS-treated samples, to which all other values were normalized. See also Figure 7—figure supplement 1 for comparison of PBS vs. all other treatments and conditions with (+) or without (-) peptides. All results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using two-way ANOVA followed by Sidak’s test for multiple comparisons. *p<0.05, ***p<0.001, ****p<0.0001, nsp>0.05 (Figure 7—source data 1). (D) Schematic on top summarizes the assay used to quantify progressive changes in acrosome membrane during AR that was induced in vitro by exposing capacitated sperms to 10 µM A23186 or 100 µM progesterone. Images in the bottom panel are representative of acrosome-intact, partial AR and complete AR stages. (E, F) Stacked bar graphs in (E) display the proportion of sperms in each indicated condition that are either in partial or complete AR or with intact acrosomes. Bar graphs in (F) display just the relative proportion of sperms in (E) that have complete AR. All results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using one-way ANOVA followed by Tukey’s test for multiple comparisons. *p<0.05, **p<0.01, ****p<0.0001 (Figure 7—source data 2). (G–I) Schematic in (G) displays the workflow used for in vitro fertilization (IVF) assays in (H, I). Representative images in (H) display the two-cell stage, which is quantified as % of total eggs in the assay and displayed as bar graphs in (I) as an indication of successful fertilization. Results are presented as average ± SEM of three independent studies conducted on sperm isolated from three mice. Statistical significance was assessed using one-way ANOVA including a Tukey’s test for multiple comparisons. ****p<0.0001, nsp>0.05 (Figure 7—source data 3).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69160/elife-69160-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Bar graphs display the fold change in cAMP in mouse sperms in the presence (+) or absence (-) of various treatments (Figure 7—figure supplement 1—source data 1). (B) Acrosomal reaction was analyzed in TAT-GIVCT-transduced mouse sperms exposed to either DMSO control or the calcium ionophore A23186 or progesterone using CD46 as a marker of inner acrosomal membrane (IAM) as outlined in Figure 7D. Bar graph presented here shows the proportion of partially reacted sperms in each treatment group. All results are presented as average ± SEM. Statistical significance was assessed using one-way analysis of variance (ANOVA) followed by Tukey’s test for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 (Figure 7—source data 2).
 
 Next we assessed the effect of GIV-GEM on acrosome exocytosis under the same conditions, that is, capacitation followed by AR, as we did in (Figure 4D,E), using a highly sensitive immunofluorescence-based assay that monitors the progressive exposure during AR of the inner acrosomal membrane protein, CD46 (Carver-Ward et al., 1997; Frolikova et al., 2016) (a.k.a. membrane cofactor protein [MCP]; Figure 7D). At 15 min after exposure to 10 µM A23186 or 100 µM progesterone, the TAT-GIV-WT, but not TAT-GIV-FA-transduced sperm had more intact acrosomes (Figure 7E) and fewer completely reacted acrosomes (Figure 7F). These results indicate that AR in response to both A23186 and progesterone was suppressed by TAT-GIV-WT, but not the GEM-deficient FA mutant. Instead, the FA mutant peptide had a higher proportion of sperm that completed AR.
 
@@ -99,7 +127,7 @@ These findings demonstrate that GIV is sufficient to inhibit cAMP surge and AR, 
 
 Taken together, these findings indicate that GIV-GEM inhibits cAMP surge and AR to primarily prevent both events from occurring prematurely in vivo until in the presence of an egg for successful fertilization.
 
-## Conclusions
+### Conclusions
 
 The major discovery we report here is a role of GPCR-independent (hence, non-canonical) G protein signaling in the sperm that is mediated by GIV/Girdin. Expressed most abundantly in the testis, and primarily in sperm, GIV is required for male fertility, and low GIV transcripts in men were invariably associated with infertility. We show that GIV is rapidly phosphomodulated on key tyrosine and serine residues in a manner segregated in space and time in various segments of the sperm (head, mid-piece, and tail) during capacitation and acrosomal reaction. These specific phosphomodifications, which are known to regulate GIV’s interactions with other key proteins (PI3K, Gαi/s proteins, etc.) and its functions as an effector of multiple TKs, as a cytoskeletal remodeler, and as a signal transducer, regulate key sperm phenotypes in at least two sperm compartments (summarized in Figure 8). First, in the sperm head, GIV’s GEM activity is induced upon capacitation. Once activated, GIV modulates both Gαi/s via the same GEM motif to suppress premature cAMP surges downstream of ligand-activated Gi/Gs-coupled GPCRs. Consequently, GIV-GEM inhibits premature acrosome shedding. Because both premature AR or failure to do so are important causes of male infertility (Liu et al., 2006), deciphering the signaling events that precisely regulate the timing of acrosome exocytosis has remained one of the most challenging and unresolved questions concerning mammalian reproductive biology (Buffone et al., 2014). Despite emerging evidence in the last decade that has challenged the long-held paradigms in the field, and mechanistic insights into sperm-extrinsic factors responsible for premature AR (Sánchez-Cárdenas et al., 2021; Balestrini et al., 2021; Harper et al., 2004), the identity of sperm-intrinsic pathways/processes/proteins that inhibit premature acrosome exocytosis was unknown. Our conclusion that GIV-GEM serves as a ‘brake’ for cAMP surge and prevents AR is consistent with the fact that the PDE-inhibitor sildenafil citrate (Viagra) increases cAMP to cause premature acrosomal reaction (Glenn et al., 2007). It is noteworthy that although canonical G protein signaling that is triggered by ligand-activated GPCRs has been implicated in the activation/inhibition of mACs and cAMP signaling in the sperm head (Adeoya-Osiguwa et al., 2006; Schaefer et al., 1998; Flegel et al., 2016), the role of non-canonical G protein we report here was never recognized previously. Because GIV is most highly expressed in sperm, the cAMP-regulatory role of GIV-GEM we define here implies that it may fulfill a major role in the regulation of cAMP in the sperm head. pYGIV was also detected in the sperm head, but its role in AR was not studied here. Because pYGIV activates class 1 PI3K, it is possible that the pYGIV→PI3K axis at that location could also influence rapid lipid phosphorylations that are also known to regulate AR (Cohen et al., 2016).
 
@@ -113,19 +141,281 @@ In conclusion, our results provide evidence that GIV may perform different roles
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GIV (Girdin) (T-13)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-133371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal diagnostic grade anti-Girdin/GIV antibody</td>
+      <td>Custom; Sprint Bioscience</td>
+      <td>SP173</td>
+      <td>Validated in prior publication Ghosh et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GIV (Girdin) (CC-Ab)</td>
+      <td>Millipore Sigma</td>
+      <td>ABT80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GIV pS1675 Ab</td>
+      <td>Custom, from 21t Century Biosciences</td>
+      <td>n/a</td>
+      <td>Validated in prior publication Bhandari et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GIV pS1689 Ab</td>
+      <td>Custom, from 21st Century Biosciences</td>
+      <td>n/a</td>
+      <td>Validated in prior publication López-Sánchez et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-GIV pY1764 Ab</td>
+      <td>Custom, Spring Biosciences Inc</td>
+      <td>n/a</td>
+      <td>Validated in prior publications Midde et al., 2015; Lin et al., 2011; Midde et al., 2018; Dunkel et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-pT308 AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>D9E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-total AKT</td>
+      <td>Cell Signaling Technology</td>
+      <td>40D4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-sp56</td>
+      <td>Thermo Fisher Scientific (Waltham, MA)</td>
+      <td>MA1-10866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti- human hexokinase 1/2 monoclonal antibody</td>
+      <td>R&amp;D Systems, (Minneapolis, MN)</td>
+      <td>MAB8179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho-PKA substrate (RRXS*/T*)100G7E</td>
+      <td>Cell Signaling Technology</td>
+      <td>9624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, Alexa Fluor 594 conjugated</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A11072</td>
+      <td>For immunofluorescence (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG, Alexa Fluor 488 conjugated</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A11017</td>
+      <td>For immunofluorescence (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-mouse IgG secondary (1:10,000)</td>
+      <td>LI-COR Biosciences</td>
+      <td>926-32210</td>
+      <td>For immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD goat anti-rabbit IgG secondary (1:10,000)</td>
+      <td>LI-COR Biosciences</td>
+      <td>926-68071</td>
+      <td>For immunoblotting</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>UbcCre-Ert2/+ xCcdc88afl/fl andCcdc88afl/fl mice</td>
+      <td>Masahide Takahashi (Nagoya University Graduate School of Medicine, Nagoya, Japan)</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>WT and GIV-cKO (conditional KO) mice</td>
+      <td>This work</td>
+      <td>UbcCre-Ert2/+ xCcdc88afl/fl (experimental group), and UbcCre-Ert2/ Cre-Ert2 x Ccdc88afl/fl (control group)</td>
+      <td>This work; male</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J mice (male and female)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock number: 000664; Bar Harbor, ME</td>
+      <td>Male: source of sperm for biochemical, immunohistochemical, peptide transduction, and functional assaysFemale: for co-housing studies; source for eggs for IVF assays</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Paraformaldehyde 16%</td>
+      <td>Electron Microscopy Biosciences</td>
+      <td>15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MTT</td>
+      <td>Millipore Sigma</td>
+      <td>475989-1GM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI (4',6-Diamidino-2-Phenylindole, Dilactate)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D3571</td>
+      <td>Used in IF studies for staining DNA/nucleus</td>
+    </tr>
+    <tr>
+      <td>Kit/reagent</td>
+      <td>HisPurä Cobalt Resin</td>
+      <td>Thermo Scientific</td>
+      <td>89964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kit/reagent</td>
+      <td>Glutathione Sepharoseâ 4B</td>
+      <td>Sigma-Aldrich</td>
+      <td>GE17-0756-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tyr phosphatase inhibitor cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ser/Thr phosphatase inhibitor cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>P0044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PVDF Transfer Membrane, 0.45 mM</td>
+      <td>Thermo Scientific</td>
+      <td>88518</td>
+      <td>Used for transfer in immunoblots</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Countess II Automated Cell Counter</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>AMQAX1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Leica TCS SPE Confocal</td>
+      <td>Leica Microsystems</td>
+      <td>TCS SPE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Light Microscope (brightfield images)</td>
+      <td>Carl Zeiss LLC</td>
+      <td>Axio Observer, Inverted; 491917-0001-000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>National Institute of Health</td>
+      <td>https://imagej.net/Welcome</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LAS-X</td>
+      <td>Leica</td>
+      <td>https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageStudio Lite</td>
+      <td>LI-COR</td>
+      <td>https://www.licor.com/bio/image-studio-lite/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Contact for reagent and resource sharing: Pradipta Ghosh (prghosh@ucsd.edu).
 
-## Human subjects
+### Human subjects
 
 Human sperm were collected from volunteers via masturbation, liquefied at room temperature for 30 min, and subsequently washed with TYH media before being exposed to non-capacitating (NC) TYH media or capacitating conditions (C) TYH plus 5 mg/ml of BSA and 15 mm NaHCO3 for 4 hr at 37°C and 5% CO2, as described previously (Munné and Estop, 1993). The study proposal was approved by Institutional Review Board of University of California, San Diego (UCSD human subjects IRB protocol #16027, Gagneux). All samples were deidentified before use in studies. A written informed consent was obtained before participating in study. Consent to publish aggregate data with subject’s anonymity was obtained. The study design and the use of human study participants were conducted in accordance to the criteria set by the Declaration of Helsinki.
 
-## Mice
+### Mice
 
 UbcCre-Ert2/+ + Ccdc88afl/fl and Ccdc88afl/fl mice were generously provided by Dr. Masahide Takahashi (Nagoya University Graduate School of Medicine, Nagoya, Japan). Males UbcCre-Ert2/+ × Ccdc88afl/fl were bred to females Ccdc88afl/fl to generate UbcCre-Ert2/+ × Ccdc88afl/fl (experimental group), and UbcCre-Ert2/Cre-Ert2 × Ccdc88afl/fl (control group) mice. Genotyping was performed by PCR, and only male mice were used in this study. Wildtype female C57BL/6 mice were purchased from The Jackson Laboratory (stock number: 000664; Bar Harbor, ME). All mice were housed in standard cages in an Association for Accreditation and Assessment of Laboratory Animal Care-approved animal facility at the University of California San Diego School of Medicine. This study was approved by the UCSD Institutional Animal Care and Use Committee (protocol #S17223; Ghosh), which serves to ensure that all federal guidelines concerning animal experimentation are met.
 
 For all biochemical, immunofluorescence, peptide transduction, and functional studies, the source of sperms was C57BL/6J mice, which were bred and housed under another protocol, which was also approved by the UCSD Institutional Animal Care and Use Committee (protocol #S16223; Gagneux).
 
-## Reagents and antibodies
+### Reagents and antibodies
 
 All reagents were of analytical grade and obtained from Sigma-Aldrich (St. Louis, MO) unless otherwise stated.
 
@@ -133,64 +423,83 @@ The affinity-purified anti-pS1689-GIV and pS1674-GIV were generated commercially
 
 Goat anti-rabbit and goat anti-mouse Alexa Fluor 680 or IRDye 800F (ab0)2 used for immunoblotting were from LI-COR Biosciences (Lincoln, NE). Goat anti-rabbit Alexa Fluor 488 and goat anti-mouse Alexa Fluor 594 for immunofluorescence were purchased from Life Technologies.
 
-## IHC of mouse testes
+### IHC of mouse testes
 
 Mouse testes were fixed in zinc paraformaldehyde to prepare FFPE tissue blocks. Tissue sections of 4 μm thickness were cut and placed on glass slides coated with poly-L-lysine, followed by deparaffinization and hydration. Heat-induced epitope retrieval was performed using sodium citrate buffer (pH 6) in a pressure cooker. Tissue sections were incubated with 3% hydrogen peroxidase for 10 min to block endogenous peroxidase activity, followed by incubation with primary antibody overnight in a humidified chamber at 4°C. Antibodies used for immunostaining were SP173 rabbit monoclonal, anti-GIV antibody. Immunostaining was visualized with a labeled streptavidin–biotin using 3,3′-diaminobenzidine as a chromogen and counterstained with hematoxylin.
 
-## Source of live mouse and human sperms
+### Source of live mouse and human sperms
 
 Mouse sperm suspension were obtained from cauda epididymis of mature male (9 weeks old) placed in 1 ml NC buffer prewarmed at 38.1°C for 25 min in siliconized/low-adhesion microfuge tubes. The caudae epididymis was cut to let the spermatozoa swim out. The microfuge tube was agitated on an orbital shaker for 10 min to facilitate the swim out of the sperm. The tubes were then placed upright on a bench top, and the epididymal tissues were allowed to settle for 10 min. The sperm suspension was then removed from the top, and an aliquot was taken to ensure purity and for counting (∼99%).
 
 Human ejaculates were collected from volunteers via masturbation after 1 week of abstinence under UCSD human subject protocol (UCSD human subjects IRB protocol #16027, Gagneux). After liquefaction at room temperature, 1 ml ejaculate was transferred into the bottom of 1 ml prewarmed NC buffer and incubated for additional 1 hr to swim up procedure. Highly motile sperm mobilized to the upper layer was collected for the experiment.
 
-## In vitro capacitation and induction of the AR
+### In vitro capacitation and induction of the AR
 
 Freshly obtained human and mouse sperms were segregated into low-motile and high-motile populations using ‘swim-up’ technique. Subsequently highly motile sperms were capacitated in TYH buffer containing 5 mg/ml BSA and 15 mM NaHCO3 at 37°C under 5% CO2 for the indicated time mentioned in figure legends. Sperms were both lysed in reducing sample buffer for immunoblotting and fixed in 3% paraformaldehyde for immunofluorescence staining. Acrosomal reaction in sperm was triggered by incubating capacitated sperm either with Ca2+ ionophore or progesterone for the indicated time at 37°C in 5% CO2. Sperm were then fixed and co-stained for peanut agglutinin (PNA-488; green, an acrosomal marker) and either pYGIV, or pSerGIV and DAPI.
 
-## Confocal immunofluorescence
+### Confocal immunofluorescence
 
 Sperms were fixed with 3% paraformaldehyde in PBS for 25 min at room temperature, treated with 0.1 M glycine for 10 min, and subsequently blocked/permeabilized with PBS containing 1% BSA and 0.1% Triton X-100 for 20 min at room temperature. Primary and secondary antibodies were incubated for 1 hr at room temperature in PBS containing 1% BSA and 0.1% Triton X-100. Dilutions of antibodies used were as follows: GIV (1:500); phospho-GIV (Tyr1764; 1:500); phospho-pan-Tyr (1:500); α-tubulin (1:500); phosphor-GIV (Ser1674; 1:500); phosphor-GIV (Ser1689; 1:500); Peanut agglutinin (PNA) (1:500); His (1:500) and DAPI (1:2000). Secondary Alexa conjugated antibodies were used at 1:500 dilutions.
 
 In the case of frozen sections of mouse testes, the protocol used was as follows: cryosections were washed three times with PBS, followed by 0.15% glycine for 10 min at room temperature and incubated for 20 min in blocking buffer (1% BSA in PBS), then 2 hr in primary antibodies and 45 min in secondary antibodies. Dilutions of antibodies used were as follows: GIV (1:500); phospho-GIV (Tyr1764; 1:250); ZP3R (1:500); DAPI (1:1000). Secondary Alexa conjugated antibodies were used at 1:250 dilutions. Sperms and sections were imaged on a Leica SPE confocal microscope using a 63× oil objective using 488, 561, 633, and 405 laser lines for excitation. The settings were optimized, and the final images scanned with line-averaging of 3. All images were processed using ImageJ software (NIH) and assembled for presentation using Photoshop and Illustrator software (Adobe).
 
-## Dual-color quantitative immunoblotting
+### Dual-color quantitative immunoblotting
 
 Protein samples were separated by SDS/PAGE and transferred to PVDF membranes (Millipore). Membranes were blocked with PBS supplemented with 5% nonfat milk (or with 5% BSA when probing for phosphorylated proteins) before incubation with primary antibodies. Infrared imaging with two-color detection and quantification were performed using a LI-COR Odyssey imaging system. Primary antibodies were diluted as follows: anti-His 1:1000; anti-GIV (tGIV) 1:500; anti-phospho-Tyr-1764-GIV (pYGIV) 1:500; anti-phospho-Tyr (pan pY) 1: 500; anti-phospho-PKA 1: 500; anti-hexokinase 1:1000; anti-phospho-Akt (Thr308) 1:500; anti-Akt 1:500; anti-β-tubulin 1:1000. All Odyssey images were processed using ImageJ software (NIH) and assembled for presentation using Photoshop and Illustrator software (Adobe).
 
-## His-TAT purification and transduction in sperms
+### His-TAT purification and transduction in sperms
 
 Cloning of TAT-GIV-CT-WT and TAT-GIV-CT-FA mutant has been described (Ma et al., 2015). TAT-constructs were expressed using BL21(DE3)-pLysS (Invitrogen) and Terrific Broth (BioPioneer) supplemented with additives as per auto-induction protocols outlined by Studier, 2005. Briefly, cultures of bacteria were grown at 300 rpm at 37°C for 5 hr, then at 25°C overnight. Cells were lysed in 10 ml of lysis buffer containing 20 mM Tris, 10 mM imidazole, 400 mM NaCl, 1% (vol:vol) sarkosyl, 1% (vol:vol) Triton X-100, 2 mM DTT, 2 mM Na3oV4 and protease inhibitor mixture (Roche Diagnostics), pH 7.4, sonicated (3 × 30 s), cleared at 12,000× g for 20 min at 4°C and affinity-purified on Ni-NTA agarose resin (Qiagen) (4 hr at 4°C). Proteins were eluted in elution buffer containing 20 mM Tris, 300 mM imidazole, 400 mM NaCl, pH 7.4, dialyzed overnight against TBS containing 400 mM NaCl and stored at −80°C.
 
 TAT transduction in sperms was performed by incubating them with 400–800 nM TAT-GIV-CT peptides for 30 min. Efficiency uptake was measured by flow cytometry. Different batches of TAT-GIV-CT protein preparations were used for optimization of equal uptake of recombinant TAT-GIV-CT WT and FA peptides. Optimization steps included timing of transduction, wash step, and concentrations of each peptide used to ensure that WT and FA peptides are equal in sperm. The recombinant protein that showed the most efficient uptake was subsequently used in four different mouse sperm samples to document consistent uptake test by western blotting, by FACS and immunofluorescence, and finally, to confirm that GIV peptides retain functionality (G protein binding) upon uptake.
 
-## CASA system
+### CASA system
 
 Freshly obtained sperms were segregated into low-motile and high-motile populations using ‘swim-up’ technique and highly motile sperms were subsequently capacitated in TYH buffer containing 5 mg/ml BSA and 15 mM NaHCO3 along with TAT-GIV-CT peptides at 37°C under 5% CO2 for 3 hr. The sperm motility and progressive motility were measured on CASA on a Hamilton Thorne IVSO-CASA (Berns Laboratory, UC San Diego).
 
-## Measurement of sperm cAMP level
+### Measurement of sperm cAMP level
 
 Mouse sperms at a density of 2 × 107 cells/ml (6 × 106 cells in total) were first peptide transduced with TAT-GIV-CT for 30 min, washed gently with PBS three times to remove excess peptides before their use in cAMP assays. Peptide-transduced sperms were pre-incubated with 0.5 mM isobutyl methyl xanthine (IBMX) prior to exposure to various chemicals at the following final concentrations: 25 mM NaHCO3, 0.1 mM adenosine, or 100 µM. After mixing with the respective stimulus, the samples were incubated for 30 min at 37°C, followed by the addition of 0.25 M HCl (final concentration) to quench the biochemical reactions. After incubation for 30 min at room temperature, cell debris was sedimented by centrifugation at 3000 g for 5 min at room temperature. The cAMP concentration in the supernatant was determined by a competitive enzyme immunoassay according to the product manual (catalog # ADI-900-066, Enzo Life Sciences).
 
-## Tamoxifen treatment and natural mating
+### Tamoxifen treatment and natural mating
 
 4–5-week-old mice experimental or control mice received an intraperitoneal (i.p.) tamoxifen injection 1 mg/100 µl/mouse/day (Millipore Sigma, St. Louis, MO) solubilized in 100% corn oil for five consecutive days. Ccdc88a gene knockout (GIV-knockout) was confirmed using DNA qPCR as described in our previous study (Swanson et al., 2020). Mice were then housed for 3 weeks with random females to promote mating with the intent to discharge sperms in which tamoxifen has not yet induced Cre expression.
 
 After 3 weeks, each male mouse was housed with three 7–8-week-old C57BL/6 fertile females for 3 months. The frequency of successful live births and the litter size was recorded. After 3 months, experimental and control males were sacrificed, and testicles and epididymis were collected for IHC, immunoblotting, and mRNA analysis.
 
-## Transcriptomic datasets from infertile patients
+### Transcriptomic datasets from infertile patients
 
 Publicly available microarray (GSE4797 Feig et al., 2007, E-TABM-234 Feig, 2008, GSE6872 Platts et al., 2007, GSE26881 Pacheco et al., 2011) and RNASeq dataset (GSE103905 Winge et al., 2018) were downloaded from the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus website (GEO) and ArrayExpress. The data was processed using the Hegemon data analysis framework repositories for male infertility (Sahoo, 2012; Sahoo et al., 2008; Sahoo et al., 2010). Microarray datasets (GSE4797; GSE6872; GSE26881; E-TMAB-234) were normalized using robust multi-array average (RMA). RNA-sequencing dataset (GSE103905) was normalized using transcripts per millions (TPM) normalization method; for downstream analyses, log2(TPM) if TPM >1 and (TPM – 1) if TPM <1 is used. Distribution of gene expression values is illustrated using boxplots and mean as circle with 95% confidence intervals as arrows. Numbers on top indicate the p values, which were derived from Welch’s t-test. All semen samples mentioned in the above datasets were classified based on WHO (2010) guidelines for semen parameters (Cooper et al., 2010).
 
-## Total RNA isolation
+<table>
+  <thead>
+    <tr>
+      <th>WHO (2010) guidelinesCooper et al., 2010(Semen parameters)</th>
+      <th>Motility (%)</th>
+      <th>Morphology (%)</th>
+      <th>Concentration (106/ml)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fertile individual</td>
+      <td>≥40</td>
+      <td>≥4</td>
+      <td>≥15</td>
+    </tr>
+  </tbody>
+</table>
+
+### Total RNA isolation
 
 Total RNA from mouse testicles were isolated using the Direct-zol RNA Miniprep Kit (Zymo Research, Irvine, CA) following the manufacturer’s instructions. RNA concentration was measured using the NanoDrop One (ThermoScientific, Waltham, MA). The RNA Integrity Number (RIN) was assessed using the 4200 TapeStation system and the TapeStation RNA ScreenTape & Reagents (Agilent Technologies, Santa Clara, CA).
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 Total RNA samples were submitted to the IGM Genomics Center (University of California San Diego) for library preparation and sequencing. mRNA stranded sequencing libraries were generated with the TruSeq Stranded mRNA Sample Prep Kit with TruSeq Unique Dual Indexes (Illumina, San Diego, CA). Resulting libraries were multiplexed and sequenced with 100 bp paired-end reads (PE100) to a depth of approximately 30 million reads per sample on an Illumina NovaSeq 6000. Samples were demultiplexed using bcl2fastq v2.20 Conversion Software (Illumina).
 
 To determine which genes were differentially expressed in WT and GIV-knockout mice testes, transcript-level abundance of paired-end RNA-seq data was estimated by Salmon (1.1.0) using the mouse transcriptome from Genecode (vM24). Tximport (1.14.2) was used to aggregate transcript-level quantification to the gene level. The resulting gene counts were used as an input to DESeq2 Bioconductor package. Differentially expressed genes below a Benjamini-Hochberg (BH)-adjusted p-value of 0.05 were considered significant. Also, all genes differentially expressed were included in REACTOME pathway enrichment analysis. Statistically significant pathways of upregulated and downregulated DEGs are listed in the table and bar plots of upregulated and downregulated enriched pathways. In Gene Set Enrichment Analysis (GSEA) analysis, some fertility-related gene sets from Molecular Signatures Database (MSigDB) were tested. Genes from these gene sets were used to rank order the samples and test for GIV-knockout versus WT phenotype classification using the area under the curve (AUC) receiver operating characteristics (ROC) curve and displayed such classification using violin plots.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance between datasets with three or more experimental groups was determined using one-way analysis of variance (ANOVA) followed by Tukey’s test for multiple comparisons. Unpaired t-test is used to test the statistical difference between two experimental groups. For all tests, a p-value>0.05 is considered as significant. All experiments were repeated at least three times. All statistical analyses were performed using GraphPad Prism 9.

@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/032w6q449 Laboratoire Matière et Systèmes Complexes, UMR 7057 CNRS & Université Paris Diderot, 10 rue Alice Domon et Léonie Duquet Paris France
-2. https://ror.org/029brtt94 Laboratoire de Biologie et Modélisation de la Cellule, Ecole Normale Supérieure de Lyon, CNRS, UMR 5239, Inserm, U1293, Université Claude Bernard Lyon 1, 46 allée d'Italie F-69364 Lyon France
-3. https://ror.org/04t0gwh46 Laboratoire Physico Chimie Curie, UMR168, Institut Curie, 16 rue Pierre et Marie Curie, 75005 Paris France
+1. Laboratoire Matière et Systèmes Complexes, UMR 7057 CNRS & Université Paris Diderot, 10 rue Alice Domon et Léonie Duquet Paris France ([ROR:032w6q449](https://ror.org/032w6q449))
+2. Laboratoire de Biologie et Modélisation de la Cellule, Ecole Normale Supérieure de Lyon, CNRS, UMR 5239, Inserm, U1293, Université Claude Bernard Lyon 1, 46 allée d'Italie F-69364 Lyon France ([ROR:029brtt94](https://ror.org/029brtt94))
+3. Laboratoire Physico Chimie Curie, UMR168, Institut Curie, 16 rue Pierre et Marie Curie, 75005 Paris France ([ROR:04t0gwh46](https://ror.org/04t0gwh46))
 
 † Corresponding author
 
@@ -35,33 +35,77 @@ The adaptation to hyperosmotic stress in the budding yeast Saccharomyces cerevis
 
 When external osmolarity increases, accumulation of intracellular glycerol is required to restore the cellular osmotic balance (Hohmann, 2002). At the molecular level, osmotic stress signaling is orchestrated by a mitogen-activated protein kinase (MAPK) cascade, which culminates in double phosphorylation and nuclear accumulation of the MAPK protein Hog1p and differential regulation of hundreds of genes (Saito and Posas, 2012; Gasch et al., 2000). In particular, GPD1 (NAD-dependent glycerol-3-phosphate dehydrogenase), a key enzyme involved in the production of glycerol from glucose, is upregulated after hyperosmotic stress (Figure 1a). Phosphorylated Hog1p also triggers several processes in the cytoplasm that are essential for osmoregulation (Muzzey et al., 2009; Petelenz-Kurdziel et al., 2013), including cell cycle arrest (Escoté et al., 2004; Clotet et al., 2006; Duch et al., 2013). Dynamically, the HOG pathway behaves as a low-pass filter that drives (perfect) adaptation through at least two layers of feedback loops that allow for deactivation of the pathway (Muzzey et al., 2009) (transcriptionally and within the cytoplasm). Notably, the HOG pathway can be hyper-activated when stimulated at high frequencies, which drastically slows down the cell cycle (Mitchell et al., 2015). Although very informative—and an excellent example of how biological and physical concepts can be combined to obtain a comprehensive description of gene regulatory network dynamics—these studies were carried out in a glucose-rich environment, which insulates metabolic needs from osmotic stress adaptation requirements. Glucose is not only needed for growth, but also for production of glycerol and the transcriptional feedback loop that deactivates the HOG pathway (Babazadeh et al., 2017; Muzzey et al., 2009); thus, cells may employ a decision mechanism to share glucose internally between these processes, particularly when glucose is scarce, or its availability fluctuates. More generally, despite the known importance of the metabolic state in cellular adaptation to stress, the systemic interactions between cellular maintenance, growth, and stress responses remain unexplored.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig1-v1.jpg)
+
+**Figure 1.:** (a) Overview of the hyperosmotic stress response in yeast. Both glucose deprivation and osmotic stress lead to cell cycle arrest—through different molecular mechanisms. Yeast cells maintain osmotic equilibrium by regulating the intracellular concentration of glycerol. Glycerol synthesis is regulated by the activity of the HOG MAP kinase cascade that acts both in the cytoplasm (fast response) and on the transcription of target genes in the nucleus (long-term response). For simplicity, we only represented on the figure genes and proteins involved in this study. (b) Sketch of the microfluidic setup used to generate a time-varying environment and achieve time-lapse imaging of yeast cells. Bright-field and fluorescence images are captured every 6 min at 25 positions for 12‒24 hr depending on the experiment. Nuclei expressing HTB2-mCherry fusion protein are segmented and tracked over time to compute the cell division rate as a function of time. Scale bar represents 10 μm. (c–f) The four periodically varying environments used in this study. (c) Periodic osmotic stress: cells are periodically exposed to hyperosmotic stress (1 M sorbitol) in a constant glucose environment (2% or 0.1%). (d) Periodic glucose deprivation: environment alternates between presence and absence of glucose. (e) In-phase stresses (IPS): periodic exposure to glucose in absence of hyperosmotic stress followed by glucose depletion with hyperosmotic stress (1 M sorbitol). (f) Alternating stress (AS): periodic exposure to glucose with hyperosmotic stress (1 M sorbitol), followed by glucose depletion without hyperosmotic stress. (c–f). Hatching represents stress; blue indicates presence of sorbitol; orange, presence of glucose.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Design of the microfluidic device used in this study. Cells are trapped in five sets of five growth chambers (400×400×3.8 µm3 each) located in the center of the polydimethylsiloxane (PDMS) chip. Each set of five growth chambers is connected to two flow channels to allow rapid diffusion of the medium inside the chambers. The dynamics and composition of media can be independently controlled for each set. The pattern of the microfluidic device (at scale) is shown on the left, with a close-up caption of a growth chamber shown on the top right. A transverse view (out of scale) along the black dotted line is shown on the bottom right. (b) Images showing fluorescence dynamics in a growth chamber after fluorescein (50 nM) is added (top row) or removed (bottom row) from the medium. Blue and red circles show the two positions where fluorescence was quantified in (c–e). Scale bars represent 50 µm. (c) Quantification of fluorescence dynamics during periodic switches between SC medium with and without fluorescein. (d) Relative fluorescence measured during 350 s after switching the valve from medium without fluorescein to medium with fluorescein. (e) Relative fluorescence measured during 350 s after switching the valve from medium with fluorescein to medium without fluorescein. Data shown in (d) and (e) are also shown in (c) (same experiment). (c–e) Fluorescence was quantified both in the flow channel (red line) and in the middle of the growth chamber (blue line). Fluorescence is expressed on a relative scale (see Materials and methods) to focus the comparison on the temporal dynamics instead of the absolute fluorescence level (the fluorescence intensity is much lower in the growth chamber because it is thinner than the flow channel). Acquisition of bright-field and fluorescence images was performed once every 12 s.
+
 We address this question by monitoring the growth of yeast cells subjected to periodic variations in both osmolarity and glucose availability. To determine how resource allocation impacted cell growth, we compared two regimes of dual fluctuations that differed in the phasing of hyperosmotic stress and glucose deprivation. We showed that cell division rates, death rates, and biological responses at the signaling and transcription levels are different when cells are exposed simultaneously (in-phase stresses [IPS]) or alternatively (alternating stresses [AS]) to glucose deprivation and hyperosmotic stress. Therefore, yeast responses to osmotic stress are regulated by the presence of external glucose, indicating that the metabolic environment is a key factor when quantitatively assessing stress response dynamics. More globally, our study suggests that applying dual periodic perturbations is a powerful method to probe cellular dynamics at the system level and, more specifically, to clarify the role of the metabolic environment in the dynamics of cellular decision-making.
 
 ## Results
 
-## A microfluidic system to study the interaction between two environmental dynamics
+### A microfluidic system to study the interaction between two environmental dynamics
 
 We used a custom microfluidic device to monitor the growth of yeast cells exposed to periodic environmental fluctuations for up to 24 hr. Cells were imaged every 6 min in microfluidic chips containing five independent sets of channels connected to five growth chambers (Figure 1b; Figure 1—figure supplement 1), allowing five different conditions per experimental run, with five technical replicates for each condition. Computer-controlled fluidic valves were programmed to generate temporal fluctuations of the media dispensed to cells with rapid transitions (<2 min) from one medium to another (Figure 1—figure supplement 1). The rate of cell division was then quantified using automated image analyses (see Materials and methods). With this experimental system it is possible to determine not only how temporal fluctuations of individual parameters of the environment (e.g. a repeated stress or carbon source fluctuations) impact cell proliferation but also what are the impacts of the dynamic interactions of two environmental parameters. Here, we specifically study how periodic fluctuations of a metabolic resource (glucose concentration switching between 0% and either 2% or 0.1% wt/vol) and osmotic stress (sorbitol concentration switching between 0 and 1 M) interact to alter the proliferation of yeast cells (Figure 1).
 
-## Division rate correlates negatively with the frequency of osmotic stress but positively with the frequency of glucose availability
+### Division rate correlates negatively with the frequency of osmotic stress but positively with the frequency of glucose availability
 
 To determine how the temporal dynamics of osmotic stress altered cell proliferation, we first measured the division rate of yeast cells exposed to fluctuations between 1 M sorbitol and no sorbitol at periods ranging from 12 to 480 min. In these experiments the time-averaged osmotic concentration was constant (i.e. cells were exposed to 1 M sorbitol half of the time in all conditions), which is important when studying the effects of the frequency, and not intensity, of osmotic stress on cell dynamics. The average division rate strongly decreased as the frequency of osmotic shock increased (Figure 2a), both in 2% glucose (2.2-fold reduction of division rate between periods of fluctuation T=192 min and T=12 min) and in 0.1% glucose (3.8-fold reduction of division rate between periods of fluctuation T=192 min and T=12 min). These results are consistent with findings from Mitchell et al., 2015, who attributed the drastic decrease in cellular growth observed at high frequency of osmotic shocks to overactivation of the HOG pathway. However, we also observed a clear negative relationship between the frequency of hyperosmotic stress and the division rate of HOG pathway mutants (Figure 2—figure supplement 3), indicating that the growth slowdown was not only explained by overactivation of the HOG pathway. The temporary reduction of division rate observed in response to a hyperosmotic shock in wild-type (Figure 2e–f; Figure 2—figure supplement 1; Figure 2—figure supplement 2a-c) and mutant (Figure 2—figure supplement 3) cells could also contribute to the negative relationship between division rate and frequency of osmotic stress. This negative relationship and the fact that cellular growth can rapidly recover after exposure to high osmolarity (Figure 2e–f) both indicate that yeast cells are more sensitive to repeated than persistent hyperosmotic stress.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig2-v1.jpg)
+
+**Figure 2.:** (a, b) Impact of the frequency of periodic osmotic stress (a) and glucose deprivation (b) on the average division rate. Each dot shows the mean division rate measured in 2 to 5 different growth chambers of the microfluidic chip. Error bars are 95% confidence intervals of the mean. Colored dotted lines are Loess regressions obtained using a smoothing parameter of 0.66. Colored areas represent 95% confidence intervals of the regression estimates. Gray dashed lines show the average division rate in the absence of sorbitol (no osmotic stress) in 2% glucose (top line) and dash-dotted lines show half this average division rate (bottom line). (c) Overlay of the Loess regressions shown in (a) and (b) at 2% glucose. The frequency and division rate at which the two regression curves intersect are highlighted by vertical and horizontal black dotted lines. (d) Temporal dynamics of the division rate of cells exposed to sustained hyperosmotic stress (purple lines, 1 M sorbitol added at t=0 min) or to standard conditions (orange lines) with 2% glucose (darker lines) or 0.1% glucose (lighter lines). Each curve represents the ‘instantaneous’ division rate calculated every 6 min across sliding windows of 36 min (see Materials and methods) and averaged for cells imaged at 2 to 10 positions in the microfluidic chip. (e, f) Cell division rates measured (e) from 0 to 100 min and (f) from 100 to 300 min after the addition of 1 M sorbitol. Triangles represent the average division rate measured in different growth chambers of the microfluidic chips. Error bars are 95% confidence intervals of the mean division rate among growth chambers. The initial number of cells analyzed among replicates ranged from 75 to 372 in (a), from 58 to 342 in (b), and from 220 to 776 in (d–f).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a–d) Temporal dynamics of division rate as shown in Figure 2d but with confidence intervals and individual data points. Colored lines are the same as in Figure 2d. Colored areas represent 95% confidence intervals of the average division rate. Colored dots show the average division rate measured every 6 min (not averaged across sliding windows) among all growth chambers exposed to the same medium. Horizontal dotted lines show the average division rate measured between 100 and 300 min after medium switching (i.e. after adaptation to the new medium) in the absence (orange) or presence (purple) of osmotic stress. Vertical dotted lines show time t=0 when the medium was changed in the microfluidic chip. (b, d) Gray areas represent the cost in cell divisions of one sustained hyperosmotic shock (1 M sorbitol) in (b) 2% glucose or (d) 0.1% glucose. The initial number of cells analyzed among replicates ranged from 220 to 776.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In each plot, division rates measured over several consecutive periods of environmental fluctuations are averaged in a single period: each dot shows the average division rate during a 6 min window centered on that dot for all fields of view sharing the same condition and for all periods in the experiment (average of 9 to 70 measurements per dot). (a–c) Temporal dynamics of division rate during fluctuations of osmotic stress (1 M sorbitol) with periods of 48 min (a), 96 min (b), and 192 min (c). (d–f) Temporal dynamics of division rate during glucose fluctuations (from 2% glucose to 0% glucose) with periods of 48 min (d), 96 min (e), and 192 min (f). Gray areas are 95% confidence intervals of the mean division rate. Horizontal dotted lines show the mean division rate for all data collected in each half-period. The colored bars represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue); hatching represents stress.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Division rates of the wild-type strain and of seven deletion mutants in four steady conditions. Bars show the mean division rate measured among growth chambers sharing the same environmental condition. Error bars are 95% confidence intervals of the mean. Dark dots show the average division rate for each field of view. Colors represent the different environmental conditions indicated at the bottom. (b, c) Temporal dynamics of division rate of (b) pbs2Δ mutant cells and (c) hog1Δ mutant cells under sustained hyperosmotic stress (purple line, 1 M sorbitol added at t=0 min) or in standard condition with 2% glucose (orange line). Each curve represents the ‘instantaneous’ division rate calculated every 6 min across sliding windows of 36 min (see Materials and methods) and averaged for cells imaged at several positions in the microfluidic chip. Colored areas represent 95% confidence intervals of the average division rate. Colored dots show the average division rate measured every 6 min (not averaged across sliding windows) among all growth chambers exposed to the same medium. Horizontal dotted lines show the average division rate measured between 100 and 300 min after medium switching (i.e. after adaptation to the new medium) in the absence of osmotic stress. Vertical dotted lines show the time t=0 when the medium was changed in the microfluidic chip. (d–f) Relationship between the frequency of osmotic stress and division rate for (d) hog1Δ, (e) ste11Δ, and (f) pbs2Δ mutant cells. Data collected for each mutant strain are shown in blue, while data collected for the wild-type strain (yPH_132) are shown in gray as reference. Each dot shows the mean division rate measured among 4 to 13 different growth chambers exposed to the same condition. Error bars are 95% confidence intervals of the mean. Dotted lines are Loess regressions obtained with a smoothing parameter of 0.66. Filled areas represent 95% confidence intervals of the regression estimates. The initial number of cells analyzed among replicates ranged from 77 to 1753 in (a), from 75 to 386 in (d), from 75 to 539 in (e), and from 53 to 386 in (f).
 
 Next, we wondered whether the frequency of a different type of environmental fluctuation would also affect cell division rate. To answer this question, we quantified the division rate of cells exposed to periodic transitions between a medium without carbon source and the same medium complemented with either 0.1% or 2% glucose at periods ranging from 12 to 480 min. In contrast to the negative effect of osmotic stress frequency, we observed a positive relationship between the frequency of glucose availability and division rate (Figure 2b): cells divided faster when glucose availability fluctuated rapidly (0.0051 division/min at a fluctuation period T=12 min, corresponding to a doubling time of 136 min) than slowly (0.0027 division/min at a fluctuation period T=192 min, corresponding to a doubling time of 257 min). However, this behavior was only observed in 2% glucose: the frequency of glucose availability did not significantly impact the division rate in 0.1% glucose (Figure 2b). Under periodic fluctuations of 2% glucose, the division rate was lower during half-periods without glucose than during half-periods with glucose (Figure 2—figure supplement 2), as expected. However, this difference depended on the frequency of glucose fluctuations: the average division rate during half-periods without glucose was higher at high frequency (small period) than at low frequency (large period) of fluctuations (Figure 2—figure supplement 2). Therefore, the effect of the frequency of glucose availability on the division rate in 2% glucose is likely due to a delay between glucose removal and growth arrest: cell proliferation never stops when the frequency of glucose depletion is too fast.
 
 Overall, we observed two opposing patterns of cell proliferation when we varied the temporal dynamics of the metabolic environment and external osmolarity. The division rates were highest for low-frequency sorbitol fluctuations (0.0064 division/min at a fluctuation period T=384 min) and high-frequency 2% glucose fluctuations (0.0051 division/min at a fluctuation period T=12 min); both of these values are close to the division rate in constant 2% glucose (0.0066 division/min). Therefore, with respect to their division rate, cells behave as a low-pass filter for osmotic stress but as a high-pass filter for glucose fluctuations. Moreover, the division rate is similar when the frequencies of glucose availability and sorbitol exposure are both equal to 0.039 min–1 (intersection of the two curves on Figure 2c), corresponding to a period of 26 min and a division rate of 0.004 division/min. Since current models of the hyperosmotic stress response do not consider interactions with glucose metabolism, whether simultaneous fluctuations of glucose availability and osmotic stress affect cell growth additively or synergistically remains an open question. More generally, characterizing how cells respond to the dynamic phasing of two environmental components is fundamental for understanding how a living system can adapt to complex environmental changes. For these reasons, we next used our microfluidic system to quantify the division rate of cells exposed to dual periodic fluctuations of glucose availability and osmotic stress.
 
-## Division rate depends on the phasing of the two stresses
+### Division rate depends on the phasing of the two stresses
 
 To determine whether glucose availability during hyperosmotic stress impacted cell growth in dynamic conditions, we compared cell division rates under two regimes of dual periodic fluctuations that only differed in the phasing of glucose and sorbitol fluctuations. In the ‘IPS’ regime, glucose depletion and 1 M sorbitol stresses were applied simultaneously for half a period followed by the addition of 2% (or 0.1%) glucose and the removal of sorbitol for the other half of each period of fluctuations (Figure 1e). In the ‘AS’ regime, glucose depletion and 1 M sorbitol were applied alternatively for half a period each (Figure 1f). We first subjected cells to dual fluctuations at a period of 24 min with 2% glucose, corresponding approximately to the period at which the division rate was the same when we only varied glucose availability or osmolarity (Figure 2c). Under both IPS and AS conditions, the division rate was more than twofold lower than under periodic fluctuations of only glucose or sorbitol (Figure 3a), showing that dual environmental fluctuations have a non-additive, synergistic impact on cell growth. Strikingly, cells divided about twice as fast under IPS condition (1.67×10–3 division/min, corresponding to an average doubling time of 415 min) than under AS condition (9.4×10–4 division/min, corresponding to an average doubling time of 737 min) when the fluctuation period was 24 min (t-test, p=1.35 × 10–5; Figure 3a, Figure 3—figure supplement 1a and b) or 96 min (2.98×10–3 division/min in IPS vs 1.83×10–3 division/min in AS; p=4.10 × 10–5; Figure 3b). A similar pattern of faster growth was observed under IPS and AS conditions when we used 0.1% glucose instead of 2% glucose, for both a fluctuation period of 24 min (0.84×10–3 division/min under IPS vs 0.54×10–3 division/min under AS; t-test, p=8.03 × 10–5; Figure 3—figure supplement 1c) and 96 min (2.24×10–3 division/min under IPS vs 1.17×10–3 division/min under AS; t-test, p=6.80 × 10–3; Figure 3—figure supplement 1d). Cells also displayed strikingly different temporal dynamics of division rates under IPS and AS conditions (Figure 3c and d). Under IPS condition, the division rate fluctuated largely over time: after the transition to 2% glucose, the division rate quickly increased to reach a plateau (4.86×10–3 division/min on average during the half-period with 2% glucose); after the transition to 1 M sorbitol in the absence of glucose, cell division was greatly slowed down (1.34×10–3 division/min during the half-period without glucose). In contrast, the division rate remained much more constant over time under AS condition: the average division rate was 1.69×10–3 division/min during the half-period with 2% glucose and 1 M sorbitol and 1.89×10–3 division/min during the half-period without glucose and sorbitol. Therefore, cells appear to use glucose more efficiently for growth under IPS than AS conditions. Collectively, these results further demonstrate that the timing of both glucose availability and osmotic stress matters: cells grow more slowly when facing periodic alternation of the two stresses (AS) than when facing periodic co-occurrence of these stresses (IPS).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig3-v1.jpg)
+
+**Figure 3.:** (a, b) Division rates measured in four fluctuating conditions with a period of 24 min and a glucose concentration of 2% (20 g/L). The four conditions are periodic glucose deprivation, periodic osmostress, in-phase stresses (IPS), and alternating stresses (AS). Bars represent mean division rates among different growth chambers. Error bars are 95% confidence intervals of the mean. Red symbols show the average division rate in each growth chamber, with different symbols representing experiments performed on different days with different microfluidic chips. Mean division rates were compared between IPS and AS conditions using t-tests (***p<0.001). (c, d) Temporal dynamics of division rate during a period of 96 min in (c) IPS and (d) AS conditions for wild-type cells. Each dot shows the average division rate during a 6 min window centered on that dot for all fields of view sharing the same condition and for all periods in the experiment (average of 16 to 30 measurements per dot). Gray areas are 95% confidence intervals of the mean division rate. Horizontal dotted lines show the mean division rate for all data collected in each half-period. The colored bars represent the periodic fluctuations in glucose (orange) and/or sorbitol (blue); hatching represents stress. (a–d) Cells were grown under fluctuations of 2% glucose and 1 M sorbitol. The initial number of cells analyzed among replicates ranged from 124 to 318 in (a) and from 94 to 342 in (b–d).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Accumulation of new cells as a function of time under IPS condition (periodic growth in medium with 2% glucose for 12 min, followed by medium without glucose and with 1 M sorbitol for 12 min). (b) Accumulation of new cells as a function of time under AS condition (periodic growth in medium with 2% glucose and 1 M sorbitol for 12 min, followed by medium without glucose or sorbitol for 12 min). (a, b) Dots show the cumulative number of new cells over the total number of cells in one field of view as a function of time. The average cell division rate was calculated at the slope of the regression line (red line). Vertical colored bars show the timing of media switches (orange: 2% glucose and no sorbitol; blue: no glucose+1 M sorbitol; purple: 2% glucose+1 M sorbitol; white: no glucose and no sorbitol). (c, d) Mean cell division rate under fluctuations of 1 M sorbitol and/or 0.1% glucose with a period of (c) 24 min or (d) 96 min. The four conditions are periodic glucose deprivation, periodic osmostress, IPS, and AS. Bars represent the mean division rate among different growth chambers. Error bars are 95% confidence intervals of the mean. Red symbols show the mean division rate for each growth chamber (field of view), with different symbols representing data from experiments performed on different days with different microfluidic chips. t-Tests were performed to compare the mean division rate between IPS and AS conditions (**0.001≤p<0.01; ***p<0.001). Colored graphs are used to represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue) in the medium; hatching represents stress. The initial number of cells analyzed among replicates ranged from 149 to 306 in (c) and from 83 to 136 in (d).
+
 The slower cell division rate observed under AS when compared to IPS could be explained by the allocation of intracellular glucose to the osmotic stress response under AS when cells are exposed to glucose and sorbitol simultaneously, leaving less glucose available for growth. Indeed, in response to hyperosmotic stress glycerol is synthesized from a glycolysis intermediate (DHAP) derived from glucose (Norbeck et al., 1996). Under this hypothesis, glucose would only be fully allocated to growth in the absence of hyperosmotic stress, which occurred under IPS but not AS.
 
-## Slowdown of cell proliferation under AS is independent of HOG pathway activity
+### Slowdown of cell proliferation under AS is independent of HOG pathway activity
 
 To test the hypothesis that the allocation of glucose toward glycerol synthesis explained the slower division rate observed under AS relative to IPS, we compared the division rate of mutants with impaired glycerol regulation under IPS and AS conditions. These mutant strains carried deletions of HOG1 (HOG pathway MAPK), PBS2 (MAPKK upstream of Hog1p), STE11 (MAPKKK upstream of Pbs2p), FPS1 (aquaglyceroporin regulated by Hog1p), GPD1 (glycerol-3-phosphate dehydrogenase regulated transcriptionally and post-transcriptionally by the HOG pathway) or GPD2 (paralog of GPD1). As expected, these mutants showed no growth defect in the absence of hyperosmotic stress and most mutants showed decreased division rates when exposed to constant hyperosmotic stress (Figure 2—figure supplement 3). At a fluctuation period of 24 min, the division rate was significantly lower under AS than IPS for almost all mutants (hog1Δ, pbs2Δ, gpd1Δ, gpd2Δ, gpd1Δ; gpd2Δ and fps1Δ) both with fluctuations of 2% glucose (Figure 4a) and 0.1% glucose (Figure 4—figure supplement 1a). However, the ste11Δ mutant exhibited similar division rates under AS and IPS (Figure 4a). At a fluctuation period of 96 min, the division rates of the two mutants we tested, ste11Δ and pbs2Δ, were significantly lower under AS than IPS (Figure 4—figure supplement 1b and c). In addition, the temporal dynamics of division rates were similar for the wild-type strain, pbs2Δ mutant (Figure 4b and c) and ste11Δ mutant (Figure 4—figure supplement 1d and e). In conclusion, mutations known to reduce intracellular accumulation of glycerol did not attenuate the growth differences that we observed in the wild-type strain between IPS and AS conditions. Therefore, allocation of glucose toward glycerol synthesis during hyperosmotic stress is not responsible for the lower division rate observed under AS than IPS.
 
-## No evidence for a specific role of glucose starvation, glycogen storage, or stress-induced arrest of the cell cycle in the reduced division rate observed during AS
+![Figure 4.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig4-v1.jpg)
+
+**Figure 4.:** (a) Division rates measured during growth in IPS and AS conditions with 2% glucose and a fluctuation period of 24 min. Bars show the mean division rate measured in different growth chambers of the microfluidic chip. Error bars are 95% confidence intervals of the mean. Red symbols show the average division rate in each growth chamber. Results of t-tests comparing the wild-type and mutant strains under the same condition are indicated above each bar; results comparing the same strain under different conditions are shown above each pair of bars (ns: p>0.05; *0.01<p<0.05; **0.001<p<0.01; ***p<0.001). (b, c) Temporal dynamics of division rate during a period of 96 min in (b) IPS and (c) AS conditions for wild-type (black) and pbs2Δ mutant (green) cells. Each dot shows the division rate during a 6 min window centered on that dot and averaged for all fields of view sharing the same condition and all periods in the experiment (average of 16 to 30 measurements per dot). Gray and green areas are 95% confidence intervals of the mean division rate. Horizontal dotted lines show the mean division rate for all data collected in each half-period. The colored bars represent the periodic fluctuations in glucose (orange) and/or sorbitol (blue); hatching represents stress. The initial number of cells analyzed among replicates ranged from 97 to 467 in (a) and from 124 to 145 in (b, c).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a–c) Division rate of deletion mutants during growth in IPS and AS conditions with (a) a period of 24 min and 0.1% glucose, (b) a period of 96 min and 2% glucose, and (c) a period of 96 min and 0.1% glucose. Bars show the mean division rate among growth chambers sharing the same environmental conditions. Error bars are 95% confidence intervals of the mean. Red symbols show the average division rate for each growth chamber. Results of t-tests comparing the wild-type and mutant strains under the same conditions are indicated above each bar; results comparing the same strain under different conditions are shown above each pair of bars (ns: p>0.05; *0.01<p<0.05; **0.001<p<0.01; ***p<0.001). (d, e) Temporal dynamics of division rate during a period of 96 min in (b) IPS and (c) AS conditions for wild-type (black) and ste11Δ mutant (green) cells. Each dot shows the division rate during a 6 min window centered on that dot and averaged for all fields of view sharing the same condition and all periods in the experiment (average of 16 to 30 measurements per dot). Gray and green areas are 95% confidence intervals of the mean division rate. Horizontal dotted lines show the mean division rate for all data collected in each half-period. The colored bars represent the periodic fluctuations in glucose (orange) and/or sorbitol (blue); hatching represents stress. The initial number of cells analyzed among replicates ranged from 22 to 411 in (a), from 94 to 626 in (b), and from 67 to 206 in (c).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The period of environmental fluctuations is 24 min in all conditions. Bars show the mean division rate among growth chambers sharing the same environmental conditions. Error bars are 95% confidence intervals of the mean. Red symbols show the average division rate for each growth chamber. Results of t-tests comparing the wild-type and mutant strains under the same conditions are indicated above each bar; results comparing the same strain under different conditions are shown above each pair of bars (ns: p>0.05; **0.001<p<0.01; ***p<0.001). The initial number of cells analyzed among replicates ranged from 14 to 120.
+
+### No evidence for a specific role of glucose starvation, glycogen storage, or stress-induced arrest of the cell cycle in the reduced division rate observed during AS
 
 We next tested alternative hypotheses to understand why cells grew slower under AS than IPS condition. Glucose starvation was previously shown to induce fast inhibition of transcription (Jona et al., 2000) and translation initiation (Ashe et al., 2000; Joyner et al., 2016), leading to cell growth reduction. This phenomenon may explain the slower division rate observed in AS condition than in IPS condition, because rapid arrest of the cell cycle after glucose starvation could have smaller impact on global division rate when occurring concurrently (IPS) rather than alternatively (AS) with hyperosmotic stress that also leads to fast growth reduction. We tested this hypothesis by growing wild-type cells under IPS and AS conditions with galactose instead of glucose as a carbon source, because transcriptional and translational inhibition was not observed after galactose starvation in previous studies (Ashe et al., 2000; Jona et al., 2000). We observed a significant reduction of division rate under AS condition relative to IPS condition when using galactose as a carbon source, similar to what we observed in glucose (Figure 4—figure supplement 2). Therefore, fast inhibition of transcription and translation occurring after glucose starvation but not after galactose starvation does not contribute significantly to the slower growth in AS condition.
 
@@ -69,17 +113,29 @@ Yeast cells accumulate carbohydrate reserves such as glycogen to cope with nutri
 
 Third, we tested the impact of point mutations in the cyclin inhibitor Sic1p on division rates in AS and IPS conditions. In response to hyperosmotic shock, residue 173 of Sic1p is phosphorylated by Hog1p, resulting in Sic1p stabilization and cell cycle arrest at the G1 phase (Escoté et al., 2004). Since hyperosmotic stress and glucose starvation both lead to cell growth arrest, cell division is expected to halt twice more frequently when hyperosmotic stress and glucose starvation are applied alternatively than when they are applied simultaneously, which could lead to the difference of division rates observed between AS and IPS conditions in a way that depends on Sic1p regulation. However, sic1(T173A) mutant cells (unphosphorylatable Sic1p) and sic1(T172E) mutant cells (constitutive Sic1p stabilization) showed a similar decrease of division rate in AS condition relative to IPS condition as observed in wild-type cells (Figure 4—figure supplement 2). The mechanism(s) responsible for the lower division rate in AS condition relative to IPS condition therefore remain(s) elusive.
 
-## Cell death depends on the dynamics of the two stresses
+### Cell death depends on the dynamics of the two stresses
 
 We noticed a high proportion of wild-type cells dying under AS (Figure 5a): some cells suddenly burst with their nucleus staying in the growth chamber, others became opaque and stopped growing with their nucleus remaining completely still (the nucleus of living cells wobbled over time). These death events mostly occurred within minutes of the transition from medium containing 2% glucose and 1 M sorbitol to medium without glucose and sorbitol (Figure 5—figure supplement 1d), suggesting cell lysis occurred due to hypo-osmotic shock following removal of 1 M sorbitol. Cell death was less frequent under IPS than AS conditions for the wild-type strain (Figure 5a–c), even though the frequency of hypo-osmotic shock was the same in the two conditions (Figure 5—figure supplement 1c and d). We reasoned this could be due to lower intracellular accumulation of glycerol under IPS, when hyperosmotic stress is applied in the absence of glucose. Under AS, the presence of glucose during hyperosmotic stress could lead to faster intracellular accumulation of glycerol, resulting in stronger hypo-osmotic shock and cell lysis when the sorbitol concentration suddenly drops. Several pieces of evidence support this hypothesis. First, the rate of cell death should be reduced in mutants with lower glycerol synthesis. Indeed, we observed significantly lower rates of cell death for all mutants tested (ste11Δ, hog1Δ, pbs2Δ, gpd1Δ, gpd2Δ and gpd1Δ; gpd2Δ) relative to the wild-type strain under AS, but not under IPS for which glycerol synthesis is frustrated even in wild-type cells due to the absence of glucose during hyperosmotic stress (Figure 5c). In particular, the death rate decreased from 2.4×10–3 min–1 for wild-type to 5.2×10–5, 3.4×10–4, and 3.5×10–4 min–1, respectively, for the hog1Δ, pbs2Δ, and gpd1Δ; gpd2Δ mutants under AS when the fluctuation period was 24 min. A similar pattern was observed for the pbs2Δ mutant when the fluctuation period was 96 min (Figure 5—figure supplement 1a), although the reduction in the death rate was less pronounced than for the period of 24 min. Conversely, we observed a higher death rate for the fps1Δ mutant (3.5×10–3 min–1) under AS (Figure 5c), which is consistent with higher intracellular accumulation of glycerol in this mutant lacking the Fps1 aquaglyceroporin channel involved in glycerol export. Over a 10 hr AS experiment with a fluctuation period of 24 min, the death rate was lowest at the beginning of the experiment and was maximal during the last 5 hr of the experiment (Figure 5—figure supplement 1e). However, when the AS fluctuation period was 96 min, the maximum death rate occurred earlier (and stopped increasing after the second period) and the dynamics of cell death remained constant over multiple periods of osmotic fluctuation (Figure 5—figure supplement 1f). Again, these observations are consistent with cell death being due to glycerol accumulation, since it takes time for cells to accumulate an amount of glycerol sufficient to cause bursting after hypo-osmotic shock.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig5-v1.jpg)
+
+**Figure 5.:** (a, b) Images of wild-type (a) and pbs2Δ mutant (b) cells before (t=0 min) and after (t=600 min) growth in IPS (left) and alternating stress (AS) (right) conditions. Fluorescence and bright-field images were merged to visualize nuclei marked with HTB2-mCherry. White arrows indicate nuclei of representative dead cells. Scale bars represent 10 µm. (c, d) Death rates (c) and population growth rates (d) of the reference strain and seven deletion mutants under IPS and AS conditions. Population growth rates were calculated as the difference between division rates (Figure 4b) and death rates (c). Bars show mean rates measured in different growth chambers. Error bars are 95% confidence intervals of the mean. Red symbols show the average rate for each field of view. Results of t-tests comparing the wild-type and mutant strains under the same conditions are indicated above each bar; results comparing the same strain under different conditions are shown above each pair of bars (ns p>0.05; *0.01<p<0.05; **0.001<p<0.01; ***p<0.001). The initial number of cells analyzed among replicates ranged from 97 to 467 in (c, d). (a–d) Cells were grown under fluctuations of 2% glucose and 1 M sorbitol at a period of 24 min.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Death rates and (b) population growth rates (calculated as the difference between the division rate and death rate) in in-phase stress (IPS) (dark gray) and AS (light gray) conditions with a period of 96 min and 2% glucose. (a, b) Bars show the mean values measured among different growth chambers sharing the same environmental condition. Error bars are 95% confidence intervals of the mean. Red symbols show the average death rate or population growth rate for each growth chamber. Results of t-tests comparing the wild-type and mutant strains under the same conditions are indicated above each bar; results comparing the same strain under different conditions are shown above each pair of bars (ns, p>0.05; **0.001<p<0.01; ***p<0.001). (c, d) Temporal dynamics of death rate averaged across all 96 min periods of growth in (c) IPS and (d) AS conditions for wild-type (black) and pbs2Δ mutant (green) cells. Each dot shows the death rate during a window of 6 min centered on that dot and averaged across all fields of view sharing the same conditions and among all periods in the experiment (average of 18 to 30 measurements per dot). Gray and green areas are 95% confidence intervals of the mean division rate. Horizontal dotted lines show the mean death rate among all data collected in each half-period (i.e. in each medium since the medium is changed at the start and the middle of each period [vertical dotted line]). Colored graphs are used to represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue) in the medium; hatching represents stress. (e, f) Average death rates measured at six intervals of time in IPS (dark gray) and AS (light gray) conditions at a period of (e) 24 min or (f) 96 min. Bars show the mean death rate measured in different growth chambers sharing the same conditions. Error bars are 95% confidence intervals of the mean. Red symbols show the average death rate for each field of view and time interval.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Death rates in constant 2% glucose with repeated addition and removal of 1 M sorbitol at a period of 24 min. (b) Death rates in in-phase stress (IPS) (dark gray) and alternating stress (AS) (light gray) conditions with a period of 24 min and 2% glucose. (a, b) Bars show the mean death rates measured among different growth chambers sharing the same environmental condition. Error bars are 95% confidence intervals of the mean. Red symbols show the average death rate for each growth chamber. Results of t-tests comparing the wild-type and mutant strains under the same conditions are indicated above bars (ns, p>0.05; *0.01<p<0.05; **0.001<p<0.01; ***p<0.001). The initial number of cells analyzed among replicates ranged from 14 to 120.
+
 Bonny et al., 2021, showed that sic1 mutants (sic1Δ and sic1(T173A)) could adapt faster than wild-type cells to a hyperosmotic shock at the expense of increased cell death under repeated osmotic stresses. Consistent with their finding, we observed higher death rate of sic1(T173A) and sic1(T173E) mutant cells during repeated exposure to 1 M sorbitol at a period of 24 min in constant 2% glucose (Figure 5—figure supplement 2a). Surprisingly, we did not observe an increased death rate of these mutants under AS and IPS conditions (Figure 5—figure supplement 2b), when both hyperosmotic stress and glucose availability fluctuated periodically over time. In fact, under AS condition, the death rate of sic1(T173A) cells was even lower than the death rate of wild-type cells. Under this condition, the particularly low division rate of sic1(T173A) cells may lead to strengthened cell wall, decreasing the probability of cell bursting after hypo-osmotic shocks.
 
-## HOG pathway mutants are fitter than wild-type cells under fast AS
+### HOG pathway mutants are fitter than wild-type cells under fast AS
 
 The rates of cell division and cell death both contribute to fitness (i.e. the adaptive value) of a genotype in a particular environment. Since HOG pathway mutants exhibited different cell division and death rates compared to the wild-type genotype under AS, we calculated the population growth rate (division rate minus death rate) as a fitness estimate. Under IPS, the population growth rates of most mutant strains and of the wild-type strain were not significantly different; the only exception being the slightly lower growth rate of the ste11Δ mutant (Figure 5d). However, under AS with a fluctuation period of 24 min, several mutants had higher population growth rates than the wild-type strain (Figure 5d). In fact, the population growth rate was negative for the wild-type strain (–1.4×10–3 min–1) as cells died faster than they divided and positive for the hog1Δ mutant (1.0×10–3 min–1) and pbs2Δ mutant (5.5×10–4 min–1). These differences are clear in the microscopy images, as the population of wild-type cells visually shrank over time under AS (Figure 5a), while the population of pbs2Δ cells clearly expanded (Figure 5b). Thus, the hog1Δ and pbs2Δ genotypes are better adapted and would quickly outcompete wild-type cells under these dynamic conditions. However, this is only true when the frequency of environmental fluctuations is sufficiently high, since we did not observe significant differences in the population growth rate between the wild-type and pbs2Δ mutant under AS when the fluctuation period was 96 min (Figure 5—figure supplement 1b). We conclude that mutants that were first characterized by an inability to adapt to prolonged hyperosmotic stress can be well adapted when hyperosmotic stress rapidly fluctuates in antiphase with glucose availability. Therefore, the genetic mechanisms that contribute to adaptation under steady-state conditions could be detrimental under dynamic conditions, highlighting the importance of investigating how organisms adapt to dynamically changing environments.
 
-## Osmoregulation is impaired under IPS but not under AS
+### Osmoregulation is impaired under IPS but not under AS
 
 The ability of cells to sense environmental fluctuations and to execute an adaptive response has been mainly studied using fluctuations of one stress cue at a time. How cells sense and respond to dual fluctuations of two interacting stresses remains a fundamental open question to understand how cells cope with complex environmental dynamics. Our findings suggest that the cell response to dual stress fluctuations can be very different depending on the phasing of the two stresses. Indeed, yeast cells appear to accumulate more glycerol under AS than under IPS. This could be either because of an impaired ability of cells to sense hyperosmotic shocks in absence of glucose or because of an impaired capacity to respond to hyperosmotic shocks in absence of glucose. Glycerol synthesis is regulated by the HOG pathway; thus, we investigated whether the activity of this pathway differed under IPS and AS conditions.
 
@@ -87,15 +143,23 @@ In the presence of glucose, activation of the HOG pathway in response to hyperos
 
 In contrast, enrichment of Hog1-GFP fluorescence in nuclei was observed within minutes after exposure to 1 M sorbitol under both AS (Figure 6a) and IPS (Figure 6b). Therefore, cells can sense hyperosmotic shock, activate the HOG MAPK cascade, and phosphorylate Hog1 MAP kinase both in the presence (AS) and absence (IPS) of glucose. However, the adaptation dynamics of Hog1p (i.e. its exit from the nucleus) were remarkably different (Figure 6a–c): under AS, nuclear enrichment of Hog1-GFP peaked at 6 min following hyperosmotic shock and then quickly decayed and became undetectable after 30 min (Figure 6a and c)—essentially the same dynamics observed under periodic fluctuations of osmotic stress without glucose fluctuations (Figure 6—figure supplement 1a). Under IPS conditions, nuclear enrichment also peaked 6 min after hyperosmotic shock, but Hog1-GFP returned to the cytosol much more slowly; strong nuclear enrichment was still observed 48 min after exposure to hyperosmotic stress in the absence of glucose (Figure 6b and c). When the hyperosmotic stress was released, Hog1-GFP returned to the cytosol in less than 12 min.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig6-v1.jpg)
+
+**Figure 6.:** (a, b) Time-lapse images of cells expressing Htb2-mCherry and Hog1-GFP under AS (a) and IPS conditions (b) for periods of 96 min, showing cellular localization of Hog1p during the second osmotic shock in each experiment. Top: fluorescence and bright-field images merged to visualize cell nuclei tagged with histone HTB2-mCherry. Bottom: fluorescence images showing Hog1-GFP localization. The time since the last environmental change is indicated below each image. Scale bars represent 10 µm. (c) Temporal dynamics of the enrichment of Hog1-GFP fluorescence in cell nuclei under IPS (red curve) and AS (green curve) conditions. Colored areas indicate 95% confidence intervals. (d) Temporal dynamics of cell size (area) in IPS (green) and AS (red) conditions for the same cells as in panel (c). Each curve shows the mean area measured among cells. Colored areas indicate 95% confidence intervals of the mean. (c, d) Each curve shows the mean nuclear enrichment or mean cell size for 11–25 cells in one or two fields of view. The colored graphs represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue); hatching represents stress; gray indicates exposure to 1 M sorbitol. (a–d) Cells were grown under fluctuations of 2% glucose and 1 M sorbitol at a period of 96 min.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a, b) Nuclear enrichment of Hog1-GFP fluorescence over time under (a) alternating stresses (red), periodic osmotic stress in constant glucose (blue), and periodic glucose fluctuations in absence of osmotic stress or (b) a single osmotic shock in presence (brown) or absence (blue) of 2% glucose. Each curve shows the mean nuclear enrichment of GFP fluorescence measured for 11‒97 cells from one to seven fields of view. Colored areas indicate 95% confidence intervals of the mean. The colored graphs represent the periodic fluctuations of 2% glucose (orange) and/or 1 M sorbitol (blue) in the medium; hatching represents stress.
+
 To determine whether Hog1-GFP eventually returns to the cytoplasm during hyperosmotic stress in the absence of glucose, we applied a single pulse of 1 M sorbitol without glucose for 4 hr. Nuclear enrichment of Hog1-GFP reached basal levels about 2 hr after the onset of hyperosmotic stress (Figure 6—figure supplement 1b). The delayed exit of Hog1-GFP out of the nucleus under IPS suggests that the activity of the feedback loop regulating Hog1p dephosphorylation is impaired in the absence of glucose. We hypothesized that delayed nuclear export of Hog1-GFP under IPS could be due to impaired osmoregulation. In support of this hypothesis, we observed no recovery of cell size during hyperosmotic stress under IPS conditions (Figure 6d). Cells only returned to their initial size when sorbitol was removed and glucose was added back to the medium, which also corresponded to the moment when Hog1-GFP returned to the cytosol. In contrast, under AS, both the recovery of cell size and nuclear export of Hog1-GFP occurred while cells were still exposed to hyperosmotic stress (Figure 6), showing that osmoregulation was not impaired under these conditions. These results suggest glucose is necessary for the rapid osmoregulation that usually occurs in the first 20 min following hyperosmotic stress. This fast osmoregulation has been proposed to rely on the induction of glycerol synthesis via Hog1p-dependent post-translational mechanisms (Schaber et al., 2012). Since glucose is a metabolic precursor of glycerol, the absence of glucose may prevent glycerol synthesis and thereby fast osmoregulation. Further work will be necessary to test this hypothesis and study how glucose stored in the cell is used (or not) for glycerol production.
 
-## Transcriptional response is impacted by the interaction between two environmental dynamics
+### Transcriptional response is impacted by the interaction between two environmental dynamics
 
 Temporal fluctuations of two different stresses may have different or even opposite effects on gene expression, raising the question of how dual fluctuations of these two stresses would affect gene expression. Fast periodic fluctuation of osmotic stress was previously shown to cause hyper-activation of the STL1 promoter (PSTL1) regulated by Hog1p (Mitchell et al., 2015), while glucose depletion is known to inhibit transcription (Jona et al., 2000) and translation initiation (Ashe et al., 2000; Janapala et al., 2019). We therefore asked whether dual fluctuations of glucose depletion and osmotic stress had additive effects on PSTL1 expression or whether one of the dynamic cues had a dominant effect. To address this question, we quantified the expression dynamics of a PSTL1-mCitrine fluorescent reporter gene under IPS and AS conditions. As expected, we observed transient expression of PSTL1-mCitrine in response to both short (48 min) and long (10 hr) pulses of 1 M sorbitol (Figure 7): the mean fluorescence level peaked at a 2.8-fold change 115 min after exposure to a short sorbitol pulse and 2.4-fold change 122 min after a long sorbitol pulse; then, fluorescence gradually returned to basal levels, even when osmotic stress was maintained. This expression pattern is consistent with previous quantifications of PSTL1 transcriptional activity during hyperosmotic stress (Wosika and Pelet, 2020; Ben Meriem et al., 2019). When hyperosmotic shocks were periodically applied for 48 min every 96 min, PSTL1-mCitrine expression constantly increased to reach 10.2-fold change after 11 hr (Figure 7b), suggesting a lack of adaptation to repeated osmotic shocks. Interestingly, hyper-activation of PSTL1-mCitrine transcription was also observed under AS conditions where PSTL1-mCitrine expression reached a maximum of 4.1-fold change after 413 min and remained as high as 3.1-fold change after 11 hr under the AS regime with a fluctuation period of 96 min (Figure 7a and b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88750/elife-88750-fig7-v1.jpg)
 
-**Figure 7.:** (a) Images of cells expressing a fluorescent reporter (mCitrine) under control of the STL1 promoter known to be regulated by the HOG pathway. Rows correspond to different conditions (as indicated on the left) and columns correspond to different time points after transitioning from complete medium to each condition. Bright-field and fluorescence images are overlaid. Scale bar represents 20 µm. (b, c) Temporal dynamics of P expression in five conditions: IPS (green curves), AS (red curve), periodic osmotic stress with constant glucose (brown curve), a single transition to constant osmotic stress with glucose for 10 hr (blue curve), and a short pulse of osmotic stress with constant glucose (purple curve). The fluctuation period is 96 min in (STL1-mCitrineb) and 24 min in (c) for the first three conditions. 2% Glucose was used in all conditions. Each curve shows the mean fold change of fluorescence intensity measured for 30–65 cells from four or five fields of view. Colored areas indicate 95% confidence intervals of the mean. The colored graphs represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue); hatching represents stress; gray indicates exposure to 1 M sorbitol.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (a) Images of cells expressing a fluorescent reporter (mCitrine) under control of the STL1 promoter known to be regulated by the HOG pathway. Rows correspond to different conditions (as indicated on the left) and columns correspond to different time points after transitioning from complete medium to each condition. Bright-field and fluorescence images are overlaid. Scale bar represents 20 µm. (b, c) Temporal dynamics of PSTL1-mCitrine expression in five conditions: IPS (green curves), AS (red curve), periodic osmotic stress with constant glucose (brown curve), a single transition to constant osmotic stress with glucose for 10 hr (blue curve), and a short pulse of osmotic stress with constant glucose (purple curve). The fluctuation period is 96 min in (b) and 24 min in (c) for the first three conditions. 2% Glucose was used in all conditions. Each curve shows the mean fold change of fluorescence intensity measured for 30–65 cells from four or five fields of view. Colored areas indicate 95% confidence intervals of the mean. The colored graphs represent the periodic fluctuations of glucose (orange) and/or sorbitol (blue); hatching represents stress; gray indicates exposure to 1 M sorbitol.
 
 Conversely, we observed much weaker and slower induction of PSTL1-mCitrine expression under IPS: the maximal fold change was 0.7 after 11 hr of IPS with a fluctuation period of 96 min (Figure 7a and b). We observed a similar pattern (i.e. faster, stronger induction of PSTL1-mCitrine under AS than IPS) when the fluctuation period was 24 min (Figure 7c). Therefore, the STL1 promoter is not activated by hyperosmotic stress in the absence of glucose, despite nuclear translocation of the MAP kinase Hog1p. This result suggests that the global repression of expression in response to abrupt glucose starvation is dominant over the hyper-activation of PSTL1 transcriptional activity induced by periodic osmotic stress.
 
@@ -113,13 +177,353 @@ Overall, we anticipate the importance of extending our study of the interaction 
 
 All materials produced in this study are available upon request.
 
-## Yeast strains
+### Yeast strains
 
 All S. cerevisiae strains used in this study are derived from BY4741 or BY4742 (Brachmann et al., 1998) and are listed in Tables 1 and 2. The reference strain yPH_132 expresses the mCherry fluorescent reporter fused to histone H2B to label cell nuclei. To obtain this strain, the mCherry_pAgTEF-KanMX4-tAgTEF linear DNA fragment was amplified from plasmid pYM35 (PCR_TOOLBOX collection from EUROSCARF). This DNA fragment was inserted at the HTB2 locus in strain BY4741 using a classic LiAc transformation protocol (Gietz and Woods, 2002) and a clone resistant to G418 was stored at –80°C as strain yPH_132.
 
+**Table 1.**
+ Genotype of yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Genotype</th>
+      <th>Mating type</th>
+      <th>Background</th>
+      <th>Reference or source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>yPH_132</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>BY4741</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_015</td>
+      <td>HTB2::mCherry-Ura3 HOG1-GFP</td>
+      <td>a</td>
+      <td>BY4741</td>
+      <td>Our team</td>
+    </tr>
+    <tr>
+      <td>yPH_091</td>
+      <td>pSTL1::yECITRINE-HIS5 his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0 Hog1::mCherry-hph</td>
+      <td>alpha</td>
+      <td>BY4742</td>
+      <td>Uhlendorf et al., 2012https://doi.org/10.1073/pnas.1206810109</td>
+    </tr>
+    <tr>
+      <td>yPH_051</td>
+      <td>pGPD1::YFP</td>
+      <td>a</td>
+      <td>BY4741</td>
+      <td>Gift from Megan McClean</td>
+    </tr>
+    <tr>
+      <td>yPH_403</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF pbs2Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_405</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF fps1Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_412</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF gpd1Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_414</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF gpd2Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_421</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF gpd1Δ gpd2Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_441</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF hog1Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_445</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF ste11Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_452</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF glc3Δ his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_482</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF sic1(T173A) his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>yPH_486</td>
+      <td>HTB2::HTB2-mCherry_pTEF-KanMX4-tTEF sic1(T173E) his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>a</td>
+      <td>yPH_132</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Oligonucleotides used to generate gene deletions and point mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Primer name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">pbs2Δ(yPH_403)</td>
+      <td>sgRNA_PBS2_F</td>
+      <td>GATCAATCAAAGCGAGCAAGACAAGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_PBS2_R</td>
+      <td>CTAGCTCTAAAACTTGTCTTGCTCGCTTTGATT</td>
+    </tr>
+    <tr>
+      <td>Deletion_PBS2_F</td>
+      <td>CGTCATACAACTAAAACTGATAAAGTACCCGTTTTTCCGTACATTTCTATAGATACATTATTATATTAAGCAGATCGAGACGTTAATTTC</td>
+    </tr>
+    <tr>
+      <td>Deletion_PBS2_R</td>
+      <td>GTAGCTTTTCGTCTGCTTTTTTTTTGTTGTTATATTCACGTGCCTGTTTGCTTTTATTTGGATATTAACGGAAATTAACGTCTCGATCTG</td>
+    </tr>
+    <tr>
+      <td>Seq_PBS2_F</td>
+      <td>GCTTACCTGCTTGCCGGAAG</td>
+    </tr>
+    <tr>
+      <td>Seq_PBS2_R</td>
+      <td>CTATAACGAGTATAATGCAAG</td>
+    </tr>
+    <tr>
+      <td rowspan="6">gpd1Δ(yPH_412)(yPH_421)</td>
+      <td>sgRNA_GPD1_F</td>
+      <td>GATCTCTGCTGCCATCCAAAGAGTGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_GPD1_R</td>
+      <td>CTAGCTCTAAAACACTCTTTGGATGGCAGCAGA</td>
+    </tr>
+    <tr>
+      <td>Deletion_GPD1_F</td>
+      <td>TATACTACCATGAGTGAAACTGTTACGTTACCTTAAATTCTTTCTCCCTTTAATTTTCTTTTATCTTACTCTCCTACATAAGACATCAAG</td>
+    </tr>
+    <tr>
+      <td>Deletion_GPD1_R</td>
+      <td>ATGAATATGATATAGAAGAGCCTCGAAAAAAGTGGGGGAAAGTATGATATGTTATCTTTCTCCAATAAATCTTGATGTCTTATGTAGGAG</td>
+    </tr>
+    <tr>
+      <td>Seq_GPD1_F</td>
+      <td>GCACAACAAGTATCAGAATG</td>
+    </tr>
+    <tr>
+      <td>Seq_GPD1_R</td>
+      <td>ATGCGGAAGAGGTGTACAGC</td>
+    </tr>
+    <tr>
+      <td rowspan="6">gpd2Δ(yPH_414)(yPH_421)</td>
+      <td>sgRNA_GPD2_F</td>
+      <td>GATCGCATTGGTCCGAAACCACCGGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_GPD2_R</td>
+      <td>CTAGCTCTAAAACCGGTGGTTTCGGACCAATGC</td>
+    </tr>
+    <tr>
+      <td>Deletion_GPD2_F</td>
+      <td>TTTTTTTTTATATATTAATTTTTAAGTTTATGTATTTTGGTAGATTCAATTCTCTTTCCCTTTCCTTTTCCTTCGCTCCCCTTCCTTATC</td>
+    </tr>
+    <tr>
+      <td>Deletion_GPD2_R</td>
+      <td>ATAATGATAAATTGGTTGGGGGAAAAAGAGGCAACAGGAAAGATCAGAGGGGGAGGGGGGGGGAGAGTGTGATAAGGAAGGGGAGCGAAG</td>
+    </tr>
+    <tr>
+      <td>Seq_GPD2_F</td>
+      <td>CAGCTCTTCTCTACCCTGTC</td>
+    </tr>
+    <tr>
+      <td>Seq_GPD2_R</td>
+      <td>GGTGATGTGATATGTAAACG</td>
+    </tr>
+    <tr>
+      <td rowspan="6">fps1Δ(yPH_405)</td>
+      <td>sgRNA_FPS1_F</td>
+      <td>GATCACAGCAGGACAATTTCAACGGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_FPS1_R</td>
+      <td>CTAGCTCTAAAACCGTTGAAATTGTCCTGCTGT</td>
+    </tr>
+    <tr>
+      <td>Deletion_FPS1_F</td>
+      <td>ATCAACAAAGTATAACGCCTATTGTCCCAATAAGCGTCGGTTGTTCTTCTTTATTATTTTACCAAGTACGCTCGAGGGTACATTCTAATG</td>
+    </tr>
+    <tr>
+      <td>Deletion_FPS1_R</td>
+      <td>TACCGGCGGTAGTAAGCAGTATTTTTTTCTATCAGTCTATATTATTTGTTTCTTTTTCTTGTCTGTTTTCCATTAGAATGTACCCTCGAG</td>
+    </tr>
+    <tr>
+      <td>Seq_FPS1_F</td>
+      <td>CAGTGTGAATCCGGAGACGG</td>
+    </tr>
+    <tr>
+      <td>Seq_FPS1_R</td>
+      <td>TACTTAAGACGATGGGTCAG</td>
+    </tr>
+    <tr>
+      <td rowspan="6">hog1Δ(yPH_441)</td>
+      <td>sgRNA_HOG1_F</td>
+      <td>GATCGGCTCCTTACCACGATCCAAGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_HOG1_R</td>
+      <td>CTAGCTCTAAAACTTGGATCGTGGTAAGGAGCC</td>
+    </tr>
+    <tr>
+      <td>Deletion_HOG1_F</td>
+      <td>TGGTAAATACTAGACTCGAAAAAAAGGAACAAAGGGAAAACAGGGAAAACTACAACTATCGTATATAATAGTCCCTAACCACTCATTCTT</td>
+    </tr>
+    <tr>
+      <td>Deletion_HOG1_R</td>
+      <td>TTCCTCTATACAACTATATACGTAAATACTTTTATGAGTACCATAAAAAAAAGAAACATCAAAAAGAAGTAAGAATGAGTGGTTAGGGAC</td>
+    </tr>
+    <tr>
+      <td>Seq_HOG1_F</td>
+      <td>TAGTGGAAGAGGAATTTGCG</td>
+    </tr>
+    <tr>
+      <td>Seq_HOG1_R</td>
+      <td>GCCATAAGTGACGGTTCTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="6">ste11Δ(yPH_445)</td>
+      <td>sgRNA_STE11_F</td>
+      <td>GATCTATGGTGCTTCTCAAGAAGGGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_STE11_R</td>
+      <td>CTAGCTCTAAAACCCTTCTTGAGAAGCACCATA</td>
+    </tr>
+    <tr>
+      <td>Deletion_STE11_F</td>
+      <td>CAGTAGAAAATATTCATATTTACACACATGCATAAAGAGAGACCACTTAATAAAGCTAGTATGATAAGATCACCGGTAGACGAAATATAC</td>
+    </tr>
+    <tr>
+      <td>Deletion_STE11_R</td>
+      <td>ATGTATTATTTGATAAAAAATCGGCCAGAGCACTTTAGTGCCATAAAAAGAATTAATAAGTAGCCCTTTTGTATATTTCGTCTACCGGTG</td>
+    </tr>
+    <tr>
+      <td>Seq_STE11_F</td>
+      <td>TTCTTTATGCTGTCCTCACC</td>
+    </tr>
+    <tr>
+      <td>Seq_STE11_R</td>
+      <td>GAGAATCAAATACCGTCATC</td>
+    </tr>
+    <tr>
+      <td rowspan="6">glc3Δ(yPH_452)</td>
+      <td>sgRNA_GLC3_F</td>
+      <td>GATCTTTCGACTACAGATTAGCAAGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_GLC3_R</td>
+      <td>CTAGCTCTAAAACTTGCTAATCTGTAGTCGAAA</td>
+    </tr>
+    <tr>
+      <td>Deletion_GLC3_F</td>
+      <td>TCCTACATTTTTTTTCCCTGATAACTTCCTGTTACTATTTAAGAACACCAAACCAAGTATAAAGAACCGTCAAGAATAAAACTCTATACT</td>
+    </tr>
+    <tr>
+      <td>Deltetion_GLC3_R</td>
+      <td>GTACGTTTAGATATCTACCAATACATGAAGAGAAAAAAATTATTGAGTCTTGATTTTCAGTAAGCAATATAGTATAGAGTTTTATTCTTG</td>
+    </tr>
+    <tr>
+      <td>Seq_GLC3_F</td>
+      <td>TCGAGCCAAGTGACACCAGC</td>
+    </tr>
+    <tr>
+      <td>Seq_GLC3_R</td>
+      <td>GACAGCTCTGCTATTCGCCC</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Sic1(yPH_482 T173A)(yPH_486 T173E)</td>
+      <td>sgRNA_SIC1_F</td>
+      <td>GATCACCTGGTACGCCCAGCGACAGTTTTAGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>sgRNA_SIC1_R</td>
+      <td>CTAGCTCTAAAACTGTCGCTGGGCGTACCAGGT</td>
+    </tr>
+    <tr>
+      <td>Repair_SIC1_T173A_F</td>
+      <td>ACATTTATCACTTGAAAGAGATGAGTTTGATCAGACACATAGAAAGAAGATTATTAAAGATGTACCTGGTGCGCCCAGCGACAAAGTGAT</td>
+    </tr>
+    <tr>
+      <td>Repair_SIC1_T173A_R</td>
+      <td>TTCACTTTCTTGACTCCTGGCGTCATTTTTCGGAGAGTTGTTGTTCCAATTTTTTGCCAATTCAAATGTTATCACTTTGTCGCTGGGCGC</td>
+    </tr>
+    <tr>
+      <td>Repair_SIC1_T173E_F</td>
+      <td>ACATTTATCACTTGAAAGAGATGAGTTTGATCAGACACATAGAAAGAAGATTATTAAAGATGTACCTGGTGAGCCCAGCGACAAAGTGAT</td>
+    </tr>
+    <tr>
+      <td>Repair_SIC1_T173E_R</td>
+      <td>TTCACTTTCTTGACTCCTGGCGTCATTTTTCGGAGAGTTGTTGTTCCAATTTTTTGCCAATTCAAATGTTATCACTTTGTCGCTGGGCTC</td>
+    </tr>
+    <tr>
+      <td>Seq_SIC1_F</td>
+      <td>CATTGGGTCGTGTAAATAGG</td>
+    </tr>
+    <tr>
+      <td>Seq_SIC1_R</td>
+      <td>CTGAGTGACCAGTTCATCTG</td>
+    </tr>
+  </tbody>
+</table>
+
 All gene-deletion strains of yeast used in this study were obtained by directed mutagenesis of the yPH_132 strain (HTB2::HTB2-mCherry). Gene deletions were performed using CRISPR/Cas9 gene editing according to the method described in Laughery et al., 2015, that relies on the co-transformation of (i) a plasmid vector derived from pML104 (Addgene #67638) allowing expression of the Cas9 protein and a guide RNA specific to the target gene and (ii) a DNA repair fragment designed to delete the coding sequence of the target gene via homology-directed repair. For each gene deletion, a sequence containing the 20 nucleotides of the sgRNA recognition site in the coding sequence of the target gene was cloned between BclI and SwaI restriction sites in the pML104 plasmid by ligation of hybridized oligonucleotides. The DNA repair fragment was obtained by PCR amplification (Phusion Hot Start Flex 2X Master Mix, NEB M0536S) of two oligonucleotides with 20 bases of reverse complementarity to each other at the 3’ end and 70 bases homologous to the region either immediately upstream or downstream of the coding sequence of the target gene at the 5’ end. The repair fragment and the CRISPR/Cas9 plasmid specific to each gene were transformed together in exponentially growing yPH_132 cells using a standard lithium acetate method. Transformants were isolated on CSM-ura (Formedium, DCS0271) agar plates and gene deletions were confirmed by PCR screening and by Sanger sequencing. Positive clones were grown on YPG plates (10 g/L yeast extract, 20 g/L peptone, 5% [vol/vol] glycerol, 20 g/L bacto agar) to counter-select petite cells (p-phenotype) and then transferred on Complete Supplement Mixture (CSM) agar plates containing 0.8 g/L 5-fluoroorotic acid (Thermo Scientific R0812) to counter-select the CRISPR/Cas9 plasmid carrying the Ura3 gene. Two independent clones were stored at –80°C in 15% glycerol for each gene deletion (the clones used in this study are listed in Table 1).
 
-## Microfluidics and live-cell imaging
+### Microfluidics and live-cell imaging
 
 Yeast cells were cultivated and imaged in custom-made microfluidic devices for all time-lapse microscopy experiments described in this study. One day before each experiment a new microfluidic chip was made by casting a mixture of 10 g of polydimethylsiloxane (Sylgard 184 kit, Neyco) and 1 g of curing agent on a master wafer made by soft lithography. The chip was then degased, cured at 65°C for 4 hr, peeled off, punched with a 1.2-mm-diameter needle at all positions of inlets and outlets and then bonded onto a 24×60 mm2 coverslip after plasma activation of the surfaces. The chip pattern is shown in Figure 1—figure supplement 1a. In brief, it consists of five independent pairs of flow channels (800 µm wide×50 µm high) connected each to five growth chambers (400×400×3.8 µm3; L×W×H) where yeast cells are constrained to proliferate in monolayer.
 
@@ -131,20 +535,24 @@ The chip was then mounted on a motorized inverted microscope (Olympus IX83) equi
 
 Microscopy images were acquired following the same procedure for experiments aiming at quantifying division and death rates, for experiments aiming at quantifying the fluorescence of cells expressing PSTL1-mCitrine and for experiments aiming at quantifying the nuclear enrichment of Hog1-GFP fusion protein. However, image analysis was performed differently for each type of experiment as described below.
 
-## Quantification of cell division and death rates
+### Quantification of cell division and death rates
 
-We used ilastik v1.3 for the segmentation and tracking of cell nuclei expressing HTB2-mCherry on fluorescence images. Three time-lapse movies of 120 fluorescence images of yPH_132 cells grown in CSM+2% glucose medium were used to train the machine learning algorithms to recognize the nuclei of single cells and the nuclei of dividing cells at various numbers of cells per image. The segmentation and tracking procedure was then applied to frames from all experiments after manually removing out-of-focus images that occasionally occurred due to autofocus failure. The output for each experiment was a CSV file for each of the 25 field of views where rows corresponded to all objects (i.e. cell nuclei) detected on all images and columns corresponded to parameters such as image identity, cell nucleus identity, parental nucleus identity, size of the nucleus, and XY coordinates of nucleus centroid. For all experiments involving combined stresses and AS (Figures 3—6), we manually added to CSV files a parameter indicating when cell death was observed based on visual inspection of bright-field images. This manual step was necessary because the nucleus of a dead cell could remain fluorescent and could be tracked for several hours after cell death. This time-consuming step was not performed in the analyses of other experiments where death events remained very rare (results shown in Figure 2). Next, we computed cell division rate and death rate using homemade R scripts. We designed and implemented an Eulerian measure of division rate that was robust to rare tracking errors and to cell saturation in the field of view. In this approach, we first define a tracking window of 1928×1928 pixels centered on each image of 2048×2048 pixels. We can then establish the relation:Nwindowt+1-Nwindowt=Nnewt+Nint-Noutt
+We used ilastik v1.3 for the segmentation and tracking of cell nuclei expressing HTB2-mCherry on fluorescence images. Three time-lapse movies of 120 fluorescence images of yPH_132 cells grown in CSM+2% glucose medium were used to train the machine learning algorithms to recognize the nuclei of single cells and the nuclei of dividing cells at various numbers of cells per image. The segmentation and tracking procedure was then applied to frames from all experiments after manually removing out-of-focus images that occasionally occurred due to autofocus failure. The output for each experiment was a CSV file for each of the 25 field of views where rows corresponded to all objects (i.e. cell nuclei) detected on all images and columns corresponded to parameters such as image identity, cell nucleus identity, parental nucleus identity, size of the nucleus, and XY coordinates of nucleus centroid. For all experiments involving combined stresses and AS (Figures 3—6), we manually added to CSV files a parameter indicating when cell death was observed based on visual inspection of bright-field images. This manual step was necessary because the nucleus of a dead cell could remain fluorescent and could be tracked for several hours after cell death. This time-consuming step was not performed in the analyses of other experiments where death events remained very rare (results shown in Figure 2). Next, we computed cell division rate and death rate using homemade R scripts. We designed and implemented an Eulerian measure of division rate that was robust to rare tracking errors and to cell saturation in the field of view. In this approach, we first define a tracking window of 1928×1928 pixels centered on each image of 2048×2048 pixels. We can then establish the relation:
 
-where Nwindowt and Nwindowt+1 are the number of cell nuclei in the tracking window at frames t and t+1, respectively, Nnewt is the number of divisions that occurred in the window between t and t+1, Nint is the number of cell nuclei that entered the window, and Noutt is the number of cell nuclei that exited the window between t and t+1. From this relation, we computed NnewtNwt which is the number of division events relative to the total number of cell nuclei in the window between t and t+1. The slope of the linear regression of the cumulative sum ∑t=t0t1NnewtNwindowt over time corresponded to the average division rate between t0 and t1 . When death events were added to the input file, we only counted the nuclei of living cells when calculating the division rate. We excluded frames at the end of experiments that corresponded to an incomplete period of environmental fluctuation. The average death rate was calculated using a similar approach: it corresponded to the slope of the linear regression of the cumulative sum ∑t=t0t1NdeathtNwindowt over time where Ndeatht was the number of death events observed in the tracking window between t and t+1.
+$$
+N_{window_{t+1}}-N_{window_{t}}=N_{new_{t}}+N_{in_{t}}-N_{out_{t}}
+$$
 
-## Quantification of PSTL1-mCitrine expression
+where $N_{window_{t}}$ and $N_{window_{t+1}}$ are the number of cell nuclei in the tracking window at frames $t$ and $t+1$, respectively, $N_{new_{t}}$ is the number of divisions that occurred in the window between $t$ and $t+1$, $N_{in_{t}}$ is the number of cell nuclei that entered the window, and $N_{out_{t}}$ is the number of cell nuclei that exited the window between $t$ and $t+1$. From this relation, we computed $\frac{N_{new_{t}}}{N_{w_{t}}}$ which is the number of division events relative to the total number of cell nuclei in the window between $t$ and $t+1$. The slope of the linear regression of the cumulative sum $\sum_{t=t_{0}}^{t_{1}}\frac{N_{new_{t}}}{N_{window_{t}}}$ over time corresponded to the average division rate between $t_{0}$ and $t_{1}$ . When death events were added to the input file, we only counted the nuclei of living cells when calculating the division rate. We excluded frames at the end of experiments that corresponded to an incomplete period of environmental fluctuation. The average death rate was calculated using a similar approach: it corresponded to the slope of the linear regression of the cumulative sum $\sum_{t=t_{0}}^{t_{1}}\frac{N_{death_{t}}}{N_{window_{t}}}$ over time where $N_{death_{t}}$ was the number of death events observed in the tracking window between $t$ and $t+1$.
 
-We used a custom image analysis approach based on the segmentation and tracking of cells in bright-field images to quantify PSTL1-mCitrine expression in single cells (yPH_091 strain) over time. First, a preprocessing step was necessary to eliminate out-of-focus images that occasionally occurred. This was done using a U-NET model trained to estimate the area of cells on each frame and to detect sudden changes of cell area between consecutive frames indicative of autofocus failure. Next, a proper cell segmentation was achieved via a machine learning algorithm based on the StarDist method (GitHub, https://stardist.net/) (StarDist, 2021; Schmidt et al., 2018; Weigert et al., 2020) version 0.7.3 that uses star-convex shape prior. This method was well suited to the round shape of yeast cells and performed slightly better than the U-NET network allowing more reliable tracking of cells. Training of StarDist and U-NET algorithms was performed using a GPU NVIDIA RTX Quadro. For each cell in a frame Ft, the tracking was performed by detecting which cell in the previous frame Ft-1 was closest to the cell on frame Ft based on Euclidean distances between cell centroids. This simple method worked best for cells that did not move too much between consecutive frames: it could fail when the distance between two different cells in two consecutive frames was smaller than the distance between the same cell in the two frames. For this reason, we manually selected by visual inspection cells with correct tracking over at least 6 hr and excluded cells with wrong tracking in further analyses. We computed the mean fluorescence of each cell as the total fluorescence of the cell divided by the area of the cell. The area corresponded to the number of pixels classified as belonging to the cell in the segmented bright-field image. The total fluorescence of a cell was the sum of intensities of all pixels classified as belonging to the cell in the fluorescence image. Pixel classification of fluorescence images was performed using a numpy.array function in Python that applied the segmentation masks obtained from the analysis of bright-field images to the corresponding fluorescence images. R scripts were used to plot the mean fold change of fluorescence over time for all cells analyzed in images that were taken at the same time point in different growth chambers sharing the same regime of environmental fluctuations. Fold change was calculated for each cell as the difference of mean fluorescence observed for that cell in a given frame and the mean fluorescence observed among all cells in the first frame divided by the mean fluorescence among all cells in the first frame.
+### Quantification of PSTL1-mCitrine expression
 
-## Hog1-GFP nuclear enrichment
+We used a custom image analysis approach based on the segmentation and tracking of cells in bright-field images to quantify PSTL1-mCitrine expression in single cells (yPH_091 strain) over time. First, a preprocessing step was necessary to eliminate out-of-focus images that occasionally occurred. This was done using a U-NET model trained to estimate the area of cells on each frame and to detect sudden changes of cell area between consecutive frames indicative of autofocus failure. Next, a proper cell segmentation was achieved via a machine learning algorithm based on the StarDist method (GitHub, https://stardist.net/) (StarDist, 2021; Schmidt et al., 2018; Weigert et al., 2020) version 0.7.3 that uses star-convex shape prior. This method was well suited to the round shape of yeast cells and performed slightly better than the U-NET network allowing more reliable tracking of cells. Training of StarDist and U-NET algorithms was performed using a GPU NVIDIA RTX Quadro. For each cell in a frame $F_{t}$, the tracking was performed by detecting which cell in the previous frame $F_{t-1}$ was closest to the cell on frame $F_{t}$ based on Euclidean distances between cell centroids. This simple method worked best for cells that did not move too much between consecutive frames: it could fail when the distance between two different cells in two consecutive frames was smaller than the distance between the same cell in the two frames. For this reason, we manually selected by visual inspection cells with correct tracking over at least 6 hr and excluded cells with wrong tracking in further analyses. We computed the mean fluorescence of each cell as the total fluorescence of the cell divided by the area of the cell. The area corresponded to the number of pixels classified as belonging to the cell in the segmented bright-field image. The total fluorescence of a cell was the sum of intensities of all pixels classified as belonging to the cell in the fluorescence image. Pixel classification of fluorescence images was performed using a numpy.array function in Python that applied the segmentation masks obtained from the analysis of bright-field images to the corresponding fluorescence images. R scripts were used to plot the mean fold change of fluorescence over time for all cells analyzed in images that were taken at the same time point in different growth chambers sharing the same regime of environmental fluctuations. Fold change was calculated for each cell as the difference of mean fluorescence observed for that cell in a given frame and the mean fluorescence observed among all cells in the first frame divided by the mean fluorescence among all cells in the first frame.
+
+### Hog1-GFP nuclear enrichment
 
 The nuclear enrichment of Hog1-GFP was quantified in cells expressing both the Hog1-GFP reporter and the nuclear marker Htb2-mCherry. Cell segmentation and tracking was performed on bright-field images following the same procedure as described above for the quantification of PSTL1-mCitrine expression. In addition, another segmentation was done for cell nuclei that were detected with the red fluorescence channel using a simple thresholding step. Each nucleus contour was then associated by contour overlapping comparison to its corresponding cell contour obtained by segmentation of bright-field images. We then computed the mean fluorescence in the green channel for each cell and for each nucleus. The mean fluorescence of a cell was calculated as the total intensity of all pixels classified as belonging to the cell (including the nucleus) divided by the number of these pixels. The mean fluorescence of a nucleus was calculated as the total intensity of all pixels classified as belonging to the nucleus divided by the number of these pixels. Finally, the nuclear enrichment of fluorescence was calculated for each cell as the mean fluorescence of the nucleus divided by the mean fluorescence of the cell. R scripts were used to plot the nuclear enrichment of Hog1-GFP fluorescence over time for all cells analyzed in images that were taken at the same time point in different growth chambers sharing the same regime of environmental fluctuations.
 
-## Fluorescein assay
+### Fluorescein assay
 
-We used a fluorescein assay to characterize the temporal dynamics of medium fluctuations inside microfluidic chips. In this assay, we connected a microfluidic chip to CSM medium complemented with 50 nM fluorescein and to CSM medium without fluorescein. We programmed the valve to dispense CSM with fluorescein to the chip for 20 min followed by CSM without fluorescein for another 20 min and repeated this treatment twice. We tried different flow rates on the peristaltic pump but only showed results for the optimal flow rate of 120 µL/min. We used the same microscopy setup as described above to image the growth chamber at the center of the chip, except that a 20× objective (Olympus Plan Achromat) was used to be able to visualize both the flow channel and the growth chamber in the field of view. One bright-field image and one fluorescence image were taken every 12 s. The fluorescence channel consisted of blue LED illumination at an intensity of 10% with a 514/10 nm excitation filter and acquisition with an exposure time of 250 ms using a 545/40 nm emission filter. We used ImageJ to quantify the mean fluorescence in two circular regions with a diameter of 280 pixels. One region was in the center of the growth chamber and the other region in the flow channel. A script in R was used to plot the relative level of fluorescence over time in each region. The relative fluorescence at time t (RFt) was calculated as RFt=Ft-FminFmax-Fmin, where Ft is the mean fluorescence at time t, Fmin is the mean fluorescence observed between 30 and 40 min and between 70 and 80 min when fluorescein was at its minimal concentration in the chip and Fmax is the mean fluorescence observed between 10 and 20 min and between 50 and 60 min when fluorescein was at its maximal concentration in the chip.
+We used a fluorescein assay to characterize the temporal dynamics of medium fluctuations inside microfluidic chips. In this assay, we connected a microfluidic chip to CSM medium complemented with 50 nM fluorescein and to CSM medium without fluorescein. We programmed the valve to dispense CSM with fluorescein to the chip for 20 min followed by CSM without fluorescein for another 20 min and repeated this treatment twice. We tried different flow rates on the peristaltic pump but only showed results for the optimal flow rate of 120 µL/min. We used the same microscopy setup as described above to image the growth chamber at the center of the chip, except that a 20× objective (Olympus Plan Achromat) was used to be able to visualize both the flow channel and the growth chamber in the field of view. One bright-field image and one fluorescence image were taken every 12 s. The fluorescence channel consisted of blue LED illumination at an intensity of 10% with a 514/10 nm excitation filter and acquisition with an exposure time of 250 ms using a 545/40 nm emission filter. We used ImageJ to quantify the mean fluorescence in two circular regions with a diameter of 280 pixels. One region was in the center of the growth chamber and the other region in the flow channel. A script in R was used to plot the relative level of fluorescence over time in each region. The relative fluorescence at time $t$ ($RF_{t}$) was calculated as $RF_{t}=\frac{F_{t}-F_{min}}{F_{max}-F_{min}}$, where $F_{t}$ is the mean fluorescence at time $t$, $F_{min}$ is the mean fluorescence observed between 30 and 40 min and between 70 and 80 min when fluorescein was at its minimal concentration in the chip and $F_{max}$ is the mean fluorescence observed between 10 and 20 min and between 50 and 60 min when fluorescein was at its maximal concentration in the chip.

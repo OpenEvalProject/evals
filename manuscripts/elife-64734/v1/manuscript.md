@@ -15,10 +15,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 California National Primate Research Center, UC Davis Davis United States
-2. https://ror.org/05rrcem69 Department of Psychology, UC Davis Davis United States
-3. https://ror.org/05rrcem69 Department of Pathology, Microbiology and Immunology, School of Veterinary Medicine, UC Davis Davis United States
-4. https://ror.org/05rrcem69 Department of Neurology, School of Medicine, UC Davis Davis United States
+1. California National Primate Research Center, UC Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Department of Psychology, UC Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+3. Department of Pathology, Microbiology and Immunology, School of Veterinary Medicine, UC Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+4. Department of Neurology, School of Medicine, UC Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ To identify and characterize neuroanatomical consequences of fetal ZIKV, we exam
 
 **Figure 1.:** Unlike control animals (A), the tissue of the ZIKV-infected animals (B) evidenced clusters of round-shaped microglia (Iba1, red) and astrocytes ( Glial fibrillary acidic protein (GFAP), green) within selective cortical areas. Scale bar: 50 µM, zoom: 10 µM. In the Area 46 of the ZIKV-infected animals, the microglia marker Iba1 (red), colocalized with lysosomal protein CD68 (orange), a marker for phagocytic activity normally observed in activated microglia (C–G). Scale bar: 100 µM, zoom: 5 µM. Activated microglia surrounding apoptotic neurons (NeuN, orange) are shown within Area 46 in ZIKV animals (H, highlighted in I). 3D analysis of the micrographs shows apoptotic material (fragmented 4′,6-diamidino-2-phenylindole (DAPI) and NeuN) inside activated microglia (J, K, scale bar: 5 µM).
 
-## Neuroinflammatory abnormalities and ZIKV presence in brains from ZIKV-infected animals
+### Neuroinflammatory abnormalities and ZIKV presence in brains from ZIKV-infected animals
 
 IHC confocal microscopy revealed the presence of clusters of reactive glia within Area 46 of the PFC from ZIKV+ animals, but not in the controls (Figure 1A, B). Multiple labeling fluorescent microscopy allowed us to visualize that abnormal clusters of Iba1+ microglia which also express the lysosomal marker CD68 in the ZIKV-infected animals (Figure 1C–G). CD68 levels are known to be substantially upregulated in microglia during inflammatory processes and are thought to be involved in active phagocytosis (Jurga et al., 2020). We also observed that clusters of amoeboid-shaped microglia within Area 46, are directly engulfing neuronal debris in the ZIKV-infected monkeys (Figure 1H, I; 3D reconstruction: Figure 1J, K).
 
@@ -56,9 +56,9 @@ Next, we sought to detect the presence of ZIKV protein in the same regions we ob
 
 **Figure 2.:** ZIKV protein (antiflavivirus, green) (A) is identified within Area 46 of ZIKV inoculated animals. ZIKV+ cells are surrounded by activated microglia (Iba1, red) (B) and astrocytes (GFAP, purple) (C), with DAPI (D) staining all nuclei. Scale bar: 10 µM. 3D analysis and reconstruction of confocal micrographs obtained in Area 46, highlight the presence of viral protein within the microglia (E–H). Scale bar: 10 µM, 3D: 5 µM. ZIKV+ cells observed in the same brain region are surrounded and actively contacted by reactive microglia (I, J). Scale bar: 25 µM, zoom: 3 µM. Multiple labeling combining both microglia markers and viral protein shows the presence of viral protein inside phagocytic microglia in the prefrontal cortex (PFC) of the ZIKV-infected fetuses (K, L). Scale bar: 25 µM, zoom: 3 µM.
 
-## ZIKV-induced changes to the occipital and frontal lobe
+### ZIKV-induced changes to the occipital and frontal lobe
 
-## Macrostructural changes
+#### Macrostructural changes
 
 The most prominent manifestation of CZS is microcephaly (Moore et al., 2017), but none of the ZIKV-infected animals studied here exhibited a disproportionately (compared to their bodies) smaller biparietal diameter during gestation or head sizes at necropsy (Coffey et al., 2018). However, in less severe cases of CZS there have been documented changes to gross anatomical features of the brain including gyral simplification (defined as a reduction in the number of gyri associated with shallow sulci) and lissencephaly. Given those findings in humans, an analysis of the surface-area-to-volume ratio (or gyrencephality) of the occipital and frontal lobes from our infected and control animals allowed for an evaluation of these more subtle (compared to microcephaly) changes related to infection (Figure 3). These analyses revealed important differences in macrostructural features in Zika-infected versus control brains.
 
@@ -74,7 +74,7 @@ There was no difference between ZIKV and control animals in the gyrification of 
 
 **Figure 4.:** The cortical thickness of a mature cortical region (Area 17, primary visual cortex, V1) (A) did not differ between the control (blue circles) and ZIKV-infected (red squares) animals. The anatomical localization of Area 17 is shown in a photomicrograph of a Nissl-stained section stained (dashed lines = the extent of Area 17). (B) Cortical thickness of Area 46 did not differ between the control (blue circles) and ZIKV-infected animals, although there was more individual variation than was seen in Area 17. The anatomical localization of Area 46 (dorsolateral prefrontal cortex, DLPFC) is shown in a photomicrograph of a Nissl-stained section (dashed line = the extent of Area 46). Conventions as in previous figures.
 
-## M1 cortical thickness, and volumes of the amygdala, hippocampus, and optic tract
+#### M1 cortical thickness, and volumes of the amygdala, hippocampus, and optic tract
 
 We carried out a few additional gross level analyses of one additional cortical target and three subcortical targets. We evaluated the cortical thickness of one additional cortical area, Area 4, primary motor cortex, was included because it is roughly in the middle of the brain (on the rostral–caudal axis) and thus represents a cortex at a different point in development compared to Areas 17 and 46. Three thickness measurements were taken on each of three different slides and then the value were averaged. There was not a difference in cortical thickness between the Zika and control animals in Area 4 (t4 = 0.80, p = 0.47; d = 0.65; MeanZIKV = 2427.76 μm, SDZIKV = 95.64 μm; MeanControl = 2361.72 μm, SDControl = 106.62 μm).
 
@@ -82,7 +82,7 @@ Given the senior author’s lab’s focus on the amygdala and hippocampus, we al
 
 Finally, given the impact of ZIKV on the lateral geniculate nucleus (LGN) and observations about its impact on the retina, we also carried out a volumetric analysis of the optic tract. There were no group differences between the ZIKV and control animals in the volume of their optic tracts: t4 = 1.061, p = 0.35; d = 0.87; MeanZika = 31.24 mm3, SDZika = 6.54 mm3; MeanControl = 25.09 mm3, SDControl = 7.62 mm3.
 
-## Microstructural changes to glia
+#### Microstructural changes to glia
 
 Following macrostructural evaluations, we carried out a series of IHC analyses to quantify cell-level features that might be impacted by ZIKV infection with a specific focus on glia (microglia and astrocytes) in Brodmann’s Areas 17 and 46. The three-dimensional space glia occupy, especially microglia, change constantly, because these cells are highly dynamic and retract and expand their processes in response to subtle changes in the surrounding environment. Several studies have shown that glial cells have a strong form-to-function mapping and investigating morphological alterations in these cells allows inferences about their activation state and their inflammatory status across different brain regions (Karperien et al., 2013; Morrison and Filosa, 2013; Young and Morrison, 2018). For example, using the combination of high-resolution confocal microscopy with three-dimensional reconstruction of individual glia volumes, we recently described how morphological changes in these cell types are connected with spine loss and neuron death in two different monkey models of Alzheimer’s disease (Seelke et al., 2020; Beckman et al., 2021). Here, we use a similar approach of analysis by randomly selecting 28 cells from each anatomical area, for each animal. Iba1 and GFAP were used as general microglia and astrocytes markers, respectively, and each cell was exported and analyzed individually for total and cell body volumes, and for number of terminal point (branching ramification).
 
@@ -94,11 +94,23 @@ Analysis of the microglia in Area 17 revealed no significant differences in the 
 
 There were no significant group differences in astrocyte morphology in either Area 17 or 46. In Area 17, astrocyte cell body size did not differ between ZIKV-infected and control animals (t4 = 0.34, p = 0.75; d = 0.28; Figure 5H), whole cell volume (t4 = 2.13, p = 0.09; d = 1.81; Figure 5I), or number of terminal points (t4 = 0.44, p = 0.68; d = 0.34; Figure 5J). In Area 46, astrocyte cell body size did not differ between ZIKV-infected and control animals (t4 = 0.10, p = 0.93; d = 0.81; Figure 5R), whole cell volume (t4 = 1.03, p = 0.36; d = 0.84; Figure 5S), or number of terminal points (t4 = 1.22, p = 0.29; d = 0.99; Figure 5T).
 
-## Microstructural changes related to neural development
+#### Microstructural changes related to neural development
 
 A neuroinflammatory response, mainly driven by CD68/Iba+ microglia, in combination with the presence of ZIKV envelope protein, indicated that the frontal lobe for all ZIKV-infected subjects was a site of persistent ZIKV infection for a minimum of 60-day postinoculation. However, the consequences of the infection persist beyond the window of virus replication. Previous studies have demonstrated that ZIKV infection is associated with increased apoptosis of neural progenitor cells (Li et al., 2016; Souza et al., 2016). IHC fluorescent microscopy analyses for DAPI, cleaved caspase-3 (CC3), and SATB2, which are markers of nuclei, apoptosis onset, and immature neurons, respectively, were carried out in order to determine if the increased inflammatory response or active viral presence could induce neuronal loss across the regions analyzed 3D analysis of the average total number of cells (DAPI+), average number of immature neurons (SATB2+), and total number of apoptotic cells (CC3+), did not significantly differ between ZIKV and control animals in both regions analyzed (Figure 6F – Area 17, Figure 6R – Area 46). The number of cells in which CC3 and SATB2 was colocalized did not differ across the ZIKV-infected and control groups and the numbers were fairly low (t4 = 0.65, p = 0.55; d = 0.53; Figure 5A–K), indicating low frequency of immature neuron death. In contrast, there was significantly more frequent death of immature neurons in Area 46 of the ZIKV-infected compared to control animals, as indicated by a greater number of cells that expressed both CC3 and SATB2 (t2.20 = 5.37, p = 0.027; d = 4.39; Figure 6L–Z). Many CC3+ cells in the Area 46 of ZIKV animals are constituted by apoptotic immature neurons, higher resolution 3D analysis showed that activated microglia (HLA-Dr+) also present high expression of cell death marker CC3+ (Figure 6—figure supplement 1). The higher frequency of immature neuron death, the active immune response (activated microglia), and the presence of ZIKV protein in Area 46 suggest that frontal cortex remained a site of active ZIKV-induced neuronal remodeling at the time the brains were analyzed. Fragmented DNA was also observed in this area (Figure 6—figure supplement 2).
 
-## Additional neuronal abnormalities
+![Figure 6.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig6-v1.jpg)
+
+**Figure 6.:** Representative tissue samples from Area 17 (A–L) and Area 46 (M–Z) in control and ZIKV-infected animals. Immature neuronal marker SATB2 (A, G, M, S) colocalization with CC3 (B, H, N, T), an apoptotic marker, and DAPI (C, I, O, U) were analyzed in Areas 17 and 46 of control and ZIKV-infected animals. Merged images (D, J, P, V). 3D surface rendering reconstruction of SATB2 and CC3 are shown in E, K, Q, and X. Average total cell counting (F, R) and quantification of SATB2/CC3 colocalization (L, Z) indicated no group differences in the number of immature neurons undergoing apoptosis in Area 17 (L), but a significantly greater immature neurons undergoing apoptosis in ZIKV-infected compared to control animals in Area 46 (R). Scale bar = 25 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** 3D analysis of colocalization between CC3 and immature neuronal marker SATB2 in control (A) and ZIKV-infected animals. Staining with the activated microglia marker HLA-Dr (B, F) and astrocytic marker GFAP (C, G) evidenced increased inflammation and apoptosis in ZIKV-infected animals compared to controls. Merged images: D, H. High-resolution analysis in Area 46 (I) indicates that both activated microglia (HLA-Dr, gray) and neurons (NeuN, green) coexpress apoptosis marker CC3. Scale: 25 µm (A–H) and 5 µm (I).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** A TUNEL assay was performed in tissue slices, with fragmented DNA being detected by fluorescent dye incorporation. Representative images in Area 46 (panels A–C and D–F) and in Area 17 (panels G–I) highlight the presence of abnormal clusters of fragmented DNA in ZIKV-infected animals. Scale: 25 µm (A–C) and 40 µm (D–I).
+
+### Additional neuronal abnormalities
 
 Visual inspection of the Nissl-stained sections of each brain revealed other ZIKV infection-related abnormalities within the visual pathway in addition to those observed in Area 17 (discussed above). These abnormalities included structural changes to the LGN. The LGN is a six-layered structure that is found in the ventral thalamus that receives retinal input from both eyes via the optic tract (Jones, 1985; e.g., Figure 7A). In the ZIKV-infected subjects, we observed multiple instances of laminar discontinuities within the LGN (Figure 7B–D). The LGNs of the control subjects were all normal.
 
@@ -111,6 +123,14 @@ The first type of LGN pathology consisted of a blurring of the expected boundari
 ![Figure 8.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig8-v1.jpg)
 
 **Figure 8.:** The LGNs of control animals were all normal (A–F), but structural abnormalities were detected in the LGNs of all three ZIKV-infected fetuses in the Nissl-stained sections (an example depicted in G–L). A tissue section adjacent to each Nissl stained was analyzed using confocal microscopy. Neuronal layers and glia were analyzed using NeuN (B, H), Iba1 (C, D; red), and GFAP (E, K; green). Zoomed NeuN images in the same area are in D and J. Merged images are found in F and L. Scale = 250 µm in G–K, scale = 25 µm in B–F and L–P, scale = 10 µm in Q–U.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig9-v1.jpg)
+
+**Figure 9.:** Compared to normal transitions between primary (V1) and secondary (V2) visual cortex (A), cellular abnormalities in the transition were detected in ZIKV-infected monkeys (B, C) on the Nissl-stained sections. A deeper investigation using quadruple fluorescent staining (merged images in D–F) was performed in adjacent sections for SATB2 (G–I), Iba1 (J–L), and GFAP (M– O). A normal transition between V1 and V2 is characterized by the uniform contraction of layer 4 and the absence of laminar discontinuity (A, C, E, G, I, K). We identified a region of laminar discontinuity within the boundaries of V1 (B) that appears to be the caused by a disruption to layer 4a that resulted in the displacement of layers 4b and 4c toward the pial surface (seen in M–R). An additional abnormality was found below layer six in area V2 (seen in A–K and magnified in B–L). Disrupted neuronal layers present are surrounded by robust presence of activated microglia and astrocytes, as highlighted in the zoom area N–R. Scale = 250 µm in A–L, scale = 25 µm in M–R.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64734/elife-64734-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** In addition to the lamination issues that were documented in visual cortex (and described in the main text), there were a number of instances of suprapial cortical heterotopias in ZIKV-infected, but not control animals, visual cortices. (A) A low-magnification photomicrograph of two suprapial cortical heterotopias identified in the cortex of the fetus who was infected with ZIKV at gestational day (GD) 90. The black rectangle indicates the region shown in the higher magnification image in (B). Scale = 500 µm in A, 250 µm in B.
 
 ## Discussion
 
@@ -132,45 +152,49 @@ While we focus heavily on the importance of homologs between humans and rhesus m
 
 All procedures were approved by the University of California, Davis Institutional Animal Care and Use Committee (Protocol # 19211) which is accredited by the Association for Assessment and Accreditation of Laboratory Animal Care International (AAALAC). Animal care was performed in compliance with the 2011 Guide for the Care and Use of Laboratory Animals provided by the Institute for Laboratory Animal Research.
 
-## Study design
+### Study design
 
-## Subjects
+#### Subjects
 
 All adult female rhesus macaques (Macaca mulatta) enrolled in the study were from the conventional breeding colony and were born at CNPRC. Animals were determined to be free of West Nile virus (WNV) via simian WNV ELISA (Xpress Bio), SIV-free, type D retrovirus-free, and simian lymphocyte tropic virus type one antibody negative. Animals were selected from the timed breeding program based on the date of their mating and ultimately the GD of their fetus determined by comparing data obtained on ultrasound to CNPRC colony data for fetal development. All animals had at least one and up to six previous successful pregnancies with live births. ZIKV-infected animals were enrolled first, followed by control animals. The animals were housed indoors in standard stainless-steel cages (Lab Products, Inc) that met or exceed the sizing required by NIH standards, in rooms that maintained 12 hr light/dark cycles (0600 lights on to 1800 lights off), with temperature controlled between 65–75°F and 30–70% humidity. Monkeys had free access to water and received commercial chow (high protein diet, Ralston Purina Co.) twice a day and fresh produce multiple times a week. All but one female was paired with a compatible social partner.
 
-## Experimental infection with Zika virus
+#### Experimental infection with Zika virus
 
 Four pregnant females and their fetuses were inoculated with a 2015 Brazilian virus isolate (strain Zika virus/H. sapiens-tc/BRA/2015/Brazil_SPH2015; genbank accession number KU321639.1) by injecting 5.0 log10 PFU in 1 ml RPMI-1640 medium both IV and IA (Coffey et al., 2018). Each animal was inoculated only once at either 41, 50, 64, or 90 GDs. The fetus of the female inoculated at GD 41 was found dead 1 week later and its brain was autolyzed (Coffey et al., 2018). Three mother–fetus pairs were sham inoculated with 1 ml of RPMI-1640 medium both IV and IA at GD 50, 64, and 90 to serve as procedure-matched controls.
 
 No formal sample size estimation was carried out because this was an initial pilot study to determine whether rhesus monkey fetuses could be infected with ZIKV (Coffey et al., 2018). When the fetus inoculated at GD 41 died, we did not include a control fetus with a sham inoculation at GD 41, resulting in the final sample of N = 3 in each experimental group.
 
-## Histological procedures
+### Histological procedures
 
-## Tissue harvesting and fixation
+#### Tissue harvesting and fixation
 
 As experimentally planned, the fetuses were harvested at GD 155 via fetectomy and immediately euthanized for detailed tissue collection for five of six pairs. The fetus that was infected at GD 64 was born alive at approximately GD 151 and euthanized the same day for tissue collection. Only evaluation of fetal tissues is reported here.
 
 The left hemisphere of each brain was used for viral load determination or fixed in 10% buffered formalin for histology as described earlier (Coffey et al., 2018). The right hemisphere was fixed in 4% paraformaldehyde in 0.1 M sodium phosphate buffer for an hour, cut into four blocks to allow sufficient rapid penetration of the fixative into the tissues, and then fixed for 48 hr at 4°C with rotation. Blocks were numbered 1–4, starting at the caudal extent of the brain (Block 1, including the occipital lobe) and ending at the rostral extent of the brain (Block 4, including the frontal pole). The tissue was cryoprotected in 10% glycerin with 2% DMSO in 0.1 M sodium phosphate buffer overnight then 20% glycerin with 2% DMSO in 0.1 M sodium phosphate buffer for 72 hr (Rosene et al., 1986). Blocks were then frozen in isopentane following standard laboratory procedures (Bliss-Moreau et al., 2017).
 
-## Tissue sectioning
+### Tissue sectioning
 
 The tissue was sectioned on a sliding freezing microtome (Thermo Scientific Microm HM430, Waltham, MA, USA) into eight series (7 at 30 µm and 1 at 60 µm). 30 µm tissue sections were placed in a cryoprotectant solution and stored at −20°C. The 60 µm tissue sections were postfixed for 2 weeks in 10% formalin and stored at 4°C.
 
-## Nissl staining
+#### Nissl staining
 
 The 60 µm sections were mounted on gelatin subbed slides and Nissl stained using 0.25% thionin (according to our standard protocols [Lavenex et al., 2009; Bliss-Moreau et al., 2017]). Slides were coverslipped using DPX mounting medium (Millipore Sigma, St. Louis, MO, USA). These sections were scanned (TissueScope LE; Huron Digital Pathology; St. Jacobs, ON, Canada) and digital images were used for analyses. Each image was coded to keep evaluators blind to experimental condition. Anatomical boundaries were determined by comparing Nissl-stained tissue to reference atlases (Saleem and Logothetis, 2012; Rohlfing et al., 2012), and all anatomical analyses were performed using StereoInvestigator (MBF Bioscience, Williston, VT, USA).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 30-µm-thick free-floating sections were incubated in an antigen retrieval solution (Wako, S1700) at 60°C for 30 min. Sections were incubated in blocking solution: 5% donkey serum, 5% goat serum, 5% bovine serum albumin in phosphate-buffered saline (PBS) 0.3% Triton for 2 hr at room temperature (RT) under agitation. Sections were then incubated overnight with antibodies to Iba1 (Wako, code 019-19741, 1:500), NeuN (Synaptic Systems, code 266-004, 1:1000), GFAP (Abcam, code ab4674, 1:1000), antiflavivirus group (Millipore, code MAB10216, 1:400), nonphosphorylated neurofilament (SMI32, Biolegend, code SMI-32P, 1:500), CC3 (Cell Signaling, code 9661, 1:500), CD68 (Abcam, code ab53444, 1:300), HLA-Dr (ThermoFisher, code MA5-11966), and SATB2 (Cell Signaling, code 39229, 1:500). Tissue was washed thoroughly with PBS and incubated with Alexa Fluor secondary antibodies (Invitrogen, 1:500) for 2 hr, at room temperature. Finally, sections were incubated with DAPI for 10 min after washing the secondary antibodies. Sections were mounted on microscope slides and coverslipped with Prolong Diamond Antifade (Invitrogen).
 
-## Neuroanatomical evaluations
+### Neuroanatomical evaluations
 
 We first reviewed each Nissl slide from each case to qualitatively identify potential differences across brains. Given hypotheses about ZIKV’s particular impact on developing neurons, we elected to quantitatively compare Areas 17 and 46, delineated from Blocks 1 and 4, respectively, because of the caudal–rostral developmental gradient of cortical development but also report evaluations of cortical and subcortical structures and those that appeared to be compromised by ZIKV infection (e.g., LGN). Macrolevel features of the tissue were quantified on the Nissl sections (including gyrencephalization, cortical thickness, etc., described below). Finally, a series of IHC analyses on targeted regions of tissue were completed. All people analyzing tissue were blind to condition.
 
-## Analysis of Nissl-stained tissues
+#### Analysis of Nissl-stained tissues
 
-To compute an index of gyrencephalization, we measured the area and perimeter of each section of tissue in StereoInvestigator. These areas were chosen because the cortex develops in a caudal to rostral pattern (Charvet and Finlay, 2014; Rakic, 2002; Colby et al., 2011); brain development at the time of tissue harvest should have been most complete in the occipital lobe (caudal) and least complete in the frontal lobe (rostral). Thus, if fetal ZIKV infection disrupted development in a timing specific way, we would expect to see the greatest difference in neuroanatomical patterning when these lobes were compared. The distance between each tissue section (section thickness + intersection interval) was then used to determine the surface area and volume of each section as follows:Surfacearea=((perimeterofsection1+perimetersection2)/2)∗intersectionintervalVolume=((areaofsection1+area ofsection2)/2)∗intersection interval
+To compute an index of gyrencephalization, we measured the area and perimeter of each section of tissue in StereoInvestigator. These areas were chosen because the cortex develops in a caudal to rostral pattern (Charvet and Finlay, 2014; Rakic, 2002; Colby et al., 2011); brain development at the time of tissue harvest should have been most complete in the occipital lobe (caudal) and least complete in the frontal lobe (rostral). Thus, if fetal ZIKV infection disrupted development in a timing specific way, we would expect to see the greatest difference in neuroanatomical patterning when these lobes were compared. The distance between each tissue section (section thickness + intersection interval) was then used to determine the surface area and volume of each section as follows:
+
+$$
+Surfacearea=((perimeterofsection1+perimetersection2)/2)∗intersectionintervalVolume=((areaofsection1+area ofsection2)/2)∗intersection interval
+$$
 
 Surface area and volume values were summed for each subject to determine the total surface area and total volume of the frontal and occipital lobes. The gyrencephality ratio for both lobes was computed by dividing the surface area (in mm2) by the volume (in mm3).
 
@@ -182,22 +206,22 @@ Boundaries of the cortical regions of interest were identified through patterns 
 
 Four sections from each subject that included the full LGN were evaluated. This procedure was required because the brains were blocked through the LGN in five of our six subjects. For each subject, the four largest complete sections were selected from the available complete sections. Total LGN area was measured on the Nissl-stained sections in StereoInvestigator and then the area of magnocellular (layers 1 and 2) and parvocellular (layers 3–6) was measured. Koniocellular area for each section was computed as the total area minus the magnocellular and parvocellular areas.
 
-## Analysis of tissues prepared via IHC procedures
+#### Analysis of tissues prepared via IHC procedures
 
 All analyses of fluorescently stained tissue were conducted using a Zeiss LSM 800 confocal microscope (Carl Zeiss AG, Oberkochen, Germany).
 
-## Microglia and astrocyte quantification
+#### Microglia and astrocyte quantification
 
 For microglia and astrocyte morphological analyses, 28 microglia and 28 astrocytes were selected randomly from Areas 17 and 46 of each animal. For each cell, a z-stack at ×63 magnification was made, and the image was exported to Imaris software (Oxford Instruments, Bitplane Inc, Concord, MA, USA) to create 3D volume surface rendering. Cell body volume, whole cell volume, and terminal points were quantified for each cell and averaged within each subject.
 
-## Total DAPI, SATB2, and CC3 counting and SATB2 colocalization with CC3
+#### Total DAPI, SATB2, and CC3 counting and SATB2 colocalization with CC3
 
 Three z-stack images at ×20 magnification were obtained within both Areas 46 and 17 for each subject. Images that contained both immature neurons (SATB2) and apoptotic cells (CC3) were exported to Imaris software to quantify colocalization.
 
-## DNA fragmentation
+#### DNA fragmentation
 
 Apoptotic cells were analyzed using DeadEnd Fluorometric TUNEL System, from Promega (cat no. G3250). Four slides from each animal were incubated with equilibration buffer for 10 min. Slides were then incubated with TUNEL reaction mix for 60 min at 37°C in a humidifier chamber, avoiding exposure to light. The reaction consists in a catalytical incorporation of fluorescein-12-dUTP at 3-OH DNA end using Terminal Deoxynucleotidyl Transferase, forming a polymeric tail using the TUNEL principle. The reaction was stopped using SSC (NaCl and sodium citrate) and slides were washed three times with PBS, incubated with DAPI solution for 10 min and then mounted using Vectashield (Vector Lab). For each animal, one slide was incubated with RQ1 RNase-Free DNase (Prometa cat no. M6101) used as a positive control. Three images from each area analyzed were acquired at ×20 magnification for each slide for each animal.
 
-## Data analysis
+### Data analysis
 
 Data were analyzed in SPSS 26.0 (IBM Corp). Data were checked for normality via the Kolmogorov–Smirnov and Shapiro–Wilk tests. Data were then analyzed using independent sample t-tests with experimental group as the between subject variable. Cohen’s d was computed as a measure of effect sizes. No individual data points were excluded from analysis (e.g., because they were outliers) and all conducted analyses are reported in the main or supplementary text. We elected to report each individual animals’ data and not to report statistics on the figures because the sample size is small.

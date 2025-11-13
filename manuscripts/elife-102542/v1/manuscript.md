@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01wz97s39 Department of Marine Zoology, Senckenberg Research Institute and Natural History Museum Frankfurt Frankfurt Germany
-2. https://ror.org/04cvxnb49 Institute of Ecology, Evolution & Diversity, Goethe University Frankfurt Germany
-3. https://ror.org/04rdtx186 Key Laboratory of Evolution & Marine Biodiversity (Ministry of Education) and Institute of Evolution & Marine Biodiversity, Ocean University of China Qingdao China
-4. https://ror.org/041w4c980 Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center, Laoshan Laboratory Qingdao China
+1. Department of Marine Zoology, Senckenberg Research Institute and Natural History Museum Frankfurt Frankfurt Germany ([ROR:01wz97s39](https://ror.org/01wz97s39))
+2. Institute of Ecology, Evolution & Diversity, Goethe University Frankfurt Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+3. Key Laboratory of Evolution & Marine Biodiversity (Ministry of Education) and Institute of Evolution & Marine Biodiversity, Ocean University of China Qingdao China ([ROR:04rdtx186](https://ror.org/04rdtx186))
+4. Laboratory for Marine Biology and Biotechnology, Qingdao Marine Science and Technology Center, Laoshan Laboratory Qingdao China ([ROR:041w4c980](https://ror.org/041w4c980))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ We sequenced chromosome-level genomes of Deshayesiella sirenkoi (Lepidopleurida)
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/102542/elife-102542-fig1-v1.jpg)
 
-**Figure 1.:** Deshayesiella sirenkoi, and three species in the clade Chitonida sensu lato: Acanthochiton rubrolineata, A.discrepans, and Callochiton septemvalvis.Each quarter circle shows the pseudochromosome content for each species, in order of size, with concentric rings indicating GC content, gene count, percent repeat content, and a photograph of the respective species.
+**Figure 1.:** Each quarter circle shows the pseudochromosome content for each species, in order of size, with concentric rings indicating GC content, gene count, percent repeat content, and a photograph of the respective species.
 
 Our phylogenetic results confirm the placement of chitons as sister to a monophyletic Conchifera, and we recover the expected topology within Polyplacophora consistent with other recent work using genomic and morphological characters (Figure 2). Within Conchifera, we confirm the topology of other recent studies Song et al., 2023; however, our supplementary analyses recovered Scaphopoda sister to Gastropoda but with lower support (Appendix 1—figure 3). Comparison with genomes from other molluscan classes shows the molluscan ancestor had a genome composed of 20 linkage groups (Figure 2), we refer to these as the Molluscan Linkage Groups (MLG) 1–20. Three important fusion events are apparent synapomorphies for Polyplacophora, present in all living chitons and no Conchifera: MLG 4+16 + 18, MLG 7+10, and MLG 8+9 (Figures 3 and 4, Appendix 1—figures 4–7). There are additional fusions and intra-chromosomal rearrangements that are different in every species sampled.
 
@@ -51,7 +51,7 @@ Our phylogenetic results confirm the placement of chitons as sister to a monophy
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102542/elife-102542-fig3-v1.jpg)
 
-**Figure 3.:** Acanthochitona discrepans as an example.MLGs are distinguished by colours, at the top of the diagram and in the key at bottom showing the number of orthologs. Each row is the reconstructed karyotype of the ancestor of living Polyplacophora, the order Chitonida sensu lato, and the genus Acanthochitona. Reconstructed chromosomes on each row are numbered in order of size from largest (left) to smallest (right); chromosome fusions are highlighted with chromosome numbers in black boxes. This presentation highlights the extent of shifts especially in comparison to the molluscan or polyplacophoran ancestor.
+**Figure 3.:** MLGs are distinguished by colours, at the top of the diagram and in the key at bottom showing the number of orthologs. Each row is the reconstructed karyotype of the ancestor of living Polyplacophora, the order Chitonida sensu lato, and the genus Acanthochitona. Reconstructed chromosomes on each row are numbered in order of size from largest (left) to smallest (right); chromosome fusions are highlighted with chromosome numbers in black boxes. This presentation highlights the extent of shifts especially in comparison to the molluscan or polyplacophoran ancestor.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102542/elife-102542-fig4-v1.jpg)
 
@@ -59,7 +59,7 @@ Our phylogenetic results confirm the placement of chitons as sister to a monophy
 
 ## Discussion
 
-## Chiton genomes show frequent and extreme rearrangement
+### Chiton genomes show frequent and extreme rearrangement
 
 Four new chiton genomes represent the most complete genomes sequenced for the class, adding to several previously published partial or complete genomes (Hui et al., 2024; Liu et al., 2023; Varney et al., 2022; Varney et al., 2021; Chen et al., 2025; Supplementary file 1, table S3). Our comparisons of conchiferan and aculiferan (polyplacophoran) linkage groups confirm previous studies that also predicted a haploid karyotype of 20 for the molluscan ancestor based on other metazoans (Simakov et al., 2022).
 
@@ -71,7 +71,7 @@ The largest number of novel fusions among chiton genomes is three, in the lepido
 
 The remaining living chitons (Chitonida s.l.) comprise two sister clades recognised as separate orders: Chitonida and Callochitonida (Moles et al., 2021). Callochiton also has two additional fusion events, and the chitonid Liolophura japonica has a partial genome duplication, with two linkage groups fused apparently at first and then duplicated (Figure 4B). In our reconstruction of ancestral karyotypes, there is no differences in arrangement between the ancestor of Chitonida sensu stricto or the ancestor of Chitonida sensu lato (Chitonida + Callochitonida). The four species in Chitonida s.l. share a large, fused chromosome (MLG 01+04 + 16+18) that is notably not well-mixed in Liolophura japonica (i.e. Chr01 in Liolophura japonica, Chr01 in Callochiton septemvalvis, Chr01 in Acanthochitona rubrolineata, and Chr03 in A. discrepans). Part of this pattern has its origin in the ancestral chiton karyotype and is retained in the lepidopleuran Deshayesiella (i.e. MLG 04+16 + 18). This implies a variable rate of intra-chromosomal rearrangement, with several of the MLGs conserved.
 
-## Ancestral karyotypes for Mollusca
+### Ancestral karyotypes for Mollusca
 
 Chromosome numbers are not strongly conserved in animals. Changes in chromosome numbers are hypothesized to be an important driver of the diversification of Lepidoptera, with a strong correlation shown between rates of chromosome number changes and speciation (de Vos et al., 2020). The instability in lepidopteran chromosome numbers has mainly been studied from karyotype data but recently confirmed in genomic data (Chen et al., 2019), and changes within genera are known to encompass both neutral and adaptive evolution (Lucek, 2018; Vershinina and Lukhtanov, 2017). However, the level of rearrangement may be less than that in Polyplacophora.
 
@@ -83,13 +83,13 @@ Potential adaptive roles may be connected to contrasting mobility of different M
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102542/elife-102542-fig5-v1.jpg)
 
-**Figure 5.:** A) the bivalve Archivesica marisinica retains a plesiomorphic karyotype reflecting the 20 MLGs, (B) the chiton Liolophura japonica has large scale gene duplication in MLG11 and MLG17 on separate pseudochromosomes, (C) the scaphopod Siphonodetalium dalli has large scale gene duplication of MLG13 and MLG03 on separate pseudochromosomes, (D) the gastropod Rapana venosa demonstrates a nearly whole genome duplication with MLG20 not duplicated.Colours follow the presentation in Figure 3.
+**Figure 5.:** Colours follow the presentation in Figure 3.
 
 Earlier models based on karyotype data predicted three whole genome duplication events in the evolutionary history of living molluscs: in Neogastropoda, Stylommatophora, and coleoid cephalopods. Available genomes of Stylommatophora confirm whole genome duplication, as well as large scale gene duplications in Neogastropoda (Appendix 1—figure 6). In coleoid cephalopod genomes, the co-occurrence of loci from MLGs and intensive fusions (Appendix 1—figure 6) might not be easily resolved but may be more likely from the chromosome-disrupted processes reported in previous work (Albertin et al., 2022). By contrast, in Nautilus the linkage group that contains the conserved hox gene sets (Chr11, MLG16) shows no signal of co-occurrence with other MLGs or on other chromosomes (Appendix 1—figure 6). New results also show a partial and ancient genome duplication in the chiton Liolophura (Figures 2 and 4). Given that the MLGs are well conserved in all chitons if not their order (Appendix 1—figure 4), the event in Liolophura japonica is most likely a duplication instead of fission. Whole or partial genome duplication is now known from four molluscan classes, with contrasting patterns of ploidy (e.g. gastropods) or tandem (e.g. scaphopods) duplications (Figure 5).
 
 Reconstructing genome evolution is naturally more difficult for groups with high rates of intra-chromosomal rearrangement (Farré et al., 2019; Muffato et al., 2023). These patterns of co-occurrence of loci on the same chromosomes (synteny) should also persist for longer in evolutionary time, compared to faster rates of change in gene order (Damas et al., 2022; Simakov et al., 2022). Syntenic changes do not necessarily follow overall rates of translocation, which do not differ obviously among molluscs (Supplementary file 1, table S5). Confounding effects of rapid gene order or linkage group changes are not limited to issues of phylogenetic distance, when even closely related species have significant syntenic differences. Nonetheless, a focus on linkage group arrangements is a promising direction for the many unresolved questions of deep molluscan phylogeny. Recent studies have championed the importance of synteny-based studies on genome evolution, as a basis to understand deep divergences and also the general mechanisms that underlie genomic architecture, fusion, fission, and translocation (Mackintosh et al., 2023). A general trend in insect and vertebrates is for increasing chromosome numbers in derived lineages. Fusion events may be more common in more recently derived chitons or connected to specific adaptations.
 
-## Conclusions
+### Conclusions
 
 The relatively small number of reference quality genomes for most molluscan groups is a temporary limitation to these analyses. High heterozygosity seems to be very common in molluscs and is clearly a feature of chitons, which causes difficulty for high quality genome assembly. The heterozygosity for Callochiton at 4.12% far exceeds the 2.95% genomic heterozygosity reported as ‘one of the highest’ for Lepidoptera (García-Berro et al., 2023). Large-scale analyses based on genomics are equivocal about the drivers of genetic diversity, and further data from diverse clades must be included.
 

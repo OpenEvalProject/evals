@@ -16,18 +16,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02dxx6824 Departments of Molecular Medicine, The Scripps Research Institute, Scripps Jupiter United States
-2. https://ror.org/02dxx6824 Scripps Research Skaggs Graduate School of Chemical and Biological Science, The Scripps Research Institute, Scripps Jupiter United States
-3. https://ror.org/0153tk833 Division of Endocrinology and Metabolism, Center for Brain Immunology and Glia, Department of Neuroscience, University of Virginia Charlottesville United States
-4. https://ror.org/02dxx6824 Department of Neuroscience, The Scripps Research Institute, Scripps Jupiter United States
-5. https://ror.org/02dxx6824 Center on Aging,The Scripps Research Institute, Scripps Jupiter United States
-6. https://ror.org/03r0ha626 Department of Biology, Howard Hughes Medical Institute, University of Utah Salt Lake City United States
+1. Departments of Molecular Medicine, The Scripps Research Institute, Scripps Jupiter United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+2. Scripps Research Skaggs Graduate School of Chemical and Biological Science, The Scripps Research Institute, Scripps Jupiter United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+3. Division of Endocrinology and Metabolism, Center for Brain Immunology and Glia, Department of Neuroscience, University of Virginia Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+4. Department of Neuroscience, The Scripps Research Institute, Scripps Jupiter United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+5. Center on Aging,The Scripps Research Institute, Scripps Jupiter United States ([ROR:02dxx6824](https://ror.org/02dxx6824))
+6. Department of Biology, Howard Hughes Medical Institute, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-Rapid conversion of force into a biological signal enables living cells to respond to mechanical forces in their environment. The force is believed to initially affect the plasma membrane and then alter the behavior of membrane proteins. Phospholipase D2 (PLD2) is a mechanosensitive enzyme that is regulated by a structured membrane-lipid site comprised of cholesterol and saturated ganglioside (GM1). Here we show stretch activation of TWIK-related K + channel (TREK-1) is mechanically evoked by PLD2 and spatial patterning involving ordered GM1 and 4,5-bisphosphate (PIP 2 ) clusters in mammalian cells. First, mechanical force deforms the ordered lipids, which disrupts the interaction of PLD2 with the GM1 lipids and allows a complex of TREK-1 and PLD2 to associate with PIP 2 clusters. The association with PIP 2 activates the enzyme, which produces the second messenger phosphatidic acid (PA) that gates the channel. Co-expression of catalytically inactive PLD2 inhibits TREK-1 stretch currents in a biological membrane. Cellular uptake of cholesterol inhibits TREK-1 currents in culture and depletion of cholesterol from astrocytes releases TREK-1 from GM1 lipids in mouse brain. Depletion of the PLD2 ortholog in flies results in hypersensitivity to mechanical force. We conclude PLD2 mechanosensitivity combines with TREK-1 ion permeability to elicit a mechanically evoked response.
+Rapid conversion of force into a biological signal enables living cells to respond to mechanical forces in their environment. The force is believed to initially affect the plasma membrane and then alter the behavior of membrane proteins. Phospholipase D2 (PLD2) is a mechanosensitive enzyme that is regulated by a structured membrane-lipid site comprised of cholesterol and saturated ganglioside (GM1). Here we show stretch activation of TWIK-related K+ channel (TREK-1) is mechanically evoked by PLD2 and spatial patterning involving ordered GM1 and 4,5-bisphosphate (PIP2) clusters in mammalian cells. First, mechanical force deforms the ordered lipids, which disrupts the interaction of PLD2 with the GM1 lipids and allows a complex of TREK-1 and PLD2 to associate with PIP2 clusters. The association with PIP2 activates the enzyme, which produces the second messenger phosphatidic acid (PA) that gates the channel. Co-expression of catalytically inactive PLD2 inhibits TREK-1 stretch currents in a biological membrane. Cellular uptake of cholesterol inhibits TREK-1 currents in culture and depletion of cholesterol from astrocytes releases TREK-1 from GM1 lipids in mouse brain. Depletion of the PLD2 ortholog in flies results in hypersensitivity to mechanical force. We conclude PLD2 mechanosensitivity combines with TREK-1 ion permeability to elicit a mechanically evoked response.
 
 ## Introduction
 
@@ -41,11 +41,23 @@ Notably, the C-terminus responsible for binding PLD2 is essential for TREK-1 mec
 
 ## Results
 
-## Dependence on PLD2 for TREK-1 activation
+### Dependence on PLD2 for TREK-1 activation
 
 To assess the involvement of PLD2 mechanosensitivity to a mechanically evoked current from TREK-1 channels, we conducted pressure current measurements in HEK293T cells both with and without the expression of a catalytically inactive K758R PLD2 mutant (xPLD2) (Toschi et al., 2009). We selected HEK293T cells for this study due to their minimal endogenous potassium currents, which allowed us to attribute the recorded currents specifically to TREK-1. The expression of TREK-1 was tracked using an EGFP tag attached to the channels C-terminus, and we confirmed successful expression of all constructs, observing their presence on the cell surface (Figure 2—figure supplement 1A and B).
 
 In intact HEK293T cells, the overexpression of xPLD2 substantially inhibited nearly all mechanically evoked TREK-1 currents (Figure 1A–C). When currents were measured in the inside out configuration under negative pressure conditions (from 0 to –60 mmHg), they exhibited a reduction of over 80% from 0.181 ± 0.04–0.035 ± 0.013 pA/µm2, despite an overall increase in the total levels of TREK-1 (Figure 2—figure supplement 1B and C). This observation suggests that if the effect is through a specific PLD2-TREK-1 interaction, then removal of the PLD2 binding domain should also inhibit PLD2-evoked currents.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Representative traces from pulled patches of human TREK-1 overexpressed in HEK293T cells with mouse phospholipase D2 (mPLD2, green traces) (A) or catalytically inactive mouse PLD2 (xPLD2, red) (B) under pressure clamp (0–60 mmHg at +30 mV). (C) The data, after subtracting HEK293T background current (0.04 ± 0.02 pA/µm2 n = 5 [inset]), are summarized for –60 mmHg. Compared to endogenous PLD2, the expression of xPLD2 eliminated the majority of detectible TREK-1 pressure current (p<0.007, n = 16–23), as did a functional truncated TREK-1 (TREK trunc) lacking the PLD2 binding site (p=0.002, n = 15–23). The inset compares mock-transfected HEK293T cells with TREK trunc and full-length TREK-1 (TREK FL)+xPLD2, indicative of direct TREK-1 activation. Asterisks indicate significance relative to TREK FL, except where noted by a bar. (D) Whole-cell TREK-1 potassium currents with and without xPLD2. TREK-1 is expressed and functional in the presence of xPLD2. A nonfunctional C-terminal truncation (C321) of TREK-1 (xTREK) is shown with no appreciable current HEK293T cells. (E) Cartoon illustrating PLD2-dependent TREK-1 opening in HEK293T cellular membrane. On the left, membrane stretch (black arrows) mechanically activates PLD2. When PLD2 is active, it makes phosphatidic acid (PA), which evokes the open state of TREK-1. On the right, in the absence of mechanically generated PA, the closed channels remain closed despite the presence of membrane tension. Statistical comparisons were made with an unpaired Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The plasma membrane is composed of lipids that can cluster into separate and distinct domains with unique properties such as thickness and charge. Domains for saturated gangliosides (GM1) are shown separate from phosphatidylinositol 4,5-bisphosphate (PIP2) and phosphatidylinositol 3,4,5 triphosphate (PIP3). These domains contain proteins that are targeted to the domain through post-translational acylation. (B) The types of acylation are shown along with their targeting location. (C, top) The enzyme phospholipase D2 (PLD2, green) is shown with its acylation that binds to the saturated ordered site in GM1. The site discriminates palmitoylated proteins from prenylated proteins. This is called the anesthetic/palmitate (AP) site because anesthetics also compete for this site (not shown) (Pavel et al., 2020; Petersen et al., 2020). (C, bottom) Upon chemical or mechanical disruption of the domain, the binding site is disrupted releasing PLD2 from the AP site. PLD2 is then free to bind PIP2 where it has access to its substrate phosphatidylcholine (PC). (D) Cartoon depicting a mechanically evoked current through a chemical intermediate.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Illustration depicting the C-terminal end of TREK-1. The red region indicates the truncation site used, and the predicted PLD binding site for PLD2 is highlighted. The last transmembrane helix (M4) is depicted as a gray cylinder, and the anionic lipid binding site is highlighted in blue. (B) Individual cell traces showing current densities (pA/µm2) for TREK-1 co-expressed with PLD2 (green), TREK-1 co-expressed with xPLD2 (red), and TREK-1 with a C-terminal truncation (TREK trunc, gray). (C) Half maximal TREK-1 pressure current within a non-saturating pressure range of 0–60 mmHg. Overexpression of PLD2 significantly reduces the apparent pressure required to activate TREK-1 (p<0.05, n = 15–20). (D) Representative cell recording displaying TREK-1 pressure currents in response to pressure steps from 0 to 60 mmHg, taken in 10 mmHg increments. The bottom-left panel illustrates the activation step, and the bottom-right panel shows the deactivation. Both activation and deactivation processes appear to occur within sub-5 ms time frames, near the limit of detection for the experimental setup. (E) Membrane inactivation process. After mechanical stretching, the membrane relaxes, allowing the palmitates from PLD2, to re-associate with the GM1 lipids. Consequently, TREK is drawn into GM1 clusters through its interaction with PLD2. In the absence of phosphatidic acid (PA) and due to an increased hydrophobic thickness of the membrane, the channel’s gate assumes the down (closed) position, marked with an ‘X’. (F) Direct inactivation of TREK-1 through an intermediate. Upon reversal of mechanical stretch (relaxation of the membrane), the channel may transition into a closed conformation due to direct pressure exerted on the channel (indicated by the large red arrows). In a thin membrane, this action could displace the gating helix up to 8 Å away from the membrane, disrupting the PLD2/TREK-1 interaction. This putative intermediate state is expected to be transient as TREK-1 would likely re-associate in thicker lipid regions.
 
 To investigate further, we eliminated the putative PLD2 binding site on TREK-1 by truncating the C-terminus at residue 322 (TREK trunc) (see Figure 1—figure supplement 2A). The pressure-induced current in TREK trunc decreased by more than 85%, measuring 0.025 ± 0.013 pA/µm2 (Figure 1C, Figure 1—figure supplement 2B). Remarkably, this reduction was nearly identical to the results obtained when full-length TREK-1 (TREK FL) was expressed in conjunction with xPLD2. Importantly, previous studies have confirmed the functionality and mechanosensitivity of this similar truncated TREK-1 when reconstituted into crude soy PC lipids (Brohawn et al., 2014a).
 
@@ -59,9 +71,21 @@ Due to the minimal pressure-activated TREK-1 current observed in the presence of
 
 As anticipated, we observed TREK-1 basal current both in the presence (16.9 ± 4.3 pA/pF) and absence (24.0 ± 4.2 pA/pF) of xPLD2 (Comoglio et al., 2014; Figure 1D). These basal resting currents were recorded at 0 mV in HEK293T cells overexpressing TREK-1 FL with and without xPLD2. Notably, the current in the presence of xPLD2 was significantly higher than that observed in a nonfunctional control TREK-1 (xTREK), which we previously determined to exhibit no measurable current in unrelated studies. These controls affirm that TREK-1 FL is expressed and functionally active in the presence of xPLD2. Moreover, they highlight the essential role of PLD2 in pressure-activated currents (Figure 1C), contrasting with the basal leak currents (Figure 1D; TREK FL, gray bar vs. +xPLD2, red bar), which did not necessitate PLD2.
 
-## Mechanical activation of TREK-1 by movement between nanodomains
+### Mechanical activation of TREK-1 by movement between nanodomains
 
 As previously reported in a prior publication, we proposed that fluid shear induces the disassociation of PLD2 with cholesterol-dependent GM1 clusters and the association with PIP2 clusters, leading to a change in spatial organization and activation of the enzyme (Figure 1—figure supplement 1; Petersen et al., 2016). Given that TREK-1 binds to PLD2, we hypothesized the channel could undergo a similar mechanically induced spatial reorganization between GM1 and PIP2 clusters. To visualize this spatial patterning of TREK-1 in response to shear forces, we developed a method to chemically fix membranes during shear (Figure 2A). In our experiments, we employed cultured HEK293T cells expressing both TREK-1 and mPLD, which matched the conditions used in our electrophysiology experiments. These cells were subjected to shear forces of 3 dynes/cm2, a physiologically relevant force to cells (Petersen et al., 2016; Schneck, 1992), using a rotary shear approach. Subsequently, the cells were fixed and labeled for two- or three-color dSTORM. TREK-1 proteins were tagged with EGFP, leveraging its inherent self-blinking properties for detection (Call et al., 2023). Lipids were labeled using Alexa 647 (A647) anti-PIP2 antibodies or A647-labeled cholera toxin B (CTxB), which selectively bind to PIP2 and GM1 clusters, respectively (Petersen et al., 2016). By concurrently labeling both lipids and proteins, we were able to monitor the dynamic changes in spatial organization within nanoscopic lipid domains (Yuan and Hansen, 2023). To access the PIP2 domains on the inner leaflet, cells were permeabilized (see ‘Materials and methods’). The effectiveness of cellular staining was confirmed through confocal microscopy (see Figure 2—figure supplement 1A–G).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the shear fixing protocol. Cells grown in a shear chamber are fixed while shear force is applied. Fixed samples are then labeled with fluorescent antibodies or CTxB and subjected to imaging for nanoscopic movement (<250 nm) by two-color super-resolution imaging and pair correlation (Pair corr.). (B) EGFP-STORM imaging of TREK-1:EGFP and Alexa 647 cholera toxin B (CTxB) with and without shear in HEK293T cells. The middle panel, outlined in gray, is a zoomed portion of the cell surface outlined in the top panel. The bottom panel is a zoomed portion of the cell surface from a cell treated with shear (see Figure 2—figure supplement 1I for full image). Locations of TREK-1/GM1 proximity are outlined with a white circle. (C) Pair correlation analysis (Pair corr.) of TREK-1 with GM1 lipids before and after shear (3 dynes/cm2; green) determined by EGFP-STORM imaging when mouse phospholipase D2 (mPLD2) is overexpressed (non-permeabilized). The significance of the Pair corr. change is shown across the range of radii 50–70 nm (along the curve) and at a single 50 nm radius (inset). (D) Combined EGFP-STORM imaging of TREK-1 with Alexa 647-labeled PIP2 in the presence of overexpressed mPLD2 (permeabilized). Significance is shown for radii 70–85 nm along the curve and at a single 225 nm radius (inset). (E, F) Combined EGFP-STORM of TREK-1 in the presence of catalytically inactive PLD2 (xPLD2). Shear (3 dynes/cm2) of TREK-1 is shown as a red curve with xPLD2 present. The experiments are as described in panels (C) and (D). In (E) a significant shift in TREK-1/GM1 Pair corr. is shown for 50–70 nm (along the curve) and at a 50 nm radius (inset). In (F) Pair corr. did not appear to shift significantly, as determined by a Student’s t-test or for multiple point a nested Student’s t-test; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (G) Cartoon illustrating the association of TREK-1 with GM1 lipids prior to shear (top) and with PIP2 lipids (bottom) in response to mechanical shear (red arrow).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Confocal images of HEK293T cells overexpressing human TREK-1 tagged with EGFP. The cells were fixed and stained with anti-TREK antibody, a secondary cy3b antibody (red) and A647 conjugated cholesterol toxin B (CTxB, gray) to label lipids. In the absence of transfection, no GFP signal is observed. A negative control, lacking the primary antibody, exhibits no fluorescence. (B) Visualization of TREK-1 overexpression in HEK293T cells prepared identical to the cells used for ecophysiology experiments in Figure 1. (C) Overexpression of catalytically inactive PLD2 (xPLD) appears to enhance TREK-1 expression. Truncating the c-terminus (TREK trunc) has no discernible effect on expression TREK-1 at the plasma membrane. (D) Shear and overexpression of mPLD2 reduce PIP2 levels on the plasma membrane. (E) Immunostaining of endogenous TREK-1 in neuroblastoma 2a (N2a) cells. (F) Both mPLD2 overexpression and shear dramatically reduced the amount of GM1 observed by fluorescent staining with cholera toxin B (CTxB). (G) Assessment of the impact of shear on TREK-1 levels in HEK293T cells. These cells were transfected with full-length TREK-1 (TREK FL) and either xPLD2 or mPLD2. After 24 hr, the cells were subjected to 3 dynes/cm2 rotary shear and fixed. Both PLD2 overexpression and shear resulted in a reduction of TREK-1 expression, likely due to endocytosis processes. (H) Cartoon illustrating the role of shear, PLD2, xPLD, in endocytosis. Shear and mPLD2 both activate TREK-1 and decrease TREK-1 surface levels. Presumably the decrease is due to endocytosis since mPLD2 and shear are known to increase endocytosis and xPLD2 is known to block endocytosis. (I) dSTORM images showcasing sheared HEK293T cells expressing TREK-1. The image corresponds to the cell depicted in Figure 2B. The highlighted box represents an expanded region of this image.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Two-color dSTORM using a Cy3b-labeled TREK-1 antibody after mechanical shear in the presence of overexpressed mouse PLD2 (mPLD2) and full-length human TREK-1. HEK293T cells were fixed, permeabilized, and stained with a Cy3b-conjugated anti-TREK-1 antibody. Pair correlation (Pair corr.) analysis of TREK-1 with alexa-647-conjugated cholera toxin B (CTxB) was conducted via dSTORM, revealing a decrease in Pair corr. with 3 dynes/cm2 orbital fluid shear. (B) Similar experiments as in panel (A), but with Pair corr. analysis from EGFP, which was C-terminally expressed with TREK-1 instead of using a Cy3b-labeled anti-TREK-1 antibody. The use of EGFP in dSTORM buffers resulted in a robust dSTORM signal. This dataset also offers a direct comparison between permeabilized and non-permeabilized cells in Figure 2B. Pair correlation of TREK-1 with GM1 showed dramatic decreased under three different conditions. (C) A comparison of Cy3b-STORM with EGFP-STORM as observed in Figure 2E in the presence of xPLD2. (D, E) A comparison between non-permeabilized (a) and permeabilized (b) HEK293T cells overexpressing full-length human TREK-1 (TREK FL) and endogenous PLD2 (enPLD2), that is, without PLD2 overexpression. Taken from Call et al., 2023. (F) Pair correlation between TREK-1 and PIP2 increased slightly after mechanical shear. Insets in (A–D) illustrate the variability at a single radius. Statistical analysis for single points was conducted using a Student’s t-test, while statistical comparisons at multiple radii were performed with a nested Student’s t-test. (G) Schematic representation of brain slices prepared for dSTORM. Mouse brains, fixed through whole-body perfusion, were sliced and labeled with Cy3b-anti-TREK-1 antibody and A647 CTxB. These slices were mounted on a cover slip with fiberglass filter paper on top to secure the tissue during imaging with dSTORM buffer added to the filter paper. The fluorescent background (640 nm) was undetectable even at saturating light intensities. (H) Example images of brain slices from control and astrocyte-specific SREBP2 null mice. TREK-1 was expressed in most brain regions but not uniformly (left panel). Pair correlation analysis was performed on regions with both TREK-1 and CTxB labeling. The displayed slice is a coronal section near the hippocampus, although the precise region of interest is unspecified. Significance was determined by a Student’s t-test for a single point. For multiple points, a nested Student’s t-test was used (*p<0.05, ** p<0.01, *** p<0.001, ****p<0.0001).
 
 Before the application of shear forces, TREK-1 and GM1 lipids displayed a robust correlation (Figure 2B and C), suggesting a close association between TREK-1 and GM1 lipids. However, after the application of shear forces, this correlation significantly diminished (p<0.01 at 50 nm). A similar experiment using a cy3b-labeled anti-TREK-1 antibody yielded nearly identical results, confirming the validity of both our EGFP-dSTORM method (Call et al., 2023) and the specificity of the TREK-1 antibody (Figure 1—figure supplements 1A and 2A).
 
@@ -71,13 +95,21 @@ Subsequently, we investigated the rearrangement of TREK-1 induced by shear force
 
 In the presence of xPLD2, shear caused TREK-1 to leave GM1 domains (Figure 2E). However, unlike the response observed with mPLD2, the association of TREK-1 with PIP2 clusters remained relatively weak following shear forces (Figure 2F), despite an overall increase in TREK-1 and PIP2 levels in the membrane prior to shear (Figure 2—figure supplement 1C and D). Figure 2G shows a model of shear-induced movement of TREK-1 from GM1 to PIP2 clusters.
 
-## Mechanism of PLD2 activation by shear
+### Mechanism of PLD2 activation by shear
 
 It is presumed that TREK-1 translocates between nanodomains as a complex with PLD2 (Comoglio et al., 2014). Lacking its own palmitoylation, TREK-1 interacts with PLD2 through its unstructured C-terminus. In earlier research, we demonstrated that cholesterol drives PLD2 associates with GM1 lipids. The application of mechanical force activated PLD2, presumably through the release of PLD2 from GM1 lipids. However, this PLD2 patterning under mechanical shear has not been directly demonstrated with dSTORM.
 
 To validate our proposed mechanism regarding the shear-induced movement of PLD2 with dSTORM, we employed calibrated shear chambers (ibidi µ-Slide I0.4 parallel-plate) with cultured C2C12 muscle cells (mouse myocytes) and N2a mouse neuroblastoma cells, which naturally express TREK-1 (see Figure 2—figure supplement 1E). Utilizing endogenous expression helped circumvent potential artifacts that may arise from artificially saturating GM1 clusters through protein overexpression.
 
 Our shear experiments were initiated by perfusing phosphate-buffered saline (PBS) through the calibrated shear chambers, applying a precisely controlled force of 3 dynes/cm2. To maintain a constant temperature of 37℃, we employed a digitally controlled inline heater. Immediately following the application of shear forces (within <10 s), we introduced fixative agents into the shear buffer, facilitating the rapid fixation of cells in their mechanically stimulated state. This approach paralleled the methodology used in our experiments involving rotary shear (see Figure 3A, Figure 3—figure supplement 1A), but with tighter control of temperature.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig3-v1.jpg)
+
+**Figure 3.:** (A) Two-color dSTORM images of fixed C2C12 cells with and without (3 dynes/cm2) shear. Cells were labeled with fluorescent CTxB (ganglioside GM1) or antibodies (anti-PIP2 or anti-PLD2 as indicated) and sheared with the temperature held constant at 37℃. Scale bar = 1 µm. (B) Pair correlation analysis (Pair corr., unitless) of PLD2 with GM1 or PIP2 lipids at a given radius. Error bars are displayed at a given radius. A bar graph (inset) is shown at the shortest calculated radius of 5 nm (single point on the x-axis). Prior to shear (gray line), PLD2 associates with GM1 clusters; after shear, there is almost no association. (C) The opposite was true for phosphatidylinositol 4,5 bisphosphate (PIP2). Prior to shear, PLD2 does not associated significantly with PIP2 clusters, after shear, its association increases dramatically. (D) Cluster analysis of the GM1 lipids from the C2C12 cells shown in (A). (E) Cluster analysis of GM1 lipids in neuroblastoma 2a (N2a) after 3 dynes/cm2 shear force. (F) Fluorescent cholesterol assay. N2a cells grown in 48-well plates were sheared with 3 dynes/cm2 orbital fluid shear, fixed with shear (10 min), and compared to control cells with no shear using a fluorescent cholesterol assay. After shear, a second set of control cells were allowed to recover with no shear and fixative for 30 s (recovery), otherwise the cells were treated identical to experimental cells (n = 5–10). (G) A live PLD activity assay demonstrates that fluid shear (3 dynes/cm2) increases substrate hydrolysis in cultured N2a cells (n > 800 clusters from 5 to 6 cells). (H) Depiction of shear thinning activating PLD2. Left: the palmitates of PLD2 (green lines) are shown bound to the palmitate site in ordered GM1 lipids. Right: after shear cholesterol is reduced, and GM1 lipids are deformed. The deformed surface no longer binds palmitates efficiently allowing the palmitates move freely—a process known as shear thinning. Statistical comparisons were made with an unpaired Student’s t-test (*p<0.05, ***p<0.001, ****p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative images illustrating the impact of shear on the apparent size of GM1 (maroon and green) in muscle C2C12 and neuronal N2a cells, respectively. PIP2 clusters in C2C12 cells are shown in blue. When shear force is applied, the apparent size decreases. Scale bars = 1 µm. (B) Cluster analysis of PIP2 demonstrates a small but statistically significant decrease in size. (C) Complex formation between TREK-1 and PLD2 before and after shear in C2C12 cells. Pair correlations analysis of TREK-1 and PLD2 before (gray line) and after (red line) 3 dynes/cm2 shear. Their association remains almost identical in both states. (D) Staining of TREK-1 with phosphatidylinositol 4,5 bisphosphate (PIP2) antibody in C2C12 cells. Before shear (gray line) TREK-1 exhibits significant association with PIP2. After shear, this association further enhanced, suggesting some TREK-1 complexes move to PIP2 clusters in C2C12 cells. (E) Pair corr. of TREK-1 with GM1 clusters (CTxB) measured by dSTORM in C2C12 cells prior to cholesterol loading, as shown in Figure 4B. In the low cholesterol state, endogenous TREK-1 shows minimal association with GM1 lipids. (F) Shear thinning model for PLD2. Cholesterol is depicted as packing with saturated lipids and saturated palmitate via Van der Waals interactions (within 5 nm). Unsaturated lipids contain a double bond that alters the packing surface of a lipid. In a perfectly ordered state, palmitoylated proteins are ordered with the GM1 lipids and cholesterol. In the disordered region, palmitates move fluidly within the membrane. After shear, the GM1 lipids remain ordered but deformed. The palmitates no longer efficiently pack with the GM1 lipids, reducing their affinity for the ordered domain and allowing the palmitates to move in the membrane. (G) Fluorescence recovery after photobleaching (FRAP) imaging to examine potential labeling artifacts (Moon et al., 2017; Raghunathan and Kenworthy, 2018; Wang et al., 2018) of pentavalent CTxB that might persist after fixation. The duration of photo bleaching is indicated in gray. The blue line shows that fixation with paraformaldehyde (PFA) and glutaraldehyde effectively restricts the large-scale movement of lipids in fixed cells compared to live cells (red). (H) For both PIP2 and GM1 labeling, shear did not significantly decrease the overall counts measured with dSTORM in C2C12 cells (p>0.05, Student’s t-test).
 
 Utilizing two-color dSTORM and analysis by the pair correlation function, we observed that shear forces introduce the mobilization of PLD2 within the cell membrane, and this effect was independent of temperature fluctuations. Prior to the application of shear forces, PLD2 exhibited a strong association with GM1 clusters (Figure 3B). However, after the application of shear forces, the correlation of PLD2 with GM1 clusters decreased significantly, while it robustly increased in association with PIP2 clusters (Figure 3C). Notably, the release of PLD2 from GM1 domains induced by shear forces was more pronounced than the disruption caused by anesthetic agents, as previously reported (Pavel et al., 2020). The stability in temperature, maintained within a range of ±0.1℃, suggests the mechanism is unlikely to be attributed to the thermal melting of ordered lipids near a phase transition state.
 
@@ -89,9 +121,17 @@ Our results revealed a 25% reduction in free cholesterol levels in N2a cells exp
 
 In C2C12 cells, TREK-1 and PLD2 exhibited a strong correlation both before (Figure 3—figure supplement 1C, gray trace) and after shear (Figure 3—figure supplement 1C, red trace), providing further evidence that they form a complex at least intermittently, in both shear and unsheared states. Following shear, a minor fraction of TREK-1 was found to associate with PIP2 (Figure 3—figure supplement 1D). Interestingly, in contrast to HEK293T cells, C2C12 cells displayed minimal TREK-1/GM1 correlation (Figure 3—figure supplement 1E, gray trace). Notably, PLD2 regulation is known to be influenced by cholesterol (Petersen et al., 2016). In various cell types, we have observed that cultured cells tend to have lower cholesterol levels than human tissues (Wang et al., 2023; Wang et al., 2021; Yuan et al., 2022). These observations lead us to consider the possibility of introducing more physiological levels of cholesterol in our experimental setup for cultured cells.
 
-## Regulation of TREK-1 clustering by cholesterol and GM1 lipids
+### Regulation of TREK-1 clustering by cholesterol and GM1 lipids
 
 Cholesterol levels, especially in the brain, can be notably high (Hansen, 2023; Zhang and Liu, 2015). We hypothesized that cholesterol might influence the endogenous TREK-1 to associate with PLD2 in GM1 clusters. To test this hypothesis, we introduced cholesterol into C2C12 cells using apolipoprotein E (apoE) lipidated with 10% serum as apoE is a naturally occurring cholesterol transport protein (Wang et al., 2023; Wang et al., 2021; Yuan et al., 2022; see Figure 4A). Remarkably, lipidated apoE induced a substantial clustering of TREK-1 with GM1 lipids in membranes of C2C12 cells (Figure 4B). This effect was also observed with TREK-1 in N2a cells. Importantly, the application of fluid shear (3 dynes/cm2) completely reversed the effect of cholesterol (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig4-v1.jpg)
+
+**Figure 4.:** (A) Uptake of cholesterol into cultured cells using the cholesterol transport protein apolipoprotein E (apoE). (B) Cholesterol/lipid uptake into C2C12 cells with 4 µg/ml (~110 nM apoE, purple line). Cholesterol dramatically increases TREK-1 correlation of TREK-1 with GM1-labeled lipids. Without cholesterol (gray line) very little TREK-1 clusters with GM1 lipids. Scale bars = 1 µm. (C) Pair correlation (Pair corr.) of TREK-1 and CTxB, localized within 5 nm of each other, are shown plotted after cholesterol treatment (apoE + serum, purple shading) or treatment with 3 dynes/cm2 shear (red shading). Cholesterol increased TREK-1 association almost fivefold and shear reversed the effect (n = 4–7); unpaired Student’s t-test. (D) Current densities from whole-cell patch-clamp recordings are shown with and without cholesterol loading with 4 µg/ml apoE in HEK293T cells over expressing human TREK-1. Increasing cholesterol inhibited the channel approximately threefold (Student’s t-test; *p<0.05) (E) Reduction in neuronal cholesterol results in a decrease in correlation between TREK-1 and GM1 cluster in brain slices from a hGFAP-Cre driving the SB2 knockout mouse and its Flox control. Student’s t-test at 25 nm *p,0.05, nested Student’s t-test at 25–50 nm (****p<0.0001, n = 20–24 unspecified cortical regions). (F) Proposed model for cluster associated TREK-1 activation and inhibition. In high cholesterol, TREK-1 clusters with PLD2 and ordered (thick) GM1 lipids inhibiting the channel. In low cholesterol, TREK-1 is partially clustered closer to PIP2 generating basal TREK-1 activity (see also Figure 1C). After shear, the order of GM1 clusters (dark gray) is disrupted further increasing PLD2 and TREK-1 clustering with PIP2 lipids (blue).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Top: in domain-mediated mechanosensation, in an unstimulated state, the palmitate site within GM1 domains is intact and binds tightly to palmitates. This tight affinity sequesters the PLD2/TREK-1 complex away from its activating lipids phosphatidylcholine (PC, yellow) and phosphatidylinositol 4,5-bisphosphate (PIP2, blue). Right: upon mechanical stimulation, the palmitate site is disrupted and the PLD2/TREK-1 complex is released, allowing it to diffuse within the plasma membrane and bind to PIP2. Bottom: upon PIP2 binding, PLD2 is becomes activated and makes phosphatidic acid (PA, red), transducing the mechanical signal into a chemical signal. This chemical signal then binds to and activates TREK-1, initiating chemical-to-electrical signal transduction. Left: when the stimulation is removed, the lipid domain reforms, causing the complex to be re-sequestered. The process results in a return to steady-state conditions, as depicted in the top panel.
 
 We anticipated that the cholesterol-induced association of TREK-1 with GM1 lipids would lead to a reduction in TREK-1 currents as PLD2 would be inhibited due to a lack of substrate. To directly assess the activity of TREK-1 under conditions of elevated cellular cholesterol, we overexpressed TREK-1 in HEK293T cells and quantified the current density in whole-cell patch-clamp mode, both with and without cholesterol uptake (Figure 4D). Consistent with our proposed model, TREK-1 current density decreased nearly 2.5-fold in cholesterol-loaded cells, and this reduction in current was statistically significant (p<0.05).
 
@@ -103,7 +143,7 @@ In flox control mice (wild-type SREBP2), TREK-1/GM1 correlation exhibited a dist
 
 Figure 4F presents a comprehensive model detailing the regulation of TREK-1 by astrocyte-derived cholesterol, using the insights derived from both cultured cells and ex vivo studies. In this model, cholesterol originating from astrocytes is transported to neurons via apoE. Under conditions of elevated membrane cholesterol, TREK-1 forms associations with inhibitory GM1 lipids, a scenario in which PLD2 has limited substrate availability. Conversely, when membrane cholesterol levels are reduced, TREK-1 relocates away from GM1 lipids toward activating PIP2 lipids. In this context, PLD2 gains improved access to its substrate phosphatidylcholine (PC), leading to the production of lipid agonists such as PA, which ultimately evoke activation of the TREK-1 channel (see also Figure 4—figure supplement 1).
 
-## Direct activation of PLD2 by osmotic stretch
+### Direct activation of PLD2 by osmotic stretch
 
 Osmotic stretch is a well-documented activator of TREK-1 (Patel et al., 1998). To investigate whether osmotic stretch also activates PLD2, we conducted experiments to monitor PLD product release in live cells subjected to hypotonic stretch. Our findings revealed that membrane stretch by a 70 mOsm swell (representing a high degree of stress) led to approximately 50% increase in PLD2 activity in N2a cells (Figure 5A). It is worth noting that this level of activation, although significant, was less pronounced compared to shear stress in N2a cells (Figure 3E), which increased approximately threefold in activity.
 
@@ -113,11 +153,19 @@ Osmotic stretch is a well-documented activator of TREK-1 (Patel et al., 1998). T
 
 Subsequently, we conducted dSTORM experiments to investigate whether stretch had the capacity to release PLD2 from GM1 lipids within the membranes of N2a cells. In these experiments, cells were exposed to either a hypotonic solution with an osmolality of 70 mOsm (indicating a state of swelling) or an isotonic solution with an osmolality of 310 mOsm (representing a control condition) for 15 min at 37℃. Following this treatment, the cells were fixed, labeled, and subjected to imaging using the same procedures employed in the shear stress experiments. Our results, consistent with the outcomes of shear stress experiments and PLD2 assay, clearly demonstrated a discernible shift in the spatial distribution of PLD2, transitioning from ordered GM1 clusters to the PIP2 clusters after osmotic stretch (Figure 5B–D).
 
-## PA regulation of mechanosensitivity thresholds in vivo
+### PA regulation of mechanosensitivity thresholds in vivo
 
 In order to gain deeper insights into the in vivo role of PLD2 in mechanotransduction, we conducted investigations into mechano-thresholds and pain perception in Drosophila, employing a PLD-knockout model (Thakur et al., 2016). It is worth noting that, while the specific downstream effectors of PLD in fruit flies remain unidentified, and they possess only distantly related TREK-1 orthologs, (as discussed in a later section), the utilization of fruit flies as a model organism is advantageous because they possess a single PLD gene (dPLD).
 
 Our analysis revealed the presence of GM1 domains in dissected fly brains, and we observed that dPLD exhibited a robust response to shear stress of 3 dynes/cm2 when cultured in neuronally derived fly cell line, BG2-c2 (see Figure 6A and B). The activity of PLD increased by nearly fourfold in the fly cell line (Figure 6B), a result consistent with the response of PLD to mechanical force observed in HEK293T cells (Figure 3G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig6-v1.jpg)
+
+**Figure 6.:** (A) Cholera toxin B (CTxB) robustly labels GM1 lipids (GM1, green) throughout the brain of Drosophila (left). The zoomed section (right) shows that most of the labeling is found on the membrane. There are notable variations in the amount of CTxB labeling, with some cells expressing GM1 over the entire membrane (black arrows) while others only have labeling in small puncta (white arrow). (B) Shear (3 dynes/cm2) robustly activates PLD2 in a live PLD assay with cultures neuronal insect cells. (C) Measurements of Drosophila mechanosensation in vivo. Animals with or without the pldnull gene were stimulated by increasing amounts of mechanical vibration (see Figure 6—figure supplement 1). Flies lacking PLD2 had a decreased threshold (i.e., more sensitivity to mechanical stimulation) compared to genetically matched controls (w1118) (p=0.02, n = 28–29), consistent with the prediction that PA decreases excitability of nerves. (D) The same result was observed in a PLDRNAi line which results in PLD knockdown only in the neurons of Drosophila (p=0.002, n = 28–29), Mann–Whitney test. (E, F) Flies were subjected to increasing voltages of electrical shock in a two-choice assay. PLD-KD flies showed an increased sensitivity to shock when compared with wild-type flies. PLDRNAi flies had a higher aversion to shock at 10 V (p=0.0213, n = 21) and 20 V (p=0.0492, n = 27–30), but not at 30 V (p=0.672, n = 12). (G) Proposed role of PLD2 in regulating mechanical thresholds. PA is a signaling lipid in the membrane that activates hyperpolarizing channels and transporters. When PA is low the membrane is less polarized, and cells are more sensitive to mechanical activation. The downstream targets are unknown (shown with a ‘?’). Flies lack a known mechanosensitive TREK-1 homolog.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89465/elife-89465-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Illustration of the experimental setup for applying mechanical stimulation to Drosophila flies. A series of six increasing vibrations (top) used to stimulate the flies. A vibration motor was attached to the back of the chamber containing the flies, and their responses were monitored using a web camera to assess stimulation-induced arousal (bottom). (B) Illustration of shock avoidance assay.
 
 Subsequently, we preceded to examine the in vivo role for PA in mechanosensation employing single-animal measurements of arousal threshold (Murphy et al., 2017; Murphy et al., 2016; see Figure 6—figure supplement 1A). The arousal assay quantifies the amount of mechanical stimulation required to elicit movement from a resting fly. Over a period of 24 hr, the flies were exposed to a series of incremental vibrational stimuli every 30 min. For each series, the threshold of stimulation necessary to induce movement in the fly, as indicated by observable motion, was recorded using automated machine vision tracking. These recorded measurements were then compared to genetically matched control groups.
 
@@ -163,11 +211,217 @@ The mechanical disruption of PLD2 with GM1 lipids and its association with PIP2 
 
 ## Materials and methods
 
-## Cell culture and gene expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>HEK293T</td>
+      <td>Cat# CRL-3216; RRID:CVCL_0063</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>N2a</td>
+      <td>ATCC</td>
+      <td>N2a</td>
+      <td>Cat# CCL-131; RRID:CVCL_0470</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>C2C12</td>
+      <td>Cat# CRL-1772</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>TREK-1</td>
+      <td>PMID:18004376</td>
+      <td>Dr. Steven Long (Sloan Kettering)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>mPLD2</td>
+      <td>PMID:9867870</td>
+      <td>Dr. Michael Frohman (Stony Brook)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>xPLD2</td>
+      <td>PMID:9867870</td>
+      <td>Dr. Michael Frohman (Stony Brook)</td>
+      <td>Catalytically dead PLD2</td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>BG2-c2</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>DGRC Stock 53; https://dgrc.bio.indiana.edu//stock/53; RRID:CVCL_Z719</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>PLDnull</td>
+      <td>PMID:27848911</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (D. melanogaster)</td>
+      <td>PLD-KD</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>Stock#: v106137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>SREBP2-KO</td>
+      <td>PMID:34385305</td>
+      <td>Heather Ferris (University of Virginia)</td>
+      <td>Brain slices from SREBP2-KO animals</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TREK-1 (rabbit, polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-50412; RRID:AB_2131048;</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TREK-1 (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-398449</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PIP2 (mouse, monoclonal)</td>
+      <td>Echelon Biosciences</td>
+      <td>Cat# Z-P045, RRID:AB_427225</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 647 (goat, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21244, RRID:AB_2535812</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa 647 (goat, polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21235, RRID:AB_2535804</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse cy3B (donkey, polyclonal)</td>
+      <td>PMID:27976674</td>
+      <td>Cat# NC9812063</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CTxB</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C34778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ApoE3</td>
+      <td>BioLegend, USA</td>
+      <td>Cat# 786802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atto 647</td>
+      <td>Sigma-Aldrich</td>
+      <td>18373-1MG-F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>C8649-250UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amplex red</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 10010469</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Horseradish peroxidase</td>
+      <td>VWR</td>
+      <td>516531-5KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Choline oxidase</td>
+      <td>VWR</td>
+      <td>Cat# 15349250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C8-PC</td>
+      <td>Avanti Lipids</td>
+      <td>Cat# 850315P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# G2133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Maleimide cy3B</td>
+      <td>GE-Health</td>
+      <td>Cat# PA63131</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and gene expression
 
 HEK293T cells (ATCC Cat# CRL-3216, RRID:CVCL_0063), C2C12 cells (ATCC Cat# CRL-1772), and N2a (ATCC Cat# CCL-131) were cultured in DMEM (Corning cellgro) with 10% FBS, 100 units/ml penicillin, and 100 µg/ml streptomycin. Mycoplasma testing was performed by PCR and found to be negative. Cells were plated on poly-d-lysine-coated 12 mm microscope cover glass at approximately 12 hr, 36 hr, or 60 hr before transfection with genes for target proteins. Transfections were performed using X-tremeGENE 9 DNA transfection agent (Roche Diagnostics). Full-length human TREK-1(TREK-1 FL) with C-terminus GFP tag in pCEH vector was obtained from Dr. Stephen Long. Mouse PLD2 constructs (mPLD2) and inactive mutant (K758R single mutation, xPLD2) without GFP tag in pCGN vector were provided by Dr. Michael Frohman. TREK-1 constructs were co-transfected with mPLD2 or xPLD2 at a 1:4 ratio (0.5 g of TREK-1 and 2 g of PLD DNA) (Comoglio et al., 2014). All the salts for internal/external solutions were purchased from either Sigma or Fisher Scientific.
 
-## Electrophysiology
+### Electrophysiology
 
 The transfected HEK293T cells were used in 24–36 hr after transfection for standard excised inside-out patch-clamp recordings of TREK-1 (Brohawn et al., 2014a; Comoglio et al., 2014). Currents were recorded blinded at room temperature using an Axopatch 200B amplifier and Digidata 1440A (Molecular Devices). Borosilicate glass electrode pipettes (B150-86-10, Sutter Instrument) were pulled with the Flaming/Brown micropipette puller (Model P-1000, Sutter Instrument), resulting in 3–6 MΩ resistances with the pipette solution (in mM): 140 NaCl, 5 KCl, 1 CaCl2, 3 MgCl2, 10 TEA-Cl, 10 HEPES, pH 7.4 (adjusted with NaOH). Bath solution consists of (in mM) 140 KCl, 3 MgCl2, 5 EGTA, 10 TEA-Cl, 10 HEPES, pH 7.2 (adjusted with KOH). Low concentration of TEA (10 mM) was added into both pipette/bath solutions to block the endogenous potassium channels in HEK293T cells. Patch electrodes were wrapped with parafilm to reduce capacitance. Currents measured using Clampex 10.3 (Molecular Devices) were filtered at 1 kHz, sampled at 20 kHz, and stored on a hard disk for later analysis.
 
@@ -175,11 +429,11 @@ Pressure clamping on the patch was performed using high-speed pressure clamping 
 
 TREK-1 current, either co-expressed with mPLD2 or xPLD2, was activated by negative pressure steps from 60 to 0 mmHg in 10 mmHg decrements at +30 mV membrane potential, and five traces for each case were recorded and averaged for the analysis. Patch size was estimated using the current density (I_density; pA/µm2). Then, a Boltzmann equation, I_density = base + {max/[1+exp((P50-P)/slope)]} was used to fit the data with a constraint of base = 1 due to poor saturation of the current at high pressure. P is the applied pressure, P50 is the pressure that activates 50% of maximum current measured (non-saturating), and slope shows the sensitivity of current activation by pressure. In some experiments with hTREK-1+xPLD2 co-expression where the activated currents were too small to fit to the Boltzmann equation, the current amplitude at P=-30 mmHg (I_m30) was compared with its 5× standard deviation(I_5×SD). If I_m30 < I_5×SD, the experiment was excluded from the Boltzmann equation fitting and corresponding P50-slope analysis. This empirical rule (we call it 5×SD rule) can discern four out of five wild-type (TREK-1 FL) cell-attached recording cases as null experiments, suggesting that it could be a usable/useful empirical criterion for our experiment. Then, the current density at –60 mmHg and P50-slope data were used for statistical analysis. Mann–Whitney test was done to assess statistical significance using Prism6 (GraphPad Software), and outliers were eliminated using a built-in function in Prism with Q = 1%. The values represented are mean ± SEM.
 
-## Animals
+### Animals
 
 Housing, animal care, and experimental procedures were consistent with the Guide for the Care and Use of Laboratory Animals and approved by the Institutional Animal Care and Use Committee of the University of Virginia. The tissue from SREBP2 mice are from strains 030826 and 004600 from the Jackson Laboratories as described in Wang et al., 2021. No new animals were used for this study.
 
-## Fixed cell preparation
+### Fixed cell preparation
 
 Cells (C2C12, HEK293T, and N2a) were grown to 80% confluence (C2C12 were allowed to differentiate overnight in serum free media). Cells were rinsed, treated as needed, and then fixed with 3% paraformaldehyde and 0.1% glutaraldehyde for 10 min to fix both protein and lipids. Glutaraldehyde was reduced with 0.1% NaBH4 for 7 min followed by three 10 min washes with PBS. Cells were permeabilized for 15 min with 0.2% Triton X-100, blocked with 10% BSA/0.05% Triton/PBS at room temperature for 90 min. Primary antibody (PLD2, Cell Signaling #13891; TREK-1, Santa Cruz #sc-50412; PIP2, Echelon Biosciences #z-P045) was added to a solution of 5% BSA/0.05% Triton/PBS for 60 min at rt at a concentration of 1:100 followed by five washes with 1% BSA/0.05% Triton/PBS for 15 min each. Secondary antibody (Life Technologies #A21244 and A21235; cy3B antibodies were produced as described previously; Petersen et al., 2016) was added in the same buffer as primary for 30 min at room temperature followed by five washes as above. A single 5 min wash with PBS was followed by a post-fix with fixing mixture, as above, for 10 min w/o shaking. This was followed by three 5 min washes with PBS and two 3 min washes with dH2O. Cells only receiving CTxB treatment were not permeabilized.
 
@@ -193,36 +447,36 @@ Shear force was applied to cells in ibidi µ-Slide I0.4 Luer chambers with a flo
 
 TREK-1 in HEK293T cells was labeled with a EGFP concatenated to the C-Terminus of full-length human TREK-1 (Figure 1—figure supplement 2B) or by applying anti-TREK-1 antibody (sc-398449, Santa Cruz) conjugated to cy3b (Petersen et al., 2016). Anti-PIP2 antibody was directly conjugate Alexa 647 using the same protocol.
 
-## Super-resolution dSTORM
+### Super-resolution dSTORM
 
 Images were recorded with a Vutara 352 and VXL super-resolution microscopes (Bruker Nano Surfaces, Salt Lake City, UT), which is based on the 3D Biplane approach. Super-resolution images were captured using a Hamamatsu ORCA Flash4.0 sCMOS camera and a ×60 water objective with numerical aperture 1.2. Biological replicates (6–12) are individual cells from at least two independent experiments. Data were analyzed using the Vutara SRX software (version 5.21.13 for the data in Figures 3—5 and version 7.0.07 for the data in Figure 2). Single molecules were identified by their brightness frame by frame after removing the background. Identified particles were then localized in three dimensions by fitting the raw data in a customizable region of interest (typically 16 × 16 pixels) centered on each particle in each plane with a 3D model function that was obtained from recorded bead datasets (10,000–750,000 localization per biological replicate). Fit results were stored as data lists for further analysis.
 
 Fixed samples were imaged using a 647 nm and 561 nm excitation lasers, respectively, and 405 nm activation laser in photo switching buffer comprising of 20 mM cysteamine (Sigma, #30070), 1% betamercaptoethanol (BME) (Sigma, #63689), and oxygen scavengers (glucose oxidase, GLOX) (Sigma #G2133) and catalase (Sigma #C40) in 50 mM Tris (Affymetrix, #22638100) + 10 mM NaCl (Sigma, #S7653) + 10% glucose (Sigma, #G8270) at pH 8.0 at 50 Hz and maximal powers of 647 nm, 561 nm and 405 lasers set to 8, 10, and 0.05 kW cm-2, respectively.
 
-## Three-color EGFP-STORM
+#### Three-color EGFP-STORM
 
 The dSTORM with EGFP (EGFP-STORM) was performed identical to the two-color dSTORM described above except that a 488 laser was also used to excite EGFP and PIP2 and CTxB were directly conjugated with fluorescent dyes (Atto 647 and cy3b 555, respectively), obviating the need for fluorescent secondary antibodies. TREK-1 and PIP2 antibodies were conjugated with NHS esters of either Cy3B or Atto 647. 1.5 mg of antibody was conjugated to 3 ng of dye in 1 M NaHCO3 buffer pH 8 for 1 hr at room temperature and separate on a NAP-5 desalting column. The acquisition was performed with no 405-activation laser in GLOX/BME buffer. The GLOX/BME buffer was not required for EGFP blinking, but it did improve the fluorescence and the number of localization particles determined. The resolution TREK-1 localizations determined by EGFP_TREK-1 and cy3b-labeled anti TREK-1 antibody were comparable (45–50 nm resolution).
 
 The pair correlation function g(r) and cluster analysis were performed using the Statistical Analysis package in the Vutara SRX software. Pair correlation analysis is a statistical method used to determine the strength of correlation between two objects by counting the number of points of probe 2 within a certain donut-radius of each point of probe 1. This allows for localization to be determined without overlapping pixels as done in traditional diffraction-limited microscopy. For three-color EGFP-STORM, probes 1 and 3 and 2 and 3 were also compared using the pair correlation function. Localization at super resolution is beyond techniques appropriate for diffraction-limited microscopy such as Pearson’s correlation coefficient. Lipid cluster size was determined using the DBSCAN clustering algorithm also included as part of the Vutara SRX software.
 
-## Fluorescence recovery after photobleaching (FRAP)
+### Fluorescence recovery after photobleaching (FRAP)
 
 C2C12 cells were grown in DMEM with 10% FBS until 16 hr before use in which they were switched into serum-free DMEM. On the day of the experiment, DMEM in live cells was replaced with DMEM w/o phenol red. Fixed cells were rinsed once with PBS and then put into a mixture of PBS with 3% PFA and 0.1% glutaraldehyde for 20 min at 37°C. Fixed cells were then rinsed with PBS 5 × 5 min and placed back into phenol-free DMEM. CTxB (Thermo Fisher C34778, 100 ug/ml) was then applied 1:200 into each plate and allowed to incubate for >30 min before imaging. Imaging and data collection was performed on a Leica SP8 confocal microscope with the Application Suite X v.1.1.0.12420. Five images were taken as baseline after which a selection of one or more ROI was bleached at 100% laser power for 6–8 frames. Recovery was measured out to 5 min, and fluorescence of the ROI(s) was quantified. The fluorescence before bleaching was normalized to 1 and after the bleaching step was normalized to 0.
 
-## Cholesterol assay
+### Cholesterol assay
 
 N2a cells were cultured in 48-well plates with 200 ul media in each well and then changed to 200 ul PBS for the shear treatment. The shear plate was incubated with PBS on an orbital rotator at 3 dynes/cm2 for 10 min in a 37°C incubator. The control plate was incubated with PBS for 10 min in the same incubator with no shear. Then the shear plate was incubated with 200 ul 4%PFA + 0.1% glutaraldehyde in PBS for 10 min with 3 dynes/cm2 shear and 10 min without shear. The control plate was fixed for 20 min with no shear. Fixed cells were lysed in RIPA buffer (Thermo) and assay in 100 µl PBS with, 4 U/ml cholesterol oxidase, 100 μM amplex red, and 2 U/ml horseradish peroxidase (HRP). The data shown in the figure are from two biological replicates (independent experiments) with 5–10 technical replicates.
 
-## In vitro cellular PLD assay
+### In vitro cellular PLD assay
 
 In vitro cellular PLD2 activity was measured in cultured HEK293T cells by an enzyme-coupled product release assay (Petersen et al., 2016) using amplex red reagent. Cells were seeded into 96-well plates (~5 × 104 cells per well) and incubated at 37°C overnight to reach confluency. The cells were starved with serum-free DMEM for a day and washed once with PBS. The PLD reaction was initiated by adding 100 μl of reaction buffer (100 μM amplex red, 2 U/ml HRP, 0.2 U/ml choline oxidase, and 60 μM C8-PC in PBS). The assay reaction was performed for 2–4 hr at 37°C, and the activity was kinetically measured with a fluorescence microplate reader (Tecan Infinite 200 Pro) at excitation and emission wavelengths of 530 nm and 585 nm, respectively. The PLD2 activity was calculated by subtracting the background activity (reaction buffer, but no cells). For the bar graphs, samples were normalized to the control activity at the 120 min time point.
 
-## Drosophila assays
+### Drosophila assays
 
 For behavior experiments, 1- to 5-day-old flies were collected in vials containing ~50 flies at least 12 hr before the experiment. Flies were allowed to acclimate to behavior room conditions for >30 min (dim red light, ~75% humidity) before each assay. Shock avoidance was tested by placing flies in a T-maze where they could choose between an arm shocking at the indicated voltage every 2 s and an arm without shock. Flies were given 2 min to choose which arm, after which flies were collected and counted to determine the shock avoidance index for each voltage and genotype. Control and knockout flies were alternated to avoid any preference, and the arm used for shock was also alternated to control for any non-shock preference in the T-maze itself. Shock avoidance index (AI) was calculated as AI = (# flies shock arm-# flies control arm)/# flies total. Plotting the inverse of this metric, we obtain a pain sensitivity curve in which we observe a right-shift when the pld gene was knocked down (Figure 3F). Flies were averaged from 2 to 3 biological replicates with ~10 groups per replicate.
 
 Arousal threshold protocol has been described in detail previously (Murphy et al., 2016). Briefly, animals were exposed hourly to a series of vibrations of increasing intensity ranging from 0.8 to 3.2 g, in steps of 0.6 g. Stimuli trains were composed of 200 ms vibration with 800 ms inter-vibration interval and 15 s inter-stimuli train interval. Stimulation intensity and timing were controlled using pulse-width modulation via an Arduino UNO and shaftless vibrating motors (Precision Microdrives, model 312-110). Arousal to a given stimulus was assigned when an animal (1) was inactive at the time of the stimulus, (2) satisfied a given inactivity criteria at the time of the stimulus, and (3) moved within the inter-stimuli train period (15 s) of that stimulus. Statistics are from two biological replicates.
 
-## Statistics
+### Statistics
 
 All statistical calculations were performed using a Student’s t-test or Mann–Whitney test in Prism software (v9) unless otherwise noted. For statistics of more than one point along a pair correlation curve, a nested Student’s t-test was used. Significance is noted as follows: ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.

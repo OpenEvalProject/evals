@@ -43,9 +43,45 @@ Since SARM1 is important in axon degeneration and potentially other physiologica
 
 ## Results
 
-## Probe design, synthesis, and characterization
+### Probe design, synthesis, and characterization
 
 We focused on its base-exchange reaction for designing specific probes for SARM1 and had shown that pyridyl derivatives can readily serve as substrates (Graeff et al., 2006; Lee and Aarhus, 1997). We thus conjugated various styryl derivatives to pyridine to produce a series of conjugates (PCs) as fluorescent probes for SARM1 activity (Figure 1A). We reasoned that conjugating the electron-rich styryl derivative with pyridine should provide a donor-π-acceptor framework (Pawlicki et al., 2009; Figure 1B). The positive charge of the pyridinium moiety of the product should delocalize over the conjugated π-system and lead to fluorescence changes (Figure 1A). Pyridine conjugates (PC1-9, Figure 1—figure supplement 1, Figure 1—figure supplement 11A) were synthesized using the Pd-catalyzed cross-coupling strategy with yields ranging from 33.5 to 85.0%. The synthesis details are in the 'Materials and methods' section and product characterizations are shown in Figure 1—figure supplements 2–10.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-v2.jpg)
+
+**Figure 1.:** (A) Strategy of fluorescent imaging of the activated SARM1. (B) Designing based on pyridine and styryl derivatives with a donor-π-acceptor framework. (C) Structure of PC6. (D) The kinetics of the fluorescence increase at the maximal absorbance wavelengths catalyzed by SARM1-dN, in the presence of 100 μM NMN, 100 μM NAD, and 50 μM PCs. (E) Time-dependent changes of the emission spectra at the isosbestic point (350 nm). (F) HPLC analysis of PC6 reaction. Red line: in the presence of PC6, NMN, and NAD; Gray line: without PC6. Insert: MS analysis and structure of PAD6. (G) Absorbance and fluorescence spectra of 25 μM PC6/PAD6. (H) Emission spectra with dose of NMN (10, 20, 40, 60 μM) in the presence of NAD, PC6, and SARM1-dN. Inset: the initial rates plotted to NMN concentrations. (I) Emission spectra with doses of SARM1-dN in the presence of NMN, NAD, and PC6; Inset: the initial rate plotted to SARM1 concentrations. (J) The reaction rates of 10 μM PC6, in the presence of 100 μM NMN and 100 μM NAD, compared with NAD analogss (100 μM) catalyzed by SARM1. (K) The reaction rates of 10 μM PC6 catalyzed by SARM1, NADase, and CD38. PC = pyridine conjugate, NMN = nicotinamide mononucleotide.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp5-v2.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp6-v2.jpg)
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp7-v2.jpg)
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp8-v2.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp9-v2.jpg)
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp10-v2.jpg)
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp11-v2.jpg)
+
+**Figure 1—figure supplement 11.:** (A) Chemical structures of PC1–9. (B) Quantification of SARM1-dN. SARM1-dN was pulled down by the BC2 nanobody (Zhao et al., 2019) conjugated beads, which efficiency was close to 100%. The purified SARM1-dN proteins were supplied to SDS-PAGE and Coomassie blue staining. The protein contents of SARM1-dN were calculated with a standard curve of BSA after intensity scanning. (C) The initial rates of the fluorescence increase at the maximal absorbance/emission wavelengths (PC5: 400 nm/530 nm; PC6: 390 nm/520 nm; PC7: 340 nm/445 nm; PC8: 375 nm/490 nm) catalyzed by SARM1-dN, in the presence of NMN, NAD, and PCs. PC = pyridine conjugate, NMN = nicotinamide mononucleotide.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp12-v2.jpg)
+
+**Figure 1—figure supplement 12.:** The reactants of 50 μM PCs and 100 μM NAD during the 50 min reactions catalyzed by the activated SARM1.
+
+![Figure 1—figure supplement 13.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig1-figsupp13-v2.jpg)
+
+**Figure 1—figure supplement 13.:** The reactants of 50 μM PCs and 100 μM NAD during the 50 min reactions catalyzed by the activated SARM1.
 
 The PC probes were tested using a recombinant SARM1 with the N-terminal mitochondrial-localizing peptide truncated, SARM1-dN (Zhao et al., 2019) (described in Figure 1—figure supplement 11B), with NAD as the acceptor of base-exchange and NMN as an activator. As shown in Figure 1—figure supplement 12, significant shifts in UV-vis spectra were observed in the reactions with the oxygenated derivatives (PC5-8, O-series), but not the nitrogenated derivatives (PC1–4, N-series), nor PC9 with diene as linker. The emission spectra of the reactive O-series showed steady increase as the reaction progressed (Figure 1—figure supplement 13, spectra; Figure 1D, kinetics; Figure 1—figure supplement 11C, initial rate), with PC6, the chemical structure shown in Figure 1C, exhibiting the largest fluorescence increase (Figure 1D).
 
@@ -57,9 +93,17 @@ The observed spectral changes showed a linear dependence on NMN, with as low as 
 
 In addition to sensitivity, PC6 also shows exquisite selectivity toward SARM1 versus CD38 and N. crassa NADase (Graeff et al., 1994). All three possess NADase activity as detected by εNAD (Figure 1K), but only SARM1 could produce large fluorescence increase with PC6.
 
-## Imaging SARM1 activation in live cells
+### Imaging SARM1 activation in live cells
 
 PC6 was added to HEK293 cells overexpressing either wildtype SARM1 or the enzymatically inactive mutant, E642A (Essuman et al., 2017; Zhao et al., 2019; Figure 2A). Green fluorescence was clearly seen evenly distributed in the whole cells in the wildtype, but not in the mutant cells (Figure 2B), indicating active SARM1 was required. Intracellular production of PAD6 was confirmed in extracts of wildtype but not the E642A cells (Figure 2C). CZ-48, a cell-permeant mimetic of NMN and activator of SARM1 (Zhao et al., 2019), dramatically increased the PAD6 fluorescence (Figure 2B, right column) and none in E642A-cells. These results indicate that PC6 is cell-permeant and can be exchanged into the cytosolic NAD by the activated SARM1 to produce PAD6 having a large red shift in fluorescence. PAD6 was also cell-impermeant because of its charged ADP-ribose moiety and accumulated in the cytosol, greatly increased its detection sensitivity in live cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot of the overexpression of SARM1 and inactive mutant, E642A in HEK293 cells. (B) Confocal fluorescence images of cells in (A) after incubation with PC6 in presence or absence of CZ-48. Green: PAD6; red: ConA-Alex-647; (C) HPLC and MS analysis of PAD6 from SARM1-OE cells. The metabolites were extracted by 0.6 M PCA from the cells in (A) after treating with 50 μM PC6 for 24 hr. Inset: MS analysis. (D) Confocal images of wildtype, or SARM1-KO HEK293T cells with PC6 in presence or absence of CZ-48. (E) The HEK293 cells carrying the inducible SARM1 were incubated with 50 μM PC6 in presence or absence of 0.5 mg/mL Dox and/or 100 μM CZ-48. The PAD6 fluorescence was analyzed by flow cytometry. (F) Confocal images of NMNAT1-KO/HEK293 T cells, incubated with PC6. Cell edges were marked according to the bright-field images. (G) Quantification of the cell fluorescence in (F). All the above experiments were repeated at least three times (means ± SDs; n = 3; Student’s t-test, *p<0.05; **p<0.01, ****p<0.0001). Scale bar 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots analysis of the expression of SARM1 in the inducible cell lines with or without treatment of 0.5 μg/mL Dox and 100 μM CZ-48 for the indicated time. (B) The HEK293T cells overexpressing wildtype and Type III mutant CD38 (mutCD38) (Liu et al., 2017; Zhao et al., 2012) were incubated with 50 μM PC6 for the indicated time and the fluorescence of PAD6 was analyzed in the flow cytometry. (C) The cellular cADPR levels in the cells (A) were measured by the cycling assay (Graeff and Lee, 2002). PC = pyridine conjugate, cADPR = cyclic ADP-ribose.
 
 PC6 also could detect the activity of SARM1 endogenously expressed in HEK293T cells (Zhao et al., 2019). CZ-48 activated the endogenous SARM1 and produced increase of cytosolic PAD6 signal (Figure 2D, upper right), but none in the SARM1-knockout cells (Figure 2D, right lower), confirming the specificity of PC6 for SARM1.
 
@@ -69,23 +113,57 @@ Endogenous NMN can be increased by ablating NMN-adenylytransferase (NMNAT1) (Zh
 
 Consistent with the in vitro results showing that PC6 is highly selective for SARM1 over CD38 in live cells, cells expressing either wildtype or Type III mutant CD38 (Liu et al., 2017; Zhao et al., 2012) did not show PAD6-signal after 48 hr incubation with PC6 (Figure 2—figure supplement 1B), even though the expressed enzymes readily increased cellular cADPR (Figure 2—figure supplement 1C).
 
-## Imaging SARM1 activation during AxD
+### Imaging SARM1 activation during AxD
 
 Vincristine (VCR)-induced AxD in peripheral neuropathy is a common side effect of chemotherapy (Essuman et al., 2017) and is thought to be due to SARM1-activation (Gerdts et al., 2013). Mouse dorsal root ganglion (DRG) neurons were infected with lentivirus carrying TdTomato for visualizing the axons (Figure 3A and C, orange), and with either a non-targeting (Figure 3A) or Sarm1-specific shRNA (Figure 3C). In the non-targeting group, VCR elevated PAD6-fluorescence (Figure 3A, green), indicating activation of SARM1, by as early as 4–8 hr and reaching a maximum by 16 hr (Figure 3A and D, blue). AxD started at about 20 hr (Figure 3F, blue; Figure 3—figure supplement 1A), temporally consistent with a causal role for SARM1. Another measure of SARM1 activation is the elevation of cellular cADPR (Zhao et al., 2019), which occurred (Figure 3E, blue) by 12 hr, peaking at 24 hr. Neurons not treated with VCR showed neither SARM1-activation nor AxD (Figure 3A,D,E,F and Figure 3—figure supplement 1A, CTRL).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig3-v2.jpg)
+
+**Figure 3.:** (A, C) Confocal imaging of SARM1 activation in DRG neuronal axons. The neurons were infected with virus expressing TdTomato to provide easy imaging of the axons. Cells were additionally transfected with either scramble (A) or Sarm1-specific (C) shRNAs and treated with 50 μM PC6, 200 μM CZ-48, or 50 nM Vincristine and imaged in the indicated time points. Green: PAD6; orange: TdTomato; scale bar 50 μm. (B) Knockdown efficiency of Sarm1. Scr, scramble shRNA; KD, Sarm1-specific shRNA. (D) Quantification of the fluorescence intensity of PAD6 in DRGs. (E) Intracellular cADPR contents. (F) Indices of AxD. All the above experiments were repeated at least three times (means ± SDs; n = 3; Student’s t-test, ***p<0.001; ****p<0.0001). AxD = axon degeneration, cADPR = cyclic ADP-ribose, PC = pyridine conjugate, VCR = Vincristine.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The DRG neurons, on div6, were infected with the lentivirus expressing TdTomato and scramble shRNA (A) or Sarm1-specific shRNA (B) and three days later, incubated with 50 nM VCR or 200 μM CZ-48 with 50 μM PC6. The photos of axons with TdTomato fluorescence were captured under the confocal microscope (Nikon, A1). Scale bar 50 μm. VCR = Vincristine.
+
 Reducing endogenous SARM1 using shRNA (Figure 3B,D and F, KD) reduced the PAD6 fluorescence without altering its peaking at 16 hr (Figure 3C; 3D, KD +VCR) and reduced AxD (Figure 3F, KD +VCR; Figure 3—figure supplement 1B), further substantiating a causal role for SARM1. CZ-48 induced SARM1-activation more rapidly (Figure 3A and D, red) and elevated cADPR higher (Figure 3E, red), confirming its direct action. Intriguingly, CZ-48 did not induce massive AxD as VCR (Figure 3F, CZ-48; S5A). These results indicate SARM1-activation is a necessary and causal factor, but not a sufficient one for AxD. Other critical factors and downstream events of microtubular dysfunction might contribute to the degeneration.
 
-## Dehydronitrosonisodipine (dHNN) is an inhibitor of SARM1 activation
+### Dehydronitrosonisodipine (dHNN) is an inhibitor of SARM1 activation
 
 Another prompt application of PC6 is library screening for inhibitors of SARM1. The feasibility was verified by measuring the IC50 of a reported inhibitor of SARM1, nicotinamide (Nam) (Essuman et al., 2017). The measured IC50 value of Nam was around 140 μM, which is consistent with the reported value (Figure 4—figure supplement 1A). Next, we utilized this assay to screen for SARM1 inhibitors. NMN-activated SARM1 was incubated with drugs of the library (Figure 4A) and its activity measured with PC6 in the presence of NAD (Figure 1). Out of 2015 drugs, 34 had more than 80% inhibition (Figure 4B), which were further tested for inhibition of the SARM1-NADase activity using HPLC. Figure 4C shows the plot the IC50-values of these drugs measured with both the PC6 and the NADase/HPLC assays. Twenty-four drugs are in the middle sector, indicating they inhibited both reactions similarly. Two inhibited the PC6 activity five fold less than the NADase (Figure 4C, left sector), and eight in the right sector (seven have IC50s higher than 40 μM) inhibited NADase less than the base-exchange. These remarkable differences underscore the importance of using more than one assay for drug screening (see Discussion).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig4-v2.jpg)
+
+**Figure 4.:** (A) Flowchart of the PC6-based high-throughput screening. (B) Inhibitory effects of the 2015 compounds (50 μM) from an approval drug library. The activity of drug-treated SARM1-dN was determined with PC6 assay. The detail procedure and statistical analysis are referred to the 'Materials and methods' section. (C) Plot of IC50s of the 27 most potent inhibitory compounds from high-throughput screening, determined by PC6 (x axis) versus by HPLC (y axis, NADase activity) assays. See 'Materials and methods' section. (D) Inhibition curves of NSDP before (black) and after (NSDP[UV], red) UV at 254 nm for 30 min. (E) HPLC elution profile of dHNN. NSDP after 30 min UV treatment was analyzed using a C-18 column with a gradient of 0.1% TFA and ACN in 0.1% TFA. Fractions were assayed for inhibition of SARM1-dN by PC6 assay. The derivative in the elution peak was identified by MS. Black line: absorbance at 275 nm; red dots: inhibition activity. Insets: MS of the peak fraction showing its mass was the same as dHNN and the chemical structure of dHNN. (F) Concentration-inhibition curves of dHN (black solid line), UV-treated dHN (black dotted line), dHNN (red solid line) and UV-treated dHNN (red dotted line), measured by PC6 assay. PC = pyridine conjugate, NSDP = nisoldipine .
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The inhibition curves of nicotinamide to SARM1-dN measured with PC6-based reaction. (B) HPLC analysis of NSDP after treating by UV at 275 nm for 20 min. Black: standard of NSDP; purple: NSDP after UV; red: standard of dHN; green: standard of dHNN. (C) The irreversibility of the inhibition of dHNN. SARM1-dN was pre-incubated with 20 μM dHNN or 5 mM Nam at rt for 20 min and washed using Centricon filter. Activity was analyzed afterward with PC6 assay. (D) Time-dependent inhibition of SARM1-dN by dHNN. SARM1-dN was incubated with 10 μM dHNN or 300 μM Nam for the indicated time and the activity was analyzed with PC6 assay. (E) Western blots of the cysteine-to-alanine mutants of SARM1. C215A and C226A show much lower protein expression, indicating the mutations seem to affect the stability, although the IC50s decreased to 30 μM and 11 μM, respectively, comparing to that of wildtype SARM1 (6 μM). Nam = nicotinamide, PC = pyridine conjugate, NSDP = nisoldipine.
+
 In the middle sector is nisoldipine (NSDP), a calcium channel blocker having beneficial effects on neurodegenerative diseases. Peculiarly, its inhibition of SARM1 varied widely among batches. Investigations indicated the active compound was not NSDP but its derivative. Figure 4D shows fresh NSDP had an IC50-value of about 150 μM (squares), but its potency increased 75-fold after exposure to UV (Figure 4D, triangles, IC50 = 2.36 ± 0.3 μM). Also, fresh NSDP had an HPLC-elution peak at 12.2 min (Figure 4—figure supplement 1B), but was completely converted by UV to a compound having a peak at 9.8 min that strongly inhibited SARM1 (Figure 4E, red). HRMS showed that the active compound had a mass of 370.15205 Da (Figure 4E, inset) identical to a known derivative of NSDP, dehydronitrosonisoldipine (dHNN) (Marinkovic et al., 2003). The HPLC-elution profile of the active compound was also the same as dHNN (Figure 4—figure supplement 1B, purple line and green dash). Indeed, authentic dHNN was active and could not be further activated by UV (Figure 4F, red line and dash), which also indicates that it is photostable. Another derivative of NSDP, dehydronisoldipine (dHN, elution peak at 8.7 min, Figure 4—figure supplement 1B), showed no inhibition before or after UV (Figure 4F, black line and dash), indicating that the nitroso group is essential for the effect.
 
-## dHNN inhibits SARM1 and AxD by covalently modifying cysteines
+### dHNN inhibits SARM1 and AxD by covalently modifying cysteines
 
 The dHNN-induced inhibition of SARM1 was irreversible by washing (Figure 4—figure supplement 1C, red bars), while that by Nam was reversible. Also, dHNN-inhibition was time-dependent, but not Nam (Figure 4—figure supplement 1D), strongly suggesting dHNN covalently reacted with SARM1.
 
 To determine the mechanism of action of dHNN, we truncated the inhibitory ARM-domain, producing a constitutively active SAM-TIR, which showed a right-shifted inhibition curve compared to SARM1-dN (Figure 5A), with around 50-fold increase in the IC50. The IC50 of dHNN in the SARM1-dN-expression cells is around 4 μM, close to the IC50 in vitro. dHNN decreased the cellular cADPR in cells expressing SARM1, but not in those expressing SAM-TIR (Figure 5B). These results suggest that dHNN is cell-permeant and acts mainly by blocking SARM1 activation but not its enzymatic activities.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig5-v2.jpg)
+
+**Figure 5.:** (A) Inhibition of SARM1-dN and SAM-TIR by dHNN in vitro. See 'Materials and methods'. (B) Inhibition of SARM1-dN and SAM-TIR by dHNN in cellulo. See 'Materials and methods'. (C) MS of SARM1-dN modification by dHNN. Peptide spectrum match shows that Cys311 was modified by dHNN, increasing its mass to 386.14779 Da. (D) Each cysteine in SARM1-dN was mutated to alanine. The dHNN-IC50s were measured by PC6 assay. (E) Top (left) and side (right) view of the SARM1 octamer. α-helices are shown as cylinders. dHNN modifications are shown as sticks. One protomer is colored in blue for ARM, gold for SAM, and green for TIR. The other protomers are colored in grey. (F) Zoom-in view of the dHNN-modified pocket. dHNN: purple stick; the electron density corresponding to dHNN: grey mesh; interacting residues: green; loop: red. (G) Superposition of SARM1-dHNN onto SARM1-NAD (PDB: 7mc6). SARM1-dHNN and SARM1-NAD were shown as blue and grey cartoon, respectively. The insertion loop in SARM1-dHNN was shown in red. NAD was shown as stick models and colored with gold carbons. Residues interacting with NAD, W103, R110 and R157, were shown as stick models with grey carbons. dHNN and residues interacting with dHNN were shown as in (F). (H) DRG neurons were treated with dHNN for 16 hr in the presence of VCR. The cellular cADPR contents were measured. (I) Micrographs of AxD of DRG neurons after treatment of VCR in presence of dHNN for 72 hr. (J) Quantification of AxD indices after 0, 24, 48, 72 hr treatment with VCR as in (I). AxD = axon degeneration. VCR = Vincristine.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A-B) Quantification of the intensity of the dHNN-modified peptides covering the indicated cysteine residues of SARM1 by LC-MS/MS following the treatment by 5 μM (A) and 50 μM (B) dHNN, and normalized with the intensity of the corresponding peptides. (C) The abundance ratio of dHNN-modified peptides to the total cysteine-containing peptides identified in SARM1 and other proteins by LC-MS/MS.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A-B) Representative 2D class averages of SARM1-dN in the absence (A) or presence (B) of 50 μM dHNN in 100 mM Tris, 150 mM NaCl, and 1 mM EDTA at pH 8.0. (C) Local resolution estimation calculated by RELION for the 3D reconstruction of SARM1-dHNN. Left, top view; middle, bottom view; right, side view. (D) Density fit to the 3D reconstruction. (E) Superimposition of SARM1-dHNN onto SARM1-NAD (PBD codes 7cm6 and 7cm7) shows no obvious structural deviation. Left: octamer, blue for SARM1-dHNN, green for 7cm6, and grey for 7cm7; right, stereo view for the superimposition of one protomer in SARM1-dHNN and SARM-NAD (7cm6).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/67381/elife-67381-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** DRG neurons were pre-treated with 3 μM dHNN for 0.5 hr and axotomy performed to induce AxD. Images were captured at 0, 24, 48 hr (A) and the AxD index was analyzed by ImageJ (B). AxD = axon degeneration.
 
 The nitroso group of dHNN may covalently modify cysteine residues (Callan et al., 2009) in SARM1. Indeed, LC-MS/MS identified several dHNN-modified peptides, among which Cys311 in the ARM domain is the dominant one (Figure 5C, Figure 5—figure supplement 1A–B). Many peptides of other proteins with cysteines were also identified but none showed modification by dHNN (Figure 5—figure supplement 1C), indicating specificity of dHNN. Single mutation of all the cysteines to alanine showed that C311A significantly decreased the response to dHNN (Figure 5D). However, the IC50 of C311A was only two fold higher than that of the wildtype, which indicates dHNN might modify other cysteines when Cys311 is mutated and inactivate SARM1.
 
@@ -105,19 +183,19 @@ Much effort is being invested in targeting SARM1-mediated NAD depletion for ther
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 This study was carried out in strict accordance with animal use protocol approved by Peking University Shenzhen Graduate School Animal Care and Use Committee (#AP0015001). All animals (C57BL6/J), purchased from Guangdong Medical Laboratory Animal Center (China), were handled in accordance with the guidelines of the Committee on the Ethic of Animal Experiments. All surgery was performed after euthanasia and efforts were made to minimize suffering.
 
-## Cell lines
+### Cell lines
 
 The HEK293 and HEK293T cells were purchased from the American Type Culture Collection and the identity has been authenticated by STR profiling. They have not been contaminated by mycoplasma. The cells were cultured in DMEM supplemented with 10% fetal calf serum and 1% penicillin-streptomycin solution and maintained in a standard humidified tissue culture incubator with 5% CO2.
 
-## Reagents
+### Reagents
 
 NAD, NMN, Digitonin, Poly-L-lysine, 5-fluoro-2’-deoxyuridine and uridine, KH2PO4, NH4HCO3, and iodoacetic acid were purchased from Sigma-Aldrich. DMEM, Neurobasal Plus Medium, Trypsin-EDTA, penicillin/streptomycin solution, B27 plus, GlutaMax, Laminin, Lipofectamine 2000, ConA-Alex-647, formic acid, acetonitrile were purchased from ThermoFisher. NGF was from Sino Biological. FBS was obtained from PAN Bitotech. Approval drug library (L1000) and Nisoldipine power (Cas # 63675-72-9) were purchased from TargetMol. Dehydro Nisoldipine (Cas #103026-83-1) was obtained from TRC, while dehydronitrosonisoldipine (Cas #87375-91-5) was purchased from Glpbio and TRC. Vincristine was purchased from Selleck. General chemicals for probe synthesis were purchased from Dieckmann, Alfa, Energy, or Sangon Biotech (Shanghai).
 
-## Synthesis and characterization of pyridine conjugates (PCs)
+### Synthesis and characterization of pyridine conjugates (PCs)
 
 All air and water-sensitive reactions were carried out with anhydrous solvents in flame-dried flasks under argon atmosphere, unless otherwise specified. All the reagents were obtained commercially and used without further purification, unless otherwise specified. Anhydrous DMF was vacuum distilled from barium oxide, acetonitrile, and dichloromethane was distilled from calcium hydride. Yields refer to isolated yields, unless otherwise specified. Reactions were monitored by thin-layer chromatography (TLC) carried out on 0.25 mm silica gel plates (60 F-254) that were analyzed by UV light as visualizing method and by staining with anisaldehyde (450 mL of 95% EtOH, 25 mL of conc. H2SO4, 15 mL of acetic acid, and 25 mL of anisaldehyde) or KMnO4 (200 mL H2O of 1.5 g KMnO4, 10 g K2CO3 and 1.25 mL of 10% aq. NaOH). Silica gel (200–300 mesh) was used for flash column chromatography. Nuclear magnetic resonance (NMR) spectra were recorded on either a 300 (1H: 300 MHz, 13C: 75 MHz), 400 (1H: 400 MHz, 13C: 100 MHz), or 500 (1H: 500 MHz, 13C: 125 MHz) NMR spectrometer. The following abbreviations were used to explain the multiplicities: s = singlet, d = doublet, t = triplet, q = quartet, dd = doublet of doublets, m = multiplet, br = broad. High resolution mass spectra (HRMS) were obtained from a MALDI-TOF mass spectrometer.
 
@@ -139,7 +217,7 @@ To synthesize PC8, to a stirred solution of 5-bromo-2-hydroxy-benzonitrile (0.60
 
 To synthesize PC9, to a stirred solution of 1-ethoxy-4-iodobezene (1.24 g, 5.0 mmol) and 3,3-diethoxyprop-1-ene (1.03 g, 7.9 mmol), P(o-tol) (305 mg, 20 mol%), Cs2CO3 (2.28 g, 7.0 mmol) and KCl (370 mg, 5 mmol) in DMF (30 mL) under argon was added Pd(OAc)2 (115 mg, 10 mol%) quickly. The resulting mixture was stirred at 90°C for 5 hr and then treated with 5% HCl (10 mL) and stirred at rt for 10 min. The mixture was then diluted with water (20 mL) and the aqueous phase was extracted with ethyl acetate (15 mL ×3). The combined organic extracts were dried over anhydrous Na2SO4, filtered and evaporated under reduced pressure. Silica gel flash column chromatography (ethyl acetate/hexanes = 1:5) gave a pale-yellow solid (443 mg, 50%) as the product (6). Spectral data of 6 is consistent with those reported in the literature (Lator et al., 2018). To a stirred solution of 6 (88 mg, 0.50 mmol), 4-methylpyridine (93 mg, 1.0 mmol) in Ac2O (2 cmL) was added NaOAc (272 mg, 2.0 mmol) at rt. The resulting mixture was heated under reflux for 21 hr. Then the mixture was cooled to rt and diluted with CH2Cl2, washed with H2O, 5% HCl, H2O, and saturated aqueous NaHCO3. The aqueous phase was extracted with ethyl acetate (15 mL ×3). The combined organic extracts were dried over Na2SO4, filtered and evaporated under reduced pressure. Silica gel flash column chromatography (ethyl acetate/hexanes = 3:1) gave a pale-yellow solid (47 mg, 37%) as the product. PC9: mp = 132–133°C. 1H NMR (400 MHz, CDCl3) δ 8.58 (d, J = 5.9 Hz, 2H), 7.44 (d, J = 8.7 Hz, 2H), 7.36–7.29 (m, 2H), 7.17 (dd, J = 15.5, 10.2 Hz, 1H), 6.99–6.74 (m, 4H), 6.57 (d, J = 15.5 Hz, 1H), 4.11 (d, J = 7.0 Hz, 2H), 1.48 (t, J = 7.0 Hz, 3H). 13C NMR (101 MHz, CDCl3) δ 159.0, 149.8, 144.7, 135.4, 133.8, 129.2, 128.2, 127.9, 125.8, 120.3, 114.6, 63.3, 14.6.HRMS (+ESI) m/z calcd. for C17H18NO (M + H)+ 252.1383, found 252.1384.
 
-## Preparation and quantification of the enzymes
+### Preparation and quantification of the enzymes
 
 A truncated form of SARM1, SARM1-dN, was prepared as described (Zhao et al., 2019). In brief, the recombinant protein, SARM1 without the N-terminal mitochondrial signal, was expressed in HEK293T cells and released by 100 μM digitonin in PBS with protease inhibitor cocktail (Roche). The cell lysate of wildtype HEK293T, prepared with the same method, was used as the negative control. To quantify SARM1-dN, the protein was pulled down by BC2 nanobody (Bruce and McNaughton, 2017) conjugated beads which were prepared by conjugating BC2 nanobody to NHS-beads (GE Healthcare). The purified SARM1-dN, named as SARM1-IP, together with the certain amounts of standard protein BSA, was applied to SDS-PAGE, which was stained by Coomassie blue. The protein contents of SARM1-dN were then calculated by the band intensity with BSA as standards.
 
@@ -147,25 +225,25 @@ DtSARM1-dN, with the N-terminal targeting signal removed and tagged with a tande
 
 Recombinant CD38 and N. crassa NADase were prepared as described previously (Graeff et al., 1994; Munshi et al., 1997).
 
-## In vitro fluorescence assays
+### In vitro fluorescence assays
 
 To analyze the activity of SARM1 with PCs in vitro, reactions were started by incubating the enzyme with the reaction mixture, 50 μM PC, 100 μM NAD, and 100 μM NMN in PBS. The absorbance and fluorescence were measured in a quartz cuvette or black 96-well plates (Corning), respectively, in an Infinite M200 PRO microplate reader (Tecan). For the assays with εNAD，NHD, or NGD as the substrate, 100 μM of each probe was incubated with the enzymes and the kinetics of fluorescence production was measured at λex = 300 nm, λem = 410 nm. The initial rate of the reactions was quantified with the slope of the fluorescence increase in the first several minutes.
 
-## HPLC analysis of the base-exchange reaction
+### HPLC analysis of the base-exchange reaction
 
 The reactions were prepared by mixing SARM1-IP (SARM1 binding on BC2-beads, around 2.5 μg/mL) with 100 μM NAD, 50 μM PC6, 100 μM NMN, and 0.1 mg/mL BSA in PBS and incubated for 60 min at 37°C. SARM1-IP was removed by centrifugation at 4,500 rpm for 1 min. The cleaned mixtures were applied to a C-18 reverse phase column equipped on an HPLC (Agilent 1260) with a gradient of 0.1 M KH2PO4 (pH 6.0) and 0.1 M KH2PO4 (pH 6.0) with MeOH (7:3) to elute NMN, cAPPR, ADPR, NAD, and a gradient of ACN from 30 to 70% to elute PAD6 and PC6. The PAD6 fractions were collected and lyophilized for the characterization of absorption and fluorescence spectra.
 
 To analyze PAD6 in cells, the metabolites were extracted from the cells treated with 50 μM PC6 by 0.6 M perchloric acid, followed by the neutralization with Chloroform: Tri-n-octylamine (3:1). The extracts were applied to a C-18 column and PAD6 was eluted with water and acetonitrile by 2% acetonitrile for 8 min, then 30% acetonitrile for 8 min.
 
-## Confocal imaging of PAD6 in living cells
+### Confocal imaging of PAD6 in living cells
 
 HEK293 cells, overexpressing wildtype or the enzymatically dead form (E642A) of SARM1 or HEK293T Knocking out NMNAT1 were constructed as before (Zhao et al., 2019). Cells, grown on 0.05 mg/mL poly-L-lysine coated Chambered coverglass (ThermoFisher, #155411) overnight, were treated with 50 μM PC6 in the presence or absence of 100 μM CZ-48 for 8 hr (for SARM1-OE cells) and 200 μM CZ-48 for 48 hr (for wildtype HEK293T cells), respectively. To demonstrate the edges of the cells, they were stained with 50 μg/mL Concanavalin A, Alexa Fluor 647 Conjugate (ThermoFisher) at 4°C for 10 min before imaging. The fluorescence signals (Ex/Em: 405/525 nm for PAD6; Ex/Em: 561/590 for ConA) were captured under a confocal microscope (Nikon A1).
 
-## Analysis of PAD6 signals in live cells by flow cytometry
+### Analysis of PAD6 signals in live cells by flow cytometry
 
 HEK293 cell line carrying doxycycline (Dox)-inducible SARM1 was constructed as previously described (Zhao et al., 2019). The cells were treated with 50 μM PC6, 100 μM CZ-48, or 0.5 mg/mL Dox for 4, 8, 12, and 16 hr. The cells were trypsinized and the fluorescence of PAD6 (Ex/Em: 405/525 nm) was analyzed by flow cytometry (CytoFlex, Beckman).
 
-## DRG culture and imaging
+### DRG culture and imaging
 
 Mouse DRG culture was performed as described (Sasaki et al., 2016). Briefly, DRGs were dissected from the embryos at day 12.5 to 14.5 (E12.5-E14.5), dispersed by 0.05% Trypsin solution containing 0.02% EDTA (Gibco), and seeded in Neurobasal Plus Medium supplemented with 2% B27 plus, 1 mM GlutaMax, 1% penicillin/streptavidin solution, and 37.5 ng/mL NGF on the Chambered coverglass pre-coated with (0.1 mg/mL) poly-L-Lysine, (0.02 mg/mL) laminin, and 5% FBS. Every 3 days, 50% of the culture media was replaced by fresh media with the addition of 5 μM 5-fluoro-2’-deoxyuridine and 5 μM uridine.
 
@@ -173,53 +251,53 @@ On div6, the neurons were infected with lentivirus carrying various expression c
 
 Lentivirus preparation and infection of DRG neurons pLKO.1-shRNA-Sarm1 plasmids were constructed as described previously (Zhao et al., 2019). Briefly, the shRNA targeting mouse Sarm1 (5’- CCGGCTGGTTTCTTACTCTACGAATCTCGAGATTCGTAGAGTAAGAAACCAGTTTTTG-3’) or the scrambled shRNA (5’- CCGGCCTAAGGTTAAGTCGCCCTCGCTCGAGCGAGGGCGACTTAACCTTAGGTTTTTG-3’) were inserted to pLKO.1-puro (Addgene, #8453) with EcoRI and AgeI, followed by the replacement of the puromycin resistance gene with a fluorescent protein, TdTomato (GenBank: LC311026.1) with KpnI/BamHI. The lentiviral particles were prepared by transfecting HEK293T cells with the corresponding lentivectors, pMD2.G, and psPAX2 (Liu et al., 2017) and concentrated with Lenti-Concentin Virus Precipitation Solution (ExCell Bio). The viral particles were finally resuspended in Neurobasal Plus Medium. The virus titer was determined by series infection of HEK293T cells. The virus was added to infect the DRG neurons on div6 with the same MOIs and the experiments were carried out 72 hr after infection.
 
-## Imaging and quantification of AxD after axotomy and vincristine treatment
+### Imaging and quantification of AxD after axotomy and vincristine treatment
 
 For axotomy, one DRG was seeded into a 24-well plate, and 5 μM 5-fluoro-2’-deoxyuridine and 5 μM uridine were added on the other day. On div5, axons were pre-incubated with the drugs for 0.5 hr and severed near the soma with a 3 mm flat blade under microscope guidance to remove the cell bodies. For vincristine treatment, DRGs were digested with 0.05% Trypsin and seeded into 24-well plates. DRGs on div9-13 were incubated with 50 nM vincristine in the presence or absence of the candidate drugs.
 
 About 9–12 images of the axon were acquired in the bright field with a 20x object for each treatment at the indicated time points using invert optical microscope (Olympus). Axon degeneration was quantified using ImageJ. For each treatment, 60 random grid-squares with 147 × 147 pixels were cropped, binarized and the total axon area (size = 16 infinity pixels) and the degenerated axon (size = 16–10,000 pixels) were quantified with the particle analyzer module of ImageJ. Axon degeneration index was calculated as the ratio of the degeneration axon over total axon area.
 
-## Measurement of the cADPR levels in DRGs
+### Measurement of the cADPR levels in DRGs
 
 DRG neurons were treated with 50 nM Vincristine or 200 μM CZ-48 for 0, 12, 24, 48 hr on div6. After incubation, DRG was washed with cold PBS and lysed with 0.6 M perchloric acid. The concentration of cADPR was analyzed by the cycling assay, as described previously (Graeff and Lee, 2002).
 
-## Q-RT-PCR
+### Q-RT-PCR
 
 The total RNAs were extracted from DRG neurons with RNA extraction kit (OMEGA) 48 hr post infection and transcribed with the kit, Transcript II One-step gDNA Removal and cDNA synthesis Supermix from Sangon Biotech. The mRNA level of SARM1 relative to GAPDH was quantified with by Q-RT-PCR using TransStart Tip Green qPCR SuperMix (TransGen Biotech) on CFX Connect Real-Time PCR Detection System (Bio-Rad). The following primer pairs were used: Sarm1 sense, 5’-CTTTCTCCAAGGAGGACGAGC-3’, antisense, 5’-CTTGTGTCACTGGCATCCACC-3’; GAPDH sense, 5’- TGGCCTTCCGTGTTCCTAC-3’, antisense, 5’-GAGTTGCTGTTGAAGTCGCA-3’.
 
-## PC6 assay
+### PC6 assay
 
 For high-throughput screening of the potential inhibitors, 1.5 μg/mL SARM1-dN was pre-incubated with 50 μM drugs (TargetMol, L1000) at room temperature for 10 min and the reaction reagents, including 20 μM PC6, 50 μM NAD, and 50 μM NMN were added to start the reaction. Controls including reactions without the drugs, defined as 0% inhibition, and without both the drugs and SARM1-dN, defined as 100% inhibition. The fluorescence (ex: 390 nm; em: 520 nm) was measured by plate reader (Tecan, M200Pro) and the initial reaction rates were calculated, Vx for the reactions with different drugs, Vmax for the reaction without drugs and Vmin for the reaction without enzyme. The inhibitory rates were calculated by the equation, (Vmax- Vx)/Vmax and plotted using GraphPad Prism 8.0. The standard statistics of the screening were calculated as follows: Z' factor=1-(3*SD(Vmax)+3*SD(Vmin))/(Average(Vmax)-Average(Vmin)), S/N = (Average(Vmax)-Average(Vmin))/SD(Vmin). In the screening of this study, Z’ = 0.69 and S/N = 291.96.
 
 For IC50 measurement, 0.4 μg/mL SARM1-dN was pre-incubated with doses of drugs in vitro for 10 min, and started the reaction by adding 50 μM NAD, 50 μM NMN, and 50 μM PC6. Calculation of IC50 by plotting the initial rate to dose of compounds.
 
-## NADase acitivity of SARM1 analyzed by HPLC
+### NADase acitivity of SARM1 analyzed by HPLC
 
 1 μg/mL of SARM1-dN was pre-incubated with drugs for 15 min at room temperature, and the reactions were started by adding 100 μM NAD and 100 μM NMN. They were stopped by removing the enzyme with MultiScreen Filter Plates (Millipore) after 0, 15, and 30 min incubation at 37°C and the reactants and products were analyzed by a C-18 column (Aligent, 20 RBAX SB-C18) with a gradient of 0.1 M KH2PO4 (pH 6.0) and 0.1 M KH2PO4 (pH 6.0) with MeOH (7:3) to elute NMN, cAPPR, ADPR, NAD, Nam. The amount of ADPR was used to calculate the initial rate. IC50 was calculated by Graphpad Prism 8.0.
 
-## HPLC analysis of NSDP and its derivatives
+### HPLC analysis of NSDP and its derivatives
 
 The NSDP powder was dissolved in DMSO and shined with UV at 254 nm for 30 min and analyzed with a C-18 reverse phase column (ZORBAX SB-C18) equipped on a HLPC (Aligent 1260) and eluted with 50% of 0.1%TFA and 50% of 0.1%TFA in 99% ACN. The products after UV treatment were collected and purified by HPLC, as described above. The inhibitory activity of these fractions was determined by PC6 assay after being neutralized with 100 mM Tris (pH7.5), and the main peak was characterized by HRMS (Thermo, Q Exactive Focus).
 
-## The inhibitory activity of dHNN in vitro and in cellulo
+### The inhibitory activity of dHNN in vitro and in cellulo
 
 To determine whether dHNN inhibits the activation or enzymatic activity of SARM1 in vitro, SARM1-dN, the autoinhibited form, and SAM-TIR, the constitutively active form, were pre-incubated with different concentrations of dHNN at rt for 10 min, after which the activity was measured with PC6 assay and the inhibition rate was calculated.
 
 To test the same effect in cellulo, HEK293 cells overexpressing the inducible SARM1 (iSARM1) or SAM-TIR (iSAM-TIR) were pre-incubated with 20 μM dHNN, or DMSO as controls, for 1.5 hr and then treated with 100 μM CZ-48 or 0.5 μg/mL Dox for the indicated time. The cellular levels of cADPR were measured as described above.
 
-## Modification of SARM1 by dHNN
+### Modification of SARM1 by dHNN
 
 The dtSARM-dN, eluted from the StrepTactin beads, was incubated with 0, 5, or 50 μM dHNN at rt for 40 min and applied to SDS-PAGE. After simplyBlue SafeStain (ThermoFisher), the dtSARM1-dN band was sliced, dehydrated with 100% ACN, and the proteins were alkylated by 22.5 mM IAA for 30 min in dark after the reduction by 10 mM DTT at 55°C for 30 min. After overnight in-gel digestion with Trypsin, the peptides were extracted and analyzed with HRMS (Thermo, Q Exactive HF-X). The dHNN modifications, determined by Protein Discoverer software (ThermoFisher), were defined as an increase of molecular weight by 370.153 Da, 354.158 Da, 402.143 Da, or 386.148 Da on the cysteine residues characterized in the MS2 fragments (Callan et al., 2009; Möller et al., 2017). The abundance of each peptide was determined in the MS1. Abundance ratio was calculated by dividing the intensity of the dHNN-modified peptides by that of the corresponding peptides.
 
-## Cysteine mutants
+### Cysteine mutants
 
 The cysteine-to-alanine mutants of dtSARM1-dN were amplified by the overlapping PCRs with the primers, listed below, and subcloned into pCDH-EF1-MCS-IRES-neo by Xba I and Not I. To prepare the mutant proteins, HEK293 cells were transfected with the above plasmids by lipofectamine 2000 or Polyethylenimine according to the manufacturer’s instructions, and the proteins were extracted 48–72 hr after transfection and determined the IC50 of dHNN by PC6 assay in vitro.
 
-## Western blots
+### Western blots
 
 Cells were lysed with RIPA buffer (50 mM Tris-HCl, 150 mM NaCl, 1 mM EDTA and 0.05% Triton, pH 7.4). Each sample was loaded onto 10–12% SDS-PAGE gels and the proteins were then transferred to a PVDF membranes. The membranes were blocked with 5% milk and blotted with anti-SARM1 (home-made), with anti-Tubulin (TransGen Biotech) as an internal control. After incubation with HRP-conjugated second antibodies, the signals were developed by ECL (Abvansta), detected, and quantified by a Chemidoc MP system and ImageLab software (Bio-Rad).
 
-## Cryo-EM sample preparation, data collection, and processing
+### Cryo-EM sample preparation, data collection, and processing
 
 Pure dtSARM1-dN protein was concentrated to 3 mg/mL and pre-incubated with 50 μM dHNN at rt for 10 min, and applied to glow-discharged gold grid, blotted in FEI Vitrobot Mark IV (ThermoFisher Scientific) before frozen by liquid ethane and stored in liquid nitrogen. The sample without inhibitor was examined at the Cryo-EM center of Chinese University Hong Kong (Shenzhen) on a 300kV Titan Krios (ThermoFisher Scientific) equipped with Gatan K3 direct electron detector under magnification of 105,000x, with the corresponding pixel size of 0.85 Å. The dose rate was set to 17.6 e/pix/s and exposure time was set to 2.5 s to obtain 50 frames, which led to an accumulated dose of 61 electrons per Å2. The total dataset consists of 2692 raw movies with a defocus value range of −1.0 to −2.0 μm. Motion correction and CTF parameter estimation were performed with cryoSPARC (Punjani et al., 2017). 2,012,198 particles were autopicked. After several rounds of 2D classification, 712,139 particles were selected for generation of the final 2D average results.
 
@@ -227,6 +305,6 @@ The dHNN-treated sample was examined at the Cryo-EM center of Southern Universit
 
 The previously reported structures of the SARM1 SAM domain (PDB: 6O0S) and TIR domain (PDB: 6O0Q) were used as model templates during initial model building. The initial model of ARM domain was built de novo in Coot (Emsley et al., 2010). The three domains of SARM1 were connected in Coot and docked into density maps using Dock in Map module of Phenix 1.16 (Adams et al., 2010) with C8 symmetry and then subjected to multiple rounds of Real-space refinement in Phenix. The dHNN molecule was built and fitted into the density around Cys311 of the initial model in Coot. The final models were validated with Comprehensive Validation module of Phenix and the refinement statistics are listed in Supplementary file 1. The model and EM map have been deposited in Protein Data Bank with accession codes of PDB ID 7DJT and EMD-30700.
 
-## Data analysis
+### Data analysis
 
 All experiments contained at least three biological replicates. Data shown in each figure are all means ± SD. The unpaired Student’s t-test was used to determine statistical significance of differences between means (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). GraphPad Prism 8.0 was used for data analysis.

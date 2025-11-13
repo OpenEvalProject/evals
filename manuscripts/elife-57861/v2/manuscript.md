@@ -29,7 +29,7 @@
 
 ## Abstract
 
-N -myristoylation is a ubiquitous class of protein lipidation across eukaryotes and N -myristoyl transferase (NMT) has been proposed as an attractive drug target in several pathogens. Myristoylation often primes for subsequent palmitoylation and stable membrane attachment, however, growing evidence suggests additional regulatory roles for myristoylation on proteins. Here we describe the myristoylated proteome of Toxoplasma gondii using chemoproteomic methods and show that a small-molecule NMT inhibitor developed against related Plasmodium spp . is also functional in Toxoplasma . We identify myristoylation on a transmembrane protein, the microneme protein 7 (MIC7), which enters the secretory pathway in an unconventional fashion with the myristoylated N-terminus facing the lumen of the micronemes. MIC7 and its myristoylation play a crucial role in the initial steps of invasion, likely during the interaction with and penetration of the host cell. Myristoylation of secreted eukaryotic proteins represents a substantial expansion of the functional repertoire of this co-translational modification.
+N-myristoylation is a ubiquitous class of protein lipidation across eukaryotes and N-myristoyl transferase (NMT) has been proposed as an attractive drug target in several pathogens. Myristoylation often primes for subsequent palmitoylation and stable membrane attachment, however, growing evidence suggests additional regulatory roles for myristoylation on proteins. Here we describe the myristoylated proteome of Toxoplasma gondii using chemoproteomic methods and show that a small-molecule NMT inhibitor developed against related Plasmodium spp. is also functional in Toxoplasma. We identify myristoylation on a transmembrane protein, the microneme protein 7 (MIC7), which enters the secretory pathway in an unconventional fashion with the myristoylated N-terminus facing the lumen of the micronemes. MIC7 and its myristoylation play a crucial role in the initial steps of invasion, likely during the interaction with and penetration of the host cell. Myristoylation of secreted eukaryotic proteins represents a substantial expansion of the functional repertoire of this co-translational modification.
 
 ## Introduction
 
@@ -43,25 +43,49 @@ By combining several chemoproteomic tools for substrate identification with a sm
 
 ## Results
 
-## Metabolic labelling allows for enrichment and visualisation of myristoylated and GPI-anchored proteins in Toxoplasma
+### Metabolic labelling allows for enrichment and visualisation of myristoylated and GPI-anchored proteins in Toxoplasma
 
 To visualise the extent of myristoylation in Toxoplasma, we adapted a metabolic labelling approach that has previously been applied to mammalian cells (Broncel et al., 2015; Thinon et al., 2014) and protozoan parasites (Wright et al., 2014; Wright et al., 2016; Wright et al., 2015). In this workflow, a myristic acid (Myr) analogue containing a terminal alkyne group (YnMyr) is added to cell culture upon infection with Toxoplasma tachyzoites (Figure 1A). The hydrophobic nature of YnMyr allows for optimal biomimicry of myristate and conversion into the active co-substrate YnMyr-CoA in situ, while the alkyne tag allows for NMT-mediated metabolic labelling of both host and parasite substrate proteins. Upon cell lysis, labelled proteins are liberated and conjugated to azide-bearing multifunctional capture reagents by a click reaction (Heal et al., 2012). The conjugation process introduces secondary labels, like biotin and fluorophores, allowing for substrate enrichment on streptavidin beads and visualisation via in-gel fluorescence (igFL), respectively. To investigate the extent of YnMyr incorporation, intracellular tachyzoites were treated with either Myr or increasing concentrations of YnMyr for 16 hr. Within this timeframe protein labelling in vivo did not appear to exert any toxic effects on Toxoplasma parasites. Labelled proteins were then conjugated to a capture reagent and resolved by SDS-PAGE. As visualised by igFL, the labelling was concentration-dependent with only negligible background (Figure 1—figure supplement 1A). In addition, the extent of labelling did not seem to depend on parasite localisation inside or outside the host cell, and was efficiently out-competed by excess myristate, indicating that YnMyr is an effective mimic of myristate in Toxoplasma parasites (Figure 1—figure supplement 1B). To estimate the efficiency of substrate enrichment, we took advantage of the biotin moiety that enables a streptavidin-based pull down. Using igFL as readout we observed robust enrichment of protein substrates in a YnMyr-dependent manner, and detected very little background in controls (Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig1-v2.jpg)
+
+**Figure 1.:** (A) Metabolic labelling workflow. (B) In gel fluorescence visualisation of YnMyr-dependent enrichment without and with the base treatment (top) and western blot with α-SFP1 (TGGT1_289540) showing the loading control (bottom). (C) Western blot analysis of YnMyr-dependent pull down for known myristoylated and GPI-anchored proteins GAP45 and SAG1, respectively. White space was used to indicate where gel lanes were not contiguous. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) In gel fluorescence imaging of protein labelling with increasing concentrations of YnMyr over a 16 hr period in RH parasites. (B) In gel fluorescence visualisation of protein labelling with YnMyr in intracellular (IN) and syringe lysed extracellular (Ex) RH parasites as well as in uninfected human foreskin fibroblasts (HFFs). Parasite-specific bands are indicated by arrows. Tagging with YnMyr is outcompeted by excess myristate (50 µM = ++). (C) In gel fluorescence analysis of YnMyr-dependent pull down efficiency, Sup = supernatant after enrichment. All bottom panels show loading control by Coomassie staining.
+
 It has been reported that in Plasmodium parasites, YnMyr can be incorporated not only at N-terminal glycines via amide bonds, but also through ester-linked incorporation of myristate into GPI anchors (Wright et al., 2014). These two distinct types of labelling can be readily distinguished by their different sensitivity to base treatment; amide bonds are stable in basic conditions, whereas ester bonds are hydrolysed. To visualise the extent of YnMyr incorporation into GPI anchors in Toxoplasma, we performed base treatment prior to enrichment of substrate proteins and observed a reduction of igFL signal for selected enriched bands (Figure 1B). To further validate the base treatment approach, we probed known N-myristoylated and GPI-anchored Toxoplasma proteins, GAP45 and SAG1, for their ability to be enriched in a base-dependent manner. In the absence of treatment, both proteins were robustly pulled down with YnMyr, while upon base treatment, only GAP45 remained enriched, confirming that it is a true myristoylation substrate (Figure 1C). Collectively, we confirmed that YnMyr is a robust and high-fidelity myristate analogue and demonstrated that it can be applied to profile both N-myristoylated and GPI-anchored proteins in live T. gondii.
 
-## Proteomic identification of YnMyr-enriched proteins in T. gondii
+### Proteomic identification of YnMyr-enriched proteins in T. gondii
 
 To confidently identify YnMyr-labelled proteins in Toxoplasma, we applied state-of-the-art mass spectrometry (MS)-based proteomics combined with validated chemical tools (Figure 2—figure supplement 1A); (Broncel et al., 2015; Speers and Cravatt, 2005; Thinon et al., 2014; Wright et al., 2014). We started with a small-scale pilot experiment to test our workflow and differentiate between N-myristoylation-based enrichment and GPI-anchored substrates. We metabolically labelled intracellular tachyzoites of the RH strain (Huynh and Carruthers, 2009) with either YnMyr or Myr each at 25 µM for 16 hr. We then lysed the infected cell monolayers and performed the click reaction with the azido biotin capture reagent (reagent 1) to facilitate YnMyr-dependent enrichment of labelled proteins. To distinguish myristoylated from GPI-anchored substrates, we applied base treatment prior to the streptavidin-based pull down. Following trypsin digestion, we analysed samples by LC-MS/MS and performed label free quantification (LFQ) of enriched proteins. We quantified 2363 human and Toxoplasma proteins, 349 of which were parasite proteins with YnMyr intensities irrespective of base treatment (Supplementary file 1). To identify GPI-anchored proteins, we calculated log2 fold changes between base-treated and untreated samples. To threshold we utilised the least extreme negative value (log2 fold change < −1) quantified from all Surface Antigen Proteins (SAGs) detected in our study, which are known to be GPI-anchored (Figure 2—figure supplement 1B). This selection strategy yielded 52 substrates, that included known and predicted GPI-anchored proteins (Supplementary file 1). To identify myristoylated proteins we utilised a stringent selection method based on three criteria: a) robust YnMyr/Myr enrichment (log2 fold change > 2) with threshold selected based on known myristoylated proteins (Figure 2—figure supplement 1C), b) the presence of an MG motif and c) insensitivity to base treatment. 56 proteins met these criteria, including those previously reported as myristoylated (Supplementary file 1). Analysis of post enrichment supernatants did not reveal any substantial changes between proteomes of the YnMyr- and Myr-treated samples, confirming that the observed enrichment is not due to globally altered protein abundance (Figure 2—figure supplement 1D and Supplementary file 1).
 
 After successful testing of the metabolic labelling workflow, we performed a more elaborate MS experiment using cleavable capture reagents bearing either trypsin (reagent 2) or TEV (reagent 3) cleavable linkers (Figure 2—figure supplement 1A). In contrast to a non-cleavable reagent (e.g. reagent 1) that provides only indirect proof of substrate myristoylation, cleavable reagents allow for detection of myristoylated peptides in addition to peptides that originate from the enriched proteins (Figure 2A). This additional layer of confidence in MS-based substrate identification is especially important given the high level of non-myristoylation dependent background reported for metabolic labelling with YnMyr (Broncel et al., 2015; Wright et al., 2016; Wright et al., 2015). While reagent 2 has been validated as a tool for myristoylated protein and peptide discovery (Broncel et al., 2015), reagent 3 (Speers and Cravatt, 2005), which is expected to produce less background and improve myristoylated peptide discovery, has not previously been applied to study protein myristoylation. We therefore first tested reagent 3 in terms of YnMyr-dependent protein enrichment and observed robust pull down of potential NMT substrates (Figure 2—figure supplement 1E). We next generated samples for the MS workflow as described above but, instead of conjugating reagent 1, we conjugated either 2 or 3, each in biological triplicate, to labelled proteins via click reaction to enable myristoylation-dependent pull down. As depicted in Figure 2A, reagent 2 requires only a single trypsin digestion step to liberate both unmodified and myristoylated peptides in one pool. By contrast, reagent 3 requires both trypsin and TEV protease digestion and, depending on the enzyme combination, releases unmodified and myristoylated peptides in either one (TEV I) or two (TEV II) separate fractions (Figure 2A). In the TEV I strategy TEV protease is used to cleave proteins from beads followed by trypsin digestion of proteins into peptides. The cleavage will only occur for proteins bound via the TEV linker and not for the non-specifically bound ones, which should significantly reduce background. In the TEV II strategy, trypsin is used first to remove most proteins from the beads, only retaining the captured myristoylated peptides. These are then specifically released using TEV protease cleavage resulting in much reduced sample complexity, which increases the myristoylated peptide discovery by MS. Following digestion, all samples were subjected to LC-MS/MS, and LFQ was performed to identify proteins robustly enriched in YnMyr-dependent manner. This yielded 206 human and 117 T. gondii proteins bearing an N-terminal MG motif (Supplementary file 2). Within the parasite protein pool, we obtained statistically significant (FDR 1%, log2 fold change >2) enrichment in YnMyr over Myr controls for 72 potential substrates using reagent 2 (Supplementary file 2). For reagent 3, which was used in two different scenarios (TEV I and TEV II) resulting in larger variability between replicates, we utilised a fold change based threshold (log2 fold change >2) and obtained 48 robustly enriched proteins (Supplementary file 2). Reassuringly, we observed a ~ 5 and~8 fold reduction in background in TEV I vs TEV II and TEV I vs reagent 2, respectively, as shown by the number of proteins quantified in Myr controls (Supplementary file 2). Collectively we identified 76 significantly YnMyr-enriched proteins utilizing reagents 2 and 3 with an overlap of 60% (Figure 2B, Supplementary file 2) which provides substantial confidence to the accuracy of our results. Application of the same selection criteria to 206 human MG proteins identified in our study yielded 102 potential substrates. 84 of these proteins have previously been reported as myristoylated (Broncel et al., 2015; Castrec et al., 2018; Thinon et al., 2014), which further strengthens our substrate identification strategy.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the MS workflow using non-cleavable and cleavable capture reagents. (B) Venn diagram illustrating the overlap between significantly YnMyr-enriched proteins identified with capture reagents 2 and 3. The number of significantly enriched proteins per reagent and in total is given in parenthesis. (C) Venn diagram showing the overlap in myristoylated peptide discovery between the two cleavable capture reagents used in this study. The number of modified peptides identified with each reagent and in total is given in parenthesis. (D) Label free quantification of the log2 fold changes in YnMyr enrichment over the Myr control plotted against the statistical significance for all parasite proteins detected in this study using reagent 2. Proteins with N-terminal glycine and significant, base-insensitive enrichment with at least two capture reagents are highlighted in blue and red subject to the presence of a myristoylated peptide. All other identified proteins (YnMyr-enriched with only one reagent, background and GPI-anchors) are represented in grey. See also Figure 2—figure supplement 1, Supplementary file 1 and Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Structures of capture reagents used in this study with key functional components highlighted: biotin and azide moieties in blue and bold, respectively, cleavable linkers in grey with the cleavage site indicated by arrows (B) Label free quantification of YnMyr enrichment in base-treated vs untreated samples. Proteins with log2 fold change < −1 are assigned as base sensitive (YnMyr incorporation through ester bonds) and are highlighted in red. See also Supplementary file 1. (C) Label free quantification of YnMyr enrichment. Known myristoylated proteins used to determine enrichment threshold (log2 fold change > 2) are highlighted in red. See also Supplementary file 1. (D) Label free quantification of change in total protein abundance between YnMyr and Myr samples. See also Supplementary file 1. (E) Evaluation of YnMyr-dependent enrichment efficiency for capture reagents used in this study. Visualisation performed by western blotting with Streptavidin-HRP, SFP1 (TGGT1_289540) was used as loading control. (F) Venn diagram illustrating the overlap between myristoylated peptides identified with reagent 3 used in TEV I vs TEV II strategy. The number of peptides per strategy and in total is given in parenthesis.
+
 We next focused on the identification of myristoylated peptides in samples processed with reagents 2 and 3. Using stringent criteria for the unbiased identification of the myristoylation adduct, as well as manual validation of the acquired MS/MS spectra, we identified 31 myristoylated peptides (Supplementary file 2), 24 of which were detected using reagent 2, and 20 using reagent 3 (Figure 2C). None of these peptides were detected in Myr controls, and the myristoylation adduct was not identified on cysteine residues. Despite almost equal numbers of peptides detected by the two reagents, the overlap was only 40% (Figure 2C), confirming the added value of orthogonal methods for modified peptide detection. As envisioned in our design strategy, we obtained an increase in myristoylated peptide discovery in TEV II (17) vs TEV I (12) workflow (Figure 2—figure supplement 1F).
 
 Finally, to summarise our global proteomic study, we combined our results on both protein enrichment and the modified peptide levels. We filtered for proteins identified with at least two of three capture reagents or proteins for which we detected a lipid modified peptide. This resulted in 65 proteins, of which 48% have direct MS/MS evidence for protein myristoylation (Supplementary file 2, Figure 2D).
 
-## Chemical inhibition of TgNMT
+### Chemical inhibition of TgNMT
 
 Given that our global proteomic screen provided direct proof for substrate myristoylation for approximately 50% of selected proteins, we sought for an alternative strategy for substrate validation using NMT inhibitors (NMTi). Here, parasites are treated with NMTi to specifically reduce the incorporation of YnMyr into nascent proteins, which can be quantified by MS (Thinon et al., 2014; Wright et al., 2014; Wright et al., 2016; Wright et al., 2015). In the absence of a dedicated TgNMTi, we used IMP-1002, a compound recently shown to inhibit NMT of Plasmodium falciparum (Schlott et al., 2019) which is related to Toxoplasma. Homology modelling (SWISS-MODEL, [Waterhouse et al., 2018]) of the TgNMT sequence onto the available Plasmodium vivax (another important malaria causing Plasmodium spp.) NMT crystal structure with bound IMP-1002 (PDB: 6MB1, [Schlott et al., 2019]) revealed high sequence identity (57%) and showed that all residues directly involved in compound binding are conserved within the TgNMT active site and therefore predicted to adopt an identical structural arrangement (Figure 3A). We therefore reasoned that IMP-1002 should also inhibit TgNMT. To test this, we co-treated intracellular parasites 16 hr post invasion with YnMyr and increasing concentrations of the inhibitor for 5 hr and analysed the effects on YnMyr labelling of Toxoplasma proteins. A dose-dependent drop in igFL labelling of most protein bands was observed and further confirmed by specifically probing for CDPK1, a substrate identified herein (Figure 3B). Consistent with TgNMT inhibition, CDPK1 pull down was reduced with increasing inhibitor concentrations. This was not a general reduction of protein levels as shown by anti-Toxoplasma antibodies. Plaque assays in the presence of inhibitor showed dose-dependent killing of parasites, suggesting that treatment with IMP-1002 has severe consequences for the in vitro expansion of the tachyzoite population but not for the host cells which appeared unaffected (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig3-v2.jpg)
+
+**Figure 3.:** (A) Prediction of IMP-1002 interaction with TgNMT based on the PvNMT crystal structure. Crystal structure of the PvNMT (PDB: 6MB1, Schlott et al., 2019) active site (orange, red text) with IMP-1002 inhibitor bound, overlaid with a TgNMT model (cyan, blue text). Hydrogen bonds between key PvNMT residues (Serine and Leucine) and IMP-1002 are shown as black dashes. (B) Analysis of the dose response to IMP-1002 via igFL and by western blotting with CDPK1 – a substrate identified in this study. (C) Plaque assay illustrating differential killing of parasites and the host cells. The assay was performed for 5 days in three biological replicates, each in technical triplicate, representative images are shown. (D) Label free quantification of the YnMyr label incorporation into proteins in the presence of NMTi (0.5 µM) plotted against the statistical significance for all parasite proteins detected in this study. Proteins with a significant response and N-terminal glycine (MG) are highlighted in green, those without MG highlighted in black. (E) Dose response to NMTi plotted for selected proteins with significant YnMyr enrichment. (F) Dose response to NMTi plotted for selected SAG proteins assigned previously as base sensitive. See also Figure 3—figure supplement 1 and Supplementary file 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Label free quantification of change in total protein abundance between YnMyr- and NMTi-treated samples. See also Supplementary file 3.
 
 Having confirmed target engagement with IMP-1002, we next performed a large-scale MS-based inhibitor response analysis. Intracellular parasites were fed with 25 µM YnMyr alone or co-incubated with 0.05 µM and 0.5 µM NMTi in biological triplicates. Samples were then clicked, pulled down and the level of protein myristoylation in response to IMP-1002 quantified by MS and LFQ. No major effect was observed for the lower concentration of the inhibitor, therefore we performed statistical analysis between triplicate samples treated with either only YnMyr, or YnMyr + 0.5 µM NMTi. We identified a statistically significant (FDR 5%, log2 fold change > 0.5) response for 56 proteins (Figure 3D, Supplementary file 3). Analysis of total proteomes from inhibited samples confirmed that the observed substrate response was not due to the altered protein abundance (Figure 3—figure supplement 1, Supplementary file 3). 49 significant responders contained the MG motif with 47 of these being significantly enriched in our previous experiment, while two proteins were not quantified. Specific dose-responses were plotted for selected proteins identified previously as significantly YnMyr-enriched (Figure 3E). While most showed a robust response to the highest concentration of inhibitor, CDPK3 and PKG did not, despite substantial literature evidence for myristoylation (Brown et al., 2017; Garrison et al., 2012; McCoy et al., 2012), including the presence of a myristoylated peptide in case of CDPK3 (Supplementary file 2). In fact, a total of 7 proteins for which the myristoylated peptide was detected did not respond robustly to NMT inhibition (Supplementary file 3). This behaviour is surprising, however a similar observation has been described for other organisms (Thinon et al., 2014; Wright et al., 2014; Wright et al., 2016; Wright et al., 2015) and could be due to low protein turnover, higher affinity for NMT, or potential interference from other modifications, such as protein S-acylation for example. A further seven proteins for which we obtained myristoylated peptides were not quantified at the highest concentration of IMP-1002 (Supplementary file 3), suggesting that their myristoylation state, and therefore enrichment, is most affected by NMT inhibition.
 
@@ -69,7 +93,7 @@ A significant response to NMTi was also observed for seven proteins that did not
 
 Finally, despite no apparent effect on host cells in plaque assays (Figure 3C), we also observed a certain level of response to IMP-1002 for host proteins (Supplementary file 3). This suggests that human NMT is also targeted by this compound, however, without visible impact on the integrity of the monolayer of host cells.
 
-## The myristoylated proteome of Toxoplasma
+### The myristoylated proteome of Toxoplasma
 
 To generate a comprehensive list of myristoylated proteins in Toxoplasma, we combined YnMyr enrichment with the substrate response to NMT inhibition and the myristoylated peptide discovery. This stringent selection strategy yielded 65 substrates that were further split based on the confidence level (Supplementary file 4). 42 substrates were classified as high confidence (the presence of myristoylated peptide and/or robust response to NMT inhibition with YnMyr enrichment ≥ two capture reagents) while 19 were classified as medium confidence (the presence of myristoylated peptide or response to NMT inhibition with YnMyr enrichment with one capture reagent). Finally, PKG and PPM5C that did not pass our confidence criteria, yet have been reported as myristoylated by others (Brown et al., 2017; Yang et al., 2019), as well as two proteins that responded to NMT inhibition, yet were not present in our global enrichment analysis, were classified as lower confidence hits (Supplementary file 4). Our substrate list includes all proteins previously reported as myristoylated, which validates our approach and indicates that this analysis covers a large fraction of the myristoylated proteome in Toxoplasma. Notably, in silico prediction for myristoylation (Alonso et al., 2019) disagreed with 11 of our high and medium confidence substrates (Supplementary file 4). This is not necessarily surprising, given that the prediction was based on a consensus myristoylation sequence derived from other organisms (Martin et al., 2011), and highlights the importance of experimental validation of NMT substrates.
 
@@ -77,29 +101,65 @@ To generate a comprehensive list of myristoylated proteins in Toxoplasma, we com
 
 As expected, the identified substrates showed heterogeneous localisation (Figure 4A). Utilizing the localisation of organelle proteins by isotope tagging (LOPIT) prediction (Barylyuk et al., 2020) within ToxoDB (Gajria et al., 2008), we found proteins from key cellular organelles, including the nucleus, mitochondrion, proteasome and micronemes. In agreement with the functional relevance of myristoylation, we found 50% substrates with known or predicted localisation at the plasma membrane (PM), as well as membrane-bound compartments (e.g. inner membrane complex (IMC), endoplasmic reticulum (ER), and Golgi apparatus). Stable attachment at membranes may require a double acylation, that is both myristoylation and palmitoylation (Wright et al., 2010), however, only 30% of our substrates were previously reported to be palmitoylated (Caballero et al., 2016; Foe et al., 2015) and Supplementary file 4). Since palmitoylation is frequently enriched at the protein N-terminus, in close proximity to the myristate, we analysed the first 20 amino acid sequences of our substrates (Figure 4—figure supplement 1A) and found that approximately half possessed cysteine residues (sites of palmitoylation) and, hence, the potential for double acylation. This number correlated well with the 54% palmitoylation prediction (Ren et al., 2008) for our substrate pool (Supplementary file 4). The reported and predicted palmitoylation data suggested that 12 of the 18 PM substrates likely utilise double acylation for stable membrane attachment while the remaining six may be targeted to the PM via alternative mechanisms. Of the 9 IMC localised substrates, 8 are reported or predicted as palmitoylated as well as 4 of the 5 Golgi-localised ones. This indicates that double acylation is a strong predictor for membrane targeting, albeit to different localisations within the cell, suggesting that further signals are required for their definitive subcellular localisation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig4-v2.jpg)
+
+**Figure 4.:** (A) Distribution of the subcellular localisation across our substrate list. Analysis performed using ToxoDB and the build in LOPIT predictor. (B) Substrate orthology within selected Apicomplexans. Analysis was performed using EuPathDB. See also Figure 4—figure supplement 1 and Supplementary file 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequence logo illustrating the amino acid distribution within the 20 N-terminal residues of all targets. Amino acids at each position (1-20) are ordered by the frequency of occurrence. Sequence logo was created using the build-in tool within the Perseus software. (B) Venn diagram illustrating the overlap of the myristoylated proteome identified in this study with that of P. falciparum. See also Supplementary file 4.
+
 Although the absence of palmitoylation cannot exclude the presence of other secondary signals, such as polybasic regions and PPI sites, which could still aid in PM attachment, we predict that about half of the substrates we identified are likely only myristoylated at the N-terminus. Consistent with this, all cytosolic and proteasome localised substrates were deprived of any palmitoylation and only 3 of the 12 nuclear proteins were shown to be palmitoylated. Within this varied group were CDPK1 (Ojo et al., 2010; Pomel et al., 2008), the two phosphatases PPM2A and PPM2B (Yang et al., 2019) and, surprisingly, the microneme protein MIC7 (Meissner et al., 2002). For these proteins myristoylation is likely to serve a distinct function beyond just a simple PM anchor.
 
 The availability of the myristoylated proteomes of Toxoplasma and the related P. falciparum (Wright et al., 2014) allowed us to investigate conserved and non-conserved features of myristoylation across the Apicomplexa. First, we compared both myristoylated proteomes by converting Plasmodium myristoylated proteins into Toxoplasma orthologues using EuPathDB (Aurrecoechea et al., 2017) and compared the overlap of both species. This yielded 24 shared substrates, which corresponds to 37% of the Toxoplasma and 63% of the P. falciparum experimentally validated myristoylated proteome (Figure 4—figure supplement 1B). 39 substrates from the Toxoplasma dataset have orthologues in P. falciparum and 30 of them contain the MG motif, hinting towards potentially unexplored PfNMT substrates (Supplementary file 4). We also investigated substrate orthology with other Apicomplexans (Figure 4B, Supplementary file 4). This analysis showed that the lowest level of substrate conservation is present in Babesia and Cryptosporidium (28 orthologues), followed by Plasmodium (39), Cyclospora (62), Eimeria and Neospora (69) and finally Hammondia (72). Probing these species-specific orthologues for the presence of the MG motif indicates that between 14 (Babesia) and 66 (Hammondia) proteins could be potential substrates of NMT (Figure 4B, Supplementary file 4) and therefore could also be myristoylated in these species. 13 proteins, including CDPK3, PKG, PKAr and ARO, were present in all analysed species, suggesting that their myristoylation may be essential across the phylum (Supplementary file 4).
 
-## MIC7 is myristoylated and is important for Toxoplasma fitness in vitro
+### MIC7 is myristoylated and is important for Toxoplasma fitness in vitro
 
 Within our substrate list three proteins were classified as micronemal by LOPIT prediction (Figure 4A). TGGT1_249970 was recently described as a protein on the microneme surface where dual acylation is important for its anchoring into the membrane (Bullen et al., 2016). The second protein (TGGT1_309990) is annotated as a multi-pass transmembrane protein of unknown function. The third, and perhaps the most interesting, was the microneme protein MIC7 (TGGT1_261780). MIC7 has been reported to be a putative type I transmembrane protein, comprising an N-terminal signal peptide, five EGF-like domains, a membrane-spanning region, and a short cytoplasmic tail (Meissner et al., 2002). As MIC signal peptides are typically co-translationally cleaved upon entry into the ER (Soldati et al., 2001), the presence of a myristate within the classical signal sequence of MIC7 was unusual. In addition, MIC7 has been suggested to be predominantly expressed in bradyzoites (Meissner et al., 2002), the lifecycle stage responsible for the chronic phase of T. gondii infection. As our experiments were performed exclusively in tachyzoites, the stage responsible for acute infection, the presence of MIC7 within our dataset could represent a potential false positive identification. To exclude this possibility, we mined MS-based quantification data from an experiment comparing bradyzoite and tachyzoite proteomes (Young et al., 2020; PXD019729). The log2 fold changes in protein abundance for MIC7 and the bradyzoite-specific marker MAG1 (Tu et al., 2019; Figure 5A, Supplementary file 5) revealed that in contrast to MAG1, MIC7 is expressed in tachyzoites, supporting the MS and transcriptional evidence in ToxoDB. We next aimed to directly validate protein myristoylation using ectopically expressed HA-tagged MIC7 WT and myristoylation mutant (Mut, G2G3 > KA) under control of either the endogenous or the strong tubulin promoter. We metabolically labelled parasites with YnMyr and performed a myristoylation-dependent pull down on lysates. Only WT but not the Mut was enriched in this manner (Figure 5B), confirming that MIC7 is indeed myristoylated.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig5-v2.jpg)
+
+**Figure 5.:** (A) MS-based quantification of MIC7 and MAG1 abundance in tachyzoites [T] and bradyzoites [B] of T. gondii. Significance calculated using two-tailed Student’s t-test, ***p=0.0002, N = 3, error bars represent standard deviation. (B) MIC7 is myristoylated as shown by YnMyr-dependent pull down and western blotting with α-HA antibody. CDPK1 and SFP1 (TGGT1_289540) are used as enrichment and loading controls, respectively. (C) Schematic representation of the DiCre/loxP-based iKO strategy used for the conditional depletion of Mic7. Red hexagon represents STOP codon, rec - recodonized. (D) Validation of RAPA-dependent depletion of MIC7HA in the iKO line illustrated by western blotting with α-HA antibody. Gra29 was used as loading control. (E) Co-localisation of MIC7HA (green) with the micronemal marker MIC2 (red) in the iKO line by immunofluorescence analysis. Scale bar: 3 µm. (F) Plaque assays illustrating that MIC7 is important, but not essential for the intracellular growth of Toxoplasma. Assay was performed for 5 days (where not indicated) in three biological replicates, each in technical triplicate, representative images are shown. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) PCR analysis confirming correct integration of the floxed and recodonized version of Mic7 in the iKO line. Primers are indicated by arrows. Red hexagon represents STOP codon. bp – base pairs. (B) PCR analysis demonstrating that addition of rapamycin (RAPA) leads to correct excision of the floxed Mic7. Primers are indicated by arrows. Red hexagon represents STOP codon. bp – base pairs.
+
 To investigate the functional relevance of MIC7 and its myristoylation, we created an inducible knock-out (iKO) line using the DiCre/loxP system (Andenmatten et al., 2013) that we recently optimised in RHΔku80 parasites (Hunt et al., 2019). The Mic7 coding sequence was replaced with a floxed, HA-tagged copy of the gene, hereafter called MIC7HA, that could be excised upon rapamycin (RAPA) treatment (Figure 5C). We verified correct integration at the endogenous locus and confirmed RAPA-induced excision by PCR (Figure 5—figure supplement 1). At the protein level, MIC7HA was efficiently depleted 24 hr post RAPA treatment (Figure 5D). Correct trafficking of MIC7HA to micronemes was verified by the co-localisation with the micronemal marker MIC2 (Figure 5E). Upon deletion of Mic7, parasites no longer formed detectable plaques in host cell monolayers after 5 days in culture, but we could observe very small plaques emerging after 7 days (Figure 5F). Collectively these results demonstrate an important, but non-essential, role for MIC7 in the lytic cycle.
 
-## Myristoylation of MIC7 appears important for host cell invasion
+### Myristoylation of MIC7 appears important for host cell invasion
 
 To investigate where in the lytic cycle MIC7 plays a role, and test the functional relevance of N-terminal myristoylation, we complemented the iKO line by introducing Ty1-tagged WT or myristoylation defective mutant (hereafter called cWT and cMut, respectively) copies of Mic7 into the Uprt locus (Figure 6A). Both inserts were correctly integrated and both complemented lines retained efficient RAPA-induced Mic7 excision (Figure 6—figure supplement 1) and depletion of MIC7HA (Figure 6B). After confirming equivalent and RAPA-insensitive expression of cWT and cMut (Figure 6B), we validated both lines in terms of their myristoylation-dependent enrichment and showed that only the cWT was selectively pulled down after metabolic labelling with YnMyr (Figure 6C). In the next step, we investigated the co-localisation of MIC7HA with cWT and cMut (Figure 6D). Both complementation isoforms localised to the micronemes, indicating that the myristate is not required for the trafficking of MIC7 to this organelle.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig6-v2.jpg)
+
+**Figure 6.:** (A) Complementation strategy used to evaluate the functional importance of MIC7 myristoylation. The orientation of cWT and cMut is reversed in the Uprt locus with the Ty1 tag at the C-terminus. Red hexagon represents STOP codon, rec – recodonized. (B) Western blot analysis demonstrating the RAPA-dependent depletion of MIC7HA in the iKO, cWT and cMut lines (α-HA) as well as equivalent and RAPA-independent expression of the complements (α-Ty1). Gra29 was used as loading control. (C) Biochemical validation of complemented lines by YnMyr-dependent pull down. Enrichment of WT and Mut copy of MIC7 was evaluated by western blotting with α-Ty1 antibody. MIC7HA (α-HA) and Gra29 were used as enrichment and loading controls, respectively. (D) Co-localisation of MIC7HA (red) with the cWT and cMut (green) by immunofluorescence analysis. Scale bar: 5 µm. (E) Plaque assay demonstrating that myristoylation of MIC7 is important in the intracellular growth of Toxoplasma. Assay performed for 5 days in three biological replicates, each in technical triplicate, representative images are shown. (F) Quantification of invasion efficiency in the RAPA-treated cWT, iKO and cMut lines. Figure shows the average of three biological replicates, each in technical duplicate, error bars represent standard deviation. Significance calculated using 1-way ANOVA with Dunnett’s multiple comparison test, **p=0.001, *p=0.018. (G) Quantification of attachment efficiency in the RAPA-treated cWT, iKO and cMut lines. Figure shows the average of three biological replicates, each in technical duplicate, error bars represent standard deviation. Significance calculated using 1-way ANOVA with Dunnett’s multiple comparison test, **p=0.004, ns = not significant. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) PCR analysis confirming correct integration of the complementation constructs encoding the WT and myristoylation mutant (Mut) copies of Mic7 at the Uprt locus of the iKO line. Primers are indicated by arrows. bp – base pairs. (B) PCR analysis demonstrating that correct excision of the floxed Mic7 upon addition of rapamycin (RAPA) is retained in the cWT and cMut lines. Primers are indicated by arrows. Red hexagon represents STOP codon. bp – base pairs.
+
 We next sought to evaluate the role of MIC7 myristoylation in the parasite lytic cycle. While cWT rescued the iKO phenotype upon RAPA treatment, cMut parasites formed substantially smaller plaques under equivalent conditions (Figure 6E). This demonstrates that myristoylation indeed plays a key role in MIC7 function. Given the well-established role of microneme proteins in facilitating host cell penetration, we explored whether myristoylation of MIC7 may be important for invasion. We treated iKO, cWT and cMut parasites with RAPA and performed a red/green assay (Huynh et al., 2003) which can distinguish invaded from attached parasites. As shown in Figure 6F, we observed efficient invasion of host cells by the cWT parasites. This was not the case in the iKO and cMut lines, where invasion was reduced by 57% and 32%, respectively. Compared to the cWT line, we also observed a consistent 61% drop in the total number of iKO parasites (Figure 6G), which suggests a defect in the attachment to host cells. A modest but non-significant reduction of 15% in attachment was observed in the cMut strain. Collectively, these results indicate that MIC7 plays an important role in Toxoplasma propagation by facilitating parasite attachment and subsequent entry into host cells. Furthermore, myristoylation is not required for sorting MIC7 to the micronemes but appears to be important for its function in invasion of host cells.
 
-## Generation of double tagged MIC7 lines for in depth characterisation of MIC7 myristoylation
+### Generation of double tagged MIC7 lines for in depth characterisation of MIC7 myristoylation
 
 To monitor MIC7 N-terminus, and thus the fate of the myristate, we generated double tagged MIC7 variants bearing a Myc tag in the ectodomain and a Ty1 tag at the C-terminus. Placing a Myc tag in the region between the MIC7 transmembrane (TM) domain and the last predicted EGF domain (EGF5) yielded non-functional protein (Figure 7—figure supplement 1A). To select a likely suitable position for the tag, we resorted to structural predictions. The region between EGF5 and the TM domain (EGF5-TM, residues 230–284) possesses two pairs of cysteine residues and may represent either an extension of EGF5, or a non-canonical/truncated EGF6. This could explain the inability to place an epitope tag in this region and yield functional MIC7. We also excluded EGF3 and EGF4, that possess the strongest signatures for calcium-binding motifs (PFAM database domain entry PF07645), which normally imparts a rigid domain arrangement with its neighbours. Finally, we considered possible locations (Figure 7A) where some degree of structural flexibility would be most likely. The loop between the last two cysteine residues is variable amongst EGF domains, therefore locations were chosen between C38 and C53 of EGF1 and between C86 and C97 of EGF2 as well as within the linker between EGF1 and EGF2. Using ectopic expression, we tested all these positions in terms of protein expression and localisation. All three double tagged protein variants localised to micronemes (Figure 7—figure supplement 1B), but the most abundant protein levels were observed when the Myc tag was placed within the EGF2 (Figure 7—figure supplement 1C). This indicated that the tag is well tolerated in this position, readily detected by western blot and could be used for further experiments. Myc tagged cWT and cMut (hereafter called MyccWT and MyccMut, respectively) were then inserted into the Uprt locus of the iKO line. Both inserts correctly integrated, the new lines retained efficient RAPA-induced Mic7 excision and depletion of MIC7HA (Figure 7—figure supplement 1D–F). After verifying equivalent and RAPA independent expression of the MyccWT and MyccMut (Figure 7—figure supplement 1F), we confirmed their micronemal localisation by IFA (Figure 7—figure supplement 1G). Several microneme proteins have been shown to dimerise (Cérède et al., 2002), which harbours the potential that any additional copy of a protein in a merodiploid strain, even when lacking trafficking information, could piggy back as a heterodimer into the micronemes. Indeed, when testing co-IPs in the absence of RAPA, we observed that both complements can co-IP with MIC7HA (Figure 7B), which is independent of the myristate. We therefore repeated the localisation experiments in the presence of RAPA to delete MIC7HA. As shown in Figure 7—figure supplement 1H, both MyccWT and MyccMut localise to the micronemes in RAPA-treated parasites, confirming that the myristate is not necessary for MIC7 sorting.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of MIC7 domain structure with evaluated Myc tag positions indicated by arrows. (B) Western blot analysis showing co-immunoprecipitation of MyccWT and MyccMut (α-Myc) with MIC7HA (α-HA). MIC2 and Gra29 were used as controls for microneme solubilisation and equal loading, respectively; In = input, IP = immunoprecipitate, S = supernatant after IP. (C) Plaque assay confirming that myristoylation of MIC7 is important in the intracellular growth of Toxoplasma in the newly generated lines. Assay performed for 5 days in three biological replicates, each in technical triplicate, representative images are shown. (D) Proteinase K protection assay demonstrating that the N-terminus of MIC7 is myristoylated and protected (α-Myc) while the C-terminus is digested (α-Ty1) upon permeabilisation and protease treatment. MIC2 was used as a known control where the ectodomain is protected under similar conditions. Dig. = digitonin, Prot.K = proteinase K. (E) Quantitative large scale invasion assay. Results show the relative invasion rate as mean ± standard deviation calculated from three independent assays, each performed with five replicates. The total number of intracellular tachyzoites and human cells are indicated in each column. Two-tailed Student’s t-test was performed for two-group comparisons, ***p<0.0006, **p=0.0044. (F) Distribution of the successful/failed invasion times for each of the four genetic backgrounds. Mean invasion time is displayed for both HFF and U2OS host cells. (G) Representative immunofluorescence images (n = 45/68) demonstrating the characteristic bending of the conoid in extracellular RAPA-treated iKO parasites stained against the surface protein SAG1 (marking extracellular parasites and the extracellular part of invading tachyzoites only). It is also possible to observe the U2OS GFP-GPI membrane invagination at the vicinity of the extracellular parasites (white arrowheads). Scale bar: 5 μm. (H) Representative immunofluorescence images of untreated (-RAPA) iKO parasites while extracellular (n = 63) and during invasion (n = 22). Parasites were stained against SAG1 (marking extracellular parasites and the extracellular part of invading tachyzoites only) and α-HA to stain MIC7. Scale bar: 5 μm. (I) Analysis of MIC7 secretion upon stimulation with BIPPO. No shedding of MIC7 was observed (α-Myc) in contrast to MIC2 which was used as a control. P - pellet, S - supernatant containing the excreted secreted antigens, M – molecular weight marker. White space was used to indicate where gel lanes were not contiguous. (J) Immunofluorescence based quantification of pSTAT6 as a reporter for ROP16 secretion in all tested lines with and w/o RAPA treatment. Figure shows the average of three biological replicates, error bars represent standard deviation. Significance calculated using 2-way ANOVA with Sidak’s multiple comparison test, ***p=0.0004, **p=0.0013, ns = not significant. See also Figure 7—figure supplements 1 and 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Plaque assay confirming that introduction of Myc tag between EGF5 and TM domains of MIC7 yields non-functional protein. (B) Co-localisation of ectopically expressed Myc tagged MIC7 versions (red) with the MIC2 micronemal marker (green) by immunofluorescence analysis. Scale bar: 5 µm. (C) Western blot analysis of Myc tag expression within the three tested positions. Gra29 was used as a loading control. (D) PCR analysis confirming correct integration of the MyccWT and MyccMut copies of Mic7 at the Uprt locus of the iKO line, bp – base pairs. (E) PCR analysis demonstrating that correct excision of the floxed Mic7 upon addition of rapamycin (RAPA) is retained in the MyccWT and MyccMut lines. (F) Western blot analysis demonstrating the RAPA-dependent depletion of MIC7HA in the iKO, MyccWT and MyccMut lines (α-HA) as well as equivalent and RAPA-independent expression of the complements (α-Myc). Gra29 was used as a loading control. (G) Co-localisation of MyccWT and MyccMut (red) with the MIC2 micronemal marker (green) by immunofluorescence analysis. Scale bar: 5 µm. (H) Co-localisation of MyccWT and MyccMut (red) with the MIC2 micronemal marker (green) by immunofluorescence analysis in RAPA-treated lines. Scale bar: 5 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57861/elife-57861-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Time lapses of bright-field (BF) and green fluorescent channel (GFP-GPI) showing successful/failed invasions of tachyzoites in U2OS cells that express a GFP-GPI marker. The marker allows tracking the plasma membrane (PM) when it locally remodels (white arrowheads). PM stretching and then shrinking while the parasite successfully invades (iKO (-RAPA)). PM invagination which is indicative of the zoite-cell junction for failed invasions (iKO (+RAPA) and MyccMut (+RAPA)). Scale bar: 5 μm, time is indicated in minutes:seconds format. (B) Gliding analysis by trail deposition assay. Two representative frames of the coverslips are shown for each genetic background. Scale bar: 5 μm. (C) Analysis of BIPPO-induced microneme secretion in the iKO line (-/+ RAPA) showing no defect in MIC2 secretion upon MIC7 KO. α-Toxoplasma - loading control, P - pellet, S - supernatant containing the excreted secreted antigens. (D) Analysis of MIC7 secretion upon invasion of host cells. No shedding of MIC7 was observed (α-Myc) in contrast to MIC2 which was used as a control. α-CAP was used as a loading control. P - pellet, S - supernatant containing the excreted secreted antigens.
+
 Plaque assays of RAPA-treated complementation lines showed the expected defect in plaque formation for MyccMut, however, we also observed a small reduction of plaque size for MyccWT expressing parasites as compared to the DMSO control (Figure 7C). This slightly reduced ability to form plaques is likely due to the effect of Myc tag insertion on the MIC7 function. However, since the tag is present in both complemented lines and the ability to form plaques was substantially more impeded in the MyccMut parasites, these lines are still suitable to investigate the specific function of MIC7 myristoylation.
 
-## MIC7 and its myristoylation are important for the initiation of host cell invasion
+### MIC7 and its myristoylation are important for the initiation of host cell invasion
 
 In order to shed some light on MIC7 topology within the micronemes as well as the fate of its N-terminal myristate, we performed proteinase K protection assays (Figure 7D). In these experiments, proteins/domains that are accessible to proteinase K after digitonin-mediated plasma membrane permeabilisation are digested, while those retained within organelles, such as the micronemes, are protected from this proteolytic digest. We treated tachyzoites from both MyccWT and MyccMut lines with RAPA to deplete MIC7HA and fed with YnMyr to allow for myristoylation-dependent pull down of the complements. We then subjected parasites to digitonin and proteinase K treatment, followed by detection of Myc and Ty1 tags. As a control we used antibodies against the ectodomain of MIC2, as it should be protected (Bullen et al., 2016). Under these conditions the MIC7 C-terminus was digested, while the N-terminus was protected as visualised by the Ty1 and the Myc antibodies, respectively. As the parasites were treated with YnMyr prior to the experiment, we could use a YnMyr-dependent pull down to demonstrate that the protected N-terminus of MIC7 remains myristoylated (Figure 7D). These results strongly suggest that MIC7 is indeed a transmembrane protein with a myristoylated N-terminus facing the microneme lumen and a short C-terminal cytoplasmic tail that faces the parasite cytoplasm.
 
@@ -111,7 +171,7 @@ The inability to initiate invasion in the iKO and MyccMut lines could be caused 
 
 To get a better understanding of MIC7 distribution in parasites before and during invasion, we co-localised MIC7 with SAG1, a well characterized surface marker, which can be used to delineate the intra- and extracellular part of invading parasites. This revealed that MIC7 partially redistributes around the periphery of extracellular and invading parasites, but appears absent from the tachyzoite-host cell junction (Figure 7H), a constriction through which the parasite moves as it enters the host cell (Pavlou et al., 2018; Tyler et al., 2011). This redistribution suggests, but is not proof, that MIC7, as many other microneme proteins, is secreted onto the parasite surface during or after egress from the host cell. Most transmembrane microneme proteins undergo proteolytic maturation near or within the transmembrane domain after egress and during invasion (Soldati et al., 2001). This process is facilitated by subtilisin or rhomboid proteases and is thought to relieve the high affinity interactions between the parasite and host cell receptors (Carruthers, 2006; Dowse and Soldati, 2005). We analysed if MIC7 could undergo similar processing and found that while MIC2 was efficiently cleaved and released into the culture supernatant, this was not the case for MIC7, even in the presence of BIPPO (Figure 7I). We also tested whether MIC7 could be shed during invasion by analysing the culture supernatant as well as parasite and host material of freshly invaded cells. Again, no MIC7 shedding was observed (Figure 7—figure supplement 2D). These results are in agreement with previously reported observations (Meissner et al., 2002), and confirm that MIC7 is not subject to a proteolytic cleavage.
 
-## MIC7 and its myristoylation may be important for efficient secretion of rhoptry contents into the host cell
+### MIC7 and its myristoylation may be important for efficient secretion of rhoptry contents into the host cell
 
 The live imaging data of the iKO parasites suggested that MIC7 plays an important role in the onset of invasion, potentially after the establishment of the tachyzoite-host cell junction. In one instance we could observe a membrane swirl formation at the apex of the parasite attempting invasion, suggesting that rhoptry contents may have been secreted (Figure 7—video 2). Rhoptries are apical organelles which contain a number of kinases the parasite injects into the host cell upon invasion. These effector kinases modulate many important functions in host-microbe interaction (Boothroyd and Dubremetz, 2008). One of these kinases, the rhoptry kinase 16 (ROP16) acts as a JAK mimetic leading to rapid and direct phosphorylation of STAT6 (Ong et al., 2010; Saeij et al., 2007). Accordingly, we used STAT6 phosphorylation as a reporter for efficient rhoptry secretion and ROP16 translocation into the host cell (Figure 7J). RAPA-treated MyccWT parasites showed 45% pSTAT6 positive nuclei. RAPA-treated iKO and MyccMut parasites showed a significant reduction of pSTAT6 positive nuclei (11% and 21%, respectively). No significant differences in pSTAT6 positive cells between tested parasite lines were observed when treated with DMSO. This indicates that iKO and MyccMut parasites can still secrete ROP16 into the host cell and induce STAT6 phosphorylation, although at significantly reduced levels.
 
@@ -131,11 +191,266 @@ In summary we provide a useful resource of experimentally validated myristoylate
 
 ## Materials and methods
 
-## General
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Synthetic Gene (Toxoplasma gondii)</td>
+      <td>Microneme protein 7 (MIC7)</td>
+      <td>GeneArt, Life Technologies</td>
+      <td>TGGT1_261780 (http://toxodb.org)</td>
+      <td>Floxed and HA tagged sequence</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human foreskin fibroblasts (HFFs)</td>
+      <td>ATCC</td>
+      <td>Cat# SCRC-1041, RRID:CVCL_3285</td>
+      <td>The cell line is available from the American Type Culture Collection (ATCC)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>RH ∆ku80 ∆hxgprt</td>
+      <td>Huynh and Carruthers, 2009</td>
+      <td></td>
+      <td>Used in all mass spectrometry experiments</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>RH DiCre ∆ku80 ∆hxgprt</td>
+      <td>Hunt et al., 2019</td>
+      <td></td>
+      <td>The second-generation DiCre-expressing cell line in Toxoplasma gondii</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>iKO MIC7; RH DiCre ∆ku80 ∆hxgprt_LoxMic7_HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The endogenous Mic7 gene was replaced with a floxed and HA-tagged Mic7 gene</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>cWT MIC7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>As described for the iKO MIC7 line, however a Mic7-Ty1 expressing construct was integrated into the UPRT locus.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>cMut MIC7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>As described for the iKO MIC7 line, however a Mic7(G2K/G3A)-Ty1 expressing construct was integrated into the UPRT locus.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>Myc cWT MIC7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>As described for the cWT MIC7 line, however a Myc-Mic7-Ty1 expressing construct was integrated into the UPRT locus.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Toxoplasma gondii)</td>
+      <td>Myc cMut MIC7</td>
+      <td>This paper</td>
+      <td></td>
+      <td>As described for the cMut MIC7 line, however a Myc-Mic7(G2K/G3A)-Ty1 expressing construct was integrated into the UPRT locus.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-HA monoclonal clone 3F10</td>
+      <td>Roche</td>
+      <td>Cat# 11867423001 RRID:AB_390919</td>
+      <td>WB (1:1000) IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Myc monoclonal clone 4A6</td>
+      <td>Millipore</td>
+      <td>Cat# 05–724 RRID:AB_11211891</td>
+      <td>WB (1:1000) IFA (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Ty1 monoclonal clone BB2</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# MA5-23513 RRID:AB_2610644</td>
+      <td>WB (1:2000) IFA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Toxoplasma monoclonal clone TP3</td>
+      <td>Abcam</td>
+      <td>Cat# ab8313 RRID:AB_306466</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-MIC2 monoclonal clone 6D10</td>
+      <td>other</td>
+      <td></td>
+      <td>Provided by Vernon Carruthers Lab WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-MIC2 polyclonal</td>
+      <td>other</td>
+      <td></td>
+      <td>Provided by Vernon Carruthers Lab WB (1:500) IFA (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-TgCAP polyclonal</td>
+      <td>Hunt et al., 2019</td>
+      <td></td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Gra29 polyclonal</td>
+      <td>Young et al., 2020</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SFP1 polyclonal</td>
+      <td>Young et al., 2020</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CDPK1 polyclonal</td>
+      <td>other</td>
+      <td></td>
+      <td>Provided by Matthew Child and Matt Bogyo WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SAG1 monoclonal</td>
+      <td>other</td>
+      <td></td>
+      <td>Provided by John Boothroyd Lab WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GAP45 polyclonal</td>
+      <td>other</td>
+      <td></td>
+      <td>Provided by Peter Bradley Lab WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho-Stat6 polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9361 RRID:AB_331595</td>
+      <td>IFA (1:600)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Myristic acid (Myr)</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>Cat# M0476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alkyne-myristic acid (YnMyr)</td>
+      <td>Iris Biotech</td>
+      <td>Cat# RL-2055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Azide-PEG3-biotin (N3-biotin)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 762024</td>
+      <td>Capture reagent 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Trypsin cleavable reagent</td>
+      <td>Broncel et al., 2015</td>
+      <td></td>
+      <td>The reagent used here was synthesised in-house by the Peptide Chemistry science technology platform, The Francis Crick Institute</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TEV cleavable reagent</td>
+      <td>Speers and Cravatt, 2005</td>
+      <td></td>
+      <td>The reagent used here was synthesised in-house by the Peptide Chemistry science technology platform, The Francis Crick Institute</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>IMP-1002</td>
+      <td>Schlott et al., 2019</td>
+      <td></td>
+      <td>The reagent used here was synthesised by the Tate Laboratory, Imperial College London</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Rapamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R8781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>5-Benzyl-3-isopropyl-1H-pyrazolo[4,3-d]pyrimidin-7(6H)-one (BIPPO)</td>
+      <td>Howard et al., 2015</td>
+      <td></td>
+      <td>The reagent used here was synthesised in-house by the Peptide Chemistry science technology platform, The Francis Crick Institute</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant (version 1.5.0.25 and 1.5.2.8)</td>
+      <td>Cox and Mann, 2008</td>
+      <td>RRID:SCR_014485</td>
+      <td>Free software for searching of mass spectrometry acquisition files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus (version 1.5.0.9)</td>
+      <td>Tyanova et al., 2016</td>
+      <td>RRID:SCR_015753</td>
+      <td>Free software for processing of MaxQuant output files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL (version 1.3r1)</td>
+      <td>Schrodinger LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>Commercial software for molecular visualisation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8 (version 8.1.1)</td>
+      <td>GraphPad Software, Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td>Commercial software for statistical analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### General
 
 Reagents: CuSO4, TCEP, TBTA, buffer salts, DTT, iodoacetamide, DMSO, BSA, Triton-X100 and Tween-20 were from Sigma-Aldrich. Azide-PEG3-biotin was from Sigma-Aldrich. Peptide synthesis coupling reagents HATU and HCTU were from Fluorochem and Merck, respectively. MS-grade water, acetonitrile, methanol, TFA and formic acid were from Thermo Scientific. IMP-1002 was synthesised as described in Schlott et al., 2019. BIPPO was synthesised as described in Howard et al., 2015.
 
-## Plasmid generation
+### Plasmid generation
 
 Primers used throughout this study are listed in Supplementary file 6. Plasmid sequences were confirmed by Sanger sequencing (Eurofins Genomics).
 
@@ -161,7 +476,7 @@ To generate pGra_5’UTRTUB_MIC7(G2K/G3A)_HA, the Tub 5’UTR was amplified from
 
 To generate pGra_5’UTRMIC7_Myc1_MIC7_HA, pGra_5’UTRMIC7_Myc1/2_MIC7_HA and pGra_5’UTRMIC7_Myc2_MIC7_HA, the Myc tag coding sequence was introduced at different positions within pGra_5’UTRMIC7_MIC7_HA plasmid by inverse PCR using primers 42 and 43 (Myc1), 44 and 45 (Myc1/2), and 46 and 47 (Myc2). The resulting linear fragments were circularized using KLD reaction buffer (NEB) as per manufacturer’s instructions.
 
-## Parasite line generation
+### Parasite line generation
 
 Freshly harvested parasites were transfected by electroporation (1500 V) using the Gene Pulser Xcell system (Bio-Rad) as previously described (Soldati and Boothroyd, 1993).
 
@@ -173,29 +488,29 @@ To generate lines that express WT and myristoylation mutant (G2K/G3A) MIC7 ectop
 
 To generate lines that ectopically express MIC7 with Myc tag within the EGF1, EGF1/2 or EGF2 domains, plasmids pGra_5’UTRMIC7_Myc1_MIC7_HA, pGra_5’UTRMIC7_Myc1/2_MIC7_HA and pGra_5’UTRMIC7_Myc2_MIC7_HA were linearized using NotI and individually transfected into the RH ∆hxgprt strain. Recombinant parasites were selected 24 hr post transfection by addition of mycophenolic acid (MPA; 25 µg/mL) and xanthine (XAN; 50 µg/mL) to culture medium.
 
-## Cell culture
+### Cell culture
 
 Parasites of the RH strain were cultured in Human foreskin fibroblasts (HFFs) monolayers in Dulbecco's Modified Eagle Medium (DMEM), GlutaMAX (Thermo Fisher) supplemented with 10% heat-inactivated foetal bovine serum (FBS; Life technologies), at 37°C and 5% CO2. All strains and host cell lines tested negative for the presence of mycoplasma.
 
-## Metabolic labelling and cell lysis
+### Metabolic labelling and cell lysis
 
 Upon infection of HFF monolayers the medium was removed and replaced by fresh culture medium supplemented with 25 µM YnMyr (Iris Biotech) or Myr (Tokyo Chemical Industry). The parasites were then incubated for 16 hr, washed with PBS (2x) and lysed on ice using a lysis buffer (PBS, 0.1% SDS, 1% Triton X-100, EDTA-free complete protease inhibitor (Roche Diagnostics)). Lysates were kept on ice for 20 min and centrifuged at 17,000 × g for 20 min to remove insoluble material. Supernatants were collected and protein concentration was determined using a BCA protein assay kit (Pierce).
 
-## Click reaction and pull down
+### Click reaction and pull down
 
 Lysates were thawed on ice. Proteins (100–300 µg) were taken and diluted to 1 mg/mL using the lysis buffer. A click mixture was prepared by adding reagents in the following order and by vortexing between the addition of each reagent: a capture reagent (stock solution 10 mM in water, final concentration 0.1 mM), CuSO4 (stock solution 50 mM in water, final concentration 1 mM), TCEP (stock solution 50 mM in water, final concentration 1 mM), TBTA (stock solution 10 mM in DMSO, final concentration 0.1 mM). Following the addition of the click mixture the samples were vortexed (room temperature, 1 hr), and the reaction was stopped by addition of EDTA (final concentration 10 mM). Subsequently, proteins were precipitated (chloroform/methanol, 0.25:1, relative to the sample volume), the precipitates isolated by centrifugation (17,000 x g, 10 min), washed with methanol (1 × 400 µL) and air dried (10 min). The pellets were then resuspended (final concentration 1 mg/mL, PBS, 0.4% SDS) and the precipitation step was repeated to remove excess of the capture reagent. Next, samples were added to 15 µL of pre-washed (0.2% SDS in PBS (3 × 500 µL)) Dynabeads MyOne Streptavidin C1 (Invitrogen) and gently vortexed for 90 min. The supernatant was removed and the beads were washed with 0.2% SDS in PBS (3 × 500 µL).
 
-## SDS-PAGE, in gel fluorescence and western blotting
+### SDS-PAGE, in gel fluorescence and western blotting
 
 Beads were supplemented with 2% SDS in PBS (20 µL) and 4x SLB (Invitrogen), boiled (95°C, 10 min), centrifuged (1000 x g, 2 min) and loaded on 10% or 4–20% SDS-PAGE gel (Bio-Rad). Following electrophoresis (60 min, 160V), gels were washed with water (3x). In-gel fluorescence was detected using a Pharos FX Plus Imager (Bio-Rad) and the protein loading was checked by Coomassie staining. For western blotting proteins were transferred (25 V, 1.3 A, 7 min) onto nitrocellulose membranes (Bio-Rad) using Bio-Rad Trans Blot Turbo transfer system. After a brief wash with PBS-T (PBS, 0.1% Tween-20) membranes were blocked (5% milk, TBS-T, 1 hr) and incubated with primary antibodies (5% milk, TBS-T, overnight, 4°C) at the following dilutions: rat anti-HA (1:1000; Roche Diagnostics), mouse anti-Myc (1:1000; Millipore), mouse anti-Ty1 (1:2000; Thermo Fisher), rabbit anti-Gra29 (1:1000; [Young et al., 2020]), rabbit anti-SFP1 (1:1000; [Young et al., 2020]), mouse anti-Toxoplasma (1:1000; Abcam), mouse anti-CDPK1 (1:3000; Matt Bogyo Lab), rabbit anti-SAG1 (1:10,000; John Boothroyd Lab), rabbit anti-GAP45 (1:1000; Peter Bradley Lab), rabbit anti-TgCAP (1:2000; [Hunt et al., 2019]), rabbit anti-MIC2 (1:500; Vernon Carruthers Lab), and mouse anti-MIC2 (6D10) (1:1000; Vernon Carruthers Lab). Following washing (TBS-T, 3x) membranes were incubated with IR dye-conjugated secondary antibodies from LI-COR Biosciences (1:10,000, 5% milk, TBS-T, 1 hr), and after a final washing step imaged on a LiCOR Odyssey imaging system (LI-COR Biosciences). In case of a biotin western blot, membranes were blocked with 3% BSA and incubated with Streptavidin-HRP (1:4000; Thermo Scientific) in 0.3% BSA, PBS-T for 1 hr. ECL western blotting Detection Reagent (GE Healthcare) was then used for chemiluminescence based imaging on a ChemiDoc MP Imaging System (Bio-Rad).
 
-## Synthesis of capture reagents
+### Synthesis of capture reagents
 
 TEV reagent: Solid phase synthesis took place on a CF peptide synthesizer (Intavis) using a Rink Amide LL resin (100 µmol; Merck) and N(α)-Fmoc amino acids, including Fmoc-Lys(N3)-OH (Fluorochem) and Fmoc-Gly-(Dmb)Gly-OH (Merck). HCTU was used as the coupling reagent with 5-fold excess of amino acids. Fmoc-Lys(Biotin)-OH (four eq; Merck) in 6 mL DMSO:NMP (1:1) was coupled manually after automated assembly of the rest of the chain. DIPEA (four eq) was added, followed by HOBt (1 M, four eq) in NMP. After 3 min DIC (four eq) was added, then after 30 min the solution was added to the resin and allowed to react overnight. The resin was washed with DCM and DMF prior to manual Fmoc removal and acetylation. The peptide was cleaved from the resin and protecting groups removed by addition of a cleavage solution (95% TFA, 2.5% H2O, 2.5% TIS). After 2 hr, the resin was removed by filtration and peptides were precipitated with diethyl ether on ice. The peptide was isolated by centrifugation, then dissolved in H2O and freeze dried overnight. After dissolving in methanol, portions of the peptide were purified on a C8 reverse phase HPLC column (Agilent PrepHT Zorbax 300 SB-C8, 21.2 × 250 mm, 7 m) using a linear solvent gradient of 13–50% MeCN (0.08% TFA) in H2O (0.08% TFA) over 40 min at a flow rate of 8 mL/min. The peak fraction was analysed by LC–MS on an Agilent 1100 LC-MSD. The calculated molecular weight of the peptide was in agreement with the mass found. Calculated MW: 1804.08, actual mass: 1803.87.
 
 Trypsin reagent: Solid phase synthesis took place on a CF peptide synthesizer (Intavis) using a Fmoc-PEG-Biotin NovaTag resin (100 µmol; Merck), 2-Azidoacetic acid (Fluorochem) and N(α)-Fmoc amino acids, including Fmoc-Lys(MMT)-OH (Merck). HATU was used as the coupling reagent with 5-fold excess of amino acids. Following chain assembly, the MMT protecting group was removed from the peptidyl-resin by treatment with 1% TFA in DCM (10 mL for 2 min x 8) and the resin washed with DCM and DMF. Next 5-TAMRA (four eq; Anaspec) was dissolved in 1 mL DMSO:NMP (1:1). DIPEA (four eq) was added, followed by HOBt (1 M, four eq) in NMP. After 3 min DIC (four eq) was added, then after 30 min the solution was added to the resin and allowed to react overnight. After washing the resin with DMF and DCM, the peptide was cleaved from the resin and protecting groups removed by addition of a cleavage solution (95% TFA, 2.5% H2O, 2.5% TIS). After 2 hr, the resin was removed by filtration and peptides were precipitated with diethyl ether on ice. The peptide was isolated by centrifugation, then dissolved in H2O and freeze dried overnight. After dissolving in MeCN:H2O (1:1), portions of the peptide were purified on a C8 reverse phase HPLC column (Agilent PrepHT Zorbax 300 SB-C8, 21.2 × 250 mm, 7 m) using a linear solvent gradient of 10–50% MeCN (0.08% TFA) in H2O (0.08% TFA) over 40 min at a flow rate of 8 mL/min. The peak fraction was analysed by LC–MS on an Agilent 1100 LC-MSD. The calculated molecular weight of the peptide was in agreement with the mass found. Calculated MW: 1396.31, actual mass: 1395.60.
 
-## Sample preparation for MS-based proteomics
+### Sample preparation for MS-based proteomics
 
 Click reaction - Reagent 1 and 2: lysates were thawed on ice and the click reaction was carried out with 1 mg of proteins at 2 mg/mL. Proteins were captured by adding a mixture of respective capture reagent (final concentration 0.1 mM), CuSO4 (final concentration 1 mM), TCEP (final concentration 1 mM) and TBTA (final concentration 0.1 mM). The samples were vortex-mixed (room temperature, 1 hr) before the addition of EDTA (final concentration 10 mM), methanol (four volumes), chloroform (1 vol), and water (three volumes). The samples were vortex-mixed briefly, centrifuged (10,000 × g, 20 min) and the resulting pellets were either washed with methanol (four volumes) and dried (reagent 1) or resuspended (at 2 mg/mL, 1% SDS in PBS) after which the precipitation step was repeated and the resulting pellets washed with methanol (four volumes) and dried (reagent 2). Reagent 3: lysates were thawed on ice and the click reaction was carried out with 1 mg of proteins at 2 mg/mL. Proteins were captured by sequential addition of the capture reagent (final concentration 0.1 mM), TCEP (final concentration 1 mM), TBTA (stock in DMSO:t-Butanol 1:4, final concentration 0.1 mM) and CuSO4 (final concentration 1 mM) with mixing between each step. The samples were incubated at room temperature for 1 hr before the addition of EDTA (final concentration 10 mM), methanol (four volumes), chloroform (1 vol), and water (three volumes). The samples were vortex-mixed briefly, centrifuged (10,000 × g, 20 min) and the resulting pellets were washed with methanol (four volumes) and dried. Subsequently, the dried pellets were resuspended in 2% SDS in PBS and, once completely dissolved, PBS was added (final concentration 0.8% SDS, 2 mg/mL). For samples treated with base, NaOH was added (final concentration 0.2 M, 1 hr) followed by neutralisation with equivalent amount of HCl. Base-treated and untreated samples were then diluted (1 mg/mL, 0.4% SDS, 1 mM DTT) before pull down.
 
@@ -205,29 +520,29 @@ Protein digestion - for samples processed with reagent 1 and 2 as well as for su
 
 Stage tip - samples were desalted prior to LC-MS/MS using Empore C18 discs (3M). Each stage tip was packed with one C18 disc, conditioned with 100 µL of 100% methanol, followed by 200 µL of 1% TFA. The samples were loaded in 1% TFA, washed 3 times with 200 µL of 1% TFA and eluted with 50 µL of 50% acetonitrile, 5% TFA. Desalted peptides were vacuum dried in preparation for LC-MS/MS analysis.
 
-## Chemical inhibition of TgNMT
+### Chemical inhibition of TgNMT
 
 HFFs were infected with Toxoplasma and cultured for 16 hr. The medium was then replaced and intracellular parasites co-treated with 25 µM YnMyr and the indicated concentrations of IMP-1002 for 5 hr. Following PBS wash (2x) the cells were lysed on ice using the lysis buffer and further processed exactly as described above. The click reaction, pull down on NeutrAvidin beads and the MS sample prep were performed as described above for reagent 1 and 2.
 
-## LC-MS/MS
+### LC-MS/MS
 
 Samples were resuspended in 0.1% TFA and loaded on a 50 cm Easy Spray PepMap column (75 μm inner diameter, 2 μm particle size, Thermo Fisher Scientific) equipped with an integrated electrospray emitter. Reverse phase chromatography was performed using the RSLC nano U3000 (Thermo Fisher Scientific) with a binary buffer system (solvent A: 0.1% formic acid, 5% DMSO; solvent B: 80% acetonitrile, 0.1% formic acid, 5% DMSO) at a flow rate of 250 nL/min. Samples processed with reagent 1 were run on a linear gradient of 2–35% B in 90 min with a total run time of 120 min including column conditioning. Samples processed with reagents 2 and 3 were run on a linear gradient of 2–40% B or 2–55% B (TEV II myristoylated peptide fraction) in 155 min with a total run time of 180 min including column conditioning. The nanoLC was coupled to a Q Exactive mass spectrometer using an EasySpray nano source (both Thermo Fisher Scientific). The Q Exactive was operated in data-dependent mode, acquiring HCD MS/MS scans (R = 17,500) after an MS1 survey scan (R = 70,000) on the 10 most abundant ions using MS1 target of 1E6 ions, and MS2 target of 5E4 ions. The maximum ion injection time utilised for MS2 scans was 120 ms, the HCD normalised collision energy was set at 28 and the dynamic exclusion was set at 30 s. The peptide match and isotope exclusion functions were enabled. NMTi samples were run on a linear gradient of 2–20% B in 55 min, followed by 20–40% B in 35 min and 40–60% B in 5 min with a total run time of 120 min including column conditioning. The nanoLC was coupled to a Orbitrap Lumos mass spectrometer using an EasySpray nano source (both Thermo Fisher Scientific). The Orbitrap Lumos was operated in data-dependent mode (3 s cycle time), acquiring IT HCD MS/MS scans in rapid mode after an MS1 survey scan (R = 120, 000). The MS1 target was 4E5 ions whereas the MS2 target was 2E3 ions. The maximum ion injection time utilised for MS2 scans was 300 ms, the HCD normalised collision energy was set at 32 and the dynamic exclusion was set at 30 s.
 
-## Data analysis
+### Data analysis
 
 Acquired raw files were processed with MaxQuant, versions 1.5.0.25 and 1.5.2.8 (Cox and Mann, 2008). Peptides were identified from the MS/MS spectra searched against Toxoplasma gondii (combined TG1, ME49 and VEG proteomes, ToxoDB) and Homo sapiens (UniProt) proteomes using Andromeda (Cox et al., 2011) search engine. Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation was selected as a variable modification. The enzyme specificity was set to trypsin with a maximum of 2 missed cleavages. The precursor mass tolerance was set to 20 ppm for the first search (used for mass re-calibration) and to 4.5 ppm for the main search. The datasets were filtered on posterior error probability (PEP) to achieve a 1% false discovery rate on protein, peptide and site level. Other parameters were used as pre-set in the software. ‘Unique and razor peptides’ mode was selected to allow identification and quantification of proteins in groups (razor peptides are uniquely assigned to protein groups and not to individual proteins). Label-free quantification (LFQ) in MaxQuant was performed using a built-in label-free quantification algorithm (Cox and Mann, 2008) enabling the ‘Match between runs’ option (time window 0.7 min) within replicates. Each experiment comprised of replicates treated with YnMyr and the same number of replicates treated with Myr control or NMTi. The LFQ is based on intensities of proteins calculated by MaxQuant from peak intensities and based on the ion currents carried by peptides whose sequences match a specific protein or a protein group to provide an approximation of abundance.
 
 Myristoylated peptide search in MaxQuant was performed as described above applying the following variable modifications: cysteine carbamidomethylation, +463.2907 (reagent 2) and +491.3220 (reagent 3) at any peptide N-terminus and cysteine residues. In addition, the minimum peptide length was reduced to six amino acids and the ‘Match between runs’ option was disabled. MaxQuant utilises a scoring algorithm when matching experimental MS/MS spectra with a library of theoretical spectra generated from the in silico digestion of proteins within databases selected for the search. The algorithm is used to evaluate the quality of peptide-spectrum matches (PSMs). To each PSM, MaxQuant also attributes a delta score, which is a difference between scores associated with the match to the best peptide candidate and the second best match within the database. The higher the score and the delta score, the more reliable the identification. In order to reduce a possibility for a false peptide sequence assignment even further, we applied relatively high delta score thresholds (20 vs 6 pre-set as default) for all myristoylated peptides in our analysis. MaxQuant output files were processed with Perseus, version 1.5.0.9 (Tyanova et al., 2016) as described in the Results section and in Supplementary files 1–3. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD019677.
 
-## Homology modelling of TgNMT onto PvNMT crystal structure
+### Homology modelling of TgNMT onto PvNMT crystal structure
 
 The model of TgNMT was generated using SWISS-MODEL (Waterhouse et al., 2018), and aligned with a crystal structure of PvNMT bound to NMT inhibitor IMP-1002 (PDB: 6MB1). The structural image was generated using PyMOL (Schrodinger LLC (2010), The PyMOL Molecular Graphics System, Version 1.3r1).
 
-## MIC7 expression in tachyzoites and bradyzoites
+### MIC7 expression in tachyzoites and bradyzoites
 
 HFF monolayers were infected with Pru ∆hxgprt parasites in triplicate. For tachyzoite samples an MOI of 1 was used for a 27 hr infection. For bradyzoite samples monolayers were infected at an MOI of 0.8 for 3.5 hr, washed and grown in switch conditions (RPMI, 1% FBS, pH 8.1, ambient CO2) for 3 days. Triplicate samples were lysed in 2 mL ice cold lysis buffer (50 mM Tris-HCl, 75 mM NaCl, 8 M urea, pH 8.2), supplemented with protease (Roche Diagnostics) and phosphatase (Phos Stop, Roche Diagnostics) inhibitors. Lysis was followed by sonication to reduce sample viscosity (30% duty cycle, 3 × 30 s bursts, on ice). Protein concentration was measured using a BCA protein assay kit (Pierce). Lysates (1 mg per condition) were subsequently processed for mass spectrometry as described (Young et al., 2020) and data analysis performed as explained in Supplementary file 5. For full dataset please see Young et al., 2020 and PXD019729.
 
-## Depletion of Mic7
+### Depletion of Mic7
 
 Parasites were allowed to invade HFFs for 2 hr and then treated with 50 nM rapamycin (Sigma-Aldrich) or an equivalent volume of vehicle (DMSO) for 4 hr. The medium was then replaced and the parasites allowed to grow for at least 24 hr prior to PCR and western blot analysis.
 
@@ -235,21 +550,21 @@ Parasite preparation for large scale invasion assay/live microscopy/gliding:
 
 HFF monolayers in T25 flasks were infected in culture conditions (37°C and 5% CO2) with recently egressed tachyzoites to achieve a one to two-per-cell parasite infection. Non-internalized parasites were removed with PBS, and the infected monolayers were cultivated for about 2 hr in complete culture medium (DMEM supplemented with 10% FCS, 10 mM HEPES, 100 units/mL penicillin, and 100 mg/mL streptomycin). After 2 hr incubation the parasites were treated with 50 nM rapamycin or vehicle. Following a 14 hr incubation the medium was replaced with the complete medium and tachyzoites were used within 2 to 5 hr post-egress.
 
-## Plaque assays
+### Plaque assays
 
 Parasites were harvested by syringe lysis, counted, and 400 parasites were seeded on confluent HFF monolayers grown in 24-well plates (Falcon). Parasites were allowed to invade overnight prior to treatment with 50 nM rapamycin or vehicle (DMSO) for 4 hr. Following medium replacement to standard culture medium, plaques were allowed to form for 5 days. iKO MIC7 line: Parasites were harvested by syringe lysis, counted, and 100 parasites were seeded on confluent HFF monolayers grown in 24-well plates (Falcon). Parasites were allowed to invade overnight prior to treatment with 50 nM rapamycin or vehicle (DMSO) for 4 hr. Following medium replacement to standard culture medium, plaques were allowed to form for 7 days. NMTi: Parasites were harvested by syringe lysis, counted, and 200 parasites were seeded on confluent HFF monolayers grown in the presence of IMP-1002 for 5 days.
 
 Plaque formation was assessed by inspecting the methanol fixed and 0.1% crystal violet stained HFF monolayers.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Parasite-infected HFF monolayers grown on glass coverslips were fixed with 3% formaldehyde for 15 min prior to washing with PBS. Fixed cells were then permeabilised (0.2% Triton X-100/PBS, 10 min), blocked (3% BSA/PBS, 1 hr) and stained for 1 hr with primary antibodies at the following dilutions: rat anti-HA (1:1000; Roche), mouse anti-Myc (1:1000; Millipore), mouse anti-Ty1 (1:500; Thermo Fisher), rabbit anti-MIC2 (1:5000; Vernon Carruthers Lab). Labelled proteins were visualised with Alexa Fluor-conjugated secondary goat antibodies (1:2000, 1 hr; Life Technologies). Nuclei were visualised with the DNA stain DAPI (5 µg/mL; Sigma) supplemented with the secondary antibody. Stained coverslips were mounted on glass slides with Slowfade (Life Technologies) and imaged on a Nikon Eclipse Ti-U inverted fluorescent microscope using 100x oil objective. Images were analysed using Nikon NIS-Elements imaging software.
 
-## Invasion assay
+### Invasion assay
 
 Parasites were treated with 50 nM rapamycin for 4 hr and after replacing the medium allowed to grow for 24 hr. Red/green invasion assays were then performed. Parasites were lysed in an invasion non-permissive buffer, Endo buffer (44.7 mM K2SO4, 10 mM MgSO4, 106 mM sucrose, 5 mM glucose, 20 mM Tris–H2SO4, 3.5 mg/mL BSA, pH 8.2). 250 µL of 8E5 parasites/mL in Endo buffer were added to each well of a 24-well flat-bottom plate (Falcon) containing a coverslip with a confluent HFF monolayer. The plates were spun at 129 x g for 1 min at 37°C to deposit parasites onto the monolayer. The Endo buffer was gently removed and replaced with invasion permissive medium (1% FBS/DMEM). Parasites were allowed to invade for 15 min at 37°C, after which the monolayer was gently washed with PBS and fixed with 3% formaldehyde for 15 min at room temperature. Extracellular (attached) parasites were stained with mouse anti-Toxoplasma (TP3) (1:1000; Abcam) and goat anti-mouse Alexa Fluor 488 before permeabilisation (0.2% Triton X-100/PBS) and detection of intracellular (invaded) parasites with rabbit anti-TgCAP (1:2000; [Hunt et al., 2019]) and goat anti-rabbit Alexa Fluor 594. For each replicate, at least five random fields were imaged with a 40x objective. Three independent experiments were performed in duplicate. The number of intracellular (594+/488-) and extracellular (594+/488+) parasites was determined by counting, in a blinded fashion, at least 275 parasites per strain. The parasite counts in the MIC7 iKO and cMut lines were normalised to the cWT, and results were statistically tested with a one-way ANOVA with Dunnett’s multiple comparison test in GraphPad Prism 8. The data are presented as mean ± SD. For estimation of the parasite attachment efficiency, the number of all (594+) parasites was used and the results were statistically tested as above.
 
-## Large scale automated invasion assay
+### Large scale automated invasion assay
 
 Cell Invasion - HFFs were seeded at a density of 2E4 cells per well into 96-well plate and cultivated in complete medium at 37°C and 5% CO2 for 24 hr to allow for sub-confluence. 5E6 to E7 parasites were collected upon spontaneous egress from synchronously infected HFF monolayers. The supernatant was centrifuged at higher speed (900 x g, 7 min) to collect parasites that were gently suspended in 2 mL of complete medium before counting. 2.5E5 parasites were added to each well. To synchronize invasion, the 96-well plate was centrifuged (300 x g, 3 min) and incubated for 30 min at 37°C and 5% CO2. After gentle aspiration, invasion was stopped by addition of 3.2% paraformaldehyde (PFA) in PBS, pH 7.5 (20 min).
 
@@ -257,7 +572,7 @@ Parasite staining - immunostaining was performed first under conditions that did
 
 Quantification - samples were automatically scanned at a magnification of 20x under an Olympus ScanR automated inverted microscope. Images were acquired for five wells per parasite strain for each invasion assay, with 16 randomly scanned fields per well and further processed with ScanR software. ScanRAnalysis includes algorithms to provide automated cell nuclei segmentation following signal-to-noise ratio optimisation and accurate cell surface mask definition. To identify intracellular (red) over extracellular (yellow) parasites, image subtraction from each channel was automatically obtained. Data collected allowed determining the total number of intracellular tachyzoites over the total number of host cells for each well. Three independent assays were carried out, and data were statistically analysed using a two-tailed Student’s t-test in GraphPad Prism 8. The data are presented as mean ± SD.
 
-## Invasion video microscopy
+### Invasion video microscopy
 
 Preparation of human cells - HFF and Human Bone OsteoSarcoma cells (U2OS) that stably expressed the GFP-GPI plasma membrane reporter, were seeded at a density of 3E5 cells per 18 mm glass coverslip, previously coated with poly-L-lysine (50 μg/mL). Cells were cultivated in complete medium at 37°C and 5% CO2 for 24 hr to allow for 80% confluence. Coverslips were placed in Chamlide chambers (LCI Corp.) and covered with a minimal volume (i.e. 100 µL) of motility buffer (see below).
 
@@ -265,32 +580,32 @@ Preparation of parasites – 2E5 to 4E5 parasites were typically collected upon 
 
 Video recording of the tachyzoite behaviour - the recording chamber that accommodates the coverslips was installed on an Eclipse Ti inverted confocal microscope (Nikon) to perform time-lapse video microscopy, with a temperature and CO2-controlled stage (LCI Corp.). The microscope was also equipped with a CMOS camera and a CSU X1 spinning disk (Yokogawa, Roper Scientific). The microscope was piloted using MetaMorph software (Universal Imaging Corporation, Roper Scientific). Similar parameters for image acquisition were used throughout each independent experiment. Time of invasion was estimated for each tachyzoite using MetaMorph time scale between the moment of contact between parasite apex (i.e. conoid) and host cell membrane until the tachyzoite has fully passed through the cell-zoite junction. Time of failed invasion was quantified using the same software, once again between the time of apical contact to those of body withdrawal and detachment, or the moment the tachyzoite did not perform any movement.
 
-## Gliding assays
+### Gliding assays
 
 Freshly egressed parasites of each genetic background were prepared as for the video recording assays. About 2 to 4E5 tachyzoites in 300 μL of motility buffer were deposited on 12 mm glass coverslip, previously coated with poly-L-lysine (as above) and placed in a 24 well plate. Parasites were gently centrifuged (200 x g, 3 min) to ensure rapid contact with the coverslip and then allowed to glide for 10–15 min at 37°C and 5% CO2. Motile activity was checked under microscope after a few first minutes. At the end of this period, the samples were fixed after gentle aspiration of the liquid by the addition of 3.2% PFA in PHEM pH 7.5 (20 min). Trails left by gliding parasites and parasite surface were stained after a blocking step (2% BSA/PBS, 30 min) with mouse anti-TgSAG1 antibody (1 mg/mL stock, 1:600, 2 hr) and Alexa Fluor 488-conjugated HCA anti-mouse antibody (2 mg/mL stock, 1:800, 2 hr). Cell nuclei were stained with 500 nM DAPI and mounted in Mowiol. Images of trails and tachyzoites were captured under the fluorescent ApoTome two microscope (Zeiss) using appropriate set of filters, the Zen software (Zeiss) and a z step of 0.3 µm. Image stacks were further processed with FIJI (Schindelin et al., 2012) and Photoshop.
 
-## Immunofluorescence of successful and failed invasions
+### Immunofluorescence of successful and failed invasions
 
 MIC7 iKO parasites were treated with DMSO or rapamycin and were prepared as described for the video recording assays. Approximately 8E5 tachyzoites in 300 μL of motility buffer were deposited on 12 mm glass coverslip previously coated with poly-L-lysine (as above) and placed in a 24 well plate. Tachyzoites were gently centrifuged (300 x g, 3 min) to ensure rapid contact with the host cell (non-fluorescent HFF and GFP-GPI expressing U2OS cells) and allowed to invade for 2 to 4 min periods at 37°C and 5% CO2. Samples were immediately fixed in 3.2% PFA in PHEM pH 7.5 (20 min) prior to be processed for IFA. Blocking step and anti-TgSAG1 staining were performed as for the gliding assay except that the incubation with SAG1 primary antibody and Alexa Fluor 633-conjugated secondary antibody was reduced to 30 min. After SAG1 staining, the HFF-tachyzoite samples were permeabilised with (0.2% Triton X-100/PBS, 5 min) prior to a second step of blocking. MIC7 labelling was performed using rabbit anti-HA (clone C29F4), (1:800, 2 hr; Cell Signaling) followed by Alexa Fluor 488-conjugated HCA anti-rabbit antibody (2 mg/mL stock, 1:800, 2 hr).
 
-## MIC7 dimerisation
+### MIC7 dimerisation
 
 HFF monolayers infected with parasites from the DiCre, MyccWT and MyccMut lines were washed with cold PBS and lysed in IP buffer (50 mM Tris, 150 mM NaCl, 0.2% Triton-X100, pH7.5) supplemented with protease inhibitors (Roche Diagnostics) for 30 min on ice. The lysates were then centrifuged (5000 x g, 20 min, 4°C), the supernatants collected and incubated with 20 µL of α-HA-conjugated agarose beads (Millipore) on a rotating wheel at 4°C. After 3 hr the supernatant was removed and beads washed 3x with IP buffer. Protein elution from beads was performed with SDS sample loading buffer and boiling at 95°C for 10 min. Input, IP and supernatant samples for each tested parasite line were then analysed by SDS-PAGE and western blotting.
 
-## Microneme secretion assay
+### Microneme secretion assay
 
 Parasites from MIC7 iKO line were treated with DMSO or rapamycin (50 nM, 4 hr). After 24 hr incubation parasites were syringe lysed in DMEM at room temperature and collected by centrifugation (800 x g, 4°C, 10 min). Pellets were resuspended in Ringer’s buffer (155 mM NaCl, 3 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 3 mM NaH2PO4, 10 mM HEPES, 10 mM glucose) supplemented with BIPPO (50 µM) or vehicle and microneme secretion was induced at 37°C for 20 min. Following this incubation step the parasites were placed on ice and pelleted (1000 x g, 5 min, 4°C). The pellet was kept on ice while the supernatant was re-pelleted (2000 x g, 5 min, 4°C). The final supernatant, containing the excreted secreted antigens, and pellet fractions were resuspended in sample loading buffer prior to SDS-PAGE and western blotting.
 
-## Shedding assays
+### Shedding assays
 
 Shedding tests during egress for MyccWT and MyccMut lines were performed exactly as described in microneme secretion assay.
 
 To test for MIC7 shedding upon invasion, parasites from the iKO, MyccWT and MyccMut lines were treated with DMSO or rapamycin (50 nM, 4 hr). After 24 hr incubation parasites were syringe lysed in cold DMEM and spun (300 x g, 3 min, 4°C) onto PBS washed HFF monolayers in a 6-well plate (Falcon). The plate was then incubated at 37°C to facilitate invasion. After 1 hr the plate was placed on ice, the supernatant was gently aspirated off and spun down (700 x g, 10 min, 4°C) to remove any aspirated parasites. Proteins were precipitated out by the addition of cold trichloroacetic acid (10% v/v) on ice (30 min). Samples were centrifuged (17,000 x g, 20 min, 4°C), washed with 300 µL of cold acetone and air dried. The infected monolayers were scraped in 0.5 mL cold PBS and collected by centrifugation (17,000 x g, 20 min, 4°C). Both pellet and supernatant samples were resuspended in sample loading buffer prior to SDS-PAGE and western blotting.
 
-## Proteinase K protection assay
+### Proteinase K protection assay
 
 Parasites from MyccWT and MyccMut lines were treated with rapamycin (50 nM, 4 hr) followed by YnMyr (25 µM, 16 hr). Parasites were then syringe lysed in DMEM at room temperature and collected by centrifugation (800 x g, 10 min, 4°C). Pellets were resuspended in 1.7 mL cold SoTE buffer (0.6 M sorbitol, 20 mM Tris–HCl (pH 7.5), and 2 mM EDTA) and split into three tubes (0.5 mL each) per tested parasite line. Tubes 2 and 3 were permeabilised with 0.01% cold Digitonin (Sigma-Aldrich) in SoTE. Samples were carefully mixed by inversion and incubated on ice (10 min) prior to centrifugation (1000 x g, 10 min, 4°C). Supernatant was discarded. Pellets were resuspended in 0.5 mL cold SoTE and 8 µg of Proteinase K (Sigma-Aldrich) were added to tube 3. All tubes were gently inverted and incubated on ice (30 min). Proteinase K was inactivated by addition of ice cold trichloroacetic acid to a final concentration of 10% v/v on ice (30 min). Samples were centrifuged (17,000 x g, 20 min, 4°C), washed with 300 µL of cold acetone and air dried prior to SDS-PAGE and western blotting.
 
-## Rhoptry secretion assay
+### Rhoptry secretion assay
 
 Parasites from iKO, MyccWT and MyccMut lines were treated with 50 nM rapamycin or an equivalent volume of vehicle (DMSO) for 4 hr after which the medium was replaced and the parasites allowed to grow for 24 hr. Parasites were harvested by syringe lysis, counted, and treated with 1 µM Cytochalasin D (Sigma) for 10 min at room temperature. 500,000 parasites from each condition were seeded onto confluent HFF monolayers grown in chambered coverslip slides (ibidi) and allowed to settle for 10 min on ice. The slides were spun down (250 x g, 1 min, 4°C) then transferred to a 37°C water bath for 20 min to initiate rhoptry secretion. The chambers were washed 3x with PBS then fixed with ice-cold methanol at −20°C for 8 min and washed 3x with PBS. Fixed cells were permeabilised with 0.1% Triton X-100 in PBS for 15 min then blocked with 3% BSA in PBS for 1 hr. Cells were then incubated with rabbit anti-phospho-Stat6 (1:600; Cell Signaling) and mouse anti-Toxoplasma (TP3) (1:1000; Abcam) primary antibodies for 1 hr. After 3x washes with PBS, cells were incubated with goat anti-rabbit Alexa Fluor 594 (1:2000; Life Technologies) and goat anti-mouse Alexa Fluor 488 (1:2,000; Life Technologies) secondary antibodies and 5 µg/mL DAPI (Sigma) for 1 hr followed by 3x washes with PBS. Images were obtained using a Nikon Eclipse Ti-U inverted fluorescent microscope using a 20x objective and analysed using FIJI software. ≥5 fields of view per condition were analysed in three independent experiments. The number of pSTAT6 positive HFFs was normalised to the total number of HFFs, and results were statistically tested with a two-way ANOVA with Sidak’s multiple comparison test in GraphPad Prism 8. The data are presented as mean ± SD.

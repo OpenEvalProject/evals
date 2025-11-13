@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/013cjyk83 Laboratoire de Neurosciences Cognitives et Computationnelles, Département d’Etudes Cognitives, École Normale Supérieure, INSERM, Université PSL Paris France
-2. https://ror.org/02feahw73 Sorbonne Université, Paris Brain Institute (ICM), INRIA, CNRS, INSERM, AP-HP, Hôpital Pitié-Salpêtrière Paris France
-3. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine (INM-7: Brain and Behaviour), Forschungszentrum Jülich Jülich Germany
-4. https://ror.org/024z2rq82 Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany
-5. https://ror.org/02mh9a093 AP-HP, Hôpital de la Pitié Salpêtrière, Neuro ICU, DMU Neurosciences Paris France
-6. https://ror.org/02en5vm52 Pitié-Salpêtrière Faculty of Medicine, Pierre and Marie Curie University, Sorbonne Universities Paris France
-7. https://ror.org/02vjkv261 INSERM, National Institute of Health and Medical Research Paris France
-8. https://ror.org/02mh9a093 Department of Neurology, Pitié-Salpêtrière Hospital Group, Public Hospital Network of Paris Paris France
-9. https://ror.org/02mh9a093 Department of Neurophysiology, Pitié-Salpêtrière Hospital Group, Public Hospital Network of Paris Paris France
+1. Laboratoire de Neurosciences Cognitives et Computationnelles, Département d’Etudes Cognitives, École Normale Supérieure, INSERM, Université PSL Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+2. Sorbonne Université, Paris Brain Institute (ICM), INRIA, CNRS, INSERM, AP-HP, Hôpital Pitié-Salpêtrière Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+3. Institute of Neuroscience and Medicine (INM-7: Brain and Behaviour), Forschungszentrum Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+4. Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+5. AP-HP, Hôpital de la Pitié Salpêtrière, Neuro ICU, DMU Neurosciences Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
+6. Pitié-Salpêtrière Faculty of Medicine, Pierre and Marie Curie University, Sorbonne Universities Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+7. INSERM, National Institute of Health and Medical Research Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+8. Department of Neurology, Pitié-Salpêtrière Hospital Group, Public Hospital Network of Paris Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
+9. Department of Neurophysiology, Pitié-Salpêtrière Hospital Group, Public Hospital Network of Paris Paris France ([ROR:02mh9a093](https://ror.org/02mh9a093))
 
 † Corresponding author
 
@@ -57,11 +57,87 @@ Consecutively, cluster permutation analysis was performed between MCS and UWS pa
 
 We then tested whether the clusters found using cluster permutations at global and local effects, as measured from HERs and ERPs, come from a distribution with a median different from zero, i.e., whether the deviants differ from the standard 5th sounds within patients' groups (Table 1). We found a significant ERP and HER local effect in both MCS and UWS patients. On the other hand, the global effect was significant only for MCS patients in both ERP and HER analysis. This result extends previous reports highlighting the predictive power for the conscious state of the global effect (Pérez et al., 2021).
 
+**Table 1.**
+ Wilcoxon sign test performed separately for MCS and UWS patients, to test whether the global and local effects as measured from HERs and ERPs come from a distribution with median different to zero.Bold indicates significance reached at α=0.05/8=0.0063, according to Bonferroni correction for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Patients</th>
+      <th colspan="2">HERs</th>
+      <th colspan="2">ERPs</th>
+    </tr>
+    <tr>
+      <th>Global effect</th>
+      <th>Local effect</th>
+      <th>Global effect</th>
+      <th>Local effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MCS</td>
+      <td>Z=2.7805p=0.0054</td>
+      <td>Z=3.2175p=0.0013</td>
+      <td>Z=3.7529p=0.0002</td>
+      <td>Z=5.0311p&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>UWS</td>
+      <td>Z=–1.9759p=0.0482</td>
+      <td>Z=–2.9840p=0.0028</td>
+      <td>Z=–1.9624p=0.0497</td>
+      <td>Z=2.9033p=0.0037</td>
+    </tr>
+  </tbody>
+</table>
+
+_HERs: heartbeat-evoked responses, ERPs: auditory event-related potentials, MCS: minimally conscious state, UWS: unresponsive wakefulness syndrome._
+
 In Figure 4A are presented all pair comparisons between ERPs and HERs. for local and global effects. The figure depicts that the measured effects do not show apparent correlations (details on Spearman correlation tests in Table 2). Figure 4B shows that the four markers: ERP global, ERP local, HER global, and HER local present complementary information for the separation of the diagnostic groups.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/75352/elife-75352-fig4-v2.jpg)
 
 **Figure 4.:** (A) Pairwise comparison between all possible combinations for ERPs and HERs, for local and global effects. Individual points corresponding to a single patient, and dotted line indicates the trend, separately per diagnosis. (B) Three-dimensional representation of the clustered effects: left panel for ERP global, ERP local, and HER global; and right panel for ERP global, ERP local, and HER local. Each ellipsoid was constructed per diagnostic group, centered in the group means with a ratio defined by the standard deviations, for the respective dimensions. (C) Confusion matrices depicting the classification results of MCS and UWS patients using a linear discriminant classifier in a fivefold cross-validation. The classifiers were trained using all possible combinations of feature triads, as well as all four features. HERs: heartbeat-evoked responses, ERPs: auditory event-related potentials, MCS: minimally conscious state, UWS: unresponsive wakefulness syndrome.
+
+**Table 2.**
+ Group-wise Spearman correlation analysis performed separately for MCS and UWS patients, between the combined clustered effects found when comparing MCS vs UWS in the ERP global effect, ERP local effect, HER global effect, and HER local effect.Significance was set at α=0.05/8=0.0063, according to Bonferroni correction for multiple comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MCS</th>
+      <th>UWS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ERP global vs ERP local</td>
+      <td>R=0.1077p=0.4748</td>
+      <td>R=0.3099p=0.0591</td>
+    </tr>
+    <tr>
+      <td>HER global vs ERP global</td>
+      <td>R=0.0575p=0.7033</td>
+      <td>R=0.1580p=0.3290</td>
+    </tr>
+    <tr>
+      <td>HER global vs HER local</td>
+      <td>R=–0.1193p=0.4283</td>
+      <td>R=0.1480p=0.3607</td>
+    </tr>
+    <tr>
+      <td>HER local vs ERP local</td>
+      <td>R=–0.0436p=0.7730</td>
+      <td>R=–0.4114p=0.0088</td>
+    </tr>
+  </tbody>
+</table>
+
+_HER: heartbeat-evoked response, ERP: auditory event-related potential, MCS: minimally conscious state, UWS: unresponsive wakefulness syndrome._
 
 To further demonstrate the discrimination power of MCS and UWS patients using HERs and ERPs, we employed a linear discriminant classifier in a fivefold cross-validation. Figure 4C illustrates that combining HER local, ERP global, and ERP local offered the most complementary information out of all possible triads, achieving a cross-validation accuracy of 79.1%. The accuracy further improved to 80.2% when incorporating the four features. These findings highlight the additional insights provided by HERs in conjunction with the standard ERP analysis.
 
@@ -91,19 +167,19 @@ A plethora of complementary neuroimaging techniques have been proposed to enhanc
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 This study includes 46 MCS, 40 UWS patients, and 11 healthy controls. Patients were admitted at the Department of Neurology, Pitié-Salpêtrière Hospital (Paris, France) for consciousness evaluation through Coma Recovery Scale-Revised (CRS-R) (Giacino et al., 2004).
 
 The study was approved by the local ethics committee (Ethical committee of the French Society of Intensive Care Medicine - SRLF; Paris, France, NEURO-DoC/HAO-006/20130409, and M-NEURO-DoC/NCT04534777). Informed consent was signed by the patients’ legal representatives for approval of participation in the study, as required by the declaration of Helsinki.
 
-## Experimental paradigm
+### Experimental paradigm
 
 Patients were recorded with high-density EEG (EGI 256 channels, 250 Hz sampling rate, referenced to the vertex) under the local-global paradigm that aims to evaluate the cognitive processing of local–short-term–, and global–long-term–auditory regularities (Figure 1A; Bekinschtein et al., 2009). The paradigm consists of two embedded levels of auditory regularities in trials formed by five consecutive sounds. The 5th sound defines whether the trial is standard or deviant at two levels: local and global. The local level of regularity is defined within the trial. The global level of regularities is defined across trials (frequent trials ~80% define the regularity, and rare ones ~20% violate this regularity). In Figure 1A, in the XX blocks, the frequent stimulus corresponds to five equal sounds (local standard and global standard). In contrast, the infrequent stimulus corresponds to four equal sounds followed by a fifth different sound (local deviant and global deviant). In the XY blocks, the frequent stimulus corresponds to four equal sounds and a fifth different sound (local deviant and global standard). The infrequent stimulus corresponds to five equal sounds (local standard and global deviant). The patients included in this study performed at least four blocks (2 XX and 2 XY), in which one block has an approximate duration of 200 s. Each trial is formed by five consecutive sounds lasting 50 milliseconds, with a 150 millisecond gap between the sounds’ onsets and an intertrial interval ranging from 1350–1650 milliseconds.
 
 The healthy controls participating in this study completed two blocks of the local-global paradigm, one XX and one XY. It is important to note that they were included solely as a reference group for qualitative analyses. The purpose of including healthy controls in our study was to determine if MCS patients exhibit similar trends in markers where a differentiation between MCS and UWS/VS patients was observed.
 
-## Data preprocessing
+### Data preprocessing
 
 MATLAB and Fieldtrip toolbox were used for data processing and analysis (Oostenveld et al., 2011). EEG data were offline filtered with a 1–25 Hz Butterworth band-pass order four filter, with a Hamming windowing at cutoff frequencies. The channels with large artifacts were rejected based on the area under the curve of their z-score. Channels exceeding >3 standard deviations were discarded iteratively (11±1 SEM channels rejected on average). Following the procedure described in Raimondo et al., 2017, electrocardiograms (ECG) were recovered from the cardiac field artifact captured in EEG data using Independent Component Analysis (ICA) (default parameters from Fieldtrip). From this, ICA-corrected EEG data and an electrocardiogram derived from independent component analysis (ICA-ECG) is obtained. Note that the use of ICA-ECG instead of a standard ECG measured from the rib cage was successfully used in other two studies (Candia-Rivera et al., 2021a; Raimondo et al., 2017). Furthermore, it was shown that the differences between the R-peak timings obtained from the ECG and ICA-ECG differ in a range of 0–4 ms (Candia-Rivera et al., 2021a).
 
@@ -115,13 +191,13 @@ HERs (Park and Blanke, 2019; Schandry et al., 1986) were computed by averaging E
 
 Auditory event-related potentials (ERPs) were computed for contrast by averaging EEG epochs from the 5th sound onset from all the trials, up to 1000 ms. Epochs with amplitude larger than 300 μV on any channel were discarded.
 
-## Data analysis
+### Data analysis
 
 Two neural signatures were computed to compare MCS and UWS patients: ERPs, that relate to the average of EEG epochs locked to the auditory stimuli, and HERs that relate to the average of EEG epochs locked to the heartbeats that follow the auditory stimuli. The experimental conditions, in which ERPs and HERs were used to compare MCS and UWS patients, are:
 
 Additionally, HERs average and HERs variance were analyzed during the whole experimental protocol, i.e., the neural responses to heartbeats were analyzed with respect to all heartbeats independently of stimuli.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical comparisons were based on Wilcoxon rank sum and Spearman correlation, as specified in the main text. p-values were corrected for multiple comparisons by applying the Bonferroni rule or by using cluster-permutation analyses.
 

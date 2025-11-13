@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/036jqmy94 Department of Pediatrics, Carver College of Medicine, University of Iowa Iowa City United States
-2. https://ror.org/036jqmy94 Departments of Microbiology and Immunology, Carver College of Medicine, University of Iowa Iowa City United States
-3. https://ror.org/036jqmy94 Molecular Physiology and Biophysics, Carver College of Medicine, University of Iowa Iowa City United States
+1. Department of Pediatrics, Carver College of Medicine, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+2. Departments of Microbiology and Immunology, Carver College of Medicine, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+3. Molecular Physiology and Biophysics, Carver College of Medicine, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ To further characterize the regulation of C. albicans filamentation in vivo, we 
 
 ## Results
 
-## Identification of TFs required for C. albicans filament initiation in vivo
+### Identification of TFs required for C. albicans filament initiation in vivo
 
 Previously, we reported the in vivo characterization of four TFs (Efg1, Brg1, Bcr1, and Ume6) with well-studied roles in vitro filamentation using both laboratory strains and clinical isolates (Wakade et al., 2021). As part of their characterization of a collection of 155 TF deletion mutants, Homann et al. reported that at least 40 mutants had effects, both positive and negative, on morphogenesis in vitro (Homann et al., 2009). Taking advantage of this important genetic resource, we set out to define the set of TFs that regulate C. albicans filamentation in vivo. To do so, we labeled all TF mutants by integrating an iRFP fusion protein at the ENO1 locus as previously described (Wakade et al., 2021). A 1:1 mixture of the iRFP-labeled TF mutant and SN250 (WT, unless otherwise indicated) containing a GFP fusion protein integrated at the same locus was injected into the pinna of a DBA/2 mouse ear. Twenty-four hours after inoculation, infected ears were imaged by confocal microscopy as detailed in the Methods and in a recent publication (Wakade et al., 2022b). This time point gives a ratio of yeast-to-filamentous cells similar to that resulting from incubation of the WT strain for 4 hr in RPMI medium supplemented with 10% fetal bovine serum (FBS); the latter conditions are those we used for in vivo to in vitro comparisons reported herein.
 
@@ -39,19 +39,35 @@ We characterized in vivo filamentation using two readouts that correspond to hyp
 
 A volcano plot showing the normalized proportion of filamentous cells for each TF deletion mutant is shown in Figure 1A. A total of 19 TF mutants showed a statistically significant reduction (p<0.05, paired Student’s t test) in the percentage of filaments relative the reference strain (Supplementary file 1). Only two mutants (tup1∆∆ and nrg1∆∆) showed statistically significant increases in the proportion of filaments; Tup1 and Nrg1 are well-characterized repressors of filamentation in vitro (Sudbery, 2011). We classified the TF mutants with reduced filamentation into two groups: (1) core regulators of in vivo filamentation (EFG1, BRG1, ROB1), defined as mutants that formed fewer than 30% filamentous cells, and (2) auxiliary regulators, defined as mutants with a statistically significant change in filamentation (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig1-v2.jpg)
+
+**Figure 1.:** (A) Volcano plot of % filamentous cells of transcription factor homozygous deletion mutants normalized to co-infecting wild type (WT) cells 24 hr after injection into the subdermal tissue of a mouse ear. The p values are derived from paired Student’s t tests of >100 cells in 3–4 fields per ear. See Supplementary file 1 for all data. Red dots indicate mutants with statistically significant differences in % filamentous cells relative to WT. The vertical dotted line distinguishes the core positive regulators from auxiliary regulators; the horizontal dotted line indicates p=0.05 (Student’s t test). (B) Gene names for the core and auxiliary positive regulators and the two negative regulators. (C) Representative images for WT and the five mutants with the strongest phenotypes; the percentage of filamentous cells is noted in each panel. The boxed regions shown are magnified in the lower panel. (D) The percentage of filamentous cells for the five mutants and WT after in vitro induction for 4 hr in RPMI+10% fetal bovine serum (FBS) at 37°C. The bars indicate mean of two independent experiments with >100 cells counted per strain. (E) Comparison of filamentation of the reference strain SN250 to a clinical isolate with a natural EFG1 loss-of-function mutation (P94015).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** * indicates p<0.05 by Student’s t test.
+
 For the three core regulators and the two auxiliary regulators with the strongest phenotypes, we confirmed these ratios with independent experiments (Figure 1C). The efg1∆∆ mutant formed essentially no filaments in vivo. Deletion of BRG1, ROB1, TEC1, and RIM101 reduced the ratio of filaments/yeast but each of these homozygous deletion mutants formed filaments. Similar results were observed with these five mutants in vitro using RPMI+10% FBS medium at 37°C as inducing conditions (Figure 1D). Among the auxiliary regulators, a total of five TF deletion mutants were reported in the literature (Homann et al., 2009) to be deficient for filamentation in vitro (TEC1, RIM101, CPH2, AHR1, ISW2, NDT80, SFL2) while three mutants showed the opposite phenotype of increased filamentation in vitro but decreased filamentation in vivo (FGR15, ZCF3, 19.6874). Finally, five TF deletion mutants had reduced filamentation in vivo but no reported effect on filamentation in vitro (GRF10, SEF1, ZCF31, 19.1150, 19.2730). The stp2∆∆ mutant showed reduced filamentation as well; however, Stp2 regulates amino acid uptake (Miramón and Lorenz, 2016) and we suspected this phenotype may represent a genetic interaction with the arg4∆∆ mutation present in this background (Noble and Johnson, 2005); consistent with this hypothesis, re-introduction of the ARG4 gene to the stp2∆∆ mutant restored normal filamentation (Figure 1—figure supplement 1).
 
 Efg1 has been a well-studied master regulator of in vitro filamentation (Glazier, 2022). We had previously shown that deletion of EFG1 in a set of four well-characterized clinical strains with varying levels of in vivo filamentation consistently eliminated filamentation (Wakade et al., 2021). These five strains were part of a larger collection of clinical isolates that were extensively characterized by Hirakawa et al., 2015. Among these strains, Hirakawa found one that contained a natural EFG1 loss-of-function mutation (P94015). Since Efg1 is required for full virulence in mouse models and the ability to filament is strongly associated with virulence, we wondered if P94015 might contain a suppressor mutation that would allow it to filament in vivo. Consistent with its inability to filament in vitro and its lack of a functional copy of EFG1, the P94015 strain was essentially afilamentous in vivo (Figure 1E). These data indicate that Efg1 is an important regulator of filamentation within infected tissue.
 
-## A distinct set of TFs regulates filament elongation in vivo
+### A distinct set of TFs regulates filament elongation in vivo
 
 The filament lengths for all mutants, except the efg1∆∆ mutant, were determined and a volcano plot for those data is shown in Figure 2A. A total of 59 TF deletion mutants had a statistically significant reduction in filament length (paired Student’s t test, p<0.05) relative to WT strains (Supplementary file 2). Only two mutants, nrg1∆∆ and tup1∆∆, showed increased filament length. Of the set of mutants with reduced filament length, 31 formed filaments that were 25% shorter than WT (Figure 2B); representative distributions of filament lengths for two of these mutants (hms1∆∆ and lys14∆∆) are shown in Figure 2C. To our knowledge, there has been no systematic or large-scale genetic screen for mutants with reduced filament length. We, therefore, selected five TF deletion mutants (HMS1, LYS14, SEF1, DAL81, and WAR1) with strong defects in filament length but no known in vitro filamentation phenotypes. The five mutants formed filaments in vitro with lengths that were not significantly different than WT (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig2-v2.jpg)
+
+**Figure 2.:** (A) Volcano plot of filament length normalized to wild type (WT) in the same fields using the same images described in Figure 1. The p values are derived from a Mann-Whitney U test. The red dots indicate mutants with statistically significant reductions in filament length. The vertical dotted line indicates 75% of WT filament length; the horizontal dotted line indicates p=0.05 (Mann-Whitney). The full data set is provided in Supplementary file 2. (B) The set of TF mutants with lengths ≤75% of WT. (C) Representative data for two mutants with reduced filament length. **** indicates p value <0.001 by Mann-Whitney U test. (D) In vitro filament length for WT and five mutants with reduced filament length in vivo; 4 hr incubation in RPMI+10% fetal bovine serum (FBS) at 37°C. (E) The ume6∆∆ mutant shows WT levels of filament formation but reduced filament length in vivo. (F) Venn diagram showing the distribution of mutants with reduced filament initiation, filament initiation and elongation, and elongation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** *** indicates p<0.05; **** p<0.005 by Mann-Whitney U test.
 
 Ume6 is a TF that is required for hyphal elongation in vitro (Banerjee et al., 2008) but its deletion mutant is not included in the Homann collection (Homann et al., 2009). We, therefore, constructed the ume6∆∆ mutant in the SN background to determine if the reduced hyphal elongation phenotype was also observed in vivo. In vivo, the ume6∆∆ mutant forms filaments to the same extent of WT but, consistent with its in vitro phenotype, the filaments are 40% shorter (Figure 2E). We had previously shown that deletion of UME6 in clinical isolates has a minimal effect on filament initiation but we did not assess its role in elongation in that study (Wakade et al., 2021). As shown in Figure 2—figure supplement 1, re-analysis of those data revealed that deletion of UME6 consistently leads to shorter filaments in the three clinical isolates that form filaments. This indicates that Ume6 functions mainly to regulate genes involved in hyphal elongation or maintenance rather than filament initiation in vivo.
 
 As summarized in Figure 2F, our screen identified at total of 37 mutants that affected either initiation of filament formation (8 mutants), filament elongation (16 mutants), or both (15 mutants). Of the TFs that only affect initiation, 5 have in vitro phenotypes that match their in vivo phenotype; the 19.8874∆∆ mutant shows increased filamentation in vitro while neither 19.2730 nor 19.1150 have been reported to affect filamentation. Of the TFs that only affect elongation, HMS1, UME6, and ZCF29 (3/14) have been shown to have phenotypes in vitro. Thus, most of the elongation-associated TFs have not been found to have filamentation defects using standard in vitro assays. It is important to keep in mind that filament length has not been systematically studied prior to this work and, to our knowledge, no large-scale genetic characterization of genes affecting elongation has been reported. Lys14, Hms1, and Ume6, specific regulators of elongation in vivo, are required for virulence in disseminated candidiasis (Banerjee et al., 2008; Pérez et al., 2013), suggesting that this phenotype is relevant to pathogenesis, particularly since LYS14 and HMS1 mutants have few other in vitro phenotypes (Homann et al., 2009; Shapiro et al., 2012).
 
-## Brg1, Efg1, and Rob1 have overlapping and distinct effects on the expression of filament-associated genes in vitro and in vivo
+### Brg1, Efg1, and Rob1 have overlapping and distinct effects on the expression of filament-associated genes in vitro and in vivo
 
 To further characterize the function of key in vivo regulators of the yeast-to-filament transition, we carried out focused in vitro and in vivo transcriptional profiling. In order to directly compare profiles in vivo and in vitro, we used the NanoString nCounter platform to query the expression of a set of 186 environmentally responsive genes previously used by the Mitchell and Filler labs to characterize the expression of C. albicans infecting mouse kidney tissue (Xu et al., 2015). The gene set contains 57 hyphae-associated transcripts (30% of the total; see Supplementary file 3 for complete list of genes and all raw and processed NanoString data). We recently reported the expression profile of WT infecting the ear and showed correlated with both the profile of cells from infected kidney tissue and in vitro hyphae induction; correlation between the two in vivo profiles was stronger than with in vivo (Wakade et al., 2021). These data indicate that the transcriptional and, by inference, the physiological state of the cells of C. albicans cells under these in vitro induction conditions is reasonably similar to the state of the cells in vivo. Consistent with that notion, the percentage of filamentous cells is very similar between 4 hr in vitro induction and 24 hr post infection (Wakade et al., 2021). Therefore, we feel that comparisons between these two conditions will be, to a first approximation, valid. Furthermore, these transcriptional similarities argue against our imaging model as being a special case that is not comparable to other infection niches or induction conditions.
 
@@ -67,7 +83,7 @@ We examined the effect of the three core regulators of filament initiation in vi
 
 Brg1, Efg1, and Rob1 regulate the expression of other TFs required for the normal transition from yeast-to-filaments. In vitro, Efg1 affects the expression of six other regulators including both negative regulators (Figure 4C). Neither Rob1 nor Brg1 affect the expression of any other positive regulator of TF in our probe set but negatively regulate Nrg1. Only Efg1 affects the expression of TUP1. The regulatory relationships between Brg1, Efg1, and Rob1 remain the same in vivo (Figure 4D). Interestingly, Brg1 is the only factor that negative regulates Nrg1, although Efg1 plays a role indirectly through its activation of Brg1. In vivo, Brg1, Efg1, and Rob1 each positively regulate two other positive regulators, leading to a much more interconnected set of network interactions. Each of the less dominant TFs are regulated by two additional TFs. Efg1-Brg1-Tec1 and Efg1-Brg1-Ahr1 both appear to form feedforward loops. Thus, the network structure of the TFs affecting in vivo filament initiation is distinct from that present during in vitro filamentation.
 
-## Efg1 and Brg1 interact with Tec1 to regulate initiation of filamentation
+### Efg1 and Brg1 interact with Tec1 to regulate initiation of filamentation
 
 To further explore the functional consequences of these transcriptional interactions, we used a set of double mutants comprising all combinations of heterozygous deletion mutations in EFG1, BRG1, ROB1, and TEC1 Glazier et al., 2018; for clarity, heterozygous mutants are indicated as having a single ∆ while homozygous mutants have a double ∆∆. We previously found that these four genes interact functionally during in vitro filament formation as measured by the proportion of filaments formed (Figure 5A, Glazier et al., 2018). In vivo, EFG1 and BRG1 interacted with TEC1 (Figure 5B, C) while no other combinations showed a statistically significant change in the proportion of filaments formed. Thus, the network of functional interactions between these regulators in vivo is distinct from that observed in vitro. The functional genetic interactions between Efg1, Brg1, and Tec1 is consistent with the feedforward loop indicated by our in vivo transcriptional data (Figure 4D).
 
@@ -85,7 +101,7 @@ The set of genes regulated by Efg1 and Tec1 contains TFs that affect in vivo fil
 
 Ten of the TFs that affect filamentation in vivo were in our NanoString probe set. As shown in Figure 6B, Efg1 and Tec1 showed a negative genetic interaction with respect to the expression of 7 out of 10 TFs involved in in vivo filamentation. This negative interaction suggests that Efg1 and Tec1 are local hubs that interdependently regulate other filamentation-associated TFs in vivo. In contrast, Efg1 and Tec1 regulate hypha-specific genes independently because no ε values were outside of the ±0.2 range (Figure 6C). Taken together, these analyses support the regulatory circuit shown in Figure 6D in which: (1) Efg1 and Tec1 both regulate TEC1 expression; (2) Efg1 and Tec1 cooperate to regulate the expression of other filamentation-associated TFs; and (3) Efg1 and Tec1 make independent contributions to the regulation of hypha-specific genes. Interestingly, the cooperative interactions between Efg1 and Tec1 are not observed in vitro (Supplementary file 4). Our data support the conclusion that the functional genetic interaction between Efg1 and Tec1 is due to their cooperative role in the regulation of other TFs that affect filamentation.
 
-## TFs required for filament elongation in vivo regulate a common set of genes that does not include hyphae-associated transcripts
+### TFs required for filament elongation in vivo regulate a common set of genes that does not include hyphae-associated transcripts
 
 Of the TFs whose deletion mutants affected filament length, 15 have no effect on the yeast-to-filament transition. Ume6 regulates hyphal maintenance under in vitro conditions and has been considered one of the master regulators of hyphae formation. Consistent with the pioneering work of the Kadosh laboratory (Banerjee et al., 2008), loss of UME6 has a significant effect on the length of filaments formed in vivo but no effect on the yeast-to-filament transition (Figure 2E/F). Because Ume6 regulates filament elongation under in vitro and in vivo conditions, we assessed the effect of UME6 on gene expression in vivo. We also selected two additional TFs whose mutants have reduced filament length but no change in filament initiation to study: HMS1, a TF previously found to affect filamentation at high temperature (42°C, Shapiro et al., 2012) in vitro, and LYS14, a TF with no morphology or other in vitro phenotype (Homann et al., 2009; Pérez et al., 2013). Although LYS14 is homologous to Saccharomyces cerevisiae TFs involved in the regulation of lysine biosynthesis genes, this function is not conserved in C. albicans and little else is known about its role in C. albicans biology (Pérez et al., 2013). Deletion mutants of HMS1 and LYS14 have reduced competitive fitness in a mouse model of disseminated candidiasis while the hms1∆∆ mutant is also less fit during GI colonization (Pérez et al., 2013). Strains lacking UME6 have reduced virulence in the disseminated infection model but are hyper-fit during GI colonization (Witchley et al., 2019).
 
@@ -97,7 +113,7 @@ Neither Ume6, Lys14, nor Hms1 have a consistent effect on the expression of most
 
 The NanoString probe set was not specifically designed to include genes that are important for hyphal elongation. However, the set of genes regulated by two or more of the elongation regulators provides some insight into transcripts important during this phase of filamentation. Specifically, 9/23 genes (ALS2, ALS9, CRH11, RBT1, SAP1, SAP10, SCW4, SCW11, SOG2; Supplementary file 5) regulated by at least two of hyphal elongation TFs are cell wall or secreted proteins. This correlation suggests that elongation-associated TFs regulate cell wall remodeling during the elongation phase of filamentation. Overall, our profiling of these mutants indicates that they regulate a distinct set of genes relative to TFs required for the initiation of filamentation.
 
-## Deletion of NRG1 but not TUP1 suppresses the filamentation defect of efg1∆∆ in vivo
+### Deletion of NRG1 but not TUP1 suppresses the filamentation defect of efg1∆∆ in vivo
 
 C. albicans filamentation requires the ordered activity of both positive and negative regulators of gene expression (Sudbery, 2011; Lu et al., 2014). In vitro, repressors of C. albicans filamentation include Nrg1, Tup1, Ssn6, and Rfg1. Although Homann et al. found that 16 TF deletion mutants were hyper-filamentous on at least one condition in vitro (Homann et al., 2009), our in vivo screen of the same deletion set found that the nrg1∆∆ and tup1∆∆ mutants were the only two with statistically significant increases in percentage filamentous cells. Similarly, deletion mutants of NRG1 and TUP1 were the only two that formed longer filaments than the WT strain. We were interested, therefore, in generating double mutants of three key positive regulators (Brg1, Efg1, and Rob1) and repressors (Tup1 and Nrg1) to gain information about how they worked together to regulate morphogenesis in vivo.
 
@@ -105,15 +121,23 @@ We first examined the genetic interaction between the Tup1 and Efg1. The tup1∆
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig8-v2.jpg)
 
-**Figure 8.:** (A) The percentage of filaments formed by the tup1∆∆ efg1∆∆ mutant relative to wild type (WT) after 4 hr induction with RPMI+10% fetal bovine serum (FBS) or 24 hr infection in mouse ear. (B) Photomicrographs of the indicated mutants after in vitro induction. (C) Distribution of yeast, hyphae, and pseudohyphae after in vitro induction. (D) Representative micrographs of in vivo filamentation for the indicated strains. (E) The percentage of filaments observed in vivo for the indicated strains. (F) The percentage of cells with branches observed in vivo. The bars indicate at least two independent inductions and ear assays with standard deviation indicated by error bars.Figure 8—source data 1.Figure 8A and B.Images for comparison analysis of efg1∆∆ nrg1∆∆ and efg1∆∆ tup1∆∆ filamentation.Figure 8—source data 2.Figure 8D.
+**Figure 8.:** (A) The percentage of filaments formed by the tup1∆∆ efg1∆∆ mutant relative to wild type (WT) after 4 hr induction with RPMI+10% fetal bovine serum (FBS) or 24 hr infection in mouse ear. (B) Photomicrographs of the indicated mutants after in vitro induction. (C) Distribution of yeast, hyphae, and pseudohyphae after in vitro induction. (D) Representative micrographs of in vivo filamentation for the indicated strains. (E) The percentage of filaments observed in vivo for the indicated strains. (F) The percentage of cells with branches observed in vivo. The bars indicate at least two independent inductions and ear assays with standard deviation indicated by error bars.
 
 We noticed that the nrg1∆∆ mutants showed increased branching relative to WT cells in vivo. Increased branching of filaments is a characteristic of pseudohyphae (Sudbery et al., 2004). In our experience, WT cells branch very little in vivo, suggesting that hyphae are the predominant morphotype at the time point that we are analyzing (Figure 8F). Deletion of NRG1 increases the extent of branching to almost 50% (Figure 8F). The branching phenotype of nrg1∆∆ is preserved in the brg1∆∆ nrg1∆∆ and rob1∆∆ nrg1∆∆ mutants, while the efg1∆∆ nrg1∆∆ mutant modest branching relative to nrg1∆∆. This indicates that the filaments formed by the efg1∆∆ nrg1∆∆ mutant are more hyphae-like than the nrg1∆∆ mutant.
 
 A possible explanation for the reduced branching of the efg1∆∆ nrg1∆∆ mutant relative to the nrg1∆∆ single mutant is that the TF ACE2 is expressed at very high levels in the double mutant (FC 13.8 relative to WT; q value = 0.002, Supplementary file 6). We have previously shown that Efg1 suppresses ACE2 expression in vitro and binds to the promoter of ACE2 (Saputo et al., 2014); ACE2 expression is also increased in the efg1∆∆ mutant in vivo (FC 6.1 relative to WT q value = 0.04, Supplementary file 3). We have also demonstrated that Ace2 suppresses lateral yeast formation during in vitro filamentation (Wakade and Krysan, 2021). Thus, the increased expression of ACE2 in the efg1∆∆ nrg1∆∆ mutant suggests that loss of Efg1 leads to increased ACE2 expression which in turn reduces lateral branching.
 
-## Efg1, Brg1, and Rob1 play distinct roles in the regulation of hyphae-associated gene expression after relief of Nrg1 repression
+### Efg1, Brg1, and Rob1 play distinct roles in the regulation of hyphae-associated gene expression after relief of Nrg1 repression
 
 After relief of Nrg1 repression, it is not currently clear which TFs positively regulate the transcriptional program repressed by Nrg1. To explore this question, we compared the expression profiles of the efg1∆∆ nrg1∆∆, brg1∆∆ nrg1∆∆, and rob1∆∆ nrg1∆∆ double mutants to single mutants of each positive regulator of filamentation (Supplementary file 6). We focused on the set of nine hypha-associated genes listed in Figure 7A and the data for ALS3, ECE1, and HWP1 from both in vitro and in vivo conditions are shown in Figure 9A while data for the remaining genes are shown in Figure 9—figure supplement 1. The expression of ALS3, ECE1, and HWP1 are all significantly reduced in the TF single mutants. In the case of the efg1∆∆ nrg1∆∆ mutant, the expression of all three canonical hypha-associated genes is restored to WT levels; of the remaining genes, only SAP6 expression is reduced in the efg1∆∆ nrg1∆∆ mutant (Figure 9—figure supplement 1). This is a rather surprising result because three separate groups have found that Efg1 directly binds the promoters of these genes (Lassak et al., 2011; Witchley et al., 2021; Do et al., 2022). However, our data indicate that Efg1 is not necessary for the expression of ALS3, ECE1, and HWP1 as well as other hypha-specific genes after relief of Nrg1 expression. Rob1 and Brg1, on the other hand, play a consistent role in the expression of the hypha-associated genes in vivo and in vitro with Rob1 having a more important role for most of the genes that we analyzed (Figure 9A and Figure 9—figure supplement 1). In terms of regulation of hypha-induced genes, our data suggest that Efg1 functions upstream of Nrg1 and may mediate the relief of Nrg1 repression rather than the direct induction of hypha-specific gene expression after relief of Nrg1 repression.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig9-v2.jpg)
+
+**Figure 9.:** (A) The expression of ALS3, ECE1, and HWP1, canonical hypha-associated genes, in the indicated strains. The fold-change is relative to wild type (WT) for both in vitro and in vivo inductions The data are presented in Supplementary file 3 and Supplementary file 6 along with standard deviation and false discovery rate (FDR) statistics. (B) The Venn diagram compares the downregulated genes in the efg1∆∆ and efg1∆∆ nrg1∆∆ mutants (see Supplementary files 3; 6 and 7). Direct Efg1 targets are genes identified in references (Lassak et al., 2011; Witchley et al., 2021 or Do et al., 2022). Nrg1 Response Elements (NRE) were as defined in reference (Murad et al., 2001).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/85114/elife-85114-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The fold-change is relative to wild type (WT) for both in vitro and in vivo inductions The data are presented in Supplementary files 3 and 6 along with standard deviation and false discovery rate (FDR) statistics.
 
 Although Efg1 does not appear to contribute directly to the expression of canonical hyphae-associated genes after relief of Nrg1 repression, 49 genes have reduced expression in the efg1∆∆ nrg1∆∆ mutant relative to WT in vivo as indicated by the Venn diagram in Figure 9B. Of these 49 genes, the promoters of nearly 50% (22/49) have been shown to be bound by Efg1 in vitro while only three have Nrg1 Responsive Elements (NRE, Murad et al., 2001) in their promoter regions (Figure 9B). In contrast, all Efg1 bound genes whose expression was restored to WT levels in the efg1∆∆ nrg1∆∆ mutant deletion contained NRE sequences in their promoter (Figure 9B), suggesting that they are directly bound by Nrg1. From these data, Efg1 and Nrg1 appears to bind a common set of hypha-associated genes during filament initiation but Efg1 is not required for their expression. Most likely, Rob1 and Brg1 along with additional TFs contribute to the expression of Nrg1-repressed, hypha-associated genes. After relief of Nrg1 repression, Efg1 binds to the promoters and regulates the expression of a second set of genes that are not repressed by Nrg1. Since canonical hyphae-specific genes are in the first class of Efg1 targets, our data are consistent with the surprising result that Efg1 indirectly regulates hyphae-specific genes, possibly by mediating the displacement of Nrg1 from their promoters.
 
@@ -157,15 +181,116 @@ In summary, our systematic genetic analysis of the transcriptional regulation of
 
 ## Methods
 
-## Strains, cultivation conditions, and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Candida albicans)</td>
+      <td>C. albicans strains generated in this work</td>
+      <td>See strain table in Supplementary file 8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Candida albicans)</td>
+      <td>C. albicansSN background, homozygous TF deletion mutant collection</td>
+      <td>Fungal Genetics Stock Center(https://www.fgsc.net/)</td>
+      <td>Deletion set from Oliver Homann</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, female)</td>
+      <td>DBA2/N(6–12 weeks)</td>
+      <td>Envigo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td>Fetal bovine serum</td>
+      <td>Gibco/Thermo Fisher(https://www.thermofisher.com/order/catalog/product/26140079)</td>
+      <td>Cat. #: 26140-079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NanoString Gene probe set</td>
+      <td>NanoString Co.</td>
+      <td>Custom Probe Set</td>
+      <td>See Supplementary file 3 for complete list of genes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPMI1640 Cell culture medium</td>
+      <td>Gibco/Thermo Fisher(https://www.thermofisher.com/order/catalog/product/11875093)</td>
+      <td>Cat. #: 11875-093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA extraction kit</td>
+      <td>Previously been sold by Lucigen and now can be obtained at https://us.vwr.com/store/product/22399774/masterpuretm-complete-dna-and-rna-purification-kit-biosearch-technologies</td>
+      <td>Cat. #: 76081-748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit (Bio-Rad)</td>
+      <td>https://www.bio-rad.com/en-us/sku/1708891-iscript-cdna-synthesis-kit-100-x-20-ul-rxns?ID=1708891</td>
+      <td>Cat. #: 170-8891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix (Bio-Rad)</td>
+      <td>https://www.bio-rad.com/en-us/sku/1708880-iq-sybr-green-supermix-100-x-50-ul-rxns-2-5-ml-2-x-1-25-ml?ID=1708880</td>
+      <td>Cat. #: 170-8892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td></td>
+      <td>Version: 9.5.0 (730)</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>NanoString software</td>
+      <td>https://nanostring.com/products/analysis-solutions/nsolver-advanced-analysis-software/</td>
+      <td></td>
+      <td>Version: 4.0</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>ImageJ/FiJi software</td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+      <td>Version: 1.8.0_322 (64 bit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, cultivation conditions, and media
 
 The reference and library mutant strains, unless otherwise mentioned, used in this study are derived from the SN background (Homann et al., 2009; Noble and Johnson, 2005) and were obtained from the Fungal Genetics Stock Center. The C. albicans clinical isolate strain and their respective mutants used in this study have been described previously (Wakade et al., 2021; Hirakawa et al., 2015; Huang et al., 2019). All C. albicans strains were precultured overnight in yeast peptone dextrose (YPD) medium at 30°C. Standard recipes were used to prepare synthetic drop-out media and YPD (Homann et al., 2009). RPMI medium was purchased and supplemented with FBS (10%, vol/vol). For in vitro hyphal induction, C. albicans strains were incubated overnight at 30°C in YPD media, harvested, and diluted into RPMI+10% serum at a 1:50 ratio and incubated at 37°C for 4 hr (Wakade et al., 2021).
 
-## Mouse experiments
+### Mouse experiments
 
 The mouse experiments were approved by the University of Iowa IACUC (protocol number: 0092064/exp. 10/12/2023).
 
-## Strain construction
+### Strain construction
 
 Strains not associated with the library are summarized in Supplementary file 8. C. albicans transformations were performed using the standard lithium acetate transformation method (Noble and Johnson, 2005). The single and double homozygous mutant strains of C. albicans were constructed from an SN152 background using the transient CRISPR/Cas9 method (Min et al., 2016). Oligonucleotides and plasmids used to generate the mutant strains in this study are listed in Supplementary file 9. Briefly, the ume6∆∆ mutant strain was generated by deleting one copy of UME6 with HIS1 cassette which was amplified from pFA-LHL plasmid (Dueñas-Santero et al., 2019) with primer pairs UME6.P1 and UME6.2. The second allele of UME6 was replaced with the ARG4 marker amplified from pFA-LAL (Min et al., 2016) plasmid with primer pairs UME6.P1 and UME6.P2 and by using sgRNA targeting individual alleles of UME6 gene.
 
@@ -173,22 +298,22 @@ The brg1∆∆ mutant strain was generated by amplifying ARG4 cassette from pSN6
 
 Fluorescently labeled strains were generated by using pENO1-NEON-NAT1 and pENO1-iRFP-NAT1 plasmids as previously described (Bergeron et al., 2017; Seman et al., 2018) and the resultant transformants were selected on YPD containing 200 µg/ml nourseothricin (Werner Bioagents, Jena, Germany). The reference strain was tagged with green fluorescent protein (NEON) whereas all the TF mutants were tagged with iRFP.
 
-## Inoculation, imaging, and scoring
+### Inoculation, imaging, and scoring
 
 The inoculation and imaging of mice ear (female DBA/2 mice; 6–12 weeks) were carried out as described previously (Wakade et al., 2021; Wakade et al., 2022b). Acquired multiple Z stacks (minimum 15) were used to score the yeast vs. filamentous ratio. The cells were considered as a ‘yeast’ if the cells were round and/or budded cells. Furthermore, yeast cells were required not to project through multiple Z stacks. The cells were considered as a ‘filamentous’ if the cells contain intact mother and filamentous which was at least twice the length of the mother body. A minimum of 100 cells from multiple fields were scored. Paired Student’s t test with Welch’s correction (p>0.05) was used to define the statistical significance which was carried out using GraphPad prism software.
 
-## Filament length measurement
+### Filament length measurement
 
 Filament length of the in vivo samples were measured as described previously (Cao et al., 2017). Briefly, a Z stacks image of the reference or mutant strain were opened in an ImageJ software and the distance between mother neck to the tip of the filament was measured. At least 50 cells per each strain from multiple fields were measured. A statistical significance was determined by Mann-Whitney U test (p>0.05).
 
-## In vitro and in vivo RNA extraction
+### In vitro and in vivo RNA extraction
 
 In vitro and in vivo RNA extraction was carried out as previously described (Wakade et al., 2022a; Xu et al., 2015). Briefly, for in vitro RNA extraction three independent samples were grown overnight in YPD at 30°C, harvested, and diluted at 1: 50 ratios into the RPMI+10% serum and incubated for 4 hr at 37°C. Cells were collected, centrifuged for 2 min at 11 K rpm at room temperature (RT), and RNA was extracted according to the manufacturer’s protocol (MasterPure Yeast RNA Purification Kit, Cat. No. MPY03199). Extraction of RNA from mouse ear was carried out exactly as described previously (Wakade et al., 2022a). Briefly, after 24 hr post injection, mouse was euthanized following the protocol approved by the University of Iowa IACUC. The C. albicans injected mouse ear was removed and placed into the ice-cold RNA later solution. The ear was then transferred to the mortar and flash-frozen with liquid nitrogen and ground to the fine powder. The resulting powder was collected into 5 ml centrifuge tube and 1 ml of ice-cold Trizol was added. The samples were placed on a rocker at RT for 15 min and then centrifuged at 10 K rpm at 4°C for 10 min. The cleared Trizol was collected without dislodging the pellet into 1.5 ml Eppendorf tube and 200 µl of RNase-free chloroform was added to each sample. The tubes were shaken vigorously for 15 s and kept at RT for 5 min followed by centrifuge at 12 K rpm at 4°C for 15 min. The cleared aqueous layer was then collected to a new 1.5 ml Eppendorf tube and RNA was further extracted following the Qiagen RNeasy kit protocol.
 
-## NanoString analysis
+### NanoString analysis
 
 NanoString analysis was carried out as described previously (Wakade et al., 2022a). Briefly, in total, 40 ng of in vitro or 1.4 µg of in vivo RNA was added to a NanoString codeset mix and incubated at 65°C for 18 hr. After hybridization reaction, samples were proceeded to nCounter prep station and samples were scanned on an nCounter digital analyzer. nCounter.RCC files for each sample were imported into nSolver software to evaluate the quality control metrics. Using the negative control probes the background values was defined and used as a background threshold and this value is subtracted from the raw counts. The resulting background subtracted total raw RNA counts were first normalized against the highest total counts from the biological triplicates and then to the WT samples. The statistical significance of changes in gene expression was determined using the Benjmini-Yekutieli procedure with false discovery rate (FDR) <0.1 used as limit of statistical significance. The expression data are summarized in Supplementary files 3-7.
 
-## Quantitative reverse transcription-PCR
+### Quantitative reverse transcription-PCR
 
 Precultured ON strains in YPD at 30°C were back-diluted into fresh YPD and collected at the mid-log phase. RNA was isolated using a MasterPure Yeast RNA Purification Kit (Cat. No. MPY03199) and reverse-transcribed using an iScript cDNA synthesis kit (170-8891; Bio-Rad). The qPCR was performed using IQ SyberGreen supermix (170-8892; Bio-Rad) and primers used in this study are listed in Supplementary file 9. Briefly, each reaction contained 10 µl of the SYBER Green PCR master mix, 0.10 µM of forward and reverse primer, and 150 ng of cDNA. Data analysis was performed using 2-ΔΔCT method and ACT1 was used as an internal control.

@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/036trcv74 Jiangsu Key Laboratory for Molecular and Medical Biotechnology, College of Life Sciences, Nanjing Normal University Nanjing China
+1. Jiangsu Key Laboratory for Molecular and Medical Biotechnology, College of Life Sciences, Nanjing Normal University Nanjing China ([ROR:036trcv74](https://ror.org/036trcv74))
 
 † Corresponding author
 
 ## Abstract
 
-Methyltransferase-like 3 (METTL3) and N 6 -methyladenosine (m 6 A) are involved in many types of biological and pathological processes, including DNA repair. However, the function and mechanism of METTL3 in DNA repair and chemotherapeutic response remain largely unknown. In present study, we identified that METTL3 participates in the regulation of homologous recombination repair (HR), which further influences chemotherapeutic response in both MCF-7 and MDA-MB-231 breast cancer (BC) cells. Knockdown of METTL3 sensitized these BC cells to Adriamycin (ADR; also named as doxorubicin) treatment and increased accumulation of DNA damage. Mechanically, we demonstrated that inhibition of METTL3 impaired HR efficiency and increased ADR-induced DNA damage by regulating m6A modification of EGF/RAD51 axis. METTL3 promoted EGF expression through m6A modification, which further upregulated RAD51 expression, resulting in enhanced HR activity. We further demonstrated that the m6A ‘reader,’ YTHDC1, bound to the m6A modified EGF transcript and promoted EGF synthesis, which enhanced HR and cell survival during ADR treatment in BC. Our findings reveal a pivotal mechanism of METTL3-mediated HR and chemotherapeutic drug response, which may contribute to cancer therapy.
+Methyltransferase-like 3 (METTL3) and N6-methyladenosine (m6A) are involved in many types of biological and pathological processes, including DNA repair. However, the function and mechanism of METTL3 in DNA repair and chemotherapeutic response remain largely unknown. In present study, we identified that METTL3 participates in the regulation of homologous recombination repair (HR), which further influences chemotherapeutic response in both MCF-7 and MDA-MB-231 breast cancer (BC) cells. Knockdown of METTL3 sensitized these BC cells to Adriamycin (ADR; also named as doxorubicin) treatment and increased accumulation of DNA damage. Mechanically, we demonstrated that inhibition of METTL3 impaired HR efficiency and increased ADR-induced DNA damage by regulating m6A modification of EGF/RAD51 axis. METTL3 promoted EGF expression through m6A modification, which further upregulated RAD51 expression, resulting in enhanced HR activity. We further demonstrated that the m6A ‘reader,’ YTHDC1, bound to the m6A modified EGF transcript and promoted EGF synthesis, which enhanced HR and cell survival during ADR treatment in BC. Our findings reveal a pivotal mechanism of METTL3-mediated HR and chemotherapeutic drug response, which may contribute to cancer therapy.
 
 ## Introduction
 
@@ -34,31 +34,193 @@ Currently, METTL3 and m6A modification have been implicated in DDR (Xiang et al.
 
 ## Results
 
-## METTL3 regulates chemotherapeutic response of BC cells
+### METTL3 regulates chemotherapeutic response of BC cells
 
 METTL3 has been reported to be involved in the progression of several types of cancers, including BC (Deng et al., 2018; Wang et al., 2020a). We wonder whether METTL3 regulates chemotherapeutic response of BC cells. First, we identified the elevated METTL3 and m6A levels in five types of BC cells, including MCF-7, MB-231, T47D, SKBR3, and BT474 cells (Figure 1—figure supplement 1A, B). Then, we investigated the role of METTL3 in regulating the sensitivity of both MCF-7 and MB-231 cells (ER-positive and triple-negative cells, respectively) to chemotherapeutic drugs with stable METTL3-OV or -KD cell lines (Figure 1—figure supplement 1C, D). Cell viability assays were performed using METTL3-KD and METTL3-OV MCF-7 stable cell lines treated with five first-line chemotherapeutic drugs including 5-FU, cisplatin (DDP), ADR, paclitaxel, and carboplatin. The results indicated that modification of METTL3 expression markedly attenuated the sensitivity of MCF-7 cells to ADR compared with the other drugs (Figure 1A and Figure 1—figure supplement 1E-I; Andreetta et al., 2010). Cell viability assays using METTL3-OV and -KD MB-231 stable cells verified the effect of METTL3 on ADR sensitivity (Figure 1B and Figure 1—figure supplement 1E). These results were further verified in a morphological analysis, which showed that silencing METTL3 enhanced chemotherapeutic drug sensitivity (Figure 1C), whereas overexpression of METTL3 decreased sensitivity in MCF-7 cells (Figure 1—figure supplement 1J). Furthermore, flow cytometry analysis demonstrated that treatment with ADR induced higher apoptosis rates in both METTL3-KD MCF-7 and MB231 cells compared with control cells (Figure 1D and Figure 1—figure supplement 1K). Accordingly, elevated pro-apoptotic Bax and caspase 3 were detected in METTL3-KD BC cells treated with ADR (Figure 1E). We then detected the effect of METTL3 on ADR-sensitivity using a human non-tumorigenic breast epithelial cell line MCF-10A. Our data showed that overexpression of METTL3 attenuated the sensitivity of MCF-10A cells to ADR (Figure 1—figure supplement 1L-N). As expected, silence of METTL3 reduced global m6A levels in MCF-7 and MB-231 BC cells, whereas overexpression of METTL3 increased m6A levels in these cells compared with control cells (Figure 1—figure supplement 1O, P).
 
-## METTL3 promotes HR
+![Figure 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) MTT assays were performed to determine the effect of METTL3 on ADR cytotoxicity in MCF-7 or MDA-MB231 cells. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (C) Morphological analysis of MCF-7 with different drug treatments. (D) Annexin V/PI staining and flow cytometry assay of control or METTL3-KD MCF-7 cells with different drug treatments. (E) Western blot (WB) analysis of METTL3, BAX, and Caspase 3 in control or METTL3-KD MCF-7 cells treated with various concentrations of ADR. All statistical data are presented as the mean ± SD. * p<0.05; ** p<0.01; *** p<0.001 (Student’s t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Protein levels of METTL3 in breast cancer (BC) cells and normal breast cell (MCF-10A). (B) m6A modification in BC cells and normal breast cell. (C, D) Western blotting (WB) assay of METTL3 in the METTL3-OV stable cell lines (C) or METTL3-KD stable cell lines (D) in MCF-7 and MB231. (E) MTT assays using METTL3-KD and METTL3-OV MB-231 stable cell lines treated with ADR. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (F–I) MTT assays using METTL3-KD and METTL3-OV MCF-7 stable cell lines treated with other four first-line chemotherapeutic drugs for BC treatment, including 5-FU (F), cisplatin (DDP) (G), paclitaxel (H), and carboplatin (I). Data are expressed as the mean ± standard deviation (SD), n=3 per group. (J) Morphological analysis of different treated MCF-7. (K) Flow cytometry analysis showed METTL3 deficiency increases ADR-induced cell apoptosis in MB231. (L) WB to detected METTL3 in METTL3-OV MCF-10A cells. (M) MTT assays in wildtype and METTL3-OV MCF-10A cells treated with ADR. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (N) Morphological analysis of control and METTL3-OV MCF-10A cells treated with different dose of ADR. (O, P) Dot blot to detected the m6A level of poly(A)+ RNAs isolated from total RNA of METTL3-KD or METTL3-OV MCF-7, and MDA-MB231 cells with or without ADR treatment and recovery (0.5 μM ADR treatment for 1 hr and recovery for different time). Methylene blue staining served as a loading control. * p<0.05, ** p<0.01, *** p<0.001.
+
+### METTL3 promotes HR
 
 ADR is normally described as a classic topoisomerase II poison that intercalates into DNA and forms DNA adducts, and subsequently induces DNA double strand breaks (DSBs) (Swift et al., 2006; Yang et al., 2014). We further addressed whether METTL3 was involved in DSB repair and affected ADR-induced DNA damage. To explore the role of METTL3 in the regulation of DNA repair, we treated METTL3-KD or –OV BC cells with ADR and subsequently released the cells into fresh medium lacking ADR and monitored the levels of γ-H2AX (an established marker of DNA damage) over time. Our data showed that knockdown of METTL3 maintained higher γ-H2AX levels in both MCF-7 and MB-231 cells compared with control cells (Figure 2A and B), whereas overexpression of METTL3 resulted in an earlier decline of γ-H2AX compared with control cells (Figure 2—figure supplement 1A, B). We further detected the effect of METTL3 on the regulation of DSB repair that was induced by etoposide (ETO; another inhibitor of topoisomerase II). Accordingly, our data showed that METTL3 promoted the repair of DSB induced by ETO in both MCF-7 and MB-231 cells (Figure 2C and D, Figure 2—figure supplement 1C, D). As showed in our data, the DNA damage was more rapid induced by etoposide than doxorubicin (Figure 2A–D), which was consistent with previous study in lung cancer cell lines (Binaschi et al., 1990). These results may due to a few differences among mechanisms of these two compounds poisoned DNA strands and cells, by which ADR induced cell death by trapping topoisomerase II, formation of ADR-DNA adducts, and generation of free radicals or ceramide production, whereas DNA damage secondary to topoisomerase II inhibition appears to be a major mechanism for etoposide-induced apoptosis (Yang et al., 2014; Yang et al., 2001). Consistently, an increased number of positive nuclei foci of γ-H2AX was detected in both METTL3-KD MCF-7 and MB-231 cells after ADR treatment and then released after 4 hr (Figure 2E), whereas experiments using METTL3-OV MCF-7 and MB-231 cells showed the opposite effects (Figure 2—figure supplement 1E). Since the phosphorylation and foci formation of γ-H2AX was the marker of both DNA damage and DNA replication stress, we also detected another DNA damage marker 53BP1 (tumor-suppressor p53-binding protein 1, a key regulator of DSB repair) foci (Gagou et al., 2010; Wang et al., 2002; Ward and Chen, 2001). Similar results were obtained for the foci of 53BP1 in both MCF-7 and MB-231 cells (Figure 2F and Figure 2—figure supplement 1F). DSBs are primarily repaired by either HR or non-homologous end joining (NHEJ) (Sonoda et al., 2006). Using two well-characterized green fluorescent protein (GFP)-based HR and NHEJ reporter systems, we determined the effect of METTL3 on HR and NHEJ efficiency (Mendez-Dorantes et al., 2020; Tsai et al., 2020). The results showed that overexpression of METTL3 significantly enhanced HR-mediated DSB repair, whereas knockdown of METTL3 decreased efficiency of HR (Figure 2G and H; and Figure 2—figure supplement 1G). No effect of METTL3 was observed on NHEJ-mediated DSB repair (Figure 2—figure supplement 1H, I). This is consistent with previous reports using the HR and NHEJ luciferase reporter system based on crisper-cas9-induced DSBs (Zhang et al., 2020).
 
-## EGF is the target of METTL3 and is regulated by m6A modification
+![Figure 2.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Western blot (WB) assay to determine γ-H2AX levels in control and METTL3-KD MCF-7 cells (A) or MB-231 cells (B) with ADR (0.5 μM) treatment for 1 hr following different recovery times. (C, D) WB to determine γ-H2AX levels in control and METTL3-KD MCF-7 cells (C) or MB-231 cells (D) with ETO (10 μM) treatment for 1 hr following different recovery times. The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. n=3 per group. (E) Immunofluorescence staining of γ-H2AX foci in different labeled cells with ADR treatment for 1 hr following 8 hr of recovery. (F) Immunofluorescence staining of 53BP1 foci in different cells treated same in (E). The quantification of average foci numbers per cells were showed in right panel, 50 cells were calculated in each group. (G) Schematic of GFP-based HR reporter system. (H) The GFP+ frequency of HR-mediated DSB repair in control and METTL3-KD U2OS cells (n=3 per group). ** p<0.01; *** p<0.001 (Student’s t-test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Western blotting (WB) assay to determine γ-H2AX levels in control and METTL3-OV MCF-7 cells (A) or MB-231 cells (B) with ADR (0.5 μM) treatment for 1 hr following different time of recovery. (C and D) WB assay to determine γ-H2AX levels in control and METTL3-OV MCF-7 cells (C) or MB-231 cells (D) with ETO (10 μM) treatment for 1 hr following different time of recovery. The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. (E) Immunofluorescence staining of γ-H2AX foci in METTL3-OV MCF-7 and MB-231 cells with ADR treatment for 1 hr following 4 hr recovery. (F) 53BP1 foci in METTL3-OV MCF-7 cells. The quantification of average foci numbers per cells were showed in right panel, 50 cells were calculated in each group. (G) The GFP+ frequency of HR-mediated DSB repair in control and METTL3-OV U2OS cells (n=3 per group). (H) Schematic of GFP-based NHEJ reporter system. (I) Relative quantification of the frequency of NHEJ-mediated DSBR in METTL3-ovexpressing U2OS cells. n=3 per group. ** p<0.01; *** p<0.001 (Student’s t-test).
+
+### EGF is the target of METTL3 and is regulated by m6A modification
 
 A comprehensive assay combined with RNA-seq, MeRIP-qPCR, bioinformatics analysis, and literature retrieval were designed to explore the putative target(s) of METTL3-mediated m6A modification, which is involved in the regulation of both DNA repair and BC sensitivity to ADR (Figure 3A). A total of 98 genes showed significant changes (p<0.05; 42 up-regulated; and 56 down-regulated) in METTL3-ovexpressing MCF-7 cells compared with control MCF-7 cells (Figure 3B). Among these genes, 52 were shown to be modified by m6A in the exonic, 5’UTR, or 3’UTR of mRNA region in the m6A-Atlas, a comprehensive knowledgebase for unraveling the m6A epitranscriptome (Table 1; Tang et al., 2021). Furthermore, literature retrieval identified 8 (Table 2) out of 52 genes that were reported to be involved in the regulation of DNA repair, among which EGF was highlighted because of its role in cancer progression, and DNA repair (Myllynen et al., 2011; Wilson et al., 2009; Yacoub et al., 2003). Next, we verified the expression of EGF regulated by METTL3. The mRNA levels of EGF increased in both METTL3-OV MCF-7 and MDA-MB231 cells compared with control cells (Figure 3C and D), whereas knockdown of METTL3 down-regulated EGF expression (Figure 3—figure supplement 1A, B). WB analysis of whole cell lysates further verified the up-regulation of EGF by METTL3 (Figure 3E and F, and Figure 3—figure supplement 1C, D). Moreover, secreted EGF in the culture supernatants were examined by ELISA. The results indicated increased EGF levels in the medium of METTL3-OV MCF-7 and MB-231 cells (Figure 3G and H), whereas down-regulated EGF was detected in the medium of METTL3-KD cells (Figure 3—figure supplement 1E, F ). Overexpression of METTL3 also enhanced the expression of EGF in MCF-10A cells (Figure 3—figure supplement 1G, H). Furthermore, to validate the m6A modification in EGF mRNA, we performed a methylated RNA immunoprecipitation (meRIP)-qPCR assay using an m6A antibody followed by qPCR for the predicted region of the m6A sites. EGF mRNA exhibited the highest score by the sequence-based RNA adenosine methylation site predictor algorithm (Zhou et al., 2016). Using specific primers designed for the predicted m6A-harboring regions of EGF, the qPCR data showed that overexpression of METTL3 upregulated the m6A modification of EGF mRNA (Figure 3I and Figure 3—figure supplement 1I), whereas knockdown of METTL3 significantly attenuated its m6A levels (Figure 3—figure supplement 1J). Our data indicated that EGF was the target of METTL3 and regulated by METTL3-mediated m6A modification in both BC cell line and non-tumorigenic breast cell line.
 
-## EGF regulates RAD51 expression and enhances HR activity
+![Figure 3.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the screening progress of METTL3 targets in BC. (B) Heat map of RNA-seq to identify the genes regulated by METTL3 overexpression. The value presented Log2 (fold change). (C, D) qRT-PCR was performed in METTL3-overexpressing MCF-7 (C) and MB-231 cells (D) to detect EGF expression. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (E, F) Western blot (WB) analysis of EGF expression in METTL3-overexpressing MCF-7 (E) and MB-231 cells (F). (G, H) ELISA assay measuring secreted EGF in the medium of METTL3-overexpressing MCF-7 (G) and MB-231 cells. (H) Data are expressed as the mean ± standard deviation (SD), n=3 per group. (I) MeRIP-qPCR analysis was used to assess the m6A levels of EGF mRNA in METTL3-overexpressing MCF-7 cells. The enrichment of m6A in each group was calculated by m6A-IP/input and IgG-IP/input. Data are expressed as the mean ± standard deviation (SD), n=3 per group. * p<0.05; *** p<0.001 (Student’s t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) RT-qPCR was performed in METTL3-KD MCF-7 (A) and MB-231 cells (B) to detect the EGF mRNA expression. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (C, D) Western blotting (WB) analysis of the EGF expression in METTL3-KD MCF-7 (C) and MB-231 cells (D). (E, F) ELISA assay to test the secreted EGF in the medium of METTL3-KD MCF-7 (E) and MB-231 cells (F). Data are expressed as the mean ± standard deviation (SD), n=3 per group. (G) WB showed that EGF was upregulated in METTL3-OV MCF-10A cells. (H) Secreted EGF increased in METTL3-OV MCF-10A cells. Data are expressed as the mean ± SD, n=3 per group. (I) MeRIP-qPCR analysis showed the upregulation of m6A levels of EGF mRNA in METTL3-OV MCF-10A cells. (J) Decreased m6A levels of EGF mRNA in METTL3-KD MCF-7 cells. Data are expressed as the mean ± standard deviation (SD), n=3 per group. * p<0.05; ** p<0.01; *** p<0.001 (Student’s t-test).
+
+**Table 1.**
+ 52 genes were showed to be modified by m6A in the exonic in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>KCNG3</th>
+      <th>DLG2</th>
+      <th>SLC12A8</th>
+      <th>PHOSPHO2</th>
+      <th>AQP1</th>
+      <th>ABCC6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RGS4</td>
+      <td>C11orf91</td>
+      <td>GATA3</td>
+      <td>RORC</td>
+      <td>SIRPA</td>
+      <td>COL3A1</td>
+    </tr>
+    <tr>
+      <td>ASB9</td>
+      <td>HIST1H3H</td>
+      <td>IFI16</td>
+      <td>KRT17</td>
+      <td>BMF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST8SIA5</td>
+      <td>FBXO27</td>
+      <td>RASL11A</td>
+      <td>LAMC2</td>
+      <td>BIK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>METTL3</td>
+      <td>SLIT2</td>
+      <td>DTX4</td>
+      <td>TMPRSS9</td>
+      <td>SHH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ABCC9</td>
+      <td>AOC3</td>
+      <td>ANK3</td>
+      <td>PLCH2</td>
+      <td>NOMO3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APOE</td>
+      <td>COL27A1</td>
+      <td>KIF27</td>
+      <td>BAIAP3</td>
+      <td>NPIPA5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EGF</td>
+      <td>OCLN</td>
+      <td>ENO2</td>
+      <td>FMNL3</td>
+      <td>MST1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IKZF2</td>
+      <td>PI3</td>
+      <td>PCSK1</td>
+      <td>LRP4</td>
+      <td>PMCH</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DHRSX</td>
+      <td>VEGFC</td>
+      <td>TNS4</td>
+      <td>PDK4</td>
+      <td>CSF1R</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Eight genes were showed to be modified by m6A and be involved in DNA repair in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>EGF</th>
+      <th>METTL3</th>
+      <th>DLG2</th>
+      <th>VEGFC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GATA3</td>
+      <td>KRT17</td>
+      <td>IFI16</td>
+      <td>MST1</td>
+    </tr>
+  </tbody>
+</table>
+
+### EGF regulates RAD51 expression and enhances HR activity
 
 The EGF/EGFR signaling pathway has been reported to regulate DSB repair in lung cancer cells following X-irradiation by promoting both the NHEJ and HR pathways (Kriegs et al., 2010; Myllynen et al., 2011). Thus, we wondered whether EGF/EGFR is involved in METTL3-mediated DSB repair in both MCF-7 and MB-231 cells treated with chemotherapeutic agents, such as ADR. First, we evaluated the effect of the EGF/EGFR signaling pathway on DSB repair in these BC cells. MCF-7 and MB-231 cells were treated with ADR or ETO, respectively, and then released for different times with EGF treatment. WB analysis showed that the γ-H2AX levels markedly decreased in both ADR- and ETO-treated cells following EGF treatment, indicating that EGF enhanced DSB repair (Figure 4A–D). Using a GFP-based HR reporter system, we detected the effect of the EGF/EGFR pathway on regulating HR activity. Our data showed that additional EGF enhanced HR activity in the reporter system (Figure 4E), whereas the EGFR inhibitors erlotinib and gefitinib could inhibited the HR activity with lower GFP-positive cells compared to vehicle treatment (Figure 4—figure supplement 1A, B). To explore the molecular mechanism of EGF-mediated HR, we determined whether EGF/EGFR regulated the expression of core genes involved in HR, including BRCA1, BRCA2, CtIP, and RAD51. Our data showed that both EGF and METTL3 exhibited a slight effect on the regulation of BRCA1, BRCA2, and CtIP expression (Figure 4—figure supplement 1C, D). In contrast, the expression of RAD51 was markedly regulated by the EGF/EGFR signaling pathway (Figure 4F and G, and Figure 4—figure supplement 1).
 
-## METTL3-modification of DNA repair is EGF/ RAD51 dependent
+![Figure 4.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Western blot (WB) assay identified that EGF (10 ng/ml) enhanced DNA repair in MCF-7 (A) and MB-231 cells (B) treated with ADR (0.5 μM) (shown by lower γ-H2AX in EGF treated samples compare to PBS treated samples). (C, D) EGF (10 ng/ml) enhanced DNA repair in MCF-7 (C) and MB-231 cells (D) treated with ETO (10 μM). The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. (E) The GFP+ frequency of HR reporter assay in the treatment with EGF (10 ng/ml for 4 hr) or vehicle. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (F, G) EGF augmented RAD51 mRNA (F) and protein (G) expression in MCF-7 cells. Data are expressed as the mean ± standard deviation (SD), n=2 per group. ** p<0.01 (Student’s t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) EGFR inhibitor (Erlotinib and Gefitinib) reduced HR efficacy in GFP-based HR reporter system. n=3 per group. EGF (C) or METTL3 (D) regulated the mRNA levels of BRCA1, BRCA2, and CtIP. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (E) Erlotinib and Gefitinib reduced the mRNA levels of RAD51. Data are expressed as the mean ± SD, n=3 per group. (F–G) Erlotinib (F) and Gefitinib (G) reduced the protein levels of RAD51 in MCF-7 cells. * p<0.05 (Student’s t-test).
+
+### METTL3-modification of DNA repair is EGF/ RAD51 dependent
 
 We next explored the effect of EGF/EGFR signaling on METTL3-mediated HR in MCF-7 and MB-231 cells. WB analysis showed that knockdown of METTL3 down-regulated RAD51 expression, which was recovered by EGF treatment in both MCF-7 and MB-231 cells (Figure 5A and B). In contrast, overexpression of METTL3 up-regulated RAD51 expression, which was repressed by the EGFR inhibitors, erlotinib and gefitinib (Figure 5—figure supplement 1A, B ). Both EGF and RAD51 levels were down-regulated in xenograft tissues derived from METTL3-KD MCF-7 cells (Figure 5C). Accordingly, EGF treatment impeded METTL3-KD-mediated repression of DNA repair in both MCF-7 and MB-231 cells (Figure 5D and E). The EGFR inhibitor, erlotinib, repressed DNA repair activities that were up-regulated by overexpression of METTL3 in both BC cells (Figure 5—figure supplement 1C, D). These data indicate that the EGF/EGFR signaling pathway regulates RAD51 expression and participates in METTL3-mediated HR.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) RAD51 protein levels in METTL3-KD MCF-7 (A) and MB-231 (B) cells treated with or without EGF. (C) Immunohistochemistry analysis of the expression of EGF and RAD51 in control and METTL3-KD tumor tissues. (D, E) WB analysis showing that treatment with 10 ng/ml EGF for 8 hr restores DNA repair activity in METTL3-KD MCF-7 (D) and MB-231 (E) cells. (F) WB analysis showing that knocking down RAD51 or EGFR inhibitor Gefitinib (10 nM for 8 hr) treatment in METTL3-OV cells decreases METTL3-enhanced DNA repair activity. The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. (G) Immunofluorescence analysis of co-staining of γ-H2AX and cyclin A in METTL3-OV cells ±RAD51 shRNA or gefitinib (10 nM) during ADR treatment (0.5 μM for 1 hr and recovery for 8 hr without ADR). The quantitative assay is on the right. n=3 per group. (H) Immunofluorescence analysis of cyclin A and RAD51 foci in cells treated the same as in (G). The quantification of average foci numbers per cells were showed in right panel, 50 cells were calculated in each group. ** p<0.01; *** p<0.001 (Student’s t-test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Western blotting (WB) showed that overexpression of METTL3 upregulated RAD51 expression, which were abolished by EGFR inhibitors erlotinib (A) and gefitinib (B). (C–D) Erlotinib repressed DNA repair activities that were upregulated by overexpression of METTL3 in MCF-7 (C) and MB231 (D) cells. (E, F) Overexpression of RAD51 (E) or knockdown of RAD51 (F) enhanced or impaired GFP+ frequencies in GFP-base HR reporter system, respectively. (G) Overexpression of METTL3 promoted DNA repair efficacy (shown by γ-H2AX down-regulation) that were reversed by treatment with shRAD51 or Erlotinib. (H) Immunofluorescence analysis of 53BP1 foci was performed in detecting MCF-7 cells, which were treated as showed in the figures. Cells were stained with an anti-RAD51 and anti-53BP1 antibody, and nucleus was stained using DAPI and then visualized by a fluorescence microscope. (I) Immunofluorescence analysis showed that RAD51 foci decreased to similar levels in cells with single inhibition of METTL3 by shRNA or single inhibition of EGF/EGFR by gefitinib or double treatments with shMETTL3 and gefitinib. The quantification of average foci numbers per cells were showed in right panel, 50 cells were calculated in each group. (J) Cells survival assay in the condition as same as in (I). (K, L) WB showed that overexpression of METTL3/EGF/RAD51 all could alleviate DNA damage (shown by decreased γ-H2AX) in both MCF-7 (K) and MB-231 cells (L) with similar manner. The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. p<0.01; *** p<0.001 (Student’s t-test).
+
 We next investigated whether the effects of METTL3 on DNA repair were EGF/RAD51 dependent. We first confirmed the effect of RAD51 on HR activity in GFP-based HR reporter system as showed in Figure 2G. Our data showed that overexpression of RAD51 promoted HR activity, whereas knockdown of RAD51 repressed HR efficiency in the reporter system (Figure 5—figure supplement 1E, F), which were consistent with other current studies (Asan et al., 2019; Ouyang et al., 2021). Then, we knocked down of RAD51 in METTL3-OV MCF-7 cells. The METTL3-OV MCF-7 cells were transfected with shRAD51 (shRNA of RAD51) for 36 hr, then treated with ADR for 1 hr and released for 8 hr with or without gefitinib/erlotinib treatment. Overexpression of METTL3 resulted in elevated DNA repair activity (shown by γ-H2AX down-regulation) which was reversed by treatment with siRAD51 or gefitinib/erlotinib (Figure 5F, and Figure 5—figure supplement 1G). We further detected the γ-H2AX foci and RAD51 foci in different treated cells by immunofluorescence. We stained Cyclin A to represent S/G2 phase cells. Consistently, immunofluorescence analysis showed that the γ-H2AX foci were down-regulated by overexpression of METTL3, which were reversed by treatment with shRAD51 or gefitinib in both cyclin A positive cells and cyclin A negative cells (Figure 5G). The 53BP1 foci showed similar partners to γ-H2AX foci in these different treated cells (Figure 5—figure supplement 1H). The RAD51 foci were also augmented by overexpression of METTL3 and reversed with gefitinib treatment in both cyclin A positive cells and cyclin A negative cells (Figure 5H). Moreover, we detected RAD51 foci in cells with single inhibition of METTL3 by shRNA or single inhibition of EGF/EGFR by gefitinib or double treatments with shMETTL3 and gefitinib. We found that the RAD51 foci decreased to similar levels in cells in these three conditions compared to those in control cells, which indicated an epistatic effect of shMETTL3 and EGF/EGFR inhibition (Figure 5—figure supplement 1I). This epistatic effect was verified by cells survival assay (Figure 5—figure supplement 1J). Furthermore, we detected γ-H2AX levels in the ADR-treated MCF-7 and MB-231 cells with overexpression of METTL3 or EGF or RAD51. Our data showed that overexpression of METTL3/EGF/RAD51 all could alleviate DNA damage (shown by decreased γ-H2AX) in both MCF-7 and MB-231 cells with similar manner (Figure 5—figure supplement 1K, L). These results suggest that METTL3 augments HR in ADR-treated BC cells via the EGF/ RAD51 axis.
 
-## YTHDC1 enhances the METTL3/m6A-regulated EGF/Rad51 axis
+### YTHDC1 enhances the METTL3/m6A-regulated EGF/Rad51 axis
 
 There are two major families of m6A ‘readers’ that play a specific role in controlling the fate of methylated mRNA including the YTH family and the IGF2BP family (Deng et al., 2018; Wang et al., 2015; Xiao et al., 2016). To elucidate the specific m6A readers of EGF mRNA and to determine the m6A-dependent mechanism of EGF regulation, we performed qPCR assays to screen EGF-related m6A readers. Interestingly, knockdown of YTHDC1, but not other members of the YTH family or the IGF2BP family, down-regulated both EGF and RAD51 in MCF-7 cells (Figure 6A and Figure 6—figure supplement 1A-C). Furthermore, knockdown of YTHDC1 reversed the METTL3-mediated up-regulation of EGF and RAD51 (Figure 6B and C). The potential binding motif of YTHDC1 in EGF mRNA is UGG(m6A)CU, which is the preferentially binding motif of YTHDC1 (Xu et al., 2014). Using RIP-qPCR, we found that the direct interaction between YTHDC1 and EGF transcripts was enhanced in METTL3-OV cells compared with that in control cells (Figure 6D), whereas the interaction between YTHDC1 and EGF transcripts was down-regulated in the condition of shMETTL3 (Figure 6—figure supplement 1D). Furthermore, the YTHDC1 deficiency impaired the outcome of down-regulation of γ-H2AX foci in METTL3-OV MCF-7 cells (Figure 6E). An MTT assay revealed that YTHDC1 depletion rendered MCF-7 cells more sensitive to ADR and reversed METTL3-induced ADR resistance in METTL3-overexpressing cells (Figure 6F). These results were verified by morphological analysis (Figure 6G). Moreover, cell survival assay identified that double knockdown of METTL3 and YTHDC1 enhanced the sensitivity of MCF-7 to ADR, which is similar to those of single knockdown of METTL3 or YTHDC1 (Figure 6—figure supplement 1E). This result indicated an epistatic effect between shMETTL3 and shYTHDC1 on ADR response in MCF-7 cells. Taken together, our results suggest that YTHDC1 functions as an m6A ‘reader’ to enhance EGF mRNA stability and augment HR and cell survival in ADR-treated BC cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig6-v2.jpg)
+
+**Figure 6.:** (A) The expression of EGF in YTHDC1-silenced MCF-7 cells was detected by qRT-PCR. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (B) The mRNA levels of EGF in control or METTL3-OV cells with or without knocking down YTHDC1. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (C) WB assay determining the effect of YTHDC1 knockdown on EGF and RAD51 expression in control and METTL3-OV MCF-7 cells. The Quantification of relative WB band are represented as the mean ± SD of three biological repeats. (D) RIP-qPCR assay showing the enrichment of the EGF transcript in METTL3-OV cells. Data are expressed as the mean ± SD, n=3 per group. (E) Immunofluorescence analysis of γ-H2AX and RAD51 foci in METTL3-OV cells with knocked-down YTHDC1. The quantification of average foci numbers per cell are shown in the right panel, 50 cells were calculated in each group. (F) MTT assays were performed to detect the effect of YTHDC1 knockdown on ADR sensitivity in control and METTL3-OV MCF-7 cells. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (G) Morphological analysis of control or METTL3-OV MCF-7 cells with or without YTHDC1 knockdown. Cells were treated with 0.5 μM ADR for 24 hr. * p<0.05; ** p<0.01; *** p<0.001 (Student’s t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75231/elife-75231-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) mRNA levels of different readers in m6A readers -silencing MCF-7 cells was detected using RT-qPCR. (B, C) EGF and RAD51 mRNA levels in m6A readers -silencing MCF-7 cells using RT-qPCR. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (D) RIP-qPCR assay showing the enrichment of the EGF transcript in METTL3-OV cells. Data are expressed as the mean ± standard deviation (SD), n=3 per group. (E) Cell survival assay in the cells in the condition of shMETTL3, shYTHDC1 or double KD of METTL3, and YTHDC1. (F–H) WB analysis showed that overexpression of METTL3 promoted EGFR expression in MCF-10A, MCF-7, and MB-231 cells. * p<0.05; ** p<0.01; *** p<0.001 (Student’s t-test).
 
 ## Discussion
 
@@ -82,54 +244,322 @@ Collectively, we showed an effect of METTL3 on HR via the m6A-YTHDC1-dependent r
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>BALB/c-Nude (BALB/cNj-Foxn1nu/Gpt)</td>
+      <td>GemPharmatech Co., Ltd., Nanjing, China</td>
+      <td>Strain NO.D000521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF-7</td>
+      <td>National Collection of Authenticated Cell Cultures, Chinese Academy of Science</td>
+      <td>CSTR:19375.09.3101HUMSCSP531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MDA-MB-231</td>
+      <td>National Collection of Authenticated Cell Cultures, Chinese Academy of Science</td>
+      <td>CSTR:19375.09.3101HUMSCSP5043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-METTL3 (Mouse monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A19079RRID: Addgene_101892</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-γ-H2AX (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#80,312 S</td>
+      <td>WB (1:1000)IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-BAX (Rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A11550RRID: AB_516294</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-caspase3 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 19677-I-APRRID: AB_590739</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGF (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 27141–1-APRRID: AB_1066833</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RAD51(Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 14961–1-APRRID: AB_10706869</td>
+      <td>WB (1:1000)IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>bioworld</td>
+      <td>Cat# AP0007MHRRID：AB_1537400</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGFR (Rabbit polyclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A11577RRID: AB_442085</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TBB5 (Mouse monoclonal)</td>
+      <td>Abgent</td>
+      <td>Cat# AM1031ARRID: AB_1554765</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Cyclin A (Mouse monoclonal)</td>
+      <td>proteintech</td>
+      <td>Cat# 66391–1-Ig</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>METTL3_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>AAGCTGCACTTCAGACGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>METTL3_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>GGAATCACCTCCGACACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGF_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TGGATGTGCTTGATAAGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGF_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>ACCATGTCCTTTCCAGTGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RAD51_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>CAACCCATTTCACGGTTAGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RAD51_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>TTCTTTGGCGCATAGGCAACA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human EGF ELISA Kit</td>
+      <td>SenBeiJia Biological Technology Co.</td>
+      <td>Cat# SBJ-H0212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin (Adriamycin) HCl</td>
+      <td>Selleck</td>
+      <td>Cat# S1208CAS No. 25316-40-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel</td>
+      <td>Selleck</td>
+      <td>Cat# S1150CAS No. 33069-62-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cisplatin</td>
+      <td>Selleck</td>
+      <td>Cat# S1166CAS No. 15663-27-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluorouracil, 5-FU</td>
+      <td>Selleck</td>
+      <td>Cat# S1209CAS No. 51-21-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Recombinant Human EGF</td>
+      <td>Beyotime</td>
+      <td>Cat# P5552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Erlotinib</td>
+      <td>Beyotime</td>
+      <td>Cat# SC0168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gefitinib</td>
+      <td>Beyotime</td>
+      <td>Cat# SC0186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID: SCR_015807</td>
+      <td>Version 8.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 The oligonucleotide 5′-CAGGAGATCCTAGAGCTATTA-3′ was used for construction of METTL3-KD lentivirus vectors as previously described (Xiang et al., 2017). The lentivirus vectors were constructed and purified by the Corues Biotechnology Company (Nanjing, China). For knockdown of RAD51, YTHDC1 and other ‘readers,’ and the silencing plasmids containing shRNA sequences were constructed based on psilencer3.0-H1. The shRNA sequences are listed in Table 3. All plasmids were verified by sequencing.
 
-## Cell culture and the development of stable cell lines
+**Table 3.**
+ Sequences of the shRNA used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>shRNA sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sh-METTL3</td>
+      <td>5’-CAGGAGATCCTAGAGCTATTA-3’</td>
+    </tr>
+    <tr>
+      <td>sh-RAD51</td>
+      <td>5’-GACTGCCAGGATAAAGCTT-3’</td>
+    </tr>
+    <tr>
+      <td>sh-YTHDC1</td>
+      <td>5’-CCAGAGAGTGAACAAGATAAA-3’</td>
+    </tr>
+    <tr>
+      <td>sh-YTHDF1</td>
+      <td>5’-GGGGGTTGAGTGTTGCATCTT-3’</td>
+    </tr>
+    <tr>
+      <td>sh-YTHDF2</td>
+      <td>5’-AAGGCTAAGCAGGTGTTGAAA-3’</td>
+    </tr>
+    <tr>
+      <td>sh-YTHDF3</td>
+      <td>5’-TAAGTCAAAGAAGACGTATTACTC-3’</td>
+    </tr>
+    <tr>
+      <td>sh-YTHDC2</td>
+      <td>5’-GCCCACAGATTGGCTTATTTA-3’</td>
+    </tr>
+    <tr>
+      <td>sh-IGF2BP1</td>
+      <td>5’-TGCTATTCTTCCTAATCTATATC-3’</td>
+    </tr>
+    <tr>
+      <td>sh-IGF2BP2</td>
+      <td>5’-GTGAAGCTGGAAGCGCATATCTC-3’</td>
+    </tr>
+    <tr>
+      <td>sh-IGF2BP3</td>
+      <td>5’-CGGTGAATGAACTTCAGAATTCTC-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and the development of stable cell lines
 
 MCF-7 and MB-231 were purchased from the National Collection of Authenticated Cell Cultures, Chinese Academy of Science. All cells were authenticated by STR profiling and tested for mycoplasma contamination. Cells were cultured in the recommended medium supplemented with 10% fetal bovine serum (FBS, Invigentech), 1% penicillin, and 1% streptomycin, and incubated in an incubator with 5% CO2 at 37℃. For METTL3-overexpressing (OV) or –knockdown (KD) MCF-7 and MB-231 stable cells, the cells were infected with specific lentivirus vectors for 48 hr and then selected with puromycin for two weeks. All cell lines were confirmed to be negative for mycoplasma contamination.
 
-## m6A dot blotting
+### m6A dot blotting
 
 Total RNA was isolated using the Trizol method and mRNAs were isolated with the GenElute mRNA Miniprep Kit (Sigma). The concentration and purity of the mRNA were measured using a NanoDrop 2000. The mRNAs were denatured by heating to 95°C for 5 min, followed by chilling on ice. Next, the mRNAs (50∼100 ng) were spotted directly onto a positively-charged nylon membrane (GE Healthcare, USA) and air-dried at room temperature for 5 min. The membrane was then ultraviolet (UV) crosslinked using a Ultraviolet Crosslinker, washed with PBST for 5 min, blocked with 5% nonfat milk in TBST, and then incubated with anti-m6A antibody (A17924, ABclonal) overnight at 4°C. HRP-conjugated anti-rabbit IgG secondary antibody was added to the membrane for 1.5 hr at room temperature with gentle shaking, followed by development with enhanced chemiluminescence. Last, 0.02% methylene blue staining was used to verify that equal amounts of mRNA were spotted onto the membrane.
 
-## Drug sensitivity assay
+### Drug sensitivity assay
 
 Cells were seeded into 96-well plates at 3000 cells per well for at least three parallel experiments. 24 hr later, cells were exposed to ADR at increasing concentrations (0, 0.01, 0.05, 0.1, 0.5, and 1 μΜ) for 48 hr; 5-FU at increasing concentrations (0, 0.1, 0.5, 1, 5 μΜ) for 48 hr; carboplatin at increasing concentrations (0, 10, 50, 100, 500 μΜ) for 48 hr; paclitaxel at increasing concentrations (0, 0.01, 0.1, 1 nΜ) for 48 hr; or DDP at increasing concentrations (0, 2, 4, 6, 8 μΜ) for 48 hr. Chemotherapeutic drug-treated cells were incubated with 10 μL 3-(4,5)-dimethylthiazol (-z-y1)–3,5-diphenyltetrazolium bromide (MTT) solution (5 mg/mL, Sigma-Aldrich, St Louis, MO, USA) for 4 hr. The media was replaced with 100 μL dimethyl sulfoxide (DMSO, Sigma-Aldrich) to dissolve the formazan crystals within 10 min. The absorbance of the formazan was read at 450 nm. The relative values were calculated based on the mean of control cells in the absence of ADR, which was showed as 100%. At least three replicates were performed for each drug treatment.
 
-## RNA-seq and analysis
+### RNA-seq and analysis
 
 RNA-Seq was performed by oeBiotech Inc (Shanghai, China). For RNA sequencing, purified RNA from METTL3 overexpressing or control cells was used for library construction with the Illumina TruSeq RNA Sample Prep Kit (FC-122–1001) and then sequenced with an Illumina HiSeq 2000. Raw reads were aligned to the human genome, GRCh37/hg19, by Bowtie2. Differentially expressed genes (DEGs) between METTL3-OV and the control samples were identified using the limma-voom method. A heatmap clustered by k-means was used to show DEGs or transcripts. The raw sequencing data were deposited in the Gene Expression Omnibus database (accession to cite for these SRA data: PRJNA743152).
 
-## RNA immunoprecipitation (RIP)
+### RNA immunoprecipitation (RIP)
 
 RNA immunoprecipitation (RIP) assays were conducted using the EZ-Magna RIP RNA-Binding Protein Immunoprecipitation Kit Merck Chemicals (Shanghai Co., Ltd). The anti-YTHDC1 antibody for RIP was purchased from Cell Signaling Technology, Inc (# 81,504 S).
 
-## m6A-RNA immunoprecipitation (MeRIP) and MeRIP-qPCR
+### m6A-RNA immunoprecipitation (MeRIP) and MeRIP-qPCR
 
 m6A enrichment followed by qRT-PCR was used to quantify the changes in m6A methylation of the target gene using the Magna MeRIP m6A Kit (Millipore, MA) following the manufacturer’s instructions. Briefly, 5 μg of fragmented mRNA extracted from MCF-7 stable cells was incubated with 5 μg of m6A antibody (A17924, ABclonal). Methylated mRNA was eluted by free m6A from the beads and purified with the GenElute mRNA Miniprep Kit (MRN70, Sigma). One tenth of the fragmented RNA was saved as an input control for standardization. The relevant enrichment of m6A from METTL3 in each sample was analyzed by RT-qPCR.
 
-## Immunofluorescence
+### Immunofluorescence
 
 For immunofluorescence assays, cells were washed with PBS for three times then fixed with 4% formaldehyde for 10 min at room temperature. After permeabilization with 0.1% Triton X-100 for 10 min, cells were blocked with 3% BSA for 1 hr. Then, cells were incubated with indicated primary antibodies overnight at 4 °C. Following washed with PBST for three times, cells were incubated with fluorescent secondary antibodies for 2 hr at room temperature. Subsequently, cells were stained with DAPI and visualized under a fluorescence microscope (Nikon 80I 10–1500×).
 
-## Tumor analysis
+### Tumor analysis
 
 All animal experiments were performed according to the procedures approved by the Laboratory Animal Care Committee at Nanjing Normal University (Permit number IACUC—20210251) and followed National Institutes of Health guide for the care and use of Laboratory animals. Six-to-seven weeks old female nude mice were purchased from GemPharmatech Co., Ltd. (Nanjing, China), and were maintained under specific pathogen-free conditions for subcutaneous inoculation. Cells were trypsinized and resuspended in DMEM at a consistence of 1 × 107 cells/ml. A total of 1 × 106 cells were injected into flank of mice. 27 days after injection, tumors were removed for paraffin-embedded sections.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemical staining was performed as previously described (Lu et al., 2020). Briefly, tumor tissues were fixed in 4% polysorbate. Paraffin-embedded sections from tissue specimens were deparaffinized and heated at 100 °C in 10 mM citrate buffer (pH 6.0) for 15 min for antigen retrieval. Slides were incubated with primary antibody at 4 °C overnight, followed by incubation with secondary antibody at room temperature and visualized using a DAB Kit (Bioworld). Then, it was redacted with hematoxylin. The expression levels of target proteins in tissue were examed according to the semiquantitative immunoreactivity score (IRS).
 
-## Apoptosis assay
+### Apoptosis assay
 
 METTL3-KD or control MCF-7 or MB-231 cells were treated with doxorubicin for 24 hr and replaced with fresh media. After other 24 hr recovery, about 1 × 105 cells per well were collected and stained with both Annexin V and propidium iodide (PI). Apoptosis was analyzed by flow cytometry using the BD FACSverse.
 
-## ELISA
+### ELISA
 
 The cell culture media were centrifuged at the speed of 5000 r.p.m for 5 min and supernatant were collected for EGF measurement using commercial kits (SenBeiJia Biological Technology Co., Nanjing, China) according to manufacturer’s instructions.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with GraphPad Prism 8.0. Statistical significance was determined using a two-tailed Student’s t-test or analysis of variance in the case of comparisons among multiple groups. p<0.05 was considered statistically significant.

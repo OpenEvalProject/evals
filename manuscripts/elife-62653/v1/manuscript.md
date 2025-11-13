@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Somatic cells age and die, but the germ-cell lineage is immortal. In Caenorhabditis elegans , germline immortality involves proteostasis renewal at the beginning of each new generation, when oocyte maturation signals from sperm trigger the clearance of carbonylated proteins and protein aggregates. Here, we explore the cell biology of this proteostasis renewal in the context of a whole-genome RNAi screen. Oocyte maturation signals are known to trigger protein-aggregate removal via lysosome acidification. Our findings suggest that lysosomes are acidified as a consequence of changes in endoplasmic reticulum activity that permit assembly of the lysosomal V-ATPase, which in turn allows lysosomes to clear the aggregates via microautophagy. We define two functions for mitochondria, both of which appear to be independent of ATP generation. Many genes from the screen also regulate lysosome acidification and age-dependent protein aggregation in the soma, suggesting a fundamental mechanistic link between proteostasis renewal in the germline and somatic longevity.
+Somatic cells age and die, but the germ-cell lineage is immortal. In Caenorhabditis elegans, germline immortality involves proteostasis renewal at the beginning of each new generation, when oocyte maturation signals from sperm trigger the clearance of carbonylated proteins and protein aggregates. Here, we explore the cell biology of this proteostasis renewal in the context of a whole-genome RNAi screen. Oocyte maturation signals are known to trigger protein-aggregate removal via lysosome acidification. Our findings suggest that lysosomes are acidified as a consequence of changes in endoplasmic reticulum activity that permit assembly of the lysosomal V-ATPase, which in turn allows lysosomes to clear the aggregates via microautophagy. We define two functions for mitochondria, both of which appear to be independent of ATP generation. Many genes from the screen also regulate lysosome acidification and age-dependent protein aggregation in the soma, suggesting a fundamental mechanistic link between proteostasis renewal in the germline and somatic longevity.
 
 ## Introduction
 
@@ -28,11 +28,23 @@ The germ cells of an organism not only give rise to the rich diversity of somati
 
 The nematode C. elegans is a valuable organism for studies of germline quality control. The animal is transparent and genetically accessible, allowing one to analyze the effects of perturbations over time in living animals using fluorescent reporters. C. elegans is hermaphroditic, producing both sperm and oocytes in each of two symmetrical gonadal arms. Germ cells originate in stem-cell niches located at the distal ends of each arm and pass through successive stages of meiosis as they move proximally towards the spermatheca, where fertilization occurs (Crittenden et al., 1994; Hubbard and Greenstein, 2005; McCarter et al., 1999; Figure 1A). In 2010, Goudeau and Aguilaniu discovered that carbonylated proteins, known to accumulate during aging, are present throughout the distal germline, but are eliminated in proximal oocytes (Goudeau and Aguilaniu, 2010). Mutant worms that lack sperm and develop as females retain carbonylated proteins throughout the entire germline, indicating that sperm play a role in their elimination. In addition to carbonylated proteins, protein aggregates also accumulate in the proximal oocytes of females but not in those of hermaphrodites (Bohnert and Kenyon, 2017). Signals from sperm trigger the elimination of protein aggregates in a process that is coupled to the broader choreography of oocyte maturation, which involves dramatic changes in organelle morphology and function (Bluemink et al., 1983; Carroll, 1996; Charbonneau and Grey, 1984; FitzHarris et al., 2007; Kobayashi et al., 1991; Maller et al., 1977; Mehlmann et al., 1995; Wasserman et al., 1982; Yamashita, 2018). In C. elegans, oocyte maturation is triggered by actin-like major sperm proteins (MSPs) released from sperm (Kosinski et al., 2005; Miller et al., 2003; Miller et al., 2001) and involves changes in chromosome and nuclear dynamics linked to progression through meiosis, upregulation of translation, and changes in endoplasmic reticulum (ER), lysosomal and mitochondrial function (Bohnert and Kenyon, 2017; Huelgas-Morales and Greenstein, 2018; Langerak et al., 2019). The shift in lysosomal physiology that occurs during oocyte maturation is crucial for aggregate removal: the sperm-derived signals trigger the acidification of lysosomes, which in turn engulf the aggregates by a process that resembles microautophagy morphologically (Bohnert and Kenyon, 2017). Lysosomal acidification also triggers a conversion in mitochondrial dynamics from what appears to be a poised state, characterized by a high membrane potential, to an active state, in which the membrane potential is reduced. Conditions that prevent this mitochondrial membrane potential shift, such as inactivation of mitochondrial ATP synthase, prevent aggregate removal. However, how lysosomes become acidified in response to sperm signals, how mitochondria contribute to aggregate removal, and whether other organelles also play a role in aggregate clearance are important outstanding questions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig1-v1.jpg)
+
+**Figure 1.:** (A) Diagram of the C. elegans germline. (B) Genome-wide RNAi-screen workflow. High-resolution images from the validation rounds are represented here. Scale bars, 10 µm; white arrows, GFP::RHO-1 aggregates in subtle hits. (C) Schematic representation of the procedure used for candidate validation and orthogonal verification using two independent germline-specific reporters. 45 candidates representing the major gene ontology (GO) categories, and all 10 orphans were subjected to orthogonal verification. (D) Common biological process GO categories enriched in the screen hits. Genes that were not members of these enriched categories were classified as orphans. (E) Very early oocytes of females and hermaphrodites (CF4557 and CF4552 strains, respectively). GFP::RHO-1 aggregates often appear in newly formed female oocytes. Scale bars, 10 µm; white arrows, GFP::RHO-1 aggregates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RNAi clones causing GFP::RHO-1 aggregates in hermaphrodite oocytes (SA115), visualized at low magnification (×20 objective) during the primary screening. Scale bars, 20 µm; white arrows, GFP::RHO-1 aggregates in subtle hits. (B) Examples of NMY-2::GFP aggregates in oocytes of hermaphrodites (JJ1473) undergoing orthogonal verification with a different aggregation-prone protein. Scale bars,10 µm. (C) The highest enriched gene ontology process categories represented by the validated genes identified in the screen.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** ER morphology and GFP::RHO-1 localization in the first, newly formed oocytes from mCherry::SP12 expressing females (CF4557). Orange arrows, ER patches; white arrows, GFP::RHO-1 aggregates. Scale bars, 10 µm. Note that the GFP::RHO-1 image from the sixth row is also displayed in Figure 1E.
+
 To better understand mechanisms of proteostasis enhancement in the C. elegans germ lineage, we combined cell biological approaches with a confocal microscopy-based genome-wide RNAi screen for gene knockdowns that cause protein aggregates to accumulate even in the presence of sperm. Our findings deepen our understanding of many aspects of protein aggregation and clearance within the germline. Specifically, we find that (i) protein aggregates accumulate in young, newly formed oocytes in the absence of sperm—their formation is an integral part of oocyte development rather than a consequence of prolonged oocyte quiescence; (ii) inhibiting processes required for changes in ER morphogenesis and function during oocyte maturation, including protein synthesis and actin dynamics, prevents lysosome acidification by preventing the assembly of the V-ATPase lysosomal proton pump; (iii) mitochondria elaborate an energy-independent checkpoint that gates protein-aggregate removal; (iv) endosomal sorting complex required for transport (ESCRT) proteins are required for aggregate removal, consistent with protein aggregates being removed via microautophagy; and, unexpectedly (v) as with proteasome inhibition, inhibiting TRiC-complex chaperonins or HSP70 chaperones promotes protein aggregation indirectly by acting upstream in the pathway to block lysosome acidification. Finally, we show that inhibiting lysosomal V-ATPase, vesicle-transport or proteasome function also accelerates age-dependent protein aggregation in the soma, thus bridging mechanisms that enhance proteostasis in the immortal germ lineage to those that maintain proteostasis in the aging soma.
 
 ## Results
 
-## A genome-wide RNAi screen identifies 81 genes that influence oocyte protein aggregation
+### A genome-wide RNAi screen identifies 81 genes that influence oocyte protein aggregation
 
 To undertake an unbiased genome-wide RNAi screen for components of the germline proteostasis network, we utilized the Ahringer RNAi feeding library (Kamath et al., 2003), which targets ~87% of annotated C. elegans genes, to identify gene inhibitions that cause proteins to aggregate even in the presence of sperm; that is, in hermaphrodites. A germline-specific GFP::RHO-1 translational fusion was selected as the reporter for the screen as it forms dense patchy aggregates in female oocytes (Bohnert and Kenyon, 2017) and in unfertilized oocytes of aging hermaphrodites, which deplete their stores of sperm (David et al., 2010). Oocytes are formed in young adults, so RNAi was initiated at the beginning of the last larval stage (L4) to reduce the chance of missing genes with essential roles during development (Figure 1B). The animals were examined manually by confocal microscopy on day 2 of adulthood for the presence of GFP::RHO-1 aggregates in proximal oocytes (Figure 1A, B, Figure 1—figure supplement 1A). The primary screen identified 367 genes whose knockdown led to GFP::RHO-1 aggregation in at least 50% of the animals. To eliminate false positives, the candidates were subjected to three independent rounds of validation using a similar workflow, with at least two independent rounds from two experimentalists (Figure 1C). We note that false negatives could result from failure of an RNAi bacterial strain to grow adequately, from insufficient or excessive gene inhibition, or because of functional redundancy.
 
@@ -40,13 +52,41 @@ The resulting set of 88 genes represented diverse cellular processes (Supplement
 
 We subjected representative candidates from each group, as well as all of the orphans, to an orthogonal screening approach, this time utilizing a different aggregation reporter, a germline-specific NMY-2::GFP fusion protein (Bohnert and Kenyon, 2017) that forms distinctive punctate aggregates in the absence of sperm (Figure 1C and Supplementary file 1). Out of the 55 candidates tested, 53 RNAi knockdowns also caused NMY-2::GFP protein-aggregate accumulation (Figure 1—figure supplement 1B). Thus, these genes are likely to have a general effect on protein-aggregate clearance rather than a specific effect on GFP::RHO-1.
 
-## Aggregates form in young proximal oocytes
+### Aggregates form in young proximal oocytes
 
 We classified the RNAi phenotypes as strong, intermediate or subtle based on the degree of GFP::RHO-1 aggregation (Supplementary file 1). Typically, the phenotypically strong gene knockdowns led to sterility, whereas the subtle knockdowns generally did not, though some reduced brood size. In principle, one could imagine that aggregates accumulate in oocytes from sterile hermaphrodites because oocytes that would normally undergo ovulation and pass into the uterus do not, and instead simply ‘age in place.’ Likewise, aggregates could accumulate in normal female oocytes because in the absence of sperm they proceed much more slowly through the spermatheca and into the uterus (McCarter et al., 1999). As a consequence, proximal oocytes of females are technically older than those of age-matched hermaphrodites (Kim et al., 2013). This oocyte-age discrepancy raises the question of whether aggregates accumulate only during long-term oocyte quiescence or whether they are present in newly formed female oocytes. To address this question, we collected age-matched late L4 (‘Christmas-tree’ stage) females and hermaphrodites and followed the hermaphrodites until their first oocytes were cellularized. We found that age-matched first-proximal oocytes of young females often contained protein aggregates (Figure 1E, Figure 1—figure supplement 2). Therefore, protein-aggregate accumulation does not require prolonged oocyte quiescence; instead, it appears to be part of the normal developmental sequence of oocytes that are not exposed to sperm.
 
-## The ER influences protein aggregation
+### The ER influences protein aggregation
 
 Many genes we identified were associated with the ER, so we explored ER biology in more detail. The ER undergoes a major morphological rearrangement in response to oocyte maturation signals (Langerak et al., 2019). We visualized the ER in C. elegans oocytes using a germline-specific mCherry::SP12 reporter (Joseph-Strauss et al., 2012). SP12 is a signal-peptidase subunit (Poteryaev et al., 2005), and spcs-1, which encodes SP12, was identified in our screen. In hermaphrodite oocytes, the ER assumed a fine network appearance, whereas in female oocytes, the ER formed bright, distinctive patches (Figure 2A, C, Figure 2—figure supplement 1A). We also examined ER morphology in the first, newly formed female oocytes using the L4 staging procedure described above. Pristine female oocytes also exhibited ER patches, indicating that the altered ER architecture is an intrinsic property of female oocytes and not a consequence of prolonged quiescence (Figure 2B, Figure 2—figure supplement 1B). The fluorescent signal from the female ER was further enhanced as oocytes aged, possibly due to continued ER biogenesis coupled with oocyte compression caused by their packing within the gonad (Figure 2—figure supplement 1A). Using two fluorescent reporters, we visualized both the ER and GFP::RHO-1 simultaneously (Figure 1—figure supplement 2, Figure 2B, Figure 2—figure supplement 1C, Figure 2—figure supplement 2) and found that in female oocytes the ER and GFP::RHO-1 aggregates segregated spatially into mutually exclusive regions (Figure 1—figure supplement 2, Figure 2B, Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-v1.jpg)
+
+**Figure 2.:** (A) ER morphology in the germline of hermaphrodite (OCF15) and female (CF4542) animals, visualized using an mCherry::SP12 reporter. Orange arrows, ER patches. Scale bar, 10 µm. (B) GFP::RHO-1 localization in newly formed oocytes from hermaphrodites (CF4552) and females (CF4557) also expressing mCherry::SP12. White arrows, GFP::RHO-1 aggregates. Scale bars, 10 µm. (C) Percentage of animals with ER patches in oocytes. n = 12; mean ± sd, ***p≤0.001 (Mann–Whitney test). (D) Transmission electron micrographs (TEM) from hermaphrodite (N2E) and female (CF4101) oocytes. At least eight females and eight hermaphrodites were subjected to TEM. Orange arrows, ER. Left panel, magnification ×1400, scale bar, 1 µm; inset: magnification ×13,000, scale bar, 100 nm. Right panel, magnification ×1200, scale bar, 2 µm; inset: magnification ×18,500, scale bar, 100 nm. (E) Dissolution of ER patches (orange arrows) in female oocytes upon mating with CB1490 males. Female oocytes were imaged before and after mating at the indicated time points. Each oocyte is numbered according to its initial position relative to the spermatheca, and original numbers are maintained after fertilization. The figure shows a single representative animal from seven independent experiments. u*, unfertilized oocyte/debris in uterus in a different focal plane; sp*, an oocyte passing through the spermatheca during fertilization. Scale bars, 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of ER morphology in oocytes from hermaphrodites (OCF15) and females (CF4542) expressing the ER reporter mCherry::SP12 in the germline. Oocytes in the female gonad stack over time as new meiotic cells make their way down towards the spermatheca, but mature ones pass less readily into the uterus. Orange arrows, ER patches. (B) Visualization of ER patches in young oocytes of female animals, staged to capture the earliest oocytes. (C) Simultaneous visualization of GFP::RHO-1 aggregates and the ER in females (CF4557) at high magnification (×100 objective). Orange arrows, ER patches; white arrows, GFP::RHO-1 aggregates. Scale bars (A–C), 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Endoplasmic reticulum morphology and GFP::RHO-1 localization in the first, newly formed oocytes from mCherry::SP12-expressing hermaphrodites (CF4552). Scale bars,10 µm. Note that the GFP::RHO-1 image from the first row is also displayed in Figure 1E.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Transmission electron micrographs from hermaphrodite (N2E) and female (CF4101) oocytes. (A) Female oocyte. Arrows, endoplasmic reticulum (ER) stacks. Left panel, magnification: ×1200, scale bar, 2 µm. Right panel, magnification: ×13,000, scale bar, 100 nm. (B) Female oocyte. Arrows, ER stacks. Left panel, magnification: ×890, scale bar, 2 µm. Right panel, magnification: ×6800, scale bar, 200 nm. (C) Hermaphrodite oocyte. Arrow, ER. Left panel, magnification: ×1400, scale bar, 1 µm. Right panel, magnification: ×13,000, scale bar, 100 nm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The earliest changes in the mCherry::SP12 signal (ER) were observed ~10 min after mating, whereas the first signs of aggregate (NMY-2::GFP) clearance appeared later, between 20 and 30 min. The ER morphology was significantly altered by 30 min. Orange arrows, initial ER patches altered at ~10 min. The oocytes are numbered according to their initial positions relative to the spermatheca prior to mating, and the numbers are maintained as the oocytes enter the uterus following fertilization. The figure shows a single representative animal from seven independent experiments. Scale bars, 10 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) The mCherry::SP12 and NMY-2::GFP signals in oocytes from CF4560 females visualized as in Figure 2—figure supplement 4 but not subjected to mating, to control for photobleaching. A single individual is shown from a total of four independent experiments. Scale bars, 10 µm. (B) Reduction in signal intensity of the two fluorophores with time due to photobleaching, without exposure to males (from A). The signal intensities from specified areas (white rectangles) of the most proximal oocyte were assessed for this purpose.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A) NMY-2::GFP signal skewness as a function of time in the proximal oocytes of CF4560 females, either subjected to mating with CB1490 males (white) or not exposed to males (pink). The mated females exhibit a reduction in signal skewness with time, and in relation to the distance from spermatheca, indicative of aggregate clearance. (B) Examples of oocyte endoplasmic reticulum morphology in CF4552 hermaphrodites subjected to assay pool RNAi treatment, demonstrating the range of morphologies we observed. GFP::RHO-1 aggregation in the same animals was used as a control to verify successful gene knockdown (not shown). Scale bars, 20 µm.
 
 We also examined oocytes from young, age-matched hermaphrodites and females by transmission electron microscopy (TEM). The ER in pristine oocytes from both sexes appeared to be associated with ribosomes, indicative of active (or poised) protein synthesis, yet the female ER was distinctively clustered into parallel stacks (Figure 2D, Figure 2—figure supplement 3).
 
@@ -54,7 +94,354 @@ To test whether the stacked ER architecture of female oocytes could be reversed 
 
 Next, we investigated whether the genes identified in our RNAi screen might contribute to proteostasis by influencing a process associated with ER architecture. To this end, we subjected mCherry::SP12-germline-labeled hermaphrodites to 35 RNAi treatments representing the various biological process categories as well as the individual orphans. This subset of RNAi clones, which we termed the ‘assay pool,’ was used for all subsequent large-scale phenotypic analyses (Table 1). We visualized oocyte ER morphology in young adults subjected to the gene knockdowns (Figure 2—figure supplement 6B and Table 1). Genes involved in cytoskeletal organization, protein synthesis and protein folding were required for maintaining normal ER morphology and led to an altered ER architecture when knocked down. Genes involved in RNA processing, protein degradation and trafficking comprised a mixed class, with some knockdowns appearing to affect ER morphology. We note that our analysis does not distinguish between genes with direct effects on ER morphogenesis, like the actin cytoskeleton (Poteryaev et al., 2005), and genes with indirect effects, like the proteasome, which is required for the degradation of GLD-1 (Bohnert and Kenyon, 2017; Goudeau et al., 2020; Spike et al., 2018), a translational repressor involved in oocyte cell fate determination (Francis et al., 1995; Jones et al., 1996). Notably, disrupting the mitochondrial ATP synthase, the V-ATPase complex, or ER function itself did not visibly alter the ER network, suggesting that these gene functions were not required for the sperm-induced ER morphology change, or more generally for ER morphogenesis.
 
-## Sperm signals initiate V-ATPase assembly, enabling lysosomal acidification
+**Table 1.**
+ Functional gene categories from the proteostasis screen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biological process</th>
+      <th>RNAi target</th>
+      <th>Gene code</th>
+      <th>Normal ER architecture</th>
+      <th>GFP::VHA-13 puncta</th>
+      <th>Lysosome acidification</th>
+      <th>Reduction in ΔΨ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Protein degradation</td>
+      <td>pbs-7</td>
+      <td>F39H11.5</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>rpn-6.1</td>
+      <td>F57B9.10</td>
+      <td>Mixed</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Protein synthesis (translation)</td>
+      <td>rps-20</td>
+      <td>Y105E8A.16</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>rpl-3</td>
+      <td>F13B10.2</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Protein folding (chaperones)</td>
+      <td>cct-1</td>
+      <td>T05C12.7</td>
+      <td>No</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>cct-5</td>
+      <td>C07G2.3</td>
+      <td>No</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cytoskeleton-associated process</td>
+      <td>act-1</td>
+      <td>T04C12.6</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>pat-3</td>
+      <td>ZK1058.2</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>ani-2</td>
+      <td>K10B2.5</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ER protein homeostasis</td>
+      <td>hsp-4</td>
+      <td>F43E2.8</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>spcs-1</td>
+      <td>C34B2.10</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>srpa-68</td>
+      <td>F55C5.8</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Vesicle-mediated transport (trafficking)</td>
+      <td>copb-2</td>
+      <td>F38E11.5</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>sec-24.1</td>
+      <td>F12F6.6</td>
+      <td>Inconclusive</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>sar-1</td>
+      <td>ZK180.4</td>
+      <td>Mixed</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Lysosome acidification (V-ATPase)</td>
+      <td>vha-13</td>
+      <td>Y49A3A.2</td>
+      <td>Yes</td>
+      <td>No signal</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>vha-12</td>
+      <td>F20B6.2</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>vha-2</td>
+      <td>R10E11.2</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ATP synthase</td>
+      <td>atp-3</td>
+      <td>F27C1.7</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>atp-2</td>
+      <td>C34E10.6</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="3">RNA processing</td>
+      <td>ess-2</td>
+      <td>F42H10.7</td>
+      <td>No</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>cgh-1</td>
+      <td>C07H6.5</td>
+      <td>Mixed</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>let-711</td>
+      <td>F57B9.2</td>
+      <td>Mixed</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Calcium ion transport</td>
+      <td>itr-1</td>
+      <td>F33D4.2</td>
+      <td>No</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>sca-1</td>
+      <td>K11D9.2</td>
+      <td>Yes</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Orphans</td>
+      <td>kin-2</td>
+      <td>R07E4.6</td>
+      <td>Mixed</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>ttr-14</td>
+      <td>T05A10.3</td>
+      <td>Mixed</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>par-5</td>
+      <td>M117.2</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>xpo-1</td>
+      <td>ZK742.1</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>srab-17</td>
+      <td>T11A5.2</td>
+      <td>Yes</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>rmd-2</td>
+      <td>C27H6.4</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>dlg-1</td>
+      <td>C25F6.2a.1</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>lgc-46</td>
+      <td>Y71D11A.5</td>
+      <td>Yes</td>
+      <td>Reduced</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>aco-2</td>
+      <td>F54H12.1</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>imb-1</td>
+      <td>F28B3.8</td>
+      <td>Inconclusive</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td rowspan="5">ESCRT subunits*</td>
+      <td>vps-20</td>
+      <td>Y65B4A.3</td>
+      <td>Not tested</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>vps-28</td>
+      <td>Y87G2A.10</td>
+      <td>Not tested</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>vps-37</td>
+      <td>CD4.4</td>
+      <td>Not tested</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td>vps-54</td>
+      <td>T21C9.2</td>
+      <td>Not tested</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Not tested</td>
+    </tr>
+    <tr>
+      <td colspan="6">List of representative genes from each functional category that were selected for the assay pool and their effects on ER morphology, lysosome acidification, GFP::VHA-13 localization, and mitochondrial membrane potential. *The ESCRT complex subunits were not derived from the original screen but from subsequent candidate testing. ER: endoplasmic reticulum.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sperm signals initiate V-ATPase assembly, enabling lysosomal acidification
 
 Signals from sperm elicit the lysosomal acidification required for the clearance of protein aggregates, and inhibiting the V-ATPase, which acidifies lysosomes, causes proteins to aggregate in hermaphrodite oocytes (Bohnert and Kenyon, 2017). However, the mechanism by which lysosome acidification occurs in response to signals from sperm is not known (Goudeau et al., 2020; Spike et al., 2018). To address this question with minimal physiological disruption, we first attempted to fluorescently tag endogenously-expressed V-ATPase subunits using CRISPR/Cas9. We picked four different subunits, two from the membrane-embedded V0 domain (VHA-4 and VHA-7) and two from the peripheral V1 domain (VHA-11 and VHA-13) (Supplementary file 2). Unexpectedly, although each one of these tagged proteins was visible in somatic tissues, we were unable to detect any fluorescence in the germline in either intact animals (Figure 3—figure supplement 1) or in their dissected gonads (Figure 3—figure supplement 2A). Germline fluorescence was also undetectable when imaging with a more sensitive wide-field system or following photobleaching of the strong intestinal signal, which we reasoned might mask a faint signal from the germline (data not shown). Endogenous genes tagged with fluorescent proteins can be silenced in the germline by the process of epigenetic RNAe (Shirayama et al., 2012); however, this explanation seems unlikely since, unlike V-ATPase RNAi-treated animals, these animals produced viable embryos.
 
@@ -62,17 +449,61 @@ We also considered the possibility that these V-ATPase proteins did not act cell
 
 As a next-best approach for visualizing germline V-ATPase subunits, we obtained a Mos1-mediated single copy insertion (MosSCI) strain of GFP::VHA-13 driven by the germline-specific pie-1 promoter. This strain expressed GFP::VHA-13 in a genetically stable fashion, though presumably at elevated levels. In these animals, we observed a striking, sperm-dependent pattern: GFP::VHA-13 formed distinct foci in hermaphrodite oocytes (Figure 3A, Figure 3—figure supplement 3A) that colocalized with foci of LysoTracker, a dye that stains acidic lysosomes (Figure 3B, Figure 3—figure supplement 4A). In contrast, the proximal oocytes of females exhibited a diffuse GFP::VHA-13 fluorescent signal (Figure 3A, Figure 3—figure supplement 3B), with a slight enrichment in the perinuclear region. Female oocytes demonstrated very weak LysoTracker staining (Bohnert and Kenyon, 2017), and there was no significant overlap in the two signals (Figure 3B, Figure 3—figure supplement 4B). To better control for effects of overexpression, we lowered the level of GFP::VHA-13 expression by serially diluting gfp RNAi bacteria. Even at the limit of fluorescence detection, hermaphrodites still exhibited GFP::VHA-13 foci, and females exhibited a diffuse distribution (Figure 3—figure supplement 2C). Thus, the germline harbors a mechanism by which VHA-13 is localized to discrete, acidic cellular locations, indicative of lysosomes, only in the presence of sperm. Notably, knocking down the vha-12 gene, which encodes another peripheral V-ATPase V1-domain subunit, also prevented GFP::VHA-13 foci formation in hermaphrodite oocytes (Figure 3—figure supplement 2D), suggesting a coordinated assembly pathway.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig3-v1.jpg)
+
+**Figure 3.:** (A) Distribution of GFP::VHA-13 in proximal oocytes of hermaphrodites (PHX1414) and females (CF4599). (B) LysoTracker-stained oocytes from GFP::VHA-13-expressing hermaphrodites and females for visualization of acidic lysosomes. The two signals colocalized in hermaphrodite oocytes. Dotted line, intestinal boundary; solid line, oocytes. (C) Sperm signal-induced GFP::VHA-13 redistribution in female oocytes (CF4599). Oocytes were imaged before and after mating with CB1490 males. The GFP::VHA-13 signal shifts from diffuse to punctate following mating. Each oocyte is numbered according to its initial position relative to the spermatheca, and original numbers are maintained after fertilization. A representative individual is shown from five independent mating experiments. (D) Increase in signal skewness (inhomogeneity) of GFP::VHA-13 as a function of time following mating. Mann–Whitney test was used to determine statistical significance; *p≤0.05, **p≤0.01. Scale bars, 10 µm (A–C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Expression of endogenously tagged V-ATPase subunits from the V0 domain (A, B) and the V1 domain (C–E), and of a single-copy integrated germline transgene (F). None of the strains exhibited detectable signal in the gonad. (A) WrmScarlet::VHA-4, PHX1363 vha-4(syb1363[wrmScarlet::vha-4]/+) II. (B) VHA-7::wrmScarlet, PHX1317 vha-7(syb1317[vha-7::wrmScarlet]) IV. (C) VHA-11::GFP, PHX1198 ieSi65[sun-1p::TIR1::sun-1 3′UTR Cbr-unc-119(+)] II; unc-119(ed3) III; vha-11(syb1198[vha-11::gfp::degron]/+) IV. (D) WrmScarlet::VHA-13, PHX731 vha-13(syb731[wrmScarlet::vha-13]) V. (E) GFP::VHA-13, PHX1049 vha-13(syb1049[gfp::vha-13]) V. (F) Ppie-1::vha-7::wrmScarlet::vha-7 3′UTR, PHX2690 sybIs2690[Ppie-1::vha-7::wrmScarlet::vha-7 3'UTR Cbr-unc-119(+)] I; unc-119(ed3) III. Solid line, gonad; dotted line, intestine. Scale bars, 50 µm. For each strain, a minimum of 50 animals were first analyzed under a fluorescent stereo microscope. At least three animals were then imaged for each strain by confocal microscopy. Strains were generated by SunyBiotech for the Kenyon lab.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Attempts to visualize endogenously tagged wrmScarlet::VHA-13 expression in the germline of PHX731 animals by dissecting gonads (n = 10 worms) to distance them from somatic tissues where it is highly expressed. Scale bars, 25 µm. (B) Percentage of fertile adults in N2E, DCL565 rde-1(mkc36), and DCL569 rde-1(mkc36); Psun-1::rde-1(+) strains upon exposure to empty-vector RNAi control, vha-13 RNAi or vha-12 RNAi, from hatching. Results are averaged from three biological replicates with each n > 10. (C) Reduction of GFP::VHA-13 expression by serial dilution of gfp RNAi bacteria. Even at the limit of fluorescence detection, hermaphrodites (PHX1414) exhibit discrete GFP::VHA-13 foci, whereas females (CF4599) exhibit a diffuse distribution. Scale bars, 10 µm. (D) Expression of GFP::VHA-13 in the germline of hermaphrodites exposed to empty-vector RNAi (left) or vha-12 RNAi (right). Scale bars, 50 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Additional images showing the distribution of GFP::VHA-13 in proximal oocytes of (A) hermaphrodites (PHX1414) and (B) females (CF4599). Scale bars, 10 µm. (C) Changes in oocyte GFP::VHA-13 localization, from punctate to diffuse, in hermaphrodites (PHX1414) imaged daily from day 1 to day 5 of adulthood, when sperm are depleted. Scale bars, 20 µm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Additional images of the LysoTracker-stained oocytes from GFP::VHA-13-expressing (A) hermaphrodites (PHX1414) and (B) females (CF4599) for visualization of acidic lysosomes. The two signals colocalize in hermaphrodite oocytes. Dotted line, intestinal boundary; solid line, oocytes. Scale bars, 10 µm.
+
 We asked whether sperm signals regulate V-ATPase localization in two ways. First, we examined older, sperm-depleted hermaphrodites (day 5) and observed diffuse V-ATPase localization, similar to that of females (Figure 3—figure supplement 3C). Second, we mated GFP::VHA-13-expressing females with males and monitored their proximal oocytes. The diffuse fluorescent signal began to change approximately 10 min after mating, organizing into distinct foci within 20–30 min (Figure 3C, D). This change coincided with release from arrest and oocyte maturation, ultimately leading to ovulation and fertilization. The time scales of ER remodeling and GFP::VHA-13 relocalization (Figure 2E) were strikingly similar, suggesting a possible causal relationship. Together, these findings suggest that sperm signals lead to lysosome acidification by initiating the recruitment of V-ATPase subunits to the surface of the lysosome and enabling proton-pump assembly.
 
-## Most of the genes identified disrupt VHA-13 localization and lysosome acidification
+### Most of the genes identified disrupt VHA-13 localization and lysosome acidification
 
 To ask which gene inhibitions blocked lysosome acidification, we subjected LysoTracker-stained hermaphrodites to knockdowns of the ‘assay pool’ genes (Table 1). In wild-type hermaphrodites, lysosomes are acidified only in proximal oocytes (Bohnert and Kenyon, 2017). Therefore, to internally control for variations in dye uptake, we analyzed the ratios of staining intensities between proximal oocytes and distal germline regions. LysoTracker staining of hermaphrodites, females, and animals subjected to empty-vector RNAi were used as controls, and the simultaneous presence of GFP::RHO-1 aggregates confirmed successful gene knockdown. Unexpectedly, we found that the great majority of gene inhibitions prevented lysosome acidification (Figure 4A, Figure 4—figure supplement 1A). The ATP synthase genes atp-2 and atp-3 were the only exceptions, consistent with previous observations suggesting that mitochondrial ATP-synthase activity acts downstream of lysosome acidification to prevent protein aggregation (Bohnert and Kenyon, 2017).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig4-v1.jpg)
+
+**Figure 4.:** (A) LysoTracker staining in hermaphrodites (SA115) subjected to RNAi. The LysoTracker signal is represented as the ratio of proximal oocyte to distal germline staining. Staining ratios obtained from hermaphrodite (N2E) and female (CF4101) animals were used as controls (~1.3 and ~1.0, respectively). Each data point represents the average of values from three different locations in the most proximal oocyte from a single animal. The presence of GFP::RHO-1 aggregates in the same animals confirmed successful gene knockdown (not shown). (B) Analysis of GFP::VHA-13 localization, assessed by the degree of GFP skewness (inhomogeneity) in hermaphrodites (PHX1414) subjected to RNAi, and compared to control hermaphrodites and females (PHX1414 and CF4599). Each data point represents the average of 10 skewness values from different regions within the first three proximal oocytes of a single animal. The presence of aggregates in GFP::RHO-1 animals (SA115) treated in parallel was used as a control to verify successful gene knockdown (not shown). For (A, B), Mann–Whitney test was used to determine the statistical significance. The top and bottom rows of significance indicators in each experiment compare the mean values from each process category to hermaphrodite and female animals, respectively. p-Values: p>0.05 = n.s., *p≤0.05, **p≤0.01, and ****p≤0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Analysis of germline LysoTracker staining in hermaphrodites (SA115) subjected to RNAi for the orphan genes. The LysoTracker signal is represented as the ratio of proximal oocyte to distal germline staining, and the values obtained from hermaphrodites (N2E) and females (CF4101) were used as controls (~1.3 and ~1.0, respectively). Each data point represents the average of values from three different locations in the most proximal oocyte of a single animal. The presence of GFP::RHO-1 aggregates in the same animals was used as a control to determine successful gene knockdown (not shown). (B) Analysis of GFP::VHA-13 localization (in terms of signal skewness) in hermaphrodites (PHX1414) subjected to RNAi for the orphan genes and compared to hermaphrodite and female animals (PHX1414 and CF4599). Each data point represents the average of 10 skewness values from independent regions within the first three oocytes of a single animal. The presence of GFP::RHO-1 aggregates in SA115 animals in a parallel experiment served as a control for successful gene knockdown (not shown). For (A, B), Mann–Whitney test was used to determine the statistical significance. The top and bottom rows of significance indicators in each experiment compare a specific RNAi condition to hermaphrodite and female animals, respectively. p-Values: p>0.05 = n.s., *p≤0.05, **p≤0.01, ***p≤0.001, and ****p≤0.0001. (C) Visualization of GFP::VHA-13 distribution and localization in PHX1414 hermaphrodites following RNAi. A few representative gene knockdowns from the assay pool are shown here to demonstrate the range of localization phenotypes observed. Scale bars, 10 µm.
+
 Next, we asked whether reduced lysosomal acidification in the RNAi-treated hermaphrodites might be caused by an inability to localize the V-ATPase subunits to lysosomes, as occurs in females. To test this, we subjected GFP::VHA-13-expressing animals to assay pool RNAi and screened for the presence of GFP::VHA-13 puncta (Figure 4—figure supplement 1C). The extent of puncta formation was quantified by measuring the skewness (non-homogeneity) of the GFP::VHA-13 signal at multiple locations within the most proximal oocyte. Hermaphrodites and the empty-vector RNAi-treated animals demonstrated significantly higher skewness values than did female oocytes, which exhibited diffuse GFP::VHA-13 localization (Figure 4B). All of the knockdowns that blocked lysosome acidification showed reduced GFP::VHA-13 skewness, albeit to varying degrees. While most knockdowns resulted in a marked reduction in GFP::VHA-13 skewness, similar to the female, knockdown in some genes involved in protein folding (cct-1, cct-5), RNA processing (ess-2, let-711), and calcium ion transport (itr-1, sca-1) demonstrated intermediate values of skewness, indicative of at least a partial reduction of GFP::VHA-13 puncta (Figure 4B). Similarly, the orphan-gene inhibitions demonstrated reduced GFP skewness, with several candidates showing only intermediate effects (kin-2, par-5, xpo-1, rmd-2, lgc-46, aco2, imb-1) (Figure 4—figure supplement 1B). As anticipated, neither of the two ATP synthase gene knockdowns affected GFP::VHA-13 puncta formation (Figure 4B). Together, these data support the model that the failure of the gene knockdowns to acidify lysosomes is due, at least in part, to a failure to assemble the lysosomal V-ATPase.
 
-## Two distinct, mysterious roles for mitochondria in protein aggregation
+### Two distinct, mysterious roles for mitochondria in protein aggregation
 
 Mitochondria undergo a morphological and metabolic shift in response to signals from sperm, a shift that is required for aggregate removal (Bohnert and Kenyon, 2017). Unfertilized female oocytes exhibit a high mitochondrial membrane potential (ΔΨ) relative to hermaphrodite oocytes or to female oocytes exposed to sperm by mating. Loss of the mitochondrial ATP synthase, which discharges the proton gradient during the generation of ATP, elevates ΔΨ in hermaphrodites and causes protein aggregates to accumulate (Bohnert and Kenyon, 2017). As expected, subunits from the mitochondrial ATP synthase complex (atp-2, atp-3) emerged from the screen. Previously, we found that lysosomal V-ATPase activity was required for the shift in mitochondrial membrane potential (Bohnert and Kenyon, 2017). To test the prediction that our screen hits, which all inhibited lysosome acidification, would also block the ΔΨ switch, we stained hermaphrodites with the dye DiOC6(3), whose signal is sensitive to ΔΨ. Again, to control for dye uptake, we measured the ratio of DiOC6(3) staining intensities between proximal oocytes and the distal syncytial germline. As predicted, all of the knockdowns prevented the ΔΨ decrease in proximal hermaphrodite oocytes. Unexpectedly, in many cases the mitochondria exhibited ΔΨ ratios even higher than those of females (Figure 5A, Figure 5—figure supplement 1A), suggesting that the female oocyte ΔΨ is not the default state, but potentially an optimal point within a broader range of possibilities.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig5-v1.jpg)
+
+**Figure 5.:** (A) Analysis of oocyte ΔΨ using DiOC6(3) staining in RNAi-treated hermaphrodites (OCF15), represented as the ratio of proximal oocyte to distal germline staining. Staining ratios obtained from N2E hermaphrodites (~0.8) and CF4101 females (~1) were used as controls for comparison. Each data point represents the average of values from three different locations in the most proximal oocyte of a single animal. When applicable, alteration in endoplasmic reticulum (ER) morphology was used as a control to determine successful gene knockdown in the same animals. The presence of GFP::RHO-1 aggregates in SA115 animals treated in parallel was also used as an RNAi control (not shown). (B) Visualization of GFP::RHO-1 aggregates in oocytes of hermaphrodites (SA115) and females (CF4115) subjected to disruption of mitochondrial electron transport chain (ETC) genes. Successful ETC disruption was confirmed by smaller body sizes (visible in the images) and severely reduced brood sizes, similar to ATP synthase subunit knockdowns. Scale bars, 25 µm. (C) LysoTracker staining in hermaphrodites (SA115) subjected to ESCRT-complex RNAi, represented as the ratio of proximal oocyte to distal germline staining, and compared to hermaphrodites (N2E) and females (CF4101). Only animals exhibiting GFP::RHO-1 aggregates upon RNAi treatment (confirming knockdown; shown in Figure 5—figure supplement 3A) were included in the quantification. For (A, C), Mann–Whitney test was used to determine the statistical significance. The top and bottom rows of significance indicators in each experiment compare the mean values from each process category to hermaphrodite and female animals, respectively. p-Values: p>0.05 = n.s., *p≤0.05, **p≤0.01, ***p≤0.001, and ****p≤0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Analysis of germline DiOC6(3) staining in hermaphrodite animals (OCF15) subjected to RNAi for the orphan genes, represented as the ratio of proximal oocyte to distal germline staining. Staining ratios obtained from N2E hermaphrodites (~0.8) and CF4101 females (~1) were used as controls for comparison. Each data point represents the average of values from three different locations within the most proximal oocyte of a single animal. When applicable, alteration in endoplasmic reticulum (ER) morphology was used as a control to determine successful gene knockdown in the same animals. The presence of aggregates in GFP::RHO-1 animals (SA115) treated in parallel was also used as a control to verify successful gene knockdown (not shown). The top and bottom rows of significance indicators compare a specific RNAi treatment to hermaphrodites and females, respectively. (B) DiOC6(3) staining expressed as the ratio between proximal oocytes and distal germline in hermaphrodites (N2E; white) and females (CF4101; yellow) subjected to RNAi treatment for control (vha-12 and atp-2) and electron transport chain (cyc-1 and nuo-2) genes. Successful gene knockdown was determined by monitoring GFP::RHO-1 aggregation in parallel (shown in Figure 5B). (A, B) Mann–Whitney test was used to determine the statistical significance. p-Values: p>0.05 = n.s., *p≤0.05, **p≤0.01, and ***p≤0.001. (C) For the animals in (B), DiOC6(3) signal intensity following RNAi treatment for electron transport chain genes in the distal (left panel) and proximal (right panel) germlines, respectively. vha-12-RNAi was used an independent positive control. (D) Identification of Krebs cycle genes that, when knocked down in hermaphrodites (SA115), cause GFP::RHO-1 aggregates to accumulate in oocytes. Scale bars, 10 µm; white arrows, GFP::RHO-1 aggregates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) BioTracker ATP-Red stained germlines of dye-fed animals also subjected to knockdowns of electron transport chain (ETC) subunits; proximal germlines, white outlines. Scale bars, 20 µm. (B) Quantification of BioTracker ATP-Red staining. Each data point represents the average of fluorescence intensity values normalized to area from 12 independent locations of the first three oocytes of a single animal. Mann–Whitney test was used to determine the statistical significance. p-Values: *p≤0.05, ***p≤0.001, and ****p≤0.0001. (C) Comparison of oocyte ATP levels subjected to ETC knockdowns (cyc-1 and nuo-2) using the Ateam sensor. Relative ATP levels estimated from the ratio of FRET channel to donor channel using an intensity scale (top panel); and fluorescence observed in the acceptor channel (bottom panel). Scale bars, 10 µm; note that we examined very few animals in this experiment due to transgene silencing: n = 2 animals per RNAi condition and n = 1 for control. Therefore, support for our interpretation rests primarily on the BioTracker ATP-Red dye-staining experiment.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) GFP::RHO-1 aggregation and LysoTracker signal in hermaphrodites (SA115) subjected to ESCRT-complex RNAi. The proximal oocyte/distal germline ratio of LysoTracker intensity is indicated for each animal. Distal germline images from the same animal are shown as insets in the LysoTracker panels. LysoTracker staining ratios ranged from 1.18 to 1.45 and 0.85–1.15 in control hermaphrodites (N2E) and females (CF4101), respectively, across multiple experiments (not shown in this figure). Oocyte GFP::RHO-1 aggregates (confirming knockdown) are indicated with white arrows, and only oocytes containing aggregates were selected for calculating lysosome acidification in Figure 5C. Scale bars, 10 µm. (B) GFP::VHA-13 localization (signal skewness) in hermaphrodites (PHX1414) subjected to RNAi for ESCRT subunits, and compared to hermaphrodites and females (PHX1414 and CF4599, respectively). Each data point represents the average of 10 skewness values from different regions within the three most proximal oocytes of a single animal. Statistical significance was determined by Mann–Whitney test, and the top and bottom rows of significance indicators compare a specific RNAi treatment to hermaphrodite and female animals, respectively. p-Values: p>0.05 = n.s. and ***p≤0.001. (C) Variability in GFP::VHA-13 localization and lysosome acidification phenotypes for individual PHX1414 animals treated with vps-54 RNAi. The skewness value for the GFP::VHA-13 signal and LysoTracker staining ratio (proximal oocyte to distal germline) are indicated for each animal. Successful knockdown could not be verified in each animal (since VHA-13 and RHO-1 were both tagged with GFP). Instead, it was done in a parallel experiment with GFP::RHO-1-expressing animals (SA115) in which more than 75% of animals subjected to a specific RNAi treatment exhibited detectable aggregation (not shown). Scale bars, 10 µm.
 
 The observation that gene knockdowns from all the functional categories caused a relatively high oocyte ΔΨ value prompted us to question whether a high mitochondrial membrane potential might be necessary for protein-aggregate accumulation. To test this, we asked whether exposing females expressing germline GFP::RHO-1 to conditions that lower ΔΨ, namely, to electron transport chain (ETC) RNAi knockdowns, might reduce protein aggregation. However, neither cyc-1 nor nuo-2 RNAi prevented females from accumulating aggregates, even though ΔΨ was reduced (Figure 5B, Figure 5—figure supplement 1B, C). Thus, a high mitochondrial membrane potential is not a prerequisite for protein aggregation.
 
@@ -80,13 +511,33 @@ RNAi inhibition of ATP synthase has been shown to reduce ATP levels in worms, as
 
 Given the striking change in mitochondrial dynamics that takes place during oocyte maturation, we were surprised that in our screen we recovered only one additional gene encoding a mitochondrial-localized protein, aco-2 (Krebs cycle aconitase). We tested several additional Krebs cycle gene knockdowns (pdha-1, idhg-1, ogdh-1, sucl-1, and sdhd-1) and found that α-ketoglutarate dehydrogenase (ogdh-1) and succinate dehydrogenase (sdhd-1) RNAi also led to oocyte GFP::RHO-1 aggregation (Figure 5—figure supplement 1D). Notably, unlike ATP synthase inhibition, aco-2 inhibition prevented lysosome acidification (Figure 4—figure supplement 1A), indicating that the Krebs cycle and ATP synthase likely have distinct roles in the protein-aggregation pathway.
 
-## ESCRT-complex genes are required for the clearance of protein aggregates
+### ESCRT-complex genes are required for the clearance of protein aggregates
 
 The direct mechanism by which protein aggregates are removed during oocyte maturation is not known with certainty, although morphologically, the process resembles lysosomal microautophagy (Bohnert and Kenyon, 2017). Microautophagy has not been described previously in C. elegans; however, orthologs of genes encoding components of the ESCRT machinery, which mediates microautophagy in yeast and mammals, are present (Sahu et al., 2011; Williams and Urbé, 2007). We identified two ESCRT subunits (vps-37 and vps-54) in our primary screen, but they did not pass our initial validation cutoff (Supplementary file 3). To explore the possibility that these were false negatives, we retested these RNAi clones along with RNAi clones inhibiting additional ESCRT subunits (tsg-101, vps-20, and vps-28). In these experiments, the ESCRT subunits vps-20, vps-28, vps-37, and vps-54 tested positive with subtle aggregation phenotypes (although not observed in all animals tested) (Figure 5—figure supplement 3A), supporting the model that aggregates are removed via microautophagy. Importantly, the degree of GFP::VHA-13 localization to puncta in these knockdowns was comparable to that of hermaphrodites (Figure 5—figure supplement 3B, C), and they also permitted acidification of oocyte lysosomes (Figure 5C, Figure 5—figure supplement 3C). Taken together, these findings suggest that the ESCRT machinery operates downstream of V-ATPase assembly and lysosome acidification to prevent aggregate accumulation.
 
-## Mechanisms enhancing germline proteostasis also operate in the soma
+### Mechanisms enhancing germline proteostasis also operate in the soma
 
 Widespread proteostasis collapse is an inherent part of aging in C. elegans (Ben-Zvi et al., 2009; David et al., 2010; Taylor and Dillin, 2011; Walther et al., 2017), and mechanisms that extend lifespan invariably enhance cellular proteostasis. Understanding how the immortal germ lineage maintains cellular quality and proteostasis across the generations could suggest new ways to enhance proteostasis in the soma and delay organismal aging. Our lab and others have shown that many endogenous proteins become insoluble with age and can form visible aggregates when overexpressed with fluorescent tags (David et al., 2010; Huang et al., 2019; Reis-Rodrigues et al., 2012; Roux et al., 2016). To visualize age-related protein aggregation, we monitored the casein kinase subunit KIN-19, which forms insoluble aggregates in an age-dependent manner in wild-type somatic tissues (David et al., 2010). To do this, we fluorescently tagged the endogenous kin-19 gene specifically in the soma using split-wrmScarlet (Goudeau et al., 2021; Supplementary file 2). To avoid interference from the bright intestinal autofluorescence, we examined KIN-19::split-wrmScarlet in the head. The signal was mainly diffuse in young day 1 adults but began to exhibit a striking punctate appearance as early as day 4 of adulthood (Figure 6A, B, Figure 6—figure supplement 1). To the best of our knowledge, this tool is the first used to visualize age-dependent aggregation of an endogenously expressed protein in C. elegans.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative images of CF4609 animals expressing KIN-19::split-wrmScarlet11 and somatic split-wrmScarlet1-10 at days 1, 4, 7, and 11 of adulthood. Maximum intensity projections of 3D stacks are shown in red (upper panels) and also using an intensity scale (lower panels). Scale bars, 10 µm. (B) Quantification of KIN-19::split-wrmScarlet aggregates per animal in the head region. The bright fluorescent signal in the pharyngeal region was not included in the quantification. Mann–Whitney test was used to determine the statistical significance. p-Values: **p≤0.01 and ***p≤0.001. (C) Representative images of CF4609 animals expressing KIN-19::split-wrmScarlet11 and somatic split-wrmScarlet1-10 subjected to RNAi or empty-vector negative control, imaged for presence of KIN-19 aggregates at day 2 of adulthood. Scale bars, 10 µm. (D) Quantification of fluorescent KIN-19::split-wrmScarlet puncta (only from the head region) in CF4609 animals subjected to RNAi or empty-vector control. (E) Skewness of the intestinal LysoTracker signal in SA115 animals subjected to RNAi (shown in Figure 6—figure supplement 2). Each data point represents the average of six independent skewness values from the anterior intestinal region, near the pharyngeal bulb, in a single animal. The simultaneous presence of GFP::RHO-1 aggregates in oocytes was used as a control for successful gene knockdown in each animal (not shown). Mann–Whitney test was used to determine the statistical significance. p-Values: *p≤0.05 and **p≤0.01.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The same image sets of KIN-19 aggregates used in Figure 6B were scored again, blindly, by three additional investigators (A–C). Mann–Whitney test was used to calculate the statistical significance, **p≤0.01.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Due to variability in dye uptake and staining, the actual LysoTracker signal intensities within the intestines were not evaluated. Instead, the mean skewness values, s, indicative of inhomogeneity expected for acidic intestinal lysosomes (so-called ‘lysosome-related organelles’), are reported for each animal (compared in Figure 6E). Skewness values were derived from six different locations within the anterior intestinal region near the pharyngeal bulb. Scale bar, 50 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Representative images of AM140 animals expressing the polyQ reporter Q35::YFP in body wall muscle cells imaged at days 1, 2, and 3 of adulthood, with appearance of age-associated aggregates on day 3 of adulthood. 0/8 animals with aggregates were observed on day 2. Scale bars, 50 µm. (B) Q35::YFP aggregates in animals subjected to assay pool RNAi or empty-vector negative control imaged for the presence of reporter aggregates on day 2 of adulthood. Successful gene knockdown was determined in a parallel experiment with GFP::RHO-1-expressing animals (SA115) subjected to RNAi treatment and exhibiting aggregation in the germline (not shown). White arrows, representative locations of Q35::YFP aggregates. Scale bars, 50 µm.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Representative images of CF4609 animals expressing KIN-19::split-wrmScarlet11 and somatic split-wrmScarlet1-10 subjected to ESCRT-complex RNAi or empty-vector negative control from the L1 stage, imaged for the presence of KIN-19::split-wrmScarlet aggregates at day 2 of adulthood. Maximum intensity projections of 3D stacks are shown in red (upper panels) and also using an intensity scale (lower panels). Scale bar, 10 µm. (B) Quantification of fluorescent KIN-19::split-wrmScarlet puncta (only from the head region) in CF4609 animals subjected to RNAi or empty-vector control, using the same scoring method as in Figure 6D. (C) Quantitative RT‐PCR analysis of mRNA levels of vps-20 and vps-54, in the set of animals imaged, compared to control empty-vector or treated with vps-20 or vps-54 RNAi, respectively. Two-way ANOVA test was used to determine statistical significance; p-values; *p<0.05, **p<0.01.
 
 To ask whether the germline proteostasis genes we identified in our screen might also affect somatic protein aggregation, we screened our germline aggregation ‘assay pool’ for gene knockdowns that caused KIN-19 to aggregate prematurely in head tissues. We found that multiple RNAi knockdowns that impaired lysosomal acidification in the germline-induced premature KIN-19::split-wrmScarlet aggregation in the soma, most notably RNAi of genes encoding lysosomal V-ATPase subunits (vha-12, vha-13, vha-16, and vha-19), but also genes that, in the germline, were required for V-ATPase assembly (the actin gene act-5 and the vesicle-mediated ER-to-Golgi transport gene copb-2) (Figure 6C, D). We were not able to visualize lysosome acidification in the head using LysoTracker, but these knockdowns did affect lysosome acidification in the intestine, where the RNAi treatment led to fewer discrete acidic lysosome-related organelles, thereby reducing the skewness of the LysoTracker signal (Figure 6E, Figure 6—figure supplement 2). We also recovered the proteasome subunits pbs-7 and rpn-6.1, indicating a direct or indirect role for proteasome function to maintain KIN-19 solubility in the aging soma (Figure 6C, D).
 
@@ -96,7 +547,7 @@ We also tested a second somatic-aggregation reporter, the polyQ protein Q35::YFP
 
 Sperm-derived signals that trigger oocyte maturation in C. elegans initiate a global change in oocyte structure and function, including the rapid removal of protein aggregates. A key step in aggregate removal is the acidification of lysosomes, which subsequently engulf the aggregates (Bohnert and Kenyon, 2017). In addition, mitochondria, which undergo morphological and metabolic changes in response to maturation signals, appear to play an important regulatory role as inhibition of mitochondrial ATP synthase prevents the downshift in mitochondrial membrane potential normally triggered by sperm and causes aggregates to form even when sperm are present (Bohnert and Kenyon, 2017). In this study, we identified a key role for a third organelle, the ER, in proteostasis renewal, and, using genetic and cell biological approaches, we deepened our understanding of all three organelles, the ER, lysosomes, and mitochondria, in oocyte protein quality control.
 
-## Limits of our genetic screen
+### Limits of our genetic screen
 
 To identify additional genes and processes involved in protein-aggregate metabolism in oocytes, we carried out a genome-wide screen for RNA inhibitions that cause proteins to aggregate even in the presence of sperm, namely, in hermaphrodites. We expected to identify genes and processes that are directly involved in the sperm-dependent proteostasis switch, as well as genes that function more indirectly in protein homeostasis and cellular quality control. Many of the genes we recovered affected large multiprotein complexes, such as the ribosome and proteasome, making a compelling argument for these complexes influencing protein aggregation, directly or indirectly. However, we may have missed processes carried out by only one or a few genes if the corresponding RNAi bacteria were missing from the RNAi library or otherwise problematic; or if their inhibition produced milder protein-aggregation phenotypes, like the ESCRT genes that failed our initial, stringent validation tests (Supplementary file 3).
 
@@ -104,7 +555,7 @@ To place the genes into a proteostasis pathway, we asked which hallmarks of the 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/62653/elife-62653-fig7-v1.jpg)
 
-## A role for the ER
+### A role for the ER
 
 Many of the genes we identified affected the ER (Figure 7 and Table 1). All of these gene inhibitions prevented lysosome acidification, arguing that ER function influences aggregate formation indirectly, acting at a relatively early step in the proteostasis pathway (though ER function could be required again, at later stages, as well). Using TEM and fluorescent reporters, we validated and extended previous observations of ER reorganization during C. elegans oocyte maturation (Langerak et al., 2019). We found that the ER assumes a stacked arrangement, spatially distinct from GFP::RHO-1 protein aggregates, in the proximal oocytes of females. Importantly, we found that neither the ER stacking nor protein-aggregate accumulation were a consequence of long-term oocyte quiescence (‘oocyte aging’) as both were present as soon as female oocytes appeared during development. When oocyte maturation was triggered by mating, the ER underwent a rapid reorganization that preceded aggregate removal, consistent with a model that ER activity might be a precondition for aggregate clearance.
 
@@ -112,7 +563,7 @@ The ER-gene inhibitions fell into two classes. First was a set of genes with kno
 
 Finally, we identified several genes that, to our knowledge, were not previously known to influence ER morphology; namely, dlg-1, kin-2 and ttr-14 (Table 1). How these genes act, directly or indirectly, to influence the ER could be interesting to explore in the future.
 
-## Regulation of lysosome acidification
+### Regulation of lysosome acidification
 
 Lysosome acidification may be a conserved aspect of oocyte maturation as it takes place in Xenopus as well as C. elegans (Bohnert and Kenyon, 2017). A central goal of this study was to better understand how this lysosome acidification is regulated in worms. To this end, we first generated functional, fluorescently tagged V-ATPase subunits expressed from their own loci. However, for reasons that we do not understand, none of these proteins was visible in the germline. We then obtained a stable, single-copy MosSCI strain in which gfp::vha-13 was expressed from a germline-specific promoter. In these animals, GFP::VHA-13 was visible, and we observed a striking sperm-dependent localization pattern. In the presence of sperm (in hermaphrodites), GFP::VHA-13 was located on lysosomes; that is, it assumed a punctate appearance that colocalized with LysoTracker signal. In the absence of sperm (in unmated females), the protein was distributed throughout the cytoplasm (Figure 7). The simplest interpretation of these findings is that signals from sperm trigger the localization of GFP::VHA-13 to lysosomes, and that this localization enables lysosome acidification. In principle, additional levels of control, such as translational repression of V-ATPase synthesis, could operate as well since our overexpressed construct could potentially override negative regulators, though we observed no evidence of this with serially diluted gfp RNAi treatments that progressively reduced visible GFP::VHA-13 protein levels.
 
@@ -122,7 +573,7 @@ We note that an interesting puzzle remains unexplained: If the multi-subunit lys
 
 The gene knockdowns identified by the screen nearly all prevented lysosomal acidification, reinforcing the central role of acidified lysosomes in clearing oocyte protein aggregates (Figure 7). Moreover, none of the knockdowns that failed to acidify lysosomes exhibited a punctate, lysosomal GFP::VHA-13 pattern (Table 1). This finding suggests that V-ATPase activity may not only be necessary but also sufficient for lysosome acidification; however, this interpretation remains tentative since we may simply have failed to identify the relevant genes in our screen. Finally, several of the knockdowns from our screen did not appear to affect ER morphology (and have not been reported to affect ER function), but did prevent V-ATPase localization, for example, srab-17, a chemosensory gene of the serpentine receptor class ab, and lgc-46, involved in chloride ion transport (Table 1). How, directly or indirectly, these proteins might influence V-ATPase localization and assembly is an interesting question to pursue in the future.
 
-## Two roles for mitochondria
+### Two roles for mitochondria
 
 Like the ER and lysosomes, mitochondria undergo morphological and functional changes during C. elegans oocyte maturation. In response to sperm, the mitochondria of proximal oocytes reduce their relatively high membrane potential and shift from a fragmented to a tubular structure. Inhibiting mitochondrial ATP synthase preserves this high membrane potential even when sperm are present and causes aggregates to accumulate. Injecting ADP, whose levels would be expected to rise as maturing oocytes initiate protein synthesis and acidify lysosomes, reduces the mitochondrial membrane potential in female oocytes, in an ATP synthase-dependent fashion. Together, these findings suggested the model that in the absence of sperm, mitochondria are held in a quiescent, poised state that relaxes as metabolic activity and ATP synthesis commence (Bohnert and Kenyon, 2017).
 
@@ -130,11 +581,11 @@ Whether C. elegans oocyte maturation is powered primarily by glycolysis or respi
 
 Our screen revealed an additional requirement for mitochondria in protein homeostasis; specifically, for Krebs cycle activity. Inhibiting mitochondrial aconitase (aco-2) produced a different phenotype from inhibiting ATP synthase; namely, a failure to acidify lysosomes. Why might this be? Again, the explanation seems unlikely to involve energy limitation since inhibiting ETC components or ATP synthase did not produce this phenotype. One possibility is that inhibiting the Krebs cycle affects lysosome acidification by affecting redox potential, as several Krebs cycle enzymes affecting protein aggregation (ogdh-1 and sdhd-1) encode dehydrogenases that produce the reducing agents NADH and FADH2, and aconitase supplies the substrate for another Krebs cycle dehydrogenase. Alternatively, other metabolites generated via Krebs cycle intermediates could influence the events leading to lysosome acidification. It will be interesting to explore this mechanism in the future.
 
-## Microautophagy
+### Microautophagy
 
 Previously, we observed lysosomes engulfing protein aggregates in a process reminiscent of microautophagy (Bohnert and Kenyon, 2017). Before these observations, microautophagy had not been described in C. elegans. In this study, using a candidate approach, we showed that inhibiting ESCRT-complex members, which are known to mediate microautophagy in other organisms, prevents aggregate accumulation in maturing C. elegans oocytes. Moreover, they influence protein aggregation independently of lysosomal acidification, consistent with their having a direct role. These findings strengthen the case that microautophagy is an active proteostasis mechanism in C. elegans, and likely the mechanism by which aggregates are cleared in response to oocyte maturation signals (Figure 7).
 
-## Implications for somatic proteostasis and aging
+### Implications for somatic proteostasis and aging
 
 Together, our findings all point towards lysosomal acidification being a key determinative event in oocyte protein-aggregate clearance. Notably, the screen hits that affected the lysosomal V-ATPase and COPII (ER-to-lysosomal vesicle transport) had a striking ability to accelerate age-dependent protein aggregation in somatic cells. Thus, the same mechanisms that enhance oocyte proteostasis in the immortal germline likely enhance somatic proteostasis as well. These findings may have implications for aging and longevity more broadly. In yeast, lysosomal acidity declines with age, and overexpressing the yeast ortholog of the C. elegans V-ATPase gene vha-13 delays this decline and extends replicative lifespan (Hughes and Gottschling, 2012). In worms, lysosome acidification also declines with age, and this decline is delayed in long-lived mutants (Baxi et al., 2017; Sun et al., 2020). Whether increasing V-ATPase function might be sufficient to extend lifespan in C. elegans is unclear, but overproduction of the transcription factor HLH-30/TFEB, which augments many lysosomal functions, has been shown to do so (Lapierre et al., 2013; O'Rourke and Ruvkun, 2013), and in mammals, similar perturbations slow the aging of the immune system (Zhang et al., 2019).
 
@@ -142,21 +593,66 @@ In summary, a genetic screen for proteostasis enhancers in the immortal germ lin
 
 ## Materials and methods
 
-## C. elegans strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RNAi reagents (Caenorhabditis elegans)</td>
+      <td>Multiple</td>
+      <td>C. elegans RNAi Collection (Source BioScience)</td>
+      <td>RRID:SCR_017064</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Strains, (Caenorhabditis elegans)</td>
+      <td>Multiple</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>RRID:SCR_007341</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.0.1</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and maintenance
 
 All strains used in this study are listed in Supplementary file 2. Hermaphrodites expressing germline transgenes were maintained at 25°C to delay silencing. Mutants carrying the thermosensitive, feminizing fem-1(hc17ts) allele, which causes cells that would normally become sperm instead to become oocytes, were maintained at the permissive temperature of 15°C and moved to 25°C for feminization prior to hatching, or at the L1 stage. Animals were grown under standard laboratory conditions (Brenner, 1974) and maintained on Nematode Growth Medium (NGM) seeded with OP50 bacteria, unless otherwise indicated.
 
-## Generation of C. elegans strains
+### Generation of C. elegans strains
 
-## Strain generation: genetic crosses
+#### Strain generation: genetic crosses
 
 The following C. elegans strains were created by standard genetic crosses: CF4542 fem-1(hc17ts) IV; ocfIs2[Ppie-1:mCherry::sp12::pie-1 3'UTR Cbr-unc-119(+)], CF4552 tjIs1[Ppie-1::gfp::rho-1 Cbr-unc-119(+)]; ocfIs2 [Ppie-1:mCherry::sp12::pie-1 3'UTR Cbr-unc-119(+)], CF4557 fem-1(hc17ts) IV; tjIs1[Ppie-1::gfp::rho-1 Cbr-unc-119(+)]; ocfIs2 [Ppie-1:mCherry::sp12::pie-1 3'UTR Cbr-unc-119(+)], CF4559 zuIs45[Pnmy-2::nmy-2::gfp Cbr-unc-119(+)] V; ocfIs2 [Ppie-1:mCherry::sp12::pie-1 3'UTR Cbr-unc-119(+)], CF4560 fem-1(hc17ts) IV; zuIs45[Pnmy-2::nmy-2::gfp Cbr-unc-119(+)] V; ocfIs2 [Ppie-1:mCherry::sp12::pie-1 3'UTR Cbr-unc-119(+)] and CF4599 sybSi35[Ppie-1::gfp::vha-13::vha-13 3'UTR Cbr-unc-119(+)] II; unc-119(ed3/+) III; fem-1(hc17ts) IV.
 
-## Strain generation: Mos1-mediated single-copy insertion
+#### Strain generation: Mos1-mediated single-copy insertion
 
 The strains PHX1414 sybSi35[Ppie-1::gfp::vha-13::vha-13 3'UTR Cbr-unc-119(+)] II; unc-119(ed3) III and PHX2690 sybIs2690[Ppie-1::vha-7::wrmScarlet::vha-7 3'UTR Cbr-unc-119(+)] I; unc-119(ed3) III were generated by SunyBiotech using MosSCI services.
 
-## Strain generation: CRISPR/Cas9-triggered homologous recombination
+#### Strain generation: CRISPR/Cas9-triggered homologous recombination
 
 Split-wrmScarlet11 was introduced at the C-terminus of KIN-19 using CRISPR/Cas9 and single-stranded oligodeoxynucleotide template (ssODN) in the strain CF4582 expressing split-wrmScarlet1-10 in somatic tissues (driven by the eft-3 promoter and unc-54 3′UTR) to obtain the strain CF4609. CRISPR insertion of split-wrmScarlet11 was performed following published protocols (Goudeau et al., 2021; Paix et al., 2016; Paix et al., 2015). Briefly, ribonucleoprotein complexes (protein Cas9, tracrRNA, crRNA) and ssODN were microinjected into the gonads of young adults using standard methods (Evans, 2006). Injected worms were singled and placed at 25°C overnight. The crRNA and ssODN template sequences used to generate split-wrmScarlet11 knock-in at the C terminus of kin-19 are the following: ssDNA_kin-19C: ACAGGGAGCTACCGTTCCATCAGCTGGAGTTCCAGCTGGAGTTGCACCAGGAGGAACTACTCCACAGGGAGGAGGATCCTACACCGTCGTCGAGCAATACGAGAAGTCCGTCGCCCGTCACTGCACCGGAGGATAAgacgttttgttgccgtcctgaggctttttaatccaaaaaagcccatgttaaatcatgtactatc; kin-19_C_crRNA: GGCAACAAAACGTCTTACTG(TGG).
 
@@ -164,92 +660,92 @@ KIN-19::split-wrmScarlet11 integrants were identified by screening for fluoresce
 
 Strains PHX731 vha-13(syb731[wrmScarlet::vha-13]) V, PHX1049 vha-13(syb1049[gfp::vha-13]) V, PHX1198 ieSi65[sun-1p::TIR1::sun-1 3′UTR + Cbr-unc-119(+)] II; unc-119(ed3) III; vha-11(syb1198[vha-11::gfp::degron]/+) IV, PHX1363 vha-4(syb1363[wrmScarlet::vha-4]/+) II, and PHX1317 vha-7(syb1317[vha-7::wrmScarlet]) IV were generated by SunyBiotech using CRISPR services for the Kenyon lab.
 
-## Nucleic acid reagents
+#### Nucleic acid reagents
 
 Synthetic nucleic acids were purchased from Integrated DNA Technologies (IDT). For split-wrmScarlet11 knock-in, a 200-mer HDR template was ordered in ssODN form (synthetic single-stranded oligodeoxynucleotide donors) from IDT.
 
-## RNA interference
+### RNA interference
 
 Unless otherwise indicated, RNAi was initiated in the early L4 larval stage prior to formation of oocytes but following much of development. One exception was fem-1 RNAi, which was initiated at hatching to ensure feminization. RNAi bacterial feeding was initiated and maintained for 36–40 hr prior to imaging to allow sufficient time for knockdown.
 
-## Genome-wide screen
+#### Genome-wide screen
 
 The Ahringer C. elegans RNAi collection containing 18,225 bacterial clones, targeting approximately 87% of currently annotated C. elegans genes (Source BioScience), was used for screening. A workflow for screening in liquid (Lehner et al., 2006) was modified suitably for our needs. For a single 96-well plate, SA115 (GFP::RHO-1) hermaphrodites were grown on NGM plates seeded with thick OP50 lawns (from two medium-sized plates) for ~4 days to obtain a high density of healthy and gravid young adults.
 
-## Day 1
+#### Day 1
 
 Animals were subjected to standard bleaching and the eggs were washed thoroughly and then incubated in M9 buffer overnight at 20°C on a rotating mixer to obtain synchronized L1-arrested animals.
 
-## Day 2
+#### Day 2
 
 L1 animals were transferred to NGM plates spotted with HT115 bacteria and incubated 24–28 hr at 25°C to reach the early L4 stage. The RNAi library plate was aseptically replicated into deep well plates (96-well, square; Greiner Bio-One) containing 1 ml LB (with 25 μg/ml carbenicillin and 12.5 μg/ml tetracycline) per well. Positive (vha-13 and atp-2) and negative (empty L4440 vector) controls were inoculated manually into blank wells if available or into wells on a separate control plate. The cultures were grown overnight at 37°C with shaking (185 rpm).
 
-## Day 3
+#### Day 3
 
 Fresh media (1 ml LB with 25 μg/ml carbenicillin) was added to the wells and incubated at 37°C, 155 rpm for 2 hr. Subsequently, 4 mM isopropyl β-d-1-thiogalactopyranoside (IPTG; Promega) was added to each RNAi well for induction of dsRNA synthesis, and plates were incubated for 3–4 hr at 30°C and 155 rpm. Synchronized L4 animals were washed off the HT115 plates with M9 and resuspended in NGM broth (with 25 μg/ml carbenicillin and 1 mM IPTG). This worm suspension (20 μl, ~10–15 animals) was added to each well of a Cellvis flat-bottom glass plate with high-performance #1.5 cover glass. The deep-well plate with dsRNA-induced RNAi bacteria was centrifuged, and the cells were resuspended in the same NGM broth as the worms. 35 μl of each cell suspension was transferred into the corresponding well of the Cellvis plate already seeded with L4 animals for bacterial RNAi feeding. The feeding plate was incubated at 20°C, 155 rpm with adequate humidity in the shaker to prevent worms from settling or drying out.
 
-## Day 5
+#### Day 5
 
 After checking for the presence of adults with fully developed germlines, 25 mM sodium azide (Sigma-Aldrich) was added to each well and the plate was subjected directly to imaging on a spinning-disk confocal microscope. Typically, approximately six such 96-well plates were handled simultaneously in a given round of screening. The presence of aggregates in 50% or more animals for a specific RNAi condition was considered a hit.
 
 Notes: The ability to automate image acquisition was complicated by a combination of low GFP::RHO-1 reporter expression and the close apposition of gonads with the intestine, an organ with significant autofluorescence. The density of animals and temperature of incubation determine developmental rate and were optimized by multiple pilot trials. Liquid handling was performed using Multidrop Combi from Thermo Scientific (initial inoculation of RNAi bacteria; day 2) and Agilent Bravo (resuspension and mixing of worms and induced bacteria; day 3). Following the validation rounds, the identities of the RNAi clones emerging from the screen were verified by sequencing (Quintara Biosciences). Investigators were blinded to the identity of RNAi clones, except controls, during screening.
 
-## RNAi feeding on agar plates
+#### RNAi feeding on agar plates
 
 Individual cultures were inoculated in tubes containing 1 ml LB (with 25 μg/ml carbenicillin and 12.5 μg/ml tetracycline) and incubated at 37°C with shaking (200 rpm). The cultures were diluted 1:10 in fresh LB containing only carbenicillin and allowed to grow for a further 2 hr, after which IPTG was added (4 mM) and tubes moved to a 30°C shaker for dsRNA induction (3–4 hr). Induced cultures were spotted on NGM plates containing 50 μg/ml carbenicillin and 2 mM IPTG, and the bacterial lawn was allowed to grow for 24–36 hr at 30°C, prior to introducing synchronized L4 animals.
 
-## Somatic KIN-19::split-wrmScarlet and polyQ (Q35::YFP) protein-aggregation RNAi screens
+#### Somatic KIN-19::split-wrmScarlet and polyQ (Q35::YFP) protein-aggregation RNAi screens
 
 KIN-19::split-wrmScarlet-expressing CF4609 animals were grown from a synchronized population of L1 animals on HT115 bacteria until they reached the L4 stage and then were transferred to plates seeded with RNAi bacteria until they reached day 2 of adulthood. Animals treated with ESCRT-complex subunits were exposed to RNAi clones from the L1 larval stage (Figure 6—figure supplement 4). The animals’ heads were imaged by confocal microscopy. Z-stacks were analyzed using ImageJ (Fiji); image manipulations consisted of maximum intensity projections of the entire stack. The images of KIN-19::split-wrmScarlet puncta were quantified by the investigator who acquired the images (Figure 6B), as well as by three blinded investigators (Figure 6—figure supplement 1).
 
 AM140 animals expressing the polyQ reporter Q35::YFP in body wall muscles were similarly synchronized and subjected to all assay pool RNAi starting at the L4 larval stage. The Q35::YFP reporter undergoes age-related aggregation starting on day 3 of adulthood; hence, the animals were imaged on day 2. Germline GFP::RHO-1 aggregation in SA115 animals, performed in parallel, was used as a control for successful gene knockdown. All positives from the initial screen were subjected to a second validation round. The initial screen was performed in liquid media in 96-well plates, and the validation was performed on regular NGM plates at 20°C.
 
-## Evaluation of screen hits and selection of ‘assay pool’ genes
+### Evaluation of screen hits and selection of ‘assay pool’ genes
 
 The initial whole-genome primary screen yielded 367 candidate genes, whose knockdown starting at the L4 larval stage resulted in GFP::RHO-1-aggregate accumulation within oocytes of young-adult hermaphrodites. False positives were eliminated by three independent rounds of validation, again using the GFP::RHO-1 strain, in which all candidates were subjected to the same workflow as the primary screen. The validation rounds were performed in a blinded fashion by two independent experimentalists and included the positive controls vha-13 and atp-2 RNAi (Bohnert and Kenyon, 2017). A candidate was considered to be positive if aggregation was observed in >50% animals in at least two out of the three rounds of validation. This led to the confirmation of 88 candidates required for preventing GFP::RHO-1 aggregation in the hermaphrodite germline. Next, we randomly selected 55 candidates (ensuring representation of all the GO categories in Figure 1D, as well as each individual orphan candidate) and subjected them to orthogonal verification using the NMY-2::GFP reporter. If the representative candidates from a particular GO category tested positive in this round of screening, the entire category was considered confirmed. Finally, we discarded candidates that were (i) known to be required for male gonad development or spermatogenesis, (ii) non-specific RNAi targets, or (iii) known targets of the RHO-1 protein, thereby confirming 81 verified genes from the screen (Figure 1C). Notably, our analysis did not allow the identification of false negatives and we manually tested some genes that we thought might be involved in the pathway [e.g., TOR pathway genes (which did produce a clear positive signal) and ESCRT-complex subunits].
 
 For selecting the ‘assay pool’ of genes used in all further phenotypic screens, we picked candidates from each GO category that were associated with consistent GFP::RHO-1 aggregation, with intermediate to strong phenotypes. In categories such as translation or protein degradation, we specifically included at least one candidate of small and large ribosomal subunits or structural and regulatory proteasomal subunits, respectively. Similarly, in the actin cytoskeletal category, we ensured that both structural and regulatory genes were included. No other specific criteria were used to avoid any bias in candidate selection. All confirmed orphans were included in the assay pool without any further selection.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Confocal fluorescence images were acquired on a Nikon Eclipse Ti CSU-X1 equipped with 405, 488, 561, and 640 nm lasers. Emission was collected through 455/50, 525/36, 605/70, or 700/75 nm filters on an Andor iXon Ultra EMCCD camera using the NIS-Elements software. Images were visualized using ImageJ Fiji. Maintenance and selection of transgenic worms expressing fluorescent markers were performed using a Leica M165 FC fluorescent stereo microscope equipped with a Sola SE-V light source. Photobleaching and wide-field experiments were performed using a Leica TIRF microscope equipped with an infinity scanner using 488 nm laser excitation. Emission was collected through a GFP-T filter cube on a Hamamatsu ORCA-Flash4 camera.
 
-## Preparing worms for microscopy
+#### Preparing worms for microscopy
 
 Worms imaged in 96-well plates were immobilized by adding sodium azide to the liquid medium at a concentration of 25 mM (except when measuring mitochondrial ΔΨ, where the medium was carefully removed, and animals immobilized with levamisole). For all other experiments, animals were picked from plates and placed in a drop of 2 mM levamisole (Sigma) on a 4% agarose pad resting on a glass slide, and then secured with a coverslip.
 
-## Dye staining
+#### Dye staining
 
 For experiments involving several different RNAi-knockdown conditions, RNAi feeding was set up similar to the screen workflow. The dyes LysoTracker Red DND-99 and DiOC6(3) ([2 μM] and BioTracker ATP-Red [8 μM]) were added to the liquid NGM prior to resuspension of dsRNA-induced RNAi bacterial cells. After addition of synchronized L4 animals, feeding and dye uptake were allowed to proceed at 20°C for 36–40 hr. The 96-well feeding plates were protected from light during this time. The plate was centrifuged, bacterial suspensions were carefully washed off, and the animals were resuspended in fresh M9 buffer for imaging. For experiments involving fewer knockdown conditions or pairwise comparisons between hermaphrodites and females, the dye feeding was performed on NGM agar plates as described previously (Bohnert and Kenyon, 2017).
 
 To analyze lysosome acidification in maturing oocytes, the ratio of signal intensities between proximal oocytes and the distal germline was calculated. In case of intestinal LysoTracker staining, signal intensities were not measured due to highly variable dye uptake and staining, and signal skewness (inhomogeneity) was measured instead. In both cases, multiple regions of oocytes or the anterior intestine were sampled for intensity or skewness values, and averaged for a single animal.
 
-## Analysis of skewness
+#### Analysis of skewness
 
 For semi-quantitatively analyzing the presence of GFP::VHA-13 puncta in oocytes and LysoTracker-stained puncta within the intestine, we measured skewness of the fluorescence signal. Skewness; that is, degree of symmetry or homogeneity of the signal, indicative of distinct lysosomal localization, was utilized as an alternative to counting GFP::VHA-13 puncta in individual oocytes or acidic LysoTracker-stained intestinal granules. Skewness was measured using the inbuilt function in Fiji (Analyze > Measure > Skewness). A skewness value of zero represents homogenous signal or lack of distinct puncta. For both GFP::VHA-13 and intestinal LysoTracker staining, skewness values were measured for multiple different regions and the mean value was reported for an individual animal.
 
-## Imaging oocyte ATP levels using a FRET-based sensor
+#### Imaging oocyte ATP levels using a FRET-based sensor
 
 The pie-1 promoter, the AT1.03 ATP-sensor (Imamura et al., 2009) containing two introns (codon optimized for C. elegans), and the tbb-2 3′UTR sequences were cloned into pUC57. Germline gene expression was achieved using a microinjection-based protocol with diluted transgenic DNA (Kelly et al., 1997). The Ppie-1::AT1.03::tbb-2 3′UTR construct (5 ng/µl) was co-injected with PvuII-digested genomic DNA fragments from Escherichia coli (100 ng/µl), and pRF4 (20 ng/µl) was used as a co-injection marker. Young N2E hermaphrodites were placed at 25°C after injection, and progeny were inspected for sensor expression 48 hr later. Larvae expressing the sensor were picked and transferred to RNAi feeding plates (clones targeting ETC genes) and allowed to grow until day 2 of adulthood before imaging.
 
 Imaging was performed on a wide-field DMI-8 equipped with a spectra-x light source using 427/10 or 510/10 excitation filters and a ×40/0.85 objective. Emission was collected through 475/20 or 540/21 emission filters using an FF444/520/590 dichroic and pco.edge 4.2 camera. For analysis, FRET-channel images were divided by donor-channel images using ImageJ Fiji after subtracting a background estimated from non-fluorescent worms and masked using the fluorescence from the acceptor image.
 
-## Mating experiments
+### Mating experiments
 
 An individual female animal was immobilized on an agarose pad using 2 mM levamisole, and the reporter of interest was imaged in the anterior gonad arm. Levamisole was washed off immediately, and the animal was introduced to an NGM plate containing young CB1490 male animals in a small spot of OP50 bacteria (five males:one female). The interactions were monitored using a benchtop stereo microscope, and when mating occurred, the female was transferred immediately to the agarose pad and imaged again, ensuring that the same oocytes were visualized before and after mating. Successful mating events were tracked by gonadal sheath contractions in response to sperm and subsequently confirmed by successful ovulation. Changes within individual oocytes upon mating were monitored up to 90 min at 10 min intervals. An identical procedure was performed for control females, except for exposure to males. Specific regions within proximal oocytes of control female animals were compared at all time points to determine the extent of signal intensity change due to photobleaching, with increasing time (Figure 2—figure supplement 5). In addition, regions of the distal germline were also monitored in mated animals (data not shown) to verify that the disappearance of the signal representing ER clusters and protein aggregates was not due to photobleaching.
 
-## KIN-19::split-wrmScarlet aggregate accumulation in somatic tissues
+### KIN-19::split-wrmScarlet aggregate accumulation in somatic tissues
 
 A synchronized population of KIN-19::split-wrmScarlet-expressing CF4609 animals was grown on OP50 from L1 at 20°C. Worms were transferred every other day to freshly seeded NGM plates to remove progeny. Worms were imaged by confocal microscopy at days 1, 4, 7, and 11 of adulthood.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 N2E hermaphrodites and fem-1(hc17ts) females were cultured for five generations at 15°C without starvation or contamination at any point. Animals from 12 small plates of each strain were bleached, and the synchronized eggs were collected and washed thoroughly in M9 and strained through 40 µm strainers to remove adult carcasses. Eggs were then resuspended in fresh M9 and incubated at 25°C overnight on a rotating mixer. Synchronized L1 animals were moved to NGM plates seeded with OP50 and incubated at 25°C (~50 animals per plate). Newly developed day 1 adults were further processed according to standard C. elegans TEM techniques (Hall et al., 2012). Briefly, the animals were loaded into 100-µm-deep specimen carriers and high-pressure frozen in a Bal-tec HPM (approximately 20 worms per carrier). After freezing, the carriers were transferred to vials containing freeze substitution (FS) media (1% OsO4% and 0.1% uranyl acetate in acetone), while still submerged in liquid N2. Frozen samples were slowly warmed to approximately −15°C while being agitated on a rotating platform (adapted from McDonald and Webb, 2011). Following FS, samples were infiltrated with epon resin/acetone series (25% resin [1 hr], 50% resin [1 hr], 75% resin [overnight], 100% resin [1 hr], 100% resin [1 hr], and the resin from last step replaced with fresh resin for embedding) and subjected to polymerization at 60°C for 48 hr. For staining, thin sections (70 nm thick) were cut on an ultramicrotome, picked up on Formvar-coated 50 mesh grids, and post-stained for 7 min in 2% uranyl acetate (aq), followed by 7 min in lead citrate. Images were acquired on a Tecnai 12 TEM.
 
-## Quantitative real‐time PCR
+### Quantitative real‐time PCR
 
 CF4609 animals treated with vps-20 RNAi, vps-54 RNAi or empty-vector control were recovered after imaging, collected in Eppendorf DNA LoBind tube with 10 µl of Cells-to-Ct lysis buffer supplemented with DNase I (Thermo Fisher Scientific) and placed at −80°C for 30 min. Tubes were thawed on ice and processed on a bead-beater for 30 s at 4°C. Worm lysates were incubated at room temperature for 10 min, and lysis was stopped by adding 2 µl of Stop Buffer from the Cells-to-Ct kit. Samples were then incubated at 95°C, 5 min. cDNAs were synthesized from RNA templates using a reverse transcription mix following the manufacturer’s instructions. qPCR was carried out on an QuantStudio 6 Flex Real-Time PCR System using a SYBR green-based real‐time kit (Kapa Biosystems). The RNA polymerase II subunit ama-1 was used as the housekeeping control. The qPCR primers were as follows: vps‐20 [TCCGATCAGGATAATGCGATTT]/[AGCGCCTGGAATTACCAAA]; vps‐54 [TTCACTCTTCACAGGTGAGTTC]/[CCTGTGATCTACATGATTCTCTCTC]; ama‐1 [GACGAGTCCAACGTACTCTCCAAC]/[TACTTGGGGCTCGATGGGC].
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 ImageJ Fiji was used to quantify and analyze attributes from image data, and images from a given experimental set were scaled and processed identically for comparison. Preparation of graphs and statistical analyses was performed using GraphPad Prism 8. Statistical tests used to determine significance and p-values are described in the figure legends of each experiment. Each violin plot representation includes the median and quartiles, and distributions in bar graphs represent mean ± standard deviation. Figures displaying numerical values obtained by analysis of microscopy images of dye-stained worms report the average of multiple independent values (technical replicates) from individual animals (biological replicates), each of which are represented as data points. Experiments reporting qualitative phenotypes from microscopy images were performed at least three times (independently) with 10–15 animals per condition in each individual experiment (except the primary screen that was done only once but validated in three independent experiments). For all other cases, sample sizes and replicates are included in the corresponding figure legends. No statistical methods were used to predetermine sample sizes. Investigators were blinded to identity of RNAi clones (except for controls) while imaging multiple knockdown conditions in 96-well plates.

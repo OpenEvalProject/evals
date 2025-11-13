@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02v51f717 Center for Quantitative Biology, Academy for Advanced Interdisciplinary Sudies, Peking University Beijing China
-2. https://ror.org/02v51f717 Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Sudies, Peking University Beijing China
+1. Center for Quantitative Biology, Academy for Advanced Interdisciplinary Sudies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
+2. Peking-Tsinghua Center for Life Sciences, Academy for Advanced Interdisciplinary Sudies, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
@@ -31,115 +31,438 @@ In the following Results section, we begin by outlining the primary assumptions 
 
 ## Results
 
-## Model description
+### Model description
 
-## Cell growth
+#### Cell growth
 
-In the limit of an extreme hyperosmotic shock, the remaining cytoplasmic volume is comparable to the volume of expelled water (Cayley et al., 1991; Scott Cayley et al., 2000; Miermont et al., 2013). Thus, the total cytoplasmic volume must be divided into a free volume and a bound volume (Whatmore and Reed, 1990; Cayley and Record, 2003; Lemière and Chang, 2023; Zhou et al., 2009; Rollin et al., 2023):(1)V=Vf+Vb.\begin{document}$$\displaystyle  V=V_f+V_b.$$\end{document}
+In the limit of an extreme hyperosmotic shock, the remaining cytoplasmic volume is comparable to the volume of expelled water (Cayley et al., 1991; Scott Cayley et al., 2000; Miermont et al., 2013). Thus, the total cytoplasmic volume must be divided into a free volume and a bound volume (Whatmore and Reed, 1990; Cayley and Record, 2003; Lemière and Chang, 2023; Zhou et al., 2009; Rollin et al., 2023):
 
-The free volume comes from the free water that is osmotically active, and the bound volume includes the bound water Vbw\begin{document}$  V_{bw}$\end{document} (i.e. water of macromolecular hydration) and the volume of dry mass Vbd\begin{document}$  V_{bd}$\end{document} (Figure 1A). Because the fraction of protein mass in the total dry mass is typically constant and the volume of bound water is proportional to the dry mass (Cayley et al., 1991), the bound volume is proportional to the total protein mass mp\begin{document}$  m_{p}$\end{document} through Vb=αmp\begin{document}$  V_{b}=\alpha m_{p}$\end{document}. Here, α\begin{document}$  \alpha$\end{document} is a constant, and its values for some model organisms are included in Table 1, and its detailed calculations from experimental data are in Section B of Appendix 1.
+$$
+V=V_{f}+V_{b}.
+$$
+
+The free volume comes from the free water that is osmotically active, and the bound volume includes the bound water $V_{bw}$ (i.e. water of macromolecular hydration) and the volume of dry mass $V_{bd}$ (Figure 1A). Because the fraction of protein mass in the total dry mass is typically constant and the volume of bound water is proportional to the dry mass (Cayley et al., 1991), the bound volume is proportional to the total protein mass $m_{p}$ through $V_{b}=\alpham_{p}$. Here, $\alpha$ is a constant, and its values for some model organisms are included in Table 1, and its detailed calculations from experimental data are in Section B of Appendix 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig1-v1.jpg)
 
-**Figure 1.:** (A) The total cytoplasmic volume includes the free and bound volumes. The free volume sets the internal osmotic pressure , where Πin=kBTNa/Vf\begin{document}$  \Pi_{in}=k_{B}TN_{a}/V_{f}$\end{document} is the free volume and Vf\begin{document}$  V_{f}$\end{document} is the number of osmolyte molecules. The bound volume Na\begin{document}$  N_{a}$\end{document} comprises the dry mass Vb\begin{document}$  V_{b}$\end{document} and bound water Vbd\begin{document}$  V_{bd}$\end{document}, i.e., Vbw\begin{document}$  V_{bw}$\end{document}, all proportional to the total protein mass. (Vb=Vbd+Vbw\begin{document}$  V_{b}=V_{bd}+V_{bw}$\end{document}B) We model osmoregulation through the change of ribosome translation strategy. When the protein density increases, the fraction of ribosomes translating the osmolyte-producing protein  is upregulated, leading to the subsequent increase in the mass fraction of the osmolyte-producing protein χa\begin{document}$  \chi_{a}$\end{document}. Here, ϕa\begin{document}$  \phi_{a}$\end{document} denotes the dry-mass growth rate. (μr\begin{document}$  \mu_{r}$\end{document}C) The cell-wall synthesis process is controlled by the turgor pressure , which is proportional to the cell-wall strain σ\begin{document}$  \sigma$\end{document}. Here, ϵ=(V−Vcw)/Vcw\begin{document}$  \epsilon=(V-V_{cw})/V_{cw}$\end{document} is the cytoplasmic volume, and V\begin{document}$  V$\end{document} is the relaxed cell-wall volume.Vcw\begin{document}$  V_{cw}$\end{document}
+**Figure 1.:** (A) The total cytoplasmic volume includes the free and bound volumes. The free volume sets the internal osmotic pressure $Π_{in}=k_{B}TN_{a}/V_{f}$, where $V_{f}$ is the free volume and $N_{a}$ is the number of osmolyte molecules. The bound volume $V_{b}$ comprises the dry mass $V_{bd}$ and bound water $V_{bw}$, i.e., $V_{b}=V_{bd}+V_{bw}$, all proportional to the total protein mass. (B) We model osmoregulation through the change of ribosome translation strategy. When the protein density increases, the fraction of ribosomes translating the osmolyte-producing protein $χ_{a}$ is upregulated, leading to the subsequent increase in the mass fraction of the osmolyte-producing protein $ϕ_{a}$. Here, $\mu_{r}$ denotes the dry-mass growth rate. (C) The cell-wall synthesis process is controlled by the turgor pressure $\sigma$, which is proportional to the cell-wall strain $ϵ=(V−V_{cw})/V_{cw}$. Here, $V$ is the cytoplasmic volume, and $V_{cw}$ is the relaxed cell-wall volume.
 
-The free volume changes due to osmotic imbalance, and the growth rate of the free volume follows(2)μf≡Vf˙Vf=kw(Πin−Πout−σ),\begin{document}$$\displaystyle  \mu_f \equiv \frac{\dot{V_f}}{V_f} = k_w (\Pi_{in} - \Pi_{out} - \sigma),$$\end{document}
+**Table 1.**
+ Model parameters for different species in their corresponding reference growth media.
 
-where Πin\begin{document}$  \Pi_{in}$\end{document}, Πout\begin{document}$  \Pi_{out}$\end{document} are the internal (i.e. cytoplasmic) and external osmotic pressures, respectively (Cadart et al., 2019). Πin\begin{document}$  \Pi_{in}$\end{document} is proportional to the concentration of osmolyte molecules in the free volume: Πin=kBTNa/Vf\begin{document}$  \Pi_{in}=k_{B}TN_{a}/V_{f}$\end{document}, where Na\begin{document}$  N_{a}$\end{document} is the number of osmolyte molecules, kB\begin{document}$  k_{B}$\end{document} is the Boltzmann constant, and T\begin{document}$  T$\end{document} is the temperature. For simplicity, we assume that the production speed of osmolyte molecules is proportional to the mass of osmolyte-producing protein (Materials and methods). Here, we have replaced the difference of the hydrostatic pressures across the cell membrane with the turgor pressure σ\begin{document}$  \sigma$\end{document}, assuming that mechanical equilibrium is always satisfied. kw\begin{document}$  k_{w}$\end{document} is the filtration coefficient quantifying the water permeability of the cell membrane (Solenov et al., 2017).
+
+<table>
+  <thead>
+    <tr>
+      <th>E. coli</th>
+      <th>Value</th>
+      <th colspan="3">Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>σc\begin{document}$\sigma_{c}$\end{document}</td>
+      <td>1 [atm]</td>
+      <td colspan="3">Rojas and Huang, 2018</td>
+    </tr>
+    <tr>
+      <td>α\begin{document}$\alpha$\end{document}</td>
+      <td>1.68 [ml/g]</td>
+      <td colspan="3">Deduce from Scott Cayley et al., 2000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MBM (Cayley et al., 1991)</td>
+      <td>MOPS+fructose (Dai et al., 2018)</td>
+      <td>MOPS+glucose (Dai et al., 2018)</td>
+      <td>LB (Rojas et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>krmaxχr\begin{document}$k_{r}^{\max}\chi_{r}$\end{document}</td>
+      <td>0.743 [1/hr]</td>
+      <td>0.776 [1/hr]</td>
+      <td>1.14 [1/hr]</td>
+      <td>2.05 [1/hr]</td>
+    </tr>
+    <tr>
+      <td>Πin,c\begin{document}$\Pi_{in,c}$\end{document}</td>
+      <td>1.54 [Osm]</td>
+      <td>1.49 [Osm]</td>
+      <td>1.61 [Osm]</td>
+      <td>2.18 [Osm]</td>
+    </tr>
+    <tr>
+      <td>Hr/(Ha+1)\begin{document}$H_{r}/(H_{a}+1)$\end{document}</td>
+      <td>1.68</td>
+      <td>1.30</td>
+      <td>1.18</td>
+      <td>2.72</td>
+    </tr>
+    <tr>
+      <td>Bacillus subtilis (LB)</td>
+      <td>Value</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>σc\begin{document}$\sigma_{c}$\end{document}</td>
+      <td>19 [atm]</td>
+      <td>Whatmore and Reed, 1990</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2.52 [1/hr]</td>
+      <td rowspan="3">Fit to Rojas et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Hr/(Ha+1)\begin{document}$H_{r}/(H_{a}+1)$\end{document}</td>
+      <td>2.18</td>
+    </tr>
+    <tr>
+      <td>Πin,c\begin{document}$\Pi_{in,c}$\end{document}</td>
+      <td>3.09 [Osm]</td>
+    </tr>
+    <tr>
+      <td>S. pombe (YE5S)</td>
+      <td>Value</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>Πout\begin{document}$\Pi_{out}$\end{document}</td>
+      <td>0.2 [Osm]</td>
+      <td>Atilgan et al., 2015</td>
+    </tr>
+    <tr>
+      <td>σc\begin{document}$\sigma_{c}$\end{document}</td>
+      <td>10 [atm]</td>
+      <td>Lemière and Chang, 2023</td>
+    </tr>
+    <tr>
+      <td>ρ^d\begin{document}$\hat{\rho}_{d}$\end{document}</td>
+      <td>0.282 [g/ml]</td>
+      <td>Odermatt et al., 2021</td>
+    </tr>
+    <tr>
+      <td>ρp\begin{document}$\rho_{p}$\end{document}</td>
+      <td>0.104 [g/ml]</td>
+      <td>See Section B of Appendix 1</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>0.35 [1/hr]</td>
+      <td>Knapp et al., 2019</td>
+    </tr>
+    <tr>
+      <td>f\begin{document}$  f$\end{document}</td>
+      <td>0.788</td>
+      <td>Fit to Molines et al., 2022 (Section B of Appendix 1)</td>
+    </tr>
+    <tr>
+      <td>ϵ\begin{document}$  \epsilon$\end{document}</td>
+      <td>0.584</td>
+      <td>Atilgan et al., 2015</td>
+    </tr>
+    <tr>
+      <td>α\begin{document}$\alpha$\end{document}</td>
+      <td>2.60 [ml/g]</td>
+      <td>See Section B of Appendix 1</td>
+    </tr>
+    <tr>
+      <td>G\begin{document}$G$\end{document}</td>
+      <td>17.1 [atm]</td>
+      <td>G=σ/ϵ\begin{document}$G=\sigma/\epsilon$\end{document}</td>
+    </tr>
+    <tr>
+      <td>Πout,c\begin{document}$\Pi_{out,c}$\end{document}</td>
+      <td>3.5 [Osm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>kw\begin{document}$k_{w}$\end{document}</td>
+      <td>100 [1/(min atm)]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ρc\begin{document}$\rho_{c}$\end{document}</td>
+      <td>0.267 [g/ml]</td>
+      <td>Deduce from Molines et al., 2022 (Section B of Appendix 1)</td>
+    </tr>
+    <tr>
+      <td>Hr\begin{document}$H_{r}$\end{document}</td>
+      <td>3.03</td>
+      <td>Copied from S. cerevisiae in YPD</td>
+    </tr>
+    <tr>
+      <td>Ha\begin{document}$H_{a}$\end{document}</td>
+      <td>0.974</td>
+      <td>Set according to Πin/Πin,c=(ρp/ρc)Ha\begin{document}$  \Pi_{in}/\Pi_{in,c}=\left(\rho_{p}/\rho_{c}\right)^{H_{a}}$\end{document}</td>
+    </tr>
+    <tr>
+      <td>krmaxχr\begin{document}$k_{r}^{\max}\chi_{r}$\end{document}</td>
+      <td>0.371 [1/hr]</td>
+      <td>Set according to μr=krmaxχr(1−(ρp/ρc)Hr)\begin{document}$\mu_{r}=k_{r}^{\max}\chi_{r}\left(1-\left(\rho_{p}/\rho_{c}\right)^{H_{r}}\right)$\end{document}</td>
+    </tr>
+    <tr>
+      <td>kBTkamaxχamax\begin{document}$k_{B}Tk_{a}^{\max}\chi_{a}^{\max}$\end{document}</td>
+      <td>2.25 [(atm ml)/(g min)]</td>
+      <td>Set according to kBTkamaxχamaxηaρp=krmaxχrΠin\begin{document}$k_{B}Tk_{a}^{\max}\chi_{a}^{\max}\eta_{a}\rho_{p}=k_{r}^{\max}\chi_{r}\Pi_{in}$\end{document}</td>
+    </tr>
+    <tr>
+      <td>τcw−\begin{document}$\tau_{cw}^{-}$\end{document}</td>
+      <td>0.1 [min]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>τcw+\begin{document}$  \tau_{cw}^{+}$\end{document}</td>
+      <td>12.5 [min]</td>
+      <td rowspan="2">Fit to Knapp et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Hcw\begin{document}$H_{cw}$\end{document}</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>S. cerevisiae (YPD)</td>
+      <td>Value</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>Πout\begin{document}$\Pi_{out}$\end{document}</td>
+      <td>0.26 [Osm]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>σc\begin{document}$\sigma_{c}$\end{document}</td>
+      <td>3.1 [atm]</td>
+      <td>Lemière and Chang, 2023</td>
+    </tr>
+    <tr>
+      <td>ρ^d\begin{document}$\hat{\rho}_{d}$\end{document}</td>
+      <td>0.295 [g/ml]</td>
+      <td>Feijó Delgado et al., 2013</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>0.448 [1/hr]</td>
+      <td>Our experiment</td>
+    </tr>
+    <tr>
+      <td>f\begin{document}$f$\end{document}</td>
+      <td>0.6</td>
+      <td>Miermont et al., 2013</td>
+    </tr>
+    <tr>
+      <td>ρp\begin{document}$\rho_{p}$\end{document}</td>
+      <td>0.155 [g/ml]</td>
+      <td>See Section B of Appendix 1</td>
+    </tr>
+    <tr>
+      <td>ρc\begin{document}$\rho_{c}$\end{document}</td>
+      <td>0.994 [g/ml]</td>
+      <td>See Section B of Appendix 1</td>
+    </tr>
+    <tr>
+      <td>α\begin{document}$\alpha$\end{document}</td>
+      <td>4.29 [ml/g]</td>
+      <td>See Section B of Appendix 1</td>
+    </tr>
+    <tr>
+      <td>krmaxχr\begin{document}$k_{r}^{\max}\chi_{r}$\end{document}</td>
+      <td>0.450 [1/hr]</td>
+      <td rowspan="3">Fit to our data</td>
+    </tr>
+    <tr>
+      <td>Πin,c\begin{document}$\Pi_{in,c}$\end{document}</td>
+      <td>3.52 [Osm]</td>
+    </tr>
+    <tr>
+      <td>Hr/(Ha+1)\begin{document}$H_{r}/(H_{a}+1)$\end{document}</td>
+      <td>2.54</td>
+    </tr>
+    <tr>
+      <td>Hr\begin{document}$H_{r}$\end{document}</td>
+      <td>3.03</td>
+      <td>Set according to 1−(ρp/ρc)Hr=μ/(krmaxχr)\begin{document}$1-(\rho_{p}/\rho_{c})^{H_{r}}=\mu/(k_{r}^{\max}\chi_{r})$\end{document}</td>
+    </tr>
+  </tbody>
+</table>
+
+The free volume changes due to osmotic imbalance, and the growth rate of the free volume follows
+
+$$
+\mu_{f}≡\frac{V_{f}˙}{V_{f}}=k_{w}(Π_{in}−Π_{out}−\sigma),
+$$
+
+where $Π_{in}$, $Π_{out}$ are the internal (i.e. cytoplasmic) and external osmotic pressures, respectively (Cadart et al., 2019). $Π_{in}$ is proportional to the concentration of osmolyte molecules in the free volume: $Π_{in}=k_{B}TN_{a}/V_{f}$, where $N_{a}$ is the number of osmolyte molecules, $k_{B}$ is the Boltzmann constant, and $T$ is the temperature. For simplicity, we assume that the production speed of osmolyte molecules is proportional to the mass of osmolyte-producing protein (Materials and methods). Here, we have replaced the difference of the hydrostatic pressures across the cell membrane with the turgor pressure $\sigma$, assuming that mechanical equilibrium is always satisfied. $k_{w}$ is the filtration coefficient quantifying the water permeability of the cell membrane (Solenov et al., 2017).
 
 The species of osmolytes involved in osmoregulation are diverse across different microorganisms and conditions; nevertheless, they are primarily small organic molecules (Kempf and Bremer, 1998; Empadinhas and da Costa, 2008). In this work, we simplify the problem by considering a single species of osmolyte that dominates the internal osmotic pressure, e.g., glycerol in Saccharomyces cerevisiae (Reed et al., 1987; Hohmann et al., 2007; Blomberg, 2022) and glycine betaine in Escherichia coli (Wood, 2015), with the production speed proportional to the mass of the osmolyte-producing protein (Figure 1A and Materials and methods).
 
-To model gene expression regulation, we introduce χa\begin{document}$  \chi_{a}$\end{document} and χr\begin{document}$  \chi_{r}$\end{document} as the fractions of ribosomes translating the osmolyte-producing protein and ribosomal proteins (Figure 1B and Materials and methods). In steady states, χa\begin{document}$  \chi_{a}$\end{document} and χr\begin{document}$  \chi_{r}$\end{document} are equal to the mass fractions of osmolyte-producing protein and ribosomal proteins in the total proteome, ϕa=mp,a/mp\begin{document}$  \phi_{a}=m_{p,a}/m_{p}$\end{document} and ϕr=mp,r/mp\begin{document}$  \phi_{r}=m_{p,r}/m_{p}$\end{document}, respectively (Scott et al., 2010; Wang and Lin, 2022). In this work, we assume that the dry-mass growth rate is proportional to the fraction of ribosomal proteins within the total proteome for simplicity, μr=krmp,r/mp=krϕr\begin{document}$  \mu_{r}=k_{r}m_{p,r}/m_{p}=k_{r}\phi_{r}$\end{document}. This assumption leverages the fact that ribosomes are responsible for producing all proteins. The proportionality coefficient kr\begin{document}$  k_{r}$\end{document} encapsulates the efficiency of ribosomal activity, being proportional to the elongation speed of the ribosome. We remark that kr\begin{document}$  k_{r}$\end{document} is influenced by the crowding effect, which we address later. The growth rate of the cytoplasmic volume, μ=V˙/V\begin{document}$  \mu=\dot{V}/V$\end{document}, is a weighted average of the free-volume growth rate μf\begin{document}$  \mu_{f}$\end{document} and the dry-mass growth rate μr\begin{document}$  \mu_{r}$\end{document}:(3)μ=fμf+(1−f)μr.\begin{document}$$\displaystyle  \mu=f\mu_f + (1-f)\mu_r.$$\end{document}
+To model gene expression regulation, we introduce $χ_{a}$ and $χ_{r}$ as the fractions of ribosomes translating the osmolyte-producing protein and ribosomal proteins (Figure 1B and Materials and methods). In steady states, $χ_{a}$ and $χ_{r}$ are equal to the mass fractions of osmolyte-producing protein and ribosomal proteins in the total proteome, $ϕ_{a}=m_{p,a}/m_{p}$ and $ϕ_{r}=m_{p,r}/m_{p}$, respectively (Scott et al., 2010; Wang and Lin, 2022). In this work, we assume that the dry-mass growth rate is proportional to the fraction of ribosomal proteins within the total proteome for simplicity, $\mu_{r}=k_{r}m_{p,r}/m_{p}=k_{r}ϕ_{r}$. This assumption leverages the fact that ribosomes are responsible for producing all proteins. The proportionality coefficient $k_{r}$ encapsulates the efficiency of ribosomal activity, being proportional to the elongation speed of the ribosome. We remark that $k_{r}$ is influenced by the crowding effect, which we address later. The growth rate of the cytoplasmic volume, $\mu=V˙/V$, is a weighted average of the free-volume growth rate $\mu_{f}$ and the dry-mass growth rate $\mu_{r}$:
 
-Here, f\begin{document}$  f$\end{document} is the free volume fraction in the total cytoplasmic volume: f=Vf/V\begin{document}$  f=V_{f}/V$\end{document}. In this work, we refer to the growth rate as the growth rate of cytoplasmic volume μ unless otherwise mentioned.
+$$
+\mu=f\mu_{f}+(1−f)\mu_{r}.
+$$
 
-## Osmoregulation
+Here, $f$ is the free volume fraction in the total cytoplasmic volume: $f=V_{f}/V$. In this work, we refer to the growth rate as the growth rate of cytoplasmic volume μ unless otherwise mentioned.
 
-Dai et al., 2018, found that the reduction of growth rate as the external osmolarity increases is dominated by the reduction of the translation speed kr\begin{document}$  k_{r}$\end{document} instead of the ribosomal fraction ϕr\begin{document}$  \phi_{r}$\end{document}. Therefore, we assume that the fraction of ribosomes translating themselves χr\begin{document}$  \chi_{r}$\end{document} is constant for simplicity. To model osmoregulation, we introduce a coupling between the fraction of ribosomes translating the osmolyte-producing protein χa\begin{document}$  \chi_{a}$\end{document} and the degree of intracellular crowding. We quantify the crowding effects by the protein density, defined as ρp=mp/Vf\begin{document}$  \rho_{p}=m_{p}/V_{f}$\end{document}, which serves as a good proxy for the dry-mass density measured in the experiments (Feijó Delgado et al., 2013; Odermatt et al., 2021) (see Table 1 and the detailed discussion on the relations between the two densities in Section A of Appendix 1) and propose the following relation:(4)χa=χamax(ρpρc)Ha.\begin{document}$$\displaystyle  \chi_a = \chi_a^{\max} \left(\frac{\rho_p}{\rho_{c}} \right)^{H_a}.$$\end{document}
+#### Osmoregulation
 
-Here, the parameter Ha\begin{document}$  H_{a}$\end{document} quantifies the sensitivity of osmoregulation to intracellular crowding. ρc\begin{document}$  \rho_{c}$\end{document} is the critical protein density above which intracellular processes are frozen, which we introduce later in Equation 8. Therefore, χamax\begin{document}$  \chi_{a}^{\max}$\end{document} represents the largest possible ϕa\begin{document}$  \phi_{a}$\end{document} since all intracellular dynamics is frozen when ρp>ρc\begin{document}$  \rho_{p} \gt \rho_{c}$\end{document}. We remark that our model can be directly generalized to cases where osmolyte molecules are extracted from the environment. One only needs to change the interpretation of the parameter ka\begin{document}$  k_{a}$\end{document} in Equation 17 from the synthesis rate to the uptake rate, and all the results are the same.
+Dai et al., 2018, found that the reduction of growth rate as the external osmolarity increases is dominated by the reduction of the translation speed $k_{r}$ instead of the ribosomal fraction $ϕ_{r}$. Therefore, we assume that the fraction of ribosomes translating themselves $χ_{r}$ is constant for simplicity. To model osmoregulation, we introduce a coupling between the fraction of ribosomes translating the osmolyte-producing protein $χ_{a}$ and the degree of intracellular crowding. We quantify the crowding effects by the protein density, defined as $ρ_{p}=m_{p}/V_{f}$, which serves as a good proxy for the dry-mass density measured in the experiments (Feijó Delgado et al., 2013; Odermatt et al., 2021) (see Table 1 and the detailed discussion on the relations between the two densities in Section A of Appendix 1) and propose the following relation:
 
-## Cell-wall synthesis regulation
+$$
+χ_{a}=χ_{a}^{max}(\frac{ρ_{p}}{ρ_{c}})^{H_{a}}.
+$$
 
-In this work, the cell wall is regarded as a linear elastic material, where the turgor pressure is proportional to the elastic strain of the cell wall by a constant modulus G\begin{document}$  G$\end{document} such that(5)σ=Gϵ=G(VVcw−1).\begin{document}$$\displaystyle  \sigma = G \epsilon = G\left(\frac{V}{V_{cw}}-1 \right).$$\end{document}
+Here, the parameter $H_{a}$ quantifies the sensitivity of osmoregulation to intracellular crowding. $ρ_{c}$ is the critical protein density above which intracellular processes are frozen, which we introduce later in Equation 8. Therefore, $χ_{a}^{max}$ represents the largest possible $ϕ_{a}$ since all intracellular dynamics is frozen when $ρ_{p}>ρ_{c}$. We remark that our model can be directly generalized to cases where osmolyte molecules are extracted from the environment. One only needs to change the interpretation of the parameter $k_{a}$ in Equation 17 from the synthesis rate to the uptake rate, and all the results are the same.
 
-Here, Vcw\begin{document}$  V_{cw}$\end{document} is the relaxed cell-wall volume (Figure 1C). When plasmolysis happens, the cell membrane detaches from the cell wall (V<Vcw\begin{document}$  V \lt V_{cw}$\end{document}), and the turgor pressure is zero. We introduce the growth rate of the relaxed cell-wall volume as μcw=V˙cw/Vcw\begin{document}$  \mu_{cw}=\dot{V}_{cw}/V_{cw}$\end{document}. Given that in the steady states of cell growth, μr=μcw\begin{document}$  \mu_{r}=\mu_{cw}$\end{document}, we write μcw\begin{document}$  \mu_{cw}$\end{document} in the following form without losing generality,(6)μcw=μrηcw.\begin{document}$$\displaystyle  \mu_{cw} = \mu_{r} \eta_{cw}.$$\end{document}
+#### Cell-wall synthesis regulation
 
-Here, ηcw\begin{document}$  \eta_{cw}$\end{document} is a coarse-grained parameter modeling the active regulation of cell-wall synthesis, which we refer to as the cell-wall synthesis efficiency in the following.
+In this work, the cell wall is regarded as a linear elastic material, where the turgor pressure is proportional to the elastic strain of the cell wall by a constant modulus $G$ such that
 
-Experiments suggested that turgor pressure induces cell-wall synthesis, e.g., through mechanosensors on cell membrane in S. pombe (Dupres et al., 2009; Neeli-Venkata et al., 2021), by increasing the pore size of the peptidoglycan network (Typas et al., 2010) and by accelerating the moving velocity of the cell-wall synthesis machinery in E. coli (Amir and Nelson, 2012). Guided by these ideas, we model the effects of turgor pressure on the time dependence of the cell-wall synthesis efficiency as(7)η˙cw=1τcw±[(σσc)Hcw−ηcw].\begin{document}$$\displaystyle  \dot{\eta}_{cw} = \frac1{\tau_{cw}^{\pm}} \left[\left(\frac{\sigma}{\sigma_c} \right)^{H_{cw}} - \eta_{cw} \right].$$\end{document}
+$$
+\sigma=Gϵ=G(\frac{V}{V_{cw}}−1).
+$$
 
-Here, σc\begin{document}$  \sigma_{c}$\end{document} is a characteristic scale of turgor pressure depending on species. τcw+\begin{document}$  \tau_{cw}^{+}$\end{document} (τcw−\begin{document}$  \tau_{cw}^{-}$\end{document}) is the relaxation timescale when the current ηcw\begin{document}$  \eta_{cw}$\end{document} is below (above) its target value ηcwst=(σ/σc)Hcw\begin{document}$  \eta_{cw}^{st}=(\sigma/\sigma_{c})^{H_{cw}}$\end{document}. The former (latter) happens immediately after the cell is subject to a hypoosmotic (hyperosmotic) shock. In the extreme case of plasmolysis, the insertion of newly synthesized cell-wall materials is interrupted immediately due to the separation of the cell membrane and cell wall. Meanwhile, the upregulation of cell-wall synthesis rate presumably takes a longer time. For example, in fungi, where polarized growth is generally adopted, the upregulation of the cell-wall synthesis rate involves reorienting the polarisome complex to the growing tip, directing actin polarization, and delivering cell-wall synthesis machinery (Kono et al., 2012; Haupt et al., 2018). Therefore, we set τcw+≫τcw−\begin{document}$  \tau_{cw}^{+}\gg\tau_{cw}^{-}$\end{document} in this work (see details of parameter values in Table 1).
+Here, $V_{cw}$ is the relaxed cell-wall volume (Figure 1C). When plasmolysis happens, the cell membrane detaches from the cell wall ($V<V_{cw}$), and the turgor pressure is zero. We introduce the growth rate of the relaxed cell-wall volume as $\mu_{cw}=V˙_{cw}/V_{cw}$. Given that in the steady states of cell growth, $\mu_{r}=\mu_{cw}$, we write $\mu_{cw}$ in the following form without losing generality,
 
-## Intracellular crowding
+$$
+\mu_{cw}=\mu_{r}η_{cw}.
+$$
 
-Multiple experiments suggested the cytoplasm of bacteria, yeast, and mammalian cells resemble crowded colloidal suspensions in which the mobilities of biomolecules are significantly reduced compared with dilute solutions (Miermont et al., 2013; Parry et al., 2014; Mika et al., 2014; Nishizawa et al., 2017; Ebata et al., 2023), a signature of glass transition (Hunter and Weeks, 2012). Intracellular crowding affects biochemical processes globally, e.g., slowing down translation and intracellular signaling by suppressing protein diffusion (Miermont et al., 2013; Parry et al., 2014; Mika et al., 2014; Dai et al., 2018; Molines et al., 2022). Therefore, we assume that the speed of osmolyte production, translational elongation, and cell-wall synthesis are all slowed down by the same crowding factor:(8)ηr=1−(ρpρc)Hr.\begin{document}$$\displaystyle  \eta_r = 1 - \left(\frac{\rho_p}{\rho_{c}} \right)^{H_r}.$$\end{document}
+Here, $η_{cw}$ is a coarse-grained parameter modeling the active regulation of cell-wall synthesis, which we refer to as the cell-wall synthesis efficiency in the following.
 
-Here, ρc\begin{document}$  \rho_{c}$\end{document} is the critical protein density, and Hr\begin{document}$  H_{r}$\end{document} is a parameter to quantify the sensitivity of biochemical reactions to the intracellular density. For example, the translational elongation speed is suppressed by intracellular crowding through kr=krmaxηr\begin{document}$  k_{r}=k_{r}^{max}\eta_{r}$\end{document}. Therefore, the dry-mass growth rate becomes μr=μrmaxηr\begin{document}$  \mu_{r}=\mu_{r}^{max}\eta_{r}$\end{document}, where we introduce μrmax=krmaxϕr\begin{document}$  \mu_{r}^{max}=k_{r}^{max}\phi_{r}$\end{document}.
+Experiments suggested that turgor pressure induces cell-wall synthesis, e.g., through mechanosensors on cell membrane in S. pombe (Dupres et al., 2009; Neeli-Venkata et al., 2021), by increasing the pore size of the peptidoglycan network (Typas et al., 2010) and by accelerating the moving velocity of the cell-wall synthesis machinery in E. coli (Amir and Nelson, 2012). Guided by these ideas, we model the effects of turgor pressure on the time dependence of the cell-wall synthesis efficiency as
 
-The details of our model are summarized in Materials and methods, with five independent variables: the protein density ρp\begin{document}$  \rho_{p}$\end{document}, the mass fraction of osmolyte-producing protein ϕa\begin{document}$  \phi_{a}$\end{document}, the internal osmotic pressure Πin\begin{document}$  \Pi_{in}$\end{document}, the cell-wall strain ϵ\begin{document}$  \epsilon$\end{document}, and the cell-wall synthesis efficiency ηcw\begin{document}$  \eta_{cw}$\end{document}. For convenience, Appendix 1—table 3 provides a comprehensive list of all symbols used in the main text along with their meanings.
+$$
+η˙_{cw}=\frac{1}{\tau_{cw}^{\pm}}[(\frac{\sigma}{\sigma_{c}})^{H_{cw}}−η_{cw}].
+$$
 
-## Steady states in constant environments
+Here, $\sigma_{c}$ is a characteristic scale of turgor pressure depending on species. $\tau_{cw}^{+}$ ($\tau_{cw}^{−}$) is the relaxation timescale when the current $η_{cw}$ is below (above) its target value $η_{cw}^{st}=(\sigma/\sigma_{c})^{H_{cw}}$. The former (latter) happens immediately after the cell is subject to a hypoosmotic (hyperosmotic) shock. In the extreme case of plasmolysis, the insertion of newly synthesized cell-wall materials is interrupted immediately due to the separation of the cell membrane and cell wall. Meanwhile, the upregulation of cell-wall synthesis rate presumably takes a longer time. For example, in fungi, where polarized growth is generally adopted, the upregulation of the cell-wall synthesis rate involves reorienting the polarisome complex to the growing tip, directing actin polarization, and delivering cell-wall synthesis machinery (Kono et al., 2012; Haupt et al., 2018). Therefore, we set $\tau_{cw}^{+}≫\tau_{cw}^{−}$ in this work (see details of parameter values in Table 1).
 
-When cell growth reaches a steady state, the proportions of all components, including free water volume, cell mass, and cell-wall volume, must be constant relative to the total cell volume to ensure homeostasis. Therefore, all growth rates in steady states of cell growth must be the same: μf=μr=μcw\begin{document}$  \mu_{f}=\mu_{r}=\mu_{cw}$\end{document}. The consequence of cell-wall synthesis regulation can be seen directly from μcw=μr\begin{document}$  \mu_{cw}=\mu_{r}$\end{document}: the turgor pressure at steady states is constant, σ=σc\begin{document}$  \sigma=\sigma_{c}$\end{document}. Experimentally, the cell-wall strain was measured by applying an acute hyperosmotic shock to induce plasmolysis, and it is approximately constant as the external osmolarity increases (Misra et al., 2013; Rojas et al., 2014), suggesting a constant turgor pressure independent of external osmolarity, in concert with our model assumptions. The internal osmotic pressure at steady states is related to the external osmotic pressure through Equation 2,(9)Πin=Πout+σ.\begin{document}$$\displaystyle  \Pi_{in} = \Pi_{out} + \sigma.$$\end{document}
+#### Intracellular crowding
 
-Here, we have neglected the term μf/kw\begin{document}$  \mu_{f}/k_{w}$\end{document}. Boer et al., 2011, show that an abrupt water flux occurs within hundreds of milliseconds after an osmotic shock, from which we can estimate the water permeability as kw∼100min−1atm−1\begin{document}$  k_{w}\sim 100\;\rm{min}^{-1}\rm{atm}^{-1}$\end{document} considering an osmotic shock with an amplitude ΔΠout=1\begin{document}$  \Delta\Pi_{out}=1$\end{document} atm. Because the typical doubling times of microorganisms are from about 20 min to several hours, we estimate μf/kw∼10−100\begin{document}$  \mu_{f}/k_{w}\sim 10-100$\end{document} Pa (Ye and Verkman, 1989; Boer et al., 2011), negligible compared with the typical cytoplasmic osmotic pressures, which can be several atmospheric pressures.
+Multiple experiments suggested the cytoplasm of bacteria, yeast, and mammalian cells resemble crowded colloidal suspensions in which the mobilities of biomolecules are significantly reduced compared with dilute solutions (Miermont et al., 2013; Parry et al., 2014; Mika et al., 2014; Nishizawa et al., 2017; Ebata et al., 2023), a signature of glass transition (Hunter and Weeks, 2012). Intracellular crowding affects biochemical processes globally, e.g., slowing down translation and intracellular signaling by suppressing protein diffusion (Miermont et al., 2013; Parry et al., 2014; Mika et al., 2014; Dai et al., 2018; Molines et al., 2022). Therefore, we assume that the speed of osmolyte production, translational elongation, and cell-wall synthesis are all slowed down by the same crowding factor:
 
-In steady states, the internal osmotic pressure is independent of time. Combining Equation 4 and the dynamics of the internal osmotic pressure, Equation 18c, we find the relationships between the protein density, the internal osmotic pressure, and the growth rate in the steady states:(10a)ΠinρpHa+1=const,\begin{document}$$\displaystyle  \frac{\Pi_{in}}{\rho_p^{H_a + 1}} = \text{const},$$\end{document}(10b)μrμrmax=1−(ΠinΠin,c)HrHa+1.\begin{document}$$\displaystyle  \frac{\mu_r}{\mu_r^{\max}} = 1 - \left(\frac{\Pi_{in}}{\Pi_{in,c}} \right)^{\frac{H_r}{H_a + 1}}.$$\end{document}
+$$
+η_{r}=1−(\frac{ρ_{p}}{ρ_{c}})^{H_{r}}.
+$$
 
-The right-hand side of Equation 10a is a constant independent of external osmolarity (see its detailed expression in Section C of Appendix 1). In deriving Equation 10b, we have replaced ρp\begin{document}$  \rho_{p}$\end{document} by Πin\begin{document}$  \Pi_{in}$\end{document} in Equation 8 using Equation 10a with the critical internal osmotic pressure Πin,c\begin{document}$\Pi_{in,c}$\end{document} proportional to ρc\begin{document}$\rho_{c}$\end{document}. Intriguingly, the relationship between the normalized growth rate (μr/μrmax\begin{document}$\mu_{r}/\mu_{r}^{\max}$\end{document}) and the normalized cytoplasmic osmotic pressure (Πin/Πin,c\begin{document}$\Pi_{in}/\Pi_{in,c}$\end{document}), which we refer to as the growth curve in the following, has only one parameter Hr/(Ha+1)\begin{document}$  H_{r}/(H_{a}+1)$\end{document}. Therefore, the growth curves of different organisms can be unified by a single formula, Equation 10b, and different organisms may have different values of Hr/(Ha+1)\begin{document}$H_{r}/(H_{a}+1)$\end{document}. Furthermore, Equation 10b predicts a critical external osmolarity Πout,c=Πin,c−σc\begin{document}$  \Pi_{out,c}=\Pi_{in,c}-\sigma_{c}$\end{document}, beyond which cell growth is completely inhibited.
+Here, $ρ_{c}$ is the critical protein density, and $H_{r}$ is a parameter to quantify the sensitivity of biochemical reactions to the intracellular density. For example, the translational elongation speed is suppressed by intracellular crowding through $k_{r}=k_{r}^{max}η_{r}$. Therefore, the dry-mass growth rate becomes $\mu_{r}=\mu_{r}^{max}η_{r}$, where we introduce $\mu_{r}^{max}=k_{r}^{max}ϕ_{r}$.
 
-We test the validity of Equation 10b by fitting it to the experimental growth curves (Figure 2A). To do this, we calculate the internal osmotic pressure using Equation 9 given the values of the external osmotic pressure and the turgor pressure (Table 1). Intriguingly, the growth curves of multiple species can be well fitted by Equation 10b, from which we infer the parameters Hr/(Ha+1)\begin{document}$H_{r}/(H_{a}+1)$\end{document} and Πin,c\begin{document}$  \Pi_{in,c}$\end{document} (Table 1). We find that budding yeast cells exhibit notable resilience to high external osmolarities: their Πin,c\begin{document}$  \Pi_{in,c}$\end{document} value is higher than those of Gram-positive bacteria, B. subtilis, and Gram-negative bacteria, E. coli. Further, budding yeast cells demonstrate a higher value of Hr/(Ha+1)\begin{document}$  H_{r}/(H_{a}+1)$\end{document}, indicating a reduced susceptibility to growth rate reduction when exposed to mild increases in the external osmolarity. Meanwhile, the osmoadaptation capability of E. coli depends on the growth media, presumably arising from variations in metabolic fluxes and gene expressions (Cayley et al., 1991; Dai et al., 2018; Rojas et al., 2014).
+The details of our model are summarized in Materials and methods, with five independent variables: the protein density $ρ_{p}$, the mass fraction of osmolyte-producing protein $ϕ_{a}$, the internal osmotic pressure $Π_{in}$, the cell-wall strain $ϵ$, and the cell-wall synthesis efficiency $η_{cw}$. For convenience, Appendix 1—table 3 provides a comprehensive list of all symbols used in the main text along with their meanings.
+
+### Steady states in constant environments
+
+When cell growth reaches a steady state, the proportions of all components, including free water volume, cell mass, and cell-wall volume, must be constant relative to the total cell volume to ensure homeostasis. Therefore, all growth rates in steady states of cell growth must be the same: $\mu_{f}=\mu_{r}=\mu_{cw}$. The consequence of cell-wall synthesis regulation can be seen directly from $\mu_{cw}=\mu_{r}$: the turgor pressure at steady states is constant, $\sigma=\sigma_{c}$. Experimentally, the cell-wall strain was measured by applying an acute hyperosmotic shock to induce plasmolysis, and it is approximately constant as the external osmolarity increases (Misra et al., 2013; Rojas et al., 2014), suggesting a constant turgor pressure independent of external osmolarity, in concert with our model assumptions. The internal osmotic pressure at steady states is related to the external osmotic pressure through Equation 2,
+
+$$
+Π_{in}=Π_{out}+\sigma.
+$$
+
+Here, we have neglected the term $\mu_{f}/k_{w}$. Boer et al., 2011, show that an abrupt water flux occurs within hundreds of milliseconds after an osmotic shock, from which we can estimate the water permeability as $k_{w}∼100min^{−1}atm^{−1}$ considering an osmotic shock with an amplitude $ΔΠ_{out}=1$ atm. Because the typical doubling times of microorganisms are from about 20 min to several hours, we estimate $\mu_{f}/k_{w}∼10−100$ Pa (Ye and Verkman, 1989; Boer et al., 2011), negligible compared with the typical cytoplasmic osmotic pressures, which can be several atmospheric pressures.
+
+In steady states, the internal osmotic pressure is independent of time. Combining Equation 4 and the dynamics of the internal osmotic pressure, Equation 18c, we find the relationships between the protein density, the internal osmotic pressure, and the growth rate in the steady states:
+
+$$
+\frac{Π_{in}}{ρ_{p}^{H_{a}+1}}=const,
+$$
+
+
+
+$$
+\frac{\mu_{r}}{\mu_{r}^{max}}=1−(\frac{Π_{in}}{Π_{in,c}})^{\frac{H_{r}}{H_{a}+1}}.
+$$
+
+The right-hand side of Equation 10a is a constant independent of external osmolarity (see its detailed expression in Section C of Appendix 1). In deriving Equation 10b, we have replaced $ρ_{p}$ by $Π_{in}$ in Equation 8 using Equation 10a with the critical internal osmotic pressure $Π_{in,c}$ proportional to $ρ_{c}$. Intriguingly, the relationship between the normalized growth rate ($\mu_{r}/\mu_{r}^{max}$) and the normalized cytoplasmic osmotic pressure ($Π_{in}/Π_{in,c}$), which we refer to as the growth curve in the following, has only one parameter $H_{r}/(H_{a}+1)$. Therefore, the growth curves of different organisms can be unified by a single formula, Equation 10b, and different organisms may have different values of $H_{r}/(H_{a}+1)$. Furthermore, Equation 10b predicts a critical external osmolarity $Π_{out,c}=Π_{in,c}−\sigma_{c}$, beyond which cell growth is completely inhibited.
+
+We test the validity of Equation 10b by fitting it to the experimental growth curves (Figure 2A). To do this, we calculate the internal osmotic pressure using Equation 9 given the values of the external osmotic pressure and the turgor pressure (Table 1). Intriguingly, the growth curves of multiple species can be well fitted by Equation 10b, from which we infer the parameters $H_{r}/(H_{a}+1)$ and $Π_{in,c}$ (Table 1). We find that budding yeast cells exhibit notable resilience to high external osmolarities: their $Π_{in,c}$ value is higher than those of Gram-positive bacteria, B. subtilis, and Gram-negative bacteria, E. coli. Further, budding yeast cells demonstrate a higher value of $H_{r}/(H_{a}+1)$, indicating a reduced susceptibility to growth rate reduction when exposed to mild increases in the external osmolarity. Meanwhile, the osmoadaptation capability of E. coli depends on the growth media, presumably arising from variations in metabolic fluxes and gene expressions (Cayley et al., 1991; Dai et al., 2018; Rojas et al., 2014).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig2-v1.jpg)
 
-**Figure 2.:** (A) Normalized growth rate vs. normalized internal osmotic pressure of different species under various culture media. The experiment data (scatter markers) are fitted by our theoretical prediction Equation 10b. The data of E. coli are from Cayley et al., 1991; Dai et al., 2018; Rojas et al., 2014, the data of B. subtilis is from Rojas et al., 2017, and the data of S. cerevisiae is from our own experiments, where sorbitol is added to increase the external osmolarity. (B) Growth curves of wild-type (WT) cells, mutant cells without osmoregulation (), and mutant cells without cell-wall synthesis regulation (Ha=0\begin{document}$  H_{a}=0$\end{document}). The dotted line indicates the region where plasmolysis occurs for the mutant cells with Hcw=0\begin{document}$  H_{cw}=0$\end{document}. (Hcw=0\begin{document}$  H_{cw}=0$\end{document}C) Mutant cells without cell-wall synthesis regulation cannot maintain a stable turgor pressure in a hypertonic environment, while WT cells can maintain a constant turgor pressure. The mutant cells reach plasmolysis at a threshold of external osmolarity. In (B) and (C), the parameters for WT cells are chosen as the values for S. pombe, and the mutant values are set such that they have the same growth rate as the WT cells in the reference medium (Appendix 1—table 2).Figure 2—source data 1.Cayley et al., 1991.Figure 2—source data 2.Dai et al., 2018.Figure 2—source data 3.Rojas et al., 2014.Figure 2—source data 4.Rojas et al., 2017.
+**Figure 2.:** (A) Normalized growth rate vs. normalized internal osmotic pressure of different species under various culture media. The experiment data (scatter markers) are fitted by our theoretical prediction Equation 10b. The data of E. coli are from Cayley et al., 1991; Dai et al., 2018; Rojas et al., 2014, the data of B. subtilis is from Rojas et al., 2017, and the data of S. cerevisiae is from our own experiments, where sorbitol is added to increase the external osmolarity. (B) Growth curves of wild-type (WT) cells, mutant cells without osmoregulation ($H_{a}=0$), and mutant cells without cell-wall synthesis regulation ($H_{cw}=0$). The dotted line indicates the region where plasmolysis occurs for the mutant cells with $H_{cw}=0$. (C) Mutant cells without cell-wall synthesis regulation cannot maintain a stable turgor pressure in a hypertonic environment, while WT cells can maintain a constant turgor pressure. The mutant cells reach plasmolysis at a threshold of external osmolarity. In (B) and (C), the parameters for WT cells are chosen as the values for S. pombe, and the mutant values are set such that they have the same growth rate as the WT cells in the reference medium (Appendix 1—table 2).
 
-To further reveal the functions of biological regulations, we study the steady-state properties of mutant cells in which either osmoregulation or cell-wall synthesis regulation is depleted. For mutant cells without osmoregulation, Ha=0\begin{document}$  H_{a}=0$\end{document} in Equation 4. In this case, the fraction of osmolyte-producing protein is constant with time, i.e., ϕa=χamax\begin{document}$  \phi_{a}=\chi_{a}^{\max}$\end{document}. Comparing the dynamics of osmolyte and total protein mass, Na˙=kaϕamp\begin{document}$  \dot{N_{a}}=k_{a}\phi_{a}m_{p}$\end{document} and mp˙=krϕrmp\begin{document}$  \dot{m_{p}}=k_{r}\phi_{r}m_{p}$\end{document}, one finds that the ratio of the number of osmolyte molecules and the total protein mass remains constant over time, irrespective of variations in external osmolarity (see the detailed derivation in Section C of Appendix 1). As the external osmolarity increases, the protein density of mutant cells quickly reaches the critical value ρc\begin{document}$  \rho_{c}$\end{document} according to Equation 10a with Ha=0\begin{document}$  H_{a}=0$\end{document}. Therefore, the steady-state growth curve of the mutant cells terminates at an external osmolarity much smaller than wild-type (WT) cells (Figure 2B), in agreement with previous experiments (Brewster et al., 1993).
+To further reveal the functions of biological regulations, we study the steady-state properties of mutant cells in which either osmoregulation or cell-wall synthesis regulation is depleted. For mutant cells without osmoregulation, $H_{a}=0$ in Equation 4. In this case, the fraction of osmolyte-producing protein is constant with time, i.e., $ϕ_{a}=χ_{a}^{max}$. Comparing the dynamics of osmolyte and total protein mass, $N_{a}˙=k_{a}ϕ_{a}m_{p}$ and $m_{p}˙=k_{r}ϕ_{r}m_{p}$, one finds that the ratio of the number of osmolyte molecules and the total protein mass remains constant over time, irrespective of variations in external osmolarity (see the detailed derivation in Section C of Appendix 1). As the external osmolarity increases, the protein density of mutant cells quickly reaches the critical value $ρ_{c}$ according to Equation 10a with $H_{a}=0$. Therefore, the steady-state growth curve of the mutant cells terminates at an external osmolarity much smaller than wild-type (WT) cells (Figure 2B), in agreement with previous experiments (Brewster et al., 1993).
 
-For mutant cells without the cell-wall synthesis regulation, Hcw=0\begin{document}$  H_{cw}=0$\end{document}; therefore, the cell-wall synthesis efficiency ηcw\begin{document}$  \eta_{cw}$\end{document} equals 1 independent of time. Thus, the growth rate of the relaxed cell-wall volume is always equal to the growth rate of total protein mass (Equation 6 and Equation 7). Interestingly, in this case, the turgor pressure at steady states decreases with the increase of external osmolarity (Figure 2C and see the detailed proof in Section C of Appendix 1). The decreased turgor pressure lowers the internal osmotic pressure given the same Πout\begin{document}$  \Pi_{out}$\end{document} according to Equation 9, leading to a lower protein density of mutant cells than WT cells according to Equation 10a. Therefore, mutant cells grow faster than WT cells under the same external osmolarity (Figure 2B). Nevertheless, the mutant cells are prone to plasmolysis at a threshold external osmolarity where the WT cells can maintain constant turgor pressure (see the vertical line in Figure 2C around 2 M extra external osmolarity). Reduced turgor pressure is detrimental to multiple biological processes, e.g., cytokinesis in fission yeast requires the participation of turgor pressure (Proctor et al., 2012).
+For mutant cells without the cell-wall synthesis regulation, $H_{cw}=0$; therefore, the cell-wall synthesis efficiency $η_{cw}$ equals 1 independent of time. Thus, the growth rate of the relaxed cell-wall volume is always equal to the growth rate of total protein mass (Equation 6 and Equation 7). Interestingly, in this case, the turgor pressure at steady states decreases with the increase of external osmolarity (Figure 2C and see the detailed proof in Section C of Appendix 1). The decreased turgor pressure lowers the internal osmotic pressure given the same $Π_{out}$ according to Equation 9, leading to a lower protein density of mutant cells than WT cells according to Equation 10a. Therefore, mutant cells grow faster than WT cells under the same external osmolarity (Figure 2B). Nevertheless, the mutant cells are prone to plasmolysis at a threshold external osmolarity where the WT cells can maintain constant turgor pressure (see the vertical line in Figure 2C around 2 M extra external osmolarity). Reduced turgor pressure is detrimental to multiple biological processes, e.g., cytokinesis in fission yeast requires the participation of turgor pressure (Proctor et al., 2012).
 
 To summarize, osmoregulation allows cells to grow in a wide range of external osmolarity conditions with a mild change in protein density. The cell-wall synthesis regulation allows cells to maintain a stable turgor pressure and avoid plasmolysis. Both regulatory mechanisms expand the range of external osmolarities that cells can adapt to.
 
-## Transient dynamics after a constant osmotic shock
+### Transient dynamics after a constant osmotic shock
 
-Next, we study the dynamical behaviors of cellular properties in response to a constant osmotic shock: the external osmolarity changes abruptly and keeps its value for an infinitely long time. Intriguingly, we find that the dynamics of osmoresponse can be split into shock and adaptation periods (see insets of Figure 3C and D). The immediate water flow due to osmotic imbalance occurs in the shock period, during which the mass and osmolyte productions are negligible. Therefore, the ratio of the internal osmotic pressure and the protein density is invariant right before and after a shock period: Πini/ρpi=Πinf/ρpf\begin{document}$  \Pi_{in}^{i}/\rho_{p}^{i}=\Pi_{in}^{f}/\rho_{p}^{f}$\end{document}, where the upper index i\begin{document}$  i$\end{document} (f\begin{document}$  f$\end{document}) means the state right before (after) the shock period. Given this condition, we introduce the normalized protein density ρ~p\begin{document}$  \tilde{\rho}_{p}$\end{document} as(11)ρ~p=ρpρ¯p,\begin{document}$$\displaystyle  \tilde{\rho}_p = \frac{\rho_p}{\bar{\rho}_p},$$\end{document}
+Next, we study the dynamical behaviors of cellular properties in response to a constant osmotic shock: the external osmolarity changes abruptly and keeps its value for an infinitely long time. Intriguingly, we find that the dynamics of osmoresponse can be split into shock and adaptation periods (see insets of Figure 3C and D). The immediate water flow due to osmotic imbalance occurs in the shock period, during which the mass and osmolyte productions are negligible. Therefore, the ratio of the internal osmotic pressure and the protein density is invariant right before and after a shock period: $Π_{in}^{i}/ρ_{p}^{i}=Π_{in}^{f}/ρ_{p}^{f}$, where the upper index $i$ ($f$) means the state right before (after) the shock period. Given this condition, we introduce the normalized protein density $ρ~_{p}$ as
 
-where the normalization factor ρ¯p∝Πin\begin{document}$  \bar{\rho}_{p}\propto\Pi_{in}$\end{document} (see its detailed expression in Materials and methods) so that ρ~p\begin{document}$  \tilde{\rho}_{p}$\end{document} changes continuously across the shock period. Interestingly, we find that osmoresponse is governed by a two-dimensional dynamical system composed of ρ~p\begin{document}$  \tilde{\rho}_{p}$\end{document} and ηa≡ϕa/χamax\begin{document}$  \eta_{a}\equiv\phi_{a}/\chi_{a}^{\max}$\end{document} (Materials and methods):(12a)ρ~˙pρ~p=μrmaxηr(1−ρ~pηa).\begin{document}$$\displaystyle  \frac{\dot{\tilde{\rho}}_p}{\tilde{\rho}_p} = \mu_r^{\max} \eta_r \left(1 - \tilde{\rho}_p \eta_a \right).$$\end{document}(12b)η˙a=μrmaxηr[(ρ~pρ~c)Ha−ηa],\begin{document}$$\displaystyle  \dot{\eta}_a = \mu_r^{\max} \eta_r \left[ \left(\frac{\tilde{\rho}_p }{ \tilde{\rho}_c} \right)^{H_a} - \eta_a \right],$$\end{document}
+$$
+ρ~_{p}=\frac{ρ_{p}}{ρ¯_{p}},
+$$
 
-Here, ρ~c=ρc/ρ¯p\begin{document}$  \tilde{\rho}_{c}=\rho_{c}/\bar{\rho}_{p}$\end{document} is the normalized critical protein density, and ηa\begin{document}$  \eta_{a}$\end{document} denotes the efficiency of osmoregulation. From the above equations, it is clear that the timescale of osmoregulation is set by the doubling time: it takes about the doubling time for the protein density and the fraction of osmolyte-producing protein to adapt to the new steady-state values. For walled cells, ρ~c\begin{document}$  \tilde{\rho}_{c}$\end{document} and ρ¯p\begin{document}$  \bar{\rho}_{p}$\end{document} depend on time since Πin=Πout+σ\begin{document}$  \Pi_{in}=\Pi_{out}+\sigma$\end{document} and the turgor pressure σ\begin{document}$  \sigma$\end{document} is time-dependent during osmoresponse processes (Figure 3A and B). For unwalled cells, such as mammalian cells and microbial cells with cell walls removed (i.e. protoplasts), ρ~c\begin{document}$  \tilde{\rho}_{c}$\end{document} is constant in a fixed environment (see detailed discussion on the transient dynamics of unwalled cells in Section D of Appendix 1).
+![Figure 3.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig3-v1.jpg)
 
-Upon a constant hyperosmotic shock, the immediate water efflux leads to an instantaneous drop in turgor pressure and a rise in protein density (Figure 3A). The internal state of the cell, (ρ~p\begin{document}$  \tilde{\rho}_{p}$\end{document}, ηa\begin{document}$  \eta_{a}$\end{document}), evolves toward the new equilibrium point, (ρ~cHa/(Ha+1),ρ~c−Ha/(Ha+1))\begin{document}$  ({\tilde{\rho}_{c}}^{H_{a}/(H_{a}+1)},{\tilde{\rho}_{c}}^{-H_{a}/(H_{a}+1)})$\end{document}. One should note that the equilibrium point is time-dependent initially but eventually becomes fixed as the turgor pressure relaxes to the steady-state value (Figure 3C and Figure 3—video 1). Interestingly, the protein density increases initially and then decreases after the shock (Figure 3A). The decrease in protein density is because of the osmoregulation process, which is set by the doubling time (Equation 12a and Equation 12b). Meanwhile, we find that the initial increase of protein density is because of the suppressed growth of the relaxed cell-wall volume due to the low turgor pressure. Indeed, for unwalled cells, the protein density ρp\begin{document}$  \rho_{p}$\end{document} decreases immediately after the shock (Appendix 1—figure 2B). We note that the growth rate approaches the new steady-state value non-monotonically (Figure 3A) because of the spiral trajectory in the space of the internal state (Figure 3C), consistent with experimental observations from Rojas et al., 2014.
+**Figure 3.:** (A) Numerical simulations of cells undergoing a constant 500 mM hyperosmotic shock. The dotted lines represent the steady-state values for the reference growth medium (green) and the medium after perturbation (yellow). (B) Numerical simulations of cells undergoing a constant 500 mM hypoosmotic shock. The purple circle in the third panel marks the growth rate peak during the supergrowth phase. (C) The dynamics of the internal state of a cell characterized by ($ρ~_{p},η_{a}$). The dotted curve represents the constraint on the steady-state solution $ρ~_{p},η_{a}=1$, and the solid trajectory is from numerical simulations. The triangles indicate the steady-state solution before the perturbation and the steady-state solution after the perturbation for a long enough time. The yellow open circle represents the immediate steady-state solution after applying the hyperosmotic shock. (D) The same analysis as (C) but for a constant 500 mM hypoosmotic shock. (E) The growth rate peak in the supergrowth phase (yellow) and the immediate value of turgor pressure after the hypoosmotic shock 𝜎𝑓 (green) vs. the amplitude of the hypoosmotic shock.
 
-The phenomena are essentially the opposite for a constant hypoosmotic shock (Figure 3B and D, Figure 3—video 2). However, we find extremely fast cell growth after the hypoosmotic shock, with a growth rate peak occurring about 25 min after applying the shock, which we call the supergrowth phase (Knapp et al., 2019). One should note that 25 min is much shorter than the doubling time (about 2 hr) but comparable to the timescale of cell-wall synthesis regulation, which we set as τcw+=12.5\begin{document}$  \tau_{cw}^{+}=12.5$\end{document} min in the simulations in Figure 3 (we will explain why we choose τcw+=12.5\begin{document}$  \tau_{cw}^{+}=12.5$\end{document} min in the next section). Furthermore, applying a hypoosmotic shock to an unwalled cell does not induce a significant supergrowth phase compared with walled cells (Appendix 1—figure 2D).
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig3-figsupp1-v1.jpg)
 
-We propose that supergrowth comes from the high turgor pressure caused by the hypoosmotic shock, which leads to fast cell-wall synthesis according to Equation 7. Rapid insertion of materials into the cell wall relaxes the turgor pressure and allows the cells to grow faster (Equation 2 and Equation 3). This idea is consistent with the observation that the growth rate and the growth rate of the relaxed cell-wall volume μcw\begin{document}$  \mu_{cw}$\end{document} reach their peaks simultaneously (Figure 3B). This observation also suggests that the timescale of supergrowth, i.e., the timing of growth rate peak, is set by the timescale of cell-wall synthesis regulation (τcw+\begin{document}$  \tau_{cw}^{+}$\end{document} in Equation 7). Notably, in the initial stage of the adaptation period, μcw\begin{document}$  \mu_{cw}$\end{document} approaches its target from below and reaches its target value at the growth rate peak (i.e. μr(σ/σc)Hcw\begin{document}$  \mu_{r}(\sigma/\sigma_{c})^{H_{cw}}$\end{document}) (the third panel of Figure 3B), after which μcw\begin{document}$  \mu_{cw}$\end{document} sticks to its target value and decreases accordingly because of the short relaxation time τcw−\begin{document}$  \tau_{cw}^{-}$\end{document} (Equation 7). For comparison, we also show μcw\begin{document}$  \mu_{cw}$\end{document} and μr(σ/σc)Hcw\begin{document}$  \mu_{r}(\sigma/\sigma_{c})^{H_{cw}}$\end{document} for the hyperosmotic shock in the third panel of Figure 3A. A detailed proof of the conditions for supergrowth, including the necessity of a cell wall and the regulation of cell-wall synthesis, is provided in Section E of Appendix 1.
+**Figure 3—figure supplement 1.:** Simulation of a cell undergoing a constant 500 mM hypoosmotic shock, the same simulation as Figure 3B. Here, we show the time dependence of the internal osmotic pressure,$Π_{in}$ the turgor pressure, $\sigma$ the free volume fraction $f$, and the dry-mass growth rate $\mu_{r}$. All these quantities relax to their steady-state values (dotted lines) on the timescale set by the doubling time.
 
-Following the discussion above, we obtain an analytical expression of the growth rate peak after a hypoosmotic shock (see the detailed derivations in Section F of Appendix 1)(13)μsg=μr{1+ff+Πinσ+G×[(σσc)Hcw−1]}.\begin{document}$$\displaystyle  \mu^{sg} = \mu_r \left\{ 1 + \frac{f}{f + \frac{\Pi_{in}}{\sigma+G}} \times \left[ \left(\frac{\sigma}{\sigma_c} \right)^{H_{cw}} - 1 \right] \right\}.$$\end{document}
+where the normalization factor $ρ¯_{p}∝Π_{in}$ (see its detailed expression in Materials and methods) so that $ρ~_{p}$ changes continuously across the shock period. Interestingly, we find that osmoresponse is governed by a two-dimensional dynamical system composed of $ρ~_{p}$ and $η_{a}≡ϕ_{a}/χ_{a}^{max}$ (Materials and methods):
+
+$$
+\frac{ρ~˙_{p}}{ρ~_{p}}=\mu_{r}^{max}η_{r}(1−ρ~_{p}η_{a}).
+$$
+
+
+
+$$
+η˙_{a}=\mu_{r}^{max}η_{r}[(\frac{ρ~_{p}}{ρ~_{c}})^{H_{a}}−η_{a}],
+$$
+
+Here, $ρ~_{c}=ρ_{c}/ρ¯_{p}$ is the normalized critical protein density, and $η_{a}$ denotes the efficiency of osmoregulation. From the above equations, it is clear that the timescale of osmoregulation is set by the doubling time: it takes about the doubling time for the protein density and the fraction of osmolyte-producing protein to adapt to the new steady-state values. For walled cells, $ρ~_{c}$ and $ρ¯_{p}$ depend on time since $Π_{in}=Π_{out}+\sigma$ and the turgor pressure $\sigma$ is time-dependent during osmoresponse processes (Figure 3A and B). For unwalled cells, such as mammalian cells and microbial cells with cell walls removed (i.e. protoplasts), $ρ~_{c}$ is constant in a fixed environment (see detailed discussion on the transient dynamics of unwalled cells in Section D of Appendix 1).
+
+Upon a constant hyperosmotic shock, the immediate water efflux leads to an instantaneous drop in turgor pressure and a rise in protein density (Figure 3A). The internal state of the cell, ($ρ~_{p}$, $η_{a}$), evolves toward the new equilibrium point, $(ρ~_{c}^{H_{a}/(H_{a}+1)},ρ~_{c}^{−H_{a}/(H_{a}+1)})$. One should note that the equilibrium point is time-dependent initially but eventually becomes fixed as the turgor pressure relaxes to the steady-state value (Figure 3C and Figure 3—video 1). Interestingly, the protein density increases initially and then decreases after the shock (Figure 3A). The decrease in protein density is because of the osmoregulation process, which is set by the doubling time (Equation 12a and Equation 12b). Meanwhile, we find that the initial increase of protein density is because of the suppressed growth of the relaxed cell-wall volume due to the low turgor pressure. Indeed, for unwalled cells, the protein density $ρ_{p}$ decreases immediately after the shock (Appendix 1—figure 2B). We note that the growth rate approaches the new steady-state value non-monotonically (Figure 3A) because of the spiral trajectory in the space of the internal state (Figure 3C), consistent with experimental observations from Rojas et al., 2014.
+
+The phenomena are essentially the opposite for a constant hypoosmotic shock (Figure 3B and D, Figure 3—video 2). However, we find extremely fast cell growth after the hypoosmotic shock, with a growth rate peak occurring about 25 min after applying the shock, which we call the supergrowth phase (Knapp et al., 2019). One should note that 25 min is much shorter than the doubling time (about 2 hr) but comparable to the timescale of cell-wall synthesis regulation, which we set as $\tau_{cw}^{+}=12.5$ min in the simulations in Figure 3 (we will explain why we choose $\tau_{cw}^{+}=12.5$ min in the next section). Furthermore, applying a hypoosmotic shock to an unwalled cell does not induce a significant supergrowth phase compared with walled cells (Appendix 1—figure 2D).
+
+We propose that supergrowth comes from the high turgor pressure caused by the hypoosmotic shock, which leads to fast cell-wall synthesis according to Equation 7. Rapid insertion of materials into the cell wall relaxes the turgor pressure and allows the cells to grow faster (Equation 2 and Equation 3). This idea is consistent with the observation that the growth rate and the growth rate of the relaxed cell-wall volume $\mu_{cw}$ reach their peaks simultaneously (Figure 3B). This observation also suggests that the timescale of supergrowth, i.e., the timing of growth rate peak, is set by the timescale of cell-wall synthesis regulation ($\tau_{cw}^{+}$ in Equation 7). Notably, in the initial stage of the adaptation period, $\mu_{cw}$ approaches its target from below and reaches its target value at the growth rate peak (i.e. $\mu_{r}(\sigma/\sigma_{c})^{H_{cw}}$) (the third panel of Figure 3B), after which $\mu_{cw}$ sticks to its target value and decreases accordingly because of the short relaxation time $\tau_{cw}^{−}$ (Equation 7). For comparison, we also show $\mu_{cw}$ and $\mu_{r}(\sigma/\sigma_{c})^{H_{cw}}$ for the hyperosmotic shock in the third panel of Figure 3A. A detailed proof of the conditions for supergrowth, including the necessity of a cell wall and the regulation of cell-wall synthesis, is provided in Section E of Appendix 1.
+
+Following the discussion above, we obtain an analytical expression of the growth rate peak after a hypoosmotic shock (see the detailed derivations in Section F of Appendix 1)
+
+$$
+\mu^{sg}=\mu_{r}{1+\frac{f}{f+\frac{Π_{in}}{\sigma+G}}\times[(\frac{\sigma}{\sigma_{c}})^{H_{cw}}−1]}.
+$$
 
 Here, all the variables on the right side are at the growth rate peak. Because the timescale of the osmoresponse process, which is around hours (Figure 3B), is much longer than the timescale of the supergrowth phase, which is about 20 min for S. pombe (Knapp et al., 2019), the turgor pressure at the growth rate peak can be well approximated by its immediate value after the shock. Therefore, the growth rate peak must increase as the amplitude of the hypoosmotic shock increases, which we confirm numerically in Figure 3E.
 
-## Comparison with experiments: supergrowth phenomena after osmotic oscillation
+### Comparison with experiments: supergrowth phenomena after osmotic oscillation
 
 Next, we quantitatively compare our theoretical predictions regarding the supergrowth phase with experimental data. Knapp et al., 2019, applied an osmotic oscillation to fission yeast S. pombe during which the external osmolarity alternated between two values. They found cell growth was almost inhibited during the perturbation, while the protein and dry-mass densities increased. Surprisingly, cells grew unusually fast after the osmotic oscillation was removed and reached their maximum growth rate about 20 min after the end of the osmotic oscillation. The maximum growth rate can be twice the growth rate in the reference growth medium, and the elevation in growth rate can persist for two to three cell cycles. These observations are very similar to our results for a constant hypoosmotic shock (Figure 3B).
 
 To test if our osmoresponse model captures the supergrowth phase for a periodic perturbation, we simulate WT S. pombe cells with the same protocols as the experiments (see details of simulations in Materials and methods). Intriguingly, our model successfully recapitulates the supergrowth phase and the gradually increasing protein density and dry-mass density during the perturbation (Figure 4). We confirm that cell-wall synthesis regulation is crucial for the emergence of the supergrowth phase since unwalled cells do not exhibit supergrowth after periodic perturbation (Appendix 1—figure 3). Interestingly, we find that an infinitely long periodic osmotic shock can be equivalently mapped to a constant osmotic shock (see the detailed discussions and proof in Section D of Appendix 1), which means that they have the same time-averaged growth rate and protein density in the steady states (Appendix 1—figure 2F).
 
-Knapp et al., 2019, measured the growth rate peaks vs. three different parameters of the osmotic oscillations: amplitude, period length, and number of periods. We first fit the growth rate peaks vs. the amplitudes (Figure 4D), from which we obtain Hcw=1.7\begin{document}$  H_{cw}=1.7$\end{document}, the sensitivity of the cell-wall synthesis efficiency to turgor pressure (Equation 7), and τcw+=12.5\begin{document}$  \tau_{cw}^{+}=12.5$\end{document} min, the timescale in the upregulation of cell-wall synthesis efficiency (which is why we set τcw+=12.5\begin{document}$  \tau_{cw}^{+}=12.5$\end{document} min in the previous section). Other model parameters are inferred from independent steady-state measurements, and we set the timescale in the downregulation of cell-wall synthesis efficiency as τcw−=0.1\begin{document}$  \tau_{cw}^{-}=0.1$\end{document} min for simplicity (Table 1). We next fix the values of Hcw\begin{document}$  H_{cw}$\end{document} and τcw+\begin{document}$  \tau_{cw}^{+}$\end{document} and plot the predicted growth rate peaks vs. the period length (Figure 4B) and number of periods (Figure 4C). As a strong support of our model, our predictions quantitatively match the experimental data without any further fitting.
+![Figure 4.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig4-v1.jpg)
 
-Two interesting features of the curve μsg\begin{document}$  \mu^{sg}$\end{document} vs. amplitude catch our attention: the non-monotonic behavior and the kink point at which the derivative is discontinuous (Figure 4D), which are conserved regardless of the number of periods (Figure 4—figure supplement 2). Therefore, we study the case of a single oscillation for simplicity, which is equivalent to a hyperosmotic shock of finite duration. For a mild hyperosmotic shock, during the period of hyperosmotic shock, the turgor pressure has almost recovered to the steady-state value σc\begin{document}$  \sigma_{c}$\end{document} (Figure 3A). Therefore, switching from a long hyperosmotic period to the reference growth medium is equivalent to a constant hypoosmotic shock, where we have shown that the growth rate peak increases with the amplitude (Figure 3E). However, the crowding effect becomes more pronounced as the amplitude increases. Beyond the critical amplitude at the kink point, the cytoplasm is completely jammed during the hyperosmotic shock such that the cell states are precisely the same before and after the hyperosmotic shock, which means no supergrowth phase beyond this critical amplitude. Therefore, the curve μsg\begin{document}$  \mu^{sg}$\end{document} vs. amplitude must be non-monotonic (Figure 4E). Notably, for a very large Hr\begin{document}$  H_{r}$\end{document}, cells can feel the crowding effect only when the cytoplasm is close enough to the critical protein density, shown as the abrupt decline of μsg\begin{document}$  \mu^{sg}$\end{document} (Figure 4F).
+**Figure 4.:** (A) Numerical simulations of wild-type (WT) S. pombe undergo 24 cycles of 500 mM osmotic oscillations with a 10 min period. We show a 30 min window average in the third panel of growth rate. (B–D) Quantitative agreement between simulations and experiments for the growth rate peak $\mu^{sg}$ vs. different oscillation parameters, including (B) amplitude, (C) period length, and (D) number of periods. The red lines in (B, C) are predictions, and the blue line in (D) is fitting from which we infer the values of $H_{cw}$ and $\tau_{cw}^{+}$. Green dots with error bars are experimental data from Knapp et al., 2019. (E) In the case of osmotic oscillation with a single period, the hyperosmotic period persists for 120 min before reverting to the reference medium. The vertical dotted blue line represents the minimal amplitude to induce cytoplasm jamming during the hyperosmotic period. The excess turgor pressure $\sigma^{f}−\sigma_{c}$ upon exiting the hyperosmotic period is approximately equal to the recovered turgor pressure $\delta\sigma$ during the hyperosmotic period. (F) The growth rate peak $\mu^{sg}$ at different $H_{r}$ vs. the amplitude of a single oscillation. $H_{r}=3.031$ is the value of the WT S. pombe. Parameters of WT S. pombe are used in this figure unless otherwise mentioned (Table 1).
 
-Finally, we remark that the significance of supergrowth is intimately related to the amount of recovered turgor pressure during the hyperosmotic shock δσ\begin{document}$  \delta\sigma$\end{document}. We prove that the overshoot of turgor pressure after the removal of hyperosmotic shock (σf−σc\begin{document}$  \sigma^{f}-\sigma_{c}$\end{document}), which sets the growth rate peak, is mainly set by the recovered turgor pressure during the hyperosmotic shock (see the detailed discussions in Section G of Appendix 1). Indeed, μsg\begin{document}$  \mu^{sg}$\end{document}, σf−σc\begin{document}$  \sigma^{f}-\sigma_{c}$\end{document}, and δσ\begin{document}$  \delta\sigma$\end{document} are highly correlated as we change the amplitude (Figure 4E).
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Simulation of a wild-type cell undergoing 24 cycles of 500 mM osmotic oscillation with a 10 min period, the same simulation as Figure 4A. We plot the cell-wall synthesis efficiency $η_{cw}$ and the dry-mass density $ρ^_{d}$ for better comparison with experimental data (Knapp et al., 2019).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102858/elife-102858-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The non-monotonic relationship between $\mu^{sg}$ and amplitude.Growth rate peak vs. oscillation amplitude under different numbers of oscillation periods. The total duration of the oscillation stimulus is fixed.
+
+Knapp et al., 2019, measured the growth rate peaks vs. three different parameters of the osmotic oscillations: amplitude, period length, and number of periods. We first fit the growth rate peaks vs. the amplitudes (Figure 4D), from which we obtain $H_{cw}=1.7$, the sensitivity of the cell-wall synthesis efficiency to turgor pressure (Equation 7), and $\tau_{cw}^{+}=12.5$ min, the timescale in the upregulation of cell-wall synthesis efficiency (which is why we set $\tau_{cw}^{+}=12.5$ min in the previous section). Other model parameters are inferred from independent steady-state measurements, and we set the timescale in the downregulation of cell-wall synthesis efficiency as $\tau_{cw}^{−}=0.1$ min for simplicity (Table 1). We next fix the values of $H_{cw}$ and $\tau_{cw}^{+}$ and plot the predicted growth rate peaks vs. the period length (Figure 4B) and number of periods (Figure 4C). As a strong support of our model, our predictions quantitatively match the experimental data without any further fitting.
+
+Two interesting features of the curve $\mu^{sg}$ vs. amplitude catch our attention: the non-monotonic behavior and the kink point at which the derivative is discontinuous (Figure 4D), which are conserved regardless of the number of periods (Figure 4—figure supplement 2). Therefore, we study the case of a single oscillation for simplicity, which is equivalent to a hyperosmotic shock of finite duration. For a mild hyperosmotic shock, during the period of hyperosmotic shock, the turgor pressure has almost recovered to the steady-state value $\sigma_{c}$ (Figure 3A). Therefore, switching from a long hyperosmotic period to the reference growth medium is equivalent to a constant hypoosmotic shock, where we have shown that the growth rate peak increases with the amplitude (Figure 3E). However, the crowding effect becomes more pronounced as the amplitude increases. Beyond the critical amplitude at the kink point, the cytoplasm is completely jammed during the hyperosmotic shock such that the cell states are precisely the same before and after the hyperosmotic shock, which means no supergrowth phase beyond this critical amplitude. Therefore, the curve $\mu^{sg}$ vs. amplitude must be non-monotonic (Figure 4E). Notably, for a very large $H_{r}$, cells can feel the crowding effect only when the cytoplasm is close enough to the critical protein density, shown as the abrupt decline of $\mu^{sg}$ (Figure 4F).
+
+Finally, we remark that the significance of supergrowth is intimately related to the amount of recovered turgor pressure during the hyperosmotic shock $\delta\sigma$. We prove that the overshoot of turgor pressure after the removal of hyperosmotic shock ($\sigma^{f}−\sigma_{c}$), which sets the growth rate peak, is mainly set by the recovered turgor pressure during the hyperosmotic shock (see the detailed discussions in Section G of Appendix 1). Indeed, $\mu^{sg}$, $\sigma^{f}−\sigma_{c}$, and $\delta\sigma$ are highly correlated as we change the amplitude (Figure 4E).
 
 ## Discussion
 
 This study presents a theory of microbial osmoresponses based on a physical foundation and simplified biological regulation strategies. Our theory captures the steady-state properties of constant turgor pressure and reduced growth rate with increasing external osmolarity. We remark that the growth rate reduction is due to the loss of free water and subsequent intracellular crowding as the external osmolarity increases. In particular, we predict a critical external osmolarity above which cell growth is completely inhibited and a universal relationship between the normalized growth rate and the normalized internal osmotic pressure, fitting the data of bacteria and yeast. We also demonstrate the biological functions of osmoregulation and cell-wall synthesis regulation. Cells defective in osmoregulation cannot grow even if the external osmolarity is only mildly higher than the reference value. Cells defective in cell-wall synthesis regulation cannot maintain turgor pressure as the external osmolarity increases, even though they grow faster than WT cells (Figure 2B), which will be a strong support of our theory if confirmed by experiments.
 
-Regarding dynamic behaviors, our model predicts a non-monotonic time dependence of protein density after a constant hyperosmotic shock. We also unveil the supergrowth phase after a hypoosmotic shock, initially discovered in fission yeast after an osmotic oscillation (Knapp et al., 2019). As a strong support of our theory, the predicted growth rate peaks quantitatively agree with the experimental data without additional fitting. We demonstrate the critical role of cell-wall synthesis regulation in the supergrowth phenomenon (Section E of Appendix 1). Knapp et al., 2019, observed the rapid repolarization of the cell-wall glucan synthase Bgs4 to the cell tip following the removal of osmotic oscillations in fission yeast, in agreement with the dynamics of the cell-wall synthesis efficiency predicted from our model (compare Figure 4—figure supplement 1 in this work and Figure S4H in Knapp et al., 2019). To test our theory, we propose applying a hyperosmotic shock with a finite duration and measuring the growth rate after removing the hyperosmotic shock. We predict that the growth rate peak during the supergrowth phase is a non-monotonic function of shock amplitude, initially rising because of the increased excess turgor pressure and later declining because the protein density reaches the critical value ρc\begin{document}$  \rho_{c}$\end{document} during the shock (Figure 4E).
+Regarding dynamic behaviors, our model predicts a non-monotonic time dependence of protein density after a constant hyperosmotic shock. We also unveil the supergrowth phase after a hypoosmotic shock, initially discovered in fission yeast after an osmotic oscillation (Knapp et al., 2019). As a strong support of our theory, the predicted growth rate peaks quantitatively agree with the experimental data without additional fitting. We demonstrate the critical role of cell-wall synthesis regulation in the supergrowth phenomenon (Section E of Appendix 1). Knapp et al., 2019, observed the rapid repolarization of the cell-wall glucan synthase Bgs4 to the cell tip following the removal of osmotic oscillations in fission yeast, in agreement with the dynamics of the cell-wall synthesis efficiency predicted from our model (compare Figure 4—figure supplement 1 in this work and Figure S4H in Knapp et al., 2019). To test our theory, we propose applying a hyperosmotic shock with a finite duration and measuring the growth rate after removing the hyperosmotic shock. We predict that the growth rate peak during the supergrowth phase is a non-monotonic function of shock amplitude, initially rising because of the increased excess turgor pressure and later declining because the protein density reaches the critical value $ρ_{c}$ during the shock (Figure 4E).
 
-We remark that our model is intrinsically a coarse-grained model with many molecular details regarding gene expression regulation neglected, which allows us to gain more analytical insights. Shen et al., 2023, studied the responses to osmotic stress in glucose-limited environments and found that cells exhibited stronger osmotic gene expression response under glucose-limited conditions than under glucose-rich conditions. Using a computational model based on molecular mechanisms combined with experimental measurements, the authors demonstrated that in a glucose-limited environment, glycolysis intermediates were limited, which required cells to express more glycerol-production enzymes for stress adaptation. In the current version of our model, we do not account for the interaction between cell growth and osmolyte production; instead, we assume a constant fraction of ribosomes dedicated to translating ribosomal proteins. Our model can be further generalized to include the more complex interactions, including the coupling between biomass and osmolyte production, e.g., by allowing the fraction of ribosomes translating ribosomal proteins (χr\begin{document}$  \chi_{r}$\end{document}) to depend on the translation strategy of the osmolyte-producing enzyme (χa\begin{document}$  \chi_{a}$\end{document}).
+We remark that our model is intrinsically a coarse-grained model with many molecular details regarding gene expression regulation neglected, which allows us to gain more analytical insights. Shen et al., 2023, studied the responses to osmotic stress in glucose-limited environments and found that cells exhibited stronger osmotic gene expression response under glucose-limited conditions than under glucose-rich conditions. Using a computational model based on molecular mechanisms combined with experimental measurements, the authors demonstrated that in a glucose-limited environment, glycolysis intermediates were limited, which required cells to express more glycerol-production enzymes for stress adaptation. In the current version of our model, we do not account for the interaction between cell growth and osmolyte production; instead, we assume a constant fraction of ribosomes dedicated to translating ribosomal proteins. Our model can be further generalized to include the more complex interactions, including the coupling between biomass and osmolyte production, e.g., by allowing the fraction of ribosomes translating ribosomal proteins ($χ_{r}$) to depend on the translation strategy of the osmolyte-producing enzyme ($χ_{a}$).
 
-Rojas et al., 2014, showed that the expansion of E. coli cell wall is not directly regulated by turgor pressure, and this scenario is also included in our model as the case of Hcw=0\begin{document}$  H_{cw}=0$\end{document}. According to our model, the supergrowth phase is absent if Hcw=0\begin{document}$  H_{cw}=0$\end{document} (Appendix 1—figure 8), consistent with the absence of a growth rate peak after a hypoosmotic shock in the experiments of E. coli (Rojas et al., 2014). Meanwhile, our predictions are consistent with the growth rate peak after a hypoosmotic shock observed for B. subtilis (Rojas et al., 2017).
+Rojas et al., 2014, showed that the expansion of E. coli cell wall is not directly regulated by turgor pressure, and this scenario is also included in our model as the case of $H_{cw}=0$. According to our model, the supergrowth phase is absent if $H_{cw}=0$ (Appendix 1—figure 8), consistent with the absence of a growth rate peak after a hypoosmotic shock in the experiments of E. coli (Rojas et al., 2014). Meanwhile, our predictions are consistent with the growth rate peak after a hypoosmotic shock observed for B. subtilis (Rojas et al., 2017).
 
 We remark on several limitations of our current coarse-grained model. First, the high membrane tension that inhibits transmembrane flux of peptidoglycan precursors, leading to a growth inhibition before the supergrowth peak (Rojas et al., 2017), is beyond our model. Second, in our current framework, osmoregulation and cell-wall synthesis regulation rely on the instantaneous cellular states. However, microorganisms can exhibit memory effects to external stimuli by adapting to their temporal order of appearance (Mitchell et al., 2009). Notably, in the osmoregulation of yeast, a short-term memory, facilitated by posttranslational regulation of the trehalose metabolism pathway, and a long-term memory, orchestrated by transcription factors and mRNP granules, have been identified by Jiang et al., 2020. Besides, our model does not account for the role of osmolyte export in osmoregulation (Tamás et al., 1999) and the interaction between biomass and osmolyte production (Shen et al., 2023). Extending our model to include more realistic biological processes will be interesting.
 
@@ -147,22 +470,86 @@ In this work, we construct a systems-level and coarse-grained model capable of e
 
 ## Materials and methods
 
-## Details of the osmoresponse model
+### Details of the osmoresponse model
 
-We define the fractions of osmolyte-producing protein and ribosomal proteins in the total proteome as ϕa=mp,a/mp\begin{document}$  \phi_{a}=m_{p,a}/m_{p}$\end{document} and ϕr=mp,r/mp\begin{document}$  \phi_{r}=m_{p,r}/m_{p}$\end{document}, respectively. To model gene expression regulation, we introduce χa\begin{document}$  \chi_{a}$\end{document} and χr\begin{document}$  \chi_{r}$\end{document} as the fractions of ribosomes translating the osmolyte-producing protein and ribosomal proteins such that(14)m˙p,r=krχrmp,r⇒ϕ˙r=krϕr(χr−ϕr),\begin{document}$$\displaystyle   \dot{m}_{p,r} = k_r \chi_r m_{p,r} \Rightarrow\dot{\phi}_r = k_r \phi_r (\chi_r - \phi_r), $$\end{document}(15)m˙p,a=krχamp,a⇒ϕ˙a=krϕa(χa−ϕa),\begin{document}$$\displaystyle \dot{m}_{p,a} = k_r \chi_a m_{p,a} \Rightarrow\dot{\phi}_a = k_r \phi_a (\chi_a -\phi_a) ,$$\end{document}(16)m˙p=krmp,r⇒μr=krϕr.\begin{document}$$\displaystyle   \dot{m}_p = k_r m_{p,r} \Rightarrow\mu_r = k_r \phi_r . $$\end{document}
+We define the fractions of osmolyte-producing protein and ribosomal proteins in the total proteome as $ϕ_{a}=m_{p,a}/m_{p}$ and $ϕ_{r}=m_{p,r}/m_{p}$, respectively. To model gene expression regulation, we introduce $χ_{a}$ and $χ_{r}$ as the fractions of ribosomes translating the osmolyte-producing protein and ribosomal proteins such that
 
-Here, kr\begin{document}$  k_{r}$\end{document} is proportional to the elongation speed of ribosomes on mRNAs divided by the protein mass of a single ribosome, which is affected by the global crowding effect as kr=krmaxηr\begin{document}$  k_{r}=k_{r}^{\max}\eta_{r}$\end{document}. Here, μr\begin{document}$  \mu_{r}$\end{document} is the growth rate of total protein mass, which is also the growth rate of dry mass and bound volume in our model since they are all proportional. The osmolyte molecules are produced by the osmolyte-producing protein, with the rate given by(17)N˙a=kamp,a,\begin{document}$$\displaystyle  \dot{N}_a = k_a m_{p,a},$$\end{document}
+$$
+m˙_{p,r}=k_{r}χ_{r}m_{p,r}⇒ϕ˙_{r}=k_{r}ϕ_{r}(χ_{r}−ϕ_{r}),
+$$
 
-where ka=kamaxηr\begin{document}$  k_{a}=k_{a}^{\max}\eta_{r}$\end{document} is the osmolyte production rate, including the crowding factor, and mp,a\begin{document}$  m_{p,a}$\end{document} is the mass of osmolyte-producing protein. We summarize the dynamical equations involved in the osmoresponse model:(18a)ρ˙p=(μr−μf)ρp\begin{document}$$\displaystyle \dot{\rho}_p = (\mu_r - \mu_f) \rho_p $$\end{document}(18b)η˙a=μr[(ρpρc)Ha−ηa]\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} & \dot{\eta}_{a} = \mu_r \left[ \left(\frac{\rho_p}{\rho_c} \right)^{H_a} - \eta_{a} \right] \label{eq:odesub_etaa}$$\end{document}(18c)Π˙in=kBTkamaxηrϕaρp−μfΠin\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} & \dot{\Pi}_{in} = k_BT k_a^{\max} \eta_r \phi_a \rho_p - \mu_f \Pi_{in} \label{eq:odesub_piin}$$\end{document}(18d)ϵ˙=(μ−μcw)(ϵ+1)\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} & \dot{\epsilon} = (\mu- \mu_{cw}) (\epsilon + 1) \label{eq:odesub_epsilon}$$\end{document}(18e)η˙cw=1τcw±[(σσc)Hcw−ηcw].\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} & \dot{\eta}_{cw} = \frac1{\tau_{cw}^{\pm}} \left[\left(\frac{\sigma}{\sigma_c} \right)^{H_{cw}} - \eta_{cw} \right]. \label{eq:odesub_etacw}$$\end{document}
 
-To describe the osmoregulation process using a two-dimensional dynamical system, we introduce the normalized protein density as(19)ρ~p=kBTkamaxχamaxμrmaxρpΠin≡ρpρ¯p,\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} \tilde{\rho}_p = \frac{k_B Tk_a^{\max}\chi_a^{\max} }{ \mu_r^{\max} } \frac{\rho_p}{\Pi_{in}}\equiv \frac{\rho_p}{\bar{\rho}_p}, \label{eq:norm_rhop}$$\end{document}
 
-Combining Equation 11 and Equation 18a, we obtain the dynamical equation for ρ~p\begin{document}$  \tilde{\rho}_{p}$\end{document} as(20)ρ~˙pρ~p=μrmaxηr(1−ρ~pηa).\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} \frac{\dot{\tilde{\rho}}_p}{\tilde{\rho}_p} = \mu_r^{\max} \eta_r \left(1 - \tilde{\rho}_p \eta_a \right). \label{eq:dyn_norm_rhop}$$\end{document}
+$$
+m˙_{p,a}=k_{r}χ_{a}m_{p,a}⇒ϕ˙_{a}=k_{r}ϕ_{a}(χ_{a}−ϕ_{a}),
+$$
 
-Using Equation 15, we obtain the equation for ηa=ϕa/χamax\begin{document}$  \eta_{a}=\phi_{a}/\chi_{a}^{\max}$\end{document} as(21)η˙a=μrmaxηr[(ρ~pρ~c)Ha−ηa],\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} \dot{\eta}_a = \mu_r^{\max} \eta_r \Big [\Big(\frac{\tilde{\rho}_p }{ \tilde{\rho}_c}\Big)^{H_a} - \eta_a \Big], \label{eq:dyn_etaa}$$\end{document}
 
-where ρ~c=ρc/ρ¯p\begin{document}$  \tilde{\rho}_{c}=\rho_{c}/\bar{\rho}_{p}$\end{document}. The unique equilibrium point for the internal state is(22)(ρ~peq,ηaeq)=(ρ~cHaHa+1,ρ~c−HaHa+1).\begin{document}$$\displaystyle \newcommand{\blue}{\color{blue}}\newcommand{\red}{\color{red}}\newcommand{\green}{\color{green}}\newcommand{\magenta}{\color{magenta}}\newcommand{\blue}{}\newcommand{\red}{}\newcommand{\green}{}\newcommand{\magenta}{}\newcommand{\dif}{\mathop{}\!\mathrm{d}} (\tilde{\rho}_p^{eq}, \eta_a^{eq}) = \left({\tilde{\rho}_{c}}^{\frac{H_a}{H_a + 1}}, {\tilde{\rho}_{c}}^{-\frac{H_a}{H_a + 1}} \right). \label{eq:reduced_std_point}$$\end{document}
 
-## Details of numerical simulations
+$$
+m˙_{p}=k_{r}m_{p,r}⇒\mu_{r}=k_{r}ϕ_{r}.
+$$
+
+Here, $k_{r}$ is proportional to the elongation speed of ribosomes on mRNAs divided by the protein mass of a single ribosome, which is affected by the global crowding effect as $k_{r}=k_{r}^{max}η_{r}$. Here, $\mu_{r}$ is the growth rate of total protein mass, which is also the growth rate of dry mass and bound volume in our model since they are all proportional. The osmolyte molecules are produced by the osmolyte-producing protein, with the rate given by
+
+$$
+N˙_{a}=k_{a}m_{p,a},
+$$
+
+where $k_{a}=k_{a}^{max}η_{r}$ is the osmolyte production rate, including the crowding factor, and $m_{p,a}$ is the mass of osmolyte-producing protein. We summarize the dynamical equations involved in the osmoresponse model:
+
+$$
+ρ˙_{p}=(\mu_{r}−\mu_{f})ρ_{p}
+$$
+
+
+
+$$
+η˙_{a}=\mu_{r}[(\frac{ρ_{p}}{ρ_{c}})^{H_{a}}−η_{a}]
+$$
+
+
+
+$$
+Π˙_{in}=k_{B}Tk_{a}^{max}η_{r}ϕ_{a}ρ_{p}−\mu_{f}Π_{in}
+$$
+
+
+
+$$
+ϵ˙=(\mu−\mu_{cw})(ϵ+1)
+$$
+
+
+
+$$
+η˙_{cw}=\frac{1}{\tau_{cw}^{\pm}}[(\frac{\sigma}{\sigma_{c}})^{H_{cw}}−η_{cw}].
+$$
+
+To describe the osmoregulation process using a two-dimensional dynamical system, we introduce the normalized protein density as
+
+$$
+ρ~_{p}=\frac{k_{B}Tk_{a}^{max}χ_{a}^{max}}{\mu_{r}^{max}}\frac{ρ_{p}}{Π_{in}}≡\frac{ρ_{p}}{ρ¯_{p}},
+$$
+
+Combining Equation 11 and Equation 18a, we obtain the dynamical equation for $ρ~_{p}$ as
+
+$$
+\frac{ρ~˙_{p}}{ρ~_{p}}=\mu_{r}^{max}η_{r}(1−ρ~_{p}η_{a}).
+$$
+
+Using Equation 15, we obtain the equation for $η_{a}=ϕ_{a}/χ_{a}^{max}$ as
+
+$$
+η˙_{a}=\mu_{r}^{max}η_{r}[(\frac{ρ~_{p}}{ρ~_{c}})^{H_{a}}−η_{a}],
+$$
+
+where $ρ~_{c}=ρ_{c}/ρ¯_{p}$. The unique equilibrium point for the internal state is
+
+$$
+(ρ~_{p}^{eq},η_{a}^{eq})=(ρ~_{c}^{\frac{H_{a}}{H_{a}+1}},ρ~_{c}^{−\frac{H_{a}}{H_{a}+1}}).
+$$
+
+### Details of numerical simulations
 
 We employ the LSODA algorithm with automatic stiffness detection and switching (Petzold, 1983), implemented in SciPy (Virtanen et al., 2020), to solve Equation 18a–e. The parameters used for numerical simulations of walled cells are listed in Table 1.

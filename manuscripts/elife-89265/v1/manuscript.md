@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00afp2z80 Laboratory of Molecular Regulation of Neurogenesis, GIGA‐Stem Cells and GIGA-Neurosciences, Interdisciplinary Cluster for Applied Genoproteomics (GIGA‐R), University of Liège Liège Belgium
-2. https://ror.org/04qbvw321 WELBIO department, WEL Research Institute Wavres Belgium
+1. Laboratory of Molecular Regulation of Neurogenesis, GIGA‐Stem Cells and GIGA-Neurosciences, Interdisciplinary Cluster for Applied Genoproteomics (GIGA‐R), University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+2. WELBIO department, WEL Research Institute Wavres Belgium ([ROR:04qbvw321](https://ror.org/04qbvw321))
 
 † Corresponding author
 

@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/038t36y30 Department of Pharmacology, Heidelberg University Heidelberg Germany
-2. https://ror.org/00ygt2y02 Ernst Strüngmann Institute for Neuroscience in Cooperation with the Max Planck Society Frankfurt am Main Germany
-3. https://ror.org/03mstc592 Molecular Medicine Partnership Unit, European Molecular Biology Laboratory (EMBL) Heidelberg Germany
+1. Department of Pharmacology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+2. Ernst Strüngmann Institute for Neuroscience in Cooperation with the Max Planck Society Frankfurt am Main Germany ([ROR:00ygt2y02](https://ror.org/00ygt2y02))
+3. Molecular Medicine Partnership Unit, European Molecular Biology Laboratory (EMBL) Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))
 
 † Corresponding author
 
@@ -35,17 +35,33 @@ One main challenge for the analysis of warm-sensitive neurons, neturons that res
 
 ## Results
 
-## The thermal chamber preference test allows precise discrimination of subtle temperature differences in the innocuous range
+### The thermal chamber preference test allows precise discrimination of subtle temperature differences in the innocuous range
 
-## Mice prefer 31°C to warmer temperatures when ambient and floor temperature are controlled
+#### Mice prefer 31°C to warmer temperatures when ambient and floor temperature are controlled
 
 The ability to avoid uncomfortable environmental temperatures or move towards pleasant thermal conditions is fundamental to sustaining life. This process is known as behavioural thermoregulation and can be found in most groups of animals (Mota-Rojas et al., 2021). The preference of rodents for temperature is traditionally assessed via paradigms that challenge the animals with differing floor temperatures (Gordon et al., 1998; Moqrich et al., 2005; Touska et al., 2016). This leads to preference development that is based on temperature detection through glabrous skin, such as the paws, tail, and nose. Animals, however, are capable of integrating temperature from glabrous and non-glabrous skin (Romanovsky, 2014). With the aim to probe behavioural thermoregulation in a more holistic context, we developed a thermal discrimination assay where both the floor and ambient temperature are controlled, termed the thermal chamber preference test (CPT) (Figure 1A–D, Figure 1—figure supplement 1). When presented with warm ambient temperatures (34°C and 38°C) and 31°C as control temperature, mice significantly preferred the 31°C chamber over the warmer chambers (Figure 1E and F). Compared to the classic two-plate preference test (TPT), wildtype animals developed a stronger preference for the 31°C side in the CPT (Figure 1—figure supplement 1I). Additionally, animals showed a clear preference for 31°C when given 34°C as an option in the CPT. This is not observed in the classic TPT (Figure 1—figure supplement 1I). This observation suggests that more subtle ambient temperature differences, relating to comfort and thermoregulation, are more faithfully assessed in the CPT assay.
 
-## TRPM2 is necessary for establishing a preference in the warm-temperature range
+![Figure 1.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the chamber preference test from the top. Grey outlines the outer enclosure and the dashed line the internal cage. Peltier elements (grey oval shapes) were combined with fans for precise control of the temperature. See Figure 1—figure supplement 1 for a more detailed view. (B) A representative image of an animal exploring the chambers. Coloured dots represent the tracked keypoints on the animal and reference points in the enclosure. (C) Tracking of an example animal for 30 minutes at 31°C (right chamber) and 34°C (left chamber). (D) Density maps of the x-position of the animal in (C) over 30 minutes; binned in 3-minute-long intervals. Dashed lines represent the tunnel connecting both chambers. (E) Density maps as in (D) with 1-minute bins of all animals from wildtype (n = 48), Trpv1-/- (n = 15), and Trpm2-/- (n = 28) genotypes. (F) Proportion of time spent in the test chamber for animals shown in (E) over time, binned in 3-minute-long intervals. Mean and standard error of the mean (SEM) shown. ANOVA over genotype (34°C: F(2,70) = 7.30, p=0.001; 38°C: F(2,76) = 7.84, p<0.001), time (34°C: F(5.63,394.35) = 2.51, p<0.05; 38°C: F(3.86,293.72) = 11.07, p<0.001), and their interaction (34°C: F(11.27,394.35) = 1.98, p<0.05). Results of post hoc multiple comparison by timepoint against wildtype are indicated. (G) Exemplary behaviour of the animal in (C) and (D) over the first 120 seconds of the experiment, highlighting the visit frequency and duration of time spent in each chamber. The dashed line represents the tunnel connecting the chambers. (H) Overview of the frequency and length of the visits to the test chamber for 15 randomly sampled animals per genotype, shown in (E). Each visit is coloured by the log2 of its length to highlight varying visit lengths. (I) Averaged and smoothed visit lengths in a 3-minute rolling window with a 1-minute lag. The shaded area represents the 95% confidence interval. Linear mixed model over genotype and time with random effects across animals. (J) Averaged and smoothed number of crosses in a 3-minute rolling window. The shaded area represents the 95% confidence interval. Cox regression over genotype (34°C X2 (2) = 49.67, p<0.001; 38°C X2 (2) = 55.74, p<0.0001). (I, J) Results of post hoc multiple comparison against wildtype are indicated. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the chamber preference test (CPT) from the top (upper panel) and side (lower panel). A styrofoam enclosure ensures adequate thermal isolation (grey shading). Peltier elements (dark grey ovals) equipped with fans allow the rapid circulation of heat throughout the chamber. Two wall thermometers allow monitoring and regulation of the chamber temperature in a closed-loop fashion. A steel cage (dashed pink line) marks the area where the animals move around freely. A stainless-steel floor (pink) allows easy clean-up and adaptation of the ambient temperature. A transparent top (blue) allows video recording and tracking of the animal position throughout the experiment. Two ambient and floor thermometers were used to calibrate the corresponding wall thermometer to achieve the desired ambient temperature in each chamber. (B, D) Exemplary temperature development at the beginning of an experimental day for each chamber and thermometer indicated in (A). Neutral chamber set to 31°C shown in (D). Test chamber set to 38°C shown in (B). Insets (C) and (E) zoom-in onto the temperature recordings once the chambers stabilized (around 90 minutes of pre-warming). (F) Stability of ambient and wall temperature in chamber 1 (Ch1) and 2 (Ch2) when opening the enclosure to replace animals. The dashed line shows the time point of opening the enclosure. Floor temperature remained unaffected (data not shown). (G) Shown are box plots of wall, ambient, and floor temperatures at 31°C neutral temperature and 34°C or 38°C test temperatures in chamber 1 (Ch1) and chamber 2 (Ch2). (H) Calculated ambient temperature gradient in the CPT at 31°C neutral and 38°C test temperatures. The dashed line shows the tunnel connecting both chambers. (I) Comparison of CPT and conventional two-plate preference test (TPT) temperature preference assays in the same cohort of wildtype (n = 12) and Trpm2-/- (n = 17) animals, shown in CPT (Figure 1). Depicted is the mean preference and SEM at each test temperature. Linear mixed model over setup type and temperature with random effects across animals followed by multiple comparison testing with Sidak correction against TPT. (J) Density maps of the x-position of wildtype (n = 41) and thermally ablated animals (Trpv1-Abl, n = 13) at 31°C vs 34°C. Binned in 1-minute bins, concatenated, and interpolated. Dashed lines represent the tunnel connecting both chambers. (K) Mean proportion and SEM of time spent on the test side of animals shown in (J). ANOVA over genotype and time (genotype F(1,52) = 15.96 <0.001). (L) Overview of the frequency and length of the visits to the test chamber 7 randomly sampled animals from (J) and (K). Each visit is coloured by the log2 of its length to highlight varying visit lengths. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Density maps of the x-position of the animals shown in chamber preference test (CPT) (Figures 1 and 4) when given the choice of 25°C and 31°C (reference temperature), over time. (B) Visit lengths to the 25°C chamber over time for 11 randomly sampled animals per genotype from (A). (C) Mean proportion and SEM of time spent at 25°C for animals from (A). ANOVA over genotype, time, and their interaction (F(5.88,258.92) = 7.01, p<0.001). (D) Averaged and smoothed visit lengths in a 3-minute rolling window with a 1-minute lag. The shaded area depicts the 95% confidence interval. (E) As in (D) but for the number of crosses. Cox regression over genotype (X2 (2) = 42.73, p<0.0001). Results of post hoc multiple comparison against wildtype are indicated. ****p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Density occupation map of the Trpm8-/- animals at different test temperatures, over time. (B) Mean proportion and SEM of time spent at test side in 3-minute bins of animals from (A). (C) Overview of the frequency and length of the visits to the test chamber for eight randomly sampled animals per genotype and temperatures from (A). Each visit is coloured by the log2 of its length to highlight varying visit lengths. (D) Averaged and smoothed visit lengths in a 3-minute rolling window with a 1-minute lag. The shaded area depicts the 95% confidence interval. Linear mixed model over genotype and time with random effects across animals. Results of post hoc multiple comparison by timepoint against wildtype are indicated. (E) As in (D) but for the number of crosses. Cox regression over test temperatures (25°C: X2 (1) = 6.45, p<0.05; 34°C: X2 (1) = 8.81, p<0.01; 38°C: X2 (1) = 15.32, p<0.001). *p<0.05, ***p<0.001.
+
+#### TRPM2 is necessary for establishing a preference in the warm-temperature range
 
 Previous studies assessing warm-temperature detection using the TPT with animals lacking TRPV1 or TRPM2 showed that Trpm2-/- animals failed to differentiate between 31°C and 38°C (reproduced in Figure 1—figure supplement 1) while Trpv1-/- animals, similar to wildtypes, preferred the 31°C side (Tan and McNaughton, 2016; Pogorzala et al., 2013). Similarly, when using the newly developed CPT, Trpv1-/- animals showed a similar temperature preference to wildtypes while Trpm2-/- animals failed to develop a preference for the thermoneutral (31°C) side (Figure 1E and F), without affecting their preference at 25°C (Figure 1—figure supplement 2A and C). In addition to the previously described phenotype at 38°C, Trpm2-/- animals were also unable to discriminate 34°C from 31°C, emphasizing the relevance of TRPM2 at milder warm temperatures (Figure 1E and F, Figure 1—figure supplement 1). Notably, the phenotype of Trpm2-/- animals was similar to that of animals lacking most, if not all, peripheral (heat and cold) thermosensors (Trpv1-Abl, Mishra et al., 2011, Figure 1—figure supplement 1J and K). These results confirm previous data demonstrating the requirement for TRPM2 rather than TRPV1, in preference development in the warm-temperature range (Tan and McNaughton, 2016; Pogorzala et al., 2013).
 
-## TRPV1 and TRPM2 affect different aspects of warm-temperature detection
+#### TRPV1 and TRPM2 affect different aspects of warm-temperature detection
 
 Traditionally, analyses of temperature preference are limited to reporting the proportion of time an animal spent at the test temperature, without assessing more fine-grained thermal preference behaviour, such as the sequence of chamber crossings and intermittent pauses (visit lengths, Moqrich et al., 2005; Touska et al., 2016; Gordon et al., 1998). We observed that in the CPT, animals cross from one chamber to the other, probing the chamber, before crossing back (Figure 1G). We quantified the number of crossings and the lengths of these episodes throughout the experiments (Figure 1H). At the start of the experiment, mice of all genotypes crossed more often than at the end of the experiment while maintaining similar durations of their visits to the warmer chamber (Figure 1H–J). Trpv1-/- animals showed a significantly higher crossing rate compared to wildtype animals at both 34°C and 38°C (Figure 1H and J). Trpm2-/- animals, on the other hand, had significantly longer visits to the warmer chamber compared to wildtype animals, while having either similar (at 38°C) or a reduced crossing rate (at 34°C) (Figure 1H–J).
 
@@ -53,31 +69,51 @@ Notably, animals lacking TRPM8, a cold-sensitive TRP-channel that was shown to b
 
 Together, these observations suggest that, contrary to previous findings using the TPT, both TRPV1 and TRPM2 contribute to the animals’ ability to detect warm temperatures and to drive associated thermal preference behaviours, albeit the two ion channels modulate different aspects of the behavior.
 
-## Trpv1 knockout mice have decreased proportions of warm-sensitive neurons
+### Trpv1 knockout mice have decreased proportions of warm-sensitive neurons
 
-## A small subpopulation of cultured primary sensory neurons responds to warm temperatures
+#### A small subpopulation of cultured primary sensory neurons responds to warm temperatures
 
 Trpv1 is highly expressed in peripheral sensory neurons that reside bilaterally in so-called DRG along the spinal cord. To assess the individual contribution of Trpv1 and Trpm2 channels to ambient warm-temperature detection, and to account for the integration of temperature across the whole body of the animal, we cultured primary DRG neurons pooled from across the whole length of the spine.
 
 Historically, experiments studying temperature responses in sensory neurons are performed with DRG neurons cultured for a few hours to overnight (Perner and Sokol, 2021). However, these cultures did not reflect the distribution of warm-sensitive neurons described from in vivo studies, with 26 ± 9% of all cells responding to warm temperatures, contrary to 3–10% of warm-sensitive neurons observed in vivo (Figure 2—figure supplement 1C-E, Yarmolinsky et al., 2016; Wang et al., 2018). We speculated that this expansion in the proportion of warm-sensitive neurons might reflect a post-injury state in which heat-sensitive neurons become sensitised to lower thermal stimuli (Yarmolinsky et al., 2016; Leijon et al., 2019). Since sensory neuron dissociation resembles an axotomy which activates injury-related pathways (Ono et al., 2012; Tsujino et al., 2000; Zheng et al., 2007; Huang et al., 2012; Wangzhou et al., 2020; Nguyen et al., 2019), we extended the commonly used DRG primary culture protocol to 3 days to allow the cells to recover from the procedure. Three-day cultures harboured approximately 6 ± 3% warm-sensitive neurons compared to overnight cultures 26 ± 9% (Figure 2—figure supplement 1E). Furthermore, 3-day cultures showed a reduced calcium inflow upon temperature stimulation and an improved capacity to return to baseline calcium levels upon termination of the stimulus, indicative of recovery from a post-injury state of sensory neurons (Figure 2—figure supplement 1E–G, Zheng et al., 2007; Huang et al., 2012). These observations are in line with data collected from in vivo calcium imaging preparations of both dorsal root and trigeminal ganglion cells in response to warm temperatures (Yarmolinsky et al., 2016; Wang et al., 2018) and suggest that 3-day cultures rather than acute/short-term preparations more accurately reflect the functional properties and abundance of warm-responsive sensory neurons that are found in behaving animals. However, whether 3-day cultures resemble native sensory neurons more closely than acute cultures in terms of their (transcriptional) identity is currently unknown.
 
-## Trpv1 and Trpm2 deletion reduces the proportion of warmth responders
+#### Trpv1 and Trpm2 deletion reduces the proportion of warmth responders
 
 To investigate the effects of TRPV1 and TRPM2 loss on the response of sensory neurons to warm-temperature stimulation, we applied the same stimulation protocol to cultures from Trpv1-/- and Trpm2-/- animals (Figure 2). Lack of TRPV1 or TRPM2 led to a significant reduction in the proportion of warm-sensitive neurons compared to wildtype cultures, albeit the deletion of Trpm2 had only a fairly small effect (Figure 2D, wildtype: 64 ± 2.4%; Trpv1-/-: 2.3 ± 1.3%; Trpm2-/-: 4.7 ± 1.4%). Cultures from Trpv1-/- animals had reduced proportions of responders across the whole range of warm-temperature stimuli (Figure 2D), but showed similar proportions of heat responders (neurons responding to T ≥ 43°C) compared to cultures obtained from wildtype animals (Figure 2—figure supplement 2D). In contrast to a previous study describing warm-sensitive neurons in vivo (Yarmolinsky et al., 2016), our Trpv1-/- cultures did not show a complete absence of response to warm temperatures, with some cells in the Trpv1-/- cultures retaining their ability to respond to warm stimuli (Figure 2B and D). Lack of TRPM2, on the other hand, affected the proportions of responders across both the warm and the hot temperature range (Figure 2D, Figure 2—figure supplement 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental paradigm of temperature stimulation. Three sequential and increasing temperature stimuli of 25 seconds, with 5-minute inter-stimulus intervals. Traces represent mean temperatures for wildtype, Trpv1-/-, and Trpm2-/- cultures. (B) Heat map showing representative normalized ($ΔF/F_{0}$) calcium response of warm-sensitive neurons (60 randomly sampled cells per genotype). (C) Zoom-in of the mean and SD of the three warm-temperature stimuli shown in (A). (D) The proportions of responders to each stimulus in relation to all imaged neurons from wildtype (5 animals, 18 field of views [FOVs], 6374 cells), Trpv1-/- (5 animals, 9 FOVs, 3009 cells), and Trpm2-/- (6 animals, 12 FOVs, 4315 cells). Each dot represents an FOV. ANOVA over genotype (F(2,36) = 14.24, p<0.001), stimulus (F(1.31, 47.32) = 113.44, p<0.001), and their interaction (F(2.63, 47.32) = 9.18, p<0.001). Results of post hoc multiple comparison against wildtype are indicated. (E) Average and SEM $ΔF/F_{0}$ for all responders over the whole stimulus (as shown in B) from wildtype (412 cells), Trpv1-/- (111 cells), and Trpm2-/- (204 cells). (F) Box plots of the mean area under the curve (AUC) of ($ΔF/F_{0}$) from each FOV used in (D). Linear mixed model over genotype and stimulus with random effects across animals and FOVs. Pairwise contrasts against wildtype are indicated. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Examples of temperatures responsive and non-responsive dorsal root ganglion (DRG) neurons used to train the classifier. The dashed lines represent stimulus beginning and end. (B) Average response and SEM of all responsive and non-responsive DRG neurons used to train the classifier. Classification performance (inset) shown as a confusion matrix with the percentage of actual and predicted responders (+) and non-responders (-). (C, D) Heat map showing normalized calcium responses ($ΔF/F_{0}$) of individual cells (each row represents one cell) of a single field of view (FOV) of 300 randomly sampled primary DRG neurons cultured overnight (C) or for 3 days (D) in response to five consecutive and increasing temperature stimuli. (E) Fraction of responding cells in relation to all imaged cells for overnight and 3-day cultures in response to the temperature stimuli. Means and SEMs of overnight (4 animals, 8 FOVs, 2028 cells) and 3-day (15 animals, 43 FOVs, 21149 cells) cultures. ANOVA over culturing method (F(1,41) = 18.32, p<0.001), stimulus (F(1.47, 80.08) = 101.42, p<0.001), and their interaction (F(1.47, 80.08) = 7.6, p=0.003). Results of post hoc multiple comparison against overnight culture are indicated. (F) Split violin plots showing the distributions of the maximum $ΔF/F_{0}$ for all responding cells during each stimulus. (G) The post- and pre-stimulus difference for each cell in each stimulus for both conditions. A window of 25 seconds before and after each stimulus was used to calculate the mean $ΔF/F_{0}$ for each window. A difference of 0 indicates that a cell was able to completely return to its baseline after responding to the stimulus. (H) The mean proportions and SEM of responders to each temperature stimulus in relation to all imaged neurons in cells cultured overnight from wildtype (4 animals, 8 FOVs, 2028 cells), Trpv1-/- (2 animals, 6 FOVs, 1714 cells), and Trpm2-/- (3 animals, 5 FOVs, 1816 cells). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Experimental paradigm of temperature stimulation. Five sequential and increasing temperature stimuli of 25 seconds with 5 minutes inter-stimulus intervals followed by capsaicin (1 μM) and high potassium stimulation. Capsaicin was used to identify TRPV1-positive cells and high potassium to identify neuronal cells. The traces represent mean temperatures of the field of view (FOV) shown in (B). (B) Examples of normalized ($ΔF/F_{0}$) calcium responses of temperature-sensitive cells sampled from all FOVs and experiments (n = 250 cells per genotype). (C) Mean and SD of the five temperature stimuli applied. (D) The proportions of responders to each temperature stimulus in relation to all imaged neurons from wildtype (5 animals, 18 FOVs, 6374 cells), Trpv1-/- (5 animals, 10 FOVs, 3009 cells), and Trpm2-/- (6 animals, 12 FOVs, 4315 cells). Each dot represents an individual FOV. Note that the fraction of warm-sensitive neurons is small (6 ± 3%) and therefore necessitates large sample sizes for robust estimations of effects caused by gain- and loss-of-function models. ANOVA over genotype (F(2,37) = 5.52, p=0.008), stimulus (F(1.12, 41.51) = 203.09, p<0.001), and their interaction (F(2.24, 41.51) = 4.24, p=0.018). Results of post hoc multiple comparison against wildtype are indicated. (E) Average and SEM $ΔF/F_{0}$ for all responders over the whole stimulus (as shown in C). *p <0.05, **p<0.01, *** p<0.001.
+
 Notably, warm-sensitive neurons from wildtype animals show an increase in the proportion of responders with increased stimulus intensity (second vs. first p<0.05, third vs. second p<0.0001). This was not observed in cultures from Trpv1-/- or Trpm2-/-, where the increase was only significant from the second to the third stimulus. (p<0.001 and p<0.0001, respectively).
 
-## Loss of Trpm2 alters the population response profile to warm stimuli
+#### Loss of Trpm2 alters the population response profile to warm stimuli
 
-Next, we compared the magnitude of the responses of warm-sensitive neurons. Previous studies suggested that warm-sensitive neurons are tuned in a graded-monotonic way, that is, an increase in temperature leads to an increased response (Wang et al., 2018; Yarmolinsky et al., 2016). Wildtype and Trpv1-/- warm-sensitive neurons show an increase in response magnitude (ΔF/F0) with increasing temperature stimuli (Figure 2E and F). Surprisingly, warm-sensitive neurons from Trpm2-/- animals, on the other hand, respond with a significantly higher calcium inflow to the lowest temperature stimulus compared with wildtype warm-sensitive neurons. Their response to the second and third stimulus, however, are similar to wildtype warm-sensitive neurons, suggesting that tuning of the response magnitude to different warmth stimuli might be affected in Trpm2-/- animals.
+Next, we compared the magnitude of the responses of warm-sensitive neurons. Previous studies suggested that warm-sensitive neurons are tuned in a graded-monotonic way, that is, an increase in temperature leads to an increased response (Wang et al., 2018; Yarmolinsky et al., 2016). Wildtype and Trpv1-/- warm-sensitive neurons show an increase in response magnitude ($ΔF/F_{0}$) with increasing temperature stimuli (Figure 2E and F). Surprisingly, warm-sensitive neurons from Trpm2-/- animals, on the other hand, respond with a significantly higher calcium inflow to the lowest temperature stimulus compared with wildtype warm-sensitive neurons. Their response to the second and third stimulus, however, are similar to wildtype warm-sensitive neurons, suggesting that tuning of the response magnitude to different warmth stimuli might be affected in Trpm2-/- animals.
 
 When testing for the graded increase in response amplitude, warm-sensitive neurons from wildtype or Trpv1-/- only animals showed a significant increase comparing the second to the third stimulus (p<0.0001 and p<0.05, respectively). Trpm2-/- cells showed a significant decrease from the first to the second stimulus (p<0.001) followed by a significant increase from the second to third stimulus (p<0.0001).
 
-## Warm-sensitive neurons vary in their response characteristics
+### Warm-sensitive neurons vary in their response characteristics
 
-## TRPV1 drives the dynamic phase of warm-temperature responses
+#### TRPV1 drives the dynamic phase of warm-temperature responses
 
 Consistent with the behavioural data (Figure 1), the absence of TRPV1 or TRPM2 led to population changes in response to warm temperatures in primary sensory neurons. A closer look at the calcium response profiles of individual cells showed that warm-sensitive neurons also vary in when they respond to a temperature stimulus (Figures 2B and 3B). To capture this variability, we computed the point at which each cell started responding to the stimulus (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig3-v1.jpg)
+
+**Figure 3.:** (A) Temperature traces from three exemplary imaging sessions. (B) Individual calcium traces ($ΔF/F_{0}$) of 10 representative thermosensitive neurons from each genotype in response to the applied stimuli. The position of the dashed line indicates the time when the cells exceeded 10% of their maximum $ΔF/F_{0}$ during the stimulus. (C) Mean and SD of the three warm-temperature stimuli shown in (A). The dotted line indicates the separation between the dynamic and static phases, defined by the end of the peak of the smoothed temperature change rate. (D) Response onset of all recorded warm-sensitive neurons. Each row represents a single field of view (FOV) (see Figure 2D). Each triangle indicates the time point at which the individual cell responds to the stimulus as shown in (B). Dotted line as in (C). (E) Density plot of response time points for each genotype and stimulus. Distributions were compared against wildtype using the Wilcoxon ranked sum test with false discovery rate post hoc correction. *p<0.05, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean and SD of the five warm-temperature stimuli applied. The dotted line indicates the transition between the dynamic and the static phases of the temperature stimuli. (B) Response initiation of all temperature-responsive cells imaged. Each row represents a field of view (FOV). Each triangle denotes the time point at which the cell begins to respond to the stimulus. Dotted line as in (A). (C) Density representations of response time points for each genotype and stimulus. (D) and (E) same as (A) and (B), except that only wildtype dorsal root ganglion (DRG) cultures are included; cells are separated into two subgroups based on their responsiveness to capsaicin (orange: responsive; grey: non-responsive). (F) Density estimates of the response time points shown in (E). *p<0.05, ***p<0.001, ****p<0.0001.
 
 Each temperature stimulus we divided into two distinct phases: an initial, dynamic phase, in which the temperature rises rapidly. And a second, static phase, in which the temperature stabilizes (Figure 3A). The majority of warm-sensitive neurons from wildtype animals respond during the rising, dynamic phase of the stimulus (Figure 3D and E). In comparison, warm-sensitive neurons from animals lacking TRPV1 predominantly responded during the static phase of the stimulus, while Trpm2-/- cells did not significantly differ in their response onset from wildtype cells (Figure 3D and E, Figure 3—figure supplement 1A–C). Additionally, TRPV1-positive cells in wildtype cultures identified by their response to the TRPV1 activator capsaicin (Caterina et al., 1997) predominantly responded during the dynamic phase of the stimulus, compared to TRPV1-negative cells (Figure 3—figure supplement 1D–F). Collectively, these observations suggest that TRPV1, but not TRPM2, is involved in the response to dynamic, fast changes in temperature.
 
@@ -85,25 +121,33 @@ Given the strong reduction of the intracellular calcium dynamics observed in Trp
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig4-v1.jpg)
 
-**Figure 4.:** (A) Mean temperatures from all experiments and imaging sessions for wildtype (3 animals, 6 field of views [FOVs], 3133 cells) and Trpv1-OX (2 animals, 5 FOVs, 3754 cells) cultures. (B) Examples of normalized () calcium responses of warm-sensitive neurons responding to any of the stimuli depicted in (ΔF/F0A). 42 randomly sampled cells from each genotype. (C) Mean and SD of the three warm-temperature stimuli applied. The dotted line indicates the separation between the dynamic phase and the static phase (see Figure 3C). (D) Response initiation of all warm-sensitive neurons imaged from wildtype and Trpv1-OX animals. Each row represents an individual imaging session. Each triangle denotes the time point at which the cell responds to the stimulus, as shown in Figure 3B. Dotted line as in (C). (E) Density representation of response time points for each genotype and stimulus. Distributions were compared against wildtype using the Wilcoxon ranked sum test. (F) Density maps of all wildtype (n = 48) and Trpv1-OX (n = 12) animals in the chamber preference test (CPT) over time. (G) Mean proportion and SEM of time spent in the test chamber for animals shown in (F) over time, binned in 3-minute intervals. ANOVA over genotype (34°C: F(1,51) = 6.49, p<0.05), time (34°C: F(6.12,311.93) = 4.49, p<0.001; 38°C: F(4.71,240.22) = 28.27, p<0.001), and their interaction (38°C: F(4.71,240.22) = 4.42, p<0.001). Results of post hoc multiple comparison by timepoint against wildtype are indicated. (H) Overview of the frequency and length of the visits to the test chamber for all animals shown in (F). Each visit is coloured by the log2 of its length to highlight varying visit lengths. (I) Averaged and smoothed visit lengths in a 3-minute rolling window with a 1-minute lag. The shaded area depicts the 95% confidence interval. Linear mixed model over genotype and time with random effects across animals. (J) As in (I) but for the number of crosses. Cox regression over genotype (34°C: X2 (2) = 17.52, p<0.001; 38°C: X2 (2) = 4.13, p<0.05). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+**Figure 4.:** (A) Mean temperatures from all experiments and imaging sessions for wildtype (3 animals, 6 field of views [FOVs], 3133 cells) and Trpv1-OX (2 animals, 5 FOVs, 3754 cells) cultures. (B) Examples of normalized ($ΔF/F_{0}$) calcium responses of warm-sensitive neurons responding to any of the stimuli depicted in (A). 42 randomly sampled cells from each genotype. (C) Mean and SD of the three warm-temperature stimuli applied. The dotted line indicates the separation between the dynamic phase and the static phase (see Figure 3C). (D) Response initiation of all warm-sensitive neurons imaged from wildtype and Trpv1-OX animals. Each row represents an individual imaging session. Each triangle denotes the time point at which the cell responds to the stimulus, as shown in Figure 3B. Dotted line as in (C). (E) Density representation of response time points for each genotype and stimulus. Distributions were compared against wildtype using the Wilcoxon ranked sum test. (F) Density maps of all wildtype (n = 48) and Trpv1-OX (n = 12) animals in the chamber preference test (CPT) over time. (G) Mean proportion and SEM of time spent in the test chamber for animals shown in (F) over time, binned in 3-minute intervals. ANOVA over genotype (34°C: F(1,51) = 6.49, p<0.05), time (34°C: F(6.12,311.93) = 4.49, p<0.001; 38°C: F(4.71,240.22) = 28.27, p<0.001), and their interaction (38°C: F(4.71,240.22) = 4.42, p<0.001). Results of post hoc multiple comparison by timepoint against wildtype are indicated. (H) Overview of the frequency and length of the visits to the test chamber for all animals shown in (F). Each visit is coloured by the log2 of its length to highlight varying visit lengths. (I) Averaged and smoothed visit lengths in a 3-minute rolling window with a 1-minute lag. The shaded area depicts the 95% confidence interval. Linear mixed model over genotype and time with random effects across animals. (J) As in (I) but for the number of crosses. Cox regression over genotype (34°C: X2 (2) = 17.52, p<0.001; 38°C: X2 (2) = 4.13, p<0.05). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Does the enrichment of cells responding during the dynamic stimulus phase affect the behaviour of the animals in the CPT? Indeed, Trpv1 overexpression led to a significantly stronger avoidance of the 38°C side in the CPT (Figure 4F and G). Interestingly, Trpv1-OX animals crossed significantly less between chambers, compared to wildtype animals, while having similar duration of stays at the test chamber (Figure 4H–J), suggesting that Trpv1-OX animals discriminate temperatures more rapidly.
 
-## A drift-diffusion model uncovers differences in evidence accumulation across genotypes
+### A drift-diffusion model uncovers differences in evidence accumulation across genotypes
 
 In the previous sections, we have detailed the distinct effects that TRPV1 and, to a lesser extent, TRPM2 exert on the temperature responses of sensory neurons. While these cellular-level findings are illuminating, they present a challenge when it comes to directly relating them to the more complex, multifaceted behaviours observed in our temperature preference assay. To bridge this gap and extract parameters that could be directly correlated with the neuronal data, we conceptualized the temperature preference assay as a continuous decision-making process (Figure 5A and B), allowing the use of established evidence accumulation frameworks. These models have been shown to successfully recapitulate animal and human behaviour in sensory decision tasks involving different modalities (Lebovich et al., 2021; Hanks et al., 2015; Stine et al., 2023) and have even been directly linked to neural observations (Deco et al., 2013; Gordon et al., 1998; Gupta et al., 2021).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig5-v1.jpg)
+
+**Figure 5.:** (A) Two example episodes of an animal inside the chamber preference test (CPT), crossing from one chamber to the other (see Figure 1G). Dashed line represents crossing time points between chambers. (B) Examples of possible evidence accumulation process for the two episodes in (A) using a drift diffusion model (DDM). (C, D) Simulations of a drift diffusion process with fixed starting points (z = 0.5) and bound (a = 1) while varying drift rates (v in C) and noise (sv in D). (E) and (F) depict the resulting distributions of visit lengths when simulating 1000 trials with the parameters from (C) and (D), respectively. (G) Distributions of visit lengths at 31°C vs. 34°C in wildtype animals. Insets show the estimated parameters for v and sv at each temperature and the Kullback–Leibler (KL) divergence between the model (continuous density line) and the empirical data (histogram). See Figure 5—figure supplement 1 for all model fits. (H) Box plots of drift v and noise sv estimates for both neutral (31°C:, solid line) and test (25–38°C, dashed line) chambers for wildtype animals resulting from hierarchical Markov chain Monte Carlo (MCMC) sampling. (I) Neutral chamber (31°C) corrected and wildtype-subtracted estimates of drift and noise for all genotypes. The dashed line represents the wildtype reference. Points indicate individual MCMC samples, and vertical lines the median of each distribution.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95618/elife-95618-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Comparison of different model parameter combinations. To ensure that the DDM only reaches the upper bound, the bias z was kept fixed to 0.9, while all other parameters were allowed to either be predictors or fit to the entire data (floating) (A). Model performance was compared and ranked by calculating the expected log pointwise predictive density (ELPD) by Pareto smoothed importance sampling leave-one-out cross-validation (LOO) (B). Horizontal error bars depict the standard error of the ELPD-LOO. The chosen model is indicated in red. (C) Density estimates and histograms for collected empirical data (histogram) and 1000 simulated trials (density solid line) using the medians for drift and noise estimated for each genotype and chamber via Markov chain Monte Carlo (MCMC). Insets detail the temperature of the chamber, the used values for drift (v) and noise (sv), and the Kullback–Leibler divergence (KL) between the simulated distribution and the empirical data. (D) Simulated evidence accumulation processes for each genotype and test temperature for a 30-minute experiment. Parameters for drift, noise, and bound (starting point fixed to 0.88) were sampled randomly from the MCMC chains. Each line represents a trial. The plots are overlaid with a two-dimensional density of the resulting points, to highlight the general trajectory and the spread of the process.
+
 In our experimental setup, an animal enters a chamber and begins to accumulate evidence (i.e. it continuously collects and computes spatial temperature information) that drives its decision to stay or leave the chamber (Figure 5A). The resulting time spent in each chamber varies from visit to visit (Figures 1G and 5A), highlighting the need to account for a dynamic and stochastic decision-making process. This stochastic variability could be due to many factors, such as variability between animals, fluctuations in cognitive variables (e.g. attention or motivation), different exploration speeds of the mice (which alters the duration the mice are exposed to different temperatures, and which could result in a perceived change in perceptual threshold) or actual changes in perceptual threshold over time. Traditional approaches to analysing these behaviours have focused on final outcomes or mean stay time and thus may have overlooked these more subtle nuances (Vandewauw et al., 2018; Tan and McNaughton, 2016; Pogorzala et al., 2013; Bautista et al., 2007), without considering the fluctuating nature of sensory perception and the variability of decision-making across visits and between individual animals.
 
-## A drift diffusion model recapitulates the animals behaviour in the CPT
+#### A drift diffusion model recapitulates the animals behaviour in the CPT
 
 To model this decision-making process, we opted for a drift diffusion model (DDM; Ratcliff, 1978). This model provides a quantitative framework to delve into how animals integrate sensory information over time, leading to their decision to stay or leave a chamber (Figure 5).
 
-When an animal enters a chamber, it starts at a certain point (z) from which the accumulation of sensory information/evidence begins (Figure 5B). Over time, and while the temperature information is integrated, the information is accumulated at a certain rate (drift rate, v) towards a decision point (decision bound, a). Additionally, the drift rate is also allowed to fluctuate (noise, sv), which represents the variability of information accumulation (sensory perception). This process evolves until the decision bound (a) is reached, which prompts the animal to leave the chamber. Figure 5C and D show simulations of the DDM, which allow an intuition into how varying levels of drift and noise (while keeping the starting point and decision bound fixed) alters the distribution of visit lengths throughout an experiment (Figure 5E and F). Higher rates of drift (with fixed noise levels) lead to overall shorter visit lengths (Figure 5E). High noise levels (with fixed drift rates) also lead to shorter visit lengths, albeit with larger variability (Figure 5F).
+When an animal enters a chamber, it starts at a certain point ($z$) from which the accumulation of sensory information/evidence begins (Figure 5B). Over time, and while the temperature information is integrated, the information is accumulated at a certain rate (drift rate, $v$) towards a decision point (decision bound, $a$). Additionally, the drift rate is also allowed to fluctuate (noise, $sv$), which represents the variability of information accumulation (sensory perception). This process evolves until the decision bound ($a$) is reached, which prompts the animal to leave the chamber. Figure 5C and D show simulations of the DDM, which allow an intuition into how varying levels of drift and noise (while keeping the starting point and decision bound fixed) alters the distribution of visit lengths throughout an experiment (Figure 5E and F). Higher rates of drift (with fixed noise levels) lead to overall shorter visit lengths (Figure 5E). High noise levels (with fixed drift rates) also lead to shorter visit lengths, albeit with larger variability (Figure 5F).
 
 We fit a model with varying drift rate and noise onto the visit length distributions of wildtype animals recorded for each temperature combination in the CPT (Figure 5G, Figure 5—figure supplement 1). The model suggests higher drift rates at temperatures below and above 31°C in wildtype animals (Figure 5H). This means that the sensory information to leave the non-neutral chambers is accumulated faster. The model also suggests an increase in noise in the test chambers, hinting that the evidence accumulation at 31°C is particularly stable (Figure 5H). Both observations are in line with the development of preference for the 31°C chamber in the varying temperature conditions.
 
-## Varying effects of TRPM2 and TRPV1 on evidence accumulation
+#### Varying effects of TRPM2 and TRPV1 on evidence accumulation
 
 We fit the model onto all behavioural data collected in this study (Figure 5I, Figure 5—figure supplement 1). For animals lacking TRPM2, the model yields a lower drift rate at 34°C and 38°C compared to wildtypes (Figure 5I). This suggests that loss of TRPM2 leads to a slower evidence accumulation at warm temperatures, reflecting an overall failure to develop a preference for 31°C throughout the experiment (Figure 1). In Trpv1-/- animals, on the other hand, we observed higher drift rates as well as higher noise levels in the warmer (34°C and 38°C) chambers (Figure 5I). These findings suggest that Trpv1-/- animals accumulate environmental temperature evidence faster than wildtype animals, but the fidelity of the thermal inputs is compromised. We speculate that the balance of these two variables might lead to a similar overall preference development compared to wildtype animals (Figure 1). Interestingly, the overexpression of TRPV1 also leads to an increased drift rate at warm temperatures, albeit with a similar noise level to wildtypes. This combination leads to greater avoidance of 34°C and 38°C (as observed in Figure 4).
 
@@ -113,7 +157,7 @@ Notably, all genotypes show similar drift and noise estimates at 25°C, consiste
 
 Environmental temperatures are detected by sensory nerve fibres innervating the skin. The mechanisms behind warm-temperature detection have recently gained increased attention, with three ion channels – TRPV1, TRPM2, and TRPM8 – as the main candidates (Tan and McNaughton, 2016; Yarmolinsky et al., 2016; Paricio-Montesinos et al., 2020). In this study, we developed a novel temperature preference assay, integrating ambient and floor temperatures, to investigate the roles of TRPV1 and TRPM2 in temperature detection. Our results reveal distinct behavioural responses to warm temperatures mediated by these channels. Applying a modelling framework to the animals behaviour, we observed unique deficits in TRPV1 and TRPM2 knockout animals compared to wildtype mice. On the cellular level, the loss of either TRPV1 and, to a lesser extent, TRPM2 resulted in a decreased proportion of warm-sensitive neurons, with TRPV1 playing a pivotal role in detecting rapid, dynamic temperature changes, while TRPM2 loss appeared to affect the population response of warm-sensitive neurons.
 
-## Behavioural analysis in temperature preference assays
+### Behavioural analysis in temperature preference assays
 
 The introduced chamber preference assay, integrating both ambient and floor temperatures, improves on the conventional temperature preference assays. Notably, at 34°C, a temperature that is close to the thermoneutral 31°C, animals demonstrated a clear avoidance of the 34°C side in the CPT, but failed to do so in the conventional TPP assay (Figure 1—figure supplement 1I). This preference underscores the importance of integrating multiple sensory inputs such as ambient air and contact temperatures in forming a coherent thermal perception, a complexity often overlooked in simpler thermal assays.
 
@@ -121,13 +165,13 @@ Consistent with previous findings, our results reveal that the absence of TRPM2 
 
 Intriguingly, a finer characterization of the dynamics of the animal behaviour in the assay revealed differences between Trpv1-/- and Trpm2-/- animals, particularly in the frequency of crossings between chambers and the time spent in each chamber (Figure 1G–J). These behavioural nuances were further elucidated by modelling the behaviour with an evidence-accumulation model (Figure 5, Figure 5—figure supplement 1). This model, a novel approach for such behavioural assays in general and for temperature as a sensory modality in particular, uncovered an impaired process of evidence accumulation within the warm chambers in Trpm2-/- animals. Moreover, we could explain the more frequent chamber crossings of Trpv1-/- animals by the fact that they accumulated evidence (information of preferred temperature) more error-prone and thus erratically (Figure 5I).
 
-## Cellular insights into warm-temperature sensation
+### Cellular insights into warm-temperature sensation
 
 Cultures from Trpv1-/- animals exhibited a substantial decrease in the proportion of warm-sensitive neurons (Figure 2). This is similar to previous studies from trigeminal neurons, where the loss of TRPV1 led to a complete loss of warm-temperature responses (Yarmolinsky et al., 2016). While the role of TRPV1 was more salient in the warm-temperature range, Trpm2 knockouts displayed a reduction in temperature responsiveness across a broader spectrum, extending into hotter temperatures, albeit the overall effect Trpm2-deletion had on temperature responses in DRG cultures appeared very subtle (Figure 2, Figure 2—figure supplement 2). This is in line with previous studies highlighting only a subtle loss in warm-/heat-responsiveness in DRG cells of Trpm2-/- animals (Tan and McNaughton, 2016; Vilar et al., 2020; Mulier et al., 2020).
 
 Interestingly, in initial experiments using DRG neurons from Trpm2-/- and Trpv1-/- animals cultured overnight, we failed to reproduce the previously reported reduction in warm-sensitive neurons in Trpm2-/- and Trpv1-/- sensory neurons (Figure 2—figure supplement 1H, Tan and McNaughton, 2016; Yarmolinsky et al., 2016). The inability to reproduce the aforementioned cellular phenotypes in cultured sensory neurons might be due to two factors: the abundance of warm-sensitive neurons and the variability in their proportions between experiments and animals (Figure 2, Figure 2—figure supplement 2). These require a larger sampling of sensory neurons from multiple animals for a reliable estimation of effects, something that is often lacking in previous studies of cellular warm-temperature detection (Tan and McNaughton, 2016). Furthermore, overnight cultures, which are the de facto standard in the field, might be more akin to an injury model (Figure 2—figure supplement 1). The 3-day cultures presented in this study allow the cells the time to partially regenerate from the harsh dissociation procedure (Renthal et al., 2020) and pose an alternative that more closely resembles the physiological condition.
 
-## TRPV1: Bridging cellular data with behavioural patterns
+### TRPV1: Bridging cellular data with behavioural patterns
 
 The cellular data predict that animals lacking TRPV1 would have large deficits in their ability to detect warm temperatures. Yet, overall, Trpv1-/- animals stay in the thermoneutral chamber for a similar proportion of time as wildtype controls. Analysis of the remaining warm-sensitive neurons in Trpv1-/- animals revealed a critical insight: these neurons predominantly respond during the static phase of the temperature stimuli.
 
@@ -137,7 +181,7 @@ This hypothesis is further supported by the behavioural model (Figure 5). It ind
 
 The reduced precision might stem from the loss of dynamic temperature responders (Figure 3). These warm-sensitive neurons might be crucial in detecting a rapid change of temperature (e.g. when the animals move across different thermal environments). This is highlighted by findings from TRPV1-overexpressing animals. These animals, equipped with an enhanced ability to respond to dynamic temperature changes (Figure 4), have a higher drift rate and lower noise levels in warmer chambers in the model (Figure 5). These characteristics lead to a faster and more precise choice in the CPT. Collectively, these results highlight the direct role of TRPV1, and its expression levels, in the precise temporal detection of warm temperatures. This could also explain the consistent albeit subtle involvement of TRPV1 in operant assays of temperature perception where temperature stimuli are applied rapidly (Yarmolinsky et al., 2016; Paricio-Montesinos et al., 2020).
 
-## TRPM2: Cellular mechanisms and behavioural implications
+### TRPM2: Cellular mechanisms and behavioural implications
 
 A reversed scenario unfolds for TRPM2. The behavioural data suggests a strong deficit in detecting warm temperatures. In Trpm2-/- cultures, warm-sensitive neurons appear less abundant compared to wildtype DRG cultures, albeit the contribution of Trpm2 appears to be less robust compared to that of Trpv1 (Figure 2). Trpm2-/- warm-sensitive neurons also do not differ from wildtype warm-sensitive neurons in their response timings (Figure 3). It is tempting to hypothesize, given the results from Trpv1-/--cultures, that TRPM2 affects the static phase of temperature detection. We conducted various analyses on the static responses of Trpm2-/- warm-sensitive neurons (data not shown), but failed to uncover significant differences to wildtype warm-sensitive neurons.
 
@@ -151,27 +195,324 @@ A likely third possibility implies that the role of TRPM2 in temperature detecti
 
 On a more general note and considering the choice of the behavioural assay used in different studies, either an operant task or a preference assay without training of the mice: depending on the task the animals perform, likely requires qualitatively and quantitatively different thermal inputs, thereby possibly explaining the different phenotypes observed in individual TRP channel knockout mouse models.
 
-## Implications of the findings
+### Implications of the findings
 
 This study introduces an alternative protocol to culture DRG neurons to reduce their (thermal) hypersensitivity, an innovative behavioural assay, and methodologies for analysing animal behaviour in temperature preference assays. We emphasize the importance of examining the dynamics of perceptual decision-making and incorporating behavioural modelling. Significantly, we demonstrate that TRPV1 and TRPM2 channels contribute differently to temperature detection, supported by behavioural and cellular data. This research not only advances our understanding of thermal perception mechanisms but also adds new dimensions for integrating cellular and behavioural data to study the neural foundations of temperature sensation.
 
-## Limitations of the study
+### Limitations of the study
 
 In this study, only male animals were used to study temperature preference in the CPT assay. It is possible that sex differences modulate thermal preference in a TRP channel-dependent manner, as previously suggested (Carstens et al., 2024). A systematic comparison of TRP-channel involvement in sex differences in thermal detection across different thermal modalities (operant-based choice assays, thermal preference chamber test and others) awaits future analysis. The 3-day DRG cultures used in this study display a response profile that is more similar to the (rare) warmth responses detected in vivo compared to acute DRG cultures (which display exaggerated/sensitized warmth/heat responses). However, longer culturing times may result in cellular changes and a drift of neuronal identity away from their native state. Future in vivo DRG recording/imaging studies using TRP-channel knockout mouse models will help to reveal how warmth responses are coded in the native cellular setting.
 
 ## Methods
 
-## Animals and housing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wildtype</td>
+      <td>Janvier Laboratories</td>
+      <td>RRID:IMSR_RJ:C57BL-6NRJ</td>
+      <td>C57BL/6NRj</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpm2-/-</td>
+      <td>Yasuo Mori</td>
+      <td>RRID:MGI:5697655</td>
+      <td>B6;Trpm2tm1Yamo/Uhg</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv1-/-</td>
+      <td>David Julius</td>
+      <td>RRID:IMSR_JAX:003770</td>
+      <td>B6.129X1-Trpv1tm1Jul/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv1-OX</td>
+      <td>Interfacultary Biomedical Faculty, University of Heidelberg</td>
+      <td>RRID:IMSR_JAX:027390</td>
+      <td>C57BL/6N-Tg(Trpv1)5917Jsmn/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv1cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:017769</td>
+      <td>B6.129-Trpv1tm1(cre)Bbm/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa-DTA</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006331</td>
+      <td>Gt(ROSA)26Sortm1(DTA)Jpmb/J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpv1-Abl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>F1 from crossing Trpv1cre and RosaDTA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trpm8-/-</td>
+      <td>David Julius</td>
+      <td>RRID:IMSR_JAX:008198</td>
+      <td>Trpm8tm1Jul</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-(2-hydroxyethyl)–1-piperazineethanesulfonic acid (HEPES)</td>
+      <td>Carl Roth</td>
+      <td>Cat# 9105.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cal-520 AM</td>
+      <td>AAT Bioquest</td>
+      <td>Cat# 21130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcium chloride dihydrate</td>
+      <td>MerckMillipore</td>
+      <td>Cat# 1023821000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Capsaicin</td>
+      <td>Tocris</td>
+      <td>Cat# 462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoflurane</td>
+      <td>Baxter</td>
+      <td>Cat# HDG9623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M8266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic F127</td>
+      <td>Invitrogen</td>
+      <td>Cat# P6866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-d-lysine (PDL)</td>
+      <td>Sigma</td>
+      <td>Cat# P7886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Labochem International</td>
+      <td>Cat# LC-5916.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Carl Roth</td>
+      <td>Cat# 7528.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 31434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris-HCl</td>
+      <td>Carl Roth</td>
+      <td>Cat# 5429.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin-EDTA 0.05%</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 25300054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antibiotic-Antimitotic (100×)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15240062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>L-alanyl-L-glutamine dipeptide (GlutaMAX)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 35050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Laminin</td>
+      <td>Sigma</td>
+      <td>Cat# L2020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase</td>
+      <td>Sigma</td>
+      <td>Cat# C0130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine serum albumin (BSA) fraction V</td>
+      <td>Carl Roth</td>
+      <td>Cat# T844.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bos taurus)</td>
+      <td>Fetal calf serum (FCS) – EU Approved</td>
+      <td>Invitrogen</td>
+      <td>Cat# 10270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s PBS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 14040141</td>
+      <td>Sterile, commercial phosphate-buffered saline for cell-culture use</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM/F12 without Glutamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 21331046</td>
+      <td>Sterile, commercial medium for cell-culture</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LOGO! Soft Comfort</td>
+      <td>Siemens</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaFluor</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_014294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Miniscope DAQ</td>
+      <td>UCLA Miniscope Team</td>
+      <td>RRID:SCR_021480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.10</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 4.3.2</td>
+      <td>R Core Team</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FFmpeg 4.2</td>
+      <td>FFmpeg Developers</td>
+      <td>RRID:SCR_016075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Thermes USB DAQ</td>
+      <td>Physitemp</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HSSM 0.1.5</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_026356</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MINIROCKET (sktime 0.35.0)</td>
+      <td>Dempster et al., 2021; Dempster and Jafferji, 2022</td>
+      <td></td>
+      <td>https://doi.org/10.48550/arXiv.2012.08791</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Suite2p</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_016434</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellpose</td>
+      <td>GitHub</td>
+      <td>RRID:SCR_021716</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and housing
 
 All animal care and experimental procedures were approved by the local council (Regierungsprsidium Karlsruhe, Germany) under protocol numbers G-201/16 and T05-19. Animals were kept under specific-pathogen-free (SPF) conditions and a 12-hour day-night cycle. Housing temperature and humidity were maintained at 22 ± 2°C and 50–60%, respectively. Animals were fed ad libitum with Altromin Rod 16 or Rod 18 animal food. The housing environment was enriched using Crincklets Nest-Pads and ABBEDD LT-E-001 bedding. For this study, only male animals were used as we aimed to compare our results with previous studies which exclusively used male animals (Yarmolinsky et al., 2016; Tan and McNaughton, 2016). Mice between 6 and 25 weeks of age were used for the experiments.
 
-## Thermal preference chamber design, operation, and video capture
+### Thermal preference chamber design, operation, and video capture
 
 The thermal preference chamber consisted of two expanded polystyrene boxes connected using plastic glue and sealed with silicone (Figure 1—figure supplement 1A) with dimensions of 26.1 cm × 60.3 cm × 19.8 cm (w × l × h). The 4.3-cm-thick Styrofoam walls provided the necessary thermal insulation for the experiments. Inside the enclosure, the animals movement was limited by a 13 cm × 31.4 cm × 15.5 cm steel cage placed on top of a stainless-steel baseplate. To create two thermally isolated chambers, the enclosure, cage, and baseplate were adjusted to form a 4.3 cm × 6.3 cm × 6.3 cm tunnel. The baseplate and cage were custom-built by our institute’s mechanical workshop. The cover combined foam and wood as insulators, with an acrylic glass inset for observation purposes.
 
 Temperature within the chamber was regulated by two Peltier elements attached to heat sinks, each connected to a generic computer fan for efficient temperature distribution. To avoid overheating, the Peltier elements were connected to a Multitemp III circulating water pump (Amersham Biosciences) set to 28 °C. These elements were managed by a modified Siemens LOGO TD! controller, programmed for precise temperature adjustments, and accessed using the LOGO! Soft Comfort (Siemens) software. For monitoring, two Physitemp IT-18 flexible thermocouples were attached to the chamber walls, serving as reference thermometers. Data capture was conducted using a customer-grade webcam (Spedal), linked to the UCLA miniscope projects capture software, operating at 20–30 Hz. The output files from each recording session were concatenated using ffmpeg software for subsequent processing. For control experiments using the two-plate temperature preference test (Figure 1—figure supplement 1), we used the BIO-T2CT system by BioSeb with the same camera setup as described above.
 
-## Thermal preference tests, processing, and analysis
+### Thermal preference tests, processing, and analysis
 
 Animals were transported to and acclimatized in the experimental room for at least 24 hours before the experiments. The room maintained a dim light setting and a 12-hour day-night cycle. To ensure temperature stability, the setup was allowed to stabilize for 90 minutes before starting an experiment (Figure 1—figure supplement 1B–D). Once the setup reached a stable temperature, the lid was briefly opened (Figure 1—figure supplement 1), and an animal was placed into the enclosure, the lid closed again, and allowed to roam freely for at least 30 minutes, before replacing it with the next animal.
 
@@ -179,11 +520,11 @@ Due to the dim light conditions and the reflections on the cover of the enclosur
 
 The DeepLabCut predictions were then further curated by replacing bad predictions (<95% likelihood) with missing values, and removing recording sessions where >25% were missing (usually due to the animal escaping the inner cage). Furthermore, we removed sessions in which the animals showed excessive climbing behaviour (>95% of time between upper and lower cage corners). For the remaining sessions, the missing values were linearly interpolated and the centroid of the ears, body centre, and tail-base was used as the position of the animals. The X- and Y-positions of the centroid were then scaled to the tracked cage corner points to correct for minor movements of the camera or the setup. The resulting X- and Y-position time courses were then downsampled to 1 Hz. Only the first 30 minutes of the recording were kept. Shorter sessions were removed.
 
-## Primary sensory neuron culture
+### Primary sensory neuron culture
 
 Adult primary DRG cultures were prepared from 6- to 15-week-old animals as described previously (Hanack et al., 2015). Briefly, the animals were culled via isoflurane overdose, and their spinal columns excised and separated from muscle tissue. The spinal column was then cut lengthwise and the DRGs collected, freed from nerve branches, halved, and treated with a collagenase solution (1.25 mg/mL in Ringer’s solution) for 1 hour at 37°C with gentle inversion every 15 minutes. This was followed by a 15-minute trypsin digestion (2.5 mg/mL) at 37°C, repeated trituration and suspension in complete culturing medium (DMEM/F12 w/o Glutamin,10% heat-inactivated FCS, 2 mM l-glutamine (GlutaMAX), 1× anti-biotic/mitotic), and centrifugation at 900 rpm for 10 minutes over a BSA solution (150 mg/mL) to pellet the cells. The supernatant was discarded, the pellet was resuspended in culturing media, and spotted onto PDL- and Laminin-coated glass coverslips (5 mm). The cells were then left to settle onto the coverslip in the incubator for 1 hour at 37°C and then covered with culturing media. Cultures were either used the following day (overnight) or kept for 3 days, with a medium change after the first day.
 
-## Calcium imaging recordings
+### Calcium imaging recordings
 
 For calcium imaging, cells cultured on coverslips were incubated for either 1 or 3 days. Before imaging, cells underwent a washing process with Ringer’s solution (140 mM NaCl, 5 mM KCl, 2 mM MgCl2, 2 mM CaCl2, 10 mM glucose, and 10 mM HEPES, adjusted to pH 7.4), followed by loading with the calcium-sensitive dye Cal520-AM (10 μM) and Pluronic acid F-127 (0.05%) in Ringer’s solution. The cells were incubated for 1 hours at 37°C, then the dye solution was replaced with Ringer’s solution for a further 30 minutes at room temperature, minimizing light exposure.
 
@@ -191,30 +532,34 @@ The perfusion system, a ValveBank II (Automate) to control multiple inflows, and
 
 Images were captured using MetaFluor software at 4 Hz or 10 Hz frequencies. Standard experiments involved a 1-minute baseline, 25-second stimuli, followed by a 3–5-minute recovery period with room temperature Ringer’s solution (Figure 2, Figure 2—figure supplement 2). To identify TRPV1-positive neurons, we used the agonist Capsaicin (1 µM, Caterina et al., 1997). A Ringer’s solution with a high potassium concentration (100 mM KCl) was used as a fina lstimulus to identify neurons. Solutions were heated via glass coils connected to a heated water bath. Each FOV was imaged for a maximum of 60 min, and the usage of coverslips was limited to 2 hours post-loading with the dye.
 
-## Calcium imaging preprocessing and analysis
+### Calcium imaging preprocessing and analysis
 
 Calcium imaging data were motion-corrected and preprocessed using Suite2p (Pachitariu et al., 2016). Cell regions of interest (ROIs) were identified using the Cellpose package integrated into Suite2p (Stringer et al., 2021). The mean fluorescence of cells and surrounding neuropil was calculated by Suite2p, and neuropil contamination was corrected by subtracting 70% of the background neuropil traces from each cells fluorescence trace. The corrected data was then imported into a custom R-package, neuroimgr, for further analysis in R (https://github.com/hummuscience/neuroimgr, copy archived at Abd El Hay, 2025).
 
-Normalization was performed using the ΔF/F0 method, where baseline fluorescence (F0) is calculated as the mean fluorescence of the baseline, and ΔF is the change in fluorescence over time. For heatmaps, F0 was estimated using the first 10 seconds of the experiments. For individual stimuli, the mean of the first 10 frames was used as F0. Heatmaps were generated using the ComplexHeatmap R package. Cells were sorted by the earliest time point where they cross 10% of their cumulative ΔF/F0 in a given FOV and clustered using the Ward D2 algorithm. ΔF/F0 values smaller than the 0.1 and larger than the 99.9 percentile were clipped.
+Normalization was performed using the $ΔF/F_{0}$ method, where baseline fluorescence ($F_{0}$) is calculated as the mean fluorescence of the baseline, and $ΔF$ is the change in fluorescence over time. For heatmaps, $F_{0}$ was estimated using the first 10 seconds of the experiments. For individual stimuli, the mean of the first 10 frames was used as $F_{0}$. Heatmaps were generated using the ComplexHeatmap R package. Cells were sorted by the earliest time point where they cross 10% of their cumulative $ΔF/F_{0}$ in a given FOV and clustered using the Ward D2 algorithm. $ΔF/F_{0}$ values smaller than the 0.1 and larger than the 99.9 percentile were clipped.
 
 Due to the temperature sensitivity and loading variability of the calcium dye, a threshold-based approach failed to reliably identify responding cells across experimental days and FOVs (Oliver et al., 2000). Therefore, we used time-series classification to identify temperature-responsive cells. For this, calcium traces for each cell and stimulus were normalized, downsampled to 4 Hz, and a sample of 1000 traces across stimuli was manually labelled to create a training dataset. Examples of responsive and non-responsive cells as well as the average of each label are shown in Figure 2—figure supplement 1A and B. This ground-truth dataset was used to evaluate multiple time-series classification algorithms, with MINIROCKET (as implemented in the sktime Python package, Dempster et al., 2021) yielding the best results (classification results shown in Figure 2—figure supplement 1B). The trained classifier was then applied to the remaining cells to identify temperature responsive cells. A similar approach was used to identify capsaicin-responsive cells. Cells that did not respond to any of the applied stimuli were excluded from the analysis.
 
-## Drift diffusion model
+### Drift diffusion model
 
-We employed a DDM to analyse the behaviour of mice in thermal chamber experiments. The DDM was preferred over simpler models like the Markov switching model as the latter did not provide satisfactory fits to our data (data not shown). Each parameter in the model can either be fit as a predictor (dependent on genotype, temperature combination, and temperature), fit to the entire data (floating), or fixed to a certain value. A typical DDM as described in Ratcliff, 1978 can drift to the upper or lower bound (representing two choices), but our experimental design only offers one choice (to leave the chamber). To reduce the probability of reaching the lower bound and thereby improve the fit, we fixed the starting point/bias (z) to 0.9. This ensures that the evidence accumulation starts at a point that is much closer to the upper bound (a) than to the lower bound (−a). To choose the best combination of parameters that fits the data, we fit all the data to all remaining combinations of v, sv, and a (Figure 5—figure supplement 1A and B) and compared them via the expected log pointwise predictive density (ELPD) by Pareto smoothed importance sampling leave-one-out cross-validation (LOO) (Vehtari et al., 2017). Unreliable models as per Vehtari et al., 2017 were discarded. The chosen model was constructed to account for variations in both noise (sv) and drift rate (v) for each genotype, temperature comparison, and chamber/temperature (Figure 5—figure supplement 1A and B, and Equation 1). To accommodate individual differences among animals, we introduced a random effect for each animal in the model. This approach enabled us to capture the unique behavioural patterns of each subject while assessing the general trends across the population.(1)v∣sv∼temperature combination×chamber×genotype+(1∣animal)
+We employed a DDM to analyse the behaviour of mice in thermal chamber experiments. The DDM was preferred over simpler models like the Markov switching model as the latter did not provide satisfactory fits to our data (data not shown). Each parameter in the model can either be fit as a predictor (dependent on genotype, temperature combination, and temperature), fit to the entire data (floating), or fixed to a certain value. A typical DDM as described in Ratcliff, 1978 can drift to the upper or lower bound (representing two choices), but our experimental design only offers one choice (to leave the chamber). To reduce the probability of reaching the lower bound and thereby improve the fit, we fixed the starting point/bias ($z$) to 0.9. This ensures that the evidence accumulation starts at a point that is much closer to the upper bound ($a$) than to the lower bound ($−a$). To choose the best combination of parameters that fits the data, we fit all the data to all remaining combinations of $v$, $sv$, and $a$ (Figure 5—figure supplement 1A and B) and compared them via the expected log pointwise predictive density (ELPD) by Pareto smoothed importance sampling leave-one-out cross-validation (LOO) (Vehtari et al., 2017). Unreliable models as per Vehtari et al., 2017 were discarded. The chosen model was constructed to account for variations in both noise ($sv$) and drift rate ($v$) for each genotype, temperature comparison, and chamber/temperature (Figure 5—figure supplement 1A and B, and Equation 1). To accommodate individual differences among animals, we introduced a random effect for each animal in the model. This approach enabled us to capture the unique behavioural patterns of each subject while assessing the general trends across the population.
+
+$$
+v∣sv∼temperature combination\timeschamber\timesgenotype+(1∣animal)
+$$
 
 To fit the model, we applied a hierarchical Markov chain Monte Carlo (MCMC) sampling approach as implemented in the HSSM python package. For the implementation of the hierarchical MCMC, we utilized the No-U-Turn Sampler (NUTS) as implemented in NumPyro, a robust algorithm for efficiently sampling from high-dimensional probability distributions. The tuning phase for all fit models involved 2000 samples, ensuring adequate exploration of the parameter space and helping to achieve convergence. The final model was run with four chains, each drawing 2000 samples.
 
-## Statistical methods
+### Statistical methods
 
 Statistical analyses were conducted using R software. For time-course experiments involving repeated measures, two-way ANOVA with repeated measures as implemented in the afex package was conducted. Mauchly’s test was applied to assess the assumption of sphericity, and corrections for violations were made using the Geisser–Greenhouse correction. For comparisons with imbalanced observations or missing data, we fit a linear mixed effect model to the data using the lmer package. In cases of significant outcomes, post hoc comparisons were performed using estimated marginal means (EMMs) with pairwise contrasts comparing treatments to control groups (facilitated by the emmeans package), with false discovery rate (FDR) for multiple comparison corrections. For non-parametric data, we applied a Wilcoxon rank-sum test as implemented in the rstatix package, coupled with FDR for multiple comparison correction. To assess differences in crossing behaviour, a Cox proportional hazard model was used, as implemented in the survival package. For visit length comparisons, a mixed-effects model was fit using the lme4 package, allowing random effects for animal subjects where appropriate and correcting for the effect of time. Multiple comparisons for the mixed-effects and Cox models were accounted for using the FDR approach within the emmeans and multcomp packages. Only statistically significant results (p<0.05) are shown.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Requests for resources and reagents should be directed to and will be fulfilled by the lead contact Jan Siemens (jan.siemens@pharma.uni-heidelberg.de).
 
-## Materials availability
+### Materials availability
 
 This study did not generate any unique reagents.

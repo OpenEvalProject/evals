@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.38340.001 The origin of the insect odorant receptor (OR) gene family has been hypothesized to have coincided with the evolution of terrestriality in insects. Missbach et al. (2014) suggested that ORs instead evolved with an ancestral OR co-receptor (Orco) after the origin of terrestriality and the OR/Orco system is an adaptation to winged flight in insects. We investigated genomes of the Collembola, Diplura, Archaeognatha, Zygentoma, Odonata, and Ephemeroptera, and find ORs present in all insect genomes but absent from lineages predating the evolution of insects. Orco is absent only in the ancestrally wingless insect lineage Archaeognatha. Our new genome sequence of the zygentoman firebrat Thermobia domestica reveals a full OR/Orco system. We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.
+The origin of the insect odorant receptor (OR) gene family has been hypothesized to have coincided with the evolution of terrestriality in insects. Missbach et al. (2014) suggested that ORs instead evolved with an ancestral OR co-receptor (Orco) after the origin of terrestriality and the OR/Orco system is an adaptation to winged flight in insects. We investigated genomes of the Collembola, Diplura, Archaeognatha, Zygentoma, Odonata, and Ephemeroptera, and find ORs present in all insect genomes but absent from lineages predating the evolution of insects. Orco is absent only in the ancestrally wingless insect lineage Archaeognatha. Our new genome sequence of the zygentoman firebrat Thermobia domestica reveals a full OR/Orco system. We conclude that ORs evolved before winged flight, perhaps as an adaptation to terrestriality, representing a key evolutionary novelty in the ancestor of all insects, and hence a molecular synapomorphy for the Class Insecta.
 
 ## Introduction
 
@@ -38,11 +38,11 @@ Recently, phylogenetic analysis of the OR gene family of the damselfly Caloptery
 
 ## Results and discussion
 
-## ORs were present in the ancestor of insects
+### ORs were present in the ancestor of insects
 
 We detected no ORs in two non-insect hexapod lineages, Collembola and Diplura (a genome sequence is not available for the third lineage, the Protura), despite extensive annotation efforts. In contrast, we identified genes with similarity to known insect ORs in all insect genomes investigated (Figure 1; Tables S2 and S3 in Supplementary file 1). These included one species of each of the two apterygote insect orders, the Archeognatha and Zygentoma, as well as the pterygote orders Odonata and Ephemeroptera. Accordingly, ORs were likely present in the ancestor of all insects but absent from all non-insect hexapod lineages. This suggests that the origin of the OR gene family coincided with the evolution of insects. Thus, our analysis does not support the hypothesis that ORs evolved with the evolution of winged flight in insects (Missbach et al., 2014) but is compatible with the hypothesis that they evolved with terrestriality in insects (Robertson et al., 2003).
 
-## The Thermobia domestica genome harbors a full Orco/OR gene family repertoire
+### The Thermobia domestica genome harbors a full Orco/OR gene family repertoire
 
 With the exception of the Zygentoma, all orders analyzed had genome data either published (Faddeeva-Vakhrusheva et al., 2016, 2017; Wu et al., 2017) or available from the i5k Pilot Project from the Baylor College of Medicine at the i5k Workspace@NAL (Poelchau et al., 2015). To complete taxon sampling, we produced a draft genome assembly for T. domestica (Table S1 in Supplementary file 1; Supplementary file 2), enabling direct comparison to Missbach et al. (2014). We find that the T. domestica genome encodes far more than the three Orco-like OR proteins they described. Our manual annotation revealed 43 ORs encoded by 32 genes including the three previously identified genes (TdomOrco1-3; Missbach et al., 2014). Four genes are modeled as exhibiting alternative splicing leading to the additional protein isoforms. We used the antennal transcriptome of Missbach et al. (2014) for support of intron-exon boundaries, however only a few transcriptome reads mapped to the ‘specific’ OR genes (Table S2 in Supplementary file 1), indicating that these ORs might be expressed in untested tissues or life stages, or at such low levels that the RNA-seq analysis of Missbach et al. (2014) did not sequence to a sufficient depth to recover these low-expressed transcripts.
 
@@ -58,7 +58,7 @@ Finally, we note that while insects are defined by many morphological and develo
 
 ## Materials and methods
 
-## Sequencing, assembly, and assessment of the Thermobia Domestica genome
+### Sequencing, assembly, and assessment of the Thermobia Domestica genome
 
 Sequencing, assembly, and repetitive element annotation of the T. domestica genome followed Brand et al. (2018). DNA was extracted from a single individual using a Qiagen DNeasy kit following the manufacturer’s instructions. DNA libraries were constructed following the Truseq DNA PCR Free library preparation kit instructions for 250 bp paired-end sequencing on an Illumina HiSeq 2500 to produce a sequencing library required for DISCOVAR v1 (Weisenfeld et al., 2014) assembly. Assembly was performed using default parameters followed by Redundans v1 (Pryszcz and Gabaldón, 2016) to collapse contigs with ≥85% similarity in order to remove duplicates originating from expected high heterozygosity of outbred individuals. Finally, Agouti v1 (Zhang et al., 2016) was used with default parameters for scaffolding of the initial assembly. The quality and completeness of the assembly was assessed with standard N statistics and the Busco pipeline v2 (Simão et al., 2015) using the arthropoda_odb9 database (Zdobnov et al., 2017) in genome mode. In addition, a Jellyfish v2 (Marçais and Kingsford, 2011) produced k-mer frequency spectrum (k = 25) was used to assess the level of heterozygosity in the data and to estimate genome size on the basis of the consecutive length of all reads divided by the sequencing depth following Brand et al. (2017).
 
@@ -76,11 +76,11 @@ In addition to a moderate level of fragmentation, duplication levels of homologo
 
 While a higher level of contiguity and thus assembly quality simplifies gene annotation and genome-level analyses, genomes of similar quality to the one we present have been successfully used to study genome evolution (e.g. some genomes in Kapheim et al., 2015; Neafsey et al., 2015). Especially for non-model organisms with high heterozygosity and large genome sizes like T. domestica, producing high-quality genomes comparable to model organisms such as Drosophila melanogaster remains a non-trivial task (Richards, 2018). The genome assembly in this study represents the first Zygentoma genome resource and thus will be highly useful in future studies of insect genome evolution.
 
-## Odorant receptor annotation
+### Odorant receptor annotation
 
 The genomes of the dipluran Catajapyx aquinolaris, the collembolans Holacanthella duospinosa, Orchesella cincta, and Folsomia candida, the firebrat Thermobia domestica, the bristletail Machilis hrabei, the dragonfly Ladona fulva, and the mayfly Ephemera danica were used for manual OR gene annotation.
 
-## The firebrat Thermobia Domestica
+#### The firebrat Thermobia Domestica
 
 The T. domestica assembly v1 described above was searched for ORs and models for them were manually built in a text editor (TextWrangler, which allows up to 18 kb of DNA sequence on each line). Protein translations were aligned against each candidate exonic region and exon-intron boundaries defined by a combination of support from RNAseq (see below), the shared intron locations and phases across genes (see below), and predictions using the Splice Site Prediction by Neural Network server at the Berkeley Drosophila Genome Project (http://www.fruitfly.org/seq_tools/splice.html).
 
@@ -106,13 +106,13 @@ Our ability to construct models for 32 OR genes encoding 43 proteins in this T. 
 
 Two of the alternatively-spliced isoforms are apparent pseudogenes (Or15c and Or24b), each with single stop codons in the first long exon, but it is possible that these are pseudo-pseudogenes, as shown for some OR genes in Drosophila flies (Prieto-Godino et al., 2016), otherwise the remaining 41 proteins appear to be functional.
 
-## The dragonfly Ladona fulva and the mayfly Ephemera danica
+#### The dragonfly Ladona fulva and the mayfly Ephemera danica
 
 These two draft genome assemblies were accessed at the i5k Workspace@NAL (Poelchau et al., 2015) where they are presented from the i5k Pilot Project at the Human Genome Sequencing Center at the Baylor College of Medicine. The dragonfly and mayfly OR families were manually annotated using the Apollo genome browser. These gene models and encoded proteins will eventually be available from these genome projects, and the proteins are provided in the supplement.
 
 The four OR models including Orco for L. fulva are full-length and intact. For E. danica, in addition to Orco there are 46 OR models, 7 of which are partial models with termini or internal regions missing due to gaps in the assembly that could not be repaired with raw genome reads from the Sequence Read Archive (SRA) at the National Center for Biotechnology Information (NCBI), while 10 are pseudogenes.
 
-## The bristletail Machilis hrabei:
+#### The bristletail Machilis hrabei:
 
 The bristletail genome from the i5k pilot project is not available in the Apollo browser, so models for the five OR genes in that draft genome sequence were manually built in a text editor. All five required considerable repairs of both ambiguous bases and assembly gaps using raw genome reads from the SRA, and three were joined across scaffolds (Table S3 in Supplementaryfile 1). There is considerable RNAseq support for four of these five models from the whole-body RNAseq of the i5k and 1Kite projects (found with MEGABLAST searches at the SRA at NCBI), as well as five matching reads for MhraOr1 from the RNAseq of the related species employed by Missbach et al. (2014), Lepismachilis y-signata, detected using TBLASTN searches of raw reads downloaded from the SRA (Table S3 in Supplementary file 1). A first and second exon in 18 kb scaffold_47427 that encode 95% identical amino acids to MhraOr4 were not included in the analysis as they are a partial model and do not contribute significantly to the diversity of MhraOrs.
 
@@ -120,10 +120,10 @@ We note that the first two pairs of these MhraOr genes are in inverse orientatio
 
 We made extensive efforts to identify Orco in M. hrabei and L. y-signata using TdomOrco as query. There are no obvious matches for any part of Orco in the genome assembly of M. hrabei using TBLASTN searches. Because this is a highly conserved protein (for example, mostly co-linear and 88/45/42% identical between T. domestica and C. longicaudata, E. danica, and L. fulva, respectively), it should be readily discovered. It is always possible that a gene might be completely unassembled in a draft genome assembly, although unlikely given we were able to assemble full-length models for MhraOr1-5, so we undertook a TBLASTN search of a set of raw genome reads that gave 5-10X coverage for MhraOr1-5 and found nothing. We also did TBLASTN searches of the raw whole-body RNAseq reads from both the i5k M. hrabei project and the 1Kite set without success. Finally, in other insects Orco is generally well expressed in antennae and in TBLASTN searches of the raw reads from the antennal RNAseq of Missbach et al. (2014) for L. y-signata we found several reads that encode an Orco protein and were able to assemble a 713 bp contig encoding 237 amino acids, however it is a contaminant with matches of 85% identity to various lepidopteran Orco proteins. We therefore conclude that these two bristletails do not have an Orco gene. It is also noteworthy that the five MhraOr genes have the same gene structure as the TdomOr9-31 genes, without the additional phase-0 intron splitting the long first exon seen in TdomOrco and the Orco-like TdomOr1-8 (Table S3 in Supplementary file 1), so there is no hint of Orco-like genes in this bristletail genome.
 
-## The basal hexapod lineages collembola and diplura
+#### The basal hexapod lineages collembola and diplura
 
 We similarly exhaustively examined the draft genome assemblies for three Collembola (Faddeeva-Vakhrusheva et al., 2016, 2017; Wu et al., 2017) as well as a dipluran from the i5k pilot project, Catajapyx aquinolaris, and found no evidence of either Orco or ORs, in agreement with Wu et al. (2017).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 OR protein alignments were produced with CLUSTALX v2 (Larkin et al., 2007) and gaps were trimmed using Gappyout in TrimAl (Capella-Gutiérrez et al., 2009). The resulting alignment left 434 characters including a variable N-terminus caused by length variation in the first and second intracellular loop. The resulting alignments were used for gene tree inference using RaxML (Stamatakis et al., 2005) under the JTT + G substitution model which previously has been found to be the best model for OR gene trees (Brand and Ramírez, 2017). We used a total of 20 independent ML searches and 1000 bootstrap replicates (Supplementary file 3).

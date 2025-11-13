@@ -48,15 +48,31 @@ Research on aging is shifting its focus toward understanding the underlying diff
 
 ## Results
 
-## Physiological, biochemical, and physical behavioral tests in a cross-sectional study of aging in mice
+### Physiological, biochemical, and physical behavioral tests in a cross-sectional study of aging in mice
 
 To characterize aging phenotypes in a cohort of male C57BL/6N mice, we utilized physiological, biochemical, and physical behavior tests to cross-sectionally assess group differences in these traits with age. Age group classification was as follows: Young (Y), (3–8 months; n = 23); Adult (A), (13–23 months; n = 26), and Old (O) (27–36 months; n = 22) (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig1-v2.jpg)
+
+**Figure 1.:** (A) Flowchart depicting analyses performed in the study. (B–D) Effects of age on frailty index, motor function, and gait speed in mice. (E–F) Mean and maximum tail height as a function of age. (G–J) Negative correlation between gait speed, motor function, and tail height with frailty. (K) Dependence of fasting blood glucose with age. (L) Scatter plot depicting insulin sensitivity as measured by the HOMA-IR index. (M) Relationship between fasting blood glucose and frailty index. Glucose measurement was performed 3 months after frailty assessment. (B–M): Mice ranged in age from 3 to 33 months. Y: young (3–8 mo, n = 23); A, adult (13–23 mo, n = 26); O: old (27–33 mo, n = 22). The actual number of data points shown on the graphs varies as not all mice were tested for any given intervention.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Trajectory of fasting insulin levels. (B) Correlation between fasting blood glucose and % fat content from the whole cohort of mice. (C) Representative MRI images spanning the abdominal region from a young, adult, and old male mouse. (D) Representative micro-CT scans from a young, adult, and old male mouse. (E) Correlation between BMD (bone mineral density) and body weight from the whole cohort of mice.
 
 Frailty was the first characteristic assessed due to its high human relevance as an established aging biomarker and good predictor of clinical outcomes. It is characterized by loss of gait speed, fatigue, loss of body weight and muscle strength, and cognitive decline (Palliyaguru et al., 2019). Here, we used a multimodal approach to assess the impact of aging on the development of frailty and the associated impairment of several related phenotypic measures. The frailty index (FI) is a compilation of 31 clinical parameters, with 0 being not frail and one being frail (Whitehead et al., 2014). The values obtained from FI assessment increased progressively among different groups of mice, passing from 0.13 ± 0.01 in group Y to 0.24 ± 0.01 in group A, and 0.31 ± 0.02 in group O (Figure 1B), in agreement with earlier results (Whitehead et al., 2014). The FI increased linearly as a function of age (Figure 1B, p=3.80e-16, r2 = 0.615), with age accounting for 61.5% of FI variation. These group differences in FI were associated with reduced forelimb muscle strength, expressed as latency to fall from a wire (p=0.0033, r2 = 0.113), and gait speed (p=2.73e-16, r2 = 0.608) (Figure 1C,D). Age accounted for 52.5% and 46.5% of the mean (p=2.61e-13) and maximal (p=1.87e-11) tail height variation, respectively (Figure 1E,F). Given the strong relationship between FI vs. age and FI’s significance as a metric of age-dependent decline, we related other functional parameters, for example, wire hang, tail height and gait speed, to FI. Gait speed exhibited the strongest relationship with FI from that of age itself, since FI can explain ~33% of the gait speed decrease (Figure 1G) compared to only ~17–25% of the other variables (Figure 1H–J). As expected, clear deficits in muscle strength (wire hang test and mean/maximal tail height) and walking speed were significantly related with FI. Interestingly, since total gait speed variation could, in principle, be explained by age and FI (Figure 1B and G, respectively), it can be considered a major biomarker of aging-dependent decline. After adjusting for age, frailty lost the association with gait speed (Figure 1G, p=0.477) but it remained strongly associated with forelimb muscle strength (Figure 1H, p=0.00088). After including age, FI was only marginally associated with mean tail height (Figure 1I, p=0.0792) while still being associated with maximal tail height (Figure 1J, p=0.0495). The effects of frailty on muscle strength were maintained after correction for age, indicating the presence of independent risk factors beyond chronological age that could reduce physical performance in the oldest mice.
 
 Given the adaptive role of insulin resistance in aging (Barzilai and Ferrucci, 2012), venous blood was collected from 6 hr fasted mice. Blood glucose, plasma insulin concentrations, and HOMA-IR index, a surrogate for estimating insulin resistance (Matthews et al., 1985), were largely similar from 6 to 16 months and were observed to be lower after 19 months of age (Figure 1K,L, Figure 1—figure supplement 1A). In contrast to physical performance measurements, only a weak association existed between fasting blood glucose and the FI score (Figure 1M). These results may reflect a survivorship bias of the long-living mice (Scheen, 2017), although other effects such as reduced body weight and age-associated regional distribution among fat depots could have profound metabolic implications vis-à-vis changes observed in fasting blood glucose and insulin resistance (Girard and Lafontan, 2008; Hardy et al., 2012; Tran et al., 2008; Shuster et al., 2012).
 
 In order to understand the impact of body composition on overall fitness, body composition analysis was performed next using low-field NMR spectroscopy (Figure 2A). Group differences in body weight and whole-body fat percentage were noted with a steady increase in values up to ~19 months and a decline thereafter (p=7.87e-07, r2 = 0.319 and p=2.71e–07, r2 = 0.340, respectively), whereas a weak positive association was observed between fasting glucose levels and percent body fat (Figure 1—figure supplement 1B). To determine body fat distribution, a 7T MRI body scanner was used to quantify the subcutaneous/visceral fat ratio, which revealed a linear reduction in visceral adiposity as a function of age (p=3.38e-05, r2 = 0.2996) (Figure 2B). The whole-body lean tissue percentage was largely preserved during aging (p=2.15e-05, r2 = 0.250) (Figure 2A). Representative MRI scans from groups Y, A, and O are depicted (Figure 1—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig2-v2.jpg)
+
+**Figure 2.:** (A) Body weight (left panel), percentages of whole-body fat mass (middle panel) and lean tissue mass (right panel) as assessed by low-field nuclear magnetic resonance imaging. (B) Ratio of subcutaneous to visceral fat calculated from abdominal 7-Tesla MRI scanning. (C) In vivo microCT analysis of the tibia was carried out to measure cortical thickness, trabecular bone mineral density (BMD), as well as fat and lean mass around the tibia expressed as percentage of the total body weight. (D) Metabolic parameters derived from the metabolic treadmill as a function of age. Energetic cost (left panel); heat generation (second panel); RER, respiratory exchange ratio (third panel); and Work (right panel). Energetic cost was determined from VO2 per unit of body weight and gait speed while work was expressed as mJoules. (E–G) Multiple regression analyses with frailty index (E, F) and gait velocity (G) as response variables. The modeling approach consisted of fitting a series of four regressions for each of the response variables. The explanatory variables included in the multiple regression modeling are depicted in Figure 2—source data 1. (E) left panel, Effect of gait velocity on the relationship between frailty and age; right panel, Impact of age on the interaction between frailty and gait velocity. (F) left panel, Effect of bone cortical thickness on the relationship between frailty and age; right panel, Impact of age on the interaction between frailty and bone cortical thickness. (G) left panel, Effect of energetic costs on the relationship between gait velocity and age; right panel, Impact of age on the interaction between gait velocity and energetic costs. Although this is a cross-sectional study, the points were joined to help the reader see the various associations without suggesting that there is causal association; for example, that animals with higher age tend to have higher frailty within the same gait velocity (E, left panel). (H–K) Mice at different ages were placed into metabolic cages for 72 hr to measure VO2, VCO2, RER, heat production, and ambulatory activity counts. The values associated with the first 12 hr acclimatization phase (L1) were discarded. (H) Body weight as mice entered the metabolic cage. (I) Averaged hourly RER trajectories were captured during two dark/light cycles in young (n = 8), adult (n = 22) and old (n = 18) mice. ZT, zeitgeber time is defined as the 12:12 hr light/dark cycle that synchronizes organismal biological rhythms. Each point represents mean ± SEM. (J) Scatter plot depicting RER values averaged over 48 hr for individual mice in the three age groups. (K) Relationship between RER and age. Data in (H) and (J) were analyzed using one-way ANOVA with Dunnett’s post-hoc analysis. *, p<0.05; **, p<0.01; ****, p<0.0001. (L) Diagram depicting the impact of age on body composition and energetic parameters in AL-fed male mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mice of various ages were placed into metabolic cages for 72 hr to measure VO2, VCO2, energy expenditure (EE), and ambulatory activity counts. The values associated with the first 12 hr acclimatization phase (L1) were discarded. Averaged hourly trajectories were captured during two dark/light cycles. (A) Illustration of one dark/light cycle. ZT, zeitgeber time is defined as the 12:12 hr light/dark cycle that synchronizes organismal biological rhythms. Each point represents mean ± SEM in young (n = 8), adult (n = 22), and old (n = 18) mice. (B) Scatter plot depicting the averaged 48 hr values for VO2, VCO2, EE, and ambulatory activity counts from individual mice among the three age groups. Data were analyzed using one-way ANOVA with Dunnett’s post-hoc analysis. *, p<0.05 vs. young (Y); ††, p<0.01 vs. adult (A); §, p<0.05 vs. Y. (C) Relationship between ambulatory activity and age. No significant changes were observed for VO2, VCO2 and EE vs. age (data not shown). (D–E) Correlation between the indicated energetic parameters and body weight from the whole cohort of mice (n = 48) (I) or segregated by age groups (J) (red, young: 3–8 mo (n = 8); blue, adult: 13–24 mo (n = 22); black, old: 28–33 mo (n = 18)). See Table S4 for r2 values of each correlation depicted in (J).
 
 Age-associated bone loss is reflective of a general functional decline. Old mice exhibited marked and significantly lower femoral cortical bone thickness (p=7.20e-07, r2 = 0.458) and trabecular bone mineral density (BMD) (p=0.0184, r2 = 0.112) compared to the other two groups of mice (Figure 2C). Representative micro-CT scans of the femoral region are depicted (Figure 1—figure supplement 1D). No association between BMD and body weight was found (Figure 1—figure supplement 1E). Remarkably, there was a lower percentage of fat around the tibia per unit of body mass in animals of increased age, with the oldest group of mice being the most affected (p=0.002, r2 = 0.248), whereas the percentage of lean tissue surrounding the tibia trended higher in group O compared to group A (Figure 2C). The presence of weaker bones is suggestive of age-related osteoporosis.
 
@@ -72,15 +88,31 @@ Consistent with the lower gait speed observed in older animals, metabolic cage a
 
 Overall, the data presented in this section show that gait speed is a major biomarker of healthspan, and that frailty, in addition to age, is able to explain to a great extent its functional deterioration. In contrast, morphometrics (e.g. body weight, % fat and % lean mass) and glucose homeostasis (e.g. blood glucose, insulin, and HOMA2-IR) metrics show a more nuanced relationship with age. In fact, many of these factors (e.g. blood glucose, insulin, body weight, % fat) do not start to show a reduction in values until after ~19 mo, whereas others (e.g. bone density parameters, % fat around tibia) steadily decline in the values from various groups of mice with age. Important exceptions to this include % lean mass, % lean mass around the tibia per whole body weight, and the ratio of subcutaneous/visceral fat, that tend to be higher in group O animals. These findings provide a coherent picture of the bioenergetic changes that occur as a function of age, marked by an exponential increase in the energetic cost of physical activity, which is paralleled by a sustained decrease in work (energy). Together with gait speed, these parameters constitute landmarks of aging-dependent decline (Figure 2L), which led us to explore in further detail how the metabolomic landscape was altered with age in different tissues.
 
-## Untargeted metabolomics analysis
+### Untargeted metabolomics analysis
 
 To determine whether the differences in healthspan assessments, such as physical function, FI, energetics, and work economy can be linked to metabolic remodeling, we performed untargeted metabolomics analysis. We used serum and four different organs (brain, heart, liver, and skeletal muscle) of the same mice and compared the three different life stages: Y, A, and O. Depending upon the organ, a total of 133 to 177 metabolites was detected. Combining univariate and multivariate statistics we identified 49 metabolites that were significantly different in serum and across organs as a function of age, of which 46 were shared. Figure 3 depicts a heat map of the averaged levels of the 46 shared metabolites after normalization as a function of age. The metabolite abundance in each mouse is provided (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig3-v2.jpg)
+
+**Figure 3.:** There were 46 metabolites involved in more than 10 defined pathways that were shared between serum and various organs across the three age groups. Each row represents a single metabolite, and each column depicts averaged values for each tissue and age group (In each tissue, n = 11–12 animals for young; n = 7 for adult; and n = 11–12 for old). For each metabolite, standardized abundance was calculated. The pseudocolor scaling of the standardized expression is from low (blue) to high (red).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** There were 46 metabolites involved in more than 10 defined pathways that were shared between serum and the four organs across the three age groups. Each row represents a single metabolite, and each column depicts a single mouse (In each tissue, n = 11–12 animals for young; n = 7 for adult; and n = 11–12 mice for old). For each metabolite, standardized abundance was calculated. The pseudocolor scaling of the standardized expression is from low (blue) to high (red).
+
 Several features are worth highlighting: (i) The liver was the organ exhibiting the highest abundance of metabolite intermediates from all major pathways involved in macronutrient metabolism (glucose, lipids, amino acids) and redox-related pathways (nicotinamide, glutathione, pentose phosphate); (ii) heart and serum had the next highest metabolite abundance; (iii) across age and organ, there was an apparent qualitative similarity of the metabolites’ pattern of abundance or depletion; however, significant quantitative differences in metabolite levels also exist, as revealed by multivariate statistics (see Figure 4); (iv) several metabolites from redox-related pathways, such as pentose-phosphate, NAD+ salvage, methionine cycle, and transsulfuration, exhibited significant differences with age; and (v) expectedly, relative accumulation of glutamate/glutamine in the brain, and of lactate in serum was observed – the latter concomitant with depletion in the liver where it is utilized for gluconeogenesis.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig4-v2.jpg)
+
+**Figure 4.:** (A) Three-dimensional principal component analysis (PCA) depicting the effect of age across various organs and serum. (B) Brain, heart, liver, serum, and skeletal muscle metabolite profiles from young (Y, black symbols), adult (A, blue symbols) or old (O, red symbols) mice were analyzed by Partial Least Square Determinant Analysis (PLS-DA). A statistically significant degree of separation was observed between age groups. The ellipses correspond to 95% confidence intervals for a normal distribution. Each principal component is labeled with the corresponding percent values. (C) Variable in projection (VIP) scores of positively (red boxes) and negatively (green boxes) correlating metabolites in each tissue or serum as a function of age. (D) Correlation coefficients of the top 25 metabolites that correlated positively (orange bars) and negatively (green bars) as a function of age for the indicated tissues and serum. Blue arrowhead, fatty acids; green arrowhead, amino acids and related; red arrowhead, redox and related.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Arrowheads depict cluster of metabolites.
 
 Applying principal component analysis (PCA), a multivariate clustering method, to the metabolomic dataset, we found a clear separation between the metabolite profiles among organs and serum for each age group (Figure 4A).
 
-## Adaptative redox-related metabolic remodeling is a common trait in old mice
+### Adaptative redox-related metabolic remodeling is a common trait in old mice
 
 We next determined if groups of metabolites were different in each organ in Y, A, and O mice. As revealed by partial least squares discriminant analysis (PLSDA), a supervised clustering method, brain and heart exhibited a net separation between the three groups of mice. In contrast, in liver, skeletal muscle and serum, Y and O animals were clearly separated while group A mice partially overlapped with both groups (Figure 4B). To identify the main metabolites responsible for age-dependent metabolic differences, we analyzed the top 20–25 metabolites in each organ, ranked based on the variable importance in projection (VIP) score as a function of age (Figure 4C); the mini heat map on the right shows each metabolite’s level variation within the different age groups.
 
@@ -88,7 +120,7 @@ The age dependence of each metabolite’s concentration was further assessed by 
 
 Together, these data suggest that as mice age, organs such as liver and heart, which are exposed to higher oxidative stress as a result of their function (detoxification in the liver and energy generation in the heart), remodel their metabolism toward higher expression/activity of redox-related metabolic pathways, for example, pentose phosphate, NAD+ salvage and transsulfuration. Oppositely, skeletal muscle and brain do not appear to be able to remodel those pathways thus becoming more vulnerable to increased oxidative stress with aging. This metabolic pattern agrees with the idea of different rates of aging among organs.
 
-## Age and organ-specific metabolic remodeling
+### Age and organ-specific metabolic remodeling
 
 Next, we addressed the metabolic pathways involved in this remodeling, according to metabolite intermediates present in the profile. Serum metabolite profiles from old mice showed accumulation of intermediates from urea cycle function (urea, glutamine, ornithine), a pattern consistent with predominant amino acid degradation in the liver, and significant accumulation of the branched-chain amino acids (BCAAs) valine, isoleucine and leucine (Figure 4D, Figure 4—figure supplement 1). Remarkably, the three top-ranked metabolites, glucose, 3-hydroxybutyrate (3-HB, a ketone body), and glycerol appear to be lower in the serum of old mice, suggesting a reduced supply of these fuel substrates from liver and adipose tissue to heart, brain, and skeletal muscle (Figure 4D, Figure 4—figure supplement 1). Together, the lower levels of glycerol and serum fatty acids (myristic, linoleic, oleic, and palmitoleic, but not arachidonic) suggests potential liver and adipose tissue dysfunction in aged mice, in agreement with the body composition data and the metabolic cage data.
 
@@ -106,9 +138,17 @@ Metabolite set enrichment analysis (MSEA) shows the statistical significance of 
 
 Together, the data obtained show that each organ exhibits an age-specific metabolic remodeling which is, in part, associated with its function, for example, prominence of redox-related pathways in liver and heart, active glucose catabolism in skeletal muscle, activation of glucose metabolism in the heart and gluconeogenesis and urea cycle function in liver. Statistically significant pathways found by MSEA in old mice are consistent with major hallmarks of metabolic remodeling identified by other types of analysis. Many of the differences observed in this metabolomic profiling can be linked to the phenotypic alterations that were observed in group O mice, either as factors that may be involved in promoting or may arise as a result of these differences.
 
-## Patterns of metabolic signatures of biological aging from covariation of metabolites with physiological metrics
+### Patterns of metabolic signatures of biological aging from covariation of metabolites with physiological metrics
 
 In order to cope with the increased energetic cost of maintaining health and energy balance, each organ must fine-tune their metabolism and substrate selection. To assess the strength of the links between metabolites and phenotypic outcomes, we generated correlation matrices between energetic cost, RER, or frailty index (FI) and metabolites representative of major pathways involved in the metabolic remodeling of the four organs (heart, skeletal muscle, liver, and brain) and serum. Firstly, a correlation matrix with the 46 significantly changed metabolites was constructed to investigate their covariation, independently of age and organ (Figure 6A). A big cluster of positively correlated metabolites accompanied by four minor ones were found, from which 24 metabolites from all clusters and representative pathways were selected. The energetic cost of walking and RER are two metrics closely related to gait speed, whereas FI, a major biomarker of aging, is only remotely related to metabolism. Next, the Pearson correlation coefficient for each of the 24 metabolites was calculated with respect to the energetic cost, RER or FI from scatter plot matrices (‘r’ with p<0.05) for each of the four organs and serum (see Figure 6—figure supplement 1 as an example and Figure 6—source data 1). Hierarchically clustered heatmaps allowed for visualization of all correlation coefficients (positive and negative) corresponding to the 24 metabolites as a function of the phenotypic outcome in each organ and serum (Figure 6B–D). Broadly speaking, the increase in energetic cost, RER, or FI was correlated with organ-specific patterns of increased abundance or depletion of select metabolites.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig6-v2.jpg)
+
+**Figure 6.:** (A) Correlation matrix of the 46 metabolites significantly changed across age, organs and serum. Using the statistical module of MetaboAnalyst, we determined the clusters of normalized metabolites covarying positively or negatively, independently of organ or serum and age. The type (positive or negative) and strength (color intensity) of correlation are coded brown and blue, respectively, normalized between 1 and −1 according to the bar on the right. (B–D) Twenty-four significantly changed metabolites representative from all pathways that covary independently from organs or serum and age (see panel A) were correlated with energetic cost (B), RER (C) or frailty index (FI) (D). Using the software Origin v. 2021, we performed scatter plot correlation matrices (see Figure 6—figure supplement 1) to determine the Pearson correlation coefficient, r (p<0.05), for each of the 24 metabolites in each organ and serum vs. each of the physiological metrics analyzed. Displayed are in the form of hierarchically clustered heatmaps (dendogram on the left) corresponding to the ensemble of correlation coefficients, positive (red) and negative (blue), exhibited by each metabolite vs. the specified physiological metric.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62952/elife-62952-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The lower triangle scatter plot matrix is shown. The Pearson correlation coefficient, r, is displayed at the bottom of each plot. Displayed in the first column of the matrix is the data showing the scatter plot and r value for each metabolite vs. energetic cost. The legend indicates with different colors the age of mice (black, Y; red, A; blue, O) from which the metabolites were determined in each organ. The liver is depicted here.
 
 With respect to the energetic cost of walking (Figure 6B), a group of metabolites show a strong negative correlation in liver, of which only pyruvate, palmitoleic acid, and glucose were shared by the heart. A second cluster of negatively correlated metabolites represented by nicotinamide, alanine, and myristic acid was present in heart, and to a lesser extent in liver and brain. BCAAs (valine, isoleucine, leucine) and several other metabolites, including 3-hydroxybutyrate (3-HB), correlated positively with energetic cost in the heart, while being negatively linked in liver. On the other hand, glutathione correlated positively with energetic cost in both organs (heart > liver). For many metabolites, including glutathione, glycerol, and methionine sulfoxide, the brain presented a distinct pattern with respect to the other organs. The skeletal muscle resembled the heart profile with some exceptions.
 
@@ -136,7 +176,7 @@ Previously, it was demonstrated that the frailty index, as measured with the Mou
 
 Biological aging represents a complex manifold and, in terms of the organism, widespread phenomenon. This is revealed by the intersection between its macroscopic manifestations such as physical performance and functional decline, with biological mechanisms deeply rooted in cellular energetics, repair, turnover, and detoxification. Our work highlights some of these potential functional/molecular interactions and demonstrates that these mechanisms operate differently at the level of an organ and its function, leading to a distinct and selective age-mediated impact, in turn, consistent with the differential metabolic remodeling observed.
 
-## Limitations of the study
+### Limitations of the study
 
 This was a cross-sectional study in male C57Bl/6N mice rather than a longitudinal study of male and female mice of different genetic background which would have accounted for genetic variability and sex. Resilience as well as immune and blood pressure measurements (Bellantuono et al., 2020) were not carried out in this study. Future work will require, at least in part, untargeted proteomics and assessment of epigenetic marks in various organs. The age- and frailty-dependent reduction in gait speed and associated energetic cost indicates the need to assess mitochondrial function using high-resolution respirometry in permeabilized tissues and isolated mitochondria in parallel with skeletal muscle ultrastructure by electron microscopy. Other approaches include incorporating MRI of the brain to identify changes in brain structure and volume over time that correlate with collected variables such as motor function, as well as assessments of cognition.
 
@@ -144,51 +184,194 @@ Further integration of omics in an all-inclusive phenotypic investigation would 
 
 ## Materials and methods
 
-## Husbandry, diets, and dietary intervention in mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, males)</td>
+      <td>C57BL/6NCrl</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain Code 701</td>
+      <td>a.k.a. NIA Aging Mouse Colony</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Brain from C57BL/6NCrl</td>
+      <td>B6MAL</td>
+      <td></td>
+      <td>Metabolomics analysis, see lines 249–352</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Heart from C57BL/6NCrl</td>
+      <td>B6MAL</td>
+      <td></td>
+      <td>Metabolomics analysis, see lines 249–352</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Liver from C57BL/6NCrl</td>
+      <td>B6MAL</td>
+      <td></td>
+      <td>Metabolomics analysis, see lines 249–352</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Serum from C57BL/6NCrl</td>
+      <td>B6MAL</td>
+      <td></td>
+      <td>Metabolomics analysis, see lines 249–352</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Skeletal muscle from C57BL/6NCrl</td>
+      <td>B6MAL</td>
+      <td></td>
+      <td>Metabolomics analysis, see lines 249–352</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse insulin ELISA kit</td>
+      <td>Crystal Chem, Inc</td>
+      <td>Cat# 90080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalyst (versions 3.0, 4.0)</td>
+      <td>Web-based resource (McGill University, Canada)</td>
+      <td>https://www.metaboanalyst.ca/MetaboAnalyst/faces/home.xhtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginLab 2018</td>
+      <td>OriginLab corporation</td>
+      <td>https://www.originlab.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 7.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Canvas Draw six for macOS</td>
+      <td>Canvas GFX</td>
+      <td>RRID:SCR_014288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel (version 16.19)</td>
+      <td>Microsoft Corp.</td>
+      <td>https://www.microsoft.com/en-gb/; RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TSE MotoRater system</td>
+      <td>TSE Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7T preclinical MRI scanner</td>
+      <td>Bruker Biospec 70/30</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oxymax Open Circuit Indirect Calorimeters</td>
+      <td>Columbus Instruments</td>
+      <td>http://www.colinst.com/docs/OxymaxBrochure.pdf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Modular Metabolic Treadmill</td>
+      <td>Columbus Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Minispec Whole Body Composition Analyzer LF90</td>
+      <td>Bruker Optics</td>
+      <td>https://www.bruker.com/products/mr/td-nmr/minispec-lf-series.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Skyscan 1076 micro-CT scanner</td>
+      <td>Bruker</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Husbandry, diets, and dietary intervention in mice
 
 Male C57BL/6N mice were obtained from the NIA Aging Mouse Colony (Charles River Laboratories, Kingston, NY). Animal rooms were maintained at 22.2 ± 1°C and 30–70% humidity. The lights were turned off at 6:00 PM and back on at 6:00 AM each day. Mice were group-housed up to four per cage with ad libitum access to food (Teklad Global 18% Protein Extruded Rodent Diet, #2018S, Envigo, Frederick, MD) and drinking water. In the case where an animal’s cage mate died during the course of the study, animals were not rehoused and, instead, were provided a scientific exception to justify the single housing of a social species. All animals were provided shepherd shacks and nestlets for enrichment. All animal protocols were approved by the Animal Care and Use Committee of the National Institute on Aging, NIH. All tests in this cross-sectional cohort of animals were performed by non-blinded investigators (MP, SJM, MK, KWF). There were three age groups of mice, in months: Young, 3–8 (n = 23); Adult, 13–23 (n = 27); and Old, 27–36 (n = 23). Two mice, one adult (A) and one old (O), died during experimentation, bringing the final number of groups A and O mice to 26 and 22, respectively.
 
-## Body composition
+### Body composition
 
 Unanesthetized mice were placed in the body comp clear plastic tube of a Bruker's Minispec Whole Body Composition Analyzer LF90 (Bruker Optics, Billerica, MA, USA). This low-field nuclear magnetic resonance device acquires and analyzes Time Domain-NMR signals from all protons in the entire sample volume and measures body fat, free body fluid, and lean tissue content. Young (n = 8), adult (n = 22), and old (n = 18) mice were studied.
 
-## Wire hang test
+### Wire hang test
 
 Each mouse was tested for forelimb strength using the wire hanging test. Prior to testing, mice were trained and acclimatized by placing them on the wire of the hanging bar apparatus for several min. The test can be used to measure decline in strength and neuromuscular function with age and consisted of measuring the time before the mouse falls from the hanging wire. The test was repeated two more times with approximately 30 min break between trials for each mouse.
 
-## Mouse gait speed and tail height analysis
+### Mouse gait speed and tail height analysis
 
 Mice were acclimated to the TSE MotoRater system (TSE Systems, Inc Chesterfield, MO) for a week before gait and tail height recording as described (Bair et al., 2019). In brief, during gait assessment, the home cage was placed at the opposite end of the corridor to motivate the mouse to walk. A valid trial consisted of having the mouse walking the corridor length without stopping or turning in the opposite direction in the 70 cm mid-runway filming area. A custom in-house Python script was used to calculate mid- and maximum tail height, which was tracked by a semi-automated computer vision software package (TSE Systems). The Python script will be provided upon request for MotoRater system user. Gait speed was analyzed by PROC GLM model with SAS 9.4.
 
-## Frailty index
+### Frailty index
 
 Mice are assessed for frailty using the Howlett and Rockwood clinical frailty index, which includes 31 different parameters (Feridooni et al., 2015; Bellantuono et al., 2020). In brief, the frailty index was calculated by summing the number of deficits in factors related to integument, physical/musculoskeletal, vestibulocochlear/auditory, ocular/nasal, digestive/urogenital, respiratory, and aspects of physical discomfort for each mouse and dividing by the total number of possible deficits. Along with these indices, mouse weight and body temperature were also scored. A higher frailty index, with a potential score ranging from 0 to 1, is associated with lower survivability in mice (Kane et al., 2016).
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 A 7T preclinical magnetic resonance imaging scanner (Bruker Biospec 70/30, Ettlingen, Germany) was used to measure volumes of visceral and subcutaneous fat from respiratory-gated axial fast spin echo images spanning the entire cranial-caudal extent of both kidneys. The ratio of total subcutaneous to visceral fat volume was calculated and compared as a function of age.
 
-## Bone imaging
+### Bone imaging
 
 Mice were anesthetized using avertin (tribromoethanol; Sigma-Aldrich, St-Louis, MO) and tibia were imaged by three-dimensional micro–computed tomography with a Bruker Skyscan 1076 micro-CT instrument for measurement and analysis of cortical and trabecular bones as previously described (Mercken et al., 2014). In brief, tibias were scanned at high resolution (1208 × 1080 pixels) with an isotropic voxel size of 18 μm and at 48 kV, 200 mA (0.5 mm Al filter). Microstructural properties of tibial cortical and trabecular bone were assessed at the distal metaphysis for trabecular parameters and the mid-diaphysis for cortical parameters, following the nomenclature guidelines outlined by Dempster et al., 2013. Trabecular bone was delineated via manual tracing and interpolation of trabeculae in a region of interest 0.25 mm to 1.75 mm proximal to the distal tibial growth plate. For cortical bone parameters, analysis was performed at a volume of interest beginning at the mid-diaphysis of the tibia and extending 0.6 mm distally. Percent fat and percent lean tissue around the tibia was also quantified by micro-CT and normalized per unit of body weight.
 
-## Metabolic treadmill
+### Metabolic treadmill
 
 Mice were acclimated on the metabolic treadmills (Columbus Instruments International, Columbus, OH) at 5 m/min for 30 min the day prior to testing to ensure familiarity. On the day of testing, mice ran at their age group’s natural walking gait speed, assessed by the TSE MotoRater in earlier experiments, for 45 min. External motivators such as electric shock from an electrified metal grid located near the moving belt and/or pocking are used to entice mice to run. Mice unwilling or incapable to continue running despite receiving electric shocks more than five consecutive times within few seconds meet the criterion for exhaustion and the testing ends.
 
-## In vivo metabolic assessment
+### In vivo metabolic assessment
 
 The metabolic rate of each mouse was assessed by indirect calorimetry in open-circuit Oxymax chambers using the Comprehensive Lab Animal Monitoring System (CLAMS; Columbus Instruments, Columbus, OH, USA). Mice were single housed with ad libitum access to water and food, and maintained at 20–22°C under a 12:12 hr light:dark cycle (light period 0600–1800). Food and water level in each chamber was checked once on a daily basis at approximately 8:30 AM and the amount of food left in the cage from the previous 24 hr of chamber time was collected and measured. All mice were acclimatized to monitoring cages for 12 hr prior to recording. Sample air was dried and passed through an oxygen sensor for determination of oxygen content. Oxygen consumption was determined by measuring oxygen concentration in air entering the chamber compared with air leaving the chamber. The sensor was calibrated against a standard gas mix containing defined quantities of oxygen, carbon dioxide and nitrogen. Constant airflow (0.5 L/min) was drawn through the chamber and monitored by a mass-sensitive flow meter. The concentrations of oxygen and carbon dioxide were monitored at the inlet and outlet of the sealed chambers to calculate oxygen consumption. Measurement in each chamber was recorded for 30 s at 30 min intervals for a total of 72 hr. Ambulatory activity (both horizontal and vertical) was also monitored by dual axis detection using infrared photocell technology. Metabolic parameters were analyzed using CalR software as previously described (Mina et al., 2018). Young (n = 8), adult (n = 22), and old (n = 18) mice were studied.
 
-## Blood and serum markers and HOMA-IR calculation
+### Blood and serum markers and HOMA-IR calculation
 
 Glucose concentrations in blood were measured from the submandibular vein in 6 hr fasted mice with the Blood Glucose Monitoring System Breeze 2 (Bayer, Mishawaka, IN). Coagulated blood was centrifuged at 12,000 x g at 4°C for 10 min. Serum was aliquoted and kept frozen at −80°C. Insulin levels were determined according to the manufacturer’s protocol (Crystal Chem, Inc, Downers Grove, IL). Homeostasis model assessment-insulin resistance (HOMA-IR) was calculated to assess group differences in insulin resistance using the HOMA2 Calculator software available from the Oxford Centre for Diabetes, Endocrinology and Metabolism Diabetes Trials Unit website (http://www.dtu.ox.ac.uk/homacalculator/index.php).
 
-## Metabolomics analysis
+### Metabolomics analysis
 
 Metabolomic analysis was performed by the West Coast Metabolomics Center at UC Davis (Davis, CA) in brain, heart, liver, skeletal muscle, and serum from nonfasted animals as previously described (Mitchell et al., 2018; Mitchell et al., 2016). In brief, tissue and serum were extracted in an acetonitrile:isopropanol:water (3:3:2) solution, vortexed, centrifuged, and the supernatants aliquoted for downstream analysis. After a series of evaporation and reconstitution steps in 50% acetonitrile, internal standards (C08-C30, fatty acid methyl esters) were added to the dried sample, which was then derivatized for trimethylsilylation of acidic protons. Data were acquired using the method as described by Fiehn, 2008 and summarized by Mitchell et al., 2016. In brief, metabolites were measured using a rtx5Sil-MS column (made of 95% dimethyl, 5% diphenyl-polysiloxane coated on fused silica; Restek Corporation; Bellefonte PA) protected by an empty guard column. This chromatography method yields excellent retention and separation of primary metabolite classes (amino acids, hydroxyl acids, carbohydrates, sugar acids, sterols, aromatics, nucleosides, amines, and miscellaneous compounds) with arrow peak widths of 2–3 s and very good within-series retention time reproducibility of better than 0.2 s absolute deviation of retention times. The mobile phase consisted of helium, with a flow rate of 1 mL/min, and injection volume of 0.5 μL. The following mass spectrometry parameters were used: a Leco Pegasus IV mass spectrometer with unit mass resolution at 17 spectra s-1 from 80 to 500 Da at −70 eV for elution of metabolites. As a quality control, for each sequence of sample extractions, one blank negative control was performed by applying the total procedure (e.g. all materials and plastic ware) without biological sample. Result files were transformed by calculating the sum intensities of all structurally identified compounds for each sample, and subsequently dividing all data associated with a sample by the corresponding metabolite sum. The resulting data were multiplied by a constant factor in order to obtain values without decimal places. Intensities of identified metabolites with more than one peak (e.g. for the syn- and anti-forms of methoximated reducing sugars) were summed to only one value in the transformed data set. The original non-transformed data set was retained. Relative metabolite levels represent the MS peak amplitude normalized with respect to the total metabolites returned, but disregarding unknowns that might potentially comprise artifact peaks or chemical contaminants.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 No statistical method was used to predetermine sample size. GraphPad Prism version 7.0 was used to determine whether data sets passed the D’Agostino and Pearson normality test (α = 0.05). Those that failed included body composition data (NMR-generated morphometric analysis), physical performance/motor coordination results and MRI quantitative data, whereas metabolic outputs, locomotor activity between light/dark cycles, and bone imaging followed a normal data distribution. One-way ANOVA or Kruskal-Wallis H test was performed to determine if there were statistically significant differences between the three age groups for any given outcome. All regression models were either quadratic or linear regressions based on data’s fit. The R2, F-statistic and p-value are calculated through these models. Outliers were not omitted. As the mice aged, the different assessments took place. At times, the experiments were 3 or 6 months apart from previous assessments, which is why 36-month-old mice were enrolled in some measured outcomes, and not in others.
 

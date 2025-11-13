@@ -24,20 +24,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01tgyzw49 Integrative Sciences and Engineering Programme, NUS Graduate School, National University of Singapore Singapore Singapore
-2. https://ror.org/01tgyzw49 Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore
-3. https://ror.org/04fp9fm22 Saw Swee Hock School of Public Health, National University of Singapore and National University Health System Singapore Singapore
-4. https://ror.org/05tjjsh18 Memory Aging and Cognition Centre, National University Health System Singapore Singapore
-5. https://ror.org/02crz6e12 Singapore Eye Research Institute, Singapore National Eye Centre Singapore Singapore
-6. https://ror.org/02j1m6098 Duke-NUS Medical School Singapore Singapore
-7. https://ror.org/015p9va32 Singapore Institute for Clinical Sciences (SICS), A*STAR Research Entities (ARES) Singapore Singapore
-8. https://ror.org/036wvzt09 Brain–Body Initiative Program, Agency for Science, Technology and Research (A*STAR) Singapore Singapore
-9. https://ror.org/05tjjsh18 National University Health System Singapore Singapore
-10. https://ror.org/03b94tp07 Liggins Institute, University of Auckland Auckland New Zealand
-11. https://ror.org/01pxwe438 Douglas Mental Health University Institute, McGill University Montreal Canada
-12. https://ror.org/02c6k8737 Strategic Research Program, A*STAR Research Entities (ARES) Singapore Singapore
-13. https://ror.org/01tgyzw49 Department of Electrical and Computer Engineering, National University of Singapore Singapore Singapore
-14. https://ror.org/01tgyzw49 N.1 Institute for Health & Institute for Digital Medicine (WisDM), National University of Singapore Singapore Singapore
+1. Integrative Sciences and Engineering Programme, NUS Graduate School, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+2. Yong Loo Lin School of Medicine, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+3. Saw Swee Hock School of Public Health, National University of Singapore and National University Health System Singapore Singapore ([ROR:04fp9fm22](https://ror.org/04fp9fm22))
+4. Memory Aging and Cognition Centre, National University Health System Singapore Singapore ([ROR:05tjjsh18](https://ror.org/05tjjsh18))
+5. Singapore Eye Research Institute, Singapore National Eye Centre Singapore Singapore ([ROR:02crz6e12](https://ror.org/02crz6e12))
+6. Duke-NUS Medical School Singapore Singapore ([ROR:02j1m6098](https://ror.org/02j1m6098))
+7. Singapore Institute for Clinical Sciences (SICS), A*STAR Research Entities (ARES) Singapore Singapore ([ROR:015p9va32](https://ror.org/015p9va32))
+8. Brain–Body Initiative Program, Agency for Science, Technology and Research (A*STAR) Singapore Singapore ([ROR:036wvzt09](https://ror.org/036wvzt09))
+9. National University Health System Singapore Singapore ([ROR:05tjjsh18](https://ror.org/05tjjsh18))
+10. Liggins Institute, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
+11. Douglas Mental Health University Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+12. Strategic Research Program, A*STAR Research Entities (ARES) Singapore Singapore ([ROR:02c6k8737](https://ror.org/02c6k8737))
+13. Department of Electrical and Computer Engineering, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+14. N.1 Institute for Health & Institute for Digital Medicine (WisDM), National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
 
 † Corresponding author
 
@@ -67,27 +67,125 @@ Figure 1 shows the study design. For the brain age model, we used the publicly a
 
 Thus, to test generalizability to Asian elderly participants and children, we used three datasets from Singapore: (1) the cross-sectional Epidemiology of Dementia in Singapore (EDIS) study (Hilal et al., 2013; Hilal et al., 2017; Wong et al., 2019), consisting of 694 non-demented elderly (226 with no cognitive impairment [NCI] and 468 with cognitive impairment no dementia[CIND]); (2) the longitudinal Singapore Longitudinal Aging Brain Study (SLABS) (Chee et al., 2009), consisting of 215 healthy elderly participants; and (3) the longitudinal Growing Up in Singapore Towards healthy Outcomes (GUSTO) study (Soh et al., 2014), consisting of 678 healthy children. These datasets are detailed in ‘Materials and methods’. Table 1 and Appendix 2—table 1 summarize the participant demographic and cognitive characteristics.
 
-## The pretrained brain age model performs well in older adults, while the finetuned model performs well in both older adults and children
+**Table 1.**
+ Participant characteristics at baseline.EDIS was cross-sectional, while SLABS and GUSTO were longitudinal. Reported as mean ± standard deviation (range). *GUSTO ethnicities were based on the mother. M/F, male/female; C/M/I/O, Chinese/Malay/Indian/Other; MMSE, Mini-Mental State Examination; EDIS, Epidemiology of Dementia in Singapore; SLABS, Singapore Longitudinal Aging Brain Study; GUSTO, Growing Up in Singapore Towards healthy Outcomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Elderly</th>
+      <th>Children</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Characteristic</td>
+      <td>EDIS (N=694)</td>
+      <td>SLABS (N=215)</td>
+      <td>GUSTO (N=678)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>69.91 ± 6.46 (60−88)</td>
+      <td>68.17 ± 6.77 (55−85)</td>
+      <td>5.85 ± 1.68 (4.2−11.3)</td>
+    </tr>
+    <tr>
+      <td>Sex (M/F)</td>
+      <td>340/354</td>
+      <td>101/114</td>
+      <td>346/332</td>
+    </tr>
+    <tr>
+      <td>Ethnicity (C/M/I/O)</td>
+      <td>276/184/234/0</td>
+      <td>215/0/0/0</td>
+      <td>370/187/120/1*</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>6.18 ± 4.63 (0−22)</td>
+      <td>12.02 ± 3.45 (0−21)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>MMSE score</td>
+      <td>24.13 ± 3.59 (10−30)</td>
+      <td>28.29 ± 1.27 (26−30)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Imaging follow-up (years)</td>
+      <td>N/A</td>
+      <td>4.00 ± 3.33 (0−9.59)</td>
+      <td>3.49 ± 2.41 (0−6.69)</td>
+    </tr>
+    <tr>
+      <td>Cognition sample size</td>
+      <td>N=694</td>
+      <td>N=81–212</td>
+      <td>N=217–239</td>
+    </tr>
+  </tbody>
+</table>
+
+### The pretrained brain age model performs well in older adults, while the finetuned model performs well in both older adults and children
 
 We first input minimally preprocessed T1 scans directly to the pretrained model (all baseline and follow-up data). We also finetuned the model for our local datasets using 10-fold cross-validation (Figure 1A and B; section ‘Brain age predictions’). Figure 2 shows the brain age predictions for the pretrained and finetuned models on all datasets.
 
-In EDIS and SLABS (elderly), the pretrained model performed well, as evidenced by the high correlation (r=0.7389\begin{document}$r = 0.7389$\end{document} for EDIS and r=0.8136\begin{document}$r = 0.8136$\end{document} for SLABS) and low MAE (MAE=3.9895\begin{document}$\rm MAE= 3.9895$\end{document} for EDIS and MAE=3.4668\begin{document}$\rm MAE= 3.4668$\end{document} for SLABS; Figure 2A, first two rows). After finetuning, correlations and MAEs slightly improved (r=0.7445\begin{document}$r = 0.7445$\end{document} for EDIS and r=0.8138\begin{document}$r = 0.8138$\end{document} for SLABS; MAE=3.3232\begin{document}$\rm MAE= 3.3232$\end{document} for EDIS and MAE=3.2653\begin{document}$\rm MAE= 3.2653$\end{document} for SLABS; Figure 2B, first two rows), but the predictions were generally similar to those made by the pretrained model (correlation between finetuned and pretrained predictions = 0.9143 for EDIS and 0.9231 for SLABS).
+![Figure 2.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig2-v1.jpg)
 
-In contrast, the pretrained model did not perform as well in GUSTO (children). The MAE was lower than in elderly (MAE=2.57\begin{document}$\rm MAE= 2.57$\end{document}), but the age range of GUSTO was also much smaller. Importantly, predictions did not distinguish among younger ages, leading to a low correlation (r=0.5426\begin{document}$r = 0.5426$\end{document}; Figure 2A, last row). After finetuning, the correlation and MAE drastically improved (r=0.9411\begin{document}$r = 0.9411$\end{document}; MAE=0.6286\begin{document}$\rm MAE= 0.6286$\end{document}; Figure 2B, last row). The variance in predicted ages also increased as chronological age increased (Figure 2—figure supplement 1). Unlike EDIS and SLABS, the finetuned predictions were not similar to the pretrained predictions (correlation = 0.5732).
+**Figure 2.:** Black identity lines representing perfect prediction are included for reference. (A) Predicted brain ages from the pretrained model are plotted against chronological age. They are highly correlated for EDIS and SLABS (elderly), but not GUSTO (children). (B) Predicted brain ages from the finetuned model are plotted against chronological age. They are highly correlated in all three datasets. EDIS, Epidemiology of Dementia in Singapore; SLABS, Singapore-Longitudinal Aging Brain Study; GUSTO, Growing Up in Singapore Towards healthy Outcomes; N, number of participants; r, Pearson’s correlation coefficient; MAE, mean absolute error; NCI, no cognitive impairment; CIND, cognitive impairment no dementia.
 
-## The brain age gap is negatively associated with executive function in elderly participants
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig2-figsupp1-v1.jpg)
 
-To validate the brain age model with a large and cognitively heterogeneous sample, we first tested cross-sectional associations in EDIS (N=694) using multiple linear regression models (Figure 1C). We included chronological age, sex, and years of education as covariates. Higher baseline BAG was broadly associated with lower baseline cognitive performance (i.e., negative associations; Appendix 3—table 1). The associations were significant after multiple comparison correction for global cognition (β=−0.1125\begin{document}$\beta =-0.1125$\end{document}, pcorr=0.0006\begin{document}$p_{corr}= 0.0006$\end{document}), executive function (β=−0.1029\begin{document}$\beta =-0.1029$\end{document}, pcorr=0.0076\begin{document}$p_{corr}= 0.0076$\end{document}, Figure 3A), language (β=−0.1145\begin{document}$\beta=-0.1145$\end{document}, pcorr=0.0047\begin{document}$p_{corr}= 0.0047$\end{document}), visuomotor speed (β=−0.0825\begin{document}$\beta=-0.0825$\end{document}, pcorr=0.0136\begin{document}$p_{corr}= 0.0136$\end{document}), visuoconstruction (β=−0.0896\begin{document}$\beta=-0.0896$\end{document}, pcorr=0.0136\begin{document}$p_{corr}= 0.0136$\end{document}), verbal memory (β=−0.1096\begin{document}$\beta=-0.1096$\end{document}, pcorr=0.0034\begin{document}$p_{corr}= 0.0034$\end{document}), and visual memory (β=−0.1395\begin{document}$\beta=-0.1395$\end{document}, pcorr=0.0002\begin{document}$p_{corr}= 0.0002$\end{document}). The association was not significant for attention (β=−0.0404\begin{document}$\beta=-0.0404$\end{document}, pcorr=0.2461\begin{document}$p_{corr}= 0.2461$\end{document}). These results were consistent after finetuning (Figure 3—figure supplement 1A and Appendix 3—table 1). Similar broad negative associations were also observed in SLABS at baseline (N=212), but these were not significant (Appendix 3—tables 3 and table 4).
+In EDIS and SLABS (elderly), the pretrained model performed well, as evidenced by the high correlation ($r=0.7389$ for EDIS and $r=0.8136$ for SLABS) and low MAE ($MAE=3.9895$ for EDIS and $MAE=3.4668$ for SLABS; Figure 2A, first two rows). After finetuning, correlations and MAEs slightly improved ($r=0.7445$ for EDIS and $r=0.8138$ for SLABS; $MAE=3.3232$ for EDIS and $MAE=3.2653$ for SLABS; Figure 2B, first two rows), but the predictions were generally similar to those made by the pretrained model (correlation between finetuned and pretrained predictions = 0.9143 for EDIS and 0.9231 for SLABS).
 
-To investigate longitudinal utility of brain age in healthy elderly, we tested associations in a longitudinal subset of SLABS (N=81) using similar multiple linear regression models. We first related baseline BAG and early change in BAG to long-term cognitive change (Figure 1C; section ‘Associations with cognition’). Baseline BAG generally failed to show associations with longitudinal cognitive changes (Appendix 3—table 5). While higher baseline BAG was associated with faster long-term decline in executive function, it was not significant after multiple comparison correction (β =−0.2477,  p=0.0406\begin{document}$p = 0.0406$\end{document}, pcorr=0.2433\begin{document}$p_{corr}= 0.2433$\end{document}, Figure 3B). On the other hand, the early rate of BAG change was negatively associated with long-term rate of executive function change (β =−0.3807, p=0.0017\begin{document}$p = 0.0017$\end{document}, pcorr=0.0100\begin{document}$p_{corr}= 0.0100$\end{document}, Figure 3C). This negative association held after removing the temporal overlap between BAG and cognition, looking only at the future rate of executive function change (β =−0.3807, p=0.0033\begin{document}$p = 0.0033$\end{document}, Figure 3D). Notably, these associations were independent of baseline BAG, chronological age, sex, and years of education. The associations were also specific to executive function (Appendix 3—table 7). Results were again consistent after finetuning (Figure 3—figure supplement 1B–D, Appendix 3—tables 6 and 8).
+In contrast, the pretrained model did not perform as well in GUSTO (children). The MAE was lower than in elderly ($MAE=2.57$), but the age range of GUSTO was also much smaller. Importantly, predictions did not distinguish among younger ages, leading to a low correlation ($r=0.5426$; Figure 2A, last row). After finetuning, the correlation and MAE drastically improved ($r=0.9411$; $MAE=0.6286$; Figure 2B, last row). The variance in predicted ages also increased as chronological age increased (Figure 2—figure supplement 1). Unlike EDIS and SLABS, the finetuned predictions were not similar to the pretrained predictions (correlation = 0.5732).
 
-## The longitudinal change in brain age gap is positively associated with inhibition in children
+### The brain age gap is negatively associated with executive function in elderly participants
 
-To extend our analyses to healthy children, we tested cross-sectional and longitudinal associations in GUSTO using multiple linear regression models similar to above (Figure 1C; section ‘Associations with cognition’). Since longitudinal cognitive data was not available for GUSTO, we used the cognitive scores themselves instead of the change. Furthermore, since finetuning the model drastically improved prediction accuracy in GUSTO, we used the finetuned predictions for our main analyses. We did not find a significant association between baseline BAG and baseline IQ score (β=−0.0618,  p=0.3809\begin{document}$p = 0.3809$\end{document}, Figure 4—figure supplement 2B). Similarly, we did not find significant associations between baseline BAG and future cognitive scores (at 8.5 years old; |β|≤0.0829\begin{document}$ |\beta|\leq 0.0829$\end{document} p≥0.4086\begin{document}$p \geq 0.4086$\end{document}, Figure 4A; Appendix 3—table 10). However, the early rate of BAG change (from 4.5 to 7.5 years old) was positively associated with future inhibition (at 8.5 years old; β=0.2006\begin{document}$\beta= 0.2006$\end{document}, p=0.0103,pcorr=0.0411\begin{document}$p = 0.0103, p_{corr}= 0.0411$\end{document}, Figure 4B). The early rate of BAG change was also positively associated with future switching, but it was not significant after correcting for multiple comparisons (β=0.1795\begin{document}$\beta= 0.1795$\end{document}, p=0.0221,pcorr=0.0663\begin{document}$p = 0.0221, p_{corr}= 0.0663$\end{document}, Appendix 3—table 12). These associations were independent of baseline BAG, chronological age, and sex. Notably, in contrast to older adults, the direction of association was now positive, meaning increased early rate of BAG change was associated with better future executive function performance. There were no significant associations using the pretrained model (Figure 4—figure supplements 1 and 2A, Appendix 3—tables 9 and 11).
+To validate the brain age model with a large and cognitively heterogeneous sample, we first tested cross-sectional associations in EDIS (N=694) using multiple linear regression models (Figure 1C). We included chronological age, sex, and years of education as covariates. Higher baseline BAG was broadly associated with lower baseline cognitive performance (i.e., negative associations; Appendix 3—table 1). The associations were significant after multiple comparison correction for global cognition ($\beta=−0.1125$, $p_{corr}=0.0006$), executive function ($\beta=−0.1029$, $p_{corr}=0.0076$, Figure 3A), language ($\beta=−0.1145$, $p_{corr}=0.0047$), visuomotor speed ($\beta=−0.0825$, $p_{corr}=0.0136$), visuoconstruction ($\beta=−0.0896$, $p_{corr}=0.0136$), verbal memory ($\beta=−0.1096$, $p_{corr}=0.0034$), and visual memory ($\beta=−0.1395$, $p_{corr}=0.0002$). The association was not significant for attention ($\beta=−0.0404$, $p_{corr}=0.2461$). These results were consistent after finetuning (Figure 3—figure supplement 1A and Appendix 3—table 1). Similar broad negative associations were also observed in SLABS at baseline (N=212), but these were not significant (Appendix 3—tables 3 and table 4).
 
-## Finetuned brain age models focus on distinct features in children and elderly participants
+![Figure 3.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig3-v1.jpg)
+
+**Figure 3.:** Bolded p-values indicate significance after Holm-Bonferroni correction ($p_{corr}<0.05$). All models include chronological age, sex, and years of education as covariates. Models with change in BAG also include baseline BAG as a covariate. Results are similar after finetuning (Figure 3—figure supplement 1). (A) Partial regression plot between baseline BAG and executive function in EDIS, colored by cognitive status. A significant negative association is observed. (B) Partial regression plot between baseline BAG and long-term rate of change in executive function (mean follow-up time = years) in SLABS. A negative association is observed, but it is not significant after correcting for multiple comparisons. (C) Partial regression plot of early longitudinal rate of change in BAG (mean follow-up time = years) when added to the model in (B). A significant negative association and increase in $R^{2}$ is observed. (D) Partial regression plot as in (C), but with future rate of change in executive function (mean follow-up time = years), removing the overlap with early change in BAG. A significant negative association is again observed. N, number of participants; β, standardized regression coefficient; p, p-value for variable of interest (x-axis); $ΔR_{adj}^{2}$, change in adjusted $R^{2}$ when adding variable of interest; BAG, brain age gap; NCI, no cognitive impairment; CIND, cognitive impairment no dementia; EDIS, Epidemiology of Dementia in Singapore; SLABS – Singapore-Longitudinal Aging Brain Study.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Compare to Figure 3A–D. (A) EDIS dataset: baseline BAG relates to baseline execituve function. (B) SLABS dataset: Baseline BAG does not relate to future changes in executive function. (C, D) SLABS dataset: Change in BAQ relates to future changes in executive function (non-overlapping in C and overlaping in D).
+
+To investigate longitudinal utility of brain age in healthy elderly, we tested associations in a longitudinal subset of SLABS (N=81) using similar multiple linear regression models. We first related baseline BAG and early change in BAG to long-term cognitive change (Figure 1C; section ‘Associations with cognition’). Baseline BAG generally failed to show associations with longitudinal cognitive changes (Appendix 3—table 5). While higher baseline BAG was associated with faster long-term decline in executive function, it was not significant after multiple comparison correction (β =−0.2477,  $p=0.0406$, $p_{corr}=0.2433$, Figure 3B). On the other hand, the early rate of BAG change was negatively associated with long-term rate of executive function change (β =−0.3807, $p=0.0017$, $p_{corr}=0.0100$, Figure 3C). This negative association held after removing the temporal overlap between BAG and cognition, looking only at the future rate of executive function change (β =−0.3807, $p=0.0033$, Figure 3D). Notably, these associations were independent of baseline BAG, chronological age, sex, and years of education. The associations were also specific to executive function (Appendix 3—table 7). Results were again consistent after finetuning (Figure 3—figure supplement 1B–D, Appendix 3—tables 6 and 8).
+
+### The longitudinal change in brain age gap is positively associated with inhibition in children
+
+To extend our analyses to healthy children, we tested cross-sectional and longitudinal associations in GUSTO using multiple linear regression models similar to above (Figure 1C; section ‘Associations with cognition’). Since longitudinal cognitive data was not available for GUSTO, we used the cognitive scores themselves instead of the change. Furthermore, since finetuning the model drastically improved prediction accuracy in GUSTO, we used the finetuned predictions for our main analyses. We did not find a significant association between baseline BAG and baseline IQ score (β=−0.0618,  $p=0.3809$, Figure 4—figure supplement 2B). Similarly, we did not find significant associations between baseline BAG and future cognitive scores (at 8.5 years old; $|\beta|\leq0.0829$ $p\geq0.4086$, Figure 4A; Appendix 3—table 10). However, the early rate of BAG change (from 4.5 to 7.5 years old) was positively associated with future inhibition (at 8.5 years old; $\beta=0.2006$, $p=0.0103,p_{corr}=0.0411$, Figure 4B). The early rate of BAG change was also positively associated with future switching, but it was not significant after correcting for multiple comparisons ($\beta=0.1795$, $p=0.0221,p_{corr}=0.0663$, Appendix 3—table 12). These associations were independent of baseline BAG, chronological age, and sex. Notably, in contrast to older adults, the direction of association was now positive, meaning increased early rate of BAG change was associated with better future executive function performance. There were no significant associations using the pretrained model (Figure 4—figure supplements 1 and 2A, Appendix 3—tables 9 and 11).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig4-v1.jpg)
+
+**Figure 4.:** Bolded p-values indicate significance after Holm–Bonferroni correction ($p_{corr}<0.05$). All models include chronological age and sex as covariates. Models with change in BAG also include baseline BAG as a covariate. (A) Partial regression plot between baseline BAG (calculated from 4.5 or 6.0 years old) and future NEPSY-II inhibition scaled subscore (measured at 8.5 years old). No significant association is observed. (B) Partial regression plot of early longitudinal rate of change in BAG calculated from 4.5 to 7.5 years old (mean follow-up time = 2.4 ± 0.7 years) when added to the model in (A). A significant positive association and increase in $R^{2}$ is observed. N, number of participants; β, standardized regression coefficient; p, p-value for variable of interest (x-axis); $ΔR_{adj}^{2}$ , change in adjusted $R^{2}$ when adding variable of interest; BAG, brain age gap; GUSTO, Growing Up in Singapore Towards healthy Outcomes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Estimated BAGs > 2 are not shown for visual clarity. Compare to Figure 4A and B.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Both brainage and IQ were measured cross-sectionally at 4.5 years old. (A) Partial regression plot with baseline BAG from the pretrained model. Estimated BAGs > 2 are not shown for visual clarity. No significant relationship is observed. (B) Partial regression plot with baseline BAG from the finetuned model. No significant relationship is observed. N, number of participants; β, standardized regression coefficient; p, p-value for variable of interest (x-axis); Multiple $R^{2}$, coefficient of determination; GUSTO, Growing Up in Singapore Towards healthy Outcomes; BAG, brain age gap; KBIT-2, Kaufman Brief Intelligence Test Second Edition.
+
+### Finetuned brain age models focus on distinct features in children and elderly participants
 
 Finally, to investigate model interpretability, we used guided backpropagation (Springenberg et al., 2015) to derive group-level saliency maps for brain age prediction (section ‘Model interpretability’). Figure 5 shows the top 10% of contributing voxels to age prediction in four representative slices (left) for all datasets. Full 3D maps are also made available online. Relative contributions of white and gray matter features across the whole brain are shown on the right. Areas near the lateral ventricles are labeled in red, while areas more prominent in elderly than children are labeled in magenta, and areas more prominent in children than elderly are labeled in blue.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig5-v1.jpg)
+
+**Figure 5.:** The top 10% of features are shown for four representative brain slices on the left. Relative contributions for gray and white matter features across the whole brain are shown on the right. Regions near the lateral ventricles are labeled in red. Features more prominent in elderly than children are labeled in magenta, while features more prominent in children than elderly are labeled in blue. Features and relative contributions are generally consistent between (A) EDIS and (B) SLABS, but key differences can be seen in (C) GUSTO. EDIS, Epidemiology of Dementia in Singapore; SLABS, Singapore-Longitudinal Aging Brain Study; GUSTO,Growing Up in Singapore Towards healthy Outcomes; MCP,–middle cerebellar peduncle; PCT, Pontine crossing tract; gCC, genu of corpus callosum; bCC, body of corpus callosum; sCC, splenium of corpus callosum; Fx, fornix (column and body); CST, corticospinal tract; ML, medial lemniscus; ICP, inferior cerebellar peduncle; SCP, superior cerebellar peduncle; CP, cerebral peduncle; ALIC, anterior limb of internal capsule; PLIC, posterior limb of internal capsule; RLIC, retrolenticular part of internal capsule; ACR, anterior corona radiata; SCR, superior corona radiata; PCR, posterior corona radiata; PTR, posterior thalamic radiation; SS, sagittal stratum; EC, external capsule; cingulum CG, cingulum (cingulate gyrus); cingulum HIP, cingulum (hippocampus); Fx/ST, fornix (cres)/stria terminalis; SLF, superior longitudinal fasciculus; SFO, superior fronto-occipital fasciculus; UF, uncinate fasciculus; TAP, tapetum; Vis, visual network; SomMot, somatomotor network; DorsAttn, dorsal attention network; SalVentAttn, salience/ventral attention network; Limbic, limbic network; Cont , control/frontoparietal network; Default, default mode network; Hip+Amy, hippocampus + amygdala; Put+Cau, putamen + caudate; Tha l, thalamus.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97036/elife-97036-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Compare to Figure 5A–C. Features more prominent in elderly than children are labeled in magenta, while features more prominent in children than elderly are labeled in blue. Features and relative contributions are generally consistent between (A) EDIS and (B) SLABS, but key differences can be seen in (C) GUSTO.EDIS, Epidemiology of Dementia in Singapore; SLABS, Singapore-Longitudinal Aging Brain Study; GUSTO, Growing Up in Singapore Towards healthy Outcomes.
 
 Both EDIS and SLABS show similar profiles (Figure 5A and B), suggesting important features are stable across the elderly datasets. Regions near the lateral ventricles all make strong contributions, making up 7 of the 15 highest ranking features. Substantial contributions can also be seen in frontal/association areas corresponding to the default mode, control, and salience/ventral attention networks. Areas near the hippocampus/fornix, thalamus, and somatomotor network also contribute. These findings are consistent when using the pretrained model for EDIS and SLABS (Figure 5—figure supplement 1A and B).
 
@@ -97,7 +195,7 @@ In contrast, with the children of GUSTO, notable differences can be found (Figur
 
 Our findings are the first, to our knowledge, to show the age-dependent generalizability of a pretrained brain age model to non-Caucasian participants, specifically Singaporean children and elderly. We also present novel results on the informativeness of longitudinal changes in brain age, independent of baseline brain age, to future executive function in healthy participants. Finally, we show that accurate models focus on distinct features in elderly and children, suggesting that the brain age model can extract relevant age-related information.
 
-## Generalizability of pretrained brain age models to local datasets may be age-dependent
+### Generalizability of pretrained brain age models to local datasets may be age-dependent
 
 Overall, our results suggest the pretrained SFCN model could be directly applied to Singaporean elderly participants, but it needed to be finetuned for Singaporean children. Previous work with the SLABS dataset showed that aging-related changes in Chinese Singaporean elderly were comparable to previous studies conducted with primarily Caucasian participants (Leong et al., 2017). However, it was not initially clear whether this would carry over to a multidimensional index like brain age or to elderly datasets that better reflect the ethnic diversity of Singapore. Encouragingly, we found high accuracy in predicting age (i.e., low MAE and high correlation) in both EDIS (Chinese, Malay, and Indian participants) and SLABS (Chinese participants only) using the pretrained model. Furthermore, our results after finetuning were generally consistent with the original findings in elderly. This suggests that similarities were not specific to the SLABS sample, but could generalize to Singaporean elderly as a whole. In addition to similar aging patterns, the success of the pretrained model in this age range can be attributed to the abundance of training data around 60–80 years old, mostly from UKBiobank (Leonardsen et al., 2022).
 
@@ -105,7 +203,7 @@ However, we found the pretrained model did not perform as well in children (i.e.
 
 Fortunately, finetuning the model produced distinct age groups, along with higher correlation and lower MAE. As discussed below, finetuning the model in children also shifted feature saliency and revealed a significant association with future executive function that was not found using the pretrained model. This suggests the model underwent a greater change in children, compared to elderly, to become both more accurate and meaningful. Furthermore, we found that the variance of finetuned predictions was the lowest at 4.5 years old and increased steadily with age, consistent with previous reports (Brown et al., 2012). This implies the ‘brain maintenance’ account of aging, where individuals start with the same or similar offsets, and different slopes result in increased variability over the lifespan (Walhovd et al., 2023b). This also suggests that the variance in brain age predictions at later ages is likely due to stable, lifelong factors, as well as ongoing changes. Thus, looking at longitudinal changes in brain age could help separate these influences.
 
-## Longitudinal changes in brain age are informative of future executive function
+### Longitudinal changes in brain age are informative of future executive function
 
 Our results with baseline BAG were largely consistent with previous work in elderly. With a large sample of community-dwelling, non-demented participants from EDIS, we found significant associations with baseline cognition across multiple cognitive domains, consistent with a recent review (Wrigglesworth et al., 2021). Furthermore, with a smaller longitudinal sample of healthy participants from SLABS, we matched previous work finding an association with future decline in cognition, despite being not significant after multiple comparison correction (Wrigglesworth et al., 2022). In GUSTO children, we did not find a significant association between baseline BAG and baseline cognition at 4.5 years old or future cognition at 8.5 years old. To our knowledge, while brain age associations with cognition have been reported in samples spanning 3–22 years old (Lewis et al., 2018; Jirsaraie et al., 2023b; Khundrakpam et al., 2015; Erus et al., 2015), they have not been explored around the early age of 4.5 years old specifically. This is notable since our generalization analyses revealed that, after finetuning, brain age variability is lowest at this age and increases with age. Thus, cross-sectional associations with cognition may only occur at later ages, when there is more variability in brain age. Alternatively, more complex models may be needed to reveal cross-sectional structure–cognition association at such young ages.
 
@@ -115,7 +213,7 @@ Our findings thus suggest that early-life factors could influence the cross-sect
 
 While early longitudinal changes in BAG associated with future executive function performance in both elderly and children, one notable difference lies in the direction of association. In elderly, increases in BAG were associated with worse executive function decline. In children, increases in BAG were associated with better future inhibitory performance. There have been somewhat conflicting reports on the direction of association between BAG and cognition in youth (Lewis et al., 2018; Jirsaraie et al., 2023b; Khundrakpam et al., 2015; Erus et al., 2015). However, our results are unique in examining the longitudinal change in BAG rather than the cross-sectional BAG. Thus, our results could reflect previously reported cognitive decline with increasing age in late life (Hedden and Gabrieli, 2004) and cognitive gains with increasing age in early life (Roalf et al., 2014). One of the few longitudinal studies in development related white matter and executive function development, and found that white matter growth in adolescence was associated with better inhibitory control, while growth in adulthood was associated with worse performance (Simmonds et al., 2014). Our brain age paradigm, based on multivariate features of the brain, further supports these findings in children and elderly. Specifically, a faster increase in BAG may imply that a child is developing ahead of schedule, resulting in more rapidly maturing cognitive functioning. Conversely, a slower increase in BAG at an older age may reflect mechanisms of brain maintenance at work, prolonging a more ‘youthful’ brain and sustained optimal cognitive performance.
 
-## Salient features of the brain age model differ between elderly and children
+### Salient features of the brain age model differ between elderly and children
 
 Our work builds on recent efforts to interpret deep learning brain age models in aging (Wood et al., 2022; Hofmann et al., 2022; Yin et al., 2023). While the datasets, brain age models, and interpretability methods all differed among these studies, the most consistent finding was the importance of the lateral ventricles in elderly. This was evident in our models as well. Like other popular methods for extracting feature importance from deep learning models, our guided backpropagation method tended to highlight boundaries between regions and tissue types (i.e., edges). Thus, strong contributions from white matter areas such as the fornix and corpus callosum were likely at least partly due to the size of the lateral ventricles. These regions all ranked highly in elderly, suggesting the overall importance of the lateral ventricles.
 
@@ -123,73 +221,73 @@ Our other findings in elderly also broadly align with prior research in aging. W
 
 We also show clear differences in feature importance between elderly and children, in line with prior research in development. The consistency between elderly datasets reinforces that these differences are not simply artifacts of using a different dataset. Most strikingly, we find evidence of a posterior to anterior pattern (Marsh et al., 2008; Gogtay et al., 2004) going from childhood to elderly. For instance, posterior areas near the lateral ventricles (tapetum and splenium of corpus callosum) continue to rank highly, while more anterior areas decrease in prominence. We also find a general increase in the relative importance of white matter, with greater increases in posterior regions. This is in line with a previous brain age model showing stronger contributions of white matter relative to gray matter in youth (Brown et al., 2012). The focus on the development of white matter could also underlie the observed association with executive function development (Simmonds et al., 2014; Bagautdinova et al., 2023; Goddings et al., 2021). Finally, we find increased contributions from the brain stem, which is consistent with its large volume changes in youth (Cao et al., 2015).
 
-## Limitations
+### Limitations
 
 Our study is not without limitations. While we find encouraging signs that the model generalizes to Singaporean elderly, we cannot completely rule out more subtle issues that may have arisen from applying the model to these participants. For instance, finetuning the model slightly increased prediction accuracy and generally strengthened associations with cognition in elderly, suggesting the pretrained model may not have performed optimally. Furthermore, we have not tested the model in other non-Caucasian participants, which would be needed for a more comprehensive test of generalizability. The current study also only includes participants from very early and late life. Thus, future work would be needed to extend our results across the lifespan, with more participants and even longer follow-up times, in order to achieve a more complete picture.
 
-## Conclusion
+### Conclusion
 
 Here, we used a previously published brain age model to reveal age-dependent generalization to Asian participants, as well as age-dependent associations and interpretability of brain age. Specifically, we found the brain age model could be directly applied to Singaporean older adults, but it needed to be finetuned for Singaporean children. Furthermore, longitudinal changes in brain age were related to future executive function in both children and elderly participants. However, the direction of association was positive in children and negative in elderly. Combined with the identified salient features for brain age prediction, we conclude that increased brain age in early life could indicate more mature development, especially in white matter and posterior areas. Conversely, increased brain age in late life could suggest greater degeneration, especially around the lateral ventricles and frontal areas. Our results provide early evidence of the generalization capability of the brain age model and the ability of longitudinal measurements to capture ongoing aging process in the brain.
 
 ## Materials and methods
 
-## Sample characteristics
+### Sample characteristics
 
 We analyzed three datasets from Singapore, which are detailed in the following.
 
-## Participants
+#### Participants
 
-## EDIS
+##### EDIS
 
 EDIS was a cross-sectional study to measure the prevalence of cognitive impairment and dementia in Singapore, which has been described previously (Hilal et al., 2013; Hilal et al., 2017; Wong et al., 2019). We analyzed T1 MRI and cognitive data from 694 community-dwelling older adults. The same participants were used for all analyses. Ethics approval for the EDIS study was obtained from the Singapore Eye Research Institute and the National Healthcare Group Domain Specific Review Board. The study was conducted in accordance with the Declaration of Helsinki. Written informed consent was obtained, in the preferred language of participants, by bilingual study coordinators prior to recruitment into the study.
 
-## SLABS
+##### SLABS
 
 SLABS was a longitudinal, community-based study to characterize age-related brain changes and cognitive performance in healthy elderly in Singapore, which has been described previously (Chee et al., 2009). Participants underwent at most five phases of neuroimaging and neuropsychological assessments at approximately 2-year intervals. Neuropsychological assessments were performed within 3 months of neuroimaging. To test prediction accuracy of the brain age model, we first used 598 T1 scans from N=215 participants with MMSE score ≥26 at baseline (mean follow-up time = 4.0±3.3years). To investigate longitudinal associations in healthy elderly, we identified a subset of N=81 participants with (1) longitudinal T1 and cognitive data in the first three phases; (2) additional cognitive data in the last two phases (to study future cognitive decline, see Figure 1C); and (3) MMSE score ≥26 at baseline. Thus, mean follow-up time in this subset was 3.6±0.8 years for T1 scans (total number = 228), while mean follow-up time was 7.8± 1.0 years for cognitive scores (total number = 355). The study was approved by the Institutional Review Board of the National University of Singapore. All participants provided written informed consent prior to participation.
 
-## GUSTO
+##### GUSTO
 
 GUSTO is a longitudinal birth cohort study to characterize early development in Singapore, which has been described previously (Soh et al., 2014). Participants were scanned at 4.5, 6.0, 7.5, and 10.5 years old. Neuropsychological assessments were taken at 4.5 and 8.5 years old. To test prediction accuracy of the brain age model in children, we first used 1702 T1 scans from N=678 normally developing children (mean follow-up time = 3.5±2.4 years). To investigate cross-sectional and longitudinal associations in healthy children, we identified subsets of participants (N=217–239) with the requisite imaging and cognitive data available, similar to SLABS. For the cross-sectional analysis, this included participants with both T1 and cognitive data at 4.5 years old (N=217). For the longitudinal analyses, this included participants with longitudinal T1 data from 4.5 to 7.5 years old and cognitive data at 8.5 years old (N=220 or 239). The study was approved by the National Healthcare Group Domain Specific Review Board (NHG DSRB) and the Sing Health Centralized Institutional Review Board (CIRB). Written informed consent was obtained from mothers. When children reached 6 years of age, children also provided oral consent.
 
-## Neuropsychological assessments
+### Neuropsychological assessments
 
-## EDIS
+#### EDIS
 
 Trained research psychologists administered a neuropsychological battery locally validated for Singaporean elderly, as described previously (Hilal et al., 2013). Briefly, the battery assessed the following seven cognitive domains using the corresponding tests: (1) Executive function: Frontal Assessment Battery and Maze Task; (2) Attention: Digit Span, Visual Memory Span, and Auditory Detection; (3) Language: Boston Naming Test and Verbal Fluency; (4) Visuomotor speed: Symbol Digit Modality Test and Digit Cancellation; (5) Visuoconstruction: Weschler Memory Scale-Revised Visual Reproduction Copy task, Clock Drawing, and Weschler Adult Intelligence Scale-Revised subtest of Block Design; (6) Verbal memory: Word List Recall and Story Recall; and (7) Visual memory: Picture Recall and Weschler Memory Scale-Revised Visual Reproduction.
 
 For each individual test, raw scores were transformed to standardized z-scores using the mean and SD of that test (across all of EDIS, not just the imaging sample included here). Composite z-scores for each domain were obtained by averaging all individual test z-scores within that domain. These domain-specific z-scores were then standardized using their own mean and SD. A global cognition z-score was calculated by averaging over all domain-specific z-scores and standardized using its own mean and SD. CIND was defined as impairment in at least one cognitive domain using education adjusted cut-off values of 1.5 SDs below the established normal means on individual tests. Failure in at least half of the tests in a domain constituted failure in that domain. Note that CIND was not a formal clinical diagnosis.
 
-## SLABS
+#### SLABS
 
 Trained researchers administered neuropsychological assessments within 3 months of the neuroimaging scan, as described previously (Leong et al., 2017). Briefly, the following five cognitive domains were assessed using the corresponding tests: (1) Executive function: Categorical Verbal Fluency Test and Design Fluency Test in the Delis-Kaplan Executive Function System (Unlike previous studies, Trail Making Test B was not included in this study due to missing data in later phases); (2) Attention: Digit Span Test and Spatial Span Test in Wechsler Memory Scale-Third Edition; (3) Processing speed: Symbol Digit Modalities Test, Symbol Search Task in the Wechsler Memory Scale-Third Edition, and Trail Making Test A; (4) Verbal Memory: Rey Auditory Verbal Learning Test; and (5) Visuospatial Memory: Visual Paired Associates Test. Composite T-scores (T-score = (z-score × 10)+50) were obtained for each domain and for global cognition following a similar procedure as EDIS.
 
-## GUSTO
+#### GUSTO
 
 To maintain consistency with EDIS and SLABS, we selected standardized cognitive summary scores measured at 4.5 (baseline) and 8.5 (future) years old. These included the Kaufman Brief Intelligence Test Second Edition (KBIT-2) composite IQ standard score, the Wisconsin Card Sorting Test (WCST) total errors standard score, and the Developmental Neuropsychological Assessment Second Edition (NEPSY-II) scaled domain scores. The KBIT-2 was administered at 4.5 years and is a measure of abbreviated intelligence for children and adults aged 4 years to 90 years of age. The WCST is a lab-based measure of set-shifting/cognitive flexibility and was administered at age 8.5 years. The NEPSY-II was administered at 8.5 years and consisted of a word interference task requiring working memory recall (i.e. naming) and a Stroop task requiring predominantly inhibition in one condition and switching in another condition.
 
-## Image acquisition and preprocessing
+### Image acquisition and preprocessing
 
-## EDIS
+#### EDIS
 
 MRI scans were performed on a 3T Siemens Magnetom Tim Trio System (Siemens, Erlangen, Germany) at the Clinical Imaging Research Centre, National University of Singapore. High-resolution T1-weighted structural MRI was acquired using magnetization-prepared rapid gradient echo (MPRAGE) sequence (192 continuous sagittal slices, TR/TE/TI = 2300/1.9/900 ms, flip angle = 9°, FOV = 256 × 256 mm2, matrix = 256 × 256, isotropic voxel size = 1.0 × 1.0×1.0 mm3, bandwidth = 240 Hz/pixel).
 
-## SLABS
+#### SLABS
 
 For the first three phases, MRI scans were performed on a 3T Siemens Magnetom Tim Trio System (Siemens) at the Centre for Cognitive Neuroscience, Duke-NUS Medical School. High-resolution T1-weighted structural MRI was acquired using a MPRAGE sequence (192 continuous sagittal slices, TR/TE/TI = 2300/2.98/900 ms, flip angle = 9°, FOV = 256 × 240 mm2, matrix = 256 × 240, isotropic voxel size = 1.0 × 1.0×1.0 mm3, bandwidth = 240 Hz/pixel).
 
 For the last two phases, following a scanner upgrade, MRI scans were performed on a 3T Siemens Magnetom Prisma Fit System (Siemens). High-resolution T1-weighted structural MRI was again acquired using a MPRAGE sequence (192 continuous sagittal slices, TR/TE/TI = 2300/2.28/900 ms, flip angle = 8°, FOV = 256 × 240 mm2, matrix = 256 × 240, isotropic voxel size = 1.0 × 1.0×1.0 mm3, bandwidth = 200 Hz/pixel).
 
-## GUSTO
+#### GUSTO
 
 For scans taken at 4.5 and 6.0 years, MRI scans were performed on a 3T Siemens Magnetom Skyra System (Siemens) at KK Women’s and Children’s Hospital. High-resolution T1-weighted structural MRI was acquired using a MPRAGE sequence (192 continuous sagittal slices, TR/TE/TI = 2000/2.08/877 ms, flip angle = 9°, FOV = 192 × 192 mm2, matrix = 192 × 192, isotropic voxel size = 1.0 × 1.0×1.0 mm3).
 
 For scans taken at 7.5 and 10.5 years, MRI scans were performed on a 3T Siemens Magnetom Prisma Fit System (Siemens) at the National University of Singapore. The scanning parameters were the same as for 4.5 and 6.0 years.
 
-## Preprocessing
+#### Preprocessing
 
 For all datasets, we used the minimal preprocessing pipeline performed on the SFCN training set, as described previously (Leonardsen et al., 2022). Briefly, images were first skull-stripped with FreeSurfer (Ségonne et al., 2004), then reoriented to standard FMRIB (Oxford Centre for Functional MRI of the Brain) Software Library (FSL) (Jenkinson et al., 2012) orientation and linearly registered to Montreal Neurological Institute (MNI) 152 space using the FSL linear registration tool (FLIRT) (Jenkinson and Smith, 2001). Images were then cropped to 167 × 212 × 160 voxels, and voxel intensity values were normalized between 0 and 1. These minimally preprocessed images were input to the SFCN brain age model (Figure 1A). Similar to the original model (Leonardsen et al., 2022), we adopted a lenient manual quality control before conducting analyses, removing scans where a significant portion of the brain was missing or there was a registration failure. This excluded 2 scans/participants from EDIS and 12 scans from 11 participants from GUSTO.
 
-## Brain age predictions
+### Brain age predictions
 
 After preprocessing, we directly applied the pretrained brain age model (Leonardsen et al., 2022) to each of the datasets (all baseline and follow-up data) to generate brain age predictions. We used the regression variant of SFCN due to its superior generalization performance (Leonardsen et al., 2022). Performance was assessed using Pearson’s correlation and mean absolute error (MAE) between brain age and chronological age. The model was considered to have performed well if both correlation was high and MAE was low. BAG was calculated by subtracting chronological age from brain age.
 
@@ -197,24 +295,24 @@ We then finetuned the model on each dataset separately to mitigate effects from 
 
 We built on the original model code using the Keras (Chollet, 2015) interface of Tensorflow 2.11 (Abadi et al., 2015). We used the Adam optimizer with mean squared error loss. Upon recommendation of the original study authors, we set the dropout rate = 0.3 and weight decay = 1e-3. We selected the initial learning rate from {1e-3, 1e-4, 1e-5} using the validation sets of each fold. Appendix 1—table 1 shows the optimal initial learning rate for each study and fold. We used a cosine learning rate decay over 25 epochs and trained the models for 35 epochs total. The final weights were taken from the epoch with the lowest validation MAE. Models were trained on a NVIDIA RTX 3090 GPU with 24 GB RAM on top of cuda 11.0 with a batch size of 4. More details on the finetuning process, including parameter adjustments and choices, can be found in Appendix 1.
 
-## Associations with cognition
+### Associations with cognition
 
-To examine cross-sectional and longitudinal associations with cognition in both elderly and children, we conducted several analyses, which are shown schematically in Figure 1C. Appendix 2—table 2 shows the model equations. Statistical results were corrected for multiple comparisons across cognitive domains using the Holm-Bonferroni method (Holm, 1979). Change in adjusted R2\begin{document}$R^{2}$\end{document} (ΔRadj2\begin{document}$\Delta R^{2}_{adj}$\end{document}) was calculated from the difference between a model including the variable of interest and covariates and a model only including covariates. Variance inflation factors were confirmed to be less than five to rule out multicollinearity among baseline BAG, change in BAG (when included), and other covariates (especially chronological age). Analyses were performed in R 4.2.1 (R Development Core Team, 2022) with RStudio (RStudio Team, 2022).
+To examine cross-sectional and longitudinal associations with cognition in both elderly and children, we conducted several analyses, which are shown schematically in Figure 1C. Appendix 2—table 2 shows the model equations. Statistical results were corrected for multiple comparisons across cognitive domains using the Holm-Bonferroni method (Holm, 1979). Change in adjusted $R^{2}$ ($ΔR_{adj}^{2}$) was calculated from the difference between a model including the variable of interest and covariates and a model only including covariates. Variance inflation factors were confirmed to be less than five to rule out multicollinearity among baseline BAG, change in BAG (when included), and other covariates (especially chronological age). Analyses were performed in R 4.2.1 (R Development Core Team, 2022) with RStudio (RStudio Team, 2022).
 
-## Elderly
+#### Elderly
 
 For each cognitive domain in EDIS, we related baseline BAG to baseline cognitive score, with chronological age, sex, and years of education as covariates. For the longitudinal analyses in SLABS, we first calculated annual rates of change in BAG and cognition using linear regressions with time for each participant. For each cognitive domain in SLABS, we related baseline BAG to long-term rate of cognitive change (calculated from all five phases). Next, again for each cognitive domain, we related early rate of BAG change (calculated from the first three phases) to long-term rate of cognitive change (calculated from all five phases). If this relation was significant for a domain, we lastly related early rate of BAG change (calculated from the first three phases) to future rate of cognitive change (calculated from the last measurement of BAG onward). All models included chronological age, sex, and years of education as covariates. Models with rate of BAG change also included baseline BAG as a covariate.
 
-## Children
+#### Children
 
 For cross-sectional analyses, we related baseline BAG to baseline cognition, both at 4.5 years old. For longitudinal analyses, we again calculated annual rates of change in BAG using linear regressions with time for each participant. We then related baseline BAG to future cognition and early rate of change in BAG to future cognition. Here, early rate of BAG change was calculated from 4.5 to 7.5 years, while future cognition was measured at 8.5 years. Chronological age and sex were included as covariates in all models. Models with rate of BAG change also included baseline BAG as a covariate.
 
-## Model interpretability
+### Model interpretability
 
 For each dataset, we investigated model interpretability using all scans from the same participants as the associations with cognition. Guided backpropagation (Springenberg et al., 2015) was used to compute individual saliency maps for both the pretrained and finetuned models. Guided backpropagation was previously shown to give similar results as occlusion for a brain age model, at a higher resolution and lower computational cost (Wood et al., 2022). For finetuned models, the fold where the participant was included in the test set was used. Maps were registered to a common space using Advanced Normalization Tools (ANTs) (Avants et al., 2008). Specifically, for each participant, input (minimally preprocessed) images were nonlinearly registered to MNI 152 space using the default parameters. This transformation was then applied to each participants’ saliency maps.
 
 To identify brain features that contributed the most to brain age predictions, we first averaged saliency maps over all participants in a study. We then retained the top 10% of voxels and calculated gray and white matter network/regional contributions. We used the 400-area Schaefer parcellation (Schaefer et al., 2014) assigned to seven functional networks (Yeo et al., 2011) for cortical gray matter. We averaged over all voxels in all parcels for each network. For subcortical gray matter, we used the automated anatomical labeling atlas 3 (AAL3) (Rolls et al., 2020) to identify regions containing the hippocampus and amygdala, the putamen and caudate, and the thalamus. For white matter, we used the ICBM-DTI-81 atlas (Mori et al., 2008) with 48 ROIs. For all regions, we averaged over all voxels in both hemispheres. Contributions were normalized to sum to 1, giving the relative contribution. To visualize saliency maps in 2D, we set the maximum value to the 99th percentile and overlaid select slices (x=97, z=68, z=89, z=135) over a MNI 152 template brain.
 
-## Materials availability
+### Materials availability
 
 Full 3D saliency maps generated from model interpretability are publicly available at https://figshare.com/articles/preprint/Brain_age_saliency_maps/24805545.

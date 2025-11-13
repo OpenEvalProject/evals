@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Department of Molecular Pathobiology, New York University College of Dentistry New York United States
-2. https://ror.org/0190ak572 Department of Orthopedic Surgery, NYU Grossman School of Medicine New York United States
-3. https://ror.org/0190ak572 Laura and Isaac Perlmutter Cancer Center, NYU Grossman School of Medicine New York United States
-4. https://ror.org/0190ak572 Department of Urology, NYU Grossman School of Medicine New York United States
+1. Department of Molecular Pathobiology, New York University College of Dentistry New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Department of Orthopedic Surgery, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Laura and Isaac Perlmutter Cancer Center, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. Department of Urology, NYU Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -29,47 +29,59 @@ MKR mouse model was generated and characterized by LeRoith and colleagues and ex
 
 ## Results
 
-## Metformin promotes healing in fracture models under hyperglycemic conditions
+### Metformin promotes healing in fracture models under hyperglycemic conditions
 
 In order to evaluate the fracture healing that involves endochondral ossification in mice, we adapted this well-accepted Bonnarens and Einhorn fracture mouse model (Figure 1A). Animals were sacrificed on day 14, 23, or 31 post-fracture representing the inflammatory stage, the endochondral stage, and the remodeling stage during the femur fracture repair process (Einhorn and Gerstenfeld, 2015). As shown in Figure 1—figure supplement 1, 12-week-old WT and MKR mice were treated with PBS or metformin through daily intraperitoneal injection. Blood glucose level (Figure 1—figure supplement 1A) and fasting glucose tolerant test (Figure 1—figure supplement 1B) showed that metformin significantly reduced glucose levels in MKR mice as anticipated. Meanwhile, metformin-treated MKR mice exhibited similar healing and remodeling speed to that of the WT groups throughout the entire healing process, and the fractured bones were completely healed on day 31 (Figure 1B). On the other hand, the healing process in the MKR-PBS group was much delayed, with a visible amount of callus tissue remained at the fracture site on day 31. Additionally, histological analysis of the callus area (Figure 1C) disclosed a postponed peak callus formation in the MKR-PBS group when compared to WT-PBS, WT-met, and MKR-met groups on day 23 post-fracture, as well as a delayed remodeling on day 31 post-fracture. A quantitative analysis of the callus at the fracture area (Figure 1D) confirmed that metformin significantly enhanced bone healing in the T2D mice compared to the PBS-treated MKR mice. We also harvested the callus tissue at fracture sites on days 12 and 21 post-fracture to examine the expression of genes that contribute to adipogenesis, osteogenesis, and chondrogenesis (Figure 1—figure supplement 2). A significant reduction in adipogenesis transcription factor accompanied with a significant induction of chondrogenesis transcript factor SOX9 was detected in the callus harvested on day 12 post-fracture. SOX9 is a master transcription factor that plays a key role in chondrogenesis (Kolettas et al., 2001). In addition, at day 21 post-fracture, PGC1α, which is required for chondrocyte metabolism and cartilage homeostasis (Kawakami et al., 2005; Zhao et al., 2014), was significantly upregulated in the metformin-treated MKR mice.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the experimental design (created with BioRender.com). (B) Representative µCT images of femurs from each treatment group. (C) H&E staining of longitudinal femur sections (scale bar, 1 mm). (D) Histomorphometry analysis was performed on those H&E slides to evaluate the callus area at the fracture site from each treatment group (ANOVA, followed by Tukey’s post hoc test), Bars show mean ± SEM. N = 3–6, *p<0.05, **p<0.005.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Glucose levels in WT and MKR mice throughout the 14-day PBS or metformin treatment. (B) Glucose tolerance test (GTT) after fasting post 14-day PBS or metformin treatment (N = 6, SD). If different letters are shown at a time point, they are statistically different from one another (ANOVA, p<0.05 by post hoc Tukey’s).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Adipocyte, (B) osteoblast differentiation, and (C) chondrogenesis transcript factors expression in the callus tissue at 12 d post-fracture. (D) adipocyte, (E) osteoblast differentiation, and (F) chondrogenesis transcript factors expression in the callus tissue at 21 d post-fracture. PGC1α expression in the callus tissue at (G) 12 d and (H) 21 d post-fracture.
 
 A similar effect of metformin was also observed in a non-fixed radial fracture model (Figure 2). After non-fixed radial fracture was introduced, the animal was treated with either PBS or metformin for 14 or 23 d (Figure 2A). In the WT groups at 14 d post-fracture, both PBS and metformin-treated animals started to exhibit sufficient amount of callus with the sign of bridging of the fracture ends (Figure 2B). In the 14-day post-fracture MKR mice, those treated with metformin exhibited more healing callus than the PBS-treated ones with a significantly greater percentage of callus bridging at the fracture site (Figure 2C). Bone mineral density was also higher in the metformin-treated MKR mice when compared to the PBS-treated MKR mice (Figure 2D). Bone volume/tissue volume ratio (Figure 2E) and trabecular thickness (Figure 2F) were not regulated by metformin in either WT or MKR mice. In the 23-day post-fracture groups, only PBS-treated MKR animals failed to show callus formation and bridging at the fracture site compared to all the other groups (Figure 2G and H), indicating a delayed healing process in the MKR PBS group. Bone mineral density levels in the metformin-treated MKR mice were similar to the PBS-treated WT mice and were significantly higher than the PBS-treated MKR mice (Figure 2I). In the 23-day post-fracture groups, the bone volume/tissue volume ratio (Figure 2J) and trabecular thickness (Figure 2K) were significantly improved by metformin in MKR mice compared to the PBS-treated MKR mice. These data suggest that 23 d of metformin treatment favorably affected bone healing. The beneficial effects of 23 d of metformin treatment on the callus bridging (Figure 2H), BV/TV% (Figure 2J), and Tb. Thickness (Figure 2K) became significant in contrast to the trends of improvement observed in the mice received short-term treatment for 14 d (Figure 2C, E and F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic representation of the experimental design (created with BioRender.com). (B) Representative µCT images of mouse radiuses (top) and fracture sites (bottom) 14 d post-fracture (scale bar, 500 µm). Measured parameters (C–F) by µCT at 14 d post-fracture. (C) Percentage of callus bridging (%). (D) Bone mineral density (BMD; g/cm3). (E) Bone volume/tissue volume (BV/TV; %). (F) Trabecular thickness (Tb.Th; mm). (G) Representative µCT images of mouse radiuses (top) and fracture sites (bottom) 23 d post-fracture (scale bar, 500 µm). Measured parameters (H–K) by µCT at 23 d post-fracture. (H) Percentage of callus bridging (%). (I) BMD (g/cm3). (J) BV/TV (%). (K) Tb.Th (mm). Results of quantitative µCT data analysis (ANOVA, followed by Tukey’s post hoc test). Bars show mean ± SEM; N = 5–6.Figure 2—source data 1.Figure 2C–F and H–K.
+**Figure 2.:** (A) Schematic representation of the experimental design (created with BioRender.com). (B) Representative µCT images of mouse radiuses (top) and fracture sites (bottom) 14 d post-fracture (scale bar, 500 µm). Measured parameters (C–F) by µCT at 14 d post-fracture. (C) Percentage of callus bridging (%). (D) Bone mineral density (BMD; g/cm3). (E) Bone volume/tissue volume (BV/TV; %). (F) Trabecular thickness (Tb.Th; mm). (G) Representative µCT images of mouse radiuses (top) and fracture sites (bottom) 23 d post-fracture (scale bar, 500 µm). Measured parameters (H–K) by µCT at 23 d post-fracture. (H) Percentage of callus bridging (%). (I) BMD (g/cm3). (J) BV/TV (%). (K) Tb.Th (mm). Results of quantitative µCT data analysis (ANOVA, followed by Tukey’s post hoc test). Bars show mean ± SEM; N = 5–6.
 
-## Metformin improves healing in the drill hole injury model under hyperglycemic conditions
+### Metformin improves healing in the drill hole injury model under hyperglycemic conditions
 
 To further investigate metformin’s effect on bone repair, a drill-hole model was established (Figure 3A). After 14-day treatment with PBS or metformin, we examined the injury site using µCT scanning. Exterior and interior general views of the femur indicate a non-filled open wound exhibited only in the PBS-treated MKR group, while all the other three groups showed mainly filled holes indicating a faster healing speed (Figure 3B–D). Tracing of the drill-hole injury sites presented a detailed view of the callus tissues formed within the drill hole (Figure 3D). In the WT animals, quantitative analysis of the µCT images showed no difference between the PBS and the metformin treatments. Significant lower BMD (Figure 3E) and BV/TV ratio (Figure 3F) were observed in PBS-treated MKR mice when compared to the metformin-treated ones. The PBS-treated MKR mice also demonstrated prominently higher bone porosity (Figure 3G) and total pore space (Figure 3H) within the callus tissue, suggesting that delayed bone healing and remodeling in MKR mice was rescued by metformin.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic representation of the experimental design (created with BioRender.com). (B) Representative 3D images of mouse femurs with both exterior and interior general view at 14 d post-surgery. (C) Cross-plane images at the center of the drill site. (D) Representative 3D images within the drill site (scale bar, 100 µm). and (E, H) Results of quantitative µCT data analysis (ANOVA, followed by Tukey’s post hoc test; bars show mean ± SEM; n = 6–9, *p<0.05, **p<0.01, ***p<0.005, **** p<0.0001). (E) Bone mineral density (BMD; g/cm3). (F) Bone volume/tissue volume ratio (BV/TV; %). (G) Porosity (%). (H) Total pore space (mm3).Figure 3—source data 1.Figure 3E–H.
+**Figure 3.:** (A) Schematic representation of the experimental design (created with BioRender.com). (B) Representative 3D images of mouse femurs with both exterior and interior general view at 14 d post-surgery. (C) Cross-plane images at the center of the drill site. (D) Representative 3D images within the drill site (scale bar, 100 µm). and (E, H) Results of quantitative µCT data analysis (ANOVA, followed by Tukey’s post hoc test; bars show mean ± SEM; n = 6–9, *p<0.05, **p<0.01, ***p<0.005, **** p<0.0001). (E) Bone mineral density (BMD; g/cm3). (F) Bone volume/tissue volume ratio (BV/TV; %). (G) Porosity (%). (H) Total pore space (mm3).
 
-## Metformin accelerates bone formation under hyperglycemic conditions
+### Metformin accelerates bone formation under hyperglycemic conditions
 
 In order to examine metformin’s effects on bone formation in vivo, we conducted bone Alizarin Red and Calcein Double Labeling injections on WT and MKR mice. Figure 4A suggests that the florescent labels in WT mice remained the same between the PBS- and metformin-treated animals. In contrast, the distance between the two labels was greater in the metformin-treated than the PBS-treated MKR mice. This observation was supported by serum levels of amino-terminal propeptide of type 1 procollagen (P1NP). P1NP is considered a sensitive marker of bone formation (Rosen, 2020), and ELISA was performed using the serum samples collected at 14, 23, and 31 d post-femoral fracture. In WT animals, there is no difference in P1NP levels between the metformin-treated and PBS-treated mice at all three time points (Figure 4B). On the contrary, we observed significantly higher P1NP levels at all three time points post-fracture in the MKR mice treated with metformin compared to those treated with PBS (Figure 4B). Collectively, the data indicate that metformin can promote bone formation only under hyperglycemic conditions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig4-v2.jpg)
 
-**Figure 4.:** (A) Representative images of calcein double labeling in cortical periosteum of the femur mid-shaft. (B) Serum P1NP level (ng/ml) from each treatment group at 14, 23, and 31 d post- femoral fracture (ANOVA, followed by Sidak’s post hoc test). Bars show mean ± SEM; N = 5–8, *p<0.05, ****p<0.0001.Figure 4—source data 1.Figure 4B.
+**Figure 4.:** (A) Representative images of calcein double labeling in cortical periosteum of the femur mid-shaft. (B) Serum P1NP level (ng/ml) from each treatment group at 14, 23, and 31 d post- femoral fracture (ANOVA, followed by Sidak’s post hoc test). Bars show mean ± SEM; N = 5–8, *p<0.05, ****p<0.0001.
 
-## Metformin regulates proliferation and lineage commitment of the bone marrow stromal cells (BMSCs) in MKR mice
+### Metformin regulates proliferation and lineage commitment of the bone marrow stromal cells (BMSCs) in MKR mice
 
 Considering that the multipotent mesenchymal stem/progenitor cells (BMSCs) in bone are critical in maintaining bone quality, function, and regeneration, we then tested whether metformin stimulated BMSCs proliferation in MKR mice. As expected, hyperglycemic condition in MKR mice impaired the proliferation of their BMSCs, as indicated by CFU-F staining when compared to WT controls (Figure 5A). Administration of metformin in MKR mice successfully salvaged the BMSC proliferation capability and brought it back to the equivalent level as observed in the WT group. Under all three seeding densities, compromised CFU-F colony formation observed in the MKR group can be rescued by metformin treatment as shown in Figure 5B. However, metformin did not affect the proliferation of BMSCs in the WT group when compared to the PBS vehicle. It is noteworthy that metformin was not administrated to the culture. The daily metformin treatment in MKR mice prior to cell isolation appeared to be sufficient to protect the proliferation potential of BMSCs from the detrimental effects of hyperglycemia. BMSC lineage differentiation potential was also tested by ALP staining and von Kossa staining. After 14 d under osteogenic (Danaei et al., 2011) differentiation, in contrast to the weak ALP activity observed in the MKR-PBS group, while the MKR-met group showed compatible ALP activity to the WT groups (Figure 5C and D). ALP played a critical role in calcium crystallization and mineralization during bone formation; therefore, we speculated this aberrant ALP activity of the MKR-PBS group would further lead to an impaired bone mineralization. As expected, bone mineralization was barely detected in the MKR-PBS group after 21-day osteoblast differentiation visualized by von Kossa staining and metformin significantly enhanced bone mineralization in MKR mice when compared to the PBS-treated MKR animals (Figure 5E and F). Notably, the BMSCs from metformin-treated T2D mice could maintain the improved bone formation feature when re-exposed to the same hyperglycemic levels as in the T2D mice. BMSCs isolated from metformin-treated MKR mice and PBS controls were implanted in the recipient MKR mice (Figure 5G). Masson’s Trichrome staining on the ossicles formed by the BMSCs from metformin-treated MKR mice showed greater bone formation than that of PBS-treated MKR mice (Figure 5H and I). The result indicated that the previous in vivo treatment of metformin protected the BMSCs from the hyperglycemic and inflammatory conditions in the MKR mice, thus they have better potential and capacity to form ossicles in vivo even in MKR recipient mice. Metformin could effectively rescue the impaired differentiation potential of BMSCs in MKR mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig5-v2.jpg)
 
-**Figure 5.:** (A) Primary BMSCs were isolated from animals that were treated with PBS or metformin in vivo for 14 d and were seeded at indicated density for CFU-F culture. (B) Results from quantitative analysis of colony counts measured using ImageJ. (C) Primary BMSCs from mice received 14-day treatment of PBS or metformin were plated in 6-well plates and cultured using differentiation medium and were tested for ALP activity, (D) Total ALP-positive area per well was measured using ImageJ. (E) von Kossa staining to examine mineralization. (F) Calculation of mineralized area. (G) Schematic representation of the experimental design. (H) Masson’s Trichrome staining on the ossicle sections. (I) Percentage of bone area (blue) per field was measured using ImageJ. Bars show mean ± SEM. n = 6–9, *p<0.05, **p<0.01, ***p<0.005, ****p<0.0001.Figure 5—source data 1.Figure 5B, D, F and I.
+**Figure 5.:** (A) Primary BMSCs were isolated from animals that were treated with PBS or metformin in vivo for 14 d and were seeded at indicated density for CFU-F culture. (B) Results from quantitative analysis of colony counts measured using ImageJ. (C) Primary BMSCs from mice received 14-day treatment of PBS or metformin were plated in 6-well plates and cultured using differentiation medium and were tested for ALP activity, (D) Total ALP-positive area per well was measured using ImageJ. (E) von Kossa staining to examine mineralization. (F) Calculation of mineralized area. (G) Schematic representation of the experimental design. (H) Masson’s Trichrome staining on the ossicle sections. (I) Percentage of bone area (blue) per field was measured using ImageJ. Bars show mean ± SEM. n = 6–9, *p<0.05, **p<0.01, ***p<0.005, ****p<0.0001.
 
-## Improved chondrogenesis of BMSC from metformin-treated MKR mice
+### Improved chondrogenesis of BMSC from metformin-treated MKR mice
 
 Chondrogenesis and endochondral ossification are critical steps during the healing process after a bone injury. In order to examine metformin’s effect on chondrogenesis during bone healing, we compared the cartilage deposition within fracture healing sites throughout the healing process (14 d, 23 d, and 31 d post-fracture). The cartilage deposition was significantly lower in the PBS-treated MKR mice compared to the PBS-treated WT mice at 14 d post-fracture (Figure 6A and B), which is consistent with the observation of SOX9 and PGC1α induction in the callus on days 12 and 21, respectively, of the metformin-treated MKR mice (Figure 1—figure supplement 2). As expected, no difference between the PBS- or metformin-treated animals was observed in the WT groups. On the other hand, metformin significantly promoted cartilage formation in MKR mice on day 14 post-fracture, and the trend continued till day 23 (Figure 6A and B). By day 31 post-fracture, except in the PBS-treated MKR mice, no discernible callus remained in any other groups (Figure 6A). To further investigate whether metformin modulates chondrogenesis of BMSCs. BMSCs were isolated for chondrogenesis culture in vitro. Only BMSCs isolated from the PBS-treated MKR mice failed to form the chondrocyte disc as shown in Figure 6C after 3-day chondrogenic culture. BMSCs isolated from the metformin-treated MKR mice could form the chondrocyte disc as well as the WT controls (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88310/elife-88310-fig6-v2.jpg)
 
-**Figure 6.:** (A) Safranin O staining of longitudinal femur sections from femoral fractures at different time points (scale bar, 1 mm). (B) Cartilage area at fracture site was measured using ImageJ. (C) Chondrocyte pellet culture of BMSCs from the PBS- or metformin-treated animals. Micromass culture were generated by seeding 5 µl of primary BMSCs (1.6 × 107 cells/ml) in the center of 48-well plate and cultured under chondrogenic condition for 3 d (ANOVA, followed by Sidak’s post hoc test). Bars show mean ± SEM. n = 4–6, *p<0.05, **p<0.01.Figure 6—source data 1.Figure 6B.
+**Figure 6.:** (A) Safranin O staining of longitudinal femur sections from femoral fractures at different time points (scale bar, 1 mm). (B) Cartilage area at fracture site was measured using ImageJ. (C) Chondrocyte pellet culture of BMSCs from the PBS- or metformin-treated animals. Micromass culture were generated by seeding 5 µl of primary BMSCs (1.6 × 107 cells/ml) in the center of 48-well plate and cultured under chondrogenic condition for 3 d (ANOVA, followed by Sidak’s post hoc test). Bars show mean ± SEM. n = 4–6, *p<0.05, **p<0.01.
 
 ## Discussion
 
@@ -89,25 +101,25 @@ In conclusion, our study demonstrated that metformin can facilitate bone healing
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animal experiments were carried out with the compliance of the New York University Institutional Animal Care and Use Committee (IACUC). Hyperglycemic mouse model MKR (available from Jackson Laboratory; strain # 016618) breeders were generously provided by LeRoith and colleagues (Fernández et al., 2001). Friend Virus B (FVB) background wildtype (WT) breeders were ordered from Jackson Laboratory (Bar Harbor, ME).
 
-## Bone injury models
+### Bone injury models
 
-## Femoral closed fracture model
+#### Femoral closed fracture model
 
 The gravity-induced Bonnarens and Einhorn fracture model was adapted here as previously described in order to establish a standard closed fracture (Gerstenfeld et al., 2003; Bonnarens and Einhorn, 1984). Briefly, 12-week-old male WT and MKR mice were anesthetized with a ketamine/xylazine cocktail, and a 1 cm sagittal incision was made at the right knee beneath the patella. A 3/8-inch-length 27-gauge needle was inserted into bone canal right between medial and lateral condyles. The needle end was cut, and the blunt end was pushed forward and buried between medial and lateral condyles to avoid tissue damage afterward. With the fixative needle inside of the femur canal, the animal was moved to the fracture apparatus. The right femur was placed over the two supports, and the blunt guillotine blade was dropped from a pretested height onto the femur to create sufficient force to cause the fracture. The wound was then closed with suture, and mice were randomly assigned to vehicle (PBS) or metformin (Met, 200 mg/kg body weight) daily treatment groups. In this study, metformin was dissolved in PBS for administration.
 
-## Radius non-union fracture model
+#### Radius non-union fracture model
 
 12-week-old male WT and MKR mice were anesthetized using a ketamine/xylazine cocktail. A 0.5 cm coronal incision was made over the right radius. The brachioradialis and pronator teres were carefully separated with blunt surgical instruments to reveal the radius. A super sharp Stevens Tenotomy Scissor was used to cut at the middle of the radius and create the non-union radial fracture. The wound was then closed, and mice were randomly assigned to PBS or metformin daily treatment groups.
 
-## Femoral drill hole model
+#### Femoral drill hole model
 
 12-week-old male WT and MKR mice were anesthetized using a ketamine/xylazine cocktail. A 1 cm coronal incision was made over the right lateral femur. Quadriceps were carefully separated with blunt surgical instruments to reveal the femur. A drill bit (#66) was used to create a 0.8-mm-diameter hole in the femur. After closing the wound, mice were randomly assigned to PBS or metformin daily treatment groups.
 
-## Tissue collection and processing
+### Tissue collection and processing
 
 The micro computed tomography (μCT) and bone histomorphometry were utilized to assess static and dynamic indices of bone structure and formation. Briefly, bone injuries were introduced in animals as described above, and PBS and metformin treatment was administrated daily for the indicated time. After sacrificing the animal, injured bone samples were fixed in 10% buffered formalin for 48 hr, then rinsed with PBS before being analyzed by μCT. Bones were evaluated using a SkyScan 1172 high-resolution scanner (Brucker, Billerica, MA) with 60 kV voltage and 167 μA current at a 9.7 μm resolution and reconstructed using NRecon (V.1.6.10.2). Whole-scanned region was included as the volume of interest (VOI) (Voigt et al., 2016) from the femoral fracture model to generate a general 3D view of the femur fracture site. In the radius fracture model, a total of 3 mm (311 transverse anatomic slides) radius including the entire injury site was selected as VOI. In order to analyze only the fracture callus bone parameters, two sets of regions of interest (ROIs) (Fernández et al., 2001) were manually drawn within each VOI slides. The first set traced the external fracture callus (inclusion ROI), and the second set traced the cortical bones within the callus (exclusion ROI). In the femur drill hole model, a round-shaped ROI with 0.611 mm diameter (63 pixels) was surrounded in the center of injury hole throughout the depth where the callus was exhibit to generate the VOI consisting of callus within the drill site. VOIs from each animals were analyzed using CTan (V.1.13.2.1) to calculate the following morphometric parameters: bone mineral density (BMD), relative bone volume (BV/TV), trabecular thickness (Tb.Th), trabecular separation (Tb. Sp), porosity, and total pore space. CTVox (V.3.3.0.0) was used to generate the three spatial images of the VOI.
 
@@ -117,38 +129,38 @@ For double-labeling experiment, 10-week-old male WT and MKR mice were randomly a
 
 Blood was collected by cardiac puncture after euthanasia and left at room temperature for 30 min before centrifuging at 200 × g for 10 min to separate sera.
 
-## Cell culture and analysis
+### Cell culture and analysis
 
 As previously described, after 14-day treatment of PBS or metformin in vivo, WT and MKR mice were sacrificed and proceeded with bone marrow primary cell culture. Excessive tissue was removed from the femur and tibia from each mouse and quickly rinsed with 70% ethanol and then followed by triple-cold PBS wash to ensure sterility. Bone marrow cells were flushed out using cold PBS and broken down into individual cell suspension by passing through a 19-gauge needle five times. Cells were then cultured in MEM Alpha Modification (α-MEM) medium supplemented with 10% fetal bovine serum (R&D Systems, USA), 100  μg/ml streptomycin, and 100 units/ml penicillin (Gibco, Grand Island, NY) in a 37°C, 5% (v/v) CO2, humidified incubator. After removing non-adherent cells, the adherent cells were cultured as BMSCs for 7 d and sub-cultured for the following assays.
 
-## Colony-forming unit fibroblastic assay (CFU-F)
+#### Colony-forming unit fibroblastic assay (CFU-F)
 
 Isolated BMSCs were seeded at 100, 500, and 1000 cells/well in 6-well plate, followed by 10-day culture with α-MEM complete medium. Cells were fixed with 10% buffered formalin, washed three times with PBS followed by staining with 0.25% wt/vol crystal violet solution. Plate images were captured using ChemiDoc XRS System (Bio-Rad Laboratories, Inc, Hercules, CA) and analyzed using ImageJ.
 
-## Osteoblast differentiation
+#### Osteoblast differentiation
 
 Isolated BMSCs were seeded at 6.4 × 104 cells/well into 6-well plates and cultured with osteogenic medium containing α-MEM complete medium supplement with 50 µg/ml l-ascorbic acid-2-phosphate and 10 mM β-glycerophosphate for 2–3 wk followed by ALP and von Kossa staining. Briefly, after 2 wk of osteogenic differentiation, cells were fixed and checked for alkaline phosphatase activity using ALP kit (86R-1KT, Sigma) following the manufacturer’s protocol. After 3 wk under osteogenic culture, cells were fixed with 95% ethanol and rehydrated through gradient ethanol to water. Cells were then carefully washed with water after being incubated with 5% silver nitrate solution at 37°C for 1 hr and exposed under UV light for 10 min. All plates’ images were captured using ChemiDoc XRS System, and the ALP-positive area and mineralized regions were measured using ImageJ software.
 
-## Chondrocytes differentiation and disc formation
+#### Chondrocytes differentiation and disc formation
 
 Isolated BMSCs were further cultured and passaged twice using standard growth media of DMEM +10% FBS in order to enrich the cell number. A cell solution of 1.6 × 107 cells/ml was generated using StemPro Chondrogenesis Differentiation Kit (Thermo Fisher), and 5 µl droplets were applied in the center of 48-well plate wells for micro-mass culture. 3 hr later, warmed chondrogenic medium was overlayed over the micro-mass and the formation of osteogenic pellets was observed after 3 d of culture.
 
-## In vivo ossicle formation assay
+### In vivo ossicle formation assay
 
 Adapted from a previous report (Pettway and McCauley, 2008) and as described above, BMSCs from different treatment groups were obtained and cultured using standard growth media of DMEM +10% FBS with customized glucose level. We measured and calculated the mean value of recipient MKR mice blood glucose level (N = 4, average glucose level = 436 mg/dl) and prepared the ex vivo culture medium accordingly to avoid glucose level change from ex vivo culture to the body fluid of the recipient MKR mice. Briefly, BMSCs from the PBS or metformin-treated mice were growing to 90% confluent, then 1.0 × 108 cells/ml cells solution was obtained, and 20 µl of this cell solution was soaked in a 4 mm × 4 mm gel foam and grafted at the flank of the recipient MKR mice subcutaneously. 4 wk after the implantation, the gel foams were dissected and processed for histological assays.
 
-## Histology and image analysis
+### Histology and image analysis
 
 Femurs from fracture models and bone ossicles were decalcified using 10% EDTA for 2 wk. EDTA solution was refreshed every other day for the best decalcification efficacy. Tissues were then processed through an automatic tissue processor, followed by paraffin embedding. 5-µm-thick sections were cut from the paraffin-embedded tissues and subjected to H&E, Safranin O, and Mason’s Trichrome staining, respectively. The total callus area and cartilage area within it were traced and analyzed using ImageJ software. The bone area ratio within the ossicles was also analyzed using ImageJ.
 
-## Glucose test and glucose tolerance test
+### Glucose test and glucose tolerance test
 
 12-week-old WT and MKR mice were treated with PBS or metformin through daily intraperitoneal injection as previously described. Blood glucose level was recorded at the indicated time points for each mouse. After 14-day PBS or metformin injection, animals were fasted overnight for 16 hr by transferring into a clean new cage supplied with water. 20% (W/V) glucose solution was applied to the animals through oral gavage (1.6 g of glucose/kg body weight). Blood glucose was measured at the indicated time points till 2 hr post-glucose oral gavage.
 
-## Quantitative PCR
+### Quantitative PCR
 
 A femoral closed fracture was performed as previously described. Callus tissue at the fracture site was collected and lysate in Trizol Reagent. RNA was extracted and purified using the RNeasy Plus kit. cDNA was prepared using a Reverse Transcriptase Kit, and PCR was then performed with a Bio-Rad CFX384 Real-Time PCR detection System. Primer information is given below:
 
-## Statistics
+### Statistics
 
 We used ANOVA when the study subjects included more than two groups, followed by post hoc tests as indicated in the legends. We used the two-tailed Student’s t-test to compare the differences between the two experimental groups. A value of p<0.05 was considered statistically significant. Bars in the figures represent the mean ± SEM unless stated otherwise.

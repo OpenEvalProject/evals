@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.44489.001 Regulation of the outer kinetochore complex Ndc80 is essential to ensure correct kinetochore-microtubule attachments during mitosis. Here, we present a novel mechanism of regulation that is intrinsic to its structure; tight bending of the Ndc80 complex inhibits its microtubule binding. Using single molecule Förster resonance energy transfer (FRET), we show that the Saccharomyces cerevisiae Ndc80 complex can fluctuate between straight and bent forms, and that binding of the complex to microtubules selects for straightened forms. The loop region of the complex enables its bent conformation, as deletion of the loop promotes straightening. In addition, the kinetochore complex MIND enhances microtubule binding by opposing the tightly bent, auto-inhibited conformation of the Ndc80 complex. We suggest that prior to its assembly at the kinetochore, the Ndc80 complex interchanges between bent (auto-inhibited) and open conformations. Once assembled, its association with MIND stabilizes the Ndc80 complex in a straightened form for higher affinity microtubule binding.
+Regulation of the outer kinetochore complex Ndc80 is essential to ensure correct kinetochore-microtubule attachments during mitosis. Here, we present a novel mechanism of regulation that is intrinsic to its structure; tight bending of the Ndc80 complex inhibits its microtubule binding. Using single molecule Förster resonance energy transfer (FRET), we show that the Saccharomyces cerevisiae Ndc80 complex can fluctuate between straight and bent forms, and that binding of the complex to microtubules selects for straightened forms. The loop region of the complex enables its bent conformation, as deletion of the loop promotes straightening. In addition, the kinetochore complex MIND enhances microtubule binding by opposing the tightly bent, auto-inhibited conformation of the Ndc80 complex. We suggest that prior to its assembly at the kinetochore, the Ndc80 complex interchanges between bent (auto-inhibited) and open conformations. Once assembled, its association with MIND stabilizes the Ndc80 complex in a straightened form for higher affinity microtubule binding.
 
 ## Introduction
 
@@ -29,39 +29,91 @@ Direct evidence implicating tight bending in the auto-inhibition of Ndc80 comple
 
 ## Results
 
-## Microtubule binding by the Ndc80 complex is auto-inhibited by its Spc24/Spc25 end
+### Microtubule binding by the Ndc80 complex is auto-inhibited by its Spc24/Spc25 end
 
 Previous work (Kudalkar et al., 2015; Cheeseman et al., 2006) suggested the possibility of an intra-molecular, auto-inhibitory interaction in which the tetrameric Ndc80 complex bends tightly, allowing its Spc24/Spc25 end to associate closely with, and reduce the microtubule-binding of its Ndc80/Nuf2 end (Figure 1A). To test directly for inhibition of Ndc80/Nuf2 by Spc24/Spc25, we measured the microtubule binding of a shortened dimeric construct, called ‘Broccoli’ (Schmidt et al., 2012) consisting of just the Ndc80 and Nuf2 proteins truncated to remove their C-termini (Ndc80 1–556, Nuf2 1–339), through which they would normally tetramerize with Spc24 and Spc25 (Wei et al., 2005). A yeast Broccoli construct with GFP fused C-terminally to Nuf2 was purified (Broccoli-GFP; Figure 1—figure supplement 1A) and its binding to taxol-stabilized microtubules was observed using single molecule total internal reflection fluorescence (TIRF) microscopy. Full-length, GFP-tagged tetrameric Ndc80 complex was also examined as a control. Consistent with previous studies (Kudalkar et al., 2015; Powers et al., 2009), individual full-length Ndc80 complexes bound transiently and relatively weakly to microtubules, with a mean residence time of 2.9 ± 0.3 s (Figure 1B and C). Individual Broccoli-GFP dimers bound longer, with a mean residence time of 5.6 ± 0.7 s, roughly twice as long as full-length tetrameric Ndc80-GFP, suggesting that removal of the Spc24/Spc25 end of the complex relieves an auto-inhibitory effect (Figure 1B and C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon of hypothesized model of auto-inhibition of the Ndc80 complex. Red arrow indicates hypothesized regions of intra-complex interactions. Black arrow indicates calponin homology domains on the Ndc80/Nuf2 dimer responsible for microtubule binding. (B) (Left) Representative kymographs of Ndc80 and Broccoli. (Right) Survival probability curves of residence times of the Ndc80 complex (n = 537), Broccoli (n = 315), Broccoli + 60X Spc24/Spc25 (n = 398), Broccoli + 60 x Spc24/Spc25 7K (n = 586) and the Ndc80 complex (repeated), Ndc80-MIND (n = 279), Ndc80-MIND + 10X Spc24/Spc25 (n = 674). (C) Bar graph of average residence times of the data represented in survival probability curves in Figure 1B. Error was calculated using bootstrapping analysis. p-Values were calculated using a two-tailed Student’s t test. Raw data of all residence times are included in Figure 1—source data 1. Additional supplementary data are included in Figure 1—figure supplement 1, Figure 1—figure supplement 2 and Figure 1—figure supplement 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (Left) Representative Superdex 200 16/60 elution profile of Broccoli-GFP, normalized to highest peak. Green bar shows SEC fractions collected. Dotted black line shows elution profile of gel filtration column standards, labeled with protein and size in kilodaltons. (Right) Coomassie blue-stained gel showing Broccoli-GFP. (B) (Left) Bar graph of average residence times of the Ndc80 complex (n = 414), Ndc80 complex +100X Spc24/Spc25 (n = 370) and Ndc80 complex +500X Spc24/Spc25 (n = 472). Error was calculated using bootstrapping analysis. Raw data of all residence times are included in Figure 1—figure supplement 1—source data 1. (Right) Survival probability curves of the data represented in the bar graph to left. (C) (Left) Representative Superdex 200 16/60 elution profiles of Spc24/Spc25 and Spc24/Spc25 7K, normalized to highest peak. Red and purple bar shows SEC fractions collected. Dotted black line shows elution profile of gel filtration column standards, labeled with protein and size in kilodaltons. (Right) Coomassie blue-stained gels showing Spc24/Spc25 and Spc24/Spc25 7K. (D) (Top) Mutations made for Spc24/Spc25 7K shown as lilac space-filling models at position of corresponding amino acid on the structure of the budding yeast Spc24/Spc25 dimer (DOI: 10.2210/pdb5TCS/pdb). (Bottom) Primary sequence of budding yeast Spc25 from amino acid 151 to 190 with residues in red indicating those mutated to lysine. (E). Multiple sequence alignment of Spc25 generated using EMBL-EBI MUSCLE. S. cerevisiae Spc25 primary amino acid sequence shown from 147 to 198, with alignments below. Red bars and amino acid number indicate subset of acidic residues mutated to lysine in D that are highly conserved between organisms. “*” indicates positions with fully conserved residue. “:” indicates conservation between groups of strongly similar properties. “.” indicates conservation between groups with weakly similar properties.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative kymographs of each condition measured in Figure 1B,C. Brightness and contrast have been adjusted separately for each image for best visualization.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Coomassie blue-stained gel showing Spc24/Spc25 V159D. (B) Representative Superose 6 increase 3.2/300 elution profile of Spc24/Spc25, Spc24/Spc25 V159D, MIND, MIND +Spc24/Spc25 and MIND +Spc24/Spc25 V159D dimer (both mixed in 1:1 molar ratios), all normalized to highest peak. (C) Representative kymograph of Ndc80-MIND + 10X Spc24/Spc25 V159D dimer. (D) (Left) Survival probability curves of residence times for Ndc80-MIND (technical replicate of data in Figure 1B, n = 267) (yellow trace) and Ndc80-MIND + 10X Spc24/Spc25 V159D (n = 278) (green trace). (Right) Bar graph of average residence times of the data at left. Error was calculated using bootstrapping analysis. Raw data of all residence times are included in Figure 1—figure supplement 3 source data.
 
 We reasoned that if the Spc24/Spc25 end is responsible for auto-inhibition within the full-length complex, then free Spc24/Spc25 dimer added in trans might be sufficient to inhibit microtubule binding. Indeed, when free Spc24/Spc25 dimer was purified (Figure 1—figure supplement 1C) and added in sixtyfold excess to Broccoli-GFP, the mean residence time of Broccoli-GFP on microtubules was reduced to 3.3 ± 0.4 s, which is statistically indistinguishable (p=0.4) from the residence time of full-length Ndc80 complex alone. Adding MIND-GFP to full-length Ndc80 complex increased its residence time on microtubules more than threefold, from 2.9 ± 0.3 s to 9.8 ± 1.1 s (Figure 1B and C), consistent with previous measurements (Kudalkar et al., 2015). This MIND-dependent increase was almost completely abolished by addition of a tenfold excess of Spc24/Spc25 dimer, which brought the residence time for the Ndc80-MIND-GFP co-complex down to 4.1 ± 0.5 s (Figure 1B and C), similar to that of full-length tetrameric Ndc80 alone. Likewise, a mutant Spc24/Spc25 dimer that is unable to associate with MIND (Malvezzi et al., 2013), when added in tenfold excess, also sharply reduced the residence time of the Ndc80-MIND-GFP co-complex, down to 4.2 ± 0.5 s (Figure 1—figure supplement 3). This observation indicates that the excess Spc24/Spc25 dimer interacts directly with the Ndc80 complex for inhibition, rather than competing away MIND.
 
 We also tested whether full-length Ndc80 complex without MIND could be further inhibited by excess free Spc24/Spc25 dimer. For this test, we increased the dynamic range of our measurements by replacing our standard BRB80 buffer with BRB60, which lowers the concentration of cations and thereby raises the mean residence time for full-length Ndc80 complex up to 5.7 ± 0.7 s (Figure 1—figure supplement 1B). Addition of free Spc24/Spc25 dimer under these conditions decreased the mean residence time of Ndc80-GFP complex in a concentration-dependent manner (Figure 1—figure supplement 1B). Free Spc24/Spc25 dimer does not detectably bind microtubules by itself (Wei et al., 2007). Altogether, our observations show that the Spc24/Spc25 dimer can interact with Ndc80/Nuf2 independently of the tetramerization domain, and that this secondary interaction is sufficient to inhibit the microtubule binding of Ndc80/Nuf2, of the full-length Ndc80 complex, and of the MIND-Ndc80 co-complex.
 
-## Acidic residues in Spc25 are important for auto-inhibition
+### Acidic residues in Spc25 are important for auto-inhibition
 
 Electrostatic interactions are crucial for binding of the Ndc80 complex to microtubules. Basic residues located on the globular (calponin homology) domains of the Ndc80 and Nuf2 subunits have been shown to interact with acidic patches on the surface of the microtubule to enable microtubule binding (Ciferri et al., 2008). Additionally, charge-charge interactions between the N-terminal ‘tail’ of Ndc80 and the microtubule lattice tune this microtubule binding through phosphorylation (Zaytsev et al., 2015; Zaytsev et al., 2014). Considering the central role of electrostatic interactions in microtubule-binding of the Ndc80 complex, we hypothesized that similar electrostatic effects might also contribute to the intra-complex interactions underlying its auto-inhibition. Sequence alignment revealed three acidic residues located on one face of the Spc25 subunit that are highly conserved, suggesting functional importance (Figure 1—figure supplement 1E). To probe whether negative charges on this face of Spc25 contribute to inhibitory interactions, we mutated a total of seven acidic residues – including the three identified by sequence conservation plus four others located nearby on the same face – to lysine residues. We then purified a charge-reversal mutant dimer of Spc24/Spc25 carrying the lysine substitutions (hereafter referred to as Spc24/Spc25-7K) (Figure 1—figure supplement 1C and D). When added in sixtyfold excess, Spc24/Spc25-7K failed to detectably inhibit the microtubule-binding activity of Broccoli-GFP (mean residence time of 6.9 ± 0.6 s with versus 5.6 ± 0.7 s without the addition Spc24/Spc25-7K; p=0.16), in contrast to the wild-type Spc24/Spc25 dimer (3.3 ± 0.4 s with versus 5.6 ± 0.7 s without; p=0.006) (Figure 1B and C). While a full-length, tetrameric Ndc80 complex carrying the 7K charge-reversal mutations could not be purified (see Materials and methods), the normal microtubule-binding activity of the Ndc80 complex in the presence of a large excess of Spc24/Spc25-7K dimer nevertheless suggests that electrostatic interactions play an important role in auto-inhibition of the complex.
 
-## The Ndc80 complex can bend tightly
+### The Ndc80 complex can bend tightly
 
 Electron micrographs of purified, negatively stained samples of Ndc80 complex show that the coiled-coil can adopt a variety of conformations, with a tendency to bend at or near the ‘loop,’ an unstructured region of 50–60 residues within the Ndc80 protein (Wang et al., 2008; Zhang et al., 2012). Genetic evidence suggests the complex must bend tightly to function properly in vivo (Tien et al., 2014), but the propensity of the complex for tight bending has not been directly examined. To monitor bending of the Ndc80 complex, we used Förster resonance energy transfer (FRET). We first created plasmids encoding a cysteine-free version of the complex by mutating all eight of its native cysteine codons to serine codons. Then two new cysteines were introduced, replacing native surface-exposed serines at either end of the complex, near the N-terminus of Nuf2 (S2C) and on the RWD domain of Spc25 (S154C) (Figure 2A and B). Sequential labeling with cysteine-reactive dyes during purification created a homogenous population of complexes, each with a Cy3 dye on the Spc24/Spc25 end and a Cy5 dye on the Ndc80/Nuf2 end, which bound to microtubules with an affinity similar to that of Ndc80-GFP (Figure 2C, and Figure 2—figure supplement 1A, B and C). At these locations, the two dyes should not come into close enough proximity for FRET (i.e. less than 10 nm apart) unless the complex adopts a tightly bent configuration (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig2-v2.jpg)
+
+**Figure 2.:** (A) List of mutations made in the wild type Ndc80 complex to generate cysteine-light construct. (B) Model of the Ndc80 complex using the dwarf tetramer structure (DOI: 10.2210/pdb5TCS/pdb) plus inserted coiled coil between the tetramerization domain and globular domain of each dimer. Break in coiled coil indicates estimated location of Ndc80 loop, indicated by black arrow. Colored balls on each globular domain of the model indicate location of the cysteine residues (Nuf2 S2C, Spc25 S154C) used for dual end-labeling. (C) (Left) Survival probability curves of residence times for Ndc80-GFP (data repeated from Figure 1B) (black trace) and end-labeled Cy5-Ndc80-Cy3 (n = 1375) (pink trace). (Right) Bar graph of average residence times of the data at left. Error was calculated using bootstrapping analysis. p-Value was calculated using a two-tailed Student’s t test. Raw data of all residence times are included in Figure 2—source data 1. (D) Cartoon of approximate dye locations on the Ndc80 complex illustrating that in a more open conformation (Top), FRET would not occur. In a tightly bent conformation (Bottom), the dyes would be in close proximity and exhibit FRET. (E) Bulk FRET spectra of positive control double-stranded, dually-labeled oligonucleotide, negative control single-stranded singly-labeled oligonucleotides or end-labeled Ndc80 complex Nuf2 S2C Spc25 S154C. Displayed is the emission spectra of each construct from 560 nm to 730 nm under 550 nm (Cy3, donor) excitation. Dem and Aem denote the emission peaks of the donor (Cy3) and acceptor (Cy5). Values in parentheses indicate calculated relative FRET efficiency. Additional supplementary data are included in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of sequential end-labeling procotol for the Ndc80 complex used in bulk FRET assay. (B) (Left) Coomassie blue-stained gel showing end-labeled Ndc80 complex used in bulk FRET assay (SEC fraction shown as gray bar in elution profile to the right). Sequential overnight incubation with dyes leads to greater complex degradation, especially of the N-terminal tail on the Ndc80 protein, as seen in gel. (Right) Representative Superdex 200 16/60 elution profiles of end-labeled Ndc80 complex (Nuf2 S2C, Spc25 S154C) (black trace) used in bulk FRET assay normalized to highest peak. Gray bar shows SEC fractions collected. (C) Representative kymographs of Ndc80-GFP (black box) and Cy5-Ndc80-Cy3 (pink box).
+
 To test for tight bending of the Ndc80 complex in solution, we began by measuring the end-labeled complex in a bulk FRET assay (Figure 2E). For comparison, we also examined positive and negative controls made from two single-stranded DNA oligonucleotides labeled with Cy3 and Cy5. For the positive control, the labeled oligos were annealed to a target strand, creating a double-stranded DNA assembly with the dyes held in close proximity (Friedman et al., 2006). For the negative control, the same oligos were mixed together without the target strand. Fluorescence emission spectra were measured for the three samples and FRET efficiency was estimated from the peak donor and acceptor intensities (at 565 and 670 nm, respectively; see Materials and methods). The end-labeled Ndc80 complex exhibited a FRET efficiency of 0.29 (Figure 2E), a value intermediate between the positive and negative controls (0.53 and 0.10, respectively). This observation indicates that in solution, the Ndc80 complex can adopt a tightly bent conformation, which brings its two ends into close proximity.
 
-## The Ndc80 complex fluctuates between tightly bent and more open conformations
+### The Ndc80 complex fluctuates between tightly bent and more open conformations
 
 Simple bulk fluorescence measurements cannot distinguish between a single population of Ndc80 complexes exhibiting moderate FRET or a mixture of complexes including both low- and high-FRET subpopulations, nor can they provide information about dynamics of the underlying conformational changes. We therefore turned to single molecule FRET to examine bending of individual complexes. End-labeled Ndc80 complexes (Figure 3—figure supplement 1A and B) were specifically tethered to coverslip surfaces and imaged by multi-color TIRF microscopy (Figure 3A and B). Emission from individual donor (Cy3) and acceptor (Alexa Fluor 647) dyes was measured simultaneously from brief, ~2 s time-lapse recordings during excitation of the donor (i.e. at a wavelength of 561 nm). FRET versus time for each complex was computed from the donor and acceptor signals, ID and IA, after subtracting background levels and correcting for spillover and cross-excitation (See Materials and methods) (Roy et al., 2008; Selvin and Ha, 2008) (Figure 3C). Following each measurement, the acceptor was excited directly (at 641 nm) until it photobleached, to confirm the presence of a single acceptor dye on every analyzed complex (Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig3-v2.jpg)
+
+**Figure 3.:** (A) (Left) Cartoon depicting method of tethering labeled control oligonucleotides to glass coverslip. (Left and middle) Cartoons show the distance in nanometers between FRET pair dyes for positive and negative control oligonucleotides. (Right) Cartoon depicting method of tethering end-labeled Ndc80 complex to coverslip via lipid bilayer. (B) Fluorescence image showing coverslip decorated with end-labeled Ndc80 Nuf2 S2C Spc25 S154C complexes. Zoom-in shows two Ndc80 complexes with both dyes present. Colors are off-set vertically. (C) (Top) Fluorescence traces for three examples of end-labeled Ndc80 complexes (first two panels, Ndc80 Nuf2 S2C Spc24 N185C, last panel Ndc80 Nuf2 S2C Spc25 S154C) before and after acceptor (Alexa Fluor 647) photobleaching. (Bottom) Corresponding traces of FRET efficiency before and after photobleaching acceptor for each top example. Black dotted line indicates 0.0 FRET efficiency. Gray dotted line indicates threshold (0.30) used for two-state thresholding analysis. (D) Bar graph of switching rates calculated for Ndc80 complex Nuf2 S2C Spc25 S154C from a two-state thresholding analysis. Full data set analyzed is included in Figure 3—source data 1. (E) Histograms of FRET values for positive oligonucleotide control (n = 2699, 75 particles), Ndc80 Spc25 S154C G177C-positive control (n = 1275, 60 particles), Ndc80 complex Nuf2 S2C Spc25 S154C (n = 2099, 85 particles) and negative oligonucleotide control (n = 3833, 154 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. ‘n’ refers to each 0.1 s FRET measurement for each condition. (F) Histograms of FRET values for Ndc80 complex Nuf2 S2C Spc25 S154C (n = 2099, 85 particles) (repeated from Figure 3E) and Ndc80 complex Nuf2 S2C Spc25 S154C + 100X Spc24/Spc25 (n = 4137, 152 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. ‘n’ refers to each 0.1 s FRET measurement for each condition. (G) Bar graph of the percentage of FRET values above two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. Error calculated as standard error of the mean of day to day variability of percentage above two standard deviations. The corrected FRET values included in each FRET efficiency histogram are included in Figure 3—source data 2. Additional supplementary data are included in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of concurrent end-labeling procotol for Ndc80 complex constructs used in single molecule FRET assays. (B) (Left) Coomassie blue-stained gel showing end-labeled Ndc80 complex used in single molecule FRET assay (SEC fraction shown as gray bar in elution profile to the right) (Right) Representative Superdex 200 16/60 elution profile of end-labeled Ndc80 complex (Nuf2 S2C Spc25 S154C), normalized to highest peak. Gray bar shows SEC fractions collected. (C) Example of acceptor bleaching protocol used for the single molecule FRET assay, with Ndc80 Nuf2 S2C Spc25 S154C exhibiting FRET. After an initial period of donor excitation (light blue box), where direct FRET measurements are gathered, the acceptor is directly excited at the same power as the donor excitation, and then increased to a higher power to bleach (pink box). Finally, the donor is re-excited. Blue line indicates brightness trace of donor, Cy3. Pink line indicates brightness trace of acceptor, Alexa Fluor 647. (D) Cumulative probability curves for positive oligonucleotide control, Ndc80 complex Nuf2 S2C Spc25 S154C and negative oligonucleotide control of ratio of post acceptor beach fluorescence over pre-acceptor bleach fluorescence. Fluorescence values used to calculate ratio are averages of all Cy3 fluorescence values under direct excitation before and after acceptor bleaching. Raw data included in survival probability curves in shown in Figure 3—figure supplement 1—source data 1. (E) Crystal structure of yeast Spc24/Spc25 dimer (DOI: 10.2210/pdb5TCS/pdb). Space-filling model of residues Spc25 154 and Spc25 177 illustrate locations of cysteine mutations made for Ndc80 complex positive control. Dotted lines shows distance in nanometers between the two residues. (F) (Top) Fluorescence traces of one representative example of a positive oligonucleotide control, negative oligonucleotide control, Ndc80 complex positive control (Ndc80 Spc25 S154C G177C) and Ndc80 complex +100X Spc24/Spc25 before and after photobleaching acceptor (Alexa Fluor 647). (Bottom) Corresponding traces of FRET efficiency before and after photobleaching acceptor for each top example.
+
 Donor and acceptor signals recorded from individual end-labeled Ndc80 complexes were anti-correlated; their FRET levels fluctuated between low values around zero and higher values approaching unity (Figure 3C). The distribution of FRET levels was broad, with a large fraction (25%) of high-FRET values more than two standard deviations above the mean of the no-FRET population (Figure 3E). In contrast, FRET from positive and negative control oligos was more stable, with only small deviations from unity and zero, respectively (Figure 3E and Figure 3—figure supplement 1D and F). Likewise, FRET from a positive control Ndc80 complex, which carried donor and acceptor dyes close together on the same face of Spc25 (Figure 3—figure supplement 1E), remained stably high (Figure 3—figure supplement 1F). Based on a simple two-state threshold-crossing analysis, switching of the end-labeled Ndc80 complexes from low to high FRET occurred at a rate of kclosing = 0.23 ± 0.024 s−1. Switching from high to low FRET was about fourfold faster, occurring at a rate of kopening = 0.96 ± 0.094 s−1 (Figure 3D). The high-FRET fluctuations were eliminated when intra-complex interactions were competitively inhibited by adding a hundredfold excess of free Spc24/Spc25 (Figure 3F and G). Altogether, these single molecule observations confirm that the Ndc80 complex can adopt a tightly bent conformation, with both ends interacting closely together, in agreement with our bulk measurements, and they show that the complex fluctuates dynamically between tightly bent and more open conformations.
 
-## The loop region of Ndc80 contributes to tight bending of the complex
+### The loop region of Ndc80 contributes to tight bending of the complex
 
 A flexible region of 50–60 residues within the Ndc80 protein interrupts the coiled-coil of Ndc80/Nuf2 to form a loop (Ciferri et al., 2005), which has been implicated in flexibility of the Ndc80 complex (Wang et al., 2008) and might serve as a binding site for other proteins (Maure et al., 2011). To determine whether this region also contributes to tight bending, we measured FRET levels for a mutant Ndc80 ∆490–510 complex lacking part of the loop (Figure 4A and B). In budding yeast cells, this partial loop deletion confers temperature sensitivity (Maure et al., 2011), indicating functional importance. FRET levels from purified individual Ndc80 ∆490–510 complexes were relatively low. The percentage of high-FRET values was only 5.6%, which is fourfold less than the percentage measured from wild-type complexes (Figure 4C and D), indicative of a more open form of the Ndc80 complex. According to our model, a more open conformation of the complex should bind microtubules better. Indeed, Ndc80 ∆490–510 exhibited a longer residence time on microtubules than full-length wild type complex (3.1 ± 0.3 s vs. 2.1 ± 0.3 s; Figure 4E and F). These observations confirm that the loop region contributes to tight bending of the Ndc80 complex and suggest that flexibility of the complex directly influences its microtubule binding.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig4-v2.jpg)
+
+**Figure 4.:** (A) (Top) Primary sequence of Ndc80 protein amino acids 460–520. The purple bar highlights the region of the loop deleted for the following experiment. (Bottom) Graph of probability of coiled-coil as predicted by PCOILS of the Ndc80 protein. (B) Coomassie blue-stained gel showing end-labeled Ndc80 Δ490–510 complex used in single molecule FRET assay. (C) (Top) Fluorescence traces of one representative example of an end-labeled Ndc80 complex in Figure 4C before and after photobleaching acceptor (Alexa Fluor 647). (Bottom) Corresponding traces of FRET efficiency before and after acceptor photobleaching for the top example. (D) (Left) Histograms of FRET values for Ndc80 complex Nuf2 S2C Spc25 S154C (n = 2099, 85 particles) (data repeated from Figure 3E and F) and Ndc80 complex Ndc80 Δ490–510 Nuf2 S2C Spc25 S154C (n = 2926,143 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. ‘n’ refers to each 0.1 s FRET measurement for each condition. Zoom in of histograms depicting FRET values over two standard deviations. (Right) Bar graph of the percentage of FRET values above two standard deviations. Error calculated as standard error of the mean of day-to-day variability of percentage above two standard deviations. The corrected FRET values included in each FRET efficiency histogram are included in Figure 4—source data 1. (E) Representative kymographs of Ndc80-GFP and Ndc80 Δ490–510-GFP. Brightness and contrast have been adjusted separately for each image for best visualization. (F) (Left) Survival probability curves of residence times for Ndc80-GFP (n = 570) (black trace) and Ndc80 Δ490–510 (n = 1237) (purple trace). (Right) Bar graph of average residence times of the data at left. Error was calculated using bootstrapping analysis. p-Value was calculated using a two-tailed Student’s t test. Raw data of all residence times are included in Figure 4—source data 1. Additional supplementary data are included in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Model of the Ndc80 complex using the dwarf tetramer structure (DOI: 10.2210/pdb5TCS/pdb) plus inserted coiled coil between the tetramerization domain and globular domain of each dimer. Break in coiled coil indicates estimated location of Ndc80 loop, as indicated by black arrow. Full-length model at top shows main Ndc80 complex construct (Nuf2 S2C, orange balls and Spc25 S154C, red balls) used throughout experiments. Zoomed in cut-outs below show all four cysteine locations used for dye placement, with dotted lines showing all four combinations of Ndc80 complex dye pairs constructed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) (Top) Fluorescence traces for one representative example of each combination of dye pairs for end-labeled Ndc80 complexes before and after photobleaching acceptor (Alexa Fluor 647). (Bottom) Corresponding traces of FRET efficiency before and after photobleaching acceptor for each top example. (B) (Left Top) Histograms of corrected FRET values for Ndc80 complex Nuf2 S2C Spc25 S154C (n = 2099, 85 particles) (data repeated from Figure 3E, Figure 4C, Figure 5D), Ndc80 complex Nuf2 S2C Spc24 N185C (n = 2319, 79 particles), Ndc80 complex Nuf2 Q74C Spc24 N185C (n = 1885, 63 particles) and Ndc80 complex Nuf2 Q74C Spc25 S154C (n = 1941, 72 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. ‘n’ refers to each 0.1 s FRET measurement for each condition. (Left Bottom) Zoom-in of histograms depicting FRET values over two standard deviations. (Right Top) Bar graph of the percentage of FRET values above two standard deviations. Error calculated as standard error of the mean of day-to-day variability of percentage above two standard deviations. The corrected FRET values included in each FRET efficiency histogram are included in Figure 4—figure supplement 2—source data 1. (C) Cartoon depicting locations of all four dye locations on a bent Ndc80 complex. When the dye is located on Nuf2 S2C, regardless of the dye location on the Spc24/Spc25 dimer, the Ndc80 complex exhibits more FRET relative to when the dye location on Nuf2 is Q74C.
+
 We also examined which areas on the globular ends of the Ndc80 complex come close together in the tightly bent conformation by creating an additional three end-labeled Ndc80 complexes. We chose two new sites within the complex to mutate to cysteine residues (Nuf2 Q74C and Spc24 N185C), and along with the two original dye locations (Nuf2 S2C and Spc25 S154C), engineered pairwise combinations, each with one dye on the Ndc80/Nuf2 end and one dye on the Spc24/Spc25 end (Figure 4—figure supplement 1). Retaining one dye at the original location on Nuf2 S2C and moving the other to Spc24 N185C did not significantly change the FRET levels (25 ± 6.6% high-FRET values versus 25 ± 5.2% for the original locations) (Figure 4—figure supplement 2A and B). However, moving the dye from Nuf2 S2C to Nuf2 Q74C, regardless of the dye location on Spc24/Spc25, reduced the fraction of high-FRET values more than twofold (Figure 4—figure supplement 2B and C). These results suggest that, in the tightly bent configuration, the Spc24/Spc25 end of the complex associates closely with one face of the Ndc80/Nuf2 end, near the N-terminus of Nuf2.
 
-## Tight bending of the Ndc80 complex is inhibited by binding to either microtubules or the MIND complex
+### Tight bending of the Ndc80 complex is inhibited by binding to either microtubules or the MIND complex
 
 If tight bending of the Ndc80 complex inhibits microtubule binding, then Ndc80 complexes bound to microtubules should be found primarily in the more open conformation. (I.e. binding to microtubules should ‘select’ for the open complexes.) To test this prediction, we measured FRET levels for individual end-labeled complexes bound to taxol-stabilized microtubules (Figure 5A). As expected, FRET from the microtubule-bound complexes was low, with only a small fraction of high-FRET values, 6.2% (Figure 5B and D). Assuming a simple four-state equilibrium between closed and open configurations (Figure 5E), the high-FRET fractions measured for microtubule-attached (Figure 5D) and ‘free’ Ndc80 complexes (coverslip-tethered, Figures 3D, 4C and 5D) imply that the tightly bent conformation has a sixfold lower affinity for microtubules than the open conformation (see Materials and methods).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig5-v2.jpg)
+
+**Figure 5.:** (A) Fluorescence image of two end-labeled Ndc80 complexes (Nuf2 S2C Spc25 S154C) on Alexa Fluor 488 labeled-microtubules. Colors are off-set vertically. (B) (Top) Fluorescence traces of one representative example of an end-labeled Ndc80 complex in each condition shown in Figure 5D before and after photobleaching acceptor (Alexa Fluor 647). (Bottom) Corresponding traces of FRET efficiency before and after acceptor photobleaching for each top example. (C) Fluorescence image of two end-labeled Ndc80 complexes (Nuf2 S2C Spc25 S154C) next to each other on one coverslip, colocalized with MIND-GFP on the left, but not on the right. Colors are off-set vertically. (D) (Left) Histograms of FRET values for Ndc80 complex Nuf2 S2C Spc25 S154C (n = 2099, 85 particles) (data repeated from Figure 3E, Figure 4C), Ndc80 complex Nuf2 S2C Spc25 S154C on microtubules (n = 1682, 91 particles) and Ndc80 complex Nuf2 S2C Spc25 S154C bound to MIND (n = 718, 41 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonucleotide data. ‘n’ refers to each 0.1 s FRET measurement for each condition. Zoom in of histograms depicting FRET values over two standard deviations. (Right) Bar graph of the percentage of FRET values above two standard deviations. Error calculated as standard error of the mean of day-to-day variability of percentage above two standard deviations. The corrected FRET values included in each FRET efficiency histogram are included in Figure 5—source data 1. (E) Diagram of equilibrium between open and closed conformations of the Ndc80 complex, on and off the microtubule. Estimation of Keq values described in Materials and methods. Additional supplementary data are included in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44489/elife-44489-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (Left) Histograms of corrected FRET values for Ndc80 complex Nuf2 S2C Spc25 S154C (n = 1395, 48 particles), Ndc80 complex Nuf2 S2C Spc25 S154C measured from slides with MIND-GFP, but not associated with MIND (n = 704, 37 particles), and a separate protein and labeling prep of Ndc80 complex Nuf2 S2C Spc25 S154C (n = 3224, 108 particles). Percentage values represent the percentage of FRET values two standard deviations away from the mean of a Gaussian fit to the negative oligonuleotide control. ‘n’ refers to each 0.1 s FRET measurement for each condition. (Right) Bar graph of the percentage of FRET values above two standard deviations. Error calculated as standard error of the mean of day-to-day variability of percentage above two standard deviations. The corrected FRET values included in each FRET efficiency histogram are included in Figure 5—figure supplement 1—source data 1. (B) Coomassie blue-stained gel showing a separate protein and labeling prep of Ndc80 complex Nuf2 S2C Spc25 S154C.
 
 Association of the Ndc80 and MIND complexes together creates a co-complex with enhanced affinity for microtubules relative to Ndc80 complex alone (Kudalkar et al., 2015). Genetic evidence suggests this enhancement might occur because MIND prevents the Ndc80 complex from adopting the tightly bent, auto-inhibited state (Tien et al., 2014; Kudalkar et al., 2015). The Ndc80 complex of C. elegans might also be activated by the Mis12 complex, which is the worm counterpart of MIND (Cheeseman et al., 2006). To test directly whether MIND prevents tight bending, we added free GFP-MIND to the end-labeled Ndc80 complexes (which were tethered sparsely to coverslips, as above). Using three-color TIRF microscopy, the end-labeled Ndc80 complexes that formed co-complexes with MIND were first distinguished from those that did not by assessing co-localization of the GFP signal with both Cy3 and Alexa Fluor 647 dyes (Figure 5C). Then FRET between donor and acceptor dyes on the Ndc80 complexes was measured. With a tenfold excess of free GFP-MIND, 33% of the end-labeled Ndc80 complexes formed co-complexes with MIND. FRET levels from these Ndc80-MIND co-complexes were low, with only 4.9% of values significantly above the no-FRET population (Figure 5B and D). FRET levels from Ndc80 complexes in the same fields of view but lacking MIND-GFP were higher, with a fivefold larger fraction of high-FRET values, 29%, which is statistically indistinguishable from the high-FRET fraction measured for Ndc80 complexes alone, in the absence of GFP-MIND (Figure 5—figure supplement 1A and B). These observations show that association of the Ndc80 complex with MIND inhibits tight bending of the Ndc80 complex.
 
@@ -81,7 +133,171 @@ Some Ndc80 complex is localized to kinetochores independently of the MIND comple
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, E. coli</td>
+      <td>Rosetta (DE3) competent cells</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#70954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td>Bovine brain tubulin</td>
+      <td>lab purification</td>
+      <td></td>
+      <td>Protocol adapted from Castoldi and Popov, 2003.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fluorescently-labeled oligonucleotides</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fluorescently-labeled, biotintylated oligonucleotides</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Penta-HIS biotin conjugate, monoclonal mouse</td>
+      <td>Qiagen</td>
+      <td>Cat#34440</td>
+      <td>Diluted to 20 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 488 succinimidyl ester</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 647 maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 568 succinimidyl ester</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A20003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 maleimide</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>Cat#PA23031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy5 maleimide</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>Cat#PA25031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Trolox</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#238813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Glucose oxidase</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#345386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Catalase</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#219261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>POPC</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#850457</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bio-cap-PE/BioPE</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat#870273</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(cap biotinyl) sodium salt</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Biotinylated bovine serum albumin (BSA)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#B-2007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Avidin DN</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#A-3100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TCEP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#T2556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paclitaxel/Taxol</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#T7402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Labview</td>
+      <td>National Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 All protein complexes were derived from S. cerevisiae but expressed recombinantly in E. coli and purified in essentially two steps, beginning with His6- or FLAG-based immuno-precipitation, followed by size exclusion chromatography. The full, heterotetrameric Ndc80 complexes each carried a single His6 tag on either the N- or C-terminus of Spc24 (i.e. Spc24-His6-tagged or His6-Spc24-tagged complex). Likewise, the heterodimeric subcomplexes (i.e., His6-Spc24/Spc25 and the ‘Broccoli’ construct, His6-Ndc80/Nuf2-GFP) each carried an N-terminal His6 tag on one subunit. Each heterodimeric subcomplex was encoded on a separate, dicistronic vector (petDuet and pRSF, for Ndc80/Nuf2 and Spc24/Spc25, respectively), both of which were co-transfected into BL21 cells for purification of the full, heterotetrameric complexes. For purification of subcomplexes alone, single dicistronic vectors were transfected individually. Expression was induced with 0.2 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) for 14 hr at 20°C, cells were lysed with a French press in buffer H (50 mM HEPES, 200 mM NaCl, pH 7.6) supplemented with protease inhibitors (Roche; Basel, Switzerland), 5 mM imidazole, 0.5 uL benzonase and 1 mM PMSF. The cell lysate was then immuno-precipitated onto a 5 mL Ni-charged IMAC resin column (Bio-Rad; Hercules, CA), washed with buffer H, and eluted with 400 mM imidazole in buffer H. The eluate was loaded onto a Superdex 200 16/60 column (GE Healthcare; Chicago, IL) for size-exclusion chromatography. Fractions containing the complex were identified by UV-absorption and Coomassie blue-stained SDS-PAGE, pooled, and protein concentration was measured using bicinchoninic acid (BCA) (Sigma; St. Louis, MO). We note that three attempts to purify a full-length, heterotetrameric Ndc80 complex carrying the charge-reversal 7K mutations in the Ndc80 protein failed to produce a stable heterotetramer, suggesting that the 7K mutant might destabilize the complex. In contrast, the dimeric 7K Spc24/Spc25 was biochemically well-behaved.
 
@@ -89,17 +305,23 @@ MIND complex carrying an N-terminal FLAG tag on Nsl1 and a C-terminal GFP on Mtw
 
 MIND-GFP/Ndc80 co-complex was prepared by combining two nickel-purified complexes (MIND-GFP and Ndc80) and then performing size-exclusion chromatography. In this case, the MIND complex carried a C-terminal His6 tag on Dsn1 and a C-terminal GFP tag on Mtw1. Expression, lysis, and immuno-purification were performed as described above, using buffer H for Ndc80 and buffer N for MIND. Then the nickel-purified complexes were mixed in a 2.5:1 molar ratio (MIND:Ndc80), incubated for 15 min at room temperature, and purified with a Sepharose 400 size exclusion column using buffer S (50 mM NaPO4, 100 mM NaCl, pH 7.0) (GE Healthcare; Chicago, IL).
 
-## Protein labeling for FRET studies
+### Protein labeling for FRET studies
 
 For bulk FRET measurements, the two heterodimeric subcomplexes of the Ndc80 complex were expressed separately, using the methods described above, from dicistronic vectors that were mutated to remove all eight native cysteines and to add the new cysteines required for site-directed labeling with thiol-reactive dyes. After the ‘cysteine-light’ His6-Spc24/Spc25 subcomplex was bound to nickel resin and washed, it was incubated overnight with ~30 mM Cy3 maleimide (GE Healthcare; Chicago, IL). The resin was then washed again, to remove free Cy3, and added to cleared lysate from cells expressing the (cysteine-light) Ndc80/Nuf2 subcomplex, to allow formation of the full heterotetrameric Ndc80 complex. The resin was then washed and incubated overnight with ~30 mM Cy5 maleimide (GE Healthcare; Chicago, IL). Proteins were eluted with 400 mM imidazole in buffer H and then purified by size exclusion chromatography (using the Superdex 200 column, as described above). Labeling efficiency was estimated to be 1:1 Cy3:Spc45/Spc25 dimer and 0.8:1 Cy5:Ndc80/Nuf2 dimer by calculating protein concentration (using a NanoDrop and BCA assay) and calculating dye molecule concentration (using a NanoDrop).
 
 For single molecule FRET assays, the two cysteine-light heterodimeric subcomplexes were co-expressed together, according to the methods described earlier. After the full heterotetrameric Ndc80 complex was bound to the nickel resin and washed, it was incubated overnight with an equimolar combination of ~15 mM Cy3 maleimide and ~15 mM Alexa Fluor 647 maleimide (Thermo Fisher; Waltham, MA). The complex was eluted with 400 mM imidazole in buffer H and then purified by size exclusion chromatography (Superdex 200). Labeling with both dyes simultaneously during purification decreased the duration of the protocol relative to the bulk FRET protocol (where dyes were added sequentially), thereby avoiding degradation of the N-terminal Ndc80 tail (Figure 3—figure supplement 1A and B). Our labeling protocol was adapted from Joo and Ha (2012).
 
-## Bulk FRET measurement
+### Bulk FRET measurement
 
-Dye-labeled oligonucleotides were purchased (from IDT; Coralville, IA) with the sequences 5’-GCTATGACCATGATATAC-Cy5-3’ and 5’-Cy3-AGCGCGCAATTAACCC-3’ (Tsuji et al., 2001). To create a positive control, the dye-labeled oligos were annealed in buffer T (10 mM TRIS buffer pH 7.5, 50 mM NaCl) onto a complementary unlabeled target strand, 5’-GGGTTAATTGCGCGCTTGGCGTAATCATGGTCATAGC-3’, by mixing 10 uM of the target strand with 5 uM each of the single-stranded, labeled oligonucleotides, heating at 95˚C for 2 min, and then allowing the mixture to cool to room temperature for 1 hr. For the negative control, the two labeled oligos were mixed together without the target strand. To determine bulk FRET levels, oligo controls or end-labeled Ndc80 complexes were diluted to 0.25 uM in buffer H and fluorescence emission spectra were measured from 560 to 730 nm in a spectrofluorometer (Spex Fluorolog-3, Horiba Jobin Yvon; Edison, NJ), under 550 nm excitation and using a 2 nm bandwidth. Relative FRET efficiency, EFRET, was calculated using the equation,EFRET=IAIA+IDwhere ID and IA represent the background-subtracted intensities of donor (Cy3) and acceptor (Cy5) dyes, measured at their peak emission wavelengths (565 and 670 nm, respectively).
+Dye-labeled oligonucleotides were purchased (from IDT; Coralville, IA) with the sequences 5’-GCTATGACCATGATATAC-Cy5-3’ and 5’-Cy3-AGCGCGCAATTAACCC-3’ (Tsuji et al., 2001). To create a positive control, the dye-labeled oligos were annealed in buffer T (10 mM TRIS buffer pH 7.5, 50 mM NaCl) onto a complementary unlabeled target strand, 5’-GGGTTAATTGCGCGCTTGGCGTAATCATGGTCATAGC-3’, by mixing 10 uM of the target strand with 5 uM each of the single-stranded, labeled oligonucleotides, heating at 95˚C for 2 min, and then allowing the mixture to cool to room temperature for 1 hr. For the negative control, the two labeled oligos were mixed together without the target strand. To determine bulk FRET levels, oligo controls or end-labeled Ndc80 complexes were diluted to 0.25 uM in buffer H and fluorescence emission spectra were measured from 560 to 730 nm in a spectrofluorometer (Spex Fluorolog-3, Horiba Jobin Yvon; Edison, NJ), under 550 nm excitation and using a 2 nm bandwidth. Relative FRET efficiency, EFRET, was calculated using the equation,
 
-## Preparation of oligo controls and flow channel setup for single molecule FRET
+$$
+E_{FRET}=\frac{I_{A}}{I_{A}+I_{D}}
+$$
+
+where ID and IA represent the background-subtracted intensities of donor (Cy3) and acceptor (Cy5) dyes, measured at their peak emission wavelengths (565 and 670 nm, respectively).
+
+### Preparation of oligo controls and flow channel setup for single molecule FRET
 
 For tethering onto streptavidin-coated coverslip surfaces, a biotinylated oligonucleotide target strand was purchased with the sequence, 5’-Biotin-GGGTTAATTGCGCGCTTGGCAAAAGTATCATGGTCATAGC-3’. The positive control was created in this case with two additional dye-labeled oligos, purchased with the sequences 5’-GCTATGACCATGATATAC-AF647-3’ and 5’-Cy3-AGCGCGCAATTAACCC-3’. When both of these are annealed to the target strand, the donor and acceptor dyes (Cy3 and Alexa Fluor 647, respectively) are held in very close proximity (<10 nm). For the negative control, the same two oligos were ordered but with the dyes moved to opposite ends, 5’-AF647-GCTATGACCATGATATAC-3’ and 5’-AGCGCGCAATTAACCC-Cy3-3’. When both of these are annealed to the target strand, the two dyes are held far apart (>10 nm). Annealing was performed in buffer T using the same method described above for bulk FRET. Alexa Fluor 647 was used as the acceptor dye for all single molecule FRET measurements (i.e. on oligonucleotide controls as well as on the Ndc80 complexes) because of its greater photostability compared to Cy5.
 
@@ -111,34 +333,62 @@ To observe surface-tethered Ndc80 complexes in co-complex with GFP-MIND, the end
 
 To observe FRET from individual Ndc80 complexes on microtubules, Alexa Fluor 488-labeled, taxol-stabilized microtubules were tethered to coverslips, as previously described (Powers et al., 2009). The end-labeled Ndc80 complex was diluted in BRB60 buffer (60 mM piperazine-N,N′-bis(2- ethanesulfonic acid), pH 6.9, 1 mM MgCl2, 1 mM EGTA), introduced and allowed to bind the tethered microtubules for 1 min before imaging. We used BRB60 rather than BRB80 for this experiment, because the reduction in ionic strength increases the residence time and slows the diffusion of the Ndc80 complexes on the microtubules (Powers et al., 2009), thereby facilitating collection of longer-duration records of fluorescence intensity from individual complexes.
 
-## Single molecule FRET microscopy
+### Single molecule FRET microscopy
 
 All samples were imaged in a custom TIRF microscope, with three cameras that simultaneously recorded images in green (500 to 550 nm wavelengths), yellow (575 to 625 nm), and red (660 to 740 nm) color-bands, as described in detail in Deng and Asbury (2017). In the following description of methods, we refer to each camera by the central wavelength of its color-band: 525 nm for green, 600 nm for yellow and 700 nm for red. Each prepared slide had up to three flow channels with different experimental conditions. One of the flow channels, containing all assembly reagents but lacking labeled oligonucleotides or protein, was always included as a check for background fluorescence. Movies lasting 30 or 40 s were recorded at 10 frames per second, with roughly 50 to 150 particles imaged per field of view, while the sample was illuminated in four distinct intervals: (i) first FRET was measured by exciting the donor (Cy3) and acceptor dyes (AF647) with 561 nm laser illumination (at a nominal power of 25 mW), (ii) then the acceptor dyes (AF647) were directly excited with 641 nm illumination (at 25 mW), (iii) then the 641 nm illumination power was increased (to 100 mW) in order to photobleach the acceptor dyes, and (iv) finally the donor dyes were measured alone with (25 mW) 561 nm illumination. This illumination sequence, which is shown in Figure 3—figure supplement 1C, allowed verification that both donor and acceptor dyes were present on every molecule analyzed, that donor fluorescence was enhanced after acceptor photobleaching, and that the correction of acceptor signals for cross-excitation and spillover was accurate. (The method of correcting for cross-excitation and spillover is described below.) For some experiments, an additional brief 488 nm laser illumination was added at the beginning and end of the sequence to record fluorescence from GFP-MIND or from Alexa Fluor 488-labeled microtubules.
 
-## Single molecule FRET analysis
+### Single molecule FRET analysis
 
 Analysis was done using custom, semi-automated software written in Labview (National Instruments; Austin, TX) and Igor Pro (Wavemetrics; Lake Oswego, OR). Source code is available upon request. For each movie (corresponding to a single field of view), the first 10 frames from each camera were averaged to create initial static images (at emission wavelengths around 525 nm, 600 nm, and 700 nm) that were used to identify the properly labeled Ndc80 complexes carrying both donor and acceptor dyes, according to a previously described method (Deng and Asbury, 2017). (Because of the method of labeling concurrently with both dyes, the Ndc80 complexes used for single molecule FRET experiments were a mixture of those with one or two donor dyes, one or two acceptor dyes, or one of each at either cysteine residue location.) Records of fluorescence versus time from each camera over the entire duration of the movie were generated by integration of the intensities within 7 × 7 pixel regions of interest centered on the particles. For analysis of Ndc80 complexes in co-complex with GFP-MIND, the three-color particles carrying an end-labeled Ndc80 complex (with both Cy3 and AF647) that colocalized with a GFP-MIND were identified and distinguished from the two-color particles consisting of end-labeled Ndc80 complex alone. For analysis of FRET exhibited by Ndc80 complexes attached to microtubules, only non-diffusing, two-color Ndc80 complex particles that remained bound to the microtubules over the entire duration of the movie were included.
 
 Before the calculation of FRET levels, raw records of fluorescence versus time were first corrected for background, spillover, and cross-excitation. Background was measured on a slide-to-slide basis and subtracted from the corresponding records.
 
-## Estimation of spillover
+#### Estimation of spillover
 
-While most of the fluorescence emission from the donor Cy3 dyes fell onto our 600 nm camera, their spectrum is broad enough that a fraction of their emission ‘spilled over’ onto the 700 nm camera. To quantify this spillover effect, we imaged single oligonucleotides labeled with Cy3 alone (under 561 nm excitation) and measured the ratio of their emission at 700 nm divided by their emission at 600 nm,S=I561700I561600where S represents the spillover ratio, I561700 represents the intensity measured at 700 nm emission under 561 nm excitation, and I561600 represents the intensity measured at 600 nm emission under 561 nm excitation. For Cy3 molecules in our microscope, S = 0.13 ± 0.01 (mean ± S.D. from N = 63 molecules).
+While most of the fluorescence emission from the donor Cy3 dyes fell onto our 600 nm camera, their spectrum is broad enough that a fraction of their emission ‘spilled over’ onto the 700 nm camera. To quantify this spillover effect, we imaged single oligonucleotides labeled with Cy3 alone (under 561 nm excitation) and measured the ratio of their emission at 700 nm divided by their emission at 600 nm,
 
-## Estimation of cross-excitation
+$$
+S=\frac{I_{561}^{700}}{I_{561}^{600}}
+$$
 
-The 561 nm laser excitation used during our single molecule FRET measurements is near the peak absorption for the donor Cy3 dyes. While this wavelength is considerably shorter than the peak absorption for the acceptor AF647 dyes, it nevertheless directly excites some fluorescence in AF647. To quantify this ‘cross-excitation’ effect, we imaged single oligonucleotides labeled with AF647 alone and measured the ratio of their emission (at 700 nm) when cross-excited at 561 nm divided by their emission (again at 700 nm) when excited with nominally identical power at 641 nm,X=I561700I641700where X is the cross-excitation ratio, I561700 is the intensity measured at 700 nm emission under 561 nm excitation, and I641700 is the intensity measured at 700 nm emission under 641 nm excitation. For AF647 molecules in our microscope, X = 0.37 ± 0.07 (mean ± sdev from N = 46 molecules).
+where S represents the spillover ratio, $I_{561}^{700}$ represents the intensity measured at 700 nm emission under 561 nm excitation, and $I_{561}^{600}$ represents the intensity measured at 600 nm emission under 561 nm excitation. For Cy3 molecules in our microscope, S = 0.13 ± 0.01 (mean ± S.D. from N = 63 molecules).
 
-## Correction for spillover and cross-excitation
+#### Estimation of cross-excitation
 
-For FRET measurements with the end-labeled Ndc80 complexes or oligonucleotide controls, intensity versus time at emission wavelengths around 600 nm and 700 nm was measured initially with 561-nm laser illumination (at a nominal power of 25 mW), which after background subtraction yielded records of donor and acceptor emission versus time, ID(t) and IA*(t), respectively. Illumination was then switched to 641 nm (at 25 mW) to measure acceptor intensities at 700 nm emission under direct excitation, I641700. After photobleaching the acceptors (with 100 mW at 641 nm), the illumination was switched back to 561 nm (at 25 mW) to measure intensities of the donors alone at 600 nm emission, I561600. Each record of acceptor emission was then corrected for spillover and cross-excitation using the equation,IA(t)=IA*(t)-  S ∙ I561600 -  X ∙ I641700where IA(t) represents the corrected acceptor emission versus time.
+The 561 nm laser excitation used during our single molecule FRET measurements is near the peak absorption for the donor Cy3 dyes. While this wavelength is considerably shorter than the peak absorption for the acceptor AF647 dyes, it nevertheless directly excites some fluorescence in AF647. To quantify this ‘cross-excitation’ effect, we imaged single oligonucleotides labeled with AF647 alone and measured the ratio of their emission (at 700 nm) when cross-excited at 561 nm divided by their emission (again at 700 nm) when excited with nominally identical power at 641 nm,
 
-## FRET calculation
+$$
+X=\frac{I_{561}^{700}}{I_{641}^{700}}
+$$
 
-Single molecule FRET efficiency versus time, EFRET(t), was calculated using the equation,EFRET(t)=IA(t)IA(t)+ID(t)
+where X is the cross-excitation ratio, $I_{561}^{700}$ is the intensity measured at 700 nm emission under 561 nm excitation, and $I_{641}^{700}$ is the intensity measured at 700 nm emission under 641 nm excitation. For AF647 molecules in our microscope, X = 0.37 ± 0.07 (mean ± sdev from N = 46 molecules).
 
-Histograms of FRET efficiency were generated using concatenated EFRET(t) records from at least 41 individual molecules. The no-FRET peak of the histogram generated from negative control molecules was fit with a Gaussian function to determine a threshold two standard deviations above the center of the Gaussian. Values above this threshold (0.30) were considered high-FRET. To examine the kinetics of switching between no- and high-FRET states, the numbers of upward and downward threshold-crossings in FRET records from 207 individual Ndc80 complexes were counted and the total times spent above and below the threshold were summed. An estimated rate of ‘opening’, kopening, was determined from the total number of downward crossings divided by the total time spent above the threshold. Likewise, an estimated rate of ‘closing’, kclosing, was determined from the total number of upward crossings divided by the total time spent below the threshold.
+#### Correction for spillover and cross-excitation
 
-## Estimating how tight bending affects the affinity of Ndc80 complex for microtubules
+For FRET measurements with the end-labeled Ndc80 complexes or oligonucleotide controls, intensity versus time at emission wavelengths around 600 nm and 700 nm was measured initially with 561-nm laser illumination (at a nominal power of 25 mW), which after background subtraction yielded records of donor and acceptor emission versus time, $I_{D}(t)$ and $I_{A}^{*}(t)$, respectively. Illumination was then switched to 641 nm (at 25 mW) to measure acceptor intensities at 700 nm emission under direct excitation, $I_{641}^{700}$. After photobleaching the acceptors (with 100 mW at 641 nm), the illumination was switched back to 561 nm (at 25 mW) to measure intensities of the donors alone at 600 nm emission, $I_{561}^{600}$. Each record of acceptor emission was then corrected for spillover and cross-excitation using the equation,
 
-We envision a four-state reaction scheme in which the closed (tightly bent) and open conformations of the Ndc80 complex are in equilibrium with each other, both on and off the microtubule, as depicted in Figure 5E. In order to satisfy the principle of microscopic reversibility, the following relation must hold,Kdclosed=KdopenKeqboundKeqfreewhere Kdclosed and Kdopen are the equilibrium constants for dissociation from the microtubule by the closed and open conformations, respectively, and where Keqbound and Keqfree are equilibrium constants for opening (straightening) of the Ndc80 complex when it is microtubule-bound and free, respectively. Our observation that 6% of microtubule-attached Ndc80 complexes exhibit high FRET implies that Keqbound≅19. Our observation that 25% of Ndc80 complexes alone exhibit high FRET suggests that Keqfree≅3. (Here, we assume that tethering to the coverslip does not alter the energetics of the opening-closing transition.) Inserting these values into the above equation indicates that Kdclosed≅6⋅Kdopen, implying a sixfold weaker affinity for microtubules when the Ndc80 complex is tightly bent.
+$$
+I_{A}(t)=I_{A}^{*}(t)-S∙I_{561}^{600}-X∙I_{641}^{700}
+$$
+
+where $I_{A}(t)$ represents the corrected acceptor emission versus time.
+
+#### FRET calculation
+
+Single molecule FRET efficiency versus time, $E_{FRET}(t)$, was calculated using the equation,
+
+$$
+E_{FRET}(t)=\frac{I_{A}(t)}{I_{A}(t)+I_{D}(t)}
+$$
+
+Histograms of FRET efficiency were generated using concatenated $E_{FRET}(t)$ records from at least 41 individual molecules. The no-FRET peak of the histogram generated from negative control molecules was fit with a Gaussian function to determine a threshold two standard deviations above the center of the Gaussian. Values above this threshold (0.30) were considered high-FRET. To examine the kinetics of switching between no- and high-FRET states, the numbers of upward and downward threshold-crossings in FRET records from 207 individual Ndc80 complexes were counted and the total times spent above and below the threshold were summed. An estimated rate of ‘opening’, kopening, was determined from the total number of downward crossings divided by the total time spent above the threshold. Likewise, an estimated rate of ‘closing’, kclosing, was determined from the total number of upward crossings divided by the total time spent below the threshold.
+
+### Estimating how tight bending affects the affinity of Ndc80 complex for microtubules
+
+We envision a four-state reaction scheme in which the closed (tightly bent) and open conformations of the Ndc80 complex are in equilibrium with each other, both on and off the microtubule, as depicted in Figure 5E. In order to satisfy the principle of microscopic reversibility, the following relation must hold,
+
+$$
+K_{d}^{closed}=K_{d}^{open}\frac{K_{eq}^{bound}}{K_{eq}^{free}}
+$$
+
+where $K_{d}^{closed}$ and $K_{d}^{open}$ are the equilibrium constants for dissociation from the microtubule by the closed and open conformations, respectively, and where $K_{eq}^{bound}$ and $K_{eq}^{free}$ are equilibrium constants for opening (straightening) of the Ndc80 complex when it is microtubule-bound and free, respectively. Our observation that 6% of microtubule-attached Ndc80 complexes exhibit high FRET implies that $K_{eq}^{bound}≅19$. Our observation that 25% of Ndc80 complexes alone exhibit high FRET suggests that $K_{eq}^{free}≅3$. (Here, we assume that tethering to the coverslip does not alter the energetics of the opening-closing transition.) Inserting these values into the above equation indicates that $K_{d}^{closed}≅6⋅K_{d}^{open}$, implying a sixfold weaker affinity for microtubules when the Ndc80 complex is tightly bent.

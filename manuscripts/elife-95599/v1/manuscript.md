@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Psychology, University of Chicago Chicago United States
+1. Department of Psychology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -32,7 +32,7 @@ Thus, we designed an experiment in which we entrained dynamically ‘pulsing’ 
 
 ## Results
 
-## Entrainment to cardiac systole facilitates visual dominance
+### Entrainment to cardiac systole facilitates visual dominance
 
 In the rivalry task, subject-wise mean dominance durations were 0.108 s (95% confidence interval [CI]: [0.030, 0.29]) longer for stimuli pulsing in-phase with cardiac systole than those anti-phase to systole (i.e. in diastole). These paired differences are visualized in Figure 2, and are also shown separately for stimuli presented to the left (M = 0.078, 95% CI: [−0.093, 0.395]) and the right (M = 0.156, 95% CI: [0.050, 0.268]) eyes, for readers who wish to assess for effects of baseline ocular dominance.
 
@@ -42,7 +42,7 @@ In the rivalry task, subject-wise mean dominance durations were 0.108 s (95% con
 
 Our estimated gamma generalized linear model (GLM) had a positive coefficient for the effect of synchronizing to cardiac systole (beta = 0.026, 95% CI: [0.002, 0.050]), which was statistically significant (Z = 2.157, p = 0.031). The value of this coefficient can be interpreted to mean that we estimate a 2.64% increase (95% CI: [0.24, 5.09]) in dominance duration for systole-entrained over diastole-entrained stimuli, on average.
 
-## Cardiac facilitation of dominance does not depend on awareness of heartbeat
+### Cardiac facilitation of dominance does not depend on awareness of heartbeat
 
 Our mixture model, visualized in Figure 3, estimated that 9.48% (95% highest desnity interval i.e. HDI: [1.81, 18.4]) of the sampled population are above-chance cardiac perceivers, and that above-chance perceivers have a mean accuracy of 0.668 (95% HDI: [0.521, 0.847]). Note that, while the estimated 9.48% population prevalence closely agrees with the 9.26% of subjects who were significantly above-chance via a Binomial test in our sample, the mixture model still assigns substantial probability to an above-chance perceiver performing worse than that frequentist cutoff (see Figure 3), illustrating why interpreting a frequentist null result would be inappropriate in this case.
 
@@ -52,7 +52,7 @@ Our mixture model, visualized in Figure 3, estimated that 9.48% (95% highest des
 
 When we remove subjects with greater than a 0.05 probability of being an above-chance perceiver from our sample, 46 subjects (85.2%) remain. This amounted to an effective cutoff of 0.542 accuracy. When we repeat the GLM analysis from the above section on just these subjects that we are quite sure are at-chance, we still find an effect of entrainment to cardiac systole on dominance durations (beta = 0.028, 95% CI: [0.001, 0.055], Z = 2.021, p = 0.043). The fact that the rivalry result can be found in a group of only cardiac non-perceivers indicates that the effect does not depend on subjects’ conscious access to their heartbeat sensations, and thus also not on some conscious inference subjects may have made about which stimulus they are meant to attend to.
 
-## Manipulation check
+### Manipulation check
 
 For all subjects, bootstrap mean cardiac angles of the stimulus ‘pulse’ times were negative (i.e. peaking in systole) for the in-phase stimulus and positive (i.e. in diastole) for the anti-phase stimulus, indicating our manipulation of cardiac phase was successful. The group mean cardiac angle for the systole-entrained pulses was −1.04 (95% CI: [−1.10, −0.99]) and for anti-phase pulses was 1.93 (95% CI: [1.88, 1.98]).
 
@@ -68,25 +68,25 @@ Lastly, this finding may have implications for how we interpret the relationship
 
 ## Methods
 
-## Recruitment
+### Recruitment
 
 We recruited 58 subjects (see Sample size determination) with self-reported normal color vision from our Psychology Department’s subject pool, which consists of undergraduate students. Two subjects were dropped due to a technical error during data collection, and two subjects were dropped for failing to comply with task instructions, resulting in a final sample size of n = 54 subjects (15 biological males, 39 females, ages 20.4 ± 1.1 standard deviation).
 
-## ECG acquisition and real-time processing
+### ECG acquisition and real-time processing
 
 ECG was acquired at a 100-Hz sampling rate using a TMSi SAGA amplifier (TMSi, Netherlands) and a bipolar montage, with one electrode placed under the right clavicle, one at the bottom of the left ribcage, and ground under the left clavicle. Real-time analysis of the ECG data was implemented in Python (see Data availability) using Lab Streaming Layer (LSL, https://labstreaminglayer.org/#/) and LabGraph (https://github.com/facebookresearch/labgraph, Facebook Reality Labs, 2021). After digitizing, ECG data were bandpass filtered to 5–15 Hz, and R-peaks were detected using the Pan-Thompkins algorithm (Pan and Tompkins, 1985), modified from an existing implementation for LabGraph compatibility (Sznajder and Łukowska, 2017).
 
 From the estimated R-peak times, we generated stimulus time courses on-the-fly as follows (in both the binocular rivalry task and the cardiac discrimination task). Since our ECG amplifier has a known analog-to-digital conversion latency of roughly 35 ms when acquiring data over LSL, we aimed for pulses of the in-phase/systole stimulus to peak at 175 ms, such that it would actually peak at 210 after each R-peak, following previous work on cardiac synchrony effects on embodiment (Suzuki et al., 2013). This timing coincides with peak systolic blood pressure, when the aortic baroreceptors are most active, and when heartbeats tend to be perceived in interoceptive sensitivity tasks (Brener et al., 1993; Wiens and Palmer, 2001). The anti-phase/diastole stimulus was delayed relative to the in-phase stimulus by half of the previous R–R interval. Since this delay was variable between heartbeats – thus distinct from a constant phase delay but, on average, still anti-phase. This avoided the impression that one stimulus was leading or lagging, but as a result, the precise cardiac phase (i.e. within diastole) that the anti-phase stimulus peaked varied across subjects, but it nonetheless peaked during diastole for all subjects (see ECG offline processing and analysis). Stimulus ‘pulses’ had the shape of a Gaussian bell curve with a scale (i.e. ‘standard deviation’) of 1/16 of a second (see Figure 1). The target stimulus size was updated each time a new ECG sample was acquired (100 Hz), and total processing time to compute the intended stimulus time series was roughly a millisecond. On each screen refresh (60 Hz), the actual stimuli were updated to match their current target size.
 
-## Cardiac binocular rivalry task
+### Cardiac binocular rivalry task
 
 Subjects wore red-blue anaglyph glasses, such that a red image could be presented exclusively to the left eye and a blue image could be presented only to the right eye. The task consisted of two 10-min blocks, in which incongruent gratings (256 × 256 pixels on a 1920 × 1080, 22’ monitor, which subjects viewed from 2 feet away) were presented to opposite eyes, which is well known to result in the centrally perceived image alternating between the two gratings – rather than, say, merging them (Carmel et al., 2010). As in a typical binocular rivalry paradigm, the subjects indicated with a button press each time the dominant stimulus switched. One grating would ‘pulse’ – the bars in the grating would briefly increase in width before returning to baseline, see Figure 1 – during cardiac systole and one would pulse anti-phase to the systole pulse, during cardiac diastole (see ECG acquisition and real-time processing). In one 10-min block, the red/left grating would be the systole/in-phase stimulus and the blue/right grating would be the diastole/anti-phase stimulus, and in the other block it would be reversed; block order was randomized. The durations during which each grating was dominant were recorded for analysis (see Behavioral data analysis). Subjects were not told that the movement of the stimuli was related to their heartbeat until after this block had ended, and the heartbeat discrimination task had begun.
 
-## Heartbeat discrimination task
+### Heartbeat discrimination task
 
 Our modified heartbeat discrimination task was designed to assess whether subjects would be able to discriminate which of the two stimuli in the rivalry task was entrained to systole versus to diastole, rather than to assess more general interoceptive ability. Thus, we ignored some of the recent developments in improving the validity of heartbeat discrimination tasks for assessing the latter (Brener and Ring, 2016), and we used a bespoke task in which the manipulation closely matched that in our rivalry task. In particular, subjects saw two circles side-by-side on their screen, and the circles ‘pulsed’ (i.e. transiently increased in radius from 60 to 120 pixels) following the same time course as the gratings in the rivalry task – that is, one during systole and one during diastole (see ECG acquisition and real-time processing and Figure 1). On each of 120 10-s trials, the side of the systole stimulus and that of the diastole stimulus was randomized, and subjects were asked to report which circle was pulsing in synchrony with their heart. The accuracy of each response was recorded for analysis (see Behavioral data analysis).
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 For visualization and estimation of paired differences, the dominance durations for the systole- and diastole-entrained gratings were averaged across all trials and block within each subject. Those measurements, and the bootstrap CIs (10,000 samples) of their paired differences were plotted using the DABEST Python package for robust estimation statistics (Ho et al., 2019). We additionally visualize these measurements broken up by whether the grating was presented to the left or the right eye, in case of baseline ocular dominance confounds.
 
@@ -94,9 +94,9 @@ For statistical inference on dominance durations, we apply a gamma-family GLM wi
 
 We then re-ran the above GLM analysis on only those subjects who were at-chance at the heartbeat discrimination task, so we could assess whether the result from the first GLM would hold for only subjects who could not consciously distinguish which stimulus was in-phase with cardiac systole – and thus whether our results depend on conscious awareness of heartbeat sensations. Since identification of ‘at-chance’ subjects would require interpretation of a null result in a frequentist setting (so we cannot just use a Binomial test), we estimate the probability each subject is at- or above-chance using a Bayesian mixture model, and then we call subjects ‘at-chance’ if there is at least a 95% posterior probability they are indeed drawn from the at-chance distribution (see below).
 
-In the mixture model, each subject i’s number of correct trials ki is modeled as coming from either an at-chance distribution ki|at-chance∼Binomial(ntrials,0.5) or an above-chance distribution ki|above-chance∼Binomial(ntrials,pi) where pi∼0.5+Beta(α,β)/2, which spans the range [0.5,1.0]. We pick priors for parameters α∼Exponential(1.0) and β∼Exponential(0.5), which slightly favors distributions where accuracy pi is more likely to be close to 0.5 than to 1.0, and we put a Uniform(0,1) prior on the population prevalence of above-chance perceivers. Given posteriors for these parameters, each subject’s probability of coming from one distribution or another given their observed performance ki is simply given by Bayes’ rule. Posterior distributions were approximated with 10,000 posterior samples in PyMC (Patil et al., 2010).
+In the mixture model, each subject $i$’s number of correct trials $k_{i}$ is modeled as coming from either an at-chance distribution $k_{i}|at-chance∼Binomial(n_{trials},0.5)$ or an above-chance distribution $k_{i}|above-chance∼Binomial(n_{trials},p_{i})$ where $p_{i}∼0.5+Beta(\alpha,\beta)/2$, which spans the range $[0.5,1.0]$. We pick priors for parameters $\alpha∼Exponential(1.0)$ and $\beta∼Exponential(0.5)$, which slightly favors distributions where accuracy $p_{i}$ is more likely to be close to 0.5 than to 1.0, and we put a $Uniform(0,1)$ prior on the population prevalence of above-chance perceivers. Given posteriors for these parameters, each subject’s probability of coming from one distribution or another given their observed performance $k_{i}$ is simply given by Bayes’ rule. Posterior distributions were approximated with 10,000 posterior samples in PyMC (Patil et al., 2010).
 
-## ECG offline processing and analysis
+### ECG offline processing and analysis
 
 While characteristics of the ECG data were not of particular interest in the present study outside of our online manipulation of stimulus timing (see ECG acquisition and real-time analysis), we did estimate the cardiac phase at which entrained stimuli actually peaked in the rivalry task as an offline manipulation check. (For instance, if the anti-phase stimulus did not peak during diastole, which could occur for a subject with a very fast heart rate, it might be prudent to exclude that subject from analysis – though this did not end up occurring, see Results.)
 
@@ -104,6 +104,6 @@ To this end, we applied the standardized NeuroKit pipeline, as implemented in ve
 
 We then obtain (circular) means for the cardiac angle the synchronous and asynchronous stimuli peak for each subject by bootstrap with 10,000 samples. These are used for a manipulation check to confirm that the mean angle for the systole stimulus is negative for all subjects, and the mean angle for the diastole stimulus is positive for all subjects. We then estimate the group-level mean cardiac angles for both stimuli using a random-effects bootstrap scheme, which accounts for both the population sampling distribution and the within-subject sampling distribution (Chambers and Chandra, 2013). Group-level bootstrap means and CIs are reported in results.
 
-## Sample size determination
+### Sample size determination
 
 Our sample size was initially determined arbitrarily (by time constraints on data collection). However, we did conduct a power calculation to assess whether this convenience sample was sufficiently large to detect a typical cardio-visual effect. To this end, we used the smallest standardized effect size (paired Cohen’s d = 0.38) reported across the seven cardio-visual experiments reported by Salomon et al., 2016. This calculation yielded a power of 0.81 at a significance level of 0.05 for our original n = 58 subjects and 0.78 for our final n = 54 subjects, which we deemed sufficient to stop data collection.

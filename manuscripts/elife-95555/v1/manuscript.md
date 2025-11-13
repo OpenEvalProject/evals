@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0220qvk04 State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic and Developmental Sciences, and School of Life Sciences and Biotechnology, Shanghai Jiao Tong University Shanghai China
-2. https://ror.org/002w4zy91 Center for Environmental Diagnostics and Bioremediation, University of West Florida Pensacola United States
-3. https://ror.org/034t30j35 State Key Laboratory of Microbial Resources, Institute of Microbiology, Chinese Academy of Sciences Beijing China
+1. State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic and Developmental Sciences, and School of Life Sciences and Biotechnology, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+2. Center for Environmental Diagnostics and Bioremediation, University of West Florida Pensacola United States ([ROR:002w4zy91](https://ror.org/002w4zy91))
+3. State Key Laboratory of Microbial Resources, Institute of Microbiology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
 
 † Corresponding author
 
@@ -32,59 +32,170 @@ In contrast to the well-established degradation of anilines, little is known abo
 
 ## Results
 
-## Pseudomonas sp. strain JS3066 is a 1NA degrader
+### Pseudomonas sp. strain JS3066 is a 1NA degrader
 
 Selective enrichment with 1NA as the growth substrate yielded an isolate that grew aerobically on 1NA as the sole carbon and nitrogen source (Figure 1A). It could also utilize aniline for growth (data not shown). A BLASTN search against the sequences on the National Center for Biotechnology Information (NCBI) website (http://www.ncbi.nlm.nih.gov/) revealed that its 16S rRNA gene sequence shows 99.93% and 99.74% identity with Pseudomonas sp. DY-1 (GenBank accession number: CP032616.1) and Pseudomonas sp. TCU-HL1 (GenBank accession number: CP015992.1), respectively. Thus, the 1NA degrader was identified as Pseudomonas sp. strain JS3066.
 
-## A proposed 1NA conversion cluster locates on a plasmid
+![Figure 1.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig1-v1.jpg)
+
+**Figure 1.:** (A) Growth with 1NA as the sole carbon and nitrogen source. (B) 1NA conversion by cell suspensions of P. putida KT2440-ΔcatAΔggt harboring pNPA01 (npaA1 to npaA5), pNPA01-ΔA1 (npaA2 to npaA5), pNPA01-ΔA2 (npaA1 and npaA3 to npaA5), and pNPA01-ΔA12 (npaA3 to npaA5). The ability of P. putida KT2440-ΔcatAΔggt to convert 1NA together with the spontaneous decomposition of 1NA were also determined as control. The error bars represent the standard deviation while the points represent the mean of two independent measurements. (C) Organization of the genes involved in 1NA degradation by strain JS3066. Gene tnpA encodes a transposase. Proposed functions of the rest of genes are presented in Supplementary file 1. (D) Proposed pathway of 1NA catabolism in Pseudomonas sp. strain JS3066. TCA, tricarboxylic acid. Unstable compounds are enclosed in brackets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The mass spectra of theoretical trimethylsilylated 1,2-dihydroxynaphthalene (a) and authentic trimethylsilylated 1,2-dihydroxynaphthalene (b) are shown.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The ion current chromatograms at m/z 254.00±0.70 extracted from the total ion current chromatograms of standard catechol and the product of aniline conversion by recombinant KT/pNPA01. (B) Gas chromatography-mass spectrometry (GC-MS) analysis of the intermediate captured during aniline degradation by the cell suspension of KT/pNPA01. The mass spectra of proposed trimethylsilylated catechol (A) and authentic trimethylsilylated catechol (B) are shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The ion current chromatograms at m/z 304.00±0.70 extracted from the total ion current chromatograms of standard 1,2-dihydroxynaphthalene and the product of γ-glutamylated 1NA conversion by recombinant KT/pNPA01-ΔA12 are presented. (B) Gas chromatography-mass spectrometry (GC-MS) analysis of the intermediate captured during γ-glutamylated 1NA transformation by the cell suspension of KT/pNPA01-ΔA12. The mass spectra of theoretical 1,2-dihydroxynaphthalene (a) and authentic 1,2-dihydroxynaphthalene (b) are shown.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig1-figsupp4-v1.jpg)
+
+### A proposed 1NA conversion cluster locates on a plasmid
 
 The genome of strain JS3066 comprises two replicons, one circular chromosome (6,093,500 bp, G+C content of 62.94%), and one circular plasmid designated pJS3066 (109,408 bp, G+C content of 63.15%). The replication initiator protein TrfA of plasmid pJS3066 shares 100% amino acid sequence identity with that of plasmid pTP6, which indicates that pJS3066 likely belongs to the IncP-1β subgroup of plasmids (Stenger and Lee, 2011; Thorsted et al., 1996). Collectively, the whole genome of strain JS3066 is 6,202,908 bp with an average G+C content of 62.95%.
 
 The ability of the isolate to degrade aniline coupled with the fact that 1NA is an analog of aniline prompted the hypothesis that the initial reactions of 1NA and aniline catabolism might be mediated by the similar genetic determinants within strain JS3066. Therefore, the well-studied aniline dioxygenase-encoding gene set (atdA1A2A3A4A5; accession number: D86080.1) from Acinetobacter sp. YAA was used as the query to search the genome of strain JS3066. A cluster of genes closely related to those encoding aniline dioxygenase is located on plasmid pJS3066. The putative naphthylamine dioxygenase-encoding genes, designated npa (1-naphthylamine), are encoded in the order npaA1A2A3A4A5 (Figure 1C). BLASTp analyses of the deduced amino acid sequences of NpaA1A2A3A4A5 against the NCBI database revealed high identities with the γ-glutamylanilide synthase (AtdA1), the GAT-like enzyme (AtdA2), the two-component Rieske-type aromatic compound dioxygenase (AtdA3A4), and the reductase component (AtdA5) in Acinetobacter sp. YAA (Supplementary file 1). No other potential aniline dioxygenase homologs were detected in the genome.
 
-## NpaA1A3A4A5 convert 1NA to 1,2-dihydroxynaphthylene
+### NpaA1A3A4A5 convert 1NA to 1,2-dihydroxynaphthylene
 
 To investigate the roles of npaA1A2A3A4A5 genes in the initial oxidation of 1NA, plasmids carrying different combinations of the five genes were constructed and introduced into P. putida KT2440-ΔcatAΔggt which is unable to catabolize catechol. Then the abilities of recombinant KT/pNPA01 (including npaA1A2A3A4A5 genes) and its derivatives to metabolize 1NA were analyzed. Recombinant KT/pNPA01 and KT/pNPA01-ΔA2 (including npaA1, npaA3 to npaA5) were able to transform 1NA (Figure 1B). However, cells harboring either npaA2A3A4A5 genes (recombinant KT/pNPA01-ΔA1) or npaA3A4A5 genes (KT/pNPA01-ΔA12) were unable to transform 1NA. This indicates that NpaA1 is an essential component in the conversion of 1NA, while NpaA2 is not necessary. According to sequence alignment, NpaA2 is a GAT-like protein, sharing 98% sequence identity with AtdA2 (Takeo et al., 2013). NpaA2 is likely similar to AtdA2, hydrolyzing γ-glutamylated 1NA into 1NA, thus reversing the γ-glutamylated 1NA formation catalyzed by NpaA1. Experiments on whole-cell biotransformation indicate that the strain P. putida KT2440-ΔcatAΔggt, which includes NpaA1A3A4A5 but lacks NpaA2, can still convert 1NA into 1,2-dihydroxynaphthalene (Figure 1B). Gas chromatography-mass spectrometry (GC-MS) analysis revealed that the main product formed during the transformation of 1NA by recombinant KT/pNPA01 was 1,2-dihydroxynaphthalene (Figure 1—figure supplement 1). Notably, recombinant KT/pNPA01 retained the ability to transform aniline into catechol (Figure 1—figure supplement 2).
 
 To enable further characterization, NpaA1 was expressed and purified as an N-terminal Strep II-tagged fusion protein. 1NA conversion by NpaA1 was investigated in a reaction mixture similar to that used previously for the transformation of aniline to γ- glutamylated aniline (Ji et al., 2019). 1NA (λ max, 310 nm) was transformed by purified NpaA1 to a new product with maximum absorption at around 287 nm (Figure 2—figure supplement 1). The HPLC retention time of the product was equal to that of the authentic γ-glutamylated 1NA and ultra-performance liquid chromatography-quadrupole-time of flight-mass spectrometry (UPLC-QTOF MS) analysis showed that the product had a molecular ion at m/z 273.1231 [M+H]+, which is identical to that of authentic γ-glutamylated 1NA (Figure 2C and D). During γ-glutamylation of 1NA, the 1NA consumption (0.16 mmol) was almost equivalent to the total accumulation of γ-glutamylated 1NA (0.157 mmol) (Figure 2A and B). In view of the above analyses, NpaA1 was established as a γ-glutamylnaphthylamide synthase catalyzing ligation of 1NA and L-glutamate to form γ-glutamylated 1NA.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig2-v1.jpg)
+
+**Figure 2.:** (A) The time course of 1NA degradation and γ-glutamylated 1NA accumulation. The error bars represent the standard deviation while the points represent the mean of two independent measurements. (B) High-performance liquid chromatography (HPLC) profiles of 1NA standard, γ-glutamylated 1NA standard, and the reaction products of 1NA conversion catalyzed by NpaA1. The detection wavelength was 280 nm. (C–D) UPLC/QTOF-MS analysis of the intermediate captured during 1NA transformation by NpaA1. The mass spectra of authentic γ-glutamylated 1NA (C) and reaction product γ-glutamylated 1NA (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The maximum characteristic absorption peaks of 1NA and γ-glutamylated 1NA are 310 nm and 287 nm. The arrows indicate the directions of spectral changes.
+
 Although recombinant KT/pNPA01-ΔA12 failed to transform 1NA, it was able to catalyze the conversion of γ-glutamylated 1NA into 1,2-dihydroxynaphthalene, indicating that γ-glutamylated 1NA is an intermediate and a direct substrate for the dioxygenase NpaA3A4A5 (Figure 1—figure supplement 3). Experiments with different combinations of npaA1A2A3A4A5 genes have established that only four Npa proteins, namely, NpaA1 (GS-like enzyme), NpaA3 (large subunit of oxygenase component of dioxygenase), NpaA4 (small subunit of oxygenase component of dioxygenase), and NpaA5 (reductase component of dioxygenase) are essential for the conversion of 1NA to 1,2-dihydroxynaphthylene (Figure 1B and D).
 
-## Proposed pathway for 1,2-dihydroxynaphthalene degradation in strain JS3066
+### Proposed pathway for 1,2-dihydroxynaphthalene degradation in strain JS3066
 
 Downstream of the npaA1A2A3A4A5 genes lie npaBFCXEDJIKL genes (Figure 1C and Supplementary file 1), whose products, except for napX encoding a transposase, are closely related to those involved in naphthalene degradation by Ralstonia sp. strain U2 and related strains (Fuenmayor et al., 1998; Zhou et al., 2001). In strain U2, a putative aldolase-encoding gene (nagQ) lies between the 1,2-dihydroxynaphthalene dioxygenase-encoding gene (nagC) and the trans-o-hydroxybenzylidenepyruvate hydratase-aldolase-encoding gene (nagE); in strain JS3066, however, npaX, a putative transposase-encoding gene, lies there instead.
 
 Under oxic conditions, naphthalene is often first oxidized to salicylate, which is further channeled to tricarboxylic acid (TCA) cycle intermediates either via gentisate or catechol catabolic pathways. The metabolism of naphthalene via catechol has been studied in P. putida G7 (bearing the catabolic plasmid NAH7) (Sota et al., 2006) and in P. putida NCIB 9816–4 (bearing the catabolic plasmid pDTG1) (Dennis and Zylstra, 2004) at the genetic level. Likewise, the gentisate pathway has been found in Ralstonia sp. strain U2 (Fuenmayor et al., 1998; Zhou et al., 2001) and Polaromonas naphthalenivorans CJ2 (Jeon et al., 2006). Based on the above bioinformatic analysis and analogy with the established pathways for naphthalene degradation, the putative genes sufficient to encode the lower degradation pathway of 1NA would be complete, except for the absence of a gene responsible for salicylate conversion. Given the fact the gentisate-catabolic genes are intact in strain JS3066 (Figure 1C and D), we searched for a gene which would catalyze the conversion of salicylate to gentisate. Contrary to expectation, no putative salicylate 5-hydroxylase-encoding gene was found either upstream or downstream of npaA1A2A3A4A5BFCXEDJIKL genes. We, therefore, searched the whole genome for genes encoding putative enzymes capable of catalyzing (ⅰ) transformation of salicylate to catechol (Dennis and Zylstra, 2004; Jouanneau et al., 2007; Sota et al., 2006), (ⅱ) conversion of salicylate to gentisate via salicylyl-CoA and gentisyl-CoA (Zhou et al., 2021), and (ⅲ) direct ring fission of salicylate to 2-oxohepta-3,5-dienedioic acid (Hintner et al., 2001). The search revealed a putative salicylate 1-hydroxylase-encoding gene, designated npaG and located on the chromosome of strain JS3066. The product of npaG exhibits 77% identity with NahG of P. putida G7 (Sota et al., 2006). NpaG was functionally expressed and found to catalyze the conversion of salicylate to catechol with a specific activity of 15.0±1.3 U mg–1 (Figure 1—figure supplement 4). The bioinformatic analysis did not reveal candidate genes encoding enzymes that catalyze any of the known alternative routes of salicylate metabolism. The above results supported the hypothesis that npaBFCXEDJIKL-G genes, products of which catalyze the conversion of 1,2-dihydroxynaphthalene to catechol, are involved in 1NA degradation in strain JS3066. The putative genes responsible for encoding the well-defined ortho-cleavage pathway of catechol degradation are located on the chromosome in strain JS3066 (Figure 1C). The genes show high similarities to their counterparts in other strains that degrade catechol (Supplementary file 1).
 
-## NpaA1 converts multiple aromatic amine substrates to γ-glutamylated aromatic amines
+### NpaA1 converts multiple aromatic amine substrates to γ-glutamylated aromatic amines
 
 Conversion to the corresponding γ-glutamylated amines is an essential step for aromatic amines oxidation, because the dioxygenase is unable to directly act on the amines. Furthermore, the glutamylating enzyme plays an essential role in the substrate specificity of the pathway (Ji et al., 2019). The activity of NpaA1 and AtdA1 against various aniline and naphthylamine derivatives have been determined in this study. Enzyme assays with purified NpaA1 revealed its activity not only against polycyclic aromatic amines such as 1NA and 2-naphthylamine, but also monocyclic aromatic amines and their chlorinated derivatives such as aniline and 3,4-dichloroaniline (Table 1). In contrast, AtdA1 from an aniline-degrading strain YAA as well as other reported glutamylating enzymes acting on chloroaniline only exhibited activity against monocyclic aniline derivatives (Takeo et al., 2013). It is worth noting that the in vitro activity of NpaA1 and AtdA1 heterologously expressed in Escherichia coli is significantly lower than their activity in their wild-type hosts. This issue was encountered in previous reports on AtdA1 (Takeo et al., 2013; Ji et al., 2019), though the reasons for the discrepancy remain unexplained. Here, the optimal pH of NpaA1 for enzymatic activity was 8.0 (Figure 3—figure supplement 1A), and the optimal temperature was 50 ° C (Figure 3—figure supplement 1B). The broad substrate specificity and high optimal temperature of NpaA1 indicate a potential for its biotechnological applications by protein engineering.
 
-## NpaA1 is a GoaS (glutamyl organic amide synthetase) protein
+**Table 1.**
+ Specific activities of NpaA1 and AtdA1 against different substrates.Table 1—source data 1.Raw data for the specific activity of NpaA1 is shown in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>NpaA1Relative activity</th>
+      <th>AtdA1Relative activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>100%</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>100%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>76.5%</td>
+      <td>29.4%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>31.4%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>23.5%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5.9%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7.8%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_The specific activities of NpaA1 (25.5±0.7 U g–1) and AtdA1 (8.5±2.1 U g–1) against aniline were defined as 100%. The results are shown as averages ± standard deviations from two or more independent measurements._
+
+### NpaA1 is a GoaS (glutamyl organic amide synthetase) protein
 
 Glutamine synthetase (GS), catalyzing the ATP-dependent synthesis of glutamine from glutamate and ammonium (Harper et al., 2010), is a member of an ancient and ubiquitous family of enzymes. GS enzymes can be divided into three distinct types, GSI, GSII, and GSIII (Brown et al., 1994; de Carvalho Fernandes et al., 2022). Similar to the nomenclature of GS based on functional characteristics, as various organic amine glutamine synthetases have been functionally identified, such as NpaA1, γ-glutamylanilide synthase, and γ-glutamylpolyamine synthetase (Gln3), we propose naming this enzyme class as GoaS. To investigate the relationships between GoaS and GS proteins, phylogenetic analysis of functionally identified GoaS and GS was conducted, revealing that NpaA1 is part of a well-separated branch containing 7 other GoaS proteins, except PA5508 and GlnA3 being located at a closely adjacent branch (Figure 3A). Among these GoaS proteins, besides the well-known AtdA1 for aniline degradation and newly identified NpaA1 for 1NA degradation, other enzymes are involved in isopropylamine degradation (IpuA) (de Azevedo Wäsch et al., 2002), chloroaniline degradation (DcaQ, TdnQ) (Król et al., 2012), putrescine utilization (PuuA) (Kurihara et al., 2008), etc. Although all members are involved in the degradation of organic amine compounds, none of them were reported to catalyze ammonium conversion (de Azevedo Wäsch et al., 2002; Ladner et al., 2012; Rexer et al., 2006; Takeo et al., 2013).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig3-v1.jpg)
+
+**Figure 3.:** (A) Phylogenetic tree illustrating the evolutionary relationship between amino acid sequences of NpaA1 from Pseudomonas sp. strain JS3066 labeled with a red dot and other related sequences. (B) The loop V68’-M81’ (represented as a red cartoon) in NpaA1─ADP─MetSox-P docking with 1NA complex. Ligands of this complex are colored in green. (C) Sequence logo of the 15th motif. (D) The overlapping structure of loop V68’-M81’ of NpaA1 (in blue) and the corresponding region in StGS (in orange). GS: glutamine synthetase; GoaS: organic amine glutamine synthetases. GmaS: γ-Glutamylmethylamide synthetase.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The optimal pH was determined at 25 °C using Bis -Tris buffer for pH 4–6, Tris buffer for pH 6–9, and glycine-NaOH buffer for 9–11. The activity of NpaA1 was measured in a range from 5–80°C at pH 8.0 (50 mM Tris-HCl buffer). Error bars represent the standard deviation of three biological replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig3-figsupp2-v1.jpg)
+
 GoaS enzymes including NpaA1 showed a closer relationship and more similar motif arrangement to GSI than other types of GS (Figure 3A). There are 11 conserved motifs between GSI and GoaS enzymes, but most members in GoaS have an additional 15th motif located in the N-terminal domain, which is absent in GSI (Figure 3A and Figure 3—figure supplement 2). In GS enzymes, the N-terminal domain contributes to the substrate binding of the enzyme (Almassy et al., 1986). The presence of the 15th motif in NpaA1 suggests a distinct substrate binding mode for GoaS compared to GSI. This may allow NpaA1 to catalyze glutamylation reactions with a broad range of substrates.
 
-## NpaA1 is a hexamer in solution
+### NpaA1 is a hexamer in solution
 
 The crystal structure of apo-NpaA1 and two complexes with substrates or substrate analogs were obtained (Supplementary file 2). The model of NpaA1 built by Alphafold2 (Jumper et al., 2021) was used as the template for a molecular replacement for apo-NpaA1. Theoretical calculations and SDS-PAGE analysis showed that the molecular weight of the NpaA1 monomer was about 55 kDa. The results of gel filtration show two absorption peaks for purified NpaA1, indicating the presence of two distinct aggregation states in the solution. (Figure 4—figure supplement 1A). Multi-angle light scattering (MALS) analysis showed that NpaA1 exists in both monomeric and hexameric states in solution, with hexamers constituting approximately 36.7% of the total population (Figure 4—figure supplement 1C). It has been reported that glutamine synthetase also often exists in different oligomeric states in solution (Joo et al., 2018; Travis et al., 2022). The crystal structure of apo-NpaA1 revealed that there are six monomers arranged as a hexamer in an asymmetric unit (Figure 4A). The binding pocket is located at the interface between adjacent subunits (Figure 4A and C), and the bifunnel channel similar to GS protein refers to a structural feature characterized by two distinct channels that converge into the common active site. In apo NpaA1, there are two Mn2+ ions binding to the active center, coordinated by glutamic acid and histidine residues (Figure 4A and Figure 4—figure supplement 2A). When the ATP analog AMPPNP binds to NpaA1, an additional Mg2+ binds to the active site, facilitating the binding of the AMPPNP phosphate group (Figure 4B).
 
-## NpaA1 has a large and hydrophobic active pocket
+![Figure 4.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig4-v1.jpg)
+
+**Figure 4.:** (A) The overall structure of NpaA1. There are six monomers arranged as a hexamer in an asymmetric unit. The six monomers are in different colors. (B) The glutamine synthetase (GS) active site is illustrated as a bifunnel with the ATP, glutamate, and amine entry and binding sites at opposite ends. (C) Active site of NpaA1 located at the interface of adjacent subunits. The purple spheres represent the Mn2+ ions, and the green spheres represent the Mg2+ ions. Ligands are indicated by green sticks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gel filtration of NpaA1. (B) SDS-PAGE showed that peak a and peak b were both NpaA1. (C) Multi-angle light scattering (MALS) analysis of NpaA1. The molecular weight and error of each peak are counted in the table.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Sequence alignment of glutamine synthetase (GS)-like proteins (pink background) with GS proteins (yellow background). Residues involved in binding ATP, glutamate, Mg2+, and ammonium are marked with black triangles, red triangles, yellow triangles, and green triangles, respectively. (B) Mutational analysis of important residues participating in binding substrate and catalysis. Error bars represent the standard deviation of three biological replicates.
+
+### NpaA1 has a large and hydrophobic active pocket
 
 In order to elucidate the catalytic characteristics of NpaA1 towards organic amines, we conducted a comparative analysis of the differences in the substrate-binding pockets between NpaA1 and GSI family proteins. NpaA1 shows a similar architecture to GSI protein from Salmonella typhimurium (StGS) with a 1.2 Å root mean square deviation (RMSD) (Gill and Eisenberg, 2001), and γ-glutamylmethylamide synthetase from Rhodovulum sp. 12E13 (RhGmaS) with a 1.0 Å RMSD for the aligned Cα coordinates (Wang et al., 2021). The coordinating residues involved in ATP, glutamate, and Mn2+ binding are highly conserved between NpaA1 and GS (Figure 4—figure supplement 2A and B). The structural comparison between NpaA1 and StGS indicates a distinction in their ammonium binding sites. In contrast to the small negatively charged pocket for ammonium binding in GSI proteins, docking analysis of NpaA1 with 1NA suggested that 1NA binds at the interface of the adjacent monomer through electrostatic and hydrophobic interactions (Figure 3B). The positively charged amino group of 1NA binds in a negatively charged pocket consisting of residues E232 and E234, and forms hydrogen bonds with residue E234 and the phosphate group of the intermediate γ-glutamyl phosphate (Figure 5C). The corresponding entry for 1NA in NpaA1 is surrounded by a long loop V68’-M81’ which is located on part of the 15th motif in the N-terminal domain of the adjacent monomer (Figure 3A–C). The unique loop V68’-M81’ seems to form part of the active pocket leading to a larger and more hydrophobic cavity (318.17 Å3) compared to that of the StGS protein (PDB ID:1F1H; 163.83 Å3) (Figure 3D). The enriched hydrophobic residues on the 15th motif of loop V68’-M81’ (A69’, I70’, G71’, P72’, and F75’) stabilize the aromatic ring of 1NA through hydrophobic interaction. The volume of the large pocket in NpaA1 is sufficient to accommodate 1NA, which also allows NpaA1 to accommodate a wider range of substrates. The 15th motif is present in the majority of GoaS enzymes responsible for catalyzing the glutamylation of organic amines. Similarly, GmaS, which possesses the 15th motif, also acts on organic amines as substrates (Figure 3A). The 15th motif is situated in the vicinity of the active pocket in GmaS (Wang et al., 2021) and GoaS, suggesting that this motif may play a role in facilitating the binding of organic compounds in these GS-like enzymes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95555/elife-95555-fig5-v1.jpg)
 
-**Figure 5.:** (A) The 1NA entry tunnel was predicted by Caver 3.0 (in red). The structures of NpaA1 (in pink) and AtdA1 (in cyan) overlap, with the amino acids contributing to the formation of tunnel bottlenecks highlighted as sticks. (B) Relative activity of mutants for 1NA entry tunnel. The activity of wild-type NpaA1 for 1NA is set to 100% (21.6±1.2 U/g), and wild-type NpaA1 showed equivalent activity to 1NA and aniline. Error bars represent the standard deviation of three biological replicates. (C) The aromatic amine binding pocket of NpaA1 is superimposed on AtdA1. 1NA is green, residues for NpaA1 are pink, and residues for AtdA1 are cyan. The black dashed line represents the hydrogen bond. (D) Relative activity of saturation mutants for V201. The activity of wild-type NpaA1 for 1NA is set to 100% (20.8±0.5 U/g), and wild-type NpaA1 showed equivalent activity to 1NA and aniline. Dots represent the relative activity of the respective biological replicates (n = 3) and error bars represent the standard deviation.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) The 1NA entry tunnel was predicted by Caver 3.0 (in red). The structures of NpaA1 (in pink) and AtdA1 (in cyan) overlap, with the amino acids contributing to the formation of tunnel bottlenecks highlighted as sticks. (B) Relative activity of mutants for 1NA entry tunnel. The activity of wild-type NpaA1 for 1NA is set to 100% (21.6±1.2 U/g), and wild-type NpaA1 showed equivalent activity to 1NA and aniline. Error bars represent the standard deviation of three biological replicates. (C) The aromatic amine binding pocket of NpaA1 is superimposed on AtdA1. 1NA is green, residues for NpaA1 are pink, and residues for AtdA1 are cyan. The black dashed line represents the hydrogen bond. (D) Relative activity of saturation mutants for V201. The activity of wild-type NpaA1 for 1NA is set to 100% (20.8±0.5 U/g), and wild-type NpaA1 showed equivalent activity to 1NA and aniline. Dots represent the relative activity of the respective biological replicates (n = 3) and error bars represent the standard deviation.
 
-## The difference in the organic amine binding tunnels between NpaA1 and AtdA1
+### The difference in the organic amine binding tunnels between NpaA1 and AtdA1
 
 Despite the high identity (90%) between NpaA1 and AtdA1, only NpaA1 is capable of converting both monocyclic and polycyclic aromatic amines. To investigate how the differences in amino acids would affect substrate preferences and conversion rates, a predicted structure of AtdA1 was obtained from the AlphaFold2 protein structure database (Jumper et al., 2021). Structure overlapping of NpaA1 and AtdA1 suggested that the binding pockets in these two proteins are similar, while the variations in tunnel and binding pocket residues between NpaA1 and AtdA1 likely account for their different substrate specificities. We employed CAVER 3.0 software (Chovancova et al., 2012) to analyze potential tunnels for the entry of 1-naphthylamine or aniline into NpaA1 and AtdA1. The prediction of the tunnel in NpaA1 is based on structural docking after the removal of the ligand MetSox-P from the NpaA1—ADP—MetSox-P complex and subsequent docking of phosphorylated glutamate. 1NA docked in NpaA1 was selected as a mandatory site. The tunnel analysis in NpaA1 identified eight tunnels. Among the generated tunnels, a tunnel extending from the buried 1NA binding region to the surface of the bifunnel-shaped entry appears to be the most likely candidate for facilitating 1NA diffusion and overall catalysis in NpaA1 (Figure 5A). One of the predicted tunnels in AtdA1 overlaps with this tunnel in NpaA1, therefore, likely to be the amine binding channel.
 
 In NpaA1, the indole ring of W235 is oriented parallel to the channel and likely engages in π-π interactions or cation-π interactions with substrates or surrounding aromatic amino acids, assisting in substrate entry. Structural analysis indicates that hydrophobic residues on the 15th motif contribute to the formation of the substrate tunnel (Figure 5A), with the most important ones being three hydrophobic aromatic amino acids (F75’, F86’, and W235) located at the tunnel bottleneck. Both NpaA1 and AtdA1 have three aromatic amino acids at the bottleneck, suggesting that these three aromatic amino acids may help in the proper positioning of aromatic amines in the tunnel. To identify the roles of these aromatic amine residues in regulating and controlling the substrate spectrum of NpaA1, a series of protein variants was generated with mutations in the NpaA1 tunnel, and the resultant mutant proteins were tested by enzyme assays. The enzyme assays of the NpaA1 mutants showed that F86A and F75A retained 15–25% activity towards 1NA but almost completely lost activity towards aniline (Figure 5B), suggesting that F75 and F86 have a greater impact on aniline than on 1NA binding in the tunnel. The mutant W235A was completely inactive, indicating the critical role of W235 for NpaA1 in proper substrate entry into the tunnel. Any combination of double mutations in NpaA1 resulted in a complete loss of activity towards both 1NA and aniline, indicating that the three aromatic amino acids act synergistically, likely participating in π-π interactions with substrates or cation-π interactions with the positively charged amino groups of aromatic amines in NpaA1. The tryptophan residues at the bottleneck of the NpaA1 and AtdA1 tunnels (W235 in NpaA1 and W81’ in AtdA1, respectively) are apparently different sites that affect the tunnel’s radius. We converted these residues in NpaA1 to their corresponding amino acids in AtdA1 and got the following mutations: M81A, M81W, W235L, and M81W/W235L (double mutation). The enzyme assays of the NpaA1 mutants showed that the single mutant M81A retained the ability to convert 1NA but almost completely lost activity towards aniline. However, the substitution of M81’ to the corresponding tryptophan in AtdA1 caused a reversal in substrate selectivity, from native NapA1 preferring 1NA to its mutant M81A preferring aniline. The W235L mutation in NpaA1 has a negligible effect on 1NA preference but enhances the effect of M81W in the M81W/W235L double mutant, completely eliminating 1NA conversion similar to AtdA1, with aniline becoming the only detectable substrate. (Figure 5B). These results suggest that the different sites of the tryptophan residues in NpaA1 and AtdA1 are crucial for influencing the differences in substrate spectra of the two enzymes. The residues M81 and W235 are the two crucial residues in NpaA1 that play a decisive role in NpaA1’s ability to catalyze naphthylamine glutamylation.
 
-## V201 is a key site influencing the selectivity of NpaA1 substrates
+### V201 is a key site influencing the selectivity of NpaA1 substrates
 
 The substrate binding tunnel terminates at the active center. Docking analysis of NpaA1 and AtdA1 revealed V201 implicated in 1NA binding, in the NpaA1 pocket, leading to a larger naphthylamine-binding volume. In AtdA1, Y205 (conserved in GS proteins) with a larger tryptophan side-chain group may increase steric hindrance for naphthylamine’s diphenyl ring (Murray et al., 2013; Wang et al., 2021). Surprisingly, the V201Y mutant in NpaA1 exhibited higher catalytic activity for both 1NA and aniline compared to the wild-type (Figure 5B). Single-site saturation mutagenesis was performed to investigate the effect of V201 for 1NA binding in NpaA1 (Figure 5C). In contrast to V201Y, V201F altered NpaA1’s substrate preference, indicating the contribution of hydroxyl groups on tryptophan to enhanced substrate binding. The substitution of Val201 with Leu enhanced activity toward 1NA by 8.8-fold, indicating a more accommodating pocket for naphthylamines. Mutating V201 to hydrophobic amino acids with longer side chains increased the likelihood of catalyzing monocyclic aniline conversion. In summary, V201 is pivotal in determining substrate preference in NpaA1.
 
@@ -114,25 +225,25 @@ The discovery of Pseudomonas sp. strain JS3066 and its ability to degrade 1-naph
 
 ## Materials and methods
 
-## Isolation and growth of 1NA-degrading bacteria
+### Isolation and growth of 1NA-degrading bacteria
 
 Isolates were obtained by selective enrichment under oxic conditions in a nitrogen-free minimal medium (BLK) (Bruhn et al., 1987) supplemented with 1-naphthylamine (0.1 mM). Subsurface samples used to inoculate the enrichments were collected from the capillary fringe at a former chemical manufacturing site in New Jersey, USA. When the 1-naphthylamine disappeared from the enrichments as determined by high-performance liquid chromatography (HPLC) the cultures were transferred to fresh medium. After the process was repeated 3 times isolates were obtained by spreading on agar plates containing BLK supplemented with 1-naphthylamine in the headspace and individual colonies were tested for the ability to grow on 1-naphthylamine in liquid medium.
 
-## Bacterial strains, plasmids, primers, chemicals, media, and culture conditions
+### Bacterial strains, plasmids, primers, chemicals, media, and culture conditions
 
 The bacterial strains and plasmids used in this study are described in Supplementary file 3, and the primers used are described in Supplementary file 4. Pseudomonas sp. strain JS3066 was grown at 30 °C in minimal medium (MM) with 0.3 mM 1NA as the sole carbon and nitrogen source. Aniline, 3,4-dichloroaniline, 2-naphthylamine, 1,5-naphthalenediamine, 1,8-naphthalenediamine, salicylate, and catechol were purchased from Aladdin Bio-Chem Technology Co., Ltd. (Shanghai, China). 1-Naphthylamine and 1,2-dihydroxynaphthalene were supplied by Sigma-Aldrich Co., Ltd. (Shanghai, China). 3-Chloroaniline was purchased from Damas-beta Co., Ltd (Shanghai, China). 2,3-Naphthalenediamine was purchased from Meryer Chemical Technology Co., Ltd. (Shanghai, China). 2,7-Naphthalenediamine was purchased from Bide Pharmaceutical Technology Co., Ltd. (Shanghai, China). γ-Glutamylated 1NA was supplied by J&K Scientific Chemical Co., Ltd. (Shanghai, China). Escherichia coli strains were grown in lysogeny broth (LB) at 37 °C, whereas P. putida KT2440-ΔcatAΔggt was cultivated in LB at 30 °C. Kanamycin (50 μg/ml) was added to the medium as needed.
 
-## Genome sequencing of strain JS3066 and bioinformatics
+### Genome sequencing of strain JS3066 and bioinformatics
 
 DNA of strain JS3066 was extracted with a Wizard Genomic Purification Kit (Promega, USA). The genome sequencing and assembly was done by the BGI Medical Examination Co., Ltd. (Wuhan, China) with the PacBio RSII platform. The complete genome was annotated by Rapid Annotations using the Subsystems Technology (RAST) server. The sequence of the genomic DNA is available under accession number (SUB13951314). BLASTp program was employed to deduce the amino acid identities of potential 1NA degradative genes.
 
 To analyze phylogenetic relationships, sequences were first aligned by Clustal X version 2.1; subsequently, the phylogenetic tree was generated by the neighbor-joining method using MEGA 11 (Tamura et al., 2021). The evolutionary distances between branches were calculated using the Kimura two-parameter distance model, with bootstrap analysis of 1,000 resamplings to evaluate the tree topology.
 
-## General DNA techniques
+### General DNA techniques
 
 Routine isolation of genomic DNA, extraction of plasmids, restriction digestion, transformations, PCR, and electrophoresis were carried out by following standard procedures. The sequencing of PCR products and plasmids were performed by Tsingke Biotech Co., Ltd. (Shanghai, China).
 
-## Construction of recombinant plasmids and heterologous expression
+### Construction of recombinant plasmids and heterologous expression
 
 Genes from strain JS3066 were amplified using the corresponding primers Supplementary file 4, the resultant amplified DNA fragments were cloned into digested plasmids using a ClonExpress MultiS One Step Cloning kit (Vazyme Biotech Co., Ltd., Nanjing, China).
 
@@ -140,33 +251,33 @@ The vector pBBR1MCS-2 was employed for heterologous expression of suspected func
 
 For overexpression of the npaA1 gene, it was amplified from the genomic DNA of strain JS3066 by PCR and then cloned into pET-29a to obtain the expression construct pET-npaA1 which was transformed into E. coli BL21 (DE3). The expression and purification of NpaA1, an N-terminal Strep II-tagged fusion protein, were performed according to procedures described previously (Ji et al., 2019). The eluted proteins were further fractionated by gel filtration on a Superdex 200 Increase 10/300 GL column (Cytiva) with the buffer containing 50 mM Tris-HCl and 200 mM NaCl. The purity of Strep II-tagged NpaA1 was analyzed by 12.5% SDS-PAGE. Protein concentration was determined by using the Bradford method. The expression and purification of NpaG and AtdA1, also N-terminal Strep II-tagged fusion proteins, were performed in the same way as for NpaA1. The primers used for constructing mutant vectors are listed in Supplementary file 5, and the mutants of NpaA1 were overexpressed and purified by the same methods as above.
 
-## SEC-Multi angle light scattering (SEC-MALS)
+### SEC-Multi angle light scattering (SEC-MALS)
 
 SEC-MALS was used to determine the molecular weight of NpaA1. Purified NpaA1, separated by gel filtration, was diluted to a final concentration of 2 mg/ml and dissolved in a 50 mM Tris buffer for sample loading.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 Purified NpaA1 protein was concentrated at 12 mg/ml in the buffer containing 30 mM Tris-HCl (pH 8.0) and 120 mM NaCl. Crystals were obtained at 20 °C in 1–2 weeks by sitting-drop vapor diffusion. Apo-NpaA1 was obtained in the buffer containing 0.1 M magnesium chloride hexahydrate, 0.1 M sodium acetate trihydrate, 0.1 M Bis-Tris 6.5 and 15 % v/v PEG smear broad (the ratio of protein to reservoir solution was 1:2). To obtain crystals of NpaA1─ADP─MetSox-P complex, ATP and MetSox were added to NpaA1 to a final concentration of 2 mM, and the protein solution was mixed 1:2 with the buffer containing 0.1 M magnesium chloride hexahydrate, 0.1 M rubidium chloride, 0.1 M PIPES 7.0 and 20 % v/v PEG smear low. The NpaA1─ADP was obtained under the same conditions as the NpaA1─ADP─MetSox-P complex above.
 
 All the X-ray diffraction data were collected on the BL19U1 beamline at the Shanghai Synchrotron Radiation Facility. The initial data were processed by the HKL3000 program.
 
-## Structure determination and refinement
+### Structure determination and refinement
 
 The crystal structure of apo-NpaA1 was determined by molecular replacement using the model of NpaA1 built by Alphafold2 (Jumper et al., 2021). The structure of apo-NpaA1 was used as the model for the other structures. The refinements of these structures were performed using Coot (Emsley et al., 2010) and Phenix (Liebschner et al., 2019).
 
-## Similarity searches and sequence comparison
+### Similarity searches and sequence comparison
 
 Amino acids of NpaA1 were used to search for similar sequences in the Swissprot database. Sequences with similarity above 27% were selected for multiple sequence alignment. Multiple sequence alignment and phylogenetic tree construction were performed using MEGA 11 (Tamura et al., 2021).
 
-## Biotransformation of 1NA in cell suspensions of P. putida KT2440-ΔcatAΔggt harboring various recombinant plasmids
+### Biotransformation of 1NA in cell suspensions of P. putida KT2440-ΔcatAΔggt harboring various recombinant plasmids
 
 Recombinants KT/pNPA01, KT/pNPA01-ΔA1, KT/pNPA01-ΔA2, and KT/pNPA01-ΔA12 were individually grown in 250 ml Erlenmeyer flasks with 100 ml of LB medium containing kanamycin (50 μg/ml) at 30 °C and 180 rpm, harvested by centrifugation (4 °C, 6000 rpm, 5 min), washed twice with Tris-HCl buffer (50 mM, pH 8.0) and finally resuspended in the same buffer. The optical density at 600 nm (OD600) of cell suspensions was adjusted to approximately 8.0. The substrate 1NA (final concentration of 0.4 mM) was added to the suspension, and degradation experiments were performed at 30 °C and 170 rpm on a rotary shaker. Samples were collected at regular intervals, and the change in concentrations of 1NA was analyzed by HPLC.
 
-## Enzyme assays
+### Enzyme assays
 
 Activities of NpaA1 and AtdA1 against different substrates were analyzed spectrophotometrically with a Lambda 25 spectrophotometer (PerkinElmer/Cetus, Norwalk, CT) by following the disappearance of tested substrates at individually defined wavelengths. The reaction system (0.5 ml volume) contained 1.5 mM ATP, 1.0 mM L-glutamate, 2.0 mM MgCl2, and 0.28 mg of NpaA1 in 50 mM Tris-HCl buffer (pH 8.0). The assay was initiated by adding different substrates. The molar extinction coefficients of various potential substrates were obtained by measuring their absorbance values in the reaction buffer at each characteristic wavelength. As for NpaA1 and AtdA1, one unit of enzyme activity (U) is defined as the amount of enzyme required for the consumption of 1 μmol of substrate in 1 min at 30 °C. Specific activities for NpaA1 and AtdA1 are expressed as units per gram of protein. The activity of NpaG against salicylate was measured by monitoring NADH oxidation at 340 nm and the molar extinction coefficient for NADH was taken as 6220 M–1·cm–1. The reaction system (0.5 ml volume) contained 200 μM NADH, 40 μM FAD, 80 μM salicylate, and 0.38 μg of NpaG in 50 mM potassium phosphate buffer (pH 7.2). For NpaG, one unit of enzyme (U) is defined as the amount of enzyme required for the consumption of 1 μmol of NADH in 1 min at 30 °C. Specific activity for NpaG against salicylate is expressed as units per milligram of protein.
 
-## Analytical methods
+### Analytical methods
 
 To isolate and identify the metabolites, the biotransformation sample was acidified to pH 2 with concentrated HCl and then extracted with an equal volume of ethyl acetate which was subsequently removed by evaporation. Bis (trimethylsilyl) trifluoroacetamide (BSTFA) and trimethylchlorosilane (TMCS) (volume ratio: 99/1) was used as the derivatization reagent so that active hydrogen atom(s) of the 1NA metabolites were replaced by a trimethylsilyl (TMS) group (Si(CH3)3), m/z 73. The pellet was dissolved in BSTFA-TMCS and then incubated at 60 °C for 30 min prior to GC-MS analysis. GC-MS analyses were performed on a TRACE 1310 gas chromatograph (Thermo Fisher Scientific, MA, USA) using a capillary column HP-5MS (0.25 mm × 30 m, Agilent Technologies, CA, USA). The column temperature gradient was 0–5 min, 60 °C; 5–27 min, 60–280°C (10 °C min–1); 27–32 min, 280 °C. The detector was a TSQ8000 Triple Quadrupole MS (Thermo Fisher Scientific, USA). The following conditions were applied for mass analysis: ionization mode, EI+; ionizing electron energy, 70 eV; source temperature, 250 °C, and mass range m/z 0–500. Mass spectra of individual total ion peaks were identified by comparison with authentic standards and the Wiley.275L mass spectra data base.
 

@@ -28,7 +28,7 @@ Widefield fluorescence begins with photons, usually from an incoherent source, p
 
 ## Results
 
-## Widefield illumination
+### Widefield illumination
 
 I began by considering the spread of illuminating photons into brain tissue, simulating 480 nm illumination from an incoherent source focused into the brain through a cranial window by a low magnification, low numerical aperture objective, a configuration commonly used to image activity in mammalian brains using GFP-based indicators. As expected, the broad trend was of a decline in illumination intensity with tissue depth but with an increase in intensity over the initial 200 µm (Figure 1A). When the scattering coefficient was set to zero, eliminating scattering from the model, intensity declined exponentially from the tissue surface with a length constant matching that of absorption (Figure 1A). With the absorption coefficient set to zero, leaving scattering the only mechanism of attenuation, the superficial rise in intensity became larger and extended deeper into the tissue, indicating that the superficial increase in illumination intensity is a result of scattering (Figure 1A).
 
@@ -40,7 +40,7 @@ How does scattering increase the illumination intensity in superficial tissue? P
 
 The concentrating effect of scattering is lost when angles at the brain surface are randomized, such as by overlying skull. In mouse, widefield imaging is often performed through intact skull (Mohajerani et al., 2013; Silasi et al., 2016; Allen et al., 2017; Makino et al., 2017; Gilad and Helmchen, 2020; Valley et al., 2020). Mouse skull is ~150–300 µm thick and transparent but strongly scattering (Soleimanzad et al., 2017; Wang et al., 2018). 300 µm of skull overlaying cortex randomizes the directions of propagation (Figure 1C), eliminating the increase in intensity in superficial tissue (Figure 1D). By randomizing the propagation angles of photons arriving at the brain surface, skull weights excitation towards the most superficial fluorophore molecules (Figure 1D).
 
-## Fluorescence collection
+### Fluorescence collection
 
 What percentage of photons from a fluorophore molecule contribute to the image and how does this percentage change with the depth of the source? I simulated fluorescence at 560 nm, in the green-yellow spectrum, from point sources at different depths (Figure 2A). Photons that exit the tissue within the 5.7° maximum collection angle of the objective are collected and contribute to image formation. 0.58% of photons from a surface source are collected (Figure 2B). The collection percentage increases slightly with source depth to ~400 µm, due to scattering, and decreases thereafter (Figure 2B). Photons from deep within cortex can contribute as much to detected fluorescence as photons from superficial layers, with collection percentages for sources on the surface and 1 mm deep being equal.
 
@@ -52,7 +52,7 @@ Collected photons are scattered en route to the tissue surface. Photons from a p
 
 The model accurately predicted the surface distribution of photons. In three experiments, a bolus ~50–100 µm in diameter of 0.1 µm fluorescent beads was injected into mouse cortex at depths of 165, 190, and 310 µm. The diameter and depth of the distribution were measured with 2-photon fluorescence microscopy (Figure 2D). The diameter of the surface distribution, measured with widefield fluorescence, was ~1 mm (Figure 2D,E). The model slightly overestimated the spread toward the edges, but accurately predicted the distribution of the majority of photons (Figure 2E,F).
 
-## Effects of focal plane depth, numerical aperture, field of view, and skull
+### Effects of focal plane depth, numerical aperture, field of view, and skull
 
 In Figures 1 and 2, illumination and fluorescence collection extend through all layers of cortex, peaking in the middle layers. Do illumination and collection change with system optics?
 
@@ -70,7 +70,7 @@ Finally, I examined the consequences of imaging through 300 µm of skull. Skull 
 
 In summary, optical parameters typically have modest effects on widefield fluorescence. That said, changing to a higher magnification objective will generally result in a greater numerical aperture and a smaller field of view and together these changes can increase collection efficiency and limit the effective point spread function, albeit by vignetting.
 
-## Fluorescence from tissue under a blood vessel
+### Fluorescence from tissue under a blood vessel
 
 The absorption and scattering coefficients used in the model were measured in vivo and therefore account for the effects of endogenous molecules such as hemoglobin, with the absorption coefficient in vivo being ~5 times greater than that measured in vitro, largely because of absorption by hemoglobin (Johansson, 2010). Nonetheless, in the brain there will be local variations in absorption and scattering, such as in the vicinity of blood vessels, resulting in local effects that are not reflected in Figures 1–3.
 
@@ -84,7 +84,7 @@ Illumination intensity is reduced immediately below a vessel and throughout the 
 
 Vessel diameter and content are dynamic in vivo. Under 2-photon excitation, dilation of a small vessel can cause a substantial decline in fluorescence from an underlying neuron (≥10% ΔF/F from a neuron under a 50 µm diameter vessel during sensory stimulation; Shen et al., 2012). Likewise, changes of ≥10% ΔF/F occur in widefield fluorescence near large surface vessels and can be largely separated from changes in tissue fluorescence with appropriate measurements and calculations (Valley et al., 2020).
 
-## Fluorophore expression and the volume from which fluorescence is collected
+### Fluorophore expression and the volume from which fluorescence is collected
 
 There are many mouse lines available with fluorophore in sub-populations of neurons, often cells with somata in only one or two layers of cortex. However, the axons and dendrites of most neurons extend into other layers where they may contribute to widefield fluorescence. From which layers do widefield fluorescence signals originate? What percentage of the fluorescence arises from somatic layers?
 
@@ -116,7 +116,7 @@ In summary, widefield fluorescence at the brain surface is a weighted sum of pho
 
 ## Materials and methods
 
-## Monte carlo model
+### Monte carlo model
 
 Photon trajectories, light intensities and tissue heating were calculated using a Monte Carlo random-walk model implemented in Python. The model was almost identical to that in several previous studies (Wang et al., 1995; Stujenske et al., 2015; Podgorski and Ranganathan, 2016; Wang et al., 2020). Individual photons or packets of photons moved stochastically through the 3-dimensional volume, in which they were subjected to absorption and scattering by the tissue. Scattering angles relative to the optical axis were calculated with the Henyey-Greenstein phase function.
 
@@ -134,13 +134,13 @@ Collection was simulated for photons from sources near the center of the field o
 
 Monte Carlo code, including figures, is available at https://doi.org/10.6084/m9.figshare.12317414.v1.
 
-## Measured surface distributions
+### Measured surface distributions
 
 0.1 µm diameter fluorescent polystyrene beads (Molecular probes) were injected into the cortex of an anesthetized adult mouse (2% isoflurane) with a cranial window sealed with a 5 mm diameter coverglass. Injection was performed through a glass patch pipette with the tip bumped to prevent blockage, inserted into the brain under 2-photon visual guidance through a ~ 0.5–1 mm hole drilled in the coverglass. Beads were injected with positive pressure. 2-photon and widefield images were acquired through a Nikon x16/NA0.8 objective. The depth of the center of the injection was determined from a 2-photon z-stack and the corresponding expected distribution calculated using the model, assuming a point source at the appropriate depth and a TL10X-2P objective.
 
 Animal experiments were performed in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All animals were handled according to Allen Institute for Brain Science institutional animal care and use committee protocol 1806.
 
-## Expression patterns
+### Expression patterns
 
 GCaMP6f expression was measured in six mouse lines: Slc17a7-IRES-Cre;Camk2a-tTA;Ai93(TITL-GCaMP6f), Cux2-CreERT2;Camk2a-tTA;Ai93(TITL-GCaMP6f), Rorb-IRES2-Cre;Camk2a-tTA;Ai93(TITL-GCaMP6f), Rbp4-Cre_KL100;Camk2a-tTA;Ai93(TITL-GCaMP6f), Fezf2-CreER2;Ai148(TIT2L-GC6f-ICL-tTA2), and Ntrs1-Cre_GN220; Ai148(TIT2L-GC6f-ICL-tTA2). Abbreviated names: Slc17a7-Ai93, Cux2-Ai93, Rorb-Ai93, Rbp4-Ai93, Fezf2-Ai148, and Ntrs1-Ai148.
 

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Microbial fitness screens are a key technique in functional genomics. We present an all-in-one solution, pyphe , for automating and improving data analysis pipelines associated with large-scale fitness screens, including image acquisition and quantification, data normalisation, and statistical analysis. Pyphe is versatile and processes fitness data from colony sizes, viability scores from phloxine B staining or colony growth curves, all obtained with inexpensive transilluminating flatbed scanners. We apply pyphe to show that the fitness information contained in late endpoint measurements of colony sizes is similar to maximum growth slopes from time series. We phenotype gene-deletion strains of fission yeast in 59,350 individual fitness assays in 70 conditions, revealing that colony size and viability provide complementary, independent information. Viability scores obtained from quantifying the redness of phloxine-stained colonies accurately reflect the fraction of live cells within colonies. Pyphe is user-friendly, open-source and fully documented, illustrated by applications to diverse fitness analysis scenarios.
+Microbial fitness screens are a key technique in functional genomics. We present an all-in-one solution, pyphe, for automating and improving data analysis pipelines associated with large-scale fitness screens, including image acquisition and quantification, data normalisation, and statistical analysis. Pyphe is versatile and processes fitness data from colony sizes, viability scores from phloxine B staining or colony growth curves, all obtained with inexpensive transilluminating flatbed scanners. We apply pyphe to show that the fitness information contained in late endpoint measurements of colony sizes is similar to maximum growth slopes from time series. We phenotype gene-deletion strains of fission yeast in 59,350 individual fitness assays in 70 conditions, revealing that colony size and viability provide complementary, independent information. Viability scores obtained from quantifying the redness of phloxine-stained colonies accurately reflect the fraction of live cells within colonies. Pyphe is user-friendly, open-source and fully documented, illustrated by applications to diverse fitness analysis scenarios.
 
 ## Introduction
 
@@ -37,9 +37,21 @@ We illustrate the use of pyphe by investigating the growth dynamics of 57 natura
 
 ## Results
 
-## Pyphe enables analysis pipelines for fitness-screen data
+### Pyphe enables analysis pipelines for fitness-screen data
 
 The pyphe pipeline is designed to take different fitness proxies as input: endpoint colony sizes, colony growth curves or endpoint colony viability estimates from phloxine B staining (Figure 1). Image acquisition, image analysis, growth-curve analysis, data normalisation and statistical analysis are split into separate tools which can be assembled into a pipeline as required for each experiment and combined with other published tools, e.g. gitter (Wagih and Parts, 2014) for image quantification. Each tool takes and produces human-readable data in text/table format.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig1-v1.jpg)
+
+**Figure 1.:** Pyphe is flexible and can use several fitness proxies as input. In a typical endpoint experiment, plate images are acquired using transmission scanning and colony sizes are extracted using pyphe-quantify or the R package gitter (Wagih and Parts, 2014). Alternatively or additionally, plates containing phloxine B are scanned using reflective scanning and analysed with pyphe-quantify in redness mode to obtain redness scores reflecting colony viability. Alternatively, image time series can be analysed with pyphe-quantify in timecourse mode and growth curve characteristics extracted with pyphe-growthcurves. Pyphe-analyse analyses and organises data for collections of plates. It requires an Experimental Design Table (EDT) containing a single line per plate and the path to the data file, optionally the path to the layout file, and any additional metadata the user wishes to include. Data is then loaded and the chosen normalisation procedures are performed. QC plots are produced and the entire experiment data is summarised in a single long table. This table is used by pyphe-interpret which produces a table of summary statistics and p-values for differential fitness analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All 144 images from the image time course of 57 wild strains in replicates in 1536 format were analysed with pyphe-quantify batch and with gitter using remove.noise=TRUE and inverse=TRUE settings. (A) Colony area measurements obtained with pyphe-quantify are very tightly correlated with those obtained with gitter (r=0.9991). In terms of absolute values, colony size estimates are consistently lower which is due to the default thresholding settings. (B) Mean pixel intensities (averaged over all pixels identified as belonging to the same colony) depend strongly on colony size (thickness). This signal quickly saturates as colonies become larger, as previously described by Zackrisson et al., 2016. (C) Illustration of image analysis algorithm used by pyphe-quantify in redness mode.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Placement of two 96 grids in opposite corners of 1536 plate maximises grid coverage and only uses 1 in 8 positions for normalisation purposes. (B) Left: Mean uncorrected colony sizes across hundreds of plates. A strong edge effect is clearly visible. This is removed by grid correction which introduces a much weaker secondary edge (right). (C) Prediction of missing corners based on neighbours. Shown are predicted versus actual colony sizes for top left and bottom right corners (the training data) for an experiment comprising 375 plates. The linear regression model in this case was y = 1.24 * horizontal neighbour + 0.16 * vertical neighbour - 34. The R² was 0.96. (D) Extremely small grid colonies can result in negative values for expected colony sizes.
 
 In a typical workflow, images are acquired using pyphe-scan which provides an interface for image acquisition using SANE (Scanner Access Now Easy) on a Linux-type operating system. It handles plate numbering, cropping and flopping, and format conversion functionality for large image stacks. Optionally, image time-series can be recorded. Pyphe-scan was written to work with EPSON V800 scanners, the newer model in the series previously used by others (Takeuchi et al., 2014; Zackrisson et al., 2016).
 
@@ -49,11 +61,27 @@ Spatial normalisation is performed for each plate and data across all plates are
 
 Finally, differential fitness is assessed using pyphe-interpret which produces summary statistics and p-values based on the complete data report from pyphe-analyse (Appendix 3). Pyphe-interpret gives users the option to either test for differences between strains in the same condition or between the same strain in different conditions. The latter is the recommended option for testing for condition-specific growth effects compared to a control condition.
 
-## Effective normalisation reduces noise and bias in data
+### Effective normalisation reduces noise and bias in data
 
 Pyphe is designed to use different fitness proxies as input. In particular, it can use either maximum growth rates extracted from growth curves or endpoint colony size measurements. Previous studies have reported that information from growth curves are more precise (Zackrisson et al., 2016), but their acquisition requires substantially higher investment and produces large amounts of image data. While lower precision could be easily compensated by a higher number of replicates, growth curves provide the additional advantage that they capture the entire growth phase instead of a static snapshot. The results obtained in endpoint measurements might, therefore, depend on the timepoint used for the measurement. For example, the fitness of a strain with a long lag phase but high maximum growth rate may be underestimated if an early timepoint is chosen.
 
 To assess the extent to which the choice of the timepoint matters, we recorded image time series for 57 S. pombe wild strains growing in 1536 spots per plate in approximately 20 replicates on 8 different media (Supplementary file 1). The conditions were designed to produce different growth rates and dynamics, and included mixes of different carbon sources with yeast extract as nitrogen source in rich media and different nitrogen sources in minimal media. These strains are genotypically and phenotypically diverse and display a broad range of growth characteristics (Jeffares et al., 2015). First, colony areas were extracted with gitter (Wagih and Parts, 2014), and relative, corrected colony sizes were computed for each image using the grid normalisation implemented in pyphe-analyse and averaged for each strain. We show an exemplary analysis of a single condition (standard rich media) in Figure 2 and a detailed analysis of all conditions in Figure 2—figure supplement 1 and 2. Relative colony sizes remained largely constant after the period of fast growth had come to end at roughly 16 hr (Figure 2A). Concordantly, a correlation matrix of all timepoints showed near perfect correlation of timepoints with the 48 hr end point from 16 hr (Figure 2Biii). Notably, all timepoints were correlated with the initial timepoint, albeit much lower, suggesting a significant bias introduced by the amount of initially deposited biomass. In our hands, this problem is more pronounced with wild strains than with knock-out collections as the former exhibit a variable degree of cell aggregation. However, we overcome this issue by reporting strain fitness as a ratio of growth in an assay condition relative to a control condition, in which case this bias is neutralised. We next analysed image timeseries with pyphe-quantify in timecourse mode, extracted slopes with pyphe-growthcurves (Appendix 4) and applied grid correction in pyphe-analyse. Later timepoints generally showed a much better correlation with maximum growth rate compared to early ones or those taken when growth is most rapid (Figure 2 Bi+ii). Across all conditions, the median correlation of corrected maximum slopes with corrected colony sizes at the final timepoint was 0.95 (Figure 2—figure supplement 3). We conclude that late timepoints should be chosen for endpoint measurements, when the readout is stable and correlates well with the maximum growth rate.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig2-v1.jpg)
+
+**Figure 2.:** (A) Growth curves of 57 wild S. pombe strains (average of approximately 20 replicates each) before (top) and after (bottom) correction. Corrected colony sizes describe the fitness relative to the standard laboratory strain (972) after grid correction. (B) Late endpoint measurements are tightly correlated with maximum slopes. (i) Average growth rates (mean difference in sum of pixel intensities between consecutive timepoints) across all strains. (ii) Pearson correlation of each individually corrected timepoint with corrected maximum slope of growth curves. The correlation increases throughout the rapid growth curve and then maintains high levels as the phase of fast growth comes to an end. (iii) Pearson correlation matrix of all corrected timepoints (averaged by strain prior to correlation analysis). (C) Coefficient of variation (CV, blue) and fraction of unexplained variance (FUV, orange) for corrected and uncorrected colony sizes throughout the growth curve. Dashed lines are the same values computed based on maximum slopes. The average growth curve of the control strain is shown in green (based on colony sizes extracted with gitter). The normalisation procedure maintains noise at low levels even in later growth. Endpoint measurements contain slightly more noise than slope measurements. (D) Scatter plots of colony fitness estimates dependent on the sum of colony fitness of its 8 neighbours. A positive correlation, such as seen for the uncorrected readouts, points to spatial biases within plates (specific regions of a plate growing slower/faster, for example due to temperature, moisture or nutrient gradients). A negative correlation would be expected for competition effects. Without correction, regional plate effects dominate over competition effects and these are efficiently removed during grid correction. Importantly, the correction does not result in a negative correlation, a potential side-effect of correcting colony sizes by comparing it to the size of neighbouring controls, which would lead to phenotypes becoming artificially more extreme.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Left: Heatmaps showing raw and corrected colony sizes of maximum slopes and endpoints. Centre: Correlation of timepoints with each other (large heatmaps), correlation of each timepoint with maximum slope (heatmaps above), and average growth rate across plate for each timepoint (heatmaps on top). Right: Coefficient of variation (CV, blue) and fraction of unexplained variance (FUV, orange) for corrected and uncorrected colony sizes throughout the growth curve. Dashed lines are the same values computed based on maximum slopes. The average growth curve of the control strain (based on colony sizes extracted with gitter) is shown in green.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Left: Heatmaps showing raw and corrected colony sizes of maximum slopes and endpoints. Centre: Correlation of timepoints with each other (large heatmaps), correlation of each timepoint with maximum slope (heatmaps above), and average growth rate across plate for each timepoint (heatmaps on top). Right: Coefficient of variation (CV, blue) and fraction of unexplained variance (FUV, orange) for corrected and uncorrected colony sizes throughout the growth curve. Dashed lines are the same values computed based on maximum slopes. The average growth curve of the control strain (based on colony sizes extracted with gitter) is shown in green.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Distribution of CVs and FUVs (based on 96 replicates of the control strain 972 evenly dispersed through the plate, normalised for spatial effects with grid correction) across 8 conditions. Using maximum slopes instead of endpoints usually results in lower noise levels. (B) Table listing the correlation between corrected maximum slopes and corrected enpoints.
 
 The choice of timepoint also affects the level of noise. For uncorrected colony sizes, the coefficient of variation (CV, ratio of the standard deviation to the mean) of 96 replicates of the control strain, dispersed evenly in the plate, dropped steadily during the rapid growth phase, reaching a minimum around 20 hr when it started to rise again (Figure 2C). This is likely due to edge and other spatial effects which affect later growth as nutrients deplete and plates start to dry unevenly. After normalisation, the CV was generally lower, and this later rise in noise could be compensated so that the CV remained near its minimum. The CV of the maximum slopes was lower than obtained with endpoints. However, CV values alone are insufficient to judge the effectiveness of a normalisation strategy, as it reflects precision of the reported values but not the method’s ability to delineate differences between strains. As an additional indicator, we therefore used the ratio of the variance of the controls and the variance of the entire dataset, the fraction of unexplained variance (FUV), which indicates the level of noise relative to the biological signal in the data. Overall, the FUV behaved similarly to the CV and was at a minimum at around 20 hr for the uncorrected data. With corrections, this minimal value was largely maintained until the end of the experiment. A lower FUV can be obtained by using maximum slopes rather than individual timepoints. The other, non-standard conditions tested showed similar qualitative dynamics, but with noise levels and timings varying between conditions as expected (Figure 2—figure supplements 1–3).
 
@@ -61,17 +89,37 @@ Although correcting for position and batch effects is essential for high-through
 
 To gauge if phenotype exaggeration globally presents a problem in other parts of the plate, we compared raw and final corrected colony sizes and maximum slopes to the respective sum of all its 8 neighbours. For uncorrected fitness values, there was generally a positive correlation (stronger for colony sizes than for slopes), indicating that regional plate effects dominate over competition between neighboring colonies. This bias was removed after correction. Importantly no negative correlation was observed. We conclude that grid correction does not lead to any significant effect exaggeration.
 
-## Monitoring cell viability with phloxine B provides an independent and complementary phenotypic readout to growth assays
+### Monitoring cell viability with phloxine B provides an independent and complementary phenotypic readout to growth assays
 
 The addition of phloxine B to agar medium stains colonies in different shades of red, reflecting the fraction of dead cells, which can provide an additional phenotype readout from the same colony used for growth measurements. To investigate how colony size and redness relate, we used the pyphe pipeline to characterise 238 S. pombe single-gene deletion strains in 70 conditions in biological triplicates (n = 59,350 total colonies profiled, including controls but excluding grid colonies, Supplementary file 2). The two fitness proxies showed little correlation (Pearson r = −0.088) after correction of colony sizes using the grid approach with subsequent row/column normalisation and correction of redness scores by row/column median normalisation only (Figure 3A). Normalisation strategies for redness images are described in Figure 3—figure supplement 1. Many mutant-condition pairs showed a strong phenotype in only one of the two read-outs. Noise levels of redness scores were very low (CV = 1.04%) and the biological signal strong (FUV = 7.83%). We conclude that the phloxine B redness scores provide robust, precise information on mutant fitness, and serves as a largely orthogonal and independent measure compared to the (well correlated) growth rate or colony size measurements.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig3-v1.jpg)
+
+**Figure 3.:** (A) Relative colony sizes and redness scores after correction for 238 single gene knock-outs in 70 conditions (after quality filtering as described in Methods, three biological replicate colonies for each condition-gene pair are shown individually). The two read-outs are only weakly anti-correlated (r = −0.088) and many mutant-condition pairs show a strong phenotype in only one of the two fitness proxies. Axes were cut to exclude extreme outliers for visualisation. The redness score was robust with a CV of 1.04% and a FUV of 7.83% (histogram on right). For comparison, the CV and FUV of the colony size read-out were 6.1% and 31.5%, respectively (top histogram). (B) Clustered Pearson correlation matrix of averaged corrected colony sizes (n = 3) for 7 conditions with and without phloxine B. Repeats with and without dye consistently cluster together indicating general robustness of our measurements across batches and no substantial mutant-condition-dye interactions. (C) Boxplot comparing the pairwise correlation between conditions with and without phloxine B (median = 0.92) and all possible pairs from (B) (median = 0.51).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Median redness scores across 308 plates (covering 78 different conditions). Top left: Uncorrected redness scores as obtained with pyphe-quanitfy in redness mode. There is a strong row-dependent effect with colonies in the top and bottom rows showing increased redness. This bias can be removed with a row/column median normalisation as implemented in pyphe-analyse, resulting in median corrected redness scores in the top right. Alternatively (e.g. if row/column median normalisation is no option), grid normalisation can be used (bottom left). This introduces the secondary edge effect observed before (Figure 1—figure supplement 2B), which can be removed by an additional subsequent row/column median normalisation. Colormaps were clipped at 1.05 for heatmaps showing corrected phenotypes. (B) Raw redness scores vary between plates. A major factor is whether the media is minimal or rich. Boxes show distributions of raw redness scores for 451 replicates o the standard lab strain 972 (across 41 plates) for rich media and 77 replicates acr across 7 plates for minimal media. (C) CVs and FUVs across all 308 plates with the three different correction strategies explained above. The optimal choice of normalisation will vary acorss experiments, but unlike for colony sizes, row/column median normalisation achieves comparable reductions in noise.
+
 Phloxine B can be toxic if exposed to light (Qi et al., 2011), so we tested whether phloxine B changes growth parameters by determining colony sizes for our mutant set in 7 conditions. Measurements with and without phloxine B were performed in different batches and in different weeks to exclude that batch effects increase the correlation. Within the 14 phenotype vectors measures in total, identical conditions with and without phloxine clearly and consistently clustered together (Figure 3B). The median correlation for the 7 condition pairs with and without phloxine was 0.92, which was substantially higher than that of all possible pairs from the 14 phenotypes (Figure 3C). We conclude that the main driver of the biological signal is the condition and not whether phloxine B is included. We tested for specific gene-condition pairs showing differential growth on media with and without phloxine (Supplementary file 3). This analysis identified a single gene, the trehalose-6-phosphate phosphatase tpp1, as having a small slow-growth phenotype on rich media (ratio of medians of corrected colony sizes 0.89, padj = 0.028) and a moderate effect on minimal media (ratio of medians = 0.79, padj = 0.049). In order to account for such genotype-specific effects, differential fitness should generally be assessed against a control condition also containing phloxine B.
 
-## Phloxine B staining informs about fraction of live cells in colony
+### Phloxine B staining informs about fraction of live cells in colony
 
 Finally, we tested whether and how the colony redness score relates to the viability of cells in the colony. We determined colony composition and viability status at the single cell level using ImageStream flow cytometry. Across 23 samples, obtained from colonies with varying redness scores (Figure 4A), phloxine B staining classified cells into three populations (Figure 4B and C, Figure 4—figure supplement 1, Supplementary file 4): live cells which showed a background level of staining, dead cells which were brightly stained, and lysed or damaged cells which showed no staining. The fraction of live cells (alive/(dead+lysed+alive)) was inversely correlated (Pearson r = −0.88, with some grouping of strains) with colony redness scores obtained with pyphe-quantify and row/column median corrected by pyphe-analyse (Figure 4D). This correlation was stronger than the correlation of colony redness scores with the fraction of live and lysed cells (lysed+alive /(dead+lysed+alive), r = −0.78, Figure 4—figure supplement 2), suggesting that lysed cells, while not stained in the FACS, do contribute to colony redness. This is explained by the dye not being washed out in colonies, unlike in cells resuspended in PBS for flow cytometry analysis. We next asked how well phloxine B staining agrees with a distinct, established dead-cell stain (LIVE/DEAD). In wild-type cells, staining with both dyes agreed closely (accuracy 99.3% using LIVE/DEAD classification as ground truth, Figure 4E). We conclude that phloxine B staining, combined with our imaging and analysis pipeline, provides a sensitive and accurate readout reflecting the proportion of live/dead cells in a colony.
 
-## Redness readouts should be obtained in stationary phase
+![Figure 4.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig4-v1.jpg)
+
+**Figure 4.:** (A) Example of colony redness score extraction by pyphe-quantify in redness mode. From the acquired input image (i), colors are enhanced and the background subtracted (ii), colonies are identified by local thresholding (iii), and redness is quantified and annotated in the original image (iv). (B) Representative cells for alive, dead and lysed cells using imaging flow cytometry (ImageStream). Lysed cells show no signal in either the phloxine B or LIVE/DEAD channels. Live cells show an intermediate signal intensity in the phloxine B channel but no LIVE/DEAD signal. Dead cells are brightly stained in both channels. (C) Histogram of intensities in phloxine B channel across 23 samples with three populations (lysed, alive and dead) clearly resolved. (D) Fraction of live cells (live/(lysed+dead)) by ImageStream correlate with colony redness scores (corrected by row/median column normalisation) obtained with pyphe. (E) Co-localisation of phloxine B stain with LIVE/DEAD stain for the standard lab strain 972. Both readouts agree with 99.3% accuracy using the illustrated thresholds.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Plot titles indicate the gene which was knocked out. The standard laboratory strain 972 was measured in 6 biological replicates from samples obtained from different colonies.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55160/elife-55160-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The correlation is weaker than for the fraction of live cells only (neither burst nor strongly stained in the flow cytometer, shown in Figure 4D). This suggests that burst cells do contribute to staining in the colony (while being unstained in the flow cytometer). Note that the correlation especially breaks down for colonies with higher redness scores (which have more burst cells).
+
+### Redness readouts should be obtained in stationary phase
 
 We have shown that for colony sizes similar results are obtained even if the plates are incubated for a few days after rapid growth has ended. The same is not necessarily expected for colony redness scores. In fact, colonies might appear red due to strains producing dead cells during growth or due to death when non-dividing cells reach the end of their chronological lifespan, which is temporally decoupled from growth. Certainly, if colonies are left for a very long time, cells will age, with striking physiological adaptations and eventually cell death (Váchová and Palková, 2018). To investigate how much the choice of timepoint matters with colony redness scores, we acquired colour images every 20 min for 48 hr on standard rich media for the set of 238 S. pombe single gene knock-outs. Each image from the experiment was analysed with pyphe-quantify in redness mode. In general, we do not recommend analysing images of young, small colonies for redness. All colonies showed a background signal unspecific to the dye and this increased with colony thickness. During early timepoints, we therefore detect an increase in raw, uncorrected redness (Figure 5A).
 
@@ -91,24 +139,76 @@ The pyphe toolbox and underlying python package provide a versatile pipeline for
 
 ## Materials and methods
 
-## Software availability statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Schizosaccharomyces pombe)</td>
+      <td>57 S. pombe wild strains</td>
+      <td>Jeffares et al., 2015</td>
+      <td>JBxxx</td>
+      <td>These strains were identified as a set of most diverse strains from the overall collection</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Schizosaccharomyces pombe)</td>
+      <td>238 S. pombe knock-out strains</td>
+      <td>Bioneer and (Sideri et al., 2015)</td>
+      <td>Pombase gene IDs and names</td>
+      <td>The original library obtained from Bioneer was made prototrophic by crossing with suitable strain. Genes were selected to cover GO functional categories and include unknowns.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phloxine B</td>
+      <td>Sigma</td>
+      <td>Cat# P2759</td>
+      <td>Prepared as a 5 g/L (1000x) stock in water and stored at 4°C in the dark.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pyphe</td>
+      <td>This publication</td>
+      <td>Pyphe provides the following tools: pyphe-scan, pyphe-scan-timecourse, pyphe-quantify, pyphe-analyse, pyphe-interpret, pyphe-growthcurves</td>
+      <td>Version 0.95 was used for preparation of this manuscript.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Scanner</td>
+      <td>Epson</td>
+      <td>V800 Photo</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Software availability statement
 
 Pyphe is open software published under a permissive license. We welcome bug reports, feature requests and code contributions through https://github.com/Bahler-Lab/pyphe. Pyphe is also available through the Python Package Index at https://pypi.org/project/pyphe/.
 
-## Wild strain test data set
+### Wild strain test data set
 
 An overnight liquid culture of strain 972 h- in YES medium was pinned in 96-colony (8 × 12) format on YES agar medium, using a RoToR HDA pinning robot (Singer Instruments) and grown for two days at 32°C. This grid was combined with randomly arranged plates of the 57 wild strains in 1536 (32 × 48) format and grown for 2 days at 32°C. Strains were then copied onto fresh assay plates, using the 1536 short pinning tool at low pressure. Plates were placed in scanners (EPSON V800) in an incubator at 32°C and images were acquired every 20 min for 48 hr using pyphe-scan-timecourse. Growth curves were extracted using pyphe-quantify in timecourse mode with the following settings: --s 0.1. Growth curve parameters were extracted with pyphe-growthcurves with the --fitrange 12 option. Individual images were analysed with gitter using the following settings: --inverse TRUE --remove.noise TRUE. Grid correction of maximum slopes and individual timepoints was performed in pyphe-analyse.
 
-## Knock-out test data set
+### Knock-out test data set
 
 238 mutants, broadly spanning GO Biological Function categories plus several uncharacterised genes, were selected from a prototroph derivative of the Bioneer deletion library (Sideri et al., 2015). Strains were arranged in 384-colony (16 × 24) format with a single 96 grid placed in the top left position, so that the grid includes one colony in every fourth position within the 384-colony array. To prepare replicates, this plate was independently pinned 3 times from the cryostock on solid YES media for each batch. From these plates, colonies were then spotted on assay plates containing various toxins, drugs or nutrients. The conditions used in Figure 3B are: EtOH10 is YES+10% (v/v) ethanol, VPA10 is YES+10 mM valproic acid, MMS0.005 is YES+0.005% (v/v) methyl methanesulfonate, Forma2.5 is YES+2.5% (v/v) formamide, Diamide2 is YES+2 mM diamide, EMM is standard Edinburgh Minimal Medium, YES is standard Yeast extract with supplements and 3% glucose. Assay plates were usually grown for 2 days at 32°C but this varied according to the strength of the stress slowing the growth of the colonies. After incubation, images were acquired using EPSON V800 scanners and pyphe-scan and quantified with gitter (see options above) or pyphe-quantify in redness mode. Grid correction and subsequent row/column median normalisation of maximum slopes and individual timepoints was performed in pyphe-analyse. Row/column median normalisation was applied to redness data plates. For the size data set, 0-sized colonies and colonies with a circularity below 0.85 were set to NA. Plates with a CV > 0.2 or FUV >1 were removed as those most likely represent conditions in which the stress was too strong or where technical errors occurred.
 
-## Imaging flow cytometry
+### Imaging flow cytometry
 
 We picked 23 colonies with varying redness from the collection of 238 S. pombe deletion strains grown on solid YES with 5 mg/L phloxine B for 3 days at 32°C and resuspended in 1 mL of water. For analysis of phloxine B staining, 500 µL of this cell suspension were centrifuged at 4000 g for 2 min, the supernatant was removed and the pellet resuspended in 75 µL of PBS. For analysis of phloxine B and LIVE/DEAD co-staining, 500 µL of the same suspension were centrifuged at 4000 g for 2 min, the supernatant was removed and the pellet resuspended in 300 µL of LIVE/DEAD solution (LIVE/DEAD Fixable Far Red Dead Cell Stain Kit, for 633 or 635 nm excitation, ThermoFisher Scientific, Cat. no. L34974). LIVE/DEAD solution was prepared according to manufacturer’s instructions (1:1000 dilution in H2O from a stock solution dissolved in 50 uL of DMSO). The pellet was resuspended and incubated for 30 min in the dark. Cells were then spun down and resuspended in 75 µL of PBS.
 
 Immediately prior to analysis, samples were sonicated for 20 s at 50W (JSP Ultrasonic Cleaner model US21), and transferred to a two-camera ImageStreamX Mk II (ISX MKII) imaging flow cytometer (LUMINEX Corporation, Austin, Texas) for automated sample acquisition and captured using the ISX INSPIRE data acquisition software. Images of 5000–12,000 single focused cells were acquired at 60x magnification and low flow rates, using the 488 nm excitation laser at 90 mW to capture phloxine B on channel 3; 642 nm excitation laser at 150 mW to capture LIVE/DEAD cells on channel 11; bright field (BF) images were captured on channels 1 and 9, and side scatter (SSC) on channel 6. For co-stained cell analysis, to generate a compensation matrix, cells stained either with phloxine B or with LIVE/DEAD dye individually were captured without brightfield illumination (BF and SSC channels were OFF). The compensation coefficients were calculated automatically using the compensation wizard in the Image Data Exploration and Analysis Software (IDEAS) package (v6.2). Populations of interest (single focused cells) were gated in IDEAS and the features of interest (dye intensities) were then exported for further analysis using Python. Intensity values were subtracted by their minimum over all samples (which was slightly below zero) and added to 1 prior to log10 transformation. Thresholds for the three populations were set manually based on the intensity histogram across all samples.
 
-## Redness timecourse dataset
+### Redness timecourse dataset
 
 The mutant collection was woken up from the cryostock on YES media and copied onto fresh YES with 5 mg/L phloxine B. Images were acquired every 20 mins with pyphe-scan-timecourse. Images were analysed with pyphe-quantify redness with --s 0.1. Timepoints were grid corrected using pyphe-analyse.

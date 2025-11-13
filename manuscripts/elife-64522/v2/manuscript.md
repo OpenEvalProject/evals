@@ -28,7 +28,7 @@ Here, we elucidate the dynamics of a regulatory network underlying phenotypic he
 
 ## Results
 
-## Discrete and parameter-agnostic continuous simulations of the SCLC network result in similar phenotypic distributions
+### Discrete and parameter-agnostic continuous simulations of the SCLC network result in similar phenotypic distributions
 
 We simulated the emergent dynamics of a SCLC master regulatory network constructed from gene expression signatures, which contained 33 nodes and 357 edges (Udyavar et al., 2017; Figure 1A). To obtain the steady-state (i.e. phenotypic) distributions corresponding to this complex network, we implemented two complementary approaches – one of them is a discrete parameter-independent Boolean modeling approach using Ising model formalism and an asynchronous update mode (Font-Clos et al., 2018), and the other is RACIPE (Random Circuit Perturbation) (Huang et al., 2017), a parameter-agnostic approach that uses a set of coupled ordinary differential equations (ODEs) with parameters sampled over a wide biologically relevant range.
 
@@ -36,7 +36,13 @@ We simulated the emergent dynamics of a SCLC master regulatory network construct
 
 **Figure 1.:** (A) SCLC regulatory network, in which green nodes denote activation and red nodes denote inhibitory interaction. (B) Steady states achieved from asynchronous Boolean update, using Ising model and 220 initial conditions (for results corresponding to 225 initial conditions, see Supplementary file 1a). Each row is a steady state, and each column is a node in the network. Dark cells represent node ‘off’ (0) and blank ones represent node ‘on’ (1). The frequency of each state is reported to the left of each row in percentage as mean ± standard deviation over three replicates. (C) (i–ii) Schematic representing edge swapping strategy for network randomization, where (ii) is a randomized network for the ‘wild-type’ (WT) network (i). (iii) Distribution of number of steady states for 1000 randomized networks corresponding to SCLC WT network. Red line shows the number of states obtained for the SCLC WT network. (D) (i) Comparison of steady-state frequencies obtained via RACIPE and Boolean. The frequency of four dominant states obtained in Boolean (X1–X4) is shown in yellow bars. The other three bars show the frequency of RACIPE states identical to corresponding Boolean states (distance = 0) and the cumulative frequency of states which are less than or equal to n nodes having different values (node value = 0 in RACIPE and 1 in Boolean or vice versa) (distance = 1, 2). Results over three replicates are reported as mean ± standard deviation (error bars). (ii) Correlation plot between Jensen–Shannon divergence (JSD) for the case of edge deletion and JSD for the case of reverting the sign of the corresponding edge. Each dot denotes an edge that has been perturbed. Inset shows zoomed-in view for the highlighted small box. The mean and standard deviation of Pearson’s coefficient correlation values for this scatter plot, over three replicates, is 0.851 ± 0.003.
 
-In the Ising model formalism, each state is represented as a Boolean vector of N elements, where N (=33 here) is the number of nodes in the networks. Based on randomly chosen set of initial conditions (n = 220 here), multiple simulations capture the ensemble of steady states obtained. The discrete-time asynchronous network dynamics considered here is simulated viasi(t+1)={ +1,     ∑jMijsj(t)>0 −1,     ∑jMijsj(t)<0si(t),   ∑jMijsj(t)=0 where si (t) denotes the expression levels of node i at time t. si = +1 means that the node is highly expressed (i.e. ‘ON’ state), otherwise si = −1. M depicts the interaction matrix of the network. Mij = 1 indicates that node i promotes the expression of node j, Mij = −-1 implies that node i inhibits the expression of node j, Mij = 0 implies no regulatory interaction from node i to node j.
+In the Ising model formalism, each state is represented as a Boolean vector of N elements, where N (=33 here) is the number of nodes in the networks. Based on randomly chosen set of initial conditions (n = 220 here), multiple simulations capture the ensemble of steady states obtained. The discrete-time asynchronous network dynamics considered here is simulated via
+
+$$
+s_{i}(t+1)={+1,     \sumjM_{ij}s_{j}(t)>0 −1,     \sumjM_{ij}s_{j}(t)<0s_{i}(t),   \sumjM_{ij}s_{j}(t)=0
+$$
+
+where si (t) denotes the expression levels of node i at time t. si = +1 means that the node is highly expressed (i.e. ‘ON’ state), otherwise si = −1. M depicts the interaction matrix of the network. Mij = 1 indicates that node i promotes the expression of node j, Mij = −-1 implies that node i inhibits the expression of node j, Mij = 0 implies no regulatory interaction from node i to node j.
 
 For this network, we obtained 10 unique steady states, among which four of them (X1–X4) had a frequency of 24.3–25.5% each, while the remaining six states (X5–X10) had frequency less than 0.1% (Figure 1B). To characterize these steady states further, we calculate the frustration of each state, which, using the analogy of asymmetric spin glass on a graph, is defined as the fraction of network edges that are frustrated in that state. An edge from node i to node j is said to be frustrated in the state {si} if Mijsisj < 0, i.e. if the values of node i and node j do not follow the set of regulatory interactions between them. As expected, states with high frequency (~24.3–25.5% each) had low frustration (0.14) and those with lower frequency (<0.1% each) have higher frustration (0.37) (Supplementary file 1a, Tripathi et al., 2020b).
 
@@ -46,7 +52,7 @@ To gain further confidence in the role of network topology in enabling the stead
 
 Next, we investigated the resilience of the WT SCLC network by generating two types of ‘mutant’ networks. Each ‘mutant’ network has an edge either deleted or its sign reversed (from activation to inhibition and vice versa). Thus, we had 2*357 = 714 such ‘mutant’ or ‘perturbed’ networks for which we calculated the steady-state distributions using the Ising model (220 initial conditions). To quantify the degree of similarity between the steady-state distributions of WT SCLC network and that of a ‘perturbed’ network, we used an information-theory metric known as Jensen–Shannon divergence (JSD), which ranges from 0 to 1 (Lin, 1991). JSD = 0 indicates identical distributions, and JSD = 1 indicates completely non-overlapping ones. As a control, JSD = 1 was obtained for all 1000 random networks with respect to the WT network, given that there is no overlap of states. Intriguingly, we observed that most single-edge mutations (deletions or sign reversal) had a negligible effect on dynamics of the WT SCLC network (JSD < 0.01 for 678 of 714 perturbed networks). Also, the JSD values of mutated networks with either change correlated well (Figure 1D,ii), suggesting a consistent contribution of the edge mutated in enabling steady-state distributions of the SCLC network. Importantly, among the 36 edge perturbations that led to a higher JSD, i.e. disturbed the frequency distribution, 24 of them were incoming edges for NEUROD1 (Supplementary file 1c). This observation suggests that NEUROD1 can play a key role in maintaining the robustness of SCLC network dynamics and subsequently in enabling phenotypic heterogeneity. Put together, these results revealed that the SCLC network is quite resilient to single-edge perturbations and suggests the possibility of multiple layers of redundancy or reinforcement in the SCLC network to enable this specific steady-state distribution.
 
-## Similarity between simulation and SCLC experimental data based on node correlations
+### Similarity between simulation and SCLC experimental data based on node correlations
 
 To investigate the degree of resilience or reinforcement within the SCLC network, we performed pairwise correlation between all 33 nodes in the network. Strikingly, based on the top four states obtained from Boolean simulation of the WT network, we observed that 32 of 33 nodes formed two groups of nodes, such that within a group, the nodes were positively correlated, but across the groups, each pairwise correlation was negative (all nodes except NEUROD1; Figure 2A,i). Therefore, the network seemed to form two competing ‘teams’ or groups of players. Interestingly, one of the groups (top triangle in Figure 2A,i; called as group A henceforth) contained ASCL1, INSM1, FOXA1, and FOXA2, all of which are implicated in neuro-endocrine phenotype(s) in SCLC. On the other hand, the other group (lower triangle in Figure 2A,i; called as group B henceforth) contained REST, SMAD3, and ZEB1 are suggested markers/regulators of non-neuroendocrine (NE) or mesenchymal subtype(s) of SCLC (Borromeo et al., 2016; Tlemsani et al., 2020).
 
@@ -54,7 +60,11 @@ To investigate the degree of resilience or reinforcement within the SCLC network
 
 **Figure 2.:** (A) (i) Pearson’s correlation matrix for Boolean simulations of WT SCLC network. Each node represents the correlation coefficient for pairwise correlations, as shown in adjacent colormap. (ii) Distribution of the values of J metric for 1000 random networks for Boolean simulations. Red dotted line shows the value of J (=496) for Boolean simulations (A, i); blue dotted line shows the same (J = 373.05) for RACIPE simulations (B, i). (B) (i) Same as (A, i) but for RACIPE simulations. (ii) Same as (B, ii) but for cases when Pearson’s correlation coefficient values are sampled continuously from [−1,1]. Red dotted line shows the value of J for wild-type Boolean (A, i) and blue dotted line shows the value of J for Wild-type RACIPE (B, i). Black and green dotted lines show the value of J for CCLE (C, i) and GSE73160 (C, ii). (C) Same as (A, i) but for CCLE (i) and GSE73160 (ii). Details of indices 1–33 are available in the rightmost table.
 
-We defined a metric J to quantify the cumulative strength of relationship among different nodes in the network, which quantifies the degree of similarity in the two ‘teams’ and mutual competition among them.J=∑i=1i=22∑j=1i<jPij+∑i=24i=33∑j=24i<jPij−∑i=24i=33∑j=1j=22Pij
+We defined a metric J to quantify the cumulative strength of relationship among different nodes in the network, which quantifies the degree of similarity in the two ‘teams’ and mutual competition among them.
+
+$$
+J=\sumi=1i=22\sumj=1i<jP_{ij}+\sumi=24i=33\sumj=24i<jP_{ij}−\sumi=24i=33\sumj=1j=22P_{ij}
+$$
 
 Here, P denotes the correlation matrix, and Pij denotes Pearson’s correlation coefficient between node i and node j; the key to the indices is given in table shown in Figure 2. For correlation matrix obtained for Boolean simulations for the WT network, the coefficient values are either 1 or −1, and the value of J metric is calculated to be 496. However, for the 1000 random networks, the values of J are quite small; the average value of J across 1000 networks is 11 (Figure 2A,ii), thus suggesting that this metric can be a quantitative method to distinguish between WT and random networks and that this observed feature of two ‘teams’ of players is unique to the WT topology.
 
@@ -62,11 +72,23 @@ Similar trends of two ‘teams’ were seen in RACIPE simulation data (Figure 2B
 
 Put together, this excellent agreement among Boolean and RACIPE simulations and experimental data through correlation matrix underscores that the steady states obtained via simulations can be mapped on specific biological phenotypes seen in experimental data and endorses the idea about two ‘teams’ of molecular players that may inhibit each other to enable these steady states.
 
-## SCLC network topological signatures underlie the emergence of biological phenotypes
+### SCLC network topological signatures underlie the emergence of biological phenotypes
 
-The remarkable agreement among Boolean and RACIPE simulations, and the endorsement of the correlation patterns seen in simulations with the experimental data, leads us to the hypothesis that the underlying network topology is fundamental to the existence of these distinct phenotypes. To test this hypothesis, we formulated a metric to quantify the topological influence of one node on another, named as influence matrix (Inf). A path between two nodes (A and B) in a network of length l is defined as a series of connected edges starting at node A and ending at node B. While the interaction matrix (M) only quantifies the effect of nodes on each other for a path length of one, the influence matrix considers path lengths of up to lmax to calculate this effect. Each element of the influence matrix, Infij, is a number between −1 and 1, calculated as a weighted sum of net effect of all paths of length less than lmax from ith node to jth node (see Materials and methods). Infij > 0 indicates net activation, Infij < 0 suggests net inhibition, and Infij = 0 implies no net effect.
+The remarkable agreement among Boolean and RACIPE simulations, and the endorsement of the correlation patterns seen in simulations with the experimental data, leads us to the hypothesis that the underlying network topology is fundamental to the existence of these distinct phenotypes. To test this hypothesis, we formulated a metric to quantify the topological influence of one node on another, named as influence matrix (Inf). A path between two nodes (A and B) in a network of length l is defined as a series of connected edges starting at node A and ending at node B. While the interaction matrix (M) only quantifies the effect of nodes on each other for a path length of one, the influence matrix considers path lengths of up to $l_{max}$ to calculate this effect. Each element of the influence matrix, Infij, is a number between −1 and 1, calculated as a weighted sum of net effect of all paths of length less than $l_{max}$ from ith node to jth node (see Materials and methods). Infij > 0 indicates net activation, Infij < 0 suggests net inhibition, and Infij = 0 implies no net effect.
 
-The influence matrix for path length lmax = 10 obtained for the WT network was very similar to the corresponding correlation matrix for RACIPE (Figure 3A,i, Figure 3—figure supplement 1) This similarity elucidates that the players in the two ‘teams’ are highly likely to effectively activate one another, but players belonging to different teams are likely to inhibit each other. To quantify this similarity, we calculated two metrics – R1 and R2 – bearing in mind that while the correlation matrix is symmetric, the influence matrix need not be. R1 is the correlation coefficient obtained from a scatter plot of regressing correlation coefficients between node i and j (Pij) and corresponding influence matrix element (Infij). R2 is defined the same as R1 but for Infji instead of Infij. Both R1 and R2 values are high (>0.85) and statistically significant (Figure 3A,ii) and show a saturating trend for increasing path length (Figure 3—figure supplement 2A), thus we chose lmax = 10 for further analysis from influence matrix. The high values of R1 and R2, together with high coefficient of determination (Figure 3A,ii), reinforce that the influence matrix of WT SCLC network is quite similar to corresponding correlation matrix. Similar trends seen for correlation matrix from CCLE endorsed that the influence matrix can not only capture the patterns for steady states, but also can reflect biological phenotypes seen in SCLC (Figure 3—figure supplement 2B).
+The influence matrix for path length $l_{max}$ = 10 obtained for the WT network was very similar to the corresponding correlation matrix for RACIPE (Figure 3A,i, Figure 3—figure supplement 1) This similarity elucidates that the players in the two ‘teams’ are highly likely to effectively activate one another, but players belonging to different teams are likely to inhibit each other. To quantify this similarity, we calculated two metrics – R1 and R2 – bearing in mind that while the correlation matrix is symmetric, the influence matrix need not be. R1 is the correlation coefficient obtained from a scatter plot of regressing correlation coefficients between node i and j (Pij) and corresponding influence matrix element (Infij). R2 is defined the same as R1 but for Infji instead of Infij. Both R1 and R2 values are high (>0.85) and statistically significant (Figure 3A,ii) and show a saturating trend for increasing path length (Figure 3—figure supplement 2A), thus we chose $l_{max}$ = 10 for further analysis from influence matrix. The high values of R1 and R2, together with high coefficient of determination (Figure 3A,ii), reinforce that the influence matrix of WT SCLC network is quite similar to corresponding correlation matrix. Similar trends seen for correlation matrix from CCLE endorsed that the influence matrix can not only capture the patterns for steady states, but also can reflect biological phenotypes seen in SCLC (Figure 3—figure supplement 2B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig3-v2.jpg)
+
+**Figure 3.:** (A) (i) (Left) Pearson’s correlation matrix P for RACIPE simulations of WT SCLC network (Pij = Pji). (Right) Influence matrix Inf for WT SCLC network for path length = 10. Heatmap denotes Pij and Infij values, respectively. (ii) (left) Scatter plot for Pij and Infij values (for i < j, i.e. values in upper triangle of Inf and P matrices); (right) scatter plot for Pji and Infji values (for i > j, i.e., values in upper triangle of Inf and P matrices). R1 and R2 denote corresponding correlation coefficient values. Colorbar represents Kernel density estimate of points in the scatter plot. (B) (i) Volcano plot of all R1 and R2 metrics for RACIPE WT correlation matrix and random networks’ influence matrices. Inset shows histogram of R1 and R2 values for corresponding cases. Horizontal line for p=0.05. Arrows point to R1 and R2 values of WT SCLC network. (ii) Same as (i) but for correlation matrix from CCLE. (C) (i) Reduced model derived from influence matrix; red bars show inhibition, and green arrows show activation. (ii) Steady-state frequencies obtained from reduced model one and that of WT SCLC network (n = 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Influence matrices based on Boolean simulation results were also derived. Instead of taking all steady-state solutions together, we classified them into three categories – states 1–4 in Supplementary file 1a (frustration value = 0.142), states 5–6 (frustration = 0.375), and states 7–10 (frustration = 0.383–0.386) – and derived corresponding influence matrices shown above. Labels 1–33 are the same as in Figure 2. The larger the frustration (or the smaller the frequency), the more the deviation of influence matrix from the correlation matrix shown in Figure 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scatter plot of R1 and R2 values obtained for varying path lengths, when influence matrix values/coefficients (for varying path lengths) for WT SCLC network were regressed against correlation coefficients from (i) RACIPE and (ii) CCLE. (B) (i) Scatter Plot of R1 and R2 values of influence coefficients of WT network and CCLE correlation coefficients for path length = 10. (C) (i) Reduced model derived from interaction matrix; red bars show inhibition, and green arrows show activation. (ii) Steady-state frequencies obtained from reduced model one and that of WT SCLC network (n = 3).
 
 Next, we checked the specificity of the influence matrix to the WT network. We next regressed the elements of RACIPE correlation matrix of WT SCLC network against corresponding elements for influence matrix of one of the 1000 random networks we had simulated using asynchronous Boolean model formalism. Thus, we calculated 1000 values of R1 and R2 for all the random networks; none of them were anywhere close to R1 and R2 of the WT SCLC network; many of these correlations were not even statistically significant (Figure 3B,i). Similar results were seen in the influence matrix from CCLE (Figure 3B,ii). Thus, we concluded that this influence matrix is unique to the WT SCLC network.
 
@@ -74,9 +96,25 @@ Put together, the influence matrix can be a more meaningful readout of interacti
 
 Put together, we defined an influence matrix to decode the relative strengths of bidirectional regulatory interactions between every possible pair of nodes in the network. Analysis based on the influence matrix established the concept of two ‘teams’ of players that are effectively inhibiting each other and activating themselves, thereby forming an ‘effective’ self-activating toggle switch (SATS). Such SATS have been shown to be multistable and tend to underlie phenotypic plasticity and heterogeneity in multiple cell-fate decisions (Guantes and Poyatos, 2008; Lu et al., 2013; Sahoo et al., 2020; Zhou and Huang, 2011). This ‘teaming up’ can potentially explain (1) why single-edge perturbations in the WT SCLC network are rarely disruptive in terms of steady-state distributions (because as long as an ‘effective’ mutual inhibition between the two teams and ‘effective’ self-activation in the teams is maintained, the phenotypes are likely to be robust attractors) and (2) why despite such dense and complicated (33 nodes, 357 edges) network, we obtain only four steady states (because the ‘latent’ network topology is fundamentally simplistic).
 
-## Classifying experimental SCLC data based on ASCL1 and NEUROD1
+### Classifying experimental SCLC data based on ASCL1 and NEUROD1
 
 The first classification of SCLC was based on differences in cell morphology: a ‘classic’ type of cells that grow as spherical aggregates of floating cells and another relatively less prevalent ‘variant’ type which grew as tightly adherent monolayer or as loosely adherent aggregates. The ‘classic’ type had relatively higher levels of NE markers such as ASCL1 (Gazdar et al., 1985). Next, SCLCs were categorized into two categories based on relative levels of ASCL1 and NEUROD1, both of which are key developmental nodes for pulmonary NE cells (Poirier et al., 2013). Functional contributions of ASCL1 and/or NEUROD1 in SCLC have since been extensively explored (Borromeo et al., 2016; Ikematsu et al., 2020; Osborne et al., 2013). Further characterization of SCLC proposed three different phenotypes – ASCL1high/NEUROD1low, ASCL1low/NEUROD1high, and a ‘double negative’ ASCL1low/NEUROD1low (Poirier et al., 2015). In addition, a ‘double positive’ ASCL1high/NEUROD1high state of SCLC was recently identified (Baine et al., 2020; Simpson et al., 2020). In a recent classification (Rudin et al., 2019), ASCL1high/NEUROD1low was labeled as SCLC-A subtype, ASCL1low/NEUROD1low was categorized as non-NE (and subcategorized to SCLC-P and SCLC-Y subtypes), and ASCL1low /NEUROD1high was marked as SCLC-N (also referred to as NE-V1 Wooten et al., 2019; Figure 4A,i). Besides, the NE-V2 subtype expressed ASCL1 and had relatively higher levels of NEUROD1 as that seen in ASCL1high/NEUROD1low subtype; thus, NE-V2 can be conjectured to be ASCL1high /NEUROD1high.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig4-v2.jpg)
+
+**Figure 4.:** (A) (i) Summary of classification of SCLC subtypes in the existing literature (adapted from Rudin et al., 2019). (ii) Density-based scatter plot for ASCL1 and NEUROD1 levels, as obtained via RACIPE modeling. (B) (i) Hierarchical clustering of CCLE samples using ASCL1 and NEUROD1. (ii) Scatter plot of normalized gene expression data for CCLE samples for NEUROD1 and ASCL1. Color coding in dendrogram and scatter plot are synonymous (i.e. refer to the same cluster). (C) (i) Average Silhouette width for different values of K for K-means clustering of CCLE samples for NEUROD1 and ASCL1. Error bars denote replicates of clustering attempts. (ii) Number of samples and ASCL1 and NEUROD1 expression values as seen in four clusters of CCLE samples obtained for K = 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) (i) Hierarchical clustering of GSE73160 dataset across ASCL1 and NEUROD1. (ii) Scatter plot of normalized gene expression for NEUROD1 vs ASCL1 of GSE73160 dataset, labeled by n = 4 clusters obtained from the earlier dendrogram. (B) (i) Silhouette score analysis across ASCL1 and NEUROD1 for the GSE73160 dataset. (ii) Expression levels ASCL1 and NEUROD1 in four clusters obtained from the GSE73160 dataset by k-means clustering.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** ASCL1, NEUROD1, YAP1, and POU2F3 have different colors for better comparison (A) (i–iv) Hierarchical clustering of CCLE dataset across ASCL1 and NEUROD1, with individual panels depicting individual clusters: (i) A+/N−, (ii) A+/N+, (iii) A−/N+, (iv) A−/N−. and (B) (i–iv) K-means clustering of GSE73160 dataset ASCL1 and NEUROD1, with individual panels depicting individual clusters: (i) A+/N−, (ii) A+/N+, (iii) A−/N+, (iv) A−/N−.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) (i) Pie-chart depicting the frequency of cases for different optimal k-values, as identified by average silhouette score analysis, for all combinations of two nodes taken at a time (33C2). (ii) Histogram depicting the distribution of average silhouette scores for k = 4 clusters (red dotted line indicates silhouette score for ASCL1-NEUROD1 based clustering). (B) Top five gene pairs with maximum silhouette scores, for k = 4 as the optimal cluster value.
 
 Intriguingly, our simulations (Figure 1A,ii) are able to capture all these four phenotypes – these were the four most dominant steady states that Boolean and RACIPE results converged to. Thus, we were able to classify the Boolean steady states into four phenotypes – A+N+, A+N-, A-N+, and A-N- (where A represents ASCL1, N represents NEUROD1) (Figure 4A,ii). Hierarchical clustering of experimental data – CCLE (Figure 4B,i) and GSE73160 (Figure 4—figure supplement 1A,i) – using ASCL1 and NEUROD1 levels depict a clear segregation into four large groups at an early level. These four clusters were indeed A+N+, A+N-, A-N+, and A-N- (Figure 4B,ii, Figure 4—figure supplement 1A, ii). Alternate clustering methods such as K-means revealed K = 4 as the optimal number of clusters, based on the average Silhouette width analysis (Figure 4C,i, Figure 4—figure supplement 1B,i), thus strengthening the results obtained from Boolean and RACIPE analysis. These four clusters obtained by K-means also split into A+N+, A+N-, A-N+, and A-N- (Figure 4C,ii, Figure 4—figure supplement 1B,ii) reminiscent of observations that a classification system employing only ASCL1 and NEUROD1 may be sufficient to describe these four biologically meaningful phenotypes (Borromeo et al., 2016).
 
@@ -84,9 +122,17 @@ Based on the ‘groups’ we identified from influence matrix, ASCL1 was found t
 
 Given that our choice of using ASCL1 and NEUROD1 to cluster SCLC cell lines was based on experimental data, we conducted an unbiased analysis of using any 2 of 33 possible nodes for characterization (i.e. 33C2 = 528 combinations) in their ability to define four SCLC phenotypes. Only 140 such combinations yielded four as the optimal number of clustering, and the ASCL1-NEUROD1 pair showed up in the top 5 of the node pairs with maximal resolvability (measured via average Silhouette width) in defining these four phenotypes. Thus, the ASCL1 and NEUORD1 pair featured among the top 1% (in top 5 of 528 possibilities) of gene pairs in characterizing SCLC heterogeneity (Figure 4—figure supplement 3).
 
-## Extended subtype classification of SCLC into five phenotypes based on POU2F3 and YAP1
+### Extended subtype classification of SCLC into five phenotypes based on POU2F3 and YAP1
 
 Besides ASCL1 and NEUROD1, YAP1 and POU2F3 have been reported as important regulators of SCLC, particularly for the non-NE phenotype (Baine et al., 2020; Huang et al., 2018; Ito et al., 2016; McColl et al., 2017; Song et al., 2020). Thus, we investigated the role of these players in defining SCLC phenotypes. We performed hierarchical clustering over the four genes of interest (ASCL1, NEUROD1, YAP1, POU2F3) on the CCLE dataset (Figure 5A,i) and GSE73160 (Figure 5—figure supplement 1A, i). We observed five clusters, and when projected on the ASCL1-NEUROD1 axis, two of these five clusters were both present in the third quadrant (A-N-), suggesting that non-NE phenotype (ASCL1low/NEUROD1low) may be divided into two sub-clusters based on levels of YAP1 and POU2F3 (Figure 5A,ii, Figure 5—figure supplement 1A,ii).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig5-v2.jpg)
+
+**Figure 5.:** (A) (i) Hierarchical clustering of CCLE samples using ASCL1, NEUROD1, YAP1, and POU2F3. (ii) Scatter plot of normalized gene expression data for CCLE samples for NEUROD1 and ASCL1. Color coding in dendrogram and scatter plot are synonymous (i.e. refer to the same cluster). (B) (i) Average levels of expression values for ASCL1, NEUROD1, YAP1, and POU2F3 for the four clusters identified in CCLE SCLC cell lines for K = 4. (ii) Same as (i) but for K = 5. (C) UMAP projections for CCLE dataset from four dimensions (ASCL1, NEUROD1, YAP1, and POU2F3) to two dimensions. Colorbar shows individual expression levels of ASCL1, NEUROD1, POU2F3, and YAP1. Color of the enclosing circle follows the same scheme as that for dendrogram and scatter plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64522/elife-64522-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) (i) Hierarchical clustering of GSE73160 dataset across ASCL1, NEUROD1, YAP1, and NPOU2F3. (ii) Scatter plot of normalized gene expression for NEUROD1 vs ASCL1 of GSE73160 dataset, labeled by n = 5 clusters obtained from the earlier dendrogram. (B) (i) Expression levels of four classifying genes (ASCL1, NEUROD1, YAP1, and POU2F3) in clusters obtained from the k-means algorithm for k = 4 in the GSE73160 dataset. (ii) Same as (i) but for k = 5. (C) (i–iv) UMAP projection of GSE73160 dataset from four dimensions (ASCL1, NEUROD1, YAP1, and POU2F3) to two dimensions. The labeling is based on expression levels of ASCL1 (i), NEUROD1 (ii), POU2F3 (iii), and YAP1 (iv).
 
 To decipher the five clusters better, we first performed K-means clustering for K = 4 for CCLE using the levels of ASCL1, NEUROD1, YAP1, and POU2F3 and observed the four clusters: SCLC-A1 (A+; n = 28), SCLC-N (N+; n = 12) and two non-NE phenotypes: SCLC-Y (Y+; n = 8) and SCLC-P (P+; n = 4) (Figure 5B,i). When K-means clustering for K = 5 was performed on the same dataset using the four above-mentioned genes, SCLC-Y (Y+; n = 8) and SCLC-P (P+; n = 4) had identical composition as the corresponding clusters for K = 4 (Supplementary file 2a; Figure 5B,ii). Among 12 cell lines classified as SCLC-N (N+), 11 of them were still classified as SCLC-N with the exception of CORL279, which was classified as A+N+. Interestingly, the SCLC-A (A+; n = 28) cluster obtained for K = 4 broke into two sub-clusters: 14 cell lines were classified as ‘NE-V2’ (A+N+) and remaining 14 as SCLC-A. Similar trends were seen for hierarchical clustering, indicating the concurrence in assigning these different cell lines to SCLC phenotypes (Supplementary file 2a; Figure 5B,ii). This categorization suggests that the ‘double positive’ phenotype may be an intermediate one on the spectrum of ASCL1high/NEUROD1low (SCLC-A) to ASCL1low/NEUROD1high (SCLC-N) one, from the perspective of these four genes of interest. We compared the classification of the SCLC cell lines done using the levels of these four genes of interest with that done based on levels of a larger set of genes (Wooten et al., 2019) and obtained an overall good consistency, with a few (n = 5) exceptions where cell lines belonging to SCLC-A1 according to our clustering were found to belong to NEv2 as per the previous analysis (Supplementary file 2a). Performing the same procedure on another cohort of SCLC cell lines (GSE73160) – that showed consistent trends as for CCLE cohort (Figure 5—figure supplement 1B) – demonstrated that for K = 4 vs. K = 5, some SCLC-N cell lines were classified as the ‘double positive’ (Supplementary file 2b), endorsing that cells may switch to this hybrid phenotype from SCLC-A1 and/or SCLC-N, similar to observations in hybrid E/M phenotypes (Tripathi et al., 2020a).
 
@@ -110,59 +156,87 @@ Our results highlight an important step in decoding the design principles of und
 
 ## Materials and methods
 
-## Experimental data
+### Experimental data
 
 Gene expression profiles of 52 SCLC cell lines were downloaded from Broad Institute’s CCLE expression data. Data for GSE73160 was downloaded from NCBI website.
 
-## Normalization of experimental data
+### Normalization of experimental data
 
-All data were normalized as per z-score normalization. The normalization was done across all the sample points (stable states or experimental data points) for a particular variable. The formula for calculating the z-score for jth observation for the ith variable is:Zij=xij− μiσiwhere μ is the mean, and σ is the standard deviation. For the purposes of the code, we used the preprocessing.scale function of the sklearn package in python.
+All data were normalized as per z-score normalization. The normalization was done across all the sample points (stable states or experimental data points) for a particular variable. The formula for calculating the z-score for jth observation for the ith variable is:
 
-## Correlation analysis
+$$
+Z_{ij}=\frac{x_{ij}− \mu_{i}}{\sigma_{i}}
+$$
+
+where μ is the mean, and σ is the standard deviation. For the purposes of the code, we used the preprocessing.scale function of the sklearn package in python.
+
+### Correlation analysis
 
 Pearson correlation co-efficient is a statistic that measures the linear correlation between two variables of interest. It depicts how strongly two variables are linearly related. It has a value between +1 and −1. A value of +1 is the total positive linear correlation, 0 is no linear correlation, and −1 is a total negative linear correlation. This static is applied to the experimental data to get the sense of how closely the expression levels of several nodes are linearly related. For the purposes of the code, the scipy.stats.pearsonr function of the scipy package in python was used. Along with the Pearson correlation coefficient, the function also returns two-tail p-value, which tells us whether two variables are statistically significant or not.
 
-## Uniform Manifold Approximation and Projection
+### Uniform Manifold Approximation and Projection
 
 UMAP is a dimension reduction technique that can be used for visualization (similar to t-SNE) and is considered an improvement over previous dimension reduction techniques. UMAP was applied on z-score normalized data. For the purposes of the code, the UMAP.fit_transform function of the umap package in python was used. The n_neighbours parameter was set to 4 (after extensive trials over a broad range of values) and n_epochs set to 1000. The rest of the parameters was set to default.
 
-## Hierarchical clustering
+### Hierarchical clustering
 
 Hierarchical clustering was applied to the z-score normalized data. For purposes of code, the cluster.hierarchy.linkage function of the scipy package in python was used with the method set to ward. The dendrograms were plotted using the same, with the color grouping decided by setting the threshold values to desirable values.
 
-## K-means clustering
+### K-means clustering
 
 K-means algorithm was applied to the z-score normalized data. For purposes of code, the cluster.KMeans function of the sklearn package in python was used with the init parameter set to random, the n_int set to 20, and max_iter to 300.
 
-## Silhouette score analysis
+### Silhouette score analysis
 
 Silhouette score is a way to determine the goodness of fit of a particular k-value in k-means clustering. It depicts how close the points in a cluster are to other points in the same cluster versus the other clusters. A higher score shows well-differentiated clustering. For the purposes of the code, we used metrics.silhouette_score function from the sklearn package in python, with the identified clusters being taken from fit_predict function applied to clusters obtained from the k-means algorithm outlined above.
 
-## Influence matrix
+### Influence matrix
 
-The influence matrix is a formulation similar to that of the interaction matrix (M)), but gives a more comprehensive estimation of the effect of each on others in the network. For a given pair of nodes A and B, a path is a collection of serially connected edges originating from A and ending at B. The pathlength is then defined as the number of edges in such a path. Therefore, the interaction matrix depicts the influence of each node on the other for a pathlength of one. Consider the matrix M2. The elements of the matrix can be written as:Mij2= ∑k=1nMik*Mkj
+The influence matrix is a formulation similar to that of the interaction matrix ($M)$), but gives a more comprehensive estimation of the effect of each on others in the network. For a given pair of nodes A and B, a path is a collection of serially connected edges originating from A and ending at B. The pathlength is then defined as the number of edges in such a path. Therefore, the interaction matrix depicts the influence of each node on the other for a pathlength of one. Consider the matrix $M^{2}$. The elements of the matrix can be written as:
 
-Which is the influence of ith node on the jth node when considering all paths of length 2. Similarly, each element of the matrix Ml depicts the influence of nodes over pathlengths of l. We then calculate the influence matrix for a pathlength of lmax  by combining the matrices Ml for l<lmax as follows:Inflmax = Σl=1l = lmax( Ml/Mmaxl)lmax
+$$
+M_{ij}^{2}= \sumk=1nM_{ik}*M_{kj}
+$$
 
-Mmax, obtained by setting all non-zero elements of the interaction matrix to 1, represents the magnitude of the maximum possible interaction for the given network topology and hence is used as the normalizing factor. The division (MMmax) represents element-wise division and the range of the elements of the resultant matrix is restricted between −1 and 1. The summation is divided by lmax to again restrict the range of the elements between −1 and 1.
+Which is the influence of ith node on the jth node when considering all paths of length 2. Similarly, each element of the matrix $M^{l}$ depicts the influence of nodes over pathlengths of $l$. We then calculate the influence matrix for a pathlength of $l_{max} $ by combining the matrices $M^{l}$ for $l<l_{max}$ as follows:
 
-## Conversion from discrete to continuous formulation of correlation matrix
+$$
+Inf_{lmax} = \frac{Σ_{l=1}^{l = l_{max}}( M^{l}/M_{max}^{l})}{l_{max}}
+$$
+
+$M_{max}$, obtained by setting all non-zero elements of the interaction matrix to 1, represents the magnitude of the maximum possible interaction for the given network topology and hence is used as the normalizing factor. The division ($\frac{M}{M_{max}}$) represents element-wise division and the range of the elements of the resultant matrix is restricted between −1 and 1. The summation is divided by $l_{max}$ to again restrict the range of the elements between −1 and 1.
+
+### Conversion from discrete to continuous formulation of correlation matrix
 
 Experimental datasets gives us Pearson correlation coefficients which range from −1 to 1 (continuous values) while Boolean steady-state distribution (of both WT SCLC network and random networks) gives us correlation coefficients of either −1 or 1 (discrete values). Thus, we cannot formulate the J metric to be the same for all the cases. To make a fair comparison, we have converted the discrete values of the correlation coefficients to continuous values in the following way:
 
 Similar continuous formulation of correlation matrix was done for RACIPE correlation matrix as well, that is why the J value for RACIPE seen in Figure 2B,ii (J ~ 254) is smaller than that for RACIPE seen in Figure 2A,ii (J ~ 373), and similar to that for Boolean case as seen in Figure 2B,ii (J ~ 259).
 
-## RACIPE and Boolean simulations
+### RACIPE and Boolean simulations
 
 Please see details of Boolean and RACIPE simulations in Supplementary Information.
 
-## Effective edge calculation and reduced networks
+### Effective edge calculation and reduced networks
 
-For a given Influence/Interaction matrix, an effective edge from a team of genes Ti to another team Tj is given by the metric E:E=sgn(fTh(∑iTi∑jTjMij∑iTi∑jTjMijMax))where Ti and Tj are teams of genes and i and j are indices of genes in Influence matrix/Interaction matrix belonging to teams Ti and Tj. Here MMax, obtained by setting all non-zero elements of the influence matrix /interaction matrix to 1, represents the magnitude of the maximum possible interaction for the given network topology and hence is used as the normalizing factor.
+For a given Influence/Interaction matrix, an effective edge from a team of genes $T_{i}$ to another team $T_{j}$ is given by the metric E:
 
-Real numbers which are close to zero are taken to zero by defining a threshold by fTh given as.,fTh(x) :={ 1 if abs(x)>Threshold0 if abs(x)<Threshold
+$$
+E=sgn(f_{Th}(\frac{\sum_{i}^{T_{i}}\sum_{j}^{T_{j}}M_{ij}}{\sum_{i}^{T_{i}}\sum_{j}^{T_{j}}M_{ij}^{Max}}))
+$$
 
-For the Reduced models, Threshold is taken as 0.05. Effective edges are reported using Signum function sgn  which extracts the sign of real number given as:sgn(x) :={ −1   if x<00   if x=01   if x>0
+where $T_{i}$ and $T_{j}$ are teams of genes and $i$ and $j$ are indices of genes in Influence matrix/Interaction matrix belonging to teams $T_{i}$ and $T_{j}$. Here $M^{Max}$, obtained by setting all non-zero elements of the influence matrix /interaction matrix to 1, represents the magnitude of the maximum possible interaction for the given network topology and hence is used as the normalizing factor.
+
+Real numbers which are close to zero are taken to zero by defining a threshold by $f_{Th}$ given as.,
+
+$$
+f_{Th}(x) :={1 if abs(x)>Threshold0 if abs(x)<Threshold
+$$
+
+For the Reduced models, Threshold is taken as 0.05. Effective edges are reported using Signum function $sgn $ which extracts the sign of real number given as:
+
+$$
+sgn(x) :={−1   if x<00   if x=01   if x>0
+$$
 
 Using these edges, one can make reduced models from Influence matrix of any length and for a specific threshold.
 
@@ -170,32 +244,32 @@ To clearly understand how the two ‘teams’ of genes (group A: 22 genes – la
 
 Another interesting observation in steady states observed in Figure 1B is that state 1 and state 4 (and similarly, state 2 and state 3) differ only in the levels of NEUROD1 (i.e. degeneracy in NEUROD1). Given the observations stated above, we expected the subnetworks to yield two states, all on and all off. Interestingly when genes of group A are simulated using the Ising model asynchronous update, we obtained four states as opposed to the expected two. Analysis of the states revealed that a degeneracy analogous to that of NEUROD1 in WT network was being caused by ELF3 in group A (Supplementary file 3a, S7). Therefore, we decided to include ELF3 as an independent entity for the reduced model. However, steady-state frequencies of group B did not reveal any such degeneracy caused due to ELF3 (Supplementary file 3c, S9). By calculating the ‘effective edges’ metric described above, we observed two differences in the reduced model obtained from influence matrix (model 1; Figure 3C) and that obtained from interaction matrix (model 2; Figure 3—figure supplement 2c). Model 1, but not model 2, contains self-activation on ELF3 as well as an activatory link from team A to ELF3.
 
-## Single-edge perturbation
+### Single-edge perturbation
 
 We perturbed each edge of WT SCLC network in the following two ways:
 
-## Boolean framework – Ising model with asynchronous update
+### Boolean framework – Ising model with asynchronous update
 
-Ising model formalism uses discrete variables to represent the expression level of molecular species (such as micro-RNA or transcription factors etc.). Therefore, the state of the regulatory network (N-node network) can be represented by a sequence {si, si∈ {−1, 1}} called a ‘Boolean Vector’ of N binary variables where si = 1 represents high-expression level of ith node and si  = −1 represents low expression of the node. In modeling the dynamics of network via this framework, the only knowledge required is whether each regulatory relationship between network nodes is activating or inhibitory. Regulatory interactions between the molecular species are represented by an N*N matrix called an ‘Interaction Matrix (M)’ where Mij  = 1 represents ‘promotion’ (or activation) of levels of ith node by jth node and Mij = −1 represents ‘inhibition’ (or repression) of levels of ith node by jth node of the N-node network. The absence of any regulatory relationship between species i and species j is indicated by Mij = 0.
+Ising model formalism uses discrete variables to represent the expression level of molecular species (such as micro-RNA or transcription factors etc.). Therefore, the state of the regulatory network (N-node network) can be represented by a sequence {$s_{i}$, $s_{i}$∈ {−1, 1}} called a ‘Boolean Vector’ of N binary variables where $s_{i}$ = 1 represents high-expression level of ith node and $s_{i} $ = −1 represents low expression of the node. In modeling the dynamics of network via this framework, the only knowledge required is whether each regulatory relationship between network nodes is activating or inhibitory. Regulatory interactions between the molecular species are represented by an N*N matrix called an ‘Interaction Matrix (M)’ where $M_{ij} $ = 1 represents ‘promotion’ (or activation) of levels of ith node by jth node and $M_{ij}$ = −1 represents ‘inhibition’ (or repression) of levels of ith node by jth node of the N-node network. The absence of any regulatory relationship between species i and species j is indicated by $M_{ij}$ = 0.
 
-At every discrete-time step, the expression level of a node si(t+1) is given as +1 if ∑i=1NMij*sj(t)>0 and −1 if ∑j=1NMij*sj(t)<0 and remains the same when ∑j=1NMij*sj(t)=0. The expression levels are updated using the asynchronous scheme in which a node from the N-node network is picked up at random at every discrete-time step and updated using the above non-linear relation. For large discrete-time dynamics, the network settles in a steady state, which means that the Boolean Vector is a fixed point of the above-given relation (i.e. will not change as time progresses).
+At every discrete-time step, the expression level of a node $s_{i}$(t+1) is given as +1 if $\sumi=1NM_{ij}*s_{j}(t)>0$ and −1 if $\sumj=1NM_{ij}*s_{j}(t)<0$ and remains the same when $\sumj=1NM_{ij}*s_{j}(t)=0$. The expression levels are updated using the asynchronous scheme in which a node from the N-node network is picked up at random at every discrete-time step and updated using the above non-linear relation. For large discrete-time dynamics, the network settles in a steady state, which means that the Boolean Vector is a fixed point of the above-given relation (i.e. will not change as time progresses).
 
-## RAndom CIrcuit PErturbation
+### RAndom CIrcuit PErturbation
 
-RACIPE is a tool that identifies robust dynamical properties of transcriptional regulatory networks (TRNs) by generating an ensemble of continuous network models with distinct kinetic parameters. For every continuous model of a TRN, RACIPE first generates a system of ordinary differential equations (ODEs). For a given node ‘N’ of the TRN and a set of input activating edges Ai and input inhibiting edges Ij, the differential equation corresponding to the expression level of N is given as:
+RACIPE is a tool that identifies robust dynamical properties of transcriptional regulatory networks (TRNs) by generating an ensemble of continuous network models with distinct kinetic parameters. For every continuous model of a TRN, RACIPE first generates a system of ordinary differential equations (ODEs). For a given node ‘N’ of the TRN and a set of input activating edges $A_{i}$ and input inhibiting edges $I_{j}$, the differential equation corresponding to the expression level of N is given as:
 
-Here, N, Ai, and Ij represent the expression levels of the species of the TRN. GN and kN denote the Production and Degradation rates, respectively. A0iN is the threshold value of Ai expression level at which the non-linearity in the dynamics of N due to Ai is seen. n is termed as the Hill coefficient and represents the extent of non-linearity in the regulation. λ represents the fold change in the target node expression level upon over-expression of regulating nodes. The functions HS+ and HS− are known as Shifted Hill functions (Lu et al., 2013) and represent the regulation of the target node by the regulatory node. Shifted Hill functions take the following form:
+Here, $N, A_{i}$, and $I_{j}$ represent the expression levels of the species of the TRN. $G_{N}$ and $k_{N}$ denote the Production and Degradation rates, respectively. $A^{0}_{iN}$ is the threshold value of $A_{i}$ expression level at which the non-linearity in the dynamics of $N$ due to $A_{i}$ is seen. $n$ is termed as the Hill coefficient and represents the extent of non-linearity in the regulation. $\lambda$ represents the fold change in the target node expression level upon over-expression of regulating nodes. The functions $H^{S+}$ and $H^{S−}$ are known as Shifted Hill functions (Lu et al., 2013) and represent the regulation of the target node by the regulatory node. Shifted Hill functions take the following form:
 
 For the system of ODEs, RACIPE randomly samples the kinetic parameters from a pre-defined set of parameter ranges. At each parameter set, RACIPE integrates the model from multiple initial conditions and obtains steady states in the state space. For the current analysis, a sample size of 10^6 for parameters sets and 1000 for initial conditions was used. The parameters were sampled via a uniform distribution, and the ODE integration was carried out using the Runge–Kutta–Fehlberg method of numerical integration.
 
 For the given TRN with ‘n’ nodes, the steady-state expression levels of the nodes were normalized in the following way:
 
-For the ith node, Ein is the normalized expression level of the node, Ei is the steady-state expression level, fi is the normalization factor, gi and ki  are the production and degradation of the ith node corresponding the current steady-state, and λij are the fold change in the expression of node i due to node j. The normalized expression levels of all steady states are then converted into z-scores by scaling about their combined mean:
+For the ith node, $E_{in}$ is the normalized expression level of the node, $E_{i}$ is the steady-state expression level, $f_{i}$ is the normalization factor, $g_{i}$ and $k_{i} $ are the production and degradation of the ith node corresponding the current steady-state, and $\lambda_{ij}$ are the fold change in the expression of node i due to node j. The normalized expression levels of all steady states are then converted into z-scores by scaling about their combined mean:
 
-where Ein_ is the combined mean and σin  is the combined variance.
+where $E_{in}_$ is the combined mean and $\sigma_{in} $ is the combined variance.
 
 The z-scores can then be classified into Low (zero) and High (one) expression levels based on the sign of their values. This way we have discretized the continuous steady-state levels of the network for comparison with the frequency of Boolean steady states. The way to calculate the total frequency of each discrete state is by counting the occurrence in all the parameter sets. For parameter sets with n steady states, the count of each steady state is taken as 1/n, invoking the assumption that all the states are equally stable.
 
-## Data and code availability
+### Data and code availability
 
 All codes are available at https://github.com/uday2607/CSB-SCLC; Chauhan, 2021; copy archived at swh:1:rev:eb4c869fe572bb0a98a6a7ce7a09631ad584200e.

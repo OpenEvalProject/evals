@@ -37,7 +37,7 @@ In this work, we established a method for imaging both ATP concentration and cas
 
 ## Results
 
-## Development of FRET biosensors for dual imaging of ATP and caspase-3 activity of apoptotic cells
+### Development of FRET biosensors for dual imaging of ATP and caspase-3 activity of apoptotic cells
 
 In general, the progression of apoptosis varies between individual cells, even in the same cell type. It is, thus, essentially difficult to understand how the intracellular ATP level in a particular cell changes during apoptosis using conventional biochemical analyses of pooled cells, such as firefly luciferase assays. To reveal the dynamics of intracellular ATP levels during apoptosis at the single-cell level, we first used a genetically encoded FRET-based ATP biosensor, ATeam (Imamura et al., 2009), which is comprised of a cyan fluorescent protein (CFP; mseCFP), an FoF1-ATP synthase ε subunit and yellow fluorescent protein (YFP; cp173-mVenus). Unfortunately, we found that the original ATeam (AT1.03) was cleaved into its constituent pair of separate fluorescent proteins in apoptotic cells, most probably by activated caspases (Figure 1—figure supplement 1). Thus, the FRET signals of the original biosensor were reduced in apoptotic cells irrespective of the ATP concentration. We replaced Asp-242 and Asp-339 of AT1.03, which we predicted were within the target sequences of the caspases, with Asn and Gly, respectively, and found that the altered ATeam was not cleaved inside apoptotic cells (Figure 1—figure supplement 1). We subsequently used this caspase-resistant ATeam (AT1.03CR) to study the ATP dynamics in apoptotic cells.
 
@@ -45,15 +45,45 @@ The dynamics of cytosolic ATP levels throughout the apoptotic process were inves
 
 The presence of a pan-caspase inhibitor zVAD-fmk almost completely blocked the cytosolic ATP decrease of anti-FAS-induced apoptotic cells (Figure 1A). Thus, the ATP decrease induced by apoptotic stimuli is most likely a caspase-dependent process. Next, we developed a FRET-based caspase-3 biosensor O-DEVD-FR by connecting an orange fluorescent protein mKOκ (Tsutsui et al., 2008) and a far-red fluorescent protein mKate2 (Shcherbo et al., 2009) by a Gly-Gly-Asp-Glu-Val-Asp-Gly-Thr linker containing a bona fide caspase-3 recognition sequence (Figure 1—figure supplement 3). Once caspase-3 is activated, it cleaves the linker in O-DEVD-FR, resulting in the separation of mKOκ and mKate2, and the consequent reduction in FRET signal in apoptotic cells (Figure 1B). It was recently demonstrated that mKOκ-mKate2 FRET pair is compatible with CFP-YFP FRET pair because they use different spectral windows (Watabe et al., 2020). Thus, it is possible to use both biosensors to fluorescently image ATP level and caspase-3 activity in the same apoptotic cell (Figure 1C,D). Activation of caspase-3 was clearly observed as a decrease in FRET signal (an increase in mKO/mKate ratio). We defined onset of caspase-3 activation as the frame immediately preceding the first frame in which the increase in mKO/mKate ratio was first observed (see an arrow in the inset of Figure 1D). It was observed that intracellular ATP started to decrease after the onset of caspase-3 activation, also supporting that the ATP decrease of the apoptotic cell is a caspase-dependent process. It should be noted that any increase or decrease in fluorescence intensity due to cell morphological change was offset because we monitored the ratios of fluorescence intensities of an acceptor and a donor of the FRET biosensors.
 
-## Single-cell dynamics of cytosolic ATP of apoptotic PANX1-knockout cells
+![Figure 1.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig1-v2.jpg)
+
+**Figure 1.:** (A) Single-cell ATP dynamics after anti-FAS treatment in the absence and the presence of zVAD-fmk. Each line represents the time course of the YFP/CFP ratio of AT1.03CR from a single cell (70 [DMSO] and 49 [zVAD] cells from three biological replicates). Cells were treated with anti-FAS and cycloheximide at time = 1.0 hr. DMSO (0.1%) or pan-caspase inhibitor zVAD-fmk (20 µM) was added just before the start of imaging experiment. (B) Schematic drawings of AT1.03CR and O-DEVD-FR. (C) Time-lapse images of the ATP level and caspase-3 activity of a single apoptotic HeLa cell expressing AT1.03CR and O-DEVD-FR. Pseudocolored ratio images of AT1.03CR are shown in the upper panel, and those of O-DEVD-FR are shown in the lower panel. Bar, 10 µm. (D) Time courses of ATP level and caspase-3 activity of a single apoptotic HeLa cell. YFP/CFP ratio of AT1.03CR and mKO/mKate ratio of O-DEVD-FR were shown in the upper and the lower panels, respectively. Arrow in the inset indicates the onset of caspase-3 activation. Fluorescence images were captured every 3 min.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic drawing of ATeam. An ATP binding protein (Bacillus subtilis FoF1-ATP synthase ε subunit) is sandwiched by CFP (mseCFP) and YFP (cp173-mVenus). Critical Asp residues (Asp-242 and Asp-339) within putative caspase-cleavage sequences within the original ATeam (AT1.03) were replaced by Asn and Gly, respectively. (B) Western blot analysis of the integrity of ATeam in apoptotic cells revealed that AT1.03CR was resistance to cleavage upon the initiation of apoptosis. HeLa cells expressing either AT1.03 or AT1.03CR were stimulated with anti-FAS and cycloheximide (CHX) to induce apoptosis. Cell lysates were analyzed by western blotting using an anti-GFP antibody.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Each line represents the time course of the FRET/CFP ratio of AT1.03CR in a single apoptotic cell. Medium with (A) or without (B) anti-FAS and CHX was added at 1 hr after starting imaging. One data set out of three biological replicates are shown (13 cells for anti-FAS treatment and 10 cells for mock treatment).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig1-figsupp3-v2.jpg)
+
+### Single-cell dynamics of cytosolic ATP of apoptotic PANX1-knockout cells
 
 PANX1 belongs to the innexin/pannexin superfamily and forms a heptameric pore in the plasma membrane (Deng et al., 2020; Michalski et al., 2020; Qu et al., 2020), functioning as a large-pore channel capable of passing small molecules (Bao et al., 2004; Dahl and Muller, 2014; Panchin et al., 2000; Penuela et al., 2013). It has been reported that apoptotic cells release ATP, AMP, and also UTP through the PANX1 channel as ‘find-me’ signals to attract macrophages and that the PANX1 channel is opened by caspase-3/7, which cleaves the C-terminal region of the channel (Chekeni et al., 2010; Elliott et al., 2009; Yamaguchi et al., 2014). The previous cell population-based study has reported that accumulation of extracellular adenine nucleotides correlates with decreases in intracellular ATP during the apoptotic progression of Jurkat cells (Boyd-Tressler et al., 2014). In order to investigate the impact of PANX1 on intracellular ATP dynamics during apoptosis at a single-cell level with high temporal resolution, we utilized the dual imaging setup for ATP and caspase-3 activity to PANX1-knock out (KO) HeLa cell lines (PANX1-KO1 and PANX1-KO2), which were generated using a CRISPR-Cas9 system (Figure 2A). Strikingly, decreases in the intracellular ATP levels of PANX1-KO cells after caspase-3 activation were significantly slower than those of wild-type HeLa cells when apoptosis was induced by anti-FAS antibody (Figure 2B–D). Knockout of PANX1 apparently has no effect on the ability of the cells to undergo cell death. A marked suppression of ATP decrease by knockout of PANX1 was also observed when apoptosis was induced by staurosporine (Figure 2E,F). Moreover, knockout of PANX1 also suppressed the decrease in ATP during TRAIL-induced apoptosis of SW480 human colorectal adenocarcinoma cells (Figure 2—figure supplement 1). Thus, PANX1 is involved in the facilitation of intracellular ATP decreases during apoptosis in multiple cell types and on various apoptotic stimuli. Notably, the intracellular ATP levels of PANX1-KO cells were almost unchanged in the first 30–60 min after the activation of caspase-3, followed by a gradual ATP decline (Figure 2C–F, Figure 2—figure supplement 1). The lag in the cytosolic ATP decrease observed for PANX1-KO cells might be partially relevant to the previous observation by Zamaraeva (Zamaraeva et al., 2005), which suggested the enhancement of cytosolic ATP level after apoptotic stimulation. Single-cell imaging also provided unexpected observations that intracellular ATP concentration transiently and repeatedly re-elevated on the course of the gradual ATP decrease in some populations of the PANX1-KO cells (Figure 3). Although the mechanism for these fluctuations in the intracellular ATP concentrations is unknown at present, the fluctuations must reflect either fluctuation in the rate of regeneration of ATP from ADP, that of adenosine nucleotide synthesis through de novo/salvage pathways, or that of degradation/release of ATP, or a combination thereof.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot analysis of PANX1 expression of wild-type and PANX1-KO HeLa cells. (B) Time-lapse images of the ATP level of a wild-type cell and a PANX1-KO cell. Pseudocolored ratio images of AT1.03CR are shown. Apoptosis was induced by anti-FAS and cycloheximide. The onset of caspase-3 activation was set as time = 0. Bar, 10 µm. (C, E) Single cell ATP dynamics of wild-type and PANX1-KO cells during apoptosis. Apoptosis was induced by anti-FAS and cycloheximide (C; 39 [WT], 18 [PANX1-KO1] and 22 [PANX1-KO2] cells from three biological replicates), or staurosporine (E; 15 [WT], 27 [PANX1-KO1] and 19 [PANX1-KO2] cells from three biological replicates). Each line represents the time course of the YFP/CFP ratio of AT1.03CR from a single cell, and was adjusted by setting the onset of caspase-3 activation as time = 0. Traces from different replicates were labeled with bars of different shades. (D, F) Effect of PANX1 knockout on the decrease in cytosolic ATP levels. Changes in YFP/CFP ratios at indicated time after the onset of caspase-3 activation were calculated for each apoptotic cell. Apoptosis was induced by anti-FAS and cycloheximide (D), or staurosporine (F). Analysis of variance (ANOVA) followed by post-hoc Dunnett’s test (versus wild-type).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Apoptosis of wild-type and PANX1-KO SW480 cells expressing AT1.03CR and O-DEVD-FR were induced by TRAIL. Changes in YFP/CFP ratios at indicated time after the onset of caspase-3 activation were calculated for each apoptotic cell (20 [WT] and 21 [PANX1-KO] cells from three biological replicates). P-values of Student’s t-test were shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** HeLa cells were cultured in glucose-free DMEM supplemented with 10% fetal bovine serum (FBS), 10 mM lactate and 10 mM DCA. Apoptosis was induced with anti-FAS/CHX. (A) Each line represents the YFP/CFP ratio of AT1.03CR from a single apoptotic cell, and was adjusted by setting the onset of caspase-3 activation as time = 0 (30 [WT] and 37 [PANX1KO2] cells from three biological replicates). (B) Effect of PANX1-KO on the decrease in cytosolic ATP levels. Changes in YFP/CFP ratios at indicated time after the onset of caspase-3 activation were calculated for each apoptotic cell. Apoptosis was induced by anti-FAS and cycloheximide.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Time-lapse images of caspase-3 activity and mitochondrial membrane potential (∆Ψm) of a representative single apoptotic cell. Fluorescence images of a HeLa cell, which expressed SCAT3.1 and which was loaded with TMRE, were captured every 3 min. Imaging was initiated 30 min after induction of apoptosis with anti-FAS antibody/CHX. Pseudocolored FRET/CFP ratio images of SCAT3.1 are shown in the upper panel, and TMRE images are shown in the lower panel. Bar, 10 µm. (B) Representative time course of the cytosolic ATP level and ∆Ψm of a single apoptotic cell. Quantified FRET/CFP ratio (green circle, left axis) and TMRE fluorescence intensity (magenta triangle, right axis) from the apoptotic cell in (A) are shown.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig3-v2.jpg)
 
 **Figure 3.:** (A) Fluctuation of cytosolic ATP level of a PANX1-KO2 cell. Pseudocolored YFP/CFP ratio images of AT1.03CR are shown. Apoptosis was induced by anti-FAS and cycloheximide. Bar, 10 µm. (B, C) Representative traces of YFP/CFP ratios of AT1.03CR from single PANX1-KO cells from three biological replicates are shown. Apoptosis was induced by anti-FAS and cycloheximide (B), or staurosporine (C). Each trace was adjusted by setting the onset of caspase-3 activation as time = 0.
 
-## Effect of exogenous expression of PANX1 on single-cell dynamics of cytosolic ATP during apoptosis
+### Effect of exogenous expression of PANX1 on single-cell dynamics of cytosolic ATP during apoptosis
 
 Next, we exogenously expressed wild-type PANX1 in PANX1-KO HeLa cells. Cells overexpressing wild-type PANX1 precipitously lost their intracellular ATP, concomitant with the onset of caspase-3 activation, for both anti-FAS- and staurosporine-induced apoptosis (Figure 4A–E), further confirming that the PANX1 channel plays a major role in facilitating intracellular ATP decrease of apoptotic cells.
 
@@ -63,11 +93,11 @@ Next, we exogenously expressed wild-type PANX1 in PANX1-KO HeLa cells. Cells ove
 
 To examine that the intracellular ATP decrease in apoptotic cells is dependent on caspase-3 activity, we investigated the intracellular ATP dynamics of single apoptotic wild-type HeLa cells overexpressing a D376A/D379A mutant of PANX1 (PANX1-CR), in which the caspase recognition sequence close to the C-terminus of PANX1 is mutated (Chekeni et al., 2010). When PANX1-CR is overexpressed, most of the intrinsic wild-type PANX1 molecules are predicted to form hetero-heptamer with overexpressed PANX1-CR. The PANX1 hetero-heptamer will be expected to have much less channel activity than the wild-type PANX1 homo-heptamer as caspase-3 cannot separate the inhibitory C-terminal region from PANX1-CR inside the hetero-heptamers. In fact, it has been reported that the overexpression of PANX1-CR significantly suppresses the release of ATP from apoptotic cells (Chekeni et al., 2010). Accordingly, the intracellular ATP depletion was significantly protracted by the overexpression of PANX1-CR (Figure 4F; Figure 4G), clearly indicating that the cleavage of the C-terminal region of PANX1 by caspases is required for the PANX1-dependent intracellular ATP decrease of apoptotic cells.
 
-## Single-cell dynamics of cytosolic ATP during apoptosis under an OXPHOS-dominant culture condition
+### Single-cell dynamics of cytosolic ATP during apoptosis under an OXPHOS-dominant culture condition
 
 It is known that cells in normal adult tissues preferentially use oxidative phosphorylation (OXPHOS) in mitochondria for the regeneration of ATP, while cells in embryonic tissues and tumors use glycolysis (Vander Heiden et al., 2009). In the experiments described thus far we used HeLa cells cultured in glucose-containing medium. The cells preferentially regenerate ATP by glycolysis rather than OXPHOS under these conditions. To examine the role of PANX1 in apoptosis of OXPHOS-dominant cells, we compared the dynamics of intracellular ATP in PANX1-KO HeLa cells with those in wild-type cells during apoptotic progression under an OXPHOS-dominant culture condition. The cytosolic ATP level after the onset of caspase-3 activation dropped more quickly in the OXPHOS-dominant condition than in the glycolysis-dependent condition (Figure 2—figure supplement 2), probably because mitochondrial membrane potential ∆Ψm, which is required for mitochondrial ATP regeneration, is almost lost upon activation of caspase-3 (Figure 2—figure supplement 3). Even in this condition, knockout of PANX1 also suppressed the decrease in cytosolic ATP levels of the cells (Figure 2—figure supplement 2). This result indicates that PANX1 also promotes the intracellular ATP reduction of OXPHOS-dominant cells.
 
-## Extracellular AMP suppresses the decrease in the cytosolic ATP
+### Extracellular AMP suppresses the decrease in the cytosolic ATP
 
 If efflux of adenine nucleotides through PANX1 channel causes the decrease in the cytosolic ATP concentrations of apoptotic cells, extracellular adenine nucleotides would suppress the decrease by counteracting the efflux of its cytosolic counterpart. We monitored cytosolic ATP dynamics in apoptotic cells in the presence of AMP, ADP, or ATP in the culture medium, and found that extracellular AMP suppressed the decrease in intracellular ATP levels of apoptotic cells, while extracellular ADP and ATP exhibited no or negligible effects (Figure 5). Thus, it is most likely that the intracellular ATP decrease of apoptotic cells is a result of a reduction in adenosine nucleotide pools inside apoptotic cells, which is caused, at least in part, by the release of AMP from the cells. This result is consistent with the previous reports that AMP constitutes a large part of adenine nucleotides released from apoptotic cells (Yamaguchi et al., 2014; Boyd-Tressler et al., 2014).
 
@@ -75,23 +105,39 @@ If efflux of adenine nucleotides through PANX1 channel causes the decrease in th
 
 **Figure 5.:** Wild-type HeLa cells expressing AT1.03CR and O-DEVD-FR were imaged in the presence of an adenine nucleotide (1 mM) in the culture medium. Apoptosis was induced by anti-FAS and cycloheximide. (A) Each line represents the YFP/CFP ratio of AT1.03CR from a single apoptotic cell, and was adjusted by setting the onset of caspase-3 activation as time = 0 (40 [control], 50 [AMP], 39 [ADP] and 39 [ATP] cells from three biological replicates). (B) Effect of the addition of extracellular nucleotide on the decrease in cytosolic ATP levels. Changes in FRET/CFP ratios at 0.5, 1.0, and 1.5 hr after the caspase-3 activation were calculated for each apoptotic cell. ANOVA followed by post-hoc Dunnett’s test (versus control).
 
-## PANX1 activity regulates free Mg2+ dynamics, but not phosphatidylserine externalization, in apoptotic cells
+### PANX1 activity regulates free Mg2+ dynamics, but not phosphatidylserine externalization, in apoptotic cells
 
 Next, we investigated whether the PANX1 channel is involved in apoptotic events other than intracellular ATP reduction. First, we examined the Mg2+ dynamics of apoptotic cells. Mg2+ is an essential divalent cation in cells, required for various cellular processes, including the activity of endonucleases and the compaction of chromosomes during cell division (Hartwig, 2001; Maeshima et al., 2018). It is known that most of the intracellular ATP form a complex with Mg2+, due to the high affinity of ATP for Mg2+ (Gupta and Moore, 1980; Grubbs, 2002). Thus, ATP acts as a major intracellular chelator for Mg2+. We hypothesized that the PANX1-dependent cytosolic ATP decrease might affect free Mg2+ in apoptotic cells, and investigated the dynamics of free Mg2+ in single apoptotic HeLa cells using a Mg2+-sensing fluorescent probe MGH (Matsui et al., 2017). In wild-type cells, free Mg2+ was transiently decreased after shrinkage of the cells. Subsequently, free Mg2+ began to increase and often reached higher than the basal level. In contrast, the fluctuations in free Mg2+ were significantly suppressed in apoptotic PANX1-KO cells (Figure 6A). Although the cause of the Mg2+ decrease observed immediately after cell shrinkage is unclear, it might be possible that PANX1 transiently releases Mg2+ from cytosol to extracellular space. The Mg2+ increase in the second phase might be coupled with the decrease in ATP, an intracellular Mg2+ chelator. Taken together, PANX1 regulates the dynamics of free Mg2+ in apoptotic cells, likely in part by decreasing ATP concentrations inside cells. Second, we examined the role of PANX1 on the externalization of phosphatidylserine (PS) on plasma membrane, one of the hallmarks of apoptosis (Elmore, 2007; Nagata, 2018). Externalized PS functions as an ‘eat-me’ signal for phagocytosis of apoptotic cells by macrophages. We examined whether PANX1 channel affects the externalization of PS in the plasma membrane by quantifying the amount of externalized PS using fluorescently-labeled annexin-V. As a result, no significant difference in the externalized PS was observed between wild-type and PANX1-KO HeLa cells (Figure 6B), suggesting that neither the PANX1-dependent intracellular ATP reduction or PANX1 itself does not contribute to the externalization of PS during apoptotic progression.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig6-v2.jpg)
 
-**Figure 6.:** 2+ level, but not the externalization of phosphatidylserine, in apoptotic cells.(A) HeLa cells expressing Halo-tag were loaded with Halo-TMR and a magnesium indicator MGH(AM), followed by induction of apoptosis. Each trace represents a time course of normalized MGH/TMR fluorescence ratios of individual cell from three biological replicates. Timing of the initiation of cell shrinkage was defined as time = 0. Reddish and bluish traces represent wild-type cells (n = 22) and PANX1-KO2 cells (n = 20), respectively, from three biological replicates. Traces from different biological replicates were shown in different color codes. (B) Apoptosis of HeLa cells was induced by anti-FAS and cycloheximide in the presence of Alexa647-annexinV and propidium iodide. Fluorescence intensity of Alexa647-annexinV of each cell that does not show propidium iodide fluorescence was quantified using a fluorescent microscopy at 6 hr after induction of apoptosis (359 [WT] and 322 [PANX1-KO2] cells from three biological replicates).Figure 6—source data 1.
+**Figure 6.:** (A) HeLa cells expressing Halo-tag were loaded with Halo-TMR and a magnesium indicator MGH(AM), followed by induction of apoptosis. Each trace represents a time course of normalized MGH/TMR fluorescence ratios of individual cell from three biological replicates. Timing of the initiation of cell shrinkage was defined as time = 0. Reddish and bluish traces represent wild-type cells (n = 22) and PANX1-KO2 cells (n = 20), respectively, from three biological replicates. Traces from different biological replicates were shown in different color codes. (B) Apoptosis of HeLa cells was induced by anti-FAS and cycloheximide in the presence of Alexa647-annexinV and propidium iodide. Fluorescence intensity of Alexa647-annexinV of each cell that does not show propidium iodide fluorescence was quantified using a fluorescent microscopy at 6 hr after induction of apoptosis (359 [WT] and 322 [PANX1-KO2] cells from three biological replicates).
 
-## PANX1 activation prevents glucose expenditure by apoptotic cells
+### PANX1 activation prevents glucose expenditure by apoptotic cells
 
 We showed above that dying apoptotic cells retained intracellular ATP levels for longer periods when the PANX1 channel is lost or suppressed. These observations suggest that an intracellular system for regenerating ATP from ADP and phosphate may still be active in dying apoptotic cells. In living cells, glycolysis and OXPHOS play prominent roles in the regeneration of ATP. To examine whether these ATP regenerating pathways are active, we treated PANX1-KO cells with either an inhibitor for glycolysis or OXPHOS after activation of caspase-3 while monitoring the dynamics of cytosolic ATP levels (Figure 7A–D). We used 2-deoxyglucose (2DG) or sodium oxamate, which are an inhibitor for hexokinase and lactate dehydrogenase, respectively, to inhibit glycolysis, whereas used oligomycin A, which is an inhibitor for FoF1-ATP synthase, to inhibit OXPHOS. Treatment with either 2DG or sodium oxamate induced a rapid decrease in intracellular ATP concentration (Figure 7B,C). In contrast, treatment with oligomycin A, an inhibitor of OXPHOS, seemed to have only a small effect on intracellular ATP dynamics under this condition (Figure 7D). These observations indicate that apoptotic processes do not disrupt the glycolytic system of the cells and that even dying apoptotic cells retain the ability to regenerate ATP by glycolysis. The rapid decrease in cytosolic ATP concentration of apoptotic PANX1-KO cells by inhibition of glycolysis also implies that at least some of the intracellular ATP-utilizing systems are active during apoptosis if sufficient intracellular ATP is present. It has been previously reported that apoptotic cells treated with a PANX1 inhibitor showed continuous and extensive blebbing (Poon et al., 2014), which is dependent on myosin ATPase (Coleman et al., 2001). Consistently, we also observed that PANX1-KO cells showed more extensive blebbing than wild-type cells during apoptosis (Videos 1 and 2). Moreover, forced ATP depletion of apoptotic PANX1-KO cells by 2DG leaded to the reduction of the blebbing of the cells (Videos 3 and 4). It is also likely that the reduction of ATP during apoptosis leads to the decrease in the activities of other ATPases because ATPase activity depends on the concentration of ATP. We expected that if the intracellular ATP concentration of apoptotic cells is not depleted, the cycle of ATP consumption and regeneration will continue, resulting in a continuous glucose consumption by the cells. To examine glycolytic activity in apoptotic cells, we quantified the consumption of glucose and the release of lactate by wild-type and PANX1-KO HeLa cells after induction of apoptosis. Both cells exhibited similar glucose consumption and lactate production rates when apoptosis was not induced (Figure 7E). Glucose consumption and lactate production by wild-type cells had almost ceased by 16 hr after induction of apoptosis, while those by PANX1-KO cells continued for at least 32 hr when apoptosis was induced by anti-FAS (Figure 7F). Trends of glucose consumption and lactate production by those cells were quite similar when apoptosis was induced by ultraviolet (Figure 7G). Thus, apoptotic cells with deficient PANX1 activity have a prolonged glycolytic activity compared to normal apoptotic cells. Taken together, activation of PANX1 channels thwarts glucose expenditure of apoptotic cells, most likely by rapidly depleting intracellular ATP reserves (Figure 8).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig7-v2.jpg)
 
-**Figure 7.:** (A–D) Effect of metabolic inhibitors on cytosolic ATP of apoptotic cells. Apoptosis of PANX1-KO2 cells expressing AT1.03CR and O-DEVD-FR were induced by anti-FAS and cycloheximide. After activation of caspase-3, the cells were untreated (A) or treated either with 10 mM 2-deoxyglucose (B), 50 mM sodium oxamate (C), or 1 µg/ml oligomycin A. Each trace represents the YFP/CFP ratio of AT1.03CR from a single apoptotic cell, and was adjusted by setting the onset of caspase-3 activation as time = 0. A period of inhibitor treatment was indicated as a bar on each plot. Representative traces from three biological replicates are shown. (E) Glycolytic activity of living wild-type and PANX1-KO cells. Consumption of glucose (left) and release of lactate (right) in 8 hr is shown. (F–G) Glycolytic activity of apoptotic cells. Apoptosis was induced either by anti-FAS/cycloheximide (left) or ultraviolet (right) at time = 0. Consumed glucose (F) and released lactate (G) by wild-type Hela cells (black, dashed line) and PANX1-KO2 cells (red, solid line) are shown. Means ± s.d. (three biological replicates) and p-values of paired t-test were shown (E–G).Figure 7—source data 1.Figure 7—source data 2.Figure 7—source data 3.
+**Figure 7.:** (A–D) Effect of metabolic inhibitors on cytosolic ATP of apoptotic cells. Apoptosis of PANX1-KO2 cells expressing AT1.03CR and O-DEVD-FR were induced by anti-FAS and cycloheximide. After activation of caspase-3, the cells were untreated (A) or treated either with 10 mM 2-deoxyglucose (B), 50 mM sodium oxamate (C), or 1 µg/ml oligomycin A. Each trace represents the YFP/CFP ratio of AT1.03CR from a single apoptotic cell, and was adjusted by setting the onset of caspase-3 activation as time = 0. A period of inhibitor treatment was indicated as a bar on each plot. Representative traces from three biological replicates are shown. (E) Glycolytic activity of living wild-type and PANX1-KO cells. Consumption of glucose (left) and release of lactate (right) in 8 hr is shown. (F–G) Glycolytic activity of apoptotic cells. Apoptosis was induced either by anti-FAS/cycloheximide (left) or ultraviolet (right) at time = 0. Consumed glucose (F) and released lactate (G) by wild-type Hela cells (black, dashed line) and PANX1-KO2 cells (red, solid line) are shown. Means ± s.d. (three biological replicates) and p-values of paired t-test were shown (E–G).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/61960/elife-61960-fig8-v2.jpg)
+
+![Video 1.](https://cdn.elifesciences.org/articles/61960/elife-61960-video1.mp4.jpg)
+
+**Video 1.:** YFP (FRET) fluorescence from ATeam is shown. Apoptosis was induced by anti-FAS and cycloheximide. Time = 0 indicates the onset of caspase-3 activation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/61960/elife-61960-video2.mp4.jpg)
+
+**Video 2.:** The same experimental conditions as Figure 1—figure supplement 1.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61960/elife-61960-video3.mp4.jpg)
+
+**Video 3.:** Apoptosis was induced by anti-FAS and cycloheximide. Time = 0 indicates the onset of caspase-3 activation.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61960/elife-61960-video4.mp4.jpg)
+
+**Video 4.:** Apoptosis was induced by anti-FAS and cycloheximide. Time = 0 indicates the onset of caspase-3 activation. 2DG was added between 60 and 63 min.
 
 ## Discussion
 
@@ -105,38 +151,237 @@ How does the intracellular ATP concentration change in other types of cell death
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>HeLa</td>
+      <td>Shin Yonehara Lab</td>
+      <td></td>
+      <td>Authenticated by STR profiling; mycoplasma tested</td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>HeLa-PANX1-KO1</td>
+      <td>This study</td>
+      <td></td>
+      <td>PANX1-knockout line</td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>HeLa-PANX1-KO2</td>
+      <td>This study</td>
+      <td></td>
+      <td>PANX1-knockout line</td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>SW480</td>
+      <td>ATCC</td>
+      <td>ATCC: CCL-228; RRID:CVCL_0546</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>SW480-PANX1-KO</td>
+      <td>This study</td>
+      <td></td>
+      <td>PANX1-knockout line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FAS (Mouse monoclonal)</td>
+      <td>Molecular biology laboratory</td>
+      <td>Cat. #:SY-001, RRID:AB_591016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-His tag (Mouse monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: MAB050-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PANX1 (Rabbit monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat# 91137, RRID:AB_2800167</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-β-actin (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-47778 HRP, RRID:AB_2714189</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-AT1.03 (plasmid)</td>
+      <td>Imamura et al., 2009</td>
+      <td></td>
+      <td>Original ATP biosensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-AT1.03CR (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Caspase-resistant ATP biosensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-O-DEVD-FR (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Caspase-3 biosensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRAK027A14 (plasmid)</td>
+      <td>Riken Bioresource Center</td>
+      <td>Cat. #: HGX010814</td>
+      <td>Human pannexin-1 cDNA clone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-Sirius (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-Sirius-PANX1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Wild-type human PANX1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-Sirius-PANX1CR (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Caspase-resistant human PANX1 mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4-SCAT3.1 (plasmid)</td>
+      <td>Nagai and Miyawaki, 2004</td>
+      <td></td>
+      <td>Caspase-3 biosensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pannexin-1 CRISPR/Cas9 KO Plasmid (h)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-401635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TRAIL, human</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: 375-TL-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucose CII-test Wako</td>
+      <td>Wako Pure Chemicals</td>
+      <td>Cat. #: 300167002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lactate Assay Kit-WST</td>
+      <td>Dojindo</td>
+      <td>Cat. #: L256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MGH</td>
+      <td>Matsui et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halo-TMR</td>
+      <td>Promega</td>
+      <td>Cat. #: G8251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Annexin-V, Alexa647 conjugate</td>
+      <td>Molecular Probes</td>
+      <td>Cat. #: A23204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethylrhodamine ethyl ester</td>
+      <td>Molecular Probes</td>
+      <td>Cat. #: T669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_002368</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Oligomycin A, ATP, ADP, and AMP were obtained from Sigma-Aldrich. Solutions of ATP, ADP, and AMP were neutralized with sodium hydroxide before use. Anti-FAS antibody was from Molecular Biology Laboratory (Nagoya, Japan). Cycloheximide (CHX) was from Calboichem. Tetramethylrhodamine ethyl ester (TMRE) and alexa647-annexin-V were purchased from Molecular Probes. Recombinant human Trail and anti-His tag antibody were purchased from R and D. Trail was dissolved in DPBS(-) supplemented with 0.1% BSA at a concentration of 20 µg/mL, and then stored at −80 °C. Anti-His antibody was dissolved in DPBS(-) at a concentration of 1 mg/mL, and then stored at −80 °C. 2-Deoxyglucose were from Wako Pure Chemicals (Osaka, Japan). Other chemicals were purchased from Nacalai Tesque (Kyoto, Japan) unless otherwise noted.
 
-## Mammalian cell culture and gene knock out
+### Mammalian cell culture and gene knock out
 
 The HeLa cell line was a kind gift from Prof. Shin Yonehara. The cell line was authenticated by short-tandem repeat profiling and was checked for mycoplasma infection. The cells were grown in Dulbecco’s modified Eagle’s medium (DMEM, 1 g/L glucose; Nacalai Tesque) supplemented with 10% fetal bovine serum (FBS; Sigma-Aldrich). The SW480 cell line was obtained from American Type Culture Collection. The cells were cultured in Leibovitz’s L-15 medium (Wako Pure Chemicals, Japan) supplemented with 10% FBS. Apoptosis of HeLa cells was initiated either by adding anti-FAS antibody (125 ng/mL) and CHX (10 µM) or by adding staurosporine (1 µM). Apoptosis of SW480 cells was initiated by adding Trail (50 ng/mL) and anti-His tag antibody (1 µg/mL). Knockout of PANX1 gene was carried out using pre-designed PANX1-KO CRISPR-Cas9 plasmids (Santa Cruz Biotechnology). Briefly, cells were transfected with CRISPR-Cas9 plasmids using PEI-Max (Polysciences Inc) as described previously (Morciano et al., 2020). After 2 days, each individual cell with strong GFP fluorescence was sorted into a well in 96-well plates using a cell sorter (SH800S, Sony), and then was cultured. Knockout of PANX1 gene in each cultured line was verified by western blotting and by sequencing of the targeted region of the genomic DNA.
 
-## Plasmids
+### Plasmids
 
 The expression vector for the caspase-resistant AT1.03 (pcDNA-AT1.03CR) was constructed by introducing caspase-resistant mutations (D242N/D339G) into pcDNA-AT1.03 (Imamura et al., 2009) using PCR-based mutagenesis. O-DEVD-FR cDNA was constructed by fusing mKOκ and mKate2(V94S) through a Gly-Gly-Asp-Glu-Val-Asp-Gly-Thr linker using PCR. The amplified cDNA was cloned between XhoI and HindIII sites of pcDNA3.1(-) (Thermo Scientific) to obtain a mammalian expression vector pcDNA-O-DEVD-FR. Human PANX1 cDNA (Riken Bioresource Center) was amplified by PCR, and was cloned between XhoI and EcoRI sites of pIRES2-Sirius, a custom made vector, in which EGFP cDNA of pIRES2-EGFP (Clontech) was replaced by Sirius fluorescent protein cDNA (Tomosugi et al., 2009), to obtain a pIRES2-Sirius-hPANX1 plasmid. Caspase-resistant mutations (D376A/D379A) in PANX1 were introduced by PCR-based mutagenesis.
 
-## Fluorescence imaging of ATP levels and caspase-3 activities
+### Fluorescence imaging of ATP levels and caspase-3 activities
 
 Cells were transfected with the AT1.03CR plasmid and the O-DEVD-FR plasmid using PEI-Max as described previously (Morciano et al., 2020). For exogenous expression of PANX1, the plasmid encoding PANX1 cDNA was co-transfected with the AT1.03CR and the O-DEVD-FR plasmids. One day after transfection, cells were trypsinized and plated on a collagen-coated glass-bottom 4-compartment dish (0.16–0.19 mm thick; Greiner). Two days after transfection, cells cultured in phenol red-free DMEM supplemented with 10% FBS (HeLa) or phenol red-free Leibovitz’s L-15 medium supplemented with 10% FBS (SW480) were subjected to imaging. For OXPHOS-dependent cell culture, phenol red- and glucose-free DMEM (Gibco) supplemented with 10% FBS, 10 mM sodium lactate (Sigma-Aldrich), and 10 mM sodium dichloroacetate (an inhibitor of pyruvate dehydrogenase kinase, Sigma-Aldrich) was used. Cells were visualized with a Ti-E inverted microscope (Nikon, Tokyo, Japan) using a Plan Apo 40×, 0.95 numerical aperture, dry objective lens (Nikon). Cells were maintained on a microscope at 37°C with a continuous supply of a 95% air and 5% carbon dioxide mixture by using a stage-top incubator (Tokai Hit). All filters used for fluorescence imaging were purchased from Semrock (Rochester, NY): for dual-emission ratio imaging of AT1.03CR, an FF01-438/24 excitation filter, an FF458-Di02 dichroic mirror, and two emission filters (an FF02-483/32 for CFP and an FF01-542/27 for YFP); dual-emission ratio imaging of O-DEVD-FR, an FF01-543/22 excitation filter, an FF562-Di02 dichroic mirror, and two emission filters (an FF01-585/22 for mKOκ and an FF01-660/52 for mKate2). Cells were illuminated using a 75 W xenon lamp through 25% and 12.5% neutral density filters. Fluorescence emissions from cells were imaged using a Zyla4.2 scientific CMOS camera (Andor Technologies). The microscope system was controlled by NIS-Elements software (Nikon). Image analysis was performed using MetaMorph software (Molecular Devices). First, a background fluorescence intensity, which was measured from a region within image where no cell exist, was subtracted from an entire image. Next, the intensity of a donor fluorophore (YFP or mKate2) of a cell was divided by the intensity of an acceptor fluorophore (CFP or mKOκ) to obtain the emission ratio. The detailed method for the image analysis has been described previously (Morciano et al., 2020). Because fluorescent biosensors were abruptly dissipated from the cell when the plasma membrane of the apoptotic cell was collapsed, data after fluorescence values from cells were less than half of the maximum were excluded from the analysis. Single-cell ATP traces were visualized using PlotTwist (Goedhart, 2020). Plots of single-cell ATP changes were generated using PlotsOfData (Postma and Goedhart, 2019).
 
-## Fluorescence imaging of caspase-3 activity and ∆Ψm
+### Fluorescence imaging of caspase-3 activity and ∆Ψm
 
 HeLa cells were transfected with the pcDNA-SCAT3.1 plasmid (Nagai and Miyawaki, 2004) using Lipofectamine 2000 (Thermo Scientific). One day after transfection, cells were trypsinized and plated on a collagen-coated glass-bottom dish (0.16–0.19 mm thick; MatTek). Two days after transfection, the medium was replaced by phenol red-free DMEM containing 10% FBS and 50 nM TMRE. Then, the cells were visualized with a Ti-E inverted microscope (Nikon, Tokyo, Japan) using a Plan Apo 40×, 0.95 numerical aperture, dry objective lens (Nikon). Cells were maintained on a microscope at 37°C with a continuous supply of a 95% air and 5% carbon dioxide mixture by using a stage-top incubator (Tokai Hit). All filters used for fluorescence imaging were purchased from Semrock (Rochester, NY): for dual-emission ratio imaging of SCAT3.1 biosensors, an FF01-438/24 excitation filter, an FF458-Di02 dichroic mirror, and two emission filters (an FF02-483/32 for CFP and an FF01-542/27 for YFP); for imaging of TMRE, an FF01-562/40 excitation filter, an FF593-Di02 dichroic mirror, and an FF01-641/75 emission filter. Cells were illuminated using a 75 W xenon lamp through 25 and 12.5% neutral density filters. Fluorescence emissions from cells were imaged using a Zyla4.2 scientific CMOS camera (Andor Technologies). The microscope system was controlled by NIS-Elements software (Nikon). Image analysis was performed using MetaMorph software (Molecular Devices).
 
-## Fluorescence imaging of free Mg2+
+### Fluorescence imaging of free Mg2+
 
 Mg2+ imaging was performed using a synthetic Mg2+ indicator MGH (Matsui et al., 2017). HeLa cells maintained in 10% FBS in DMEM (Invitrogen) at 37°C under 5% CO2 were transfected with the plasmid pcDNA-3.1-(+)-Halo-Tag using PEI-Max (Polysciences). After 48 hr, the cells were washed twice with HBSS and incubated with 5 µM MGH(AM) for 30 min, then 50 nM Halo-TMR for 100 min. After washing the cells twice with HBSS, the medium was replaced by phenol red-free DMEM containing 10% FBS. After 4 hr, the cells were washed with HBSS. Imaging of the cells was started just after replacing the medium by phenol red-free DMEM containing 10% FBS, 50 ng/mL anti-FAS and 10 µM cycloheximide. Cells were visualized with a Ti-E inverted microscope using a Plan Apo 40×, 0.95 numerical aperture, dry objective lens (Nikon). Cells were maintained on a microscope at 37°C with a continuous supply of a 95% air and 5% carbon dioxide mixture by using a stage-top incubator (Tokai Hit). For imaging of MGH, an FF01-497/16 excitation filter, an FF516-Di01 dichroic mirror and an FF01-535/22 emission filter were used. For imaging of TMR, an FF01-562/40 excitation filter, an FF593-Di02 dichroic mirror, and an FF01-641/75 emission filter were used. All filters were purchased from Semrock.
 
-## Fluorescence imaging of phosphatidylserine
+### Fluorescence imaging of phosphatidylserine
 
 HeLa cells were cultured on a 35 mm glass-bottom culture dish. At 6 hr before imaging, the medium was replaced by 2 mL of phenol red-free DMEM supplemented with FBS (10%), CaCl2 (1 mM), propidium iodide (1 µg/mL), Annexin-V-Alexa647 (10 µL), anti-FAS (250 ng/mL) and CHX (10 µM). Cells were visualized with a Ti-E inverted microscope (Nikon, Tokyo, Japan) using a Plan Apo 20×, 0.75 numerical aperture, dry objective lens (Nikon). All filters used for fluorescence imaging were purchased from Semrock (Rochester, NY): for imaging of propidium iodide, an FF01-504/12 excitation filter, an FF593-Di02 dichroic mirror, and an FF01-562/40 emission filter; for imaging of Annexin- V-Alexa647, an FF02-628/40 excitation filter, an FF660-Di02 dichroic mirror, and an FF01-692/40 emission filter. Fluorescence emissions from cells were imaged using a Zyla4.2 scientific CMOS camera (Andor Technologies). Image analysis was performed using MetaMorph software (Molecular Devices). Fluorescence intensity of Alexa647 within a whole-cell area of each cell that was shrunk but did not exhibit propidium iodide fluorescence was quantified.
 
-## Glucose and lactate assay
+### Glucose and lactate assay
 
 HeLa cells (1.5 × 106) were cultured in 60 mm dish in DMEM (1 g/L glucose) supplemented with 10% FBS. After 24 hr, the medium was replaced by HBSS. Subsequently, apoptosis was induced either by replacing the medium with 4 mL of phenol red-free DMEM (1 g/L glucose) supplemented with 10% FBS, 250 ng/mL anti-FAS antibody and 10 µM cycloheximide, or by irradiating the cells with 20 mJ UV-C, followed by replacing the medium with 4 mL of phenol red-free DMEM (1 g/L glucose) supplemented with 10% FBS. Small aliquots of culture medium from the cell cultures were sampled at defined intervals. After centrifugation at 3000 x g for 3 min at 4 °C, the supernatant from each sample was stored at −30°C until the glucose and lactate quantification assay. Glucose and lactate concentrations of the aliquots were determined using Glucose CII-test Wako (Wako Pure Chemicals, Osaka, Japan) and Lactate Assay Kit-WST (Dojindo, Kumamoto, Japan), respectively.
 
-## Western blotting
+### Western blotting
 
 Cleavage of ATeam in apoptotic cells was examined by western blotting. Briefly, apoptosis was induced in HeLa cells, which were previously transfected with pcDNA-AT1.03 or pcDNA-AT1.03CR, by adding anti-FAS antibody and CHX. The cells were harvested 12 hr after anti-FAS stimulation and lysed. After separation of the cell lysate by SDS-PAGE, ATeam and actin proteins were detected by western blotting using a polyclonal anti-GFP antibody (Invitrogen), which cross-reacts with both CFP and YFP, and a monoclonal anti-actin antibody (Millipore), respectively. Protein expression levels of PANX1 were examined by western blotting using a rabbit monoclonal antibody against human PANX1 (D9M1C, Cell Signaling). Actin was also detected as a control by western blotting using a mouse monoclonal anti-β-actin antibody (Santa Cruz). Horseradish peroxidase (HRP)-labeled anti-mouse or anti-rabbit IgG antibody (GE healthcare) was used as a secondary antibody. Chemi-Lumi One L reagent (Nacalai tesque) was used as a HRP substrate. A LAS4000 imager (GE healthcare) was used to detect the luminescence.

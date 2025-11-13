@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.02020.001 Craniofacial characteristics are highly informative for clinical geneticists when diagnosing genetic diseases. As a first step towards the high-throughput diagnosis of ultra-rare developmental diseases we introduce an automatic approach that implements recent developments in computer vision. This algorithm extracts phenotypic information from ordinary non-clinical photographs and, using machine learning, models human facial dysmorphisms in a multidimensional 'Clinical Face Phenotype Space'. The space locates patients in the context of known syndromes and thereby facilitates the generation of diagnostic hypotheses. Consequently, the approach will aid clinicians by greatly narrowing (by 27.6-fold) the search space of potential diagnoses for patients with suspected developmental disorders. Furthermore, this Clinical Face Phenotype Space allows the clustering of patients by phenotype even when no known syndrome diagnosis exists, thereby aiding disease identification. We demonstrate that this approach provides a novel method for inferring causative genetic variants from clinical sequencing data through functional genetic pathway comparisons. DOI: http://dx.doi.org/10.7554/eLife.02020.001
+Craniofacial characteristics are highly informative for clinical geneticists when diagnosing genetic diseases. As a first step towards the high-throughput diagnosis of ultra-rare developmental diseases we introduce an automatic approach that implements recent developments in computer vision. This algorithm extracts phenotypic information from ordinary non-clinical photographs and, using machine learning, models human facial dysmorphisms in a multidimensional 'Clinical Face Phenotype Space'. The space locates patients in the context of known syndromes and thereby facilitates the generation of diagnostic hypotheses. Consequently, the approach will aid clinicians by greatly narrowing (by 27.6-fold) the search space of potential diagnoses for patients with suspected developmental disorders. Furthermore, this Clinical Face Phenotype Space allows the clustering of patients by phenotype even when no known syndrome diagnosis exists, thereby aiding disease identification. We demonstrate that this approach provides a novel method for inferring causative genetic variants from clinical sequencing data through functional genetic pathway comparisons.
 
 ## Introduction
 
@@ -37,77 +37,420 @@ We have adopted a complementary approach that takes advantage of the wealth of d
 
 ## Results
 
-We sought to construct a database of patient photos within which faces would be automatically identified and their key features annotated. Our intent was to build a model of dysmorphic variation from a set of syndromes that, additionally, would be able to cluster syndromes not used in model training. Our schema by which a patient photo is automatically analyzed within the context of Clinical Face Phenotype Space is provided in
+We sought to construct a database of patient photos within which faces would be automatically identified and their key features annotated. Our intent was to build a model of dysmorphic variation from a set of syndromes that, additionally, would be able to cluster syndromes not used in model training. Our schema by which a patient photo is automatically analyzed within the context of Clinical Face Phenotype Space is provided in Figure 1A.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig1-v1.jpg)
 
-**Figure 1.:** (A) A photo is automatically analyzed to detect faces and feature points are placed using computer vision algorithms. Facial feature annotation points delineate the supra-orbital ridge (8 points), the eyes (mid points of the eyelids and eye canthi, 8 points), nose (nasion, tip, ala, subnasale and outer nares, 7 points), mouth (vermilion border lateral and vertical midpoints, 6 points) and the jaw (zygoma mandibular border, gonion, mental protrubance and chin midpoint, 7 points). Shape and Appearance feature vectors are then extracted based on feature points and these determine the photo's location in Clinical Face Phenotype Space (further details on feature points in Figure 1—figure supplement 1). This location is then analyzed in the context of existing points in Clinical Face Phenotype Space to extract phenotype similarities and diagnosis hypotheses (further details on Clinical Face Phenotype Space with simulation examples in Figure 1—figure supplement 2). (B) Average faces of syndromes in the database constructed using AAM models (‘Materials and methods’) and number of individuals which each average face represents. See online version of this manuscript for animated morphing images that show facial features differing between controls and syndromes (Figure 2).DOI:http://dx.doi.org/10.7554/eLife.02020.003
+**Figure 1.:** (A) A photo is automatically analyzed to detect faces and feature points are placed using computer vision algorithms. Facial feature annotation points delineate the supra-orbital ridge (8 points), the eyes (mid points of the eyelids and eye canthi, 8 points), nose (nasion, tip, ala, subnasale and outer nares, 7 points), mouth (vermilion border lateral and vertical midpoints, 6 points) and the jaw (zygoma mandibular border, gonion, mental protrubance and chin midpoint, 7 points). Shape and Appearance feature vectors are then extracted based on feature points and these determine the photo's location in Clinical Face Phenotype Space (further details on feature points in Figure 1—figure supplement 1). This location is then analyzed in the context of existing points in Clinical Face Phenotype Space to extract phenotype similarities and diagnosis hypotheses (further details on Clinical Face Phenotype Space with simulation examples in Figure 1—figure supplement 2). (B) Average faces of syndromes in the database constructed using AAM models (‘Materials and methods’) and number of individuals which each average face represents. See online version of this manuscript for animated morphing images that show facial features differing between controls and syndromes (Figure 2).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The 36 facial feature points annotated by the automatic image analysis algorithm. Supra-orbital ridge (8 points), the eyes (mid points of the eyelids and eye canthi, 8 points), nose (nasion, tip, ala, subnasale and outer nares, 7 points), mouth (vermilion border lateral and vertical midpoints, 6 points), and the jaw (zygoma mandibular border, gonion, mental protrubance and chin midpoint, 7 points). (B) The annotation accuracies relative to the manually annotated ground truth of each of the computer vision modules. Points 1–8 refer to the supra-orbital ridge, points 30–36 refer to the jaw points. Accuracies for the points annotated by the modules FLA, improved FLA and CoE are shown for each syndrome and control groups. Accuracies are shown as the average error relative to the width of an eye.DOI:http://dx.doi.org/10.7554/eLife.02020.004
+**Figure 1—figure supplement 1.:** (A) The 36 facial feature points annotated by the automatic image analysis algorithm. Supra-orbital ridge (8 points), the eyes (mid points of the eyelids and eye canthi, 8 points), nose (nasion, tip, ala, subnasale and outer nares, 7 points), mouth (vermilion border lateral and vertical midpoints, 6 points), and the jaw (zygoma mandibular border, gonion, mental protrubance and chin midpoint, 7 points). (B) The annotation accuracies relative to the manually annotated ground truth of each of the computer vision modules. Points 1–8 refer to the supra-orbital ridge, points 30–36 refer to the jaw points. Accuracies for the points annotated by the modules FLA, improved FLA and CoE are shown for each syndrome and control groups. Accuracies are shown as the average error relative to the width of an eye.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Simulated 3D faces were used to visualize the influence of spurious variation in raw feature space and Clinical Face Phenotype Space. (A) 100 faces with controlled phenotype, lighting, and rotation variation were rendered. (B) Visualization of a population of simulated faces in the first two Multi-Dimensional Scaling (MDS) modes. Face clustering in raw feature space and Clinical Face Phenotype Space colored by lighting, rotation, and face phenotype, respectively. In the raw feature space lighting is the dominating clustering factor, in Clinical Face Phenotype Space phenotype underlies the primary clustering. (C) The first 16 modes of PCA decomposition of the raw feature vectors and in the Clinical Face Phenotype Space colored by lighting and rotation of the simulated faces. In the raw feature space, lighting, and rotation variation are encoded in the 2nd and 1st modes, indicating that clustering is dominated by spurious variation. In the Clinical Face Phenotype Space, lighting is represented in the 9th mode, whereas rotation is no longer represented in the first 16 modes. This shows that the Clinical Face Phenotype Space transformation reduces the influence of spurious variation on clustering of phenotypes.DOI:http://dx.doi.org/10.7554/eLife.02020.005
+**Figure 1—figure supplement 2.:** Simulated 3D faces were used to visualize the influence of spurious variation in raw feature space and Clinical Face Phenotype Space. (A) 100 faces with controlled phenotype, lighting, and rotation variation were rendered. (B) Visualization of a population of simulated faces in the first two Multi-Dimensional Scaling (MDS) modes. Face clustering in raw feature space and Clinical Face Phenotype Space colored by lighting, rotation, and face phenotype, respectively. In the raw feature space lighting is the dominating clustering factor, in Clinical Face Phenotype Space phenotype underlies the primary clustering. (C) The first 16 modes of PCA decomposition of the raw feature vectors and in the Clinical Face Phenotype Space colored by lighting and rotation of the simulated faces. In the raw feature space, lighting, and rotation variation are encoded in the 2nd and 1st modes, indicating that clustering is dominated by spurious variation. In the Clinical Face Phenotype Space, lighting is represented in the 9th mode, whereas rotation is no longer represented in the first 16 modes. This shows that the Clinical Face Phenotype Space transformation reduces the influence of spurious variation on clustering of phenotypes.
 
-## Image database composition
+### Image database composition
 
-We first collected a database of 2878 images, including 1515 healthy controls and 1363 pictures for eight known developmental disorders from publically available sources across the internet (Table 1, references for image sources are available from Supplementary file 1). Manual checks were performed to exclude images where the face or an eye was not clearly visible, or where an expert clinician (DRF) could not verify the diagnosis. Manual annotation of facial features points was performed on all images to allow training and testing of an automated annotation algorithm. These initial requirements for manual intervention are dispensed with in the final automatic algorithm (see below).10.7554/eLife.02020.006Table 1.Composition of the databaseDOI:http://dx.doi.org/10.7554/eLife.02020.006SyndromeNr imagesSyndromeNr imagesPublic images onlinePublished images Angelman205 PACS12 Apert203 BRAF35 Cornelia de Lange179 CFC1 Down199 Costello10 Fragile X164 ERF5 Progeria78 HRAS5 Treacher Collins103 KRAS12 Williams-Beuren232 MAP2K15 MAP2K24 Controls1515 MEK15 NRAS2 22q118 PTPN1119 Marfan18 RAF19 Sotos36 SHOC28 Turner12 SOS130The Gorlin Collection Aarskog19 Klippel-Trenaunay10 Achondroplasia12 Langer-Giedion14 Alagille8 Larsen11 Albright7 Lenz_Majewski17 Angelman13 Lymphedema-Lymphangiectasia-MR8 Apert49 Melnick_Needles17 Beckwith-Wiedemann11 Moebius9 Bloom9 Muenke15 BOF15 Myotonicdystrophy9 Cartilagehair13 Neurofibromatosis7 CHARGE12 Noonan29 Cherubism20 OAVdysplasia18 CleidoCranialdysostosis13 ODD21 Coffin-Lowry20 OFCD10 Costello9 OFD18 CriduChat17 OPD31 Crouzon16 Osteopetrosis2 Crouzonodermoskeletal5 Osteosclerosis5 Cutislaxa11 Otodental2 DeLange17 Poland4 Diastrophicdysplasia5 Prader–Willi16 Down8 Progeria14 Dubowitz12 Proteus6 Dyggve-Melchior-Clausen8 Rieger4 EEC6 Rothmund-Thomson13 Ehlers-Danlos17 Rubinstein-Taybi8 Ellis-vanCreveld3 Saethre-Chotzen25 FG11 Sclerosteosis4 FragileX27 SeckelMOD7 Frontometaphysealdysplasia12 SEDcongenita6 Gorlin91 Sotos16 Gorlin_Chaudry_Moss13 Stickler42 Greig7 TRP24 Hallermann-Streiff9 Waardenburg39 Incontinentiapigmenti4 Weaver13 Kabuki25 Williams-Beuren19 Klippel-Feil3
+We first collected a database of 2878 images, including 1515 healthy controls and 1363 pictures for eight known developmental disorders from publically available sources across the internet (Table 1, references for image sources are available from Supplementary file 1). Manual checks were performed to exclude images where the face or an eye was not clearly visible, or where an expert clinician (DRF) could not verify the diagnosis. Manual annotation of facial features points was performed on all images to allow training and testing of an automated annotation algorithm. These initial requirements for manual intervention are dispensed with in the final automatic algorithm (see below).
 
-## Computer vision algorithms
+**Table 1.**
+ Composition of the database
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Syndrome</th>
+      <th>Nr images</th>
+      <th>Syndrome</th>
+      <th>Nr images</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Public images online</td>
+      <td></td>
+      <td>Published images</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angelman</td>
+      <td>205</td>
+      <td>PACS1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Apert</td>
+      <td>203</td>
+      <td>BRAF</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Cornelia de Lange</td>
+      <td>179</td>
+      <td>CFC</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>199</td>
+      <td>Costello</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Fragile X</td>
+      <td>164</td>
+      <td>ERF</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Progeria</td>
+      <td>78</td>
+      <td>HRAS</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Treacher Collins</td>
+      <td>103</td>
+      <td>KRAS</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Williams-Beuren</td>
+      <td>232</td>
+      <td>MAP2K1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>MAP2K2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Controls</td>
+      <td>1515</td>
+      <td>MEK1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>NRAS</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>22q11</td>
+      <td>8</td>
+      <td>PTPN11</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Marfan</td>
+      <td>18</td>
+      <td>RAF1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Sotos</td>
+      <td>36</td>
+      <td>SHOC2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Turner</td>
+      <td>12</td>
+      <td>SOS1</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>The Gorlin Collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Aarskog</td>
+      <td>19</td>
+      <td>Klippel-Trenaunay</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Achondroplasia</td>
+      <td>12</td>
+      <td>Langer-Giedion</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Alagille</td>
+      <td>8</td>
+      <td>Larsen</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Albright</td>
+      <td>7</td>
+      <td>Lenz_Majewski</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Angelman</td>
+      <td>13</td>
+      <td>Lymphedema-Lymphangiectasia-MR</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Apert</td>
+      <td>49</td>
+      <td>Melnick_Needles</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Beckwith-Wiedemann</td>
+      <td>11</td>
+      <td>Moebius</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Bloom</td>
+      <td>9</td>
+      <td>Muenke</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>BOF</td>
+      <td>15</td>
+      <td>Myotonicdystrophy</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Cartilagehair</td>
+      <td>13</td>
+      <td>Neurofibromatosis</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>CHARGE</td>
+      <td>12</td>
+      <td>Noonan</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Cherubism</td>
+      <td>20</td>
+      <td>OAVdysplasia</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>CleidoCranialdysostosis</td>
+      <td>13</td>
+      <td>ODD</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>Coffin-Lowry</td>
+      <td>20</td>
+      <td>OFCD</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Costello</td>
+      <td>9</td>
+      <td>OFD</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>CriduChat</td>
+      <td>17</td>
+      <td>OPD</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Crouzon</td>
+      <td>16</td>
+      <td>Osteopetrosis</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Crouzonodermoskeletal</td>
+      <td>5</td>
+      <td>Osteosclerosis</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Cutislaxa</td>
+      <td>11</td>
+      <td>Otodental</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DeLange</td>
+      <td>17</td>
+      <td>Poland</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Diastrophicdysplasia</td>
+      <td>5</td>
+      <td>Prader–Willi</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>8</td>
+      <td>Progeria</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Dubowitz</td>
+      <td>12</td>
+      <td>Proteus</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Dyggve-Melchior-Clausen</td>
+      <td>8</td>
+      <td>Rieger</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>EEC</td>
+      <td>6</td>
+      <td>Rothmund-Thomson</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Ehlers-Danlos</td>
+      <td>17</td>
+      <td>Rubinstein-Taybi</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Ellis-vanCreveld</td>
+      <td>3</td>
+      <td>Saethre-Chotzen</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>FG</td>
+      <td>11</td>
+      <td>Sclerosteosis</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>FragileX</td>
+      <td>27</td>
+      <td>SeckelMOD</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Frontometaphysealdysplasia</td>
+      <td>12</td>
+      <td>SEDcongenita</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Gorlin</td>
+      <td>91</td>
+      <td>Sotos</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Gorlin_Chaudry_Moss</td>
+      <td>13</td>
+      <td>Stickler</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Greig</td>
+      <td>7</td>
+      <td>TRP</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Hallermann-Streiff</td>
+      <td>9</td>
+      <td>Waardenburg</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>Incontinentiapigmenti</td>
+      <td>4</td>
+      <td>Weaver</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Kabuki</td>
+      <td>25</td>
+      <td>Williams-Beuren</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Klippel-Feil</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Computer vision algorithms
 
 We proceeded to train a computer vision algorithm for automatic annotation of 36 feature points of interest across the face (Figure 1A). Our approach takes advantage of a variety of facial detection algorithms (OpenCV [Bradski, 2000], Viola Jones [Viola and Jones, 2001] and Everingham [Everingham et al., 2009]) and custom learning (consensus of exemplars [Belhumeur et al., 2011]) to accurately place feature points on a given face (‘Materials and methods’). Across all images in our database, manual checking found that our algorithm detected and annotated 99.5% of tested faces correctly with accuracies in the range 6–60% of the width of an eye (individual feature point accuracies are provided in Figure 1—figure supplement 1).
 
-We used an Active Appearance Model ('Materials and methods') to calculate an average face within any set of images, representing consistent shape and appearance features within the group (
+We used an Active Appearance Model ('Materials and methods') to calculate an average face within any set of images, representing consistent shape and appearance features within the group (Figure 1B and animated morphs in Figure 2). The average faces for each syndrome show that the algorithm effectively captures characteristic features of dysmorphic syndromes (Figure 2—figure supplement 1). For each feature point, the algorithm extracts a feature vector describing appearance of the surrounding patch. The algorithm then constructs a feature vector describing shape based on the relative pairwise distances between all feature points ('Materials and methods'). We next sought to compare the syndrome relevant information content of the feature descriptors to previous studies (Hammond et al., 2005; Boehringer et al., 2006; Hammond, 2007; Vollmar et al., 2008). We found that classification analysis based on support vector machines provided similar accuracies to previous work, despite disparities in image variability (average classification accuracy 94.4%, see Figure 4—figure supplement 1, Figure 4—figure supplement 2 and 'Materials and methods').
+
+![Figure 2.](https://cdn.elifesciences.org/articles/02020/elife-02020-media1.gif.jpg)
+
+**Figure 2.:** (A) Angelman, (B) Apert, (C) Cornelia de Lange, (D) Down, (E) Fragile X, (F) Progeria, (G) Treacher-Collins, (H) Williams-Beuren. Delineation of syndrome gestalt relative to controls with distortion graphs in Figure 2—figure supplement 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Each line reflects whether the distance is extended or contracted compared with the control face. White—the distance is similar to controls, blue—shorter relative to controls, and red—extended in patients relative to controls.DOI:http://dx.doi.org/10.7554/eLife.02020.009
+**Figure 2—figure supplement 1.:** Each line reflects whether the distance is extended or contracted compared with the control face. White—the distance is similar to controls, blue—shorter relative to controls, and red—extended in patients relative to controls.
 
 It is important to emphasize that the analyzed images vary greatly, as there were minimal restrictions imposed on image selection placed by the two exclusion criteria (both eyes visible and diagnosis verified by DRF). Photos were analyzed irrespective of the subject's age, gender, facial expression or ethnicity or the background scenery. Principal component analysis (PCA) of facial descriptor vectors illustrates that the main sources of variation among images are indeed lighting, pose, and facial expression, rather than phenotypic features (Figure 1—figure supplement 2).
 
-## Constructing a Clinical Face Phenotype Space with metric learning
+### Constructing a Clinical Face Phenotype Space with metric learning
 
 We next performed Metric Learning using a Large Margin Nearest Neighbor (Weinberger and Saul, 2009) approach for the eight syndromes in the database. This approach linearly transformed the multidimensional space of PCA feature vectors to optimize the separation of syndromes: dimensions informative for dysmorphism phenotypes are expanded while uninformative dimensions are compressed (thus changing the relative importance for clustering). We denote the resulting transformed 270 dimensional space as 'Clinical Face Phenotype Space' (see 'Materials and methods').
 
 Due to its design, Clinical Face Phenotype Space clusters patient faces based on diagnostically relevant phenotypic features, while tolerating spurious variation. Relative importance of spurious and phenotypic variation for clustering in Clinical Face Phenotype Space was tested using simulated faces ('Materials and methods'). For these faces feature dimensions that reflected known spurious variation such as lighting and head orientation were compressed and hence were of less relevance for clustering (Figure 1—figure supplement 2).
 
-For the eight syndromes with which Clinical Face Phenotype Space was created, we performed tests with supervised learning and clustering. A kNN-classifier applied within Clinical Face Phenotype Space was able to correctly classify images with an accuracy of 99.5% using the leave-one-out method. However, to avoid biases introduced by training data size, we also assessed the improvements in clustering by measuring the search space reduction (hereafter referred to as the Clustering Improvement Factor or CIF, 'Materials and methods'). This estimates the factor by which the Clinical Face Phenotype Space improves the clustering of syndromes when compared with random chance (to 95% confidence). On average, the clustering of the eight syndromes within the database was improved by 11.0-fold (geometric mean of improved clustering, CIF range 9.1–23.5, maximum possible mean 12.5;
+For the eight syndromes with which Clinical Face Phenotype Space was created, we performed tests with supervised learning and clustering. A kNN-classifier applied within Clinical Face Phenotype Space was able to correctly classify images with an accuracy of 99.5% using the leave-one-out method. However, to avoid biases introduced by training data size, we also assessed the improvements in clustering by measuring the search space reduction (hereafter referred to as the Clustering Improvement Factor or CIF, 'Materials and methods'). This estimates the factor by which the Clinical Face Phenotype Space improves the clustering of syndromes when compared with random chance (to 95% confidence). On average, the clustering of the eight syndromes within the database was improved by 11.0-fold (geometric mean of improved clustering, CIF range 9.1–23.5, maximum possible mean 12.5; Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig3-v1.jpg)
 
-**Figure 3.:** The graph shows a two dimensional representation of the full Clinical Face Phenotype Space, with links to the 10 nearest neighbors of each photo (circle) and photos placed with force-directed graphing. The Clustering Improvement Factor (CIF, fold better clustering than random expectation) estimate for each of the syndromes is shown along the periphery.DOI:http://dx.doi.org/10.7554/eLife.02020.010
+**Figure 3.:** The graph shows a two dimensional representation of the full Clinical Face Phenotype Space, with links to the 10 nearest neighbors of each photo (circle) and photos placed with force-directed graphing. The Clustering Improvement Factor (CIF, fold better clustering than random expectation) estimate for each of the syndromes is shown along the periphery.
 
-Next, we tested and confirmed our hypothesis that Clinical Face Phenotype Space could be generalized to dysmorphic syndromes that were not used in the training. We had access to 75 syndromes from the Gorlin collection (a kind gift curated and annotated by Professor Raoul Hennekam, Academic Medical Center, University of Amsterdam), which we supplemented with additional images of 22q11, Marfan and Sotos syndromes. Furthermore, we collected images of patients with verified genetic mutations in
+Next, we tested and confirmed our hypothesis that Clinical Face Phenotype Space could be generalized to dysmorphic syndromes that were not used in the training. We had access to 75 syndromes from the Gorlin collection (a kind gift curated and annotated by Professor Raoul Hennekam, Academic Medical Center, University of Amsterdam), which we supplemented with additional images of 22q11, Marfan and Sotos syndromes. Furthermore, we collected images of patients with verified genetic mutations in PACS1 or in specific genes from the RAS/MEK pathway (Supplementary file 1 references for image sources in 'Materials and methods'). The number of individuals within each syndrome varied between 2 and 223. The search space reduction was on average 27.6-fold better than random chance (CIF range 1.0–700.0, maximum possible average CIF was 150.0; Figure 4A). That is to say, that among 2754 patients' faces associated with any of 90 syndromes Clinical Face Phenotype Space makes it 27.6-fold easier to make the correct diagnosis. This demonstrates that Clinical Face Phenotype Space is an effective approach to the identification of multiple individuals sharing ultra-rare, previously undocumented, genetic disorders.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig4-v1.jpg)
 
-**Figure 4.:** (A) Clustering Improvement Factor (CIF) estimates are plotted vs the number of individuals per syndrome grouping in the Gorlin collection or patients with similar genetic variant diagnoses. As expected, the stochastic variance in CIF is inversely proportional to the number of individuals available for sampling. The median CIF across all groups is 27.6-fold over what is expected by clustering syndromes randomly. That is to say, the CIF of a randomly placed set is 1. The maximum CIF is fixed by the total number of images in the database and by the cardinality of a syndrome set: the theoretical maximal CIF upper bound is plotted as a red dotted line. The CIF for the minimum and maximum, Cutislaxa syndrome and Otodental syndrome, were 1.0 and 700.0 respectively. (B) Average probabilistic classification accuracies of each individual face placed in Clinical Face Phenotype Space (class prioritization by 20 nearest neighbors weighted by prevalence in the database). The 8 initial syndromes used to train Clinical Face Phenotype Space are shown in color. For syndromes with fewer than 50 examples, accuracies were averaged across all syndromes binned by data set size (i.e., the average accuracy is shown for syndromes with 2–5, 6–10, 11–25, and 26–50 images in the database, Supplementary file 1). Classification accuracies increase proportional to the number of individuals with the syndrome present in the database. Accuracies using support vector machines with binary and forced choice classifications are shown in Figure 4—figure supplement 1 and Figure 4—figure supplement 2. A simulation example of probabilistic querying of Clinical Face Phenotype Space is shown in Figure 4—figure supplement 3.DOI:http://dx.doi.org/10.7554/eLife.02020.011
+**Figure 4.:** (A) Clustering Improvement Factor (CIF) estimates are plotted vs the number of individuals per syndrome grouping in the Gorlin collection or patients with similar genetic variant diagnoses. As expected, the stochastic variance in CIF is inversely proportional to the number of individuals available for sampling. The median CIF across all groups is 27.6-fold over what is expected by clustering syndromes randomly. That is to say, the CIF of a randomly placed set is 1. The maximum CIF is fixed by the total number of images in the database and by the cardinality of a syndrome set: the theoretical maximal CIF upper bound is plotted as a red dotted line. The CIF for the minimum and maximum, Cutislaxa syndrome and Otodental syndrome, were 1.0 and 700.0 respectively. (B) Average probabilistic classification accuracies of each individual face placed in Clinical Face Phenotype Space (class prioritization by 20 nearest neighbors weighted by prevalence in the database). The 8 initial syndromes used to train Clinical Face Phenotype Space are shown in color. For syndromes with fewer than 50 examples, accuracies were averaged across all syndromes binned by data set size (i.e., the average accuracy is shown for syndromes with 2–5, 6–10, 11–25, and 26–50 images in the database, Supplementary file 1). Classification accuracies increase proportional to the number of individuals with the syndrome present in the database. Accuracies using support vector machines with binary and forced choice classifications are shown in Figure 4—figure supplement 1 and Figure 4—figure supplement 2. A simulation example of probabilistic querying of Clinical Face Phenotype Space is shown in Figure 4—figure supplement 3.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Table 1.SVM classifier accuracies when tuned for equal false positive and false negative error rates.DOI:http://dx.doi.org/10.7554/eLife.02020.012
+**Figure 4—figure supplement 1.:** SVM classifier accuracies when tuned for equal false positive and false negative error rates.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Table 1.DOI:http://dx.doi.org/10.7554/eLife.02020.013
-
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** A random scattering of 100 points in 2 dimensions is used as a background set (black circles with white fill). The 20 red plus symbols (within the red shaded area) are a random set of points lying within the same limits as the background set and have a CIF of 0.9. This is the actual degree of clustering of the red points with respect to the expectation of clustering them with 95% confidence (E(r) = 5.6). The filled green circles (within the green shaded area) are the red points shifted by +0.5 units in each dimension and have a CIF of 2.7. The black points (within the gray shaded area) are the red plus symbol positions scaled by 0.5 and then shifted by +1.5 units in dimension 1. The black points are non-overlapping with the background and represent the maximal CIF (of 5.6) in this example.DOI:http://dx.doi.org/10.7554/eLife.02020.014
+**Figure 4—figure supplement 3.:** A random scattering of 100 points in 2 dimensions is used as a background set (black circles with white fill). The 20 red plus symbols (within the red shaded area) are a random set of points lying within the same limits as the background set and have a CIF of 0.9. This is the actual degree of clustering of the red points with respect to the expectation of clustering them with 95% confidence (E(r) = 5.6). The filled green circles (within the green shaded area) are the red points shifted by +0.5 units in each dimension and have a CIF of 2.7. The black points (within the gray shaded area) are the red plus symbol positions scaled by 0.5 and then shifted by +1.5 units in dimension 1. The black points are non-overlapping with the background and represent the maximal CIF (of 5.6) in this example.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** (A) Visualization of a population of simulated faces in the first two Multi-Dimensional Scaling (MDS) modes. 7 classes of points (simulated 'syndrome groups') are shown with different distributions and variances. A central 'query' face is indicated by the boxed cross. The 20 nearest neighbors of the query are encircled with a black border. (B) Inset bar graph shows diagnosis hypothesis ranked by class priority. The class priority ranking weights the dispersion and prevalence (spread and number) of a class in the Clinical Face Phenotype Space with the nearest neighbors to assign the most probable diagnosis hypotheses. In the example, the ranked diagnosis estimates of the query point would be class 7, then class 6, and thirdly class 4. The scatter plot shows the individual similarity p0p1 estimates, reflecting their relative closeness in the space as compared to local neighborhood, for the 20 nearest neighbors of the query. The first nearest neighbor is estimated to be 2.6-fold closer to the query than the average based on the local density of neighbors. The dotted line indicates the average relative distance between points among the 20 nearest neighbors. (C) Inset bar graph shows the number of neighbors of the query per class. A scatterplot of dispersion vs cardinality, i.e. relative spread of points and what proportion of the total number of points belong to that class in the simulated space. Plots (B) and (C) allow objective assessment of the distribution of points shown in (A), and aid the interpretation of classification confidence.DOI:http://dx.doi.org/10.7554/eLife.02020.015
+**Figure 4—figure supplement 4.:** (A) Visualization of a population of simulated faces in the first two Multi-Dimensional Scaling (MDS) modes. 7 classes of points (simulated 'syndrome groups') are shown with different distributions and variances. A central 'query' face is indicated by the boxed cross. The 20 nearest neighbors of the query are encircled with a black border. (B) Inset bar graph shows diagnosis hypothesis ranked by class priority. The class priority ranking weights the dispersion and prevalence (spread and number) of a class in the Clinical Face Phenotype Space with the nearest neighbors to assign the most probable diagnosis hypotheses. In the example, the ranked diagnosis estimates of the query point would be class 7, then class 6, and thirdly class 4. The scatter plot shows the individual similarity p0p1 estimates, reflecting their relative closeness in the space as compared to local neighborhood, for the 20 nearest neighbors of the query. The first nearest neighbor is estimated to be 2.6-fold closer to the query than the average based on the local density of neighbors. The dotted line indicates the average relative distance between points among the 20 nearest neighbors. (C) Inset bar graph shows the number of neighbors of the query per class. A scatterplot of dispersion vs cardinality, i.e. relative spread of points and what proportion of the total number of points belong to that class in the simulated space. Plots (B) and (C) allow objective assessment of the distribution of points shown in (A), and aid the interpretation of classification confidence.
 
-We proceeded to test if Clinical Face Phenotype Space recapitulates the modularity of genetic diseases, where clusters of phenotypically similar disorders reflect functional relationships among the genes involved (see
+We proceeded to test if Clinical Face Phenotype Space recapitulates the modularity of genetic diseases, where clusters of phenotypically similar disorders reflect functional relationships among the genes involved (see Oti and Brunner, 2007 for a review). We have shown that individuals with the same underlying genetic disease automatically cluster in Clinical Face Phenotype Space. We next tested whether disorders caused by mutations in different genes result in meaningful clusters in Clinical Face Phenotype Space. We selected disorders with a known genetic origin, using either gene associations from OMIM or publications describing the identification of causative genes (see 'Materials and methods'). For each pair of genes, the shortest path in a protein–protein interaction network was obtained from Dapple (Rossin et al., 2011), giving a protein interaction distance relevant to that gene pair. We compared genes underlying monogenic syndromes linked by 1, 2, or 3 path distances, with those with a path distance of 4 or that was unknown; unknown distances are those where no genes are associated with a syndrome, the syndrome is multigenic, or when DAPPLE has no known interaction documented, see 'Materials and methods'. For each pair of syndromes, an average Euclidean distance in Clinical Face Phenotype Space was calculated. The distance in Clinical Face Phenotype Space is significantly shorter between syndromes associated to genes with protein interaction distances of 1, 2, or 3 compared with syndromes with 4 or no known interactions (p< 0.01, p< 0.05 and p< 0.001 respectively, Figure 5). This demonstrates that the distance in Clinical Face Phenotype Space partly recapitulates the functional relatedness of underlying developmental processes known to be disrupted in genetic diseases.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig5-v1.jpg)
 
-**Figure 5.:** Protein–protein interaction distances of 1–3 for genetically characterized syndromes are associated with significantly shorter Euclidean distance (arbitrary units) between syndromes in Clinical Face Phenotype Space as compared to syndromes with distance 4 or no known interaction distance (shown in orange) (Kruskal–Wallis tests with Bonferroni corrected p-values indicated as *p<0.05, **p<0.01, ***p<0.001). The Spearman correlation across all distances was r = 0.09, p<0.001. The numbers of pairwise syndrome comparisons underlying each of the interaction distances are listed within the respective boxes.DOI:http://dx.doi.org/10.7554/eLife.02020.016
+**Figure 5.:** Protein–protein interaction distances of 1–3 for genetically characterized syndromes are associated with significantly shorter Euclidean distance (arbitrary units) between syndromes in Clinical Face Phenotype Space as compared to syndromes with distance 4 or no known interaction distance (shown in orange) (Kruskal–Wallis tests with Bonferroni corrected p-values indicated as *p<0.05, **p<0.01, ***p<0.001). The Spearman correlation across all distances was r = 0.09, p<0.001. The numbers of pairwise syndrome comparisons underlying each of the interaction distances are listed within the respective boxes.
 
-## Querying Clinical Face Phenotype Space
+### Querying Clinical Face Phenotype Space
 
 Clinical Face Phenotype Space can provide clinical phenotyping and clustering to known genetic disorders that is objective and high-throughput. The method is, however, neither sufficiently accurate nor intended to determine diagnosis, yet it can help to narrow the diagnostic search space in an unprejudiced manner. A clinician could easily photograph a patient and immediately obtain clinically useful diagnostic hypotheses and matching cases. To this end, we implemented two primary methods to automatically and objectively query Clinical Face Phenotype Space.
 
@@ -125,17 +468,17 @@ Clinical Face Phenotype Space was instantiated using eight syndromes that were w
 
 There are three anticipated primary applications for Clinical Face Phenotype Space in a clinical setting: narrowing the search space for documented developmental disorders, identifying multiple people that share an ultra-rare genetic disorders and aiding the inference of causative variants in clinical genetic sequencing (Figure 4).
 
-We envisage Clinical Face Phenotype Space becoming a standard tool to support clinical genetic counseling. Since any normal 2D image can be analyzed, this approach is available to any clinician worldwide with access to a camera and a computer. This can also reduce the need for patient inconvenience in a clinical setting because a family photo album could provide the required image(s). A photograph will enable automatic digital phenotyping, and its placement in Clinical Face Phenotype Space will provide an unbiased list of candidate clinical hypotheses (exemplified in
+We envisage Clinical Face Phenotype Space becoming a standard tool to support clinical genetic counseling. Since any normal 2D image can be analyzed, this approach is available to any clinician worldwide with access to a camera and a computer. This can also reduce the need for patient inconvenience in a clinical setting because a family photo album could provide the required image(s). A photograph will enable automatic digital phenotyping, and its placement in Clinical Face Phenotype Space will provide an unbiased list of candidate clinical hypotheses (exemplified in Figure 6). We anticipate that future developments of Clinical Face Phenotype Space will also identify sub-phenotypes or comorbidities. Where no known genetic disease or variant can be assigned, Clinical Face Phenotype Space can identify other patients with phenotypic similarities empowering the identification of ultra-rare genetic disorders.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02020/elife-02020-fig6-v1.jpg)
 
-**Figure 6.:** The full computer vision algorithm and Clinical Face Phenotype Space analysis procedure with diagnostic hypothesis generation exemplified by: (A) a patient (Ferrero et al., 2007) with Williams-Beuren. (B) Abraham Lincoln. The former US President is thought to have had a marfanoid disorder, if not Marfan syndrome (Gordon, 1962; Sotos, 2012). Bar graphs show class prioritization of diagnostic hypotheses determined by 20 nearest neighbors weighted by prevalence in the database. As expected, the classification of Marfan is not successfully assigned in the first instance as there were only 18 faces of individuals with Marfan in the database (making this an example of a difficult case with the current database). However, the seventh suggestion is Marfan, despite this being among 90 different syndromes and 2754 faces.DOI:http://dx.doi.org/10.7554/eLife.02020.017
+**Figure 6.:** The full computer vision algorithm and Clinical Face Phenotype Space analysis procedure with diagnostic hypothesis generation exemplified by: (A) a patient (Ferrero et al., 2007) with Williams-Beuren. (B) Abraham Lincoln. The former US President is thought to have had a marfanoid disorder, if not Marfan syndrome (Gordon, 1962; Sotos, 2012). Bar graphs show class prioritization of diagnostic hypotheses determined by 20 nearest neighbors weighted by prevalence in the database. As expected, the classification of Marfan is not successfully assigned in the first instance as there were only 18 faces of individuals with Marfan in the database (making this an example of a difficult case with the current database). However, the seventh suggestion is Marfan, despite this being among 90 different syndromes and 2754 faces.
 
 In summary, we have presented an algorithmic approach that provides a critical advance in applying computer vision and machine learning techniques as a tool for clinical geneticists. The conjunction of a computer vision and machine learning algorithm with Clinical Face Phenotype Space makes this approach high-throughput, automatic, objective, and broadly accessible with existing digital photography and computers. Our ongoing research has begun to apply the Clinical Face Phenotype Space approach within large clinical sequencing collaborations. Computer vision for aiding diagnosis of developmental disorders in clinical genetics will be tenable and broadly applicable in the near future.
 
 ## Materials and methods
 
-## Database collection
+### Database collection
 
 We built a database of publically available or scientifically published pictures of patients collected across the internet. We collected 100–283 images per syndrome for Angelman, Apert, Cornelia de Lange, Down, Fragile X, Progeria, Treacher Collins, or Williams-Beuren. Images were collected through publically available resources online accessible though search terms relating to each syndrome, primarily through support group pages and awareness event photographs. Source URLs were converted to shortened versions for the purposes of publication using TinyUrl (http://tinyurl.com/) (Supplementary file 1). The links provided are expected to decay with time and should only be considered exemplars of database composition. Images were captured through screen shots and saved as PNG or JPEG file formats.
 
@@ -145,27 +488,27 @@ In the same manner, smaller numbers of images were collected for Marfan, 22q11, 
 
 3100 images were collected and manually annotated for training of the algorithms. Of these 2878 were successfully annotated by the automatic pipeline and are reported in the database counts of Table 1.
 
-## Data and code availability
+### Data and code availability
 
 Original database, excluding the Gorlin collection, and previously published images (which are available from the cited original publications) can be requested by contacting CN (christoffer.nellaker@dpag.ox.ac.uk; Ferry Q, Steinberg J, Webber C, FitzPatrick DR, Ponting CP, Zisserman A, Nellåker C, 2014, Diagnostically relevant facial gestalt information from ordinary photos database). Requests will be assessed by a Data Access Committee (DAC) comprised of CPP, DRF, AZ, CN and Dr Zameel Cader of the Division of Clinical Neurology, University of Oxford. The DAC will make data available to researchers in good standing with the relevant institution and funding agencies (i.e., no known sanctions). The data are provided without copyright.
 
 Pipeline code was written in python 2.7 and uses the module Ruffus (Goodstadt, 2010) for task management. The code is available through an open source MIT license at https://github.com/ChristofferNellaker/Clinical_Face_Phenotype_Space_Pipeline.
 
-## Ethics statement
+### Ethics statement
 
 The manner and method by which images were collected from publically available sources and stored were acceptable research practices and do not require special consent from a Research Ethics Committee. Advice from legal services, research ethics board members and the Information Commissioner's Office (UK) was sought in arriving at this conclusion.
 
-## Computer vision algorithm
+### Computer vision algorithm
 
 The computer vision algorithm analyses a 2D photograph for the location of a face, annotates the facial landmark points, and extracts feature vectors for subsequent machine learning applications. MATLAB (MATLAB. R2011b Natick, Massachusetts: the MathWorks Inc.) with OpenCV (Bradski, 2000) was used to write scripts and functions for the algorithm. To identify a putative face in the photo, we used previously published algorithms (Viola and Jones, 2001). Within a box bounding the face, a pictorial structure model was used to identify 9 central facial feature points (Everingham et al., 2009), which then were used to initialize the placement of an additional 27 feature points. The resulting facial mesh structure was fitted to the image using Active Appearance Models (AAMs) (Cootes et al., 1998) to generate average face visualizations (Figure 2—figure supplement 1). The placement of the 36 feature points was also further refined using custom written scripts based on consensus of exemplars (Belhumeur et al., 2011) (see Methods).
 
 From the fitted constellation of facial landmarks two feature vectors were extracted. (1) The appearance as a concatenation of the pixel intensities of patches around the 9 inner facial feature points. (2) The shape vector was constructed as the normalized pairwise distances between all 36 facial feature points.
 
-## Face detection
+### Face detection
 
 Each image was converted to JPEG and submitted to the Facial Detection (FD) module of the algorithm. Face detection was achieved using the OpenCV (Bradski, 2000) implementation of the Viola–Jones object detection framework (using Haar like features and a cascade of classifiers) (Viola and Jones, 2001). The output takes the form of a square bounding box delimiting the area of the picture where the face was found. Pictures containing the faces of healthy relatives (or others) were either discarded or cropped to only conserve regions with the patient face.
 
-## Facial landmarks annotation
+### Facial landmarks annotation
 
 Manual annotation of the 36 feature points was performed on 3100 of the images in the image collection. These were used as the ground truth reference point for all subsequent training and test sets for evaluations of automated facial landmark annotation accuracies (Figure 1—figure supplement 1).
 
@@ -175,7 +518,7 @@ Improved facial landmark annotation was performed with a custom script designed 
 
 From the improved 9 facial feature points, we expanded the feature detection to 36 feature points encompassing the points indicated in Figure 1—figure supplement 1.
 
-## Consensus of exemplar
+### Consensus of exemplar
 
 We developed a computational module inspired by Belhumeur et al. (2011) to determine the localization of the 36 landmarks. Consensus of exemplar (CoE) relies on part base classifiers used to localize potential candidate points and a database of face exemplars used to introduce a shape prior in the search for the best constellation.
 
@@ -187,19 +530,19 @@ The final C36 was derived from the ROIs by using a combination of part based det
 
 Going back to the query face, each of the 36 ROIs was submitted to the corresponding part detector. From this we obtained a set of 20 potential candidates (PC) for each part within the ROI (where candidates were sorted based on the classifier decision values). Next, we randomly sampled exemplars of C36 from the control database and registered them to the query face in order to enforce a shape prior. To avoid spurious outlier PC to drive the registration off, we randomly select PC to represent three randomly selected points from C36. Exemplar C36i were registered via Procrustes algorithm to the query face using only these three PC. The registered C36i were scored by submitting its feature points to the part classifiers. We retained the top 20 C36i. Finally, each feature point of the final C36 for the query was derived independently as a consensus between probability density maps based on the PCs and the classifier decision values over the corresponding ROI.
 
-## Appearance descriptor feature vector
+### Appearance descriptor feature vector
 
 Using the set of 9 inner points annotated to the face by the FLA module and refined by the CoE module, four additional points were generated: left and right center of the eye, nasion (between the eyes) and center of the mouth. The points were then used to register the face, via an affine transformation T, to a canonical set of corresponding points (face shape template). Next, circular patches were generated around the canonical points which were mapped back to the original picture using the inverse of T. This process creates 13 ellipses which were then used to crop the image content by bilinear interpolation. Extraction of the patch was performed as in Everingham et al. (2009).
 
 The appearance feature vector was obtained by a concatenation of the pixel gray-scale content of the 13 cropped patches (size of the feature vector = 1937). While patch content could be further processed before concatenation (gradients, HOG, PHOG, SIFT, Gabor Filter, Local binary Pattern, etc) the gain in terms of discriminative power and relevant feature extracted was negligible compared to the computational cost in terms of memory consumption.
 
-## Shape descriptor feature vector
+### Shape descriptor feature vector
 
 The features vector was built from the constellation of the 36 landmarks annotations from the CoE module. We described the face shape as a vector d, the set of pair-wise distances through the constellation, resulting in a feature vector with 630 elements.
 
 To compare the different constellations, each was registered via Procrustes transformation to the average constellation of the AAM model (canonical face mesh, see below). The vector of pair-wise distances was then normalized so that any distance variations were relative to the corresponding distances measured on the average control face template.
 
-## Average faces and morphs using Active Appearance Model
+### Average faces and morphs using Active Appearance Model
 
 Introduced in 1998 by Cootes et al. (1998), the active appearance model (AAM) was designed to identify a set of facial landmarks on a given face. This task is achieved by iteratively modifying both the shape and the position (location) of a structured face mesh in which nodes represent target landmarks.
 
@@ -209,29 +552,29 @@ Using the AAM statistical models of shape and appearance that derive from the tr
 
 Furthermore, we created morphs between control and syndrome faces by registering appearance to the average shape of the controls (Figure 2—figure supplement 1). By computing the average across the syndrome group and the control group one can obtain the average appearance of the syndrome A0s and control A0c. Given that both A0s and A0c have identical dimensionality, we morphed appearance from one to the other with appearance for frame k where Ak = A0s + k/K*(A0c − A0s) and where K is the total number of frames. Similarly, we considered the average face mesh of the syndrome group M0s and the control group M0c to obtain the face mesh at frame k as Mk = M0s + k/K* (M0c − M0s). Finally, for each frame k, both shape (face mesh) and appearance were combined by piecewise affine warping of Ak to Mk.
 
-## Support Vector Machine classification
+### Support Vector Machine classification
 
 We used SVMs to fine tune both appearance and shape descriptors. Differences in binary classification accuracies allow us to infer relative feature delineation capacity by our descriptors. We employed Libsvm to perform classification. The accuracies based on the raw feature vectors were comparable to accuracies reported in previous studies (Boehringer et al., 2006, 2011).
 
-## Binary classification
+### Binary classification
 
 SVM classifiers were trained on both shape and appearance feature vectors separately for each 36 pairwise combination of control and 8 syndromes (Table 1). Each binary classification was repeated 10 times with randomly generated positive/negative training and test sets with a 4:1 ratio. The linear kernel SVM classification accuracies using the final shape and appearance descriptors are shown in Figure 4—figure supplement 1. We estimate a total accuracy when fusing information from shape and appearance feature vectors based SVMs by summing decision values returned by the shape and appearance classifiers respectively.
 
 In all classification experiments, we used both original and mirror versions of each image. Given a binary experiment to distinguish group G1 from G2 (where G refers to a set of images of a syndrome), we randomly partitioned the sets into training and test sets: G1tr, G1te, G2tr, and G2te respectively. From these we generated the corresponding mirror image sets: G1trm, G1tem, G2trm, and G2tem. The SVM model was trained using G1tr + G1trm as the positive set and G2tr + G2trm as the negative set. Decision values were tuned to give equal error rates (the number of false positives = number of false negatives). With the trained SVM models, we next submitted the sets G1te + G2te and G1tem + G2tem separately to the classifier. Thus, for each instance in the test set we obtained two decision values. The final classification was determined by the sum of the decision values.
 
-## Forced choice classification
+### Forced choice classification
 
 We next applied the classification problem to assigning a face as being one of the 8 syndromes (Table 1). Each of the 8 syndrome groups was randomly split into training and test sets with a ratio of 4:1. We used the training sets to train a linear binary SVM classifier for each of the 28 pairs. Each image in the training set was submitted to all 28 classifiers. The decision value was returned by each classified and used as a probabilistic estimate P for the test instance to belong to the positive class. Thus, after presenting instance i to the binary classifier distinguishing syndrome j (positive) from syndrome k (negative), we assigned i a vote of weight P for syndrome j and a vote of weight 1-P for syndrome k. After summation of the votes from the 28 classifiers, the instance i was labeled as belonging to the syndrome diagnosis with the highest probability.
 
 The confusion matrix averaged from 10 repeats of the forced choice experiment is shown in Figure 4—figure supplement 2.
 
-## Clinical Face Phenotype Space construction
+### Clinical Face Phenotype Space construction
 
 We performed PCA on the shape and appearance feature vectors to reduce dimensionality from 2567 to a concatenation of 340 orthogonal vectors. This was then used to transform the feature space with Large Margin Nearest Neighbor (LMNN, Weinberger and Saul, 2009). LMNN is an optimization algorithm that uses a training set of pairs of vector labels (xi; li) and learns a Mahalanobis distance that maximizes the kNN classification over a training set. Note that even if the system only considers local information (i.e., number of intruders for each instance) the final metric is global. The Mahalanobis distance was computed as dist(xi; xj) = (xi − xj)tLtL(xi − xj) where L is a linear matrix. It is equivalent to the Euclidean distance taken in the space after transformation by L. That is to say, LMNN linearly transforms dimensions in feature space to maximize the margins separating classes of labeled instances. This should, in principle expand dimensions with phenotypically relevant information and compresses dimensions uninformative for classification.
 
 To validate the characteristics of the transformation of spurious and phenotypic vectors in Clinical Face Phenotype Space, we performed a series of experiments based on projected 3D faces. We used the 3D facial model proposed by Blanz & Vetter (Blanz, 2006) http://faces.cs.unibas.ch/bfm/ which allowed us to create faces with a direct control over shape, appearance, lighting, and facial pose. We synthesized 5 test faces at random moving along the first 15 components of both the shape and appearance models. For each face, we generated a set of 20 images for each combination of 5 head rotations and 4 lighting conditions. We use these simulated images to compare similarity measures in the raw feature space and in Clinical Face Phenotype Space (Figure 3, Figure 1—figure supplement 2). We performed a reorientation of the raw feature vectors and Clinical Face Phenotype Space using PCA without dimensionality reduction in order to sort the dimensions by variation magnitude. This allowed us to assess the relative contributions of phenotypic variation and spurious variations to clustering of faces. The strongest influences on clustering would be expected to be encoded in the first modes of variation. Placing the synthetic faces in the reoriented spaces allowed us to describe the PCA signatures of phenotypic variations (shape, appearance) and spurious variation (lighting, head pose).
 
-## Clinical Face Phenotype Space validation and visualization
+### Clinical Face Phenotype Space validation and visualization
 
 We used several dimensionality reduction methods and metrics for visualization and estimation of the properties of Clinical Face Phenotype Space. We developed an estimate of search space reduction to determine the improvements in clustering in Clinical Face Phenotype Space controlling for the composition of the database. Essentially, this calculates the degree to which intruders in a nearest neighbor search between instances of the same syndrome are excluded in Clinical Face Phenotype Space. This equates to a factor estimate of increased clustering, CIF (details of the procedure are provided below).
 
@@ -239,28 +582,54 @@ We used a 20 nearest neighbor linkage map to visualize Clinical Face Phenotype S
 
 Protein–protein interaction data were obtained from DAPPLE (Rossin et al., 2011). After conversion to Ensembl gene IDs, 126,586 interactions between 10,442 genes remained. We considered the data as a network of genes, with edges denoting an interaction. The shortest paths between two genes were computed using Dijkstra's algorithm (Dijkstra, 1959). We calculated the median pairwise Euclidean distance between syndromes in Clinical Face Phenotype Space. The correlation between these two data sets underlies Figure 5. Clinical Face Phenotype Space distance between groups was tested using Kruskal–Wallis (Kruskal and Wallis, 1952) tests with Bonferroni (Bonferroni, 1935, 1936) multiple testing correction.
 
-## Estimating improvements in clustering
+### Estimating improvements in clustering
 
 Next, we performed estimations of clustering of syndromes in face space. Initial tests using kNN-classifiers showed that the classification accuracies were heavily dependent on spread and cardinality of the syndrome in the database. We went on to develop an estimate of search space reduction, hereafter referred to Clustering Improvement Factor (CIF), to determine the improvements in clustering in Clinical Face Phenotype Space controlling for the composition of the database (a simulated example is provided in Figure 4—figure supplement 3).
 
-We considered a syndrome with Np positive and Nn negative instances in the Clinical Face Phenotype Space. We defined the CIF asCIF=expected rank (r) of nearest positive match under random rankingobserved average rank (r) of nearest positive match=E(r)O(r)with the average taken across all instances of the syndrome. O(r) was calculated from the observations in the Clinical Face Phenotype Space. To compute E(r), we used probability theory as follows.
+We considered a syndrome with Np positive and Nn negative instances in the Clinical Face Phenotype Space. We defined the CIF as
 
-Under a random ranking for a given positive query, the other Np−1 positive instances are each placed independently among the Nn negative instances, with a uniform discrete probability distribution. We defined the random variable Ni as the number of negative instances ranked higher than the first positive instance, so Ni takes integer values 0≤Ni≤Nn.
+$$
+CIF=\frac{expected rank (r) of nearest positive match under random ranking}{observed average rank (r) of nearest positive match}=\frac{E(r)}{O(r)}
+$$
 
-For a given positive query, the expected rank of the nearest positive match is the expected value of Ni+1, denoted by E(Ni)+1. To calculate E(Ni), we used the definition of expectation:E(Ni)=∑j=0NnjPr(Ni=j)since Ni can only take non-negative integer values, for each possible value j between 0 and Nn,Pr(Ni=j)=Pr(Ni≥j)−Pr(Ni≥j+1)Substituting this in the formula for E(Ni),E(Ni)=∑j=0Nnj[Pr(Ni≥j)−Pr(Ni≥j+1)].
+with the average taken across all instances of the syndrome. O(r) was calculated from the observations in the Clinical Face Phenotype Space. To compute E(r), we used probability theory as follows.
 
-Rewriting the sum,E(Ni)=∑j=1Nn[jPr(Ni≥j)−(j−1)Pr(Ni≥j)]=∑j=1NnPr(Ni≥j)
+Under a random ranking for a given positive query, the other Np−1 positive instances are each placed independently among the Nn negative instances, with a uniform discrete probability distribution. We defined the random variable Ni as the number of negative instances ranked higher than the first positive instance, so Ni takes integer values $0\leqN_{i}\leqN_{n}$.
 
-For a given number j, Pr(Ni ≥ j) is the probability that all positive instances were placed after j negative instances. For any given individual positive instance, such placement has probability 1−jNn+1. Since placement of all positive instances is independent, this gives Pr(Ni≥j)=(1−jNn+1)Np−1.
+For a given positive query, the expected rank of the nearest positive match is the expected value of Ni+1, denoted by E(Ni)+1. To calculate E(Ni), we used the definition of expectation:
 
-Therefore, E(Ni)=∑j=1NnPr(Ni≥j)=∑j=1Nn(1−jNn+1)Np−1
+$$
+E(N_{i})=\sumj=0N_{n}jPr(N_{i}=j)
+$$
 
-Finally, this gives E(r)=1+E(Ni)=1+∑j=1Nn(1−jNn+1)Np−1.
+since Ni can only take non-negative integer values, for each possible value j between 0 and Nn,
 
-## Querying Clinical Face Phenotype Space
+$$
+Pr(N_{i}=j)=Pr(N_{i}\geqj)−Pr(N_{i}\geqj+1)
+$$
+
+Substituting this in the formula for E(Ni),
+
+$$
+E(N_{i})=\sumj=0N_{n}j[Pr(N_{i}\geqj)−Pr(N_{i}\geqj+1)].
+$$
+
+Rewriting the sum,
+
+$$
+E(N_{i})=\sumj=1N_{n}[jPr(N_{i}\geqj)−(j−1)Pr(N_{i}\geqj)]=\sumj=1N_{n}Pr(N_{i}\geqj)
+$$
+
+For a given number j, Pr(Ni ≥ j) is the probability that all positive instances were placed after j negative instances. For any given individual positive instance, such placement has probability $1−\frac{j}{N_{n}+1}$. Since placement of all positive instances is independent, this gives $Pr(N_{i}\geqj)=(1−\frac{j}{N_{n}+1})^{N_{p}−1}$.
+
+Therefore, $E(N_{i})=\sumj=1N_{n}Pr(N_{i}\geqj)=\sumj=1N_{n}(1−\frac{j}{N_{n}+1})^{N_{p}−1}$
+
+Finally, this gives $E(r)=1+E(N_{i})=1+\sumj=1N_{n}(1−\frac{j}{N_{n}+1})^{N_{p}−1}$.
+
+### Querying Clinical Face Phenotype Space
 
 We developed two methods to retrieve information about the neighborhood of a given face placed in the Clinical Face Phenotype Space. Firstly, we assigned a syndrome classification based on the identity of its k nearest neighbors in Clinical Face Phenotype Space. Based on the neighbors' labels a list of syndromes to which the new face could belong was created. The number of neighbors supporting each hypothesis was compared with the probability to see N instances of that syndrome when sampling k from the population of faces in Clinical Face Phenotype Space.
 
-Secondly, we estimate the relative similarity between specific faces given the density of points in a local region of Clinical Face Phenotype Space. This is calculated as p0p1=d0,1/d0d1, where d0,1 is the similarity measure between the query and its neighbor, d0 is the average of similarities between the query and k = 20 neighbors and d1 is the average of similarities between the neighbor of the query and k of the neighbor's neighbors. Figure 4—figure supplement 4 illustrates the method and metrics using a simulated example.
+Secondly, we estimate the relative similarity between specific faces given the density of points in a local region of Clinical Face Phenotype Space. This is calculated as $p0p1=d_{0,1}/\sqrt{d_{0}d_{1}}$, where d0,1 is the similarity measure between the query and its neighbor, d0 is the average of similarities between the query and k = 20 neighbors and d1 is the average of similarities between the neighbor of the query and k of the neighbor's neighbors. Figure 4—figure supplement 4 illustrates the method and metrics using a simulated example.
 
 We see Clinical Face Phenotype Space as a means to facilitate collaborative investigations of genetic diseases between clinicians. Of course, sharing of data raises questions regarding ethics approval and data security. These questions are tightly linked to the debate of how clinical sequencing information should be treated in global health care systems. We anticipate that it would be suitable for future implementations of Clinical Face Phenotype Space to follow similar guidelines as for clinical sequencing data.

@@ -13,4 +13,4 @@
 
 ## Abstract
 
-As Eve Marder stands down as a Deputy Editor of eLife , she reflects on the need for journals to change and respond to their environment
+As Eve Marder stands down as a Deputy Editor of eLife, she reflects on the need for journals to change and respond to their environment

@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04as3rk94 University Grenoble Alpes, Inserm, U1216, Grenoble Institut Neurosciences Grenoble France
-2. https://ror.org/00cyydd11 A.I. Virtanen Institute for Molecular Sciences, University of Eastern Finland Kuopio Finland
-3. https://ror.org/03xjwb503 Paris-Saclay University, CNRS, Institut des Neurosciences (NeuroPSI), France Saclay France
-4. https://ror.org/02rx3b187 University Grenoble Alpes, Inserm, US17, CNRS, UAR 3552, CHU Grenoble Alpes, IRMaGe Grenoble France
-5. https://ror.org/035xkbk20 Aix Marseille University, INSERM, INS, Inst Neurosci Syst Marseille France
+1. University Grenoble Alpes, Inserm, U1216, Grenoble Institut Neurosciences Grenoble France ([ROR:04as3rk94](https://ror.org/04as3rk94))
+2. A.I. Virtanen Institute for Molecular Sciences, University of Eastern Finland Kuopio Finland ([ROR:00cyydd11](https://ror.org/00cyydd11))
+3. Paris-Saclay University, CNRS, Institut des Neurosciences (NeuroPSI), France Saclay France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+4. University Grenoble Alpes, Inserm, US17, CNRS, UAR 3552, CHU Grenoble Alpes, IRMaGe Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+5. Aix Marseille University, INSERM, INS, Inst Neurosci Syst Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 
 † Corresponding author
 
@@ -41,27 +41,174 @@ The objective of this study was to investigate changes in whole-brain responsive
 
 ## Results
 
-## Fine-tuning of fMRI recording in awake rats
+### Fine-tuning of fMRI recording in awake rats
 
 Using our EEG-fMRI setup with transmit-receive loop coil (Figure 1) the spatial signal-to-noise ratio (SNR) was ~25 whereas the temporal SNR was between 30 and 60 in the brain (Figure 2). In pilot studies, responses to visual stimulation measured using ZTE and EPI sequences were compared in one animal (Figure 2—figure supplement 1). Average signal change due to stimulation was between 1% and 1.5% with gradient-echo (GE)-EPI sequence while it was ~0.3% with ZTE. However, activation maps conducted with Aedes, https://github.com/mjnissi/aedes, copy archived at mjnissi, 2024 demonstrated less susceptibility-induced image distortions in ZTE sequence compared to EPI. Moreover, when studying the effect of fMRI artifacts on EEG signal, more pronounced and higher amplitude gradient switching artifacts were detected when using EPI compared to ZTE sequence.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig1-v1.jpg)
+
+**Figure 1.:** For visual stimulation, optical fiber cables were positioned bilaterally close to the eyes (A1) .For whisker stimulation, plastic tips guided air flow bilaterally to whiskers (A2). For EEG, carbon fiber leads were connected to electrodes coming from a plastic tube (A3). EEG traces are illustrated at three different temporal scale, during ictal and interictal states and with stimulation onset marks (B). Color tags mark stimulation onsets (purple) and the 6 s stimulation blocks during baseline (blue), seizure (red), and when stimulation ended a seizure (orange). The onset marks were added post hoc, based on recorded TTL events.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Inputs (A) were convolved with third-order gamma functions (B), which was selected as basis functions, accounting for temporal and dispersion differences in hemodynamic responses. Example of translational and rotational motion parameters from one animal (C). Motion parameters were used as nuisance regressors and not convolved with a basis function.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** After 8 days of habituation, three to five functional magnetic resonance imaging (fMRI) experiment were conducted within a 1–3 week period for each rat. In case rats were re-imaged more than 1 week after the preceding experiment, an additional 2-day habituation period was conducted.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig2-v1.jpg)
+
+**Figure 2.:** MRI transmit-receive loop coil placed around the implant (A), spatial signal-to-noise ratios of an illustrative high-resolution T1-FLASH (B), and low-resolution zero echo time (ZTE) image (C), temporal signal-to-noise ratios (tSNRs) of ZTE data (D) from a one example animal and average framewise displacement (red) with the standard deviation (gray area) across all sessions included to analyses (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Illustration of image quality, and statistical t-contrast maps to visual stimulation (A), functional contrast (B), and effect of EEG artifact (C) for both imaging sequences. Although ZTE exhibits lower functional contrast compared to EPI sequence, it offered a better spatial brain coverage with less image distortions, thus yielding far better stimulation-induced maps. ZTE also caused relatively less artificial noise on EEG signal, keeping both amplitude of the signal and frequencies relatively more intact, which improved live detection of absence seizures. Gray box illustrates stimulation period. Arrows on EEG signal mark the beginning of each functional magnetic resonance imaging (fMRI) sequence.
 
 When comparing peak acoustic noise levels inside the 9.4 T Bruker magnet, ZTE (78.7 dB) was 35.8 dB quieter than EPI (114.5 dB) equaling ~62 times weaker sound pressure (Schomer, 1998). Motion during fMRI using ZTE was low (Figure 2B). Mean framewise head translation was only 0.69±0.32 µm and head rotation 0.79±0.55°. Maximum displacement of the rat head was 12.8±11.6 µm, corresponding to 0.03±0.02 voxels, while maximum rotation was 18.1±12.9°. Motion occurrences between the current study (0.43±0.45 motions/min) and the previous study (1.0±0.20 motions/min), performed with a similar rat restraint holder but an EPI sequence (Stenroos et al., 2018), demonstrated the advantage of using the quieter ZTE sequence compared to the louder EPI sequence. ZTE motion levels were similar to that obtained in a previous study using a quiet MB-SWIFT sequence (0.48±0.23 motions/min, Paasonen et al., 2020).
 
 In our study, use of 3 out of 11 animals (27%) had to be discontinued due to noisy EEG signal, most likely caused by partly detached implant. One animal (1%) was excluded due to a lost implant. From MRI measurements, 6 out of 28 sessions (21%) needed to be excluded from analyses due to an excessive movement that prevented reliable fMRI analysis. Moreover, 4 sessions (14%) were excluded due to lack of seizures, and 1 session (4%) was excluded due to technical failure in providing air puffs to whiskers. Respiration of awake animals remained stable during the measurements. Average respiration frequency across the 45 min scans was 2.2±0.4 Hz in visual stimulation group and 2.0±0.3 Hz in whisker stimulation group and no sudden changes of respiration due to stimulations were noted.
 
-## Response to sensory stimuli
+### Response to sensory stimuli
 
 Stimulations were manually initiated during ictal and interictal periods, but some stimulation blocks co-occurred unintentionally in-between ictal and interictal periods. Table 1 shows the amount of each stimulation type and the amount and duration of seizure periods. Regarding statistical power, considering a risk alpha of 0.05, a power of 0.8, matched pairs (seizure/control), we can detect an effect size of 0.37 with 4 animals, considering repeated measurements (4 sessions/animal × 11 seizure/control pairs per session).
+
+**Table 1.**
+ Characteristics of the stimulations and seizures during a 45 min functional magnetic resonance imaging (fMRI) scanning period.Occurrences (numbers/45 min) of each stimulation type during scanning period are presented, as well as occurrences and duration of seizures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Visual stimulation group</th>
+      <th colspan="3">Whisker stimulation group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Stimulations (nr/45 min)</td>
+      <td colspan="3">Stimulations (nr/45 min)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean</td>
+      <td>SD</td>
+      <td></td>
+      <td>Mean</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Stimulation during baseline</td>
+      <td>32.4</td>
+      <td>12.3</td>
+      <td>Stimulation during baseline</td>
+      <td>22.2</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td>Stimulation fully inside seizure</td>
+      <td>11.4</td>
+      <td>8.2</td>
+      <td>Stimulation fully inside seizure</td>
+      <td>9.9</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Stimulation started during seizure, &gt;50% inside of seizure</td>
+      <td>2.9</td>
+      <td>3.0</td>
+      <td>Stimulation started during seizure, &gt;50% inside of seizure</td>
+      <td>2.1</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Stimulation started during seizure, &gt;50% outside of seizure</td>
+      <td>3.9</td>
+      <td>2.5</td>
+      <td>Stimulation started during seizure, &gt;50% outside of seizure</td>
+      <td>3.5</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Stimulation started before seizure, &gt;50% inside of seizure</td>
+      <td>1.5</td>
+      <td>1.6</td>
+      <td>Stimulation started before seizure, &gt;50% inside of seizure</td>
+      <td>0.1</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Stimulation started before seizure, &gt;50% outside of seizure</td>
+      <td>1.3</td>
+      <td>1.5</td>
+      <td>Stimulation started before seizure, &gt;50% outside of seizure</td>
+      <td>0.5</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Stimulation ended seizure</td>
+      <td>3.1</td>
+      <td>2.8</td>
+      <td>Stimulation ended seizure</td>
+      <td>12</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>Stimulation right after seizure</td>
+      <td>1.1</td>
+      <td>0.8</td>
+      <td>Stimulation right after seizure</td>
+      <td>1.8</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td colspan="3">Seizures</td>
+      <td colspan="3">Seizures</td>
+    </tr>
+    <tr>
+      <td>Total number of seizures</td>
+      <td>40.2</td>
+      <td>28.3</td>
+      <td>Total number of seizures</td>
+      <td>49.6</td>
+      <td>34.6</td>
+    </tr>
+    <tr>
+      <td>Seizures without a stimulation</td>
+      <td>15</td>
+      <td>7.8</td>
+      <td>Seizures without a stimulation</td>
+      <td>19.8</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>Duration of seizures (s)</td>
+      <td>6.1</td>
+      <td>5.2</td>
+      <td>Duration of seizures (s)</td>
+      <td>5.1</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
 
 Statistical activation maps (Figure 3) in response to stimulus were created in interictal and ictal periods and compared between these two states. During interictal condition in the visual stimulation group, statistical responses (p<0.05, cluster-level corrected) were most notably seen in the visual cortex, the superior colliculus, the thalamus (including the lateral geniculate nucleus), and the frontal cortex (including the prelimbic, cingulate, and secondary motor cortices). However, during a seizure condition, responses in the visual cortex were less pronounced while responses in the superior colliculus remained stable. There were more voxels with significant changes of activity during interictal state compared to ictal state (136% more). Comparing the statistical responses between interictal and ictal states revealed significant changes (p<0.05, cluster-level corrected) in the visual, somatosensory, and medial frontal cortices. In the ictal state, these regions were showed significant hemodynamic decreases when comparing to interictal state, and these polarity changes can be seen in the hemodynamic response functions (HRFs) (Figure 4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig3-v1.jpg)
 
-**Figure 3.:** A) and the whisker (B) stimulation experiments.Parameter estimates of regressors were calculated for every voxel, and contrasts were added to parameter estimates of interictal stimulation, ictal stimulation, and to compare interictal versus ictal stimulation in visual (A) and whisker (B) stimulation groups. For statistical significance, F-contrast (p<0.05) maps were created and corrected for multiple comparisons by cluster-level correction. AC = auditory cortex, BF = barrel field, mFC = medial frontal cortex, SC = superior colliculus, S1/S2 = primary and secondary somatosensory cortex, Thl = thalamus, VC = visual cortex. a = anterior, p = posterior.
+**Figure 3.:** Parameter estimates of regressors were calculated for every voxel, and contrasts were added to parameter estimates of interictal stimulation, ictal stimulation, and to compare interictal versus ictal stimulation in visual (A) and whisker (B) stimulation groups. For statistical significance, F-contrast (p<0.05) maps were created and corrected for multiple comparisons by cluster-level correction. AC = auditory cortex, BF = barrel field, mFC = medial frontal cortex, SC = superior colliculus, S1/S2 = primary and secondary somatosensory cortex, Thl = thalamus, VC = visual cortex. a = anterior, p = posterior.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig4-v1.jpg)
+
+**Figure 4.:** HRFs were calculated in selected ROI, belonging to visual or somatosensory area, by multiplying gamma basis functions (Figure 1—figure supplement 1B) with its corresponding average beta-value over a ROI and taking a sum of these values. For statistical comparison, extreme beta-values over a ROI were calculated and values between two states were compared with a two-sample t-test (n=9 sesions in visual stimulation group, n=8 in whisker stimulation group). Scatter plot represents mean ± SD and each blue dot corresponds to extreme beta-values observed from individual functional magnetic resonance imaging (fMRI) sessions. ***=p<0.001. Gray box illustrates stimulation period.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** HRF was calculated in selected ROI, belonging to visual or somatosensory area, by multiplying gamma basis functions (Figure 1—figure supplement 1B) with their corresponding average beta-values over a ROI and taking a sum of these values. For statistical comparison, extreme beta-values over a ROI were calculated and values between two states were compared with a two-sample t-test (n=9 sesions in visual stimulation group, n=8 in whisker stimulation group). Scatter plots represent mean ± SD and each blue dot corresponds to the extreme beta-values observed during individual functional magnetic resonance imaging (fMRI) sessions. A representative period from EEG trace, with a stimulation onset marked (purple), in both conditions is also illustrated (C). ***=p<0.001. Gray box illustrates stimulation period.
 
 During the interictal condition in the whisker stimulation group, responses (p<0.05, cluster-level corrected) were most notably seen in the somatosensory cortex, including the barrel field, the auditory cortex, the thalamus, including the ventral posteromedial nucleus, and the medial frontal cortex. During a seizure, responses due to stimulations were less pronounced in the thalamus and the frontal cortex and still present in the somatosensory cortex. There were more voxels with significant changes of activity during interictal state compared to ictal state (179% more). When comparing statistical responses between both states, significant changes (p<0.05, cluster-level corrected) were noticed in the somatosensory, auditory, and frontal cortices: these regions showed significant hemodynamic decreases in ictal state compared to interictal state (see also Figure 4).
 
-## Analyses of brain HRFs to sensory stimulations during ictal and interictal brain state
+### Analyses of brain HRFs to sensory stimulations during ictal and interictal brain state
 
 In the visual stimulation group, extreme beta-value of the response in the visual cortex ROI was 2.8±1.7 during the baseline period, and –6.0±2.0 during the seizure period, with a significant difference between the two conditions (p<0.001). Additionally, the response amplitude was higher when the stimulation ended a seizure compared to when it did not (8.1±7.0 to –6.0±2.0, p<0.001). In the whisker stimulation group, the extreme beta-value of the response in the barrel cortex was 4.1±1.9 during the baseline period, and –9.0±1.9 during a seizure, also with a significant difference between the two conditions (p<0.001). In this group, stimulation responses were also higher when the stimulation ended a seizure compared to when it did not (4.8±2.9 to –9.0±1.9, p<0.001). HRFs amplitudes were both negatively and positively signed during the ictal state, depending on the brain region.
 
@@ -69,11 +216,23 @@ When analyzing the effect of a seizure itself, the sessions from the visual and 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig5-v1.jpg)
 
-**Figure 5.:** A) and hemodynamic response functions (HRFs) to seizure (B).Parameter estimates of regressors were calculated for every voxel, and contrasts were added to parameter estimates of seizure in absence of stimulation. For statistical significance, F-contrast (p<0.05) maps were created and corrected for multiple comparisons by cluster-level correction. HRF was calculated in selected ROI by multiplying gamma basis functions (Figure 1—figure supplement 1B) with their corresponding average beta-values over a ROI and taking a sum of these values. For both the maps and HRFs, data from visual and whisker stimulation experiments were pooled together. BF = barrel field, BG = basal ganglia, FC = frontal cortex, MD = mediodorsal thalamic nucleus, VC = visual cortex. a = anterior, p = posterior.
+**Figure 5.:** Parameter estimates of regressors were calculated for every voxel, and contrasts were added to parameter estimates of seizure in absence of stimulation. For statistical significance, F-contrast (p<0.05) maps were created and corrected for multiple comparisons by cluster-level correction. HRF was calculated in selected ROI by multiplying gamma basis functions (Figure 1—figure supplement 1B) with their corresponding average beta-values over a ROI and taking a sum of these values. For both the maps and HRFs, data from visual and whisker stimulation experiments were pooled together. BF = barrel field, BG = basal ganglia, FC = frontal cortex, MD = mediodorsal thalamic nucleus, VC = visual cortex. a = anterior, p = posterior.
 
-## Simulations of sensory stimulation during ictal and interictal periods
+### Simulations of sensory stimulation during ictal and interictal periods
 
 Figure 6 shows the results of the simulations. First, neuronal activity is obtained from the adaptive exponential LIF neurons (AdEx) mean-field for the interictal (Figure 6A) and ictal periods (Figure 6B). For a better description, the local field potential (LFP) and the membrane potential, calculated from the mean-field model during the SWD type of dynamics, are shown in Figure 6C. The LFP was computed using a recently developed kernel method (Tesler et al., 2022). We see that the model can capture an SWD type of pattern, similar to the one observed experimentally in electrophysiological measurements, which is correlated with periods of hyper-polarization in the membrane potential (Figure 6, Figure 6—figure supplement 2). In the model the hyper-polarization is driven by a strong adaptation current and the SWD dynamics is suppressed by reducing the strength of this current. Thus, the switch between asynchronous irregular (AI) and SWD dynamics in our model is given by varying the strength of the adaptation current.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig6-v1.jpg)
+
+**Figure 6.:** (A–B) Asynchronous irregular (AI) and spike-and-wave discharge (SWD) type of dynamics obtained from the mean-field model, representing interictal and ictal periods respectively. The change between the two dynamics is given by the strength of the adaptation current in the adaptive exponential LIF neurons (AdEx) mean-field model. (C) Local field potential (LFP) and membrane potential obtained from the mean-field model. The model can capture the SWD pattern observed experimentally in LFP measurements which is correlated with periods of hyper-polarization in the membrane potential. (D–E) Time-series and statistical maps of the simulated sensory stimulus in the whole-brain simulations of the rat, showing the results of a stimulation of the primary visual cortex during ictal and interictal periods. The onset and duration of the stimulus is indicated by the dashed vertical line and horizontal line at the top of the time-series. The statistical maps are built from a 2D representation of the 496 brain regions of the BAMS rat connectome described in the method section "Modeling and simulations".
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** We show the results of the simulations during interictal (A, B, C) and ictal periods (D, E, F). The stimulus is applied in the primary visual cortex (A, D) and propagates to the connected regions. In panels B, C, E, and F we show the excitatory (green) and inhibitory (red) activity in the mediolateral visual area during interictal (B, C) and ictal (E, F) periods. For a better visualization the rolling average is shown in dark green and dark red respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90318/elife-90318-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Raster plot (top) and mean firing rate (bottom) from an SWD type of dynamics obtained from the spiking network simulations. The network is made of 8000 excitatory neurons and 2000 inhibitory neurons. Neurons in the network are randomly connected with a probability p=0.05 for inhibitory-inhibitory and excitatory-inhibitory connections, and p=0.06 for excitatory-excitatory connections. Cellular parameters correspond to the ones used in the mean-field, with spike-triggered adaptation for excitatory neurons set to b=200 pA. We show the results for excitatory (green) and inhibitory (red) neurons. (B) Mean firing rate obtained from a single mean-field model. We see that, although the amplitude of oscillations is larger in the spiking network, the mean-field can correctly capture the general dynamics and frequency of the oscillations.
 
 The time-series and statistical maps of the whole-brain simulations in response to stimulus, performed with the The Virtual Brain (TVB) platform (see Materials and methods), are described in Figure 6D and E. The statistical maps for the simulations are calculated directly from the neuronal activity (firing rates). The stimulation of a specific region is simulated as an increase in the excitatory input to the specific node. In particular we use a periodic square function for representing the stimulus (see panel A in Figure 6—figure supplement 1). For the results presented here, the stimulus was simulated in the primary visual cortex (indicated by the red-circled pixel). As we can see from the statistical maps, the propagation of the stimulus is drastically restrained during ictal periods in comparison with interictal periods. During the ictal periods the dynamics of the system is dominated by the highly synchronous and regular SWD oscillation, and the effect of the stimulus does not alter significantly the ongoing dynamics. On the contrary, during the interictal periods, where the system exhibits an AI dynamic, the effect of stimulus generates a large variation of the ongoing dynamics in the regions linked to the stimulated area (see also Figure 6—figure supplement 1). This agrees with the reduced responsiveness observed in the fMRI results for stimulation during ictal periods.
 
@@ -81,21 +240,21 @@ The time-series and statistical maps of the whole-brain simulations in response 
 
 The investigation of how sensory stimulations are handled by the brain in case of absence epilepsy is essential to develop better care for individuals with this pathology and associated comorbidities. Thanks to specific fMRI and EEG recordings obtained in awake rats, we have uncovered significant differences in brain activity and activation of specific structures during visual and whisker stimulations, depending on whether they occur during a seizure period or not.
 
-## ZTE fMRI of non-curarized awake rats enabled absence seizure detection
+### ZTE fMRI of non-curarized awake rats enabled absence seizure detection
 
 Recording absence seizures in rats can be challenging because they only occur when the animals are in a calm and stress-free awake state. Despite the disturbance caused by MRI scanning noise and the need for rat restraint, we were able to successfully detect absence seizures in awake GAERS during training periods and fMRI sessions. We found that the ZTE sequence, which produced considerably lower sound pressures compared to traditional EPI, was the optimal MRI sequence for our purpose. Based on our experience from current and previous experiments, we believe that acoustic noise level is the most significant stress factor for awake rats because it can cause increased motion and thereby potential confounds in task-based and resting-state fMRI studies. ZTE-based fMRI may provide better localization of activated sites because it is sensitive to change in blood flow (Luh et al., 2000; Restom et al., 2007), and it has also been suggested that ZTE-fMRI is 67% more sensitive than standard BOLD EPI due to its ability to detect increases in tissue oxygenation which shortens the T1-relaxation rate of spins in a pseudo-steady state.
 
-## Whole-brain responsiveness during an interictal condition
+### Whole-brain responsiveness during an interictal condition
 
 In the visual stimulation group, responses were most pronounced in the visual cortex, the superior colliculus, and the thalamus, including the lateral geniculate nucleus, which are all part of the rat visual pathways (Sefton et al., 2015). As binocular stimulation was used, responses in both hemispheres were observed. Interestingly, we also detected activation in the frontal cortex, including the prelimbic, cingulate, and secondary motor cortices. The involvement of frontal cortical areas can be explained by the fact that medial prefrontal cortex, which includes the prelimbic cortex, is known to be a central area for rat’s attention (Williams et al., 1999) and that lesion in the medial prefrontal cortex impaired the accuracy of detecting brief flashes of light (Muir et al., 1996).
 
 In the whisker stimulation group, responses were mostly seen in the somatosensory cortex, including the barrel field, and in the ventral posteromedial thalamus, which are part of the rat whisker system (Adibi, 2019). This finding suggests that the somatosensory cortex, the initiating zone of the seizures, is functional during the interictal state in GAERS. Additionally, we detected activation in the frontal cortex, which could be due to increased attention to external cues. Surprisingly, positive activation was also observed in part of the auditory cortex. This activation could be explained by the rats’ ability to differentiate the sound coming from air puffs from the ongoing MRI noises, causing increased auditory activation during stimulation.
 
-## Decreased cortical activity during a seizure per se
+### Decreased cortical activity during a seizure per se
 
 Experimental and simulation results (Figures 1 and 6) illustrated typical synchronous and regular SWD patterns with a spike component followed by a longer-lasting wave or silence component. The silence component of SWD is thought to be caused by neuronal deactivation or increased inhibitory activity (Fisher and Prince, 1977; Gloor, 1978; Inoue et al., 1993; Kostopoulos et al., 1982; McCafferty et al., 2023), potentially resulting in overall decreased neuronal activity in the thalamocortical and cortical neurons. Our findings of negative HRFs in the cortical regions (Figure 5) are in line with this hypothesis, suggesting reduced neuronal activity. Supporting evidence was found in a recent neuroimaging study conducted with GAERS showing that during an absence seizure, a larger group of neural populations in the frontoparietal cortex had a decreased firing rate, while a smaller portion of neuronal populations had an increased firing rate, leading to reduced fMRI cortical activity (McCafferty et al., 2023). Moreover, other studies utilizing optical flowmetry in GAERS have noticed decreased cerebral blood flow (CBF) in cortical capillaries during an absence seizure, with preserved PO2, PCO2, and arterial blood pressure (Nehlig et al., 1996) suggesting decreased cortical brain activity. However, the mechanism for the observed subcortical fMRI increases in this study and a previous study (McCafferty et al., 2023) illustrating the disagreement between electrophysiological and fMRI signals are yet to explained and demand further studies.
 
-## Decreased responsiveness during an absence seizure
+### Decreased responsiveness during an absence seizure
 
 Based on fMRI results, we noticed reduced activation in the cortex during ictal state, along with limited propagation of activity compared to the interictal period (Figure 4), which could indicate decreased responsiveness and information processing during external stimulation. Simulation results using a mean-field model also illustrated no observable change in spiking rate together with restricted propagation of neuronal activity in response to visual stimulation (Figure 6D and E, Figure 6—figure supplement 1), confirming fMRI finding. Previous electrophysiological experimental studies using whisker stimulation setups on GAERS have demonstrated that event-related potentials are modulated but still present during an absence seizure compared to seizure-free periods (Chipaux et al., 2013; Studer et al., 2019). Therefore, our findings do not necessarily correspond to a decreased amplitude of event-related potential per se but could rather indicate decreased sum of excitatory-inhibitory neuronal state when stimulating during SWD.
 
@@ -107,33 +266,33 @@ In this study, we were able to detect spontaneous absence seizures inside the ma
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experiments were approved by the local animal welfare committee (Comité Local GIN, C2EA-04) and complied with EU guidelines (Directive 2010/63/EU). Every precaution was taken to minimize the number of animals used and stress to animals during experiments. A total of 11 adult 8–12 months of age GAERS rats were used (260±21 g, 6 males, 5 females). After implantation of an EEG lead (see below), rats were individually housed in their cages. Animals were maintained on a 12/12 hr light-dark cycle at room temperature of 22 ± 2°C, humidity of 50–60%. Food (Extrudat, vitamin-fortified, irradiated >25 kGy) and water were available ad libitum.
 
-## EEG implantation
+### EEG implantation
 
 Carbon fiber (WPI Sarasota FL) electrodes were prepared as follows. Fiber leads were cut to small (~30 mm in length) parts and the end of the electrode was exposed from insulating cover to leave a brush-like, ~5 mm length, tip. Rats were anesthetized with isoflurane (induction with 5%, a percentage gradually decreased to 1–2% for the surgery maintenance). The head was then shaved to remove the fur above the scalp, and the rat was positioned in a stereotaxic frame (David Kopf Instruments, Germany). After local lidocaine hydrochloride injections (2 g/100 ml, 0.05 ml/site), the skull was exposed, cleaned with sterile 0.9% saline and hydrogen peroxide, and allowed to dry. Small holes were drilled halfway through the skull and carbon fiber electrodes were laid and glued with cyanoacrylate over the right motor cortex (AP: +2, ML: +2.5 mm) and right primary somatosensory cortex (AP: −2.5, ML: +3 mm) for seizure detection. An electrode working both as a reference and ground was placed on top of the cerebellum (AP: −12, ML: +2 mm). The other end of electrode leads was inserted inside a plastic tube, which was positioned at the center of the skull. A thin layer of cyanoacrylate was applied to cover the skull. On top of the glue, a layer of dental cement (Selectaplus, DeguDent GmbH, Germany) was applied to finish the implant. Following the surgery, rats were individually caged to recover, and the welfare of the animals was closely monitored.
 
-## Animal habituation for awake imaging
+### Animal habituation for awake imaging
 
 A low noise ZTE MRI sequence (see Wiesinger and Ho, 2022) was used with awake rats aiming for low-stress and low-motion functional imaging sessions that allows rats to produce spontaneous seizures. For the habituation, peak ZTE scanner noise was measured with an omnidirectional condenser microphone (MT830R, Audio-Technica Limited, Leeds, UK) and Audacity software (version 2.3.0, https://www.audacityteam.org/), similar to Paasonen et al., 2020, and reproduced at equivalent sound pressure through a loudspeaker.
 
 To habituate the rats for the fMRI experiments, a procedure based on a previous study was followed (Stenroos et al., 2018). Restraint parts compatible with standard Bruker rat bed and suitable for stimulation leads were designed using 123D CAD software (Autodesk, San Rafael, CA, USA) and 3D-printed with Ultimaker 2 (Utrecht, Netherlands) using acrylonitrile butadiene styrene plastic (Figure 1). The rats’ bodies were restrained with a soft and elastic foamed plastic, hind legs were taped together, and front legs were taped loosely together to the side of the body. Front teeth were secured with a carbon fiber teeth bar, head with a nose cone, and neck and shoulders with a neck and shoulder bars, respectively. Silicone ear plugs were used to minimize experienced noise. Rats were habituated to restraint and MRI ZTE gradient noises by gradually increasing session times from 15 to 60 min per day for 8 days before the first fMRI experiments. The length of habituation period was selected based on pilot experiments to provide low-motion data therefore giving rats a better chance to be in a low-stress state and thus produce absence seizures inside the magnet. Pressure pillow and video camera were used to estimate physiological state, via breathing rate, and motion level, respectively. During the last habituation session, EEG was measured to confirm that the rats produced a sufficient amount of absence seizures (10 or more per session). Total of three to five fMRI experiments were conducted per rat within a 1- to 3-week period. In case rats were re-imaged more than 1 week after the preceding experiment, an additional 2-day habituation period was conducted (Figure 1—figure supplement 2). Before and after each habituation session, rats were given a treat of 1% sugar water and/or three chocolate cereals as positive reinforcement.
 
-## EEG-MRI protocol
+### EEG-MRI protocol
 
 MRI acquisitions were carried out at 9.4 T (Biospec Avance III HD, Bruker, Ettlingen, Germany; IRMaGe facility) using Paravision 7. In-house-made transmit-receive loop coil with a 22 mm inner diameter was designed to host the EEG lead and to be compatible with the rat restraining cradle (Figure 2). 3D-printed sledge was designed to cover the circuit board of the coil and partly stabilize coaxial cable and the loop. Before connecting carbon fiber electrode leads, the loop was placed around the implant and sledge was fastened to the animal cradle with masking tape. Next, electrode leads were connected to the other end of the EEG cable. The cable was carefully secured on top of 3D-holder, without touching the animal to avoid breathing and motion artifacts.
 
-## fMRI optimization
+### fMRI optimization
 
 To select the optimal fMRI sequence for the study design, standard GE-EPI, and ZTE imaging (see section "EEG-MRI acquistion and stimulations parameters" for details) were compared. Peak acoustic noise levels produced by the MRI scanner during the sequence run, level of spatial distortions on MRI images caused by electrodes, gradient switching artifacts on EEG, and functional contrast were evaluated (Figure 2, Figure 2—figure supplement 1). Motion incidences between this study and previous study using EPI sequence (Stenroos et al., 2018) were compared. ZTE was selected over EPI sequence as it was quieter, produced less susceptibility artifacts, had less noise on EEG recordings, and led to less animal motion (see Results section). Low noise level of ZTE is particularly important factor for seizure appearance, as GAERS rats only experience seizures when they are awake and in a calm state. Eventually, the ZTE parameters were adapted to optimize the functional contrast to noise ratio together with the temporal and spatial resolutions, based on previous reports (MacKinnon et al., ISMRM 2021) and our own pilot acquisitions. Note that ZTE is sensitive to change in blood flow (Lehto et al., 2017) and not to BOLD contrast as in EPI, and therefore also more direct measure of neuronal activation. To assess the overall data quality and functionality of the transceiver loop coil, spatial and temporal SNRs were assessed in one representative rat (Figure 2). Spatial SNR was obtained as the ratio between the mean signal intensity in an area of interest (the cortex) and the standard deviation of the background signal, whereas temporal SNR was obtained voxel-wise by dividing the mean by the standard deviation of the normalized fMRI signal.
 
-## Animal installation
+### Animal installation
 
 Before awake EEG-fMRI measurements, rats were anesthetized with isoflurane (5% induction, 2% maintenance in 30% O2/70% N2). Next, animals were wrapped and taped for awake imaging (see section "Animal habituation for awake imaging") and the animals were moved to the MRI scanner and restrained to the 3D-printed holder. The respiration rate was measured with a pressure pillow placed under animals and a Biopac amplifier system (Goleta, CA, USA). Temperature was not measured in awake condition to avoid causing any harms to the rectum due to motion. We relied on pilot calibration of the temperature of heated water circulating inside the animal bed to maintain the normal body temperature of ~37°C. Lastly, EEG leads were connected, and animals were pushed to the center of the magnet bore. After routine preparation steps in the MRI console were done, isoflurane was turned off. Once animals woke up from anesthesia, they were left to rest in a quiet bore for 5–15 min so that spontaneous seizures started to emerge, after which functional imaging was started.
 
-## EEG-MRI acquisition and stimulations parameters
+### EEG-MRI acquisition and stimulations parameters
 
 Anatomical imaging was conducted with a T1-FLASH sequence (repetition time: 530 ms, echo time: 4 ms, flip angle 18°, bandwidth 39,682 kHz, matrix size 128×128, 51 slices, field-of-view 32×32 mm², spatial resolution 0.25×0.25×0.5 mm3). fMRI was performed with a 3D ZTE sequence (repetition time: 0.971 ms, echo time: 0 ms, flip angle 4°, pulse length 1 µs, bandwidth 150 kHz, oversampling 4, matrix size 60×60×60, field-of-view 30×30×60 mm3, spatial resolution of 0.5×0.5×1 mm3, polar under sampling factor 5.64, number of projections 2060 resulting to a volume acquisition time of about 2 s) (look Wiesinger and Ho, 2022 for parameter explanations). A total of 1350 volumes (45 min) were acquired.
 
@@ -143,19 +302,19 @@ For the somatosensory stimulation, an air pressure valve (PMI-200 pressure micro
 
 Stimulation parameters were based on previous rat stimulation fMRI studies and chosen to activate voxels widely in visual and somatosensory pathways, correspondingly (Lu et al., 2016; Van Camp et al., 2006). Both sets of stimulations were initiated manually using the live EEG recording as a guide, either during ictal or interictal state, to pursue equal sampling of both states across each 45 min fMRI session. A delay of at least 20 s was maintained between each stimulation block, to allow hemodynamic responses to settle to baseline between each block. EEG was recorded with a sampling rate of 1024 Hz (Micromed, SD MRI amplifier, Treviso, Italy). EEG recording software received a TTL trigger from the MRI scanner to mark the MRI sequence onset and TTL triggers from the stimulator to mark each stimulation period onset. During the live monitoring, a 50 Hz notch filter, and a low pass filter of 12 Hz facilitated online visual detection of seizures.
 
-## Data analysis
+### Data analysis
 
-## Motion analysis during fMRI
+#### Motion analysis during fMRI
 
 Motion occurrences were analyzed by visually inspecting image volumes through each scan and average motions per minute were calculated. Motion correction parameters given by advanced normalizing tools (ANTs) (see section "fMRI analysis") were also used and maximum value was taken to estimate maximum displacement of the head from each session. Framewise displacement (Figure 2E) was calculated as follows. First, the differential of successive motion parameters (x, y, z translation, roll, pitch, yaw rotation) was calculated. Then absolute value was taken from each parameter, and rotational parameters were divided by 5 mm (as estimate of the rat brain radius) to convert degrees to millimeters (Power et al., 2012). Lastly all the parameters were summed together.
 
-## EEG analysis
+#### EEG analysis
 
 EEG data was converted from native Micromed TRC-file format to mat- and dat-files using statistical parametric mapping (SPM), version 12 (https://www.fil.ion.ucl.ac.uk/spm/software/spm12/, https://www.fil.ion.ucl.ac.uk/spm/doc/spm12_manual.pdf) toolbox ImaGIN (https://github.com/manikbh/ImaGIN2, copy archived at manikbh, 2022). Data were filtered with a 50 Hz notch and 1–90 Hz Butterworth band pass filters using SPM and ImaGIN. Absence seizures were manually inspected from a filtered signal and spectrogram. Seizures were confirmed as SWDs if they had a typical regular spike-and-wave pattern with 7–12 Hz frequency range and had at least double the amplitude compared to baseline signal. All other signals were classified as baseline, i.e., signal absent of a distinctive 7–12 Hz frequency power but spread within frequencies from 1 to 90 Hz. Two successive seizures were counted as one if there was less than 1 s of baseline signal between them. Seizure was counted as absence seizure only if it lasted at least 2 s, since behavioral deficits are not obvious in shorter seizures (Blumenfeld, 2012). Seizure initiation and ending time points as well as stimulation onsets were marked in seconds and converted to MRI time in volumes.
 
 Temporal registration between EEG and fMRI was performed using TTL triggers delivered by the MRI sequence and registered as the same time as fMRI signals.
 
-## fMRI analysis
+#### fMRI analysis
 
 To prepare the fMRI data for analysis, data were motion corrected, co-registered with anatomical MRI, and spatially smoothed to reduce noise level. The preprocessing steps were performed using ANTs (http://stnava.github.io/ANTs/; Avants et al., 2024) and Python-based graphical user interphase mri_works (https://montigno.github.io/mri_works/Home/index.html, version 20.08.21a). The first 5 volumes from each fMRI data were removed to allow signal to reach steady state. For motion correction, all volumes were transformed to an average image taken from first 10 volumes by using antsMotionCorr. Normalization was performed indirectly and using the T1-FLASH images, as ZTE images lack anatomical contrast. First, the T1-FLASH images of each animal were corrected from intensity non-uniformity using N4BiasFieldCorrection from ANTs. Next, brain was extracted with MP3 software (Brossard et al., 2020). T1-FLASH images of animals were then co-registered on top of reference T1-FLASH image (taken from a representative animal from our study) with ANTs using rigid, affine (linear) and SYN (non-linear) registrations. Transformation matrices were applied to ZTE images by ANTsApplyTransform so that ZTE images were eventually aligned with the reference T1-FLASH image. Finally, ZTE images were smoothed with a Gaussian filter (1 mm full width at half maximum).
 
@@ -165,6 +324,6 @@ By convolving each stimulation and seizure inputs with three gamma functions (Fi
 
 HRFs were estimated in ROIs in response to ictal and interictal stimulus (Figure 4). Anatomical ROIs, based on Paxinos atlas (Paxinos and Watson rat brain atlas 7th edition), were drawn on the brain areas where statistical differences were seen in activation maps. Also, HRFs were estimated in response to stimulation that ended a seizure and were compared to the response when stimulation did not end a seizure (Figure 4—figure supplement 1). Three gamma basis functions, for each condition, were multiplied with their corresponding average beta-values over a selected ROI, resulting in three functions, and the sum of these functions was taken. The shape and time-to-peak of HRFs during an interictal condition were in line with previous literature (Lambers et al., 2020) thereby confirming the selection of the third-order gamma basis function to model HRF. For statistical comparison, extreme beta-values (maximum or minimum) in a selected ROI between different conditions were compared using a two-tailed t-test (Figure 4).
 
-## Modeling and simulations
+### Modeling and simulations
 
 Whole-brain simulations of the rat brain during sensory stimulation were performed. Each region of the rat brain was modeled via a recently developed mean-field model of AdEx (Volo et al., 2019), which describes the activity of a population of neurons made by excitatory and inhibitory cells (for details on the model, see Sup. Information and Volo et al., 2019). This model has been widely tested and used for the simulation of different brain states (Goldman et al., 2022), neuronal responsiveness (Goldman et al., 2022; Volo et al., 2019), and whole-brain dynamics in different species (Sacha et al., 2024). In addition, modeling tools to calculate brain signals (such as LFP and BOLD-fMRI) from this type of mean-fields have been developed (Tesler et al., 2022; Tesler et al., 2023). The AdEx mean-field model is capable of producing different neuronal dynamics that can be associated with brain activity during interictal and ictal periods (see Results section). The interictal periods were modeled by an AI type of dynamics, while ictal periods were modeled by an oscillatory dynamic which resembles the SWDs observed during absence epilepsy. The mean-field model was combined with a connectivity matrix of the rat brain (BAMS rat connectome, Bota et al., 2012) to build a realistic whole-brain simulation of the stimulus propagation during ictal and interictal periods. The simulations were made with TVB platform, which provides a framework to perform large-scale brain simulations (Sanz-Leon et al., 2015).

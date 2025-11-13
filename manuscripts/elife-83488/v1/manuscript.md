@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 National Center for Biotechnology Information, National Institutes of Health Bethesda United States
-2. https://ror.org/02feahw73 Institut Pasteur, Université Paris Cité, CNRS UMR6047, Archaeal Virology Unit Paris France
+1. National Center for Biotechnology Information, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Institut Pasteur, Université Paris Cité, CNRS UMR6047, Archaeal Virology Unit Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 

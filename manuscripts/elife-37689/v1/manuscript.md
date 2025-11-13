@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.37689.001 Tumor initiation, progression and resistance to chemotherapy rely on cancer cells bypassing programmed cell death by apoptosis. We report that unlike other pro-apoptotic proteins, Bim contains two distinct binding sites for the anti-apoptotic proteins Bcl-XL and Bcl-2. These include the BH3 sequence shared with other pro-apoptotic proteins and an unexpected sequence located near the Bim carboxyl-terminus (residues 181–192). Using automated Fluorescence Lifetime Imaging Microscopy - Fluorescence Resonance Energy Transfer (FLIM-FRET) we show that the two binding interfaces enable Bim to double-bolt lock Bcl-XL and Bcl-2 in complexes resistant to displacement by BH3-mimetic drugs currently in use or being evaluated for cancer therapy. Quantifying in live cells the contributions of individual amino acids revealed that residue L185 previously thought involved in binding Bim to membranes, instead contributes to binding to anti-apoptotic proteins. This double-bolt lock mechanism has profound implications for the utility of BH3-mimetics as drugs. ​
+Tumor initiation, progression and resistance to chemotherapy rely on cancer cells bypassing programmed cell death by apoptosis. We report that unlike other pro-apoptotic proteins, Bim contains two distinct binding sites for the anti-apoptotic proteins Bcl-XL and Bcl-2. These include the BH3 sequence shared with other pro-apoptotic proteins and an unexpected sequence located near the Bim carboxyl-terminus (residues 181–192). Using automated Fluorescence Lifetime Imaging Microscopy - Fluorescence Resonance Energy Transfer (FLIM-FRET) we show that the two binding interfaces enable Bim to double-bolt lock Bcl-XL and Bcl-2 in complexes resistant to displacement by BH3-mimetic drugs currently in use or being evaluated for cancer therapy. Quantifying in live cells the contributions of individual amino acids revealed that residue L185 previously thought involved in binding Bim to membranes, instead contributes to binding to anti-apoptotic proteins. This double-bolt lock mechanism has profound implications for the utility of BH3-mimetics as drugs. ​
 
 ## Introduction
 
@@ -34,19 +34,456 @@ Here we identify the specific residues in Bim responsible for binding to Bcl-XL 
 
 ## Results
 
-## ABT-263 displaces Bad and tBid but not Bim from Bcl-XL and Bcl-2
+### ABT-263 displaces Bad and tBid but not Bim from Bcl-XL and Bcl-2
 
 New instrumentation for automated time correlated single photon counting (TCSPC) from two fluorescence proteins simultaneously enabled automation of FLIM-FRET measurements to evaluate the effects of drugs on the binding of Bcl-2 family proteins fused to mCerulean3 (mCer3) and Venus fluorescence proteins. The nomenclature used here indicates proteins fused with a fluorescence protein by a superscripted c for mCer3 and a superscripted v for Venus. The superscripted letters precede the protein names for amino-terminal, and follow them for carboxyl-terminal fusions. VBH3-proteins were expressed by transient transfection of MCF-7 cells stably over-expressing CBcl-XL or CBcl-2 (Figure 1). Transient expression of VBH3-proteins ensured that there was a large enough range of expression levels within the population of cells to collect the data needed to generate binding curves (Aranovich et al., 2012; Kale et al., 2012; Liu et al., 2012). The expressed fluorescent fusion proteins retained their expected anti- or pro-apoptotic properties (see below). To generate quantitative binding curves, TCSPC data were collected for CBcl-XL (FRET donor) and VBH3-proteins (FRET acceptor), within regions of interest (ROIs) automatically identified in cells based on mCer3 signal intensity (Figure 1A). For each ROI the TCSPC data were used to determine the average fluorescence lifetime of the mCer3 donor and the fluorescence intensities of both the donor (mCer3) and the acceptor (Venus). Data from more than 8,500 ROIs were binned according to the ratio of Venus to mCer3 intensities and together with the corresponding lifetime data used to generate binding curves (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig1-v1.jpg)
 
-**Figure 1.:** (A) Live cell images of mCer3 and Venus intensities and intensity weighted FLIM images from FLIM-FRET measurements for the interaction between CBcl-XL and VBad. Higher magnification views are shown below with automatically identified Regions Of Interest (ROIs) outlined in yellow. Fluorescence lifetime images are presented in a continuous pseudo-color scale ranging from 3.0 to 4.3 ns. Intensity weighted fluorescence lifetime images were generated using ImageJ, both the contrast and gamma of the intensity image were adjusted so that the mitochondrial area can be easily visualized. Intensity weighted images are used only as an interpretive guide and were not used for any of the calculations reported. (B) Generation of binding curves. Data from more than 8,500 ROIs were binned according to the ratio of Venus to mCer3 intensities; mean (magenta dot) FLIM-FRET efficiency values for each bin were plotted versus the ratio of Venus to mCer3 intensity. The box encloses 50% of the data (25-75th percentiles), lines extend to the 10th and 90th percentiles and the number of ROIs in each bin (minimum 20) is indicated according to the scale at the right. The first bin is at zero and subsequent bins are separated by dotted lines. The means were fitted to a binding curve with a Hill slope for the interaction between CBcl-XL and VBad (blue line) with the 95% confidence interval for the optimal fit of the model to the data using GraphPad Prism shown (blue shaded area). (C) Structural alignment of ABT-263 with BH3 peptides (grey with h2 and h4 residues colored) from the complexes: Bcl-XL:Bim-BH3 (1PQ1, blue), Bcl-XL:Bad-BH3 (2BZW, red), and Bcl-XL:ABT-263 (4QNQ, yellow). ABT-263 and side chains of the key hydrophobic residues (h2 and h4) in the BH3 peptides are shown. (D–F) ABT-263 or mutation of h2 and h4 displaced VBad, VtBid but not VBimEL from CBcl-XL in MCF-7 cells. Binding curves for CBcl-XL and VBH3-proteins: (D) VBad, (E) VtBid, (F) VBimEL. The samples were untreated (black), DMSO solvent control (green), 20 μM ABT-263 (cyan), or BH3-2A mutation in the BH3-protein (red). Representative images are shown below as labeled. Scale bar 10 μm. Curves were generated by fitting the data to a Hill equation; line width shading indicates 95% confidence interval for the fit. Individual points are the average FLIM-FRET efficiencies in corresponding bins (n ranges from 20 to 3000 in each bin combined from three independent experiments as in (B). Cyan lines are truncated because at higher ratios of Venus to mCer3 there is sufficient free BH3-protein to kill the cells. In all figures FLIM-FRET binding curves as shown in Figure 1D–F and figure supplements were fitted from data pooled from three independent experiments. Individual points in FLIM-FRET binding curves indicate the average FLIM-FRET efficiencies in corresponding bins (the number of data points ranges from 20 to 3000 in each bin), the error bars indicate standard error of the mean, and the dotted shadowed area for each curve represents the 95% confidence interval for the fit of the binding curve with a Hill slope to the data as in (b).Truncation of some of the curves is due to a lack of sufficient data at high expression levels of the acceptor proteins. This can be due to induction of apoptosis by the expressed protein or to limited expression of the exogenous protein in the transient transfections.10.7554/eLife.37689.004Figure 1—source data 1.
+**Figure 1.:** (A) Live cell images of mCer3 and Venus intensities and intensity weighted FLIM images from FLIM-FRET measurements for the interaction between CBcl-XL and VBad. Higher magnification views are shown below with automatically identified Regions Of Interest (ROIs) outlined in yellow. Fluorescence lifetime images are presented in a continuous pseudo-color scale ranging from 3.0 to 4.3 ns. Intensity weighted fluorescence lifetime images were generated using ImageJ, both the contrast and gamma of the intensity image were adjusted so that the mitochondrial area can be easily visualized. Intensity weighted images are used only as an interpretive guide and were not used for any of the calculations reported. (B) Generation of binding curves. Data from more than 8,500 ROIs were binned according to the ratio of Venus to mCer3 intensities; mean (magenta dot) FLIM-FRET efficiency values for each bin were plotted versus the ratio of Venus to mCer3 intensity. The box encloses 50% of the data (25-75th percentiles), lines extend to the 10th and 90th percentiles and the number of ROIs in each bin (minimum 20) is indicated according to the scale at the right. The first bin is at zero and subsequent bins are separated by dotted lines. The means were fitted to a binding curve with a Hill slope for the interaction between CBcl-XL and VBad (blue line) with the 95% confidence interval for the optimal fit of the model to the data using GraphPad Prism shown (blue shaded area). (C) Structural alignment of ABT-263 with BH3 peptides (grey with h2 and h4 residues colored) from the complexes: Bcl-XL:Bim-BH3 (1PQ1, blue), Bcl-XL:Bad-BH3 (2BZW, red), and Bcl-XL:ABT-263 (4QNQ, yellow). ABT-263 and side chains of the key hydrophobic residues (h2 and h4) in the BH3 peptides are shown. (D–F) ABT-263 or mutation of h2 and h4 displaced VBad, VtBid but not VBimEL from CBcl-XL in MCF-7 cells. Binding curves for CBcl-XL and VBH3-proteins: (D) VBad, (E) VtBid, (F) VBimEL. The samples were untreated (black), DMSO solvent control (green), 20 μM ABT-263 (cyan), or BH3-2A mutation in the BH3-protein (red). Representative images are shown below as labeled. Scale bar 10 μm. Curves were generated by fitting the data to a Hill equation; line width shading indicates 95% confidence interval for the fit. Individual points are the average FLIM-FRET efficiencies in corresponding bins (n ranges from 20 to 3000 in each bin combined from three independent experiments as in (B). Cyan lines are truncated because at higher ratios of Venus to mCer3 there is sufficient free BH3-protein to kill the cells. In all figures FLIM-FRET binding curves as shown in Figure 1D–F and figure supplements were fitted from data pooled from three independent experiments. Individual points in FLIM-FRET binding curves indicate the average FLIM-FRET efficiencies in corresponding bins (the number of data points ranges from 20 to 3000 in each bin), the error bars indicate standard error of the mean, and the dotted shadowed area for each curve represents the 95% confidence interval for the fit of the binding curve with a Hill slope to the data as in (b).Truncation of some of the curves is due to a lack of sufficient data at high expression levels of the acceptor proteins. This can be due to induction of apoptosis by the expressed protein or to limited expression of the exogenous protein in the transient transfections.
 
-## The impact of BH3 sequence mutations and small-molecule inhibitors on the interactions between anti-apoptotic proteins and BH3 only pro-apoptotic proteins
+### The impact of BH3 sequence mutations and small-molecule inhibitors on the interactions between anti-apoptotic proteins and BH3 only pro-apoptotic proteins
 
 BH3-proteins engage the hydrophobic pocket of anti-apoptotic proteins through four conserved hydrophobic residues (h1-h4) within the BH3 region (Chen et al., 2005). ABT-263 prevents BH3-protein binding by competing for the binding of residues h2 and h4 to Bcl-XL (Figure 1C) (Tse et al., 2008). To quantify the importance of these residues in live cells, we expressed wild-type and mutant VBH3-proteins with alanine mutations in the h2 and h4 positions (BH3-2A) and measured binding to CBcl-XL. As expected, BH3-2A mutations in VBad and VtBid reduced binding to CBcl-XL dramatically (Figure 1D–E, compare black and red). However the BH3-2A mutant of VBimEL bound to CBcl-XL similarly to wild-type VBimEL (Figure 1F, compare black and red), suggesting interactions with other residues contribute to binding Bim to Bcl-XL. Consistent with this result ABT-263 displaced both VBad and VtBid, but not VBimEL from CBcl-XL (Figure 1D–F, compare green and cyan).
 
 To quantify the impact of ABT-263 on VBH3-proteins binding to CBcl-XL and CBcl-2, and maximize the dynamic range of the assay we estimated the FLIM-FRET efficiency from the fitted binding curves at intensity ratios of Venus to mCer3 of 0.5 and 0.25, respectively. The FRET signal from the non-binding mutant VBad4E (in which h1, h2, h3 and h4 in the BH3 region were mutated to glutamic acid) served as a negative control for FRET due to random collisions rather than binding, and was subtracted as background (Figure 2A). The percentage of the FRET signal remaining in the presence of ABT-263 is defined here as Resistance to displacement by ABT-263 (RABT-263, Figure 2A). The effects of mutations on the binding of BH3-proteins can be calculated similarly and for the BH3-2A mutation is reported as RBH3-2A. RABT-263 and RBH3-2A values for all of the mutants analyzed are provided in Table 1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig2-v1.jpg)
+
+**Figure 2.:** (A) Values of R can be used to define binding interactions from FLIM-FRET data. Sample calculation of RABT-263 for CBcl-XL:VBad binding in MCF-7 cells. To maximize the accuracy and dynamic range of the assay to quantify the impact of ABT-263 on the VBH3-proteins binding to CBcl-XL, we interpolated the FLIM-FRET efficiency from the fitted binding curves at an intensity ratio of Venus to mCer3 of 0.5 (points A, (B and C). The non-binding mutant VBad4E, in which h1, h2, h3 and h4 in the BH3 region were all mutated to glutamic acid, served as a control for FRET due to random collisions (red line, point C) and was subtracted from A and B as background. The signal remaining after the addition of ABT-263 (cyan line, point B) expressed as a percentage of the signal with DMSO added instead of the drug (green line, point A) is defined as RABT-263. (B) RABT-263 and RBH3-2A for binding of the indicated VBH3-proteins to CBcl-XL (black) from binding curves in shown in Figure 1and CBcl-2 (blue) in MCF-7 cells. RBH3-2A is calculated similarly to RABT-263 except the FLIM-FRET efficiency of the mutant is substituted for the value after adding ABT-263. Binned data, binding curves and sample images for Bcl-2 are shown in Figure 2—figure supplement 1. (C) The RABT-263 and RBH3-2A values for CBcl-XL:VBH3 proteins interactions in BMK-DKO cells. Binned data, binding curves and sample images are shown in Figure 2—figure supplement 2. Control experiments showing that the morphology changes that accompany cell death do not change the lifetime values determined by FLIM are shown in Figure 2—figure supplement 3. (D) Bcl-XL inhibitors displace VBad efficiently but VBimEL poorly from CBcl-XL in live cells. The dose-dependent inhibition curves due to the indicated concentrations of ABT-263 (black), and the Bcl-XL inhibitors A-1155463 (red) and A-1331852 (green) shown for CBcl-XL:VBad (left) and CBcl-XL:VBimEL (right) complexes in live MCF-7 cells. R values are ±95% confidence intervals from binned data and binding curves shown in Figure 2—figure supplement 4 (E) ABT-263 displaces tBid (10 nM) but not Bim (10 nM) from Bcl-XL (40 nM) in vitro. Percent of BH3 protein bound to Bcl-XL (BH3 bound %) measured by loss of FRET for Bcl-XL:tBid and Bcl-XL:Bim quantified for purified full-length dye labeled proteins incubated with liposomes and the indicated concentrations of drug. Data are from three experimental replicates, not all points are visible due to overlap. In all figures RABT-263 and RBH3-2A data points for Bcl-XL and Bcl-2 are black and blue respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Both BH3-2A mutation and ABT-263 displace (A) VBad, (B) VtBid but not (C) VBimEL from CBcl-2 in MCF-7 cells. FLIM FRET binding curves are shown above representative images. Scale bar 10 μm. FLIM-FRET binding curves for protein pairs as indicated illustrate the extent of binding for untreated or DMSO treated controls (black and green, respectively), cells treated with 20 μM ABT-263 (blue) or cells expressing BH3-2A mutant BH3-proteins (red). Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data for each binding curve.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Both BH3-2A mutation and ABT-263 displace (A) VBad, (B) VtBid but not (C) VBimEL from CBcl-XL in BMK cells in which the genes for Bax and Bak have been deleted (DKO). FLIM FRET binding curves are shown above representative images. Scale bar 10 μm. FLIM-FRET binding curves for protein pairs as indicated illustrate the extent of binding for untreated or DMSO treated controls (black and green, respectively), cells treated with 20 μM ABT-263 (blue) or cells expressing BH3-2A mutant BH3-proteins (red). Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data for each binding curve.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Representative micrographs selected showing mCer3 and Venus intensities, Intensity weighted FLIM and selected regions of interest (ROIs) for (A) alive and (B) dying cells. Lifetime determinations for mCer3 for the identified ROIs are presented in tabular form at the left. Ch1 – Venus intensity, Ch2 – mCer3 intensity, ratio of Venus to mCer3 – ratio, Lifetime for ROI – Tau. MCF-7 overexpressing mCer3-Bcl-XL were transiently transfected to express vBimEL-Bad and after treatment with DMSO for >16 hr images of live cells were acquired by imaging adherent flat cells, dying cells (spherical) were imaged from a higher focal plane one hour later due to the time needed to acquire the first set of data.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The curves illustrate the extent of binding for DMSO treated controls (black), or cells treated with 1.25 μM (pink), 2.5 μM (light blue), 5 μM (green), 10 μM (red), and 20 μM (dark blue) BH3-mimetics: (a and d) A-1155463, (b and e) A-1331852, and (c and f) ABT-263. Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data.
+
+**Table 1.**
+ Values of RBH3-2A and RABT-263 for all reported interactions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Cell lines Constructs</th>
+      <th colspan="4">cBcl-XL</th>
+      <th colspan="4">cBcl-2</th>
+    </tr>
+    <tr>
+      <th colspan="2">RBH3-2A</th>
+      <th colspan="2">RABT-263</th>
+      <th colspan="2">RBH3-2A</th>
+      <th colspan="2">RABT-263</th>
+    </tr>
+    <tr>
+      <th>Value</th>
+      <th>95% CI</th>
+      <th>Value</th>
+      <th>95% CI</th>
+      <th>Value</th>
+      <th>95% CI</th>
+      <th>Value</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vBad</td>
+      <td>2.44</td>
+      <td>2.50</td>
+      <td>46.36</td>
+      <td>8.23</td>
+      <td>4.33</td>
+      <td>3.48</td>
+      <td>18.63</td>
+      <td>3.24</td>
+    </tr>
+    <tr>
+      <td>vtBid</td>
+      <td>33.70</td>
+      <td>2.60</td>
+      <td>43.95</td>
+      <td>6.84</td>
+      <td>25.33</td>
+      <td>3.98</td>
+      <td>30.16</td>
+      <td>9.82</td>
+    </tr>
+    <tr>
+      <td>vBimEL</td>
+      <td>81.43</td>
+      <td>4.65</td>
+      <td>86.26</td>
+      <td>5.10</td>
+      <td>66.85</td>
+      <td>4.70</td>
+      <td>83.06</td>
+      <td>8.69</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim</td>
+      <td>70.19</td>
+      <td>4.03</td>
+      <td>97.96</td>
+      <td>6.45</td>
+      <td>54.91</td>
+      <td>3.92</td>
+      <td>65.46</td>
+      <td>7.40</td>
+    </tr>
+    <tr>
+      <td>vBimEL-dN</td>
+      <td>101.87</td>
+      <td>4.37</td>
+      <td>90.81</td>
+      <td>7.01</td>
+      <td>82.57</td>
+      <td>4.27</td>
+      <td>90.47</td>
+      <td>10.25</td>
+    </tr>
+    <tr>
+      <td>vBimEL-Bad</td>
+      <td>26.12</td>
+      <td>2.70</td>
+      <td>60.55</td>
+      <td>4.43</td>
+      <td>32.74</td>
+      <td>5.80</td>
+      <td>65.75</td>
+      <td>6.36</td>
+    </tr>
+    <tr>
+      <td>vBimEL-dCTS</td>
+      <td>15.08</td>
+      <td>3.17</td>
+      <td>69.05</td>
+      <td>4.57</td>
+      <td>13.60</td>
+      <td>2.21</td>
+      <td>60.02</td>
+      <td>6.73</td>
+    </tr>
+    <tr>
+      <td>vBimEL-Bad-dCTS</td>
+      <td>10.61</td>
+      <td>4.26</td>
+      <td>40.25</td>
+      <td>5.67</td>
+      <td>11.95</td>
+      <td>4.07</td>
+      <td>12.51</td>
+      <td>6.60</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-WAA</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>78.51</td>
+      <td>5.81</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>50.15</td>
+      <td>7.22</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-I146Y</td>
+      <td>46.56</td>
+      <td>3.20</td>
+      <td>83.24</td>
+      <td>5.34</td>
+      <td>26.78</td>
+      <td>4.21</td>
+      <td>53.17</td>
+      <td>5.43</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-Q148R</td>
+      <td>74.45</td>
+      <td>4.24</td>
+      <td>89.82</td>
+      <td>6.21</td>
+      <td>56.94</td>
+      <td>5.46</td>
+      <td>53.46</td>
+      <td>7.33</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-I153M</td>
+      <td>96.53</td>
+      <td>4.60</td>
+      <td>92.78</td>
+      <td>6.00</td>
+      <td>102.30</td>
+      <td>8.94</td>
+      <td>68.51</td>
+      <td>7.51</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-I146Y-Q148R</td>
+      <td>50.46</td>
+      <td>3.46</td>
+      <td>90.18</td>
+      <td>7.59</td>
+      <td>37.73</td>
+      <td>3.88</td>
+      <td>61.77</td>
+      <td>7.54</td>
+    </tr>
+    <tr>
+      <td>vBad-Bim-I146Y-I153M</td>
+      <td>56.80</td>
+      <td>3.27</td>
+      <td>88.97</td>
+      <td>6.12</td>
+      <td>42.59</td>
+      <td>4.33</td>
+      <td>69.07</td>
+      <td>7.73</td>
+    </tr>
+    <tr>
+      <td>vBimEL-I146Y</td>
+      <td>70.99</td>
+      <td>7.58</td>
+      <td>88.66</td>
+      <td>10.85</td>
+      <td>54.17</td>
+      <td>3.49</td>
+      <td>65.32</td>
+      <td>8.72</td>
+    </tr>
+    <tr>
+      <td>vBimEL-I146Y-dCTS</td>
+      <td>12.29</td>
+      <td>2.89</td>
+      <td>38.45</td>
+      <td>8.31</td>
+      <td>8.57</td>
+      <td>4.03</td>
+      <td>52.86</td>
+      <td>6.02</td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185E</td>
+      <td>26.68</td>
+      <td>3.62</td>
+      <td>41.85</td>
+      <td>10.24</td>
+      <td>16.09</td>
+      <td>3.87</td>
+      <td>51.02</td>
+      <td>12.29</td>
+    </tr>
+    <tr>
+      <td>vBimEL-I146Y-L185E</td>
+      <td>19.44</td>
+      <td>4.10</td>
+      <td>40.01</td>
+      <td>8.07</td>
+      <td>5.79</td>
+      <td>9.81</td>
+      <td>36.85</td>
+      <td>8.81</td>
+    </tr>
+    <tr>
+      <td>vBimEL-CTS2A</td>
+      <td>77.99</td>
+      <td>4.43</td>
+      <td>88.79</td>
+      <td>6.24</td>
+      <td>60.24</td>
+      <td>3.77</td>
+      <td>80.69</td>
+      <td>11.40</td>
+    </tr>
+    <tr>
+      <td>vBimEL-I181E</td>
+      <td>49.19</td>
+      <td>50.23</td>
+      <td>63.86</td>
+      <td>6.16</td>
+      <td>47.20</td>
+      <td>2.96</td>
+      <td>73.26</td>
+      <td>10.45</td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185E</td>
+      <td>26.68</td>
+      <td>3.62</td>
+      <td>41.85</td>
+      <td>10.24</td>
+      <td>16.09</td>
+      <td>3.87</td>
+      <td>51.02</td>
+      <td>12.29</td>
+    </tr>
+    <tr>
+      <td>vBimEL-I188E</td>
+      <td>67.17</td>
+      <td>5.14</td>
+      <td>50.96</td>
+      <td>7.66</td>
+      <td>47.47</td>
+      <td>3.36</td>
+      <td>63.04</td>
+      <td>8.04</td>
+    </tr>
+    <tr>
+      <td>vBimEL-V192E</td>
+      <td>52.57</td>
+      <td>53.59</td>
+      <td>70.14</td>
+      <td>7.64</td>
+      <td>54.50</td>
+      <td>3.56</td>
+      <td>64.84</td>
+      <td>9.70</td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185A</td>
+      <td>159.10</td>
+      <td>14.88</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185D</td>
+      <td>20.31</td>
+      <td>5.29</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185E</td>
+      <td>26.16</td>
+      <td>3.57</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185F</td>
+      <td>99.99</td>
+      <td>5.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185G</td>
+      <td>86.82</td>
+      <td>7.91</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185H</td>
+      <td>49.10</td>
+      <td>4.50</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185M</td>
+      <td>89.98</td>
+      <td>4.42</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185P</td>
+      <td>58.95</td>
+      <td>3.61</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185R</td>
+      <td>48.08</td>
+      <td>3.33</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185S</td>
+      <td>73.49</td>
+      <td>4.67</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vBimEL-L185stop</td>
+      <td>26.87</td>
+      <td>4.94</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BimELv</td>
+      <td></td>
+      <td></td>
+      <td>89.41</td>
+      <td>5.80</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Plotting RABT-263 for different interactions indicated that >80% of CBcl-XL:VBimEL and CBcl-2:VBimEL complexes were resistant to the addition of ABT-263 (Figure 2B). In contrast, CBcl-XL:VBad and CBcl-XL:VtBid complexes were less than 50% resistant to the drug (Figure 2B-left, black) while the corresponding Bcl-2 complexes were less than 40% resistant (Figure 2B-left, blue, Figure 2—figure supplement 1). Calculated similarly, RBH3-2A values reflect the minimal effect of BH3-2A mutations on complexes of CBcl-XL and CBcl-2 with VBimEL (RBH3-2A ~ 80%) compared to VBad (RBH3-2A ~ 2%) and VtBid (RBH3-2A ~30%) complexes (Figure 1D–F, Figure 2B, and Figure 2—figure supplement 1).
 
@@ -58,13 +495,13 @@ To confirm that the stability of the complexes measured in live cells was due to
 
 To test the functional consequences of this we measured protein binding and liposome permeabilization at the same time. Under conditions that support measurement of both, the IC50 for ABT-263 for FRET between cBid and Bim with Bcl-XL was 212 ± 43 and>700 nM, respectively while for liposome permeabilization the corresponding EC50’s were 65 ± 9 nM and 150 ± 16 nM, n = 3 independent duplicates,±standard error. Thus, the change in binding affinity results in a corresponding change in membrane permeabilization.
 
-## Regulation of apoptosis by fluorescent fusion proteins in live cells
+### Regulation of apoptosis by fluorescent fusion proteins in live cells
 
 The functional properties of the fusion proteins used in FLIM-FRET experiments were examined using multiple assays in MCF-7 cells. Transient transfection by the requisite plasmids demonstrated that expression of VBim and VtBid killed MCF-7 cells as assessed morphologically for both cell and nuclear condensation and mitochondrial transmembrane potential (Figure 3A). In contrast, expression of VBad had little effect on cell death in this cell line suggesting that inhibition of Bcl-2 and Bcl-XL is not sufficient to induce apoptosis in MCF-7 cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig3-v1.jpg)
 
-**Figure 3.:** (A) Transient expression of exogenous VtBid (blue) and VBimEL (red) killed MCF-7 cells. MCF-7 cells were largely resistant to expression of VBad (green) as the resulting cell death was similar to expression of the control protein Venus (black). Images of individual cells were assessed for apoptosis based on staining with TMRE and the nuclear dye DRAQ five using a multiparametric linear classifier. An increase in the percentage of cells scored as dead or dying (% Dead) as a function of Venus intensity demonstrated that the VtBid and VBimEL fusion proteins retain pro-apoptotic activity. Error bars indicate standard error for three independent replicates. At least 30 cells were analyzed at each point representing a Venus intensity bin. (B) Immunoblotting of lysates from MCF-7 cells (lane 1) and MCF-7 cells expressing exogenous CBcl-XL (lane 2) or Bcl-XL (Lane 3) with an antibody to Bcl-XL demonstrated that the exogenous proteins are at least 20-fold over-expressed compared to endogenous Bcl-XL. The same blot was probed for β-actin as a loading control. (C) Cells classified as dead or dying (% Dead) for 3 cell lines (MCF-7 and MCF-7 expressing either CBcl-XL or CBcl-2), treated with 2 µg/ml cyclohexamide (CHX), or CHX plus TNFα (250 ng/ml and 500 ng/ml) for 24 hr. Data (% Dead) for three independent replicates (circles) and the mean of the replicates (line) are plotted. A one-way ANOVA test was performed with a Dunnett's Multiple Comparison post-test (Graphpad Prism), to compare all treated wells with untreated controls for each cell line. (D) Overexpression of CBcl-2 and CBcl-XL protected cells from BH3-mimetics. Points represent the average percentage of cells classified as dead or dying (% Dead) for individual replicates, with the mean of the replicates indicated by a line. MCF-7 cells and MCF-7 cells expressing either Bcl-2 or Bcl-XL were treated with 1.25 µM (dot) and 20 µM (circle) ABT-199, A-1331852 or ABT-263 as indicated above. Neither selective nor dual inhibition of Bcl-2 and Bcl-XL induced substantial cell death in MCF-7 cell lines (all below 20% Dead) demonstrating these cells are not highly dependent on expression of either of these anti-apoptotic proteins. Nevertheless expression of Bcl-2 or Bcl-XL reduced cell death to barely detectable levels. (E) The MCL-1 inhibitor, S-63845 (Servier) kills MCF-7 (black), but does not kill MCF-7 CBcl-XL (blue) and MCF-7 CBcl-2 (red) cells. An EC50 value of 530 ± 6 nM, was calculated for MCF-7 cells in GraphPad Prism using a non-linear fit of normalized data on a log scale (log(agonist) verses response, and variable slope (four parameters)).10.7554/eLife.37689.016Figure 3—source data 1.
+**Figure 3.:** (A) Transient expression of exogenous VtBid (blue) and VBimEL (red) killed MCF-7 cells. MCF-7 cells were largely resistant to expression of VBad (green) as the resulting cell death was similar to expression of the control protein Venus (black). Images of individual cells were assessed for apoptosis based on staining with TMRE and the nuclear dye DRAQ five using a multiparametric linear classifier. An increase in the percentage of cells scored as dead or dying (% Dead) as a function of Venus intensity demonstrated that the VtBid and VBimEL fusion proteins retain pro-apoptotic activity. Error bars indicate standard error for three independent replicates. At least 30 cells were analyzed at each point representing a Venus intensity bin. (B) Immunoblotting of lysates from MCF-7 cells (lane 1) and MCF-7 cells expressing exogenous CBcl-XL (lane 2) or Bcl-XL (Lane 3) with an antibody to Bcl-XL demonstrated that the exogenous proteins are at least 20-fold over-expressed compared to endogenous Bcl-XL. The same blot was probed for β-actin as a loading control. (C) Cells classified as dead or dying (% Dead) for 3 cell lines (MCF-7 and MCF-7 expressing either CBcl-XL or CBcl-2), treated with 2 µg/ml cyclohexamide (CHX), or CHX plus TNFα (250 ng/ml and 500 ng/ml) for 24 hr. Data (% Dead) for three independent replicates (circles) and the mean of the replicates (line) are plotted. A one-way ANOVA test was performed with a Dunnett's Multiple Comparison post-test (Graphpad Prism), to compare all treated wells with untreated controls for each cell line. (D) Overexpression of CBcl-2 and CBcl-XL protected cells from BH3-mimetics. Points represent the average percentage of cells classified as dead or dying (% Dead) for individual replicates, with the mean of the replicates indicated by a line. MCF-7 cells and MCF-7 cells expressing either Bcl-2 or Bcl-XL were treated with 1.25 µM (dot) and 20 µM (circle) ABT-199, A-1331852 or ABT-263 as indicated above. Neither selective nor dual inhibition of Bcl-2 and Bcl-XL induced substantial cell death in MCF-7 cell lines (all below 20% Dead) demonstrating these cells are not highly dependent on expression of either of these anti-apoptotic proteins. Nevertheless expression of Bcl-2 or Bcl-XL reduced cell death to barely detectable levels. (E) The MCL-1 inhibitor, S-63845 (Servier) kills MCF-7 (black), but does not kill MCF-7 CBcl-XL (blue) and MCF-7 CBcl-2 (red) cells. An EC50 value of 530 ± 6 nM, was calculated for MCF-7 cells in GraphPad Prism using a non-linear fit of normalized data on a log scale (log(agonist) verses response, and variable slope (four parameters)).
 
 To examine the effect of expression of exogenous CBcl-XL (confirmed by immunoblotting in Figure 3B) apoptosis was triggered with TNFα and cycloheximide (CHX) in the same cell clones used for FLIM-FRET above. Untreated and cells treated with only CHX were used as negative controls. As expected, untransfected MCF-7 cells were efficiently killed while cells expressing either CBcl-XL or CBcl-2 were highly resistant to this well-established method for the induction of apoptosis (Figure 3C).
 
@@ -72,19 +509,27 @@ To determine the importance of other anti-apoptotic proteins expressed endogenou
 
 In contrast, MCF-7 cells were sensitive to inhibition of MCL-1 (Figure 3E). Moreover, overexpression of CBcl-XL or CBcl-2 protected MCF-7 cells from the MCL-1 inhibitor S-63845, likely by inhibiting pro-apoptotic proteins displaced by the BH3-mimetic from MCL-1 (Figure 3E). Taken together the data demonstrate that MCF-7 cells are primarily dependent on expression of MCL-1 for survival and that the exogenously expressed fluorescence protein fusions function as predicted in this cell line.
 
-## The Bim BH3 and Bim CTS both contribute to resistance to ABT-263
+### The Bim BH3 and Bim CTS both contribute to resistance to ABT-263
 
 It is commonly accepted that the only stable binding interaction between Bim and anti-apoptotic proteins is via the BH3-region of Bim (Bim BH3) binding in the hydrophobic groove formed by the BH3 1–2 regions of the anti-apoptotic proteins (Liu et al., 2010; Sattler et al., 1997). However, resistance to ABT-263 suggests that in the context of the whole protein either the Bim BH3 region binds differently than BH3-peptides to Bcl-XL or a region not included in previous in vitro experiments, such as the N-terminal and C-terminal sequences shared by all three isoforms, contains sequences conferring ABT-263 resistant binding. To test these sequences, mutants harboring deletions in VBimEL and mutants in which the BH3-regions were exchanged between BimEL and Bad (Figure 4A) were assayed by FLIM-FRET for resistance to ABT-263 and to the BH3-2A mutation (Figure 4B–C and Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig4-v1.jpg)
+
+**Figure 4.:** (A) Stick diagrams for the different VBimEL constructs expressed in cells. (B) RABT-263 for CBcl-XL:VBH3-protein complexes (black) and CBcl-2:VBH3-protein complexes (blue). (C) RBH3-2A of CBcl-XL:VBH3-protein complexes (black) and CBcl-2:VBH3-protein complexes (blue). Data in (B) and (C) are mean ±95% confidence intervals calculated as in Figure 2 from FLIM-FRET binding curves shown in Figure 4—figure supplement 1. Data for VBad and VBimEL from Figure 2 are included to facilitate direct visual comparisons. All binding data are from Table 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** FLIM-FRET binding curves for the proteins indicated to the left of each row and (A–F) CBcl-XL or (G–L) CBcl-2 in MCF-7 cells illustrate the extent of binding for untreated (black) or DMSO treated controls (green), cells treated with 20 μM ABT-263 (blue) or cells expressing BH3-2A mutant BH3-proteins (red). Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data.
+
 The trends observed for binding of the mutants to CBcl-XL and CBcl-2 were remarkably similar. Truncation of the N-terminus of BimEL (VBimEL-dN) had little impact on Bim binding (Table 1), but replacing the BH3 region in Bad with that in BimEL (VBad-BimEL) increased RABT-263 compared with VBad. Consistent with this result, binding of the reciprocal mutant (VBimEL-Bad) to either CBcl-XL or CBcl-2 was more sensitive to the drug and the BH3-2A mutation (RABT-263 ~60–65%, Figure 4B RBH3-2A ~30% Figure 4C, black and blue) respectively, compared to VBimEL (both R values ~ 80%, Table 1). As expected, deletion of the entire BH3 region (BimEL-d20, Figure 4A) reduced the interactions with Bcl-XL and Bcl-2 to a level similar to random collisions in the membrane (Rd20 ~25%, Figure 4—figure supplement 1F and L). Unexpectedly, deletion of the C-terminal sequence (CTS) resulted in significant decreases in RABT-263 and RBH3-2A (Figure 4B–C and Table 1). Combining deletion of the Bim CTS with replacement of the Bim BH3 region by that of Bad (VBimEL-Bad-dCTS), reduced the values of RABT-263 and RBH3-2A to that of VBad (Figure 4B–C and Table 1). Thus, both BH3 and CTS sequences contribute to Bim binding anti-apoptotic proteins.
 
-## The CTS of Bim contributes to pro-apoptotic activity
+### The CTS of Bim contributes to pro-apoptotic activity
 
 To examine the functional importance of the Bim CTS further, the pro-apoptotic activities of selected Bim mutants were examined in MCF-7 cells with and without exogenously-expressed Bcl-XL or Bcl-2. Expression of CBcl-XL or CBcl-2 efficiently protected cells from lower levels of expression of VBimEL and VBimEL-dCTS (<1000 units of Venus intensity) however, in neither case was the protection complete at higher levels of expression (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig5-v1.jpg)
 
-**Figure 5.:** The BH3-proteins indicated to the right of the panels were expressed by transient transfection in MCF-7 cells and MCF-7 cells stably expressing either CBcl-XL or CBcl-2, as indicated. Commitment to cell death (% Dead) was assessed for individual cells using a linear classifier trained on both cell and nuclear morphology and TMRE intensity. Venus intensity was used to estimate for individual cells the relative BH3 protein expression and to divide them into bins with similar expression levels. For each bin, the % of cells classified as dead or dying (% Dead) is represented by the means from three replicates (colored dots); bars indicate standard error of the means. (A) Transient expression of pro-apoptotic BH3 proteins killed MCF-7 cells in an expression level dependent manner that was inhibited by exogenous expression of CBcl-XL and CBcl-2 (black lines). Deletion of the CTS of BimEL did not inhibit induction of cell death resulting from expression of BimEL in all 3 cell lines (red lines). High level expression of BimEL-4E killed MCF-7 cells in a manner completely inhibited by exogenous expression of either anti-apoptotic protein (navy blue lines). (B) The BH3 protein VBimEL-Bad that is unable to bind MCL-1 has reduced cell killing activity in MCF-7 cells that depends on the BIM CTS sequence and is poorly inhibited by exogenous expression of Bcl-XL or Bcl-2. Expression level dependent cell death was equivalent for VBimEL-Bad-dCTS and Bad consistent with MCF-7 cells being protected by endogenous MCL-1. (C–E) Interactions of Bcl-XL with BimL, BimL-dCTS, tBid and Bax measured using FRET. Data from three independent experiments are shown as individual points, some of which are not visible due to overlap. (C) The CTS of BimL increases its affinity for Bcl-XL. Binding of 4 nM Alexa568-labeled BimL or BimL-dCTS to the indicated amounts of Alexa647-labeled Bcl-XL was measured by FRET in samples containing mouse liver mitochondria. The resultant apparent Kd values for binding to Bcl-XL by BimL and BimL-dCTS, 3 ± 1 nM and 35 ± 5 nM, respectively are both well below the concentrations of the proteins expressed in cells. (D) The CTS of BimL increases displacement of Bid from Bcl-XL. Binding of cBid to membranes displaces the N-terminal region and the remaining tBid portion containing the BH3 region binds to membranes and anti-apoptotic proteins. Complexes of Alexa568-labeled cBid (4 nM) and Alexa647-labeled Bcl-XL (10 nM) were formed in incubations containing 2.9 nM liposomes. Displacement of cBid from Bcl-XL was measured by loss of FRET between Alexa568-labeled cBid and Alexa647-labeled Bcl-XL upon addition of the indicated concentrations of BimL or BimL-dCTS. (E) The CTS of BimL increases displacement of Bax from Bcl-XL. Bim mediated displacement of Bax from Bcl-XL was measured as in (d) except that complexes between Bcl-XL and Bax were assembled from Alexa568-labeled Bax (10 nM), a Bid mutant that activates Bax but does not bind Bcl-XL (10 nM cBidmt1), Alexa647-labeled Bcl-XL (30 nM), 2.9 nM liposomes and the indicated concentrations of BimL or BimL-dCTS. Because in these reactions 30 nM Bcl-XL was required to bind 10 nM Bax saturably as opposed to the 10 nM Bcl-XL used in (d) the concentrations of BimL and BimL-dCTS needed to displace Bax are higher than for displacement of tBid in experiments with added cBid. The curves are further complicated because the displaced Bax can also bind to BimL and BimL-dCTS. Thus while these data demonstrate that both BimL and BimL-dCTS displace Bax from Bcl-XL the curves are difficult to interpret in terms of binding constants.10.7554/eLife.37689.022Figure 5—source data 1.
+**Figure 5.:** The BH3-proteins indicated to the right of the panels were expressed by transient transfection in MCF-7 cells and MCF-7 cells stably expressing either CBcl-XL or CBcl-2, as indicated. Commitment to cell death (% Dead) was assessed for individual cells using a linear classifier trained on both cell and nuclear morphology and TMRE intensity. Venus intensity was used to estimate for individual cells the relative BH3 protein expression and to divide them into bins with similar expression levels. For each bin, the % of cells classified as dead or dying (% Dead) is represented by the means from three replicates (colored dots); bars indicate standard error of the means. (A) Transient expression of pro-apoptotic BH3 proteins killed MCF-7 cells in an expression level dependent manner that was inhibited by exogenous expression of CBcl-XL and CBcl-2 (black lines). Deletion of the CTS of BimEL did not inhibit induction of cell death resulting from expression of BimEL in all 3 cell lines (red lines). High level expression of BimEL-4E killed MCF-7 cells in a manner completely inhibited by exogenous expression of either anti-apoptotic protein (navy blue lines). (B) The BH3 protein VBimEL-Bad that is unable to bind MCL-1 has reduced cell killing activity in MCF-7 cells that depends on the BIM CTS sequence and is poorly inhibited by exogenous expression of Bcl-XL or Bcl-2. Expression level dependent cell death was equivalent for VBimEL-Bad-dCTS and Bad consistent with MCF-7 cells being protected by endogenous MCL-1. (C–E) Interactions of Bcl-XL with BimL, BimL-dCTS, tBid and Bax measured using FRET. Data from three independent experiments are shown as individual points, some of which are not visible due to overlap. (C) The CTS of BimL increases its affinity for Bcl-XL. Binding of 4 nM Alexa568-labeled BimL or BimL-dCTS to the indicated amounts of Alexa647-labeled Bcl-XL was measured by FRET in samples containing mouse liver mitochondria. The resultant apparent Kd values for binding to Bcl-XL by BimL and BimL-dCTS, 3 ± 1 nM and 35 ± 5 nM, respectively are both well below the concentrations of the proteins expressed in cells. (D) The CTS of BimL increases displacement of Bid from Bcl-XL. Binding of cBid to membranes displaces the N-terminal region and the remaining tBid portion containing the BH3 region binds to membranes and anti-apoptotic proteins. Complexes of Alexa568-labeled cBid (4 nM) and Alexa647-labeled Bcl-XL (10 nM) were formed in incubations containing 2.9 nM liposomes. Displacement of cBid from Bcl-XL was measured by loss of FRET between Alexa568-labeled cBid and Alexa647-labeled Bcl-XL upon addition of the indicated concentrations of BimL or BimL-dCTS. (E) The CTS of BimL increases displacement of Bax from Bcl-XL. Bim mediated displacement of Bax from Bcl-XL was measured as in (d) except that complexes between Bcl-XL and Bax were assembled from Alexa568-labeled Bax (10 nM), a Bid mutant that activates Bax but does not bind Bcl-XL (10 nM cBidmt1), Alexa647-labeled Bcl-XL (30 nM), 2.9 nM liposomes and the indicated concentrations of BimL or BimL-dCTS. Because in these reactions 30 nM Bcl-XL was required to bind 10 nM Bax saturably as opposed to the 10 nM Bcl-XL used in (d) the concentrations of BimL and BimL-dCTS needed to displace Bax are higher than for displacement of tBid in experiments with added cBid. The curves are further complicated because the displaced Bax can also bind to BimL and BimL-dCTS. Thus while these data demonstrate that both BimL and BimL-dCTS displace Bax from Bcl-XL the curves are difficult to interpret in terms of binding constants.
 
 Unexpectedly, in MCF-7 cells there was no significant difference in induction of cell death by removing the CTS from BimEL (Figure 5A). There are two factors that are likely contributing to this result. First. Bim not only inhibits anti-apoptotic proteins it also activates the executioner proteins Bax and Bak, potentially confounding analysis. As this mechanism may be relevant in multiple cell lines it is examined in more detail elsewhere (Chi et al., 2019). Second, MCF-7 cells depend on MCL-1 for survival (Figure 3E).
 
@@ -92,13 +537,29 @@ To avoid the contribution to cell death by inhibition of MCL-1 we made use of th
 
 To examine potential molecular mechanisms underlying the effects of deletion of the CTS from Bim in a more controlled system we examined BimL and BimL-dCTS binding to Bcl-XL and displacement of BH3 proteins from Bcl-XL using purified proteins and the FRET based assays similar to those described above (Figure 2E). When assayed directly, in incubations containing mitochondria, deletion of the CTS from BimL reduced the apparent affinity for binding to Bcl-XL (Figure 5C). As predicted from the reduced affinity of this interaction, BimL-dCTS was also less effective at displacing tBid and activated Bax from Bcl-XL (Figure 5D and E, respectively. Control FRET measurements indicated that at the concentrations used binding of cBid by Bcl-XL was saturated and that all of the proteins other than BimL-dCTS were bound to liposome membranes. Moreover, the interactions take place on the membrane surface as both tBid and activated Bax very efficiently bind to liposomes (Kale et al., 2014).
 
-## Multiple residues in the Bim BH3 contribute to ABT-263 resistance
+### Multiple residues in the Bim BH3 contribute to ABT-263 resistance
 
 There are five hydrophobic residues/groups named h0-h4 on the hydrophobic side of the BH3 α-helix in pro-apoptotic BH3-proteins hypothesized to mediate BH3-protein binding to anti-apoptotic proteins (Figure 6A). To quantify the binding due to each of these residues without potential interference from the additional binding site within the Bim CTS, mutations were introduced into a chimeric fusion protein composed of the Bad sequence with the Bim BH3 region (VBad-Bim in Figure 4A). The introduced mutations substitute residues in the Bim BH3 sequence at positions h0, h1, h1 +2 (an R between h1 and h2), and h3 with the corresponding residues in Bad (Figure 6A). When measured by FLIM-FRET, the relative effects of most of the individual mutations on the RABT-263 and RBH3-2A values for VBad-Bim binding to CBcl-XL (black) and CBcl-2 (blue) reduced binding by 10–20% (Figure 6B, Figure 6—figure supplement 1 and Table 1). Among these the h0 and h1 residues contributed to Bim binding to Bcl-2 and Bcl-XL the most. Substitution of the h0 sequence with WAA reduced RABT-263 for VBad-Bim to CBcl-XL from 98% (95% Confidence Interval (CI) 6%) to 79% (CI 6%). Similarly, substitution of I146 with Y decreased RABT-263 for VBad-Bim to 83% (CI 5%). The reductions in RABT-263 for VBad-Bim to Bcl-2 were similar (Table 1). However, the RABT-263 for VBad-Bim binding to both Bcl-XL and Bcl-2 was unexpectedly high. As Bad also has a CTS sequence that binds to membranes and may have other as yet uncharacterized functions we examined the effect of the I146Y mutation in BimEL-dCTS. The RABT-263 for Bcl-XL for this mutant (BimEL-I146Y-dCTS) was 38% (CI 8%) compared to 69% (CI 5%) for VBimEL-dCTS binding to CBcl-XL suggesting a role for I146 in BimEL binding to Bcl-XL (Figure 6C). Although a reduction was also seen for CBcl-2 the confidence intervals overlapped suggesting there are subtle differences in Bim binding to Bcl-XL and Bcl-2. The small differences observed for substitutions at other positions within Bim-BH3 suggest either we have reached the limit of sensitivity for the FLIM-FRET assay or they may augment but individually are not critical for ABT-263 resistant binding of Bim to Bcl-XL and Bcl-2.
 
-## The Bim CTS increased Bim binding to Bcl-XL and Bcl-2 independent of Bim binding membranes
+![Figure 6.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig6-v1.jpg)
+
+**Figure 6.:** (A) Sequence alignment of the BH3 regions of Bad and Bim and the sequences of VBad-Bim mutants, residues from Bad (red), Bim (blue). (B) Identification of conserved hydrophobic residues in the Bim BH3 that contributed to RABT-263 for CBcl-XL:VBad-Bim (black) and CBcl-2:VBad-Bim (blue) complexes. The RABT-263 values of CBcl-XL:VBad-Bim and CBcl-2:VBad-Bim complexes from Figure 4b and Table 1 were included to facilitate direct comparison. (C) The BH3 h1 residue I146 contributes to Bim binding to Bcl-2 and Bcl-XL. Substitution of I146 with the corresponding residue from Bad (BimEL-I146Y) decreased RABT-263 for CBcl-XL: VBimEL/VBimEL-dCTS (black) and CBcl-2:VBimEL/VBimEL-dCTS (blue) complexes. Data are mean ±95% confidence intervals calculated from FLIM-FRET binding curves shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–L) Binding of VBad-Bim chimeric proteins to CBcl-XL (left) and CBcl-2 (right) in MCF-7 cells. The VBad-Bim chimeric proteins are comprised of VBad with the BH3 region replaced with the corresponding region from Bim. Additional point mutations in the Bim BH3 region are indicated to the left of each pair of panels. (M–P) Impact of I146 on the binding of VBimEL or VBimEL-dCTS to CBcl-XL (left) and CBcl-2 (right) in MCF-7 cells. Additional point mutations in VBimEL are indicated to the left of each pair of panels. The binding curves illustrate the extent of binding of untreated (black) and DMSO treated (green) controls, cells treated with 20 μM ABT-263 (blue) or additional BH3-2A mutation (red). Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data.
+
+### The Bim CTS increased Bim binding to Bcl-XL and Bcl-2 independent of Bim binding membranes
 
 Deletion of the Bim CTS has been shown to abrogate binding to membranes (O'Connor et al., 1998). We therefore hypothesized that the membrane binding function of this region might affect the resistance of Bcl-XL/Bim and Bcl-2/Bim complexes to either ABT-263 treatment or BH3-2A mutations by increasing the local concentration of the proteins on mitochondria. However, instead of an uninterrupted hydrophobic sequence of more than 15 residues typical of tail-anchor proteins, the Bim CTS consists of two short hydrophobic sequences and includes multiple positively charged Arg residues, two of which are near the center of the sequence (Figure 7A, green).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig7-v1.jpg)
+
+**Figure 7.:** Bim h1-h4, red; arginine residues within the CTS, green; substitutions, blue; numbering is for BimEL. (B) Selected images showing sub-cellular localization of VBimEL-mutants compared to MitoTracker. The scale bar represents 10 μm. (C) Bim binding to Bcl-XL and mitochondria by the Bim CTS are independent. Co-localization (Pearson’s r) for Venus and MitoTracker-Red signals (Red bars), where average ±SEM was calculated using mean Pearson’s r values determined in three independent replicates. At least 150 transiently transfected cells were analyzed across replicates. RABT-263 of CBcl-XL:VBimEL-mutant complexes (black) or CBcl-2:VBimEL-mutant complexes (blue). Data are mean ±95% confidence intervals calculated from FLIM-FRET binding curves shown in Figure 7—figure supplement 1. VBimEL (from Figure 1) and VBim-CTS2A mutant complexes have similar high RABT-263 values although mitochondrial localization for VBim-CTS2A is impaired. VBimEL-L185E, VBimEL-I188E, VBimEL-V192E and VBim-CTS2A are all poorly localized at mitochondria yet have increasing RABT-263 values. (D–E) BimL binding to Bcl-XL is improved by binding to membranes but most resistance to ABT-263 is due to Bim CTS dependent binding to Bcl-XL. Purified Bcl-XL and BimL protein binding in the presence of different concentrations of ABT-263 quantified in vitro using purified full-length proteins with (D) and without (E) liposomes. Control experiments demonstrating efficient binding of BimL to liposomes and Bcl-XL binding data for the Bim mutants are presented in the companion paper (Chi et al., 2019). Data are mean ±SD (n = 3 independent experiments). (F) Mutation of BimEL-L185 to E reduced RABT-263 for CBcl-XL:VBimEL (black) and CBcl-2:VBimEL (blue) complexes. However, additional mutation of I146 did not further reduce RABT-263. Data are mean ±95% confidence intervals calculated from FLIM-FRET binding curves shown in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–L) FLIM-FRET data for CBcl-XL (left) and CBcl-2 (right) binding to the VBimEL mutants indicated to the left of the panels. Untreated and DMSO treated controls, black and green, respectively. Cells treated with 20 μM ABT-263, blue. Data points in FLIM-FRET binding curves correspond to the average FLIM-FRET efficiency for binned data (20 < cells/bin < 3,000). Error bars, SEM; shadowed area, 95% confidence interval for the best fit of the model to the data.
 
 To examine the importance of sequences within the Bim CTS for ABT-263 resistant binding of VBimEL to CBcl-XL and CBcl-2, mutants were generated in which hydrophobic (I181, L185, I188 and V192) and hydrophilic (R186 and R190) residues of Bim were substituted with the negatively charged amino acid Glutimate (E) or the hydrophobic residue Alanine (CTS-2A), respectively (Figure 7A). The impact of these mutations on both the subcellular localization of VBimEL at mitochondria (measured by the Pearson’s r with MitoTracker) and RABT-263 values were quantified for binding to CBcl-XL and CBcl-2. Compared to VBimEL (Pearson’s r ~ 0.4) mitochondrial localization of all of the mutants was similarly poor (Pearson’s r 0.1–0.3) (Figure 7B–C), and only slightly greater than the Pearson’s r measured for the cytoplasmic Venus control. However, the mutants displayed different binding properties to the anti-apoptotic proteins (Figure 7C and Figure 7—figure supplement 1). For example, even though localization at mitochondria for the VBim-CTS2A mutant was impaired, it bound to both anti-apoptotic proteins in an ABT-263 resistant fashion (RABT-263 ~89%, CI 6% and 81%, CI 11%, for CBcl-XL and CBcl-2, respectively) similar to VBimEL (85%, CI 5% and 83%, CI 9%; Table 1 and Figure 7C). In contrast, RABT-263 for VBimEL mutants L185E (42%, CI 10%), I188E (51%, CI 8%) and V192E (70%, CI 8%) exhibited gradually increasing binding to CBcl-XL (Table 1) without a corresponding increase in binding to mitochondria (Figure 7C). When all of the data were analyzed in aggregate using Spearman’s rank-order correlation to include relationships that might not be linear the result was no correlation between localization for Bcl-XL and a weak correlation for Bcl-2. We suspect the latter may be due to the fact that Bcl-2 is constitutively membrane bound while Bcl-XL is located in both the cytoplasm and on the membrane. Thus in cells, localization to mitochondria and binding to anti-apoptotic proteins are independent functions of the Bim CTS.
 
@@ -106,7 +567,7 @@ The effect of the Bim CTS on binding to membranes and Bcl-XL was also assessed d
 
 Mutation of the BH3 residue I146 to Y slightly exacerbated the effect of deletion of the entire CTS from Bcl-XL on RABT-263 (Figure 6C). However, when the I146Y mutation was combined with mutation of L185E we were unable to record a decrease in RABT-263 (Figure 7F) suggesting that the effects of the individual point mutants are not additive. Alternatively the effect size may be too small to measure by FLIM-FRET, a result consistent with the L185E mutation having less effect on RABT-263 than deletion of the CTS (Table 1).
 
-## The Bim CTS interacts with Bcl-XL through hydrophobic residues
+### The Bim CTS interacts with Bcl-XL through hydrophobic residues
 
 A direct interaction between the Bim CTS and Bcl-XL is incompatible with current assumptions that the Bim CTS inserts into lipid bilayers as a transmembrane helix similar to other tail-anchor proteins (Petros et al., 2004). Therefore, we expressed a version of BimEL with Venus fused to the C-terminus (BimELV) to prevent the Bim CTS from adopting a transmembrane topology. Distance constraints mean that this protein can only undergo FRET with Bcl-XL if the Venus protein is located on the cytoplasmic side of the membrane.
 
@@ -114,11 +575,23 @@ Fusion of Venus to the C-terminus of BimEL did not abolish localization of BimEL
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig8-v1.jpg)
 
-**Figure 8.:** (A) Selected images for sub-cellular localization of VBimEL and BimELV in BMK-DKO cells compared to MitoTracker. The scale bar represents 10 µm. (B) In live cells CBcl-XL binding to BimELV is resistant to ABT-263. FLIM-FRET binding curves for the interactions between CBcl-XL and BimELV in ABT-263 (blue) or DMSO (green) treated BMK-DKO cells expressing CBcl-XL. Binding of CBcl-XL to VBimEL (black) measured in the same three experiments is shown for comparison. Data from ROIs from three independent experiments were combined and used to generate binding curves with 95% confidence intervals as in Figures 1 and 2. (C) Sub-cellular localization of BimELV is impaired compared to VBimEL but ABT-263 resistant binding to CBcl-XL (RABT-263) is unchanged. Colocalization for Venus and MitoTracker-Red was measured in this experiment for manually selected regions of interest from transiently transfected cells expressing VBimEL or BimELV (Pearson’s r, red); Error bars, SEM, n > 30 cells. RABT-263 of CBcl-XL:VBimEL or CBcl-XL:BimELV complexes, black dots. Data are mean ±95% confidence intervals calculated from FLIM-FRET binding curves shown in panel b.10.7554/eLife.37689.032Figure 8—source data 1.
+**Figure 8.:** (A) Selected images for sub-cellular localization of VBimEL and BimELV in BMK-DKO cells compared to MitoTracker. The scale bar represents 10 µm. (B) In live cells CBcl-XL binding to BimELV is resistant to ABT-263. FLIM-FRET binding curves for the interactions between CBcl-XL and BimELV in ABT-263 (blue) or DMSO (green) treated BMK-DKO cells expressing CBcl-XL. Binding of CBcl-XL to VBimEL (black) measured in the same three experiments is shown for comparison. Data from ROIs from three independent experiments were combined and used to generate binding curves with 95% confidence intervals as in Figures 1 and 2. (C) Sub-cellular localization of BimELV is impaired compared to VBimEL but ABT-263 resistant binding to CBcl-XL (RABT-263) is unchanged. Colocalization for Venus and MitoTracker-Red was measured in this experiment for manually selected regions of interest from transiently transfected cells expressing VBimEL or BimELV (Pearson’s r, red); Error bars, SEM, n > 30 cells. RABT-263 of CBcl-XL:VBimEL or CBcl-XL:BimELV complexes, black dots. Data are mean ±95% confidence intervals calculated from FLIM-FRET binding curves shown in panel b.
 
 To examine the topography and Bcl-XL binding of the Bim CTS in solution and membrane bound states directly, we used a well-established procedure in which an environment sensitive fluorescent dye N,N0-dimethyl-N-(Iodoacetyl)-N0-(7-nitrobenz-2-oxa-1,3-diazol-4-yl) ethylenediamine (NBD) was attached to recombinant BimL at specific sites and the environment of the dye was measured by fluorescence spectroscopy (Kale et al., 2014). A series of mutants were generated in which individual residues across the Bim CTS were replaced with cysteine to enable NBD-labeling. As a solvent exposed control, a Bim mutant was prepared with a cysteine located at position 41. The fluorescence intensities of the dye labeled mutants were then recorded in the absence or presence of liposomes, Bcl-XL, and/or the aqueous quencher iodide.
 
 The fluorescence of NBD increases when the dye inserts into a lipid bilayer or becomes deeply buried in the interior of a protein (Johnson, 2005). When Bim bound to Bcl-XL in solution there were no significant changes in hydrophobicity at any of the positions of the probe suggesting that during complex formation these residues do not become sufficiently buried to be protected from water (Figure 9A, diagrammed in 9C). In contrast, when BimL bound to liposomes the NBD fluorescence increased at positions 179–182 and 191–195 suggesting that these two regions anchor the CTS to the lipid bilayer (Figure 9D, diagrammed in 9F). Complex formation with Bcl-XL on the membrane did not markedly change the pattern of which amino acids increased in hydrophobicity, suggesting that complex formation does not change the way the Bim CTS interacts with membranes substantially (Figure 9G diagrammed in 9I).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig9-v1.jpg)
+
+**Figure 9.:** The amino-acids and positions above the panels indicate the residues in BimL exchanged for single-cysteines for labeling with NBD (numbering for BimEL, subtract 56 for BimL numbering). Top row, (A,D,G) NBD fluorescence changes in response to the addition of (A) Bcl-XL (green), (D) liposomes (red), (G) Bcl-XL and liposomes (black). Larger numbers indicate increased hydrophobicity of the environment of the NBD dye. Middle row, (B,E,H) iodide quenching constants (KSV) for the same mutants and binding partners as above. Smaller KSV values indicate protection from iodide. Data are mean ±95% confidence intervals for linear fitting of the data as shown for exemplar raw quenching data, in Figure 9—figure supplement 1. Lower row, (C,F,I) illustrations of possible interactions of the Bim CTS based on the data above each. (J) Substitution of the L at position185 of BimEL with a charged residue abolishes resistance to ABT-263 while hydrophobic residues are tolerated. RBH3-2A for CBcl-XL:VBimEL complexes from FLIM-FRET binding curves shown in Figure 9—figure supplement 2 were calculated as in Figure 2. Data are mean ±95% confidence intervals for fit of the binding model. (K) Schematic model of the double-bolt locked Bcl-XL:Bim:membrane complex. Bcl-XL, cyan; Bim, purple; membrane, orange. The BH3 region of Bim engages the hydrophobic groove of Bcl-XL. The Bim CTS adopts a conformation in which the two ends bind to the membrane and the central region, particularly residue 185, binds to Bcl-XL. The C-terminus of Bcl-XL also interacts with the membrane (Yao et al., 2015).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A–D) Representative Stern-Volmer quenching plots for specific residues in Bim. The fluorescence of BimL mutants labeled on the single cysteine with NBD (indicated at the top of each panel) was recorded before (F0) and after (F) incubation with the indicated concentration of iodide. F0/F was plotted against iodide concentration to generate Stern-Volmer quenching plots; error bars, STDEV, n > 3. Stern-Volmer constants (KSV) calculated as the slope of the line of linear best fit for Bim in solution (black) were compared to values for KSV for incubations containing Bim and Bcl-XL (green), Bim and liposomes (red) and Bim, liposomes and Bcl-XL (blue). The plots selected show: (A) the aqueous control Bim Q41C; (B) a residue protected primarily by interaction with the liposome membrane independent from Bcl-XL, Bim W193C; (C–D) two residues protected only when both liposomes and Bcl-XL were added, Bim-L185C and Bim-I188C (to facilitate comparison with other figures the numbering was increased by 56 residues so that the numbers correspond to positions in BimEL).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/37689/elife-37689-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A–K) FLIM-FRET binding curves for VBimEL (black) and VBimEL-BH3-2A (red) with the indicated amino acid substitutions for L185 indicate that non-charged amino acids are preferred for binding to CBcl-XL. Substitutions that negatively impact VBimEL-BH3-2A binding to CBcl-XL result in red curves with lower FLIM-FRET efficiencies than the ones obtained for VBimEL (black). The substitution L185A increased VBimEL-BH3-2A binding back to approximately the same as VBimEL WT (red line above black curve). Substitutions with other uncharged amino acids had little impact however, substitution with charged residues dramatically reduced binding of VBim-BH3-2A to CBcl-XL on membranes (compare panels A-E with F-K). Error bars, SEM; (20 < cells/bin < 3,000); shadowed area, 95% confidence interval for the best fit of the model to the data.
 
 Iodide quenching was used to identify residues protected by protein-protein interactions in addition to those protected by binding to membranes. Due to the relatively large size of iodide, residues involved in protein-protein interactions are often protected from quenching by iodide but unlike residues interacting with lipids the NBD fluorescence does not increase substantially because there is no protection from water (Johnson, 2005).
 
@@ -142,15 +615,340 @@ Our re-evaluation of the Bim CTS not only challenges the conventional belief tha
 
 ## Materials and methods
 
-## Constructs and compounds for assays in live cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>antibody to Bcl-XL (Rabbit polyclonal)</td>
+      <td>PMID: 14681679</td>
+      <td></td>
+      <td>(1:10,000), human, mouse reactivity</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>antibody to Beta-actin (Mouse monoclonal)</td>
+      <td>Abgent</td>
+      <td>Cat. #: 8H10D10</td>
+      <td>(1:5000), human, rat, mouse reactivity</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit (polyclonal)</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>Cat. #: 711-035-150</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse (polyclonal)</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>Cat. #: 711-035-152</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>MCF-7</td>
+      <td>PMID: 3790748</td>
+      <td></td>
+      <td>Dr. Ronald N. Buick (University of Toronto)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Baby Mouse Kidney(BMK)-DKO (Bax and Bak knockout) cells</td>
+      <td>PMID: 11836241</td>
+      <td></td>
+      <td>Dr. Eileen White (Rutgers University)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Navitoclax; ABT-263</td>
+      <td>Selleckchem</td>
+      <td>Cat. #: S1001</td>
+      <td>in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-1155463</td>
+      <td>Chemietek</td>
+      <td>Cat #: CT-A115</td>
+      <td>in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-1331852</td>
+      <td>Chemietek</td>
+      <td>Cat. #: CT-A115</td>
+      <td>in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S-63845</td>
+      <td>Chemietek</td>
+      <td>Cat. #: 1799633-27-4</td>
+      <td>in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Venetoclax; ABT-199</td>
+      <td>Chemietek</td>
+      <td>Cat. #: CT-A199</td>
+      <td>in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMRE</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: T669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DRAQ5</td>
+      <td>Biostatus, UK</td>
+      <td>Cat. #: DR05500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: M22425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. #: M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa 647-maleimide</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. #: A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa568-maleimide</td>
+      <td>ThermoFisher Scientific, Molecular probes</td>
+      <td>Cat. #. A20341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBD</td>
+      <td>Molecular Probes</td>
+      <td>Cat. #: D-2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PC (L-α-phosphatidylcholine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #:840051C</td>
+      <td>for making liposomes, used 48% PC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DOPS (1,2-dioleoyl-sn-glycero-3-phospho-L-serine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 840035C</td>
+      <td>for making liposomes, used 10% DOPS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PI (L-α-phosphatidylinositol)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #:840042C</td>
+      <td>for making liposomes, used 10% PI</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PE (L-α-phosphatidylethanolamine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 841118C</td>
+      <td>for making liposomes, used 28% PE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TOCL, (18:1 Cardiolipin)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat. #: 710335C</td>
+      <td>for making liposomes, used 4% TOCL</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fugene HD</td>
+      <td>Promega</td>
+      <td>Cat. #: E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TransIT-X2</td>
+      <td>Mirus</td>
+      <td>Cat. #: Mir 6003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bax</td>
+      <td>PMID: 14522999,</td>
+      <td>GI: L22473.1</td>
+      <td>For recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bcl-XL</td>
+      <td>PMID: 18547146</td>
+      <td>GI: Z23115.1</td>
+      <td>For recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bcl-2</td>
+      <td>PMID: 22464442</td>
+      <td>GI: M14745.1</td>
+      <td>For expression of CBcl-2 in cells</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bad</td>
+      <td>PMID: 22464442</td>
+      <td>GI: AB451254.1</td>
+      <td>For expression of VBad in cells</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Bcl-XL</td>
+      <td>PMID: 22464442</td>
+      <td>GI: NM_138578.3</td>
+      <td>For expression of CBcl-XL in cells</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bid</td>
+      <td>PMID: 16642033, PMID: 19062087</td>
+      <td>GI: NM_007544.4</td>
+      <td>For recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>BimL</td>
+      <td>this paper</td>
+      <td>GI: AAD26594.1</td>
+      <td>This lab, plasmid # 2187, for recombinant BimL purification</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>tBid</td>
+      <td>PMID: 22464442</td>
+      <td>GI: NM_007544.4</td>
+      <td>for expression of VtBid in cells</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>BimEL</td>
+      <td>PMID: 22464442</td>
+      <td>GI: XM_006498614.3</td>
+      <td>for expression of VBimEL in cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cell Carrier-384, Ultra</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: 6057300</td>
+      <td>for live cell imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Non-binding surface, 96-well plate, black with clear bottom</td>
+      <td>Corning</td>
+      <td>Cat. #: 3881</td>
+      <td>For recombinant protein and liposome assays critical to use non-binding plate</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Opera Phenix</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: HH14000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ISS-Alba</td>
+      <td>PMID: 25631031</td>
+      <td></td>
+      <td>Custom built by ISS for DWA lab</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>San Diego, California</td>
+      <td>Version 6</td>
+      <td>Scientific graphing program, used to perform statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID: 17936939</td>
+      <td>MBF - ImageJ for microscopy, Dr. Tony Collins (McMaster University)</td>
+      <td>FLIM-FRET analysis Macro, in this paper: https://github.com/DWALab/Liu_et_al_2018_eLife</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>PMID: 17269487</td>
+      <td></td>
+      <td>Colocalization analysis, in this paper: https://github.com/DWALab/Liu_et_al_2018_eLife</td>
+    </tr>
+    <tr>
+      <td>Transfected Construct</td>
+      <td>mVenus-pEGFP-C1</td>
+      <td>other</td>
+      <td>GI: KU341334.1</td>
+      <td>Dr. Ray Truant (McMaster University). Backbone EGFP-C1 (Clonetech)</td>
+    </tr>
+    <tr>
+      <td>Transfected Construct</td>
+      <td>mCerulean3-pEGFP-C1</td>
+      <td>PMID: 21479270</td>
+      <td></td>
+      <td>Dr. Mark A Rizzo (University of Maryland). Backbone EGFP-C1 (Clonetech)</td>
+    </tr>
+    <tr>
+      <td>Transfected Construct</td>
+      <td>pSPUTK</td>
+      <td>Stratagene Santa Clara CA</td>
+      <td>Cat. #: CB4278654</td>
+      <td>Cotransfected to reduce overexpression in live cells</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs and compounds for assays in live cells
 
 Plasmids encoding the mCerulean3 (mCer3), or Venus fluorescence proteins in place of the EGFP coding region in pEGFP-C1 (Clontech) were kind gifts from Mark A. Rizzo (University of Maryland) and Ray Truant (McMaster University) respectively. To generate plasmids encoding the fusion proteins the required coding regions were amplified by PCR and inserted into the plasmids encoding the appropriate fluorescence protein. All of the plasmids included coding sequences for a GGS linker sequence between the coding regions except for VBad (linker sequence, SGLRSRGG) and BimELV (linker sequence, SRGGGPVAT). All the swapping and site-directed mutants were obtained through PCR-based mutagenesis using oligonucleotides from Integrated DNA Technologies and Phusion DNA polymerase from New England Biolabs. ABT-263 was purchased from Selleckchem, A-1155463,A-1331852 and ABT-199 were from Chemietek.
 
-## Cells, culture conditions and transfections
+### Cells, culture conditions and transfections
 
 The MCF-7 human breast cancer cell line was cultured in Dulbecco's Modified Eagle Medium (DMEM, ThermoFisher) supplemented with 10% of fetal bovine serum (HyClone) and non-essential amino acids (NEAA, ThermoFisher). Transfections were performed using Fugene HD reagent according to the manufacturer’s standard protocol (Promega). MCF-7 cell clones stably transfected with vectors encoding mCer3, CBcl-XL or CBcl-2 were selected in DMEM supplemented with 10% fetal bovine serum, non-essential amino acids (NEAA, ThermoFisher) and 500 μg/ml neomycin. After 3 weeks colonies were isolated and cultured as above. The baby mouse kidney (BMK) cell line in which the genes for Bax and Bak have been deleted (BMK-DKO) was a kind gift from the originator Eileen White and was cultured as above. The two originating cell lines used in the studies reported here (MCF-7 and Baby Mouse Kidney cells with both Bax and Bak knocked out) and all stably transfected clones were shown to be free of mycoplasma using a PCR based test. The MCF-7 cells were authenticated by the hospital for Sick Children facility in Toronto. Clones that stably express mCer3 or CBcl-XL were selected and cultured with 5 μg/mL Blasticidin S. For microscopy, cells were seeded in 384-well imaging plates (PerkinElmer) and cultured as above for 24 hr prior to transient transfection. Cells treated with ABT-263, A-1155463 or A-1331852 were incubated at 37°C for 18–24 hr in a fresh media containing 20 μM drug before imaging unless indicated otherwise.
 
-## Image based cell death assay
+### Image based cell death assay
 
 MCF-7 cells grown in a 384 well plate (Cell Carrier Ultra) were transfected, using the TransIT-X2(Mirus) reagent and manufacturer’s protocol, with plasmids encoding Venus protein alone, or Venus protein fused to BimEL (VBimEL), tBid (VtBid) or Bad (VBad). Media was changed 3 hr later, and cells were incubated 24 hr. Prior to imaging, cells were stained with 10 nM tetramethylrhodamine (TMRE, to stain mitochondria transmembrane potential, Life Technologies) and 5 µM DRAQ 5 (to stain nucleic acids, Biostatus, UK) and incubated for at least 30 mins at 37°C, 5% CO2. Micrographs of the cells were acquired on an OPERA Phenix (PerkinElmer), using the 20x water immersion lens (NA 1.0). Data were acquired within 2 hr after staining and during imaging the cells were maintained at 37°C, 5% CO2. Four channels were collected simultaneously: mCer3 (Ex 425 nm, Em 435–480 nm), Venus (Ex 488 nm, Em 500–550 nm), TMRE (Ex 561, Em 570–630), DRAQ 5 (Ex 640 nm, Em 650–760 nm). Acquisition was automated and acquisition settings were identical between wells and for each independent replicate (n = 3). Acquisition settings were different for Figures 3 and 5 therefore, the X-axis is not comparable. For the data in Figure 5 the cloning vector, pSPUTK (Stratagene Santa Clara CA) was used to dilute the plasmid encoding the VBH3 proteins, to reduce overexpression of Venus-tagged protein while ensuring consistent transfection efficiencies.
 
@@ -160,11 +958,11 @@ To confirm that the linear classifier reported data similar to manual analysis a
 
 Cell death was also measured as a function of the amount of the transiently expressed protein, such as VBimEL, in cells. For this analysis individual cells were classified as alive or dead and then results were binned by Venus intensity. For these experiments the Venus intensity serves as an estimate of the amount of the BH3 protein produced in the cell. The range of intensities within each bin was kept consistent for each transfectant, for all three independent replicates. Mean % Dead and standard error was plotted for each intensity bin.
 
-## Fluorescence lifetime measurements
+### Fluorescence lifetime measurements
 
 Steady-state fluorescence images and fluorescence lifetime images were both acquired using a custom-built Alba confocal microscope from ISS (Champagne, Illinois), which measures fluorescence lifetime by time correlated single photon counting (TCSPC). Channels of mCer3 and Venus were acquired simultaneously using 445 nm and 514 nm pulse interleaved excitation (PIE) through a 442/512/561 multiband filter and emission split by a 520nm-longpass filter was collected through 459–499 nm and 528–555 nm bandpass filters, respectively. All images were acquired as 256 pixels x 256 pixels at 25°C using a 60 × 1.3 NA PlanApo water immersion objective and laser powers set to minimize photobleaching and photon pileup during acquisition with 0.1 ms per pixel dwell time and 5-frame repeat. TCSPC-data were processed using VistaVision software (ISS) and the average lifetime for each pixel was obtained by fitting FLIM pixels binned to ensure a total photon count >1000 for each set of binned pixels analyzed. The lifetime and photon count for each pixel in both channels were exported for additional analysis using ImageJ.
 
-## Measuring protein:protein interactions in cells by FLIM-FRET
+### Measuring protein:protein interactions in cells by FLIM-FRET
 
 For Bcl-2 family proteins the problem of measuring protein:protein interactions in live cells (Herce et al., 2013) is particularly acute as the proteins often function differently at membranes therefore, assays using cell extracts do not capture either the correct or the complete set of activities (Lovell et al., 2008). Moreover, solubilizing membranes requires detergents artificially increase and decrease Bcl-2 family protein:protein interactions (Lovell et al., 2008). The use of purified proteins and cell free assays has provided much useful information, however, due to the difficulty of purifying full-length Bcl-2 family proteins, many assays in vitro are based on truncated proteins or peptides and the environment does not well represent that of an intact cell.
 
@@ -178,13 +976,13 @@ To limit the effect of compounds or mutagenesis potentially changing both the bi
 
 To generate binding curves, ROIs containing mitochondria were selected, and the corresponding intensities in both mCer3 and Venus channels and the average lifetime for mCer3 were extracted from the original TCSPC data using a customized ImageJ script. ROIs were automatically discarded from the analysis if the CBclXL signal was too low and therefore noisy, or close to saturated, or the Venus signal was close to saturated. The ratio of Venus to mCer3 was calculated using the intensities of each channel. FLIM-FRET efficiency (E%) was calculated for each ROI as: E%=(1-τi/τ0)×100%, where τi is the mean lifetime for that ROI and τ0 is the average lifetime for mCer3 for all ROIs not expressing detectable Venus. FLIM-FRET efficiency was then distributed into bins of the same size according to Venus:mCer3 intensity ratio (bin size 0.1 for ratios lower than 0.5, 0.25 for ratios between 0.5 and 1.25, 0.5 for ratios higher than 1.25) and plotted (±se) against Venus:mCer3 ratio. The binding curves were fitted using GraphPad Prism version 5.0d for Macintosh (GraphPad Software, San Diego California USA, www.graphpad.com) with the function: E% = Emax × (IVenus÷ImCerulean3)h/[Kdh+(IVenus÷ImCerulean3)h]. Emax is the maximum FLIM-FRET efficiency corresponding to saturation of donor binding sites by an acceptor; ImCerulean3 and IVenus are intensities of mCer3 and Venus, respectively; Kd is the relative equilibrium dissociation constant; h is the Hill slope.
 
-## Cellular localization analysis
+### Cellular localization analysis
 
 BMK-DKO cells transiently expressing Venus-tagged constructs of interest were stained with 5 µM DRAQ 5 (BioStatus) to stain nucleic acids, and 500 nM MitoTracker-Red to stain mitochondria, (Life Technologies) in DMEM at 37°C and 5% CO2, 30 min. One positive control well was additionally stained with 500 nM MitoTracker-Green (to stain mitochondria, Life Technologies). Cells were incubated at 37°C, 5% CO2 during sample imaging. For each well, 60 images at 256 × 256 pixels resolution were recorded using a 40x water immersion (NA 1.1) lens on an Opera Phenix confocal microscope. DRAQ 5 (Ex 640 nm, Em 650–760 nm), Venus (Ex 488 nm, Em 500–550 nm) and MitoTracker-Red (Ex 561 nm Em 570–630 nm) channels were acquired sequentially, automatically switching between channels at each field of view.
 
 An analysis pipeline was created in Cell Profiler 2.2.0. In this pipeline, the DRAQ five channel was used to identify nuclei, and total cell area with smoothing to ensure the entire cell is selected as one region. Cells that extend to the border of the image were rejected from, the analysis. The cytoplasm for each cell was identified as an object (Cytoplasm = ‘Total cell area’ – ‘nuclear area’). Objects suitable for analysis were identified by mean Venus intensity to identify cells expressing appropriate levels of the Venus-tagged proteins of interest. A median Venus intensity (low threshold) was used to discard any cells that passed the mean Venus filter due to improper segmentation (ie. overlap between an untransfected cell and a bright transfected cell). Objects were further selected by mean MitoTracker-Red intensity (high and low threshold), to ensure appropriate staining. A size filter was used to remove small dead cells or debris and any abnormally large (possibly improperly segmented) cells. Background was subtracted for each image and a Pearson’s correlation coefficient (Pearson’s r) between Venus and MitoTracker-Red signals was calculated for all remaining objects. In each replicate, a minimum of 20 cells were identified per protein of interest and mean Pearson’s r was calculated. In sum, at least 150 cells were analyzed per sample. The average and standard error of the mean Pearson’s r values determined for the three replicates was plotted using GraphPad Prism.
 
-## Recombinant protein purification and labeling
+### Recombinant protein purification and labeling
 
 Full length and single cysteine mutants of Bcl-XL and tBid were purified as described previously (Kale et al., 2014). For Bim, the cDNA encoding full-length wild-type murine BimL was introduced into pBluescript II KS(+) vector (Stratagene, Santa Clara CA). Sequences encoding a polyhistidine tag followed by a TEV protease recognition site (MHHHHHHGGSGGTGGSENLYFQGT) were added to create an in-frame fusion to the N-terminus of BimL. BimL-dCTS was constructed by introducing a stop codon (TAA) after position P121 to delete the entire CTS. Single cysteine mutants were generated by PCR-based mutagenesis using oligonucleotides from Integrated DNA Technologies and Phusion DNA polymerase from New England Biolabs.
 
@@ -192,12 +990,12 @@ The recombinant proteins were expressed in Arabinose Induced (AI) Escherichia co
 
 Single cysteine mutants of Bcl-XL and tBid were labeled with the indicated maleimide-linked fluorescent dyes as described previously (Kale et al., 2014; Lovell et al., 2008). Single cysteine mutants of BimL were labeled with the same protocol as tBid with the exception that the labeling buffer also contained 4M urea.
 
-## FRET measurements of interactions between recombinant proteins
+### FRET measurements of interactions between recombinant proteins
 
 Single cysteine mutants of BimL (41C) and tBid (126C) were purified and labeled with Alexa 568-maleimide. A single cysteine mutant of Bcl-XL (152C) was purified and labeled with Alexa 647-maleimide. Alexa568 labeled BimL or tBid was incubated with either Alexa647-labeled or as a control unlabeled Bcl-XL along with the indicated concentrations of ABT-263. The intensity of Alexa568 fluorescence with unlabeled or Alexa647-labeled Bcl-XL was measured as Funlabeled or Flabeled respectively. FRET, indicating protein-protein interaction, was quantified using the decrease of Alexa568 fluorescence when BimL or tBid bound to Alexa647-labeled Bcl-XL compared to unlabeled Bcl-XL. FRET efficiency was calculated as: FRET efficiency (%)= (1-Flabeled/Funlabeled)*100% as described previously for cBid-Bcl-XL. Binding was measured after incubation at 37°C for 1 hr.
 
 To compare the inhibitory effect of ABT-263 on different BimL mutants or tBid binding to Bcl-XL, ABT-263 was titrated into a solution containing 10 nM BH3 protein (BimL or tBid) and 40 nM Bcl-XL. At these concentrations BH3 protein binding to Bcl-XL had saturated (BH3 protein bound = 100%) and represents the maximum FRET efficiency (Fmax). Inhibition of BH3 protein binding to Bcl-XL by ABT-263 was measured based on the decrease of FRET (BH3 protein bound = F/Fmax*100%). Data were fitted to a standard inhibitor dose response equation with a Hill slope using GraphPad Prism (V6.02). For BH3 proteins in which binding was poorly inhibited (BimL (Figure 2E and Figure 7D–E), BH3 protein bound was assumed to be 0% at an infinite concentration of ABT-263. Loss of protein on the cuvettes and other surfaces at low concentrations required use of protein at concentrations higher than the Kds of binding. For this reason the dissociation constant is not independent of protein concentration and the data in Figure 2E, Figure 7D–E report relative displacements comparable between figures rather than absolute affinity.
 
-## NBD fluorescence assay and iodide quenching
+### NBD fluorescence assay and iodide quenching
 
 The single cysteine mutants of Bim were purified and labeled with NBD (N,N0-dimethyl-N-(Iodoacetyl)-N0-(7-nitrobenz-2-oxa-1,3-diazol-4-yl) ethylenediamine; Molecular Probes, Cat. #: D-2004). The NBD fluorescence assay and iodide quenching of NBD-labeled Bim mutants was performed as described previously for Bax (Kale et al., 2014), with the exception that the assays were performed in 100 ul volume in low protein binding 96-well plates and fluorescence was measured using a plate reader (Tecan M1000). In the experiments reported here, 20 nM NBD-labeled Bim alone or 20 nM Bim plus 50 nM of Bcl-XL were incubated with 0.2 mg/mL (final lipid concentration) of liposomes. For the ‘In solution’ control, the protein(s) were incubated with an equal volume of assay buffer instead of liposomes.

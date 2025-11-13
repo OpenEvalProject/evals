@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.37105.001 Sleep is a dynamic process in most animals, involving distinct stages that probably perform multiple functions for the brain. Before sleep functions can be initiated, it is likely that behavioral responsiveness to the outside world needs to be reduced, even while the animal is still awake. Recent work in Drosophila has uncovered a sleep switch in the dorsal fan-shaped body (dFB) of the fly’s central brain, but it is not known whether these sleep-promoting neurons also govern the acute need to ignore salient stimuli in the environment during sleep transitions. We found that optogenetic activation of the sleep switch suppressed behavioral responsiveness to mechanical stimuli, even in awake flies, indicating a broader role for these neurons in regulating arousal. The dFB-mediated suppression mechanism and its associated neural correlates requires innexin6 expression, suggesting that the acute need to reduce sensory perception when flies fall asleep is mediated in part by electrical synapses.
+Sleep is a dynamic process in most animals, involving distinct stages that probably perform multiple functions for the brain. Before sleep functions can be initiated, it is likely that behavioral responsiveness to the outside world needs to be reduced, even while the animal is still awake. Recent work in Drosophila has uncovered a sleep switch in the dorsal fan-shaped body (dFB) of the fly’s central brain, but it is not known whether these sleep-promoting neurons also govern the acute need to ignore salient stimuli in the environment during sleep transitions. We found that optogenetic activation of the sleep switch suppressed behavioral responsiveness to mechanical stimuli, even in awake flies, indicating a broader role for these neurons in regulating arousal. The dFB-mediated suppression mechanism and its associated neural correlates requires innexin6 expression, suggesting that the acute need to reduce sensory perception when flies fall asleep is mediated in part by electrical synapses.
 
 ## Introduction
 
@@ -37,45 +37,115 @@ In addition to neurochemical signaling from sleep centers such as the VLPO, mamm
 
 ## Results
 
-## Correlating sleep duration and behavioral responsiveness
+### Correlating sleep duration and behavioral responsiveness
 
 Flies were filmed in the Drosophila ARousal Tracking (DART) platform (Figure 1A) (Faville et al., 2015) to monitor sleep duration and behavioral responsiveness simultaneously (Figure 1B). Sleep duration is measured by well-established inactivity criteria based on >5 min inactivity (Figure 1B, upper panel; Figure 1C) (Shaw et al., 2000), whereas behavioral responsiveness can be measured by tracking how flies respond to a mechanical stimulus, during both sleep or while they are awake (van Alphen et al., 2013). Following a vibration stimulus, responding flies typically increase their locomotion (Figure 1B, lower panel). A stimulus that is delivered hourly provides an estimate of behavioral responsiveness throughout the circadian cycle (Figure 1D), and average responses (mean peak responsiveness, see 'Materials and methods') are typically stronger during the day than during the night (Figure 1E, left and middle panel). Responsiveness metrics therefore complement sleep duration measures (Figure 1E, right): animals are by definition less responsive when they are asleep (Campbell and Tobler, 1984).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig1-v2.jpg)
+
+**Figure 1.:** (A) Flies in glass tubes were filmed from above and DART was used to track activity and to test behavioral responsiveness using a mechanical vibration. (B) Sleep duration was measured using 5 min inactivity criteria (top panel). Behavioral responsiveness was tested by quantifying the change in fly activity following a vibration stimulus. Following the stimulus (orange line), flies increase their locomotion speed as shown by their displacement in the tube (bottom panel). (C) Mean sleep duration (min/hr) is tracked over a circadian cycle. (D) Fly activity (speed, mm/sec) is plotted for a 24-hr day/night (white and grey, respectively) cycle during which a five-pulse 0.2 s 2.4 g vibration is delivered once per hour. Spikes in activity show timing of the stimuli, and the orange lines highlight three examples. (E) The mean response (speed, mm/s) for all stimuli during the day or night (left panel, black line). Shown in grey is a fitted curve for this average response (see 'Materials and methods'), the peak of which is a measure of the magnitude of response to the stimulus (middle panel). Responsiveness is greater during the day and lower during the night, whereas sleep duration is decreased during the day and increased at night (right panel). (F) Correlation between the peak response speed (mm/s) and sleep duration (min/hr) for wildtype (w2202) flies (n = 225) during the day (yellow R = 0.012, p=0.84) and the night (grey R = −0.372, p<0.0001). (G) R23E10-Gal4 neurons were chronically activated by expressing NaChBac, a bacterial sodium channel. Scale bar = 50 μm, the genotype in this image is R23E10-Gal4/+;UAS-2eGFP/+. (H) Correlation between responsiveness and sleep duration following activation of the dFB (R23E10-Gal4/UAS-NaChBac, n = 51) during daytimes (yellow R = −0.410, p<0.001) and nighttimes (grey R = −0.554, p<0.0001). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left, correlation between the peak response speed (mm/s) and sleep duration (min/hr) for R23E10-Gal4/+control flies (n = 49) during the day (yellow R=- 0.082, p=0.57) and night (gray R = −0.371, p<0.01). Right, correlation between the peak response speed and sleep duration for UAS-NaChBac/+control flies (n = 250) during the day (yellow R = −0.073, p=0.24) and night (gray R = −0.321 P<0.0001). (B) C5-Gal4/UAS-NaChBac (n = 63, day p<0.0001, night p=0.435) and C5-Gal4/+control (n = 68, day p=0.921, night p<0.001). (C) 104Y-Gal4/UAS-NaChBac (n = 51, day p=0.267, night p=0.055) and 104Y-Gal4/+control (n = 51, day p<0.05 night p=0.157).
 
 Sleep duration and behavioral responsiveness should be negatively correlated. However, reduced behavioral responsiveness is also a feature of wakefulness, and animals that sleep more are not necessarily less responsive in general, even while awake. To better understand the relationship between these distinct arousal measures, we tracked average sleep duration and average responsiveness in 250 inbred wild-type flies (w2202 [Faville et al., 2015]) over multiple days and nights. Locomotion immediately following the hourly vibrations (in awake or sleeping flies) contributed to the responsiveness metrics, and sleep duration was averaged from unstimulated epochs in the intervening hours. In previous work, we have shown that such hourly probing is not sleep depriving in wildtype flies (van Alphen et al., 2013). We found a surprisingly large amount of individual variability for these responsiveness and sleep metrics (Figure 1F). Sleep duration and behavioral responsiveness were only negatively correlated at night, but not during the day in the wildtype flies (Figure 1F). While this could reflect a qualitative difference between daytime sleep and nighttime sleep (Faville et al., 2015), or might indicate that sleep bouts are generally longer at night (Shaw et al., 2000), this also suggests that sleep duration and responsiveness might be separately controlled, as has been proposed by the authors of a previous study (Lebestky et al., 2009). Sleep-promoting circuits might also regulate responsiveness to external stimuli.
 
 The dFB (Figure 1G) has been identified as a ‘sleep switch’ in the fly brain (Donlea et al., 2011, 2014; Pimentel et al., 2016), but its role in controlling behavioral responsiveness has not been well studied. dFB activation is associated with increased arousal thresholds (Donlea et al., 2011, 2014; Pimentel et al., 2016), but it is unclear whether this is a direct feature of increased dFB activity or a consequence of other processes that result from increased dFB activity. We first examined whether sleep duration and behavioral responsiveness might be simultaneously modulated by these neurons. Previous work has focussed on three Gal4 drivers that induce dFB-driven sleep in flies: 104y-Gal4, C5-Gal4, and R23E10-Gal4 (Donlea et al., 2011, 2014; Pimentel et al., 2016). We activated these sleep-promoting circuits by expressing a bacterial sodium channel, NaChBac (Nitabach et al., 2006). Chronic activation of the R23E10 neurons produced a strong negative correlation between sleep duration and behavioral responsiveness, even for daytime sleep (Figure 1H): flies that slept more tended to respond less to stimuli, day or night. Genetic controls showed only a night-time correlation (Figure 1—figure supplement 1A), as seen in the wildtype background strain (Figure 1F). In contrast to data from R23E10, results with C5 and 104y were less clear: C5 displayed a daytime correlation but not the nighttime correlation, and 104y did not display a daytime correlation (Figure 1—figure supplement 1B,C). This suggests that R23E10, which is a cleaner dFB driver (Jenett et al., 2012), may be more effective as a sleep switch. The R23E10 result also suggests that the dFB might regulate behavioral responsiveness as well as sleep duration, although it is difficult to separate these arousal measures in chronic manipulations.
 
-## Optogenetic activation of the sleep switch decreases behavioral responsiveness
+### Optogenetic activation of the sleep switch decreases behavioral responsiveness
 
 Falling asleep is an acute event that happens within seconds in most animals (Campbell and Tobler, 1984), and even flies can be significantly less responsive after only one minute of spontaneous quiescence (van Alphen et al., 2013; Faville et al., 2015). Optogenetic tools in Drosophila provide one way to induce sleep on demand experimentally. We used the R23E10-Gal4 driver to express CsChrimson, a red-light shifted channelrhodopsin (Klapoetke et al., 2014), in order to activate dFB neurons transiently in fly populations monitored by DART. As sleep is necessarily measured over prolonged time periods, we first examined whether prolonged optogenetic activation of the dFB was associated with decreased behavioral responsiveness. We therefore measured sleep duration and behavioral responsiveness in R23E10-Gal4 > UAS CsChrimson flies before, during, and after 12 hr of daytime dFB activation (Figure 2A,C). All-trans retinal (ATR) was fed to flies to enable channelrhodopsin function, and genetically identical but non-ATR-fed flies were used as controls (Figure 2A, black). Flies that were fed ATR significantly increased their sleep duration in response to dFB activation with prolonged red light exposure (Figure 2A,B, blue). Behavioral responsiveness was robust in these flies at baseline (Figure 2C, left panel), but optogenetic activation of the dFB significantly decreased responsiveness to the vibration stimulus (Figure 2C, right panel; Figure 2D, left panel). Responsiveness was not, however, abolished by activation of the dFB, and even appeared to recover somewhat after several hours of red-light exposure (Figure 2C, right panel).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Effects on sleep and responsiveness following the activation of R23E10 neurons (blue, UAS-CsChrimson/+;R23E10-Gal4/+ with ATR, n = 102) compared to those in control flies (black, no ATR feeding, n = 118). Error bars and shading indicate standard errors of the mean (SEMs) and asterisks indicate significance (****p<0.0001, ns = not significant, t-tests). (A) Mean sleep duration (min/hr) during the period 24 hr before red light activation (left), then during the next 24 hr when red light is delivered for 12 hr during the day (pink shading, right). (B) Comparison of the 12-hr day period without red light (baseline) to the period of red-light activation in terms of sleep duration and bout length. (C) Mean activity (mm/s) for R23E10 activation for the time periods in (A). Spikes in activity show timing of hourly vibration stimuli. (D) Comparison between the 12-hr day period without red light (baseline) and the period of red-light activation for peak responsiveness and sleep intensity. (E) Left, average stimulus response for UAS-CsChrimson/+;R23E10-Gal4/+ with ATR (blue, n = 50) compared to control flies (black, no ATR feeding, n = 48) during red-light activation (Figure 2A–D red shading) in flies that moved in the minute prior to the stimulus (i.e. awake flies). Right, summary histogram (average ± SEM). **p<0.01, t-test. (F) Example activity trace of flies responding to stimuli 15 min apart (gray dashed lines): 1 min CsChrimson activation (red shading) prior to the stimulus is alternated with trials without red light (left panel). One minute of dFB activation is sufficient to decrease responsiveness (right panel, UAS-CsChrimson/+;R23E10-Gal4/+ with ATR n = 83, control n = 80, *p<0.05, t-test). See also Figure 2—figure supplements 1, 2 and 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic showing fly activity prior to and in response to a mechanical stimulus (orange dashed line). Flies can be inactive (grey shading) or active (green shading) prior to stimulus delivery. Flies that are inactive for longer than 5 min are classified as asleep, and the proportion of sleeping flies that respond to the stimulus (green shading) compared to those not responding (orange shading) is a measure of sleep intensity. (B) Sleep intensity for w2202 flies during the day (yellow) and night (grey) for inactivity bins of 5 min (n = 250, error bars are SEM). (C) During the night, flies are less likely to respond to a stimulus than they are during the day and are therefore sleeping more intensely. (D) Sleep intensity during red-light activation of dFB neurons in UAS-CsChrimson/+;R23E10-Gal4/+flies fed ATR (blue, n = 102) compared to non-ATR-fed controls (black, n = 118). ****p<0.0001, ***p<0.001, t-test corrected for multiple comparisons (using the Bonferroni correction).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mean speed of all flies for the minute prior to stimulation during acute CsChrimson activation. n.s. represents not significantly different in a t-test. (B) Average stimulus response for UAS-CsChrimson/+;R23E10-Gal4/+with ATR (blue, n = 83) compared to control flies (black, no ATR feeding, n = 80) in flies that moved in the minute prior to the stimulus (i.e. awake flies), with the red light off. (C) Average stimulus response for the same flies as those in (B) that moved in the minute prior to the stimulus (i.e. awake flies), with the red light on. (D) Summary histogram of mean peak responsiveness data in (B) and (C) (average ± SEM). *p<0.05, t-test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A)-(D) Effects on sleep and responsiveness following 1 Hz activation of R23E10 neurons (blue, UAS-CsChrimson/+;R23E10-Gal4/+ with ATR, n = 115) compared to control flies (black, no ATR feeding, n = 115). Error bars and shading indicate SEM and asterisks indicate significance (*p<0.05, ****p<0.0001, t-tests). (A) Mean sleep duration (min/hr) during the 24 hr before red-light activation, then during the next 24 hr when red light is delivered for 12 hr during the day (red shading). (B) Comparison of the 12-hr day period without red light (baseline) to the period of red-light activation in terms of sleep duration and bout length. (C) Mean activity (mm/s) for R23E10 activation for the same time periods as in (C). Spikes in activity show the timing of hourly vibration stimuli. (D) Comparison between the 12-hr day period without red light (baseline) and the period of red-light activation in terms of peak responsiveness and sleep intensity. Error bars and shading indicate SEM and asterisks indicate significance (**p<0.01, ****p<0.0001, t-tests).
 
 So far, our behavioral responsiveness metric does not differentiate between waking or sleep in flies. When responsiveness is analyzed only for sleeping flies, expressed relative to the proportion of immobile flies that respond (at any level) to the stimulus, this provides a measure of sleep intensity (Figure 2—figure supplement 1A). Wildtype flies sleep more deeply at night than during the day (Figure 2—figure supplement 1B,C), and sleep intensity is not necessarily correlated to sleep duration (van Alphen et al., 2013; Faville et al., 2015). Yet, as might be expected, optogenetic activation of the ‘sleep switch’ increases sleep intensity (Figure 2D, right panel; Figure 2—figure supplement 1D) as well as sleep duration. However, dFB-activated flies are not always asleep, they are often awake. We therefore next investigated whether responsiveness was affected in awake (i.e. walking) flies only (see 'Materials and methods' and Figure 2—figure supplement 1A for explanations on how wakeful responsiveness was determined). We were surprised to find that dFB activation decreases behavioral responsiveness in awake flies as well as in sleeping flies (Figure 2E, right panel). Thus, decreased behavioral responsiveness appears to be a feature of prolonged dFB activation, even when sleep reverts to wakefulness. Decreased responsiveness was not due to sluggish locomotion in awake animals: the walking speed of awake dFB-activated flies was not different from that of controls immediately preceding the vibration stimulus (Figure 2E, left panel, green shading). dFB activation therefore reduces behavioral responsiveness in awake as well as in sleeping flies.
 
 To confirm that this loss of behavioral responsiveness in awake flies is an acute effect of dFB activation and not just an indirect effect of prolonged sleep induction, we repeated these experiments with shorter time periods (5 min) of dFB activation. We probed for responsiveness after only 1 min of red-light exposure. In doing so, we found that behavioral responsiveness was significantly reduced after 1 min of red light, and that responsiveness was rapidly restored after the red light was turned off (Figure 2F), that is we observed no evidence of sleep inertia following 5 min of dFB activation. To further confirm that this effect was distinct from sleep, we also analyzed only flies that were walking in the minute preceding the vibration stimulus, and observed the same significant effect (Figure 2—figure supplement 2). Together with our prolonged activation experiments, this suggests a dissociation between dFB’s role in sleep promotion and behavioral responsiveness. While more prolonged dFB activation certainly increased sleep duration and sleep intensity (Figure 2B,D; Figure 2—figure supplement 1D), behavioral responsiveness remains suppressed when dFB-activated flies are awake and can be acutely suppressed in walking flies. As a constant light activation might be an unnatural stimulation regime for the dFB neurons, we repeated our experiments with a sparser activation stimulus, pulsed 5 ms red light (1 Hz), and found that behavioral responsiveness was similarly suppressed (Figure 2—figure supplement 3). This shows that different stimulation regimes produce a similar effect and confirms that activation of the sleep switch suppresses behavioral responsiveness.
 
-## Optogenetic activation of the sleep switch causes a rapid and reversible increase in membrane potential of dFB neurons
+### Optogenetic activation of the sleep switch causes a rapid and reversible increase in membrane potential of dFB neurons
 
 To better understand the mechanisms underlying these acute effects, we investigated the electrophysiological properties of the dFB neurons that contributed to the observed change in behavior. We used whole-cell patch-clamp electrophysiology in current clamp mode to record the membrane potential of the dFB cell bodies in behaving flies (Figure 3A) (see 'Materials and methods'). dFB neurons were genetically labeled with green fluorescent protein (GFP) to guide recordings from the cell soma visually (Figure 3B, top). As shown previously (Donlea et al., 2014; Pimentel et al., 2016), the spiking activity of dFB soma responded to positive current steps by increasing their firing rate (Figure 3B, bottom left). However, not all neurons shared the same spontaneous firing properties, with ~20% of the recorded cells identified as non-spiking (even following current injection), whereas the remaining cells that did spike were observed to exhibit various combinations of single spikes and burst spiking patterns (Figure 3B, bottom right).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig3-v2.jpg)
+
+**Figure 3.:** (A) Setup for recording in vivo adult Drosophila electrophysiology with whole-cell patch clamp (orange). (B) dFB neuron schematic showing whole-cell recordings targeted to R23E10-Gal4 cell bodies. Injecting current in a stepwise manner causes firing in these neurons (bottom left panel), which are heterogeneous in their endogenous firing patterns (bottom right panel). Scale bars indicate 10 mV and 100 ms. (C) Example traces (left) of a CsChrimson-expressing (UAS-CsChrimson/+;R23E10-Gal4/+ with ATR) spiking cell (top) and non-spiking cell (middle), and of a non-CsChrimson-expressing (R23E10-Gal4/+ with ATR) cell (bottom) when exposed to constant red light (red shading). Superimposed traces of the corresponding types from multiple cell recordings (right panel, top to bottom: n = 10, n = 6, n = 6). Solid red lines indicate mean values. (D) Boxplots show median membrane potentials for CsChrimson-expressing cells (blue) and non-CsChrimson expressing cells (gray, n = 6) before, during and after constant light stimulation (***p<0.001, Friedman test with Dunn’s multiple comparisons to pre-stimulus condition). See also Figure 3—figure supplements 1 and 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Example traces (left) of a CsChrimson-expressing spiking cell (top), a CsChrimson-expressing non-spiking cell (middle), and a non-CsChrimson-expressing cell (bottom) when exposed to 1 Hz light pulse with 5 ms exposure per pulse (orange shading). Superimposed traces from all 120 trials for the corresponding cells shown on the left (right). Solid yellow lines indicate mean values. (B) Boxplots show median membrane potential for CsChrimson-expressing cells (cyan, n = 13) and for non-CsChrimson-expressing cells (gray, n = 4) before, during, and after 1 Hz light stimulation (****p<0.0001, Friedman test with Dunn’s multiple comparisons to pre-stimulus condition).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Top panels show combined traces (yellow lines indicate mean values) for all 120 pulses for all CsChrimson-expressing R23E10 neurons that showed the presence of evoked spikes (red arrows) in response to the light stimulus pulses at 1 Hz with 5 ms exposure time each pulse, and the absence of any evoked spikes for the wildtype controls (right, 500 ms exposure for R23E10-Gal4 > UAS CsChrimson with no ATR), with spiking events presented as raster plots (middle), and corresponding peristimulus time histograms (bottom).
+
 Despite the heterogeneity in the firing pattern of the dFB neurons, CsChrimson-expressing cells all responded to a red-light stimulus in the same manner, by rapidly increasing their membrane potential upon activation, followed by a gradual return to its resting membrane state after the light was turned off (Figure 3C,D). Induced spike bursts occurred 18.75 ± 3.07 ms apart in a subset of cells. Exposure to 1 Hz light pulses (5 ms each) instead of continuous exposure produced corresponding action potentials in some spiking cells (Figure 3—figure supplement 1A). On average, 1 Hz pulsed activation also increased the membrane potential in all CsChrimson-expressing dFB cells (Figure 3—figure supplement 1B). The robustness of this effect, despite the heterogeneity in the spontaneous firing pattern across cells and the different stimulus regimes, suggests that the acute dFB activation effects on behavioral responsiveness could be associated with increased membrane potential rather than with any specific increased spiking activity, although it remains possible that the subset of spiking cells is key here. Notably, the post-stimulation membrane potential (recorded only 1 min after the red light was turned off) was not significantly different from baseline (Figure 3D; Figure 3—figure supplement 1B), indicating that the acute effect on the membrane potential was not sustained for long after the stimulation. Red light had no effect on spiking or the membrane potential in R23E10-Gal4/+ animals that had been fed ATR but that lacked channelrhodopsin (Figure 3D, Figure 3—figure supplement 1B, gray boxplots), or in control R23E10-Gal4/UAS-CsChrimson animals that had not been fed ATR (Figure 3—figure supplement 2). In a subset of recordings, 1 Hz light pulses reliably evoked secondary and even tertiary spikes between 100 and 500 ms after the first evoked spike (Figure 3—figure supplement 2), suggesting a reverberation in the circuit.
 
-## Gap-junction localization in the dFB
+### Gap-junction localization in the dFB
 
 An increased input resistance and membrane time constant in dFB cells has been shown to be associated with increased sleep pressure (Donlea et al., 2014), so our optogenetic results are consistent with the idea that these cells form part of a sleep homeostat that is regulated by changing membrane potential levels (Pimentel et al., 2016). Recent work shows that output from the dFB cells regulates sleep duration by inhibiting a number of other systems in the central brain (Donlea et al., 2018; Liu et al., 2016b). These communication channels are probably chemical in nature, but it is not clear whether behavioral responsiveness is also controlled through these downstream synaptic circuits. We therefore next acutely manipulated synaptic release from the dFB. Interestingly, transiently increasing synaptic activity in dFB neurons (measured using temperature-sensitive syntaxin3-69 [Lagow et al., 2007; Kottler et al., 2013]) had no significant effect on behavioral responsiveness, or on sleep (Figure 4—figure supplement 1A). Transiently decreasing synaptic activity (by using the temperature-sensitive shibire [Kitamoto, 2001]) in the dFB decreased responsiveness, but equally so in the genetic controls (Figure 4—figure supplement 1B). A lack of clear effects using these opposing synaptic manipulations suggests that (fast) chemical neurotransmission might not be a relevant mechanism employed by these neurons to control behavior acutely, or at least that these acute synaptic manipulations do not affect our behavioral readouts. This prompted us to explore whether electrical synapses might be involved instead. A previous study has found expression of the gap junction gene, inx6, in the fan-shaped body (Wu et al., 2011), suggesting that these neurons might communicate electrically with other neurons potentially to regulate behavioral responsiveness.
 
 We used an antibody for the INX6 protein to first visualize its location in the fly brain. Expression was seen most strongly in a dorsal layer of the fan-shaped body and in large cells in the pars intercerebralis (PI) (Figure 4A, top and middle panels, Figure 4—figure supplement 2A). Co-labeling with GFP driven by R23E10-Gal4 revealed a significant overlap in the relevant dFB neurons (Figure 4B, bottom panel; a co-localization of 47.5% was found, see 'Materials and methods'). However, we did not find any evidence of co-localization in the dFB cell soma (Figure 4—figure supplement 2B). Dye-fill experiments confirmed that the dFB neurons are coupled to other cells via gap junctions (Figure 4—figure supplement 2C; Video 1), although the extent of this electrically coupled network remains unclear as only the large PI cells above the dFB revealed any reliable dye coupling in our experiments.
 
-## Gap junctions in the dFB regulate both sleep duration and behavioral responsiveness
+![Figure 4.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig4-v2.jpg)
+
+**Figure 4.:** (A) INX6 antibody staining (red) in wildtype Canton-S flies at 20x (top) and 60x (middle). White arrow indicates the location of the dFB and white dashes outline it. Staining using the secondary antibody alone (bottom, 20x) shows no detectable reactivity in the dFB. Scale bars = 50 μm. (B) INX6 antibody staining (red, middle) with GFP antibody staining in flies expressing GFP in R23E10 neurons (UAS-GFP/+;R23E10-Gal4/+, green, top). Overlap between these regions (bottom) indicates the presence of INX6 in these neurons (47.5% co-localization, see 'Materials and methods'). Scale bars = 25 μm. See also Figure 4—figure supplements 1 and 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Mean day sleep duration (min/hr), mean peak responsiveness (mm/s) and sleep intensity (% responding) at 23C and 31C for flies expressing UAS-Syntaxin3-69 (green, n = 71) or UAS-ShibireTS (orange, n = 67) in R23E10-Gal4 neurons. R23E10-Gal4/+ (n = 48 in Syntaxin3-69 experiments, n = 68 in ShibireTS experiments) and UAS/+ (UAS-Syntaxin3-69/+n = 71, UAS- ShibireTS/+n = 51) controls are shown in gray and black, respectively. Error bars indicate SEM and asterisks indicate significance (**p<0.01, ****p<0.0001 two-way ANOVA, n.s. = not significant, adjusted for multiple comparisons (Dunnett)). Vertical comparisons are between genetic controls whereas horizontal comparisons are between temperature shifts (activation). For clarity, all genetic comparisons are between Gal4 >UAS flies and their closest genetic control at 31C activation. In cases where we saw significant differences from controls, there was no significant change between restrictive and permissive temperature conditions ([A], middle panel, mean peak responsiveness and [B], left panel, sleep duration).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) INX6 antibody labeling shows reactivity in the dFB (outlined) and in PI cells (arrow). (B) R23E10-Gal4 cell bodies (green) showed no overlap with INX6 staining. Scale bar: 25 μm. (C) Images taken from Video 1. dFB is highlighted by the white dashed line. From left to right: GFP expression in R23E10-Gal4; neurobiotin labeling overlaps with the expression of R23E10-Gal4 and also labels a separate set of neurons (white arrows) and corresponding axons (yellow arrow); merged image of 23E10-Gal4 and neurobiotin labeling. Scale bar: 25 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-video1.mp4.jpg)
+
+### Gap junctions in the dFB regulate both sleep duration and behavioral responsiveness
 
 To test the role of INX6 in sleep, we used a working RNAi construct (Figure 5—figure supplement 1A,B) to knock down INX6 in dFB neurons. Flies expressing the INX6 RNAi construct in the dFB showed a decrease in both day and night sleep (Figure 5A). We next looked at responsiveness to mechanical stimuli in these flies. Flies slept less deeply and were more responsive to stimuli when INX6 was downregulated in the dFB (Figure 5B). Closer examination of sleep intensity as a function of time asleep (van Alphen et al., 2013) showed that INX6-knockdown flies could still achieve deeper sleep stages (e.g. after 16–20 min immobility, Figure 5C), although these flies slept more lightly in general. This suggests that INX6 plays a role in suppressing behavioral responsiveness during lighter sleep stages, whereas during deeper sleep, the role of INX6 might be less important. Circadian influences also clearly play a major role: responsiveness is always lower at night than during the day. In addition, INX6 expression in different subsets of dFB neurons could also contribute to the behavior, as we observed only partial INX6 overlap with R23E10 (Figure 4B, bottom). To confirm that these behavioral effects were not a consequence of altered developmental pathways, we downregulated INX6 in adult flies by using a temperature-sensitive suppressor of Gal4, Gal80TS (McGuire et al., 2004). Knocking down INX6 in the adult dFB significantly increased daytime behavioral responsiveness and decreased daytime sleep intensity, but had no significant effect on sleep duration (Figure 5—figure supplement 2). These results suggest that INX6 is important for communicating dFB activity levels to regulate behavioral responsiveness. We therefore next questioned whether INX6 knockdown altered electrical readouts associated with acute dFB activation.
 
-## Gap junctions promote LFP activity in the dFB
+![Figure 5.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig5-v2.jpg)
+
+**Figure 5.:** (A) Mean sleep duration (min/hr) and (B) mean peak responsiveness (mm/s) and sleep intensity (% responding) for R23E10-Gal4/+;UAS-INX6-RNAi/+ (red, n = 85) compared to R23E10-Gal4/+ (gray, n = 83) and UAS-INX6-RNAi/+ (black, n = 84) controls. (C) Sleep intensity for inactivity bins of 5 min for the first 30 min of inactivity. See also Figure 2—figure supplement 1. Shading and error bars indicate SEM, asterisks indicate significance (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-way ANOVA, adjusted for multiple comparison (Dunnett). See also Figure 5—figure supplements 1 and 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) qRT-PCR shows relative amount of inx6 mRNA normalized to the housekeeping gene Actin in pan-neuronal knockdown using elav-Gal4. **p<0.01, t-test. (B) Average intensity ratio (± SEM) in the dFB (INX6 vs NC82 background) in Elav-Gal4/+;UAS-INX6-RNAi/+flies (n = 5) compared to genetic controls (n = 4). *p<0.05, t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Mean sleep duration (min/hr), (B) peak responsiveness (mm/s) (C) and sleep intensity (% responding) for tubpGAL80TS/+;R23E10-GAL4/UAS-INX6-RNAi (red, n = 34) compared to negative tubpGAL80TS/+;UAS-INX6 RNAi/+ (grey, n = 34) and positive UAS-INX6-RNAi/R23E10-Gal4 (black, n = 34) controls, following heating to 31°C for 24 hr. Data are average over two days at 25°C. Error bars indicate SEM, asterisks indicate significance *p<0.05 **p<0.01, two-way ANOVA, adjusted for multiple comparisons (Dunnett).
+
+### Gap junctions promote LFP activity in the dFB
 
 We recorded neural activity from INX6 knockdown flies whose dFB could be optogenetically activated. A dual-electrode setup was used to record intracellularly from the dFB cell body while a second electrode simultaneously positioned within in the dFB structure recorded extracellular local field potentials (LFPs) (Figure 6A,B). Whole-cell recordings revealed that reduced INX6 expression in the dFB (Figure 5—figure supplement 1B) did not impair CsChrimson-mediated cell activation: a significant increase in membrane potential was still observed with constant red light as well as with 1 Hz pulses (Figure 6C,D). This shows that the increase of the membrane potential in activated dFB neurons does not depend upon INX6 expression in these cells. Nevertheless, we did observe some intracellular differences: whereas 40% of wildtype dFB cells exhibited reliable secondary spikes 100–500 ms after a light-evoked action potential (Figure 3—figure supplement 2), none of the INX6 knocked-down cells displayed secondary spikes within that timeframe (Figure 6—figure supplement 1). Also, we noted considerably less variability in the membrane potential for dFB cells lacking INX6 (Figure 6—figure supplement 1 and Figure 6C,D right panels, compared with Figure 3D and Figure 3—figure supplement 1B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig6-v2.jpg)
+
+**Figure 6.:** (A) In vivo adult Drosophila electrophysiology recording setup with a whole-cell patch clamp (orange) targeting R23E10 cell bodies and a local field potential (blue) electrode targeting the dFB. (B) Local field-potential (LFP) recordings were obtained within the presynaptic arborizations of the R23E10 neurons in the fan-shaped body, while whole-cell recordings were obtained from the cell bodies of R23E10 neurons. (C) Example trace (left) of a CsChrimson-expressing (UAS-CsChrimson/+; UAS-INX6 RNAi/+; R23E10-Gal4/+ with ATR) cell with INX6 knockdown when exposed to constant red light (red shading). Superimposed traces from multiple cell recordings (middle). The solid red line indicates mean values. Boxplots show median membrane potential for CsChrimson-expressing cells with INX6 knockdown before, during and after constant light stimulation (n = 6, **p<0.01, Friedman test with Dunn’s multiple comparisons to the pre-stimulus condition). (D) Example trace (left) of a CsChrimson-expressing cell with INX6 knockdown when exposed to 1 Hz light pulse with 5 ms exposure per pulse (orange shading). Superimposed traces from all 120 trials (middle) for the representative cell shown on the left. Solid yellow line indicates mean value. Boxplots show median membrane potential for CsChrimson-expressing cells with INX6 knockdown before, during, and after 1 Hz light stimulation (n = 6, **p<0.01, Friedman test with Dunn’s multiple comparisons to pre-stimulus condition). (E) Local field potential recordings from the dorsal fan-shaped body represented as power within the 1–15 Hz frequency range, in response to a constant light stimulus (pink bar) with one representative fly shown from each strain. (F) Boxplots show median 1–15 Hz local field potential power (±SEM) for the duration of the constant light stimulus relative to pre-stimulation power (normalized to zero) in UAS-CsChrimson/+;R23E10-Gal4/+ with ATR (blue, n = 7), UAS-CsChrimson/+; UAS-INX6 RNAi/+; R23E10-Gal4/+ with ATR (purple, n = 6), and R23E10-Gal4/+ with ATR (gray, n = 4). Only UAS-CsChrimson/+;R23E10-Gal4/+ showed a significant increase in 1–15 Hz activity when exposed to constant red light (*p<0.05, ns = not significant, by Wilcoxon signed rank test). (G) Peak amplitude of the average LFP response (±SEM) to 1 Hz light pulse stimulus is significantly reduced for UAS-CsChrimson/+; UAS-INX6 RNAi/+; R23E10-Gal4/+ (purple, n = 6), compared to UAS-CsChrimson/+;R23E10-Gal4/+ (blue, n = 7) (**p<0.01, by Mann-Whitney test). (H) Peak LFP amplitude (±SEM) in response to 1 Hz stimulus in the presence of bath-applied (n = 6) or locally injected (n = 4) carbenoxolone (CBX, orange) compared to baseline (gray) or vehicle (green, n = 5). ***p<0.001,**p<0.01, by paired t-test. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37105/elife-37105-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** All neurons responded to 5 ms light stimulus with burst firing in the absence of stereotypical subsequent firing in the 1,000 ms that follows. See also Figure 3—figure supplement 2.
+
 We next asked whether extracellular LFP activity in the dFB might be affected by INX6 knockdown in the R23E10 neurons. We have shown previously that optogenetic dFB activation using the same R23E10-Gal4 driver produces increased LFP activity in the fly brain, especially in low (1–15 Hz) frequencies, and that oscillations within this range are also seen during transitions to spontaneous sleep in flies (Yap et al., 2017). We find this LFP signature of dFB activation again here (Figure 6E, top panel; Figure 6F, blue). In flies with INX6 knocked down in the dFB, however, there was no increased LFP activity (Figure 6E, bottom panel; Figure 6F, purple), as was also the case for control flies lacking the channelrhodopsin (Figure 6F, grey). As this constant light stimulus effect was quite subtle, we decided to drive the system with a pulsed activation regime to further test whether field potentials in the dFB were compromised following INX6 knockdown. 1 Hz stimulation of R23E10-Gal4 neurons also produced an LFP signature in the dFB, evident as an event-related potential (ERP) (Figure 6G, blue). Consistent with our results using a constant red-light activation regime, INX6 knockdown in R23E10 neurons significantly blunted the amplitude of the 1 Hz ERP (Figure 6G, purple). Together, these results suggest that one important consequence of INX6 knockdown in the sleep-promoting R23E10 cells is decreased synchronous activity in the dFB (detected as LFPs), whereas the activation effects on the membrane potential measured at the soma remain robust. To further test whether gap junctions are involved, we applied the gap-junction blocker carbenoxolone, or CBX (Cao and Nitabach, 2008). Perfusion of CBX onto the brain blunted the ERP recorded from the dFB, as did locally injected CBX (Figure 6H). This adds further evidence that gap junctions are required to produce synchronized activity in the dFB.
 
-## Gap junctions in the dFB are required for controlling behavioral responsiveness
+### Gap junctions in the dFB are required for controlling behavioral responsiveness
 
 Given that INX6 knockdown appears to disrupt dFB function at an electrophysiological level, we hypothesized that removing INX6 from these neurons would impair acute effects on behavior, such as those we obtained by optogenetic approaches earlier (Figure 2). To test this, we compared three groups of flies in DART (Figure 7A): (1) Positive control flies where dFB neurons could be activated and had wildtype INX6 expression (ATR-fed, blue), (2) negative control flies with INX6 knocked down but without dFB activation (non-ATR-fed, black), and (3) genetically identical flies where dFB neurons could be optogenetically activated but with INX6 knocked down (ATR-fed, purple).
 
@@ -97,11 +167,182 @@ It is not known whether electrical communication might be employed to promote s
 
 ## Materials and methods
 
-## Fly stocks and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R23E10-Gal4</td>
+      <td>Bloomington</td>
+      <td>RRID:BDSC_49032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>C5-Gal4</td>
+      <td>doi: 10.1002/ ssscne.22284</td>
+      <td></td>
+      <td>Paul Shaw Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>104y-Gal4</td>
+      <td>Paul Shaw Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>doi: 10.1038/ nmeth.2836</td>
+      <td></td>
+      <td>provided by Vivek Jarayaman Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-2eGFP</td>
+      <td>Bloomington</td>
+      <td>RRID:BDSC_32186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NaChBac</td>
+      <td>Bloomington</td>
+      <td>RRID:BDSC_9469</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-syntaxin3-69</td>
+      <td>Fly Base</td>
+      <td>FBal0092503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-shibireTS</td>
+      <td>Paul Shaw Lab</td>
+      <td>Gene ID: 45928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubpGAL80ts</td>
+      <td>Bloomington</td>
+      <td>RRID:BDSC_7108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-INX6 RNAi</td>
+      <td>VDRC</td>
+      <td>v8638</td>
+      <td>Provided by the Chia-Lin Wu Lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti -INX6</td>
+      <td>Provided by the Chia-Lin Wu Lab</td>
+      <td></td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse AlexaFluor488</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A-10680</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit AlexaFluor568</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A-11011</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit AlexaFluor647</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A-21244</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NC82</td>
+      <td>DSHB</td>
+      <td>AB_2314866</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit AlexaFluor488</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A-11008</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobiotin</td>
+      <td>Vector Labs</td>
+      <td>Cat. No: SP-1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DART</td>
+      <td>bfklab</td>
+      <td></td>
+      <td>http://www.bfklab.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB code</td>
+      <td>This paper</td>
+      <td>142faca</td>
+      <td>https://github.com/melvynyap/gap-junction-sleep-control (copy archived at https://github.com/elifesciences-publications/gap-junction-sleep-control)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>All-trans retinal</td>
+      <td>SIGMA-Aldrich</td>
+      <td>SID 24899355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>Cat. No: H-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin</td>
+      <td>Invitrogen</td>
+      <td>Catalog number: S32357</td>
+      <td>1:200</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and media
 
 Flies were cultured on standard agar medium under a 12-hr day/night cycle. Flies used for optogenetics were placed on food containing 1 mM all-trans retinal (Sigma) for two days before experiments. All flies were outcrossed six generations to a w2202 genetic background (isoCJ1; (Yin et al., 1994). The INX6-RNAi lines were a gift from Chia-Lin Wu. UAS-CsChrimson was a gift from Vivek Jayaraman. R23E10-Gal4, C5-Gal4, 104y-Gal4, and UAS-shibire were obtained from Bloomington. The INX6 RNAi is v8638, originally obtained from the VDRC (Dietzl et al., 2007). UAS-syx3-69 was obtained from Bing Zhang.
 
-## Behavioral experiments
+### Behavioral experiments
 
 One-day-old female virgin flies were briefly anesthetized on CO2 for collection. At two days old, flies were transferred to 65 mm glass tubes (Trikinetics, Waltham, MA) sealed with food (containing retinal if necessary) at one end and cotton at the other and placed inside a 25°C incubator. A camera was positioned above for recording activity, and shaftless vibrating motors (Precision Microdrives, 312–101) were positioned underneath for stimulus delivery using DART (Faville et al., 2015). Four 700 mA 617 nm LED lights (Luxeon Star, Canada, SP-01-E4) were placed above the flies and delivered irradiance of 0.03–0.1 mW/mm2. These LEDs were controlled using a custom circuit board and Arduino with custom code.
 
@@ -113,15 +354,15 @@ Sleep intensity was measured as the proportion of immobile (sleeping) flies that
 
 For experiments in which we downregulated INX6 expression in adult flies (using R23E10-Gal4 > UAS-INX6 RNAi GAL80TS), flies were raised at 19°C. A four-day experiment used the same hourly stimulus protocol as above and consisted of 1 d at 19°C, 1 d at 31°C for GAL4 induction, followed by 2 d at 25°C. Data from both days following 31°C heating were combined and averaged.
 
-## Immunochemistry
+### Immunochemistry
 
 Fly heads were removed and brains dissected in cold PBS, before being fixed in 4% paraformaldehyde for 30 min. After washing with PBST (0.2% Triton-X and 0.01% sodium azide) and blocking with bovine serum albumin, brains were incubated with primary antibodies (R23E10-Gal4 > UAS-2eGFP: mouse anti-GFP 1:1,000, rabbit anti-INX6 1:1,000; CS: rabbit anti-INX6 1:1,000) overnight, and with secondary antibodies (R23E10-GAal4 > UAS-2eGFP: goat anti-mouse AlexaFluor488 1:200, goat anti-rabbit AlexFluor568 1:200; CS: AlexFluor687 1:200) for 1 d, then mounted using Vectashield. The INX6 primary antibody was a generous gift from Chia-Lin Wu. Samples were imaged on a spinning-disk confocal system (Marianas; 3I, Inc.) consisting of a Axio Observer Z1 (Carl Zeiss) equipped with a CSU-W1 spinning-disk head (Yokogawa Corporation of America), an ORCA-Flash4.0 v2 sCMOS camera (Hamamatsu Photonics), and 20 × 0.8 NA PlanApo and 100 × 1.4 NA PlanApo objectives. Image acquisition was performed using SlideBook 6.0 (3I, Inc). To quantify the degree of colocalization between INX6 and R23E10-Gal4 dFB neurons, we used ImarisColoc (Imaris, Bitplane Inc). INX6 and GFP channels were selected using automatic threshold detection from pixel intensity histograms. The number of voxels in these channels that colocalized across Z-planes inside of the dFB region of interest (ROI) was then determined. To determine INX6 RNAi efficacy, we compared INX6 expression in the dFB in control brains (Elav-Gal4/+) to brains expressing the RNAi (Elav-Gal4 >UAS-INX6 RNAi) using an INX6 antibody. Brains were incubated with primary antibody (rabbit anti-INX6 1:1,000, mouse anti-NC82 1:10) overnight, and with secondary antibody (goat anti-rabbit AlexaFluor488 1:200, goat anti-rabbit AlexFluor647 1:200) for a day. A ROI was drawn around the dFB using the NC82 staining. Mean INX6 intensity within this ROI was normalized to mean NC82 intensity. Normalized dFB immunoreactivity in control brains was compared to Elav-Gal4 >UAS-INX6 RNAi brains using a t-test.
 
-## Quantitative PCR
+### Quantitative PCR
 
 A quantitative reverse transcriptase PCR (qRT-PCR) assay was used to conclude whether INX6 knockdown was achieved relative to that of the housekeeping gene Act88F, which was determined to be stably expressed across all experimental conditions. Females of 3–5 d old were collected by CO2 anesthesia, snap frozen, and stored at −80°C. Six pools of five fly heads (30 heads total) were placed into a 1.5 ml Eppendorf tube. Total RNA was purified using TRIzol according to the manufacturer’s protocols (Invitrogen, Carlsbad, California), immediately after dissection. Total RNA was treated with DNase (Sigma-Aldrich, St. Louis, MO) to eliminate contaminant genomic DNA. Approximately 0.5 µg of total RNA was reverse transcribed using random primers (Invitrogen) and reverse transcriptase (Invitrogen) according to the manufacturer’s protocols. Gene expression was estimated with two technical replicates using a standard quantitative PCR (qPCR) assay (McMeniman et al., 2009). Each qPCR mixture contained 12.5 µL of 2X SYBR premix (Invitrogen), 1 µL of forward primer, 1 µL of reverse primer, 100 ng of DNA, and H2O to a final volume of 25 µL. The expression of two genes was estimated relative to Act88F using the CT (where CT is the threshold cycle) method (Pfaffl, 2001). Averages of expression were compared using Student’s t test (in SPSS software). The primers that were used were actinF:ATCGAGCACGGCATCATCAC, actinR:CACGCGCAGCTCGTTGTA, inx6(v8638)F:GAACGGCATGCCCAAGTC, and inx6(v8638)R:ACCAGTCGCCGTATCCAG.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Methods for performing in vivo open brain recordings (Figure 3A) were described elsewhere (Yap et al., 2017). Briefly, to prepare for brain electrical recordings, we secured a 3–7-d-old fly on a custom fly plate (Maimon et al., 2010) (Figure 3A). The bath chamber of the fly plate was filled with oxygenated (bubbled in 95% O2, 5% CO2) extracellular fluid (ECF) containing (in mM): 103 NaCl, 10.5 trehalose, 10 glucose, 26 NaHCO3, 5 C6H15NO6S, 5 MgCl2 (hexa-hydrate), 2 sucrose, 3 KCl, 1.5 CaCl (dihydrate), and 1 NaH2PO4. To enable access to the brain, the cuticle was partially removed using forceps, with the perineural sheath removed either mechanically with forceps or chemically using protease (0.5% collagenase type IV). The fly in this preparation was positioned on an air-supported ball and the brain was continuously superfused with oxygenated ECF.
 
@@ -131,21 +372,21 @@ Borosilicate glass capillaries (Harvard Instruments GC150F-25) were used, pulled
 
 LFP recordings were performed simultaneously with whole-cell recordings using same-sized micropipettes filled with ECF instead of internal solution. LFP signals were acquired with a FET electrode, amplified and filtered (low: 0.1 Hz, high: 1 kHz) (A-M Systems Model 1700), digitized (Axon Digidata 1440A Digitizer) and sampled at 10 kHz using the data acquisition software AxoGraph X 1.4.4.
 
-## Electrophysiology and optogenetic stimulation
+### Electrophysiology and optogenetic stimulation
 
 Photostimulation of CsChrimson-expressing neurons was achieved by using an ultra-bright red LED (617 nm Luxeon Rebel LED, Luxeon Star LEDs, Ontario, Canada) directed to the opened section of the fly head, producing 0.1–0.2 mW/mm2 at a distance of 4–5 cm with the aid of concentrator optics (Polymer Optics 6° 15 mm Circular Beam Optic, Luxeon Star LEDs). To prevent overheating of the fly and the immediate environment, the LED was mounted onto a sink pad (SinkPAD-II 20 mm Star Base) that was attached to a small heat sink. The temperature of the solution bath was also kept constant within the range of 22°C to 23°C by using a thermistor and an in-line heater/cooler (Warner Instruments Model SC-20), both driven by a temperature controller (Warner Instruments Model CL-100). Light exposure was triggered after 1 min of baseline recording and lasted for 2 min. Light was delivered either in a continuous or in a pulsatile fashion, the latter of which consists of a 1 Hz train of 5 ms optical pulses. Timing of the light switch was controlled by AxoGraph, which also measured the timing of light exposure from a basic photodiode.
 
-## Dye labeling following electrophysiology recordings
+### Dye labeling following electrophysiology recordings
 
 Neurons in the dFB were injected with internal solution supplemented with 0.5% neurobiotin (Vector Labs TM), which has been shown to pass through gap junctions in invertebrates effectively (Fan et al., 2005). Whole-cell configuration was achieved for the purpose of passive flow of dye into the cytoplasm. Dye injection was aided by iontophoresis, with the delivery of depolarizing current pulses (200 pA, 500 ms, 1 Hz, 50% duty cycle) delivered over 5 min, followed by hyperpolarizing current pulses (−200 pA). The preparation was left for a further 40 min to allow the dye to diffuse into the cell passively. After withdrawing the micropipette, the preparation was left untouched for about 1 h to allow sufficient time for dye to diffuse within and across cells.
 
 The fly brain was dissected and fixed at room temperature for 20 min in 4% paraformaldehyde in 0.1M phosphate buffer (pH 7.0) then washed 3 × 10 min in PBST. The brain was incubated for 24–48 hr at 4°C with streptavidin conjugated with Alexa Fluor 647, in 5% bovine serum albumin (BSA) (1:200). Brains were rinsed in PBST (3 × 10 mins) and were mounted on glass slides in Vecta Shield mounting medium. All confocal images were obtained using an inverted spinning disk microscope (Yokogawa W1). All confocal images obtained were analyzed and processed in Fiji/Imaris. Deconvolution of images acquired using the Yokogawa W1 spinning disc confocal microscope was performed with Huygens Professional Plus Deconvolution software (Scientific Volume Imaging, Hilversum, The Netherlands). We used a theoretical point spread function (PSF) that was obtained by the parameters of image acquisition. For the deconvolution, we used a total image change threshold of 0.01, with single block processing on, a maximum iteration value of 40 and a signal to noise ratio (SNR) of 20.
 
-## Gap-junction blocker delivery
+### Gap-junction blocker delivery
 
 For the gap junction blocker experiments, carbenoxolone (CBX, 1 mM) (Cao and Nitabach, 2008) was dissolved into ECF, which was delivered to the fly brain by either perfusing the bath chamber with it or locally injecting it into the dFB region via a micropipette attached to a micromanipulator. For local delivery, constant air pressure was applied to push the CBX solution out of the micropipette, with the flow of solution into the dFB confirmed using a fluorescent dye (Alexa Fluor 568) that was added to the CBX solution. LFP recordings were obtained prior to bath perfusion of CBX, which served as baseline for comparison with the CBX effect. As an additional control for the locally delivered CBX experiments, ECF with no added CBX (vehicle) was injected to observe the effect of applying physical pressure into the central brain.
 
-## Electrophysiological analyses
+### Electrophysiological analyses
 
 All analyses were performed offline using custom scripts in MATLAB (2014a) (Yap, 2018) (https://github.com/melvynyap/gap-junction-sleep-control, 142faca; copy archived at https://github.com/elifesciences-publications/gap-junction-sleep-control). Cells were identified as burst-spiking cells when an action potential failed to return to resting membrane potential prior to reaching the next peak. These cells, when hyperpolarized with a constant current, also failed to produce single spiking events. Cells observed to have at least one single spiking event in addition to the burst spiking were identified as having a pattern involving both single and burst-spiking events. Non-spiking cells were identified as such when the cell failed to produce any action potentials despite the injection of depolarizing current in steps of +10 pA up to +150 pA.
 
@@ -155,6 +396,6 @@ Owing to the unipolar morphology of the recorded cells, the true value of the ce
 
 Raw LFP signals were transformed into wavelets using the Morlet wavelet transformation function ft_specest_wavelet in the Fieldtrip MATLAB toolbox, with wavelet width value set at 30 and 3 standard deviations. To generate the averaged time-frequency spectrograms, wavelets were normalized to the mean wavelet values of the pre-stimulus segment (baseline) for each fly prior to averaging across all flies. Wavelets differ in magnitudes across fly recordings, and were therefore normalized for each fly prior to averaging. For statistical analyses of 1–15 Hz LFP power, wavelets were also normalized to the mean wavelet values of baseline but were done within the respective frequency bins of 0.1 Hz, producing wavelet ratios (to baseline). The mean wavelet ratios during the stimulation period were calculated for each fly and then averaged across flies. Baseline was subsequently zeroed so that any positive values obtained during the stimulation period denotes an increase in LFP power. Peak amplitude from raw LFP signal represents the LFP response to the pulsative light stimulation and as such was defined as the maximum field potential deviation from zero in the 50 ms after the onset of the 1 Hz 5 ms light pulse. Peak amplitude was averaged across all 120 trials per fly prior to averaging across flies.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using Prism 7 for Windows (GraphPad). Where dataset failed the Shapiro-Wilk normality test (p<0.05), non-parametric tests were used. Friedman test with Dunn’s post hoc multiple comparisons test were used to compare the membrane potential averages during the stimulation and post-stimulation period to pre-stimulation baseline period. The Wilcoxon signed rank test was used to test for significant difference between the LFP power ratio and a baseline of zero during the stimulation period. The Mann-Whitney test was used to compare the peak LFP amplitudes between the two fly strains. Paired t-tests were used to compare the peak LFP amplitudes between the CBX and baseline conditions. All membrane potential data in the figures are presented as median and range, whereas the LFP data presented in figures are shown as means ± SEM. All tests for significance were two-tailed and confidence levels were set at α = 0.05.

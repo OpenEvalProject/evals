@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.43657.001 The age of large-scale genome-wide association studies (GWAS) has provided us with an unprecedented opportunity to evaluate the genetic liability of complex disease using polygenic risk scores (PRS). In this study, we have analysed 162 PRS (p<5×10 −05 ) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398). Findings can be investigated using a web application (http:‌//‌mrcieu.‌mrsoftware.org/‌PRS‌_atlas/), which we envisage will help uncover both known and novel mechanisms which contribute towards disease susceptibility. To demonstrate this, we have investigated the results from a phenome-wide evaluation of schizophrenia genetic liability. Amongst findings were inverse associations with measures of cognitive function which extensive follow-up analyses using Mendelian randomization (MR) provided evidence of a causal relationship. We have also investigated the effect of multiple risk factors on disease using mediation and multivariable MR frameworks. Our atlas provides a resource for future endeavours seeking to unravel the causal determinants of complex disease.
+The age of large-scale genome-wide association studies (GWAS) has provided us with an unprecedented opportunity to evaluate the genetic liability of complex disease using polygenic risk scores (PRS). In this study, we have analysed 162 PRS (p<5×10−05) derived from GWAS and 551 heritable traits from the UK Biobank study (N = 334,398). Findings can be investigated using a web application (http:‌//‌mrcieu.‌mrsoftware.org/‌PRS‌_atlas/), which we envisage will help uncover both known and novel mechanisms which contribute towards disease susceptibility. To demonstrate this, we have investigated the results from a phenome-wide evaluation of schizophrenia genetic liability. Amongst findings were inverse associations with measures of cognitive function which extensive follow-up analyses using Mendelian randomization (MR) provided evidence of a causal relationship. We have also investigated the effect of multiple risk factors on disease using mediation and multivariable MR frameworks. Our atlas provides a resource for future endeavours seeking to unravel the causal determinants of complex disease.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ In this study, we have constructed 162 different PRS (based on p<5×10−05) usi
 
 ## Results
 
-## An atlas of polygenic risk score associations across the human phenome
+### An atlas of polygenic risk score associations across the human phenome
 
 Overall, we undertook 89,262 tests to investigate the association between 162 different PRS derived from GWAS (Supplementary file 1a) and 551 complex traits from the UK Biobank study (Supplementary file 1b). PRS were constructed using independent SNPs for each GWAS (p<5×10−05) based on r2< 0.001 using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 Genomes project (Abecasis et al., 2012). As opposed to the conventional GWAS cut-off of p<5×10−08, the threshold of p<5×10−05 was selected to incorporate additional SNPs into scores which may explain additional heritability for GWAS traits. Furthermore, this allowed us to create PRS for traits which had no SNPs surviving conventional GWAS corrections, as well as increasing the number of SNPs used in scores for traits with only a small number of GWAS hits. Our final sample size for analysis consisted of 334,398 individuals. This was determined using a strict exclusion criterion to reduce false positive associations, removing individuals with withdrawn consent, evidence of genetic relatedness or who were not of ‘white European ancestry’ based on a K-means clustering (K = 4).
 
@@ -51,7 +51,7 @@ Combining this PRS with scores for established causal risk factors for CHD sugge
 
 Amongst other findings, we observed that participants had increased odds of 2.43 in terms of obtaining a University or College degree when comparing top and bottom deciles for the years of schooling PRS. Other noteworthy examples included a 3.48 fold increase in odds of taking atorvastatin as medication when comparing the extreme deciles for the LDL PRS. We also observed that participants in the highest decile for the ulcerative colitis PRS had increased odds of 5.36 in terms of developing this disease in comparison to those in the lowest decile (based on the ICD10 code ‘K51’).
 
-## Uncovering known and novel findings by conducting a phenome-wide evaluation of associations
+### Uncovering known and novel findings by conducting a phenome-wide evaluation of associations
 
 To demonstrate the value of this atlas of results, we have investigated some of the strongest associations detected between the schizophrenia PRS and all 551 complex traits analysed in the UK Biobank study (Figure 3, Supplementary file 1d). Associations within our atlas could potentially be identified due to underlying epidemiological relationships, although there are various other possible explanations such as a shared genetic aetiology between traits. To investigate this for our associations with the schizophrenia PRS, we have used various methods in two-sample MR as an example of how future studies could evaluate findings from our atlas. For these analyses we only used SNPs with p<5×10−08 as instrumental variables to reduce the likelihood of weak instrument bias in our analysis (Davies et al., 2015). Furthermore, in these analyses we model liability to schizophrenia as our exposure within an MR framework with associated complex traits as outcomes (unless stated otherwise). Our systematic approach involved the following:
 
@@ -71,7 +71,7 @@ Elsewhere, there were associations indicating that participants with a high schi
 
 We also observed a strong inverse association between the schizophrenia PRS and various anthropometric traits. However, evaluating the relationship between schizophrenia liability and body mass index (BMI) provided weak evidence of a causal effect in both directions (Supplementary files 1k & 1l). This result reinforces our recommendation that all findings within our atlas require in-depth evaluation to discern whether they represent potential causal associations.
 
-## Elucidating risk factors which may play a mediating role along the causal pathway to disease
+### Elucidating risk factors which may play a mediating role along the causal pathway to disease
 
 Another strength of our atlas is that findings can be evaluated by selecting an outcome of interest and evaluating which of the 162 PRS are most strong associated with it. Doing so may motivate future endeavours to investigate the effect of multiple risk factors on disease risk. As a demonstration of this, we have evaluated the associations between all PRS and self-reported gout in the UK Biobank study (Supplementary file 1m). In this analysis, there was strong evidence of association using the PRS for gout itself (OR = 1.16, 95% CI = 1.13 to 1.19), although we also observed a much larger magnitude of effect using the urate PRS (OR = 1.75, 95% CI = 1.72 to 1.78). Although many of the PRS in our analysis may be the best polygenic predictors for their target disease/trait, there may be other examples similar to this where the strongest association for an outcome is not the corresponding PRS. For example, the strongest association for birth weight as an outcome in our atlas was with the height PRS (Beta = 0.080, SE = 0.002, p=1.31×10-249).
 
@@ -107,21 +107,21 @@ Polygenic risk scores hold huge promise in the era of large-scale genetic epidem
 
 ## Materials and methods
 
-## Simulations to compare polygenic risk score analysis with Mendelian randomization
+### Simulations to compare polygenic risk score analysis with Mendelian randomization
 
 Our simulation study concerned two different models; the causal model (simulating a risk factor which has a causal effect on the simulated outcome) and the null model (where there is no causal effect between the simulated exposure and outcome). We ran 1000 simulations using each model to compare the PRS approach with the IVW method using a dataset comprising of 10,000 samples and 50 SNPs. Further details and all the code used to conduct these simulations can be found at https://‌github.com/‌explodecomputer/‌prs-vs-mr.
 
-## Constructing polygenic risk scores from large-scale genome-wide association studies
+### Constructing polygenic risk scores from large-scale genome-wide association studies
 
 We have used the MR-Base platform (Hemani et al., 2018) to identify SNPs from large-scale GWAS to include in our PRS. Our inclusion criteria for selected GWAS was having a sample size of more than 1000 participants, over 100,000 SNPs measured on genotyping arrays and based on European/mixed populations. If multiple studies were found for the same trait, we selected the most recent study or the one with the largest sample size.
 
 PRS were constructed using SNPs for each GWAS trait based on p<5×10−05. A threshold of r2 <0.001 was selected to identify independent SNPs using genotype data from European individuals (CEU) from phase 3 (version 5) of the 1000 genomes project (Abecasis et al., 2012). When a GWAS SNP was not available from the UK Biobank study genotype data, we used a proxy SNP instead based on r2 ≥0.8 using the same reference panel. Scores were then calculated as the sum of the effect alleles for all SNPs weighted by their reported regression coefficients. However, a small subset of PRS were left unweighted to reduce the likelihood of overfitting. This was due to their GWAS including participants from the initial release of the UK Biobank study. As such, additional caution should be exercised when interpreting findings from these unweighted PRS. Prior to analysis, each PRS was normalised to have a mean of zero and a standard deviation (SD) of one. Our PRS construction pipeline was also applied using a more stringent threshold of p<5×10−08. Although we have not interpreted any of the results using these more stringent scores in this report, they are available within our atlas for future use.
 
-## Complex trait and genotype data from the UK Biobank study
+### Complex trait and genotype data from the UK Biobank study
 
 We selected traits from the UK Biobank study (Sudlow et al., 2015) which had p<0.05 in the heritability analyses conduct by the Neale lab (Neale Lab, 2017). Genotype data were available for approximately 490,000 individuals enrolled in the study. Phasing and imputation of these data are explained elsewhere (Bycroft et al., 2018). Individuals with withdrawn consent, evidence of genetic relatedness or who were not of ‘white European ancestry’ based on a K-means clustering (K = 4) were excluded from analysis. After exclusions there were up to 334,398 individuals with both genotype and complex trait data who were eligible for analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 We evaluated the association between each combination of PRS and complex trait in the UK Biobank study using linear regression (for continuous traits), logistic regression (for case/control traits), ordinal logistic regression (for ordered categorical traits) and multinomial logistic regression (for unordered categorical traits). All analyses were adjusted for age, sex, the first 10 genetic principle components (to adjust for population stratification) and genotyping chip used to measure genetic data in participants. Only female participants were included in the ‘Age at menarche’ and ‘Age at menopause’ PRS analyses.
 
@@ -131,7 +131,7 @@ R2McF= 1 – ln(Lm/ln(L0)
 
 where ln is the natural logarithm, L0 is the value of the likelihood function of the model with no predictors and Lm is the likelihood of the model being estimated. We note that pseudo R2 coefficients should not be interpreted in a similar manner to those derived using linear regression (Hu et al., 2006).
 
-## Mendelian randomization analysis
+### Mendelian randomization analysis
 
 We used various two-sample MR methods to evaluate associations detected in the PRS analysis. This involved using the observed effects of the genetic variants used in the PRS on both the GWAS trait that the score was based on (treated as the exposure in our MR analysis) as well as the UK Biobank trait (treated as the outcome in our MR analysis). For all MR analyses we only selected SNPs with p<5×10−08 based on GWAS findings as instrumental variables to reduce the likelihood of weak instrument bias (Davies et al., 2015). In terms of MR methods, we applied the inverse variance weighted (IVW) (Burgess et al., 2013), weighed median (Bowden et al., 2016) and weighted mode approaches. We also conducted several different sensitivity analyses to evaluate findings. We derived Cochran’s Q statistic when undertaking the IVW approach as an indicator of heterogeneity, as well as repeating all analyses after filtering out SNPs which the MR directionality test suggested did not influence the outcome of interest through the analysed exposure. The intercept of the MR-Egger approach (Bowden et al., 2015) was used to investigate directional horizontal pleiotropy and leave-one-out analyses (i.e. reapplying the IVW method after removing each SNP in turn with replacement) were conducted to discern whether any individual SNPs were driving observed associations. These types of analyses are particularly important when assessing findings from our atlas, as one possible explanation is that they could be attributed to a single pleiotropic SNP which has a large effect size (e.g. the APOE locus which is associated with Alzheimer’s disease and lipid levels).
 
@@ -139,12 +139,12 @@ To investigate the direction of effect for associations identified in the PRS an
 
 When undertaking our example of mediation MR in this study, we also calculated the proportion mediated along the causal pathway from exposure to outcome using effect estimates derived using the IVW method, where:
 
-Proportion mediated = direct effect - indirect effectdirect effect
+Proportion mediated = $\frac{directeffect-indirecteffect}{directeffect}$
 
 The direct effect here is the IVW effect estimate derived for the association between the exposure (i.e. BMI) and our outcome (i.e. gout). The indirect effect was calculated as the product of all IVW effect estimates derived for all relationships along the causal pathway of interest (i.e. the effect of BMI on triglycerides, the effect of triglycerides on urate and the effect of urate on gout).
 
 All analyses were undertaken using R (version 3.5.1). The R package ‘shiny’ v1.1 was used to develop the web application and ‘highcharter’ v0.5 was used to generate interactive plots. Figures in this manuscript were generated using ‘ggplot2’ v2.2.1.
 
-## Data availability
+### Data availability
 
 All summary statistics for the analyses undertaken in this study can be downloaded using our web application (http://mrcieu.mrsoftware.org/PRS_atlas/). Our dataset was derived from the UK Biobank study as part of projects 8786 and 15825. The same dataset can be created with an application to use data from the UK Biobank study (http://biobank.ctsu.ox.ac.uk/crystal/).

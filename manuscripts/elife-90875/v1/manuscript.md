@@ -13,17 +13,17 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Aix-Marseille University, INSERM, UMR1251, Marseille Medical Genetics, Institut MarMaRa Marseille France
-2. https://ror.org/054jdkk48 Hanoi Medical University Hospital Hanoi Viet Nam
-3. https://ror.org/035xkbk20 Aix-Marseille University, CNRS, UMR7051, Institut de NeuroPhysiopathologie Marseille France
-4. https://ror.org/035xkbk20 Aix-Marseille University, APHM, INSERM, MMG, Laboratory of Molecular Biology, La Conception Hospital, Institut MarMaRa Marseille France
-5. https://ror.org/035xkbk20 Aix Marseille University, APHM, INSERM, MMG, Department of Endocrinology, La Conception Hospital, Institut MarMaRa Marseille France
+1. Aix-Marseille University, INSERM, UMR1251, Marseille Medical Genetics, Institut MarMaRa Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+2. Hanoi Medical University Hospital Hanoi Viet Nam ([ROR:054jdkk48](https://ror.org/054jdkk48))
+3. Aix-Marseille University, CNRS, UMR7051, Institut de NeuroPhysiopathologie Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+4. Aix-Marseille University, APHM, INSERM, MMG, Laboratory of Molecular Biology, La Conception Hospital, Institut MarMaRa Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+5. Aix Marseille University, APHM, INSERM, MMG, Department of Endocrinology, La Conception Hospital, Institut MarMaRa Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 
 † Corresponding author
 
 ## Abstract
 
-Deficient Anterior pituitary with common Variable Immune Deficiency (DAVID) syndrome results from NFKB2 heterozygous mutations, causing adrenocorticotropic hormone deficiency (ACTHD) and primary hypogammaglobulinemia. While NFKB signaling plays a crucial role in the immune system, its connection to endocrine symptoms is unclear. We established a human disease model to investigate the role of NFKB2 in pituitary development by creating pituitary organoids from CRISPR/Cas9-edited human induced pluripotent stem cells (hiPSCs). Introducing homozygous TBX19 missense pathogenic variant in hiPSC, an allele found in congenital isolated ACTHD, led to a strong reduction of corticotrophs number in pituitary organoids. Then, we characterized the development of organoids harboring K146R/K146R NFKB2 mutations found in DAVID patients. D865G/D865G NFKB2 mutation acted at different levels of development with mutant organoids displaying changes in the expression of genes involved on pituitary progenitor generation ( D865G/D865G HESX1 , PITX1 , LHX3 ), hypothalamic secreted factors ( BMP4, FGF8, FGF10 ), epithelial-to-mesenchymal transition, lineage precursors development ( TBX19 , POU1F1 ) and corticotrophs terminal differentiation ( PCSK1, POMC ), and showed drastic reduction in the number of corticotrophs. Our results provide strong evidence for the direct role of NFKB2 mutations in the endocrine phenotype observed in patients leading to a new classification of a NFKB2 variant of previously unknown clinical significance as pathogenic in pituitary development.
+Deficient Anterior pituitary with common Variable Immune Deficiency (DAVID) syndrome results from NFKB2 heterozygous mutations, causing adrenocorticotropic hormone deficiency (ACTHD) and primary hypogammaglobulinemia. While NFKB signaling plays a crucial role in the immune system, its connection to endocrine symptoms is unclear. We established a human disease model to investigate the role of NFKB2 in pituitary development by creating pituitary organoids from CRISPR/Cas9-edited human induced pluripotent stem cells (hiPSCs). Introducing homozygous TBX19K146R/K146R missense pathogenic variant in hiPSC, an allele found in congenital isolated ACTHD, led to a strong reduction of corticotrophs number in pituitary organoids. Then, we characterized the development of organoids harboring NFKB2D865G/D865G mutations found in DAVID patients. NFKB2D865G/D865G mutation acted at different levels of development with mutant organoids displaying changes in the expression of genes involved on pituitary progenitor generation (HESX1, PITX1, LHX3), hypothalamic secreted factors (BMP4, FGF8, FGF10), epithelial-to-mesenchymal transition, lineage precursors development (TBX19, POU1F1) and corticotrophs terminal differentiation (PCSK1, POMC), and showed drastic reduction in the number of corticotrophs. Our results provide strong evidence for the direct role of NFKB2 mutations in the endocrine phenotype observed in patients leading to a new classification of a NFKB2 variant of previously unknown clinical significance as pathogenic in pituitary development.
 
 ## Introduction
 
@@ -37,17 +37,37 @@ Over the last years, human induced pluripotent stem cell (hiPSC)-derived organoi
 
 ## Results
 
-## Corticotroph deficiency can be modeled by directed differentiation of TBX19-mutant hiPSC in 3D culture
+### Corticotroph deficiency can be modeled by directed differentiation of TBX19-mutant hiPSC in 3D culture
 
 To first validate the pituitary organoid model and determine whether the TBX19 mutant can affect corticotrophs differentiation, we generated a TBX19 KI hiPSC line from the control line using CRISPR/Cas9 (Figure 1A–D; Figure 1—figure supplement 1). One KI clone carrying TBX19K146R/K146R was obtained after screening 100 clones by CAPS and confirmation by Sanger sequencing (Figure 1—figure supplement 2). This mutant clone was then amplified and differentiated into pituitary organoids, in parallel with the control line.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig1-v1.jpg)
+
+**Figure 1.:** (A) Illustration of the TBX19 gene (HGNC: 11596; ENSEMBL: ENSG00000143178; Human GRCh38) and TBX19 protein. (B) Wild-type (WT) sequence containing target site, cut site, target, and protospacer-adjacent motif (PAM) sequences. (C) ssODN design to edit in a missense K146R mutant of TBX19 using CRISPR/Cas9. (D) Sequence analysis of a TBX19 KI human induced pluripotent stem cell (hiPSC) clone 63 obtained by Sanger sequencing after screening by cleaved amplified polymorphic sequences (CAPS). This clone was subsequently used in this work to differentiate into pituitary organoids (see below). (E) Summary of our strategy procedure. Step 1: Production of the knock-in hiPSC lines by CRISPR/Cas9 genome editing. Step 2: Differentiation into pituitary organoids from mutant hiPSC lines in parallel with the isogenic WT line using 3D culture, followed by the comparison of the development of organoids between the two groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The appropriate CRISPR/Cas9 vector and single-stranded oligo DNA nucleotides (ssODN) were introduced in hiPSC by electroporation. Resistant cells were selected by puromycin for 24 hr. Percentage of mutants was estimated by a CAPS assay. Mutant cells were amplified and manually picked after 10 d. Half of each clonal colony was used for screening and verified by Sanger sequencing. The other half was used for amplification and then stocked by cryo-conservation. Non-edited cells (in gray), edited cells without desired mutations (in yellow), and edited cells with desired mutations (in green) are depicted. sgRNA: single guide RNA; puro R: puromycin resistant sequence; CTRL: control; EP1, EP2, EP3: three wells containing hiPSC electroporated with the vectors and donor template; CAPS: cleaved amplified polymorphic sequences; WT: wild-type; KI: knock-in.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) CAPS assay with MseI restriction enzyme in human induced pluripotent stem cell (hiPSC) population (zero) on day 3 post-transfection and screening individual colony. wild-type (WT) (472 bp band); Blocking mutant digested (D, 2 bands at 314 bp and 158 bp). Positif clones which had three bands (marked by a blue arrow) were then confirmed by Sanger sequencing. (B) Sanger sequencing analysis of positive clones. There was one clone (# 63) homozygous TBX19K146R/K146R. There were heterozygous TBX19K146R/WT, TBX19K146R/fs, and TBX19fs/fs. Frameshift (fs). N/A: not available.
+
 The ability of the TBX19 KI line to differentiate into the hypothalamic-pituitary structure was compared to the control line (200 organoids for each line) using a 3D organoid culture method, in which pituitary-like and hypothalamus-like structures simultaneously develop (Figures 1E and 2A, Figure 2—figure supplement 1A–B). In this method, hiPSC differentiates into hypothalamic progenitors in the central part of the organoids, whereas the outer layer differentiates into oral ectoderm, that will in turn develop into anterior pituitary tissue (Figure 2A, Figure 2—figure supplement 1C). The expression of several key markers of pituitary development and differentiation was then compared in mutant TBX19 KI organoids over time, matched to control WT organoids using qRT-PCR (d0, d6, d18, d27, d48, d75, d105) and immunofluorescence (d48 and d105) (Figure 2A). Organoids grew in the culture medium with average sizes in their greatest dimension from 0.4 mm on day 6–1.9 mm on day 105 (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig2-v1.jpg)
+
+**Figure 2.:** (A) Culture protocol and outline to generate pituitary organoids in three-dimensional (3D) culture from human induced pluripotent stem cell (hiPSC). Organoids were collected at days (d) 0, 6, 18, 27, 48, 75, and 105 during differentiation to analyze. (B) Brightfield microscopy views of WT organoid examples at different time points throughout differentiation. Scale bars are indicated in each image. (C) Number of replicates per time point and per genotype in experiments depicted in the following graphs. Asterisks indicate that 7–8 organoids were grouped for each sample. For other points, each sample consists of a single organoid. (D–H) Relative quantification (RQ) mRNA expression analysis for key markers of pituitary organoids during differentiation: WT (in black line) and TBX19 KI organoids (in red line). Relative quantification of each target gene was obtained by the 2-ΔΔCt method from qRT-PCR results (see Methods). Data show means ± standard error of the mean (SEM, Mann-Whitney t-test [unpaired, two-tailed, nonparametric]). p<0.05 (*), p<0.01 (**). (D) Relative quantification of HESX1 expression, the earliest pituitary placode marker assessed. The expression of HESX1 is significantly downregulated in TBX19 KI organoids vs. WT at d18 and d27. (E) Relative quantification expression of PITX1, a pituitary progenitor marker. PITX1 was significantly downregulated in TBX19 KI organoids by d48 and d75. (F) Relative quantification expression of LHX3, a pituitary progenitor marker. LHX3 was significantly lower in TBX19 KI organoids as compared to WT from d48 onwards. (G) Relative quantification expression of TBX19, a critical transcriptional determinant for corticotroph differentiation. TBX19 expression is higher in TBX19 KI organoids at d105. (H) Relative quantification expression of pro-opiomelanocortin (POMC), a corticotroph marker. POMC was significantly downregulated in TBX19 KI organoids from d48 onwards.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Induction of two tissues hypothalamus-pituitary in organoid on day 48. (A) Oral ectoderm-like tissue expressed pituitary progenitor markers (LHX3). (B) Hypothalamus-like tissue expressed hypothalamic progenitor markers (NKX2.1). (C) Oral ectoderm-like tissue expressed PITX1 and E-cadherin. (D) Corticotroph cells expressed TBX19 in the nucleus and adrenocorticotropic hormone (ACTH) in the cytoplasm in organoid on day 105. Scale bars: 50 µm.
 
 Successful differentiation was validated in WT organoids by qRT-PCR, at early stages by the expression of a set of pituitary transcription factors, including HESX1, PITX1, and LHX3, and at the latest stage of corticotroph cell differentiation by the expression of TBX19 and POMC (Figure 2A and C–H). HESX1 is the first specific marker of pituitary primordium and its expression is important for the early determination of the gland. In WT organoids, HESX1 peaked around day 6 of culture, and was rapidly downregulated from day 18 (Figure 2D). Expression of PITX1 (oral ectoderm marker) and LHX3 (pituitary progenitor marker) increased from day 27, then PITX1 reached a plateau from d48 (Figure 2E) whereas LHX3 peaked at d75 and was then slightly downregulated (Figure 2F). Immunofluorescence confirmed the presence of oral ectoderm cells expressing PITX1 and CDH1 (E-cadherin, Figure 2—figure supplement 1C), therefore, resembling Rathke’s pouch progenitors. The effective generation of pituitary progenitors was confirmed by the presence of LHX3 + cells in WT organoids on day 48 (Figure 3A, Figure 2—figure supplement 1A). These cells were located in the outermost layer of WT organoids, surrounding the hypothalamic progenitor layer that expressed NKX2.1 (Figure 2—figure supplement 1B). By day 105, WT organoids contained many differentiated corticotrophs co-expressing TBX19 protein in the nucleus and ACTH in the cytoplasm, as seen in confocal microscopy, a critical feature for the rest of our investigations (n=8, Figure 3B, Figure 2—figure supplement 1D). Consistent with these images, qRT-PCR results confirmed the highest levels of TBX19 and POMC expression after at least 75 d of culture in WT organoids (Figure 2G–H). Taken together, these data showed that pituitary organoids in 3D culture mimic human pituitary ontogenesis, and were characterized in our conditions by the ability to differentiate into pituitary progenitors by day 48 and into corticotroph cells by day 105.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig3-v1.jpg)
 
-**Figure 3.:** TBX19 KI organoids as compared with controls at the protein level.(A, B) Immunostaining of LHX3 and CDH1 (E-cadherin) expression in epithelial cells, typical of Rathke’s pouch ectoderm in early pituitary primordia, was reduced in TBX19 KI organoid vs wild-type (WT) on day 48 (n=10 organoids for each group). Scale bars: 10 μm. (C, D) Immunostaining showed that adrenocorticotropic hormone (ACTH) and TBX19 expressions were reduced in TBX19 KI organoid vs WT on day 105 (n=10 organoids for each group). Scale bars: 10 μm.
+**Figure 3.:** (A, B) Immunostaining of LHX3 and CDH1 (E-cadherin) expression in epithelial cells, typical of Rathke’s pouch ectoderm in early pituitary primordia, was reduced in TBX19 KI organoid vs wild-type (WT) on day 48 (n=10 organoids for each group). Scale bars: 10 μm. (C, D) Immunostaining showed that adrenocorticotropic hormone (ACTH) and TBX19 expressions were reduced in TBX19 KI organoid vs WT on day 105 (n=10 organoids for each group). Scale bars: 10 μm.
 
 We then tested whether ACTHD could be modeled by TBX19-mutant pituitary organoids. To this end, the development of pituitary organoids carrying TBX19 KI was matched to WT organoid development and analyzed using qRT-PCR and immunofluorescence for pituitary ontogenesis markers as described above. Our data showed a significant decrease in the expression of HESX1 at d18 and d27 in the mutant (Figure 2D). Both PITX1 and LHX3 transcript levels were significantly decreased by day 48 and day 75 in mutant organoids (Figure 2E and F), with only partial recovery for PITX1 by d105, suggesting an impairment of pituitary progenitor generation. Although TBX19 transcript levels were unchanged until d75 (Figure 2G), we observed a decrease in POMC expression in the TBX19 KI organoids that was significant from day 48 onwards (Figure 2H). TBX19 expression was significantly higher in mutant organoids at d105, but this had no influence on POMC expression, which remained very low. These results confirmed that our organoid model can recapitulate the need for a fully functional TBX19 protein to achieve proper POMC gene transcription during human pituitary development.
 
@@ -55,31 +75,689 @@ Next, we checked several pituitary markers by immunofluorescence (Figure 3A–D)
 
 Finally, in order to take into account the possibility of regionalized sampling in the section, we performed a quantitative analysis of ACTH by transparizing organoids immunostained for the hormone and imaging them by light-sheet confocal microscopy. 3D reconstruction confirmed that ACTH was nearly absent from TBX19 KI organoids on day 105 compared to control organoids (Figure 4A–B and Figure 4—video 1 and Figure 4—video 2). We observed that corticotroph cell distribution was not uniform throughout the organoids, but was rather concentrated in one or a few buds. In summary, there was a significant decrease in the number of ACTH + corticotroph cells with a TBX19 KI genotype on day 105 versus control organoids (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig4-v1.jpg)
+
+**Figure 4.:** (A) A representative image of whole-mount immunostaining against adrenocorticotropic hormone (ACTH) in a cleared WT organoid on d105 using light-sheet microscopy. Scale bar: 200 μm. (B) A representative image of whole-mount immunostaining against ACTH in a cleared TBX19 KI organoid on d105 as above, showing impaired corticotroph differentiation. Scale bar: 200 μm. (C) The number of corticotroph cells per mm3 was significantly decreased in TBX19 KI organoids (* p=0.0159). Means ± SEM for n=4 WT, n=5 TBX19 KI organoids. Mann-Whitney test (unpaired, two-tailed, nonparametric).
+
 Together, this first set of experiments demonstrated that genome editing of hiPSC with a KI homozygous pathogenic variant of TBX19 effectively prevented their differentiation into ACTH-producing corticotrophs.
 
-## NFKB2 signaling is vital for corticotroph development
+### NFKB2 signaling is vital for corticotroph development
 
 As our organoid model for the study of ACTHD was validated with the TBX19 mutant line, we then used the same approach to investigate the potential role of NFKB2 in human hypothalamic-pituitary development. To do so, we first established a NFKB2 KI mutant hiPSC line using CRISPR/Cas9 (Figure 5) from an isogenic control. The NFKB2D865G homozygous mutation was chosen because it has been shown to severely affect NFKB2 p52 processing (Lee et al., 2014). Two homozygous KI clones carrying NFKB2D865G/D865G were obtained after screening by CAPS and confirmation by Sanger sequencing (Figure 5—figure supplement 1). We selected one homozygous missense mutation NFKB2 KI clone (#7) to amplify and generate 200 mutant organoids in parallel with 200 WT organoids in 3D culture.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration of the NFKB2 gene (HGNC: 7795; ENSEMBL: ENSG00000077150; Human GRCh38). (B) Wild-type (WT) sequence containing target site, cut site, target, and protospacer-adjacent motif (PAM) sequence. (C) ssODN design to introduce the missense mutation D865G into NFKB2 using CRISPR/Cas9. (D) Sequence analysis of the NFKB2 KI hiPSC clone 7, obtained by Sanger sequencing, after screening by cleaved amplified polymorphic sequences (CAPS). This clone was subsequently used in this work to differentiate into pituitary organoids (see below).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CAPS assay with BtsI restriction enzyme in human induced pluripotent stem cell (hiPSC) population (zero) on day 3 post-transfection. Wild-type (WT) or Undigested (498 bp band); Digested or mutant (D, 2 bands at 239 bp and 259 bp). (B) CAPS assay with BtsI restriction enzyme for screening individual colony. D: digested. Positif clones which had 3 bands (marked by a blue arrow) were then confirmed by Sanger sequencing. (C) Sanger sequencing analysis of positive clones. 2 clones (#4 and #7) were homozygous NFKB2D865G/D865G. One clone was heterozygous NFKB2D865G/WT.
 
 Next, we compared the development and differentiation of the NFKB2 KI organoids versus WT organoids during the culture by qRT-PCR and immunofluorescence as described above. The results of qRT-PCR showed no significant difference in the peak expression level of HESX1. However, higher HESX1 expression in mutant organoids from d27 to d75 suggested impaired downregulation of the gene (Figure 6B). Concomitantly, a significantly decreased expression of PITX1 and LHX3 in NFKB2 KI organoids was found from d48 onwards, suggesting reduced differentiation of pituitary progenitors (Figure 6C–D). Similar to what we observed in TBX19 KI mutants, TBX19 expression was increased in NFKB2 KI organoids at d105 (Figure 6E). However, this had no impact on POMC expression levels, which remained significantly lower in NFKB2 KI organoids (Figure 6F), suggesting a role for NFKB2 in corticotroph terminal differentiation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig6-v1.jpg)
 
-**Figure 6.:** NFKB2) KI organoids.(A) Number of replicates per time point and per genotype in experiments depicted in the following graphs. Asterisks indicate that 7–8 organoids were grouped for each sample. For other point, each sample consists of a single organoid. (B–F) Relative quantification (RQ) mRNA expression analysis for key markers of pituitary organoids during differentiation: WT (black line and dots) and NFKB2 KI organoids (red line and dots). Data show means ± standard error of the mean (SEM);. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**). (B) Relative quantification expression of HESX1, the earliest pituitary placode marker assessed. The expression of HESX1 was upregulated in NFKB2 KI organoids vs. WT between d27 and d75. (C) Pituitary progenitor marker PITX1 was significantly downregulated in NFKB2 KI organoids at d48 and d75. (D) Pituitary progenitor marker LHX3 was significantly lower in NFKB2 KI organoids as compared to WT from d48 onwards. (E) Relative quantification expression of TBX19, a corticotroph marker. TBX19 was significantly increased in NFKB2 KI organoids by d105. (F) Relative quantification expression of pro-opiomelanocortin (POMC), a corticotroph marker. POMC was significantly downregulated in NFKB2 KI organoids from d75. (G) Volume of organoids (mm3) on d105, calculated using Imaris software (see in methods). There was no significant difference in volume between WT and NFKB2 KI organoids (p=0.6126). Data show means ± SEM; n=7 in the WT group, n=8 in the mutant group. Mann-Whitney test (unpaired, two-tailed).
+**Figure 6.:** (A) Number of replicates per time point and per genotype in experiments depicted in the following graphs. Asterisks indicate that 7–8 organoids were grouped for each sample. For other point, each sample consists of a single organoid. (B–F) Relative quantification (RQ) mRNA expression analysis for key markers of pituitary organoids during differentiation: WT (black line and dots) and NFKB2 KI organoids (red line and dots). Data show means ± standard error of the mean (SEM);. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**). (B) Relative quantification expression of HESX1, the earliest pituitary placode marker assessed. The expression of HESX1 was upregulated in NFKB2 KI organoids vs. WT between d27 and d75. (C) Pituitary progenitor marker PITX1 was significantly downregulated in NFKB2 KI organoids at d48 and d75. (D) Pituitary progenitor marker LHX3 was significantly lower in NFKB2 KI organoids as compared to WT from d48 onwards. (E) Relative quantification expression of TBX19, a corticotroph marker. TBX19 was significantly increased in NFKB2 KI organoids by d105. (F) Relative quantification expression of pro-opiomelanocortin (POMC), a corticotroph marker. POMC was significantly downregulated in NFKB2 KI organoids from d75. (G) Volume of organoids (mm3) on d105, calculated using Imaris software (see in methods). There was no significant difference in volume between WT and NFKB2 KI organoids (p=0.6126). Data show means ± SEM; n=7 in the WT group, n=8 in the mutant group. Mann-Whitney test (unpaired, two-tailed).
 
 As MRI had revealed pituitary hypoplasia in 43% of patients with DAVID syndrome (Mac et al., 2023), we investigated whether mutant organoids might be smaller than WT organoids. Comparing the volume of both types of organoids on day 105, we found no significant difference (p=0.6, WT n=7, mutant n=8, Figure 6G). In line with qRT-PCR results, immunostaining showed less expression of LHX3 in NFKB2 KI organoids on day 48 compared to the WT (Figure 7A–B). NFKB2 (the antibody did not discriminate between p100/p52 isoforms) was robustly expressed in WT LHX3 + pituitary progenitors on day 48 (Figure 7A). Unexpectedly, NFKB2 p100/p52 immunostaining was weaker in NFKB2 KI organoids than in WT organoids (Figure 7A–B). Immunostaining at d105 in NFKB2 KI organoids showed the presence of many TBX19 + nuclei, in line with the qRT-PCR results, but few of them were surrounded by cytoplasmic ACTH signal (Figure 7C–D). Quantification after 3D reconstruction of transparent whole organoids showed significantly fewer ACTH + cells in NFKB2 KI organoids on day 105 compared to WT organoids in both qualitative (Figure 8A–B and Figure 8—video 1 and Figure 8—video 2) and quantitative (Figure 8C) assessments. In the absence of an immune system, this is strong evidence in support of a direct role for NFKB2 signaling in pituitary differentiation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig7-v1.jpg)
 
-**Figure 7.:** NFKB2) KI organoids.(A, B) Immunostaining for LHX3 (green) and p100/p52 (red) in the early pituitary-type epithelium was reduced in NFKB2 KI organoids vs wild-type (WT) on day 48 (n=10 organoids for each group). Stronger expression of p100/p52 was observed in pituitary progenitors, but expression in the hypothalamic part of the organoid cannot be excluded. Scale bar: 10 μm (C, D) by day 105, although nuclear TBX19 was detectable in both mutants, these cells failed to co-express ACTH in NFKB2 KI organoids (n=10 organoids for each group). Scale bars: 10 μm.
+**Figure 7.:** (A, B) Immunostaining for LHX3 (green) and p100/p52 (red) in the early pituitary-type epithelium was reduced in NFKB2 KI organoids vs wild-type (WT) on day 48 (n=10 organoids for each group). Stronger expression of p100/p52 was observed in pituitary progenitors, but expression in the hypothalamic part of the organoid cannot be excluded. Scale bar: 10 μm (C, D) by day 105, although nuclear TBX19 was detectable in both mutants, these cells failed to co-express ACTH in NFKB2 KI organoids (n=10 organoids for each group). Scale bars: 10 μm.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig8-v1.jpg)
+
+**Figure 8.:** (A) A representative image of whole-mount immunostaining against adrenocorticotropic hormone (ACTH) in a cleared WT organoid on d105 using light-sheet microscopy. Scale bar: 200 μm. (B) A representative image of whole-mount immunostaining against ACTH in a cleared NFKB2 KI organoid on d105 as above, showing impaired corticotroph differentiation. Scale bar: 100 μm. (C) The number of corticotroph cells per mm3 was significantly decreased in NFKB2 KI organoids (*p=0.0007). Means ± SEM for n=6 organoids WT, n=8 NFKB2 KI organoids. Mann-Whitney test (unpaired, two-tailed, nonparametric).
 
 To further investigate other downstream pathways altered in NFKB2 KI pituitary organoids, we performed whole RNA-seq of five distinct organoids on day 48 from the NFKB2 KI line versus five organoids derived from its corresponding hiPSC control line. As we found that only 60–70% of organoids show signs of pituitary cell differentiation, we chose to perform a preselection of organoids, based on RT-qPCR expression of selected markers (SOX2, HESX1, PITX1, LHX3, TBX19, POU1F1, and POMC) in order to avoid having ‘empty’ HPOs sent for bulk RNA-seq. Differential expression (DE) gene analysis identified 2559 significantly upregulated and 2260 significantly downregulated genes at adjusted p-value (pAdj) <0.05. The global results are depicted as a heatmap to show the similarities across organoids of similar genotypes (Figure 9A), and a volcano plot highlights the magnitudes of DE between the two groups (Figure 9B, Figure 9—source data 1).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig9-v1.jpg)
+
+**Figure 9.:** (A) Heat map showing global differential gene expression between WT vs NFKB2 KI organoids (n=5 for each group). (B) Volcano plot of genes showing differential gene expression between WT vs NFKB2 KI organoids (expressed in Log2 fold-change). Blue dots in the left panel indicate 144 genes involved in hypothalamic-pituitary development. Gray dots indicate all other genes detected in RNA-seq. (C) Volcano plot of genes showing differential gene expression between WT vs NFKB2 KI organoids. Green dots indicate genes coding for 39 key transcription factors whose expression is significantly changed (padj <0.05). Red dots indicate key transcription factors with non-significant changes (padj >0.05). Gray dots indicate all other genes detected in RNA-seq.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig9-figsupp1-v1.jpg)
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Close correlation was found between ratios measured by RNA-seq and RT-qPCR when measured on the same samples. Only transcript levels measurement for TBX19 (red dots) where not correlated. The two red dots represent two different sets of primers used for TBX19 RT-qPCR.
+
 NFKB signaling did not seem to be affected in NFKB2 KI organoids, as most genes involved in that pathway had fold-change values between –0.5 and 0.5 when significant (Figure 9—figure supplement 1). Among a list of 144 genes known to have a functional influence on pituitary-hypothalamic development as curated from the published literature, 67 were found to be differentially expressed in NFKB2 KI organoids (pAdj <0.05) (Figure 9B, and Table 1), of which 39 encode transcription factors (Figure 9C). Expression of these transcription factors was mostly downregulated, with a marked decrease in expression of pituitary progenitor markers such as PITX1 and LHX3. In contrast, the earliest Rathke’s pouch marker, HESX1, showed a twofold increased expression in NFKB2 KI organoids, suggesting impaired progression of pituitary progenitors towards more differentiated stages.
+
+**Table 1.**
+ RNA-seq expression data for a list of 144 genes known from the literature to have a functional influence on pituitary-hypothalamic development.Differentially expressed genes (padj <0.05) in nuclear factor kappa-B subunit 2 (NFKB2) KI organoids are highlighted in green when upregulated and in orange when downregulated. FC; Fold change.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>FC</th>
+      <th>padj</th>
+      <th>Gene name</th>
+      <th>FC</th>
+      <th>padj</th>
+      <th>Gene name</th>
+      <th>FC</th>
+      <th>padj</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ADCYAP1</td>
+      <td>0,447</td>
+      <td>0,00789</td>
+      <td>GLI3</td>
+      <td>1,279</td>
+      <td>0,10094</td>
+      <td>PITX2</td>
+      <td>1,072</td>
+      <td>0,86688</td>
+    </tr>
+    <tr>
+      <td>AIP</td>
+      <td>0,898</td>
+      <td>0,53442</td>
+      <td>GNAS</td>
+      <td>1,058</td>
+      <td>0,39519</td>
+      <td>POLR3A</td>
+      <td>1,014</td>
+      <td>0,90718</td>
+    </tr>
+    <tr>
+      <td>ALDH1A1</td>
+      <td>0,153</td>
+      <td>1,3E-09</td>
+      <td>GNRHR</td>
+      <td>0,453</td>
+      <td>8,3E-05</td>
+      <td>POMC</td>
+      <td>0,434</td>
+      <td>0,0036</td>
+    </tr>
+    <tr>
+      <td>ALDH1A2</td>
+      <td>0,152</td>
+      <td>4,6E-05</td>
+      <td>GNRHR2</td>
+      <td>0,698</td>
+      <td>0,23938</td>
+      <td>POU1F1</td>
+      <td>0,039</td>
+      <td>0,00072</td>
+    </tr>
+    <tr>
+      <td>ALDH1A3</td>
+      <td>0,182</td>
+      <td>2,6E-13</td>
+      <td>GPR101</td>
+      <td>1,209</td>
+      <td>0,83045</td>
+      <td>POU3F1</td>
+      <td>1,374</td>
+      <td>0,42093</td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>0,634</td>
+      <td>0,00168</td>
+      <td>GREB1</td>
+      <td>1,007</td>
+      <td>0,97784</td>
+      <td>POU3F2</td>
+      <td>0,266</td>
+      <td>1,4E-05</td>
+    </tr>
+    <tr>
+      <td>ARNT2</td>
+      <td>0,534</td>
+      <td>0,00027</td>
+      <td>GSX1</td>
+      <td>0,659</td>
+      <td>0,45012</td>
+      <td>POU5F1</td>
+      <td>3,573</td>
+      <td>0,17018</td>
+    </tr>
+    <tr>
+      <td>ASCL1</td>
+      <td>0,345</td>
+      <td>1,4E-06</td>
+      <td>HES1</td>
+      <td>0,663</td>
+      <td>0,02805</td>
+      <td>PROKR2</td>
+      <td>1,056</td>
+      <td>0,97365</td>
+    </tr>
+    <tr>
+      <td>AXIN2</td>
+      <td>1,296</td>
+      <td>0,05889</td>
+      <td>HESX1</td>
+      <td>2,193</td>
+      <td>0,03121</td>
+      <td>PROP1</td>
+      <td>0,054</td>
+      <td>0,00071</td>
+    </tr>
+    <tr>
+      <td>BMP2</td>
+      <td>0,750</td>
+      <td>0,34278</td>
+      <td>HEY1</td>
+      <td>0,804</td>
+      <td>0,13046</td>
+      <td>RAX</td>
+      <td>0,599</td>
+      <td>0,02697</td>
+    </tr>
+    <tr>
+      <td>BMP4</td>
+      <td>4,357</td>
+      <td>2,4E-05</td>
+      <td>HMGA2</td>
+      <td>0,775</td>
+      <td>0,19471</td>
+      <td>RBPJ</td>
+      <td>0,814</td>
+      <td>0,04665</td>
+    </tr>
+    <tr>
+      <td>BMPR1A</td>
+      <td>1,019</td>
+      <td>0,91991</td>
+      <td>INHBB</td>
+      <td>0,458</td>
+      <td>0,03974</td>
+      <td>S100B</td>
+      <td>0,304</td>
+      <td>2,2E-05</td>
+    </tr>
+    <tr>
+      <td>BRAF</td>
+      <td>0,892</td>
+      <td>0,48183</td>
+      <td>ISL1</td>
+      <td>1,097</td>
+      <td>0,75812</td>
+      <td>SALL1</td>
+      <td>1,106</td>
+      <td>0,76122</td>
+    </tr>
+    <tr>
+      <td>CDH1</td>
+      <td>1,626</td>
+      <td>0,009</td>
+      <td>KRT8</td>
+      <td>2,617</td>
+      <td>2E-06</td>
+      <td>SHH</td>
+      <td>0,786</td>
+      <td>0,51179</td>
+    </tr>
+    <tr>
+      <td>CGA</td>
+      <td>12,756</td>
+      <td>0,04234</td>
+      <td>LATS1</td>
+      <td>0,857</td>
+      <td>0,01997</td>
+      <td>SIX1</td>
+      <td>0,219</td>
+      <td>8,4E-06</td>
+    </tr>
+    <tr>
+      <td>CREB1</td>
+      <td>0,850</td>
+      <td>0,12901</td>
+      <td>LATS2</td>
+      <td>1,460</td>
+      <td>0,01663</td>
+      <td>SIX2</td>
+      <td>0,161</td>
+      <td>9E-09</td>
+    </tr>
+    <tr>
+      <td>CRH</td>
+      <td>4,347</td>
+      <td>0,00469</td>
+      <td>LHX2</td>
+      <td>0,622</td>
+      <td>0,00625</td>
+      <td>SIX3</td>
+      <td>0,859</td>
+      <td>0,69976</td>
+    </tr>
+    <tr>
+      <td>CRHR1</td>
+      <td>0,156</td>
+      <td>0,05131</td>
+      <td>LHX3</td>
+      <td>0,064</td>
+      <td>2,4E-06</td>
+      <td>SIX6</td>
+      <td>0,467</td>
+      <td>0,00586</td>
+    </tr>
+    <tr>
+      <td>CRHR2</td>
+      <td>0,823</td>
+      <td>0,73602</td>
+      <td>LHX4</td>
+      <td>0,557</td>
+      <td>0,00398</td>
+      <td>SLC15A2</td>
+      <td>0,624</td>
+      <td>0,00164</td>
+    </tr>
+    <tr>
+      <td>CTNNB1</td>
+      <td>1,009</td>
+      <td>0,95542</td>
+      <td>MEN1</td>
+      <td>1,030</td>
+      <td>0,80309</td>
+      <td>SLC6A3</td>
+      <td>2,215</td>
+      <td>0,15797</td>
+    </tr>
+    <tr>
+      <td>CYP11A1</td>
+      <td>6,086</td>
+      <td>0,00166</td>
+      <td>MSX1</td>
+      <td>0,904</td>
+      <td>0,90909</td>
+      <td>SMO</td>
+      <td>0,957</td>
+      <td>0,70401</td>
+    </tr>
+    <tr>
+      <td>DIO2</td>
+      <td>1,114</td>
+      <td>0,71885</td>
+      <td>NANOG</td>
+      <td>6,301</td>
+      <td>0,00472</td>
+      <td>SMOC2</td>
+      <td>4,163</td>
+      <td>0,03488</td>
+    </tr>
+    <tr>
+      <td>DISP1</td>
+      <td>1,142</td>
+      <td>0,47708</td>
+      <td>NEUROD1</td>
+      <td>0,883</td>
+      <td>0,50966</td>
+      <td>SOX11</td>
+      <td>0,736</td>
+      <td>0,12757</td>
+    </tr>
+    <tr>
+      <td>DLK1</td>
+      <td>0,594</td>
+      <td>0,01988</td>
+      <td>NEUROD2</td>
+      <td>1,137</td>
+      <td>0,84178</td>
+      <td>SOX2</td>
+      <td>0,815</td>
+      <td>0,42151</td>
+    </tr>
+    <tr>
+      <td>DMRTA2</td>
+      <td>0,144</td>
+      <td>3,6E-11</td>
+      <td>NEUROD4</td>
+      <td>0,320</td>
+      <td>1,7E-05</td>
+      <td>SOX3</td>
+      <td>0,787</td>
+      <td>0,50152</td>
+    </tr>
+    <tr>
+      <td>DRD2</td>
+      <td>2,753</td>
+      <td>2E-05</td>
+      <td>NEUROG1</td>
+      <td>0,493</td>
+      <td>0,19209</td>
+      <td>SOX9</td>
+      <td>0,557</td>
+      <td>0,00214</td>
+    </tr>
+    <tr>
+      <td>DUOX2</td>
+      <td>2,595</td>
+      <td>0,01961</td>
+      <td>NEUROG2</td>
+      <td>0,208</td>
+      <td>0,03165</td>
+      <td>SRD5A1</td>
+      <td>0,961</td>
+      <td>0,79794</td>
+    </tr>
+    <tr>
+      <td>DZIP1</td>
+      <td>0,818</td>
+      <td>0,04264</td>
+      <td>NFKB2</td>
+      <td>1,236</td>
+      <td>0,16144</td>
+      <td>SST</td>
+      <td>0,994</td>
+      <td>0,9921</td>
+    </tr>
+    <tr>
+      <td>EGR1</td>
+      <td>1,784</td>
+      <td>0,15768</td>
+      <td>NKX2-1</td>
+      <td>0,707</td>
+      <td>0,15518</td>
+      <td>SSTR1</td>
+      <td>0,509</td>
+      <td>0,09008</td>
+    </tr>
+    <tr>
+      <td>EPCAM</td>
+      <td>1,128</td>
+      <td>0,72728</td>
+      <td>NKX2-2</td>
+      <td>1,569</td>
+      <td>0,37322</td>
+      <td>SSTR2</td>
+      <td>0,769</td>
+      <td>0,43599</td>
+    </tr>
+    <tr>
+      <td>ETS1</td>
+      <td>3,947</td>
+      <td>4,8E-13</td>
+      <td>NOG</td>
+      <td>1,376</td>
+      <td>0,31897</td>
+      <td>TAZ</td>
+      <td>0,967</td>
+      <td>0,85318</td>
+    </tr>
+    <tr>
+      <td>EYA1</td>
+      <td>0,514</td>
+      <td>0,03962</td>
+      <td>NOTCH1</td>
+      <td>1,006</td>
+      <td>0,98289</td>
+      <td>TBX19</td>
+      <td>0,663</td>
+      <td>0,01294</td>
+    </tr>
+    <tr>
+      <td>FGF10</td>
+      <td>0,267</td>
+      <td>3,5E-09</td>
+      <td>NOTCH2</td>
+      <td>0,937</td>
+      <td>0,60691</td>
+      <td>TBX3</td>
+      <td>0,997</td>
+      <td>0,98911</td>
+    </tr>
+    <tr>
+      <td>FGF2</td>
+      <td>1,224</td>
+      <td>0,18237</td>
+      <td>NR0B1</td>
+      <td>1,062</td>
+      <td>0,92893</td>
+      <td>TCF4</td>
+      <td>1,015</td>
+      <td>0,95769</td>
+    </tr>
+    <tr>
+      <td>FGF3</td>
+      <td>0,611</td>
+      <td>0,08445</td>
+      <td>NR3C1</td>
+      <td>0,846</td>
+      <td>0,30279</td>
+      <td>TCF7L2</td>
+      <td>1,178</td>
+      <td>0,58844</td>
+    </tr>
+    <tr>
+      <td>FGF8</td>
+      <td>0,506</td>
+      <td>0,04827</td>
+      <td>NR4A1</td>
+      <td>1,227</td>
+      <td>0,62126</td>
+      <td>TFAP2A</td>
+      <td>2,887</td>
+      <td>0,00173</td>
+    </tr>
+    <tr>
+      <td>FOLR1</td>
+      <td>2,729</td>
+      <td>0,03443</td>
+      <td>NR4A2</td>
+      <td>0,407</td>
+      <td>0,00078</td>
+      <td>TGIF1</td>
+      <td>1,422</td>
+      <td>0,00278</td>
+    </tr>
+    <tr>
+      <td>FOXA1</td>
+      <td>0,550</td>
+      <td>0,02193</td>
+      <td>NR5A1</td>
+      <td>0,834</td>
+      <td>0,61396</td>
+      <td>THRA</td>
+      <td>0,714</td>
+      <td>0,00712</td>
+    </tr>
+    <tr>
+      <td>FOXC1</td>
+      <td>1,619</td>
+      <td>0,11818</td>
+      <td>NUPR1</td>
+      <td>1,384</td>
+      <td>0,3477</td>
+      <td>THRB</td>
+      <td>2,260</td>
+      <td>0,00025</td>
+    </tr>
+    <tr>
+      <td>FOXJ1</td>
+      <td>0,424</td>
+      <td>0,00117</td>
+      <td>OLFM1</td>
+      <td>0,830</td>
+      <td>0,29166</td>
+      <td>TIPRL</td>
+      <td>0,810</td>
+      <td>0,00393</td>
+    </tr>
+    <tr>
+      <td>FOXO1</td>
+      <td>1,494</td>
+      <td>0,00782</td>
+      <td>OTP</td>
+      <td>0,663</td>
+      <td>0,19349</td>
+      <td>TLE5</td>
+      <td>0,695</td>
+      <td>0,00502</td>
+    </tr>
+    <tr>
+      <td>FST</td>
+      <td>2,384</td>
+      <td>9,1E-06</td>
+      <td>OTX1</td>
+      <td>0,863</td>
+      <td>0,72226</td>
+      <td>TSHR</td>
+      <td>0,998</td>
+      <td>0,99753</td>
+    </tr>
+    <tr>
+      <td>GATA2</td>
+      <td>5,579</td>
+      <td>9,7E-11</td>
+      <td>OTX2</td>
+      <td>0,976</td>
+      <td>0,94713</td>
+      <td>USP39</td>
+      <td>1,035</td>
+      <td>0,7908</td>
+    </tr>
+    <tr>
+      <td>GATA3</td>
+      <td>4,758</td>
+      <td>0,00483</td>
+      <td>PAX3</td>
+      <td>0,362</td>
+      <td>0,11963</td>
+      <td>WNT4</td>
+      <td>0,712</td>
+      <td>0,11665</td>
+    </tr>
+    <tr>
+      <td>GHRH</td>
+      <td>0,712</td>
+      <td>0,65053</td>
+      <td>PAX6</td>
+      <td>0,294</td>
+      <td>0,00059</td>
+      <td>WNT5A</td>
+      <td>1,442</td>
+      <td>0,29543</td>
+    </tr>
+    <tr>
+      <td>GHRHR</td>
+      <td>0,672</td>
+      <td>0,48512</td>
+      <td>PAX7</td>
+      <td>0,570</td>
+      <td>0,1882</td>
+      <td>YAP1</td>
+      <td>1,091</td>
+      <td>0,56585</td>
+    </tr>
+    <tr>
+      <td>GLI1</td>
+      <td>1,050</td>
+      <td>0,84104</td>
+      <td>PCSK1</td>
+      <td>0,354</td>
+      <td>0,00033</td>
+      <td>ZBTB20</td>
+      <td>0,354</td>
+      <td>5,3E-10</td>
+    </tr>
+    <tr>
+      <td>GLI2</td>
+      <td>1,328</td>
+      <td>0,1593</td>
+      <td>PITX1</td>
+      <td>0,299</td>
+      <td>6,3E-07</td>
+      <td>ZEB2</td>
+      <td>1,378</td>
+      <td>0,01078</td>
+    </tr>
+  </tbody>
+</table>
 
 During pituitary development, progenitors undergo epithelial-to-mesenchymal transition (EMT). Data from human fetuses (Zhang et al., 2020) suggest that pituitary stem cells/progenitors are in a hybrid state, as they simultaneously express ‘stemness’ as well as epithelial and mesenchymal-associated genes, and expression of all these gene sets decreases in concert during the course of differentiation. While the overall number of anterior pituitary-type cells in NFKB2 KI organoids was not affected, as confirmed by RT-qPCR of the pan-pituitary cell adhesion marker EPCAM, there was a significant decrease in the expression of stemness markers such as HES1, SOX2, and SOX9 (Table 2, left panel), accompanied by increased expression of stem cell-associated epithelial markers CDH1 and KRT8 (Table 2, middle panel) and decreased expression of stem cell-associated mesenchymal markers CDH2 and VIM. Other mesenchymal markers expressed in both stem cells and differentiating cells (COL1A1 and COL1A2) were upregulated (Table 2, right panel). CLDN6, which is expressed in early pituitary progenitors (Zhang et al., 2020), was upregulated (fold change = 2.3; p<0.0001) whereas CLDN9, widely expressed in the fetal human pituitary (Zhang et al., 2020), was decreased (fold change = 0.34; p<0.0001). Overall, these results suggest that progenitors initiate EMT, but stall during the process. Of note, the expression of ZEB2, SNAI1, and SNAI2, key initiators of EMT through the downregulation of CDH1, is significantly increased (fold changes of 1.37, 3.37, and 5.36, respectively; p<0.01), suggesting that NFKB2 plays an important role downstream from these effectors.
 
-## TBX19 KI and NFKB2 KI alter hypothalamic-pituitary organoid development through distinct mechanisms
+**Table 2.**
+ Differential expression analysis for genes associated with different stages of epithelial to mesenchymal transition in nuclear factor kappa-B subunit 2 (NFKB2)D865G/D865G vs wild-type (WT) organoids.Significantly decreased and increased expressions are highlighted in orange and green, respectively. FC, Fold change.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Stemness markers</th>
+      <th colspan="3">Epithelial markers</th>
+      <th colspan="3">Mesenchymal markers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene name</td>
+      <td>FC</td>
+      <td>padj</td>
+      <td>Gene name</td>
+      <td>FC</td>
+      <td>padj</td>
+      <td>Gene name</td>
+      <td>FC</td>
+      <td>padj</td>
+    </tr>
+    <tr>
+      <td>SOX2</td>
+      <td>0,815</td>
+      <td>0,4215</td>
+      <td>CDH1</td>
+      <td>1,626</td>
+      <td>0,0090</td>
+      <td>CDH2</td>
+      <td>0,616</td>
+      <td>0,0003</td>
+    </tr>
+    <tr>
+      <td>SOX4</td>
+      <td>0,784</td>
+      <td>0,0245</td>
+      <td>EPCAM</td>
+      <td>1,128</td>
+      <td>0,7273</td>
+      <td>SNAI1</td>
+      <td>3,379</td>
+      <td>7,14E-06</td>
+    </tr>
+    <tr>
+      <td>SOX9</td>
+      <td>0,557</td>
+      <td>0,0021</td>
+      <td>KRT8</td>
+      <td>2,617</td>
+      <td>1,98E-06</td>
+      <td>VIM</td>
+      <td>0,663</td>
+      <td>0,0366</td>
+    </tr>
+    <tr>
+      <td>NOTCH2</td>
+      <td>0,937</td>
+      <td>0,6069</td>
+      <td>CLDN4</td>
+      <td>1,203</td>
+      <td>0,3140</td>
+      <td>COL2A1</td>
+      <td>1,662</td>
+      <td>0,0849</td>
+    </tr>
+    <tr>
+      <td>HES1</td>
+      <td>0,663</td>
+      <td>0,0280</td>
+      <td>GRHL2</td>
+      <td>1,360</td>
+      <td>0,1920</td>
+      <td>COL1A1</td>
+      <td>10,939</td>
+      <td>7,76E-06</td>
+    </tr>
+  </tbody>
+</table>
+
+### TBX19 KI and NFKB2 KI alter hypothalamic-pituitary organoid development through distinct mechanisms
 
 The transcription factor RAX, which is physiologically expressed in the hypothalamus, also showed a moderate but significant decrease in its expression in NFKB2 KI organoids (Figure 9C and Table 1), suggesting that the phenotype could at least partially be due to a hypothalamic defect. Indeed, among the growth factors known to mediate the interaction between the hypothalamus and oral ectoderm during pituitary development in animal models, BMP4, FGF8, and FGF10 had fold-changes of 4.35, 0.5, and 0.26 in NFKB2 KI organoids respectively, whereas SHH, WNT5A, and FGF8 expression levels were not modified (Table 1).
 
@@ -89,19 +767,19 @@ Comparing gene expression levels between TBX19 KI and NFKB2 KI organoids of deve
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig10-v1.jpg)
 
-**Figure 10.:** NFKB2) knock-in (KI) organoids.(A) RT-qPCR experiments at d48 show that HESX1 expression is upregulated NFKB2 KI organoids, compared to wild-type (WT) and TBX19 KI, whereas PITX1 and LHX3 are downregulated in both mutants. (B) BMP4 expression is increased whereas, and FGF8 and FGF10 are decreased in NFKB2 mutants, but unchanged in TBX19 KI organoids. Data show means ± SEM; n=17, 12, and 11 for WT, TBX19 KI, and NFKB2 KI, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***),.
+**Figure 10.:** (A) RT-qPCR experiments at d48 show that HESX1 expression is upregulated NFKB2 KI organoids, compared to wild-type (WT) and TBX19 KI, whereas PITX1 and LHX3 are downregulated in both mutants. (B) BMP4 expression is increased whereas, and FGF8 and FGF10 are decreased in NFKB2 mutants, but unchanged in TBX19 KI organoids. Data show means ± SEM; n=17, 12, and 11 for WT, TBX19 KI, and NFKB2 KI, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***),.
 
 We then explored markers of different stages of corticotroph maturation that were recently identified in human fetal pituitary (Zhang et al., 2020). RNA-seq on d48 NFKB2 KI organoids showed increased expression of FST, a gene expressed in immature corticotropes, and concomitant decreased levels of fully mature corticotrope markers AR, NR4A2, PCSK1, and POMC (0.63, 0.4, 0.35, and 0.43-fold changes, respectively) (Table 1). RT-qPCR at d48, d75, and d105 showed that TBX19 was upregulated at later stages in both models, suggesting that both TBX19 and p52 are involved in the control of TBX19 expression (Figure 11A). The NR4A2 transcription factor was downregulated at d75 in both mutants, but strongly upregulated in TBX19 KI organoids and downregulated in NFKB2 KI organoids at d105 (Figure 11B). PCSK1 expression, necessary for prohormone processing, also decreased in both mutants, but this phenomenon started earlier in NFKB2 KI organoids (Figure 11C). Finally, we found that POMC expression was as strongly impaired in NFKB2 KI organoids as in TBX19 KI organoids. These results, combined with normal expression levels for NEUROD1, corroborate the hypothesis that TBX19-positive precursors fail to achieve terminal differentiation in NFKB2 KI organoids.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig11-v1.jpg)
 
-**Figure 11.:** TBX19 KI and nuclear factor kappa-B subunit 2 (NFKB2) knock-in (KI) organoids.(A) RT-qPCR measurements of TBX19 expression show a late (d105) increase in both mutants, with a stronger effect in TBX19 KI organoids. (B) Corticotroph terminal differentiation marker NR4A2 was decreased in both mutants at d48 and d75, but only in NFKB2 mutants at d105. (C) PCSK1 downregulation is only observed in NFKB2 KI at d48, and in both models at d75 and d102. (D) A decrease in pro-opiomelanocortin (POMC) expression is observed in both mutants from d48 onwards. Data show means ± SEM; d48: n=17, 12, and 11; d75, n=9, 7, and 6; d105: n=9, 5, and 5 for WT, TBX19 KI, and NFKB2 KI organoids, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***).
+**Figure 11.:** (A) RT-qPCR measurements of TBX19 expression show a late (d105) increase in both mutants, with a stronger effect in TBX19 KI organoids. (B) Corticotroph terminal differentiation marker NR4A2 was decreased in both mutants at d48 and d75, but only in NFKB2 mutants at d105. (C) PCSK1 downregulation is only observed in NFKB2 KI at d48, and in both models at d75 and d102. (D) A decrease in pro-opiomelanocortin (POMC) expression is observed in both mutants from d48 onwards. Data show means ± SEM; d48: n=17, 12, and 11; d75, n=9, 7, and 6; d105: n=9, 5, and 5 for WT, TBX19 KI, and NFKB2 KI organoids, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***).
 
 Interestingly, other lineages also appeared to be affected, both in TBX19 KI and NFKB2 KI organoids. RNA-seq at d48 showed drastic downregulation of PROP1 and POU1F1 transcription factors in NFKB2 mutants. Although we could not accurately measure POU1F1 expression at d48 due to its too low expression, RT-qPCR (Figure 12) showed that PROP1 downregulation was also occurring in TBX19 KI organoids at d48 (Figure 12A, left), and both PROP1 and POU1F1 levels were barely detectable at d75 in the two models (Figure 12A and D). This is likely to be the consequence of the impaired generation of pituitary progenitors described above. Nonetheless, other transcription factor markers of POU1F1-dependent lineages were expressed, as shown by normal expression of NEUROD4 and ZBTB20 in TBX19 KI organoids at d48 (Figure 12B and C, left). However, both genes had lower expression levels at 75 compared to WT (Figure 12B and C, right). In NFKB2 KI organoids, NEUROD4 was downregulated at both time points (Figure 12B), and ZBTB20 at d48 only (Figure 12C, left), with signs of recovery at d75 (Figure 12C, right) and d105 (data not shown). Again, these results suggest that different mechanisms converge on impaired POU1F1-dependent lineage development.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig12-v1.jpg)
 
-**Figure 12.:** TBX19 KI and nuclear factor kappa-B subunit 2 (NFKB2) KI organoids.(A) Strong downregulation of PROP1 expression is observed at d48 in both mutants and persists at d75. (B) Expression of POU1F1-dependant lineage progenitors and mature somatotrophs marker NEUROD4 is decreased at d48 inNFKB2 organoids, and in both models at d105. (C) ZBTB20, a marker for POU1F1-dependant lineage progenitors and mature lactotrophs, is less expressed in NFKB2 KI organoids at d48, but at normal levels by d75. In TBX19 KI mutants, its expression is normal at d48 but decreased by d75. (D) On d75, POU1F1 expression is barely detectable in either model. Data show means ± SEM; d48: n=17, 12, and 11; d75: n=9, 7, and 6 for WT, TBX19 KI and NFKB2 KI organoids, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***).
+**Figure 12.:** (A) Strong downregulation of PROP1 expression is observed at d48 in both mutants and persists at d75. (B) Expression of POU1F1-dependant lineage progenitors and mature somatotrophs marker NEUROD4 is decreased at d48 inNFKB2 organoids, and in both models at d105. (C) ZBTB20, a marker for POU1F1-dependant lineage progenitors and mature lactotrophs, is less expressed in NFKB2 KI organoids at d48, but at normal levels by d75. In TBX19 KI mutants, its expression is normal at d48 but decreased by d75. (D) On d75, POU1F1 expression is barely detectable in either model. Data show means ± SEM; d48: n=17, 12, and 11; d75: n=9, 7, and 6 for WT, TBX19 KI and NFKB2 KI organoids, respectively. Mann-Whitney t-test (unpaired, two-tailed, nonparametric). p<0.05 (*), p<0.01 (**), p<0.005 (***).
 
 Finally, the glycoprotein hormone common alpha subunit CGA was strongly upregulated at d48 (Table 1) and d75 (data not shown) in NFKB2 KI organoids. The concomitant increase in GATA2, CYP11A1, and FOLR1 may suggest a redirection of some progenitors towards a gonadotroph/thyrotroph cell fate. However, the lack of changes in the expression of NR5A1, NEUROD1, and SOX11, and the undetectable transcripts for the specific beta subunits FSHB, LHB, and TSHB before d105, do not favour this hypothesis.
 
@@ -123,7 +801,7 @@ The precise molecular mechanisms by which NFKB2 mutation impairs corticotroph de
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/90875/elife-90875-fig14-v1.jpg)
 
-**Figure 14.:** NFKB2) mutation during hypothalamic-pituitary organoid development.D865G/D865GDiagram illustrating changes in gene expression (black arrows) associated with different stages of normal hypothalamic-pituitary organoids development and cell differentiation (large blue arrows). The NFKB2 mutation perturbs these changes (+/=/- signs in red), possibly through direct transcriptional control for genes indicated in blue.D865G/D865G
+**Figure 14.:** Diagram illustrating changes in gene expression (black arrows) associated with different stages of normal hypothalamic-pituitary organoids development and cell differentiation (large blue arrows). The NFKB2D865G/D865G mutation perturbs these changes (+/=/- signs in red), possibly through direct transcriptional control for genes indicated in blue.
 
 The NFKB2 gene product p52 could also be involved in the final steps of corticotroph differentiation. While qRT-PCR showed increased levels of TBX19 mRNA in mutant organoids, this did not lead to the expected increase in POMC mRNA transcripts. Moreover, some NFKB2 mutants had TBX19 + cells without ACTH expression. This suggests that p52 is necessary for POMC synthesis, which NFKB2D865G may prevent. This could be due to an abnormal DNA binding of the NFKB heterodimer to the POMC promoter (Giraldi et al., 2011; Drouin, 2016), but as other NFKB binding sites are found in intronic regions, it may also be involved in changes in chromatin structures required for proper transcription. The same possibilities apply to PCSK1, the gene coding for the enzyme necessary for POMC to ACTH conversion, and to other genes involved in corticotroph maturation. Besides, NFKB2D865G could also block TBX19 + cells in a pre-differentiated state of corticotroph cells expressing FST through its derepression of chromatin remodeling factors such as EZH2 (De Donatis et al., 2016).
 
@@ -143,17 +821,216 @@ Future studies investigating the direct role of p52 on transcription and changes
 
 ## Materials and methods
 
-## Culture and maintenance of hiPSC lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human induced pluripotent stem cells</td>
+      <td>MaSC Platform, MMG UMR1251, INSERM-AMU</td>
+      <td>10742 L</td>
+      <td>Reprogrammed from fibroblasts (Coriell, female, 82yo)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Synthemax II-SC Substrate</td>
+      <td>Corning</td>
+      <td>#3335</td>
+      <td>Cell culture matrix</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>StemMACS hiPSC-Brew XF human medium</td>
+      <td>MACS Miltenyi Biotec</td>
+      <td>#130-104-368</td>
+      <td>Cell culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Knockout Serum Replacement</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#10828028</td>
+      <td>Cell culture reagent</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Human BMP-4</td>
+      <td>Peprotech</td>
+      <td>#AF-120-05ET</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drug</td>
+      <td>Smoothened Agonist</td>
+      <td>Sigma-Aldrich/Merck</td>
+      <td>#SML 1314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>AlbumiNZ Bovine Albumin Low IgG</td>
+      <td>MP Biomedicals</td>
+      <td>#0219989790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target TBX19K146R</td>
+      <td>This paper</td>
+      <td>TBX19 sgRNA</td>
+      <td>AAGCTGACCAACAAGCTCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target TBX19K146R</td>
+      <td>This paper</td>
+      <td>TBX19 sgRNA oligo up</td>
+      <td>5’-CACCGAAGCTGACCAACAAGCTCAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target TBX19K146R</td>
+      <td>This paper</td>
+      <td>TBX19 sgRNA oligo down</td>
+      <td>5’-AAACTTGAGCTTGTTGGTCAGCTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target TBX19K146R</td>
+      <td>This paper</td>
+      <td>TBX19 ssODN</td>
+      <td>TGGATGAAAGCTCCCATCTCCTTCAGCAAAGTGAGGCTGACCAACAAGTTaAATGGAGGCGGGCAGGTACGAATGAGGCGGGCAGGCCTGGCCACCCGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers used for PCR analyses, CAPS assay, and Sanger Sequencing</td>
+      <td>This paper</td>
+      <td>TBX19 fwd</td>
+      <td>CCCCTGGACAAGGTGAGAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers used for PCR analyses, CAPS assay, and Sanger Sequencing</td>
+      <td>This paper</td>
+      <td>TBX19 rev</td>
+      <td>GACTCCCGGGAATAATTGGCTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target NFKB2D865G</td>
+      <td>This paper</td>
+      <td>NFKB2 sgRNA</td>
+      <td>GTGAAGGAAGACAGTGCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target NFKB2D865G</td>
+      <td>This paper</td>
+      <td>NFKB2 sgRNA oligo up</td>
+      <td>5’-CACCGTGAAGGAAGACAGTGCGTA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target NFKB2D865G</td>
+      <td>This paper</td>
+      <td>NFKB2 sgRNA oligo down</td>
+      <td>5’-AAACTACGCACTGTCTTCCTTCAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ligonucleotides used for CRISPR/Cas9 experiments to target NFKB2D865G</td>
+      <td>This paper</td>
+      <td>NFKB2 ssODN</td>
+      <td>TCCCATTCCTGTCCCCATTTACCCCCAGCAGAGGTGAAGGAAGGCAGTGCCTACGGGAGCCAGTCAGTGGAGCAGGAGGCAGAGAAGCTGGGCCCACCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers used for PCR analyses, CAPS assay, and Sanger Sequencing</td>
+      <td>This paper</td>
+      <td>NFKB2 fwd</td>
+      <td>CCCTAACCATGACTCAGACCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>primers used for PCR analyses, CAPS assay, and Sanger Sequencing</td>
+      <td>This paper</td>
+      <td>NFKB2 rev</td>
+      <td>CCTCCCCTTCCCATGAGAATCC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human NFKB2 (p100/p52)Rabbit polyclonal</td>
+      <td>Sigma,</td>
+      <td>HPA008422RRID:AB_1854434</td>
+      <td>(1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human LHX3Mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>67.4E12RRID:AB_2135805</td>
+      <td>(1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human TBX19Rabbit polyclonal</td>
+      <td>Sigma,</td>
+      <td>HPA072686RRID:AB_2732209</td>
+      <td>(1/300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ACTHGuinea pig polyclonal</td>
+      <td>NIDDK</td>
+      <td></td>
+      <td>(1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human E-human cadherinRat monoclonal</td>
+      <td>Millipore,</td>
+      <td>MABT26RRID:AB_10807576</td>
+      <td>(1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human NKX2.1Mouse monoclonal</td>
+      <td>Millipore,</td>
+      <td>MAB5460RRID:AB_571072</td>
+      <td>(1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human PITX1Rabbit polyclonal</td>
+      <td>Sigma,</td>
+      <td>HPA008743RRID:AB_1855413</td>
+      <td>(1/500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Culture and maintenance of hiPSC lines
 
 The 10742 L healthy individual-derived hiPSC line was used in the study as the WT control (provided by the Cell Reprogramming and Differentiation Facility [MaSC], Marseille Medical Genetics, Marseille, France). Information about this hiPSC line is indicated in Supplementary file 1a. Two ‘knock-in’ mutant lines carrying TBX19K146R/K146R (thereafter also designated as TBX19 KI) and NFKB2D865G/D865G (thereafter also abridged as NFKB2 KI) were generated using CRISPR/Cas9 editing from the isogenic control line. All hiPSC lines were cultured on six-well plates (Corning, #3335, New York, USA) coated with Synthemax II-SC Substrate (working concentration at 0.025 mg/mL, Corning, New York, USA) and maintained undifferentiated in a chemically defined growth medium (StemMACS hiPSC-Brew XF human medium; MACS Miltenyi Biotec, Paris, France) (Giobbe et al., 2015). hiPSC lines were maintained in a humidified incubator under conditions of 37 °C, 5% CO2, with a daily change of medium, and passaged when cells reached 60–80% confluency using enzyme-free ReLeSR according to manufacturer’s recommendations (StemCell Technologies, Canada, #05872).
 
-## CRISPR/Cas9 mediated genome editing of hiPSC
+### CRISPR/Cas9 mediated genome editing of hiPSC
 
 CRISPR/Cas9 gene editing was used to create the TBX19K146R/K146R and the NFKB2D865G/D865G mutations using the method as previously described (Arnaud et al., 2022).
 
 CRISPR/Cas9 was used to generate two mutant hiPSC lines from 10742 L hiPSC:
 
-## Preparation of the CRISPR/Cas9 sgRNA plasmid
+### Preparation of the CRISPR/Cas9 sgRNA plasmid
 
 For each targeted gene, sgRNA plasmid was prepared as previously described (Ran et al., 2013). Briefly, we designed a sgRNA sequence within 20 nucleotides from the target site selected with the open-source CRISPOR tool (http://crispor.tefor.net/) (Concordet and Haeussler, 2018).
 
@@ -163,7 +1040,7 @@ The sgRNA sequence used to generate NFKB2D865G was (5’>3’): GTGAAGGAAGACAGTG
 
 We used the cAB03 (also known as pX459-pEF1alpha) vector as previously described (Arnaud et al., 2022). Briefly, pSpCas9 (BB)–2A-Puro (PX459) V2.0 (Addgene plasmid # 62988, Addgene, Teddington, UK) was modified by the EF1 alpha promoter (Arnaud et al., 2022). The chosen sgRNA was cloned into the cAB03 open plasmid vector using the method previously described by Arnaud et al., 2022. The final vector expressed the corresponding sgRNA under the control of the U6 promoter, as well as Cas9 under the control of the EF-1alpha promoter, and a puromycin resistance gene.
 
-## Single-stranded oligo DNA nucleotides (ssODN) design
+### Single-stranded oligo DNA nucleotides (ssODN) design
 
 We also designed donor sequences to generate TBX19K146R and NFKB2D865G missense mutations. A donor sequence is used for homology-directed repair, allowing the introduction (‘knock-in,’ KI) of single nucleotide variations, with low efficiency. To optimize the efficiency of KI editing, the donor sequences were designed as ssODN, carrying the mutation of interest, and also included a silent (or blocking) mutation that mutates the protospacer-adjacent motif (PAM) or disrupts the sgRNA binding region to prevent re-cutting by Cas9 after successful editing (Paquet et al., 2016; Edmondson et al., 2021; Arnaud et al., 2022; Kwart et al., 2017). The ssODN contained 100 nucleotides with homology arms on each side of the target region. The ssODN sequence was as follows (see also Supplementary file 1b and Supplementary file 1c):
 
@@ -175,17 +1052,17 @@ TCCCATTCCTGTCCCCATTTACCCCCAGCAGAGGTGAAGGAAGGCAGTGCCTACGGGAGCCAGTCAGTGGAGCAGGAGGC
 
 The ssODN were synthesized by Integrated DNA Technologies (Coralville, Iowa, US) at Ultramer quality.
 
-## Electroporation
+### Electroporation
 
 hiPSC were transfected with constructed sgRNA/Cas9 vectors by electroporation using the Neon Transfection System 100 µL kit (Invitrogen). A summary of the procedure is described in Figure 1—figure supplement 1.
 
-## Clone isolation and screening
+### Clone isolation and screening
 
 On day 3 post-transfection, we used a cleaved amplified polymorphic sequences (CAPS) assay to estimate the efficacy of CRISPR/Cas9 in bulk transfected hiPSC populations to choose the number of colonies to be picked (Zischewski et al., 2017). A restriction enzyme recognition site is inserted in the donor template. CAPS primers and restriction enzymes were determined with the help of AmplifX software (version 2.0.0b3). CAPS primers were listed in Supplementary file 1d. The CAPS products were separated and visualized by electrophoresis on a 2% agarose gel and analyzed for densitometry with ImageJ (Arnaud et al., 2022; Kwart et al., 2017).
 
 After 10 d, the CAPS assay was also used to screen and identify the possible KI clones. KI clones were screened by CAPS assay and confirmed by Sanger sequencing (Genewiz, Leipzig, Germany). Analyses of Sanger traces were done by Sequencher DNA sequence analysis software (version 5.4.6, Gene Codes Corporation, Ann Arbor, MI USA, http://www.genecodes.com) to align sequences of KI clones with WT sequence to confirm the successful edition. Sanger sequencing primers are described Supplementary file 1d. KI clones were kept, amplified, and then cryopreserved.
 
-## In vitro pituitary organoids differentiated from hiPSC
+### In vitro pituitary organoids differentiated from hiPSC
 
 Pituitary organoids were produced at the same time, using the same protocol for WT and edited hiPSC lines. Two batches of differentiation with two hundred organoids for each hiPSC line were generated:
 
@@ -193,28 +1070,28 @@ The differentiation protocol was based on a protocol from Matsumoto et al. with 
 
 From day 18, BMP4 was withdrawn and half of the medium was renewed every 2–3 d. At this point, organoids were maintained under high-O2 conditions (40%) and 5% CO2 in an MCO-5M incubator (Panasonic). From day 30, gfCDM medium supplemented with 20% KSR was used, and all medium was renewed every 2–3 d until at least day 105. Induction into pituitary progenitor cells (defined as LHX3+) and into pituitary hormone-producing cells was evaluated by qRT-PCR (on days 0, 6, 18, 27, 48, 75, 105) and immunofluorescence (on days 48 and 105) (see below).
 
-## Validating TBX19K146R targeting and assessing off-target mutations by whole genome sequencing (WGS)
+### Validating TBX19K146R targeting and assessing off-target mutations by whole genome sequencing (WGS)
 
 For TBX19K146R, we used WGS to assess on-target and off-target mutations, because the edited site is far from the cut site (15 bases). DNA extracted from control and TBX19 KI (5 organoids each) was submitted for WGS to an average depth of 15 X (Integraged Genomics platform). PCR-free libraries were prepared with the NEBNext Ultra II DNA Library Prep Kits (New England BioLabs) according to supplier recommendations. Specific double-strand gDNA quantification and a fragmentation (300 ng of input with high-molecular-weight gDNA) sonication method were used to obtain approximately 400 bp fragments. Finally, paired-end adaptor oligonucleotides (xGen TS-LT Adapter Duplexes from Integrated DNA Technologies) were ligated and re-paired. Tailed fragments were purified for direct sequencing without a PCR step. DNA PCR-free libraries were sequenced on paired-end 150 bp runs on the NovaSeq6000 (Illumina) apparatus. Image analysis and base calling were performed using the Illumina Real Time Analysis (RTA) Pipeline with default parameters. Sequence reads were mapped on the Human Genome Build (GRCh38) using the Burrows-Wheeler Aligner (BWA) (Li and Durbin, 2009). Variant calling was performed via the GATK Haplotype Caller GVCF tool (GATK 3.8.1, Broad Institute) (Poplin et al., 2018). Mutation enrichment was determined using Fisher’s Exact Test. Variants were annotated with Ensembl’s Variant Effect Predictor, (VEP) by Integragen Genomics (McLaren et al., 2016). NGS analyses confirmed the presence of on-target mutation and the absence of off-target mutation in the top four predicted off-target sites.
 
-## Validating NFKB2D865G targeting, assessing off-target mutations, and differential expression analysis by bulk RNA sequencing (RNA-seq)
+### Validating NFKB2D865G targeting, assessing off-target mutations, and differential expression analysis by bulk RNA sequencing (RNA-seq)
 
 For NFKB2D865G, we used bulk RNA-seq for analysis of differential RNA expression, and to assess on-target and off-target mutations, because the target site is close to the cleavage site (6 bases). A total of 500 ng of total RNA was extracted from 10 individual organoids (five NFKB2 KI and five control organoids). RNA-seq libraries were generated using the KAPA mRNA HyperPrep kit (Roche). The quality and profile of the libraries were visualized on a Bioanalyzer using the High Sensitivity DNA assay (Agilent) and quantified on a Qubit using the dsDNA High Sensibility Kit (Thermo Fisher Scientific). Finally, we performed a 2×76 bp paired-end sequencing on a NextSeq500 (Illumina). After quality control using FastQC (Braham Institute), reads were aligned on the GRCh38 human reference genome using STAR (version 2.7.2b) (Dobin et al., 2013). BAM files were ordered and indexed using Samtools (Danecek et al., 2021). Read counts on genes were determined using StringTie (Pertea et al., 2015). We assessed the presence of desired NFKB2 edits according to the CRISPR sgRNA design by direct visualization of the BAM files and the absence of off-target coding variations by the GATK Haplotype Caller GVCF tool (Poplin et al., 2018). Genes differentially expressed between conditions were identified using the R package DESeq2 (version 1.34.0) (Love et al., 2014) and assigned as such with an adjusted p-value <0.05.
 
-## Total RNA isolation and quantitative real-time PCR (qRT-PCR) analysis for assessment of mRNA expression during pituitary organoid development
+### Total RNA isolation and quantitative real-time PCR (qRT-PCR) analysis for assessment of mRNA expression during pituitary organoid development
 
 Organoids were harvested from the culture, placed on ice and then stored at –80 °C until RNA extraction. The total RNA was extracted from WT, TBX19 KI, and NFKB2 KI organoids using the NucleoSpin RNA Plus XS kit (Macherey-Nagel), and measured on a NanoDrop TM 1000 Spectrophotometer (Thermo Fisher Scientific). Organoid RNAs were extracted on days 0, 6, and 18 from 7 or 8 organoids, or on days 27, 48, 75, and 105 from single organoids (3–8 organoids per group for each time point). cDNA was synthesized from 200 ng total RNA using the mix of M-MLV reverse transcriptase (Invitrogen, UK, #28025013), dNTP 10 mM (Invitrogen, #10297018), RNAseOut Inhibitor (Invitrogen, #10777019) and random primers (Invitrogen, UK, #48190011). Quantitative PCR was performed using iTaq Universal SYBR Green Supermix (Bio-Rad Laboratories), on Quantstudio 5 Real-time PCR system (Thermo Fisher Scientific) and analysed using QuantStudio 5 Design & Analysis Software. The thermal cycling profiles were as follows: initial denaturation at 95 °C for 20 s, followed by 40 cycles of denaturation at 95 °C (3 s), annealing at 60 °C (45 s), and extension at 72 °C (45 s). All samples were assayed in duplicate. The beta-actin (ACTB), glyceraldehyde-3-phosphate dehydrogenase (GAPDH), and beta-tubulin (TUBB) transcript expressions were used as three endogenous reference controls. Target gene expressions were normalized relative to the mean of the housekeeping genes using the delta Ct method. For gene expression kinetics, these values were normalized relative to the highest mean values of WT during 105 d using the comparative 2-ΔΔCt method (Livak and Schmittgen, 2001). Primer sequences used in the experiments are shown in Supplementary file 1g.
 
-## Immunofluorescence labeling experiments
+### Immunofluorescence labeling experiments
 
 At days 48 and 105, ten of each WT and mutant organoids were fixed using 4% buffered paraformaldehyde in standard phosphate-buffered saline (PBS) for an hour at RT before rinsing in PBS. After overnight incubation in 30% sucrose/PBS (w/v) at 4 °C, organoids were embedded in Surgipath medium (Leica) and snap frozen. Organoids were cryosectioned at 16 µm. After blocking with 0.01% Triton X100, 10% normal donkey serum, and 1% fish skin gelatin in PBS with 5 ng/mL 4',6-diamidino-2-phénylindole (DAPI) for an hour at RT, slides were incubated with primary antibody diluted in antibody solution (PBS, Triton as above, 1% normal donkey serum and 0.1% fish skin gelatin) overnight at 4 °C, washed and incubated in a 1/500 dilution of secondary antibody in PBS for 2 hr at RT. The primary antibodies and dilutions used in this study are summarized in Supplementary file 1h. Secondary antibodies were species-specific conjugates to Alexa Fluor 488, 555, or 647 (Thermo Fisher Scientific). Fluorescence images were obtained using LSM 800 confocal microscopy (Zeiss).
 
-## 3D imaging of pituitary organoids
+### 3D imaging of pituitary organoids
 
 We used a whole-mount immunostaining and clearing protocol adapted from Belle et al., 2017. 4–8 organoids of each genotype (WT, TBX19 KI, or NFKB2 KI) were fixed by immersion in 4% buffered paraformaldehyde (PFA) in PBS overnight at 4 °C. All steps were carried out on a slowly rotating (70 rpm) agitator. After washing in PBS, organoids were either stored at 4 °C or blocked and permeabilized with 5 mL PBSGT for 2 d at RT (PBSGT: 0.2% fish skin gelatin, 0.5% Triton X100 in PBS, NaN3 0.01%). Organoids were incubated with primary antibodies in 3 mL PBSGT (at concentrations used on sections) over 5 d at 37 °C to increase penetration. Organoids were then washed 6 times in an excess of PBSGT at RT, before incubation with secondary antibodies in 3 ml PBSGT at RT overnight. The wash step was repeated. Organoids were then embedded in 1% low-melting temperature agarose in 1 X TAE after it had cooled to about 45 °C.
 
 As adapted from the iDISCO+ protocol (Renier et al., 2016), organoids in agarose blocks were progressively dehydrated from 20%, 40%, 60%, and 80% to 100% methanol for 1 hr at each graded step. After overnight incubation in two parts dichloromethane (DCM, Sigma-Aldrich) to one part 100% methanol, organoids were immersed in 100% DCM for 30 min before changing to 100% dibenzyl ether (DBE; Sigma-Aldrich) for transparization over 2 hr. Samples were maintained in DBE at RT and protected from light in an amber glass vial. Light-sheet fluorescence microscopy (Miltenyi Biotec UltraMicroscope Blaze) was used to acquire z-stacks of optical sections of pituitary organoids at 4 µm intervals, in Ethyl cinnamate (Sigma-Aldrich). After 3D reconstruction with Imaris software (version 9.6, Bitplane), the number of corticotrophs in each organoid was defined by counting individualized cell-sized (7 µm) objects positive for ACTH immunoreactivity with the Spots automatic classifier after setting parameters in a region of interest containing positively labeled WT cells, then applied to all organoids. Using the Surfaces tool of the Imaris software, the volume of organoids was determined based on thresholds corresponding to their respective fluorescence intensities.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed and visualized with GraphPad Prism 9.5.0 software (GraphPad Software, Inc). Data are expressed as means ± SEM. Comparisons between the two groups (mutant versus WT) were performed by unpaired two-tailed t-tests (non-parametric Mann-Whitney test). n refers to the number of samples for each experiment outlined in the figure legends. p-values of <0.05 (*), <0.01 (**), and <0.001 (***) were considered statistically significant differences.

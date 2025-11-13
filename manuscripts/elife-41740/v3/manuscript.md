@@ -31,7 +31,7 @@ We used our previously established and validated cell culture models of DUX4 exp
 
 ## Results
 
-## Determining protein-level alterations in DUX4-expressing cells through quantitative mass spectrometry
+### Determining protein-level alterations in DUX4-expressing cells through quantitative mass spectrometry
 
 In order to measure DUX4-induced changes to the cellular proteome, we conducted SILAC-based mass spectrometry in two independent DUX4 expression systems (Figure 1A). We previously showed that comparable gene expression profiles, which accurately capture the transcriptome of FSHD cells, are produced when DUX4 is expressed either via a lentiviral vector or when an inducible transgene is integrated into the genome of a myoblast cell line (Jagannathan et al., 2016). Here, we used both of these expression systems to corroborate our results internally, thereby ensuring that our proteomic data were robust with respect to choice of model system.
 
@@ -41,7 +41,15 @@ MB135 myoblasts that had been adapted to light or heavy SILAC media for 3 weeks 
 
 Peptide-spectrum matches (PSMs) with quantified heavy to light ratios were subject to thorough screening for quality (e.g., filtering out single-peak spectra and spectra without unique mapping; Figure 1A; see Materials and methods for further details). A histogram of log-transformed DUX4 to Control abundance ratios (log2 (DUX4/Control) ratio) of peptides mapping to a DUX4 target gene, ZSCAN4, from both vDUX4 and iDUX4 datasets showed highly skewed log2 (DUX4/Control) ratio, consistent with significant upregulation of the protein upon DUX4 expression (Figure 1B–C). By contrast, plotting the log2 (DUX4/Control) ratio of all individual peptides mapping to the housekeeping gene RPL15 showed that the ratio is centered around zero (Figure 1B–C), as would be expected for a gene with no differential expression upon DUX4 induction. These example plots illustrate the strong agreement between the expected and observed protein fold change values determined by SILAC mass spectrometry. Moreover, of the 65 genes identified by Yao et al. (2014) as potential FSHD biomarkers on the basis of transcriptome analysis of FSHD patient samples, 8 were quantified in the vDUX4 proteomics study and 25 were quantified in the iDUX4 proteomics study and all of these genes show high induction at the protein level (Figure 1D,E). Note the lower number of peptides (and hence quantified proteins) from the vDUX4 sample, which indicates the lower depth of this dataset and yet yields fold changes that are highly consistent with those from the higher-depth iDUX4 dataset.
 
-## Assessing the concordance of fold change in RNA- and protein-expression
+![Figure 1.](https://cdn.elifesciences.org/articles/41740/elife-41740-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental set up and the subsequent data analysis steps used to measure protein fold change in cells expressing vDUX4 or iDUX4. (B) Histogram of normalized, log2-transformed DUX4/Control ratios for all peptides mapping to ZSCAN4, a DUX4 target gene (top panels), and for RPL15, a housekeeping gene (bottom panels), following 24 and 36 hr of vDUX4 expression. (C) Histogram of normalized, log2-transformed DUX4/Control ratios for all peptides mapping to ZSCAN4, a DUX4 target gene (top panels), and for RPL15, a housekeeping gene (bottom panels), in the two label-swap replicates of iDUX4 expression. (D) Box plot of normalized, log2-transformed DUX4/Control ratio for peptides corresponding to the FSHD biomarker transcripts identified by Yao et al. (2014) in the vDUX4 dataset. Each dot refers to an individual peptide that was quantified and the color represents the time point of vDUX4 expression (24 hours in blue and 36 hours in purple). (E) Box plot of normalized, log2-transformed DUX4/Control ratio for peptides corresponding to the FSHD biomarker transcripts identified by Yao et al. (2014) in the vDUX4 dataset. Each dot refers to an individual peptide that was quantified and the color denotes replicate 1 (red) or replicate 2 (purple) of iDUX4 expression.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41740/elife-41740-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The mass spectra for a representative peptide from a heavy-labeled sample. (B) Histogram of log2-ransformed heavy to light ratio of peptides from cells labeled with heavy amino acids for 1 week. (C) Histogram of log2-transformed heavy to light ratio of peptides from an equal mixture of unlabeled cells with cells labeled with heavy amino acids for 1 week. (D) Histogram shows the DUX4/Control ratios (log2) for all peptides in the iDUX4 dataset (top panel), for peptides mapping to RPL15 (middle panel) or for peptides mapping to ZSCAN4 (bottom panel). (E)Box and whisker plot showing the median log2 DUX4/control ratios for RPL15 and ZSCAN4.
+
+### Assessing the concordance of fold change in RNA- and protein-expression
 
 Next, using the iDUX4 dataset, we performed peptide to protein summarization by measuring the median heavy/light ratios of all of the peptides mapping to a certain protein in both label-swap replicates to obtain gene-level log2 (DUX4/Control) ratios (Figure 1A and Figure 1—figure supplement 1D–E; Supplementary file 1). After filtering out genes that were only observed in one of the two label-swap replicates, we obtained quantitative proteomics information for 4005 genes, 3961 of which also had a corresponding RNA-seq measurement (Figure 2A; RNA-seq data previously reported by Jagannathan et al., 2016). The lower number of genes quantified by proteomics compared to RNA-seq is expected as proteomics is known to have lower sensitivity than RNA-seq.
 
@@ -55,7 +63,7 @@ Taken together, these results demonstrate that analyzing the protein measurement
 
 **Figure 2.:** (A) Table showing number of genes with fold changes in their RNA and protein levels in the iDUX4 datasets. (B) Scatter plot of log2 fold change in RNA levels (DUX4/control) versus log2 fold change in protein levels (DUX4/control) for all genes. (C) Gene Ontology analysis of genes that are up- or downregulated > 4-fold at the RNA or protein level. Multiple testing correction was performed using a Benjamini–Hochberg procedure. (D) Fluorescence micrographs of cells with and without DUX4 induction for 14 hr, stained with DAPI (blue), anti-GM130 (Golgi apparatus; in green) and phalloidin-555 (actin; in red). (E) Quantification of the percentage of cells with DUX4-positive nuclei and fragmented Golgi apparatus at 12 hr and 24 hr post doxycycline induction of DUX4 expression. Error bars represent standard deviations.
 
-## Post-transcriptional buffering of stress-response genes may exacerbate DUX4 toxicity
+### Post-transcriptional buffering of stress-response genes may exacerbate DUX4 toxicity
 
 Although many of the genes that are induced at the transcript level are largely also induced at the protein-level, a subset of genes showed no change in their protein level while their transcripts were up- or downregulated to a significant degree (678 genes, shaded blue in Figure 3A), indicating post-transcriptional buffering of the protein levels. Most notably, several housekeeping genes that respond to protein folding stress or dsRNA-induced stress showed transcriptional upregulation with minimal protein-level upregulation (Figure 3B).
 
@@ -65,7 +73,7 @@ Given that both unfolded protein and dsRNA-induced stresses converge in the pho
 
 **Figure 3.:** (A) Scatter plot of log2 fold change in RNA levels (DUX4/control) versus log2 fold change in protein levels (DUX4/control). Genes that are upregulated at the RNA level but no significant change at the protein level fall within the blue rectangle. (B) RNA and protein fold change across the different datasets for representative genes that show post-transcriptional buffering. (C) Changes in the RNA levels of the chaperone HSPA5 over the duration of vDUX4 expression (or control expression) as measured by qRT-PCR. The region shaded in blue represents the region where the vDUX4 sample significantly deviates from the Control because of the induction of the unfolded protein response (UPR). (D) Levels of phosphorylated eIF2α in control cells versus DUX4-expressing cells over an expression time course as detected by immunoblots. (E) Percentage of [35S]-Methionine incorporation (representing translation efficiency) in DUX4-expressing cells normalized over control cells during the time course of DUX4 expression.
 
-## Post-transcriptional modulation of RNA quality control pathway by DUX4
+### Post-transcriptional modulation of RNA quality control pathway by DUX4
 
 Next, we focused our analysis on the subset of genes that showed significant changes at the protein level with either no change or a change in the opposite direction in their transcript abundance (198 genes shown as ‘gold’ circles in Figure 4A). Pathway analysis did not reveal any significant trends among these genes. So instead, we decided to focus on one of the pathways that we have previously shown to be post-transcriptionally modulated, the nonsense-mediated RNA decay (NMD) pathway (Feng et al., 2015).
 
@@ -93,19 +101,120 @@ We next pursued the various mechanisms by which protein-level changes deviate fr
 
 ## Materials and methods
 
-## Cell culture and SILAC labeling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MB135</td>
+      <td>PMID:28171552</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MB135-iDUX4</td>
+      <td>PMID:28171552</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- GM130 antibody</td>
+      <td>Bethyl Laboratories Inc.</td>
+      <td>Cat # A303-402A-T</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Dux4 antibody</td>
+      <td>Abcam</td>
+      <td>Cat # ab124699</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial  assay, kit</td>
+      <td>ActinRed 555 ReadyProbes Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat # R37112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma</td>
+      <td>Cat # D9542</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-LYSINE:2HCL UNLABELED</td>
+      <td>Cambridge Isotope Laboratories Inc.</td>
+      <td>Cat # ULM-8766-0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-ARGININE:HCL UNLABELED</td>
+      <td>Cambridge Isotope Laboratories Inc.</td>
+      <td>Cat # ULM-8347-0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-LYSINE:2HCL (13C6, 99%; 15N2, 99%)</td>
+      <td>Cambridge Isotope Laboratories Inc.</td>
+      <td>Cat # CNLM-291-H-0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-ARGININE:HCL (13C6, 99%; 15N4, 99%)</td>
+      <td>Cambridge Isotope Laboratories Inc.</td>
+      <td>Cat # CNLM-539-H-0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ham's F12 for SILAC</td>
+      <td>Pierce</td>
+      <td>Cat # 88424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dialysed FBS for SILAC</td>
+      <td>Pierce</td>
+      <td>Cat # 88212</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and SILAC labeling
 
 Proliferating human myoblasts (MB135) were cultured in F10 medium (Gibco/Life Technologies) supplemented with 20% fetal bovine serum (Thermo Scientific), 10ng bFGF (Life Technologies), 1µM dexamethasone (Sigma) and 50U/50µg penicillin/streptomycin (Life Technologies). We routinely confirmed the identity of these cells by PCR to amplify marker genes (DUX4 and/or Puromycin-resistance gene) as well as by tracking key morphological features that are characteristic of myoblast cells. These cells also tested negative for mycoplasma contamination. Cells were labeled in SILAC media containing heavy lysine (Lys8) and arginine (Arg10) for 3 weeks before the DUX4 induction experiments were carried out. To induce DUX4 expression in the MB135 iDUX4 cells, 1µg/ml of doxycycline was added for 8 or 14 hr, as indicated. For viral DUX4 expression, MB135 cells were transduced with lentivirus carrying DUX4 coding sequence under a hPGK promoter in the presence of polybrene.
 
-## Gel slice digestion
+### Gel slice digestion
 
 Total RNA and protein were extracted from whole cells using TRIzolRT reagent (Ambion) following the manufacturer's instructions. 50 μg of total protein was subjected to SDS PAGE using a 4–15% bis-TRIS gel. The gel was stained using GelCode blue (Pierce) according to the manufacturer’s instructions, destained overnight in ultrapure water and the entire lane containing the protein was cut into 16 fractions using a GelCutter (Gel company Inc.). Individual gel slices in 1.5 mL tubes (Eppendorf) were consecutively washed with water and incubated with 25mM ammonium bicarbonate in 50% acetonitrile for 2 hr. The gel pieces were dehydrated with acetonitrile, and the dried gel slices were reduced by covering them with 10 mM dithiothreitol in 100 mM ammonium bicarbonate and heating them at 56°C for 45 min. The solution was removed and discarded. The gel slices were alkylated by covering them with a solution of 50 mM iodoacetamide in 100 mM ammonium bicarbonate and incubating in the dark at ambient temperature for 30 min. The solution was removed and discarded. The gel slices were dehydrated with acetonitrile, then washed with 100 mM ammonium bicarbonate for 10 min. The solution was removed, discarded and the gel slices were dehydrated once again with acetonitrile. After removing acetonitrile, the gel slices were then hydrated with 5 ng/uL sequencing-grade trypsin (Promega) in 50 mM ammonium bicarbonate and digested overnight at 37°C on an orbital shaker. Following digestion, the supernatants were collected, and the gel slices were washed with 0.1% trifluoroacetic acid, and after 30 min an equal volume of acetonitrile was added followed by washing for an additional 1 hour. The original digestion supernatant and the wash for a single sample were combined into a single tube and dried by vacuum centrifugation. The digestion products were desalted using Ziptips (Millipore) according to the manufacturer’s instructions, eluted with 70% acetonitrile/0.1% trifluoroacetic acid, and dried by vacuum centrifugation.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The desalted material was resuspended in 20 μL of 2% acetonitrile in 0.1% formic acid, and 18 μL was analyzed using one of two LC/ESI MS/MS configurations. The first configuration consisted of an Easy-nLC II (Thermo Scientific) coupled to a Orbitrap Elite ETD (Thermo Scientific) mass spectrometer using a trap-column configuration as described (Licklider et al., 2002). A trap of 100 μm × 20 mm packed with Magic C18AQ (5-μm, 200 Å resin; Michrom Bioresources) packing material was used for in-line desalting and a column of 75 μm × 250 mm packed with C18AQ (5-μm, 100 Å resin; Michrom Bioresources) was used for analytical peptide separations. Chromatographic separations were carried out using a 60-minute gradient from 5% to 35% solvent B (solvent A: 0.1% formic acid, solvent B: 0.1% formic acid in acetonitrile) at a flowrate of 300 nL/min. The analytical column temperature was maintained at 40°C. The Orbitrap Elite instrument was operated in the data-dependent mode, switching automatically between MS survey scans in the Orbitrap (AGC target value 1E6, resolution 240,000, and maximum injection time 250 ms) and collision induced dissociation (CID) MS/MS spectra acquisition in the linear ion trap (AGC target value of 10,000 and injection time 100 ms). The 20 most intense precursor ions from the OrbiTrap full scan were each consecutively selected for fragmentation by CID in the linear ion trap using a normalized collision energy of 35%. Ions of +2 and +3 charge states were selected for MS/MS and selected ions were dynamically excluded for 30 seconds. The second configuration consisted of an Easy nanoLC 1000 (Thermo Scientific) HPLC connected to an OrbiTrap Fusion (Thermo Scientific) mass spectrometer. In-line chromatographic separations (no trap column) were carried out using a 75 μm × 400 mm column packed with Magic C18AQ (5-μm, 100 Å resin; Michrom Bioresources) packing material at a flowrate of 300 nL/min. Chromatographic elution consisted of a 90-minute gradient from 3% to 27% solution B and the column temperature was maintained at 40°C. The OrbiTrap Fusion was operated in the 2 sec 'top speed' data dependent acquisition mode with MS survey scans in the OrbiTrap at least every 2 sec (AGC target value 4E5, resolution 120,000, and maximum injection time of 50 ms). Quadrupole isolation was set to 1.6 full width at half maximum (FWHM) and higher energy collision dissociation (HCD) was used for fragmentation at a collision energy of 28%. MS/MS detection was carried out in the linear ion trap set at rapid scan speed (injection time of 250 ms and AGC target of 10E2). Positively charged ions from 2 to 6 were selected for MS/MS and selected ions were dynamically excluded for 30 sec.
 
-## Data analysis and statistical methods
+### Data analysis and statistical methods
 
 Qualitative and quantitative data analysis were performed using Proteome Discoverer 2.1 (Thermo Scientific). The data were searched against a human UniProt database (downloaded 11-04-16) that was appended with protein sequences from the common Repository of Adventitious Proteins (cRAP; www.thegpm.org/crap/) and in silico translation products of noncanonical transcript isoforms stabilized as the result of NMD inhibition. In downstream analyses, peptides that only mapped to NMD targets were not considered any further in the current study and will be pursued in a future investigation. Searches were conducted with the trypsin enzyme specificity. The precursor ion tolerance was set to 10 ppm and the fragment ion tolerance was set to 0.6 Da. Variable modifications were set for oxidation on methionine (+15.995 Da), carbamidomethyl (+57.021 Da) on cysteine, and acetylation (+42.010 Da) on the N-terminus of proteins. Heavy SILAC amino acids for lysine (+8.014 Da) and arginine (10.008) were also accounted for in the analysis as variable modifications. All search results were evaluated by Percolator (Käll et al., 2007) for false discovery rate (FDR) evaluation of the identified peptides. Peptide identifications were filtered to a peptide FDR of 1%.
 
@@ -113,10 +222,10 @@ The peptide-spectrum matches (PSMs) and the corresponding quantification data we
 
 Upon comparing the gene-level fold changes obtained from four different samples, we noticed a strong correlation between the two viral replicates (Pearson’s r = 0.81), as well as the data from iDUX4 replicate 1 and both vDUX4 datasets (Pearson’s r = 0.79 and 0.77). The iDUX4 replicate 2, in which we swapped the isotopic labels used for the control and DUX4 samples, however, showed poor correlation with the three other samples because of a small set of proteins (103 proteins; 2.6% of total) that did not label efficiently. Proteins that do not label efficiently result in apparent anticorrelation between label-swap samples. This issue, wherein a small subset of proteins does not label efficiently, is a well-known problem in SILAC experiments (Park et al., 2012). Rather than ignoring this subset of proteins, which would require the imposition of potentially arbitrary thresholds, we instead followed the standard SILAC analysis procedure of taking the median value of H/L ratio across the two iDUX4 replicates as the final iDUX4 H/L ratio (Park et al., 2012; Ong and Mann, 2006). This procedure preserves the H/L ratio for proteins that labeled efficiently (the vast majority of the proteome) while bringing the H/L ratio for proteins that did not label efficiently to approximately 1 (corresponding to no measurable change). We then calculated p-values for the fold change calculated for the combined iDUX4 samples using a bootstrap approach. For a protein with n peptides whose H/L ratios were used to calculate protein fold change, we calculated the probability that n peptides chosen randomly out of all measured peptides would yield a similar fold change by chance. To this end, we generated a null distribution for each protein as follows. First, the same number of H/L ratios as the number of peptides quantified for that protein were randomly chosen from the set of all calculated peptide-level H/L ratios (n=229,558). With these randomly chosen H/L ratios, a fold change was calculated by computing the median. This process was repeated 1,000 times to generate the null distribution of H/L ratios for that protein. Using this null distribution, a p-value was calculated using a two-tailed Z test.
 
-## Gene Ontology analysis
+### Gene Ontology analysis
 
 GO analysis was performed via the Overrepresentation Enrichment Analysis method using WebGestalt server (pmid:15980575; www.webgestalt.org). One of the GO categories identified as enriched in this analysis was skin development, which we subsequently removed from Figure 2C as many of the genes that contribute to this GO category were extracellular proteins including keratins that could be environmental contaminants.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Cells were permeabilized with PBS containing 0.1% Triton X-100 for 5 min at room temperature and rinsed three times in PBS. Primary antibody against GM130 (Bethyl Laboratories, Cat # A303-402A-T) was diluted 1:200 in PBS and incubated for 1 hr at room temperature. After three washes in PBS, secondary anti-Rabbit TRITC (Jackson ImmunoResearch, cat # 711-025-152) diluted 1:400 was added and incubated for 45 min at room temperature. Cells were washed three times in PBS with the nuclear counterstain DAPI included in the final wash. Images were collected on a Cytation 5 multimode reader (BioTek) and analyzed using GenPrime software (BioTek).

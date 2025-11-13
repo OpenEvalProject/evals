@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/055f7t516 HSE University Moscow Russian Federation
-2. https://ror.org/01mpm4k64 Central Research Institute for Epidemiology Moscow Russian Federation
-3. https://ror.org/00v0z9322 Moscow Institute of Physics and Technology (National Research University) Moscow Russian Federation
-4. https://ror.org/013w2d378 Institute for Information Transmission Problems (Kharkevich Institute) of the Russian Academy of Sciences Moscow Russian Federation
-5. https://ror.org/010pmpe69 Lomonosov Moscow State University Moscow Russian Federation
-6. https://ror.org/03f9nc143 Skolkovo Institute of Science and Technology Moscow Russian Federation
+1. HSE University Moscow Russian Federation ([ROR:055f7t516](https://ror.org/055f7t516))
+2. Central Research Institute for Epidemiology Moscow Russian Federation ([ROR:01mpm4k64](https://ror.org/01mpm4k64))
+3. Moscow Institute of Physics and Technology (National Research University) Moscow Russian Federation ([ROR:00v0z9322](https://ror.org/00v0z9322))
+4. Institute for Information Transmission Problems (Kharkevich Institute) of the Russian Academy of Sciences Moscow Russian Federation ([ROR:013w2d378](https://ror.org/013w2d378))
+5. Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+6. Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Here, we study the mutual distribution of spike mutations in SARS-CoV-2 phylogen
 
 ## Results
 
-## Detecting interdependently evolving pairs of sites
+### Detecting interdependently evolving pairs of sites
 
 To find coevolving site pairs, we modified our previously developed phylogenetic approach (Kryazhimskiy et al., 2011; Neverov et al., 2021; Neverov et al., 2015) to improve the accuracy of detecting concordantly evolving site pairs (see Materials and methods). Similarly to our previous work, as a measure of concordance of evolution at two sites, we used the epistatic statistics calculated as the weighted sum of consecutive pairs of mutations at these two sites on the phylogeny, where each mutation pair was taken with exponential penalty for the waiting time for the later mutation (Kryazhimskiy et al., 2011).
 
@@ -45,7 +45,7 @@ We introduced two significant changes to the original method (Kryazhimskiy et al
 
 Second, while our previous work (Kryazhimskiy et al., 2011; Neverov et al., 2021) treated all substitutions at a site equally, we now distinguished between substitutions into different amino acids. Therefore, the revised epistatic statistic accounts for the preference of a specific mutation at the foreground site to follow a specific mutation at the background site. For this, in calculation of the epistatic statistic, we now additionally scored each pair of consecutive mutations by the fraction of times that the specific type of mutation at the foreground site followed the specific type of mutations at the background site, among all occurrences of this type of mutations at the foreground site. Therefore, extra weight was given to those mutation types that became more frequent on a specific background.
 
-## Estimating the power of the method to detect epistasis
+### Estimating the power of the method to detect epistasis
 
 To demonstrate that our revised method improves inference of positive and negative epistasis, we used MimicrEE2 (Vlachos and Kofler, 2018) to simulate clonal evolution of linked sites. We simulated two modes of evolution: (i) under positive and negative selection without epistatic interactions (‘multiplicative mode’), and (ii) under epistatic selection (‘epistatic mode’).
 
@@ -57,11 +57,11 @@ To compare the specificity of the four variants of the method, we used the multi
 
 To study the accuracy of the four variants of the method, we used simulations with epistasis. The revised method detected all 10 positively epistatic site pairs as concordantly evolving; additionally, it spuriously detected five other site pairs as concordantly evolving (Appendix 1—tables 3 and 4). The revised method also detected 7 out of 10 negatively epistatic site pairs as discordantly evolving, and spuriously detected four other site pairs as discordantly evolving (Appendix 1—tables 5 and 6). The three other detection models were less accurate: the number of false predictions was greater than the number of true predictions for positive epistatic pairs for all other detection methods, and for negative epistatic pairs, for two out of three methods (Appendix 1—tables 3 and 5). Therefore, the revised method was the method of choice for subsequent analyses.
 
-## Phylogenetic analysis of SARS-CoV-2 spike
+### Phylogenetic analysis of SARS-CoV-2 spike
 
 To obtain a phylogeny representative of SARS-CoV-2 diversity, we downloaded 3,299,439 complete genome sequences of SARS-CoV-2 aligned to the WIV04 reference genome from the GISAID EpiCov database on 07.09.2021. We ignored insertions and deletions relative to the reference sequence and removed sequences with inframe stop codons in the spike protein. We then clustered the remaining sequences by pairwise distances between S-protein subsequences, allowing up to three mutations in the S-protein within a cluster, which resulted in 7,348 clusters. For each cluster, we selected one representative sequence of the best quality with the earliest date of sampling. The median date of representative sequences was February 10, 2021. Therefore, the dataset covered approximately equally both characteristic periods of SARS-CoV-2 evolution: the neutral period between Jan and Nov 2020, and the period of antigenic drift between Dec 2020 and May 2021 (MacLean et al., 2021; Martin et al., 2021). We classified representative sequences according to pangolin lineages. Most sequences (5,721) were of the B.1.* sublineages. The representative sequences included some from the variants of concern (VOCs) Alpha (B.1.1.7+Q.*, 951 sequences), Beta (B.1.351.*, 192 sequences), Delta (B.1.617.2+AY.*, 24 sequences) and Gamma (P.1.*, 100 sequences). The phylogeny of representative sequences was reconstructed using IQ-TREE (Minh et al., 2020). The tree was rooted by the outgroup USA-WA1/2020 (EPI_ISL_404895) that matched the sequence of the putative SARS-CoV-2 progenitor (Bloom, 2021; Kumar et al., 2021). The ancestral sequences at internal tree nodes were reconstructed by TreeTime (Sagulenko et al., 2018). We extracted the part of the alignment that corresponded to the S gene, and collapsed the internal tree branches without mutations in the S gene. The final tree had 1,783 internal branches. For each internal branch, we listed the amino acid mutations that occurred at this branch.
 
-## Concordantly evolving site pairs
+### Concordantly evolving site pairs
 
 To study the concordant and discordant evolution of pairs of sites in SARS-CoV-2 spike, we applied our approach to the distribution of mutations in the S gene on the reconstructed SARS-CoV-2 phylogeny. 185 of the sites carried two or more mutations on internal tree branches. We considered all 17,020 unordered pairs of these sites.
 
@@ -71,6 +71,394 @@ We detected 45 concordantly evolving site pairs which comprised 46 sites (Figure
 
 **Figure 1.:** (A) Clusters of concordantly evolving sites. Graph vertices represent sites, and edges represent concordantly evolving pairs (Appendix 1—table 7). The graph consists of 13 connected components, 8 of which contain just a single edge. Site pairs that were among the set of the best scoring pairs predicted for the alternative UShER (Turakhia et al., 2021) topology (FDR <10%, Table 1) are marked by asterisks. (B) Concordantly evolving sites among the lineage-defining sites of Alpha, Beta, Gamma, Delta (B.1.617.2+AY.*) and Omicron (BA.1) VOCs (Hodcroft, 2021). Concordantly evolving sites are colored in accordance with the clusters in panel A. Sites with fewer than 2 mutations which were not included in the analysis are in gray.
 
+**Table 1.**
+ Concordantly evolving sites of the SARS-CoV-2 S-protein with FDR less than 10% for both reconstructed phylogenies (see Text).The following characteristics are shown: coordinates on the S-protein sequence, nominal p-values, the value of the epistatic statistics, the total number of consecutive mutation pairs for the two corresponding ordered site pairs, numbers of mutations in consecutive pairs at sites 1 and 2, total numbers of mutations at sites 1 and 2, and the distance in the protein structure (PDB ID: 7JJJ). Pairs of sites where non-consecutive mutations are further from each other than expected (suggesting both epistatic and episodic selection; p-value <0.05 after adjustment) are indicated in bold; pairs of sites where they are closer to each other than expected (suggesting episodic rather than epistatic selection) are indicated in italic (see Appendix 1—tables 10 and 12). Physical distance could not be calculated for site pairs (13,152) and (681,716) because sites 13 and 681 were absent in 7JJJ.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>site 1</th>
+      <th>site 2</th>
+      <th>cluster</th>
+      <th>p-value</th>
+      <th>epistatic statistics</th>
+      <th>#consec.pairs of mutations</th>
+      <th>#mutations in consec. pairs at site 1</th>
+      <th>#mutations in consec. pairs at site 2</th>
+      <th>#mutations at site 1</th>
+      <th>#mutations at site2</th>
+      <th>physical distance, Å</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>13</td>
+      <td>152</td>
+      <td></td>
+      <td>&lt;2e-5</td>
+      <td>2.864</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>16</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>417</td>
+      <td>4</td>
+      <td>2.2e-4</td>
+      <td>1.348</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>8</td>
+      <td>7</td>
+      <td>47.83</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>190</td>
+      <td>4</td>
+      <td>1.8e-4</td>
+      <td>1.029</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>12</td>
+      <td>3</td>
+      <td>18.4</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>213</td>
+      <td>3</td>
+      <td>4e-5</td>
+      <td>0.681</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>13.51</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>70</td>
+      <td>3</td>
+      <td>&lt;2e-5</td>
+      <td>1.125</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>144</td>
+      <td>3</td>
+      <td>&lt;2e-5</td>
+      <td>1.301</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>14.03</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>490</td>
+      <td></td>
+      <td>2.6e-4</td>
+      <td>0.22</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>45.18</td>
+    </tr>
+    <tr>
+      <td>189</td>
+      <td>360</td>
+      <td>2</td>
+      <td>1.6e-4</td>
+      <td>0.544</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>29.89</td>
+    </tr>
+    <tr>
+      <td>190</td>
+      <td>417</td>
+      <td>4</td>
+      <td>0.0001</td>
+      <td>1.272</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>7</td>
+      <td>39.93</td>
+    </tr>
+    <tr>
+      <td>259</td>
+      <td>261</td>
+      <td>3</td>
+      <td>&lt;2e-5</td>
+      <td>1.35</td>
+      <td>1.5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2</td>
+      <td>3.81</td>
+    </tr>
+    <tr>
+      <td>356</td>
+      <td>360</td>
+      <td>2</td>
+      <td>&lt;2e-5</td>
+      <td>1.283</td>
+      <td>2.5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>10.12</td>
+    </tr>
+    <tr>
+      <td>359</td>
+      <td>360</td>
+      <td>2</td>
+      <td>&lt;2e-5</td>
+      <td>0.976</td>
+      <td>1.5</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>439</td>
+      <td>441</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>2.097</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>9</td>
+      <td>8</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>440</td>
+      <td>441</td>
+      <td>1</td>
+      <td>1.4e-4</td>
+      <td>1.505</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>12</td>
+      <td>8</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>440</td>
+      <td>442</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>2.476</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>12</td>
+      <td>6</td>
+      <td>3.92</td>
+    </tr>
+    <tr>
+      <td>440</td>
+      <td>444</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>2.515</td>
+      <td>3.5</td>
+      <td>2</td>
+      <td>5</td>
+      <td>12</td>
+      <td>7</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>441</td>
+      <td>442</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>2.244</td>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+      <td>6</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>441</td>
+      <td>443</td>
+      <td>1</td>
+      <td>2e-5</td>
+      <td>1.281</td>
+      <td>5</td>
+      <td>4</td>
+      <td>2</td>
+      <td>8</td>
+      <td>2</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <td>441</td>
+      <td>444</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>3.492</td>
+      <td>5.5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>8</td>
+      <td>7</td>
+      <td>2.6</td>
+    </tr>
+    <tr>
+      <td>442</td>
+      <td>443</td>
+      <td>1</td>
+      <td>6e-5</td>
+      <td>1.301</td>
+      <td>4</td>
+      <td>4</td>
+      <td>2</td>
+      <td>6</td>
+      <td>2</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>442</td>
+      <td>444</td>
+      <td>1</td>
+      <td>&lt;2e-5</td>
+      <td>3.013</td>
+      <td>6</td>
+      <td>4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>7</td>
+      <td>4.05</td>
+    </tr>
+    <tr>
+      <td>443</td>
+      <td>444</td>
+      <td>1</td>
+      <td>8e-5</td>
+      <td>1.043</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>7</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>1118</td>
+      <td>5</td>
+      <td>1.4e-4</td>
+      <td>2.737</td>
+      <td>16</td>
+      <td>13</td>
+      <td>12</td>
+      <td>40</td>
+      <td>22</td>
+      <td>131.71</td>
+    </tr>
+    <tr>
+      <td>681</td>
+      <td>716</td>
+      <td>5</td>
+      <td>&lt;2e-5</td>
+      <td>3.905</td>
+      <td>16.5</td>
+      <td>12</td>
+      <td>16</td>
+      <td>59</td>
+      <td>21</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>716</td>
+      <td>982</td>
+      <td>5</td>
+      <td>2e-5</td>
+      <td>2.001</td>
+      <td>15</td>
+      <td>9</td>
+      <td>11</td>
+      <td>21</td>
+      <td>15</td>
+      <td>81.66</td>
+    </tr>
+    <tr>
+      <td>716</td>
+      <td>1118</td>
+      <td>5</td>
+      <td>4e-5</td>
+      <td>2.382</td>
+      <td>13</td>
+      <td>8</td>
+      <td>12</td>
+      <td>21</td>
+      <td>22</td>
+      <td>22.29</td>
+    </tr>
+    <tr>
+      <td>859</td>
+      <td>950</td>
+      <td></td>
+      <td>&lt;2e-5</td>
+      <td>2.219</td>
+      <td>5.5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>11</td>
+      <td>9</td>
+      <td>15.17</td>
+    </tr>
+    <tr>
+      <td>982</td>
+      <td>1118</td>
+      <td>5</td>
+      <td>1.4e-4</td>
+      <td>1.637</td>
+      <td>15</td>
+      <td>11</td>
+      <td>8</td>
+      <td>15</td>
+      <td>22</td>
+      <td>94.63</td>
+    </tr>
+  </tbody>
+</table>
+
 To characterize the detected concordantly evolving site pairs, we considered the positions of their sites on the S-protein trimer structure (PDB ID: 7JJJ). The mean distance between coevolving site pairs (20.17 A) was below that expected for random site pairs between the 185 sites with two or more mutations on internal branches (36.71 A, p=0.0004) as well as for random site pairs between the 46 sites involved in concordant evolution (36.64 A, p<1E-4). Among the 42 coevolving site pairs for which the distances on the protein structure were known, in 18 (43%), the two sites were in contact, that is, within 5 A from each other.
 
 To visualize the detected concordantly evolving site pairs, we plotted them as a graph where vertices represented the 46 sites, and edges represented the 45 pairs formed by them (Figure 1A). The graph has 13 connected components; five of them contain between 5 and 9 sites, and the remaining 8 each consist of a single site pair. Sites of three of the five subgraphs with multiple vertices formed dense clusters on the protein structure, and for each such cluster, all or almost all sites belonged to the same domain; sites from the other two components were distributed dispersedly (Figure 2A). Hereafter, we referred to these clusters of sites by the Roman numerals I-V. All six sites of the first dense cluster 439–444 (I) were in the receptor binding motif (RBM) within the receptor binding domain (RBD). Mutations at sites of cluster (I) affect neutralization of SARS-CoV-2 by monoclonal and polyclonal antibodies (Barnes et al., 2020; Harvey et al., 2021). The four sites of the second dense cluster (II) 356, 357, 359, and 360 were in the RBD, while the fifth site 189 was in the NTD. Interestingly, in the open conformation (PDB ID: 7KL9), sites 357, 359, and 360 contacted the NTD domain of the adjacent subunit of the S-protein trimer, but in the closed conformation (PDB ID: 7JJJ) they were not in contacts (Figure 2A and B). The third dense cluster (III) 63, 64, 67, 69, 70, 144, 213, 259, and 261 was in the NTD domain in the region of binding of neutralizing antibodies (McCarthy et al., 2021). Four sites 18, 20, 26, and 190 in the first of the two dispersed clusters (IV) were in the NTD domain, and one site 417 was in the RDB. The second dispersed cluster (V) comprised sites from different domains: RBM (501), a position near the S1/S2 cleavage site (681), S2 (716 and 982) and the connecting domain (1118; Figure 3).
@@ -79,11 +467,160 @@ To visualize the detected concordantly evolving site pairs, we plotted them as a
 
 **Figure 2.:** Sites of the five clusters that comprise multiple coevolving pairs of sites are shown as spheres, with color coding matching Figure 1A. (A) Closed conformation of the S-protein trimer (pdb: 7JJJ). (B) Open conformation of the S-protein trimer (pdb: 7KL9): for clarity, only residues 320–590 of one subunit and NTD 14–303 of the adjacent subunit are shown. NTD is shown in dark gray; residues 357, 359 and 360 are shown in dark purple.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82516/elife-82516-fig3-v1.jpg)
+
+**Figure 3.:** Leading and trailing mutations are represented by blue (site 501) or red (site 1118) right-pointing and left-pointing triangles respectively; diamond-shaped signs indicate mutations that are both leading and trailing. All other mutations on internal branches, which are neither preceded nor followed by mutations at the other site on internal branches, are represented by circles. Mutations on terminal branches are excluded from the analysis and not shown (all mutations at these sites are shown on Figure 3—figure supplement 1). Branches carrying wild-type alleles (501 N and 1118D) are shown in black; those carrying substitutions at site 501, in blue; at site 1118, in red; at both sites, in violet. Here, leading and trailing mutations at site 501 are either N>Y or its reversion Y>N; and leading and trailing mutations at site 1118 are D>H or H>D. The dashed branches correspond to the Alpha VOC according to GISAID annotation as of 07.09.2021. For clarity of presentation, some of the clades without mutations at these two sites are collapsed and represented by elongate triangles, with intensity of color indicating the number of strains in the clade.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82516/elife-82516-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Here, mutations on terminal branches, which are excluded from the analysis, are shown in light blue, red or violet; mutations on internal branches that are followed by mutations on terminal branches, are represented by light blue, red or violet right-pointing triangles.
+
 Many of concordantly evolving pairs of sites are located within loops in the NTD domain. Five out of the nine sites from the cluster (III) are located in the NTD hypervariable loops close to their flanks: sites 67, 69, and 70 are within the loop N2 (positions 67–81), site 144 is located within the loop N3 (positions 140–158), and sites 259 and 261 are within the loop N5 (positions 241–263). In the loop N1 (positions 14–26), there are three sites (18, 20 and 26) from the cluster (IV). Furthermore, the concordantly evolving site pair (155,157) comprises sites flanking the N3 loop. Yet another concordantly evolving pair (13, 152) comprises a site from the signal peptide and a site from the N3 loop. It has been previously shown that mutations at some sites of the signal peptide could abrogate virus neutralization by antibodies due to changes of the signal peptide cleavage site (McCallum et al., 2021). Changes of lengths and sequences of NTD loops mediate Spike membrane fusion, cell entry and extracellular stability (Cantoni et al., 2022; Qing et al., 2021). Loops N1 (positions 14–26), N3 and N5 contribute to NTD supersite of binding of neutralizing antibodies (Cerutti et al., 2021; McCallum et al., 2021).
 
-## Discordantly evolving site pairs
+### Discordantly evolving site pairs
 
 We detected nine pairs composed of 12 sites that exhibited discordant patterns of evolution (Table 2, Appendix 1—figure 2B). Five of these site pairs were among the 16 discordantly evolving pairs between the 15 sites detected for the alternative UShER topology for the same level of FDR (Appendix 1—table 9). Similarly to concordant evolution, the signal of discordant evolution indicated that mutations at one site in a pair arose preferentially at specific allelic contexts of another site and avoided other contexts; e.g. mutations Q675H and Q677H occurred mostly on the wild-type background N in the 501 and rarely occurred on the background of 501Y (Figure 4), while mutations A653V and S982A occurred mostly on the derived background G at site 614 and rarely followed reversions to the wild-type D background.
+
+**Table 2.**
+ Discordantly evolving sites of the SARS-CoV-2 S-protein.The following characteristics are shown: coordinates on the S-protein sequence, nominal p-values, the value of the epistatic statistic, the total number of consecutive mutation pairs for the two corresponding ordered site pairs, numbers of mutations in consecutive pairs at site 1 and site 2, total numbers of mutations at site 1 and site 2, FDR value corresponding to the p-value of the site pair obtained for the alternative phylogeny reconstructed by UShER (Turakhia et al., 2021), and the distance in the protein structure (PDB ID: 7JJJ). Pairs of sites where non-consecutive mutations are closer to each other than expected (suggesting both epistatic and episodic selection; p-value <0.05 after adjustment) are in bold; those where they are further from each other than expected (suggesting episodic rather than epistatic selection) are in italic (see Appendix 1—tables 11 and 13).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>site 1</th>
+      <th>site 2</th>
+      <th>p-value</th>
+      <th>epistat.</th>
+      <th>#consec. pairs of mutations</th>
+      <th>#mut. in consec. pairs in site1</th>
+      <th>#mut. in consec. pairs in site2</th>
+      <th>#mut. in site1</th>
+      <th>#mut. in site2</th>
+      <th>FDRUShER tree</th>
+      <th>physical distance,Å</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>69</td>
+      <td>614</td>
+      <td>3e-3</td>
+      <td>0.07</td>
+      <td>5</td>
+      <td>1</td>
+      <td>5</td>
+      <td>5</td>
+      <td>14</td>
+      <td>0.231</td>
+      <td>46.75</td>
+    </tr>
+    <tr>
+      <td>222</td>
+      <td>501</td>
+      <td>3.1e-3</td>
+      <td>0.01</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>11</td>
+      <td>40</td>
+      <td>0.058</td>
+      <td>55.44</td>
+    </tr>
+    <tr>
+      <td>440</td>
+      <td>681</td>
+      <td>3.1e-3</td>
+      <td>0.01</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>12</td>
+      <td>59</td>
+      <td>0.055</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>675</td>
+      <td>1.2e-3</td>
+      <td>0.02</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>40</td>
+      <td>24</td>
+      <td>0.06</td>
+      <td>84.98</td>
+    </tr>
+    <tr>
+      <td>501</td>
+      <td>677</td>
+      <td>4.8e-4</td>
+      <td>0.05</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>40</td>
+      <td>39</td>
+      <td>0</td>
+      <td>88.20</td>
+    </tr>
+    <tr>
+      <td>570</td>
+      <td>614</td>
+      <td>2.4e-3</td>
+      <td>0.16</td>
+      <td>7</td>
+      <td>1</td>
+      <td>7</td>
+      <td>16</td>
+      <td>14</td>
+      <td>0.895</td>
+      <td>19.30</td>
+    </tr>
+    <tr>
+      <td>614</td>
+      <td>653</td>
+      <td>4e-5</td>
+      <td>0.03</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>14</td>
+      <td>5</td>
+      <td>0.025</td>
+      <td>15.47</td>
+    </tr>
+    <tr>
+      <td>614</td>
+      <td>982</td>
+      <td>3.2e-4</td>
+      <td>0.12</td>
+      <td>7</td>
+      <td>1</td>
+      <td>7</td>
+      <td>14</td>
+      <td>15</td>
+      <td>0.891</td>
+      <td>27.87</td>
+    </tr>
+    <tr>
+      <td>681</td>
+      <td>1176</td>
+      <td>3.9e-3</td>
+      <td>0.01</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>59</td>
+      <td>11</td>
+      <td>0.385</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82516/elife-82516-fig4-v1.jpg)
 
@@ -91,7 +628,7 @@ We detected nine pairs composed of 12 sites that exhibited discordant patterns o
 
 Among the nine predicted discordantly evolving pairs, two, (501, 677) (shown on Figure 4) and (501, 675), are between the three sites whose effects of mutations were assessed experimentally or computationally. The N501Y mutation increases the binding affinity of Spike to ACE2 up to 15-fold (Starr et al., 2022a) and increases infectivity (Liu et al., 2022) the Q677H mutation increases infectivity, propensity to syncytium formation and escape of neutralization by serum of vaccinated people (Zeng et al., 2021) and the Q675H mutation is predicted to increase furin binding affinity (Bertelli et al., 2021). Although experiments suggested a positive effect of Q677H on the background of VOCs Alpha and Gamma both carrying N501Y (Zeng et al., 2021), this fact is in disagreement with the very low population frequencies of Q677H in these VOCs (Gangavarapu et al., 2022a, Gangavarapu et al., 2022b; Gangavarapu, 2022c; Gangavarapu, 2022d; Khare et al., 2021). The same is true for the Q675H mutation: while it was observed in some isolates of VOCs with the N501Y lineage-defining mutation, the population frequencies of these strains were also very low (Bertelli et al., 2021).
 
-## Distinguishing between epistasis and non-epistatic episodic selection
+### Distinguishing between epistasis and non-epistatic episodic selection
 
 The observed concordant and discordant evolution can stem from two sources: epistatic interactions between sites and episodic selection pressure affecting two or more sites at the same time. These two cases can be distinguished by patterns of phylogenetic distribution of non-consecutive mutations. Episodic selection simultaneously affecting two sites is expected to bias phylogenetic distances between all mutations at these sites, both consecutive and non-consecutive, so that substitutions are more likely to cooccur in more closely related lineages. By contrast, positive epistasis only leads to an excess of rapid consecutive mutations and does not bias distances between mutations in different lineages (Neverov et al., 2021). To check whether coordinated evolution of some pairs can be explained by concordant or discordant episodic selection alone, we applied the test described in Neverov et al., 2021, calculating the average distances between all pairs of non-consecutive substitutions for each concordantly or discordantly evolving pair of sites (Appendix 1—tables 10–13).
 
@@ -99,13 +636,13 @@ For the 12 concordant site pairs from 28 pairs that were detected on both phylog
 
 For the discordantly evolving pair (614, 653), non-consecutive mutations are more distant from each other than expected, suggesting that these pairs could also represent discordant episodic selection rather than epistatic interactions. By contrast, for discordant pairs (440, 681) and (501, 675) non-consecutive substitutions tend to be closer to each other than expected (in contrast to consecutive ones which repulse each other). This can only result from negative epistasis, probably accompanied by concordant episodic selection.
 
-## Long-term coordinated evolution of Spike
+### Long-term coordinated evolution of Spike
 
 We asked whether the concordantly evolving pairs of sites that we detect are also evident of long-term coordinated evolution on timescales of diversification within the larger group of sarbecoviruses. At such larger timescales, recombination, which is common between different sarbecoviruses (Boni et al., 2020; Hu et al., 2017; Starr et al., 2022a; Wells et al., 2021), becomes a major source of the evolutionary signal. Phylogenetic methods for inference of epistasis can be confounded by recombination (Neverov et al., 2015). Instead, we rely in this section on the DCA methods which are robust to moderate amounts of recombination (Gao et al., 2019). A previous study Rodriguez-Rivas et al., 2022 used DCA to infer interactions within the five PFAM domains of Spike: bCoV_S1_N (PF16451.6), bCoV_S1_RBD (PF09408.11), CoV_S1_C (PF19209.1), bCoV_S2 (PF01601.17), and CoV_S2_C (PF19214.1). For each domain, we ordered site pairs by descending DCA scores, and calculated the ranks of concordantly and discordantly evolving pairs located within the corresponding domain. For each list, we referred to ND pairs with highest scores as ‘high scoring pairs’, where ND was the number of sites in the corresponding domain D, namely ND = 305 for bCoV_S1_N, 178 for bCoV_S1_RBD, 57 for CoV_S1_C, 519 for bCoV_S2 and 40 for CoV_S2_C.
 
 Some of the concordantly evolving same-domain site pairs detected by us were also evolving in a coordinated fashion in sarbecoviruses in general. Specifically, 3 out of the 14 pairs of concordantly evolving sites in the bCoV_S1_RBD domain ((439, 441), (440, 442) and (441, 443), all from cluster I), 2 out of the 15 pairs of sites in the bCoV_S1_N domain ((63, 64) and (69, 70), both from cluster III) and one pair of sites in the Cov_S2_C domain (1258, 1259) were among the high scoring DCA pairs. The intersections of sets of concordantly evolving pairs of sites located within the same domain with the sets of DCA high scoring pairs for corresponding domains were higher than expected by chance: p=4.7e-4 for bCoV_S1_RBD, p=3.2e-3 for bCoV_S1_N, and p=0.051 for CoV_S2_C (Fisher’s exact test; the latter domain carried just one concordantly evolving pair). For the five domains with DCA results, no discordantly evolving pairs had both sites within the same domain.
 
-## Coordinated evolution of sites carrying VOC mutations
+### Coordinated evolution of sites carrying VOC mutations
 
 Many of the concordantly evolving sites carried mutations that defined VOC lineages. In what follows, we discuss the sites of concordant mutations found among the sites carrying the characteristic mutations of specific VOCs (Figure 1B). We refer to sites bearing lineage-defining mutations as lineage defining sites.
 
@@ -114,6 +651,14 @@ For the Alpha VOC, 8 (69, 70, 144, 501, 681, 716, 982 и 1118) out of the 10 lin
 For the Beta VOC, 3 sites (417, 501, and 484) out of the 10 lineage defining sites were among the concordantly evolving sites, but these sites did not form pairs with each other.
 
 For the Gamma VOC, 7 out of the 12 lineage-defining sites (18, 20, 26, 417, 484, 501, and 655) were among the concordantly evolving sites. Four of these sites (18, 20, 26 and 417) were within the dispersed cluster IV of sites. Two sites (484, 655) constituted a distinct cluster with a single pair (Figure 5). Finally, site 501 had no concordantly evolving partners.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82516/elife-82516-fig5-v1.jpg)
+
+**Figure 5.:** Leading and trailing mutations are represented by blue (site 484), red (site 655) or violet (mutations at both sites on the same branch) right-pointing and left-pointing triangles respectively; diamond-shaped signs indicate mutations that are both leading and trailing, and violet signs indicate that both sites mutated on a single branch. All other mutations on internal branches, which are neither preceded nor followed by mutations at the other site on internal branches, are represented by circles. Mutations on terminal branches are excluded from the analysis and not shown (all mutations at these sites are shown on Figure 5—figure supplement 1). Branches carrying wild-type alleles (484E and 655 H) are shown in black; carrying substitutions at site 484, in blue; at site 655, in red; at both sites, in violet. Here, leading and trailing mutations at site 484 are either E>K or its reversions K>E; leading and trailing mutations at site 655 are H>Y or Y>H. The dashed branches correspond to the sequences of Gamma VOC according to GISAID annotation as of 07.09.2021. For clarity of presentation, some of the clades without mutations in these two sites are represented by elongate triangles, with color intensity indicating the number of strains in the clade.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82516/elife-82516-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Here, mutations on terminal branches, which are excluded from the analysis, are shown in light blue, red or violet; mutations on internal branches that are followed by mutations on terminal branches, are represented by light blue, red or violet right-pointing triangles.
 
 For the Delta VOC (B.1.617.2+AY.*), three out of the ten lineage defining sites (157, 681, and 950) were among the set of concordantly evolving sites, however, these sites belonged to different clusters and they did not form pairs with each other.
 
@@ -145,13 +690,13 @@ Finally, the signal of concordant evolution at the origin of VOCs could come fro
 
 ## Materials and methods
 
-## Constructing the set of sequences
+### Constructing the set of sequences
 
 Masked full genome sequence alignment and corresponding metadata were downloaded from https://gisaid.org/ on 07.09.2021 comprising sequences for 3,299,439 isolates (see data availability statement). Based on metadata, all sequences from nonhuman hosts, without collection dates, or with wrongly formatted collection dates were excluded. For each sample, the number of gaps, ‘N’s and ambiguous characters were computed for each genome sequence and separately for the S-gene in non-masked positions. For each sequence, we calculated the number of positions that contained a nongap, non-‘N’ symbol that were aligned to non-gap positions of the reference genome sequence WIV04. We excluded sequences from the analysis with fewer 29,000 aligned positions, or with <95% of sequence length in aligned positions. Next, we sorted sequences by sampling dates and then converted each sequence into a list of changes relative to the reference, treating consecutive gaps as one change. Then, we excluded sequences having too many changes for their sampling dates. For that, for each sampling date, we computed the mean and standard deviations of the number of changes for all sequences whose sampling dates were within a half year time interval centered at this date. All samples with the number of changes exceeding the mean value by two standard deviations or more in the corresponding time interval centered on the sampling date were filtered out. Samples with preliminary stop codons inside the S gene were also excluded. This left us with 2,676,884 sequences for further analysis.
 
 We partitioned the remaining sequences into groups of equivalence such that all sequences in each group had the same list of mutations in the S gene, and selected the sequence with the earliest collection date as the class representative. To further cluster the sequences, we reimplemented the UCLUST (Edgar, 2010) algorithm in a custom python script to allow it to process the huge amount of SARS-CoV-2 data. In contrast to the original UCLUST implementation that receives nucleotide or amino acid sequences as input, our script clustered the lists of changes in sequences that occurred relative to the sequence of the reference genome. This sped up computation, because there were few changes in SARS-CoV-2 sequences compared to the genome length. The pairwise distance between the two lists of changes was defined as the number of changes unique to each list. At the start of the procedure, samples were ordered by the sampling date; the first sample was defined to be the centroid of the first cluster and added to the list of centroids. Next, the remaining samples were iteratively compared with the centroids in the list: if the distance to some centroid was less than three, the sample was added to the corresponding cluster, otherwise it was added as a new entry to the list of centroids. Thus, by construction, cluster centroids tend to be the earliest representatives of their members. For each cluster, all samples from the corresponding groups of equivalent sequences were pooled together, and the sample having the highest quality sequence was selected as the representative of the cluster. The highest-quality sequence was defined as the sequence having the minimal number of gaps or ‘N’ characters in the S gene. If several sequences complied with the previous condition, the sequence with the minimal number of ambiguous characters in the S gene was selected as the representative of the cluster. If there were more than one such sequence, the one additionally having the minimal number of gaps or ‘N’ characters in the whole genome sequence was selected. If still more than one sequence met all the previous conditions, the first of them which had the minimal number of ambiguous characters in the whole genome sequence was finally chosen. All gaps in the selected complete genome sequences were converted to reference characters, and insertions relative to reference sequence were ignored.
 
-## Phylogenetic analysis and inference of ancestral sequences
+### Phylogenetic analysis and inference of ancestral sequences
 
 The phylogenetic tree was constructed with IQ-TREE (v. 2.1.2, model = GTR + I+G) (Minh et al., 2020). Additionally, we obtained an alternative topology for these sequences by UShER (Turakhia et al., 2021) for this, we inserted the sequences into a prebuilt global SARS-CoV-2 phylogeny of publicly available genome sequences (http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2/public-latest.all.masked.pb.gz accessed on 10.01.2022). Some of our selected GISAID sequences had already been in the global tree, so we inserted only those which were absent there. Finally, we extracted the subtree corresponding to the analyzed sequences from the global tree.
 
@@ -159,15 +704,31 @@ The trees were rooted by the outgroup sequence USA-WA1/2020 (EPI_ISL_404895).
 
 For both trees, ancestral sequences were reconstructed by TreeTime (v. 0.8.2) (Sagulenko et al., 2018) with default parameters. Because we focused on the evolution of the S gene, we removed from each tree the internal nodes which had S-gene sequences identical to their parental nodes. Finally, we obtained the list of mutations for each tree branch.
 
-## Concordantly and discordantly evolving pairs of sites
+### Concordantly and discordantly evolving pairs of sites
 
 Our approach to detection of concordantly and discordantly evolving pairs of sites is a development of the phylogenetic method published earlier (Kryazhimskiy et al., 2011; Neverov et al., 2021; Neverov et al., 2015). It is based on counting consecutive pairs of mutations on the branches of a phylogenetic tree. A pair of mutations at two different sites is called consecutive if a mutation in one of the sites occurs in the subtree of the branch which carries a mutation in the other site, and there are no other mutations at these sites on the branches that constitute the path between them; if two sites mutate on the same branch, we assume that both orders are equiprobable (Kryazhimskiy et al., 2011). Here, we consider four models for detection of epistasis which are based on this approach. Two of these models account for identities of ancestral and derived amino acids at sites; the other two models disregard the identities of amino acids and account only for occurrences of mutations on the tree branches. We define the epistatic statistics in a general form which is used for all four models. The expression of the epistatic statistic for models that ignore identities of alleles could be straightforwardly obtained from the general form.
 
-For an ordered pair of sites (i,j), the epistatic statistics ei,j is the weighted number of consecutive pairs. It is formally defined as.e(i,j)(α,Α,β,Β)=∑l∈Eδil,α,Α∑m∈Em≽lδi,jm≽l*∑m∈E(m≽l)δi,jm≽lδjm,β,Βc(i,j)(l,m)e-tl,m/τw(i,j)α,Α,β,Β=∑l∈Eδil,α,Α∑m∈Em≽lδi,jm≽lδjm,β,Β∑m∈Eδjm,β,Βe(i,j)=∑(β,Β)∑(α,Α)e(i,j)(α,Α,β,Β)w(i,j)(α,Α,β,Β)
+For an ordered pair of sites $(i,j)$, the epistatic statistics $e_{i,j}$ is the weighted number of consecutive pairs. It is formally defined as.
 
-Here, α and β are the ancestral alleles, and Α and Β are the derived alleles at sites i and j; E is the set of all tree edges; and Em≽l is the set of edges descendant to the edge l. Indicator functions δil,α,Α and δjm,β,Β equal to one if on branches l and m, mutations at sites i and j occur from the specified ancestral alleles to the specified derived alleles. The indicator function δi,jm≽l equals to one if a mutation occurs at branch l at site i, and a consecutive mutation occurs at branch m at site j. tl,m is the length of the shortest path between tree branches l and m. The function c(i,j)(l,m) accounts for possible incomplete time resolution of the sequence of occurrence of mutations: it equals one if mutations at sites i and j occur on different branches, 0.5 if mutations at both sites occur on the same branch l=m, 1.5 if mutations at both sites occur at the same branch l or m and are followed or preceded by a mutation at one of the sites i or j at another branch, and 0.25 if mutations at both sites occur on both branches l and m. The weight w(i,j)α,Α,β,Β is the fraction of all mutations from β to Β at site j that occur on the background of the mutation from α to Α at site i. In the models of detection of epistasis which ignore allele identities, the weights w(i,j)α,Α,β,Β are set equal to 1. The epistatic statistic for an unordered pair is a total of two statistics for ordered pairs: ei,j=e(i,j)+e(j,i) .
+$$
+e_{(i,j)}(\alpha,Α,\beta,Β)=\suml\inE\frac{\delta_{i}l,\alpha,Α}{\summ\inEm≽l\delta_{i,j}m≽l}*\summ\inE(m≽l)\delta_{i,j}m≽l\delta_{j}m,\beta,Βc_{(i,j)}(l,m)e^{-t_{l,m}/\tau}
+$$
 
-We used two different null models for the epistatic statistics. The first model randomly and independently reshuffles mutations at each site; the second model specifically accounts for distribution of mutations at each ordered pair of sites (i,j). To do that, the phylogenetic positions of mutations at the first site of a pair (background site) i are considered fixed, and the positions of mutations at the second (foreground) site j are reshuffled, thus unlinking the background and foreground. For both null models, reshuffling of mutation positions between tree branches preserves the total number of mutations at each site and the total number of mutations at each branch by using BiRewire utility (Gobbi et al., 2014). Combinations of two variants of epistatic statistics (with and without alleles) and two variants of the null model (with linked and with unlinked background and foreground) provide four models for detection of site pair epistasis which are compared in this study.
+
+
+$$
+w_{(i,j)}\alpha,Α,\beta,Β=\frac{\suml\inE\delta_{i}l,\alpha,Α\summ\inEm≽l\delta_{i,j}m≽l\delta_{j}m,\beta,Β}{\summ\inE\delta_{j}m,\beta,Β}
+$$
+
+
+
+$$
+e_{(i,j)}=\sum(\beta,Β)\sum(\alpha,Α)e_{(i,j)}(\alpha,Α,\beta,Β)w_{(i,j)}(\alpha,Α,\beta,Β)
+$$
+
+Here, α and β are the ancestral alleles, and $Α$ and $Β$ are the derived alleles at sites $i$ and $j$; E is the set of all tree edges; and $Em≽l$ is the set of edges descendant to the edge $l$. Indicator functions $\delta_{i}l,\alpha,Α$ and $\delta_{j}m,\beta,Β$ equal to one if on branches $l$ and $m$, mutations at sites $i$ and $j$ occur from the specified ancestral alleles to the specified derived alleles. The indicator function $\delta_{i,j}m≽l$ equals to one if a mutation occurs at branch $l$ at site $i$, and a consecutive mutation occurs at branch $m$ at site $j$. $t_{l,m}$ is the length of the shortest path between tree branches $l$ and $m$. The function $c_{(i,j)}(l,m)$ accounts for possible incomplete time resolution of the sequence of occurrence of mutations: it equals one if mutations at sites $i$ and $j$ occur on different branches, 0.5 if mutations at both sites occur on the same branch $l=m$, 1.5 if mutations at both sites occur at the same branch $l$ or $m$ and are followed or preceded by a mutation at one of the sites $i$ or $j$ at another branch, and 0.25 if mutations at both sites occur on both branches $l$ and $m$. The weight $w_{(i,j)}\alpha,Α,\beta,Β$ is the fraction of all mutations from β to $Β$ at site $j$ that occur on the background of the mutation from α to $Α$ at site $i$. In the models of detection of epistasis which ignore allele identities, the weights $w_{(i,j)}\alpha,Α,\beta,Β$ are set equal to 1. The epistatic statistic for an unordered pair is a total of two statistics for ordered pairs: $e_{i,j}=e_{(i,j)}+e_{(j,i)}$ .
+
+We used two different null models for the epistatic statistics. The first model randomly and independently reshuffles mutations at each site; the second model specifically accounts for distribution of mutations at each ordered pair of sites $(i,j)$. To do that, the phylogenetic positions of mutations at the first site of a pair (background site) $i$ are considered fixed, and the positions of mutations at the second (foreground) site $j$ are reshuffled, thus unlinking the background and foreground. For both null models, reshuffling of mutation positions between tree branches preserves the total number of mutations at each site and the total number of mutations at each branch by using BiRewire utility (Gobbi et al., 2014). Combinations of two variants of epistatic statistics (with and without alleles) and two variants of the null model (with linked and with unlinked background and foreground) provide four models for detection of site pair epistasis which are compared in this study.
 
 For the two models that account for allele identities, we generate amino acid sequences for internal and terminal nodes of the tree. For that, starting from the root sequence and traversing the tree from root to tips, we generate derived alleles for each mutation on a tree branch from the empirical allele distributions at this site, conditioned on the allele at the parental node of the branch. For the null model with unlinked background and foreground, the sequences in the tree nodes for the background remain unchanged, while for the foreground, new sequences are generated. For generating random distributions of mutations on tree branches and for calculation of epistatic statistics, we used the Bio::Phylo Perl module (Vos et al., 2011) for traversing phylogenetic trees.
 
@@ -177,15 +738,15 @@ To account for multiple testing, we estimated the false discovery rates (FDR). F
 
 To differentiate between epistasis and non-epistatic episodic selection, for each concordantly or discordantly evolving pair of sites, we analyzed phylogenetic distances between nonconsecutive substitutions as described in Neverov et al., 2021, with the only difference that 400 sets of mutations instead of 200 were generated for the null model to obtain p-values. We then adjusted the resulting p-values using the Benjamini-Hochberg correction (Benjamini and Hochberg, 1995).
 
-## Simulation of independent evolution of sites
+### Simulation of independent evolution of sites
 
 To model independent evolution of sites, we used genome-wide forward simulator MimicrEE2 (Vlachos and Kofler, 2018). Under independent mode of evolution, MimicrEE2 multiplies the fitness changes caused by individual mutations to get the fitness of a genome. The initial population consisted of 50,000 identical haploid genotypes with 100 biallelic (a or A) sites. At the start of simulation, 20 sites were under positive selection, since the initial allele was deleterious: its fitness was equal to 0.9945, while fitness of the other variant was equal to 1. Another 20 sites evolved under negative selection, since the initial allele was beneficial. The remaining 60 sites evolved neutrally, with the two possible variants at each site having fitness of 1. We simulated evolution of the population for 5000 generations, with mutation rate 5e-4 mutations per site per generation. Each 250 generations, 50 genotypes were sampled from the population, resulting in 1000 sequences. These were further used to reconstruct the phylogeny and measure the signal of epistasis. For each of the four detection models, the minimal FDR threshold was obtained, such that if the desired level of FDR would be below the threshold, no false concordantly evolving pairs of sites would be predicted.
 
-## Simulation of positively and negatively epistatically evolved site pairs
+### Simulation of positively and negatively epistatically evolved site pairs
 
 MimicrEE2 allows modeling of epistatic interaction between a pair of sites, assigning fitness values to all possible combinations of binary variants at these sites (aA, aA, Aa and AA). The fitness of a genome in this case is the product of fitness values of individual changes and fitnesses of variant combinations for specified pairs. The initial population consisted of identical genotypes with lowercase alleles at each site, with a total of 100 sites: 20 sites (or 10 pairs of sites) in positive epistasis, 20 sites in negative epistasis and 60 neutrally evolving sites with no epistatic interactions. At neutrally evolving sites, all variants had fitness equal to 1. To model positive epistasis between a pair of sites, we assigned fitness 1 to variant combinations aa and AA and fitness 0.9945 to aA and Aa, so that the first mutation at one of the sites was deleterious, and the consequent mutation at the second site restored the initial fitness. To model negative epistasis between a pair of sites, we assigned fitness 1 to variant combinations aa, aA and Aa, and fitness 0.8 to AA, so that the first mutation at one of the sites was neutral, and the consequent mutation at the second site was deleterious. Again, we simulated evolution of a haploid population of size 50,000 for 5000 generations, with mutation rate 5e-4 mutations per site per generation, sampled 50 genotypes each 250 generations, and used the resulting 1000 sequences to reconstruct the phylogeny and measure the signal of epistasis.
 
-## Comparing the signal strength of coordinated evolution across site subsets
+### Comparing the signal strength of coordinated evolution across site subsets
 
 To compare the strength of concordant evolution for pairs of sites belonging to a specified site subset with other pairs of sites, we designed a test comparing the average ranks of pairs of sites in these two subsets of pairs. First, we ordered all site pairs from high to low strength of concordant evolution of their sites according to ascending upper p-values. Then, we calculated the mean ranks of site pairs in each of the two subsets: in a subset of pairs for which both sites belong to the specified subset of sites, and in the complementary subset of pairs. A direct comparison of ranks in these two subsets of pairs may be misleading, because a test for coordinated evolution of sites may assign better p-values to pairs of sites having some properties, for example those with higher evolutionary rates, which could be overrepresented in a specified subset of sites. Therefore, we need to compare the mean ranks for the bipartition of site pairs for the actual data with the distributions of mean ranks for the same bipartition for data simulating independent evolution of sites. As simulated data, we used a set of 400 permutations of mutations on the tree used for the FDR estimation. Calculating the ranks of pairs, we then assigned the average values of ranks for site pairs having the same values of the ordering statistic. As the test statistic, we used the difference of the mean ranks of pairs in two parts of the bipartition. To calculate the p-value of the test, the test statistic for the actual data was compared with the test statistic obtained for the simulated data.
 
@@ -193,6 +754,6 @@ We applied this procedure to separately tested subsets of lineage-defining sites
 
 To test whether the enrichment of pairs of lineage-defining sites for Alpha, Beta, Delta, and Gamma among concordantly evolving site pairs is due to mutations that occurred at origins of these VOCs and/or reversions of these mutations within the VOC clades, for each VOC, we obtained a pruned tree which did not carry the sequences of this VOC, as well as the sequences descendant from the VOC clade but not annotated as this VOC. For this, we removed from the phylogeny the isolates that were assigned by PANGOLIN (O’Toole et al., 2021) to the corresponding VOC in their metadata as well as the isolates of other lineages descendant to the ancestral node of the VOC that carried on its branch the earliest lineage-defining mutation. This procedure is conservative, in that it could exclude some of the non-VOC samples that carried a subset of VOC lineage-defining mutations. For each pruned tree, we then applied the procedure of finding concordantly evolving pairs of sites, and then the procedure of comparing the strength of concordant evolution for pairs of lineage-defining sites and the complementary subset of pairs.
 
-## Comparing the sets of concordantly evolving pairs and DCA high scoring pairs
+### Comparing the sets of concordantly evolving pairs and DCA high scoring pairs
 
 Alignments of protein sequences and DCA scores for pairs of alignment sites for the following PFAM domains of Spike bCoV_S1_N (PF16451.6), bCoV_S1_RBD (PF09408.11), CoV_S1_C (PF19209.1), bCoV_S2 (PF01601.17), CoV_S2_C (PF19214.1) were kindly provided by Dr. Rodriguez-Rivas upon our request. For each alignment, we identified the sequence most similar to the SARS-CoV-2 Spike protein encoded in the genome EPI_ISL_404895 using BLASTP []. The lengths of domains mapped on the SARS-CoV-2 Spike protein were 305 for bCoV_S1_N, 178 for bCoV_S1_RBD, 57 for CoV_S1_C, 519 for bCoV_S2 and 40 for CoV_S2_C. The total number of site pairs for each domain equals ND(ND-1)/2, where ND is the number of sites in the domain. For each domain, we considered only those concordantly evolving pairs of sites for which both sites were located within the mapped domains; there were 15 such pairs in bCoV_S1_N, fourteen in bCoV_S1_RBD, zero in CoV_S1_C, four in bCoV_S2, and one in CoV_S2_C. We estimated the chance to find the observed numbers of concordantly evolving pairs of sites among the ND pairs having the highest DCA scores using Fisher’s exact test.

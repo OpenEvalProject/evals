@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.44353.001 Coordination of the cellular response to DNA damage is organised by multi-domain ‘scaffold’ proteins, including 53BP1 and TOPBP1, which recognise post-translational modifications such as phosphorylation, methylation and ubiquitylation on other proteins, and are themselves carriers of such regulatory signals. Here we show that the DNA damage checkpoint regulating S-phase entry is controlled by a phosphorylation-dependent interaction of 53BP1 and TOPBP1. BRCT domains of TOPBP1 selectively bind conserved phosphorylation sites in the N-terminus of 53BP1. Mutation of these sites does not affect formation of 53BP1 or ATM foci following DNA damage, but abolishes recruitment of TOPBP1, ATR and CHK1 to 53BP1 damage foci, abrogating cell cycle arrest and permitting progression into S-phase. TOPBP1 interaction with 53BP1 is structurally complimentary to its interaction with RAD9-RAD1-HUS1, allowing these damage recognition factors to bind simultaneously to the same TOPBP1 molecule and cooperate in ATR activation in the G1 DNA damage checkpoint.
+Coordination of the cellular response to DNA damage is organised by multi-domain ‘scaffold’ proteins, including 53BP1 and TOPBP1, which recognise post-translational modifications such as phosphorylation, methylation and ubiquitylation on other proteins, and are themselves carriers of such regulatory signals. Here we show that the DNA damage checkpoint regulating S-phase entry is controlled by a phosphorylation-dependent interaction of 53BP1 and TOPBP1. BRCT domains of TOPBP1 selectively bind conserved phosphorylation sites in the N-terminus of 53BP1. Mutation of these sites does not affect formation of 53BP1 or ATM foci following DNA damage, but abolishes recruitment of TOPBP1, ATR and CHK1 to 53BP1 damage foci, abrogating cell cycle arrest and permitting progression into S-phase. TOPBP1 interaction with 53BP1 is structurally complimentary to its interaction with RAD9-RAD1-HUS1, allowing these damage recognition factors to bind simultaneously to the same TOPBP1 molecule and cooperate in ATR activation in the G1 DNA damage checkpoint.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Using a structurally-derived consensus pattern for phospho-ligand binding to the
 
 ## Results
 
-## Identification of TOPBP1-interacting phosphorylation sites in 53BP1
+### Identification of TOPBP1-interacting phosphorylation sites in 53BP1
 
 Previous studies demonstrated a biologically important interaction between TOPBP1 and 53BP1 – the putative metazoan homologue of Crb2 – involving BRCT1,2 and BRCT4,5 of TOPBP1 (Cescutti et al., 2010), although the molecular basis of this interaction was not fully determined. Although 53BP1 has many roles in mammalian cells that are distinct from those attributed to Crb2 in fission yeast, there is an emerging picture that many of the functional interactions made by these proteins are conserved. Thus, both Crb2 and 53BP1 have now been shown to interact through their C-terminal tandem BRCT2 domains, with the common post-translational histone mark of DNA damage, γH2AX (Kilkenny et al., 2008; Baldock et al., 2015; Kleiner et al., 2015). We therefore hypothesised that phosphorylation-dependent interactions we had previously characterised between Crb2 and Rad4 might also be involved in the putative functional interaction of their mammalian homologues 53BP1 and TOPBP1.
 
@@ -44,7 +44,7 @@ Of the four peptides, only the one centred on 53BP1-pThr670 bound tightly to TOP
 
 Given the previous implication of a role for BRCT4,5 in mediating the interaction of TOPBP1 and 53BP1 (Cescutti et al., 2010), we also looked at the ability of this segment of TOPBP1 to bind these 53BP1-derived phosphopeptides. In contrast to its tight interaction with TOPBP1-BRCT0,1,2, the 53BP1-pThr670 peptide showed little binding to TOPBP1-BRCT4,5, nor did the 53BP1-pThr334 peptide (Figure 1E). However, the 53BP1-pSer366 peptide did show a clear interaction with TOPBP1-BRCT4,5, albeit with a more modest affinity (Kd = 20.6 ± 1.9 μM). 53BP1-pSer380 also bound TOPBP1-BRCT4,5 but with still lower affinity (Kd = 29.6 ± 2.6 μM) (Figure 1F). Treatment of the phosphopeptide with λ-phosphatase or mutation of Lys704, which is implicated in phosphate recognition in TOPBP1-BRCT4,5 eliminated binding, confirming the phospho-specificity of the interaction (Figure 1G).
 
-## Structure of TOPBP1 – 53BP1 phospho-peptide complexes
+### Structure of TOPBP1 – 53BP1 phospho-peptide complexes
 
 To further characterise the nature of these interactions we sought to obtain crystal structures of the TOPBP1-53BP1 phospho-peptide complexes. Co-crystallisation of TOPBP1-BRCT0,1,2 with the 53BP1-pThr670 phospho-peptide produced a crystal structure with peptide bound to BRCT2, consistent with the specificity it displays for that site in binding assays (Figure 2A). The position and overall conformation of the bound peptide is similar to that previously described for the interaction of Crb2-derived phospho-peptides pThr187 and pThr235 bound to BRCT2 of Rad4 (Qu et al., 2013). The phosphorylated side chain of 53BP1-Thr670 interacts with TOPBP1-Thr208 and TOPBP1-Lys250, which are topologically conserved in all BRCT domains capable of phospho-specific peptide interaction (Leung and Glover, 2011). The phosphate also interacts with the head group of TOPBP1-Arg215 which makes an additional hydrogen bond interaction with the side chain of 53BP1-Glu669. The side chain of the −3 residue of the phospho-peptide motif (see above), 53BP1-Ile667, packs into a hydrophobic pocket formed between the side chains of TOPBP1 residues Leu233, Gln249, Lys250 and Cys253. Additional specificity is provided by polar interactions between 53BP1-Glu669 and TOPBP1-Arg215, 53BP1-Glu666 and TOPBP1-Lys234, and 53BP1-Glu665 and the side chains of Arg256 and Trp257 of TOPBP1 (Figure 2B).
 
@@ -56,15 +56,33 @@ We were also able to obtain co-crystals of the 53BP1-pSer366 peptide bound to TO
 
 This mode of binding, conserved in Rad4 and N-terminal TOPBP1 BRCT domain interactions, is markedly different from that reported for binding of an MDC1-derived phospho-peptide to TOPBP1-BRCT4,5 (Leung et al., 2013). In that study, the peptide runs perpendicular to the orientation of the 53BP1-peptide observed here, and the phosphorylated residue of the ligand peptide does not appear to interact with the canonical phospho-interacting residues of TOPBP1-BRCT5. Interestingly, TOPBP1-BRCT4,5 has recently been identified as the binding site for a phosphorylated motif in the RECQ-family helicase BLM (Blackford et al., 2015) and a crystal structure of the complex determined (Sun et al., 2017). The identified binding site in BLM - 300-FVPPpSPE-306 shows strong similarity to the 53BP1-motif we have identified - 362-LVAPpSPD-368, and binds to BRCT5 in a very similar manner, but quite differently from the proposed binding mode of the MDC1 SDT motif (Leung et al., 2013), which we have recently shown plays no role in mediating MDC1 interaction with TOPBP1 (Leimbacher et al., 2019). The similarity of the sequences surrounding BLM-pSer304 and 53BP1-pSer366, especially the −1 proline, the small hydrophobic residues at −2 and −3, and the large hydrophobic residue at −4, suggests a binding specificity for BRCT5 that is related to, but subtely distinct from those defined for BRCT1 and BRCT2; further examples will be required to confirm this.
 
-## TOPBP1-binding sites on 53BP1 are phosphorylated in vivo
+### TOPBP1-binding sites on 53BP1 are phosphorylated in vivo
 
 To verify the presence of these TOPBP1-binding phosphorylation sites in cells, we generated independent phospho-specific antibodies to the two sites and looked at the presence of immuno-reacting species in HeLa cell lysates, both before and after DNA damage by ionising radiation (IR). For both α−53BP1-pSer366 and α−53BP1-pThr670 antibodies, clear reactive bands were seen following IR, which were weaker in non-irradiated cells, and considerably diminished by siRNA knockdown of 53BP1 (Figure 3A). We also performed immunofluorescence with these antibodies in irradiated U2OS cells (Figure 3B) and observed strong co-localisation of foci formed by the phospho-specific antibodies with those formed by antibodies to total 53BP1, consistent with the endogenous protein being phosphorylated on Ser366 and Thr670. To confirm the specificity of the antibodies for the phosphorylated state of their target sites, we knocked-down endogenous 53BP1 in siRNA-resistant wild-type eYFP-53BP1 U2OS cells harbouring either the WT 53BP1 or the S366A or T670A 53BP1 mutants. While we saw strong coincidence of the eYFP signal with immunofluorescent foci to total 53BP1 in the wild-type constructs, this was lost for both of the phospho-specific antibodies in cells transfected with 53BP1 mutated in their respective phosphorylation site epitope (Figure 3C).
 
-## pSer366 and pThr670 mediate 53BP11 interactions with TOPBP1 in vivo
+![Figure 3.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blot of cell lysate from HeLa cells, showing induction of phosphorylation of 53BP1-Ser366 (top) and 53BP1-Thr670 (bottom) following irradiation. siRNA knockdown of 53BP1 eliminates the reactive bands in both cases, confirming the specificity of the antibody for 53BP1. (B) Imaging of irradiated eYFP-53BP1 WT U2OS cells with siRNA knockdown of endogenous 53BP1. 53BP1-pSer366 and 53BP1-pThr670 immunofluorescence signals co-localise in discrete foci with eYFP-53BP1 after IR (9Gy). Scale bar, 10 µm. (C) 53BP1-pSer366 and 53BP1-pThr670 immunofluorescent foci coincident with eYFP-53BP1 WT are lost in irradiated 53BP1 siRNA knocked-down stable eYFP-53BP1 U2OS cells expressing the S366A and T670A mutants, respectively. The α−53BP1-pThr670 antiserum has some additional low-affinity off-target reactivity unrelated to 53BP1 which is not evident when 53BP1 is present. The CDT1-RFP signal in nuclei indicates cells in G1. Scale bar, 5 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig3-figsupp1-v2.jpg)
+
+### pSer366 and pThr670 mediate 53BP11 interactions with TOPBP1 in vivo
 
 To determine whether the interactions of 53BP1-pSer366 and 53BP1-pThr670 with the BRCT domains of TOPBP1 that we characterised in vitro, are important for functional interactions of TOPBP and 53BP1 in vivo, we knocked-down 53BP1 by siRNA in U2OS and RPE1 cells (Figure 3—figure supplement 1), and transfected them with vectors expressing siRNA-resistant eYFP-53BP1 constructs. In both cell types expressing tagged wild-type eYFP-53BP1 constructs, TOPBP1 and eYFP-53BP1 co-localised into damage foci in G1 (Cyclin A negative) cells following irradiation, reflecting the direct interactions we observed in vitro. However, while irradiated U2OS cells expressing the 53BP1-S366A and/or T670A mutants, still formed eYFP-53BP1 foci, formation of TOPBP1 foci coincident with these was significantly reduced (Figure 4A,B). A very similar effect was seen in RPE1 cells (Figure 4—figure supplement 1A). These data suggest that both of these phosphorylation sites are required for maintaining the interaction between 53BP1 and TOPBP1 and for recruiting TOPBP1 into 53BP1 damage foci in G1 cells negative for cyclin A.
 
-## pSer366 and pThr670 facilitate activation of the ATR checkpoint kinase cascade
+![Figure 4.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig4-v2.jpg)
+
+**Figure 4.:** (A) Four hours after 9Gy IR, TOPBP1 foci co-localise with eYFP-53BP1 WT in stably transfected U2OS cells depleted for endogenous 53BP1. Formation of co-localising TOPBP1 foci is greatly reduced in cells expressing eYFP-53BP1 S366A and T670A mutations, and the general distribution of TOPBP1 is more diffuse. The absence of substantial cyclin A immunofluorescence marks the nuclei of cells in G1. Scale bar, 10 µm. Comparable data for RPE1 cells is shown in Figure 4—figure supplement 1. (B) Statistical analysis of TOPBP1 and eYFP-53BP1 foci co-localisation per nucleus in irradiated G1 U2OS cells exemplified in A). Cells expressing S366A or T670A mutant eYFP-53BP1 show significantly lower levels of coincidence between TOPBP1 and eYFP-53BP1. More than 200 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutants relative to wild-type were calculated by a Kruskal-Wallis test corrected by Dunn’s multiple comparison test. (C) Effect of siRNA depletion of 53BP1 on S phase entry by incorporation of BrdU (green) following damage in U2OS cells. Cells that were already in S-phase prior to DNA damage incorporate EdU (yellow) and are not further analysed. Wild-type G1 cells (EdU-) show a robust G1/S checkpoint following irradiation, do not progress into S-phase and do not incorporate BrdU. G1 cells (EdU-) in which 53BP1 is knocked-down fail to checkpoint and progress into S-phase BrdU. EdU-/BrdU+ cells are indicated with arrowheads. Scale bars indicate 10 μm. Comparable data for RPE1 cells is shown in Figure 4—figure supplement 1. (D) 53BP1 siRNA knocked-down cells transfected with wild-type siRNA resistant HA-53BP1 show a G1/S checkpoint following irradiation, while those transfected with 53BP1 in which one or both TOPBP1-binding phosphorylation sites Ser 366 and Thr 670 are mutated, fail to checkpoint and progress into S-phase, incorporating BrdU. Cells that were in S-phase prior to irradiation incorporate EdU (yellow) and are not further analysed. Scale bars indicate 10 µm. Comparable data for RPE1 cells is shown in Figure 4—figure supplement 1. (E) Histogram of U2OS cells depleted of endogenous 53BP1 by siRNA, and transfected with either wild-type HA-53BP1 (WT) or HA-53BP1 with phosphorylation site mutants. The cell cycle phase distributions in the cells expressing mutant 53BP1 are significantly different (Chi-squared test) from that of the wild-type, with a shorter S-phase, and more cells in G2, consistent with a defective G1/S DNA damage checkpoint allowing progression into DNA replication in the presence of unrepaired damage.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Four hours after 9Gy IR, TOPBP1 foci co-localise with eYFP-53BP1 WT in stably transfected RPE1 cells depleted for endogenous 53BP1. Formation of co-localising TOPBP1 foci is greatly reduced in cells expressing eYFP-53BP1 S366A and T670A mutations, and the general distribution of TOPBP1 is more diffuse. The absence of substantial cyclin A immunofluorescence marks the nuclei of cells in G1. Scale bar, 10 µm. (B) G1/S checkpoint analysis. Incorporation of BrdU (green) in EdU negative RPE1 cells (yellow) indicates their S phase entry. Control irradiated cells (2Gy) show a robust G1/S checkpoint arrest, with no progress into S-phase (no BrdU incorporation, see white arrows). Progress into S-phase is not inhibited in 53BP1 knocked-down cells following IR (red arrows). Images were acquired with an IX70 Core DeltaVision microscope. (C) Statistical analysis of data of observed as in A. Bars represent the means of percentage of BrdU+/EdU- cells from more than 2000 cells per case with error bars as standard error of the mean. (D) 53BP1 knocked-down cells transfected with eYFP-53BP1 show a G1/S checkpoint following irradiation, while those transfected with 53BP1 in which one or both TOPBP1-binding phosphorylation sites Ser 366 and/or Thr 670 are mutated, progress into S-phase and incorporate BrdU. (E) As B, bars represent means of percentage of BrdU+/EdU- cells from more than 500 eYFP-53BP1 transfected cells per case with error bars as standard errors of the mean. Kruskal-Wallis test corrected with a Dunn’s multiple comparison was done. Adjusted p values are displayed when significant differences are observed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Data underlying Figure 4C, but shown as separate channels. (B) Data underlying Figure 4D, but shown as separate channels.
+
+### pSer366 and pThr670 facilitate activation of the ATR checkpoint kinase cascade
 
 As interaction of 53BP1 and TOPBP1 has previously been suggested to play a role in G1 checkpoint function, we established a dual EdU/BrdU labelling checkpoint assay (Cescutti et al., 2010) in U2OS and RPE1 cells, which allows measurement of DNA synthesis in cells moving from G1 into S-phase in the presence/absence of DNA damage. We then used this to test the role, if any, of the 53BP1 phosphorylation sites we have identified, in the G1 checkpoint response. Wild-type U2OS and RPE1 cells both showed a G1/S checkpoint in response to ionising radiation (IR), with few cells moving into DNA synthesis (visualised by BrdU incorporation) as compared to untreated cells. However, this G1/S checkpoint was greatly reduced in cells of either type in which 53BP1 protein levels were knocked down by siRNA, confirming a critical role for 53BP1 (Figure 4C, Figure 4—figure supplement 1B,C, Figure 4—figure supplement 2A). The checkpoint response to IR in both cell types was largely restored in the 53BP1 knockdown cells by expression of an siRNA-resistant 53BP1 construct, but not by 53BP1 constructs with S366A and/or T670A mutations (Figure 4D, Figure 4—figure supplement 1D,E, Figure 4—figure supplement 2B). Consistent with this, we found that the cell cycle distribution of irradiated U2OS cells expressing the mutants were significantly perturbed compared with wild-type, with the mutants displaying fewer cells in G1 or S phases and a higher proportion in G2 (Figure 4E).
 
@@ -74,9 +92,29 @@ ATM and ATR have both been previously shown to form nuclear foci in G1 cells fol
 
 In marked contrast, co-localisation of pATR foci with 53BP1 was significantly disrupted (Figure 5A,B) by the S366A and/or T670A mutations of 53BP1. CHK1, which is activated by ATR in the DNA damage checkpoint response, has also been previously shown to form nuclear foci following irradiation (Peddibhotla et al., 2011; Burdak-Rothkamm et al., 2015; Antonczak et al., 2016). Using antibodies to total CHK1, we also observed distinct CHK1 foci co-incident with wild-type eYFP-53BP1 in 53BP1-knockdown G1 RPE1 cells following irradiation, but not in irradiated cells in which 53BP1 was knocked down by siRNA, where CHK1 displayed a diffuse pan-nuclear distribution (Figure 5C). CHK1 foci were restored in 53BP1 knockdown cells expressing siRNA-resistant wild-type eYFP-53BP1, but not in cells expressing eYFP-53BP1 with S366A and/or T670A mutations, which displayed the same diffuse distribution of CHK1 as the 53BP1 knockdown cells (Figure 5D). While CHK1, unlike ATR, is not a direct ligand of TOPBP1, these data suggest that its recruitment to sites of DNA damage in G1 and its activating interaction with ATR, most likely mediated by claspin (Liu et al., 2006), is dependent on the 53BP1-TOPBP1 interaction. Consistent with this functional disruption of ATR and CHK1, we observed significant decreases in DNA damage induced TP53-Ser15 phosphorylation (Shieh et al., 2000; Helt et al., 2005) and total TP53 and p21 levels, in 53BP1 knockdown G1 U2OS cells expressing S366A or T670A eYFP-53BP1, compared to wild-type (Figure 5E,F,G,H).
 
-## 53BP1 and 9-1-1 co-localise in G1 damage foci
+![Figure 5.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig5-v2.jpg)
+
+**Figure 5.:** (A) ATR activated by phosphorylation on Thr1989 (pATR) forms immunofluorescent foci that co-localise with transfected eYFP-53BP1 in irradiated G1 U2OS cells with siRNA knockdown of endogenous 53BP1. However, co-localisation of ATR foci with eYFP-53BP1 foci is lost in cells expressing eYFP-53BP1 constructs with S366A and T670A mutations. The absence of substantial cyclin A immunofluorescence marks the nuclei of cells in G1. Scale bar, 5 µm. (B) Statistical analysis of pATR and eYFP-53BP1 foci co-localisation per nucleus in irradiated G1 U2OS cells exemplified in (A) More than 100 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutants relative to wild-type were calculated by a Kruskal-Wallis test corrected by Dunn’s multiple comparison test. (C) CHK1 forms distinct immunofluorescent foci in irradiated G1 RPE1 cells transfected with a control scrambled siRNA (SCR). On siRNA knockdown of 53BP1, CHK1 no longer forms discrete foci, but takes on a diffuse pan nuclear distribution. The absence of substantial cyclin A immunofluorescence marks the nuclei of cells in G1. Scale bar, 5 µm. (D) CHK1 focus formation in irradiated G1 RPE1 cells with siRNA knockdown of endogenous 53BP1, is rescued by expression of siRNA-resistant wild-type eYFP-53BP1 but not by eYFP-53BP1 constructs with S366A and T670A mutations. Scale bar, 5 µm. (E) Phosphorylation of the ATR/CHK1 target site, TP53-Ser15, is evident in the nuclei of irradiated U2OS cells stably expressing the wild-type eYFP-53BP1 and depleted for endogenous 53BP1. This signal is significantly diminished in cells expressing eYFP-53BP1 constructs with S366A or T670A mutations. Scale bar, 10 µm. (F) Statistical analysis of mean α-TP53-Ser15 immunfluorescence per nucleus in irradiated G1 U2OS cells exemplified in (E) More than 100 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutants relative to wild-type were calculated by a Kruskal-Wallis test corrected by Dunn’s multiple comparison test. (G) p21/CDKN1A and TP53 nuclear signals are decreased after irradiation in U2OS cells expressing eYFP-53BP1 S366A and T670A mutants and depleted of endogenous 53BP1 compared to a wild-type eYFP-53BP1 control. Neither the TP53-pSer15 (E) nor total TP53 immunofluorescence signals show any pattern of co-localisation with 53BP1, confirming that direct interaction of the two proteins is not significant in the context of DNA damage signalling (Cuella-Martin et al., 2016). Scale bar, 10 µm. (H) Statistical analyses of mean α-p21/CDKN1A (left) and α-TP53 (right) immunfluorescence per nucleus in irradiated G1 U2OS cells exemplified in G) More than 100 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutants relative to wild-type were calculated by a Kruskal-Wallis test corrected by Dunn’s multiple comparison test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative pictures of pATM foci formation 2 hr post IR (9Gy) in RPE1 cells after a 72 hr knockdown period with a 3’UTR 53BP1 siRNA. Wide field pictures are taken with an IX70 Core DeltaVision microscope (scale bar, 40 µm) and magnifications display absence of foci in knocked-down cells (scale bar, 5 µm). Boxplots (right) represent the pATM foci counts per nucleus following 53BP1 depletion in RPE1 cells 2 hr post IR (9Gy). The median, mean (+), 10–90 percentiles and outliers are presented. The pATM foci formation decrease after knockdown is considered significant (p<0.0001) by a a Mann-Whitney test. More than 700 nuclei were counted for each case. (B) pATM foci co-localise with 53BP1 in irradiated U2OS cells with siRNA knockdown of endogenous 53BP1 and transfected with siRNA-resistant eYFP-53BP1. co-localisation is not substantially disrupted by the presence of S366A or T670A mutations in 53BP1. Scale bar, 10 µm. Boxplots (right) statistical analysis of images exemplified in B. More than 200 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutants relative to wild-type were calculated by a Kruskal-Wallis test corrected by Dunn’s multiple comparison test. (C) as B. but for RPE1 cells. More than 300 cells per case were counted. Scale bar, 10 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Western blot demonstrating the specificity of the pATR-pT1989 phospho-specific antibody used for immunofluorescence. The strong band observed in irradiated U2OS cells treated with a control siRNA is not present in irradiated cells treated with a specific siRNA to ATR. (B) Immunofluorescent foci of pATR are evident in irradiated U2OS cells treated with a scrambled control siRNA and to a lesser extent in similarly treated unirradiated cells. Transfection with an siRNA targeting ATR significantly diminishes the observation of pATR foci in both irradiated and non-irradiated cells. Scale bar, 2 µm. (C) Statistical analysis of images exemplified in B. Boxplots (right) represent the pATR foci counts per nucleus. The median, mean (+), 10–90 percentiles and outliers are presented. The pATR foci formation decrease after knockdown is considered significant (p<0.0001) by a Mann-Whitney test. More than 100 nuclei were counted for each case.
+
+### 53BP1 and 9-1-1 co-localise in G1 damage foci
 
 ATR localisation to DNA damage sites in S and G2 phases, requires interaction of its constitutive partner, ATRIP, with RPA-bound segments of ssDNA, arising through replication fork collapse, or resection of DSBs by MRN as a prelude to repair by HR (Maréchal and Zou, 2015). Activation of ATR additionally requires interaction with the AAD-domain of TOPBP1, which is recruited to damage sites via interaction with the phosphorylated C-terminus of RAD9 (Lee et al., 2007), within the toroidal RAD9-RAD1-HUS1 (9-1-1) checkpoint clamp (Doré et al., 2009), itself loaded at the inner margin of the ssDNA segment by the RAD17-RFC clamp loader complex (Ohashi and Tsurimoto, 2017). As our biochemical and structural analysis shows that the critical phosphorylation sites on 53BP1 selectively interact with BRCT domains 2 and 5 of TOPBP1, binding of 53BP1 to a TOPBP1 molecule would not in principle preclude simultaneous binding of the RAD9-tail, which is strongly selective for BRCT1 (Rappas et al., 2011; Day et al., 2018). We therefore considered the possibility that TOPBP1 might be able to interact simultaneously with 53BP1 and RAD9 (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of domain architecture of TOPBP1 and interactions. The selective phosphorylation-dependent interactions of 9-1-1 and 53BP1 with different BRCT domains allow for the possibility of their simultaneous interaction with a single TOPBP1 molecule and their collaborative participation in ATR interaction. (B) 53BP1 and RAD9 immunofluorescence foci partially co-localise in irradiated RPE1 cells. Scale bar, 5 µm. (C) Proximity ligation assay (PLA) events (red) for RAD9 and 53BP1 demonstrating the occurrence of RAD9 and 53BP1 molecules within 30–40 nM of each other within the nuclei of irradiated RPE1 cells. Scale bar representing 50 µm and 5 µm are indicated. (D) Scatter plot of PLA events per nucleus for RAD9 – 53BP1 proximity as a function of nuclear Hoechst signal for irradiated (top) and non-irradiated (bottom) RPE1 cells. The PLA signal is predominantly seen in G1 cells (lower Hoechst staining) and is significantly increased by irradiation of the cells. (E) Statistical analysis of PLA events per nucleus in irradiated RPE1 cells shown in D,) showing a significant increase in PLA signals on irradiation. More than 500 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the irradiated versus non-irradiated cells were calculated by a Mann-Whitney test. (F) Statistical analysis of PLA events per nucleus in irradiated RPE1 cells transfected either with a control scrambled siRNA (SCR) or an siRNA directed against TOPBP1 (Figure 6—figure supplement 1C). A very significant decrease in PLA signal between 53BP1 and RAD9 when TOPBP1 is knocked down. More than 200 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the irradiated versus non-irradiated cells were calculated by a Mann-Whitney test. Comparable data for U2OS cells is presented in Figure 6—figure supplement 1B. (G) Statistical analysis of PLA events per nucleus between RAD9 and eYFP, in irradiated U2OS cells with siRNA knockdown of endogenous 53BP1, transfected with either wild-type eYFP-53BP1 or eYFP-53BP1 with S366A and/or T670A mutations. More than 200 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the mutant versus wild-type eYFP-53BP1 constructs were calculated by a Mann-Whitney test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44353/elife-44353-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Scatter plot of PLA events per nucleus for RAD9 – 53BP1 proximity as a function of nuclear Hoechst signal for irradiated U2OS cells in the presence of either a control scrambled siRNA (top) or an siRNA directed against TOPBP1 (bottom). The PLA signal in the control is predominantly seen in G1 cells (lower Hoechst staining). (B) Statistical analysis of PLA events in A., showing a very significant decrease in PLA signal between 53BP1 and RAD9 when TOPBP1 is knocked down compared to the control siRNA treated cells. More than 150 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the irradiated versus non-irradiated cells were calculated by a Mann-Whitney test. (C) Western blots demonstrating depletion of TOPBP1 protein in U2OS and RPE1 cells treated with siRNA targeted to TOPBP1. (D) Analysis of 53BP1 (left) and RAD9 (centre) foci counts per nucleus in the presence of siRNA knockdown of TOPBP1, and a non-targeting scrambled siRNA control. No significant difference in 53BP1 focus formation is seen between the targeted and non-targeted siRNA treatments. RAD9 foci numbers are decreased in the presence of siTOPBP1, but still present. Consistent with the PLA data, co-localisation of those RAD9 foci with 53BP1 is diminished. More than 200 nuclei were counted per case. Median, mean (+), 10–90 percentiles and outliers are represented in boxplots. p values for the targeting versus scrtambled siRNA were calculated by a Mann-Whitney test.
 
 To explore this, we looked at the distributions of 53BP1 and 9-1-1 (via RAD9) in the nuclei of irradiated G1 RPE1 cells, and observed substantial coincidence of 53BP1 and RAD9 foci (Figure 6B). To determine whether this co-localisation reflects 53BP1 and 9-1-1 being in physical proximity within a site of DNA damage, we utilised a cellular proximity ligation assay (PLA) (Duolink, Sigma-Aldrich UK – see Materials and methods), which generates a fluorescent focus when two target proteins are within 30–40 nm of each other. We observed a strong PLA signal between RAD9 and 53BP1 in irradiated cells (Figure 6C), which increased significantly on exposure to IR (Figure 6D,E), with the major effect occurring in cells featuring the lowest Hoechst intensity typical of G1 cells with low DNA content. When TOPBP1 levels were knocked down by siRNA, we observed a significant loss of the proximity signal between RAD9 and 53BP1 in irradiated cells (Figure 6F), consistent with TOPBP1 playing a pivotal role in bringing these two damage recognition proteins into proximity. Similar results were obtained with U2OS cells (Figure 6—figure supplement 1). We were also able to detect PLA signals between RAD9 and eYFP in U2OS cells with 53BP1 siRNA knockdown in which eYFP-53BP1 was transiently transfected. However, consistent with the role of pSer366 and pThr670 in mediating recruitment of the eYFP-53BP1 to TOPBP1 and thereby bringing it into close proximity to RAD9, the RAD9-eYFP PLA signal was significantly diminished when the cells were transfected with eYFP-53BP1 constructs with S366A and T670A mutations (Figure 6G).
 
@@ -98,51 +136,733 @@ We previously showed that TOPBP1-BRCT1 provides the highest affinity binding-sit
 
 ## Materials and methods
 
-## Contact for reagent sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>E. coli BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>Cat#C2527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Hela cells</td>
+      <td>ATCC</td>
+      <td>RCB0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS cells</td>
+      <td>STRV</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS cells stably expressing eYFP-53BP1 WT, S366A and T670A</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>RPE-1 htert WT</td>
+      <td>STRV</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>peYFP-53BP1 WT, peYFP-53BP1 S366A, peYFP-53BP1 T670A, peYFP-53BP1 S366A T670A</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP [LGB-1]</td>
+      <td>Abcam</td>
+      <td>Cat#ab291, RRID:AB_449092</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-pATM (S1981)</td>
+      <td>Abcam</td>
+      <td>Cat#2152–1 RRID:AB_991678 lot GR217573-12</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-goat Alexa Fluor 647</td>
+      <td>Abcam</td>
+      <td>Cat#ab150135 RRID:AB_2687955</td>
+      <td>(1:400) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-53BP1</td>
+      <td>Bethyl Laboratories, Inc</td>
+      <td>Cat#A303-906A RRID:AB_2620256</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-53BP1</td>
+      <td>Bethyl Laboratories, Inc</td>
+      <td>Cat#A300-272A RRID:AB_185520</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Rad9</td>
+      <td>Bethyl Laboratories, Inc</td>
+      <td>Cat#A300-890A RRID:AB_2269209</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TopBP1</td>
+      <td>Bethyl Laboratories, Inc</td>
+      <td>Cat#A300-111A RRID:AB_2272050</td>
+      <td>(1:50) dilution IF, (1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-β-actin (13E5)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#4970 also 4970P,4970L,4970S RRID:AB_2223172 lot 14</td>
+      <td>(1:1000) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-p53 (DO-7)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 48818 RRID:AB_2713958 lot 1</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p-p53 (S15)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#9284also9284S,9284L,9284P RRID:AB_331464 lot 19</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p21 Waf1/Cip1 (12D1)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#2947also2947S,2947P RRID:AB_823586 lot 9</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG Fab2 Alexa Fluor 647 Molecular Probes</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#4410S RRID:AB_10694714 lot 11</td>
+      <td>(1:400) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, HRP linked Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#7074also7074S, 7074V,7074P2 RRID:AB_2099233 lot 26</td>
+      <td>(1:2000) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG, HRP linked Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#7076also7076S,7076V,7076P2 RRID:AB_330924 lot 32</td>
+      <td>(1:2000) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-53BP1</td>
+      <td>EMD Millipore Corp</td>
+      <td>Cat#MAB3802 RRID:AB_2206767 lot 2794909</td>
+      <td>(1:500) dilution IF, (1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pATR (pT1989)</td>
+      <td>GeneTex</td>
+      <td>Cat#GTX128145 RRID:AB_2687562</td>
+      <td>(1:100) dilution IF, (1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pS366 53BP1</td>
+      <td>ImmunoKontact</td>
+      <td>Antigen:[CSSDLVAP(pS)PDAFRSTP]</td>
+      <td>(1:500) dilution IF, (1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-pT670 53BP1</td>
+      <td>ImmunoKontact</td>
+      <td>Antigen:[CVEEIPE(pT)PCESQGEE]</td>
+      <td>(1:500) dilution IF, (1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-BrdU Monoclonal Antibody (MoBU-1), Alexa Fluor 488</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#B35130 RRID:AB_2536434 lot 1712859</td>
+      <td>(1:200) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-rabbit DKXRB TRITC</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#A16040 RRID:AB_2534714 lot 31-33-091912</td>
+      <td>(1:400) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-mouse DKXMU IgG F(AB)’ 2 FITC</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#A24507 RRID:AB_2535976 lot 42-73-052014</td>
+      <td>(1:400) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-rabbit IgG (H + L) Cross-Adsorbed Goat Secondary Antibody, Cyanine5</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#A10523 RRID:AB_10374302 lot1675037</td>
+      <td>(1:400) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Cyclin A (B-8)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-271682 RRID:AB_10709300 lot L1316</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-ATR (N-19)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-1887 RRID:AB_630893 lot G1408</td>
+      <td>(1:500) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-HA-probe (Y-11)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-805 RRID:AB_631618 lot C0415</td>
+      <td>(1:100) dilution IF, (1:2000) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA-probe (F-7)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-7392 RRID:AB_627809 lot C1114</td>
+      <td>(1:100) dilution IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Tubulin (H-235)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-9104 RRID:AB_2241191 lot L1713</td>
+      <td>(1:2000) dilution WB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pCMH6K HA-53BP1</td>
+      <td>Noon et al., 2010 a gift from Penny Jeggo</td>
+      <td>N/A</td>
+      <td>Plasmid encoding full length Human 53BP1 WT, S366A, T670A or S366A T670A mutants. Contains silent mutations for siRNA resistance.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: peYFP-53BP1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding full length Human 53BP1 WT, S366A, T670A or S366A T670A mutants. Contains silent mutations for siRNA resistance.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: peYFP-C1</td>
+      <td></td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting sequence: SCR siRNA: sense: UUCAAUAAAUUCUUGAGGU(dTdT) antisense: (dTdT) CCTCAAGAATTTATTGAA</td>
+      <td>Eurofins (Lou et al., 2003)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting sequence: 53BP1 siRNA*: sense: AGAACGAGGAGACGGUAAUAGUGGG(dTdT) antisense: (dTdT)CCCACTATTACCGTCTCCTCGTTCT</td>
+      <td>Eurofins (Noon et al., 2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting sequence: 3’ UTR 53BP1 siRNA**: sense: AAAUGUGUCUUGUGUGUAA(dTdT) antisense: (dTdT)TTACACACAAGACACATTT</td>
+      <td>Eurofins (Knobel et al., 2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting sequence: TOPBP1 : sense: GUAAAUAUCUGAAGCUGUA(dTdT) antisense: (dTdT) UACAGCUUCAGAUAUUUAC</td>
+      <td>Eurofins (Broderick et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting: ATR siRNA ID: s536</td>
+      <td>ThermoFisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 cloning fragment 1 Forward (5’- &gt; 3’): GTCCGGACTCAGATCTATGGACCCTACTG GAAGTCAGT</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 cloning fragment 1 Reverse (5’- &gt; 3’): CACACTGGCGTCCCTGTCTGACTGACC</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 cloning fragment 2 Forward (5’- &gt; 3’): AGGGACGCCAGTGTGTGAGGAGGATGGT</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 cloning fragment 2 Reverse (5’- &gt; 3’): TAGATCCGGTGGATCCTTAGTGAGAAACATAATCGTGTTTATATTTTGGATGCT</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 S366A mutagenesis Forward (5’- &gt; 3’): TTGTTGCTCCtgcTCCTGATGCT</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 S366A mutagenesis Reverse (5’- &gt; 3’): GATCTGAAGAATTCGTGGAAAGAC</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 T670A mutagenesis Forward (5’- &gt; 3’): AATCCCTGAGgcaCCTTGTGAAAG</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer: 53BP1 T670A mutagenesis Reverse (5’- &gt; 3’): TCTTCCACCTCAGACCCTG</td>
+      <td>Eurofins (this paper)</td>
+      <td></td>
+      <td>Primer used for PCR in cloning experiment</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pT334 peptide 'Flu'-GYGGGCSLAS(pT)PATTLHL</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td>Fluorescein labelled for FP measurements</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pS366 peptide 'Flu'-GYGSSDLVAP(pS)PDAFRST</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td>Fluorescein labelled for FP measurements</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pS380 peptide 'Flu'-GYGTPFIVPS(pS)PTEQEGR</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td>Fluorescein labelled for FP measurements</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pT670 peptide 'Flu'-GYGEVEEIPE(pT) PCESQGE</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td>Fluorescein labelled for FP measurements</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pS366 peptide SSDLVAP(pS)PDAFRST</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>53BP1 pT670 peptide EVEEIPE(pT)PCESQGE</td>
+      <td>Peptide Protein Research Limited (this paper)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Clonetech</td>
+      <td>Cat#639646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>APEX Alexa Fluor 555 Antibody Labeling Kit (used for pS366 and pT670 53BP1 antibodies)</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#A10470 lot 1831224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 647 Imaging Kit</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Premo FUCCI Cell Cycle Sensor (BacMam 2.0)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#P36238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce ECL Western Blotting Substrate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#32209 lot RE232713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Line Nucleofector Kit V</td>
+      <td>Lonza</td>
+      <td>Cat#VCA-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NanoJuice Transfection Kit</td>
+      <td>EMD Millipore Corp</td>
+      <td>Cat#71902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fisher BioReagents Bovine Serum Albumin (BSA) Fatty Acid-free Powder</td>
+      <td>Fisher Scientific by ThermoFisher Scientific</td>
+      <td>Cat# BP9704-100 CAS: 9048-46-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Diamond Antifade Mountant ThermoFisher Scientific</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat# P36965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPAGE 3–8% Tris-Acetate Protein Gels</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#EA0378BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPAGE Antioxidant</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#NP0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPAGE Sample Reducing Agent (10X)</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#NP0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPAGE LDS Sample Buffer (4X)</td>
+      <td>Invitrogen by ThermoFisher Scientific</td>
+      <td>Cat#NP0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzonase Nuclease</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-202391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphatase Inhibitor Cocktail C</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-45065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418 Disulfat Salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>A1720 ; CAS: 108321-42-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1665; CAS: 31430-18-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2’-deoxyuridine (BrDU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B5002; CAS: 59-14-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>bisBenzimide H33352 trihydrochloride (Hoechst 33342)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B2261 ; CAS: 23491-52-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monoclonal Anti-HA−Agarose antibody produced in mouse</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>000000005056489001; COEDTAF-RO ROCHE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Duolink In Situ Orange Starter Kit Goat/Rabbit</td>
+      <td>Sigma-Aldrich</td>
+      <td>DUO92106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX Transfection Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# #13778015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phusion Flash High Fidelity Master Mix</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#F-548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce ECL Western Blotting Substrate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#32209 lot RE232713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism six for Mac OS X (v6.0h)</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Profiler (2.2.0)</td>
+      <td>Broad Institute</td>
+      <td>http://cellprofiler.org/ RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>ImageJ software</td>
+      <td>http://fiji.sc/ RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Micro-Manager (µManager)</td>
+      <td>Vale Lab, UCSF</td>
+      <td>https://micro-manager.org/ RRID:SCR_000415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SlideBook6</td>
+      <td>Intelligent Imaging Innovations (3i)</td>
+      <td>https://www.intelligent-imaging.com/slidebookRRID:SCR_014300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td>GSL Biotech LLC</td>
+      <td>http://www.snapgene.com/ RRID:SCR_015052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEBaseChanger v1.2.6</td>
+      <td>New England Biolabs</td>
+      <td>http://nebasechanger.neb.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>Combined Crystallographic Computing Project</td>
+      <td>http://www.ccp4.ac.uk/ RRID:SCR_007255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Phenix Consortium</td>
+      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Buster</td>
+      <td>Global Phasing</td>
+      <td>https://www.globalphasing.com/buster/ RRID:SCR_015653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope: Olympus-3i spinning disc</td>
+      <td>Olympus</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope: Olympus IX70 Core DeltaVision</td>
+      <td>Olympus</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor Pico sonication device</td>
+      <td>Diagenode</td>
+      <td>Cat# B01060001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ImageQuant LAS 4000</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>Cat#28955810</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent sharing
 
 Further information and requests for reagents should be directed to and will be fulfilled by the Lead Contact, Laurence Pearl (laurence.pearl@sussex.ac.uk).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 See Key Resources Table for information on bacterial strains used as sources of material in this study.
 
-## Generation of pEYFP-53BP1
+#### Generation of pEYFP-53BP1
 
 Two separate fragments of 53BP1 cDNA were amplified by PCR from the pCMH6K HA-53BP1 plasmid harbouring three silent mutations that confer siRNA resistance (Noon et al., 2010). The two amplicons were inserted into the BglII/BamHI sites of peYFP-C1a by In-Fusion cloning (Clontech). Ser366Ala (S366A), Thr670Ala (T670A) and Ser366Ala/Thr670Ala (S366A/T670A) mutations were created by site-directed mutagenesis. All constructs were verified by Sanger sequencing.
 
-## Cell culture and transfection
+#### Cell culture and transfection
 
 HeLa, U2OS and RPE1 cells used in this study derive from central stocks in the Genome Damage and Stability Center at the University of Sussex (http://www.sussex.ac.uk/gdsc/facilities) and are STR-validated and determined as mycoplasma free by MycoAlert (Lonza). HeLa and U2OS cells were cultured in DMEM supplemented with 10% (v/v) fetal calf serum (FCS), 1% (v/v) penicillin/streptomycin mix, and 1% (v/v) L-glutamine. RPE1 active hTert cells were cultured in DMEM F12 supplemented with 10% (v/v) FCS and 1% (v/v) penicillin/streptomycin mix. Transfections with siRNA were carried out with Lipofectamine RNAiMAX Transfection Reagent (ThermoFisher Scientific). Briefly, 0.25 × 106 cells were seeded in 35 mm wells. The next day, according to the manufacturer’s instructions, 7.5 µL per well of RNAiMAX were used to transfect cells, obtaining a final concentration of 20 nM for the added siRNA (53BP1, ATR, TOPBP1, see Key Resources Table for sequences). Knockdown efficiencies were confirmed either by western blot or immunofluorescence. All experiments requiring prior siRNA transfection, involved an 72 hr period of exposure to siRNA treatment.
 
 Complementation experiments were performed by transiently transfecting siRNA-resistant 53BP1 constructs (pCMH6K HA-53BP1 or pEYFP-53BP1 depending on the experiment). For each 35 mm well containing HeLa cells, 1.5 µg of plasmid was transfected with NanoJuice Core Transfection Reagent and Booster at a ratio of 3:1 (Reagent:DNA). U2OS and RPE1 cells were transfected using Cell Line Nucleofector Kit V and a Nucleofector electroporator (Lonza) according to the manufacturer’s instructions. Briefly, 1 × 106 cells were electroporated with 1.5 µg of plasmid, then allowed to recover for a period of 6 hr in their respective 20% FCS media. The media was then refreshed (10% FCS), and cells cultured for a further 14 hr to allow protein expression from the transfected plasmids.
 
-## Generation of stable U2OS cell lines
+#### Generation of stable U2OS cell lines
 
 Stably transfected U2OS cells were generated using using Cell Line Nucleofector Kit V and a Nucleofector electroporator (Lonza). After 24 hr, cells that had integrated plasmid were selected in media supplemented with G418 (400 µg mL−1 Sigma-Aldrich) for 10 days. Surviving colonies were used to seed subsequent experiments.
 
-## Method details
+### Method details
 
-## Protein expression and purification
+#### Protein expression and purification
 
 TOPBP1 constructs for biochemical and structural analysis were expressed in E. coli and purified by conventional chromatography, as previously described (Rappas et al., 2011; Qu et al., 2013; Day et al., 2018).
 
-## Fluorescence polarization experiments
+#### Fluorescence polarization experiments
 
 Binding to TOPBP1-BRCT0,1,2, and -BRCT4,5 domains were determined using fluorescein-labelled peptides and BRCT fusion proteins as previously described (Rappas et al., 2011; Qu et al., 2013; Day et al., 2018).
 
-## X-ray crystallography
+#### X-ray crystallography
 
 Co-crystals of the TOPBP1-BRCT0,1,2–53BP1-pT670 complex and TOPBP1-BRCT4,5–53BP1-pS366 complex were grown by vapour diffusion from conditions optimised from initial hits in E1 (10% w/v PEG 20 000, 20% v/v PEG MME 550 0.03 M of each ethylene glycol 0.1 M MES/imidazole pH 6.5) and G7 (10% w/v PEG 4000, 20% v/v glycerol 0.02 M of each carboxylic acid 0.1 M MOPS/HEPES-Na pH 7.5) of the MORPHEUS screen (Molecular Dimensions) prior to plunge-freezing in liquid nitrogen. Data were collected on the I04 and I03 beamlines at the Diamond Synchrotron Lightsource and the structures were determined by molecular replacement using PDB models 2XNH and 3UEN. Processing and refinement were carried out using the CCP4 and PHENIX suites of programs. For the final TOPBP1-BRCT4,5–53BP1-pS366 structure refinements with Phenix, NCS was imposed with chains A and C, B and D, and P and R, being paired together. Statistics for data collection and refinement are presented in Supplementary file 1. Coordinates and structure factors have been deposited in the Protein Databank with accession codes 6RML (pT670 complex) and 6RMM (pS366 complex).
 
-## DNA damage induction
+#### DNA damage induction
 
 Unless otherwise stated, DNA damage was produced by exposing cells to a 9 Gy radiation dose using a Gamma-cell 1000 Elite irradiator (Caesium137 gamma source). Post-exposure, cells were allowed to recover for a period of 4 hr at 37°C.
 
-## G1/S cell cycle detection
+#### G1/S cell cycle detection
 
 Prior to infection, 1 × 105 eYFP-53BP1 WT Ser366Ala or Thr670Ala U2OS cells were first transfected in 35 mm wells with 53BP1 siRNA. Twenty-four hours later, cells were incubated with ~20 viral particles per cell (20 µL) of Cdt1-RFP Premo FUCCI Cell Cycle Sensor (ThermoFisher Scientific). After a further period of 24 hr, cells were exposed to gamma radiation.
 
-## Immunofluorescence and microscopy
+#### Immunofluorescence and microscopy
 
 Transfected or non-transfected cells were cultured on 10 mm round cover glasses (VWR). Prior to fixation, cells were incubated with Hoechst 33342 (5 µg mL−1 in PBS) for 15 min at 37°C, then washed three times with ice-cold PBS. Cells were fixed with cold methanol for 20 min (−20°C) (unless otherwise stated) and again washed three times with ice-cold PBS. Cells were blocked using a 4% (w/v) bovine serum albumin (BSA) solution in PBS for 15 min on ice. Primary and secondary antibody incubations were carried out at room temperature for 1 hr in BSA/PBS, followed by three sequential washes with PBS and a single wash with 0.1% (v/v) TritonX-100 in PBS. Mounting on glass slides was carried out with ProLong Diamond Antifade Mountant (ThermoFisher Scientific).
 
@@ -152,7 +872,7 @@ Images were analysed using CellProfiler (http://cellprofiler.org) (Carpenter et 
 
 The quoted correlation coefficient, ranges from −1 (complete inverse correlation) to +1 (complete correlation), and corresponds to the measured normalised covariance (covariance divided by the product of standard deviation of pixels in each image) similar to a Pearson’s coefficient. Montages of representative pictures were created using FIJI (http://fiji.sc) (Preibisch et al., 2009).
 
-## Checkpoint analysis
+#### Checkpoint analysis
 
 U2OS cells were reverse-transfected with 53BP1 siRNA. Forty-eight hours later, cells were transfected with an siRNA-resistant construct containing either wild-type HA-53BP1 or one of the phosphorylation mutants. Fifteen hours later, cells were incubated for a period of 1 hr with EdU (10 µM) and irradiated with 2 Gy ionising radiation, before the addition of BrdU (10 µM) and nocodazole (0.25 µg mL−1). Cells were incubated for a further period of 7 hr before staining. Fixation of cells was performed using a 4% (v/v) paraformaldehyde in PBS solution at room temperature for 15 min. Fixed cells were then permeabilised with a 0.5% (v/v) TritonX-100 in PBS solution for 20 min at room temperature. The subsequent steps for EdU staining carried out as indicated in the protocol provided with the Click-iT EdU Alexa Fluor 647 Imaging Kit (ThermoFisher Scientific).
 
@@ -160,19 +880,19 @@ Detection of BrdU required prior incubation of cells with 2N HCl for 60 min at 3
 
 To determine the proportion of cells at each cell cycle phase, U2OS cells processed as above, were also analysed on the ScanR microscope, after 4 hr of exposure to 8 Gy of ionising radiation. Only cells expressing either wild-type HA-53BP1 or phosphorylation site mutants (Ser366Ala and Thr670Ala) were compared. Thirty-six images per well were analysed for DAPI intensity and total internal FITC intensity, in order to generate a cell cycle profile of transfected cells.
 
-## Western blots
+#### Western blots
 
 For western blots of damage-induced 53BP1 phosphorylation, HeLa cells were reverse transfected with either siRNA targeting 53BP1 or a non-targeting control, and then incubated for a period of 48 hr at 37 ˚C. Cells were then exposed to 8 Gy of ionising radiation and allowed to recover for 4 hr before being lysed by re-suspension of the frozen cell pellets in 2 mL of RIPA buffer (Sigma-Aldrich) supplemented with EDTA-free protease- and PhosSTOP phosphatase-inhibitor tablets (Roche Diagnostics, Burgess Hill, UK) and 40 μl Benzonase endonuclease (25 Units μL−1, Merck-Millipore), followed by disruption in a Bioruptor Pico with water cooler (Diagenode, Seraing, Belgium). Cell debris and insoluble material were removed by centrifugation at 16,000 x g, for 10 min at 4°C, followed by dilution in 10 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.5 mM EDTA, 0.5 mM TCEP supplemented with protease and phosphatase inhibitor tablets as before.
 
 Following separation by SDS-PAGE, samples were transferred to a nitrocellulose membrane and probed for the presence of immuno-reactive species by chemi-luminescent western blot (see Key Resources Tables for details of antibodies and dilutions).
 
-## Proximity Ligation Assay (PLA)
+#### Proximity Ligation Assay (PLA)
 
 For endogenous 53BP1-RAD9 protein proximity ligation assays, U2OS or RPE1 cells were seeded at a density of 2.5 × 105 cells per cm2 on 10 mm round glass coverslips and cultured for 24 hr. Cells were irradiated (9Gy) or not (control), stained in a Hoechst 33342 (5 µg mL−1 in PBS) solution and fixated with methanol for 20 min at −20°C. After three washes in PBS 1X, the ligation experiment was performed according to the manufacturer's instructions using the Duolink In Situ Orange Starter Kit Goat/Rabbit (Sigma-Aldrich). Briefly, cells were blocked for 60 min at 37°C in a heated humidified chamber and subsequently incubated with 53BP1 and Rad9 antibodies (Bethyl Laboratories) for 1 hr. After two washes, coverslips were incubated with a PLUS-MINUS probe solution for another 1 hr at 37°C followed by washes and a 30 min ligation step at 37°C. Eventually, proximity ligation events were amplified for 100 min at 37°C. After washes and mounting of the coverslips, proximity events were observed by fluorescence microscopy and normalised to the number of nuclei. In case of TOPBP1 knockdown experiment, transfections were carried out with Lipofectamine RNAiMAX Transfection Reagent (ThermoFisher Scientific). Briefly, 0.25 × 106 U2OS or RPE1 cells were seeded on 10 mm round glass coverslips in a 35 mm well. The next day, according to the manufacturer’s instructions, 7.5 µL per well of RNAiMAX were used to transfect cells, obtaining a final concentration of 20 nM for the added TOPBP1 siRNA (see Key Resources Table for sequences). After an 72 hr period of exposure to TOPBP1 siRNA, samples were submitted to the PLA.
 
 For the transfected eYFP-53BP1 – RAD9 proximity ligation assays, U2OS cells knocked-down for endogenous 53BP1 were transfected with eYFP-53BP1 WT or the double mutant S366A T670A. Cells were irradiated (9 Gy) and stained with Hoechst 33342 after a 3 hr recovery period. Subsequently cells were fixated at −20°C with methanol for 20 min. A proximity ligation assay (PLA) was performed using the Duolink In Situ Detection Kit (Sigma Aldrich) according to the manufacturer's instructions, using an anti-Rad9 antibody (Rabbit polyclonal, A300-890A-T, Bethyl Laboratories, Inc) and an anti-GFP antibody (Mouse monoclonal [LGB-1], Abcam) to respectively detect the endogenous Rad9 and eYFP-53BP1. Several Z stacks including the depth of nuclei were acquired using an Olympus-3i spinning disc microscope in confocal mode. Images were Z projected and PLA events were analysed with Cell Profiler. More than 200 nuclei were counted per case. Results are represented as boxplots showing the median, the mean and the 10th- 90th percentiles. Statistical significance was determined with a Mann-Whitney test. Scale bar: 10 µm.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All statistical analysis was carried out with Prism six software (GraphPad Software Inc, CA USA). Dissociation constants (Kd) were determined by non-linear regression to a one site-specific binding model.
 
@@ -182,6 +902,6 @@ When only two variables were compared, significance was assessed by a two-sided 
 
 Graphs show adjusted p-values only when differences are considered to be significant; *p<0.05; **p<0.01; ***p<0.001. Histograms show mean values, with error bars corresponding to one standard deviation. Boxplots show median (bar), mean (cross), 10th and 90th percentiles, with outliers plotted individually.
 
-## Data and software availability
+### Data and software availability
 
 Coordinates and structure factors for the TOPBP1-BRCT0,1,2 complex with 53BP1-pThr670 peptide and for the TOPBP1-BRCT4,5 complex with 53BP1-pSer366 peptide, have been deposited in the RCBS Protein Databank with accession codes 6RML and 6RMM.

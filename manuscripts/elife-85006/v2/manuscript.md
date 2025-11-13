@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05wg1m734 Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands
-2. https://ror.org/05wg1m734 Department of Cognitive Neuroscience, Radboud University Nijmegen Medical Centre Nijmegen Netherlands
-3. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behavior, Radboud University Nijmegen Nijmegen Netherlands
+1. Department of Psychiatry, Radboud University Nijmegen Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+2. Department of Cognitive Neuroscience, Radboud University Nijmegen Medical Centre Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+3. Donders Institute for Brain, Cognition and Behavior, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 4. Pro Persona Mental Health Care, Depression Expertise Center Nijmegen Netherlands
-5. https://ror.org/052gg0110 Oxford Centre for Functional Magnetic Resonance Imaging of the Brain (FMRIB), University of Oxford Oxford United Kingdom
+5. Oxford Centre for Functional Magnetic Resonance Imaging of the Brain (FMRIB), University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -47,9 +47,310 @@ Taken together, we set out to perform a transdiagnostic structural–functional 
 
 ## Results
 
-## Study population and general results
+### Study population and general results
 
 Of the 295 participants that were included in this study, the median age was 32 years (range: 18–74 years) and 56.6% of participants were male (see Table 1 for demographic and clinical characteristics). Of these participants, 70 were mentally healthy and 225 were patients with one or more psychiatric disorder(s). The patients had diagnoses in the following categories: current mood disorder (n = 116), anxiety disorder (n = 63), addiction disorder (n = 59), ASD (n = 63), and ADHD (n = 93) (see Figure 1 for a Venn diagram displaying the high rate and diverse patterns of comorbidity).
+
+**Table 1.**
+ Demographics and clinical characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total subject group(n = 295)</th>
+      <th>Patients(n = 225)</th>
+      <th>Healthy controls(n = 70)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Demographics</td>
+    </tr>
+    <tr>
+      <td>Age (years) (median, range)</td>
+      <td>32 (18–74)</td>
+      <td>32 (18–74)</td>
+      <td>32 (20–70)</td>
+    </tr>
+    <tr>
+      <td>Sex, % male (M/F)</td>
+      <td>56.6% (167/128)</td>
+      <td>59.6% (134/91)</td>
+      <td>47.1% (33/37)</td>
+    </tr>
+    <tr>
+      <td>Level of education No (n = .., (%)) Low (n = .., (%)) Middle (n = .., (%)) High (n = .., (%))</td>
+      <td>1 (0.0%)41 (13.9%)125 (42.4%)128 (43.4%)</td>
+      <td>1 (0.0%)37 (16.4%)103 (45.8%)84 (37.3%)</td>
+      <td>0 (0.0%)4 (5.7%)22 (31.4%)44 (62.9%)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Symptom questionnaires</td>
+    </tr>
+    <tr>
+      <td>IDS-SR (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mood/cognition</td>
+      <td>13 (0–42)</td>
+      <td>18 (0–42)</td>
+      <td>1 (0–15)</td>
+    </tr>
+    <tr>
+      <td>Anxiety/somatic</td>
+      <td>4 (0–17)</td>
+      <td>5 (0–17)</td>
+      <td>1 (0–5)</td>
+    </tr>
+    <tr>
+      <td>Sleep</td>
+      <td>2 (−3–9)</td>
+      <td>2 (−3–9)</td>
+      <td>1 (−1–5)</td>
+    </tr>
+    <tr>
+      <td>ASI (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physical concerns</td>
+      <td>3 (0–23)</td>
+      <td>4 (0–23)</td>
+      <td>1 (0–13)</td>
+    </tr>
+    <tr>
+      <td>Mental incapacitation concerns</td>
+      <td>2 (0–16)</td>
+      <td>3 (0–16)</td>
+      <td>0 (0–5)</td>
+    </tr>
+    <tr>
+      <td>Social concerns</td>
+      <td>4 (0–12)</td>
+      <td>5 (0–12)</td>
+      <td>3 (0–8)</td>
+    </tr>
+    <tr>
+      <td>PTQ (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Core characteristics</td>
+      <td>21 (0–36)</td>
+      <td>22 (0–36)</td>
+      <td>12 (0–23)</td>
+    </tr>
+    <tr>
+      <td>Unproductiveness</td>
+      <td>6 (0–12)</td>
+      <td>7 (0–12)</td>
+      <td>3 (0–8)</td>
+    </tr>
+    <tr>
+      <td>Capturing mental capacity</td>
+      <td>6 (0–12)</td>
+      <td>6 (0–12)</td>
+      <td>2 (0–7)</td>
+    </tr>
+    <tr>
+      <td>CAARS (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inattention/memory problems</td>
+      <td>7 (0–15)</td>
+      <td>8 (0–15)</td>
+      <td>2 (0–8)</td>
+    </tr>
+    <tr>
+      <td>Hyperactivity/restlessness</td>
+      <td>5 (0–15)</td>
+      <td>6 (0–15)</td>
+      <td>2 (0–8)</td>
+    </tr>
+    <tr>
+      <td>Impulsivity/emotional lability</td>
+      <td>5 (0–15)</td>
+      <td>6 (0–15)</td>
+      <td>1 (0–7)</td>
+    </tr>
+    <tr>
+      <td>Problems with self-concept</td>
+      <td>7 (0–15)</td>
+      <td>8 (0–15)</td>
+      <td>2 (0–7)</td>
+    </tr>
+    <tr>
+      <td>AQ-50 (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Social skill</td>
+      <td>24 (10–40)</td>
+      <td>25 (10–40)</td>
+      <td>17 (11–26)</td>
+    </tr>
+    <tr>
+      <td>Difficulty with change/attention switching</td>
+      <td>25 (12–40)</td>
+      <td>27 (14–40)</td>
+      <td>19 (12–28)</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td>22 (11–39)</td>
+      <td>23 (11–39)</td>
+      <td>17 (11–24)</td>
+    </tr>
+    <tr>
+      <td>Imagination</td>
+      <td>22 (12–37)</td>
+      <td>22 (12–37)</td>
+      <td>19.5 (13-28)</td>
+    </tr>
+    <tr>
+      <td>Attention to detail</td>
+      <td>23 (10–40)</td>
+      <td>24 (11–40)</td>
+      <td>19.5 (10–31)</td>
+    </tr>
+    <tr>
+      <td>TAS-20 (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Difficulty describing feelings</td>
+      <td>15 (5–25)</td>
+      <td>17 (5–25)</td>
+      <td>11 (5–23)</td>
+    </tr>
+    <tr>
+      <td>Difficulty identifying feelings</td>
+      <td>16 (7–32)</td>
+      <td>18 (7–32)</td>
+      <td>9 (7–18)</td>
+    </tr>
+    <tr>
+      <td>Externally oriented thinking</td>
+      <td>19 (9–35)</td>
+      <td>19 (9–35)</td>
+      <td>19 (11–30)</td>
+    </tr>
+    <tr>
+      <td>PID-5 (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Negative affect</td>
+      <td>7 (0–15)</td>
+      <td>8 (0–15)</td>
+      <td>2 (0–8)</td>
+    </tr>
+    <tr>
+      <td>Detachment</td>
+      <td>5 (0–15)</td>
+      <td>6 (0–15)</td>
+      <td>1 (0–8)</td>
+    </tr>
+    <tr>
+      <td>Antagonism</td>
+      <td>2 (0–12)</td>
+      <td>2 (0–12)</td>
+      <td>1 (0–7)</td>
+    </tr>
+    <tr>
+      <td>Disinhibition</td>
+      <td>3 (0–15)</td>
+      <td>4 (0–15)</td>
+      <td>0.5 (0–6)</td>
+    </tr>
+    <tr>
+      <td>Psychoticism</td>
+      <td>4 (0–15)</td>
+      <td>5 (0–15)</td>
+      <td>0 (0–6)</td>
+    </tr>
+    <tr>
+      <td>BRIEF-A (median, range)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inhibition</td>
+      <td>14 (8–23)</td>
+      <td>15 (8–23)</td>
+      <td>10 (8–17)</td>
+    </tr>
+    <tr>
+      <td>Shift</td>
+      <td>12 (6–18)</td>
+      <td>13 (6–18)</td>
+      <td>7.5 (6-12)</td>
+    </tr>
+    <tr>
+      <td>Emotional control</td>
+      <td>17 (10–30)</td>
+      <td>18 (10–30)</td>
+      <td>11 (10–19)</td>
+    </tr>
+    <tr>
+      <td>Self-monitor</td>
+      <td>9 (6-17)</td>
+      <td>10 (6–17)</td>
+      <td>7 (6-14)</td>
+    </tr>
+    <tr>
+      <td>Initiate</td>
+      <td>16 (8–24)</td>
+      <td>17 (8–24)</td>
+      <td>10 (8–19)</td>
+    </tr>
+    <tr>
+      <td>Working memory</td>
+      <td>16 (8–24)</td>
+      <td>17 (8–24)</td>
+      <td>10 (8–16)</td>
+    </tr>
+    <tr>
+      <td>Plan/organize</td>
+      <td>19 (10–30)</td>
+      <td>20 (10–30)</td>
+      <td>12 (10–22)</td>
+    </tr>
+    <tr>
+      <td>Organization of materials</td>
+      <td>15 (8–24)</td>
+      <td>16 (8–24)</td>
+      <td>12 (8–21)</td>
+    </tr>
+    <tr>
+      <td>Task monitor</td>
+      <td>12 (6–18)</td>
+      <td>12 (6–18)</td>
+      <td>9 (6-15)</td>
+    </tr>
+  </tbody>
+</table>
+
+_ASI: Anxiety Sensitivity Index, AQ-50: Autism spectrum Quotient-50, BRIEF-A: Behavior Rating Inventory Executive Function – Adult, CAARS: Conners’ Adult ADHD Rating Scale, F: female, IDS-SR: Inventory of Depressive Symptomatology Self Report, M: male, PID-5: Personality Inventory for DSM-5-Short Form, PTQ: Perseverative Thinking Questionnaire, TAS-20: Toronto Alexithymia Scale-20._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85006/elife-85006-fig1-v2.jpg)
 
@@ -57,7 +358,7 @@ Of the 295 participants that were included in this study, the median age was 32 
 
 The analyses confirmed that our experimentally well-controlled stressor induced mild psychological stress, with an increase in both subjective stress (median subjective stress score after neutral movie: 3, after aversive movie: 5; T = –12.50, p<0.001) and heart rate (median heart rate during neutral movie [beats per minute]: 65.59, during aversive movie: 67.10; T = –8.60, p<0.001).
 
-## Linked ICA decomposition and correlational results
+### Linked ICA decomposition and correlational results
 
 Linked ICA was used to decompose the MRI data into 50 independent components (ICs) (Figure 2, operations A, B, and C). Of these 50 components, 15 were multimodal components, reflecting shared variance across modalities (Figure 3). The correlational analysis (Figure 2, operation D) resulted in 87 significant correlations (false discovery rate [FDR]-corrected q < 0.001) between the components and measures of interest (all p-values mentioned below are FDR-corrected values [unless mentioned otherwise]; see Supplementary file 2a for all significant correlations). Of these 87 correlations, 19 were with multimodal components. Most of these correlations were related to age, sex, body mass index (BMI), blood pressure, and heart rate variability. Furthermore, we identified a multimodal component that was associated with a classification of ASD (IC32) and a multimodal component associated with cognitive symptoms (inhibition and self-monitoring) (IC30). In addition, there were eight more significant correlations between the ICs and symptom dimensions, which were all with unimodal components (see Appendix 1—figure 1 for scatterplots displaying all 10 significant correlations between ICs and symptom dimensions). Interestingly, all symptom correlations were discovered for components that were mainly driven by functional scans.
 
@@ -71,27 +372,27 @@ Linked ICA was used to decompose the MRI data into 50 independent components (IC
 
 Because of our primary interest in psychopathology, below we further discuss the ICs that have both interesting neuroimaging aspects and are also associated with psychopathology. First, we focus on the multimodal component associated with ASD, before turning to several components associated with symptom dimensions.
 
-## Multimodal component associated with ASD
+### Multimodal component associated with ASD
 
 The analysis revealed a multimodal component associated with ASD (IC32). The relative contributions from the different modalities to this component were 10.1% for voxel-based morphometry (VBM), 8.8% fractional anisotropy (FA), 6.1% mean diffusivity (MD), 17.5% default mode network (DMN) (rest), 11.1% DMN (stress), 17.9% DMN (stress-aftermath), 6.3% frontoparietal network (FPN) (rest), 5.4% FPN (stress), 7.8% FPN (stress-aftermath), 3.8% executive control network (ECN) (rest), 1.6% ECN (stress), and 3.6% ECN (stress-aftermath) (Figure 4A). Besides the relatively large contributions to this component from the DMN modalities themselves, various other modalities also showed the involvement of regions of the DMN, highlighting its centrality within this component. The DMN modalities during the different functional scans (i.e. resting-state, stress, and stress-aftermath scan) showed similar spatial configurations, meaning that these different functional scans identified the same connectivity pattern. The DMN modalities revealed loadings in multiple brain regions that are part of (or commonly associated with) the DMN (i.e. the angular gyrus, precuneus, supramarginal gyrus). Thus this reflects connectivity of the DMN network template that was applied into dual regression with DMN (associated) regions (i.e. within DMN connectivity). Furthermore, the VBM, FA, FPN, and ECN spatial maps all showed loadings on brain regions that are part of the DMN (VBM: angular gyrus, precuneus, posterior cingulate cortex, medial prefrontal cortex; FA: angular gyrus; both FPN and ECN: angular and supramarginal gyrus, precuneus, medial prefrontal cortex). Additionally, the VBM and MD feature showed the involvement of the precentral gyrus and thalamus respectively (Figure 4B). The correlational analysis showed that this component was positively correlated with a classification of ASD (rs = 0.19, p=0.044), indicating that ASD is associated with higher subject loadings on this component. Hereafter, this component will be called the multimodal ASD component.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85006/elife-85006-fig4-v2.jpg)
 
-**Figure 4.:** (A) Modality contributions to IC32. The color bar is a graphical representation of the relative contribution of the 12 feature modalities to IC32. The numbers below state the exact percentages of the different modality contributions. (B) The subject loadings on IC32 have a significant correlation with a psychiatric classification of autism (yes/no). This component is a multimodal component, with contributions from all 12 features. From top to bottom, we visualize voxel-based morphometry (VBM), fractional anisotropy (FA), mean diffusivity (MD), and the spatial maps for the following networks: the default mode network (DMN), executive control network (ECN), and frontoparietal network (FPN). Since the three functional networks of interest showed similar spatial configurations during the different functional scans (i.e. resting-state, stress, and stress-aftermath scan), we only display the spatial maps from one functional scan here (i.e. the stress-aftermath scan). Note: in this figure, the right side of the brain is displayed on the right side of the image. R: right.Figure 4—source data 1.
+**Figure 4.:** (A) Modality contributions to IC32. The color bar is a graphical representation of the relative contribution of the 12 feature modalities to IC32. The numbers below state the exact percentages of the different modality contributions. (B) The subject loadings on IC32 have a significant correlation with a psychiatric classification of autism (yes/no). This component is a multimodal component, with contributions from all 12 features. From top to bottom, we visualize voxel-based morphometry (VBM), fractional anisotropy (FA), mean diffusivity (MD), and the spatial maps for the following networks: the default mode network (DMN), executive control network (ECN), and frontoparietal network (FPN). Since the three functional networks of interest showed similar spatial configurations during the different functional scans (i.e. resting-state, stress, and stress-aftermath scan), we only display the spatial maps from one functional scan here (i.e. the stress-aftermath scan). Note: in this figure, the right side of the brain is displayed on the right side of the image. R: right.
 
 While this multimodal ASD component was associated with a classification of ASD, it was not correlated with any of the subscales of the Autism spectrum Quotient-50 (AQ-50). To further explore these results, we performed post hoc correlations between IC32 and the AQ-50 subscales for the patients with a classification of ASD and the participants without ASD separately (uncorrected for multiple comparisons). The only significant correlation was found within the ASD group for the ‘social skill’-subscale (rs = –0.237, puncorrected = 0.037) (see Appendix 1 for all correlational results).
 
-## Correlations between components and symptom dimensions
+### Correlations between components and symptom dimensions
 
 All 10 correlations between symptom dimensions and ICs were with ICs that were driven by functional scans. Moreover, 9 out of 10 correlations were with components that have an important contribution from the ECN. We start by discussing four components (IC7, IC8, IC13, and IC30) that are driven by the ECN during different functional scans and show interesting similarities in their connectivity profiles, before turning to a component driven by the DMN during the stress scan.
 
-## Components reflecting connectivity between the ECN and FPN
+#### Components reflecting connectivity between the ECN and FPN
 
 Linked ICA resulted in four components that reflect connectivity of the ECN with itself and with the FPN (IC7, IC8, IC13, and IC30). Three of these components are unimodal components that are each driven by the ECN modality during a distinct functional scan (IC7 by the ECN during the stress-aftermath scan [99.5% of contribution] [Figure 5], IC8 by the ECN during the stress scan [99.8%], and IC13 by the ECN during the resting-state scan [99.9%] [Appendix 1—figure 2]). All three of these components reflect the connectivity of the ECN with itself and the right FPN. While there are important similarities between these components, there are also differences. Compared to IC7, IC8 loaded less on the right posterior parietal cortex (FPN) and IC13 loaded less on the frontal poles and thalamus. Finally, IC30 is a multimodal component, mainly driven by the ECN during the resting-state scan (42.2%) and stress-aftermath scan (38.3%) (Appendix 1—figure 2). This component loaded on the ECN and left FPN (contralateral FPN compared to components described above). Interestingly, the spatial maps during both these functional scans are largely the same, suggesting that the same variance is picked up in both these functional scans.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85006/elife-85006-fig5-v2.jpg)
 
-**Figure 5.:** (A) Independent component 7 (IC7) is driven by the executive control network (ECN) during the stress-aftermath scan (99.5%). This component reflects the connectivity of the ECN with itself and with the right frontoparietal network (FPN) and has significant (partial) Spearman correlations with several symptoms and other measures of interest. For this component, we used the 10th and 90th percentiles for thresholding, for display purposes, since the underlying distribution was not z-distributed. (B) Independent component 15 (IC15) is mainly driven by the default mode network (DMN) during the stress scan (88.4%). IC15 negatively correlates with the fear of losing control/losing one’s mind under stress (mental incapacitation concerns subscale). In this figure, the right side of the brain is displayed on the right side of the image.ASI: Anxiety Sensitivity Index;BRIEF-A: Behavior Rating Inventory Executive Function – Adult; HRV: heart rate variability; IDS: Inventory of Depressive Symptomatology Self Report; R: right; SF: Short Form-20; WHODAS: WHO-Disability Assessment Schedule 2.0. Cave: in general, a higher score on a questionnaire reflects more severe symptoms/problems, except for the SF subscales ‘experienced health’ and ‘physical functioning,’ for which this is reversed.Figure 5—source data 1.
+**Figure 5.:** (A) Independent component 7 (IC7) is driven by the executive control network (ECN) during the stress-aftermath scan (99.5%). This component reflects the connectivity of the ECN with itself and with the right frontoparietal network (FPN) and has significant (partial) Spearman correlations with several symptoms and other measures of interest. For this component, we used the 10th and 90th percentiles for thresholding, for display purposes, since the underlying distribution was not z-distributed. (B) Independent component 15 (IC15) is mainly driven by the default mode network (DMN) during the stress scan (88.4%). IC15 negatively correlates with the fear of losing control/losing one’s mind under stress (mental incapacitation concerns subscale). In this figure, the right side of the brain is displayed on the right side of the image.ASI: Anxiety Sensitivity Index;BRIEF-A: Behavior Rating Inventory Executive Function – Adult; HRV: heart rate variability; IDS: Inventory of Depressive Symptomatology Self Report; R: right; SF: Short Form-20; WHODAS: WHO-Disability Assessment Schedule 2.0. Cave: in general, a higher score on a questionnaire reflects more severe symptoms/problems, except for the SF subscales ‘experienced health’ and ‘physical functioning,’ for which this is reversed.
 
 All four of these ECN components are negatively correlated with cognitive symptoms, indicating that a lower subject loading on these components is associated with more severe symptoms (see Appendix 1 for additional information on the symptom dimensions mentioned below). All four of these components are negatively correlated with self-monitoring (IC7: rs = –0.21, p=0.021; IC8: rs = –0.22, p=0.008; IC13: rs = –0.20, p=0.038; IC30: rs = –0.22, p=0.012). Additionally, IC13 also negatively correlated with working memory (rs = –0.22, p=0.012) and IC30 with inhibition (rs = –0.19, p=0.044).
 
@@ -99,7 +400,7 @@ While all four components are negatively correlated with cognitive symptoms, IC7
 
 Next, we performed post hoc tests in order to explore whether the correlations between the ECN-stress aftermath component (IC7) and the negative valence symptoms differed from the correlations between the other ECN-FPN components (i.e. IC8, IC13, and IC30) and these same negative valence symptoms (using Fisher’s r to z transform; alpha = 0.05). We refer to Appendix 1 for a complete overview of these results. Here, we would like to note that the results showed that the correlations did not differ between the ECN-stress aftermath component (IC7) and IC13 (ECN during the resting-state scan) (IDS anxiety/somatic: IC7 rs = –0.23; IC13: rs = –0.14, z = –1.07, puncorrected = 0.284; ASI physical concerns: IC7: rs = –0.20; IC13: rs = –0.10; z = –1.17, puncorrected = 0.242). Based on the results of these post hoc analyses, we cannot exclude that it is a threshold effect that we only found these relationships with negative valence symptoms for the ECN-stress aftermath component. At the same time it is important to note that in our analyses relatively few results for the symptom questionnaires survived multiple comparison correction, and that the ECN-stress aftermath component was the most sensitive component (of these ECN-FPN components) for finding relationships with the negative valence symptoms. Thus, the stress induction may have played an important role in revealing these results at a statistically significant level.
 
-## DMN connectivity during stress scan
+### DMN connectivity during stress scan
 
 IC15 was driven by the DMN during the stress scan (88.4%). This IC showed widespread connectivity patterns of the DMN, including within DMN connectivity (medial prefrontal cortex, posterior cingulate cortex), and connectivity with the FPN (posterior parietal cortex, dorsolateral prefrontal cortex) and with the visual regions (occipital cortex). This component negatively correlated with the fear of losing control/one’s mind under stress (mental incapacitation concerns) (rs = –0.22, p=0.012) (Figure 5B). In the ‘Discussion’ section, this IC is called the DMN-stress component.
 
@@ -133,17 +434,17 @@ Our results provide initial insight into the neural mechanisms underlying transd
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study used the database of the MIND-Set project (van Eijndhoven et al., 2021), which includes adult patients with ASD, ADHD, addiction, mood, and/or anxiety disorders. Patients were included in this study if they had at least one current diagnosis in one of these categories. A mentally healthy control group was also included. Patients were diagnosed and classified by a trained clinician according to the Diagnostic and Statistical Manual of Mental Disorders (DSM) (American Psychiatric Association, 2013) using semi-structured interviews (see Appendix 1 and van Eijndhoven et al., 2021).
 
-## Procedure
+### Procedure
 
 The MIND-Set protocol contains an extensive neuroimaging battery with multiple imaging modalities, of which we used the T1 structural scan, DTI, and three functional scans for this study (Figure 2A). We selected the following functional scans: (1) a baseline resting-state scan, (2) the functional scan during stress induction, which hereafter will be called the ‘stress scan,’ and (3) the resting-state scan, directly after the stress induction. Since this last scan reflects a combination of continued stress and recovery in the aftermath of acute stress, this scan will be referred to as the ‘stress-aftermath scan’.
 
 Stress was induced with a mild psychological stressor using an experimentally well-controlled paradigm in the form of an aversive movie clip (Qin et al., 2009; van Oort et al., 2020). A neutral movie clip served as the control condition. We used the following two measures to assess stress levels during scanning: heart rate (beats per minute) and subjective stress (11-point rating scale: 0 = no stress, 10 = maximal stress). The subjective stress level was assessed directly after the aversive and neutral movie, and the heart rate was measured during these two movie clips. For these two measures, we assessed the effects of stress using a Wilcoxon signed-rank test (non-normal distribution).
 
-## Biobehavioral measures of interest
+### Biobehavioral measures of interest
 
 To cover a broad range of clinically relevant dimensions, we included 80 measures for our exploratory correlational analyses, including 35 symptom dimensions from validated questionnaires and 45 other demographic and biobehavioral measures of interest. We describe these variables shortly below (see Appendix 1—tables 1 and 2 and van Eijndhoven et al., 2021 for an elaborate description).
 
@@ -151,19 +452,19 @@ We used questionnaires measuring symptom dimensions that commonly occur across n
 
 Besides the symptom questionnaires, we included a more extensive set of demographics and (bio)behavioral measures (Appendix 1—table 2). These measures span different units of analysis and broadly include measures from the following topics: demographics (age, sex, and level of education), anthropometric (BMI), biological/physiological measurements (e.g. saliva and hair cortisol, heart rate variability), traumatic childhood events, psychiatric classifications according to the DSM (e.g. ADHD [yes/no]), number of chronic somatic disorders, general health and functioning (i.e. SF-20 and WHODAS questionnaires), substance use (smoking, alcohol, and cannabis), and medication use (e.g. use of an antidepressant [yes/no]). We refer to Appendix 1—table 3 for information regarding psychotropic medication use at the time of the MRI scan.
 
-## MRI data acquisition
+### MRI data acquisition
 
 All images were collected using a 3T Siemens Magnetom Prisma MRI scanner (Erlangen, Germany). High-resolution structural images (1.0 mm isotropic) were acquired using a T1-weighted MP-RAGE sequence (TE/TR = 3.03/2300 ms). In addition, diffusion tensor imaging (DTI) scans were obtained using a multi-band 3 protocol (TE/TR = 70.2/2370 ms, voxel size = 2.0 mm isotropic, number of gradients = 85). For all three functional scans, T2*weighted EPI BOLD-fMRI images were acquired using a multi-band 6 protocol (TR = 1000 ms, voxel size = 2.0 mm isotropic). The resting-state and stress-aftermath scans were both 500 volumes, while the stress scan consisted of 150 volumes (see Appendix 1 for more details).
 
-## MRI preprocessing and feature extraction
+### MRI preprocessing and feature extraction
 
 To acquire the input for the linked ICA algorithm, feature extraction operations were performed on the selected structural and functional scans (Figure 2B; see Appendix 1 for details regarding preprocessing and feature extraction). The T1 scans were used to estimate gray matter volumes, using VBM (Ashburner and Friston, 2000). FA and MD images were acquired from the DTI scan and served as measures for white matter integrity (Jenkinson et al., 2012; Smith et al., 2006). Together, this resulted in three features from the structural scans.
 
 For all three functional scans (i.e. resting-state, stress, and stress-aftermath), we extracted the spatial maps of our three networks of interest (i.e. DMN, ECN, and FPN; with the left and right FPN merged into one FPN template). We used the network templates from Smith et al., 2009 to select our networks of interest without biasing the results toward one of our functional scans. Dual regression was used to acquire spatial maps, which reflect the whole-brain connectivity of the networks during the different functional scans. The nine spatial maps that resulted from dual regression (3 scans × 3 networks) were used as input in the linked ICA algorithm (see Appendix 1 for a more elaborate description of the used methods).
 
-## fMRI analyses
+### fMRI analyses
 
-## Linked ICA
+#### Linked ICA
 
 Linked ICA was used to simultaneously factorize the 12 MRI features of our N = 295 participants into independent sources (or components) of spatial variation (Groves et al., 2011). In general, the linked ICA model order is recommended to be less than 25% of the sample size (Groves et al., 2012; Groves et al., 2011). In addition, the ‘optimal’ dimensionality depends on the detail desired from the decomposition (Groves et al., 2012) as it has been shown that components that are identified with linked ICA at a lower dimensionality may split into finer subdivisions at a higher dimensionality (Groves et al., 2012). Because of our interest in large-scale networks, we decided a priori to choose a relatively low-dimensional decomposition. In line with the lower-dimensionality decomposition performed by Groves et al., 2012, we chose a priori to decompose our data into 50 independent components.
 
@@ -171,10 +472,10 @@ In brief, linked ICA is a Bayesian extension of ICA (Choudrey, 2002) to multiple
 
 Since the vectors of feature loadings (see point ‘2’ above) describe the degree to which each component is ‘driven’ by the different MRI features, these feature loadings can be used to determine whether a component is a multimodal component or not. We defined multimodal components as components that have a meaningful contribution (>10%) from two or more MRI features and no single feature contributing >50% to the total variance of the component. Linked ICA can, however, also result in unimodal components, here defined as one feature contributing >80% to the total variance and no other feature contributing >10% to the component.
 
-## Correlational analysisis
+#### Correlational analysisis
 
 In line with Llera et al., 2019, we performed full correlations between the subject loadings on the independent components, obtained by linked ICA, and our measures of interest (symptom questionnaire subscales and other measures of interest). This resulted in 50 × 80 Spearman correlations (non-normal distribution). We addressed the multiple comparisons by applying FDR correction (p<0.05) (Benjamini and Hochberg, 1995; Figure 2D). As a supplementary analysis, we performed partial Spearman correlations (correcting for age and sex) for the significant results from this main analysis (see Appendix 1). Finally, we performed Spearman correlations (non-normal distribution) between our biobehavioral measures of interest to provide further insight into these relationships (see Supplementary file 1).
 
-## Direction of correlational results
+#### Direction of correlational results
 
 It should be noted that linked ICA is characterized by sign indeterminacy, meaning that the signs (positive or negative) of the component loadings and corresponding components are ambiguous (Comon and Jutten, 2010). To understand the direction of the correlations, we inferred the direction of the signs by investigating the relationship between global gray matter volume and age since this is a well-known and relatively strong relationship in an adult sample with a large age span (Good et al., 2001), like our sample. For this purpose, we used IC1, which is driven by the VBM modality (contribution: 82.7%). This component covers the whole brain and reflects global gray matter volume (Appendix 1—figure 4). Our correlational results (Supplementary file 2a) show that this component is negatively correlated with age (rs = –0.50, p<0.001). In line with extensive evidence for a decrease in global gray matter volume related to aging (Good et al., 2001), we can infer from this that younger age should be related to a higher positive z-stat score on this component, and that the positive signs on the components indeed reflect a positive signal.

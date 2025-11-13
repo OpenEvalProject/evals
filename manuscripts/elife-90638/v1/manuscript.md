@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/001tmjg57 Department of Molecular Biosciences, University of Kansas Lawrence United States
-2. https://ror.org/05bnh6r87 Department of Entomology, Cornell University Ithaca United States
-3. https://ror.org/001tmjg57 Department of Ecology and Evolutionary Biology, University of Kansas Lawrence United States
+1. Department of Molecular Biosciences, University of Kansas Lawrence United States ([ROR:001tmjg57](https://ror.org/001tmjg57))
+2. Department of Entomology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+3. Department of Ecology and Evolutionary Biology, University of Kansas Lawrence United States ([ROR:001tmjg57](https://ror.org/001tmjg57))
 
 † Corresponding author
 
 ## Abstract
 
-The innate immune system provides hosts with a crucial first line of defense against pathogens. While immune genes are often among the fastest evolving genes in the genome, in Drosophila , antimicrobial peptides (AMPs) are notable exceptions. Instead, AMPs may be under balancing selection, such that over evolutionary timescales, multiple alleles are maintained in populations. In this study, we focus on the Drosophila AMP Diptericin A, which has a segregating amino acid polymorphism associated with differential survival after infection with the Gram-negative bacteria Providencia rettgeri . Diptericin A also helps control opportunistic gut infections by common Drosophila gut microbes, especially those of Lactobacillus plantarum . In addition to genotypic effects on gut immunity, we also see strong sex-specific effects that are most prominent in flies without functional diptericin A . To further characterize differences in microbiomes between different diptericin genotypes, we used 16S metagenomics to look at the microbiome composition. We used both lab-reared and wild-caught flies for our sequencing and looked at overall composition as well as the differential abundance of individual bacterial families. Overall, we find flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri , but in general have a shorter lifespans after being fed common gut commensals. Our results suggest a possible mechanism for the maintenance of genetic variation of diptericin A through the complex interactions of sex, systemic immunity, and the maintenance of the gut microbiome.
+The innate immune system provides hosts with a crucial first line of defense against pathogens. While immune genes are often among the fastest evolving genes in the genome, in Drosophila, antimicrobial peptides (AMPs) are notable exceptions. Instead, AMPs may be under balancing selection, such that over evolutionary timescales, multiple alleles are maintained in populations. In this study, we focus on the Drosophila AMP Diptericin A, which has a segregating amino acid polymorphism associated with differential survival after infection with the Gram-negative bacteria Providencia rettgeri. Diptericin A also helps control opportunistic gut infections by common Drosophila gut microbes, especially those of Lactobacillus plantarum. In addition to genotypic effects on gut immunity, we also see strong sex-specific effects that are most prominent in flies without functional diptericin A. To further characterize differences in microbiomes between different diptericin genotypes, we used 16S metagenomics to look at the microbiome composition. We used both lab-reared and wild-caught flies for our sequencing and looked at overall composition as well as the differential abundance of individual bacterial families. Overall, we find flies that are homozygous for one allele of diptericin A are better equipped to survive a systemic infection from P. rettgeri, but in general have a shorter lifespans after being fed common gut commensals. Our results suggest a possible mechanism for the maintenance of genetic variation of diptericin A through the complex interactions of sex, systemic immunity, and the maintenance of the gut microbiome.
 
 ## Introduction
 
@@ -43,9 +43,21 @@ This study aimed to test two hypotheses about the maintenance of genetic variati
 
 ## Results
 
-## A single amino acid change drastically influences survival after infection
+### A single amino acid change drastically influences survival after infection
 
 Unckless et al., 2016, found that in inbred lines from the Drosophila Genetic Reference Panel (DGRP), flies homozygous for serine as position 69 of the mature Diptericin peptide survive systemic infection with P. rettgeri much better than those homozygous for the arginine peptide at the same position. This experiment showed only an association between immune defense and the serine/arginine polymorphism since these inbred lines were on several different genetic backgrounds. To control genetic background, we used CRISPR/Cas9 genome editing to create both an arginine allele (single nucleotide change, dptS69R) and multiple null alleles (1 or 3 base pair deletions, Δdpt flies), as well as control dptS69 (serine at position 69 of the mature peptide) in diptericin (Figure 1—figure supplement 1A, Supplementary file 1). The phenotype for our CRISPR/Cas9-edited flies showed striking similarity to the inbred lines. In systemic infection challenges with P. rettgeri, dptS69 flies are better protected from infection than dptS69R flies (p=5.42e-08) and Δdpt flies (p=6.46e-09, Figure 1A). Remarkably, for inbred lines and CRISPR/Cas9-edited lines, survival for 5 days post infection with P. rettgeri for the serine allele lines is 50–60%, with the arginine allele is 10–20%, and less than 5% for null alleles.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-v1.jpg)
+
+**Figure 1.:** Survival after systemic immunity challenge with the following bacteria: (A) P. rettgeri, (B) Staphylococcus succinus, (C) Enterococcus faecalis, (D) Lysinibacillus fusiformis Strain Juneja, (E) Lactococcus lactis, and (F) Serratia marcescens. Each graph represents the combined results of three different infection dates of at least 20 males of each genotype for each date (at least 60 total). Significance is relative to dptS69 (red line) using Cox proportional hazards regression model. *p<0.05, **p<0.01, ***p<0.001. Each sample n>60 per genotype.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Alignment of CRISPR/Cas9 genome-edited lines. CRISPR/Cas9 genome-edited lines aligned to consensus sequence. Genotype/line name is indicated on the left-hand side of the figure. (B) Crossing schematic for CRISPR cleanup. A modified Bloomington stock # 7198 was used for CRISPR injections. The line contained CyO/Kruppel balanced on the second chromosome, and serrate/Dichaete balanced on the third chromosome. Our version, 7198A4, was provided by Stuart Macdonald and has the DSPR (King et al., 2012) A4 line’s X chromosome instead of the w[*] from the original 7198.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Systemic infections were repeated with females and males. (A) P. rettgeri and (B) E. faecalis are normal systemic infection bacteria in Drosophila. (C) L. plantarum was used to test differences in systemic based on sex based on the results from gnotobiotic longevity. Each sample n>60 per genotype.
 
 We next challenged the CRISPR/Cas9-edited flies with systemic infection using multiple other Gram-positive and Gram-negative bacteria to determine whether the arginine allele (dptS69R) protects against some infections better than the serine allele. Such a finding would support the hypothesis that allelic variation is maintained by different alleles providing specific protection against different microbes. However, the differential response to systemic infection with P. rettgeri at an OD600=0.1, as described above, remains the largest difference in immune response between Dpt genotypes. DptS69 flies survived better than dptS69R flies for all systemic infections tested (Figure 1, Supplementary file 1). In the Gram-positive bacterial infections (E. faecalis, S. succinus, L. fusiformis, and L. lactis), dptS69R flies had lower survival than that of Δdpt or imd- (null allele for the Imd gene) flies (Figure 1B–E). The only systemic infection where dpt genotype did not seem to matter was S. marcescens, where all flies survive infection well except for imd-, which die very quickly (Figure 1F).
 
@@ -53,9 +65,21 @@ We also tested if males and females showed differences in systemic immunity base
 
 Overall, flies with the dptS69 allele are better equipped to survive a systemic bacterial infection than dptS69R flies, though this is most pronounced for P. rettgeri. Of the six bacteria tested, there was no case where dptS69R flies survived the infection better than dptS69 flies. These results do not support the hypothesis that alleles are maintained to better combat different pathogens.
 
-## Diptericin genotype affects the lifespan of mono- and poly-associated gnotobiotically reared flies
+### Diptericin genotype affects the lifespan of mono- and poly-associated gnotobiotically reared flies
 
 Although our survey of systemic infections was not exhaustive, we did not find any instances where dptS69R flies were better able to fight infection, so we turned our attention to the role of Dpt in gut microbiome maintenance and immunity. The gut microbiome influences several life history traits in Drosophila and other organisms (Ding et al., 2019; Ludington and Ja, 2020; Erkosar and Leulier, 2014; Macke et al., 2017). To dissect how diptericin genotype influences microbiome maintenance, we manipulated the microbiota in CRISPR/Cas9 flies and measured longevity and bacterial load. We began with the longevity of axenically reared flies, since it represents a baseline survival without the presence of microbes. Flies with functional copies of diptericin (dptS69 or dptS69R) did not differ in lifespan for either sex (pgenotype=0.3762), and Δdpt lines show a similar lifespan. However, there was a difference in overall lifespan between the sexes among the CRISPR genome-edited lines (psex=1.04e-6). In dptS69 or Δdpt, female flies have a longer lifespan than male flies, as observed generally for D. melanogaster previously (Lints et al., 2009). In contrast, imd- male flies have a much longer lifespan than any of the other lines tested (Figure 2A – axenic row, Supplementary file 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-v1.jpg)
+
+**Figure 2.:** (A) Survival plots for axenic flies and gnotobiotic flies mono-associated with L. plantarum or poly-associated with L. plantarum and A. tropicalis. Each curve represents 60 flies from 3 replicates of 20 flies. Significance is shown in comparison to SS (red line) using the model Lifespan~(Genotype*Sex)/Vial + Block. (B) Mean lifespan was plotted against each sex and separated by bacterial association. Axenic flies have no bacterial association. Each point for each sex in a combination of 3 separate trials of 20 flies for a total of 60 flies. These interaction plots only have mean lifespan and thus are useful for seeing all the data at a glance. Error bars are mean plus or minus the standard error of the mean. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Survival plots of all bacteria. Dpt null lines have been separated into the two lines used, 1 base pair deletion and 3 bp deletion.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Female flies eat more food (as measured by blue dye ingestion) than males, but genotype also influences feeding. Each genotype has more than 100 individuals per treatment per sex. Control refers to no added media, LB media is the addition of sterile MB, and P. rettgeri is the addition of P. rettgeri at a concentration of OD600=15 (±1). Absorbance was measured at 630 nm. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.
 
 We next tested the influence of Diptericin genotype on mono-associations with standard constituents of the Drosophila gut microbiome. We found multiple sex effects when axenically reared flies were fed L. plantarum, L. brevis, or A. tropicalis (Figure 2A and B, Figure 2—figure supplement 1). Flies that were fed L. plantarum show the most striking differences. Male flies continued to show similar lifespans to each other, but female Δdpt and female imd- flies both succumbed quickly post-feeding, indicating functional Diptericin is important for gut immunity against opportunistic L. plantarum in females.
 
@@ -71,11 +95,23 @@ Given the genotypic and sex effects on survival after oral association with L. p
 
 Overall, we found a role of both specific diptericin genotype (serine vs. arginine) and the presence of functional copies of diptericin for survival after introducing common gut microbes in controlled conditions. Most striking was the sexually dimorphic role of both Dpt and Imd-, with females being much more sensitive to genotype than males.
 
-## Gnotobiotic fly bacterial load
+### Gnotobiotic fly bacterial load
 
 Given the differences in survival among sexes and genotype for different gnotobiotic associations with bacteria, we determined whether bacterial load after associations also was different among sexes and genotypes. To assess the influence of genotype on the immune response of aging flies, we studied how well common gut bacteria colonized the gut over 20 days, representing ~20–33% of D. melanogaster’s normal lab lifespan (Giannakou and Partridge, 2007; Biteau et al., 2011). We generated gnotobiotic flies by feeding specific bacteria for 2 days and observed the bacterial load 2, 10, and 20 days post feeding.
 
 When specifically looking at mono-association with L. plantarum, we observe that bacterial load differences between genotypes occur within the first 2 days post feeding but begin to disappear by day 20 (pgenotype(day2)=2.6e-5, pgenotype(day20)=0.709, Figure 3A, Figure 3—figure supplement 1). Note that in the first 2 days, the flies were raised on microbe-contaminated media, but after 2 days were moved onto sterile food and then transferred to new sterile food every 3 days. This corroborates what we saw in the longevity data in females. Within the first 15 days, a large proportion of Δdpt female flies died, and we observed a higher bacterial load in these flies, especially on day 2 post feeding (Figure 2). By day 20, differences in bacterial load in females disappeared. Note that there is inherent sampling bias, as only the flies able to survive until day 20 are sampled at that time point. In the case of imd- flies, no females survived until day 20; hence, there is no data for imd- flies on day 20 (Figure 3A, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-v1.jpg)
+
+**Figure 3.:** Two-day-old flies were placed on food seeded with a bacterial suspension of each bacteria at an OD600 of 15. Each point for each sex is from 3 separate trials of 2 samples of 3 flies each for a total of 6 samples per point. (A) Mono-associations where each plot represents a different condition, (B) poly-associations where each row plots both the P. rettgeri and L. plantarum load from the same flies but were plated on LB and De Man, Rogosa, and Sharpe (MRS), respectively. Error bars are mean plus or minus the standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** All bacteria were plated on De Man, Rogosa, and Sharpe (MRS) media except for P. rettgeri, which was plated on LB media to grow colonies. Significance can be found in Supplementary file 5. Individual points represent a pool of 3 flies. There is no imd- female bar for L. plantarum on day 20 because all female flies had died at this time point. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The flies were co-fed with L. plantarum and P. rettgeri and plated on De Man, Rogosa, and Sharpe (MRS) and LB, respectively, to select for the different bacteria. There is no imd- female bar on day 20 because all flies had died at this time point. Significance can be found in Supplementary file 6. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.
 
 P. rettgeri is the only canonical systemic pathogen we included in our gnotobiotic study, and the patterns based on genotype were different between systemic infection and the gnotobiotic oral infection data. When flies were fed P. rettgeri, we saw a range of bacterial loads, from zero colonies to bacterial load levels on par with common gut bacteria. We also observed a genotype effect between dptS69 and dptS69R on day 10 and 20 post feeding in males (pgenotype(day10)=0.0044, pgenotype(day20)=0.0004, model only included dptS69 and dptS69R, Supplementary file 5). In both instances, bacterial load in dptS69R flies is higher than in dptS69 flies. This may indicate that dptS69 flies are better equipped to deal with both systemic and oral infection from P. rettgeri. Whether this is due to a greater ability of dptS69 flies to withstand the effects of infection (tolerance) by P. rettgeri remains a question. It is also important to note that P. rettgeri establishes poorly in the gut of wildtype flies (personal observation), which may explain the noisy results for mono-associations after oral infection.
 
@@ -83,23 +119,39 @@ A range of bacterial loads was also observed when flies were poly-associated wit
 
 We observed larger differences in bacterial load shortly after feeding with bacteria, and those differences became less by day 20 post feeding. We did not see any differences in P. rettgeri load when mono-associated or when part of a poly-association, indicating the flies respond differently to the same pathogen when introduced systemically or orally.
 
-## Evidence for life history trade-offs mediated by diptericin genotype
+### Evidence for life history trade-offs mediated by diptericin genotype
 
 Proteins involved in a robust immune response may have pleiotropic effects on other traits either because of a direct interaction with that trait or because of inherent costs of immune defense (self-damage, energy expenditure, etc.) (Viney et al., 2005; Sadd and Siva-Jothy, 2006; Lin et al., 2018). We examined three life history traits (desiccation stress survival, starvation stress survival, and uninfected longevity) to determine whether Dpt genotype had such pleiotropic effects.
 
 The ability to survive desiccation stress is an important life history trait for wild Drosophila survival (Gibbs, 2002; Wang, 2017). When subjecting our male CRISPR/Cas9 flies to desiccation, we observe conventionally reared flies succumb faster to desiccation stress than axenically reared flies (Figure 4A, pgenotype<2e-16). In conventionally reared males, dptS69 flies have similar desiccation resistance to dptS69R flies (p=0.917). However, dptS69 flies survive desiccation stress better than dptS69R flies when reared axenically (pgenotype=0.04126). We also compared Drosophila OreR and W1118 (both homozygous for the serine allele of Diptericin) to the dptS69 line (Figure 4—figure supplement 1, Supplementary file 7). Unsurprisingly, despite the same diptericin genotype, all 3 lines show dramatically different desiccation resistance. Therefore, diptericin genotype plays limited, if any, role in variation in desiccation resistance, as all 3 wildtype lines were derived from different genetic backgrounds.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-v1.jpg)
+
+**Figure 4.:** (A) Conventionally and axenically reared male flies desiccation resistance (N>90 for each line apart from Δdpt line). There is no significance between dptS69 (red line) and other genotypes. (B) Conventionally and axenically reared male flies starvation resistance (N>90 for each line apart from Δdpt line). (C) Female and male lifespan for conventionally reared flies. N>93 for each line and sex. Significance is shown in relation to dptS69 (red line). Note that axenic longevity is shown in Figure 2. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** OreR and W1118 are standard D. melanogaster lab stocks. They are both homozygous serine but have different resistance to desiccation stress than dptS69.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** OreR and W1118 are standard D. melanogaster lab stocks. They are both homozygous serine but have different resistance to starvation stress than dptS69.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Two Δdpt lines were used. One with a 1 base pair deletion and the other with a 3 base pair deletion. These lines were combined for ease of viewing in Figure 4C. Heterozygotes were made with reciprocal crosses.
+
 We next looked at the effect of genetic variation in diptericin on male ability to survive under starvation stress. As with desiccation resistance, we found axenically reared flies survive starvation stress better than conventionally reared flies (Figure 4B, Figure 4—figure supplement 2, ptreatment<2e-16). However, unlike the desiccation stress conditions, both conventionally reared and axenically reared dptS69R flies survive starvation stress longer than dptS69 flies (conventional: pgenotype<2e-16, axenic: pgenotype<2e-16). In conventionally reared flies, there is no difference in survival between dptS69 flies and Δdpt flies (Figure 4B, Supplementary file 8). However, in axenically reared flies, Δdpt flies have an intermediate survival phenotype between dptS69 and dptS69R flies. This may suggest an interaction between functional diptericin and the microbiome that influences starvation.
 
 Finally, we looked at the overall longevity of female and male conventionally reared flies (in the absence of any infection or other significant selection pressure). Female flies have a longer lifespan than males (Figure 4C, Figure 4—figure supplement 3, psex=5.80e-13) regardless of dpt genotype. In males, dptS69 flies had a significantly longer lifespan than male dptS69R flies (mean of 60.3 days for dptS69 and 54.1 days for dptS69R, p=0.0072), but not in female flies (mean of 61.9 days for dptS69 and 59.0 days for dptS69R, p=0.6434). However, in axenically reared flies, only female dptS69 flies have a longer lifespan than male dptS69R flies. Interestingly, the female flies with the longest lifespan have nonfunctional Diptericin (Figure 4C, Δdpt line and imd- line, Supplementary file 9). Males lacking functional Diptericin show the same effect, but to a lesser extent. These results provide evidence that, in the presence of a standard gut microbiota, both Dpt and a functional Imd pathway may decrease longevity. This is consistent with others who found downregulation of NF-κB pathways and AMPs increased lifespan in Drosophila (Lin et al., 2018; Khor and Cai, 2020), but the fact that flies with Dpt null alleles alone are sufficient to increase lifespan is noteworthy.
 
-## Diptericin’s influence on gut microbial diversity
+### Diptericin’s influence on gut microbial diversity
 
 To determine whether Diptericin genotype influences the composition of the bacterial community in the gut, we sequenced amplicons of 16S ribosomal rRNA in conventionally reared lab flies under two different rearing conditions: flies reared in standard Drosophila vials, and the progeny of the cross between dptS69 and dptS69R flies reared in cages for more than two generations. The vials may capture the long-term impact of genotype on microbiota but make ruling out stochastic changes in communities difficult. The cages ensure identical microbiota during development, but do not allow gradual effects of genotype on microbiota to accumulate. First, we found flies that were co-reared in cages had similar microbiomes, with no discernible differences by the alpha diversity metric, Shannon diversity (p=0.5239, Figure 5A). On the other hand, the microbiomes of flies reared in vials were distinctly different overall compared to the microbiomes of flies reared in the cages (p<0.001, Figure 5B). However, the differences between genotypes were still minimal in the vial-reared flies, and vial may be a large factor in differences between lines. There were 2 dptS69R lines used, and even though these are the same genotype and genetic background, there was a significant difference between the 2 lines (Figure 5B). This difference is likely due to the within-vial drift in gut microbiome communities (Wong et al., 2013), which we attempted to control for using flies of different genotypes reared in the same cage (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90638/elife-90638-fig5-v1.jpg)
 
-**Figure 5.:** Dpt genotype on the gut microbiota.(A) Shannon diversity of flies co-reared in cages. (B) Shannon diversity of individual genotypes reared in vials. (C) Bray-Curtis dissimilarity of wild-caught flies. (D) Differential abundance of Morganellaceae in wild-caught flies. Different letters show significance based on post hoc Tukey’s test, p<0.05. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.
+**Figure 5.:** (A) Shannon diversity of flies co-reared in cages. (B) Shannon diversity of individual genotypes reared in vials. (C) Bray-Curtis dissimilarity of wild-caught flies. (D) Differential abundance of Morganellaceae in wild-caught flies. Different letters show significance based on post hoc Tukey’s test, p<0.05. Boxes represent 25th and 75th percentiles with the median denoted as a horizontal line in the middle of the box. Whiskers represent minimum and maximum of the data.
 
 The lab is a controlled environment that allows for excellent control of variables but does not replicate the conditions found in nature. Thus, we looked at the microbiomes of wild-caught flies collected from the decaying fruit of an apple orchard. We found flies with homozygous for dptS69R, homozygous for dptS69, and heterozygous genotypes at our collection location (Supplementary file 10). Out of the 955 D. melanogaster flies successfully genotyped, only 20 flies homozygous for dptS69R were identified. All 20 homozygous dptS69R flies were profiled along with 36 each of dptS69 homozygous flies and heterozygous flies for a total of 92 flies profiled (amplicon sequences of both Dpt and 16S rRNA are in Supplementary file 2).
 
@@ -123,47 +175,47 @@ Herein, we highlight three main roles of Diptericin in Drosophila: (1) Dipterici
 
 ## Materials and methods
 
-## Drosophila lines and rearing
+### Drosophila lines and rearing
 
 Conventionally reared flies were maintained in a 23°C incubator with a 12 hr light:12 hr dark schedule on a cornmeal-molasses-yeast diet 64.3 g/L cornmeal, 79.7 mL/L molasses, 35.9 g/L yeast, 8 g/L agar, 15.4 mL of food acid mix (50 mL phosphoric acid + 418 mL propionic acid + 532 mL deionized water) and 1 g/L Tegosept. We used CRISPR/Cas9 genome editing to modify the diptericin A gene. Briefly, DNA coding for guide RNA was inserted into the pUS-BbsI plasmid (Supplementary file 1). A single-stranded donor DNA (120 bp) containing the desired edit (to change from serine to arginine) and a silent mutated PAM site was synthesized by IDT (Coralville, IA, USA). The plasmid and ssODN were then injected into Bloomington stock #55821, which expresses Cas9 driven by the vasa promoter, by Genetivision, Inc (Houston, TX, USA). Individual flies developed from the injected embryos were collected and crossed with a modified version of Bloomington stock # 7198 (a line with CyO/Kruppel balanced on the second chromosome, and serrate/Dichaete balanced on the third chromosome). Our version, 7198A4, was provided by Stuart Macdonald and has the DSPR (King et al., 2012) A4 line’s X chromosome instead of the w[*] from the original 7198. The F1s were collected and again individually crossed with 7198A4 for F2 crosses, yielding individuals with a homozygous second chromosome representing one of the chromosomes carried by the original injected embryo. The Dpt gene was sequenced from the F2 cross progeny to determine whether edits occurred. This yielded several classes of alleles including homozygous serine dpt (wildtype, dptS69), homozygous arginine dpt (dptS69R), and dpt null (Δdpt, refers to lines with either 1 or 3 base pair deletion) (Figure 1—figure supplement 1A). Balancers were removed, and lines were moved into the same genetic background through a series of crosses as shown in Figure 1—figure supplement 1B. An imd- line was used as an IMD pathway negative control, but note that this line was from a completely different genetic background from the rest of the lines.
 
-## Axenic fly preparation
+### Axenic fly preparation
 
 Microbe-free (axenic) lines were generated by first washing embryos in a 10% bleach solution to dissolve the chorion for 2 min. The embryos were then washed in 70% ethanol for 30 s and water for another 30 s, then transferred to autoclaved molasses food (see above). Some embryos from each treatment were placed onto De Man, Rogosa, and Sharpe (MRS) agar plates and incubated at 30°C for 48 hr to check that they did not contain viable microbes. Axenic lines were continuously checked for the presence of contaminating microbes (every three to four generations) by homogenizing flies and plating the homogenate on MRS agar.
 
 Axenically and gnotobiotically (see below) reared flies were maintained in an incubator that was isolated from conventionally reared flies. The incubator was kept at 23°C with a 12 hr light:12 hr dark schedule. Axenic and gnotobiotic flies were kept on the same molasses diet that had been autoclaved before dispensing into autoclaved vials. Axenic and gnotobiotic flies were only handled inside a sterile hood (Baker SG 400, The Baker Company Inc, Sanford, ME, USA).
 
-## Bacterial strains
+### Bacterial strains
 
 The following bacteria were used for systemic infection assays: P. rettgeri (Juneja and Lazzaro, 2009), Providencia burhodegraneria Strain B (Juneja and Lazzaro, 2009), E. faecalis (Juneja and Lazzaro, 2009), S. marcescens (Lazzaro et al., 2004), L. fusiformis Strain Juneja (Smith and Unckless, 2018), and S. succinus (isolated from wild Drosophila, Unckless lab). Bacteria were grown from glycerol stocks on LB plates at 37°C overnight.
 
 The following bacteria were used in gnotobiotic experiments: L. plantarum, L. brevis, A. tropicalis. All these strains were isolated from plating conventionally reared flies on MRS agar in the Unckless lab at the University of Kansas. Individual colonies from plated fly homogenate were grown overnight in MRS for DNA isolation. Bacterial species were identified using Sanger sequencing with the 16S rRNA region primers 27F (AGAGTTTGATCCTGGCTCAG) and 1492R (CGGTTACCTTGTTACGACTT). We also utilized the same P. rettgeri as described for systemic infection.
 
-## Survival assays
+### Survival assays
 
 For systemic infections, individual colonies of bacteria were picked and grown in 2 mL LB broth shaking overnight at 37°C. Bacterial suspensions were then diluted or concentrated to OD600=0.1 for P. rettgeri, OD600=10 for S. succinus, OD600=1.5 for E. faecalis, OD600=3.5 for L. fusiformis, OD600=1.0 for L. lactis, and OD600=4.0 for S. marcescens. L. plantarum was grown in 5 mL MRS at 30°C overnight and was concentrated to OD600=10 for systemic infections. To induce systemic infection, 5–9 days of age, conventionally reared flies were pricked in the thorax with a needle dipped in a bacterial suspension (Khalil et al., 2015). Infections were done in triplicate with at least 20 flies for each replicate per line for a total of 60 flies per genotype per condition. Flies were incubated at 23°C with a 12 hr light:12 hr dark schedule, and survival was tracked daily for 5 days post infection.
 
-## Gnotobiotic longevity
+### Gnotobiotic longevity
 
 Axenically reared flies were collected within 24 hr of eclosion. Flies were then kept on sterile food for 2 days before sorting for longevity experiments. To begin longevity experiments, flies were separated into groups of 10 individuals of each sex and put onto sterile food seeded with 50 µL of bacterial suspension at an OD600 of 15±1. For each replicate, we used 2 vials of 10 flies each per sex per line for a total of 20 flies for each sex per genotype for a total of 60 flies across all replicates. Flies were allowed to feed in the inoculated vials for 3 days before being transferred to uninoculated sterile food vials. Flies were flipped to new sterile media every 4–5 days for the remainder of the experiment. Surviving flies were counted every 1–3 days until all flies were dead.
 
-## Gnotobiotic bacterial load
+### Gnotobiotic bacterial load
 
 To determine whether microbes became established in the gut, we homogenized flies during and after the exposure and plated the homogenate. We measured bacterial load by inoculating flies in the same manner as gnotobiotic longevity. Flies were separated into groups of 5 females and 5 males per vial. For 2-day experiments, flies were kept on the seeded food for the entire experiment. For 10- and 20-day experiments, flies were allowed to feed on the seeded food for 3 days before being transferred to sterile food. Flies continued to be transferred to new sterile media every 3–4 days until days 10 or 20 post feeding. After the experimental (2-, 10-, or 20-day) time period, flies were surface-sterilized by washing in 70% ethanol followed by molecular grade water. Flies were separated by sex, and three individuals were homogenized together in 300 µL of sterile 1× PBS, and the homogenate was plated on the appropriate media using a Whitley WASP Touch spiral plater (Don Whitley Scientific, UK). When there were not 3 flies still alive, then all remaining flies of a sex were used and squished in 100 µL of 1× PBS per fly collected instead of 300 µL to keep all samples the same concentration per fly. Counts were adjusted accordingly.
 
-## Feeding rate assays
+### Feeding rate assays
 
 To measure the amount of food and bacteria consumed by males and females of different genotypes, we made food containing blue dye by adding 11.2 g FCF blue dye (Erioglaucine disodium salt) per liter of food. We used newly eclosed flies (1–2 days post eclosion/14 days post oviposition) and separated sexes (in sterile conditions) and kept flies at a density of 10 flies/vial in fresh food vials. We held these flies in incubators for 1 day, so they would recover from the stress of anesthesia during sexing. To introduce bacteria (or control media) into the food, we pipetted 50 µL of suspension or LB at an OD600 of 15 (±1) into each vial and allowed the suspension to absorb into the food for 30–40 min by keeping the vials open inside a sterile hood. We next added the experimental flies and allowed them to feed for 1 hr. After 1 hr, we anesthetized the flies on ice, then rinsed in ethanol and sterile water. Flies were homogenized in 300 µL of 1× PBS with a glass bead (maximum speed for 4 min). The homogenate was centrifuged at 14,000 RPM for 4 min, and 200 µL of the supernatant was used to measure absorbance at 630 nm. Absorbance differences were analyzed using the natural log of absorbance as the response variable with genotype, sex, genotype by sex interaction, and block as independent variables. Due to the blocking structure of the experiment, each treatment (no media control, LB control, P. rettgeri) was analyzed separately.
 
-## Desiccation
+### Desiccation
 
 Desiccation survival assays were performed on dptS69 and dptS69R adult males 4–7 days post eclosion in conventionally and axenically reared flies. Ten males were placed into an empty vial and closed off with a cotton plug. Each genotype had 5 vials for a total of 50 flies per line per rearing condition in each replicate. The flugs were topped with silica gel (Fisher, #S684) and sealed with parafilm to prevent any moisture from entering the vials. Vials were kept at 24°C on 12 hr day/night cycles. Survival was measured by counting flies hourly until the entire population died. This was repeated once more with 50 flies per line per rearing condition in each trial for a total of 100 flies, with the exception of the Δdpt line, which in total only had 30 flies per condition in total across trials.
 
-## Starvation
+### Starvation
 
 Starvation survival assays were performed on dptS69 and dptS69R adult males 4–7 days after eclosion for axenically and conventionally reared flies. Ten males were placed into a vial with autoclaved starvation media (1% agar). The 1% agar was used to starve flies of nutrition but not desiccate them. Vials were kept at 24°C on 12 hr day/night cycles. Survival was measured by counting surviving flies at three 8 hr intervals (8 am, 4 pm, and 12 am) until all flies died. This was repeated twice more for a total of 3 trials with at least 40 flies per line per rearing condition in each trial for a total of at least 120 flies.
 
-## 16S sequencing
+### 16S sequencing
 
 Flies were reared in the lab in two distinct ways for 16S rRNA sequencing of conventionally reared flies. First, flies were taken from vials of individual genotypes. This allows for any moderate effects of fly genotype to equilibrate over time. Second, flies were taken from cages that were started with heterozygous diptericin flies. These cages were started with the F1 progeny from crosses of dptS69 and dptS69R flies and allowed to continue for three discrete generations before flies were collected for 16S rRNA sequencing. This ensures that the genotypes are exposed to the same microbes, and any differences in microbiome are due to genetic differences manifest in that generation.
 
@@ -173,16 +225,16 @@ DNA concentration was measured with Qubit fluorimeter (Invitrogen). Ten flies fr
 
 Wild flies were collected from decaying apples and pears in an apple orchard in Kansas City, KS, USA (3341N 139th St, Kansas City, KS 66109, USA). Flies were immediately transported back to the lab and sorted by species on CO2 and frozen at –20°C. DNA was extracted from individual flies using Gentra PureGene Cell & Tissue DNA Isolation Kit (QIAGEN #158388). The samples were tested for species (D. simulans vs. D. melanogaster), Wolbachia status, and Dpt genotype using primers listed in Supplementary file 1 . Collections are summarized in Supplementary file 10. Libraries were prepped in the same manner as the conventionally reared flies.
 
-## 16S bioinformatic analysis
+### 16S bioinformatic analysis
 
 Demultiplexed reads were processed with QIIME2, v.2019.10 (Bolyen et al., 2019). Primers were removed from 5’ ends with Cutadapt using default parameters (Martin, 2011). Reads were de-noised and trimmed for quality with Divisive Amplicon Denoising Algorithm (DADA2) within the QIIME2 bioinformatics pipeline (Callahan et al., 2016). Forward and reverse reads were truncated at 280 bp and 245 bp, respectively. The remaining ASV table was exported from QIIME2 for further processing in R (R Development Core Team, 2021). Taxonomy was assigned to the ASV table using SILVA 16S rRNA gene reference database, v.138 (Quast et al., 2013; Yilmaz et al., 2014; Glöckner et al., 2017). Reads assigned to genus level Wolbachia (a Drosophila endosymbiont) and kingdom level Eukaryota were removed from further analysis. We also removed reads not observed at least three times in at least 10 samples. Then, conventionally reared flies were rarefied to 17,066 reads, while wild flies were rarefied to 10,771 reads.
 
 All statistical analysis of 16S data was performed in R (4.1.2) using the Phyloseq (McMurdie and Holmes, 2013) package and ggplot2 (Wickham et al., 2019) package for visualization. The CRISPR and cage population data were analyzed separately. For each population, alpha diversity was estimated using Shannon diversity in Phyloseq using the estimate_richness() function. Bray-Curtis dissimilarity was calculated to look at overall patterns of microbiome composition in Phyloseq using the ordinate() function. Significance was determined at α=0.05. Fixed effects models were fit with the package lme4 (Bates et al., 2015) with the fixed effects genotype + sex + genotype*sex. When necessary, p-values were adjusted for multiple comparisons using the FDR correction method.
 
-## Statistical analysis
+### Statistical analysis
 
 R (v.4.1.2) was used to run statistical analyses. Survival data were plotted using the R package survminer (Kassambara et al., 2021). The analysis was performed using the Cox proportional hazards regression model in R (Therneau, 2009). For longevity, significance was determined using the model: Lifespan~(Genotype*Sex)/Vial + Block. For gnotobiotic bacterial load, significance was determined using the model: Colonies.mL~(Genotype)*Sex + Block.
 
-## Material availability statement
+### Material availability statement
 
 All edited Drosophila lines and microbes are available from the authors upon request.

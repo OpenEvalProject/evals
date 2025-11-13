@@ -10,20 +10,32 @@
 
 ### Affiliations
 
-1. https://ror.org/05dk0ce17 Department of Veterinary Microbiology and Pathology, Washington State University Pullman United States
-2. https://ror.org/0293rh119 Institute of Molecular Biology, University of Oregon Eugene United States
-3. https://ror.org/0293rh119 Department of Chemistry & Biochemistry, University of Oregon Eugene United States
+1. Department of Veterinary Microbiology and Pathology, Washington State University Pullman United States ([ROR:05dk0ce17](https://ror.org/05dk0ce17))
+2. Institute of Molecular Biology, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+3. Department of Chemistry & Biochemistry, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
 4. Amethyst Antimicrobials, LLC Pullman United States
 
 † Corresponding author
 
 ## Abstract
 
-Previously, we showed Enterobacteriaceae use chemotaxis and the chemoreceptor Tsr for attraction to blood serum (Glenn et al., 2024). Here, we investigated the complementary role of Tsr in mediating chemorepulsion, a behaviour by which motile bacteria avoid deleterious compounds to locate permissive niches. In the gut, indole is a bacteriostatic compound produced by microbiota and thought to act as a chemorepellent for invading pathogens, thereby protecting the host against infection. The principal reservoir of intestinal indole is fecal matter, a complex biological material that contains both attractant and repellent stimuli. Whether indole in its natural context is sufficient for pathogen chemorepulsion or host protection has remained unknown. Using an intestinal explant system, we show that pure indole suppresses an infection advantage mediated through chemotaxis for the enteric pathogen Salmonella Typhimurium, but this effect is abolished in the presence of other fecal chemoeffectors, including the chemoattractant L-Serine (L-Ser), dependent on the chemoreceptor Tsr. Live imaging reveals that although S. Typhimurium is repelled by pure indole, the pathogen is actually strongly attracted to human fecal matter despite its high indole content, and this response is mediated by Tsr, which simultaneously senses both stimuli. Fecal attraction is conserved across diverse Enterobacteriaceae species that harbor Tsr orthologues, including Escherichia coli , Citrobacter koseri, Enterobacter cloacae, and clinical isolates of non-typhoidal Salmonella. In a defined system of fecal chemoeffectors, L-Ser and other fecal chemoattractants override indole chemorepulsion, but the magnitude of bacterial chemoattraction is controlled by indole levels. Together, these findings suggest chemorepulsion elicited by indole is not protective against enteric infection and actually benefits pathogens by helping them locate niches with lower competitor density. Our study highlights the limitations of applying single-effector studies in predicting bacterial behavior in natural environments, where chemotaxis is shaped by the integration of multiple, often opposing, chemical signals.
+Previously, we showed Enterobacteriaceae use chemotaxis and the chemoreceptor Tsr for attraction to blood serum (Glenn et al., 2024). Here, we investigated the complementary role of Tsr in mediating chemorepulsion, a behaviour by which motile bacteria avoid deleterious compounds to locate permissive niches. In the gut, indole is a bacteriostatic compound produced by microbiota and thought to act as a chemorepellent for invading pathogens, thereby protecting the host against infection. The principal reservoir of intestinal indole is fecal matter, a complex biological material that contains both attractant and repellent stimuli. Whether indole in its natural context is sufficient for pathogen chemorepulsion or host protection has remained unknown. Using an intestinal explant system, we show that pure indole suppresses an infection advantage mediated through chemotaxis for the enteric pathogen Salmonella Typhimurium, but this effect is abolished in the presence of other fecal chemoeffectors, including the chemoattractant L-Serine (L-Ser), dependent on the chemoreceptor Tsr. Live imaging reveals that although S. Typhimurium is repelled by pure indole, the pathogen is actually strongly attracted to human fecal matter despite its high indole content, and this response is mediated by Tsr, which simultaneously senses both stimuli. Fecal attraction is conserved across diverse Enterobacteriaceae species that harbor Tsr orthologues, including Escherichia coli, Citrobacter koseri, Enterobacter cloacae, and clinical isolates of non-typhoidal Salmonella. In a defined system of fecal chemoeffectors, L-Ser and other fecal chemoattractants override indole chemorepulsion, but the magnitude of bacterial chemoattraction is controlled by indole levels. Together, these findings suggest chemorepulsion elicited by indole is not protective against enteric infection and actually benefits pathogens by helping them locate niches with lower competitor density. Our study highlights the limitations of applying single-effector studies in predicting bacterial behavior in natural environments, where chemotaxis is shaped by the integration of multiple, often opposing, chemical signals.
 
 ## Introduction
 
 Motile bacteria that colonize the gastrointestinal tracts of humans and other animals employ chemotaxis to sense chemical effectors in the gut lumen and navigate to environments conducive to growth and colonization (Zhou et al., 2023; Keegstra et al., 2022; Bi and Sourjik, 2018; Matilla and Krell, 2018; Matilla et al., 2023). This process is controlled by chemoreceptor proteins, which recognize chemical effectors and transduce signals through a phosphorylation cascade to regulate flagellar rotation and swimming direction, ultimately determining the spatial and temporal patterns of bacterial colonization (Figure 1A; Zhou et al., 2023; Keegstra et al., 2022; Matilla and Krell, 2017; Ortega et al., 2017). While many effectors have been studied and characterized in isolation as chemoattractants or chemorepellents (Matilla and Krell, 2018; Ortega et al., 2017), natural environments like the gut contain complex mixtures of opposing signals. Only a handful of studies have investigated how bacteria navigate conflicting chemical gradients, and much remains to be learned about how bacteria prioritize these signals to direct their movement and colonization (Figure 1A; Zhou et al., 2023; Matilla and Krell, 2018; Yang et al., 2020; Livne and Vaknin, 2022; Keller and Segel, 1971; Adler and Tso, 1974; Zhang et al., 2019; Kalinin et al., 2010; Englert et al., 2009; Huang et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the role of Tsr in coordinating responses to conflicting stimuli. (B) Experimental design of colonic explant infections. See Materials and methods for experimental details such as tissue dimensions. (C) Conceptual model of the explant infection system. The effectors from the treated tissue (gray) diffuse into the surrounding buffer solution providing a gradient. Note that the bacteria are not immersed in the effector solution and experience a local concentration during infection much lower than the effector pretreatment. Quantifications of tissue-associated bacteria reflect the ability of chemotaxis to provide an advantage (black arrow) in accessing the intestinal mucosa (reddish brown). (D) Serine (presumed to be nearly 100% l-Ser, see Materials and methods) and indole content of liquid human fecal treatments, as measured by mass spectrometry. (E–I) Competitive indices (CIs) of colony-forming units (CFUs) recovered from co-infected swine explant tissue, either from the total homogenate (open box and whiskers plots), or from tissue washed with gentamicin to kill extracellular and attached cells, which we refer to as the ‘invaded’ intracellular population (checkered box and whisker plots), as indicated. Each data point represents a single experiment of a section of tissue infected with bacteria, normalized by tissue weight, and the CI of CFUs recovered from that tissue (n = 7–10). Boxes show median values (line) and upper and lower quartiles, and whiskers show max and min values. Effect size (Cohen’s d) and statistical significance are noted for each experiment in relation to competitive advantage, that is deviation from a CI of 1 (not significant, ns; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). See also Figure 1 - figure supplement 1 for competition between wildtype (WT) and an invasion-inhibited mutant invA, and Figure 1 - figure supplement 2 for disaggregated CFU enumerations for each experimental group prior to CI calculation. Source data 1 contains all numerical CFU measurements.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Competitive indices (CIs) of colony-forming units (CFUs) recovered from co-infected swine explant tissue, either from the total homogenate (total, open box and whiskers plots), or from tissue washed with gentamicin to kill extracellular and attached cells (invaded, checkered box and whisker plots), as indicated. Each data point represents a single experiment and the CI of CFUs recovered from that tissue (n = 9–10). Boxes show median values (line) and upper and lower quartiles, and whiskers show max and min values. Effect size (Cohen’s d) and statistical significance are noted for each experiment in relation to competitive advantage, that is deviation from a CI of 1 (not significant, ns; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). (B) Disaggregated CFU enumerations for each experimental group prior to CI calculation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A-J. Shown are disaggregated CFU enumerations for each co-infection experiment with S. Typhimurium IR715 wildtype (WT) and mutant strains following tissue treatments, as indicated. CFUs extracted either using the entire tissue homogenate (total) or extracted from tissue treated with a gentamicin wash to kill exterior non-invaded cells (invaded) are noted separately (see Materials and methods). Each data point represents CFUs recovered from a single explant experiment (n = 8–10). Box and whisker plots represent the sample median (line), the edges are the upper and lower quartiles, and whiskers extend to the max and min values. The limit of detection was 1 × 105 CFUs, and experiments at or below this limit are not included here. See Source data 1Data S1 for numeric values.
 
 A chemical effector of major importance for enteric bacterial communities is indole, an interbacterial signaling molecule that regulates diverse aspects of physiology and lifestyle (Li et al., 2021; Lee and Lee, 2010; Gupta et al., 2022). Indole is excreted by gut microbiota as a byproduct of tryptophan metabolism and accumulates to millimolar levels in human feces (Figure 1A; Li et al., 2021; Darkoh et al., 2015; Chappell et al., 2016). Indole is amphipathic and can transit bacterial membranes to regulate biofilm formation and motility, suppress virulence programs, and exert bacteriostatic and bactericidal effects at high concentrations (Li et al., 2021; Lee and Lee, 2010; Gupta et al., 2022; Chappell et al., 2016; Ye et al., 2022; Kumar and Sperandio, 2019; Kohli et al., 2018; Nikaido et al., 2012). Indole was one of the earliest identified chemorepellents, and subsequent work has extensively explored its role in Escherichia coli chemotaxis, mostly examining responses to indole as a singular effector (Supplementary file 1; Yang et al., 2020; Livne and Vaknin, 2022; Adler and Tso, 1974; Englert et al., 2009; Gupta et al., 2022; Bansal et al., 2007). Recent studies have advanced understanding of the molecular mechanisms underlying E. coli indole taxis and the involvement of the chemoreceptor taxis to serine and repellents (Tsr) (Figure 1A; Yang et al., 2020; Livne and Vaknin, 2022; Englert et al., 2009; Gupta et al., 2022).
 
@@ -33,7 +45,7 @@ In this study, we aimed to (1) test the hypothesis that indole taxis protects ag
 
 ## Results
 
-## Fecal indole is insufficient to protect against pathogen invasion in a colonic explant model
+### Fecal indole is insufficient to protect against pathogen invasion in a colonic explant model
 
 We sought to test whether indole in human fecal matter protects against S. enterica serovar Typhimurium infection and whether this involves indole chemorepulsion mediated by the chemoreceptor Tsr. Salmonella Typhimurium preferentially infects tissue of the distal ileum but also infects the cecum and colon in humans and animal models (Chowdhury et al., 2023; Ehrhardt and Grassl, 2022; Grassl et al., 2008; Radlinski et al., 2024; Mandal and Mani, 1976). We presume that the amount of indole is greatest in the lower gastrointestinal tract, where tryptophan has been maximally digested by microbial tryptophanases. To mimic this environment, we developed a swine colonic explant model that simulates the architecture and size of adult human colonic tissue (Figure 1B; Roager and Licht, 2018; Kronsteiner et al., 2013; Smith and Swindle, 2006; Poutahidis et al., 2001; Boyen et al., 2009; Boyen et al., 2008). This model was based on a prior study using explant tissue to characterize cellular invasion via gentamicin washes, which kill extracellular and surface-attached bacteria (Figure 1B; Köppen et al., 2023). Gentamicin washing is also a commonly used method to quantify intracellular Salmonella Typhimurium populations in cell culture experiments (Bomjan et al., 2019; Birhanu et al., 2018).
 
@@ -47,25 +59,65 @@ Analysis of the liquefied human fecal matter used in this study revealed an indo
 
 Our key takeaway from these experiments is that pretreatment of intestinal tissue with indole alone is unique in that the WT strain gains no infection advantage in this context (Figure 1G). In contrast, under all other treatment conditions, the WT infects the tissue to a greater extent than the chemotactic mutants (Figure 1E–I). Put another way, chemotaxis and Tsr enhance pathogen transit of the chemical gradient and increase access to the intestinal tissue in all conditions except when indole is the sole effector. This was surprising, given that other treatments contain the same concentration of indole and still permit a chemotaxis- and Tsr-mediated advantage (Figure 1). To us, this suggests that bacterial perception of indole via chemotaxis differs fundamentally depending on whether indole is the only effector present or amidst other fecal effectors. Notably, only fecal treatment resulted in a greater competitive advantage for the invaded population than for the total population (Figure 1F).
 
-## Enterobacteriaceae species are attracted to human feces despite high indole content
+### Enterobacteriaceae species are attracted to human feces despite high indole content
 
 Having found that chemotaxis and Tsr mediate efficient infection, but do not confer an advantage when indole is the only effector, we next sought to understand the chemotactic behaviors orchestrated by Tsr in response to indole-rich feces. Given that feces represents the highest concentration of indole that S. Typhimurium is likely to encounter natively, we expected to observe chemorepulsion (Figure 1D, ; Yang et al., 2020; Livne and Vaknin, 2022; Englert et al., 2009; Bansal et al., 2007; Chen et al., 2022). We employed the chemosensory injection rig assay (CIRA) for live imaging of bacterial chemotaxis responses to a source of effectors injected through a glass microcapillary (Glenn et al., 2024). The flow and dynamic nature of the gut lumen make this a suitable in vitro approach for modeling and studying enteric chemotaxis responses (Glenn et al., 2024; Perkins et al., 2019).
 
 In this assay, chemoattraction is observed as an influx of cells toward the effector source, whereas chemorepulsion is indicated by a decrease in local cell density (Figure 2—figure supplement 1). As described previously, effector injection creates a steep chemical microgradient (Glenn et al., 2024). Using mathematical modeling of the diffusion of fecal-relevant concentrations of indole and l-Ser, we approximated the local concentrations experienced by bacteria at varying distances from the injection site. For most of the field of view, these concentrations fall within the picomolar to low nanomolar range (Figure 2A; Materials and methods, Glenn et al., 2024).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig2-v1.jpg)
+
+**Figure 2.:** (A) Diffusion modeling showing calculated local concentrations in chemosensory injection rig assay (CIRA) experiments with liquid human fecal material based on distance from the central injection source. (B) Max projections of representative S. Typhimurium IR715 responses to a central source of injected liquid human fecal material. (C–E) Bacterial population density over time in response to fecal treatment. The initial uniform population density in these plots is indicated with the blue line (time 0), and the final mean distributions with the red line (time 280 s), with the mean distributions between these displayed as a blue-to-red spectrum at 10-s intervals. (F–G) Temporal analyses of area under the curve (AUC) or relative number of bacteria within 150 µm of the source. Effect size (Cohen’s d) comparing responses of wildtype (WT) and tsr attraction at 120 s post-treatment is indicated. Data were collected at 30°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5). See also Figure 2—figure supplement 1, Video 1, Supplementary file 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) CIRA experimental design. (B) CIRA microgradient diffusion model, simulated with a source of 1.13 mM A488 dye after 30 s of injection. Image rendered on a pink (100% source concentration)–blue–black (0%) color intensity scale, based on previous work (Glenn et al., 2024). (C) CIRA quantification overview, with blue lines corresponding to chemoattraction, null chemotactic response corresponding to gray dashed lines, and chemorepulsion corresponding to brown lines. (D–G) Microgradient models of the local effector concentration for treatments with 5 mM l-Ser or indole, respectively, at Δ300 s. Color gradient corresponds to gradually decreasing effector concentrations from yellow to blue. (H, I) Representative 10 s max projections of S. Typhimurium IR715 response to sources of l-Ser (strong chemoattraction) or indole (strong chemorepulsion) using CIRA. The glass microcapillary that injects the treatment solution is centered within the field of view. Note that cells contain a plasmid expressing mPlum (see Materials and methods), and fluorescence data are collected in the far-red channel, so the glass microcapillary is poorly visible.
+
 Over 5 min, we found both WT and tsr exhibit strong chemoattraction to fecal material, whereas cheY remains randomly distributed (Figure 2B, Video 1). By examining the radial distribution of the bacterial populations, we found WT more tightly centers around the treatment source than tsr (Figure 2C–E, Video 1). In terms of the rate of bacterial accumulation, the chemoattraction of tsr lags behind the WT for the first 120 s (Figure 2F, G, Video 1). We wondered how these deficiencies in fecal attraction might translate to direct competition, where different strains are experiencing the same treatment source simultaneously. To address this, we performed CIRA with solubilized human feces and two strains present in the same pond, which we tracked independently through fluorescent markers (Figure 3; Glenn et al., 2024). As expected, WT shows a strong chemoattraction response versus cheY (Figure 3A, Video 2). Interestingly, we found that when competed directly, WT vastly outperforms tsr, with the maximal bacterial distribution in proximity to the treatment source higher by about fourfold (Figure 3B, Video 2). These data confirm that despite its high indole content, S. Typhimurium is attracted to human fecal material through chemotaxis, and this response involves Tsr, although not as the sole mediator. We expect the attraction of the tsr mutant is explained by the fact that S. Typhimurium possesses other chemoreceptors that detect glucose, galactose, ribose, and L-Asp as chemoattractants, which are also present in human feces (Zhou et al., 2023; Ortega et al., 2017; Ranque et al., 2020; Ke et al., 2024; Larke et al., 2023; Shen et al., 2022; Yoo et al., 2024).
+
+![Video 1.](https://cdn.elifesciences.org/articles/106261/elife-106261-video1.mp4.jpg)
+
+**Video 1.:** Representative chemosensory injection rig assay (CIRA) experiments showing S. Typhimurium IR715 wildtype (WT) and mutant strains responding to a source over 300 s (shown at 10× speed). Viewable at: https://www.youtube.com/watch?v=BqUcRN3YwjU.
+
+![Video 2.](https://cdn.elifesciences.org/articles/106261/elife-106261-video2.mp4.jpg)
+
+**Video 2.:** Representative chemosensory injection rig assay (CIRA) experiments showing competition between S. Typhimurium IR715 (mPlum) and cheY, or tsr, as indicated (GFP), over 300 s. Viewable at: https://www.youtube.com/watch?v=D5JL46b4lsI.
+
+![Video 3.](https://cdn.elifesciences.org/articles/106261/elife-106261-video3.mp4.jpg)
+
+**Video 3.:** Representative chemosensory injection rig assay (CIRA) experiments showing competition between S. Typhimurium IR715 (mPlum) and clinical isolates, as indicated (GFP), responding to a source of solubilized human feces over 300 s. Viewable at: https://www.youtube.com/watch?v=dLsFDV0XgpY.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig3-v1.jpg)
 
-**Figure 3.:** Salmonella exhibit fecal attraction.(A–E) Dual-channel imaging of chemotactic responses to solubilized human feces by wildtype (WT) S. Typhimurium IR715 (pink) and isogenic mutants or clinical isolate strains (green), as indicated. Max projections are shown at time 295–300 s post-treatment. Data were collected at 37°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5). See also Videos 2 and 3.
+**Figure 3.:** (A–E) Dual-channel imaging of chemotactic responses to solubilized human feces by wildtype (WT) S. Typhimurium IR715 (pink) and isogenic mutants or clinical isolate strains (green), as indicated. Max projections are shown at time 295–300 s post-treatment. Data were collected at 37°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5). See also Videos 2 and 3.
 
 Recent work highlights how genetic diversity among Salmonella strains and differences in Tsr expression, even within isogenic populations, modulate chemotaxis function (Livne and Vaknin, 2022; Gül et al., 2024). To gain a broader perspective on fecal taxis, we examined the responses among diverse non-typhoidal Salmonella serovars and strains responsible for human infections. Using dual-channel imaging, we compared S. Typhimurium IR715 with a clinical isolate of S. Typhimurium, SARA1, and found both strains exhibit attraction to feces, although SARA1 shows a slightly weaker response (Figure 3C, Video 3, Beltran et al., 1991). We then tested a clinical isolate of S. Newport, an emerging cause of salmonellosis in the United States and Europe (Shariat et al., 2013; Ferrari et al., 2019). This strain is strongly attracted to fecal material, with a tighter accumulation of cells at the treatment source than S. Typhimurium IR715 (Figure 3D, Video 3). We also examined a clinical isolate of S. Enteritidis, a zoonotic pathogen commonly transmitted from poultry, which displays weak attraction to fecal material (Figure 3E, Video 3, Ferrari et al., 2019).
 
 Next, we extended this analysis to other disease-causing Enterobacteriaceae that possess Tsr orthologs (Glenn et al., 2024). E. coli strain MG1655, commonly used for in vitro experiments, and E. coli NCTC 9001, a strain isolated from human urine and associated with urinary tract infections, both exhibited fecal attraction, although the response was more diffuse than that observed for Salmonella (Figure 4A–D; Videos 4 and 5). The clinical isolate Citrobacter koseri strain 4225-83 also showed fecal attraction, with a tight association near the effector source (Figure 4E, F; Video 6). Lastly, Enterobacter cloacae CDC 442-68, a clinical isolate with uncharacterized chemotaxis behavior, appeared to exhibit fecal attraction as well, although this strain was not extensively tested due to limited motility under laboratory conditions (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig4-v1.jpg)
+
+**Figure 4.:** Max projections are shown from chemosensory injection rig assay (CIRA) experiments over 5 s before fecal treatment and after 5 min of treatment, as well as quantifications of bacteria within 500 µm of the treatment source at these same time points for E. coli MG1655 (A, B, GFP-reporter), E. coli NCTC 9001 (C, D, phase), and C. koseri CDC 4225-83 (E, F, phase). Data were collected at 37°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5) with statistical significances denoted (not significant, ns; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001). See also Videos 4–6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Shown are max projections over 5 s from a chemosensory injection rig assay (CIRA) experiment from time −5 s before fecal treatment and after 5 min of treatment with liquid human feces. Data were collected using phase-contrast.
+
+![Video 4.](https://cdn.elifesciences.org/articles/106261/elife-106261-video4.mp4.jpg)
+
+**Video 4.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtube.com/shorts/WH6tabDbrw4?feature=share.
+
+![Video 5.](https://cdn.elifesciences.org/articles/106261/elife-106261-video5.mp4.jpg)
+
+**Video 5.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtube.com/shorts/yzU2M4Z_Yf4?feature=share.
+
+![Video 6.](https://cdn.elifesciences.org/articles/106261/elife-106261-video6.mp4.jpg)
+
+**Video 6.:** Representative chemosensory injection rig assay (CIRA) experiments with treatment sources as indicated, over 300 s. Viewable at: https://youtube.com/shorts/s_ybO0xcIDw?feature=share.
+
 Overall, we find that Tsr mediates fecal attraction in Salmonella, and that this behavior is conserved among diverse Enterobacteriaceae that possess Tsr and are associated with human infections. Although the degree of attraction varies, none of the enteric pathogens or pathobionts tested exhibited chemorepulsion from feces, despite its high indole content.
 
-## Fecal chemoattractants override indole chemorepulsion
+### Fecal chemoattractants override indole chemorepulsion
 
 To better understand the relationship between indole and other fecal effectors in directing S. Typhimurium chemotaxis, we next employed a reductionist approach and developed a mixture of fecal effectors at physiological concentrations based on our measurements and the Human Metabolome Database (Figure 5, Wishart et al., 2022). Along with the chemorepellent indole (862 µM), we tested combinations of fecal chemoattractants including l-Ser (338 µM), sensed through Tsr; d-glucose (970 µM), d-galactose (78 µM), and ribose (28.6 µM), sensed through the chemoreceptor Trg; and L-aspartate (L-Asp, 13 µM), sensed through the chemoreceptor Tar (Glenn et al., 2024; Zhou et al., 2023; Ortega et al., 2017; Wishart et al., 2022; Falke and Hazelbauer, 2001; Lai et al., 2005). A low density of motile cells (A₆₀₀ ~ 0.05) was used in the CIRA experiments to increase sensitivity for detecting attraction in response to different combinations of these fecal effectors (Figure 5).
 
@@ -75,35 +127,55 @@ To better understand the relationship between indole and other fecal effectors i
 
 We observed that l-Ser was sufficient to negate indole chemorepulsion and may even elicit attraction, although this was not statistically significant (Figure 5A, B; Video 7). When all effectors were present, bacteria were clearly attracted to the treatment (Figure 5C, D; Video 8), with a slightly reduced attraction in the absence of l-Ser (Figure 5E, F; Video 9). Interestingly, when all effectors were present but the concentration of indole was halved (431 µM), cells exhibited the greatest degree of attraction (Figure 5G, H; Video 10).
 
+![Video 7.](https://cdn.elifesciences.org/articles/106261/elife-106261-video7.mp4.jpg)
+
+**Video 7.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtube.com/shorts/4UEYoBS6jIQ?feature=share.
+
+![Video 8.](https://cdn.elifesciences.org/articles/106261/elife-106261-video8.mp4.jpg)
+
+**Video 8.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtube.com/shorts/Yd14m3sI6Pw?feature=share.
+
+![Video 9.](https://cdn.elifesciences.org/articles/106261/elife-106261-video9.mp4.jpg)
+
+**Video 9.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtu.be/5QM116BrHhQ.
+
+![Video 10.](https://cdn.elifesciences.org/articles/106261/elife-106261-video10.mp4.jpg)
+
+**Video 10.:** Representative chemosensory injection rig assay (CIRA) experiment over 300 s. Viewable at: https://youtube.com/shorts/OqH0HE2rYIE?feature=share.
+
 From these data, we conclude that the Tsr ligand l-Ser can override chemorepulsion from indole. However, this effect can also be mediated by other fecal effectors sensed through different chemoreceptors, providing an explanation for the reduced, but still appreciable, fecal attraction observed for the tsr mutant (Figure 3B). While the overall responses to this mixture of fecal effectors can be characterized as attraction, the bacteria remain sensitive to indole levels, as reflected in the enhanced attraction observed in treatments with lower indole concentrations (Figure 5G, H).
 
-## Mediation of opposing chemotactic responses by Tsr
+### Mediation of opposing chemotactic responses by Tsr
 
 We considered whether our inability to observe repulsion from fecal material and mixtures of fecal effectors might be due to S. Typhimurium not sensing indole as a chemorepellent, since this chemotactic response has only been previously described for E. coli (Supplementary file 1). We compared chemotaxis responses to either 5 mM l-Ser or 5 mM indole and found that S. Typhimurium responds rapidly to these two effectors as chemoattractants and chemorepellents, respectively (Figure 2 -figure supplement 1H, I). Treatment with 5 mM indole, a concentration at the upper end of what occurs in the human gut (Kumar and Sperandio, 2019), induces rapid chemorepulsion with the bacteria vacating the region proximal to the source (Figure 2—figure supplement 1I). Interestingly, the chemorepulsion response occurs faster than chemoattraction, with a zone of avoidance clearly visible within the first 10 s of indole exposure (Figure 2—figure supplement 1H, I, Video 11).
+
+![Video 11.](https://cdn.elifesciences.org/articles/106261/elife-106261-video11.mp4.jpg)
+
+**Video 11.:** Representative chemosensory injection rig assay (CIRA) experiments with treatment sources as indicated, over 300 s. Viewable at: https://www.youtube.com/watch?v=bNQMqF2QMek.
 
 We next wondered if perhaps our fecal treatments contained insufficient indole to elicit chemorepulsion from S. Typhimurium. To identify the effective source concentrations that drive indole chemorepulsion and understand the temporal dynamics of this response, we performed a titration of indole across 0.05–10 mM (Figure 6A, B). At all concentrations tested, indole induces chemorepulsion, and the bacteria avoid the treatment source for the duration of the 5-min experiment (Figure 6A, B). At source concentrations exceeding 3 mM most motile cells vacate the field of view within 60 s (Figure 6A). Integrating these chemorepulsion responses and fitting them to a Monod curve suggests that an indole source concentration of approximately 67 µM is sufficient for half-maximal (K1/2) chemorepulsion (Figure 6C). These data show that even though we observe strong attraction to fecal material, pure indole at the concentration present in fecal material, and far lower, is indeed a strong chemorepellent for S. Typhimurium.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig6-v1.jpg)
 
-**Figure 6.:** S. Typhimurium.(A) Representative max projections of responses at 295–300 s of indole treatment. (B, C) Quantification of chemorepulsion as a function of indole concentration (n = 3–5). (D–F) Comparison of wildtype (WT) and tsr mutant responses to l-Ser or indole. (E) Quantification of the relative number of cells in the field of view over time following treatment with 5 mM indole for a competition experiment with WT and tsr (representative image shown in F). Data were collected at 30°C. (G, H) Isothermal titration calorimetry (ITC) experiments with 50 μM S. Typhimurium Tsr ligand-binding domain (LBD) and indole, or with l-Ser in the presence of 500 μM indole. Data are means and error bars are standard error of the mean (SEM, n = 3–5). AUC indicates area under the curve.
+**Figure 6.:** (A) Representative max projections of responses at 295–300 s of indole treatment. (B, C) Quantification of chemorepulsion as a function of indole concentration (n = 3–5). (D–F) Comparison of wildtype (WT) and tsr mutant responses to l-Ser or indole. (E) Quantification of the relative number of cells in the field of view over time following treatment with 5 mM indole for a competition experiment with WT and tsr (representative image shown in F). Data were collected at 30°C. (G, H) Isothermal titration calorimetry (ITC) experiments with 50 μM S. Typhimurium Tsr ligand-binding domain (LBD) and indole, or with l-Ser in the presence of 500 μM indole. Data are means and error bars are standard error of the mean (SEM, n = 3–5). AUC indicates area under the curve.
 
 Based on its function in E. coli, we hypothesized that both indole chemorepulsion and l-Ser chemoattraction for S. Typhimurium could be partly or fully mediated through Tsr (Ortega et al., 2017; Yang et al., 2020; Burt et al., 2020). We compared the chemotactic responses of the WT and tsr strains when exposed to sources of these effectors and found Tsr to be required for both chemorepulsion from indole and chemoattraction to l-Ser (Figure 6E, F). The canonical mode of chemoreceptor effector recognition involves binding of the effector to the periplasmic ligand-binding domain (LBD) (Ortega et al., 2017; Gavira et al., 2020), but the mechanism by which indole is sensed through Tsr in Salmonella has not been elucidated. We recently reported the first crystal structure of S. Typhimurium Tsr LBD, which clearly defines how the binding site recognizes the l-Ser ligand (PDB code: 8fyv), and we thought it unlikely indole can be accommodated at the same site (Glenn et al., 2024). To our knowledge, no prior study has tested whether the Tsr LBD binds indole directly, so we expressed and purified the LBD, corresponding to the soluble periplasmic portion, and performed isothermal titration calorimetry (ITC). These data show that no binding occurs between the Tsr LBD and indole (Figure 6G).
 
 We next wondered if indole acts as an allosteric regulator of the LBD, possibly through interacting with the l-Ser-bound form or interfering with l-Ser recognition. To address these possibilities, we performed ITC of 50 μM Tsr LBD with l-Ser in the presence of 500 μM indole and observed a robust exothermic binding curve and KD of 5 µM, identical to the binding of l-Ser alone, which we reported previously (Figure 6H; Glenn et al., 2024). These data indicate that indole does not alter the Tsr LBD affinity for l-Ser. We conclude that Tsr senses indole through an atypical mechanism, which might either involve regulation through a solute-binding protein (Yang et al., 2020; Matilla et al., 2021), responsiveness to perturbation in the proton motor force (Gupta et al., 2022), or binding to a different region other than the periplasmic LBD. Our findings reveal that while indole acts as a chemorepellent for S. Typhimurium in isolation and is sensed through Tsr, its presence within fecal material mixed with other effectors is insufficient to elicit chemorepulsion.
 
-## Compromising between conflicting effector signals through chemohalation
+### Compromising between conflicting effector signals through chemohalation
 
 Since Tsr mediates both chemoattraction to l-Ser and chemorepulsion from indole, we wondered at what threshold each response dominates, and how this behavior is regulated at the point of transition. To address these questions, we assessed responses to physiological mixtures of these effectors using 500 µM l-Ser and increasing concentrations of indole at l-Ser:indole molar ratios of 10:1, 1:1, or 1:10 (Figure 7A–D, Video 11). These experiments reveal a fascinating transition in the distribution of the pathogen population as a function of increasing chemorepellent, which occurs within minutes of exposure (Figure 7A–D, Video 11).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/106261/elife-106261-fig7-v1.jpg)
 
-**Figure 7.:** S. Typhimurium mediates distinct chemotactic responses based on the ratio of l-Ser to indole.(A–D) Representative max projections of responses to treatments of l-Ser and indole at 295–300 s, as indicated. (E) Relative bacterial distribution in response to treatments of 500 µM l-Ser and varying amounts of indole, from panels A–D, with the mean value normalized to 100%. Data were collected at 30°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5). (F) Diffusion modeling of local effector concentrations based on sources of 5 mM indole (dark brown), 500 µM l-Ser (blue), 500 µM indole (light brown), and 50 µM indole (yellow) are shown as dashed lines. The approximate local concentration of indole that elicits a transition in chemotactic behavior is highlighted in light blue. (G, H) Bacterial growth as a function of l-Ser or indole, at the time point where the untreated culture reaches A600 of 0.5. (I, J) Bacterial growth ± pretreatment with 500 µM indole or l-Ser, and increasing concentrations of indole or l-Ser, as indicated at the time point where the untreated culture reaches A600 of 0.5. Data are means and error bars are standard error of the mean (SEM, n = 8–24). See also Video 11.
+**Figure 7.:** (A–D) Representative max projections of responses to treatments of l-Ser and indole at 295–300 s, as indicated. (E) Relative bacterial distribution in response to treatments of 500 µM l-Ser and varying amounts of indole, from panels A–D, with the mean value normalized to 100%. Data were collected at 30°C. Data are means and error bars are standard error of the mean (SEM, n = 3–5). (F) Diffusion modeling of local effector concentrations based on sources of 5 mM indole (dark brown), 500 µM l-Ser (blue), 500 µM indole (light brown), and 50 µM indole (yellow) are shown as dashed lines. The approximate local concentration of indole that elicits a transition in chemotactic behavior is highlighted in light blue. (G, H) Bacterial growth as a function of l-Ser or indole, at the time point where the untreated culture reaches A600 of 0.5. (I, J) Bacterial growth ± pretreatment with 500 µM indole or l-Ser, and increasing concentrations of indole or l-Ser, as indicated at the time point where the untreated culture reaches A600 of 0.5. Data are means and error bars are standard error of the mean (SEM, n = 8–24). See also Video 11.
 
 With only the chemoattractant present, the bacterial population organizes tightly around the effector source (Figure 7A, Video 11). When indole is introduced at a concentration 10-fold lower than l-Ser, the bacterial distribution still exhibits chemoattraction but becomes more diffuse (Figure 7B, Video 11). At a 1:1 ratio of chemoattractant and chemorepellent, a different population structure emerges, in which the swimming bacteria are attracted toward the source but form a halo around the treatment with an interior region of avoidance (Figure 7C, E, Video 11). When the concentration of indole is 10-fold higher than l-Ser, the bacteria exhibit a wider zone of avoidance (Figure 7D, E, Video 11). Interestingly, whereas 5 mM indole on its own induces strong chemorepulsion (Figure 2—figure supplement 1I, Video 11), the addition of 10-fold lower l-Ser effectively converts the behavior to a null response (Figure 7D, E, Video 11). This demonstrates that even at the highest concentrations of indole, S. Typhimurium might encounter in the gut, the presence of chemoattractant can override indole chemorepulsion.
 
 The intermediate responses to opposing effector mixtures bear similarities to CIRA experiments with fecal material, some of which also exhibited a halo-like structure around the treatment source (Figure 3, Videos 2 and 3). Previous studies have also observed responses that are an intermediate behavior between chemattraction and chemorepulsion and have been referred to by a variety of names (Livne and Vaknin, 2022; Englert et al., 2009; Huang et al., 2017). There exists no consensus descriptor for taxis of this nature, and so we suggest expanding the lexicon with the term ‘chemohalation’, in reference to the halo formed by the cell population, and which is congruent with the commonly used terms chemoattraction and chemorepulsion. We expect chemohalation is a compromise between the chemoattraction driven by l-Ser and the chemorepulsion driven by indole. Across these experiments, the interior zone of avoidance roughly corresponds to where the local concentration of indole is calculated to exceed 10 nM (Figure 4E, F).
 
-## l-Ser enables resilience to indole-mediated growth inhibition
+### l-Ser enables resilience to indole-mediated growth inhibition
 
 We questioned why non-typhoidal Salmonella are attracted to a biological solution with high amounts of indole, a chemical reported to inhibit bacterial growth (Lee and Lee, 2010; Chimerel et al., 2012; Melander et al., 2014). We examined how growth is affected by 0–25 mM indole or l-Ser in a background of minimal media (MM, Materials and methods). As expected, increasing amounts of the nutrient l-Ser provide a growth advantage for all Salmonella strains analyzed, with maximal benefit achieved by approximately 500 µM (Figure 7G). Equivalent treatments with indole show tolerance up to approximately 1 mM, with growth inhibition occurring in the 1–5 mM range and lethality occurring at indole concentrations greater than 5 mM (Figure 7H). However, adding l-Ser in a background of 500 µM indole provides only a small growth enhancement (Figure 7I), and addition of 500 µM l-Ser increases tolerance for indole up to about 1 mM, above which indole toxicity is unavoidable (Figure 7J). It appears that the relative attraction to combinations of these effectors relates to their propensity to enhance or inhibit growth, with more permissive conditions eliciting a greater degree of chemoattraction. Overall, the bacteria still obtain growth benefits from l-Ser so long as the concentration of indole is under 1 mM.
 
@@ -113,7 +185,7 @@ Bacteria in the human gastrointestinal tract encounter complex chemical landscap
 
 In this study, we show that despite the microbial metabolite indole being a strong chemorepellent in isolation (Figure 6), fecal indole is insufficient to elicit pathogen chemorepulsion, meaning that is pathogens do not swim away from fecal material, nor protect against cellular invasion in an explant model (Figures 1—4). Instead, it appears pathogens employ indole taxis as a means to regulate the magnitude of their attraction toward sources of intestinal nutrients (Figure 5). In vivo, we expect that the bacteria are attracted to indole-rich fecal material, and it is simply a matter of the degree of attraction and which sites are prioritized among those accessible to the invading pathogen. This finding revises our understanding of indole taxis during enteric infection, suggesting that, rather than impairing pathogen infection as others have proposed (Yang et al., 2020; Kohli et al., 2018), indole chemorepulsion serves a useful function for pathogens and enables them to integrate information about local microbial competitors into their chemotaxis responses. This, in turn, allows pathogens to prioritize niches with abundant nutrients and reduced microbial competition.
 
-## Interpretations of explant infections and the functions of chemotaxis and Tsr
+### Interpretations of explant infections and the functions of chemotaxis and Tsr
 
 Our explant experiments can be thought of as testing whether a layer of effector solution is permissive to pathogen entry to the intestinal mucosa, and whether chemotaxis provides an advantage in transiting this chemical gradient to associate with, and invade, the tissue (Figures 1C and 8). This behavior is probabilistic, and given sufficient time, even chemotactic-deficient cells will contact the tissue. This is reflected in that all treatments showed substantial infection by all strains in terms of absolute colony-forming units (CFUs) isolated from homogenates (Figure 1—figure supplement 1). If we compare the probability of chemotaxis-mediated transit of the effector gradients we tested, the greatest is for fecal treatment, which among all treatments showed the highest degree of intracellular invasion (at 3 hr post-infection, Figure 1). Then, buffer, l-Ser, and l-Ser + indole treatments are similarly permissive, and chemotaxis enhances infection in these backgrounds as well (Figures 1 and 8). That chemotaxis provides an advantage in the buffer-treated background, without any added chemoeffector, is interesting and could simply be from effectors emitted from the host tissue (Figure 8). For instance, there is evidence that intestinal tissue, and host cells more broadly, can release l-Ser and other amino acids, particularly in the context of tissue injury which could be caused by Salmonella epithelial invasion in these experiments (Glenn et al., 2024; Zhou et al., 2023; Kitamoto et al., 2020; Gül et al., 2023). Altogether, chemotaxis enhances the transit of the effector gradients mentioned above to access the host tissue (Figure 8).
 
@@ -123,7 +195,7 @@ Our explant experiments can be thought of as testing whether a layer of effector
 
 The explant system offers new insights into whether indole is protective against pathogen infection. First, indole treatment does negate the infection advantage conferred by chemotaxis, which was a unique effect among the treatments we tested (Figures 1 and 8). This is an interesting result, somewhat mirroring what others have seen in cell culture (Kohli et al., 2018), and indicates that the indole gradient does not increase the likelihood of transit for chemotactic cells. In assessing the total bacteria isolated from homogenates, we see no evidence that indole protects against infection, since the bacteria counts are prevalent and similar to other treatments, though this could be different at lower multiplicities of infection (Figure 1—figure supplement 2). Second, this effect is only observed with indole as the sole effector, but not when the same concentration of indole is present within fecal material, as it exists in the intestinal environment, or co-treatment with the fecal effector l-Ser (Figures 1 and 8). Thus, the loss of the chemotactic advantage observed with indole treatment is reversed in the presence of chemoattractant stimuli, suggesting that this effect is unlikely to occur in vivo. It is also worth noting that the residual effector concentrations experienced by the bacteria in the explant experiments were very low (Figure 1C), and so we do not think the effects we see are due to impacts on bacterial growth. It is unclear whether there would ever be a situation in vivo where indole is the dominant effector, and so the behavior of bacteria swimming away from a source of pure indole may be somewhat artificial (Figure 6). These data, overall, do not support indole chemorepulsion as a mechanism of colonization resistance against pathogens, although indole is known to reduce virulence through other mechanisms (Yang et al., 2020; Kumar and Sperandio, 2019; Kohli et al., 2018; Chimerel et al., 2012).
 
-## New insights into indole taxis from non-E. coli systems
+### New insights into indole taxis from non-E. coli systems
 
 Indole is a key regulator of enteric microbial communities, known to modulate motility and virulence, and is highly abundant in fecal matter due to the metabolic activity of the microbiota (Yang et al., 2020; Li et al., 2021; Lee and Lee, 2010; Gupta et al., 2022; Ye et al., 2022; Kumar and Sperandio, 2019; Kohli et al., 2018; Nikaido et al., 2012). While E. coli has served as an important model system for elucidating the mechanisms of indole chemorepulsion (Supplementary file 1; Yang et al., 2020; Gupta et al., 2022; Kohli et al., 2018; Bansal et al., 2007), no prior work has examined how indole sensing is integrated alongside multiple other intestinal effectors, nor whether these behaviors are conserved across clinical isolates of disease-causing species. Here, we address these gaps by providing confirmatory evidence for some earlier predictions and evidence that challenges others, refining our understanding of how indole influences pathogen behavior through chemotaxis within the intestinal environment.
 
@@ -133,11 +205,11 @@ We used Salmonella Typhimurium as a model to dissect the mechanisms underlying f
 
 Having confirmed the role of Tsr in mediating indole chemorepulsion in S. Typhimurium, and shown it to function similarly as in E. coli (Yang et al., 2020; Livne and Vaknin, 2022; Englert et al., 2009), and having demonstrated that diverse Enterobacteriaceae are attracted to indole-rich fecal material, we expect that the behaviors described here are representative of the many enteric species that possess Tsr orthologs, which we mapped in a previous study (Glenn et al., 2024). As we report here, there does seem to be a large variety in the magnitude of fecal attraction by different ‘wild’ enteric pathogens, which could reflect adaptations to different host intestinal environments and microbiota communities and may influence pathogenesis (Figures 3 and 4). While foundational insights into indole taxis have come from model bacterial systems, continued progress in understanding the role of chemotaxis in human disease will benefit from extending such analyses to a broader range of clinically relevant bacterial species and strains.
 
-## Function of indole taxis in enteric invasion
+### Function of indole taxis in enteric invasion
 
 In the context of non-typhoidal Salmonella infections, it is clear that complex relationships exist between chemotactic sensing of effectors, bacterial growth, and invasion (Figure 8). In addition to the factors we have investigated, it is already well established in the literature that the vast metabolome in the gut contains many chemicals that modulate Salmonella cellular invasion, virulence, growth, and pathogenicity (Antunes et al., 2014; Peixoto et al., 2017; Lamas et al., 2019). As it pertains specifically to sensing the opposing effectors l-Ser and indole, we propose that Tsr directs bacteria toward the highest ratio of attractant to repellent accessible in the local environment, with fine-tuning of navigation occurring through regulation of the magnitude of attraction and chemohalation. In addition to sensing these two effectors, our data indicate that fecal attraction involves other stimuli, including L-Asp sensing through Tar and sugar sensing through Trg (Figure 5). Ultimately, the dual sensing of opposing effectors by Tsr serves to improve pathogen fitness through colonizing niches rich in nutrients, signaled by local l-Ser concentrations, and seeking niches with low microbial competition, indicated by local indole concentrations.
 
-## Navigating contradictory stimuli in nature
+### Navigating contradictory stimuli in nature
 
 The scenario we investigated here of S. Typhimurium encountering high concentrations of opposing chemotactic stimuli in the intestinal environment is just one example of the complex chemical landscapes that bacteria navigate in nature. To better understand the ‘decision-making’ process underlying chemotaxis in the presence of conflicting effectors, we examined physiological mixtures of the fecal metabolites indole and l-Ser and recorded a series of real-time videos capturing behavioral transitions as a function of effector concentration (Figure 7, Video 11). These videos reveal that, upon sensing conflicting stimuli, the bacterial population structure rapidly evolves based on the attractant-to-repellent ratio, displaying a spectrum of behaviors: chemoattraction, diffuse chemoattraction, chemohalation, diffuse chemohalation, and chemorepulsion (Figure 7, Video 11).
 
@@ -145,44 +217,170 @@ These dynamic, micron-scale chemohalation patterns reflect a behavioral compromi
 
 In addition to our work here, there are other examples of chemohalation responses to complex biological stimuli of the gastrointestinal environment. Recently, we reported on Enterobacteriaceae chemotactic sensing of blood serum, which bacteria encounter during intestinal bleeding events, and those responses appear to involve chemohalation (Glenn et al., 2024). Chemohalation is also seen in the case of the gastric pathogen Helicobacter pylori responding to mixtures of urea, a chemoattractant, and acid, a chemorepellent, conflicting effectors it encounters near the stomach mucosa (Huang et al., 2017; Huang et al., 2015). The functional significance of chemohalation remains to be understood, but could be a method of fine-tuning colonization bias such that nutrients can be acquired while not approaching too closely to a deleterious stimulus. Continuing to investigate chemohalation behaviors and understanding how they coordinate bacterial colonization may provide important insights into how chemotaxis confers fitness advantages in natural environments.
 
-## Limitations of this study
+### Limitations of this study
 
 This study provides insights into the roles of chemotaxis in directing the behaviors of Enterobacteriaceae species in response to fecal material and indole; however, several limitations should be considered. First, our analyses of pathogen enteric infection were performed using swine colonic explants, which do not fully recapitulate the complexity of in vivo infection dynamics in the human gut. While explant assays offered insights into the relationship between chemotaxis and tissue colonization, these experiments exhibited variability. To mitigate this, we used multiple tissue sections from a single animal to improve experimental consistency. However, this approach limits our ability to assess how inter-host variability might influence bacterial responses. Future studies using distal ileum tissue, a major site of S. Typhimurium cellular invasion known to contain distinct chemical features, may provide further insight into the functions of indole taxis during infection (Chowdhury et al., 2023). Another experimental limitation is the difference in timescales between our assays. Chemotaxis experiments were conducted over approximately 5 min, whereas tissue explant experiments required several hours for significant differences in colonization and cellular invasion to be observed. Thus, there are effects from chemotactic adaptation and replication that we do not elucidate here. Lastly, while we confirmed that non-typhoidal Salmonella are attracted to human fecal material, we only determined the dependency on Tsr and sensing of l-Ser in our model strain (IR715). Although we predict that other Enterobacteriaceae also use Tsr for fecal attraction, this remains uncertain without targeted genetic analyses in each strain background.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica serovar Typhimurium)</td>
+      <td>Salmonella enterica serovar Typhimurium</td>
+      <td>Rivera-Chávez et al., 2013</td>
+      <td>IR715</td>
+      <td>Nalidixic acid-resistant derivative of ATCC 14028</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium cheY mutant</td>
+      <td>Rivera-Chávez et al., 2013</td>
+      <td>FR13</td>
+      <td>IR715 cheY::Tn10 (TetR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium tsr mutant</td>
+      <td>Rivera-Chávez et al., 2013</td>
+      <td>FR4</td>
+      <td>IR715 tsr::pFR3 (CmR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium invA mutant</td>
+      <td>Thiennimitr et al., 2011</td>
+      <td>SW399</td>
+      <td>IR715 invA::pSW127 (CarbR)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Typhimurium)</td>
+      <td>S. enterica Typhimurium Clinical Isolate</td>
+      <td>Beltran et al., 1991</td>
+      <td>SARA1</td>
+      <td>Isolated from patient in Mexico</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Newport)</td>
+      <td>S. enterica Newport Clinical Isolate</td>
+      <td>Shariat et al., 2013</td>
+      <td>M11018046001A</td>
+      <td>Isolated from patient in PA, USA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. enterica Enteriditis)</td>
+      <td>S. enterica Enteriditis Clinical Isolate</td>
+      <td>Shariat et al., 2013</td>
+      <td>05E01375</td>
+      <td>Isolated from patient in PA, USA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Citrobacter koseri)</td>
+      <td>C. koseri Clinical Isolate</td>
+      <td>ATCC</td>
+      <td>BAA-895</td>
+      <td>Human Clinical Isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Enterobacter cloacae subsp. cloacae)</td>
+      <td>Enterobacter cloacae subsp. Cloacae clinical isolate</td>
+      <td>ATCC</td>
+      <td>13047</td>
+      <td>Human Clinical Isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli Clinical Isolate</td>
+      <td>ATCC</td>
+      <td>11775</td>
+      <td>Human Clinical Isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Millipore Sigma</td>
+      <td>70954–3</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Human feces</td>
+      <td>Lee Biosolutions</td>
+      <td>991–18</td>
+      <td>See method details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XS Plasmid expressing sfGFP</td>
+      <td>Wiles et al., 2018</td>
+      <td>pXS-sfGFP</td>
+      <td>pGEN-mcs with a modular sfGFP expression scaffold (AmpR)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>XS Plasmid expressing mPlum</td>
+      <td>Wiles et al., 2018</td>
+      <td>pXS-mPlum</td>
+      <td>pGEN-mcs with a modular mPlum expression scaffold (AmpR)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SeTsr LBD</td>
+      <td>Glenn et al., 2024</td>
+      <td></td>
+      <td>See ‘Method details’</td>
+    </tr>
+  </tbody>
+</table>
+
 All methods were carried out in accordance with relevant guidelines, regulations, and state and federal law. Experimental protocols were approved by the Institutional Biosafety Committee (IBC) of Washington State University (#1372).
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 Bacterial strains and plasmids used in this study are listed in the Key Resources Table. As previously described (Glenn et al., 2024), bacteria intended for chemotaxis assays were grown overnight in tryptone broth (TB) with antibiotic selection, as appropriate. Motile bacteria were prepared with a 1:1000 back-dilution and grown shaking for approximately 4 hr at 37°C to reach A600 of 0.5. Cells were centrifuged, washed, and resuspended in a chemotaxis buffer (CB) containing 10 mM potassium phosphate (pH 7), 10 mM sodium lactate, and 100 µM EDTA to A600 of 0.2 and rocked gently at the temperatures indicated in figure legends until fully motile, typically 1–2 hr. For in vitro growth analyses, cultures were grown overnight in Lysogeny Broth (LB) at 37°C. Subsequently, 5 µl of A600 2.0 cells were used to inoculate 200 µl of MM, containing 47 mM Na2HPO4, 22 mM KH2PO4, 8 mM NaCl, 2 mM MgSO4, 0.4% glucose (wt/vol) 11.35 mM (NH4)2SO4, 100 μM CaCl2, and l-Ser and/or indole at the described concentrations, and cultured in a 96-well microtiter plate. Cultures were grown at 37°C and monitored by A600 readings at 5-min intervals.
 
-## Chemosensory injection rig assay
+### Chemosensory injection rig assay
 
 CIRA was performed as described previously (Glenn et al., 2024). Briefly, an Eppendorf Femtotip 2 microcapillary containing the treatment of interest was lowered into a pond of 50 µl of motile cells using a Sutter micromanipulator. An injection flow of effector into the pond at approximately 300 fl per minute was achieved using a Femtojet 4i set to Pc 35. Solubilized fecal treatments were prepared by dissolving 1 g of commercially obtained human feces (Lee Biosolutions) in 10 ml of CB. The solution was clarified by centrifugation at 10,000 × g for 20 min, followed by sterile filtration through a 0.2 µm filter. Treatment solutions of indole and l-Ser were also diluted into CB and sterile-filtered before application. Videos were recorded using an inverted Nikon Ti2 microscope with heated sample chamber at 37°C.
 
-## CIRA microgradient modeling
+### CIRA microgradient modeling
 
-Modeling the microgradient generated through CIRA was performed as described earlier (Glenn et al., 2024), based on the continual injection and diffusion of an effector from a fixed-point source. Briefly, diffusion is modeled as a 3D process where the diffusing substance is gradually and continuously introduced at a fixed point within a large surrounding fluid volume. The substance is prepared at a concentration of Ms (typically between 0.5 µM and 5 mM) and injected at a volume rate of Q = 305.5 fl/min. The species then diffuses into the ambient fluid with a diffusion constant D:C(r,t)=q4πDrerfcr2Dt\begin{document}$$\displaystyle C\left (r,t\right)=\, \frac{q}{4\pi Dr}erfc\frac{r}{2\sqrt Dt}$$\end{document}
+Modeling the microgradient generated through CIRA was performed as described earlier (Glenn et al., 2024), based on the continual injection and diffusion of an effector from a fixed-point source. Briefly, diffusion is modeled as a 3D process where the diffusing substance is gradually and continuously introduced at a fixed point within a large surrounding fluid volume. The substance is prepared at a concentration of Ms (typically between 0.5 µM and 5 mM) and injected at a volume rate of Q = 305.5 fl/min. The species then diffuses into the ambient fluid with a diffusion constant D:
+
+$$
+C(r,t)=\frac{q}{4\piDr}erfc\frac{r}{2\sqrt{D}t}
+$$
 
 Here, r is the distance from the point source, t is the time from initial injections, q is the injection rate of the species (equal to MsQ), and C is the species concentration. In earlier work (Glenn et al., 2024), we reported using fluorescent dye that the concentrations predicted by this model appear to be accurate within 5% in the range of 70–270 µm from the source, whereas at distances less than 70 µm the measured concentrations are about 10% lower than predicted. At the point where the effector treatment is injected into the larger volume, the local concentration drops precipitously, hence why the concentration reported at distance 0 is not that of the concentration within the microcapillary.
 
-## ITC ligand-binding studies
+### ITC ligand-binding studies
 
 Purification of S. Typhimurium Tsr LBD was performed as described previously (Glenn et al., 2024). ITC experiments were performed using a Microcal ITC200 instrument (GE Healthcare). Either 500 μM indole or l-Ser was titrated in 2.5 μl injections into a 200-μl sample cell containing 50 μM Tsr LBD. For the indole/l-Ser competition experiment, 500 μM indole was added to both the titrant and sample cell, thus providing a constant excess background concentration of indole. For all experimental conditions, blank titrations were also collected in which indole or l-Ser was titrated into a cell containing buffer alone. All experiments were performed using thoroughly degassed samples at 25°C in 50 mM Tris, 150 mM NaCl, 1 mM EDTA, pH 7.5. The reference power was set to 5 μcal/s. The resulting power curves were integrated using the Origin analysis software included with the instrument. The heat of dilution was subtracted from each point using the blank. A single-site binding model was then fit to the data, floating parameters describing the binding enthalpy (ΔH), equilibrium constant (KD), and apparent binding stoichiometry (n). The instrument software was used for this purpose.
 
-## Quantification of indole and serine in human fecal samples
+### Quantification of indole and serine in human fecal samples
 
 Solubilized human feces was prepared as described above for CIRA and analyzed by mass spectrometry to determine the molar serine content as a service through the University of Washington Mass Spectrometry Center. This measurement reflects total serine, of which close to 100% is expected to be l-Ser (Glenn et al., 2024). As described in earlier work, the indole content of solubilized human fecal samples was determined using a hydroxylamine-based calorimetric assay with purified indole as a reference and standard (Sugihara et al., 2022).
 
-## Explant infection assays
+### Explant infection assays
 
 Swine intestinal tissue was acquired from the descending colon of an 8-week-old animal, pursuant to animal protocol ASAF #7128, approved through the Washington State University IACUC. Before infection, an approximately 20 by 20 mm piece of swine intestinal explant tissue was gently washed with PBS to remove fecal matter. Next, the tissue section was bathed in chemoeffector solution (solubilized human fecal matter (Lee Biosolutions)), a mixture of 338 µM l-Ser and 862 µM indole, 338 µM l-Ser alone, 862 µM indole alone, or CB in a 6-well tissue culture plate (Celltreat) and incubated at 4°C for 1 hr. Then, tissue was transferred to a 35-mm Mattek dish where the luminal side of the tissue was exposed to a bacterial solution containing a 1:1 mixture (∼109 CFU each) of WT S. Typhimurium IR715 and either the isogenic tsr or cheY mutant, suspended in CB at a volume of 300 µl. The tissue was then incubated in the dish with the competing bacteria at 37°C and 5% CO2 for 1, 3, or 6 hr. After, half of the tissue was transferred into screw cap tubes containing 500 µl LB media and 5–10 2.3 mm zirconia beads (BioSpec Products) on ice and homogenized using a Bead Mill 24 (Fisher Scientific) at 6.5 m/s for 60 s, repeated four times. To enumerate the ‘invaded’ bacteria, the other half of the tissue was washed in PBS and incubated in PBS containing 100 µg/ml gentamicin for 1 hr at 37°C and 5% CO2, then washed twice in PBS, as done previously (Sharma and Puhar, 2019; Chandra, 2022; Rivera Calo et al., 2024). The homogenization process was then repeated for the gentamicin-treated tissue. CFUs were enumerated by plating 10-fold dilutions on LB agar plates containing the appropriate antibiotic (Sharma and Puhar, 2019; Ben-David and Davidson, 2014). Competitive index (CI) values were calculated by dividing the number of mutant CFUs by the number of WT CFUs for each treatment and time point (Macho et al., 2007; Auerbuch et al., 2001).
 
-## Quantification of CIRA data
+### Quantification of CIRA data
 
 Videos of chemotactic responses were quantified as described previously (Glenn et al., 2024). The number of cells in each frame was calculated by determining a fluorescence intensity ratio per cell for frames pretreatment and extrapolated using the ‘plot profile’ function of ImageJ. The distribution of the bacteria was calculated using the Radial Profile ImageJ plugin. Local background subtraction was performed based on experiments with the non-chemotactic cheY strain to control for autofluorescence in solubilized fecal samples.
 
-## Statistical analyses
+### Statistical analyses
 
 CIs for explant experiments were calculated for each treatment group at each time point. Log-transformed CI values were obtained by taking the logarithm (log10) of the original CI measurements. These log-transformed values were then subjected to statistical analysis. First, a one-sample t-test was performed to determine whether the mean of the log-transformed CIs significantly differed from zero. In cases where the assumption of normality was violated, the non-parametric Wilcoxon rank sum test was applied as an alternative. Effect size was assessed using Cohen’s d and calculated using the same log-transformed CIs. To determine p-values between total and invaded populations at 3 and 6 hr and for comparing relative bacteria % within 500 µm of the treatment source in Figures 5 and 6, unpaired t-tests were employed.

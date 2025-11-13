@@ -39,9 +39,49 @@ Here, we present a workflow that combines air-liquid interface cerebral organoid
 
 We first examined in detail axon growth behaviors of ALI-COs. Thick tracts that exited the ALI-COs stained positive for the pan-axonal marker SMI312 and negative for the dendritic marker MAP2 (Figure 1A and Figure 1—figure supplement 1). This, together with their length and physical distance from neuronal cell bodies within the organoid, consolidated that these tracts comprise almost exclusively axons (Figure 1A and Figure 1—figure supplement 1). To monitor growth, we next expressed a farnesylated membrane-targeted GFP (fGFP) (Lancaster et al., 2017; Giandomenico et al., 2019; Figure 1—figure supplement 2) in a subset of cells within the organoid slices. As a result, tracts contained a mixture of unlabeled and fluorescently labeled axons, which extended rapidly within the tracts (Figure 1B and Figure 1—video 1). We measured the extension speed for individual fluorescently labeled axons over several hours to be an average of 691 nm/min, with a peak pace of nearly 3000 nm/min (Figure 1C). The average speed we observed is comparable to previous reports of chicken dorsal-root ganglia (Ketschek et al., 2007). Intrigued by the dynamicity of axon pathfinding, we sought to establish an approach that would allow us to examine the subcellular organization that underlies this cellular behavior.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-v1.jpg)
+
+**Figure 1.:** (A) Immunofluorescence of an air-liquid interface cerebral organoid (ALI-CO) stained for the pan-neuronal marker TUBB3 and the pan-axonal marker SMI312. The box highlights a magnified view of escaping axon tracts. White arrows point to bundles of varying thickness. (B) Representative fluorescence microscopy (FM) images of extending fGFP+ expressing axons. The top panel is the first frame and the bottom panel is the last frame of the 13 hr-long live FM Figure 1—video 1. The images were used to track the axon labeled as number four in C., and the blue line marks the trajectory of its growth throughout the movie. (C) Box and whisker plot of axon extension speed measurements reporting the median, first and third quartiles, minimum and maximum. The individual data points represent the extension speed calculated between two consecutive frames. The measurements were done on 7 axons from three different ALI-COs. The red dashed line indicates the average speed of 691 nm/min, calculated from the shown 7 axons. (D) Schematic preparation of ALI-COs for cryo-CLEM including electron cryo-tomography (cryo-ET). (E) Overlay of fluorescence (GFP) and transmitted light overview images of grids placed around an ALI-CO. Lower magnification image shows day 1. Inset shows axons labeled with fGFP and additional tracts stained with SiR-tubulin immediately prior to cryo-fixation after 11 days of growth on the grid to the left of the ALI-CO, indicated by the orange square. (F) Cryo-FM (top) and cryo-EM (bottom) overview of the blue area indicated on the grid shown in the inset in E. Yellow and red boxes indicate the areas shown in G. and H., respectively. (G and H) Correlated cryo-FM and cryo-ET on two different grid squares. Subpanels I and II: Overlays of cryo-FM and cryo-EM at different zoom levels to identify individual fluorescent axons. Areas in subpanels II correspond to white squares in subpanels I. Subpanels III: Virtual slices through cryo-tomograms acquired at the positions of white squares indicated in subpanels II. Scale bars: 1 mm and 500 µm (inset) in A., 50 µm in B., 1 mm and 200 µm (inset) in E., 100 µm in F., 5 µm (I), 2 µm (II) and 100 nm (III) in G. and H. GFP is shown in green, SIRtubulin in magenta in E – H.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the distribution of SMI312 and MAP2 immunofluorescence signal across a neuron and expected staining pattern in the case where dendrites are absent from exiting bundles (bottom). Representative images of four bundles from three different ALI-COs stained for the panaxonal marker SMI312 and the dendritic marker MAP2, single channel heatmaps are reported in the top two rows and the bottom row reports the composite image. The outline of the SMI312 signal is reported on the MAP2 channel marking the surface area of the bundle. The yellow arrows in the left MAP2 panel point to a single spurious neuronal cell body within the axon bundle. The asterisks in the MAP2 panel second from the right mark autofluorescent background speckles. The heatmap reports gray value signal intensity ranging between 0–65280. (B) Schematic representation of the distribution of fFusionRed and MAP2 IF signal across a neuron and expected staining pattern in the case where dendrites are absent from exiting bundles (right). Representative image of an escaping bundle from one ALI-CO stained for the plasma membrane marker fFusionRed and the dendritic marker MAP2. The outline of the fFusionRed signal is reported on the MAP2 channel marking the surface area of the tract. The heatmap reports the gray value signal intensity ranging between 0-255. In both A. and B., white dashed lines indicate the outlines of the bundles. Scale bars: 100 µm in A. and B.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Linear schematics of the plasmid maps of the constructs employed in the study. The SleepingBeauty system was used for transgene expression of the following open reading frames (ORFs) driven by CAG: farnesyl-GFP (fGFP), farnesyl-FusionRed (fFusionRed), N-terminally GFP-tagged ESYT1 (GFP-ESYT1) and C-terminally GFP-tagged human L1 cell adhesion molecule (L1CAM-GFP). The plasmid map for the construct encoding the SB100X transposase under the control of the CAG promoter is shown as well. (B) Electroporation schematic depicting injection of the plasmid solution into ventricles of organoids and electroporation into the progenitor cells in the ventricular zone. After approximately 4–5 days organoids were prepared for ALI culture and following an additional 4–7 day period at the ALI, EM grids were placed in close proximity to the organoid slices. (C) Representative brightfield image of a cerebral organoid after injection of the Fast Green-containing plasmid solution into the ventricles. (D) GFP signal after micro-injection and electroporation of the membrane-targeted farnesylated GFP (fGFP) construct prior to sectioning. Scale bars: 1 mm C. and 0.5 mm D.
+
 For this, we developed a procedure to prepare axon tracts for cryo-EM (Figure 1D). We placed coated EM support grids in close proximity to ALI-COs on organotypic cell culture inserts (Figure 1E). The signal of fGFP+ axons was used to track the behavior of axons over time by live fluorescence microscopy (live-FM). We monitored their growth over the course of 11 days (Figure 1E and Figure 1—video 2). Prior to cryo-fixation, in a subset of experiments we applied SiR-tubulin to visualize all tracts on the grid (Figure 1E inset). Grids on which axon tracts approached the center were detached from the organoid slice using a biopsy punch and immediately cryo-fixed by plunge-freezing (Figure 1D). Detachment and plunge-freezing were coordinated between two experimenters who sequentially handled the grids, to keep the time from detachment until completed cryo-fixation as short as possible and within less than 20 s (see Materials and methods). To specifically target fGFP+ axons within tracts by cryo-ET we used cryo-CLEM, imaging each grid both by cryo-fluorescence microscopy (cryo-FM) and cryo-EM (Figure 1F). Fluorescent signals of individual tracts could be correlated to cryo-EM overviews by using landmark features on the grid (Figure 1G,H,I). This allowed us to distinguish fGFP+ axons within the tracts from axons that were positive only for SiR-tubulin (Figure 1G, H,II). We then imaged fGFP+ axons by cryo-ET, targeting specific segments of individual axons within axon tracts (Figure 1G, H,III). This approach allowed us to establish a direct link between cellular behavior observed live and cellular ultrastructure (Figure 2—video 1).
 
 In our cryo-ET data, cellular structures such as protein assemblies and membranes were preserved to a high level of detail (Figure 2A). We observed unbranched, longitudinally aligned actin filaments, recognizable by their characteristic thickness of 7–9 nm and an apparent pitch of 5–6 nm (Egelman et al., 1982; Figure 2A, orange arrows). Microtubules revealed their individual protofilaments (Figure 2A, magenta arrows), as well as numerous intraluminal protein densities (Garvalov et al., 2006; Foster et al., 2021a). Microtubule bundles were often so dense as to seemingly pose constraints on microtubule-based transport. We observed mitochondria within these bundles (Figure 2A, green arrows), suggesting that dynamic rearrangements are required to allow sufficient space for vesicles and organelles to pass. We also found filaments of about 10 nm in diameter (Figure 2A, brown arrows). These dimensions match those of neurofilaments (NFs) such as NF-L, NF-M, and NF-H (Malka-Gibor et al., 2017), which serve as signature markers for axons. Our tomograms also revealed coated and uncoated vesicles (Figure 2A, yellow arrows, and Figure 2—figure supplement 1A). Furthermore, we frequently observed large expanses of endoplasmic reticulum (ER) cisternae, which extended into thin membrane tubules tightly associated with microtubules (Figure 2A, cyan arrows). We also observed membrane contact sites between ER-mitochondria and ER-plasma membrane (Figure 2B, white arrows).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-v1.jpg)
+
+**Figure 2.:** (A) Cryo-tomograms reveal bundles of unbranched, longitudinally aligned actin filaments, recognizable by actin subunit arrangement (orange arrows), microtubules filled with lumenal densities, microtubule protofilaments (purple arrows), mitochondria (green arrows) embedded in microtubule bundles, potential neurofilaments (brown arrows), vesicles carrying protein cargo (yellow arrow), endoplasmic reticulum (cyan arrows) closely associated with microtubules. Insets show magnified views of the boxed areas. (B) fGFP+ and untransfected axons are found within the same axon tract, allowing direct phenotype comparison. Left panel: Overlay of cryo-FM and cryo-EM overview images. Two right panels: Virtual slices through cryo-tomograms of fGFP+ and control axon. White arrows indicate contacts between ER and mitochondria as well as between ER and plasma membrane, blue arrows indicate cell-cell contacts between different axons. (C) Segmentation model of the fGFP+ axon shown in B., illustrating the complexity of the cellular ultrastructure. Microtubules are shown in magenta, actin filaments in orange, endoplasmic reticulum in cyan, vesicles and other membrane compartments in yellow, mitochondrial membranes in green and the plasma membranes of the fGFP+ axon and neighboring axons in blue and dark blue, respectively. Scale bars: 50 nm (20 nm for insets) in A., 2 µm in B. left panel and 100 nm in B. right two panels.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gallery of representative vesicles found in cryo-tomograms of axon shafts. (B) Quantification of the association of vesicles with cytoskeletal elements. (C) Analysis of vesicle diameters, measured along their longest axis (free vesicles: mean = 52.00 nm, SD = 19.42 nm, N = 200; microtubule associated vesicles: mean = 50.92 nm, SD = 16.70 nm, N = 49, and actin associated vesicles: mean = 52.18 nm, SD = 17.84 nm, N = 41). One-way ANOVA was used for statistical analysis: p = 0.9292. Scale bars: 50 nm in A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Dataset of 22 axon cryo-tomograms from fGFP expressing organoids from three different grid preparations (EMD-13195 and EMPIAR-10806). Overlays between cryo-FM and cryo-EM overviews show all positions of tilt series acquisition within the axon tracts. For all positions, a corresponding virtual slice through the cryo-tomogram is shown. Scale bars: 2 µm in overviews, 100 nm in virtual tomographic slices.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Dataset of 8 axon cryo-tomograms from L1CAM-GFP expressing organoids from two different grid preparations (EMD-13196 and EMPIAR-10805). Overlays between cryo-FM and cryo-EM and corresponding virtual slices through cryo-tomograms are shown. Scale bars: 2 µm in overviews, 100 nm in virtual tomographic slices.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Dataset of 10 cryo-tomograms from GFP-ESYT1 expressing organoids from two different grid preparations (EMD-13197 and EMPIAR-10804). Overlays between cryo-FM and cryo-EM and corresponding virtual slices through cryo-tomograms are shown. The cryo-tomograms GFP-ESYT1 TS 7–10 contained ribosome-like particles. These areas were positioned at the outer edge of the grid, in closer proximity to cell bodies but also close to a growing end, and corresponded to individual processes rather than tracts (lower left overview). Therefore, these tomograms likely do not represent axon shafts, and were counted as a separate class of other cellular processes, likely dendrites or axon initial segments. Scale bars: 2 µm in overviews, 100 nm in virtual tomographic slices.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Representative tomographic slices of cell-cell contacts within axonal tracts from fGFP and L1CAM-GFP overexpressing ALI-CO slices. (B) Analysis of the contact site intermembrane distance, measured between the extracellular leaflets of the plasma membranes (fGFP: mean = 5.63 nm, SD = 0.65 nm, N = 25 and L1CAM-GFP: mean = 5.29 nm, SD = 0.58 nm, N = 9). Unpaired t test was used for statistical analysis: p = 0.1718. Scale bars: 100 nm in A.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** Tomographic slices of representative ER-plasma membrane contacts observed in axons from fGFP and GFP-ESYT1 expressing ALI-CO slices. ER-plasma membrane contact sites are indicated by yellow arrowheads. Scale bars: 50 nm.
 
 Finally, as each tract contained several axons, our tomograms frequently visualized axon-axon contacts, a unique physiological feature of axons in their normal tissue context (Figure 2B, blue arrows). Because only a subset of cells expressed fGFP, most tracts contained a large proportion of unlabeled, GFP negative axons (Figure 2B, left panel). By this approach, GFP-negative axons could be imaged on the same EM grid (Figure 2B, right panels), simplifying the acquisition of control data as well as making comparison more reliable by removing grid-to-grid variability as a source of unspecific differences. We did not observe any obvious ultrastructural differences between fGFP+ and GFP negative axons (Figure 2—figure supplement 2). To highlight the ultrastructural complexity, we segmented key cellular elements of a fGFP+ axon volume (Figure 2C, bottom panel and Figure 2—video 2).
 
@@ -51,11 +91,31 @@ We next set out to analyze the observed cellular structures in more detail. For 
 
 A defining feature of axon identity is the parallel arrangement of bundled microtubules (Burton, 1988; Heidemann et al., 1981). Therefore, we sought to determine the polarity of individual microtubules in tomograms using subtomogram averaging (Figure 3A). We used axial views of each microtubule average to determine the handedness and thus polarity of the microtubule based on the tilt of its protofilaments (Sosa and Chrétien, 1998; Figure 3A and B). This analysis showed that the majority of bundles had a uniform, parallel microtubule arrangement, further confirming axon identity (Figure 3C). Because it is difficult to trace the complete length of individual axons on the EM grid and growth was not necessarily uni-directional, we could not unambiguously determine the microtubule orientation relative to the axon leading edge. In total, we analyzed between three and nine microtubules in nine tomograms by subtomogram averaging. While the protofilament tilts could be determined unambiguously in a subset of five axon tomograms (Figure 3C), the number of protofilaments could be determined for 28 individual microtubules. In some cases, the close proximity to other microtubules in larger bundles and the anisotropic resolution of the tomographic data prevented analysis of the protofilament number. We found that the majority of microtubules consisted of 13 protofilaments, while 2 microtubules had 12 protofilaments (N = 28) (Figure 3D and E). Although we cannot exclude that the microtubule organization we observed was influenced or stabilized by labeling with SiR-tubulin in the subset of experiments where this labeling was performed, 13 protofilaments have been suggested before to be the predominant molecular architecture of microtubules in human cells (Watanabe et al., 2020; Chaaban and Brouhard, 2017). We calculated a 3D subtomogram average from 16 of the 13-protofilament microtubules, which revealed the typical 4 nm repeat of individual tubulin subunits along the protofilaments (Figure 3—figure supplement 1; Amos and Klug, 1974; Nogales et al., 1999).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig3-v1.jpg)
+
+**Figure 3.:** (A) Axial views of subtomogram averages reveal the polarity of each microtubule (MT) shown in B. The directionality of the microtubule was determined from the radial tilt of the protofilaments seen in axial views (Sosa and Chrétien, 1998). (B) Tomographic slice with six microtubules depicted as differently colored tubes (MT1-MT6) (same tomogram as shown in Figure 2B, ‘no GFP’ panel). Arrows indicate the viewing direction of the axial views of subtomogram averages shown in A. The -end of each microtubule is indicated, determined by the analysis shown in A. (C) Ratio of parallel microtubules determined by subtomogram averaging in five different axons (6–9 individual microtubules per axon). Axon one is depicted in A. and B. (D) Axial view on subtomogram average examples of individual microtubules with 13 protofilaments (left) and with 12 protofilaments (right). (E) Occurrence of microtubules with 12 and 13 protofilaments, determined by individual subtomogram averaging of 28 microtubules as shown in D. (F) Virtual tomographic slice and the corresponding segmentation model of the plasma membrane of two individual axon shafts. Blue and magenta arrows indicate plasma membrane segments visible in the virtual tomographic slice. (G) Plasma membrane (PM) surface area measurements in nm2 normalized to the length in µm of 14 axon shafts captured in 12 tomograms. (H) The curvature of ER tubules is higher in axon shafts than in HeLa cells. Arrows indicate the shortest distance between the membrane bilayer cross sections. (I) Diameters of the thinnest ER tubules measured in axon shafts and in HeLa cells (82 and 24 measurements, respectively). Welch’s t test was employed for statistical analysis: p < 0.0001. Scale bars: 10 nm in A. and D., 100 nm in B. and F., 50 nm in H.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Three slices through the volume and a surface representation of the 13 protofilament microtubule average, calculated from 5,229 subtomograms from 16 microtubules found in human axon tracts. The orientation of the three shown slices is indicated by the planes in the diagram with corresponding colors. (B) Line profile along a single protofilament of the subtomogram average in A, showing the average pixel grey value over a line width of six pixels, in arbitrary units. The pattern reveals the 4 nm repeat along the protofilament. (C) Fourier Shell Correlation (FSC) curve for the microtubule average. The resolution cutoff at 0.5 is 2.5 nm. Scale bars: 10 nm in A.
+
 The rapid growth of developing axon tracts must be supported by synthesis of new biomolecules. At average growth rates of 691 nm/min (Figure 1C), the demand of membrane and lipid molecules must be high. Using the plasma membrane as a proxy to estimate the amount of newly synthesized membrane, we segmented the plasma membrane in tomograms and estimated the surface area of individual axon shafts (Figure 3F, see also Materials and methods). Each micrometer of length on average corresponded to approximately 1.24 × 106 nm2 of plasma membrane area (SD = 7.3 x 105 nm2, N = 14) (Figure 3G). The broad distribution reflects the variability between the thinnest parts of axon shafts and axonal varicosities. Because each µm2 of membrane contains approximately 5 × 106 lipids (Alberts et al., 2002), corresponding to five lipid molecules/nm2, we estimated the lipid supply to the plasma membrane required to sustain the average growth rate of an axon as approximately 4.3 × 106 lipid molecules/min. This massive influx of new phospholipids into the plasma membrane points to a unique requirement for lipid biosynthesis and transfer.
 
 The ER is the major organelle for lipid biosynthesis. We therefore examined ER ultrastructure to assess whether it may help explain how the unique lipid requirements of the growing axon are supported. Large flattened cisternae (Figure 2B and C) were reminiscent of the ER observed in cultured neurons (Schrod et al., 2018). We further found tubular segments of axonal ER that were remarkably narrow (Figure 3H). At their thinnest outer diameter, the ER tubules in axon shafts measured on average 10.8 nm (SD 2.0 nm, 82 measurements), which is narrower than previously observed in mouse axons (Terasaki, 2018). For comparison we measured the thinnest ER tubules in HeLa cells and found them to be about twice the diameter (20.4 nm, SD 3.2 nm, 24 measurements) (Figure 3H,I). Some of the axonal ER tubules had a local outer diameter of less than 10 nm. Considering that this measurement includes the bilayer thickness, this implies that these ER tubules of human axons contain hardly any lumenal space, likely posing constraints on diffusion of ER proteins. The observation that the ER is depleted of lumen whilst adopting highly curved tubular shapes indicates high local membrane surface-to-ER volume ratios, and suggests that the axonal ER structure may be a consequence of maximized synthesis of lipids, produced to sustain high growth rates during axon lengthening.
 
 We anticipated the extending axon to require not only lipids but also proteins for maintaining functionality during elongation. We thus examined the presence of protein synthesis machinery in the elongating axon shafts. While it is known that mature axons do not display extensive Nissl bodies, indicating low ribosomal RNA content (Angevine, 2002), we reasoned that developing axons, due to their growth state, could have different protein biosynthesis requirements and hence composition. Furthermore, cellular cryo-ET provides the resolution to detect ribosomes, and to even distinguish between monosomes and polysomes (Brandt et al., 2010), making it a powerful method for direct detection of the protein synthesis machinery. It was therefore noteworthy that we observed a scarcity of potential ribosomes within our tomograms of growing axon shafts. In contrast, we readily identified a large number of ribosomes based on their size, shape and high contrast in tomograms of HeLa cells (Ader et al., 2019) and of other neuronal processes (Figure 4A). In order to assess the occurrence of ribosomes quantitatively, we counted ribosome-like particles, both cytosolic and membrane-bound, and found on average two particles per µm3 in axon shafts (SD = 3 particles, n = 31 tomograms), 589 particles per µm3 in other neuronal processes (SD = 344 particles, n = 4 tomograms), and 2314 particles per µm3 in HeLa cells (SD = 977 particles, n = 5 tomograms) (Figure 4B and Figure 4—figure supplement 1A). The local ribosome concentration in axon shafts is thus less than 3.5 nM, about 1000-fold lower than in HeLa cells. The ribosome-like particles found in tomograms of axon shafts had an average diameter of 26.8 nm (SD = 3.7, N = 27), in agreement with the dimensions of human ribosomes (Figure 4—figure supplement 1B; Anger et al., 2013). 11 of them were in close proximity to ER membrane (Figure 4—figure supplement 1C). Thus, the large amounts of axonal ER had a minute number of ribosomes attached, supporting the idea that the ER has a primary function in lipid metabolism rather than protein synthesis. To validate these findings by an approach that would allow analysis of axons as well as dendrites within the same preparation, we tested for the presence of five distinct ribosomal proteins in neurons from dissociated organoids by immunofluorescence (Figure 4C and Figure 4—figure supplement 2). In agreement with the cryo-ET data, axon shafts identified as SMI312+/MAP2- showed significantly lower ribosomal signal than dendrites (SMI312-/MAP2+) (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-v1.jpg)
+
+**Figure 4.:** (A) Examples of ribosomes observed in cryo-tomograms of axon shafts from ALI-COs, of other cellular processes from ALI-COs, and of HeLa cells. The bottom panel shows 0.05 µm3 cryo-ET volumes, corresponding to the area shown in the upper panel. Positions of all ribosome-like particles observed in that volume are shown as orange spheres. (B) Comparison of the numbers of ribosome-like particles, normalized to the tomographic volume, observed in axon shafts, other processes and HeLa cells. Individual data points represent individual cryo-tomograms (30, 4, and 5 tomograms, respectively). Mann-Whitney tests were employed for statistical analysis: p < 0.0001 (****); p < 0.05(*). (C) Immunofluorescence images of dissociated neurons from organoids reveal low signal for the ribosomal 60 S component RPL8 in axon processes (identified by SMI312+/MAP2- labeling) in comparison to dendrites (identified by SMI312-/MAP2+ labeling). The yellow box outlines the area magnified in the right panel. The top image of the right panel shows the immunofluorescence signal for the ribosomal subunit RPL8. The bottom image shows the SMI312/MAP2/RPL8 composite. The white dashed line depicts the outline of axons and dendrites and was traced based on the MAP2 and SMI312 signal. The image shown is representative of the data used for quantifications shown in D. (D) Quantification of immunofluorescence images of ALI-CO derived dissociated neurons labeled for five distinct ribosomal proteins. The bars report the mean pixel grey value along axons and dendrites (mean ± SD). Each data point represents a different axon or dendrite. With the exception of quantifications done on the ribosomal protein S6, axons were identified as SMI312+/MAP2- neuronal processes, while dendrites were identified as SMI312-/MAP2+ neuronal processes. Due to antibody incompatibility, in the case of S6, dendrites were identified as MAP2+ processes while axons were identified as GFP+/MAP2- processes. The data pertains to one biological replicate. Mann-Whitney tests were employed for statistical analysis: RPL8, N = 10, p < 0.0001 (****); RPS10, N = 12, p < 0.0001 (****); RPS16, N = 12, p < 0.0001 (****); RPS26, N = 12, p < 0.0001 (****); S6, N = 12, p = 0.0001 (***). Scale bars: 50 nm in A., 20 µm and 2 µm in C.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gallery of ribosome-like particles seen in tomogram slices of developing human axons. Yellow arrows highlight ribosome-like densities. (B) Diameter of ribosome-like particles measured from tomographic slices seen in A. (mean = 26.8 nm, SD = 3.7, N = 27). (C) Quantification of the association of ribosome-like particles with the ER. Scale bars: 25 nm in A.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70269/elife-70269-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative immunofluorescence images of dissociated organoid-derived neurons stained for the dendritic marker MAP2, the pan-axonal marker SMI312 and the ribosomal components RPS10, RPS16, and RPS26 used for the quantifications reported in Figure 4D. Boxed in yellow is the region shown at higher magnification in the right panel as the individual ribosomal stain and the composite image. Dashed yellow is the outline of the processes reported on the single channel image of the ribosomal stain. The data highlights how dendrites (MAP2+/SMI312-) are enriched in ribosomal components compared to axons (MAP2-/SMI312+) of comparable thickness. (B) Representative immunofluorescence images of dissociated organoid-derived neurons transduced with Sendai EmGFP and stained for the dendritic marker MAP2 and for the ribosomal components S6. Due to antibody incompatibility, in this case dendrites were identified as MAP2+ processes while axons were identified as GFP+/MAP2- processes. These images were used for the quantifications reported in Figure 4D. Boxed in yellow is the region shown at higher magnification in the bottom panel as the S6 stain (right) and the MAP2-GFP composite stain (left). Dashed in yellow is the outline of the processes reported on the single channel image of the S6 stain. The data highlights how dendrites (MAP2+) are enriched in ribosomal components compared to axons (GFP+/MAP2-) of similar thickness. The data shown in A and B pertains to one biological replicate. Scale bars: 20 µm in the overview images in A. and B., 2 µm in the high-magnification inserts.
 
 ## Discussion
 
@@ -73,55 +133,345 @@ In conclusion, the combination of cerebral organoid technology and cryo-ET provi
 
 ## Materials and methods
 
-## Cell and cerebral organoid culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>H9 hESC</td>
+      <td>DOI:10.1126/science.282.5391.1145</td>
+      <td>hPSCReg ID: WAe009-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa control</td>
+      <td>other</td>
+      <td></td>
+      <td>Cell line stably expressing Fsp27-GFP from tet-inducible promoter. Obtained from Koini Lim (lab of David Savage).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGEN-SB100X</td>
+      <td>DOI:10.1038/nbt.3906</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT2-CAG-fGFP</td>
+      <td>DOI:10.1038/nbt.3906</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT2-CAG-fFusionRed</td>
+      <td>DOI: 10.1038/s41593-019-0350-2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-E-Syt1</td>
+      <td>Addgene</td>
+      <td>66830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-hL1</td>
+      <td>Addgene</td>
+      <td>89411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT2-CAG-GFP-E-Syt1</td>
+      <td>Generated for this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT2-CAG-hL1CAM-GFP</td>
+      <td>Generated for this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gemini X2 HT</td>
+      <td>BTX Harvard Apparatus</td>
+      <td>45–2041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Petri Dish Platinum Electrode for Tissue Chamber Kit 5 mm</td>
+      <td>BTX Harvard Apparatus</td>
+      <td>45–0505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica VT1000 S</td>
+      <td>Leica Biosystems</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>STEMdiff Cerebral Organoid Kit</td>
+      <td>STEMCELL Technologies</td>
+      <td>08570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Millicell Cell Culture Insert</td>
+      <td>Sigma Aldrich</td>
+      <td>32011202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ACCUMAX cell dissociation reagent</td>
+      <td>Sigma Aldrich</td>
+      <td>A7089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPL8 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab169538</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPS10 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab151550</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPS16 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab26159</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RPS26 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-65975</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-S6 ribosomal protein (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>5548</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMI312 (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>837904</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP2 (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab5392</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CytoTune EmGFP Sendai Virus Fluorescence Reporter</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A16519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SiR-tubulin</td>
+      <td>Spirochrome</td>
+      <td>SC002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Millicell Cell Culture Insert, 30 mm diameter, hydrophilic PTFE, 0.4 µm</td>
+      <td>Merck Millipore</td>
+      <td>PICM0RG50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Disposable biopsy punch, 3.5 mm</td>
+      <td>Integra</td>
+      <td>33–33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Aspirator tube assemblies for calibrated microcapillary pipettes</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5177-5EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Capillary Tubes Glass, 50 µl volume, 100 mm length</td>
+      <td>Drummond Scientific</td>
+      <td>1-000-0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>P-2000 micropipette puller</td>
+      <td>Sutter Instrument</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EM grids, gold, 200 mesh, R 2/2 holey carbon</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EM grids, gold, 200 mesh, R 3.5/1 holey carbon</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEET</td>
+      <td>PMID:16917055</td>
+      <td></td>
+      <td>https://bio3d.colorado.edu/PEET/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>PMID:8742726</td>
+      <td></td>
+      <td>http://bio3d.colorado.edu/imod/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID:16182563</td>
+      <td></td>
+      <td>http://bio3d.colorado.edu/SerialEM/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ec-CLEM plugin for Icy</td>
+      <td>PMID:28139674</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID:22930834</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>poly-L-ornithine</td>
+      <td>Sigma Aldrich</td>
+      <td>P4957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin</td>
+      <td>Sigma Aldrich</td>
+      <td>L2020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fibronectin</td>
+      <td>Sigma Aldrich</td>
+      <td>F0895</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell and cerebral organoid culture
 
 The study employed H9 human embryonic stem cells (Wisconsin International Stem Cell Bank, Wicell Research Institute, WA09 cells), authenticated and confirmed to be mycoplasma-free by the provider, and approved for use in this project by the U.K. Stem Cell Bank Steering Committee. The H9 cells were cultured under feeder free conditions in StemFlex (Thermo Fisher Scientific, A3349401) on Matrigel (Corning, 356230) coated plates and passaged twice a week using 0.7 mM EDTA in sterile D-PBS without Ca2+ and Mg2+. Cerebral organoids were generated and grown using the STEMdiff Cerebral Organoid Kit (Stem Cell Technologies, 08570) according to manufacturer’s guidelines. The HeLa cell line used carried a stably integrated doxycycline-inducible Fsp27-EGFP construct and was authenticated by PCR-single-locus-technology (Eurofins). HeLa cells were grown as an adherent culture in a high-glucose DMEM media containing GlutaMAX (Thermo Fisher Scientific, 31996). The media was further supplemented with 10 % Tet-approved heat-inactivated FBS (Pan Biotech p30-3602), 10 mM HEPES pH 7.2, 0.2 mg/ml Hygromycin B (Invitrogen, 10687010) and 1 x non-essential amino acids solution (Thermo Fisher Scientific, 11140050). Cell lines were routinely tested for mycoplasma infection using the MycoAlert mycoplasma detection kit (Lonza).
 
-## Plasmid construct generation
+### Plasmid construct generation
 
 The study made use of the Sleeping Beauty transposon system. The constructs pCAGEN-SB100X, pT2-CAG-fGFP plasmid (Addgene #108714) and pT2-CAG-fFusionRed were previously used and described in other studies (Lancaster et al., 2017; Giandomenico et al., 2019). EGFP-E-Syt1 was a gift from Pietro De Camilli (Addgene plasmid # 66830) (Giordano et al., 2013). The construct pT2-CAG-GFP-E-Syt1 was generated by restriction digestion of the EGFP-E-Syt1 (Addgene #66830) and the pT2-CAG-fGFP plasmids with AgeI and MluI. The fragment encoding GFP-E-Syt1-SV40 PolyA was then ligated into the pT2-CAG backbone using T4 ligase. pcDNA3-hL1 was a gift from Fritz Rathjen (Addgene plasmid # 89411). The construct pT2-CAG-hL1CAM-GFP was generated by Gibson assembly on the fragments here described; the pT2-CAG-fGFP vector was linearised by restriction digestion with EcoRI and MluI, the fragment encoding the hL1CAM ORF was PCR amplified from the pcDNA3-hL1 plasmid (Addgene #89411) with primers Fwd: 5’-AACGTGCTGGTTATTGTGCTGTCTCATCATTTTGGCAAAGAAAGATGGTCGTGGCGCT-3’ and Rev: 5’-TACAAGAAAGCTGGGTACCGTTCTAGGGCCACGGCAGGG-3’, the fragment encoding EGFP-SV40 PolyA was PCR amplified from the pcDNA3-hL1 plasmid (Addgene #89411) with primers Fwd: 5’- ACCCTGCCGTGGCCCTAGAACGGTACCCAGCTTTCTTGTACA-3’ and Rev: 5’- CAGCCGGGGCCACTCTCATCAGGAGGGTTCAGCTTACTCAAGAGGCTCGAGTGCAACTATG-3’. The Q5 High-Fidelity 2 x Master Mix (New England Biolabs, M0492S) was used for PCR. The ligation and Gibson assembly products were transformed in TOP10 chemically competent E. coli. Plasmids recovered from bacterial colonies were screened by restriction digestion and the correct products were verified by sequencing.
 
-## Construct expression in organoids
+### Construct expression in organoids
 
 Organoids were electroporated with expression constructs as previously described (Lancaster et al., 2013; Lancaster et al., 2017; Giandomenico et al., 2019). Briefly, a total of 5 µl of a 1 µg/µl plasmid solution (750 ng/µl transposon donor plasmid and 250 ng/µl pCAGEN-SB100X) was injected into the ventricles of 45–55 day-old organoids and electroporated using the BTX Gemini X2 HT Electroporation System (BTX, 452008) and 5 mm gap petri dish platinum electrode kit to deliver five square-wave 1 ms pulses of 80 V amplitude with 1 s inter-pulse intervals. Approximately one week after electroporation the organoids were prepared for ALI culture.
 
-## ALI-CO preparation
+### ALI-CO preparation
 
 Cerebral organoids aged 45–60 days were prepared for ALI culture as previously described (Giandomenico et al., 2019). In brief, organoids were embedded in 3 % low-gelling temperature agarose (Sigma-Aldrich, A9414) in HBSS without Ca2+ and Mg2+ (Thermo Fisher Scientific, 14175095) and sectioned into 300 µm-thick slices on a Leica VT1000 S Vibrating blade microtome. All surrounding agarose was removed from the tissue and 2–3 tissue slices were positioned on each Millicell Cell Culture Insert (Merck Millipore, PICM0RG50) using No.22 scalpels (Swann-Morton, 0508). The slices were incubated for 1–2 hr in SSSC medium (0.5 % glucose, 10 % FBS and 1 x Anti-Anti in high glucose DMEM supplemented with Glutamax) and cultured long-term in SFSC medium (1 x B27, 0.5 % glucose, 1 x Glutamax and 1 x Anti-Anti in Neurobasal medium) with daily half-media changes.
 
-## Organoid dissociation and neuronal culture
+### Organoid dissociation and neuronal culture
 
 Mature organoids aged between 50 and 80 days were dissociated using ACCUMAX cell dissociation reagent (Sigma Aldrich, A7089) supplemented with 400 µg/ml DNAse I. For each organoid dissociated, 0.5 ml of dissociation solution were used. Organoids were resuspended in dissociation solution and subject to 4 × 5 min incubation steps in an incubator at 37 ° C; after the first 5 min the organoids were resuspended by flicking the tube, after 10 min the organoids displayed a fluffy appearance and were pipetted up and down once, then broken into cell clumps. After 15 min the cell clumps were resuspended by pipetting up and down 3–5 times, and then 10 more times after an additional 5 min incubation. Dissociation was stopped by addition of an equal volume of maturation medium (Stem Cell Technologies, 08570). The cell suspension was passed through a 70 µm nylon cell strainer (Corning, 352350). A small aliquot was taken for a live cell count and the remaining cell suspension was spun down at 300 x g for 5 min. The cell pellet was resuspended in SFSC medium and 50,000 cells were seeded into each well of 8 well Lab-Tek II glass chamber slides (Nunc, 154534) for immunofluorescence preparation. Prior to cell seeding the imaging slide was coated with poly-L-ornithine, Laminin and Fibronectin – for details on the coating protocol refer to the section ‘Electron cryo-microscopy (cryo-EM) sample preparation’ of the Materials and Methods.
 
-## Immunofluorescence sample preparation
+### Immunofluorescence sample preparation
 
 Dissociated neurons were fixed in 4 % PFA for 10 min at room temperature and incubated in permeabilization buffer (4 % donkey serum and 0.25 % Triton-X in PBS without Ca2+ and Mg2+) for one hour at room temperature prior to overnight staining with primary antibodies in blocking buffer (4 % donkey serum and 0.1 % Triton-X in PBS without Ca2+ and Mg2+) at room temperature. Antibodies used in this study with the corresponding dilution factor were: rabbit anti-RPL8 (Abcam, ab169538, 1:200), rabbit anti-RPS10 (Abcam, ab151550, 1:200), rabbit anti-RPS16 (Abcam, ab26159, 1:200), rabbit anti-RPS26 (Thermo Fisher Scientific, PA5-65975, 1:200), Alexa Fluor 647 conjugate mouse anti-S6 ribosomal protein (Cell Signaling Technology, 5548, 1:100), mouse anti-SMI312 (BioLegend, 837904, 1:500), chicken anti-MAP2 (Abcam, ab5392, 1:500). The next day, the slides were washed three times in PBS, followed by a 1 hr incubation at room temperature with 405, 568, and 647 Alexa Fluor conjugate secondary antibodies diluted 1:500 in blocking buffer. After secondary antibody staining, the slides were washed three times in PBS and the coverslips were mounted using ProLong Diamond antifade mountant (Thermo Fisher Scientific, P36961).
 
-## EmGFP Sendai virus transduction and SiR-tubulin labeling
+### EmGFP Sendai virus transduction and SiR-tubulin labeling
 
 Dissociated neuronal cultures used for immunofluorescence staining of ribosomal subunits were fed with 200 µl of SFSC medium supplemented with CytoTune EmGFP Sendai Fluorescence Reporter (Thermo Fisher Scientific, A16519, 8.1 × 107 CIU/ml) diluted 1:200. After 3–4 days, the cells started displaying EmGFP signal. Approximately 2 weeks after dissociation, cultures produced thin EmGFP+ axons and the cultures were fixed for analysis. SiR-tubulin (Lukinavičius et al., 2014) was reconstituted in sterile DMSO to a concentration of 1 mM. For staining of ALI-COs SiR-tubulin was diluted to a final concentration of 1 µM in SFSC medium and applied dropwise to the top of the slice using a controlled oral-suction pipetting apparatus and care was taken not to disturb the grids. After approximately 1 hr at 37 °C and 5 % CO2 samples were ready for imaging.
 
-## Fluorescence image acquisition and analysis
+### Fluorescence image acquisition and analysis
 
 Widefield fluorescence images were acquired on a Nikon ECLIPSE Ti2 system at 10 x (0.3 NA) and 20 x (0.75 NA) magnification and on an EVOS FL inverted microscope (Thermo Fisher Scientific). Confocal images of SiR-tubulin stained organoids were acquired on a Zeiss LSM 710 upright system at 10 x (0.3 NA) magnification. The time course of fGFP+ axon growth on grids was acquired on a Zeiss LSM 780 confocal microscope using a 10 x (0.3 NA) objective and a pixel size of 830 nm. Samples were incubated at 37 °C and 5 % CO2 in 35 mm Easy-Grip tissue culture dishes (Corning, 353001). The microscope objective was aligned to the center of the grid and 4 × 4 tiled-images were acquired approximately every 12 hr. For measurement of axon growth rates, live FM movies of ALI-COs were acquired on a Zeiss LSM 710 and Zeiss LSM 780 inverted microscope using a 10 x (0.3 NA) objective and a pixel size of 1.384 µm. Samples were incubated at 37 °C and 5 % CO2 in 35 mm Easy-Grip tissue culture dishes (Corning, 353001) and images were acquired every 12 min. The manual tracking plugin in ImageJ was used to track the position of individual growth cones throughout the movie frames (Fabrice Cordelires, https://imagej.nih.gov/ij/plugins/track/track.html). The time interval was set to 12 min and the x/y calibration to 1.3837 µm. For immunofluorescence analysis of ribosomal subunit distribution in axons and dendrites, dissociated human neurons were imaged on a Zeiss LSM 780 confocal microscope at 60 x (1.4 NA oil) magnification. The main criterion for fluorescence image acquisition was the presence of both MAP2+/SMI312- dendrites and MAP2-/SMI312+ axons within the field of view. ImageJ was used for analysis and the mean gray value of the ribosomal protein of interest along the length of two axons and two dendrites per image were measured. Axons were identified as SMI312+/MAP2- or, due to antibody incompatibility, in the case of S6 as GFP+/MAP2- processes. Dendrites were identified as MAP2+ processes. The ribosomal proteins imaged include: RPL8, RPS10, RPS16, RPS26, and S6. For each of these targets, the average mean gray value was calculated across axonal and dendritic segments and a Mann-Whitney unpaired two-tailed test was used for statistical comparison between the two groups.
 
-## Electron cryo-microscopy (Cryo-EM) sample preparation
+### Electron cryo-microscopy (Cryo-EM) sample preparation
 
 After 4–7 days, the ALI-COs started to display escaping processes and were thus considered ready for grid placement. Quantifoil R2/2 or R3.5/1 200 mesh Au grids with carbon film (Quantifoil) were coated with 0.01 % poly-L-ornithine solution (Sigma Aldrich, P4957) overnight at 4 °C. The next day, the grids were further coated with a solution of 10–20 µg/ml Laminin (Sigma Aldrich, L2020) and 0.001 % Fibronectin (Sigma Aldrich, F0895) in ultrapure water at room temperature for 4 hr. Organoid sections were inspected on an EVOS FL inverted microscope (Thermo Fisher Scientific) by brightfield or GFP fluorescence. The grids were placed at sites where single escaping processes could be seen by brightfield or near the fluorescent foci. Cryo-EM grids were blotted with Whatman filter paper grade 1 (GE Healthcare) and placed in direct contact with the edge of the organoid section. Importantly, the edge of the grid was juxtaposed to that of the organoid section, but not covered by it. Growth of the processes could be monitored daily based on GFP fluorescence. In some experiments, after approximately 2 weeks, SiR-tubulin (Spirochrome, CY-SC002) was applied dropwise on top of the grids to visualize all axon tracts. The grids were deemed ready for freezing earliest after 10–14 days, or once the axons reached an area within approximately five grid squares distance from the grid center. Immediately prior to plunge-freezing, the grids were hydrated by applying media dropwise using a controlled oral-suction pipetting apparatus and glass capillaries. This step was crucial to reduce desiccation of neuronal processes during blotting of the EM grids. Tracts on EM grids were detached from their cell bodies using a 3.5 mm disposable biopsy punch (Integra, 33–33) and immediately collected with an L5 clamp style thin-tip tweezer (Dumont, 72882-D), then backside blotted for 5–10 s with Whatman filter paper grade 1 (GE Healthcare) and vitrified in liquid ethane using an in-house built manual plunger. To minimize the time between detachment and cryo-fixation to less than 20 s, the procedure was carried out sequentially by two experimenters that worked next to one another; the first experimenter detached the grids from the organoid slice and handed the grids directly to the second experimenter who performed the blotting and plunge freezing.
 
-## Cryo-fluorescence microscopy (Cryo-FM)
+### Cryo-fluorescence microscopy (Cryo-FM)
 
 The grids were screened for ice thickness and fluorescent signals within axon tracts by cryo-FM with the Leica EM cryo-CLEM system. The system was equipped with a HCX PL APO 50 x (0.9 NA) cryo-objective (Leica Microsystems), an Orca Flash 4.0 V2 SCMOS camera (Hamamatsu Photonics), a Sola Light Engine (Lumencor), a L5 filter (Leica) for detection of GFP and a Y5 filter (Leica) for the detection of the SiR-tubulin stain. The microscope stage was cooled to –195 °C and the room was humidity controlled (below 25 %). A 2.0 × 2.0 mm montage of each grid was taken of the green (1 s, 30 % intensity), brightfield channel (30 ms, 70), and optionally of the far-red channel (1 s, 30 % intensity). Individual z-stacks of grid squares of interest were acquired in 1 µm steps to cover the full range of fluorescent signals. Correlation of fluorescent axon tracts on cryo-EM grid square maps was done in Icy using the ec-CLEM plugin (Paul-Gilloteaux et al., 2017) using landmark features and carbon film holes in cryo-FM and cryo-EM images.
 
-## Preparation and focused ion beam (FIB) milling of control HeLa cells
+### Preparation and focused ion beam (FIB) milling of control HeLa cells
 
 Control HeLa cell samples were prepared as described in Ader et al., 2019. In short, HeLa cells were grown for 24 hr on holey carbon film Au grids (200 mesh, R2/2, Quantifoil), fed with oleic acid and induced with doxycycline for Fsp27-EGFP expression for an unrelated project. Sixteen hr post-induction, HeLa cells were stained for 1 hr with LipidTOX Deep Red dye (Thermo Fisher Scientific, H34477). Subsequently, grids were manually backside blotted with Whatman filter paper grade 1 and immediately vitrified in liquid ethane using an in-house built manual plunger. Thin lamellae were generated by cryo-FIB milling performed with a Scios DualBeam FIB/SEM (FEI) equipped with a Quorum stage (Quorum, PP3010T) in a procedure similar to the one described in Schaffer et al., 2015. Prior to milling, grids were coated with organometallic platinum using a gas injection system for 30 s at 13 mm working distance and 25° stage tilt. The electron beam was used for locating the cells of interest at 5 kV and 13 pA beam current and for imaging to check progression of milling at 2 kV and 13 pA beam current. Milling was performed with stepwise reduction of the ion beam current (from 30 kV, 1 nA to 16 kV, 23 pA) while changing the stage tilt as described (Hoffmann et al., 2019). The lamellae with a 10° pre-tilt were milled to a final thickness below 300 nm.
 
-## Electron cryo-microscopy (Cryo-EM)
+### Electron cryo-microscopy (Cryo-EM)
 
 Cryo-EM grids were screened on a Tecnai T12 (FEI) with an Orius camera or a Tecnai F20 (FEI) with a Falcon2 detector (FEI) by mapping the central parts of the grids using SerialEM (Mastronarde, 2005) at pixel sizes of 132 nm or 87 nm, respectively. The preservation of axon tracts on individual grids squares was examined on images acquired at pixel sizes of 6.3 nm or 6.0 nm, respectively. Cryo-ET data acquisition was done using SerialEM on a Titan Krios microscope (Thermo Fisher) equipped with a Quantum energy filter and a K2 direct electron detector (Gatan) operated in counting mode. Montaged images of the central part of the grid were acquired in linear mode with 171 nm pixel size. Montages of individual grid squares with axon tracts or lamellae of HeLa cells were taken with 5.1 nm pixel size. These montages were used for correlation to fluorescent axon tracts, based on landmark features using the ec-CLEM plugin (Paul-Gilloteaux et al., 2017) within the Icy software. Tilt series were acquired at areas of interest in low-dose mode from 0° to ±60° using a grouped dose-symmetric tilt scheme with 1° increment, a group size of 4 (Hagen et al., 2017), and a pixel size of 3.5 Å or 3.7 Å; both for the axon tracts and the control HeLa cells. The target dose rate was kept around 4 e-/px/s on the detector. The energy filter slit width was set to 20 eV. Tilt images were acquired as three or four frames with approximately 1 e-/A2 dose per tilt image. The nominal defocus for all tilt series was set to –5 µm. The frames of tilt series images were aligned with IMOD alignframes. The tilt series were aligned in IMOD using patch tracking and then reconstructed at a pixel size of 7.1 Å or 7.4 Å as backprojection tomograms with SIRT-like filter corresponding to 10 iterations (Kremer et al., 1996; Mastronarde, 1997). To improve visibility for representation in figures, gaussian filtering was applied to the shown tomographic slices. For analyzing the microtubule polarity by subtomogram averaging, the contrast transfer function was estimated and corrected for by phase flipping in IMOD, and the tomograms were reconstructed by unfiltered backprojection at 7.1 Å or 7.4 Å pixel size. Four of the 9 HeLa tomograms used here have been analyzed and published before (Ader et al., 2019 and EMD-4491).
 
-## Image processing and analysis
+### Image processing and analysis
 
 The segmentation model shown in Figure 2C and in Figure 2—video 2 was generated using Amira (Thermo Fisher Scientific) and IMOD (Kremer et al., 1996). Membrane surfaces were segmented manually, followed by extensive smoothening and simplification. Microtubules and actin filaments were first modeled as tubes in IMOD and then imported as tubular volumes into Amira. Within the segmented volumes of individual membrane objects and cytoskeleton objects, grey value-thresholding was used for a second segmentation step to eventually depict only high-density voxels within the objects of interest. Note that the segmentation model is inverted along the z-axis relative to the original tomogram. Figure 2—video 1 was generated by first selecting a region of interest in a cryo-ET slice, which is presented in the final movie frame, followed by identifying and aligning images obtained from the previous successive imaging steps of fluorescent live imaging, cryo-FM, and electron tomography. Each acquired image was then used to generate a stack of progressive magnification into the region of interest using an ImageJ macro (zoom_movie_ImageJ_v2) written by Eugene Katrukha and provided through GitHub Gist (Katrukha, 2021). All stacks were then converted and concatenated into a single movie.
 

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.40226.001 Cancer evolves through a multistep process that occurs by the temporal accumulation of genetic mutations. Tumor-derived exosomes are emerging contributors to tumorigenesis. To understand how exosomes might contribute to cell transformation, we utilized the classic two-step NIH/3T3 cell transformation assay and observed that exosomes isolated from pancreatic cancer cells, but not normal human cells, can initiate malignant cell transformation and these transformed cells formed tumors in vivo. However, cancer cell exosomes are unable to transform cells alone or to act as a promoter of cell transformation. Utilizing proteomics and exome sequencing, we discovered cancer cell exosomes act as an initiator by inducing random mutations in recipient cells. Cells from the pool of randomly mutated cells are driven to transformation by a classic promoter resulting in foci, each of which encode a unique genetic profile. Our studies describe a novel molecular understanding of how cancer cell exosomes contribute to cell transformation. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that major issues remain unresolved ( see decision letter ).
+Cancer evolves through a multistep process that occurs by the temporal accumulation of genetic mutations. Tumor-derived exosomes are emerging contributors to tumorigenesis. To understand how exosomes might contribute to cell transformation, we utilized the classic two-step NIH/3T3 cell transformation assay and observed that exosomes isolated from pancreatic cancer cells, but not normal human cells, can initiate malignant cell transformation and these transformed cells formed tumors in vivo. However, cancer cell exosomes are unable to transform cells alone or to act as a promoter of cell transformation. Utilizing proteomics and exome sequencing, we discovered cancer cell exosomes act as an initiator by inducing random mutations in recipient cells. Cells from the pool of randomly mutated cells are driven to transformation by a classic promoter resulting in foci, each of which encode a unique genetic profile. Our studies describe a novel molecular understanding of how cancer cell exosomes contribute to cell transformation.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that major issues remain unresolved (see decision letter).
 
 ## Introduction
 
@@ -40,45 +40,99 @@ The results presented herein provide a detailed analysis of a previously unident
 
 ## Results
 
-## Exosome isolation, validation, and characterization
+### Exosome isolation, validation, and characterization
 
 Exosomes were isolated using a combined ultrafiltration-ultracentrifugation protocol (described in detail in Materials and methods) from four pancreatic cancer cell lines, Capan-2, MIA PaCa-2, Panc-1, and BxPC-3, and two human normal cell lines, human pancreatic ductal epithelial cells (HPDE) and human primary dermal fibroblasts (Adamczyk et al., 2011). Of note, three of the cancer cell lines, Capan-2, MIA PaCa-2, and Panc-1, have oncogenic mutations in the KRAS gene, whereas BxPC-3 has wild-type KRAS (Deer et al., 2010). To confirm rigor and reproducibility, isolated exosomes from each cell type were characterized for the presence of common exosome-associated proteins using mass spectrometry and immunoblot analysis (Figure 1, Figure 1—figure supplement 1, Figure 1—figure supplement 2). Additionally, electron microscopy (TEM) and nanoparticle tracking analysis (NTA) were employed to analyze the morphology and size range of isolated exosomes (Figure 1, Figure 1—figure supplement 1) (Willms et al., 2016; Kowal et al., 2016; Lötvall et al., 2014; Witwer et al., 2017; Théry et al., 2018). An example of this characterization of exosomes is shown for Capan-2 exosomes in Figure 1. Immunoblot analysis was used to confirm the presence of expected exosomal marker proteins (CD63, Alix, and TSG101) as well as the absence of proteins not commonly found in exosomes (Calnexin, α-actinin, and HSP90) (Figure 1A,B). In addition to western blot analysis, mass spectrometry analysis of isolated exosomes confirms the presence of the top twenty most commonly found proteins in exosomes according to the ExoCarta database (Figure 1—figure supplement 2) (Keerthikumar et al., 2016). TEM images of exosomes isolated from Capan-2 cells show the expected round or cup-shaped morphology (Willms et al., 2016) and NTA shows the size distribution of exosomes centered on 91 nm with a mean size of 250.3 nm (Figure 1C,D).
 
-## Pancreatic cancer cell exosomes function as an initiator in malignant cell transformation
+![Figure 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig1-v1.jpg)
+
+**Figure 1.:** (A) Western blot analysis of common exosomal marker proteins CD63, Alix, and TSG10 found in exosomes isolated from Capan-2 cells. (B) Western blot analysis of proteins HSP90, Calnexin, and α-actinin, expected to be underrepresented in exosomes. Equivalent amounts of proteins from P2 (ER and mitochondria), S2 (cytoplasm), M (media), and Ex (exosome) fractions derived from the Capan-2 exosome isolation process were loaded into gel for the analysis. (C) Nanoparticle Tracking Analysis of ‘crude’ Capan-2 cell exosomes. Data represent average size per concentration (black line) ± standard error of the mean (red bars) of three measurements from one exosome preparation. Exosome size is centered on 91 nm with a mean size of 250.3 nm. Finite Track Length Analysis (FTLA) was used for size determination. (D) Representative TEM images of exosomes isolated from Capan-2 cells shown at three different scales confirm expected cup-shaped morphology of vesicles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot analysis of common exosomal marker proteins CD63 and Alix found in exosomes isolated from Capan-2 cells. Crude exosomes were isolated from the ultrafiltration-ultracentrifugation method. Crude exosomes were further purified using a sucrose density gradient to produce the six fractions (Fr1 to Fr6). Exosome marker proteins were identified primarily in fractions 3 and 4 in addition to the Crude exosome fraction. Fr3 was collected and used in the cell transformation assay as ‘pure’ exosome sample. (B) Nanoparticle Tracking Analysis of ‘Fr3’ Capan-2 cell exosomes. Data represent average size per concentration (black line) ± standard error of the mean (red bars) of three measurements from one exosome preparation. Exosome size is centered on 67 nm with a mean size of 83.5 nm. Finite Track Length Analysis (FTLA) was used for size determination. (C) TEM images of exosomes isolated from MIA PaCa-2, Panc-1, BxPC-3, and HPDE cells, scale bar is 50 nm in size. Images confirm expected cup-shaped morphology of exosomes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig1-figsupp2-v1.jpg)
+
+### Pancreatic cancer cell exosomes function as an initiator in malignant cell transformation
 
 To analyze if exosomes contribute to malignant cell transformation, we utilized the two-stage CTA as a model system for transformation. The CTA was performed with NIH/3T3 cells using an established chemical initiator and promoter, MCA and TPA, respectively (Sakai and Sato, 1989; Alvarez et al., 2014). As shown in Figure 2A, the complete assay is 42 days long and involves the treatment of NIH/3T3 cells with an initiator (3 days) followed by a promoter (2 weeks) before recovery (3 weeks). Successful cell transformation results in the formation of foci that are identified by defined criteria described in Materials and methods (Figure 2B). Cells that are untreated, treated with only an initiator (MCA), or only a promoter (TPA) show the formation of low levels of background foci (one foci/well on average) (Figure 2C, Figure 2—source data 1) (Sasaki et al., 2012). By contrast, cells treated with both MCA as the initiator and TPA as the promoter resulted in formation of 3–4 foci/well on average (Figure 2C, Figure 2—source data 1). Consistent with previous findings, treatment with both an initiator and promoter was required to observe increased cell transformation as evidenced by formation of an increased number of foci above background levels (Sakai and Sato, 1989).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig2-v1.jpg)
+
+**Figure 2.:** (A) Two-stage cell transformation assay shown. NIH/3T3 cells were treated with a tumor initiator for 3 days (Days 3–6) and the tumor promoter for 2 weeks (Days 8–21). After 42 days, cells are fixed with methanol and stained with Crystal Violet for malignant foci counting. (B) Representative images of stained cells showing foci formation (arrows) from untreated cells and cells treated with MCA/DMSO, DMSO/TPA, MCA/TPA, or Capan-2 exosomes (ExC)/TPA (initiator/promoter). (C) Quantification of foci formed at the end of cell transformation assays. The average foci/well were determined via double-blind counting as described in Materials and methods. The red dashed line represents the established level of background foci present in untreated cells. Initiator/promoter treatments resulting in increased foci formation above background include MCA/TPA (p=0.008) and all cancer cell-derived exosomes: ExC/TPA (p=0.0002), ExM/TPA (p<0.0001), ExP/TPA (p=0.007), and ExBx/TPA (p=0.0003). Bars shown in gray represent controls that did not result in foci formation above background. Bar shown in pink shows results from normal cell (HPDE) exosome/TPA treatment (p=0.0004). (D) Quantification of foci formed after use of a different promoter, CdCl2. CdCl2 acts as a promoter leading to increased foci formation above background when used with the initiators MCA (p<0.0001) or Capan-2 exosomes (ExC) (p<0.0001). Asterisks indicate significant differences from either control treatment or MCA/TPA treatment as determined by unpaired, two-tailed t-test with Welch’s correction (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Red (+)=initiator used; purple (+)=promoter used.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of foci formed at the end of cell transformation assays, foci were counted as described in Materials and methods. The red dashed line represents the established level of background foci present in untreated cells. Initiator/promoter treatments resulting in increased foci formation above background include MCA/TPA (p=0.008) and ExC/TPA (p=0.0002), as previously shown. Treatment of cells with primary fibroblasts exosomes (ExFB) (initiator)/TPA (promoter) did not result in increased cell transformation (pink bar, p=0.0007). Treatment of cells with ExC heated exosomes (initiator)/TPA (promoter) did not result in increased cell transformation (dashed blue bar, p=0.0024). (B) Treatment of cells with ‘pure’ ExC exosomes (fraction three from density sucrose gradient fractionation) as an initiator and TPA as a promoter did result in increased cell transformation above background (dotted blue bar, p<0.0001). (C) Dose-response studies. ExC exosomes were tested in the assay at a measured protein concentration ranging from 0.08 ng/mL to 2400 ng/mL (concentrations in ng/mL are shown in red). Asterisks indicate significant differences from either control treatment or MCA/TPA treatment as determined by unpaired, two-tailed t-test with Welch’s correction (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). Red (+)=initiator used; purple (+)=promoter used.
 
 To establish what role, if any, cancer-cell exosomes have on cell transformation, we assessed whether exosomes isolated from three pancreatic cancer cell lines, Capan-2, MIA PaCa-2, and Panc-1, which are known to carry oncogenic mutations in the KRAS gene, could act as an initiator and/or promoter in the CTA. NIH/3T3 cells were first treated with isolated exosomes from each of the three pancreatic cancer cell lines for the duration of the initiation and promotion steps (3-week treatment). This resulted in the formation of only background transformation activity, similar to what is observed with the untreated control (Figure 2C, Figure 2—source data 1). Next, NIH/3T3 cells were first treated with the initiator MCA and then subsequently treated with isolated cancer cell exosomes for the 2-week promotion period. For each of these three cancer cell exosome assays, again only background levels of foci were observed (Figure 2C, Figure 2—source data 1). However, when the cancer cell exosomes were tested as an initiator in combination with the promoter TPA, cell transformation was observed at similar levels as the chemical MCA/TPA treatment (3–4 foci/well) (Figure 2C, Figure 2—source data 1). Therefore, exosomes derived from three different pancreatic cancer cell lines (Capan-2, MIA PaCa-2 or Panc-1) can each function as an initiator in the CTA resulting in transformation of NIH/3T3 cells.
 
 To assess whether this initiator activity is a general characteristic of exosomes from all cell types or a trait unique to exosomes derived from KRAS mutated pancreatic cancer cell lines, we repeated experiments with exosomes from three additional cell types: BxPC-3 cells, a pancreatic cancer cell line with WT KRAS, HPDE cells, a normal human cell line, and primary dermal fibroblasts. We observed that cancer cell exosomes isolated from WT KRAS BxPC-3 cells can act as an initiator of cell transformation, resulting in foci formation similar to the numbers observed with MCA/TPA treatment (Figure 2C, Figure 2—source data 1). However, normal cell exosomes isolated from HPDE cells or exosomes from primary fibroblasts were unable to induce cell transformation when used as an initiator in the CTA (Figure 2C, Figure 2—source data 1, Figure 2—figure supplement 1A, Figure 2—figure supplement 1—source data 1). Collectively, the results show that pancreatic cancer cell exosomes can act as an initiator in malignant cell transformation of NIH/3T3 cells, while exosomes isolated from normal pancreatic cells or primary fibroblasts cannot.
 
-## Gradient purified exosomes contain initiator activity
+### Gradient purified exosomes contain initiator activity
 
 Exosomes were isolated using an ultrafiltration-ultracentrifugation method and validated using a number of criteria (Figure 1). Our results demonstrate a specific function for cancer cell exosomes, but we used a protocol that is known to result in a preparation containing both exosomes and aggregated protein/nucleic acid contaminants. For this reason, we performed an additional purification step by floating exosomes onto a sucrose density gradient to obtain cleaner exosome preparation separated from contaminants (Chiou and Ansel, 2016). Characterization of these purified exosomes (Fraction 3) by NTA showed a size range centered on 67 nm with a mean size of 83.5 nm. Immunoblot analysis confirmed the presence of expected exosomal marker proteins CD63 and Alix. In addition, mass spectrometry analysis confirmed the presence of the top twenty most commonly found proteins in exosomes according to the ExoCarta database (Figure 1—figure supplement 1, Figure 1—figure supplement 2). The purified exosomes were then tested as an initiator with the promoter TPA in the transformation assay and results show that the population of ‘pure’ exosomes retain the ability to act as an initiator of cell transformation (Figure 2—figure supplement 1B, Figure 2—figure supplement 1—source data 2).
 
-## Cancer cell exosome initiator activity is detected at low concentrations, requiring intact exosomes
+### Cancer cell exosome initiator activity is detected at low concentrations, requiring intact exosomes
 
 Dose-response studies were performed using protein concentration as a normalization strategy to evaluate the amount of cancer cell exosomes needed to initiate cell transformation. As a standard concentration in each transformation assay, we used 80 ng/mL of proteins, corresponding to 7.0 × 107 particles/mL. Exosome protein concentrations ranging from 0.08 ng/mL to 2400 ng/mL were tested and we observed equal cell transformation for all concentrations with the exception of the two lowest, 0.08 ng/mL and 0.8 ng/mL. This indicates that initiator activity of cancer cell exosomes requires one dose of exosomes over a 3-day period with a protein concentration of at least 8 ng/mL (Figure 2—figure supplement 1C, Figure 2—figure supplement 1—source data 3). Furthermore, when cancer cell exosomes are boiled for 10 min at 100°C just prior to use as an initiator, the level of transformed foci decreases to background levels (Figure 2—figure supplement 1A, Figure 2—figure supplement 1—source data 1).
 
-## Cancer-cell-derived exosomes function as a classic initiator
+### Cancer-cell-derived exosomes function as a classic initiator
 
 One common characteristic of initiators in the CTA is the capability of working with multiple promoters to induce cell transformation (Fang et al., 2001; Sakai, 2007). To test for this with the pancreatic cancer cell exosomes, we replaced TPA with another common promoter, cadmium chloride (CdCl2) (Fang et al., 2001; Keshava et al., 2000; Umeda et al., 1989). We observed that NIH/3T3 cells treated with either MCA or Capan-2 exosomes as the initiator followed by treatment with CdCl2 as the promoter resulted in formation of foci similar to that observed with TPA as the promoter (Figure 2D, Figure 2—source data 2). Treatment of cells with CdCl2 alone resulted in background levels of foci, reiterating the fact that cell transformation is dependent on both initiation and promotion. These results indicate that exosomes isolated from pancreatic cancer cells act as general initiators in the transformation assay and are not dependent on a specific promoter.
 
-## In vivo studies confirm the fully transformed state of cancer cell exosome-initiated cells
+### In vivo studies confirm the fully transformed state of cancer cell exosome-initiated cells
 
 An important step of assessing the tumorigenic property of transformed cells is their ability to form tumors in vivo. To determine whether exosome-initiated transformed cells have the capacity to form tumors when injected subcutaneously into immunocompromised mice, we first isolated and expanded foci cells from the MCA/TPA and Capan-2 exosome/TPA experiments (Figure 3A). The cells from these foci were then injected into NSG (NOD scid gamma) mice at concentrations of 0.1 × 106, 0.5 × 106, and 2.5 × 106 cells to determine the sufficient cell density for tumor formation. Mice were followed for 37 days to measure tumor growth (Figure 3—figure supplement 1A,B). As a control, non-transformed NIH/3T3 cells were injected into mice at the highest concentration (2.5 × 106 cells) (Figure 3—figure supplement 1C). After 37 days, tumor growth was observed in mice injected with cells from the chemically treated MCA/TPA foci and the cancer cell (Capan-2) exosome/TPA treated foci, at all three concentrations tested, whereas no tumor growth was observed in any of the mice injected with non-transformed control cells. In each case, the appearance of the tumors formed correlated with the number of cells injected, as higher concentrations of cells resulted in faster growth and larger tumors (Figure 3—figure supplement 1A,B). Histological analysis confirmed that the tumors are fibrosarcomas, as was expected because cells used in the CTA are NIH/3T3 cells from a mesenchymal origin (Figure 3—figure supplement 1D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig3-v1.jpg)
+
+**Figure 3.:** (A) In vivo assay. NIH/3T3 cells are treated with an initiator and promoter according to the cell transformation assay (42 days total). At the end of the transformation experiment, prior to methanol fixation and staining with crystal violet, foci were isolated, expanded, and established as a transformed cell line. Transformed cells are then subcutaneously injected into mice to monitor for tumor formation. Tumor growth was tracked by measuring tumor volume 2x/week for up to 55 days post injection (Post TCI) or until tumor size exceeded maximum limit. (B) Control mice include injection of untreated NIH/3T3 cells or background foci formed in untreated NIH/3T3 cells. Cells were injected at a concentration of 1 × 106 cells. Injection of untreated cells never resulted in tumor growth; injection of background foci from untreated cells resulted in tumor growth in 6 out of 15 total mice (see figure supplements for additional mice). (C) Results from injections of chemically transformed cells (MCA = initiator/TPA = promoter). Transformed cells were injected at a concentration of 1 × 106 cells. Tumor growth was observed in all mice (n = 5) from three independent experiments (see figure supplements for additional mice). (D) Results from injections of cancer cell exosome-initiated transformed cells; exosomes from four cancer cell lines, Capan-2 (ExC), MIA PaCa-2 (ExM), Panc-1 (ExP), and BxPC-3 (ExBx), were used as an initiator with the promoter TPA. Transformed cells were injected at a concentration of 1 × 106 cells. Tumor growth was observed in all mice (n = 5) for each treatment (see figure supplements for additional mice).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) MCA/TPA and Capan-2 exosome (ExC)/TPA transformed cells were each subcutaneously injected into NSG (NOD scid gamma) mice at three concentrations, 2.5 × 106 (2.5), 0.5 × 106 (0.5), and 0.1 × 106 (0.1) cells, to determine sufficient cell density for tumor formation (n = 5 mice for each concentration). Tumor growth was tracked by measuring tumor volume 2x/week for 37 days post injection (Post TCI). (C) Additional replicates of control mice injected with untreated NIH/3T3 cells at a concentration of 2.5 × 106 cells. (D) Histological analysis of one representative tumor formed in mice, confirming that the tumors are fibrosarcomas, scale bar = 50 μm in size.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Results from additional foci tested from injection of background foci formed from untreated NIH/3T3 cells. Transformed cells were injected at a concentration of 1 × 106 cells. Results showed tumor growth in six out of 15 total mice (five tumors grew from ‘Untreated Foci 2’). (B) Additional independent focus tested from MCA/TPA transformed cells (n = 5). (C) Additional foci tested from Capan-2 exosome (ExC)/TPA transformed cells (n = 5).
+
 Additional in vivo studies were performed to analyze the tumor forming potential of a variety of foci, including background foci formed in control experiments (Figure 3, Figure 3—figure supplement 1, Figure 3—figure supplement 2). Using a concentration of 1 × 106 cells, we observed that cells collected from MIA PaCa-2 exosome/TPA, Panc-1 exosome/TPA, and BxPC-3 exosome/TPA foci formed tumors in mice at varying size and growth rates (Figure 3D). After injection of untreated background foci, we observed that 6 out of 15 total mice formed tumors. Notably, each of the six tumors (five from the same injected foci) grew later in the time course and at a significantly slower rate compared to initiator and promoter treated transformed foci cells, as has been previously observed (Figure 3B, Figure 3—figure supplement 2A) (Xu and Rubin, 1990).
 
-## Proteomic analysis of initiated cells and transformed foci cells
+### Proteomic analysis of initiated cells and transformed foci cells
 
 We next used proteomics to analyze molecular changes in cells during the transformation process. Cells that were treated with MCA or Capan-2 exosomes as an initiator were harvested after the 3-day initiator treatment and total protein was analyzed by mass spectrometry. Untreated NIH/3T3 cells were used as a control. No marked global changes in protein content were observed for cells treated with MCA (yellow) or Capan-2 exosomes (blue) when compared to proteins found in untreated NIH/3T3 cells (Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1).
 
 Proteomics of transformed cells was also analyzed using mass spectrometry. Three foci from independent wells of both MCA/TPA transformed cells (yellow) and Capan-2 exosome/TPA transformed cells (blue) were compared to untreated NIH/3T3 cells as a control (Figure 4, Figure 4—source data 1). In total >1500 proteins were consistently identified in all three replicates of each sample type (see Materials and methods) (Figure 4). Proteins found in the transformed foci were compared to those found in the untreated control (Figure 4A). To determine whether overlapping proteins found in both control cells and foci are consistently present in each foci, we directly compared these data sets. The ‘common’ proteins found in both the untreated control and the transformed foci were compared using Venn diagrams and showed a high degree of overlap between foci of the same type (Figure 4B). By contrast, the proteins found to be ‘unique’ to each foci and absent in the control cells were compared and showed very little overlap between foci of the same type (Figure 4C). Gene ontology (GO) enrichment analysis was performed on the full set of proteins identified in each of the six foci in order to identify specific molecular functions overrepresented in the protein population (Figure 4D).
 
-## Exome sequencing reveals mutagenic profiles
+![Figure 4.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig4-v1.jpg)
+
+**Figure 4.:** (A) Comparison of proteins found in transformed cells resulting from treatment with both an initiator and promoter visualized by Venn diagrams. Three separate foci (F1, F2, F3) from MCA/TPA transformed cells and Capan-2 exosome (ExC)/TPA transformed cells were compared to untreated NIH/3T3 cells (control, gray). Results from three biological replicates were combined for each sample. (B) Comparison of common (overlap) proteins found in each of the six transformed foci samples; common proteins identified in control. (C) Comparison of unique proteins found in each of the six transformed foci samples; unique proteins are absent from control. (D) Gene Ontology enrichment analysis of proteins found in all six foci using PANTHER 14.0. Slim molecular functions identified as overrepresented based on analysis of proteins found in samples.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Comparison of proteins found in untreated NIH/3T3 cells (control) to cells treated with an initiator for 3 days (either MCA or Capan-2 (ExC) exosomes). For each condition, the results from three biological replicates were combined.
+
+### Exome sequencing reveals mutagenic profiles
 
 To better understand the genetic mechanism of cell transformation, exome sequencing was performed on the same set of transformed cells used for proteomic analysis and tumor mice studies: three MCA/TPA foci (yellow) and three Capan-2/TPA (blue) foci. In addition, three independent control foci were sequenced from untreated cells (gray) and TPA-only treated cells (gray); these are referred to as background foci. The total number of variants found by exome sequencing are visualized by Venn diagrams (Figure 5—figure supplement 1). The total set of variant data was used to generate the principle component analysis (PCA) plot shown in Figure 5. When all 12 foci samples were plotted together, the six transformed foci (MCA/TPA and Capan-2/TPA) appeared to cluster tightly while the six background foci (untreated and TPA-only) showed no clear relationship to one another (Figure 5A). When probed further, PCA of just the six transformed foci showed that there is no clear relationship between these samples (Figure 5B). Additionally, the total set of variant data was analyzed using MutaGene (Goncearenco et al., 2017) to investigate the specific types of nucleotide changes in the each of the 12 foci sequenced. MutaGene is a computational tool used to identify the most likely mutagenic processes associated with a set of variants found from whole exome or genome sequencing. The full mutational profile of each set of variants was decomposed into contributing COSMIC mutational signatures (Figure 6, Figure 6—source data 1). Clustering analysis of these signatures shows that all six transformed foci have similar mutational profiles that vary from the six background foci samples. The top mutational signatures found in each of the six transformed foci are COSMIC Signatures 20 and 15 (Figure 6), both of which are associated with defective DNA mismatch repair (MMR) and microsatellite instability. Foci from untreated cells and TPA-only treated samples did show signatures associated with microsatellite instability, but not as the top contributing signature. Instead, the top COSMIC Signature associated with each of the background foci was found to be COSMIC Signature 3, associated with failure of DNA double-strand break-repair. Considering that mismatch repair was found to be the top-contributing signature of each of the transformed foci, mismatch repair genes were analyzed in more detail for specific mutations (Figure 6—figure supplement 1). Missense mutations were found to be encoded in each of the transformed foci, but none of the foci contained the same mutations. None of the untreated background foci and only one of the TPA-only treated background foci had mutations in the analyzed MMR genes. Considering that mutations in oncogenes are often drivers of cell transformation, we also analyzed the mutational state of the 190 known oncogenes across the 12 foci samples. Results did not indicate a likely driver mutation as very few shared mutations were observed between independent foci of the same type and no common point mutations were found (Figure 5—figure supplement 1, Figure 5—figure supplement 1—source data 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig5-v1.jpg)
+
+**Figure 5.:** (A) PCA plot showing relationship between three MCA/TPA transformed foci, three Capan-2 exosome (ExC)/TPA transformed foci, three control foci from TPA-only treated NIH/3T3 cells, and three control foci from untreated NIH/3T3 cells. (B) PCA plot showing relationship between same three MCA/TPA transformed foci and Capan-2 exosome (ExC)/TPA transformed foci in the absence of control samples. Principle component analysis is based on comparison of exome-seq variant data using PLINK's identity-by-state (IBS) estimates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Total number of variants found in 12 samples sequenced by Exome-seq. Samples include transformed foci formed from four treatment conditions on NIH/3T3 cells: (A) untreated, (B) TPA-only treated, (C) MCA/TPA treated, and (D) Capan-2 exosome (ExC)/TPA treated.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig6-v1.jpg)
+
+**Figure 6.:** The 12 samples sequenced via Exome-seq include transformed foci formed from four treatment conditions on NIH/3T3 cells: untreated, TPA-only treated, MCA/TPA treated, and Capan-2 exosome (ExC)/TPA treated. The top COSMIC mutational signatures associated with each sample were identified using MutaGene and clustered based on similarity to generate the heatmap shown. Color range corresponds to the contribution score of each mutational profile.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40226/elife-40226-fig6-figsupp2-v1.jpg)
 
 ## Discussion
 
@@ -112,101 +166,328 @@ In conclusion, we observe that cancer cell exosomes have the capacity to act as 
 
 ## Materials and methods
 
-## Chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical</td>
+      <td>12-O-Tetradecanoylphorbol-13-acetate (TPA)</td>
+      <td>Cell Signaling Technology</td>
+      <td>4174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Methylcholanthrene (MCA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>213942–100 MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Cadmium Chloride (CdCl2)</td>
+      <td>Sigma-Aldrich</td>
+      <td>655198–5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2650−5 × 5 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH/3T3</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Dermal fibroblast (normal, Adult)</td>
+      <td>ATCC</td>
+      <td>PCS-201–012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Capan-2</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>PANC-1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MIA PaCa-2</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0428</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>BxPC-3</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HPDE (H6C7)</td>
+      <td>Kerafast</td>
+      <td>RRID:CVCL_0P38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALIX (3A9) (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam, Cat#A2228, RRID:AB_10899268</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-actinin (H-2) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology, Cat#sc-17829, RRID:AB_626633</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (AC-74) (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich, Cat#A2228, RRID:AB_476697</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Calnexin (C5C9) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology Cat# 2679, RRID:AB_2228381</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD63 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Proteintech, Cat#25682–1-AP, RRID:AB_2783831</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP90α/β (F8) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology, Cat#sc-13119, RRID:AB_675659</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TSG101 (4A10) (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# MA1-23296, RRID:AB_2208088</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.1</td>
+      <td>Thermo Scientific</td>
+      <td>Thermo Fisher Scientific, RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQC v0.11.5</td>
+      <td>Babraham Bioinformatics</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore</td>
+      <td>Babraham Bioinformatics</td>
+      <td>RRID:SCR_011847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Burrows-Wheeler Aligner (BWA)</td>
+      <td>Burrows-Wheeler Aligner</td>
+      <td>RRID:SCR_010910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Strelka2</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_005109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VCFtools</td>
+      <td>VCFtools</td>
+      <td>RRID:SCR_001235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnpEff</td>
+      <td>SnpEff</td>
+      <td>RRID:SCR_005191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLINK</td>
+      <td>Purcell et al., 2007</td>
+      <td>RRID:SCR_001757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MutaGene</td>
+      <td>MutaGene</td>
+      <td>RRID:SCR_016574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PROVEAN</td>
+      <td>J.Craig Venter Institute</td>
+      <td>RRID:SCR_002182</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals
 
 12-O-Tetradecanoylphorbol-13-acetate (TPA) (Cell Signaling Technology), Methylcholanthrene (MCA) (Sigma-Aldrich), Cadmium Chloride (CdCl2) (Sigma-Aldrich), Dimethyl sulfoxide (DMSO) (Sigma-Aldrich). Each compound was dissolved in DMSO and preserved at −20°C.
 
-## Cells and culture conditions
+### Cells and culture conditions
 
 Mouse embryo cell line, NIH/3T3, human primary dermal fibroblast, human pancreatic cancer cell lines: CAPAN-2, Panc-1, MIA PaCa-2, and BxPC-3, were purchased from American Type Culture Collection (ATCC, Manassas, VA). Immortalized human pancreatic duct epithelial cell line, HPDE, was from Kerafast (Kerafast, Boston, MA). Capan-2, MIA PaCa-2, and Panc-1 were maintained in Dulbecco’s modified Eagle’s medium (DMEM) (Millipore Sigma) supplemented with 10% (v/v) fetal bovine serum (FBS, Millipore Sigma) and 1% (v/v) antibiotics solution (Penicillin-Streptomycin, Millipore Sigma). BxPC-3 cells were maintained in minimum essential media (MEM) (Fisher) supplemented with 10% (v/v) fetal bovine serum (FBS) and 1% antibiotics solution (Penicillin-Streptomycin, Millipore Sigma). HPDE cells were maintained in Keratinocyte Serum-Free Media (KSFM, Invitrogen) with KSFM Supplements including epithermal growth factor (EGF) and bovine pituitary extract (BPE) (Invitrogen). Primary dermal fibroblast were maintained in Fibroblast Basal Medium (ATCC PCS-201–030) with Fibroblast Growth Kit-Serum-free (ATCC PCS-201–040) supplements included. NIH/3T3 cells were maintained in Dulbecco’s modified Eagle’s medium (DMEM) (Millipore Sigma) supplemented with 10% (v/v) Bovine Calf serum (CS, Gemini) and 1% antibiotics solution (Penicillin-Streptomycin, Millipore Sigma). All cell lines were cultured at 37°C in a humidified atmosphere of 5% CO2. Each cell line was tested free from mycoplasma. NIH/3T3 cells were used below passage 4 (p<4), primary dermal fibroblast (p<8), HPDE cells (p<8), and carcinoma cell lines (p<20).
 
-## Experimental design
+### Experimental design
 
-## Exosome isolation, subcellular fractionation, and TCA precipitation
+#### Exosome isolation, subcellular fractionation, and TCA precipitation
 
-## Exosome isolation
+##### Exosome isolation
 
 Exosomes were isolated using a previously described combined ultrafiltration-ultracentrifugation protocol (Adamczyk et al., 2011). In detail, pancreatic cancer cells (CAPAN-2, Panc-1, MIA PaCa-2, and BxPC-3) and normal human cells (HPDE and human primary dermal fibroblasts) were grown in ten 225 cm3 flasks in standard medium until they reached a confluency of approximately 70–80% (~3.5×108 cells). The carcinoma cell lines were then washed twice with medium and incubated in plain, serum-free medium for 72 hr. For HPDE cells and human primary dermal fibroblasts, phosphate-buffered saline (PBS) was used for washing and plain Keratinocyte SFM medium without supplements was used for exosome production for 72 hr. This protocol did not measurably increase the rate of cell death as determined by trypan blue exclusion, which showed over 93% live cell counts after 72 hr incubation in conditioned media. Next, the conditioned media (approximately 450 mL) from serum-free cell cultures were cooled down on ice, centrifuged (200xg, 10 min), and passed through 0.2 μm pore filters to remove cells, cell debris, and vesicles sized smaller than 220 nm. An inhibitor cocktail was added to protect the proteins from proteolytic digestion (PMSF and inhibitor cocktail complete Roche, Mannheim, Germany). Enrichment of exosomes was accomplished by subsequent ultrafiltration with Amicon Ultra 100K (4000xg, 25 min, 4°C), followed by ultracentrifugation at 120,000 g for 90 min at 4°C. The exosome pellet was washed in PBS followed by another ultracentrifugation at 120,000 g for 90 min at 4°C. The final exosome pellet was resuspended in PBS and validated by characterization via mass spectrometry analysis of proteins, western blot analysis, electron microscopy analysis (TEM), and nanoparticle tracking analysis (NTA) (Lötvall et al., 2014; Witwer et al., 2017; Théry et al., 2018). Each exosome pellet, after final resuspension into PBS, was divided into 5 µl aliquots, stored at −80°C, and thawed right before use. The protein concentration of the exosome fraction was measured after each exosome isolation using CBQCA protein quantitation kit (Invitrogen). Exosomes were used in the cell transformation assay experiments at a concentration of 80 ng/mL (equivalent to 7 × 107 particles/mL) based on dose response studies.
 
-## Sucrose gradient separation
+##### Sucrose gradient separation
 
 In addition to the exosome isolation protocol described above, exosomes were further purified using floatation into a sucrose density gradient (Chiou and Ansel, 2016). In detail, sucrose gradients were built manually as described in reference five by first preparing 12 sucrose stock fractions in PBS with sucrose concentrations ranging from 10–90%. Half of the exosome pellet from the isolation protocol described above was resuspended in 50 µl PBS with 1 ml of 90% sucrose stock solution and loaded at the bottom of a 13.2 mL ultra-clear Beckman ultracentrifuge tube. The gradient was layered by sequentially pouring 1 mL of each of the remaining 11 solutions in order from highest to lowest sucrose concentration. Tubes were centrifuged for 16 hr at 4°C at 100,000 g (24200 rpm) in a TH-641 rotor. At completion, six 2 mL fractions were collected from each of the tubes. Next, 9 mL of PBS was added to each of the 2 mL fractions and centrifuged at 4°C at 100,000 g for 1 hr. The supernatant was carefully aspirated before the pellet was resuspended in 50 µl of PBS and validated by mass spectrometry, western blot, and nanoparticle tracking analysis (NTA). The protein concentration of the fractions was measured using CBQCA protein quantitation kit (Invitrogen). Fraction 3, shown to contain exosomal marker proteins, was used in the cell transformation assay experiment at 80 ng/mL.
 
-## Subcellular fractionation
+##### Subcellular fractionation
 
 Cells from exosome preparations were harvested from one 225 cm3 flask, after the conditioned media for exosome isolation was collected, using 0.25% trypsin-EDTA (Sigma-Aldrich) treatment, followed by lysing according to previously published protocol (Casey et al., 2018). In brief, cells were suspended in HNMEK lysis buffer (20 mM HEPES pH 7.4, 50 mM NaCl, 2 mM MgCl2, 2 mM EDTA, 10 mM KCl, 50 nM EGTA, protease inhibitors) and lysed using a Dounce homogenizer. Lysates were centrifuged at 500 g for 10 min at 4°C to remove nuclei and cellular debris. The supernatant was collected and centrifuged at 10,000 g for 10 min to pellet ER and mitochondrial membranes (P2 fraction). Cytoplasmic S2 fraction was collected and kept for further analysis. P2 fraction was washed once in HNMEK lysis buffer, centrifuged at 10,000 g for 10 min, and the pellet was resuspended in RIPA lysis buffer (50 mM Tris pH 8, 150 mM NaCl, 5 mM EDTA pH8, 1% Nonidet P-40, 0.5% deoxycholate, 0.1% SDS, 1 mM PMSF, protease inhibitors). Protein concentration was measured from each fraction using the Bradford Protein assay (Bio-Rad).
 
-## TCA precipitation
+##### TCA precipitation
 
 The last fraction collected from the exosome isolation procedure was the flow through media (M). This flow through consists of 20% starting conditioned media after the ultrafiltration step, and was kept for deoxycholate-trichloroacetic acid precipitation (DOC-TCA) of the proteins. This medium represents a sample that should not contain any exosomal proteins when analyzed for exosome markers using western blot analysis. In brief, 0.15% DOC was added to media samples (1:10 ratio) and incubated on ice for 15 min followed by addition of TCA to 8% final concentration and incubated overnight at 4°C. Precipitated proteins were pelleted by centrifuging at 18,000 rpm and washed twice with cold acetone, prior to re‐suspension in 10 mM Tris–HCl pH = 8.0. The protein concentration was measured using CBQCA protein quantitation kit (Invitrogen).
 
-## Cell transformation assay
+#### Cell transformation assay
 
 The two-stage cell transformation assay was carried out according to the protocol described by Sakai and Sato (1989) with small modifications. In detail, the frozen stock of NIH/3T3 cells were thawed and cultured. Actively growing cells with passage number <4 were seeded for the transformation assay at a density of 2.5 × 103 cells/well in a 6-well plate with 2 mL of culture medium. Two days after seeding, media was replaced with media containing an initiator, either MCA (0.5 µg/mL), exosomes (80 ng/mL), or 0.02% DMSO, and cells were grown for 3 days. Next, the medium was replaced with fresh medium and cells were grown for an additional 2 days. Cultures were then treated with a medium containing a promoter, either TPA (300 ng/mL), exosomes (80 ng/mL), CdCl2 (120 ng/mL), or 0.2% DMSO, for 2 weeks. The cells were subsequently cultured in normal medium for 3 weeks. The medium was changed every other day during the promoter treatments and twice a week for the last 3 weeks of the experiment. The cells were fixed with methanol and stained with crystal violet for focus scoring. Each test chemical was dissolved in DMSO. The concentration of vehicle was below 0.2%, which did not affect the induction of transformed foci.
 
-## Foci scoring
+#### Foci scoring
 
 The scoring of transformed foci was carried out according to established criteria on focus scoring (Sasaki et al., 2012). Different categories of foci that can be observed are Type I, Type II, and Type III. Only Type III foci are scored as malignantly transformed and were counted as positive in this study. Foci were assessed for the following characteristics: deep basophilic staining, spindle-shaped cells, multilayer growth (piling up of cells), random orientation at the edge of the focus, and invasive growth into the background monolayer; each characteristic needed to be present for Type III classification. To ensure accurate scoring, foci scoring was performed in a double-blinded manner by two researchers.
 
-## Tumorigenicity of transformed cells
+#### Tumorigenicity of transformed cells
 
 All animals were housed in a pathogen-free facility with 24 hr access to food and water. Experiments were approved by, and conducted in accordance with, an IACUC approved protocol at UT Southwestern. Six-to-8-week-old female NOD/SCID mice were obtained from an on-campus supplier.
 
 At the end of the transformation experiment, prior to methanol fixation and staining with crystal violet, MCA/TPA-treated and cancer cell exosome/TPA-treated cells that had formed type III foci were isolated, expanded, and established as a transformed cell line. To assess their tumorigenic property, cells were injected subcutaneously into mice. To determine the sufficient cell density for tumor formation, cells were first isolated from MCA/TPA-treated and Capan-2 exosome (ExC)/TPA-treated experiments and injected into mice at three different cell concentrations (0.1 × 106, 0.5 × 106, and 2.5 × 106 cells). Untreated NIH/3T3 cells were injected into mice as a control at the highest concentration used (2.5 × 106 cells). Every group consisted of n = 5 mice. Mice were observed for tumor formation by palpating twice a week and recording the weight of the mice and size of the tumor. The experiment was terminated 37 days post injection, when the tumor size in some of the animals had reached maximum allowable diameter. Histological analyses confirmed that the tumors are fibrosarcomas, as expected from the transformed cells of mesenchymal origin. Additional in vivo experiments include subcutaneous injection of mice (n = 5/group) with 1 × 106 cells isolated after treatment with MIA PaCa-2 (ExM)/TPA, Panc-1 (ExP)/TPA, or BxPC-3 (ExBx)/TPA as well as injection of three background foci formed from untreated NIH/3T3 cells. Tumor growth was tracked in the same manner up to 55 days post injection or until tumor growth exceeded maximum allowable size.
 
-## Initiation assay
+#### Initiation assay
 
 NIH/3T3 cells were plated on a six-well plate at a density of 2.5 × 103 cells/well with 2 mL of culture medium. Two days after seeding, media was replaced with fresh complete media or media containing an initiator; either 0.5 µg/mL MCA or 80 ng/mL Capan-2 exosomes, and cells were grown for 3 days, followed by 2 days of recovery (two wells for each condition). Next, cells were harvested and lysed with RIPA lysis buffer (50 mM Tris pH 8, 150 mM NaCl, 5 mM EDTA pH 8, 1% Nonidet P-40, 0.5% deoxycholate, 0.1% SDS, 1 mM PMSF, protease inhibitors) by incubating cells on ice for 30 min and vortexing twice during the incubation. At the end of incubation, lysates were centrifuged at 10,000 g to pellet cell debris. Protein concentration was measured using the Bradford Protein assay (Bio-Rad). Experiments were performed in triplicate for each treatment condition. Total protein composition (26 µg of protein/sample) was analyzed by mass spectrometry.
 
-## Preparation of samples for mass spectrometry and exome sequencing analysis
+#### Preparation of samples for mass spectrometry and exome sequencing analysis
 
-## Proteins
+##### Proteins
 
 For analysis of exosomal proteins by mass spectrometry, exosome samples (equivalent of approximately 15 μg of protein) isolated from each cell line were thawed from −80°C storage and 10 μl of 5 × protein sample buffer was added. Samples were boiled for 5 min and loaded on TGX stain‐free gels (Bio‐Rad) and run 10 mm into the top of an SDS–PAGE gel. Gel bands containing proteins were excised for mass spectrometry analysis.
 
 For analysis of the total protein composition of untreated NIH/3T3 cells, transformed cells, and cells from the initiation assay, cells were lysed in RIPA lysis buffer and protein concentration was measured using the Bradford Protein assay (Bio-Rad). Equal amounts of proteins (approximately 26 µg of protein from the initiation assay samples and 35 µg of protein from the transformed cell samples) from three biological replicates were taken and 5 × protein sample buffer was added. Samples were boiled for 5 min and loaded on TGX stain‐free gels (Bio‐Rad) and run 10 mm into the top of an SDS–PAGE gel. Gel bands containing proteins were excised for mass spectrometry analysis.
 
-## Genomic DNA
+##### Genomic DNA
 
 DNA for exome sequencing was extracted from untreated NIH/3T3 cells, three background foci from untreated NIH/3T3 cells, three background foci from TPA-only treated NIH/3T3 cells, three foci from MCA/TPA treated NIH/3T3 cells, and three foci from ExC/TPA treated NIH/3T3 cells using Quick-gDNA MiniPrep Kit (Genesee Scientific) according to the manufacturer’s protocol. Quality and concentration of the DNA was measured with BioAnalyzer. Exome libraries were prepared using IDT xGen Exome Research Panels and sequenced on Illumina HiSeq 4000 at 100x coverage.
 
-## Data analysis
+### Data analysis
 
-## Validation of exosome isolation
+#### Validation of exosome isolation
 
-## Transmission electron microscopy (TEM)
+##### Transmission electron microscopy (TEM)
 
 Electron microscopy was used to characterize vesicles pelleted by the ultrafiltration-ultracentrifugation isolation method described above and to provide information on the size of the vesicles. TEM negative staining was performed on the aliquots stored at −80°C. 10 µl of exosome suspension in PBS was placed onto carbon-coated grids (200mesh) for 1 min and negatively stained with 2% uranyl acetate solution for 1 min. Grids were visualized at 13000x to 68000x in a FEI Tecnai G2 Spirit transmission electron microscope at 120kV. Separate images were taken to provide a wide field encompassing multiple vesicles or to provide close-up images of single vesicles.
 
-## Nanoparticle tracking analysis
+##### Nanoparticle tracking analysis
 
 Nanoparticle tracking analysis (NTA) was performed using NanoSight Version 2.3 on crude exosomes and exosomes further purified by sucrose density gradient (Fraction three only). Finite Track Length Analysis (FTLA) was used for size determination. In each case, average vesicle size per concentration was determined from three measurements of a single exosome preparation.
 
-## Mass spectrometry
+##### Mass spectrometry
 
 Mass spectrometry analysis was performed on crude exosomes derived from Capan-2 cells or purified exosomes (Fraction 3) derived from Capan-2 cells. Figure 1—figure supplement 2 shows a list of the top 20 most commonly found proteins in exosomes according to the Exocarta database (Kowal et al., 2016). All twenty proteins were identified by mass spectrometry in both populations of Capan-2 cell exosomes. Complete proteins lists from crude exosomes and Fraction three exosomes are included as Figure 1—figure supplement 2—source datas 1 and 2.
 
-## Antibodies and western blot
+##### Antibodies and western blot
 
 Alix antibody (cat. no. ab117600, Abcam), α-actinin antibody (H-2, cat. no. sc-17829, Santa-Cruz), β-actin antibody (Clone AC-74, cat. no. A2228, Sigma-Aldrich), Calnexin antibody (Clone C5C9, cat. no. 2679, Cell Signaling), CD63 antibody (cat. no. 25682–1-AP, Proteintech), HSP90α/β (F-8, cat. no. sc-13119, Santa-Cruz), TSG101 antibody (Clone 4A10, cat. no. MA1-23296, Thermo Fisher).
 
 Western blots were used to examine the presence of common exosomal proteins in cellular fractions and sucrose gradient purified exosomes. Using Capan-2 cells as a representative example, equivalent micrograms of proteins from ER and mitochondrial (P2), cytoplasmic (S2), media (M), and exosome (Ex) fractions, prepared from different steps during exosome isolation as described above in section 1.1, were separated by SDS-PAGE and transferred to nitrocellulose membranes. Development was performed using Pierce ECL 2 Western blotting substrate (Thermo Fisher Scientific) and radiographic films (Lightlab).
 
-## Cytotoxicity and colony formation efficiency of cadmium chloride (CdCl2)
+#### Cytotoxicity and colony formation efficiency of cadmium chloride (CdCl2)
 
 Cytotoxicity and colony formation efficiency assays were used to determine a suitable concentration of CdCl2 for use as a promoter in cell transformation assay. Cytotoxicity of CdCl2 was determined using a protocol as described by Umeda et al. (1989) and Fang et al. (2001) with some modifications. Experiments were repeated twice to confirm reproducibility. In brief, toxicity was tested by plating 2 × 104 cells/mL into 6-wells and culturing for 24 hr. Next, cells were treated with 40, 120, 240, or 360 ng/mL CdCl2, with 3-wells/each concentration. After a 4 day cultivation, the cell number of each well was determined after trypsin treatment using trypan blue exclusion method by counting the number of live cells to the number of dead cells. Cell viability remained high (>89%) for the first three concentrations (40, 120, 240 ng/mL) but dropped to an average of 56% in the highest concentration (360 ng/mL).
 
 For the colony formation efficiency assay, cells were plated at 200 cells/2 mL into 6-wells and cultured for 24 hr. Next, cells were treated with 40, 120, 240, or 360 ng/mL CdCl2, 3-wells/each concentration, for 10 days. Media was changed on day 5. The cells were fixed with methanol and stained with crystal violet for counting the number of colonies. Only colonies comprising >50 cells were scored. Relative colony formation efficiency was calculated as (%) = (number of test colonies/number of control colonies) x 100 (Fang et al., 2001). At the two highest concentrations (240, 360 ng/mL) colony formation was reduced to 4% when compared to control, untreated cells. At 120 ng/mL colony formation was inhibited by 50% and cell viability maintained above 89%. The lowest concentration, 40 ng/mL, did not have any effect on the colony formation efficiency when compared to control colony formation. The highest CdCl2 concentration to inhibit colony formation by 50% while retaining cell viability was 120 ng/mL and was therefore used in cell transformation assays.
 
-## Dose response studies
+#### Dose response studies
 
 Dose response experiments were performed to determine a suitable concentration of exosomes for use as an initiator in cell transformation assays. Protein concentration was used as a normalization strategy. Transformation assays with different protein concentrations of exosomes were repeated twice to confirm reproducibility. Cells were treated with 0.08, 0.8, 8, 24, 80, 240, 800 or 2400 ng/mL of exosomes as an initiator as described in detail in section 1.2; 6-wells per concentration were used. At the end of the cell transformation assay, cells were fixed with methanol and stained with crystal violet. Focus scoring were performed according to the method described in section 1.3. Equal transformation induction activity was observed for all concentrations except the two lowest ones, 0.08 ng/mL and 0.8 ng/mL. A standard concentration of 80 ng/mL (equivalent to 7 × 107 particles/mL) of proteins were used in each transformation assay.
 
-## Statistical analysis of foci scoring
+#### Statistical analysis of foci scoring
 
 Statistical analysis of foci scoring was performed by two-tailed unpaired t test with Welch's correction.
 
-## Proteomic analysis by mass spectrometry
+#### Proteomic analysis by mass spectrometry
 
 Sample preparation for mass spectrometry analysis included the excision of proteins from polyacrylamide gels via SDS-PAGE and Coomassie blue dye staining. Protein samples were reduced and alkylated using DTT and iodoacetamide, respectively. Samples were digested overnight using trypsin (37°C) and resulting peptides were de-salted using solid phase extraction (SPE). LC-MS/MS experiments were performed on a Thermo Scientific EASY-nLC 1200 liquid chromatography system coupled to a Thermo Scientific Orbitrap Fusion Lumos mass spectrometer. To generate MS/MS spectra, MS1 spectra were first acquired in the Orbitrap mass analyzer (resolution 120,000). Peptide precursor ions were then isolated and fragmented using high-energy collision-induced dissociation (HCD). The resulting MS/MS fragmentation spectra were acquired in the ion trap. MS/MS spectral data from exosome samples was searched using Proteome Discoverer 2.1 software (Thermo Scientific) against entries included in either the Human Uniprot protein database (173,060 entries) (exosome samples) or the Mus musculus (Mouse) Uniprot protein database (86,520 entries) (NIH/3T3 cell samples). Search parameters included Carbamidomethylation of cysteine residues (+57.021 Da) as a static modification and oxidation of methionine (+15.995 Da) and acetylation of peptide N-termini (+42.011 Da) as dynamic modifications. The precursor ion mass tolerance was set to 10 ppm and the product ion mass tolerance was set to 0.6 Da for all searches. Peptide spectral matches were adjusted to a 1% false discovery rate (FDR) and proteins were filtered to a 1% FDR.
 
@@ -214,24 +495,24 @@ For exosome samples, only a single run was analyzed for the presence of exosomal
 
 Gene ontology (GO) enrichment analysis was performed using PANTHER 14.0 on the set of proteins identified in each of the six transformed foci shown in Figure 4 (three MCA/TPA foci and three ExC/TPA foci). Each protein list contained proteins identified in all three biological replicates for each foci. Protein lists were searched against the reference Mus musculus protein database to identify overrepresented molecular functions (Ashburner et al., 2000; The Gene Ontology Consortium, 2019; Mi et al., 2017).
 
-## Exome sequencing analysis
+#### Exome sequencing analysis
 
-## Variant calling
+##### Variant calling
 
 Raw reads were quality controlled and filtered using FASTQC v0.11.5 (Andrews, 2016) and Trim Galore v0.4.1 (Krueger, 2015) using default settings. Reads were mapped to the mouse reference genome (GRCm38) using BWA-MEM v0.7.12 (Li and Durbin, 2009). Somatic mutations were called using Strelka2 v2.9.0 against the original NIH/3T3 cells (Kim, 2018). Mutations were filtered for quality using VCFtools v0.1.14 that meet PASS criteria based on Empirical Variant Score and minimum read depth of DP >10. Comparison between similarly treated foci were compared using ‘vcf-compare’ using VCFtools v0.1.14 and Venn diagrams comparing all variants were drawn using Python v3.6.8.
 
-## Annotation and foci comparison
+##### Annotation and foci comparison
 
 Mutations were annotated using SnpEff v4.3q (PMID:22728672) for loss-of-function or missense mutation. Mutation-based clustering analysis was performed on full variant data set for each foci using pairwise identity-by-state function in PLINK v.1.90b4 (Purcell et al., 2007) and visualized using the first two principal components using Python v3.6.8 to compare similarity between foci. Annotations were filtered for loss-of-function or missense mutation in order to generate the table of non-synonymous variants found in mismatch repair associated genes in Figure 6—figure supplement 1.
 
-## Generating mutational signatures and heatmap
+##### Generating mutational signatures and heatmap
 
 Mutational signatures were derived from the full set of variants for individual samples using MutaGene (Goncearenco et al., 2017). To identify overlapping signatures between samples, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from seaborn v0.7.1[@doi:10.5281/zenodo.54844].
 
-## In silico analysis
+##### In silico analysis
 
 PROVEAN v1.1.3. (Protein Variation Effect Analyze, http://provean.jcvi.org/index.php) genome variant software was used to predict the potential impact of the identified missense variants on protein function in the mismatch repair associated genes. This tool provides PROVEAN and SIFT predictions for a list of genome variants.
 
-## Data and materials availability
+### Data and materials availability
 
 All data are available in the main text or the supplementary materials.

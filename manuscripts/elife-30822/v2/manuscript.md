@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.30822.001 Staphylococcus aureus pathogenicity islands (SaPIs), such as SaPI1, exploit specific helper bacteriophages, like 80α, for their high frequency mobilization, a process termed ‘molecular piracy’. SaPI1 redirects the helper’s assembly pathway to form small capsids that can only accommodate the smaller SaPI1 genome, but not a complete phage genome. SaPI1 encodes two proteins, CpmA and CpmB, that are responsible for this size redirection. We have determined the structures of the 80α and SaPI1 procapsids to near-atomic resolution by cryo-electron microscopy, and show that CpmB competes with the 80α scaffolding protein (SP) for a binding site on the capsid protein (CP), and works by altering the angle between capsomers. We probed these interactions genetically and identified second-site suppressors of lethal mutations in SP. Our structures show, for the first time, the detailed interactions between SP and CP in a bacteriophage, providing unique insights into macromolecular assembly processes.
+Staphylococcus aureus pathogenicity islands (SaPIs), such as SaPI1, exploit specific helper bacteriophages, like 80α, for their high frequency mobilization, a process termed ‘molecular piracy’. SaPI1 redirects the helper’s assembly pathway to form small capsids that can only accommodate the smaller SaPI1 genome, but not a complete phage genome. SaPI1 encodes two proteins, CpmA and CpmB, that are responsible for this size redirection. We have determined the structures of the 80α and SaPI1 procapsids to near-atomic resolution by cryo-electron microscopy, and show that CpmB competes with the 80α scaffolding protein (SP) for a binding site on the capsid protein (CP), and works by altering the angle between capsomers. We probed these interactions genetically and identified second-site suppressors of lethal mutations in SP. Our structures show, for the first time, the detailed interactions between SP and CP in a bacteriophage, providing unique insights into macromolecular assembly processes.
 
 ## Introduction
 
@@ -47,13 +47,25 @@ Our previous reconstructions of 80α and SaPI1 capsids were generated from data 
 
 ## Results
 
-## Structures of 80α and SaPI1 procapsids
+### Structures of 80α and SaPI1 procapsids
 
 Cryo-electron microscopy (EM) images of 80α and SaPI1 procapsids were collected on an FEI Titan Krios electron microscope equipped with a DE-20 direct electron detector (Figure 2A,B). The 80α and SaPI1 procapsid structures were solved to 3.8 Å and 3.7 Å resolution (FSC0.143; Figure 2C,D) from 10,527 and 14,087 particle images, respectively, using icosahedral reconstruction with jspr (Guo and Jiang, 2014). The reconstructions show the expected T = 7 and T = 4 architectures of the 80α and SaPI1 procapsids, respectively, made up of hexamers and pentamers of CP subunits (Figure 3A,B). In these maps, the protein backbones could be traced through most of the density with confidence (Figure 3—figure supplement 1A,B). While many side chains are not fully defined at this resolution, bulky side chains could be identified sufficiently well to allow atomic models to be built for residues 26–309 of CP in both 80α and SaPI1, and for parts of SP and CpmB (Figure 3—figure supplement 1C–F). The models were refined in REFMAC5 and showed good correspondence with the data up to the resolution of the map(Figure 2C,D; Figure 3—figure supplement 2A,B). Some regions in the map—mainly corresponding to the N- and C-termini of CP—had worse resolution than the rest of the structure, presumably due to structural heterogeneity or disorder (Figure 3—figure supplement 2C,D), and could not be modeled unambiguously. The pentamer density generally had lower resolution than the hexamers, perhaps due to unequal packing of subunits at the fivefold vertex, and averaging with the dodecameric portal that occupies one of the twelve vertices.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30822/elife-30822-fig2-v2.jpg)
 
 **Figure 2.:** (A, B) Electron micrographs of 80α (A) and SaPI1 (B) procapsids. Scale bar, 100 nm. (C, D) Fourier Shell Correlation (FSC) curves between maps calculated from the two half datasets (blue) and between the model and the map (orange) for 80α (A) and SaPI1 (B). The resolution limits at 0.143 cutoff (dashed line) are indicated. The discrepancy between the model and the map for SaPI1 is likely due to the disordered and unmodeled portions of the CpmB protrusions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30822/elife-30822-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Isosurface representation of the 80α (A) and SaPI1 (B) reconstructions, colored radially on an absolute scale (color bar). The triangles represent one icosahedral face, delimited by three fivefold axes. Icosahedral twofold and threefold symmetry axes are indicated by ovals and triangles, respectively. (C, D) Ribbon representations of the C subunits of the 80α (C) and SaPI1 (D) atomic models. N-arm, red; P domain, green; E-loop, yellow; A-domain, blue. SP (in 80α), purple; CpmB (in SaPI1), orange. Locations of α-helices α3 (the spine helix), α5 and α6, and the A-loop are also indicated in (C). (D) Isosurface representation of a 30 Å thick slice through the SaPI1 procapsid map, showing the protruding domains on the inside of the shell (arrows), colored radially on the same scale as in (B). (G) Electrostatic surface of the 80α CP subunit C, colored according to charge (blue, most positive; red, most negative).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30822/elife-30822-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Isosurface representation (mesh) of one whole subunit from 80α (A) and SaPI1 (B), with the corresponding CP model in backbone representation. The surrounding density is shown as a semi-transparent yellow isosurface. (C–F) Details of density and atomic model from 80α (C, E) and SaPI1 (D, F), corresponding to residues 68–84 in the E-loop (C, D) and 125–144 in the spine helix (α3) (E, F). Pertinent residues are labeled.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30822/elife-30822-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) FSC curves showing the correspondence of the model against the test dataset (FSCtest, blue) and the working dataset (FSCwork, orange), after refinement against only the working data set for the 80α (A) and SaPI1 (B) procapsid reconstructions. (C, D) Isosurface representation of one asymmetric unit from the 80α (C) and SaPI1 (D) procapsid maps, colored by local resolution from 3 Å to >6 Å according to the color bar, calculated using ResMap (Kucukelbir et al., 2014).
 
 The CP models show the expected HK97-like fold common to the Caudovirales, divided into A- and P-domains, with an extended E-loop and an N-arm that folds along the inside of the P-domain (Figure 3C,D). The long ‘spine helix’ (α3) in the P-domain is a characteristic feature of the HK97 fold. In 80α, this helix is kinked at residue P132 (Spilman et al., 2011). Residues 263–285 form an insertion into the P-domain called the P-loop. The P-loop and most of the E-loop were not resolved in the previous low-resolution maps (Dearborn et al., 2011; Spilman et al., 2011), but could be modeled with confidence in the new maps. In addition, the C-terminal part of SP could be identified, and was modeled de novo into the density (see below). In the SaPI1 reconstruction, internal densities corresponding to the previously described CpmB dimers (Dearborn et al., 2011) were clearly discernible (Figure 3E), but noisy, and only the C-terminal parts closest to the capsid were interpretable in terms of the molecular structure of the protein (Figure 3D).An electrostatic surface representation of one of the CP subunits shows a characteristic distribution of positive and negative charges on opposite sides of the A-domain (Figure 3F).
 
@@ -62,6 +74,320 @@ There are seven CP subunits (A–G) in the asymmetric unit in the T = 7 80α p
 ![Figure 4.](https://cdn.elifesciences.org/articles/30822/elife-30822-fig4-v2.jpg)
 
 **Figure 4.:** (A, B) Superposition of the backbones of the seven subunits of 80α (A) and the four subunits of SaPI1 (B). Panels on the right are rotated by 90°. The two distinct conformations of the E-loop (‘UP’ and ‘DOWN’) are indicated on the 80α superposition. The subunits are colored according to the schematic diagrams on the left (A, red; B, blue; C, green; D, yellow; E, tan; F, orange; G, purple). The orange ovals in (B) represent the CpmB dimers. (C, D) Superpositions of the pentamers (C) and hexamers (D) of 80α (gray) and SaPI1 (blue), in ribbon representation.
+
+**Table 1.**
+ Root-mean square deviation (RMSD) values (in Å) between subunit pairs within 80α, within SaPI1 and between 80α and SaPI1.Values for ‘unpruned’ structures include all atoms when determining the best fit. Values for ‘pruned’ structures only include the best matching residue pairs. Pruning was done in UCSF Chimera using standard parameters. For 80α, pairs of subunits related across the quasi-twofold axis are highlighted in green. Comparison of subunits for which the E-loops are in the ‘UP’ conformation are highlighted in blue.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Root mean square deviation between CP subunits</th>
+    </tr>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="2">Pruned</th>
+      <th colspan="2">Unpruned</th>
+    </tr>
+    <tr>
+      <th># res.</th>
+      <th>RMSD (Å)</th>
+      <th># res.</th>
+      <th>RMSD (Å)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">80α procapsid</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subB</td>
+      <td>215</td>
+      <td>0.986</td>
+      <td>284</td>
+      <td>2.927</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subC</td>
+      <td>250</td>
+      <td>0.897</td>
+      <td>284</td>
+      <td>1.521</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subD</td>
+      <td>239</td>
+      <td>0.943</td>
+      <td>284</td>
+      <td>2.902</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subE</td>
+      <td>218</td>
+      <td>0.989</td>
+      <td>284</td>
+      <td>2.900</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subF</td>
+      <td>252</td>
+      <td>0.899</td>
+      <td>284</td>
+      <td>1.533</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subG</td>
+      <td>239</td>
+      <td>1.024</td>
+      <td>284</td>
+      <td>2.878</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subC</td>
+      <td>224</td>
+      <td>0.881</td>
+      <td>284</td>
+      <td>3.072</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subD</td>
+      <td>229</td>
+      <td>0.955</td>
+      <td>284</td>
+      <td>1.901</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subE</td>
+      <td>251</td>
+      <td>0.727</td>
+      <td>284</td>
+      <td>1.506</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subF</td>
+      <td>219</td>
+      <td>0.907</td>
+      <td>284</td>
+      <td>3.244</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subG</td>
+      <td>232</td>
+      <td>0.909</td>
+      <td>284</td>
+      <td>1.686</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subD</td>
+      <td>241</td>
+      <td>0.853</td>
+      <td>284</td>
+      <td>3.002</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subE</td>
+      <td>225</td>
+      <td>0.923</td>
+      <td>284</td>
+      <td>3.108</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subF</td>
+      <td>271</td>
+      <td>0.764</td>
+      <td>284</td>
+      <td>0.987</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subG</td>
+      <td>237</td>
+      <td>0.860</td>
+      <td>284</td>
+      <td>2.974</td>
+    </tr>
+    <tr>
+      <td>subD</td>
+      <td>subE</td>
+      <td>231</td>
+      <td>1.001</td>
+      <td>284</td>
+      <td>1.715</td>
+    </tr>
+    <tr>
+      <td>subD</td>
+      <td>subF</td>
+      <td>246</td>
+      <td>0.781</td>
+      <td>284</td>
+      <td>3.195</td>
+    </tr>
+    <tr>
+      <td>subD</td>
+      <td>subG</td>
+      <td>262</td>
+      <td>0.704</td>
+      <td>284</td>
+      <td>1.302</td>
+    </tr>
+    <tr>
+      <td>subE</td>
+      <td>subF</td>
+      <td>220</td>
+      <td>0.979</td>
+      <td>284</td>
+      <td>3.257</td>
+    </tr>
+    <tr>
+      <td>subE</td>
+      <td>subG</td>
+      <td>236</td>
+      <td>0.981</td>
+      <td>284</td>
+      <td>1.654</td>
+    </tr>
+    <tr>
+      <td>subF</td>
+      <td>subG</td>
+      <td>242</td>
+      <td>0.847</td>
+      <td>284</td>
+      <td>3.104</td>
+    </tr>
+    <tr>
+      <td colspan="6">SaPI1 procapsid</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subB</td>
+      <td>218</td>
+      <td>1.047</td>
+      <td>284</td>
+      <td>2.656</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subC</td>
+      <td>247</td>
+      <td>1.092</td>
+      <td>284</td>
+      <td>1.572</td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subD</td>
+      <td>223</td>
+      <td>1.108</td>
+      <td>284</td>
+      <td>2.862</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subC</td>
+      <td>220</td>
+      <td>1.040</td>
+      <td>284</td>
+      <td>2.865</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subD</td>
+      <td>231</td>
+      <td>1.040</td>
+      <td>284</td>
+      <td>1.633</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subD</td>
+      <td>242</td>
+      <td>0.921</td>
+      <td>284</td>
+      <td>2.669</td>
+    </tr>
+    <tr>
+      <td colspan="6">SaPI1 vs. 80α</td>
+    </tr>
+    <tr>
+      <td>SaPI1</td>
+      <td>80α</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>subA</td>
+      <td>subA</td>
+      <td>259</td>
+      <td>0.920</td>
+      <td>284</td>
+      <td>1.495</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subB</td>
+      <td>250</td>
+      <td>0.926</td>
+      <td>284</td>
+      <td>1.443</td>
+    </tr>
+    <tr>
+      <td>subB</td>
+      <td>subE</td>
+      <td>257</td>
+      <td>0.823</td>
+      <td>284</td>
+      <td>1.380</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subC</td>
+      <td>268</td>
+      <td>0.935</td>
+      <td>284</td>
+      <td>1.165</td>
+    </tr>
+    <tr>
+      <td>subC</td>
+      <td>subF</td>
+      <td>268</td>
+      <td>0.997</td>
+      <td>284</td>
+      <td>1.190</td>
+    </tr>
+    <tr>
+      <td>subD</td>
+      <td>subD</td>
+      <td>247</td>
+      <td>0.948</td>
+      <td>284</td>
+      <td>1.536</td>
+    </tr>
+    <tr>
+      <td>subD</td>
+      <td>subG</td>
+      <td>262</td>
+      <td>0.939</td>
+      <td>284</td>
+      <td>1.170</td>
+    </tr>
+  </tbody>
+</table>
 
 Interactions between subunits within the hexamers and pentamers are mediated primarily via the E-loops and A-domains. In the A-domains, interactions involve several charged residues in the α5 and α6 helices and in the A-loops (Figure 5A,B). The hexamers have a distinct ‘skew’ along a plane that separates the CDE subunits from FGB, leading to distinct differences in inter-subunit interactions in the A domains (Figure 5A). This skew is also accommodated by conformational differences in the E-loops, which segregate into two distinct classes related by a 20° rotation (Figure 4A,B). The ‘up’ conformation includes the two subunits whose E-loops reach across this skew plane (C and F) as well as the pentamer subunit (A), while the other subunits are in the ‘down’ conformation. In is unclear whether the E-loops simply conform to the skewed hexamer geometry, or themselves induce the skew in the hexamers. The E-loop forms a β-hairpin structure that contains several aromatic residues and wraps around the P-domain of the adjacent subunit, where it engages with the P-loop via a short β-sheet (Figure 5C). The contact surface between the E-loop and the adjacent subunit’s P domain is extensive, covering an area of ≈1000 Å2 or ≈6% of the subunit surface.
 
@@ -77,7 +403,7 @@ To define the differences between the 80α and SaPI1 shells, each capsomer was r
 
 **Figure 6.:** (A, B) Schematic diagrams showing the organization of hexamers and pentamers in the T = 7 (A) and T = 4 (B) lattices. The dihedral angles between hexamers are defined by the Greek letters α–δ. Type 1, 2 and 3 threefold axes are indicated. (C) Table of the calculated interior inter-capsomeric dihedral angles in 80α and SaPI1. The Δ column indicates the difference between corresponding angles. (D) Ribbon representation of a slab through one half of the 80α (gray) and SaPI1 (blue) shells, showing how the difference in inter-capsomer angles are propagated through the lattice. The models were aligned at one fivefold vertex (shown at bottom of diagram) and the planes representing the capsomers (gray and blue circles) and the resulting α and β angles are shown.
 
-## Interactions between scaffolding and capsid proteins
+### Interactions between scaffolding and capsid proteins
 
 The 80α procapsid map had a density next to N-arm helix α1 (Figure 7A) that was identified as the 16 C-terminal residues of SP, which were built de novo as an 11-residue amphipathic α-helix followed by a 5-residue ‘hook’. The lower density of this feature is indicative of low occupancy, consistent with the previously estimated CP:SP molar ratio of 2:1 (Poliakov et al., 2008). The hook includes the conserved RIIK motif that was previously hypothesized to interact with CP (Dearborn et al., 2011). The RIIK motif points into the hydrophobic cleft between the A and P domains, where R202, I203 and I204 make numerous contacts with the CP (Figure 7B; Table 2). In the preceding α-helix, L194, I197, A198 and K201 make contacts predominantly with the N-arm α-helix of CP (Figure 7B; Table 2). In subunits C and F only, residues Q192, R199 and N206 contact the adjacent CP subunits (B and E, respectively) (Figure 7B), presumably reflecting the hexamer skew that shifts these subunits relative to each other (Figure 5A).
 
@@ -85,9 +411,414 @@ The 80α procapsid map had a density next to N-arm helix α1 (Figure 7A) that wa
 
 **Figure 7.:** (A) Ribbon diagram of CP and SP from subunit C of the 80α procapsid with the density corresponding to SP superimposed, colored as in Figure 3E. (B) Detail of the SP-CP interaction, with relevant residues highlighted (stick representation) and labeled. Key interactions (<4 Å) are indicated by stippled lines. (C) Ribbon diagram of CP and CpmB from subunit C in the SaPI1 procapsid showing the density corresponding to CpmB, colored as in Figure 3F. The NMR structure of the N-terminal dimerization domain of CpmB (salmon) has been placed in the density, but could not be modeled accurately. (D) Detail of CpmB-CP interaction with relevant residues and distances (<4 Å) indicated. (E) Superposition of CpmB (blue) and SP (gray). Side chains in CpmB for residues that differ from their equivalents in SP are shown in red. (F) Ribbon diagram showing the interaction of one CpmB dimer (orange and salmon) with two adjacent hexameric capsomers. The C and D subunits are colored (green and yellow, respectively); other subunits are in gray. The positions of two twofold and one threefold symmetry axis are indicated.
 
+**Table 2.**
+ List of contacts between SP and CP in the 80α procapsid (panel A, left) and between CpmB and CP in the SaPI1 procapsid (panel B, right).Most contacts are within the same subunit (chain C), but some contacts are made with the adjacent subunit (chain B). Corresponding residues in SP and CpmB are on the same row. The assigned SP sequence starts on P191, while CpmB starts on Q48. A contact is defined as an interatomic distance of ≤4 Å. The table lists the specific residues that are involved in these contacts and enumerates the residues (# Res) and atoms (# Atoms) that contribute to these contacts. Residues that make the most contacts (≥5 interatomic pairs) are highlighted in green, while those that display ≤1 contacts are highlighted in red. ‘Intermediate’ contacts (2–4) are shown in yellow.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">A. 80α procapsid. contacts (≤4 Å) between SP (subunit C) and CP</th>
+      <th colspan="6">B. SaPI1 procapsid. contacts (≤4 Å) between CpmB (subunit C) and CP</th>
+    </tr>
+    <tr>
+      <th colspan="2">SP</th>
+      <th>CP chain C</th>
+      <th>CP chain B</th>
+      <th>Res</th>
+      <th>Atoms</th>
+      <th colspan="2">CpmB</th>
+      <th>CP chain C</th>
+      <th>CP chain B</th>
+      <th>Res</th>
+      <th>Atoms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Q</td>
+      <td>48</td>
+      <td></td>
+      <td>N120</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E</td>
+      <td>49</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>E</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Q</td>
+      <td>51</td>
+      <td></td>
+      <td>E117, N120</td>
+      <td>2</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>S</td>
+      <td>52</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>K</td>
+      <td>53</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Q</td>
+      <td>54</td>
+      <td>N41</td>
+      <td></td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>K</td>
+      <td>55</td>
+      <td>E67</td>
+      <td>E117, Y121</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Q</td>
+      <td>56</td>
+      <td></td>
+      <td>Q125</td>
+      <td>1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Y</td>
+      <td>57</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>191</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>G</td>
+      <td>58</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>192</td>
+      <td></td>
+      <td>E129, Y121</td>
+      <td>2</td>
+      <td>5</td>
+      <td>T</td>
+      <td>59</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>193</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>T</td>
+      <td>60</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>194</td>
+      <td>T45, L48, I253</td>
+      <td></td>
+      <td>3</td>
+      <td>6</td>
+      <td>L</td>
+      <td>61</td>
+      <td>T45</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>195</td>
+      <td>Y63</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>Q</td>
+      <td>62</td>
+      <td>Y63, E64, P65</td>
+      <td></td>
+      <td>3</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>196</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>N</td>
+      <td>63</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>197</td>
+      <td>T45, Q49, M52</td>
+      <td></td>
+      <td>3</td>
+      <td>4</td>
+      <td>L</td>
+      <td>64</td>
+      <td>Q49</td>
+      <td></td>
+      <td>1</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>198</td>
+      <td>M52, Y63</td>
+      <td></td>
+      <td>2</td>
+      <td>4</td>
+      <td>A</td>
+      <td>65</td>
+      <td>M52, Y63</td>
+      <td></td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>199</td>
+      <td></td>
+      <td>E50, P32</td>
+      <td>2</td>
+      <td>5</td>
+      <td>K</td>
+      <td>66</td>
+      <td></td>
+      <td>P132</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>200</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>Q</td>
+      <td>67</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>201</td>
+      <td>Q49, E53</td>
+      <td></td>
+      <td>2</td>
+      <td>6</td>
+      <td>N</td>
+      <td>68</td>
+      <td>M52, E53</td>
+      <td></td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>202</td>
+      <td>Q59, L60, G61, K62, G247</td>
+      <td></td>
+      <td>5</td>
+      <td>4</td>
+      <td>R</td>
+      <td>69</td>
+      <td>M58, Q59, L60, G61</td>
+      <td></td>
+      <td>4</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>203</td>
+      <td>Q59, V232, P230</td>
+      <td></td>
+      <td>3</td>
+      <td>7</td>
+      <td>I</td>
+      <td>70</td>
+      <td>Q59, P230</td>
+      <td></td>
+      <td>2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>204</td>
+      <td>L60, N194, A195, P230</td>
+      <td></td>
+      <td>4</td>
+      <td>11</td>
+      <td>I</td>
+      <td>71</td>
+      <td>N194, P230</td>
+      <td>K235</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>205</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>K</td>
+      <td>72</td>
+      <td></td>
+      <td>K235</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>206</td>
+      <td></td>
+      <td>Y139, K235</td>
+      <td>2</td>
+      <td>6</td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The SaPI1 procapsid map had the internal protrusions previously attributed to dimers of CpmB (Dearborn et al., 2011) (Figure 3E). The distal parts of the protrusions were not well ordered and appeared to correspond to a superposition of several alternate orientations of the CpmB N-terminal dimerization domain, for which we previously determined the NMR structure (Figure 7C). Closer to the capsid shell, the density became interpretable, and was modeled de novo as residues 41–72 of CpmB (Figure 7D). The C-terminal part of CpmB that includes the RIIK motif forms a helix-and-hook structure that is almost identical to that formed by SP in the 80α procapsid, and makes similar interactions with CP (Figure 7D,E). Contacts between CpmB and adjacent CP subunits are more extensive than in the 80α procapsid, involving several additional Gln residues in the α-helix (Q48, Q51, Q56) (Figure 7D). Each CpmB dimer straddles two capsomers with legs that connect with the capsid shell (Figures 3E and 7F). There are two types of protrusions: one that ties together C and D subunits around the threefold axis, and another, weaker density, that interacts with A and B subunits, connecting hexamers and pentamers around quasi-threefold symmetry axes (Figure 4B).
 
-## Mutational analysis of the SP-CP interaction
+### Mutational analysis of the SP-CP interaction
 
 We previously made an 80α lysogen (strain ST82; see Key Resources) with cpmA and cpmB inserted into the capsid operon immediately upstream of the SP gene (ORF46) (Damle et al., 2012). Phage particles produced by induction of this lysogen had predominantly small capsids that were unable to package a complete 80α genome, and were thus non-infectious. We screened this lysogen for escape mutants that would evade size redirection, make infectious T = 7 particles, and form plaques. The escape mutants identified were exclusively located in the cpmAB insertion. Of the sixteen mutants analyzed, five had lost the insertion (only one of these was sequenced and it retained only 174 bp at the beginning of cpmA), five had nonsense mutations in cpmB, and six were missense mutations in cpmB. The nonsense mutants had lost from 8 to 45 residues from the C-terminus of CpmB, demonstrating the importance of the C-terminus for CpmB function. The CpmB missense mutations included V31D, D34N, R69K, R69S, and I70T. V31 and D34 correspond to the dimer interface observed in the NMR structure of CpmB (Dearborn et al., 2011), suggesting that these mutants were defective in dimerization. R69 and I70 are part of the RIIK motif at the C-terminus of CpmB (Figure 8) and both make numerous contacts with CP in the SaPI1 procapsid structure (Table 2). Mutants at these sites presumably led to a failure of CpmB to interact with CP.
 
@@ -96,6 +827,199 @@ We previously made an 80α lysogen (strain ST82; see Key Resources) with cpmA an
 **Figure 8.:** Size redirection negative mutations in CpmB and lethal mutations in SP are indicated (red). The mutations in CP that suppressed the I203T mutant are listed (green). Alignment generated in ClustalW and rendered with ESPript 2.0.
 
 Based on the observed homology between the C-termini of CpmB and SP (Figure 8), we introduced the corresponding mutations (R202K and I203T) individually into the RIIK motif of SP (strains ST196 and ST358). Like the corresponding residues in CpmB, both residues form numerous contacts with CP in the 80α procapsid (Figure 7; Table 2). As expected, both mutations were lethal to the phage (Table 3). In the few plaques that formed, R202K had reverted to Arg. In order to identify second-site mutants in CP that might compensate for the SP defects, we generated R202S and R202E (strains ST278 and ST279), for which two base substitutions would be required for reversion. These mutations were also lethal (Table 3) and no compensatory mutations or revertants were identified. All mutations at R202 were also unable to mobilize SaPI1, demonstrating that this defect could not be compensated by wildtype CpmB (strains ST197, ST366 and ST367; Table 3).
+
+**Table 3.**
+ Genetic analysis of 80α and SaPI1, listing the S. aureus strains and the genotypes of the 80α prophages and SaPI1 elements that they harbor.SaPI1 also includes the tst::tetM insertion that confers tetracycline resistance. The corresponding phage titers (PFU/ml) and tetM transducing titers (TU/ml) are from filtered lysates resulting from induction with mitomycin C. Titers of mutations considered lethal or greatly impaired are shown in red; titers that are essentially wildtype are shown in green. WT = wildtype; N/D = not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Phage</th>
+      <th>SaPI1</th>
+      <th>Phage titer</th>
+      <th>SaPI1 titer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RN10616</td>
+      <td>WT</td>
+      <td>–</td>
+      <td>8.70E + 10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>RN10628</td>
+      <td>WT</td>
+      <td>WT</td>
+      <td>5.10E + 08</td>
+      <td>1.33E + 08</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST196</td>
+      <td>SP R202K</td>
+      <td>–</td>
+      <td>&lt;10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST197</td>
+      <td>SP R202K</td>
+      <td>WT</td>
+      <td>N/D</td>
+      <td>&lt;10</td>
+    </tr>
+    <tr>
+      <td>ST278</td>
+      <td>SP R202S</td>
+      <td>–</td>
+      <td>&lt;10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST366</td>
+      <td>SP R202S</td>
+      <td>WT</td>
+      <td>&lt;10</td>
+      <td>1.67E + 01</td>
+    </tr>
+    <tr>
+      <td>ST279</td>
+      <td>SP R202E</td>
+      <td>–</td>
+      <td>&lt;10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST367</td>
+      <td>SP R202E</td>
+      <td>WT</td>
+      <td>N/D</td>
+      <td>&lt;10</td>
+    </tr>
+    <tr>
+      <td>ST358</td>
+      <td>SP I203T</td>
+      <td>–</td>
+      <td>1.00E + 02</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST368</td>
+      <td>SP I203T</td>
+      <td>WT</td>
+      <td>1.71E + 02</td>
+      <td>6.67E + 06</td>
+    </tr>
+    <tr>
+      <td>ST469</td>
+      <td>SP I204L</td>
+      <td>–</td>
+      <td>5.33E + 10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST417</td>
+      <td>SP A198I</td>
+      <td>–</td>
+      <td>1.00E + 01</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST454</td>
+      <td>SP A198I</td>
+      <td>WT</td>
+      <td>&lt;10</td>
+      <td>4.18E + 06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST384</td>
+      <td>CP M52L</td>
+      <td>–</td>
+      <td>1.30E + 10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST415</td>
+      <td>CP M52Q</td>
+      <td>–</td>
+      <td>1.00E + 01</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST481</td>
+      <td>CP M52Q</td>
+      <td>WT</td>
+      <td>&lt;10</td>
+      <td>3.00E + 01</td>
+    </tr>
+    <tr>
+      <td>ST385</td>
+      <td>CP Y123C</td>
+      <td>–</td>
+      <td>1.47E + 10</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ST466</td>
+      <td>SP::CpmBCTD</td>
+      <td>–</td>
+      <td>2.70E + 09</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>ST467</td>
+      <td>SP::CpmBCTD</td>
+      <td>WT</td>
+      <td>9.00E + 06</td>
+      <td>9.25E + 05</td>
+    </tr>
+    <tr>
+      <td>ST468</td>
+      <td>SP::CpmBCTD</td>
+      <td>CpmB::SPCTD</td>
+      <td>6.80E + 06</td>
+      <td>9.00E + 05</td>
+    </tr>
+    <tr>
+      <td>ST458</td>
+      <td>WT</td>
+      <td>CpmB::SPCTD</td>
+      <td>1.80E + 08</td>
+      <td>9.60E + 08</td>
+    </tr>
+    <tr>
+      <td>ST465</td>
+      <td>SP R202E</td>
+      <td>CpmB::SPCTD</td>
+      <td>&lt;10</td>
+      <td>1.40E + 02</td>
+    </tr>
+  </tbody>
+</table>
 
 For the SP I203T mutant, compensatory mutations resulting in plaque formation appeared at low frequency in both SP and CP. Pseudo-revertants of I203T included I203M, I203L and I203K, suggesting that a long, hydrophobic side chain is important at this position. I203T was also rescued by a second mutation in SP (K201I), possibly by recovering the local hydrophobicity. In the CP, compensatory mutations occurred in M52, which was repeatedly replaced by Leu and Ile, and Y123, which changed to Cys (Figure 8), suggesting an involvement of these residues in SP binding. Neither M52L nor Y123C introduced separately into 80α affected phage titers (strains ST384 and ST385; 32). In the 80α procapsid structure, M52 is located in helix α1 in the N-arm of CP and is not directly involved in interactions with SP I203T or other residues in the RIIK motif. Instead, it interacts with I197 and A198 in the SP α-helix (Figure 7B). The M52L mutation might therefore strengthen these hydrophobic interactions. Consistent with this, an M52Q mutant was lethal to the phage (ST415) and was unable to mobilize SaPI1 (ST481; Table 3). Mutation of A198 to Ile was also lethal to the phage, presumably because there is insufficient space for the bulky side chain (ST417; Table 3). The other site of compensatory mutations, Y123, is not involved in SP interactions, but instead interacts with residues in the N-arm of CP (Figure 7B), suggesting a more indirect effect on SP binding.
 
@@ -135,45 +1059,374 @@ Restricting the size of the capsids is only one mechanism that the SaPIs use to 
 
 ## Materials and methods
 
-## Key resources
+### Key resources
 
-## Bacterial culture
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Staphylococcus aureus)</td>
+      <td>RN4220</td>
+      <td>Network onantimicrobial resistance inStaphylococcus aureus</td>
+      <td>NARSA: NRS144</td>
+      <td>Obtained from Richard Novick</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>RN10616</td>
+      <td>PMID: 19347993</td>
+      <td></td>
+      <td>RN4220(80α); Obtained from Richard Novick</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>RN10628</td>
+      <td>PMID: 19347993</td>
+      <td></td>
+      <td>RN4220(80α) SaPI1; Obtained from Richard Novick</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST24</td>
+      <td>PMID: 19347993</td>
+      <td></td>
+      <td>RN4220 (80α ΔterS)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST65</td>
+      <td>PMID: 21821042</td>
+      <td></td>
+      <td>RN4220 (80α Δorf44) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST82</td>
+      <td>PMID: 22709958</td>
+      <td></td>
+      <td>RN4220 (80α::SaPI1cpmAB)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST91</td>
+      <td>PMID: 22980502</td>
+      <td></td>
+      <td>RN4220 (80α ΔSP)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST100</td>
+      <td>PMID: 21821042</td>
+      <td></td>
+      <td>RN4220 (80α) (SaPI1ΔcpmB)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST196</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202K)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST197</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202K) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST248</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α ΔCP)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST278</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202S)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST279</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202E)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST358</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::I203T)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST366</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202S) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST367</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α S::R202E) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST368</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::I203T) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST384</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α CP::M52L)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST385</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α CP::Y123C)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST415</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α CP::M52Q)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST417</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::A198I)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST454</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::A198I) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST458</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α) SaPI1 CpmB::SPCTD</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST465</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::R202E) SaPI1 CpmB::SPCTD</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST466</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::CpmBCTD)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST467</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::CpmBCTD) SaPI1</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST468</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α SP::CpmBCTD) SaPI1 CpmB::SPCTD</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (S. aureus)</td>
+      <td>ST481</td>
+      <td>this paper</td>
+      <td></td>
+      <td>RN4220 (80α CP::M52Q) SaPI1</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>In-Fusion HD cloning kit</td>
+      <td>Clontech</td>
+      <td>Clontech: Cat # 639646</td>
+      <td>http://www.clontech.com/US/Products/Cloning_and_Competent_Cells/Cloning_Kits/Older_Cloning_Kits?sitex=10020:22372:US</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>Stellar</td>
+      <td>Clontech</td>
+      <td>Clontech: Cat # 636763</td>
+      <td>Competent E. coli HST08 strain</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pMAD (plasmid)</td>
+      <td>PMID: 15528558</td>
+      <td></td>
+      <td>Obtained from Richard Novick; used to generate all S. aureus strains listed above</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEW3 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEW14 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEW19 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pEW20 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLAK1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP2 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP3 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP14 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP15 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP31 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pLKP32 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Made in pMAD by In-Fusion cloning</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>EMAN2 (computer program suite)</td>
+      <td>PMID: 16859925</td>
+      <td></td>
+      <td>Downloaded from http://blake.bcm.edu/ emanwiki/EMAN2</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>jspr (computer program suite)</td>
+      <td>PMID: 24357374</td>
+      <td></td>
+      <td>Downloaded from http://jiang.bio.purdue.edu/jspr</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>BSOFT (computer program suite)</td>
+      <td>PMID:17011211</td>
+      <td></td>
+      <td>Downloaded from https://lsbr.niams.nih.gov/bsoft/ bsoft_download.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial culture
 
 Bacterial strains used in this work are listed under key resources. S. aureus cultures were grown in Tryptic Soy Broth (TSB) or on Tryptic Soy Agar (TSA) plates (1.8% agarose) at 32°C. When necessary, the media were supplemented with erythromycin (5 μg/ml) or tetracycline (5 µg/ml). Escherichia coli strains were grown in lysogeny broth (LB) or on LB agar at 37°C and supplemented with ampicillin (100 μg/ml) when needed.
 
-## DNA manipulations
+### DNA manipulations
 
 All plasmids in this study were constructed via Gibson assembly using the Clontech In-Fusion HD kit (Takara Bio USA, Mountain View, CA). Primers used are listed in Supplementary file 1. Gel and PCR purifications were performed using the Nucleospin Gel and PCR Clean-up Kit (Macherey-Nagel, Bethlehem, PA) in accordance with the manufacturer’s instructions. Plasmid DNA preparations were performed using the QIAprep Spin Miniprep Kit (Qiagen, Valencia, CA) in accordance with the manufacturer’s instructions. All plasmids were verified by Sanger sequencing (MWG Operon, Huntsville, AL).
 
-## Preparation of competent cells and transformation of S. aureus
+### Preparation of competent cells and transformation of S. aureus
 
 Electro-competent S. aureus cells were prepared as in Lee, 1995 and stored at −80°C in 60 µl aliquots. After thawing aliquots on ice, 0.3–0.6 μg plasmid DNA was added. After 30 min on ice, mixture was transferred to a 0.1 cm Gene Pulser cuvette and electroporated on the STA setting (2.50 kV for one pulse, 2.5 ms) of a MicroPulser electroporation apparatus (Bio-Rad, Hercules, CA). Immediately after the pulse, cells were transferred to a 2 ml microcentrifuge tube containing 1 ml brain heart infusion broth (BHI). Cells were recovered by shaking for 2 hr at 200 rpm, 30°C, and then plated on TSA plates supplemented with appropriate antibiotics and/or X-gal, as needed.
 
-## Allelic exchange
+### Allelic exchange
 
 Allelic exchange was done using the pMAD shuttle vector, as previously described (Arnaud et al., 2004; Poliakov et al., 2008). The desired mutations were introduced into pMAD using the Clontech In-Fusion HD cloning kit. Flanking DNA fragments containing the mutation of interest and homologous overlapping sequences were amplified via PCR (Supplementary file 1). The purified PCR products were combined with the In-Fusion enzyme and NcoI-digested pMAD. Plasmids were then transformed into electrocompetent S. aureus strains with the appropriate deletions (ST91, ST100 or ST248; see Key Resources). The cells were plated on TSA with 5 µg/ml erythromycin and 200 µg/ml X-Gal at 42°C. Resultant blue colonies were selected and grown at 30°C in TSB without erythromycin, followed by plating at 42°C to cure the cells of the plasmid. White colonies were screened by PCR and sequencing to confirm the desired mutation.
 
-## Phage propagation and titering
+### Phage propagation and titering
 
 Lysogenic S. aureus strains were grown at 32°C in 25:1 CY media with β-glycerophosphate (Novick, 1991). At A600 ≈ 0.6 OD, the cells were diluted 1:10 into a 1:1 mixture of CY + β-glycerophosphate and S. aureus phage buffer (50 mM Tris-HCl pH 7.8, 100 mM NaCl, 1 mM MgSO4 and 4 mM CaCl2). Lysis was induced via UV irradiation (20 s under UV in a Nuaire biological safety cabinet) or with mitomycin C (2 µg/ml), followed by shaking at 100 rpm at 32°C until lysis occurred (around 3 hr). Lysates were sterile-filtered and kept at 4°C. Serial dilutions of the lysate in S. aureus phage buffer were plated with 100 µl overnight culture of RN4220 on S. aureus phage agar (Novick, 1991) using soft agar overlay supplemented with 0.5 mM CaCl2. All plaque assays were performed in triplicate. Plaque purification was performed with plaques cored from a plate using a sterile Pasteur pipette, resuspended in 1 ml of phage buffer, serially diluted and plated. This process was repeated twice. The final plaque was resuspended in 100 µl water and used as template for PCR amplification and for sequencing.
 
-## Transduction assays
+### Transduction assays
 
 To make double lysogens containing mutant 80α and wildtype SaPI1, 100 µl of the mutant 80α lysogen were combined 1:1 with serial dilutions of a filtered RN10628 lysate, and incubated for 15 min at 22°C. The entire volume (200 μl) was spread onto GL agar plates supplemented with 0.17 mM Na citrate and 5 μg/ml tetracycline (Novick, 1991) and incubated for 48 hr at 30°C. The resulting transductants were checked by PCR and sequencing for the presence of both 80α and SaPI1. To check for mobilization of mutant and wildtype SaPI1, the double lysogens were induced with mitomycin C. The resulting lysate was filtered, combined with RN4220 and plated on GL agar with 5 µg/ml tetracycline. Resulting colonies were counted to yield a transducing titer. The values reported are the average of at least three independent determinations.
 
-## Preparation of cryo-EM samples
+### Preparation of cryo-EM samples
 
 80α procapsids were produced by mitomycin induction of the S. aureus 80α lysogen ST24 (see Key Resources), which has a deletion of the small terminase (terS) gene, as previously described (Spilman et al., 2011). After lysis, cell debris was removed by centrifugation at 7,000 g for 20 min. The procapsids were collected by precipitation with 10% PEG 8,000 (w/v) and 0.5 M NaCl, followed by centrifugation at 7,000 g for 20 min. The pellet was resuspended in phage buffer, made up to 1.42 g/cm3 CsCl, and centrifuged for 20 hr at 70,000 rpm in a Beckman NVT90 rotor at 15°C. The procapsid band was collected with a needle and dialyzed into phage dialysis buffer (25 mM Tris-HCl pH 7.8, 50 mM NaCl, 1 mM MgSO4 and 4 mM CaCl2). Separation of procapsids from phage tails was achieved by centrifugation through a 10–40% (w/v) sucrose gradient in phage dialysis buffer for 2 hr at 30,000 rpm in a Beckman SW41 rotor at 4°C. The procapsid-containing fractions were identified by SDS-PAGE, pooled and pelleted for 1 hr at 50,000 rpm in a Beckman Type 70Ti rotor at 4°C. The pellet was resuspended in phage dialysis buffer.
 
 SaPI1 procapsids were produced similarly by induction of strain ST65, which includes SaPI1 tst::tetM and 80α with a deletion of orf44, which encodes the minor capsid protein gp44 (see Key Resources). While gp44 is essential to 80α, deletion of orf44 has no effect on SaPI1 viability (Dearborn et al., 2011). ST65 produces procapsids as well as virions, which are readily separated by CsCl density gradient centrifugation. Purification was as described for 80α procapsids. The resulting sample was contaminated with about 50% empty, expanded capsids, presumably resulting from virions that had lost their DNA. However, these capsids were easily distinguishable in the micrographs.
 
-## Electron microscopy
+### Electron microscopy
 
 For negative stain EM, crude lysates were clarified by centrifugation at 5,000 g for 20 min, followed by pelleting for 1 hr at 50,000 rpm in a Beckman 70Ti rotor. The pellets were resuspended in phage dialysis buffer at approximately 0.1 mg/ml concentration. Samples were applied to glow-discharged continuous carbon grids, washed 2x with H2O and stained with 1% uranyl acetate before imaging in an FEI Tecnai F20 electron microscope equipped with a Gatan Ultrascan 4000 CCD camera.
 
 Samples for cryo-EM, at a protein concentration of 1 mg/ml in phage dialysis buffer, were placed on glow-discharged (40 mA, 15 s) 200 mesh nickel Quantifoil R2/1 grids and vitrified in liquid ethane using a Vitrobot Mark IV with 5 s blot time and blot pressure of 5, at 80% humidity. Grids were checked for ice quality and concentration in an FEI Tecnai F20 microscope equipped with a Gatan 626 side entry holder, before being shipped to the Biological Science Imaging Resource (BSIR) at Florida State University in a dry cryogenic shipper. At BSIR, the grids were imaged with an FEI Titan Krios electron microscope equipped with a Direct Electron DE-20 detector operated in integrating mode, at a nominal magnification of 29,000x, resulting in 1.21 Å/pixel sampling. Data were collected at 32 frames per second and a total dose of ≈30 e–/Å2. Frames were aligned and integrated using the DE_process_frames script (v. 2.8.1) from Direct Electron, using a quanta value of 3.
 
-## Three-dimensional reconstruction and model building
+### Three-dimensional reconstruction and model building
 
 Particles were picked semi-automatically using EMAN2 (Tang et al., 2007). Contrast transfer function parameters were determined and particle stacks were phase flipped in EMAN2. No amplitude correction was made. Icosahedral reconstruction was done using the program jspr, mainly following the procedures outlined in Guo and Jiang (2014). The particles were divided into two half-sets at the outset, which were processed independently. Starting models for each set were generated using the random orientation generation procedure in jspr (Guo and Jiang, 2014). The final data sets included 10,527 particles for 80α and 14,087 particles for SaPI1. The final maps were generated from the re-combined half datasets and sharpened by application of an empirical inverse B factor using bfilter from the BSOFT suite (Heymann and Belnap, 2007). Local resolution in both maps was calculated using ResMap (Kucukelbir et al., 2014).
 

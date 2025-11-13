@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.42687.001 Decoding the functional connectivity of the nervous system is facilitated by transgenic methods that express a genetically encoded reporter or effector in specific neurons; however, most transgenic lines show broad spatiotemporal and cell-type expression. Increased specificity can be achieved using intersectional genetic methods which restrict reporter expression to cells that co-express multiple drivers, such as Gal4 and Cre. To facilitate intersectional targeting in zebrafish, we have generated more than 50 new Cre lines, and co-registered brain expression images with the Zebrafish Brain Browser, a cellular resolution atlas of 264 transgenic lines. Lines labeling neurons of interest can be identified using a web-browser to perform a 3D spatial search (zbbrowser.com). This resource facilitates the design of intersectional genetic experiments and will advance a wide range of precision circuit-mapping studies.
+Decoding the functional connectivity of the nervous system is facilitated by transgenic methods that express a genetically encoded reporter or effector in specific neurons; however, most transgenic lines show broad spatiotemporal and cell-type expression. Increased specificity can be achieved using intersectional genetic methods which restrict reporter expression to cells that co-express multiple drivers, such as Gal4 and Cre. To facilitate intersectional targeting in zebrafish, we have generated more than 50 new Cre lines, and co-registered brain expression images with the Zebrafish Brain Browser, a cellular resolution atlas of 264 transgenic lines. Lines labeling neurons of interest can be identified using a web-browser to perform a 3D spatial search (zbbrowser.com). This resource facilitates the design of intersectional genetic experiments and will advance a wide range of precision circuit-mapping studies.
 
 ## Introduction
 
@@ -52,6 +52,63 @@ We previously isolated more than 200 Gal4 lines with expression in subregions of
 ![Figure 3.](https://cdn.elifesciences.org/articles/42687/elife-42687-fig3-v2.jpg)
 
 **Figure 3.:** Horizontal maximum projection of 45 new Gal4 enhancer trap lines (depth coded; huC counter-label, grey).
+
+**Table 1.**
+ Summary of transgenic lines in ZBB2.Total numbers of enhancer trap lines, and transgenic lines (made using promoter fragments from genes, or through BAC recombination), broken down by type: Gal4, Cre or fluorescent protein (FP). Right columns total the number of lines where genomic information driving the expression pattern is available. This information inherently exists for transgenic lines, and was derived through integration site mapping for enhancer trap lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">All lines (n = 264)</th>
+      <th></th>
+      <th colspan="3">Mapped (n = 171)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Gal4</th>
+      <th>Cre</th>
+      <th>FP</th>
+      <th></th>
+      <th>Gal4</th>
+      <th>Cre</th>
+      <th>FP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enhancer trap</td>
+      <td>138</td>
+      <td>65</td>
+      <td>5</td>
+      <td></td>
+      <td>96</td>
+      <td>15</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Transgenic</td>
+      <td>20</td>
+      <td>0</td>
+      <td>36</td>
+      <td></td>
+      <td>20</td>
+      <td>0</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>158</td>
+      <td>65</td>
+      <td>41</td>
+      <td></td>
+      <td>116</td>
+      <td>15</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
 
 Enhancer traps randomly integrate into the genome and it is not usually possible to determine the identity of the cells labeled by their spatial pattern of expression alone. However, cell-type information for enhancer trap lines can be inferred from co-localization with reporters whose expression is directed by a defined promoter, or through integration into a bacterial artificial chromosome. ZBB2 contains expression data for 56 such transgenic lines, including reporters for most major neurotransmitters. The relative mean expression intensity for nine major cell-type markers within neuroanatomic. Additional cell-type information in enhancer trap lines may be revealed by integration site mapping, because enhancer traps often recapitulate, at least in part, the expression pattern of genes close to the site of transgene integration. We therefore developed a new method to efficiently map integration sites, using an oligonucleotide to hybridize with the enhancer trap tol2 arms and capture flanking genomic DNA fragments for sequencing (see Materials and methods for detail). We recovered the integration site for 55 Gal4 and Cre enhancer trap lines (detailed in ). Altogether 171 of the lines in ZBB2 either use a defined promoter, or have a known genomic integration site, providing molecular genetic information on cell-type identity (Table 1).
 
@@ -87,17 +144,832 @@ The ZBB2 atlas advances mapping of the zebrafish brain at single cell resolution
 
 ## Materials and methods
 
-## Husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y234</td>
+      <td>PMID:23100441</td>
+      <td>ZFIN:ZDB-ALT-121114–10</td>
+      <td>ZFIN symbol:y234Et; Et(SCP1:Gal4ff)y234</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y236</td>
+      <td>PMID:23293587</td>
+      <td>ZFIN:ZDB-ALT-130214–2</td>
+      <td>ZFIN symbol:y236Et; Et(REx2-cfos:kGal4ff)y236</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y237</td>
+      <td>PMID:23293587</td>
+      <td>ZFIN:ZDB-ALT-130214–3</td>
+      <td>ZFIN symbol:y237Et; Et(REx2-cfos:kGal4ff)y237</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y241</td>
+      <td>PMID:24203884</td>
+      <td>ZFIN:ZDB-ALT-131007–1</td>
+      <td>ZFIN symbol:y241Et; Et(REx2-SCP1:kGal4ff)y241</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y242</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-130214–5</td>
+      <td>ZFIN symbol:y242Et; Et(REx2-SCP1:Gal4)y242</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y244</td>
+      <td>PMID:23293587</td>
+      <td>ZFIN:ZDB-ALT-130214–7</td>
+      <td>ZFIN symbol:y244Et; Et(REx2-SCP1:kGal4ff)y244</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y252</td>
+      <td>PMID:25224259</td>
+      <td>ZFIN:ZDB-ALT-151117–1</td>
+      <td>ZFIN symbol:y252Et; Et(REx2-SCP1:kGal4ff)y252</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y264</td>
+      <td>PMID:24848468</td>
+      <td>ZFIN:ZDB-ALT-141111–2</td>
+      <td>ZFIN symbol:y264Et; Et(SCP1:Gal4ff)y264</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y265</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–10</td>
+      <td>ZFIN symbol:y265Et; Et(SCP1:Gal4ff)y265</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y269</td>
+      <td>PMID:24848468</td>
+      <td>ZFIN:ZDB-ALT-141111–3</td>
+      <td>ZFIN symbol:y269Et; Et(REx2-cfos:kGal4ff)y269</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y270</td>
+      <td>PMID:24848468</td>
+      <td>ZFIN:ZDB-ALT-141111–4</td>
+      <td>ZFIN symbol:y270Et; Et(REx2-cfos:kGal4ff)y270</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y271</td>
+      <td>PMID:25628360</td>
+      <td>ZFIN:ZDB-ALT-150721–4</td>
+      <td>ZFIN symbol:y271Et; Et(SCP1:kGal4ff)y271</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y274</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–11</td>
+      <td>ZFIN symbol:y274Et; Et(SCP1:Gal4ff)y274</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y348</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–12</td>
+      <td>ZFIN symbol:y348Et; Et(REx2-SCP1:kGal4ff)y348</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y387</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–14</td>
+      <td>ZFIN symbol:y387Et; Et(tph2:Gal4ff)y387</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y394</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–16</td>
+      <td>ZFIN symbol:y394Et; Et(cfos:Gal4ff)y394</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y396</td>
+      <td>PMID:26635538</td>
+      <td>ZFIN:ZDB-ALT-170320–13</td>
+      <td>ZFIN symbol:y396Et; Et(SCP1:Gal4ff)y396</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y412</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–20</td>
+      <td>ZFIN symbol:y412Et; Et(cfos:Gal4ff)y412</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y416</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–21</td>
+      <td>ZFIN symbol:y416Et; Et(cfos:Gal4ff)y416</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y420</td>
+      <td>PMID:26635538</td>
+      <td>ZFIN:ZDB-ALT-180717–23</td>
+      <td>ZFIN symbol:y420Et; Et(REx2-cfos:Gal4ff)y420</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y421</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–24</td>
+      <td>ZFIN symbol:y421Et; Et(REx2-cfos:Gal4)y421</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y433</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-151125–10</td>
+      <td>ZFIN symbol:y433Et; Et(cfos:kGal4ff)y433</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y436</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-151125–13</td>
+      <td>ZFIN symbol:y436Et; Et(cfos:Gal4ff)y436</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y441</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–27</td>
+      <td>ZFIN symbol:y441Et; Et(cfos:Gal4ff)y441</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y444</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–28</td>
+      <td>ZFIN symbol:y444Et; Et(SCP1:Gal4ff)y444</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y445</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–29</td>
+      <td>ZFIN symbol:y445Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y445</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y456</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–30</td>
+      <td>ZFIN symbol:y456Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y456</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y457</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–31</td>
+      <td>ZFIN symbol:y457Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y457</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y458</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–32</td>
+      <td>ZFIN symbol:y458Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y458</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y459</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–33</td>
+      <td>ZFIN symbol:y459Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y459</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y465</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–34</td>
+      <td>ZFIN symbol:y465Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y465</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y467</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–35</td>
+      <td>ZFIN symbol:y467Et; Et(tph2:Gal4ff)y467</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y468</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–36</td>
+      <td>ZFIN symbol:y468Et; Et(cfos:Gal4ff)y468</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y469</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–37</td>
+      <td>ZFIN symbol:y469Et; Et(cfos:Gal4ff)y469</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y470</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–38</td>
+      <td>ZFIN symbol:y470Et; Et(REx2-SCP1:Gal4ff)y470</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y471</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–39</td>
+      <td>ZFIN symbol:y471Et; Et(REx2-SCP1:Gal4ff)y471</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y472</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–40</td>
+      <td>ZFIN symbol:y472Et; Et(REx2-SCP1:Gal4ff)y472</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y473</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–41</td>
+      <td>ZFIN symbol:y473Et; Et(cfos:Gal4ff)y473</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y477</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–43</td>
+      <td>ZFIN symbol:y477Et; Et(cfos:Gal4ff)y477</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y478</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–44</td>
+      <td>ZFIN symbol:y478Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y478</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y479</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–45</td>
+      <td>ZFIN symbol:y479Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y479</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y480</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–46</td>
+      <td>ZFIN symbol:y480Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y480</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y481</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–47</td>
+      <td>ZFIN symbol:y481Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y481</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y483</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–48</td>
+      <td>ZFIN symbol:y483Et; Et(attP-REx2-SCP1:BGi-Cre-2a-Cer-attP)y483</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y484</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–49</td>
+      <td>ZFIN symbol:y484Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y484</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y485</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–50</td>
+      <td>ZFIN symbol:y485Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y485</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y486</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–51</td>
+      <td>ZFIN symbol:y486Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y486</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y487</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–52</td>
+      <td>ZFIN symbol:y487Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y487</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y488</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–53</td>
+      <td>ZFIN symbol:y488Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y488</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y489</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–54</td>
+      <td>ZFIN symbol:y489Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y489</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y490</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–55</td>
+      <td>ZFIN symbol:y490Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y490</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y492</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB- ALT-180717–56</td>
+      <td>ZFIN symbol:y492Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y492</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y493</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–57</td>
+      <td>ZFIN symbol:y493Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y493</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y494</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–58</td>
+      <td>ZFIN symbol:y494Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y494</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y495</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–59</td>
+      <td>ZFIN symbol:y495Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y495</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y511</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–60</td>
+      <td>ZFIN symbol:y511Et; Et(cfos:Gal4ff)y511</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y512</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–61</td>
+      <td>ZFIN symbol:y512Et; Et(SCP1:Gal4)y512</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y514</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–63</td>
+      <td>ZFIN symbol:y514Et; Et(REx2-cfos:kGal4ff)y514</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y515</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–64</td>
+      <td>ZFIN symbol:y515Et; Et(REx2-cfos:kGal4ff)y515</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y519</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–65</td>
+      <td>ZFIN symbol:y519Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y519</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y520</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–66</td>
+      <td>ZFIN symbol:y520Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y520</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y521</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–67</td>
+      <td>ZFIN symbol:y521Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y521</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y523</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–68</td>
+      <td>ZFIN symbol:y523Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y523</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y524</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–69</td>
+      <td>ZFIN symbol:y524Et; Et(REx2-SCP1:BGi-Cre-2a-Cer)y524</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y526</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–70</td>
+      <td>ZFIN symbol:y526Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y526</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y528</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–71</td>
+      <td>ZFIN symbol:y528Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y528</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y532</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–72</td>
+      <td>ZFIN symbol:y532Et; Et(cfos:Gal4ff)y532</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y533</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–73</td>
+      <td>ZFIN symbol:y533Et; Et(SCP1:Gal4ff)y533</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y541</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–74</td>
+      <td>ZFIN symbol:y541Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y541</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y542</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–75</td>
+      <td>ZFIN symbol:y542Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y542</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y543</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–76</td>
+      <td>ZFIN symbol:y543Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y543</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y544</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–77</td>
+      <td>ZFIN symbol:y544Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y544</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y545</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–78</td>
+      <td>ZFIN symbol:y545Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y545</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y546</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–79</td>
+      <td>ZFIN symbol:y546Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y546</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y547</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–80</td>
+      <td>ZFIN symbol:y547Et; Et(REx2-SCP1:BGi-Cre)y547</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y548</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–81</td>
+      <td>ZFIN symbol:y548Et; Et(REx2-SCP1:BGi-Cre)y548</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y549</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–82</td>
+      <td>ZFIN symbol:y549Et; Et(REx2-SCP1:BGi-Cre)y549</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y550</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–83</td>
+      <td>ZFIN symbol:y550Et; Et(REx2-SCP1:BGi-Cre)y550</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y551</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–84</td>
+      <td>ZFIN symbol:y551Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y551</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y552</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–85</td>
+      <td>ZFIN symbol:y552Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y552</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y554</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–87</td>
+      <td>ZFIN symbol:y554Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y554</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y555</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–88</td>
+      <td>ZFIN symbol:y555Et; Et(REx2-SCP1:BGi-Cre)y555</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y556</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–89</td>
+      <td>ZFIN symbol:y556Et; Et(REx2-SCP1:BGi-Cre)y556</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y557</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–90</td>
+      <td>ZFIN symbol:y557Et; Et(REx2-SCP1:BGi-Cre)y557</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y558</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–91</td>
+      <td>ZFIN symbol:y558Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y558</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y559</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–92</td>
+      <td>ZFIN symbol:y559Et; Et(REx2-SCP1:BGi-Cre)y559</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y564</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–93</td>
+      <td>ZFIN symbol:y564Et; Et(SCP1:Gal4ff)y564</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y565</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–94</td>
+      <td>ZFIN symbol:y565Et; Et(REx2-SCP1:Gal4ff)y565</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y566</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–95</td>
+      <td>ZFIN symbol:y566Et; Et(REx2-cfos:Gal4ff)y566</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y567</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–96</td>
+      <td>ZFIN symbol:y567Et; Et(REx2-cfos:Gal4ff)y567</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y568</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–97</td>
+      <td>ZFIN symbol:y568Et; Et(REx2-SCP1:BGi-Cre-2a-Cer.zf3)y568</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y569</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–98</td>
+      <td>ZFIN symbol:y569Et; Et(REx2-SCP1:BGi-Cre)y569</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y570</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–99</td>
+      <td>ZFIN symbol:y570Et; Et(REx2-SCP1:BGi-Cre)y570</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y571</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–100</td>
+      <td>ZFIN symbol:y571Et; Et(R2R6-hoxa2-CNE-SCP1:BGi-Cre-2a-Cer)y571</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y574</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–101</td>
+      <td>ZFIN symbol:y574Et; Et(REx2-SCP1:BGi-Cre)y574</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y575</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–102</td>
+      <td>ZFIN symbol:y575Et; Et(cfos:Gal4)y575</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>y576</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ALT-180717–103</td>
+      <td>ZFIN symbol:y576Et; Et(cfos:Gal4)y576</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>βactin:Switch; y272</td>
+      <td>PMID:25628360</td>
+      <td>ZFIN:ZDB-ALT-150721–8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>vglut2a:DsRed; nns14</td>
+      <td>PMID:22302816</td>
+      <td>ZFIN:ZDB-ALT-110413–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>UAS:KillSwitch; y518</td>
+      <td>PMID:30078569</td>
+      <td>ZFIN:ZDB-ALT-181218–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>UAS:Kaede; s1999t</td>
+      <td>PMID:17335798</td>
+      <td>ZFIN:ZDB-ALT-070314–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>elavl3:h2b-GCaMP6; jf5</td>
+      <td>PMID:25068735</td>
+      <td>ZFIN:ZDB-ALT-141023–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>
+      <td>PMID:26635538</td>
+      <td>ZFIN:ZDB-ETCONSTRCT-151102–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>REx2-SCP1:BGi-Cre</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ETCONSTRCT-180514–2</td>
+      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>REx2-SCP1:BGi-Cre-2a-Cer.zf3 (plasmid)</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ETCONSTRCT-180518–1</td>
+      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>attP-REx2-SCP1:BGi-Cre-2a-Cer-attP</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ETCONSTRCT-151102–2</td>
+      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R2R6-hoxa2-CNE-SCP1:BGi-Cre-2a-Cer</td>
+      <td>This paper</td>
+      <td>ZFIN:ZDB-ETCONSTRCT-180514–1</td>
+      <td>Progenitors:REx2-SCP1:BGi-Cre-2a-Cer (plasmid)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tol2-arrm pulldown oligonucleotide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5-CTCAAGTGAAAGTACAAGTACTTAGGGAAAATTTTACTCAATTAAAAGTAAAAGTATCTGGCTAGAATCTTACTTGAGTAAAAGTAAAAAAGTACTCCATTAAAATTGTACTTGAGTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tol2-arrm pulldown oligonucleotide</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5-TGTAATTAAGTAAAAGTAAAAGTATTGATTTTTAATTGTACTCAAGTAAAGTAAAAATCCCCAAAAATAATACTTAAGTACAGTAATCAAGTAAAATTACTCAAGTACTTTACACCTCTG</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Advanced Normalization Tools</td>
+      <td>PMID:17659998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Zebrafish Brain Browser (desktop)</td>
+      <td>PMID:26635538</td>
+      <td></td>
+      <td>Download at https://science.nichd.nih.gov/confluence/display/burgess/Brain+Browser</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Zebrafish Brain Browser (online)</td>
+      <td>This paper</td>
+      <td>GitHub:BurgessLab/ZebrafishBrainBrowser</td>
+      <td>zbbrowser.com; Githhub hosts javascript code using X3DOM to render image files</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>PMID:22930834</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal images for ZBB2 lines</td>
+      <td>This paper</td>
+      <td>Dryad:doi:10.5061/dryad.tk467n8</td>
+      <td>Compressed archives containing 16-bit NIFTI format scans of individual larvae</td>
+    </tr>
+  </tbody>
+</table>
+
+### Husbandry
 
 Zebrafish (Danio rerio) were maintained on a Tubingen long fin strain background. Larval zebrafish were raised on 14/10 hr light/dark cycle at 28°C in E3h medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4, 1.5 mM HEPES, pH 7.3) with 300 µM N-Phenylthiourea (PTU, Sigma) to suppress melanogenesis for imaging. Experiments were conducted with larvae at 6 days post fertilization (dpf), before sex differentiation. Experimental procedures were approved by the NICHD animal care and use committee.
 
-## Zebrafish lines
+### Zebrafish lines
 
 Enhancer trap lines that express Cre (et-Cre lines) were initially isolated through enhancer trap screening using a tol2 vector containing a REx2-SCP1:BGi-Cre-2a-Cer cassette (286 adult fish screened) (Marquart et al., 2015). Although the fluorescent protein Cerulean is co-expressed with Cre in this vector, it was rarely strong enough to visualize directly, and we instead screened using the βactin:Switch transgenic line (Horstick et al., 2015). Thus subsequently, we removed the 2a-Cer cassette from the enhancer trap vector for generating new lines and injected a vector with a REx2-SCP1:BGi-Cre cassette (75 adult fish screened). At least 50 (usually over 100) offspring of injected fish were visually screened for RFP fluorescence from the βactin:Switch (Tg(actb2:loxP-eGFP-loxP-ly-TagRFPT)y272) reporter line (Horstick et al., 2015). As around 10% of injected animals transmitted more than a single expression pattern, likely reflecting several integration loci, we bred each line for multiple generations to isolate a single heritable transgene. Gal4 lines newly described here have been maintained for at least seven generations, in all cases with the UAS:Kaede reporter for visualizing expression. New Cre lines have been maintained for at least three generations, with the βactin:Switch reporter. Because we only retained lines with restricted areas of brain expression, we ultimately kept lines from around 20% of injected fish. For maintenance, Cre lines were crossed to fish heterozygous for the βactin:Switch transgene. Outcrossing to βactin:Switch was necessary because, as in other systems, leaky Cre expression recombines lox sites that are transmitted through the same gamete (Schmidt-Supprian and Rajewsky, 2007). Consequently, in clutches from et-Cre;βactin:Switch crossed to βactin:Switch, we discarded ~25% of embryos that showed ubiquitous RFP expression due to complete recombination of the Switch reporter in gametes also containing the Cre transgene. We also imaged previously described Cre lines with rhombomere-specific expression (Tabor et al., 2018). Gal4 enhancer trap lines were isolated as previously described (Bergeron et al., 2012). UAS reporter transgenes are susceptible to silencing leading to variegated expression. To minimize silencing, we raise single insertion UAS reporters with a broadly expressed Gal4 transgene. In each generation, we outcross to wildtype stock, and raise only double transgenic individuals with the brightest and most complete expression (typically around 20% of fluorescent protein positive embryos).
 
 Other zebrafish lines in this study were: UAS:Kaede (Tg(UAS-E1b:Kaede)s1999t (Davison et al., 2007), UAS:KillSwitch (Tg(14xUAS-E1b:BGi-lox-GFP-sv40-loxepNTR-TagRFPT)y518) (Tabor et al., 2018), y379-Cre and y484-Cre (Marquart et al., 2017), vglut2a:DsRed (TgBAC(slc17a6b:loxP-DsRed-loxP-GFP)nns9) (Satou et al., 2013), Tg(gata1:dsRed)sd2 (Traver et al., 2003), Tg(−4.9sox10:EGFP)ba2 (Wada et al., 2005), Tg(−8.4neurog1:GFP)sb1 (Blader et al., 2003), Tg(kctd15a:GFP)y534 (Heffer et al., 2017), Tg(pou4f3:gap43-GFP)s356t (Xiao et al., 2005), Et(−1.5hsp70l:Gal4-VP16)s1156t and Et(fos:Gal4-VP16)s1181t (Scott and Baier, 2009), TgBAC(neurod:EGFP)nl1 (Obholzer et al., 2008), Tg(mnx1:GFP)ml2 (Flanagan-Steet et al., 2005), and y271-Gal4 (Horstick et al., 2015). For counting neurons in the brain, we used huC:h2b-GCaMP6 (Tg(elavl3:h2b-GCaMP6)jf5) (Vladimirov et al., 2014), which has multiple transgene integrations, minimizing effects of variable expression and silencing.
 
-## Brain imaging and processing
+### Brain imaging and processing
 
 For imaging, six dpf larvae were embedded in 1.5–3.5% agarose in E3h and oriented dorsal to the objective. Each larval brain was scanned in two image stacks (anterior and posterior halves, 1 × 1×2 µm resolution) with an inverted Leica TCS-SP5 II confocal with a 25X, 0.95 NA objective, while adjusting laser power during scans to compensate for intensity loss with depth. Gal4 expression was visualized using UAS:Kaede and Cre expression using RFP expression from βactin:Switch. Color channels were usually acquired simultaneously and crosstalk removed in post-processing using a Leica dye separation algorithm. Substacks were connected using the pairwise stitching plugin in ImageJ (Preibisch et al., 2009; Schneider et al., 2012).
 
@@ -105,11 +977,11 @@ Image registration was performed using affine and diffeomorphic algorithms in AN
 
 Because registration using the βactin:Switch bridging channel proved more accurate than our previous bridging registration with HuC:Cer, we re-imaged and registered the Cre lines recovered in our pilot screen. Gal4 lines generated and imaged by the Dorsky lab (Otsuna et al., 2015) were registered using two channels: the nuclear counter-stain channel (TO-PRO−3) and immunolabeling for myosin heavy chain, aligned to HuC:nls-mCar and tERK in ZBB respectively. We also used multichannel registration to align brain scans performed by the Baier lab (Förster et al., 2017), taking advantage of three expression patterns present in both datasets: vglut2a:dsRed, isl2b:GFP and gad1b:GFP.
 
-## Integration site mapping
+### Integration site mapping
 
 To efficiently map enhancer trap integration sites we extracted genomic DNA from embryos from each line (Qiagen DNeasy Blood and Tissue Kit) and generated a barcoded library. We hybridized the library to biotinylated 120 bp primers (IDT ultramers) designed against the tol2 sequence arms and enriched for genomic integration sites using avidin-pulldown. Enriched libraries were combined into 15 pools such that each pool contained a unique combination of five transgenic lines and each line was exclusively represented in two pools. Pooled libraries were sequenced using an Illumina MiSeq (Illumina) which produced 250 bp paired-end reads. Reads were aligned against the biotinylated primer sequence, then unique sequences within each read subsequently aligned to a zebrafish reference genome (danRer10). Sequences common to all pools were assumed to be off-target and removed from analysis. Remaining reads from each pool were cross-referenced to the combination of embryos in each pool. Regions that had high and specific enrichment in both pools containing DNA from a particular sample were assigned as candidate insertion sites for that sample. To validate this procedure, we confirmed the map position for four lines through direct PCR genotyping.
 
-## Expression analysis
+### Expression analysis
 
 To assess the selectivity of transgene expression, we manually set an intensity threshold for each line to distinguish cell body labeling from background, and calculated the proportion of voxels in the total cell body volume with a super-threshold signal. In assessing total brain coverage by the Cre library, we excluded y457-Cre which has extremely broad (possibly pan-neuronal) expression. To quantitatively describe transgene expression patterns, we created 20 × 20 × 20 µm cubic bins (total 1804 bins) that were each entirely within the left hemisphere of the brain. For each line, we measured the mean expression within each bin and its corresponding volume on the right hemisphere. The resulting 1804 element vector was re-scaled in the range 0 to 1.0 to describe the relative intensity of transgene expression in each bin. Supplementary file 3 reports these values together with the location of center voxel for each bin (Horizontal: dorsal to ventral; Transverse: Anterior to Posterior; Sagittal: Left to Right). In the downloadable version of ZBB2, this position can be recalled by using View → Jump to Frame, then entering the coordinates provided in first three columns in Supplementary file 3 (e.g. 230, 90, 210 to access the center position for the first volume in the Table).
 
@@ -121,7 +993,7 @@ We estimated the number of differentiated neurons by manually counting fluoresce
 
 To analyze the regional distribution of cell types based on molecular marker expression, we calculated the mean transgene expression intensity for 72 manually annotated anatomical structures (Z-Brain, Supplementary file 4) and for 168 computational defined brain regions (subset of Pajevic 180 regions, excluding narrow regions on the perimeter of the brain, Supplementary file 5) (Gupta et al., 2018; Randlett et al., 2015). For each line analyzed, voxel expression values were scaled 0–1, and means thus reflect the relative intensity of expression for regions within each maker and can not be compared between markers.
 
-## Zebrafish Brain Browser software
+### Zebrafish Brain Browser software
 
 The lines scanned and registered here were incorporated into the locally run Zebrafish Brain Browser, which requires downloading and installing the free IDL runtime environment. ZBB2 (including software and full resolution datasets) can be downloaded from our website (https://science.nichd.nih.gov/confluence/display/burgess/Brain+Browser).
 
@@ -129,10 +1001,10 @@ To increase accessibility we also implemented an online version of ZBB2 that doe
 
 To implement the 3D spatial search in the online edition of ZBB2, we first binarized and 4x-downsampled the resolution of each line. The data for each line was then parsed into a single array (width, height, depth). We compressed adjacent binary values into a single byte using bit shifting operators, downsampling the data once again by eight times. While greatly downsized, the entire dataset was still much too large to quickly download. We therefore fragmented the array for each line into 8 × 8×8 blocks of 64 bytes each, and concatenated blocks for every line, creating a single array of around 17 kb for a specific sub-volume of the brain. After the user defines the search volume, relevant volume fragments are downloaded and searched. Data from each fragment file is passed to a JavaScript Web Worker, allowing each file to be searched in a separate thread. This procedure facilitates minimal search times, with the main limitation being that thousands of binary files must be regenerated whenever a new line is added to the library.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Analysis was performed with IDL (http://www.harrisgeospatial.com/SoftwareTechnology/IDL.aspx), Gnumeric (http://projects.gnome.org/gnumeric/) and Matlab (Mathworks).
 
-## Resource sharing
+### Resource sharing
 
 Most enhancer trap lines are available from Zebrafish International Resource Center (https://zebrafish.org), with all others available from the authors upon request. Registered individual confocal brain scans can be downloaded from Dryad (https://doi.org/10.5061/dryad.tk467n8). Brain browser javascript code can be downloaded from GitHub (Hurt et al., 2018; copy archived at https://github.com/elifesciences-publications/ZebrafishBrainBrowser).

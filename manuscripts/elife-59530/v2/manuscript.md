@@ -36,11 +36,204 @@ The current structural understanding of the large T4SSs has been limited to comp
 
 Towards obtaining a high resolution understanding of the Dot/Icm T4SS we purified from L. pneumophila intact core complex particles as evident from negative stain electron microscopy, as previously described (Kubori and Nagai, 2019; Figure 1—figure supplement 1A). Central to assembly of the apparatus are five proteins that define the core complex: DotC, DotD, DotF, DotG, and DotH (Ghosal et al., 2017; Ghosal et al., 2019; Kubori et al., 2014; Nagai and Kubori, 2011). Mass spectrometry analysis of the purification verified the presence of these predicted core components (Ghosal et al., 2019; Kubori and Nagai, 2019; Kubori et al., 2014; Vincent et al., 2006), as well as additional proteins identified in dot (defect in organelle trafficking) or icm (intra-cellular multiplication) genetic screens (Segal et al., 1998; Segal and Shuman, 1999; Vogel et al., 1998; Table 1). We vitrified this sample and, although particles adopt a preferred orientation in vitrified ice, both en face and side views are observed, allowing for 3D reconstruction (Figure 1A, Figure 1—figure supplement 1B,C, and Figure 1—figure supplement 2). The Dot/Icm T4SS is ~400 Å wide and ~165 Å long, consistent in shape and size with T4SS complexes visualized in intact L. pneumophila using cryo-ET (Ghosal et al., 2017; Ghosal et al., 2019; Chetrit et al., 2018; Park et al., 2020; Figure 1B). The global resolution of the map without imposed symmetry is 4.6 Å, with the highest resolution regions near its center (Figure 1—figure supplement 1D,E). The map can be divided into two major regions: an outer membrane cap (OMC) and a hollow periplasmic ring (PR). The OMC can be further subdivided into two features, a central dome and a flat disk containing 13 arms that extend radially outward (Figure 1A,C,D). While cryo-ET analysis of the Dot/Icm T4SS in intact cells included a stalk bridging the PR and the inner membrane (Ghosal et al., 2019), this portion of the complex is not observed in the reconstruction of the purified T4SS, likely due to dissociation during purification. An axial section through the map in Figure 1B,D reveals a large cavity running through the T4SS, starting from the bottom of the PR and extending to the OMC region that spans the outer membrane, although there appears to be density in the central cavity closest to the outer membrane. This is perhaps the ‘plug’ seen in the cryo-ET analysis of in situ T4SS (Ghosal et al., 2019).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig1-v2.jpg)
+
+**Figure 1.:** (a) Reconstruction of the L. pneumophila Dot/Icm T4SS particles at 4.6 Å with no symmetry applied reveals two parts, the outer membrane cap (OMC), composed of a central dome and flat disk, and a periplasmic ring (PR). (b) Comparison of the central sections through the longitudinal plane of the T4SS 3D density determined by cryo-ET of intact L. pneumophila (left panel, EMD 0566) (Ghosal et al., 2019) with arrow indicating plug density or by cryo-EM of purified particles (this study) (right panel). OM, Outer Membrane, IM, Inner Membrane, Scale bar 10 nm. (c) Combined high resolution structures of the L. pneumophila Dot/Icm T4SS that include the 3.5 Å OMC disk (blue) with 13-fold symmetry and the 3.7 Å PR (green) with 18-fold symmetry. (d) Central axial slice view showing how atomic models of the OMC disk (blue) and PR (green) fit into the C1 3D map of the Dot/Icm T4SS (light gray).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) A representative image of the Lp Dot/Icm T4SS particles in negative stain EM (scale bar = 50 nm) and subsequent 2D class averages (scale bar = 20 nm). (b) A representative image of the Lp Dot/Icm T4SS particles in cryo-EM (scale bar = 50 nm) and subsequent 2D class averages (scale bar = 10 nm). (c–d) The Dot/Icm T4SS map was reconstructed with no symmetry applied to a resolution of 4.6 Å and reveals the outer membrane cap (OMC), composed of a dome and a flat disk, and the periplasmic ring (PR). (d) The local resolution of the C1 map extends to ~4.0 Å in the best resolved portions of the map.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Using template picking in cryoSPARC,~770,000 Dot/Icm T4SS particles were selected. The processing steps done in cryoSPARC are on a gray background, and the processing steps done using RELION are on a tan background. After 2D and 3D classification, the best class of ~20,000 particles was chosen for further refinement with and without C13 symmetry, resulting in reconstruction of 3D maps at 4.6 Å and 3.6 Å, respectively. The particle stack used in the refinement job in cryoSPARC was exported into Relion for further processing, such as CTF-refinement and focused refinement. The 3.6 Å 3D model with C13 symmetry was used as an initial model for 3D structure determination in Relion using auto-3D refinement with C13 symmetry, resulting in reconstruction of 3D map of 5.5 Å resolution. The CTF-refinement beam tilt estimation was applied, followed by another round of 3D refinement, improving the resolution to 5.0 Å. Focused 3D classification (without alignment) was used to determine higher resolution maps of the OMC disk (with 13-fold symmetry) and the PR (with 18-fold symmetry). The maps of the OMC disk and PR were further refined using focused 3D refinement (with local refinement), resulting in 3D maps of the OMC disk (13-fold symmetry) and the PR (18-fold symmetry) at 3.5 Å and 3.7 Å, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a–b) The OMC disk has been reconstructed to 3.5 Å resolution using C13 symmetry. The cryo-EM density map of the Dot/Icm T4SS OMC disk showing the side, bottom, and top faces of the OMC. (c) The local resolution of the OMC extends to 3.0 Å in the best resolved portions of the map. (d–e) The PR has been reconstructed to 3.7 Å using C18 symmetry. (f) The local resolution of the PR extends to ~4.0 Å in the best resolved regions of the map. (g) A channel runs through the center of the Dot/Icm T4SS that is ~150 Å in diameter in the OMC and ~100 Å in diameter in the PR.
+
+**Table 1.**
+ Dot proteins present in isolated complex sample isolated from wild type strain (Lp02).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Spectral Counts†</th>
+    </tr>
+    <tr>
+      <th>Identified proteins</th>
+      <th>Gene Number*</th>
+      <th>Prep 1</th>
+      <th>Prep 2</th>
+      <th>Prep 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DotG‡</td>
+      <td>Q5ZYC1</td>
+      <td>112</td>
+      <td>114</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td>DotF</td>
+      <td>Q5ZYC0</td>
+      <td>94</td>
+      <td>69</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>DotA</td>
+      <td>Q5ZS33</td>
+      <td>38</td>
+      <td>65</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>DotO</td>
+      <td>Q5ZYB6</td>
+      <td>37</td>
+      <td>38</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>DotH</td>
+      <td>Q5ZYC2</td>
+      <td>28</td>
+      <td>19</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>IcmF</td>
+      <td>Q5ZYB4</td>
+      <td>15</td>
+      <td>18</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>IcmX</td>
+      <td>Q5ZS30</td>
+      <td>19</td>
+      <td>13</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>DotL</td>
+      <td>Q5ZYC6</td>
+      <td>10</td>
+      <td>26</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>DotC</td>
+      <td>Q5ZS44</td>
+      <td>9</td>
+      <td>11</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>DotD</td>
+      <td>Q5ZS45</td>
+      <td>11</td>
+      <td>9</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>DotB</td>
+      <td>Q5ZS43</td>
+      <td>16</td>
+      <td>11</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Lpg0657</td>
+      <td>Q5ZXS4</td>
+      <td>6</td>
+      <td>4</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>DotM</td>
+      <td>Q5ZYC7</td>
+      <td>2</td>
+      <td>14</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>DotK</td>
+      <td>Q5ZYC5</td>
+      <td>2</td>
+      <td>6</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>IcmW</td>
+      <td>Q5ZS31</td>
+      <td>5</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>DotN</td>
+      <td>Q5ZYB7</td>
+      <td>2</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>DotI</td>
+      <td>Q5ZYC3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>IcmS</td>
+      <td>Q5ZYD0</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>IcmT</td>
+      <td>Q5ZYD1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>IcmV</td>
+      <td>Q5ZS32</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*UniProtKB Accession Number.†Proteins were identified by searching the MS/MS data against L. pneumophila (UniProt; 2930 entries) using Proteome Discoverer (v2.1, Thermo Scientific). Search parameters included MS1 mass tolerance of 10 ppm and fragment tolerance of 0.1 Da. False discovery rate (FDR) was determined using Percolator and proteins/peptides with a FDR of ≤1% were retained for further analysis. Complete results are in Supplementary file 1 in supplementary material.‡Predicted core T4SS components and additional components identified in this structure are in bold._
+
 The dome of the T4SS OMC is positioned within the center of the map and is about ~50 Å high and ~100 Å wide. Attempts to refine the dome by imposing different symmetries did not improve the resolution; therefore no clear symmetry was defined. In other T4SSs that have been structurally characterized, the dome is a contiguous part of the OMC, shares the same symmetry, and is clearly composed of organized α-helices (Chung et al., 2019; Sgro et al., 2018; Chandran et al., 2009). While we do not see individual helices in our map, in the C1 reconstruction the narrow opening of the L. pneumophila dome is ~40 Å in diameter, a dimension within the range of pore sizes observed in the OMC of other species (Figure 1A; Chung et al., 2019; Sgro et al., 2018; Chandran et al., 2009).
 
 Using symmetry and focused refinement, we determined a 3.5 Å resolution map of the OMC disk and a 3.7 Å map of the PR (Figure 1C, Figure 1—figure supplement 2, and Figure 1—figure supplement 3). Notably, while the disk exhibits the expected 13-fold symmetry observed previously (Ghosal et al., 2017; Ghosal et al., 2019; Chetrit et al., 2018; Park et al., 2020; Hu et al., 2019), the PR contains 18-fold symmetry (Figure 1C and Figure 1—figure supplement 3A,D). While the possibility of this symmetry mismatch was postulated from low-resolution in situ structures of the Dot/Icm T4SS (Park et al., 2020), the symmetry of the different regions was not determined. Interestingly, a similar symmetry mismatch occurs between the H. pylori T4SS OMC and PR: its OMC contains 14-fold symmetry while the PR has 17-fold symmetry (Chung et al., 2019). The resolution of the Dot/Icm T4SS OMC disk and PR maps made it possible to construct models of the proteins in these regions (Figure 1C,D).
 
 The OMC disk makes up the pinwheel-shaped portion of the T4SS and is organized into a thick central region with 13 arms extending radially outward (Figure 2A). The disk is ~75 Å along the axial dimension with an interior chamber ~150 Å wide. The disk is also thin compared to other structurally characterized T4SS OMCs and contains no distinct inner or outer layers (Chung et al., 2019; Sgro et al., 2018; Chandran et al., 2009). Within the disk, we unambiguously traced and identified DotC, DotD, DotK and DotH along with the protein Lpg0657 (Goodwin et al., 2016; Figure 2B, Figure 2—figure supplements 1 and 2). Of these, only structures of the C-terminal domain of DotD (PDB 3ADY) and the structure of Lpg0657 (PDB 3LDT) had been previously reported (Nakano et al., 2010). Notably, rather than an equimolar ratio, the components of the OMC exist at a ratio of 2:1:1:1:1 (DotD:DotC:DotH:DotK:Lpg0657) (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig2-v2.jpg)
+
+**Figure 2.:** (a) The OMC disk of the Dot/Icm T4SS was reconstructed from samples that were purified from the WT strain (b) We have defined an asymmetric unit that is comprised of DotC (brown), DotD1 (red), DotD2 (salmon), DotH (orange), DotK (cyan), Lpg0657 (blue), and three unknown chains (gray).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Statistics for each model that was constructed indicate their relative quality. (b) A model-map correlation curve for the entire OMC is shown with the unmasked data shown in green and the masked data shown in black. (c–i) The model-map correlation was also determined for each individual protein structure that was solved within the OMC.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a–f) The correlation coefficient for each protein within the OMC is depicted as a heat map on the corresponding structure and is plotted against the residue number.
 
 At the center of the OMC is an elongated fold that is comprised of α-helices and β-strands that we have identified as DotC (residues 58–161 and 173–268). DotC is folded such that two large α-helices protrude toward the outer membrane and are flanked on either side by two β-strands (Figure 3A). The two β-strands adjacent to the central α-helices fold into a nearly uninterrupted β-sheet that is formed between asymmetric units and consists of a generally hydrophilic surface that runs about the central cavity (Figure 3B). When docked into the asymmetric reconstruction, this β-sheet lines the poorly resolved central section of the map. From these data, the only clear contact that is made between DotC and the central pore is a small interface at the top of the two long α-helices, which may explain why this portion is not well resolved in the maps (Figure 3C). A search of the protein data bank yielded a wide array of potential structural homologs, including a number of channels and transporters; most of these share little homology to DotC overall (Holm, 2019). On the peripheral side, DotC makes contact with two copies of DotD, which we have called DotD1 and DotD2 (Figure 4A–C). The core folds of these proteins are similar to that of other components of large bacterial complexes such as VirB7 homologs from other T4SSs as well as components of type four pilus systems (Figure 4D). The interface between the two copies of DotD is mediated by electrostatic interactions and hydrogen bonds (Figure 4E). The N-terminus, which was not fully visualized in the previously reported DotD crystal structure (Nakano et al., 2010), is α-helical and extends from the middle of the disk toward the pore, forming a dimer that interacts with the central α-helices of DotC (Figure 4F).
 
@@ -72,6 +265,170 @@ Within the OMC disk we traced three poly-alanine chains that could not be unambi
 
 To test whether DotG may be localized to the dome region, the radial arms, or both, we isolated and structurally characterized the T4SS in a Lp mutant lacking DotG (∆dotG) (Figure 8A, Figure 8—figure supplements 1, 2 and 3). Although ΔdotG mutant bacteria assemble a Dot/Icm T4SS, they are defective for secretion and replication in host cells (Vogel et al., 1998). Mass spectrometry from this mutant purification confirms DotG is absent (Table 2). The ΔDotG T4SS also lacks DotF (Table 2). Since Western blotting analysis of purified complexes from a ΔdotG mutant bacteria showed wild-type levels of DotF (Kubori et al., 2014), the dotG deletion-insertion allele analyzed here may be polar on expression of the downstream dotF gene. Our structural analysis of ΔDotG T4SS shows that while it contains the OMC disk and the 13 extended arms, the complex lacks both the dome and the PR (Figure 8A and Figure 8—figure supplement 1D). This finding is in agreement with the proposed model for the overall organization of both ∆DotG T4SS and ∆DotF∆DotG T4SS complexes predicted from immunoblot analysis and images of negatively stained T4SS complexes lacking either DotF or DotG (Kubori et al., 2014). All components modeled in the OMC from the wild-type T4SS were also present within the ΔDotG T4SS complexes, supporting the identifications described above (Table 2, Figure 8B). In other T4SSs, the dome region of the complex is comprised of homologous proteins known as VirB10 (X. citri), CagY (H. pylori), or TraF (pKM101). By sequence homology, the C-terminus of DotG is predicted to be structurally similar to these components (Figure 8—figure supplement 4A,C; Chung et al., 2019; Sgro et al., 2018; Rivera-Calzada et al., 2013; Chandran et al., 2009; Ghosal et al., 2017; Nagai and Kubori, 2011; Hu et al., 2019). Thus, we propose that the C-terminus of DotG makes up the dome of the Lp T4SS (Figure 8—figure supplement 4B). In agreement with this, we note that a model of the C-terminus of DotG based on the structure of CagY (generated in Swiss Model) fits into the dome density (Figure 8—figure supplement 4B), though its identity as DotG needs to be confirmed (Waterhouse et al., 2018). The rest of DotG and DotF may contribute to the structural interface between the OMC and the PR and/or form a portion of the structure of the PR.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig8-v2.jpg)
+
+**Figure 8.:** (a) The OMC disk of the ΔDotG T4SS was reconstructed from samples that were purified from a strain lacking DotG (ΔdotG). (b) All proteins within the asymmetric unit adopt nearly identical orientations in complexes identified from the WT and mutant strain. (Colored as in panel a).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) A representative image of the Lp ΔDotG T4SS particles in cryo-EM (scale bar = 50 nm) and (b) subsequent 2D reconstructions (Scale bar = 10 nm). (c) Silver-stained gel from the T4SS samples used in this study. Lanes (L to R) are molecular weight markers, wild type, and ΔDotG complexes. (d–e) The map was reconstructed with C13 symmetry applied to a resolution of 4.2 Å and reveals only the outer membrane cap (OMC) disk region (f) The local resolution of the map extends to ~4.1 Å in the best resolved portions of the map.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (a) Statistics for each model that was constructed indicate their relative quality. (b) A model-map correlation curve for the entire Lp ΔDotG OMC is shown with the unmasked data shown in green and the masked data shown in black. (c–i) The model-map correlation was also determined for each individual protein structure that was solved within the Lp ΔDotG OMC.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (a–f) The correlation coefficient for each protein within the Lp ΔDotG OMC is depicted as a heat map on the corresponding structure and is plotted against the residue number.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** (a) The C-terminus of DotG is one of the few components of the Dot/Icm T4SS that is predicted to have homology to other systems, in this case to H. pylori CagY and X. citri VirB10. (b) Atop the OMC is a low-resolution dome that contains no clear symmetry (gray). A model of the C-terminus of DotG with C13 symmetry applied fits well into this dome suggesting a pore size of ~40 Å (yellow). (c) Sequence homology suggests the C-terminus of DotG is structurally similar to H. pylori CagY and X. citri VirB10.
+
+**Table 2.**
+ Dot proteins present in isolated complex sample isolated from ΔdotG deletion strain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Spectral Counts†</th>
+    </tr>
+    <tr>
+      <th>Identified proteins</th>
+      <th>Gene Number*</th>
+      <th>Prep 1</th>
+      <th>Prep 2</th>
+      <th colspan="2">Prep 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IcmF</td>
+      <td>Q5ZYB4</td>
+      <td>28</td>
+      <td colspan="2">85</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>DotA</td>
+      <td>Q5ZS33</td>
+      <td>20</td>
+      <td colspan="2">94</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>IcmX</td>
+      <td>Q5ZS30</td>
+      <td>15</td>
+      <td colspan="2">88</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>DotH‡</td>
+      <td>Q5ZYC2</td>
+      <td>11</td>
+      <td colspan="2">81</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>DotC</td>
+      <td>Q5ZS44</td>
+      <td>12</td>
+      <td colspan="2">58</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>DotO</td>
+      <td>Q5ZYB6</td>
+      <td>16</td>
+      <td colspan="2">27</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>Lpg0657</td>
+      <td>Q5ZXS4</td>
+      <td>7</td>
+      <td colspan="2">43</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>DotL</td>
+      <td>Q5ZYC6</td>
+      <td>8</td>
+      <td colspan="2">15</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>DotB</td>
+      <td>Q5ZS43</td>
+      <td>10</td>
+      <td colspan="2">23</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>DotK</td>
+      <td>Q5ZYC5</td>
+      <td>6</td>
+      <td colspan="2">26</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>DotD</td>
+      <td>Q5ZS45</td>
+      <td>3</td>
+      <td colspan="2">27</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>IcmW</td>
+      <td>Q5ZS31</td>
+      <td>5</td>
+      <td colspan="2">9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>DotI</td>
+      <td>Q5ZYC3</td>
+      <td>1</td>
+      <td colspan="2">10</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>IcmV</td>
+      <td>Q5ZS32</td>
+      <td>2</td>
+      <td colspan="2">1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>DotU</td>
+      <td>Q5ZYB3</td>
+      <td>1</td>
+      <td colspan="2">5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>DotM</td>
+      <td>Q5ZYC7</td>
+      <td>0</td>
+      <td colspan="2">2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>IcmS</td>
+      <td>Q5ZYD0</td>
+      <td>2</td>
+      <td colspan="2">2</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_*UniProtKB Accession Number.†Proteins were identified by searching the MS/MS data against L. pneumophila (UniProt; 2930 entries) using Proteome Discoverer (v2.1, Thermo Scientific). Search parameters included MS1 mass tolerance of 10 ppm and fragment tolerance of 0.1 Da. False discovery rate (FDR) was determined using Percolator and proteins/peptides with a FDR of ≤1% were retained for further analysis. The complete results are shown in Supplementary file 2 in the supplemental material.‡Predicted core T4SS components and additional components identified in this structure are in bold._
+
 Our predicted placement of DotF and DotG is consistent with two previous reports (Ghosal et al., 2019; Vincent et al., 2006). Biochemical studies showed that DotG associates closely with DotH and DotC, shown here to form part of the OMC (Figure 2B), and that both DotF and DotG are integral inner membrane proteins that also associate with the outer membrane (Vincent et al., 2006). A cryo-ET analysis of the T4SS in a ΔdotG strain reported missing density from the stalk, plug, and dome compared to subtomogram averages from T4SS complexes in a wild-type strain (Ghosal et al., 2019). Moreover, these cryoET studies showed that the T4SS subtomogram averages in a ΔdotF strain lack density in the periplasmic region compared to complex in a wild-type strain (Ghosal et al., 2019).
 
 The PR has been observed in the recently characterized single particle cryo-EM reconstruction of the H. pylori Cag T4SS and tomography studies of both H. pylori and L. pneumophila T4SSs (Chung et al., 2019; Ghosal et al., 2017; Ghosal et al., 2019; Chetrit et al., 2018; Park et al., 2020; Hu et al., 2019; Chang et al., 2018). The resolution in this region of our Dot/Icm T4SS map was sufficient to model two distinct polyalanine chains within the PR (Figure 9A,B). The backbone trace of one of these chains revealed a structure homologous to the N-terminus of X. citri VirB9 and similar to a polyalanine model of the PR constructed from the H. pylori T4SS (Figure 9C). The other, as of yet unidentified, density within the PR is comprised of a single α-helix followed by an extended loop that spans the entire length of the PR. Although the identity of either protein is currently not clear, prime candidates are either DotG or DotF, two proteins present in our preparations but not confidently localized in our maps (Table 1, Figure 2B). In addition, the entire PR is missing from the ∆DotG T4SS (Table 2, Figure 7A). As was reported previously for the H. pylori Cag T4SS (Chung et al., 2019), while the Lp OMC and PR make physical contact in the lower resolution map with no applied symmetry (Figure 9D), the connections are lost in the refined structures due to the symmetry mismatch.
@@ -84,19 +441,155 @@ The high-resolution structure of the L. pneumophila Dot/Icm T4SS allows us to co
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/59530/elife-59530-fig10-v2.jpg)
 
-**Figure 10.:** H. pylori Cag T4SS and L. pneumophila Dot/Icm T4SS.(a) Surface view of atomic models for Hp Cag T4SS (left) and Lp Dot/Icm T4SS (right). OMC, blue; PR, green. For Lp Dot/Icm T4SS, C1 EM density is shown in gray for density not included in atomic models. (b) Secondary structure of Hp Cag T4SS (left) and Lp Dot/Icm T4SS (right). For Lp Dot/Icm T4SS, dome region outline is shown as a dotted line.
+**Figure 10.:** (a) Surface view of atomic models for Hp Cag T4SS (left) and Lp Dot/Icm T4SS (right). OMC, blue; PR, green. For Lp Dot/Icm T4SS, C1 EM density is shown in gray for density not included in atomic models. (b) Secondary structure of Hp Cag T4SS (left) and Lp Dot/Icm T4SS (right). For Lp Dot/Icm T4SS, dome region outline is shown as a dotted line.
 
 ## Materials and methods
 
-## Preparation of strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>Lp02; WT</td>
+      <td>PMID:23717549</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Legionella pneumophila)</td>
+      <td>ΔdotG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ΔdotG deletion-insertion mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKD3 (plasmid)</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AddGene_45604</td>
+      <td>template plasmids for frt-flanked cat cassette</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dotG-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>aaagcactccacctaagcctacag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dotG-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>aaaaattagccaagcccgacctg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dotG-P0</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>aaatcatgcaactcaaggtagaagggttataa gcaaatgtgtgtaggctggagctgcttc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dotG-P2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>tatccgccatcaaattaaattgttgtaacatcct ggcatatgaatatcctccttagttcc</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProteoSilver Plus Silver Stain Kit</td>
+      <td>Sigma Aldrich</td>
+      <td>PROTSIL2-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leginon</td>
+      <td>PMID:15890530</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID:28250466</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFind4</td>
+      <td>PMID:26278980</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>PMID:28165473</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID:27685097 PMID:30412051</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID:20383002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID:15264254 PMID:29340616</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID:29872004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DALI server</td>
+      <td>PMID:31263867</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of strains
 
 L. pneumophila was cultured in ACES (Sigma)-buffered yeast extract broth at pH 6.9 supplemented with 0.1 mg/ml thymidine, 0.4 mg/ml L-cysteine, and 0.135 mg/ml ferric nitrate or on solid medium of this broth supplemented with 15 g/liter agar and 2 g/liter charcoal. The L. pneumophila laboratory strain Lp02, a thymidine auxotroph derived from the clinical isolate Philadelphia-1 (Rao et al., 2013), was utilized as the wild-type strain. The dotG locus of Lp02 was replaced with a cat cassette encoding chloramphenicol resistance by homologous recombination as previously described (Bryan et al., 2013). The wild-type and ΔdotG alleles were amplified using primers dotG-F (5’-aaagcactccacctaagcctacag-3’) and dotG-R (5’-aaaaattagccaagcccgacctg-3’). The cat cassette was amplified from plasmid pKD3 (Datsenko and Wanner, 2000) using primers dotG-P0 (5’ aaatcatgcaactcaaggtagaagggttataagcaaatgtgtgtaggctggagctgcttc-3’) and dotG-P2 (5’-tatccgccatcaaattaaattgttgtaacatcctggcatatgaatatcctccttagttcc-3’). The ΔdotG deletion-insertion mutant was selected and purified on medium supplemented with 5 μg/ml chloramphenicol.
 
-## Complex isolation
+### Complex isolation
 
 Complexes were isolated from wild-type L. pneumophila strain Lp02 and the ΔdotG mutant strain as described (Kubori and Nagai, 2019; Kubori et al., 2014). Cells were suspended in 140 mL of buffer containing 150 mM Trizma base pH 8.0, 500 mM NaCl, and EDTA-free Complete protease inhibitor (Roche) at 4°C. The suspension was incubated on the benchtop, with stirring, until it reached ambient temperature. PMSF (final concentration 1 mM), EDTA (final concentration 1 mM), and lysozyme (final concentration 0.1 mg/mL) were added and the suspension was incubated at ambient temperature for an additional 30 min. Bacterial membranes were lysed using detergent and alkaline lysis. Triton X-100 (20% w/v) with AG501-X8 resin (BioRad) was added dropwise, followed by MgSO4 (final concentration 3 mM), DNaseI (final concentration 5 μg/mL), and EDTA (final concentration 10 mM), and then the pH was adjusted to 10.0 using NaOH. The remaining steps were conducted at 4°C. The cell lysate was subjected to centrifugation at 12,000 x g for 20 min to remove unlysed material. The supernatant was then subjected to ultracentrifugation at 100,000 x g for 30 min to pellet membrane complexes. The membrane complex pellets were resuspended and soaked overnight in a small volume of TET buffer (10 mM Trizma base pH 8.0, 1 mM EDTA, 0.1% Triton X-100). The resuspended sample was then subjected to centrifugation at 14,000 x g for 30 min to pellet debris. The supernatant was subjected to ultra-centrifugation at 100,000 x g for 30 min. The resulting pellet was resuspended in TET and complexes were further separated by Superose 6 10/300 column chromatography in TET buffer with 150 mM NaCl using an AKTA Pure system (GE Life Sciences). The sample collected from the column was used for microscopy and visualized by SDS-PAGE with silver staining (ProteoSilver Plus Silver Stain Kit). Mass spectrometry analysis was performed as described (Anwar et al., 2018).
 
-## Cryo-EM data collection and map reconstruction – wild type T4SS
+### Cryo-EM data collection and map reconstruction – wild type T4SS
 
 For cryo-EM, 4 μL of the isolated Dot/Icm T4SS sample was applied to a glow discharged ultrathin continuous carbon film on Quantifoil 2/2 200 mesh copper grids (Electron Microscopy Services). The sample was applied to the grid five consecutive times and incubated for ~60 s after each application. The grid was then rinsed in water to remove detergent before vitrification by plunge-freezing in a slurry of liquid ethane using a FEI vitrobot at 4°C and 100% humidity.
 
@@ -110,7 +603,7 @@ For focused refinement of the OMC disk, signal subtraction for each particle con
 
 The same steps were followed for focused refinement of the PR, starting with signal subtraction for each particle containing the PR with a soft mask. The subtracted particles were subjected to alignment-free focused 3D classification (three classes). The best 3D class of the PR (~6850 particles) was selected based on class distribution (particle distribution), estimated resolution, and comparison of the 3D density maps. This class was then subjected to a masked 3D refinement with local angular searches using C18 symmetry resulting in a 7.54 Å resolution. Estimation of per-particle defocus values (CTF-refinement) was applied to the selected particles using RELION. With the CTF-refined particle stack, C18 symmetry-imposed refinement with a soft mask around the PR region of the Dot/Icm T4SS core complex was done, resulting in a 7.40 Å resolution 3D map that contained improved features. Post-processing resulted in the final PR map with 3.7 Å resolution. Map and model building data is summarized in Appendix 1—table 1.
 
-## Cryo-EM data collection and map reconstruction – ΔDotG T4SS
+### Cryo-EM data collection and map reconstruction – ΔDotG T4SS
 
 For cryo-EM, 4 μL of the isolated ΔDotG T4SS sample was applied to a glow discharged Quantifoil 2/2 200 mesh copper grid with ultrathin (2 nm) continuous carbon film (Electron Microscopy Services). The sample was applied to the grid five consecutive times and incubated for ~60 s after each application. The grid was rinsed in water to remove detergent before vitrification by plunge-freezing in a slurry of liquid ethane using a FEI vitrobot at 22°C and 100% humidity.
 
@@ -118,7 +611,7 @@ The images of the T4SS complexes purified from the ΔdotG cells were collected b
 
 The video frames were first dose-weighted and aligned using Motioncor2 (Zheng et al., 2017). The CTF values were determined using CTFFind4 (Rohou and Grigorieff, 2015). Image processing was carried out using cryoSPARC and RELION 3.0 (Punjani et al., 2017; Bharat and Scheres, 2016; Zivanov et al., 2018). 120,367 particles were picked manually using Relion from 6990 micrographs and extracted using a 640 pixel box size (1.07 Å/pixel). The particles were imported into cryoSPARC, and the remaining processing steps were performed in cryoSPARC. The extracted particles were used to generate representative 2D classes and 9619 particles were kept in good classes. These particles were used to generate two 3D ab initio models with C13 symmetry, the better of which contained 6342 particles. Homogeneous refinement of this model, also with C13 symmetry, resulted in a map with 4.2 Å resolution.
 
-## Model building and refinement
+### Model building and refinement
 
 A model was constructed from the OMC disk by first tracing all chains within the asymmetric unit using Coot (Emsley et al., 2010). We identified two folds that were similar to the crystal structure of DotD and thus docked the corresponding crystal structure (PDB 3ADY) into the map using UCSF Chimera (Nakano et al., 2010). All other chains were then iteratively built de novo in Coot and refined in PHENIX (Afonine et al., 2018). During subsequent rounds of model building and refinement it was noted that a second fold which was similar to DotK was present in the EM map which could not be identified as any of the known core components. The structure of DotK was then subjected to a protein fold analysis using the DALI server which returned Lpg0657 as a potential candidate (Holm, 2019). This crystal structure of Lpg0657 (PDB 3LDT) was then docked into the map using UCSF Chimera and the entire asymmetric unit was refined. The asymmetric unit was then duplicated in UCSF Chimera and each asymmetric unit docked into the map to generate a model of the entire OMC (Pettersen et al., 2004; Rodríguez-Guerra Pedregal and Maréchal, 2018). This structure was then refined in PHENIX with secondary structure and Ramachandran restraints applied (Afonine et al., 2018). During iterative rounds of refinement the nonbonded weighting parameter within PHENIX was optimized. A polyalanine model of the PR was constructed de novo in Coot and was refined using a similar protocol to that which was outlined above (Emsley et al., 2010).
 

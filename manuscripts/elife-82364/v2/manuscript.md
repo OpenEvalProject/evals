@@ -20,18 +20,18 @@
 ### Affiliations
 
 1. Google Research Mountain View United States
-2. https://ror.org/050sv4x28 Buck Institute for Research on Aging Novato United States
+2. Buck Institute for Research on Aging Novato United States ([ROR:050sv4x28](https://ror.org/050sv4x28))
 3. Google Health Palo Alto United States
 4. Google Health Cambridge United States
-5. https://ror.org/009nfym65 Department of Biophysics, Post Graduate Institute of Medical Education and Research Chandigarh India
-6. https://ror.org/05j8x4n38 Department of Ophthalmology, Zuckerberg San Francisco General Hospital and Trauma Center San Francisco United States
-7. https://ror.org/043mz5j54 Department of Ophthalmology, University of California, San Francisco San Francisco United States
+5. Department of Biophysics, Post Graduate Institute of Medical Education and Research Chandigarh India ([ROR:009nfym65](https://ror.org/009nfym65))
+6. Department of Ophthalmology, Zuckerberg San Francisco General Hospital and Trauma Center San Francisco United States ([ROR:05j8x4n38](https://ror.org/05j8x4n38))
+7. Department of Ophthalmology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Biological age, distinct from an individual’s chronological age, has been studied extensively through predictive aging clocks. However, these clocks have limited accuracy in short time-scales. Here we trained deep learning models on fundus images from the EyePACS dataset to predict individuals’ chronological age. Our retinal aging clocking, ‘eyeAge’, predicted chronological age more accurately than other aging clocks (mean absolute error of 2.86 and 3.30 years on quality-filtered data from EyePACS and UK Biobank, respectively). Additionally, eyeAge was independent of blood marker-based measures of biological age, maintaining an all-cause mortality hazard ratio of 1.026 even when adjusted for phenotypic age. The individual-specific nature of eyeAge was reinforced via multiple GWAS hits in the UK Biobank cohort. The top GWAS locus was further validated via knockdown of the fly homolog, Alk , which slowed age-related decline in vision in flies. This study demonstrates the potential utility of a retinal aging clock for studying aging and age-related diseases and quantitatively measuring aging on very short time-scales, opening avenues for quick and actionable evaluation of gero-protective therapeutics.
+Biological age, distinct from an individual’s chronological age, has been studied extensively through predictive aging clocks. However, these clocks have limited accuracy in short time-scales. Here we trained deep learning models on fundus images from the EyePACS dataset to predict individuals’ chronological age. Our retinal aging clocking, ‘eyeAge’, predicted chronological age more accurately than other aging clocks (mean absolute error of 2.86 and 3.30 years on quality-filtered data from EyePACS and UK Biobank, respectively). Additionally, eyeAge was independent of blood marker-based measures of biological age, maintaining an all-cause mortality hazard ratio of 1.026 even when adjusted for phenotypic age. The individual-specific nature of eyeAge was reinforced via multiple GWAS hits in the UK Biobank cohort. The top GWAS locus was further validated via knockdown of the fly homolog, Alk, which slowed age-related decline in vision in flies. This study demonstrates the potential utility of a retinal aging clock for studying aging and age-related diseases and quantitatively measuring aging on very short time-scales, opening avenues for quick and actionable evaluation of gero-protective therapeutics.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ Here, we use deep learning models to predict chronological age from fundus retin
 
 ## Results
 
-## Prediction of age from fundus images
+### Prediction of age from fundus images
 
 Figure 1 summarizes the analysis workflow for the study. Using the EyePACS dataset, we trained a fundus image model on 217,289 examples from 100,692 patients and tuned it on 54,292 images from 25,238 patients. These models were employed for longitudinal analysis of repeat patients and also applied on the UK Biobank dataset (119,532 images) which had a notably distinct demographic distribution (Table 1). For both studies, most visits generated two images, one image each for the left and right eye, the EyePACs dataset had more repeat visits by patients making the ratio of total images to total patients slightly larger (Table 1). In both analyses, we took the average of the predictions between the left and right eye from a single visit to infer age (See Materials and methods).
 
@@ -53,23 +53,103 @@ Figure 1 summarizes the analysis workflow for the study. Using the EyePACS datas
 
 **Figure 1.:** EyePACS images were split into train and tune sets based on the patient. The model was then trained with the final model step being selected via the tune set. Prediction results on the EyePACS tune set were used for longitudinal analysis of aging. After filtering for image quality, inference was performed with the same model on the UK Biobank dataset and filtering for image quality, and the resulting eyeAgeAccel was used for GWAS analysis. Enrichment analysis was performed on the GWAS hits with a homolog of the top gene (ALKAL2) validated experimentally in Drosophila.
 
+**Table 1.**
+ Characteristics of patients in the development and validation sets (before filtering).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Development set (EyePACS)</th>
+      <th rowspan="2">Test set (UK Biobank)</th>
+    </tr>
+    <tr>
+      <th>Train</th>
+      <th>Tune</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patients</td>
+      <td>100,692</td>
+      <td>25,238</td>
+      <td>64,019</td>
+    </tr>
+    <tr>
+      <td>Images</td>
+      <td>217,289</td>
+      <td>54,292</td>
+      <td>119,532</td>
+    </tr>
+    <tr>
+      <td>Ethnicity</td>
+      <td>Black: 11908 [7%]Asia Pacific Islander: 11842 [7%]White: 22539 [13%]Hispanic: 125595 [71%]Native American: 1791 [1%]Other: 3809 [2%]</td>
+      <td>Black: 3040 [7%]Asia Pacific Islander: 2923 [7%]White: 5657 [13%]Hispanic: 31521 [71%]Native American: 426 [1%]Other: 918 [2%]</td>
+      <td>Black: 1540 [1%]Asia Pacific Islander: 4183 [4%]White: 107967 [91%]Hispanic: 0 [0%]Native_american: 0 [0%]Other: 5015 [4%]</td>
+    </tr>
+    <tr>
+      <td>Self-reported Sex</td>
+      <td>Female: 127075 [59%]Male: 90128 [41%]</td>
+      <td>Female: 31743 [58%]Male: 22531 [42%]</td>
+      <td>Female: 65739 [55%]Male: 53793 [45%]</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>median = 55.13mean = 54.21std = 11.50</td>
+      <td>median = 55.19mean = 54.20std = 11.46</td>
+      <td>median = 57.94mean = 56.85std = 8.18</td>
+    </tr>
+  </tbody>
+</table>
+
 The model showed a strong correlation between chronological age and predicted age (eyeAge) in both the EyePACS (0.95) and UK Biobank (0.87) datasets (Figure 2—figure supplement 1). Using mean absolute error (MAE) to assess the fidelity of the aging clock showed that the model performed favorably on both datasets (2.86 and 3.30, respectively, after quality filtering) relative to previous studies (Zhu et al., 2023; Galkin et al., 2021; McEwen et al., 2020; Horvath, 2013). Next, we evaluated the efficacy of our predictions in one to two year time scales using longitudinal data. Using the EyePACS Tune dataset, we restricted ourselves to data from patients with exactly two visits (1719 subjects) and examined the models’ ability to order the two visits over multiple time scales. Note that no longitudinal information about patients was specifically used to train or tune the model to predict chronological age. While the observed and predicted age differences between the two visits (M=0.033, SD = 2.34, Figure 2—figure supplement 2) had low correlation (pearson ⍴=0.17, p-value = 1.4e-12), Figure 2A shows that the model correctly ordered 71% of visits within a year with an MAE less than 2 years. In both metrics, the fidelity decreased in older groups and with smaller age gaps.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig2-v2.jpg)
+
+**Figure 2.:** (A) Changes of PPR (positive prediction ratio: the ratio of data whose eyeAge increased between subsequent visits) and MAE (mean absolute error) calculated on the same individual in relationship to chronological age at the first visit (left) and time between longitudinal visits (right). (B) Scatter plots representing correlation between eyeAge Gap (difference between predicted age and chronological age) of two consecutive visits from an individual (Same) or two consecutive visits from two different individuals (Random). (C) Correlation of eyeAge and chronological age between left and right and two consecutive visits of the same individual. (D) Scatter plots representing the correlation of left and right eyeAge Gap from the same or two random individuals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Plots shown in relationship to chronological age (left) and time between longitudinal visits (right).
 
 To understand if this effect was simply a result of the noise of our innate age prediction, we performed an age-matched control experiment. We compared correlations between data points of one individual to data from a random pair of age-matched individuals (see Materials and methods). Comparisons were performed between each eye and timepoint. For all comparisons, the robust correlation observed within an individual’s data was lost in data between time-matched individuals (Figure 2B and D). Additionally, the positive predictive ratio and MAE exhibited reduced performance, 55% and 3.6 years (Figure 2—figure supplement 3), suggesting a reproducible, individual-specific eyeAge component. To further explore this individual-specific component, Figure 2C compares eyeAge and chronological age within an individual between eyes and timepoints, showing strong correlation in each quadrant.
 
-## Testing the model in UK Biobank cohort
+### Testing the model in UK Biobank cohort
 
 We next applied our EyePACS-trained eyeAge model to the UK Biobank dataset. The UK Biobank cohort included retinal fundus images from 64,019 patients as well as extensive clinical labs and genomic data. These clinical markers enabled comparison of eyeAge with phenoAge, a clinical blood marker-based aging clock (Liu et al., 2018). The observed 0.87 correlation between eyeAge and chronological age in the UK Biobank cohort was consistent with (and slightly higher than) the observed correlation of phenoAge and chronological age (0.82) (Figure 3A and B). Notably, the correlation between phenoAge and eyeAge was substantially lower (0.72; Figure 3—figure supplement 1) and, in fact, roughly equivalent to the product of their respective correlations with chronological age, suggesting that they were largely independent. To explore this further, we computed the residuals from linear models that independently regressed chronological age on phenoAge and eyeAge, as described previously (Liu et al., 2018), yielding phenoAge acceleration (phenoAgeAccel) and eyeAge acceleration (eyeAgeAccel), and observed little correlation between the two age acceleration measures (Figure 3C). We then performed Cox proportional hazards regression analysis to assess mortality risk (Cox, 1972). The hazard ratio for eyeAge was statistically significant when adjusting for (self-reported) sex (1.09, CI=[1.08, 1.10], p-value = 1.6e-53), sex and age (1.04, CI=[1.02, 1.06], p-value = 1.8e-4), and sex, age, and phenoAge (1.03, CI=[1.01, 1.05], p-value = 2.8e-3) (Figure 3D). Stratifying the hazard ratio analysis showed a slight increase in the hazard ratio for women compared to men (1.035 vs 1.026), however the confidence intervals overlapped heavily (Supplementary file 1). Hazard ratio results adjusted for visual acuity are presented in (Figure 3—figure supplement 2 and Supplementary file 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig3-v2.jpg)
+
+**Figure 3.:** (A) Correlation between eyeAge and chronological age (Pearson ⍴=0.86). (B) Correlation between phenoAge and chronological age (Pearson ⍴=0.82). (C) Correlation between eyeAgeAcceleration and phenoAgeAcceleration (Pearson ⍴=0.12). (D) Forest plot of all-cause mortality hazard ratios (diamonds) and confidence intervals (lines) for the UK Biobank dataset. Purple lines are adjusted only for sex; orange lines are adjusted for sex and age; blue lines are adjusted for sex, age, and phenoAge.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig3-figsupp2-v2.jpg)
 
 We also investigated the relationship between eyeAge and multiple additional measures of morbidity and disability available in the UK Biobank. We performed Cox proportional hazards regression on six additional chronic disease outcomes when adjusting for age and sex: chronic obstructive pulmonary disease (COPD), myocardial infarction, asthma, stroke, Parkinsonism, and dementia. Nominally significant associations between eyeAge and both COPD (p-value = 0.0048) and myocardial infarction (p-value = 0.049) were observed (Supplementary file 3). We performed linear regression on seven morbidity measurements reported at the time of imaging: fluid intelligence, systolic and diastolic blood pressure, the ‘Health score (England)’ index of multiple deprivation, pulse wave arterial stiffness, self-reported overall health rating, and self-reported presence of a longstanding illness. Increased eyeAgeAccel corresponded to significantly increased systolic blood pressure (p-value = 1.025e-7) and decreased levels of deprivation (p-value = 2.26e-5) as measured by the Health score (England) index of multiple deprivation (Supplementary file 4). Interestingly, increased eyeAgeAccel also corresponded with significantly increased performance in fluid intelligence scores (p-value = 5.34e-27).
 
 As visual acuity has long been known to degrade with age (Gittings and Fozard, 1986), we examined the extent to which eyeAge explains the known correlation between chronological age and visual acuity. Although chronological age and eyeAge are highly correlated (Figure 3A), we observed a slightly higher correlation of eyeAge with visual acuity (⍴=0.221) compared to chronological age vs. visual acuity (⍴=0.218). Both measures of age appear relevant for visual acuity decline, as the influence of chronological age remained significant even after regressing out the influence of eyeAge on visual acuity (p-value = 1.6e-13, Supplementary file 5).
 
-## GWAS and experimental validation of ALK
+### GWAS and experimental validation of ALK
 
 Based on the patient-specific eyeAgeAccel effects and its independence from phenoAgeAccel, a GWAS was conducted to identify genetic factors associated with eyeAgeAccel. We subsetted the cohort to individuals of European ancestry, performed genotype quality control, and utilized a single eyeAgeAccel value per individual, resulting in a cohort of 45,444 individuals for GWAS analysis. GWAS was performed using BOLT-LMM (see Materials and methods) with chronological age, sex, genotyping array type, the top five principal components of genetic ancestry, and indicator variables for the six assessment centers used for the imaging as covariates. Full GWAS summary statistics are available in Supplementary file 6.
 
 Genomic inflation was low (1.05; Figure 4—figure supplement 1). The stratified linkage disequilibrium (LD) score regression-based intercept was 1.02 (SEM = 0.01), indicating that polygenicity, rather than population structure, drove the test statistic inflation. The SNP-based heritability was 0.11 (SEM = 0.02), an appreciable fraction of the estimated broad-sense heritability of biological age (27–57% via twin and family studies). The GWAS identified 38 independent suggestive hits (R2 ≤0.1, p≤1 × 10−6) at 28 independent loci, 12 of which reached genome-wide significance (p≤5 × 10−8) (Figure 4, Supplementary file 7).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig4-v2.jpg)
+
+**Figure 4.:** (A) Manhattan plot representing significant genes associated with eyeAgeAcceleration. (B) p-Values for enriched pathways: Macular thickness, ADHD (attention deficit hyperactivity disorder), AMD (age-related macular degeneration), spherical equivalent, and refractive error. (C) Assessment of visual performance of transgenic and control flies with age. p-Value is relative to control (*=p < 0.05). p-Value for ALK RNAi vs. control is 0.009; p-value for UAS-ALK-DN vs. control is 0.006. Error bars show standard deviation between 3 biological replicates. n = 100 flies per replicate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82364/elife-82364-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** This block includes the three genes: SH3YL1, ACP1, and ALKAL2.
 
 Many of the hits were associated with eye function and age-related disease (truncated list of candidate hits summarized in Supplementary file 8). The most significant locus spanned 650 kb and included three genes in a highly significant LD block: SH3YL1, ACP1, and ALKAL2 (Figure 4—figure supplement 2). The SH3YL1 gene has recently been implicated as a biomarker for nephropathy in type 2 diabetes (Choi et al., 2021), whereas ALKAL2 enables protein tyrosine kinase activity (Woodling et al., 2020). In other significant gene candidates, we identified variants in the genes OCA2, POC5, and GJA3, which have all been implicated in eye development and function. OCA2 specifically is known to be important for eye pigmentation (Kamaraj and Purohit, 2014), whereas POC5 is linked to AMD (Yan et al., 2018). GJA3 has been implicated in age-related cataract development (Tang et al., 2019). MEF2C has reported roles in numerous age-related conditions, including Alzheimer’s disease (Xue et al., 2021) and muscle wasting in cancer (Judge et al., 2020) and GRM is associated with age-related hearing loss (Liu et al., 2021b). Additional candidates are reported to be involved in cancer prognosis and progression, including TSPAN11 (Liu et al., 2021a), NKX6-1 (Su et al., 2021), and SLC16A1 (Zhang et al., 2021).
 
@@ -91,25 +171,77 @@ Taken together, our work reinforces the utility of fundus imaging for evaluating
 
 ## Materials and methods
 
-## EyeAge model development
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, wDah background (Drosophila melanogaster, females)</td>
+      <td>wDah control strain</td>
+      <td>Laboratory of Linda Partridge, Woodling et al., 2020</td>
+      <td></td>
+      <td>Maintained in Kapahi Lab</td>
+    </tr>
+    <tr>
+      <td>Strain, wDah background (Drosophila melanogaster, females)</td>
+      <td>UAS-ALKRNAi RNAi for ALK</td>
+      <td>Laboratory of Linda Partridge, Woodling et al., 2020</td>
+      <td>VDRC GD 11446</td>
+      <td>Maintained in Kapahi Lab</td>
+    </tr>
+    <tr>
+      <td>Strain, wDah background (Drosophila melanogaster, females)</td>
+      <td>UAS-ALKDN dominant negative ALK overexpression</td>
+      <td>Laboratory of Linda Partridge, Woodling et al., 2020</td>
+      <td></td>
+      <td>Maintained in Kapahi Lab</td>
+    </tr>
+    <tr>
+      <td>Strain, wDah background (Drosophila melanogaster, females)</td>
+      <td>elav-GS Ru486 inducible Gal4 driver</td>
+      <td>Bloomington Drosophila Stock Center, Woodling et al., 2020</td>
+      <td>BDSC 43642</td>
+      <td>Maintained in Kapahi Lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RU486 (mifepristone)</td>
+      <td>United States Biological, Osterwalder et al., 2001</td>
+      <td>282888</td>
+      <td>For inducting fly GeneSwitch expression system; 200 µM final concentration in food</td>
+    </tr>
+  </tbody>
+</table>
+
+### EyeAge model development
 
 Model development was done on the EyePACS train dataset (Table 1). A deep learning model with an Inception-v3 architecture (Deng et al., 2009; Szegedy et al., 2015) was trained to take a color fundus photo as input and predict the chronological age (referred to as chronologicalAge below) using L1 loss. Age values were normalized to have zero mean and unit variance before training (and during inference this normalization is reversed to get back to year units). Model training was stopped after 363,200 steps by looking at performance on the EyePACS tune dataset. The hyperparameters of the model were as follows: the initial learning rate was 0.0001, which was warmed up to 0.001 over 40,751 steps; after the warm up phase, the learning rate was decayed by a factor of 0.99 every 13,584 steps; dropout was applied to the prelogits at a rate of 0.2; a weight decay of 4e-5 was used. The model backbone was pre-trained using the ImageNet dataset (Deng et al., 2009). As some of the color fundus images in the UK Biobank dataset were of very low quality, we also trained a separate deep learning model to predict image quality, similar to what was reported in our prior work (Mitani et al., 2020; Varadarajan et al., 2018).
 
-## EyeAge model evaluation
+### EyeAge model evaluation
 
 The model described above was applied to images to predict chronological age. The image quality model described above was used to discard low quality images – reducing the initial 85,645 patient (174,049 image) dataset to 66,533 patients (120,362 images). Finally, we restricted the data to the first assessment visit to UK Biobank. This was done to reduce bias associated with image quality differences, as we observed quality differences between images captured in the later follow-up visits. Since these follow-up visits happened several years after the initial assessment, the time to event or censorship is much smaller, and a model could exploit this association. For participants that had images of both eyes passing the quality filter, we averaged the predictions across the two eyes. After these processing steps, we ended up with 55,267 data points total, one per remaining participant. Next, using the predicted eyeAge and the chronologicalAge of the participant at the time of imaging, an ‘eyeAgeAcceleration’ score was calculated for each participant as the residuals of the ordinary least squares regression model ‘chronologicalAge ~eyeAge’ (Liu et al., 2018). In order to compare with another well-known biological marker of age, phenoAge (Liu et al., 2018) was also computed using the values of blood markers available for the participants. PhenoAgeAcceleration was then computed in an analogous manner to eyeAgeAcceleration.
 
-## Method on selection of random set
+### Method on selection of random set
 
 Figure 2 required identification of matched, random individuals to assess the potential person-specific component of eyeAge predictions. For Figure 2—figure supplement 3, we created matched sets of visit pairs for each patient’s first visit by identifying a randomly matching patient visit that was 0–2 years after a patient’s first visit. To eliminate artifacts due to sampling differences between first and second visits, once we identified a patient’s first visit to match, we constrained its set of potential randomly matched patient visits to only be from second visits. For the longitudinal analysis in 2B (right), individuals were split both by age and by time between visits (using 2 month buckets) and, again, randomly matched. For Figure 2D, the individuals were split evenly in 2-year buckets. Individuals within the same bucket had their left and right predictions compared to one another.
 
-## Regression analyses in UK Biobank
+### Regression analyses in UK Biobank
 
 Cox proportional hazards regression was performed using the lifelines package, https://github.com/CamDavidsonPilon/lifelines. Since retinal imaging was performed at the initial visit, individuals with events with an unknown date or date prior to the initial visit were excluded. All UK Biobank algorithmically defined outcomes with at least 4000 events were analyzed: asthma (field 42014), COPD (field 42016), dementia (field 42018), myocardial infarction (field 42000), all-cause Parkinsonism (field 42030), and stroke (field 42006). We note that because eyeAgeAccel is defined as eyeAge - alpha * age - beta for constants alpha and beta identified through regression of age on eyeAge, hazard ratios for eyeAge are identical to those in which eyeAgeAccel is used in the model instead.
 
 Linear regression was performed on morbidity-related measurements taken at the same visit during which retinal imaging occurred, and was implemented using the statsmodels package with the model INT(outcome)~INT(age)+sex + INT(eyeAgeAccel), where INT(...) represents the rank-based inverse normal transformation. Individuals for which any of the outcome, age, or eyeAgeAccel variables were in the top 1% of outlier values were excluded. Measurements analyzed were: Overall health rating (field 2178), Long-standing illness (field 2188), Systolic blood pressure (field 4080), Diastolic blood pressure (field 4079), Pulse wave arterial stiffness index (field 21021), Health score (England) (field 26413), Fluid intelligence score (field 20016).
 
-## GWAS
+### GWAS
 
 The eyeAgeAccel value defined above was used as the target for GWAS analysis. GWAS analysis was performed on the fundus-based phenotype as described previously (Alipanahi et al., 2021). Briefly, samples were restricted to individuals of European ancestry to avoid confounding effects due to population structure. European genetic ancestry was defined by computing the medioid of the 15-dimensional space of the top genetic principal components in individuals who self-identified as ‘British’ ancestry and defining all individuals within a distance of 40 from the medioid as ‘European’ (corresponding to the 99th percentile of distances of all individuals who self-identified as British or Irish). Samples were further restricted to those who also passed sample quality control measures computed by UK Biobank, that is those not flagged as outliers for heterozygosity or missingness, possessing a putative sex chromosome aneuploidy, or whose self-reported and genetically inferred sex were discordant.
 
@@ -117,20 +249,20 @@ BOLT-LMM v2.3.4 was used to examine associations between genotype and eyeAgeAcce
 
 Genome-wide suggestive (p≤1 × 10−6) lead SNPs, independent at R2 ≤0.1, were identified using the –clump command in PLINK version v1.90b4. The LD reference panel contained 10,000 unrelated UK Biobank subjects of European ancestry (as defined above). To identify distinct non-overlapping loci of association, all variants with R2 ≥0.1 with a lead SNP were grouped into a ‘cluster’ with that lead SNP, and subsequently clusters within 250 kilobases of each other were merged, with the lowest p-value lead SNP retained as the locus representative. Putative causal variants were identified using susieR version 0.9.0. At each locus containing at least 10 variants in LD, the susieR::susie_suff_stat function was used to estimate posterior inclusion probabilities for each variant in the locus, using the same LD reference panel as was used to generate loci and with a maximum of L=10 causal variants per locus and 200 iterations of coordinate ascent.
 
-## Validation of Alk in fly
+### Validation of Alk in fly
 
-## Fly husbandry and phenotyping
+#### Fly husbandry and phenotyping
 
 For fly crosses, 15 virgin females were crossed with 3 males in bottles containing 1.55% live yeast, cornmeal, sugar, and agar (Wilson et al., 2020). Crosses were dumped 5 days following crossing, and female progeny were sorted into 4 replicate vials of 25 flies each, with food containing 200 μm RU486 to induce activation of the Gal-UAS system (Nicholson et al., 2008). Flies were maintained in 65% relative humidity at 25 °C in a 24 hr light/dark cycle throughout life. Two weeks post-induction, phototaxis was tested as previously described Hodge et al., 2022 by placing flies in a clear, empty 30 cm-long vial horizontally in a dark room. Light was shined on one end and the number of flies in the last 10 cm closest to the light source after 1 min was scored for responsiveness to light signals. This was tested across each of the four vials per group in three biological replicates (total 100 flies per replicate). Strains used were 3xelav-GS (provided from the lab of Geetanjali Chawla) Parkhitko et al., 2020 for RU486-dependent pan-neuronal Gal4, wDah control strain, UAS-AlkRNAi, and UAS-AlkDN (provided from the lab of Linda Partridge) (Woodling et al., 2020).
 
-## Pathway analysis
+### Pathway analysis
 
 All significant (p<1.0 × 10–6) GWAS candidates were used to assess pathway enrichment via Enrichr (Xie et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 For Drosophila phototaxis results, significance (p<0.05) was assessed using unpaired t-test. For Figure 4C, error bars represent SD across at least three biological replicates. Significant differences between experimental groups and controls are indicated by *. *, p<0.05. Statistical analyses were calculated with GraphPad Prism 4.
 
-## Data and code availability
+### Data and code availability
 
 A subset of EyePACS data is freely available online (https://www.kaggle.com/competitions/diabetic-retinopathy-detection/data). To enquire about access to the full EyePACS dataset, researchers should contact Jorge Cuadros (jcuadros@eyepacs.com). The UK Biobank data are available for approved projects (application process detailed at https://www.ukbiobank.ac.uk/enable-your-research/apply-for-access) through the UK Biobank Access Management System (https://www.ukbiobank.ac.uk). We have deposited the derived data fields and model predictions following UK Biobank policy, which will be available through the UK Biobank Access Management System. Full GWAS summary statistics are available in the Supplementary File. To develop the eyeAge model we used the TensorFlow deep learning framework, available at https://www.tensorflow.org. Code and detailed instructions for both model training and prediction of chronological age from fundus images is open-source and freely available as a minor modification (https://gist.github.com/cmclean/a7e01b916f07955b2693112dcd3edb60), (Ahadi, 2023 copy archived at swh:1:rev:ba002c0a6edddd13814ecc9e07ec14249b2375f4) of our previously published repository for fundus model training (https://zenodo.org/record/7154413) (Cosentino et al., 2021).

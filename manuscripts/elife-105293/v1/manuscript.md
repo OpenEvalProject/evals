@@ -7,7 +7,7 @@
 ### Affiliations
 
 1. Africa Bioethics Network Nairobi Kenya
-2. https://ror.org/012a91z28 University of Zaragoza Zaragoza Spain
+2. University of Zaragoza Zaragoza Spain ([ROR:012a91z28](https://ror.org/012a91z28))
 
 † Corresponding author
 

@@ -28,13 +28,21 @@
 
 ## Abstract
 
-Cohesin’s association with and translocation along chromosomal DNAs depend on an ATP hydrolysis cycle driving the association and subsequent release of DNA. This involves DNA being ‘clamped’ by Scc2 and ATP-dependent engagement of cohesin’s Smc1 and Smc3 head domains. Scc2’s replacement by Pds5 abrogates cohesin’s ATPase and has an important role in halting DNA loop extrusion. The ATPase domains of all SMC proteins are separated from their hinge dimerisation domains by 50-nm-long coiled coils, which have been observed to zip up along their entire length and fold around an elbow, thereby greatly shortening the distance between hinges and ATPase heads. Whether folding exists in vivo or has any physiological importance is not known. We present here a cryo-EM structure of the apo form of cohesin that reveals the structure of folded and zipped-up coils in unprecedented detail and shows that Scc2 can associate with Smc1’s ATPase head even when it is fully disengaged from that of Smc3. Using cysteine-specific crosslinking, we show that cohesin’s coiled coils are frequently folded in vivo, including when cohesin holds sister chromatids together. Moreover, we describe a mutation ( SMC1D588Y ) within Smc1’s hinge that alters how Scc2 and Pds5 interact with Smc1’s hinge and that enables Scc2 to support loading in the absence of its normal partner Scc4. The mutant phenotype of loading without Scc4 is only explicable if loading depends on an association between Scc2/4 and cohesin’s hinge, which in turn requires coiled coil folding.
+Cohesin’s association with and translocation along chromosomal DNAs depend on an ATP hydrolysis cycle driving the association and subsequent release of DNA. This involves DNA being ‘clamped’ by Scc2 and ATP-dependent engagement of cohesin’s Smc1 and Smc3 head domains. Scc2’s replacement by Pds5 abrogates cohesin’s ATPase and has an important role in halting DNA loop extrusion. The ATPase domains of all SMC proteins are separated from their hinge dimerisation domains by 50-nm-long coiled coils, which have been observed to zip up along their entire length and fold around an elbow, thereby greatly shortening the distance between hinges and ATPase heads. Whether folding exists in vivo or has any physiological importance is not known. We present here a cryo-EM structure of the apo form of cohesin that reveals the structure of folded and zipped-up coils in unprecedented detail and shows that Scc2 can associate with Smc1’s ATPase head even when it is fully disengaged from that of Smc3. Using cysteine-specific crosslinking, we show that cohesin’s coiled coils are frequently folded in vivo, including when cohesin holds sister chromatids together. Moreover, we describe a mutation (SMC1D588Y) within Smc1’s hinge that alters how Scc2 and Pds5 interact with Smc1’s hinge and that enables Scc2 to support loading in the absence of its normal partner Scc4. The mutant phenotype of loading without Scc4 is only explicable if loading depends on an association between Scc2/4 and cohesin’s hinge, which in turn requires coiled coil folding.
 
 ## Introduction
 
 SMC complexes are highly conserved from prokaryotes to eukaryotes. Best characterised among this family are cohesin and condensin, both of which are DNA translocases (Ganji et al., 2018; Davidson et al., 2019; Kim et al., 2019; Golfier et al., 2020). Cohesin and condensin are thought to organise chromosomes in eukaryotes during interphase and mitosis respectively by producing long loops of DNA (Nasmyth, 1982), a process called loop extrusion (LE). Cohesin has an additional property, namely the ability to hold sister DNAs together from their genesis during S phase till their eventual disjunction to opposite poles of the cell during anaphase.
 
 Cohesin is composed of two rod-shaped SMC proteins, Smc1 and Smc3, with a dimerisation interface at one end that is connected to an ABC-like ATPase domain via a 50-nm-long coiled coil (Figure 1A). Interaction via their dimerisation domains produces a V-shaped Smc1/3 heterodimer whose two arms are connected by a central ‘hinge’ domain. The two ATPase ‘head’ domains at the apices of this dimer are meanwhile inter-connected by a kleisin subunit, Scc1. Scc1’s N- and C-terminal domains bind respectively to the coiled coil emerging from Smc3’s head (its neck) and the base of Smc1’s ATPase, thereby creating a tripartite SMC-kleisin (S-K) ring (Figure 1A). Cohesin’s association with DNA as well as its abilities to hold sisters together and extrude DNA loops are facilitated by three large hook-shaped HAWK (HEAT repeat proteins associated with kleisins) proteins; Scc2, Scc3, and Pds5 (Figure 1A). Scc3 is thought to be permanently bound to the complex, whereas Scc2 and Pds5, which are mutually exclusive, are more dynamic. Of these, Scc2 has a crucial role in activating cohesin’s ATPase at least in vitro, whether in the presence or absence of DNA (Petela et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of Saccharomycescerevisiae cohesin complex and its folding cycle. (B) Comparison of growth of wild-type (WT), scc4-4, and scc4-4 smc1D588Y strains at 35.5°C (K699, K8326, K19813). (C) Tetrad dissection of diploid strains containing SCC4/scc4Δ SMC1/smc1D588Y grown at 30°C. Spores expressing smc1D588Y are circled in red, and spores that lack Scc4 are indicated with blue hexagons. (D) Structure of the mouse Smc3-Smc1D574Y hinge domain (PDB: 7DG5). (E) Multiple sequence alignment indicating conservation of Smc1D588. (F) Structural superposition of the WT hinge and the D574Y mutant hinge. Tyr574 swings out relative to the position of D574 with a concomitant local conformational change of the mutated loop.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of growth of endogenous SCC4 with ectopically expressed SCC4, scc4Y40A, scc4Y40H, scc4Y40N, and scc4-4 at 37°C (K7564, K8504, K20350, K20351, K20352, K20353). (B) Crystal structure of the Scc21-181/Scc4 complex (PDB: 4XDN; Hinshaw et al., 2015). Scc2 is shown in orange, Scc4 in grey, and Scc4Y40 in green. (C) Co-immunoprecipitation (co-IP) of wild-type (WT) or mutant Scc4-myc18 from cells expressing Scc2-HA6 (K20110, K20111, K20112, K20113, K7564) (D) Tetrad dissection performed on heterozygous smc1∆/SMC1 scc4∆/SCC4 strains with SMC1, smc1(D588Y), smc1(D588W), or smc1(D588F) integrated at the trp1 locus (K21973, K21974, K22012, K21990). Spores in which scc4∆-related lethality is suppressed by ectopically expressed smc1 mutants are circled in blue (smc1∆) and red (SMC1). Following growth on YPD for 2 days at 30°C, 15.7% of 108 spores contained the markers for smc1(D588Y) and scc4∆ (12.0% smc1∆, 3.7% SMC1), 27.8% of 72 spores contained the markers for smc1(D588W) and scc4∆ (18.0% smc1∆, 9.8% SMC1), and 5.6% of 72 spores contained the markers for smc1(D588F) and scc4∆ (4.2% smc1∆, 1.4% SMC1). (E) Comparison of growth of WT, smc1D588Y, scc2-4, and scc2-4 smc1(D588Y) strains at 30°C (K699, K21416, K5828, K21995). (F) Tetrad dissection of a heterozygous SCC2/scc2∆ strain in a background heterozygous for suppressor mutation smc1(D588Y). Spores bearing the marker for smc1(D588Y) are encircled in red. No spores bearing the marker for scc2∆ were detected. (G) Graphical D574Y substitution in the structure of the WT cohesin hinge. Y574 adopting the same conformation of D574 crashes with a neighbouring loop (right, D574Y). (H) Smc1 WT, D588Y (DY) or D588W (DW), and Smc3-FLAG monomeric hinge proteins were mixed in equimolar ratio prior to co-IP with anti-FLAG beads. The amount of protein bound to beads was determined by western blot using anti-HIS antibody to detect SMC proteins. Non-specific binding of Smc1 to anti-FLAG beads is shown in left-hand panels. (I) WT Smc1-SNAP competitor was added to Smc1 (WT or D588Y) and Smc3-FLAG preformed heterodimeric hinges, samples were added to BSA-blocked anti-FLAG beads every 15 min for 90 min. Protein bound to beads was detected as in (E).
 
 The discovery that anaphase is initiated through the opening of S-K rings due to cleavage of their kleisin moiety by the protease separase (Uhlmann, 2001) led to the suggestion that cohesion is mediated by the co-entrapment of sister DNAs within individual S-K rings (Haering et al., 2002). This hypothesis, known as the ring model, made the key prediction that site-specific chemical crosslinking of all three of the ring’s subunit interfaces would create a covalent topological linkage resistant to protein denaturation between small circular sister DNAs. Such catenated dimers (CDs) are indeed found in cells (Haering et al., 2008; Gligoris et al., 2014) and only under conditions in which cells form sister chromatid cohesion (Srinivasan et al., 2018).
 
@@ -66,7 +74,7 @@ Using cryo-EM, we have now determined the structures of the folded cohesin compl
 
 To understand better how Scc4 helps Scc2 to load cohesin onto chromosomes, we isolated mutations that enable temperature-sensitive scc4-4 cells to grow at the restrictive temperature (35.5°C). This yielded both intragenic and extragenic mutations. The scc4-4 allele was created by error-prone PCR (Ciosk et al., 2000) and contains several different mutations, including Y40N. Sequencing of intragenic revertants revealed that wild-type (WT) growth was restored either by restoring tyrosine at position 40 or by substituting it with histidine, implying that the mutation responsible for scc4-4’s thermosensitive proliferation is Y40N. When integrated at the LEU2 locus, this mutation alone conferred temperature sensitive (ts) growth (Figure 1—figure supplement 1A). Y40 is a highly conserved residue that is buried in Scc4’s superhelical array of TPR motifs (Figure 1—figure supplement 1B). It is unlikely that it contacts the Scc2 polypeptide directly, but despite this, Y40N disrupts co-immunoprecipitation of Scc4 and Scc2 (Figure 1—figure supplement 1C).
 
-## A mutation in the hinge domain of Smc1 restores viability in the absence of Scc4
+### A mutation in the hinge domain of Smc1 restores viability in the absence of Scc4
 
 All of the extragenic scc4-4 suppressors (Figure 1B) contained a mutation tightly linked to SMC1. Indeed, all 12 independently isolated mutations contained the same single base change causing substitution of aspartic acid by tyrosine at position 588 in Smc1 (Figure 1E). Tetrad dissection of SCC4/scc4Δ SMC1/smc1D588Y diploids revealed that smc1D588Y enabled cells to proliferate in the complete absence of Scc4 (Figure 1C). Smc1D588 is located in the hinge domain, at the C-terminal end of a β strand that interacts in an antiparallel fashion with a strand in Smc3 (Figure 1D). Despite its proximity to the Smc1-Smc3 interface, D588 does not appear to contact Smc3 residues. To address whether suppression arises due to the loss of a relatively conserved acidic residue (Figure 1E) or due to the substitution of a bulky aromatic, we tested the ability of a variety of other amino acid substitutions to rescue viability in the absence of Scc4. Mutant or WT alleles of SMC1 were introduced into the TRP1 locus of a SMC1/smc1Δ SCC4/scc4Δ diploid. Subsequent dissection revealed that mutation to phenylalanine or tryptophan was able to restore growth to a similar degree as tyrosine in the absence of Scc4 (Figure 1—figure supplement 1D) but not histidine, arginine, alanine, glutamic acid, or asparagine (Supplementary file 1). Suppression of scc4Δ lethality also occurred in the presence of WT SMC1 but was much less effective (Figure 1—figure supplement 1D). Thus, we conclude that suppression is due to the introduction of a bulky aromatic amino acid at this crucial position and not through loss of the conserved aspartic acid. It is notable that the DNA base change observed in all 12 suppressors is the only one capable of creating such a transition via a single change and that the equivalent position is never a bulky aromatic in SMC2, SMC3, and SMC4 as well as SMC1. smc1D588Y was able to rescue the proliferation defect of the temperature-sensitive scc2-4 allele at 30°C, but not scc2Δ (Figure 1—figure supplement 1E, F), implying that it acts by enhancing the activity of Scc2, not by replacing it.
 
@@ -74,19 +82,35 @@ To determine whether the smc1D588Y mutation alters the hinge structure, we intro
 
 Our finding that Smc1D588Y increases dissociation of Smc1 from Smc3 hinge domains in vitro raises the possibility that suppression depends on, or indeed is caused by, the greater ease with which hinges can dissociate. We therefore tested whether other non-lethal mutations within the Smc1/Smc3 hinge interface are also capable of bypassing the need for Scc4. A highly conserved lysine residue within Smc3 (Smc3K652) that opposes Smc1D588 was mutated to tyrosine, alanine, or valine, with no effect. Similarly, previously published mutations in both hinges, designed to weaken their interaction, smc1L635K K639E; smc1I590K; smc1L564K; smc3E570K; smc3L672R (Mishra et al., 2010), were also unable to support growth in the absence of Scc4. The failure of these other mutations to suppress scc4Δ lethality, together with our finding that smc1D588Y was identified in 12 out of 12 spontaneous extragenic suppressors, suggests that decreased affinity of Smc1/Smc3 hinges is not the mechanism by which Smc1D588Y enables Scc2 to load cohesin without Scc4.
 
-## smc1D588Y restores cohesin occupancy on chromosome arms in the absence of Scc4
+### smc1D588Y restores cohesin occupancy on chromosome arms in the absence of Scc4
 
 Calibrated ChIP-seq revealed that scc4-4 causes a substantial reduction in the level of chromosomal cohesin when G1 cells undergo S phase and enter G2/M at the restrictive temperature (37°C) (Figure 2A, Figure 2—figure supplement 1A). The reduction is more marked within pericentric sequences, where there is a 10-fold reduction, than along arms where is there merely a fourfold reduction. Average chromosome profiles centred around the centromeric CDEIII, plotted as a percentage of the reads obtained for WT, revealed that smc1D588Y restores cohesin occupancy to approximately WT levels on chromosome arms (>30 kb from the centromere), but not around centromeres (Figure 2A). The failure to restore loading around centromeres is perhaps not surprising as most pericentric cohesin is loaded at CENs in a process that involves binding of Scc4 to the kinetochore protein Ctf19, a requirement that is apparently not bypassed by smc1D588Y. Interestingly, smc1D588Y caused a substantial reduction of cohesin occupancy around centromeres even in the presence of WT SCC4 (Figure 2A), an effect that will also have contributed to the lack of suppression in this region of the chromosome.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig2-v1.jpg)
+
+**Figure 2.:** (A) Average calibrated ChIP-seq profiles of Scc1-PK6 in smc1D588Y, scc4-4, and smc1D588Y scc4-4 cells 60 kb either side of CDEIII plotted as a percentage of the average number of reads obtained for wild-type (WT) cells. Cells were pheromone arrested in G1 at 25°C before release at 37°C into medium containing nocodazole. Samples were taken 75 min after release (K22005, K22009, K21999, K22001). (B) Average calibrated ChIP-seq profiles of Scc1-PK6 in smc1D588Y, and smc1D588Y scc4Δ cells 60 kb either side of CDEIII plotted as a percentage of the average number of reads obtained for WT cells. Cells were pheromone arrested in G1 at 25°C before release at 25°C into medium containing nocodazole. Samples were taken 60 min after release (K22005, K22009, K19624). (C) Average calibrated ChIP-seq profiles of Scc2-PK6 2 kb either side of CDEIII in cycling WT, smc1D588Y, and smc1D588Y scc4Δ cells at 25°C (K21388, K24680, K24678). (D) Average calibrated ChIP-seq profiles of ectopically expressed Smc3E1155Q-PK6 2 kb either side of CDEIII in cycling WT, smc1D588Y, and smc1D588Y scc4Δ cells at 25°C (K24562, K24689, K24564). (E) ATPase activity of WT or mutant tetramers on addition of ATP and Scc2 in the presence and absence of DNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Calibrated ChIP-seq profiles of Scc1-PK6 in wild-type (WT), smc1D588Y, scc4-4, and smc1D588Y scc4-4 cells across chromosome I. Cells were pheromone arrested in G1 at 25°C before release at 37°C into medium containing nocodazole. Samples were taken 75 min after release (K22005, K22009, K21999, K22001). (B) Calibrated ChIP-seq profiles of Scc1-PK6 in WT, smc1D588Y, and smc1D588Y scc4Δ cells across chromosome I. Cells were pheromone arrested in G1 before release into medium containing nocodazole at 25°C. Samples were taken 60 min after release (K22005, K22009, K19624). (C) A fraction of the ATPase reaction stained with Coomassie after SDS-PAGE to confirm protein levels. (D) ATPase activity of WT or mutant trimers on addition of ATP and Scc2 in the presence or absence of DNA.
 
 To investigate the effect of smc1D588Y at a more physiological temperature, we used calibrated ChIP-seq to compare cohesin’s occupancy of the genome in SCC4, SCC4 smc1D588Y, and scc4Δ smc1D588Y cells following their release from a pheromone-induced G1 arrest and subsequent arrest in G2/M phase at 25°C. Average chromosome profiles around centromeres plotted as a percentage of WT (SCC4) revealed that smc1D588Y increased cohesin occupancy on chromosome arms to 120–150% of WT levels, both in the presence and absence of SCC4 (Figure 2B). In other words, smc1D588Y enhances cohesin’s loading on chromosome arms via a mechanism that is completely independent of Scc4. In contrast, smc1D588Y reduced association around centromeres to approximately 60% of WT levels, which was further reduced to 20% by scc4Δ. In scc4Δ smc1D588Y cells, cohesin occupancy within pericentric chromatin resembles that along chromosome arms as if a single Smc1D588Y-driven mechanism is responsible for loading at both locations in these cells (Figure 2—figure supplement 1B). Importantly, smc1D588Y does not increase occupancy on chromosome arms merely because defective loading at CENs increases the amount of cohesin available to load onto chromosome arms because the scc4m35 mutation, which disrupts Scc4’s association with Ctf19 and also reduces loading at CENs, has no such effect (Petela et al., 2018; Hinshaw et al., 2015).
 
 It is striking that in SCC4 cells smc1D588Y had far less effect on cohesin’s association at CEN loading sites themselves. For example, it was 110% of WT in cells growing at 25°C and 75% of WT at 37°C. Because association was greatly reduced in scc4-4 and scc4Δ cells (Figure 2A, B), it presumably arises as a consequence of Scc4’s association with Ctf19. If so, these complexes should be associated with Scc2, which was confirmed by calibrated ChIP-seq showing that Scc2’s association with CENs far from being reduced was in fact substantially increased by smc1D588Y and fully dependent on Scc4 (Figure 2C). Cohesin occupied by Scc2 at CENs could either be in the process of loading (Petela et al., 2018; Hu et al., 2011) or engaged in LE (Dauban et al., 2020; Paldi et al., 2020). In both cases, the complexes are likely to adopt at least transiently the clamped state, which is stabilised by smc1E1158Q and smc3E1155Q, at least in vitro (Collier et al., 2020). In cells, cohesin complexes containing these mutations accumulate to especially high levels at CENs, albeit with a short residence time (Hu et al., 2011), suggesting that they initiate an early step in the loading process, namely the clamped state, but in the absence of ATP hydrolysis fail to undergo a later step required for stable association and translocation into neighbouring pericentric sequences. Interestingly, smc1D588Y not only increased Scc2’s association with CENs but also caused a similar increase in Smc3E1155Q’s association (Figure 2D). This implies that the reduced loading around centromeres arises not from defective formation of the clamped state at CENs by Scc2/4 complexes associated with Ctf19 but from a defect in a subsequent step in the loading/translocation reaction that requires ATP hydrolysis. Because accumulation of Smc1D588Y complexes at CENs resembles that of complexes containing Smc3E1155Q, we tested the effect of Smc1D588Y on cohesin’s ATPase activity but found little or no effect either in the presence or absence of DNA (Figure 2E, Figure 2—figure supplement 1D).
 
-## Mutations in SCC2 and histone genes also suppress scc4Δ lethality
+### Mutations in SCC2 and histone genes also suppress scc4Δ lethality
 
 To address whether it is possible to identify extragenic scc4Δ suppressor mutations besides smc1D588Y, we isolated a second set in a smc1D588E yeast strain that cannot mutate residue 588 to an aromatic residue through a single base pair mutation (Petela et al., 2018). We identified using genetic crosses and genomic sequencing 12 mutations within SCC2 (described in Petela et al., 2018), 49 within HTA1 (one of two histone H2As), and a single mutation within HTB1 (one of two H2Bs). All permitted proliferation of scc4Δ cells, albeit to a greater or lesser extent (Figure 3A).
 
-## Scc4 helps overcome inhibition of loading by nucleosomes
+![Figure 3.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig3-v1.jpg)
+
+**Figure 3.:** (A) Tetrad dissection of diploid strains containing SCC4/scc4Δ leu2/scc4-4 ΗTΑ1/hta1R31I. Spores in which scc4Δ is rescued by hta1R31I are circled in blue. (B) Structure of the yeast nucleosome (PDB: 1ID3; White et al., 2001). H2A is shown in blue and H2B in green. Suppressor mutations are shown in yellow. (C) Average calibrated ChIP-seq profiles of Scc1-PK6 in hta1R31I, scc4-4, and hta1R31I scc4-4 cells 60 kb either side of CDEIII plotted as a percentage of the average number of reads obtained for wild-type (W)T cells. Cells were pheromone arrested in G1 at 25°C before release at 35.5°C into medium containing nocodazole. Samples were taken 60 min after release (K22005, K24574, K24568, K22001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cell cycle progression as measured by FACS of wild-type (WT) and sth1-3 cells arrested in G1 with pheromone prior to release into nocodazole containing medium at 37°C (K23997, K22005). (B) Fraction of cells with buds of cells treated as described in (A). (C) Western blot to measure the levels of Scc1-PK6 and acetylation of Smc3 of cells treated as described in (A). (D) Average calibrated ChIP-seq profile of Scc1-PK6 10 kb either side of CDEIII at 75 min and 105 min after release described in (A). The occupancy ratios (OR) were derived as described in Hu et al., 2015. (E) ChIP-seq profiles of Scc1-PK6 as in (D) at individual loci. Sequences measured in Lopez-Serra et al., 2014 are shaded in orange. (F) Average calibrated ChIP-seq profile of Scc1-PK6 in sth1-3 cells at 105 min after release 60 kb either side of CDEIII plotted as a percentage of the average number of reads obtained for WT cells at either 75 or 105 min after release. (G) Average calibrated ChIP-seq profiles of Scc1-PK6 10 kb either side of CDEIII of cells expressing SMC1 or smc1D588Y in the presence of STH1 or sth1-3. Cells were pheromone arrested in G1 at 25°C prior to release into nocodazole containing medium at 37°C. Samples were taken at 75 min and 105 min post release, and samples at similar cell cycle stages were compared (K22005, K22009, K23997, K24031).
+
+### Scc4 helps overcome inhibition of loading by nucleosomes
 
 The H2A mutations affected three residues, namely G30, R31, and R34. These mutations (G30D, R31I/T/S/G, and R34I) are all located on a defined patch on the surface of the nucleosome that interacts with DNA and the single H2B mutation (Y44D) is located nearby (Figure 3B). Because substitution of two positively charged residues causes suppression, we surmise that the mutations act by weakening the association between histones and DNA. hta1R31I was made de novo and shown to suppress the lethality of scc4-4 cells (Figure 3A). Its effect on cohesin loading in SCC4 and scc4-4 cells was measured using calibrated ChIP-seq to measure Scc1’s association with the genome after cells had undergone DNA replication at 35.5°C following a pheromone-induced G1 arrest at 25°C. A lower restrictive temperature (35.5°C) was used in this instance because hta1R31I is itself lethal at 37°C. Consistent with its poor suppression of scc4Δ lethality (Figure 3A), hta1R31I increased loading along chromosome arms more modestly than smc1D588Y, raising loading in scc4-4 cells from 20% to 70% of WT (HTA1 SCC4) (Figure 3C). As in the case of both smc1D588Y and scc2E822K L937F (Petela et al., 2018), hta1R31I failed to suppress the loading defect of scc4-4 mutants in the vicinity of centromeres (Figure 3C). Interestingly, in the presence of WT SCC4, hta1R31I actually increased loading along chromosome arms over WT by 20%. This implies that the association between histones and DNA within the nucleosome restricts cohesin loading, at least along chromosome arms, not only in scc4 mutants but also in WT cells. Like scc2E822K L937F (Petela et al., 2018) but unlike smc1D588Y, hta1R31I does not per se reduce loading of cohesin around centromeres (Figure 3C), suggesting that hta1R31I and smc1D588Y affect different aspects of the loading process.
 
@@ -96,9 +120,17 @@ Given the pleiotropic consequences of sth1-3 on cell cycle progression, it is di
 
 Recent work has revealed that Scc2 has a key role in clamping DNA onto engaged heads and that Scc2E822K, which also suppresses scc4Δ, might function by enhancing DNA binding within the clamped state (Collier et al., 2020; Shi et al., 2020; Higashi et al., 2020). We therefore suggest that the reason why histone mutations suppress the lethality of scc4 mutants is because they increase the accessibility of DNA and thereby facilitate formation of the clamped state.
 
-## Scc4 regulates an interaction between the hinge domain and HAWKs
+### Scc4 regulates an interaction between the hinge domain and HAWKs
 
 How might replacement of a specific surface residue on the Smc1 hinge by a bulky aromatic one help Scc2 function without Scc4? One possibility is that it strengthens a hydrophobic interaction with another cohesin subunit. We have previously described the UV-dependent crosslinking in living yeast cells between Pds5 and a version of Smc1 containing BPA at position K620, which is located in an alpha helix adjacent to the loop containing D588 (Figure 4A; Bürmann et al., 2019). Pds5 is not required for cohesin loading, and therefore strengthening its interaction with Smc1’s hinge cannot be responsible for suppression. We therefore tested whether UV induces crosslinking of Smc1K620BPA to other regulatory subunits. To do this, cells expressing FLAG-tagged versions of Scc2, Scc3, Scc4, or Pds5 in cells whose sole source of Smc1 was Myc-tagged Smc1K620BPA were exposed to UV, and subsequent western blotting was used to detect FLAG-tagged proteins in immunoprecipitates (IPs) of Scc1-containing complexes (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig4-v1.jpg)
+
+**Figure 4.:** (A) Modelled structure of the yeast cohesin hinge domain based on bacterial SMC hinge from Thermotoga maritima (PDB: 1GXL; Haering et al., 2002). (B) Identification of proteins that crosslink to Smc1 hinge. Strains expressing various cohesin regulators tagged with either FLAG6 or HA6 in combination with Smc1K620BPA-myc were treated with UV prior to immunoprecipitation with PK-tagged Scc1 and the products analysed by western blotting (B1969, B1976, B1983, B2020, B2072, B2079). (C) Effect of Scc4 and Smc1D588Y on crosslinking between Pds5 and Smc1 hinge. Cells expressing Smc1K620BPA in the presence or absence of scc4-4 and Smc1D588Y were exponentially grown at 25°C and shifted to 35.5°C for 1 hr. Cells were irradiated with UV, and the cohesin complex was isolated by immunoprecipitation of PK-tagged Scc1. The Myc-tagged Smc1K620BPA was examined by western blot (B2072, B2212, B2214, B2215). (D) Quantification of the crosslinks in (C) as a percentage of the wild-type (WT) Smc1 crosslinking efficiency. (E) Effect of Scc4 and Smc1D588Y on crosslinking between Scc2 and Smc1 hinge. Strains were treated as described in (C) (B1969, B2213, B2216, B2217). (F) Quantification of the crosslinks in (E) as a percentage of the WT Smc1 crosslinking efficiency. The experiments shown in (C–F) were performed twice with the same result. (G) In vivo cysteine crosslinking of Smc1 hinge with Scc2 protein. Yeast cells expressing Smc1K620C and Scc2N200C were incubated with bismaleimidoethane (BMOE) (B3082, B3107, B3114, and B3116). The crosslinked Smc1/Scc2 was isolated by immunoprecipitation of PK-tagged Scc1 and examined by western blot. * Unspecific crosslink band.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Average calibrated ChIP-seq profiles of Scc1-PK6 60 kb either side of CDEIII of cells expressing scc4-4 in the presence or absence of Pds5-AID. Cells were pheromone arrested in G1 at 25°C before release at 37°C into medium containing nocodazole and auxin. Samples were taken 75 min after release (K22001, K27751). (B) Average calibrated ChIP-seq profiles of Scc1-PK6 and Pds5-PK6 60 kb either side of CDEIII of cycling cells expressing wild-type (WT) or Smc1D588Y. Inset shows magnification of the region 40–60 kb away from CDEIII (K19012, K25378, K22005, K22009). (C) Data shown in (B) plotted as a ratio of Pds5:Scc1 for WT and Smc1D588Y. (D) Determination of the Scc2 region crosslinked by Smc1K620BPA. Yeast strains expressing Smc1K620BPA and indicated alleles of TEV-cleavable Scc2 were subjected to UV irradiation (B1969, B2143, B2144, B2145, B2149, and B2298). The crosslink products were co-immunoprecipitated with Scc1-PK and treated with TEV proteinase. The cleaved Scc2/Smc1 crosslinked products were analysed by western blot. (E) Schematic of TEV cleavage sites introduced into Scc2 with respect to the crosslink to Smc1K620BPA in (D).
 
 Western blotting for the Myc epitope confirmed that all samples contained a high molecular weight version of Smc1, consisting of proteins crosslinked to K620 (Figure 4B). As expected for a subunit that is stably associated with cohesin Smc-kleisin trimers, high levels of Scc3 were detected in IPs from Scc3-FLAG cells, most of which had an electrophoretic mobility expected of uncrosslinked protein, but a small fraction co-migrated with the high molecular weight version of Smc1, suggesting that UV also induces crosslinking of Smc1K620BPA to Scc3. Pds5 is less stably associated, explaining why only modest amounts of uncrosslinked Pds5 are detected in the IPs. Despite this, we observed much more Smc1-Pds5 than Smc1-Scc3 crosslinked protein, confirming that Smc1K620BPA crosslinks to Pds5 with high efficiency (Bürmann et al., 2019). Because co-precipitation of unstably associated proteins will be greatly enhanced by crosslinking, it is not possible to assess the actual fraction of crosslinked protein. Scc2’s residence time on chromosomal cohesin of approximately 2–4 s (Hu et al., 2011) is even less than that of Pds5 and the former is therefore difficult to detect in Smc1 IPs. Nevertheless, the level of Smc1-Scc2 crosslinked protein was comparable to that of Scc3, despite being overall threefold less abundant (Tóth et al., 1999). In contrast, we detected no Smc1-Scc4 crosslinked proteins in Scc4FLAG cells. Cryo-EM has revealed that the N-terminal HEAT repeats of Scc2 as well as those of its human ortholog Nipbl are found in close proximity to Smc1’s hinge within complexes that have clamped DNA on top of their engaged ATPase domains (Shi et al., 2020; Higashi et al., 2020; Collier et al., 2020) and the crosslinking between Smc1K620BPA and Scc2 may reflect this state. However, they could also reflect an alternative one in which Scc2 is bound to cohesin whose heads are disengaged as described in the next section.
 
@@ -108,21 +140,41 @@ If the essential role of Scc4 were merely to hinder an interaction between the S
 
 Our finding that Scc4 does not act solely by hindering Pds5 suggests that Scc4 and Smc1D588Y facilitate Scc2 activity by promoting its interaction with the hinge. To elucidate where the hinge contacts Scc2, we inserted TEV protease cleavage sites at various positions within Scc2 to determine whether Smc1K620BPA crosslinked to the N- or C-terminal fragments created by TEV cleavage (Figure 1—figure supplement 1D, E). Analysis of those TEV insertions that were functional in vivo revealed that crosslinking occurred within Scc2’s N-terminal sequences, between residues 150 and 215. This interval is between the N-terminal domain that binds Scc4 (Hinshaw et al., 2015) and the hook-shaped structure composed of HEAT repeats. This part of Scc2 is not sufficiently ordered to have been visualised in the cryo-EM structure of a complex containing DNA clamped between Scc2 and engaged Smc1/3 ATPases (Collier et al., 2020). To confirm the location, we measured BMOE-induced crosslinking in vivo between Smc1K620C and a variety of Scc2 cysteine substitutions between residues 153 and 212. Although Smc1K620C alone gave rise to a Smc1-Scc2 crosslinked species, the crosslinking was more efficient on the introduction of Scc2N200C, suggesting that Smc1 is likely also crosslinking to a natural cysteine in Scc2 (most likely Scc2C224, which sits on a small helix just below N200) (Figure 4G). Importantly, the region of Scc2 whose association with the Smc1 hinge is reduced by scc4-4 and restored by smc1D588Y is close to where Scc4 binds to Scc2 (Hinshaw et al., 2015). In other words, Scc4 would be close enough to directly influence Scc2’s interaction with the hinge.
 
-## Cryo-EM structures of cohesin trimers associated with Scc2 or Pds5 reveal folded coiled coils
+### Cryo-EM structures of cohesin trimers associated with Scc2 or Pds5 reveal folded coiled coils
 
 The notion that smc1D588Y suppresses scc4Δ by altering the interaction between Smc1’s hinge domain and cohesin’s HAWK subunits Scc2 and Pds5 raises a conundrum: how can HAWK proteins, which are known to associate with cohesin’s kleisin subunit and its ATPase domains, interact with a hinge domain that is separated from the ATPase domains by a 50-nm-long coiled coil? One possibility is that the HAWK proteins interact with cohesin’s hinge and ATPase domains at different points in time. Alternatively, if in fact they interact with hinge and heads simultaneously, then the coiled coil cannot be fully extended. For example, folding at an elbow in the middle of the coiled coil (Bürmann et al., 2019) may bring the hinge into proximity of HAWKs associated with the ATPases. Folding has recently been observed at low resolution in a complex between DNA, Scc2, and hydrolysis-impaired EQEQ ATPases engaged in the presence of ATP (Collier et al., 2020; Shi et al., 2020; Higashi et al., 2020). To investigate this further, we used cryo-EM to determine the structures of the S. cerevisiae cohesin trimer (Smc1, Smc3, and Scc1 containing cysteines specifically crosslinking the three intermolecular interfaces; Smc1-Scc1, Smc3-Scc1, and the Smc1-Smc3 hinge [Collier et al., 2020] at an efficiency of 20% [data not shown]) bound to either Scc2 (Figure 5A) (EMD-12880) or Pds5 (Figure 6A) (EMD-12888) in the absence of nucleotide and DNA. The former revealed a coiled coil folded at its elbow (Figure 5B, C), causing the hinge to interact with sections of the coiled coil that are approximately 10 nm away from the point at which they emerge from the ATPase domains (Figure 5B). The cryo-EM reconstruction not only revealed the path of the coiled coils around the hinge-coiled coil interface (where the map is at 5–6 Å resolution; EMD-12887), but also enabled the production of a pseudo-atomic model of the folded form (PDB: 7OGT). Folding brings a pair of helices within Smc1’s hinge, namely the end of the coiled coil around A520-F526 and another short helix around L564-R578, into close proximity of a short stretch of Smc3’s coiled coil (Figure 5D). Very similar folding was observed when Pds5 was bound instead of Scc2 (Figure 6A, B). Though folding permits an association between the hinge and the N-terminal Scc2 sequences, which could in principle stabilise the folded conformation, we also observed similar, if not identical, folding in samples lacking all HAWK proteins (Figure 5—figure supplement 1E).
 
-## Coiled coil folding enables interaction of Scc2 or Pds5 with the Smc1 hinge
+![Figure 5.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig5-v1.jpg)
+
+**Figure 5.:** (A) Views of cryo-EM reconstruction of Scc2-bound cohesin coloured by subunit. (B) Full pseudo-atomic model of folded cohesin trimer bound to Scc2. (C) Close-up of breaks in the coiled coils of Smc3 and Smc1 that constitute the elbow region of cohesin (PDB: 7OGT; EMD-12887). (D) Close-up of the interaction between the hinge and Smc3 that stabilises the folded state. (E) Close-up of Scc2 N-terminus in proximity of hinge residues K620 and D588Y. (F, G) Comparison of cryo-EM densities between Scc2-bound and ATP-free cohesin seen in (F) (EMD-12880) and ATP-bound cohesin seen in (G) (EMD-12889), demonstrating that head engagement is not sufficient for coiled coil unzipping.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) 2D classes of Scc2-bound ATPase heads in the absence (left) and presence (right) of ATP demonstrating the stabilising effect of head engagement. (B) 2D classes showing flexibility within Scc2 and between the heads and the joint. (C) Fitting of atomic map from Collier et al., 2020 (6ZZ6) in cryo-EM map made by focused classification. The map originates from the same data as that of Figure 5A and has been processed to remove the floppy C-terminal head domain of Scc2. (D) Overlay of Pds5- and Scc2-bound pseudo-atomic model of cohesin tetramer. The binding of the respective HAWKS is mutually exclusive. (E) 2D classes of engaged cohesin in the absence of any HAWKs that demonstrate that folding through the elbow is constitutive.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Processing workflow to obtain the maps of the folded elbow structure (A), the Scc2-bound cohesin complex (B), the Pds5-bound cohesin complex (C), and the engaged ATPase heads (D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig6-v1.jpg)
+
+**Figure 6.:** (A) Composite map of cryo-EM reconstructions of Pds5-bound cohesin (EMD-12888). (B) Full pseudo-atomic model of folded cohesin trimer bound to Pds5 coloured by subunit. (C) Close-up of interaction between hinge and Pds5 showing proximity of N-terminus of the HAWK to hinge residues D588 and K620. (D) 2D classes of Pds5-bound ATPase heads. (E) Close-up of Pds5 binding to K112- and K113-proximal region of the Smc3 head.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67268/elife-67268-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Coiled coil elbow and hinge pseudo-atomic model fitted into its corresponding cryo-EM density with views of coiled coils from the side and through an intersection. (B) Fitting of Pds5 (PDB: 5F0N; Lee et al., 2016), Smc1 (PDB: 1W1W Haering et al., 2004), and Smc3 (PDB: 4UX3; Gligoris et al., 2014) into the Pds5-bound cryo-EM map. (C) Fitting of Scc2 (PDB: 5T8V; Kikuchi et al., 2016), Smc1 (PDB: 1W1W; Haering et al., 2004), and Smc3 (PDB: 4UX3; Gligoris et al., 2014) into the Scc2-bound cryo-EM map.
+
+### Coiled coil folding enables interaction of Scc2 or Pds5 with the Smc1 hinge
 
 Initial 2D classes of Scc2-bound cohesin revealed floppiness not only within the HAWK, especially within its C-terminus, but also between the joint and the ATPase heads (Figure 5—figure supplement 1B). We therefore split the complex computationally into two regions, with a boundary at the joint, and processed their densities separately (Figure 5F). This yielded an overall resolution of 13 Å for the HAWK-bound part, which enabled fitting of a homologous Scc2 crystal structure (PDB: 5ME3; Chao et al., 2015) together with both head crystal structures (PDB: 1W1W; Haering et al., 2004; PDB: 4UX3; Gligoris et al., 2014) to produce a pseudo-atomic model. Analysis revealed that Scc2 binds rigidly to the Smc1 ATPase head in a manner resembling but distinct from its interaction in the clamped state (Figure 5—figure supplement 1B; Collier et al., 2020). Scc2’s C-terminal HEAT repeats 18–24 (residues 1127–1493) dock onto Smc1’s F-loop (residues 1095–1118) as well as the emerging coiled coils, a mode of interaction analogous to that between condensin’s HAWK Ycs4 and Smc4 (Lee et al., 2020). This mode of interaction therefore takes place whether or not heads are engaged. Unlike the engaged and clamped head state, Scc2 makes no contact with Smc3 in the non-engaged, nucleotide-free structure. Contrary to its C-terminal part, Scc2’s N-terminal region adopts a range of conformations. Bending around the mid-region of Scc2 enables its N-terminus to contact the joint region of Smc3’s coiled coil in the clamped state. However, when heads are disengaged in our nucleotide-free structure, Scc2 is straightened and its N-terminal half adopts the conformation observed in crystals of Scc2 alone (Chao et al., 2015). Because cohesin’s elbow is further away from its hinge than is the case for condensin, folding of its coiled coils brings the hinge to within 12 nm of the ATPase heads. As a consequence, the N-terminal part of Scc2 molecules bound to Smc1 ATPase heads is in proximity to the hinge, thereby explaining not only its crosslinking to Smc1K620BPA in vivo but also how Smc1D588Y could circumvent the need for Scc4 (Figure 5E). We suggest that the addition of a bulky amino acid into Smc1 through D588Y may be sufficient to help bind an otherwise floppy Scc2 N-terminal domain, whose interaction with the hinge is normally stabilised by Scc4.
 
 We processed data collected on Pds5-bound complexes in a similar manner, producing a 13 Å resolution structure, which revealed that Pds5 binds to Smc3 and not, like Scc2, to Smc1’s ATPase head domain (placed PDB: 5F0O; Lee et al., 2016; Figure 6A, B). The contact takes place between the most C-terminal HEAT repeats of Pds5 and the top region of the N-terminal lobe of Smc3’s ATPase. Strikingly, this part of Smc3 contains the pair of highly conserved lysine residues K112 and K113 (Figure 6E), whose acetylation by Eco1 not only prevents releasing activity (Unal et al., 2008; Rolef Ben-Shahar et al., 2008) but also stabilises Pds5’s interaction with chromosomal cohesin complexes (Chan et al., 2012). Unlike Scc2, Pds5 does not rely on negatively charged amino acids for its interaction with the K112/K113 region and may therefore be better suited than Scc2 for binding the acetylated and less positively charged version of Smc3. Furthermore, binding in this manner shields both lysine residues when acetylated, hence explaining how Pds5 hinders de-acetylation during G2/M phases (Chan et al., 2013). Like Scc2, Pds5’s N-terminal HEAT repeats approach Smc1’s hinge domain, which explains the crosslinking to Smc1K620BPA in vivo (Figure 6C). The low resolution and flexibility apparent in our map mean that we cannot be sure whether Pds5’s C-terminal domain reaches beyond the hinge and contacts the coiled coils. Importantly, the modes of interaction of Scc2 and Pds5 with Smc subunits appear to be incompatible with each other, as has been postulated previously through in vivo and in vitro work (Petela et al., 2018).
 
-## Head engagement does not per se drive unzipping of cohesin’s coiled coil
+### Head engagement does not per se drive unzipping of cohesin’s coiled coil
 
 A major difference between the apo state bound to Scc2 and the ATP-bound clamped state is the conformation of the Smc coiled coils. Though both folded, they are zipped up in the case of the former but splayed open up to the elbow in the case of the latter. Opening up could be driven by engagement per se. Alternatively, it might additionally require the binding of DNA to engaged heads in the presence of Scc2. In the course of our studies, we identified and solved with a resolution of 6 Å a form of cohesin lacking Scc2, Scc1, DNA, or crosslinker, whose ATPase heads were engaged in the presence of ATP (Figure 5G; EMD-12889). Contrary to previous studies with shortened constructs (Muir et al., 2020), which suggested that engagement per se might drive coiled coil unzipping, the coiled coils of our engaged heads are fully zipped up, at least from their joints to their hinge domains (Figure 5G). Thus, head engagement does not per se cause unzipping. Furthermore, 2D classes of heads-engaged cohesin bound to Scc2 demonstrate that addition of Scc2 to an ATP-bound state is insufficient to promote unzipping (Figure 5—figure supplement 1A). We therefore suggest that it is the binding of DNA to the surface on top of engaged heads that causes unzipping to make space for the DNA double helix, as well as the rearrangement of Scc2’s NTD necessary for its association with Smc3’s coiled coil.
 
-## Folding of cohesin’s coiled coils occurs in vivo and is a feature of sister chromatid cohesion
+### Folding of cohesin’s coiled coils occurs in vivo and is a feature of sister chromatid cohesion
 
 Though the interaction of Scc2 and Pds5 with Smc1’s hinge in vivo is fully consistent with coiled coil folding and vice versa, it does not prove that folding actually occurs in vivo. To address this, we identified regions of both Smc3 and Smc1 whose residues when substituted by cysteine should permit crosslinking by BMOE specifically if Smc1’s hinge interacted with Smc3’s coiled coil in the manner observed in our cryo-EM structure (Figure 7A). A pair of residues, Smc1R578C and Smc3V933C, were viable both as single and double mutants, and gave rise to efficient BMOE-dependent crosslinking between Smc1 and Smc3 in vivo only when combined (Figure 7B). Because the efficiency of crosslinking was 60% or even more, we conclude that a high fraction of cohesin complexes must be folded at the elbow in vivo.
 
@@ -134,7 +186,7 @@ If, as seems likely, Smc1D588Y bypasses the need for Scc4 by strengthening the i
 
 ## Discussion
 
-## Folding occurs in vivo and is of functional importance
+### Folding occurs in vivo and is of functional importance
 
 A major feature of all Smc-kleisin complexes, be they bacterial homodimers or eukaryotic heterodimers, are the 50-nm-long coiled coils connecting their hinge dimerisation domains to their ATPase heads. Recent structural and biochemical studies have revealed that the two coiled coils of Smc dimers have a strong tendency to self-associate or zip up throughout their length both in vitro and in vivo (Bürmann et al., 2019; Chapard et al., 2019; Diebold-Durand et al., 2017; Soh et al., 2015). In many cases, for example, MukBEF from Escherichia coli as well as the eukaryotic cohesin and condensin complexes, zipping up is accompanied by folding around an elbow, which leads to an association of hinges with sections of the coiled coil closer to the heads. Cryo-EM imaging suggests that complete zipping up may be an invariant property of apo-complexes. In the case of cohesin, clamping of DNA by Scc2 on top of engaged ATPase heads is accompanied by extensive unzipping (Collier et al., 2020). The finding reported here (Figure 5G), that a cohesin complex whose heads are engaged in the presence of ATP nevertheless possesses coiled coils that are extensively zipped up, suggests that unzipping is not caused by head engagement per se but instead by the binding of DNA to engaged heads. Indeed, crosslinking studies have confirmed that the coiled coils associated with engaged heads are at least sometimes zipped up even in vivo (Chapard et al., 2019). Whether DNA clamping causes unfolding as well as unzipping is a matter of considerable interest because it has been speculated that the folding and unfolding of Smc coiled coils might be a crucial aspect of ATP-driven mechanical cycle responsible for the translocation of Smc-kleisin complexes along DNA during LE (Hassler et al., 2018; Bürmann et al., 2019).
 
@@ -146,7 +198,7 @@ In vivo crosslinking using cohesin complexes in which a surface lysine residue n
 
 Though folding enables the hinge to interact with cohesin’s HAWK proteins, it is likely that the process has functions besides such interactions as folding appears to be more conserved than the HAWKS themselves. It has been suggested that an extension/folding cycle might have a role in cohesin’s translocation along DNA during LE (Bürmann et al., 2019). Another possibility is that by packing coiled coils on top of each other, folding helps to stabilise the zipping up of Smc1/3 coiled coils, which may have a role in ensuring that unzipping does not occur precociously, in other words, only when DNA is correctly clamped on top of engaged heads by Scc2. The notion that folding acts primarily to reinforce the zipped-up state helps explain why Smc proteins in organisms like B. subtilis do not appear to have an elbow around which their coiled coils are folded. Zipping up of B. subtilis Smc coiled coils might be strong enough that it does not need to be reinforced by folding. A third possibility is that, by bringing the hinge close to DNA clamped by Scc2 on top of engaged Smc1/3 ATPase heads, folding facilitates passage of DNA through a gate created by hinge opening, thereby mediating entrapment of DNA within S-K rings.
 
-## What is the function of Scc4?
+### What is the function of Scc4?
 
 In addition to recruiting the Scc2/4 complex to kinetochores and thereby promoting high rates of cohesin loading at CENs, Scc4 helps Scc2 promote cohesin’s efficient association with chromosome arms. It has previously been suggested that Scc4’s function involves the nucleosome remodelling complex RSC. Two rather different types of proposal have been made in separate papers by the Uhlmann group. According to the first, Scc2’s association with Scc4 enables RSC to create nucleosome-free regions necessary for cohesin loading; in other words, Scc2/4’s role is to positively regulate RSC’s cohesin loading activity (Lopez-Serra et al., 2014). This proposal is difficult to reconcile not only with our finding that RSC inactivation causes only modest, if any, defect in cohesin loading as measured by calibrated ChIP-seq but also with the now incontrovertible evidence that the Scc2/4 complex acts directly on cohesin, enabling it to clamp DNA on top of its Smc ATPase domains. Neither our ChIP-seq data nor recent structural work (Collier et al., 2020; Shi et al., 2020; Higashi et al., 2020) support the notion that that ‘Scc2/4 acts in sister chromatid cohesion by maintaining nucleosome-free regions’ (Lopez-Serra et al., 2014).
 
@@ -154,7 +206,7 @@ The second proposal shares with the first the notion that nucleosome-free region
 
 Our finding that the major partners of the part of the hinge containing Smc1D588 are in fact cohesin’s HAWKs, principally Pds5 and Scc2, favours an alternative explanation, namely that Scc4 facilitates an interaction between the Scc2/4 complex and cohesin’s hinge that either stabilises Scc2’s association with cohesin and/or alters its conformation in a manner that enhances its ability to clamp DNA. It is nevertheless striking that the lethality of scc4 mutants can be bypassed, albeit less effectively than with smc1D588Y, by mutations in histones H2A and H2B that presumably reduce the affinity of their interaction with nucleosomal DNA and would therefore favour formation of nucleosome-free DNA. We suggest that nucleosome-free DNA is indeed important for loading because naked DNA is necessary for formation of the clamped state. However, creation of naked DNA is insufficient for efficient clamping in vivo. Association of Scc2 with cohesin’s hinge and/or a conformational change that is a consequence of this association is additionally required, a process normally facilitated by Scc4 but whose absence can be compensated by Smc1D588Y. In other words, association of Scc2/4 with cohesin’s hinge domain facilitates the binding of naked DNA to its engaged ATPase heads and it is ultimately the latter that promotes a productive association with chromatin. Our data do not exclude the possibility that RSC is in principle able to create the nucleosome-free DNA necessary for clamping, but whether it is normally necessary is at present unclear.
 
-## Why does smc1D588Y depress loading at CENs?
+### Why does smc1D588Y depress loading at CENs?
 
 It is striking that while smc1D588Y facilitates cohesin’s association with chromosome arms, in the presence as well as the absence of Scc4, the mutation has the opposite effect on loading at CENs (Figure 2). To explain this paradox, we suggest that formation of the clamped state, which we propose is facilitated by smc1D588Y, is just the first step in cohesin’s productive association with and translocation along chromatin fibres and must be followed by a second step, likely involving ATP hydrolysis and head disengagement. Consistent with the notion that D588Y accelerates the first clamping step, we observed that despite lowering the overall level of pericentric cohesin arising from loading at CENs, smc1D588Y actually increased the amount of Scc2 associated with cohesin at CENs. The fact that it also increased the amount of cohesin containing Smc3E1155Q confirms that this population represents the clamped state. Because such complexes do not load productively (Hu et al., 2011), hydrolysis of ATP associated with clamped complexes must also be required for loading. In other words, a sequence of clamping, DNA loading, and unclamping while the DNA remains loaded, is necessary. If so, an important question is whether clamping or subsequent unclamping driven by ATP hydrolysis is rate-limiting during the loading process. We suggest that clamping is rate-limiting along chromosome arms but unclamping is rate-limiting at CENs and that this is the reason why smc1D588Y enhances arm loading while depressing loading at CENs.
 
@@ -162,17 +214,474 @@ In summary, we provide biochemical evidence that cohesin’s coiled coils are in
 
 ## Materials and methods
 
-Table of structuresMap description and file name in ‘coordinates and maps’First appearance in figuresDatabase accession codeElbow EM mapFigure 5FEMD-12887Elbow coordinate mapFigure 5BPDB ID 7OGTScc2 bound to ATPase headsFigure 5FEMD-12880Scc2 bound to ATPase heads masking hinge and N-terminusFig 5—figure supplement 1CPds5 bound to ATPase headsFigure 6AEMD-12888Engaged ATPase headsFigure 5GEMD-12889Mouse hinge D574YFigure 1DPDB ID 7DG5
+**Key resources table**
 
-## Yeast strains and growth conditions
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Spodoptera frugiperda)</td>
+      <td>Sf9 insect cells</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 11496015</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Saccharomyces cerevisiae)</td>
+      <td>NCBITaxon:4932</td>
+      <td>This paper</td>
+      <td>Yeast strains</td>
+      <td>Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Biological sample</td>
+      <td>α-factor peptide</td>
+      <td>CRUK Peptide Synthesis Service</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Anti-V5</td>
+      <td>Bio-Rad</td>
+      <td>Cat# MCA1360</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA High Affinity (3F10) (Rat)</td>
+      <td>Roche</td>
+      <td>Cat# 11867423001</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (mouse)</td>
+      <td>GenScript</td>
+      <td>Cat# A00186</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Myc A-14 (9E10) (rabbit)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Cat# sc-789</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc 4A6 (mouse)</td>
+      <td>Millipore</td>
+      <td>Cat# 05-724</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (rabbit)</td>
+      <td>Sigma</td>
+      <td>Cat# F7425</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACEbac1 2xStrepII-Scc2151-1493</td>
+      <td>Collier et al., 2020</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACEbac1 Smc1-8xHis-Smc3/pIDC Scc1-2xStrepII (trimer)</td>
+      <td>Petela et al., 2018</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIDS Pds5-Flag</td>
+      <td>Petela et al., 2018</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Talon Superflow Metal Affinity Resin</td>
+      <td>Takara Bio.</td>
+      <td>Cat# 635669</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 3–8% Tris-Acetate Protein gels</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# EA0378BOX</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Trans-Blot Turbo Midi0.2 µm Nitrocellulose Transfer Packs</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1704159</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 300385</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP DNA Clean and Concentrator kit</td>
+      <td>Zymo Research</td>
+      <td>Cat# D5205</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Fast DNA Library Prep Set for Ion Torrent</td>
+      <td>NEB</td>
+      <td>Cat# Z648094</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ion Xpress Barcode Adaptors</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 4471250</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E-Gel SizeSelect II 2% Agarose gels</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# G661012</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Ion Torrent DNA standards</td>
+      <td>Roche</td>
+      <td>Cat# 07960395001</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek phosphate assay kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# E6646</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>StrepTrap HP</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 11540654</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superose 6 Increase10/300 GL</td>
+      <td>VWR</td>
+      <td>Cat# 29-0915-96</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nocodazole</td>
+      <td>Sigma</td>
+      <td>Cat# M1404</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Bismaleimidoethane (BMOE)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 22323</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Complete EDTA-free protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>Cat# 4693132001</td>
+      <td>(1:50 mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PMSF</td>
+      <td>Sigma</td>
+      <td>Cat# 03115836001</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Immobilon Western ECL</td>
+      <td>Millipore</td>
+      <td>Cat# WBLKS0500</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>RNase A</td>
+      <td>Roche</td>
+      <td>Cat# 10109169001</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Proteinase K</td>
+      <td>Roche</td>
+      <td>Cat# 03115836001</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BPA</td>
+      <td>Bachem</td>
+      <td>Cat# 4017646.0005</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TCEP</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 20490</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Desthiobiotin</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 12753064</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fastx_trimmer</td>
+      <td>Hannon Lab</td>
+      <td>http://hannonlab.cshl.edu/fastx_toolkit/index.html</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FilterFastq.py</td>
+      <td>Petela et al., 2018</td>
+      <td>https://github.com/naomipetela/nasmythlab-ngs</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>Samtools</td>
+      <td>http://www.htslib.org</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGB browser</td>
+      <td>Nicol et al., 2009</td>
+      <td>https://www.bioviz.org</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>chr_position.py</td>
+      <td>Petela et al., 2018</td>
+      <td>https://github.com/naomipetela/nasmythlab-ngs</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>filter.py</td>
+      <td>Petela et al., 2018</td>
+      <td>https://github.com/naomipetela/nasmythlab-ngs</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bcftools call</td>
+      <td>Samtools</td>
+      <td>http://www.htslib.org</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MutationFinder.py</td>
+      <td>Petela et al., 2018</td>
+      <td>https://github.com/naomipetela/nasmythlab-ngs</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>yeastmine.py</td>
+      <td>Petela et al., 2018</td>
+      <td>https://github.com/naomipetela/nasmythlab-ngs</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.1</td>
+      <td>doi:10.1016/j.jsb.2012.09.006</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind4</td>
+      <td>doi:10.1016/j.jsb.2015.08.008</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CrYOLO 1.5</td>
+      <td>doi:10.1038/s42003-019-0437</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX 1.0</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>doi:10.1107/S0907444910007493</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAIN</td>
+      <td>doi:10.1107/S0907444913008408</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix.real_ space_refinement</td>
+      <td>doi:10.1107/S2059798318006551</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PYMOL 2</td>
+      <td>https://pymol.org/2/</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL</td>
+      <td>https://swissmodel.expasy.org</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil R 2/2 grid: Cu/Rh 200 cryoEM grids</td>
+      <td>Quantifoil GmbH</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Table of structures</th>
+    </tr>
+    <tr>
+      <th>Map description and file name in ‘coordinates and maps’</th>
+      <th>First appearance in figures</th>
+      <th>Database accession code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Elbow EM map</td>
+      <td>Figure 5F</td>
+      <td>EMD-12887</td>
+    </tr>
+    <tr>
+      <td>Elbow coordinate map</td>
+      <td>Figure 5B</td>
+      <td>PDB ID 7OGT</td>
+    </tr>
+    <tr>
+      <td>Scc2 bound to ATPase heads</td>
+      <td>Figure 5F</td>
+      <td>EMD-12880</td>
+    </tr>
+    <tr>
+      <td>Scc2 bound to ATPase heads masking hinge and N-terminus</td>
+      <td>Fig 5—figure supplement 1C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pds5 bound to ATPase heads</td>
+      <td>Figure 6A</td>
+      <td>EMD-12888</td>
+    </tr>
+    <tr>
+      <td>Engaged ATPase heads</td>
+      <td>Figure 5G</td>
+      <td>EMD-12889</td>
+    </tr>
+    <tr>
+      <td>Mouse hinge D574Y</td>
+      <td>Figure 1D</td>
+      <td>PDB ID 7DG5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and growth conditions
 
 All yeast strains were derived from W303 and grown in rich medium (YEP) supplemented with 2% glucose (YPD) at 25°C unless otherwise stated. Cultures were agitated at 200 rpm (Multitron Standard, Infors HT). Strain numbers and relevant genotypes of the strains used are listed in the Key resources table, Supplementary file 4. To arrest the cells in G1, α-factor was added to a final concentration of 2 mg/L/h, every 30 min for 2.5 hr. Release was achieved by filtration wherein cells were captured on 1.2 μm filtration paper (Whatman GE Healthcare), washed with 1 L YPD, and resuspended in the appropriate fresh media. To arrest the cells in G2, nocodazole (Sigma) was added to the fresh media to a final concentration of 10 μg/mL and cells were incubated until the synchronisation was achieved (>95% large-budded cells). To inactivate temperature-sensitive alleles, fresh media were pre-warmed prior to filtration (Aquatron, Infors HT). To produce cells deficient in Pds5 using the AID system, cells were arrested with α-factor as described above. 30 min prior to release, auxin was added to 5 mM final concentration. Cells were then filtered as described above and released into YPD medium containing 5 mM auxin.
 
-## Screening for suppressors of scc4-4
+### Screening for suppressors of scc4-4
 
 Forty independent colonies of the parental strain (YCplac33::scc4-4::NATMX scc4Δ::HIS3 [K23967]) were picked and grown overnight at 25°C. Each was plated at 5 OD600 units per plate over three plates and incubated at 35.5°C until colonies appeared. Up to three colonies were picked from each plate and streaked for single colonies at 25°C before being retested for growth at 35.5°C. Those that grew at 35.5°C were checked by PCR from genomic DNA preparations for revertants of Scc4. Isolated suppressors that did not show revertant mutations were checked for 2:2 segregation and grouped into complementation groups prior to deep sequencing. To check for the ability to rescue the deletion of Scc4, suppressors were streaked onto 1 mg/mL 5-FOA plates and allowed to grow for 2 days.
 
-## Protein purification from E. coli
+### Protein purification from E. coli
 
 BL21(DE3) strains containing plasmids encoding proteins for purification were grown at 37°C in 2XTY media supplemented with the appropriate antibiotic until an OD600 of 0.6 was reached. Expression was induced by addition of IPTG to a concentration of 1 mM for 16 hr at 20°C. Cells were harvested by centrifugation and mixed with five times the cell pellet volume of lysis buffer (250 mM NaCl, 50 mM Tris-HCl pH 7.5, 1 mM EDTA, 2 mM β-mercaptoethanol, 1 tablet/50 mL protease inhibitor cocktail [Roche]). Cells were lysed by passage through a cell disruptor (Constant Systems) at 20 kpsi. PMSF (Sigma) was added to the lysate to a final concentration of 1 mM. Samples were sonicated on ice for 1 min/50 mL in 30 s intervals with a Vibra-cell sonicator (VCX 130FSJ; Sonics and Materials) at 80% amplitude. Lysate was cleared by centrifugation at 50,000 g for 90 min in an Avanti J-26S XP centrifuge (Beckman Coulter).
 
@@ -180,78 +689,78 @@ Affinity purification was performed by incubating cleared lysates with pre-equil
 
 Size exclusion chromatography was performed by injecting up to 2 mL of eluent onto a HiLoad 16/60 Superdex 200 prep grade column (equilibrated with Buffer A: 95 mM NaCl, 20 mM HEPES pH 7.5, 2 mM β-mercaptoethanol) connected to an ÄKTApurifier 100 purification system controlled by UNICORN software (GE Healthcare). Peak fractions were concentrated using Vivaspin columns (Sartorius Stedim Biotech) with a molecular weight cutoff of 10 kDa. Concentration of purified protein was determined based on its absorbance at 280 nm, measured using a NanoDrop-1000 (Thermo Fisher Scientific).
 
-## In vitro hinge binding assay
+### In vitro hinge binding assay
 
 WT and mutant MBP-Smc1hinge-HIS6 and Smc3hinge-FLAG3-HIS6 proteins were expressed and purified as described above. Proteins were mixed at an equimolar concentration of 250 mM in Buffer A and incubated at 16°C with shaking at 1000 rpm for 15 min. 400 μL of protein mixture was added to 20 μL of pre-equilibrated ANTI-FLAG M2 affinity gel and incubated at 16°C with shaking at 1000 rpm for 15 min. Resin was sedimented by centrifugation for 1 min at 850 g and washed three times with Buffer A + 1% Triton X-100 (Sigma) before being boiled in 2× SDS sample buffer prior to immunoblotting.
 
-## Protein gel electrophoresis and western blotting
+### Protein gel electrophoresis and western blotting
 
 The samples were mixed with 4× LDS sample buffer (NuPAGE Life Technologies), loaded onto 3–8% Tris-acetate gels (NuPAGE, Life Technologies) and the proteins separated using an appropriate current. The proteins were then transferred onto 0.2 μm nitrocellulose using Trans-blot Turbo transfer packs for the Trans-blot Turbo system (Bio-Rad). The following antibodies were used: anti-V5 (Bio-Rad), anti-HA (Roche), His-tag antibody (GenScript), and A-14 (Santa Cruz Biotech). For visualisation, the membrane was incubated with Immobilon Western Chemiluminescent HRP substrate (Millipore) before detection using an ODYSSEY Fc Imaging System (LI-COR).
 
-## Multiple sequence alignment
+### Multiple sequence alignment
 
 Multiple sequence alignments were created using Clustal Omega (Sievers et al., 2011).
 
-## Calibrated ChIP-seq
+### Calibrated ChIP-seq
 
 Cells were grown exponentially to 0.5 OD600 and the required cell cycle stage where necessary. 15 OD600 units of S. cerevisiae cells were then mixed with 5 OD600 units of Candida glabrata to a total volume of 45 mL and fixed with 4 mL of fixative (50 mM Tris-HCl, pH 8.0; 100 mM NaCl; 0.5 mM EGTA; 1 mM EDTA; 30% [v/v] formaldehyde) for 30 min at room temperature (RT) with rotation. Fixation was quenched with 2 mL of 2.5 M glycine incubated at RT for 5 min with rotation. The cells were then harvested by centrifugation at 3500 rpm for 3 min and washed with ice-cold 1× PBS. The cells were then resuspended in 300 μL of ChIP lysis buffer (50 mM HEPES-KOH, pH 8.0; 140 mM NaCl; 1 mM EDTA; 1% [v/v] Triton X-100; 0.1% [w/v] sodium deoxycholate; 1 mM PMSF; 1 tablet/25 mL protease inhibitor cocktail [Roche]) and an equal amount of acid-washed glass beads (425–600 μm, Sigma) added before cells were lysed using a FastPrep−24 benchtop homogeniser (M.P. Biomedicals) at 4°C (3 × 60 s at 6.5 m/s or until >90% of the cells were lysed as confirmed by microscopy).
 
 The soluble fraction was isolated by centrifugation at 2000 rpm for 3 min, then sonicated using a Bioruptor (Diagenode) for 30 min in bursts of 30 s 'on' and 30 s 'off' at high level in a 4°C water bath to produce sheared chromatin with a size range of 200–1000 bp. After sonication, the samples were centrifuged at 13,200 rpm at 4°C for 20 min and the supernatant was transferred into 700 μL of ChIP lysis buffer. 30 μL of protein G Dynabeads (Thermo Fisher) were added, and the samples were pre-cleared for 1 hr at 4°C. 80 μL of the supernatant was taken as the whole-cell extract (WCE) and 5 μg of antibody (anti-PK; Bio-Rad) was added to the remaining supernatant which was then incubated overnight at 4°C. 50 μL of protein G Dynabeads were then added and incubated at 4°C for 2 hr before washing 2× with ChIP lysis buffer, 3× with high salt ChIP lysis buffer (50 mM HEPES-KOH, pH 8.0; 500 mM NaCl; 1 mM EDTA; 1% [v/v] Triton X-100; 0.1% [w/v] sodium deoxycholate; 1 mM PMSF), 2× with ChIP wash buffer (10 mM Tris-HCl, pH 8.0; 0.25 M LiCl; 0.5 % NP-40; 0.5% sodium deoxycholate; 1 mM EDTA; 1 mM PMSF), and 1× with TE pH 7.5. The immunoprecipitated chromatin was then eluted by incubation in 120 μL of TES buffer (50 mM Tris-HCl, pH 8.0; 10 mM EDTA; 1% SDS) for 15 min at 65°C and the collected supernatant termed the IP sample. The WCE extracts were mixed with 40 μL of TES3 buffer (50 mM Tris-HCl, pH 8.0; 10 mM EDTA; 3% SDS), and all samples were de-crosslinked by incubation at 65°C overnight. RNA was degraded by incubation with 2 μL RNase A (10 mg/mL; Roche) for 1 hr at 37°C, and protein was removed by incubation with 10 μL of proteinase K (18 mg/mL; Roche) for 2 hr at 65°C. DNA was purified using ChIP DNA Clean and Concentrator kit (Zymo Research).
 
-## Extraction of yeast DNA for deep sequencing
+### Extraction of yeast DNA for deep sequencing
 
 Cultures were grown to exponential phase (OD600 = 0.5). 12.5 OD600 units were then collected and diluted to a final volume of 45 mL before fixation as described in the protocol for ChIP-seq. The samples were treated as specified in the ChIP-seq protocol up to the completion of the sonication step whereby 80 μL of the samples were carried forward and treated as WCE samples.
 
-## Preparation of sequencing libraries
+### Preparation of sequencing libraries
 
 Sequencing libraries were prepared using NEBNext Fast DNA Library Prep Set for Ion Torrent Kit (New England Biolabs) according to the manufacturer’s instructions. To summarise, 10–100 ng of fragmented DNA was converted to blunt ends by end repair before ligation of the Ion Xpress Barcode Adaptors. Fragments of 300 bp were then selected using E-Gel SizeSelect2% Agarose gels (Life Technologies) and amplified with 6–8 PCR cycles. The DNA concentration was determined by qPCR using Ion Torrent DNA standards (Kapa Biosystems) as a reference. 12–16 libraries with different barcodes could then be pooled together to a final concentration of 350 pM and loaded onto the Ion PI V3 Chip (Life Technologies) using the Ion Chef (Life Technologies). Sequencing was performed on the Ion Torrent Proton (Life Technologies), typically producing 6–10 million reads per library with an average read length of 190 bp.
 
-## Data analysis, alignment, and production of BigWigs
+### Data analysis, alignment, and production of BigWigs
 
 Quality of the reads was assessed using FastQC and trimmed as required using fastx_trimmer. Generally, this involved removing the first 10 bases and any bases after the 200th, but trimming more or fewer bases may be required to ensure the removal of kmers and that the per-base sequence content is equal across the reads. Reads shorter than 50 bp were removed using ‘FilterFastq.py’ and the remaining reads aligned to the necessary genome(s) using Bowtie2 with the default (--sensitive) parameters (Langmead and Salzberg, 2012).
 
 To generate alignments of reads that uniquely align to the S. cerevisiae genome, the reads were first aligned to the C. glabrata (CBS138, Génolevures; Dujon et al., 2004) genome with the unaligned reads saved as a separate file. These reads that could not be aligned to the C. glabrata genome were then aligned to the S. cerevisiae (sacCer3, SGD) genome and the resulting BAM file converted to BigWigs for visualisation. Similarly, this process was done with the order of genomes reversed to produce alignments of reads that uniquely align to C. glabrata.
 
-## Visualisation of ChIP-seq profiles
+### Visualisation of ChIP-seq profiles
 
 The resulting BigWigs were visualised using the IGB browser (Nicol et al., 2009). To normalise the data to show quantitative ChIP signal, the track was multiplied by the sample's OR and normalised to 1 million reads using the graph multiply function.
 
 In order to calculate the average occupancy at each base pair up to 60 kb around all 16 centromeres, the BAM file that contains reads uniquely aligning to S. cerevisiae was separated into files for each chromosome and a pileup of each chromosome was then obtained using samtools mpileup. These files were then amended using our own script ‘chr_position.py’ to assign all unrepresented genome positions a value of 0. Each pileup was then filtered using another in-house script ‘filter.py’ to obtain the number of reads at each base pair within up to 60 kb intervals either side of the centromeric CDEIII elements of each chromosome. The number of reads covering each site as one successively moves away from these CDEIII elements could then be averaged across all 16 chromosomes and calibrated by multiplying by the samples OR and normalising to 1 million reads. All scripts written for this analysis method are available on request.
 
-## Identification of mutations from whole genome sequencing
+### Identification of mutations from whole genome sequencing
 
 Pileups were created using samtools mpileup (-v --skip-indels –f sacCer3.fa –o sample name.vcf sample name.bam), then SNPs were called using bcftools call (-v –c –o sample name.bcf sample name.vcf). To find mutations unique to a suppressor strain, lists of SNPs from the parental strain or backcrossed clones of the suppressor strain were compared to the list of SNPs from the suppressor strain. In the case of parental strains, mutations that were present in both were removed, and in the case of backcrossed clones of the suppressor strain, mutations that were present in both were kept in order to identify the mutation that caused the suppression phenotype. This was done using ‘MutationFinder.py’ and the resulting lists further narrowed using ‘yeastmine.py’ which searches the Saccharomyces Genome Database (SGD) for genes that correspond to the position of each mutation so that those that lie outside of genes could be removed. From this it was possible to identify the mutation in each suppressor that gave rise to the suppressor phenotype.
 
-## ATPase assay
+### ATPase assay
 
 ATPase activity was measured by using the EnzChek phosphate assay kit (Invitrogen) by following the provided protocol. Cohesin in various complexes were mixed to a final concentration of 50 nM in under 50 mM NaCl in the presence of 700 nM 40 bp dsDNA in those experiments testing the effect of duplex DNA. The reaction was started with addition of ATP to a final concentration of 1.3 mM, always in a final volume of 150 μL. ATPase activity was measured by recording absorption at 360 nm every 30 s for 1 hr 30 min using a PHERAstar FS. ΔΑU at 360 nm was translated to Pi release using an equation derived by a standard curve of KH2PO4 provided with the EnzChek kit and according to instructions. The reactions were assumed linear for at least the first 10 min of the experiment and rates calculated using this time period. On completion, a fraction of each reaction was analysed by SDS-PAGE and the gel stained with Coomassie Brilliant Blue in order to test that the complexes were intact throughout the experiment and that equal amounts were used when testing various mutants and conditions. At least two independent biological experiments were performed for each experiment.
 
-## Cohesin protein expression and purification
+### Cohesin protein expression and purification
 
 WT or 6C cohesin trimer, Scc2, and Pds5 were expressed and purified as described in Collier et al., 2020 and Bürmann et al., 2019, respectively. In brief, vectors containing S. cerevisiae cohesin trimers were generated by combining pACEbac1 SMC1-His SMC3 containing the 6C cysteine mutations (Smc1K639C-Smc3E570C, Smc1G22C-Scc1A547C, and Smc3S1043C-Scc1C56) with pIDC SCC1-2xStrepII by a Cre recombinase reaction (New England Biolabs). Sequences of S. cerevisiae Scc2 and Pds5 were individually cloned as 2xStrepII-(151-1493)Scc2 and 2xStrepII-Pds5 into Multibac vectors, yielding 2xStrepII-∆N150-Scc2-pACEbac1 and 2xStrepII-Pds5-pACEbac1 with an HRV 3C protease site (LEVLFQ/GP) in the tag linker. Expression of the 6C trimer, Scc2, and Pds5 was done individually in Sf9 insect cells followed by the same previously described three-step purification protocol: proteins were purified via affinity pulldown of their StrepII and eluted with desthiobiotin, 3C protease was added to the eluents to cleave the affinity tags, the cleavage products were further purified by anion exchange columns, and finally buffer exchanged to Buffer 6C (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1 mM TCEP, 10% glycerol). The purified trimer, Scc2, and Pds5 proteins were then frozen in liquid nitrogen and stored at −80°C until further use.
 
-## Cryo-EM grid preparation
+### Cryo-EM grid preparation
 
 For imaging of cohesin with cryo-EM, the purified 6C trimer and Scc2 or Pds5 were mixed at a 1:1.5 molar ratio and injected onto a Superose 6 Increase 3.2/300 column (GE Healthcare) in buffer containing 25 mM HEPES-NaOH pH 7.5, 150 mM NaCl, 1 mM TCEP. The tetramer fraction was incubated with 2 mM BMOE for 3 min at room temperature, and then buffer exchanged into buffer 6C with Zeba spin buffer exchange columns (Sigma Aldrich). For ATP-containing sample 5 mM ATP, 2 mM MgCl2 was added to the buffers.
 
 Grids were prepared by applying 3 μL of sample at a concentration of 0.2–0.3 mg/mL to freshly glow-discharged Cu/Rh 2/2 holey carbon 200 mesh grids (Quantifoil). The grids were blotted for 1.5–2 s at 4°C with humidity at 100% and were flash frozen using a Vitrobot (Thermo Fisher Scientific).
 
-## Cryo-EM data collection, processing, and modelling
+### Cryo-EM data collection, processing, and modelling
 
 Images were recorded on a Titan Krios electron cryo-microscope (FEI) equipped with a K2 or K3 summit direct electron detector with the use of a Volta phase plate (VPP) and varying pixel sizes between 1.09 and 1.16 Å/pixel. Micrographs were collected with total doses of ~40 electrons per Å2, dose-fractionated into 40 movie frames, and at defocus ranges of 0.5–0.9 μm. All datasets containing the same sample were merged as described by Wilkinson et al., 2019, resulting in a final pixel size of 1.16 Å. Image processing was done in RELION 3.0 (Zivanov et al., 2018) and cryoSPARC (Punjani et al., 2017). Movies were aligned using 5 × 5 patches using MotionCor2 with dose-weighting (Zheng et al., 2017). CTF parameters were estimated with Gctf (Zhang, 2016). All refinements were performed using independent data half-sets (gold-standard refinement) and resolutions were determined based on the Fourier shell correlation (FSC = 0.143) criterion (Rosenthal and Henderson, 2003). Due to the elongated shape of cohesin, particle picking was done with the help of the machine learning-based crYOLO software (Wagner et al., 2019). Initial 2D classifications and the first initial model made with cryoSPARC revealed intrinsic flexibility between the upper part of the complex, containing the hinge and the coiled coils, and the lower part, containing the HAWK-bound heads. Therefore, after an initial round of 3D refinement, the two parts were extracted and re-centred separately for all downstream processing. Specific EM processing strategies are discussed in detail in Figure 5—figure supplement 2. All depictions of these structures within the paper were made with the use of UCSF ChimeraX (Goddard et al., 2018).
 
 To produce the coordinate map of the folded elbow, a homology model of the yeast hinge dimer was obtained from SWISS-MODEL (Waterhouse et al., 2018) using a crystal structure of the hinge from Mus musculus (PDB: 2WD5) as the template (Kurze et al., 2011). MAIN (Turk, 2013), and COOT (Emsley et al., 2010) were used for manual rebuilding, followed by refinement using Phenix.real_space_refinement (Hu, 2018). Manual rebuilding and refinement were repeated for several cycles.
 
-## In vivo photo crosslinking
+### In vivo photo crosslinking
 
 Yeast stains bearing TAG-substituted Smc1-myc9 plasmid and pBH61 were grown in −Trp −Leu SD medium containing 1 mM BPA. Cells were collected and resuspended in 1 mL of ice-cold PBS buffer. The cell suspension was then placed in a Spectrolinker XL-1500a (Spectronics) and irradiated at 360 nm for 2 × 5 min. Extracts were prepared as described previously (Hu et al., 2011) and 5 mg of protein were incubated with 5 μL of Anti-PK antibody (Bio-Rad) for 2 hr at 4°C. Next, 50 μL of Protein G Dynabeads (Thermo Fisher) were added and incubated overnight at 4°C to immunoprecipitate Scc1. After washing five times with lysis buffer, the beads were boiled in 2× SDS-PAGE buffer. Samples were run on a 3–8% Tris-acetate gel (Life Technologies) for 3.5 hr at 150 V. For western blot analysis, anti-Myc (Millipore), anti-FLAG (Sigma), and anti-HA (Roche) antibodies were used to probe the indicated proteins.
 
-## In vivo cysteine crosslinking
+### In vivo cysteine crosslinking
 
 15 OD units of cells grown in exponential phase were washed with ice-cold PBS and kept on ice throughout the experiment. Cells were resuspended in 500 µL cold PBS and 300 µL was added to 2 × 2 mL bead beater tubes. 12.5 µL BMOE (125 mM in DMSO to a final concentration of 5 mM) or 12.5 µL DMSO was added before incubating on ice for 6 min. Cells were washed twice with 1 mL cold PBS containing 5 mM DTT.
 
 Crosslinked cells were resuspended in 500 µL lysis buffer (150 mM NaCl; 5 mM EDTA; 0.5% [v/v] NP40; 500 mM Tris-HCl, pH 7.5; 1 mM PMSF; 1 tablet/50 mL protease inhibitor cocktail [Roche]; 1 mM DTT) and an equal volume of acid-washed glass beads (425–600 μm, Sigma) was added. The cells were lysed using a FastPrep−24 benchtop homogeniser (M.P. Biomedicals) at 4°C for 3 × 60 s at 6.5 m/s with a 5 min rest between cycles, until >90% of the cells were lysed as confirmed microscopically. The insoluble fraction was pelleted by centrifugation at 13,200 rpm for 10 min and the supernatant isolated and analysed by western blot.
 
-## Data and software availability
+### Data and software availability
 
 All scripts written for this analysis method are available to download from https://github.com/naomipetela/nasmythlab-ngs (copy archived at https://archive.softwareheritage.org/swh:1:rev:d7509c6f3e0a0f34db71b485a9e332223084e7be). The accession number for the next-generation sequencing data (raw and analysed) reported in this paper is GSE167318.

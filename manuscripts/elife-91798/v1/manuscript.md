@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04cpxjv19 Research Institute, McGill University Health Centre Montreal Canada
-2. https://ror.org/04hya7017 Present address: Cancer CIBER (CIBERONC) Madrid Spain
-3. https://ror.org/043nxc105 Present address: Pathology Department, Medical School, University of Valencia-INCLIVA Valencia Spain
-4. https://ror.org/01pxwe438 Departments of Obstetrics and Gynecology and Biology, Division of Experimental Medicine, McGill University Montréal Canada
+1. Research Institute, McGill University Health Centre Montreal Canada ([ROR:04cpxjv19](https://ror.org/04cpxjv19))
+2. Present address: Cancer CIBER (CIBERONC) Madrid Spain ([ROR:04hya7017](https://ror.org/04hya7017))
+3. Present address: Pathology Department, Medical School, University of Valencia-INCLIVA Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+4. Departments of Obstetrics and Gynecology and Biology, Division of Experimental Medicine, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ We began by verifying the expression of SMAD4 during folliculogenesis. As shown 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91798/elife-91798-fig1-v1.jpg)
 
-**Figure 1.:** (A) Immunoblot of primordial follicles, growing follicles, and granulosa cells and oocytes isolated from antral follicles, probed using anti-SMAD4 and anti-SMAD2/3. (B) Breeding scheme to delete Smad4 in the granulosa cells using Amhr2-Cre. The mTmG cassette enables Cre recombinase activity to be verified through expression of EGFP. (C) Left: Confocal images of histological sections of paraffin-embedded 12-d ovary (i, ii) and an isolated follicle (iii) stained using an anti-green fluorescent protein (GFP) antibody and DAPI to counterstain DNA. Relatively few granulosa cells are GFP-positive (arrow in iii). Scale bars: 50 µm, 20 µm, 10 µm. Right: Histogram and chart showing the percentage of FACS-sorted GFP + and GFP- granulosa cells from growing follicles in a representative experiment. Granulosa cells expressing both td tomato and GFP and GFP alone were scored as GFP+. (D) Breeding scheme to delete Smad4 in vitro using generate tamoxifen-inducible ER-Cre. The mTmG cassette enables Cre recombinase activity to be verified through expression of EGFP. (E) Left: Schematic illustrating timeline of GOC exposure to tamoxifen and subsequent incubation. Center: Bright-field image of GOCs following incubation and confocal image of a representative GOC stained using anti-GFP antibody and DAPI to counterstain DNA. Scale bar = 100 µm and 10 µm, respectively. Right: Bar chart showing the percentage of FACS-sorted GFP + and GFP- granulosa cells from GOCs in a representative experiment. Granulosa cells expressing td tomato and GFP and GFP alone are counted as GFP+. (F) Left: Confocal image of representative GOCs stained with single-molecule RNA FISH probe for Smad4 exon 8 and DAPI to counterstain DNA. Right: Mean and SEM of the average number of Smad4 mRNA foci per cell (left) and relative mRNA amounts of Smad4 quantified using qRT-PCR (right) in granulosa cells five days after tamoxifen treatment. Number of foci: n=26 (ER-Cre-); n=21 (ER-Cre). Relative mRNA: n=5 for both genotypes. (+G) Immunoblot and plot of mean and SEM of SMAD4 protein content in granulosa cells from GOCs five days after tamoxifen treatment. A. n=11 for both genotypes. Statistical analysis using t-test (F, left) and one-sample t-test (F, right, and G), ***p<0.001; ****p<0.0001.
+**Figure 1.:** (A) Immunoblot of primordial follicles, growing follicles, and granulosa cells and oocytes isolated from antral follicles, probed using anti-SMAD4 and anti-SMAD2/3. (B) Breeding scheme to delete Smad4 in the granulosa cells using Amhr2-Cre. The mTmG cassette enables Cre recombinase activity to be verified through expression of EGFP. (C) Left: Confocal images of histological sections of paraffin-embedded 12-d ovary (i, ii) and an isolated follicle (iii) stained using an anti-green fluorescent protein (GFP) antibody and DAPI to counterstain DNA. Relatively few granulosa cells are GFP-positive (arrow in iii). Scale bars: 50 µm, 20 µm, 10 µm. Right: Histogram and chart showing the percentage of FACS-sorted GFP + and GFP- granulosa cells from growing follicles in a representative experiment. Granulosa cells expressing both td tomato and GFP and GFP alone were scored as GFP+. (D) Breeding scheme to delete Smad4 in vitro using generate tamoxifen-inducible ER-Cre. The mTmG cassette enables Cre recombinase activity to be verified through expression of EGFP. (E) Left: Schematic illustrating timeline of GOC exposure to tamoxifen and subsequent incubation. Center: Bright-field image of GOCs following incubation and confocal image of a representative GOC stained using anti-GFP antibody and DAPI to counterstain DNA. Scale bar = 100 µm and 10 µm, respectively. Right: Bar chart showing the percentage of FACS-sorted GFP + and GFP- granulosa cells from GOCs in a representative experiment. Granulosa cells expressing td tomato and GFP and GFP alone are counted as GFP+. (F) Left: Confocal image of representative GOCs stained with single-molecule RNA FISH probe for Smad4 exon 8 and DAPI to counterstain DNA. Right: Mean and SEM of the average number of Smad4 mRNA foci per cell (left) and relative mRNA amounts of Smad4 quantified using qRT-PCR (right) in granulosa cells five days after tamoxifen treatment. Number of foci: n=26 (ER-Cre-); n=21 (ER-Cre+). Relative mRNA: n=5 for both genotypes. (G) Immunoblot and plot of mean and SEM of SMAD4 protein content in granulosa cells from GOCs five days after tamoxifen treatment. A. n=11 for both genotypes. Statistical analysis using t-test (F, left) and one-sample t-test (F, right, and G), ***p<0.001; ****p<0.0001.
 
 We, therefore, turned to mice that expressed Cre under the control of a tamoxifen-inducible form of the estrogen receptor (ER) gene promoter (Rosa26CreERT2, hereafter termed ER-Cre). Because ER is expressed in pituitary gonadotropes and SMAD4 regulates the transcription of the Fshb gene encoding the β-subunit of follicle-stimulating hormone (Li et al., 2018), this model could not be used in vivo. GOCs from mid-growth stage follicles (diameter 100–120 μm) were, therefore, isolated, exposed to tamoxifen for one day and then incubated in tamoxifen-free medium for another five days. Under these conditions, a substantial fraction of the granulosa cells underwent Cre-mediated recombination, as indicated by the expression of GFP in immunostained GOCs and by FACS analysis (Figure 1E). This in vitro system was used for the experiments described here.
 
@@ -47,7 +47,7 @@ To examine the effect of SMAD4 depletion on the TZPs, GOCs were isolated and cul
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91798/elife-91798-fig2-v1.jpg)
 
-**Figure 2.:** (A) Confocal images of granulosa cell-oocyte complexes (GOCs) five days after tamoxifen treatment stained with anti-green fluorescent protein (GFP), phalloidin to visualize F-actin and DAPI to counterstain DNA. Arrow shows GFP-labelled TZPs. Scale bar = 20 µm. (B) Mean and SEM of oocyte diameter and TZP number five days after tamoxifen treatment. TZP number in each GOC is normalized to the oocyte diameter. n=63 (+/+), 59 (fl/fl). (C) Confocal image of a denuded GOC five days after tamoxifen treatment and removal of the granulosa cells, stained with anti-GFP, phalloidin to visualize F-actin and DAPI to counterstain DNA. Arrow shows phalloidin-labelled TZPs that remain embedded in the zona pellucida. Scale bar = 20 µm. (D) Mean and SEM of oocyte diameter and TZP number five days after tamoxifen treatment in denuded GOCs. TZP number for each specimen is normalized to the oocyte diameter. For the groups where all mice were Cre: n=44 (++/+), 47 (fl/fl). For the groups where all mice were fl/fl: n=164 (Cre), 172 (-Cre). (+E) Left: Time course of fluorescence recovery in oocyte of GOCs following bleaching. Each line represents an individual GOC. Right: Mean and SEM of the ratio of the final to pre-bleach fluorescence in each GOC. n=21 (+/+); 27 (fl/fl). (F) Left: Confocal image of a GOC after tamoxifen treatment followed by treatment with EdU and visualization. DNA was stained using DAPI. Scale bar = 20 µm. Right: Mean and SEM of the ratio of Edu-labelled cells to the total number of cells. n=23 (Cre); 10 (-Cre). Statistical analysis using t-test, *p<0.05; ****p<0.0001; ns, not significant.+
+**Figure 2.:** (A) Confocal images of granulosa cell-oocyte complexes (GOCs) five days after tamoxifen treatment stained with anti-green fluorescent protein (GFP), phalloidin to visualize F-actin and DAPI to counterstain DNA. Arrow shows GFP-labelled TZPs. Scale bar = 20 µm. (B) Mean and SEM of oocyte diameter and TZP number five days after tamoxifen treatment. TZP number in each GOC is normalized to the oocyte diameter. n=63 (+/+), 59 (fl/fl). (C) Confocal image of a denuded GOC five days after tamoxifen treatment and removal of the granulosa cells, stained with anti-GFP, phalloidin to visualize F-actin and DAPI to counterstain DNA. Arrow shows phalloidin-labelled TZPs that remain embedded in the zona pellucida. Scale bar = 20 µm. (D) Mean and SEM of oocyte diameter and TZP number five days after tamoxifen treatment in denuded GOCs. TZP number for each specimen is normalized to the oocyte diameter. For the groups where all mice were Cre+: n=44 (+/+), 47 (fl/fl). For the groups where all mice were fl/fl: n=164 (Cre-), 172 (Cre+). (E) Left: Time course of fluorescence recovery in oocyte of GOCs following bleaching. Each line represents an individual GOC. Right: Mean and SEM of the ratio of the final to pre-bleach fluorescence in each GOC. n=21 (+/+); 27 (fl/fl). (F) Left: Confocal image of a GOC after tamoxifen treatment followed by treatment with EdU and visualization. DNA was stained using DAPI. Scale bar = 20 µm. Right: Mean and SEM of the ratio of Edu-labelled cells to the total number of cells. n=23 (Cre-); 10 (Cre+). Statistical analysis using t-test, *p<0.05; ****p<0.0001; ns, not significant.
 
 A limitation of quantifying TZPs in intact GOCs is that the granulosa cells, depending on their number and spatial distribution, can variably impair their resolution and discrimination even using confocal microscopy. Therefore, the number of TZPs was also counted after mechanically removing the granulosa cells from the GOCs. This analysis revealed a striking 51.1+/-0.04% reduction in the normalized number of TZPs in the GOCs from the Smad4fl/fl mice (n=44 [control], 47 [experimental], p<0.0001) (Figure 2C and D). As observed using intact GOCs, the mean oocyte diameter did not differ (Figure 2D). To verify the difference in TZP-number, we also compared ER-Cre+; Smad4fl/fl to a different control genotype, ER-Cre-; Smad4fl/fl mice. A quantitatively similar 43.6+/-0.04% decrease in TZPs within the ER-Cre+ population ( +=164 [control], 172 [experimental], p<0.0001) (Figure 2D) was observed following tamoxifen treatment and culture. Together, these results indicate that depletion of SMAD4 in the granulosa cells is associated with a decrease in the number of TZPs.
 
@@ -62,6 +62,14 @@ We then focused our analysis on individual granulosa cells. GOCs where individua
 **Figure 3.:** (A) Schematic illustrating the experimental protocol. green fluorescent protein (GFP+) granulosa cells in clusters were used for calculations in C and individual GFP + granulosa cells were used for calculations in D. (B) Three-dimensional reconstruction of a GOC, showing granulosa cell bodies, TZPs, and oocyte cortex. Serial optical confocal sections were processed using Imaris software. GOCs were stained using anti-GFP (green), phalloidin (red), and DAPI (blue). Scale bar = 10 µm (upper, middle), 3 µm (lower). (C) Mean and SEM of volumes and sphericities of individual granulosa cells from a cluster and those selected for TZP analyses. Volume: n = 293 (+/+), 322 (fl/fl); sphericity: n = 293 (+/+), 322 (fl/fl). (D) Mean and SEM of volumes of individual granulosa cells selected for TZP analysis, number of TZPs per cell, TZP length, and width. Volume: n = 55 (+/+), 63 (fl/fl); no. of TZPs: n = 55 (+/+), 65 (fl/fl) length: n = 893 (+/+), 720 (fl/fl); width: n = 870 (+/+), 719 (fl/fl). Statistical analysis using t-test, ****p<0.0001; ns, non-significant.
 
 A limitation of analyzing TZPs in GFP-positive cells within GOCs is that this strategy cannot distinguish TZPs that were generated in a low-SMAD4 environment (i.e. after the Cre recombinase was expressed) from those generated earlier in a normal-SMAD4 environment. To ensure that we examined only TZPs that were generated after Cre had been expressed, we used our previously published reaggregation assay (El-Hayek et al., 2018a; Figure 4A). GOCs obtained from mid-growth stage follicles of ER-Cre; mTmG mice carrying the appropriate Smad4 alleles were exposed to tamoxifen for one day and then incubated for an additional four days. The granulosa cells were then separated from the oocyte and combined with an oocyte that did not carry the mTmG gene. These reaggregated GOCs were incubated for an additional six days, then fixed and stained using anti-GFP (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91798/elife-91798-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic illustrating the reaggregation procedure. (B) Three-dimensional reconstruction of a reaggregate, showing granulosa cell bodies, TZPs, and oocyte cortex. Serial optical confocal sections were processed using Imaris software. Granulosa cell-oocyte complexes (GOCs) were stained using anti-green fluorescent protein (GFP) (green), phalloidin (red), and DAPI (blue). Scale bar = 10 µm (upper), 3 µm (lower). (C) Mean and SEM of volumes and sphericities of individual granulosa cells. Volume: n = 185 (+/+), 159 (fl/fl); sphericity: n = 185 (+/+), 159 (fl/fl). (D, E) Mean and SEM of volumes of individual granulosa cells, number of TZPs per cell, TZP length, and TZP width. Volume: n = 16 (+/+), 25 (fl/fl); no. of TZPs: n = 16 (+/+), 25 (fl/fl) length: n = 174 (+/+), 154 (fl/fl); width: n = 316 (+/+), 169 (fl/fl). (F) Upper: Schematic illustrating how the distance from the origin and the tip, respectively, of TZPs (blue) and non-TZP projections (red) to the oocyte surface was determined. Lower: TZP trajectories of 3D-reconstructed TZPs, representing the distance from origin relative to the position on the TZP axis. (G) Left: Mean and SEM of the difference between the distance from the origin and the tip of individual TZPs to the oocyte surface. Blue symbols (>0) represent TZPs oriented towards the oocyte; red symbols (<0) represent non-TZPs oriented away from the oocyte. n = 174 (+/+), 157 (fl/fl). Right: Mean and SEM of the proportion of TZPs in individual cells that were oriented away from the oocyte. n = 12 (+/+), 21 (fl/fl). Statistical analysis using t-test, *p<0.05; **p<0.01; ****p<0.0001; ns, non-significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91798/elife-91798-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Three-dimensional (3D) reconstruction of granulosa cells, oocyte, and transzonal projections (TZPs). (B) TZP segmentation into spots. Graph shows an example of spot subtraction of two TZPs oriented towards and away from the oocyte. Heatmap depicts the gradient of colours for the spots that are closer (violet) and farther from the oocyte (red). TZP segmentation into spots. Graph shows an example of spot subtraction of two TZPs oriented towards and away from the oocyte. Heatmap depicts the gradient of colours for the spots that are closer (violet) and farther from the oocyte (red).
 
 When the entire population of granulosa cells in the reaggregated GOCs was analyzed, there was a ~30% reduction in mean volume in the Smad4fl/fl cells as compared to Smad4wt/wt cells (394.5+/-18.8 vs 279.8+/-16.6; n=185, 159; p<0.0001) and no difference in cell sphericity (Figure 4C), as observed using intact GOCs. There was no difference between genotypes, however, in mean volume among the cells whose TZPs were characterized (Figure 4D). Within this group, the mean number of TZPs per cell was reduced by ~50%, from 14.2+/-2.0 (n=16) in the Smad4wt/wt cells to 6.84+/-1.1 (n=25) in the Smad4fl/fl cells (Figure 4D, p=0.001). A ~20% increase in the mean length of the TZPs of Smad4fl/fl cells (3.71+/-0.17 vs 4.40+/-0.28; n=174, 154; p=0.03) was also detected, as in intact GOCs, but no difference in the mean width (Figure 4E).
 
@@ -93,53 +101,301 @@ Regardless of the mechanism linking SMAD4 to TZP number, it is noteworthy that t
 
 ## Methods
 
-## Mouse strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (M. musculus)</td>
+      <td>Smad4</td>
+      <td>GenBank</td>
+      <td>Gene ID: 17128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Smad4tm2.1Cxd/J</td>
+      <td>Jackson Laboratories</td>
+      <td>strain 017462</td>
+      <td>Supplied by Dr. Daniel. J. Bernard, McGill University</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>Amhr2tm3(cre)Bhr</td>
+      <td>MMRRC</td>
+      <td>strain 014245-UNC</td>
+      <td>Supplied by Dr. Makoto Nagano, McGill University</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>B6.129-Gt(ROSA)26Sortm1(cre/ERT2)Tyj/J</td>
+      <td>Jackson Laboratories</td>
+      <td>strain 008463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (M. musculus)</td>
+      <td>B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J</td>
+      <td>Jackson Laboratories</td>
+      <td>strain 007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SMAD2/3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8685 RRID: AB_10889933</td>
+      <td>1:1000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SMAD4 (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA019154 RRID: AB_1853480</td>
+      <td>1:1000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-N-cadherin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>B610920 RRID: AB_2077527</td>
+      <td>1:1000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Notch2 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab8926 RRID: AB_2267338</td>
+      <td>1:1000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11122 RRID: AB_2307355</td>
+      <td>1:100 (immunofluorescence, immunohistochemistry)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit IgG-HRP (Goat polyclonal)</td>
+      <td>Promega</td>
+      <td>W4011 RRID: AB_430833</td>
+      <td>1:5000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse IgG-HRP (Goat polyclonal)</td>
+      <td>Promega</td>
+      <td>W4021 RRID: AB_430834</td>
+      <td>1:5000 (immunoblot)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit IgG- Alexa 488 (Donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21206 RRID: AB_2535792</td>
+      <td>1:100 (immunofluorescence, immunohistochemistry)</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for polymerase chain reaction (PCR) genotyping</td>
+      <td>Sigma</td>
+      <td>Smad4 – wild-type</td>
+      <td>5ʹ:GGGCAGCGTAGCATATAAGA 3ʹ:GACCCAAACGTCACCTTCAG Predicted size: 390 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for PCR genotyping</td>
+      <td>Sigma</td>
+      <td>Smad4 – floxed</td>
+      <td>5ʹ:GGGCAGCGTAGCATATAAGA 3ʹ:GACCCAAACGTCACCTTCAG Predicted size: 450 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for PCR genotyping</td>
+      <td>Sigma</td>
+      <td>Smad4 – recombined</td>
+      <td>5ʹ:TAAGAGCCACAGGGTCAAGC 3ʹ:GACCCAAACGTCACCTTCAG Predicted size: 450 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for PCR genotyping</td>
+      <td>Sigma</td>
+      <td>Amhr2-Cre</td>
+      <td>5ʹ:CTCTGGTGTAGCTGATGATC 3ʹ:TAATCGCCATCTTCCAGCAG Predicted size: 380 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for PCR genotyping</td>
+      <td>Sigma</td>
+      <td>Rosa26CreERT2</td>
+      <td>5ʹ:CGTGATCTGCAACTCAGTC 3ʹ:AGGCAAATTTTGGTGTACGG Predicted size: 150 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Smad4</td>
+      <td>5ʹ:TCACAATGAGCTTGCATTCC 3ʹ:CCATCCACAGTCACAACAGG Predicted size: 143 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Cdh2 (N-cadherin)</td>
+      <td>5ʹ:CCAGGAAAAGTGGCAGGTAG 3ʹ:CACTGTGCTTGGCAAGTTGT Predicted size: 121 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Notch2</td>
+      <td>5ʹ:GACCCTATCCTACCCTCTAGTG 3ʹ:AGCAGGATGAAGAACAGGATG Predicted size: 103 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Myo10</td>
+      <td>5ʹ:TCCAGACAGACTATGGGCAGG 3ʹ:GGAAGCCATGTCGTCCACG Predicted size: 109 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Fscn1</td>
+      <td>5ʹ:AGAACGCCAGCTGCTACTTT 3ʹ:CGAGGAATCACTACCCACCG Predicted size: 331 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Daam1</td>
+      <td>5ʹ:GCGGCTGCTCAGAGTATAGAAA 3ʹ:AAACATGGCTTCCCTGTGTTTG Predicted size: 273 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primer for reverse-transcription (RT)-PCR</td>
+      <td>Sigma</td>
+      <td>Rpl19</td>
+      <td>5ʹ:GAAATCGCCAATGCCAACTC 3ʹ:CTTCCCTATGCCCATATGCC Predicted size:147 nt</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RNA in situ hybridization probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>857571</td>
+      <td>Smad4, exon 8</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>RNA in situ hybridization probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>310043</td>
+      <td>Bacillus subtilis DapB</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 488 Imaging Kit</td>
+      <td>Molecular Probes</td>
+      <td>C10337</td>
+      <td>In situ detection of DNA replication</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>BaseScope Assay</td>
+      <td>Advanced Cell Diagmostics</td>
+      <td>322337</td>
+      <td>In situ detection of RNA</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>4-hydroxytamoxifen</td>
+      <td>Sigma</td>
+      <td>T176</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Phalloidin (Alexa Fluor 568)</td>
+      <td>Thermo Fisher</td>
+      <td>A12380</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>EdU</td>
+      <td>Thermo Fisher</td>
+      <td>C10337</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>9.7.2</td>
+      <td>Image analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains
 
 All experiments were performed in compliance with the regulations and policies of the Canadian Council on Animal Care and were approved by the Animal Care Committee of the Research Institute of the McGill University Health Centre (RI-MUHC, protocol 7783). CD-1 mice were obtained from Charles River (St-Constant, QC). The following transgenic strains were obtained from commercial suppliers: B6.129-Gt(ROSA)26Sortm1(cre/ERT2)Tyj/J (referred to as ER-Cre in the text) carrying a tamoxifen-inducible sequence encoding Cre recombinase under the control of the Rosa26 regulatory elements (Jackson Laboratories, Bar Harbor, ME, strain 008463); B6.129(Cg)-Gt(ROSA)26Sortm4(ACTB-tdTomato,-EGFP)Luo/J (Jackson, strain 007676; hereafter mTmG) carrying sequences encoding a membrane-targeted tdTomato and membrane-targeted EGFP; Cre-mediated recombination of loxP sites switches expression from RFP to EGFP. Smad4tm2.1Cxd/J (hereafter Smad4fl) carrying loxP sites flanking exon 8 (Jackson, strain 017462) was kindly supplied by Dr. Daniel Bernard (McGill University). Amhr2tm3(cre)Bhr (hereafter Amhr2-Cre) carrying a sequence encoding Cre recombinase under the control of the promoter of the Anti-Mullerian hormone receptor 2 gene was kindly supplied by Dr. Makoto Nagano (McGill University).
 
 To generate Amhr2-Cre+; Smad4fl/fl females carrying an mTmG allele, Smad4fl/wt; mTmG+/+ females were crossed with Amhr2-Cre+; Smad4fl/wt males. To generate ER-Cre+; Smad4fl/fl females carrying an mTmG allele, Smad4fl/wt; mTmG+/+ females were crossed with ER-Cre+; Smad4fl/wt males. ER-Cre-; mTmG+; Smad4fl/fl females and ER-Cre+; mTmG+; Smad4wt/wt females served as controls. Genotyping of the offspring was done using the EZ Tissue/Tail DNA Isolation Plus PCR kit (EZ Bioresearch). After DNA extraction from tail snips, PCR was used to detect wild-type, floxed, and recombined Smad4 and the presence of ER-Cre and Amhr2-Cre alleles.
 
-## Tissue embedding and immunohistochemistry
+### Tissue embedding and immunohistochemistry
 
 Sections of paraffin-embedded ovaries were deparaffinized using xylene, rehydrated in a decreasing ethanol series (100, 90, 70%) for 3 min each, and then placed in Milli-Q water for 5 min. Slides were heated intermittently in a microwave during 20 min in 0.1 M citrate buffer solution at pH 6.0, washed in PBS for 10 min, and blocked with CAS universal blocking solution (Thermo Fisher, 008120) for 30 min at room temperature to reduce nonspecific binding. After overnight incubation with primary antibody, slides were washed three times in PBS at room temperature and then incubated for 1 hr at room temperature with secondary antibody with DAPI. Slides were washed twice in PBS for 5 min and mounted on a drop of VECTASHIELD solution (Vector Laboratories, H-1200–10). Images were acquired using a Zeiss LSM 880 confocal microscope.
 
-## Collection, culture, and tamoxifen treatment of GOCs
+### Collection, culture, and tamoxifen treatment of GOCs
 
 GOCs were obtained as previously described (El-Hayek et al., 2018b; O’Brien et al., 2003). Briefly, ovaries of 10- to 12-day-old mice were dissected from the ovarian bursa. Follicles were mechanically isolated by carefully tearing the ovaries apart and using fine needles to separate the follicles from each other in HEPES-buffered minimal essential medium (MEM, pH 7.2, Life Technologies, Burlington, ON) (MEM-H). A Pipetman P1000 was used to carefully pick up and transfer the individual follicles to dishes containing fresh medium. GOCs were obtained by incubating follicles in the presence of collagenase (10 μg/ml; Cedarlane, Burlington, ON) and DNase I (10 μg/ml; Sigma) for 5 min at 37 °C in air. GOCs were collected and briefly washed in NaHCO3-buffered MEM (MEM-C) and cultured in four-well plates containing 500 μl of MEM-C supplemented with ITS (10 μg/mL insulin, 5.5 μg/mL transferrin and 5 ng/mL selenium; Sigma), FSH (10 mIU/ml; EMD Serono, Mississauga, ON), and estradiol (10 nM, Sigma, E2758) in an atmosphere of 5% CO2 in air. To induce Cre-mediated recombination of the Smad4 allele, GOCs were incubated with 4-hydroxytamoxifen (1 µg/ml, Sigma, T176) in the above medium for 24 hr. They were then transferred to a medium without tamoxifen.
 
-## Immunoblotting
+### Immunoblotting
 
 Cell samples were lysed in 10 μl of Laemmli buffer. After denaturation at 95°C for 10 min, proteins were separated using 4–15% precast polyacrylamide gels (BioRad, 4568085) and transferred onto a polyvinylidene fluoride membrane (Amersham, Oakville, ON, Canada) under constant voltage. The membrane was subsequently blocked using 5% BSA, in 0.1% Tween-PBS. The membrane was washed three times in Tween-PBS and incubated with primary antibody overnight at 4°C. After washing for 45 min, the membrane was incubated in secondary antibody conjugated to horseradish peroxidase (Promega) at a dilution of 1:5000 for 1 hr at room temperature. After washing for 30 min, the bound antibody was revealed using ECL+ (Amersham).
 
-## RNA purification and quantitative real-time PCR
+### RNA purification and quantitative real-time PCR
 
 RNA was extracted using a Picopure RNA isolation kit (Life Technologies) following the manufacturer’s instructions and eluted in 10 μL of the provided elution buffer, as described (El-Hayek et al., 2018a). Briefly, SuperScript II Reverse Transcription kit (Life Technologies) was used to generate cDNA. PCR amplification was performed using a Corbett Rotorgene 6000 (Montreal Biotech, Montreal, QC). Each reaction contained 4 μL of EvaGreen Mix (Montreal Biotech), 13 μL of UltraPure DNase/RNase-free distilled water (Life Technologies), 1 μL of 10 mM primers, and 2 μL of cDNA (diluted 1:20 from original stock). Primers were designed using Primer-BLAST (National Institutes of Health) and obtained from Sigma. For each primer pair, a standard curve was generated using serial dilutions of cDNA prepared from ovarian RNA and used to determine the efficiency of amplification. Melt-curve analysis and electrophoresis of amplified products confirmed that only a single product of the expected size was generated. Data was analyzed using software provided by the manufacturer. Relative quantities of amplified product were calculated according to 2-∆∆CT method, using Rpl19 for normalization.
 
-## Immunofluorescence
+### Immunofluorescence
 
 GOCs and denuded oocytes were fixed for 15  min in freshly prepared 2% (w/v) para-formaldehyde (Fisher Scientific 04042) in PBS (pH 7.2) containing 0.1% Triton X-100 (ACROS 9002-93-1) (PBST), then washed in PBST. The specimens were incubated overnight in primary antibody in PBST at 4°C with gentle agitation, washed twice in PBST, then incubated for 1 hr at room temperature in the secondary antibody as well as phalloidin and DAPI in PBST, then washed in PBST. GOCs or denuded oocytes were placed in a 2 μl drop of PBS containing 0.3% polyvinylpyrrolidone (Sigma, PVP360) on a glass bottom dish covered with mineral oil. Images were acquired using a Zeiss LSM880 confocal microscope. Images were obtained as 16-bit RGB stack files. GOCs were imaged with a Plan Apo 63 x/1.4 oil immersion objective and the following lasers and filters (in parentheses): 488 nm (491–553  nm), 561  nm (571–642) and 405 nm (410–484). Laser strength ranged between 1.5 and 2% and digital gain was adjusted until the first saturated pixels were observed for each channel.
 
-## EdU incorporation and detection
+### EdU incorporation and detection
 
 EdU (5-ethynyl-2'-deoxyuridine) detection was performed on GOCs according to the Click-iT EdU Alexa Fluor 488 Imaging Kit manufacturer’s instructions (Molecular Probes, C10337). Briefly, cells were incubated in MEM containing 100 μM EdU for 5 hr to allow for incorporation into newly synthesized DNA, then fixed, permeabilized, and incubated in Click-iT cocktail reaction for 30 min. EdU labeling was visualized by confocal microscopy and quantified with ImageJ (NIH).
 
-## In situ hybridization
+### In situ hybridization
 
 GOCs were fixed in freshly prepared 2% paraformaldehyde in phosphate-buffered saline (PBS, pH 7) for 15 min at room temperature, dehydrated by passing through a gradient of ice-cold methanol (50%, 75%, 100%) for 3 min each, then sealed and stored at 4°C. The next day, the GOCs were rehydrated using the reverse methanol gradient (75%, 50%, PBS) for 3 min each. Up to 10 GOCs were placed in the middle of a glass microscope slide, encircled by a hydrophobic barrier created using an Immedge pen, and incubated with protease solution (ACD, 322337) for 20 min. Slides were rinsed three times with PBS and processed as indicated by the manufacturer for the BaseScope Assay (Advanced Cell Diagnostics (ACD), 323971). Briefly, slides were incubated with the Smad4 probe specific for the exon8 allele (ACD, 857571) or negative control probe against Bacillus subtilis DapB (ACD, 310043) at 40°C for 2 hr in a HybEZ oven. Subsequent amplification and detection steps were performed as recommended by the manufacturer and slides were taken for image acquisition using a Zeiss LSM 880 confocal microscope.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 GOCs were dissected from the ovaries of 12–15 d-old Amhr2-Cre+; mTmG+; Smad4fl/fl mice or were collected after tamoxifen treatment and culture in the case of ER-Cre+; mTmG +Smad4fl/fl mice. GOCs dissected from Amhr2-Cre- and ER-Cre- littermates were used as negative controls of EGFP expression. They were transferred to a four-well dish containing Ca-free MEM (Thermo Fisher, 21068028) supplemented with 0.25% trypsin (Thermo Fisher, 25200056), 1 mM EDTA (Sigma), and DNAse I for several minutes. After pipetting up and down for a few times to dissociate the cells, fetal bovine serum was added (4% final concentration) to inactivate the trypsin. Cells were centrifuged at 1500xg for 5 min and supernatant was carefully removed under the dissecting microscope to better visualise the pellet. FACs buffer containing PBS, 1% FBS, 1 mM EDTA, and 1 µg/ml of DAPI was used to resuspend the pellet. Cells were resuspended and passed through a Flowmi 40 µm strainer (Merck, BAH136800040) to remove oocytes and cell clumps, and then kept on ice for sorting. Resulting granulosa cells were analyzed on a BD FACSAria Fusion 8.0.2 sorter at the Immunophenotyping Facility of the RI-MUHC. All events were collected for each sample. A 488 nm excitation laser was used for both Tomato and EGFP excitation since the wavelength of 488 nm falls within the peak excitation of EGFP but only at 25% of peak excitation for tdTomato. Data were analyzed using FlowJo FACS analysis software. Cells were gated for singlets (using forward scatter vs. side scatter area), viability (DAPI scatter vs. side scatter area), and fluorescence (FITC and PE) without compensation.
 
-## Measurement of granulosa cell-oocyte communication using fluorescence recovery after photobleaching (FRAP)
+### Measurement of granulosa cell-oocyte communication using fluorescence recovery after photobleaching (FRAP)
 
 A protocol for FRAP was adapted from our previous study (El-Hayek and Clarke, 2015). GOCs were incubated for 15 min in MEM supplemented with calcein-AM and then for 60 min in calcein-free MEM to allow the transfer of calcein from the granulosa cells into oocyte. A circular region of interest of fixed diameter (10 µm, to ensure the bleaching did not extend to the surrounding granulosa cells) was set in the center of the enclosed oocyte and subjected to 60 repetitive bleaches of 50 iterations (1 min total duration) using the argon laser at 50% transmission strength. The intensity of fluorescence in the oocyte and the layer of granulosa cells immediately surrounding it was recorded before bleaching and after the 10th, 20th, 30th, 40th, 50th, and 60th bleaching. Fluorescence was calculated as intensity of fluorescence in granulosa cell layer at each time point divided by the pre-bleach intensity of the layer. As oocytes of all experimental groups were subjected to the same bleaching procedure within the fixed ROI, the loss in fluorescence was further divided by initial pre-bleach intensity of the oocyte normalized to intensity of fluorescence in oocyte at the given time point, in order to correct for differences in bleaching effect in oocytes of different sizes.
 
-## Generation of granulosa cell-oocyte reaggregates
+### Generation of granulosa cell-oocyte reaggregates
 
 GOCs were obtained from 12 day ER/Cre+; mTmG+; Smad4wt/wt and ER-Cre+; mTmG+; Smad4fl/fl mice, exposed to tamoxifen for 24 hr and incubated for an additional five days as described above. They were then incubated in Ca-Mg-free PBS and drawn in and out of a mouth-controlled micropipette to generate a suspension of denuded oocytes surrounded by the zona pellucida and individual or small clumps of granulosa cells. Briefly, the granulosa cells were deposited together with oocytes from CD-1 mice into the base of a 200 μl microfuge tube and PBS was added to a total volume of 100 μl. The tube was spun at top speed in a microcentrifuge for 1 min, then rotated 180° and centrifuged for 1 min. This step was repeated twice more. The tube was then cut near the base and the cell pellet was carefully scooped out and incubated for two days in four-well plates in MEM supplemented with FSH, estradiol, and ITS. At the end of the incubation period, complexes of oocytes surrounded by granulosa cells were fixed and processed for analysis.
 
-## Image analysis
+### Image analysis
 
 To quantify the number of F-actin-stained-TZPs, a confocal optical section was obtained at the equatorial plane of the oocyte. Using Fiji software (National Institutes of Health, Bethesda, MD), a segmented circle was drawn around the oocyte in the middle of the zona pellucida, and the fluorescence intensity at each point on the line was obtained. Each point whose value was above the background value of the oocyte cytoplasm and higher than each of its immediately neighboring points was counted as a TZP.
 
@@ -147,6 +403,6 @@ To quantify EdU incorporation in granulosa cells, Fiji was used to calculate the
 
 To individually segment granulosa cells and their corresponding TZPs, Imaris 9.7.2 Software (Bitplane) was used. First, z-stacks of 0.2 μm thickness covering the middle region of a follicle were imaged to obtain a conventional 2D Maximum Intensity Projection (MIP). Then, a 3D rendered segmentation of GFP-positive granulosa cells was created with the ‘Cell detection’ tool where cell boundaries were detected based on GFP membrane staining. Smallest diameter was set to 100 µm, membrane detail of 0.2 μm and the threshold was adjusted based on local contrast. Segmented cells with a volume less than 100 µm2 were deleted and fusing or fragmented cells were edited using the ‘merge’ or ‘split’ tools to match the original image. The oocyte was also segmented using the phalloidin red channel. After the edition, cells were converted to surface objects with the tool ‘Convert to surfaces’ to record their measurements. To render individual TZPs, the ‘Filament tracer’ tool and semi-automated tracing with the tool ‘Autopath’ was used to draw the path of each TZP from the granulosa cell body (start) to the oocyte surface (end) (Figure 4—figure supplement 1A). TZP diameter (thickness) was calculated automatically with a minimum diameter of 0.1 μm. To determine the distance of the TZP tip to the oocyte surface, the segmented TZP was automatically divided into discrete spots using the extension ‘Filament to Spots.’ This allowed the calculation of the distance from each spot to the oocyte surface. All measurements were exported using the ‘distance to oocyte surface’ from each TZP spot. To determine the TZP orientation (away or towards the oocyte), the distance of the spot located at the TZP start was subtracted from the distance of the spot located at the TZP tip. A positive difference indicates that the TZP tip is closer to the oocyte and a negative difference indicates that the TZP tip is farther from the oocyte (Figure 4—figure supplement 1B).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± standard error of the mean and were analyzed and represented using GraphPad Prism 8.4.2 software. Statistical significance was evaluated using one- or two-sample two-tailed t-tests.

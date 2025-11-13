@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.36726.001 Brain computations rely on a proper balance between excitation and inhibition which progressively emerges during postnatal development in rodent. γ-Aminobutyric acid (GABA) neurotransmission supports inhibition in the adult brain but excites immature rodent neurons. Alterations in the timing of the GABA switch contribute to neurological disorders, so unveiling the involved regulators may be a promising strategy for treatment. Here we show that the adipocyte hormone leptin sets the tempo for the emergence of GABAergic inhibition in the newborn rodent hippocampus. In the absence of leptin signaling, hippocampal neurons show an advanced emergence of GABAergic inhibition. Conversely, maternal obesity associated with hyperleptinemia delays the excitatory to inhibitory switch of GABA action in offspring. This study uncovers a developmental function of leptin that may be linked to the pathogenesis of neurological disorders and helps understanding how maternal environment can adversely impact offspring brain development.
+Brain computations rely on a proper balance between excitation and inhibition which progressively emerges during postnatal development in rodent. γ-Aminobutyric acid (GABA) neurotransmission supports inhibition in the adult brain but excites immature rodent neurons. Alterations in the timing of the GABA switch contribute to neurological disorders, so unveiling the involved regulators may be a promising strategy for treatment. Here we show that the adipocyte hormone leptin sets the tempo for the emergence of GABAergic inhibition in the newborn rodent hippocampus. In the absence of leptin signaling, hippocampal neurons show an advanced emergence of GABAergic inhibition. Conversely, maternal obesity associated with hyperleptinemia delays the excitatory to inhibitory switch of GABA action in offspring. This study uncovers a developmental function of leptin that may be linked to the pathogenesis of neurological disorders and helps understanding how maternal environment can adversely impact offspring brain development.
 
 ## Introduction
 
@@ -36,27 +36,41 @@ Here, we examined how leptin impacts the GABAergic developmental sequence in the
 
 ## Results
 
-## Advanced onset of GABAergic inhibition in leptin-receptor deficient mice
+### Advanced onset of GABAergic inhibition in leptin-receptor deficient mice
 
 We first compared the efficacy of GABAA receptor signaling in newborn long-form leptin-receptor (LepRb, the only leptin receptor able to activate intracellular pathway (Ahima and Flier, 2000) deficient (db/db) and wild type (wt) mice. To this aim we obtained non-invasive loose cell attached recordings of CA3 pyramidal neurons in acute hippocampal slices from db/db and wt littermates and investigated the effect of bath application of the GABAA receptor agonist isoguvacine (10 µM, 2 min) on their neuronal firing (Figure 1A). Consistent with the known depolarizing action of GABA in the newborn hippocampus (Ben-Ari et al., 2007), isoguvacine increased the firing of wt CA3 pyramidal neurons from P1 to P6 (Figure 1B). Remarkably, in db/db mice, the excitatory action of isoguvacine was only observed at P1 (Figure 1B). As early as P3, isoguvacine decreased the firing of the CA3 pyramidal db/db neurons (Figure 1B). At P15, the effect of isoguvacine on the firing of the CA3 pyramidal neurons was similar in wt and db/db mice (Figure 1B). Next to determine whether the depolarizing-to-hyperpolarizing GABA developmental sequence was affected, we investigated the reversal potential of evoked GABAA receptor-mediated postsynaptic currents (eGABAA-PSCs) in db/db and wt littermates from P1 to P20 using gramicidin perforated voltage-clamp recording to prevent disruption of intracellular chloride concentration ([Cl-]i). GABAA-PSCs were evoked in the presence of the glutamatergic receptor antagonists; NBQX (5 µM) and D-APV (40 µM) while voltage clamping the neurons at various potentials (Figure 1C). In wt CA3 neurons, the reversal potential of eGABAA-PSCs (EGABA) shifted from depolarizing to hyperpolarizing values during the second postnatal week of life (Figure 1D). In db/db neurons, this shift occurred earlier, few days after birth (Figure 1D, at P3 EGABA was −38 ± 8 mV in wt and −64 ± 3 mV in db/db neurons, p=0.023, two-tailed unpaired Student’s t-test). In contrast the membrane potential at zero current was similar between wt and db/db neurons at all age investigated (Figure 1D). Altogether, these data show that the emergence of GABAergic inhibition is advanced in leptin-receptor deficient mice in vivo.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig1-v3.jpg)
+
+**Figure 1.:** (A) Cell attached recordings of CA3 pyramidal neurons on acute hippocampal slices. Scale bar, 2 min, 50 pA. Corresponding time course of spike frequency changes are shown under each trace. (B) Developmental changes of isoguvacine action on spike activity. Mean ± SEM. (C) Current-voltage relationships for evoked GABAergic synaptic currents. Insets: examples of GABAergic synaptic current evoked at holding potentials ranging from −110 to −60 mV (10 mV increment) in db/db and from −70 to −30 (10 mV increment) in wt CA3 pyramidal neuron. Scale bar, 10 ms, 20 pA. (D) Developmental changes in EGABA and Em at zero current. Mean ± SEM. In B and D, the number of cells recorded and number of mice used are indicated in parenthesis; #p<0.05 when compared to pre-isoguvacine values, two-tailed paired Student’s t-test, *p<0.05, **p<0.01 and ***p<0.001 when compared to age-matched wt, two-tailed unpaired Student’s t-test. (E) Developmental profile of plasma leptin levels in the wt (blue circle) and developmental profile of ΔEGABA (gray circle). ΔEGABA was calculated as the difference in EGABA values between the wt and db/db at each developmental stage depicted in D. Numbers in parenthesis indicate the number of mice used. Mean +SEM. §p<0.05 when compared to P0 plasma leptin values, *p<0.05 and **p<0.01 when compared to P0 ΔEGABA values, one way ANOVA followed by a Tukey’s post hoc test. (F) Left: representative immuno-blots for hippocampal panKCC2 and β3-tubulin in wt and db/db mice (first two lanes). The third lane (-) illustrates background (empty well). Right: box plots of normalized pan KCC2 in P6 wt and db/db hippocampi. Numbers in parenthesis indicate the number of mice used. *p<0.05, two-tailed unpaired Student’s t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Plasma leptin levels in P8 wt, ob/ob and leptin-treated ob/ob mice (ob +lep, 5 mg/kg twice a day sub-cutaneous from P3 to P8, n = 4, blood samples were collected 30 min after the last injection). (B) Box plot of isoguvacine action on spike frequency in wt mice, ob/ and leptin-treated ob/ob mice at P8. (C,D) Box plots of EGABA and Em at zero current in 4 wt mice, ob/ob and leptin-treated ob/ob CA3 pyramidal neurons. The cells recorded and number of animal used are indicated in parenthesis *p<0.05, **p<0.01, one way ANOVA followed by a Tukey’s post hoc test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Confocal images showing KCC2 immuno-labeling in the CA3 pyramidal layer of wt and db/db hippocampi at P6. (B) Summary plot of the normalized KCC2 fluorescence intensity ratio in P6 wt and db/db hippocampal CA3 pyramidal layer. Calibration bar 20 µm. 3 wt and db/db littermate animals. mean ±sem. **p<0.01, two-tailed unpaired Student’s t-test. (C) Examples of KCC2 and MAP2 immunostaining in control and leptin-treated (100 nM, 24 hr) cultured hippocampal neurons (15 DIV). Scale bar 20 µM. (C) Summary plots of the normalized KCC2 fluorescence intensity in control (n = 30) and leptin-treated (n = 45) hippocampal neurons. Pooled data from 3 different cultures.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig1-figsupp3-v3.jpg)
 
 To further link leptin with the GABA sequence, we investigated the developmental profile of plasma leptin levels in wt mice. We found that circulating leptin levels were low at birth in wt, rose to a peak by the end of the first postnatal week and declined to low levels during the third postnatal week of life (Figure 1E). Interestingly, this developmental profile of leptin levels paralleled the developmental difference in EGABA observed between wt and db/db neurons (Figure 1D,E). Therefore, leptin levels surge during a critical developmental window in wt mice, and EGABA is impaired during this critical window in db/db mice. However, correlation does not mean causality. To address this point we used, newborn leptin-deficient (ob/ob) mice. We found that ob/ob mice also exhibit an advanced emergence of GABAergic inhibition in vivo, an effect partially restored by subcutaneous recombinant leptin injections to mimic the leptin surge occurring in wt mice in vivo (Figure 1—figure supplement 1). Altogether, these data show that leptin surge controls chloride homeostasis and the emergence of functional GABAergic inhibition in vivo.
 
 The developmental switch in GABA polarity is mainly due to the functional expression of KCC2 (Medina et al., 2014; Rivera et al., 1999). We therefore assessed mRNA expression of this Cl- co-transporter in wt and db/db mice at P6 using quantitative qRT-PCR from isolated hippocampi. KCC2 mRNA levels were enhanced in db/db hippocampi compared to wt (from 1.6 ± 0.1 in wt to 2.6 ± 0.3 in db/db mice, n = 6 for both, p=0.038, two-tailed unpaired Student’s t-test, not shown). In contrast, NKCC1 mRNA levels were not altered (1.1 ± 0.2 and 1.2 ± 0.2 in respectively wt and db/db mice, n = 6 for both, p=0.7, two-tailed unpaired Student’s t-test, not shown). To determine whether increased mRNA levels results in increased expression of KCC2, we assessed KCC2 protein levels in P6 hippocampi by western blotting. KCC2 protein expression was up-regulated in db/db hippocampi compared to wt (+33 ± 6%, n = 6 wt and 5 db/db hippocampi, p=0.02 two-tailed unpaired Student’s t-test, Figure 3F). Immuno-labeling confirmed that KCC2 protein expression was up-regulated in db/db hippocampi at P6 compared to wt (Figure 1—figure supplement 2). KCC2 expression was also up-regulated in ob/ob hippocampi compared to wt (from 0.38 ± 0.07 to 0.97 ± 0.24 when normalized to β3 tubulin, n = 6 for both, p=0.04, two-tailed unpaired Student’s t-test, not shown). NKCC1 expression was however similar between wt and db/db neurons (the NKCC1/β3 tubulin ratio was 0.56 ± 0.01 and 0.55 ± 0.02 in respectively wt (n = 3) and db/db (n = 3) mice, p=0.8 two-tailed unpaired Student’s t-test, Supplementary file 1). Thus a deficit in leptin signaling leads to an earlier expression of KCC2 and an advanced GABA switch to inhibition in vivo.
 
-## Leptin controls chloride homeostasis in vitro
+### Leptin controls chloride homeostasis in vitro
 
 We next asked whether leptin directly acts on hippocampal cells to control Cl- homeostasis. To address this point, we first evaluated the effect of a transient exposure to leptin (100 nM, 24 hr) on Cl- homeostasis on immature hippocampal cultures (6 DIV) when KCC2 activity is low, and in more mature cultures (15 DIV) when KCC2 activity is high and GABA had switched to hyperpolarized values (Friedel et al., 2015). Using gramicidin perforated voltage-clamp recordings, we assessed the reversal potential of GABAA receptor-mediated currents (EGABA) induced by brief focal applications of isoguvacine in the presence of the NKCC1 blocker bumetanide (10 µM), to exclude cross regulation between the 2 co-transporters. We found that leptin treatment had no effect on EGABA in immature neurons (EGABA = −61 ± 1 mV in control (19 neurons) and −61 ± 2 mV in leptin-treated (19 neurons) cultures, 3 cultures for both, Figure 2B), but induced a depolarizing shift of isoguvacine currents from −99 ± 2 mV in control (21 neurons) to −85 ± 2 mV in leptin-treated (13 neurons) cultures (6 cultures for both, p=0.001, ANOVA followed by a Tukey’s post hoc test, Figure 2A,B). The leptin-induced shift was abolished in neurons transfected with validated specific sh-RNAs (Dhar et al., 2014) to silence the expression of the LepRb (Figure 2B). In neurons transfected with a scramble shRNA, leptin was still able to depolarize EGABA (Figure 2B). Treatment with the selective KCC2 blocker VUO463271 (10 µM) shifted EGABA towards more depolarized values and occluded the effect of leptin (Figure 2B). Leptin also decreased the rate of Cl- extrusion by KCC2 in cultured neurons preloaded with Cl-, an effect mimicked by VUO463271 (Figure 2C,D). The half-recovery time was 194 ± 17 s, 563 ± 143 s and 625 ± 176 s in respectively control (n = 7 neurons), leptin-treated (6 neurons, p=0.018 when compared to control, two-tailed unpaired Student’s t-test) and VUO463271-treated (n = 4 neurons, p=0.79 when compared to leptin-treated, two-tailed unpaired Student’s t-test, Supplementary file 1) cultures. These data therefore show that leptin acts on hippocampal leptin receptor to down regulate KCC2 activity shifting EGABA towards depolarizing values in hippocampal neuronal cultures.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig2-v3.jpg)
 
-**Figure 2.:** (A) I-V relationships for isoguvacine currents in vehicle (control) and leptin-treated (100 nM, 24 hr) hippocampal (15 DIV) cultures. Gramicidin perforated patch clamp recordings. Insets depict the isoguvacine currents. Scale bar, 500 ms, 100 pA. (B) Box plots of EGABA in the indicated conditions. *p<0.05, **p<0.01, ANOVA followed by a Tukey’s post hoc test. (C) Examples of isoguvacine currents (arrow heads) recorded at −80 and −40 mV before (t=-60 sec) and after (t = +20 and +420 s) neuronal chloride loading in control neuronal culture (15 DIV). Gramicidin perforated patch clamp recordings. Scale bar, 100 pA, 40 mV, 1 s. (D) Summary plots of normalized EGABA recovery after neuronal chloride loading in the indicated conditions. Mean ± SEM. In B and D, the number of cells recorded and number of cultures used are indicated in parenthesis.10.7554/eLife.36726.009Figure 2—source data 1.
+**Figure 2.:** (A) I-V relationships for isoguvacine currents in vehicle (control) and leptin-treated (100 nM, 24 hr) hippocampal (15 DIV) cultures. Gramicidin perforated patch clamp recordings. Insets depict the isoguvacine currents. Scale bar, 500 ms, 100 pA. (B) Box plots of EGABA in the indicated conditions. *p<0.05, **p<0.01, ANOVA followed by a Tukey’s post hoc test. (C) Examples of isoguvacine currents (arrow heads) recorded at −80 and −40 mV before (t=-60 sec) and after (t = +20 and +420 s) neuronal chloride loading in control neuronal culture (15 DIV). Gramicidin perforated patch clamp recordings. Scale bar, 100 pA, 40 mV, 1 s. (D) Summary plots of normalized EGABA recovery after neuronal chloride loading in the indicated conditions. Mean ± SEM. In B and D, the number of cells recorded and number of cultures used are indicated in parenthesis.
 
 We next asked whether leptin treatment altered KCC2 and NKCC1 expression. Western blotting revealed that the expression of the two chloride co-transporters was decreased in leptin-treated cultures (−85 ± 0.8 and −66 ± 0.6% respectively, 5 cultures for both, p=2.01E-6 and 0.0008 respectively, two-tailed unpaired Student’s t-test, Figure 3D). However, the ratio of the KCC2/NKCC1 protein was reduced following leptin treatment (from 1.05 ± 0.19 to 0.49 ± 0.07, p=0.02, two-tailed unpaired Student’s t-test, Figure 3D). Immuno-labeling confirmed that KCC2 protein was decreased in leptin-treated cultures (Figure 1—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig3-v3.jpg)
 
-**Figure 3.:** (A) Representative images illustrating total, membrane and internalized pools of KCC2 with external tag (KCC2-pHext) in vehicle and leptin-treated (100 mM, 24 hr) cultured hippocampal neurons expressing a scramble Sh-RNA (Sh-Sbl). Neurons expressing KCC2 with internal tag (KCC2-pHint) were proceeded in parallel experiments to ensure that immunocytochemistry on living neurons does not permeabilized the membrane. Scale bars 20 μm and 1 μm. (B) Box plots of normalized membrane (Fm) and internalized (Fi) fluorescence in vehicle and leptin-treated (+Lep) cultured neurons expressing the indicated constructs. *p<0.05, one way ANOVA followed by a Tukey’s post hoc test. (C) Western blots and quantifications (D and E) of KCC2, NKCC1, KCC2/NKCC1 ratio and the threonine 906, threonine 1007 and serine 940-phosphorylated forms of KCC2 in control and leptin (100 nM, 24 hr)-treated hippocampal neuronal cultures (DIV15, five independent neuronal cultures). ***p<0.001, two-tailed unpaired Student’s t-test. (F) Box plots of EGABA in the indicated conditions. Gramicidin perforated patch clamp recordings were performed on hippocampal neuronal cultures at 15 DIV. **p<0.01, ***p<0.001, one way ANOVA followed by a Tukey’s post hoc test. In B and F, the number of cells recorded and number of cultures used are indicated in parenthesis.10.7554/eLife.36726.011Figure 3—source data 1.
+**Figure 3.:** (A) Representative images illustrating total, membrane and internalized pools of KCC2 with external tag (KCC2-pHext) in vehicle and leptin-treated (100 mM, 24 hr) cultured hippocampal neurons expressing a scramble Sh-RNA (Sh-Sbl). Neurons expressing KCC2 with internal tag (KCC2-pHint) were proceeded in parallel experiments to ensure that immunocytochemistry on living neurons does not permeabilized the membrane. Scale bars 20 μm and 1 μm. (B) Box plots of normalized membrane (Fm) and internalized (Fi) fluorescence in vehicle and leptin-treated (+Lep) cultured neurons expressing the indicated constructs. *p<0.05, one way ANOVA followed by a Tukey’s post hoc test. (C) Western blots and quantifications (D and E) of KCC2, NKCC1, KCC2/NKCC1 ratio and the threonine 906, threonine 1007 and serine 940-phosphorylated forms of KCC2 in control and leptin (100 nM, 24 hr)-treated hippocampal neuronal cultures (DIV15, five independent neuronal cultures). ***p<0.001, two-tailed unpaired Student’s t-test. (F) Box plots of EGABA in the indicated conditions. Gramicidin perforated patch clamp recordings were performed on hippocampal neuronal cultures at 15 DIV. **p<0.01, ***p<0.001, one way ANOVA followed by a Tukey’s post hoc test. In B and F, the number of cells recorded and number of cultures used are indicated in parenthesis.
 
 The total amount of KCC2 protein is not an accurate indicator of its activity since, to extrude Cl-, KCC2 has to localize at the plasma membrane (Medina et al., 2014). We therefore assessed the abundance of KCC2 expressed in different cell compartments of control and leptin-treated cultured hippocampal neurons, using a KCC2 construct tagged in an external loop with a fluorescent protein (KCC2-pHext) (Friedel et al., 2015). Combined with a multistep immuno-labeling protocol, this construct allows to visualize the total amount of KCC2-pHext expressed by neurons (Ft), the amount of KCC2-pHext present at the cell surface (Fm) and the amount of KCC2-pHext internalized (Fi) (Figure 3A). Ft was similar in control and leptin-treated cultured neurons (1.1 ± 0.13 vs 1.3 ± 0.18 a.u., 16 and 19 neurons respectively, 3 cultures, p=0.89, ANOVA followed by a Tukey’s post hoc test, not shown). However, Fm was lower (1 ± 0.16 vs 0.44 ± 0.09 a.u., p=0.0028, ANOVA followed by a Tukey’s post hoc test) and Fi was higher (0.9 ± 0.18 vs 1.7 ± 0.15 a.u., p=0.04, ANOVA followed by a Tukey’s post hoc test) in leptin-treated cultures compared to control (Figure 3A,B). Both effects were abolished when the expression of LepRb was silenced with two different specific sh-RNAs (Dhar et al., 2014) (Figure 3B). One batch of cultures was routinely transfected with KCC2 construct tagged in the intracellular N-terminus with a fluorescent protein as control experiment for cell membrane integrity during live-cell immuno-labelling, (KCC2-pHint, Figure 3A). The multistep immuno-labeling protocol didn’t detect membrane expressed or internalized KCC2-pHint (Figure 3B). Altogether these data show that leptin reduces the expression of KCC2 and its plasma membrane stability in cultured hippocampal neurons.
 
@@ -64,9 +78,21 @@ The membrane expression and transport activity of KCC2 strongly depend on the ph
 
 WNK1 activity is required for KCC2 T906 and T1007 phosphorylation (Inoue et al., 2012; Friedel et al., 2015). To test whether WNK1 is involved in the leptin-induced regulation of chloride homeostasis, we expressed previously validated specific sh-RNA (Friedel et al., 2015) to silence WNK1 expression (sh-WNK) or constitutively active WNK1 mutant (WNK-CA) in hippocampal neuronal cultures and measured EGABA from gramicidin-perforated patch-clamp recordings after 24 hr of vehicle or leptin (100 nM) treatment (Figure 3F). In scramble expressing neurons, leptin treatment led to a depolarizing shift of EGABA from −93 ± 2 mV to −80 ± 3 mV, n = 8 and 20 neurons respectively, p=0.001, one way ANOVA followed by a Tukey’s post hoc test, Figure 3F). Genetic silencing of WNK1 prevented the depolarizing shift of EGABA induced by leptin-treatment (p=0.89 compared to control sh-WNK expressing neurons, one way ANOVA followed by a Tukey’s post hoc test, Figure 3F). In contrast, expressing WNK1-CA produced a depolarizing shift of EGABA (EGABA=-75 ± 3.5 mV, p=0.001, one-way ANOVA followed by a Tukey’s post hoc test when compared to scramble expressing neurons) and occluded the leptin action (p=0.89, one way ANOVA followed by a Tukey’s post hoc test, Figure 3F). Altogether these data suggest that leptin modulates the activity of KCC2 via a WNK1-dependent pathway in cultured hippocampal neurons.
 
-## Maternal obesity and neonatal hyperleptinemia delay the emergence of GABAergic inhibition
+### Maternal obesity and neonatal hyperleptinemia delay the emergence of GABAergic inhibition
 
 Maternal obesity causes excess of leptin in offspring (Valleau and Sullivan, 2014; Tessier et al., 2013). We therefore asked whether maternal obesity may affect the GABA developmental sequence in the offspring. Female mice were fed with normal (ND) or high fat (HFD) diet (Figure 4—figure supplement 1). After 6 weeks, females were mated and maintained under their respective diet during the gestation and lactation period. Pups of HFD-induced obese dams (DIO-pups) showed higher levels of serum leptin compared to offspring of ND dams (ND-pups) (16 ± 1 ng/ml (n = 6) vs 32 ± 4 ng/ml (n = 4) in respectively P10-P15 ND-pups and DIO-pups, p=0.0049, two-tailed unpaired Student’s t-test, not shown). We investigated the effect of bath applied isoguvacine on the firing of CA3 hippocampal slices. We found that the excitatory-to-inhibitory switch of isoguvacine actions was delayed by about one week in DIO-pups compared to ND-pups (Figure 4A,B). Thus, isoguvacine increased the neuronal firing in ND-pups at P5 and decreased it starting from P10. In HFD-pups, isoguvacine increased the firing frequency up to P13. To assess whether hyperleptinemia mimicked the effect of maternal obesity, wt pups were treated with sub-cutaneous injections of recombinant leptin (5 mg/kg, twice a day) from P2 to P10. At P10-11, isoguvacine decreased the neuronal firing of CA3 pyramidal neurons in vehicle-treated mice but not in leptin-treated mice (Figure 4C,D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig4-v3.jpg)
+
+**Figure 4.:** (A) Cell attached recordings of CA3 pyramidal neurons on acute hippocampal slices obtained from pups of normal diet (ND) and diet-induced obese (DIO) dams at P10. (B) Developmental changes of isoguvacine action on spike frequency. Mean +SEM. (C) Cell attached recordings of CA3 pyramidal neurons on acute hippocampal slices obtained from vehicle-treated (sham) and leptin-treated mice at P10. (D) Box plots of isoguvacine action on spike activity. In B and D, number of cells recorded and number of mice used are indicated in parenthesis; #p<0.05 when compared to pre-isoguvacine values, two-tailed paired Student’s t-test and *p<0.05 and **p<0.01 when compared to age matched ND-pups (B and C) or sham-pups (E), two-tailed unpaired Student’s t-test. (E) Representative immuno-blots for hippocampal panKCC2 and β3-tubulin in offspring of DIO and ND dams at P13 and in control (sham) and leptin-treated (Lep) mice at P10. The third lanes (-) illustrate background (empty wells). (F) Normalized panKCC2 immunoreactivity in ND (n = 6 pups) and sham (n = 3 pups), in offspring of DIO (n = 5 pups) and in leptin-treated mice (n = 5 pups). Mean +SEM. *p<0.05, two-tailed unpaired Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental overview. (B) Body weight curves of adult (8 weeks old) female mice fed with normal diet (10% kcal from fat, ND white symbols, n = 4) or a high-fat diet (60% kcal from fat, HFD, n = 12). (C) Average body weight increase after 6 weeks of food supply. *p<0.05, **p<0.01, two-tailed unpaired Student’s t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig4-figsupp2-v3.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/36726/elife-36726-fig4-figsupp3-v3.jpg)
 
 Further, western blot analysis revealed that the expression of KCC2 was decreased in DIO-pups compared to ND-pups (−51 ± 12%, p=0.03, two-tailed unpaired Student’s t-test, Figure 4E,F) and in leptin-treated mice compared to vehicle-treated mice (−65 ± 7%, p=0.03, two-tailed unpaired Student’s t-test, Figure 4E,F). Thus, hyperleptinemia as maternal obesity delays the GABA developmental sequence and down regulates KCC2 expression in offspring.
 
@@ -86,21 +112,255 @@ In conclusion, optimal levels of leptin are critical during development for a ti
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Lepob/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.BKS-Leprdb</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000697</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected DNA construct</td>
+      <td>shLepR 3426</td>
+      <td>PMID:24877561, DOI: 10.1210/me.2013–1332</td>
+      <td></td>
+      <td>Dr. G. Wayman (Washington State University)</td>
+    </tr>
+    <tr>
+      <td>Transfected DNA construct</td>
+      <td>shLepR 3299</td>
+      <td>PMID:24877561, DOI: 10.1210/me.2013–1332</td>
+      <td></td>
+      <td>Dr. G. Wayman (Washington State University)</td>
+    </tr>
+    <tr>
+      <td>Transfected DNA construct</td>
+      <td>WNK shRNA</td>
+      <td>PMID: 26126716, DOI: 10.1126 /scisignal.aaa0354</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected DNA construct</td>
+      <td>WNK-CA</td>
+      <td>PMID: 26126716, DOI: 10.1126 /scisignal.aaa0354</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected DNA construct</td>
+      <td>KCC2-pHluorin</td>
+      <td>PMID: 24928908, DOI: 10.15252 /embr.201438840</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-β3 tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477590, Cat# T8660</td>
+      <td>WB (1:10 000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-KCC2</td>
+      <td>US Biological</td>
+      <td>RRID:AB_2188802, Cat# K0120-07</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-chiken Alexa488</td>
+      <td>Fluoprobes</td>
+      <td>RRID: AB_2686906, Cat# FP-SA5110</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-MAP2</td>
+      <td>Abcam</td>
+      <td>RRID:AB_2138153, Cat# ab5392</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-rabbit Cy3</td>
+      <td>Chemicon</td>
+      <td>RRID:AB_92588, Cat# AP182C</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse Anti-GFP</td>
+      <td>Novus Biologicals</td>
+      <td>RRID:AB_531011, Cat# NB 600–597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NKCC1 total</td>
+      <td>the Division of Signal Transduction Therapy Unit (DSTT) at the University of Dundee</td>
+      <td>dundee (S022D)</td>
+      <td>WB (1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pan KCC2</td>
+      <td></td>
+      <td></td>
+      <td>Dr. C. Rivera (University of Helsinki)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KCC2 Ser940</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP2-29513</td>
+      <td>WB (1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KCC2a phosphoT1007</td>
+      <td>the Division of Signal Transduction Therapy Unit (DSTT) at the University of Dundee</td>
+      <td>dundee (S959C)</td>
+      <td>WB (1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>KCC2a phosphoT906</td>
+      <td>the Division of Signal Transduction Therapy Unit(DSTT) at the University of Dundee</td>
+      <td>dundee (S959C)</td>
+      <td>WB (1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Slc12a2 (NKCC1)</td>
+      <td>Qiagen</td>
+      <td>QT00197785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>Slc 12a5 (KCC2)</td>
+      <td>Qiagen</td>
+      <td>QT00145327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td>GAPDH</td>
+      <td>Qiagen</td>
+      <td>QT001199633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine leptin</td>
+      <td>Tocris,</td>
+      <td>Cat# TO-2985/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse leptin ELISA kit</td>
+      <td>BioVendor R and DR</td>
+      <td>Cat# RD291001200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2,3,4-Tetrahydro-6 -nitro-2,3-dioxo-benzo [f]quinoxaline-7- sulfonamide (NBQX)</td>
+      <td>NIMH Chemical Synthesis and Drug Supply Program, https://nimh-repository.rti.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-2-amino-5- phosphovaleric acid (D-APV)</td>
+      <td>NIMH Chemical Synthesis and Drug Supply Program, https://nimh-repository.rti.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2,3,4-Tetrahydro-6 -nitro-2,3-dioxo-benzo [f]quinoxaline-7- sulfonamide (NBQX)</td>
+      <td>NIMH Chemical Synthesis and Drug Supply Program, https://nimh-repository.rti.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoguvacine</td>
+      <td>Tocris</td>
+      <td>Cat# 0235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VU0463271</td>
+      <td>Tocris</td>
+      <td>Cat# 4719</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical  compound, drug</td>
+      <td>Bumetanide</td>
+      <td>Sigma</td>
+      <td>Cat# B3023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Synaptosoft, http://www.synaptosoft.com/MiniAnalysis/DownloadDemo.html</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were carried out in accordance with the European Union Directive of 22 September (2010/63/EU). Experiments were performed on both male and female postnatal day (P) 4 and 5 Wistar rats and P1 to P20 C57BL/6 transgenic mice lacking leptin (ob/ob) or leptin receptor (db/db) expression (purchased from Charles River Laboratory, Italy). Control experiments were performed on wild type (wt) littermates. Animals were housed in a temperature-controlled environment with a 12 light/dark cycle and free access to food and water. Mice were genotyped following the Jackson Laboratory genotyping protocol (strains B6.Cg-Lepob/J, ID 000632 and B6.BKS-Leprdb, ID 000697). For each experiment, tissues from littermate wt and KO mice were prepared and the persons assessing and quantifying the outcomes were blinded to the genotype of the mice.
 
 To assess the effect of maternal obesity, 8 weeks old C57BL/6 females were fed with a high-fat diet (HFD, 60% kcal from fat, D12492, Research Diet) or a normal diet (ND, 10% kcal from fat, D12450B, Research Diet) during 6 weeks at the end of which they were weighed and mated. All females were maintained during gestation and lactation on the same diet received before.
 
-## Leptin injection
+### Leptin injection
 
 Recombinant murine leptin was reconstituted in PBS buffer pH 7.4, and injected (5 mg/kg) sub-cutaneous in wt and ob/ob pups twice a day at 9–10 hr a.m and 5–6 h p.m. Control received same volume injections of vehicle, pH 7.4.
 
-## Leptin immunoassay
+### Leptin immunoassay
 
 The plasma samples were centrifuged (10.000 rpm, 10 min, 4°C) immediately after collection of arteriovenous blood samples obtained from 0 to 20 days old wt and db/db mice at 10–11 hr a.m. Plasma samples from leptin-treated mice (ob/ob and wt mice) were obtained 30 min to 1 hr after the last sub-cutaneous injection. Plasma was collected and stored at −80°C. Quantification of endogenous leptin was performed with Mouse Leptin ELISA Kit (BioVendor R and D) in the concentrated solutions following the manufacturer’s protocol. The measured concentration of samples was calculated from the standard curve and expressed as ng/ml.
 
-## Hippocampal slice preparation and electrophysiological recordings
+### Hippocampal slice preparation and electrophysiological recordings
 
 Brains were removed and immersed into ice-cold (2–4°C) artificial cerebrospinal fluid (ACSF) with the following composition (in mM): 126 NaCl, 3.5 KCl, 2 CaCl2, 1.3 MgCl2, 1.2 NaH2PO4, 25 NaHCO3 and 11 glucose, pH 7.4 equilibrated with 95% O2 and 5% CO2. Hippocampal slices (600 µm thick) were cut with a McIlwain tissue chopper (Campden Instruments Ltd.) and kept in ACSF at room temperature (25°C) for at least one hour before recording. Slices were then transferred to a submerged recording chamber perfused with oxygenated (95% O2 and 5% CO2) ACSF (3 ml/min) at 34°C.
 
@@ -108,19 +368,19 @@ EGABA measurement: Perforated patch-clamp recordings were made from CA3 pyramida
 
 Isoguvacine effect on neuronal firing: Loose cell attached patch clamp recordings were performed from CA3 pyramidal neurons using an axopatch 200B (Axon Instrument) with glass electrodes (4–7 MΩ) filled with KCl solution containing 150 mM KCl and 10 mM HEPES, pH adjusted to 7.2 with Tris-OH. After a baseline period of at least 10 min in the presence of NBQX (5 µM) and D-APV (40 µM), isoguvacine (10 µM) was bath applied for 2 min. The effect of isoguvacine was quantified as the mean frequency of action potential following application of isoguvacine (4–8 min) versus baseline frequency (−10–0 min). Synaptic activity was recorded with Axoscope software version 8.1 (Axon Instruments) and analyzed offline with Mini Analysis Program version 6.0 (Synaptosoft).
 
-## Western blotting
+### Western blotting
 
 Whole hippocampi were obtained from P5-6 mice as described above. Hippocampi were homogenized in RIPA buffer (150 mM NaCl, 1% Triton X-100, 0.1% SDS, 50 mM Tris HCl, pH 8, containing proteinases and phosphatases inhibitors (Complete Mini, Roche). Lysates were centrifuged (1.000 g for 10 min at 4°C) and the supernatant was heated at 90°C for 5 min with Laemmli loading buffer. Loading was 20 µg of proteins as determined using a BCA protein Assay Kit (Thermo Scientific). Proteins were separated in 7–15% SDS-PAGE and electrophoretically transferred to nitrocellulose membranes. Membranes were blocked with 5% bovine serum albumin (BSA) in TBS 0.1% Tween 20 (TBST) for 2 hr at RT, then incubated with primary antibodies diluted in TBST containing 3% BSA overnight at 4°C or 2 hr at RT. Blots were probed with antibody against KCC2 (1:2000; rabbit, US Biological) and tubulin (1:10.000; ß-tubulin, mouse, Sigma). After washing with TBST, membranes were incubated with HRP-conjugated secondary antibodies diluted in TBST containing 3% BSA for 60 min, washed with TBST, and then developed using the G:BOX gel imaging system (Syngene). Expression levels were estimated by ImageJ software.
 
-## Real-time qRT-PCR
+### Real-time qRT-PCR
 
 Whole hippocampi were obtained from P6 mice as described above. RNA was isolated and quantified by reading the absorbance at 260 nm (NanoPhotometer, IMPLEN) using Mini RNeasy kit (Qiagen), then converted to cDNA using 1 µg RNA and a QuantiTect Reverse Transcription kit (Qiagen) according to manufacturer’s instructions. PCR was carried out with the LightCycler 480 SYBR Green I Master (Roche Applied Science) with 1 µL cDNA using the following oligonucleotides (QuantiTect Primer Assays, Qiagen): NKCC1 (Slc12a2; QT00197785), KCC2 (Slc12a5; QT00145327) and glyceraldehyde-3-phosphate dehydrogenase (GAPDH, QT001199633). Quantitative RT-PCR was performed with a Roche LC480 Light Cycler (Roche Applied Science) following the manufacturer’s instructions. Relative mRNA values were calculated using the LC480 software and GAPDH as the housekeeping gene. PCR was performed in replicate of 3.
 
-## Immuno-staining
+### Immuno-staining
 
 Brains were removed from P6 mice and fixed overnight at 4°C in 4% paraformaldehyde (PFA). Brains were rinsed in phosphate buffer saline (PBS, 0.1M) and coronal sections (70 µM thick) were obtained using a vibratome (Microm HVM 650V). Section were incubated first for 1 hr in PBS with 1% bovine serum albumin (BSA) and 0.3% Triton X-100, then overnight at 4°C with a rabbit anti-panKCC2 primary antibody (1:4000; non commercial, gift from Dr. C. Rivera). Sections were rinsed in PBS and incubated for 2 hr with an Alexa Fluor 488 donkey anti-rabbit secondary antibody (1:1000, FluoProbes). Sections were counterstained for Nissl bodies, rinsed in PBS and mounted on microscope slides using Vectashield mounting medium (Vector). Immuno-reactivity was visualized using a laser scanning confocal microscope (LSM 510 Meta, Zeiss) with a 20X air objective and a 63X oil immersion objective. Optical sections were digitized (1024 × 1024 pixels) and processed using ImageJ software (National Institutes of Health, http://rsb.info.nih.gov/ij/). Analysis of the intensity of the distribution of KCC2 fluorescence was performed at high magnification (×63 objective) using the Image J program. The same straight line length (3 µm) was applied from the nucleus to the external cell compartment. The Plot profile values were analyzed and we normalized the fluorescence intensity to the highest intensity of the control condition. The intensity of KCC2 staining in neuronal cells was expressed as the mean ratio of KCC2/Neurotracer staining intensity.
 
-## Primary cultures, transfection of rat hippocampal neurons, electrophysiological recordings, live cell immuno-labelling, immuno-staining and immunoprecipitation with phosphorylation site–specific antibodies
+### Primary cultures, transfection of rat hippocampal neurons, electrophysiological recordings, live cell immuno-labelling, immuno-staining and immunoprecipitation with phosphorylation site–specific antibodies
 
 Hippocampi from 18-day-old rat embryos were dissected and dissociated using trypsin (0.05%) and plated at a density of 70,000 cells cm−2 in minimal essential medium (MEM) supplemented with 10% Nu-Serum (BD Biosciences), 0.45% glucose, 1 mM sodium pyruvate, 2 mM glutamine, and penicillin-streptomycin (10 IU ml−1) as previously described (He et al., 2014). On days 7, 10, and 13 of culture incubation (DIV, days in vitro), half of the medium was changed to MEM with 2% B27 supplement (Invitrogen). For electrophysiology neuronal cultures were plated on coverslips placed in 35 mm culture dishes. Twenty-four hours before plating, dishes with coverslips were coated with polyethylenimine (5 mg/ml).
 
@@ -142,10 +402,10 @@ Cell lysates (15 mg) in SDS sample buffer were subjected to electrophoresis on p
 
 Antibodies used for western blots were raised in sheep and affinity-purified on the appropriate antigen by the Division of Signal Transduction Therapy Unit (DSTT) at the University of Dundee; other antibodies were purchased. NKCC1 total (S022D, first bleed, raised against residues 1–288 of human NKCC1); KCC2a phosphoT906 (S959C, first bleed; raised against residues 975–989 of human KCC3a phosphorylated at T991, SAYTYER(T)LMMEQRSRR); KCC2a phosphoT1007 (S961C, first bleed; raised against residues 1032–1046 or 1041–1055 of human KCC3a phosphorylated at T1048). KCC2 Ser940 antibody (NBP2-29513, Novus Biologicals). KCC2 total antibody (S700C, first bleed; raised against residues 1–119 of human KCC2A); The anti-β-Tubulin III (neuronal) antibody (T8578) was purchased from Sigma-Aldrich. Secondary antibodies coupled to horseradish peroxidase used for immunoblotting were obtained from Pierce. IgG used in control immunoprecipitation experiments was affinity-purified from pre-immune serum using Protein G-Sepharose.
 
-## Reagents
+### Reagents
 
 The following reagents were purchased from the indicated sources: 1,2,3,4-Tetrahydro-6-nitro-2,3-dioxo-benzo[f]quinoxaline-7-sulfonamide (NBQX) and D-2-amino-5-phosphovaleric acid (D-APV) from the Molecular, Cellular, and Genomic Neuroscience Research Branch (MCGNRB) of the National Institute of Mental Health (NIMH, Bethesda, MD, USA). Leptin, Isoguvacine and VU0463271 from Tocris Cookson (Bristol, UK). Bumetanide from Sigma (St Louis, MO, USA).
 
-## Statistics
+### Statistics
 
 No statistical methods were used to predetermine sample sizes, but our sample sizes correspond to those reported in previous publications (Tyzio et al., 2006; Dhar et al., 2014; Friedel et al., 2015). To ensure the consistency and reproducibility of our results, we conducted repeated trials in different cell cultures, acute brain slice and hippocampi prepared from at least three different animals for each experimental condition. In this study, the persons performing experiments and analyzing the data were blinded to the genotype of the mice. These include electrophysiological recordings on acute slices, western blot, and PCR. The one way ANOVA followed by a Tukey’s post hoc test was used for multiple comparisons between experimental conditions. A two-tailed unpaired Student’s t-test was used to analyze difference between two individual groups. A two-tailed paired Student’s t-test was used to analyze differences within one group across conditions, that is frequency of action potential before and after isoguvacine. All data are expressed as Mean ±standard error to the mean (S.E.M.). Data are judged significantly different when p<0.05. Statistical information is provided in the figures, figure legends and text.

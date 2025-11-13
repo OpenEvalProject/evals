@@ -9,9 +9,9 @@
 ### Affiliations
 
 1. Neuro-Electronics Research Flanders Leuven Belgium
-2. https://ror.org/03xrhmk39 Vlaams Instituut voor Biotechnologie Leuven Belgium
-3. https://ror.org/02kcbn207 Interuniversity Microelectronics Centre Leuven Belgium
-4. https://ror.org/05f950310 Department of Neurosciences, KU Leuven Leuven Belgium
+2. Vlaams Instituut voor Biotechnologie Leuven Belgium ([ROR:03xrhmk39](https://ror.org/03xrhmk39))
+3. Interuniversity Microelectronics Centre Leuven Belgium ([ROR:02kcbn207](https://ror.org/02kcbn207))
+4. Department of Neurosciences, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -33,11 +33,11 @@ In this study, we report on the stroke induction and the alteration of somatosen
 
 ## Results
 
-## Animals
+### Animals
 
 Report on animal use, experimentation, and exclusion criteria can be found in Supplementary file 1. Rat #1 was excluded after the control session as the imaging window was too anterior to capture both cortical and thalamic responses. Rat #2 was excluded as hemodynamic responses were inconsistent during baseline (pre-stroke) period. Rat #9 showed early post-stroke reperfusion and was excluded from stroke analysis, the control session (pre-stroke) from Rat #9 was analyzed. All imaging sessions started at approximately 8 am, aligning closely with the end of their active phase.
 
-## Real-time imaging of stroke induction in awake rats
+### Real-time imaging of stroke induction in awake rats
 
 We first developed a dedicated procedure for real-time imaging of stroke induction and associated evoked functional deficits in awake head-fixed rats (Figure 1A). Each rat was subjected to two cranial windows accessing independently the distal branch of the left MCA (Figure 1B, Left) and the selected brain regions to image (Figure 1B, Right). The latter was performed between bregma –2 and –4 mm allowing for jointly monitoring the bilateral thalamocortical circuits of the somatosensory whisker-to-barrel pathway, including the ventroposterior medial nucleus of the thalamus (VPM) and the primary somatosensory barrel-field cortex (S1BF). Moreover, the selected coronal cross-section includes the posterior nucleus of the thalamus (Po), the reticular nucleus of the thalamus, and the ventral part of the zona incerta are known for relaying information related to whiskers (Adibi, 2019; Bosman et al., 2011), and also direct efferent projections from the S1BF to other cortical and subcortical regions (Zakiewicz et al., 2014). Prior to imaging sessions, rats were extensively trained to accept comfortable restraints in the experimental apparatus (Figure 1C), suitable for fUS recording of brain functions and stroke induction under awake conditions. After data acquisition, the coronal cross-section was registered and segmented on a custom-developed digital rat atlas (Brunner et al., 2022a) to provide a dynamic view of the changes in perfusion induced either by the stroke or evoked activity.
 
@@ -47,9 +47,39 @@ We first developed a dedicated procedure for real-time imaging of stroke inducti
 
 To overcome the limitations of conventional stroke models, we occluded the distal branch of the MCA by the mean of a chemo-thrombotic ferric chloride solution (FeCl3) (Karatas et al., 2011; Syeara et al., 2020) while performing fUS imaging in awake rats (Figure 2A). It should be mentioned that the rats did not show any obvious signs of pain or discomfort (e.g. vocalization, aggressiveness) during the restrain period and occlusion procedure. The MCA occlusion (MCAo) was captured live with fUS and confirmed by the large drop of signal, i.e., ischemia, localized in the cortex of the left hemisphere (Figure 2B and C, Video 1 and Figure 2—figure supplement 1) as shown with µDoppler image taken 3 hr and 5d after the stroke onset (dashed outline, Figure 2B, Top row). Bmode images accounting for the brain tissue echogenicity remain unchanged early after stroke onset (3 hr) while showing focal hyper-echogenicity (dashed outline, Figure 2B, Bottom row) lately after stroke onset (5d) as a marker of focal lesion (Gómez-de Frutos et al., 2021). The stroke-induced hemodynamic changes have been continuously recorded for up to 3 hr after stroke onset, registered and segmented into 69 regions (Figure 2—figure supplement 1). We first extracted the average change in rCBV (∆rCBV in %) in the S1BF cortex of the left hemisphere (blue region, Figure 2B) and detected an abrupt drop of rCBV down to ~40% of the baseline level after the occlusion of the MCA, followed by a progressive decrease of the rCBV to 30% of baseline level 3 hr after the stroke onset (Figure 2C and Video 1). Second, we extracted the average rCBV change from a cortical region supplied by the anterior cerebral artery directly after the MCAo. The signal extracted from the retrosplenial granular cortex (RSGc; purple and black regions in Figure 2B) shows successive and transient increases of signal. It characterizes hemodynamic events associated with spreading depolarizations (SDs) in the left hemisphere (in purple; Figure 2D and Video 1) while resulting in a slight and stable oligemia in the right hemisphere (in black; Figure 2D and Figure 2—figure supplement 1). SD events were observed in the peri-ischemic territory of all rats subjected to MCAo and occurred in an ostensibly random fashion (Figure 2E); however, hemodynamic events associated with SDs showed a similar bell shape and time-course across animals (Figure 2F). On average, we detected five SD events per hour per rat. Finally, we stained brain slices 24 hr after MCAo and confirmed that FeCl3-induced ischemia turned into tissue infarction (red delineation; Figure 2G).
 
-## Stroke-induced alterations of the thalamocortical functions
+![Figure 2.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig2-v1.jpg)
+
+**Figure 2.:** (A) Front view representation of functional ultrasound (fUS) imaging during live chemo-thrombosis of the left middle cerebral artery (MCA) with FeCl3 in awake head-fixed rats. (B) Set of typical coronal µDoppler images of the brain microvasculature (top row) and morphological Bmode images (bottom row) before stroke (left), 3 hr (middle), and 5d after stroke onset (right) from the same animal. µDoppler images (top left) were registered and segmented based on a digital version of the rat brain atlas (white outlines). Colored outlines (cyan, purple, and black) delineate regions of interest plotted in (C) and (D). The white dotted region of interest highlights the ischemia in µDoppler images (Top row) and tissue hyper-echogenicity in Bmode (Bottom row). (C) Temporal plot of the average signal (∆rCBV (%), mean ± 95% CI, n=5) in the barrel-field primary somatosensory cortex (S1BF, cyan) from the left hemisphere, affected by the MCA occlusion (MCAo). (D) Temporal plots of the average signal (∆rCBV (%)) in the retrosplenial granular cortex (RSGc) from the affected (purple) and non-affected hemisphere (black) from the same animal. (E) Occurrence of spreading depolarizations after MCAo. Each horizontal line represents one rat; each triangle marker depicts the occurrence of one spreading depolarization. (F) Temporal plots of the average signal change (∆rCBV (%), mean ± 95% CI, respectively black line and gray band) of hemodynamic events associated with spreading depolarizations (centered on the peak) for each rat (#1–5). (G) Typical rat brain cross-sections stained by cresyl violet to evaluate the tissue infarction at 24 hr after FeCl3-induction occlusion of MCA. The infarcted territory is delineated in red. Scale bars: 1 mm. D: Dorsal; L: left; R: right.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Regions are organized by main anatomical structures (see Supplementary file 2). SDs stands for hemodynamic events associated with spreading depolarizations.
+
+![Video 1.](https://cdn.elifesciences.org/articles/88919/elife-88919-video1.mp4.jpg)
+
+**Video 1.:** Raw images.
+
+### Stroke-induced alterations of the thalamocortical functions
 
 One hour before and during 3 hr after the occlusion of the MCA, rats received mechanical stimulation of the whisker alternately delivered to the left and right pad using motorized combs (5 Hz sinusoidal deflection, 20° amplitude, 5 s duration; Figure 3A) to capture the spatiotemporal dynamics of the functional circuit. Before stroke, the sensory-evoked stimulations elicited a robust and statistically significant functional response (z-score >1.6, see Material and methods) for both left and right stimulation (orange and green, respectively; z-score maps; Pre-stroke panel, Figure 3B and Video 2) with the activity spatially confined in the contralateral dorsal part of the VPM and S1BF. The temporal analysis of the somatosensory evoked responses in the contralateral hemisphere confirmed that VPM, Po, and S1BF regions were significantly activated and for both left and right stimuli (****p<0.0001, ***p<0.001 and ****p<0.0001, respectively; Left panel, Figure 3C). We also detected significant increase of activity in S2, AuD, Ect (****p<0.0001) and PRh (***p<0.001) cortices and VPL nucleus (**p<0.01; the list of acronyms is provided in Supplementary file 2), brain regions receiving direct efferent projections from the S1BF (Zakiewicz et al., 2014; Fabri and Burton, 1991; Frostig et al., 2008), VPM or Po nuclei (Viaene et al., 2011; El-Boustani et al., 2020; Landisman and Connors, 2007). It is worth noted that no habituation or sensitization due to the repetitiveness of whiskers stimulation was observed in cortical and subcortical regions over the pre-stroke sessions (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig3-v1.jpg)
+
+**Figure 3.:** (A) Front view representation of functional ultrasound (fUS) imaging during repetitive stimulation of the left (orange) or right whisker pad (green) with a mechanical comb in awake head-fixed rats. Whisker stimulations were delivered alternately between left and right whisker pads before and early after MCA occlusion (MCAo). Each rat receives 45 stimuli per whisker pad each hour of imaging. (B) Average activity maps (z-score) from one rat depicting evoked functional responses to either left (orange) or right whisker pads stimulation (green) registered with a digital version of the rat Paxinos atlas (white outlines) and overlaid with the corresponding coronal µDoppler image, before (left; Pre-stroke, average of 45 trials) and after stroke induction in the left hemisphere (right; Post-stroke, average of 125 trials). (C) Region-time traces of the average hemodynamic changes (∆rCBV (%)) in response to right (green) or left whisker stimulation (orange) extracted from the contralateral hemisphere (left and right, respectively) before (left; Pre-stroke, n=5, 45 trials/rat) and after stroke induction in the left hemisphere (right; Post-stroke, n=5, 135 trials/rat). Brain regions are ordered by major anatomical structures (see Supplementary file 2). The vertical line represents the stimulus start. S1BF, S2, AuD, VPM, VPL, and Po regions are brain regions significantly activated (all pvalue <0.01; GLM followed by t-test). A larger version of panel C is provided in Figure 3—figure supplement 2. (D) Left, Average response curves from the S1BF, the VPM, and Po regions before (Pre-stroke, black, n=5, 45 trials/rat), and from first to third hour after stroke induction (0–1 hr, 1–2 hr, 2–3 hr Post-stroke, orange and green, n=5, 45 trials/hr/rat). Data are mean ± 95% CI. The vertical bar represents the whisker stimulus. Right, Statistical comparison of the area under the curve (AUC) between pre-stroke and post-stroke response curves for S1BF, VPM, and Po regions (Non-parametric Kruskal-Wallis test corrected with Dunn’s test for multiple comparisons; ns: non-significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. See also Figure 3—figure supplement 3). Scale bars: 1 mm. D: Dorsal; L: left; R: right; Ctx: Cortex; Hpc: Hippocampus; Th: Thalamus; CPu: Caudate Putamen; HTh: Hypothalamus; S1BF: barrel-field primary somatosensory cortex; S2: Secondary somatosensory cortex; AuD: Dorsal auditory cortex; VPM: Ventral posteromedial nucleus of the thalamus; VPL: Ventral postero-lateral nucleus of the thalamus; Po: Posterior nucleus of the thalamus.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The corresponding individual trials presented below confirmed the stability across the recording. Vertical gray bar, the period of whisker stimulation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Each dot represents an individual trial, each color depicts a rat.Bottom Panel – Matrix comparing AUC from S1BF, VPM, and Po for right (green - top right diagonal) or left stimulation (orange - bottom left diagonal) at Pre-Stroke, 0–1 hr Post-stroke, 1–2 hr Post-Stroke, and 2–3 hr Post-Stroke timepoints. AUC were compared and analyzed using a non-parametric Kruskal-Wallis test corrected for multiple comparison using a Dunn’s test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/88919/elife-88919-fig3-figsupp4-v1.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/88919/elife-88919-video2.mp4.jpg)
 
 After the stroke, the activity map from the left pad stimulation elicited a similar response pattern as pre-stroke; however, the right pad stimulation showed a total absence of functional response in the S1BF cortex and a significant reduction of the response in the VPM (z-score maps; Post-stroke panel, Figure 3B, and Video 2). Over the 3 hr following stroke onset, functional responses to left whisker stimulation were still detected in the cortical and thalamic regions of the contralateral (right) hemisphere; however, functional responses to right whisker stimulation were only detected in subcortical nuclei (i.e. VPM, Po, VPL), while attenuated when compared with the responses from the pre-stroke period and from the other hemisphere (Figure 3B and C). Furthermore, no responses were detected at the cortical level (S1BF, S2, and AuD; right panel, Figure 3B and C). A larger version of Figure 3C is provided in Figure 3—figure supplement 2.
 
@@ -61,7 +91,7 @@ Regarding the right hemisphere (i.e. contralesional), the functional responses o
 
 Activity maps, region-time traces of the 69 brain regions, mean and individual time-course for all trials (left and right stimuli - including ipsi and contralateral traces), imaging timepoints (Control, Pre-Stroke, Post-Stroke) for all the rats included in this work can be found in Figure 3—figure supplement 4.
 
-## Delayed alteration of the somatosensory thalamocortical pathway
+### Delayed alteration of the somatosensory thalamocortical pathway
 
 A secondary objective of this work was to evaluate the fUS ability to identify potential delayed functional alteration within a few days after the initial injury. Two animals were imaged five days after the MCAo following the same experimental, stimulation, imaging, and processing conditions as for the early post-stroke session. Given that only two rats were imaged at this timepoint, the findings presented here should be viewed as preliminary or proof of concept. Additional data will be essential for validation. Consequently, no statistical analysis was conducted for this segment of the study. Activity maps, region-time traces, and individual trials for both right and left stimulation (including ipsi- and contralateral) for each rat are provided in Figure 3—figure supplements 2–3.
 
@@ -93,15 +123,15 @@ Beyond studying the whisker-to-barrel somatosensory circuit, the brain-wide capa
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The experimental procedures were approved by the Committee on Animal Care of the Katholieke Universiteit Leuven (ECD P172/2018), following the national guidelines on the use of laboratory animals and the European Union Directive for animal experiments (2010/63/EU). The manuscript was written according to the ARRIVE Essential 10 checklist for reporting animal experiments (Percie du Sert et al., 2020). Adult male Sprague-Dawley rats weighed between 250–400 g (n=9; Janvier Labs, France) were used. During habituation rats were housed two per cage and kept in a 12 hr dark/light cycle at 23 °C with ad libitum access to water and controlled access to food (15 g/rat/day). After the initial surgical procedure, rats were housed alone. See Supplementary file 1 reporting on animal use, experimentation, inclusion/exclusion criteria.
 
-## Body restraint and head fixation
+### Body restraint and head fixation
 
 The body restraint and head fixation procedures are adapted from published protocols and setups dedicated to brain imaging of awake rats (Martin et al., 2006; Topchiy et al., 2009; Martin et al., 2002). Rats were habituated to the workbench and to be restrained in a sling suit (Lomir Biomedical inc, Canada) by progressively increasing restraining periods from minutes (5 min, 10 min, 30 min) to hours (1 and 3 hr) for one or two weeks. The habituation to head-fixation started by short (5–30 s) and gentle head-fixation of the headpost between fingers. The headpost was then secured between clamps for fixation periods progressively increased following the same procedure as with the sling. For both body restraint and head fixation, the initial struggling and vocalization diminished over sessions. Habituation was completed when the rat remains still and calm over long restraint periods as previously established (Topchiy et al., 2009). Water and food gel (DietGel, ClearH2O, USA) were provided during all body restraint and head-fixation habituation sessions. Once habituated, the cranial window for imaging was performed as described below (Figure 1A–C).
 
-## Surgical procedures
+### Surgical procedures
 
 Cranial window over the MCA: Rats were anesthetized with isoflurane (5% for induction, 2% for maintenance; Iso-Vet, 1000 mg/g, Dechra, Belgium) and fixed in a stereotaxic frame. The depth of anesthesia was confirmed by the absence of reflex during paw pinching. After scalp removal and tissue cleaning, a 1 mm (Fluri et al., 2015) cranial window was performed at coordinates bregma +2 mm and lateral 7 mm, over the left distal branch of the MCA as reported in Brunner et al., 2018. A silicone plug (Body Double-Fast Set, Smooth-on, Inc, USA) was used to protect the window and ease the access to the MCA before the occlusion procedure. Then, a stainless-steel custom-designed headpost was fixed with bone screws (19010–00, FST, Germany) and dental cement (Super-Bond C&B, Sun Medical Co., Japan) to the animal skull (Figure 1B, left) as previously described by Brunner et al., 2020.
 
@@ -109,50 +139,50 @@ Cranial window for imaging: After recovery and habituation to head-fixation, a s
 
 For both cranial windows, the dura mater was kept intact. After each surgery, rats were placed in their home cage and monitored until they woke up. Rats were medicated with analgesic (Buprenorphine, 0.1 mg/kg, Ceva, France), anti-inflammatory (Dexamethasone, 0.5 mg/kg, Dechra, Belgium) drugs injected directly after the surgery, at 24 hr and 48 hr after the surgery. An antibiotic (Emdotrim, 5%, Ecuphar, The Netherland) was added to the water bottle.
 
-## Positioning
+### Positioning
 
 The mechanical fixation of the head-post ensures an easy and repeatable positioning of the ultrasound probes across imaging sessions. The ultrasound probe is indeed fixed to a micromanipulator enabling light adjustments. To find the plane of interest (containing both S1BF and thalamic relays: bregma - 3.4 mm), we used brain landmarks (e.g. surface of the brain, hippocampus, superior sagittal sinus, large vessels). Note that as the headpost was carefully placed in the same position relative to skull landmarks (bregma and lambda), the position of the region of interest was minimal across animals.
 
-## Chemo-thrombotic stroke induction with ferric chloride solution
+### Chemo-thrombotic stroke induction with ferric chloride solution
 
 Once the body were restrained and head-fixed the silicone plug covering the MCA window was removed allowing the application of a drop of 20% ferric chloride solution (FeCl3; Sigma Aldrich, USA) to the MCA (Karatas et al., 2011; Syeara et al., 2020; Figure 2). Once the ischemia was visually detected using the real-time display of µDoppler images, the solution was washed out with saline to stop the reaction.
 
-## Whisker stimulation paradigm
+### Whisker stimulation paradigm
 
 Two stimulation combs individually controlled by a stepper motor (RS Components, UK) were used to deliver mechanical 5 Hz sinusoidal deflection of ~20° of amplitude for 5 s, alternatively to left and right whisker pads. For each whisker pad, trials were spaced by a period of 1 min and 20 s without stimulation. Thus, the effective delay between two stimulations delivered to the same whisker pad is 80 s from start to start. The blocks of stimulation were continuously delivered throughout the imaging sessions, time-locked with the fUS acquisition (Figure 3) to allow the subsequent analysis of hemodynamic responses within the fUS time-series.
 
-## Functional ultrasound imaging acquisition
+### Functional ultrasound imaging acquisition
 
 Coronal µDoppler images were acquired using a 15-MHz linear probe composed of 128 piezo-elements spaced by 100 µm (L22-14Vx, Vermon, France) connected to a dedicated ultrasound scanner (Vantage 128, Verasonics, USA) and controlled by a high-performance computing workstation (fUSI-2, AUTC, Estonia). This configuration allowed us to image the brain vasculature with a resolution of 100 μm laterally, 110 μm in depth, and 300 μm in elevation (Brunner et al., 2021). The ultrasound sequence generated by the software is adapted from Macé et al., 2018 and Brunner et al., 2021 Ultrafast images of the brain were generated using five tilted plane-waves (–6°, –3°, +0.5°, +3°, +6°). Each plane wave is repeated six times, and the recorded echoes are averaged to increase the signal-to-noise ration. The five plane-wave images are added to create compound images at a frame rate of 500 Hz. To obtain a single vascular image we acquired a set of 250 compound images in 0.5 s, an extra 0.3 s pause is included between each image to have some processing time to display the images for real-time monitoring of the experiment. The set of 250 compound images has a mixed information of blood and tissue signal. To extract the blood signal, we apply a low pass filter (cut off 15 Hz) and an SVD filter that eliminates 20 singular values. This filter aims to select all the signals from blood moving with an axial velocity higher than ~1 mm/s. To obtain a vascular image we compute the intensity of the blood signal i.e., Power Doppler image. This image is in first approximation proportional to the cerebral blood volume (Macé et al., 2011; Montaldo et al., 2022). Overall, this process enables a continuous acquisition of power Doppler images at a frame rate of 1.25 Hz during several hours. Then, the acquired images are processed with a dedicated GPU architecture, displayed in real-time for data visualization, and stored for subsequent off-line analysis (Brunner et al., 2021).
 
-## fUS data processing and analysis
+### fUS data processing and analysis
 
 The data processing was performed following the procedure described by Brunner et al., 2021.
 
-## Registration to Paxinos rat brain atlas and data segmentation
+#### Registration to Paxinos rat brain atlas and data segmentation
 
-We registered the fUS dataset to a custom digital rat brain atlas used in Brunner et al., 2023, using one coronal plane (bregma –3.4 mm) from the stereotaxic atlas of Paxinos, 2014. The image of the brain vasculature was manually translated and rotated to align with the coronal plane of the reference atlas. For an accurate registration, we used landmarks such as the surface of the brain, hippocampus, superior sagittal sinus, and other large vessels. If needed, the brain volume was scaled to fit the atlas outline. The outcome of this registration procedure is an affine coordinate transformation: r→`=Mr→+a→ , where r→=x,y,z are the original coordinates image of the brain vasculature, M is the rotation and scaling matrix and a→ the translation vector. The dataset was segmented into 69 anatomical regions/hemispheres of the reference atlas (see Supplementary file 2). The hemodynamic signals were averaged in each area. The segmentation and the data processing were performed using an automated MATLAB-based pipeline. The software for data registration and segmentation is available in open-access (Brunner et al., 2021).
+We registered the fUS dataset to a custom digital rat brain atlas used in Brunner et al., 2023, using one coronal plane (bregma –3.4 mm) from the stereotaxic atlas of Paxinos, 2014. The image of the brain vasculature was manually translated and rotated to align with the coronal plane of the reference atlas. For an accurate registration, we used landmarks such as the surface of the brain, hippocampus, superior sagittal sinus, and other large vessels. If needed, the brain volume was scaled to fit the atlas outline. The outcome of this registration procedure is an affine coordinate transformation: $r→^{`}=Mr→+a→$ , where $r→=x,y,z$ are the original coordinates image of the brain vasculature, M is the rotation and scaling matrix and $a→$ the translation vector. The dataset was segmented into 69 anatomical regions/hemispheres of the reference atlas (see Supplementary file 2). The hemodynamic signals were averaged in each area. The segmentation and the data processing were performed using an automated MATLAB-based pipeline. The software for data registration and segmentation is available in open-access (Brunner et al., 2021).
 
-## Relative cerebral blood volume (rCBV)
+#### Relative cerebral blood volume (rCBV)
 
 We used the relative cerebral blood volume (rCBV, expressed in % as compared to baseline) to analyze ischemia, transient hemodynamic events associated with SDs and functional changes. rCBV is defined as the signal in each voxel compared to its average level during the baseline period. After registration and segmentation, the rCBV signal was averaged in each individual regions.
 
-## Analysis of stroke hemodynamics
+#### Analysis of stroke hemodynamics
 
 The extraction of the temporal traces from the ischemic area was performed based on the temporal analysis of the rCBV signal in the primary somatosensory barrel-field cortex (S1BF). The detection of hemodynamic events associated with SDs was performed based on the temporal analysis of the rCBV signal in the retrosplenial granular (RSGc) and dysgranular (RSD) cortices of the left hemisphere (ipsilesional). Hemodynamic events associated with SDs were defined as transient increase of rCBV signal (+25%) detected with a temporal delay of <10 frames (i.e. 8 s) between the two regions of interest, validating both the hyperemia and spreading features of hemodynamic events associated with spreading depolarizations (Brunner et al., 2023; Bere et al., 2014; Ayata and Lauritzen, 2015; Binder et al., 2022). This procedure allowed us to measure the occurrence of hemodynamic events associated with SDs over the recording period. Live recording of ischemia and spreading depolarizations can be visualized in Video 1.
 
-## Activity maps
+#### Activity maps
 
 Pre- and post-stroke recordings are reshaped in 40 s sessions, i.e., 50 frames, centered on the start of the stimulation (at 20 s), and averaged based on the whisker stimulation paradigm (left or right). In each voxel, we compared signals along the recording in a time window before the stimulus onset and a time window after stimulus onset using a two-tailed Wilcoxon rank sum test. We obtained the z-statistics of the test for each voxel, and consequently a z-score for the coronal cross-section. Mean activity maps for left or right whisker stimulation (Figures 3B and 4A) show z-score value calculated using a Fisher’s transform for all voxels across the coronal cross-section. Only voxels with a z-score >1.6 were considered significantly activated (p<0.05 for a one-tailed test).
 
-## Hemodynamic response time-courses
+#### Hemodynamic response time-courses
 
 The relative hemodynamic time course ∆rCBV was computed for each brain regions (after registration and segmentation; Figures 3C–D ,–4B), as the rCBV change compared to baseline at each time point. No additional filtering was used, and no trial was removed from the analysis.
 
-## Statistical analysis
+#### Statistical analysis
 
 Activated brain regions were detected from hemodynamic response time-courses using GLM followed by t-test across animals as proposed in Brunner, Grillet et al., (Brunner et al., 2021). The area under the curve (AUC) from hemodynamic response time-courses was computed for individual trials in S1BF, VPM, and Po regions, for all the periods of the recording and for all rats included in this work. AUC were compared and analyzed using a non-parametric Kruskal-Wallis test corrected for multiple comparison using a Dunn’s test. Tests were performed using GraphPad Prism 10.0.1.
 
-## Histopathology
+### Histopathology
 
 Rats were killed 24 hr after the occlusion for histological analysis of the infarcted tissue. Rats received a lethal injection of pentobarbital (100 mg/kg i.p. Dolethal, Vetoquinol, France). Using a peristaltic pump, they were transcardially perfused with phosphate-buffered saline followed by 4% paraformaldehyde (Sigma-Aldrich, USA). Brains were collected and post-fixed overnight. 50 μm thick coronal brain sections across the MCA territory were sliced on a vibratome (VT1000S, Leica Microsystems, Germany) and analyzed using the cresyl violet (Electron Microscopy Sciences, USA) staining procedure (see Open Lab Book for procedure). Slices were mounted with DPX mounting medium (Sigma-Aldrich, USA) and scanned using a bright-field microscope.

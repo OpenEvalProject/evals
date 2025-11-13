@@ -7,15 +7,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05cf8a891 Department of Genetics, Albert Einstein College of Medicine Bronx United States
-2. https://ror.org/05cf8a891 Department of Developmental and Molecular Biology, Albert Einstein College of Medicine Bronx United States
-3. https://ror.org/05cf8a891 Department of Ophthalmology and Visual Sciences, Albert Einstein College of Medicine Bronx United States
+1. Department of Genetics, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+2. Department of Developmental and Molecular Biology, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+3. Department of Ophthalmology and Visual Sciences, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 
 † Corresponding author
 
 ## Abstract
 
-Many cell fate decisions are determined transcriptionally. Accordingly, some fate specification is prevented by Inhibitor of DNA-binding (Id) proteins that interfere with DNA binding by master regulatory transcription factors. We show that the Drosophila Id protein Extra macrochaetae (Emc) also affects developmental decisions by regulating caspase activity. Emc, which prevents proneural bHLH transcription factors from specifying neural cell fate, also prevents homodimerization of another bHLH protein, Daughterless (Da), and thereby maintains expression of the Death-Associated Inhibitor of Apoptosis ( diap1 ) gene. Accordingly, we found that multiple effects of emc mutations on cell growth and on eye development were all caused by activation of caspases. These effects included acceleration of the morphogenetic furrow, failure of R7 photoreceptor cell specification, and delayed differentiation of non-neuronal cone cells. Within emc mutant clones, Notch signaling was elevated in the morphogenetic furrow, increasing morphogenetic furrow speed. This was associated with caspase-dependent increase in levels of Delta protein, the transmembrane ligand for Notch. Posterior to the morphogenetic furrow, elevated Delta cis-inhibited Notch signaling that was required for R7 specification and cone cell differentiation. Growth inhibition of emc mutant clones in wing imaginal discs also depended on caspases. Thus, emc mutations reveal the importance of restraining caspase activity even in non-apoptotic cells to prevent abnormal development, in the Drosophila eye through effects on Notch signaling.
+Many cell fate decisions are determined transcriptionally. Accordingly, some fate specification is prevented by Inhibitor of DNA-binding (Id) proteins that interfere with DNA binding by master regulatory transcription factors. We show that the Drosophila Id protein Extra macrochaetae (Emc) also affects developmental decisions by regulating caspase activity. Emc, which prevents proneural bHLH transcription factors from specifying neural cell fate, also prevents homodimerization of another bHLH protein, Daughterless (Da), and thereby maintains expression of the Death-Associated Inhibitor of Apoptosis (diap1) gene. Accordingly, we found that multiple effects of emc mutations on cell growth and on eye development were all caused by activation of caspases. These effects included acceleration of the morphogenetic furrow, failure of R7 photoreceptor cell specification, and delayed differentiation of non-neuronal cone cells. Within emc mutant clones, Notch signaling was elevated in the morphogenetic furrow, increasing morphogenetic furrow speed. This was associated with caspase-dependent increase in levels of Delta protein, the transmembrane ligand for Notch. Posterior to the morphogenetic furrow, elevated Delta cis-inhibited Notch signaling that was required for R7 specification and cone cell differentiation. Growth inhibition of emc mutant clones in wing imaginal discs also depended on caspases. Thus, emc mutations reveal the importance of restraining caspase activity even in non-apoptotic cells to prevent abnormal development, in the Drosophila eye through effects on Notch signaling.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Since emc mutations elevate ex expression (Wang and Baker, 2015b), we wondered w
 
 ## Results
 
-## Caspase activity causes growth defects in emc mutants
+### Caspase activity causes growth defects in emc mutants
 
 To determine the contribution of caspases to growth inhibition in emc mutant cells, we used the Flippase (FLP)/FLP Recombinase Target (FRT) system (Xu and Rubin, 1993) to generate clones of emc mutant cells that were unable to activate caspases normally. We achieved this by homozygously deleting the linked reaper (rpr), head involution defective (hid), and grim genes using Df(3L)H99. Rpr, Hid, and Grim proteins promote Diap1 degradation in response to apoptotic stimuli and allow activation of initiator caspases such as dronc to start apoptosis (Yoo et al., 2002). By removing all three pro-apoptotic proteins, Df(3L)H99 affects both apoptotic and non-apoptotic caspase functions in Drosophila (Tapadia and Gautam, 2011; White et al., 1994). Thus, clones of emc Df(3L)H99 mutant cells should be defective for caspase activation. In addition, we also made clones of emc mutant cells also mutated for dronc, which encodes the main initiator caspase in Drosophila that is necessary for most developmental apoptosis (Hawkins et al., 2000; Meier et al., 2000; Quinn et al., 2000). Dronc contributes to non-apoptotic caspase functions as well, so emc dronc mutant cells should also show reduced non-apoptotic and well as apoptotic caspase functions.
 
@@ -39,17 +39,25 @@ In comparison to neutral clones, which grew equivalently to their twin-spot cont
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig1-v1.jpg)
 
-**Figure 1.:** Df(3L)H99 recues growth defect of emc mutant clones.(A–L) Control and mutant clones in eye and wing imaginal disc were induced at the end of first instar and are associated with sibling twin-spot clones marked by two copies of the GFP marker (brighter gray) that serves as internal control for growth. Clones are labeled by the absence of GFP. (M) emc H99 clones induced in the Minute background (N) Quantification of the ratio of clone size to twin-spot measured in wing imaginal discs. Geometrical means ± SEM are shown. After log-transformation of clone/twin-spot ratios to ensure normality, one-way ANOVA rejected the null hypothesis that these results are the same (p = 5.72 × 10−8). The Holm correction for multiple comparison was used to identify significant differences between all pairs of samples. *** denotes highly significant difference from the FRT80 control (p < 0.001), NS denotes no significant difference (p > 0.05). Whereas the clone/twin-spot ratio for emc homozygous clones was significantly different from the FRT80 control (p = 5.72 × 10−6), this was not true for any of the other genotypes (H99, p = 0.79; dronc, p = 0.906; emc H99, p = 0.92; emc dronc, p = 0.345). The clone/twin-spot ratio for emc homozygous clones was also significantly different from that for emc H99 or emc dronc (p = 4.12 × 10−6 and p = 0.0177, respectively), whereas emc H99 and emc dronc did not differ significantly from H99 or dronc clones (p = 1 and p = 0.136, respectively). Source data for (N) are provided in Figure 1—source data 1. Genotypes: (A, C) ywhsF;FRT80/[UbiGFP]FRT80, (B, D) ywhsF;emc, (AP6FRT80/[Ubi-GFP]FRT80E, G) ywhsF;dronc, (i29emcAP6 FRT80/[UbiGFP]FRT80F, H) ywhsF;emc, (AP6 Df(3L)H99 FRT80/[UbiGFP]FRT80I, K) ywhsF;dronc, (i29 FRT80/[UbiGFP]FRT80J, L) ywhsF;;Df(3L)H99FRT80/[UbiGFP]FRT80, (M) ywhsF; emc. AP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80N = 10 for each genotype.Figure 1—source data 1.Figure 1N.
+**Figure 1.:** (A–L) Control and mutant clones in eye and wing imaginal disc were induced at the end of first instar and are associated with sibling twin-spot clones marked by two copies of the GFP marker (brighter gray) that serves as internal control for growth. Clones are labeled by the absence of GFP. (M) emc H99 clones induced in the Minute background (N) Quantification of the ratio of clone size to twin-spot measured in wing imaginal discs. Geometrical means ± SEM are shown. After log-transformation of clone/twin-spot ratios to ensure normality, one-way ANOVA rejected the null hypothesis that these results are the same (p = 5.72 × 10−8). The Holm correction for multiple comparison was used to identify significant differences between all pairs of samples. *** denotes highly significant difference from the FRT80 control (p < 0.001), NS denotes no significant difference (p > 0.05). Whereas the clone/twin-spot ratio for emc homozygous clones was significantly different from the FRT80 control (p = 5.72 × 10−6), this was not true for any of the other genotypes (H99, p = 0.79; dronc, p = 0.906; emc H99, p = 0.92; emc dronc, p = 0.345). The clone/twin-spot ratio for emc homozygous clones was also significantly different from that for emc H99 or emc dronc (p = 4.12 × 10−6 and p = 0.0177, respectively), whereas emc H99 and emc dronc did not differ significantly from H99 or dronc clones (p = 1 and p = 0.136, respectively). Source data for (N) are provided in Figure 1—source data 1. Genotypes: (A, C) ywhsF;FRT80/[UbiGFP]FRT80, (B, D) ywhsF;emcAP6FRT80/[Ubi-GFP]FRT80, (E, G) ywhsF;dronci29emcAP6 FRT80/[UbiGFP]FRT80, (F, H) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP]FRT80, (I, K) ywhsF;dronci29 FRT80/[UbiGFP]FRT80, (J, L) ywhsF;;Df(3L)H99FRT80/[UbiGFP]FRT80, (M) ywhsF; emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 10 for each genotype.
 
 Previous studies of emc phenotypes have often used Minute genetic backgrounds (i.e. heterozygosity for mutations in Rp genes) to retard growth and enhance the size of the emc mutant clones (Bhattacharya and Baker, 2009). When emc Df(3L)H99 clones were induced in the M(3)67C background, the clones took over almost the entire disc, leaving only a few M(3)67C heterozygous cells remaining (Figure 1M). The growth advantage of emc dronc clones was not so marked.
 
 These results indicate that the growth disadvantage of emc mutant imaginal disc clones is mostly attributable to cell death genes. Preventing caspase activation, either by mutating the main initiator caspase, or by preventing Diap1 turnover, partially or completed restored normal growth. Our data did not support a previous suggestion that dronc was required for normal wing disc growth (Verghese et al., 2012).
 
-## Emc regulates furrow progression through non-apoptotic caspase activity
+### Emc regulates furrow progression through non-apoptotic caspase activity
 
 Emc mutations have multiple effects on the eye imaginal disc, although only a few aspects of retinal differentiation depend on proneural bHLH genes. The proneural gene atonal is required, along with da, for the specification of R8 photoreceptor precursors in the morphogenetic furrow that initiate each ommatidial cluster in the larval eye disc (Brown et al., 1996; Jarman et al., 1994). Later, during pupal development, proneural genes of the Achaete-Scute gene Complex (AS-C), along with da, are required for the specification of the interommatidial bristles (Cadigan et al., 2002). All the other cell types develop independently of proneural bHLH genes, and most of them develop independently of da (Brown et al., 1996; Jiménez and Campos-Ortega, 1987).
 
 In emc mutant clones, retinal differentiation begins precociously, associated with more rapid transit of the morphogenetic furrow across the disc (Figure 2A, B, Bhattacharya and Baker, 2011; Bhattacharya and Baker, 2012; Brown et al., 1995). In contrast, we found that 75% of the time, the morphogenetic furrow progressed normally through emc dronc double mutant clones (Figure 2C). Eye discs containing emcDf(3L)H99 double mutant clones always appeared completely normal (Figure 2D). Control dronc and Df(3L)H99 mutant clones that lacked emc mutations also showed normal furrow progression (Figure 2—figure supplement 1A, B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig2-v1.jpg)
+
+**Figure 2.:** In all panels, the differentiating neurons are marked by Elav (in blue), and mutant cells are identiﬁed by the absence of GFP expression (in green). (A) The wave of retinal differentiation from posterior to anterior (right to left), marked here by Senseless expression in R8 photoreceptor cells (red) is normal in FRT80 control clones. (B) emc null clones lacking GFP show acceleration of retinal differentiation illustrated by yellow arrows (premature differentiation can also continue into wild-type regions ahead of such clones). In addition, ectopic neural differentiation also occurs sporadically anterior to the morphogenetic furrow, and unassociated with it (magenta arrows). (C) In contrast, retinal differentiation proceeds at the same pace in emc dronc double mutant clones as in nearby wild-type regions in 75% of the eye discs. (D) emc H99 double mutants show a stronger suppression of the acceleration of retinal differentiation (compare panel B). Genotypes: (A) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;dronci29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80 (n = 12), (D) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 8 for each genotype.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In eye imaginal discs, normal furrow progression was observed in (A) dronc−/− and (B) Df(3L)H99 homozygous clones, indicated by Senseless and Elav staining. Homozygous mutant clones of emc−/− (C) lacking GFP expression have no Emc staining (yellow arrowhead) and higher Da (red arrowhead). At the morphogenetic furrow as shown by yellow arrow, Emc expression goes down and Da goes up. Similar results were observed in (D) dronc−/− emc−/− clones and (E) emc−/− Df(3L) H99−/− clones confirm that these are emc null clones. Genotypes: (A) ywhsF;dronci29FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF; Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80, (C) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (D) ywhsF;dronci29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80, (E) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 4 for each genotype.
 
 In addition, emc mutant clones also exhibit sporadic ectopic differentiation of neurons anterior to the morphogenetic furrow, which do not take photoreceptor cell fate (Figure 2A, B; Bhattacharya and Baker, 2011; Brown et al., 1995). This was likewise absent from emc dronc and emcDf(3L)H99 double mutant clones (Figure 2C, D).
 
@@ -57,23 +65,59 @@ The overall pattern of retinal differentiation revealed by labeling for Senseles
 
 We have previously concluded that diap1 transcription is reduced in emc mutant clones, and in Da-overexpressing cells, due to Yki inhibition downstream of ex (Wang and Baker, 2015b). In eye imaginal discs, Diap1 protein was normally present uniformly (Figure 3A). Diap1 protein levels were cell-autonomously reduced in emc mutant clones posterior to the morphogenetic furrow, compared to emc/+ cells in the same eye discs, and shown and quantified in (Figure 3B, E). A comparable reduction was also seen in emc Df(3L)H99 clones, compared to emc/+ Df(3L)H99/+ cells in the same eye discs (Figure 3C, E). There was also no difference in Diap1 levels between Df(3L)H99 homozygous clones and Df(3L)H99/+ cells in the same eye discs (Figure 3D, E). These data suggest emc affects Diap1 protein levels, whereas rpr, grim, and hid affect Diap1 protein activity. A caveat is that Diap1 levels in mutant clones were not compared directly to wild-type cells, none of which were present in the same eye discs, and that Df(3L)H99 might affect Diap1 protein levels dominantly. Interestingly, we did not detect emc-dependent changes in Diap1 levels in wing discs (Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig3-v1.jpg)
+
+**Figure 3.:** In mosaic eye discs with (A) FRT80 clones, there is no difference in Diap1 levels within and outside the clone. However, both (B) emc mutant clones and (C) emc H99 clones show reduced Diap1 levels posterior to the morphogenetic furrow, compared to the heterozygous background. (D) H99 clones showed similar Diap1 levels, compared to the heterozygous background. (E) Quantification of Diap1 levels in different clone genotypes, compared to the background levels outside the clones. Means ± SEM are shown. Note that our experiments did not generate mosaics of wild-type and Df(3L)H99/+ cells for direct comparison of these genotypes. Statistical significance calculated by two-way ANOVA (****p ≤ 0.0001). Source data for (E) are provided in Figure 3—source data 1. Genotypes: (A) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF; Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 6 for each genotype.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** In wing discs of emc clones (B) we did not detect changes in Diap1 levels in comparison to control clones (A). Genotypes: (A) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Representative images of eye imaginal discs stained for senseless. (A) In GMR-DIAP1 eye disc mutant for emc furrow progression is normal and is marked by Senseless staining. Similarly, in GMR-p35 eye disc mutant for emc also show normal furrow progression (B). Representative images of eye imaginal discs with terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) staining. (A) ywhsF/GMR-DIAP1;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (B) ywhsF/GMR-p35;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80. N = 4 for each genotype.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** In pieEB3 homozygous clones, furrow progression occurs at normal speed marked by Senseless staining in R8 photoreceptors (A). In GMR-p35 eye disc mutant for emc show lack of Dcp1staining (B). In emc mutant clones posterior to morphogenetic furrow show lack of Dcp1 staining (D) in comparison to FRT80 clones (C). Genotypes: (A) ywhsF/+; pieEB3FRT40/FRT40Alz, (B) ywhsF/GMR-p35;;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;;FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF;;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (E) ywhsF;;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 4 for each genotype.
+
 To test the role of Diap1 in the eye directly, diap1 was over-expressed in the posterior eye by transcription under GMR-Gal4 control. This rescued morphogenetic furrow speed to normal in emc clones (Figure 3—figure supplement 2B). We also saw restoration of morphogenetic furrow speed in emc clones that expressed Baculovirus P35 under GMR-Gal4 control (Figure 3—figure supplement 2A). Baculovirus P35 encodes a caspase pseudo-substrate that inhibits all Drosophila caspases except Dronc (Hawkins et al., 2000; Hay et al., 1994; Meier et al., 2000; Xue and Horvitz, 1995). The emc clones expressing p35 also lacked cell death (Figure 3—figure supplement 3B). The restoration of morphogenetic furrow speed by Diap1, a Dronc antagonist, as well as by the caspase inhibitor P35, suggest that the effect of morphogenetic furrow acceleration in emc mutant clones is due to the caspase cascade.
 
 To test whether reduced Diap1 expression promoted apoptosis and thereby accelerated the morphogenetic furrow, we assessed apoptosis levels by terminal deoxynucleotidyl transferase dUTP nick end labeling (TUNEL) of eye discs containing mutant clones. We found almost no cell death posterior to the furrow in emc clones (Figure 3—figure supplement 2D), and cell death in emc clones anterior to the furrow was comparable to controls and less than that of cells surrounding the clones (Figure 3—figure supplement 2C, D). Some cell death is expected outside emc or control clones, as these cells have the M background that is itself associated with an increase in apoptosis (Coelho et al., 2005; Kale et al., 2015; Li and Baker, 2007). Similar to TUNEL, we found no cell death in emc clones posterior the furrow with Dcp1 staining (Figure 3—figure supplement 3D). To test whether apoptosis in the eye disc would be sufficient to promote morphogenetic furrow progression, we generated mosaic clones for a pineapple eye (pie) mutation. These pie mutant cells have an elevated rate of apoptosis in imaginal discs, but not sufficient to prevent pie homozygous clones surviving late into larval and even adult life (Shi et al., 2003). The rate of morphogenetic furrow progression was unaffected in eye discs containing pie clones (Figure 3—figure supplement 3A). Because no excess cell death was detected in emc clones, and cell death was insufficient to accelerate the morphogenetic furrow in otherwise wild-type eye discs, emc clones might be affected by a non-apoptotic caspase activity.
 
-## Wingless and Dpp signaling are unaffected by emc
+### Wingless and Dpp signaling are unaffected by emc
 
 To understand how caspases could affect the speed of the morphogenetic furrow, we analyzed pathways known to contribute. Hedgehog (Hh) and Decapentaplegic (Dpp) signaling drive this differentiation wave, along with a contribution from Notch signaling (Baonza and Freeman, 2001; Borod and Heberlein, 1998; Fu and Baker, 2003; Heberlein et al., 1993; Ma et al., 1993). A negative regulator of morphogenetic furrow progression is Wingless (Wg), which is expressed at the dorsal and ventral eye disc margins (Lee and Treisman, 2002; Maurel-Zaffran and Treisman, 2000).
 
 Because we found that ex mutations affected thoracic bristle patterning through a caspase-dependent non-apoptotic effect on Wg signaling (Wang and Baker, 2019), we looked first to see whether emc mutations reduced Wg signaling in the eye. We used Frizzled-3 RFP (Fz3-RFP) as a reporter (Sato et al., 1999). In control eye discs, the Fz3-RFP recapitulates the pattern of endogenous Wg signaling activity at the wing margins (Figure 4—figure supplement 1, Treisman and Rubin, 1995). Frizzled-3 RFP expression was not changed in emc clones (Figure 4A). We then used a mutation in naked cuticle (nkd), encoding a negative feedback regulator of Wg signaling, to modulate Wg signaling (Chang et al., 2008; Zeng et al., 2000). If the morphogenetic furrow was accelerated in emc mutant clones due to reduced Wg signaling, more normal development should occur in emc nkd clones. The morphogenetic furrow was still accelerated in emc nkd clones, however (Figure 4B). These results provided no evidence that Wg signaling was the relevant emc target in the eye.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig4-v1.jpg)
+
+**Figure 4.:** (A) No reduction in the Wg signaling reporter Fz3-RFP was detectable in emc clones. See Figure 4—figure supplement 1 for Fz3-RFP expression in the wild-type. (B) Retinal differentiation is accelerated in emc nkd3 double mutant clones like in emc clones. Senseless expression in R8 photoreceptor cells and Elav staining in differentiating photoreceptors are shown. (C) p-Mad accumulates around the morphogenetic furrow in eye discs containing control clones (Firth et al., 2010; Vrailas and Moses, 2006). (E) Except for the advanced progression, p-Mad levels were unchanged in emc clones. Genotypes: (A) Fz3-RFP/+; emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (B) ywhsF;emcAP6nkd3FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80. N = 8 for each genotype.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** N = 3.
+
 We also examined Dpp signaling, since ectopic Dpp signaling is sufficient to accelerate the morphogenetic furrow (Pignoni and Zipursky, 1997). The pattern of pMad, a readout of Dpp signaling, was identical in emc mutant and control clones spanning the morphogenetic furrow (Figure 4C, D). Thus, Dpp signaling did not seem altered by emc mutants either.
 
-## Hedgehog pathway
+### Hedgehog pathway
 
 Hedgehog (Hh) signaling is a key mover of the morphogenetic furrow (Heberlein et al., 1993; Ma et al., 1993; Treisman, 2013). Elevated Hh signaling is sufficient to accelerate the morphogenetic furrow (Heberlein et al., 1995; Ma and Moses, 1995). Notably, it has been suggested previously that emc mutations affect the morphogenetic furrow by activating Hedgehog signaling, because emc mutant cells accumulate Ci protein (Spratford and Kumar, 2013). Full-length Ci protein (Ci155) is targeted to the proteosome by Cul1 for processing into a transcriptional repressor protein Ci75 (Aza-Blanc et al., 1997). By inhibiting this processing, Hh prevents repression of target genes by Ci75 and promotes transcriptional activation downstream of Ci155. Accordingly, Ci155 accumulation is a feature of cells receiving Hh signals (Motzny and Holmgren, 1995).
 
 We confirmed that emc mutant cells contain higher levels of Ci155, as reported previously (Figure 5A, Spratford and Kumar, 2013). Ci155 was elevated in emc dronc clones (Figure 5B) but reduced to wild-type levels in emc Df(3L)H99 clones (Figure 5C, Figure 5—figure supplement 1). Thus, Ci155 levels did not correlate perfectly with behavior of the morphogenetic furrow.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ci is elevated within emc mutant cells (yellow arrows). This was also true posterior to the morphogenetic furrow (orange arrow). (B) Higher Ci was also seen in emc dronc mutant cells, even when the morphogenetic furrow progressed normally, as indicated by Elav staining. (C) Ci levels were completely normal in emc H99 clones. (D) emc and ci double mutant clones lacking GFP shows accelerated retinal differentiation (blue arrow). Genotypes: (A) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (B) ywhsF;dronci29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80, (C) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF;emcAP6FRT80/[Ubi-GFP] ci+ M(3)67C FRT80;ci[94]/ci[94]. N = 8 for each genotype except (D) which has n = 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative image of eye imaginal disc in emc H99 clones in the non-Minute background, showing similar areas inside and outside clones. Genotype: ywhsF; emcAP6 Df(3L)H99 FRT80/[UbiGFP]FRT80. N = 4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT8.
 
 We noticed that Ci155 levels were elevated in emc mutant clones in the posterior, differentiating eye disc, as well as in and ahead of the morphogenetic furrow (Figure 5A). This is significant, because Ci155 is not affected by Hh-dependent Cul1 processing posterior to the morphogenetic furrow (Baker et al., 2009; Ou et al., 2002). Ci155 accumulation posterior to the furrow suggests a Hh-independent mechanism.
 
@@ -81,7 +125,7 @@ To test whether Ci155 accumulation in emc clones indicates elevated Hh target si
 
 To test functionally whether Ci155 is responsible for accelerating the furrow in emc clones, we generated emc ci double mutant clones. To achieve this, a genomic transgene that rescues ci94 flies to adulthood (Little et al., 2020), was introduced into chromosome arm 3L where it is linked to the wild-type emc locus, so that mitotic recombination in the ci94 null background leads to emc ci double mutant clones. For unknown reasons, emc ci double mutant clones were small and difficult to obtain, even in the Minute background. Eye differentiation was still accelerated in those emc ci double mutant clones we found that spanned the morphogenetic furrow (Figure 5D). The unexplained synergistic growth effects in particular could be consistent with interactions between emc and Hh signaling, but emc must regulate the speed of the morphogenetic furrow through at least one other target besides Ci in order to explain the furrow acceleration observed in emc ci double mutant clones.
 
-## Delta expression is a target of caspases
+### Delta expression is a target of caspases
 
 The remaining signaling pathway that contributes to morphogenetic furrow movement is Notch. Specifically, only cells where Notch signaling is active are competent to initiate retinal differentiation in response to Dpp (Baonza and Freeman, 2001; Fu and Baker, 2003). Accordingly, ectopic expression of Delta, the transmembrane ligand for Notch, is sufficient to accelerate retinal differentiation anterior to the morphogenetic furrow by expanding the effective range of Dpp signaling (Baonza and Freeman, 2001; Li and Baker, 2001).
 
@@ -89,15 +133,23 @@ To test whether emc restrains Notch, we examined the bHLH proteins of the E(spl)
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig6-v1.jpg)
 
-**Figure 6.:** (A) E(spl), an important N target for lateral inhibition, is elevated in the morphogenetic furrow region of emc clones (yellow arrows). (B) emc dronc clones have normal levels of E(spl) protein. (C) Senseless staining shows a neurogenic phenotype in psn mutant clones, due to reduced Notch signaling. Morphogenetic furrow progression is unaffected. (D) A neurogenic phenotype was also observed in emc psn clones, along with normal furrow progression. (E) Su(H) mutant clones identified by absence of GFP labeling show a strong neurogenic phenotype as well as advanced retinal differentiation (orange arrow) (Li and Baker, 2001). The cell-autonomous effect results in a discontinuity at the borders of Su(H) clones, where differentiation outside the clones lags that within clones (orange arrow) Genotypes: (A) ywhsF;emc, (AP6 FRT80/[Ubi-GFP] M(3)67C FRT80B) ywhsF; dronc, (i29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80C) ywhsF/+;psn, (V1 FRT80/[Ubi-GFP]M(3)67CFRT80D) ywhsF/+; emc, (AP6 psnV1 FRT80/[Ubi-GFP]M(3)67CFRT80E) ywhsF; Su(H)FRT40/FRT40D47[UbiGFP]. N = 6 for each genotype.
+**Figure 6.:** (A) E(spl), an important N target for lateral inhibition, is elevated in the morphogenetic furrow region of emc clones (yellow arrows). (B) emc dronc clones have normal levels of E(spl) protein. (C) Senseless staining shows a neurogenic phenotype in psn mutant clones, due to reduced Notch signaling. Morphogenetic furrow progression is unaffected. (D) A neurogenic phenotype was also observed in emc psn clones, along with normal furrow progression. (E) Su(H) mutant clones identified by absence of GFP labeling show a strong neurogenic phenotype as well as advanced retinal differentiation (orange arrow) (Li and Baker, 2001). The cell-autonomous effect results in a discontinuity at the borders of Su(H) clones, where differentiation outside the clones lags that within clones (orange arrow) Genotypes: (A) ywhsF;emcAP6 FRT80/[Ubi-GFP] M(3)67C FRT80, (B) ywhsF; dronci29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80, (C) ywhsF/+;psnV1 FRT80/[Ubi-GFP]M(3)67CFRT80, (D) ywhsF/+; emcAP6 psnV1 FRT80/[Ubi-GFP]M(3)67CFRT80, (E) ywhsF; Su(H)D47FRT40/FRT40[UbiGFP]. N = 6 for each genotype.
 
 To test whether elevated Notch signaling was required to accelerate the morphogenetic furrow in emc mutants, we examined emc psn double mutant clones. Presenilin (Psn) is the enzymatic component of γ-secretase that releases the intracellular domain of Notch during active Notch signaling, and the psn gene is linked to emc. Loss of psn function leads to a Notch loss of function phenotype (Struhl and Greenwald, 1999; Ye et al., 1999). Accordingly, psn clones lead to a neurogenic phenotype in the eye, without affecting the progression of the morphogenetic furrow (Figure 6C, Li and Baker, 2001). The position of the morphogenetic furrow was also not affected in emc psn clones (Figure 6D). Thus, the furrow was not accelerated in emc mutant clones also defective for Notch signaling.
 
 These two results together indicated that emc mutants promoted Notch signaling in the morphogenetic furrow, acting through caspase signaling on a step prior to γ-secretase cleavage of the intracellular domain of Notch. Accordingly, we decided to check Delta (Dl) protein levels. We found that Dl protein levels were significantly and consistently elevated cell-autonomously throughout emc clones, both posterior and anterior to the furrow (Figure 7B, E). This included the region just ahead of the morphogenetic furrow that lacks Delta expression in normal development (Baker and Yu, 1998; Parks et al., 1995, Figure 7B). In contrast, levels of Dl protein in emc Df(3L)H99 clones were similar to those of wild-type controls (Figure 7A, D, E). Levels in emc dronc clones were also similar to wild-type on average, although some clones seemed to show an increase, smaller than in emc clones (Figure 7A, C, E). This indicated that Dl protein is a target of caspases, directly or indirectly. The Delta protein sequence contains multiple predicted caspase target sites, as do many proteins (Wang et al., 2014). Only one candidate site lies in the intracellular domain, where it would potentially be accessible to caspases (Figure 7—figure supplement 1). Truncation of the Dl intracellular domain is usually associated with loss of Dl function, not stabilization and enhanced function, however (Daskalaki et al., 2011).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig7-v1.jpg)
+
+**Figure 7.:** (A) Normal levels of Delta protein are seen in FRT80 clones as compared to elevated Delta levels in (B) emc clones (arrowheads) whereas that phenotype is reversed in (D) emc H99 clones. However, as seen in (C), some dronc emc clones show intermediate Delta levels, although most resemble wild type. (E) Quantification of Delta levels in different clone genotypes, compared to the background levels outside the clones. Means ± SEM are shown. Significance was determined using one-way Anova with Tukey’s post hoc test. (**p ≤ 0.01, ****p ≤ 0.0001). Source data for (E) are provided in Figure 7—source data 1. Genotypes: (A) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C) ywhsF;dronci29emcAP6 FRT80/[UbiGFP] M(3)67C FRT80, (D) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP]FRT80. N = 7 for each genotype.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Like many proteins, Delta has multiple potential caspase cleavage sites, here predicted suing Cascleave 2.0 (Wang et al., 2014). None are high-confidence predictions and only one is in the intracellular domain where caspase access is plausible (position 675, predicted score 0.647). The intracellular domain is required for Delta signaling. Cleavage at position 675 would remove the main ubiquitylation site required for signaling, as well as the binding site for mindbomb, so is not anticipated to enhance signaling activity (Daskalaki et al., 2011).
+
 Because Dl activates Notch signaling cell non-autonomously, we wondered whether the effect of emc mutant clones was cell-autonomous. We note that, in all the experiments reported here, and in all the previous studies of emc mutant clones affecting morphogenetic furrow movement, the morphogenetic furrow is maintained as a continuous groove across the eye disc (Bhattacharya and Baker, 2011; Bhattacharya and Baker, 2012; Brown et al., 1995; Spratford and Kumar, 2013). That is, the advanced front of retinal differentiation within emc clones is always smoothly continuous with the normal morphogenetic furrow outside the clones, implying a progressive gradual increase in morphogenetic furrow speed near the lateral edges of emc mutant clones (e.g. Figures 2B, 4B, D—6A). Clones of Su(H) null mutants, which act cell-autonomously, provide a contrasting example. Complete loss of Su(H) accelerates the morphogenetic furrow due to loss of default Su(H) repression of Notch targets (Li and Baker, 2001). The boundaries of Su(H) null clones exhibit a clear discontinuity between the rates of differentiation within and outside the clones (Figure 6E). This difference between Su(H) and emc mutant clones is consistent with the idea that emc affects morphogenetic furrow progression differently from Su(H).
 
-## Specific ommatidial cell fates are regulated by caspases in emc mutants
+### Specific ommatidial cell fates are regulated by caspases in emc mutants
 
 Because the general pattern of neurogenesis revealed by pan-neuronal anti-Elav staining appeared so normal in emc dronc and emc Df(3L)H99 clones (Figure 2C, D), we examined whether effects of emc on particular retinal cell fates was caspase dependent. Emc is also required for R7 differentiation and for timely onset of cone cell differentiation (Bhattacharya and Baker, 2009), two cell fate decisions that also depend on Notch signaling (Cooper and Bray, 2000; Flores et al., 2000; Tomlinson and Struhl, 2001; Treisman, 2013). These cell fates are normally independent of da, but like imaginal disc cell growth and morphogenetic furrow progression, ectopic da activity perturbs them in emc mutants (Brown et al., 1996; Reddy Onteddu et al., 2024).
 
@@ -105,7 +157,7 @@ Clones of emc mutant cells lack R7 photoreceptor cells (Figure 8A, B, Bhattachar
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig8-v1.jpg)
 
-**Figure 8.:** emc mutants.In all panels, emc mutant cells are marked by the absence of GFP expression (in green) and photoreceptor neurons are marked by Elav in blue. (A) Runt (in red) is expressed in R7 and R8 (yellow arrowhead) photoreceptor cells inside and outside the clone in FRT80 controls. (B) Inside emc clone, Runt expression is lost from R7 cells, while expression in R8 cells remains unaffected (orange arrowhead). (C) However, inside the emc H99 clones, Runt is expressed in both R7 and R8 cells. (D) Cut (in red) is expressed in cone cells in FRT80 controls. (E) Inside emc clones, cut is delayed. (F) However, inside the emc H99 clones, cut staining is not delayed. Genotypes: (A, D) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B, E) ywhsF;emc, (AP6FRT80/[Ubi-GFP] M(3)67C FRT80C, F) ywhsF;emc. AP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80N = 4 for each genotype.
+**Figure 8.:** In all panels, emc mutant cells are marked by the absence of GFP expression (in green) and photoreceptor neurons are marked by Elav in blue. (A) Runt (in red) is expressed in R7 and R8 (yellow arrowhead) photoreceptor cells inside and outside the clone in FRT80 controls. (B) Inside emc clone, Runt expression is lost from R7 cells, while expression in R8 cells remains unaffected (orange arrowhead). (C) However, inside the emc H99 clones, Runt is expressed in both R7 and R8 cells. (D) Cut (in red) is expressed in cone cells in FRT80 controls. (E) Inside emc clones, cut is delayed. (F) However, inside the emc H99 clones, cut staining is not delayed. Genotypes: (A, D) ywhsF;FRT80/[UbiGFP] M(3)67C FRT80, (B, E) ywhsF;emcAP6FRT80/[Ubi-GFP] M(3)67C FRT80, (C, F) ywhsF;emcAP6 Df(3L)H99 FRT80/[UbiGFP] M(3)67C FRT80. N = 4 for each genotype.
 
 ## Discussion
 
@@ -127,44 +179,292 @@ Here, we show that multiple effects of emc mutations that occur independently of
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/91988/elife-91988-fig9-v1.jpg)
 
-**Figure 9.:** emc effects on Drosophila eye development.Loss of emc allows Da protein to form homodimers and activate ex transcription, increasing Salvador–Warts–Hippo (SWH) pathway activity. SWH activity reduces DIAP1 expression, thereby derepressing caspase activity. In the eye, non-apoptotic caspase activity increases expression of the Notch ligand Delta. Elevated Delta expression accelerates morphogenetic furrow progression, while cis-inhibiting Notch signaling posterior to the morphogenetic furrow, inhibiting R7 cell specification and cone cell differentiation. In wild-type cells, most Da is likely heterodimerized with either a proneural protein or with Emc protein, and there is no role of caspases in Dl expression.
+**Figure 9.:** Loss of emc allows Da protein to form homodimers and activate ex transcription, increasing Salvador–Warts–Hippo (SWH) pathway activity. SWH activity reduces DIAP1 expression, thereby derepressing caspase activity. In the eye, non-apoptotic caspase activity increases expression of the Notch ligand Delta. Elevated Delta expression accelerates morphogenetic furrow progression, while cis-inhibiting Notch signaling posterior to the morphogenetic furrow, inhibiting R7 cell specification and cone cell differentiation. In wild-type cells, most Da is likely heterodimerized with either a proneural protein or with Emc protein, and there is no role of caspases in Dl expression.
 
 Da protein binds to and potentially regulates hundreds of genes throughout the Drosophila genome (Li et al., 2008). Accordingly, Da activity in emc mutant cells might be expected to lead to non-specific and pleiotropic effects. It is therefore remarkable that multiple aspects of proneural bHLH-independent emc mutant phenotypes have a simple common basis in elevated caspase activity.
 
 ## Materials and methods
 
-## Drosophila strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>emc</td>
+      <td>GenBank</td>
+      <td>FBgn0000575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>emc [AP6]</td>
+      <td>PMID:7947322</td>
+      <td>FBal0051626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dronc [i29]</td>
+      <td>PMID:15800001</td>
+      <td>FBal0190283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(3L)H99</td>
+      <td>PMID:8171319</td>
+      <td>FBab0022359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nkd[3]</td>
+      <td>PMID:2081466</td>
+      <td>FBal0013025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PBac{y+ w + ci+}VK33</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>psn[v1]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FBal0316340 BDSC: 63237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Fz3-RFP</td>
+      <td>PMID:21869817</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>pie[eB3]</td>
+      <td>PMID:1634999</td>
+      <td>FBal0032439</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Su(H)Δ47</td>
+      <td>PMID:1617730</td>
+      <td>FBal0103950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Emc (Rabbit polyclonal)</td>
+      <td>Y.N. Jan</td>
+      <td></td>
+      <td>(1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Da (Mouse monoclonal)</td>
+      <td>PMID:3802198</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Rat monoclonal)</td>
+      <td>Nacalai Tesque</td>
+      <td>Cat #GF090R RRID:AB_2314545</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat #A-11122 RRID:AB_221569</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Gal (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #40-1a RRID:AB_528100</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Gal (Rabbit polyclonal)</td>
+      <td>Cappel (MP Biomedicals)</td>
+      <td>Cat #55976 RRID:AB_2313707</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Runt (Guinea pig polyclonal)</td>
+      <td>PMID:9683745</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>E(spl)bHLH mAb323 (Mouse monoclonal)</td>
+      <td>PMID:1618155</td>
+      <td></td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Senseless (Guinea pig polyclonal)</td>
+      <td>PMID:10975525</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cleaved Drosophila Dcp-1 (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #9578 RRID:AB_2721060</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DIAP1 (Rabbit polyclonal)</td>
+      <td>PMID:12021769</td>
+      <td></td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-Smad1/5 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #9516 RRID:AB_491015</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Delta (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #C594.9B RRID:AB_528194</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cut (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #2B10 RRID:AB_528186</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ptc (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #Apa 1 RRID:AB_528441</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Elav (Rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #7E8A10 RRID:AB_528218</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Elav (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #9F8A9 RRID:AB_528217</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ci (Rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat #2A1 RRID:AB_2109711</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2, Cy3, and Cy5</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 555 (Guinea pig polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat #A-21435 RRID:AB_2535856</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>genomic Ci</td>
+      <td>PMID:33084577</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApopTag Red in situ apoptosis detection kit</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #S7165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Cascleave 2.0</td>
+      <td>PMID:24149049</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila strains
 
 The following stocks were employed in this study and were maintained at 25°C unless otherwise stated – hsflp;emcAP6 FRT80/TM6B, hsflp;dronci29FRT80/TM6B, hsflp;dronci29emcAP6, hsflp;Df(3L)H99/TM3, hsflp;Df(3L)H99 emc AP6/TM3, Ubi-GFP M(3)67C FRT80, FRT42 M(2)56F Ubi-GFP, FRT82 M(3)95A Ubi-GFP, hsflp; Ubi-GFPFRT80, hsflp; Su(H)Δ47FRT40, pieeB3 FRT40, psn[v1]FRT80/TM6B, Fz3-RFP;D/TM6B (kind gift from Yu Kimata, University of Cambridge). We obtained genomic Ci construct from Kalderon lab and used BestGene Inc to target the transgene to the third chromosome and then recombined these flies to generate hsflp;ci+M(3)67Calz FRT80/TM6B;ci94/y+spa.
 
-## Mosaic analysis
+### Mosaic analysis
 
 Mosaic clones were obtained using FLP/FRT-mediated mitotic recombination (Golic, 1991; Xu and Rubin, 1993). For non-Minute genotypes, larvae were subjected to heat shock for 30 minutes at 37°C, 60 ± 12 hr after egg laying. For Minute genotypes, heat shock was performed 84 ± 12 hr after egg laying for 50 minutes. Larvae were dissected 72 hr after heat shock. All flies were maintained at 25°C unless otherwise stated.
 
-## Clonal growth measurements
+### Clonal growth measurements
 
 Clone and twin-spot areas were measured by tracing in ImageJ. To quantify the growth effects of various genotypes, the sum of clone areas per wing disc was divided by the sum of twin-spot areas in the same wing disc. This avoids any subjectivity in identifying individual clones and assigning them to individual twin spots. Clone/twin-spot ratios were log-transformed to ensure normality before statistical analysis.
 
-## Immunohistochemistry and histology
+### Immunohistochemistry and histology
 
 Unless otherwise noted, preparation of eye and wing imaginal discs for immunostaining and confocal imaging were performed as described previously (Baker et al., 2014). Antibodies from Developmental Studies Hybridoma Bank (DSHB): anti-Ptc (mouse, 1:40), anti-Elav (mouse, 1:100), anti-Elav (rat, 1:50), anti-Cut (mouse, 1:50), anti-Delta C594.9B (mouse, 1:2000), anti-βGal (mouse, 1:100), mouse anti-βGal (1:100, DSHB 40-1a), and anti-Ci (rat, 1:10). Other antibodies: anti-phospho-Smad1/5 (rabbit, 1:100, Cell Signaling), anti-DIAP1 (rabbit, 1:50) (gift from Hyun Don Ryoo, NYU), anti-Dcp1 (rabbit, 1:100, Cell Signaling), anti-Sens (guinea pig, a gift from Hugo Bellen used at 1:500), anti-Da (mouse, 1:200), rabbit anti-Emc (1:8000), anti-GFP (rat, 1:50 from Nacalai Tesque # GF090R), rabbit anti-GFP (1:500), rabbit anti-β-Galactosidase (1:100, Cappel), E(spl)bHLH (1:50,mAb323), and guinea pig anti-runt (1:500). Secondary antibodies conjugated with Cy2, Cy3, and Cy5 dyes (1:200) were from Jackson ImmunoResearch Laboratories and Alexa 555 (1:500). Multi-labelling images were sequentially scanned with Leica SP8 confocal microscopes and were projected and processed with ImageJ. All images were assembled into ﬁgure format using Adobe Illustrator 2020.
 
-## Quantifying immunofluorescence
+### Quantifying immunofluorescence
 
 Anti-DIAP1 and anti-Dl labeling were quantified within clones using the average density measurement in ImageJ and normalized to control regions in the same tissue. For anti-DIAP1 labeling, in particular, we lack any measurement of any non-specific background labeling that may occur. Differences in Diap1 levels between genotypes may be underestimated if a component of the labeling is non-specific.
 
-## TUNEL assay
+### TUNEL assay
 
 For labeling dead cells with TUNEL assay, ApopTag Red In Situ Apoptosis Detection Kit (Cat #S7165) was used according to the manufacturer’s instruction. Briefly, dissected eye discs were fixed for 20 min at room temperature followed by three washes with 1× phosphate-buffered saline (PBS). Then the samples were incubated in equilibration buffer for 1 min followed by incubation in reaction buffer (TdT enzyme; ratio 7:3) at 37°C for 1 hr. TdT reaction mix was replaced with stop buffer (diluted 1:34 in dH2O) and incubated for 10 min at room temperature. Samples were washed three times with 1× PBS, 5 min per wash; and incubated with anti-digoxigenin antibody solution (diluted 31:34 in blocking solution) for 30 min at room temperature. The samples were then washed three times in 1× PBS, 5 min per wash. For the subsequent antibody staining, the samples were blocked in PBST (1× PBS + 0.5% Triton-X) for 30 min, and incubated with primary antibodies in PBST overnight at 4°C. The samples were next washed with PBST and incubated for 2 hr with secondary antibodies in PBST, and then again washed with PBST, followed by PBS wash and samples were mounted in mounting media.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 7. The statistical tests used are described in the figure legends. Statistical significance is shown as follows: n.s., p > 0.05; *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001.
 
-## Prediction of caspase cleavage sites
+### Prediction of caspase cleavage sites
 
 Caspase cleavage sites were predicted for Delta using Cascleave 2.0 (Wang et al., 2014). Cascleave 2.0 was set to a medium stringency threshold for prediction of cleavage sites.
 
-## Materials availability
+### Materials availability
 
 All new materials generated in this project are available from the corresponding author.

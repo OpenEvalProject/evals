@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01kg8sb98 Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington Bloomington United States
-2. https://ror.org/01kg8sb98 Department of Applied Health Science, Indiana University School of Public Health-Bloomington Bloomington United States
-3. https://ror.org/042tdr378 Department of Statistics and Data Science, Southern Methodist University Dallas United States
-4. https://ror.org/01cq23130 University of Memphis, School of Public Health Memphis United Kingdom
+1. Department of Epidemiology and Biostatistics, Indiana University School of Public Health-Bloomington Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+2. Department of Applied Health Science, Indiana University School of Public Health-Bloomington Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+3. Department of Statistics and Data Science, Southern Methodist University Dallas United States ([ROR:042tdr378](https://ror.org/042tdr378))
+4. University of Memphis, School of Public Health Memphis United Kingdom ([ROR:01cq23130](https://ror.org/01cq23130))
 
 † Corresponding author
 
@@ -39,11 +39,11 @@ We sometimes use the words confound, confounder, confounding, and other variants
 
 Simply because we believe an observed variable (e.g. highest educational degree earned) is a measure of a construct (e.g. socioeconomic status), it does not mean that that the observed variable accurately measures that construct or that it has sufficient validity for the elimination of it as a source of covariation biasing estimation of a parameter. This scenario is a misperception attributed to construct validity, which is defined as the extent to which a test or measure accurately measures what it is intended to measure. This misperception is conceptually defined as the assumption that a measure or set of measures accurately measures the outcome of interest; however, associations between tested variables may not adequately or appropriately represent the outcome of interest. This specific type of construct validity is perhaps best exemplified through the use of proxy variables, or variables believed to measure a construct of interest while not necessarily holding a strong linear relationship with that construct. In psychology, the Patient Health Questionaire-9 (PHQ-9) is a highly reliable, nine-item psychological inventory for screening, diagnosing, and monitoring depression as an internalizing disorder. Although these nine items have been extensively tested as an appropriate measure for depression and other internalizing disorders (Bell, 1994), it is not uncommon for researchers to modify this scale for shorter surveys (Poongothai et al., 2009). However, because the PHQ-9 has been empirically tested with a specific item set, any modification may not effectively measure depressive symptomology as accurately as when the PHQ-9 is used as intended. This problem is also salient in nutritional epidemiology for food categorization (Hanley-Cook et al., 2023). For example, ongoing debate remains about ‘food addiction’ as a measurable construct despite limited evidence to suggest such a phenomenon exists and can be empirically measured (Fletcher and Kenny, 2018).
 
-## Why misperception 1 occurs
+### Why misperception 1 occurs
 
 This misperception persists simply because issues with construct validity are difficult to identify. First, owing to continuous scientific innovations, we are finding new ways to measure complex behaviors. However, the production of new instruments or tests remains greatly outpaced by such innovation. As such, scientists may rely on old, established instruments to measure problems germane to the 21st century. However, the use of these instruments has not been tested in such scenarios, i.e., measuring screentime as a predictor/construct/measure of depression and other internalizing disorders. Second, although it is easy to create a new test or instrument, testing the instrument to ensure construct validity is time-consuming and tedious. If a new instrument is not tested, then no certainty exists as to whether the construct measures what it is intended to measure. Additionally, outcomes measured from old, adapted, and new measures may only be marginally incorrect. Thus, any ability to identify unusual metrics or outcomes becomes impeded, allowing this misperception to continue.
 
-## How to avoid misperception 1
+### How to avoid misperception 1
 
 We offer two practical recommendations to avoid this misperception. First, if using an established test or instrument that measures many constructs, then the instrument should be used in its entirety. Any alteration to the instrument (particularly relating to question wording, format, and question omission) may alter response patters to a large enough degree that the construct no longer appropriately measures what it is intended to measure. However, in cases where measures are adapted, tailored to specific populations, or created anew, the instrument will ideally be empirically tested using a variety of psychometric analyses (e.g. confirmatory factor analysis) to compare factor weights and loadings between new and adapted measures. Ideally, adaptations to an existing instrument will perform the same such that scores reflect the outcome of interest equally across versions. Other options beyond a confirmatory factor analysis include test/retest reliability—a measure of how consistently a measure obtains similar data between participants—as a secondary metric to again test the reliability and validity of an instrument relative to a measured construct.
 
@@ -55,19 +55,19 @@ A frequent misleading statement in the epidemiologic literature is that ‘class
 
 Measurement error in the covariates is often ignored or not formally modeled. This may be the result of a general lack of awareness of the consequences on estimation and conclusions drawn regarding the covariates in regression models. This may also be the result of insufficient information regarding the measurement error variance to be included in the modeling. Yet, as a field, we should move toward analyses that account for measurement error in the covariates whenever possible (Tekwe et al., 2019).
 
-## Why misperception 2 occurs
+### Why misperception 2 occurs
 
 The influence of measurement error depends on the regression model. Therefore, it cannot be generalized that measurement error always attenuates covariate effects. In some models, the presence of measurement error does lead to attenuation, while in others, it leads to inflated effects of the covariates. A simple way to think about how measurement error can lead to bias is by exploring the nature of random measurement error itself. Let us assume that the random measurement error in our covariate exists. By random we mean that all the errors are independent of each other and of all other factors in the model or pertinent to the model. We know that under such circumstances, the variance in the measured values of the covariate will simply be the sum of the true variance of the construct the covariate represents plus the variance of the random measurement errors. As the ratio of the variance of the random errors over the variance of the true construct approaches infinity, the proportion of variance due to the true value of the construct approaches zero and the covariate itself is effectively nothing more than random noise. For example, we wouldn’t expect that simply controlling for the random noise generated from a random number generator would reduce the bias of the IV–DV relationship from any PBC. Although this is an extreme and exaggerated hypothetical, it makes the point that the greater the error variance, the less that controlling for the covariate actually controls for the PBC of interest. Because we know that many PBCs in the field of nutrition and obesity, perhaps most notably those involving self-reported dietary intake, are measured with error, we cannot assume that when we have controlled for a covariate, we have eliminated its biasing influence. If we allow for the possibility—indeed the virtual certainty (Dhurandhar et al., 2015; Gibney, 2022; Gibney et al., 2020)—that the errors are not all random but in some cases will be correlated with important factors in the model, then ‘all bets are off.’ We cannot predict what the effect on the model will be and the extent to which biases will be created, reduced, or both by the inclusion of such covariates without fully specifying the nature of the error structure relative to the model.
 
-## How to avoid misperception 2
+### How to avoid misperception 2
 
 One way to reduce the concerns of such measurement error is through measurement error correction methods. Fully elucidating them is beyond the scope of this article, but thorough discussions are available (Fuller, 2009). Of course, the best way of dealing with measurement error is not to have it, but that is unachievable, particularly in observational studies. Nevertheless, we should continue to strive for ever better measurements in which measurement error is minimized (Westfall and Yarkoni, 2016) to levels that plausibly have far less biasing capacity.
 
 ## Misperception 3 (two parts)
 
-## Misperception 3a. Continuous covariates divided into polychotomous categories for better interpretation are still well-controlled
+### Misperception 3a. Continuous covariates divided into polychotomous categories for better interpretation are still well-controlled
 
-## Why misperception 3a occurs
+#### Why misperception 3a occurs
 
 Another way in which controlling for PBCs can fail involves the intersection of residual confounding and nonlinearity discussed later (see Misperception 5B).
 
@@ -75,13 +75,13 @@ An astute investigator may recognize the potential for nonlinearity and, therefo
 
 This is most commonly done through the use of quantiles (on a terminological note, the adjacent bins into which subjects can be placed when the covariate is ‘chopped up’ in this manner might better be termed ‘quantile-defined categories’ and not as quantiles, quintiles, quartiles, etc). The quantiles are the cut points, not the bins formed by the cutting (Altman and Bland, 1994). Yet doing so yields, as many have explained (Veiel, 1988; Fitzsimons, 2008; Hunter and Schmidt, 1990; Irwin and McClelland, 2003; Naggara et al., 2011), ‘coarse categorization’ that effectively creates additional measurement error in the covariate. This is true even if there was no measurement error to begin with, unless the true relationship between the covariate and the outcome miraculously happens to be exactly a series of step functions with the stepping occurring exactly at the points of cutting. In contrast, if the true association is more monotonic, then this categorization loses information and increases the likely residual bias (aka ‘residual confounding’). The result is an apparent control for the covariate of interest that does not truly eliminate bias from the PBC.
 
-## How to avoid misperception 3a
+#### How to avoid misperception 3a
 
 For optimal analysis, it is advisable for researchers to avoid dichotomizing continuous covariates as much as possible, as this approach may lead to unnecessary suboptimal analysis.
 
-## Misperception 3b. Covariates categorized in coarse rather than fine categories are more reliable in the presence of measurement error
+### Misperception 3b. Covariates categorized in coarse rather than fine categories are more reliable in the presence of measurement error
 
-## Why misperception 3b occurs
+#### Why misperception 3b occurs
 
 A similar misperception to 3 a is that in the presence of certain forms of measurement error, coarse categorization will make the covariate data more reliable because the original data cannot support fine-grained distinctions. As described by MacCallum et al., 2002:
 
@@ -89,13 +89,13 @@ In questioning colleagues about their reasons for the use of dichotomization, we
 
 It may be true that for some communication purposes, data measured with low precision merit being communicated only in broad categories and not with more precise numbers. Yet, as MacCallum et al. explains after studying dichotomization (a special case or ‘the lower limit’ of polychotomization or categorization), “...the foregoing detailed analysis shows that dichotomization will result in moderate to substantial decreases in measurement reliability under assumptions of classical test theory, regardless of how one defines a true score. As noted by Humphreys, 1978, this loss of reliable information due to categorization will tend to attenuate correlations involving dichotomized variables, contributing to the negative statistical consequences described earlier in this article. To argue that dichotomization increases reliability, one would have to define conditions that were very different from those represented in classical measurement theory” (MacCallum et al., 2002).
 
-## How to avoid misperception 3b
+#### How to avoid misperception 3b
 
 Researchers are advised to refrain from dichotomizing covariates that have low reliability because this can have a negative impact on the analysis. Claiming dichotomization will improve reliability would require defining conditions that deviate significantly from classical measurement theory (MacCallum et al., 2002), which is simply difficult to verify in real application.
 
 ## Misperception 4. Controlling for a covariate reduces the power to detect an association of the IV of interest with the DV of interest
 
-## Why misperception 4 occurs
+### Why misperception 4 occurs
 
 Investigators are often reluctant to control for covariates because they believe that doing so will reduce the power to detect the association or effective interest between the IV and the DV or outcome. Therefore, if they perceive that the covariate is one that has a bivariate unadjusted correlation of zero with the IV, they may seize upon this as an opportunity to dismiss that nonsignificant covariate from further consideration. Ironically, this is the very situation in which controlling for the covariate may be most helpful for detecting a statistically significant association between the IV and the DV. This is most clearly recognized by statistical methodologists in randomized experiments or randomized controlled trials, but is frequently misunderstood by non-statistician investigators.
 
@@ -103,15 +103,15 @@ If a covariate is correlated (especially if it is strongly correlated) with the 
 
 Such covariates are ideal to help the investigator explore his or her hypothesis, or better yet, to formally test them with frequentist significance testing methods. Doing so will increase statistical power and precision of estimation (i.e. reduced confidence intervals on the estimated associations or effects of interest).
 
-## How to avoid misperception 4
+### How to avoid misperception 4
 
 When conducting an analysis, it is important to base the decision to control for covariates on the scientific knowledge of the problem at hand, rather than solely on the desire for a powerful test. Researchers should keep in mind that the main purpose of adjusting for covariates is to eliminate any influence of PBCs that may distort the estimate of the desired effect. To finish, we also note that including too many variables in the model can be detrimental because one runs the risk of inducing excessive multicollinearity and overfitting.
 
 ## Misperception 5 (two parts)
 
-## Misperception 5 a. If when controlling for X and Z simultaneously in a statistical model as predictors of an outcome Y, X is significant with Z in the model, but Z is not significant with X in the model, then X is a ‘better’ predictor than Z
+### Misperception 5 a. If when controlling for X and Z simultaneously in a statistical model as predictors of an outcome Y, X is significant with Z in the model, but Z is not significant with X in the model, then X is a ‘better’ predictor than Z
 
-## Why misperception 5a occurs
+#### Why misperception 5a occurs
 
 Investigators may also incorrectly conclude that X has a true causal effect on Y and that Z does not, that X has a stronger causal effect on Y than does Z, or that Z may have a causal effect on Y but only through X as a mediating variable. None of the above conclusions necessarily follow from the stated conditions. An example of a context in which these misperceptions occur was discussed recently in a podcast in which the interlocutors considered the differential associations or effects of muscle size versus muscle strength on longevity in humans (Attia, 2022). After cogently and appropriately noting the limitations of observational research in general and in the observational study under consideration in particular, the discussants pointed out that when a statistical model was used in which both muscle size and muscle strength measurements were included at the same time, muscle size was not a significant predictor of mortality rate conditional upon muscle strength, but muscle strength was a significant predictor of mortality rate conditional upon muscle size. The discussants thus tentatively concluded that muscle strength had a causal effect on longevity and that muscle size either had no causal effect, conditional upon muscle strength, or had a lesser causal effect.
 
@@ -125,31 +125,31 @@ First, there is tremendous collinearity between muscle mass and muscle strength.
 
 Finally, even in linearly related sets of variables, the power to detect an association between a postulated cause and a postulated effect is highly dependent on the degree of variability in the causal factor in the population. If the variance were to be increased, the significance of the relationship would likely be accentuated. Thus, without an understanding of the measurement properties, the variability in the population, the variability which could exist in the population, and the causal structure among the variables, such analyses can only indicate hypotheses that are provisionally consistent with the data. Such analyses do not demonstrate that one variable does or does not definitively have a greater causal effect than the other or that one variable has a causal effect and the other variable does not. Note, regression coefficients within a model can be tested for equivalence in straightforward manners. Tests for non-trivial (non-zero) equivalence of some regression parameters can be done when it makes sense. In the linear regression model, testing for equivalence between parameters amounts to comparing the reduction in the sum of square error between a larger (in terms of number of parameters) model and a smaller model (with selected parameters constrained to be equal) relative to the large model sum of squares. The test then has an F distribution from which we can obtain the critical values and compute the p value (Neter et al., 1996).
 
-## How to avoid misperception 5a
+#### How to avoid misperception 5a
 
 Researchers should ensure that the variables to be adjusted for in the model are not too correlated to avoid multicollinearity issues. Variance inflation (VIF) tests available in most statistical software can be used to diagnose the presence of multicollinearity. Additionally, if measurement error or low covariate reliability is suspected, measurement error correction should be considered if possible.
 
-## Misperception 5b. Controlling for the linear effect of a covariate is equivalent to controlling for the covariate
+### Misperception 5b. Controlling for the linear effect of a covariate is equivalent to controlling for the covariate
 
-## Why misperception 5b occurs
+#### Why misperception 5b occurs
 
 This assumption is not necessarily true because the relationships between some variables can be nonlinear. Thus, if one controls for only the linear term (which is typical) of a quantitative variable, say Z, as a PBC, then one does not effectively control for all the variance and potential bias induced by Z. The extent to which any residual bias in Y due to controlling Z only in its linear effects or association may be large or small depending on the degree of nonlinearity involved. In practice, much nonlinearity is monotonic. However, this is not true in all cases. For many risk factors such as body mass index (BMI), cholesterol, and nutrient intakes like sodium, there are often U-shaped (or more accurately concave upward) relationships in which persons with intermediate levels have the best outcomes and persons with covariate levels below or above the nadir of the curve have poorer outcomes, on average. An example of the nonlinear and non-monotonous relationship between BMI (the explanatory variable) and mortality (the outcome variable) is illustrated in Figure 2; Fontaine et al., 2003. In this example, mortality was treated as a time-to-event outcome modeled via survival analysis. This relationship has often been demonstrated to be U- or J-shaped (Fontaine et al., 2003; Flegal et al., 2007; Flegal et al., 2005; Pavela et al., 2022). Thus, when BMI is modeled linearly, the estimates will likely be potentially highly biased compared to when it is non-linearly modeled.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82268/elife-82268-fig2-v1.jpg)
 
-## How to avoid misperception 5b
+### How to avoid misperception 5b
 
 It is important that one assesses for residual relationships (the relationships between nonlinear functions of Z and the model residuals after controlling for a linear function of Z) or chooses to allow for nonlinearity from the onset of the analysis. Nonlinearity can be accommodated through models that are nonlinear in the parameters (e.g. having parameters be exponents on the covariates) (Meloun and Militký, 2011; Andersen, 2009) or through use of techniques like the Box-Tidwell method transformations (Armstrong, 2017), splines (Schmidt et al., 2013; Oleszak, 2019), knotted regressions (Holmes and Mallick, 2003), categorical values (although see the next section for caveats around course categorization) (Reed Education, 2021), or good old-fashioned polynomials (Oleszak, 2019; Reed Education, 2021; Hastie et al., 2017) or in some cases factional polynomials (Sauerbrei et al., 2020; Binder et al., 2013; Royston and Altman, 1994; Royston and Sauerbrei, 2008).
 
 ## Misperception 6. One should check whether covariates are normally distributed and take corrective action if not
 
-## Why misperception 6 occurs
+### Why misperception 6 occurs
 
 This is not true. It is a common misperception that variables included in a parametric statistical model must be normally distributed. In fact, there is no requirement that any variable included in standard parametric regression or general linear models (Allison et al., 1993), either as a predictor or as a DV, be normally distributed. What is embedded in the Gauss Markov Assumptions (Berry, 1993), the assumptions of ordinary least-squares regression models (the models typically used in this journal), is that the residuals of the model be normally distributed. That is, the differences between the observed value of a DV for each subject and the predicted value of that DV from the model (and not any observed variable itself) are assumed to be normally distributed.
 
 Moreover, this assumption about residuals applies only to the residuals of the DV. No assumption about the distribution of the predictor variables, covariates, or IV is made other than that they have finite mean and variance. Therefore, there is no need to assess the distributions of predictive variables, to take presumed corrective action if they are not normally distributed, or to suspect that the model is violated or biased if predictor variables are not normally distributed. One might be concerned with highly skewed or kurtotic covariates in that such distributions may contain extreme values, or outliers, that may serve as leverage points in the analysis, but that is a different issue. For an overview of outlier detection and the influence detection statistics best for managing concerns in this domain, see Fox, 2019.
 
-## How to avoid misperception 6
+### How to avoid misperception 6
 
 This misperception can be avoided by recalling that in the regression model, the analysis is done conditional on the IVs (or covariates), which are assumed to be fixed. Thus, their distributions are irrelevant in the analysis. However, it is required that the residuals be uncorrelated with the IVs.
 
@@ -157,17 +157,17 @@ This misperception can be avoided by recalling that in the regression model, the
 
 In this misperception, the emphasis is on a relation that is not statistically significant instead of merely not related. This strategy is often implemented through stepwise regression techniques that are available in most statistical software. Statistical-significance-based criteria for including covariates can, if the predictor variable in question is actually a confounder (we rely on the word ‘confounder’ here for consistency with much of the scientific literature), lead to bias in both coefficient estimates and tests of statistical significance (Maldonado and Greenland, 1993; Greenland, 1989; Lee, 2014). As Greenland has pointed out, this “too often leads to deletion of important confounders (false negative decisions)” (Greenland, 2008). This is because the statistical-significance-based approach does not directly account for the actual degree of confounding produced by the variable in question.
 
-## Why misperception 7 occurs
+### Why misperception 7 occurs
 
 There could be confusion in understanding the nature of the question asked when selecting a variable for its confounding potential and the question asked in usual statistical significance testing (Dales and Ury, 1978). These two questions are fundamentally different. Even though a plausible confounder may not have a statistically significant association with the IV or the DV, or a statistically significant conditional association in the overall model, its actual association may still not be zero. That non-zero association in the population, even though not statistically significant in the sample, can still produce sufficient biases to allow false conclusions to occur at an inflated frequency. Additionally, a motivation for significance testing to select confounders may be to fit a more parsimonious final model in the large number of covariates and relatively modest sample size setting (VanderWeele, 2019). That is, false-positive decisions (i.e. selecting a harmless nonconfounder) are considered more deleterious than false-negative decisions (deleting a true confounder). It has been argued that the opposite applies: deleting a true confounder is more deleterious than including a harmless nonconfounder. The reason is that deleting a true confounder introduces bias and is only justified if the action is worth the precision gained. Whereas, including a harmless nonconfounder reduces precision, which is the price of protection against confounding (Greenland, 2008). We note that in not all circumstances is including a nonconfounder ‘harmless’ (Pearl, 2011).
 
-## How to avoid misperception 7
+### How to avoid misperception 7
 
 Selection of confounders may be best when relying on substantive knowledge informing judgments of plausibility, the knowledge gained from previous studies in which similar research questions were examined, or a priori hypotheses and expectations for relationships among variables. If a variable is plausibly a confounder, it should be included in the model regardless of its statistical significance. As an additional approach, one can conduct the analysis with and without the confounder as a form of sensitivity analysis (VanderWeele and Ding, 2017; Rosenbaum, 2002) and report the results of both analyses. Such an approach is often referred to as the approach of the wise data analyst, who is willing to settle for, as Tukey defines, “an approximate answer to the right question, which is often vague, [rather] than an exact answer to the wrong question, which can always be made precise” (Tukey, 1962). We note that serious criticisms have been leveraged against the use of E-values in a sensitivity analysis as they tend to understate the residual confounding effect (Greenland, 2020; Sjölander and Greenland, 2022). However, attending to those critics is not within the scope of the current review.
 
 ## Misperception 8. Analyzing the residuals of an analysis in which a DV is regressed on the PBC is equivalent to including the PBC in an overall statistical model with the IV of interest
 
-## Why misperception 8 occurs
+### Why misperception 8 occurs
 
 This is untrue. As Maxwell pointed out several decades ago, the effects of analyzing residuals as opposed to including the PBC of interest in the model will depend on how those residuals are calculated (Maxwell et al., 1985). As Maxwell puts it, ANOVA on residuals is not ANCOVA. Maxwell shows that if the residuals are calculated separately for different levels of the IV, bias may accrue in one direction. In contrast, if residuals are calculated for the overall sample, bias may accrue in a different manner.
 
@@ -175,31 +175,31 @@ Although this conceptualization of an equivalence between the two procedures [AN
 
 Notably, this procedure can introduce bias in the magnitude of the coefficients (effect sizes) characterizing the effects or associations of the IV of interest, and not just the test of statistical significance.
 
-## How to avoid misperception 8
+### How to avoid misperception 8
 
 As Maxwell points out, there are ways to use residualization that do not permit these biases to occur. Hence, in some situations where models become so complex that residualizing for covariate effects beforehand makes the analysis that would otherwise be intractable tractable, this may be a reasonable approach. Nevertheless, additional concerns may emerge (Pain et al., 2018) and under ordinary circumstances, it is best to include PBCs in the model instead of residualizing for them first outside the model.
 
 ## Misperception 9. Excluding a covariate that is not associated with the outcome of interest does not affect the association of the IV with the outcome
 
-## Why misperception 9 occurs
+### Why misperception 9 occurs
 
 This is referred to as the suppressor effect. Adenovirus 36 (Ad36) infection provides an example of a suppressor effect. Although Ad36 increases adiposity, which is commonly linked to impaired glucoregulatory function and negative lipid profiles, Ad36 infection surprisingly leads to improved glucoregulatory function and serum lipid profiles (Akheruzzaman et al., 2019).
 
-To illustrate the point, we set  βA = 0.5, βB = –0.24, λA = 0.8 and λB = 0.6 implying zero-order correlation between the intake of fats of type B and Y would be zero. Yet, by controlling for fats of type B in the model, we would obtain an unbiased estimate of the effect of fats of type A on Y as βA , whereas if we did not control for fats of type B, we would mistakenly calculate the correlation between fats of type A and Y to be λAβB . This example demonstrates that failing to control for the suppressor variable, or the PBC that creates omitted variable bias, could result in a biased estimate of IV effects on the outcome, even when the suppressor variable has no correlation with the outcome. This disputes the premise that a covariate uncorrelated with the outcome cannot be biasing the results of an association test between another variable and the outcome as an indicator of a causal effect, thus undermining the original assumption. Whereas in the psychometrics literature, such patterns have commonly been termed suppressor effects, in a nutrition epidemiology paper they were referred to as negative confounders (Choi et al., 2008). We provide both theoretical and empirical justifications for these observations in Appendix A in the supplementary text file.
+To illustrate the point, we set  $\beta_{A}$ = 0.5, $\beta_{B}$ = –0.24, $\lambda_{A}$ = 0.8 and $\lambda_{B}$ = 0.6 implying zero-order correlation between the intake of fats of type B and Y would be zero. Yet, by controlling for fats of type B in the model, we would obtain an unbiased estimate of the effect of fats of type A on Y as $\beta_{A}$ , whereas if we did not control for fats of type B, we would mistakenly calculate the correlation between fats of type A and Y to be $\lambda_{A}\beta_{B}$ . This example demonstrates that failing to control for the suppressor variable, or the PBC that creates omitted variable bias, could result in a biased estimate of IV effects on the outcome, even when the suppressor variable has no correlation with the outcome. This disputes the premise that a covariate uncorrelated with the outcome cannot be biasing the results of an association test between another variable and the outcome as an indicator of a causal effect, thus undermining the original assumption. Whereas in the psychometrics literature, such patterns have commonly been termed suppressor effects, in a nutrition epidemiology paper they were referred to as negative confounders (Choi et al., 2008). We provide both theoretical and empirical justifications for these observations in Appendix A in the supplementary text file.
 
-## How to avoid misperception 9
+### How to avoid misperception 9
 
 This misperception is easily avoided if we refrain from only relying on marginal correlation to select covariates to include in the model and instead apply a backdoor criterion (Pearl and Mackenzie, 2018) to help decide which variables to adjust for and which to not adjust for. Provided that the directed acyclic diagram (DAG) in Figure 3 conforms to the true DAG, intake of fats B meets the backdoor criterion and must be adjusted for when estimating the effect of intake of fats, A on the outcome Y.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82268/elife-82268-fig3-v1.jpg)
 
-**Figure 3.:** Direction of arrows represents causal directions and λ, and A, λB, βAβ are structural coefficients.B
+**Figure 3.:** Direction of arrows represents causal directions and λA, λB, βA, and βB are structural coefficients.
 
-Figure 3 shows a simple causal model. On the left side of the figure is a variable representing an individual’s belief about the danger of dietary fat consumption. This belief affects their consumption of two types of fats, A and B. Fat type A is harmful and has a negative impact on health, while fat type B has a positive effect and improves health outcomes. The Greek letters on the paths indicate the causal effects in the model. Without loss of generality, we assume all variables have been standardized to have a variance of 1.0. From the rules of path diagrams (Alwin and Hauser, 1975; Bollen, 1987; Cheong and MacKinnon, 2012), we can calculate the correlations between Y and intake of fats of type B to be ρYB=βB+λBλAβA. This correlation is zero when λAλB=−βBβA.
+Figure 3 shows a simple causal model. On the left side of the figure is a variable representing an individual’s belief about the danger of dietary fat consumption. This belief affects their consumption of two types of fats, A and B. Fat type A is harmful and has a negative impact on health, while fat type B has a positive effect and improves health outcomes. The Greek letters on the paths indicate the causal effects in the model. Without loss of generality, we assume all variables have been standardized to have a variance of 1.0. From the rules of path diagrams (Alwin and Hauser, 1975; Bollen, 1987; Cheong and MacKinnon, 2012), we can calculate the correlations between Y and intake of fats of type B to be $ρ_{YB=\beta_{B}+\lambda_{B}\lambda_{A}\beta_{A}}$. This correlation is zero when $\lambda_{A}\lambda_{B}=\frac{−\beta_{B}}{\beta_{A}}$.
 
 ## Misperception 10. If a plausible confounding variable is one that has a bivariate unadjusted correlation of zero with the IV, then it does not create bias in the association of the IV with the outcome
 
-## Why misperception 10 occurs
+### Why misperception 10 occurs
 
 This misperception is based on the same premises as stated above but manifests differently. Let us replace ‘confounding variable’ with ‘PBC,’ which we defined earlier. For Misperception 10, the presumption is that a PBC, if not properly included and controlled for in the design or analysis, will only bias the extent to which the association between the IV and the DV represents the cause or effect of the IV on the DV if the PBC is related to both the IV and the DV.
 
@@ -207,7 +207,7 @@ Under those assumptions, if we consider a PBC and find that it is one that has a
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82268/elife-82268-fig4-v1.jpg)
 
-**Figure 4.:** Direction of arrows represents causal directions and λ αz, αz,, and x, βzβx are structural coefficients. The error terms e1 and e2 have variances chosen so Y1 and Y2 have variances 1 (see the Appendices for more details).
+**Figure 4.:** Direction of arrows represents causal directions and λz, αz, αx, βz, and βx are structural coefficients. The error terms e1 and e2 have variances chosen so Y1 and Y2 have variances 1 (see the Appendices for more details).
 
 In this case, both X and Z have a causal effect on Y1. Y1 can then be referred to as a ‘collider’ (see Glossary). It is well established that conditioning on a collider will alter the association between joint causes of it. Most often, collider bias is discussed in terms of creating associations. For example, in the figure shown here, if Z and X were not correlated, but both caused increases in Y1, then conditioning on (i.e. ‘controlling for’) Y1 would create a positive or negative correlation between X and Z. However, as Munafò et al., 2018 explain, collider bias need not simply create associations, but can also reduce or eliminate associations: “Selection can induce collider bias… which can lead to biased observational… associations. This bias can be towards or away from any true association, and can distort a true association or a true lack of association.”
 
@@ -219,7 +219,7 @@ More sophisticated models involving missing data approaches and other approaches
 
 In the end, there is no substitute for either randomization or, at a minimum, informed argument and assumptions about the causal structure among the variables. No simple statistical rule will allow one to decide whether a covariate or its exclusion is or is not creating bias.
 
-## How to avoid misperception 10
+### How to avoid misperception 10
 
 Selecting or conditioning on a collider can bias estimated effects in unforeseeable ways. Given a causal DAG, the use of the backdoor criterion can help the analyst identify variables that can safely be adjusted for and those that can bias (confound) the effect estimate of interest. In Figure 4, for example, Y1 does not meet the backdoor criterion from Y2 to X, and adjusting for it or selecting on it will bias the estimate of the effect estimate.
 
@@ -229,11 +229,11 @@ This is, in essence, a statement of the unbiasedness of an analytic approach. By
 
 Unfortunately, we have substantial evidence from many sources that many investigators instead choose analytical approaches, including the treatment of covariates, that serve their interests (e.g. Head et al., 2015; Wicherts et al., 2016; Bruns and Ioannidis, 2016). Conventionally, this is termed ‘p-hacking’ (Simonsohn et al., 2014), ‘investigator degrees of freedom’ (Simmons et al., 2011), ‘taking the garden of forking paths’ (Gelman and Loken, 2013), and so on. If such methods are used, that is, if investigators try multiple ways of controlling for which, how many, or form of covariates until they select the one that produces the results most commensurate with those they wish for, the results will most certainly be biased (Sturman et al., 2022; Kavvoura et al., 2007; Banks et al., 2016; O’Boyle et al., 2017; Simmons et al., 2011; Christensen et al., 2021; Stefan and Schönbrodt, 2022; Austin and Brunner, 2004).
 
-## Why misperception 11 occurs
+### Why misperception 11 occurs
 
 To our knowledge, surveys do not exist describing the extent to which authors are aware of the consequences of intentionally choosing and reporting models that control for covariates to obtain a certain result. Some evidence exists, however, that suggests authors do sometimes intentionally select covariates to achieve statistical significance, such as a survey by Banks et al. of active management researchers (Banks et al., 2016). O’Boyle et al. observed changes in how control variables were used in journal articles compared with dissertations of the same work, with the final publications reporting more statistically significant findings than the dissertations (O’Boyle et al., 2017). Research on the motivations of these practices may help to focus preventive interventions.
 
-## How to avoid misperception 11
+### How to avoid misperception 11
 
 This concern with P-hacking is one of the major impetuses behind those in our field encouraging investigators in observational studies to preregister their analyses (; Dal Ré et al., 2014). Many steps in the model-building process could consciously or unconsciously influence the probability of type I error, from the conceptualization of the research question (e.g. the quality of prior literature review, discussions with collaborators and colleagues that shape modeling choices), to any prior or exploratory analysis using that dataset, or to the numerous analytical decisions in selecting covariates, selecting their forms, accounting for missing data, and so on. Future theoretical and empirical modeling is needed to inform which decisions have the least likelihood of producing biased findings.
 
@@ -241,11 +241,11 @@ However, that is not to say that investigators should not limit their flexibilit
 
 ## Misperception 12. p values derived from implementing statistical methods incorporating covariates mean exactly what they appear to mean and can be interpreted at face value
 
-## Why misperception 12 occurs
+### Why misperception 12 occurs
 
 This is not necessarily true. An article from many years ago discusses the problem of a reproducible ‘Six Sigma’ finding from physics (Linderman et al., 2003). A Six Sigma finding is simply a finding whose test statistic is six or more standard deviations from the expectation under the null hypothesis. Six Sigma findings should be indescribably rare based on known probability theory (Actually, they are exactly describably rare and should occur, under the null hypothesis, 10e-10 proportion of the time.). However, it seems that all too often, Six Sigma findings, even in what might be seen as a mature science like physics, are regularly overturned (Harry and Schroeder, 2005; Daniels, 2001). Why is this? There are likely multiple reasons, but one is plausible that the assumptions made about the measurement properties of the data, the distributions of the data, and the performance of the test statistics under violations of their pure assumptions were not fully understood or met (Hanin, 2021). This issue involving violations of assumptions of statistical methods (Greenland et al., 2016) may be especially important when dealing with unusually small alpha levels (i.e. significance levels) (Bangalore et al., 2009). This is because a test statistic that is highly robust to even modest or large violations of some assumptions at higher alpha levels such as 0.05 may be highly sensitive to even small violations of assumptions at much smaller alpha levels, such as those used with Six Sigma results in physics. Another example is with the use of multiple testing ‘corrections’ in certain areas like genetic epidemiology with genome-wide association testing in nutrition and obesity research, where significance levels of 10e-8 are commonly used and p values far, far lower than that are not infrequently reported.
 
-## How to avoid misperception 12
+### How to avoid misperception 12
 
 In short, robustness at one significance level does not necessarily imply robustness at a different significance level. Independent replication not only takes into account purely stochastic sources of error but also potentially allows one to detect the inadvertent biasing effects of other unknown and unspecifiable factors beyond stochastic variation.
 
@@ -255,6 +255,6 @@ We have discussed 12 issues involving the use of covariates. Although our descri
 
 We encourage readers to seek the advice of professional statisticians in designing and analyzing studies around these issues. Furthermore, it is important to recognize that no one statistical approach to the use or nonuse of any particular covariate or set of covariates in observational research will guarantee that one will obtain the ‘right’ answer or an unbiased estimate of some parameter without demanding assumptions. There is no substitute for the gold standard of experimentation: strictly supervised double-blind interventional experiments with random selection and random assignment. This was aptly illustrated in a study by Ejima et al., 2016. This does not mean that one should not try to estimate associations or causal effects in observational research. Indeed, as Hernán effectively argues (Hernán, 2018), we should not be afraid of causation. When we do much observational research, we are interested in estimating causal effects. But we must be honest: what we are actually estimating is associations, and we can then discuss the extent to which those estimates of associations may represent causal effects. Our ability to rule out competing explanations for the associations observed, other than causal effects, strengthens the argument that the associations may represent causal effects, and that is where the wise use of covariates comes in. But such arguments used with covariates do not demonstrate causal effects, they merely make more or less plausible in the eyes of the beholder that an association does or does not represent causation. In making such arguments, as cogently noted on the value of epistemic humility and how to truly enact it, “Intellectual humility requires more than cursory statements about these limitations; it requires taking them seriously and limiting our conclusions accordingly” (Hoekstra and Vazire, 2021). That is, consideration of arguments about the plausibility of causation from association should not be given in such a way as to convince the reader, but rather to truly give a fair and balanced consideration of the notion that an association does or does not represent a particular causal effect. As Francis Bacon famously said, “Read not to contradict and confute; nor to believe and take for granted; nor to find talk and discourse; but to weigh and consider” (Bacon, 2022).
 
-## Data availability
+### Data availability
 
 All data generated or analyzed during this study are included in the manuscript and supplementary files; R studio software used for the description and illustration of misperception 5 a, misperception 9 and misperception 10 are publicly available on GitHub.

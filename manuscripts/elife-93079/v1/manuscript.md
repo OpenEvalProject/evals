@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Physiology, University of California-San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Neuroscience Graduate Program, University of California-San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Biomedical Sciences Graduate Program, University of California-San Francisco San Francisco United States
+1. Department of Physiology, University of California-San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Neuroscience Graduate Program, University of California-San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Biomedical Sciences Graduate Program, University of California-San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
@@ -29,17 +29,45 @@ Here, we describe the coordinated changes in breath airflow and pitch in the 10 
 
 ## Results
 
-## Vocalizations are produced by a program coupled to breathing
+### Vocalizations are produced by a program coupled to breathing
 
 It is possible that the 10 murine ultrasonic vocalizations (USVs) defined by unique pitch patterns (‘syllable types’; Grimsley et al., 2011) are formed by distinct breaths or as substructures nested in a common breath. Prior work has suggested the latter (Sirotin et al., 2014). To expand upon this, we simultaneously measured breathing and USVs by customizing the lid of a whole-body plethysmography chamber to accommodate a microphone. Male mice in the chamber were exposed to fresh female urine and robustly sniffed and vocalized for the first 5–10 min of the recording at a peak rate of about 4 events per second (n=6) (Figure 1A and B). A vocalization was classified as a narrow-band sound in the 40–120 kHz ultrasonic frequency range during a single breath (Figure 1A). The instantaneous frequency of vocalization breaths was typically between 5 and 10 Hz (mean: 7.5 Hz) (Figure 1C) and mostly occurred during episodes of rapid sniffs (8.5–10 Hz) (Figure 1A and B), as previously reported (Sirotin et al., 2014; Castellucci et al., 2018). When compared to neighboring breaths, vocalization breaths were slightly slower overall (Figure 1C) with subtly larger inspiratory and perhaps expiratory airflow despite similar durations of each phase (Figure 1D and E). These data reveal that a vocalization breath appears mostly like a normal breath but with the addition of a nested sound pattern. This led us to hypothesize that a distinct sub-program is activated within a breath to generate a vocalization.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig1-v1.jpg)
+
+**Figure 1.:** (A) Male mice exposed to female urine produced ultrasonic vocalizations (USVs) at about 75 kHz (top) that coincide with the expiratory airflow (E, arbitrary units) of the breath cycle (bottom). Red box indicates the length of the USV. A bout of vocalizations contains breaths with USVs (red) interspersed among sniff breaths (black). (B) Rates of breathing (black) and USV production (red). Exposure to female urine at time 0, n=6 mice. (C) Left, histogram of the instantaneous frequency of breaths with and without USVs from n=6 animals. Right, average instantaneous frequency for each mouse (mean ± SEM). Each dot is the mean from each animal. p-Value 0.03; paired t-test. (D) Scatter plot of the inspiratory (Ti) and expiratory time (Te) for USV (red) and non-USV (black) breaths from a representative animal. Right, bar graph of mean ± SEM of Ti, Te, and the ratio for n=6. p-Values 0.40, 0.18, and 0.25; paired t-test. (E) The breath peak inspiratory (pif) and expiratory (pef) airflow represented as in D. p-Values 0.01, 0.27; paired t-test. (F) Bar graph (mean ± SEM) of the percent of total USVs for each type from n=6 mice.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Left, raster plot of USV onset and offset times (ms) aligned to the beginning of expiration (onset, black and offset, red) for 1850 events. Below, the average expiratory length for n=6 animals. Right, histogram of the onset for each vocalization during a normalized expiratory duration. Note, while onset is biased to early expiration, vocalizations can begin throughout and even in late expiration.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Representative examples for each of the most common USV types and the representation of the onset and offset as Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Representative examples for the remaining USV types and the representation of the onset and offset as Figure 1—figure supplement 1. Note, more complex vocalizations have onset and offset times that occur later in expiration.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Raster plot of 1850 USVs aligned by the beginning of expiration with the sound onset and offset annotated by dots. The breath airflow is represented by the gradient from blue to gray, where inspiration is blue and expiration is gray. Note that breaths after ~1200 have late onset during expiration and delay the onset of the subsequent inspiration.
+
 The adult murine lexicon is composed of at least 10 USV syllable types that are defined by different, but stereotyped, patterns of pitch. Most breaths contain a single syllable (88%), which we define as a continuous USV event (Figure 1F and Figure 1—figure supplements 2–3), however, on some occasions, we observed two (8%) or three (4%) syllables separated by >20 ms within a single breath (Figure 1—figure supplement 3). This structure mirrors that described in neonatal cries (Wei et al., 2022). A pre-trained convolutional neural network (CNN) was used to classify USVs into different types based on changes in pitch (Fonseca et al., 2021), and the on- and offset of each vocalization was overlayed upon the corresponding breath airflow (Figure 1—figure supplements 1–3). Vocalizations began and ended throughout expiration (Figure 1—figure supplement 1), and the most common tended to start near the onset of exhalation and ended shortly thereafter (like the up frequency modulated [fm], step down, flat, and short types) (Figure 1—figure supplement 2). Vocalizations with more intricate changes in pitch had more variable times of on- and offset (like complex, chevron, two step, multi, step up, down fm) (Figure 1—figure supplement 3). And lastly, when the vocalizations occurred late in expiration, the duration of this breath phase was prolonged (Figure 1—figure supplement 4). The bias of USV timing by the breath combined with the USV modulation of breath length demonstrate these programs are independent but reciprocally coupled.
 
-## Two mechanisms create the changes in pitch pattern
+### Two mechanisms create the changes in pitch pattern
 
 Fluctuations in airflow speed through the larynx produce changes in the sound’s pitch. For example, augmenting airflow through the explanted rodent larynx increases pitch (Mahrt et al., 2016). We proposed two potential mechanisms that could contribute to how the laryngeal airflow is modulated to form the distinct USV types in the murine lexicon: one based on the swiftness of exhalation pushing air through the larynx (model 1), and the other based on the diameter of the laryngeal opening (model 2). According to the first model, changes in pitch positively correlate with the breath expiratory airflow measured by plethysmography, which we term positive intonation. On the other hand (model 2), a narrowed larynx increases pitch by speeding local airflow while simultaneously impeding the overall expiratory airflow measured by plethysmography; we call this negative intonation. Note, these models can form similar expiratory airflow patterns, but predict opposite relationships to pitch.
 
 We assessed for evidence of each model by calculating the correlation coefficient (r) between instantaneous expiratory airflow and the corresponding USV fundamental frequency. Down or up fm USVs served as simple USV examples and we found that these were positively or negatively correlated, respectively (median r=0.62 and –0.46, Figure 2A and C). These two were also distinguished by the sound onset and offset, whereby down fm started and ended later during the expiration (Figure 1—figure supplements 2–3). These distinguishing features are consistent with the sounds being produced by separate mechanisms to alter pitch, positive and negative intonation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig2-v1.jpg)
+
+**Figure 2.:** (A) Left, example of the expiratory airflow and pitch for a down frequency modulated (fm) USV. Middle, magnification of airflow and sound. The scale of airflow is not displayed. The time of breath airflow from expiration onset during the USV is color coded blue to white. Scatter plot of instantaneous expiratory airflow and pitch for the single USV and the correlation (line, r). Note, the change in pitch mirrors airflow (annotated as ‘+’), consistent with the ‘breath modulation’ called model 1. Box and whisker plot of n=40 down fm correlation coefficients (r). Controls, normal USV pitch vs shuffled airflow or shuffled pitch to normal USV expiratory airflow. (B–D) Representative expiratory airflow and pitch, box and whisker plot of all r values, and onset/offset for complex (n=165), up fm (n=589), and two step (n=61) vocalizations represented as in A. The airflow for each unique USV element is uniquely color coded as green, blue, or purple. Note, the change in pitch for two components correlates and one anti-correlates. This is consistent with both mechanisms being sequentially used. Annotated as mixed blue and green box and whisker plot. *=p<0.05, one-way ANOVA with Sidak’s post hoc test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Box and whisker plot of correlation coefficients (r) for step down (n=293), flat (n=337), short (n=168), chevron (n=99), multi (n=58), and step up (n=40) USVs. *=p<0.05, one-way ANOVA with Sidak’s post hoc test.
 
 Between these mechanisms, most syllable types displayed positive intonation. Five of the other eight USV syllable types had positively shifted intonation, the complex, step down, chevron, two step, and multi (median r=0.31, 0.28, 0.32, 0.19, and 0.24, respectively) (Figure 2B and D and Figure 2—figure supplement 1). In particular, the mirrored oscillations in the breath expiratory airflow and pitch during a complex vocalization best illustrated the positively coupled relationship (model 1, Figure 2C). In contrast, the up fm was the only USV with negative intonation. The r values for positively and negatively correlated USVs were not random, as they fell outside r values computed in simulated datasets composed of USVs with shuffled expiration airflow or expirations with shuffled pitch frequencies (Figure 2 and Figure 2—figure supplement 1).
 
@@ -47,7 +75,7 @@ The two step and step up USVs (median r=0.19 and –0.03) appeared to have a por
 
 Across all USV types, we found that the relationship between airflow and pitch is relative rather than absolute which is expected since the relationship is determined by at least two independent variables (laryngeal tone and exhalation speed). In summary, these results establish an important positive connection between the breath expiratory airflow to modulate pitch (model 1). This supports the hypothesis that a vocalization pattern generator must integrate with and even control the breath airflow as a key mechanism to produce various USV types in the murine lexicon.
 
-## Inspiratory and laryngeal muscles have coordinated activity that represents positive and negative intonation
+### Inspiratory and laryngeal muscles have coordinated activity that represents positive and negative intonation
 
 To explore the mechanisms underlying the two intonation models, we simultaneously recorded the electrical activity of the primary muscles for breathing, the diaphragm, and laryngeal control (thyroarytenoid and cricothyroid) during basal breathing and bouts of vocalizations in male mice. Electromyography (EMG) electrodes were permanently placed along the diaphragm and inserted into the larynx, while breathing and USVs were measured in parallel by whole-body plethysmography and a microphone (as in Figure 1). Electrocardiogram signals were annotated and removed from the diaphragm EMG recordings post hoc. According to our models and the timing of the syllable types within the breath (Figure 1—figure supplements 2–3), we anticipated that USVs with positive intonation would have a coordinated re-activation of the diaphragm and laryngeal muscles later in expiration, while the up fm would only have laryngeal activity at expiration onset.
 
@@ -55,7 +83,7 @@ EMG activity during basal breathing displayed the three phases of the breath cyc
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig3-v1.jpg)
 
-**Figure 3.:** (A) Activity of the diaphragm (inspiratory) and laryngeal (thyroarytenoid and cricothyroid) muscles were recorded in vivo by electromyography (EMG) simultaneously with breathing and ultrasonic vocalizations (USVs). Right, example of sound, breath airflow, and muscle activities during a basal breath. The diaphragm shows restricted activity during inspiration and laryngeal muscles are active during the post-inspiration period. Note, blue and red arrows/lines indicate the ~10 ms offset of the peak EMG activity and airflow/sound measurements. (B) Representative vocalization bout shows robust vocalizations and breathing in mice with implanted EMGs. (C) Representative sound, airflow, diaphragm, and laryngeal EMGs during the expiration of a down frequency modulated (fm) (n=23 annotated), complex (n=43 annotated), and up fm USV (n=29 annotated). Blue arrow and dashed line indicate the airflow and sound offset from the diaphragm peak muscle activity. Bottom, probability density function (PDF) for the peak of the integrated EMG activity for the diaphragm (blue) and larynx (red) during the normalized expiration. Y-axis is from 0 to 1. Note, data in A–D is from one animal with clear EMG signals that represents the findings in all three animals studied. (D) Schematics for each model. Model 1 – breath control: inspiratory and laryngeal muscles have alternating activity throughout the sound/expiration and a r>0 for pitch vs expiratory airflow. Muscle activities correspond to an increase (laryngeal) and a decrease (diaphragm) in pitch. Model 2 – laryngeal only: laryngeal but not diaphragm activity occurs during the sound and produces a r<0 for pitch vs expiratory airflow.Figure 3—source data 1.
+**Figure 3.:** (A) Activity of the diaphragm (inspiratory) and laryngeal (thyroarytenoid and cricothyroid) muscles were recorded in vivo by electromyography (EMG) simultaneously with breathing and ultrasonic vocalizations (USVs). Right, example of sound, breath airflow, and muscle activities during a basal breath. The diaphragm shows restricted activity during inspiration and laryngeal muscles are active during the post-inspiration period. Note, blue and red arrows/lines indicate the ~10 ms offset of the peak EMG activity and airflow/sound measurements. (B) Representative vocalization bout shows robust vocalizations and breathing in mice with implanted EMGs. (C) Representative sound, airflow, diaphragm, and laryngeal EMGs during the expiration of a down frequency modulated (fm) (n=23 annotated), complex (n=43 annotated), and up fm USV (n=29 annotated). Blue arrow and dashed line indicate the airflow and sound offset from the diaphragm peak muscle activity. Bottom, probability density function (PDF) for the peak of the integrated EMG activity for the diaphragm (blue) and larynx (red) during the normalized expiration. Y-axis is from 0 to 1. Note, data in A–D is from one animal with clear EMG signals that represents the findings in all three animals studied. (D) Schematics for each model. Model 1 – breath control: inspiratory and laryngeal muscles have alternating activity throughout the sound/expiration and a r>0 for pitch vs expiratory airflow. Muscle activities correspond to an increase (laryngeal) and a decrease (diaphragm) in pitch. Model 2 – laryngeal only: laryngeal but not diaphragm activity occurs during the sound and produces a r<0 for pitch vs expiratory airflow.
 
 To study positive intonation, we analyzed the down fm and complex USVs. Down fms started later during expiration and began at a drop in expiratory airflow (Figure 3C). The diaphragm activity occurred just before the decrease in expiratory airflow (blue arrow, Figure 3C) and the following laryngeal activity persisted during the sound. This pattern reflects the activity of the muscles during a normal breath, inspiration (diaphragm) then post-inspiration (larynx), but this pattern was ectopically embedded within an expiration. Similarly, complex vocalizations had the diaphragm then laryngeal activity pattern during expiration, but this cycled multiple times concurrent with the increase and decrease in expiratory airflow and pitch (Figure 3C). Complex USVs had an average of 1.5 cycles per expiration, the interval between diaphragm bursts was 43±14 ms, and the laryngeal activity occurred at 69 ± 12% through this diaphragm-to-diaphragm interval. Also, in ~19% of the complex USVs, sound, laryngeal, and diaphragm activity co-occurred, suggesting that other mechanisms contribute to the diversity of sounds.
 
@@ -63,25 +91,33 @@ Up fm represents negative intonation, and correspondingly, the activity of the m
 
 In summary, these EMG studies of the key inspiratory muscle and larynx serve to reflect the core components of the breathing CPG that produce inspiration and post-inspiration. Ectopic activation of these antiphase patterns during the expiration of a vocal breath appears to result in a USV with positive intonation and the cyclic engagement of this leads to an oscillating pitch. Additionally, the termination of the USV with negative intonation corresponds to the re-activation of inspiratory muscles (Figure 3D). The novel finding that the endogenous pattern of the breathing CPG is re-engaged within an adult vocal breath, a ‘mini-breath’, mimics the rhythmic syllables of the neonatal vocalizations patterned by the iRO (Wei et al., 2022). This suggests that the iRO also plays a central role in the production of adult vocalizations.
 
-## The iRO resides within the adult brainstem phonation circuit
+### The iRO resides within the adult brainstem phonation circuit
 
 The iRO has yet to be identified in adult mice. The iRO is molecularly defined in the neonate by the co-expression of Preproenkephalin (Penk) and Vesicular glutamate transporter 2 (Slc17a6) and is anatomically localized to the medullary ventral intermediate reticular formation (iRT) directly medial to the compact nucleus ambiguus (NA) (Wei et al., 2022). We determined that the iRO molecular and anatomical features exist in adults in two ways. First, we generated triple transgenic mice that label Penk+Slc17a6+ neurons and the derived lineages with tdTomato (Penk-Cre; Slc17a6-Flp; Ai65) (Figure 4A). And second, we stereotaxically injected the iRO region of Penk-Cre; Slc17a6-Flp mice with a Cre- and Flp-dependent reporter adeno-associated virus (AAV CreONFlpON-ChR2::YFP) (Figure 4B and C). Consistent with the definition of the iRO in neonatal mice, tdTomato+ and YFP+ Penk+Slc17a6+ neurons were found in the iRT adjacent to the compact NA (Figure 4A–C). These results demonstrate that the ventrolateral medulla of adult mice contains neurons with the molecular and anatomical identity of the iRO.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig4-v1.jpg)
 
-**Figure 4.:** (A) Labeling of Penk+Slc17a6+ neurons in the iRO anatomical region in adult Penk-Cre;Slc17a6-Flp;Ai65 mice (CreONFlpON-tdTomato) (observed in n=5 mice). The iRO region is defined as medial to the compact nucleus ambiguus (cNA, ChAT+) in the ventral intermediate reticular formation (iRT). Note, the cNA is filled with tdTomato labeled axons. Cell bodies marked with arrowhead. (B) Bilateral stereotaxic injection of AAV CreONFlpON-ChR2::EYFP into the iRO anatomical region of Penk-Cre;Slc17a6-Flp adult mice. (C) Magnified boxed region in B. Arrowheads label neuron soma quantified right (n=3). (D) Axons of EYFP expressing iRO neurons from B in the retroambiguus (RAm) anatomical region where laryngeal premotor and motor neurons are located. (E) Axons of EYFP expressing iRO neurons from B in the breathing pacemaker. (F) Unilateral retrograde AAV CreON-EYP (AAVrg) stereotaxic injection into the iRO region in Slc17a6-Cre adults (n=3). Glutamatergic neurons were identified in the contralateral (contra.) and ipsilateral (ipsi.) midbrain periaqueductal gray (PAG). Anatomical regions of the PAG: dorsomedial (dm), dorsolateral (dl), lateral (l), ventrolateral (vl) nearby to the dorsal raphe nucleus (DRN) and surrounding the cerebral aqueduct (Aq). Quantification of glutamatergic PAG neurons in each region demarcated, ns = not statistically significant; two-way ANOVA with Sidka’s post hoc test. (G) Model schematic of the iRO as a central component of the brainstem phonation circuit to convert a vocalization ‘go’ cue from the PAG into a motor pattern.Figure 4—source data 1.
+**Figure 4.:** (A) Labeling of Penk+Slc17a6+ neurons in the iRO anatomical region in adult Penk-Cre;Slc17a6-Flp;Ai65 mice (CreONFlpON-tdTomato) (observed in n=5 mice). The iRO region is defined as medial to the compact nucleus ambiguus (cNA, ChAT+) in the ventral intermediate reticular formation (iRT). Note, the cNA is filled with tdTomato labeled axons. Cell bodies marked with arrowhead. (B) Bilateral stereotaxic injection of AAV CreONFlpON-ChR2::EYFP into the iRO anatomical region of Penk-Cre;Slc17a6-Flp adult mice. (C) Magnified boxed region in B. Arrowheads label neuron soma quantified right (n=3). (D) Axons of EYFP expressing iRO neurons from B in the retroambiguus (RAm) anatomical region where laryngeal premotor and motor neurons are located. (E) Axons of EYFP expressing iRO neurons from B in the breathing pacemaker. (F) Unilateral retrograde AAV CreON-EYP (AAVrg) stereotaxic injection into the iRO region in Slc17a6-Cre adults (n=3). Glutamatergic neurons were identified in the contralateral (contra.) and ipsilateral (ipsi.) midbrain periaqueductal gray (PAG). Anatomical regions of the PAG: dorsomedial (dm), dorsolateral (dl), lateral (l), ventrolateral (vl) nearby to the dorsal raphe nucleus (DRN) and surrounding the cerebral aqueduct (Aq). Quantification of glutamatergic PAG neurons in each region demarcated, ns = not statistically significant; two-way ANOVA with Sidka’s post hoc test. (G) Model schematic of the iRO as a central component of the brainstem phonation circuit to convert a vocalization ‘go’ cue from the PAG into a motor pattern.
 
 Neonatal iRO neurons are presynaptic to the kernel of breathing, the pacemaker for inspiration (preBötzinger complex [preBötC]) (Smith et al., 1991), and premotor to multiple laryngeal and tongue muscles. We traced the YFP+ axons of Penk+Slc17a6+ neurons (Penk-Cre; Slc17a6-Flp and AAV CreONFlpON-ChR2::YFP) and found they elaborated within the NA and RAm where laryngeal premotor and motor neurons localize (Figure 4A and D), the breathing pacemaker (Figure 4E), and the hypoglossal (tongue) motor nucleus (Figure 4E). The projection patterns of these Penk+Slc17a6+ neurons provide additional evidence that these adult neurons maintain the same connectivity properties as the neonatal iRO neurons, indicating they can control the key elements for vocalization: the breath airflow and larynx.
 
 In adult mice, vocalizations have been triggered by activation of the midbrain periaqueductal gray (PAG), namely glutamatergic neurons in the lateral to ventrolateral subregion (Michael et al., 2020; Chen et al., 2021; Tschida et al., 2019). Note, an exact definition of PAG-USV stimulating neurons remains to be satisfactorily described. To assess if the iRO region is positioned downstream of the ventrolateral PAG, we unilaterally injected Slc17a6-Cre mice with a CreON-ChR2::YFP expressing retrograde traveling AAV (AAVrg) (Figure 4F). Among the labeled brain regions, we found YFP+ neurons in a region of the midbrain PAG overlapping with areas that contain PAG-USV neurons. To our surprise, neurons from the ipsi- and contralateral PAG projected to the iRO region in nearly equal numbers (Figure 4F). These molecular, anatomical, and neural morphology characterizations reveal that the iRO exists in adults and is embedded within the brainstem phonation network (PAG → iRO → the preBötC, NA, RAm, hypoglossal) (Figure 4G).
 
-## Ectopic activation of the putative iRO-induced vocalization
+### Ectopic activation of the putative iRO-induced vocalization
 
 If these labeled Penk+Slc17a6+ neurons are indeed the iRO, we anticipated that ectopic activation would induce vocalization. We tested this in two ways. First, we generated Penk-Cre;Slc17a6-Flp;CreONFlpON-ReaChR triple transgenic mice which express the red-shifted Channel Rhodopsin in Penk+;Slc17a6+ neurons and the derived lineage (ReaChR mice) and second, we stereotaxically injected the AAV CreONFlpON-Channel Rhodopsin2::YFP (ChR2) into the iRO region of Penk-Cre;Slc17a6-Flp mice. In both instances we implanted optic fibers above the iRO bilaterally to further localize neural activation (Figure 5A and Figure 5—figure supplement 1A). In both experimental regimes, ectopic light activation of the Penk+Slc17a6+ neurons induced bouts of vocalizations where the breathing rate was entrained by the frequency of stimulation (Figure 5A, Figure 5—figure supplement 1I). Most bouts and the breaths within contained vocalizations (Figure 5B and Figure 5—figure supplement 1B) and the amplitudes of all elicited breaths were significantly increased (Figure 5—figure supplement 1J). Some AAV-ChR2 mice showed previously described broad-band harmonic vocalizations (like Grimsley et al., 2011), while others did not vocalize (n=5/9), likely due to incomplete labeling. Note, the audible sound during inspirations in these animals reflects orofacial movement artifacts that result in the fiberoptic colliding with the plethysmography chamber walls. Additionally, the ReaChR animals without vocalizations were found to have ‘off-target’ optic fiber implants (n=2/6). Taken together, these data are consistent with the notion that the iRO is sufficient to induce phonation via control of both breath airflow and laryngeal opening, just as it does in neonatal cries.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig5-v1.jpg)
+
+**Figure 5.:** (A) Optogenetic activation of the iRO region in Penk-Cre;Slc17a6-Flp;CreONFlpON-ReaChR mice evoked USVs (blue box, 5 Hz stimulation). USVs occurred during, or shortly after laser onset. (B) Percentage of stimulation bouts containing at least one USV and the percentage of breaths within the stimulation window containing a USV. (C) Percentage of optogenetically evoked (blue) or endogenously occurring (gray) syllables that are up frequency modulated (fm) of down fm. ****p-value<0.001; two-way ANOVA with Sidak’s post hoc test, p>0.05 for all other types. (D) Box and whisker plot of the correlation coefficient between breathing airflow and pitch (r) for all opto evoked (n=395) and endogenous (n=1850) USVs and all opto evoked and endogenous vocalizations without down fm (n=143 and 1810) from n=4 opto and n=6 endogenous mice. ****p-value<0.001; Mann-Whitney test. (E) Left, example of the expiratory airflow and pitch for an optogenetically evoked up fm USV. Middle, magnification of airflow and sound. Time of breath airflow during the USV is color coded blue to white. Scatter plot of instantaneous expiratory airflow and pitch for the single USV. Compare to endogenous up fm USV in Figure 2C. Right, box and whisker plot of correlation coefficients (r) for each optogenetically evoked and endogenous up fm USV (n=15 vs 589). (F) Step up USV as in E. Box and whisker plot of correlation coefficients (r) for each optogenetically evoked and endogenous step up USV (n=15 vs 40). (G) Box and whisker plots for the remaining r-values of optogenetically evoked USV types. Down fm n=242 vs 40, step down n=38 vs 293, flat n=34 vs 337, short n=27 vs 168, and chevron n=10 vs 99 from n=4 opto and 6 endogenous mice. (E–G) Two-way ANOVA with Sidak’s post hoc test for two-way comparisons was used; all p-values>0.05. (H) Schematic illustrating the two mechanisms to pattern the USV pitch. Left, the reciprocal connection between the iRO and breathing pacemaker patterns the USVs with a positive correlation between pitch and airflow. Right, the retroambiguus (RAm) control of the larynx dictates the anti-correlated USV types. Middle, the combination of these two mechanisms within a single breath create additional USV patterns.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93079/elife-93079-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative example of the change in breathing and USVs during a single light stimulation bout (blue box, 10 Hz) in Penk-Cre;Slc17a6-Flp mice stereotaxically injected with AAV CreONFlpON-Channel Rhodopsin2::YFP (ChR2) in the iRO (gray circle). Breathing rate is entrained by light and the amplitude is increased. USVs occur at the peak of expiration. rvIRt, rostral ventral intermediate reticular formation. (B) Percent of stimulation bouts and breaths within each bout that contain USVs or broad-band vocalizations in Penk-Cre;Slc17a6-Flp;ReaChR and Penk-Cre;Slc17a6-Flp virally injected mice. (C) Percent of mice with vocalizations for each tested genotype and injection site. ReaChR with iRO optic fiber implantation, n=6. iRO stereotaxic viral injection: Penk-Cre;Slc17a6-Flp, n=9; Oprm1-Cre;Slc17a6-Flp, n=4; Penk-Cre, n=4; Tac1-Cre, n=5, Slc32a1-Cre, n=4. PreBötzinger complex (PreBötC) stereotaxic viral injection: Slc17a6-Cre, n=4. (D–H) Representative examples of stimulation bouts for each genotype with rvIRt or preBötC viral injection. (I) Bar graph of average ± standard deviation and average for each animal (circle) for the instantaneous breathing frequency before and during the optogenetic laser pulse (10 Hz). *p<0.05; ***p<0.001; ****p<0.0001; two-way ANOVA with Sidak’s post hoc test. Genotypes and injection sites as in C–H. (J) Bar graph of average ± standard deviation and average for each animal (circle) for the ratio of the peak inspiratory flow (pif, black) and peak expiratory flow (pef, gray) for optogenetically stimulated breaths versus nearby unstimulated breaths for each genotype. *p<0.05; **p<0.01; two-way ANOVA with Sidak’s post hoc test. Genotypes and injection sites as in C–H.
+
 To demonstrate the specialization of the iRO neurons for vocalization and the inability of modulated breathing alone to elicit USVs, we performed several additional control experiments. First, to ensure that just stimulation of breathing is insufficient to elicit vocalization, we optogenetically excited the glutamatergic preBötC neurons (Slc17a6-Cre with AAV CreON-ChR2). Indeed, we found that, although breathing sped up, optogenetic stimulation never elicited vocalizations (Figure 5—figure supplement 1C, H, I). And second, to determine if the ability to elicit vocalizations was generalizable to other neural types in the iRO anatomical region, we activated Penk+, µ-opioid receptor+Slc17a6+, Tachykinin 1+, and Vesicular GABA transporter+neurons and found that vocalizations were never induced upon light stimulation, although breathing was altered in various ways (Figure 5—figure supplement 1). In summary, these data functionally demonstrate the existence of Penk+Slc17a6+ iRO neurons in adult mice and their ability to create vocalizations by modulating both breathing and presumably the larynx.
 
-## Excitation of the iRO evoked nearly the entire murine lexicon
+### Excitation of the iRO evoked nearly the entire murine lexicon
 
 Above, we described that one mechanism for generating the different patterns of vocalizations was via the modulation of the breath airflow (positive intonation). Once again, this was defined as a positive correlation between expiratory airflow and pitch (Figure 2). We hypothesized that this property stems from the iRO’s capacity to control breathing, and so we made the following predictions: (1) that the USVs evoked after stimulation would be biased to those with an endogenous positive correlation between airflow and pitch (like the down fm and step down), and (2) that the elicited USVs would be transformed to become more positively correlated.
 
@@ -91,43 +127,200 @@ We classified the evoked iRO vocalizations (Penk-Cre;Slc17a6-Flp;CreONFlpON-ReaC
 
 Here, we propose that the intonation that establishes the diversity of the adult murine lexicon is explained by two mechanisms, the modulation of the breath waveform and presumably the size of the laryngeal opening. We describe that unique vocalization types have characteristic fluctuations in the expiratory airflow, whereby some changes in pitch are strongly correlated with airflow (positive intonation) while others are anti-correlated (negative intonation). These two mechanisms can even be used in the same breath to produce complex changes in pitch. To our surprise, seven of the ten USV types primarily used the positive intonation mechanism. These data support a novel and key role for the breathing system in the production of various types of vocalizations. In support of this hypothesis, we found re-activation of the breathing CPG during the expiration phase of the vocal breath. This ectopic activity appeared as a ‘mini-breath’ (inspiratory diaphragm then post-inspiratory laryngeal muscle activities) nested within a normal expiration and corresponded with modulated airflow and pitch. This resembles how the vocalization CPG, the iRO, patterns the rhythmic syllable structure of neonatal cry vocalizations. We show that the iRO is sufficient to induce most of the endogenous USV syllable types via the modulation of the breath airflow. In contrast to the natural lexicon, the pitch of the evoked USVs is primarily explained by positive intonation. These data imply that the iRO can produce the mechanism to pattern positive intonation, thereby suggesting that negative intonation derives from a separate neuronal component of the phonatory system. We propose that these two mechanisms can be used independently or in conjunction to generate the diverse repertoire of vocalizations (Figure 5H).
 
-## The iRO likely patterns intonation for endogenous phonation
+### The iRO likely patterns intonation for endogenous phonation
 
 The description of the iRO within the adult neural circuit for phonation suggests a key role in patterning the endogenous adult vocalizations. In this case, we propose that the upstream PAG input would ‘turn on’ the iRO which then co-opts the breathing pacemaker and coordinates its anti-phase activity with the laryngeal muscles to produce and pattern the changes in breath airflow and vocal pitch (positive intonation). The iRO can do this since it is presynaptic to both the breathing pacemaker and the laryngeal motor neurons. In this case, the brief re-activation of inspiratory muscles we observed would slow ongoing expiration, enabling a decrease in airflow speed, and thus pitch. After, relaxation of these muscles results in an increase in expiration airflow and pitch. This type of oscillatory modulation we observed has also been seen in neonatal cries generated by the iRO (Wei et al., 2022). An important next step will be to validate the necessity of the iRO in adult phonation, as anticipated from its necessary role in neonatal vocalization. Nonetheless, the presence of the iRO across developmental stages implies a conserved role in innate vocalizations within the mouse and perhaps across the animal kingdom, where vocalization CPGs have been hypothesized and even identified in species from fish to birds to primates (Zhang and Ghazanfar, 2020; Chagnaud et al., 2011, Hage, 2009b, Kelley et al., 2020).
 
-## The iRO can autonomously produce multiple vocalization patterns
+### The iRO can autonomously produce multiple vocalization patterns
 
 A surprising finding is that ectopic activation of the iRO produces seven of the ten syllable types within the murine lexicon. How might this occur? One possibility is that the iRO has multiple modes which can each produce a different pattern of activity. Such a phenomenon has been demonstrated in other central pattern generating systems like the crustacean stomatogastric ganglia (Marder and Bucher, 2001; Marder, 2012). A more likely option is that additional mechanisms of vocal modulation are layered upon a basic pattern produced by the iRO. For example, other regions with direct control of the laryngeal motor neurons within RAm would add complexity to the vocalization induced by the iRO, akin to how vocal control by the human laryngeal motor cortex is conceptualized (Figure 5H; Dichter et al., 2018; Silva et al., 2022). Here, we propose that perhaps just two mechanisms (breath airflow and laryngeal opening) account for the intricacy of the murine sounds produced, and the layering of these enables a basic pitch structure within a breath to become sophisticated. Of note, these resulting models do not simplistically explain the origin of the pitch jumps that are present in some USV types and these may instead arise from mechanisms like an active process to alter the conformation of the larynx or upper airway.
 
 Recently, glutamatergic laryngeal premotor neurons in RAm were identified that are sufficient to elicit vocalizations, albeit somewhat abnormal, and also necessary to produce sound (Park et al., 2024; Veerakumar et al., 2023). This raises the possibility that these RAm neurons compose the cellular basis for the laryngeal control mechanism we propose produces negative intonation (Figure 5H). However, the fact that ectopic excitation of these neurons or iRO elicits vocalizations suggests that reciprocal connections are engaged to create the dynamics of vocalizations. Consistently, iRO neurons project to RAm and vice versa (Figure 3 and Park et al., 2024; Veerakumar et al., 2023). Interesting future studies will be to assess the necessity of either site to produce USVs upon ectopic excitation of the complementary region.
 
-## The control of breathing airflow is a novel biomechanical mechanism for intonation
+### The control of breathing airflow is a novel biomechanical mechanism for intonation
 
 Intonation is a key aspect of communication, whereby the same word or phrase could be used as a question or a statement simply by different fluctuations in pitch. Additionally, in tonal languages, the same sound with differences in pitch can have completely different meanings. Our findings describe a novel biophysical mechanism for intonation and a cellular basis. Now, the iRO or direct modulation of breathing can serve as a starting point to map higher level components of brain-wide vocalization circuits that structure additional subliminal layers of perception in speech.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by Kevin Yackle (kevin.yackle@ucsf.edu).
 
-## Materials availability
+#### Materials availability
 
 This study did not generate new unique reagents.
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Slc17a6-IRES2-FlpO-D knock-in</td>
+      <td>The Jackson Laboratory</td>
+      <td>030212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Penk-IRES2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>025112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26 LSL FSF ReaChR-mCitrine</td>
+      <td>The Jackson Laboratory</td>
+      <td>024846</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Tac1-IRES2-Cre-D</td>
+      <td>The Jackson Laboratory</td>
+      <td>021877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Oprm1Cre:GFP KIKO</td>
+      <td>The Jackson Laboratory</td>
+      <td>035574</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Vgat-ires-cre knock-in</td>
+      <td>The Jackson Laboratory</td>
+      <td>028862</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai65(RCFL-tdT)-D</td>
+      <td>The Jackson Laboratory</td>
+      <td>021875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(adeno-associated virus)</td>
+      <td>AAV5-hSyn-Con/Fon-hChR2(H134R)-EYFP</td>
+      <td>Addgene, Fenno et al., 2014.</td>
+      <td>55645-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(adeno-associated virus)</td>
+      <td>AAV5-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-HGHpA</td>
+      <td>Addgene</td>
+      <td>20298-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(adeno-associated virus)</td>
+      <td>AAVrg-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-HGHpA</td>
+      <td>Addgene</td>
+      <td>20298-AAVrg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves</td>
+      <td>GFP-1020</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ChAT (goat polyclonal)</td>
+      <td>Millipore</td>
+      <td>AB144p</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A78948</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat Alexa Fluor 546 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11056</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat Alexa Fluor 647 (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21447</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>MATLAB 2022b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VocalMat</td>
+      <td>Fonseca et al., 2021; Fonseca and Santana, 2022</td>
+      <td>https://github.com/ahof1704/VocalMat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>USVseg</td>
+      <td>Tachibana et al., 2020; rtachi-lab, 2024</td>
+      <td>https://github.com/rtachi-lab/usvseg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bespoke code</td>
+      <td>This paper, Bachmutsky et al., 2020, Wei et al., 2022</td>
+      <td>https://github.com/YackleLab/the-breath-shape-controls-intonation-of-mouse-vocalizations copy archived at Yackle, 2024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 Slc17a6FlpO (Daigle et al., 2018), PenkCre (Tasic et al., 2018), Tac1Cre (Harris et al., 2014), Oprm1Cre (Liu et al., 2022), VgatCre (Vong et al., 2011), Ai65 (Madisen et al., 2015), and LSL-FSF-ReaChR Hooks et al., 2015 have been described. Mice were obtained from Jackson Laboratories and bred in-house at the University of California, San Francisco (UCSF) Laboratory Animal Research Center. Mice were housed in groups of two to five unless otherwise stated under a 12:12 light-dark cycle with ad libitum access to chow and water. All animal experiments were performed in accordance with national and Institutional Animal Care and Use Committee – University of California San Francisco guidelines with standard precautions to minimize animal stress and the number of animals used in each experiment. Protocol number AN195769.
 
-## Recombinant viruses
+#### Recombinant viruses
 
 All viral procedures followed the Biosafety Guidelines approved by the UCSF Institutional Animal Care and Use Program (IACUC) and Institutional Biosafety Committee (IBC). The viruses used in experiments were AAV5-hSyn-Con/Fon-hChR2(H134R)-EYFP (55645-AAV5, Addgene, 1.8×1013 vg/ml), AAV5-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-HGHpA (20298-AAV5, Addgene, 1×1013 vg/ml), AAVrg-EF1a-DIO-hChR2(H134R)-EYFP-WPRE-HGHpA (20298-AAVrg, Addgene, 2.1×1013 vg/ml).
 
-## Methods details
+### Methods details
 
-## Endogenous USV and breathing recording
+#### Endogenous USV and breathing recording
 
 Male Slc17a6FlpO;PenkCre mice (aged 8–16 weeks) were indi vidually housed and habituated to experimenter handling and a plethysmography chamber for >4 days. On the test day, the mice were placed in a clean cage base with a female mouse for 5 min and then moved to a plethysmography chamber. The chamber was modified to accommodate a microphone to record vocalizations (CM16/CMPA, Avisoft Bioacoustics) and the airflow in the chamber was measured by a spirometer (FE141, ADInstruments). Both data streams were acquired through a DAQ board (PCI-6251, National Instruments) and written to disk for offline analysis. Sound was acquired at 400 kHz and airflow at 1 kHz. After a 20 min habituation period, mice had airflow and sound recorded for 5 min before a cotton bud soaked in fresh urine was placed in the chamber, and sound and breathing were recorded for a further 15 min. Urine was collected the day of the experiment from a group of five female mice temporarily housed in a custom-made wire-bottom cage.
 
@@ -137,7 +330,7 @@ For EMG recordings of the diaphragm and larynx we modified the protocol of Hére
 
 After several days of recovery, mice were placed in the plethysmography chamber and the EMG pins were connected to an amplifier (AM Systems 1800). Audio and airflow signals were acquired as described above. EMG signals were bandpass filtered (300 Hz to 20 kHz) and acquired at 10 kHz. Diaphragm EMG recordings that included an ECG signal were manually annotated and the artifact removed from the trace. EMG traces were rectified and integrated offline with a modified Paynter filter in MATLAB. Three types of USVs (up fm, down fm, complex) were manually inspected and EMG peaks were annotated to generate histograms (Figure 3).
 
-## Virus injection, fiber implantation, and optogenetics
+#### Virus injection, fiber implantation, and optogenetics
 
 Surgery was conducted with sterile tools and aseptic technique. Mice were first anesthetized with isoflurane (4%), the hair overlaying the scalp was shaved, and mice were placed in the stereotaxic frame where isoflurane (0.9–1.5%) was continuously delivered for the duration of the surgery. Mice were then injected with buprenorphine (0.1 mg/kg, s.c.) and carprofen (5 mg/kg, s.c.) and bupivicane (0.25 mg, under the skin of the scalp). The skin was then covered with betadine before an incision was made with a scalpel. The fascia was removed, and the skull dried with ethanol. The bregma and lambda sutures were identified and the skull was leveled using these landmarks. A craniotomy was drilled at the injection coordinates and a pulled glass pipette lowered to the injection site. An injection was made at a speed of 100 nl/min from an injection system (Nanoject III, Drummond). The injection pipette was left in place for 10 min following the injection then slowly retracted from the brain. In the case of bilateral injections, this process was then repeated on the other side. The skin was then closed by suture and the mouse transferred to a heated recovery cage.
 
@@ -147,12 +340,12 @@ Mice were given 6 weeks between injection/implantation surgery and being used fo
 
 Recordings were manually inspected for USVs during the laser epoch and recordings containing USVs were then run through VocalMat to find time stamps and to categorize each USV by type. MATLAB code was then used to quantify the correlation coefficients of optogenetically evoked USVs and the underlying airflow as described above. To analyze the breath statistics of optogenetically evoked breathing, the trial with stimulation parameters – 10 Hz, 25 ms pulse width, 3 s duration – was run through a code to extract breath statistics (Pif, Pef, instantaneous frequency) from the 30 s period prior to stimulation and from the five laser epochs.
 
-## Histology
+#### Histology
 
 More than 6 weeks following viral injection or the completion of optogenetic testing mice were deeply anesthetized with isofluorane and transcardially perfused with 0.1 M phosphate-buffered saline (PBS) then PBS containing 4% paraformaldehyde (PFA). Brains were dissected from the fixed mice and refrigerated in 4% PFA overnight then cryoprotected in 30% sucrose in PBS. Brains were sectioned to 30 µm coronal on a freezing microtome. Sections were washed three times for 5 min in PBS before being incubated in blocking solution (PBS, 5% normal donkey serum, 0.3% Triton X-100) for 2 hr. Sections were then incubated overnight in primary antibodies (Chicken anti-GFP, 1:1000, Aves; Goat anti-ChAT, 1:500, Millipore) diluted in a carrier solution (PBS, 1% normal donkey serum, 0.3% Triton X-100). Following incubation sections were washed with PBS five times for 5 min then incubated in secondary antibodies (Donkey anti-Chicken 488, Donkey anti-Goat 546, Donkey anti-Goat 647) diluted 1:500 in a carrier solution (PBS, 0.3% Triton X-100) for 2 hr at room temperature. After secondary incubation, sections were washed with PBS five times for 5 min then mounted onto glass slides and cover-slipped with mounting media (Prolong Gold, Invitrogen) and 1 µg/ml DAPI.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Statistics
+#### Statistics
 
 Data from MATLAB was imported to Prism 9 (GraphPad) for statistical analysis. For all statistical analysis except Figure 2 and Figure 5D–G the mouse was used as the experimental unit. Data were assumed to be normally distributed and of equal variance and parametric tests were used. For data with one discrete variable and measurements made from the same animal (Figure 1C–E) paired t-test was used. For data with two variables one or both of which had more than two factors (Figures 4G and 5C and Figure 1—figure supplement 2I and J) two-way ANOVA was used with Sidak’s post hoc test for multiple comparisons. To compare pitch-airflow correlations between observed and shuffled datasets (Figure 2, Figure 5—figure supplement 1), each USV was considered the experimental unit. For each USV type, we compared the observed values to two null distributions generated by shuffling one of the variables with one-way ANOVA and Sidak’s post hoc test. To compare pitch-airflow correlations of endogenous and optically evoked USVs (Figure 5D–G) each USV was treated as the experimental unit since the vocal repertoire across animals was similar (Figure 1F) and simply taking a mean from each animal would under-represent the complexity of the data. For the comparison of correlation coefficients between optically evoked and endogenous USVs, two-way ANOVA with Sidak’s post hoc test for two-way comparisons was used. p-Values below 0.05 were considered statistically significant.

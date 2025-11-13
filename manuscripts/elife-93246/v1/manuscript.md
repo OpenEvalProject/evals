@@ -22,16 +22,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Department of Neurology, University Medical Center Hamburg-Eppendorf Hamburg Germany
-2. https://ror.org/024z2rq82 Institute for Systems Neuroscience, Medical Faculty, Heinrich-Heine University Düsseldorf Düsseldorf Germany
-3. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7), Research Center Jülich Jülich Germany
-4. https://ror.org/01zgy1s35 Midwifery Science-Health Services Research and Prevention, Institute for Health Services Research in Dermatology and Nursing (IVDP), University Medical Center Hamburg-Eppendorf Hamburg Germany
-5. https://ror.org/01zgy1s35 Department of Cardiology, University Heart and Vascular Center Hamburg Germany
-6. https://ror.org/031t5w623 German Center for Cardiovascular Research (DZHK), partner site Hamburg/Kiel/Luebeck Hamburg Germany
-7. https://ror.org/01zgy1s35 University Center of Cardiovascular Science, University Heart and Vascular Center Hamburg Germany
-8. https://ror.org/01zgy1s35 Department of Psychiatry and Psychotherapy, University Medical Center Hamburg-Eppendorf Hamburg Germany
-9. https://ror.org/01zgy1s35 Department of Diagnostic and Interventional Neuroradiology, University Medical Center Hamburg-Eppendorf Hamburg Germany
-10. https://ror.org/01zgy1s35 Epidemiological Study Center, University Medical Center Hamburg-Eppendorf Hamburg Germany
+1. Department of Neurology, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. Institute for Systems Neuroscience, Medical Faculty, Heinrich-Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+3. Institute of Neuroscience and Medicine, Brain and Behaviour (INM-7), Research Center Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+4. Midwifery Science-Health Services Research and Prevention, Institute for Health Services Research in Dermatology and Nursing (IVDP), University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+5. Department of Cardiology, University Heart and Vascular Center Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+6. German Center for Cardiovascular Research (DZHK), partner site Hamburg/Kiel/Luebeck Hamburg Germany ([ROR:031t5w623](https://ror.org/031t5w623))
+7. University Center of Cardiovascular Science, University Heart and Vascular Center Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+8. Department of Psychiatry and Psychotherapy, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+9. Department of Diagnostic and Interventional Neuroradiology, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+10. Epidemiological Study Center, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
 
 † Corresponding author
 
@@ -53,11 +53,196 @@ To meet these research needs, we investigated cortical thickness and subcortical
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 Application of exclusion criteria and quality assessment ruled out 2188 UKB subjects and 30 HCHS subjects resulting in a final analysis sample of 40,087 individuals. For a flowchart providing details on the sample selection procedure please refer to Appendix 1—figure 1. Descriptive statistics are listed in Table 1. To sensitivity analyze our results, as well as to facilitate the comparison with previous reports which primarily rely on a case-control design, we supplemented group statistics comparing individuals with clinically defined MetS and matched controls, where applicable. Corresponding group analysis results are described in more detail in appendix 2.
 
-## Partial least squares correlation analysis
+**Table 1.**
+ Descriptive statistics UKB and HCHS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Stat*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>63.55±7.59 (40087)</td>
+    </tr>
+    <tr>
+      <td>Sex (% female)</td>
+      <td>46.47 (40087)</td>
+    </tr>
+    <tr>
+      <td>Education (ISCED)</td>
+      <td>2.62±0.73 (39944)</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Metabolic syndrome components</td>
+    </tr>
+    <tr>
+      <td>Waist circumference (cm)</td>
+      <td>88.47±12.71 (38800)</td>
+    </tr>
+    <tr>
+      <td>Hip circumference (cm)</td>
+      <td>100.90±8.79 (38801)</td>
+    </tr>
+    <tr>
+      <td>Waist-hip ratio</td>
+      <td>0.88±0.09 (38800)</td>
+    </tr>
+    <tr>
+      <td>Body mass index</td>
+      <td>26.47±4.37 (38701)</td>
+    </tr>
+    <tr>
+      <td>RRsystolic (mmHg)</td>
+      <td>138.30±18.57 (31234)</td>
+    </tr>
+    <tr>
+      <td>RRdiastolic (mmHg)</td>
+      <td>78.88±10.09 (31238)</td>
+    </tr>
+    <tr>
+      <td>Antihypertensive therapy (%)</td>
+      <td>6.96 (39976)</td>
+    </tr>
+    <tr>
+      <td>HDL (mg/dL)</td>
+      <td>61.76±23.69 (34468)</td>
+    </tr>
+    <tr>
+      <td>LDL (mg/dL)</td>
+      <td>137.38±36.29 (37456)</td>
+    </tr>
+    <tr>
+      <td>Cholesterol (mg/dL)</td>
+      <td>211.29±56.42 (37531)</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>148.90±83.84 (37510)</td>
+    </tr>
+    <tr>
+      <td>Lipid lowering therapy (%)</td>
+      <td>14.44 (39976)</td>
+    </tr>
+    <tr>
+      <td>HbA1c (%)</td>
+      <td>5.37±0.48 (37284)</td>
+    </tr>
+    <tr>
+      <td>Blood glucose (mg/dL)</td>
+      <td>90.29±17.58 (34432)</td>
+    </tr>
+    <tr>
+      <td>Antidiabetic therapy (%)</td>
+      <td>0.45 (39976)</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Imaging</td>
+    </tr>
+    <tr>
+      <td>Mean cortical thickness (mm)</td>
+      <td>2.40±0.09 (40087)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cognitive variables of the UK Biobank</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fluid Intelligence</td>
+      <td>6.63±2.06 (36510)</td>
+    </tr>
+    <tr>
+      <td>Matrix Pattern Completion</td>
+      <td>7.99±2.13 (25771)</td>
+    </tr>
+    <tr>
+      <td>Numeric Memory Test</td>
+      <td>6.69±1.52 (26780)</td>
+    </tr>
+    <tr>
+      <td>Paired Associate Learning</td>
+      <td>6.92±2.63 (26048)</td>
+    </tr>
+    <tr>
+      <td>Prospective Memory</td>
+      <td>1.07±0.39 (37192)</td>
+    </tr>
+    <tr>
+      <td>Reaction Time (sec)</td>
+      <td>594.16±109.08 (37015)</td>
+    </tr>
+    <tr>
+      <td>Symbol Digit Substitution</td>
+      <td>18.96±5.25 (25810)</td>
+    </tr>
+    <tr>
+      <td>Tower Rearranging Test</td>
+      <td>9.91±3.23 (25555)</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test A (sec)</td>
+      <td>223.03±86.51 (26048)</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test B (sec)</td>
+      <td>550.01±270.09 (26048)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cognitive variables of the Hamburg City Health Study</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Animal Naming Test</td>
+      <td>24.78±6.92 (2416)</td>
+    </tr>
+    <tr>
+      <td>Clock Drawing Test</td>
+      <td>6.43±1.12 (2479)</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test A (sec)</td>
+      <td>40.09±14.33 (2290)</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test B (sec)</td>
+      <td>90.05±37.30 (2264)</td>
+    </tr>
+    <tr>
+      <td>Multiple-Choice Vocabulary Intelligence Test</td>
+      <td>31.27±3.58 (2026)</td>
+    </tr>
+    <tr>
+      <td>Word List Recall</td>
+      <td>7.75±1.84 (2342)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Presented as mean ± SD (N)._
+
+### Partial least squares correlation analysis
 
 We investigated the relationship between brain morphological and clinical measures of MetS (abdominal obesity, arterial hypertension, dyslipidemia, insulin resistance) in a PLS considering all individuals from both studies (n=40,087) (Figure 1). By this, we aimed to detect the continuous effect of any MetS component independent from a formal binary classification of MetS (present/not present). A correlation matrix relating all considered MetS component measures is displayed in Appendix 1—figure 2. Before conducting the PLS, brain morphological and clinical data were deconfounded for age, sex, education, and cohort effects.
 
@@ -67,27 +252,71 @@ We investigated the relationship between brain morphological and clinical measur
 
 PLS identified eight significant latent variables which represent clinical-anatomical dimensions relating MetS components to brain morphology (Appendix 1—table 1). The first latent variable explained 71.20% of the shared variance and was thus further investigated (Figure 2a). Specifically, the first latent variable corresponded with a covariance profile of lower severity of MetS (Figure 2c; loadings [95% confidence interval]; waist circumference: –0.230 [–0.239, –0.221], hip circumference: –0.187 [–0.195, –0.178], waist-hip ratio: –0.167 [–0.176, –0.158], body mass index: –0.234 [–0.243, –0.226], systolic blood pressure: –0.089 [–0.098, –0.080], diastolic blood pressure: –0.116 [–0.125, –0.107], high-density lipoprotein: 0.099 [0.090, 0.108], low-density lipoprotein: –0.013 [–0.022, –0.004], total cholesterol: 0.003 [–0.006, 0.012], triglycerides: –0.102 [–0.111, –0.092], HbA1c: –0.064 [–0.073, –0.54], glucose: –0.049 [–0.058, –0.039]). Notably, the obesity-related measures showed the strongest contribution to the covariance profile as indicated by the highest loading to the latent variable. Age (<0.001 [–0.009, 0.009]), sex (<0.001 [–0.009, 0.009]), education (<0.001 [–0.009, 0.009]), and cohort (<–0.001 [–0.008, 0.007]) did not significantly contribute to the latent variable, which is compatible with sufficient effects of deconfounding. Details on the second latent variable which explained 22.33% of shared variance are provided in Figure 2—figure supplement 1. In brief, it predominantly related lower HbA1c and blood glucose to higher thickness and volume in lateral frontal, posterior temporal, parietal, and occipital regions and vice versa.
 
-Bootstrap ratios (=singularvectorweightbootstrap−estimatedstandarderror) were computed to identify brain regions with a significant contribution to the covariance profile (see Methods). Cortical thickness in orbitofrontal, lateral prefrontal, insular, anterior cingulate, and temporal areas as well as volumes of all investigated subcortical regions contributed positively to the covariance profile as indicated by a positive bootstrap ratio (Figure 2d). Thus, a higher cortical thickness and subcortical volume in these areas corresponded with less obesity, hypertension, dyslipidemia, and insulin resistance and vice versa, i.e., lower cortical thickness and subcortical volumes with increased severity of MetS. A negative bootstrap ratio was found in superior frontal, parietal, and occipital regions indicating that a higher cortical thickness in these regions corresponded with more severe MetS. This overall pattern was confirmed via conventional, vertex-wise group comparisons of cortical thickness measurements based on the binary classification of individuals with MetS and matched controls (Appendix 2—figure 4) as well as subsample analyses considering the UKB and HCHS participants independently (Figure 2—figure supplements 2 and 3). The correlation matrix of all spatial effect maps investigated in this study (bootstrap ratio and Schaefer 400-parcellated t-statistic from group comparisons) is visualized in Figure 2—figure supplement 4. All derived effect size maps were significantly correlated (rsp =0.67−0.99, pFDR < 0.05) (Schaefer et al., 2018).
+![Figure 2.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig2-v1.jpg)
 
-Subject-specific imaging and clinical scores for the first latent variable were computed. These scores indicate to which degree an individual expresses the corresponding covariance profiles. By definition, the scores are correlated (rsp = 0.201, p<0.005, Figure 2b) indicating that individuals exhibiting the clinical covariance profile (severity of MetS components) also express the brain morphological pattern. This relationship was robust across a 10-fold cross-validation (avg. rsp = 0.19, Appendix 1—table 2).
+**Figure 2.:** (a) Explained variance and p-values of latent variables. (b) Scatter plot relating subject-specific clinical and imaging PLS scores. Higher scores indicate higher adherence to the respective covariance profile. (c) Clinical covariance profile. 95% confidence intervals were calculated via bootstrap resampling. Note that confound removal for age, sex, education, and cohort was performed prior to the PLS. (d) Imaging covariance profile represented by bootstrap ratio. A high positive or negative bootstrap ratio indicates high contribution of a brain region to the overall covariance profile. Regions with a significant bootstrap ratio (>1.96 or <–1.96) are highlighted by colors. Abbreviations: BMI – Body mass index, HDL – high-density lipoprotein, LDL – low-density lipoprotein, $r_{sp}$ - Spearman correlation coefficient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The figure presents the results of latent variable 2 of the partial least squares correlation analysis. (a) Scatter plot relating subject-specific clinical and imaging PLS scores. (b) Clinical covariance profile. (c) Imaging covariance profile represented by bootstrap ratio. A high positive or negative bootstrap ratio indicates high contribution of a brain region to the overall covariance profile. Regions with a significant bootstrap ratio (>1.96 or <–1.96) are highlighted by colors. Abbreviations: BMI – Body mass index, HDL – high-density lipoprotein, LDL – low-density lipoprotein, $r_{sp}$ - Spearman correlation coefficient.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Partial least squares correlation analysis of the UK Biobank subsample including cognitive test results. (a) Explained variance and p-values of latent variables. (b) Scatter plot relating subject-specific clinical and imaging scores. Higher scores indicate higher adherence to the respective covariance profile. (c) Clinical covariance profile. 95% confidence intervals were calculated via bootstrap resampling. Note that confound removal for age, sex, and education was performed prior to the PLS. (d) Bootstrap ratio representing the covarying brain morphology pattern. A high positive or negative bootstrap ratio indicates high contribution of a brain region to the overall covariance profile. Regions with a significant bootstrap ratio (>1.96 or <–1.96) are highlighted by colors. Abbreviations: BMI – Body mass index, HDL – high-density lipoprotein, LDL – low-density lipoprotein, $r_{sp}$ – Spearman correlation coefficient; p – p-value; TMT-A – Trail Making Test A; TMT-B – Trail Making Test B.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Partial least squares correlation analysis of the HCHS subsample including cognitive test results. (a) Explained variance and p-values of latent variables. (b) Scatter plot relating subject-specific clinical and imaging scores. Higher scores indicate higher adherence to the respective covariance profile. (c) Clinical covariance profile. 95% confidence intervals were calculated via bootstrap resampling. Note that confound removal for age, sex, and education was performed prior to the PLS. (d) Bootstrap ratio representing the covarying brain morphology pattern. A high positive or negative bootstrap ratio indicates high contribution of a brain region to the overall covariance profile. Regions with a significant bootstrap ratio (>1.96 or <–1.96) are highlighted by colors. Abbreviations: BMI – Body mass index, HDL – high-density lipoprotein, LDL – low-density lipoprotein, $r_{sp}$ – Spearman correlation coefficient; p – p-value; TMT-A – Trail Making Test A; TMT-B – Trail Making Test B.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Spatial correlation matrix of all Schaefer 400-parcellated metabolic syndrome effect maps (bootstrap ratio and t-statistic). The upper triangle of the matrix displays Spearman correlations with dot size and color representing the magnitude of the coefficients. Asterisks highlight significant correlations after spin permutation testing and false discovery rate correction. The diagonal shows kernel density plots. The lower triangle illustrates the variables’ linear relationships via regression plots. Abbreviations: HCHS – Hamburg City Health Study, PLS – Partial least squares correlation analysis; $r_{sp}$ - Spearman correlation coefficient; $p_{spin}$ – false discovery rate-corrected p-value derived from spin permutations; UKB – UK Biobank.
+
+Bootstrap ratios ($=\frac{singularvectorweight}{bootstrap−estimatedstandarderror}$) were computed to identify brain regions with a significant contribution to the covariance profile (see Methods). Cortical thickness in orbitofrontal, lateral prefrontal, insular, anterior cingulate, and temporal areas as well as volumes of all investigated subcortical regions contributed positively to the covariance profile as indicated by a positive bootstrap ratio (Figure 2d). Thus, a higher cortical thickness and subcortical volume in these areas corresponded with less obesity, hypertension, dyslipidemia, and insulin resistance and vice versa, i.e., lower cortical thickness and subcortical volumes with increased severity of MetS. A negative bootstrap ratio was found in superior frontal, parietal, and occipital regions indicating that a higher cortical thickness in these regions corresponded with more severe MetS. This overall pattern was confirmed via conventional, vertex-wise group comparisons of cortical thickness measurements based on the binary classification of individuals with MetS and matched controls (Appendix 2—figure 4) as well as subsample analyses considering the UKB and HCHS participants independently (Figure 2—figure supplements 2 and 3). The correlation matrix of all spatial effect maps investigated in this study (bootstrap ratio and Schaefer 400-parcellated t-statistic from group comparisons) is visualized in Figure 2—figure supplement 4. All derived effect size maps were significantly correlated ($r_{sp}$ =0.67−0.99, $p_{FDR}$ < 0.05) (Schaefer et al., 2018).
+
+Subject-specific imaging and clinical scores for the first latent variable were computed. These scores indicate to which degree an individual expresses the corresponding covariance profiles. By definition, the scores are correlated ($r_{sp}$ = 0.201, p<0.005, Figure 2b) indicating that individuals exhibiting the clinical covariance profile (severity of MetS components) also express the brain morphological pattern. This relationship was robust across a 10-fold cross-validation (avg. $r_{sp}$ = 0.19, Appendix 1—table 2).
 
 These results were consistent in separate PLS analyses for both the UKB and HCHS samples, as displayed in Figure 2—figure supplements 2 and 3. In these subset-specific analyses, cognitive test performances significantly contributed to the first latent variable when included in the PLS. Consequently, the first latent variable associated more severe MetS with both brain morphological abnormalities and poorer cognitive performance.
 
-## Mediation analysis of cognitive outcomes
+### Mediation analysis of cognitive outcomes
 
 To gain a better understanding of the link between MetS, brain morphology, and cognitive function, we performed a mediation analysis on cognitive test results and subject-specific PLS scores. Therefore, we investigated whether the imaging PLS score (representing MetS-related brain structural abnormalities) acts as a mediator in the relationship between the clinical PLS score (representing MetS severity) and cognitive test performances. Importantly, scores of the main PLS analysis, which did not include cognitive measures, were considered. The corresponding path plots are shown in Figure 3. The imaging score was found to fully mediate the relationship of the clinical score and results of the Trail Making Test B (ab = –0.011, PFDR <0.001; c’=–0.012, PFDR = 0.072; c=–0.023, PFDR <0.001), Fluid Intelligence Test (ab = 0.017, PFDR <0.001; c’=0.011, PFDR = 0.072; c=0.028, PFDR <0.001) as well as Matrix Pattern Completion Test (ab = 0.015, PFDR <0.001; c’=0.010, PFDR = 0.172; c=0.025, PFDR <0.001). Further, the imaging score partially mediated the relationship of the clinical score and results of the Symbol Digit Substitution Test (ab = 0.010, PFDR <0.001; c’=0.036, PFDR <0.001; c=0.046, PFDR <0.001), Numeric Memory Test (ab = 0.014, PFDR <0.001; c’=0.044, PFDR <0.001; c=0.058, PFDR <0.001) and Paired Associate Learning Test (ab = 0.015, PFDR <0.001; c’=0.044, PFDR <0.001; c=0.059, PFDR <0.001). For the remaining cognitive tests, no significant mediation was found.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig3-v1.jpg)
 
-**Figure 3.:** Mediation effects of subject-specific imaging PLS scores on the relationship between metabolic syndrome (MetS) represented by the clinical PLS score and cognitive test performances. Path plots display standardized effects and p-values: (a) clinical score to imaging score, (b) imaging score to cognitive score, (ab) indirect effect (c’) direct effect, and (c) total effect. Significant paths are highlighted in blue; non-significant in light gray. If the indirect effect ab was significant, the text for ab is highlighted in blue. A blue dot in the path plot indicates if a relationship is significantly mediated, i.e., the indirect effect ab was significant and the direct effect c’ was reduced or non-significant compared to the total effect c. An empty dot indicates a partial mediation, and a full dot indicates a full mediation. Abbreviations: - false discovery rate-corrected p-values; PLS – partial least squares correlation; TMT-A – Trail Making Test A; TMT-B – Trail Making Test B.pFDR
+**Figure 3.:** Mediation effects of subject-specific imaging PLS scores on the relationship between metabolic syndrome (MetS) represented by the clinical PLS score and cognitive test performances. Path plots display standardized effects and p-values: (a) clinical score to imaging score, (b) imaging score to cognitive score, (ab) indirect effect (c’) direct effect, and (c) total effect. Significant paths are highlighted in blue; non-significant in light gray. If the indirect effect ab was significant, the text for ab is highlighted in blue. A blue dot in the path plot indicates if a relationship is significantly mediated, i.e., the indirect effect ab was significant and the direct effect c’ was reduced or non-significant compared to the total effect c. An empty dot indicates a partial mediation, and a full dot indicates a full mediation. Abbreviations:$p_{FDR}$ - false discovery rate-corrected p-values; PLS – partial least squares correlation; TMT-A – Trail Making Test A; TMT-B – Trail Making Test B.
 
-## Contextualization of MetS-associated brain morphological abnormalities
+### Contextualization of MetS-associated brain morphological abnormalities
 
 We investigated whether the pattern of MetS effects on cortical structure is linked to the regional density of specific cell populations and global brain network topology in a surface-based contextualization analysis (see Methods).
 
-Therefore, we first used a virtual histology approach to relate the bootstrap ratio from PLS to the differential expression of cell-type specific genes based on microarray data from the Allen Human Brain Atlas (Hawrylycz et al., 2012). The results are illustrated in Figure 4. The bootstrap ratio was significantly positively correlated with the density of endothelial cells (Zrsp = 0.190, pFDR = 0.016), microglia (Zrsp = 0.271, pFDR = 0.016), excitatory neurons type 8 (Zrsp = 0.165, pFDR = 0.016), inhibitory neurons type 1 (Zrsp = 0.363, pFDR = 0.036) and excitatory neurons type 6 (Zrsp = 0.146, pFDR = 0.034) indicating that MetS-related brain morphological abnormalities are strongest in regions of the highest density of these cell types. No significant associations were found regarding the remaining excitatory neuron types (Ex1-Ex5, Ex7), inhibitory neurons (In2-In8), astrocytes, and oligodendrocytes (Appendix 1—table 3). Virtual histology analysis results for bootstrap ratios corresponding with latent variables 2 and 3 are shown in Figure 4—figure supplement 1. As a sensitivity analysis, we contextualized the t-statistic map derived from group statistics. The results remained stable except for excitatory neurons type 6 (Zrsp = 0.145, pFDR = 0.123) and inhibitory neurons type 1 (Zrsp = 0.432, pFDR = 0.108), which no longer showed a significant association (Figure 4—figure supplement 2, Appendix 1—table 4).
+Therefore, we first used a virtual histology approach to relate the bootstrap ratio from PLS to the differential expression of cell-type specific genes based on microarray data from the Allen Human Brain Atlas (Hawrylycz et al., 2012). The results are illustrated in Figure 4. The bootstrap ratio was significantly positively correlated with the density of endothelial cells ($Z_{r_{sp}}$ = 0.190, $p_{FDR}$ = 0.016), microglia ($Z_{r_{sp}}$ = 0.271, $p_{FDR}$ = 0.016), excitatory neurons type 8 ($Z_{r_{sp}}$ = 0.165, $p_{FDR}$ = 0.016), inhibitory neurons type 1 ($Z_{r_{sp}}$ = 0.363, $p_{FDR}$ = 0.036) and excitatory neurons type 6 ($Z_{r_{sp}}$ = 0.146, $p_{FDR}$ = 0.034) indicating that MetS-related brain morphological abnormalities are strongest in regions of the highest density of these cell types. No significant associations were found regarding the remaining excitatory neuron types (Ex1-Ex5, Ex7), inhibitory neurons (In2-In8), astrocytes, and oligodendrocytes (Appendix 1—table 3). Virtual histology analysis results for bootstrap ratios corresponding with latent variables 2 and 3 are shown in Figure 4—figure supplement 1. As a sensitivity analysis, we contextualized the t-statistic map derived from group statistics. The results remained stable except for excitatory neurons type 6 ($Z_{r_{sp}}$ = 0.145, $p_{FDR}$ = 0.123) and inhibitory neurons type 1 ($Z_{r_{sp}}$ = 0.432, $p_{FDR}$ = 0.108), which no longer showed a significant association (Figure 4—figure supplement 2, Appendix 1—table 4).
 
-Second, we associated the bootstrap ratio with three pre-selected measures of brain network topology derived from group consensus functional and structural connectomes of the Human Connectome Project (HCP) (Figure 5): weighted degree centrality (marking brain network hubs), neighborhood abnormality, and macroscale functional connectivity gradients (Petersen et al., 2022b). The bootstrap ratio showed a medium positive correlation with the functional neighborhood abnormality (rsp = 0.464, pspin < 0.001, psmash < 0.001, prewire < 0.001) and a strong positive correlation with the structural neighborhood abnormality (rsp = 0.764, pspin = <0.001, psmash < 0.001, prewire < 0.001) indicating functional and structural interconnectedness of areas exhibiting similar MetS effects. These results remained significant when the t-statistic map was contextualized instead of the bootstrap ratio as well as when neighborhood abnormality measures were derived from consensus connectomes of the HCHS instead of the HCP (Figure 5—figure supplements 1 and 2). We found no significant associations for the remaining indices of network topology, i.e., functional degree centrality (rsp = 0.163, pspin = 0 .365, psmash = 0.406, prewire = 0.870), structural degree centrality (rsp = 0.029, pspin = 0.423, psmash = 0.814, prewire = 0.103) as well as functional cortical gradient 1 (rsp = 0.152, pspin = 0.313, psmash = 0.406, prewire = 0.030) and gradient 2 (rsp = –0.177, pspin = 0.313, psmash = 0.406, prewire < 0.001).
+![Figure 4.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig4-v1.jpg)
+
+**Figure 4.:** The regional correspondence between metabolic syndrome (MetS) effects (bootstrap ratio) and cell type-specific gene expression profiles was examined via an ensemble-based gene category enrichment analysis. (a) Barplot displaying spatial correlation results. The bar height displays the significance level. Colors encode the aggregate z-transformed Spearman correlation coefficient relating the Schaefer100-parcellated bootstrap ratio and respective cell population densities. Asterisks indicate statistical significance. The significance threshold of $p_{FDR}$ <0.05 is highlighted by a vertical dashed line. (b) Scatter plots illustrating spatial correlations between MetS effects and exemplary cortical gene expression profiles per cell population significantly associated across analyses – i.e., endothelium, microglia, and excitatory neurons type 8. Top 5 genes most strongly correlating with the bootstrap ratio map were visualized for each of these cell populations. Icons in the bottom right of each scatter plot indicate the corresponding cell type. A legend explaining the icons is provided at the bottom. First row: endothelium; second row: microglia; third row: excitatory neurons type 8. Virtual histology analysis results for the bootstrap ratios of latent variables 2 and 3 are shown in Figure 4—figure supplement 1. A corresponding plot illustrating the contextualization of the t-statistic derived from group statistics is shown in Figure 4—figure supplement 2. Abbreviations: $-log(p_{FDR})$ – negative logarithm of the false discovery rate-corrected p-value derived from spatial lag models (Dukart et al., 2021; Burt et al., 2018); $r$ – Spearman correlation coeffient. $Z(r_{sp})$ – aggregate z-transformed Spearman correlation coefficient.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Virtual histology analysis of the bootstrap ratio maps of latent variables 2 and 3 from the partial least squares (PLS) main analysis. Barplots display spatial correlation results of the bootstrap ratio of latent variables 2 and 3 and respective cell population densities computed via ensemble-based gene category enrichment analysis. (a) Results corresponding with the bootstrap ratio of latent variable 2. (b) Results corresponding with the bootstrap ratio of latent variable 3. Abbreviations: $-log(p_{FDR})$ – negative logarithm of the false discovery rate-corrected p-value derived from spatial lag models; $r$ – Spearman correlation coefficient. $Z(r_{sp})$ – aggregate z-transformed Spearman correlation coefficient.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Virtual histology analysis of the t-statistic map derived from group comparison between individuals with metabolic syndrome and controls. (a) Barplot displaying spatial correlation results of the bootstrap ratio and respective cell population densities computed via ensemble-based gene category enrichment analysis. (b) Scatter plots illustrating per significantly associated cell population exemplary genes with top 5-highest correlation coefficients with the t-statistic map per significantly associated cell population across analyses (i.e. endothelium, microglia, excitatory neurons 8). Icons in the bottom right of each scatter plot indicate the corresponding cell type. First row: endothelium; second row: microglia; third row: excitatory neurons type 8. Abbreviations: $-log(p_{FDR})$ – negative logarithm of the false discovery rate-corrected p-value derived from spatial lag models; $r$ – Spearman correlation coefficient. $Z(r_{sp})$ – aggregate z-transformed Spearman correlation coefficient.
+
+Second, we associated the bootstrap ratio with three pre-selected measures of brain network topology derived from group consensus functional and structural connectomes of the Human Connectome Project (HCP) (Figure 5): weighted degree centrality (marking brain network hubs), neighborhood abnormality, and macroscale functional connectivity gradients (Petersen et al., 2022b). The bootstrap ratio showed a medium positive correlation with the functional neighborhood abnormality ($r_{sp}$ = 0.464, $p_{spin}$ < 0.001, $p_{smash}$ < 0.001, $p_{rewire}$ < 0.001) and a strong positive correlation with the structural neighborhood abnormality ($r_{sp}$ = 0.764, $p_{spin}$ = <0.001, $p_{smash}$ < 0.001, $p_{rewire}$ < 0.001) indicating functional and structural interconnectedness of areas exhibiting similar MetS effects. These results remained significant when the t-statistic map was contextualized instead of the bootstrap ratio as well as when neighborhood abnormality measures were derived from consensus connectomes of the HCHS instead of the HCP (Figure 5—figure supplements 1 and 2). We found no significant associations for the remaining indices of network topology, i.e., functional degree centrality ($r_{sp}$ = 0.163, $p_{spin}$ = 0 .365, $p_{smash}$ = 0.406, $p_{rewire}$ = 0.870), structural degree centrality ($r_{sp}$ = 0.029, $p_{spin}$ = 0.423, $p_{smash}$ = 0.814, $p_{rewire}$ = 0.103) as well as functional cortical gradient 1 ($r_{sp}$ = 0.152, $p_{spin}$ = 0.313, $p_{smash}$ = 0.406, $p_{rewire}$ = 0.030) and gradient 2 ($r_{sp}$ = –0.177, $p_{spin}$ = 0.313, $p_{smash}$ = 0.406, $p_{rewire}$ < 0.001).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig5-v1.jpg)
+
+**Figure 5.:** Spatial correlation results derived from relating Schaefer 400×7-parcellated maps of metabolic syndrome (MetS) effects (bootstrap ratio) to network topological indices (red: functional connectivity, blue: structural connectivity). Scatter plots that illustrate the spatial relationship are supplemented by surface plots for anatomical localization. The color coding of cortical regions and associated dots corresponds. (a and b) Functional and structural degree centrality rank. (c and d) Functional and structural neighborhood abnormality. (e and f) Intrinsic functional network hierarchy represented by functional connectivity gradients 1 and 2. Complementary results concerning t-statistic maps derived from group comparisons between MetS subjects and controls are presented in Figure 5—figure supplement 1. Corresponding results after reperforming the analysis with HCHS-derived group-consensus connectomes are presented in Figure 5—figure supplement 2. Abbreviations: HCHS – Hamburg City Health Study; $p_{rewire}$ - p-value derived from network rewiring (Maslov et al., 2004); $p_{smash}$ - p-value derived from brainSMASH surrogates (Burt et al., 2020); $p_{spin}$ - p-value derived from spin permutation results (Alexander-Bloch et al., 2018); $r_{sp}$ - Spearman correlation coefficient.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Brain network contextualization analysis of group statistics results. Results are presented for t-statistics maps derived from group statistics considering the pooled sample of UK Biobank subjects and Hamburg City Health Study (HCHS) subjects. The upper row barplot summarizes the analysis results displaying the Spearman correlation with regard to each investigated index. Asterisks indicate statistical significance with respect to spin, brainSMASH, and network rewiring null models. The middle and lower rows display scatter plots of the significant association of the t-statistics map and the functional and structural neighborhood abnormality, respectively. The scatter plots are supplemented by surface plots for anatomical localization. Abbreviations: $p_{rewire}$ - p-value derived from network rewiring (Maslov et al., 2004); $p_{smash}$ - p-value derived from brainSMASH surrogates (Burt et al., 2020); $p_{spin}$ - p-value derived from spin permutation results (Alexander-Bloch et al., 2018); $r_{sp}$ - Spearman correlation coefficient.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Brain network contextualization analysis of partial least squares correlation results (bootstrap ratio) based on group-consensus connectomes from the Hamburg City Health Study. Results are presented for bootstrap ratio maps derived from partial least squares correlation analysis considering the pooled sample. The upper row bar plot summarizes the analysis results displaying the Spearman correlation with regard to each investigated index. Asterisks indicate statistical significance with respect to spin, brainSMASH, and network rewiring null models. Scatter plots that illustrate the significant spatial relationships are presented below. The middle row displays the relationship of the bootstrap ratio map and the ranked functional and structural degree centrality. The lower row illustrates the association of the bootstrap ratio map and the functional and structural neighborhood abnormality. Abbreviations: $p_{rewire}$ - p-value derived from network rewiring (Maslov et al., 2004); $p_{smash}$ - p-value derived from brainSMASH surrogates (Burt et al., 2020); $p_{spin}$ - p-value derived from spin permutation results (Alexander-Bloch et al., 2018); $r_{sp}$ - Spearman correlation coefficient.
 
 ## Discussion
 
@@ -95,7 +324,7 @@ We investigated the impact of MetS on brain morphology and cognitive function in
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93246/elife-93246-fig6-v1.jpg)
 
-## PLS reveals a latent clinical-anatomical dimension relating MetS and brain health
+### PLS reveals a latent clinical-anatomical dimension relating MetS and brain health
 
 MetS adversely impacts brain health through complex, interacting effects on the cerebral vasculature and parenchyma as shown by histopathological and imaging studies (Borshchev et al., 2019). The pathophysiology of MetS involves atherosclerosis, which affects blood supply and triggers inflammation (Libby et al., 2002; Birdsill et al., 2013); endothelial dysfunction reducing cerebral vasoreactivity Lind, 2008; breakdown of the blood-brain barrier inciting an inflammatory response Hussain et al., 2021; oxidative stress causing neuronal and mitochondrial dysfunction Mullins et al., 2020; and small vessel injury leading to various pathologies including white matter damage, microinfarcts, and cerebral microbleeds (Frey et al., 2019).
 
@@ -107,13 +336,13 @@ We interpret these findings as evidence that MetS-associated conditions jointly 
 
 The second latent variable accounted for 22.33% of the shared variance and linked higher markers of insulin resistance and lower dyslipidemia to lower thickness and volume in lateral frontal, posterior temporal, parietal, and occipital regions. The distinct covariance profile of this latent variable, compared to the first, likely indicates a separate pathomechanistic connection between MetS components and brain morphology. Given that HbA1c and blood glucose were the most significant contributors to this variable, insulin resistance might drive the observed clinical-anatomical relationship.
 
-## Brain morphological abnormalities mediate the relationship between MetS and cognitive deficits
+### Brain morphological abnormalities mediate the relationship between MetS and cognitive deficits
 
 Cognitive performance has been consistently linked to cardiometabolic risk factors in health and disease (Genon et al., 2022). Yet, the pathomechanistic correlates of this relationship remain to be understood. Our mediation analysis revealed that increased MetS severity correlates with worse performance in executive function and processing speed (Symbol Digit Substitution Test, Trail Making Test B), memory (Numeric Memory Test, Paired Associate Learning Test), and reasoning (Fluid intelligence, Matrix Pattern Completion Test), with brain morphological abnormalities statistically mediating these relationships. Additionally, group comparisons indicated poorer cognitive performance in MetS subjects (Appendix 2—tables 1 and 2) and including cognitive outcomes in the PLS as clinical variables revealed a significant contribution to the first latent variable (Figure 2—figure supplements 2 and 3). These results suggest that MetS is significantly associated with cognitive deficits across various domains, and brain morphological abnormalities are a crucial pathomechanistic link in this relationship. In support of this, previous studies have shown that brain structure mediates the relationship between MetS and cognitive performance in a pediatric sample and elderly patients with vascular cognitive impairment (Laurent et al., 2020; Seo et al., 2010; Kim et al., 2014). The detected latent variable might represent a continuous disease spectrum spanning from minor cognitive deficits due to a cardiometabolic risk profile to severe cognitive deficits due to dementia. In support of this hypothesis, the determined brain morphological abnormality pattern is consistent with the atrophy pattern found in vascular mild cognitive impairment, vascular dementia, and Alzheimer’s dementia (Seo et al., 2010; Kim et al., 2014; Morys et al., 2023).
 
 Collectively, these findings highlight the role of MetS in cognitive impairment and underscore the potential impact of therapies targeting cardiometabolic risk factors. Although the definitive role of such therapies in preventing cognitive decline is not yet fully established, emerging evidence suggests that these interventions can mitigate the adverse cognitive effects of MetS (Veronese et al., 2017; Lennon et al., 2023; Gelber et al., 2013). As our results highlight obesity as a key factor in the observed clinical-anatomical relationship, we think that future studies should further investigate weight-reducing interventions to examine their effects on cognitive outcomes. Advanced neuroimaging techniques promise to refine these therapeutic approaches by enabling to identify MetS patients at risk of cognitive decline that would benefit the most from targeted interventions for cognitive health protection.
 
-## MetS-related brain morphological abnormalities link to cellular tissue composition and network topology
+### MetS-related brain morphological abnormalities link to cellular tissue composition and network topology
 
 To better understand the emergence of the spatial pattern of MetS-related brain morphological abnormalities, we conducted two contextualization analyses leveraging reference datasets of local gene expression data as well as properties of brain network topology.
 
@@ -123,69 +352,73 @@ For the second approach, we contextualized MetS-related brain morphological abno
 
 While this work’s strengths lie in a large sample size, high-quality MRI and clinical data, robust image processing, and a comprehensive methodology for examining the link of MetS and brain health, it also has limitations. First, the virtual histology analysis relies on post-mortem brain samples, potentially different from in-vivo profiles. In addition, the predominance of UKB subjects may bias the results, and potential reliability issues of the cognitive assessment in the UKB need to be acknowledged (Gell et al., 2023). Lastly, the cross-sectional design restricts the ability for demonstrating causative effects. Longitudinal assessment of the surveyed relationships would provide more robust evidence and therefore, future studies should move in this direction.
 
-## Conclusion
+### Conclusion
 
 Our analysis revealed associative effects of MetS, structural brain integrity, and cognition, complementing existing efforts to motivate and inform strategies for cardiometabolic risk reduction. In conjunction, a characteristic and reproducible structural imaging fingerprint associated with MetS was identified. This pattern of MetS-related brain morphological abnormalities was linked to local histological as well as global network topological features. Collectively, our results highlight how an integrative, multi-modal, and multi-scale analysis approach can lead to a more holistic understanding of the neural underpinnings of MetS and its risk components. As research in this field advances, leveraging neuroimaging may improve personalized cardiometabolic risk mitigation approaches.
 
 ## Materials and methods
 
-## Study population – the UK Biobank and Hamburg City Health Study
+### Study population – the UK Biobank and Hamburg City Health Study
 
 Here, we investigated cross-sectional clinical and imaging data from two large-scale population-based cohort studies: (1) the UK Biobank (UKB, n=39,668, age 45–80 years; application number 41655) and (2) the Hamburg City Health Study (HCHS, n=2637, age 45–74 years) (Miller et al., 2016; Jagodzinski et al., 2020). Both studies recruit large study samples with neuroimaging data alongside a detailed demographic and clinical assessment. Respectively, data for the first visit including a neuroimaging assessment were included. Individuals were excluded if they had a history or a current diagnosis of neurological or psychiatric disease. Field IDs of the used UKB variables are presented in Appendix 1—table 5. UKB individuals were excluded based on the non-cancer illnesses codes (http://biobank.ndph.ox.ac.uk/showcase/coding.cgi?id=6). Excluded conditions were Alzheimer’s disease; alcohol, opioid, and other dependencies; amyotrophic lateral sclerosis; brain injury; brain abscess; chronic neurological problem; encephalitis; epilepsy; hemorrhage; head injury; meningitis; multiple sclerosis; Parkinson’s disease; skull fracture. Same criteria were applied to HCHS individuals based on the neuroradiological evaluation and self-reported diagnoses variables. To enhance comparability to previous studies we supplemented a case-control analysis enabling to complement continuous multivariate statistical analyses by group statistics. Therefore, a MetS sample was identified based on the consensus definition of the International Diabetes Federation (Appendix 1—table 6) and matched to a control cohort.
 
-## Ethics approval
+### Ethics approval
 
 The UKB was ethically approved by the North West Multi-Centre Research Ethics Committee (MREC). Details on the UKB Ethics and Governance framework are provided online (https://www.ukbiobank.ac.uk/media/0xsbmfmw/egf.pdf). The HCHS was approved by the local ethics committee of the Landesärztekammer Hamburg (State of Hamburg Chamber of Medical Practitioners, PV5131). Good Clinical Practice (GCP), Good Epidemiological Practice (GEP), and the Declaration of Helsinki were the ethical guidelines that governed the conduct of the HCHS (Petersen et al., 2020). Written informed consent was obtained from all participants investigated in this work.
 
-## Clinical assessment
+### Clinical assessment
 
 In the UK Biobank, a battery of cognitive tests is administered, most of which represent shortened and computerized versions of established tests aiming for a comprehensive and concise assessment of cognition (Sudlow et al., 2015). From this battery, we investigated tests for executive function and processing speed (Reaction Time Test, Symbol Digit Substitution Test, Tower Rearranging Test, Trail Making Tests A and B), memory (Numeric Memory Test, Paired Associate Learning Test, Prospective Memory Test), and reasoning (Fluid Intelligence Test, Matrix Pattern Completion Test). Detailed descriptions of the individual tests can be found elsewhere (Fawns-Ritchie and Deary, 2020). Furthermore, some tests (Matrix Pattern Completion Test, Numeric Memory Test, Paired Associate Learning Test, Symbol Digit Substitution Test, Trail Making Test, and Tower Rearranging Test) are only administered to a subsample of the UKB imaging cohort explaining the missing test results for a subgroup of participants.
 
 In the HCHS, cognitive testing was administered by a trained study nurse and included the Animal Naming Test, Trail Making Test A and B, Multiple Choice Vocabulary Intelligence Test B, and Word List Recall subtests of the Consortium to Establish a Registry for Alzheimer’s Disease Neuropsychological Assessment Battery (CERAD-Plus), as well as the Clock Drawing Test (Morris et al., 1989; Shulman, 2000).
 
-## MRI acquisition
+### MRI acquisition
 
 The full UKB neuroimaging protocol can be found online (https://biobank.ctsu.ox.ac.uk/crystal/crystal/docs/brain_mri.pdf; Miller et al., 2016). MR images were acquired on a 3 T Siemens Skyra MRI scanner (Siemens, Erlangen, Germany). T1-weighted MRI used a 3D MPRAGE sequence with 1 mm isotropic resolution with the following sequence parameters: repetition time = 2000 ms, echo time = 2.01 ms, 256 axial slices, slice thickness = 1 mm, and in-plane resolution = 1 × 1 mm. In the HCHS, MR images were acquired as well on a 3 T Siemens Skyra MRI scanner. Measurements were performed with a protocol as described in previous work (Petersen et al., 2020). In detail, for 3D T1-weighted anatomical images, rapid acquisition gradient-echo sequence (MPRAGE) was used with the following sequence parameters: repetition time = 2500 ms, echo time = 2.12 ms, 256 axial slices, slice thickness = 0.94 mm, and in-plane resolution = 0.83 × 0.83 mm.
 
-## Estimation of brain morphological measures
+### Estimation of brain morphological measures
 
 To achieve comparability and reproducibility, the preconfigured and containerized CAT12 pipeline (CAT12.7 r1743; https://github.com/m-wierzba/cat-container; Wierzba and Hoffstaedter, 2022) was employed for surface reconstruction and cortical thickness measurement building upon a projection-based thickness estimation method as well as computation of subcortical volumes (Gaser et al., 2022). Cortical thickness measures were normalized from individual to 32 k fsLR surface space (conte69) to ensure vertex correspondence across subjects. Subcortical volumes were computed for the Melbourne Subcortex Atlas parcellation resolution 1 (Tian et al., 2020). Volumetric measures for the anterior and posterior thalamus parcels were averaged to obtain a single measure for the thalamus. Individuals with a CAT12 image quality rating lower than 75% were excluded during the quality assessment. To facilitate large-scale data management while ensuring provenance tracking and reproducibility, we employed the DataLad-based FAIRly big workflow for image data processing (Wagner et al., 2022).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical computations and plotting were performed in python 3.9.7 leveraging bctpy (v. 0.6.0), brainstat (v. 0.3.6), brainSMASH (v. 0.11.0), and the ENIGMA toolbox (v. 1.1.3). matplotlib (v. 3.5.1), neuromaps (v. 0.0.1), numpy (v. 1.22.3), pandas (v. 1.4.2), pingouin (v. 0.5.1), pyls (v. 0.0.1), scikit-learn (v. 1.0.2), scipy (v. 1.7.3), seaborn (v. 0.11.2) as well as in matlab (v. 2021b) using ABAnnotate (v. 0.1.1).
 
-## Partial least squares correlation analysis
+#### Partial least squares correlation analysis
 
 To relate MetS components and brain morphology, we performed a PLS using pyls (https://github.com/rmarkello/pyls; Markello, 2021). PLS identifies covariance profiles that relate to two sets of variables in a data-driven multivariate analysis (Krishnan et al., 2011). Here, we related regional cortical thickness and subcortical volumes to clinical measurements of MetS components, i.e., obesity (waist circumference, hip circumference, waist-hip ratio, body mass index), arterial hypertension (systolic blood pressure, diastolic blood pressure), dyslipidemia (high-density lipoprotein, low-density lipoprotein, total cholesterol, triglycerides) and insulin resistance (HbA1c, non-fasting blood glucose). Before conducting the PLS, missing values were imputed via k-nearest neighbor imputation (nneighbor = 4) with imputation only taking into account variables of the same group, i.e., MetS component variables were imputed based on the remaining MetS component data only and not based on demographic variables. To account for age, sex, education, and cohort (UKB/HCHS) as potential confounds, they were regressed out of brain morphological and MetS component data.
 
 We then performed PLS as described in previous work (Petersen et al., 2022b). Methodological details are covered in Figure 1a and Box 1. Brain morphological measures were randomly permuted (npermute = 5000) to assess the statistical significance of derived latent variables and their corresponding covariance profiles. Subject-specific PLS scores, including a clinical score and an imaging score, were computed. Higher scores indicate stronger adherence to the respective covariance profiles: a high clinical score signifies pronounced expression of the clinical profile, and a high imaging score reflects marked adherence to the brain morphological profile. Bootstrap resampling (nbootstrap = 5000) was performed to assess the contribution of individual variables to the imaging-clinical relationship. Confidence intervals (95%) of singular vector weights were computed for clinical variables to assess the significance of their contribution. To estimate the contributions of brain regions, bootstrap ratios were computed as the singular vector weight divided by the bootstrap-estimated standard error. A high bootstrap ratio is indicative of a region’s contribution, as a relevant region shows a high singular vector weight alongside a small standard error implying stability across bootstraps. The bootstrap ratio equals a z-score in the case of a normally distributed bootstrap. Hence, brain region contributions were considered significant if the bootstrap ratio was >1.96 or <−1.96 (95% confidence interval). Overall model robustness was assessed via a 10-fold cross-validation by correlating out-of-sample PLS scores within each fold.
 
-## Mediation analysis
+#### Mediation analysis
 
 In a post-hoc mediation analysis, we investigated how the subject-specific clinical PLS score of the first latent variable, reflecting the degree of an individual’s expression of the identified MetS risk profile, relates to cognitive test outcomes, and whether this relationship is influenced by the imaging PLS score of the first latent variable, which represents the degree of brain morphological differences (Figure 1b). This analysis allows to separate the total effect of the clinical PLS score on cognitive performance into: (1) a direct effect (the immediate link of clinical scores and cognition), and (2) an indirect effect (the portion influenced by the imaging PLS score). This approach helps to disentangle the complex interplay between MetS and cognitive function by examining the role of brain structural effects as a potential intermediary. We considered an indirect effect as mediating if there was a significant association between the clinical and imaging PLS scores, the imaging PLS score was significantly associated with the cognitive outcome, and if the link between clinical scores and cognitive outcomes weakened (partial mediation) or became insignificant (full mediation) after accounting for imaging scores. The significance of mediation was assessed using bootstrapping (nbootstrap = 5000), with models adjusted for age, sex, and education. To obtain standardized estimates, mediation analysis inputs were z-scored beforehand. Given the variation in cognitive test batteries between the UKB and HCHS cohorts, only individuals with results from the respective tests were considered in each mediation analysis. To account for the different versions of the Trail Making Tests A and B used in both cohorts, test results were harmonized through z-scoring within the individual subsamples before a pooled z-scoring step.
 
-## Contextualization analysis
+#### Contextualization analysis
 
-We investigated the link of MetS and regional brain morphological measurements in the context of cell-specific gene expression profiles and structural and functional brain network characteristics (Figure 1c). Therefore, we used the Schaefer-parcellated (400×7 and 100×7, v.1) bootstrap ratio map and related it to indices representing different gene expression and network topological properties of the human cortex via spatial correlations (Spearman correlation, rsp) on a group-level (Schaefer et al., 2018).
+We investigated the link of MetS and regional brain morphological measurements in the context of cell-specific gene expression profiles and structural and functional brain network characteristics (Figure 1c). Therefore, we used the Schaefer-parcellated (400×7 and 100×7, v.1) bootstrap ratio map and related it to indices representing different gene expression and network topological properties of the human cortex via spatial correlations (Spearman correlation, $r_{sp}$) on a group-level (Schaefer et al., 2018).
 
 Virtual histology analysis. We performed a virtual histology analysis leveraging gene transcription information to quantify the density of different cell populations across the cortex employing the ABAnnotate toolbox (Lotter, 2022; Dukart et al., 2021). Genes corresponding with specific cell populations of the central nervous system were identified based on a classification derived from single nucleus-RNA sequencing data (Lake et al., 2016). The gene-cell type mapping is provided by the PsychENCODE database (http://resource.psychencode.org/Datasets/Derived/SC_Decomp/DER-19_Single_cell_markergenes_TPM.xlsx; Wang et al., 2018). The abagen toolbox (v. 0.1.3) was used to obtain regional microarray expression data of these genes for Schaefer 100×7 parcels based on the Allen Human Brain Atlas (AHBA) (Markello et al., 2021). The Schaefer 100×7 atlas was used as it better matches the sampling density of the AHBA eventually resulting in no parcels with missing values. Regional expression patterns of genes corresponding to astrocytes, endothelial cells, excitatory neuron populations (Ex1-8), inhibitory neuron populations (In1-8), microglia, and oligodendrocytes were extracted. Instead of assessing the correspondence between MetS effects and the expression pattern of each gene directly, we employed ensemble-based gene category enrichment analysis (GCEA) (Fulcher et al., 2021). This approach represents a modification to customary GCEA addressing the issues of gene-gene dependency through within-category co-expression which is caused by shared spatial embedding as well as spatial autocorrelation of cortical transcriptomics data. In brief, gene transcription indices were averaged within categories (here cell populations) and spatially correlated with the bootstrap ratio map. Statistical significance was assessed by comparing the empirical correlation coefficients against a null distribution derived from surrogate maps with preserved spatial embedding and autocorrelation computed via a spatial lag model (Burt et al., 2018). Further details on the processing steps covered by ABAnnotate can be found elsewhere (https://osf.io/gcxun; Lotter et al., 2023).
 
 Brain network topology. To investigate the cortical MetS effects pattern in the context of brain network topology, three connectivity metrics were leveraged based on data from structural and functional brain imaging: weighted degree centrality, neighborhood abnormality as well as macroscale functional connectivity gradients as described previously (Petersen et al., 2022b). These were computed based on functional and structural consensus connectomes at group-level derived from the Human Connectome Project Young Adults dataset comprised in the ENIGMA toolbox (Larivière et al., 2021; Larivière et al., 2020). The preprocessing of these connectomes is described elsewhere (Larivière et al., 2020).
 
-Weighted degree centrality. Weighted degree centrality is a measure of a brain region’s topological relevance and is commonly used for the identification of brain network hubs (van den Heuvel and Sporns, 2013). The degree centrality of a node i was computed as the sum of its functional or structural connection weights (Rubinov and Sporns, 2010). The resulting values were ranked before further analysis.
+Weighted degree centrality. Weighted degree centrality is a measure of a brain region’s topological relevance and is commonly used for the identification of brain network hubs (van den Heuvel and Sporns, 2013). The degree centrality of a node $i$ was computed as the sum of its functional or structural connection weights (Rubinov and Sporns, 2010). The resulting values were ranked before further analysis.
 
-Neighborhood abnormality. Neighborhood abnormality represents a summary measure of a cortical property in the node neighborhood defined by functional or structural brain network connectivity (Shafiei et al., 2020). In this work, the MetS-related morphological abnormalities (bootstrap ratio or t-statistic) in nodes j connected to node i were averaged and weighted by their respective functional or structural seed connectivity (wij):Ai=1Ni∑j∈NiCjwij
+Neighborhood abnormality. Neighborhood abnormality represents a summary measure of a cortical property in the node neighborhood defined by functional or structural brain network connectivity (Shafiei et al., 2020). In this work, the MetS-related morphological abnormalities (bootstrap ratio or t-statistic) in nodes $j$ connected to node $i$ were averaged and weighted by their respective functional or structural seed connectivity ($w_{ij}$):
 
-where j is one of the connected nodes Ni , Cj is the measure of MetS-related effects on cortical thickness and the corresponding connection weight wij . The term 1Ni corrects for the nodal degree by normalizing the number of connections. For example, a high positive or negative Ai represents strong connectivity to nodes of pronounced MetS effects (Petersen et al., 2022b).
+$$
+A_{i}=\frac{1}{N_{i}}\sumj\inN_{i}C_{j}w_{ij}
+$$
+
+where $j$ is one of the connected nodes $N_{i}$ , $C_{j}$ is the measure of MetS-related effects on cortical thickness and the corresponding connection weight $w_{ij}$ . The term $\frac{1}{Ni}$ corrects for the nodal degree by normalizing the number of connections. For example, a high positive or negative $A_{i}$ represents strong connectivity to nodes of pronounced MetS effects (Petersen et al., 2022b).
 
 Functional connectivity gradients. To contextualize the MetS-related morphological abnormalities with the functional network hierarchy, we derived macroscale functional connectivity gradients as a proxy of the canonical sensorimotor-association axis, which determines the distribution of manifold cortical properties (Margulies et al., 2016; Sydnor et al., 2021). Functional connectivity gradients were derived by applying diffusion map embedding on the HCP functional connectivity matrix using BrainSpace (Vos de Wael et al., 2020). A functional connectivity gradient can be interpreted as a spatial axis of connectivity variation spanning the cortical surface, as nodes of similar connectivity profiles are closely located on these axes.
 
-For this analysis, the statistical significance of spatial correlations was assessed via spin permutations (n=1000) which represent a null model preserving the inherent spatial autocorrelation of cortical information (Alexander-Bloch et al., 2018). Spin permutations are performed by projecting parcel-wise data onto a sphere which then is randomly rotated. After rotation, information is projected back on the surface, and a permuted rsp is computed. A p-value is computed comparing the empirical correlation coefficient to the permuted distribution. To assure that our results do not depend on null model choice, we additionally tested our results against a variogram-based null model implemented in the brainSMASH toolbox (https://github.com/murraylab/brainsmash; Burt and Murray, 2020) as well as a network rewiring null model with preserved density and degree sequence (Burt et al., 2020; Maslov et al., 2004).
+For this analysis, the statistical significance of spatial correlations was assessed via spin permutations (n=1000) which represent a null model preserving the inherent spatial autocorrelation of cortical information (Alexander-Bloch et al., 2018). Spin permutations are performed by projecting parcel-wise data onto a sphere which then is randomly rotated. After rotation, information is projected back on the surface, and a permuted $r_{sp}$ is computed. A p-value is computed comparing the empirical correlation coefficient to the permuted distribution. To assure that our results do not depend on null model choice, we additionally tested our results against a variogram-based null model implemented in the brainSMASH toolbox (https://github.com/murraylab/brainsmash; Burt and Murray, 2020) as well as a network rewiring null model with preserved density and degree sequence (Burt et al., 2020; Maslov et al., 2004).
 
 All p-values resulting from both contextualization analyses were FDR-corrected for multiple comparisons. As we conducted this study mindful of the reuse of our resources, the MetS effect maps are provided as separate supplementary files to enable further analyses (Supplementary files 1-3).
 
-## Sensitivity analyses
+#### Sensitivity analyses
 
 For a sensitivity analysis, we reperformed the PLS separately within the UKB and HCHS cohorts. In contrast to the PLS main analysis, in these subset-specific PLS analyses cognitive test performances were also incorporated as clinical variables as cognitive batteries were subset-specific. This approach was employed to evaluate the stability of the results and to determine if cognitive tests contribute to the latent variables.
 

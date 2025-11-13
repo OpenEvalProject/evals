@@ -44,7 +44,7 @@
 
 ## Abstract
 
-10.7554/eLife.19850.001 Actin has well established functions in cellular morphogenesis. However, it is not well understood how the various actin assemblies in a cell are kept in a dynamic equilibrium, in particular when cells have to respond to acute signals. Here, we characterize a rapid and transient actin reset in response to increased intracellular calcium levels. Within seconds of calcium influx, the formin INF2 stimulates filament polymerization at the endoplasmic reticulum (ER), while cortical actin is disassembled. The reaction is then reversed within a few minutes. This Calcium-mediated actin reset (CaAR) occurs in a wide range of mammalian cell types and in response to many physiological cues. CaAR leads to transient immobilization of organelles, drives reorganization of actin during cell cortex repair, cell spreading and wound healing, and induces long-lasting changes in gene expression. Our findings suggest that CaAR acts as fundamental facilitator of cellular adaptations in response to acute signals and stress. DOI: http://dx.doi.org/10.7554/eLife.19850.001
+Actin has well established functions in cellular morphogenesis. However, it is not well understood how the various actin assemblies in a cell are kept in a dynamic equilibrium, in particular when cells have to respond to acute signals. Here, we characterize a rapid and transient actin reset in response to increased intracellular calcium levels. Within seconds of calcium influx, the formin INF2 stimulates filament polymerization at the endoplasmic reticulum (ER), while cortical actin is disassembled. The reaction is then reversed within a few minutes. This Calcium-mediated actin reset (CaAR) occurs in a wide range of mammalian cell types and in response to many physiological cues. CaAR leads to transient immobilization of organelles, drives reorganization of actin during cell cortex repair, cell spreading and wound healing, and induces long-lasting changes in gene expression. Our findings suggest that CaAR acts as fundamental facilitator of cellular adaptations in response to acute signals and stress.
 
 ## Introduction
 
@@ -56,93 +56,322 @@ Here we show that calcium not only induces actin polymerization at the nuclear p
 
 ## Results
 
-## A calcium-mediated actin reset in mammalian cells
+### A calcium-mediated actin reset in mammalian cells
 
-To establish the cellular response to an acute mechanical stimulus we exposed Madin-Darby Canine Kidney (MDCK) epithelial cells to sudden shear flow. Prior to shear stress, MDCK cells stably expressing Lifeact-GFP exhibited a typical apical actin organization with clustered microvilli (
+To establish the cellular response to an acute mechanical stimulus we exposed Madin-Darby Canine Kidney (MDCK) epithelial cells to sudden shear flow. Prior to shear stress, MDCK cells stably expressing Lifeact-GFP exhibited a typical apical actin organization with clustered microvilli (Klingner et al., 2014). Immediately upon exposure to fluid flow of 10–20 dyn/cm2 we observed the formation of a highly transient perinuclear actin ring, which only remained for a few minutes (Figure 1A, Video 1). A similar phenomenon was recently reported in fibroblasts (Shao et al., 2015), but its consequences for cell organization were not further explored. To establish the reported relevance of calcium (Shao et al., 2015) for the actin reorganization in MDCK cells, we monitored Ca2+ levels with the fluorescent probe Fluo-4. Upon induction of shear stress, actin reorganization was preceded by a strong intracellular Ca2+ pulse (Figure 1A,B). To examine whether the elevation of Ca2+ levels is causally linked to actin reorganization, we treated MDCK cells with the calcium ionophore ionomycin. Indeed, exposure to as little as 0.3 µM ionomycin induced the formation of perinuclear actin rings and reduction of cortical actin within 60 s (Figure 1C). Interestingly, in contrast to the previous report, we found a virtually simultaneous decrease of actin filaments at the apical cortex (Figure 1C). As for the transient shear stress response, actin rapidly reverted to its cortical distribution within the following 60 s (Figure 1C). To test the prevalence of calcium-mediated actin reorganization, we stably or transiently expressed Lifeact-GFP in a panel of mammalian cell lines, including epithelial, mesenchymal, endothelial and immune cells, and treated each with ionomycin. In all instances, rapid relocation of actin from the cell cortex to the nuclear periphery occurred within 60 s (Figure 1—figure supplement 1A, Video 2). We observed the strongest response for human MCF-7 breast cancer cells (Figure 1D, Video 3) and therefore decided to focus on this cell line for further studies. Actin reorganization in MCF-7 cells was not influenced by Lifeact-GFP expression, as we observed an identical response in non-transfected cells stained with Alexa Fluor 647-phalloidin (Figure 1—figure supplement 1B). Importantly, we found that, upon calcium influx, actin filaments formed not only at the nuclear periphery, but throughout the cell (Figure 1—figure supplement 1C) and all along the endoplasmic reticulum (ER, Figure 1E). If cytosolic calcium is the key regulator of rapid actin reorganization, we reasoned that other signals that induced sufficient Ca2+ influx should be able to elicit the actin response. As expected, activation of calcium influx using physiological ligands for G-protein-coupled receptors, such as ATP or bradykinin efficiently induced actin rearrangement (Figure 1F). In most cells release of calcium from ER stores activates store-operated calcium entry from the extracellular environment (Hogan and Rao, 2015). Hence, blocking uptake of Ca2+ into the ER with thapsigargin - in the presence of high extracellular Ca2+ - also induced actin rearrangement (Figure 1F). Finally, perforation of the plasma membrane by localized mechanical disruption (atomic force microscopy, AFM) or laser-induced ablation efficiently induced cortex to ER actin reorganization (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig1-v1.jpg)
 
-**Figure 1.:** (A, B) MDCK cells labeled with Lifeact-mCherry (Lifeact-RFP) and Fluo4 were exposed to 10 dyn/cm2 shear flow. Regions used for intensity plots in (B) are indicated in (A). (C) MDCK cells expressing Lifeact-GFP were stimulated with 1 µM ionomycin. (D–F) MCF-7 cells expressing Lifeact-GFP (and ER-RFP in (E)) were exposed to 1 µM ionomycin (D, E), or to 50 µM ATP, 1 µM bradykinin or 1 µM thapsigargin or locally stressed with an AFM probe (pointy tips) or by laser ablation (F) (asterisks at position of stimulus). Times in sec. Scale bars: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.003
+**Figure 1.:** (A, B) MDCK cells labeled with Lifeact-mCherry (Lifeact-RFP) and Fluo4 were exposed to 10 dyn/cm2 shear flow. Regions used for intensity plots in (B) are indicated in (A). (C) MDCK cells expressing Lifeact-GFP were stimulated with 1 µM ionomycin. (D–F) MCF-7 cells expressing Lifeact-GFP (and ER-RFP in (E)) were exposed to 1 µM ionomycin (D, E), or to 50 µM ATP, 1 µM bradykinin or 1 µM thapsigargin or locally stressed with an AFM probe (pointy tips) or by laser ablation (F) (asterisks at position of stimulus). Times in sec. Scale bars: 10 µm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Treatment of indicated cell types expressing Lifeact-GFP with 1 µM ionomycin. (B, C) MCF-7 cells were treated with 1 µM ionomycin for 1 min, fixed and stained with phalloidin-Alexa647. Images in (C) represent a series of z-planes acquired at 0.5 µm distance. Times in sec. Scale bars 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.004
+**Figure 1—figure supplement 1.:** (A) Treatment of indicated cell types expressing Lifeact-GFP with 1 µM ionomycin. (B, C) MCF-7 cells were treated with 1 µM ionomycin for 1 min, fixed and stained with phalloidin-Alexa647. Images in (C) represent a series of z-planes acquired at 0.5 µm distance. Times in sec. Scale bars 10 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-media1.mp4.jpg)
+
+**Video 1.:** Corresponds to Figure 1A. Scale bar: 10 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/19850/elife-19850-media2.mp4.jpg)
+
+**Video 2.:** Corresponds to Figure 1—figure supplement 1A. Scale bar: 10 µm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/19850/elife-19850-media3.mp4.jpg)
+
+**Video 3.:** Corresponds to Figure 1D. Scale bar: 10 µm.
 
 In summary, we have identified a fundamental and conserved process of rapid, global and transient actin rearrangement, which occurs in a wide range of mammalian cells and can be induced by a variety of signals that raise cytosolic calcium levels. Due to the striking inversion of cellular actin organization that we observed (cortex-ER-cortex, Figure 1C,D) we decided to term this process ‘Calcium-mediated Actin Reset’ or CaAR.
 
-## Quantitative analysis of CaAR
+### Quantitative analysis of CaAR
 
-We proceeded to characterize the detailed kinetics and features of CaAR to gain insights into the underlying molecular mechanisms. In all cell types that we tested, CaAR was initiated within seconds after Ca
+We proceeded to characterize the detailed kinetics and features of CaAR to gain insights into the underlying molecular mechanisms. In all cell types that we tested, CaAR was initiated within seconds after Ca2+ influx (Figure 2—figure supplement 1A and not shown). Actin concentration at the ER reached its maximum within less than 1 min and reverted back to the original state within less than 5 min. Actin recruitment to the ER followed a typical three-phase kinetics characterized by a rapid increase, a plateau and a slower decrease (Figure 2A). We considered serum-starved (for 1 hr) MCF-7 cells treated with 330 nM ionomycin at RT as a control condition. The actin increase at the ER was significantly faster for cells grown in serum or at 37°C. Also, the stimulation of MCF-7 and HeLa cells with 50 µM ATP led to faster increase than for ionomycin (Figure 2B, Table 1). In contrast, addition of serum or ATP had little effect on the rate of decrease or the amplitude of the reaction (Figure 2B). Finally, the CaAR plateau was shortened at 37°C, for cells grown in serum and upon stimulation with ATP (Figure 2B). Treatment of HeLa cells with ionomycin induced very strong and long-lasting CaAR response (Figure 2B), indicating that these cells could not as efficiently remove Ca2+ from the cytosol. Most importantly, despite the specific differences described above, all kinetic parameters of CaAR remained within a three-fold range (Figure 2B), highlighting the robust and stereotypic nature of the response.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig2-v1.jpg)
 
-**Figure 2.:** (A, B) Quantification of indicated parameters during CaAR. MCF-7 and HeLa cells expressing Lifeact-GFP were incubated at RT or 37°C and with serum or serum-free HBSS buffer. Cells were then treated with either 330 nM ionomycin or 50 µM ATP. Control corresponds to serum starved MCF-7 cells stimulated with 330 nM ionomycin at RT. GFP intensity was measured at the nuclear periphery and analyzed using customized Matlab scripts (Supplementary material). All values are mean ± SD, n > 100 cells. See Table 1 for details. (C) Lifeact-GFP expressing MCF-7 cells were treated with the indicated drugs, ATP: 50 µM, ionomycin: 1 µM, thapsigargin: 1 µM in Ca2+-free medium. Intracellular calcium levels (Fura2) and Lifeact-GFP intensities at the ER were monitored. Peak values: mean ± SD (n > 30). Numbers above bars indicate % cells exhibiting CaAR. (D) Cells treated with 1 µM ionomycin were followed over time by simultaneous fluorescence and atomic force microscopy. The relative Young’s modulus of whole cells was calculated from force-distance curves obtained with 10 µm beads (mean ± SD, n = 24). (E) Freezing of lysosomes labeled with Lysotracker Red in HeLa cells undergoing CaAR. Images correspond to the maximum projection of indicated periods in a time series. (F) Freezing of organelle motion during CaAR in MCF-7 cells. ER or mitochondria were fluorescently labeled with ss-RFP-KDEL or mitotracker Red, respectively. (G) Change in lysosome motility for control and blebbistatin-treated (50 µM) HeLa cells. (H, I) Propagation of CaAR induced by laser ablation in the absence (I) and presence (J) of 50 µM ATP. Arrows: ablation sites, asterisks: cells reacting to stimulus. Times in sec after exposure to the stimulus. Scale bars: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.008
+**Figure 2.:** (A, B) Quantification of indicated parameters during CaAR. MCF-7 and HeLa cells expressing Lifeact-GFP were incubated at RT or 37°C and with serum or serum-free HBSS buffer. Cells were then treated with either 330 nM ionomycin or 50 µM ATP. Control corresponds to serum starved MCF-7 cells stimulated with 330 nM ionomycin at RT. GFP intensity was measured at the nuclear periphery and analyzed using customized Matlab scripts (Supplementary material). All values are mean ± SD, n > 100 cells. See Table 1 for details. (C) Lifeact-GFP expressing MCF-7 cells were treated with the indicated drugs, ATP: 50 µM, ionomycin: 1 µM, thapsigargin: 1 µM in Ca2+-free medium. Intracellular calcium levels (Fura2) and Lifeact-GFP intensities at the ER were monitored. Peak values: mean ± SD (n > 30). Numbers above bars indicate % cells exhibiting CaAR. (D) Cells treated with 1 µM ionomycin were followed over time by simultaneous fluorescence and atomic force microscopy. The relative Young’s modulus of whole cells was calculated from force-distance curves obtained with 10 µm beads (mean ± SD, n = 24). (E) Freezing of lysosomes labeled with Lysotracker Red in HeLa cells undergoing CaAR. Images correspond to the maximum projection of indicated periods in a time series. (F) Freezing of organelle motion during CaAR in MCF-7 cells. ER or mitochondria were fluorescently labeled with ss-RFP-KDEL or mitotracker Red, respectively. (G) Change in lysosome motility for control and blebbistatin-treated (50 µM) HeLa cells. (H, I) Propagation of CaAR induced by laser ablation in the absence (I) and presence (J) of 50 µM ATP. Arrows: ablation sites, asterisks: cells reacting to stimulus. Times in sec after exposure to the stimulus. Scale bars: 10 µm.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) MCF-7 cells expressing Lifeact-mCherry (LA-RFP) were labeled with Fluo4 and stimulated by laser ablation. Asterisks: first frame in which Fluo4 or CaAR response can be detected. (B) Incidence of CaAR (in %) induced in MCF-7 cells by the application of different loading forces with the AFM probe (pointy tip). n = 10 cells per data point. (C) Efficiency of repeated cell stimulation with varying delays (mean ± SD, n = 7). (D) Repeated stimulation of cells with pointy AFM tip. (E, F) CaAR induction and propagation in MCF-7 cells following stimulation by AFM (E) or laser ablation (F). Arrow: ablation site / AFM contact; asterisks: cells reacting to stimulus. Times in sec. Scale bars: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.009
+**Figure 2—figure supplement 1.:** (A) MCF-7 cells expressing Lifeact-mCherry (LA-RFP) were labeled with Fluo4 and stimulated by laser ablation. Asterisks: first frame in which Fluo4 or CaAR response can be detected. (B) Incidence of CaAR (in %) induced in MCF-7 cells by the application of different loading forces with the AFM probe (pointy tip). n = 10 cells per data point. (C) Efficiency of repeated cell stimulation with varying delays (mean ± SD, n = 7). (D) Repeated stimulation of cells with pointy AFM tip. (E, F) CaAR induction and propagation in MCF-7 cells following stimulation by AFM (E) or laser ablation (F). Arrow: ablation site / AFM contact; asterisks: cells reacting to stimulus. Times in sec. Scale bars: 10 µm.
+
+**Table 1.**
+ Quantitative analysis of CaAR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type condition</th>
+      <th>MCF-7control</th>
+      <th>MCF-7serum</th>
+      <th>MCF-737°C</th>
+      <th>MCF-7ATP</th>
+      <th>HeLaIono</th>
+      <th>HeLaATP</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>20,74</td>
+      <td>14,09</td>
+      <td>8,20</td>
+      <td>11,78</td>
+      <td>15,59</td>
+      <td>5,34</td>
+      <td>mean</td>
+    </tr>
+    <tr>
+      <td rowspan="2">increasetime constant (s)</td>
+      <td>12,94</td>
+      <td>6,94</td>
+      <td>5,42</td>
+      <td>11,12</td>
+      <td>10,86</td>
+      <td>3,99</td>
+      <td>stdev</td>
+    </tr>
+    <tr>
+      <td>980</td>
+      <td>588</td>
+      <td>102</td>
+      <td>252</td>
+      <td>371</td>
+      <td>258</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>ANOVA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>−41,47</td>
+      <td>−28,21</td>
+      <td>−17,15</td>
+      <td>−42,74</td>
+      <td>−119,30</td>
+      <td>−49,42</td>
+      <td>mean</td>
+    </tr>
+    <tr>
+      <td rowspan="2">decreasetime constant (s)</td>
+      <td>26,32</td>
+      <td>17,06</td>
+      <td>11,75</td>
+      <td>30,90</td>
+      <td>40,00</td>
+      <td>33,71</td>
+      <td>stdev</td>
+    </tr>
+    <tr>
+      <td>1010</td>
+      <td>586</td>
+      <td>102</td>
+      <td>279</td>
+      <td>136</td>
+      <td>193</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>****</td>
+      <td>****</td>
+      <td>ns</td>
+      <td>****</td>
+      <td>ns</td>
+      <td>ANOVA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3,29</td>
+      <td>2,51</td>
+      <td>2,99</td>
+      <td>3,52</td>
+      <td>6,97</td>
+      <td>2,91</td>
+      <td>mean</td>
+    </tr>
+    <tr>
+      <td rowspan="2">amplitudeintensity (a.u.)</td>
+      <td>1,50</td>
+      <td>0,71</td>
+      <td>1,36</td>
+      <td>1,96</td>
+      <td>3,15</td>
+      <td>1,34</td>
+      <td>stdev</td>
+    </tr>
+    <tr>
+      <td>979</td>
+      <td>588</td>
+      <td>102</td>
+      <td>252</td>
+      <td>371</td>
+      <td>255</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>****</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>****</td>
+      <td>***</td>
+      <td>ANOVA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>217,30</td>
+      <td>137,00</td>
+      <td>72,65</td>
+      <td>162,70</td>
+      <td>391,40</td>
+      <td>115,20</td>
+      <td>mean</td>
+    </tr>
+    <tr>
+      <td rowspan="2">plateautime (s)</td>
+      <td>108,20</td>
+      <td>61,49</td>
+      <td>28,60</td>
+      <td>110,50</td>
+      <td>197,40</td>
+      <td>62,77</td>
+      <td>stdev</td>
+    </tr>
+    <tr>
+      <td>965</td>
+      <td>586</td>
+      <td>102</td>
+      <td>238</td>
+      <td>136</td>
+      <td>193</td>
+      <td>n</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>****</td>
+      <td>ANOVA</td>
+    </tr>
+  </tbody>
+</table>
 
 Next, we investigated the role of calcium in more detail using the ratiometric dye Fura2. We found that cytosolic Ca2+ levels in MCF-7 cells increased 2- to 4-fold upon exposure to ionomycin (3.59 ± 0.84 fold, n = 31) or ATP (2.82 ± 0.67 fold, n = 54), which induced CaAR in virtually all cells (Figure 2C). Induction of CaAR was completely prevented in Ca2+-free medium, but could be restored within 1 min by addition of Ca2+ (not shown). In Ca2+-free medium, release of calcium from ER stores with thapsigargin could not be enhanced by store-operated calcium entry and led to a modest cytosolic Ca2+ increase of 1.26 ± 0.08 fold (n = 31). This was insufficient to induce CaAR (Figure 2C). These results indicate that CaAR induction requires a threshold level of intracellular Ca2+ that can only be reached by influx from the extracellular environment.
 
-Observing such large-scale reorganization of actin, we wondered whether the mechanical properties of cells undergoing CaAR were altered. We therefore used atomic force microscopy (AFM) to probe cells with 10 µm beads attached to the cantilever. Despite the observed transient reduction of cortical actin, we found that the subcortical regions (800 nm below the plasma membrane) of MCF-7 cells treated with ionomycin became markedly stiffer during CaAR, mirroring greater levels of actin recruitment at the ER (Figure 2D). In addition, we observed that intracellular motility of organelles was transiently halted during CaAR. Random as well as directed motion of lysosomes (Figure 2E), mitochondria and the ER network (Figure 2F) was abolished within a few seconds of CaAR onset and resumed after actin returned to the cell cortex (Figure 2E,F). When simultaneously observing CaAR and lysosome motility we found the organelles trapped within a cytosol-filling actin mesh that corresponded to the transient ER-based actin filaments (Video 4). Lysosomes were also immobilized in cells treated with 50 µM blebbistatin arguing against a prominent role of actomyosin contractility for organelle freezing (Figure 2G).10.7554/eLife.19850.011Video 4.HeLa cell expressing Lifeact-GFP labelled with Lysotracker Red and stimulated by laser ablation.Corresponds to Figure 2E.DOI: http://dx.doi.org/10.7554/eLife.19850.011
+Observing such large-scale reorganization of actin, we wondered whether the mechanical properties of cells undergoing CaAR were altered. We therefore used atomic force microscopy (AFM) to probe cells with 10 µm beads attached to the cantilever. Despite the observed transient reduction of cortical actin, we found that the subcortical regions (800 nm below the plasma membrane) of MCF-7 cells treated with ionomycin became markedly stiffer during CaAR, mirroring greater levels of actin recruitment at the ER (Figure 2D). In addition, we observed that intracellular motility of organelles was transiently halted during CaAR. Random as well as directed motion of lysosomes (Figure 2E), mitochondria and the ER network (Figure 2F) was abolished within a few seconds of CaAR onset and resumed after actin returned to the cell cortex (Figure 2E,F). When simultaneously observing CaAR and lysosome motility we found the organelles trapped within a cytosol-filling actin mesh that corresponded to the transient ER-based actin filaments (Video 4). Lysosomes were also immobilized in cells treated with 50 µM blebbistatin arguing against a prominent role of actomyosin contractility for organelle freezing (Figure 2G).
 
-When using pointy AFM tips to probe cells, we often were able to induce CaAR in individual cells (Figure 1E, Figure 2—figure supplement 1B,C). Forces above 50 nN (Figure 2—figure supplement 1B) were able to robustly induce CaAR multiple times in a single cell (Figure 2—figure supplement 1D, Video 5) with a refractory period of 30–60 s (Figure 2—figure supplement 1C), consistent with the time scale of actin recruitment at the ER. When using localized CaAR stimulation by AFM we frequently observed that cells directly adjacent to the manipulated cells also reacted (Figure 2—figure supplement 1E). To examine this behavior in more detail, we performed ablation experiments on MCF-7 monolayers. Strikingly, we found that nearly all cells within 60–150 µm of the ablation site exhibited CaAR (Figure 2H). This was also observed for cells that were not in direct contact with the ablated cell (Figure 2—figure supplement 1F, Video 6). Previous reports have shown that Ca2+ signals can be propagated across tissue sections and cell layers via ATP (Frame and de Feijter, 1997; Schwiebert, 2000). Indeed, distant cells were no longer able to respond to cell ablation after the medium had been saturated with 100 µM ATP (Figure 2I), indicating that ATP release and associated Ca2+ influx is responsible for the propagation of CaAR.10.7554/eLife.19850.012Video 5.MCF-7 cell expressing Lifeact-GFP repeatedly stimulated by AFM (asterisk).Corresponds to Figure 2—figure supplement 1D. Scale bar: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.01210.7554/eLife.19850.013Video 6.Propagation of CaAR in MCF-7 cells expressing Lifeact-GFP stimulated by laser ablation (asterisk).Corresponds to Figure 2—figure supplement 1F. Scale bar: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.013
+![Video 4.](https://cdn.elifesciences.org/articles/19850/elife-19850-media4.mp4.jpg)
 
-## CaAR is driven by INF2-mediated actin polymerization
+**Video 4.:** Corresponds to Figure 2E.
 
-The rapid increase in actin localization at the ER indicated the involvement of a strong nucleator in CaAR. Accordingly, both G-actin sequestration by latrunculin A (LatA) and actin filament disruption by cytochalasin D (CytoD) completely blocked CaAR (
+When using pointy AFM tips to probe cells, we often were able to induce CaAR in individual cells (Figure 1E, Figure 2—figure supplement 1B,C). Forces above 50 nN (Figure 2—figure supplement 1B) were able to robustly induce CaAR multiple times in a single cell (Figure 2—figure supplement 1D, Video 5) with a refractory period of 30–60 s (Figure 2—figure supplement 1C), consistent with the time scale of actin recruitment at the ER. When using localized CaAR stimulation by AFM we frequently observed that cells directly adjacent to the manipulated cells also reacted (Figure 2—figure supplement 1E). To examine this behavior in more detail, we performed ablation experiments on MCF-7 monolayers. Strikingly, we found that nearly all cells within 60–150 µm of the ablation site exhibited CaAR (Figure 2H). This was also observed for cells that were not in direct contact with the ablated cell (Figure 2—figure supplement 1F, Video 6). Previous reports have shown that Ca2+ signals can be propagated across tissue sections and cell layers via ATP (Frame and de Feijter, 1997; Schwiebert, 2000). Indeed, distant cells were no longer able to respond to cell ablation after the medium had been saturated with 100 µM ATP (Figure 2I), indicating that ATP release and associated Ca2+ influx is responsible for the propagation of CaAR.
+
+![Video 5.](https://cdn.elifesciences.org/articles/19850/elife-19850-media5.mp4.jpg)
+
+**Video 5.:** Corresponds to Figure 2—figure supplement 1D. Scale bar: 10 µm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/19850/elife-19850-media6.mp4.jpg)
+
+**Video 6.:** Corresponds to Figure 2—figure supplement 1F. Scale bar: 10 µm.
+
+### CaAR is driven by INF2-mediated actin polymerization
+
+The rapid increase in actin localization at the ER indicated the involvement of a strong nucleator in CaAR. Accordingly, both G-actin sequestration by latrunculin A (LatA) and actin filament disruption by cytochalasin D (CytoD) completely blocked CaAR (Figure 3A, Video 7). The only actin nucleator that has been shown to be localized at the ER is inverted formin 2 (INF2) (Chhabra and Higgs, 2006), and this nucleator has also been shown to mediate the formation of perinuclear actin filaments in 3T3 fibroblasts (Shao et al., 2015). Indeed, in MCF-7 and HeLa cells, INF2 was localized to the ER, as shown either by immunofluorescence (Figure 3B, Figure 3—figure supplement 1A) or when expressing the full-length INF2-CAAX isoform fused to GFP (Figure 3—figure supplement 1B). A constitutively active point mutant of INF2 (A149D, (Korobova et al., 2013) induced the previously shown strong actin staining at the ER (Ramabhadran et al., 2013), which was not further increased by the addition of ionomycin (Figure 3C). To test a potential role of INF2 for CaAR we knocked down INF2 expression by RNA interference. While our attempts for INF2 knock down were unsuccessful in MCF-7 cells, we were able to efficiently abolish expression of INF2 in HeLa cells (Figure 3D). Strikingly, CaAR was completely blocked in HeLa cells that were depleted for INF2 (Figure 3E). This was especially apparent in areas where some cells still retained INF2 expression and therefore were still able to nucleate actin at the ER upon treatment with ionomycin (Figure 3E, circled area). Notably, INF2 knock-down also blocked actin decrease at the cell cortex (Figure 3E), increase in cell stiffness detected by AFM (Figure 3—figure supplement 1C) and freezing of organelle motility (Figure 3—figure supplement 1D. To obtain stable cell lines without INF2 expression we knocked out INF2 using the CRSPR/Cas9 system. We obtained several independent HeLa INF2-KO clones that exhibited no detectable INF2 expression by Western blot (Figure 3—figure supplement 1E). We then transiently expressed either the CAAX- or nonCAAX human isoform of INF2 in clone 18 (Figure 3F). Upon induction of CaAR by laser ablation we observe no reaction in untransfected cells confirming that INF2 is essential for CaAR. Interestingly, both isoforms were able to rescue the knock out and to support efficient CaAR reactions (Figure 3F), indicating that ER-localization was not essential for actin reorganization.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig3-v1.jpg)
 
-**Figure 3.:** (A) MCF-7 cells expressing Lifeact-mCherry were treated with ionomycin and the indicated drugs (LatA: 400 nM latrunculin A, CytoD: 1 µM cytochalasin D). Plots show representative intensity profiles for Lifeact-GFP at the nuclear periphery and for intracellular Ca2+ (Fluo4). (B) MCF-7 cells were fixed at the indicated time points after addition of 1 µM ionomycin and stained with αINF2 antibody. (C) MCF-7 cells expressing Lifeact-mCherry were transfected with a constitutively active GFP-INF2(A149D) construct and imaged before and after addition of 1 µM ionomycin. (D, E) siRNA-mediated knock-down of INF2 in HeLa cells expressing Lifeact-GFP. (D) Western analysis of INF2 after knock-down with two different siRNAs at indicated times. (E) 72 hr after siRNA transfection, HeLa cells were treated with 1 µM ionomycin and monitored by fluorescence microscopy. Cells were fixed, immunostained with anti-INF2 antibody and imaged again at the same positions. Dotted line surrounds residual INF2-positive cells. Plots show Lifeact-GFP intensity at the cortex (green) and the ER (red). Values are mean ± SD, n = 30. (F) Images of HeLa INF2 KO cells stably expressing Lifeact-mCherry (derived from KO clone 18) and transfected with either GFP-INF2-CAAX or GFP-INF2-nonCAAX. Cells were stimulated by laser ablation outside the represented region. In each series one cell with INF2 expression (1) and a control cell without INF2 (2) are labeled. Corresponding intensity plots for ER (red) and cortical (green) regions are shown. Times in sec. Scale bars: 10 µm. (G) Co-precipitation analyses showing that GFP-INF2-CAAX expressed in HEK293 cells specifically interacts with immobilised calmodulin (CaM). Comparison of pull down conditions with and without (1 mM EGTA) 500 µM Ca2+ (CaM activation at plateau).DOI: http://dx.doi.org/10.7554/eLife.19850.014
+**Figure 3.:** (A) MCF-7 cells expressing Lifeact-mCherry were treated with ionomycin and the indicated drugs (LatA: 400 nM latrunculin A, CytoD: 1 µM cytochalasin D). Plots show representative intensity profiles for Lifeact-GFP at the nuclear periphery and for intracellular Ca2+ (Fluo4). (B) MCF-7 cells were fixed at the indicated time points after addition of 1 µM ionomycin and stained with αINF2 antibody. (C) MCF-7 cells expressing Lifeact-mCherry were transfected with a constitutively active GFP-INF2(A149D) construct and imaged before and after addition of 1 µM ionomycin. (D, E) siRNA-mediated knock-down of INF2 in HeLa cells expressing Lifeact-GFP. (D) Western analysis of INF2 after knock-down with two different siRNAs at indicated times. (E) 72 hr after siRNA transfection, HeLa cells were treated with 1 µM ionomycin and monitored by fluorescence microscopy. Cells were fixed, immunostained with anti-INF2 antibody and imaged again at the same positions. Dotted line surrounds residual INF2-positive cells. Plots show Lifeact-GFP intensity at the cortex (green) and the ER (red). Values are mean ± SD, n = 30. (F) Images of HeLa INF2 KO cells stably expressing Lifeact-mCherry (derived from KO clone 18) and transfected with either GFP-INF2-CAAX or GFP-INF2-nonCAAX. Cells were stimulated by laser ablation outside the represented region. In each series one cell with INF2 expression (1) and a control cell without INF2 (2) are labeled. Corresponding intensity plots for ER (red) and cortical (green) regions are shown. Times in sec. Scale bars: 10 µm. (G) Co-precipitation analyses showing that GFP-INF2-CAAX expressed in HEK293 cells specifically interacts with immobilised calmodulin (CaM). Comparison of pull down conditions with and without (1 mM EGTA) 500 µM Ca2+ (CaM activation at plateau).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) HeLa cells expressing Lifeact-GFP were fixed at the indicated time points after addition of 1 µM ionomycin and stained with αINF2 antibody. (B) MCF-7 cells expressing Lifeact-mCherry were transfected with a GFP-INF2 expressing plasmid and induced with 1 µM ionomycin. Times in sec. Scale bars 10 µm. (C) Lifeact-GFP-expressing HeLa cells were transfected with scrambled siRNA or INF2 targeting siRNA1, or left untreated (control) and analyzed by atomic force microscopy. The relative Young’s modulus of whole cells was calculated from force-distance curves obtained with 10 µm beads and plotted as mean ± SD (n > 4). (D) Normalized Lifeact-GFP intensities at the ER and the cortex and mobility of lysosomes labeled with Lysotracker Red of representative HeLa cells stimulated by laser ablation. Cells were observed 72 hr after transfection with scrambled (scr) or INF2 siRNA (si1). (E) Western blot with antiINF2 antibody showing loss of INF2 expression after CRSPR/Cas9-mediated knock out in different isolated clones. (F) CaAR in MCF-7 cells pretreated with 50 µM blebbistatin or 10 µM nocodazole for 20 min. Images were taken at the indicated times after addition of 1 µM ionomycin.DOI: http://dx.doi.org/10.7554/eLife.19850.015
+**Figure 3—figure supplement 1.:** (A) HeLa cells expressing Lifeact-GFP were fixed at the indicated time points after addition of 1 µM ionomycin and stained with αINF2 antibody. (B) MCF-7 cells expressing Lifeact-mCherry were transfected with a GFP-INF2 expressing plasmid and induced with 1 µM ionomycin. Times in sec. Scale bars 10 µm. (C) Lifeact-GFP-expressing HeLa cells were transfected with scrambled siRNA or INF2 targeting siRNA1, or left untreated (control) and analyzed by atomic force microscopy. The relative Young’s modulus of whole cells was calculated from force-distance curves obtained with 10 µm beads and plotted as mean ± SD (n > 4). (D) Normalized Lifeact-GFP intensities at the ER and the cortex and mobility of lysosomes labeled with Lysotracker Red of representative HeLa cells stimulated by laser ablation. Cells were observed 72 hr after transfection with scrambled (scr) or INF2 siRNA (si1). (E) Western blot with antiINF2 antibody showing loss of INF2 expression after CRSPR/Cas9-mediated knock out in different isolated clones. (F) CaAR in MCF-7 cells pretreated with 50 µM blebbistatin or 10 µM nocodazole for 20 min. Images were taken at the indicated times after addition of 1 µM ionomycin.
+
+![Video 7.](https://cdn.elifesciences.org/articles/19850/elife-19850-media7.mp4.jpg)
+
+**Video 7.:** Corresponds to Figure 3A. Scale bar: 10 µm.
 
 Considering the rapid activation of INF2 by calcium and the lack of obvious calcium binding sites in the formin itself, we hypothesized that an abundant calcium sensor protein could be involved in the reaction. We therefore investigated binding of INF2 to the prototypical calcium regulator calmodulin. Co-precipitation analyses showed that GFP-INF2 expressed in HEK293 cells indeed specifically bound to immobilized calmodulin, and that this interaction was Ca2+-dependent (Figure 3G). While this result provides a potential molecular basis for INF2 activation, additional work will be needed to clarify the specific role of calmodulin during CaAR.
 
 It is well documented that intracellular calcium influx also affects other cellular factors such as Myosin II, and INF2 has been linked to microtubule stabilization (Andrés-Delgado et al., 2012; Bartolini et al., 2016). These factors might therefore also play a role during CaAR. However, pretreatment of cells with the myosin II inhibitor blebbistatin or with the microtubule disrupting drug nocodazole did not inhibit or slow down CaAR (Figure 3—figure supplement 1F). In summary, our results indicate that CaAR is largely dependent on a single factor – the calcium-regulated actin nucleator INF2.
 
-## A stochastic model rationalizes CaAR features and kinetics
+### A stochastic model rationalizes CaAR features and kinetics
 
-Two remarkable characteristics of CaAR are the reciprocal behavior of actin at the ER and the cell cortex and the highly transient nature of the reorganization (
+Two remarkable characteristics of CaAR are the reciprocal behavior of actin at the ER and the cell cortex and the highly transient nature of the reorganization (Figure 4A). Interestingly, INF2 is not only an actin nucleator and elongator, but also a very potent severing and actin-depolymerizing factor (Chhabra and Higgs, 2006; Gurel et al., 2014). During CaAR, these activities should also be subject to regulation by calcium and therefore potentially facilitate the observed reciprocal and transient reaction. It is important to note that CaAR does not lead to the equal reduction of all cortical actin structures. Stable actin assemblies such as stress fibers were much less affected (Figure 4—figure supplement 1A, Video 8). Also, despite their opposite slopes, there was no apparent delay between ER and cell cortex reactions and they followed the calcium signal with the same offset (Figure 4A). In addition, the duration of Ca2+ influx was directly correlated with the kinetics of actin reorganization at both locations (Figure 4B, Figure 4—figure supplement 1B). These observations indicate that the actin filament assembly and disassembly at the ER and cell cortex are tightly coupled. A potential mechanism for such coupling would be simple competition between different actin nucleators. To test whether such a scenario could account for the observed CaAR kinetics, we developed a particle-based stochastic model of actin dynamics that explicitly considers actin nucleation, polymerization, depolymerization, capping and severing (Figure 4C, Materials and Methods). We initially focused on a single actin population in equilibrium with the monomer pool. The model showed that actin turnover is mainly determined by the speed of actin depolymerization and modulated to a lesser extent by the rates of capping and severing (Figure 4—figure supplement 1C). In addition, actin turnover was strongly dependent on the levels of actin monomers available (Figure 4—figure supplement 1D). The experimentally measured t1/2 for recovery of actin-GFP at the cortex of MCF-7 cells was quite fast, at 14.48 ± 7.21 s (n = 79). This constrained the possible values for severing, depolymerization and ratios of F- to G-actin (Figure 4—figure supplement 1D,E). We next included a second nucleation activity to represent INF2-mediated actin polymerization at the ER (Figure 4C). By assuming that INF2 activity follows the intracellular Ca2+ curve (See Materials and Methods), we were able to generate a transient actin peak at the ER with a corresponding decrease at the cortex (Figure 4D). By increasing the INF2 nucleation rate or the amount of available G-actin in the system we were able to obtain kinetics that were reasonably close to the experimental observations (dotted curves in Figure 4D). However, cortical actin never dropped below 50% of its original value, and we were unable to obtain complete reorganization of actin within less than 30 s, as seen with laser ablation (Figure 4B). Interestingly, the model predicted that including Ca2+- or INF2-dependent actin depolymerization into the model strongly increased the amplitude and speed of actin reorganization at both cortex and ER (solid curves in Figure 4D). To experimentally test this prediction we measured CaAR kinetics in HeLa KO cells expressing a WH2-mutant of INF2 (3L: L976A, L977A, L986A) that was reported to have strongly reduced depolymerization activity (Chhabra and Higgs, 2006). Strikingly CaAR kinetics were strongly reduced in cells expressing the 3L mutant. The resulting changes were comparable to the situation without Ca2+-mediated depolymerization predicted by the model (Figure 4D,E). The amplitude and the speed of reorganization were strongly reduced for both, ER and cell cortex (Figure 4F,G).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig4-v1.jpg)
 
-**Figure 4.:** (A, B) Correlation analysis of actin and calcium dynamics in MCF-7 cells undergoing CaAR. (A) Temporal shift between half-maximal decay of calcium (Ca), actin maximum at nuclear periphery (ER) and actin minimum at the cell cortex (Co). (B) Correlation between Ca and ER (red, Pearson correlation coefficient, r = 0.924), Ca and Co (green, r = 0.840) and between ER and Co (black, r = 0.880). Dotted lines: y = x. (C) Stochastic model for actin competition. Filaments at the cortex (green) and ER (red) are represented by arrows (head: barbed end, circle: capped end). Total length of cortical (LC) and ER (LER) actin is indicated. Monomer pool is given by LG. Relevant parameters: Rates of severing (rs per length l), capping (rc), nucleation (rn), velocities of elongation (v+) and depolymerization (v-). See Supplementary material for details of the model. (D) Evolution of F-actin concentration at ER (red) and cortex (green) generated by the model using a simple competition scenario (dotted lines) or including calcium-activated depolymerization of actin (full lines). All simulations were run using the indicated Ca2+ curve (black) as input. (E) Average intensity curves of Lifeact-mCherry at ER (red) and cell cortex (green) of HeLa KO cells expressing wildtype or WH2 mutant GFP-INF2-CAAX (3L: L976A, L977A, L986A). Dotted red and green lines indicate SEM. (F) Effect of different depolymerization rates on maximal actin change at cortex (green) and ER (red). Shown are predictions from simulations (left) and experimental data comparing wildtype and 3L-INF2 expressing HeLa cells (data points, mean and SD). (G) As in (F) but showing the effects of varying depolymerization rate on the time until cortical minimum or ER-maximum is reached.DOI: http://dx.doi.org/10.7554/eLife.19850.017
+**Figure 4.:** (A, B) Correlation analysis of actin and calcium dynamics in MCF-7 cells undergoing CaAR. (A) Temporal shift between half-maximal decay of calcium (Ca), actin maximum at nuclear periphery (ER) and actin minimum at the cell cortex (Co). (B) Correlation between Ca and ER (red, Pearson correlation coefficient, r = 0.924), Ca and Co (green, r = 0.840) and between ER and Co (black, r = 0.880). Dotted lines: y = x. (C) Stochastic model for actin competition. Filaments at the cortex (green) and ER (red) are represented by arrows (head: barbed end, circle: capped end). Total length of cortical (LC) and ER (LER) actin is indicated. Monomer pool is given by LG. Relevant parameters: Rates of severing (rs per length l), capping (rc), nucleation (rn), velocities of elongation (v+) and depolymerization (v-). See Supplementary material for details of the model. (D) Evolution of F-actin concentration at ER (red) and cortex (green) generated by the model using a simple competition scenario (dotted lines) or including calcium-activated depolymerization of actin (full lines). All simulations were run using the indicated Ca2+ curve (black) as input. (E) Average intensity curves of Lifeact-mCherry at ER (red) and cell cortex (green) of HeLa KO cells expressing wildtype or WH2 mutant GFP-INF2-CAAX (3L: L976A, L977A, L986A). Dotted red and green lines indicate SEM. (F) Effect of different depolymerization rates on maximal actin change at cortex (green) and ER (red). Shown are predictions from simulations (left) and experimental data comparing wildtype and 3L-INF2 expressing HeLa cells (data points, mean and SD). (G) As in (F) but showing the effects of varying depolymerization rate on the time until cortical minimum or ER-maximum is reached.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) TIRF imaging of the basal surface of a Lifeact-GFP expressing MCF-7 cell after laser ablation. The dashed line indicates the position of the kymograph, the asterisk indicates the duration of CaAR. Times in sec, scale bars 10 µm, time arrow 60 s. (B) MCF-7 cells expressing Lifeact-GFP were labeled with Fluo4 and stimulated by laser ablation. Signal intensities for Fluo4 (reflects intracellular calcium levels; dotted curves) and Lifeact-mCherry in the perinuclear area (solid curves) and the cell cortex (dashed curves) were plotted for two cells with shorter (red) and longer (black) calcium peaks. Half maximal calcium levels and corresponding maxima/minima of actin are indicated by dashed vertical lines. (C–E) Impact of changes in the indicated parameters of the stochastic model describing actin reorganization during CaAR. See Materials and methods for details.DOI: http://dx.doi.org/10.7554/eLife.19850.018
+**Figure 4—figure supplement 1.:** (A) TIRF imaging of the basal surface of a Lifeact-GFP expressing MCF-7 cell after laser ablation. The dashed line indicates the position of the kymograph, the asterisk indicates the duration of CaAR. Times in sec, scale bars 10 µm, time arrow 60 s. (B) MCF-7 cells expressing Lifeact-GFP were labeled with Fluo4 and stimulated by laser ablation. Signal intensities for Fluo4 (reflects intracellular calcium levels; dotted curves) and Lifeact-mCherry in the perinuclear area (solid curves) and the cell cortex (dashed curves) were plotted for two cells with shorter (red) and longer (black) calcium peaks. Half maximal calcium levels and corresponding maxima/minima of actin are indicated by dashed vertical lines. (C–E) Impact of changes in the indicated parameters of the stochastic model describing actin reorganization during CaAR. See Materials and methods for details.
+
+![Video 8.](https://cdn.elifesciences.org/articles/19850/elife-19850-media8.mp4.jpg)
+
+**Video 8.:** Corresponds to Figure 4—figure supplement 1A. Scale bar: 10 µm.
 
 In summary, our simulations indicate that the observed kinetics of CaAR can be quantitatively explained by a competition scenario with constitutively active cortical actin nucleators and Ca2+-activated INF2 at the ER. Importantly, the depolymerization activity of INF2 provides additional optimization for CaAR kinetics.
 
-## CaAR induces transcription changes
+### CaAR induces transcription changes
 
 While the most apparent feature of CaAR is certainly the transient and reciprocal reorganization of actin, we wondered whether the global balance between G- and F-actin was also affected during or after the reaction. Indeed, fractionation of MCF-7 cell extracts revealed a modest increase in the global F/G-actin ratio during CaAR (Figure 5—figure supplement 1A). In addition, the levels of actin at the cortex of MCF-7 cells were increased after completion of CaAR relative to those at the outset of CaAR (Figure 5—figure supplement 1B).
 
-A very sensitive readout for an increased F/G actin ratio in cells is the release of transcriptional regulators, such as the serum response factor (SRF) co-factor MRTF-A, from sequestration in the cytosol (
+A very sensitive readout for an increased F/G actin ratio in cells is the release of transcriptional regulators, such as the serum response factor (SRF) co-factor MRTF-A, from sequestration in the cytosol (Miralles et al., 2003). Indeed, we found that within a minute of Ca2+ influx and CaAR onset, MRTF-A translocated into the nucleus in >95% of MCF-7 cells, and remained there for up to 30 min (Figure 5A,B). MRTF-A translocation also occurred in HeLa cells and was blocked upon INF2 knock-down (Figure 5C). When we blocked CaAR by treatment with LatA, MRTF-A translocation was also inhibited (Figure 5D). In contrast, treatment with CytoD induced CaAR-independent translocation of MRTF-A (Figure 5E), consistent with previous reports (Descot et al., 2009). We next tested whether CaAR-induced translocation of MRTF-A indeed caused SRF-mediated transcription. RNA levels of two known SRF targets, CTGF and NR4R3, were strongly increased upon CaAR induction by ionomycin, reaching a maximum at 1 hr (Figure 5—figure supplement 1C). We selected this time point for the analysis of CaAR-mediated changes in gene transcription. We treated MCF-7 cells with 1.5 µM ionomycin for 10 min after pre-incubation for 10 min with either LatA, CytoD or control buffer. After washout of the drugs and ionophore, we cultured the cells for another 50 min in 4-thio-uridine and collected newly synthesized mRNA (Figure 5F). We found that a 10 min pulse of ionomycin was sufficient to decrease the expression of 478 genes and enhance the expression of 405 genes by more than 1.5 fold (Figure 5—source data 2). Treatment with LatA on its own had very little effect, but upregulation of 88 ionomycin-induced genes was strongly inhibited by LatA (Figure 5—source datas 1 and 2). Nearly half of these genes are known SRF targets and about one third were also induced by the SRF activator CytoD (Figure 5G). In agreement with the reported functions of SRF, many of the identified transcriptional changes were associated with genes involved in cytoskeletal organization, calcium regulation, cell signaling and regulation of cell adhesion (Figure 5G). More than 60% of the CaAR-regulated genes have been associated with cancer and more than one-third have been implicated in cellular stress responses, cell differentiation, cell migration or inflammation (Figure 5G). SRF is known to respond to actin changes mediated through Rho GTPases (Treisman et al., 1998). However, we found that CaAR-mediated induction of CTGF was not affected by the ROCK inhibitor Y27632, the calcineurin inhibitor cyclosporin A (CsA) or by the CaM kinase inhibitors KN62 and KN93 (Figure 5—figure supplement 1D). Importantly, all CaAR transcriptome experiments were performed in serum-starved cells and addition of serum did not induce CaAR in MCF-7 cells. In addition, treatment of cells with Y27632, the Rho1 inhibitor C3 transferase or with CsA did not affect CaAR (Figure 5—figure supplement 1E). Our results therefore indicate that CaAR mediates SRF activation through actin reorganization, but via a Ca2+-dependent pathway distinct from the previously described SRF activation involving Rho, ROCK and mDia (Baarlink et al., 2013; Copeland and Treisman, 2002).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig5-v1.jpg)
 
-**Figure 5.:** (A) Immunofluorescence detection of MRTF-A in MCF-7 cells at the indicated times after addition of 1 µM ionomycin. (B) Quantification of MCF-7 cells exhibiting CaAR (red dotted line) and weak (light grey) or strong (dark grey) nuclear MRTF-A accumulation (mean + SD, n = 3 experiments with >100 cells per time point). (C) Quantification of HeLa cells exhibiting CaAR (red dotted line) and weak (light grey) or strong (dark grey) nuclear MRTF-A staining (mean + SD, n = 3 experiments with >100 cells per time point). Graphs show values for cells treated with scrambled siRNA and two INF2-siRNAs. (D, E) Analysis of MRTF-A localization upon stimulation of MCF-7 cells with 1 µM ionomycin (added at t = 0). Cells were pretreated for 10 min with either 400 nM latrunculin A (D) or 1 µM cytochalasin D (E). (F) Protocol for transcriptome analysis. (G) Major functional categories of CaAR-regulated genes, assembled from the manual curation of public databases and literature. Association categories are given for the known SRF regulation (light grey), cellular processes (medium grey) and biological processes (dark grey). Time in min. Scale bars 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.02010.7554/eLife.19850.021Figure 5—source data 1.Excel table with 88 genes differentially regulated in MCF-7 cells either treated for 10 min with ionomycin (1.5 µM) or with ionomycin (1.5 µM) and LatA (400 nM). Filled cells indicate inclusion into indicated categories. Orange: regulation through SRF or CytoD-induced MRTF-A translocation. Blue: cellular processes. Green: physiological processes. Total number and % of genes in each category are given at the bottom of the table.DOI: http://dx.doi.org/10.7554/eLife.19850.02110.7554/eLife.19850.022Figure 5—source data 2.Excel table (five pages) with results from Affymetrix chip analysis for gene expression after treatment with Ionomycin and actin drugs. See Materials and Methods for details.DOI: http://dx.doi.org/10.7554/eLife.19850.022
+**Figure 5.:** (A) Immunofluorescence detection of MRTF-A in MCF-7 cells at the indicated times after addition of 1 µM ionomycin. (B) Quantification of MCF-7 cells exhibiting CaAR (red dotted line) and weak (light grey) or strong (dark grey) nuclear MRTF-A accumulation (mean + SD, n = 3 experiments with >100 cells per time point). (C) Quantification of HeLa cells exhibiting CaAR (red dotted line) and weak (light grey) or strong (dark grey) nuclear MRTF-A staining (mean + SD, n = 3 experiments with >100 cells per time point). Graphs show values for cells treated with scrambled siRNA and two INF2-siRNAs. (D, E) Analysis of MRTF-A localization upon stimulation of MCF-7 cells with 1 µM ionomycin (added at t = 0). Cells were pretreated for 10 min with either 400 nM latrunculin A (D) or 1 µM cytochalasin D (E). (F) Protocol for transcriptome analysis. (G) Major functional categories of CaAR-regulated genes, assembled from the manual curation of public databases and literature. Association categories are given for the known SRF regulation (light grey), cellular processes (medium grey) and biological processes (dark grey). Time in min. Scale bars 10 µm.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Ratio of F- to G-actin in MCF-7 cells during CaAR as determined by fractionation and Western blotting (mean ± SD, n = 5). (B) Lifeact-GFP intensity at the cortex of MCF-7 cells after stimulation by laser ablation. (C) Levels of CTGF and NR4A3 transcripts in MCF-7 cells at the indicated times after addition of 1 µM ionomycin (at t = 0) as determined by quantitative RT-PCR (mean ± SD, n = 2, normalized against untreated control cells at each time point). (D) MCF-7 cells were pretreated with the indicated drugs (ROCK inhibitor Y27632, CaM-kinase inhibitors KN62 and KN93, calcineurin inhibitor cyclosporin A (CsA), actin inhibitors latrunculin A (LatA) and cytochalasin D (CytoD); concentrations are indicated in µM) for 10 min before addition of 1.5 µM ionomycin, and levels of CTGF transcripts were determined. Values are mean ± SD, n = 3. (E) Lifeact-GFP expressing MCF-7 cells were pretreated with the indicated inhibitors (CsA: 1 µM, Y27632: 10 µM, C3: 2.5 µg/ml) for at least 2 hr before the addition of 1 µM ionomycin to induce CaAR. Upper right: MCF-7 cells expressing Lifeact-GFP stimulated by the addition of 40% FBS and then monitored by fluorescence microscopy. Times in sec. Scale bars 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.023
+**Figure 5—figure supplement 1.:** (A) Ratio of F- to G-actin in MCF-7 cells during CaAR as determined by fractionation and Western blotting (mean ± SD, n = 5). (B) Lifeact-GFP intensity at the cortex of MCF-7 cells after stimulation by laser ablation. (C) Levels of CTGF and NR4A3 transcripts in MCF-7 cells at the indicated times after addition of 1 µM ionomycin (at t = 0) as determined by quantitative RT-PCR (mean ± SD, n = 2, normalized against untreated control cells at each time point). (D) MCF-7 cells were pretreated with the indicated drugs (ROCK inhibitor Y27632, CaM-kinase inhibitors KN62 and KN93, calcineurin inhibitor cyclosporin A (CsA), actin inhibitors latrunculin A (LatA) and cytochalasin D (CytoD); concentrations are indicated in µM) for 10 min before addition of 1.5 µM ionomycin, and levels of CTGF transcripts were determined. Values are mean ± SD, n = 3. (E) Lifeact-GFP expressing MCF-7 cells were pretreated with the indicated inhibitors (CsA: 1 µM, Y27632: 10 µM, C3: 2.5 µg/ml) for at least 2 hr before the addition of 1 µM ionomycin to induce CaAR. Upper right: MCF-7 cells expressing Lifeact-GFP stimulated by the addition of 40% FBS and then monitored by fluorescence microscopy. Times in sec. Scale bars 10 µm.
 
-## CaAR mediates acute cellular reorganization
+### CaAR mediates acute cellular reorganization
 
-We next wanted to understand the physiological consequences of transient actin reorganization during CaAR. When we examined the cellular consequences of CaAR in laser ablation experiments with HeLa cells, we observed accumulation of actin at the site of membrane damage in more than 90% of the cases (
+We next wanted to understand the physiological consequences of transient actin reorganization during CaAR. When we examined the cellular consequences of CaAR in laser ablation experiments with HeLa cells, we observed accumulation of actin at the site of membrane damage in more than 90% of the cases (Figure 6A, Video 9). This accumulation was reminiscent of previously observed wound repair processes (Clark et al., 2009; McNeil, 2002) and typically occurred after completion of CaAR (Figure 6B). Upon knock-down of INF2, HeLa cells did not undergo CaAR and were also completely unable to recruit actin to the site of membrane wounding (Figure 6C). Importantly, membrane damage as measured by uptake of propidium iodide or FM4-64 was repaired within a few seconds of damage induction (not shown). Actin accumulation was therefore not required for membrane sealing but for a later step in wound repair, possibly cortex reassembly. Such repair mechanisms should be especially relevant for terminally differentiated cells that can no longer be replaced in vivo, such as podocytes (Pavenstädt et al., 2003). We therefore examined CaAR in in vitro differentiated human AB8 podocytes (Saleem et al., 2002). Similar to our observations in HeLa cells, laser ablation at the periphery of podocytes induced CaAR and led to subsequent actin accumulation at the wounding site, which was then efficiently sealed without apparent loss of cellular integrity (Figure 6D, Video 10). Interestingly, actin accumulation at the wound was accompanied by simultaneous induction of lamellipodia in the immediate vicinity (Figure 6D). In both cell types examined above, the strong accumulation of actin at cortical wounding sites occurred right after completion of CaAR. Similarly, when we extended the period of observation in MCF-7 cells that had undergone CaAR upon ATP exposure, we found that they initiated extended basal protrusions that correlated with the end CaAR. Protrusions emanating from cell-cell junctions collapsed after only 5–10 min, but those appearing at free cell edges persisted for up to 1 hr (Figure 6E, Video 11). To study this phenomenon in more detail we ablated a single MCF-7 cell in a monolayer. CaAR was efficiently induced in all surrounding cells and we again observed short-lived protrusions at cell-cell junctions and longer-lived protrusions at free cell edges (Figure 6F, Video 12). In addition, some cells formed large lamellipodia, which rapidly closed the gap left by the ablated cell (Figure 6F). Considering the extended activation of cell spreading and cellular protrusion after CaAR we wondered whether this would have noticeable consequences for collective migration in a typical wound healing setting. We therefore observed MCF-7 monolayers migrating into a free area after removal of a PDMS spacer (Figure 7A). After 12 hr, untreated cells had moved in to the gap with an average speed of 3 µm/h, while cells migrating in the presence of 50 µM ATP (and therefore exhibiting CaAR at the onset of the experiment) covered a much larger area with an average speed of 7 µm/h (Figure 7B). A more detailed analysis revealed that ATP treatment led to an acceleration for the initial 4 hr of migration and that cells then reverted to the speed of control cells (Figure 7C, Video 13). Our findings clearly show that ATP-mediated calcium influx and CaAR are associated with prolonged activation of protrusion and collective migration of MCF-7 cells. As we were not yet able to remove INF2 from MCF-7 cells, we cannot exclude at this time that the observed effects on protrusion could be due to a CaAR-independent effect of ATP.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig6-v1.jpg)
 
-**Figure 6.:** (A) A HeLa cell expressing Lifeact-GFP was damaged by laser ablation and Lifeact-GFP intensity was monitored in different regions. Asterisk: ablation site. Regions for intensity measurements in (B) are indicated in corresponding colors. (B) Plots of Lifeact-GFP signal intensity at ER, cortex and at the ablation site of the cell shown in (A). (C) Plots of Lifeact-GFP signal intensity in indicated regions of control and INF2-siRNA-treated cells. Quantification of peak intensities at the wounding site is shown as mean ± SD (n > 9). (D) A podocyte expressing Lifeact GFP was damaged by laser ablation and subsequently monitored by fluorescence microscopy. Asterisk indicates site of laser ablation. Red dotted line indicates the path of kymograph, a white dotted line indicates the outline of the cell before ablation, and arrows indicate instances of wound-repair and lamellipodia formation after CaAR completion. Lifeact-GFP intensity curves for ER, cortex and wound site are shown in the graph. Time arrow: 50 s. (E) Increase in cortical actin at the cell periphery upon activation of CaAR in MCF-7 cells with 50 µM ATP. The dotted lines indicate the position of the cell boundary before stimulation. (F) Changes in cortical actin dynamics after ablation of an MCF-7 cell within a monolayer. Kymographs are shown along the dotted lines for indicated positions (red numbers). Time arrow: 20 min. At later time-points actin congresses into ring structures around gaps (red arrow). Times in sec (A–D) and min (E, F). Scale bars: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.19850.024
+**Figure 6.:** (A) A HeLa cell expressing Lifeact-GFP was damaged by laser ablation and Lifeact-GFP intensity was monitored in different regions. Asterisk: ablation site. Regions for intensity measurements in (B) are indicated in corresponding colors. (B) Plots of Lifeact-GFP signal intensity at ER, cortex and at the ablation site of the cell shown in (A). (C) Plots of Lifeact-GFP signal intensity in indicated regions of control and INF2-siRNA-treated cells. Quantification of peak intensities at the wounding site is shown as mean ± SD (n > 9). (D) A podocyte expressing Lifeact GFP was damaged by laser ablation and subsequently monitored by fluorescence microscopy. Asterisk indicates site of laser ablation. Red dotted line indicates the path of kymograph, a white dotted line indicates the outline of the cell before ablation, and arrows indicate instances of wound-repair and lamellipodia formation after CaAR completion. Lifeact-GFP intensity curves for ER, cortex and wound site are shown in the graph. Time arrow: 50 s. (E) Increase in cortical actin at the cell periphery upon activation of CaAR in MCF-7 cells with 50 µM ATP. The dotted lines indicate the position of the cell boundary before stimulation. (F) Changes in cortical actin dynamics after ablation of an MCF-7 cell within a monolayer. Kymographs are shown along the dotted lines for indicated positions (red numbers). Time arrow: 20 min. At later time-points actin congresses into ring structures around gaps (red arrow). Times in sec (A–D) and min (E, F). Scale bars: 10 µm.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/19850/elife-19850-fig7-v1.jpg)
 
-**Figure 7.:** (A) Representative examples of MCF-7 cells expressing Lifeact-mCherry seeded on either side of a PDMS spacer. After removal of the spacer cells were cultured for 24 hr and then treated with either control medium (left panels) or medium containing 50 µM ATP (right panels). Shown are the cell positions at the time of the medium exchange (offset resulting from stitching), the kymographs along the indicated lines (red numbers) and the overlay between t0 (red) and t5h (green). Time arrow: 4 hr. Scale bars: 100 µm. (B) Rate of cell front movement for control vs. ATP-treated cells. Student’s t-test p<0.05 for n = 5 experiments. (C) Graphs showing speed of closure in control cells vs. ATP-induced cells. (D) Timeline of CaAR and associated processes as discussed in the text.DOI: http://dx.doi.org/10.7554/eLife.19850.025
+**Figure 7.:** (A) Representative examples of MCF-7 cells expressing Lifeact-mCherry seeded on either side of a PDMS spacer. After removal of the spacer cells were cultured for 24 hr and then treated with either control medium (left panels) or medium containing 50 µM ATP (right panels). Shown are the cell positions at the time of the medium exchange (offset resulting from stitching), the kymographs along the indicated lines (red numbers) and the overlay between t0 (red) and t5h (green). Time arrow: 4 hr. Scale bars: 100 µm. (B) Rate of cell front movement for control vs. ATP-treated cells. Student’s t-test p<0.05 for n = 5 experiments. (C) Graphs showing speed of closure in control cells vs. ATP-induced cells. (D) Timeline of CaAR and associated processes as discussed in the text.
+
+![Video 9.](https://cdn.elifesciences.org/articles/19850/elife-19850-media9.mp4.jpg)
+
+**Video 9.:** Corresponds to Figure 6A. Scale bar: 10 µm.
+
+![Video 10.](https://cdn.elifesciences.org/articles/19850/elife-19850-media10.mp4.jpg)
+
+**Video 10.:** Corresponds to Figure 6D. Scale bar: 10 µm.
+
+![Video 11.](https://cdn.elifesciences.org/articles/19850/elife-19850-media11.mp4.jpg)
+
+**Video 11.:** Corresponds to Figure 6E. Scale bar: 10 µm.
+
+![Video 12.](https://cdn.elifesciences.org/articles/19850/elife-19850-media12.mp4.jpg)
+
+**Video 12.:** Corresponds to Figure 6F. Scale bar: 10 µm.
+
+![Video 13.](https://cdn.elifesciences.org/articles/19850/elife-19850-media13.mp4.jpg)
+
+**Video 13.:** Corresponds to Figure 7A.
 
 In summary, our results on plasma membrane sealing and transcriptional regulation indicate that CaAR plays an important role during acute morphogenetic adaptations, with implications for such diverse processes as cell migration, cancer progression and cell stress response.
 
@@ -158,138 +387,231 @@ In summary, we have identified CaAR as a fundamental process linking Ca2+ signal
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Cells were grown at 37°C with 10% CO2 in Dulbecco’s Modified Eagle medium (DMEM-Glutamax-I; Gibco, Carlsbad, CA, USA) supplemented with 10% fetal bovine serum (FBS; Gibco). Routinely, 2 × 104 cells/ml were seeded on glass-bottomed dishes (Ibidi, Martinsried, Germany), 8-well slides (Ibidi) or 4-well LabTek dishes (Nunc, Rochester, NY, USA) and incubated for 24 hr or 48 hr before imaging. Live cell imaging was performed with cells seeded on glass bottom dishes and incubated in Hanks’ buffered salt solution (HBSS) supplemented with 10 mM HEPES (pH 7.4). Apart from the experiment in Figure 2B labeled ‘serum’, all cells were starved in imaging buffer 1 hr prior to experiments. The following cell lines were used in this study: MDCK II (ECACC 0062107); MDCK II cells stably expressing Lifeact-mCherry (Klingner et al., 2014); MCF-7 (ECACC 86012803); MCF-7 cells stably expressing Lifeact-GFP or Lifeact-mCherry (this study); HeLa (ECACC 93021013); HeLa cells stably expressing Lifeact-GFP or Lifeact-mCherry (this study); HeLa INF2 KO cells, and HeLa INF2 KO cells stably expressing Lifeact-mCherry (this study); NIH 3T3 (ECACC 93061524); CCL-39 (ATCC-CCL-39); PANC-1 (ECACC 87092802); U-2 OS (ECACC 92022711); COS-7 (ECACC 87021302); GM7373 (DSMZ ACC109); GM7373 stably expressing Lifeact-mKate2 (Kronlage et al., 2015); AB8 podocytes (Saleem et al., 2002), AB8 cells stably expressing Lifeact-GFP (this study); HoxB8-immortalized mouse monocytes and neutrophils ([Wang et al., 2006] and this study); HEK293 cells (ECACC 85120602). All cell lines were checked for identity by visual inspection of morphologies and tested negative in Mycoplasma tests using the following primers: RWS2534: 5’-CGCCTGAGTAGTACGTTCGC-3’; RWS2535: 5’-CGCCTGAGTAGTACGTACGC-3’; RWS2536: 5’-TGCCTGAGTAGTACATTCGC-3’; RWS2537: 5’-CGCCTGGGTAGTACATTCGC-3’; RWS2538: 5’-CGCCTGAGTAGTAGTCTCGC-3’; RWS2539: 5’-TGCCTGGGTAGTACATTCGC-3’; RWS2540: 5’-GCGGTGTGTACAAGACCCGA-3’; RWS2541: 5’-GCGGTGTGTACAAAACCCGA-3’; RWS2542: 5’-GCGGTGTGTACAAACCCCGA-3’.
 
-## Transfection and plasmids
+### Transfection and plasmids
 
 Lifeact-acGFP, Lifeact-mCherry and Lifeact-mKate2 were expressed from pEFIRES and pGKIRES plasmid backbones. Beta-Actin (ACTB-GFP) was expressed from pEGFP-C1. Lifeact-acGFP was cloned via NotI/PacI restriction sites into the retroviral expression vector pQXCIP for stable transfection of AB8 cells. pssRFP-KDEL (Altan-Bonnet et al., 2006), pGFP-INF2-CAAX, pGFP-INF2-nonCAAX and pGFP-INF2(A149D)-CAAX were described previously (Ramabhadran et al., 2011). For expression in HEK293 cells, INF2 was first subcloned into pGADT7.3 (BspEI/XmaI-XhoI) and then into pEGFP-C3 (EcoRI-SalI). The 3L (L976A, L977A, L986A) mutants were generated by site directed mutagenesis (Stratagene Quickchange, Agilent, Santa Clara, CA, USA) using either pGFP-INF2-CAAX or pGFP-INF2-nonCAAX as a template. Primers used for mutagenesis: RWS3036: 5’-GTTCAGCACGATGAAGGCCTTTAGGGACCTTTTCC-3’ siRNA resistant forward; RWS3037: 5’-GGAAAAGGTCCCTAAAGGCCTTCATCGTGCTGAAC-3’ siRNA resistant reverse; RWS3163: 5’-gtgtgtgtcatcgatgccGCgGCggctgacatcaggaaggg-3’ L976A and L977A forward; RWS3164: 5’-cccttcctgatgtcagccGCcGCggcatcgatgacacacac-3’ L976A and L977A reverse; RWS3165: 5’-catcaggaagggcttccagGCgcggaagacagcccggg-3’ L986A forward; RWS3166: 5’-cccgggctgtcttccgcGCctggaagcccttcctgatg-3’ L986A reverse. All sub cloning and mutagenesis steps were verified by sequencing. Cell transfections were performed using Fugene6 or LipofectamineTM 2000 (Invitrogen) according to the manufacturer’s instructions. To obtain stably transfected lines, cells were selected on 600 µg/ml hygromycin (InvivoGen, San Diego, CA, USA) and/or 600 µg/ml puromycin (InvivoGen) for 7–10 days under constant selection pressure. Antibiotics were omitted during drug treatments and imaging. For stable retroviral transduction of AB8 cells, GP2-293 cells were transfected using the calcium phosphate method with 5 µg pQXCIP-Lifeact-acGFP and 5 µg pVSV-G (Clontech, Mountain View, CA, USA) in a 10 cm dish. After 6 hr, the medium was replaced and cells were grown for another 72 hr. Virus-containing supernatant was filtered through a 0.45 nm filter (Millipore) and polybrene (8 µg/ml) was added. AB8 cells in a 6-well dish were transfected with 2 ml of the virus-containing medium and 2 ml of fresh AB8 medium. After 24 hr, the medium was replaced and cells were allowed to recover for 24 hr. Transduced cells were selected with puromycin (2 µg/ml) (Schulze et al., 2014; Wennmann et al., 2014).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Epifluorescence imaging was performed on a fully automated iMIC-based microscope from FEI/Till Photonics, using an Olympus 100 × 1.4 NA objective and DPSS lasers at 488 nm (Cobolt Calypso, 75 mW) and 561 nm (Cobolt Jive, 150 mW) as light sources. Lasers were selected through an AOTF and directed through a broadband fiber to the microscope. A galvanometer-driven two-axis scan head was used to adjust laser incidence angles. Images were collected using an Imago-QE Sensicam camera. Acquisition was controlled by LiveAcquisition software (Till Photonics). Fluorescence Recovery After Photobleaching (FRAP) of actin-GFP was performed using a third galvanometer-controlled mirror (Polytrope) to switch between wide-field and FRAP modalities. Ablation experiments were carried out on an iMIC setup equipped with a pulsed 355 nm picosecond UV laser (Sepia, PicoQuant) as previously described (Raabe et al., 2009). Confocal microscopy was performed on an iMIC42 setup equipped with a spinning disk unit (Andromeda) using Olympus 20x air (NA 0.75) and 60x oil immersion (NA 1.49) objectives. Images were taken using typical filter settings for excitation and emission of fluorescence probes/proteins and recorded on EMCCD cameras (Andor iXon Ultra 897).
 
-## Drug treatment
+### Drug treatment
 
 Cells were treated with 50 µM blebbistatin (Sigma-Aldrich, St Louis, MO USA) to inhibit myosin II ATPase activity, 400 nM latrunculin A (Enzo Life Sciences) to sequester actin monomers, 1 µM thapsigargin to inhibit Ca2+ uptake into the ER, 1 µM cytochalasin D (Sigma) to depolymerize actin, 10–50 µM cyclosporin A (Sigma) to inhibit calcineurin, 1–10 µM KN93 or KN62 (Tocris) to inhibit Ca2+/calmodulin-dependent protein kinase II, 10–20 µM Y27632 (Sigma) to inhibit ROCK, 2.5 µg/µl C3 transferase (Cytoskeleton) to inhibit Rho1, 1 µM nocodazole (Sigma) to depolymerize microtubules, 10–20 µM SMIFH2 (Sigma) to inhibit formins and 50–100 µM CK666 or CK869 (Sigma) to inhibit the ARP2/3 complex.
 
-## siRNA experiments
+### siRNA experiments
 
 Silencer Select (21 nt) siRNAs were purchased from Ambion/Lifetechnologies: siRNA1 (s34736): sense sequence 5’-CCAUGAAGGCUUUCCGGGAtt-3’); siRNA2 (s230622): sense sequence 5’-GCAUUGUCAUGAACGAGCUtt-3’. As a negative control, a random, non-targeting siRNA sequence was used. HeLa cells stably expressing Lifeact-GFP were seeded on coverslips or in 8-well Ibidi slides and transfected with siRNAs (30 nM) on the next day, using Oligofectamine (Invitrogen, Carlsbad, CA, USA) according to the manufacturer’s instructions. Cells were incubated for 72 hr and either imaged live for CaAR after ionomycin addition (Figure 3E, Figure 3—figure supplement 1C) or laser ablation (Figure 3—figure supplement 1D , 6C) or fixed at various time-points after ionomycin addition and immunostained for MRTF-A (Figure 5C).
 
-## Generation of INF2 knock out cells
+### Generation of INF2 knock out cells
 
 To knock out INF2 in human cell lines we obtained a mix of three different CRSPR/Cas9 plasmids and the corresponding HDR plasmids from Santa Cruz (sc-410096). gRNA sequences: A: Sense: GAGGAGCTGCTGCGAGTCTC; B: Sense: GGTCGACATGAGCAGCCACC; C: Sense: CAGCGACAACGTGCCCTACG. HeLa wt cells were co-transfected with both plasmid mixes using Fugene6 and grown for 24 hr without selection. We visually confirmed the appearance of RFP expressing cells indicated successful disruption of INF2. We next grew cells for two weeks under selection pressure with 0.5 µg/ml puromycin. The population of stable puromycin resistant cells was then transfected twice with a Cre expression vector (Santa Cruz) using Fugene6 to remove the RFP and puromycin cassette. Finally, we selected individual INF2 KO clones by limited dilution in 96-well plates. All clones were characterized for INF2 expression by Western blot and immunofluorescence and for absence of CaAR induction (Rhodamine-phalloidin staining) upon ionomycin stimulation.
 
-## Shear flow experiments
+### Shear flow experiments
 
 For shear-flow experiments, 5 × 103 cells were seeded in µ-slide0.2 Luer flow chambers (Ibidi), incubated for 48 hr and then connected to the Ibidi pump system, perfused with DMEM and subjected to 20 dyn/cm2 oscillatory shear stress at 0.2 Hz.
 
-## Atomic force microscopy (AFM)
+### Atomic force microscopy (AFM)
 
 For elasticity measurements and mechanical perturbation experiments (AFM), cells were seeded (at 2–5 × 105 cells/ml) on 35 mm Fluorodish glass-bottomed dishes (WPI) 48 hr prior to experiments. All experiments were performed using a Nanowizard III AFM (JPK Instruments, Berlin, Germany) integrated into a TCS SP8 confocal laser scanning microscope (Leica, Wetzlar, Germany). Gold-coated MSCT cantilevers with spherical (10 µm) polystyrene probes (Novascan, Ames, IA; USA) with a nominal spring constant of 0.01 pN/nm were used to quantify cell elasticity. Force-distance curves were acquired with a z-length of 2.5 µm at a tip velocity of 1 µm/s and a retracted delay of 1 s (~1 force distance curve per 6 s). At a loading force of 0.75 nN the cantilever reached a maximal indentation of 1 µm (Carl and Schillers, 2008). Elasticity was measured as Young’s modulus based on Sneddon's model of nanoindentation using Protein Unfolding and Nano-Indentation Software (PUNIAS, http://punias.voila.net). The last 200 nm of the force distance curve was analyzed to quantify the elasticity of the cell cytoplasm. All elasticity measurements were performed at RT. For all cell perforation experiments, Multi75-G Cantilevers (BudgetSensors, Sofia, Bulgaria) with spring constants ranging from 2.5 to 3.5 N/m were used. Cells were stimulated by placing the cantilever tip in the center of the nuclear area and indenting them with a speed of 1 µm/s. To determine the force threshold for CaAR induction, maximum loading forces ranging from 5 nN to 50 nN were used. To study repeated CaAR induction, cells were indented ten times with a maximum loading force of 50 nN and variable pauses between single indentations. Fluorescence images were acquired with a 63x HC PL APO CS2 oil immersion objective (NA = 1.4) and hybrid detection system for photon counting (Leica HD™). Z-stacks of cells (distance 500 nm) were taken every 30 s. All confocal fluorescence images were analyzed and processed using Fiji. Fluorescence intensity was measured in unprocessed images. For presentation, grouped z-projections of three slices were cropped and contrast-adjusted.
 
-## Image processing and analysis
+### Image processing and analysis
 
 Images were processed using Fiji and Matlab (Mathworks Inc., Natrick, MA). Custom made Matlab scripts are included as Figure2-source codes 1–3. Images were contrast-adjusted and zoomed for purposes of presentation in figures only. For image cleanup and denoising we routinely used the background subtraction algorithm in Fiji (radius 50 pixel). Kymographs and intensity plots were created using the respective features in Fiji.
 
-## Calcium imaging
+### Calcium imaging
 
 Cells were loaded with Fluo-4 (5 µM, Thermo Fisher) or Fura-2 (3 µM, Thermo Fisher) for 15–30 min at 37°C. Fluo4 was excited at 488 nm. Fura-2 intensity was determined by ratiometric measurement using excitation at 340 and 380 nm (detection at 500 nm). Fura-2 fluorescence was acquired using an Axiovert 200 (Zeiss, Wetzlar, Germany) equipped with a VisiChrome high speed polychromator system (Visitron System, Puchheim, Germany), a CoolSNAP fx camera (Photometrix) and Metafluor imaging software (Visitron System). Ca2+-dependent fluorescence was acquired every 10 s in alternation with imaging of Lifeact-GFP fluorescence.
 
-## Immunofluorescence and cell labeling
+### Immunofluorescence and cell labeling
 
 Cells were grown on glass coverslips, fixed with 4% paraformaldehyde in PBS for 20 min, washed with PBS and permeabilized with 0.1% Triton X-100 for 10 min prior to incubation with primary Ab for 1 hr. After incubation with secondary antibodies and/or Rhodamine-phalloidin (Invitrogen, R415) for 1 hr in PBS, cells were washed and subsequently mounted on slides in Mowiol/Dabco (Roth, 0713 and 0718). Primary antibodies: rabbit anti-INF2 (Chhabra et al., 2009), goat anti-MRTF-A (SantaCruz: C-19; sc-21558, RRID:AB_2142498). Secondary antibodies: Alexa-Fluor 568 goat anti-rabbit/mouse, Alexa-Fluor donkey anti-goat 568 and Alexa-Fluor donkey anti-rabbit 647 (all Invitrogen). LysoTracker Red (Thermo, L7528) was used to label lysosomes. MitoTracker Red CMXRos (Thermo, M7512) was used to label mitochondria.
 
-## Western blot analysis
+### Western blot analysis
 
 For detection of INF2 and actin in Western blots, equal amounts of cell lysates were separated by SDS-PAGE, transferred to ImmobilonTM-P-membrane (Serva, 42581.01), incubated in primary Ab (rabbit anti-Inf2, Proteintec: 20466–1-AP, RRID:AB_10694821) and (Chhabra et al., 2009), (mouse monoclonal anti-β-actin, Abcam: ab125248, RRID:AB_11140352), in the presence of 5% skim milk in TBS-T overnight and labeled with HRP-coupled secondary Ab for one hour. The signal was detected using ECL chemiluminescence on an Intas Imager (Intas, Göttingen).
 
-## Coprecipitation of INF2 with calmodulin
+### Coprecipitation of INF2 with calmodulin
 
 Cell culture, transfection, coprecipitation with calmodulin and detection of associated proteins were conducted as described previously (Hou et al., 2015 PLoS Biol.). Briefly, HEK293 cells were cultured at 37°C under 5% CO2 in DMEM medium (Gibco Life technologies) additionally supplied with 10% fetal bovine serum, 0.1 mM gentamicin and 1x penicillin (100 units/ml)-streptomycin (100 μg/ml). GFP and GFP-INF2-CAAX were transfected into HEK293 cells using TurboFect (Thermo Scientific). 48 hr after transfection, cells were lysed in EGTA-free lysis buffer (10 mM HEPES, 1% (v/v) Triton X-100, 100 mM NaCl, 0.1 mM MgCl2, pH 7.5) supplied with 1x EDTA- free protease inhibitor cocktail and 200 μM calpain inhibitor I (Sigma) for 30 min and the supernatants containing soluble proteins were obtained after centrifugation (20.000 g, 20 min at 4°C). Cell lysates were supplied with 1 mM EGTA and 500 µM Ca2+, respectively, then incubated with pre-washed 25 µl calmodulin-sepharose 4B (GE Healthcare) for 3 hr. calmodulin bound proteins were washed three times then eluted and denatured in 15 µl 8 M Urea and 15 µl 4x SDS-sample buffer by boiling for 5 min at 100°C. Protein samples were separated by SDS-PAGE using 9.5% acrylamide separation gels followed by western blot detection using anti-GFP antibodies (Abcam, Ab290). Results are representative of at least three experiments.
 
-## Measurement of F/G actin ratio
+### Measurement of F/G actin ratio
 
 MCF-7 cells were serum starved for 1 hr in HBSS and then treated with 50 µM ATP for 0.5, 1, 2 or 5 min. Cells were scraped off in ice-cold actin stabilization buffer (50 mM PIPES – pH9, 50 mM NaCl, 5 mM MgCl2, 5 mM EGTA, 5% glycerol, 0.1% NP-40, 0.1% Triton-X-100, 0.1%, Tween 20, 0.1% 2-mercapto-ethanol, 0.001% antifoam C, 0.004 mM TAME, 15 µM leupeptin, 10 µM pepstatin A, 10 mM benzamidine). Cleared supernatants were centrifuged at 100,000 g for 1 hr at 4°C. High speed supernatant containing G-actin was recovered, and the pellet containing F-actin was re-solubilized with ice cold actin stabilization buffer. The F/G-actin ratio was determined by scanning densitometry using ImageJ software.
 
-## RT-PCR
+### RT-PCR
 
 For analysis of CTGF and NR4A3 mRNA levels, total RNA was extracted from 1 × 106 MCF-7 cells using the RNeasy Mini Kit (Qiagen) following the manufacturer’s protocol. cDNA synthesis was performed from 2 µg total RNA using cDNA Reverse Transcription Kit (Thermo Fisher). QPCR was performed in triplicates from 3–4 biological replicates. QPCR primers are available upon request. mRNA levels were normalized to those of B2M and GAPDH (Figure 5—figure supplement 1C,D). Treatment with drugs was performed at the indicated concentrations. Drugs were added for 10 min before stimulation with ionomycin.
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 MCF-7 cells were starved in HBSS buffer for 1 hr before stimulation with 1.5 µM ionomycin for 10 min. After ionomycin washout, cells were incubated for an additional 50 min in the presence of 4-thiouridine. Cells were then lysed and total RNA was extracted from 1 × 107 MCF-7 cells using the RNeasy Mini Kit (Qiagen) following the manufacturer’s protocol. LatA (400 nM) or CytoD (2 µM) were added 10 min before ionomycin and removed together with ionomycin. 4-thiouridine-labeled RNA was chemically biotinylated (Biotin HPDP, Thermo Fisher) and purified using streptavidin-coated magnetic beads (µMACS, Miltenyi). Subsequent labeling of samples for array analysis was performed with the GeneChip 3’IVT labeling assay (Affymetrix). Samples were hybridized to the GeneChip Human Gene 2.0 ST Array following the instructions from the supplier (Affymetrix). Quality control and array processing was done using GCRMA (Wu and Irizarry, 2004) for expression and LIMMA (Smyth and Speed, 2003) for elementary array comparisons and computation of fold-changes and p-values.
 
-## Statistics
+### Statistics
 
 Mean values, standard deviation (SD and number of measurements (n) are provided for quantified results. Values were always pooled from at least three independent experiments. All replicates are biological replicates. Error bars in graphs are explained in the respective legends. Statistical comparison between conditions was performed using the unpaired t-test with Welch correction for single comparisons or ANOVA with Bonferroni post-test for multiple comparisons. For transcriptome analysis, genes were considered differentially regulated if expression levels deviated >1.5 fold from the mean of control cells and p value (ANOVA) was <0.05 (Figure 5—source data 2).
 
-## Stochastic model for actin competition
+### Stochastic model for actin competition
 
 Our initial hypothesis was that, after stimulation, a calcium-regulated polymerization activity at the endoplasmic reticulum (ER) begins to compete with actin polymerization at the cortex for a limited amount of actin monomers. We therefore considered two populations of polymerized actin (F-actin) coupled to a common pool of actin monomers (G-actin, Figure 4C). We assumed that the available G-actin, characterized by the equivalent length LG of actin into which it can potentially polymerize, is homogeneously distributed in the cytoplasm. F-actin populations at the cortex and ER were modeled as ensembles of individual filaments. The state of these populations is characterized by their respective total lengths of polymerized actin, LC and LER. Initially, we consider the cortical population in steady-state equilibrium with the G-actin pool. Nucleation at the ER is then activated and regulated by the calcium influx signal. The ER-mediated decrease in monomer availability in turn reduces polymerization at the cortex. Ongoing actin turnover will then drive cortical actin disassembly. When the calcium signal has dissipated, nucleation at the ER stops and ER actin disassembles. This restores the G-actin pool, allowing cortical actin to recover again.
 
-## Simulations of filament dynamics
+#### Simulations of filament dynamics
 
-Each actin filament is characterized by its length l. Filaments grow at one end with a pool-dependent growth velocity vg(LG) and shrink at the other end with a constant velocity  v−, leading to a net growth velocity v+(LG)=vg(LG)−v−. The model also considers the interaction of actin with capping and severing proteins. Growing barbed ends are capped at a constant rate  rc. Since the average uncapping time is much longer than the lifetime of a filament in the cell (Pollard et al., 2000), we assumed that a capped filament depolymerizes from its shrinking pointed end until it is completely disassembled. We allow severing of a filament uniformly along its length, with a rate rs per unit of length. We assumed that the severing protein immediately caps the resulting barbed end, so that the lagging actin filament is always shrinking. The state of the leading fragment remains unaltered (Figure 4C). New filaments are nucleated in a growing state at a rate that is dependent on the size of the G-actin pool rn(LG). Actin is therefore drained from the monomer pool by growing filaments of each population and is recycled back by the shrinking capped filaments. We assumed that depolymerized G-actin is immediately available for polymerization again, neglecting the dynamics of ADP to ATP nucleotide exchange. Neither filament elongation, nor protein activities are diffusion limited. Finally, we neglected filament annealing.
+Each actin filament is characterized by its length $l$. Filaments grow at one end with a pool-dependent growth velocity $v_{g}(L_{G})$ and shrink at the other end with a constant velocity $ v^{−}$, leading to a net growth velocity $v^{+}(L_{G})=v_{g}(L_{G})−v^{−}$. The model also considers the interaction of actin with capping and severing proteins. Growing barbed ends are capped at a constant rate $ r_{c}$. Since the average uncapping time is much longer than the lifetime of a filament in the cell (Pollard et al., 2000), we assumed that a capped filament depolymerizes from its shrinking pointed end until it is completely disassembled. We allow severing of a filament uniformly along its length, with a rate $r_{s}$ per unit of length. We assumed that the severing protein immediately caps the resulting barbed end, so that the lagging actin filament is always shrinking. The state of the leading fragment remains unaltered (Figure 4C). New filaments are nucleated in a growing state at a rate that is dependent on the size of the G-actin pool $r_{n}(L_{G})$. Actin is therefore drained from the monomer pool by growing filaments of each population and is recycled back by the shrinking capped filaments. We assumed that depolymerized G-actin is immediately available for polymerization again, neglecting the dynamics of ADP to ATP nucleotide exchange. Neither filament elongation, nor protein activities are diffusion limited. Finally, we neglected filament annealing.
 
-We considered that the size of the G-actin pool affects only the polymerization speed of the growing barbed end and the nucleation rate within each population. We modeled these dependencies as sigmoid-type Hill functions. For the case of the growth velocity, we consider a relation with Hill coefficient unity:vg(LG)=vgMLGLG+Ls
+We considered that the size of the G-actin pool affects only the polymerization speed of the growing barbed end and the nucleation rate within each population. We modeled these dependencies as sigmoid-type Hill functions. For the case of the growth velocity, we consider a relation with Hill coefficient unity:
 
-where vgM is the saturation constant. For the nucleation rate we choose the following formrnX(LG)=rn,MX LGhX LGhX +Ls hX
+$$
+v_{g}(L_{G})=v_{g}^{M}\frac{L_{G}}{L_{G}+L_{s}}
+$$
 
-where X stands for either the cortical (C) or the endoplasmic reticulum (ER) F-actin populations. Both the saturation rate rn,MX and the Hill coefficient hX are chosen independently for each population. These relations imply that, as the G-actin pool size tends to zero, both polymerization and nucleation of actin are suppressed. On the other hand, for LG → ∞, the dynamic rates saturate to a maximum value and the available G-actin is no longer a limiting factor. For simplicity, we assume a common cross-over length Ls, at which the rates achieve their half-maximum value, and which marks the boundary between the strongly pool-limited domain and the saturated domain.
+where $v_{g}^{M}$ is the saturation constant. For the nucleation rate we choose the following form
 
-## Competition model
+$$
+r_{n}^{X}(L_{G})=r_{n,M}^{X} \frac{L_{G}^{h^{X} }}{L_{G}^{h^{X} }+L_{s}^{ h^{X}}}
+$$
 
-We initially assumed that cortical and the ER populations only differ by their nucleation mechanisms. All other interactions within each population occur with the same background rates. We considered a network type of nucleation at the cortex with a linear dependence of the nucleation rate on the amount of available G-actin, i.e.rnC(LG)=rn,MC LG LG +Ls
+where $X$ stands for either the cortical (C) or the endoplasmic reticulum (ER) F-actin populations. Both the saturation rate $r_{n,M}^{X}$ and the Hill coefficient $h^{X}$ are chosen independently for each population. These relations imply that, as the G-actin pool size tends to zero, both polymerization and nucleation of actin are suppressed. On the other hand, for LG → ∞, the dynamic rates saturate to a maximum value and the available G-actin is no longer a limiting factor. For simplicity, we assume a common cross-over length $L_{s}$, at which the rates achieve their half-maximum value, and which marks the boundary between the strongly pool-limited domain and the saturated domain.
 
-The stronger nucleation activity at the ER was modeled with a second-order dependence on the size of the monomer pool. We additionally introduce the experimentally observed calcium signal as a time-dependent modulating mechanism for ER nucleation. Based on our experimental data, we modeled the calcium time-dependent signal as a normalized two-parameter Gamma distribution. We fixed the position of its maximum to the observed tmax and chose the shape parameter α to optimally fit the data. The calcium signal is given by:Ca(t)=[ ttmax e1−ttmax ]α−1
+#### Competition model
 
-where =tmax 8.4 s and the decay is best fitted with α = 2.16. The ER nucleation rate is then:rnER(LG,t)=rn,MERLG2(t)LG2(t)+Ls2 Ca(t)
+We initially assumed that cortical and the ER populations only differ by their nucleation mechanisms. All other interactions within each population occur with the same background rates. We considered a network type of nucleation at the cortex with a linear dependence of the nucleation rate on the amount of available G-actin, i.e.
 
-## Simulations and model parameters
+$$
+r_{n}^{C}(L_{G})=r_{n,M}^{C} \frac{L_{G}^{ }}{L_{G}^{ }+L_{s}^{ }} 
+$$
 
-We implemented our model using a standard Brownian dynamics approach. Each actin filament is a particle characterized by its length, lifetime and state (growing or shrinking). Capping, severing and nucleation are stochastic events, while growth and shrinking are deterministic events. The program tracks the time evolution of the respective population lengths in the coupled cortex / G-actin / ER system. The total available actin in the system LT is fixed and it is set to be completely monomeric at the start of the simulation. Using the selected model rates, the cortical population is then allowed to evolve until it is in equilibrium with the G-actin pool. In this pre-stimulus steady state, a calcium signal is then initiated at time t = 0, which activates actin nucleation at the ER and drives the system out of equilibrium. The simulation then runs until the cortical actin again reaches a steady state after the ER population has disappeared. Table 2 summarizes the program input parameters. The values shown are either taken from the literature or estimated to simulate a physiologically relevant system. It is important to note that we only specify the saturation maxima of nucleation rates and polymerization velocity. The actual simulation values varied as a function of LT to determine the pre-stimulus steady state of the cortical population. The growth maximum vgM was chosen such that even profilin-accelerated elongation rates (Pollard, 1986) could be accounted for when considering cellular G-actin concentrations (Pollard et al., 2000) and filament geometry (dos Remedios et al., 2003). The nucleation rate for the cortical population was estimated to obtain the amounts of polymerized actin in the range of experimental observations. Approximate capping and severing rates were taken from the literature. The cross-over length scale Ls was freely chosen and total available actin in the system LT was given in Ls units.10.7554/eLife.19850.031Table 2.Model Input parameters.DOI: http://dx.doi.org/10.7554/eLife.19850.031Parameter Symbol Value Reference maximum polymerization speedvgM15.6 μm s-1 (Blanchoin et al., 2014)depolymerization speedv−0.1 μm s-1 (Mogilner and Edelstein-Keshet, 2002)capping raterc3 s-1 (Pollard et al., 2000)severing raters0.005 μm-1s-1 (Gurel et al., 2014)maximum cortical nucleation ratern,MC100 s-1 estimatedmaximum ER nucleation ratern,MER[500–1100] s-1estimatedlength scaleLs2000 μm assumptiontotal available actinLT4.0 Lsestimated
+The stronger nucleation activity at the ER was modeled with a second-order dependence on the size of the monomer pool. We additionally introduce the experimentally observed calcium signal as a time-dependent modulating mechanism for ER nucleation. Based on our experimental data, we modeled the calcium time-dependent signal as a normalized two-parameter Gamma distribution. We fixed the position of its maximum to the observed $t_{max}$ and chose the shape parameter α to optimally fit the data. The calcium signal is given by:
 
-## Pre-stimulus steady state
+$$
+Ca(t)=[\frac{t}{t_{max}} e^{1−\frac{t}{t_{max}}}]^{\alpha−1}
+$$
+
+where =$t_{max}$ 8.4 s and the decay is best fitted with α = 2.16. The ER nucleation rate is then:
+
+$$
+r_{n}^{ER}(L_{G},t)=r_{n,M}^{ER}\frac{L_{G}^{2}(t)}{L_{G}^{2}(t)+L_{s}^{2}} Ca(t)
+$$
+
+#### Simulations and model parameters
+
+We implemented our model using a standard Brownian dynamics approach. Each actin filament is a particle characterized by its length, lifetime and state (growing or shrinking). Capping, severing and nucleation are stochastic events, while growth and shrinking are deterministic events. The program tracks the time evolution of the respective population lengths in the coupled cortex / G-actin / ER system. The total available actin in the system LT is fixed and it is set to be completely monomeric at the start of the simulation. Using the selected model rates, the cortical population is then allowed to evolve until it is in equilibrium with the G-actin pool. In this pre-stimulus steady state, a calcium signal is then initiated at time t = 0, which activates actin nucleation at the ER and drives the system out of equilibrium. The simulation then runs until the cortical actin again reaches a steady state after the ER population has disappeared. Table 2 summarizes the program input parameters. The values shown are either taken from the literature or estimated to simulate a physiologically relevant system. It is important to note that we only specify the saturation maxima of nucleation rates and polymerization velocity. The actual simulation values varied as a function of LT to determine the pre-stimulus steady state of the cortical population. The growth maximum vgM was chosen such that even profilin-accelerated elongation rates (Pollard, 1986) could be accounted for when considering cellular G-actin concentrations (Pollard et al., 2000) and filament geometry (dos Remedios et al., 2003). The nucleation rate for the cortical population was estimated to obtain the amounts of polymerized actin in the range of experimental observations. Approximate capping and severing rates were taken from the literature. The cross-over length scale Ls was freely chosen and total available actin in the system LT was given in Ls units.
+
+**Table 2.**
+ Model Input parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>maximum polymerization speed</td>
+      <td>vgM</td>
+      <td>15.6 μm s-1</td>
+      <td>(Blanchoin et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>depolymerization speed</td>
+      <td>v−</td>
+      <td>0.1 μm s-1</td>
+      <td>(Mogilner and Edelstein-Keshet, 2002)</td>
+    </tr>
+    <tr>
+      <td>capping rate</td>
+      <td>rc</td>
+      <td>3 s-1</td>
+      <td>(Pollard et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>severing rate</td>
+      <td>rs</td>
+      <td>0.005 μm-1s-1</td>
+      <td>(Gurel et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>maximum cortical nucleation rate</td>
+      <td>rn,MC</td>
+      <td>100 s-1</td>
+      <td>estimated</td>
+    </tr>
+    <tr>
+      <td>maximum ER nucleation rate</td>
+      <td>rn,MER</td>
+      <td>[500–1100] s-1</td>
+      <td>estimated</td>
+    </tr>
+    <tr>
+      <td>length scale</td>
+      <td>Ls</td>
+      <td>2000 μm</td>
+      <td>assumption</td>
+    </tr>
+    <tr>
+      <td>total available actin</td>
+      <td>LT</td>
+      <td>4.0 Ls</td>
+      <td>estimated</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Pre-stimulus steady state
 
 We first considered a single cortical actin population in equilibrium with the monomer pool. Using a mean-field description for this pre-stimulus system, a set of equations can be written describing the evolution of filament length density. Using the steady-state solution of this mean-field model, we find expressions for observables, such as filament number, actin turnover and cortical length, as a function of the steady-state size of the monomer pool. It can be shown that the total actin length for this system is conserved, which leads to a self-consistent equation for the steady-state G-actin length. With this solution, analytical observables for given model parameters can be compared to time-averaged values from simulations. We used this analytical model to validate our stochastic simulations. We studied the behavior of the steady-state as a function of different model parameters. In particular, we looked at the turnover time and the ratio of polymerized to monomeric (F/G) actin. The turnover time reflects how dynamic the cortical actin is and how fast it can reorganize. Since the amount of actin is conserved in the system, the steady-state F/G actin ratio reflects how limiting the monomer pool is when a competing F-actin population emerges.
 
-## The effect of total available actin
+#### The effect of total available actin
 
 We first examined the effect of the total amount of actin in the system, LT, on the pre-stimulus steady state, given the cortical parameters shown in Table 2. The simulation results for the turnover time and the F/G ratio for LT = [0.5–50.0] Ls are shown in Figure 4—figure supplement 1D. If the available actin is limited, actin polymerization cannot overcome depolymerization, resulting in a low F/G ratio. For very large G-actin pools, nucleation rate and growth velocity approach constant values. The total cortical length therefore has an upper limit and surplus actin monomers only serve to decrease the F/G ratio. We found that there is a given amount of actin for which the fraction of polymerized actin in equilibrium is maximal, given a defined set of parameters. This maximal F/G ratio corresponds to the system with the smallest monomer pool and potentially with the fastest competition upon coupling with a second actin population at the ER. We therefore chose this case, with LT = 4 Ls, to study the full model. The turnover time monotonically increases with LT, with a saturation value corresponding to the saturation of growth speed. In our model the nucleation rate does not affect actin turnover. In steady state, the turnover time is equivalent to the time required for full polymerization of F-actin. The cortical half-time for the system with maximal F/G ratio is 12 s, which is in good agreement with half-times observed at the cortex for MCF-7 cells. This corresponds to a pre-stimulus system with 60% of actin in a polymerized state, which is consistent with published observations (Suarez et al., 2015).
 
-## Actin turnover
+#### Actin turnover
 
 We next studied the influence of filament depolymerization, capping and severing on cortical actin turnover. We independently varied the respective parameter values in Table 2. Given that disassembly refills the G-actin pool, which in turn increases polymerization speed, the behavior of the turnover time is not trivial. If we assume that turnover changes monotonically in the studied parameter interval, we can estimate how strongly actin turnover depends on each rate in the physiologically relevant parameter range.
 
-In order to simplify the comparison, we represent the varied parameter as rσ and its control rate in Table 2 as rσo. Each rate was changed by at least one order of magnitude while the others were kept fixed. The results are shown in Figure 4—figure supplement 1C. Changing depolymerization speed has the strongest effect on actin turnover. Capping and severing in our model also affect disassembly but to a much lesser degree. This confirms the view that actin turnover is primarily driven by filament depolymerization (Blanchoin et al., 2014; Mogilner and Edelstein-Keshet, 2002) but tuned by capping (Miyoshi and Watanabe, 2013) or severing.
+In order to simplify the comparison, we represent the varied parameter as $r_{\sigma}$ and its control rate in Table 2 as $r_{\sigma}^{o}$. Each rate was changed by at least one order of magnitude while the others were kept fixed. The results are shown in Figure 4—figure supplement 1C. Changing depolymerization speed has the strongest effect on actin turnover. Capping and severing in our model also affect disassembly but to a much lesser degree. This confirms the view that actin turnover is primarily driven by filament depolymerization (Blanchoin et al., 2014; Mogilner and Edelstein-Keshet, 2002) but tuned by capping (Miyoshi and Watanabe, 2013) or severing.
 
-## Competition between two actin populations
+#### Competition between two actin populations
 
-In the following section we consider coupling of a second F-actin population to the pre-stimulus cortex / G-actin system introduced above. We studied the temporal evolution of the total lengths of cortical and ER populations, normalized to the pre-stimulus cortical F-actin length. The transition is monitored from the start of the calcium peak until complete depolymerization of the ER population (Figure 4D). The normalized calcium curve is shown in gray. We characterized the transition by looking at the maximum ER / cortex length changes, ΔLER / ΔLC, and the times at which these maxima occur, tmaxER / tminC.
+In the following section we consider coupling of a second F-actin population to the pre-stimulus cortex / G-actin system introduced above. We studied the temporal evolution of the total lengths of cortical and ER populations, normalized to the pre-stimulus cortical F-actin length. The transition is monitored from the start of the calcium peak until complete depolymerization of the ER population (Figure 4D). The normalized calcium curve is shown in gray. We characterized the transition by looking at the maximum ER / cortex length changes, ΔLER / ΔLC, and the times at which these maxima occur, $t_{max}^{ER}$ / $t_{min}^{C}$.
 
-## Competition only
+#### Competition only
 
-We found that the simulated calcium regulation was enough to generate transient actin reorganization from the cortical population to the ER (Figure 4D). We next attempted to fit our free parameters to achieve a reduction in cortical actin below 50% of the pre-stimulus state and cause both populations to change synchronously, in accordance with the experimental observations (Figure 4D–F). Following our hypothesis that competition for a common G-actin pool drives the transition, we attempted to increase competition by varying the nucleation activity at the ER and by changing the initial monomer availability in the pre-stimulus state. We set the ER nucleation rate at the peak calcium concentration to 5–11 times the cortical nucleation rate. For each of these nucleation rates, we additionally varied the amount of total available actin in the system. The results for the maximum length changes at ER and cortex are shown in Figure 4—figure supplement 1E (upper panel). The rates of ER nucleation used (from left to right in each group) were rn,MER= [500, 700, 900, 1100] s-1. The amount of available actin was LT = [0.5, 2, 4, 6, 8, 12] Ls. We found that while increasing nucleation at the ER or available actin was able to augment the size of the ER population, it had hardly any effect on cortical actin. In the optimal case, cortical actin was only decreased to half its initial value. We were also unable to reduce the delay between the decrease in cortical actin and the increase in polymerization at the ER given as tminC−tmaxER  (Figure 4—figure supplement 1E, lower panel). In summary, a mechanism based on simple competition between two polymerization activities does not account for the observed features of CaAR.
+We found that the simulated calcium regulation was enough to generate transient actin reorganization from the cortical population to the ER (Figure 4D). We next attempted to fit our free parameters to achieve a reduction in cortical actin below 50% of the pre-stimulus state and cause both populations to change synchronously, in accordance with the experimental observations (Figure 4D–F). Following our hypothesis that competition for a common G-actin pool drives the transition, we attempted to increase competition by varying the nucleation activity at the ER and by changing the initial monomer availability in the pre-stimulus state. We set the ER nucleation rate at the peak calcium concentration to 5–11 times the cortical nucleation rate. For each of these nucleation rates, we additionally varied the amount of total available actin in the system. The results for the maximum length changes at ER and cortex are shown in Figure 4—figure supplement 1E (upper panel). The rates of ER nucleation used (from left to right in each group) were $r_{n,M}^{ER}$= [500, 700, 900, 1100] s-1. The amount of available actin was LT = [0.5, 2, 4, 6, 8, 12] Ls. We found that while increasing nucleation at the ER or available actin was able to augment the size of the ER population, it had hardly any effect on cortical actin. In the optimal case, cortical actin was only decreased to half its initial value. We were also unable to reduce the delay between the decrease in cortical actin and the increase in polymerization at the ER given as $t_{min}^{C}−t_{max}^{ER} $ (Figure 4—figure supplement 1E, lower panel). In summary, a mechanism based on simple competition between two polymerization activities does not account for the observed features of CaAR.
 
-## Model with accelerated turnover
+#### Model with accelerated turnover
 
-In order to increase the rate of the cortical reaction during CaAR, we considered an additional mechanism driven by the calcium signal, which accelerates actin turnover in the cell. Based on our results for a single actin population, we tested the effects of modulating either filament depolymerization speed v−  or severing rate rs via calcium. We described time-dependent shrinking of capped actin filaments as:v−(t)=vo−+vacc− Ca(t)
+In order to increase the rate of the cortical reaction during CaAR, we considered an additional mechanism driven by the calcium signal, which accelerates actin turnover in the cell. Based on our results for a single actin population, we tested the effects of modulating either filament depolymerization speed $v^{−} $ or severing rate $r_{s}$ via calcium. We described time-dependent shrinking of capped actin filaments as:
 
-where vo− is the constant depolymerization speed considered before (Table 2) and vacc− is an extra parameter representing the maximum effect of a calcium-modulated depolymerization mechanism. We consider increased depolymerization to affect cortical and ER actin in equal measure. Similarly, we consider an increased severing rate per unit length as:rs(t)=rso+rsacc Ca(t)
+$$
+v^{−}(t)=v_{o}^{−}+v_{acc}^{−} Ca(t)
+$$
 
-We compare the individual effects of inducing an overall acceleration either in the depolymerization or in the severing activity. In both cases, we studied the effect of accelerating parameters on the maximal cortex decrease and its timing relative to the ER increase (Figure 4E). The vertical line in the plots corresponds to the pure competition model without a direct effect on the cortical dynamics. The values used for the acceleration in depolymerization were vacc−= [0.2, 0.5, 0.7, 1.0] μm s-1. The values used for the acceleration in the severing rate were rsacc= [0.01, 0.025, 0.035, 0.05] μm-1 s-1.
+where $v_{o}^{−}$ is the constant depolymerization speed considered before (Table 2) and $v_{acc}^{−}$ is an extra parameter representing the maximum effect of a calcium-modulated depolymerization mechanism. We consider increased depolymerization to affect cortical and ER actin in equal measure. Similarly, we consider an increased severing rate per unit length as:
+
+$$
+r_{s}(t)=r_{s}^{o}+r_{s}^{acc} Ca(t)
+$$
+
+We compare the individual effects of inducing an overall acceleration either in the depolymerization or in the severing activity. In both cases, we studied the effect of accelerating parameters on the maximal cortex decrease and its timing relative to the ER increase (Figure 4E). The vertical line in the plots corresponds to the pure competition model without a direct effect on the cortical dynamics. The values used for the acceleration in depolymerization were $v_{acc}^{−}$= [0.2, 0.5, 0.7, 1.0] μm s-1. The values used for the acceleration in the severing rate were $r_{s}^{acc}$= [0.01, 0.025, 0.035, 0.05] μm-1 s-1.
 
 Relative to increasing the severing activity, increasing the turnover by filament end depolymerization leads to a higher cortical depletion and a more synchronized transition between the ER and the cortical actin. Inducing a stimulus-dependent decrease in the nucleation rate at the cortex leads to a slow and weak effect on the cortical actin, so we confirm that the cortex reaction must be driven by a depolymerization mechanism.
 
 We compared our previous results for the cortical length decrease in all runs to those obtained using our model with accelerated depolymerization. As expected, the cortical actin length does indeed show a more pronounced decrease in comparison to the results for the pool-size competition only (Figure 4—figure supplement 1E middle panel). The greater synchronization of the transition for all simulated parameters (Figure 4—figure supplement 1E lower panel) provides further confirmation of the proposed mechanism. Even if competition for a limited pool of G-actin does have an impact on the transition, as seen in the small variations across runs, the strongest influence on the cortical reaction comes from the enhancement of the overall depolymerization velocity. It should be noted that, although this has only a slight effect on ER actin assembly, a high nucleation activity ensures that rates of actin polymerization at the ER remain high. Moreover, the high turnover in the cell keeps high levels of G-actin available for polymerization, which screens the disassembly effect at the ER as long as the calcium signal is sufficiently strong.
 
-## Simultaneous increase in severing and depolymerization
+#### Simultaneous increase in severing and depolymerization
 
-We further considered a calcium-mediated increase in the turnover due to a combined effect of enhanced filament depolymerization and a higher severing rate. In other words, we consider both v−  and rs to be time-dependent.
+We further considered a calcium-mediated increase in the turnover due to a combined effect of enhanced filament depolymerization and a higher severing rate. In other words, we consider both $v^{−} $ and $r_{s}$ to be time-dependent.
 
-Previously, we showed that a five-fold increase in the depolymerization results in rapid cortical disassembly in synchrony with polymerization at the ER (Figure 4D). Given the moderate, but still appreciable, the influence of severing on the turnover, we tested if a higher rate of severing can compensate for a weaker acceleration of depolymerization. We studied extra depolymerization terms given by: vacc−= [0.05, 0.1, 0.2, 0.3] μm s-1. For each of these values, the extra maximum severing was varied as rsacc= [0.01, 0.025, 0.035, 0.05] μm-1 s-1, corresponding to a 2- to 10-fold increase in the background rate of severing.
+Previously, we showed that a five-fold increase in the depolymerization results in rapid cortical disassembly in synchrony with polymerization at the ER (Figure 4D). Given the moderate, but still appreciable, the influence of severing on the turnover, we tested if a higher rate of severing can compensate for a weaker acceleration of depolymerization. We studied extra depolymerization terms given by: $v_{acc}^{−}$= [0.05, 0.1, 0.2, 0.3] μm s-1. For each of these values, the extra maximum severing was varied as $r_{s}^{acc}$= [0.01, 0.025, 0.035, 0.05] μm-1 s-1, corresponding to a 2- to 10-fold increase in the background rate of severing.
 
-We compared the results obtained with an independent calcium-regulated change in the severing with those for a combination of both disassembly mechanisms (Figure 4F). Introducing additional depolymerization acceleration clearly leads to a stronger and faster cortical decrease for any severing acceleration, as expected from the strong dependence of turnover on this parameter. This effect is greater for lower depolymerization since severing is length dependent. For a given value of vacc−, extra severing also promotes higher cortical disassembly and reduces the delay with respect to ER actin polymerization. Thus the effect of a five-fold increase in the depolymerization rate can also be achieved by combining a three-fold increase in depolymerization velocity with a seven-fold increase in the severing rate. The increase in depolymerization velocity could be further reduced to two-fold if the severing rate was increased 10-fold. However, the effect of increased severing saturates at high severing acceleration, so filament depolymerization is always needed to some extent. Thus, we see that the observed transition kinetics can be reproduced by simultaneously introducing a moderate increase in depolymerization velocity and a more pronounced enhancement of severing activity. This is consistent with a mechanism that both fragments actin into shorter filaments and enhances pointed end depolymerization.
+We compared the results obtained with an independent calcium-regulated change in the severing with those for a combination of both disassembly mechanisms (Figure 4F). Introducing additional depolymerization acceleration clearly leads to a stronger and faster cortical decrease for any severing acceleration, as expected from the strong dependence of turnover on this parameter. This effect is greater for lower depolymerization since severing is length dependent. For a given value of $v_{acc}^{−}$, extra severing also promotes higher cortical disassembly and reduces the delay with respect to ER actin polymerization. Thus the effect of a five-fold increase in the depolymerization rate can also be achieved by combining a three-fold increase in depolymerization velocity with a seven-fold increase in the severing rate. The increase in depolymerization velocity could be further reduced to two-fold if the severing rate was increased 10-fold. However, the effect of increased severing saturates at high severing acceleration, so filament depolymerization is always needed to some extent. Thus, we see that the observed transition kinetics can be reproduced by simultaneously introducing a moderate increase in depolymerization velocity and a more pronounced enhancement of severing activity. This is consistent with a mechanism that both fragments actin into shorter filaments and enhances pointed end depolymerization.

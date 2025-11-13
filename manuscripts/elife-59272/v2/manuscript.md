@@ -52,21 +52,125 @@ Using genetic fate mapping, two-photon whole brain tomography, and spatial model
 
 ## Results
 
-## Sox14-expressing interneurons are widely distributed across the FO and HO mouse thalamus
+### Sox14-expressing interneurons are widely distributed across the FO and HO mouse thalamus
 
 In the mouse thalamus, GABAergic interneurons are most abundant in the LGd (Arcelli et al., 1997; Evangelio et al., 2018). We had previously demonstrated that all LGd interneurons are defined by expression of the transcription factor gene Sox14 and presented the Sox14GFP/+ knockin mouse line (Table 1; Crone et al., 2008) as a useful tool to study these cells (Jager et al., 2016). Both the Allen Brain Atlas (2015 Allen Institute for Brain Science. Allen Cell Types Database. Available from: celltypes.brain-map.org) and DropViz resources (available from: dropviz.org; Saunders et al., 2018) identify a Sox14+ transcriptional cluster corresponding to mouse LGd interneurons, confirming our previous findings. Sox14 is expressed upon cell-cycle exit within inhibitory lineages in the diencephalon, midbrain, hindbrain, and spinal cord, but not in the telencephalon (Achim et al., 2013; Delogu et al., 2012; Guo and Li, 2019; Prekop et al., 2018).
+
+**Table 1.**
+ Animal models used in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Sox14tm1Tmj (Sox14GFP)</td>
+      <td>Crone et al., 2008</td>
+      <td>MGI ID: 3836003</td>
+      <td>Maintained in the C57BL/6J (Charles River Laboratories) background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>En1Cre</td>
+      <td>Kimmel et al., 2000; The Jackson Laboratory</td>
+      <td>Stock No: 007916 MGI ID: 2446434</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Dlx5/6Cre</td>
+      <td>Monory et al., 2006; The Jackson Laboratory</td>
+      <td>Stock No: 008199; MGI ID:3758328</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>PvalbCre</td>
+      <td>Hippenmeyer et al., 2005; The Jackson Laboratory</td>
+      <td>Stock No: 017320; MGI ID:3590684</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Nkx2.1Cre</td>
+      <td>Xu et al., 2008</td>
+      <td>Stock No: 008661 MGI: J:131144</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Foxd1EGFPcre (Foxd1Cre)</td>
+      <td>Humphreys et al., 2008</td>
+      <td>Stock No: 012463 MGI:4359653</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Lhx6Cre</td>
+      <td>Fogarty et al., 2007</td>
+      <td>Stock No: 026555 MGI:4355717</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>RCE:loxP (Rosa26lsl-GFP)</td>
+      <td>Sousa et al., 2009; The Jackson Laboratory</td>
+      <td>MMRRC Stock No: 32037-JAX MGI:4412373</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Mus musculus</td>
+      <td>Gt(ROSA)26Sortm5(CAG-Sun1/sfGFP)Nat (Rosa26lsl-nuclearGFP)</td>
+      <td>Mo et al., 2015; The Jackson Laboratory</td>
+      <td>Stock No: 021039; MGI ID: 5443817</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Callithrix jacchus</td>
+      <td>WT</td>
+      <td>Colony at RIKEN RRD</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 To investigate the spatial distribution of Sox14 neurons comprehensively across all thalamic (TC) regions in the mouse, we took advantage of the endogenous and bright fluorescence of GFP in postnatal day (P) 21 Sox14GFP/+ mice to perform high resolution (0.54 μm voxel) whole brain imaging by two-photon laser scanning tomography; for an indicative low-resolution scan through a series of z-projections, see also: Video 1. Optical sections were acquired in the coronal plane 10 μm apart and registered with the Allen Institute Common Coordinate Framework (CCF3; Figure 1A) using a custom Python pipeline alongside the Elastix registration library (Klein et al., 2010) to delineate anatomical subdivisions according to the Allen Brain Institute taxonomy (Figure 1A and Video 2). To perform automated detection of cells, a deep learning strategy was implemented to train a U-Net segmentation model (Ronneberger and Brox, 2015) on a data set of 12,264 images (512 × 512 pixels at 0.54 μm voxel), obtained by supplemental augmentation of 219 manually annotated samples (Figure 1B). The accuracy of our automated counting strategy was validated by comparing the total count of GFP+ cells in the LGd of P21 Sox14GFP/+ mice (Figure 1C,D; 1234 ± 82; mean ± SD) to a recent stereological study of LGd GABA interneurons in the wild-type adult C57Bl/6 mouse (1255 ± 195; mean ± SD) (Evangelio et al., 2018), which confirmed the validity of our protocol.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig1-v2.jpg)
 
-**Figure 1.:** + cells in the thalamus of the Sox14 mouse.GFP/+(A) Autofluorescence (Autofl.) from serial two-photon imaging of Sox14GFP/+ mice (n = 3) at 0.54 × 0.54 × 10 μm voxel resolution was registered to the Allen Institute CCF3 atlas using Elastix (left; scale bar 1 mm). This permits delineation and identification of all anatomical structures according to the Allen Institute hierarchical taxonomy (right; scale bar 100 μm). (B) Automated cell detection was done using a U-Net trained on 219 manually segmented images (512 × 512 pixels) augmented to a total sample size of 12,264, split 75% for training and 25% validation. Images containing GFP fluorescence were passed into the trained U-Net (left) for cell prediction based on learned features during training (right; scale bar 100 μm). Oversampling in the z-axis was corrected for by grouping and averaging detected cell positions which colocalised within a defined cell radius. (C) Example illustration of automatically detected cells in the LGd and VB complex projected onto a representative coronal section of the thalamus. (D) Quantification of GFP+ cells in the LGd at 1234 ± 82 (mean ± SD) validated against stereological study by Evangelio et al., 2018 of 1255 ± 195 (mean ± SD) interneurons in the LGd. Other counts are shown for LP, VB complex [VPM, parvicellular part of the ventral posteromedial nucleus (VPMpc), VPL, parvicellular part of the ventral posterolateral nucleus (VPLpc), VAL, VM], MGv, MGd, and PO.
+**Figure 1.:** (A) Autofluorescence (Autofl.) from serial two-photon imaging of Sox14GFP/+ mice (n = 3) at 0.54 × 0.54 × 10 μm voxel resolution was registered to the Allen Institute CCF3 atlas using Elastix (left; scale bar 1 mm). This permits delineation and identification of all anatomical structures according to the Allen Institute hierarchical taxonomy (right; scale bar 100 μm). (B) Automated cell detection was done using a U-Net trained on 219 manually segmented images (512 × 512 pixels) augmented to a total sample size of 12,264, split 75% for training and 25% validation. Images containing GFP fluorescence were passed into the trained U-Net (left) for cell prediction based on learned features during training (right; scale bar 100 μm). Oversampling in the z-axis was corrected for by grouping and averaging detected cell positions which colocalised within a defined cell radius. (C) Example illustration of automatically detected cells in the LGd and VB complex projected onto a representative coronal section of the thalamus. (D) Quantification of GFP+ cells in the LGd at 1234 ± 82 (mean ± SD) validated against stereological study by Evangelio et al., 2018 of 1255 ± 195 (mean ± SD) interneurons in the LGd. Other counts are shown for LP, VB complex [VPM, parvicellular part of the ventral posteromedial nucleus (VPMpc), VPL, parvicellular part of the ventral posterolateral nucleus (VPLpc), VAL, VM], MGv, MGd, and PO.
+
+![Video 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-video1.mp4.jpg)
+
+**Video 1.:** Each slice is a maximum intensity projection across 10 serial two-photon optical slices.
+
+![Video 2.](https://cdn.elifesciences.org/articles/59272/elife-59272-video2.mp4.jpg)
+
+**Video 2.:** Isotropic 10 μm voxel size.
 
 Automated counting identified a total of 6588 ± 811 (mean ± SEM) GFP+ cells across TC nuclei of both hemispheres spanning the rostrocaudal and mediolateral extensions of the thalamus (n = 3 Sox14GFP/+ at P21). Their distribution was not stochastic but skewed instead towards sensory TC nuclei and within sensory modality by a prevalence in FO nuclei. The GFP+ cells are most abundant in the visual FO LGd (1234 ± 82) and HO LP (aka pulvinar; 411 ± 110), followed by sensory-motor ventrobasal (VB) complex [ventral posteromedial (VPM; 250 ± 49), ventral posterolateral (VPL; 105 ± 40), ventral anterior lateral (VAL; 4 ± 3) and ventral medial nucleus (VM; 4 ± 2)] and HO posterior nucleus (PO; 99 ± 12), in turn followed by the auditory FO ventral medial geniculate (MGv; 53 ± 12) and HO dorsal medial geniculate nucleus (MGd; 20 ± 13). Sparse GFP+ cells were also detected in limbic TC nuclei: LD (20 ± 7), parafascicular (PF) (25 ± 5), and MD (13 ± 6) nuclei. Notably, GFP+ neurons are typically found in the caudal-most part of the LD, nearer the LP border and nearly all GFP+ neurons were in the caudal half of the MD (see also: Video 1). Counts per TC nucleus are reported for a single hemisphere.
 
-## Sox14 expression distinguishes between two spatially clustered interneuron classes
+### Sox14 expression distinguishes between two spatially clustered interneuron classes
 
 To validate the inhibitory nature of the GFP+ cells in TC nuclei of the Sox14GFP/+ mouse, we combined immunodetection of GFP+ with in situ RNA hybridisation (ISH) against the Gad1 mRNA in Sox14GFP/+ mice sampling the rostrocaudal extent of the thalamus at approximately 200 μm intervals (Figure 2A–C). In our experience, the simultaneous detection of protein and mRNA is more reliable in younger tissue, hence experiments were done at P14, by which time point mouse TC nuclei are considered to display adult-like circuit composition (Bickford et al., 2010; Golding et al., 2014; Seabrook et al., 2013a; Seabrook et al., 2013b; Thompson et al., 2016).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig2-v2.jpg)
+
+**Figure 2.:** (A) (i) Representative coronal section of P14 Sox14GFP/+ thalamus with Sox14+ cells in the LGd, VP, LP, and PO. (ii) Sox14+ cells in TC regions co-express Gad1, but not all Gad1+ cells co-express Sox14 in the LP and PO. Filled arrows mark Sox14+Gad1+ and empty arrows Sox14-Gad1+ cells. Scale bars, 100 μm. (B) (i) Representative rostral coronal section of P14 Sox14GFP/+ thalamus with Gad1+ cells in the MD, CL, and LD, which contain no Sox14+ cells. (ii) Gad1+ cells in these nuclei do not co-express Sox14. Scale bars, 100 μm. (C) 3D reconstruction of a representative P14 Sox14GFP/+ thalamus from tracing every tenth 20-µm-thick coronal section, displayed as a z-projection and showing distribution of Sox14+Gad1+ (yellow) and Sox14-Gad1+ cells (red). One dot represents one neuron. (D) Distribution of Sox14+Gad1+ and Sox14-Gad1+ cells across TC nuclei in the Sox14GFP/+ brains at P14, plotted as proportion of all the cells within each interneuron group (mean ± SEM; n = 3 brains). The category ‘other TC’ refers to regions where nuclear boundaries cannot be defined precisely and that contain VAL, VM, CL, IMD, PF, RE, RH, SPF, SPA, CM, and AM. Sox14+Gad1+ and Sox14-Gad1+ populations have distinct distributions (p<10-3 chi-squared test). Pie charts show the proportion (mean ± SEM) of the two interneuron classes within each nucleus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Before birth, Gad1+ cells are not present within rostral thalamic tissue that harbours HO nuclei including the LD, CL, and MD. By E18.5, a cluster of Gad1+ cells is present at the outer edge of the thalamus, bordering the epithalamus. From this location, Gad1+ cells appear to spread medially first, following the contour of the ventral edge of the habenula (HA), part of the epithalamus. At P0 and during the following 4 days, Gad1+ cells appear to penetrate thalamic tissue and to scatter in the LD, CL, and MD.
 
 Recapitulating the distribution observed at P21, GFP+ cells were detected in the LGd, LP, VP, and PO and in very small numbers in the MG (Figure 2A,C,D). In these nuclei all GFP+ cells had a GABAergic profile and co-expressed Gad1 (100%, n = 3 brains). In the LGd, VP, and MGv (i.e. FO sensory relay nuclei) they also represented virtually all GABAergic cells (≥98%, pie charts in Figure 2D).
 
@@ -74,13 +178,21 @@ Unexpectedly, however, 22.1 ± 4.0% of the total GABAergic population in TC regi
 
 To quantitatively demonstrate spatial clustering of these two putative thalamic interneuron classes (Gad1+Sox14+ and Gad1+Sox14-), we calculated the nearest neighbour distances (NND) from 3D reconstructions of their respective distributions in the Sox14GFP/+ thalamus (Figure 2C and Figure 3A). Indeed, the cumulative distribution of NNDs was significantly shifted to smaller distances within each of the classes than between them (p<1.4 × 10−30, two-sample Kolmogorov–Smirnov test, n = 3 brains; Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig3-v2.jpg)
+
+**Figure 3.:** (A) Normalised nearest neighbour distance (NND) for Sox14+Gad1+ and Sox14-Gad1+ populations and between the two groups from P14 Sox14GFP/+ data (Figure 2), plotted as cumulative proportion of all cells within a given set. The NND distribution is significantly shifted to larger distances between groups than within each of the groups (p<1.4 × 10−30, two-sample Kolmogorov–Smirnov test, n = 3 brains). (B) Representative z-projections of interneuron distribution amongst TC nuclei, from P14 Sox14GFP/+ data (Figure 2). One dot represents one neuron and they are colour coded by (i) their genetic identity or (ii) spatial cluster. For the spatial clusters a y-projection is also shown. Scale bars, 500 µm. (C) Performance of unsupervised k-means algorithm in identifying thalamic interneuron spatial clusters from the P14 Sox14GFP/+ data (n = 3 brains, see also Figure 2) as measured by the silhouette score, which varies with number of clusters (k). We choose k = 2 as this point has the highest score. (D) Proportion of Sox14+ and Sox14- GABAergic cells in each spatial cluster, averaged over three brains (mean ± SEM).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) 3D reconstruction of a representative P56 mouse thalamus from tracing every eight 25-µm-thick coronal section, displayed as a z-projection and showing distribution of (i) Gad1+ and (ii) Chrna6+ cells. In (i), k-means clustering was applied to the data using k = 2 (highest silhouette score, 0.512); the resulting spatial clusters are shown as a z- and y-projection and colour coded. One dot represents one neuron. ISH data was downloaded from the Allen Mouse Brain Atlas (2004 Allen Institute for Brain Science. Allen Mouse Brain Atlas. Available from: mouse.brain-map.org; Lein et al., 2007). (B) Distribution of Gad1+ and Chrna6+ cells across TC nuclei (n = 1 brain/marker) is compared to all Gad1+ and Sox14+Gad1+ cells from P14 Sox14GFP/+ thalamus (n = 3 brains; see also Figure 2).
+
 To characterise spatial organisation of thalamic GABAergic interneurons in an unbiased way, we then applied machine learning (k-means clustering) to these same 3D reconstructions of the Sox14GFP/+ thalami (Figures 2C and 3B,C). The data best fit two spatial clusters, as assessed from the silhouette score (Figure 3Bii,C; see also Materials and methods). Consistent with the NND analysis, one cluster corresponded to the Sox14+ cells (contains 94.9 ± 1.4% of all Sox14+ cells), and the other to the Sox14- interneurons (contains 81.0 ± 0.3% of all Sox14- cells; Figure 3B,D). The two thalamic molecular GABAergic groups therefore occupy their own respective spatial clusters, with the Sox14- cells located more rostrally and medially compared to the Sox14+ interneurons.
 
 To independently confirm our findings and control for potential effects of looking at a juvenile age (P14), we also mapped anatomical distribution of all Gad1+ and Chrna6+ cells across the adult mouse TC nuclei at P56, using the Allen Mouse Brain Atlas (2004 Allen Institute for Brain Science. Allen Mouse Brain Atlas. Available from: mouse.brain-map.org; Lein et al., 2007) ISH data (Figure 3—figure supplement 1A). Chrna6 has been identified as another marker specific for interneurons, at least in the LGd (Golding et al., 2014; DropViz; Allen Cell Types Database). The resulting 3D reconstructions, k-means spatial clustering (Figure 3—figure supplement 1A), and distribution plot (Figure 3—figure supplement 1B) were consistent with our observations from the P14 Sox14GFP/+ thalamus.
 
 The mouse thalamus therefore exhibits wider interneuron diversity than has been previously reported, with at least two molecularly and spatially distinct classes. The largest interneuron class is defined by Sox14+ and is enriched in the caudal part of the thalamus which contains principal sensory relays and their associated HO nuclei. Conversely, the smaller Sox14- GABAergic population is enriched in the rostral part of the thalamus, in HO regions that associate with more cognitive functions, such as the MD and LD (Halassa and Kastner, 2017; Rikhye et al., 2018b).
 
-## The Sox14+ interneuron class is abundant and widespread in the marmoset thalamus
+### The Sox14+ interneuron class is abundant and widespread in the marmoset thalamus
 
 Given the sparseness of interneurons in the mouse thalamus, there exists the possibility that the Sox14+ interneuron class may represent a unique feature of smaller-brained species, or that it may be a conserved, but numerically negligible type of interneuron complemented by novel and more abundant types in species with larger brains. To detect the presence and assess the relative abundance of the Sox14+ interneuron class in the thalamus of species with a high density of interneurons, we sampled the distribution of SOX14+GAD1+ cells in selected TC nuclei of the neonatal non-human primate marmoset.
 
@@ -88,31 +200,39 @@ Fluorescent ISH for SOX14 and GAD1 mRNAs revealed the widespread presence of SOX
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig4-v2.jpg)
 
-**Figure 4.:** SOX14 interneurons dominate TC regions of the non-human primate marmoset.+GAD1+Representative coronal sections of the thalamus of a new-born marmoset illustrating the distribution of cells expressing the SOX14 (green) and GAD1 (red) mRNAs. (A) Caudal plane containing subdivisions of the pulvinar complex, the PO, and the auditory MG. Also visible are parafascicular (PaF) nuclei. Fr, fasciculus retroflexus; 3V, third ventricle. (Ai–iii) Magnifications of indicative areas of the medial (MPul) and anterior pulvinar (APul), the lateral pulvinar (LPul), and inferior pulvinar (IPul). (Aiv). Magnification of a region of the PO. (Av and vi). Magnifications of representative regions of the ventral (MGv) and dorsal (MGd) subdivisions of the auditory thalamus. (B) Middle plane section containing the sensory TC nuclei LGd, VPM, VPL, and other non-TC structures (ZI, RT, and SubG). (Bi–iii). Magnifications illustrating the dominant presence of SOX14 interneurons in the sensory FO nuclei. (+GAD1+C) Anterior plane containing the VAL, centromedial (CM), anteroventral (AV), LD, and MD. The prethalamic RT is recognisable as an entirely SOX14 structure. (Ci). Magnification of an area of the LD containing comparable densities of -GAD1+SOX14 and +SOX14 interneurons. (Cii). Magnification of an area of the MD containing -SOX14 and +SOX14 interneurons. (-D) Fraction of SOX14 (yellow) and +GAD1+SOX14 (red) interneurons in selected TC nuclei. Above each bar the total cell counts from nine regions of interest (ROI) measuring 263 μm by 263 μm per each TC nucleus in three age-matched brains (three ROI per TC nucleus per brain). The average fraction of -GAD1+SOX14 interneurons deviates significantly from background level in the MD and LD. Scale bars: low magnification; overviews: ~1 mm; magnified areas:~0.2 mm.-GAD1+
+**Figure 4.:** Representative coronal sections of the thalamus of a new-born marmoset illustrating the distribution of cells expressing the SOX14 (green) and GAD1 (red) mRNAs. (A) Caudal plane containing subdivisions of the pulvinar complex, the PO, and the auditory MG. Also visible are parafascicular (PaF) nuclei. Fr, fasciculus retroflexus; 3V, third ventricle. (Ai–iii) Magnifications of indicative areas of the medial (MPul) and anterior pulvinar (APul), the lateral pulvinar (LPul), and inferior pulvinar (IPul). (Aiv). Magnification of a region of the PO. (Av and vi). Magnifications of representative regions of the ventral (MGv) and dorsal (MGd) subdivisions of the auditory thalamus. (B) Middle plane section containing the sensory TC nuclei LGd, VPM, VPL, and other non-TC structures (ZI, RT, and SubG). (Bi–iii). Magnifications illustrating the dominant presence of SOX14+GAD1+ interneurons in the sensory FO nuclei. (C) Anterior plane containing the VAL, centromedial (CM), anteroventral (AV), LD, and MD. The prethalamic RT is recognisable as an entirely SOX14-GAD1+ structure. (Ci). Magnification of an area of the LD containing comparable densities of SOX14+ and SOX14- interneurons. (Cii). Magnification of an area of the MD containing SOX14+ and SOX14- interneurons. (D) Fraction of SOX14+GAD1+ (yellow) and SOX14-GAD1+ (red) interneurons in selected TC nuclei. Above each bar the total cell counts from nine regions of interest (ROI) measuring 263 μm by 263 μm per each TC nucleus in three age-matched brains (three ROI per TC nucleus per brain). The average fraction of SOX14-GAD1+ interneurons deviates significantly from background level in the MD and LD. Scale bars: low magnification; overviews: ~1 mm; magnified areas:~0.2 mm.
 
 Qualitative analysis shows largely overlapping distribution of the fluorescent probes for SOX14 and GAD1 in all TC nuclei at caudal (Figure 4Ai–vi) and intermediate levels (Figure 4Bi–iii), but some areas of differential expression at rostral level, where GAD1 expression is not accompanied by SOX14 expression in medial and dorsal regions of the thalamus (Figure 4C) that contain the limbic HO TC nuclei LD (Figure 4Ci) and MD (Figure 4Cii). We then proceeded to quantify the number of SOX14+GAD1+ and SOX14-GAD1+ cells in three brains of the new-born marmoset by randomly selecting three regions of 263 μm by 263 μm within the following nuclei: FO visual LGd, HO visual and multimodal associative medial, lateral, inferior, and anterior pulvinar subdivisions (MPul, LPul, IPul, and APul, respectively), FO somatosensory VPM and VPL, HO sensory PO, and FO auditory (MGv) and HO auditory (MGd) as well as non-specific HO MD and LD. With the exception of the MD and LD, all TC nuclei tested contained mostly SOX14+GAD1+ cells (90.2 ± 0.9%; mean ± SEM; dotted line in Figure 4D). This may in fact be an underestimate due to the observed lower efficiency of the SOX14 probe compared to the GAD1. Analysis of the frequency distribution of the two cell classes across the tested nuclei reveals the MD and LD as outliers of an otherwise normal distribution (Motulsky and Brown, 2006). Indeed, in the MD and LD SOX14-GAD1+ cells account for 28.7 ± 6.7% and 52.3 ± 2.8% (mean ± SEM) of the total GAD1+, respectively (Figure 4D). The presence of a sizeable population of SOX14-GAD1+ cells in the MD and LD is intriguing for their reminiscence of the Sox14-Gad1+ interneurons of the mouse (Figure 2C,D) which are also most abundant in these two non-specific HO nuclei.
 
 We find the presence in both the mouse and marmoset of an abundant SOX14+GAD1+ interneuron class and the relative distribution of SOX14+GAD1+ and GAD1+ single positive interneurons compatible with a conserved basic organisation of interneuron diversity in rodents and primates alike.
 
-## All Sox14-expressing thalamic interneurons are born in the midbrain
+### All Sox14-expressing thalamic interneurons are born in the midbrain
 
 Given the known role of Sox14 in specifying subcortical inhibitory classes (Achim et al., 2013; Delogu et al., 2012; Guo and Li, 2019; Prekop et al., 2018; Sellers et al., 2014) and following our identification of Sox14 as a conserved genetic marker for the larger cohort of thalamic interneurons in both the primate and rodent brain, we investigated the requirement for this gene in interneurons across TC modalities and hierarchy using the Sox14GFP/GFP (Sox14 knockout, KO) mouse. We have previously shown that in the Sox14 KO there is a >90% reduction in the number of interneurons in the LGd (Jager et al., 2016). We find a comparable reduction in the number of GFP+ interneurons overall across the LGd, LP, VP, PO, and MG in the Sox14 KO (90.5 ± 1.5%, p=2.7 × 10−4, two-sample two-tailed t-test, n = 3 brains/genotype; Figure 5A,B). Conversely, there was no significant change in the number of Sox14-Gad1+ cells (p=0.4, two-sample two-tailed t-test; Figure 5A,B) and in their distribution across TC regions (Figure 5A,C; p>0.05, chi-squared test, n = 3 brains/genotype). These results therefore indicate that the two TC interneuron populations may already be segregated during development and represent two distinct GABAergic lineages.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig5-v2.jpg)
 
-**Figure 5.:** (A) Differential requirement for Sox14 highlights two distinct developmental classes. 3D reconstruction of a representative P14 Sox14 thalamus from tracing every tenth 20-µm-thick coronal section, displayed as a z-projection and showing distribution of GFP/GFPSox14 (yellow) and +Gad1+Sox14 cells (red). (-Gad1+B) (i) Relative change in the number of GFP and GFP+Gad1+ cells across TC regions in P14 -Gad1+Sox14 relative to P14 GFP/GFPSox14 data (mean ± SEM, n = 3 brains/genotype). There is a significant reduction in the GFPGFP/+ population (p=2.7 × 10+Gad1+−4, two-sample two-tailed t-test), but no statistically significant difference in the size of the GFP group (p=0.4, two-sample two-tailed t-test). (ii) Proportion of GFP-Gad1+ cells within the total GABAergic population is decreased in the +Gad1+Sox14 (mean ± SEM, n = 3 brains/genotype). (GFP/GFPC) Distribution of GFP cells across TC nuclei in the -Gad1+Sox14 and GFP/+Sox14 brains at P14 (mean ± SEM; n = 3 brains/genotype). GFPGFP/GFP distribution is unaltered in the -Gad1+Sox14 KO (p>0.05, chi-squared test).
+**Figure 5.:** (A) Differential requirement for Sox14 highlights two distinct developmental classes. 3D reconstruction of a representative P14 Sox14GFP/GFP thalamus from tracing every tenth 20-µm-thick coronal section, displayed as a z-projection and showing distribution of Sox14+Gad1+ (yellow) and Sox14-Gad1+ cells (red). (B) (i) Relative change in the number of GFP+Gad1+ and GFP-Gad1+ cells across TC regions in P14 Sox14GFP/GFP relative to P14 Sox14GFP/+ data (mean ± SEM, n = 3 brains/genotype). There is a significant reduction in the GFP+Gad1+ population (p=2.7 × 10−4, two-sample two-tailed t-test), but no statistically significant difference in the size of the GFP-Gad1+ group (p=0.4, two-sample two-tailed t-test). (ii) Proportion of GFP+Gad1+ cells within the total GABAergic population is decreased in the Sox14GFP/GFP (mean ± SEM, n = 3 brains/genotype). (C) Distribution of GFP-Gad1+ cells across TC nuclei in the Sox14GFP/+ and Sox14GFP/GFP brains at P14 (mean ± SEM; n = 3 brains/genotype). GFP-Gad1+ distribution is unaltered in the Sox14 KO (p>0.05, chi-squared test).
 
 LGd interneurons in the mouse derive from the midbrain (Jager et al., 2016). To explore how the molecular and spatial organisation of thalamic interneurons is generated during development more conclusively, we fate-mapped midbrain lineages and checked for their presence, distribution, and inhibitory profile across the thalamus. We crossed En1Cre (Kimmel et al., 2000) with a Rosa26lsl-GFP (Sousa et al., 2009) reporter line (Figure 6A; see also Table 1), as the En1 TF gene is expressed in the midbrain and rostral hindbrain progenitors, but not in the forebrain (Sgaier et al., 2007). Analysis of the thalamus at P21 reveals GFP+ cells (En1+ lineage) distributed across the LGd and co-expressing GABA (Figure 6B), therefore independently validating our previous observation (Jager et al., 2016). However, like the Sox14+Gad1+ neurons, En1+ cells were observed beyond the LGd – in the LP, VP, PO, and MG, where they were also positive for GABA (Figure 6B,C). Plotting their distribution confirmed that it is equivalent to the distribution of Sox14+ INs (p>0.05, chi-squared test; Figure 6C,D). Occasional GFP+ cells with glia-like morphology were also observed in the thalamus. These cells were GABA- and were not included in any of the analyses.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig6-v2.jpg)
 
-**Figure 6.:** Sox14 interneurons in TC regions derive from the midbrain.+(A) Schematic of the fate mapping experiment: crossing En1 with CreRosa26 reporter line permanently labels all midbrain born cells with GFP expression. (lsl-GFPB) (i) Representative coronal section of P21 En1 thalamus with Cre; Rosa26lsl-GFPEn1 cells observed in the LGd, LP, VP, and PO (considering TC regions only). For clarity some of the +En1 cells are indicated with white arrows. Scale bar, 100 µm. (ii) +En1 cells in these regions co-express GABA (filled white arrows). Empty arrows mark GABA single-positive cells. Scale bar, 10 µm. (+C) 3D reconstruction of a representative P21 En1 thalamus from tracing every sixth 60-µm-thick coronal section, displayed as a z-projection and showing distribution of Cre; Rosa26lsl-GFPEn1 cells. (+D) Distribution of Sox14 and +Gad1+En1 cells across TC nuclei in +Sox14 and GFP/+En1 brains, respectively, plotted as proportion of all the cells within each group (mean ± SEM; n = 3 brains/genotype). The two populations are not differently distributed (p>0.05, chi-squared test).Cre; Rosa26lsl-GFP
+**Figure 6.:** (A) Schematic of the fate mapping experiment: crossing En1Cre with Rosa26lsl-GFP reporter line permanently labels all midbrain born cells with GFP expression. (B) (i) Representative coronal section of P21 En1Cre; Rosa26lsl-GFP thalamus with En1+ cells observed in the LGd, LP, VP, and PO (considering TC regions only). For clarity some of the En1+ cells are indicated with white arrows. Scale bar, 100 µm. (ii) En1+ cells in these regions co-express GABA (filled white arrows). Empty arrows mark GABA single-positive cells. Scale bar, 10 µm. (C) 3D reconstruction of a representative P21 En1Cre; Rosa26lsl-GFP thalamus from tracing every sixth 60-µm-thick coronal section, displayed as a z-projection and showing distribution of En1+ cells. (D) Distribution of Sox14+Gad1+ and En1+ cells across TC nuclei in Sox14GFP/+ and En1Cre; Rosa26lsl-GFP brains, respectively, plotted as proportion of all the cells within each group (mean ± SEM; n = 3 brains/genotype). The two populations are not differently distributed (p>0.05, chi-squared test).
 
 We therefore conclude that the Sox14+ thalamic interneurons across FO and HO TC nuclei all derive from the midbrain, and simultaneously that the Sox14- GABAergic cells do not; the two classes thus represent distinct inhibitory lineages in TC regions, further supporting their definition as two distinct thalamic interneuron classes.
 
-## Midbrain-derived interneurons migrate along two streams into the sensory thalamus during the first postnatal week
+### Midbrain-derived interneurons migrate along two streams into the sensory thalamus during the first postnatal week
 
 En1Cre;Rosa26lsl-GFP line was then used to investigate the timeline and spatial trajectories of the Sox14+ interneuron precursors migrating from the midbrain into the FO and HO sensory TC regions (Figure 7A). Previously, LGd interneurons were found to populate this nucleus in the first postnatal week (Golding et al., 2014; Jager et al., 2016). We therefore looked at the numbers and migratory morphology of GFP+ (i.e. En1+) cells in the thalamus at E16.5, E17.5, P0.5, P1.5, and P2.5. We focused on the LGd, LP, and VP, but left out the PO and MG, due to low overall numbers of interneurons in these two regions (Figure 1D and Figure 2D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative coronal sections of En1Cre; Rosa26lsl-GFP thalamus at E17.5 and P2.5. Green arrows mark some of the GFP+ cells. Scale bars, 100 µm. (B) Number of GFP+ cells counted in the LGd, LP, and VP from E17.5 to P2.5 (mean, n = 3 brains). (C) Leading process orientation of GFP+ cells was determined along the caudo-rostral, ventro-dorsal, and latero-medial dimensions. (D) Frequency distribution of leading process orientation for GFP+ cells in the LGd, LP, and VP at E17.5 and P0.5 combined, represented in heat maps (n = 3 brains/developmental stage).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Proportion of GFP+ cells in the LGd, LP, and VP combined, for which a leading process could be identified, in E17.5-P2.5 En1Cre; Rosa26lsl-GFP brains (mean ± SEM, n = 3 brains/developmental stage, apart from P2.5 where n = 1 brain). (B) Frequency distribution of leading process orientation for GFP+ cells in the LGd, LP, and VP at (i) E17.5 and (ii) P0.5 separately, represented in heat maps (n = 3 brains/developmental stage). (C) Polar histograms of leading process orientation in the latero-medial and ventro-dorsal plane for GFP+ cells in the LGd, LP, and VP at E17.5 and P0 combined (n = 3 brains/developmental stage).
 
 At E16.5 no GFP+ cells were present in the thalamus. From E17.5 to P2.5 their numbers progressively increased in all of the regions analysed (Figure 7A,B). The number of GFP+ cells in the LGd at P2.5 matched previous independent reports (Golding et al., 2014), validating our counting method. Midbrain-derived interneurons therefore populate the different TC regions following a similar timeline. Interestingly, they appear in two ventrally located nuclei (i.e. LGd and VP) simultaneously (Figure 7A,B), implying they use distinct routes to reach them.
 
@@ -120,7 +240,7 @@ To assess quantitatively the direction of migration of the larger, midbrain-deri
 
 Heat maps indicate that at a population level (integrated across dimensions), GFP+ cells migrate into the LGd, LP, and VP in a caudo-rostral and dorso-ventral direction (Figure 7D), consistent with the position of the thalamus in the brain relative to their midbrain origin. However, GFP+ precursors in the LGd and LP have a dominant medio-lateral orientation, while those in the VP an opposite, latero-medial orientation, as can also be seen from polar histograms (Figure 7—figure supplement 1C). This suggests that midbrain-derived interneuron precursors enter TC regions simultaneously in two distinct streams, one migrating rostro-ventro-laterally to the LGd and LP, and the other rostro-ventro-medially to the VP, indicating a split between visual (LGd, LP) and somatosensory (VP) TC nuclei.
 
-## Sox14-negative thalamic interneurons populating HO nuclei are born in the forebrain
+### Sox14-negative thalamic interneurons populating HO nuclei are born in the forebrain
 
 With the aim of identifying the origin of the Sox14- interneuron class in the mouse, we first looked for a positive molecular marker that would complement the absence of Sox14 expression. We made use of DropViz data [available from: dropviz.org; (Saunders et al., 2018)] and observed that within inhibitory clusters from the diencephalon, Sox14 and Pvalb show largely non-overlapping expression. It is known that Pvalb is expressed by the prethalamic RT (Clemente-Perez et al., 2017) and by telencephalic interneuron subtypes derived from the GE (Marín and Rubenstein, 2001; Tasic et al., 2016; Tremblay et al., 2016).
 
@@ -131,6 +251,14 @@ At later ages (P56) Pvalb is widely expressed in the mouse thalamus and is obser
 We found the presence of a minor population of Pvalb+ interneurons in the anterior thalamus of the mouse intriguing. Spatial proximity to the RT and shared marker expression (Pvalb) may suggest a prethalamic origin for the Sox14-Pvalb+ interneurons. On the other hand, progenitor domains of the telencephalic medial ganglionic eminences (MGE) and preoptic area (POA) also generate Pvalb+ interneurons, which are known to integrate in neocortical and hippocampal circuitries (Gelman et al., 2011; Lavdas et al., 1999; Wichterle et al., 2001; Xu et al., 2004; Xu et al., 2008), but could potentially reach the thalamus. In addition, in humans the DLX1/2/5+ GE generate thalamic interneurons selectively for the HO MD and pulvinar nuclei (Letinić and Kostović, 1997; Letinic and Rakic, 2001; Rakić and Sidman, 1969).
 
 We set out first to validate the distinct origin of the Sox14-Pvalb+ interneurons by fate-mapping rostral forebrain inhibitory progenitor domains using the Dlx5/6Cre (Monory et al., 2006) crossed to Rosa26lsl-GFP line (Figure 8A; see also Table 1). Expression of the distal less homeobox genes Dlx1/2/5/6 is a common ontogenetic step for all GABAergic lineages in the subpallium, prethalamus, and hypothalamus (Anderson et al., 1997a; Anderson et al., 1997b; Bulfone et al., 1993; Le et al., 2017; Liu et al., 1997; Long et al., 2009a; Long et al., 2007; Long et al., 2009b; Simeone et al., 1994; Wang et al., 2010; Yun et al., 2002).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic of the fate mapping experiment: crossing Dlx5/6Cre with Rosa26lsl-GFP reporter line permanently labels all ventral telencephalic, hypothalamic, and prethalamic-born cells with GFP expression. (B) (i) Representative coronal sections of P14 Dlx5/6Cre; Rosa26lsl-GFP thalamus with Dlx5+Pvalb+ cells present in the MD, LD, CL, VAL, VM, LP, and PO (considering TC regions only). Scale bar, 100 µm. (ii) Dlx5+Pvalb+ cells in TC regions co-express GABA. Scale bar, 100 µm. (C) Distribution of Dlx5+Pvalb+ and Sox14-Gad1+ cells across TC nuclei in P14 Dlx5/6Cre; Rosa26lsl-GFP and Sox14GFP/+ brains, respectively, plotted as proportion of all the cells within each group (mean ± SEM, n = 3 brains/genotype). The two populations are not differently distributed (p>0.05, chi-squared test). (D) 3D reconstruction of a representative P14 Dlx5/6Cre; Rosa26lsl-GFP thalamus from tracing every sixth 60-µm-thick coronal section, displayed as a z-projection and showing distribution of Dlx5+Pvalb+ cells. (E) Schematic of the fate mapping experiment crossing the Foxd1Cre with Rosa26lsl-nuclearGFP reporter line to permanently label hypothalamic and prethalamic-born cells with nuclear membrane localised GFP. (F) Representative coronal sections of P14 Foxd1Cre; Rosa26lsl-nuclearGFP thalamus with Foxd1+Pvalb+ cells present in the LD, CL, MD, and LP. Scale bar, 100 µm. Enlarged areas (red boxes) showing Foxd1+Pvalb+ cells co-expressing GABA. Additional GABA+ but Foxd1-Pvalb- neurons are also visible in the LP (red arrows). HA: habenula. (G) Schematic of the fate mapping experiment: crossing Nkx2.1Cre with Rosa26lsl-GFP reporter line permanently labels some hypothalamic and all MGE-born cells with GFP expression. (H) (i) Representative coronal sections of P14 Nkx2.1Cre; Rosa26lsl-GFP thalamus with Pvalb+ and Nkx2.1+ cells present in the MD, LD, CL, VAL, VM, LP, and PO (considering TC regions only). Scale bar, 100 µm. (ii) Nkx2.1+ cells in TC regions do not co-express Pvalb+. Scale bar, 100 µm. (I).Schematic of the fate mapping experiment crossing the Lhx6Cre with Rosa26lsl-GFP reporter line to permanently label some hypothalamic and MGE born cells with GFP. (J) (i) Representative coronal section of P14 Lhx6Cre; Rosa26lsl-GFP showing GFP+Pvalb+ cells in the hippocampus (red arrows) and GFP-Pvalb+ present in the MD, LD, and CL nuclei of the thalamus (considering TC regions only). Scale bar, 100 µm. (ii) GFP+ cells in TC regions are endothelial and do not co-express Pvalb+. Scale bar, 100 µm. (K) Proportion of Pvalb+ cells in TC regions that are Dlx5+, Foxd1+, Nkx2.1+, or Lhx6+ at P14 (mean ± SEM, Dlx5+ n = 3 brains, Foxd1+ n = 5 brains, Nkx2.1+ n = 3 brains, and Lhx6+ n = 4 brains). (L) Proportion of Dlx5+Pvalb+ and Foxd1+Pvalb+ cells in TC regions co-expressing GABA at P14 (mean ± SEM, Dlx5+ n = 3 brains, Foxd1+ n = 5 brains).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/59272/elife-59272-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) (i) Representative coronal sections of P14 PvalbCre; Rosa26lsl-nuclearGFP thalamus with GFP+ cells present in the MD, LD, CL, VAL, LP, and PO (considering TC regions only). Scale bar, 100 µm. (ii) GFP+ cells in TC regions express GABA at P14. Scale bar, 100 µm. (B) Proportion of GFP+ cells in TC regions co-expressing GABA at P14 (mean, n = 2 brains). (C) Clusters of Pvalb-GABA-Dlx5+ glia-like cells are observed across TC regions in the Dlx5/6Cre; Rosa26lsl-GFP line at P14, as shown for the LD. White arrows mark Pvalb+GABA+Dlx5+ cells. Scale bar, 100 µm. (D) Pvalb-Dlx5+ cells with neuronal morphology do not express GABA. Scale bar, 100 µm.
 
 At P14 virtually all TC Pvalb+ cells are a Dlx5 lineage (GFP+; 99.71 ± 0.29%, n = 3 brains; Figure 8B,K) and majority of them co-expressed detectable GABA (93.6 ± 3.7%; Figure 8B,L), in line with observations from the PvalbCre; Rosa26lsl-nuclearGFP line (Figure 8—figure supplement 1Aii,B). We mapped the distribution of Pvalb+Dlx5+ cells across TC regions (Figure 8C,D) and observed that it closely recapitulates the distribution of Sox14-Gad1+ cells (Figure 8C; p>0.05, chi-squared test).
 
@@ -168,45 +296,241 @@ While a dual midbrain and forebrain ontogeny of thalamic interneurons emerges as
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The mice were housed in the animal facilities at King’s College London under standard conditions on a 12 hr:12 hr dark/light cycle, with unrestricted access to water and food. Housing and experimental procedures were approved by the King’s College London Ethical Committee and conformed to the regulations of the UK Home Office personal and project licences under the UK Animals (Scientific Procedures) 1986 Act. Both female and male mice were used in a randomised way across experiments. The morning when the vaginal plug was observed was designated as embryonic day (E) 0.5 and the day of birth as postnatal day (P) 0.5 (see also Table 1).
 
-## Callithrix jacchus
+### Callithrix jacchus
 
 A total of seven New World marmoset (C. jacchus) monkeys were used in this study. All experiments were conducted in accordance with the guidelines approved by the RIKEN Institutional Animal Care (W2020-2-022).
 
-## Immunohistochemistry and ISH
+### Immunohistochemistry and ISH
 
 Mice were transcardially perfused with 4% PFA and the brains dissected and postfixed in PFA at 4°C overnight, then washed in PBS for at least 24 hr at 4°C. For ISH, brains were stored in PFA for 5 days, to minimise RNA degradation, and all the subsequent solutions were treated with diethyl pyrocarbonate (DEPC; AppliChem). The brains were cryoprotected in a sucrose gradient (10–20–30%), frozen on dry ice, and cryosectioned as 20 μm coronal sections collected on Superfrost Ultra Plus slides (Thermo Scientific) for ISH, or as 60 μm free-floating coronal sections for IHC.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Brain sections were washed in PBS three times and blocked in 2–7% normal goat serum (NGS) solution (in 1× PBS, 0.1–0.3% Triton-X100) for 2 hr at room temperature (RT). Primary antibodies (Table 2) were diluted in blocking solution and incubated with the sections (as stated in the table). This was followed by three 30 min PBS washes, and incubation in secondary antibodies (Table 2) diluted 1:500 in blocking solution, for 2 hr at RT. After two 30 min PBS washes, the sections were incubated in DAPI for 30 min (1:40,000 dilution in PBS; Life Technologies) and mounted using ProLong Gold mounting media (Invitrogen).
 
-## In situ hybridisation
+**Table 2.**
+ Antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Dilution</th>
+      <th>Incubation time</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rabbit anti-GABA</td>
+      <td>1:2000</td>
+      <td>2X ON, 4°C</td>
+      <td>Sigma, A2052</td>
+    </tr>
+    <tr>
+      <td>Chicken anti-Gfp</td>
+      <td>1:5000</td>
+      <td>2X ON, 4°C</td>
+      <td>Abcam, Ab13970</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-parvalbumin</td>
+      <td>1:2000</td>
+      <td>1X ON, 4°C</td>
+      <td>Sigma-Aldrich, P3088</td>
+    </tr>
+    <tr>
+      <td>Goat anti-chicken Alexa-488</td>
+      <td>1:500</td>
+      <td>2 hr, RT</td>
+      <td>Invitrogen, A11039</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit Alexa-568</td>
+      <td>1:500</td>
+      <td>2 hr, RT</td>
+      <td>Invitrogen, A11036</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit Alexa-647</td>
+      <td>1:500</td>
+      <td>2 hr, RT</td>
+      <td>Invitrogen, A21245</td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse Alexa-568</td>
+      <td>1:500</td>
+      <td>2 hr, RT</td>
+      <td>Invitrogen, A11004</td>
+    </tr>
+    <tr>
+      <td>Goat anti-mouse Alexa-635</td>
+      <td>1:500</td>
+      <td>2 hr, RT</td>
+      <td>Invitrogen, A31575</td>
+    </tr>
+  </tbody>
+</table>
+
+### In situ hybridisation
 
 Gad1 antisense RNA probe was transcribed in vitro from full-length cDNA template (IMAGE ID: 5358787). The probe was diluted to a final concentration of 800 ng/ml in hybridisation buffer (50% formamide, 10% dextran sulphate, 1 mg/ml rRNA, 1× Denhardt’s solution, 0.2 M NaCl, 10 mM Tris HCl, 5 mM NaH2PO4.2H2O, 1 mM Tris base, 50 mM EDTA) and applied onto the slides, which were incubated in a humidified chamber at 65°C overnight. The slides were then washed three times for 30 min in wash buffer (50% formamide, 1× SSC, 0.1% Tween) at 65°C, two times for 30 min in MABT buffer (100 mM maleic acid, 150 mM NaCl, 0.1% Tween-20) at RT, and blocked for 2 hr at RT (2% Boehringer Blocking Reagent (Roche), 20% inactivated sheep serum in MABT). Sheep a-DIG alkaline phosphatase conjugated antibody (Roche, 11093274910) was diluted 1:2000 in the blocking solution and incubated with the slides overnight at 4°C. This was followed by five 20 min washes in MABT and two 20 min washes in the AP buffer (0.1M Tris-HCl pH 8.2, 0.1%-Tween-20). Fast red TR/Naphthol AS-MX tablets (Sigma) were dissolved in the AP buffer and applied onto the slides for colour reaction for 3–6 hr at RT in the dark. The slides were then washed three times for 20 min in PBS before proceeding with IHC for GFP as described above. Sox14GFP/+ and Sox14GFP/GFP sections were always processed in parallel.
 
-## ISH in C. jacchus
+### ISH in C. jacchus
 
 Fluorescent ISH was performed as previously described (Watakabe et al., 2006) with some modifications. Riboprobes incorporating digoxigenin (DIG) and fluorescein (FL) were hybridised overnight. After washing, FL- and DIG-labelled probes were each detected in different ways. For detection of the DIG probes, the sections were incubated with an anti-DIG antibody conjugated with horse radish peroxidase (HRP) (1/500, Roche Diagnostics) for 6 hr at room temperature. After washing in TNTx (0.1 M Tris-HCl, pH 7.5, 0.15 M NaCl, 0.05% Triton X-100) three times for 5 min, the sections were treated with 1:100 diluted TSA-Plus (DNP) reagents (Perkin Elmer) for 20 min. After washing in TNTx 3 × 10 min, the sections were incubated for 2 hr at room temperature with an anti-DNP antibody conjugated with Alexa 488 (1/500, Invitrogen). After quenching HRP activity and washing, the sections were incubated for 2 hr at room temperature with an anti-FL antibody conjugated with HRP (1/500, Roche Diagnostics) followed by reaction with TSA biotin reagents (Perkin Elmer) and visualisation with streptavidin conjugated with Alexa594 (Invitrogen).
 
-## Quantifying distribution of neuronal populations in histological sections
+### Quantifying distribution of neuronal populations in histological sections
 
-## In mice
+#### In mice
 
 Confocal z-stacks covering the extent of the thalamus across all axes (caudo-rostral, ventro-dorsal, and latero-medial) were acquired using either Nikon A1R inverted confocal, inverted spinning disk Nikon Ti microscope or Olympus VS120 slide scanner, with 10× (NA 0.30 Plan Fluor DLL) and 20× (NA 0.75 Plan Apo VC or UPLSAPO NA 0.75) objectives. The stacks were then viewed with the Neurolucida software. TC nuclei were identified from the DAPI counterstain, using cytoarchitectonically recognisable structures, such as the LGd, the habenular complex, the RT, the anterior pretectum, and the fasciculus retroflexus (fr), as landmarks for orientation and reference. When the nuclear GFP reporter was used, only cells with detectable DAPI signal were included in the calculations. The cells of interest (Table 3) were assigned to TC regions by comparing the sections to the Allen Brain Reference Atlas and annotated and counted manually. For each brain, only one hemisphere was analysed (chosen in a randomised way). For experiments using Gad1+ and Chrna6+ ISH data from the Allen Mouse Brain Atlas resource [2004 Allen Institute for Brain Science. Allen Mouse Brain Atlas. Available from: mouse.brain-map.org; (Lein et al., 2007)], all images of P56 C57BL/6J coronal brain sections containing the thalamus were downloaded for each gene (every eighth 25-µm-thick section, sampling every 200 µm across the thalamus), and analysed in the same way as described above.
 
-## In marmoset
+**Table 3.**
+ Genetic identity of cells counted across TC regions and technical details of corresponding experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transgenic line</th>
+      <th>Age</th>
+      <th>Cells annotated/counted</th>
+      <th>Number of brains</th>
+      <th>Sampling</th>
+      <th>Section thickness (µm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sox14GFP/+</td>
+      <td>P21</td>
+      <td>GFP+</td>
+      <td>3</td>
+      <td>Whole thalamus</td>
+      <td>50 (10; optical sections)</td>
+    </tr>
+    <tr>
+      <td>Sox14GFP/+</td>
+      <td>P14</td>
+      <td>GFP+ and Gad1+</td>
+      <td>3</td>
+      <td>Every tenth coronal section</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Sox14GFP/+</td>
+      <td>P14</td>
+      <td>GFP+ and Pvalb+</td>
+      <td>2</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Sox14GFP/GFP</td>
+      <td>P14</td>
+      <td>GFP+ and Gad1+</td>
+      <td>3</td>
+      <td>Every tenth coronal section</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>En1Cre; Rosa26lsl-GFP</td>
+      <td>P21-30</td>
+      <td>GFP+</td>
+      <td>3</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>En1Cre; Rosa26lsl-GFP</td>
+      <td>P14</td>
+      <td>GFP+ and Pvalb+</td>
+      <td>3</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Dlx5/6Cre; Rosa26lsl-GFP</td>
+      <td>P14</td>
+      <td>GFP+, Pvalb+, and GABA+</td>
+      <td>3</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Foxd1Cre; Rosa26lsl-nuclearGFP</td>
+      <td>P14</td>
+      <td>GFP+, Pvalb+, and GABA+</td>
+      <td>5</td>
+      <td>Every sixth coronal section</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Nkx2.1Cre; Rosa26lsl-GFP</td>
+      <td>P14</td>
+      <td>GFP+ and Pvalb+</td>
+      <td>3</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Lhx6Cre; Rosa26lsl-GFP</td>
+      <td>P14</td>
+      <td>GFP+ and Pvalb+</td>
+      <td>4</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>PvalbCre; Rosa26lsl-nuclearGFP</td>
+      <td>P14</td>
+      <td>GFP+, Pvalb+, and GABA+</td>
+      <td>2</td>
+      <td>Every sixth coronal section</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Marmoset</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wild type</td>
+      <td>P0</td>
+      <td>SOX14 and GAD1</td>
+      <td>3</td>
+      <td>Representative anterior, intermediate and posterior planes</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
+
+#### In marmoset
 
 Images were acquired with a fluorescence microscope BZ-X810 (Keyence) or BZ-9000 (Keyence). Representative coronal sections at anterior, intermediate, and posterior levels were analysed manually, by delineating nuclear boundaries according to the neonate Marmoset Gene Atlas, RIKEN CBS, Japan (https://gene-atlas.brainminds.riken.jp). Cell counting was conducted using the Cell Counter Plugin and ROI manager in ImageJ (Schindelin et al., 2015). Within the boundaries of each TC nucleus analysed, three ROIs of 263 μm by 263 μm were positioned randomly and their content of single positive or double positive cells added together to generate a representative fraction of GAD1+ and GAD1+SOX14+ cells for the TC nucleus (no SOX14 single positive cells were detected). Counts were replicated in three age matched brains to calculate mean ± SEM.
 
-## 3D reconstructions of cell distributions from histological sections
+### 3D reconstructions of cell distributions from histological sections
 
 3D reconstructions of cell distributions (Table 3) across thalamic regions were generated for each brain separately using the Neurolucida software (MBF Bioscience), from the acquired confocal z-stacks or Allen Mouse Brain Atlas ISH data as described above. For each image the outline of the thalamus and the surrounding structures were manually traced using the ‘contour’ function and the cells were annotated with the ‘marker’ function, placed at the centre of the soma. Traced images were then aligned in sequential rostro-caudal order, manually for each brain, using tissue landmarks (midline and clearly recognisable structures, for example, LGd, RT, habenula, hippocampus) for reference, and their spacing in the rostro-caudal dimension was preserved according to the sampling used for each brain.
 
-## 3D reconstructions of cell distributions by whole brain serial two photon imaging
+### 3D reconstructions of cell distributions by whole brain serial two photon imaging
 
 Sox14GFP/+ mouse brain samples (P21; n = 3) were embedded in a 4.5% oxidised-agarose solution containing agarose (type 1; Sigma), 10 mM NaIO4 (Sigma) and 50 mM phosphate buffer (PB). Samples were imaged with TissueCyte 1000 (Ragan et al., 2012) with a custom cooling system (JULABO UK Ltd.) for serial two-photon (STP) tomography across the complete mouse brain. Physical sectioning was performed every 50 μm with optical sectioning every 10 μm. A 16×, 0.8 NA immersion objective (Nikon Inc) acquired 1 × 1 mm image tiles at spatial resolution 0.54 μm with a 12 × 10 tiling mosaic required to obtain a complete coronal tissue section. Laser (Chameleon Ultra II, Coherent) excitation was conducted at 920 nm for GFP excitation with three PMT channel acquisition for red, green, and blue wavelength collection. STP imaging occurred over 5 days and generated 3.5 terabytes of data per brain. Tiled data was stitched alongside STP acquisition using a custom Python and ImageJ/Fiji pipeline.
 
@@ -218,15 +542,15 @@ The model was trained with the ELU activation function, using an Adam optimiser 
 
 For automated thalamus counting, all structures belonging to the thalamus, according to the Allen Brain Atlas hierarchically organised taxonomy, were extracted from the registered STP data sets using masks upsampled to the original 0.54 μm data and fed into the trained network for automated segmentation. Correction for oversampling of cells in the axial axis was done by grouping detected cells if they overlapped within a radius of 10 μm, and subsequently keeping the centrally positioned cell in the axial axis. Automated counting in the entire thalamus took 7 hr per sample using an Ubuntu Intel(R) Core(TM) i9-7980XE CPU at 2.60 GHz workstation, with 32 cores and 128 GB RAM.
 
-## NND calculations
+### NND calculations
 
 Nearest neighbour distance (NND) was determined for the Sox14+Gad1+ and Sox14-Gad1+ cells from the 3D reconstructions of their distributions. The cells’ coordinates in 3D were generated by Neurolucida and analysed using a custom Python script and the Pandas library (McKinney et al., 2010) to calculate NNDs separately for each group and between the two groups, for each Sox14GFP/+ brain individually. The data was then normalised to the largest NND within each data set (each individual group and between groups sets for each brain) averaged across the brains (mean ± SEM) and plotted as cumulative distribution. Normalisation allows us to plot their cumulative distribution as a fraction of the maximum distance, though even before normalisation of the curves were broadly similar. Statistically significant differences between the distributions were verified using the two-sample Kolmogorov–Smirnov test, implemented in the SciPy library (Jones et al., 2001).
 
-## Migratory morphology analysis
+### Migratory morphology analysis
 
 E16.5, E17.5, P0.5, P1.5 (n = 3 brains/developmental stage), and P2.5 (n = 1) En1Cre; Rosa26lsl-GFP brains were quickly dissected on ice and immersed in 4% PFA for 12 hr before switching to PBS. 300-µm-thick coronal sections were cut on a vibratome (Leica VT 1200S). To increase the imaging depth, the sections were cleared following the ScaleSQ protocol (Hama et al., 2015). ScaleS4 buffer was used as a mounting medium (Hama et al., 2015), and spacers were placed on the slides to prevent compressing the sections. Nikon A1R inverted confocal was used to acquire z-stacks that covered the entire extent of the thalamus for each brain, with a 20× objective (NA 0.75 Plan Apo VC). The achieved imaging depth in z ranged from 200 to 250 µm. The stacks were imported into Neurolucida software (MBF Bioscience) to trace the migratory morphology of GFP+ cells in the LGd, LP, and VP. On average, two sections covered the extent of these nuclei in the rostro-caudal dimension and the first time point when GFP+ cells were observed there was at E17.5. GFP+ cells were not traced in the PO and MG due to their low numbers in these nuclei in the juvenile and adult brains, and the ambiguity in delineating these regions anatomically in the embryonic brains. We did not observe GFP+ cells with neuronal morphology in any other TC regions (i.e. outside the FO and HO sensory thalamus) for all ages analysed. In the analysed regions (LGd, LP, and VP), all GFP+ somas were annotated using the semi-automated ‘Soma’ function. The leading processes were traced manually with the ‘Tree’ function, starting in the middle of the soma and until each process could be unequivocally identified or until the point of bifurcation, for all GFP+ cells with a clearly visible and identifiable leading process (44% of all GFP+ cells at E17.5, 30% at P0.5, 26% at P1.5, 14% at P2.5). The 3D coordinates for each leading process were then exported into Excel, and their orientation was expressed in the brain’s coordinate system (x=L−M, y=V−M, z=C−R), as a vector joining the start and end point of the process, using a custom Python script and the Pandas (McKinney et al., 2010) and Numpy (van der Walt et al., 2011) libraries. Each vector was defined by its orientation in spherical coordinates (polar and azimuthal angle) and overall length. Population level orientation data for the LGd, LP, and VP at E17.5 and P0 was plotted as heat-maps, by binning cells according to their spherical coordinates. The bins were then integrated along each axis to reveal a dominant orientation (e.g. for the LGd, 66% and 69% of cells oriented dorso-ventrally and caudo-rostrally, respectively). Polar histograms of leading process orientation in the dorsal-ventral-lateral-medial plane were also produced.
 
-## Spatial clustering analysis
+### Spatial clustering analysis
 
 Unsupervised machine learning methods were used to investigate spatial organisation of Sox14+Gad1+ and Sox14-Gad1+ cells. The 3D models of P14 Sox14GFP/+ thalamus generated with Neurolucida for NND analysis were again used to obtain the coordinates of all thalamic interneurons.
 
@@ -236,18 +560,18 @@ Multiple values of k were tested, and evaluated using the silhouette coefficient
 
 We also performed k-means clustering on the 3D distribution of Gad1+ cells obtained from ISH data from the Allen Mouse Brain Atlas. The silhouette score was again highest (0.512) for k = 2, and the resulting clusters have a spatial definition similar to those from the P14 Sox14GFP/+ thalamus.
 
-## Statistics
+### Statistics
 
-## Comparison of distributions
+#### Comparison of distributions
 
 The chi-squared test was used to test for significant differences in the thalamus-wide distribution of specific cell classes. This thalamus-wide comparison compensates for categorical errors arising from a degree of uncertainty in nuclear boundaries, as a result of variation in the sectioning plane and other factors.
 
 For each distribution, average relative cell numbers were computed in Excel. A custom python script was used to compute the chi-squared statistic, and the corresponding p-value was computed using the chi-squared cumulative density function implemented in SciPy (Jones et al., 2001).
 
-## Change in interneuron numbers in the Sox14 knockout
+#### Change in interneuron numbers in the Sox14 knockout
 
 This was tested for statistical significance using unpaired two-sample two-tailed t-test, comparing the Sox14 knockout to Sox14GFP/+ for each interneuron class separately (n = 3 brains/genotype). Total interneuron numbers across all TC nuclei were compared and sampling was consistent between genotypes (each 10th thalamic section was analysed for each brain).
 
-## Identification of outliers
+#### Identification of outliers
 
 In the analysis of the Marmoset's thalamus, the fraction of GAD1 single positive cells is low in most TC nuclei tested, this low frequency is partly due to the lower efficiency of the SOX14 probe compared to the GAD1 and therefore a systematic error. In the LD and MD, however, the frequency of GAD1 single positive cells is higher. To demonstrate that values for these two TC nuclei are outliers, we applied the method described in Motulsky and Brown, 2006, implemented in GraphPad Prism software.

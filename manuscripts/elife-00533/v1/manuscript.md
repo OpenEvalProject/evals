@@ -12,4 +12,4 @@
 
 ## Abstract
 
-Researchers have identified two genes— follistatin and activin —as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.
+Researchers have identified two genes—follistatin and activin—as having an important role in the ability of certain flatworms to identify wounds that require the production of new tissue.

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Although Rad51 is the key protein in homologous recombination (HR), a major DNA double-strand break repair pathway, several auxiliary factors interact with Rad51 to promote productive HR. We present an interdisciplinary characterization of the interaction between Rad51 and Swi5-Sfr1, a conserved auxiliary factor. Two distinct sites within the intrinsically disordered N-terminus of Sfr1 (Sfr1N) were found to cooperatively bind Rad51. Deletion of this domain impaired Rad51 stimulation in vitro and rendered cells sensitive to DNA damage. By contrast, amino acid-substitution mutants, which had comparable biochemical defects, could promote DNA repair, suggesting that Sfr1N has another role in addition to Rad51 binding. Unexpectedly, the DNA repair observed in these mutants was dependent on Rad55-Rad57, another auxiliary factor complex hitherto thought to function independently of Swi5-Sfr1. When combined with the finding that they form a higher-order complex, our results imply that Swi5-Sfr1 and Rad55-Rad57 can collaboratively stimulate Rad51 in Schizosaccharomyces pombe .
+Although Rad51 is the key protein in homologous recombination (HR), a major DNA double-strand break repair pathway, several auxiliary factors interact with Rad51 to promote productive HR. We present an interdisciplinary characterization of the interaction between Rad51 and Swi5-Sfr1, a conserved auxiliary factor. Two distinct sites within the intrinsically disordered N-terminus of Sfr1 (Sfr1N) were found to cooperatively bind Rad51. Deletion of this domain impaired Rad51 stimulation in vitro and rendered cells sensitive to DNA damage. By contrast, amino acid-substitution mutants, which had comparable biochemical defects, could promote DNA repair, suggesting that Sfr1N has another role in addition to Rad51 binding. Unexpectedly, the DNA repair observed in these mutants was dependent on Rad55-Rad57, another auxiliary factor complex hitherto thought to function independently of Swi5-Sfr1. When combined with the finding that they form a higher-order complex, our results imply that Swi5-Sfr1 and Rad55-Rad57 can collaboratively stimulate Rad51 in Schizosaccharomyces pombe.
 
 ## Introduction
 
@@ -44,27 +44,75 @@ Due to the use of truncated proteins in which entire domains were deleted (Kuwab
 
 ## Results
 
-## Sfr1N is essential for the role of Swi5-Sfr1 in DNA repair
+### Sfr1N is essential for the role of Swi5-Sfr1 in DNA repair
 
 Since Sfr1N binds to Rad51 but does not stimulate DNA strand exchange, and Swi5-Sfr1C stimulates DNA strand exchange despite not forming a detectable complex with Rad51, it was proposed that Sfr1N functions exclusively to facilitate the interaction between Swi5-Sfr1C and Rad51 (Kuwabara et al., 2012). However, it remained possible that Sfr1N only exerts a stimulatory effect when in the presence of Swi5-Sfr1C. To test this, strand exchange reactions containing purified Rad51 and plasmid-sized DNA substrates (Figure 1A) were supplemented with equimolar concentrations of both Sfr1N and Swi5-Sfr1C. Even in this setting, Sfr1N did not have any stimulatory effect on DNA strand exchange (Figure 1B,C), raising the possibility that it is dispensable for the physiological function of Swi5-Sfr1. To determine the requirement for these two modules in Rad51-dependent DNA repair, strains lacking the C-terminal or N-terminal half of Sfr1 (sfr1N and sfr1C, respectively) were constructed. Both strains showed the same sensitivity to DNA damage as a strain in which Sfr1 was completely absent (sfr1Δ; Figure 1D). Furthermore, combining these truncations with rad55Δ sensitized cells to DNA damaging agents to the same degree as the rad55Δ sfr1Δ strain, which displays a complete loss of Rad51-dependent DNA repair (Figure 1—figure supplement 1A; Akamatsu et al., 2003; Akamatsu et al., 2007). Sfr1N and Sfr1C were detected at comparable levels to full-length Sfr1 by immunoblotting, indicating that the sensitivity of the sfr1N and sfr1C strains is not due to a reduction in protein levels (Figure 1—figure supplement 1B). Furthermore, this sensitivity was not rescued by fusing Sfr1N or Sfr1C to the SV40 large T antigen nuclear localization signal, suggesting that the observed phenotype is not caused by a failure to localize to the nucleus (Figure 1—figure supplement 1C). Thus, although not essential for stimulation of Rad51 in vitro, Sfr1N is essential for the function of Swi5-Sfr1 in promoting Rad51-dependent DNA repair.
 
-## Sfr1N comprises an intrinsically disordered and flexible domain within the Swi5-Sfr1 ensemble
+![Figure 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the three-strand exchange assay. (B) Three-strand exchange reactions containing Rad51 with the indicated concentrations of Swi5-Sfr1, or Sfr1N and/or Swi5-Sfr1C, were incubated for 2 hr at 37 °C and DNA was separated by agarose gel electrophoresis to visualize substrates (css, lds), intermediates (JM) and products (NC). (C) The percentage of DNA signal per lane corresponding to JM and NC (total yield) was plotted against protein concentration. (D) Percentage of cell survival following acute UV irradiation for the indicated strains. For (C,D), mean values of three independent experiments ± s.d. are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A,C) DNA damage sensitivity of the indicated strains was assessed. NLS, nuclear localization signal of the SV40 large T antigen. Bleo., bleomycin. HU, hydroxyurea. Note that sfr1Δ does not sensitize cells to the indicated doses of bleo. or HU unless Rad55/Rad57 is absent. (B) Proteins were extracted from log phase cultures, separated by SDS-PAGE and probed with the indicated antibodies. Tubulin serves as a loading control.
+
+### Sfr1N comprises an intrinsically disordered and flexible domain within the Swi5-Sfr1 ensemble
 
 Having confirmed the physiological importance of Sfr1N, a structural approach was employed to glean insights into its molecular function. Primary sequence analysis and ion mobility mass spectrometry of Sfr1N suggested that this domain is intrinsically disordered (Kokabu et al., 2011; Saikusa et al., 2013). To directly test this, Sfr1N was analyzed by circular dichroism (CD) and nuclear magnetic resonance (NMR) spectroscopy. The far-UV CD spectrum of Sfr1N lacked local minima above 210 nm and showed a negative peak at ~200 nm (Figure 2A), implying a lack of secondary structural units such as α-helices and β-sheets (Greenfield, 2006). Furthermore, examination of the 1H-15N heteronuclear single quantum coherence (HSQC) spectrum of Sfr1N revealed that most of the main chain amide protons resonated in a narrow chemical shift range between 7.7 and 8.7 ppm (Figure 2B), which is a characteristic feature of disordered proteins (Konrat, 2014). To extract structural information for each residue, NMR signals from main-chain 1HN, 13Cα, 13CO, and 15NH atoms as well as 13Cβ resonances were assigned by analyzing a set of triple resonance spectra. This was assisted by the 1H-15N HSQC spectra of selectively-15N labeled versions of Sfr1N and several Sfr1N variants (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig2-v1.jpg)
+
+**Figure 2.:** (A) Far-UV CD spectrum of Sfr1N. (B) 1H-15N HSQC spectrum of Sfr1N. Regions outlined in red and blue are enlarged in the top right and bottom right panels, respectively. (C) Secondary chemical shifts of 13Cα (top), 13Cβ (middle), and 13CO (bottom) were obtained and plotted against the corresponding position in Sfr1N. Values that suggest potential α-helix and β-strand formation are indicated with red and blue bars, respectively. (D) TALOS+ prediction of secondary structure probabilities. Black, red, and blue circles indicate the probabilities of random coils, α-helices, and β-strands, respectively. (E) {1H}-15N heteronuclear NOE was measured for Sfr1N. All analyzed main chain NHs showed NOE values of less than 0.44, with a protein-wide average of 0.15.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Superimposed 1H-15N HSQC spectra of Sfr1N with the indicated 15N-labeling. (B) Superimposed 1H-15N HSQC spectra of uniformly 15N-labeled Sfr1N and a truncated variant, Sfr1 (127-176). (C) Left, superimposed 1H-15N HSQC spectra of Arg-selectively 15N-labeled Sfr1N or Sfr1N-R97A. Right, superimposed 1H-15N HSQC spectra of Lys-selectively 15N-labeled Sfr1N or Sfr1N-K94A.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–F) DISOPRED3 was used to predict the likelihood of disorder and protein binding in orthologs of Sfr1 from the indicated species. The likelihood of disorder is shown on the y-axis and residues of Sfr1 are displayed on the x-axis. The dashed line represents a confidence limit of 0.5, above which point DISOPRED3 predicts that a residue is more likely to be disordered than structured. Sequences were obtained from UniProt (S. pombe, Q9USV1; S. japonicus, B6JYP3; S. octosporus, S9R1E2; Mus musculus, Q8BP27; Homo sapiens, Q86XK3; S. cerevisiae, P32489).
 
 The chemical shifts obtained for the main-chain and 13Cβ atoms enabled secondary structure prediction. The secondary chemical shift of 13Cα, 13Cβ, and 13CO atoms, which is the chemical shift difference between the measured values and the corresponding amino acids in random coil peptides, was determined (Figure 2C). The majority of Sfr1N residues showed 13C secondary chemical shift values within a limited range, suggesting that random coil structures are present in these regions. Nonetheless, a few groups of residues exhibited more than three consecutive secondary chemical shift values outside of this range, raising the possibility that some structures resembling α-helices (E27 to D29, D32 to Q34) or β-strands (L103 to K105, R161 to K164) may form within Sfr1N (Wishart and Sykes, 1994). Further secondary structure analysis was performed using the 1HN, 13Cα, 13Cβ, 13CO, and 15NH chemical shift values and the program TALOS+ (Shen et al., 2009), which predicted Sfr1N to be entirely disordered, with a low probability for α-helix formation from E27 to S33 (Figure 2D).
 
 To analyze the dynamical features of Sfr1N, the steady state heteronuclear nuclear Overhauser effect (NOE) for the main-chain amide groups of the protein was analyzed (Farrow et al., 1994; Kay et al., 1989). NOE values for all residues was less than 0.44, indicating that the entire protein is flexible with pico-to-nanosecond timescale motions (Figure 2E). Such fast motions are typically observed for unstructured proteins. The NOE values were not completely uniform. While the average NOE values for all Sfr1N residues was 0.15, residues E27 to S33 showed slightly increased values with an average of 0.32. Other regions within Sfr1N also showed similarly increased NOE values (e.g., residues F91 to A99, average of 0.32). However, unlike these other regions, several additional lines of evidence pointed toward the possibility that residues E27 to S33 may form an α-helix (see above). Collectively, these results demonstrate that, unlike the structured Swi5-Sfr1C complex (Kuwabara et al., 2012), the N-terminal half of Sfr1 is intrinsically disordered and flexible. Disorder predictions using DISOPRED3 (Jones and Cozzetto, 2015) suggest that the disordered state of Sfr1N may have been conserved throughout evolution (Figure 2—figure supplement 2, see Discussion for more details).
 
-## Two sites within Sfr1N interact with Rad51
+### Two sites within Sfr1N interact with Rad51
 
 Kuwabara et al. (2012) suggested that Sfr1N facilitates the interaction between Swi5-Sfr1 and Rad51. To identify the site(s) within Sfr1N that binds to Rad51, NMR spectra of 15N-labeled Sfr1N were analyzed in the absence and presence of Rad51. Superimposed 1H-15N HSQC spectra of 15N-labeled Sfr1N with increasing amounts of Rad51 were constructed (Figure 3A). The most prominent spectral changes, defined as a reduction in signal intensity of >80% (Sfr1N:Rad51 ratio of 1:0.25), were observed for 19 out of 142 non-overlapped residues (Figure 3B,E). In addition to these marked changes, 18 and 20 residues experienced signal intensity reductions of 60–80% and 40–60%, respectively (Figure 3E). The signal intensity of these residues was further attenuated upon incremental addition of Rad51 (Figure 3—figure supplement 1A–C). Most of these attenuated signals did not display obvious chemical shift changes following Rad51 binding. However, five residues (A71, T73, D75, L76, and T146) displayed incremental chemical shift changes and reductions in signal intensity upon addition of increasing amounts of Rad51 (Figure 3C, Figure 3—figure supplement 1D). The remaining 60 residues that were analyzed experienced minimal effects upon addition of Rad51 (<40% reduction in signal intensity; Figure 3D,E). These findings implicate two sites in Sfr1N, Site 1 (S84 to T114) and Site 2 (T152 to S168), where the most significantly attenuated signal intensities are sandwiched by moderately attenuated signal intensities (Figure 3E), as being important for the Sfr1N-Rad51 interaction. Site 1 is highly basic and hydrophobic compared to other regions of Sfr1N. Positively charged residues are also a prominent feature of Site 2, but this site is not especially hydrophobic. These results suggest that, while both Sites 1 and 2 are involved in electrostatic interactions with Rad51, Site 1 may also participate in hydrophobic interactions with Rad51. We note that, like all RecA-family recombinases, S. pombe Rad51 exists as a multimer in solution, with a size corresponding to ~160 kDa (Figure 3—figure supplement 2, see Discussion for more details).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig3-v1.jpg)
+
+**Figure 3.:** (A) Superimposed 1H-15N HSQC spectra of 15N-labeled Sfr1N in the absence of Rad51 or in the presence of Rad51 at the indicated molecular ratios. (B–D) Enlarged signals from K108, T73, and T14 (left), with slices along the 1H axis (right). For (C), the threshold of the yellow and red spectra was set 2x lower than the other spectra to show the signals clearly. (E) Signal intensity ratio of Sfr1N residues in the presence of Rad51 to those in the absence of Rad51 (left) and features of the Sfr1N amino acid sequence (right). Reductions in signal intensity of 40–60% (green), 60–80% (yellow), and >80% (red) are highlighted, along with the corresponding residues. Underlined residues correspond to Site 1 (S84 to T114) and Site 2 (T152 to S168), where the most significant signal attenuations were observed. Residues not in bold include prolines, unassigned residues, and residues with overlapped signals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) NMR signal intensity of Sfr1N in the presence of the indicated ratio of Rad51 relative to the intensity observed in the absence of Rad51. (D) Chemical shift changes observed for the main chain amide NHs of Sfr1N induced by the addition of equimolar Rad51. Chemical shift changes were calculated using the formula $Δ\delta=Δ\delta_{H}^{2}+Δ\delta_{N}\times0.18^{2}^{1/2}$, where ΔδH and ΔδN represent the 1H and 15N chemical shift differences, respectively. The residues that were severely attenuated by the addition of Rad51 were not analyzed and are shown as blanks.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Rad51 was analyzed by size-exclusion chromatography. The blue and navy lines indicate the elution profiles of Rad51 and molecular weight standards, respectively.
+
 To provide further support that Sites 1 and 2 within Sfr1N interact with Rad51, site-specific crosslinking experiments were conducted (Figure 4A). By utilizing Escherichia coli with an expanded genetic code, synthetic amino acids can be introduced at a site of interest via suppression of the amber (UAG) stop codon (Young et al., 2010). Translation is terminated prematurely without amber suppression (e.g., when the synthetic amino acid is omitted from the growth media), hence ensuring that all full-length protein products contain the synthetic amino acid. Several residues within Sites 1 and 2 were replaced with the photoreactive amino acid p-benzoyl-L-phenylalanine (pBPA). Following exposure to UV light, proteins within ~3 Å of pBPA become crosslinked to it (Tanaka et al., 2008). Such crosslinked proteins can be detected as slow-migrating species by immunoblotting and are implicated in forming part of the interface in a protein-protein interaction (Miyazaki et al., 2016). Rad51 was co-expressed in E. coli with Sfr1N and cells were irradiated with UV. Proteins were then analyzed by immunoblotting with anti-Rad51 and anti-Sfr1 antibodies. Some non-specific crosslinking was observed when cells were treated with UV (Figure 4—figure supplement 1A). In addition to these non-specific crosslinks, numerous instances of specific crosslinking—defined as being dependent on a TAG mutation, the inclusion of pBPA in the media, and UV treatment—were observed (Figure 4B). Whereas several positions within Site 1 showed robust crosslinking to Rad51, positions within Site 2 showed little crosslinking (Figure 4C, Figure 4—figure supplement 1B), perhaps because the associations between Site 2 and Rad51 are more transient than those involving Site 1 (see Discussion). Taken together, the results obtained from the NMR interaction analysis and Site-specific crosslinking experiments indicate that two sites within Sfr1N, designated as Sites 1 and 2, interact with Rad51.
 
-## Sites 1 and 2 cooperatively facilitate the physical and functional interaction between Swi5-Sfr1 and Rad51
+![Figure 4.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the crosslinking assay. (B) Example of Sfr1N-Rad51 crosslinking. The indicated residues were replaced with an amber codon, or the amber codon was omitted as a negative control (‘none’). XL, specific crosslinks (defined in the text). *non-specific crosslinks. (C) Summary of crosslinking results for all residues examined.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The extent of non-specific crosslinking was assessed by individual and co-expression of Sfr1N and Rad51 in E. coli. (B) Specific crosslinking was assessed by expressing Rad51 with a version of Sfr1N in which a residue of interested was mutated to TAG, which encodes the photoreactive amino acid pBPA in this system.
+
+### Sites 1 and 2 cooperatively facilitate the physical and functional interaction between Swi5-Sfr1 and Rad51
 
 A sequence alignment of Sfr1 orthologs within the genus Schizosaccharomyces highlighted conserved patches of positively charged residues in Sites 1 and 2 (bold residues in blue typeface, Figure 5—figure supplement 1A). Combined with the knowledge that Sfr1N only co-IPs with Rad51 under low-salt conditions (Kuwabara et al., 2012), it seemed plausible that these residues might be important for electrostatic interactions with Rad51. Hence, three residues in Site 1 were mutated (3A) and four residues in Site 2 were mutated (4A). Additionally, these mutants were combined to generate the 7A mutant (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of Sfr1-Rad51 interaction site mutants. (B) The interaction of Swi5-Sfr1 (S5S1, wild type or mutants) with Rad51 was investigated by a pull-down assay. Affi-BSA is a control for nonspecific binding. (C) Three-strand exchange reactions were performed with the indicated concentrations of Swi5-Sfr1 (wild type or mutants). The percentage of DNA signal per lane corresponding to total yield (D), JM (E) or NC (F) was plotted against Swi5-Sfr1 concentration. For (D–F), mean values of three independent experiments ± s.d. are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Sequence alignment of Sfr1 homologs from the genus Schizosaccharomyces were generated with Clustal Omega. S. pombe Sfr1N (residues 1–176) is underlined, with Sites 1 and 2 shown in blue. Bold italic typeface indicates consecutive positively charged residues that were targeted for mutation. (B) CBB-stained gel of purified Swi5-Sfr1 (wild type and mutants). 7A has mutations in all bold residues from (A), whereas 3A and 4A only contain mutations in bold residues from Sites 1 and 2, respectively. Size markers are annotated on the left in kDa. Note that Sfr1 migrates slower than expected from its calculated molecular weight (~33.6 kD), as previously reported (Haruta et al., 2006). This property is attributable to its N-terminal half (Kuwabara et al., 2012), hence why mutation of residues in Sites 1 and 2 affects its electrophoretic mobility. (C) Rad51 was mixed with Swi5-Sfr1 (S5S1, wild type or mutants; input), complexes were IP'd with anti-Rad51 antibodies and the contents of these IPs were assessed by immunoblotting. ‘–" indicates the omission of Swi5-Sfr1.
 
 To directly assess whether these mutations disrupt the interaction with Rad51, Swi5 and full-length Sfr1 were co-purified to homogeneity (Figure 5—figure supplement 1B). Next, purified Rad51 was crosslinked to Affi-gel matrix and mixed with Swi5-Sfr1. A substantial fraction of wild-type Swi5-Sfr1 was recovered in the eluate (Rad51-bound fraction), although some of the protein remained in the flow-through (unbound fraction; Figure 5B). By contrast, the amount of 3A and 4A mutant proteins detected in the eluate was reduced, with much of the protein remaining in the flow-through. The 7A mutant protein was barely detected in the eluate, indicating that the binding seen in the 3A mutant was dependent on Site 2 and the binding seen in the 4A mutant was dependent on Site 1. Comparable trends were observed in a co-IP assay that did not involve crosslinking of Rad51 (Figure 5—figure supplement 1C). Taken together, these results suggest that Sites 1 and 2 facilitate the binding of Swi5-Sfr1 to Rad51 in a cooperative manner.
 
@@ -72,19 +120,35 @@ In the 7A mutant, both Sites 1 and 2 are mutated but the remainder of the N-term
 
 While Swi5-Sfr1C can stimulate Rad51 activity despite the absence of Sfr1N, 5-to-10-fold more of the complex is required to achieve the same level of stimulation as full-length Swi5-Sfr1 (Figure 1B lanes 3 and 12; Kuwabara et al., 2012), suggesting that the interaction between Sfr1N and Rad51 is important for efficient stimulation of strand exchange. Consistent with the observed binding defect, substoichiometric concentrations of the 7A mutant failed to efficiently stimulate Rad51-driven strand exchange, with a higher concentration of mutant protein required to achieve a wild-type level of joint molecules (JM, reaction intermediates) and nicked-circles (NCs, reaction products; Figure 5C). At 0.25 µM, the defect of the 7A protein was more pronounced for NC (~15 fold reduction) than JM (~5 fold reduction), suggesting that the ability of Swi5-Sfr1 to stimulate both the initial pairing of homologous DNA and the subsequent strand transfer by Rad51 are defective when the interaction with Sites 1 and 2 is ablated (Figure 5D–F). By contrast, the 3A and 4A mutants were able to promote efficient JM and NC formation at substoichiometric concentrations. Nevertheless, the loss of Rad51 stimulation observed at higher concentrations of wild-type Swi5-Sfr1 was attenuated in the 3A and 4A mutants (Figure 5C lanes 6, 21 and 28), suggesting that this loss of stimulation occurs due to unproductive interactions with Rad51 or sequestration of DNA substrates by Swi5-Sfr1 (Figure 6—figure supplement 1 and see Discussion). Consistent with this notion, efficient stimulation of Rad51 was maintained at higher concentrations of the 7A mutant (Figure 5C lanes 8 and 15) and Swi5-Sfr1C (Figure 1B,C; Kuwabara et al., 2012). Collectively, these results indicate that interactions between Rad51 and both Sites 1 and 2 are important for efficient stimulation of strand exchange.
 
-## Rad51 filament stabilization and ATPase stimulation is mediated by Sites 1 and 2
+### Rad51 filament stabilization and ATPase stimulation is mediated by Sites 1 and 2
 
 To determine why stimulation of Rad51-driven strand exchange is inefficient when Sites 1 and 2 are mutated, the molecular roles of Swi5-Sfr1 were considered. At substoichiometric concentrations, Swi5-Sfr1 effectively stabilizes Rad51 presynaptic filaments (Kurokawa et al., 2008). Thus, it seemed feasible that the observed impairment in strand exchange might be explained by defects in Rad51 filament stabilization. To test this possibility, filament stability was examined by fluorescence anisotropy. When Rad51 binds to a fluorescently-labeled oligonucleotide and forms a filament, fluorescence anisotropy increases due to a retardation in the motion of the labeled oligonucleotide (Figure 6A). The dissociation of Rad51 is accompanied by a reduction in anisotropy, with the rate of decline reflective of Rad51 filament stability. Rad51-ssDNA filaments were formed in the presence of ATP and filament collapse was induced via dilution into reaction buffer containing ATP but lacking DNA and protein. In the absence of Swi5-Sfr1, the decrement in anisotropy was sharp and reached a value that was observed in the absence of protein (~0.1) within ~500 s. Inclusion of wild-type Swi5-Sfr1 resulted in a slower reduction in anisotropy, indicating that Rad51 filaments had been stabilized (Figure 6B). Strikingly, inclusion of the 7A mutant did not result in any obvious filament stabilization (Figure 6C). Furthermore, although both 3A and 4A mutants showed some stabilization of Rad51 filaments, the magnitude of this stabilization was less than that observed for wild-type protein (Figure 6D,E). Consistent with these observations, the reaction rate constants for dissociation of Rad51-ssDNA complexes (koff) showed a substantial decline in the presence of Swi5-Sfr1, a lesser decline for the 3A and 4A mutants, and only a marginal decline for the 7A mutant (Figure 6F). Taken together, these results indicate that Sites 1 and 2 within Sfr1N interact cooperatively with Rad51 to facilitate filament stabilization by Swi5-Sfr1.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the fluorescence anisotropy assay. Rad51 monomers (white circles) are depicted forming a filament on an oligonucleotide (black line) labeled with the TAMRA fluorophore (orange star). (B–E) The anisotropy of fluorescently labeled ssDNA in complex with Rad51 was monitored following induction of filament collapse in the presence of Swi5-Sfr1 (wild type or mutants) at the indicated concentrations (µM). (F) koff values were determined for Rad51-ssDNA complexes at the indicated concentrations of Swi5-Sfr1. (G) Rad51-dependent ATP turnover was determined in the presence of the indicated Swi5-Sfr1 variant. For (F,G), mean values of three independent experiments ± s.d. are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Swi5-Sfr1 (S5S1, wild type or mutants) was incubated with ssDNA (top) or dsDNA (bottom) and protein-DNA complexes were resolved by agarose gel electrophoresis. (B) The amount of unbound ssDNA (left) or dsDNA (right) was quantified and expressed relative to the no protein lane, which was set to 100%. For (B), mean values of three independent experiments ± s.d. are shown.
+
 In addition to stabilizing Rad51 filaments, Swi5-Sfr1 has been shown to stimulate the ATPase activity of Rad51, which is also important for efficient strand exchange (Haruta et al., 2006; Kurokawa et al., 2008; Ito et al., 2018). Since substoichiometric concentrations of Swi5-Sfr1C failed to efficiently stimulate the ATPase activity of Rad51 (Kuwabara et al., 2012), we sought to determine whether Rad51-dependent ATP hydrolysis was potentiated by the 7A mutant. As expected, wild-type Swi5-Sfr1 was able to efficiently enhance ATP hydrolysis by Rad51 at substoichiometric concentrations (Swi5-Sfr1:Rad51 ratio of 1:20), with a 1.85-fold increase in ATP turnover (Figure 6G). By contrast, the 7A mutant only managed to enhance the ATPase activity of Rad51 1.28-fold, which is similar to the 1.27-fold stimulation observed with Swi5-Sfr1C. The 3A and 4A mutants stimulated ATP hydrolysis like wild type. These results suggest that interaction of either Site 1 or 2 with Rad51 is sufficient to promote efficient stimulation of ATP hydrolysis.
 
-## DNA repair in Sfr1-Rad51 interaction mutants is dependent on Rad51 paralogs
+### DNA repair in Sfr1-Rad51 interaction mutants is dependent on Rad51 paralogs
 
 To analyze the in vivo DNA repair activity of the Sfr1-Rad51 interaction mutants, strains were constructed in which the native sfr1+ gene was replaced with either sfr1-7A, sfr1-3A or sfr1-4A. Unexpectedly, the interaction mutants did not show any obvious sensitivity to DNA damage (Figure 7A, Figure 7—figure supplement 1A), which is in sharp contrast to the DNA repair defect of the N-terminal deletion strain (Figure 1D, Figure 1—figure supplement 1A,C). A marginal sensitivity was observed for the sfr1-7A strain but this was not statistically significant (Figure 7B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig7-v1.jpg)
+
+**Figure 7.:** (A,C) 10-fold serial dilutions of the indicated strains were spotted onto rich media with or without acute UV treatment and grown at 30 °C. (B,D) Percentage of cell survival was determined after acute exposure to UV. (E) The soluble cell lysate from S. pombe strains carrying the REP1 and REP2 expression vectors without inserts (vector) or encoding Rad55-Protein A and Rad57 (R5R7) was incubated with IgG-agarose. Proteins were eluted with 3C protease, for which a cleavage site exists between Rad55 and Protein A. This eluate was mixed with purified Swi5-Sfr1 (S5S1, wild type or 7A; input) and subjected to IP with anti-Rad57 antibody. These IPs were probed with the indicated antibodies. (F) Rad57 IPs from (E) and the indicated amounts of purified Rad51 were probed with an anti-Rad51 antibody. (G) Molecular bridging model. Rad51 monomers (white circles) are shown as a filament on ssDNA (solid black lines). Dashed black lines represent known physical interactions. Dashed gray lines with question marks represent potential physical interactions. Swi5-Sfr1 is recruited to Rad51 via two redundant mechanisms, one requiring its direct interaction with Rad51 and the other requiring Rad55-Rad57. See Discussion for details. For (B,D), mean values of three independent experiments ± s.d. are shown. Statistical analysis in (B) was by one-way ANOVA followed by Tukey’s multiple comparisons test. *, p<0.05. n.s., not significant (p>0.05).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52566/elife-52566-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A,B) DNA damage sensitivity of the indicated strains was assessed. ‘No treatment’ plate for (A) is shown in Figure 7A. CPT, camptothecin. Bleo., bleomycin. HU, hydroxyurea. Note that sfr1Δ cells are not sensitive to the indicated doses of CPT, bleo. or HU unless Rad55/Rad57 is absent. (C) S. pombe was transformed with the REP1 and REP2 expression vectors (vector) or the same vectors encoding Rad55-Protein A and Rad57 (R5R7). Soluble cellular extracts were probed with the indicated antibodies. Black dot indicates the Rad55-Protein A band, which is also reactive to the anti-Rad57 antibody due to the Protein A tag. Asterisk indicates the Rad57 band. Total, Ponceau S-stained membrane. (D) Soluble extracts from (C) were incubated with IgG-agarose and bound proteins were eluted via addition of 3C protease, which cleaves between Rad55 and Protein A. The indicated amount of this eluate was analyzed by SDS-PAGE and CBB staining. 2 µg of 3C protease was loaded on the rightmost lane as a control. Size markers are indicated on the left in kDa.
+
 Previous genetic studies suggested that there are two HR sub-pathways in S. pombe: one dependent on Swi5-Sfr1 and the other dependent on the Rad51 paralogs Rad55-Rad57 (Akamatsu et al., 2003; Akamatsu et al., 2007). Thus, in the absence of Rad55/Rad57, it is possible to evaluate the Rad51-dependent DNA repair that is mediated solely by Swi5-Sfr1. For this purpose, the interaction mutants were introduced into the rad55Δ background. Strikingly, in the absence of Rad55, the sfr1-7A mutant showed the same DNA damage sensitivity as the sfr1Δ mutant (Figure 7C). Furthermore, both the sfr1-3A and sfr1-4A mutants were more sensitive to DNA damage than sfr1+ in the rad55Δ background, although this sensitivity was not as severe as that observed for the rad55Δ sfr1Δ and rad55Δ sfr1-7A strains (Figure 7C,D). Similar results were obtained in the rad57Δ background (Figure 7—figure supplement 1B). These results indicate that the residues mutated in sfr1-7A are indeed important for DNA repair, while also suggesting that the DNA repair defects of Sfr1 amino acid-substitution mutants are suppressed by a Rad55-Rad57-dependent mechanism.
 
-## Swi5-Sfr1 and Rad55-Rad57 form a Rad51-independent complex
+### Swi5-Sfr1 and Rad55-Rad57 form a Rad51-independent complex
 
 One possible explanation for the above results is that Rad55-Rad57 plays a role in facilitating the recruitment of Swi5-Sfr1 to Rad51, perhaps by acting as a molecular bridge. A prerequisite of this model is that Rad55-Rad57 can bind to both Rad51 and Swi5-Sfr1. While an interaction between Rad57 and Rad51 has been reported by yeast two-hybrid analysis (Tsutsui et al., 2001), a possible interaction between Rad55-Rad57 and Swi5-Sfr1 was never examined due to the genetic evidence suggesting that they comprise independent sub-pathways of HR (Akamatsu et al., 2003; Akamatsu et al., 2007). To test if Rad55-Rad57 and Swi5-Sfr1 interact with each other, we sought to partially purify Rad55-Rad57. Protein A-tagged Rad55 and untagged Rad57 were co-expressed in S. pombe (Figure 7—figure supplement 1C). As a negative control, the same experiment was conducted in parallel using a strain transformed with empty vectors. Cleared cell lysates were incubated with IgG-agarose resin to enrich Protein A-tagged proteins. Rad55-Rad57 was then specifically eluted via the addition of 3C protease, which cleaves between Rad55 and resin-bound Protein A. Rad55 and Rad57 constituted the two major bands in this partially purified protein preparation and were present in seemingly stoichiometric amounts (Figure 7—figure supplement 1D), consistent with previous reports in budding yeast (Sung, 1997a; Liu et al., 2011).
 
@@ -94,7 +158,7 @@ Partially purified Rad55-Rad57 was incubated with purified Swi5-Sfr1 (wild type 
 
 In this study, we characterized the interaction between Rad51, the key protein in HR, and Swi5-Sfr1, a widely conserved recombination auxiliary factor. The N-terminal half of Sfr1 was found to be essential for the role of Swi5-Sfr1 in promoting Rad51-dependent DNA repair (Figure 1). This domain was shown to be intrinsically disordered (Figure 2) and contain two sites that interact with Rad51 (Figures 3 and 4). Although mutation of the two interaction sites disrupted the physical and functional interaction with Rad51 in vitro (Figures 5 and 6), unexpectedly, defects in DNA repair were only observed in the absence of Rad55-Rad57, another auxiliary factor complex with which Swi5-Sfr1 was found to interact (Figure 7).
 
-## Cooperative interactions with Rad51 are the primary function of Sfr1N
+### Cooperative interactions with Rad51 are the primary function of Sfr1N
 
 Although Sfr1N is not essential for stimulation of Rad51-driven DNA strand exchange (Figure 1B,C; Kuwabara et al., 2012), it is essential for the promotion of Rad51-dependent DNA repair by Swi5-Sfr1 (Figure 1D, Figure 1—figure supplement 1A,C). The fact that Swi5-Sfr1C can exert a stimulatory effect on Rad51 in vitro points towards the existence of a physical interaction between the two. However, the inability to detect such a complex, combined with the relative inefficiency with which Swi5-Sfr1C potentiates Rad51, strongly suggests that the interaction is too weak to observe by conventional means. This binding is likely augmented by the N-terminal fragment of Sfr1, which we posit functions as an anchor to keep Swi5-Sfr1C in close proximity to Rad51. Consistent with such a role for Sfr1N, NMR interaction analysis revealed that two domains within Sfr1N interact with Rad51 (Figure 3, Figure 3—figure supplement 1). Mutation of Site 1 or 2 weakened the interaction with Rad51, while mutation of both sites resulted in a near-complete loss of interaction (Figure 5B, Figure 5—figure supplement 1C), indicating that two sites within Sfr1N bind cooperatively to Rad51. Interestingly, Rad51-dependent strand exchange and ATP hydrolysis were significantly impaired only when both sites were mutated (Figures 5C–F and 6G). These results indicate that the reduced interaction in the single site mutants is sufficient for Swi5-Sfr1 to fully stimulate Rad51 in these assays. Although this points toward functional redundancy between Sites 1 and 2, it is possible that these assays are not sensitive enough to detect marginal defects in the stimulation of Rad51. Indeed, the fluorescence anisotropy assay revealed a severe defect in Rad51 filament stabilization for the 7A mutant and a modest defect for the 3A and 4A mutants (Figure 6B–F), arguing that interaction of both Sites 1 and 2 with Rad51 is important for efficient filament stabilization. Swi5-Sfr1 has also been shown to stabilize Rad51 filaments against the F-box helicase Fbh1 (Tsutsui et al., 2014). It would be interesting to test whether the interaction mutants can function in a similar capacity.
 
@@ -108,7 +172,7 @@ While this model could explain how Swi5-Sfr1 stabilizes the filament, it does no
 
 We note that the 7A mutant complex displayed a near-loss of DNA binding and the 4A mutant showed a clear defect in DNA binding (Figure 6—figure supplement 1A). A mild impairment in DNA binding became apparent upon closer inspection of the 3A mutant (Figure 6—figure supplement 1B). It is likely that these defects were caused by mutation of the positively charged Lys/Arg residues to Ala residues, leading to neutralization of the electrostatic attraction to DNA. Despite showing different levels of DNA binding, 3A and 4A were indistinguishable in all other aspects (Figures 5–7). Although it is formally possible that our observations with the 7A mutant are related to a defect in DNA binding, the high similarity of the results obtained with 3A and 4A argues that DNA binding by Swi5-Sfr1 is impertinent to its role in stimulating Rad51 activity or promoting Rad51-dependent DNA repair. Notably, mouse Swi5-Sfr1 (mSwi5-Sfr1) stimulates Rad51 through very similar mechanisms despite being unable to bind DNA (Tsai et al., 2012). This is in stark contrast to other recombination auxiliary factors such as Rad52, Rad54 and Hop2-Mnd1, whose ability to bind DNA is integral for recombinase stimulation (Seong et al., 2008; Wright and Heyer, 2014; Zhao et al., 2014). In addition to its involvement in DNA repair, human Sfr1 (hSfr1) has been implicated in transcriptional regulation (Feng et al., 2013; Yuan and Chen, 2011), raising the possibility that S. pombe Sfr1 may also have functions unrelated to DNA repair. In agreement with this, Cipak et al. (2009) reported that Swi5-Sfr1 forms a complex with the XPG-family RNA nuclease Mkt1 (SPAC139.01c), which was recently shown to be involved in RNAi-mediated silencing and establishment of heterochromatin (Taglini et al., 2019). We speculate that the ability of Sfr1 to bind DNA may be related to an as yet uncharacterized function.
 
-## Rad51 paralogs promote Swi5-Sfr1-dependent DNA repair
+### Rad51 paralogs promote Swi5-Sfr1-dependent DNA repair
 
 While the sfr1Δ and rad55Δ single mutants are sensitive to DNA damage, neither is as sensitive as rad51Δ, which is epistatic to both (Akamatsu et al., 2003; Khasanov et al., 1999). However, because the sfr1Δ rad55Δ double mutant shows the same sensitivity as rad51Δ (e.g., Figure 7A), it was concluded that two independent sub-pathways of HR exist in S. pombe (Akamatsu et al., 2003). Despite the numerous defects observed in vitro, the sfr1-7A mutant strain was proficient for DNA repair, but this repair was dependent on Rad55-Rad57 (Figure 7A–D), indicating that a Rad55-Rad57-dependent mechanism overcomes defects in the binding of Swi5-Sfr1 to Rad51.
 
@@ -118,7 +182,7 @@ Rad55-Rad57 facilitates recruitment of the Shu complex to Rad51 by binding to bo
 
 Interestingly, unlike sfr1-7A, sfr1C showed the same DNA damage sensitivity as sfr1Δ even in the presence of Rad55-Rad57 (Figure 1D, Figure 1—figure supplement 1A,C). This suggests that, in addition to its primary role in anchoring Swi5-Sfr1 to Rad51, Sfr1N may have a secondary role in coordinating the collaboration between Swi5-Sfr1 and Rad55-Rad57.
 
-## Evolutionary conservation of Sfr1N structure and function
+### Evolutionary conservation of Sfr1N structure and function
 
 Although the role of Swi5-Sfr1 in promoting Rad51-dependent DNA repair is conserved in mammals (Akamatsu and Jasin, 2010; Argunhan et al., 2017a; Lu et al., 2018; Su et al., 2014; Su et al., 2016; Yuan and Chen, 2011), the precise mode of interaction with Rad51 appears to have undergone some divergence (Tsai et al., 2012; Yuan and Chen, 2011). In Saccharomyces cerevisiae, the Swi5-Sfr1 homolog Sae3-Mei5 is produced only during meiosis and functions exclusively in the Dmc1 branch of meiotic HR (Hayase et al., 2004; Tsubouchi and Roeder, 2004). Both Swi5-Sfr1 and Sae3-Mei5 stimulate the strand exchange activity of Dmc1 via similar mechanisms (Ferrari et al., 2009; Haruta et al., 2006; Murayama et al., 2013), and although Sae3-Mei5 does interact directly with Rad51, it does not stimulate the activity of Rad51 (Cloud et al., 2012; Say et al., 2011), unlike Swi5-Sfr1.
 
@@ -126,33 +190,33 @@ A consistent trend across all examined species is that Sfr1 plays some role in f
 
 For the Key Resources Table, please see Supplementary file 1.
 
-## Contact for reagent and resource sharing
+#### Contact for reagent and resource sharing
 
 Further information or requests for resources should be directed to and will be fulfilled by the Lead Contact, Hiroshi Iwasaki (hiwasaki@bio.titech.ac.jp).
 
 ## Materials and methods
 
-## S. pombe strains
+### S. pombe strains
 
 All strains are listed in the Key Resources Table (Supplementary file 1). Except for BA1 (Msmt-0 leu-1–32 ura4-D18 arg3-D1 isp6::hphMX4 psp3::kanMX4), all S. pombe strains are isogenic derivatives of strain YA119 (Akamatsu et al., 2003); Msmt-0 leu-1–32 ura4-D18 his3-D1 arg3-D1). Standard media was used for growth (YES), selection (YES with drugs or EMM), and sporulation (SPA), as described previously (Hentges et al., 2005).
 
-## E. coli strains
+### E. coli strains
 
 All strains are listed in the Key Resources Table (Supplementary file 1). E. coli strains were constructed by transforming BL21 (DE3) containing the pEVOL-pBpF plasmid (Young et al., 2010) with a pBKN220 plasmid (Haruta et al., 2006) encoding Sfr1N (with or without a TAG mutation) and a pET28a plasmid encoding Rad51. Thus, strains only differ in the expression of Sfr1N or Rad51 and only these differences are indicated in the Key Resources Table (Supplementary file 1). A ‘–” sign indicates that cells were transformed with an empty vector, whereas a ‘+” sign signals the presence of Sfr1N or Rad51 on that vector. If a codon in Sf1N was mutated to TAG, the mutated residue is listed instead of a ‘+” sign. Strains are listed in order of appearance. Standard media was used for growth (LB) and selection (LB with antibiotics), unless otherwise indicated.
 
-## DNA damage sensitivity
+### DNA damage sensitivity
 
 A single colony was resuspended in 2 mL of YES and grown for 24 hr (rad+) or 48 hr (rad–). Cells from these cultures were then seeded into 2 mL of fresh YES and grown for ~14 hr until they reached log phase (~0.8×107 cells/mL). Cell density was adjusted to 2 × 107 cells/mL, 10-fold serial dilutions were made, and 5 µL of each dilution was spotted onto YES plates (no treatment control) or YES plates containing the indicated genotoxins. For UV irradiation, cells were spotted onto YES plates and treated with acute UV exposure of the indicated dose. The leftmost spot on each plate contains 1 × 105 cells. Cells were photographed with a digital camera after growth at 30 °C (2–4 days, as indicated). For clonogenic assays, cells were grown as described above and spread onto several YES plates and irradiated with the indicated dose of UV. After 3 (rad+) or 4 (rad–) days of growth, colonies were counted.
 
-## Extraction of cellular proteins for immunoblotting
+### Extraction of cellular proteins for immunoblotting
 
 Cells (1 × 108) were harvested and processed exactly as previously described (Argunhan et al., 2017b). Briefly, harvested cells were resuspended in 1 mL of ice-cold water. 150 µL of lysing solution (1.85 M NaOH 7.5% beta-mercaptoethanol) was added and mixed with the cells, followed by a 15 min incubation on ice. 150 µL of 55% TCA was added, followed by a further 10 min incubation on ice. Precipitated proteins were pelleted by centrifugation (16,000 g 10 min 4 °C) and dissolved with mixing (65 °C 10 min) in 100 µL of urea loading buffer (8 M urea, 5% SDS, 200 mM Tris-Cl pH 6.8, 1 mM EDTA, 0.01% BPB, freshly supplemented with 10% vol each of 1 M DTT and 2 M Tris). Proteins were separated by SDS-PAGE, transferred to PVDF membranes, and detected with the indicated antibodies.
 
-## CD spectrometry
+### CD spectrometry
 
 CD measurements were made using a Jasco J-720W spectrometer with a Peltier temperature controller. Sfr1N (4 µM) in buffer N (20 mM sodium phosphate [pH 6], 25 mM NaCl, 1 mM DTT) was placed in a 0.1 cm path length quartz cuvette. The CD spectrum was acquired from 180 nm to 260 nm at 25°C with a 1.0 nm bandwidth, 0.5 nm resolution, 50 nm/min scan speed, with 1 s averaging at each wavelength. Three spectra were averaged to give the spectrum of the protein and blank spectrum measured for buffer N alone was subtracted to produce the final spectrum.
 
-## NMR analysis of Sfr1N
+### NMR analysis of Sfr1N
 
 Sfr1N (residues 1–176) was subcloned into pBKN220 (Haruta et al., 2006), which was transformed into the E. coli strain BL21 (DE3) RIPL. Plasmids containing Sfr1N variants were prepared by using the protocol in the QuikChange Site-Directed Mutagenesis Kit (Agilent).
 
@@ -164,23 +228,23 @@ For the main-chain resonance assignments of Sfr1N, 13C and 15N doubly labeled sa
 
 To verify the signal assignments, the following samples were prepared and their 1H-15N HSQC spectra were obtained at 500 MHz; amino-acid selectively 15N-labeled (Ala, Arg, Ile, Leu, Lys, or Phe) Sfr1N(1-176), Arg-selectively 15N-labeled R97A variant of Sfr1N(1-176), Lys-selectively 15N-labeled K93A variant of Sfr1N(1-176), and uniformly 15N-labeled Sfr1 (127-176). From the 160 expected main-chain amide NH signals, 157 were detected (98%) and assigned to specific residues in Sfr1N. The remaining three signals from Q2, S3, and H51 could not be assigned due to line-broadening. NMR data were deposited in the Biological Magnetic Resonance Bank (BMRB) repository with accession number 27885.
 
-## Secondary structure analysis
+### Secondary structure analysis
 
 The secondary structural elements were analyzed by calculating deviations of the observed 13Cα, 13Cβ, and 13CO chemical shifts from their residue-dependent random coil values (Wishart and Sykes, 1994; Wishart et al., 1995). Residues were deemed to form random coils if they displayed secondary chemical shift values within a limited range (between −0.7 and 0.7 for 13Cα and 13Cβ atoms, and between −0.5 and 0.5 for 13CO atoms of non-proline residues, and −4 to 4 for all three 13C atoms of proline residues). The program TALOS+ (Shen et al., 2009) was also used to predict the secondary structural units where 1HN, 13Cα, 13Cβ, 13CO, and 15NH chemical shifts were used as input data. Predictions of disorder and protein binding sites for Sfr1 orthologs were generated by DISOPRED3 (Jones and Cozzetto, 2015).
 
-## Heteronuclear NOE
+### Heteronuclear NOE
 
 The heteronuclear {1H}-15N NOE experiment (Kay et al., 1989; Farrow et al., 1994) was carried out for uniformly 15N-labeled Sfr1N at 800 MHz. The NOE values were determined from the ratio INOE/Iref, where INOE and Iref indicate the signal intensities in the spectra acquired with and without 3 s 1H presaturation, respectively. The NOE and reference spectra were acquired in an interleaved manner with a scan number of 32, 1024 complex points and an acquisition time of 91.8 ms in the observed dimension, and 256 complex points and an acquisition time of 132 ms in the indirect dimension.
 
-## NMR interaction analysis
+### NMR interaction analysis
 
 250 μL of uniformly 15N-labeled Sfr1N at a concentration of 0.1 mM in buffer N was mixed with a 0.1 mM Rad51 solution in buffer N at Sfr1N:Rad51 molar ratios of 1:0, 1:0.25, 1:0.5, 1:0.75, and 1:1. These Sfr1N-Rad51 mixtures were concentrated to 250 μl (Amicon Ultra-4 MWCO 10K, Merck) and used for NMR measurements. For each mixture, 1H-15N HSQC spectra were acquired at 500 MHz with a scan number of 16, 1024 complex points and an acquisition time of 146 ms in the observed dimension, and 256 complex points and an acquisition time of 126 ms in the indirect dimension.
 
-## Site-specific crosslinking
+### Site-specific crosslinking
 
 E. coli strains used in this study are listed in the Key Resources Table (Supplementary file 1). Experiments were performed essentially as described (Miyazaki et al., 2016). Co-expression of Sfr1N (residues 1–176, with or without a specific amber codon) and Rad51 was induced with 1 mM IPTG at an OD600 of ~0.35 in E. coli strain BL21 (DE3) containing the pEVOL-pBpF plasmid either in the presence or absence of 1 mM pBPA. After 1 hr at 30 °C, cultures were pre-chilled on ice for 5 min before 250 µL of cells were spotted in a radial manner onto petri dishes at 4 °C and UV irradiated for 10 min at a distance of 4 cm with a B-100AP UV lamp (365 nm; UVP, LLC). 200 µL of cells was recovered from the plate and pelleted by centrifugation (20,000 g 5 min 4 °C). This pellet was dissolved in 70 µL of urea loading buffer (Argunhan et al., 2017b) and subjected to SDS-PAGE followed by immunoblotting.
 
-## Purification of proteins for biochemical analyses
+### Purification of proteins for biochemical analyses
 
 Previously published protocols were followed to purify Rad51 (Kurokawa et al., 2008), RPA (Haruta et al., 2006), and Swi5-Sfr1 (wild type (Haruta et al., 2006), Sfr1N (Kuwabara et al., 2010), and Swi5-Sfr1C (Kuwabara et al., 2010). Swi5-Sfr1 mutants (3A, 4A, 7A) were purified by the same method as wild-type Swi5-Sfr1 except they were diluted to 25 mM NaCl instead of 100 mM NaCl before being applied to the HiTrap Heparin column.
 
@@ -188,11 +252,11 @@ For the partial purification of Rad55-Rad57, Rad55 with a C-terminal dual tag (7
 
 All proteins were free of contaminating nuclease, protease and ATPase activity for the duration of the relevant assays. In all assays where comparisons were made between reactions with and without protein, the equivalent volume of protein storage buffer was added instead of the protein.
 
-## Three-strand exchange assay
+### Three-strand exchange assay
 
 Strand exchange buffer (30 mM Tris-Cl [pH 7.5], 100 mM NaCl, 20 mM KCl, 3.5 mM MgCl2, 2 mM ATP, 1 mM DTT, 5% glycerol, 8 mM phosphocreatine, 8 units/mL creatine phosphokinase) containing 10 µMnt PhiX174 virion DNA (NEB) was supplemented with 5 µM Rad51 and incubated at 37 °C for 10 min. The indicated concentration and variant of Swi5-Sfr1 was then added and the reaction was incubated for 10 min at 37 °C. Next, 1 µM of RPA was added and the reaction was incubated for 7 min at 37 °C. The reaction was initiated through the addition of 10 µMnt PhiX RF I DNA (NEB) linearized with ApaLI and incubated for a further 2 hr at 37°C. The 10 µL reactions were supplemented with 1 µL of psoralen (200 mg/mL) and subjected to psoralen-UV crosslinking to capture labile DNA structures. 1.95 µL of stop solution was then added (30 mM Tris-Cl [pH 7.5], 40 mM EDTA, 3% SDS, 5 mg/mL proteinase K). Following a 15 min incubation at 37°C, DNA was resolved in 1% agarose gels and stained with SYBR Gold (Thermo Fisher Scientific).
 
-## In vitro interaction assay
+### In vitro interaction assay
 
 For the Affi-gel interaction assay (Figure 5B), BSA or Rad51 was covalently attached to Affi-gel 15 (2 µg protein/µL gel) according to the manufacturer’s instructions. 2 µg of the indicated Swi5-Sfr1 variant was diluted into 300 µL of Affi-gel buffer (25 mM HEPES-KOH [pH 7.5], 150 mM NaCl, 3.5 mM MgCl2, 0.5 mM DTT, 0.05 µg/µL BSA, 10% glycerol, 0.05% igepal CA-630), input sample was taken, and 140 µL of this solution was mixed with 10 µL of Affi-BSA or Affi-Rad51. Reactions were then incubated with gentle mixing (30 °C 30 min). Following a brief centrifugation, flow-through samples were taken and the resin was washed with Affi-gel buffer (200 µL, x2). Bound proteins were eluted in 50 µL of SDS loading buffer with gentle mixing (37 °C 15 min). 9 µL (input, flow-through) or 3 µL (eluate) of sample was separated by SDS-PAGE, proteins were transferred to PVDF membranes and Sfr1 was detected with an anti-Sfr1 antibody (Haruta et al., 2006).
 
@@ -200,37 +264,123 @@ For the IP experiment in Figure 5—figure supplement 1C, 250 nM of a Swi5-Sfr1 
 
 For the IP experiments in Figures 7E,F and 50 µL of the IgG-agarose eluate from a strain transformed with empty vectors or Rad55-Rad57 containing vectors was mixed on-ice with 45 µL of buffer H200 (25 mM HEPES-KOH [7.5], 200 mM NaCl, 5 mM Mg(OAc)2, 5% glycerol, 1 mM ATP, 0.25 mM TCEP) and 5 µL of 20 µM Swi5-Sfr1 (wild type or 7A). 5 µL of input sample was taken, diluted with 20 µL of milliQ and mixed with an equal volume of 2x SDS loading buffer. The remaining 95 µL of reaction was incubated at 30 °C for 10 min then 4 °C for 5 min. Dynabeads Protein A (ThermoFisher) preincubated with anti-Rad57 antibody (Tsutsui et al., 2001) was added and mixtures were incubated with gentle mixing (4 °C 1 hr). Beads were washed with buffer H200 (300 µL, x3) and bound proteins were eluted in 50 µL of SDS loading buffer with gentle mixing (65 °C 10 min). Either 1 µL (Rad57), 3 µL (Rad55) or 5 µL (Sfr1 and Rad51) of eluate was separated by SDS-PAGE, transferred to PVDF membranes and detected with the indicated antibodies.
 
-## Antibodies used for IP and immunoblotting
+### Antibodies used for IP and immunoblotting
 
 For the immunoblots of site-specific crosslinking experiments: anti-Rad51 (Rb 1:10,000; provided by Hiroshi Iwasaki); anti-Sfr1 (Rb 1:5,000; provided by Hiroshi Iwasaki). For the immunoblots of cellular proteins: anti-MYC (Rb 1:1,000; Sigma Aldrich C3956), anti-Rad51 (Rat 1:10,000; provided by Hiroshi Iwasaki), and anti-tubulin (Mu 1:10,000; Sigma Aldrich T5168). For the detection of Sfr1 in the Affi-gel assay: anti-Sfr1 (Rb 1:5,000; provided by Hiroshi Iwasaki). For IP of Rad51 complexes, anti-Rad51 (Rb; provided by Hiroshi Iwasaki) was used, and for detection by immunoblotting: anti-Rad51 (Rat 1:10,000; provided by Hiroshi Iwasaki), anti-Sfr1 (Mu 1–5 and 76–80, 1:1000 each; provided by Hiroshi Iwasaki), anti-Rad55 (1:5,000; provided by Hiroshi Iwasaki), and anti-Rad57 (1:5,000; provided by Hiroshi Iwasaki). For IP of Rad57 complexes, anti-Rad57 (Rb; provided by Hiroshi Iwasaki) antibody was used.
 
-## Analysis of Rad51 filament dissociation kinetics
+### Analysis of Rad51 filament dissociation kinetics
 
 Anisotropy buffer (30 mM HEPES-KOH [pH 7.5], 100 mM KCl, 10 mM NaCl, 3 mM MgCl2, 1 mM ATP, 1 mM DTT, 5% glycerol) containing 1.5 µMnt of oligo dT (72 mer) with a 5’ TAMRA label was supplemented with 0.5 µM Rad51 and incubated at 25°C for 5 min. Next, a Swi5-Sfr1 variant was added at the indicated concentration and the reaction was incubated at 25°C for a further 5 min. This solution was transferred into a 0.3 × 0.3 cm quartz cuvette and the fluorescence anisotropy was monitored once per second for 60 s (25°C, excitation 546 nm, emission 575 nm) to confirm filament formation. Next, a 1.0 × 1.0 cm quartz cuvette containing 2 mL of anisotropy buffer was placed into the spectrofluorometer with constant stirring (450 r.p.m) and, after 60 s of measurement, 50 µL of the solution containing Rad51 filaments with or without Swi5-Sfr1 was injected into this cuvette. Fluorescence anisotropy was then monitored once per second for the indicated time. Dissociation rate constants (koff) were calculated in KaleidaGraph. Cuvettes were purchased from Hellma Analytics.
 
-## ATPase assay
+### ATPase assay
 
 ATPase buffer (30 mM Tris-Cl [pH 7.5], 100 mM KCl, 20 mM NaCl, 3.5 mM MgCl2, 5% glycerol) containing 10 µMnt PhiX virion DNA was mixed on ice with 5 µM Rad51 and 0.25 µM of a Swi5-Sfr1 variant. Reactions were initiated through the addition of 0.5 mM ATP. Time zero was immediately withdrawn (10 µL) and mixed with 2 µL of 120 mM EDTA to terminate the reaction. Following incubation at 37°C, aliquots were withdrawn at the indicated timepoints and processed as above. Upon completion of the time course, aliquots were diluted two-fold with water to reduce the concentration of ATP to 0.25 mM. Inorganic phosphate generated by ATP hydrolysis was then detected using a commercial malachite green phosphate detection kit (BioAssay Systems).
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 DNA binding buffer (25 mM HEPES-KOH [pH 7.5], 100 mM NaCl, 3.5 mM MgCl2, 1 mM DTT, 5% glycerol) containing 5 µMnt PhiX174 virion DNA or 5 µMnt ApaLI-linearized PhiX RF I DNA (both NEB) was supplemented with the indicated concentration of Swi5-Sfr1 (wild type or mutants) in a 10 µL reaction. Following incubation at 37°C for 15 mins, 2 µL of loading dye was added and 8 µL of the reaction mixture was separated by agarose electrophoresis (0.8% gel in TAE buffer, 2.5 hr 4°C). The gel was stained with SYBR Gold (Thermo Fisher Scientific).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## DNA damage sensitivity assay
+#### DNA damage sensitivity assay
 
 For the clonogenic survival assay, colonies were counted after 3 (rad+) or 4 (rad–) days of growth. The percentage of survival on the control plate (no UV treatment) was set to 100%. The expected number of colonies, based on the number of cells plated, was determined for the plates irradiated with the indicated dose of UV. The number of actual colonies was expressed as a fraction of the expected number, yielding the percentage of cells that survived the treatment. The values from three independent experiments were averaged and plotted, with the standard deviation of these averaged values depicted by error bars. In Figure 7B, a one-way ANOVA followed by Tukey’s multiple comparisons test was performed. *, p<0.05, n.s., not significant (p>0.05). Further statistical information for Figure 7B is listed below.
 
-Tukey's multiple comparisons testMean diff.95.00% CI of diff.Significant?SummaryAdjusted p valueWT vs. sfr1d23.813.4 to 34.21Yes**0.001WT vs. 7A10.16−0.2475 to 20.57Nons0.0547sfr1d vs. 7A−13.64−24.05 to −3.234Yes*0.0163
+<table>
+  <thead>
+    <tr>
+      <th>Tukey's multiple comparisons test</th>
+      <th>Mean diff.</th>
+      <th>95.00% CI of diff.</th>
+      <th>Significant?</th>
+      <th>Summary</th>
+      <th>Adjusted p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT vs. sfr1d</td>
+      <td>23.8</td>
+      <td>13.4 to 34.21</td>
+      <td>Yes</td>
+      <td>**</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>WT vs. 7A</td>
+      <td>10.16</td>
+      <td>−0.2475 to 20.57</td>
+      <td>No</td>
+      <td>ns</td>
+      <td>0.0547</td>
+    </tr>
+    <tr>
+      <td>sfr1d vs. 7A</td>
+      <td>−13.64</td>
+      <td>−24.05 to −3.234</td>
+      <td>Yes</td>
+      <td>*</td>
+      <td>0.0163</td>
+    </tr>
+  </tbody>
+</table>
 
-Test detailsMean 1Mean 2Mean diff.SE of diff.n1n2QDFWT vs. sfr1d25.141.33723.83.392339.926WT vs. 7A25.1414.9810.163.392334.246sfr1d vs. 7A1.33714.98−13.643.392335.696
+<table>
+  <thead>
+    <tr>
+      <th>Test details</th>
+      <th>Mean 1</th>
+      <th>Mean 2</th>
+      <th>Mean diff.</th>
+      <th>SE of diff.</th>
+      <th>n1</th>
+      <th>n2</th>
+      <th>Q</th>
+      <th>DF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT vs. sfr1d</td>
+      <td>25.14</td>
+      <td>1.337</td>
+      <td>23.8</td>
+      <td>3.392</td>
+      <td>3</td>
+      <td>3</td>
+      <td>9.92</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>WT vs. 7A</td>
+      <td>25.14</td>
+      <td>14.98</td>
+      <td>10.16</td>
+      <td>3.392</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4.24</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>sfr1d vs. 7A</td>
+      <td>1.337</td>
+      <td>14.98</td>
+      <td>−13.64</td>
+      <td>3.392</td>
+      <td>3</td>
+      <td>3</td>
+      <td>5.69</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 
-## Three-strand exchange assay
+#### Three-strand exchange assay
 
 Following staining with SYBR Gold (Thermo Fisher Scientific), gels were imaged using a LAS4000 mini (GE Healthcare). Densitometric analysis was performed using Multi Gauge software (version 3.2, Fujifilm) exactly as described (Haruta et al., 2006; Kurokawa et al., 2008). Background signal above the lds, NC and JM bands was subtracted from the corresponding values. The JM value was divided by 1.5 to compensate for the extra signal generated by these three-stranded DNA molecules. The sum of the values was set to 100%, and the percentage of total DNA corresponding to NC or JM was calculated. For the total yield, the percentage of DNA corresponding to NC and JM was combined. The values from three independent experiments were averaged and plotted, with the standard deviation of these averaged values depicted by error bars.
 
-## Analysis of Rad51 filament dissociation kinetics
+#### Analysis of Rad51 filament dissociation kinetics
 
 To set a consistent end-point for the anisotropy graphs (Figure 6B–E), data were portrayed for the reactions until they reached a moving average (20 data points) of 0.106, which is equivalent to the value observed for DNA only. Dissociation rate constants (koff) were calculated in KaleidaGraph using the following equation:
 
@@ -238,10 +388,10 @@ Anisotropy = (Amplitude of change in anisotropy) x e(-koff x t) + (Minimum value
 
 koff values from three independent experiments were averaged and plotted, with the standard deviation of these averaged values depicted by error bars.
 
-## ATPase assay
+#### ATPase assay
 
 Absorbance values at 620 nm (A620) were obtained using a Nanodrop spectrophotometer (Thermo Fisher Scientific). A620 at time zero was subtracted from each value and these values were converted to concentrations of inorganic phosphate through the use of a standard curve. Graphs were plotted with inorganic phosphate concentration (µM) on the y-axis and time (min) on the x-axis. The gradient of the line of best fit was divided by the concentration of Rad51 (µM) to yield kcat values. kcat values from three independent experiments were averaged and plotted, with the standard deviation of these averaged values depicted by error bars.
 
-## Electrophoretic mobility shift assay
+#### Electrophoretic mobility shift assay
 
 Following staining with SYBR Gold (Thermo Fisher Scientific), gels were imaged using a LAS4000 mini (GE Healthcare). Densitometric analysis was performed using Multi Gauge software (version 3.2, Fujifilm). Background signal in a blank lane adjacent to the area where the css or lds band would be was subtracted from the corresponding region of sample lanes. This value was then normalized by the total lane signal and expressed relative to the no protein control, which was set to 100% unbound DNA. The values from three independent experiments were averaged and plotted, with the standard deviation of these averaged values depicted by error bars.

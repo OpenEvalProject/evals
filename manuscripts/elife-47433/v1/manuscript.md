@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.47433.001 Early life adversity can affect an individual’s health, survival, and fertility for many years after the adverse experience. Whether early life adversity also imposes intergenerational effects on the exposed individual’s offspring is not well understood. We fill this gap by leveraging prospective, longitudinal data on a wild, long-lived primate. We find that juveniles whose mothers experienced early life adversity exhibit high mortality before age 4, independent of the juvenile’s own experience of early adversity. These juveniles often preceded their mothers in death by 1 to 2 years, indicating that high adversity females decline in their ability to raise offspring near the end of life. While we cannot exclude direct effects of a parent’s environment on offspring quality (e.g., inherited epigenetic changes), our results are completely consistent with a classic parental effect, in which the environment experienced by a parent affects its future phenotype and therefore its offspring’s phenotype.
+Early life adversity can affect an individual’s health, survival, and fertility for many years after the adverse experience. Whether early life adversity also imposes intergenerational effects on the exposed individual’s offspring is not well understood. We fill this gap by leveraging prospective, longitudinal data on a wild, long-lived primate. We find that juveniles whose mothers experienced early life adversity exhibit high mortality before age 4, independent of the juvenile’s own experience of early adversity. These juveniles often preceded their mothers in death by 1 to 2 years, indicating that high adversity females decline in their ability to raise offspring near the end of life. While we cannot exclude direct effects of a parent’s environment on offspring quality (e.g., inherited epigenetic changes), our results are completely consistent with a classic parental effect, in which the environment experienced by a parent affects its future phenotype and therefore its offspring’s phenotype.
 
 ## Introduction
 
@@ -37,13 +37,65 @@ To test for intergenerational effects of early adversity, we focused on early ad
 
 We considered five types of early adverse conditions (Table 1), based on previous work in our study population that demonstrated effects of these conditions on a female baboon’s own adult survival (Tung et al., 2016). These included: (i) maternal death during development (0–4 years of age), which indicates the loss of an important source of social support, physical protection, and nutrition (Altmann, 1980; Lea et al., 2014), (ii) being born to a low-ranking mother, which influences growth rates and age at maturation (Charpentier et al., 2008; Altmann and Alberts, 2003a; Altmann et al., 1988) (iii) being born into a large social group (and thus experiencing high density conditions and high levels of within-group competition) (Lea et al., 2015; Charpentier et al., 2008; Altmann and Alberts, 2003b) (iv) being born during a drought, which reduces fertility in adulthood (Lea et al., 2015; Beehner et al., 2006), and (v) experiencing the birth of a close-in-age younger sibling, which may reduce maternal investment received during development (Altmann et al., 1978). Importantly—and in contrast to research on humans (Felitti et al., 1998)—sources of early adversity are not strongly correlated in our population, which allows us to measure the independent effects of different sources of adversity (Supplementary file 1 Table S1).
 
+**Table 1.**
+ Early adverse conditions and the frequencies with which they occur in maternal and offspring generations of our dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Adverse Condition*</th>
+      <th rowspan="2">Criterion</th>
+      <th colspan="2">Frequency</th>
+    </tr>
+    <tr>
+      <th>Maternal Generation</th>
+      <th>Offspring Generation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Drought</td>
+      <td>During the first year of life, the focal individual experienced less than 200 mm of rainfall (i.e., drought conditions; Beehner et al., 2006).</td>
+      <td>0.09</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>High Social Density</td>
+      <td>The individual was born into a group with a high social density (&gt;35 adults), indicating high levels of within-group competition.</td>
+      <td>0.06</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Maternal Loss</td>
+      <td>The mother of the focal individual died within four years of the individual’s birth.</td>
+      <td>0.21</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Low Maternal Rank†</td>
+      <td>The focal individual was born to a mother with a low social rank (mother’s rank fell in the bottom quartile of the group’s dominance hierarchy, rank &lt; 0.25).</td>
+      <td>0.17</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Close-In-Age Younger Sibling‡</td>
+      <td>The focal individual had a younger sibling born to its mother within 18 months of the focal’s birth.</td>
+      <td>0.20</td>
+      <td>--</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These criteria were used in a previous analysis in our population (Tung et al., 2016), with the exception of maternal rank, which is evaluated here as a proportional measure rather than an ordinal one as in the previous analysis.†Proportional rank is the proportion of other adult females in a group that an individual’s mother outranks. The reduced frequency with which low maternal rank appears in the maternal generation is a likely a result of offspring of low-ranking mothers surviving less well (Silk et al., 2003), and therefore not surviving to appear as mothers in our dataset.‡We excluded the birth of a close-in-age younger sibling for the offspring generation to avoid including a potential reverse-causal factor in our model: the closest-in-age siblings in our dataset occur as a result of the focal offspring’s death, because female baboons (who are not seasonal reproducers) accelerate their next conception after the death of a dependent offspring._
+
 ## Results
 
 We built a mixed effects Cox proportional hazards model of offspring survival during the juvenile period that included early adversity measures present in the mother’s and the offspring’s early life as binary fixed effects. We defined the juvenile period based on survival until age 4, near the age of menarche for females and earliest dispersal for males in this population (Charpentier et al., 2008). We included data on maternal early adversity for all five adverse early life conditions, and we included data on offspring early adversity for four of the five conditions. We excluded the birth of a close-in-age younger sibling for the offspring generation to avoid including a potential reverse-causal factor in our model. Specifically, the closest-in-age siblings in our dataset tend to occur as a result of the focal offspring’s death, because female baboons (who are not seasonal reproducers) quickly conceive again if they lose a dependent offspring. In these cases, early mortality would be correlated with short interbirth intervals, but only because the offspring’s death predicts subsequent production of another infant, not because short interbirth intervals constitute a form of adversity. We included maternal and grandmaternal ID as random effects. In total, we used data collected from 1976 to 2017 to analyze the survival of 687 offspring (46.5% males) born to 169 females (mean 4.1 offspring per female, range 1–12) for whom we had data on all five adverse conditions in the mother’s early life, and all four adverse conditions in the offspring’s early life.
 
 Each adverse condition was scored as present or absent for each subject, and each one affected a minority of our study subjects (range 6–34%). Mothers and offspring had similar chances of experiencing adverse conditions, except for social density: offspring were more likely than mothers to be born into large social groups because of population growth over the 5-decade study period (Table 1). Unlike typical patterns of early adversity in human populations (Felitti et al., 1998), different sources of early life adversity in our population were not strongly correlated with each other: no adverse condition explained more than 4% of the variance in any other condition, either within or between generations, with the exception of maternal rank in the mother and offsprng’s generation (p<0.0001, r2 = 0.16) (Supplementary file 1 Table S1).
 
-## Maternal Early Life Adversity and Offspring Survival
+### Maternal Early Life Adversity and Offspring Survival
 
 Our full multivariate Cox proportional hazards model for offspring survival (Supplementary file 1 Table S2) included all nine early adverse conditions (five for mothers and four for offspring). We found strong negative effects of two characteristics of the mother’s early life environment on their offspring’s survival during the first 4 years of life: maternal loss (hazard ratio = 1.48, p=0.006) and presence of a close-in-age younger sibling (HR = 1.39, p=0.03). Following backwards model selection (performed by removing the parameters with the highest p values until only predictors with a p-value<0.05 remained), these two characteristics remained the only significant maternal early life predictors of offspring survival (Table 2, Figure 1, along with two conditions in the offspring’s early life environment: see below). Adding maternal age, offspring sex or interactions between maternal age or offspring sex and sources of maternal adversity did not improve the fit of the model (Supplementary file 1 Tables S3-S5).
 
@@ -51,13 +103,64 @@ Our full multivariate Cox proportional hazards model for offspring survival (Sup
 
 **Figure 1.:** Offspring survived relatively less well during the juvenile period if (A) their mother lost her own mother during her early life and/or (B) their mother experienced a close-in-age younger sibling. An alternative visualization of the data (C) shows an equivalent pattern when mothers, rather than offspring, are treated as the unit of analysis.
 
+**Table 2.**
+ Reduced model of the effects of maternal and offspring early adversity on offspring survival during early life (R2 = 0.07).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Generation</th>
+      <th>Parameter*</th>
+      <th>Coefficient</th>
+      <th>Hazard ratio (95% CI)</th>
+      <th>P value</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Maternal</td>
+      <td>Maternal Loss</td>
+      <td>0.37</td>
+      <td>1.44 (1.10–1.90)</td>
+      <td>0.009</td>
+      <td>Offspring survive less well if their mother experienced maternal loss during her early life.</td>
+    </tr>
+    <tr>
+      <td>Close-in-age Younger Sibling</td>
+      <td>0.35</td>
+      <td>1.42 (1.06–1.90)</td>
+      <td>0.018</td>
+      <td>Offspring survive less well if their mother had a close-in-age younger sibling during her early life.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Offspring</td>
+      <td>Maternal Loss</td>
+      <td>0.68</td>
+      <td>1.98 (1.53–2.56)</td>
+      <td>3 × 10−7</td>
+      <td>Offspring survive less well if they experienced maternal loss within four years of their birth.</td>
+    </tr>
+    <tr>
+      <td>Low Maternal Rank</td>
+      <td>0.43</td>
+      <td>1.54 (1.17–2.01)</td>
+      <td>0.002</td>
+      <td>Offspring survive less well if they were born to a low-ranking mother.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*An alternative model that considered cumulative maternal adversity was not a better or worse fit than the reduced multivariate maternal adversity model (see Supplementary file 1 Table S6. For both the model presented here and that in Supplementary file 1 Table S6, R2 = 0.07, log likelihood = −1598)._
+
 In sum, offspring whose mothers experienced early maternal loss experienced a 48% higher probability of dying throughout the first four years of life than unaffected offspring, and offspring whose mothers had a close-in-age sibling experienced a 39% higher probability of dying than unaffected offspring. This effect is striking especially considering that a median of 7.0 and 8.0 years separated the offspring’s own birth from the mother’s experience of maternal loss or birth of a close-in-age sibling, respectively. A similar pattern holds if mothers, rather than offspring, are treated as the unit of analysis: mothers who experienced early adversity have lower average offspring survival than mothers who did not (see Figure 1c).
 
 Notably, previous work in our population found that these two sources of adversity—maternal loss and the presence of a close-in-age younger sibling during early life—are also sources of mortality risk once females reach adulthood, and in fact are the two strongest predictors of adult survival among six different early-life conditions considered (Tung et al., 2016). Hence, early-life conditions that are especially adverse for females when they reach adulthood also negatively affect the survival of their offspring.
 
 Both the full and reduced models of offspring survival also included two conditions in the offspring’s early life environment as significant predictors of juvenile survival. Specifically, maternal loss experienced by the offspring and low maternal rank during the offspring’s juvenile period had strong negative effects on offspring survival (Supplementary file 1 Table S2, maternal death: Hazard Ratio = 1.95 [1.51–2.54], p=5×10−7, low maternal rank: Hazard Ratio = 1.43 [1.05–1.94], p=0.025). Thus, maternal loss in the offspring’s generation had a stronger effect on offspring survival (nearly doubling offspring mortality risk) than maternal loss in the mother’s generation. In contrast, the effect of having a low-ranking mother, which was associated with a 43% increase in offspring mortality risk, was comparable in its effect size to the two significant predictors from the maternal generation (maternal loss and close-in-age sibling for the mother, 48% and 39% increase in offspring mortality, respectively). Thus, two adverse conditions in a mother’s early life had as large or larger of an impact on her offspring’s survival than all but one adverse condition experienced by the offspring directly.
 
-## Maternal Viability and Offspring Survival
+### Maternal Viability and Offspring Survival
 
 The strong effect of the mother’s death on offspring survival prior to four years (Table 2) is unsurprising at first consideration: the most obvious explanation for this effect is that offspring depend upon their mothers, so that if the mother dies the offspring is also likely to die at the same time or die subsequently. Indeed, this sequence of events does occur in our population: of the 32 offspring that were alive and less than eight months old when their mother died, 31 (97%) died before reaching one year of age.
 
@@ -87,24 +190,24 @@ Notably, the importance of both maternal death and a close-in-age younger siblin
 
 ## Materials and methods
 
-## Study system
+### Study system
 
 The Amboseli Baboon Research Project is a long-term longitudinal study of wild baboons living in and around Amboseli National Park, Kenya. A detailed description of the study system can be found elsewhere (Alberts and Altmann, 2012). Researchers have continuously collected behavioral, environmental, and demographic data from the population since 1971. All subjects are visually recognized, and near-daily censuses allow us to precisely document the timing of demographic events, including the birth and death of study individuals. Critical to this study, we have continuously collected near-daily measures of group size, daily rainfall levels (beginning in 1976), and monthly calculations of social dominance rank (Hausfater, 1975).
 
-## Study Subjects
+### Study Subjects
 
 In our analyses of offspring survival, we included all individuals who met two criteria: (i) they lived in social groups that fed exclusively on wild foods rather than having their diet supplemented with human-sourced refuse; and (ii) we were able to evaluate each of the five sources of maternal early life adversity and four sources of offspring early life adversity outlined below. Although transmission of paternal early adversity may also occur in our population, we did not consider it here because we knew paternal identities for only a subset of our study subjects and had early life data on only a subset number of fathers. Our analysis ultimately relied on data spanning more than four decades, from 1976 to 2017.
 
-## Measuring Early Life Adversity
+### Measuring Early Life Adversity
 
 Previous work in the Amboseli population defined six binary indicators of early life adversity and considered a single index of cumulative adversity based on the sum of these indicators (Tung et al., 2016). This cumulative adversity index is a strong predictor of adult lifespan: females that experienced high levels of early life adversity (i.e., a greater number of adverse early life conditions) but still survived to adulthood lived dramatically shorter lives compared to females that did not experience early adversity (Tung et al., 2016). In addition to the five sources of early adversity discussed above, this previous analysis also considered early social connectedness (social integration versus social isolation) as a sixth source of adversity (Tung et al., 2016). Social connectedness data are missing for some mothers who were born relatively early in the long-term study. To maximize our sample size, we therefore did not include measures of social connectedness in this analysis.
 
 Our operational definitions for each source of adversity mirrored those used by Tung et al. (2016) for the remaining five conditions, except that here we employed measures of proportional rather than ordinal dominance rank (i.e., rank measured as a proportion of females that the focal individual dominates, rather than her ordinal rank number). We also built an index of cumulative maternal adversity, but because that model did not fit the data better than our reduced multivariate model (in contrast to the results for adult female survival; Tung et al., 2016) we report the multivariate model in the main text. The alternative model based on cumulative maternal adversity is presented in Supplementary file 1 Table S6.
 
-## Statistical Analysis
+### Statistical Analysis
 
 We built a mixed effects Cox proportional hazards model of offspring survival during the first four years of life using the R package coxme (Therneau, 2012; R Development Core Team, 2018). The response variable in our model was the age at which offspring death occurred (if at all) during the first 4 years of life. We considered offspring survival to age four as the key survival period of interest because it roughly corresponds to the end of the juvenile period for baboons (Charpentier et al., 2008). Offspring that survived beyond age four were treated as censored individuals who survived until at least age 4. In our models of offspring survival as a function of maternal viability (Figure 2), we altered the first model to predict survival during the first two years of life as a function of maternal survival during years 2–4 after offspring birth (see Supplementary file 1 Table S7 for model syntax).
 
-## Data availability
+### Data availability
 
 Datasets presented in this article can be downloaded from Dryad using the following Digital object identifier (DOI): 10.5061/dryad.4hc8k1r (Zipple et al., 2019).

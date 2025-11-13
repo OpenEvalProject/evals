@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00372qc85 Laboratory of Dynamics of Macromolecular Assembly, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health Bethesda United States
-2. https://ror.org/01cwqze88 Biophysics Core Facility, National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States
-3. https://ror.org/01cwqze88 Advanced Imaging and Microscopy Resource, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health Bethesda United States
+1. Laboratory of Dynamics of Macromolecular Assembly, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health Bethesda United States ([ROR:00372qc85](https://ror.org/00372qc85))
+2. Biophysics Core Facility, National Heart, Lung, and Blood Institute, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Advanced Imaging and Microscopy Resource, National Institute of Biomedical Imaging and Bioengineering, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ The large number of structural and non-structural N-protein functions poses the 
 
 ## Results
 
-## Distribution of physicochemical properties across the SARS-CoV-2 mutant spectrum
+### Distribution of physicochemical properties across the SARS-CoV-2 mutant spectrum
 
 SARS-CoV-2 sequence data were downloaded from Nextstrain (Hadfield et al., 2018) in January 2023 and 5.06 million high-quality sequences were selected for analysis. The N-protein amino acid sequences exhibit ≈43 million instances of mutations distributed across ≈92% of its residues. We have previously characterized this dataset with regard to the amino acid mutational landscape of N-protein, and found mutation frequencies that are strongly dependent on position and largely time-invariant, except for the defining mutations arising in variants of concern, the latter comprising ≈36% Delta variant and ≈49% Omicron variant sequences (Schuck and Zhao, 2023). A histogram of the number of different amino acids mutations that are found at each residue is shown in Figure 1B. It may be discerned that sequence plasticity is highest in the IDRs, with an average of 5.2 different possible amino acid mutations at each residue compared to 2.9 different mutations on average in the folded domains.
 
@@ -69,9 +69,100 @@ It is well established that intracellular N-protein can be heavily phosphorylate
 
 It is noteworthy that the defining mutations of the Delta and Omicron variant (denoted by dotted red and dashed green horizontal lines, respectively) do impact the hydrophobicity, polarity, and charges in all of the N-protein regions. However, their values do not stand out from the clouds of values across the mutant spectrum, which include more extreme values throughout.
 
-## Physicochemical properties of related coronaviruses
+### Physicochemical properties of related coronaviruses
 
 The distinct physicochemical properties of the linker and C-arm sub-segments persist throughout the mutant spectrum, which suggests these constitute biophysical constraints for functional SARS-CoV-2 N-protein. Therefore, we asked whether this holds true for N-protein from related coronaviruses such as SARS-CoV-1 (P59595.1), Middle East respiratory syndrome coronavirus (MERS, YP_009047211.1), murine hepatitis virus (MHV, NP_045302.1), human coronavirus NL63 (Q6Q1R8.1), and the 229E-related bat coronavirus APD51511.1. To this end, we used alignment of their consensus sequences to SARS-CoV-2 N-protein (shown previously; Zhao et al., 2022) to subdivide all N-proteins into equivalent regions (Supplementary file 1). As shown in Table 1, the resulting peptides present high sequence identity scores for the FL protein and the folded domains, but, with exception of SARS-CoV-1, have little to no sequence identity in the IDRs. This observation is consistent with the high mutation frequency of the IDRs.
+
+**Table 1.**
+ Sequence alignment score of segments from related coronaviruses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Virus</th>
+      <th>Full-length</th>
+      <th>N-arm</th>
+      <th>NTD</th>
+      <th>Linker</th>
+      <th>SR-rich</th>
+      <th>L-rich</th>
+      <th>CTD</th>
+      <th>C-arm</th>
+      <th>C-arm1</th>
+      <th>N3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SARS-CoV-1</td>
+      <td>672*</td>
+      <td>68.6</td>
+      <td>263</td>
+      <td>41.6</td>
+      <td>44.7</td>
+      <td>30</td>
+      <td>231</td>
+      <td>60.5</td>
+      <td>75.3</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>MERS</td>
+      <td>276</td>
+      <td>13.9</td>
+      <td>157</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>112</td>
+      <td>14.6</td>
+      <td>23.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MHV</td>
+      <td>192</td>
+      <td></td>
+      <td>114</td>
+      <td>14.6</td>
+      <td></td>
+      <td></td>
+      <td>80.5</td>
+      <td>14.6</td>
+      <td>13.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NL63</td>
+      <td>67.4</td>
+      <td></td>
+      <td>58.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>61.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APD51511.1</td>
+      <td>61.2</td>
+      <td></td>
+      <td>44.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>44.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values are BLASTp total alignment scores._
 
 The resulting peptides were subjected to the same analyses of physicochemical properties described above for SARS-CoV-2 N-protein. The results are displayed in Figures 2 and 3 as symbols. With regard to hydrophobicity (Figure 2B), the FL proteins and folded domains show values within the range of the SARS-CoV-2 mutant spectrum. By contrast, more significant spread is observed in most IDR peptides. Nonetheless, the pattern observed for SARS-CoV-2 of hydrophobicity and polarity values of IDRs relative to those of the folded domains, and the pattern comparing subdivisions of the IDRs is closely mirrored for SARS-CoV-1, MERS, and MHV (red symbols). Similar patterns, although with some divergence, are observed for the NL63 and APD51511.1 IDRs (gray pentagrams and diamonds, respectively) which have the least sequence identity to SARS-CoV-2.
 
@@ -81,17 +172,122 @@ Charge properties of related coronaviruses follow a similar pattern of SARS-CoV-
 
 This suggests that the charge properties and phosphorylation, like polarity and hydrophobicity, of the equivalent IDR sub-regions are functional biophysical constraints maintained across related coronaviruses despite little sequence conservation.
 
-## Biophysical properties of select mutants
+### Biophysical properties of select mutants
 
 Unfortunately, it is impossible to express and experimentally characterize biophysical properties of all mutant species. Therefore, to assess the range of phenotype variation, we examine only six exemplary protein constructs related to variants of concern in comparison with the Wuhan-Hu-1 reference molecule, Nref (Table 2): (1) N:R203K/G204R with a double mutation in the disordered linker that arose early in the Alpha variant (B.1.1.7), but occurs also in the Gamma variant (P.1), and all Omicron variants (BA.1 through BA.5). It was found to modulate phosphorylation of cytosolic N-protein, enhance assembly in a VLP assay, and increase viral fitness (Johnson et al., 2022; Javed et al., 2023; Syed et al., 2022); (2) N:P13L/Δ31–33 carrying the mutation P13L and the deletion Δ31–33 that are part of the defining mutations of all Omicron variants, with P13L epidemiologically ranked as the most statistically significant N-protein mutation linked to increased fitness (Obermeyer et al., 2022; Oulas et al., 2021); (3) No is a combination of N:R203K/G204R and N:P13L/Δ31–33, carrying thereby the complete set of defining mutations of the BA.1 Omicron variant; (4) N:G215C with a key mutation in the disordered linker that was associated with the rise of the 21J clade of the Delta variant, and found to modulate a transient helix in the L-rich linker region (Zhao et al., 2022). In a reverse genetics system, N:G215C was recently reported to cause significantly increased viral growth and altered virion morphology (Kubinski et al., 2024). (5) N:D63G containing another defining mutation of the Delta variant, located in the NTD and epidemiologically ranked above G215C in increasing SARS-CoV-2 fitness (Obermeyer et al., 2022); and (6) Nδ carrying all four defining mutations D63G, R203M, G215C, D377Y of the Delta variant. As detailed in Table 2, all of these species are found in the genomic database, and in combination with additional mutations occur in a high fraction of all genomes (exceeding the frequency of the ancestral Wuhan-Hu-1 N-protein by an order of magnitude). However, with the exception of N:G215C, none of the mutants has been studied in detail with regard to their macromolecular biophysical properties.
 
+**Table 2.**
+ Overview of N-protein species compared in biophysical experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Designation</th>
+      <th>N-protein mutations</th>
+      <th>n exclusive instances*</th>
+      <th>Occur in # of distinct sequences†</th>
+      <th>Occurs in % of all genomes ‡</th>
+      <th>In set of defining VOC mutations §</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N:R203K/G204R</td>
+      <td>R203K, G204R</td>
+      <td>53,282</td>
+      <td>17,552</td>
+      <td>57%</td>
+      <td>α, γ, ο</td>
+    </tr>
+    <tr>
+      <td>N:P13L/Δ31–33</td>
+      <td>P13L, Δ31–33</td>
+      <td>9548</td>
+      <td>12,503</td>
+      <td>47%</td>
+      <td>ο</td>
+    </tr>
+    <tr>
+      <td>Nο</td>
+      <td>P13L, Δ31–33, R203K, G204R</td>
+      <td>791,613</td>
+      <td>10,238</td>
+      <td>46%</td>
+      <td>ο (all BA.1)¶</td>
+    </tr>
+    <tr>
+      <td>Nδ</td>
+      <td>D63G, R203M, G215C, D377Y</td>
+      <td>&gt;1.2 × 106</td>
+      <td>9397</td>
+      <td>33%</td>
+      <td>δ (all 21J)¶</td>
+    </tr>
+    <tr>
+      <td>N:G215C</td>
+      <td>G215C</td>
+      <td>60</td>
+      <td>10,562</td>
+      <td>34%</td>
+      <td>δ</td>
+    </tr>
+    <tr>
+      <td>N:D63G</td>
+      <td>D63G</td>
+      <td>182</td>
+      <td>12,443</td>
+      <td>36%</td>
+      <td>δ</td>
+    </tr>
+    <tr>
+      <td>Nref</td>
+      <td>none</td>
+      <td>38,929</td>
+      <td>NA</td>
+      <td>3.6%</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Number of genomes where the indicated mutations are the only N mutations.†Number of unique N-protein sequences in which indicated mutations are present, alongside other mutations.‡Percentage of all sequenced genomes carrying the specific mutation.§Variants of concern for which indicated mutations are part (or all) of the defining set of N-m.¶These sets of mutations comprise all defining N-protein mutations of this variant. Literature on definition or biophysical characterization of the mutant._
+
 All mutations considered here are within the IDRs, except for N:D63G, a mutation characteristic of the Delta variant. The presence of the N:D63G mutation in the NTD is highlighted in the shift of the intrinsic fluorescence quantum yield of this mutant in comparison to Nref (Figure 4A). This may be attributed to changes in the local environment of tryptophan W108, which is partially surface exposed and structurally near the aspartic acid D63, as indicated by AlphaFold structural predictions (Figure 4—figure supplement 1). D63G ablates a negative surface charge near the NA binding site of the NTD, which poses the question whether this mutation alters NA binding affinity. We assessed this using sedimentation velocity analytical ultracentrifugation (SV-AUC) with the oligonucleotide T10 as an NA probe. T10 is comparable in length to the NTD binding canyon for NA but does not permit multi-valent binding (Dinesh et al., 2020; Zhao et al., 2021). No significant differences in the intrinsic binding affinity to T10 was detected between N:D63G, other mutants, and the ancestral species (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig4-v1.jpg)
+
+**Figure 4.:** (A) Intrinsic fluorescence spectrum of N:D63G in comparison with Nref, showing spectra in triplicate. (B) Differential scanning fluorometry, with the temperature of maximum fluorescence ratio derivative (Ti-values, with an estimated precision 0.3°C). (C) Circular dichroism spectra of all N-protein species (spectra with error bars are shown in Figure 4—figure supplement 3).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Structures are predicted using ColabFold for N:D63G (left) and the ancestral protein (right).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** T10 can occupy the NA binding grove of the NTD of N-protein, but does not permit multi-valent binding. Titration series of N-protein with T10 allows separation of concentration-dependent populations of free and bound/co-migrating T10 in the mixtures. This provides the basis for the determination of equilibrium binding constants through non-linear regression of the isotherm of signal weighted-average sedimentation coefficients using a two-site binding model of T10 to N-protein dimers. Best-fit KD-values and 95% confidence intervals are 1.1 [0.8–1.6] µM for Nref, 2.8 [1.6–4.9] µM for No, 2.4 [1.1–5.0] µM for N:D63G, and 1.3 [0.9–1.9] µM for N:R203K/G204R, respectively. SV-AUC experiments were carried out in buffer high-salt (HS). Similarly, no significant difference was measured in binding affinity between Nref and N:D63G was observed in buffer low-salt (LS).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The data from Figure 4C are reproduced and plotted in comparison with Nref. Standard deviations from three acquired spectra are depicted as shaded bands.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Protein preparations were dialyzed in either HS buffer consisting of 20 mM HEPES, 150 mM NaCl, pH 7.5, or LS buffer consisting of 10.1 mM Na2PO4, 1.8 mM KH2PO4, 2.7 mM KCl, 10 mM NaCl, pH 7.4. DSF experiments show no significant shift in Ti for the same protein species in LS or HS buffer.
 
 A parameter of great interest from an evolutionary perspective is the thermal stability of the folded domains. This property can be assessed experimentally by differential scanning fluorometry (DSF), which reports on temperature-driven changes in the environment of aromatic amino acids due to changes in solvent exposure (Eftink, 2000). Such changes may occur during unfolding or as a result of other conformational changes. In the case of N-protein, conveniently all tryptophan and tyrosine residues of N-protein are located in the NTD and CTD, such that changes in the intrinsic fluorescence report exclusively on changes in the state of the folded domains. As shown in Figure 4B, a major transition is observed with an inflection point at Ti ≈ 49°C. Compared to the reproducibility of transition temperatures of ±0.3°C, significant shifts from the ancestral N-protein can be discerned: While Omicron mutations No, N:R203K/G204R, and N:P13L/Δ31–33 are neutral, those occurring in the Delta variant (N:D63G, N:G215C, and Nδ) are destabilizing, i.e., they lower the transition temperature. Interestingly, apparent destabilization of the folded domains occurs in N:G215C despite the absence of mutations in the folded domains – 215C being located in the middle of the linker IDR. This nonlocal mutation effect points to altered intra-molecular interactions between IDRs and the folded domains, and/or changes in contacts between folded domains mediated through an altered oligomeric state. (This is corroborated in non-natural point mutants N:L222P and N:L222P/R226P which abrogate linker helix oligomerization [Zhao et al., 2023] and exhibit Ti-values of ≈51°C.) Furthermore, Figure 4B shows additional transitions occur at higher temperatures broadly in the range of 60–70°C. While their origin is unclear, this signal may accompany the formation of higher-order structure. It is noteworthy that N:G215C is also distinctly different in this feature.
 
 Secondary structure information from the entire molecule including the IDRs can be extracted from circular dichroism (CD) spectra. As may be observed from Figure 4C (and in more detail in Figure 4—figure supplement 3), significant variation occurs both in the magnitude of the negative ellipticity at ≈200 nm, which mainly reflects disordered residues, and in the magnitude of the negative ellipticity at ≈220 nm, which reports on helical structure. Compared to the ancestral Nref, significantly less disorder and greater helicity is observed for N:G215C (and to lesser extent also for Nδ), whereas slightly more disorder is indicated for N:R203K/G204R. Little difference to the ancestral molecule is observed for No, N:P13L/Δ31–33, and N:D63G. The absence of significant changes for N:D63G is consistent with this mutation having only a subtle, if any, impact on the NTD conformation. For N:G215C, increased helicity can be attributed to the stabilization of transient helices in the leucine-rich region of the central linker IDR, as shown previously (Zhao et al., 2023; Zhao et al., 2022).
 
 Tertiary and quaternary structure can be assessed by SV-AUC (Figure 5A). As reported previously, the ancestral N-protein at micromolar concentrations in NA-free form is a tightly linked dimer sedimenting at ≈4 S, without significant populations of higher oligomers (Forsythe et al., 2021; Ribeiro-Filho et al., 2022; Tarczewska et al., 2021; Zhao et al., 2022; Zhao et al., 2021). The same behavior is observed for N:D63G, No, N:R203K/G204R, as well as N:P13L/Δ31–33 at low micromolar concentrations (Figure 5A). By contrast, the G215C mutation promotes the formation of higher oligomers via stabilization of coiled-coil interactions of transient helices in the L-rich linker region (Zhao et al., 2023; Zhao et al., 2022). This is consistent with the enhanced helical content of this mutant (Figure 4C). Oligomerization beyond the dimeric Nref is also observed for Nδ, which incorporates the 215C mutation, but less than for N:G215C. This is consistent with the intermediate helical content of Nδ observed in CD. Of the three additional mutations of Nδ relative to N:G215C, we speculate that D63G does not impact dimerization (as in N:D63G, Figure 5A), and that therefore either the distant D377Y and/or R203M might cause this reduction of helicity and oligomerization relative to N:G215C, noting that R203M is proximal to the L-rich region (215–235) reshaped by 215C (Zhao et al., 2023).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sedimentation coefficient distributions c(s) from sedimentation velocity analytical ultracentrifugation (SV-AUC) experiments show ≈4 S dimers and higher oligomers. Data for N:G215C and Nδ are reproduced from Zhao et al., 2022. (B) Temperature-dependent particle formation reported as average Stokes radius measured by dynamic light scattering.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Protein preparations were dialyzed in either HS buffer consisting of 20 mM HEPES, 150 mM NaCl, pH 7.5, or LS buffer consisting of 10.1 mM Na2PO4, 1.8 mM KH2PO4, 2.7 mM KCl, 10 mM NaCl, pH 7.4. (A) Differential scanning fluorometry (DSF) experiments show no significant shift in Ti for the same protein species in LS or HS buffer. (B) Sedimentation velocity analytical ultracentrifugation (SV-AUC) exhibit sedimentation coefficient distributions with peak s-values increased by ≈5% in LS buffer relative to HS buffer. This apparent change is negligible compared to the ≈60–90% increase in sedimentation coefficients from altered oligomeric states observed for N:G215C and Nδ (Figure 5A).
 
 As outlined in the Introduction, N-protein has a propensity to form large particles and undergo LLPS (Carlson et al., 2020; Cascarina and Ross, 2022; Cubuk et al., 2021; Iserman et al., 2020; Jack et al., 2021; Lu et al., 2021; Perdikari et al., 2020; Savastano et al., 2020), which can be promoted at higher temperatures (Iserman et al., 2020; Zhao et al., 2021). Figure 5B shows the z-average particle size measured by dynamic light scattering (DLS) as a function of temperature. Particle formation is governed by a combination of processes, including the hydrophobicity-driven stabilization of the linker helix and its self-association, ultra-weak interactions across the entire protein contributing to LLPS, and unfolding and aggregation processes. This complicates a comparison of the temperature transitions observed in DSF (Figure 4B) and DLS (Figure 5B) (and a further technical difficulty may be potential differences in temporal lag of conformational rearrangements versus particle assembly kinetics).
 
@@ -101,7 +297,27 @@ The opposite effect, strong inhibition of particle formation, is observed for th
 
 We were curious whether IDR mutations might alter particle formation through modulation of existing or introduction of new protein-protein interfaces. We focused on Omicron mutations as these are obligatory in all currently circulating strains, and specifically on N-arm mutations, which have recently been implicated in altered intramolecular interactions with NA-occupied NTD (Cubuk et al., 2023). Even though SV-AUC showed no indication of self-association of N:P13L/Δ31–33 at low micromolar concentrations, weak interactions with Kd > mM would not be detectable under these conditions yet could be highly relevant in the context of multi-valent complexes (Zhao et al., 2024). Following the roadmap used previously for the study of the weak self-association of the leucine-rich linker IDR (Zhao et al., 2023), we restricted the protein to the N-arm peptide such that it can be studied at much higher concentrations. To this end, we compared solution behavior of the N-arm constructs Nref:(1–43) with the Omicron N-arm N:P13L/Δ31–33(1–43), as well as the N-arm with individual mutation N:P13L(1–43) and deletion N:Δ31–33(1–43). Unexpectedly, solutions of N:P13L/Δ31–33(1–43) exhibited elevated viscosity after storage for several days at 4°C in 20 mM HEPES, 150 mM NaCl, pH 7.5. Since this is a tell-tale sign of weak protein interactions, we carried out ColabFold structural predictions. Even though ColabFold is trained to predict folded structures, it has been found to be frequently successful in predicting transient folds in IDRs (Alderson et al., 2023; Zhao et al., 2023). Indeed, it predicts that replacement of proline at position 13 by leucine allows for formation of parallel sheets symmetrically arranged in higher-order N-arm oligomers (Figure 6—figure supplement 1). We proceeded to test oligomerization of the N-arm constructs experimentally in hydrodynamic studies. Figure 6A shows autocorrelation functions of all peptides. While the reference N-arm Nref:(1–43) and the construct carrying the Δ31–33 deletion behave as expected for non-interacting peptides of this size, the N-arm constructs carrying the P13L mutation (in particular, the Omicron N-arm N:P13L/Δ31–33(1–43)) exhibit very large correlation times. This may be indicative of either formation of large particles or the presence of weak interaction networks as in gels. Similarly, in SV-AUC (Figure 6B) the ancestral reference and the Δ31–33 deletion mutant sediment as expected for non-interacting N-arm peptides (Zhao et al., 2023), whereas rapidly sedimenting, anomalously shaped boundaries with ≈100-fold larger sedimentation coefficient were observed for the Omicron N-arm and the construct carrying solely the P13L mutation. This unequivocally demonstrates the introduction of new protein self-association interfaces from the P13L mutation. They are weak and not apparent in studies of the full-length protein N:P13L/Δ31–33 at low micromolar concentrations, but oligomers can be populated at the ≈100-fold higher achievable concentrations of the peptides, which mirrors the concentration range for in vitro observation of interactions of the leucine-rich linker helices (Zhao et al., 2023).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig6-v1.jpg)
+
+**Figure 6.:** (A) Autocorrelation functions from dynamic light scattering (DLS) (A) and sedimentation coefficient distributions from sedimentation velocity analytical ultracentrifugation (SV-AUC) (B) for the ancestral reference Nref:(1–43) (black), N:Δ31–33(1–43) (blue), N:P13L(1–43) (cyan), and N:P13L/Δ31–33(1–43) (identical to the Omicron N-arm, magenta). All peptide concentrations are 400 µM, except for Nref:(1–43) in the SV-AUC experiment which is 275 µM, reproduced from previously reported data (Zhao et al., 2023).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Best ColabFold prediction of eight Omicron N-arm (1:41) peptides with P13L and Δ31–33 mutations. For one chain shown in magenta, atoms of 13L are depicted and labeled, and contacts of this chain within 3.5 Å are color-coded by confidence. (B) Top view of (A). (C) Predicted alignment error (PAE) map showing symmetry and confidence of predicted interactions. (D) Best analogous prediction of ancestral N-arm interactions, highlighting the absence of order.
+
 The ability for N-protein to undergo LLPS is thought to be crucial for several functions including interactions with stress granules, RNP assembly, and interactions with viral M-protein (Carlson et al., 2022; Cascarina and Ross, 2022; Iserman et al., 2020; Lu et al., 2021; Savastano et al., 2020). Weak protein-protein interactions and cluster formation such as shown in Figures 5 and 6 can be coupled to LLPS, or alternatively LLPS may occur independent of clusters following Flory-Huggins theory (Kar et al., 2022). Therefore, we examined the impact of mutations on the propensity for LLPS. Images of phase-separated condensates are shown in Figure 7, and corresponding histograms of droplet numbers and areas are shown in Figure 7—figure supplement 1. As may be discerned from the top left panel of Figure 7, Nref readily forms droplets in the presence of T40 oligonucleotides. Under the same conditions, N:R203K/G204R (bottom left) does not display droplets, but forms few large particles with fibrillar morphology. In stark contrast, N:P13L/Δ31–33 (bottom center) readily forms droplets that appear to be more rapidly merging and growing than those of Nref (Figure 7—figure supplement 2). The combination of these mutations in No exhibits an intermediate propensity for LLPS with droplets in a dispersion of sizes. The most polydisperse distribution with largest droplets were observed for N:G215C (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig7-v1.jpg)
+
+**Figure 7.:** Optical microscopy images were taken of 10 μM N-protein with 5 μM T40 (except Nδ, which is 4 μM N-protein with 2 μM T40) in low-salt (LS) buffer after incubation for 15 min at room temperature. For N:P13L/Δ31–33, a second image was taken at the 21 min time point highlighting the growth of condensed phases. All scale bars are 10 µm. Histograms of particle areas are in Figure 7—figure supplement 1, and a comparison of two time points for Nref, N:R203K/G204R and N:P13L/Δ31–33, is provided in Figure 7—figure supplement 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** For each N-protein species, images were segmented to identify droplets. The values indicated are particle numbers, the mean area, the standard deviation of the area, and the probability that the sample is from the same distribution as Nref based on the two-sample Kolmogorov-Smirnov test.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/94836/elife-94836-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Similar to Figure 7, images of LLPS were recorded for Nref, N:R203K/G204R, and N:P13L/Δ31–33 at two time points for the same sample. The upper plot shows droplet numbers. The lower plot shows mean and standard deviations of the droplet area. Images and histograms for the early time points and the later time point of N:P13L/Δ31–33 are shown in Figure 7 and Figure 7—figure supplement 1, respectively.
 
 ## Discussion
 
@@ -119,7 +335,7 @@ In summary, the importance of IDRs in viral evolution was recognized previously 
 
 ## Materials and methods
 
-## Mutational landscape, sequence alignment, and prediction of physicochemical properties
+### Mutational landscape, sequence alignment, and prediction of physicochemical properties
 
 The Wuhan-Hu-1 isolate (GenBank QHD43423) (Wu et al., 2020) was used as the ancestral reference. Sequence data were based on consensus sequences of SARS-CoV-2 isolates submitted to the GISAID as previously described (Schuck and Zhao, 2023; Zhao et al., 2022). Briefly, sequence data were downloaded on January 20, 2023, from Nextstrain (Hadfield et al., 2018) and 5.06 million high-quality preprocessed sequences were included in the analysis. 746 sequences exhibiting insertions in the N-protein were omitted, as well as those with more than 10 deletions in N-protein and those represented in fewer than 10 genome instances.
 
@@ -127,17 +343,17 @@ The resulting sequence database was parsed for different unique sequences for N-
 
 Alignment of SARS and related coronavirus sequences (SARS-CoV-1 P59595.1, MERS YP_009047211.1, MHV NP_045302.1, human coronavirus NL63 Q6Q1R8.1, and 229E-related bat coronavirus APD51511.1) was carried out with COBALT at NLM (Papadopoulos and Agarwala, 2007), as shown in Zhao et al., 2022. This alignment was used to dissect related viruses into regions corresponding to the SARS-CoV-2 regions (N-arm, NTD, linker, SR-rich, L-rich, CTD, Carm, Carm1, N3) (Supplementary file 1). The resulting segments of the related viruses were subjected to analysis of physicochemical properties as described above. Sequence similarity of the corresponding regions relative to the SARS-CoV-2 regions was calculated using BLAST blastp suite (Altschul et al., 1997), using an expectation threshold of 0.9, word size 2, and BLOSUM63 scoring matrix.
 
-## Structure prediction
+### Structure prediction
 
 Structural predictions for NTD and N-arm were carried out using ColabFold (Mirdita et al., 2022) and graphics were generated using ChimeraX (Pettersen et al., 2021).
 
-## Proteins, peptides, and oligonucleotides
+### Proteins, peptides, and oligonucleotides
 
 N:D63G and N:G215C were purchased from EXONBIO (catalog# 19CoV-N170 and 19CoV-N180, San Diego, CA, USA), while Nref, N:R203K/G204R, N:P13L/Δ31–33, No, and Nδ were expressed in-house as described previously (Zhao et al., 2023; Zhao et al., 2022). Briefly, the full-length protein with an N-terminal Tobacco etch virus (TEV) cleavage site and 6xHis tag was cloned into the pET-29a(+) expression vector and transformed into One Shot BL21(DE3)pLysS Escherichia coli (Thermo Fisher Scientific, Carlsbad, CA, USA). After cell lysis, the protein was bound to a Ni-NTA column, and unfolded and refolded to remove residual protein-bound bacterial NA (Carlson et al., 2020). After elution the 6xHis tag was cleaved and the protein purified by size exclusion chromatography. Greater than 95% purity of the proteins was confirmed by SDS-PAGE, and the ratio of absorbance at 260 nm and 280 nm of ~0.50–0.55 confirmed absence of NA. The latter is important to eliminate higher-order N-protein oligomers induced by NA binding (Carlson et al., 2020; Tarczewska et al., 2021; Zhao et al., 2021). For a subset of mutants, the protein sequence and mass were tested and confirmed by LC-MS/MS and LC-MS, respectively. Biophysical experiments were preceded by dialysis in either high-salt (HS) buffer consisting of 20 mM HEPES, 150 mM NaCl, pH 7.5, or low-salt (LS) buffer consisting of 10.1 mM Na2PO4, 1.8 mM KH2PO4, 2.7 mM KCl, 10 mM NaCl, pH 7.4 as indicated below.
 
 The oligonucleotide T40 was purchased from Integrated DNA Technologies (Skokie, IL, USA), as purified by HPLC and lyophilized. N-arm peptides were purchased from ABI Scientific (Sterling, VA, USA), as purified by HPLC, examined by MALDI for purity and identity, and lyophilized.
 
-## Spectroscopy
+### Spectroscopy
 
 CD spectra were acquired in a Chirascan Q100 (Applied Photophysics, UK), using cuvettes of 1 mm pathlength, and data acquisition with 1 nm steps and 1 s integration time. Results are averages of three acquisitions, corrected for buffer background. Protein concentration was 3 µM in buffer LS, except No in buffer HS.
 
@@ -145,7 +361,7 @@ For the acquisition of fluorescence spectra, protein samples at 1 µM were loade
 
 DSF was carried out in a Tycho instrument (Nanotemper, Germany) as previously described (Zhao et al., 2021). Briefly, 10 µL samples were aspirated in capillaries (TY-C001, Nanotemper, Germany), and intrinsic fluorescence was measured at 350 nm and 330 nm while the temperature was ramped from 35°C to 95°C at a rate of 30°C/min. The first derivative of the intensity ratio was calculated as a function of temperature. DSF experiments were carried out at protein concentrations of 2 µM in buffer LS, except for N:R203K/G204R which was measured in buffer HS. As a buffer control, the difference in Ti for Nref in LS and HS buffer was measured and found to be within error of data acquisition (Figure 4—figure supplement 4).
 
-## Hydrodynamic techniques
+### Hydrodynamic techniques
 
 SV-AUC experiments were carried out in a ProteomeLab XL-I analytical ultracentrifuge (Beckman Coulter, Indianapolis, IN, USA) in standard configurations (Schuck et al., 2015), with instruments subjected to routine calibrations (Ghirlando et al., 2013). Briefly, 2 µM protein samples were filled in cell assemblies composed of charcoal-filled Epon double-sector centerpieces with sapphire windows, inserted in an 8-hole AN-50 TI rotor and temperature equilibrated. After acceleration to 50,000 rpm data acquisition commenced using the absorbance optical detector at 280 nm and the interference optical detector. Data were analyzed in SEDFIT (https://sedfitsedphat.nibib.nih.gov/software/default.aspx) in terms of a sedimentation coefficient distribution c(s) (Schuck, 2016). Proteins for self-association studies were in buffer HS, except Nref, Nδ, and N:G215C were in LS, the latter causing an ≈5% increase in s-value (Figure 5—figure supplement 1). Typical accuracy of c(s) peaks are on the order of ≈1% for peak s-values and ≈1–2% for relative peak areas (Zhao et al., 2015).
 
@@ -155,12 +371,12 @@ Temperature-dependent DLS autocorrelation data of N-protein species were collect
 
 DLS studies of N-arm peptides were carried out in a Prometheus Panta (Nanotemper, Germany) instrument at 20°C. The samples were loaded into a capillary (Nanotemper PR-AC002) and ACFs were acquired using the 405 nm laser at the detection angle of 140°.
 
-## Optical microscopy
+### Optical microscopy
 
 Optical imaging of in vitro phase-separated condensates was carried out as described previously (Zhao et al., 2021). Briefly, reaction mixtures of N-protein and T40 in buffer LS were combined and mixed immediately prior to imaging. 3µL samples were transferred onto a glass-bottom 35 mm dish (catalog# Part No: P35G-1.5–20-C, MatTek) for imaging at room temperature. Images were acquired on a Nikon Ti-E microscope equipped with a 100× 1.49 NA oil objective lens (LIDA light engine, Lumencor, Beaverton, OR, USA) and recorded with a Prime 95B camera (Teledyne Photometrics) with a pixel size of 110 nm. Images were background-subtracted and contrast-enhanced using MATLAB (Mathworks, Natick, MA, USA).
 
 The segmentation of different shapes in the brightfield images was performed with deep learning methods. Specifically, a pre-trained model (versatile) from StarDist Napari Plugin (Schmidt et al., 2018) was employed to segment the shapes with the following parameters: Input image scaling: 0.5, probability threshold: 0.2, overlap threshold: 0.2. The labels were imported into Fiji and LABKIT (Arzt et al., 2022) for manual verification and correction. For each segmented object, the area was measured in MATLAB.
 
-## Materials availability
+### Materials availability
 
 Plasmids for mutant N-proteins generated in this study are available from the author upon request.

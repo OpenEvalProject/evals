@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.26423.001 NK cell education is the process through which chronic engagement of inhibitory NK cell receptors by self MHC-I molecules preserves cellular responsiveness. The molecular mechanisms responsible for NK cell education remain unclear. Here, we show that mouse NK cell education is associated with a higher basal activity of the mTOR/Akt pathway, commensurate to the number of educating receptors. This higher activity was dependent on the SHP-1 phosphatase and essential for the improved responsiveness of reactive NK cells. Upon stimulation, the mTOR/Akt pathway amplified signaling through activating NK cell receptors by enhancing calcium flux and LFA-1 integrin activation. Pharmacological inhibition of mTOR resulted in a proportional decrease in NK cell reactivity. Reciprocally, acute cytokine stimulation restored reactivity of hyporesponsive NK cells through mTOR activation. These results demonstrate that mTOR acts as a molecular rheostat of NK cell reactivity controlled by educating receptors and uncover how cytokine stimulation overcomes NK cell education.
+NK cell education is the process through which chronic engagement of inhibitory NK cell receptors by self MHC-I molecules preserves cellular responsiveness. The molecular mechanisms responsible for NK cell education remain unclear. Here, we show that mouse NK cell education is associated with a higher basal activity of the mTOR/Akt pathway, commensurate to the number of educating receptors. This higher activity was dependent on the SHP-1 phosphatase and essential for the improved responsiveness of reactive NK cells. Upon stimulation, the mTOR/Akt pathway amplified signaling through activating NK cell receptors by enhancing calcium flux and LFA-1 integrin activation. Pharmacological inhibition of mTOR resulted in a proportional decrease in NK cell reactivity. Reciprocally, acute cytokine stimulation restored reactivity of hyporesponsive NK cells through mTOR activation. These results demonstrate that mTOR acts as a molecular rheostat of NK cell reactivity controlled by educating receptors and uncover how cytokine stimulation overcomes NK cell education.
 
 ## Introduction
 
@@ -50,9 +50,120 @@ Previous studies have shown that reactive NK cells are characterized by stronger
 
 ## Results
 
-## Reactive NK cells display higher activity of the Akt/mTOR pathway at steady-state and following acute NKar engagement
+### Reactive NK cells display higher activity of the Akt/mTOR pathway at steady-state and following acute NKar engagement
 
 Seeking to identify molecular pathways involved in NK cell education, we systematically screened the basal levels of 20 phosphorylations on 16 proteins involved in ITAM signaling between reactive and hyporesponsive NK cells by flow cytometry (complete list in Table 1). This flow-cytometry based approach allowed us to combine the advantages of single-cell analysis and comparison of equivalent cell subset thanks to electronic gating. In C57BL/6 mice, the main educating NKirs are NKG2A and Ly49C, defining four subsets of which the double-negative display the lowest, the double-positive the highest and the single positives an intermediate responsiveness (Joncker et al., 2009). We also analyzed B2m−/− NK cells that are uniformly unreactive. Most of these phosphorylations are developmentally regulated (Figure 1—figure supplement 1), thus, to exclude any developmental bias, we compared similar developmental stages defined by CD11b and CD27 (Figure 1—figure supplement 2). Strikingly, all analyzed phosphorylations in the Akt/mTOR pathway correlated positively with the level of NK cell reactivity (Figure 1A). This was true when comparing C57BL/6 and B2m−/− NK cells as well as reactive and unreactive populations in C57BL/6 mice, regardless of the maturation stage. In C57BL/6 populations, absence of either NKG2A or Ly49C had a measurable negative effect, the absence of both leading to further decrease in the phosphorylation level. We also noted a significant correlation between education status and the level of pNFκB S529 and S468 as well as pLck Y505 and pItk Y180 (Figure 1A). However, as the most consistent differences lied in the Akt/mTOR pathway, we decided to focus our analysis on this pathway.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig1-v2.jpg)
+
+**Figure 1.:** (A) Heatmap representing the phosphorylation level of the phosphoepitopes indicated on the right in the different subsets of splenic resting NK cells indicated on top and gated as defined in Figure 1—figure supplement 2. Mean Fluorescence Intensity was recorded for each phosphoepitope in each subset. Normalized expression was calculated using the N+C+ subset of C57BL/6 mice as reference, as described in the Materials and Methods. The mean values are shown (n = 6 mice of each genotype in three independent experiments, adjusted p-values were calculated as described in the Materials and methods and compare the N+C+ subset to the indicated subset, *p<0.05, **p<0.01, ***p<0.001). (B) Histograms representing the phosphorylation level of the indicated proteins in splenic resting NK cells from Ncr1iCre/+ or Ncr1iCre/+ Ptpn6lox/lox mice (representative of 5 mice of each genotype in three independent experiments, t-test, **p<0.01; ***p<0.001, n.s. non significant). The MFI are indicated, in black for the Ncr1iCre/+ NK cells and in red for the Ncr1iCre/+Ptpn6lox/lox NK cells. (C–D) Phosphorylation level of the indicated phospho-epitope in splenic NK cells from C57BL/6 or B2m−/− mice following NK1.1 stimulation for the indicated time. (C) Histogram overlays from one representative experiment. (D) MFI of the indicated phospho-epitope (mean +SD) of 5 mice of each genotype in five independent experiments (t-test, *p<0.05).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mean Fluorescence Intensity was recorded for each phosphoepitope in each subset. Normalized expression was calculated using the CD27+CD11blo subset of C57BL/6 mice as reference (n = 6 mice in three independent experiments, two-way ANOVA comparing the indicated subset with the CD11blo subset, *p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Expression of the surface markers CD11b and CD27 by CD3-CD19-NK1.1+ splenocytes defines three maturation subsets (CD11blo, DP and CD27lo), each of these subsets is further divided into four subsets according to the expression of the inhibitory receptors NKG2A and Ly49C.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** MFI of the indicated phospho-epitope (mean + SD) of 5 mice of each genotype in five independent experiments (t-test, *p<0.05, **p<0.01).
+
+**Table 1.**
+ List of the antibodies used in this study and the phosphoepitopes they recognize.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phosphoepitope</th>
+      <th>Clone (Supplier)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pCD3ζ (Y142)</td>
+      <td>K25-407.69 (BD)</td>
+    </tr>
+    <tr>
+      <td>pLck (Y505)</td>
+      <td>4/LCK-Y505 (BD)</td>
+    </tr>
+    <tr>
+      <td>pSyk (Y342)</td>
+      <td>I120-722 (BD)</td>
+    </tr>
+    <tr>
+      <td>pSLP76 (Y128)</td>
+      <td>J141-668.36.58 (BD)</td>
+    </tr>
+    <tr>
+      <td>pItk (Y180)</td>
+      <td>N35-86 (BD)</td>
+    </tr>
+    <tr>
+      <td>pPLCg2 (Y759)</td>
+      <td>K86-689.37 (BD)</td>
+    </tr>
+    <tr>
+      <td>pWIP (S478)</td>
+      <td>K32-824 (BD)</td>
+    </tr>
+    <tr>
+      <td>p-p38 (T180/Y182)</td>
+      <td>36/p38 (pT180/pY182) (BD)</td>
+    </tr>
+    <tr>
+      <td>pERK1/2 (T203/Y205)</td>
+      <td>20A (BD)</td>
+    </tr>
+    <tr>
+      <td>p-c-Cbl (Y698)</td>
+      <td>47/c-Cbl (BD)</td>
+    </tr>
+    <tr>
+      <td>pJNK (T183/Y185)</td>
+      <td>N9-66 (BD)</td>
+    </tr>
+    <tr>
+      <td>pNFkB p65 (S468)</td>
+      <td>#3039 (CST)</td>
+    </tr>
+    <tr>
+      <td>pNFkB p65 (S529)</td>
+      <td>K10-895.12.50 (CST)</td>
+    </tr>
+    <tr>
+      <td>pNFkB p65 (S536)</td>
+      <td>93H1 (CST)</td>
+    </tr>
+    <tr>
+      <td>pAkt (T308)</td>
+      <td>C31E5E (CST)</td>
+    </tr>
+    <tr>
+      <td>pAkt (S473)</td>
+      <td>M89-61 (BD)</td>
+    </tr>
+    <tr>
+      <td>pS6 (S235/236)</td>
+      <td>D57.2.2E (CST)</td>
+    </tr>
+    <tr>
+      <td>p4EBP1 (T36/45)</td>
+      <td>236B4 (CST)</td>
+    </tr>
+    <tr>
+      <td>p-mTOR (S2448)</td>
+      <td>D9C2 (CST)</td>
+    </tr>
+    <tr>
+      <td>p-mTOR (S2481)</td>
+      <td>#2974 (CST)</td>
+    </tr>
+  </tbody>
+</table>
 
 The phosphatase SHP-1 is required to maintain an optimal NK cell reactivity (Viant et al., 2014). To test its involvement in the maintenance of the basal activity of the Akt/mTOR pathway, we measured the phosphorylation levels of the ribosomal S6 protein and Akt in NK cells deficient in Ptpn6, the gene encoding SHP-1. As a control, we also measured the level of phosphorylation of STAT5 in these cells. The basal activity of the Akt/mTOR pathway was specifically decreased in NK cells from Ncr1iCre/+ Ptpn6lox/lox mice compared to control NK cells while pSTAT5 levels were unchanged (Figure 1B). Thus, basal activation of the Akt/mTOR pathway is correlated with NK cell reactivity and controlled by SHP-1-dependent signaling downstream of NKirs.
 
@@ -60,15 +171,33 @@ We next compared mTOR-related signaling events arising from NKar stimulation in 
 
 In summary, high activity of the Akt/mTOR pathway is a hallmark of reactive NK cells both at steady-state and following stimulation through NKars. Importantly, considering that education is not a discrete but rather a continuous process, absence of one or two of the educating NKir in C57BL/6 resulted in a commensurate loss in mTOR activity.
 
-## Chronic NK cell stimulation results in decreased phosphorylation of the Akt/mTOR pathway which parallels the loss of reactivity
+### Chronic NK cell stimulation results in decreased phosphorylation of the Akt/mTOR pathway which parallels the loss of reactivity
 
 Education is rapidly reverted by unopposed chronic stimulation. Indeed, transfer of reactive NK cells into a host devoid of MHC-I leads to their rapid loss of reactivity and to their tolerance to MHC-I negative cells (Joncker et al., 2010). We thus sought to test whether chronic NKar stimulation decreased the activity of the Akt/mTOR pathway in parallel with the decrease of reactivity. To this purpose, we transferred reactive C57BL/6 NK cells into control C57BL/6 or B2m−/− mice and measured basal Akt/mTOR phosphorylation levels and their reactivity 3 days after transfer. To quantify the intensity of NKar signaling, we took advantage of a transcriptional reporter of the TCR signaling (Moran et al., 2011). This reporter consists of a GFP under the control of the promoter sequence of Nur77, an orphan nuclear receptor strongly induced in response to TCR stimulation. The signaling pathways triggered by TCR or NKar engagement mobilizing the same signaling adaptors, we reasoned that the Nur77GFP construct might also report NKar triggering. Indeed, in vitro stimulation with an NK1.1 agonist antibody or YAC-1 cells, a lymphoblastic cell line detected as foreign by C57BL/6 NK cells, resulted in an increase in the GFP fluorescence (Figure 2—figure supplement 1). Moreover, this increase was commensurate with reactivity so that higher GFP levels were reached in reactive NKG2A+Ly49C+ NK cells, thus validating the expression of GFP as a reporter of NKar stimulation. Transfer of Nur77GFP cells into B2m−/− mice resulted in a transient increase in the GFP level in the reactive subsets one day after transfer indicative of ongoing NKar signaling (Figure 2A). Interestingly, this was followed, 3 days after transfer, by a significant decrease in steady-state GFP level indicative of a loss of the cell capacity to signal following NKar stimulation. As previously reported, NK cells transferred into B2m−/− mice lost their reactivity while reactivity was maintained upon transfer into C57BL/6 host (Figure 2B, anti-NK1.1 stimulation and Figure 2—figure supplement 2, anti-NKp46 or YAC1 stimulation). Importantly, this was paralleled by a decrease in the phosphorylation of S6 and Akt S473 and a loss of the gradient observed between the different subsets expressing Ly49C and NKG2A (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left: Representative histograms showing the GFP fluorescence levels of Nur77GFP NK cells transferred into C57BL/6 or B2m−/− mice and harvested 1 or 3 days after transfer. Non-transgenic host cells are shown. Right: Bar graph showing the GFP levels of the indicated splenic NK cell subsets normalized to the N-C- population of Nur77GFP NK cells transferred into C57BL/6 control mice (mean +SD, n = 6 mice of each genotype per time point in two independent experiments, two-way ANOVA; ***p<0.001, n.s. non significant). (B) Percentage (mean + SD) of IFN-γ+ or CD107a+ cells among splenic host or transferred NK cells of the indicated subset following a 4 hr stimulation with coated anti-NK1.1. The experiment was done 3 days after transfer (n = 6 mice of each genotype in two independent experiments, two-way ANOVA comparing each subset to its counterpart in C57BL/6 mice, **p<0.01, ***p<0.001, n.s. non significant). (C) Heatmap representing the phosphorylation level of the phosphoepitopes indicated on the right in the different subsets of splenic resting NK cells indicated on top. Mean Fluorescence Intensity was recorded for each phosphoepitope in each subset. Normalized expression was calculated using the N+C+ subset of C57BL/6 host NK cells as reference. The mean values are shown (n = 6 mice of each genotype in two independent experiments, t-tests comparing the N+C+ subset to the indicated subset, *p<0.05, **p<0.01).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Non-transgenic C57BL/6 control NK cells are shown. Right: Bar graph showing the GFP levels of the indicated splenic NK cell subsets before or after a 4 hr stimulation with anti-NK1.1 or YAC-1 cells. GFP fluorescence was normalized to the unstimulated N+C+ population of Nur77GFP NK cells (mean +SD, n = 2 mice in two independent experiments).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The experiment was done 3 days after the transfer (n = 6 mice of each genotype in two independent experiments, two-way ANOVA comparing each subset to its counterpart in C57BL/6 mice, *p<0.05, ***p<0.001, n.s. non significant).
+
 Collectively, these results demonstrate that the basal activity of the Akt/mTOR pathway is negatively affected by persistent and unopposed NKar stimulation. This suggests that engagement of Ly49C and NKG2A in C57BL/6 mice preserves Akt/mTOR basal activity resulting in higher basal phosphorylation in the NK cell population expressing these NKir.
 
-## mTOR is essential for NK cell reactivity
+### mTOR is essential for NK cell reactivity
 
 To test if high mTOR activity was required for NK cell reactivity, we stimulated NK cells from Ncr1iCre/+ Mtorlox/lox or control mice with plate-bound anti-NK1.1 antibody or YAC-1 cells and measured NK cell degranulation relative to the expression of the major educating receptors Ly49C and NKG2A. Control NK cells responded significantly better than mTOR-deficient NK cells, irrespective of the subset analyzed (Figure 3A). Moreover, within control NK cells, reactive Ly49C+NKG2A+ degranulated more than the other subsets, while mTOR deficiency resulted in equally hyporesponsive subsets.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig3-v2.jpg)
+
+**Figure 3.:** (A) Percentage (mean +SD) of CD107a+ cells among splenic CD11blo NK cells of the indicated subset from Ncr1iCre/+ or Ncr1iCre/+ Mtorlox/lox mice following 4 hr stimulation with coated anti-NK1.1 or YAC-1 cells (n = 5 mice of each genotype in three independent experiments, t-tests comparing each subset in both genotype, *p<0.05, **p<0.01, n.s. non significant). (B) Percentage (mean +SD) of IFN-γ+ or CD107a+ cells among splenic NK cells of the indicated subset from C57BL/6 or B2m−/− mice following 4 hr stimulation with coated anti-NK1.1 in the presence or absence of 250 nM Torin2 (n = 9–10 mice of each genotype in five independent experiments, two-way ANOVA comparing each subset to its counterpart in B2m−/− mice, *p<0.05, **p<0.01, ***p<0.001, n.s. non significant). (C) Percentage (mean +SD) of dead YAC-1 cells after a 4 hr co-culture with purified NK cells of the indicated genotype at the indicated Effector/Target ratio in the presence or absence of 250 nM Torin2 (n = 9 C57BL/6 and 7 B2m−/− mice in four independent experiments, two-way ANOVA comparing each E/T ratio of C57BL/6 + Torin2 to C57BL/6, B2m−/− or B2m−/− +Torin2 as indicated by the color, ***p<0.001, n.s. non significant). (D) Percentage of remaining B2m−/− target cells following in vivo cytotoxicity experiment as described in the Materials and methods. Each dot represents a single mouse, bars indicate mean and SD (n = 9 control treated mice and 7 Torin2 treated mice in two independent experiments, t-test, ***p<0.001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig3-figsupp1-v2.jpg)
 
 These results suggested a major role of mTOR in NK cell reactivity. However, mTOR deficiency leads to a severe NK cell developmental block that may confound the interpretation of the results (Marçais et al., 2014). To address this issue we took advantage of Torin2, a highly selective ATP-competitive mTOR inhibitor targeting both mTORC1 and mTORC2 (Liu et al., 2011). We stimulated mature NK cells from C57BL/6 and B2m−/− mice with plate-bound anti-NK1.1 in the presence or absence of the inhibitor. Torin2 significantly decreased the capacity of C57BL/6 NK cells to produce IFN-γ and to degranulate upon stimulation, regardless of the subset analyzed (Figure 3B). Moreover, treatment of C57BL/6 NK cells with Torin2 abrogated the differences between highly reactive (Ly49C+NKG2A+) and hyporesponsive (Ly49C-NKG2A-) cells. Treatment of hyporesponsive B2m−/− NK cells led to a further decrease in their capacity to degranulate while their production of IFN-γ was unaffected. Similar results were obtained upon NKp46 stimulation (Figure 3—figure supplement 1). Torin2 treated C57BL/6 NK cells thus functionally behaved like B2m−/− hyporesponsive NK cells. Similarly, Torin2 inhibited C57BL/6 NK cells from triggering YAC-1 lysis at a similar level seen in hyporesponsive B2m−/− NK cells (Figure 3C). Torin2 treatment had no effect on the lytic capacity of B2m−/− NK cells.
 
@@ -76,13 +205,21 @@ Education conditions the phenomenon of missing-self recognition. A classical rea
 
 Altogether, these results demonstrate that mTOR is required for NK cell reactivity.
 
-## mTOR is a rheostat of NK cell reactivity through NKar
+### mTOR is a rheostat of NK cell reactivity through NKar
 
 The ‘rheostat’ model of education proposes that the strength of the MHC-I input translates into a quantitative modification of NK cell responsiveness (Brodin et al., 2009b). Indeed, several studies reported that the higher the number of self–MHC-I receptors expressed by NK cells interacting with their ligands, the stronger their responsiveness (Brodin et al., 2009a; Johansson et al., 2005; Joncker et al., 2009). As shown in Figure 1, the level of mTOR activity was tightly correlated with the number of educating NKirs in NK cells, suggesting that mTOR could serve as the molecular rheostat translating the MHC-I input into quantitative tuning of the responsiveness. To directly test this point, we analyzed how the ex vivo modulation of mTOR activity by pharmacologic mTOR inhibitors changed NK cell responsiveness. We took advantage of four different inhibitors of graded mTOR inhibitory potential: the macrolide Rapamycin that primarily inhibits mTORC1 and three ATP-competitive inhibitors targeting both mTORC1 and mTORC2 to a varying extent: AZD2014, KU-0063794 (KU) and Torin2 (García-Martínez et al., 2009; Guichard et al., 2015; Liu et al., 2011; Sabatini et al., 1994; Yang et al., 2013). The use of different concentrations of those compounds allowed us to modulate mTOR activity in NK cells over a dynamic range of 10-fold for mTORC1 or 2-fold for mTORC2 as measured by phosphorylation of S6 and Akt S473 respectively (Figure 4A). Of note, we confirmed that Rapamycin acted specifically on mTORC1 while AZD, KU and Torin2 inhibited both complexes. Importantly, at these concentrations no significant changes in STAT5 phosphorylation or specific toxicity over a 24 hr incubation period were noted (Figure 4—figure supplement 1A and B). We then correlated the S6 and Akt phosphorylation levels to the IFN-γ production and degranulation induced by NK1.1 crosslinking. S6 phosphorylation was positively correlated with the effector functions in all conditions tested (Figure 4B). Similar correlations were found between Akt phosphorylation and effector function upon AZD, KU or Torin2 treatment (Figure 4C). However, this correlation was lost upon Rapamycin treatment, suggesting that mTORC2 activity alone is not sufficient to sustain effector functions (Figure 4B,C). In addition, effector functions were not correlated to STAT5 phosphorylation levels (Figure 4—figure supplement 1B,C). Similar results were obtained upon stimulation of NK cells from Ncr1iCre and Ncr1iCre Mtorlox/lox mice and measure of the phosphorylation levels of the S6 and Akt proteins in parallel thus genetically confirming the results (Figure 4—figure supplement 1D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig4-v2.jpg)
+
+**Figure 4.:** (A) Bar graph showing the phosphorylation level of S6 (left) and Akt S473 (right) in splenic NK cells following 1 hr treatment with 100 ng/ml IL-15 in the presence or absence of the indicated mTOR inhibitors at the indicated concentration (mean of the MFI normalized to the No inhibitor condition +SD, n = 9 mice in three independent experiments, one-way ANOVA comparing the No inhibitor condition with the indicated condition, **p<0.01; ***p<0.001, n.s. non significant). (B–C) Linear regression plots showing the correlation between (B) pS6 or (C) pAkt S473 as indicated and the percentage of IFN-γ+ or CD107a+ NK cells following 4 hr stimulation with coated anti-NK1.1 in the presence of 100 ng/ml IL-15 and mTOR inhibitors (mean ±SD, n = 9 mice in three independent experiments, the r2 and p-value calculated by linear regression are indicated).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (C) Linear regression plots showing the correlation between pSTAT5 and the percentage of IFN-γ+ or CD107a+ NK cells following 4 hr stimulation with coated anti-NK1.1 in the presence of 100 ng/ml IL-15 and mTOR inhibitors (mean ±SD, n = 4–5 mice in three independent experiments, the r2 and p-value calculated by linear regression are indicated). (D) Dot plots showing the correlation between pS6 or pAkt S473 in the presence of 100 ng/ml IL-15 and the percentage of IFN-γ+ or CD107a+ CD11blo NK cells from Ncr1iCre/+ or Ncr1iCre/+ Mtorlox/lox mice following 4 hr stimulation with coated anti-NK1.1(mean ±SD, n = 5–7 mice in three independent experiments).
+
 Overall, these results demonstrate that mTOR acts as a molecular rheostat of NK cell responsiveness. Together with results in Figures 1 and 2, they demonstrate that NK cell education relies on the modulation of mTOR activity that in turn controls NK cell responsiveness through NKars.
 
-## mTOR is essential for calcium response and integrin activation in NK cells following NKar engagement
+### mTOR is essential for calcium response and integrin activation in NK cells following NKar engagement
 
 Next, we asked whether mTOR activity could regulate signaling via NKar. Previous studies established that reactive NK cells display higher calcium flux (Guia et al., 2011) and higher integrin activation than hyporesponsive NK cells (Thomas et al., 2013). Hence we sought to test the impact of mTOR activity on these cardinal events in lymphocyte activation. We first measured the calcium flux in real time by flow cytometry following NK1.1 stimulation using fluorescent calcium probes and we quantified the intensity of the fluorescence peak. When we challenged Ncr1iCre/+ (control) and Ncr1iCre/+ Mtorlox/lox NK cells, NK1.1 cross-linking resulted in a detectable calcium flux in NK cells of both genotypes (Figure 5A). However, the peak was lowered (15–20%) in the absence of mTOR. We next applied the same protocol to control C57BL/6 NK cells in the presence or absence of Torin2 to acutely inhibit mTOR. As shown in Figure 5B, mTOR inhibition resulted in a decreased calcium flux characterized by a 20%-decrease in the peak intensity, thus phenocopying the impact of mTOR deficiency.
 
@@ -94,7 +231,7 @@ Next, we assessed the effect of mTOR deficiency on LFA-1 integrin activation fol
 
 Thus, using genetic and pharmacological tools, we showed that the mTOR pathway lies upstream of two signaling events, calcium flux and LFA-1 integrin activation, which are elevated in reactive NK cells.
 
-## Metabolic parameters of reactive and hyporesponsive NK cells
+### Metabolic parameters of reactive and hyporesponsive NK cells
 
 mTOR is a well-known regulator of the cell metabolism. We thus asked whether the higher activity of mTOR measured in reactive NK cells resulted in detectable changes in metabolic activity. We first measured cell size and granularity using the FSC and SSC flow-cytometry parameters. Reactive NK cells from C57BL/6 control mice presented a slight but significant increase of both morphological indicators when compared to hyporesponsive NK cells of B2m−/− mice (Figure 6A). Similarly, their mitochondrial content as well as glucose and fatty-acid uptake capacities estimated by measure of the uptake of the glucose fluorescent analog 2-NBDG or the fatty-acid fluorescent analog Bodipy FL-C16 were significantly higher (Figure 6B). In contrast, mitochondrial ROS production, lipid droplet content or lipid peroxidation were comparable in both cell types (data not shown). Differences were also detectable for FSC and SSC values as well as fatty-acid uptake when comparing reactive and hyporesponsive NK cell subsets present in the most mature CD27low population of C57BL/6 mice (Figure 6C).
 
@@ -104,9 +241,19 @@ mTOR is a well-known regulator of the cell metabolism. We thus asked whether the
 
 In summary, the higher activity of the Akt/mTOR pathway observed in reactive cells increased their metabolic activity compared to hyporesponsive NK cells, which may also contribute to their enhanced responsiveness.
 
-## Cytokine stimulation overcomes NK cell education by inducing high mTOR activity that restores NKar signaling
+### Cytokine stimulation overcomes NK cell education by inducing high mTOR activity that restores NKar signaling
 
 Several studies have demonstrated that hyporesponsive NK cells can be rendered reactive (Ebihara et al., 2013; Elliott et al., 2010; Joncker et al., 2010; Sun and Lanier, 2008). The underlying molecular mechanism has however remained elusive. We reasoned that if the mTOR pathway was really a key determinant of NK cell reactivity, acute activation of this pathway should immediately restore reactivity of hyporesponsive cells. To test this hypothesis, we stimulated NK cells from C57BL/6 or B2m−/− mice with plate-bound antibodies stimulating NK1.1 or NKp46 and we simultaneously added IL-2, a cytokine known to potently activate mTOR (Marçais et al., 2014). To test the requirement for the mTOR pathway in this process, cells were also treated or not with Torin2. IL-2 resulted in an increase of the cell capacity to produce IFN-γ and to degranulate as measured by CD107a exposure (Figure 7A). This acute treatment was sufficient for hyporesponsive cells to acquire a level of reactivity equal or even higher than that of reactive NK cells from C57BL/6, regardless of the stimulating antibody. mTOR activity was required for this effect since the increase in reactivity was suppressed by mTOR inhibition (Figure 7A). Similar results were obtained when using IL-15 instead of IL-2 (Figure 7—figure supplement 1). Acute IL-15 stimulation also restored the cytotoxic activity of hyporesponsive NK cells against YAC-1 cells while further enhancing cytotoxicity of C57BL/6 cells (Figure 7B). Again, this effect was completely reversed upon concomitant Torin2 treatment. Taken together, these results show that induction of responsiveness in NK cells upon cytokine exposure is a rapid phenomenon acting via mTOR activation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig7-v2.jpg)
+
+**Figure 7.:** (A) Percentage (mean +SD) of IFN-γ or CD107a positive cells among splenic NK cells from C57BL/6 or B2m−/− mice following 4 hr stimulation with coated anti-NK1.1 or anti-NKp46 in the presence or absence of 200UI/ml IL-2 and 250 nM Torin2 as indicated (n = 9–10 mice of each genotype in five independent experiments, one-way ANOVA comparing each condition to the C57BL/6 condition, *p<0.05, **p<0.01, ***p<0.001, n.s. non significant). (B) Percentage (mean +SD) of dead YAC-1 cells after a 4 hr co-culture with purified NK cells from C57BL/6 or B2m−/− mice at the indicated Effector/Target ratio in the presence or absence of 10 ng/ml IL-15 and 250 nM Torin2 as indicated (n = 7 mice of each genotype in three independent experiments, the table on the right presents the results of a two-way ANOVA comparing C57BL/6 with the other experimental conditions for the indicated Effector/Target ratio, **p<0.01, ***p<0.001 n.s. non significant). (C) Top: Representative histogram overlay showing the Ca2+ flux intensity in splenic NK cells from C57BL/6 or B2m−/− mice with or without IL-15 (100 ng/ml). NK cells were activated following incubation with biotinylated anti-NK1.1 (Arrow) followed by cross-linking with streptavidin (Arrowhead). Down: Bar graph showing the Ratio Peak/basal normalized to the ratio of control NK cells (mean +SD of n = 17–20 replicates from 6 mice in six independent experiments, one-way ANOVA comparing the indicated conditions, **p<0.01, ***p<0.001). (D) Percentage of splenic NK cells from B2m−/− mice bound to beads coated with ICAM-1 after the indicated incubation time with or without NK1.1 stimulation, in the presence or absence of 100 ng/ml IL-15 and 250 nM Torin2 (n = 6 mice in four independent experiments, two-way ANOVA comparing stimulated to non-stimulated conditions, n.s. non significant, ***p<0.001).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/26423/elife-26423-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** NK cells were activated following incubation with biotinylated anti-NK1.1 (Arrow) followed by cross-linking with streptavidin (Arrowhead). Right: Bar graph showing the Ratio Peak/basal normalized to the ratio of control NK cells (mean +SD of n = 12–20 replicates from 6 mice in six independent experiments, one-way ANOVA comparing the indicated conditions ***p<0.001, n.s. non significant).
 
 In order to decipher the mechanism required for NK cell re-education, we next tested whether acute IL-15 treatment restored early signaling in hyporesponsive cells. We first investigated the impact of IL-15 treatment on the calcium flux triggered by NK1.1 stimulation in control or hyporesponsive NK cells. As expected, NK1.1 stimulation of hyporesponsive NK cells resulted in a very poor calcium flux compared to reactive NK cells (Figure 7C). Strikingly, treatment with IL-15 increased the calcium flux ability of reactive and hyporesponsive NK cells in an mTOR-dependent way (Figure 7C and Figure 7—figure supplement 2). We then measured the impact of IL-15 treatment on LFA-1 activation following NK1.1 stimulation. The presence of IL-15 in the assay rendered hyporesponsive NK cells able to activate LFA-1 upon NK1.1 stimulation and bind ICAM-1 coated beads (Figure 7D). This effect was strongly decreased upon Torin2 treatment, underlying the non-redundant role of mTOR in this process.
 
@@ -126,36 +273,36 @@ In summary, these findings identify the activity of the mTOR pathway as the mole
 
 ## Materials and methods
 
-## Mice and adoptive transfers
+### Mice and adoptive transfers
 
 Wild-type C57BL/6 mice were purchased from Charles River Laboratories (L’Arbresle). B2m−/− (Koller et al., 1990), Ncr1iCre/+ Mtorlox/lox (Marçais et al., 2014) and Ncr1iCre/+ Ptpn6lox/lox mice (Viant et al., 2014) were previously described, littermate control mice were used as controls. Nur77GFP mice were previously described (Moran et al., 2011). Female mice 8 to 24 week-old were used. Nur77GFP splenocytes were injected i.v. in C57BL/6 or B2m−/− host. Each host received 25 × 106 splenocytes labeled with CTV (1 µM, Molecular Probes) to allow subsequent identification. Host mice were sacrificed one or 3 days after for analysis of the spleen. This study was carried out in accordance with the French recommendations in the Guide for the ethical evaluation of experiments using laboratory animals and the European guidelines 86/609/CEE. All experimental studies were approved by the bioethic local committee CECCAPP. Mice were bred in the Plateau de Biologie Expérimentale de la Souris, our animal facility.
 
-## Flow cytometry
+### Flow cytometry
 
 Single cell suspensions of spleens were obtained and stained. Intracellular stainings for phosphorylated proteins were done using Lyse/Fix and PermIII buffers (BD Bioscience). Measurement of glucose uptake was performed as described (Marçais et al., 2014). Mitochondrial content was measured using Mitotracker Green (Molecular Probes, 1 µM) incubated for 10 min at 37°C in PBS. Lipid uptake was measured using BodipyFL C16 (Molecular Probes, 1 µM) incubated for 30 min at 37°C in complete medium. Surface staining were then performed to identify the different populations. Flow cytometry was carried out on a FACS LSR II or on a FACS Fortessa (Becton-Dickinson). Data were analysed using FlowJo (Treestar). The following mAbs from eBioscience, BD Biosciences or Biolegend were used: anti-CD19 (ebio1D3), anti-CD3 (145–2 C11), anti-NK1.1 (PK136), anti NKp46 (29A1.4), anti-CD49b (DX5), anti-CD11b (M1/70), anti-CD27 (LG.7F9), anti-Ly49I (YLI90), anti-NKG2A/C/E (20d5), anti-IFN-γ (XMG1.2), anti-CD107a (1D4B). The mAb 4LO3311 recognizing Ly49C was purified on protein A column from supernatant of the 4LO3311 hybridoma generously provided by Pr. Suzanne Lemieux (Institut Armand Frappier, Québec). NKG2A positive cells were identified using the 20d5 clone which also recognizes NKG2C and NKG2E, however, since mouse resting NK cells only express NKG2A, we considered 20d5 reactive cells as NKG2A positive (Vance et al., 1998).
 
-## Cell culture and stimulation
+### Cell culture and stimulation
 
 1.5 × 106 splenocytes were cultured on antibody coated plates (anti-NKp46 (Goat polyclonal, R&D), anti-NK1.1 (PK136, BioXCell) at 10 µg/ml on Immulon 2HB or Nunclon plates) with Golgi-stop (BD Biosciences) in the presence of anti-CD107a for 4 hr. Cytokines and mTOR inhibitors were used at the following concentrations unless otherwise stated: rmIL-15 (Peprotech; 100 ng/ml), IL-2 (muIL-2 supernatant; 200 U/ml), Rapamycin (Calbiochem; 25 nM), KU-0063794 (Stemgent; 3 µM), AZD2014 (Selleckchem; 5 µM) and Torin2 (Tocris; 250 nM). Surface and intracellular stainings were then performed and IFN-γ production as well as CD107a exposure was measured by flow cytometry. In some experiments, cell viability was determined using 7AAD (Invitrogen, 250 nM).
 
 For phospho-flow stainings following short-term NK1.1 stimulation, 3 × 106 splenocytes were stimulated using biotinylated NK1.1 (PK136, 5 µg/ml) followed 1 min 30 s later by streptavidin (Life Technologies, 10 µg/ml) and fixed by addition of 10 volumes of Lyse/Fix at the indicated time point.
 
-## In vivo cytotoxicity assay
+### In vivo cytotoxicity assay
 
 Recipient mice were treated by daily i.p. injection of Torin2 (10 mg/kg, vehicle: 40% H2O, 40% PEG400 (Sigma), 20 % N methyl two pyrrolidone (Sigma)) for 6 days prior to target transfer. Splenocytes from C57BL/6 or B2m−/− mice were labeled respectively with CellTraceViolet (1 µM) or CFSE (5 µM) (both from Life Technologies), and 10 × 106 cells (5 × 106 of each genotype) were transferred by i.v. injection. 60 hr after transfer, splenocytes were isolated and analyzed by FACS. Percentage of remaining B2m−/− cells was calculated using the following formula: % remaining cells = 100 x (number B2m−/− cells/number C57BL/6 cells) at 60 h /(number B2m−/− cells/number C57BL/6 cells) in input mix.
 
-## In vitro cytotoxicity assay
+### In vitro cytotoxicity assay
 
 NK cells were first enriched by negative depletion prior to killing assay. Briefly, splenocytes suspension were incubated with biotinylated mAb against: CD3 (14–2 C11), TCRβ (H57-597), TCRγδ (GL3), CD19 (ebio1D3), TER-119 (ter119) (eBioscience), followed by incubation with anti-biotin microbeads (Miltenyi), and enrichment by magnetic separation on an AutoMACS. Enriched NK cells were co-cultured for 4 hr with YAC-1 cells labeled with CFSE (Life Technologies) at different Effector to target (E/T) ratios calculated based on the cell number and the percentage of NK cells after purification. The percentage of dead cells within CFSE positive YAC-1 cells was measured by flow cytometry after staining with 7AAD.
 
-## Calcium flux
+### Calcium flux
 
 Calcium flux was measured essentially as described (Guia et al., 2011). Briefly, RBC-lysed splenocytes suspension in RPMI/0.2% BSA/25 mM HEPES were stained at RT with the following mAb: anti-CD3/CD19 PEeFluor610, anti-CD49b APC, anti-CD11b APCCy7, anti-CD27 PE. They were then stained at 1 × 107 cells/ml with Indo-1 (1 µM, Life Technologies) for 30 min at 37°C and washed two times at 4°C. They were resuspended in the above medium and placed at 37°C for 30 min prior acquisition in the presence or absence of rmIL-15 (100 ng/ml) or Torin2 (250 nM). Samples were acquired on a LSRII (BD) as follow: 15 s baseline acquisition, addition of anti-NK1.1 biotin (PK136, 5 µg/ml), acquisition for 1 min 30 s, addition of Streptavidin (Life Technologies, 10 µg/ml) and, acquisition for another 3–5 min.
 
-## ICAM1 coated beads assay
+### ICAM1 coated beads assay
 
 One mg Protein G-coated 4–4.9 µm beads (Spherotec) was incubated for 30 min with 3.5 µg ICAM1-hIgG1Fc (R&D) on a rotating wheel at RT in PBS. Beads were then pelleted by centrifugation and washed two times with complete medium, counted on a FACS Accuri (BD) and resuspended at 1 × 107 beads/ml. In parallel, NK cells were purified (80–90% purity) using biotinylated antibodies directed against CD3, CD19, CD5, CD24, F4/80 and Ly6G and anti-biotin beads. They were then incubated with anti-NKp46-PE (29A1.4, BD) and purified anti-NK1.1 (PK136, BioXCell). 100,000 purified NK cells in 10 µl were placed in a U-bottom well and 100,000 ICAM-1 coated beads were added. To cross-link NK1.1 and measure the effect of inside-out signaling, a Goat F(ab)’2 anti-mouse IgG (10 µg/ml, Life Technologies) was added to the wells. Interaction was fixed at the indicated time-point by addition of 100 µl Cytofix/Cytoperm (BD). The percentage of interaction (i.e. percentage of NKp46 positive cells attached to beads) was measured by flow cytometry.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism 5 (Graph-Pad Software). Two tailed unpaired t-test, and ANOVA tests with Bonferroni correction were used as indicated in the figure legends. Significance is indicated as follows: *p<0.05; **p<0.01; ***p<0.001. The heatmap presented in Figure 1A was established as follow: we first selected the phosphoepitopes for which the MFI (Mean Fluorescence Intensity) was significantly above the one of the FMO control (Student T-test). The MFI of the 15 selected phosphoepitopes for the 4 NC sub-populations defined in Figure 1—figure supplement 2 was then normalized to the MFI value of the NKG2A+Ly49C+ populations in the C57BL/6 mice and the values obtained were averaged to calculate the means for each populations. These values were used to establish the Heatmap using the Multiple Experiment Viewer application. We used the R statistical language to manage our database and carry out the statistical analysis (R version 3.3.2). We splited the database into six datasets (2 Mouse strains * Differentiation subsets), each containing the 15 phospho-epitopes. We performed an ANOVA for each phospho-epitope to test for the phosphorylation difference between the 4 NC sub-populations. The parameters of the ANOVA Type I SS were adapted to control for the experiment effect. The Bartlett Homogeneity of Variances Test was applied first, when it failed to reject its H0, then the phospho-epitope was retained for the ANOVA test. The normality of the residuals of the ANOVA model was checked graphically and numerically with the Shapiro-Wilk Normality Test. When this test failed to reject its H0 then the adjusted P values for multiple comparisons were extracted with the Tukey's 'Honest Significant Difference' method.

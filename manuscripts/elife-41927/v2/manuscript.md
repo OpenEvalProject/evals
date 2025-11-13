@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.41927.001 Mitochondria play important roles in cellular processes and disease, yet little is known about how the transcriptional regime of the mitochondrial genome varies across individuals and tissues. By analyzing >11,000 RNA-sequencing libraries across 36 tissue/cell types, we find considerable variation in mitochondrial-encoded gene expression along the mitochondrial transcriptome, across tissues and between individuals, highlighting the importance of cell-type specific and post-transcriptional processes in shaping mitochondrial-encoded RNA levels. Using whole-genome genetic data we identify 64 nuclear loci associated with expression levels of 14 genes encoded in the mitochondrial genome, including missense variants within genes involved in mitochondrial function ( TBRG4 , MTPAP and LONP1 ), implicating genetic mechanisms that act in trans across the two genomes. We replicate ~21% of associations with independent tissue-matched datasets and find genetic variants linked to these nuclear loci that are associated with cardio-metabolic phenotypes and Vitiligo, supporting a potential role for variable mitochondrial-encoded gene expression in complex disease.
+Mitochondria play important roles in cellular processes and disease, yet little is known about how the transcriptional regime of the mitochondrial genome varies across individuals and tissues. By analyzing >11,000 RNA-sequencing libraries across 36 tissue/cell types, we find considerable variation in mitochondrial-encoded gene expression along the mitochondrial transcriptome, across tissues and between individuals, highlighting the importance of cell-type specific and post-transcriptional processes in shaping mitochondrial-encoded RNA levels. Using whole-genome genetic data we identify 64 nuclear loci associated with expression levels of 14 genes encoded in the mitochondrial genome, including missense variants within genes involved in mitochondrial function (TBRG4, MTPAP and LONP1), implicating genetic mechanisms that act in trans across the two genomes. We replicate ~21% of associations with independent tissue-matched datasets and find genetic variants linked to these nuclear loci that are associated with cardio-metabolic phenotypes and Vitiligo, supporting a potential role for variable mitochondrial-encoded gene expression in complex disease.
 
 ## Introduction
 
@@ -36,17 +36,23 @@ To characterize levels of mitochondrial encoded RNA across a large number of ind
 
 **Figure 1.:** (A) Hierarchical clustering of median expression levels per gene across all datasets where WBL = Whole Blood, SAD = Subcutaneous Adipose, LCL = Lymphoblastoid cell lines, SKN = Non sun exposed skin, SKE = Sun exposed skin, VAD = Visceral omentum adipose, ADG = Adrenal gland, AOR = Aorta, CAR = Coronary artery, TAR = Tibial artery, ACB = Anterior cingulate cortex (BA24) (Brain), CGB = Caudate basal ganglia (Brain), CHB = Cerebellar Hemisphere (Brain), CEB = Cerebellum (Brain), COB = Cortex (Brain), FCB = Frontal cortex (BA9) (Brain), HIB = Hippocampus (Brain), HYB = Hypothalamus (Brain), NAB = Nucleus accumbens (basal ganglia) (Brain), PBB = Putamen basal ganglia (Brain), BRE = Breast mammary tissue, SCO = Sigmoid colon, TCO = Transverse colon, GEJ = Gastroesophageal junction, EMC = Esophagus mucosa, EMS = Esophagus Muscularis, AAH = Atrial appendage (Heart), LVH = Left ventricle (Heart), LUN = Lung, SMU = Skeletal muscle, TNV = Tibial Nerve, PAN = Pancreas, SFI = Transformed fibroblasts, STO = Stomach, TES = Testes and THY = Thyroid, Multi-dataset tissues on the x-axis are shown in red (whole blood), orange (subcutaneous adipose), green (lymphoblastoid cell lines) and blue (non-sun exposed skin). (B) Standardized expression levels of each mitochondrial-encoded gene across all independent datasets, (C) Coefficient of variation across individuals for the expression levels of mitochondrial encoded genes and the top 1000 most highly expressed nuclear genes in all datasets. Range of coefficient of variation is restricted to between 0 and 1.5 as this contains the majority of the data.
 
-## Variation in mitochondrial gene expression
+### Variation in mitochondrial gene expression
 
 Overall, despite their polycistronic origins, there is significant variation between mean expression levels of the 15 mitochondria-encoded genes within each dataset (one-way ANOVA, p<2e-16 in all cases), highlighting the influence of post-transcriptional events in generating variation in transcript abundance along the mitochondrial transcriptome in all tissues. On average across samples and datasets, MTCO3 and MTCO2 show the highest median expression levels and MTRNR1 the lowest. Hierarchical clustering of log median expression values per dataset shows the consistency of the data, as the same tissue types from independent sequencing datasets generally tend to cluster together (Figure 1A). Whole blood, LCL and skin datasets group by tissue type, however subcutaneous adipose data do not; this may be a consequence of the large heterogeneity in cell type composition observed across these datasets (Glastonbury et al., 2018). High-energy tissues (for example heart and brain tissues) also tend to cluster together and appear to show similar patterns of mitochondrial encoded gene expression.
 
 In general, the rank order of mitochondrial-encoded gene expression levels between tissues is broadly similar (spearman rank rho >0.5 for 894/903 pairwise comparisons of independent datasets) with genes that show high relative expression levels in one tissue tending to show high relative expression levels in others tissues, however there are gene specific patterns. Standardized median MTRNR2 expression levels are highly variable, showing higher relative expression in whole blood and sub regions of the brain compared to other tissue types, whereas MTND4L, MTND5 and MTATP8 have low variance across tissue types and show relatively low standardized expression (Figure 1B). Across individuals within each tissue, mitochondria-encoded genes show similar variance to comparable nuclear genes; on average across genes and datasets, the coefficient of variation of mitochondrial encoded TPM values is higher than 443 of the top 1000 most highly expressed nuclear genes and distributions of coefficients of variation overlap (Figure 1C). However, there are differences across tissues; mitochondrial encoded genes in sub-regions of the brain generally show low variation in gene expression across individuals, and expression variance in whole blood is generally high. Collectively these results point to significant variation in the expression of genes along the mitochondrial genome, across tissues and across individuals.
 
-## Nuclear control of mitochondrial gene expression
+### Nuclear control of mitochondrial gene expression
 
 To identify nuclear genetic variation associated with mitochondrial encoded transcript abundance, we obtained genotyping data for the same samples for which we had RNA sequencing data and then performed per tissue and dataset association analyses between nuclear genetic variants (with MAF >5%) and the expression levels of fifteen mitochondrial encoded genes within a linear model, controlling for ancestry, sex, batch (where applicable) and probabilistic estimation of expression residuals (PEER factors) (Stegle et al., 2010) obtained from RNA sequencing data. For whole blood, subcutaneous adipose, non-sun exposed skin and LCLs where we had multiple independent datasets, we defined discovery and replication datasets.
 
 Across all tissues, we identify a total of 64 trans-genome eQTLs (unique peak genetic variant-gene expression pairs) for mitochondrial encoded gene expression at FDR 5% (range of FDR corrected p-values: 0.046 – 8 × 10−26, Supplementary file 1, example association shown in Figure 2A and C). For each significant association, we also calculate point-wise empirical P-values (as well as gene-level and tissue-level family-wise error rates) via permutation analysis, and find that these closely match raw P-values (see Materials and methods and supplementary file 1). In total, fourteen out of the fifteen mitochondrial encoded genes have at least one nuclear genetic variant associated with its expression; MTATP8 shows no significant associations, MTND1 has the most with seven independent associations. We also observe five instances where a peak nuclear variant is associated with the expression of multiple mitochondrial-encoded genes within a tissue, perhaps indicating a shared influence on mitochondria RNA processing. However, mitochondrial encoded genes associated with the same genetic variant are no more likely to be located closer to each other along the mitochondrial genome than random (p=0.29, bootstrapping versus same number of random chosen genes). For the 49 unique peak genetic variants remaining after removing duplicate variants with multiple associations, four are missense mutations, 32 intronic, 12 intergenic and one falls in a 3’ UTR region.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41927/elife-41927-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genome-wide association analysis for the expression of MTND1 in whole blood data from the discovery datasets (meta-analysis of CARTaGENE, TwinsUK and GTEx data), (B) Genome-wide association analysis for the expression of MTND1 in whole blood data from the replication dataset (NIMH data), (C) Expression of MTND1 (Log10(TPM +1)) versus non-reference allele frequency of rs2304694 in the four independent whole blood datasets.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41927/elife-41927-fig2-figsupp1-v2.jpg)
 
 To ensure that trans-genome eQTLs are not driven by alignment errors that are a consequence of sequence similarity between the nuclear and the mitochondrial genomes, we tested for the presence of nuclear mitochondrial DNA segments (NUMTs) in the regions surrounding each peak nuclear genetic variant. NUMTs are mitochondrial DNA sequences that have transposed into the nuclear genome over evolutionary time scales, and as such often retain moderate to high sequence similarity with the mitochondrial genome. For the 64 trans-genome eQTLs, we find only two occurrences where at least 50 bp (the smallest read length in our analysis) of the mitochondrial encoded gene is present within a NUMT that is within 1 MB of the corresponding peak nuclear genetic variant, and we observe ~4 and~15 mismatches per 100 bp in these sequences compared to the corresponding mitochondrial encoded sequence. Additionally, for each peak nuclear genetic variant that is associated with the expression of a mitochondrial-encoded gene, we also tested whether any 50 bp segment of the mitochondrial-encoded gene also mapped to a nuclear gene (following the approach defined in Saha and Battle, 2018) that has its transcription start site within 1 MB of the corresponding peak nuclear variant; we find no such occurrences. As such, alignment errors are unlikely to be driving the detection of trans-genome eQTLs for mitochondrial encoded gene expression.
 
@@ -54,9 +60,316 @@ RNA levels of mitochondrial-encoded genes are likely driven by a number of featu
 
 To identify whether genetic associations are tissue specific, for the 64 significant associations we tested whether the same peak variant-gene pair was significant with the same direction of effect in each of the other tissue types (at p<0.05, corrected for the number of variants and the number of tissues, we used the nearest variant in LD (r2 >0.8) if the same variant was not present, or the nearest variant with r2 >0.5 otherwise). In total, 22 of the 64 associations are significant in more than one tissue, with 8 of the associations being observed in at least three other tissue types (Supplementary file 3, Supplementary file 6). Lowering the p-value threshold to 5% with the same direction of effect, only 12 associations are not replicated outside of the tissue they were originally detected in, and 19 associations are significant across 10 or more tissue types. Although sample sizes and detection criteria may influence our ability to detect all associations, these results indicate that a large number of associations between the nuclear and mitochondrial genomes may be operating via general mechanisms that occur across multiple tissue types.
 
-## Functional characterization
+### Functional characterization
 
 In order to elucidate the potential biological mechanisms influencing mitochondrial processes, we attempted to identify the nuclear gene of action through which each nuclear genetic variant is associated with mitochondrial encoded gene expression. For missense variants, we assume a direct influence on the gene in which they are located and thus identify three nuclear genes associated with mitochondrial encoded gene expression (Table 1), all of which have a known role in mitochondrial processes. TBRG4 localizes to the mitochondria to modulate energy balance (particularly under stress) and plays a role in processing mitochondrial RNA (Boehm et al., 2017), MTPAP synthesizes the 3' poly(A) tail of mitochondrial transcripts, and LONP1 mediates the degradation of mis-folded or damaged polypeptides in the mitochondrial matrix. There is evidence that all three proteins are targeted to the mitochondria, and mass spectrometry experiments have identified the presence of these proteins in mitochondria (Smith and Robinson, 2016).
+
+**Table 1.**
+ Associations where a suggestive causal nuclear gene is implicated.‘Missense mutation’ denotes that the nuclear genetic variant associated with the expression of a mitochondrial-encoded gene is a missense mutation, ‘Mediation (Mitochondrial Gene)’ denotes that the expression of a nearby nuclear gene known to play a role in mitochondrial processes explains a significant proportion of the association between a nuclear genetic variant and the expression level of a mitochondrial encoded gene, and ‘Mediation (other nuclear gene)’ denotes a similar result whereby the nuclear gene identified is thought to have no known role in mitochondrial processes (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tissue</th>
+      <th>Peak SNP</th>
+      <th>MT gene</th>
+      <th>Missense mutation</th>
+      <th>Mediation (Mitochondrial Gene)</th>
+      <th>Mediation (other nuclear gene)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs7558127</td>
+      <td>MTND6</td>
+      <td>NA</td>
+      <td>PNPT1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>MTCO2</td>
+      <td>NA</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs11085147</td>
+      <td>MTCO2</td>
+      <td>LONP1</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs2304693</td>
+      <td>MTCYB</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs74025341</td>
+      <td>MTCYB</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>SLC7A6OS,ZFP90</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs7158706</td>
+      <td>MTND2</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>PPP2R3C</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs10172506</td>
+      <td>MTND5</td>
+      <td>NA</td>
+      <td>PNPT1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs74863981</td>
+      <td>MTCO1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>UBOX5,TGM3,LZTS3</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs76125482</td>
+      <td>MTND3</td>
+      <td>NA</td>
+      <td>FASTKD1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>MTND4</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>RP4-647J21.1,CCM2</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs11008009</td>
+      <td>MTND4</td>
+      <td>NA</td>
+      <td>MTPAP</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs2304694</td>
+      <td>MTND1</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs1692120</td>
+      <td>MTND1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>MYRF</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>MTATP6</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>CCM2</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs589809</td>
+      <td>MTATP6</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>FLT1</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs375640557</td>
+      <td>MTCO3</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>CCDC104</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>MTCO3</td>
+      <td>NA</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs10165864</td>
+      <td>MTRNR2</td>
+      <td>NA</td>
+      <td>PNPT1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs66892251</td>
+      <td>MTRNR2</td>
+      <td>NA</td>
+      <td>MTPAP</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs61988269</td>
+      <td>MTRNR1</td>
+      <td>NA</td>
+      <td>MRPP3</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs2304694</td>
+      <td>MTND6</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs2304694</td>
+      <td>MTND5</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs2304694</td>
+      <td>MTND1</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs12579998</td>
+      <td>MTND1</td>
+      <td>NA</td>
+      <td>MRPS35</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs2304693</td>
+      <td>MTCO3</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Skin (Not sun exposed)</td>
+      <td>rs2304693</td>
+      <td>MTCO2</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Skin (Not sun exposed)</td>
+      <td>rs2304693</td>
+      <td>MTCO3</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs7559561</td>
+      <td>MTCO2</td>
+      <td>NA</td>
+      <td>LRPPRC</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>MTCO2</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs1047991</td>
+      <td>MTND3</td>
+      <td>MTPAP</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>MTND4</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs10205130</td>
+      <td>MTND1</td>
+      <td>NA</td>
+      <td>LRPPRC</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs35739334</td>
+      <td>MTND1</td>
+      <td>NA</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>MTCO3</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>MTRNR2</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>MTND4L</td>
+      <td>TBRG4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
 
 For genetic variants in non-coding regions (from 49 unique associations), we first annotated variants using chromatin state predictions obtained from 128 cell types within the Roadmap Epigenetic project (Kundaje et al., 2015). Using tissue matched data (information available for 44 of the 49 non-coding variants), we find that none of the nuclear genetic variants associated with mitochondrial encoded gene expression fall in enhancer regions, which is not different to that expected by chance (p=0.676 using randomly selected variants matched for MAF, distance to nearest transcription start site and annotation). Under the assumption that associations between nuclear genetic variants and mitochondrial encoded gene expression occur ubiquitously across the body, we tested for the presence of peak variants in enhancer regions in any cell type. In total, 24 variants fall in enhancer regions, which again is not significantly different from that expected by chance (p=0.691, using randomly selected variants as before).
 
@@ -66,7 +379,7 @@ For the remaining non-coding peak genetic variants (from 36 unique associations)
 
 Finally, to test whether peak genetic variants may be acting on mitochondrial encoded gene expression via distal associations with genes in the nuclear genome, we performed association analyses between each peak genetic variant and all other nuclear genes not in cis (genes > 1 MB away or on different chromosomes). After correcting for multiple tests, we observe no significant associations (p>0.05 in all cases, Bonferroni correction). Collectively these results suggest that the common mechanisms by which nuclear genetic variation influences mitochondrial encoded gene expression could be either through functional mutations within nuclear genes themselves, or via their effects on the expression of nearby nuclear genes. There is also some evidence that the protein products of some of these genes then enter the mitochondria and bind directly to mitochondrial RNA. Genes identified via these approaches therefore represent the most promising candidates for causal nuclear genes that influence fundamental biological processes taking place in human mitochondria.
 
-## Replication and validation of associations
+### Replication and validation of associations
 
 In order to test the robustness of associations between common nuclear genetic variants and mitochondrial gene expression, we tested whether trans-genome eQTLs detected in multi-dataset tissues were significant in independent tissue-matched samples (see Materials and methods). In total, 61 eQTLs were found in multi-dataset tissues; to consider the signal replicated we required the association to be between the same variant (or nearest variant in LD (r2 >0.8) if the same variant was not present, or the nearest variant with r2 >0.5 otherwise) and mitochondrial gene in the same tissue type, with the same direction of effect and passing a significance threshold corrected for the number of tests (0.05/61 = 0.00082 in this case). In total we replicate 13/61 (~21.3%) of the mitochondrial trans-genome eQTLs (Figure 3A, example association shown in Figure 2B and C, Table 2), and for ten of these we find a link to a potential casual gene through mediation by a nearby nuclear gene or via functional mutations as outlined above (Table 1). We also find that an additional 12 associations replicate at the 5% level, and in total 43/61 of the associations show the same direction of effect in replication datasets; larger sample sizes may increase replication rates in these cases.
 
@@ -74,11 +387,277 @@ In order to test the robustness of associations between common nuclear genetic v
 
 **Figure 3.:** (A) Discovery versus replication beta estimates for significant associations between nuclear genetic variation and mitochondrial gene expression detected in discovery data at FDR 5%, (B) Validation of the association between rs2304694 and the expression of MTND4 using quantitative PCR in LCLs. MTND4 mRNA expression levels are normalised to GAPDH (theoretical quantities).
 
+**Table 2.**
+ Significant associations between nuclear genetic variants and the expression levels of genes encoded in the mitochondrial genome that replicate in independent tissue matched datasets.Point-wise permutation P values were generated by extrapolating from the underlying beta distribution (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tissue</th>
+      <th>Peak nuclear SNP</th>
+      <th>Chr</th>
+      <th>Position</th>
+      <th>A1</th>
+      <th>MAF</th>
+      <th>MT gene</th>
+      <th>P value</th>
+      <th>P value (FDR corrected)</th>
+      <th>P value (Point-wise Permutation)</th>
+      <th>Beta</th>
+      <th>Replication P value</th>
+      <th>Replication beta</th>
+      <th>Nuclear gene annotation</th>
+      <th>Nuclear SNP annotation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LCLs</td>
+      <td>rs10205130</td>
+      <td>2</td>
+      <td>44151572</td>
+      <td>C</td>
+      <td>0.426</td>
+      <td>MTND1</td>
+      <td>1.23E-10</td>
+      <td>6.40E-05</td>
+      <td>1.18E-10</td>
+      <td>0.023</td>
+      <td>5.70E-05</td>
+      <td>0.015</td>
+      <td>LRPPRC</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs10172506</td>
+      <td>2</td>
+      <td>55865469</td>
+      <td>C</td>
+      <td>0.062</td>
+      <td>MTND5</td>
+      <td>4.40E-40</td>
+      <td>2.00E-33</td>
+      <td>1.39E-39</td>
+      <td>0.058</td>
+      <td>2.00E-08</td>
+      <td>0.037</td>
+      <td>PNPT1</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs7558127</td>
+      <td>2</td>
+      <td>55866605</td>
+      <td>G</td>
+      <td>0.064</td>
+      <td>MTND6</td>
+      <td>5.26E-32</td>
+      <td>8.30E-26</td>
+      <td>5.29E-32</td>
+      <td>0.070</td>
+      <td>8.70E-07</td>
+      <td>0.043</td>
+      <td>PNPT1</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2627775</td>
+      <td>2</td>
+      <td>55877113</td>
+      <td>T</td>
+      <td>0.458</td>
+      <td>MTCO1</td>
+      <td>1.33E-09</td>
+      <td>4.10E-04</td>
+      <td>9.95E-10</td>
+      <td>0.017</td>
+      <td>6.30E-04</td>
+      <td>0.013</td>
+      <td>PNPT1</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs62165226</td>
+      <td>2</td>
+      <td>55878339</td>
+      <td>C</td>
+      <td>0.484</td>
+      <td>MTCO3</td>
+      <td>2.79E-08</td>
+      <td>7.60E-03</td>
+      <td>2.71E-08</td>
+      <td>−0.018</td>
+      <td>6.80E-06</td>
+      <td>−0.018</td>
+      <td>PNPT1</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>7</td>
+      <td>45143892</td>
+      <td>G</td>
+      <td>0.148</td>
+      <td>MTCO2</td>
+      <td>7.53E-31</td>
+      <td>8.60E-25</td>
+      <td>1.12E-30</td>
+      <td>−0.028</td>
+      <td>2.30E-08</td>
+      <td>−0.023</td>
+      <td>TBRG4</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs6973982</td>
+      <td>7</td>
+      <td>45143892</td>
+      <td>G</td>
+      <td>0.148</td>
+      <td>MTCO3</td>
+      <td>1.23E-25</td>
+      <td>6.40E-20</td>
+      <td>1.05E-25</td>
+      <td>−0.028</td>
+      <td>1.40E-04</td>
+      <td>−0.019</td>
+      <td>TBRG4</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Skin (Not sun exposed)</td>
+      <td>rs2304693</td>
+      <td>7</td>
+      <td>45148667</td>
+      <td>A</td>
+      <td>0.201</td>
+      <td>MTCO3</td>
+      <td>2.84E-12</td>
+      <td>2.10E-05</td>
+      <td>2.93E-12</td>
+      <td>−0.027</td>
+      <td>1.80E-03</td>
+      <td>−0.026</td>
+      <td>TBRG4</td>
+      <td>Missense</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs2304694</td>
+      <td>7</td>
+      <td>45148773</td>
+      <td>A</td>
+      <td>0.148</td>
+      <td>MTND1</td>
+      <td>2.34E-17</td>
+      <td>6.10E-12</td>
+      <td>3.19E-17</td>
+      <td>0.015</td>
+      <td>1.60E-08</td>
+      <td>0.024</td>
+      <td>TBRG4</td>
+      <td>Missense</td>
+    </tr>
+    <tr>
+      <td>LCLs</td>
+      <td>rs2304694</td>
+      <td>7</td>
+      <td>45148773</td>
+      <td>A</td>
+      <td>0.197</td>
+      <td>MTND4</td>
+      <td>2.35E-18</td>
+      <td>3.90E-11</td>
+      <td>2.22E-18</td>
+      <td>−0.029</td>
+      <td>1.40E-04</td>
+      <td>−0.019</td>
+      <td>TBRG4</td>
+      <td>Missense</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs12579998</td>
+      <td>12</td>
+      <td>27861446</td>
+      <td>G</td>
+      <td>0.174</td>
+      <td>MTND1</td>
+      <td>2.48E-23</td>
+      <td>6.50E-17</td>
+      <td>1.09E-23</td>
+      <td>−0.032</td>
+      <td>3.20E-05</td>
+      <td>−0.032</td>
+      <td>-</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous Adipose</td>
+      <td>rs12579998</td>
+      <td>12</td>
+      <td>27861446</td>
+      <td>G</td>
+      <td>0.174</td>
+      <td>MTND4</td>
+      <td>2.20E-12</td>
+      <td>1.70E-06</td>
+      <td>1.56E-12</td>
+      <td>−0.022</td>
+      <td>4.00E-04</td>
+      <td>−0.027</td>
+      <td>-</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>Skin (Not sun exposed)</td>
+      <td>rs11049103</td>
+      <td>12</td>
+      <td>27862081</td>
+      <td>A</td>
+      <td>0.179</td>
+      <td>MTND1</td>
+      <td>7.72E-12</td>
+      <td>2.10E-05</td>
+      <td>6.68E-12</td>
+      <td>−0.022</td>
+      <td>8.10E-04</td>
+      <td>−0.026</td>
+      <td>-</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>Whole Blood</td>
+      <td>rs74863981</td>
+      <td>20</td>
+      <td>3109875</td>
+      <td>A</td>
+      <td>0.099</td>
+      <td>MTCO1</td>
+      <td>4.24E-11</td>
+      <td>5.40E-06</td>
+      <td>5.25E-11</td>
+      <td>−0.024</td>
+      <td>6.60E-05</td>
+      <td>−0.022</td>
+      <td>UBOX5</td>
+      <td>Intronic</td>
+    </tr>
+  </tbody>
+</table>
+
 In order to uncover potential reasons for a lack of replication for some associations, we performed power analysis using the variance explained by each genetic variant on the associated mitochondrial encoded gene expression level in the discovery dataset, together with the replication sample size, and find that ~40.5 associations would be expected to replicate (at p=0.00082). Beyond this, we find significant differences between discovery and replication datasets for the proportion of mapped reads aligning to the mitochondrial genome in whole blood and subcutaneous adipose (Wilcoxon tests, p<0.05 after correcting for multiple tests). It is unclear whether this would influence our ability to replicate associations in these cases, although we note that PEER factors (which we include as covariates in our association analyses) have been shown to correlate with known technical and biological features of RNA sequencing data (Stegle et al., 2010; GTEx Consortium et al., 2017; Glastonbury et al., 2018) and as such should control for some systematic variation across individuals. Even so, given the unexplained lack of replication in some cases, it is possible that false positives may contribute to our results.
 
 To validate our results for one association (rs2304694-MTND4 in LCLs) using an alternative RNA quantification method, we obtained LCLs with homozygous reference and non-reference genotypes at rs2304694, matched for sex and ethnicity between the two groups, and measured expression levels of MTND4 using quantitative PCR. We find significant differences in the expression levels of MTND4 between samples that are homozygous for the reference allele at rs2304694 versus samples that are homozygous for the non-reference allele at rs2304694 (p=0.0325, one-way ANOVA, Figure 3B), thus validating the original association with the same direction of effect.
 
-## Links to complex disease
+### Links to complex disease
 
 Finally, since genetic variation modulating gene expression may underlie a large proportion of genetic associations with disease (Nicolae et al., 2010), we intersected peak mitochondrial trans-genome eQTL SNPs, as well as those in strong linkage disequilibrium (LD, r2 >0.8, calculated within our data), with significant associations documented in the NHGRI genome wide association study (GWAS) catalogue and find overlapping variants for two diseases/disease risk traits. First, the peak nuclear genetic variant associated with the expression of MTCYB in whole blood (rs782633) is in strong LD with rs782590, a variant that has been linked to systolic blood pressure (a known risk factor for heart disease and stroke) in a study of individuals with metabolic syndrome and controls (Kristiansson et al., 2012). We also note that the same peak nuclear genetic variant associated with the expression of MTCYB is also in LD with rs1975487 (r2 = 0.84 for Europeans in 1000 Genomes data), a variant that is associated with diastolic blood pressure in a larger GWAS for blood pressure (Ehret et al., 2016) (p=2×10−9). Rs1975487 was not present in our original analysis due to a missingness rate that was above our threshold for filtering (3%, 2% and 1.7% missing genotype rate in CARTaGENE, TwinsUK and GTEx data respectively). Mitochondrial processes have previously been associated with blood pressure (Dikalov and Dikalova, 2016), and given the association here, this may at least partially be modulated though changes in mitochondrial encoded gene expression. The genetic variant associated with mitochondrial encoded gene expression falls within the intron of PNPT1, suggesting that this may be the gene of action influencing blood pressure, although further fine mapping and functional work would be required to establish a causal link.
 
@@ -100,7 +679,7 @@ Finally, the common genetic variants we identify here as associated with mitocho
 
 ## Materials and methods
 
-## Data
+### Data
 
 Raw human RNA sequencing and genotyping data were obtained through application to five independent sequencing projects:
 
@@ -114,15 +693,15 @@ NIMH (National Institute of Mental Health) Genomics Resource: 50 bp single end R
 
 Geuvadis Project: 75 bp paired end RNA sequencing data from 462 LCL samples (Lappalainen et al., 2013) were downloaded from the European Nucleotide Archive under submission number ERA169774. Accompanying genetic variants from whole genome sequencing data (which were generated as part of the 1000 Genomes Project (Abecasis et al., 2012)) were downloaded from the 1000 genomes FTP site. We used phase three data that was phased and imputed (v5a.20130502).
 
-## Processing of RNA sequencing data
+### Processing of RNA sequencing data
 
 All RNA sequencing data derived from different projects were processed in the same way to ensure comparability across analyses. Raw RNA sequencing reads (fastq format) from 13,261 individual samples were trimmed for adaptor sequences, terminal bases with nucleotide quality below 20 and poly(A) tails > 4 bp in length, before being aligned to a reference genome (1000G GRCh37 reference, which contains the mitochondrial rCRS NC_012920.1) with STAR 2.51a (Dobin et al., 2013), using two-pass mapping, version 19 of the Gencode gene annotation and allowing for 1/18*read_length mismatches, rounded down to the nearest integer. Following this, in order to minimize the likelihood of incorrectly placed reads (particularly those associated with NUMT sequences), we used a stringent filtering pipeline, focusing only on reads that were properly paired and uniquely mapped. After mapping we removed low quality samples that had either <10 thousand reads mapping to the mitochondrial genome,<5 million total mapped reads,>30% of reads mapping to intergenic regions,>1% total mismatches or >30% reads mapping to ribosomal RNA using in house scripts and RNAseQC (DeLuca et al., 2012). To calculate transcript abundances, we used HTseq (Anders et al., 2015) with the ‘intersect non-empty’ model and version 19 of the Gencode gene annotation, before converting raw counts to transcripts per million (TPM). We plotted the log10 transformed distributions of all genes with mean TPM >2 per sample and removed visual outlier samples. We also calculated principle components using the same data and removed outlier samples. Finally, samples were only included in analyses if they had accompanying high quality genotyping information (see below) and there were at least 70 samples available for analysis within each tissue/dataset; in total after matching samples to genotyping data and quality control filtering we were left with 11,371 RNA sequencing datasets for analysis. We focused on mitochondrial encoded protein coding and ribosomal RNA genes only, since transfer RNAs showed lower sequencing coverage overall and were not expressed highly in all tissues and datasets. For analysis of mitochondrial encoded gene expression variation across genes and datasets, for TwinsUK data we used only unrelated samples (which involved picking one of each twin pair at random and combining these with unrelated samples). For NIMH samples, which were derived from 454 depression cases and 454 controls, we tested whether disease status may affect our results by comparing TPM values for mitochondrial-encoded genes between the two groups; in all cases we find no significant differences (Wilcoxon test, p>0.05 in all cases after correction for multiple testing).
 
-## Processing of genotyping data
+### Processing of genotyping data
 
 Genotyping data from different arrays and sequencing studies were processed separately. For TwinsUK data, only one twin from each twin pair was genotyped and thus processed, with data duplicated to represent the missing twin pair after quality control and filtering. Genotyping quality control and calculation of genetic principle components for Twins data was thus performed only on unrelated samples. Within each dataset, samples with high relatedness (>0.125), high SNP heterozygosity (visual outliers), non-matching sex, ambiguous X-chromosome homozygosity estimates or high SNP missingness (>5%) were removed. Autosomal SNPs were flipped to the positive strand and those with minor allele frequency (MAF) >1%, in Hardy Weinberg equilibrium (p>0.001) and not missing in more than 1% of individuals were then phased with shapeit2 (Delaneau et al., 2013) using no reference panel and default settings. Problematic sites were removed and remaining SNPs were used for imputation in 2 MB intervals using impute2 (Howie et al., 2009) with default settings, incorporating the 1000 Genomes phase three reference panel. Imputed data were then hard-called to produce genotypes at each site with a threshold of 0.9 and SNPs with information score lower than 0.8 were removed. Data from different arrays within each study were then merged and filtered to keep bi-allelic variants with minor allele frequency (MAF) >5%, in Hardy Weinberg equilibrium (p>0.001) and not missing in more than 1% of individuals for downstream analysis. After processing, we calculated genetic principal components and removed outlier samples by visual inspection. For Geuvadis data we used whole genome sequencing variant calls from the 1000 Genomes project (Abecasis et al., 2012). As such, these samples did not undergo phasing and imputation within our pipeline, but were filtered in the same way as genotyping data after this stage of the analysis.
 
-## Association analyses
+### Association analyses
 
 Expression QTL mapping was performed within each tissue and sequencing dataset. In each case, TPM values for thirteen mitochondrial encoded protein coding genes and two mitochondrial encoded ribosomal RNA genes were extracted before being log10 transformed (Supplementary file 4). Mitochondrial encoded gene expression distributions were median normalized, before outlier values were removed per gene (defined as three interquartile ranges above or below the upper and lower quartile respectively). To control for unidentified confounding factors in RNA sequencing data, we calculated PEER factors (Stegle et al., 2010) per dataset using all genes (nuclear and mitochondrial) that had a mean TPM >2. For genotyping data, we restricted the data to only those samples that had corresponding mitochondrial encoded gene expression values for the given dataset and calculated genetic principle components on this reduced set in each case. We then performed association analyses on each tissue and dataset using a linear model within PLINK (Purcell et al., 2007) for unrelated samples. For twin data, we calculated the relatedness matrix of samples before conducting association analyses with GEMMA (Zhou and Stephens, 2012). In each case we included sex, five genetic principle components, 5 or 10 PEER factors (five for samples sizes < 100, ten for sample sizes >= 100) and sequencing/genotyping batch (where applicable) as covariates. For TwinsUK data, the genotyping array was included as the batch covariate and sex was omitted as all samples were derived from females. For CARTaGENE data, which was original sequenced at higher and lower coverage as part of discovery and replication phase data respectively (Hodgkinson et al., 2014), the sequencing phase was included as the batch covariate. For GTEx data, where two different genotyping arrays were used, the genotyping array covariate correlated highly with one of the first genetic principle components for all tissues (|r| > 0.8 in all cases) and was therefore not included in the linear model. After analysis, QQ plots were visually assessed and show no skew. QQ plots for discovery associations that replicate at the nominal 5% level are shown in Figure 2—figure supplement 1. False discovery correction (Benjamini-Hochberg) was applied to raw p-values within each dataset by merging all genes (15) and genetic variants in each case, following the approach applied by the GTEx consortium (GTEx Consortium et al., 2017).
 
@@ -138,12 +717,12 @@ We also repeated all association analyses after using mitochondrial library size
 
 It has recently been shown that the post-mortem interval (PMI) appears to influence gene expression patterns in GTEx data (Ferreira et al., 2018). As such, to test for an effect in our data, we repeated association analyses for significant associations discovered in GTEx data and including PMI as a covariate (where PMI data were available). In both cases, we find that the P-values do not change dramatically (Atrial appendage (heart), rs11811165-MTND4L, original raw P value: 5.09 × 10−10, P value including PMI as a covariate: 3.50 × 10−9; Tibial nerve, rs932345-MTND4L, original raw P value: 6.47 × 10−10, P value including PMI as a covariate: 7.57 × 10−10).
 
-## Functional annotation and links to complex disease
+### Functional annotation and links to complex disease
 
 In order to identify the potential causal nuclear gene associated with mitochondrial encoded gene expression, we identified genes associated with the peak eQTL variant in the following ways. First, if the peak variant was a missense mutation, we assumed that its mode of action was via functional changes in the gene it was located in. Second, for non-coding mutations, we tested whether non-coding peak variants fell in enhancer regions using chromatin state predictions obtained from 128 cell types within the Roadmap Epigenetic project (Kundaje et al., 2015), using matched tissue data as outlined in the GTEx project (GTEx Consortium et al., 2017), and compared this against a set of random genetic variants matched for minor allele frequency, distance from transcription start site and genome annotation (using 1000 random sets to generate a P-value). Third, for non-coding peak variants, we tested for mediation via the expression of nuclear genes located near to the peak SNP. To do this, for each tissue we used the largest dataset available and restricted our analysis to unrelated samples (for TwinsUK data, this involved picking one of each twin pair at random and combining these with unrelated samples). Within each dataset we then again tested for a significant correlation between the peak SNP and the expression of the mitochondrial gene in question (p<0.05, linear model, t-test of regression coefficient), as well as a significant correlation between the peak SNP and the expression of any nuclear gene within 1 MB of the variant (p<0.05, linear model, t-test of regression coefficient). For genes/variants passing these criteria, we then tested whether the expression of the nuclear gene significantly mediated the relationship between the peak nuclear variant and the mitochondrial encoded gene expression using the module ‘mediation’ (testing significant mediation of the initial association via bootstrapping, requiring an average causal mediation effect with p<0.05 after FDR correction) within R. To prioritize potential causal genes within this framework, we first selected nuclear genes with a known role in mitochondrial processes (any gene listed in the Mitocarta database (Calvo et al., 2016), shown to influence mitochondrial RNA processing (Wolf and Mootha, 2014) or listed as being involved in mitochondrial disorders in the Genomics England PanelApp - https://panelapp.genomicsengland.co.uk), before moving on to any other nuclear gene. Finally, we tested whether non-coding peak variants were associated with the expression of more distal genes (those whose transcription start site was >1 MB away, or on another chromosome) within a linear model (and meta-analysis where relevant) including the same datasets, methods and covariates as the original discovery analysis.
 
 In order to identify whether genetic variants associated with mitochondrial encoded gene expression may play a role in complex disease, we first identified any SNP in linkage disequilibrium (r2 >0.8, calculated using datasets and samples used in this study) with peak eQTL SNPs in any of the datasets used for the tissue type in which the association was identified. We then tested whether any of these variants overlapped with significant associations documented in the NHGRI GWAS catalogue (for association where p<5e-8). To test whether associations between nuclear genetic variants and mitochondrial encoded gene expression that overlap GWAS signals are significant in individuals of European descent, we plotted the first two genetic principal components against those derived from 1000 genomes samples with known ancestry for any dataset that had associated RNA sequencing data from whole blood. We then selected samples that clustered with Europeans in 1000 genomes data by visual inspection and re-ran association analyses as before for whole blood data from CARTaGENE, TwinsUK and GTEx, before performing meta-analysis to calculate P-values.
 
-## Validation
+### Validation
 
 In order to validate the association between rs2304694 and expression levels of MTND4 in LCLs, we obtained ten LCL samples carrying the homozygous reference genotype and ten LCL samples carrying the homozygous non-reference genotype for rs2304694 from the Coriell Institute for Medical Research, matched between the two genotype groups for sex and ethnicity (Supplementary file 5). The following cell lines were obtained from the NIGMS Human Genetic Cell Repository at the Coriell Institute for Medical Research: GM11919, GM11932, GM12003, GM12414, GM12717, GM12842. The following cell lines were obtained from the NHGRI Sample Repository for Human Genetic Research at the Coriell Institute for Medical Research: GM20582, GM20822, HG00118, HG00254, HG00284, HG00290, HG01524, HG01625, HG01631, HG01777, HG01800, HG01804, HG01812, HG01815. Cultures were tested as standard by Coriell Cell Repositories before shipping and found free of mycoplasma, and microsatellite profiling was used to confirm identity (see ‘Quality Control’ at www.coriell.org). Cells were handled as per supplier’s instructions. Total RNA was extracted using the RNeasy kit (Qiagen) according to the manufacturer's instructions. 1 ug total RNA was pre-treated with 2 units of Turbo DNase (Fisher Scientific) and subsequently reverse-transcribed using the ProtoScript First Strand cDNA synthesis kit (New England BioLabs) with random primers. The first strand reaction was diluted five fold with deionised water and 1% (vol/vol) was used as template for each real-time PCR (RT-PCR) reaction. RT-PCR was carried out using QuantiNova SYBR Green (Qiagen) and a StepOnePlus RT-PCR System (Applied Biosystems). Primers used were as follows: GAPDH (F: TCTGCTCCTCCTGTTCGACA, R: AAAAGCAGCCCTGGTGACC), MTND4 (F: CACTAAACATTCTACTACTCACTCTC, R: GGAGTCATAAGTGGAGTCCGTA). Expression levels of MTND4 were determined after normalization to GAPDH (theoretical quantities), and two technical qPCR replicates were performed per sample before being averaged. Outlier values were removed (defined as three interquartile ranges above or below the upper and lower quartile respectively) within each genotypic category, leaving 19 samples for analysis. This association was chosen for replication analysis since it is associated with mitochondrial encoded gene expression across multiple tissue types and is significantly associated with MTND4 in a dataset and tissue type for which we had access to the relevant biological material (Geuvadis dataset, LCLs).

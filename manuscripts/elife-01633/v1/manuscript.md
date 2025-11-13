@@ -10,4 +10,4 @@
 
 ## Abstract
 
-There are many reasons for submitting your best work to eLife , especially if you are an early career researcher.
+There are many reasons for submitting your best work to eLife, especially if you are an early career researcher.

@@ -30,6 +30,14 @@ Recent work has provided evidence that the orbitofrontal cortex (OFC) and hippoc
 
 Participants completed a task where they gathered rewards in an environment where a latent, generalizable structure was available. Throughout the experiment, images of trial-unique items from three categories appeared beneath a context, denoted by a scene (Figure 1). Participants decided whether to ‘sell’ each item or pass. If they sold, they would receive or lose reward probabilistically, as determined by the combination of item category and context. Participants saw each of these combinations in short batches of trials termed mini-blocks. Importantly, the contexts could be clustered based on the expected values associated with each item category. This structure provided an opportunity to link these contexts together using an abstract, LS representation based on the distribution of category-value associations over contexts. We hypothesized that participants would form, and later use, this representation to generalize adaptive behaviors to new conditions without any need for reinforcing feedback.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig1-v2.jpg)
+
+**Figure 1.:** (a) In each trial of the training and generalization phases, participants were asked to make a decision to sell or pass on an image, the value of which depended on contexts shown above the image. Throughout the two training phases, participants received feedback on every trial, but not during generalization. Participants saw three categories of images in the same context over small batches of trials for each unique combination (termed a mini-block) before switching to a new context. (b–d). The left tables show the reward structure for example context-category pairs across the three phases of the experiment in a single session. Cells show the probabilities of reward for each pair. The right schematics illustrate clustering of contexts by category-values into latent states (LSs; blue and orange arrows) and inference of values via structured knowledge (red arrows). Only two LSs are shown for visualization. Latent State (LS) Hands (H), Foods (F), Objects (O), and Animals (A). (b) In the initial training phase, participants were presented with trial-unique images from three categories of images. These contexts could be grouped together through an abstract LS representation based on the similarity of their category-value associations. (c) Participants were later trained on three new categories in a subset of the previous contexts. Grayed out columns indicate contexts that were left out of this phase. Thus, the values of new categories were trained in only one context in each LS cluster. (d) In the generalization phase, participants were asked to make decisions about the left out, novel context-category combinations without feedback. Participants had to use their knowledge of the LSs linking contexts together learned in the initial training. See Figure 1—figure supplement 1 for a table laying out the full experimental design over three experimental sessions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note that contexts seen in new category training and held out of generalization were not necessarily from Initial Training 3, but these are shown only as an example here. The mixed generalization phase did not take place in session 1. Only participants who passed the accuracy criterion in the generalization phase in session 1 completed the mixed generalization phase in the scanner, while participants who failed to meet this criterion completed this phase behaviorally. All other sections of the experiment took place outside of the scanner.
+
 This hypothesis was tested across three phases (Figure 1—figure supplement 1). During phase 1, participants learned about the abstract LSs using three item categories (hands, foods, and leaves) across nine contexts (Figure 1b). In the next phase, participants learned the values of three new item categories (faces, animals, and objects) in three of the nine contexts; one drawn from each LS (Figure 1c). Then, in a final generalization phase, they were tested on the remaining six contexts using the three new image categories, without feedback. Optimal performance depended on generalizing the new category values learned during the second phase to the held-out contexts (Figure 1d). We expected that this inference would depend on those contexts being linked to a LS representation within a generalizable task representation based on the expected values of categories encountered during the first phase.
 
 ## Results
@@ -38,25 +46,53 @@ Participants were tested in three sessions. In session 1, participants completed
 
 In session 2, all participants carried out the same task, but with new context stimuli – requiring them to learn which contexts linked to which LSs anew. This session also included additional blocks of the generalization phase with conditions pseudo-randomized (rather than organized in mini-blocks). fMRI participants completed these additional blocks in the scanner and the rest of the experiment behaviorally. In session 3, all participants completed a shortened version of the training as a reminder of the task and were presented with new pseudo-randomized generalization blocks (in the scanner for fMRI participants).
 
-## Abstract task structure affords inference of novel behaviors without feedback
+### Abstract task structure affords inference of novel behaviors without feedback
 
 Analysis of learning curves within mini-blocks of trials demonstrates that participants immediately made use of the abstract task structure in the first segment of the generalization phase. Through the first few trials of each mini-block of the initial and new category training, fMRI participants’ accuracy steadily improved. In contrast, in the generalization phase, accuracy was near ceiling from the first trial (mean p(correct)=0.96, SD = 0.06; Figure 2a). The rate of this learning curve in the generalization phase was significantly lower than either of the other phases (Figure 2b), consistent with participants inferring an adaptive behavior without need for additional experience or feedback (Wilcoxon signed rank tests: Z’s ≥ 3.21, p’s ≤ 0.004, Bonferroni-corrected for multiple comparisons). Similar results were observed in participants who completed the behavioral version of the task in session 2 and passed the generalization accuracy criterion (Figure 2—figure supplement 2a), with a significantly lower rate of change in the accuracy learning curve in the generalization phase compared to the initial training or new category training phases (Wilcoxon signed rank tests: W’s = 45, p’s = 0.01, Bonferroni-corrected for multiple-comparisons).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig2-v2.jpg)
+
+**Figure 2.:** (a) Mean accuracy across participants for first six trials of the first nine mini-blocks of initial and new category training, as well as blocked generalization phase. Dashed line indicates chance-level performance. (b) Estimated exponential rate of change in mean accuracy in the first six trials for all mini-blocks in each phase. (c) Mean reaction times (RT) for each trial in each of the first nine mini-blocks for each of these phases. Shaded area represents standard error of the mean (SEM). Mean and standard error were calculated from the log-transformed RTs. (d) Estimated exponential rate of change in RT for first six trials within each phase for the first mini-blocks within the first three contexts in presentation order. For panels (b and d) each dot represents a single participant, horizontal and vertical bars represent the mean and SEM, respectively. *p<0.05, **p<0.01, Wilcoxon signed rank test, corrected for multiple comparisons. (e) RTs for trials from the pseudo-randomized generalization phase from sessions 2 and 3 during fMRI scanning where latent states remained the same or switched from the previous trial, while the context switched or stayed the same. RTs have been log-transformed and z-scored within session for each participant. Each line represents a participant, black dashed line indicates mean, and error bars indicate SEM. †p<0.05, †††p<0.0001, repeated-measures t-test. See Figure 2—figure supplement 1 for the mean accuracies for the fMRI and behavioral groups for each phase and session of the experiment. See Figure 2—figure supplement 2 for data from behavioral group participants who passed the generalization accuracy criterion in session 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** No statistical comparison between groups was made in the mini-blocked generalization phase of session 1 as accuracy in this phase was used to define these groups. Each point represents a single participant, horizontal bars represent the group mean and vertical bars indicate the standard error of the mean. **p<0.01, *p<0.05, ^p<0.1, Wilcoxon rank sum tests between groups.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Mean accuracy across participants for first six trials of the first nine mini-blocks of initial and new category training, as well as blocked generalization phase. Dashed line indicates chance-level performance. (b) Estimated exponential rate of change in mean accuracy in the first six trials for all mini-blocks in each phase, across participants. (c) Mean reaction times (RT) for each trial in each of the first nine mini-blocks for each of these phases. Shaded area represents standard error of the mean (SEM). Mean and standard error were calculated from the log-transformed RTs. (d) Estimated exponential rate of change in RT for first six trials within each phase for the first mini-blocks within the first three contexts in presentation order. For panels (b and d), each dot represents a single participant, and horizontal and vertical bars represent the mean and SEM, respectively. *p<0.05, Wilcoxon signed rank test, corrected for multiple comparisons, ^p<0.05, uncorrected. (e) RTs for trials from the pseudo-randomized generalization phase from sessions 2 and 3 where latent states remained the same or switched from the previous trial, while the context switched or stayed the same. RTs have been log-transformed and z-scored within session for each participant. Each line represents a participant, black dashed line indicates mean, and error bars indicate SEM. †p<0.05, ††p<0.01, repeated-measures t-test.
 
 Notably, high accuracy during generalization was accompanied by elevated reaction times (RT; mean = 4.04 s, SD = 1.7 s) on the first trial, with a sharp drop-off subsequently (mean = 1.15 s, SD = 0.08 s; Figure 2c). The rate of speeding was significantly steeper in the generalization phase compared to the initial or new category training phases averaged across the first three contexts in each phase (Wilcoxon signed rank tests: Z ≥ 3.46, p≤0.002, Bonferroni corrected for multiple comparisons; Figure 2d). The same pattern in the rate of speeding was observed in participants from the behavioral group who passed the generalization criterion in session 2 (generalization versus initial training RT rates: W = 36, p=0.047, Bonferroni-corrected for multiple-comparisons; Figure 2—figure supplement 2d). Thus, rather than immediately applying a structure learned incidentally during training, participants took additional time to infer values during the first generalization trials – indicative of a concerted, deliberative process.
 
 As each LS was repeated twice via two contexts during generalization, we could test how previously encountering a LS impacted RTs during a repetition. Participants were faster for the second presentation of contexts from the same LS during generalization compared to contexts from different LSs (repeated measures t-tests: (15)≥2.13, p’s < 0.05, d’s ≥ 0.53), indicating that additional inferences were made more quickly when a LS had been accessed previously (Figure 3a). Comparison of the rate of exponential curves fit to these RT data in each participant demonstrated that these curves were steeper in the first context compared to the second context averaged across LSs (Wilcoxon signed rank test: Z = 3.36, p=0.0007), but there were no differences in the rate of these curves according to the sequential order of LSs (Wilcoxon signed rank test: Z ≤ 1.13, p≥0.2, uncorrected; Figure 3b). A numerically similar pattern of results was observed for the rate of change for learning curves in the behavioral group who passed the generalization criterion, but did not reach statistical significance (Figure 3—figure supplement 1). These data argue that participants were faster in completing the transfer of new category values to contexts if a context belonging to the same LS representation had already been activated, but did not necessarily use information about other LSs they had encountered in narrowing this inference problem.
 
-## Latent task states continue to influence behavior after initial inference
+![Figure 3.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig3-v2.jpg)
+
+**Figure 3.:** Participants were significantly slower on the first trial of mini-blocks when encountering the first context in a LS compared to the second context in the same LS, but not in subsequent trials. (a) RT curves for mini-blocks organized by the order of LSs and contexts encountered. Lines indicate means, shaded area indicates the SEM. (b) Rates of exponential functions fit to these RT curves. Each dot represents a single participant. ††p<0.001, Wilcoxon signed-rank test, *p<0.05, Bonferroni-corrected for multiple comparisons, ^p<0.05, uncorrected. See Figure 3—figure supplement 1 for data from the behavioral group participants who passed the generalization criterion in session 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Participants were significantly slower on the first trial of mini-blocks when encountering the first context in a LS compared to the second context in the same LS, but not in subsequent trials. (a) RT curves for mini-blocks organized by the order of LSs and contexts encountered. Lines indicate means, shaded area indicates the SEM. (b) Rates of exponential functions fit to these RT curves. Each dot represents a participant. Horizontal bars indicate the mean and vertical bars the SEM.
+
+### Latent task states continue to influence behavior after initial inference
 
 After an initial inference, participants may have formed rules for responding to the new context-category combinations and no longer used the LS representation throughout the scanned generalization task. We reasoned that if participants are continuing to utilize the latent abstract task structure, this would be evident in switch costs when the active LS changed between-trials (Collins and Frank, 2013). To avoid conflating LS and context switches, we isolated this analysis to only trials where the context changed between trials. We found a significant switch cost in RT for trials when the LS changed versus stayed the same between trials (repeated-measures t-test: t(15) = 2.33, p=0.03, d = 0.58; Figure 2e), which did not differ between scanner sessions (p=0.8). The same effect was independently observed in participants in the behavioral group who passed the generalization criterion (Figure 2—figure supplement 2; t(8) = 3.45, p=0.009, d = 1.15). These data indicate that participants used these LS representations throughout the scanned task. Participants were also faster when both the context and LS remained the same (t(15) = 5.29, p<0.0001, d = 1.32).
 
-## Generalization behavior is best explained by a hierarchical LS representation
+### Generalization behavior is best explained by a hierarchical LS representation
 
 Notably, generalization in this task might not only be achieved through the use of a LS representation to bridge contexts. For example, an associative retrieval process could also explain these results if newly trained category values could be transferred through mediated retrieval of contexts held-out of the generalization phase via shared category-value associations learned in the initial training (Kumaran and McClelland, 2012; Schapiro et al., 2017).
 
 To test this possibility, we compared four alternative computational models that generated predictions for participants’ RTs based on different memory network configurations where contexts, category-values, and LSs were represented as nodes with different levels of activation.
 
 First, the conjunctive associative retrieval (CAR) model represented each condition as a combination of category and context features, and linked these conjunctive representations to each other based on shared features, but had no representation of LS (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig4-v2.jpg)
+
+**Figure 4.:** Each panel shows simplified schematics for spreading activation in four alternative model networks for a trial involving a decision about an image of an object in context A1 (i.e. A1-O-). (a) Conjunctive associative retrieval (CAR) model where each node represents a context-category conjunction with a particular value. (b) Independent associative retrieval (IAR) model where contexts and category-values are represented separately. (c) Latent state (LS) model where category-values are linked to a LS node, without any representation of context. (d) Hierarchical LS model with contexts clustered around LSs, and category-values linked to each context. Border and arrow colors signify mode of retrieval. Below each schematic are scatterplots for z-scored reaction times for all participants in all correct trials of the generalization phase and simulated reaction times from each model, color-coded by trial type. See Figure 4—figure supplement 1 for further details on fit of each model to the data. H, Hands; A, Animals; F, Faces; O, Objects. Values: +, positive expected value; −, negative expected value.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data are from session 2 of the mini-blocked generalization phase for participants in the fMRI group. (a) Root-mean squared deviation between data simulated from each model and participants’ z-scored reaction times for different trial-types. †p<0.05, ††p<0.01, repeated-measures t-tests, Bonferroni corrected for multiple comparisons. (b) Negative log-likelihoods for each participant in the fMRI group for conjunctive associative retrieval (CAR), independent associative retrieval (IAR), latent state (LS), and hierarchical latent state (HLS) models. Lower values indicate a better fit. (c) Values for three rate parameters governing rate of activation change in nodes due to direct (α1), mediated (α2), and incidental retrieval (α3). (d) Cross model comparison using best fitting parameters from 16 participants to generate simulated data, tested with alternative. Values indicate negative log-likelihood of model fits. **p=0.001, *p<0.05, Wilcoxon signed rank test, Bonferroni corrected for multiple comparisons.
 
 The independent associative retrieval (IAR) model similarly did without a LS representation, but rather than only representing contexts and categories as conjunctions, maintained independent representations of each and linked contexts to each other based on shared category-value associations (Figure 4b).
 
@@ -66,13 +102,76 @@ Each of these models relied on the basic assumption that RTs depend on the degre
 
 The HLS model provided the best fit to participants’ RT data in the fMRI group in sessions 1 and 2, and the nine participants in the behavioral group who passed the generalization accuracy criterion in session 2 (Table 1; Figure 4—figure supplement 1a). Comparison of the three rate parameters of this model showed an ordering consistent with the expectation that the degree of activation of items should fall off at a distance from the items presented on the current trial (Figure 4—figure supplement 1b), where values for α1 were significantly greater than α2 and α3 (Wilcoxon signed rank test: Z’s = 3.51, p’s = 0.001, Bonferroni corrected), and values for α2 were significantly greater than α3 (Z = 2.68, p=0.02, Bonferroni corrected).
 
+**Table 1.**
+ Sum of negative log-likelihood for four alternative models across participants and fraction of participants where each model was lowest in this measure in parentheses, for each group and session.Table 1—source data 1.Sum of negative log-likelihoods for individual participants in fMRI and behavioral groups for each model in each session.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Conjunctive associative retrieval</th>
+      <th>Independent associative retrieval</th>
+      <th>Latent state</th>
+      <th>Hierarchical latent state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>fMRI group – session 1</td>
+      <td>3537.78 (1/16)</td>
+      <td>3227.38 (2/16)</td>
+      <td>3428.23 (0/16)</td>
+      <td>3061.04 (13/16)</td>
+    </tr>
+    <tr>
+      <td>fMRI group – session 2</td>
+      <td>3849.60 (0/16)</td>
+      <td>3413.20 (4/16)</td>
+      <td>3569.10 (0/16)</td>
+      <td>3264.13 (12/16)</td>
+    </tr>
+    <tr>
+      <td>Behavioral group – session 2</td>
+      <td>2063.65 (0/9)</td>
+      <td>1851.76 (0/9)</td>
+      <td>1921.61 (0/9)</td>
+      <td>1713.73 (9/9)</td>
+    </tr>
+  </tbody>
+</table>
+
 To understand why the HLS model better accounted for participants’ data, we compared RTs simulated from the best fit model parameters for each participant with each of the four models, focusing on data from session 2 for the fMRI group, as it was more pertinent to the neuroimaging results (Figure 4a–d). We organized these data by the order of presentation of each context associated with each LS (as in Figure 3), switches of category mini-block, and all other trials within a mini-block and then compared the root-mean squared deviation (RMSD) of each model for each trial type. We found that both the LS models provided a better fit on category switch trials compared to the CAR model (repeated-measures t-test, t(15) ≥ 4.76, p’s ≤ 0.002, d ≥ 1.19, Bonferroni-corrected for multiple comparisons). Numerically, the HLS model also provided a better fit to these trials than the IAR model, though this difference was not statistically significant (t(15) = 2.02, p=0.06, d = 0.50, uncorrected). The two associative retrieval models tended to systematically overestimate RTs on these category switch trials, likely because category-values associated with the trained context in the new category training phase were only activated by mediated retrieval, whereas in the LS models these category-values benefited from inherited direct retrieval of the higher-order LS representation. The HLS model also had lower RMSD for the first presentation of the second context compared to the LS model (t(15) = 4.76, p=0.001, d = 1.19, Bonferroni-corrected for multiple comparisons). As the LS model had no separate representation of context, any activation related to a prior LS would be fully transferred to its second presentation through another context, resulting in an underestimation of RTs. Instead, the results were more consistent with separate context representations that inherit activation from a higher-order LSs, that is, the use of a HLS structure.
 
-## Representation of an abstract task representation in multi-voxel activity patterns
+### Representation of an abstract task representation in multi-voxel activity patterns
 
 Having verified that participants form and use an abstract task representation to control behavior, we sought to test the neural systems that support this representation. We carried out a representational similarity searchlight analysis (RSA) using multiple linear regression to compare empirical representational dissimilarity matrices (RDMs) from pattern activity to hypothesis RDMs quantifying the predicted distances between conditions based on LSs, contexts, item categories, expected value, interactions between these factors, and control regressors (Figure 5—figure supplement 1).
 
 We found evidence for a LS representation in bilateral dorsal- and ventrolateral prefrontal cortex (PFC) with a rostral distribution, as well as the bilateral precuneus, left middle temporal gyrus, and bilateral inferior parietal lobules (Figure 5a; Supplementary file 1). Comparing this statistical map with resting-state functional networks from Yeo et al., 2011 revealed that this LS representation overlapped most with a frontoparietal network centered on the inferior frontal and intraparietal sulci (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-v2.jpg)
+
+**Figure 5.:** Each upper panel shows hypothesis representational dissimilarity matrix (RDM) for task factors. Lower panels show t-statistic map from a searchlight analysis testing these predictions in pattern activity projected onto inflated cortical surfaces. All maps are defined with a cluster forming threshold of p<0.001 and corrected for multiple comparisons with permutation tests for defining a cluster extent threshold at p<0.05. These maps include representations of (a) latent states (LSs), (b) contexts, and (c) value. Cluster extent threshold for each contrast is given by the value of k. A, B, C refer to distinct LSs. A1, B1, C1 and A2, B2, C2 refer to distinct contexts that belong to each of those LSs. F, Faces; A, Animals; O, Objects. +, positive value; −, negative value. See Figure 5—figure supplement 1 for comparison of LS map to 17 network parcellation by Yeo et al., 2011, Figure 5—figure supplement 2 for the statistical map for the item category regressor, and Figure 5—figure supplement 4 for interaction terms. See Figure 5—figure supplement 3 for comparison of main effects of interest within each session, and Figure 5—figure supplement 5 for a view of all regressors included in the multiple linear regression model.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Numbers correspond to network identifications from the same study with percentage of voxels within each network shown in parentheses and represented by the pie chart. Surface renderings of the three networks that included the largest proportion of voxels are shown on an inflated cortical surface. Bottom right-hand corner shows the t-statistic map for the LS regressor from the representational similarity analysis searchlight for comparison, also shown in Figure 5a.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Left panel shows hypothesis representational dissimilarity matrix for categories (based on animacy). Right panel shows the cluster corrected t-statistic map from a searchlight analysis projected onto an inflated cortical surface. This statistical map was thresholded with a cluster forming threshold of p<0.001 and corrected for multiple comparisons using cluster-based permutation tests at p<0.05. The cluster extent threshold from this test is given by value of k.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** All statistical maps were thresholded with a cluster forming threshold of p<0.001 and corrected for multiple comparisons using permutation tests to find a cluster extent threshold (k) at p<0.05, except for the context effects in session 3 where no clusters passed this threshold (these data are shown at p<0.001, uncorrected).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a) Results showing where pattern activity was modulated by the negative interaction of latent state and value. Nuisance regressors for interactions between contexts and (b) value and (c) categories. All maps are defined with a cluster forming threshold of p<0.001 and corrected for multiple comparisons with permutation tests for defining a cluster extent threshold at p<0.05.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (a) All hypothesis RDMs included in the multiple regression analysis for searchlight and ROI-based representational similarity analyses (RSA). Color bar indicates dissimilarity. A, B, C refer to distinct latent states (LSs). A1, B1, C1 and A2, B2, C2 refer to distinct contexts that belong to each of those LSs. F, Faces; A, Animals; O, Objects. +, positive value; −, negative value. (b) Variance shared (R2) between hypothesis RDMs.
 
 In contrast, context was associated with activity in the bilateral fusiform gyri (Figure 5b). Expected value was associated with activity in OFC, as well as left superior frontal and angular gyri (Figure 5c). Item category was robustly represented throughout visual areas and PFC (caudally on the left and broadly on the right; Figure 5—figure supplement 3).
 
@@ -80,9 +179,17 @@ To test whether these results were consistent across fMRI sessions, we carried o
 
 As a secondary question, we were also interested in whether higher-order representations of latent task states and expected value influenced each other, or perceptual-semantic representations of item category. To test this, we included regressors for hypothesis RDMs that captured interactions between LSs, value, and item category, as well as control regressors for interactions of these factors with context. Interactions between item category with value and LS were not significant; though items with same value in the same LS were represented more similarly in ventral temporal cortex (VTC) (Figure 5—figure supplement 1), observations recapitulated in ROI-based analyses of activity within the VTC (Figure 6b).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig6-v2.jpg)
+
+**Figure 6.:** Plots show distribution of beta coefficients across participants from multiple linear regression analyses comparing hypothesis representational dissimilarity matrices (RDMs) with empirical RDMs estimated for each ROI. Each point represents a single participant, with means represented by horizontal bars and SEM as vertical bars. (a) Orbitofrontal cortex (OFC), (b) ventral temporal cortex (VTC), and (c) hippocampus (HPC). *p<0.05, **p<0.01, ***p<0.0001 one-sample t-tests against zero. See Figure 6—figure supplement 1 for results of second-level tests on value and latent state terms restricted to the OFC ROI.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63226/elife-63226-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Maps of t-statistics have been projected onto an inflated cortical surface to show effects for (a) latent states and (b) value. Both maps were defined with a cluster forming threshold of p<0.001 and corrected for multiple comparisons with permutation tests for defining a cluster extent threshold at p<0.05. The cluster extent threshold is given by the value of k.
+
 We also conducted ROI-based RSAs focused on HPC and OFC, given a priori expectation that these regions are involved in representing latent task structure during task performance. RSAs within these ROIs were null for LS representations (Figure 6a,c). To test these effects at a finer grain, we conducted second-level tests of the whole-brain searchlight analysis masked by these ROIs. Here, we found signals consistent with LS and expected value representations in central OFC, but not HPC (Figure 6—figure supplement 1; Supplementary file 2). There were significant effects for category representations in both of these ROIs, in line with broad discrimination between semantically and perceptually distinct categories of stimuli in these regions (Chikazoe et al., 2014; Kuhl et al., 2012; McNamee et al., 2013; Pegors et al., 2015).
 
-## Univariate contrast of accuracy
+### Univariate contrast of accuracy
 
 Lastly, we tested a univariate contrast of correct and error responses. Although less functionally specific than the above analyses, we expected this contrast to reveal regions broadly involved in engaging with this generalization task. This contrast revealed greater activation in the HPC and OFC on correct responses (Figure 7; Supplementary file 3).
 
@@ -112,7 +219,7 @@ In sum, we have discovered evidence of a neural instantiation of a long-supposed
 
 ## Materials and methods
 
-## Experimental procedure
+### Experimental procedure
 
 The study design and analyses were pre-registered on the Open Sciences Framework prior to collecting the data (https://osf.io/x6fmb). Participants completed an acquired equivalence task where they learned that nine contexts belonged to three different LSs (three per state) on the basis of their shared value associations for three object categories. They then used this knowledge to complete a generalization task where they inferred values for a new set of categories in contexts with which they had not been previously paired. A schematic overview of the structure of this experiment is provided in Figure 1 and Figure 1—figure supplement 1.
 
@@ -142,21 +249,27 @@ Participants were given ample information about the structure of the task in ins
 
 At the end of the third session, outside of the scanner, participants completed a similarity judgment task for the context natural scene images that were shown in their specific generalization test. Participants were shown these images on a black background in random starting positions and asked to use the mouse to drag and drop these images on-screen so that their distances reflected the similarity. Participants were specifically instructed not to use any information about to which kingdoms the contexts belonged, but only the visual content of the image. The Euclidean distances between these images were then used to estimate a subjective, participant-specific estimate of the visual similarity of these images used as a nuisance regressor for RSA analyses.
 
-## Participants
+### Participants
 
 Fifty participants were recruited for this study. Four participants were found to not meet eligibility requirements for the study after session 1 (e.g. they had piercings or implants that were not compatible with MRI), and their data was not analyzed. Twenty-four did not reach criterion performance in the generalization phase (see above) in session 1 and were invited to complete the second and third sessions in behavioral testing settings rather than in the scanner. Six of these participants dropped out of the study before completing both remaining sessions and two did not have complete data due to computer errors. Twenty-two participants passed the generalization criterion and were asked to complete the remaining two sessions in the scanner. Of these participants, two had low accuracy in the generalization phase in the fMRI sessions, indicating a failure to learn the task structure, and their data was not analyzed. Two further participants were excluded because of excessive movement (more than one voxel) in more than one run. One participant had excessive movement only in the last run of the last session and this single run was discarded from analysis. One participant could not complete the experiment due to problems with the scanner on the day of testing, and one participant dropped out of the study before finishing both scanned sessions. In total, 16 participants (10 female, mean age 21.3 years, SD = 3.3 years) passed the generalization criterion on the first day, completed both days of the fMRI experiment and were included in analyses, while 16 participants (11 female, mean age 22.3 years, SD = 2.5 years) did not pass this criterion on the first day and completed the remaining 2 days of testing in behavioral sessions. All participants gave their written informed consent to participate in this study, as approved by the Human Research Protections Office at Brown University, and were compensated for their participation.
 
 The sample size for this study was determined by the target sample size for the fMRI experiment. Data collection was ceased once 16 participants had completed both fMRI scanning sessions while meeting eligibility for inclusion in our analysis (i.e. very little movement and high accuracy during the generalization phase of the experiment). The target sample size was based on a related experiment that successfully used RSA within an OFC ROI (Chan et al., 2016). This target sample was halved, as the current experiment involved two sessions of fMRI scanning and we expected within-subject measurement error to be reduced by this dense sampling approach.
 
-## Materials
+### Materials
 
 Eighteen images of natural scenes from Konkle et al., 2010 were used to represent contexts within kingdoms (nine for session 1 and nine for sessions 2 and 3). These scenes were chosen to be distinct from each other in content and did not include any visible animals, people, or man-made objects (i.e. the image categories included in the fMRI task). Over the course of the experiment, participants saw 360 images in the initial category training for each image category (randomly sampled from a larger set of 468 images). Hand images were taken from the 11 k Hands Database (Afifi, 2019), leaf images from the Leafsnap database (Kumar et al., 2012), and food images from the Bank of Standardized Stimuli (BOSS) (Brodeur et al., 2014), as well as the Foodpics database (Blechert et al., 2014). In the new category training and generalization phases, 546 images were used from each stimulus category. These included faces from the Chicago Face Database (Ma et al., 2015), animals from the BOSS and CARE databases (Russo et al., 2018), and man-made objects, also from the BOSS database. All category images were cropped or padded with white pixels to fit within a square image with a white background.
 
-## Exponential curve fitting
+### Exponential curve fitting
 
-To test the rate of change in RTs and accuracy, we fit an exponential function to these data in the form ofy=abxwhere y indicates the predicted trial RT or mean accuracy, b indicates the trial number, and a and x are free parameters that determine the scale and rate of the function respectively. The MATLAB function fminunc (Mathworks, Natick, MA) was used to find values for a and x that produced a function that best fit individual participants’ data using a least squares cost function. This model-fitting process was run 10 times for each parameter fit for each subject, each time with a different random starting point drawn from a standard normal distribution. We chose the parameters that resulted in the lowest sum of squares from these 10 iterations to avoid fits that had converged to local minima.
+To test the rate of change in RTs and accuracy, we fit an exponential function to these data in the form of
 
-## Computational modeling of reaction times
+$$
+y=ab^{x}
+$$
+
+where $y$ indicates the predicted trial RT or mean accuracy, $b$ indicates the trial number, and $a$ and $x$ are free parameters that determine the scale and rate of the function respectively. The MATLAB function fminunc (Mathworks, Natick, MA) was used to find values for $a$ and $x$ that produced a function that best fit individual participants’ data using a least squares cost function. This model-fitting process was run 10 times for each parameter fit for each subject, each time with a different random starting point drawn from a standard normal distribution. We chose the parameters that resulted in the lowest sum of squares from these 10 iterations to avoid fits that had converged to local minima.
+
+### Computational modeling of reaction times
 
 We developed a set of simple learning models to compare and contrast different explanations for how participants carried out the transfer of option values during the initial generalization phase. The models express retrieval and generalization in terms of spreading activation among a set of nodes that represent the various task elements. In each model, we structured the memory network differently according to the hypothesis tested. However, these models relied on the same basic assumptions and parameters: 1. RTs are a function of the activation strength of the nodes containing retrieved items (Anderson, 1983). 2. The activation strength for each item is initialized at zero and increases according to a Rescorla-Wagner learning rule (Rescorla and Wagner, 1972), controlled by a single rate parameter bounded by 0 to 1 (α1), each time an option is retrieved, until it reaches an asymptotic value of 1. 3. Activation spreads to contexts and categories linked with retrieved items, controlled by a ‘mediated retrieval’ parameter (α2). 4. Memory search increases activation in all other task-related items in each trial according to an ‘incidental retrieval’ parameter (α3). 5. Increases in activation that are inherited from connected nodes falls off according to a power law where the rates of successive steps are multiplied together.
 
@@ -166,11 +279,11 @@ For each model, predicted RTs were calculated simply as the sum of the activatio
 
 To test whether these models made substantially different RT predictions, we carried out a cross-model comparison using simulated data. We simulated data using the optimized parameters from each participant for each model. We then fit each model on these simulated data, in the same way as with participants’ behavioral data and calculated the negative log-likelihood of this fit to test if the generative model provided a better explanation of the simulated data than the three alternatives.
 
-## fMRI acquisition procedures
+### fMRI acquisition procedures
 
 Whole-brain imaging was acquired using a Siemens 3T Magnetom Prisma system with a 64-channel head coil. In each fMRI session, a high resolution T1 weighted MPRAGE image was acquired for visualization (repetition time (TR), 1900 ms; echo time (TE), 3.02 ms; flip angle, 9°; 160 sagittal slices; 1 × 1 × 1 mm voxels). Functional volumes were acquired using a gradient-echo echo planar sequence (TR, 2000 ms; TE, 25 ms; flip angle 90°; 40 interleaved axial slices tilted approximately 30° from the AC-PC plane; 3 × 3 × 3 mm voxels). Functional data were acquired over three runs. Each run lasted 15.1 min on average (452 acquisitions). After the functional runs, a brief in-plane anatomical T1 image was collected, which was used to define a brain mask that respected the contours of the brain and the space of the functional runs (TR, 350 ms; TE 2.5 ms; flip angle 70°; 40 axial slices; 1.5 × 1.5 × 3 mm voxels). The sequence of scans was identical on both sessions. Soft padding was used to restrict head motion throughout the experiment. Stimuli were presented on a 32-inch monitor at the back of the bore of the magnet, and participants viewed the screen through a mirror attached to the head coil. Participants used a five-button fiber optic response pad to interact with the experiment (Current Designs, Philadelphia, PA).
 
-## fMRI preprocessing and analysis
+### fMRI preprocessing and analysis
 
 Functional data were preprocessed using SPM12. Quality assurance for the functional data of each participant was first assessed through visual inspection and TSdiffAna (https://sourceforge.net/projects/spmtools/) and ArtRepair (http://cibsr.stanford.edu/tools/human-brain-project/artrepair-software.html). Outlier volumes (defined by standard deviations from the global average signal) were interpolated when possible. If interpolation was not possible, a nuisance regressor was added to the run with a stick function at the time points for these volumes. Slice timing correction was carried out by resampling slices to match the first slice. Next, motion during functional runs and days was corrected by registering volumes to the first volume in the first session using rigid-body transformation.
 
@@ -178,7 +291,7 @@ A deformation matrix for spatial normalization to Montreal Neurological Institut
 
 Functional data were analyzed under the assumptions of the GLM using SPM12. Separate regressors were included for correct, erroneous, and missed responses for each condition with the duration of each response set to participants trial-wise RT (or the duration of the stimulus display for missed responses). Nuisance regressors for participant motion (six translational and rotational components) were also included, as was an additional regressor for scan session. Regressors and parametric modulators were convolved with the SPM canonical hemodynamic response function (HRF). Functional data were pre-whitened and high-pass filtered at 0.008 Hz.
 
-## Representational similarity analysis
+### Representational similarity analysis
 
 Whole-brain searchlight and ROI-based RSA were carried out in a two-step process.
 
@@ -190,24 +303,24 @@ In the case of LS, value, and context RDMs, the hypothesized distances were simp
 
 Second, these hypothesis RDMs were related to the empirical RDM through multiple linear regression analysis, where a coefficient was estimated relating each hypothesis RDM to empirical RDMs allowing us to parcel out variance in representational distances due to multiple factors in the same model (e.g. Nassar et al., 2019). Main effects and interaction terms within this model were allowed to compete for variance simultaneously. The lower-triangle of all hypothesis RDMs were extracted as vectors, z-scored, and included as predictors, along with an intercept term, in a multiple linear regression analysis to calculate beta coefficients relating each hypothesis RDM to the empirical RDM.
 
-## Searchlight analyses
+### Searchlight analyses
 
 Whole-brain analyses were carried out by passing a spherical searchlight with a radius of 9 mm over each voxel within participants’ brain mask in native space. For each participant, beta coefficients for hypothesis RDMs were calculated at each step and averaged over searchlight passes for all voxels included in the searchlight to compute fixed-effects in a first-level analysis. This approach is similar to a common approach of assigning coefficients to a the central voxel of each searchlight and then smoothing these maps before second-level tests (e.g. Devereux et al., 2013), but requires one less experimenter degree of freedom in defining the full-width half-maximum (FWHM) of the smoothing kernel. Group level analyses were conducted by normalizing participants’ beta coefficient maps to MNI space using the deformation field from the normalization of participants’ functional data and computing a one-sample t-test against zero. These volumes were kept in a 1.5 × 1.5 × 1.5 mm space and not resampled. Whole brain t-statistic maps were thresholded at a cluster defining threshold of p<0.001 uncorrected. Non-parametric permutation tests (10,000 permutations) were used to derive a cluster extent threshold (k) for each test by randomly flipping the sign for half of participants’ contrasts and generating a null distribution based on the suprathreshold maximum cluster statistics. The cluster extent threshold in each contrast was defined as the 95th percentile of this null distribution in order to test for statistical significance at p<0.05, corrected for multiple comparisons. (Nichols and Holmes, 2002).
 
-## Region of interest analyses
+### Region of interest analyses
 
 We defined three a priori anatomical ROIs in this study based on prior work using the Automated Anatomical Labelling (AAL2) atlas (Rolls et al., 2015). First, the OFC ROI was given the same definition used by a study examining LS representations in this region (Schuck et al., 2016), which followed that of Kahnt et al., 2012 (Kahnt et al., 2012). This definition included the bilateral combination of the following regions: the superior orbital gyri, middle orbital gyri, inferior orbital gyri medial orbital gyri, and rectal gyri. The VTC ROI was given the same definition used by a study that showed that pattern activity in this region differentiated between visual images based on animacy (Chikazoe et al., 2014), excepting the bilateral parahippocampal gyri. This definition included the bilateral lingual gyri, fusiform gyri, and inferior temporal cortices. The HPC ROI was defined as the bilateral hippocampi. These masks were warped into participants’ native brain space using the inverse deformation matrix for all ROI-based analyses. We first conducted an RSA analysis using all voxels within these ROIs by calculating empirical RDMs for the cross-validated Mahalanobis distances from voxels within these ROIs in the same way as in the searchlight analyses, and then using the same multiple linear regression model to relate hypothesis RDMs to these empirical RDMs. These beta-coefficients were then subjected to a second-level, one-sample t-test against zero to estimate statistical significance.
 
 These ROIs were also used as an explicit mask in searchlight analyses to test for effects that were below threshold at a whole-brain cluster-corrected level within HPC and OFC. For these analyses, statistical significance was evaluated as in the whole-brain searchlight analysis with cluster-based permutation tests to compute a cluster extent threshold within these smaller volumes for each contrast, controlling for multiple comparisons at p<0.05.
 
-## Univariate analyses
+### Univariate analyses
 
 Functional volumes were normalized to a 1.5 × 1.5 × 1.5 mm MNI space and smoothed with an 8 mm FWHM Gaussian isotropic kernel. Beta coefficients for single subject effects were estimated using a fixed-effects model in a first-level analysis. For whole-brain contrasts, these estimates were then included in a second-level analysis using a one-sample t-test against zero at each voxel. As with whole-brain RSA analyses, t-statistical maps were thresholded at a cluster forming threshold of p<0.001 and cluster-based permutation tests were used to compute a cluster extent threshold controlling for multiple comparisons at p<0.05.
 
-## Comparison with functional networks
+### Comparison with functional networks
 
 The results of the whole-brain LS RSA searchlight was compared with a cortical parcellation based on resting state functional connectivity data from 1000 individuals by Yeo et al., 2011. To find the degree of overlap within each of these functional networks, we calculated the proportion of voxels in the cluster-corrected LS statistical map that fell within these 17 networks projected to MNI152 space and defined with liberal boundaries around the cortex.
 
-## Comparison across sessions
+### Comparison across sessions
 
 To assess the stability of task-relevant representations across scanning sessions, we carried out two separate searchlight RSA analyses using data from within each session, as above. The resultant coefficient maps from the multiple linear regression analysis were then contrasted between sessions in both directions using paired t-tests. These contrasts were then assessed with the same cluster-forming threshold and cluster-based permutation tests to control for multiple comparisons, as in univariate and multivariate analyses.

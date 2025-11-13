@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Innate defensive behaviors, such as freezing, are adaptive for avoiding predation. Freezing-related midbrain regions project to the cerebellum, which is known to regulate rapid sensorimotor integration, raising the question of cerebellar contributions to freezing. Here, we find that neurons of the mouse medial (fastigial) cerebellar nuclei (mCbN), which fire spontaneously with wide dynamic ranges, send glutamatergic projections to the ventrolateral periaqueductal gray (vlPAG), which contains diverse cell types. In freely moving mice, optogenetically stimulating glutamatergic vlPAG neurons that express Chx10 reliably induces freezing. In vlPAG slices, mCbN terminals excite ~20% of neurons positive for Chx10 or GAD2 and ~70% of dopaminergic TH-positive neurons. Stimulating either mCbN afferents or TH neurons augments IPSCs and suppresses EPSCs in Chx10 neurons by activating postsynaptic D 2 receptors. The results suggest that mCbN activity regulates dopaminergic modulation of the vlPAG, favoring inhibition of Chx10 neurons. Suppression of cerebellar output may therefore facilitate freezing.
+Innate defensive behaviors, such as freezing, are adaptive for avoiding predation. Freezing-related midbrain regions project to the cerebellum, which is known to regulate rapid sensorimotor integration, raising the question of cerebellar contributions to freezing. Here, we find that neurons of the mouse medial (fastigial) cerebellar nuclei (mCbN), which fire spontaneously with wide dynamic ranges, send glutamatergic projections to the ventrolateral periaqueductal gray (vlPAG), which contains diverse cell types. In freely moving mice, optogenetically stimulating glutamatergic vlPAG neurons that express Chx10 reliably induces freezing. In vlPAG slices, mCbN terminals excite ~20% of neurons positive for Chx10 or GAD2 and ~70% of dopaminergic TH-positive neurons. Stimulating either mCbN afferents or TH neurons augments IPSCs and suppresses EPSCs in Chx10 neurons by activating postsynaptic D2 receptors. The results suggest that mCbN activity regulates dopaminergic modulation of the vlPAG, favoring inhibition of Chx10 neurons. Suppression of cerebellar output may therefore facilitate freezing.
 
 ## Introduction
 
@@ -26,9 +26,17 @@ To investigate the influence of the cerebellum on freezing related circuitry in 
 
 ## Results
 
-## Projections of the medial cerebellar nucleus to the ventrolateral periaqueductal gray
+### Projections of the medial cerebellar nucleus to the ventrolateral periaqueductal gray
 
 We reasoned that the influence of the cerebellar vermis on innate freezing (Supple et al., 1988; Koutsikou et al., 2014) might result from direct synaptic connections in the ventrolateral periaqueductal gray. Previous tracing studies have demonstrated that the mCbN indeed projects to the vlPAG (Gonzalo-Ruiz et al., 1990; Teune et al., 2000), and electrical stimulation of the mCbN elicits short latency field potentials in the vlPAG (Whiteside and Snider, 1953), but this projection has historically been thought to contribute to oculomotor function. Therefore, we investigated whether the medial cerebellar nucleus projects specifically to the caudal vlPAG, the site of freezing-related circuitry. First, we injected the mCbN with viruses expressing a channelrhodopsin-eYFP (ChR2-eYFP) fusion protein (Figure 1A, left, middle). After 4–6 weeks, axonal labeling was evident in the caudal-most aspect of the vlPAG, consistent with a direct projection (Figure 1A, right). Axonal labeling had the highest density in the caudal ~600–900 μm of the vlPAG, ventral and lateral to the central aqueduct, with sparser axonal labeling near the aqueduct (Figure 1—figure supplement 1). Conversely, injecting the vlPAG with either CTb-GFP or retrobeads (Figure 1B, left, middle) resulted in retrograde labeling of large neurons in the mCbN (Figure 1B, right). Following a unilateral injection of retrograde tracer, the greatest labeling density was in the contralateral mCbN, although some ipsilateral labeling was also evident. Retrogradely labeled neurons were not observed in the neighboring interpositus or lateral cerebellar nucleus, suggesting specificity of the projection from the mCbN to the vlPAG.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left, Schematic of a parasagittal section of the cerebellum showing injection site for anterograde tracing from mCbN. Middle, Confocal image of the mCbN after injection of AAV-hSyn-ChR2-eYFP virus. Dotted line, mCbN boundaries. Right, Confocal image of virally labeled mCbN axons in the vlPAG. (B) Left, Schematic of a coronal section of the PAG showing injection site for retrograde tracing from the vlPAG. Middle, Example injection site of CTb-GFP in the vlPAG. Dotted line, approximate boundaries of vlPAG. Right Retrogradely labeled neurons in the mCbN. Dotted line, boundaries of mCbN. (C) Top, Low magnification confocal image of the PAG in a Chx10-tdT mouse, showing the distribution of Chx10 neurons in the ventrolateral PAG. Bottom, High magnification image of the white box in the upper panel. (D) Left, Schematic of the PAG showing injection site for anterograde tracing in Chx10-cre mice. Right, Confocal image of the vlPAG after viral labeling of Chx10 neurons. (E) Left, Schematic of a coronal section of the brainstem showing the approximate rostro-caudal position of Chx10-positive axons in the magnocellular reticular nucleus (Mc), approximately −6.6 mm from bregma. Right, Axonal labeling of Chx10-positive axons in the Mc. Arrows indicate labeled axons. (F) Left, EPSCs evoked in Mc neurons by optogenetic stimulation of Chx10-ChR2 axons. Right, Population data for first evoked EPSC in Mc neurons. Open symbols, individual cells, solid symbols, mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the approximate rostro-caudal level of the highest density of mCbN labeled fibers in the vlPAG. Box denotes boundaries of image in panel (B). Abbreviations: SuG: superficial grey layer of the superior colliculus, ECIC: external cortex of the inferior colliculus, vlPAG: ventrolateral periaqueductal gray, DrDt: dorsal segment of the dorsal raphe, Aq: central aqueduct, xscp: decussation of the superior cerebellar peduncle, PNO: pontine reticular nucleus, oral part, MnR: median raphe nucleus. RPO: rostral periolivary region, RtTg: reticulotegmental nucleus of the pons. (B) Low magnification confocal image of the distribution of mCbN labeled axon terminals in the vlPAG and surrounding tissue. Abbreviations: Aq: central aqueduct, vlPAG: ventrolateral periaqueductal gray, lPAG: lateral periaqueductal gray, dlPAG: dorsolateral periaqueductal gray, DR: dorsal raphe.
 
 Even the vlPAG, however, is heterogeneous, as pharmacological activation of the vlPAG elicits freezing, bradycardia, and anti-nociception (Bandler et al., 2000). A subset of glutamatergic neurons in the vlPAG that elicit freezing without associated analgesia have projections to the magnocellular reticular nucleus (Mc), defined as including the gigantocellularis pars ventralis (GiV) and lateral paragigantocellular nucleus (Esposito et al., 2014; Tovote et al., 2016); cells in these medullary areas in turn project directly to hindlimb and forelimb motor neurons in the spinal cord (Esposito et al., 2014). To identify these vlPAG projection neurons in particular, we took advantage of the fact that freezing can also be elicited by stimulating a subset of glutamatergic neurons in the vlPAG that express Chx10, a homeodomain transcription factor (Leiras et al., 2017, SfN abstract). We therefore examined Chx10 neurons in the PAG of Chx10-cre mice expressing tdTomato (‘Chx10-tdT’) to test whether these might project to freezing-associated areas of the medulla, with the goal of investigating their sensitivity to cerebellar input.
 
@@ -36,7 +44,7 @@ Chx10 neurons were enriched in the vlPAG (Figure 1C), and injecting viruses with
 
 To test whether the Chx10 neurons indeed made functional excitatory contacts in the Mc, we made whole-cell recordings from neurons in the Mc in Chx10-ChR2 mice. Light stimulation of Chx10 neurons resulted in inward currents of −68.7 ± 9.6 pA at −70 mV in Mc neurons, consistent with glutamatergic synapses (Figure 1F; n = 7 cells [5 M, 2 F]). In the 4 cells in which pairs of responses were evoked (40 ms interval), the paired pulse ratio was 0.7 ± 0.4. Together, these results suggest that Chx10 neurons in the vlPAG have the attributes necessary to influence freezing-related behaviors through an excitatory projection to the Mc.
 
-## Optogenetic stimulation of vlPAG Chx10 neurons in vivo
+### Optogenetic stimulation of vlPAG Chx10 neurons in vivo
 
 If Chx10 neurons are indeed the vlPAG neurons that are part of the freezing circuit, then their activation should suppress or limit movement. First, to verify that light stimulation could effectively excite Chx10 neurons for prolonged periods, we recorded in PAG slices from Chx10-ChR2 mice. Indeed, in Chx10 neurons (n = 9 cells, [9M, 0F]), 50 Hz trains of 100 light stimuli (10 ms pulses) elicited photocurrents that were relatively stable under voltage clamp (1st current, −78.5 ± 8.6 pA; 5th and 100th current, 73.1 ± 2.0% and 66.0 ± 1.7% of 1st current). Under current-clamp, the same stimulation brought firing rates from 3.8 ± 3.9 spikes/sec to 20.5 ± 3.6 spikes/sec, with elevated spike rates persisting throughout stimulation (Figure 2A,B).
 
@@ -46,23 +54,265 @@ If Chx10 neurons are indeed the vlPAG neurons that are part of the freezing circ
 
 Next, we stimulated Chx10 neurons in the vlPAG in vivo while monitoring the activity of freely-moving mice. To do so, we implanted a unilateral fiber optic cannula above the vlPAG in Chx10-ChR2 mice and control mice with Chx10 labeled but lacking ChR2 (Chx10-tdT) (Figure 2C,D). In the nine brains that were recovered, the fiber track confirmed that the cannula had been positioned just dorsal to the vlPAG with mean coordinates relative to bregma: anterior-posterior, −4.5 mm (range: −4.2 to −4.8 mm); medial-lateral, 0.6 mm (range: 0.3 to 0.8 mm); dorsal-ventral, −2.6 mm (range: −2.8 to −2.25 mm). Light trains as in slices (10 ms pulses at 50 Hz) applied for 2–5 s resulted in a nearly complete cessation of movement in Chx10-ChR2 mice, which persisted for the duration of optogenetic stimulation (n = 7 mice, 50 trials per mouse; Figure 2E, left). Visual inspection of the behavior was consistent with freezing, as mice ceased all voluntary movements with the exception of respiration, eye movements, and some whisking (Video 1). Freezing was elicited regardless of the ongoing motor behavior of the mouse, and was rarely accompanied by threat assessment behavior or continued freezing after stimulus termination, consistent with the idea that Chx10 vlPAG activation was not aversive but directly evoked a motor program. Conversely, in control mice (n = 7 mice), optogenetic stimuli had no detectable effect on ongoing movement (Figure 2E, right).
 
+![Video 1.](https://cdn.elifesciences.org/articles/54302/elife-54302-video1.mp4.jpg)
+
+**Video 1.:** Responses evoked by optogenetic activation of Chx10 neurons in the vlPAG (10 ms, 50 Hz, 5 s) is indicated by ‘Light On.’.
+
 The data across mice were quantified by the z-score of the movement index. Relative to the mean baseline movement for 2 s before optogenetic stimulation, movement fell by >3 standard deviations (SDs) in Chx10-ChR2 mice but was unchanged in control mice (Figure 2F). Owing to the sampling rate of 3.75 frames/sec, the latency to freezing onset could not be determined precisely. We therefore measured the latency to a 3-SD drop, which was 660 ± 30 ms (~2.5 frames). The stability of freezing after the onset of immobility was therefore quantified as the percent of time below the 3-SD threshold starting 1 s after stimulus onset. In the pre-stimulus baseline, immobility was comparable in Chx10-ChR2 and control mice (35.9 ± 6.2% and 37.4 ± 4.2%, respectively, n = 7 mice per group). During stimulation, immobility increased to 92.8 ± 2.5% in Chx10-ChR2 mice (p=<0.001, paired t-test) but remained at 37.6 ± 3.9% in control mice (p=0.84, paired t-test; Chx10-ChR2 vs. control, p=<0.0001, unpaired t-test, Figure 2G). The duration of immobility and of light stimulation were strongly correlated (Figure 2H, r2 = 0.98), with a slope near unity (0.9) suggesting that freezing and Chx10 neuronal firing are directly related. Finally, consistent with a role in directly evoking the freezing motor pattern, repeated optogenetic stimulation (50 trials, 20 s inter-trial interval) of Chx10 neurons reliably elicited freezing, without habituation (Figure 2I; stimuli 1–5: 92.2 ± 2.2%; stimuli 46–50: 92.0 ± 1.3%, p=0.9, unpaired t-test). Together, these data provide evidence that vlPAG Chx10 neurons directly excite medullary neurons that evoke motor programs associated with freezing.
 
-## Intrinsic and synaptic properties of Chx10 vlPAG neurons
+### Intrinsic and synaptic properties of Chx10 vlPAG neurons
 
 To understand the firing patterns by which vlPAG Chx10 cells may drive freezing behavior, we examined their intrinsic and synaptic properties in slices of the vlPAG (Table 1). Chx10 neurons were electrically tight, with input resistances of 584.1 ± 47.3 MΩ and capacitances of 24.2 ± 1.3 pF (n = 26 cells [15 M, 11 F]). Current-clamped Chx10 neurons fired spontaneously at 5.8 ± 1.2 spikes/s (Figure 3A,B; n = 28 cells). In contrast GAD2+ neurons recorded in the vlPAG fired more rapidly, at 20.7 ± 3.2 spikes/sec (Figure 3—figure supplement 1; n = 16 cells [8 M, 8 F], Chx10 vs. GAD2, p=0.0003; unpaired t-test). Chx10 and GAD2 neurons also differed in their action potential waveforms (Figure 3C,D). In Chx10 neurons, spikes were broad (half-width: 1.0 ± 0.05 ms, n = 26 cells [15 M, 11 F]) and lacked afterhyperpolarizations, whereas those of GAD2+ vlPAG neurons were briefer, with prominent afterhyperpolarizations (Figure 3—figure supplement 1). The differences support the idea that Chx10 neurons are glutamatergic.
 
+**Table 1.**
+ Intrinsic properties of Chx10+ vlPAG neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>All Cells (n=26)</th>
+      <th>Males (n=15)</th>
+      <th>Females (n=11)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intrinsic Properties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Membrane Resistance (MΩ)</td>
+      <td>584.1 ± 47.3</td>
+      <td>648.6 ± 62.2</td>
+      <td>496.0 ± 66.9</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Capacitance (pF)</td>
+      <td>24.2 ± 1.3</td>
+      <td>23.4 ± 1.5</td>
+      <td>25.2 ± 2.5</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Interspike Vm (mV)*</td>
+      <td>-48.7 ± 1.0</td>
+      <td>-50.6 ± 1.0</td>
+      <td>-45.9 ± 1.6</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Action Potential Properties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spontaneous Rate (spikes/s)</td>
+      <td>5.8 ± 1.2</td>
+      <td>4.5 ± 1.4</td>
+      <td>7.6 ± 1.9</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Maximum dV/dt (V/s)</td>
+      <td>155.2 ± 11.4</td>
+      <td>153.9 ± 13.5</td>
+      <td>157.0 ± 20.5</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Estimated Peak INa (nA)</td>
+      <td>4.0 ± 0.5</td>
+      <td>3.7 ± 0.5</td>
+      <td>4.3 ± 0.9</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>Minimum dV/dt (V/s)</td>
+      <td>-63.9 ± 5.0</td>
+      <td>-55.1 ± 4.0</td>
+      <td>-76.0 ± 9.5</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Estimated Peak IK (nA)</td>
+      <td>1.6 ± 0.2</td>
+      <td>1.3 ± 0.1</td>
+      <td>-2.1 ± 0.4</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Halfwidth (ms)</td>
+      <td>1.0 ± 0.1</td>
+      <td>1.1 ± 0.07</td>
+      <td>0.9 ± 0.1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Amplitude (mV)</td>
+      <td>55.9 ± 2.2</td>
+      <td>57.3 ± 2.7</td>
+      <td>54.1 ± 3.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Threshold (mV)</td>
+      <td>-31.6 ± 0.8</td>
+      <td>-32.5 ± 1.0</td>
+      <td>-30.4 ± 1.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Rheobase at -70 mV (pA)</td>
+      <td>9.8 ± 0.8</td>
+      <td>9.6 ± 1.0</td>
+      <td>10.0 ± 1.4</td>
+      <td>0.8</td>
+    </tr>
+  </tbody>
+</table>
+
+_* indicates significant difference between males and females._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig3-v2.jpg)
+
+**Figure 3.:** (A) Spontaneous action potentials from a Chx10 neuron. (B) Population data for spontaneous firing rates of Chx10 neurons. (C) Single spontaneous action potential of a Chx10 neuron. (D) Phase-plane plot of action potential in C. (E) Action potentials evoked by 500 ms current injections of −50, 0 and 50 pA in a Chx10 neuron. (F) Mean FI curve for all neurons. Solid symbols, mean, grey shading, SEM. (G) Evoked EPSCs (red) and IPSCs (blue) from a single Chx10 neuron. (H) Peak inhibitory conductance vs. peak excitatory conductance. Open symbols, individual cells, solid symbols, mean ± SEM. Dotted line, unity. (I) Decay time constants, τ, of EPSCs and IPSCs. Open symbols, individual cells, solid symbols, mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Spontaneous action potentials in a GAD2+ (green) and a Chx10 (black) neuron. (B) Population data for spontaneous firing rates of GAD2 and Chx10 neurons. Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.001. (C) Example action potential waveforms from each cell type. (D) Phase-plane plots of action potentials in C.
+
 Hyperpolarizing and depolarizing current injections (−100 to 100 pA, 10 pA steps) illustrated that Chx10 neurons could be silenced with a few tens of pA and their firing rate began to saturate above 60 pA (Figure 3E,F; max rate with 100 pA: 48 ± 3.6 spikes/sec, n = 26 cells). The relatively steep slope of the FI curve between 0 and 50 pA of injected current (7.6 ± 0.8 spikes/pA) suggests that even small synaptic inputs may be sufficient to drive action potential firing in Chx10 cells. Electrically evoked excitatory and inhibitory synaptic currents (eIPSCs and eIPSCs) in Chx10 neurons could nevertheless be quite large. eEPSCs at −70 mV had an amplitude of −250.8 ± 7 00.1 pA and eIPSCs at 0 mV had an amplitude of 322.2 ± 90.3 pA (Figure 3G; n = 12 cells [12 M, 0 F]). Comparing the peak excitatory and inhibitory conductances in each cell indicated that the strength of inhibition and excitation were comparable, with a slight bias toward inhibition (Figure 3H; E vs. I: 17.6 ± 4.9 nS vs. 22.6 ± 6.3 nS, p=0.08, paired t-test), giving an E/I ratio of 0.78. eEPSCs decayed with a single exponential time constant, τ, of 3.5 ± 0.3 ms (Figure 3I) whereas eIPSCs were nearly twice as long (6.7 ± 0.6 ms; Figure 3I). The IPSCs may in part reflect responses to local inhibitory interneurons that tonically suppress Chx10 firing activity, and whose suppression by input from the amygdala drives freezing (Tovote et al., 2016). Since these synaptic responses were evoked electrically, however, their source is unknown. Since the primary interest of the present study was whether these cells might receive cerebellar signals, we next examined the properties of cells in the mCbN that were probable sources for such input.
 
-## Intrinsic and synaptic properties of mCbN neurons
+### Intrinsic and synaptic properties of mCbN neurons
 
 First, we recorded the properties of large, likely projection neurons in the mCbN in acute slices (Table 2). As in the interpositus nucleus (iCbN; Mercer et al., 2016; Person and Raman, 2012; Raman et al., 2000), mCbN neurons fired spontaneously at high rates (Figure 4A; 122.8 ± 6.6 spikes/s, n = 28 cells [15 M, 13 F]), consistent with previous reports of mCbN projection neurons in vitro (Bagnall et al., 2009) as well as the high basal activity of mCbN cells in vivo (Büttner et al., 1991; Miller et al., 2008; Özcan et al., 2020). Interestingly, spontaneous rates were higher in males (137.4 ± 8.8 spikes/s, n = 15 cells) than females (105.9 ± 9.0 spikes/s, n = 13 cells, p=0.01, unpaired t-test, Figure 4A,B), a difference that is in the opposite direction from the sex difference in the iCbN (Mercer et al., 2016). In fact, comparing the firing rates between the two nuclei showed a nearly twofold difference in males (iCbN: 72.2 ± 10.0 spikes/s, n = 15 cells, p=0.00004, unpaired t-test) but no difference for females (iCbN: 97.7 ± 9.2 spikes/s, n = 16 cells, p=0.51, unpaired t-test; iCbN data from Mercer et al., 2016, Figure 4—figure supplement 1). The high propensity for firing in the mCbN in both sexes suggests that the cerebellum likely exerts a tonic control over downstream circuitry.
+
+**Table 2.**
+ Intrinsic properties of medial cerebellar nucleus neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>All Cells (n=28)</th>
+      <th>Males (n=15)</th>
+      <th>Females (n=13)</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intrinsic Properties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Membrane Resistance (MΩ)</td>
+      <td>77.5 ± 12.8</td>
+      <td>62.2 ± 8.1</td>
+      <td>95.5 ± 17.0</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Capacitance (pF)</td>
+      <td>68.6 ± 5.5</td>
+      <td>79.7 ± 12.6</td>
+      <td>55.2 ± 5.8</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Action Potential Properties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spontaneous Rate (spike/s)*</td>
+      <td>122.8 ± 6.6</td>
+      <td>137.4 ± 8.8</td>
+      <td>105.9 ± 9.0</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Maximum dV/dt (V/s)</td>
+      <td>294.3 ± 19.0</td>
+      <td>270.6 ± 16.6</td>
+      <td>321.8 ± 34.6</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Estimated Peak INa (nA)</td>
+      <td>19.4 ± 2.0</td>
+      <td>20.8 ± 2.9</td>
+      <td>17.9 ± 2.8</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Minimum dV/dt (V/s)</td>
+      <td>-270.7 ± 20.1</td>
+      <td>-242.1 ± 19.4</td>
+      <td>-303.4 ± 38.4</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Estimated Peak IK (nA)</td>
+      <td>17.8 ± 1.8</td>
+      <td>18.4 ± 2.4</td>
+      <td>17.2 ± 3.0</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Halfwidth (ms)</td>
+      <td>0.27 ± 0.02</td>
+      <td>0.27 ± 0.2</td>
+      <td>0.27 ± 0.4</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Ampliutde (mV)</td>
+      <td>53.2 ± 1.5</td>
+      <td>51.7 ± 1.7</td>
+      <td>54.9 ± 2.8</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Threshold (mV)</td>
+      <td>-42.3 ± 0.7</td>
+      <td>-41.7 ± 1.0</td>
+      <td>-43.0 ± 1.1</td>
+      <td>0.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* indicates significant difference between males and females._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig4-v2.jpg)
+
+**Figure 4.:** (A) Spontaneous action potentials recorded from mCbN neurons from males (blue) and females (red). (B) Population data of spontaneous firing rates separated by sex. Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.05. (C) Single spontaneous action potential of an mCbN neuron. (D) Phase-plane plot of action potential in C. (E) Action potentials evoked by 500 ms current injections of −300, 0 and 300 pA in an mCbN neuron. (F) Mean FI curve for all neurons from both male and female mice. Solid symbols, mean, grey shading, SEM. Dotted line, firing rate at 0 pA injected current. (G) IPSC in an mCbN cell evoked by optogenetic stimulation of Purkinje cells. (H) Population data of IPSC conductances. Upward triangles, electrical stimulation; downward triangles, optogenetic stimulation. Open symbols, individual cells, solid symbols, mean ± SEM. (I) Population weighted decay time constants for evoked IPSCs in mCbN neurons. Open symbols, individual cells, solid symbols, mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Spontaneous action potentials of iCbN (left) and mCbN (right) neurons from females (A) and males (B). (C) Mean and SEM of firing rates of iCbN and mCbN neurons, pooled for both sexes. Asterisks, p<0.001. (D, E) Population data for spontaneous firing rates in iCbN and mCbN in females (D) and males (E). Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.0001, n.s., not significant. (F) Normalized electrically evoked IPSCs in mCbN (black) and iCbN (grey) neurons, overlaid to illustrate kinetic differences. (G) Population data for weighted time constants for IPSCs in the iCbN and mCbN. Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.001. All iCbN data is from Mercer et al. (2016).
 
 Half-width analysis indicated that spontaneous action potentials were brief (Figure 4C; 0.26 ± 0.02 ms) and phase-plane plots estimated a threshold of −42.3 ± 0.7 mV (Figure 4D). Firing rates changed linearly with current injections from −300 to +300 pA (500 ms steps), with a slope of 0.36 ± 0.005 spikes/pA (Figure 4E,F; n = 22 cells [12 M, 10 F]). The maximum firing rate with a peak injection of +300 pA was 227.9 ± 10.9 spikes/s (n = 22 cells), with little evidence of saturation, suggesting that mCbN neuron firing rates can be elevated as well as suppressed over a wide dynamic range.
 
 In fact, large IPSCs were evoked in mCbN neurons by stimulating Purkinje cells either electrically (n = 7 cells [3 M, 4 F]) or with light in L7-ChR2 mice (n = 7 cells [0 M, 7 F]); since both procedures elicited comparable responses, the data were pooled, (Figure 4G,H). IPSCs at 0 mV were 3.0 ± 2.7 nA, reflecting a maximal conductance of 42.5 ± 10.2 nS, and had a τ of 4.2 ± 0.3 ms (Figure 4I), a value that is significantly longer than in the iCbN (Figure 4—figure supplement 1; iCbN: 2.14 ± 0.1 ms, n = 34 cells [22 M, 12 F], p<0.00001, unpaired t-test; iCbN data from Mercer et al. (2016). The relatively slower kinetics may make mCbN cells more readily suppressed by afferent Purkinje cells, since the efficacy of inhibition is highly dependent on IPSC time course (Person and Raman, 2012; Najac and Raman, 2015; Wu and Raman, 2017; Brown and Raman, 2018).
 
-## Effects of mCbN input to the vlPAG
+### Effects of mCbN input to the vlPAG
 
 Given that Purkinje cells inhibit mCbN cells, along with the observation that lesions of the cerebellar vermis reduce innate freezing (Supple et al., 1988; Koutsikou et al., 2014), the simplest prediction is that mCbN input might suppress the activity of Chx10 cells. Such an effect might be achieved by direct inhibition of Chx10 cells, since a subset of mCbN cells have been reported to be glycinergic (Bagnall et al., 2009) or by excitation of other neurons that lead to a decrease in Chx10 cell activity. Since cerebellar output is not consistently the inverse of Purkinje cell activity, however (Armstrong and Edgley, 1984a; Armstrong and Edgley, 1984b; Brown and Raman, 2018), the converse may instead be true. Therefore, to test whether mCbN neurons form synapses directly onto Chx10 neurons, we expressed ChR2 in mCbN afferents through viral injection into the mCbN and recorded either in wild-type mice from vlPAG cells whose molecular phenotype was unidentified, or from identified Chx10 or GAD2+ vlPAG cells in mice with cell-specific labels. Light stimulation of ChR2-labeled mCbN axons in the vlPAG elicited EPSCs at −70 mV in only a subset of unidentified (11%, n = 4 of 38 cells), Chx10 (20%, n = 5 of 25 cells), and GAD2+ (21%, n = 3 of 14 cells) cells. In cells in which an EPSC was evoked, the direct mCbN-evoked synaptic currents had similar amplitudes across all three categories (Figure 5A,B; unidentified: −40.6 ± 15.4 pA, n = 4 cells; Chx10: −33.9 ± 9.7 pA, n = 5 cells; GAD2+: 39.6 ± 16.7 pA, n = 3 cells). Regardless of whether or not the cell received a direct EPSC, mCbN stimulation never evoked detectable IPSCs (n = 42 of 42 cells). Thus, although some mCbN projection neurons are glycinergic (Bagnall et al., 2009), the projection to the vlPAG is glutamatergic. Since Chx10 neurons appear to act essentially as premotor neurons, cerebellar excitation of these cells may have the potential to facilitate (or even elicit) freezing under some conditions. Despite the comparable excitation of GAD2 cells, the lack of mCbN-dependent IPSCs in any recorded cell type suggests that the mCbN projection does not effectively recruit polysynaptic local inhibition.
 
@@ -74,7 +324,7 @@ Nevertheless, the connectivity ratio of about 20% (for Chx10 and GAD2 cells) see
 
 To quantify the relative effect of modulation by mCbN stimulation, we calculated the EI ratio as the ratio of the excitatory to the inhibitory conductance (Eichler and Meier, 2008; Turrigiano and Nelson, 2004). Before stimulation, the within-cell EI ratio in Chx10 cells was 0.78 (17.6/22.6 nS); the mean percent change in excitation and inhibition predicts that, after stimulation, the EI ratio would fall to 0.53, i.e., a 32.5% decrease. These data suggest that mCbN afferents reliably modulate the strength of both IPSCs and EPSCs to favor inhibition. Given the high basal activity of mCbN cells, it seems possible that the cerebellum exerts a tonic control of synaptic strength in Chx10 cells, biasing these neurons toward a more inhibited state, which is expected to favor movement.
 
-## Mechanism of mCbN-induced modulation of postsynaptic currents
+### Mechanism of mCbN-induced modulation of postsynaptic currents
 
 The vlPAG includes a mixed population of dopaminergic and noradrenergic tyrosine hydroxylase (TH) positive neurons (Figure 6A; Suckow et al., 2013), raising the possibility that these neurons might mediate the mCbN-dependent modulation of synaptic input to Chx10 neurons. To test whether TH neurons are in fact targets of mCbN neurons, we recorded from labeled TH+ neurons in TH-tdT mice (Figure 6A) in which ChR2-eYFP had been virally introduced into mCbN neurons. The connectivity ratio for mCbN cells onto TH vlPAG neurons was higher than onto Chx10 cells, with 72.7% of TH neurons (n = 8 of 11 cells [8 M, 0 F]) responding to optogenetic stimulation of mCbN afferents with EPSCs (Figure 6B,C, left; −35.2 ± 8.7 pA, n = 8), with a PPR of 0.8 ± 0.2 (Figure 6C, right; n = 8 cells). These TH neurons fired spontaneously (17.9 ± 4.6 sp/s, n = 8 cells [8 M, 0F]), as previously reported (Dougalis et al., 2017). The magnitude of the mCbN-dependent synaptic input evoked by 30 light pulses at 25 Hz was indeed sufficient to accelerate spike onset (Figure 6D), leading to a leftward shift of the cumulative interspike interval distribution (Figure 6E; control ISI: 112.7 ± 1.5 ms; +mCbN stimulated ISI: 100.0 ± 1.3 ms, n = 4 cells [4 M, 0 F]; p<0.0001, Kolmogorov-Smirnov test). The leftward shift in the interspike interval distribution corresponded with a modest increase in firing rate (control: 9.9 ± 0.1 spikes/sec; +mCbN stimulation: 11.2 ± 0.1 spikes/sec, n = 4 cells [4M, 0F]).
 
@@ -94,13 +344,13 @@ To investigate the receptor subtypes responsible for the changes in PSCs specifi
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig8-v2.jpg)
 
-**Figure 8.:** 2 but not D1 receptor activation.(A) Left, Electrically evoked IPSCs before (black) and during (color) bath application of the D2-receptor agonist quinpirole (25 μM). Right, As at left, but with D1 receptors activated by dopamine while D2 receptors were blocked by sulpiride (1 μM). (B) Population data for percent change in IPSC with either D2 or D1 receptor activation. Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.01, n.s., non-significant. (C, D) As in A, B but for EPSCs.
+**Figure 8.:** (A) Left, Electrically evoked IPSCs before (black) and during (color) bath application of the D2-receptor agonist quinpirole (25 μM). Right, As at left, but with D1 receptors activated by dopamine while D2 receptors were blocked by sulpiride (1 μM). (B) Population data for percent change in IPSC with either D2 or D1 receptor activation. Open symbols, individual cells, solid symbols, mean ± SEM. Asterisks, p<0.01, n.s., non-significant. (C, D) As in A, B but for EPSCs.
 
 Finally, we tested whether D2 receptors also mediate the effects of mCbN activation on Chx10 synaptic responses. To do so, we stimulated ChR2-expressing mCbN afferents in the absence and presence of the D2 receptor antagonist sulpiride (Figure 9A,C). Since neurons could not withstand the repeated depolarizations and repolarizations necessary to record EPSCs and IPSCs in a single cell, we recorded only EPSCs or IPSCs in each cell and compared the extent of modulation in the presence of sulpiride to that seen in D2-available control conditions. This control dataset included 24 cells recorded in Figure 5, as well as 3 cells recorded with D1 receptors blocked. Since the prediction was that no modulation would be seen, we took advantage of the fact that, in previous experiments, PSC modulation of different cells could be obtained sequentially in the same slice. Therefore, as a positive control, we first confirmed in each slice that mCbN stimulation indeed elicited a change in PSC strength before recording subsequent cells within the same slice in the presence of D1 or D2 receptor antagonists, adding 8 cells in eight slices to the control dataset, for a total of 35 cells (18 for IPSCs and 17 for EPSCs).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/54302/elife-54302-fig9-v2.jpg)
 
-**Figure 9.:** 2 receptor antagonists.(A) Top, protocol for stimulating electrically (upper line) and optogenetically (lower line). Bottom, IPSCs without (black) and with (color) mCbN stimulation in the presence of sulpiride. (B) Population data for percent change in IPSC with D2 receptors available or blocked. Open symbols, individual cells. Control data with D2 receptors available include cells with no antagonists from Figure 5D (downward triangles), cells with D1 antagonists (open circles), and cells from slices in which D2 receptors were subsequently blocked (upward triangles). Solid symbols, mean of up and down triangles ± SEM. Two asterisks, p<0.01 (unpaired t-test with and without D2 receptors blocked), three asterisks, p<0.001 (one sample t-test), n.s., non-significant (one sample t-test). (C, D) As in A, B for EPSCs.
+**Figure 9.:** (A) Top, protocol for stimulating electrically (upper line) and optogenetically (lower line). Bottom, IPSCs without (black) and with (color) mCbN stimulation in the presence of sulpiride. (B) Population data for percent change in IPSC with D2 receptors available or blocked. Open symbols, individual cells. Control data with D2 receptors available include cells with no antagonists from Figure 5D (downward triangles), cells with D1 antagonists (open circles), and cells from slices in which D2 receptors were subsequently blocked (upward triangles). Solid symbols, mean of up and down triangles ± SEM. Two asterisks, p<0.01 (unpaired t-test with and without D2 receptors blocked), three asterisks, p<0.001 (one sample t-test), n.s., non-significant (one sample t-test). (C, D) As in A, B for EPSCs.
 
 As reported above, in ACSF-treated control cells mCbN stimulation increased eIPSCs from 161.9 ± 49.6 pA to 208.6 ± 60.8 pA (Figure 9B,D), a 30.4 ± 9.1% within-cell change (n = 4 cells [4 M, 0 F], p=0.04, one sample t-test) and decreased eEPSCs from −222.5 ± 38.5 pA to −183.7 ± 40.5 pA, a −19.2% within-cell change (n = 4 cells [3 M, 1 F], p=0.02, one sample t-test). Application of the D1 antagonist SCH-23390 (1 μM) in 3 cells gave values that fell within the control distribution (Figure 9B,D). Bath application of sulpiride (1 μM), however, blocked both effects, such that in none of the 10 cells recorded in sulpiride did the extent of change reach the mean value for the modulated case. The eIPSCs of 246.8 ± 65.4 pA before stimulation remained at 246.4 ± 53.8 pA, a 3.1 ± 5.3% within-cell change (Figure 9A,B; n = 5 cells [5 M, 0 F], p=0.6, one sample t-test, % change vs. ACSF, p=0.03, unpaired t-test) and eEPSCs of −120.0 ± 14.7 pA before stimulation stayed at −122.1 ± 17.5 pA, a 1.0 ± 3.2% within-cell change (Figure 9C,D; n = 5 cells [3 M, 2 F], p=0.8, one sample t-test; % change vs. ACSF, p=0.005, unpaired t-test). Together, these results suggest that that the mCbN-induced modulation of IPSC and EPSC strength onto Chx10 cells is mediated through activation of local dopaminergic interneurons within the vlPAG, via postsynaptically expressed D2 receptors.
 
@@ -116,7 +366,7 @@ Identification of Chx10 neurons in the vlPAG as drivers of freezing. The periaqu
 
 Here, we have identified a particular subset of these glutamatergic neurons that express the transcription factor Chx10 and are well-suited to generate freezing responses. Chx10 neurons project to the Mc, which is directly upstream of spinal cord motor neurons (Esposito et al., 2014; Tovote et al., 2016). Likewise, optogenetic stimulation of Chx10 neurons in the vlPAG reliably elicits robust freezing (Leiras et al., 2017, SfN abstract). Consistent with a role in directly driving freezing, we find that the duration of immobility and the duration of light stimulation of Chx10 cells are precisely correlated, and freezing does not habituate over repeated trials. These data suggest that Chx10 neurons directly evoke freezing motor programs. Because the light stimulation was selected to produce high firing rates, however, more natural stimulation that modulates the activity of these cells throughout their dynamic range might have the capacity to generate more graded behavioral responses.
 
-## Cerebellar connections to brain regions regulating complex behaviors
+### Cerebellar connections to brain regions regulating complex behaviors
 
 The cerebellum has long been recognized as being involved in motor control, as disruptions of its signals give rise to disorders of movement, and experimentally elevating firing rates of CbN neurons can trigger muscle contraction (Noda and Fujikado, 1987; Hesslow, 1994a; Witter et al., 2013; Heiney et al., 2014; Proville et al., 2014; Lee et al., 2015). More generally, cerebellar activity contributes to prediction on a sub-second timescale (Ivry et al., 2002; Mauk and Buonomano, 2004; Molinari et al., 2008). It is also becoming clear that the cerebellum contributes to behaviors that carry a valence of reward or aversion (Kostadinov et al., 2019; Heffley and Hull, 2019; Carta et al., 2019). In doing so, it communicates widely with many regions of the brain. The CbN projects directly to brainstem centers to alter, generate, or augment reflexes, such as those associated with the vestibulo-ocular reflex, eyelid conditioning, and whisking (Lisberger, 1988; Medina et al., 2000; Brown and Raman, 2018); the cerebellum also forms multisynaptic loops with the cerebral cortex and hippocampus to modulate complex behaviors, including sensory discrimination and navigation (Popa et al., 2013; Proville et al., 2014; Rochefort et al., 2011; Babayan et al., 2017).
 
@@ -134,25 +384,203 @@ Nevertheless, if the net inhibitory effect predicted by the shift in EI ratio is
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>Chx10-cre</td>
+      <td>Obtained from Jessell Laboratory (Crone et al., 2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>tdTomato (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock: 007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>ChR2-EYFP (B6.Cg-Gt(ROSA)26 Sortm32(CAG-COP4*H134R/EYFP)Hze/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock: 024109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>GAD2-cre (B6N.Cg-Gad2tm2(cre)Zjh/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock:019022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>TH-cre (B6.Cg-7630403G23 RikTg(Th-cre)1Tmd/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock: 008601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>L7-Cre (B6.Cg-Tg(Pcp2-cre)3555Jdhu/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>Stock: 010536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-EF1α-DIO-hChR2(H134R)-eYFP</td>
+      <td>UNC Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-hSyn-hChR2 (H134R)-eYFP-WPRE-PA</td>
+      <td>UNC Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAVdj-hSyn-hChR2(E123A)-eYFP-WPRE</td>
+      <td>Stanford Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-EF1α-DIO-eYFP</td>
+      <td>UNC Viral Vector Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin Subunit B (Recombinant), Alexa Fluor 488 Conjugate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat. No. C22841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lumafluor red retrobeads</td>
+      <td>LumaFluor</td>
+      <td>Red Retrobeads IX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNQX</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0189</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CPP</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CPCCOEt</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulpiride</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SCH 23390</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prazosin</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sotalol</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quinpirole</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine</td>
+      <td>Tocris</td>
+      <td>Cat. No. 3548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoproterenol</td>
+      <td>Tocris</td>
+      <td>Cat. No 17.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreezeFrame</td>
+      <td>Actimetrics (www.actimetrics.com)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All procedures conformed to NIH guidelines and were approved by the Northwestern University Institutional Animal Care and Use Committee, protocol IS00000242 (IMR). Mice were housed on a 14:10 light:dark cycle, with ad lib access to food and water. The following mice were obtained from Jackson Laboratories: ‘Ai14,’ which express cre-dependent tdTomato (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, RRID Jax 007914); ‘Ai32,’ which express cre-dependent ChR2-EYFP (B6.Cg-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J, RRID Jax 024109); ‘GAD2,’ which express cre in GAD2-positive cells (B6N.Cg-Gad2tm2(cre)Zjh/J, RRID Jax 019022); ‘TH,’ which express cre in TH-positive cells (B6.Cg-7630403G23RikTg(Th-cre)1Tmd/J, RRID Jax 008601); and ‘L7,’ which express cre in Purkinje cells (B6.Cg-Tg(Pcp2-cre)3555Jdhu/J, RRID Jax 010536). ‘Chx10’ mice, which express cre in Chx10 expressing cells, were shared by Dr. Thomas Jessell (Crone et al., 2008). All mice were on a C57Bl6/J background. Cre-dependent transgenic lines were maintained as heterozygotes and bred to homozygous Ai14 or Ai27 mice to generate F1 offspring expressing ChR2 with EYFP or tdTomato in the desired cell population. For simplicity, mice are referred to by the cre-expressing promoter and the cre-dependent protein of interest, e.g. Chx10-ChR2 mice. Recordings were made from both male and female mice and sex was recorded and reported along with n-values. Where sample size permitted, sex was considered as a biological variable in post-hoc analyses.
 
-## Freezing behavior
+### Freezing behavior
 
 To stimulate Chx10 neurons in vivo, a fiber optic cannula was implanted unilaterally just above the vlPAG. Stainless steel fiber optic cannulae (200 μm core, 0.39 NA) were cut at a ~ 45° angle to the desired length with a ruby fiber scribe. Mice were fully anesthetized either with isoflurane (2–3%) or ketamine/xylazine injection (80–100 mg/kg ketamine, 5–10 mg/kg xylazine). A craniotomy was made above the PAG, with the medial and posterior coordinates (from bregma) of 0.55–0.75 mm and 4.4–4.75 mm, respectively, adjusted to avoid rupturing the mid-sagittal and transverse sinus. The cannula was lowered to a depth of 2.6 mm and secured with dental cement. After surgery, mice were given 0.015–0.051 mg/kg buprenorphine SR (subcutaneously) and monitored for 3 days.
 
 Mice were placed in a 40 × 40 cm behavioral chamber. The fiber optic cable was connected through a rotary joint to the fiber optic cannula. Video monitoring and light stimuli were controlled by FreezeFrame software (Actimetrics, Wilmette IL). Light trains (10 ms pulses, 50 Hz, 4–6 mW, 465 nm) were applied for 2–5 s through an LED (Doric Lenses). Mice were exposed to 50 consecutive trains, with a start-to-start interval of 20 s. Motion was detected in FreezeFrame by a significant motion pixel algorithm (Kopec et al., 2007). The frame rate for comparison of relative motion was 3.75/sec, giving a temporal resolution of 266 ms. After thresholding to identify periods of immobility (‘freezing’), the data were further analyzed with Matlab. Motion across each trial of 50 trains was averaged. The percent time of freezing was calculated before (‘baseline’) and during stimulation (‘test’). Baseline was taken as the 2 s period before stimulation. To compare behavior across mice, the z-Score of the motion was calculated. Since the threshold of 3 SDs below the mean had a latency of ~500–600 ms, the test period for evaluating whether freezing had occurred was set as 1 s after light onset and lasted for the length of stimulation.
 
-## Viral and tracer injections
+### Viral and tracer injections
 
 Stereotaxic injections were made with a Patchstar micromanipulator (Scientifica). Viruses and tracers (100–300 nL) were loaded into glass microelectrodes for application by either pressure injection or a Nanoject III (Drummond Scientific). Mice (p28-p35) were anesthetized with isoflurane (2–3%). The exposed scalp was cleaned with 70% ethanol and betadine and locally anesthetized with lidocaine. A craniotomy was made over the targeted brain area and injections were made at (in mm from bregma) −6.23 posterior,±0.6 lateral, −3.3 deep for mCbN or −4.6 posterior,±0.55 lateral, −3.15 deep for vlPAG. For pressure injections,~300 nL of virus or tracer was backfilled into the glass microelectrode and manually injected using 3–5 ms pulses of pressurized oxygen at <20 psi. For the Nanoject III injections, virus or tracer was injected at a rate of 1 nL/sec for 30 s at a time. After injection, the microelectrode was left in place for >1 min before removal, to prevent backflow and allow time for diffusion. The incision was repaired with vetbond and treated with antibiotic ointment. Post-surgical analgesia and monitoring were as above. Mice were allowed to recover for at least 3 days before behavioral testing. The viruses each express a form of ChR2 and EYFP and were the following: AAV2-EF1α-DIO-hChR2(H134R)-eYFP (UNC viral vector core, titer: 4.2 × 1012), AAV2-hSyn-hChR2(H134R)-eYFP-WPRE-PA (UNC viral vector core; titer: 5.6 × 1012), AAV2-EF1α-DIO-eYFP (UNC viral vector core; titer 4.6 × 1012), or AAVdj-hSyn-hChR2(E123A)-eYFP-WPRE (Stanford viral vector core; titer: 6.2 × 1013). For retrograde anatomical tracing, red retrobeads (Lumafluor) and CTb-GFP (ThermoFisher) were used.
 
-## Preparation of acute slices
+### Preparation of acute slices
 
 Cerebellar or Mc slices were prepared from p17-p24 mice. Mice were fully anesthetized by isoflurane (2–3%) and transcardially perfused with 10 mL of warm (37°C), oxygenated (95% O2/5% CO2) aCSF, which contained (in mM): 123 NaCl, 3.5 KCl, 1.25 NaHPO4, 26 NaHCO3, 1 MgCl2, 1.5 CaCl2, 10 D-glucose (290–310 mosmol, pH 7.3). Coronal or sagittal slices (250–300 μm) were prepared in warm, oxygenated aCSF to facilitate cutting through heavy myelination (Person and Raman, 2012; Wu and Raman, 2017). PAG slices were cut from p21-p80 mice. Mice were perfused with 10 mL of cold (4°C), oxygenated sucrose cutting solution, which contained (mM): 83 NaCl, 2.5 KCl, 1 NaH2PO4, 26.2 NaHCO3, 22 dextrose, 72 sucrose, 0.5 CaCl2, and 3.3 MgCl2, one kynurenate (300–310 mosmol, pH 7.3). Coronal slices (300 µm) were cut in cold sucrose cutting solution. Both cerebellar and PAG slices recovered in oxygenated aCSF for 30–60 min at 37°C and then were maintained at room temperature (22°−23°C) until use.
 
-## Electrophysiological recording
+### Electrophysiological recording
 
 Whole cell voltage- and current-clamp recordings were made from neurons in the mCbN, the vlPAG, and Mc. The extracellular solution contained (mM) 123 NaCl, 3.5 KCl, 1.25 NaHPO4, 26 NaHCO3, 1 MgCl2, 1.5 CaCl2, 10 D-glucose (290–310 mosm, pH 7.3); for recordings with synaptic stimulation, the Ca concentration was increased to 2 mM to increase release probability. Voltage clamp recordings were made with one of two intracellular solutions: Cs-gluconate, which contained (mM): 120 CsCH3SO3, 3 NaCl, 2 MgCl2, 1 EGTA, 10 HEPES, 4 MgATP, 0.3 Tris-GTP, 14 Tris-creatine phosphate, 1.2 QX-314, 4 TEA-Cl, 12 sucrose (288 mOsm, buffered with CsOH to pH 7.32) or K-gluconate, which contained (in mM): 130 K-gluconate, 2 Na-gluconate, 6 NaCl, 2 MgCl2, 0.1 CaCl2, 1 EGTA, 4 MgATP, 0.3 TrisGTP, 14 Tris-creatine phosphate, 10 sucrose, 10 HEPES, 5 QX-314 (287 mOsm, buffered with KOH to pH 7.35). Current-clamp recordings were made with the K-gluconate internal solution, without QX-314.
 
@@ -164,14 +592,14 @@ In the vlPAG, targeted recordings were made from labeled neurons in Chx10-tdT or
 
 All drugs were from Tocris Biosciences and were bath applied where indicated at the following concentrations: 10 µM DNQX, 10 µM CPP, 20 µM CPCCOEt, 1 µM sulpiride, 1 µM SCH-23390, 5 µM prazosin, 30 µM sotalol, 25 μM quinpirole, 10 μM dopamine, 5 µM isoproterenol.
 
-## Data Analysis
+### Data Analysis
 
 Electrophysiological data were analyzed with AxographX and IPro 7.08 (Wavemetrics). Action potentials were detected and their waveforms analyzed in AxographX. Phase-plane plots were generated in IgorPro from the time derivative of the membrane potential. Action potential threshold was defined as the membrane potential at which dV/dt exceeded 10 mV/ms. Peak EPSCs and IPSCs were measured from the baseline-zeroed average of ≥10 traces. IPSCs decay phases were fit with the sum of two exponentials, and weighted time constants were calculated from the percent contribution of each component to the peak current.
 
-## Image acquisition and processing
+### Image acquisition and processing
 
 Mice were anesthetized with 60–100 mg/kg Na-pentobarbital and transcardially perfused with 10 mL 0.1 M PBS followed by 10 mL 4% formaldehyde in 0.1 M PBS. Brains were removed and post-fixed overnight in 4% formaldehyde (room temperature). Sections (50–100 μm) were cut on a Leica 1000S microtome and mounted on glass slides. Confocal images were acquired with a Leica SP5 laser scanning confocal microscope in the Northwestern University Biological Imaging Facility. Images were processed with open-source FIJI software (Schindelin et al., 2012). Images were adjusted for brightness and contrast. For images of axonal arborization, the black and white image was color-inverted for visual clarity.
 
-## Statistics
+### Statistics
 
 Data are reported as mean ± S.E.M. Statistical tests were performed in Excel and GraphPad Prism. Statistics were calculated with two-sample paired or unpaired Student’s t-tests, one-sample t-tests for normalized data, or a Kolmogorov-Smirnov test, as indicated in the text. Significance was taken as p<0.05, and p-values are reported. The n values refer to the number of cells recorded or mice tested as indicated (e.g., n = x cells); values in brackets indicate the number of observations in each sex (M, male, F, female).

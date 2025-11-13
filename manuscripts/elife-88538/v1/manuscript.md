@@ -17,20 +17,20 @@
 
 ### Affiliations
 
-1. https://ror.org/05dq2gs74 Division of Clinical Pharmacology, Department of Medicine, Vanderbilt University Medical Center Nashville United States
-2. https://ror.org/05dq2gs74 Department of Biomedical Informatics, Vanderbilt University Medical Center Nashville United States
-3. https://ror.org/05dq2gs74 Division of Rheumatology and Immunology, Department of Medicine, Vanderbilt University Medical Center Nashville United States
-4. https://ror.org/02dgjyy92 Division of Rheumatology, Department of Medicine, University of Miami Miami United States
-5. https://ror.org/01c9rqr26 Tennessee Valley Healthcare System, Nashville Campus Nashville United States
-6. https://ror.org/05dq2gs74 Division of Nephrology & Hypertension, Vanderbilt University Medical Center Nashville United States
-7. https://ror.org/05dq2gs74 Vanderbilt Genetics Institute, Department of Medicine, Vanderbilt University Medical Center Nashville United States
-8. https://ror.org/02vm5rt34 Department of Pharmacology, Vanderbilt University Nashville United States
+1. Division of Clinical Pharmacology, Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+2. Department of Biomedical Informatics, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+3. Division of Rheumatology and Immunology, Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+4. Division of Rheumatology, Department of Medicine, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+5. Tennessee Valley Healthcare System, Nashville Campus Nashville United States ([ROR:01c9rqr26](https://ror.org/01c9rqr26))
+6. Division of Nephrology & Hypertension, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+7. Vanderbilt Genetics Institute, Department of Medicine, Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
+8. Department of Pharmacology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
 
 † Corresponding author
 
 ## Abstract
 
-Two risk variants in the apolipoprotein L1 gene ( APOL1 ) have been associated with increased susceptibility to sepsis in Black patients. However, it remains unclear whether APOL1 high-risk genotypes are associated with occurrence of either sepsis or sepsis-related phenotypes in patients hospitalized with infections, independent of their association with pre-existing severe renal disease. A retrospective cohort study of 2242 Black patients hospitalized with infections. We assessed whether carriage of APOL1 high-risk genotypes was associated with the risk of sepsis and sepsis-related phenotypes in patients hospitalized with infections. The primary outcome was sepsis; secondary outcomes were short-term mortality, and organ failure related to sepsis. Of 2242 Black patients hospitalized with infections, 565 developed sepsis. Patients with high-risk APOL1 genotypes had a significantly increased risk of sepsis (odds ratio [OR]=1.29 [95% CI, 1.00–1.67; p=0.047]); however, this association was not significant after adjustment for pre-existing severe renal disease (OR = 1.14 [95% CI, 0.88–1.48; p=0.33]), nor after exclusion of those patients with pre-existing severe renal disease (OR = 0.99 [95% CI, 0.70–1.39; p=0.95]). APOL1 high-risk genotypes were significantly associated with the renal dysfunction component of the Sepsis-3 criteria (OR = 1.64 [95% CI, 1.21–2.22; p=0.001]), but not with other sepsis-related organ dysfunction or short-term mortality. The association between high-risk APOL1 genotypes and sepsis-related renal dysfunction was markedly attenuated by adjusting for pre-existing severe renal disease (OR = 1.36 [95% CI, 1.00–1.86; p=0.05]) and was nullified after exclusion of patients with pre-existing severe renal disease (OR = 1.16 [95% CI, 0.74–1.81; p=0.52]). APOL1 high-risk genotypes were associated with an increased risk of sepsis; however, this increased risk was attributable predominantly to pre-existing severe renal disease. This study was supported by R01GM120523 (QF), R01HL163854 (QF), R35GM131770 (CMS), HL133786 (WQW), and Vanderbilt Faculty Research Scholar Fund (QF). The dataset(s) used for the analyses described were obtained from Vanderbilt University Medical Center’s BioVU which is supported by institutional funding, the 1S10RR025141-01 instrumentation award, and by the CTSA grant UL1TR0004from NCATS/NIH. Additional funding provided by the NIH through grants P50GM115305 and U19HL065962. The authors wish to acknowledge the expert technical support of the VANTAGE and VANGARD core facilities, supported in part by the Vanderbilt-Ingram Cancer Center (P30 CA068485) and Vanderbilt Vision Center (P30 EY08126). The funders had no role in design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.
+Background:Two risk variants in the apolipoprotein L1 gene (APOL1) have been associated with increased susceptibility to sepsis in Black patients. However, it remains unclear whether APOL1 high-risk genotypes are associated with occurrence of either sepsis or sepsis-related phenotypes in patients hospitalized with infections, independent of their association with pre-existing severe renal disease.Methods:A retrospective cohort study of 2242 Black patients hospitalized with infections. We assessed whether carriage of APOL1 high-risk genotypes was associated with the risk of sepsis and sepsis-related phenotypes in patients hospitalized with infections. The primary outcome was sepsis; secondary outcomes were short-term mortality, and organ failure related to sepsis.Results:Of 2242 Black patients hospitalized with infections, 565 developed sepsis. Patients with high-risk APOL1 genotypes had a significantly increased risk of sepsis (odds ratio [OR]=1.29 [95% CI, 1.00–1.67; p=0.047]); however, this association was not significant after adjustment for pre-existing severe renal disease (OR = 1.14 [95% CI, 0.88–1.48; p=0.33]), nor after exclusion of those patients with pre-existing severe renal disease (OR = 0.99 [95% CI, 0.70–1.39; p=0.95]). APOL1 high-risk genotypes were significantly associated with the renal dysfunction component of the Sepsis-3 criteria (OR = 1.64 [95% CI, 1.21–2.22; p=0.001]), but not with other sepsis-related organ dysfunction or short-term mortality. The association between high-risk APOL1 genotypes and sepsis-related renal dysfunction was markedly attenuated by adjusting for pre-existing severe renal disease (OR = 1.36 [95% CI, 1.00–1.86; p=0.05]) and was nullified after exclusion of patients with pre-existing severe renal disease (OR = 1.16 [95% CI, 0.74–1.81; p=0.52]).Conclusions:APOL1 high-risk genotypes were associated with an increased risk of sepsis; however, this increased risk was attributable predominantly to pre-existing severe renal disease.Funding:This study was supported by R01GM120523 (QF), R01HL163854 (QF), R35GM131770 (CMS), HL133786 (WQW), and Vanderbilt Faculty Research Scholar Fund (QF). The dataset(s) used for the analyses described were obtained from Vanderbilt University Medical Center’s BioVU which is supported by institutional funding, the 1S10RR025141-01 instrumentation award, and by the CTSA grant UL1TR0004from NCATS/NIH. Additional funding provided by the NIH through grants P50GM115305 and U19HL065962. The authors wish to acknowledge the expert technical support of the VANTAGE and VANGARD core facilities, supported in part by the Vanderbilt-Ingram Cancer Center (P30 CA068485) and Vanderbilt Vision Center (P30 EY08126). The funders had no role in design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the manuscript; and decision to submit the manuscript for publication.
 
 ## Introduction
 
@@ -46,15 +46,15 @@ The objective of this study was to better understand the relationship between AP
 
 ## Methods
 
-## Study population and design
+### Study population and design
 
 This study used data from the Vanderbilt University Medical Center (VUMC) Synthetic Derivative, which contains a de-identified version of the electronic medical records (EHRs) for VUMC patients (~3.6 million individual records as of October 2022). These de-identified EHRs are linked to a biobank (BioVU), which has genome-wide genotyping results for ~120,000 patients. From these genotyped patients, we constructed a cohort of Black patients admitted to the hospital with an infection to assess the association between carriage of APOL1 high-risk alleles and the occurrence of sepsis before and after consideration of pre-existing severe renal disease. Additionally, to replicate findings from a previously published MVP sepsis study (Wu et al., 2021), we performed a restricted phenome-wide association analysis (PheWAS) in all Black patients with existing genotypes; we determined the association between carriage of APOL1 high-risk genotypes and phenotypes previously reported to be associated with sepsis, further expanding the analysis to account for pre-existing severe renal disease based upon the primary analysis of this study (Wu et al., 2021). This study was reviewed by the VUMC Institutional Review Board; given the study’s retrospective design and use of de-identified data only, informed consent was waived.
 
-## Inclusion/exclusion criteria
+### Inclusion/exclusion criteria
 
 The primary cohort included individuals with EHR-reported Black race who were admitted to the hospital with an infection between January 2000 and August 2020 and were ≥18 years of age on the day of admission (Liu et al., 2023). We selected patients with EHR-reported Black race only (i.e., as reported by the patient or, secondarily, by a provider) because APOL1 high-risk genotypes are virtually exclusive to populations of recent African ancestries (Kopp et al., 2011; Daneshpajouhnejad et al., 2022; Limou et al., 2014; Zhang et al., 2016) the majority of whom are identified as having Black race in our dataset (i.e., EHR-reported race is highly consistent with genetic ancestry in BioVU) (Dumitrescu et al., 2010). This restriction helps control for factors associated with socially determined race which may affect individuals’ sepsis outcomes external to genetic ancestry (e.g., an individual with predominantly African genetic ancestry who identifies as having White race). To account for genetic ancestral diversity within the cohort, all analyses were adjusted for principal components (PCs) for ancestry (see below). The day of hospital admission was designated day 0. International Classification of Disease, ninth revision, Clinical Modification (ICD-9-CM); tenth revision (ICD-10-CM); Current Procedural Terminology (CPT) codes; medications; labs; and clinical notes were used for cohort construction and covariates. Infection was defined as having a billing code indicating an infection and receiving an antibiotic within 1 day of hospital admission (i.e., on days –1, 0, or +1) (Liu et al., 2023; Feng et al., 2019a; Feng et al., 2019b). We used ICD-9-CM and ICD-10-CM codes for this definition of infection based on the criteria of Angus et al., 2001; Donnelly et al., 2017, excluding viral, mycobacterial, fungal, and spirochetal infections, as we have described in detail previously (Liu et al., 2023; Feng et al., 2019a; Feng et al., 2019b). Only the first hospitalization for infection was included if a patient had more than one qualifying episode. We excluded individuals admitted for cardiac surgery, cardiogenic shock, and organ transplantation, as well as those with no relevant laboratory values (i.e., creatinine, bilirubin, or platelets) on days –1, 0, or +1. We also excluded patients who had a positive test or ICD-10-CM code (U07.1) for coronavirus disease (COVID-19) on days –1, 0, or +1 (Liu et al., 2023; Feng et al., 2019a; Feng et al., 2019b).
 
-## Outcomes
+### Outcomes
 
 The primary outcome was the development of sepsis as indicated by fulfillment of the Sepsis-3 criteria (described below). Secondary outcomes were the individual organ dysfunction criteria in the Sepsis-3 definition (i.e., renal, hepatic, respiratory, circulatory, and hematologic dysfunction) as well as severe sepsis/septic shock and short-term mortality.
 
@@ -62,17 +62,17 @@ Sepsis was defined by the Sepsis-3 criteria of concurrent infection and organ dy
 
 In brief, individuals in the infection cohort met the definition of sepsis if they had either ICD codes for septic shock or severe sepsis (ICD-9-CM, 995.92 and 785.52; ICD-10-CM, R65.20 and R65.21) because these are highly specific (99.3%) (Rhee et al., 2017), or they met any Sepsis-3 criterion for serious organ dysfunction (Liu et al., 2023; Rhee et al., 2017). Criteria for organ system dysfunction included: (1) circulatory: (a) use of a vasopressor, which we extracted as use of levophed (norepinephrine), or (b) use of the vasopressors (i.e., dobutamine or dopamine) unrelated to stress echocardiography CPT codes 78452, 93015, 93018, 93016, 93017, and 93351 within days –1, 0, and (1) and with ≥2 mentions of any of the keywords (i.e., ‘infection,’ ‘sepsis,’ or ‘septic’); (2) respiratory: ICD or CPT codes for ventilation and admission to an ICU; (3) renal: a doubling or greater increase of baseline creatinine (baseline creatinine was defined as the lowest creatinine between 1 year before admission and hospital discharge); (4) hepatic: a total bilirubin ≥34.2 µmol/L (2 mg/dL) and at least double from baseline (baseline bilirubin was defined as the lowest total bilirubin occurring between 1 year before admission and hospital discharge); and (5) hematologic: a platelet count <100,000/µL and ≥50% decline from a baseline that must have been ≥100,000 (the baseline value was the highest platelet count occurring between 1 year before admission and hospital discharge) (Liu et al., 2023; Feng et al., 2019a; Feng et al., 2019b). Short-term mortality was defined as patients who (1) had death recorded in the EHR within the index hospital stay or (2) were discharged to hospice (Alrawashdeh et al., 2022).
 
-## Covariates
+### Covariates
 
 We extracted demographic characteristics from the EHRs, including sex and age at the time of the index hospital admission, as well the types of infection at the time of hospitalization (Supplementary file 1a). Comorbidities were collected (MDCalc, 2019; National Cancer Data Base - Data Dictionary PUF, 2013) using relevant diagnostic codes in the year before the index hospital admission (Supplementary file 1b) grouped into the 17 Charlson/Deyo comorbidity categories (Deyo et al., 1992; Charlson et al., 1987; Quan et al., 2005). We also identified patients with pre-existing severe renal disease (i.e., Stage 4/5 chronic kidney disease/ESRD as evidenced by one or more of the following ICD diagnosis and procedure codes: N18.4, N18.5, N18.6, N18.9, 585.4, 585.5, 585.6, 585.9, 586, Z99.2, Z49.0, Z49.31, 39.95, V45.11, V56.0, Supplementary file 1c). PCs for ancestry were calculated using common variants (minor allele frequency [MAF]>1%) with a high variant call rate (>98%), excluding variants in linkage and regions known to affect PCs (i.e., the HLA region on chromosome 6, inversion on chromosome 8 [8135000–12000000], and inversion on chr 17 [40900000–45000000], GRCh37 build). We calculated 10 PCs for ancestry using SNPRelate version 1.16.0 (Zheng et al., 2012).
 
-## Genotyping for APOL1
+### Genotyping for APOL1
 
 Genotyping was performed using the Illumina Infinium Expanded Multi-Ethnic Genotyping Array (MEGAEX). We excluded DNA samples: (1) with a call rate <95%; (2) with inconsistently assigned sex; or (3) that were unexpected duplicates. We performed whole genome imputation using the Michigan Imputation Server (Das et al., 2016) with the Haplotype Reference Consortium (McCarthy et al., 2016), version r1.1 (McCarthy et al., 2016; Do et al., 2013), as reference; we then filtered variants with (1) low imputation quality (r2 <0.3), (2) MAF <0.5%, and (3) MAF absolute difference >0.3 when compared to the HRC reference panel.
 
 Variants within APOL1 were extracted from imputed genotype data. We used rs73885319 to define G1 and rs12106505 as a proxy for the G2 allele (rs71785313) (Bajaj et al., 2020). Individuals who were APOL1 variant allele homozygotes or compound heterozygotes—defined as carriers of two copies of rs73885319 (G1/G1), two copies of rs12106505 (G2/G2), or one copy of each (G1/G2)—were considered to be high risk. Carriers of 1 or 0 APOL1 risk alleles were considered low risk (i.e., a recessive model) (Genovese et al., 2010; Bajaj et al., 2020).
 
-## Statistical analysis
+### Statistical analysis
 
 Primary and secondary outcomes in patients with high-risk and low-risk APOL1 genotypes were compared using logistic regression with adjustment for age at hospital admission, sex, and three PCs for ancestry. We performed further analyses (1) with additional adjustment for pre-existing severe renal disease (Supplementary file 1c), (2) excluding patients with pre-existing severe renal disease (n=458) from the infection cohort, and (3) including only patients with pre-existing severe renal disease.
 
@@ -84,31 +84,275 @@ Chi-square tests were used to compare categorical characteristics and comorbidit
 
 The primary cohort included 2242 Black patients hospitalized with an infection; 361 (16.1%) patients carried a high-risk APOL1 genotype and 1881 (83.9%) carried low-risk genotypes (Table 1). The baseline characteristics of patients with the high- and low-risk genotypes did not differ significantly in age, sex, and most general medical comorbidities and infection types. However, renal-related comorbidities were significantly more frequent in the high-risk genotype group (p=1.60 × 10–10) (Table 1).
 
-## Associations between high-risk APOL1 genotype and sepsis
+**Table 1.**
+ Clinical characteristics of patients admitted to the hospital with infections.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>Total(n=2242)</th>
+      <th>APOL1 low-risk group(n=1881)</th>
+      <th>APOL1 high-risk group(n=361)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Gender</td>
+      <td>Female, n (%)</td>
+      <td>1306 (58.3)</td>
+      <td>1096 (58.3)</td>
+      <td>210 (58.2)</td>
+      <td rowspan="2">1.00</td>
+    </tr>
+    <tr>
+      <td>Male, n (%)</td>
+      <td>936 (41.7)</td>
+      <td>785 (41.7)</td>
+      <td>151 (41.8)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Age (at admission), median (Q1-Q3)</td>
+      <td>50 (33–62)</td>
+      <td>50 (33–63)</td>
+      <td>50 (34–60)</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td colspan="2">Comorbidities*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Congestive heart failure, n (%)</td>
+      <td>312 (13.9)</td>
+      <td>260 (13.8)</td>
+      <td>52 (14.4)</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td colspan="2">Chronic pulmonary disease, n (%)</td>
+      <td>378 (16.9)</td>
+      <td>320 (17)</td>
+      <td>58 (16.1)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cerebrovascular disease, n (%)</td>
+      <td>221 (9.9)</td>
+      <td>197 (10.5)</td>
+      <td>24 (6.6)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dementia, n (%)</td>
+      <td>39 (1.7)</td>
+      <td>33 (1.8)</td>
+      <td>6 (1.7)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">Diabetes with chronic complication, n (%)</td>
+      <td>244 (10.9)</td>
+      <td>200 (10.6)</td>
+      <td>44 (12.2)</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td colspan="2">Diabetes without chronic complication, n (%)</td>
+      <td>170 (7.6)</td>
+      <td>136 (7.2)</td>
+      <td>34 (9.4)</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td colspan="2">Hemiplegia or paraplegia, n (%)</td>
+      <td>48 (2.1)</td>
+      <td>41 (2.2)</td>
+      <td>7 (1.9)</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td colspan="2">AIDS/HIV, n (%)</td>
+      <td>44 (2)</td>
+      <td>35 (1.9)</td>
+      <td>9 (2.5)</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td colspan="2">Malignancy, including lymphoma and leukemia, except malignant neoplasm of skin, n (%)</td>
+      <td>373 (16.6)</td>
+      <td>318 (16.9)</td>
+      <td>55 (15.2)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td colspan="2">Myocardial infarction, n (%)</td>
+      <td>222 (9.9)</td>
+      <td>189 (10)</td>
+      <td>33 (9.1)</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td colspan="2">Mild liver disease, n (%)</td>
+      <td>38 (1.7)</td>
+      <td>33 (1.8)</td>
+      <td>5 (1.4)</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td colspan="2">Moderate or severe liver disease, n (%)</td>
+      <td>49 (2.2)</td>
+      <td>44 (2.3)</td>
+      <td>5 (1.4)</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td colspan="2">Peptic ulcer disease, n (%)</td>
+      <td>23 (1)</td>
+      <td>19 (1)</td>
+      <td>4 (1.1)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">Peripheral vascular disease, n (%)</td>
+      <td>142 (6.3)</td>
+      <td>123 (6.5)</td>
+      <td>19 (5.3)</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td colspan="2">Renal disease, n (%)</td>
+      <td>545 (24.3)</td>
+      <td>409 (21.7)</td>
+      <td>136 (37.7)</td>
+      <td>1.60E-10</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rheumatic disease, n (%)</td>
+      <td>73 (3.3)</td>
+      <td>58 (3.1)</td>
+      <td>15 (4.2)</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td colspan="2">Metastatic solid tumor, n (%)</td>
+      <td>198 (8.8)</td>
+      <td>166 (8.8)</td>
+      <td>32 (8.9)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">Infection type†</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Circulatory, n (%)</td>
+      <td>35 (1.6)</td>
+      <td>29 (1.5)</td>
+      <td>6 (1.7)</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td colspan="2">Digestive, n (%)</td>
+      <td>247 (11)</td>
+      <td>217 (11.5)</td>
+      <td>30 (8.3)</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td colspan="2">Genitourinary, n (%)</td>
+      <td>769 (34.3)</td>
+      <td>648 (34.5)</td>
+      <td>121 (33.6)</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td colspan="2">Intestinal, n (%)</td>
+      <td>60 (2.7)</td>
+      <td>46 (2.4)</td>
+      <td>14 (3.9)</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td colspan="2">Musculoskeletal, n (%)</td>
+      <td>109 (4.9)</td>
+      <td>92 (4.9)</td>
+      <td>17 (4.7)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td colspan="2">Neurologic, n (%)</td>
+      <td>43 (1.9)</td>
+      <td>35 (1.9)</td>
+      <td>8 (2.2)</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td colspan="2">Other bacterial, n (%)</td>
+      <td>879 (39.3)</td>
+      <td>723 (38.5)</td>
+      <td>156 (43.3)</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td colspan="2">Respiratory, n (%)</td>
+      <td>711 (31.8)</td>
+      <td>589 (31.3)</td>
+      <td>122 (33.9)</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td colspan="2">Skin, n (%)</td>
+      <td>325 (14.5)</td>
+      <td>286 (15.2)</td>
+      <td>39 (10.8)</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="2">Other, n (%)</td>
+      <td>322 (14.4)</td>
+      <td>268 (14.3)</td>
+      <td>54 (15)</td>
+      <td>0.72</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Comorbidities present in the preceding year as defined by criteria for the Charlson/Deyo comorbidity index.†Total n=2239; APOL1 low-risk group n=1879; APOL1 high-risk group n=360._
+
+### Associations between high-risk APOL1 genotype and sepsis
 
 Within the primary cohort of patients hospitalized with infections, 565 patients developed sepsis, including 105 (29.1%) with APOL1 high-risk genotypes and 460 (24.5%) with low-risk genotypes. The risk of sepsis was significantly increased among patients with the high-risk APOL1 genotypes (OR = 1.29 [95% CI, 1.00–1.67; p=0.047]) (Figure 1). However, the association between sepsis and APOL1 high-risk genotypes was not significant after adjustment for pre-existing severe renal disease (OR = 1.14 [95% CI: 0.88–1.48; p=0.33]), nor after exclusion of those patients (n=458) with severe renal disease (OR = 0.99 [95% CI, 0.70–1.39; p=0.95]) (Figure 2). We also found no association between sepsis and APOL1 high-risk genotypes in analysis of patients with severe renal disease alone (OR = 1.29 [95% CI, 0.84–1.98, p=0.25]).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88538/elife-88538-fig1-v1.jpg)
 
-**Figure 1.:** APOL1 high-risk genotypes and the risk of sepsis, and septic shock, and individual sepsis organ dysfunction criteria.Analyses were adjusted for age, sex and three principal components (PCs). Sepsis was defined as meeting the Sepsis-3 criteria for sepsis (Donnelly et al., 2017; Rhee et al., 2017), septic shock was defined using International Classification of Disease, ninth revision, Clinical Modification (ICD-9) and -10 codes for septic shock/severe sepsis (ICD-9-CM, 995.92 and 785.52; ICD-10-CM, R65.20 and R65.21); organ dysfunction data represent the individual organ dysfunction criteria in the Sepsis-3 definition; short-term mortality was defined as in-hospital death or discharge to hospice.Figure 1—source data 1.
+**Figure 1.:** Analyses were adjusted for age, sex and three principal components (PCs). Sepsis was defined as meeting the Sepsis-3 criteria for sepsis (Donnelly et al., 2017; Rhee et al., 2017), septic shock was defined using International Classification of Disease, ninth revision, Clinical Modification (ICD-9) and -10 codes for septic shock/severe sepsis (ICD-9-CM, 995.92 and 785.52; ICD-10-CM, R65.20 and R65.21); organ dysfunction data represent the individual organ dysfunction criteria in the Sepsis-3 definition; short-term mortality was defined as in-hospital death or discharge to hospice.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88538/elife-88538-fig2-v1.jpg)
 
-**Figure 2.:** APOL1 high-risk genotypes and the risk of sepsis and renal dysfunction before and after adjustment for renal disease, and exclusion of patients with pre-existing severe renal disease.We test the associations between APOL1 high-risk genotypes and the risk of sepsis (a, b, c) or the risk of sepsis-related renal dysfunction (d, e, f). Sepsis was defined as meeting the Sepsis-3 criteria for sepsis (Donnelly et al., 2017; Rhee et al., 2017), sepsis-related renal dysfunction represents the individual organ dysfunction criteria in the Sepsis-S3 definition. Analyses (a) and (d) were adjusted for age, sex, and three PCs. *In analyses (b) and (e) we adjusted for age, sex, three principal components, and pre-existing severe renal disease. **In analyses (c) and (f), we excluded patients with pre-existing severe renal disease and adjusted for age, sex, and three principal components.Figure 2—source data 1.
+**Figure 2.:** We test the associations between APOL1 high-risk genotypes and the risk of sepsis (a, b, c) or the risk of sepsis-related renal dysfunction (d, e, f). Sepsis was defined as meeting the Sepsis-3 criteria for sepsis (Donnelly et al., 2017; Rhee et al., 2017), sepsis-related renal dysfunction represents the individual organ dysfunction criteria in the Sepsis-S3 definition. Analyses (a) and (d) were adjusted for age, sex, and three PCs. *In analyses (b) and (e) we adjusted for age, sex, three principal components, and pre-existing severe renal disease. **In analyses (c) and (f), we excluded patients with pre-existing severe renal disease and adjusted for age, sex, and three principal components.
 
-## Associations between the high-risk APOL1 genotypes and components of sepsis or short-term mortality
+### Associations between the high-risk APOL1 genotypes and components of sepsis or short-term mortality
 
 For secondary outcomes, among the 565 patients with sepsis, 163 (28.8%) had septic shock, 91 (16.1%) had cardiovascular dysfunction, 136 (24.1%) had respiratory dysfunction, 303 (53.6%) had renal dysfunction, 83 (14.7%) had hepatic dysfunction, 102 (18.1%) had hematologic dysfunction, and 84 (14.9%) died or were discharged to hospice. APOL1 high-risk genotypes were significantly associated with renal dysfunction component of the Sepsis-3 criteria (OR = 1.64 [95% CI, 1.21–2.22; p=0.001]), but they were not significantly associated with septic shock (OR = 1.30 [95% CI, 0.86–1.95; p=0.21]) nor dysfunction of other organ systems (respiratory: OR = 0.57 [95% CI, 0.33–1.01; p=0.06]; hematologic: OR = 0.86 [95% CI, 0.49–1.51; p=0.60]; circulatory: OR = 0.89 [95% CI, 0.50–1.60; p=0.70]; hepatic: OR = 1.02 [95% CI, 0.56–1.88; p=0.94]), or short-term mortality (OR = 0.71 [95% CI, 0.31–1.39; p=0.31]) (Figure 1, Supplementary file 1d).
 
 The association between high-risk APOL1 genotypes and the renal dysfunction component of the Sepsis-3 criteria was markedly attenuated by adjusting for pre-existing severe renal disease present in the year before the index hospital admission (Figure 2, OR = 1.36 [95% CI, 1.00–1.86; p=0.05]) and was nullified after the exclusion of patients with pre-existing severe renal disease (Figure 2, OR = 1.16 [95% CI, 0.74–1.81; p=0.52]). We also found no association between APOL1 high-risk genotypes and the renal dysfunction criterion in analysis of patients with severe renal disease alone (OR = 1.43 [95% CI, 0.90–2.26, p=0.13]).
 
-## Associations between APOL1 high-risk genotype and sepsis-related phenotypes
+### Associations between APOL1 high-risk genotype and sepsis-related phenotypes
 
 Using a parallel methodology, the restricted PheWAS performed in Black participants in BioVU (n=14,713, Supplementary file 1e) replicated the association of APOL1 high-risk genotypes and all prespecified sepsis-related phenotypes previously identified as associated with APOL1 high-risk genotypes in an MVP cohort: infection of internal prosthetic device, OR = 1.68 (95% CI, 1.32–2.13; p=2.23 × 10–5); SIRS, OR = 1.49 (95% CI, 1.10–2.01; p=9.87 × 10–3); sepsis, OR = 1.41 (95% CI, 1.18–1.67; p=1.30 × 10–4); septic shock, OR = 1.51 (95% CI, 1.14–1.99; p=3.89 × 10–3); and septicemia, OR = 1.30 (95% CI, 1.08–1.56; p=6.01 × 10–3) (Figure 3, panel A). However, in an expansion of the original approach, the associations between APOL1 and sepsis-related phenotypes were nullified after we excluded individuals with pre-existing severe renal disease (n=2166) and reran the analyses (n=12,547, Figure 3, panel B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88538/elife-88538-fig3-v1.jpg)
 
-**Figure 3.:** APOL1 high-risk genotype and sepsis-related phenotypes.We tested the associations between APOL1 high-risk genotype and sepsis-related phenotypes, including infection of internal prosthetic device, systemic inflammatory response syndrome (SIRS), sepsis, septic shock, and septicemia. We conduct the analyses in all electronic medical record (EHR)-reported Black individuals with available MEGAEX genotypes in BioVU (n=14,713, panel A) and after excluding individuals with severe renal diseases (n=12,547, panel B). Analyses were adjusted for age, sex, and three principal components.Figure 3—source data 1.
+**Figure 3.:** We tested the associations between APOL1 high-risk genotype and sepsis-related phenotypes, including infection of internal prosthetic device, systemic inflammatory response syndrome (SIRS), sepsis, septic shock, and septicemia. We conduct the analyses in all electronic medical record (EHR)-reported Black individuals with available MEGAEX genotypes in BioVU (n=14,713, panel A) and after excluding individuals with severe renal diseases (n=12,547, panel B). Analyses were adjusted for age, sex, and three principal components.
 
 ## Discussion
 

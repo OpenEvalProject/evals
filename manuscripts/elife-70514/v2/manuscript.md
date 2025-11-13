@@ -44,9 +44,17 @@ Here, we use RNA sequencing and in situ hybridization to obtain the developmenta
 
 To address key questions regarding astrocyte regulation of synapse development, this study has three major goals. First, to characterize the spatio-temporal profile of astrocyte development during distinct stages of cortical synaptogenesis at the transcriptomic level. Second, to investigate the mechanisms that influence spatio-temporal expression levels of select astrocytic synapse-regulating genes, focusing on neuronal and astrocyte activity. Third, to determine the global dependence of the astrocyte transcriptome on neuronal and astrocyte activity using an unbiased RNA sequencing approach. All analyses were performed in the mouse VC to enable comparison of these metrics within a defined circuit, providing a blueprint for future analysis of the functional roles of astrocytes in synaptic development.
 
-## Developmental profiling of the astrocyte transcriptome in the postnatal VC
+### Developmental profiling of the astrocyte transcriptome in the postnatal VC
 
 Astrocytes appear in the cortex at birth, and migrate, proliferate, and mature throughout the first postnatal month (Ge et al., 2012), coincidently with the stages of synapse development. To determine the transcriptomic profile of astrocytes at these stages (P7, P14, P28, and adult, P120), we used the astrocyte Ribotag mouse model to isolate mRNA for bulk RNA sequencing (B6N.129-Rpl22tm1.1Psam/J crossed to B6.Cg-Tg(Gfap-cre)73.12Mvs/J – labeled Astrocyte-RiboTag) (Figure 1, Figure 1—figure supplement 1, Figure 1—source data 1; Boisvert et al., 2018; Chai et al., 2017). In this mouse line, cre recombinase drives the expression of an HA-tagged ribosomal subunit, enabling purification of cell-type-specific ribosomes and associated mRNA for analysis by RNA sequencing (Figure 1A and B). We found a significant enrichment in astrocytic genes over other cell types in the mRNA isolated by HA immunopurification (IP; labeled Astro) compared to total VC mRNA (input; IN; Figure 1—figure supplement 1A). Furthermore, immunostaining analysis of VC sections at P28 shows a high overlap between the HA ribosome tag and the astrocyte marker S100β, but not with other cell-type markers (Figure 1—figure supplement 1B-D), with more than 95% of S100β-positive cells also positive for the HA tag, suggesting high astrocyte coverage of our mRNA isolation, consistent with our previous analysis in the adult (Boisvert et al., 2018). The complete RNA sequencing dataset is available in a searchable format online (http://igc1.salk.edu:3838/astrocyte_transcriptome/).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig1-v2.jpg)
+
+**Figure 1.:** See also Figure 1—figure supplement 1, Figure 1—source data 1. (A) Outline of experiment: VCs from Rpl22-HAf/+; Gfap-cre 73.12 mice were collected at different time points corresponding to synapse development and maturation, and subjected to Ribotag pulldown protocol, followed by RNA purification, library preparation and sequencing. (B) Example images of VC at postnatal day (P)7 and P28 as labeled, showing colocalization between Ribotag (green, HA) and astrocyte marker S100β (red). Scale bars = 20 μm. (C) Principal component analysis of RNAseq data shows P7 and P14 samples clustering separately from other ages, while P28 and P120 samples cluster together, suggesting similar gene expression profiles (N = 3 at P7, 4 at P14, 5 at P28, 3 at P120; for statistical comparisons, 3xP120 samples published in Boisvert et al., 2018 were added to increase the power of the analysis, giving an N = 6 P120). (D) Pairwise comparison of differentially expressed genes (DEGs; red: upregulated; blue: downregulated) between each time point showing total genes (light hue, all DEGs identified with FPKM >1), astrocyte expressed genes (darker hue, expression level in pulldown sample/input >0.75), and astrocyte-enriched genes (dark hue, expression level in pulldown sample; astro/input >3). (E) Percent of all astrocyte-enriched genes that are differentially expressed between each age. Percent DEGs is highest between P7 and P14. (F) Heatmaps of top 20 astrocyte-enriched genes at each age, sorted by expression level, along with 13 genes common to all time points (left), and top 5 most enriched genes at each age (right). Colors represent log2 FPKM of expression level. (G, H) Gene Ontology (GO) terms analysis with String db of Biological Process (BP) in astrocyte-enriched genes at each time point. (G) Plot of GO terms common to all time points with a gene ratio >0.5. (H) Plot of GO terms unique to each age with a gene ratio >0.5. Bar length is gene ratio, fill color is false discovery rate (FDR). See also Figure 1—source data 1B. (I, J) Heatmaps of select genes related to astrocyte function (I) and synaptic regulation (J) plotted as log2 fold change (FC) at each age relative to P120. * Adjusted p value (FDR) < 0.05 by DESeq2 with Benjamini–Hochberg’s correction when comparing P120 to each age.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Analysis of cell-specific genes in HA-pulldown/input samples (log2) from RNA sequencing demonstrates enrichment for astrocyte genes and depletion of other cells in all samples (N = 3 at postnatal day [P]7, 4 at P14, 5 at P28, 3 at P120; for statistical comparisons, 3xP120 samples published in Boisvert et al., 2018 were added to increase the power of the analysis). (B–D) Immunostaining for the HA tag and cell-specific markers to determine cell-type expression of tagged ribosomes in P28 visual cortex. (D) Representative images, left panels: cell marker; middle panels: HA; right panels: merge with DAPI to mark nuclei. (B, C) Quantification of (D). (B) Quantification of colocalization of HA with each cell-specific marker, expressed as % of marker + cells, demonstrates that majority of HA+ cells are astrocytes. (C) Quantification of number of astrocytes (s100β+) that are also HA+ demonstrates that majority of astrocytes express HA-tagged ribosomes. N = 4 mice S100β, NEUN, IBA1; 3 mice MOG; 2 mice NG2. Bar graphs mean ± s.e.m. Scale bars = 20 µm. (E) Heatmaps of top 20 most astrocyte-enriched genes (highest astro/IN ratio; FPKM > 100) at each time point, as well as those in the top 20 at all time points, represented as fold change (FC) of astrocyte/input (log2). (F) Venn diagram showing overlap in astrocyte-enriched genes at each age. (G) Gene Ontology (GO) terms analysis with String db of Biological Process (BP) in astrocyte-enriched genes at each time point. Venn diagram showing overlap in GO terms at each age.
 
 To assess if there are broad changes in the transcriptomic profiles of astrocytes across development, we performed principal component analysis (PCA; Figure 1C). This showed that P7 and P14 astrocytes form distinct clusters, while P28 and P120 astrocytes cluster together. To investigate this further, we analyzed the number of differentially expressed genes (DEGs; fragments per kilobase of exon per million mapped fragments [FPKM] > 1; false discovery rate [FDR] < 0.05) between each age group. DEGs are classified into total genes (all changes detected), genes that are expressed by astrocytes (IP/input > 0.75), and genes that are enriched in astrocytes (IP/input > 3; Figure 1D, for definitions, see also Boisvert et al., 2018). The largest number of DEGs is between P7 and P28 (~6000 total genes), and smallest numbers between P14 and P28 (~1000 total genes), and P28 and P120 (~2000 total genes). Analysis of astrocyte-enriched genes (IP/input > 3) showed that ~60% of all astrocyte-enriched genes are significantly changed from P7 to P14, while only ~20% are changing between P28 and P120 (Figure 1E). This shows that most changes in astrocyte gene expression are occurring between the first and second postnatal weeks, a time of transition from synapse formation to synapse maturation, and in the VC, from spontaneous to visually evoked neuronal activity.
 
@@ -54,11 +62,23 @@ To determine the different astrocyte functions at each age, we focused on the as
 
 An important analysis to be performed with this dataset is determining the temporal expression changes of known astrocyte genes, for example, to identify potential astrocyte markers that are either global or age specific. We found that Apoe and Cst3 are the most highly expressed genes in astrocytes at all ages (peak FPKM ~10,000; Figure 1F, Figure 1—source data 1), while amongst highly expressed astrocyte genes (FPKM >100) Lars2 is the most astrocyte-enriched gene at all ages (astro IP/ input ~40; Figure 1—figure supplement 1E). These genes are highly expressed in adult astrocytes across multiple brain regions (Morel et al., 2017), thus can be potentially utilized to mark or target astrocytes globally. The expression of another well-known astrocytic gene Aldh1l1 (Morel et al., 2017; Figure 1I) is stable across all ages, making it an optimal marker for astrocytes during both development and in the adult (Srinivasan et al., 2016). On the other hand, S100b expression is upregulated later in development, making it more suitable to mark adult astrocytes (Figure 1I). For genes that encode proteins important for astrocyte function, we found that the metabotropic glutamate receptor Grm5 (mGluR5) is most highly expressed at P7 and then declines with maturation, confirming previous reports (Catania et al., 1994; Sun et al., 2013), while the glutamate transporter Slc1a2 (Glt1) and the connexins (Gja1, Gjb6) are significantly upregulated from P14 onwards (Figure 1I).
 
-## Astrocytic synapse-regulating genes show differential spatio-temporal expression patterns
+### Astrocytic synapse-regulating genes show differential spatio-temporal expression patterns
 
 Our goal is to characterize how astrocytes regulate synapses, so we next used the astrocyte Ribotag dataset to investigate the developmental expression changes of key synapse-regulating genes (Figure 1J). These include astrocyte-secreted thrombospondins (Thbs), which induce silent synapse formation. The family members expressed by astrocytes in the CNS show divergent expression, with Thbs1 being significantly higher at P7 than later ages, whereas Thbs4 is significantly higher at P120 than P7 (Figure 1J). This temporal expression profile fits with previous studies that have demonstrated important roles for Thbs1 in initial synapse formation at P7 (Christopherson et al., 2005), and suggested roles for Thbs4 in the adult brain (Benner et al., 2013). Similarly, glypican (Gpc) family members have a divergent expression. Though redundant in culture for their ability to regulate immature synapse formation (Allen et al., 2012), Gpc4 and Gpc6 show different temporal expression in vivo. While Gpc4 is most highly expressed at P7 and gradually declines with maturation, Gpc6 peaks at P14–P28. Gpc5, a glypican family member with yet unknown function, has low expression at P7, and is significantly increased at all later ages. Astrocyte-secreted chordin-like 1 (Chrdl1) regulates synapse maturation and its expression peaks at P14, confirming previous analysis (Blanco-Suarez et al., 2018; Figure 1J). These temporal expression profiles are not limited to factors that promote synapse formation. Astrocyte phagocytic receptors involved in synapse elimination, Megf10 and Mertk (Chung et al., 2013), significantly increase in expression between P7 and P14, coincident with the initiation of synapse elimination.
 
 Our RNA sequencing analysis demonstrates that in the developing VC synapse-regulating genes show differential temporal expression patterns. However, whether these levels are equal across astrocytes in all cortical layers throughout development is unknown. During the first postnatal weeks, when astrocytes regulate synapse development, they are still migrating and dividing (Ge et al., 2012). Yet, how developing astrocytes populate each of the cortical layers, and their ratio relative to other cortical cells across development has not been quantified. To address this, we utilized the well-established mouse line where astrocytes express GFP under the Aldh1l1 promoter (Cahoy et al., 2008; Dougherty et al., 2010; John Lin et al., 2017; Stogsdill et al., 2017; Tien et al., 2012). Immunostaining of brain sections from Aldh1l1-GFP mice at P7 and P28 with antibodies against known astrocyte markers ALDH1L1, S100β, and SOX9 showed high overlap between GFP and marker-positive cells, suggesting the majority of astrocytes in the VC express GFP in this mouse line (Figure 2—figure supplement 1A–C), further validating its usage. We quantified astrocyte numbers within each of the six neuronal layers at the developmental time points, which correspond to astrocyte and synapse development throughout the first postnatal month (P1, P4, P7, P14, P28; Figure 2A–C). At birth (P1), very few astrocytes are present, comprising 0.5–2% of the total cell number in the VC (represented as GFP-positive cells as a percentage of all cells marked by the nuclear dye DAPI), with a significantly higher percentage of astrocytes in deeper layers than upper layers (Figure 2C and D, Figure 2—source data 1A). The astrocyte percentage increases with development in all cortical layers, peaking at P21–P28. At this time, astrocytes are ~10% of total cell number in layers (L) 2–6, and ~50% in L1 (Figure 2C and D, Figure 2—source data 1A). As the brain develops, the distance between cells grows to accommodate the increase in cell size and complexity, as evident by a significant decrease in DAPI-positive nuclei per mm2 of VC that occurs from P1 to P14–P28 (Figure 2—figure supplement 1D, Figure 2—source data 1A). Despite this decrease in total cell density, the proportion of astrocytes remains constant in all cortical layers and across ages, with the exception of L1–2/3, where it is significantly lower at P1 (Figure 2C and E). This stability in astrocyte density is likely explained by new astrocytes still being generated in the weeks after birth (Ge et al., 2012).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig2-v2.jpg)
+
+**Figure 2.:** See also Figure 2—figure supplements 1 and 2, Figure 2—source data 1. (A) Schematic of experiments described in Figures 2–3: visual cortex (VC) sections from Aldh1l1-GFP mice analyzed for astrocyte numbers, gene expression, and synaptic proteins at developmental time points as indicated. (B) Diagram of VC depicting neuronal (blue) laminar arrangement and connectivity (arrows). Astrocytes (green) are present in all layers. (C–E) Astrocyte number increases in the VC across development. (C). Example images of the VC from Aldh1l1-GFP mice at time points analyzed. GFP marks astrocytes (green), DAPI (magenta) labels nuclei. Layers (L) labeled by numbers on the right in each panel. (D) Quantification of (C), astrocytes as a percentage of total cells within each cortical layer. (E) Quantification of (C), number of astrocytes per mm2 of VC within each layer. Scale bar in (C): 50 μm; N = 4 mice for postnatal day (P)1; N = 3 mice for P4–P28. Graphs show mean ± s.e.m., red squares are average of individual mouse. *p≤0.05, **p<0.01, ***p<0.001, ns (not significant) by one-way ANOVA comparing expression between time points within each layer; see also Figure 2—source data 1A. (F–M) Synapse-regulating genes show differential spatio-temporal expression patterns. (F, H, J, L) Example images showing Gpc4, Gpc6, Gpc5, or Chrdl1 mRNA (white) in astrocytes (green) at each age and layer as labeled. Merged panel on the left, single-channel probe panel on the right. (G, I, K, M) Quantification of (F, H, J, L), respectively. (F) Gpc4 expression is reduced at P14 specifically in L1. (H) Gpc6 expression is increased at P14 in L5. (J) Gpc5 expression is increased at P14 in all layers. (L) Chrdl1 expression is increased at P14 in L2/3. Scale bars in (F, H, J, L) = 20 μm. Arrowheads in single-channel panel mark astrocyte cells on the left. N = 3 mice/age for each probe. Data presented as scatter with mean + range. Green dots are mRNA signal measured in individual astrocytes. Large circles colored according to age are average signal. N = 3 mice/age, n = ~50–350 astrocytes/per age total; averages and statistical analysis are calculated based on N = 3, i.e.,data per mouse. *p≤0.05, **p<0.01, ***p<0.001, ns (not significant) by one-way ANOVA comparing expression between time points within each layer. See also Figure 2—source data 1B and C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Aldh1l1-GFP signal colocalizes with astrocyte markers during development. (A) Example images of the visual cortex (VC) from Aldh1l1-GFP mice immunostained with antibodies for GFP (green), and astrocyte markers Aldh1l1, S100β, or Sox9 (as indicated, red) at the different time points as indicated. Inset is single-channel image for each antibody. (B, C) Quantification of (A). (B) Quantification of % of GFP+ cells that are also immunopositive for the astrocyte marker, demonstrating the majority of GFP+ cells express astrocyte markers and are astrocytes. (C) Quantification of % of astrocyte marker+ cells that express GFP, demonstrating that not all S100β and SOX9+ cells express GFP at postnatal day (P)7. Data shows mean ± s.e.m. Arrowheads mark representative cells with colocalized GFP and marker. N = 4 mice for P1; N = 3 mice for P4–P28. Scale bars = 20 µm. (D) Quantification of Figure 2C, number of DAPI labeled cells per mm2 of VC within each layer. N = 3 mice/age. Graphs show mean ± s.e.m., red squares are average of individual mouse. *p≤0.05, **p<0.01, ***p<0.001, by one-way ANOVA comparing expression between time points within each layer.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Example images of the entire span of the visual cortex (VC) showing Chrdl1 mRNA (white) in astrocytes (green) at each age and layer as labeled. (B, D, F, H) Example images showing Thbs1, Thbs2, Thbs4, and DapB mRNA (white) in astrocytes (green) at each age and layer as labeled. Merged panel on the left, single-channel probe panel on the right. (C, E, G, I) Quantification of (B, D, F, H), respectively. (C) No significant difference in expression of Thbs1 at any age or layer. (E) Thbs2 expression is increased at P28 in L4–5. (G) Thbs4 expression is increased at P28 in all layers. (I) DapB-negative probe expression level showing detection limit for probe mRNA expression analysis. Arrowheads in single-channel panel mark astrocyte cells on the left. Data presented as scatter with mean + range. Green dots are mRNA signal measured in individual astrocyte. Large circles colored according to age are average signal. N = 3 mice/age, n = ~50–350 astrocytes/per age total; n = ~20–80 astrocytes for DapB-neg probe (H, I) (average and statistical analysis are calculated based on N = 3, i.e., data per mouse). Scale bars = 20 μm. *p≤0.05, **p<0.01, ns (not significant) by one-way ANOVA comparing expression between time points within each layer. See also Figure 2—source data 1B, C.
 
 Having established the developmental profile of astrocytes, we next determined if there are layer-specific developmental changes in mRNA expression of synapse-regulating genes by performing single-molecule fluorescent in situ hybridization (smFISH; RNAscope) on brain sections of Aldh1l1-GFP mice. We probed for seven genes that regulate distinct aspects of synaptogenesis: active synapse-regulating – glypicans (Gpc) 4, 5, 6; synapse maturation regulating – chordin-like 1 (Chrdl1); and silent synapse-regulating – thrombospondins (Thbs1, 2, 4) (Figure 2F–M, Figure 2—figure supplement 2, Figure 2—source data 1B and C). Expression of each gene (represented as total area of thresholded signal in µm2; labeled as thresh area) was analyzed within the territory of GFP-positive astrocytes in each cortical layer at similar time points as above: P4, P7, P14, and P28, when most alterations in astrocyte transcriptome (Figure 1) and synapse development occur (Farhy-Tselnicker and Allen, 2018), and excluding P1, when the numbers of astrocytes in the cortex are very low. A negative control probe was used to determine the minimal signal threshold of detection (Figure 2—figure supplement 2H and I).
 
@@ -68,13 +88,33 @@ The expression of the synapse maturation factor Chrdl1 peaks at P14 in the bulk 
 
 The seven astrocyte synapse-regulating genes we analyzed using smFISH all regulate formation and function of excitatory glutamatergic synapses. In the case of Gpc4, Gpc6, and Chrdl1, they regulate glutamatergic synapse development by primarily affecting localization of AMPA glutamate receptor (AMPAR) subunits (Allen et al., 2012; Blanco-Suarez et al., 2018). Previous studies in the rat somatosensory cortex have identified developmental alterations in AMPAR subunit expression (Brill and Huguenard, 2008; Kumar et al., 2002); however, their spatio-temporal expression patterns in the developing mouse VC, and whether these correlate with the expression of astrocytic genes that regulate them, have not been systematically analyzed (Figure 3A and B). To detect postsynaptic AMPA glutamate receptors, we stained for GLUA1 and GLUA2 subunits (Figure 3C–F, Figure 3—source data 1). To detect the corresponding glutamatergic presynaptic terminals, we stained for VGLUT1 to identify local cortico-cortical connections (Figure 3G and H, Figure 3—figure supplement 1A, Figure 3—source data 1) and VGLUT2 to identify thalamocortical connections (Figure 3I and J, Figure 3—figure supplement 1B, Figure 3—source data 1; Fremeau et al., 2001). As expected based on the literature, GLUA1 levels peak at earlier time points than GLUA2 (Figure 3C and D, Figure 3—source data 1). GLUA2 immunoreactivity significantly increases from P7 to P14 in L1–5, and then remains stable to P28 (Figure 3E and F, Figure 3—source data 1). At all ages, the levels of GLUA1 and GLUA2 are significantly higher in L1 than all other layers, consistent with L1 being rich in synaptic connections (Figure 3—source data 1; Douglas and Martin, 2004). VGLUT1 immunoreactivity greatly increases between P7 and P14 in all cortical layers and remains stable at later ages (Figure 3G and H, Figure 3—figure supplement 1A, Figure 3—source data 1). VGLUT2 levels steadily increase from P1 to P14, and then remain stable. VGLUT2 immunoreactivity is significantly higher in L1 and L4 than other layers at all ages, consistent with these being thalamic innervation zones and previous findings in rat cortex (Figure 3I and J, Figure 3—figure supplement 1B, Figure 3—source data 1; Boulland et al., 2004; Conti et al., 2005; Fremeau et al., 2001; Lopez-Bendito and Molnar, 2003). Taken together, these data show that synaptic proteins show complex spatio-temporal expression patterns, with multiple significant changes occurring between P7 and P14, as also observed for astrocyte gene expression.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig3-v2.jpg)
+
+**Figure 3.:** See also Figure 3—figure supplement 1, Figure 3—source data 1. (A) Schematic of experiments described in Figures 2–3: VC sections from Aldh1l1-GFP mice analyzed for astrocyte numbers, gene expression, and synaptic proteins at developmental time points as indicated. (B) Diagram of VC depicting neuronal (blue) laminar arrangement and connectivity (arrows). Astrocytes (green) are present in all layers. (C–F) Developmental expression pattern of the postsynaptic AMPARs GLUA1 and GLUA2 subunits within each cortical layer. (C, E) Example images of GLUA1 or GLUA2 protein levels (white puncta). (D, F) Quantification of (C, E) number of GLUA1 or GLUA2 puncta per cortical volume (μm3). GLUA1 expression is increased from postnatal day (P)1 to P28 in all layers. GLUA2 expression is increased from P1 to P28 in all layers, and between P7 and P14 in L1–5. (G–J) Developmental expression pattern of the presynaptic proteins VGLUT1 and VGLUT2 in each cortical layer. (G, I) Example images of VGLUT1 or VGLUT2 protein levels (white puncta). (H, J) Quantification of (G, I) density of VGLUT1 or VGLUT2 signal as total area of thresholded signal per μm2. VGLUT1 expression increases in all layers between P7 and P14. VGLUT2 expression increases steadily from P1 to P28 in L1 and L4. Scale bars = 10 μm. N = 3 mice/age. Graphs show mean ± s.e.m., red squares average of individual mouse. *p≤0.05, **p<0.01, ***p<0.001, ns (not significant) p>0.05 by one-way ANOVA comparing expression between time points within each layer.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Example images of the entire span of the VC from Aldh1l1-GFP mice immunostained with antibody for VGLUT1 (A) or VGLUT2 (B) as indicated (white puncta) at time points analyzed. Scale bars = 50 µm. Layers indicated by numbers on the right of each panel in red.
+
 In summary, the transcriptomic analysis reveals significant changes in astrocyte gene expression across development, with the most prominent changes occurring between P7 and later ages, a time between synapse initiation and maturation. We have further determined the spatio-temporal expression profile of key astrocyte synapse-regulating factors, identifying divergent developmental and layer-specific expression patterns within the same families of genes. These findings strongly suggest that astrocyte expression of synapse-regulating genes is closely tied to the developmental stage of the cortex, which features both changes in neuronal and astrocyte activities across development. In addition to revealing important information about the developmental changes in expression of synapse-regulating genes, these transcriptomic data can be further utilized to inform further studies on astrocyte development. The complete dataset and GO term list are available in Figure 1—source data 1.
 
-## Thalamic glutamate release tunes astrocyte expression of synapse-regulating genes
+### Thalamic glutamate release tunes astrocyte expression of synapse-regulating genes
 
 Having found broad differences in astrocyte expression of synapse-regulating genes across cortical layers, we next asked what are the possible physiological mechanisms that regulate these layer-specific alterations between P7 and P14 in the developing VC in vivo. Our experiments using cultured astrocytes and neurons show that GPC4 protein secretion from astrocytes is significantly reduced in the presence of neurons (Figure 4—figure supplement 1A, Figure 4—figure supplement 1—source data 1) or when astrocytes are incubated with neurotransmitters including glutamate, adenosine, or ATP (Figure 4—figure supplement 1B, Figure 4—figure supplement 1—source data 1). Others have reported a similar effect on Gpc4 mRNA expression (Hasel et al., 2017), suggesting that neuronal activity can influence expression and release of synapse-regulating factors from astrocytes. Indeed, significant alterations in the activity patterns of both glutamatergic and GABAergic neurons occurs in the VC at around P14 (Espinosa and Stryker, 2012). Since the developmental expression changes in Gpc4 and Chrdl1 occurred mostly in the upper cortical layers innervated by thalamic neurons, we hypothesized that levels of these genes may be regulated by changes in the activity of thalamic neurons that occur upon eye opening at ~P12, when there is a transition from spontaneous to visually evoked activity in the retina that is relayed via the thalamus to the VC.
 
 To investigate this, we generated mice where the release of glutamate from thalamocortical terminals in the VC is perturbed by knocking out the vesicular glutamate transporter VGlut2 (Slc17a6) from neurons in the dLGN. Knockout of VGlut2 has been previously shown to abolish presynaptic release of glutamate in VGlut2-expressing neurons, in full or conditional knockout mouse models (Wallén-Mackenzie et al., 2010). We crossed Slc17a6f/f mice (Slc17a6tm1Lowl/J; labeled as VGlut2 WT) to an RORα cre line (Roratm1(cre)Ddmo; Slc17a6f/f;cre labeled as VGlut2 cKO), where cre recombinase is expressed in thalamic neurons including the dLGN (Figure 4A; Chou et al., 2013; Farhy-Tselnicker et al., 2017). Immunostaining experiments showed a significant decrease in VGLUT2 signal in the VC of VGlut2 cKO mice compared to WT at P14 (Figure 4B). Notably, VGlut2 cKO did not strongly affect the levels of VGLUT1, which marks cortico-cortical connections (Figure 4C; Wallén-Mackenzie et al., 2010), though a small but significant increase in VGLUT1 immunoreactivity was observed in L4, a major target of thalamocortical projections. This suggests that the normal upregulation in VGLUT1 that occurs at P14 across all other cortical layers (Figure 3) is either intrinsic to the cortical neurons and/or regulated by mechanisms other than dLGN-VC-evoked activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig4-v2.jpg)
+
+**Figure 4.:** See also Figure 4—figure supplements 1 and 2, Figure 4—source data 1. (A) Schematic of the experiment: VGLUT2 is removed from presynaptic terminals of neurons in the lateral geniculate nucleus of the thalamus (LGN) that project to the visual cortex (VC) by crossing Slc17a6 f/f mouse (WT) with RORαcre mouse line (VGlut2 cKO). Bottom: image of tdTomato reporter expression in the LGN and the VC, when RORαcre mouse is crossed with cre-dependent tdTomato reporter mouse (Ai14). (B) VGLUT2 level in the VC is significantly reduced in VGlut2 cKO mice. Example images of VGLUT2 immunostaining in each genotype and quantification of the thresholded signal within each cortical layer. (C) VGLUT1 level is unaltered in VGlut2 cKO mice. Example images of VGLUT1 immunostaining and quantification. In (B, C), plots show mean signal ± s.e.m. Squares and circles above each bar are the average of signal in each mouse. N = 5 mice/genotype. Scale bar = 50 μm. Statistical analysis by t-test within each layer. p-Value on each plot. (D–I) mRNA expression of astrocyte synapse-regulating genes is altered in VGlut2 cKO at postnatal day (P)14. (D, F, H) Example images of in situ hybridization of Gpc4, Gpc6, and Chrdl1 mRNA (white) as labeled; astrocyte marker Slc1a3 (Glast, green). Merged panel on the left, single-channel probe panel on the right. (E, G, I) Quantification of (D, F, H), respectively. (E) Gpc4 mRNA expression is increased in L1; (G) Gpc6 mRNA expression is decreased in L4–6. (I) Chrdl1 mRNA expression is decreased in L1–4 in VGlut2 cKO mice. Data presented as scatter with mean + range. Gray or red dots are mRNA signals measured in individual astrocyte in WT and VGlut2 cKO, respectively. Large circles are the average signal. N = 5 mice/genotype, n = ~200–450 astrocytes/per age total (average and statistical analysis are calculated based on N = 5, i.e., per mouse). Arrowheads in single-channel panel mark astrocytes. Scale bar = 20 µm. See also Figure 4—source data 1. Statistical analysis by t-test within each layer. p-Value on each plot. (J–M) Increase in GLUA1 protein levels and colocalization between GLUA1 and VGLUT1 in L1 of the VC in VGlut2 cKO mice compared to WT at P14. (J) Example images from WT (top) and cKO (bottom), VGLUT1 in cyan and GLUA1 in red. (K–M) Quantification of VGLUT1, GLUA1, and colocalized puncta, respectively, normalized to WT. (N–Q) Decrease in GLUA2 protein levels and colocalization between GLUA2 and VGLUT1 in L1 of the VC in VGlut2 cKO mice compared to WT at P14. (N) Example images from WT (top) and cKO (bottom), VGLUT1 in cyan and GLUA2 in red. (O–Q) Quantification of VGLUT1, GLUA2, and colocalized puncta, respectively, normalized to WT. In (K–M) and (O–Q), data presented as mean ± s.e.m., squares and circles above each bar are mean fold change of each mouse. N = 5 mice/genotype. Arrowheads mark representative colocalized puncta in (J, N). Inset panels on the right show enlarged colocalized image from box in (J, N). Scale bar = 5 µm. In (J–Q), WT is Slc17a6 +/+; RORαcre+;tdTomato+; cKO is Slc17a6 f/f;RORαcre+;tdTomato+. Statistical analysis by t-test, p-value on each plot.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** See also Figure 4—figure supplement 1—source data 1. (A) Western blot showing Gpc4 secretion from astrocytes is decreased in the presence of neurons. Example blot on the left, quantification on the right. Data presented as mean ± s.e.m., normalized to control condition, astrocytes cultured alone. N = 4 independent cultures. p by t-test, value on the plot. Red arrow indicates Gpc4 signal at ~36 kDa. (B) Western blot showing Gpc4 secretion from astrocytes is decreased in the presence of neurotransmitters glutamate, adenosine, and ATP as indicated. Left panel shows glypican 4, right panel indicates APOJ used as loading control. Example blot on the top, quantification is below. Data presented as mean ± s.e.m., normalized to control condition, astrocytes cultured alone. N = 4 independent cultures. p by t-test, value on the plot. Red arrow indicates Gpc4 signal at ~36 kDa, APOJ signal ~40 kDa.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A-C) LGN axons terminate in the VC normally in the absence of VGLUT2. (A) Example images of the VC L4 showing thalamic axons (tdTomato, red) and VGLUT2 (cyan) presence in WT, VGlut2 cHet, and VGlut2 cKO mice as labeled. (B-C) Quantification of (A. B) No difference in volume of tdTomato+ LGN axons between the genotypes in either L1 or L4 as indicated. (C) VGLUT2 puncta associated with tdTomato+ processes are reduced in VGlut2 cHet, and VGlut2 cKO compared to WT. Plots show mean signal ± s.e.m. Squares above each bar are average of signal in each mouse. N=3 mice/genotype. Scale bar = 5 μm. P by One-Way ANOVA comparing genotypes within each layer, value on the plot. n.s: not significant. (D, F) Number of astrocytes (Slc1a3 positive cells) is unaltered in VGlut2 cKO mice at P14 or P7. Data presented as mean ± s.e.m. squares aound that neuronal but not astnd circles above each bar are mean fold change of each mouse. N=5 mice/ genotype. P by t-test, value on the plot. (E, G) Slc1a3 (Glast) mRNA expression levels are unaltered in VGlut2 cKO mice at P14 or P7. Data presented as scatter with mean + range. Grey or red dots are mRNA signal measured in individual astrocyte in WT, and VGlut2 cKO respectively. Large circles colored according to genotype are average signal. N=5 mice/genotype, n=~150-450 astrocytes/ per age total (average and statistical analysis is calculated based on N=5 i.e. per mouse). P by t-test, value on the plot. (H-J) mRNA expression of Gpc4, Gpc6 and Chrdl1 is unaltered in VGlut2 cKO mice at P7. Data presented as scatter with mean + range. Grey or red dots are mRNA signal measured in individual astrocyte in WT, and VGlut2 cKO respectively. Large circles colored according to genotype are average signal. N=5 mice/genotype, n=~150-450 astrocytes/ per age total (average and statistical analysis is calculated based on N=5 i.e. per mouse). Statistical analysis by t-test, P value on each plot. (K-N) Increase in GLUA1 protein levels and colocalization between GLUA1 and Bassoon in L1 of the VC in VGlut2 cKO mice compared to VGlut2 WT. (L). Example images from WT (top) and cKO (bottom), Bassoon in green, GLUA1 in red, and tdTomato positive LGN axon in white. (L, M, N) Quantification of Bassoon (number of puncta within the tdTomato positive processes), GLUA1 and colocalized puncta respectively, normalized to WT. (O-R) Decrease in GLUA2 protein levels and colocalization between GLUA2 and Bassoon in L1 of the VC in VGlut2 cKO mice compared to WT. (P) Example images from WT (top) and cKO (bottom), Bassoon in green, GLUA2 in red, and tdTomato positive thalamic axon in white. (P, Q, R) Quantification of Bassoon (number of puncta within the tdTomato positive processes), GLUA2 and colocalized puncta respectively, normalized to WT. In (K-R) data presented as mean ± s.e.m, squares and circles above each bar are mean fold change of each mouse. WT is: Slc17a6+/+; RORαcre+;tdTomato+; cKO is: Slc17a6f/f;RORαcre+;tdTomato+. N=5 mice/ genotype. Arrowheads mark representative colocalized puncta. Inset panels on the right show enlarged colocalized image from box in (K, O) Scale bar = 5 µm. Statistical analysis by t-test, P value on each plot.
 
 A lack of VGLUT2 immunoreactivity in the VC could also result from an absence of thalamic axons innervating their target regions. To test whether that is the case, we crossed RORα cre and VGlut2 cKO mice with a tdTomato reporter line (B6.C-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J; labeled as tdTomato) to visualize dLGN axons (Figure 4A). All cre+ tdTomato+ groups (VGlut2 WT (Slc17a6+/+), VGlut2 cHet (Slc17a6f/+), and VGlut2 cKO (Slc17a6f/f)) showed a comparable number and volume of tdTomato-labeled projections in L1 and L4 of the VC (Figure 4—figure supplement 2A and B). Analysis of VGLUT2 puncta colocalized with tdTomato-positive axons showed a significant decrease in number in VGlut2 cHet and VGlut2 cKO compared to WT (Figure 4—figure supplement 2A, C). These results show that in the VGlut2 cKO mice thalamic axons are present at their target layers in the VC but lack VGLUT2, as has been shown in studies performing similar manipulations, suggesting that they are functionally silent (Li et al., 2013; Zechel et al., 2016).
 
@@ -84,9 +124,17 @@ Are there any consequences of decreased glutamate release and subsequent altered
 
 These results show that synaptic GLUA1 and GLUA2 levels are altered in VGlut2 cKO VC in the direction which follows the change in astrocytic expression of Gpc4 (which recruits GLUA1) and Chrdl1 (which recruits GLUA2) in L1. These correlated changes in astrocyte genes and synaptic proteins suggest a disruption in synapse maturation in the VC at P14 in the absence of thalamocortical glutamate release that may be mediated by astrocytes.
 
-## Astrocytic calcium signaling tunes expression of synapse-regulating genes
+### Astrocytic calcium signaling tunes expression of synapse-regulating genes
 
 Since we observed that changes in thalamic glutamate release influence the expression of astrocyte synapse-regulating genes, we next asked how perturbing the astrocyte response to neurotransmitters affects the expression of Gpc4, Gpc6, and Chrdl1. Astrocytes express many neurotransmitter receptors, in particular GPCRs, and respond to neurotransmitters with increased intracellular calcium (Kofuji and Araque, 2021; Porter and McCarthy, 1997). In the case of somal increases in calcium, which have the potential to regulate expression of activity-regulated genes, most of this increase is mediated by the release of calcium from intracellular stores via IP3R2 (Itpr2) (Srinivasan et al., 2015). We therefore asked if blunting astrocyte calcium signaling by removing store-mediated calcium release using Itpr2 KO mice (Itpr2tm1.1Chen; labeled Ip3r2 KO; Figure 5A and B) has an impact on the expression of synapse-regulating genes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig5-v2.jpg)
+
+**Figure 5.:** See also Figure 5—figure supplement 1, Figure 5—source data 1 and 2. (A) Schematic of comparison. Lack of the IP3R2 receptor results in diminished Ca2+ transients in astrocytes. (B) Validation of Itpr2 KO model. Western blot image shows absence of IP3R2 signal in visual cortex (VC) of KO mice. (C–H) mRNA expression of astrocyte synapse-regulating genes is altered in Ip3r2 KO mice at postnatal day (P)14. (C, E, G) Example images of in situ hybridization of Gpc4, Gpc6, and Chrdl1 mRNA (white) as labeled; astrocyte marker Slc1a3 (Glast, green). Merged panel on the left, single-channel probe panel on the right. (D, F, H) Quantification of (C, E, G), respectively. (D) Gpc4 mRNA expression is decreased in several layers of the VC in Ip3r2 KO mice. (F) Gpc6 mRNA expression is unaltered in the VC in Ip3r2 KO mice. (H) Chrdl1 mRNA expression is increased in several layers of the VC in Ip3r2 KO mice. Data presented as scatter with mean + range. Gray or purple dots are mRNA signals measured in individual astrocyte in WT and Ip3r2 KO, respectively. Large circles colored according to genotype are average signal. N = 5 mice/genotype, n = ~200–450 astrocytes/per age total (average and statistical analysis are calculated based on N = 5, i.e., per mouse). Arrowheads in single-channel panel mark astrocytes. Scale bar = 20 μm. Statistical analysis by t-test within each layer. p value on each plot. (I–L) Decrease in VGLUT1, GLUA1 protein levels, and colocalization between GLUA1 and VGLUT1 in L1 of the VC in Ip3r2 KO mice at P14. (I) Example images from WT (top) and KO (bottom), VGLUT1 in cyan and GLUA1 in red. (J–L) Quantification of VGLUT1, GLUA1, and colocalized puncta, respectively, normalized to WT. (M–P) Decrease in VGLUT1, and increase GLUA2 protein levels, with no change in colocalization between GLUA2 and VGLUT1 in L1 of the VC in Ip3r2 KO mice at P14. (M) Example images from WT (top) and KO (bottom), VGLUT1 in cyan, and GLUA2 in red. (N–P) Quantification of VGLUT1, GLUA2, and colocalized puncta, respectively, normalized to WT. In (J–L) and (N–P), data presented as mean ± s.e.m. squares and circles above each bar are mean fold change of each mouse. N = 5 mice/genotype. Arrowheads mark representative colocalized puncta. Inset panels on the right show enlarged colocalized image from box in (M). Scale bar = 5 µm. Statistical analysis by t-test, p-value on each plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A, C) Number of astrocytes (Slc1a3-positive cells) is unaltered in Ip3r2 KO mice at postnatal day (P)14 or P7. Data presented as mean ± s.e.m., squares and circles above each bar are mean fold change of each mouse. N = 5 mice/genotype. p by t-test, value on the plot. (B, D) Slc1a3 (Glast) mRNA expression levels are unaltered in Ip3r2 KO mice at P14 or P7. Data presented as scatter with mean + range. Gray or purple dots are mRNA signal measured in individual astrocyte in WT and KO, respectively. Large circles are average signal. N = 5 mice/genotype, n = ~50–350 astrocytes/per age total (average and statistical analysis are calculated based on N = 5, i.e., per mouse). Statistical analysis by t-test. (E–G) mRNA expression of Gpc4 (E) and Chrdl1 (G) is unaltered in Ip3r2 KO mice at P7. Gpc6 (F) expression is increased in L4. Data presented as scatter with mean + range. Gray or purple dots are mRNA signal measured in individual astrocyte in WT and KO, respectively. Large circles are average signal. N = 5 mice/genotype, n = ~150–450 astrocytes/per age total (average and statistical analysis are calculated based on N = 5, i.e., per mouse). Statistical analysis by t-test, p value on each plot. See also Figure 5—source data 1. (H–K) Decrease in VGLUT2, GLUA1 protein levels, and colocalization between GLUA1 and VGLUT2 in L1 of the VC in Ip3r2 KO mice. (H) Example images from WT (top) and KO (bottom), VGLUT2 in cyan and GLUA1 in red. (I–K) Quantification of VGLUT2, GLUA1, and colocalized puncta, respectively, normalized to WT. (L–O) Decrease in VGLUT2, and increase GLUA2 protein levels, with no change in colocalization between GLUA2 and VGLUT2 in L1 of the VC in Ip3r2 KO mice. (L) Example images from WT (top) and KO (bottom), VGLUT2 in cyan, and GLUA2 in red. (M–O) Quantification of VGLUT2, GLUA2, and colocalized puncta, respectively, normalized to WT. In (H–O), data presented as mean ± s.e.m., squares and circles above each bar are mean fold change of each mouse. N = 5 mice/genotype. Arrowheads mark representative colocalized puncta. Inset panels on the right show enlarged colocalized image from box in (H, L). Scale bar = 5 µm. Statistical analysis by t-test, p value on each plot.
 
 To determine this, we performed smFISH on the VC of P14 Ip3r2 KO and WT mice, marking astrocytes with a probe against Slc1a3 along with Gpc4, Gpc6, or Chrdl1. At P14, knocking out Ip3r2 does not affect the number of astrocytes or the expression levels of Slc1a3, showing astrocytes develop grossly normally when store-mediated calcium release is diminished (Figure 5—figure supplement 1A and B, Figure 5—source data 1, Figure 5—source data 2). However, loss of IP3R2 does affect expression of synapse-regulating genes. In the case of Gpc4, the mRNA level is reduced in astrocytes in all layers, with a significant decrease occurring in L1, 4, and 6 (thresh area [μm2]: L1 WT 1.5 ± 0.1; KO 1.1 ± 0.1; Figure 5C and D, Figure 5—source data 1). For Gpc6, there is no difference in the mRNA level between Ip3r2 KO and WT in astrocytes in any layer (Figure 5E and F, Figure 5—source data 1). Chrdl1 expression is increased in astrocytes in all layers, with a significant increase occurring in L1, 2/3, and 5 (thresh area [μm2]: L1 WT 7.3 ± 1.1; KO 10.6 ± 1; Figure 5G and H, Figure 5—source data 1). To ask if these alterations are present throughout development, we performed the same analysis at P7. As with P14, at P7 there is no change in astrocyte number or Slc1a3 mRNA signal, showing astrocytes develop grossly normally (Figure 5—figure supplement 1C and D). In the case of Gpc4 and Chrdl1, there is no difference in expression between Ip3r2 KO and WT at P7 (Figure 5—figure supplement 1E and G), whereas for Gpc6 there is a significant increase in the Ip3r2 KO restricted to L4 (Figure 5—figure supplement 1F). Therefore, in contrast to the layer-specific alterations in gene expression in the VGlut2 cKO mice, removing IP3R2 impacts astrocytes in all layers and does not strictly follow the developmental trajectory. This suggests a broad requirement for astrocyte calcium signaling in all astrocytes to maintain the correct level of gene expression, and that the signals to do this come from multiple sources and are not restricted to thalamic inputs.
 
@@ -94,11 +142,27 @@ Are there any consequences of diminished astrocyte calcium signaling and altered
 
 These results show that GLUA1 and GLUA2 levels are altered in Ip3r2 KO VC in the direction which follows the change in astrocytic expression of Gpc4 (which recruits GLUA1) and Chrdl1 (which recruits GLUA2). This strongly suggests that both astrocytes and neurons play an important role in regulating the expression of synapse-regulating genes, and subsequently AMPAR subunit protein levels, and the final expression levels arise from the complex interaction between these two cell types.
 
-## Unbiased determination of astrocyte transcriptomic diversity and activity-regulated genes in the developing VC
+### Unbiased determination of astrocyte transcriptomic diversity and activity-regulated genes in the developing VC
 
 Having found that multiple synapse-regulating genes in astrocytes show layer-specific enrichment, and that these patterns are regulated by neuronal and astrocyte activity, we next asked if these findings are specific to synapse development, or if other astrocyte genes show a similar pattern. To address this using an unbiased approach, we performed single-nucleus RNA sequencing of glial cells isolated from the P14 VC of wild type, VGlut2 cKO, and Ip3r2 KO mice. To isolate the glial cell populations, we immunostained VC nuclei in suspension with an antibody against the neuronal marker NeuN and performed FACS to select the NeuN-negative population (Figure 6A). We used the Chromium 10X system to isolate individual glial nuclei and performed RNA sequencing to quantify mRNA levels (Figure 6A). This identified 22,781 cells in the VGlut2 condition (cKO and WT) (Figure 6B, Figure 6—figure supplement 1A) and 21,240 cells in the Ip3r2 condition (KO and WT) (Figure 6—figure supplement 1B and C). Initial clustering analysis determined 17 distinct cell populations in both models, with the majority of cells detected clustered within the main glial cell types: astrocytes, microglia, and oligodendrocyte lineage cells (Figure 6B, Figure 6—figure supplement 1A–C). Just two clusters enriched for neuronal markers are present (Hernandez et al., 2019), showing that the NeuN depletion had been successful. This dataset is available in a searchable format online (https://cells.ucsc.edu/?ds=mouse-astro-dev; Speir et al., 2021 ).
 
-## Astrocytes in the wild-type VC form transcriptomically diverse populations
+![Figure 6.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig6-v2.jpg)
+
+**Figure 6.:** See also Figure 6—figure supplements 1–3, Figure 6—source data 1. (A) Outline of experiment: VCs collected from VGlut2 cKO, Ip3r2 KO, and their respective WT controls at postnatal day (P)14. Nuclei were isolated from VCs and sorted for NEUN-negative population (glia) using flow cytometry. Sorted nuclei were loaded onto 10X Chromium chip, each nucleus barcoded, followed by library preparation and sequencing. N = 8 samples total. (B) UMAP clustering of different cell types identified in the NEUN-negative population of the combined samples from VGlut2 WT and cKO mice. 17 clusters were identified including the three main types of glia: astrocytes, oligodendrocytes, and microglia, as well as endothelial cells, and two subtypes of neurons. (M-astrocyte: mitotic astrocyte; M-OPC: mitotic oligodendrocyte precursor cell; OPC: oligodendrocyte precursor cell; MFOL: myelin-forming oligodendrocyte; NFOL: newly formed oligodendrocyte; MOL: mature oligodendrocyte; VLMC: vascular and leptomeningeal cell; EC: endothelial cell; PC: pericyte; PVM: perivascular macrophage). (C) Unbiased clustering analysis identified four subpopulations of astrocytes in the P14 VC. Upper panels: left – UMAP plots of astrocyte populations annotated to upper, mid, deep, and white matter types following comparison with published datasets. Right panel – UMAP showing similar clustering obtained for WT and VGlut2 cKO groups. Lower panel shows the expression level of select marker genes that label a particular population as indicated. Each dot represents a single nucleus, color represents expression level in log2 counts per million reads mapped (CPM). Below are dot plots showing a select list of 10 genes that are highly expressed in each population as indicated. Size of the circle is expression ratio (percent cells expressing the gene); color is expression level (log2 CPM). (D) Pairwise comparison identified ~200–700 differentially expressed genes (DEGs) between astrocyte populations from WT mice from the VGlut2 cKO model. Larger numbers of DEGs are obtained when comparing upper and deep astrocyte populations. Criteria for DEG selection: log2 fold change (FC) between –0.15 and 0.15; false discovery rate (FDR) < 0.1; see also Figure 6—source data 1A and B. (E–H) Neuronal and astrocyte activity perturbation results in gene expression changes in astrocytes. (E) Number of DEGs identified for each model: VGlut2 cKO: 61 total DEGs; Ip3r2 KO: 131 total DEGs as labeled. Red: upregulated; blue: downregulated. (F, G) Heatmap showing top 20 DEGs identified in each model (F, VGlut2 cKO; G, Ip3r2 KO). Colors represent log2 FC between each condition. Criteria for DEG selection: log2 FC between –0.15 and 0.15; FDR < 0.1. See also Figure 6—source data 1D. (H) Venn diagrams show number of DEGs common to both models. Heatmap shows FC of the 19 common DEGs. Most common DEGs are inversely regulated in each model (upregulated in VGlut2 cKO and downregulated in Ip3r2 KO). (I) Venn diagram showing DEGs common to the VGlut2 cKO vs. WT comparison and genes enriched in astrocyte layer groups. Heatmap of expression level z score of a select list of 10 genes shows dysregulation of layer enrichment in the cKO mice compared to WT. Z-score was calculated for each gene using the combined data for WT and cKO average and standard deviation. (J) Same analysis as (I), but for the Ip3r2 KO model. See also Figure 6—source data 1E.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, C) Expression level of select marker genes for each identified cluster (A: VGlut2 cKO model; C: Ip3r2 KO model). Circle size denotes expression ratio (percent cells expressing the gene), color represents expression level (in log2 CPM). Bar chart on the left shows cell numbers identified for each cluster are similar for WT and KO groups for each cluster in each model. (B) UMAP clustering of different cell types identified in the NEUN-negative population of the combined samples from Ip3r2 WT and KO mice. 17 clusters were identified including the three main types of glia: astrocytes, oligodendrocytes, and microglia, as well as endothelial cells, and two subtypes of neurons (for A–C – M-astrocyte: mitotic astrocyte; M-OPC: mitotic oligodendrocyte precursor cell; OPC: oligodendrocyte precursor cell; MFOL: myelin-forming oligodendrocyte; NFOL: newly formed oligodendrocyte; MOL: mature oligodendrocyte; VLMC: vascular and leptomeningeal cell; EC: endothelial cell; PC: pericyte; PVM: perivascular macrophage).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Unbiased clustering analysis identified four subpopulations of astrocytes in the postnatal day (P)14 VC using Ip3r2 WT dataset. Upper panels: left indicates UMAP plots of astrocyte populations annotated to upper, mid, deep, and white matter types following comparison with published datasets. Right panel indicates UMAP showing similar clustering obtained for WT and Ip3r2 KO mice. Lower panels show dot plots of select list of 10 genes that are highly expressed in each population as indicated. Size of the circle is expression ratio; color is expression level (log2 CPM). (B) Images of in situ hybridization from wild-type mouse VC at P14 obtained from the Allen Brain Atlas website (https://developingmouse.brain-map.org/) (Kcnd2 link to image: https://developingmouse.brain-map.org/experiment/show/100041438; Id3 link to image: https://developingmouse.brain-map.org/experiment/show/100071290; Gfap link to image: https://developingmouse.brain-map.org/experiment/show/100045585) showing validation of spatial localization of select genes identified in snRNAseq dataset. Kcnd2 is expressed in the mid layers, Id3 in deep layers, and Gfap is enriched in white matter. Cortical layers indicated on the left, vertical yellow line on the left of each image shows cortical region with highest expression. Scale bar = 1047 µm. (C) Similar number of cells (nuclei) was identified for each of the astrocyte groups in each model. VGlut2 cKO data presented in the top plot, Ip3r2 KO data in the bottom bar chart. (D) Pie charts as labeled showing percent astrocytes for each identified cluster out of total astrocytes. Monochrome pie chart is percent of astrocytes out of total astrocytes observed within each cortical layer in histological experiments (Figure 2C). (E) Pairwise comparison identified ~300–900 differentially expressed genes (DEGs) between populations in Ip3r2 WT mice. Larger numbers of DEGs obtained when comparing upper and deep astrocyte populations. Criteria for DEG selection: log2 fold change (FC) between –0.15 and 0.15; false discovery rate (FDR) < 0.1. See also Figure 6—source data 1B. (F–H) Gene Ontology (GO) terms analysis with String db of Biological Process of layer group-specific genes. (F) Venn diagram showing overlap in GO terms between layer groups. (G, H) Bar plots of GO terms unique to upper (G) and deep (H) astrocytes, showing divergent GO BP enrichment. Bar length is gene ratio, fill color is FDR. See also Figure 6—source data 1D. (I) Comparison of expression levels of astrocyte markers, function, and synapse-related genes identified in bulk RNAseq (Figure 1) with the snRNAseq dataset shows overall positive correlation between expression levels obtained by both methods. For snRNAseq panels, size of the circle is expression ratio; color is expression level (log2 CPM). For bulk RNAseq heatmaps, log2 FPKM is shown. (J) Total CPM expression levels of Gpc4, Gpc6, and Chrdl1 in each cluster as indicated showing expression patterns match those observed with Immunohistochemistry (IHC) described in Figure 2.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/70514/elife-70514-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–C) Gene Ontology (GO) terms analysis with String db of Biological Process in differentially expressed genes (DEGs) from the VGlut2 cKO model (A), Ip3r2 KO model (B), and common DEGs to both models (C). Blue indicates terms enriched in downregulated DEGs, red indicates terms enriched in upregulated DEGs. Bar length is gene ratio, fill color is false discovery rate (FDR). See also Figure 6—source data 1G. (D, E) Comparison between DEGs identified in the VGlut2 cKO dataset with DEGs between postnatal day (P)7 and P14 of WT mice, identified in the bulk RNAseq dataset (Figure 1). A total of 30 VGlut2 cKO DEGs were also significantly up- or downregulated at P14 vs. P7. The majority of common DEGs were inversely regulated (9 [30%] genes commonly regulated, 21 [70%] genes inversely regulated) as shown in the bar graph and heatmap on the right. (E) Same analysis as in (D), but for the Ip3r2 KO model. A total of 57 DEGs were commonly identified in the developmental dataset. About half of the genes were commonly regulated, while the other half were differentially regulated (31 genes commonly regulated, 26 genes differentially regulated) as shown in the bar graph and heatmap on the right. For this analysis, the selection criteria of bulk RNAseq P7–P14 DEGs are FPKM > 1; FDR < 0.1. See also Figure 6—source data 1F.
+
+### Astrocytes in the wild-type VC form transcriptomically diverse populations
 
 We focused our downstream analysis on astrocytes. A second round of unbiased clustering of the astrocyte population identified four groups (Figure 6C, Figure 6—figure supplement 2A) in each model and genotype. By comparing the genes enriched in each cluster with datasets in the literature, we determined these to anatomically correspond to upper (L1–2/3), middle (mid; L2/3–5), deep (L5–6) layer, and white matter (WM) astrocytes (Figure 6C, Figure 6—figure supplement 2A; Batiuk et al., 2020; Bayraktar et al., 2020; Lanjakornsiripan et al., 2018). Similar cell numbers were identified in each group across models and genotypes (number of nuclei in VGlut2 cKO model: upper 1114 WT; 1065 cKO, mid 1289 WT; 1163 cKO, deep 440 WT; 466 cKO, WM 273 WT; 268 cKO; Figure 6—figure supplement 2C). We also determined the fractions of astrocytes present in each group and found that this corresponds to the fractions we identified via anatomical cell counts (Figure 6—figure supplement 2D), showing that the process of nuclear isolation has captured astrocytes in levels that reflect their in vivo abundance. To validate the layer-enriched genes, we took advantage of publicly available in situ hybridization datasets generated by the Allen Brain Institute (Allen Brain Institute, 2008; available from https://developingmouse.brain-map.org/). Cross-referencing cluster-enriched genes identified in our study with P14 in situ hybridization datasets, we found that the gene Kcnd2 is expressed in mid cortical layers, Id3 is enriched in deep layers, and Gfap is enriched in white matter, matching the snRNAseq (Figure 6—figure supplement 2B).
 
@@ -106,7 +170,7 @@ Pairwise comparisons between each of the clusters using the WT astrocytes of eac
 
 Next, we asked how astrocyte marker, function, and synapse-regulating genes highlighted in the bulk RNAseq dataset (Figure 1G and H) are expressed across layers (Figure 6—figure supplement 2I and J). Overall, we found a positive correlation between levels of gene expression obtained by the two sequencing methods, meaning that genes that were shown to be highly expressed in the bulk dataset (such as ApoE) were also highly expressed in the snRNAseq dataset (Figure 6—figure supplement 2I). Unsurprisingly, sequencing of bulk RNA samples was more sensitive in detecting the low expressed genes, such as Gpc4, Tgfb1, and Thbs1, which were close to the detection threshold in the snRNAseq dataset, precluding statistical analysis. Nevertheless, plotting the total counts per million mapped reads (CPM) levels for Gpc4, Gpc6, and Chrdl1 revealed that they matched the spatial analysis performed at the same age (Figure 3). Gpc4 expression is lowest in the upper layer cluster, Chrdl1 expression is highest in the upper layer cluster, while Gpc6 levels are similar across all four populations (Figure 6—figure supplement 2J). For other astrocyte marker, function, and synapse-regulating genes detected in the snRNAseq dataset, most exhibited similar levels of expression in all layer groups, with some notable exceptions. For example, Gfap and Aqp4 expression is higher in deep and WM astrocytes than in upper and mid groups, while the expression of connexin 43 (Gja1) is highest in deep layer astrocytes compared to all other groups (Figure 6—figure supplement 2I). Taken together, these results show that wild-type astrocytes are transcriptomically diverse, but not distinct, in the developing VC, in accordance with previous studies in which astrocyte diversity was assessed at a similar developmental stage (Bayraktar et al., 2020).
 
-## Neuronal and astrocyte activity induces global transcriptomic changes in astrocytes
+### Neuronal and astrocyte activity induces global transcriptomic changes in astrocytes
 
 Given that we found that astrocyte synapse-regulating genes are regulated by both neuronal and astrocyte activity, we next asked what other astrocyte genes are affected by these activity manipulations. To increase the power of our analysis, we combined the four astrocyte subpopulations into one group for each genotype and used this combined group to identify DEGs between the WT and KO. We found 61 DEGs for the VGlut2 cKO model and 131 DEGs for the Ip3r2 KO model (Figure 6E–H, Figure 6—source data 1D). Performing the same analysis on two other abundant glial populations, OPCs and microglia, showed 28 DEGs for OPCs and 24 DEGs for microglia in the VGlut2 cKO model, and 38 DEGs for OPCs and 29 DEGs for microglia in the Ip3r2 KO model (not shown), 20–50% of the astrocyte DEG level. This suggests that astrocytes are more sensitive to neuronal activity changes, as well as more profoundly affected by silencing their calcium activity. GO analysis of astrocyte DEGs in both models revealed a broad range of BPs, which go beyond terms that may be associated with synapse regulation, such as ‘response to stimulus,’ ‘cell communication,’ or ‘retrograde axonal transport.’ For example, DEGs in the VGlut2 cKO model are also enriched for BP terms related to nuclear envelope disassembly, and nitric oxide metabolism in the upregulated genes, and copper and zinc ion processing in the downregulated genes (Figure 6—figure supplement 3A, Figure 6—source data 1G). In the Ip3r2 KO model, upregulated genes are enriched for organic acid biosynthesis, while downregulated genes are enriched in histone modification-related BPs (Figure 6—figure supplement 3B, Figure 6—source data 1G).
 
@@ -124,17 +188,17 @@ In this study, we demonstrate how astrocytes and synapses develop together in th
 
 **Figure 7.:** Box 1. Astrocytes and synapses develop across a similar time line in the mouse visual cortex (VC). Left diagram: majority of astrocyte transcriptomic changes (represented as number of differentially expressed genes [DEGs]) occur between postnatal day (P)7 (synapse initiation) and P14 (synapse maturation). Right diagram: select astrocytic synapse-regulating genes (Gpc4 and Chrdl1) and synaptic proteins (GLUA1, GLUA2) are differentially expressed between P7 and P14. Box 2. The spatio-temporal expression of astrocyte synapse-regulating genes is driven by thalamic neuronal activity and astrocyte calcium activity. Left: diagram of VC depicting neuronal (blue) laminar arrangement and connectivity (arrows). Astrocytes (green) are present in all cortical layers. Right: expression of astrocytic Gpc4 and Chrdl1 mRNA, and their regulated synaptic GLUAs during development. Gpc4 expression is decreased at P14, Chrdl1 expression is increased (correlating with increase in GLUA2 subunits, which are regulated by Chrdl1). These changes are regulated by thalamic neuronal activity in a time- and layer-specific manner. Additionally, overall expression of astrocytic genes is regulated by astrocyte calcium signaling. Box 3. Single-cell transcriptomic profiling of VC astrocytes at P14 reveals a heterogeneity of gene expression, with a global transcriptomic dependence on neuronal and astrocyte activity. Left: UMAP plot shows four different astrocyte clusters identified in the wild-type VC, which correspond to spatial organization in the cortex. Right: diagram showing layer-specific expression of select astrocytic genes as labeled.
 
-## Astrocyte number and transcriptome alterations across development coincide with stages of synapse development
+### Astrocyte number and transcriptome alterations across development coincide with stages of synapse development
 
 In the mouse cortex, astrocytes begin to be generated right before birth and populate the cortex throughout the first month of life (Farhy-Tselnicker and Allen, 2018; Ge et al., 2012). During this time, many changes are occurring in astrocytes, as well as in the synapses between neighboring neurons. We observed that the most significant change in astrocytes at the transcriptome level occurred between the first and second postnatal weeks (Figure 1). Similarly, an analysis of the synaptic proteome during development showed the largest difference between P9 and P15 (Gonzalez-Lozano et al., 2016), suggesting similar or overlapping regulatory mechanisms in both astrocytes and neurons. In addition to the transcriptomic changes, astrocyte numbers are also strongly regulated during development. Indeed, genes upregulated at P14 are uniquely enriched in GO terms related to cell proliferation and migration (Figure 1—source data 1B). Interestingly, the density of astrocytes remains fairly constant throughout development, suggesting that their expansion rate is correlated with the overall expansion of the brain tissue. The mechanisms that regulate these migration patterns are still unknown and seem to be largely unaffected by neuronal or astrocyte activity, as evident from the similar numbers of astrocytes within each cortical layer in both neuronal and astrocyte activity manipulation models tested here (Figure 4—figure supplement 2, Figure 5—figure supplement 1). Future studies will determine the factors or sets of factors that regulate the number and location of astrocytes within defined domains.
 
-## Astrocytes form diverse populations in the developing mouse VC
+### Astrocytes form diverse populations in the developing mouse VC
 
 The diversity of neurons based on location, morphology, connectivity, and activity patterns has been extensively studied for decades, with multiple subtypes of excitatory and inhibitory neurons identified (Kepecs and Fishell, 2014; Migliore and Shepherd, 2005; Zeisel et al., 2015). For a long time, cortical protoplasmic astrocytes were viewed as a homogeneous population. However, recent studies looking in-depth at astrocyte heterogeneity using both bulk and single-cell sequencing approaches have shown that within the cortex astrocytes form a heterogeneous population (Batiuk et al., 2020; Bayraktar et al., 2020; Lanjakornsiripan et al., 2018). Unlike neurons, astrocytes do not fall into the six-layer categories, but rather exist on a gradient of transcriptomically separable yet overlapping groups. Indeed, our snRNAseq data shows that the biggest differences are between astrocytes of the upper and deep layer groups, while upper and mid-layer groups are the most similar (Figure 6C and D, Figure 6—figure supplement 2A and E). Nevertheless, we have identified several astrocyte population marker genes (such as Dcc or Kcnd2; Figure 6, Figure 6—figure supplement 2B, Figure 6—source data 1A and B), which are significantly enriched in one group over others. Before performing functional studies based on these genes, further characterization is required, for example, cross-referencing these genes with our bulk RNA sequencing dataset to identify astrocyte-enriched genes and performing immunohistochemistry (IHC) to determine if protein expression is also heterogeneous. These validated genes could then be used to target specific populations of astrocytes, similar to the methods employed for neurons, in order to manipulate astrocytes that interact with specific synapse types or circuits. Importantly, while blocking thalamocortical activity did alter the expression of multiple genes in astrocytes, it did not alter the layer patterning of the cells, showing that this is not a major factor in driving layer-enriched gene expression. Indeed, altering the identity of local cortical neurons by using Dab1 KO mice, in which cortical layer neurons are reversed, does alter astrocyte layer identity, suggesting a role for local cues (Lanjakornsiripan et al., 2018). Our findings further suggest that neuronal activity acts to fine-tune the level of astrocyte genes that are important for neuronal function, rather than determining their presence or absence. Functional studies are further needed to identify the precise neuronal activity patterns that govern astrocyte-neuron reciprocal communication.
 
 Moreover, some of the synapse-regulating genes we profiled display layer-specific expression changes across development (Figure 2). We found a correlation between Chrdl1 upregulation in the upper layers with that of GLUA2, consistent with our previous findings regarding Chrdl1 regulation of GLUA2 levels (Blanco-Suarez et al., 2018). A more complex picture emerges for Gpc4, Gpc6, and GLUA1, the AMPAR subunit regulated by these factors (Allen et al., 2012). GLUA1 protein levels steadily increase across development, peaking in most layers at P7, and do not show downregulation at P14 in L1 (as was observed for Gpc4), or upregulation in deeper layers (as was shown for Gpc6). Still, changes in Gpc4 expression are contributing to the levels of GLUA1, as GLUA1 is affected in correlation with changes in Gpc4 expression in the neuronal and astrocyte activity-deficit models (Figures 4 and 5), and GLUA1 levels are reduced in the VC of Gpc4 KO mice (Farhy-Tselnicker et al., 2017). One possibility is that Gpc4 and Gpc6 may regulate GLUA1 levels at specific synapses, such as glutamatergic terminals onto interneurons in L1, or deep layer cortical neurons, making it hard to distinguish their specific effect when analyzing synapses as a group. Alternatively, they may be required to induce initial recruitment of GLUA1 to synaptic sites, but not for its maintenance, so GLUA1 levels remain stable when Gpc4 is downregulated with development.
 
-## Neuronal and astrocyte activity modulate transcriptomic changes in astrocytes
+### Neuronal and astrocyte activity modulate transcriptomic changes in astrocytes
 
 Ever since the astrocyte-derived factors that promote synapse formation were identified, an outstanding question in the field has been, how are they regulated (Baldwin and Eroglu, 2017; Farhy-Tselnicker and Allen, 2018)? Is it astrocyte-intrinsic, or is it driven by changes in neuronal activity that occur as synapses develop? Our in vitro work, together with previously published studies, has provided evidence that neuronal activity can influence astrocyte gene expression and function at the synapse (Figure 4—figure supplement 1, Benediktsson et al., 2012; Bernardinelli et al., 2014b; Durkee and Araque, 2019; Hasel et al., 2017). However, how this occurs in the developing brain in vivo has not been systematically addressed. Here, we approached this question by perturbing the activity of thalamocortical projections (through VGlut2 knockout), with a goal of manipulating signals that have the potential to regulate astrocytic developmental gene expression under physiological conditions. Indeed, this perturbation resulted in attenuation of the developmental expression changes in astrocyte genes as well as AMPAR subunits at P14 but not at P7, suggesting a disruption in circuit maturation. A similar outcome on neuronal and astrocyte maturation was observed in studies employing visual deprivation methods (Albanese et al., 1983; Desai et al., 2002; Freire, 1978; Funahashi et al., 2013; Ishikawa et al., 2014; Ko et al., 2014; Müller, 1990; Stogsdill et al., 2017). Future strategies including manipulation of neuronal and astrocyte function using opto- or chemogenetic approaches will further elucidate the role of astrocyte-neuron interaction in circuit development and maturation.
 
@@ -144,53 +208,889 @@ In all, this study demonstrates that the correct formation of synapses and hence
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag(rat monoclonal)</td>
+      <td>Roche</td>
+      <td>CAT# 11867423001; RRID:AB_390918</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA tag(rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>CAT# 3724;RRID:AB_1549585</td>
+      <td>RiboTag pulldown(1:200)IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NeuN(mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# MAB377; RRID:AB_2298772</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S100β(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>CAT# ab52642;RRID:AB_882426</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ng2(rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# Ab5320; RRID:AB_11213678</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MOG(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>CAT# 12690-1-ap; RRID:AB_2145527</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1(rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>CAT# 016-20001; RRID:AB_839506</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sox9(rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>CAT# ab185966; RRID:AB_2728660</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Aldh1l1(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>CAT# ab-87117; RRID:AB_10712968</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-glypican 4(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>CAT# 13048-1-AP; RRID:AB_10640157</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IP3R2(rabbit polyclonal)</td>
+      <td>Ju Chen lab UCSD</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin(mouse monoclonal)</td>
+      <td>Thermo</td>
+      <td>CAT# MA5-16308; RRID:AB_2537819</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Bassoon(mouse monoclonal)</td>
+      <td>Enzo</td>
+      <td>CAT# VAM-PS003; RRID:AB_2066982</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VGLUT1(guinea pig polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# AB5905; RRID:AB_2301751</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VGLUT2(guinea pig polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# AB2251; RRID:AB_2665454</td>
+      <td>IF (1:3000–5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLUA1(rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# AB1504; RRID:AB_2113602</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLUA2(rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# AB1768-I; RRID:AB_2313802</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Neun-Alexa-488(mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# MAB377X; RRID:AB_2149209</td>
+      <td>FACS(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(chicken polyclonal)</td>
+      <td>Millipore</td>
+      <td>CAT# 06-896;RRID:AB_11214044</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat Alexa-488(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11006; RRID:AB_141373</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat Alexa-594(goat polyclonal)</td>
+      <td>Molecular probes</td>
+      <td>CAT# A11007; RRID:AB_141374</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa-488(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11029; RRID:AB_138404</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa-594(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11032; RRID:AB_141672</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa-680(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A21057; RRID:AB_141436</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa-488(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11034; RRID:AB_2576217</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa-594(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11037; RRID:AB_2534095</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa-647(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A21245; RRID:AB_2535813</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa-680(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A21109; RRID:AB_2535758</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa-488(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11073; RRID:AB_142018</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa-594(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11076; RRID:AB_141930</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa-647(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A21450; RRID:AB_141882</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken Alexa-488(goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>CAT# A11039;RRID:AB_142924</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington</td>
+      <td>CAT# PAP2 3176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin inhibitor</td>
+      <td>Worthington</td>
+      <td>CAT# LS003086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isolectin</td>
+      <td>Vector</td>
+      <td>CAT# L-1100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Sigma</td>
+      <td>CAT# T9935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-lysine</td>
+      <td>Sigma</td>
+      <td>CAT# P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin</td>
+      <td>Cultrex Trevigen</td>
+      <td>CAT# 3400-010-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl-L-cysteine</td>
+      <td>Sigma</td>
+      <td>CAT# A8199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma</td>
+      <td>CAT# I1882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triiodo-thyronine</td>
+      <td>Sigma</td>
+      <td>CAT# T6397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transferrin</td>
+      <td>Sigma</td>
+      <td>CAT# T1147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BSA</td>
+      <td>Sigma</td>
+      <td>CAT# A4161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Progesterone</td>
+      <td>Sigma</td>
+      <td>CAT# P6149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Putrescine</td>
+      <td>Sigma</td>
+      <td>CAT# P5780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium selenite</td>
+      <td>Sigma</td>
+      <td>CAT# S9133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Sigma</td>
+      <td>CAT# F6886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FUDR</td>
+      <td>Sigma</td>
+      <td>CAT# F0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AraC</td>
+      <td>Sigma</td>
+      <td>CAT# C1768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrocortisone</td>
+      <td>Sigma</td>
+      <td>CAT# H0888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27/NS21</td>
+      <td>Winzeler and Wang, 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BDNF</td>
+      <td>PeproTech</td>
+      <td>CAT# 450-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CNTF</td>
+      <td>PeproTech</td>
+      <td>CAT# 450-13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>CAT# 04693132001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-lysine</td>
+      <td>Sigma</td>
+      <td>CAT# L5501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SlowFade Gold with DAPI mounting media</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# S36939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Millipore</td>
+      <td>CAT# 5.08741.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine</td>
+      <td>Victor Medical Company</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylazine</td>
+      <td>Anased</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNAsin</td>
+      <td>Promega</td>
+      <td>CAT# N2115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin</td>
+      <td>Sigma</td>
+      <td>CAT# H3393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>CAT# P8340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RNaseOUT Recombinant Ribonuclease Inhibitor</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# 10777019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SUPERase• In RNase Inhibitor</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# AM2694</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OptiPrep</td>
+      <td>Sigma</td>
+      <td>CAT# D1556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# 62249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Magnetic IgG beads</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# 88847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>CAT# C7698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UltraPure BSA</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# AM2618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bradford assay</td>
+      <td>Bio-Rad</td>
+      <td>CAT# 5000203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>CAT# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy plus micro kit</td>
+      <td>Qiagen</td>
+      <td>CAT# 74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 2.5 HD—multiplex fluorescent Manual Assay</td>
+      <td>ACDbio</td>
+      <td>CAT# 320850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qbit</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# Q33238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TapeStation</td>
+      <td>Agilent</td>
+      <td>CAT# G2991AA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>CAT# RS-122-2101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10XChromium 3′ kit V3</td>
+      <td>10XGenomics</td>
+      <td>CAT# PN-1000073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(mouse)</td>
+      <td>T11D7e2 Hybridoma</td>
+      <td>ATCC</td>
+      <td>CAT# TIB-103; RRID:CVCL_F769</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Tg(Aldh1l1-EGFP)OFC789Gsat/Mmucd</td>
+      <td>UC Davis</td>
+      <td>011015-UCD; RRID:MMRRC_011015-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>B6N.129-Rpl22tm1.1Psam/J</td>
+      <td>Jackson Labs</td>
+      <td>Jax # 011029; RRID:IMSR_JAX:011029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>B6.Cg-Tg(Gfap-cre)73.12Mvs/J</td>
+      <td>Jackson Labs</td>
+      <td>Jax# 012886; RRID:IMSR_JAX:012886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>B6.C-Gt(ROSA)26Sortm14(CAG-tdTomato)</td>
+      <td>Jackson Labs</td>
+      <td>Jax # 007914; RRID: IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Slc17a6tm1Lowl/J</td>
+      <td>Jackson Labs</td>
+      <td>Jax # 12898; RRID:IMSR_JAX:012898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Roratm1(cre)Ddmo</td>
+      <td>O’Leary lab(Salk Institute) Chou et al., 2013</td>
+      <td></td>
+      <td>MGI:5000017</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Itpr2tm1.1Chen</td>
+      <td>Chen lab (UCSD) Li et al., 2005</td>
+      <td></td>
+      <td>MGI:3640970</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: 3-plex negative control</td>
+      <td>ACDbio</td>
+      <td>CAT# 320871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Gpc4</td>
+      <td>ACDbio</td>
+      <td>CAT# 442821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Gpc5</td>
+      <td>ACDbio</td>
+      <td>CAT# 442831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Gpc6-01</td>
+      <td>ACDbio</td>
+      <td>CAT# 453301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Chrdl1</td>
+      <td>ACDbio</td>
+      <td>CAT# 442811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Thbs1</td>
+      <td>ACDbio</td>
+      <td>CAT# 457891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Thbs2</td>
+      <td>ACDbio</td>
+      <td>CAT# 492681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Thbs4</td>
+      <td>ACDbio</td>
+      <td>CAT# 526821</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Slc1a3 (Glast) channel 2</td>
+      <td>ACDbio</td>
+      <td>CAT# 430781-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope probe: Tubb3 channel 3</td>
+      <td>ACDbio</td>
+      <td>CAT# 423398-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AxioVision</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Odyssey Image Studio</td>
+      <td>LI-COR</td>
+      <td>RRID:SCR_014211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InteractiVenn</td>
+      <td>Heberle et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td></td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td></td>
+      <td>RRID:SCR_000036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cell culture inserts</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# 353102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vivaspin centrifugal concentrator</td>
+      <td>Sartorius</td>
+      <td>CAT# 14558502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–12% bolt gels</td>
+      <td>Thermo Fisher</td>
+      <td>CAT# NW04120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PVDF membranes, Immobilon-FL</td>
+      <td>Millipore</td>
+      <td>CAT# IPFL00005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Odyssey Infrared Imager</td>
+      <td>LI-COR</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescence microscope with apotome</td>
+      <td>Zeiss</td>
+      <td>Axio Imager.Z2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cryostat</td>
+      <td>Hacker Industries</td>
+      <td>OTF5000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal microscope</td>
+      <td>Zeiss</td>
+      <td>LSM710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal microscope</td>
+      <td>Zeiss</td>
+      <td>LSM880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FACS Aria Fusion sorter</td>
+      <td>BD</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HybEZ hybridization system</td>
+      <td>ACDbio</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Illumina HiSeq 2500</td>
+      <td>Illumina</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NovaSeq 6000</td>
+      <td>Illumina</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Nicola J. Allen (nallen@salk.edu).
 
-## Animals
+### Animals
 
 All animal work was approved by the Salk Institute Institutional Animal Care and Use Committee.
 
-## Rats
+#### Rats
 
 Sprague–Dawley rats (Charles Rivers) were maintained in the Salk Institute animal facility under a 12 hr light:dark cycle with ad libitum access to food and water. Rat pups (both male and female) were used at P1–2 for preparation of primary cortical astrocyte cultures, and at P5–P7 for preparation of purified immunopanned retinal ganglion cell (RGC) neuronal cultures.
 
-## Mice
+#### Mice
 
 Mice were maintained in the Salk Institute animal facility under a 12 hr light:dark cycle with ad libitum access to food and water. Both male and female mice were used for experiments.
 
 The following mouse lines were used:
 
-## Mouse tissue collection
+#### Mouse tissue collection
 
 Tissue was collected at the following developmental time points: P1, P4, P7, P14, P21, P28, and P120.
 
-## RiboTag RNAseq
+##### RiboTag RNAseq
 
 All mice were collected between 9:30 am and 12:30 pm on the day of experiment. Mice were anesthetized by I.P. injection of 100 mg/kg ketamine (Victor Medical Company)/20 mg/kg xylazine (Anased) mix, and transcardially perfused with 10 ml PBS then 10 ml 1% PFA. Brains were dissected in 2.5 mM HEPES-KOH pH 7.4, 35 mM glucose, 4 mM NaHCO3 in 1× Hank’s Balanced Salt Solution with 100 µg/ml cycloheximide added fresh (Heiman et al., 2014). Brains were cut at approximately bregma –2.4 to isolate the VC, the cortex was carefully detached from the subcortical areas, and any visible white matter was removed. Lateral cuts were made at 1 mm and 3 mm from the midline to further isolate the VC section, and RiboTag pulldown was immediately performed. For each time point, the visual cortices from two mice (Rpl22-HA+; Gfap cre+) were pooled for RNA isolation and RNA sequencing library preparation. P7 = 3 biological replicates (6 mice, 2 × 3); P14 = 4 biological replicates (8 mice, 2 × 4); P28 = 5 biological replicates (10 mice, 2 × 5); P120 = 6 biological replicates, 3 new samples (6 mice, 2 × 3), plus for data analysis 3 additional P120 biological replicates from a previously published study from the lab (Boisvert et al., 2018; GEO GSE99791), collected and processed in the same way, were included to increase the power of the analysis.
 
-## Histology (smFISH in situ hybridization and immunostaining)
+##### Histology (smFISH in situ hybridization and immunostaining)
 
 Mice aged P4 and older were anesthetized by I.P. injection of 100 mg/kg ketamine (Victor Medical Company)/20 mg/kg xylazine (Anased) mix and transcardially perfused with PBS, then 4% PFA at room temperature. Brains were removed and incubated in 4% PFA overnight at 4°C, then washed 3 × 5 min with PBS, and cryoprotected in 30% sucrose for 2–3 days, before being embedded in TFM media (General Data Healthcare #TFM-5), frozen in dry ice-ethanol slurry solution, and stored at –80°C until use. P1 mice were decapitated and brains removed without perfusion, briefly washed in PBS and placed in 4% PFA overnight at 4°C, followed by a similar procedure as described above for older mice. Brains were sectioned using a cryostat (Hacker Industries #OTF5000) in sagittal or coronal orientations depending on experimental needs at a slice thickness of 16–25 µm. Sections were mounted on Superfrost Plus slides (Fisher #1255015). Immunostaining for synaptic markers and smFISH was performed on the same day of sectioning. 3–5 mice were used for each experimental group. For each mouse, three sections were imaged and analyzed.
 
-## Single-nucleus RNAseq and western blot
+##### Single-nucleus RNAseq and western blot
 
 Mice were anesthetized by I.P. injection of 100 mg/kg ketamine (Victor Medical Company)/20 mg/kg xylazine (Anased) mix, then decapitated. Brains were rapidly removed and the VC dissected in ice-cold PBS using the same coordinates as described for RiboTag RNAseq. Dissected cortices were snap frozen, and kept at –80°C until use. For snRNAseq, 4 mice were collected for each experimental group. For western blot, 2–4 independent experiments/samples for each condition were analyzed.
 
-## RNAseq
+### RNAseq
 
-## Bulk RNAseq using RiboTag
+#### Bulk RNAseq using RiboTag
 
-## RiboTag pulldown
+##### RiboTag pulldown
 
 A modified RiboTag protocol was performed to isolate astrocyte-enriched RNA. Briefly, brain samples were homogenized using a Dounce homogenizer (Sigma #D9063) in 2 ml cycloheximide-supplemented homogenization buffer (1% NP-40, 0.1 M KCl, 0.05 M Tris, pH 7.4, 0.012 M MgCl2 in RNase-free water, with 1:1000 1 M DTT, 1 mg/ml heparin, 0.1 mg/ml cycloheximide, 1:100 protease inhibitors, and 1:200 RNAsin added fresh). Homogenates were centrifuged and the supernatant incubated on a rotator at 4°C for 4 hr with 5 μμl anti-HA antibody to bind the HA-tagged ribosomes (CST Rb anti-HA #3724, 1:200). Magnetic IgG beads (Thermo Scientific Pierce #88847) were conjugated to the antibody-ribosome complex via overnight incubation on a rotator at 4°C. Samples were washed with a high salt buffer (0.333 M KCl, 1% NP40, 1:2000 1 M DTT, 0.1 mg/ml cycloheximide, 0.05 M Tris pH 7.4, 0.012 M MgCl2 in RNase-free water), and RNA released from ribosomes with 350 μl RLT buffer (from Qiagen RNeasy kit) with 1% BME. RNA was purified using RNeasy Plus Micro kit (Qiagen 74034) according to the manufacturer’s instructions and eluted into 16 μl RNase-free water. Eluted RNA was stored at –80°C. For each time point, 50 μl of homogenate (pre-anti-HA antibody addition) was set aside after centrifugation, kept at –20°C overnight, and purified via RNeasy Micro kit as an ‘input’ sample, and used to determine astrocyte enrichment.
 
-## Library generation and sequencing
+##### Library generation and sequencing
 
 RNA quantity and quality were measured with a Tape Station (Agilent) and Qubit Fluorimeter (Thermo Fisher) before library preparation. >100 ng of RNA was used to make libraries. mRNA was extracted with oligo-dT beads, capturing polyA tails, and cDNA libraries made with Illumina TruSeq Stranded mRNA Library Preparation Kit (RS-122-2101) by the Salk Institute Next Generation Sequencing (NGS) Core. Samples were sequenced on an Illumina HiSeq 2500 with single-end 50 base-pair reads, at 12–70 million reads per sample.
 
-## RNA sequencing mapping, analysis, and statistics
+##### RNA sequencing mapping, analysis, and statistics
 
 Raw sequencing data was demultiplexed and converted into FASTQ files using CASAVA (v1.8.2) and quality tested with FASTQC v0.11.2. Alignment to the mm10 genome was performed using the STAR aligner version 2.5.1b (Dobin et al., 2013). Mapping was carried out using default parameters (up to 10 mismatches per read, and up to 9 multi-mapping locations per read), and a high ratio of uniquely mapped reads (>75%) was confirmed with exonic alignment inspected to ensure that reads were mapped predominantly to annotated exons. Raw and normalized (FPKM) gene expression was quantified across all genes (RNAseq) using the top-expressed isoform as a proxy for gene expression using HOMER v4.10 (Heinz et al., 2010), resulting in 10–55 million uniquely mapped reads in exons. Principal component analysis was carried out with prcomp in R 3.4.3 on normalized counts. Differential gene expression was carried out using the DESeq2 (Love et al., 2014) package version 1.14.1 using the HOMER getDiffExpression.pl script with default normalization and using replicates to compute within-group dispersion. Significance for differential expression was defined as adjusted p<0.05 (also labeled as FDR), calculated using Benjamini–Hochberg’s procedure for multiple comparison adjustment.
 
@@ -204,83 +1104,126 @@ Astrocyte-enriched genes: RiboTag pulldown (astrocyte)/input (all cells) > 3, FP
 
 See also Boisvert et al., 2018. A full list of genes in each time point is presented in Figure 1—source data 1A.
 
-## GO enrichment analysis
+##### GO enrichment analysis
 
 GO terms that are enriched in astrocytes at each developmental stage were identified using the String database (https://string-db.org/)(Szklarczyk et al., 2019). A search using multiple proteins by gene name was performed with the default parameters, and GO BP category selected and exported from the analysis tab. GO terms with gene ratio of 0.5 and above were selected, and plotted for each age group, with x-axis showing the ratio of genes overlapping with each GO term, and bar fill color is the significance of the overlap (adj. p-value; FDR). GO terms common to all age groups were obtained using the Venn diagram (http://www.interactivenn.net/; Heberle et al., 2015), and terms with gene ratio equal to or above 0.5 were selected and plotted. A full list of GO terms is presented in Figure 1—source data 1B.
 
-## Single-nucleus RNAseq
+### Single-nucleus RNAseq
 
-## Sample preparation
+#### Sample preparation
 
 A total of8 samples (two for VGlut2 WT, two for VGlut2 cKO, two for Ip3r2 WT, two for Ip3r2 KO) were sequenced to obtain the dataset described in Figure 6, Figure 6—figure supplement 1, Figure 6—figure supplement 2. The samples were as follows: VGlut2 WT_1; VGlut2 cKO_1; VGlut2 WT_2; VGlut2 cKO_2; Ip3r2 WT_1; Ip3r2 KO_1; Ip3r2 WT_2; Ip3r2 KO_2. Each group consisted of one replicate from male mice and one replicate from female mice. Each replicate consisted of the VC from both hemispheres of two mice of the same genotype and gender. Nuclear isolation, FACS sorting, 10× barcoding, and cDNA preparation were performed on the same day using one WT and KO pair, which were processed in parallel, resulting in four separate procedures. cDNA was stored at –20°C until all samples were collected. Library preparation and sequencing were carried out at the same time for all eight samples.
 
-## Nuclei preparation
+#### Nuclei preparation
 
 Nuclei were isolated from frozen VC tissue. Tissue was manually homogenized using a two-step Dounce homogenizer (A and B) (Sigma #D9063) in NIMT buffer, containing (in mM: 250 sucrose, 25 KCl, 5 MgCl2, 10 Tris-Cl pH 8, 1 DTT; 1:100 dilution of Triton X100, Protease Inhibitor Cocktail [Sigma #P8340]; and 1:1000 dilution of RNaseOUT Recombinant Ribonuclease Inhibitor [Thermo #10777019]; SUPERase• In RNase Inhibitor [Thermo #AM2694]) on ice. Homogenized samples were mixed with 50% iodixanol (OptiPrep Density Gradient Medium; Sigma #D1556) and loaded onto 25% iodixanol cushion, and centrifuged at 10,000 g for 20 min at 4°C in a swinging bucket rotor (Sorval HS-4). Pellets resuspended in ice-cold DPBS (HyClone) with 1:1000 dilution of RNaseOUT Recombinant Ribonuclease Inhibitor (Thermo #10777019); SUPERase• In RNase Inhibitor (Thermo #AM2694). Nuclei were then incubated for 7 min on ice with Hoechst 33342 solution (20 mM) (Thermo #62249) (final concentration 0.5 µM), followed by centrifugation at 1000 g for 10 min at 4°C to pellet nuclei. Pellets were resuspended in blocking buffer containing DPBS with RNAse inhibitors, and 1:10 dilution of pure BSA, and blocked for 30 min on ice. NEUN-Alexa488 pre-conjugated antibody (Millipore #MAB377X) was then added at 1:1000 dilution and incubated for at least 1 hr on ice before proceeding to flow cytometry sorting.
 
-## Flow cytometry
+#### Flow cytometry
 
 Fluorescence-activated nuclei sorting (FANS) was performed in the Salk Institute Flow Cytometry core using a BD FACS Aria Fusion sorter with PBS for sheath fluid (a 100 μm nozzle was used for these experiments with sheath pressure set to 20 PSI). Hoechst-positive nuclei were gated first (fluorescence measured in the BV421 channel), followed by exclusion of debris using forward and side scatter pulse area parameters (FSC-A and SSC-A), exclusion of aggregates using pulse width (FSC-W and SSC-W), before gating populations based on NEUN fluorescence (using the FITC channel). To isolate the non-neuronal cell population, nuclei devoid of FITC signal (NEUN-) were collected (Figure 6A). Nuclei were purified using a one-drop single-cell sort mode (for counting accuracy); these were directly deposited into a 1.5 ml Eppendorf without additional buffer (to yield a sufficient concentration that permitted direct loading onto the 10× chip).
 
 Sorted NeuN-negative nuclei were immediately processed with 10X Chromium kit (10X Genomics) for single-nucleus barcoding. Nuclei were kept on ice for the entire process. At each time, WT and KO samples were processed in parallel on the same day.
 
-## 10X Chromium barcoding, library preparation, and sequencing
+#### 10X Chromium barcoding, library preparation, and sequencing
 
 Single-nuclei separation, barcoding, and cDNA generation were performed following the manufacturer’s instruction using the Chromium single cell 3′ kit (V3, 10X Genomics PN-1000073). cDNA concentration and quality were measured using Qubit Fluorimeter (Thermo Fisher) and Tape Station (Agilent), respectively, and was stored at –20°C until library preparation.
 
 Libraries were generated from all samples at the same time (eight total samples, 2 WT/2 KO Vglut2 cKO model; 2 WT/2KO IP3R2 KO model) following the manufacturer’s instructions using the Chromium single cell 3′ kit (V3, 10X Genomics PN-1000075). Library quality was assessed with a Tape station (Agilent). NovaSeq sequencing was performed at the UCSF Center for Advanced Technology, at ~300 million reads/sample (60,000 reads/cell).
 
-## Single-cell RNAseq data preprocessing and clustering
+#### Single-cell RNAseq data preprocessing and clustering
 
 Data was demultiplexed and mapped onto the mouse genome (mm10) using 10X Cellranger (v3.1.0) with default parameters. Cell barcodes with <200 genes detected were discarded due to low coverage. Doublets were identified and removed using Scrublet (Wolock et al., 2019) with its default setting in each sample. The average number of UMIs per cell was 2310 ± 878; average number of genes detected per cell (UMI ≥ 1) was 1168 ± 328. Cell clusters were identified using Scanpy (v1.4.3), following the clustering process described in Luecken and Theis, 2019. All the samples were combined and used the top 5000 highly variable genes as the input dimension reduction. To identify clusters, Scanorama (v1.0.0, default parameter, k = 20; Hie et al., 2019) was used to perform batch correction and dimension reduction (30 PCs), followed by Leiden clustering (Traag et al., 2019; resolution = 1). Data was visualized using the UMAP embedding (McInnes et al., 2018) function from Scanpy. The ensemble clustering identified all astrocytes as one cluster, and to further identify astrocytes subtypes, we repeated the same clustering process on the astrocytes cluster only and got four subtypes. Astrocyte clusters were annotated using cell-type marker genes identified from previous studies to label distinct cortical astrocyte populations (Bayraktar et al., 2020; Lanjakornsiripan et al., 2018; Marques et al., 2016; Tasic et al., 2018; Van Hove et al., 2019 ; Zeisel et al., 2018). A full list of genes in each layer group is presented in Figure 6—source data 1A and B.
 
-## Identifying DEGs
+#### Identifying DEGs
 
 To identify cluster-specific DEGs, we used the scanpy.tl.rank_gene_groups function to perform the Wilcoxon rank-sum test with Benjamini–Hochberg correction to compare cells from each cluster with the remaining cells. Genes with FDR < 0.1 and log2 FC between –0.15 and 0.15 were identified as DEGs. To identify DEGs between KO and WT, we performed the same analysis using combined astrocyte clusters. All comparisons were performed separately for VGlut2 cKO and Ip3r2 KO samples. A full list of DEGs is presented in Figure 6—source data 1D.
 
-## GO enrichment analysis
+#### GO enrichment analysis
 
 GO terms that are enriched in astrocyte gene groups within each cluster, as well as genes regulated by neuronal or astrocyte activity, were identified using the String database (https://string-db.org/)(Szklarczyk et al., 2019). A search using multiple proteins by gene name was performed separately on VGlut2 cKO and Ip3r2 KO samples, and up- and downregulated DEGs, using the default parameters, and GO BP category selected and exported from the “analysis“ tab. 20 GO terms with highest gene ratio were selected and plotted for each model, with x-axis showing the ratio of genes overlapping with each GO term, and bar fill color is significance of the overlap (adj. p-value; FDR). GO terms common to both models were obtained using the Venn diagram (http://www.interactivenn.net/; Heberle et al., 2015) and plotted. A full list of GO terms is presented in Figure 6—source data 1C and G.
 
-## Cell culture
+### Cell culture
 
-## RGC neuron purification and culture
+#### RGC neuron purification and culture
 
 RGC purification and culture was performed as described (Allen et al., 2012; Ullian et al., 2001; Winzeler and Wang, 2013). Briefly, retinas from P5 to P7 rat pups of both sexes were removed and placed in DPBS (HyClone #SH30264). Retinas were digested with Papain (Worthington #PAP2 3176; 50 units) for 30 min at 34°C, triturated with low OVO (15 mg/ml trypsin inhibitor; Worthington #LS003086), then high OVO (30 mg/ml trypsin inhibitor; Worthington #LS003086) solutions. The cell suspension was then added to lectin (Vector #L-1100)-coated Petri dishes to pull down microglia and fibroblast cells for 5–10 min at room temperature. The remaining cells were then added to T11D7 hybridoma supernatant-coated Petri dishes for 40 min at room temperature, which specifically binds RGCs. After washing off the non-binding cells with DPBS, pure RGCs were released by trypsin treatment (Sigma #T9935) to cleave cell-antibody bond and collected. RGCs were plated on six-well plates coated with PDL (Sigma # P6407) and laminin (Cultrex Trevigen #3400-010-01) at a density of 125,000 cells/well. RGCs were maintained in the following media: 50% DMEM (LifeTech #11960044); 50% Neurobasal (LifeTech #21103049); Penicillin-Streptomycin (LifeTech #15140-122); glutamax (LifeTech #35050-061); sodium pyruvate (LifeTech #11360-070); N-acetyl-L-cysteine (NAC) (Sigma #A8199); insulin (Sigma #I1882); triiodo-thyronine (Sigma #T6397); SATO (containing transferrin [Sigma #T-1147]; BSA [Sigma #A-4161]; progesterone [Sigma #P6149]; putrescine [Sigma #P5780]; sodium selenite [Sigma #S9133]); and B27 (see Winzeler and Wang, 2013 for recipe). For complete growth media, the media was supplemented with BDNF (PeproTech #450-02), CNTF (PeproTech #450-13), and forskolin (Sigma #F6886). The next day, half of the media was replaced with media containing FUDR (13 μg/μl final concentration; Sigma #F0503) to inhibit fibroblast growth. Cells were fed by replacing half of the media with fresh equilibrated media every 3–4 days. RGCs were maintained at 37°C/10% CO2 and kept in culture for at least 7 days prior to treatment to allow for full process outgrowth.
 
-## Astrocyte preparation and culture
+##### Astrocyte preparation and culture
 
 Primary astrocytes from rat cortex were prepared as described (Allen et al., 2012; McCarthy and de Vellis, 1980). Briefly, the cerebral cortex from P1 to P2 rat pups were removed and placed in DPBS (HyClone #SH30264). The meninges and hippocampi were removed and discarded. The remaining cortices were diced and digested with Papain (Worthington #LS003126; 330 units) for 1 hr and 15 min in 37°C 10% CO2 cell culture incubator. Cells were triturated in low OVO and then high OVO-containing solutions, and plated in PDL-coated 75 cm tissue culture flasks. 3 days after plating, flasks were manually shaken to remove upper cell layers, which contained mostly non-astrocytic cells. 2 days after shake off, ARA-C (10 μM final concentration; Sigma #C1768) was added for 48 hr to inhibit the other proliferating cells, which divide faster than astrocytes. Finally, astrocytes were plated in 15 cm cell culture plates coated with PDL at 2–3 million cells/dish and passaged once a week. Astrocytes were maintained at 37°C/10% CO2 and kept in culture for 3–4 weeks. Astrocyte culture medium was DMEM (LifeTech #11960044) supplemented with 10% heat-inactivated FBS (LifeTech #10437028), Penicillin-Streptomycin (LifeTech #15140-122), glutamax (LifeTech #35050-061), Insulin (Sigma #I1882), sodium pyruvate (LifeTech #11360-070), hydrocortisone (Sigma #H0888), and N-acetyl-L-cysteine (Sigma #A8199).
 
-## Treatment of astrocyte cultures with cultured neurons
+##### Treatment of astrocyte cultures with cultured neurons
 
 Cultured astrocytes were plated on cell culture inserts (Falcon #353102) at 250,000 cells/insert. Inserts were added to six-well plates containing either plated RGC neurons (at ~125,000 cells/well) or empty wells coated with PDL and laminin (similar to RGC-plated wells) and containing media. Cells were incubated together for 4 days in low protein conditioning media containing (50% DMEM, 50% Neurobasal media; Penicillin-Streptomycin; glutamax and sodium pyruvate, NAC, BDNF, CNTF, forskolin), after which conditioned media was collected and concentrated 50-fold using 10 kDa cutoff concentrators (Sartorius #14558502). Protein concentration was measured using the Bradford assay. Three experimental groups were compared: RGCs alone, astrocytes alone, and astrocytes + RGCs.
 
-## Treatment of astrocyte cultures with neurotransmitters
+##### Treatment of astrocyte cultures with neurotransmitters
 
 Astrocytes were plated on six-well plates at 150,000 cell/well and allowed to reach 90% confluency (1–2 days). Then astrocytes were incubated for 48 hr in low protein medium containing (50% DMEM, 50% Neurobasal media; Penicillin-Streptomycin; glutamax and sodium pyruvate) alone (control), or with either 100 μM glutamate (Sigma #G5889-100G), 10 μM adenosine (Sigma #A4036-5G), or 100 μM ATP (Sigma #A6419-1G) final concentration. Conditioned media was then collected as described above. Concentration was measured with Bradford assay. Samples were stored at 4°C for up to 7 days or processed immediately for western blot.
 
-## Western blot
+### Western blot
 
 Samples were heated in reducing loading dye (Thermo # 39000) for 45 min at 55°C. For conditioned media, 10 µg/well was loaded; for tissue lysates, 20 µg/lane was loaded. Samples were resolved on 4–12% bis-tris or bolt gels (Invitrogen #NW04120) for 30–40 min at 150–200 V. Proteins were transferred to PVDF membranes at 100 V for 1 hr, then blocked in 1% casein (Bio-Rad #1610782) in TBS (Bioworld #105300272) blocking buffer for 1 hr at room temperature on a shaker. Primary antibodies were applied overnight at 4°C diluted in blocking buffer. The antibodies used were Rb anti-glypican 4 (Proteintech #13048-1-AP; 1:500), Rb anti-IP3R2 (a gift from Ju Chen lab, UCSD 1:1000), and Ms anti-tubulin (Thermo #MA5-16308 1:5000). The next day, membranes were washed 3 × 10 min with TBS-0.1% Tween and the appropriate secondary antibody conjugated to Alexa Fluor 680 (Molecular Probes) was applied for 2 hr at room temperature (dilution 1:10,000). Bands were visualized using the Odyssey Infrared Imager (LI-COR) and band intensity analyzed using the Image Studio software (LI-COR).
 
-## Histology
+### Histology
 
-## Immunostaining in mouse brain tissue
+#### Immunostaining in mouse brain tissue
 
 The slides containing the sections were blocked for 1 hr at room temperature in blocking buffer containing antibody buffer (100 mM L-lysine and 0.3% Triton X-100 in PBS) supplemented with 10% heat-inactivated normal goat serum. Primary antibodies diluted in antibody buffer with 5% goat serum were incubated overnight at 4°C. The next day, slides were washed 3 × 5 min with PBS with 0.2% Triton X-100 and secondary antibodies conjugated to Alexa Fluor (Molecular Probes) were applied for 2 hr at room temperature. Slides were mounted with the SlowFade Gold with DAPI mounting media (LifeTech #S36939), covered with 1.5 glass coverslip (Fisher #12544E) and sealed with clear nail polish. The following antibodies were used: Chk anti-GFP (Millipore #06-896, 1:500), Rb anti-SOX9 (Abcam #ab185966, 1:2000), Rb anti-ALDH1L1 (Abcam #ab-87117, 1:500), Rb anti-HA (CST #3724), Rb anti-S100β (Abcam #ab52642, 1:100), Ms anti-NEUN (Millipore #MAB377 1:100), Rb anti-NG2 (Millipore # Ab5320), Rb anti-MOG (Proteintech # 12690-1-ap), Rb anti-IBA1 (Wako #016-20001), Gp anti-VGLUT1 (Millipore #AB5905, 1:2000), Gp anti-VGLUT2 (Millipore #AB2251 1:3000, 1:5000), Rb anti-GLUA1 (Millipore #AB1504, 1:400), Rb anti-GLUA2 (Millipore #AB1768-I, 1:400), and Ms anti-Bassoon (Enzo #VAMP500, 1:500). All secondary antibodies were applied at 1:500 dilution.
 
 The following mouse lines and antibody combinations were used:
 
-## Single-molecule fluorescent in situ hybridization (smFISH)
+<table>
+  <thead>
+    <tr>
+      <th>Experiment and figure #</th>
+      <th>Antibody targets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell marker colocalization RiboTag validation (Figure 1, Figure 1—figure supplement 1)</td>
+      <td>HA, S100β, NEUN, IBA1, NG2, MOG</td>
+    </tr>
+    <tr>
+      <td>Astrocyte number across development per layer (Figure 2, Figure 2—figure supplement 1)</td>
+      <td>GFP, VGLUT2</td>
+    </tr>
+    <tr>
+      <td>Astrocyte marker colocalization with Aldh1l1-Gfp (Figure 2—figure supplement 1)</td>
+      <td>GFP, SOX9, S100β, ALDH1L1</td>
+    </tr>
+    <tr>
+      <td>Presynaptic development per layer (Figure 3, Figure 3—figure supplement 1)</td>
+      <td>GFP, VGLUT1, VGLUT2</td>
+    </tr>
+    <tr>
+      <td>Postsynaptic development per layer (Figure 3)</td>
+      <td>GFP, GLUA1, GLUA2</td>
+    </tr>
+    <tr>
+      <td>Assessing the presence of thalamic projections to the VC in VGlut2 cKO mice (Figure 4—figure supplement 2)</td>
+      <td>VGLUT2</td>
+    </tr>
+    <tr>
+      <td>Analysis of VGLUT1 and VGLUT2 signal in VGlut2 cKO mice (Figure 4, Figure 4—figure supplement 2)</td>
+      <td>VGLUT1, VGLUT2</td>
+    </tr>
+    <tr>
+      <td>Quantification of pre and postsynaptic puncta, and synapses (Figure 4, Figure 4—figure supplement 2, Figure 5, Figure 5—figure supplement 1)</td>
+      <td>VGLUT1, VGLUT2, Bassoon, GLUA1, GLUA2</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Single-molecule fluorescent in situ hybridization (smFISH)
 
 All smFISH experiments reported here were performed on brain tissue fixed with 4% paraformaldehyde and processed using cryosectioning as described in the ‘Mouse tissue collection’ section. The assay was performed using the RNAscope 2.5 HD—multiplex fluorescent Manual Assay kit (ACDbio #320850) using the manufacturer’s instructions for fixed-frozen tissue with the following modifications. Directly following cryosectioning, slides containing brain sections were dried for 1 hr at –20°C, then washed for 5 min in PBS at room temperature, followed by brief wash (~1 min) in 100% Molecular Biology Grade Ethanol. The slides were then air-dried for 5 min and incubated with appropriate pretreatment reagents at 40°C. For tissue from P1 to P7 mice, slides were incubated with protease 3 for 30 min; for P14–P28, protease 4 30 min. Slides were then briefly washed with PBS and incubated with target probes for 2 hr at 40°C, followed by three amplification steps and one detection step. Slides were mounted using the SlowFade Gold with DAPI mounting media (LifeTech #S36939) covered with 1.5 glass coverslip (Fisher #12544E) and sealed with clear nail polish. The original protocol can be found in ACDbio website: https://acdbio.com/technical-support/user-manuals. Detailed step-by-step modified protocol performed here is available upon request.
 
 All slides were either imaged within 1–2 days or stored at –20°C until imaging.
 
-## Imaging and analysis
+### Imaging and analysis
 
-## Fluorescent microscopy
+#### Fluorescent microscopy
 
 Imaging was performed using an Axio Imager.Z2 fluorescent microscope (Zeiss) with the apotome module (apotome 2.0) and AxioCam HR3 camera (Zeiss) at 20× magnification. Tile images that contain the entire primary VC (from pial surface to white matter tract) were acquired. Number of tiles adjusted to contain a similar area of the cortex at each developmental stage, typically 1–2 (width) × 2–4 (depth) (pixel size 0.3 × 0.3 µm).
 
@@ -290,7 +1233,7 @@ For in situ hybridization experiments (Figure 2, Figure 2—figure supplement 1)
 
 For developmental analysis of astrocyte numbers per layer (Figure 2, Figure 2—figure supplement 1), presynaptic marker analysis during development (Figure 3, Figure 3—figure supplement 1), VGlut2 cKO validation (Figure 4, Figure 4—figure supplement 2), and Aldh1l1-GFP mouse validation (Figure 2—figure supplement 1): z stack images (three slices, optical slice 1 µm) were obtained.
 
-## Confocal microscopy
+#### Confocal microscopy
 
 Developmental analysis of GLUA1 and GLUA2 expression (Figure 3): Slides were imaged using Zeiss LSM 700 confocal microscope at 63× magnification. A 1176 × 1176 pixel 2.7 μm thick z-stack image was obtained (pixel size 0.09 × 0.09 × 0.3 µm, 10 slices per 2.7 µm stack). In total, four images were taken from each section to encompass all cortical layers. Layers 4–5 were combined into one image.
 
@@ -300,7 +1243,7 @@ Synapse number analysis (Figure 4, Figure 4—figure supplement 2, Figure 5, Fig
 
 In all cases, when comparing WT and KO per given experiment, slides were imaged on the same day using set exposure.
 
-## Image analysis
+#### Image analysis
 
 Image analysis was primarily done with ImageJ (FIJI, NIH) or Imaris (Bitplane) software as described below for each section:
 
@@ -326,6 +1269,6 @@ Quantification of smFISH signal (Figure 2, Figure 2—figure supplement 2, Figur
 
 Quantification of pre-, postsynaptic puncta, and synapses (Figure 4, Figure 4—figure supplement 2, Figure 5, Figure 5—figure supplement 1): This was performed using Imaris software (Bitplane). Positive puncta of GLUA1, GLUA2, VGLUT1, VGLUT2, Bassoon, and tdTomato processes (Figure 4—figure supplement 2) were selected by size and intensity by thresholding the signal in the same way for each section. Then colocalization between each two pre-postsynaptic pairs was calculated. Puncta were considered colocalized if the distance between them was ≤0.5 µm (Blanco-Suarez et al., 2018; Farhy-Tselnicker et al., 2017). For experiments described in Figure 4—figure supplement 2, first colocalization between tdTomato and Bassoon was established and cropped. The colocalized Bassoon-tdTomato puncta were then used to calculate colocalization with GLUA1 or GLUA2. Number of colocalized puncta was obtained and compared between the experimental groups. A minimum of three sections per mouse were imaged for each brain region, and the experiment was repeated in at least five WT and KO pairs. Example images show a single z plane from the same location in the stack for both genotypes.
 
-## Data presentation and statistical analysis
+### Data presentation and statistical analysis
 
 All data is presented as either mean ± s.e.m., scatter with mean ± s.e.m., or scatter with range, as indicated in each figure legend. Statistical analysis was performed using Prism software (GraphPad) unless otherwise stated in the text. Multiple group comparisons were done using one-way analysis of variance (ANOVA) with post hoc Tukey’s or Dunn’s tests. Pairwise comparisons were done by t-test. When data did not pass the normal distribution test, multiple comparisons were done by Kruskal–Wallis ANOVA on ranks and pairwise comparisons were done with the Mann–Whitney rank-sum test. p-Value ≤ 0.05 was considered statistically significant. Analysis was done blind to genotype. The sample sizes, statistical tests used, and significance are presented in each figure and figure legend.

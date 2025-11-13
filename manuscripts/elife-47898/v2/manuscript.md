@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.47898.001 The access of Transcription Factors (TFs) to their cognate DNA binding motifs requires a precise control over nucleosome positioning. This is especially important following DNA replication and during mitosis, both resulting in profound changes in nucleosome organization over TF binding regions. Using mouse Embryonic Stem (ES) cells, we show that the TF CTCF displaces nucleosomes from its binding site and locally organizes large and phased nucleosomal arrays, not only in interphase steady-state but also immediately after replication and during mitosis. Correlative analyses suggest this is associated with fast gene reactivation following replication and mitosis. While regions bound by other TFs (Oct4/Sox2), display major rearrangement, the post-replication and mitotic nucleosome positioning activity of CTCF is not unique: Esrrb binding regions are also characterized by persistent nucleosome positioning. Therefore, selected TFs such as CTCF and Esrrb act as resilient TFs governing the inheritance of nucleosome positioning at regulatory regions throughout the cell-cycle.
+The access of Transcription Factors (TFs) to their cognate DNA binding motifs requires a precise control over nucleosome positioning. This is especially important following DNA replication and during mitosis, both resulting in profound changes in nucleosome organization over TF binding regions. Using mouse Embryonic Stem (ES) cells, we show that the TF CTCF displaces nucleosomes from its binding site and locally organizes large and phased nucleosomal arrays, not only in interphase steady-state but also immediately after replication and during mitosis. Correlative analyses suggest this is associated with fast gene reactivation following replication and mitosis. While regions bound by other TFs (Oct4/Sox2), display major rearrangement, the post-replication and mitotic nucleosome positioning activity of CTCF is not unique: Esrrb binding regions are also characterized by persistent nucleosome positioning. Therefore, selected TFs such as CTCF and Esrrb act as resilient TFs governing the inheritance of nucleosome positioning at regulatory regions throughout the cell-cycle.
 
 ## Introduction
 
@@ -40,11 +40,19 @@ The incomplete correlations that are currently available suggest a model in whic
 
 ## Results
 
-## CTCF binds at highly ordered nucleosome arrays in interphase
+### CTCF binds at highly ordered nucleosome arrays in interphase
 
 CTCF binding has been previously shown to take place over large and phased nucleosomal arrays displaying a prominent NDR (Fu et al., 2008; Teif et al., 2014; Barisic et al., 2019; Wiechens et al., 2016). Therefore, we established the repertoire of CTCF binding regions in ES cells (cultured in serum and LIF) by Chromatin Immunoprecipitation followed by sequencing (ChIP-seq; Figure 1A; top panel; Supplementary file 1). We identified 52,129 regions displaying robust peaks that significantly overlap with previous studies (Nora et al., 2017; Davis et al., 2018; Pękowska et al., 2018) (Figure 1—figure supplement 1A; Supplementary file 2). At these regions, we observed that the aggregate of CTCF motifs directly correlates with CTCF occupancy (Figure 1—figure supplement 1B), indicating that the presence of its cognate binding sequence drives CTCF recruitment. Next, we used Microccocal Nuclease digestion (MNase-seq), histone H3 ChIP-seq following MNase digestion and Assay for Transposase Accessible Chromatin (ATAC-seq) to profile nucleosomes genome-wide (Festuccia et al., 2019). At individual CTCF binding regions, we observed highly organized nucleosome arrays, particularly over large CTCF peaks (Figure 1A; bottom panels). To obtain a global picture of how nucleosomes are organized around CTCF binding regions, we generated V-plots (Kent et al., 2011; Henikoff et al., 2011) centered on the best CTCF motif of each binding region. We observed a very well defined NOA/NDR/NOA structure surrounding CTCF motifs (Figure 1B and Figure 1—figure supplement 1C). CTCF binding footprints, identified as small MNase (<100 bp) and ATAC (<150 bp) fragments, were also detected within the NDR except upon H3 ChIP (Figure 1B and Figure 1—figure supplement 1C). These observations indicate that CTCF binding at its motif is closely associated with nucleosome positioning.
 
-## CTCF binding drives local nucleosome positioning in interphase
+![Figure 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative genome snapshot (chr6:89606260–89683988; 78 kb) showing CTCF binding in blue (reads per million; RPM) and the associated NDR/NOAs in red (MPB). (B) MNase-seq (left) and MNase H3 ChIP-seq (right) V-plots (MNase fragment mid-point vs MNase fragment length) at CTCF binding sites showing +/- 1 kb surrounding CTCF motifs for fragment sizes in the range 30–250 bp. Sidebars indicate densities for fragments with midpoints (Mp) located either within 40 bp of the CTCF motif (highlighting CTCF footprints; blue), or at more than 70 bp (highlighting nucleosomal fragments; red). Top bar gives metaplots of footprints (fragment length <100 bp; blue) and nucleosomes (fragment length within 140–200 bp; red). The Y-axis represent fragment midpoints-per-billion (MPB).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Intersection between our CTCF peaks and published peaks from Nora et al. (2017), ENCFF508CKL, ENCFF347BWU (ENCODE Project Consortium, 2012; Davis et al., 2018), and (Pękowska et al., 2018) respectively. (B) Relationship between CTCF aggregate motif score (the sum of all FIMO motif scores within a peak) and CTCF interphase peak height (RPM), displayed as contour/heatmap (left) and violin plot of peak height for the quintiles of motif score. (C) V-plot of ATAC-seq data presented as in Figure 1B, except that color scale is square root normalized and it covers fragments in the range [30, 300] bp. Footprints calculated from fragment <150 bp, and nucleosome signal from fragments in [150, 250] bp.
+
+### CTCF binding drives local nucleosome positioning in interphase
 
 Next, we explored the relationships between the magnitude of CTCF binding, the presence of its cognate motif and nucleosome positioning. After ranking CTCF binding regions by their peak height, we confirmed that the aggregate of CTCF motifs is correlated with CTCF occupancy (Figure 2A). Further, as the motif score and CTCF binding diminishes, the associated MNase- and ATAC-footprints decrease (Figure 2B), providing independent validation of the direct correlation between CTCF binding and the presence of its motif. Notably, the reduction of CTCF binding across the regions correlates with a progressive loss of nucleosome order (Figure 2C), consistent with what has been previously observed (Vainshtein et al., 2017). This is particularly well illustrated by the quantitative analysis of the position of the −1 and +1 nucleosomes, which roll inwards, shrinking the NDR and resulting in increased nucleosome occupancy at the CTCF motif (Figure 2D). These observations argue that the interaction of CTCF with its cognate motif acts as a major force driving the establishment of NDRs/NOAs, as previously suggested by siRNA knock-down of CTCF (Wiechens et al., 2016). To further establish whether CTCF is readily required to maintain local NDRs/NOAs, we used an Auxin-inducible depletion strategy enabling assessment of the immediate consequences of a loss of CTCF. Hence, we exploited ES cells expressing CTCF fused to an Auxin-Inducible Degron (Nora et al., 2017) (AID; thereafter CTCF-aid). In accord with the hypomorphic behavior of this line (Nora et al., 2017), CTCF-aid displayed reduced expression (Figure 3—figure supplement 1A), bulk chromatin association (Figure 3—figure supplement 1B) and binding levels (Figure 3A) that correlated with less prominently positioned nucleosomes compared to wild-type cells (Figure 3B). Upon a short (2 hr) treatment with the Auxin analog Indole-3-Acetic Acid (IAA), CTCF-aid expression (Figure 3—figure supplement 1A), chromatin association (Figure 3—figure supplement 1B) and binding (Figure 3A) were significantly reduced. This led to a dramatic loss of NOAs, major displacements of the +/- 1 nucleosomes, and an invasion of the NDR by nucleosomes (Figure 3B,C). Since this effect was observed across different classes of functional genetic features (Figure 3D), and rapidly follows loss of CTCF, we conclude that CTCF is a major determinant of local nucleosome positioning in steady-state conditions.
 
@@ -52,23 +60,71 @@ Next, we explored the relationships between the magnitude of CTCF binding, the p
 
 **Figure 2.:** CTCF binding regions were ordered by peak height descending in 100-region bins in all panels. (A) Overlaid of the aggregate of motif scores beneath each CTCF binding region (red) and the height of the corresponding CTCF peaks (blue). (B) CTCF motif-centered heatmaps for CTCF ChIP-seq and MNase/ATAC footprints. ChIP marks the midpoint of inferred ChIP fragments; MNase marks +/- 4 bp of midpoint for 1–100 bp fragments; ATAC marks cut sites of 1–150 bp fragments shifted inwards by 4 bp. (C) Heatmaps of nucleosome-sized MNase fragment midpoints (140–200 bp). (D) Quantitative analysis of the NDR. Left; the position (in bp) of the median nucleosomal signal (140–200 bp MNase-seq fragments with midpoints within +/- 70–230 bp from the motif) for the +/- 1 nucleosome (blue and red, respectively) per bin and smoothed with Gaussian process regression (line). Right; mean depth of nucleosomal fragments (MNase H3 ChIP-seq MPB; black) with midpoints in the NDR defined as +/- 80 bp centered on the motif for each bin and then smoothed with a Gaussian process regression.
 
-## Replication alters nucleosome positioning at enhancers but not at CTCF-bound regions
+![Figure 3.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig3-v2.jpg)
+
+**Figure 3.:** (A) CTCF ChIP-seq in wild-type (E14Tg2a; WT) and CTCF-aid -/+ IAA (2 hr treatment) ES cells, presented as in Figure 2B and scaled to WT. (B) Nucleosome analysis as a function of CTCF binding. Left; heatmaps of nucleosomal fragments of MNase H3 ChIP-seq in WT and CTCF-aid -/+ IAA presented as in Figure 2C and scaled to WT. Right; nucleosomal signal (MBP) within the NDR (+/- 80 bp of motif) for WT (black) and CTCF-aid -/+IAA (blue and red, respectively), presented as in Figure 2D. (C) Split V-plot and corresponding metaplot of MNase H3 nucleosomal ChIP-seq signal presented as in Figure 1B for -IAA (left) and +IAA (right). (D) Metaplots of MNase H3 ChIP-seq for -IAA and +IAA centered at CTCF motifs of CTCF peaks intersecting with the indicated ChromHMM categories. Datapoints mark mean MPB per site at each base pair; lines represent Gaussian process regression.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Expression of CTCF-aid, which is fused in frame to GFP (Nora et al., 2017), analyzed by Western Blot in total protein extracts (A) or in the chromatin fraction (B), as well as by Imaging (C). Both in interphase (I) and in mitosis (M), CTCF-aid was efficiently degraded after 2 hr of IAA treatment. Note the hypomorphic nature of CTCF-aid line showing reduced expression in interphase and mitosis (A) and, more prominently, bulk chromatin association especially in mitotic chromatin (B). Arrowheads in (B) indicate position of CTCF-aid band.
+
+### Replication alters nucleosome positioning at enhancers but not at CTCF-bound regions
 
 During replication, TFs are evicted from their targets and the chromatin has to be reconstituted downstream of the replication fork (Ramachandran and Henikoff, 2016; Groth et al., 2007; Stewart-Morgan et al., 2019). Hence, after replication, TFs and nucleosomes have been shown to be in direct competition, a phenomenon that substantially delays the reconstitution of proper NDRs/NOAs over enhancers, as shown in Drosophila S2 cells (Ramachandran and Henikoff, 2016). Given that proteomic approaches have identified CTCF on newly synthesized chromatin (Alabert et al., 2014), we aimed at studying the consequences of replication over CTCF binding sites. To do this, we used Mapping In vivo Nascent Chromatin with EdU (MINCE-seq), a technique that enables the capture of newly synthetized nucleosomal DNA following MNase digestion (Ramachandran and Henikoff, 2016). We performed two measurements, one immediately after a short pulse of EdU (2.5 min pulse) and another 1 hr after a chase period without further EdU incorporation (Figure 4—figure supplement 1A; Supplementary file 1); these two time-points reflect the status of newly replicated (pulse) and maturing chromatin (chase). In contrast to S2 cells, which even 1 hr post-replication still display altered nucleosomal structures at enhancers (Ramachandran and Henikoff, 2016), CTCF binding regions display a remarkable nucleosomal resiliency in ES cells. Indeed, only minor changes, if any, were appreciable just after replication (Figure 4A; center panel). During the following hour, CTCF binding regions acquire a nucleosomal structure indistinguishable from the controls (Figure 4A; right panel). Given the direct role of CTCF in local nucleosome positioning (Figures 2 and 3), it is therefore likely that CTCF is capable of rapidly rebinding its sites post-replication to efficiently re-establish NDRs and NOAs. Prompted by the fast reorganization of CTCF-binding regions in ES cells, we explored the post-replication nucleosome dynamics over ES cell enhancers, centered on p300 summit. We observed an increase in nucleosome density over the NDRs and attenuated NOAs immediately after replication (Figure 4A; center panel), contrasting markedly with CTCF binding regions. One hour after replication, however, we observed that ES cell enhancers were near completely restored (Figure 4A; right panel), indicating that ES cells are more efficient than S2 cells in reconfiguring nucleosome positioning at enhancers.
 
-## Distinct post-replication nucleosome dynamics at regions bound by different TFs
+![Figure 4.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig4-v2.jpg)
+
+**Figure 4.:** (A) MINCE-seq metaplots of nucleosomal fragments at CTCF (motif centered), p300 (summit centered), Oct4/Sox2 (motif centered) and Esrrb (motif centered) at steady state (pulse and chase inputs overlaid), pulse (newly replicated chromatin; 2.5 min) and chase (maturing chromatin; 1 hr). Datapoints represent mean MPB per site at each base pair normalized to input/steady-state control. (B) Quantification of reconstitution of steady-state nucleosomal order. Top: R² between relevant pulse/chase and controls. Bottom: log10 spectral density at p=180 (nucleosome + linker) of Gaussian process squared exponential covariance function, with optimized hyperparameters.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Depiction of the main steps of our protocol, adapted from previous work (Ramachandran and Henikoff, 2016; Kliszczak et al., 2011; Sirbu et al., 2011). In ES cells we could use extremely short pulses (2.5 min) leading to around 60% of cells labeled by EdU as shown by FACS. After the pulse, the cells were washed and released in Thymidine to block the incorporation of remnant EdU. These samples were processed as indicated to generate sequencing libraries. The efficiency of the chase regarding the lack of further EdU incorporation was assessed by releasing EdU-treated cells in either regular medium or in EdU-containing medium, which lead to readily detectable increases in EdU incorporation, as shown by FACS. (B) Validation of MINCE-seq results in repli-ATAC-seq data (Stewart-Morgan et al., 2019). Boxplots show the log2 fold change of cut sites of repli-ATAC small fragment (0–100 bp) relative to median of steady state for each analyzed region (CTCF, Esrrb, Oct4/Sox2 and p300 sites). Repli-ATAC was quantified in 200 bp regions centered either on TF motifs (CTCF, Esrrb, Oct4/Sox2) or on peak summits (p300).
+
+### Distinct post-replication nucleosome dynamics at regions bound by different TFs
 
 ES cell enhancers are bound by several TFs, often in complex combinations and stoichiometries, as exemplified by regions binding Esrrb, Oct4 and Sox2 (Heurtier et al., 2019), three master TFs of pluripotency. At some of these regions nucleosome positioning is organized around the Esrrb motif, and at others, around the Oct4/Sox2 composite motif (Festuccia et al., 2019). Thus, we explored whether the dynamics of nucleosome repositioning after replication are distinct over these regions. At regions bound by Oct4/Sox2, nucleosome positioning was altered upon replication (Figure 4A). This indicates that the pioneer activity of these two factors (Soufi et al., 2015), illustrated here by the detection of a nucleosome overlapping their motif (Figure 4A), is not sufficient to rapidly reorganize nucleosomal arrays after replication. Regions organized by Esrrb, however, displayed a prominent NDR centered on the Esrrb motif, two particularly well positioned flanking nucleosomes and a persistent NOA, just after replication (Figure 4A; center panel). Strikingly, the NDR and the positioning of the +/- 1 and surrounding nucleosomes were more prominent immediately after replication than after 1 hr (Figure 4A). This suggests that following replication, Esrrb is rapidly rebound at these sites and imposes strong nucleosome positioning, which is subsequently modified by the binding of additional TFs – a phenomenon that we previously described when we compared Esrrb binding in interphase and mitosis (Festuccia et al., 2019). These observations, together with the analysis of p300-centered enhancers and CTCF binding regions, suggest that different sets of regions substantially differ in post-replication nucleosome dynamics. To obtain quantitative comparisons between these regions, we computed two parameters: the R2 coefficient revealing the similarity of the nucleosome profiles after replication with the controls (Figure 4B; top panel) and the spectral density assessing nucleosome periodicity (Figure 4B; bottom panel). Both measurements clearly revealed a comparably delayed restoration of nucleosome positioning at p300-enhancers and Oct4/Sox2 regions after replication. In contrast, Esrrb and CTCF, display, in turn, increasing capacity to reinstate NDRs/NOAs minutes after the passage of the replication fork. These differential post-replication nucleosome dynamics among TF binding regions are independently supported by our analysis of repli-ATAC data recently generated in ES cells (Figure 4—figure supplement 1B), a technique where chromatin accessibility is measured as chromatin matures after replication (Stewart-Morgan et al., 2019).
 
-## CTCF, like Esrrb, is a mitotic bookmarking factor in ES cells
+### CTCF, like Esrrb, is a mitotic bookmarking factor in ES cells
 
 Given that both Esrrb and CTCF can re-establish nucleosome positioning following replication, we then turned our attention to mitosis, where Esrrb has already been shown to bind at sites preserving NDRs/NOAs (Festuccia et al., 2016; Festuccia et al., 2019). Using MNase-seq data, we observed the typical NDR/NOA structure at CTCF binding regions in mitotic cells (Figure 5A) obtained by nocodazole shake-off with >95% purity (Festuccia et al., 2019). Therefore, we hypothesized that CTCF acts as a mitotic bookmarking factor (Shen et al., 2015; Sekiya et al., 2017; Zhang, 2019; Burke et al., 2005). Thus, we performed CTCF ChIP-seq and observed site-specific interactions in mitotic cells associated with ordered nucleosomal arrays (Figure 5B; Supplementary file 1). Using a generalized linear model, we identified 29,539 bookmarked sites (56.7%) and categorized them according to the relative sizes of interphase and mitosis peaks (Figure 5—figure supplement 1A–C; Supplementary file 2). Cohesin, a recurrent partner of CTCF in interphase (Merkenschlager and Nora, 2016), was found fully evicted from its targets in mitosis (Warren et al., 2000; Waizenegger et al., 2000) (Figure 5B and Figure 5—figure supplement 2A; Supplementary file 2), underscoring the specificity of our observation for CTCF. Notably, we observed that nearly all regions displaying robust enrichment for Cohesin in interphase are bookmarked by CTCF, even though Cohesin accumulation is not a prerequisite for CTCF bookmarking (Figure 5—figure supplement 2B,C). Moreover, the existence of high quality CTCF motifs appeared to be a better indicator of binding in mitosis than in interphase (Figure 5—figure supplement 3), suggesting that the conditions for CTCF binding are more stringent in mitosis. Our finding of CTCF bookmarking activity in ES cells contradicts recent data in human somatic cells (Oomen et al., 2019). However, our analyses in mouse somatic cell lines (NIH3T3 and C2C12) revealed no or reduced evidence of mitotic bookmarking activity by CTCF (Figure 5C and Figure 5—figure supplement 4; Supplementary file 1). Therefore, even though CTCF can decorate mitotic chromosomes globally, as revealed by microscopy in cell lines and embryos (Figure 5—figure supplement 5), this is not necessarily translated into mitotic bookmarking capacity in every cell type.
 
-## Mitotic CTCF binding preserves ordered nucleosomal arrays
+![Figure 5.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-v2.jpg)
+
+**Figure 5.:** (A) Split V-plot of MNase data at CTCF binding sites in interphase (left) and mitosis (right) presented as in Figure 3C. (B) Representative genome snapshot (chr6:89606260–89683988; 78 kb; as in Figure 1A) for CTCF ChIP-seq (RPM), MNase-seq nucleosome fragments (MPB) and Cohesin (SMC1) ChIP-seq (RPM), in interphase (blue) and mitosis (red). (C) Heatmaps of CTCF ChIP-seq signal (RPM per peak) in interphase (X-axis) and mitosis (Y-axis) for ES, C2C12 and NIH3T3 cells, at all peaks identified in ES cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Total number of sites per peak category. BM: bookmarked peaks with Mitosis >Interphase; BS: bookmarked peaks with Mitosis ≈ Interphase; BA: bookmarked peaks with Mitosis <Interphase. (B) Violin plots of peak height in interphase and mitosis for bookmarking categories. (C) Metaplot in reads per million (RPM) of CTCF ChIP-seq for each bookmarking category in interphase (blue) and mitosis (red). (D) Metaplots of nucleosomes in MNase-seq for bookmarking categories in MPB for interphase (blue) and mitosis (red).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) SMC1 ChIP-seq in interphase and mitosis at SMC1 interphase peaks centered on SMC1 summit, scaled to interphase signal. (B) Relationship between SMC1 and CTCF occupancy; left: violin plots of CTCF peak height (RPM) in interphase and mitosis for SMC1 peak height quintiles; right: contingency table of CTCF peaks with and without SMC1 against those bookmarked and lost. Fisher p-value<2.2e-16. (C) Heatmap/contour plots of mean reads per CTCF peak in interphase and mitosis for all peaks, SMC1 intersecting peaks, bookmarked peaks and lost peaks as indicated. (D) Mean displacement of +/- 1,2,3 nucleosome positions at CTCF bookmarked, SMC1 positive and SMC1 negative peaks in interphase and mitosis relative to SMC1 positive interphase peaks. Circles denote nucleosome movements < 5 bp; arrow direction, size and color describe movements > 5 bp. Numbers indicate the displacement of the +1 nucleosome.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Violin plots of maximal motif FIMO score per peak for bookmarking categories described in Figure 5—figure supplement 1. (B) Relationship between CTCF aggregate motif score (the sum of all FIMO motif scores within a peak) and CTCF peak heights in interphase and mitosis as contour/heatmap as Figure 1—figure supplement 1B. (C) Spearman correlation coefficient between interphase and mitosis peak height and a thresholded aggregate FIMO score in which all motifs less than or equal to the value on the horizontal axis were excluded. Horizontal lines indicate the Spearman correlation between the maximum scoring CTCF motif within each peak and peak height. Mitosis peak heights have a greater dependence on high scoring motifs. Interphase peak heights share the greatest correlation with the sum of all motifs, regardless of FIMO score.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** CTCF ChIP-seq in interphase and mitosis in E14Tg2a (ES cells, labeled: Tg2a), C2C12 and NIH3T3 cells at Tg2a peaks, heatmaps mark entire inferred ChIP-seq fragment and are scaled to Tg2a.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Live imaging of CTCF-aid ES cells that also carry a GFP in frame with CTCF-aid (Nora et al., 2017); coating of the mitotic chromosomes was readily detectable. (B) In contrast to other TFs that require alternative fixation approaches based on DSG or Glyoxal to capture the bulk of interactions with the mitotic chromosomes (Festuccia et al., 2019), CTCF could be crosslinked with formaldehyde and no major differences were observed with DSG or Glyoxal (not shown). In the three cell lines that we tested (ES cells, C2C12 and NIH3T3) we observed cell-to-cell heterogeneity in respect to CTCF retention during mitosis. The signal observed in C2C12 and NIH3T3 tends to be less prominent than in ES cells and more variable, with some cells exhibiting a clear chromosomal exclusion. (C) Out of 7 embryos (of which five were treated with nocodazole), we could observe 46 mitoses: 40 in the trophectoderm (TE) and six in the inner cell mass. In the TE, 37 mitoses displayed clear coating of the chromosomes by CTCF and the other 3, dimmer signal; the signal observed in six mitotic cells of the ICM was more diffused although not excluded from the chromosomes as seen for Nanog.
+
+### Mitotic CTCF binding preserves ordered nucleosomal arrays
 
 We further validated mitotic CTCF bookmarking by analyzing MNase and ATAC footprints after ranking the regions by the magnitude of mitotic binding determined by ChIP-seq (Figure 6A). Examining the association between CTCF binding and nucleosome positioning in mitosis, and in complement to the analysis in interphase (Figure 2), we found that the progressive reduction of mitotic CTCF binding correlates with a gradual loss of NDRs and NOAs (Figure 6A). Moreover, when CTCF binding regions were split as bookmarked or lost in mitosis, we could confirm that the nucleosomes are less well positioned (Figure 6B,C and Figure 5—figure supplement 1D) and exhibit clear displacements toward the motif (Figure 6C,D). Overall, this establishes that CTCF is a mitotic bookmarking TF that preserves nucleosome order during mitosis. Nevertheless, even CTCF bookmarked regions presented a strong displacement inwards of the +1 nucleosome (25 bp for +1 versus 3 bp for −1 nucleosome; Figure 6A,D) and a more moderate shift of all following nucleosomes (Figure 6D). This indicates that the constraints imposed on the nucleosomes by CTCF are slightly different in interphase and in mitosis. Since in interphase CTCF sites that do not bind Cohesin do not show this repositioning of the +1 nucleosome (Figure 5—figure supplement 2D), it cannot be solely explained by the mitotic loss of Cohesin. Additional factors therefore influence nucleosome positioning at CTCF binding regions in either interphase or mitosis. Next, we aimed at exploiting CTCF-aid ES cells to address the impact of losing mitotic CTCF bookmarking directly. We observed that the hypomorphic nature of CTCF-aid binding was amplified in mitosis; CTCF-aid was barely detectable in bulk mitotic chromatin (Figure 3—figure supplement 1B) and more specifically at regions binding CTCF in wild-type mitotic cells (Figure 6—figure supplement 1A). This global loss of mitotic bookmarking was associated with the acquisition of nucleosomal properties characteristic of regions losing mitotic CTCF binding in wild-type cells: nucleosome positioning was strongly attenuated (Figure 6C and Figure 6—figure supplement 1B); the NDRs were partially invaded by nucleosomes (Figure 6—figure supplement 1C); nucleosomes, especially upstream of the motif, shifted inwards (~55 bp upstream versus 21 bp downstream; Figure 6D and Figure 6—figure supplement 1D). These changes in nucleosome positioning were only minimally increased upon IAA treatment (Figure 6—figure supplement 1B–D), which leads to further invasion of the NDR by nucleosomes (Figure 6E). We conclude, therefore, that CTCF behaves as a canonical bookmarking factor in ES cells and actively maintains nucleosome order, mirroring our previous data on Esrrb (Festuccia et al., 2019).
 
-## CTCF binding and gene reactivation following mitosis and replication
+![Figure 6.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig6-v2.jpg)
+
+**Figure 6.:** (A) Interphase (Int.) and mitosis (Mit.) data presented as in Figure 2 for CTCF ChIP-seq; MNase/ATAC-seq footprints; MNase-seq nucleosomal signal; +/- 1 nucleosome positions and NDR signal (MNase H3 ChIP-seq). The regions are ordered by descending mitotic ChIP-seq peak height. All heatmaps are scaled to interphase. (B) Mitosis MNase V-plots for CTCF Bookmarked (top) and Lost regions (bottom), presented as in Figure 1B. (C) MNase H3 ChIP-seq metaplots at CTCF Bookmarked (top) and Lost sites (bottom) centered on CTCF motifs for wild-type interphase and mitosis (gray and black, respectively) and for mitosis CTCF-aid -/+ IAA (blue and red, respectively), normalized to WT interphase, unnormalized metaplots shown in Figure 6—figure supplement 1B. (D) Mean +/- 1,2,3 nucleosome positions relative to wild-type interphase, for datasets shown in (C), complete unnormalized datasets shown in Figure 6—figure supplement 1D. Circles denote nucleosome movements < 5 bp; arrow direction, size and color describes movements > 5 bp. (E) Nucleosome signal in NDR ([−40, 40]bp of the motif) at Bookmarked sites in mitosis CTCF-aid -/+ IAA, normalized to WT interphase; unnormalized data shown in Figure 6—figure supplement 1C.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47898/elife-47898-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) CTCF ChIP-seq in mitosis for wildtype (WT), CTCF-aid -IAA and +IAA, at CTCF bookmarked sites. All heatmaps scaled to WT interphase. Due to low signal CTCF-aid ChIP-seq marks entire inferred fragment rather than midpoint. (B) Nucleosome average profiles in MNase H3 ChIP-seq at bookmarked and lost CTCF sites in MPB for interphase and mitosis in WT and CTCF-aid +/- IAA. (C) Nucleosome signal in NDR ([−40, 40]bp of the motif, as Figure 6E) at Bookmarked sites (left) and Lost sites (right) for interphase and mitosis in WT and CTCF-aid +/- IAA. (D) Nucleosome displacement (as Figure 6D) at bookmarked and lost CTCF sites in wildtype and CTCF-aid ES cells in interphase and in mitosis.
+
+### CTCF binding and gene reactivation following mitosis and replication
 
 Gene transcription is strongly inhibited during replication and mitosis, and therefore, genes need to be reactivated in an appropriate manner following these processes. We explored two available datasets to study a potential link between CTCF binding and gene reactivation after mitosis (Teves et al., 2018) and replication (Stewart-Morgan et al., 2019). For mitosis, we focused on chromatin associated RNAs, enriched in nascent pre-mRNA, in mitotic ES cells and upon release in interphase measured by RNA-seq (Teves et al., 2018). We used k-means clustering to find 5 groups of genes displaying different reactivation dynamics, measured as the rate of recovery to the level of pre-mRNA detected in bulk asynchronous cells (Figure 7A). Next, we computed the Fisher Exact enrichment of bookmarked and lost CTCF peaks at increasing distances from the promoters of genes in the five clusters (Figure 7B). We observed that the two clusters displaying slow reactivation dynamics (Clusters 1 and 2) did not show any enrichment for CTCF binding. Contrastingly, clusters with faster dynamics (Clusters 3, 4 and 5) showed significant CTCF enrichment. While the enrichment at Cluster three was similarly low and distal for both bookmarked and lost CTCF sites, at Clusters 4 and 5 more proximal (<100 kb) CTCF bookmarked sites were specifically and prominently enriched. Cluster 5, which exhibits the fastest reactivation dynamics, was found to be particularly enriched in CTCF bookmarked sites compared to regions losing CTCF binding in mitosis. We conclude, therefore, that CTCF binding is associated with faster reactivation dynamics after mitosis, with CTCF bookmarking displaying the most robust association with gene reactivation. We next explored repli-ATAC data generated in ES cells (Stewart-Morgan et al., 2019), in an identical manner. We focused on accessibility measurements around Transcription Start Sites (TSSs) of ES cell expressed genes, which reflect binding of the pre-initiation complex of transcription. We found four clusters displaying different reactivation dynamics (Clusters 1 to 4; Figure 7C) and a further cluster showing minor changes in TSS accessibility after replication (Cluster 5; Figure 7C). Notably, only Cluster 4, which displays rapid reacquisition of accessibility, and Cluster 5, where TSSs remain accessible immediately after replication, show robust enrichments (Figure 7D). Therefore, both after replication and mitosis, the presence of CTCF binding sites correlates with the speed and efficiency of gene reactivation.
 
@@ -86,11 +142,154 @@ Several studies have thus far assessed the mitotic bookmarking capacity of CTCF,
 
 ## Materials and methods
 
-## Cell culture and mitotic preparations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>E14Tg2a</td>
+      <td></td>
+      <td></td>
+      <td>Grown in serum and LIF</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Ctcf-aid</td>
+      <td>PMID: 28525758</td>
+      <td></td>
+      <td>Grown in serum and LIF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CTCF rabbit polyclonal</td>
+      <td>Active Motif</td>
+      <td>Cat# 61311</td>
+      <td>4 µL/ChIP-seq</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMC1 rabbit polyclonal</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat# A300-055A</td>
+      <td>4 µL/ChIP-seq</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat#: ab1791</td>
+      <td>5 µg/ChIP-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 v2.1.0</td>
+      <td>(Langmead and Salzberg, 2012)</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR v2.5.0a</td>
+      <td>(Dobin et al., 2013)</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM v1.2.29</td>
+      <td>(Li and Dewey, 2011)</td>
+      <td>RRID:SCR_013027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VERSE</td>
+      <td>(Zhu, 2016)</td>
+      <td>https://github.com/qinzhu/VERSE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2 v2.0.10</td>
+      <td>(Feng et al., 2012)</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 v1.18.1</td>
+      <td>(Love et al., 2014)</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIMO v4.12.0</td>
+      <td>(Grant et al., 2011)</td>
+      <td>RRID:SCR_001783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>picard-tools v2.8.1</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools v1.9</td>
+      <td>(Li et al., 2009)</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GPy</td>
+      <td>https://github.com/SheffieldML/GPy</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Julia v0.6.4</td>
+      <td>(Bezanson et al., 2017)</td>
+      <td>https://julialang.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python v3.6.7</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R v 3.4.4</td>
+      <td>http://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and mitotic preparations
 
 ES cells (wild-type E14Tg2a and CTCF-aid derivatives) were cultured on 0.1% gelatin (SIGMA, G1890-100G) in DMEM+GlutaMax-I (Gibco, 31966–021), 10% FCS (Gibco 10270–098), 100 μM β-mercaptoethanol (Gibco, 31350–010), 1 × MEM non-essential amino acids (Gibco, 1140–035) and 10 ng/ml recombinant LIF (MILTENYI BIOTEC, 130-099-895). ES cells were passaged 1:10 every 2–3 days. NIH3T3 and C2C12 cells were cultured in DMEM + GlutaMax-I supplemented with 10% FCS. NIH3T3 and C2C12 were passaged 1:15 and 1/20, respectively, every 3 days. To obtain mitotic ES cells (>95% purity as assessed by DAPI staining and microscopy), we used a nocodazole shake-off approach, as described before (Festuccia et al., 2019). To deplete CTCF-aid in interphase, cells were treated with 0.5 mM auxin (IAA Sigma, I5148) for 2 hr; to deplete CTCF-aid in mitosis, the cells were first treated with nocodazole for 4 hr and then with nocodazole and IAA for 2 hr, after which they were harvested by shake-off. C2C12 cells were synchronized like ES cells except that slightly longer nocodazole treatment (7 hr) was required to improve the yield. NIH3T3 cells were synchronized with a triple approach. First, 1.5 × 106 cells were seeded in 150 mm dishes and grown with 2 mM thymidine for 18 hr to enrich in cells arrested at the G1/S transition. After two washes with PBS, they were released for 8 hr in regular medium before being arrested again for 17 hr with 2 mM Thymidine. After the double thymidine block the cells were washed twice with PBS and released in regular medium for 7 hr. Finally, cells were incubated with nocodazole for 6 hr and mitotic cells isolated by gentle tapping of the dishes against an immobilized surface.
 
-## MINCE-seq
+### MINCE-seq
 
 The protocol was developed based on three existing protocols (Ramachandran and Henikoff, 2016; Kliszczak et al., 2011; Sirbu et al., 2011); for the CLICK reaction we used radical-free aerobic conditions, as previously described (Presolski et al., 2011).
 
@@ -104,7 +303,7 @@ CLICK reaction and Streptavidin Pull-Down: each DNA sample (50 μl) was suppleme
 
 Library preparation and sequencing: we used 10 ng of DNA from the input samples and the whole pulled-down samples to prepare libraries as previously described (Festuccia et al., 2019). Sequencing (PE150) was performed by Novogene Co. Ltd. Only samples from experiments with non-detectable levels of DNA in control samples where biotin was replaced by DMSO during the CLICK reaction were used for library preparation.
 
-## ChIP-seq
+### ChIP-seq
 
 For interphase, 2.5 × 106 fixed cells (1% formaldehyde for 10 min followed by 5 min with 0.125 M Glycine) were resuspended in 2 ml swelling buffer (25 mM Hepes pH 7.95, 10 mM KCl, 10 mM EDTA; freshly supplemented with 1 × protease inhibitor cocktail – 04 693 116 001 PIC-Roche, and 0.5% IGEPAL), incubated for 30 min on ice, and passed 40 times in a dounce homogenizer to recover nuclei. For mitotic cells, the homogenization step was omitted. Mitotic and interphase cells were then treated in parallel to sonicate the chromatin in 300 μl of TSE150 (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH8, 150 mM NaCl; freshly supplemented with 1 × PIC) using 1.5 ml tubes (Diagenode) and a Bioruptor Pico (Diagenode; seven cycles divided into 30 s ON–30 s OFF sub-cycles at maximum power, in circulating ice-cold water). After centrifugation (30 min, full speed, 4°C), the supernatant was pre-cleared for 2 hr with 50 μl of protein G Sepharose beads (P3296-5 ML Sigma) 50% slurry, previously blocked with BSA (500 μg/ml; 5931665103 Roche) and yeast tRNA (1 μg/ml; AM7119 Invitrogen). 20 μl were set apart (input) before over-night immunoprecipitation at 4°C on a rotating wheel with 4 µl of anti-CTCF (Active Motif 61311) or 4 µl of anti-SMC1 (Bethyl Laboratories A300-055A) antibodies in 500 μl of TSE150. Protein G beads (25 μL 50% slurry) were added for 4 hr rotating on-wheel at 4°C. Beads were pelleted and washed for 15 min rotating on-wheel at 4°C with 1 ml of the following buffers: three washes with TSE150, one wash with TSE500 (as TSE150 but 500 mM NaCl), one wash with Washing buffer (10 mM Tris-HCl pH8, 0.25M LiCl, 0.5% NP-40, 0.5% Na-deoxycholate, 1 mM EDTA), and two washes with TE (10 mM Tris-HCl pH8, 1 mM EDTA). Elution was performed in 100 μl of elution buffer (1% SDS, 10 mM EDTA, 50 mM Tris-HCl pH 8) for 15 min at 65°C after vigorous vortexing. Eluates were collected after centrifugation and beads rinsed in 150 μl of TE-SDS1%. After centrifugation, the supernatant was pooled with the corresponding first eluate. For both immunoprecipitated and input chromatin, the crosslinking was reversed overnight at 65°C, followed by proteinase K treatment, phenol/chloroform extraction and ethanol precipitation.
 
@@ -112,43 +311,43 @@ H3 ChIP-seq was performed on MNase-digested chromatin using 2.5 × 106 cells fix
 
 All libraries were generated as previously described (Festuccia et al., 2019) and sequenced in the BioMics facility of the Institut Pasteur.
 
-## Western blot
+### Western blot
 
 For Western Blot analysis cell pellets corresponding to 106 cells were resuspended in 100 µl Laemmli Sample Buffer (161–0737 BIO-RAD) containing β-mercaptoethanol. Lysed pellets were boiled for 10 min at 95°C and centrifuged for 10 min at maximum speed at room temperature. Typically, 10 µl per sample were loaded on 4–15% Mini-PROTEAN TGX Stain-Free Gels (4568086 BIO-RAD) and run in 1 × SDS Running Buffer (250 mM Tris/1.92M Glycine/1% SDS) at 10-20mA using the Mini-PROTEAN Tetra System (BIO-RAD). Proteins were transferred on nitrocellulose membranes (Amersham Protran 10600003) for 1 hr (or 3 hr for CTCF) at 300mA using the wet transfer system (BIO-RAD) in 1 × Transfer Buffer (10 × 0.25M Tris/1.92M Glycine) prepared with a final concentration of 20% Ethanol. Membranes were blocked in PBST (PBS 0.1% Tween-20) 5% BSA for 1 hr at room temperature and incubated overnight at 4°C with primary antibodies diluted in PBST 5% BSA (1:5000 anti-H3 Abcam ab1791; 1:500 anti-CTCF Active Motif 61311). Excess antibodies were washed off with PBST (five washes, 5 min each) and incubated for 1 hr at room temperature in secondary antibodies HRP-conjugated diluted in PBST 5% BSA (1:10000 anti-Rabbit IgG-HRP Thermo Fisher RB230254). Membranes were washed five times, 10 min each at room temperature and incubated with PIERCE ECL2 Western Blotting Substrate (80196 Thermo Scientific) 5 min in dark. After excess reagent was removed, proteins were visualized using the BIO-RAD Chemidoc MP Imaging System and processed using the Image Lab Software (BIO-RAD).
 
-## Chromatin fractionation
+### Chromatin fractionation
 
 Ten million asynchronous or mitotic ES cells, prepared as described above, were washed in PBS1X and either fixed with Formaldehyde or directly resuspended in 200 µL of Buffer A (10 mM HEPES pH 7.9/10 mM KCl/1.5 mM MgCl2/0.34 M Sucrose/10% Glycerol/1 mM DTT), supplemented with complete protease inhibitors and 0.1% Triton X-100. Cells were incubated for 8 min on ice. After recovering the nuclei by centrifugation (1300 rpm; 4°C), the pellet was washed in Buffer A and then lysed with 100 µL of Buffer B (3 mM EDTA/0.2 mM EGTA/1 mM DTT) supplemented with complete protease inhibitors for 30 min on ice. After spinning down, the pellet (chromatin fraction) was washed in Buffer B and resuspended in 60 µL of 2x reducing Laemmli buffer supplemented with 5% Bmercaptoethanol). The samples were sonicated 10 cycles (30seg ON/30 seg off) in a Bioruptor Pico and boiled for 35 min at 95°C. After 10 min centrifugation at max speed, the samples were processed for CTCF and H3 western-blot as described above.
 
-## Imaging
+### Imaging
 
 Immunostaining of ES, C2C12 and NIH3T3 cells: cells were plated at a density of 2 × 104 on IBIDI hitreat plates coated overnight with poly-L-ornithine (0.01%; Sigma, P4957) at 4°C, washed and coated 2 hr with laminin (10 μg/ml in PBS; Millipore, CC095). Two days post-seeding, cells were washed twice with PBS, fixed for 10 min at room temperature with PBS 4% Formaldehyde (Thermo, 28908), washed twice in PBS and permeabilized with PBS/0.1% v/v Triton X-100 supplemented with 3% of donkey serum (Sigma, D9663) for 15 min at room temperature. Incubation with primary anti-CTCF (1:500; Active Motif 61311) and anti-SMC1 (1:500; Bethyl Laboratories A300-055A) antibodies were performed in PBS with 3% donkey serum. After three washes in PBS/0.1% Triton X-100, Alexa Fluor 594 AffiniPure Donkey Anti-Rabbit secondary antibodies (Jackson ImmunoResearch, 711-585-152) were applied for 2 hr at room temperature (2 μg/ml). Cells were washed three times in PBS/0.1% v/v Triton X-100, nuclei counterstained with 4',6-diamidino-2- phenylindole (DAPI; Sigma, D9542), and imaged with a LSM800 Zeiss microscope using a 64 × or 40 × oil immersion objective.
 
-## Live imaging
+#### Live imaging
 
 CTCF-aid ES cells also carry a GFP fused in frame with CTCF-Aid (Nora et al., 2017), enabling live imaging of CTCF. To do this, the cells were cultured on IBIDI plates in phenol red-free medium (Gibco, 31053–028) and incubated with 500 nM Hoechst-33342 for 20 min before imaging, which was performed at 37°C in a humidified atmosphere (7% CO2). Images were acquired with a 63 × oil immersion objective on a Zeiss AxioObserver Z1 microscope equipped with a Yokogawa CSUX1 spinning-disk confocal scanner, a Hamamatsu EMCCD ImageEM X2 camera using the Volocity acquisition software.
 
-## Immunostaining of embryos
+#### Immunostaining of embryos
 
 All experiments were conducted according to the French and European regulations on care and protection of laboratory animals (EC Directive 86/609, French Law 2001–486 issued on June 6, 2001) and were approved by the Institut Pasteur ethics committee (n° dha180008). CD1 (Charles River Laboratories, France) embryos were recovered at E3.5 (mid-blastocyst stage) and cultured for 6 hr in EmbryoMax KSOM (Millipore Bioscience, MR-121D) with or without 5 µM Nocodazole (Tocris Biotechne, 1228) to enrich for mitotic cells. Embryos were fixed for 15 min at room temperature in 4% paraformaldehyde (Euromedex, 15714), rinsed with 1 × PBS and incubated in 1 × PBS, 0.1% Triton-X100, 10% donkey serum for 30 min at RT. Embryos were then incubated with primary antibodies overnight at 4°C and with secondary antibodies for 1 hr at RT in 1 × PBS, 0.1% triton-X100, 10% donkey serum. The following antibodies were used: anti-Nanog (1:200; eBioscience 14-5761-80), anti-CTCF (1:300; Active Motif 61311), donkey anti-rat Alexa Fluor 488 (1:300; Invitrogen A21208) and donkey anti-rabbit Alexa Fluor 546 (1:300; Invitrogen A10040). Nuclei were counterstained with Hoechst 33342 (1.6µM; Sigma Aldrich 14533), and embryos were placed individually in glass bottom microwell dishes (MatTek Corporation P35G-1.5–20 C) in 1 × PBS. Fluorescent images were obtained using a confocal laser-scanning microscope (LSM800; Zeiss) with the objective Plan-apochromat 20×/NA 0.8, speed 6, pinhole one airy unit, and laser intensities suited for optical section thickness of 2 μm. Images were analyzed and processed using Fiji and Photoshop CS6 softwares. Pictures correspond to a projection of 5 confocal optical slices.
 
-## Computational methods
+### Computational methods
 
-## Data and availability
+#### Data and availability
 
 Samples are summarized in Supplementary file 1. Briefly for ChIP-seq, we sequenced 3 x Interphase and 3 x Mitosis wild-type CTCF; 2 x Interphase and 2 x Mitosis wild-type SMC1; 2 x Interphase and 2 x Mitosis CTCF in CTCF-aid for -IAA and +IAA (2 hr); 1 x interphase and 1 x mitosis of CTCF in C2C12 and NIH3T3 cells. For MINCE-seq we sequenced 2 x input and IP pairs for pulse and chase samples. Finally, MNase H3 ChIP-seq in CTCF-aid 2 x Interphase and 2 x mitosis for both -IAA and +IAA (2 hr). We previously generated wild-type MNase-seq: 3 x Interphase and 3 x Mitosis; MNase H3 ChIP-seq: 2 x Interphase and 2 x Mitosis; and ATAC-seq: 2 x Interphase and 2 x Mitosis. All previously generated datasets are described (Festuccia et al., 2019) and are available from GEO accession: GSE122589.
 
-## CTCF and SMC1 binding in interphase and in mitosis
+### CTCF and SMC1 binding in interphase and in mitosis
 
-## Data Processing
+#### Data Processing
 
 Reads were aligned with Bowtie 2 (Langmead and Salzberg, 2012) to the mm10 genome, with options ‘-k 10’. Reads were additionally filtered for those with a single discovered alignment (in Bowtie 2 ‘k’ mode this is mapping quality = 255) and an edit distance less than 4. All libraries were constructed with custom unique molecular identifier barcode as described before (Festuccia et al., 2019). Therefore, reads aligning with identical position, strand and barcode were treated as duplicates and collapsed.
 
-## Peak calling
+#### Peak calling
 
 We used a strategy previously described (Festuccia et al., 2019), where peaks were called against relevant inputs/controls for all samples using MACS2 (Feng et al., 2012) with ‘callpeak -q 0.2 g mm’. Peaks intersecting with the mm10 blacklist (ENCODE Project Consortium, 2012) were excluded along with those on chrM and chrY. To determine a set of candidate binding regions for each factor we merged all peaks in interphase and mitosis. Peaks were further filtered to have MACS2 FDR < 0.01 in both replicates in either interphase or mitosis, and a height >0.8 reads per million (RPM) in at least one sample (a height of ~16 raw reads at our mean mapped read depth of ~20 million reads).
 
-## Bookmarking analysis
+#### Bookmarking analysis
 
 We used a strategy previously described (Festuccia et al., 2019), where we take an approach similar to differential expression analysis in RNA-seq to determine the set of peaks bookmarked CTCF and SMC1. We combine the read counts for input and ChIP samples for a given TF in a single generalized linear model (GLM) aimed at assessing the difference between input and ChIP signal in both interphase and mitosis at each peak. We implement this GLM using DESeq2 (Love et al., 2014). We expect that nearly all peaks will have significant differences between input and ChIP, and that the majority of peaks will have significantly different occupancy between interphase and mitosis. Therefore, we set the size factors to the total mapped reads of each sample. We encode ChIP versus Input by a factor ChipTF and mitosis samples by a factor ChipM, and then we ran Wald tests on the model ~ChipTF + ChipM. At significance FDR < 0.05 and without independent filtering, we tested ChipTF (the fold change of interphase over input), the sum ChipTF + ChipM (the fold change of mitosis over input), and finally ChipM the difference between interphase and mitosis. To determine the set of bookmarked peaks we required that a peak had differential occupancy (ChipTF + ChipM, FDR < 0.05), that both mitosis replicates had MACS2 FDR < 0.01 with one mitosis replicate had MACS2 FDR < 10−10. Combined, this is a conservative strategy that helps ameliorate the effects of contamination from interphase cells (Festuccia et al., 2019). The significance of ChipM was further used to classify three types of bookmarking peaks with either higher enrichment in interphase (BI), in mitosis (BM), or similar in both phases (BS). This resulted in:
 
@@ -156,58 +355,58 @@ CTCF: Lost (L): 22,550, BI: 18,723, BS: 10,456, BM: 360
 
 SMC1: (L): 17,251
 
-## Visualization and normalization of ChIP-seq data
+#### Visualization and normalization of ChIP-seq data
 
 Single end read data was extended to mean fragment length (~200 bp for CTCF-aid samples and ~120 bp otherwise). For CTCF, the single base pair at the center of the inferred fragment was marked and normalized to units of reads per million (RPM), with the exception of CTCF-aid mitosis, interphase and mitosis comparison between E14Tg2a (ES cells), C2C12 and NIH3T3 cells, due to low signal in some of these samples. In these cases, the entire fragment was marked and normalized to be comparable to single base heatmaps. SMC1 heatmaps were generated by marking entire fragments. All heatmaps are ordered by descending peak height and are at resolution of 100 sites per pixel. Heatmaps color scale is linear (inferno colormap) scaled to 0.2 of wild-type interphase (or mitosis for Figure 6—figure supplement 1A) peak maximum.
 
-## Transcription Factor Motif Detection
+#### Transcription Factor Motif Detection
 
 To discover CTCF binding motifs we scanned the mm10 genome using FIMO (Grant et al., 2011) for motif MA0139.1 with parameters ‘--thresh 1e-3 --max-stored-scores 50000000’ and supplied a 0-order Markov background file describing the relative nucleotide frequencies in the mm10 assembly. Motifs were intersected with peaks. Metaplots, V-plots and heatmaps are centered on the best scoring motif within each peak.
 
-## Nucleosome positioning MNase-seq, MNase-H3-ChIP-seq, MINCE-seq
+### Nucleosome positioning MNase-seq, MNase-H3-ChIP-seq, MINCE-seq
 
-## Data Processing
+#### Data Processing
 
 Paired end reads were trimmed by aligning read pairs to discover regions of reverse complementarity surrounded by our custom adapters. Alignment and trimming were performed with the BioSequences package for Julia 0.6 (Bezanson et al., 2017). Reads were aligned to mm10 genome using Bowtie 2 (Langmead and Salzberg, 2012) with options ‘-k 10 -I 0 -X 1000 --no-discordant --no-mixed’, and filtered for reads with a single alignment mean edit distance less than four between read pairs. For all libraries with barcoded adapters, identical barcodes with identical position were collapsed.
 
-## Bias correction
+#### Bias correction
 
-In all MNase samples we estimated and corrected the MNase cutting bias. We use our previously applied approach (Festuccia et al., 2019), which is a simplified version of seqOutBias (Martins et al., 2018). We evaluated the relative rates of occurrence of the k-mer at the end of each read and the total occurrence of that k-mer in the genome. Specifically, we took the two 6-mers lying over the end coordinates of each read, such that each 6-mer was composed of two 3-mers, one lying within the read and one lying outside. We counted total k-mers in the genome using the BioSequences package in Julia 0.6 (Bezanson et al., 2017). To assess an appropriate correction, we averaged the k-mers at the end of each read in a position weight matrix (PWM), we found the left PWM to be approximately equal to the reverse complement of the right PWM, and so we calculated a correction based on the left k-mer and the reverse complement of the right k-mer. If γi is the rate of occurrence of k-mer ki in the genome, ρi is the rate of occurrence of the same k-mer at MNase cutsites, and kL is the left k-mer and kR† is the reverse complement of the right k-mer, then in all analysis each fragment is weighted by: ρLρR†/γLγR†. We employed a pseudocount of 100 in calculating k-mer rates.
+In all MNase samples we estimated and corrected the MNase cutting bias. We use our previously applied approach (Festuccia et al., 2019), which is a simplified version of seqOutBias (Martins et al., 2018). We evaluated the relative rates of occurrence of the k-mer at the end of each read and the total occurrence of that k-mer in the genome. Specifically, we took the two 6-mers lying over the end coordinates of each read, such that each 6-mer was composed of two 3-mers, one lying within the read and one lying outside. We counted total k-mers in the genome using the BioSequences package in Julia 0.6 (Bezanson et al., 2017). To assess an appropriate correction, we averaged the k-mers at the end of each read in a position weight matrix (PWM), we found the left PWM to be approximately equal to the reverse complement of the right PWM, and so we calculated a correction based on the left k-mer and the reverse complement of the right k-mer. If $\gamma_{i}$ is the rate of occurrence of k-mer $k_{i}$ in the genome, $ρ_{i}$ is the rate of occurrence of the same k-mer at MNase cutsites, and $k_{L}$ is the left k-mer and $k_{R^{†}}$ is the reverse complement of the right k-mer, then in all analysis each fragment is weighted by: $\sqrt{ρ_{L}ρ_{R^{†}}/\gamma_{L}\gamma_{R^{†}}}$. We employed a pseudocount of 100 in calculating k-mer rates.
 
-## MNase fragment size selection
+#### MNase fragment size selection
 
 We employed V-plots (Figures 1B, 3C, 5A and 6B) over features to conservatively and robustly select fragment windows for footprinting and evaluating nucleosome signal. For MNase samples, we selected fragments less than 100 bp for footprints and fragments in the interval [140, 200]bp for nucleosomes. For MINCE-seq libraries which exhibited a different fragment size distribution we used fragments in the interval [120, 200] bp for nucleosomes.
 
-## Nucleosome normalization
+#### Nucleosome normalization
 
 For wild-type analysis we calculated the rate of mid-points of nucleosomal size fragments per billion (mid-points per billion - MPB) at each base pair per site for heatmaps and single loci, and averaged over all sites for metaplots and V-plots. For MINCE-seq and CTCF-aid MNase H3 ChIP-seq which exhibited more variation in fragment size distributions we calculated the MPB relative to total nucleosomal size fragments. To focus on differences of nucleosomal organization in MINCE-seq, we normalized total nucleosomal fragments within [−1 kb, +1 kb] of the center of each feature in pulse and chase to be equal to the relevant input. Similarly, for CTCF-aid samples we normalized total nucleosomes per feature in +IAA to be equal to -IAA, and in (Figure 6C,E) we further normalized to total wild-type interphase nucleosomes.
 
-## Nucleosome visualization
+#### Nucleosome visualization
 
 All heatmaps mark the midpoint of nucleosomal sizes MNase or MNase-H3 nucleosomal fragments in MPB, displayed at 100-site per pixel resolution with inferno colormap scaled to wild-type interphase MNase or MNase H3 maximum as appropriate. Metaplots are calculated at base pair resolution by the mean MPB per base pair per site surrounding each feature (visualized as the point clouds in Figures 3D, 4A and 6C); we then apply Gaussian process regression to smooth and model nucleosome positions as described below.
 
-## Nucleosome positioning regression
+#### Nucleosome positioning regression
 
-To assess the statistics of the mean nucleosome signal over a set of regions we employed Gaussian process regression (Rasmussen and Williams, 2006) on MNase and MNase H3 metaplots. We used a squared exponential covariance function and selected hyper-parameters for signal variance, length scale and noise variance, optimized on [-500, 500] bp interval surrounding the central point of each feature. For all but CTCF-aid data, this contains the signal of primary significance and importantly the covariances are relatively stationary over this region as compared to outside where length and noise scales change as the data loses coherence. For CTCF-aid +IAA interphase and +/- IAA mitosis data the nucleosomes roll inwards over the region of maximum MNase-cutting bias (visible as V in V-plot Figure 3C), causing an artificial break in the +/-1 nucleosomes with altered covariance. Therefore, we optimized hyperparameters on the union [-500, -100] U [100, 500] bp. We then use these optimized hyperparameters to predict over the full region. We selected hyperparameters by sparse Gaussian process regression employing a variational approximation to the marginal likelihood (as offered by https://github.com/SheffieldML/GPy) (Titsias, 2009), with an initial inducing inputs every 10bp. To account for the overdispersed count-data nature of the nucleosome fragment mid-points, we employ a log transform to stabilize variance and then assume a Gaussian likelihood for Gaussian process regression. We transform the total midpoints mi at site i data by: yi=log⁡αmi+β, we select α=103 and β=1. We make predictions and invert the transform, m^i=(ey^i−β)/α where y^i is the Gaussian process mean, thus m^i reflects the median of the transformed random variable and we plot this median.
+To assess the statistics of the mean nucleosome signal over a set of regions we employed Gaussian process regression (Rasmussen and Williams, 2006) on MNase and MNase H3 metaplots. We used a squared exponential covariance function and selected hyper-parameters for signal variance, length scale and noise variance, optimized on [-500, 500] bp interval surrounding the central point of each feature. For all but CTCF-aid data, this contains the signal of primary significance and importantly the covariances are relatively stationary over this region as compared to outside where length and noise scales change as the data loses coherence. For CTCF-aid +IAA interphase and +/- IAA mitosis data the nucleosomes roll inwards over the region of maximum MNase-cutting bias (visible as V in V-plot Figure 3C), causing an artificial break in the +/-1 nucleosomes with altered covariance. Therefore, we optimized hyperparameters on the union [-500, -100] U [100, 500] bp. We then use these optimized hyperparameters to predict over the full region. We selected hyperparameters by sparse Gaussian process regression employing a variational approximation to the marginal likelihood (as offered by https://github.com/SheffieldML/GPy) (Titsias, 2009), with an initial inducing inputs every 10bp. To account for the overdispersed count-data nature of the nucleosome fragment mid-points, we employ a log transform to stabilize variance and then assume a Gaussian likelihood for Gaussian process regression. We transform the total midpoints $m_{i}$ at site $i$ data by: $y_{i}=log⁡\alpham_{i}+\beta$, we select $\alpha=10^{3}$ and $\beta=1$. We make predictions and invert the transform, $m^_{i}=(e^{y^_{i}}−\beta)/\alpha$ where $y^_{i}$ is the Gaussian process mean, thus $m^_{i}$ reflects the median of the transformed random variable and we plot this median.
 
-## Nucleosome positioning
+#### Nucleosome positioning
 
-To assess the position of the +/- 1 nucleosomes and their dependence on CTCF occupancy, we took the nucleosome fragment midpoints in [-230, -70] bp for the -1 nucleosome and [70, 230] bp relative to CTCF motif center in 100 site bins descending with CTCF peak size. For each bin we evaluated the median of the empirical cumulative density function within each region. If mij is the total number of nucleosome fragment midpoints at base i in site j, we calculate F^j(i)=(∑k≤imkj)/(∑kmkj), and take the median as the smallest i such that F^j(i)≥0.5. We then smooth the medians per 100-site bins by Gaussian process regression. To asses nucleosome positioning over a NOA averaged over a set of sites we call the maxima of the Gaussian process median described above.
+To assess the position of the +/- 1 nucleosomes and their dependence on CTCF occupancy, we took the nucleosome fragment midpoints in [-230, -70] bp for the -1 nucleosome and [70, 230] bp relative to CTCF motif center in 100 site bins descending with CTCF peak size. For each bin we evaluated the median of the empirical cumulative density function within each region. If $m_{ij}$ is the total number of nucleosome fragment midpoints at base $i$ in site $j$, we calculate $F^_{j}(i)=(\sumk\leqim_{kj})/(\sumkm_{kj})$, and take the median as the smallest $i$ such that $F^_{j}(i)\geq0.5$. We then smooth the medians per 100-site bins by Gaussian process regression. To asses nucleosome positioning over a NOA averaged over a set of sites we call the maxima of the Gaussian process median described above.
 
-## Nucleosome spectral density
+#### Nucleosome spectral density
 
-To assess nucleosome periodicity we report the spectral density ( Figure 4B) of the covariance function with optimized hyperparameters. For the squared exponential kernel, frequency s and lengthscale l this is given by Rasmussen and Williams (2006): Ss,l=2πl2exp⁡2π2s2l2, we evaluate spectral density at period p = 180, s = 1/180 which corresponds to nucleosome plus linker.
+To assess nucleosome periodicity we report the spectral density ( Figure 4B) of the covariance function with optimized hyperparameters. For the squared exponential kernel, frequency $s$ and lengthscale $l$ this is given by Rasmussen and Williams (2006): $Ss,l=\sqrt{2\pil^{2}}exp⁡2\pi^{2}s^{2}l^{2}$, we evaluate spectral density at period p = 180, s = 1/180 which corresponds to nucleosome plus linker.
 
-## Chromatin accessibility in interphase and in mitosis
+### Chromatin accessibility in interphase and in mitosis
 
 Paired end reads were trimmed by aligning read pairs to discover regions of reverse complementarity surrounded by Nextera sequencing adapters for ATAC-seq. Alignment and trimming was performed with the BioSequences package for Julia 0.6 (Bezanson et al., 2017). Reads were aligned to mm10 genome using Bowtie 2 (Langmead and Salzberg, 2012) with options ‘-k 10 -I 0 -X 1000 --no-discordant --no-mixed’, and filtered for reads with a single alignment mean edit distance less than four between read pairs. To generate heatmaps, the two end points (cut sites) of fragments in the 0–100 bp range, shifted inward by +/- 4 bp as recommended (Buenrostro et al., 2013) and piled at base pair resolution. Heatmaps are visualized at a resolution of 100 sites per pixel using inferno colormap scaled to 0.5 maximum interphase signal.
 
-## Genomic features
+### Genomic features
 
 All heatmaps are metaplots are centered on CTCF maximal motifs (Supplementary file 2); SMC1 summits (Supplementary file 2); Esrrb motifs (Figure 4A) for Esrrb bookmarked regions were Esrrb dictates nucleosomal organization as previously defined (Festuccia et al., 2019); Oct4/Sox2 composite motifs (Figure 4A) at Oct4 and Sox2 interphase binding regions as defined (Festuccia et al., 2019); P300 binding regions centered of summits derived from the Encode portal (ENCODE Project Consortium, 2012; Davis et al., 2018), experiment identifier: ENCSR000CCD, file: ENCFF179FJG. We further restricted P300 binding regions by ChromHMM ES enhancers (Ernst and Kellis, 2012) (https://github.com/guifengwei/ChromHMM_mESC_mm1) (Pintacuda et al., 2017). We retain p300 binding regions that intersected as regions annotated as ‘Enhancer’, ‘Strong Enhancer’ or ‘Weak/Poised Enhancer’ and no other ChromHMM categories. To asses CTCF binding at different chromatin states (Figure 3D) we used the same ChromHMM data and selected insulators, the enhancer set described above, active promoters and active gene bodies (‘Transcription Elongation’).
 
-## Post-mitotic reactivation - Chromatin associated RNA-seq
+### Post-mitotic reactivation - Chromatin associated RNA-seq
 
-Chromatin associated RNA-seq reads were taken from GSE109964 (Teves et al., 2018) and aligned to an index comprising the mm10 genome and the ERCC spikes, using STAR (Dobin et al., 2013) as part of the RSEM-STAR pipeline (Li and Dewey, 2011) with additional options '--seed 1618 --star-output-genome-bam --calc-pme --calc-ci --estimate-rspd'. To focus on pre-mRNA signal STAR genome bam files were further quantified to count intronic reads. First duplicates were removed using Picard (https://broadinstitute.github.io/picard/) MarkDuplicates with options "TAGGING_POLICY=All ASO=coordinate READ_NAME_REGEX=null". Reads arising unambiguously from spliced mRNAs or unspliced pre-mRNAs were counted using VERSE (Zhu, 2016), we generated a custom gtf file with additional with the feature field transcript entries marking the extent of each isoform in the Ensembl (Zerbino et al., 2018) 93 release with ERCC spikes added. VERSE was run in strand specific mode with options '-s 2 --ignoreDup --singleEnd --multithreadDecompress -T 12 -z 2 -t 'exon;transcript'. To normalize by ERCC spikes we took a strategy that reduces spike-in technical noise (Owens et al., 2016), we first normalized for sequencing depth by the total exonic and transcript reads per library to a mean depth of 15 million reads, we then averaged depth normalized RNA spikes between biological replicates and calculated and applied a correction factor per biological condition. If sCj is the total depth normalized exonic counts of all spikes in condition C sample j, we calculate the average spike per condition sC- and σC=∑csc-/nsC- where n is the total number of conditions. We then correct the depth normalised transcript (intronic) count by the spikes, for gene i in sample Cj as g^iCj=σCgiCj. Genes were filtered for those in which all replicates in at least two conditions had a spike-corrected depth normalized transcript count of greater than 10, and whose interphase mean spike corrected RPKM was greater than 2/15. RPKMs were calculated by the normalizing counts by the total number of non-exonic bases per transcript model. This resulted in 13,233 filtered genes. To determine the groups of genes with differing reactivation behavior we used k-means clustering as offered by the Clustering package of Julia (Bezanson et al., 2017). We normalized spike corrected mean counts of mitosis, 30 min release and 60 min release to interphase as log2 fold changes. We clustered with 2≤k≤20, and compared cluster assignments for k to k+1 we found the Rand Index (Rand, 1971), defined as the proportion of pairs of genes assigned to the equivalent clusters over the total numbers of pairs exceeded 0.85 for k≥5 and we selected k=5. To determine enrichments of CTCF bookmarked and lost peaks in proximity to these clusters, we calculated Fisher Exact test p-values for the genes of a given cluster within xbp of a CTCF peak to a background of all genes clustered within xbp of a CTCF peak, for x in [1, 1e+6] bp.
+Chromatin associated RNA-seq reads were taken from GSE109964 (Teves et al., 2018) and aligned to an index comprising the mm10 genome and the ERCC spikes, using STAR (Dobin et al., 2013) as part of the RSEM-STAR pipeline (Li and Dewey, 2011) with additional options '--seed 1618 --star-output-genome-bam --calc-pme --calc-ci --estimate-rspd'. To focus on pre-mRNA signal STAR genome bam files were further quantified to count intronic reads. First duplicates were removed using Picard (https://broadinstitute.github.io/picard/) MarkDuplicates with options "TAGGING_POLICY=All ASO=coordinate READ_NAME_REGEX=null". Reads arising unambiguously from spliced mRNAs or unspliced pre-mRNAs were counted using VERSE (Zhu, 2016), we generated a custom gtf file with additional with the feature field transcript entries marking the extent of each isoform in the Ensembl (Zerbino et al., 2018) 93 release with ERCC spikes added. VERSE was run in strand specific mode with options '-s 2 --ignoreDup --singleEnd --multithreadDecompress -T 12 -z 2 -t 'exon;transcript'. To normalize by ERCC spikes we took a strategy that reduces spike-in technical noise (Owens et al., 2016), we first normalized for sequencing depth by the total exonic and transcript reads per library to a mean depth of 15 million reads, we then averaged depth normalized RNA spikes between biological replicates and calculated and applied a correction factor per biological condition. If $s_{C_{j}}$ is the total depth normalized exonic counts of all spikes in condition $C$ sample $j$, we calculate the average spike per condition $s_{C}-$ and $\sigma_{C}=\sum_{c}s_{c}-/ns_{C}-$ where $n$ is the total number of conditions. We then correct the depth normalised transcript (intronic) count by the spikes, for gene $i$ in sample $C_{j}$ as $g^_{iC_{j}}=\sigma_{C}g_{iC_{j}}$. Genes were filtered for those in which all replicates in at least two conditions had a spike-corrected depth normalized transcript count of greater than 10, and whose interphase mean spike corrected RPKM was greater than 2/15. RPKMs were calculated by the normalizing counts by the total number of non-exonic bases per transcript model. This resulted in 13,233 filtered genes. To determine the groups of genes with differing reactivation behavior we used k-means clustering as offered by the Clustering package of Julia (Bezanson et al., 2017). We normalized spike corrected mean counts of mitosis, 30 min release and 60 min release to interphase as log2 fold changes. We clustered with $2\leqk\leq20$, and compared cluster assignments for $k$ to $k+1$ we found the Rand Index (Rand, 1971), defined as the proportion of pairs of genes assigned to the equivalent clusters over the total numbers of pairs exceeded 0.85 for $k\geq5$ and we selected $k=5$. To determine enrichments of CTCF bookmarked and lost peaks in proximity to these clusters, we calculated Fisher Exact test p-values for the genes of a given cluster within xbp of a CTCF peak to a background of all genes clustered within xbp of a CTCF peak, for x in [1, 1e+6] bp.
 
 Post-replication reactivation - repli-ATAC-seq repli-ATAC-seq reads were taken from GSE128643 (Stewart-Morgan et al., 2019). Paired end reads were trimmed by aligning read pairs to discover regions of reverse complementarity surrounded by Nextera sequencing adapters for ATAC-seq. Alignment and trimming was performed with the BioSequences package for Julia 0.6 (Bezanson et al., 2017). Reads were aligned to mm10 genome using Bowtie 2 (Langmead and Salzberg, 2012) with options ‘-k 10 -I 0 -X 1000 --no-discordant --no-mixed’, and filtered for reads with a single alignment mean edit distance less than four between read pairs. For comparison to MINCE-seq we quantified the total number of cutsites from 0 to 100 bp repli-ATAC-seq fragments normalized to total 0–100 bp fragments per library, falling within +/- 100 bp of CTCF maximal motif in CTCF peaks, Esrrb maximal motif in Esrrb Peaks, Oct4/Sox2 maximal motif in Oct4/Sox2 peaks and the summit of p300 peaks. To determine groups with differing post-replication reactivation dynamics we took total cutsites of 0–100 bp repli-ATAC-seq fragments, normalized to total 0–100 bp fragments, within [−200, 0] bp of active promoters as determined by chromHMM ES cell data (Pintacuda et al., 2017), as used in Figure 3D. We filtered for promoters with normalized total accessibility over the [−200, 0]bp region of 0.15 in all samples and >0.5 in steady state. We employed a strategy identical to our analysis of post-mitotic gene reactivation. We normalized, nascent (Pulse), 30 min, 60 min and 120 min chase to steady state as log2 fold changes and clustered with k-means clustering. Similarly, we selected k = 5 as the first k for which the Rand Index exceeded 0.85 (see previous section). To determine enrichments of CTCF peaks in proximity to these clusters, we calculated Fisher Exact test p-values for the genes of a given cluster within xbp of a CTCF peak to a background of all genes clustered within xbp of a CTCF peak, for x in [1, 1e+6] bp.

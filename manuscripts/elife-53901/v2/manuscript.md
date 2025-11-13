@@ -34,7 +34,7 @@
 
 ## Abstract
 
-Voltage-gated ion channels feature voltage sensor domains (VSDs) that exist in three distinct conformations during activation: resting, intermediate, and activated. Experimental determination of the structure of a potassium channel VSD in the intermediate state has previously proven elusive. Here, we report and validate the experimental three-dimensional structure of the human KCNQ1 voltage-gated potassium channel VSD in the intermediate state. We also used mutagenesis and electrophysiology in Xenopus laevis oocytes to functionally map the determinants of S4 helix motion during voltage-dependent transition from the intermediate to the activated state. Finally, the physiological relevance of the intermediate state KCNQ1 conductance is demonstrated using voltage-clamp fluorometry. This work illuminates the structure of the VSD intermediate state and demonstrates that intermediate state conductivity contributes to the unusual versatility of KCNQ1, which can function either as the slow delayed rectifier current (I Ks ) of the cardiac action potential or as a constitutively active epithelial leak current.
+Voltage-gated ion channels feature voltage sensor domains (VSDs) that exist in three distinct conformations during activation: resting, intermediate, and activated. Experimental determination of the structure of a potassium channel VSD in the intermediate state has previously proven elusive. Here, we report and validate the experimental three-dimensional structure of the human KCNQ1 voltage-gated potassium channel VSD in the intermediate state. We also used mutagenesis and electrophysiology in Xenopus laevisoocytes to functionally map the determinants of S4 helix motion during voltage-dependent transition from the intermediate to the activated state. Finally, the physiological relevance of the intermediate state KCNQ1 conductance is demonstrated using voltage-clamp fluorometry. This work illuminates the structure of the VSD intermediate state and demonstrates that intermediate state conductivity contributes to the unusual versatility of KCNQ1, which can function either as the slow delayed rectifier current (IKs) of the cardiac action potential or as a constitutively active epithelial leak current.
 
 ## Introduction
 
@@ -50,15 +50,207 @@ The intermediate conductance of KCNQ1 channels offers an opportunity to overcome
 
 ## Results
 
-## NMR structure of the KCNQ1 voltage sensor domain
+### NMR structure of the KCNQ1 voltage sensor domain
 
 It has long been known that voltage sensor domains fold autonomously, as reflected by the fact that voltage-gated proton channels are single domain monomeric VSDs (DeCoursey et al., 2016; Ramsey et al., 2006; Sasaki et al., 2006) and also by studies showing that VSDs excised from KV channels or other voltage-regulated proteins fold independently and yield experimental 3D structures that are consistent with their conformations in the context of intact channels (Li et al., 2014b; Jiang et al., 2003). Indeed, solution nuclear magnetic resonance (NMR) methods have previously been used to determine the activated state structure of the VSD of the KvAP channel from a hyperthermophilic microorganism (Shenkarev et al., 2010; Butterwick and MacKinnon, 2010). The NMR-determined structure of the human voltage-gated proton channel HV1 was also recently reported (Bayrhuber et al., 2019).
 
 Structural studies of the isolated human KCNQ1 VSD spanning from the S0 segment preceding the S1-S4 transmembrane domain through the middle of the S4-S5 link were undertaken using solution NMR spectroscopy of the protein under conditions where it is solubilized in detergent micelles composed of a lipid-like detergent. Screening of suitable model membrane conditions for solution NMR of the isolated human KCNQ1 VSD was previously described and led to the conclusion that, among the various model membrane conditions tested, micelles formed by lyso-myristoylphosphatidylglycerol (LMPG) or lyso-palmitoylphosphatidylglycerol (LPPG) yielded NMR spectra of superior quality (Peng et al., 2014). A similar result was recently reported for preliminary NMR studies of the isolated Shaker channel VSD (Chen et al., 2019). The lysophospholipids are among the most phospholipid-like detergents available and are known to be generally mild and non-denaturing (Koehler et al., 2010; Krueger-Koplin et al., 2004). We conducted the studies of this work in LMPG rather than LPPG micelles (see NMR spectra in Figure 1) because a recent study indicated that the wild type KCNQ1 VSD adopts a stable fold in this medium (Huang et al., 2018). This was further supported in the present work by the fact that paramagnetic relaxation enhancements (PREs) of spin-labeled VSD samples revealed a transmembrane topology consistent with the voltage sensor fold (Figure 1—figure supplement 1). We therefore proceeded with structural studies of the human KCNQ1 VSD in LMPG micelle conditions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig1-v2.jpg)
+
+**Figure 1.:** (A) 1H-15N TROSY-HSQC spectrum recorded at 900 MHz of 2H,13C,15N-Q1-VSD in LMPG micelles. Backbone amide peaks for 140 out of 147 non-proline residues (95%) have been assigned. Only a single set of peaks is observed. (B) 1H-13C HSQC methyl optimized spectrum recorded at 900 MHz of 13C,15N-Q1-VSD in perdeuterated LMPG micelles. Methyl groups for 58 out of 68 (85%) residues were assigned (Ala 10 of10, Thr 6 of 8, Ile 9 of 11, Val 18 of 22, Leu 15 of 17). In addition to the presence of a very limited number of unassigned peaks from the VSD in this spectrum other unassigned peaks likely derive from natural abundance 13C in residually protonated LMPG and also from the fully protonated buffer components TCEP and MES. The chemical shift assignments illustrated for panels A and B shift have been deposited in BioMagResBank (BMRB ID 30517).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The residue positions of the spin-labeled cysteines for each sample are : (A) 144-SL (B) 155-SL (C) 214-SL (D) 224-Sl (E) 121-SL (F) 177-Sl (G) 180-SL (H) 238-SL.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The chemical shift data for the KCNQ1 VSD been deposited in BioMagResBank (BMRB ID 30517).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Example strip plots showing long-range methyl-methyl and methyl-backbone Hα proton NOEs (red arrows) taken from the methyl-optimized 3D 13C-edited NOESY recorded on a 13C,15N-labeled sample in deuterated LMPG. The chemical shift assignments illustrated in this figure have been deposited in BioMagResBank (BMRB ID 30517).
+
 The backbone amide 1H, 13C, and 15N resonances and also the side chain methyl peaks of KCNQ1 were assigned using 3D NMR methods (see Figure 1 and Materials and methods). We then collected a series of distinct classes of NMR restraints as summarized in Table 1: backbone torsion angles based on chemical shifts (Figure 1—figure supplement 2), short- and long-range 1H-1H NOE-derived distances (Figure 1—figure supplement 3), long-range distances from PREs, and backbone 1H-15N residual dipolar couplings (RDCs). PREs involve use of single site spin-labeling to introduce spectroscopic beacons into the VSD that lead to distance-dependent peak broadening. Care was taken to verify that single cysteine mutations and subsequent spin-labeling did not disrupt the protein structure. Indeed, for several sites mutation and/or spin labeling was found to be disruptive of structure, in which cases PRE data was not acquired. While PRE-determined NMR structures have been shown to be robustly reliable (Liang et al., 2006; Gottstein et al., 2012; Battiste and Wagner, 2000; Ganguly et al., 2011), long-range NOEs were also incorporated into structure calculations to improve the precision and accuracy of the ensemble. The chemical shift, PRE, and NOE-determined ensemble was refined against measured 1H-15N backbone RDCs, confirming the structure with an independent data set. Care also was taken to ensure that no subset of the NOE data had an unduly influential impact on the final ensemble of structures (see Materials and methods).
 
+**Table 1.**
+ KCNQ1 VSD NMR structure statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structure restraints</th>
+      <th>XPLOR-NIH*</th>
+      <th>PDB 6MIE†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total NOE</td>
+      <td>958</td>
+      <td>958</td>
+    </tr>
+    <tr>
+      <td>Inter-residue:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequential ( | i - j | = 1 )</td>
+      <td>559</td>
+      <td>559</td>
+    </tr>
+    <tr>
+      <td>Medium-range ( 1 &lt; | i - j | &lt; 5 )</td>
+      <td>366</td>
+      <td>366</td>
+    </tr>
+    <tr>
+      <td>Long-range ( | i - j | ≥ 5 )</td>
+      <td>33</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Hydrogen bonds</td>
+      <td>55</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Paramagnetic relaxation enhancement</td>
+      <td>403</td>
+      <td>403</td>
+    </tr>
+    <tr>
+      <td>Dihedral angle</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ϕ</td>
+      <td>97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>φ</td>
+      <td>97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Residual dipolar couplings (DHN)</td>
+      <td>54</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Structure statistics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ensemble r.m.s.d. (residues 120–152, 160–239)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone heavy atoms (Å)</td>
+      <td>1.41</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>All heavy atoms (Å)</td>
+      <td>2.33</td>
+      <td>1.72</td>
+    </tr>
+    <tr>
+      <td>Transmembrane r.m.s.d. (residues 120–142, 160–179, 198–215, 219–239)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Backbone heavy atoms (Å)</td>
+      <td>0.87</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. from experimental restraints</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Distances (Å)</td>
+      <td>0.068 ± 0.005</td>
+      <td>0.150 ± 0.019</td>
+    </tr>
+    <tr>
+      <td>Dihedral angles (°)</td>
+      <td>1.0 ± 0.2</td>
+      <td>10.3 ± 4.2</td>
+    </tr>
+    <tr>
+      <td>Residual dipolar coupling (Hz)</td>
+      <td>0.92 ± 0.21</td>
+      <td>3.1 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d. from idealized geometry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003 ± 0.001</td>
+      <td>0.005 ± 0.001</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.44 ± 0.01</td>
+      <td>1.71 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (residues 101–152, 160-239)‡</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Most favorable (%)</td>
+      <td>89.3 ± 2.0</td>
+      <td>89.8 ± 2.8</td>
+    </tr>
+    <tr>
+      <td>Additionally allowed (%)</td>
+      <td>10.0 ± 2.2</td>
+      <td>8.8 ± 2.3</td>
+    </tr>
+    <tr>
+      <td>Generously allowed (%)</td>
+      <td>0.4 ± 0.8</td>
+      <td>0.7 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.3 ± 0.8</td>
+      <td>0.6 ± 0.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*'XPLOR-NIH’ describes the statistics for the XPLOR-NIH structure ensemble generated using experimental restraints, prior to the rMD phase of the calculations.†'MD’ describes the statistics for the structure ensemble (PDB ID: 6MIE) (see Materials and methods).‡Procheck NMR._
+
 The ensemble of KCNQ1 VSD structures determined by the NMR data and the XPLOR-NIH progam (Schwieters et al., 2006) is illustrated in Figure 2—figure supplement 1A, with structural statistics in Table 1. Because structural studies of membrane proteins in micelles sometimes are complicated by micelle-based distortion of native structure (Jensen et al., 2012; Paramonov et al., 2017; Zhou and Cross, 2013), we took extra steps to account for and correct any such distortions. Specifically, 10 members of the NMR ensemble were selected (based on the root mean squared deviation—r.m.s.d.—to the mean coordinates) for NMR data-restrained molecular dynamics (MD) in a hydrated dimyristoylphosphatidylcholine (DMPC) bilayer. After 100 nsec of restrained MD, the restraints were turned off and the MD trajectories were allowed to continue for another 190–200 ns to see if the NMR-defined structure would ‘hold’. Analysis of an ensemble of 10 centroid structures generated from the final 100 ns of the lowest energy trajectory revealed that this ensemble continued to satisfy the NMR data (Table 1). This final VSD structural ensemble is illustrated in Figure 2A (PDB ID: 6MIE). Figure 2—figure supplement 1 shows that the combined restrained/unrestrained molecular dynamics phase of structural refinement resulted in only modest changes relative to the starting XPLOR-NIH NMR conformational ensemble. We emphasize that PDB 6MIE continues to satisfy the NMR restraints (Table 1). In this final ensemble, the NMR data defines the protein fold and some side chain conformations. However, the side chain conformations for the key residues highlighted in Figure 3A were not directly restrained by any of the experimental data, but were determined by the force fields operative in the XPLOR-NIH simulated annealing protocol and in subsequent MD trajectories.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig2-v2.jpg)
+
+**Figure 2.:** (A) The human KCNQ1 VSD NMR-determined ensemble after molecular dynamics refinement in a hydrated DMPC bilayer (PDB ID 6MIE, see statistics in Table 1 and also Figure 2—figure supplement 1) (B) Cryo-EM structure of the Xenopus KCNQ1 VSD (PDB ID 5VMS) (Sun and MacKinnon, 2017). (C) Representative low energy NMR structure from PDB 6MIE in a hydrated DMPC bilayer. In panels A-C, the transmembrane helices S1, S2, S3, and S4, are colored bluish green, yellow, vermillion, and sky blue respectively. The S2-S3 linker and S0 helices are colored reddish purple and orange. The approximate position of the membrane-water interfaces is indicated by a pair of black lines in panels A and B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The ensemble is comprised of the top 15 lowest energy structures out of 150 conformations generated by NMR data-restrained XPLOR-NIH calculations (no bilayer). The transmembrane helices S1, S2, S3, and S4, are colored bluish green, yellow, vermillion, and sky blue respectively. The S2-S3 linker and S0 helices are colored orange and reddish purple. The loop between S1 (bluish green) and S2 (yellow) appears disordered due to lack of NMR-derived restraints. This does not necessarily mean this region does not adopt stable secondary structure. The approximate position of the membrane is indicated by a pair of gray lines. (B) The unrestrained molecular dynamics refined ensemble (MD carried out in an explicit hydrated DMPC bilayer) colored as in panel A (corresponding to PDB ID 6MIE containing 10 conformers). (C) The upper panel shows the total number of distance restraints per residue. For NOE-derived restraints that define a distance between two atoms in different residues, each residue receives a count of 0.5 per restraint. Long range, medium, and sequence distance restraints are colored red, black, and light gray, respectively. For PRE-derived restraints, which define the distance between a given backbone amide and the MTSL free radical of the spin labeled residue, a count of 1.0 is added to the non-labeled residue. PRE-derived restraints are colored dark gray. The lower panel plots the backbone r.m.s.d. vs. residue number for the XPLOR-NIH ensemble. The helical sections of secondary structure are indicated with colored boxes corresponding to the cartoon representation. (D) The backbone r.m.s.d. to seed starting coordinates of the transmembrane helices (red) and all residues (black) over the course of the unrestrained trajectory is shown.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig3-v2.jpg)
 
@@ -74,15 +266,23 @@ The NMR-determined human KCNQ1 VSD conformation features a short surface amphipa
 
 Positively charged amino acids are located along the transmembrane S4 helix of potassium channel VSDs and some of these charges, commonly known as ‘gating charges’, confer voltage-sensitivity to channel functions. We will refer to the gating charges as R1 through R6, numbered from the N-terminal end to the C-terminal end of the S4 segment (Figure 3D). During membrane depolarization, the S4 helix moves from its resting state outward toward the extracellular space (Glauner et al., 1999). During this movement, the gating charges successively pair with conserved acidic residues within the VSD (Papazian et al., 1995), including residues of the ‘charge transfer center’, which additionally contains an aromatic residue acting as a ‘hydrophobic plug” (Tao et al., 2010; Lacroix and Bezanilla, 2011). Critical residues that coordinate gating charge movement include the acidic residue E1 (E160 in human KCNQ1) and the charge transfer center residues E2 (E170), D202 and the aromatic plug residue F0 (F167, Figure 3). Pairwise electrostatic interactions between the positive gating charges in S4 and the negatively charged S2/S3 residues help solvate the positive S4 residues in the hydrophobic membrane interior to stabilize the VSD. In KCNQ1, electrophysiological and modeling studies suggested that the activated state of the VSD involves pairing of E1 with gating charge site R4 (R237) (Silva et al., 2009; Wu et al., 2010; Zaydman et al., 2014; Restier et al., 2008). This pairing was observed in the cryo-EM structure of the KCNQ1 VSD (Figures 3B and 4B; Sun and MacKinnon, 2017), suggesting that the VSD seen in that structure reflects the activated state. By inference, the activated state is likely stabilized by additional interactions of the charge transfer residues E2 and F0 on S2 and D202 on S3 with residue H5 (H240) (Sun and MacKinnon, 2017). On the other hand, we observed a different arrangement of S4 charge pairings with S2 residues in the NMR structure of the human KCNQ1 VSD. These differences were the consequence of S4 being translated by ~5.4 Å along the bilayer normal toward the extracellular side during the transition from the NMR structure to the cryo-EM structure (Figure 3A–C). In the NMR structure, R2 (R231) pairs with E1 (Figures 3A and 4A), which is postulated to be a crucial stabilizing interaction for the intermediate VSD state based on previous electrophysiological results (Silva et al., 2009; Wu et al., 2010; Zaydman et al., 2014). This strongly suggests that the NMR structure represents the intermediate VSD state. Additional observed interactions that likely contribute to intermediate state stabilization include interaction of R4 with charge transfer residues E2 and D202, as well as interaction of Q3 (Q234, corresponding to R3 in most other voltage-gated channels) with F0 (Figures 3A,D and 4A).
 
-## Functional validation of distinct KCNQ1 voltage sensor domain structures
+### Functional validation of distinct KCNQ1 voltage sensor domain structures
 
 To validate that the NMR structure of the VSD faithfully represents the intermediate state and that the VSD seen in the cryo-EM structure represents the activated state, we tested whether the paired-residue interactions revealed by these two structures can be demonstrated functionally. To this end, we used a double charge reversal mutagenesis strategy (Figure 5A–C). Mutation of gating charges in S4 to a negatively charged residue leads to strong electrostatic repulsion between the S2/S4 helices and consequent VSD loss of function (Wu et al., 2010; Figure 5B). However, a simultaneous positively charged mutation in S2 provides a favorable electrostatic interacting partner for the S4 mutation and re-stabilizes the VSD (Figure 5C). Importantly, the electrostatic interactions between the S2/S4 helices are only energetically favorable when the mutated charge in S4 is aligned with the paired mutation in S2 (Figure 5C). The double mutations thus arrest the VSD conformation as dictated by the S4/S2 charge reversal mutation sites, yielding constitutively opened channels (Wu et al., 2010; Zaydman et al., 2014; Papazian et al., 1995; Restier et al., 2008; Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig5-v2.jpg)
+
+**Figure 5.:** Amino acid residue nomenclature: E2 = E170, R4 = R237, F0 = F167, Q3 = Q234, and H5 = H240. Numbering corresponds to the human KCNQ1 sequence. All error bars are ± SEM. All horizontal scale bars correspond to 2 s. (A) A cartoon schematic illustrating key S2, S3, and S4 residues interactions found in the NMR and cryo-EM VSD structures. Positive and polar gating residues on S4 (R1–H5) are colored blue, negative counter charges on S2 (E1, E2) and S3 (D202) are colored red, and the hydrophobic plug on S2 (F0) is colored orange. (B) A cartoon schematic displaying how the S4 charge-reversal mutation (Q3E) disrupts VSD function. The Q3E mutation creates electrostatic repulsion with the negative counter charges (E1, E2) and leads to VSD loss of function. (C) A cartoon schematic showing how the double charge-reversal mutations Q3E/F0R bias the VSD conformation. The double mutations ensure that electrostatic interactions between S2 and S4 are only favorable when the two mutation sites are in alignment (Q3E-F0R). (D) Table detailing KCNE1 effect on the KCNQ1 pore domain associated with the intermediate or activated VSD states based on prior studies. KCNE1 suppresses the IO state current by decreasing open probability, while enhancing the AO state current, in part by increasing unitary conductance (Zaydman et al., 2014; Hou et al., 2017; Hou et al., 2019; Hou et al., 2020). (E) Representative current recordings from the KCNQ1 channel without (left) and with (right) KCNE1 co-expression. The voltage protocol is shown in the inset and applies to all exemplars in this figure. (F–H) Left: Cartoon schematic of the double-charge reversal mutation and the predicted S2-S4 registry for the mutant tested. Middle: Exemplar currents for the mutant recorded with and without KCNE1 co-expression. Right: Average steady-state current vs. voltage (IV) curves for the respective mutants in the absence or presence of KCNE1 co-expression. The inset in panel E shows the voltage protocol. n = 5 (F), 5 (G), 6 (H). Currents were collected with 10 mV interval, but examples are shown with 20 mV interval for clarity.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** F0 = F167; Q3 = Q234; R4 = R237; H5 = H240. Residue numbers correspond to human KCNQ1. All error bars are ± SEM. (A) Top: Current recordings of KCNQ1 F0R single mutant with and without KCNE1 co-expression. Bottom: Average GV relationships for KCNQ1 F0R (black, n = 3), KCNQ1 F0R + KCNE1 (dark blue, n = 5), KCNQ1 WT (gray), and KCNQ1 WT + KCNE1 (light blue). The single mutant KCNQ1 F0R exhibited dramatic left-shifted voltage-dependent activation compared to KCNQ1 WT, suggesting that the mutation destabilizes the resting state VSD. KCNE1 co-expression restored voltage-dependent activation to near WT levels and potentiated ionic current compared to the α-subunit alone, suggesting that KCNE1 partly rescues the ability of the single mutant F0R to gate normally. (B–E) Top: Current recordings of KCNQ1 F0R double mutants with and without KCNE1 co-expression. Bottom: Average GV relationships for the KCNQ1 double mutant α-subunit only (black), KCNQ1 double mutant + KCNE1 (dark blue), KCNQ1 F0R (gray), and KCNQ1 F0R + KCNE1 (light blue). All n > 3. (B) F0R/D202N featured a further left-shifted voltage-dependent activation compared to the F0R single mutant. KCNE1 co-expression greatly suppressed F0R/D202N current, suggesting that F0R/D202N favored the intermediate VSD state and IO channel state. (C) F0R/Q3E demonstrated current suppression upon KCNE1 co-expression when compared to α-subunit alone, suggesting that F0R/Q3E favored the intermediate VSD state and the IO channel state. Furthermore, the conductance-voltage (G–V) curve for the mutant KCNQ1 co-expressed with KCNE1 tracks the development of the AO state because KCNE1 suppresses IO-state current. F0R/Q3E+KCNE1 featured a right-shifted voltage-dependent activation compared to F0R single mutant, consistent with the mutant favoring the intermediate VSD state and resisting transition into the AO state. (D–E) F0R/R4E and F0R/H5E double mutants exhibited an opposite phenotype compared to F0R/Q3E. Upon KCNE1 co-expression, ionic currents for F0R/R4E and F0R/H5E were potentiated, and voltage-dependent activation was left-shifted compared to the F0R single mutant. Together, these results suggest F0R/R4E and F0R/H5E favored the activated VSD state and the AO state. Overall, the F0R/Q3E and F0R/D202N double mutants demonstrated phenotypes consistent with the mutants favoring the IO channel state; while F0R/R4E and F0R/H5E exhibited distinct and opposite phenotypes, suggesting that the latter mutants promote the AO channel state. However, the presence of voltage-dependence in these mutants represents a confounding factor, as the VSD retain voltage sensitivity. By adding the S3 D202N mutation into the F0R/Q3E and F0R/H5E mutants, this voltage-dependence was abolished (Main Figure 5), suggesting that the triple mutants highly stabilize the VSD states and that the charge transfer residue S3 D202 plays a role in maintaining the voltage-dependence of the mutants F0R/Q3E and F0R/H5E. Importantly, F0R/Q3E/D202N and F0R/H5E/D202N demonstrated qualitatively identical phenotypes compared to F0R/Q3E and F0R/H5E (Main Figure 5), but without the confounding factor of voltage-dependence. (F–J) Steady-state current recordings of KCNQ1 mutants in control ND96 solution (black), 5 μM XE991 solution (red), and 150 μM chromanol 293B solution (blue). Note that the holding potential was −20 mV as shown by the inset voltage protocols. The −20 mV holding potential yielded non-zero currents before the test pulse because the mutants were constitutively opened. Bar plots show average chromanol-sensitive current inhibition (see Materials and methods). All n > 3. Mutants F0R/D202N and F0R/Q3E demonstrated robust and characteristic IO-current inhibition by 5 μM XE991, consistent with the idea that F0R/D202N and F0R/Q3E favor the IO state. In contrast, mutants F0R, F0R/R4E, and F0R/H5E featured the characteristic AO-current insensitivity to 5 μM XE991, consistent with the hypothesis that these mutations promote the AO state. Critically, XE991 data provided consistent categorization of the F0R single and double mutants when compared to KCNE1 co-expression data (panels A-E), lending further support to the conclusion that these mutants can be classified as promoting the IO state (F0R/D202N, F0R/Q3E) or the AO state (F0R/R4E, F0R/H5E).
 
 We next looked for functional readouts to determine whether the arrested VSD conformations correspond to the intermediate or activated VSD states. We took advantage of the fact that KCNQ1 conducts current with distinct properties when its VSDs adopt either intermediate or activated states (Zaydman et al., 2014). The canonical open state associated with the activated VSD is referred to as the ‘activated-open’ (AO) state, while the distinct open state associated with the intermediate VSD is referred to as the ‘intermediate-open’ (IO) state. The AO and the IO states, and by inference the activated and intermediate VSD states, can be discriminated by two functional metrics. First, KCNQ1 co-expression with the accessory subunit KCNE1 selectively suppresses IO-state current by preventing pore opening when the VSD adopts the intermediate state (Zaydman et al., 2014). In addition, KCNE1 co-expression amplifies AO-state currents, in part by increasing single channel conductance (Zaydman et al., 2014; Hou et al., 2017), and possibly also by affecting VSD-pore coupling. Figure 5D summarizes KCNE1 regulation of the KCNQ1 IO-state and AO-state currents. These KCNE1 regulatory effects slow current activation (due to IO state suppression) and enhance current amplitude (due to AO state potentiation) of the WT KCNQ1 channels (Figure 5E; Zaydman et al., 2014). Second, the IO state is selectively inhibited by the KCNQ channel modulator XE991 compared to the AO state (Zaydman et al., 2014). Thus, current recordings in response to KCNE1 co-expression (Figure 5) and to XE991 exposure (Figure 6) allow us to test whether the S2-S4 interactions seen in the two structures correspond to the intermediate or activated VSD states.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig6-v2.jpg)
 
-**Figure 6.:** Amino acid residue nomenclature and numbering and error bars are similar as in Figure 5. (A) Table outlining 5 µM XE991 effect on KCNQ1 IO and AO state currents based on prior studies (Zaydman et al., 2014). (B) Top: Exemplar diary plots of E2R/R4E drug studies demonstrating current amplitude over time. Cells were held at −20 mV and pulsed to +40 mV for 4 s and −40 mV for 2 s every 20 s. Each point shows the steady-state current amplitude at the end of the 4 s +40 mV test pulse. Cells were recorded in ND96 solution and the top bars indicate application of 5 μM XE991 (red) and 150 μM chromanol 293B (blue). Scale bar indicates 5 min. Bottom: Current traces for the E2R/R4E mutant in control ND96 solution (black), in solution containing 5 μM XE991 (red), and in solution containing 150 μM chromanol 293B (blue). The arrows in the diary plot indicate respective traces shown. Note that because the holding potential was −20 mV and the mutant channels are constitutively open, non-zero currents were observed before the test pulse. (C) Chromanol-subtracted E2R/R4E currents under control (black) and 5 μM XE991 (red) conditions for the traces shown in panel B. The chromanol-subtracted currents were calculated by subtracting current after chromanol application (blue, panel B) from the control current (black, panel B) and the current after XE991 application (red, panel B). Percent E2R/R4E current inhibition by XE991 was calculated from the chromanol-subtracted currents using the ratio between the steady-state current amplitude under XE991 and control conditions (see Materials and methods). (D) Average percent inhibition of the E2R/R4E currents by 5 μM XE991, as quantified by the chromanol-subtracted currents (n = 6). Error bar indicates SEM and applies to all error bars in this figure. (E–J) Same as panels B-D, but showing results for KCNQ1 F0R/Q3E/D202N and F0R/H5E/D202N mutants (n = 6 for both mutants).Figure 6—source data 1.Figure 6.
+**Figure 6.:** Amino acid residue nomenclature and numbering and error bars are similar as in Figure 5. (A) Table outlining 5 µM XE991 effect on KCNQ1 IO and AO state currents based on prior studies (Zaydman et al., 2014). (B) Top: Exemplar diary plots of E2R/R4E drug studies demonstrating current amplitude over time. Cells were held at −20 mV and pulsed to +40 mV for 4 s and −40 mV for 2 s every 20 s. Each point shows the steady-state current amplitude at the end of the 4 s +40 mV test pulse. Cells were recorded in ND96 solution and the top bars indicate application of 5 μM XE991 (red) and 150 μM chromanol 293B (blue). Scale bar indicates 5 min. Bottom: Current traces for the E2R/R4E mutant in control ND96 solution (black), in solution containing 5 μM XE991 (red), and in solution containing 150 μM chromanol 293B (blue). The arrows in the diary plot indicate respective traces shown. Note that because the holding potential was −20 mV and the mutant channels are constitutively open, non-zero currents were observed before the test pulse. (C) Chromanol-subtracted E2R/R4E currents under control (black) and 5 μM XE991 (red) conditions for the traces shown in panel B. The chromanol-subtracted currents were calculated by subtracting current after chromanol application (blue, panel B) from the control current (black, panel B) and the current after XE991 application (red, panel B). Percent E2R/R4E current inhibition by XE991 was calculated from the chromanol-subtracted currents using the ratio between the steady-state current amplitude under XE991 and control conditions (see Materials and methods). (D) Average percent inhibition of the E2R/R4E currents by 5 μM XE991, as quantified by the chromanol-subtracted currents (n = 6). Error bar indicates SEM and applies to all error bars in this figure. (E–J) Same as panels B-D, but showing results for KCNQ1 F0R/Q3E/D202N and F0R/H5E/D202N mutants (n = 6 for both mutants).
 
 We generated two classes of mutants designed to promote specific interactions based on the interacting residue pairs involving S2 and S4 observed in the differing NMR and cryo-EM VSD structures (Figures 4 and 5A). The first class of mutants was derived from the NMR-structure: E170R paired with R237E (E2R/R4E), and F167R with both Q234E and D202N (F0R/Q3E/D202N). The second class of mutants was based on interacting residue pairs observed in the cryo-EM structure (Figures 4 and 5A): F167R paired with H240E and D202N (F0R/H5E/D202N). An additional charge transfer center mutation D202N (in S3) was included along with the S4/S2 double charge reversal mutations F0R/Q3E and F0R/H5E. We had expected the double mutants F0R/Q3E and F0R/H5E to arrest S2-S4 registration, thereby yielding constitutively opened channels. However, both double mutants retain some levels of voltage-dependence in activation (Figure 5—figure supplement 1), suggesting that the double mutant only modestly stabilized the VSDs in their respective states. This voltage-dependence was eliminated upon the addition of the D202N mutation (Figure 5F–H), suggesting that D202 interfered with the ability of F0R/Q3E and F0R/H5E to arrest S2-S4 registration. This result also indicates that D202 is important for interacting with S4 gating charges during activation. As shown in Figure 5F–H, our designed KCNQ1 mutants (E2R/R4E, F0R/Q3E/D202N, and F0R/H5E/D202N) yielded constitutively open channel with minimal voltage dependence, consistent with the idea that the mutations strongly stabilize the VSDs in the intermediate or activated states by arresting the S2-S4 registration. Because the mutants were designed based on the NMR and cryo-EM VSD structures, these results also indicate that the VSDs in these mutant channels were arrested in the conformations corresponding the respective VSD structures. Next, we probed whether the VSD of these mutant channels corresponded to the functional intermediate and activated states by examining whether these KCNQ1 mutant channels were in the IO or AO state (Figures 5 and 6). We note that our experiments stabilized all four VSDs of KCNQ1 in the same conformation, thus we do not consider the pore conformation in the case of asymmetrical VSD states.
 
@@ -96,11 +296,11 @@ Likewise, we found that 5 µM XE991 also significantly inhibited F0R/Q3E/D202N m
 
 Critically, data from these XE991 experiments corroborate the IO- and AO-state discrimination between VSD mutants deduced from the KCNE1 co-expression data (Figure 5). Taken together, these two sets of results (Figures 5 and 6, Figure 5—figure supplement 1) strongly suggest that E2-R4 and F0-Q3 are interactions found in the KCNQ1 VSD intermediate state, while the F0-H5 interaction is present in the activated state. These data validate that the NMR VSD structure represents a conformation that corresponds to the stable intermediate state of the VSD during voltage-dependent activation, while the VSD in the cryo-EM structure represents the activated state.
 
-## KCNQ1 VSD activation motion from the intermediate to the activated state
+### KCNQ1 VSD activation motion from the intermediate to the activated state
 
 Comparison of the two VSD structures (Figure 3C) reveals a pronounced S4 helix movement relative to the rest of the VSD upon transition from the intermediate to the activated state, with a ~ 5.4 Å translation of S4 toward the extracellular direction accompanied by unraveling of the N-terminal end of this helix, perhaps as a result of its transition into a well-hydrated extracellular environment (Figure 3C). Consequently, the S4 helix of the intermediate state is longer by two additional turns between V221 and G229, suggesting a simultaneous loss of the secondary structure in the N-terminal portion of S4 during the transition from the intermediate to activated state. Other helices, especially the extracellular half of S3, undergo only modest translations, as evident in an overlay of the two structures (Figure 3C). In both structures, the S4 charges form ion pairs with E1, E2, and D202, but with different registrations. Our functional studies demonstrated that these ion pairs provide much of the energy to stabilize the VSD in the intermediate and activated states during voltage-dependent activation (Figures 5 and 6), thereby delimiting the trajectory of VSD motions during the intermediate-to-activated state transition.
 
-## Physiological role of the intermediate state of the KCNQ1 voltage sensor
+### Physiological role of the intermediate state of the KCNQ1 voltage sensor
 
 Our study so far presents a structure of the KCNQ1 VSD and provides functional evidence that the structure represents a stable intermediate conformation along the KCNQ1 VSD activation pathway. In our functional validation, we extensively utilized the distinct KCNQ1 intermediate conductive IO state as a readout for the intermediate VSD state. However, little is known regarding the physiological role of this conductive IO state. Both this report and prior studies indicate that the auxiliary subunit KCNE1 suppresses the IO state (Zaydman et al., 2014; Figure 5). In cardiac myocytes, KCNQ1 is known to complex with KCNE1 to generate the IKs current required for cardiac action potential termination (Barhanin et al., 1996; Sanguinetti et al., 1996; Chiamvimonvat et al., 2017; Keating and Sanguinetti, 2001). The KCNQ1 IO state thus likely minimally impacts normal cardiac physiology. What role might the KCNQ1 intermediate VSD state and its associated conductive IO state play in normal physiology? To answer this question, we look beyond cardiac tissues.
 
@@ -108,7 +308,7 @@ KCNQ1 is unusual in that its functional properties vary profoundly in associatio
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53901/elife-53901-fig7-v2.jpg)
 
-**Figure 7.:** (A) Voltage-clamp fluorometry recordings for pseudo-WT (C214A/G219C/C331A) KCNQ1 (left), KCNQ1+KCNE1 (middle), and KCNQ1+KCNE3 (right). Current (black) and fluorescence (blue) were recorded with voltages from −160 mV to +100 mV in 20 mV increments and then back to −40 mV. The bottom panels are the G–V (black) and F–V (blue) relationships with F1 and F2 components (dotted lines). The F–V relationship for KCNQ1 (gray) is also shown with KCNQ1+KCNE1 and KCNQ1+KCNE3 for comparison. (B) VCF recordings for KCNQ1-F351A in the presence (blue) and absence (gray) of KCNE3. The bottom of this panel shows the G–V and F–V relationships for KCNQ1-F351A (gray) and KCNQ1-F351A+KCNE3 (blue). (C) Left: WT KCNQ1+KCNE3 currents (black) with voltages from −120 mV to +80 mV in 20 mV increments and back to −40 mV to test the tail current. The red traces are total KCNQ1+KCNE3 currents with the instantaneous current subtracted, which show typical time- and voltage-dependent activation. Right: The two steps of KCNQ1+KCNE3 voltage sensor activation, F1 and F2, are shown in blue, while transitions of the two conductive states are shown in black (GV1) and red (GV2). (D) Overlays of stabilized currents in control solutions (black traces for all channels) and after applying 5 µM XE991 for KCNQ1 (gray), KCNQ1+KCNE1 (blue), and KCNQ1+KCNE3 (red). (E) Time-dependent inhibition of 5 µM XE991 of KCNQ1 (black), KCNQ1+KCNE1 (blue), and KCNQ1+KCNE3 (red). Time-dependent inhibition was calculated by dividing the stabilized currents in solutions containing 5 µM XE991 by that of control at the same time point. X-axis is the time after the start of the +40 mV test pulse. In all cases, n ≥ 3.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Voltage-clamp fluorometry recordings for pseudo-WT (C214A/G219C/C331A) KCNQ1 (left), KCNQ1+KCNE1 (middle), and KCNQ1+KCNE3 (right). Current (black) and fluorescence (blue) were recorded with voltages from −160 mV to +100 mV in 20 mV increments and then back to −40 mV. The bottom panels are the G–V (black) and F–V (blue) relationships with F1 and F2 components (dotted lines). The F–V relationship for KCNQ1 (gray) is also shown with KCNQ1+KCNE1 and KCNQ1+KCNE3 for comparison. (B) VCF recordings for KCNQ1-F351A in the presence (blue) and absence (gray) of KCNE3. The bottom of this panel shows the G–V and F–V relationships for KCNQ1-F351A (gray) and KCNQ1-F351A+KCNE3 (blue). (C) Left: WT KCNQ1+KCNE3 currents (black) with voltages from −120 mV to +80 mV in 20 mV increments and back to −40 mV to test the tail current. The red traces are total KCNQ1+KCNE3 currents with the instantaneous current subtracted, which show typical time- and voltage-dependent activation. Right: The two steps of KCNQ1+KCNE3 voltage sensor activation, F1 and F2, are shown in blue, while transitions of the two conductive states are shown in black (GV1) and red (GV2). (D) Overlays of stabilized currents in control solutions (black traces for all channels) and after applying 5 µM XE991 for KCNQ1 (gray), KCNQ1+KCNE1 (blue), and KCNQ1+KCNE3 (red). (E) Time-dependent inhibition of 5 µM XE991 of KCNQ1 (black), KCNQ1+KCNE1 (blue), and KCNQ1+KCNE3 (red). Time-dependent inhibition was calculated by dividing the stabilized currents in solutions containing 5 µM XE991 by that of control at the same time point. X-axis is the time after the start of the +40 mV test pulse. In all cases, n ≥ 3.
 
 To examine whether the KCNQ1/KCNE3 complex conducts significant current with the IO state, we undertook voltage-clamp fluorometry (VCF) experiments. VCF tracks KCNQ1 VSD transitions by a labeled fluorophore attached to the S3-S4 linker, which changes fluorescence emission during voltage-dependent activation (Barro-Soria et al., 2014; Zaydman et al., 2014; Osteen et al., 2012; Barro-Soria et al., 2015; Barro-Soria et al., 2017; Nakajo, 2019). The KCNQ1 fluorescence-voltage (F-V) relation exhibits two components that can be well-fit by a double Boltzmann function (F1 and F2 in Figure 7A,B), which correspond to VSD sequential transitions from resting to intermediate (F1) and from intermediate to activated (F2) states (Zaydman et al., 2014; Hou et al., 2017). Selective regulation of distinct VSD transitions can be inferred from changes to F1 and F2. Comparison of the G-V relation with the F-V relation provides insight into IO vs. AO state regulation. For example, it has been shown that KCNE1 co-expression specifically causes a hyperpolarized shift in the F1 component of the F-V relation but depolarizes the G-V curve to follow the F2-V relation (Figure 7A; Barro-Soria et al., 2014; Zaydman et al., 2014; Hou et al., 2017). Our previous study indicated that this phenomenon derives from a mechanism in which KCNE1 eliminates the IO state by preventing pore opening when the VSD is in the intermediate state, such that IKs represents conductance only in the AO state (Zaydman et al., 2014; Hou et al., 2017). KCNE3 co-expression has also been demonstrated to induce a hyperpolarizing shift in the F-V relation, suggesting that KCNE3 promotes channel opening by shifting the voltage dependence of VSD activation (Barro-Soria et al., 2015; Barro-Soria et al., 2017).
 
@@ -128,7 +328,213 @@ In addition to utilizing KCNQ1’s intermediate conductance as a functional prob
 
 ## Materials and methods
 
-## Constructs, mutagenesis, and expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>KCNQ1</td>
+      <td>HUGO Gene Nomenclature Committee (HGNC)</td>
+      <td>Gene ID: 3784; HGNC:6294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>KCNE1</td>
+      <td>HUGO Gene Nomenclature Committee (HGNC)</td>
+      <td>Gene ID: 3753; HGNC:6240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>KCNE3</td>
+      <td>HUGO Gene Nomenclature Committee (HGNC)</td>
+      <td>Gene ID: 10008; HGNC:6243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>CT19 transaminase deficient strain</td>
+      <td>Dr. David Waugh, US National Cancer Institute PMID: 8914274</td>
+      <td></td>
+      <td>Used for special isotopic labeling of the KCNQ1 VSD for use in NMR studies.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta/ C43(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog number 70954</td>
+      <td>Used for uniform isotopic labeling of KCNQ1 and amino acid-specific labeling for NMR.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET16b expression plasmid encoding tagged human KCNQ1- (100-249)</td>
+      <td>PMID: 24606221</td>
+      <td></td>
+      <td>Used to express the human KCNQ1 VSD for NMR structural studies</td>
+    </tr>
+    <tr>
+      <td>Biological sample (include species here)</td>
+      <td>Xenopus oocytes (Xenopus laevis, female)</td>
+      <td>This paper</td>
+      <td>RRID:XEP_Xla</td>
+      <td>Xenopus laevis purchased from Nasco, Fort Atkinson, WI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 encoding human KCNQ1 or KCNE1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_111452</td>
+      <td>For site-directed mutagenesis</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage T7 polymerase kit</td>
+      <td>Applied Biosystems-Thermo Fisher Scientific</td>
+      <td>AM1344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>XE991</td>
+      <td>Millipore Sigma</td>
+      <td>CAS #: 122955-42-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chromanol 293B</td>
+      <td>Millipore Sigma</td>
+      <td>CAS #: 163163-23-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor488 C5 maleimide</td>
+      <td>Molecular Probes, Eugene, OR</td>
+      <td>Catalog #: A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Topspin 3.2</td>
+      <td>Bruker (Scientific Instruments Company)</td>
+      <td>RRID:SCR_014227</td>
+      <td>NMR data collection and processing.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MDD and qMDD interface</td>
+      <td>URL: mddnmr.spektrino.com/ PMID: 21161328</td>
+      <td></td>
+      <td>NMR data processing</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>NMRFAM-SPARKY</td>
+      <td>PMID: 25505092 URL: https://nmrfam.wisc.edu/nmrfam-sparky-distribution/</td>
+      <td></td>
+      <td>NMR data analysis and resonance assignments.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>TALOS-N</td>
+      <td>PMID:25502373 URL: spin.niddk.nih.gov/bax/software/TALOS-N/</td>
+      <td></td>
+      <td>Determination of secondary structure from NMR chemical shift data.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CHARMM-GUI</td>
+      <td>PMID: 25130509 URL: www.charmm-gui.org/</td>
+      <td></td>
+      <td>Preparation of starting structures of the KCNQ1 VSD in lipid bilayers for MD restrained MD simulations.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>XPLOR-NIH</td>
+      <td>PMID: 28766807 URL: https://nmr.cit.nih.gov/xplor-nih/</td>
+      <td></td>
+      <td>Structure calculations using NMR data restraints</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GPU-accelerated AMBER 16</td>
+      <td>URL: https://ambermd.org/ PMID: 16200636</td>
+      <td></td>
+      <td>Program for execution of MD simulations.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Lipid 17 AMBER</td>
+      <td>PMID: 24803855 URL: https://ambermd.org/AmberModels.php</td>
+      <td></td>
+      <td>Force field used for MD simulations.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CPPTRAJ</td>
+      <td>PMID: 26583988 URL:https://amber-md.github.io/</td>
+      <td></td>
+      <td>Analysis of MD trajectoriesfollowing simulations.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>PatchMaster</td>
+      <td>HEKA</td>
+      <td>RRID:SCR_000034</td>
+      <td>Electrophysiology data collection</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>IGOR</td>
+      <td>Wavemetrics, Lake Oswego, OR</td>
+      <td>RRID:SCR_000325</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Clampfit</td>
+      <td>Axon Instruments, Sunnyvale, CA</td>
+      <td>RRID:SCR_011323</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Sigmaplot</td>
+      <td>SPSS, San Jose, CA</td>
+      <td>RRID:SCR_003210</td>
+      <td>Electrophysiology data analysis and visualization</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MATLAB</td>
+      <td>MathWorks, MA</td>
+      <td>RRID:SCR_001622</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>For site-directed mutagenesis</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>PCR primers seq for mutations made in this study (each mutation utilizedtwo primers: b and c). E170R-b:cacgtacCTGgtcccgaagaacaccac; E170R-c: cgggacCAGgtacgtggtccgcctc; R237E-b: gcatcTCcaggatctgcaggaag; R237E-c:cagatcctgGAgatgctacacgtcgac F167R-b: ccgtcccgCGgaacaccaccagcac; F167R-c: gtgttcCGcgggacggagtacg Q234E-b:ggatctCcaggaagcggatgccc; Q234E-c: catccgcttcctgGagatcctgaggatgcta H240E-b: cggtcgacCTCtagcatcctcaggatc H240E-c: gctaGAGgtcgaccgccaggg D202N-b: cgatgaggtTAatgatggaaatgggcttc D202N-c: ccatcatTAacctcatcgtggtcgtg F351A-b: ggcaGCGcccgagccaagaatcc F351A-c: gctcgggCGCtgccctgaaggtgcag C214A-b: cttggaTcccacCGCgaggaccacca C214A-c: cGCGgtgggAtccaaggggcaggtg G219C-b: cctgaCacttggaTcccacCGC G219C-c: ggAtccaagtGtcaggtgtttgccacg C331A-b: gacagagaaTGCggaggcgatggtcttc C331A-c: ctccGCAttctctgtctttgccatc</td>
+    </tr>
+  </tbody>
+</table>
+
+### Constructs, mutagenesis, and expression
 
 Point mutations of the KCNQ1 channel were engineered using overlap extension and high-fidelity PCR. Each mutation was verified by DNA sequencing. The cRNA of mutants was synthesized using the mMessage T7 polymerase kit (Applied Biosystems-Thermo Fisher Scientific).
 
@@ -136,37 +542,37 @@ The human KCNQ1 (GenBank accession number AF000571) VSD was cloned into a pET16b
 
 Amino acid-selective isotopic labeling was performed as previously described (Peng et al., 2014). The transaminase deficient strain of E. coli, CT19 (a gift from Dr. David Waugh of the US National Cance Institute), was used to reduce 15N-labeled amino acid scrambling. CT19 cells were transformed with pET16b-Q1-VSD plasmid and grown in 4L of LB media containing 10 mg/L ampicillin, 100 mg/L Kanamycin, and 20 mg/L tetracycline at 37°C. Once the culture reached an OD600 of 0.6 the cells were harvested at 2,500 g for 15 min. The pellet was gently resuspended in 1L of M9 media containing 0.2 g of the 15N-labeled amino acid of interest. Additionally, the media was supplemented with 0.5 g of alanine, phenylalanine, leucine, isoleucine, aspartate, tyrosine, and 0.1 g tryptophan (excluding the amino acid to be labeled in each case). Culture growth then proceeded as described previously. Four samples were prepared, each with a single 15N-labeled amino acid, including Val, Leu, Ile, or Phe. Additionally, reverse isotopic labeling of Arg residues was carried out by the addition of excess 14N-Arg (1 g/L) in 15NH4Cl M9 media prior to induction.
 
-## Protein purification
+### Protein purification
 
 Cell pellets were resuspended at a ratio of 1 g per 20 mL lysis buffer (75 mM Tris-HCl, 300 mM NaCl, and 0.2 mM EDTA (ethylenediaminetetraacetic acid, pH 7.8) with 5 mM Mg(Ac)2, 0.2 mg/ml PMSF (phenylmethylsulfonyl fluoride), 0.02 mg/ml DNase, 0.02 mg/ml RNase and 0.2 mg/ml lysozyme and tumbled for 30 min. The cells were lysed by probe sonication for 10 min and a cycle time of 10 s on ice at 4°C. Inclusion bodies were then isolated by centrifugation at 20,000 g for 20 min at 4°C. The pellet was resuspended by homogenization and the sonication step was repeated once more. After cell lysis, the pellet was resuspended at a ratio of 1 g pre-lysis pellet weight per 10 mL buffer A (40 mM HEPES, 300 mM NaCl, pH 7.5) containing 0.5% (w/v) dodecylphosphocholine (DPC) (Anatrace, Maumee, OH) and 2 mM TCEP and tumbled overnight at 4°C to solubilize the inclusion bodies. The following morning, insoluble debris was removed by centrifugation at 20,000 g for 20 min. The supernatant was then incubated with 0.2 mL Superflow Ni(II)-NTA (Qiagen, Germantown, MD) per 1 g pre-lysis pellet weight for at least 1 hr at 4°C. After batch binding, the Ni(II)-NTA was then packed into a gravity-flow column and washed with 10 column volumes (CV) of buffer A containing 0.5% (w/v) DPC and 2 mM TCEP. Impurities were eluted by washing with 12 CV of buffer A containing 0.5% DPC, 2 mM TCEP, and 60 mM imidazole (pH 7.5). Detergent exchange was performed by washing the column with 10 CV of buffer A containing 0.2% (w/v) LMPG (lyso-myristoylphosphatidylglycerol) and 2 mM TCEP. The KCNQ1-VSD was eluted in buffer A containing 0.2% (w/v) LMPG, 2 mM TCEP, and 500 mM imidazole until A280, as monitored continuously, returned to the baseline level (3–4 CV). Typical Q1-VSD yields were 2–3 mg per liter of growth. The eluent was concentration ten-fold by centrifugation (3700 g, 4°C) in an Amicon Ultra cartridge (10,000 molecular weight cut-off). The sample was then diluted ten-fold in NMR buffer (40 mM MES, 0.5 mM EDTA, 2 mM TCEP, pH 5.5). This process was repeated a total of four times. The KCNQ1-VSD concentration was determined by A280 using an extinction coefficient of 34950 M−1 cm−1. Samples were flash frozen in liquid nitrogen and stored at −80°C.
 
-## Preparation of spin-labeled samples
+### Preparation of spin-labeled samples
 
 A cysteine-free KCNQ1-VSD construct was generated with the following amino acid substitutions: C122S, C136A, C180S, and C214A. Combinations of amino acid substitutions were tested to identify the combination that produced only very minimal perturbation of the TROSY-HSQC spectrum relative to the native KCNQ1-VSD. Notably, KCNQ1 cysteine substitutions have been shown to not significantly perturb channel function (Xu et al., 2008). Eight single-cysteine constructs were used for MTSL labeling and PRE measurements: K121C, T144C, T155C, T177C, C180, C214, T224C, and M238C. Each single-cysteine construct was U-15N labeled and purified as previously described (Peng et al., 2014). To the rougly 8 ml of Ni(II)-NTA elution, DTT and EDTA were added to final concentrations of 2.5 mM and 1 mM respectively. The pH was then carefully adjusted from 7.5 to 6.5 by multiple additions of 0.2 mL 1 M HCl. Prior to a 2 hr 25°C incubation with gentle tumbling, the volume was reduced to 0.5 mL by centrifugal ultrafiltration (Amicon Ultra cartridge 10,000 MWCO, 3,700 g, 4°C). Incubation continued overnight after the addition of MTSL (1-oxyl-2,2,5,5-tetramethylpyrroline-3-methyl-methanethiosulfonate, Santa Cruz Biotechnology) to 10 mM from a 0.25 M stock in DMSO. Argon gas was used to displace any air within the incubation tube. The following morning, samples were diluted to 10 mL of buffer A (40 mM HEPES, 300 mM NaCl, pH 7.5) and then concentrated 20-fold. After repeating this step, MTSL-labeled protein was batch bound to 1 mL Ni(II)-NTA and incubated for 1 hr. After batch binding, the Ni(II)-NTA was then packed into a gravity-flow column and washed with 16 column volumes (CV) of buffer A containing 0.2% (w/v) LMPG. The sample was eluted and prepared for NMR experiments as previously described (Peng et al., 2014).
 
-## Preparation of aligned Q1-VSD for residual dipolar coupling measurements
+### Preparation of aligned Q1-VSD for residual dipolar coupling measurements
 
 A neutral 5% polyacrylamide gel (50:1 acrylamide:bis-acrylamide molar ratio) was polymerized in a cylindrical casing with a 6 mm inner diameter. After two hours, the gel plug was displaced and equilibrated with NMR buffer in three steps. In the first step, the gel was incubated in 50 mL of buffer (40 mM MES, 0.5 mM EDTA, pH 5.5) for six hours. This step was repeated once, and then in the final step the gel was equilibrated against NMR buffer (40 mM MES, 2 mM TCEP, 0.05% LMPG (w/v), 0.5 mM EDTA, 5% D2O, pH 5.5). Subsequently, the gel was then cut to 12 mm in length and transferred to a 1.5 mL cryotube and incubated with ca. 0.6 mL of 0.4 mM 15N-KCNQ1-VSD for two days. The gel was then stretched into an open-ended 5 mm NMR tube (4.2 mm inner diameter, New Era). The remaining KCNQ1-VSD solution was transferred to a 3 mm NMR tube and used to measure JNH couplings under isotropic conditions.
 
-## NMR data collection and processing
+### NMR data collection and processing
 
 All NMR data were collected at 50°C on Bruker Avance spectrometers at 600 MHz (14.4 T), 800 MHz (18.7 T), or 900 MHz (21.1 T), each equipped with a cryoprobe. NMR data were processed in Topspin 3.2 or qMDD (Lemak et al., 2011) and analyzed with NMRFAM-Sparky (Lee et al., 2015). NMR samples were composed of 0.2–0.4 mM KCNQ1-VSD, 50 mM MES, 0.5 mM ETDA, 2 mM TCEP, and 50 to 80 mM LMPG. Between 2.5% and 7.5% (v/v) D2O was added to each sample prior to data acquisition. A shaped tube containing 0.4 mL of 0.4 mM KCNQ1-VSD was used for all triple resonance experiments. Proton chemical shifts were referenced to internal DSS while 15N and 13C chemical shifts were referenced indirectly to DSS using absolute frequency ratios. Non-uniform sampling (NUS) was used to increase resolution per unit time of acquisition for triple resonance backbone and side-chain experiments (Kazimierczuk and Orekhov, 2011).
 
-## Chemical shift assignments
+### Chemical shift assignments
 
 Backbone 1HN, 15N, 13Ca,13Cb, and 13C’ chemical shifts were assigned using TROSY versions of three-dimensional (3D) HNCA, HNCO, HN(CO)CA, and HNCACB experiments at 900 MHz on a 2H,13C,15N-KCNQ1-VSD sample (Loria et al., 1999). Triple resonance backbone experiments were carried out using NUS with 25% sparse sampling. In addition, an 15N-edited 3D NOESY-TROSY was recoded with an NOE mixing time (τmix) of 150 ms at 900 MHz. Two-dimensional (2D) TROSY HSQC spectra were recorded on samples with selectively labeled amino acids to aid in resonance assignments. Backbone amide peaks for 140 out of 147 non-proline residues (95%) were assigned.
 
 Side-chain assignments were based on data from NOESY and amide-correlated TOCSY experiments. 3D TROSY-(H)C(CO)NH-TOCSY and TROSY-H(CCO)NH-TOCSY experiments were carried out using NUS with 50% sparse sampling recorded on a 13C,15N-labeled sample at 600 MHz. Additionally, an H(C)CH-COSY was recorded using NUS with 42% sparse sampling. 2D 13C-edited HSCQ and 3D 13C-edited NOESY (τmix = 150 ms) experiments were recorded on a uniformly 13C,15N-labeled sample in 99% D2O (v/v) at 900 MHz. A 3D 15N-edited NOESY (τmix = 120 ms) at 900 MHz was collected using an 15N-labeled sample. Additionally, methyl optimized 2D 13C-edited HSCQ and 3D 13C-edited NOESY (τmix = 200 ms) experiments were recorded on a 13C,15N-labeled sample in deuterated LMPG (FBReagents) and 99% D2O (v/v) at 900 MHz. Methyl groups for 58 out of 68 (85%) residues were assigned (Ala 10/10, Thr 6/8, Ile 9/11, Val 18/22, Leu 15/17).
 
-## Paramagnetic relaxation enhancements (PREs)
+### Paramagnetic relaxation enhancements (PREs)
 
 PRE measurements were carried out as described previously (Deatherage et al., 2017). Briefly, two TROSY HSQC spectra were acquired with matched parameters and processed identically on each spin-labeled sample at 900 MHz. The first spectrum was collected under paramagnetic conditions and then reduced by the addition of pH-matched ascorbic acid to 20 mM. Importantly, the change in sample volume after addition of ascorbic acid was under 1%. The second spectrum was then collected under diamagnetic conditions. The intensity ratios and the diamagnetic sample linewidths were used to determine distances between the backbone amide proton and site of the spin label (Battiste and Wagner, 2000).
 
-## Residual dipolar couplings (RDCs)
+### Residual dipolar couplings (RDCs)
 
 Backbone 1H-15N RDC data was acquired by measuring an HSQC and TROSY spectrum for the aligned and isotropic KCNQ1-VSD samples. The 1H couplings were obtained from doubling the resonance frequency difference between the HSQC and TROSY peaks in the 15N dimension. In the isotropic and aligned samples this frequency difference corresponds to JNH and JNH+DNH respectively. The initial estimates of the axial (Da) and rhombic (R) components of the alignment tensor were derived from the largest observed DNH-value and the program calcTensor (distributed with XPLOR-NIH) using the KCNQ1-VSD ensemble determined in the absence of RDC restraints (Schwieters et al., 2006).
 
-## Structure calculations
+### Structure calculations
 
 Structure calculations were performed using XPLOR-NIH via simulated annealing protocols in three steps (Schwieters et al., 2006), as summarized in this paragraph. In the first step, starting with an extended polypeptide the secondary structure was defined using local NOE-derived distance and backbone torsion restraints. Hydrogen bond distance and geometry restraints were then incorporated based on two criteria (i) observed helices in the initial ensemble, and (ii) chemical shift index analysis (Wishart and Sykes, 1994). In the second step, long-range NOE- and PRE- derived restraints were added to define the tertiary contacts of the VSD. First local NOEs were implemented, contributing to identification of well-defined secondary structural elements. Then high confidence long-range NOEs were incorporated, resulting in a loosely defined ensemble. Additional long-range NOEs were added through an iterative process until a precise ensemble was achieved. As described at the end of this section of the Methods, care was taken to verify the structural outcome was not unduly overdependent on any subset of long-range NOE data. In the third and final step, the top 10% of the structural ensemble were refined with RDC data. Details for all three steps are as follows.
 
@@ -178,14 +584,18 @@ XPLOR-NIH calculations were followed by data-restrained molecular dynamics (rMD)
 
 To verify that the ensemble was not dependent on small subset of the NOE restraints, structure calculations were repeated where a random fraction of long-range NOE restraints were excluded (10%). This was repeated a total of 10 times, where in each run a different fraction of data was withheld, such that all long-range NOE-derived restraints were excluded at least once. In all of these calculations, the same overall fold and ion pairings of gating residues were observed as in the final reported structure. The primary difference between the 10 runs was the precision to which the ensemble was determined, which demonstrates that the final structures (represented by PDB 6MIE, see also Figure 2) are not dependent on any specific subset of long-range NOE-derived restraints.
 
-## Oocyte expression
+### Oocyte expression
 
 Stage V or VI oocytes were obtained from Xenopus laevis by laparotomy. All procedures were performed in accordance with the protocol approved by the Washington University Animal Studies Committee (Protocol # 20190030). Oocytes were digested by collagenase (0.5 mg/ml, Sigma Aldrich, St Louis, MO) and injected with channel cRNAs (Drummond Nanoject, Broomall). Each oocyte was injected with cRNAs (9.2 ng) of WT or mutant KCNQ1, with or without KCNE cRNAs (2.3 ng). Injected cells were incubated in ND96 solution (in mM): 96 NaCl, 2 KCl, 1.8 CaCl2, 1 MgCl2, 5 HEPES, 2.5 CH3COCO2Na, 1:100 Pen-Strep, pH 7.6) at 18°C for at least 2 days before recording.
 
-## Two-electrode voltage clamp (TEVC) and voltage-clamp fluorometry (VCF)
+### Two-electrode voltage clamp (TEVC) and voltage-clamp fluorometry (VCF)
 
 Microelectrodes (Sutter Instrument, Item #: B150-117-10) were made with a puller (Sutter Instrument, P-97), and the resistances were 0.5–3 MΩ when filled with 3 M KCl solution. Ionic currents were recorded by TEVC in ND96 bath solutions. Whole-oocyte currents were recorded using a CA-1B amplifier (Dagan, Minneapolis, MN) with Patchmaster (HEKA) software. The currents were sampled at 1 kHz and low-pass-ﬁltered at 2 kHz. All recordings were carried out at room temperature (21–23°C). For experiments comparing the current amplitude of the KCNQ1 channel with and without KCNE1 co-expression, steps were taken to control oocyte channel expression that can confound current amplitude comparison. RNAs encoding for each mutant KCNQ1 channel were injected the same day, with and without KCNE1 RNAs co-injection. The cells injected with the same mutant KCNQ1 RNA were later recorded during the same day after channel expression. This controls for channel expression for each mutant with and without KCNE1 co-expression and allows for current amplitude comparison within each mutant. For XE991 and chromanol 293B experiments, the cells were held at −20 mV holding potential and pulsed to +40 mV (4 s) and −40 mV (2 s) every 20 s. Each cell was first recorded under control ND96 solution until steady state. Stock XE991 (10 mM) and Chromanol 293B (100 mM) were added after ionic current in control and XE991 solutions reached steady state, respectively. Stock drugs were added to achieve final dilution of 5 µM XE991 and 150 µM chromanol 293B. All cRNA amounts were doubled for VCF experiments to achieve higher surface expression level. Oocytes were incubated for 30 min on ice in 10 μM Alexa 488 C5-maleimide (Molecular Probes, Eugene, OR) in high K+ solution in mM (98 KCl, 1.8 CaCl2, 5 HEPES, pH 7.6) for labeling. Cells were washed three times with ND96 solution to remove the labeling solution, and recordings were performed in ND96 solution on the CA-1B amplifier setup. Excitation and emission lights were filtered by a FITC filter cube (Leica, Germany, for Alexa 488) and the fluorescence signals were collected by a Pin20A photodiode (OSI Optoelectronics). The signals were then amplified by an EPC10 (HEKA, analog filtered at 200 Hz, sampled at 1 kHz) patch clamp amplifier and controlled by the CA-1B amplifier to ensure fluorescence signals were recorded simultaneously with currents. All other chemicals were from Sigma Aldrich.
 
-## Electrophysiology data analysis
+### Electrophysiology data analysis
 
-Data were analyzed with IGOR (Wavemetrics, Lake Oswego, OR), Clampfit (Axon Instruments, Inc, Sunnyvale, CA), Sigmaplot (SPSS, Inc, San Jose, CA), and custom MATLAB (MathWorks, MA) software. The instantaneous tail currents following test pulses were normalized to the maximal current to calculate the conductance-voltage (G-V) relationship. Because of photo-bleaching, fluorescence signals were baseline subtracted by fitting and extrapolating the first 2 s signals at the −80 mV holding potential. ΔF/F was calculated after baseline subtraction. Fluorescence-voltage (F-V) relationships were derived by normalizing the ΔF/F value at the end of each four-seconds test pulse to the maximal value. F-V and G-V curves were fitted with either one or the sum of two Boltzmann equations in the form 1/ (1+exp(−z*F*(V−V1/2)/RT)) where z is the equivalent valence of the transition, V1/2 is the voltage at which the transition is half maximal, R is the gas constant, T is the absolute temperature, F is the Faraday constant, and V is the voltage. Current inhibition from XE991 was calculated by using the steady-state current amplitude at the end of the four-seconds test pulse in control (Icontrol) and drug (IXE991 or Ichromanol) solutions. The fraction of XE991 inhibition was calculated by first subtracting Ichromanol from Icontrol and IXE991 to account for endogenous current contamination. XE991 inhibition fraction was then calculated utilizing the ratio of the chromanol-subtracted current with the following equation:(1)fXE991=1-IXE991-IchromanolIcontrol-Ichromanol=Icontrol-IXE991Icontrol-Ichromanol
+Data were analyzed with IGOR (Wavemetrics, Lake Oswego, OR), Clampfit (Axon Instruments, Inc, Sunnyvale, CA), Sigmaplot (SPSS, Inc, San Jose, CA), and custom MATLAB (MathWorks, MA) software. The instantaneous tail currents following test pulses were normalized to the maximal current to calculate the conductance-voltage (G-V) relationship. Because of photo-bleaching, fluorescence signals were baseline subtracted by fitting and extrapolating the first 2 s signals at the −80 mV holding potential. ΔF/F was calculated after baseline subtraction. Fluorescence-voltage (F-V) relationships were derived by normalizing the ΔF/F value at the end of each four-seconds test pulse to the maximal value. F-V and G-V curves were fitted with either one or the sum of two Boltzmann equations in the form 1/ (1+exp(−z*F*(V−V1/2)/RT)) where z is the equivalent valence of the transition, V1/2 is the voltage at which the transition is half maximal, R is the gas constant, T is the absolute temperature, F is the Faraday constant, and V is the voltage. Current inhibition from XE991 was calculated by using the steady-state current amplitude at the end of the four-seconds test pulse in control (Icontrol) and drug (IXE991 or Ichromanol) solutions. The fraction of XE991 inhibition was calculated by first subtracting Ichromanol from Icontrol and IXE991 to account for endogenous current contamination. XE991 inhibition fraction was then calculated utilizing the ratio of the chromanol-subtracted current with the following equation:
+
+$$
+f_{XE991}=1-\frac{I_{XE991}-I_{chromanol}}{I_{control}-I_{chromanol}}=\frac{I_{control}-I_{XE991}}{I_{control}-I_{chromanol}}
+$$

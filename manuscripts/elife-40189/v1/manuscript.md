@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.40189.001 The postdoctoral community is an essential component of the academic and scientific workforce, but a lack of data about this community has made it difficult to develop policies to address concerns about salaries, working conditions, diversity and career development, and to evaluate the impact of existing policies. Here we present comprehensive survey results from 7,603 postdocs based at 351 US academic and non-academic (e.g. hospital, industry and government lab) institutions in 2016. In addition to demographic and salary information, we present multivariate analyses on factors influencing postdoc career plans and satisfaction with mentorship. We further analyze gender dynamics and expose wage disparities. Academic research positions remain the predominant career choice, although women and US citizens are less likely than their male and non-US citizen counterparts to choose academic research positions. Receiving mentorship training has a significant positive effect on postdoc satisfaction with mentorship. Quality of and satisfaction with postdoc mentorship also appear to heavily influence career choice.
+The postdoctoral community is an essential component of the academic and scientific workforce, but a lack of data about this community has made it difficult to develop policies to address concerns about salaries, working conditions, diversity and career development, and to evaluate the impact of existing policies. Here we present comprehensive survey results from 7,603 postdocs based at 351 US academic and non-academic (e.g. hospital, industry and government lab) institutions in 2016. In addition to demographic and salary information, we present multivariate analyses on factors influencing postdoc career plans and satisfaction with mentorship. We further analyze gender dynamics and expose wage disparities. Academic research positions remain the predominant career choice, although women and US citizens are less likely than their male and non-US citizen counterparts to choose academic research positions. Receiving mentorship training has a significant positive effect on postdoc satisfaction with mentorship. Quality of and satisfaction with postdoc mentorship also appear to heavily influence career choice.
 
 ## Introduction
 
@@ -60,13 +60,163 @@ The gender disparity in pay was present even after male and female postdocs were
 
 Primary field of study was excluded from this analysis because field has such a large effect on salary, overshadowing most other factors, with postdocs in Engineering, Environmental Sciences, the Physical Sciences, and the Social Sciences earning significantly more money than postdocs in the Life Sciences, Humanities, Medicine, or Psychology (n = 7,542, 750.452, p < 0.0001; Supplementary file 1 (Table S5)). Carnegie classification also had a large effect on salary (Supplementary file 1 (Table S4)), as 58% of the postdocs at national government laboratories report earning more than $55,000 a year, while only 8% of postdocs at R1 institutions report earning more than $55,000 a year. Male postdocs were more likely than women to be in the primary fields of Engineering (n = 620, χ2 = 76.652, p < 0.0001) or Physical Sciences (n = 846, χ2 = 77.466, p < 0.0001), two fields which have historically higher salaries (Buffington et al., 2016). Interestingly, female postdocs trended towards being paid less than men in all fields except the Physical Sciences, where women trended towards being paid slightly more than men (Supplementary file 1 (Table S5)). Income, mentor gender, citizenship, and partner status are all factors that may contribute to the observed gender difference in interest in primarily research-focused academic careers (Buffington et al., 2016) (Figures 1 and 3H).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40189/elife-40189-fig3-v1.jpg)
+
+**Figure 3.:** Illustration of the independent effects of 10 of the 14 significant factors (out of 26) in the nominal logistic regression model of best fit for postdoc primary career choice (See Table 1 for effect statistics). A–C illustrate the effect of postdoc mentor and postdoc confidence on postdoc career choice; D–F illustrate the effect of postdoc productivity on postdoc career choice, and G–J illustrate the effect of demographics on postdoc career choice. In these mosaic plots, the panels show the listed factor and corresponding effect size, and the right-hand color key corresponds to primary career choice. Factors are paraphrased survey questions; please see Source Data 1 and Source Data 2 for specific wording of questions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40189/elife-40189-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mentor rank; (B) whether the postdoctoral respondent was currently looking for a permanent position; (C) number of publications respondent had while a postdoc; (D) whether the postdoc respondent had received training in pedagogy. In these mosaic plots, the panels show the listed factor and corresponding effect size, and the right-hand color key corresponds to primary career choice. Factors are paraphrased survey questions; see Source Data 1 and Source Data 2 for specific wording of questions.
+
 Most postdocs reported salaries in the range of $39,000–$55,000 (median $43,750, mean $46,988, n = 7,551). In the 2014 National Postdoctoral Association’s Institutional Policy Report, 52% of the 74 institutions reported that their minimum stipend matched the current NIH NRSA minimum (Ferguson et al., 2014). At the time of this survey, the NIH minimum was $43,692 (National Institutes of Health, 2018), which matches well with $43,750, the reported median income in our study, as well as the median postdoc income reported in recent work by McDowell et al. (McDowell et al., 2018). Five percent of postdocs reported mean gross incomes of less than $39,000 and ~10% reported incomes above $55,000. Although salaries in high cost of living (COL) urban areas tend to be higher than average (Supplementary file 1 (Table S6)), when adjusted to publicly available COL data, postdocs in large metropolitan areas earn significantly less money than postdocs in college towns or rural settings (average salary when adjusted for cost of living, metropolitan: $38,045.60; non-metropolitan: $44,714.40; n = 7,551, F-ratio:12.614, p = 0.0002; Figure 2A, Supplementary file 1 (Table S6)). ‘The Postdoctoral Experience Revisited’ 2014 report recommended as a best practice that the minimum salary be set at $50,000 (National Academy of Sciences, 2014); however, this has not been enacted at most institutions, and was only enacted by the NIH in November 2018. During the months that our survey was open (February–September 2016), the effect of a proposed minimum salary update ($47,476) to the Fair Labor Standards Act (FLSA) on postdoctoral salaries was openly debated, but ultimately not federally mandated (Benderly, 2016). Our data suggest that setting a minimum salary for postdocs is particularly important for postdoctoral researchers in large metropolitan areas, where salaries are not maintaining parity with cost of living increases.
 
 The majority of postdocs selected research-focused academic careers as their primary long-term career plan (57.7%), with industry research a distant second (17.8%; Figure 1J; Supplementary file 1 (Table S2)). Determining the ‘why’ of career choice remains the subject of much study (National Academy of Sciences, 2014; The National Academies of Sciences, 2018; National Institutes of Health, 2012; Hayter and Parker, 2018; Roach and Sauermann, 2017). To assess which factors were most influential for determining postdoc career plan in our dataset (categorized in this survey as: academia, primarily research based; academia, primarily teaching based; industry; government/non-profit; other) we conducted a nominal logistic regression model with 26 factors concerning topics considered to be important for postdoc success and career choice (Supplementary file 1 (Table S7)), which include demographics, training, productivity and mentor support matrices. The 14 significant factors in the model were (in order of effect size): 1) whether postdoc career plans had changed; 2) whether the postdoc received training in pedagogy; 3) feelings of career preparedness; 4) perceived support of career plan from mentors; 5) primary field of study; 6) residency status in the US; 7) intensity of job search; 8) postdoc gender; 9) number of first, last, or corresponding author publications; 10) number of conferences attended in the past year; 11) hours worked per week; 12) total number of publications while a postdoc; 13) mentor rank; and 14) desire to pursue a career in the US (Table 1).
 
 Perceived mentor support, number of postdoc publications, hours worked per week, conferences attended, and postdoc feelings of career preparedness were all positively correlated with a choice to pursue a research-focused academic career (Figure 3A,B,D–F; Figure 3—figure supplement 1C). Male postdocs, and postdocs who were not US citizens, were more interested in academic research positions (Figure 3G and H). In contrast, postdocs with mentors outside of the professoriate were more likely to prefer government/non-profit positions (Figure 3—figure supplement 1A). Whether this is a cause or effect relationship is not clear from our study, though we did find that postdocs with non-academic mentors changed their career plans at the same rate as those with academic mentors (n = 7,361, χ2 = 6.860, p = 0.077). In addition, postdocs actively searching for permanent positions were less interested in academic research than postdocs not yet on the job market (Figure 3—figure supplement 1B), and were more likely to have changed their career plans (n = 7,565, χ2 = 224.633, p < 0.0001). These results complement recent studies suggesting that individual career choice is influenced by changing job attribute preferences and self-awareness (Buffington et al., 2016), and that academic success is influenced by mentorship during the postdoctoral period (Lienard et al., 2018).
 
+**Table 1.**
+ Significant factors influencing postdoc primary career plans.A nominal logistic regression model that considered 26 factors that might be important for postdoc success and career choice revealed 14 significant factors. Factors are listed in order of decreasing effect size. Nominal logistic regression model, whole model effect: n = 6,504, Model R2 = 0.2017, AICc = 15924, BIC = 21130.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>χ2</th>
+      <th>-log p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Whether long-term career plans have changed</td>
+      <td>599.951</td>
+      <td>108.529</td>
+    </tr>
+    <tr>
+      <td>Received training in pedagogy</td>
+      <td>151.052</td>
+      <td>27.273</td>
+    </tr>
+    <tr>
+      <td>Feelings of career preparedness</td>
+      <td>161.510</td>
+      <td>11.925</td>
+    </tr>
+    <tr>
+      <td>Perceived mentor support of career plan</td>
+      <td>130.577</td>
+      <td>11.925</td>
+    </tr>
+    <tr>
+      <td>Primary field of study</td>
+      <td>191.331</td>
+      <td>10.190</td>
+    </tr>
+    <tr>
+      <td>Residency status in US</td>
+      <td>133.264</td>
+      <td>9.941</td>
+    </tr>
+    <tr>
+      <td>Job search intensity</td>
+      <td>98.574</td>
+      <td>9.352</td>
+    </tr>
+    <tr>
+      <td>Postdoc gender</td>
+      <td>53.654</td>
+      <td>7.658</td>
+    </tr>
+    <tr>
+      <td>Number of first, last, or corresponding author publications</td>
+      <td>86.193</td>
+      <td>5.274</td>
+    </tr>
+    <tr>
+      <td>Conferences attended in last year</td>
+      <td>84.468</td>
+      <td>5.043</td>
+    </tr>
+    <tr>
+      <td>Hours worked/week</td>
+      <td>109.093</td>
+      <td>4.870</td>
+    </tr>
+    <tr>
+      <td>Total number of publications while a postdoc</td>
+      <td>80.503</td>
+      <td>4.524</td>
+    </tr>
+    <tr>
+      <td>Academic rank of mentor</td>
+      <td>70.513</td>
+      <td>3.292</td>
+    </tr>
+    <tr>
+      <td>Plan to pursue a career in US</td>
+      <td>37.452</td>
+      <td>2.340</td>
+    </tr>
+  </tbody>
+</table>
+
 Sixty percent of respondents were either satisfied or very satisfied with the mentorship they receive, with similar responses from both genders (Figure 1I). To assess which factors were most influential for determining satisfaction with their postdoc mentor, we conducted a nominal logistic regression model with the same 26 factors included in the model for postdoc career choice (though excluding satisfaction with mentorship as a factor, and replacing it with postdoc long-term career plan; Supplementary file 1 (Table S7)). The eight significant factors in the model (in order of effect size) were: 1) feelings of career preparedness; 2) perceived support of career plan from mentors; 3) frequency of project meetings with mentor; 4) intensity of job search; 5) whether the postdoc received training in mentorship; 6) primary field of study; 7) perception of job market; and 8) academic rank of mentor (Table 2). These factors were more important than number of postdoc publications, whether a postdoc had changed career plans, postdoc or mentor gender, residency status, or postdoc training in either grant writing or pedagogy.
+
+**Table 2.**
+ Significant factors influencing postdoc satisfaction with mentoring. A nominal logistic regression model was calculated based on the same 26 factors used to model postdoc primary career plans (Table 1). Eight of these factors were found to be significant; factors are listed in order of decreasing effect size. Nominal logistic regression model, whole model effect: n = 6,504, Model R2 = 0.3007, AICc = 14729, BICc = 17810.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>χ2</th>
+      <th>-log p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feelings of career preparedness</td>
+      <td>960.457</td>
+      <td>181.948</td>
+    </tr>
+    <tr>
+      <td>Perceived mentor support of career plan</td>
+      <td>904.891</td>
+      <td>178.146</td>
+    </tr>
+    <tr>
+      <td>Frequency of mentor meetings</td>
+      <td>532.31</td>
+      <td>89.480</td>
+    </tr>
+    <tr>
+      <td>Job search intensity</td>
+      <td>68.255</td>
+      <td>8.040</td>
+    </tr>
+    <tr>
+      <td>Received training in mentorship</td>
+      <td>37.088</td>
+      <td>6.240</td>
+    </tr>
+    <tr>
+      <td>Primary field of study</td>
+      <td>92.193</td>
+      <td>4.368</td>
+    </tr>
+    <tr>
+      <td>Perception of academic job market</td>
+      <td>48.088</td>
+      <td>3.384</td>
+    </tr>
+    <tr>
+      <td>Academic rank of mentor</td>
+      <td>41.614</td>
+      <td>2.508</td>
+    </tr>
+  </tbody>
+</table>
 
 Perceived mentor support had a positive effect on how satisfied a postdoc is with their mentor, as did frequency of mentor meetings, perception of preparedness for desired future career, and perception of job market (Figure 4A–D). Postdocs who received training in mentorship were more satisfied with the mentorship they received than postdocs who did not receive training in mentorship (Figure 4E). We found this to be particularly noteworthy, as mentorship training is not a common part of the postdoctoral experience, with only 26% of postdocs reporting that they have received such training. While we cannot comment further on the specific type of mentor training that postdoc respondents received, we note that several institutions in our study have mentor training programs for postdocs in place, including those that use curricula from the University of Wisconsin-Madison Center for the Improvement of Mentored Experiences in Research (CIMER) project and/or National Research Mentoring Network (NRMN), for example the Big Ten Alliance NRMN-CAN program, as well as the ‘Mentoring in Research’ program at Stanford University.
 
@@ -88,7 +238,7 @@ While the data we collected allowed us to identify a number of factors influenci
 
 ## Materials and Methods
 
-## Survey instrument design
+### Survey instrument design
 
 The National Postdoc Survey questions were designed to emphasize aspects of the postdoctoral experience related to career choice and mentoring, in addition to collecting basic demographic data. These questions were based on over a decade of experience with postdoctoral surveys administered at the University of Chicago, led by postdocs within the Biological Sciences Division Postdoctoral Association. In an effort to maximize participation for all postdocs, regardless of institutional environment, we disseminated the survey using top-down and grass-roots methods described below.
 
@@ -102,21 +252,21 @@ In all, 482 sets of putative postdoctoral oversight representatives were contact
 
 Four institution classifications were added as fixed variables to the final dataset: institution classification as public or private; Carnegie classification; US Census Region; and participation in the 2005 Sigma Xi Postdoctoral Survey. City and state of each institution were also added.
 
-## Statistical analysis
+### Statistical analysis
 
 Raw response data were quality-filtered to select for US-based institutions and individuals who were currently in self-described postdoctoral positions. Of the 7,673 total respondents, 70 were removed from the initial dataset using these quality filters, yielding a final dataset of 7,603 US postdoctoral respondents. The demographics data shown (Figure 1) were calculated by first sorting by gender, and then sorting by the demographic of interest displayed as total percentage of respondents per gender (all panels except Figure 1H) or by a mean ± standard deviation (Figure 1H) using Prism7 (GraphPad). The effect of gender on salary, having a same sex mentor, residency status, partner status, and having children was tested using a Pearson χ2 test (n = 7,516, 7,459, 7,543, 7,538, 7,532 respectively). Sample sizes differed because respondents were allowed to skip questions, and are therefore reported as ‘n’ here and throughout. However, most respondents answered most survey questions, as can been seen by the similar sample sizes for these different survey questions. The effects of gender, age, years since graduation, satisfaction with mentor, and likelihood of being partnered on postdoc salary were tested using a nominal logistic regression model, n = 7,311. All survey questions reported here had categorical response options, thus we used nominal logistic regression models instead of generalized linear regression models to account for the categorical nature of the data. The effect of gender on being in the fields of engineering or the physical sciences was tested using a Pearson χ2 test, engineering n = 620, physical sciences n = 846. We used a Bonferroni correction to account for multiple testing, yielding a significance threshold of p = 0.006. All statistical tests were two-sided. Statistics were performed using JMP 13.1 by SASS.
 
 To determine what factors were significantly correlated with postdoctoral career choice and satisfaction with mentor, we ran a nominal logistic regression model using 26 different fixed variables listed in Supplementary file 1 (Table S7) using the JMP 13.1 by SASS fit model platform. We then determined which factors were significant variables after controlling for multiple testing. These estimates of effect size are reported in Table 1 and Table 2. A total of 6,504 respondents answered all 26 of the questions included in this analysis.
 
-## Cost of living and postdoc salaries
+### Cost of living and postdoc salaries
 
 Cost of living index (COL) data for 2016 was produced by the Council for Community and Economic Research (https://www.c2er.org/). State COL data were generated by a weighted average across cities that have 2016 C2ER cost of living data provided per state, for the cities where postdoc salary data were available. Average postdoc salary from all survey respondents for each location was divided by matched local COL values to produce postdoc salaries adjusted by cost of living. Whenever income was not specified, the midpoint of income range selected by the respondent was used. These values were mapped to each state with red to blue corresponding to lowest to highest adjusted salary, respectively. In addition, counties with institutions having at least 50 respondents were then mapped separately, to map adjusted postdoc salary in 48 counties with additional COL data, against the background of the state COL data, in 50 states plus Washington DC.
 
-## Population proportion analysis
+### Population proportion analysis
 
 To determine the number of individual responses required from a total population of 100,000 for 95% and 99% confidence levels, at a 5% margin of error, assuming the true population proportion being measured is between 3–50% of the total population, we conducted a population proportion analysis using the equation and definitions as described in Tintle et al. (Tintle et al., 2016) and at Select Statistical Services Limited (Select Statistical Services Limited, 2018). Results are reported in Supplementary file 1 (Table S1).
 
-## Data analysis of survey respondent proportions
+### Data analysis of survey respondent proportions
 
 Inconsistent definitions across institutions and lack of existing institutional contact lists for postdocs, particularly for those without postdoctoral offices and other support, can make collecting representative data for postdocs challenging (Schaller et al., 2017). Thus demographics of respondents may differ across surveys, and the postdoctoral demographics of previous survey datasets may differ from those observed in our study. To further assess our demographic data, we conducted the comparisons described below.
 

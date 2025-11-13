@@ -38,7 +38,7 @@ One unbiased approach to obtain a broad insight into complex pathophysiological 
 
 Tissue samples for this study were selected from the CNS of NHPs inoculated intracerebrally with wild type WNV (NY99) (Maximova et al., 2014). The rationale for the selection of CNS structures for examination was as follows: (i) high viral burden at the site; (ii) severe histopathological changes at the site; and (iii) presence of neurological signs consistent with the function of the respective structure. Based on these criteria from the intracerebral NHP model (Maximova et al., 2016; Maximova et al., 2014), which are consistent with a body of data on the virology, histopathology, and clinical presentations of WNV-ND in humans (Kleinschmidt-DeMasters and Beckham, 2015; Sejvar, 2016; Lenka et al., 2019; Omalu et al., 2003; Cushing et al., 2004; Guarner et al., 2004; Armah et al., 2007; Hart et al., 2014), the cerebellum and spinal cord samples were selected for analysis. The samples were from the following predetermined time points after WNV infection: (i) 3 days post-infection (dpi; presymptomatic stage; n = 3); (ii) 7 dpi (early-symptomatic stage; moderate incoordination, tremor, and limb weakness; n = 3); and (iii) 9 dpi (advanced-symptomatic stage; severe incoordination, tremor, and limb weakness that required humane euthanasia; n = 3). The mock control cerebellum or spinal cord samples were from NHPs (n = 4) that were inoculated intracerebrally in an identical manner to the virus-inoculated animals, except that the inoculum contained only diluent and not virus (Maximova et al., 2014) (detailed procedure is described by us previously [Maximova et al., 2008]). These four mock-inoculated control animals were used for normalization of gene expression and one animal (euthanized at 10 dpi) was used as a normal control for immunohistochemistry that examined the advanced-symptomatic stage of WNV-ND (9 dpi).
 
-## WNV infection of the CNS alters the homeostasis in transcriptional regulation of the immune and neural system domains
+### WNV infection of the CNS alters the homeostasis in transcriptional regulation of the immune and neural system domains
 
 We examined gene expression changes in the cerebellar and spinal samples from the CNS of intracerebrally infected NHPs using Affymetrix microarray analysis and validated microarray results by qPCR. A broad examination of changes in global gene expression in response to WNV infection showed transcriptional changes that progressively increased during the neurological symptomatic stages in a CNS-region-specific manner (Figure 1, a and b; top 50 upregulated or downregulated genes are listed in c and d, respectively).
 
@@ -70,7 +70,7 @@ As expected based on the identification of the neuronal system as the top biolog
 
 Together, these results show that WNV infection induces progressive and CNS-structure-dependent gene expression changes that manifest in transcriptional upregulation of biological pathways ascribed to the immune system gene ontologies and downregulation of functions related to the neuronal system biological domain. Therefore, a larger overlap in the upregulated genes compared to downregulated genes between the cerebellum and spinal cord may be explained by a higher similarity in the immune responses, but a site-specific impairment of distinct neural functions carried by these two CNS structures. In addition, we show that WNV infection alters transcriptional regulation of developmental and repair processes in the CNS, which are associated with upregulation of the immune system development/wound healing and downregulation of the neuronal/axonal regenerative processes. However, further dissection of the molecular environment associated with axonal regeneration also indicated a trend that was more skewed to the axon growth permissive rather than inhibitory environment, suggesting initiation of the neuronal network repair programs.
 
-## Altered CNS homeostasis in WNV-ND is defined by the large and subtle coordinated transcriptional shifts regulating the immune and nervous system, respectively
+### Altered CNS homeostasis in WNV-ND is defined by the large and subtle coordinated transcriptional shifts regulating the immune and nervous system, respectively
 
 To further analyze the magnitude of transcriptional dysregulation within the CNS caused by WNV infection, we employed a statistical functional enrichment method that takes into account the fold changes associated with DEGs (Mi et al., 2019). This method has an advantage of detecting the coordinated changes in expression of groups of genes that are shifted from the overall distribution. Such coordinated transcriptional shifts can be subtle and elude other functional annotation methods (Clark et al., 2003; Mootha et al., 2003). We reasoned that this method could provide a better understanding of the magnitude of transcriptional dysregulation of the nervous system that appeared relatively subtle at the level of pathway analysis (Figure 3). Since the pathway level analysis showed that the immune and neuronal domains were affected the most at the advanced-symptomatic stage of WNV-ND, we analyzed genes that were significantly differentially expressed in WNV-infected cerebellum or spinal cord at this time point, together with their expression values (FC over mock). The results of this test, as expected, revealed coordinated large and subtle transcriptional shifts regulating the immune and nervous system, respectively. The large coordinated shifts (i.e., shifts to the greater fold change values from the overall distribution) were associated with the host defense response to viral infection and innate/adaptive immune responses (Figure 4a–d). In contrast, the subtle coordinated shifts (i.e., shifts to the smaller fold change values from the overall distribution) were associated with the cellular compartments of neurons (i.e., neuronal cell body, dendrite, axon, and glutamatergic and GABA-ergic synapses) and functions related to neurons (i.e., chemical synaptic transmission, neurotransmitter secretion, action potential, ensheathment of neurons, microtubule cytoskeleton organization, and synapse organization) (Figure 4e–h). The complete results are provided in Supplementary file 1 (‘Coordinated transcriptional shifts’).
 
@@ -80,7 +80,7 @@ To further analyze the magnitude of transcriptional dysregulation within the CNS
 
 These results demonstrate that WNV infection induces coordinated shifts in the transcriptional regulation of the CNS homeostasis and that these shifts differ in magnitude and are large when associated with the immune system and subtle when related to the nervous system.
 
-## Cell death processes in WNV-ND are regulated bi-directionally and magnitude of neuron cell death regulation does not exceed that of lymphocytes
+### Cell death processes in WNV-ND are regulated bi-directionally and magnitude of neuron cell death regulation does not exceed that of lymphocytes
 
 Since the subtle coordinated transcriptional shifts in WNV-ND were associated with neurons and their functions (Figure 4e–h), but large shifts also included the regulation of cell death (Figure 4b and d), we next used the gProfiler (Raudvere et al., 2019) to simultaneously dissect the GO terms of BP and KEGG pathways (Kanehisa et al., 2019) to gain insight into the magnitude and direction of the regulation of cell death processes at the advanced-symptomatic stage of WNV-ND, with a particular focus on neurons.
 
@@ -92,11 +92,92 @@ Analysis of the genes that were downregulated in the cerebellum or spinal cord d
 
 Taken together, these results demonstrate that activation of transcriptional regulation of the cell death in WNV-ND is (i) bi-directional (i.e., concurrently positive and negative), (ii) region-specific (i.e., skewed to a positive regulation in the cerebellum but negative regulation in the spinal cord), and (iii) cell-type-specific (i.e., major cell types with increased regulation of the cell death processes were neurons and lymphocytes). Importantly, the magnitude of cell death regulation in neurons was about twofold less than that in lymphocytes, suggesting that neurons are not a major cell type with increased transcriptional regulation of cell death processes. Instead, it appears that the major cell type with increased regulation of cell death processes was represented by the lymphocytes (T and B cells that are expected to infiltrate the CNS parenchyma as a part of the adaptive immune response to viral infection [Maximova and Pletnev, 2018]). Strikingly, regulation of the apoptotic processes in lymphocytes was region-specific, with increased regulation of T-cell apoptosis in the cerebellum but not in the spinal cord and vice versa – increased regulation of B-cell apoptosis in the spinal cord but not in the cerebellum, suggesting differential lymphocytic responses to WNV infection in these two CNS regions.
 
-## WNV-induced transcriptional changes correspond to activation of non-neuronal multicellular responses to infection and disruption of the structural integrity and function of infected neurons
+### WNV-induced transcriptional changes correspond to activation of non-neuronal multicellular responses to infection and disruption of the structural integrity and function of infected neurons
 
-## Large coordinated transcriptional shifts correspond to WNV-induced activation of non-neuronal multicellular responses to infection by CNS-intrinsic and CNS-extrinsic cells
+#### Large coordinated transcriptional shifts correspond to WNV-induced activation of non-neuronal multicellular responses to infection by CNS-intrinsic and CNS-extrinsic cells
 
 Based on the identified large coordinated shifts in transcriptional regulation of the CNS homeostasis in WMV-ND (Figure 4a–d; Supplementary file 1 [‘Coordinated transcriptional shifts’]), we selected three major BPs and examined the infected tissues by immunohistochemistry, using appropriate protein markers. These processes were: (i) reactive astrocytosis; (ii) microglia/macrophage activation and migration; and (iii) lymphocytic infiltration and migration (Table 1).
+
+**Table 1.**
+ Dissection of West Nile virus (WNV)-induced coordinated transcriptional shifts at the protein marker and cell morphology/ topology/function levels.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biological process</th>
+      <th>Enriched GO terms</th>
+      <th>Protein marker IR*</th>
+      <th>Cellular morphology/topology/function</th>
+      <th>Representative images</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reactive astrocytosis</td>
+      <td>glial cell activation (GO:0061900); regulation of cell migration (GO:0030334)</td>
+      <td>GFAP ↑</td>
+      <td>Astrocytes: hypertrophy of somata and processes; neuron-centripetal migration; perineuronal topology</td>
+      <td>Figure 6a</td>
+    </tr>
+    <tr>
+      <td>Microglia/macrophage activation and migration</td>
+      <td>innate immune response (GO:0045087); glial cell activation (GO:0061900); regulation of cell migration (GO:0030334); regulation of microglial cell activation (GO:1903978); macrophage activation (GO:0042116); regulation of macrophage chemotaxis (GO:0010758); phagocytosis (GO:0006909); lysosome (GO:0005764)</td>
+      <td>CD68 ↑</td>
+      <td>Microglial cells: hypertrophy of somata and processes; neuron-centripetal migration; perineuronal topology; phagocytic activity</td>
+      <td>Figure 6b</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Lymphocytic activation, migration, and infiltration</td>
+      <td rowspan="3">adaptive immune response (GO:0002250); lymphocyte activation (GO:0046649); lymphocyte migration (GO:0072676); B cell mediated immunity (GO:0019724); regulation of T cell mediated immunity (GO:0002709); regulation of CD4-positive, alpha-beta T cell activation (GO:2000514); regulation of CD8-positive, alpha-beta T cell activation (GO:2001185)</td>
+      <td>CD20 ↑</td>
+      <td>B cells: leptomeningeal infiltration in the cerebellar cortex; perivascular infiltration if the spinal cord gray matter; no parenchymal migration</td>
+      <td>Figure 6c</td>
+    </tr>
+    <tr>
+      <td>CD4 ↑</td>
+      <td>T helper cells: leptomeningeal infiltration; perivascular infiltration; minimal parenchymal migration</td>
+      <td>Figure 6c</td>
+    </tr>
+    <tr>
+      <td>CD8 ↑</td>
+      <td>Cytotoxic T lymphocytes: leptomeningeal infiltration; perivascular infiltration; parenchymal infiltration; neuron-centripetal migration; perineuronal topology</td>
+      <td>Figure 6c</td>
+    </tr>
+    <tr>
+      <td>Virus infection of specific neuronal cell types</td>
+      <td>negative regulation of viral process (GO:0048525); regulation of viral entry into host cell (GO:0046596)</td>
+      <td>WNV-Ag positivity</td>
+      <td>Purkinje cells (PCs; CALB-positive): presence of viral antigens in neuronal perikarya and processes Spinal motor neurons (SMNs; ChAT-positive): presence of viral antigens in neuronal perikarya and processes</td>
+      <td>Figure 7a and b Figure 7c and d</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Disruption of structural integrity and function of infected neurons</td>
+      <td rowspan="3">neuronal cell body (GO:0043025); somatodendritic compartment (GO:0036477); dendrite (GO:0030425); regulation of cytosolic calcium ion concentration (GO:0051480); cellular calcium ion homeostasis (GO:0006874); calcium ion-regulated exocytosis of neurotransmitter (GO:0048791); neurotransmitter secretion (GO:0007269); synapse (GO:0045202); neuron to neuron synapse (GO:0098984); presynapse (GO:0098793); asymmetric synapse (GO:0032279); distal axon (GO:0150034); glutamatergic synapse (GO:0098978); GABA-ergic synapse (GO:0098982); synapse organization (GO:0050808); synaptic signaling (GO:0099536); chemical synaptic transmission (GO:0007268)</td>
+      <td>CALB ↓</td>
+      <td>Purkinje cells: decrease of CALB-IR in somatodendritic compartments of WNV-infected PCs; disturbance of cellular calcium homeostasis in infected PCs</td>
+      <td>Figure 7b</td>
+    </tr>
+    <tr>
+      <td>ChAT ↓</td>
+      <td>Spinal motor neurons: decrease of ChAT-IR in SMN cytoplasm and synapses innervating SMNs; disruption of neurotransmitter secretion in SMNs and their afferent innervation</td>
+      <td>Figure 7d</td>
+    </tr>
+    <tr>
+      <td>SYP ↓</td>
+      <td>Decrease in IR for structural constituent of synaptic vesicles (SYP-IR) in the cerebellar cortex and spinal cord. Disruption of structural integrity of presynaptic compartments. Cerebellar cortex: putatively affected synapses innervating PCs: CF-PC and PF-PC (asymmetric-glutamatergic) in ML; BC-PC (GABA-ergic) in ML and PCL; and SC-PC (GABA-ergic) in ML Spinal gray matter: putatively affected synapses innervating SMNs: cholinergic C- boutons (ChAT-IR); asymmetric-glutamatergic synapses from descending tracts; and inhibitory synapses from local inhibitory neuron networks</td>
+      <td>Figure 8a and c Figure 8a Figure 7d and Figure 8c</td>
+    </tr>
+    <tr>
+      <td>neuronal cell body (GO:0043025); somatodendritic compartment (GO:0036477); dendrite (GO:0030425); postsynapse (GO:0098794); microtubule cytoskeleton organization (GO:0000226)</td>
+      <td>MAP2 ↓</td>
+      <td>Cerebellar cortex and spinal gray matter: loss of postsynaptic cellular targets for asymmetric (axodendritic) and symmetric (axosomatic) synapses; disruption of integrity of microtubule cytoskeleton</td>
+      <td>Figure 8b and d</td>
+    </tr>
+  </tbody>
+</table>
+
+_*IR, immunoreactivity. ↑ - increased compared to mock. ↓ - decreased compared to mock. GFAP, glial fibrillary acidic protein. WNV-Ag, WNV antigens. CALB, calbindin D28k. ChAT, choline acetyltransferase. SYP, synaptophysin. MAP2, microtubule associated protein 2. ML. molecular layer. PCL, Purkinje cell (PC) layer. CF-PC, climbing fiber to PC synapses. PF-PC, parallel fiber to PC synapses. BC-PC basket cell to PC synapses. SC-PC, stellate cell to PC synapses._
 
 Immunoreactivity for glial fibrillary acidic protein (GFAP) was increased in the cerebellum and spinal cord in advanced WNV-ND and showed hypertrophy of somata and processes of astrocytes and their neuron-centripetal migration and perineuronal topology, all consistent with reactive astrocytosis (response of CNS-intrinsic glial cells to damage and disease [Burda and Sofroniew, 2014], including flavivirus infections [Maximova and Pletnev, 2018]; Figure 6a). These changes in astrocyte morphology and topology corresponded to the significantly enriched GO terms related to glial cell activation and regulation of cell migration (Table 1).
 
@@ -108,7 +189,7 @@ Strong immunoreactivity for the lysosomal-associated membrane protein CD68 (unde
 
 Immunoreactivity for the lymphocytic protein markers CD20, CD4, and CD8 was detected in the cerebellum and spinal cord in advanced WNV-ND, consistent with infiltration of the CNS by peripheral CNS-extrinsic immune cells (Figure 6c). CD20 B cells were detected in the leptomeninges but not in the parenchyma of the cerebellum and only occasionally in perivascular sites in the spinal cord, suggesting limited migration of these cells beyond the initial sites of infiltration. CD4 T cells were detected mostly in the leptomeninges and at perivascular sites in both the cerebellum and spinal cord, and minimally in the parenchyma, also suggesting limited parenchymal migration of these cells. In contrast, numerous CD8 T cells were detected in leptomeningeal, perivascular, and parenchymal locations. Moreover, CD8 T cells displayed a neuron-centripetal migration and perineuronal topology. The infiltration of the CNS by these lymphocytic subtypes and differential regulation of their migration patterns corresponded to the significantly enriched GO terms related to the adaptive immune response and lymphocyte activation/migration (Table 1). In addition, the presence of the perivascular infiltration by B cells in the spinal cord gray matter, but not in the cerebellar cortex may be associated with the increased transcriptional regulation of B-cell apoptosis in the spinal cord but not in the cerebellum (Figure 5c), thus providing further support to the notion of differential lymphocytic responses to WNV infection in these two CNS regions.
 
-## Subtle coordinated transcriptional shifts correspond to alteration of the structural integrity and function of infected neurons
+#### Subtle coordinated transcriptional shifts correspond to alteration of the structural integrity and function of infected neurons
 
 Based on the identified subtle coordinated shifts in transcriptional regulation of the CNS homeostasis in WMV-ND (Figure 4e–h; Supplementary file 1 [‘Coordinated transcriptional shifts’]), we selected two major BPs and examined WNV-infected tissues by immunohistochemistry, using appropriate protein markers. These processes were: (i) virus infection of specific neuronal cell types; and (ii) disruption of structural integrity and function of infected neurons (Table 1).
 
@@ -138,7 +219,7 @@ Topography of the observed loss of the presynaptic compartments (Figure 7d; Figu
 
 Taken together, these results reveal numerous alterations of the structural integrity and function of infected neurons and suggest that the synapse is a major target of transcriptional dysregulation in WNV-infected cerebellar and spinal neurons, which is supported by evidence of changes in synaptic integrity at the level of protein expression.
 
-## WNV infection disrupts transcriptional regulation of synaptic organization and function
+### WNV infection disrupts transcriptional regulation of synaptic organization and function
 
 Having identified the synapse as the top transcriptionally dysregulated neuronal cell compartment in advanced WNV-ND, we next asked what specific synaptic subcompartments (hereafter referred as synaptic location) and BP (hereafter referred as function) were affected. We also sought to infer whether there was a loss or gain of synaptic functions based on the synaptic genes that were upregulated or downregulated during the symptomatic stages of WNV-ND. For this, we used the genomic analysis tool SynGO, a knowledge base that accumulates research about the synapse biology and includes about 3000 expert-curated GO annotations for 1112 synaptic genes (Koopmans et al., 2019). SynGO synaptic ontology can be visualized as sunburst diagrams for synaptic location and function (Figure 9a and b, respectively). To determine a precise impact of WNV infection on transcriptional regulation of the synapses, we used high stringency SynGO settings, where synaptic gene annotations are based exclusively on published experimental evidence from neuronal biological systems.
 
@@ -148,13 +229,486 @@ Having identified the synapse as the top transcriptionally dysregulated neuronal
 
 SynGO enrichment analysis of the DEGs annotated to the CC GO term synapse (GO:0045202) (Supplementary file 2, ‘Synaptic genes differentially expressed during WNV-ND’) at the advanced-symptomatic stage of WNV-ND revealed extensive transcriptional dysregulation of synapses in both the cerebellum and spinal cord (Figure 9c–f). In the cerebellum, the postsynapse was the most significantly affected synaptic subcompartment based on the lowest Q-value (Figure 9c; Table 2), followed by the presynapse and synaptic cleft, while the most affected synaptic functions were the synapse organization (regulation of synapse assembly/synapse adhesion between pre- and postsynapse), trans-synaptic signaling (modulation of chemical synaptic transmission), processes in presynapse (synaptic vesicle cycle), and processes in postsynapse (regulation of postsynaptic membrane potential/neurotransmitter receptor levels) (Figure 9d; Table 2). Compared to the cerebellum, the spinal cord had many more synaptic locations (Figure 9e; Table 2) and functions (Figure 9f; Table 2) affected and more enriched (including many sublocations and specific synaptic functions). These included synaptic locations such as the presynapse, synaptic membrane, synaptic cleft, and postsynapse; and synaptic functions such as synapse organization, trans-synaptic signaling, processes in pre- and postsynapse, metabolism, and transport. Full results of the SynGO enrichment analysis for all differentially expressed synaptic genes can be found in Supplementary file 3 (‘SynGO enrichment analysis results’).
 
+**Table 2.**
+ Enriched GO terms for the synaptic genes dysregulated in the cerebellum and spinal cord in WNV-ND.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">GO term ID</th>
+      <th rowspan="2">GO domain</th>
+      <th rowspan="2">GO term name - hierarchical structure</th>
+      <th colspan="2">Q-value</th>
+    </tr>
+    <tr>
+      <th>Spinal cord</th>
+      <th>Cerebellum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO:0045202</td>
+      <td>CC</td>
+      <td>synapse</td>
+      <td>7.13E-113</td>
+      <td>3.56E-35</td>
+    </tr>
+    <tr>
+      <td>GO:0097060</td>
+      <td>CC</td>
+      <td>├─ synaptic membrane</td>
+      <td>6.07E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0098793</td>
+      <td>CC</td>
+      <td>├─ presynapse</td>
+      <td>4.20E-51</td>
+      <td>4.19E-17</td>
+    </tr>
+    <tr>
+      <td>GO:0099523</td>
+      <td>CC</td>
+      <td>│ ├─ presynaptic cytosol</td>
+      <td>7.07E-05</td>
+      <td>1.79E-03</td>
+    </tr>
+    <tr>
+      <td>GO:0048786</td>
+      <td>CC</td>
+      <td>│ ├─ presynaptic active zone</td>
+      <td>1.52E-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0048787</td>
+      <td>CC</td>
+      <td>│  │ └─ presynaptic active zone membrane</td>
+      <td>3.25E-11</td>
+      <td>1.08E-06</td>
+    </tr>
+    <tr>
+      <td>GO:0098833</td>
+      <td>CC</td>
+      <td>│ ├─ presynaptic endocytic zone</td>
+      <td>6.87E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0008021</td>
+      <td>CC</td>
+      <td>│ ├─ synaptic vesicle</td>
+      <td>6.06E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0098992</td>
+      <td>CC</td>
+      <td>│ ├─ neuronal dense core vesicle</td>
+      <td>4.44E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0042734</td>
+      <td>CC</td>
+      <td>│ ├─ presynaptic membrane</td>
+      <td>4.46E-21</td>
+      <td>3.52E-10</td>
+    </tr>
+    <tr>
+      <td>GO:0043083</td>
+      <td>CC</td>
+      <td>├─synaptic cleft</td>
+      <td>5.66E-07</td>
+      <td>2.40E-05</td>
+    </tr>
+    <tr>
+      <td>GO:0098794</td>
+      <td>CC</td>
+      <td>├─ postsynapse</td>
+      <td>5.38E-80</td>
+      <td>4.68E-24</td>
+    </tr>
+    <tr>
+      <td>GO:0099524</td>
+      <td>CC</td>
+      <td>│ ├─ postsynaptic cytosol</td>
+      <td>1.61E-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099571</td>
+      <td>CC</td>
+      <td>│ ├─ postsynaptic cytoskeleton</td>
+      <td>2.60E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099572</td>
+      <td>CC</td>
+      <td>│ ├─ postsynaptic specialization</td>
+      <td>4.46E-44</td>
+      <td>4.94E-11</td>
+    </tr>
+    <tr>
+      <td>GO:0014069</td>
+      <td>CC</td>
+      <td>│  │ ├─ postsynaptic density</td>
+      <td>1.73E-34</td>
+      <td>3.60E-08</td>
+    </tr>
+    <tr>
+      <td>GO:0045211</td>
+      <td>CC</td>
+      <td>│ ├─ postsynaptic membrane</td>
+      <td>1.12E-21</td>
+      <td>6.60E-10</td>
+    </tr>
+    <tr>
+      <td>SYNGO:postsyn_ser</td>
+      <td>CC</td>
+      <td>│  └─ postsynaptic SER</td>
+      <td>3.30E-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNGO:synprocess</td>
+      <td>BP</td>
+      <td>process in the synapse</td>
+      <td>1.30E-87</td>
+      <td>2.74E-35</td>
+    </tr>
+    <tr>
+      <td>SYNGO:presynprocess</td>
+      <td>BP</td>
+      <td>├─ process in the presynapse</td>
+      <td>4.96E-21</td>
+      <td>4.11E-07</td>
+    </tr>
+    <tr>
+      <td>GO:0099509</td>
+      <td>BP</td>
+      <td>│ ├─ regulation of presynaptic cytosolic calcium levels</td>
+      <td>7.25E-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099504</td>
+      <td>BP</td>
+      <td>│ ├─ synaptic vesicle cycle</td>
+      <td>5.53E-21</td>
+      <td>2.01E-04</td>
+    </tr>
+    <tr>
+      <td>GO:0016079</td>
+      <td>BP</td>
+      <td>│  │ ├─ synaptic vesicle exocytosis</td>
+      <td>9.78E-13</td>
+      <td>3.58E-03</td>
+    </tr>
+    <tr>
+      <td>GO:0099502</td>
+      <td>BP</td>
+      <td>│  │ │ ├─ calcium-dependent activation of synaptic vesicle fusion</td>
+      <td>4.74E-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:2000300</td>
+      <td>BP</td>
+      <td>│  │ │ ├─ regulation of synaptic vesicle exocytosis</td>
+      <td>1.82E-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0016082</td>
+      <td>BP</td>
+      <td>│  │ │ └─ synaptic vesicle priming</td>
+      <td>4.88E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0048488</td>
+      <td>BP</td>
+      <td>│  │ └─ synaptic vesicle endocytosis</td>
+      <td>6.15E-06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNGO:postsynprocess</td>
+      <td>BP</td>
+      <td>├─ process in the postsynapse</td>
+      <td>5.44E-17</td>
+      <td>8.45E-06</td>
+    </tr>
+    <tr>
+      <td>GO:0099566</td>
+      <td>BP</td>
+      <td>│ ├─ regulation of postsynaptic cytosolic calcium levels</td>
+      <td>2.92E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0060078</td>
+      <td>BP</td>
+      <td>│ ├─ regulation of postsynaptic membrane potential</td>
+      <td>2.75E-07</td>
+      <td>1.63E-03</td>
+    </tr>
+    <tr>
+      <td>GO:0099072</td>
+      <td>BP</td>
+      <td>│ ├─ regulation of postsynaptic membrane neurotransmitter receptor levels</td>
+      <td>6.34E-08</td>
+      <td>1.10E-02</td>
+    </tr>
+    <tr>
+      <td>GO:0099645</td>
+      <td>BP</td>
+      <td>│  │ ├─ neurotransmitter receptor localization to postsynaptic specialization membrane</td>
+      <td>1.70E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099149</td>
+      <td>BP</td>
+      <td>│  │ └─ regulation of postsynaptic neurotransmitter receptor endocytosis</td>
+      <td>9.33E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099537</td>
+      <td>BP</td>
+      <td>│ ├─ trans-synaptic signaling</td>
+      <td>1.47E-20</td>
+      <td>8.11E-13</td>
+    </tr>
+    <tr>
+      <td>GO:0007268</td>
+      <td>BP</td>
+      <td>│  │ └─ chemical synaptic transmission</td>
+      <td>1.11E-17</td>
+      <td>1.43E-10</td>
+    </tr>
+    <tr>
+      <td>GO:0050804</td>
+      <td>BP</td>
+      <td>│  │ ├─ modulation of chemical synaptic transmission</td>
+      <td>8.44E-11</td>
+      <td>1.63E-07</td>
+    </tr>
+    <tr>
+      <td>GO:0099171</td>
+      <td>BP</td>
+      <td>│  │ │ └─ presynaptic modulation of chemical synaptic transmission</td>
+      <td>9.43E-05</td>
+      <td>7.08E-04</td>
+    </tr>
+    <tr>
+      <td>GO:0099170</td>
+      <td>BP</td>
+      <td>│  │  └─ postsynaptic modulation of chemical synaptic transmission</td>
+      <td>2.89E-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0050808</td>
+      <td>BP</td>
+      <td>├─ synapse organization</td>
+      <td>4.53E-45</td>
+      <td>4.99E-14</td>
+    </tr>
+    <tr>
+      <td>GO:0099173</td>
+      <td>BP</td>
+      <td>│ ├─ postsynapse organization</td>
+      <td>5.47E-15</td>
+      <td>1.91E-02</td>
+    </tr>
+    <tr>
+      <td>GO:0099010</td>
+      <td>BP</td>
+      <td>│  │ └─ modification of postsynaptic structure</td>
+      <td>1.92E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099181</td>
+      <td>BP</td>
+      <td>│  │ ├─ structural constituent of presynapse</td>
+      <td>1.46E-06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0098882</td>
+      <td>BP</td>
+      <td>│  │ │ ├─ structural constituent of active zone</td>
+      <td>9.80E-06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099186</td>
+      <td>BP</td>
+      <td>│  │ └─ structural constituent of postsynapse</td>
+      <td>2.40E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099560</td>
+      <td>BP</td>
+      <td>│ ├─ synapse adhesion between pre- and post-synapse</td>
+      <td>8.52E-06</td>
+      <td>4.79E-03</td>
+    </tr>
+    <tr>
+      <td>GO:0007416</td>
+      <td>BP</td>
+      <td>│ ├─ synapse assembly</td>
+      <td>1.75E-10</td>
+      <td>2.01E-04</td>
+    </tr>
+    <tr>
+      <td>GO:0099054</td>
+      <td>BP</td>
+      <td>│  │ ├─ presynapse assembly</td>
+      <td>8.02E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0051963</td>
+      <td>BP</td>
+      <td>│  │ ├─ regulation of synapse assembly</td>
+      <td>4.99E-07</td>
+      <td>1.19E-04</td>
+    </tr>
+    <tr>
+      <td>GO:1905606</td>
+      <td>BP</td>
+      <td>│  │ │ ├─ regulation of presynapse assembly</td>
+      <td>1.37E-04</td>
+      <td>2.76E-04</td>
+    </tr>
+    <tr>
+      <td>GO:0097107</td>
+      <td>BP</td>
+      <td>│  │ │ └─ postsynaptic density assembly</td>
+      <td>1.03E-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0060074</td>
+      <td>BP</td>
+      <td>│ ├─ synapse maturation</td>
+      <td>6.28E-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0099188</td>
+      <td>BP</td>
+      <td>│  └─ postsynaptic cytoskeleton organization</td>
+      <td>2.89E-04</td>
+      <td>1.46E-03</td>
+    </tr>
+    <tr>
+      <td>SYNGO:metabolism</td>
+      <td>BP</td>
+      <td>├─ metabolism</td>
+      <td>1.69E-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNGO:catabolic_postsynapse</td>
+      <td>BP</td>
+      <td>│  │ └─ protein catabolic process at postsynapse</td>
+      <td>2.40E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNGO:transport</td>
+      <td>BP</td>
+      <td>└─ transport</td>
+      <td>1.48E-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GO:0098887</td>
+      <td>BP</td>
+      <td>│  └─ neurotransmitter receptor transport, endosome to postsynaptic membrane</td>
+      <td>2.40E-03</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The top-level GO terms 'synapse' and 'process in the synapse' and major successive terms for synaptic subcompartments and processes are highlighted for the cerebellum and spinal cord at the advanced-symptomatic stage of WNV-ND. CC, cellular component; BP, biological process._
+
 Analysis of upregulated versus downregulated synaptic genes in the cerebellum at the early-symptomatic stage of WNV-ND showed that 80% of synaptic genes were upregulated and 20% were downregulated (Table 3). The upregulated synaptic genes were postsynaptic while the downregulated genes were presynaptic. Transcriptional regulation in the spinal cord at this early-symptomatic stage of WNV-ND was characterized by a similar number of upregulated (51.2%) and downregulated (48.8%) synaptic genes, which were annotated to both the presynapse and postsynapse and had functions in synapse organization and chemical synaptic transmission (Table 3).
+
+**Table 3.**
+ Enriched GO terms for the upregulated or downregulated synaptic genes in WNV-infected cerebellum and spinal cord.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Number of upregulated genes (percent)</td>
+      <td>Enriched GO terms</td>
+      <td>Number of downregulated genes (percent)</td>
+      <td>Enriched GO terms</td>
+    </tr>
+    <tr>
+      <td>Early-symptomatic</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>24 (80%)</td>
+      <td>postsynaptic specialization</td>
+      <td>6 (20%)</td>
+      <td>presynapse</td>
+    </tr>
+    <tr>
+      <td>Spinal cord</td>
+      <td>44 (51.2%)</td>
+      <td>presynapse; postsynapse; postsynaptic specialization; synapse organization; synapse assembly; chemical synaptic transmission</td>
+      <td>42 (48.8%)</td>
+      <td>postsynapse; postsynaptic specialization; synapse organization; regulation of postsynaptic membrane neurotransmitter receptor levels; modulation of chemical synaptic transmission</td>
+    </tr>
+    <tr>
+      <td>Advanced-symptomatic</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>67 (45.9%)</td>
+      <td>synapse organization; regulation of synapse assembly; presynaptic active zone membrane; presynaptic modulation of chemical synaptic transmission; postsynaptic specialization; metabolism</td>
+      <td>79 (54.1%)</td>
+      <td>regulation of synapse organization; regulation of presynapse assembly; presynaptic cytosol; presynaptic active zone membrane; regulation of presynaptic membrane potential; postsynaptic actin cytoskeleton organization; postsynaptic specialization; regulation of postsynaptic membrane neuro-transmitter receptor levels; regulation of postsynaptic membrane potential; synapse adhesion between pre- and postsynapse; regulation of synaptic vesicle cycle; modulation of chemical synaptic transmission</td>
+    </tr>
+    <tr>
+      <td>Spinal cord</td>
+      <td>109 (28.5%)</td>
+      <td>synapse organization; regulation of synapse assembly; synaptic vesicle membrane; synapse adhesion between pre- and post-synapse; synaptic cleft; presynaptic active zone membrane; presynaptic modulation of chemical synaptic transmission; postsynaptic specialization; synaptic vesicle cycle; modulation of chemical synaptic transmission</td>
+      <td>274 (71.5%)</td>
+      <td>regulation of synapse organization; synaptic vesicle membrane; neuronal dense core vesicle; regulation of synaptic vesicle cycle; synaptic vesicle neurotransmitter loading; synaptic vesicle priming; synapse adhesion between pre- and postsynapse; synaptic cleft; structural constituent of presynapse; presynaptic cytosol; presynaptic active zone cytoplasmic component; presynaptic active zone membrane; presynaptic endocytic zone; regulation of presynapse assembly; regulation of presynaptic cytosolic calcium levels; regulation of presynaptic membrane potential; presynaptic modulation of chemical synaptic transmission; structural constituent of postsynapse; regulation of postsynapse organization; postsynaptic cytosol; regulation of modification of postsynaptic actin cytoskeleton; modification of postsynaptic structure; postsynaptic specialization assembly; regulation of postsynaptic cytosolic calcium levels; regulation of calcium-dependent activation of synaptic vesicle fusion; protein catabolic process at postsynapse; regulation of postsynaptic membrane neurotransmitter receptor levels; regulation of postsynaptic neurotransmitter receptor activity; regulation of postsynaptic membrane potential; postsynaptic modulation of chemical synaptic transmission; transport; metabolism</td>
+    </tr>
+  </tbody>
+</table>
 
 At the advanced-symptomatic stage of WNV-ND, the number of downregulated synaptic genes increased relative to upregulated genes in both the cerebellum and spinal cord, with a higher percentage of downregulated genes in the spinal cord (71.5%). Nonetheless, about one third of the differentially expressed synaptic genes were upregulated at this stage in both the cerebellum and spinal cord (45.9% and 28.5%, respectively). The upregulated and downregulated synaptic genes shared their annotated location and function suggesting a bidirectional dysregulation of transcriptional synaptic homeostasis in WNV-ND, affecting the spinal cord to a higher degree compared to the cerebellum (Table 3). Full results of the SynGO enrichment analysis for the upregulated and downregulated synaptic genes can be found in Supplementary File S4 (‘SynGO enrichment: up- and downregulated synaptic genes’).
 
 Taken together, these findings suggest that WNV infection disrupts transcriptional homeostasis of the CNS synapses and impairs neurotransmission.
 
-## WNV infection induces differential expression of pleiotropic genes with a triple immune, neural, and synaptic topology and functionality
+### WNV infection induces differential expression of pleiotropic genes with a triple immune, neural, and synaptic topology and functionality
 
 Since functional analysis of genes upregulated at the presymptomatic (3 dpi) stage of WNV-ND showed that some of genes (MX1 and STAT1) have a dual immune-neural functionality (i.e., being pleiotropic), we next sought to determine whether the number of such genes increased as infection progressed. With a focus on the advanced-symptomatic stage of WNV-ND, that had the highest number of dysregulated genes, we identified overlaps in DEGs annotated to the immune or nervous system (hereafter referred as immune or neural DEGs, respectively) (Figure 10a).
 
@@ -168,6 +722,173 @@ We next identified 94 and 179 common immune-neural DEGs that were induced in the
 
 We next asked what neuronal locations and functions were under transcriptional control by the WNV-induced pleiotropic genes. Somatodendritic compartment, neuron projection, and synapse were identified as the main neuronal targets of regulation by pleiotropic genes (ORT; CC GO domain; FDR < 0.05) (Table 4). Neuron projection development, regulation of the neuron death, microglial/astroglial cell activation/migration, axon guidance, synapse structure/activity, postsynapse to nucleus signaling, and synapse pruning were identified as the main functions regulated by pleiotropic genes (ORT; BP GO domain; FDR < 0.05) (Table 4). The complete functional annotations for the pleiotropic immune-neural genes in WNV-infected cerebellum and spinal cord are provided in Supplementary file 6 (‘ORT: Immune-neural pleiotropic DEGs’).
 
+**Table 4.**
+ Neuronal cell compartments and neural functions controlled by West Nile virus (WNV)-induced immune-neural pleiotropic differentially expressed genes (DEGs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GO domain</th>
+      <th>GO term</th>
+      <th>No. of genes</th>
+      <th>Gene symbols</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Cerebellum</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>somatodendritic compartment (GO:0036477)</td>
+      <td>19</td>
+      <td>MBP, HCLS1, ITGA4, PTX3, FCGR2B, ZBP1, CCR2, CYFIP1, CTSL2, CIB1, AIF1, SOS1, ANXA3, CD3E, S100B, FLNA, MAPK1, ITGA1, TGFB2</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>neuron projection (GO:0043005)</td>
+      <td>19</td>
+      <td>MBP, EPHA2, HCLS1, ITGA4, FCGR2B, ZBP1, VIM, CCR2, BCL11B, CYFIP1, CTSL2, CIB1, ANXA3, CD3E, FLNA, MAPK1, ITGA1, TGFB2, ODZ1</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>postsynapse (GO:0098794)</td>
+      <td>11</td>
+      <td>JAK2, HCLS1, C1QA, FCGR2B, ZBP1, CYFIP1, STAT3, SOS1, CD3E, FLNA, MAPK1</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>neuron projection development (GO:0031175)</td>
+      <td>25</td>
+      <td>EPHA2, JAK2, IL6, HCLS1, ITGA4, ADM, RHOG, SHC1, BCL11B, CYFIP1, SDC4, LST1, DOK2, CXCR4, SEMA4A, CSF1R, SOS1, CD3E, S100B, HMGB1, GATA3, MAPK1, CXCL12, ITGA1, NCKAP1L</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>positive regulation of neuron death (GO:1901216)</td>
+      <td>13</td>
+      <td>PTX3, C1QA, FCGR2B, IFNG, BAX, TYROBP, TNF, BCL2L11, GRN, TLR4, ITGA1, TGFB2, CCL3</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>microglial cell activation (GO:0001774)</td>
+      <td>10</td>
+      <td>JAK2, C1QA, IFNG, TLR2, TYROBP, TNF, FPR2, AIF1, GRN, C5AR1</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>astrocyte activation (GO:0048143)</td>
+      <td>7</td>
+      <td>C1QA, IFNG, TNF, FPR2, IL1B, GRN, C5AR1</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>glial cell migration (GO:0008347)</td>
+      <td>4</td>
+      <td>P2RY12, CCL2, TGFB2, CCL3</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>axon guidance (GO:0007411)</td>
+      <td>12</td>
+      <td>EPHA2, RHOG, SHC1, BCL11B, CYFIP1, DOK2, CXCR4, CSF1R, SOS1, GATA3, MAPK1, CXCL12</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>postsynapse to nucleus signaling pathway (GO:0099527)</td>
+      <td>3</td>
+      <td>JAK2, STAT3, RELA</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>regulation of synapse structure or activity (GO:0050803)</td>
+      <td>8</td>
+      <td>HCLS1, FCGR2B, TLR2, SEMA4D, CYFIP1, TNF, SLC7A11, SEMA4A</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>positive regulation of glutamate receptor signaling pathway (GO:1900451)</td>
+      <td>3</td>
+      <td>IFNG, CCR2, CCL2</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>synapse pruning (GO:0098883)</td>
+      <td>2</td>
+      <td>C1QA, C3</td>
+    </tr>
+    <tr>
+      <td colspan="4">Spinal cord</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>somatodendritic compartment (GO:0036477)</td>
+      <td>39</td>
+      <td>REG1A, HSP90AA1, HCLS1, DAB2IP, DHX36, ITGA4, PTX3, FCGR2B, ZBP1, CX3CL1, BCR, HSP90AB1, PTK2B, RARA, FZD3, PSEN1, CCR2, APP, CASP3, PAFAH1B1, DOCK10, ALCAM, ARHGEF7, CTSL2, CIB1, AIF1, PTK2, P2RX4, RTN4, KIF5B, PURA, ADAM10, SNAP25, DNM2, FLNA, MAPK1, NEDD4, BECN1, ITGA1</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>neuron projection (GO:0043005)</td>
+      <td>46</td>
+      <td>REG1A, EPHA2, HSP90AA1, HCLS1, DAB2IP, DHX36, ITGA4, FCGR2B, ZBP1, CX3CL1, BCR, HSP90AB1, PTK2B, RARA, FZD3, PSEN1, VIM, CCR2, APP, LRRC7, BSG, PAFAH1B1, DOCK10, ALCAM, ARHGEF7, CTSL2, CIB1, ARF1, PTK2, ITGA3, CYFIP2, P2RX4, KIF5B, PURA, ADAM10, NCAM1, SNAP25, DNM2, FLNA, MAPK1, NEDD4, BECN1, ITGA1, CEP290, ODZ1, BRAF</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>axon (GO:0030424)</td>
+      <td>25</td>
+      <td>REG1A, HSP90AA1, DAB2IP, DHX36, ITGA4, ZBP1, BCR, HSP90AB1, PTK2B, FZD3, PSEN1, APP, LRRC7, BSG, PAFAH1B1, ALCAM, CIB1, ITGA3, P2RX4, KIF5B, ADAM10, SNAP25, DNM2, FLNA, MAPK1</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>synapse (GO:0045202)</td>
+      <td>37</td>
+      <td>HCLS1, C1QA, FCGR2B, ZBP1, RAB35, BCR, PTK2B, FZD3, PSEN1, FZD3, NCSTN, APP, LRRC7, STAT3, PAFAH1B1, DOCK10, LYN, ARF1, PTK2, ITGA3, CYFIP2, EFNB1, RELA, P2RX4, RTN4, PURA, ADAM10, PTPRZ1, SNAP25, DNM2, FLNA, MAPK1, NEDD4, PTN, FGFR2, PAK2, ANXA1</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>glutamatergic synapse (GO:0098978)</td>
+      <td>14</td>
+      <td>BCR, PTK2B, FZD3, STAT3, LYN, ARF1, RELA, PURA, ADAM10, SNAP25, DNM2, FLNA, NEDD4, PAK2</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>neuron projection development (GO:0031175)</td>
+      <td>50</td>
+      <td>EPHA2, HSP90AA1, HCLS1, IL6, DAB2IP, PIK3R1, ITGA4, SLC11A2, HES1, ADM, JUN, RAB35, HSP90AB1, SEC24B, PTK2B, FZD3, APP, SHC1, PTPN11, CASP3, LST1, BSG, PAFAH1B1, DOK2, DOCK10, ALCAM, LYN, RPS6KA5, PTK2, EIF2AK4, SRF, CYFIP2, SEMA4A, EFNB1, CSF1R, RTN4, KIF5B, PTPRZ1, NCAM1, HMGB1, DNM2, GATA3, MAPK1, CXCL12, NEDD4, PTN, ITGA1, STK4, FGFR2, PAK2</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>microglial cell activation (GO:0001774)</td>
+      <td>14</td>
+      <td>TREM2, C1QA, IFNGR1, JUN, IFNG, CX3CL1, TLR2, APP, TYROBP, TNF, FPR2, AIF1, GRN, C5AR1</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>astrocyte activation (GO:0048143)</td>
+      <td>11</td>
+      <td>TREM2, C1QA, IFNGR1, IFNG, PSEN1, APP, TNF, FPR2, IL1B, GRN, C5AR1</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>regulation of glial cell migration (GO:1903975)</td>
+      <td>8</td>
+      <td>TREM2, CX3CL1, CCR2, GPR183, CSF1, P2RY12, P2RX4, CCL3</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>regulation of synapse structure or activity (GO:0050803)</td>
+      <td>17</td>
+      <td>HCLS1, DAB2IP, DHX36, FCGR2B, TLR2, FZD3, APP, SEMA4D, TNF, PAFAH1B1, SLC7A11, PTK2, SEMA4A, ADAM10, DNM2, NEDD4, PTN</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>synapse pruning (GO:0098883)</td>
+      <td>3</td>
+      <td>TREM2, C1QA, CX3CL1</td>
+    </tr>
+  </tbody>
+</table>
+
 Since functional characterization of WNV-induced pleiotropic immune-neural DEGs suggested that the synapse is one of their major targets in the neuron, we next determined the overlap between these pleiotropic DEGs and WNV-induced synaptic DEGs identified (Supplementary file 2, ‘Synaptic genes differentially expressed during WNV-ND’). To compare these genes, we focused on the advanced-symptomatic stage of WNV-ND in the spinal cord since it had the highest number of genes in both groups. A Venn diagram comparison identified an overlap containing 36 immune-neural-synaptic pleiotropic DEGs, of which 19 were upregulated and 17 were downregulated (Figure 9b; Supplementary file 7, ‘Immune-neural-synaptic pleiotropic genes’). Functional GO enrichment analysis of the upregulated genes in this overlap indicated that they had multiple roles in the positive regulation of the following functions: (i) immune/defense response to virus; (ii) nervous system development (neurogenesis/gliogenesis); and (iii) neuronal cell body/projections/synapses-specific processes (Figure 10c and d). These processes were also significantly enriched for the downregulated pleiotropic genes, with a trend of less significant (compared to upregulated genes) enrichment of immune processes and more significant enrichment of processes related to the organization, structure, and/or activity of the neuronal compartments (Figure 10e and f). Full results of functional GO enrichment analysis for the upregulated and downregulated pleiotropic immune-neural-synaptic genes are provided in Supplementary file 8 (‘gProfiler: Immune-neural-synaptic pleiotropic DEGs’).
 
 Interestingly, interrogation of specific pleiotropic genes showed that the gene C1QA that encodes a major constituent of the complement system subcomponent C1, was upregulated and mapped to significantly enriched GO terms associated with (i) immune/defense response to virus infection, (ii) glial cell response, (iii) neuron differentiation, and (iv) synapse (Supplementary file 8, gProfiler: Immune-neural-synaptic pleiotropic DEGs’), as well as synaptic pruning (Table 4).
@@ -176,7 +897,7 @@ Since the synapse emerged as the neuronal cell compartment most significantly en
 
 Taken together, these results indicate that WNV infection of neurons induces differential expression of pleiotropic genes that have multiple functionalities. Strikingly, we found that in addition to their expected role in immune/defense responses during WNV-ND, these genes also regulated distinct functions in neurons and their synapses. This suggests that WNV infection of neurons disrupts transcriptional homeostasis of the immune-neural-synaptic axis with possible off-target effects of virus-induced immune responses on neural function.
 
-## Validation of WNV-ND transcriptome
+### Validation of WNV-ND transcriptome
 
 We performed the validation of the WNV-ND transcriptome in NHPs at the level of select transcript expression by the qPCR. The genes for qPCR validation were selected based on their involvement in the regulation of several BPs that were found to be affected in this study: cellular calcium ion homeostasis (CALB1); excitatory synapses (GRIA1); inhibitory synapses (GABRA2 and GABBR1); perineuronal/perisynaptic extracellular matrix (TNC); astrocyte activation (GFAP); complement activation (C3); antigen processing and presentation via MHC class I (B2M); and immune cell chemotaxis/migration (CXCL10). qPCR analysis of these select transcripts had confirmed their significant (one-way ANOVA; p<0.05) dysregulation during WNV infection in the cerebella of NHPs (Supplementary file 10, ‘WNV-ND transcriptome validation’). In addition, a linear regression analysis returned the strong and significant correlations between the expression values for these select genes as determined by microarray or qPCR at the symptomatic stages of WNV-ND (early-symptomatic stage: R2 = 0.998, p<0.05; advanced-symptomatic stage: R2 = 0.987, p<0.05). Taken together, these results validate the transcriptome data by the qPCR and provide a strong additional support to the functional genomics of the WNV-ND in NHPs reported here.
 
@@ -204,24 +925,146 @@ In summary, our findings add a new dimension to understanding of regulation of t
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse polyclonal anti-WNV</td>
+      <td>ATCC</td>
+      <td>Cat. #: ATCCVR-1267 AF</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-synaptophysin (SY38)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab8049 RRID: AB_2198854</td>
+      <td>IHC (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-MAP2 (5F9)</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat. #: 05–346 RRID: AB_309685</td>
+      <td>IHC (1:6000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD68 (KP1)</td>
+      <td>Biocare Medical https://biocare.net/product/cd68-antibody/</td>
+      <td>Cat. #: CM 033</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFAP</td>
+      <td>Agilent</td>
+      <td>Cat. #: Z0334 RRID: AB_10013382</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD4 (4B12)</td>
+      <td>Biocare Medical https://biocare.net/product/cd4-4b12/</td>
+      <td>Cat. #: ACI 3148</td>
+      <td>IHC (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-CD8</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab4055 RRID: AB_304247</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-CD20 Clone L26</td>
+      <td>Agilent</td>
+      <td>Cat. #: M0755 RRID: AB_2282030</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Calbindin 28K</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat. #: AB1778 RRID: AB_2068336</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-ChAT Clone EPR16590</td>
+      <td>Abcam https://www.abcam.com/choline-acetyltransferase-antibody-epr16590-ab178850.html</td>
+      <td>Cat. #: ab178850</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Next-Generation Clustered Heatmaps interactive tool</td>
+      <td>PMID:29092932 https://build.ngchm.net/NGCHM-web-builder/View_HeatMap.html?adv=Y</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PANTHER</td>
+      <td>PMID:30804569</td>
+      <td>RRID:SCR_004869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reactome Knowledgebase</td>
+      <td>PMID:29145629</td>
+      <td>RRID:SCR_003485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SynGO</td>
+      <td>PMID:31171447</td>
+      <td>RRID:SCR_017330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>gProfiler</td>
+      <td>PMID:31066453</td>
+      <td>RRID:SCR_006809</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 Tissue samples from the cerebellum and spinal cord were selected from nine rhesus monkeys (Macaca mulatta; 2–3-year-old; seven males and two females) inoculated intrathalamically (bilaterally) with a dose of 5.0 log10 PFU of wild-type WNV strain NY99-35262 (hereafter WNV) that were used as a positive control in our prior study of the WNV vaccine safety (Maximova et al., 2014) and from the cerebellum and spinal cord of four rhesus monkeys (Macaca mulatta; 2–3-year-old; one male and three females) that were mock-inoculated intrathalamically (bilaterally) with an identical to virus inoculum volume (0.25 ml) (Maximova et al., 2014) of diluent without the virus (Leibovitz’s L-15 medium [Invitrogen], supplemented with SPG buffer stabilizer) (detailed procedure of the bilateral intrathalamic inoculation of NHPs is described previously [Maximova et al., 2008]). All animal experiments were approved by the NIAID DIR Animal Care and Use Committee (animal study proposal #LID 7E). The NIAID DIR Animal Care and Use Program, as part of the NIH Intramural Research Program, complies with all applicable provisions of the Animal Welfare Act (http://www.aphis.usda.gov/animal_welfare/downloads/awa/awa.pdf) and other Federal statutes and regulations relating to animals. The NIAID DIR Animal Care and Use Program is guided by the ‘U.S. Government Principles for the Utilization and Care of Vertebrate Animals Used in Testing, Research, and Training’ (http://oacu.od.nih.gov/regs/USGovtPrncpl.htm).
 
 Three WNV-infected and one mock-inoculated monkeys were euthanized at 3, 7, and 9 dpi. Detailed clinical, virological, and histopathological information about these animals can be found in our prior publications (Maximova et al., 2014). Tissue samples analyzed in this study were collected immediately following euthanasia and cardiac perfusion with a sterile saline in the BSL-3 environment. After removal, brains and spinal cords were aseptically dissected to be freshly preserved for RNA extraction (see later) or fixed in 10% phosphate-buffered formalin for immunohistochemistry, following the protocols similar to described previously (Maximova et al., 2014; Maximova et al., 2008). A central cerebellar coronal slice (4 mm thick) and a transverse lumbar spinal cord slice (4 mm thick) from each animal were used for RNA extraction. Immediately after dissection, each sample was placed into RNAlater (Ambion, AM7021) at 4°C. After a maximum 3 days of storage, the RNAlater was removed and tissues were stored at −80°C. For RNA extraction, the samples were thawed on ice and core tissue samples (3 mm in diameter; 4 mm thick) were extracted using sterile Harris Uni-Cores (Ted Pella, Redding, CA). The cerebellar cores were extracted from the spinocerebellar and cerebrocerebellar areas of the cerebellar cortex (including the molecular layer, Purkinje cell layer, granule cell layer, and white matter), as well as from the deep cerebellar nuclei, and pooled for each animal. The spinal cores were extracted from the ventral horns of the spinal gray matter bilaterally and pooled for each animal.
 
-## Gene expression analysis
+### Gene expression analysis
 
 Microarray experiments were performed at the Research Technologies Branch, Rocky Mountain Laboratories (NIAID, NIH). The miRNeasy Mini kit (Qiagen) was used to extract total RNA via the QIAcube robot (Qiagen). To prepare target, 50 ng of each RNA sample was used as template for the Ovation V2 RNA Amplification System (Nugen, Cat#3100) to make amplified cDNA, which was purified using QIAquick 96-well (Qiagen) protocol. The cDNA (3.75 μg) was fragmented and labeled using the Encore Biotin Labeling Kit (Nugen, Cat# 4200), hybridized onto the Rhesus Macaque GeneChip (Affymetrix, P/N 90065), washed, and scanned according to manufacturer’s instructions. Microarray data were normalized using Affymetrix Expression Console Software and gene expression analyzed using Affymetrix Transcriptome Analysis Console (Santa Clara, CA). Differentially expressed transcripts identified by ANOVA were arithmetically averaged and compared ratiometrically to average expression in control tissue for visualization using Spotfire Analyst (TIBCO; Palo Alto, CA) and fold changes (FC) ≤−2 and ≥2.0, false discovery rate (FDR) < 0.05 were used as cut-offs to define the significantly DEGs for subsequent functional genomic analyses. The NHP gene expression data have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession number GSE122798 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE122798).
 
-## Genomic analyses
+### Genomic analyses
 
 Genomic heat maps were created using the Next-Generation Clustered Heatmaps interactive tool (Broom et al., 2017) https://build.ngchm.net/NGCHM-web-builder/View_HeatMap.html?adv=Y. The Reactome Knowledgebase (Fabregat et al., 2018) was used to identify and visualize the significantly affected biological domains and pathways (p<0.05). The PANTHER classification system (Mi et al., 2019) was used to identify significantly enriched (FDR < 0.05) GO terms by the ORT and the statistical enrichment test based on the Mann–Whitney U-test (Wilcoxon Rank-Sum test). The SynGO knowledgebase for the synapse (Koopmans et al., 2019) was used to determine the enrichment (FDR < 0.05) and to identify, annotate, and analyze the structural locations and functions of the significantly differentially expressed synaptic genes. As a background reference list, we used a list of genes expressed in the brain. This brain-expressed gene list contains 16,036 genes and is defined as ‘expressed in any GTEx v7 brain tissue’. This list was generated by ranking gene-expression levels in the brain versus other tissues (Ganna et al., 2016) using Genotype-Tissue Expression Consortia (GTEx) data (Lonsdale et al., 2013), and was kindly provided by Dr. Frank Koopmans (VU University and UMC Amsterdam). gProfiler (Raudvere et al., 2019) was used to identify the GO terms and pathways that were significantly enriched (FDR < 0.05) for the cell death processes and for the up- or downregulated pleiotropic immune-neural-synaptic DEGs.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Following euthanasia and cardiac perfusion with sterile saline, cerebellar and spinal tissue samples were immediately collected, fixed on 10% formalin for 7 days and processed for immunohistochemistry. Brightfield immunohistochemistry was performed following previously described procedures (Maximova et al., 2008). The following primary antibodies were used: WNV-specific primary antibodies in hyperimmune mouse ascitic fluid (ATCCVR-1267 AF; 1:1000); anti-synaptophysin (mouse monoclonal [SY38]; Abcam; 1:10); anti-MAP2 (mouse monoclonal [5F9]; Millipore-Sigma; 1:6000); anti-CD68 (mouse monoclonal [KP1]; Biocare Medical; 1:500); anti-GFAP (rabbit polyclonal; Agilent; 1:4000); anti-CD4 (mouse monoclonal; Biocare Medical; 1:10); anti-CD8 (rabbit polyclonal; Abcam; 1:400); and anti-CD20 (mouse monoclonal; Agilent; 1:200). Diaminobenzidine was used for colorimetric detection (brown) of each protein marker. Sections were counterstained with hematoxylin. Whole tissue section imaging was performed at ×40 magnification using the ScanScope AT2 (Leica Biosystems). Aperio eSlide Manager and ImageScope software were used for digital slide organization, viewing, acquisition, and analysis. Double immunofluorescent staining to identify WNV-infected neuronal cell types was performed using Bond RX (Leica Biosystems) according to manufacturer protocols and with the following primary antibodies: WNV-specific primary antibodies in hyperimmune mouse ascitic fluid (ATCCVR-1267 AF; 1:1000) (for WNV-antigens) and Calbindin 28K (rabbit polyclonal; Millipore-Sigma; 1:1000) (for Purkinje cells) or ChAT (rabbit monoclonal; Abcam [clone EPR16590]; 1:1000) (for spinal motor neurons) and host appropriate secondary antibodies labeled with red fluorescent dye Alexa Flour 594 (Life Technologies; 1:300) or biotinylated secondary antibody (Vector Laboratories; 1:200) and green fluorochrome streptavidin 488 (Life Technologies; 1:500) and DAPI nuclear counterstain (Vector Laboratories).
 
-## Validation of microarrays
+### Validation of microarrays
 
 Template cDNAs were synthesized from RNA samples using SuperScript VILOTM cDNA synthesis kit (ThermoScientific, Waltham, MA). Resulting cDNAs were purified using the QIAquick 96 PCR Purification Kit according to the manufacturer’s protocol (Qiagen, Valencia, CA). These purified cDNAs were used in the TaqMan qPCR validation assay. cDNAs were analyzed by qPCR using the reference gene TAF11 primers and probe in duplex with primers and probe for each select gene. Linear gene-to-reference gene ratios were calculated for each gene and sample. Normalized microarray values were used to calculate gene-to-reference ratios for each sample and gene. Spearman correlation (GraphPad Software, La Jolla, CA) was calculated between qPCR and microarray values. The list of primers is provided in Supplementary file 10 (‘WNV-ND transcriptome validation’).

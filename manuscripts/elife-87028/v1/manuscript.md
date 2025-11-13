@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03v5jj203 Biology and Evolution of Marine Organisms (BEOM), Stazione Zoologica Anton Dohrn Napoli Italy
-2. https://ror.org/03wg93s13 Sorbonne Université, CNRS, Biologie Intégrative des Organismes Marins (BIOM), Observatoire Océanologique Banyuls-sur-Mer France
+1. Biology and Evolution of Marine Organisms (BEOM), Stazione Zoologica Anton Dohrn Napoli Italy ([ROR:03v5jj203](https://ror.org/03v5jj203))
+2. Sorbonne Université, CNRS, Biologie Intégrative des Organismes Marins (BIOM), Observatoire Océanologique Banyuls-sur-Mer France ([ROR:03wg93s13](https://ror.org/03wg93s13))
 
 † Corresponding author
 
 ## Abstract
 
-Cephalochordates and tunicates represent the only two groups of invertebrate chordates, and extant cephalochordates – commonly known as amphioxus or lancelets – are considered the best proxy for the chordate ancestor, from which they split around 520 million years ago. Amphioxus has been an important organism in the fields of zoology and embryology since the 18 th century, and the morphological and genomic simplicity of cephalochordates (compared to vertebrates) makes amphioxus an attractive model for studying chordate biology at the cellular and molecular levels. Here we describe the life cycle of amphioxus, and discuss the natural histories and habitats of the different species of amphioxus. We also describe their use as laboratory animal models, and discuss the techniques that have been developed to study different aspects of amphioxus.
+Cephalochordates and tunicates represent the only two groups of invertebrate chordates, and extant cephalochordates – commonly known as amphioxus or lancelets – are considered the best proxy for the chordate ancestor, from which they split around 520 million years ago. Amphioxus has been an important organism in the fields of zoology and embryology since the 18th century, and the morphological and genomic simplicity of cephalochordates (compared to vertebrates) makes amphioxus an attractive model for studying chordate biology at the cellular and molecular levels. Here we describe the life cycle of amphioxus, and discuss the natural histories and habitats of the different species of amphioxus. We also describe their use as laboratory animal models, and discuss the techniques that have been developed to study different aspects of amphioxus.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ A fascinating drawing by the Italian scientific illustrator Comingio Merculiano 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87028/elife-87028-fig2-v1.jpg)
 
-**Figure 2.:** Amphioxus lanceolatus (now known as Branchiostoma lanceolatum).This drawing of adult amphioxus is based on research done at the Stazione Zoologica Anton Dohrn (SZN) between 1880 and 1890. Some of the amphioxus in the drawing are buried in the sand at the bottom of the sea, which is a relatively rare occurrence. The typical anatomical features of chordates (see Figure 1B) are clearly visible, which is a testament to the accuracy of Merculiano’s drawings.
+**Figure 2.:** This drawing of adult amphioxus is based on research done at the Stazione Zoologica Anton Dohrn (SZN) between 1880 and 1890. Some of the amphioxus in the drawing are buried in the sand at the bottom of the sea, which is a relatively rare occurrence. The typical anatomical features of chordates (see Figure 1B) are clearly visible, which is a testament to the accuracy of Merculiano’s drawings.
 
 The name cephalochordate (i.e., cephalo- (head) and -chordate (notochord)), which was proposed by Ernst Haeckel in the 1860s (Haeckel, 1866), does a good job of describing the peculiarity of their anatomy, with the notochord extending to the front of the animal, beyond the cerebral vesicle (i.e. the most anterior structure of the central nervous system). The anatomy of cephalochordates is considered vertebrate-like, but simpler, having a prototypical chordate body plan. Chordate synapomorphies, present in amphioxus and vertebrates, include a dorsal hollow nerve chord and notochord, pharyngeal slits, segmented muscles and gonads, post anal tail, and homologs of pronephric kidney, pituitary and thyroid (Figure 1B). However, some typical vertebrate characteristics are not present in amphioxus such as paired sensory organs (image-forming eyes or ears), paired appendages and migrating neural crest cells. Their embryonic development includes 10 developmental periods, from the zygote to the adult (Carvalho et al., 2021; Bertrand et al., 2021), which are extremely well conserved among different amphioxus species.
 

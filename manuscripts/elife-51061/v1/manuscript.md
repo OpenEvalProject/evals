@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Plants coordinate the polarity of hundreds of cells during vein formation, but how they do so is unclear. The prevailing hypothesis proposes that GNOM, a regulator of membrane trafficking, positions PIN-FORMED auxin transporters to the correct side of the plasma membrane; the resulting cell-to-cell, polar transport of auxin would coordinate tissue cell polarity and induce vein formation. Contrary to predictions of the hypothesis, we find that vein formation occurs in the absence of PIN-FORMED or any other intercellular auxin-transporter; that the residual auxin-transport-independent vein-patterning activity relies on auxin signaling; and that a GNOM -dependent signal acts upstream of both auxin transport and signaling to coordinate tissue cell polarity and induce vein formation. Our results reveal synergism between auxin transport and signaling, and their unsuspected control by GNOM in the coordination of tissue cell polarity during vein patterning, one of the most informative expressions of tissue cell polarization in plants.
+Plants coordinate the polarity of hundreds of cells during vein formation, but how they do so is unclear. The prevailing hypothesis proposes that GNOM, a regulator of membrane trafficking, positions PIN-FORMED auxin transporters to the correct side of the plasma membrane; the resulting cell-to-cell, polar transport of auxin would coordinate tissue cell polarity and induce vein formation. Contrary to predictions of the hypothesis, we find that vein formation occurs in the absence of PIN-FORMED or any other intercellular auxin-transporter; that the residual auxin-transport-independent vein-patterning activity relies on auxin signaling; and that a GNOM-dependent signal acts upstream of both auxin transport and signaling to coordinate tissue cell polarity and induce vein formation. Our results reveal synergism between auxin transport and signaling, and their unsuspected control by GNOM in the coordination of tissue cell polarity during vein patterning, one of the most informative expressions of tissue cell polarization in plants.
 
 ## Introduction
 
@@ -30,13 +30,13 @@ How auxin coordinates tissue cell polarity to induce vein formation is unclear, 
 
 ## Results
 
-## Testable predictions of the current hypothesis of coordination of tissue cell polarity and vein formation by auxin
+### Testable predictions of the current hypothesis of coordination of tissue cell polarity and vein formation by auxin
 
 The current hypothesis of how auxin coordinates tissue cell polarity to induce vein formation proposes that GN controls the cellular localization of PIN1 and possibly other auxin transporters; the resulting cell‐to‐cell, polar transport of auxin would coordinate tissue cell polarity and control developmental processes such as vein formation (reviewed in, e.g., Berleth et al., 2000; Richter et al., 2010; Nakamura et al., 2012; Linh et al., 2018). The hypothesis makes three testable predictions:
 
 Here we tested these predictions.
 
-## Testing prediction 1: Restriction of PIN1 expression domains and coordination of PIN1 polar localization occur abnormally, or fail to occur altogether, during gn leaf development
+### Testing prediction 1: Restriction of PIN1 expression domains and coordination of PIN1 polar localization occur abnormally, or fail to occur altogether, during gn leaf development
 
 We tested this prediction by imaging expression domains of PIN1::PIN1:YFP (PIN1:YFP fusion protein expressed by the PIN1 promoter [Xu et al., 2006]) and cellular localization of expression of PIN1::PIN1:GFP (Benková et al., 2003) during leaf development in WT and in the new strong allele gn‐13 (Supplementary file 1).
 
@@ -44,7 +44,7 @@ Consistent with previous reports (Benková et al., 2003; Reinhardt et al., 2003;
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig1-v1.jpg)
 
-**Figure 1.:** gn leaf development.(A–Q,T,U) Top right: leaf age in days after germination (DAG). (A–E) Veins form sequentially during Arabidopsis leaf development: the formation of the midvein (mv) is followed by the formation of the first loops of veins (‘first loops’; l1), which in turn is followed by the formation of second loops (l2) and minor veins (hv) (Mattsson et al., 1999; Sieburth, 1999; Kang and Dengler, 2004; Scarpella et al., 2004). Loops and minor veins differentiate in a tip-to-base sequence during leaf development. Increasingly darker grays depict progressively later stages of vein development. Boxes in C and D illustrate positions of closeups in P and T. l3: third loop. (F–W) Confocal laser scanning microscopy. First leaves. For simplicity, only half-leaves are shown in H–J and L–O. Dashed white line in F–R and T–V delineates leaf outline. (F–Q,T,U) Top right: genotype. (F–P,R–T,V,W) Bottom left: reproducibility index. (F–O) PIN1::PIN1:YFP expression; look‐up table (ramp in F) visualizes expression levels. (P,R–T,V,W) PIN1::PIN1:GFP expression; look‐up table (ramp in P) visualizes expression levels. Red: autofluorescence. Stars in P label cells of the developing second loop. (Q,U) PIN1::PIN1:YFP expression. Boxes in Q and in U illustrate positions of closeups in R and S, and in V and W, respectively. Bars: (F,P,R–T,V,W) 10 µm; (G,I,L,Q) 30 µm; (H,K) 20 µm; (J,M–O,U) 60 µm.
+**Figure 1.:** (A–Q,T,U) Top right: leaf age in days after germination (DAG). (A–E) Veins form sequentially during Arabidopsis leaf development: the formation of the midvein (mv) is followed by the formation of the first loops of veins (‘first loops’; l1), which in turn is followed by the formation of second loops (l2) and minor veins (hv) (Mattsson et al., 1999; Sieburth, 1999; Kang and Dengler, 2004; Scarpella et al., 2004). Loops and minor veins differentiate in a tip-to-base sequence during leaf development. Increasingly darker grays depict progressively later stages of vein development. Boxes in C and D illustrate positions of closeups in P and T. l3: third loop. (F–W) Confocal laser scanning microscopy. First leaves. For simplicity, only half-leaves are shown in H–J and L–O. Dashed white line in F–R and T–V delineates leaf outline. (F–Q,T,U) Top right: genotype. (F–P,R–T,V,W) Bottom left: reproducibility index. (F–O) PIN1::PIN1:YFP expression; look‐up table (ramp in F) visualizes expression levels. (P,R–T,V,W) PIN1::PIN1:GFP expression; look‐up table (ramp in P) visualizes expression levels. Red: autofluorescence. Stars in P label cells of the developing second loop. (Q,U) PIN1::PIN1:YFP expression. Boxes in Q and in U illustrate positions of closeups in R and S, and in V and W, respectively. Bars: (F,P,R–T,V,W) 10 µm; (G,I,L,Q) 30 µm; (H,K) 20 µm; (J,M–O,U) 60 µm.
 
 In gn leaves too, PIN1::PIN1:YFP was expressed in all the cells at early stages of tissue development, and over time epidermal expression became restricted to the basalmost cells; however, inner tissue expression failed to become restricted to developing veins and remained nearly ubiquitous even at very late stages of leaf development (Figure 1K–O).
 
@@ -56,11 +56,23 @@ At late stages of gn leaf development, heterogeneity of PIN1::PIN1:GFP expressio
 
 In conclusion, both restriction of PIN1 expression domains and coordination of PIN1 polar localization occur only to a very limited extent or fail to occur altogether during gn leaf development, which is consistent with the current hypothesis of how auxin coordinates tissue cell polarity to induce vein formation.
 
-## Testing prediction 2: Auxin transport inhibition leads to defects that fall within the vascular phenotype spectrum of gn
+### Testing prediction 2: Auxin transport inhibition leads to defects that fall within the vascular phenotype spectrum of gn
 
-## Vascular phenotype spectrum of gn
+#### Vascular phenotype spectrum of gn
 
 WT Arabidopsis grown under normal conditions forms separate leaves whose vein networks are defined by at least four reproducible features (Telfer and Poethig, 1994; Nelson and Dengler, 1997; Kinsman and Pyke, 1998; Candela et al., 1999; Mattsson et al., 1999; Sieburth, 1999; Steynen and Schultz, 2003; Sawchuk et al., 2013; Verna et al., 2015) (Figure 2A,B):
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig2-v1.jpg)
+
+**Figure 2.:** (A,B) Vein pattern of WT mature first leaf. In A: red, midvein; orange, loops; gray, minor veins. (B–J) Dark‐field illumination of mature first leaves illustrating phenotype classes (top right): class 0, narrow I‐shaped midvein and scalloped vein‐network outline (B); class a1, dense vein network and apically thickened vein‐network outline (not shown); class a2, open vein-network outline (C); class a3, fragmented vein network (D); class a4, open vein-network outline and fragmented vein network (E); class a5, open vein-network outline, fragmented vein network, and apically thickened vein‐network outline (F); class a6, wide midvein, dense network of thick veins, and jagged vein‐network outline (G); class a7, dense network of thick veins that fail to join the midvein in the bottom half of the leaf and pronouncedly jagged vein‐network outline (H); class a8, wide midvein and shapeless vascular cluster (I); class a9, fused leaves with wide midvein and shapeless vascular cluster (not shown); class a10, shapeless vascular cluster (J). (K–M) Details of vascular clusters illustrating vascular elements uniformly oriented perpendicular to the leaf margin (K) (class a6); vascular elements oriented seemingly randomly at the distal side of the cluster and parallel to the leaf axis at the proximal side of the cluster (L) (classes a8 and a9); and seemingly random orientation of vascular elements (M) (classes a8–a10). (N) Percentages of leaves in phenotype classes. Difference between gn‐18 and WT, between gnfwr and WT, between gnB/E and WT, between gnR5 and WT, between gnvan7 and WT, between gnvan7+fwr;gn‐13 and WT, between gnSALK_103014 and WT, between gn‐13 and WT, and between emb30‐8 and WT was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 66; gn‐18, 172; gnfwr, 43; gnB/E, 85; gnR5, 93; gnvan7, 109; gnvan7+fwr;gn‐13 no. 5, 97; gnvan7+fwr;gn‐13 no. 7, 93; gnSALK_103014, 32; gn‐13, 56; gnemb30‐8, 45. Bars: (B–F) 1 mm; (G) 0.75 mm; (H,I) 0.5 mm; (J) 0.25 mm; (K–M) 50 µm. See Figure 2—figure supplement 1 for effect of the gn-18 mutation on GN expression. See Figure 2—figure supplement 2 for alternative visual display of distribution of leaves in phenotype classes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** RT‐PCR analysis of GN expression in 4-day-old seedlings of WT and gn-18. The nearly evenly expressed ROC1 (Lippuner et al., 1994) was used as control. Look‐up table visualizes expression levels.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** See legend to Figure 2N for details of statistical analysis and sample population sizes.
 
 In the leaves of the new weak allele gn‐18 (Supplementary file 1) (Figure 2—figure supplement 1) closed loops were often replaced by open loops, that is loops that contact the midvein or other loops at only one of their two ends; and veins were often replaced by ‘vein fragments’, that is stretches of vascular elements that fail to contact other stretches of vascular elements at either one of their two ends (Figure 2C–E,N; Figure 2—figure supplement 2). Loops were open and veins were fragmented also in the leaves of both gnfwr (Okumura et al., 2013) and gnB/E (Geldner et al., 2004) (Figure 2N; Figure 2—figure supplement 2). In addition, the vein network of gnB/E leaves was denser (Figure 2F,N; Figure 2—figure supplement 2).
 
@@ -68,13 +80,29 @@ The vein network was denser also in all the leaves of the intermediate alleles g
 
 In most of the leaves of the strong alleles gnSALK_103014 (Okumura et al., 2013), gn‐13 and gnemb30‐8 (Franzmann et al., 1989; Moriwaki et al., 2014), a central, shapeless vascular cluster was connected with the basal part of the leaf by a wide midvein; vascular elements were oriented seemingly randomly at the distal side of the cluster and gradually more parallel to the leaf axis toward the proximal side of the cluster (Figure 2I,L–N; Figure 2—figure supplement 2). In the remaining leaves of these backgrounds, vascular differentiation was limited to a central, shapeless cluster of seemingly randomly oriented vascular elements (Figure 2J,M,N; Figure 2—figure supplement 2).
 
-## Vein pattern defects induced by auxin transport inhibition
+#### Vein pattern defects induced by auxin transport inhibition
 
-## Vein pattern defects of pin mutants
+##### Vein pattern defects of pin mutants
 
 Five of the eight PIN proteins of Arabidopsis (Paponov et al., 2005; Krecek et al., 2009; Viaene et al., 2013) — PIN1, PIN2, PIN3, PIN4, and PIN7 (hereafter collectively referred to as PM-PIN) — are primarily localized to the PM and catalyze cellular auxin efflux (Chen et al., 1998; Gälweiler et al., 1998; Luschnig et al., 1998; Müller et al., 1998; Friml et al., 2002a; Friml et al., 2002b; Friml et al., 2003; Petrásek et al., 2006; Yang and Murphy, 2009; Zourelidou et al., 2014). pin1 is the only pin single mutant with vein pattern defects, and the vein pattern defects of double mutants between pin1 and pin2, pin3, pin4, or pin7 are no different from those of pin1 single mutants (Sawchuk et al., 2013), suggesting that either PIN2, PIN3, PIN4, and PIN7 have no function in PIN1‐dependent vein patterning or their function in this process is redundant. To discriminate between these possibilities, we first assessed the collective contribution to PIN1‐dependent vein patterning of PIN3, PIN4, and PIN7, whose translational fusions to GFP (Zadnikova et al., 2010; Bennett et al., 2016; Belteton et al., 2018) (Supplementary file 1) are all expressed, as are translational fusions of PIN1 to GFP (Benková et al., 2003; Heisler et al., 2005; Scarpella et al., 2006; Wenzel et al., 2007; Bayer et al., 2009; Marcos and Berleth, 2014), in both epidermal and inner cells of the developing leaf (Figure 3A,C–E).
 
 Consistent with previous reports (Sawchuk et al., 2013; Verna et al., 2015), the vein patterns of most of the pin1 leaves were abnormal (Figure 3F,G,L; Figure 3—figure supplement 1A). pin3;pin4;pin7 (pin3;4;7 hereafter) embryos were viable and developed into seedlings (Supplementary file 2A) (Figure 3—figure supplement 2A) whose vein patterns were no different from those of WT (Figure 3L; Figure 3—figure supplement 1A). pin1,3;4;7 embryos were also viable (Supplementary file 2B) and developed into seedlings (Supplementary file 2C) (Figure 3—figure supplement 2A,B; Figure 3—figure supplement 3A–H) whose vein pattern defects were more severe than those of pin1 (Figure 3H–L; Figure 3—figure supplement 1A); however, as in WT, in pin1,3;4;7 vascular elements were still aligned along the length of the vein (Figure 3J,K).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig3-v1.jpg)
+
+**Figure 3.:** (A–K,M,N) Top right: expression‐reported gene, phenotype class, or genotype. (B–E) Bottom left: reproducibility index. (A–E) Confocal laser scanning microscopy with (A) or without (B–E) transmitted light; 4‐day‐old first leaves. Dashed magenta line delineates leaf outline. (A) PIN1::PIN1:GFP expression. (B) PIN2::PIN2:GFP expression. (C) PIN3::PIN3:GFP expression. (D) PIN4::PIN4:GFP expression. (E) PIN7::PIN7:GFP expression. (F–I,M,N) Dark‐field illumination images of mature first leaves illustrating phenotype classes: class b1, Y‐shaped midvein and scalloped vein‐network outline (F); class b2, fused leaves with scalloped vein‐network outline (G); class b3, thick veins and scalloped vein‐network outline (H); class b4, fused leaves with thick veins and scalloped vein‐network outline (I); class b7, wide midvein, more lateral‐veins, and conspicuous marginal vein (M); class b8, fused leaves with wide midvein, more lateral‐veins, and conspicuous marginal vein (N). (J,K) Differential interference images of details of WT (J) or pin1‐1,3;4;7 (K) illustrating normal (classes 0, b1, and b2) or thick (classes b3 and b4) veins, respectively. (L,O) Percentages of leaves in phenotype classes (Class 0 defined in Figure 2). (L) Difference between pin1‐1 and WT, between pin1‐134 and WT, between pin1‐1,3;4;7 and pin1‐1, and between pin1‐134,3;4;7 and pin1‐134 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 58; pin2;3;4;7, 49; pin3;4;7, 102; pin1‐1, 81; pin1‐134, 48; pin1‐1,3;4;7, 75; pin1‐134,3;4;7, 45; pin1‐1,3;2;4;7, 99. (O) Difference between pin1‐1,3,6;4;7;8 and pin1‐1,3;4;7 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 51; pin6;8, 47; pin1‐1,3;4;7, 49; pin1‐1,3,6;4;7;8, 73. Bars: (A–E) 0.1 mm; (F–H) 1 mm; (I) 5 mm; (J,K) 50 µm; (M,N) 0.5 mm. See Figure 3—figure supplement 1 for alternative visual display of distribution of leaves in phenotype classes. See Figure 3—figure supplement 2 for pin mutant seedlings. See Figure 3—figure supplement 3 for cotyledon patterns of pin mutants.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** See legend to Figure 3L (A) or to Figure 3O (B) for details of statistical analysis and sample population sizes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Dark‐field illumination composite of 3‐day‐old seedlings; genotypes below respective seedlings (A) or top right (B–D). (A) Overview. Because the seedling lineup was wider than the stereomicroscope’s field of view, overlapping images of parts of the lineup were acquired and combined to reconstruct the original lineup. (B–D) Details. Bars: (A) 2 mm; (B–D) 0.5 mm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–G) Dark‐field illumination of 3‐day‐old seedlings illustrating phenotype classes (bottom left): class α1, two separate cotyledons (A); class α2, fused cotyledons and separate single cotyledon (B); class α3, three separate cotyledons (C); class α4, fused cotyledons (D); class α5, single cotyledon (E); class α6, cup‐shaped cotyledon, side view (inset: top view) (F); class α7, small, hood‐like outgrowth (G: left, front view; right, side view). (H) Percentages of seedlings in phenotype classes. Difference between pin1‐1 and WT was significant at p<0.001 (***); between pin1‐1,3;4;7 and pin1‐1, and between pin1‐1,3,6;4;7;8 and pin1‐1 was significant at p<0.01 (**); and between pin1‐1,3;2;4;7 and pin1‐1,3;4;7seven was significant at p<0.05 (*) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 58; pin6;8, 50; pin3;4;7, 93; pin2;3;4;7, 88; pin1-1, 62; pin1‐1,3;4;7, 167; pin1‐1,3;2;4;7, 168; pin1‐1,3,6;4;7;8, 157. Bars: (A–E) 0.5 mm; (F) 0.25 mm; (G) 0.2 mm.
 
 We next asked whether mutation of PIN2, whose translational fusion to GFP (Xu and Scheres, 2005) is only expressed in epidermal cells in the developing leaf (Figure 3B), changed the spectrum of vein pattern defects of pin1,3;4;7.
 
@@ -86,17 +114,41 @@ As previously reported (Sawchuk et al., 2013), the vein pattern of pin6;8 was no
 
 In conclusion, PIN3, PIN4, and PIN7 provide no nonredundant function in vein patterning but collectively contribute to PIN1‐dependent vein patterning; PIN2 seems to have no function in this process; and the auxin‐transport pathway mediated by PIN1, PIN3, PIN4, and PIN7, and that mediated by PIN6 and PIN8 provide overlapping functions in vein patterning. Most important, loss of PIN‐dependent vein-patterning function fails to lead to defects that fall within the vascular phenotype spectrum of gn.
 
-## Vein pattern defects induced by chemical inhibition of auxin transport
+##### Vein pattern defects induced by chemical inhibition of auxin transport
 
 Cellular auxin efflux is inhibited by a class of structurally related compounds exemplified by N‐1‐naphthylphthalamic acid (NPA) (Cande and Ray, 1976; Katekar and Geissler, 1980; Sussman and Goldsmith, 1981). Because PM‐PIN proteins catalyze cellular auxin efflux (Chen et al., 1998; Petrásek et al., 2006; Yang and Murphy, 2009; Zourelidou et al., 2014), we asked whether defects resulting from simultaneous mutation of all the PM‐PIN genes with vein patterning function were phenocopied by growth of WT in the presence of NPA. To address this question, we compared defects of pin1,3;4;7 with those induced in WT by growth in the presence of NPA.
 
 The vein patterns of pin1,3;4;7 lacked all the characteristic defects induced in WT by NPA (Figure 4A,B,D,E,H; Figure 4—figure supplement 1). However, such defects were induced in pin1,3;4;7 by NPA (Figure 4F,H; Figure 4—figure supplement 1), suggesting that this background has residual NPA‐sensitive vein‐patterning activity. The vein pattern defects induced in WT or pin1,3;4;7 by NPA were no different from those of pin1,3,6;4;7;8 (Figure 4C,D–F,H; Figure 4—figure supplement 1). Because no additional defects were induced in pin1,3,6;4;7;8 by NPA (Figure 4G,H; Figure 4—figure supplement 1), the residual NPA‐sensitive vein‐patterning activity of pin1,3;4;7 is provided by PIN6 and PIN8.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig4-v1.jpg)
+
+**Figure 4.:** (A–G) Top right: genotype and treatment. Dark‐field illumination (A–D,F,G) or confocal laser scanning microscopy (E) of mature first leaves. (E) Detail illustrating thick veins in NPA‐grown WT (compare with Figure 3J). (H) Percentages of leaves in phenotype classes (defined in Figures 2 and 3). Sample population sizes: WT, 38; pin1‐1,3;4;7, 30; pin1‐1,3,6;4;7;8, 73; NPA‐grown WT, 41; NPA‐grown pin1‐1,3;4;7, 58; NPA‐grown pin1‐1,3,6;4;7;8, 48. Bars: (A–D,F,G) 0.5 mm, (E) 25 µm. See Figure 4—figure supplement 1 for alternative visual display of distribution of leaves in phenotype classes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** See legend to Figure 4H for details of statistical analysis and sample population sizes.
+
 In conclusion, growth in the presence of NPA phenocopies defects of loss of PIN‐dependent vein patterning function; in the absence of this function, any residual NPA‐sensitive vein‐patterning activity — if existing — becomes inconsequential; and neither loss of PIN‐dependent vein‐patterning function nor loss of NPA‐sensitive vein‐patterning activity leads to defects that fall within the vascular phenotype spectrum of gn.
 
-## Vascular phenotype of abcb mutants
+##### Vascular phenotype of abcb mutants
 
 Cellular auxin efflux is catalyzed not only by PM‐PIN proteins but by the PM‐localized ATP‐BINDING CASSETTE B1 (ABCB1) and ABCB19 proteins (Geisler et al., 2005; Bouchard et al., 2006; Petrásek et al., 2006; Blakeslee et al., 2007; Yang and Murphy, 2009), whose fusions to GFP (Dhonukshe et al., 2008; Mravec et al., 2008) are expressed at early stages of leaf development (Figure 5A,B). We asked whether ABCB1/19‐mediated auxin efflux were required for vein patterning.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig5-v1.jpg)
+
+**Figure 5.:** (A,B,E–H,J–M) Top right: expression‐reported gene, genotype, and treatment. (A,B) Bottom left: reproducibility index. (A,B) Confocal laser scanning microscopy; 5‐day‐old first leaves. Dashed magenta line delineates leaf outline. (A) ABCB1::ABCB1:GFP expression. (B) ABCB19::ABCB19:GFP expression. (C–H,J–M) Dark‐field illumination of mature first leaves. (C,D) Phenotype classes: class b5, thick veins and conspicuous marginal vein (C); class b6, fused leaves with thick veins and conspicuous marginal vein (D). (I,N) Percentages of leaves in phenotype classes (Classes 0, b1, b2, b7, and b8 defined in Figures 2 and 3). Difference between pin1‐1,3,6 and WT, between twd1 and WT, and between NPA‐grown WT and WT was significant at p<0.001 (***); and between NPA‐grown twd1 and NPA‐grown WT was significant at p<0.05 (*) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 41; abcb1;19, 40; pin1‐1,3,6, 80; pin1‐1,3,6;abcb1;19, 62; NPA‐grown WT, 43; NPA‐grown abcb1;19, 46; twd1, 41; NPA‐grown twd1, 46. (N) Difference between pin1‐1,3,6 and WT, between NPA‐grown WT and WT, and between NPA‐grown aux1‐21;lax1;2;3 and NPA‐grown WT was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 53; aux1‐21;lax1;2;3, 60; aux1‐355;lax1‐064, 77; pin1‐1,3,6, 75; pin1‐1,3,6;aux1‐355;lax1‐064, 58; NPA‐grown WT, 46; NPA‐grown aux1‐21;lax1;2;3, 40. Bars: (A,B) 0.1 mm; (C–H) 0.5 mm.; (J–M) 1 mm. See Figure 5—figure supplement 1 for alternative visual display of distribution of leaves in phenotype classes. See Figure 5—figure supplement 2 for cotyledon patterns of pin, abcb, and aux1/lax mutants. See Figure 5—figure supplement 3 for effect of the aux1-355 mutation on AUX1 expression and of the lax1-064 mutation on LAX1 expression.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** See legend to Figure 5I (A) or to Figure 5N (B) for details of statistical analysis and sample population sizes.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Percentages of seedlings in phenotype classes (defined in Figure 3—figure supplement 3). Difference between pin1‐1,3,6 and WT, between pin1‐1,3,6;abcb1;19 and pin1‐1,3,6, and between pin1‐1,3,6;aux1‐355;lax1‐064 and pin1‐1,3,6 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 56; abcb1;19, 75; aux1‐355;lax1‐064, 87; pin1‐1,3,6, 120; pin1‐1,3,6;abcb1;19, 94; pin1‐1,3,6;aux1‐355;lax1‐064, 110.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A,B) RT‐PCR analysis of expression of AUX1 (A) or LAX1 (B) in 4-day-old seedlings of WT and aux1-355 (A) or WT and lax1-064 (B). The nearly evenly expressed ROC1 (Lippuner et al., 1994) was used as control. Look‐up table (ramp in Figure 2—figure supplement 1) visualizes expression levels.
 
 The embryos of abcb1 and abcb19 were viable, but ~15% of abcb1;19 embryos died during embryogenesis (Supplementary file 2D); nevertheless, the vein patterns of abcb1, abcb19, and abcb1;19 were no different from the vein pattern of WT (Figure 5E,F,I; Figure 5—figure supplement 1A), suggesting that ABCB1/19‐mediated auxin efflux is dispensable for vein patterning.
 
@@ -110,7 +162,7 @@ Though some of the twd1 leaves had vein pattern defects (Figure 5I; Figure 5—f
 
 Therefore, the residual vein patterning activity in pin mutants or in their NPA‐induced phenocopy is not provided by ABCB1, ABCB19 or TWD1‐dependent ABCB‐mediated auxin transport, and loss of PIN‐ and ABCB‐mediated auxin transport fails to lead to defects that fall within the vascular phenotype spectrum of gn.
 
-## Vascular phenotype of aux1/lax mutants
+##### Vascular phenotype of aux1/lax mutants
 
 Auxin is predicted to enter the cell by diffusion and through an auxin influx carrier (Rubery and Sheldrake, 1974; Raven, 1975). In Arabidopsis, auxin influx activity is encoded by the AUX1, LAX1, LAX2, and LAX3 (AUX1/LAX) genes (Parry et al., 2001; Yang et al., 2006; Swarup et al., 2008; Péret et al., 2012). We asked whether AUX1/LAX‐mediated auxin transport were required for vein patterning.
 
@@ -122,15 +174,39 @@ The embryos derived from the self‐fertilization of PIN1,pin3,PIN6/pin1,pin3,pi
 
 Therefore, the residual vein patterning activity in pin mutants or in their NPA‐induced phenocopy is not provided by AUX1/LAX genes, and loss of PIN‐ and AUX1/LAX‐mediated auxin transport fails to lead to defects that fall within the vascular phenotype spectrum of gn.
 
-## Comparing the vein pattern defects induced by auxin transport inhibition with the vascular phenotype spectrum of gn
+#### Comparing the vein pattern defects induced by auxin transport inhibition with the vascular phenotype spectrum of gn
 
 Auxin transport inhibition leads to defects that are qualitatively different from and quantitatively weaker than those of gn (Figures 2–﻿4). Therefore, our results fail to support Prediction 2 of the current hypothesis of how auxin coordinates tissue cell polarity to induce vein formation. Consequently, the hypothesis must be revised.
 
-## Testing prediction 3: Auxin transport inhibition induces defects in gn that approximate those which it induces in GN
+### Testing prediction 3: Auxin transport inhibition induces defects in gn that approximate those which it induces in GN
 
 To test this prediction, we first asked what the phenotype were of the quintuple mutant between the strong allele gn‐13 (Figure 2) and mutation in PIN1, PIN3, PIN4, and PIN7 — that is the PM‐PIN genes with vein patterning function (Figure 3).
 
 gn;pin1,3;4;7 embryos were viable (Supplementary file 2J) and developed into seedlings (Supplementary file 2K) whose cotyledon and leaf vascular defects were no different from those of gn (Figure 6A,B,E; Figure 6—figure supplement 1; Figure 3—figure supplement 2A,B; Figure 3—figure supplement 3; Figure 6—figure supplement 2A-D; Figure 6—figure supplement 3A-F; Figure 6—figure supplement 4; Figure 6—figure supplement 5A-D,F-H,K), suggesting that the vascular phenotype of gn is epistatic to that of pin1,3;4;7.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-v1.jpg)
+
+**Figure 6.:** (A–D) Dark‐field illumination of mature first leaves. Top right: genotype and treatment. (E) Percentages of leaves in phenotype classes (Classes 0, a8–a10, b3, b4, b7, and b8 defined in Figures 2 and 3; class a11, fused leaves with shapeless vascular cluster — not shown). Difference between pin1‐1,3;4;7 and WT, between pin1‐1,3,6;4;7;8 and WT, between gn and WT, between gn‐13;pin1‐1,3;4;7 and pin1‐1,3;4;7, between gn‐13;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8, and between NPA‐grown gn‐13 and pin1‐1,3,6;4;7;8 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 63; pin1‐1,3;4;7, 53; pin1‐1,3,6;4;7;8, 52; gn‐13, 69; gn‐13;pin1‐1,3;4;7, 21; gn‐13;pin1‐1,3,6;4;7;8, 16; NPA‐grown gn‐13, 60. Bars: (A–D) 0.5 mm. See Figure 6—figure supplement 1 for alternative visual display of distribution of leaves in phenotype classes. See Figure 6—figure supplement 2 for pin and gn mutant seedlings. See Figure 6—figure supplement 3 for seedling axes of pin and gn mutants. See Figure 6—figure supplement 4 for cotyledon patterns of pin and gn mutants. See Figure 6—figure supplement 5 for cotyledon vein patterns of pin and gn mutants.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** See legend to Figure 6E for details of statistical analysis and sample population sizes.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–F) Dark‐field illumination composite of 3‐day‐old seedlings. (A) Overview. Because the seedling lineup was wider than the stereomicroscope’s field of view, overlapping images of parts of the lineup were acquired and combined to reconstruct the original lineup. (B–F) Details. Genotypes below respective seedlings (A) or top right (B–F). The phenotype in (D) segregated in approximately one‐sixteenth of the progeny of plants homozygous for pin3, pin4, and pin7, and heterozygous for pin1 and gn — no different from the one‐sixteenth frequency expected for the gn;pin1,3;4;7 homozygous mutants by Pearson’s chi‐squared (χ2) goodness‐of‐fit test (Supplementary file 2K). We genotyped 10 of the seedlings with that phenotype and found they were gn;pin1,3;4;7 homozygous mutants. The phenotype in (F) segregated in approximately one‐sixteenth of the progeny of plants homozygous for pin3, pin4, pin6, pin7, and pin8, and heterozygous for pin1 and gn — no different from the one‐sixteenth frequency expected for the gn;pin1,3,6;4;7;8 homozygous mutants by Pearson’s chi‐squared (χ2) goodness‐of‐fit test (Supplementary file 2K). We genotyped 10 of the seedlings with that phenotype and found they were gn;pin1,3,6;4;7;8 homozygous mutants. Bars: (A) 2 mm; (B–F) 0.25 mm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A–I) Overlay of dark-field (false-colored in cyan) and differential-interference-contrast illumination of 4- (WT), 3- (gn) or 7- (all other genotypes) day-old seedlings. Top right: genotype. (A,C,G) Hypocotyl. (B) Basal peg (Berleth and Jurgens, 1993). (D,F,H) Root. (E,I) Hypocotyl/root. Bars: (A,B,D,F,H) 100 µm; (C,E,I,G) 250 µm.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Dark‐field illumination of a 5‐day‐old seedling illustrating phenotype class α8 (heart-shaped seedling). (B) Percentages of seedlings in phenotype classes (classes α1–α7 defined in Figure 3—figure supplement 3). Difference between pin1‐1,3;4;7 and WT, between pin1‐1,3,6;4;7;8 and WT, between gn‐13 and WT, between gn‐13;pin1‐1,3;4;7 and pin1‐1,3;4;7, and between gn‐13;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 111; pin1‐1,3;4;7, 135; pin1‐1,3,6;4;7;8, 147; gn‐13, 72; gn‐13;pin1‐1,3;4;7, 84; gn‐13;pin1‐1,3,6;4;7;8, 93. Bar: (A) 0.5 mm.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A,B) Vein pattern of WT mature cotyledon. In (A): red, midvein; orange, vein loops. (B–J) Dark‐field illumination of mature cotyledons. Top right: phenotype class or genotype. (B–G) Phenotype classes: class 0, I‐shaped midvein and three or four loops (B); class b1, I‐shaped midvein, thick veins and minor veins (C); class b2, Y‐shaped midvein, thick veins and minor veins (D); class b3, thick veins, loops joining midvein at base of cotyledon and apically thickened vein‐network outline (E); class a1, shapeless vascular cluster with short stretches of vascular elements connecting cluster to base of cotyledon (F); class a2, shapeless vascular cluster (G). (H–J) Dark‐field illumination of mature cotyledons of gn‐13;pin1‐1,3;4;7 (class a1) (N) or gn‐13;pin1‐1,3,6;4;7;8 (class a1) (I, side view; J, top view). (K) Percentages of cotyledons in phenotype classes. Difference between pin1‐1,3;4;7 and WT, between pin1‐1,3,6;4;7;8 and WT, between gn‐13 and WT, between gn-13;pin1‐1,3;4;7 and pin1‐1,3;4;7, and between gn‐13;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 52; pin1‐1,3;4;7, 65; pin1‐1,3,6;4;7;8, 63; gn‐13, 57; gn‐13;pin1‐1,3;4;7, 65; gn‐13;pin1‐1,3,6;4;7;8, 57. Bars: (B–J) 0.25 mm.
 
 We next asked what the phenotype were of the septuple mutant between the strong allele gn‐13 (Figure 2) and mutation in all the PIN genes with vein patterning function (Figure 3).
 
@@ -138,21 +214,49 @@ gn;pin1,3,6;4;7;8 embryos were viable (Supplementary file 2J) and developed into
 
 In conclusion, auxin transport inhibition fails to induce defects in gn that approximate those which it induces in GN. Therefore, our results also fail to support Prediction 3 of the current hypothesis of how auxin coordinates tissue cell polarity to induce vein formation. Consequently, the hypothesis must be revised.
 
-## Revising the current hypothesis of coordination of tissue cell polarity and vein formation by auxin
+### Revising the current hypothesis of coordination of tissue cell polarity and vein formation by auxin
 
-## Auxin-induced vein formation in the absence of auxin transport
+#### Auxin-induced vein formation in the absence of auxin transport
 
 The uniform vein‐pattern phenotype of pin1,3,6;4;7;8 was phenocopied by growth of WT in the presence of NPA (Figure 4). Moreover, the vein pattern phenotype of pin1,3,6;4;7;8 was unchanged by NPA treatment, and the NPA‐induced vein‐pattern phenocopy of pin1,3,6;4;7;8 was unchanged by mutation in any other intercellular auxin‐transporter (Figures 4 and 5). These observations suggest that the vein pattern phenotype of pin1,3,6;4;7;8 or of its NPA‐induced phenocopy is symptomatic of absence of that component of auxin transport that is relevant to vein patterning (see also Discussion). Because auxin transport is thought to be essential for auxin‐induced vascular‐strand formation (reviewed in Sachs, 1981; Berleth et al., 2000; Aloni, 2010; Sawchuk and Scarpella, 2013), we asked whether auxin induced vein formation in pin1,3,6;4;7;8 and, consequently, whether veins were formed by an auxin‐dependent mechanism in pin1,3,6;4;7;8. To address this question, we applied the natural auxin indole‐3‐acetic acid (IAA) to one side of developing leaves of WT and pin1,3,6;4;7;8, and recorded tissue response in mature leaves.
 
 Consistent with previous reports (Scarpella et al., 2006; Sawchuk et al., 2007), in most of the WT leaves IAA induced formation of extra veins (Figure 7A,B). IAA induced the formation of extra veins in pin1,3,6;4;7;8 leaves too (Figure 7C,D), but it also induced the formation of tissue outgrowths of varied shape; nevertheless, IAA induced vascular strand formation in most of those tissue outgrowths (Figure 7—figure supplement 1).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig7-v1.jpg)
+
+**Figure 7.:** (A–D) Top right: genotype and treatment. Dark‐field illumination of mature first leaves of WT (A,B) or pin1‐1,3,6;4;7;8 (C,D) at side of application of lanolin paste (A,C) or lanolin paste containing 1% IAA (B,D). Bars: (A) 0.5 mm; (B–D) 0.25 mm. See Figure 7—figure supplement 1 for additional effects of auxin application to pin mutants.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Top right: genotype and treatment. Dark‐field illumination of mature first leaves of pin1‐1,3,6;4;7;8 at side of application of lanolin paste containing 1% IAA. Bars: (A) 0.25 mm; (B) 0.1 mm.
+
 We conclude that pin1,3,6;4;7;8 leaves respond to vein‐formation‐inducing auxin signals and, consequently, that veins are formed by an auxin‐dependent mechanism in the absence of that component of auxin transport that is relevant to vein patterning.
 
-## Auxin-signaling-dependent vein patterning in the absence of auxin transport
+#### Auxin-signaling-dependent vein patterning in the absence of auxin transport
 
 Leaves of pin1,3,6;4;7;8 respond to vein‐formation‐inducing auxin signals (Figure 7), suggesting that the residual vein‐patterning activity in those leaves may be provided by an auxin‐dependent mechanism. We therefore asked what the contribution of auxin signaling to vein patterning were in the absence of PIN‐dependent vein patterning activity — that is of that component of auxin transport that is relevant to vein patterning. To address this question, we used mutants in AUXIN‐RESISTANT1 (AXR1), which lack a required post‐translational modification of the auxin receptor complex (reviewed in Calderon-Villalobos et al., 2010; Schwechheimer, 2018); double mutants in TRANSPORT INHIBITOR RESPONSE1 (TIR1) and AUXIN SIGNALING F‐BOX2 (AFB2), which lack the two auxin receptors that most contribute to auxin signaling (Dharmasiri et al., 2005); and phenylboronic acid (PBA), which inhibits auxin signaling (Matthes and Torres-Ruiz, 2016).
 
 The embryos of axr1 and tir1;afb2 were viable (Supplementary file 2L) and developed into seedlings whose vein pattern defects were similar to those of weak gn alleles (Figure 2) — loops were open and veins were fragmented. Similar defects were observed in WT grown in the presence of PBA (Figure 8A,B,H; Figure 8—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig8-v1.jpg)
+
+**Figure 8.:** (A–G) Dark‐field illumination of mature leaves illustrating phenotype classes (A–F, top right; G, bottom left): class a2 (axr1-3; A); class a4 (tir1;afb2; B); class b7 (NPA-grown WT; C); class b7/a6, wide midvein, more lateral‐veins, dense network of thick veins, and conspicuous marginal vein (NPA-grown axr1-12; D); class b8/a6, fused leaves with wide midvein, more lateral‐veins, dense network of thick veins, and conspicuous marginal vein (not shown); class a6 (E: PBA- and NPA-grown WT; F: NPA-grown tir1;afb2; G: tir1;afb2;pin1‐1,3,6;4;7;8); inset in (G) illustrates cluster of seemingly randomly oriented vascular elements. (H) Percentages of leaves in phenotype classes (Classes 0, a2–a4, a6, b3, b7, and b8 defined in Figures 2 and 3). Difference between axr1‐3 and WT, between axr1‐12 and WT, between tir1;afb2 and WT, between PBA-grown WT and WT, between pin1‐1,3,6;4;7;8 and WT, between NPA‐grown WT and WT, between NPA‐grown axr1‐3 and NPA‐grown WT, between NPA‐grown axr1‐12 and NPA‐grown WT, between NPA‐grown tir1;afb2 and NPA‐grown WT, between PBA- and NPA-grown WT and NPA-grown WT, between axr1‐3;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8, and between tir1;afb2;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 47; axr1‐3, 41; axr1‐12, 41; tir1;afb2, 42; PBA-grown WT, 55; pin1‐1,3,6;4;7;8, 43; NPA‐grown WT, 48 (25 µM) or 146 (100 µM); NPA‐grown axr1‐3, 101; NPA‐grown axr1‐12, 103; NPA‐grown tir1;afb2, 65; PBA- and NPA-grown WT, 105; axr1‐3;pin1‐1,3,6;4;7;8, 62; tir1;afb2;pin1‐1,3,6;4;7;8, 75. Bars: (A,B) 1 mm; (C–E) 0.75 mm (F,G) 0.5 mm. See Figure 8—figure supplement 1 for alternative visual display of distribution of leaves in phenotype classes. See Figure 8—figure supplement 2 for pin and axr1 mutant seedlings. See Figure 8—figure supplement 3 for cotyledon patterns of pin, axr1, and tir1;afb2 mutants. See Figure 8—figure supplement 4 for pin and tir1;afb2 mutant seedlings.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** See legend to Figure 8H for details of statistical analysis and sample population sizes.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A,B) Dark‐field illumination composite of 3‐day‐old seedlings; genotypes below respective seedlings (A) or top right (B). (A) Overview. (B) Details. Bars: (A) 2 mm; (B) 0.5 mm.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Percentages of seedlings in phenotype classes (defined in Figure 3—figure supplement 3). Difference between pin1‐1,3,6;4;7;8 and WT, and between tir1;afb2;pin1‐1,3,6;4;7;8 and pin1‐1,3,6;4;7;8 was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 59; axr1‐3, 49; tir1;afb2, 44; pin1‐1,3,6;4;7;8, 50; axr1‐3;pin1‐1,3,6;4;7;8, 146; tir1;afb2;pin1‐1,3,6;4;7;8, 75.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** (A–C) Dark‐field (A,B) or differential-interference-contrast (C) illumination of 3‐day‐old seedlings; genotypes below respective seedlings (A) or top right (B,C). (A) Overview. (B) Detail. (C) Basal peg (Berleth and Jurgens, 1993). Bars: (A) 2 mm; (B) 0.5 mm; (C) 0.1 mm.
 
 We next asked whether PBA, axr1, or tir1;afb2 enhanced the vein pattern defects induced by NPA or by mutation in all the PIN genes with vein patterning function.
 
@@ -160,11 +264,31 @@ A few of the leaves of NPA‐grown axr1, NPA‐grown tir1;afb2, and NPA‐ and P
 
 These observations suggest that the residual vein‐patterning activity in pin1,3,6;4;7;8 is provided, at least in part, by AXR1‐ and TIR1/AFB2‐mediated auxin signaling. Because reduction of AXR1‐ and TIR1/AFB2‐mediated auxin signaling enhanced vein pattern defects resulting from loss of PIN‐dependent vein‐patterning function, we conclude that PIN‐mediated auxin transport and AXR1‐ and TIR1/AFB2‐mediated auxin signaling provide overlapping functions in vein patterning. Finally, the similarity between the vein pattern defects of NPA‐grown axr1 and tir1;afb2, of NPA‐ and PBA‐grown WT, and of axr1;pin1,3,6;4;7;8 and tir1;afb2;pin1,3,6;4;7;8, on the one hand, and those of intermediate gn alleles, on the other, suggests that the vein pattern defects of gn are caused by simultaneous defects in auxin transport and signaling.
 
-## Control of auxin-signaling-dependent vein patterning by GN
+#### Control of auxin-signaling-dependent vein patterning by GN
 
 Were the vascular defects of gn not only the result of abnormal polarity or loss of PIN‐mediated auxin transport but that of defects in auxin signaling, the vein pattern defects of gn would be associated with reduced auxin response, and the reduced auxin response of gn would be recapitulated by NPA‐grown axr1. To test whether that were so, we imaged expression of the auxin response reporter DR5rev::nYFP (Heisler et al., 2005; Sawchuk et al., 2013) in developing leaves of WT, pin1,3,6;4;7;8, NPA‐grown WT, axr1, gn, and NPA‐grown axr1.
 
 As previously shown (Sawchuk et al., 2013; Verna et al., 2015), strong DR5rev::nYFP expression was mainly associated with developing veins in WT (Figure 9A). In pin1,3,6;4;7;8 and NPA‐grown WT, DR5rev::nYFP expression was weaker and mainly confined to areas near the margin of the leaf (Figure 9B,C; Figure 9—figure supplement 1). DR5rev::nYFP expression was weaker also in axr1 but was still associated with developing veins (Figure 9D; Figure 9—figure supplement 1). Finally, in both gn and NPA‐grown axr1, DR5rev::nYFP expression was much weaker and scattered across large areas of the leaf (Figure 9E,F; Figure 9—figure supplement 1), suggesting that the vein pattern defects of gn are associated with reduced auxin response and that the reduced auxin response of gn is recapitulated by NPA‐grown axr1.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig9-v1.jpg)
+
+**Figure 9.:** (A–F) Confocal laser scanning microscopy; first leaves 4 (A,C), 5 (B,D,E) or 6 (F) days after germination. DR5rev::nYFP expression; look‐up table (ramp in D) visualizes expression levels. Top right: genotype and treatment. Bottom left: reproducibility index. Dashed white line delineates leaf outline. Images were taken at identical settings. (G,H) Dark‐field illumination of mature first leaves. Top right: genotype. (I) Percentages of leaves in phenotype classes (defined in Figure 2). Difference between axr1‐3 and WT, between axr1‐12 and WT, and between gn‐13 and WT was significant at p<0.001 (***) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 49; axr1‐3, 42; axr1‐12, 49; gn‐13, 47; gn‐13;axr1‐3, 45; gn‐13;axr1‐12, 45. Bars: (A–F) 100 µm; (G,H) 0.75 mm. See Figure 9—figure supplement 1 for images of DR5rev::nYFP expression taken by matching signal intensity to detector’s input range (~5% saturated pixels). See Figure 9—figure supplement 2 for gn and axr1 mutant seedlings. See Figure 9—figure supplement 3 for cotyledon patterns of gn and axr1 mutants. See Figure 9—figure supplement 4 for alternative visual display of distribution of leaves in phenotype classes.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A–F) Confocal laser scanning microscopy; first leaves 4 (B), 5 (A,C,D) or 6 (E) days after germination. DR5rev::nYFP expression; look‐up table (ramp in Figure 9D) visualizes expression levels. Top right: genotype and treatment. Bottom left: reproducibility index. Dashed white line delineates leaf outline. Images were taken by matching signal intensity to detector’s input range (~5% saturated pixels).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A–D) Dark-field illumination composite of 3‐day‐old seedlings; genotypes below respective seedlings (A) or top right (B–D). (A) Overview. Because the seedling lineup was wider than the stereomicroscope’s field of view, overlapping images of parts of the lineup were acquired and combined to reconstruct the original lineup. (B–D) Details. Bars: (A) 2 mm; (B–D) 0.5 mm.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** Percentages of seedlings in phenotype classes (defined in Figure 3—figure supplement 3 and Figure 6—figure supplement 4). Difference between gn‐13 and WT was significant at p<0.001 (***); and between gn‐13;axr1‐12 and gn‐13 was significant at p<0.01 (**) by Kruskal‐Wallis and Mann‐Whitney test with Bonferroni correction. Sample population sizes: WT, 86; axr1‐3, 87; axr1‐12, 47; gn‐13, 62; gn‐13;axr1‐3, 70; gn‐13;axr1‐12, 50.
+
+![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig9-figsupp4-v1.jpg)
+
+**Figure 9—figure supplement 4.:** See legend to Figure 9I for details of statistical analysis and sample population sizes.
 
 Were the vascular defects of gn caused by simultaneous defects in auxin transport and signaling, and did GN control auxin signaling as it controls auxin transport, the vascular defects of gn;axr1 would resemble those of gn, just as the vascular defects of gn;pin1,3;4;7 and gn;pin1,3,6;4;7;8 resemble those of gn; we tested whether that were so.
 
@@ -172,7 +296,7 @@ gn;axr1 embryos were viable (Supplementary file 2O) and developed into seedlings
 
 We conclude that the vascular defects of gn are caused by simultaneous defects in auxin transport and signaling, and that GN controls both auxin signaling and auxin transport.
 
-## Coordination of tissue cell polarity by GN-dependent auxin transport and signaling
+#### Coordination of tissue cell polarity by GN-dependent auxin transport and signaling
 
 The vein pattern defects of gn are caused by simultaneous defects in auxin transport and signaling (Figures 8 and 9). We finally asked whether simultaneous defects in auxin transport and signaling recapitulated gn defects in coordination of tissue cell polarity. To address this question, we imaged cellular localization of PIN1::PIN1:GFP expression during leaf development in WT, tir1;afb2, NPA‐grown WT, gnvan7, and NPA‐grown tir1;afb2.
 
@@ -180,7 +304,7 @@ Consistent with previous reports (Benková et al., 2003; Reinhardt et al., 2003;
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/51061/elife-51061-fig10-v1.jpg)
 
-**Figure 10.:** gn developing leaves.(A,G) Increasingly darker grays depict progressively later stages of vein development. Boxes illustrate positions of closeups in B and H, respectively. hv: minor vein; l1, l2 and l3: first, second and third loops; mv: midvein. (B–F,H–L) Confocal laser scanning microscopy. First leaves. Top right: genotype, treatment and leaf age in days after germination (DAG). Dashed white line delineates leaf outline. Bottom left: reproducibility index. PIN1::PIN1:GFP expression; look‐up table (ramp in H) visualizes expression levels. Red: autofluorescence. (I) 24/35 of second loops failed to connect to the first loop. Bars: (B–F,H–L) 20 µm.
+**Figure 10.:** (A,G) Increasingly darker grays depict progressively later stages of vein development. Boxes illustrate positions of closeups in B and H, respectively. hv: minor vein; l1, l2 and l3: first, second and third loops; mv: midvein. (B–F,H–L) Confocal laser scanning microscopy. First leaves. Top right: genotype, treatment and leaf age in days after germination (DAG). Dashed white line delineates leaf outline. Bottom left: reproducibility index. PIN1::PIN1:GFP expression; look‐up table (ramp in H) visualizes expression levels. Red: autofluorescence. (I) 24/35 of second loops failed to connect to the first loop. Bars: (B–F,H–L) 20 µm.
 
 Consistent with previous reports (Scarpella et al., 2006; Wenzel et al., 2007), PIN1::PIN1:GFP expression domains were broader at early stages of development of the tissue that in NPA-grown WT corresponds to that from which the second loop forms in WT; PIN1::PIN1:GFP expression was localized isotropically at the PM in the outermost inner cells but was mainly localized to the basal side of the PM in the innermost inner cells (Figure 10D). At later stages of second‐loop development in NPA-grown WT, by which time PIN1::PIN1:GFP expression had become restricted to the cells of the developing loop, PIN1::PIN1:GFP expression was localized to the basal side of the PM (Figure 10J).
 
@@ -200,7 +324,7 @@ Contrary to predictions of the hypothesis, we find that auxin-induced vein forma
 
 **Figure 11.:** Genetic interaction network controlling tissue cell polarization and vein patterning. Arrows indicate positive effects.
 
-## Control of vein patterning by polar auxin transport
+### Control of vein patterning by polar auxin transport
 
 Overwhelming experimental evidence suggests that the patterned formation of veins depends on polar auxin transport (reviewed in Sachs, 1981; Sachs, 1991; Berleth et al., 2000; Sachs, 2000; Sawchuk and Scarpella, 2013). The polarity of auxin transport is determined by the asymmetric localization of efflux carriers of the PIN family at the PM of auxin-transporting cells (Wisniewska et al., 2006). Therefore, loss of function of all the PM-PIN proteins should lead to loss of reproducible vein-pattern features or even, in the most extreme case, to the inability to form veins. Neither prediction is, however, supported by evidence: mutants in all the PM-PIN genes with vein patterning function — PIN1, PIN3, PIN4 and PIN7 — or in all the PM-PIN genes — PIN1–PIN4 and PIN7 — form veins, and these veins are arranged in reproducible, albeit abnormal, patterns. We conclude that vein patterning is controlled by additional, PM-PIN-independent auxin-transport pathways.
 
@@ -210,7 +334,7 @@ Such PM-PIN-independent NPA-sensitive auxin-transport pathway with vein patterni
 
 These NPA-insensitive vein-patterning pathways unlikely depend on the function of other intercellular auxin transporters — the AUX1/LAX influx carriers (Yang et al., 2006; Swarup et al., 2008; Péret et al., 2012) and the ABCB efflux carriers (Geisler et al., 2005; Bouchard et al., 2006; Petrásek et al., 2006) — as their mutation fails to enhance the vein pattern defects of pin1,3,6 and of the NPA-induced phenocopy of pin1,3,6;4;7;8. The NPA-insensitive vein-patterning pathways also unlikely depend on NPA-insensitive auxin transport because as little as 10 µM NPA (a fraction of the concentration we used) is sufficient to inhibit polar auxin transport completely in tissue segments (Okada et al., 1991; Kaneda et al., 2011). Whatever the molecular nature of the NPA-insensitive vein-patterning pathways, they do contribute to the polar propagation of the inductive auxin signal: application of auxin to pin1,3,6;4;7;8 leaves, just as to WT leaves, induces the formation of veins that connect the applied auxin to the pre-existing vasculature basal to the site of auxin application.
 
-## Control of vein patterning by auxin signaling
+### Control of vein patterning by auxin signaling
 
 The residual NPA-insensitive auxin-dependent vein-patterning activity of pin1,3,6;4;7;8 relies, at least in part, on the signal transduction mediated by the TIR1/AFB auxin receptors and their post-translational regulator AXR1. Loss of AXR1; loss of TIR1 and AFB2, the two auxin receptors that most contribute to auxin signaling (Dharmasiri et al., 2005); or growth in the presence of the auxin signaling inhibitor PBA (Matthes and Torres-Ruiz, 2016) induces entirely new vein-pattern defects in pin1,3,6;4;7;8 or in its NPA-induced phenocopy. In the more-severely affected leaves of axr1;pin1,3,6;4;7;8, tir1;afb2;pin1,3,6;4;7;8, NPA-grown axr1, NPA-grown tir1;afb2, and NPA- and PBA-grown WT, the end-to-end alignment of vascular elements oriented with their axis along the axis of the vein is often replaced by the clustered differentiation of abnormally oriented vascular elements. Not only are these defects never observed in pin1,3,6;4;7;8 or NPA-grown WT, but they are more severe than the predicted sum of the defects of pin1,3,6;4;7;8 or NPA-grown WT, on the one hand, and of axr1, tir1;afb2, or PBA-grown WT, on the other. This synthetic enhancement between the vein pattern defects caused by reduced auxin signaling and those caused by reduced auxin transport suggests non-homologous redundancy of auxin signaling and auxin transport in vein patterning, a conclusion which is consistent with observations in the shoot apical meristem (Schuetz et al., 2008). Unlike in the shoot apical meristem, however, in the leaf such redundancy is unequal: whereas auxin transport is required for vein patterning even in the presence of normal auxin signaling, the vein patterning activity of auxin signaling is only exposed in conditions of compromised auxin transport.
 
@@ -220,7 +344,7 @@ One other possibility is that auxin signaling promotes the facilitated diffusion
 
 Yet another possibility is that auxin signaling activates an unknown mobile signal. Such signal need not be chemical: alternatives, for example a mechanical signal, have been suggested (Couder et al., 2002; Laguna et al., 2008; Corson et al., 2009; Lee et al., 2014) and have been implicated in other auxin-driven processes (e.g., Hamant et al., 2008; Heisler et al., 2010; Peaucelle et al., 2011; Nakayama et al., 2012; Braybrook and Peaucelle, 2013). However, whether a mechanical signal controls vein patterning remains to be tested.
 
-## A tissue-cell-polarizing signal upstream of auxin transport and signaling
+### A tissue-cell-polarizing signal upstream of auxin transport and signaling
 
 The vein pattern defects of leaves in which both auxin transport and signaling are compromised are never observed in leaves in which either process is; yet those defects are not unprecedented: they are observed — though in more extreme form — in leaves of gn mutants, suggesting that GN controls both auxin transport and signaling during vein patterning.
 
@@ -238,22 +362,22 @@ Irrespective of the mechanism of action, our results reveal synergism between au
 
 ## Materials and methods
 
-## Notation
+### Notation
 
 In agreement with Crittenden et al. (1996), linked genes or mutations (<2,500 kb apart, which in Arabidopsis corresponds, on average, to ~10 cM [Lukowitz et al., 2000]) are separated by a comma, unlinked ones by a semicolon, and homologous chromosomes by a slash.
 
-## Plants
+### Plants
 
 Origin and nature of lines, and oligonucleotide sequences are in Supplementary file 1; genotyping strategies are in Supplementary file 2Q. Seeds were sterilized and sown as in Sawchuk et al. (2008). Stratified seeds were germinated and seedlings were grown at 22°C under continuous fluorescent light (~80 µmol m‐2 s‐1). Plants were grown at 25°C under fluorescent light (~110 μmol m‐2 s‐1) in a 16‐h‐light/8‐h‐dark cycle. Plants were transformed and representative lines were selected as in Sawchuk et al. (2008).
 
-## Chemicals
+### Chemicals
 
 NPA and PBA were dissolved in dimethyl sulfoxide and water, respectively; dissolved chemicals were added (100 μM final NPA concentration, unless otherwise noted) to growth medium just before sowing. IAA was dissolved in melted (55°C) lanolin; the IAA‐lanolin paste (1% final IAA concentration) was applied to first leaves 4 days after germination and was reapplied weekly.
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was extracted as in Chomczynski and Sacchi (1987) from 4-day-old seedlings grown as in Odat et al. (2014). RT-PCR was performed as in Odat et al. (2014) with the following oligonucleotides: ‘GN_qFb’ and ‘GN_qRb’, and ‘ROC1 F’ and ‘ROC1 R’ (Beeckman et al., 2002); ‘Aux_F380’ and ‘Aux_R380’, and ‘ROC1 F’ and ‘ROC1 R’; and ‘Lax_F513’ and ‘Lax_R513’, and ‘‘ROC1 F’ and ‘ROC1 R’ (Supplementary file 1).
 
-## Imaging
+### Imaging
 
 Developing leaves were mounted and imaged as in Sawchuk et al. (2013), except that emission was collected from ~2.5 μm-thick optical slices. Light paths are in Supplementary file 2R. Mature leaves were fixed in 3 : 1 or 6 : 1 ethanol : acetic acid, rehydrated in 70% ethanol and water, cleared briefly (few seconds to few minutes) — when necessary — in 0.4 M sodium hydroxide, washed in water, mounted in 80% glycerol or in 1 : 2 : 8 or 1 : 3 : 8 water : glycerol : chloral hydrate, and imaged as in Odat et al. (2014). Grayscaled RGB color images were turned into 8-bit images, look-up-tables were applied, and brightness and contrast were adjusted by linear stretching of the histogram in the Fiji distribution (Schindelin et al., 2012) of ImageJ (Schneider et al., 2012; Schindelin et al., 2015; Rueden et al., 2017).

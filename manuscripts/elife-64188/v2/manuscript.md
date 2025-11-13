@@ -18,7 +18,7 @@
 
 ## Abstract
 
-To understand a causal role of modifiable lifestyle factors in angiotensin-converting enzyme 2 (ACE2) expression (a putative severe acute respiratory syndrome coronavirus 2 [SARS-CoV-2] receptor) across 44 human tissues/organs, and in coronavirus disease 2019 (COVID-19) susceptibility and severity, we conducted a phenome-wide two-sample Mendelian randomization (MR) study. More than 500 genetic variants were used as instrumental variables to predict smoking and alcohol consumption. Inverse-variance weighted approach was adopted as the primary method to estimate a causal association, while MR-Egger regression, weighted median, and MR pleiotropy residual sum and outlier (MR-PRESSO) were performed to identify potential horizontal pleiotropy. We found that genetically predicted smoking intensity significantly increased ACE2 expression in thyroid (β=1.468, p=1.8×10 −8 ), and increased ACE2 expression in adipose, brain, colon, and liver with nominal significance. Additionally, genetically predicted smoking initiation significantly increased the risk of COVID-19 onset (odds ratio=1.14, p=8.7×10 −5 ). No statistically significant result was observed for alcohol consumption. Our work demonstrates an important role of smoking, measured by both status and intensity, in the susceptibility to COVID-19. XJ is supported by research grants from the Swedish Research Council (VR-2018–02247) and Swedish Research Council for Health, Working Life and Welfare (FORTE-2020–00884).
+Background:To understand a causal role of modifiable lifestyle factors in angiotensin-converting enzyme 2 (ACE2) expression (a putative severe acute respiratory syndrome coronavirus 2 [SARS-CoV-2] receptor) across 44 human tissues/organs, and in coronavirus disease 2019 (COVID-19) susceptibility and severity, we conducted a phenome-wide two-sample Mendelian randomization (MR) study.Methods:More than 500 genetic variants were used as instrumental variables to predict smoking and alcohol consumption. Inverse-variance weighted approach was adopted as the primary method to estimate a causal association, while MR-Egger regression, weighted median, and MR pleiotropy residual sum and outlier (MR-PRESSO) were performed to identify potential horizontal pleiotropy.Results:We found that genetically predicted smoking intensity significantly increased ACE2 expression in thyroid (β=1.468, p=1.8×10−8), and increased ACE2 expression in adipose, brain, colon, and liver with nominal significance. Additionally, genetically predicted smoking initiation significantly increased the risk of COVID-19 onset (odds ratio=1.14, p=8.7×10−5). No statistically significant result was observed for alcohol consumption.Conclusions:Our work demonstrates an important role of smoking, measured by both status and intensity, in the susceptibility to COVID-19.Funding:XJ is supported by research grants from the Swedish Research Council (VR-2018–02247) and Swedish Research Council for Health, Working Life and Welfare (FORTE-2020–00884).
 
 ## Introduction
 
@@ -30,15 +30,15 @@ Motivated by these findings, we aim to explore whether genetic predisposition to
 
 ## Materials and methods
 
-## Data on IV-exposure
+### Data on IV-exposure
 
 IV-exposure associations were extracted from the hitherto largest GWAS conducted by the GCSCAN consortium (GWAS and Sequencing Consortium of Alcohol and Nicotine use) for tobacco use and alcohol consumption, totalling 1.2 million individuals of European ancestry (Liu et al., 2019). This GWAS firstly meta-analysed summary-level data from each participating cohort and identified independent SNPs passing genome-wide significance (p<5×10−8) based on linkage disequilibrium. After that, additional independent and genome-wide significant SNPs were selected using a conditional analysis within each significant locus defined as a 1 MB region surrounding the sentinel variant (the variant in the locus with the lowest p-value). We used all conditionally independent biallelic SNPs as IVs.
 
 In our analysis, we included two smoking phenotypes and one drinking phenotype, smoking initiation as reflected by never vs. ever smoking (IV=378, N=1,232,091), smoking intensity as reflected by cigarettes per day (IV=55, N=337,334), and common (opposing to excessive or harmful) alcohol drinking behaviour defined as drinks per week (IV=99, N=941,280). The proportion of phenotypic variance explained by IVs accounted for 2.3% for smoking initiation, 1.1% for cigarettes per day, and 0.2% for drinks per week. Detailed information regarding IVs for each exposure were shown in Supplementary file 1a-1c.
 
-Strong instrumental variable is the basic requirement to ensure a valid MR result. The strength of IV was verified by calculating F-statistics using the formula F=R2(n−1−k)(1−R2)k, where R2 is the proportion of variance explained by the IV, k refers to the number of IVs, and n indicates the sample size (Pierce et al., 2011). The F-statistics for smoking initiation, smoking intensity (cigarettes per day), and alcohol consumption (drinks per week) were 77.2, 67.4, and 17.8, respectively, indicating strong IVs (F-statistics > 10) for each of our exposure of interest.
+Strong instrumental variable is the basic requirement to ensure a valid MR result. The strength of IV was verified by calculating F-statistics using the formula $F=\frac{R^{2}(n−1−k)}{(1−R^{2})k}$, where R2 is the proportion of variance explained by the IV, k refers to the number of IVs, and n indicates the sample size (Pierce et al., 2011). The F-statistics for smoking initiation, smoking intensity (cigarettes per day), and alcohol consumption (drinks per week) were 77.2, 67.4, and 17.8, respectively, indicating strong IVs (F-statistics > 10) for each of our exposure of interest.
 
-## Data on IV-outcome
+### Data on IV-outcome
 
 Associations of genetic variants with ACE2 expression were extracted from the GTEx database release version 8 available at the GTEx Portal (http://www.gtexportal.org). It is one of the largest databases with concomitant information on genotype and expression data for a large variety of non-diseased tissues collected from >1000 human donors. Out of the total 54 tissues/organs, we focused on ACE2 expression in 44 tissues/organs with a decent sample size involving at least 100 individuals to ensure statistical power (Supplementary file 1d). Specifically, the associations of genotype with ACE2 expression in adipose tissue, artery, brain, colon, oesophagus, heart, liver, lung, minor salivary gland, muscle, nerve, ovary, pancreas, pituitary, prostate, skin, small intestine, stomach, testis, thyroid, uterus, and vagina were included.
 
@@ -48,7 +48,7 @@ In addition to ACE2 expression, associations of genetic variants with COVID-19 s
 
 Briefly, susceptibility to COVID-19 cases was defined as individuals with laboratory-confirmed positive for SARS-Cov-2 infection (via nucleic acid amplification test or serological test), clinician diagnosis, health record evidence by ICD coding, or self-reported (Ncase=38,984 vs. Ncontrol=1,644,784). Hospitalized COVID-19 cases were defined as individuals hospitalized due to COVID-19 related symptoms with laboratory-confirmed positive for SARS-Cov-2 infection (Ncase=9986 vs. Ncontrol=1,877,672). Very severe respiratory confirmed COVID-19 cases were defined as hospitalized individuals with laboratory-confirmed positive for SARS-Cov-2 infection, who needed respiratory support except for simple oxygen supplementary or died due to COVID-19 (Ncase=5101 vs. Ncontrol=1,383,241).
 
-## Statistical analysis
+### Statistical analysis
 
 MR uses SNPs as proxies for exposure(s) assuming that SNPs are randomly allotted at conception mirroring a randomized procedure and that SNPs always precede disease onset to eliminate reverse causality. Three essential model assumptions need to be fulfilled to guarantee valid IVs (Zheng et al., 2017), that is, IVs are associated with the exposure (relevance assumption); there is no association between IVs and any confounders of the exposure-outcome relationship (independence assumption); and IVs are associated with the outcome only through the studied exposure (exclusion restriction assumption). If all three model assumptions are satisfied, a causal relationship can be made based on the observed IV-exposure and IV-outcome associations.
 
@@ -66,13 +66,528 @@ We extracted a total of 532 independent SNPs that achieved genome-wide significa
 
 We found that genetically instrumented smoking initiation was associated with a significantly increased ACE2 expression in brain putamen basal ganglia (β=1.117, p=0.006), in brain hypothalamus (β=0.848, p=0.022), and in subcutaneous adipose tissue (β=0.285, p=0.016) using the IVW approach (Table 1). Results remained directional consistent in the MR-Egger regression although a slightly increased statistical uncertainty was observed (β=1.667, p=0.334 in brain putamen basal ganglia; β=0.963, p=0.545 in brain hypothalamus; β=0.663, p=0.205 in subcutaneous adipose tissue). Additionally, increased ACE2 expression in two colon tissues was observed only through the MR-Egger regression (transverse colon [β=1.129, p=0.017] and sigmoid colon [β=1.925, p=0.042]) and the direction of estimates remained consistent in the IVW approach. For all these associations, we did not find apparent heterogeneity as indicated by Cochran’s Q statistics (all p>0.05) or horizontal pleiotropy as indicted by MR-Egger intercept (all p>0.05) and MR-PRESSO global test (all p>1.0×10−6), except that horizontal pleiotropy was observed in transverse colon by MR-Egger intercept (p=0.04). Although significant associations of smoking initiation with ACE2 expression in brain caudate basal ganglia and in cerebellar hemisphere were found using the IVW approach, the direction of estimates was opposite in the MR-Egger regression (Supplementary file 1f). These associations were therefore not considered as informative.
 
+**Table 1.**
+ Causal association of smoking initiation and angiotensin-converting enzyme 2 (ACE2) expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organ/tissue</th>
+      <th>Method</th>
+      <th>N of IVs</th>
+      <th>Beta</th>
+      <th>SE</th>
+      <th>p</th>
+      <th>p*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Adipose – subcutaneous</td>
+      <td>Inverse-variance weighted</td>
+      <td>358</td>
+      <td>0.285</td>
+      <td>0.118</td>
+      <td>0.016</td>
+      <td>0.834</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>358</td>
+      <td>0.663</td>
+      <td>0.522</td>
+      <td>0.205</td>
+      <td>0.456</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>358</td>
+      <td>0.142</td>
+      <td>0.186</td>
+      <td>0.444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>358</td>
+      <td>0.285</td>
+      <td>0.118</td>
+      <td>0.017</td>
+      <td>0.846</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Brain – hypothalamus</td>
+      <td>Inverse-variance weighted</td>
+      <td>356</td>
+      <td>0.848</td>
+      <td>0.369</td>
+      <td>0.022</td>
+      <td>0.614</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>356</td>
+      <td>0.963</td>
+      <td>1.588</td>
+      <td>0.545</td>
+      <td>0.941</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>356</td>
+      <td>0.549</td>
+      <td>0.566</td>
+      <td>0.332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>356</td>
+      <td>0.848</td>
+      <td>0.369</td>
+      <td>0.022</td>
+      <td>0.655</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Brain – putamen (basal ganglia)</td>
+      <td>Inverse-variance weighted</td>
+      <td>357</td>
+      <td>1.117</td>
+      <td>0.406</td>
+      <td>0.006</td>
+      <td>0.334</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>357</td>
+      <td>1.667</td>
+      <td>1.724</td>
+      <td>0.334</td>
+      <td>0.743</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>357</td>
+      <td>1.256</td>
+      <td>0.607</td>
+      <td>0.039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>357</td>
+      <td>1.117</td>
+      <td>0.406</td>
+      <td>0.006</td>
+      <td>0.321</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Colon – sigmoid</td>
+      <td>Inverse-variance weighted</td>
+      <td>359</td>
+      <td>0.314</td>
+      <td>0.214</td>
+      <td>0.143</td>
+      <td>0.887</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>359</td>
+      <td>1.925</td>
+      <td>0.945</td>
+      <td>0.042</td>
+      <td>0.080</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>359</td>
+      <td>0.473</td>
+      <td>0.334</td>
+      <td>0.156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>359</td>
+      <td>0.314</td>
+      <td>0.214</td>
+      <td>0.144</td>
+      <td>0.904</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Colon – transverse</td>
+      <td>Inverse-variance weighted</td>
+      <td>359</td>
+      <td>0.193</td>
+      <td>0.113</td>
+      <td>0.088</td>
+      <td>0.348</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>359</td>
+      <td>1.129</td>
+      <td>0.471</td>
+      <td>0.017</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>359</td>
+      <td>0.262</td>
+      <td>0.165</td>
+      <td>0.114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>359</td>
+      <td>0.193</td>
+      <td>0.113</td>
+      <td>0.089</td>
+      <td>0.362</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p indicates p-value of heterogenous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) global test._
+
 We further identified that genetically predicted smoking intensity as reflected by cigarettes per day was associated with a significantly elevated ACE2 expression in thyroid (β=1.468, p=1.8×10−8), in liver (β=1.216, p=0.009), in brain hypothalamus (β=1.789, p=0.014), and in ovary (β=1.545, p=0.026) using the IVW method (Table 2). Results remained directional consistent in the MR-Egger regression (β=1.739, p=0.062 in thyroid; β=1.132, p=0.226 in liver; β=0.041, p=0.983 in brain hypothalamus; β=1.658, p=0.347 in ovary). On the contrary, levels of ACE2 expression decreased with genetically instrumented smoking intensity in sigmoid colon tissue (β=−1.971, p=0.019) and in vagina tissue (β=−3.271, p=0.043) using the MR-Egger regression. For all these associations, no apparent horizontal pleiotropy and heterogeneity was found (Supplementary file 1g).
+
+**Table 2.**
+ Causal association of cigarettes per day and angiotensin-converting enzyme 2 (ACE2) expression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organ/tissue</th>
+      <th>Method</th>
+      <th>N of IVs</th>
+      <th>Beta</th>
+      <th>SE</th>
+      <th>p</th>
+      <th>p*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Brain – hypothalamus</td>
+      <td>Inverse-variance weighted</td>
+      <td>48</td>
+      <td>1.789</td>
+      <td>0.730</td>
+      <td>0.014</td>
+      <td>0.959</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>48</td>
+      <td>0.041</td>
+      <td>1.920</td>
+      <td>0.983</td>
+      <td>0.310</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>48</td>
+      <td>2.182</td>
+      <td>1.347</td>
+      <td>0.105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>48</td>
+      <td>1.789</td>
+      <td>0.730</td>
+      <td>0.018</td>
+      <td>0.964</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Colon – sigmoid</td>
+      <td>Inverse-variance weighted</td>
+      <td>47</td>
+      <td>−0.832</td>
+      <td>0.439</td>
+      <td>0.058</td>
+      <td>0.652</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>47</td>
+      <td>−1.971</td>
+      <td>0.807</td>
+      <td>0.019</td>
+      <td>0.092</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>47</td>
+      <td>−1.182</td>
+      <td>0.747</td>
+      <td>0.114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>47</td>
+      <td>−0.832</td>
+      <td>0.439</td>
+      <td>0.064</td>
+      <td>0.701</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Liver</td>
+      <td>Inverse-variance weighted</td>
+      <td>47</td>
+      <td>1.216</td>
+      <td>0.468</td>
+      <td>0.009</td>
+      <td>0.807</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>47</td>
+      <td>1.132</td>
+      <td>0.922</td>
+      <td>0.226</td>
+      <td>0.913</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>47</td>
+      <td>1.058</td>
+      <td>0.850</td>
+      <td>0.213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>47</td>
+      <td>1.216</td>
+      <td>0.468</td>
+      <td>0.012</td>
+      <td>0.843</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Ovary</td>
+      <td>Inverse-variance weighted</td>
+      <td>48</td>
+      <td>1.545</td>
+      <td>0.693</td>
+      <td>0.026</td>
+      <td>0.837</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>48</td>
+      <td>1.658</td>
+      <td>1.745</td>
+      <td>0.347</td>
+      <td>0.943</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>48</td>
+      <td>2.545</td>
+      <td>1.217</td>
+      <td>0.037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>48</td>
+      <td>1.545</td>
+      <td>0.693</td>
+      <td>0.031</td>
+      <td>0.844</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Thyroid</td>
+      <td>Inverse-variance weighted</td>
+      <td>47</td>
+      <td>1.468</td>
+      <td>0.392</td>
+      <td>1.8×10−4</td>
+      <td>0.604</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>47</td>
+      <td>1.739</td>
+      <td>0.907</td>
+      <td>0.062</td>
+      <td>0.739</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>47</td>
+      <td>1.435</td>
+      <td>0.641</td>
+      <td>0.025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>47</td>
+      <td>1.468</td>
+      <td>0.392</td>
+      <td>5.0×10−4</td>
+      <td>0.670</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Vagina</td>
+      <td>Inverse-variance weighted</td>
+      <td>48</td>
+      <td>−1.150</td>
+      <td>0.688</td>
+      <td>0.094</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>48</td>
+      <td>−3.271</td>
+      <td>1.574</td>
+      <td>0.043</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>48</td>
+      <td>−2.644</td>
+      <td>0.916</td>
+      <td>0.004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>48</td>
+      <td>−1.150</td>
+      <td>0.688</td>
+      <td>0.101</td>
+      <td>0.057</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p indicates p-value of heterogenous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) global test._
 
 For alcohol consumption defined as drinks per week, only one suggestive association with ACE2 expression in tibial nerve was observed using the IVW approach (β=−1.462, p=0.006). However, the direction of effect from the MR-Egger regression was opposite (β=0.336, p=0.721). We therefore considered an overall null association as our main finding with alcohol consumption (Supplementary file 1h).
 
 In the sensitivity analyses where we excluded palindromic or pleiotropic SNPs, results remained largely consistent with our primary findings (full results shown in Supplementary file 1i-1n). We sequentially excluded proxy SNPs to identify random error introduced by imperfect proxies. In the leave-one-out analyses where we iteratively removed one SNP each time and performed the IVW approach using the remaining SNPs, results were again concordant with our primary findings, indicating an absence of outlying SNPs (Appendix 1—figure 1).
 
 Finally, complementing to findings of ACE2 expression, we tested a putative causal link between smoking status, smoking intensity, alcohol consumption, and the risk of COVID-19 related adverse outcomes. We found that smoking initiation significantly increased the risk of COVID-19 onset (IVW: OR=1.15, 95%CI: 1.07–1.23, p=8.7×10−5) even after taking into account multiple comparisons (Table 3). Results remained significant in the weighted median, and MR-PRESSO methods, however, showed larger statistical uncertainties in the MR-Egger regression. In addition, smoking initiation increased the risk of very severe respiratory confirmed COVID-19 and hospitalized COVID-19 using the IVW approach, but the results were not supported by the MR-Egger regression. Smoking intensity (cigarettes per day) only increased the risk of very severe respiratory confirmed COVID-19 as shown in the MR-Egger regression (OR=5.99, 95%CI: 1.57–22.84, p=0.012) (Supplementary file 1o). On the contrary, we did not find a causal link between alcohol consumption (drinks per week) and the risk of COVID-19 adverse outcomes (Supplementary file 1p). Findings did not alter in the sensitivity analyses (Supplementary file 1q-r and Appendix 1—figure 4).
+
+**Table 3.**
+ Causal link of smoking initiation with the risk of coronavirus disease 2019 (COVID-19) related adverse outcomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Method</th>
+      <th>N of IVs</th>
+      <th>OR (95% CI)</th>
+      <th>p</th>
+      <th>p*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">COVID-19 susceptibility</td>
+      <td>Inverse-variance weighted</td>
+      <td>352</td>
+      <td>1.15 (1.07–1.23)</td>
+      <td>8.7×10−5</td>
+      <td>6.7×10−5</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>352</td>
+      <td>1.11 (0.83–1.49)</td>
+      <td>0.489</td>
+      <td>0.821</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>352</td>
+      <td>1.18 (1.08–1.29)</td>
+      <td>2.9×10−4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>352</td>
+      <td>1.15 (1.07–1.23)</td>
+      <td>1.0×10−4</td>
+      <td>5.0×10−5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hospitalized COVID-19</td>
+      <td>Inverse-variance weighted</td>
+      <td>351</td>
+      <td>1.32 (1.16–1.50)</td>
+      <td>3.7×10−5</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>351</td>
+      <td>0.78 (0.44–1.36)</td>
+      <td>0.383</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>351</td>
+      <td>1.37 (1.14–1.66)</td>
+      <td>0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>351</td>
+      <td>1.32 (1.16–1.50)</td>
+      <td>4.6×10−5</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Very severe respiratory confirmed COVID-19</td>
+      <td>Inverse-variance weighted</td>
+      <td>352</td>
+      <td>1.25 (1.03–1.51)</td>
+      <td>0.025</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>MR-Egger</td>
+      <td>352</td>
+      <td>0.83 (0.37–1.89)</td>
+      <td>0.658</td>
+      <td>0.318</td>
+    </tr>
+    <tr>
+      <td>Weighted median</td>
+      <td>352</td>
+      <td>1.17 (0.89–1.55)</td>
+      <td>0.267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MR-PRESSO</td>
+      <td>352</td>
+      <td>1.25 (1.03–1.51)</td>
+      <td>0.025</td>
+      <td>0.119</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p indicates p-value of heterogeneous from inverse-variance weighted (IVW) approach, or p-value of intercept from MR-Egger regression, or p-value from Mendelian randomization pleiotropy residual sum and outlier (MR-PRESSO) global test._
 
 ## Discussion
 

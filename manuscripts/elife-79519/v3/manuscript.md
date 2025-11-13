@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0015ws592 Department of Developmental Biology and Stem Cells, Institut de Génétique et de Biologie Moléculaire et Cellulaire Strasbourg France
-2. https://ror.org/02feahw73 Centre National de la Recherche Scientifique Strasbourg France
-3. https://ror.org/02vjkv261 Institut National de la Santé et de la Recherche Médicale Strasbourg France
-4. https://ror.org/00pg6eq24 Université de Strasbourg Strasbourg France
+1. Department of Developmental Biology and Stem Cells, Institut de Génétique et de Biologie Moléculaire et Cellulaire Strasbourg France ([ROR:0015ws592](https://ror.org/0015ws592))
+2. Centre National de la Recherche Scientifique Strasbourg France ([ROR:02feahw73](https://ror.org/02feahw73))
+3. Institut National de la Santé et de la Recherche Médicale Strasbourg France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+4. Université de Strasbourg Strasbourg France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))
 
 † Corresponding author
 
@@ -35,17 +35,49 @@ Here, we report the development of DetecDiv, an integrated platform that combine
 
 ## Results
 
-## Building an improved microfluidic device and a minimal image acquisition system for replicative lifespan analyses
+### Building an improved microfluidic device and a minimal image acquisition system for replicative lifespan analyses
 
 The primary scope of our present study was to overcome the current limitations inherent to the analysis of large-scale replicative lifespan assays by taking advantage of deep-learning image processing methods. Yet, we took this opportunity to provide improvements to individual mother cell trapping devices, in order to maximize the robustness of RLS data acquisition. Based on a design similar to that reported in previous studies (Jo et al., 2015; Crane et al., 2014; Liu et al., 2015), we added small jaws on the top of the trap to better retain the mother cells in the traps (especially the old ones Figure 1 and Figure 1—figure supplement 1G). In addition, we reduced the wall thickness of the traps to facilitate their deformation and thus avoid strong mechanical constraints when the cells become too big (Figure 1—figure supplement 1D,G and supplementary text for details). Finally, we added a microfluidic barrier that filters cells coming from microcolonies located upstream of the trap matrix, which eventually clog the device and thus compromise the experiment after typically 24 h of culture. Altogether, the microfluidic device features 16 independent chambers with 2000 traps each, eliciting multiple conditions and strains to be analyzed in parallel.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig1-v3.jpg)
+
+**Figure 1.:** Left: A microfluidic device, featuring 16 independent channels with 2000 individual cell traps in each (depicted with a zoom on the trap array (scale bar: 20 µm) and zoom on one trap containing a budding yeast (scale bar: 5 µm)), is imaged using time-lapse microscopy. Middle-left: Typical temporal sequence of brightfield field of views obtained with the setup (scale bar: 60 µm). Regions Of Interest (ROI) representing the traps are automatically detected using XY cross-correlation processing, and the temporal sequence of each ROI (trap) is extracted and saved. Top-right: Sketch of the training and validation pipeline of DetecDiv classifiers. A set of ROIs is picked from one (or several) experiments and annotated to form a groundtruth dataset. It is then split into a training set, used to train the corresponding classifier, and a test set used to validate the trained classifier. Bottom-right: Example of signals extracted from ROIs using DetecDiv classifiers. An image classifier can be used to extract oscillations of classes describing the size of the bud, from dividing cells, and thus the occurrence of new cell cycles (more details in Figure 2). A sequence classifier can be used to detect changes in cell-cycle frequency, such as a cell-cycle slowdown (Senescence Entry Point, SEP; more details in Figure 4). A pixel classifier can be used to segment the mother cell from other cells, and from the background (more details in Figure 5). Using these classifiers on the same ROIs allows extracting quantitative metrics from dividing cells, at the single-cell and population level.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematics of the custom imaging setup built for DetecDiv (see Methods for details). (B) Picture of the imaging setup. (C) Design of the microfluidic device with 16 independent channels. Each channel has one inlet, a dust filter, and one outlet. (D) Left: Schematics of the array of cell traps. Inset represents close-ups on indicated areas. Dimensions are in µm. Right: Brightfield image of a typical field of view and close-up on one trap (scale bar: 60 µm and 5 µm). (E) Principle of the cell barrier used to prevent the cells from moving towards the inlet when loading the cells from the outlet, since any cell upstream of the cell array may lead to the formation of colonies hence clog the device over time. (F) Principle of the automated dissection of daughter cells: the mother is retained within the trap but their successive daughters are flushed away due to constant medium flow. Daughters may either exit the trap from the top of the bottom opening. (G) Unlike previous cell trap geometries (‘classical’), the current design (‘new’) features shallow PDMS walls that can be deformed by large cells, hence ensuring the long-term retention of the cells. Two small claws on each side of the trap entrance further enhance retention. The retention, measured as the number of cells staying inside the trap before their death (or more than 5000 min, i.e. the duration of the experiment), is displayed for both type of traps.
+
 Next, we built a custom benchtop microscope (referred to as the ‘RAMM system’ in the following, see methods for details) using simple optical parts to demonstrate that high-throughput division counting and quantitative RLS assays do not require any expensive fully-automated or high-magnification commercial microscopy systems. For this, we used a simple rigid frame with inverted epifluorescence optics, a fixed dual-band GFP/mCherry filter set, a brightfield illumination column, a camera, and a motorized stage, for a total cost of fewer than 40 k euros (Figure 1—figure supplement 1A-B). Image acquisition, illumination, and stage control were all interfaced using the open-source Micromanager software (Edelstein et al., 2014). Using a ×20 magnification objective, this ‘minimal’ microscope allowed us to follow the successive divisions and the entry into senescence of typically 30,000 individual cells in parallel with a 5 min resolution (knowing that there are ~500 traps per field of view using the ×20 objective).
 
-## An image sequence classification model for automated division counting and lifespan reconstruction
+### An image sequence classification model for automated division counting and lifespan reconstruction
 
 This image acquisition system generates a large amount of cell division data (on the Terabytes scale depending on the number of channels, frames, and fields of view), only a tiny part of which can be manually curated in a reasonable time. In particular, the determination of replicative lifespans requires counting successive cell divisions until death, hence, reviewing all images acquired for each cell in each field of view over time. In addition, automating the division counting process is complicated by the heterogeneity in cell fate (i.e. cell-cycle durations and cell shape), especially during the entry into senescence.
 
 To overcome this limitation, we have developed an image classification pipeline to count successive generations and reconstruct the entire lifespan of individual cells dividing in the traps (Figure 2A). For this, we have trained a convolutional neural network (CNN) based on the ‘Inception v1’ architecture (Szegedy et al., 2015) to predict the budding state of the trapped cells by assigning one of six possible classes (unbudded, small-budded, large-budded, dead, empty trap, and clogged trap) to each frame (Figure 2A, Top). In this framework, the alternation between the 'large budded' or ‘unbudded’ and the ’small budded' states reveals bud emergences. The cell cycle durations can be deduced by measuring the time interval between successive budding events, and the occurrence of the ‘dead’ class determines the end of the cell’s lifespan (Figure 2A, Bottom). We selected this classification scheme - namely, the prediction of the budding state of the cell - over the direct assessment of cell division or budding (e.g. ‘division’ versus ‘no division’) because division and budding events can only be assessed by comparing successive frames, which is impossible using a classical CNN architecture dedicated to image classification, which takes a single frame as input. To train and evaluate the performance of the classifier, we generated a manually annotated dataset (referred to as ‘groundtruth’ in the following) by arbitrarily selecting 250 traps (split into a training and a test set, see Methods) containing situations representative of all cellular states from different fields of view and independent experimental replicates.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-v3.jpg)
+
+**Figure 2.:** (A) Principles of the DetecDiv division tracking and lifespan reconstruction pipeline; Brightfield images are processed by a convolutional neural network (CNN) to extract representative image features. The sequence of image features is then processed by a long short-term memory network (LSTM) that assigns one of the 6 predefined classes (‘unbud’, ‘small’, ‘large’, ‘dead’, ‘clog’, ‘empty’), taking into account the time dependencies. Temporal oscillations between ‘large’ and ‘small’ or ‘large’ and ‘unbudded’ indicate the beginning of a new generation (i.e. cell-cycle). The appearance of the ‘dead’ class marks the end of the lifespan. For scale reference, each image is 19.5µm wide. (B) Comparison of the different methods used for six sample cells. The gray bars represent the groundtruth data made from manually annotated image sequences. Colored lines indicate the corresponding predictions made by CNN+LSTM (orange), the CNN+post-processing (magenta), and the CNN (blue) networks (see Methods and supplementary text for details). The red segments indicate the position of new generation events. (C) Left: histogram of cell-cycle durations representing groundtruth data and predictions using different processing pipelines. The p-value indicates the results of a rank-sum test comparing the predictions to the groundtruth for the different pipeline variants. The total number of generations annotated in the groundtruth or detected by the networks is indicated in the legend. Right: Scatter plot in log scale representing the correlation between groundtruth-calculated cell-cycle durations and those predicted by the CNN+LSTM network. R2 represents the coefficient of correlation between the two datasets. Precision and recall are defined in the Methods section. (D) Left: cumulative distribution showing the survival of cells as a function of the number of generations (N=50 cells). The numbers in the legend indicate the median replicative lifespans. The p-value indicates the results from a statistical log-rank test. Right: Scatter plot representing the correlation of the replicative lifespans of 50 individual cells obtained from the groundtruth with that predicted by the CNN+LSTM architecture. Inset: same as the main plot, but for the CNN and CNN+Post-Processing pipelines. R2 indicates the coefficient of correlation between the two datasets. (E) Replicative lifespans obtained using the CNN+LSTM network for longevity mutants (solid colored lines, genotype indicated). The shading represents the 95% confidence interval calculated using the Greenwood method (Pokhrel et al., 2008). The median RLS and the number of cells analyzed are indicated in the legend. The dashed lines with shading represent the hazard rate (i.e. the instantaneous rate of cell mortality in the population of cells at a given replicative age) and its standard deviation estimated with a bootstrap test (N=100). Results from log-rank tests (comparing WT and mutant distributions) are indicated on the left of the legend. (F) Same as E but for WT cells grown in 2% glucose or 2% galactose (colored lines). Inset: Same as C - Left but with the same conditions as the main panel.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) In this framework, the sequence of images is processed by a GoogleNet CNN that processes each image separately. The CNN extracts image features that are used to assign a label to each image among six possible classes (see supplementary methods for details). As with the CNN+LSTM architecture described in Figure 2, the sequence of labels is used to assign new generation events and the occurrence of cell death. For scale reference, each image is 19.5µm wide. (B) Typical sequence of label (Top) and the associated generations extracted from it (Bottom), from the image sequence of a ROI. The groundtruth is depicted in black and gray and the output of the CNN-based image classification is shown in purple. The yellow arrows indicate prediction errors. A large-to-small error leads to a false positive new generation, while a false death leads to a precocious shortening the sequence of generations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Confusion matrix obtained with a test dataset (50 trapped cells followed over 1000 frames) using the CNN image classifier. Each number in the matrix represents the number of detected events. (B) Same as A, but for the combined CNN+LSTM architecture (C) Bar plot showing the recall, precision, and F1-score metrics obtained on each class for the CNN image classifier on the test dataset. (D) Same as C, but for the combined CNN+LSTM architecture.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Top: Four images of a mother cell in contact with another cell, annotated (groundtruth) as ‘Small’, and classified as such. The presence of this cell does not affect the classification of the budding state of the mother cell. The green arrows indicate the actual small bud from the mother cell. Bottom: Four images of a mother cell in contact with another cell, annotated (groundtruth) as ‘Large’, and classified as such. The presence of this cell does not affect the classification of the budding state of the mother cell. The red arrows indicate a small bud from the neighbor cell that could have misled the classifier. For scale reference, each image is 19.5µm wide.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Confusion matrix obtained with a test dataset (50 trapped cells followed over 1000 frames) using a InceptionV3 CNN combined with an LSTM. Each number in the matrix represents the number of detected events. (B) Same as A, but using an InceptionResnetV2 combined with an LSTM. (C) Bar plot showing the recall, precision, and F1-score metrics obtained on each class using a InceptionV3 CNN combined with an LSTM on the test dataset. (D) Same as C, but using an InceptionResnetV2 combined with an LSTM. (E) Scatter plot representing the correlation of the replicative lifespans of 50 individual cells obtained from the groundtruth with that predicted using a InceptionV3 CNN combined with an LSTM. (F) Same as E, but using an InceptionResnetV2 combined with an LSTM. (G) Scatter plot in log-scale representing the correlation between groundtruth-calculated cell-cycle durations and those predicted using a InceptionV3 CNN combined with an LSTM. R2 represents the coefficient of correlation between the two datasets. Precision and recall are defined in the Methods section. (H) Same as G, but using an InceptionResnetV2 combined with an LSTM (I) Cumulative distribution showing the survival of cells as a function of the number of generations (N=50 cells) as determined manually or as predicted by different CNNs combined with an LSTM. The numbers in the legend indicate the median replicative lifespans. The p-value indicates the results from a statistical log-rank test. (J) Average classification time of an image sequence from a ROI (1000 frames) using three different CNNs combined with an LSTM. N=1000 image sequences. (K) Histogram of cell-cycle durations representing groundtruth data and predictions by different CNNs combined with an LSTM. The p-value indicates the results of a rank-sum test comparing the predictions to the groundtruth for the different networks. The total number of generations annotated in the groundtruth or detected by the networks is indicated in the legend.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Scatter plot representing the correlation of the replicative lifespans of individual cells from sir2Δ or fob1Δ longevity mutants obtained from the groundtruth with that predicted by the CNN+LSTM architecture (N=35). (B) Histogram of cell-cycle durations representing groundtruth data and predictions, for cells growing in 2% galacose media. The p-value indicates the results of a rank-sum test comparing the predictions to the groundtruth. The total number of generations annotated in the groundtruth or detected by the networks is indicated in the legend. (C) Scatter plot in log scale representing the correlation between groundtruth-calculated cell-cycle durations and those predicted by the CNN+LSTM network, for cells growing in 2% galacose media. R2 represents the coefficient of correlation between the two datasets. Precision and recall are defined in the supplementary text. (D) Cumulative distribution showing the survival of cells growing in 2% galacose media as a function of the number of generations (N=35 cells). The numbers in the legend indicate the median replicative lifespans. The p-value indicates the results from a statistical log-rank test. (E) Scatter plot representing the correlation of the replicative lifespans of individual cells growing in 2% galacose media, obtained from the groundtruth with that predicted by the CNN+LSTM architecture (N=35). R2 indicates the coefficient of correlation between the two datasets.
 
 Benchmarking the classifier consisted of three steps: first, we computed the confusion matrices (Figure 2—figure supplement 2A) as well as the classical metrics of precision (i.e. the fraction of correct predictions among all predictions for each class), recall (i.e. the fraction of detected observations among all observations for each class), and F1-score (i.e. the harmonic mean of precision and recall). The F1-score was found to be higher than 85% for all classes (Figure 2—figure supplement 2C). Next, the predictions of budding events were compared to the manually annotated data. Despite a good visual match between the groundtruth and the CNN predictions, the distribution of cell-cycle durations revealed that the model tends to predict ‘ghost’ divisions of abnormally short duration (Figure 2B). In addition, sporadic misclassification could falsely assign a cell to the ‘dead’ state, thus decreasing the number of total generations predicted based on the test dataset (N=1127 for the groundtruth versus N=804 for the CNN model, see Figure 2C). Last, by comparing the lifespan predictions to the corresponding groundtruth data, we observed a striking underestimate of the overall survival (Figure 2D), due to the sporadic misassignments of the ‘dead’ class (Figure 2—figure supplement 1B).
 
@@ -59,9 +91,17 @@ Following its validation, we deployed this model to classify all the ROIs from s
 
 Altogether, our study shows that our classification pipeline can successfully detect cell divisions, perform lifespan replicative analysis with high throughput, and is robust enough to be employed with different strain backgrounds and under various environmental conditions, even though the training has only been performed on WT data and in glucose conditions.
 
-## Application of the division counting and lifespan prediction model to different imaging platforms and microfluidic devices
+### Application of the division counting and lifespan prediction model to different imaging platforms and microfluidic devices
 
 To further test the robustness of our analysis pipeline, we proceeded to the analysis of several datasets obtained under various imaging conditions. First, we performed experiments with the same microfluidic system but using a commercial microscope with ×60 magnification. After training the classifier on 80 ROIs and testing on 40 independent ROIs, we observed similar results to those obtained with the RAMM system and a ×20 objective (compare the ‘specialist’ columns for the panels in Figure 3A and B): the classification benchmarks were greater than 90%, the error rate on the number of generations detected was a few percents, and the cell-cycle length distributions were similar between prediction and groundtruth. This first demonstrated that neither the RAMM imaging system nor the ×20 magnification is required to guarantee successful division counting and lifespan reconstruction with our analysis pipeline.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig3-v3.jpg)
+
+**Figure 3.:** A specialist classifier was trained independently for each source, while a generalist classifier was trained on a mixed dataset generated from all the sources. (A) Cell trap and imaging setup developed in this study, with a framerate of 1 frame/5 min. (B) Cell trap developed in this study imaged with a ×60 objective mounted on a commercial imaging system with a framerate of 1 frame/5 min. (C) Cell trap from the Acar lab (Liu et al., 2015) imaged with a ×40 objective mounted on a commercial imaging system with a framerate of 1 frame/10 min. (D) Cup-shaped trap similar to Jo et al., 2015, imaged with a ×60 phase-constrast objective mounted on a commercial imaging system with a framerate of 1 frame/10 min. (E) Cell trap from the Swain lab (Crane et al., 2014; Granados et al., 2018) imaged with a ×60 objective mounted on a commercial imaging system with a framerate of 1 frame/2.5 min. Scale bars: 5µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Bottom: Time-lapse images of cup-shaped traps (Jo et al., 2015) from which the automated RLS analysis can be impaired due to mother/daughter replacement (red arrows).
 
 In addition, we gathered time-lapse microscopy datasets from several laboratories using microfluidic cell trapping systems with different geometries and various imaging conditions (Figure 3C and E; Crane et al., 2014; Liu et al., 2015; Granados et al., 2018). We also included data generated in our lab based on a device similar to that used in Jo et al., 2015 (Figure 3D). For each trap geometry, we manually evaluated the retention rate of a mother cell during a lifespan. Indeed, high retention is key to getting a reliable measurement of the RLS (i.e. to ensure that mother cells are not eventually replaced by their daughters). This analysis revealed that a ‘semi-open’ geometry (as in the design shown in Figure 3D, Figure 1—figure supplement 1G, and Figure 3—figure supplement 1) did not prevent large mother cells from being sporadically expelled during the budding of their daughters, unlike other cell trap shapes. Of note, the geometry proposed by Crane et al., 2014; Figure 3E was not tested on an entire lifespan, but only on about even generations, hence leading to an overestimation of the retention rate (it was reported to be below 50% in the original paper).
 
@@ -69,23 +109,55 @@ For each dataset, we trained a specific classifier (or ‘specialist’) on 80 R
 
 Last, instead of training the classifiers separately on each dataset, we asked whether a unique classifier would have sufficient capacity to handle the pooled datasets with all imaging conditions and trap geometries used in Figure 3. Strikingly, this "generalist" model showed comparable performance to the different specialists. This approach thus further highlighted the versatility of our methodology and demonstrated the interest in aggregating data sets to ultimately build a standardized reference model for counting divisions, independently of the specific imaging conditions.
 
-## Automated quantification of cellular physiological decline upon entry into senescence
+### Automated quantification of cellular physiological decline upon entry into senescence
 
 Aging yeast cells have long been reported to undergo a cell-cycle slowdown when approaching senescence (Mortimer and Johnson, 1959), a phenomenon that we have since quantified and referred to as the Senescence Entry Point or SEP (Fehrmann et al., 2013). More recently, we have demonstrated that this quite abrupt physiological decline in the cellular lifespan is concomitant with the accumulation of extrachromosomal rDNA circles (ERCs) (Morlot et al., 2019), a long described marker of aging in yeast (Sinclair and Guarente, 1997). Therefore, precise identification of the turning point from healthy to pathological state (named pre-SEP and post-SEP in the following, respectively) is essential to capture the dynamics of entry into senescence, and even more so since the large cell-cell variability in cell death makes trajectory alignment from cell birth irrelevant (Fehrmann et al., 2013; Morlot et al., 2019). Yet, the noise in cell-cycle durations, especially beyond the SEP, can make the determination of this transition error-prone if based on a simple analysis (e.g. thresholding) of the cell-cycle durations. Hence, to achieve a reliable determination of the SEP in an automated manner, we sought to develop an additional classification scheme as follows: we trained a simple LSTM sequence-to-sequence classifier to assign a ‘pre-SEP’ or ‘post-SEP’ label (before or after the SEP, respectively) to each frame, using the sequence of cellular state probabilities (i.e. the output of the CNN+LSTM image classifier described in Figure 2A) as input (Figure 4A). The groundtruth was generated by visual inspection using a graphical user interface representing the budding status of a given cell over time. Same as above, we used 200 manually annotated ROIs for the training procedure and reserved 47 additional ones that were never ‘seen’ by the network to evaluate the predictions. Comparing the predictions to the groundtruth revealed that we could successfully identify the transition to a slow division mode (R²=0.93, see Figure 4B–C and Figure 4—figure supplement 1). Hence, we could recapitulate the rapid increase in the average cell-cycle durations after aligning individual trajectories from that transition (Figure 4D), as described before (Fehrmann et al., 2013). These results show that complementary classifiers can be used to process time series output by other classification models, allowing further exploitation of relevant dynamic information, such as the entry into senescence.
 
-## Cell contour determination and fluorescence image quantification by semantic segmentation
+![Figure 4.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig4-v3.jpg)
+
+**Figure 4.:** (A) Sketch depicting the detection of the Senescence Entry Point (SEP). The temporal sequence of classes probabilities (i.e. unbud, small, large, dead) is fed into an LSTM network that predicts the SEP by assigning one of the two predefined classes pre-SEP or post-SEP to each frame. (B) Correlogram showing the correlation between the SEP predicted by the LSTM network and the groundtruth data, obtained as previously described (Fehrmann et al., 2013). The gray level coded data points indicate the local density of the points using arbitrary units as indicated by the gray level bar. (C) Sample trajectories indicating the successive generations of individual cells (red lines) along with the cell-cycle duration (color-coded as indicated). (D) Average cell-cycle duration versus generation index after aligning all individual trajectories from the SEP (Fehrmann et al., 2013). Each point represents an average over up to 200 cell trajectories. The error bar represents the standard error-on-mean.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confusion matrix obtained with a test dataset (50 time-series based on the cellular state probabilities output by the CNN+LSTM classifier) using a trained LSTM classifier. Each number in the matrix represents the number of detected events. (B) Bar plot showing the precision, recall, and F1-score metrics obtained on each class for the LSTM classifier on the test dataset.
+
+### Cell contour determination and fluorescence image quantification by semantic segmentation
 
 Quantifying the dynamics of successive divisions is an indispensable prerequisite for capturing phenomena that span multiple divisions such as replicative aging. However, in order to make the most of the possibilities offered by photonic microscopy, it is necessary to develop complementary cytometry tools. For this purpose, semantic segmentation based on the classification of pixels has seen a growing interest recently to process biomedical images since the pioneering development of the U-Net architecture (Ronneberger et al., 2015). U-Net networks feature an encoding network that extracts meaningful image information and a decoding part that reconstructs a segmented image with a user-defined number of classes (e.g. background, cell, etc.). Recently, the original U-NET architecture has been employed for segmentation in yeast (Dietler et al., 2020). More generally, more sophisticated versions have been released allowing the segmentation of objects with low contrast and/or in dense environments, such as Stardist (Schmidt et al., 2018) and Cellpose (Stringer et al., 2021).
 
 Here, since the complexity of images with individual cell traps is limited, we have used an encoder/decoder network based on the DeepLabV3+ architecture (Chen et al., 2018, Figure 5—figure supplement 1), to segment brightfield images (Figure 5A, Figure 5—video 1, and Methods). Briefly, DeepLabV3+ features an encoder/decoder architecture similar to U-Net, but is more versatile by allowing to process images of arbitrary size. In the following, we chose the Resnet50 network (He et al., 2016) as the CNN encoder, which we found to outperform the Inception model for this task. We trained the model on ~1,400 manually segmented brightfield images using three output classes (i.e. ‘background,’ ‘mother cell,’ ‘other cell’) in order to discriminate the mother cell of interest from the surrounding cellular objects. We used a separate test dataset containing ~500 labeled images to evaluate the performance of the classifier (see Methods for details about the generation of the groundtruth data sets). Our results revealed that mother cell contours could be determined accurately with a trained classifier (Figure 5A–C and Figure 5—figure supplement 2A-D). In addition, we used a cross-validation procedure based on random partitioning of training and test datasets that highlighted the robustness of the classification (Figure 5—figure supplement 2E). Overall, this segmentation procedure allowed us to quantify the dynamics of volume increase of the mother cell during replicative aging (Figure 5C–D), as previously reported (Morlot et al., 2019).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig5-v3.jpg)
+
+**Figure 5.:** (A) Principles of semantic cell contours segmentation based on brightfield images; Top and middle row: Individual brightfield images were processed by the DeeplabV3+ network that was trained to perform pixel classification using three predefined classes representing the background (black), the mother cell of interest (orange), or any other cell in the image (blue). Bottom row: overlay of brightfield images with segmented cellular contours. For scale reference, each image is 19.5µm wide. (B) Correlogram showing the correlation between individual cell area predicted by the segmentation pipeline and the groundtruth data, obtained by manual annotation of the images. The color code indicates the local density of the points using arbitrary units. (C) Sample trajectories indicating the successive generations of individual cells (red lines) along with the cell surface area (color-coded as indicated). (D) Average mother cell surface area versus generation index after aligning all individual trajectories from the SEP (Fehrmann et al., 2013). Each point represents an average of up to 200 cell trajectories. The error bar represents the standard error-on-mean. (E) Principles of semantic cell nuclei segmentation based on fluorescent images of cells expressing a histone-Neongreen fusion. The semantic segmentation network was trained to classify pixels between two predefined classes (‘background’ in black, ‘nucleus’ in green). For scale reference, each image is 19.5µm wide. (F) Same as B but for nuclear surface area. (G) Same as C but for total nuclear fluorescence (H) Same as in D but for total nuclear fluorescence.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Brightfield or fluorescence images are separately processed by the DeepLabV3+ encoder/decoder network (Chen et al., 2018) that has been modified to classify image pixels according to user-defined classes (mother/other/background and nucleus/background for brightfield and fluorescence images, respectively). For scale reference, each image is 19.5µm wide. A weighted classification layer is used to deal with class imbalance.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Precision/Recall tradeoff plot obtained by varying the output prediction threshold for the class “mother” using a test dataset that contains 50 image sequences with 1000 frames. The yellow dot indicates the point that maximizes the F1-score. (B) Evolution of F1-score as a function of the output prediction threshold computed on the [0.2 : 0.95] interval. A threshold value of 0.9 maximizes the F1-score (90%). (C) Confusion matrix obtained with the test dataset using a 0.9 prediction threshold. (D) Bar plot showing the recall, precision, and F1-score metrics obtained on each class for the pixel classifier on the test dataset. (E) Cross-validation of the classification model used for semantic segmentation; Class-averaged recall, precision, and F1-score plotted as a function of the index of the draws performed, as indicated on the legend (200 ROIs and 50 ROIs are randomly selected for training and testing upon each draw, respectively).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Precision/Recall tradeoff plot obtained by varying the output prediction threshold for the class “nucleus” using a test dataset that contains 25 image sequences with 1000 frames. The orange dot indicates the point that maximizes the F1-score. (B) Evolution of F1-score as a function of the output prediction threshold computed on the [0.2 : 0.95] interval. A threshold value of 0.35 maximizes the F1-score (91%). (C) Confusion matrix obtained with the test dataset using a 0.35 prediction threshold. (D) Bar plot showing the recall, precision and F1-score metrics obtained on each class for the pixel classifier on the test dataset.
+
 Last, a similar training procedure with ~3000 fluorescence images with a nuclear marker (using a strain carrying a histone-Neongreen fusion) yielded accurate nuclei contours (Figure 5E–F, Figure 5—figure supplement 3). It successfully recapitulated the sharp burst in nuclear fluorescence that follows the Senescence Entry Point (Figure 5G–H; Morlot et al., 2019).
 
-## Automated quantitative measurements of the physiological adaptation to hydrogen peroxide
+### Automated quantitative measurements of the physiological adaptation to hydrogen peroxide
 
 Beyond replicative longevity analyses, we wondered if this automated pipeline could be applied to other biological contexts, in which cell proliferation and cell death need to be accurately quantified over time. Hence, we sought to measure the dynamics of the physiological adaptation of yeast cells subjected to hydrogen peroxide stress.
 
 For this purpose, young cells were abruptly exposed to different stress concentrations, ranging from 0 to 0.8 mM H2O2, and observed over about 15 h (Figure 6A). We used a strain carrying the Tsa1-GFP fusion protein (TSA1 encodes a peroxiredoxin, a major cytosolic antioxidant overexpressed in response to oxidative stress) as a fluorescent reporter of the cellular response to this stress (Goulev et al., 2017).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig6-v3.jpg)
+
+**Figure 6.:** (A) Successive brightfield and Tsa1-GFP images of three representative cells submitted to 0.3 mM of H2O2 and corresponding to a different fate. The orange contour of the cell is determined using the segmentation described in Figure 5, and the total GFP fluorescence inside it is depicted as a function of time, where red bars indicates a new generation and the purple dotted bar indicated the onset of H2O2. For scale reference, each image is 19.5µm wide. (B) Scatter plot of automatically detected cell-cycle durations versus time of 500 cells submitted to different doses of H2O2. The purple area indicates the presence of the indicated dose of H2O2. (C) Fraction of dead cells versus time as automatically detected by the CNN+LSTM classifier, under different H2O2 doses. The purple area indicates the presence of the indicated dose of H2O2. N=500. (D) Mean Tsa1-GFP fluorescence from cells submitted to different doses of H2O2. The purple area indicates the presence of the indicated dose of H2O2. N=500.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79519/elife-79519-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Scatter plot representing the correlation of the time of death of 35 individual cells exposed to a 0.05 mM H2O2 stress, between the groundtruth and the prediction by the CNN+LSTM architecture. R2 indicates the coefficient of correlation between the two datasets. (B) Confusion matrix between the survival status (‘Dead’ or ‘Alive’) of cells at the end of the experiment between the groundtruth and the prediction by the CNN+LSTM. Each number in the matrix represents the number of cells.
 
 In this context, we first sought to characterize the dynamics of the cell cycle by using the classifier reported in Figure 2 - without doing any retraining - to detect divisions during the experiment (using N=250 ROIs). Our automated analysis revealed different possible cell fates, whose proportions varied according to the stress concentration (Figure 6A and B): in the absence of stress (0 mM), cells maintained a constant division rate throughout the experiment; in contrast, at 0.3 mM, the population partitioned between cells that recovered a normal division rate after experiencing a delay (see the ‘adapted cells’ in Figure 6B) and others that seemed unable to resume a normal cell-cycle (see the ‘slowly dividing cells’ in Figure 6B), in agreement with previous results (Goulev et al., 2017).
 
@@ -111,15 +183,15 @@ Unlike classical image analysis methods, which require complex parameterization 
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 All strains used in this study are congenic to S288C (see Supplementary file 1 for the list of strains). See the next section for detailed protocols for cell culture.
 
-## Cell culture
+### Cell culture
 
 For each experiment, freshly thawed cells were grown overnight, diluted in the morning, and allowed to perform several divisions (~5 hours at 30 °C) before injection into the microfluidic device. Yeast extract Peptone Dextrose (YPD) medium was used throughout the experiments.
 
-## Microfabrication
+### Microfabrication
 
 The designs were created on AutoCAD to produce chrome photomasks (jd-photodata, UK). The microfluidic master molds were then made by standard photolithography processes. The designs were created on AutoCAD (see https://github.com/TAspert/DetecDiv_Data; Aspert, 2021 to download the design) to produce chrome photomasks (jd-photodata, UK). Then, the microfluidic master molds were made using two rounds of classical photolithography steps.
 
@@ -129,23 +201,23 @@ The second layer with channel motifs was made of a 30 µm deposit of SU8-2025, b
 
 After each layer, we performed a hard bake at 150 °C for 15 min to anneal potential cracks and stabilize the photoresist. Finally, the master molds were treated with chlorotrimethylsilane to passivate the surface.
 
-## Microfluidics chip design, fabrication, and handling
+### Microfluidics chip design, fabrication, and handling
 
 The microfluidic device is composed of an array of 2048 microstructures able to trap a mother cell while removing successive daughter cells, similarly to previously designed (Ryley and Pereira-Smith, 2006; Zhang et al., 2012; Lee et al., 2012; Crane et al., 2014; Jo et al., 2015; Liu et al., 2015). The traps are composed of two symmetrical structures separated by 3 µm (see Figure 1 and Figure 1—figure supplement 1D-G), in such a way that only one cell can be trapped and remain in between the structures. We have measured that 94% of the cells that underwent at least five divisions in the trap would stay inside until their death. This is striking contrast with the results obtained with a device with a semi-open trap geometry (see Figure 3 and Figure 3—figure supplement 1 for details). Moreover, a particle filter with a cutoff size of 15 µm is present before each array of traps, preventing dust particles or debris from clogging the chip (Figure 1—figure supplement 1C). In addition, a cell filter with a cutoff size of 1.5µm is placed upstream of each trapping area to prevent contamination of the inlet by cells during the seeding phase (see next paragraph).
 
 The microfluidic devices were fabricated using soft-lithography by pouring polydimethylsiloxane (PDMS, Sylgard 184, Dow Chemical, USA) with its curing agent (10:1 mixing ratio) on the different molds. The chips were punched with a 1 mm biopsy tool (KAI, Japan) and covalently bound to a 24×50 mm coverslip using plasma surface activation (Diener Zepto, Germany). The assembled chips were baked for 30 min at 60 °C to consolidate covalent bonds between glass and PDMS. The chip was then plugged using a 1 mm Outer Diameter (O.D.) PTFE tubing (Adtech, UK) and the channels were primed using culture media for 5 min. After that, cells were injected through the outlet using a 5 mL syringe and a 26 G needle for approximately 1 min per channel by applying very gentle pressure. The cell filter placed upstream of the trapping area prevented the cells from entering the tubing connected to the inlet (Figure 1—figure supplement 1 E). Then, the inlet of each microfluidic channel was connected to a peristaltic pump (Ismatec, Switzerland) with a 5 µL/min rate to ensure a constant replenishment of the media and dissection of the daughter cells (Figure 1—figure supplement 1E). This procedure avoids potential contamination by cells forming colonies upstream of the trapping area, which would induce the clogging of the device after 1–2 days of experiment, therefore making long-lasting experiments more robust.
 
-## Microscopy
+### Microscopy
 
 The microscope was built from a modular microscope system with a motorized stage (ASI, USA, see the supplementary text for the detailed list of components), a ×20 objective 0.45 (Nikon, Japan) lens, and an sCMOS camera (ORCA flash 4.0, Hamamatsu, Japan). A dual-band filter (#59022, Chroma Technology, Germany) coupled with a two-channel LED system (DC4104 and LED4D067, Thorlabs, USA). The sample temperature was maintained at 30 °C thanks to a heating system based on an Indium Thin Oxide coated glass and an infrared sensor coupled to an Arduino-based regulatory loop.
 
-## Microscope
+#### Microscope
 
 The microscope was built from a modular microscope system (RAMM, ASI, USA) with trans- (Oly-Trans-Illum, ASI, USA) and epi- (Mim-Excite-Cond20N-K, ASI, USA) illumination. This microscope frame provides a cost-effective solution to build a minimal microscopy apparatus to perform robust image acquisition over several days (Figure 1—figure supplement 1B).
 
 It is equipped with a motorized XY stage (S551-2201B, ASI, USA), a stage controller (MS200, ASI, USA), and a stepper motor to drive the ×20 N.A. 0.45 Plan Fluor objective (Nikon, Japan) and an sCMOS camera (ORCA flash 4.0, Hamamatsu, Japan) with 2048 pixels × 2048 pixels (i.e. 650 µm × 650 µm field of view at ×20 magnification). We used a dual-band filter (#59022, Chroma Technology, Germany) coupled with two-channel LED illumination (DC4104 and LED4D067, Thorlabs, USA), which allows fast imaging of GFP and mCherry without any filter switching.
 
-## Sample holder and temperature control
+#### Sample holder and temperature control
 
 We designed a custom 3D-printed sample holder (by extruding PLA material with a MK3S+printer, Prusa Research, Czech republic) for the microfluidic device to ensure the mechanical stability of the microfluidic device (design available on github: https://github.com/TAspert/ITO_heating_device; Aspert, 2022).
 
@@ -153,27 +225,27 @@ In addition, we developed a custom temperature control system to maintain a cons
 
 To achieve a temperature control loop, we used an infrared sensor attached to the objective and facing towards the bottom glass coverslip in contact with the cells. The sensor allowed in situ temperature measurement and was used in an Arduino-based PID control loop to regulate the heating power to maintain the setpoint temperature (the circuit diagram is available on github: https://github.com/TAspert/ITO_heating_device; Aspert, 2022). About 0.3 W was sufficient to maintain a 30 °C temperature at room temperature. Notably, the temperature profile obtained with this method was homogenous and constant throughout the experiment. Furthermore, the glass is fully transparent to visible light. In addition, it does not interfere with fluorescent light when using an inverted microscope since it is located at the end of the optical path, after the sample.
 
-## Software and time-lapse acquisition parameters
+#### Software and time-lapse acquisition parameters
 
 Micromanager v2.0. was used to drive the camera, the light source, the XYZ controller, and the LED light source for fluorescence epi-illumination. We developed a specific program in order to drive the temperature controller from the Arduino (The source code is available on github: https://github.com/TAspert/ITO_heating_device; Aspert, 2022).
 
 Unless specified otherwise, the interval between two brightfield frames for all the experiments was 5 min, and images were recorded over 1000 frames (i.e. ~3 days). We used three z-stack for brightfield imaging (spaced by 1.35 µm) to ease the detection of small buds during the image classification process for cell state determination. Fluorescent images were acquired with a 10 min interval using 470 nm illumination for 50ms. Up to 80 fields of view were recorded over the 5 min interval.
 
-## Autofocusing
+#### Autofocusing
 
 To keep a stable focus through the whole experiment, we developed a custom software-based autofocus routine that finds the sharpest image on the first field of view and then applies the focus correction to the rest of the positions (https://github.com/TAspert/DetecDiv_Data; Aspert, 2021). This method provides faster scanning of all fields of view in a reasonable time. Nevertheless, it is almost as efficient as performing autofocusing on each position since the primary source of defocusing in our setup is the thermal drift, which applies identically to all the positions.
 
-## Time-lapse routine
+#### Time-lapse routine
 
 Micromanager v2.0 (Edelstein et al., 2014) was used to drive all hardware, including the camera, the light sources, and the stage and objective motors. We could image approximately 80 fields of view (0.65mm×0.65mm) in brightfield and fluorescence (using a dual-band GFP-mCherry filter) with this interval. In the H2O2 stress response experiments, cells were exposed abruptly to a medium containing the desired concentration (from 0.3mM to 0.8 mM) and fluorescence was acquired every 15 min.
 
-## Additional datasets for the comparative study of division detection
+### Additional datasets for the comparative study of division detection
 
 Time-lapse image datasets of individual mother cells trapped in microfluidic devices were obtained from the Murat Acar and Peter Swain lab. The datasets were used to compare the performance of our cell division tracking pipeline, as described in the main text. Data from the Acar lab were generated on a Nikon Ti Eclipse using ×40 brightfield imaging with a 10min-interval and a single z-stack, as previously described (Liu et al., 2015). Data from the Swain lab were obtained using a Nikon Ti Eclipse microscope using ×60 brightfield imaging, a 2.5min-interval (Crane et al., 2014; Granados et al., 2018), and 5 z-stacks combined into a single RGB image and used as input to the classifier. We also used a separate trap design from our own lab that is similar to a previously reported design (Jo et al., 2015) which was imaged on a Nikon Ti Eclipse microscope using a ×60 phase-contrast objective.
 
-## Image processing
+### Image processing
 
-## DetecDiv software
+#### DetecDiv software
 
 We developed Matlab software with a graphical user interface, DetecDiv, which provides different classification models: image classification, image sequence classification, time series classification, and pixel classification (semantic segmentation), see Supplementary file 2 for details. DetecDiv was developed using Matlab, and additional toolboxes (TB), such as the Computer Vision TB, the Deep-learning TB, and the Image Processing TB. A graphical user interface (GUI) was designed to facilitate the generation of the training sets. The DetecDiv software is available for download on GitHub: https://github.com/gcharvin/DetecDiv (Aspert, 2021).
 
@@ -185,7 +257,7 @@ DetecDiv training and validation procedures are run either at the command line, 
 
 Last, DetecDiv provides additional post-processing routines to extract cell-cycle, lifespan and pixel-related (volume, signal intensity, etc) data for further analysis, as performed in the present study.
 
-## Convolutional Neural Networks (CNN) for classification of the cellular budding status and death
+#### Convolutional Neural Networks (CNN) for classification of the cellular budding status and death
 
 We used an image classifier to assess the state of cells in the cell cycle (small, large-budded, etc.) using brightfield images of individual traps. For each frame, we combined the three z-stack images described above into a single RGB image, which was used as input for the classifier.
 
@@ -207,7 +279,7 @@ The training of the classifier was achieved using Adaptive Moment estimation (Ad
 
 After the training procedure, we tested the classifier using a dataset composed of 50 independent ROIs (i.e. ~50,000 images) that were manually annotated and used for benchmarking (Figure 2—figure supplement 2).
 
-## Cell-cycle duration measurements and replicative lifespan (RLS) reconstruction based on classification results
+#### Cell-cycle duration measurements and replicative lifespan (RLS) reconstruction based on classification results
 
 As the image classifier outputs a label for each frame corresponding to one of the ix classes defined above, we used the sequence of labels to reveal the successive generations of the cells: the oscillations between the ‘large’ and ‘small’ or ‘unbudded’ and ‘small’ classes captured the entry into a new cell cycle (i.e. a budding event).
 
@@ -215,7 +287,7 @@ The first occurrence of one of the four following rules was used as a condition 
 
 This set of rules was used to compute the cell-cycle duration and the RLS of each individual cell when using either the CNN or the combined CNN+LSTM architecture (see below). However, in order to improve the accuracy of the method based only on the CNN, we implemented an additional ‘post-processing’ step (referred to as PP in Figure 2), namely that two consecutive frames with a ‘dead’ label are necessary to consider a cell as dead.
 
-## Image sequence classification using combined CNN and a long short-term memory network (LSTM)
+#### Image sequence classification using combined CNN and a long short-term memory network (LSTM)
 
 To provide a more accurate classification of the image according to the cellular state, we added a bidirectional long short-term memory (LSTM) network with 150 hidden units to the CNN network (Hochreiter and Schmidhuber, 1997). The LSTM network takes the whole sequence of images as input (instead of independent images in the case of the CNN). 200 ROIs (with 1000 frames each) were used to train the LSTM network independently of the CNN network (see training parameters in Figure 2—source data 1 and benchmarks on Figure 2—figure supplement 2B-D). The CNN and the LSTM network were then assembled as described in Figure 2A in order to output a sequence of labels for each sequence of images. The assembled network was then benchmarked using a set of 50 independent annotated ROIs, as described above.
 
@@ -223,7 +295,7 @@ The training and test datasets are available at: doi.org/10.5281/zenodo.6078462.
 
 The trained network is available at: doi.org/10.5281/zenodo.5553862.
 
-## Assessment of cell-cycle slowdown using an LSTM network
+#### Assessment of cell-cycle slowdown using an LSTM network
 
 We designed a time series classification method to identify when the cell cycle starts to slow down (Senescence Entry Point, or SEP, see Results section). For this, we trained a bidirectional LSTM network with 150 hidden units to classify all the frames in each lifespan, into two classes, ‘pre-SEP and ‘post-SEP’, using a manually annotated dataset containing 200 ROIs. To achieve these annotations, we designed a custom annotation GUI allowing us to monitor the successive states of a mother cell of interest over time, as output by the CNN+LSTM network above. This tool was convenient to detect the cell cycle slow down occurring upon entry into senescence. Then, the LSTM network was trained using class probabilities from the previously described CNN+LSTM (unbudded, small, large, dead), see Figure 4—figure supplement 1 for benchmarking results on a test set with 47 ROIs.
 
@@ -231,7 +303,7 @@ The training and test datasets are available at: doi.org/10.5281/zenodo.6075691.
 
 The trained network is available at: doi.org/10.5281/zenodo.5553829.
 
-## Brightfield and fluorescence images semantic segmentation using DeepLabV3+
+### Brightfield and fluorescence images semantic segmentation using DeepLabV3+
 
 Cells and nuclei contours were determined based on brightfield and fluorescence images, respectively, using the deep learning-based semantic segmentation architecture DeepLabV3+ (Chen et al., 2018). To generate the groundtruth data required to feed both the training and test datasets, we developed a graphical user-interfaced routine to ‘paint’ the input images, a process which took about 15–30 s per image depending on the number of cells in a 60×60 pixel-large field of view. We trained the network using a training set containing 1400 and 3000 images for brightfield and fluorescence images, respectively (see Figure 5—figure supplement 2 and Figure 5—figure supplement 3 for benchmarking results). Specific parameters used can be found in the Figure 5—source data 1 (cell segmentation) and Figure 5—source data 2 (nucleus segmentation). In addition, we have implemented a cross-validation routine to test the sensitivity of the classifier used for cell segmentation to the training and test datasets. For this purpose, we have performed 30 successive random draws of 200 annotated ROIs to be used as a training set and 50 annotated ROIs for testing the classifier (the total number of manually annotated ROIs is 250). For each draw, we have measured the performance of the classifier (i.e. precision, recall, F1-score), see Figure 5—figure supplement 2E.
 
@@ -239,29 +311,29 @@ The training and test datasets are available at: doi.org/10.5281/zenodo.6077125.
 
 The trained network is available at: doi.org/10.5281/zenodo.5553851.
 
-## Classifier benchmarking
+### Classifier benchmarking
 
 We used standard benchmarking to estimate the efficiency of image and pixel classifiers. For each classifier, we computed the confusion matrix obtained by comparing the groundtruth of manually annotated images (or time series) taken from a test set unseen by the network during training to the predictions made by the classifier. We computed the precision, recall, and F1-score for each class (see the corresponding definitions in the Results section). In the specific case of pixel classification (semantic segmentation), we computed these benchmarks for different values of prediction thresholds used to assign the ‘mother’ and ‘nucleus’ classes, as reported in Figure 5—figure supplements 2 and 3. Then, we performed the segmentation of images using the threshold value that maximizes the F1-score (0.9 and 0.35 for brightfield and fluorescence image classification, respectively).
 
 To benchmark the detection of new generations, we used a custom pairing algorithm to detect false positive and false negative new generation events. Using this, we could compute the precision and recall of the detection of new generation events, and plot the correlation between paired new generations events (Figure 2D).
 
-## Statistics
+### Statistics
 
 All experiments have been replicated at least twice. Error bars and ± represent the standard error-on-mean unless specified otherwise. Results of specific statistical tests are indicated in the figure legends.
 
-## Computing time
+### Computing time
 
 Image processing was performed on a computing server with 8 Intel Xeon E5-2620 processors and 8 co-processing GPU units (Nvidia Tesla K80, released in 2014), each of them with 12Go RAM. Under these conditions, the classification of the time series of 1000 frames from a single trap (roughly 60 pixels × 60 pixels) took 3.5 s to the CNN+LSTM classifier. For the image segmentation, the DeepLabV3 +network took about 20 s to classify 1000 images. Alternatively, we have used a personal notebook with an Nvidia Quadro T2000 card (similar to a GTX 1650, released in 2019) to set up and troubleshoot the code. Under the conditions, training procedures could be achieved within a few hours or overnight depending on the size of the training set, and classification times were similar to those obtained with a Telsa K80. However, using bigger CNNs, such as the inception v3 or the inception-resnet v2, lead to a large increase in computing times (see Figure 2—figure supplement 4J), which makes them cumbersome when using limited computing resources, as in our study.
 
-## Materials availability statement
+### Materials availability statement
 
-## Datasets
+#### Datasets
 
 Annotated datasets and trained classifiers used in this study are available for download as indicated:
 
 Information regarding the design of the microfluidic device and of the custom imaging system are available on https://github.com/TAspert/DetecDiv_Data, (copy archived at swh:1:rev:ab95660be5e0677dba69247d27492036c33e08c1; Aspert, 2021).
 
-## Code
+### Code
 
 The custom MATLAB software DetecDiv, used to analyze imaging data with deep-learning algorithms, is available on https://github.com/gcharvin/DetecDiv.
 

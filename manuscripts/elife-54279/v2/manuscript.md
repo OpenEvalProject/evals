@@ -35,9 +35,17 @@ This study reports a characterization of OTX2 mutants during various stages of r
 
 ## Results
 
-## CRISPR/Cas9-induced ablation of the OTX2 gene at the optic vesicle stage results in anatomical defects of the overall eye structure, pigment epithelium and neuronal retina
+### CRISPR/Cas9-induced ablation of the OTX2 gene at the optic vesicle stage results in anatomical defects of the overall eye structure, pigment epithelium and neuronal retina
 
 To generate mutations that disrupt the function of the OTX2 gene, two RNA guides that corresponded to mRNA positions 141 and 167 in the coding sequence of the OTX2 gene, called guide 2 (g2) and guide 3 (g3), were used (Figure 1A–B). In all experiments, a DNA plasmid (plasmid p18) encoding one of these guides and an encoded source of Cas9 was co-electroporated with a fluorescent reporter into several stages of chick retinas, either in ovo or ex vivo, and analyzed at specific stages (Figure 1C–E). Throughout the study, the comparison was done between retinas electroporated with the CRISPR guide plus electroporation control vector mix and retinas electroporated with the same electroporation control as well as an ‘empty’ p18 plasmid that contained the Cas9 open reading frame driven by the CAG promoter and the guide RNA scaffold, but without the 20 bp part of the guide RNA specific to the target gDNA. For simplicity, the control eyes will be referred to as CTRL, while the experimental ones as OTX2CRISPR.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the Gallus gallus OTX2 genomic locus. Purple blocks represent coding exon regions. Gray blocks represent non-coding exon regions. Light grey bar in exon 4 represents homeodomain region. (B) Location of guides 2 and 3 relative to the unspliced (top) and spliced (bottom) OTX2 mRNA. Grey box shows the mRNA regions that encode the homeobox domain. (C) Key events in the developmental timeline of the eye development in chick. (D) Schematic of co-electroporated plasmids. U6 is the promoter for the guide RNA, denoted by G., CAG drives expression of Cas9 and fluorescent reporters. (E). Time points for electroporation of CRISPR plasmids and analysis. (F–I) Confocal microscopy analysis of CTRL and OTX2CRISPR g2-induced mutant retinal sections targeted at E1.5 and analyzed at E5. OTX2 protein expression in CTRL (F) as compared to Mutant (G). Mutant RPE is depigmented and cells with strong GFP and low levels of OTX2 are identified by red outline. White arrow in high magnification insert shows OTX2-positive cells, whereas the yellow arrow point to cells that are negative for OTX2. (H, I) CTRL (H) and Mutant (I) sections stained for PAX6. RPE structures in mutants are outlined by dotted lines and shown as a high magnification insert in (I). (J–M) Qualitative analysis of CTRL and g2 retinas electroporated in ovo at E3 and analyzed at E6 (J–K) and E10 (L–M). (J–K) White arrows denote examples of electroporated cells that are positive for OTX2. (L–M) GFP-positive, OTX2-negative patches (dotted lines) are present in the INL and PR layers of OTX2CRISPR mutants. Ex, Exon; nc, non-coding; HD, homeodomain; BF, brightfield; RPE, retinal pigment epithelium; IR, inner retina, OR, outer retina, ONL, outer nuclear layer, INL, inner nuclear layer, GCL, ganglion cell layer.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–H) Phenotypes observed after eye cups were electroporated with OTX2CRISPR g2 complex and CAG::GFP at E1.5/HH 10 and analyzed at E5/HH 26. Images were acquired from the frontal (LENS) and dorsal (ON) view of whole eyes. GFP signal shows electroporation efficiency of the CAG::GFP control plasmid. Control (CTRL) eyes in (A and B) were electroporated with an empty p18 plasmid and CAG::GFP. All mutants (C–H) display different degrees of microphthalmia, RPE depigmentation, while some show coloboma-like defects and abnormal shape of the eye (C, E, F). Arrowheads point to the incomplete closure of the optic stalk giving the coloboma appearance and abnormal shape. (I) Microphthalmia was measured as the ratio between the area of the electroporated eye and the non-electroporated one. Error bars are 95% confidence intervals. (J) Quantification of the morphological defects.( I, J) n = 16, ** signifies p<0.001. (K–N) Vertical sections of CTRL and mutant retinas imaged by confocal microscopy for GFP, DAPI and either VSX2 expression (K,L), PH3 (M,N) expression, or EdU (O,P). BF, brightfield, ON, optic nerve, RPE, retinal pigment epithelium, IR, inner retina.
 
 In ovo electroporation was first used at E1.5 (HH9-HH11), targeting only the right eye of each embryo. Electroporation of the OTX2 g2 or g3 yielded severe anatomical defects of the electroporated eye upon analysis at E5, a timepoint when both the neuronal retina and the RPE territories have already been specified (Figure 1C, Figure 1—figure supplement 1A–H). The morphological defects observed in the OTX2CRISPR mutants ranged from microphthalmia (Figure 1—figure supplement 1C,E,I), patches of depigmentation in the RPE (Figure 1—figure supplement 1C–H), defects of the optic nerve (ON), such as ON head enlargement, as well as both iridial and optic stalk coloboma-like phenotypes (Figure 1—figure supplement 1D,E,F,H). For all in ovo experiments the left eye, not targeted by electroporation, developed normally as expected (MGT). Quantification of the above-mentioned phenotypes is shown in Figure 1—figure supplement 1I–J and Supplementary file 2. Similar results were obtained in seven independent experiments.
 
@@ -53,9 +61,17 @@ The CAG::GFP plasmid was used as an electroporation control to identify the targ
 
 The absence of OTX2-positive cells in the mutant was more pronounced at E10, when the retina is layered, and the OTX2-positive PRs are concentrated in the ONL and BCs are located in the outer part on the INL (Figure 1L). Columns of GFP-positive cells that lack OTX2 form gaps within the OTX2-positive populations in the ONL and INL (Figure 1M). These experiments suggest that OTX2 g2 guided-Cas9 is able to disrupt OTX2 expression and leads to underrepresentation of PR and BC fates in the electroporated population, in agreement with a previous study in mice (Nishida et al., 2003; Koike et al., 2007). To quantify these effects and investigate the fate of OTX2 mutant cells, an ex vivo preparation was used at a later timepoint.
 
-## Highly effective OTX2 mutagenesis leads to a reduction in photoreceptors and increase in PAX6 positive cells
+### Highly effective OTX2 mutagenesis leads to a reduction in photoreceptors and increase in PAX6 positive cells
 
 To more precisely examine the role of OTX2 during PR genesis, the OTX2 CRISPR g2/Cas9 and CAG::GFP plasmids were electroporated into embryonic day 5 (E5) chicken retinas. In parallel, several experiments were replicated using g3 to validate observed phenotypes (Figure 2—figure supplement 1). Retinas were electroporated ex vivo and cultured for two days. Immunofluorescence examination of retinas revealed a qualitative decrease in OTX2-positive cells in the electroporated population (arrows in Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Confocal microscopy assessment of vertical sections of retinas co-electroporated with CAG::GFP and CRISPR plasmid, and then immunostained for OTX2 (magenta), GFP (green) and DAPI (blue) (A) Control (B) OTX2CRISPR g2. White arrows denote electroporated OTX2-positive cells. (C–H) Representative dot plots showing the overlap between OTX2 (C), PAX6 (E), and THRBCRM2::GFP (G) with CAG::GFP or CAG::tdT in CTRL and OTX2CRISPR g2 dissociated retinas. (D, F, H) Bar graph showing the average percentage of cells positive for each marker out of the total number of electroporated cells detected with GFP or tdT. Each point represents one biological replicate (n ≥ 4 for both CTRL and OTX2CRISPR g2 and error bars represent 95% confidence intervals. *** represents p<0.0001 and ** represents p<0.001; OR, outer retina; IR, inner retina. DIV, days in vitro.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Representative dot plots showing the overlap between OTX2 immunoreactivity (A–B) and THRBCRM2::GFP (C–D) with CAG::GFP or CAG::tdT in CTRL and OTX2CRISPR g3 dissociated retinas. Percentage of cells positive for each marker were normalized to the total number of electroporated cells detected with GFP or tdT. *** signifies p<0.0001 and ** signifies p<0.001. Error bars represent 95% confidence intervals, n = 5 each for CTRL and OTX2CRISPR g3.
 
 To quantify the effects presented in Figure 2A–B, similar experiments were performed, followed by dissociation of the entire retina and quantification by flow cytometry of the OTX2-positive cells detected with antibodies against OTX2. In the OTX2CRISPR mutants, an approximately 50% reduction in the percentage of OTX2-positive cells within the electroporated population was detected using two different OTX2 antibodies (Figure 2C–D, Supplementary file 2, Figure 2—figure supplement 1A,B).
 
@@ -63,19 +79,19 @@ In addition, the percentage of PAX6-positive cells in the OTX2CRISPR mutants was
 
 To quantify the effect on PRs from OTX2 mutagenesis, the number of cells that activate the THRBCRM2 cis-regulatory element was analyzed. This element is associated with the THRB gene and is active in a subset of cone PRs in the chick retina (Emerson et al., 2013; Schick et al., 2019). OTX2CRISPR mutant retinas had a significant reduction in THRBCRM2 activity (Figure 2G–H, Figure 2—figure supplement 1C,D). Thus, this assessment suggests that the OTX2CRISPR mutation leads to a robust reduction of OTX2 protein as well as a PR reporter. Quantification of all parameters reported above are detailed in Supplementary file 2.
 
-## The OTX2ECR2 reporter reveals a change in cell fate in the OTX2CRISPR cells
+### The OTX2ECR2 reporter reveals a change in cell fate in the OTX2CRISPR cells
 
 As OTX2 expression has been reported to be initiated in RPCs that predominantly generate cone PR and HCs, the fate of the daughter cells of these RPCs was examined upon OTX2 mutation. To do this, the previously reported OTX2ECR2 enhancer element (Figure 3A), which is active in OTX2-positive RPCs in the chicken retina, was used (Emerson and Cepko, 2011). In CTRL retinas, upon electroporation at E5 and two days in culture, GFP expression driven by the enhancer’s activity is observed predominately in the outer retina/PR layer, with fewer cells, showing less intense GFP expression, in the inner retina (Figure 3B). The enhancer’s activity, observed by GFP expression, co-localizes primarily with OTX2-positive retinal cells electroporated at E5 and cultured for 2 days, consistent with previous observations (Emerson and Cepko, 2011). In vivo experiments have demonstrated that OTX2ECR2 drove reporter activity in both PRs and LHX1-positive HCs and very rarely targeted POU4F1-positive RGCs (Emerson and Cepko, 2011).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig3-v2.jpg)
 
-**Figure 3.:** CRISPR retinas.Retinas electroporated at E5 with OTX2ECR2::GFP and control or OTX2CRISPR plasmids and analyzed after 48 hr. (A) Schematic representation of the chick OTX2 genomic locus, and the location of the ECR2 element, 1.5 kb upstream of the start codon. (B–D) OTX2ECR2::GFP reporter predominantly labels cells in the outer CTRL retina (B). This population is markedly reduced in both OTX2CRISPR mutants (g2 in (C) and g3 in (D), and a new population located in the inner retina is formed. High magnification views of the regions boxed in the OTX2/GFP panels are shown in the rightmost panels. (E) Representative dot plots showing the overlap between OTX2ECR2::GFP (x-axis) and OTX2 protein (y-axis). The population of OTX2ECR2::GFP-positive cells that express OTX2 protein decreases in OTX2CRISPR g2 retinas. (F) Quantification of the OTX2+/GFP+ cells from the total GFP+ cells for OTX2CRISPR g2 (F) and g3 (G) compared to the controls. Error bars represent 95% confident intervals. *** represents p<0.0001, n ≥ 4 for both comparisons and each point represent one biological replicate. OR, outer retina; IR, inner retina.
+**Figure 3.:** Retinas electroporated at E5 with OTX2ECR2::GFP and control or OTX2CRISPR plasmids and analyzed after 48 hr. (A) Schematic representation of the chick OTX2 genomic locus, and the location of the ECR2 element, 1.5 kb upstream of the start codon. (B–D) OTX2ECR2::GFP reporter predominantly labels cells in the outer CTRL retina (B). This population is markedly reduced in both OTX2CRISPR mutants (g2 in (C) and g3 in (D), and a new population located in the inner retina is formed. High magnification views of the regions boxed in the OTX2/GFP panels are shown in the rightmost panels. (E) Representative dot plots showing the overlap between OTX2ECR2::GFP (x-axis) and OTX2 protein (y-axis). The population of OTX2ECR2::GFP-positive cells that express OTX2 protein decreases in OTX2CRISPR g2 retinas. (F) Quantification of the OTX2+/GFP+ cells from the total GFP+ cells for OTX2CRISPR g2 (F) and g3 (G) compared to the controls. Error bars represent 95% confident intervals. *** represents p<0.0001, n ≥ 4 for both comparisons and each point represent one biological replicate. OR, outer retina; IR, inner retina.
 
 Characterization of OTX2ECR2 reporter activity in the OTX2CRISPR retinas shows a qualitative shift in the cell populations – a dramatic reduction in the PR population as well as an increase in the inner retina population with many more intensely labeled GFP-positive cells (Figure 3C–D).
 
 To confirm previously reported estimates of the activity of the OTX2ECR2 element in OTX2-positive cells, a quantitative flow cytometry analysis was performed. 73% (c.i. ±2.4%) of GFP-positive cells were also OTX2-positive. The remaining 27% cells likely represent cells with either nonspecific activation of the element, or cells in which the reporter was previously active. In contrast to CTRL samples, OTX2ECR2::GFP-positive cells in OTX2CRISPR mutants were positive for OTX2 protein in only 22% (c.i. ±5.9%) of the g2 cells and in 15% (c.i. ±8.1) of g3 cells (Figure 3E–G, Supplementary file 2). In addition, there is a robust increase in both the number and the intensity of the signal in the GFP-only population (green box), suggesting that these are the newly generated, mutant cells (Figure 3E).
 
-## Single cell RNA sequencing analysis of the OTX2ECR2-positive cells reveals widespread changes in the distribution of cells per cluster
+### Single cell RNA sequencing analysis of the OTX2ECR2-positive cells reveals widespread changes in the distribution of cells per cluster
 
 To further investigate the role of OTX2 in restricted RPCs, a single cell transcriptome analysis was performed on the OTX2ECR2::GFP-positive population from OTX2CRISPR g2 mutant and CTRL retinas (Figure 5—figure supplement 1A,B) after ex vivo electroporation at E5 and two days in culture. Here also, the CTRL retinas were electroporated with the empty p18 vector, lacking the guide sequence, but containing the scaffold RNA, as well as Cas9 coding region, driven by the CAG promoter. The use of the OTX2ECR2 reporter allowed an in-depth analysis of this selected population, enriching for PRs and restricted RPCs.
 
@@ -101,13 +117,35 @@ Cluster RGC was identified as containing RGCs (3.54%), based on its high express
 
 To compare the single cell transcriptomes from both CTRL and OTX2CRISPR samples, a similar cluster analysis based on the principal component was run with the two datasets combined (Figure 5A). The restricted RPCs were classified in one cluster, as expected from the minimal differences observed when the CTRL dataset was analyzed alone. In addition, a new cluster was defined, containing cells that were only found in the mutant retinas.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig5-v2.jpg)
+
+**Figure 5.:** TSNE plots of the two datasets analyzed simultaneously (A) and labeled for their cell cycle signature (B). (C) TSNE plots of the 10 clusters determined by Seurat - multipotent RPCs (multiRPC), restricted RPCs (restrRPC), cone PR1 and 2, cone homotypical PC, HC clusters (HC1 and HC2), RGC, AC/HC/RGC and New, in the CTRL (left) and mutant (right) samples. (D) Heatmap of OTX2 expression across the two datasets. (E) Differentially expressed genes in the CTRL and OTX2CRISPR cells showing average reads per cell. (F) Pie charts showing the percentages of cells found in each cluster of the CTRL and mutant samples. Bars under the pie charts show distribution of cell cycle markers across the two datasets. (G) Heatmap of the differentially expressed genes across the clusters of both CTRL and OTX2CRISPR cells. Purple represents low gene expression and yellow represents high expression.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Flow cytometry plots showing the collection gates for the cells sorted prior to single cell library preparation. (B) Heatmap of GFP_IRES_PLAP reporter expression across both single cell datasets. (C) Analysis of the OTX2 reads aligned to the Gallus gallus genome, GRC6 assembly GCF_000002315.5) using IGV (Integrative Genomics Viewer) view of the OTX2 locus. First red box represents the second coding exon, while the last one represents the 3’ end of the gene. The majority of the reads are located at the 3’end, due to the specifics of the library preparation technique. (D) Aligned sequencing reads mapped to the OTX2 sequence. Bright blue box – 5’UTR, first grey box – OTX2 gene block, last grey box – 3’UTR. Purple boxes represent the exons. Turquoise box represents 3’ most region, with high number of reads aligned. (E) Increased magnification of the second coding exon. Grey vertical bars represent the reads aligned to that region of the gene. Purple box around the sequence highlights the Cas9 target DNA and the yellow box highlights the PAM motif. Colored vertical blocks in the OTX2CRISPR alignment represent the mismatches identified in the aligned reads; black horizontal fine lines show deletions of the aligned reads. (F) Summary of the amplicon deep sequencing results (right) and mapped reads to the amplified region; For, Rev primers used for the amplification of the sequence; g2, guide 2. (G–H) Quantification and detailed view of the mutations, including their impact on the reading frame. R, reads. The remaining reads (in table (G)), up to 100% from the total - 3.58% in the OTX2CRISPR and 1.43% in CTRL represent noisy reads.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Differentially expressed genes are presented in a CTRL (blue bar above heatmap) vs OTX2CRISPR (pink bar above heatmap) comparison and scaled from the lowest expressed gene to the highest per cluster. Each cluster is represented below heatmaps. Within heatmaps, purple represents low gene expression and yellow represents high expression.
+
 OTX2 mRNA expression was reduced in the OTX2CRISPR sample but not completely lost in the mutant cells (Figure 5D). The cells that continue to express OTX2 mRNA have a variety of mutations captured in reads two to twelve (R2-R12) (Figure 5—figure supplement 1H). These mutations might lead to the loss of functional OTX2 protein and generate protein with various defective functions.
 
 Widespread changes in the distribution of cells per clusters of the OTX2CRISPR sample relative to the CTRL clusters were observed (Figure 5A–C,E,F. Figure 6—figure supplement 1B–C). The restricted RPC populations were not severely changed, either in terms of percentages of cells (29% in CTRL and 25% in the OTX2CRISPR dataset), or in regards to their cell cycle states (Figure 5C, Figure 6—figure supplement 1C). The multipotent RPC cluster was also unaffected in terms of number of cells (7% cells in CTRL, 6% in the OTX2CRISPR) and in terms of gene expression (Figure 5F, Figure 5—figure supplement 2, Supplementary file 5).
 
-## OTX2 mutation leads to an increase in specific subtypes of horizontal and retinal ganglion cells and loss of photoreceptors
+### OTX2 mutation leads to an increase in specific subtypes of horizontal and retinal ganglion cells and loss of photoreceptors
 
 All three PR clusters were massively reduced in the OTX2CRISPR sample compared to the CTRL one – from 18% to 1% in cluster cone PR1, from 14% to 1% in cluster cone PR2 and from 16% to 1% for the cone homotypic PCs (Figure 5C,F). The majority of PR markers such as THRB, RXRG, RBP4, ISL2, OTX5 were markedly decreased (Figure 5E, Figure 6A, Figure 5—figure supplement 2). This finding supports the data from previously published mouse models of conditional OTX2 knockout (Nishida et al., 2003; Sato et al., 2007). However, there were significant changes in the representation of both HCs and RGCs that were not previously identified. The combined analysis revealed that the two HC clusters also changed in specific ways. Strikingly, the LHX1-positive HCs – HC1, increased approximately by 5-fold in the OTX2CRISPR sample, from 2% to 11%, whereas the percentage of cells in the ISL1-positive cluster HC2 decreased from 8% in the CTRL to 4% in the mutants (Figure 5C,F, Figure 6B). In addition, cluster AC/HC/RGC increased in the OTX2 mutants, from 3% to 5% mutant dataset (Figure 5C,F). This increase also suggests that the cluster is formed predominately by early RGCs and LHX1-positive HCs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig6-v2.jpg)
+
+**Figure 6.:** (A) Heatmap in a TSNE view of RXRG in the CTRL (left) and OTX2CRISPR (right). The expression of RXRG is severely reduced in the mutant dataset. (B) Comparative analysis of the simultaneous expression of LHX1 (red) and ISL1 (blue) in TSNE plots of CTRL (left) and OTX2CRISPR (right). (C) Comparative analysis of POU4F1 and POU4F2 in mutant and control retinas. Similarly, expression of POU4F1 remains restricted to a small number of cells, while POU4F2 (blue) is expressed by an increased number of cells in the OTX2CRISPR sample. (D–O) Quantitative analysis of the RXRG, LHX1 and panPOU4F proteins in the CTRL (D, H, L) and both g2 (F, J, M) and g3 (G, K, O) mutant retinas. Bar graphs represent mean percentages of OTX2ECR2::GFP/marker-double positive cells from the total number of OTX2ECR2::GFP cells. Data points represent the biological replicates, n = 3 for each. Error bars represent 95% confidence intervals. OR, outer retina, IR, inner retina.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54279/elife-54279-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Expression of OTX2 (blue) and PAX6 (red) in cells that express the respective markers exclusively. Cells marked with green in the TSNE plots of the CTRL and OTX2CRISPR have expression of both OTX2 and PAX6. (B) Distribution of cell cycle markers in the TSNE plots of the CTRL and OTX2CRISPR mutants. (C) Percentile distribution of cell cycle markers per each cluster in mutant and control datasets. (D–F) Confocal micrographs of vertical sections of CTRL (D), OTX2CRISPR g2 (E), and g3 (F) electroporated retinas that were immunostained for the detection of POU4F1, as well as GFP expressed in the OTX2ECR2::GFP cells. (G) Mean percentages of the OTX2ECR2::GFP/POU4F1 double positive cells from the total number of OTX2ECR2::GFP-positive cells. Error bars represent 95% confidence intervals, n = 3.
 
 The number of RGCs in the OTX2CRISPR sample increased by approximately 4-fold, from 3% in the CTRL retinas to 12% in the mutants (Figure 5F, Figure 5—figure supplement 2). Surprisingly, there was no change in the number of POU4F1 positive RGCs, while the number of POU4F2 and POU4F3 positive cells accounted for all of the RGC increase in the OTX2CRISPR cells (Figure 6C).
 
@@ -117,11 +155,11 @@ Quantification of RXRG expression showed a reduction from 49.69% (c.i. ±6.9) R
 
 Taken together, these data confirm the increase in the number of specific cell fates, including LHX1-positive HCs and POU4F2/POU4F3 RGCs, while other populations such as multipotent RPCs, ISL1-positive HCs, and POU4F1 RGCs are relatively unchanged.
 
-## Upregulation of specific genes in response to OTX2 CRISPR/Cas9 targeting
+### Upregulation of specific genes in response to OTX2 CRISPR/Cas9 targeting
 
 While the above analysis identified OTX2CRISPR-induced changes in the number of cells that corresponded to particular cell fates, transcriptional changes that appeared to be unlinked to cell fate were also noted. One example was for the restricted RPC population, where unsupervised clustering of the combined control and mutant cell datasets categorized them as a single cluster. However, a clear division was observed on the heat map representation (Figure 5). Differential expression of two of the most significant markers that correlated with this demarcation were OTX2 (high in cells on the left half) and PAX6 (high in cells on the right half). It was determined that these sub-groups corresponded to their origin from the mutant or control samples by separating these two groups (Figure 5—figure supplement 3). Analysis between the OTX2CRISPR and CTRL restricted progenitor populations identified that PAX6 was one of the most differentially expressed gene present (Supplementary file 6). In addition, several other genes besides PAX6 that are normally in multipotent RPCs, but are down-regulated in the restricted RPCs, were upregulated in the mutant population. These included SIX3, NOTCH1, ID1, and PROX1 and supports a previously suggested role for OTX2 in mediating a transition from multipotent to restricted RPCs (Supplementary file 6), (Buenaventura et al., 2018). Moreover, a downregulation of a subset of genes (DIO3, TFAP2D, and OTX2 itself) normally expressed at low levels in multipotent RPCs and upregulated in restricted RPCs was observed, which also supports a positive role for OTX2 in establishment of the restricted RPC state (Supplementary file 6).
 
-## One third of the OTX2 mutant cells have a unique molecular signature and RGC-like morphology
+### One third of the OTX2 mutant cells have a unique molecular signature and RGC-like morphology
 
 The combined analysis of the CTRL and OTX2CRISPR mutant cells revealed a new cluster of cells, comprising 34% from the total dataset in the mutant, compared to 0% (17 cells) in the CTRL one.
 
@@ -143,13 +181,13 @@ Taken together, these data suggest that cells forming cluster ‘New’ represen
 
 The utility of the CRISPR/Cas9 system in the induction of targeted mutagenesis has been firmly established across multiple paradigms, not only facilitating the study of somatic mutations at any given time during development, but also allowing these studies in less genetically-tractable model organisms, like the chicken (Gandhi et al., 2017). Furthermore, the ability to introduce mutations in specific tissues at particular timepoints has proven particularly useful for developmental studies, allowing for a more precise evaluation of genes that have a role in multiple developmental time windows. In addition, the recent technological advances for the generation of single cell gene expression profiles allows for analysis of rapidly dividing and differentiating cells at a single cell resolution (Carter et al., 2018; Zeisel et al., 2018). The current study illustrates the power of using these methods in combination to evaluate gene function in the context of a developing tissue with notable cellular complexity.
 
-## Timing and CRISPR/Cas9 effectiveness of the OTX2 ablation
+### Timing and CRISPR/Cas9 effectiveness of the OTX2 ablation
 
 Introduction of OTX2CRISPR at multiple timepoints allowed for identification of previously described phenotypes for OTX2, including effects on eye morphology, RPE pigmentation and gene expression, PR and BC formation, and repression of PAX6 expression. Moreover, this current mutation model resembles the clinical manifestations of human mutations of OTX2 that lead to different degrees of microphthalmia and anophthalmia more than any other reported model of OTX2 ablation. Electroporation during eye cup development, even in cases where the electroporation efficiency was relatively low, led to these phenotypes, which suggests that OTX2 expression is highly required during optic vesicle development. In human, similar malformations were reported to occur as an effect of de novo nonsense mutations that lead to early termination of OTX2 transcription and either lead to degradation of the transcript by nonsense-mediated RNA decay or to dysfunctional OTX2 protein due to defects in the homeodomain (Boyl et al., 2001; Gat-Yablonski, 2011).
 
 The amplicon analysis in this study suggested that there was a high rate of mutagenesis with g2 that either disrupted the sequence of the functionally important homeodomain or created a large truncation. Almost 30% of these reads were wildtype in the targeted region, which given the phenotypic severity of the mutation (for example, only ~5% of photoreceptors remained in the mutant), suggests that either this method underrepresented the number of mutant alleles and/or loss of one copy of OTX2 was phenotypic. The former possibility is unlikely to be caused by nonsense-mediated decay given the proximity of new stop codon usage to the last exon-exon junction in the transcript (Lindeboom et al., 2016). However, it could be caused by failure to recover mutations in which one of the primer binding sites was removed or if mutant cells have reduced OTX2 transcription, for example, in response to cell fate changes. In support of this, the percent of OTX2 positive cells in the mutant is lower than in the CTRL samples (46.1% versus 77.9%). It is also possible that cells with only one targeted OTX2 allele may contribute to the observed phenotypes, as haploinsufficiency effects for OTX2 have been observed in both human and mouse studies (Ragge et al., 2005; Wyatt et al., 2008; Henderson et al., 2009; Kim et al., 2015).
 
-## Cell type-specific effects in response to loss of OTX2
+### Cell type-specific effects in response to loss of OTX2
 
 This study is focused on the OTX2 transcription factor, known to be involved in several aspects of retinogenesis, but for which critical mechanistic details are undefined. The choice of the model organism – chick – not only increases the toolbox of developmental studies, the retina being easily accessible for manipulations during the embryonic time period, but also shows common features with the human retina, in both the physiology of the signal detection and transmission as well as gene networks. The expression of four different opsins in chick PRs that allow for signal detection during photopic conditions, as well as the existence of multiple subtypes of HCs represent features that do not exist in the murine retina. In addition, recent studies identified significant similarities between the developing human and chick retina regarding the expression of particular genes, distinctively expressed in only certain cell types, that are not expressed in the mouse retina (Lu et al., 2019).
 
@@ -167,7 +205,290 @@ Taken together, the current study proposes a model in which OTX2 serves as a key
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Gallus gallus)</td>
+      <td>GRCg6a</td>
+      <td>International Chicken Genome Consortium</td>
+      <td>GCF_000002315.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Modified px330: P18/MG18</td>
+      <td>Modified from the Cong et al., 2013 version</td>
+      <td></td>
+      <td>The original promoter of the px330 upstream of the Cas9 ORF was replaced with the CAG promoter</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Modified px330 with OTX2 g2: MG10</td>
+      <td>Lab made</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Modified px330 with OTX2 g3: MG233</td>
+      <td>Lab made</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>Modified Stagia3: ME1860</td>
+      <td>Emerson and Cepko, 2011</td>
+      <td></td>
+      <td>Mouse OTX2 ECR2 EGFP reporter as described in Emerson and Cepko (2011)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>CAG::βGal</td>
+      <td>Cepko lab</td>
+      <td></td>
+      <td>Expression vector, nuclear βGalactosidase reporter driven by the CAG promoter</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>CAG::EGFP</td>
+      <td>Matsuda and Cepko, 2004</td>
+      <td>RRID:Addgene_11150</td>
+      <td>Expression vector, EGFP reporter driven by the CAG promoter</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>CAG::iRFP</td>
+      <td>Buenaventura et al., 2018</td>
+      <td></td>
+      <td>Expression vector, iRFP reporter driven by the CAG promoter</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OTX2 Goat polyclonal</td>
+      <td>AF1979</td>
+      <td>RRID:AB_1617988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- OTX1+OTX2 Rabbit polyclonal</td>
+      <td>ab21990</td>
+      <td>RRID:AB_776930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PAX6 Mouse IgG1 monoclonal</td>
+      <td>PAX6</td>
+      <td>RRID:AB_528427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BRN3A Mouse IgG1 monoclonal</td>
+      <td>Mab1585</td>
+      <td>RRID:AB_94166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-panBRN3 Mouse IgG1 monoclonal</td>
+      <td>sc-390780</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LIM1 Mouse IgG1 monoclonal</td>
+      <td>4F2-C</td>
+      <td>RRID:AB_531784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ISL1 Mouse monoclonal</td>
+      <td>39.3F7</td>
+      <td>RRID:AB_1157901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PH3 Rabbit polyclonal</td>
+      <td>06–570</td>
+      <td>RRID:AB_10582726</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VSX2 Sheep polyclonal</td>
+      <td>x1180p</td>
+      <td>RRID:AB_2314191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-βGAL Chick polyclonal</td>
+      <td>ab37382</td>
+      <td>RRID:AB_307210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay</td>
+      <td>Click-iT EdU Alexa Fluor 647 imaging kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#C10340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>O. C. T. Compound</td>
+      <td>Sakura Tissue-Tek</td>
+      <td>Cat#4583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>Fluoromount-G</td>
+      <td>Southern Biotech</td>
+      <td>Cat#0100–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>Papain</td>
+      <td>Worthington</td>
+      <td>Cat#L5003126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw matrix files</td>
+      <td>NCBI Gene Expression Omnibus</td>
+      <td>GEO: GSE142244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td></td>
+      <td>GSL Biotech; snapgene.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schneider et al. (2012)</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>Affinity software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JASP 0.9.0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>Macosko et al. (2015)</td>
+      <td>http://satijalab.org/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChopChop</td>
+      <td>Montague et al. (2014); Labun et al. (2016)</td>
+      <td>https://www.chopchop.cbu.uib.no</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 10.2</td>
+      <td></td>
+      <td>https://www.flowjo.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sex det. forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCAAATATAACACGCTTCACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sex det. reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAATGAATTATTTTCTGGCGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sex det. Control region forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGCTCTTTCTCGATTCCGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sex det. Control region reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGTAGACACAAGCTGAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Amplicon sequencing forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGAGCGCACCACCTTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Amplicon sequencing reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGCACTCTGGACTCGGGCTGCACTCTGGACTCGGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All experimental procedures were carried out in accordance with the City College of New York, CUNY animal care protocols. Fertilized chick eggs were obtained from Charles River, stored in a 16°C room for 0–10 days and incubated in a 38°C humidified incubator. Experiments were performed on unbiased number of female and male animals. For the scRNA sequencing experiment only, retinas from embryos PCR-identified as female were processed, to avoid variability from the reference genome.
 
@@ -175,9 +496,9 @@ For sex determination, genotyping PCRs were completed as explained in Clinton et
 
 Experiments were done in non-randomized, non-blinded conditions with the exception of quantitative data in Figure 6 that involved manual counting of images by an observer blinded with respect to a sample’s origin as experimental or control.
 
-## Method details
+### Method details
 
-## CRISPR/Cas9-induced mutation design
+#### CRISPR/Cas9-induced mutation design
 
 To determine guide RNA sequences optimal for the ablation of the OTX2 gene www.chopchop.cbu.uib.no online tool was used, and the sequence of the first two coding exons of the gene were analyzed (Montague et al., 2014; Labun et al., 2016). The target DNA sequence with the best score calculated according to the online algorithm were selected and processed further.
 
@@ -187,7 +508,7 @@ Expression vectors containing either fluorescent reporters or nuclear LacZ drive
 
 The lineage tracing was done as described in Schick et al. (2019). Briefly, the OTX2ECR2 sequence was cloned upstream the open reading frame of the PhiC31 recombinase. This plasmid was electroporated simultaneously with a different one where att recombination sites that flank a Neomycin-STOP cassette, followed by the GFP sequence. Upon recombination of the att sites by the PhiC31 recombinase, GFP is expressed in cells with a present or past activity of the OTX2ECR2 enhancer, therefore allowing the analysis of these cells further in development.
 
-## Electroporation and explant culture
+### Electroporation and explant culture
 
 In vivo electroporation was performed at two developmental time points E1.5 (HH stage 9–11) and E3 (HH 18) on healthy-developed embryos. At E1.5, plasmids and Fast Green tracer (0.1% final concentration) in TE buffer was injected into the optic vesicle using a pulled glass needle. A sharp negative electrode was inserted into the forebrain at equal distance between the optic vesicles, while a mobile, positive electrode, was placed near the exterior side of the optic vesicle.
 
@@ -195,7 +516,7 @@ For E3 electroporations, DNA-dye mixes were injected into the subretinal space. 
 
 Ex vivo electroporations were done as previously reported in Buenaventura et al. (2018). Briefly, prior to electroporation the retinas were dissected into warm DMEM/F12 media (Life Technologies, 11320082). Plasmids of interest diluted in 1X PBS for a total volume of 50 µl filled the electroporation cuvette where the retina was placed, with the lens surface attached to the negative electrode. Five 50 ms pulses of 25V with a 950 ms interpulse interval were applied using the same electroporator. In general, plasmids were used at following concentrations - 100 ng/µl for the reporter plasmids driven by the CAG promoter, 160 ng/µl for enhancer-driven reporter plasmids and 200 ng/µl for Cas9 based plasmids. After electroporation, lenses were dissected out and retinas were placed on porous filters of 0.2 µm (13 mm Nuclepore Track-Etch Membrane Whatman filters) floating on 1 ml basic culture media, 10% FCS, 1X Pen/Strep, 1X L-glutamine in DMEM/F12 (Life Technologies, 10378016) and incubated at 37°C with 5% CO2.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Retinas processed for immunohistochemistry were fixed in 4% paraformaldehyde for 30 min at room temperature, sunk in 30% sucrose and snap-frozen in OCT (Sakura Tissue-Tek, 4583). Vertical sections of 20 µm were obtained using a Leica Cryostat and collected on microscopy slides (FisherBrand, 12-550-15).
 
@@ -205,19 +526,19 @@ To immunofluorescently label dissociated cells in suspension, the following proc
 
 For EdU incorporation in vivo, a solution of 10 µM in 1X PBS was added on top of the embryo 5 hr prior to sacrifice (Warren et al., 2009). To develop, a Click-iT EdU Alexa Fluor 647 imaging kit was used in addition to the regular immunostaining protocol (Invitrogen, C10340).
 
-## Microscopy and figure design
+### Microscopy and figure design
 
 High magnification images were acquired with an Axiozoom V16 microscope using a PlanNeoFluor Z 1x objective at a digital zoom of 37.5.
 
 Confocal micrographs were acquired at a 1024 × 1024 resolution using an inverted Zeiss LSM710 confocal microscope with an EC Plan-Neofluar 40x/1.30 Oil DIC M27 objective. During acquisition a ZEN software was used. All images were processed and converted into .tiff format using the FIJI version of ImageJ (Schneider et al., 2012). Figures were assembled using Affinity Designer vector editor; general brightness and contrast adjustments were done when necessary on the entire field imaged. The SnapGene software was used for generation of the schematics in Figure 1A,B Figure 3A and Figure 5—figure supplement 1F and H.
 
-## Dissociation and cell sorting
+### Dissociation and cell sorting
 
 Retinal explants were dissociated after being cultured for 48 hr with a papain-based protocol (Worthington, L5003126) as described in Jean-Charles et al. (2018). After dissociation, cells were fixed in 4% PFA at room temperature for 15 min, washed and analyzed, or immunostained as described above, prior to analysis.
 
 The fluorescent activated cell sorting (FACS) of the GFP reporter was done using a BD FACS Aria machine with a 488 nm laser. For sorting experiments requiring high cell viability post sorting and nucleic acid extractions, cells were resuspended and sorted in cold DMEM 10% FBS media (Gibco 10437–010).
 
-## Library preparation, sequencing and data analysis
+### Library preparation, sequencing and data analysis
 
 Single cell RNA sequencing of OTX2ECR2::GFP positive cells in the OTX2CRISPR mutants and CTRL conditions, 40,000 GFP-positive cells from four retinas per sample were collected into DMEM 10% FBS media, pelleted at a speed of 500 xg, then resuspended in the same media. A trypan blue exclusion viability test confirmed that the percentage of viable cells was greater than 70%. Approximatively 12,000 cells were input into the 10X Genomics Chromium machine and individual droplets were formed containing cell and molecule specific barcodes. Libraries were sequenced on an Illumina 4000 sequencer. The data alignment on the GRCg6a reference genome, barcode processing and generation of cell-gene matrices was done at the Single Cell Analysis core facility at Columbia Genome Center using the 10X Genomics pipeline. Matrices were further analyzed with R using the Seurat package (Satija et al., 2015). In total, 5,122 cells were recovered from the CTRL sample and sequencing yielded an average of 65,555 reads per cell, with a total number of 17,485 genes detected and a median of 1293 genes per cell. From the OTX2CRISPR sample, 4,940 cells were recovered, sequencing yielded an average of 66,303 reads per cells with a total of 17,351 genes detected and a median of 1254 genes per cell.
 
@@ -231,7 +552,7 @@ For the ‘combined’ analysis 40 total PCs were computed initially and 33 were
 
 For the amplicon sequencing, total mRNA was extracted using a Qiagen RNeasy Mini kit (Cat. No. 74104) from cells from the sorting experiment used to generate the single cell analysis. The reverse transcription to obtain complementary DNA was done using the qScript cDNA Super Mix, Quanta bio kit (Cat. No. 95048–025) and the cDNA was used as template for the PCR amplification of the OTX2 region, flanked by the forward – 5’ GGAGCGCACCACCTTCAC 3’ and reverse – 5’ CTGCACTCTGGACTCGGG 3’ primers, both containing the Illumina adapters: 5’ ACACTCTTTCCCTACACGACGCTCTTCCGATCT 3’, for forward sequencing read and 5’ GACTGGAGTTCAGACGTGTGCTCTTCCGATCT 3’, for the reverse sequencing read. Amplicons with attached adaptors were submitted to Genewiz for Amplicon EZ paired-end sequencing on an Illumina platform. Data analysis was done by the provider using the NGS Genotyper v1.4.0 software.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Quantitative analysis of the fluorescent reporters and of the antibody-detected markers was done with a BD LSRII machine, using the 488 nm, 561 nm and 633 nm lasers. The analysis was carried out with the FlowJo Version 10.2 software. Quantifications done to validate the results of the transcriptome analysis were done manually, by counting a minimum of three technical replicates for each of the three biological replicates.
 

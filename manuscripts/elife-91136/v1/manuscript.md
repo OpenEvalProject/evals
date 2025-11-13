@@ -18,15 +18,15 @@
 
 ### Affiliations
 
-1. https://ror.org/012jban78 Department of Neuroscience, Medical University of South Carolina Charleston United States
-2. https://ror.org/03ss88z23 Department of Pharmacology, Kagoshima University Kagoshima Japan
-3. https://ror.org/020rbyg91 Institute for Quantum Life Science, National Institutes for Quantum Science and Technology Chiba Japan
+1. Department of Neuroscience, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
+2. Department of Pharmacology, Kagoshima University Kagoshima Japan ([ROR:03ss88z23](https://ror.org/03ss88z23))
+3. Institute for Quantum Life Science, National Institutes for Quantum Science and Technology Chiba Japan ([ROR:020rbyg91](https://ror.org/020rbyg91))
 4. Japan Science and Technology PRESTO Saitama Japan
-5. https://ror.org/02bfwt286 Department of Physiology, Monash University Clayton Australia
-6. https://ror.org/02bfwt286 Neuroscience Program, Biomedicine Discovery Institute, Monash University Clayton Australia
-7. https://ror.org/01vvhy971 Faculty of Data Science, Shiga University Shiga Japan
-8. https://ror.org/00390t168 Department of Biology, College of Charleston Charleston United States
-9. https://ror.org/035t8zc32 Department of Neuro-Medical Science, Osaka University Osaka Japan
+5. Department of Physiology, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+6. Neuroscience Program, Biomedicine Discovery Institute, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+7. Faculty of Data Science, Shiga University Shiga Japan ([ROR:01vvhy971](https://ror.org/01vvhy971))
+8. Department of Biology, College of Charleston Charleston United States ([ROR:00390t168](https://ror.org/00390t168))
+9. Department of Neuro-Medical Science, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
 10. Japan Science and Technology FOREST Saitama Japan
 
 † Corresponding author
@@ -45,21 +45,75 @@ To address these knowledge gaps, we developed an approach for imaging individual
 
 ## Results
 
-## Two-photon imaging shows dopaminergic axons in the mPFC of awake mice
+### Two-photon imaging shows dopaminergic axons in the mPFC of awake mice
 
 To investigate the signal sent by dopamine neurons to the mPFC in mice, we developed an approach based on two-photon imaging using a microprism (Andermann et al., 2013; Low et al., 2014). We first expressed axon-jGCaMP8m, an axon-targeted (Broussard et al., 2018) genetically encoded calcium sensor (Zhang et al., 2023), in dopamine neurons in the VTA. We injected Cre-dependent AAV into the midbrain regions of transgenic mice (DAT-Cre), which express Cre-recombinase in dopamine neurons (Kim et al., 2016; Figure 1A, see Materials and methods). After 2–3 weeks, using sectioned slices, we confirmed that GCaMP expression in cell bodies in the VTA (and substantia nigra pars compacta [SNc]) (Figure 1C) coincides with the expression of tyrosine hydroxylase, an endogenous marker for dopamine neurons (Figure 1D). Dopamine neurons in the VTA are known to project sparsely to the mPFC, including the superficial layers (Vander Weele et al., 2018; Figure 1—figure supplement 1), but the mPFC itself is located deep in the medial bank (Figure 1B), rendering two-photon imaging of GCaMP (which is typically excited at 920–980 nm) infeasible. Therefore, we inserted a microprism into the longitudinal fissure between the two medial banks (two hemispheres) to optically access the mPFC (Figure 1E–F). The right-angle microprism bends the optical axis within the brain, providing optical access to the fissure wall and the mPFC surface (Low et al., 2014). We optimized the microprism assembly (Figure 1—figure supplement 2C) in order to reach up to 2 mm in depth from the dorsal surface (Figure 1F). The assembly incorporated double-layer glass at the top (Komiyama et al., 2010), stabilizing the brain from both the medial and dorsal sides, which significantly reduced the movement of the brain (Figure 1—figure supplement 2). Through the microprism, we could visualize GCaMP-expressing axons in the superficial layers of the mPFC in live animals (at a depth of 30–100  μm, Figure 1G, Figure 1—figure supplement 3). Sparse axons in the superficial layers are advantageous for two-photon imaging, achieving low background noise. In contrast, axons in the deep layers, which are known to be denser in sectioned slices (Figure 1—figure supplement 3), could not be visualized under our experiments. The GCaMP signal can indicate the calcium influx into axons and terminals, which is triggered by axonal action potentials (Petreanu et al., 2012; Howe and Dombeck, 2016; Lutas et al., 2019), thereby providing a measure of the activity of dopamine neurons that send projections to the mPFC. In contrast, when we inserted a gradient refractive index (GRIN) lens into the mPFC (Kamigaki and Dan, 2017), we could not reliably visualize GCaMP-expressing dopamine axons, unlike the case for dopamine axons in the basal amygdala (Lutas et al., 2019). This difference might indicate that the dopamine axons in the mPFC have weaker signals requiring a lens with a larger numerical aperture (GRIN lens: NA 0.5 vs. Nikon objective lens: NA 0.8) or that these axons are less resilient to mechanical damage in close vicinity.
 
-## Dopaminergic axons in the mPFC have diverse responses to rewarding and aversive stimuli
+![Figure 1.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Experimental design. The activity of midbrain dopamine neurons projecting to the mPFC was measured by two-photon calcium imaging of their axons. The axons were accessed through a microprism that bends the optical axis inside the brain (black arrows in B). (C) GCaMP was expressed virally in dopamine neurons in DAT-Cre transgenic mice. A coronal section shows GCaMP expression in the VTA, demonstrating that AAV-axon-DIO-jGCaMP8m was injected into the VTA. (D) jGCaMP8m-expressing neurons were positive for tyrosine hydroxylase (TH), a marker for dopamine neurons. (E, F) Dorsal view of a mouse head implanted with a microprism assembly. The microprism was 1x2 mm. (G) An example in vivo image of jGCaMP8m-expressing axons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example experiment of AAV-GFP injection into the VTA in the Allen Brain Atlas Data Portal (experiment No. 156314762). (B) Sparse GFP-expressing axons in the mPFC region, including the prelimbic area the same experiment shown in (A). (C) Sparse jGCaMP8m expression at the mPFC was observed in our experiment. The approximate position of the image is indicated as a square in B. (D) The signal of projected GFP axons at the prelimbic area was 1.3% ± 0.9% of that at the caudoputamen. All experiments at the Allen Portal used wild-type or tyrosine hydroxylase-Cre mice that received an AAV-GFP injection into the VTA (experiment No. 156314762, 120572378, 127796728).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) An assembly design similar to Low et al., 2014. (B) Brain movement during imaging with the assembly design similar to Low’s. The brain shift was computed by the Suite2p program, and shifts in pixels in the x and y dimensions were combined trigonometrically. The frame rate was 58 Hz (200,000 frames corresponds to ~57 minutes). Each pixel represents 0.31 μm. Movement events larger than 16 pixels (4.96 μm) were detected as red dots. (C) Our own assembly design with an additional layer of glass. (D) Similar to B, but with our assembly design. (E) The frequency of movement events larger than 5 μm for Low’s design (standard: n = 3) and ours (extra layer: n=5) for the initial (left panel) and latter (right panel) halves of imaging. The root mean square is statistically smaller with our design (initial half: p = 0.002, latter half: p = 0.002, t-test). (F) Similar to E, but for root mean square of the brain shift. The events are less frequent with our design (initial half: p = 0.018, latter half: p = 0.005, t-test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The imaged acquired on the 1st day. (B) Similar to A, but on the 4th day. (C) Similar to A, but on the 9th day. The same imaging plane as Figure 1G.
+
+### Dopaminergic axons in the mPFC have diverse responses to rewarding and aversive stimuli
 
 Using our imaging approach, we first investigated whether individual dopamine axons respond to unexpected rewards (Schultz et al., 1997) and unexpected aversive stimuli (Vander Weele et al., 2018). As a reward, we delivered drops of water through a spout with random timing to water-deprived mice (Figure 2A). In response to the reward delivery, the mice licked the water spout, and we filmed this behavior to quantify the tongue position (Figure 2B and Figure 2—figure supplement 1). Upon the delivery of a water drop, the mice started licking (licking latency: 0.538±0.065 s, n=8 animals; Otis et al., 2017). Two-photon calcium imaging revealed that the water reward evoked brief calcium transients in many dopamine axons (40.1% of axons in eight animals, example in Figure 2I). The brief calcium response to the reward is consistent with increased phasic firing in dopamine neurons at the time of unexpected reward, as previously reported in many studies in primates (Schultz et al., 1997) and rodents (Engelhard et al., 2019; Amo et al., 2022).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig2-v1.jpg)
+
+**Figure 2.:** (A) Experimental design. Mice were placed under a two-photon microscope on a linear treadmill and were given unexpected rewarding (water drops) or aversive (electrical shock to the tail) stimuli. The mouse’s face was filmed with an infrared camera to track the tongue position. (B) Example behavioral response to rewarding (top, tongue position) or aversive (bottom, treadmill speed) stimuli. (C) Average behavioral response on a single day for the same animal shown in B. (D) Representative image for dopamine axons labeled with jGCaMP8m. Scale bar: 50 μm. (E, F) Heatmaps of rewarding (E) or aversive (F) stimuli for the same imaging plane shown in D. (G–I) Calcium response for rewarding (left) and aversive (right) stimuli of three example axons. (J) Comparison between reward (x-axis) and aversive (y-axis) responses for dopamine axons (n=162). Statistically significant axons were labeled in either cyan (reward-preferring axons, n=25) or magenta (aversive-preferring axons, n=75). Vector averages representing reward-preferring axons and aversive-preferring axons are depicted as cyan and magenta arrows. (K) Histogram of the polar angle of the scatter plot in J (n=162). The solid line indicates probability density, estimated by kernel smoothing. A value of 0° represents axons that solely prefer rewards, whereas 90° represents those that solely prefer aversive stimuli.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sample frames used by DeepLabCut. The tongue tip was labeled as a red dot and the water port as a blue dot (left). When the tongue was not visible (right), we intentionally trained DeepLabCut to consider the tongue position as the inside of the oral cavity (red dot). (B) Example of a tongue position trace. Gray shaded period is expanded in C. (C) Tongue movement that crossed the water port position (blue line) was counted as a lick (black ticks).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** No significant increase in locomotion initiation (for aversive-preferring axons, p = 0.583, n = 75; for reward-preferring axons, p = 0.92, n = 25; for all axons, p = 0.23, n = 162, Wilcoxon signed rank text).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Axonal activity increased as the reward volume increased. Differences were significant between 0 and 5 μL (p < 0.001), between 2.5 μL and 5 μL (p < 0.001), and between 5 μL and 10 μL (p < 0.001, n = 39, 2 animals). However, the differences were not significant between 0 μL and 2.5 μL (p = 0.06) or between 10 μL and 15 μL (p = 0.97), indicating saturation at 10 μL. (B) Axonal activity increased as the electrical current increased. The difference was significant between 0 and 0.2 mA (p < 0.001, n = 61, 2 animals) and between 0.2 and 0.4 mA (p < 0.001). * indicates p < 0.05, ** p < 0.01, and *** p < 0.001.
 
 In contrast to conventional midbrain dopamine neurons, mPFC dopamine axons are proposed to play a key role in aversive processing (Weele et al., 2019). To investigate the calcium response to an unexpected aversive stimulus, we delivered mild electrical shocks to the tail of the mice (Kim et al., 2016; Patriarchi et al., 2018; Lutas et al., 2019; Figure 2A) that were randomly interleaved with reward delivery (one shock for every seven rewards on average). The mild shock evoked calcium transients in many dopamine projections (Figure 2F, G and H), together with locomotion (Figure 2B). These transients could simply reflect locomotion initiation, similar to dopamine axons in the dorsal striatum (Howe and Dombeck, 2016). To explore this possibility, we investigated whether locomotion without aversive stimuli is accompanied by increased calcium activity. We found no significant calcium increase at the time point of spontaneous locomotion initiation (Figure 2—figure supplement 2). Therefore, unlike the axons projecting from the SNc to the dorsal striatum (Howe and Dombeck, 2016; Ma et al., 2022), mPFC dopamine axons do not encode the initiation of movement; rather, these axons respond to the aversive stimulus.
 
 Some previous studies have demonstrated that the overall dopamine release at the mPFC or the summed activity of mPFC dopamine axons exhibits a strong response to aversive stimuli (e.g. tail shock), but little to rewards (Kim et al., 2016). We evaluated the preference of individual axons for rewarding and aversive signals at a single-axon resolution by computing the polar angle for individual axons on a Cartesian representation of reward and shock activity (Figure 2J and K, Figure 2—figure supplement 3). In the polar representation, an angle of 0° indicates a strong preference for reward information, whereas 90° indicates a preference for aversive information. The polar angle distribution revealed that a significant number of axons preferred aversive stimuli, although some preferred reward. As a result, probability density, estimated by kernel smoothing, showed a bimodal distribution (Figure 2K, solid line) with a trough at around 45–50°. In addition, axons showing significant responses were categorized into two clusters based on k-means clustering (Figure 2J), the separation of which coincided roughly with 45–50° (Figure 2K). Thereafter, we refer to these clusters as aversive- or reward-preferring axons (colored magenta or cyan, respectively). These clusters do not respond exclusively to one hedonic valence (rewarding or aversive stimuli), as evident from the broad angle distributions. We could not find any anatomical patterns for aversive- or reward-preferring axons. These axons were present in either half of the prism view (i.e. anterior or posterior; ventral or dorsal), implying no obvious functional projection patterns within the mPFC. We note that the strength of preference could be quantitatively changed. Indeed, we found that the reward response to 10 μL nearly reached saturation, but the aversive response could be further increased at a stronger current (Figure 2—figure supplement 4). Therefore, the exclusive preference for aversive stimuli observed in some studies might possibly be explained by a smaller reward volume and/or stronger aversive stimulus. It may also be possible that the relative frequency of the aversive stimulus could influence the aversive preference. Moreover, measured signals in these studies may arise from deep layers and be different from the superficial axons that we image. Altogether, our two-photon imaging revealed, for the first time, that individual axons in the superficial layers show diverse preferences for rewarding and aversive stimuli.
 
-## Aversive cue processing is enhanced in aversive-preferring axons during classical conditioning
+### Aversive cue processing is enhanced in aversive-preferring axons during classical conditioning
 
 How do the reward and aversive activities of individual axons change while animals are learning that the reward and aversive events are preceded and predicted by sensory cues? This paradigm, known as classical conditioning, is a key framework for capturing learning-related changes in midbrain dopamine neurons (Sutton and Barto, 1981; Schultz et al., 1997) and mPFC neurons (Takehara-Nishiuchi and McNaughton, 2008; Otis et al., 2017). We presented mice with a 2 s pure tone as a conditioned stimulus (CSreward and CSaversive: 9 and 13 kHz, or 13 and 9 kHz), and then, after a 1 s delay, we presented either a rewarding or an aversive unconditioned stimulus (Figure 3A). Previous work has shown that mice are able to discriminate between two tones that differ by more than 7% (de Hoz and Nelken, 2014). Indeed the mice learned the contingency between the conditioned stimulus (tone) and the outcome (reward or electrical shock), which was reflected in changes in their behavior throughout this conditioning process (Figure 3B and C). To quantify such behavioral changes during learning, we separated the learning into three phases in addition to the first day (Figure 3D–G, for six phases, Figure 3—figure supplement 1). On the first day, the animals licked the water spout only after the reward was delivered (first day; Figure 3B). However, during the middle and late phases, animals gradually showed licking behavior even before the reward delivery, representing an anticipation of reward (Figure 3D). We observed this anticipatory licking more frequently after CSreward than CSaversive (Figure 3D vs. 3E, p=0.031 for the middle phase, p=0.031 for the late phase, Wilcoxon signed-rank test, n=6 animals), indicating that the animals behaviorally learned to discriminate the two conditioned stimulus tones. Similarly, running before the delivery of the unconditioned stimulus was more frequent after CSaversive than CSreward at the late phase (Figure 3F vs. 3 G, p=0.031, Wilcoxon signed-rank test, n=6 animals), again indicating that the two conditioned auditory cues were behaviorally discriminated. Therefore, as in previous studies, anticipatory licking (Otis et al., 2017) and anticipatory running (Lutas et al., 2019) can capture whether animals behaviorally discriminate conditioned cues in classical conditioning.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design. Auditory cues were presented before unconditioned stimuli (rewarding or aversive stimuli). (B, C) Behavioral changes in one example animal across 12 days (B: licking, C: running). In the reward condition, the animal gradually developed anticipatory licking (B, left). In the aversive condition, the animal usually ran after the shock delivery, but sometimes even before the delivery (C, right). Licking and running traces were normalized to the instantaneous maximum values for this animal and then averaged over a single day. (D–G) Anticipatory behavior during classical learning (n=6 animals). In the late phase of learning, anticipatory licking was primarily observed in the reward condition (D) but not in the aversive condition (E). Anticipatory running was seen more often in the aversive condition (G) than in the reward condition (F). (H) Activity change in one example axon across 12 days. The axon was from the same animal shown in B, C. (I, J) Learning induced changes in response to conditioned cues (I) and unconditioned stimuli (J) for aversive-preferring axons (magenta) and reward-preferring axons (cyan) together with non-significant axons (black). Aversive- and reward-preferring axons were defined before the start of classical training. The x-axis represents the reward condition, and the y-axis represents the aversive condition. n=47 for aversive-preferring axons, n=12 for reward-preferring axons. Vector averages representing aversive-preferring axons and reward-preferring axons are depicted as magenta and cyan arrows, overlaid in each panel. (K) Learning induced a change in the amplitude of unconditioned response of aversive-preferring axons for the aversive condition (magenta solid line) and reward condition (magenta dotted line) and that of reward-preferring axons for reward condition (cyan solid line) and aversive condition (cyan dotted line). Number of axons is the same as I, J. (L) The polar angle of the scatter plot in J. The magenta line represents aversive-preferring axons and the cyan line represents reward-preferring axons. (M) Similar to K, but for the conditioned response. (N) Similar to L, but for the conditioned response.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The conditioning period is divided into six phases plus the first day, instead of three phases (Fig. 3 D-G). Licking rate was saturated at 5th and 6th phases. (B) Similar to A, but for anticipatory running.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A-D) Averaged calcium traces of aversive-preferring axons for the first day (A), early phase (B), middle phase (C), and late phase (D) of classical conditioning for the reward condition (left column) and aversive condition (right column). (E-H) Similar to A-D, but for reward-preferring axons.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Population calcium trace for reward-preferring axons aligned to reward omission (n = 12 reward-preferring axons). (B) No significant change occurs during reward omission (for reward preferring axons, p = 0.62, n = 12; Wilcoxon signed-rank test). Control and omission 2 s-periods are indicated in A.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Comparison between CSreward responses in the first trial and the remaining trials. (B) Similar to A, but for USreward. (C) Similar to A, but for CSaversive. (D) Similar to A, but for USaversive. Note that for aversive-preferring axons, the response in the first trial was stronger for CSreward responses (A, p = 0.0002, n = 47, Wilcoxon signed-rank test) and weaker for CSaversive responses (C, p = 0.002, n = 47). The response in the first trial was stronger for USreward response (B, p = 0.002, n = 47), and was not significantly different for USaversive (D, p = 0.36, n = 47 aversive-preferring axons). For reward-preferring axons, there was no significant difference between the first trial and the rest (CSreward, p = 0.23; CSaversive, p = 0.38; USreward, p = 0.85; USaversive, p = 1.00).
 
 Through the classical conditioning paradigm, our long-term two-photon imaging revealed that aversive-preferring dopamine axons maintained their preference for the unconditioned response but enhanced their selectivity for the aversive cue activity (Figure 3H). We evaluated the activity change at the time of the unconditioned stimuli (US) throughout the learning process for aversive- and reward-preferring axons (Figure 3J, magenta and cyan, respectively). On the first day, aversive-preferring dopamine axons showed stronger activity for the aversive stimuli (Figure 3J, top, Figure 3—figure supplement 2A), similar to the response without classical conditioning (Figure 2J). Across learning, the activity for the rewarding and aversive unconditioned stimuli gradually decreased (Figure 3K, magenta, p=0.002 for rewarding stimuli, p=0.007 for aversive stimuli, n=47; Wilcoxon signed-rank test, comparison between the first day and the last phase), maintaining similar preferences for rewarding and aversive stimuli (Figure 3L, magenta, p=0.24, n=47; circular statistics, comparison between the first day and the last phase). Similarly, reward-preferring axons maintained their preferences over the course of classical conditioning (Figure 3L, cyan, p=0.77, n=12; circular statistics, Figure 2—figure supplement 2B).
 
@@ -69,11 +123,23 @@ We also tested whether the dopamine axons showed suppressed activity when the pr
 
 Taken together, our two-photon imaging revealed that a minority of mPFC dopamine axons prefer reward activity (reward-preferring axons), and that these axons are not involved in reward prediction error in a classical learning paradigm. In contrast, the majority of dopamine axons are strongly involved in aversive-related processing (aversive-preferring axons), and the preference for the aversive cue is enhanced through classical conditioning.
 
-## Dopamine axons show enhanced selectivity of cue activity in trials with correct discrimination
+### Dopamine axons show enhanced selectivity of cue activity in trials with correct discrimination
 
 In the classical conditioning paradigm, an enhanced preference of aversive-preferring dopamine axons for aversive cues (Figure 3N) was accompanied by improved behavioral discrimination of the two conditioned cues (Figure 3D–G). Based on this finding, can correct cue discrimination be accompanied by an enhanced neural preference when animals make trial-by-trial judgements in discriminating cues even after conditioning?
 
 To investigate trial-by-trial judgements of conditioned cues, we classified the trials into four groups (Figure 4A) based on correct or incorrect discriminating behavior. First, we focused on the presence or absence of anticipatory licking, as the licking behavior can discriminate the two conditioned stimulus tones, particularly at the late phase of learning (Figure 4—figure supplement 1, based on the random forest classifier). The first group exhibited licking after CSreward (correct reward discrimination), the second group exhibited no licking after CSreward (incorrect reward discrimination), the third group displayed no licking after CSaversive (correct aversive discrimination), and the fourth group displayed licking after CSaversive (incorrect aversive discrimination). The classification is invalid when animals make random guesses (discrimination of 50%), so we focused on results from the late phase of learning (or the middle phase if there were no errors in anticipatory licking in the late phase).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig4-v1.jpg)
+
+**Figure 4.:** (A) Classification of trials based on the behavioral response that occurred between the conditioned stimulus onset and unconditioned stimulus onset. Such behaviors include anticipatory licking or facial expressions. (B) Comparison of cue response between correct (x-axis) and incorrect (y-axis) trials based on anticipatory licking (magenta, aversive-preferring axons, n=44; cyan, reward-preferring axons, n=12). The left panel shows the reward cue response, and the right panel shows the aversive cue response. (C) Preference for reward or aversive predictive cues in correct (left panel) and incorrect (right) discrimination. Magenta represents aversive-preferring axons (n=44) and cyan represents reward-preferring axons (n=12). Vector averages representing aversive-preferring axons and reward-preferring axons are depicted as magenta and cyan arrows. Note stronger preference for aversive cue as a population in correct discrimination. (D) Similar to B, but based on facial expressions (magenta, aversive-preferring axons, n=47; cyan, reward-preferring axons, n=12) (E) Similar to C, but based on facial expressions (magenta, aversive-preferring axons, n=47; cyan, reward-preferring axons, n=12). As in C, preference for the aversive cue is stronger in correct discrimination.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** On the first day, cue discrimination was nearly 50%, indicating that discrimination is random. However, as the training proceeded, discrimination was improved, reaching 79.2 ± 6.3% at the late phase (n = 6 animals).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/91136/elife-91136-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) A frame sequence during the cue presentation was analyzed. (B) All pixel values were inputted to a pretrained deep neural network, resulting in more than 400 features. (C) The top 400 features were fed into a machine learning classifier (random forest). (D) The recall rate of the classifier was computed as the discrimination rate. (E) The time course of discrimination was computed (one example animal). High discrimination was achieved only in the late phase of classical conditioning, even though the early phase was analyzed based on its own classifier trained with frames from the early phase.
 
 Can the axonal response to conditioned cues be impacted by whether animals discriminate the cues correctly or incorrectly? An incorrect discrimination of the aversive cue is accompanied by the presence of anticipatory licking, resulting in error trials in our machine learning-based analysis. Such error trials (Figure 4A, fourth group) occurred in 1.6% of cases, showing a weaker aversive cue response than correct trials (third group; p<0.0001, n=44 magenta axons, Wilcoxon signed-rank test, Figure 4B, right). In contrast, the absence of anticipatory licking despite the reward-predictive cue comprises another type of error (second group, 49.0%). In such error trials, the reward cue response was not significantly different from that in the correct trials (first group; p=0.26 n=44 axons, Wilcoxon signed-rank test, Figure 4B, left). Overall, the reward/aversive preference was stronger in correct discrimination trials than in incorrect trials (left vs. right in Figure 4C, magenta, 82.2°±1.1° vs. 70.0°±7.6°, p=0.049, circular statistics).
 
@@ -101,43 +167,165 @@ Our study provides new insights into the functional diversity of dopamine neuron
 
 ## Materials and methods
 
-## Experimental model details
+**Key resources table**
 
-## Animals
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase (Sheep Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab113, RRID:AB_297905</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Antibody, Alexa Fluor 488 Conjugated (Donkey Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21206, RRID:AB_2535792</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sheep IgG (H+L) Antibody, Alexa Fluor 568 Conjugated (Donkey Polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21099, RRID:AB_2535753</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hSynapsin1-FLEx-axon-jGCaMP8m (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene #216533</td>
+      <td>Described at ‘Headplate implant and virus injection’ of ‘Surgery’ section</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV2/1-hSynapsin1-FLEx-axon-jGCaMP8m-WPRE-SV40</td>
+      <td>University of South CarolinaViral Vectors Core</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Mouse: Slc6a3tm1.1(cre)Bkmn</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 006660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Normal Donkey Serum</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9663, RRID:AB_2810235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622 https://www.mathworks.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_008394 https://www.anaconda.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Suite2p</td>
+      <td>Patriarchi et al., 2018; MouseLand, 2024</td>
+      <td>https://github.com/MouseLand/suite2p</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>Mathis et al., 2018</td>
+      <td>https://github.com/DeepLabCut/DeepLabCut; Mathis et al., 2024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>B-spline Grid, Image and Point based Registration</td>
+      <td>Dirk-Jan Kroon</td>
+      <td>https://jp.mathworks.com/matlabcentral/fileexchange/20057-b-spline-grid-image-and-point-based-registration</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pytorch, TorchVision</td>
+      <td>Meta AI</td>
+      <td>https://pytorch.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Brain Connectivity Atlas</td>
+      <td>Allen Brain Map</td>
+      <td>https://connectivity.brain-map.org/</td>
+      <td>Further details are provided in the caption of Figure 1—figure supplement 1.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model details
+
+#### Animals
 
 All experimental procedures were approved by local institutions supervising animal experiments at the Medical University of South Carolina, Monash University, Kagoshima University. Heterozygous dopamine transporter (DAT)-Cre mice (Slc6a3tm1.1(cre)Bkmn, Jackson Laboratory, #006660, crossed with wild-type C57BL/6) was used in this study, including 12 mice for two-photon imaging and 10 for histology. Previous research utilized the same mouse line to express GCaMP6f in dopamine axon terminals in the mPFC that could be detected by one-photon fiber photometry (Kim et al., 2016). Mice of both sexes, aged >8 weeks were included. The mice were maintained in group housing (up to five mice per cage) and experiments were performed during the dark period of a 12 hr light/12 hr dark cycle.
 
-## Method details
+### Method details
 
-## Surgery
+#### Surgery
 
 All surgical procedures were performed aseptically, with the mice under anesthesia with isoflurane. Lidocaine (subcutaneously at the incision), atropine (0.3  mg/kg, intraperitoneally), caprofen (5  mg/kg, intraperitoneally), and dexamethasone (2  mg/kg, intraperitoneally) were applied to prevent pain and brain edema. After surgery, the mice were allowed to recover for at least three days. No experimenter blinding was done.
 
-## Headplate implant and virus injection
+#### Headplate implant and virus injection
 
 A custom-made headpost was glued and cemented to the skull, and then, a small craniotomy (<0.5  mm) was performed over the VTA (~2.9–3.5  mm posterior and ~0.5  mm lateral from the bregma). Inside the small craniotomy, axon-GCaMP virus (AAV2/1-hSynapsin1-FLEx-axon-jGCaMP8m-WPRE-SV40) was volume-injected (Nanoject III, Drummond Scientific) to the VTA through a pulled capillary glass (40–60  nL/site; depth: 4200–4400  μm; 15 min/injection). After the injection, the craniotomy was sealed with a small piece of cover glass and silicon sealant (Kwik-Cast) and animals were returned to their home cage.
 
 For axon-GcaMP, we synthesized an axon-jGCaMP8m construct based on GAP43 (Broussard et al., 2018), a linker (Broussard et al., 2018), and jGCaMP8m (Zhang et al., 2023), together with restriction sites for SpeI and AscI. Then, the construct was inserted into a hSynapsin1-FLEx vector, to make hSynapsin1-FLEx-axon-jGCaMP8m-WPRE-SV40. The plasmid has been deposited into Addgene (#216533).
 
-## Microprism implant
+#### Microprism implant
 
 After a 3-week waiting period of adeno-associated virus (AAV) expression, a microprism was inserted for two-photon imaging as described previously (Low et al., 2014). A rectangular craniotomy (4x2  mm) was made over the bilateral PFC (~1.5–3.5  mm anterior from the bregma), and the dura was removed over the right hemisphere. Then, a microprism implant assembly was inserted into the subdural space within the fissure (Figure 1B, E and F). The microprism was centered ~2.5 mm anterior to the bregma to avoid damaging bridging veins. Once implanted, the prism sat flush against the opposing fissure wall, which contained the medial wall of the PFC (mainly the prelimbic area) in the left hemisphere. The front face of the prism was oriented along the midline.
 
 The assembly consisted of a right-angle microprism (2x2 x 1 mm, Prism RA N-BK7, Tower Optical Corp.) and two coverslip layers (top layer: 4.5 x3.0  mm, bottom layer: 3.6 x1.8  mm), which were glued by ultraviolet curing optical adhesive (Norland #81). The top layer of glass was cemented to the skull with dental acrylic. Our assembly design (microprism of 2x2 x 1 mm, plus double-layer glass) is different from the original report (microprism of 1.5x1.5 x 1.5 mm plus single-layer glass; Low et al., 2014) for the following reasons. First, the thinner microprism (1 mm in the anterior-posterior axis) was easier to insert into the bank, avoiding superficial veins branching from the superior sagittal sinus. Second, the longer prism (2 mm in the dorsal-ventral axis) could spare a wider imageable region below the superior sagittal sinus. Third, the double-layer glass helped suppress brain movements.
 
-## Behavior
+### Behavior
 
 After the microprism implant surgery, the mice were allowed to recover in their home cages for one week. After recovery, the mice underwent water scheduling (receiving 0.8–1 mL of water per day). Then, the mice were pretrained for head fixation and for drinking water from a spout on a linear passive treadmill (SpeedBelt, Phenosys) in a sound-proof blackout box for two days. After the initial days of reward only, the animals received infrequent electrical shocks interspersed with the reward. Once the animals experienced both reward and shock conditions, we started the two-photon imaging sessions.
 
 To monitor licking behavior, the face of each mouse was filmed with a camera at 65 Hz (CM3-U3-13Y3M-CS, FLIR) using infrared illumination (850 nm light-emitting diode, IR30, CMVision or M850F2, Thorlabs). To detect locomotion, the running speed on the treadmill was recorded at 30 kHz.
 
-## Rewarding and aversive stimuli
+#### Rewarding and aversive stimuli
 
 The mice received rewarding or aversive stimuli with unpredictable timing. The stimuli were administered in a randomized order (rewarding stimuli: seven out of nine cases; aversive stimuli: one out of nine; control period: one out of nine), with a randomized inter-trial interval of 55–65 s. The mice exhibited comfortable behavior on the treadmill for 1.5–2 hr.
 
 As a reward, 10 μL of sugar water was delivered through a water spout (Figure 2A), controlled by a TTL pulse (200ms) delivered to a syringe pump (PHM-107, Med Associates, Inc, USA). Based on previous literature, a 10 μL reward is relatively large (Tsutsui-Kimura et al., 2020). Animals typically underwent 100–200 reward trails. In some experiments, the reward volume was varied between 0 and 15 μL (Figure 2—figure supplement 4). As an aversive stimulus (Kim et al., 2016; de Jong et al., 2019; Lutas et al., 2019), a 1 s, 0.2-mA electrical current was delivered via a stimulator (AM2100, A-M systems, USA) between two electrode pads attached to the mouse’s tail (Figure 2A). This current was considered to be mild, just strong enough to evoke locomotion. When the current was doubled (Figure 2—figure supplement 4), the locomotion tended to become stronger, but some animals stopped drinking water. Similarly, when the frequency of the aversive stimuli was increased (e.g. 50% of trials), some mice were no longer motivated to drink the reward water.
 
-## Classical conditioning
+#### Classical conditioning
 
 After three days of reward and aversive stimulus sessions, we trained the mice in reward and aversive trace conditioning. The structure of the task is the same as that for the reward and aversive stimulus sessions (reward condition: seven out of nine cases; aversive condition: one out of nine; control condition: one out of nine; inter-trial interval: 55–65 s), except that auditory stimuli (9 or 13 kHz, 2 s) were presented 3 s before presenting the unconditioned stimuli (rewarding or aversive stimulus). Anticipatory behavioral responses confirmed that the mice could discriminate the tone frequency differences (Figure 3D–G), consistent with a previous report showing that mice can discriminate frequency differences down to 4–7% (de Hoz and Nelken, 2014). In three animals, 9 kHz tone was used for the reward-predictive cue, 13 kHz for the aversive-predictive cue. In the remaining three animals, the tone association was reversed.
 
@@ -145,25 +333,25 @@ We separated the learning into three phases in addition to the first day. In the
 
 When the anticipatory licking was stably manifested (Figure 3D, late phase), we included one condition for an unexpected reward omission among the seven reward conditions (Figure 3—figure supplement 3) and continued for two more days.
 
-## Timing control
+#### Timing control
 
 Synchronization of the two-photon imaging, behavior camera image acquisition, reward delivery, aversive stimulation, and sound presentation were achieved using digital and analogue output from a National Instruments board (NI USB-6229), which was controlled by a custom-made MATLAB program. We also recorded continuous signals (sampled at 30 kHz, PCIe-6363, National Instruments) of the treadmill speed, the frame timing of two-photon imaging, the frame timing of a behavior camera, copies of command waves to the syringe pump, the stimulator, and the speaker.
 
-## Two-photon imaging
+### Two-photon imaging
 
 In vivo two photon imaging was performed using a table-mounted microscope (Bergamo II, Thorlabs or MOM, Sutter Instruments) and a data acquisition system. The light source was a pulsed Ti:sapphire laser (MaiTai DeepSee eHP, SpectraPhysics, or Chameleon Ultra II, Coherent) with dispersion compensation, with the laser wavelength set to 980  nm (Hasegawa et al., 2017; Itokazu et al., 2018), which causes a higher fluorescent change in the GCaMP signal and less scattering in the tissue than 920 nm. The laser power at the apochromatic objective lens (16×, 0.80 NA, Nikon) was <70 mW, and we saw no bleaching. Green fluorescent photons were filtered (ET525/70 m-2p) and collected by a hybrid photodetector (R11322U-40–01, Hamamatsu Photonics) (Tischbirek et al., 2015) and a high-speed current amplifier (DHPCA-100, Femto). Imaging frames were acquired at ~60 Hz and were downsampled offline. Images were collected at a depth of 30–100  μm from the dural surface (up to ~200 x 200 μm). The small field of view at a high sampling rate makes it possible to collect weak signals from small structures, as in spine functional imaging (Jia et al., 2014).
 
 Imaging fields were searched based on the presence of fiber morphology with at least occasional calcium transients in the fibers, not based on the behavioral correlation of the transients. Fiber morphology and spontaneous calcium transients were not reliably visible in axons deeper than 100  μm in a live-view mode, possibly because of the low signal-to-noise ratio. For each mouse, imaging was performed for a single field per day in order to gain a sufficient number of repeats with a 1 min inter-trial interval. In reward/aversive preference characterization (Figure 2), 1–2 sites were imaged on different days. For the classical conditioning, only a single site was imaged during the course of conditioning. Once the imaging site was determined on the first day, the reference image of two-photon imaging was captured, in addition to the surface vessel image of one-photon imaging. On subsequent days, these images were used to return to the same imaging site and depth, comparing and overlaying the reference image and the ongoing imaging view.
 
-## Calcium imaging data analysis
+### Calcium imaging data analysis
 
-## Data processing
+#### Data processing
 
 Imaging data was processed for motion correction and registration. Axons were detected for region-of-interest (ROI) drawing using Suite2p (Pachitariu et al., 2016) and a custom-made MATLAB program (Itokazu et al., 2018). A fluorescent trace for each ROI was generated, and then the trace was normalized by the baseline fluorescence (F0, set as the 50th percentile fluorescence over a 30 s sliding window in order to remove any slow drifts in the baseline) to produce a ∆F/F trace.
 
 Dopamine axons were sparsely labeled in the mPFC, but the same axons needed to be excluded based on correlation analysis among pairs (Petreanu et al., 2012; Sun et al., 2016; Itokazu et al., 2018). The correlation coefficients of ∆F/F traces were calculated for axons in each plane, and pairs showing a higher correlation (>0.65; Itokazu et al., 2018) were considered to arise from the same axon. The high correlation pairs were grouped into clusters, and the ROI with the largest ∆F/F signal in each cluster was assigned to represent the cluster. The aforementioned procedure was iterated repeatedly until the correlation between all remaining pairs fell below the threshold of 0.65. Our results remained similar for different correlation threshold.
 
-## Reward, aversive, cue, and locomotion activity
+#### Reward, aversive, cue, and locomotion activity
 
 For each axon, reward and aversive activity were evaluated. Reward activity was quantified as an increase in ∆F/F by comparing the average ∆F/F between the control range (−2–0 s from the onset of the reward TTL to a syringe pump) and the signal range (0–2 s). Similarly, aversive activity was quantified as an increase in ∆F/F, based on the difference between the average ∆F/F between the control range (−2–0 s from the onset of the electrical shock TTL) and the signal range (0–2  s). Axons were considered to exhibit a significant response if the magnitude of either activity was statistically larger than that of the baseline activity (Wilcoxon signed-rank test; p < 0.05). Significant axons were classified as either reward-preferring (cyan) or aversive-preferring clusters (magenta) based on k-means clustering, the separation of which coincided approximately with the unity line of the reward/aversive scatter plot, as shown in Figure 2J.
 
@@ -171,27 +359,27 @@ The locomotion activity was quantified as an increase in ∆F/F by comparing the
 
 During classical conditioning, activity was evaluated in a similar manner. For the conditioned cue activity, the activity increase was computed by comparing the average ∆F/F between the control range (−2–0 s from the onset of the predictive cue) and the signal range (0–2 s from the cue onset). For the unconditioned response activity (reward or aversive), we compared the control range (−2–0 s from the onset of the predictive cue) and the signal range (0–2 s from the onset of the unconditioned stimulus). To investigate the preference for reward or aversive processing, we used scatter plots (Figure 3I and J), similar to Figure 2J. The color-coded classification (cyan/magenta) was based on k-means clustering, using the responses before classical conditioning (Figure 2J).
 
-## Evaluation of brain movement
+#### Evaluation of brain movement
 
 To compare the amount of brain movement between the two different microprism assemblies (Figure 1—figure supplement 2), we obtained x- and y-axis shifts of acquired images caused by the brain movement. The shifts were computed by the Suite2p program and used for image registration (Pachitariu et al., 2016). We quantified the brain shift using two metrics: root mean square and large transient movement. First, the root mean square was computed based on sequential shifts in pixel in x- and y-dimensions that were combined trigonometrically (Figure 1—figure supplement 2, D). Second, to detect large transient movement events, combined brain shift traces were filtered (Butterworth, at 1.5 Hz), and events larger than 5 μm (16 pixels) were detected as movement events (black dots in B).
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Licking detection
+#### Licking detection
 
 To track the movement of the tongue, videos of orofacial movement (65 Hz, side view) were processed using DeepLabCut (Mathis et al., 2018; Figure 2—figure supplement 1). The tip of the tongue, the location of the water spout and the position of the nose were labeled in randomly selected ~200 frames from six animals. In frames when the tongue was inside the mouth and was not visible, we estimated its location from the lips and jaw, instead of not labeling the tongue in these frames. This estimation prevented DeepLabCut from making a completely wrong guess in labeling the tongue for these frames.
 
 The learning process was divided into three equal-duration periods. We confirmed that the division into six periods resulted in a saturating discrimination curve for anticipatory licking in the fifth and sixth periods (Figure 3—figure supplement 1). These last two periods in the six-period division correspond to the ‘late phase’ of the three-period division that we used.
 
-## Running detection
+#### Running detection
 
 The speed of treadmill was monitored as the output from a SpeedBelt apparatus (Phenosys). The locomotion period was defined as the duration in which the treadmill speed was above the median +0.5 x standard deviation for more than 200ms. Then, the initiation of the locomotion period was defined as a time point preceded by a non-locomotion period (when the running speed is below the threshold) of at least 0.5 s.
 
-## Error analysis
+#### Error analysis
 
 To investigate how the cue discrimination of the animals impacts dopamine axonal activity, we separated the trials into those with correct discriminating behavior and those with incorrect behavior for reward and aversive conditions (Figure 4A). We used two types of discriminating behaviors, anticipatory licking and facial expressions (see below). We analyzed the late phase of the classical conditioning when animals showed robust anticipatory licking (Figure 4—figure supplement 1) or facial expressions (Figure 4—figure supplement 2). In one animal, anticipatory licking was not seen in the aversive condition (the fourth from the top of Figure 4A) during the late phase, so we analyzed the middle phase for that animal.
 
-## Machine learning analysis of facial expressions, licking, and running
+#### Machine learning analysis of facial expressions, licking, and running
 
 The anticipation of animals regarding upcoming unconditioned stimuli (reward or electrical shock) was quantified based on auditory predictive cues using a machine learning classifier (random forest classifier; Breiman, 2001).
 
@@ -199,18 +387,18 @@ Facial expressions were filmed by an infrared camera and analyzed with a random 
 
 The discrimination accuracy based on anticipatory licking was also computed (Figure 4—figure supplement 1). To enable a comparison among facial features and licking, the random forest classifier was used. Instead of 400 features (facial expressions), the random forest classifier was fed with one feature (either the number of licking instances).
 
-## Histology
+### Histology
 
 Animals were perfused with 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS). GCaMP or tyrosine hydroxylase immunostaining was performed using standard procedures (Figure 1C and D). Coronal slices (thickness, 30  µm) were cut using a cryostat (Leica Microsystems) and blocked in carrier solution (5% bovine serum albumin; 0.3% Triton X-100 in 0.1  M PBS) for 2  hr at room temperature on a shaker. For GFP staining, slices were then incubated with anti-green fluorescent protein (GFP) primary antibody (anti-GFP, 1:1000, A11122, Invitrogen) for 18  hr at 4 °C on a shaker. After three rinses with 0.1  M PBS for 30  min, sections were incubated with Alexa-Fluor-488-conjugated donkey anti-rabbit secondary antibody (Invitrogen, 1:500 in carrier solution) for 1  hr at room temperature on a shaker. For tyrosine hydroxylase staining, additional incubation with anti- tyrosine hydroxylase (TH) primary antibody (anti-TH, 1:200, ab113) and Alexa-Fluor-568-conjugated donkey anti-sheep secondary antibody (Invitrogen, 1:500) was included. Cell nuclei were stained with DAPI (1:1000; D523, Dojindo). After a few additional rinses for 30  min in 0.1  M PBS were performed, slices were mounted on slide glasses for imaging. Images were acquired using a confocal laser-scanning microscopy (FV3000, Olympus) and a fluorescence microscope (VS200, Olympus).
 
-## Experimental design and statistical analysis
+### Experimental design and statistical analysis
 
 Data are described as the median ± s.e.m. unless otherwise noted. Statistical significance was assessed using the non-parametric Wilcoxon signed-rank test, unless stated otherwise. Significance levels of data were denoted as * p<0.05, ** p<0.01 and *** p<0.001. p>0.05 was insignificant and was denoted as n.s.
 
-## Lead contact
+### Lead contact
 
 Further information and requests for reagents may be directed to the Lead Contact, Takashi R Sato (satot@musc.edu).
 
-## Materials availability
+### Materials availability
 
 The plasmid construct has been deposited to Addgene (#216533).

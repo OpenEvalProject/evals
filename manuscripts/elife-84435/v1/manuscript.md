@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Physiology and Biophysics, University of Washington Seattle United States
+1. Department of Physiology and Biophysics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -31,17 +31,116 @@ Overall, we found no evidence for regeneration of any cells in the amputated leg
 
 ## Results
 
-## Absence of evidence for regeneration after amputation of Drosophila legs
+### Absence of evidence for regeneration after amputation of Drosophila legs
 
 Abrams et al. concluded that fly legs, which normally do not regenerate after amputation, show some regeneration ability when the fly’s diet is supplemented with insulin, leucine, and glutamine. We carefully followed their methods to replicate the fly leg regeneration experiments in Figure 3 of their paper. We amputated legs of 1283 flies, one hind leg per fly, at the midpoint of the tibia (Figure 1; Table 1). The majority of these flies, 1083, were of the same wild-type fly strain (Canton-S) used in their study. After amputation, we raised 240 flies on control food and 843 on treated food. Three weeks later, we examined the legs at high magnification using bright-field microscopy, with the experimenter blind to experimental condition.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84435/elife-84435-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila legs.(A) The experimental protocol. We amputated one hind leg per fly, at the midpoint of the tibia. After three weeks on control food or treated food, legs were fixed and analyzed. (B–E) Bright-field images of a control leg (B), four examples of freshly cut legs (C), and five examples of legs after three weeks on control food (D) or treated food (E). Insets showed magnified views of the cut site. Scale bar in B is the same for other panels.
+**Figure 1.:** (A) The experimental protocol. We amputated one hind leg per fly, at the midpoint of the tibia. After three weeks on control food or treated food, legs were fixed and analyzed. (B–E) Bright-field images of a control leg (B), four examples of freshly cut legs (C), and five examples of legs after three weeks on control food (D) or treated food (E). Insets showed magnified views of the cut site. Scale bar in B is the same for other panels.
+
+**Table 1.**
+ Summary of fly tibia amputation results.Table 1—source data 1.Table of and details of amputation Experiments 1-5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th>Control</th>
+      <th>n</th>
+      <th>Treated</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Wild type(Canton-S)</td>
+      <td colspan="2">flies amputated</td>
+      <td></td>
+      <td>240</td>
+      <td></td>
+      <td>843</td>
+    </tr>
+    <tr>
+      <td colspan="2">survival after 3 weeks</td>
+      <td></td>
+      <td>117</td>
+      <td></td>
+      <td>498</td>
+    </tr>
+    <tr>
+      <td rowspan="4">tibia stump</td>
+      <td>cuticle growth</td>
+      <td>0%</td>
+      <td>0/117</td>
+      <td>0%</td>
+      <td>0/498</td>
+    </tr>
+    <tr>
+      <td>white blob</td>
+      <td>4%</td>
+      <td>5/117</td>
+      <td>3%</td>
+      <td>16/498</td>
+    </tr>
+    <tr>
+      <td>phalloidin stain</td>
+      <td>0%</td>
+      <td>0/97</td>
+      <td>0%</td>
+      <td>0/452</td>
+    </tr>
+    <tr>
+      <td>EdU stain</td>
+      <td>0%</td>
+      <td>0/20</td>
+      <td>0%</td>
+      <td>0/46</td>
+    </tr>
+    <tr>
+      <td rowspan="5">sensory neuron GFP reporter(ChAT &gt;GFP)</td>
+      <td colspan="2">flies amputated</td>
+      <td></td>
+      <td>100</td>
+      <td></td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td colspan="2">survival after 3 weeks</td>
+      <td></td>
+      <td>64</td>
+      <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="3">tibia stump</td>
+      <td>cuticle growth</td>
+      <td>0%</td>
+      <td>0/64</td>
+      <td>0%</td>
+      <td>0/50</td>
+    </tr>
+    <tr>
+      <td>white blob</td>
+      <td>0%</td>
+      <td>0/64</td>
+      <td>4%</td>
+      <td>2/50</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>0%</td>
+      <td>0/64</td>
+      <td>0%</td>
+      <td>0/50</td>
+    </tr>
+  </tbody>
+</table>
 
 We did not observe any regrown tibias, either in the control group or the treated group. The outcome of the two groups was qualitatively similar (Figure 1). All tibia stumps had bristle deterioration and darkened cuticle, indicating necrosis. The site of the darkened cuticle varied. It was usually near the cut site, but sometimes farther up the leg, closer to the tibia-femur joint. In 4% of control cases and 3% of treated cases, we observed a white blob near the cut site (Table 1; Figure 1, bottom row). The white blob was also observed by Abrams et al. to occur at a similar frequency and was called “white tissues protruding from the end”. Overall, based on close inspection of the cuticle three weeks after amputation, we found no evidence of leg regeneration.
 
-## All cells die and fail to regenerate in the amputated tibia stump
+### All cells die and fail to regenerate in the amputated tibia stump
 
 Most of the internal structures of the fly leg, including muscle and neurons, are partially transparent. Inspection of amputated limbs using bright-field microscopy alone might be insufficient to detect surviving or regenerated tissue. We therefore used fluorescent labels to test for the presence of muscles, neurons, and other cells in the tibia before and after amputation.
 
@@ -57,7 +156,7 @@ Each fly leg has twelve muscles, including four in the tibia (Soler et al., 2004
 
 Since we did not find any sensory neurons or muscles in the amputated tibia stumps, we asked whether any other tissues, possibly hemocytes, glia, or epithelial cells, survive and/or regenerate. We stained legs of wild-type (Canton-S) flies with DAPI to label nuclei. Three weeks after amputation, we did not observe any DAPI staining in the cuticle of the tibia stumps, either in the control or treated groups (n=137 control, n=544 treated; Figure 2C). In the femur and other leg segments proximal to the tibia, DAPI staining looked normal. This pattern is consistent with previous work showing that cell death was constrained to the injured leg segment in the adult cockroach (Bodenstein, 1955). In summary, our evidence supports the conclusion that all cells in the tibia stump die after amputation and fail to regenerate. The amputated stump appears to be an empty tube of cuticle, devoid of living cells.
 
-## The white blob on amputated leg stumps is not a regeneration blastema
+### The white blob on amputated leg stumps is not a regeneration blastema
 
 Abrams et al. reported the occasional appearance of a white blob at the tip of the amputated tibia stump in flies fed the supplemented diet. They called this “white tissue” and interpreted it to be an intermediate regeneration morphology. We observed the white blob form with a similar probability to that reported by Abrams et al. (3–4% of amputations, Table 1); however, we found that the blob occurred in both the control and experimental groups. Nonetheless, we sought to determine the nature of the white blob, and if it was, in fact, a sign of regeneration.
 
@@ -67,7 +166,7 @@ In many regeneration model systems, tissue regrowth is mediated by a blastema: a
 
 **Figure 3.:** (A) Bright-field (left) and confocal images (right) of leg stumps stained with EdU (red) and DAPI (white) to test for cell proliferation. Tibia stumps did not incorporate EdU. The positive control, fly gut (B) did stain for EdU. (C) Three additional examples of DAPI staining and one example showing lack of phalloidin staining (D) in white blobs (n=12). Note that cells in (C) are smaller and more densely packed than fly leg hemocytes (E, green = Hml > GFP), fly leg bristle sensory neurons (F, green = 39A11 Gal4>GFP), fly leg muscle cells, larval leg imaginal disc cells (H), or fly food yeast (I). The nuclei in (C and D) are consistent with small, densely packed bacteria, such as those observed in fly excrement (J).
 
-## The white blob on amputated leg stumps is likely a colony of bacteria
+### The white blob on amputated leg stumps is likely a colony of bacteria
 
 We found that the white blob stained robustly with the nuclear label DAPI (Figure 3A, C and D). However, the nuclei in the white blobs were about one tenth the size of other cells in the fly leg, including leg hemocytes (Figure 3E), leg sensory neurons (Figure 3F), and leg muscle (Figure 3G). This discrepancy made us doubt that the white blob consisted of Drosophila cells. Abrams et al. also performed DAPI staining on this type of structure, but the image in their paper (Figure 4f) lacked a scale bar, making it difficult to determine the source of the nuclei.
 
@@ -91,28 +190,164 @@ Our motivation to establish the truth about fly leg regeneration is more than ac
 
 ## Materials and methods
 
-## Table of genotypes
+**Key resources table**
 
-## Amputation and diet
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Canton-S wild type</td>
+      <td>Celeste Berg, UW</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mi{Trojan – Gal4}ChAT[MI04508-TG4.0] CG7715[MI04508-TG4.0-X]</td>
+      <td>Bloomington 60317</td>
+      <td>RRID:BDSC_60317; FBti0168134</td>
+      <td>ChAT-GAL4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P{pJFRC7-020XUAS-IVS-mCD8::GFP}attP2</td>
+      <td>Bloomington 32194</td>
+      <td>RRID:BDSC_32194; FBti0131936</td>
+      <td>UAS-mcd8::GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P{w[+mC]=Hml-GAL4.Delta}2, P{w[+mC]=UAS-2xEGFP}AH2</td>
+      <td>Bloomington 30140</td>
+      <td>RRID:BDSC_30140</td>
+      <td>Hml &gt;GFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>P{y[+t7.7] w[+mC]=GMR39 A11-GAL4}attP2</td>
+      <td>Bloomington 50034</td>
+      <td>RRID:BDSC_50034</td>
+      <td>39A11-Gal4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-Leucine</td>
+      <td>Sigma-Aldrich</td>
+      <td>L8000</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-Glutamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>G3126</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Insulin (Human Recombinant)</td>
+      <td>MP Biomedicals</td>
+      <td>0219390080</td>
+      <td>0.1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A22287</td>
+      <td>1:50 in PBST</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>EdU</td>
+      <td>Abcam</td>
+      <td>146186</td>
+      <td>2 mg/mL in food</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-&amp;-Go Plus EdU 555 Cell Proliferation Assay Kit</td>
+      <td>Click Chemistry Tools</td>
+      <td>1351</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>VECTASHIELD Antifade Mounting Medium</td>
+      <td>Vector Laboratories</td>
+      <td>H-1000–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>VECTASHIELD Antifade Mounting Medium with DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>H-1200–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Table of genotypes
+
+<table>
+  <tbody>
+    <tr>
+      <td>Figure 1, Figure 2B–D, Figure 3A–C, F–G</td>
+      <td>Wild type Drosophila melanogaster (Canton-S)</td>
+    </tr>
+    <tr>
+      <td>Figure 2A</td>
+      <td>w[*]; Mi{Trojan-GAL4.0}ChAT[MI04508-TG4.0] CG7715[MI04508-TG4.0-X]/ P{pJFRC7-020XUAS-IVS-mCD8::GFP}attP2</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>w[1118]; P{w[+mC]=Hml GAL4.Delta}2, P{w[+mC]=UAS-2xEGFP}AH2</td>
+    </tr>
+    <tr>
+      <td>Figure 3E</td>
+      <td>w[1118]; P{pJFRC7-020XUAS-IVS-mCD8::GFP}attP40; P{y[+t7.7] w[+mC]=GMR39 A11-GAL4}attP2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Amputation and diet
 
 Drosophila were raised on a standard cornmeal-molasses-yeast food fly food at 25 °C with a 14 hr dark/10 hr light cycle. We used male and female adults, 1–2 days post-eclosion, reasoning that young flies would be more likely to regenerate and more likely to survive the three-week recovery period than old flies. For leg amputation, flies were anesthetized in groups of 20 on CO2 plates for 5 minutes or less. One hind-leg per fly was amputated at the mid-point of the tibia with a fine double-edge super-stainless razor blade (ASR 72–003). Amputated flies were included in our analysis only if the amputation site was within ~50 μm of the tibia midpoint, using leg bristles as fiducial markers. Regeneration of cuticle was assessed according to whether the tibia length three weeks later fell outside of that range. After amputation, flies were immediately returned to a vial with either standard lab food or treated food, with random assignment.
 
 To make treated food, vials of standard fly food were microwaved to liquefy the food. Before adding supplements, we let it cool to lukewarm to prevent the insulin from denaturing (Kaufmann et al., 2021). We added supplements in an aqueous stock solution and mixed the food for a final homogeneous concentration of 5 mM L-Leucine, 5 mM L-Glutamine, and 0.1 mg/ml insulin (Abrams et al., 2021). Food was mixed and allowed to set at room temperature for one hour. Flies were moved onto freshly prepared food every 2–3 days.
 
-## Fixing, staining, and analysis
+### Fixing, staining, and analysis
 
 Legs or imaginal discs were fixed in 4% formaldehyde (PFA) PBS solution for 20 min followed by rinsing in PBS with 0.2% Triton X-100 (PBT) three times. To label muscle, legs were incubated in 1:50 phalloidin in a PBS solution with the following reagents to improve tissue penetrance: 1% triton X-100, 0.5% DMSO, 0.05 mg/ml Escin (Sigma-Aldrich, E1378), and 3% normal goat serum. Legs were allowed to incubate for one week at 4 °C with occasional rocking. After staining, legs were rinsed 3 x with PBS-Tx, 1 x with PBS, and mounted onto slides in Vectashield with or without DAPI.
 
 Each slide was labeled according to experimental condition. Prior to analysis, we taped-over the labels. Categorizations in Table 1 were performed with the experimenter blinded to experimental condition.
 
-## DAPI staining of yeast and fly excrement bacteria
+### DAPI staining of yeast and fly excrement bacteria
 
 Cells were transferred to a slide, diluted in water, flame-fixed, then mounted in Vectashield with DAPI.
 
-## EdU labeling
+### EdU labeling
 
 We supplemented the food recipe above with 2 mg/mL EdU. Flies were moved to freshly prepared food every 2–3 days. After three weeks, legs and guts (positive control) were dissected and fixed in 4% formaldehyde (PFA) PBS solution for 20 min and processed according to Click-&-Go kit instructions. After staining, legs were rinsed 3 x with PBS-Tx, 1 x with PBS, and mounted in Vectashield with DAPI.
 
-## Imaging
+### Imaging
 
 Mounted legs were imaged on a Confocal Olympus FV1000 (phalloidin, ChAT, EdU, and cuticle autofluorescence images) Leica DMI6000 Widefield (brightfield images), and Leica SP8X (DAPI images). Image stacks were processed in FIJI (Schindelin et al., 2012). Bright-field images were processed in Photoshop with the color channel mixer to correct a bluish background to truer white background.

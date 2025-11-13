@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/049emcs32 Department of Biological Sciences, The University of Texas at Dallas Richardson United States
-2. https://ror.org/05byvp690 Department of Urology, University of Texas Southwestern Medical Center Dallas United States
+1. Department of Biological Sciences, The University of Texas at Dallas Richardson United States ([ROR:049emcs32](https://ror.org/049emcs32))
+2. Department of Urology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
 ## Abstract
 
-Polyamines are biologically ubiquitous cations that bind to nucleic acids, ribosomes, and phospholipids and, thereby, modulate numerous processes, including surface motility in Escherichia coli . We characterized the metabolic pathways that contribute to polyamine-dependent control of surface motility in the commonly used strain W3110 and the transcriptome of a mutant lacking a putrescine synthetic pathway that was required for surface motility. Genetic analysis showed that surface motility required type 1 pili, the simultaneous presence of two independent putrescine anabolic pathways, and modulation by putrescine transport and catabolism. An immunological assay for FimA—the major pili subunit, reverse transcription quantitative PCR of fimA , and transmission electron microscopy confirmed that pili synthesis required putrescine. Comparative RNAseq analysis of a wild type and Δ speB mutant which exhibits impaired pili synthesis showed that the latter had fewer transcripts for pili structural genes and for fimB which codes for the phase variation recombinase that orients the fim operon promoter in the ON phase, although loss of speB did not affect the promoter orientation. Results from the RNAseq analysis also suggested (a) changes in transcripts for several transcription factor genes that affect fim operon expression, (b) compensatory mechanisms for low putrescine which implies a putrescine homeostatic network, and (c) decreased transcripts of genes for oxidative energy metabolism and iron transport which a previous genetic analysis suggests may be sufficient to account for the pili defect in putrescine synthesis mutants. We conclude that pili synthesis requires putrescine and putrescine concentration is controlled by a complex homeostatic network that includes the genes of oxidative energy metabolism.
+Polyamines are biologically ubiquitous cations that bind to nucleic acids, ribosomes, and phospholipids and, thereby, modulate numerous processes, including surface motility in Escherichia coli. We characterized the metabolic pathways that contribute to polyamine-dependent control of surface motility in the commonly used strain W3110 and the transcriptome of a mutant lacking a putrescine synthetic pathway that was required for surface motility. Genetic analysis showed that surface motility required type 1 pili, the simultaneous presence of two independent putrescine anabolic pathways, and modulation by putrescine transport and catabolism. An immunological assay for FimA—the major pili subunit, reverse transcription quantitative PCR of fimA, and transmission electron microscopy confirmed that pili synthesis required putrescine. Comparative RNAseq analysis of a wild type and ΔspeB mutant which exhibits impaired pili synthesis showed that the latter had fewer transcripts for pili structural genes and for fimB which codes for the phase variation recombinase that orients the fim operon promoter in the ON phase, although loss of speB did not affect the promoter orientation. Results from the RNAseq analysis also suggested (a) changes in transcripts for several transcription factor genes that affect fim operon expression, (b) compensatory mechanisms for low putrescine which implies a putrescine homeostatic network, and (c) decreased transcripts of genes for oxidative energy metabolism and iron transport which a previous genetic analysis suggests may be sufficient to account for the pili defect in putrescine synthesis mutants. We conclude that pili synthesis requires putrescine and putrescine concentration is controlled by a complex homeostatic network that includes the genes of oxidative energy metabolism.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Polyamines control flagella-dependent surface motility of Proteus mirabilis and 
 
 ## Results
 
-## W3110 surface motility requires pili
+### W3110 surface motility requires pili
 
 An assessment of surface motility for E. coli K-12 and eight derivatives showed five strains covered a plate in 12–18 hr, while four did not traverse a plate in 36 hr (Ambagaspitiye et al., 2019). The slow-moving strains generated genetically stable fast-moving variants which suggests that the former were ancestral. We chose our lab strain of W3110 for further study because (a) it exhibited the least variability in spreading diameter and generated fewer fast-moving variants, and (b) we had previously analyzed this strain for the energy requirements for surface motility (Sudarshan et al., 2021). We refer to our slow-moving lab strain hereafter as W3110 but not all W3110 strains move similarly: the W3110 from the genetic stock center is a fast-moving variant (Ambagaspitiye et al., 2019).
 
@@ -43,17 +43,23 @@ Several results suggested that W3110 requires pili for surface motility. First, 
 
 Results from W3110 sequencing found an IS1 insertion in fimE which could explain its greater movement that is less variable and greater genetic stability. The FimB and FimE recombinases are the major components of phase variation that determine the orientation of the promoter that initiates transcription of the fimAICDFGH operon which codes for the pili structural proteins. The FimB recombinase favors the productive ON orientation, while the more active FimE recombinase favors the unproductive OFF orientation (Conway et al., 2023; Kelly et al., 2006; O’Gara and Dorman, 2000). The insertion in fimE is the likely basis for the relative stability of W3110.
 
-## PDSM required two independent putrescine synthesis pathways
+### PDSM required two independent putrescine synthesis pathways
 
 We examined PDSM requirements for polyamine anabolic pathways. A major putrescine biosynthetic pathway is ornithine decarboxylation either by the constitutive SpeC or the low-pH inducible SpeF. TheΔspeC and ΔspeF mutants moved as well as the parental strain, but a ΔspeC ΔspeF double mutant moved less well (Figure 3). SpeA (arginine decarboxylase) and SpeB (agmatinase) catalyze an alternate two-step putrescine synthetic pathway (Figure 1; Tabor and Tabor, 1985): deletion of either gene reduced surface motility (Figure 3). The ΔspeA, ΔspeB, and ΔspeC ΔspeF strains grew as well as the parental strain and had normal swimming motility (Figure 3—figure supplement 1). A ∆speE mutant, which lacks the enzyme for spermidine synthesis, moved on a surface as well as the parental strain (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig3-v1.jpg)
+
+**Figure 3.:** (A) Pili-dependent surface motility (PDSM) of mutants with defects in polyamine anabolic genes. All assays were performed in triplicate, and representative images are shown. (B) Diameter of surface movement of polyamine mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Dunnett test of significance: *p<0.05; **p<0.01; ***p<0.001. In this figure the ΔspeB mutant was IM26.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig3-figsupp1-v1.jpg)
 
 Supplemental putrescine at 1 mM restored the surface motility of a speB mutant (Figure 4A) and a speA mutant (not shown). Spermidine did not restore wild-type movement and, also, caused an unusual pattern of movement in the parental strain (Figure 4A). These exogenous concentrations of putrescine and spermidine had no effect on growth rates in a liquid motility medium (not shown). In summary, PDSM required the simultaneous presence of two independent pathways of putrescine synthesis but did not require spermidine.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig4-v1.jpg)
 
-**Figure 4.:** speB mutant.(A) Putrescine and spermidine supplementation of wild-type and ΔspeB strains. (B) Diameter of surface movement of polyamine mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Sadik test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicates and representative images are shown. In this figure the ΔspeB mutant was IM26.
+**Figure 4.:** (A) Putrescine and spermidine supplementation of wild-type and ΔspeB strains. (B) Diameter of surface movement of polyamine mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Sadik test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicates and representative images are shown. In this figure the ΔspeB mutant was IM26.
 
-## Loss of putrescine transport systems affected surface motility
+### Loss of putrescine transport systems affected surface motility
 
 E. coli has several polyamine transport systems and one has been reported to be required for surface motility (Igarashi et al., 2001; Kurihara et al., 2011). Mutants lacking the PlaP and PotF putrescine transporters had 50% and 40% reduced surface motility, respectively, and lost the concentric ring pattern (Figure 5A). Loss of the PotE and PuuP transporters affected neither the movement diameter (Figure 5B) nor concentric ring formation (Figure 5A). We note that potF and plaP are more highly expressed than potE and puuP (85, 64, 17, and 6 counts per million transcripts, respectively) for W3110 grown in a liquid motility medium (Hogins et al., 2023a). We conclude that extracellular putrescine and its transport contribute to PDSM.
 
@@ -61,7 +67,7 @@ E. coli has several polyamine transport systems and one has been reported to be 
 
 **Figure 5.:** (A) Representative images of surface motility for strains defective in putrescine transport genes. (B) Diameter of surface movement of polyamine mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Dunnett test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicate and representative images are shown.
 
-## Putrescine catabolism affected surface motility
+### Putrescine catabolism affected surface motility
 
 Because putrescine catabolism modulates intracellular putrescine concentrations (Schneider et al., 2013; Schneider and Reitzer, 2012), we examined PDSM in putrescine catabolic mutants. The major putrescine catabolic pathway is initiated with putrescine glutamylation (Figure 6A, right column), and a second pathway initiates with putrescine deamination (Figure 6A, left column) (Schneider and Reitzer, 2012). Deletion of either puuA or patA which codes for the first enzymes of their respective pathways did not affect surface motility (Figure 6B). A double mutant moved less well which was unexpected because the proposed higher intracellular putrescine should have stimulated PDSM. Consistent with the stimulatory effect of putrescine, loss of puuR which codes for the repressor of PuuA-initiated pathway genes (Schneider and Reitzer, 2012), impaired PDSM (Figure 6B). One possible explanation to reconcile these seemingly contradictory results is that an optimal polyamine concentration stimulates PDSM, and a high concentration is inhibitory. The next section describes experiments to test this possibility.
 
@@ -69,55 +75,404 @@ Because putrescine catabolism modulates intracellular putrescine concentrations 
 
 **Figure 6.:** (A) Pathways and enzymes of putrescine catabolism. (B) Motility diameter of putrescine catabolic mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Dunnett test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicates and representative images are shown. (C) Effect of loss of speE on the patA puuA catabolic double mutant.
 
-## High putrescine reduced the expression of pili genes
+### High putrescine reduced the expression of pili genes
 
 High putrescine inhibits the translation of some mRNAs, and high spermidine, a product of putrescine metabolism, inhibits growth (Fukuchi et al., 1995; Sakamoto et al., 2020). If the phenotype of the ΔpatA ΔpuuA double mutant results from spermidine toxicity, then loss of spermidine synthase (SpeE) should reverse the phenotype. This prediction was not met, which argues against spermidine toxicity (Figure 6C). For the speB mutant, 1 mM putrescine stimulated PDSM, and 4 mM putrescine was slightly inhibitory (Figure 7A and B). The concentric ring pattern was observed with 1 mM, but not 4 mM putrescine. RT-qPCR to test transcriptional regulation of pili expression by putrescine showed optimal fimA transcription at 1 mM putrescine in the speB mutant (Figure 7C). Indirect enzyme-linked immunosorbent assays (ELISAs) against FimA suggested that the level of FimA in the speB mutant at 1 mM putrescine was higher than with 4 mM putrescine, but the difference was not statistically significant (Figure 7D). Variation of supplemental putrescine did not affect FimA in the parental strain (Figure 7C and D). Transmission electron microscopy (TEM) showed that pili expression was highest for the speB mutant at 1 mM putrescine (Figure 8), moderate at 0.1- and 4 mM putrescine, and undetectable without putrescine. The cells grown with 4 mM putrescine were shorter and thinner, which suggests stress, possibly mimicking osmotic stress. From these results and those in the previous section, we conclude that pili expression requires an optimal putrescine concentration.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig7-v1.jpg)
 
-**Figure 7.:** speB.(A) W3110 ΔspeB surface motility with 0.0, 0.1, 1.0, and 4.0 mM exogenous putrescine. All assays were performed in triplicate. Representative images are shown. (B) Average diameter of three separate surface motility plates. The parental strain without putrescine is shown for reference. Significance was determined by comparing the diameters of the ΔspeB mutants in the different concentrations of putrescine compared to the parental W3110. One-way ANOVA was used with Dunnett hypothesis testing to determine p values, ***p<0.001. (C) Reverse transcriptase-quantitative PCR using primers targeting the fimA gene from cells grown in 0.0, 0.1, 1.0, and 4.0 mM of supplemented putrescine. Double deltas were generated by normalizing the parental and the ΔspeB mutant RNA libraries to rpoD t hen comparing fimA expression. Two-way ANOVA was used to determine significance followed by Sadik hypothesis testing. ***p<0.001. (D) Enzyme linked immunosorbent assays using antibodies targeting pili (FimA) from cells grown with 0.0, 0.1, 1.0, and 4.0 mM of supplemented putrescine. Two-way ANOVA was used to determine significance followed by FDR adjusting. ***p<0.001. In this figure the ΔspeB mutant was J15.
+**Figure 7.:** (A) W3110 ΔspeB surface motility with 0.0, 0.1, 1.0, and 4.0 mM exogenous putrescine. All assays were performed in triplicate. Representative images are shown. (B) Average diameter of three separate surface motility plates. The parental strain without putrescine is shown for reference. Significance was determined by comparing the diameters of the ΔspeB mutants in the different concentrations of putrescine compared to the parental W3110. One-way ANOVA was used with Dunnett hypothesis testing to determine p values, ***p<0.001. (C) Reverse transcriptase-quantitative PCR using primers targeting the fimA gene from cells grown in 0.0, 0.1, 1.0, and 4.0 mM of supplemented putrescine. Double deltas were generated by normalizing the parental and the ΔspeB mutant RNA libraries to rpoD t hen comparing fimA expression. Two-way ANOVA was used to determine significance followed by Sadik hypothesis testing. ***p<0.001. (D) Enzyme linked immunosorbent assays using antibodies targeting pili (FimA) from cells grown with 0.0, 0.1, 1.0, and 4.0 mM of supplemented putrescine. Two-way ANOVA was used to determine significance followed by FDR adjusting. ***p<0.001. In this figure the ΔspeB mutant was J15.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig8-v1.jpg)
 
-**Figure 8.:** speB mutant cells after surface motility.Representative images are shown and cells were removed from motility plates with the following exogenous putrescine concentrations: (A) none, (B) 0.1 mM, (C) 1.0 mM, and (D) 4.0 mM. No pili were observed with 0 and 0.1 mM putrescine. Optimal pili production was observed with 1.0 mM putrescine. The bar represents one micron. In this figure the ΔspeB mutant was J15.
+**Figure 8.:** Representative images are shown and cells were removed from motility plates with the following exogenous putrescine concentrations: (A) none, (B) 0.1 mM, (C) 1.0 mM, and (D) 4.0 mM. No pili were observed with 0 and 0.1 mM putrescine. Optimal pili production was observed with 1.0 mM putrescine. The bar represents one micron. In this figure the ΔspeB mutant was J15.
 
-## RNAseq analysis identifies fim operon expression and energy metabolism as targets of putrescine control
+### RNAseq analysis identifies fim operon expression and energy metabolism as targets of putrescine control
 
 RNAseq analysis was used to further confirm or determine whether putrescine affected (a) transcription of the fim operon that codes for the pili structural genes, (b) fim operon promoter orientation, i.e., phase variation, or (c) energy metabolism: surface motility of W3110 has been shown to require glucose metabolism and oxidative phosphorylation (Sudarshan et al., 2021).
 
-## RNAseq analysis
+#### RNAseq analysis
 
 We grew parental W3110 and its ΔspeB derivative with and without 1 mM putrescine. R2 values of pairwise comparisons showed that the transcriptome of the speB mutant grown without putrescine differed from the other transcriptomes which were similar (summarized in Table 1 and shown graphically in Supplementary file 1). A multidimensional scaling plot and a plot of the 100 most variable genes visualize these comparisons (Figure 9A and B). When compared to the parental strain, the speB mutant grown without putrescine had 310 downregulated genes and 159 upregulated genes with at least fourfold differential expression and FDR <0.05. Transcripts for the putrescine-induced puuAP and puuDRCBE operons, which specify genes of the major putrescine catabolic pathway, were reduced from 1.6- to 14-fold (FDR ≤0.02) in the speB mutant (Supplementary file 2). Because higher intracellular putrescine results in higher catabolic gene expression, these results imply lower intracellular putrescine in the ΔspeB mutant.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig9-v1.jpg)
 
-**Figure 9.:** speB mutant’s gene expression in media with and without 1.0 mM putrescine.(A) Multidimensional scaling plot of the parental and ΔspeB mutant transcriptomes. When grown with 1.0 mM putrescine (red), the ΔspeB mutant transcriptome (triangles) are nearly identical to the parental transcriptomes when grown without and with putrescine (blue and red circles, respectively). When grown without putrescine, the ΔspeB mutant transcriptome (blue triangles) is greatly skewed from transcriptomes of the parental strain and the ΔspeB mutant grown with putrescine. (B) Heatmap of the top 100 most variable genes further demonstrates the distinctiveness of the ΔspeB mutant grown without putrescine and the similarities of the ΔspeB mutant transcriptome when grown with 1.0 mM putrescine supplementation and the parental grown with or without putrescine. In this figure the ΔspeB mutant was J15.
+**Figure 9.:** (A) Multidimensional scaling plot of the parental and ΔspeB mutant transcriptomes. When grown with 1.0 mM putrescine (red), the ΔspeB mutant transcriptome (triangles) are nearly identical to the parental transcriptomes when grown without and with putrescine (blue and red circles, respectively). When grown without putrescine, the ΔspeB mutant transcriptome (blue triangles) is greatly skewed from transcriptomes of the parental strain and the ΔspeB mutant grown with putrescine. (B) Heatmap of the top 100 most variable genes further demonstrates the distinctiveness of the ΔspeB mutant grown without putrescine and the similarities of the ΔspeB mutant transcriptome when grown with 1.0 mM putrescine supplementation and the parental grown with or without putrescine. In this figure the ΔspeB mutant was J15.
 
-## Transcription of the fim operon is reduced in the ΔspeB mutant
+**Table 1.**
+ Pairwise statistical comparisons of transcriptomes.Abbreviation: putr is putrescine.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain 1</th>
+      <th>Strain 2</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type (1 mM putr)</td>
+      <td>wild-type (0 mM putr)</td>
+      <td>0.950</td>
+    </tr>
+    <tr>
+      <td>Wild-type (1 mM putr)</td>
+      <td>ΔspeB (1 mM putr)</td>
+      <td>0.954</td>
+    </tr>
+    <tr>
+      <td>ΔspeB (0 mM putr)</td>
+      <td>ΔspeB (1 mM putr)</td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <td>ΔspeB (0 mM putr)</td>
+      <td>wild-type (0 mM putr)</td>
+      <td>0.796</td>
+    </tr>
+    <tr>
+      <td>ΔspeB (0 mM putr)</td>
+      <td>wild-type (1 mM putr)</td>
+      <td>0.786</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Transcription of the fim operon is reduced in the ΔspeB mutant
 
 Deletion of speB reduced transcripts for genes of the fimA operon (Figure 10A). Numerous transcription factors activate the fim operon (Schwan, 2011; Karp et al., 2018), and, of these, loss of speB reduced hns transcripts, and increased fis, lrp, and qseB transcripts, but had no effect on ihfA and ihfB (Figure 10B). Loss of hns, ihfA, and lrp impaired PDSM (Figure 10C and D), which confirms the requirement for their products for pili synthesis in our strain background.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig10-v1.jpg)
 
-**Figure 10.:** fim region and regulators that control fim gene expression.(A) Expression of the fim genes in the parental W3110 and the speB mutant with and without putrescine supplementation. Values were calculated by dividing the individual replicates’ counts per million (CPM) value for each gene by the mean CPM of that gene in W3110 grown without putrescine and multiplying by 100 to yield the percent expression. Arrows below the genes signify the known operons: fimB and fimE belong to single gene operons, while fimAICDFGH belongs to one operon. One-way ANOVA was used to determine significance using Dunnett hypothesis testing. **p<0.01; ***p<0.001. (B) Expression of some regulators known to affect fim gene expression. Values were calculated as described in (A). ***p<0.001. (C) Surface motility of W3110 and three regulator mutants (Δhns, ΔihfA, and Δlrp). A gene found to be significantly different by this transcriptomic analysis (hns) was confirmed to be important in surface motility. In this figure the ΔspeB mutant was J15. (D) Diameter of surface movement of regulatory mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Dunnett test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicate.
+**Figure 10.:** (A) Expression of the fim genes in the parental W3110 and the speB mutant with and without putrescine supplementation. Values were calculated by dividing the individual replicates’ counts per million (CPM) value for each gene by the mean CPM of that gene in W3110 grown without putrescine and multiplying by 100 to yield the percent expression. Arrows below the genes signify the known operons: fimB and fimE belong to single gene operons, while fimAICDFGH belongs to one operon. One-way ANOVA was used to determine significance using Dunnett hypothesis testing. **p<0.01; ***p<0.001. (B) Expression of some regulators known to affect fim gene expression. Values were calculated as described in (A). ***p<0.001. (C) Surface motility of W3110 and three regulator mutants (Δhns, ΔihfA, and Δlrp). A gene found to be significantly different by this transcriptomic analysis (hns) was confirmed to be important in surface motility. In this figure the ΔspeB mutant was J15. (D) Diameter of surface movement of regulatory mutants after 36 hr. Error bars represent standard deviations for three independent replicates. Statistical analysis was performed using the Dunnett test of significance: *p<0.05; **p<0.01; ***p<0.001. All assays were performed in triplicate.
 
-## Putrescine does not control fim operon phase variation in W3110
+#### Putrescine does not control fim operon phase variation in W3110
 
 The phase ON-favoring FimB and phase OFF-favoring FimE recombinases control the orientation of the fim operon promoter. Our version of W3110 has an insertion in fimE which means that FimB is the major factor that controls phase variation. Loss of speB reduced transcripts from fimB which could account for loss of motility. PCR analysis with specific primers can determine the fim operon promoter orientation (Figure 11A) and showed that loss of speB, loss of hns, or the presence of putrescine did not alter the ratio of ON to OFF (Figure 11B). This experiment determines the steady state phase ON to OFF ratio, which less FimB might not affect if FimB is in excess. In strains with FimE, the rate of phase ON orientation formation will be much slower, and even small changes in FimB activity could conceivably affect the switch orientation. We conclude that putrescine does not control phase variation, at least in our strain of W3110.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig11-v1.jpg)
 
-**Figure 11.:** speB, W3110 Δhns, and MG1655.(A) The diagram shows the genes for the FimB and FimE recombinases, the invertible fimS region which contains the promoter for the fim operon, and the fim operon which codes for the proteins of the type 1 pilus. Primer pairs 1–2 and 1–3 detect the fimS region in the phase OFF and ON orientations, respectively. The DNA sizes for phases OFF and ON are 884 and 394, respectively, for wild-type strains of E. coli, such as MG1655. Our lab strain of W3110 has an IS1 element insertion in fimE which increases the size of the amplified DNA fragment. MG1655 was analyzed as a control. Primer 1 is 5’-CCGCGATGCTTTCCTCTATG-3’; primer 2 is 5’-TAATGACGCCCTGAAATTGC-3’; and primer 3 is 5’-TGCTAACTGGAAAGGCGCTG-3’ (shown schematically). (B) Deletion of either speB or hns had no effect on fimS orientation. A possible explanation for the loss of pili or PDSM in the speB or hns mutants is locking the fimS switch in phase OFF. However, loss of either speB or hns had no effect on fimS orientation in W3110 (lanes 2–4), and putrescine did not alter fimS orientation of the W3110 ΔspeB mutant (lanes 6 and 7). We conclude that loss of speB in W3110 did not phase-lock fimS in phase OFF. Also note that W3110, which has an insertion in fimE, is not locked in phase ON.
+**Figure 11.:** (A) The diagram shows the genes for the FimB and FimE recombinases, the invertible fimS region which contains the promoter for the fim operon, and the fim operon which codes for the proteins of the type 1 pilus. Primer pairs 1–2 and 1–3 detect the fimS region in the phase OFF and ON orientations, respectively. The DNA sizes for phases OFF and ON are 884 and 394, respectively, for wild-type strains of E. coli, such as MG1655. Our lab strain of W3110 has an IS1 element insertion in fimE which increases the size of the amplified DNA fragment. MG1655 was analyzed as a control. Primer 1 is 5’-CCGCGATGCTTTCCTCTATG-3’; primer 2 is 5’-TAATGACGCCCTGAAATTGC-3’; and primer 3 is 5’-TGCTAACTGGAAAGGCGCTG-3’ (shown schematically). (B) Deletion of either speB or hns had no effect on fimS orientation. A possible explanation for the loss of pili or PDSM in the speB or hns mutants is locking the fimS switch in phase OFF. However, loss of either speB or hns had no effect on fimS orientation in W3110 (lanes 2–4), and putrescine did not alter fimS orientation of the W3110 ΔspeB mutant (lanes 6 and 7). We conclude that loss of speB in W3110 did not phase-lock fimS in phase OFF. Also note that W3110, which has an insertion in fimE, is not locked in phase ON.
 
-## Evidence for a putrescine homeostatic network
+#### Evidence for a putrescine homeostatic network
 
 Altered transcript levels in the speB mutant suggest compensatory mechanisms for low putrescine (Supplementary file 2 for transcript differences for all genes, Table 2 for selected genes, and Figure 12 for a diagrammatic representation of transcript differences). The speB mutant had more transcripts from (a) genes of arginine and ornithine carboxylase, (b) all genes of ornithine and arginine synthesis from glutamate, and (c) genes for three separate putrescine transport systems; and fewer transcripts from the sap operon which codes for a putrescine exporter (Sugiyama et al., 2016) and rpmH and rpsT, whose products inhibit ornithine and arginine decarboxylase (Keseler et al., 2017). The net effect of these changes should be to increase intracellular putrescine (solid arrows in Figure 12). In other words, these changes are compensatory for low putrescine. In addition to these changes, the speB mutant had 60-fold and sevenfold more transcripts for mgtA and phoBR which code for the major magnesium transporter and the regulators of phosphate assimilation, respectively. These changes may also be compensatory and are discussed below.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/102439/elife-102439-fig12-v1.jpg)
 
-**Figure 12.:** speB mutant away from energy metabolism toward putrescine synthesis compared to the parental strain.The effects of low putrescine are shown. Genes and processes (transport and transcriptional regulators) in red have fewer transcripts, while those in black or blue have more. The dashed lines represent the proposed reduction in metabolic flux because of fewer transcripts from genes coding for the enzymes involved. Operons are shown except for the larger operons or regulons. For example, pur is meant to represent the unlinked genes that code for enzymes of purine synthesis. Table 2 or Supplementary file 2 should be consulted for specific genes and the quantitative change in transcripts.
+**Figure 12.:** The effects of low putrescine are shown. Genes and processes (transport and transcriptional regulators) in red have fewer transcripts, while those in black or blue have more. The dashed lines represent the proposed reduction in metabolic flux because of fewer transcripts from genes coding for the enzymes involved. Operons are shown except for the larger operons or regulons. For example, pur is meant to represent the unlinked genes that code for enzymes of purine synthesis. Table 2 or Supplementary file 2 should be consulted for specific genes and the quantitative change in transcripts.
 
-## Putrescine affects energy metabolism which could account for loss of motility
+**Table 2.**
+ Differentially expressed genes that are proposed to contribute to putrescine homeostasis.A positive number means more transcripts in the ΔspeB (lower putrescine) strain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene (function)</th>
+      <th>log2FC</th>
+      <th>FDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Polyamine synthesis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>speA (putrescine)</td>
+      <td>0.99</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>speC (putrescine)</td>
+      <td>1.43</td>
+      <td>3E-4</td>
+    </tr>
+    <tr>
+      <td>speD (spermidine)</td>
+      <td>–0.83</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>speF (putrescine)</td>
+      <td>1.05</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>rpmH (inhibitor of SpeA and SpeC)</td>
+      <td>–2.77</td>
+      <td>2E-4</td>
+    </tr>
+    <tr>
+      <td>rpsT (inhibitor of SpeA and SpeC)</td>
+      <td>–1.92</td>
+      <td>8E-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Polyamine transport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>potABCD* (spermidine)</td>
+      <td>–2.17</td>
+      <td>3E-4</td>
+    </tr>
+    <tr>
+      <td>potE (putrescine)</td>
+      <td>2.07</td>
+      <td>2E-4</td>
+    </tr>
+    <tr>
+      <td>potFGHI* (putrescine)</td>
+      <td>1.41</td>
+      <td>4E-4</td>
+    </tr>
+    <tr>
+      <td>plaP (putrescine)</td>
+      <td>1.11</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>sapBCDF* (putrescine export)</td>
+      <td>–1.18</td>
+      <td>8E-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Arginine synthesis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>argA_2 (synthesis)</td>
+      <td>1.77</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>argB (synthesis)</td>
+      <td>1.87</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>argC (synthesis)</td>
+      <td>2.86</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>argD (synthesis)</td>
+      <td>1.41</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>argF (synthesis)</td>
+      <td>1.63</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>argG (synthesis)</td>
+      <td>2.32</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>argH (synthesis)</td>
+      <td>0.97</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>argI (synthesis)</td>
+      <td>1.95</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>argR (repressor of arginine regulon)</td>
+      <td>–1.35</td>
+      <td>4E-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glutamate generation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>glsA (glutamine degradation)</td>
+      <td>2.16</td>
+      <td>5E-4</td>
+    </tr>
+    <tr>
+      <td>glnG (regulation of ammonia assimilation)</td>
+      <td>–1.59</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TCA cycle/electron transport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>acnA (TCA cycle)</td>
+      <td>–1.04</td>
+      <td>8E-4</td>
+    </tr>
+    <tr>
+      <td>acnB (TCA cycle)</td>
+      <td>–1.96</td>
+      <td>2E-4</td>
+    </tr>
+    <tr>
+      <td>fumA (TCA cycle)</td>
+      <td>–1.50</td>
+      <td>6E-4</td>
+    </tr>
+    <tr>
+      <td>fumB (TCA cycle)</td>
+      <td>–1.49</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>gltA (TCA cycle)</td>
+      <td>–1.64</td>
+      <td>2E-4</td>
+    </tr>
+    <tr>
+      <td>icdA (TCA cycle)</td>
+      <td>–1.32</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>sdhCDAB-sucABCD* (TCA cycle)</td>
+      <td>–3.88</td>
+      <td>5E-5</td>
+    </tr>
+    <tr>
+      <td>nuo operon* (electron transport)</td>
+      <td>–0.82</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>menFDHBCE* (electron transport)</td>
+      <td>–0.8</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>ubiEJB* (electron transport)</td>
+      <td>–0.93</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>cyoABCD* (electron transport)</td>
+      <td>–1.41</td>
+      <td>9E-4</td>
+    </tr>
+    <tr>
+      <td>hemCD* (heme)</td>
+      <td>–2.05</td>
+      <td>2E-4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Iron transport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>exbBD* (transport of all iron chelates)</td>
+      <td>–2.33</td>
+      <td>4E-5</td>
+    </tr>
+    <tr>
+      <td>tonB (transport of all iron chelates)</td>
+      <td>–1.9</td>
+      <td>4E-5</td>
+    </tr>
+    <tr>
+      <td>entCEBA* (enterochelin iron)</td>
+      <td>–5.2</td>
+      <td>7E-6</td>
+    </tr>
+    <tr>
+      <td>fecABCDE * (ferric citrate)</td>
+      <td>–4.4</td>
+      <td>3E-5</td>
+    </tr>
+    <tr>
+      <td>fecIR (regulators, ferric citrate)</td>
+      <td>–4.4</td>
+      <td>6E-6</td>
+    </tr>
+    <tr>
+      <td>feoABC* (ferrous iron)</td>
+      <td>–3.4</td>
+      <td>7E-4</td>
+    </tr>
+    <tr>
+      <td>fur (regulator, iron assimilation)</td>
+      <td>–0.40</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnesium and phosphate transport</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mgtA (magnesium)</td>
+      <td>5.90</td>
+      <td>5E-6</td>
+    </tr>
+    <tr>
+      <td>phoQ (regulator, magnesium)</td>
+      <td>0.79</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>pstSCAB* (phosphate)</td>
+      <td>3.61</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>phoBR* (regulator, phosphate assimilation)</td>
+      <td>2.80</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values for transcripts of the first gene of the operon are given. Results for other genes of the operon are in Supplementary file 2._
+
+#### Putrescine affects energy metabolism which could account for loss of motility
 
 Loss of speB affected transcripts for genes of the major energy metabolism pathways (Table 2): fewer transcripts for genes coding for all citric acid cycle enzymes, NADH dehydrogenase I (the entire nuo operon), cytochrome oxidase (the cyo operon), and several genes of menaquinone (the menFDHBCE operon), ubiquinone, and heme synthesis. The speB mutant also had fewer transcripts for all genes of iron acquisition, which is consistent with diminished oxidative energy generation. A speB mutant had fewer transcripts for ptsH (Hpr of the phosphotransferase system of carbohydrate transport), ptsG (enzyme IIBC component of glucose transport), gltA (citrate synthase), sdhA (a succinate dehydrogenase subunit), and sucC (a succinyl-CoA synthetase subunit), and their loss has been shown to either impair or eliminate W3110 surface motility (Sudarshan et al., 2021). The cumulative effect of these differences could account for the motility defect in the speB mutant.
 
@@ -139,31 +494,408 @@ Several results implicate putrescine in E. coli virulence during urinary tract i
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>speB</td>
+      <td>PMID:16738554</td>
+      <td></td>
+      <td>P1 transduction construction</td>
+    </tr>
+    <tr>
+      <td>Gene (E. coli)</td>
+      <td>various, see strain list</td>
+      <td>PMID:16738554</td>
+      <td></td>
+      <td>P1 transduction construction</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>W3110</td>
+      <td>other</td>
+      <td></td>
+      <td>Lab strain; history provided in Methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (E. coli transducing virus)</td>
+      <td>P1 vir</td>
+      <td>other</td>
+      <td></td>
+      <td>Lab strain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-E. coli RpoD (rabbit polyclonal)</td>
+      <td>Cusabio</td>
+      <td>Cat #: CSB-PA360419XA01ENVRRID:AB_3678626</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-E. coli FimA (rabbit polyclonal)</td>
+      <td>Cusabio</td>
+      <td>Cat #: CSB-PA361210ZA01ENVRRID:AB_3678627</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L) HRP conjugated</td>
+      <td>Cusabio</td>
+      <td>Cat #: CSB-PA489724RRID:AB_3678628</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FimA forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGGTGGGACCGTTCACTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FimA reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCAACAGCGGCTTTAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpoD forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCGTGTTGAAGCAGAAGAAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RpoD reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCGTCATCGCCATCTTCTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Phase variation test primer 1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGCGATGCTTTCCTCTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Phase variation test primer 2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAATGACGCCCTGAAATTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Phase variation test primer 3</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTAACTGGAAAGGCGCTG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMB substrate kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: 34021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ligation sequencing DNA V14</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Cat #: SQK-LSK114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rneasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboMinus Transcriptome Isolation Kit, bacteria</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: K155004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboCop rRNA Depletion Kits for Bacteria</td>
+      <td>Lexogen</td>
+      <td>Cat #: 126.24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LunaScript RT Super</td>
+      <td>NEB</td>
+      <td>Cat #: E3010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp STBR Green Master Mix for qPCR</td>
+      <td>ThermoFisher</td>
+      <td>Cat #: A25777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Eiken Agar</td>
+      <td>Eiken Chemical Co., Ltd, Tokyo, Japan</td>
+      <td>Cat #: E-MJ00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2fastq (v 4.2.4)</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_015058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Guppy basecaller (v 6.5.7)</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>RRID:SCR_023196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Porechop (v 0.2.4)</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>RRID:SCR_016967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flye (v 2.9.2)</td>
+      <td>PMID:27956617</td>
+      <td>RRID:SCR_017016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pilon (v 1.24)</td>
+      <td>https://doi.org.10.1371/journal.pone.0112963</td>
+      <td>RRID:SCR_014731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circulator (v 1.5.5)</td>
+      <td>PMID:26714481</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prokka (v 1.14.6)</td>
+      <td>https://doi.org.10.1093/bioinformatics/btu153</td>
+      <td>RRID:SCR_014732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QUAST (v 5.2.0)</td>
+      <td>PMID:23422339</td>
+      <td>RRID:SCR_001228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC Genomics Workbench</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_011853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>PMID:19910308</td>
+      <td>RRID:SCR_012802</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 All strains used for growth rate determinations and motility assays were derivatives of E. coli K-12 strain W3110 and are listed in Table 3. Great variations exist in standard lab strains, including W3110, from different labs. We initially tested nine strains derived from E. coli K-12, mostly from the Coli Genetic Stock Center (Ambagaspitiye et al., 2019), and chose our lab strain because of relative genetic stability and more quantitatively reproducible results. Our strain originated from the lab of Jon Beckwith in the 1960s via the lab of Boris Magasanik where it had been stored in a room temperature stab until the mid-1980s, at which time it was revived and frozen at –80 °C. To construct the mutant strains, the altered allele was obtained from the Keio collection in which the gene of interest had been deleted and replaced with an antibiotic-resistance gene (Baba et al., 2006). The marked deletion allele was transferred into W3110 by P1 transduction (Miller, 1972). The antibiotic gene was removed as described which generated an in-frame deletion (Datsenko and Wanner, 2000).
 
-## Media and growth conditions
+**Table 3.**
+ Strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Genotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BLS77</td>
+      <td>W3110 ∆puuR::cat</td>
+      <td>Schneider and Reitzer, 2012</td>
+    </tr>
+    <tr>
+      <td>BLS80</td>
+      <td>W3110 ∆puuA::cat</td>
+      <td>Schneider and Reitzer, 2012</td>
+    </tr>
+    <tr>
+      <td>BLS88</td>
+      <td>W3110 ∆patA ∆puuA</td>
+      <td>Schneider and Reitzer, 2012</td>
+    </tr>
+    <tr>
+      <td>CP2</td>
+      <td>W3110 ∆patA</td>
+      <td>Schneider and Reitzer, 2012</td>
+    </tr>
+    <tr>
+      <td>IM26</td>
+      <td>W3110 ∆speB::kan fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM27</td>
+      <td>W3110 ∆speE::kan fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM28</td>
+      <td>W3110 ∆speF::cat fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM29</td>
+      <td>W3110 ∆speC::kan fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM34</td>
+      <td>W3110 ∆speC ∆speF::cat fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM60</td>
+      <td>W3110 ∆cadA::kan fliC-lacZ</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM61</td>
+      <td>W3110 ∆speA::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM62</td>
+      <td>W3110 ∆patA ∆puuA ∆speE::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM63</td>
+      <td>W3110 ∆potE::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM64</td>
+      <td>W3110 ∆potF::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM65</td>
+      <td>W3110 ∆plaP::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>IM66</td>
+      <td>W3110 ∆puuP::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>J15</td>
+      <td>W3110 ΔspeB ΔfliC::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA1</td>
+      <td>W3110 ∆fliC::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA2</td>
+      <td>W3110 ∆fimA::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA3</td>
+      <td>W3110 ∆fliC ∆fimA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA4</td>
+      <td>W3110 ∆hns::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA5</td>
+      <td>W3110 ∆ihfA::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SA6</td>
+      <td>W3110 ∆lrp::kan</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>W3110-LR referred to as W3110</td>
+      <td>lacIqlacL8</td>
+      <td>Lab strain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media and growth conditions
 
 For P1 transductions and plasmid transformation experiments, cells were grown in standard LB liquid medium (1% tryptone, 1% NaCl, and 0.5% yeast extract, pH 7.0) at 37°C. Antibiotics were used for selection at concentrations of 25 µg/mL (both chloramphenicol and kanamycin). For growth analysis, bacteria were grown in a liquid motility medium (0.5% glucose, 1% tryptone, and 0.25% NaCl) which we refer to as GT medium. Starter cultures (typically 6–12 hr incubation) were grown in GT medium, harvested by centrifugation, washed twice with phosphate-buffered saline, and re-suspended in GT medium before inoculation. The cells were then grown at 37 °C in aerobic conditions (shaking at 240 rpm) and the turbidity was measured every 30 min. Cell growth was measured in Klett units using a Scienceware Klett colorimeter with a KS-54 filter. 100 Klett units represent an OD600 value of about 0.7.
 
-## Surface motility assay
+### Surface motility assay
 
 For a standard surface motility assay, single colonies from fresh plates (streaked out from frozen stocks a day before) were inoculated in GT medium for 6 hr at 37 °C in aerobic conditions (shaking at 240 rpm). 30 ml of autoclaved GT medium with 0.45% agar (Eiken, Tokyo, Japan) was poured into a sterile polystyrene petri dish (100 mm × 15 mm) and allowed to solidify at room temperature for approximately 6 hr. Then, 1 µL of the pre-motility growth medium was inoculated at the center of the agar plate and incubated at 33°C for 36 hr. Each experiment was performed in triplicate and pictures were taken after 36 hr. Surface motility was extremely sensitive to humidity. Opening the incubator before 36 hr resulted in movement cessation. The surface motility assay was performed at 33 °C because results from incubations at 37°C were highly variable and the cultures more frequently generated genetically stable fast-moving variants.
 
-## Swim assay
+### Swim assay
 
 The media and culturing for swimming motility are identical to that for surface motility, except that the plates contained 0.25% agar and were solidified at room temperature for about 1 hr before inoculation. Then, 1 µL of the culture was stabbed in the center of this swim agar plate and incubated at 33°C for 20 hr. Each experiment was performed in triplicate.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Cells from surface motility plates were collected and fixed with 2.5% glutaraldehyde. Bacteria were absorbed onto Foamvar carbon-coated copper grids for 1 min. Grids were washed with distilled water and stained with 1% phosphotungstic acid for 30 s. Washed and stained grids were dried at 37 °C for 10 min. Samples were viewed on a JEOL 1200 EX transmission electron microscope at the University of Texas Southwestern Medical Center (Figure 2) and the University of Texas at Dallas (Figure 8).
 
-## ELISA analysis
+### ELISA analysis
 
 Cells were grown overnight in 5 mL GT media followed by a 2 hr growth in GT media with 0.0, 0.1, 1.0, or 4.0 mM putrescine. Cells were then lysed using a 24-gauge needle. The cell lysate was diluted to a concentration of 1 mg/mL protein (based on A280) in pH 9.6 coating buffer (3 g Na2CO3, 6 g NaHCO3, 1000 mL distilled water) and then coated onto the walls of a 96-well plate by incubating overnight at 4 °C. The wells were rinsed three times with PBS and further blocked using coating buffer with 1% bovine albumin overnight at 4 °C. The following day, wells were rinsed three times with PBS, and primary antibodies to FimA or RpoD were added following supplier directions. After a 2 hr room temperature incubation, secondary antibodies conjugated to HRP were added and incubated for a further 2 hr. HRP was activated using the TMB substrate kit (Thermo-34021) following the provided protocol. Expression was read on a BioTek plate reader based on the provided kit protocol. Data was blanked to wells only treated with bovine albumin and then normalized to RpoD. Data was generated from technical and biological triplicates.
 
-## DNA isolation and genome assembly and annotation for W3110
+### DNA isolation and genome assembly and annotation for W3110
 
 DNA was isolated based on previously established protocols (Hogins et al., 2023b). Short reads were sequenced at the SeqCenter (Pittsburgh, Pennsylvania) using Illumina tagmentation-based and PCR-based DNA prep and custom IDT indices targeting inserts of 280 bp without further fragmentation or size selection steps. The Illumina NovaSeq X Plus sequencer was run producing 2×151 paired-end reads. Demultiplexing, quality control, and adapter trimmer were performed with bcl-convert (v4.2.4). Total Illumina Reads (R1+R2): 4059078 with 553087045 bps >Q30.
 
@@ -171,18 +903,18 @@ Long reads were prepared using the PCR-free Oxford Nanopore Technologies ligatio
 
 To generate the completed genome, porechop (v0.2.4) was used to trim residual adapter sequences from long reads. Flye (v2.9.2) was used to generate the de novo assembly under the nano-hq model. Reads longer than the estimated N50 based on a genome size of 6Mbp initiated the assembly. Subsequent polishing using the short read data was performed using Pilon (v1.24) (RRID:SCR_014731) under default parameters. Long-read contigs with an average short-read coverage of 15 X or less were removed from the assembly. The assembled contig was confirmed to be circular via circulator (v1.5.5). Annotation was performed using prokka (v 1.14.6). Finally, statistics were recorded using QUAST (v5.2.0). The final genome contained 1 contig of 4750347 bp with a sequencing depth of 123.92 x. The N50 was 4750347. This genome can be accessed via the accession number CP165600 or via the BioProject PRJNA1142534 via NCBI. The completed genome has an estimated average nucleotide identity of 99.9694 to the W3110 genome deposited to NCBI (genome assembly ASM1024v1).
 
-## RNA isolation and quality control
+### RNA isolation and quality control
 
 Cells were grown for 2 hr in 1 mL GT media. 60 µL were then added to 1 mL of fresh GT, with or without 1 mM putrescine, and grown for another 2 hr. After growth, the cells were centrifuged, and frozen at –80 °C. The isolation and analysis protocol has been previously published (Hogins et al., 2023a). Cell pellets were thawed, resuspended in 0.7 mL of buffer RLT (Qiagen RNeasy kit), and mechanically lysed using a bead beater (FastPrep-24 Classic from MP Biomedical (RRID:SCR_013308)) set at the highest setting for three 45 s cycles with a 5 min rest period on ice between cycles. Cell lysates were used to isolate RNA using a Qiagen RNeasy mini kit. RNA was quantified, DNase treated, and re-quantified on a nanodrop. RNA that passed the first quality check was analyzed on RNA-IQ (Qubit). RNA with an IQ higher than 7.5 was used. RNA that passed both checks was run on an agarose gel to check for RNA integrity. RT-qPCR was used to ensure there was no DNA contamination. RNA libraries that passed all these quality checks were submitted to the genomics core facility at The University of Texas at Dallas for RNA sequencing. The core performed rRNA removal (RiboMinus Transcriptome Isolation Kit or RiboCop bacterial rRNA depletion—Lexogen), library preparation (Stranded Total RNA Prep—Illumina), and single-end Illumina sequencing.
 
-## Reverse transcription quantitative PCR
+### Reverse transcription quantitative PCR
 
 RNA was isolated as described above. One microgram of RNA was reverse transcribed using LunaScript RT Super Mix (NEB E3010) and another microgram was subjected to the same reaction as the reverse transcribed RNA, except without reverse transcriptase (negative control) following manufacturer instructions. The cDNA was then diluted to 10 ng/µL for qPCR. PCR reactions were composed of 10 ng cDNA, 8 µL of nuclease-free water, 10 nM primers (rpoD: Forward: TCGTGTTGAAGCAGAAGAAGCG; Reverse: TCGTCATCGCCATCTTCTTCG) (fimA: Forward: ATGGTGGGACCGTTCACTTT; Reverse: GGCAACAGCGGCTTTAGATG), and PowerUp SYBR Green 2 X master mix for qPCR (ThermoFisher A25777) in a 20 µL reaction. A Quantstudio 3 qPCR machine was used to generate critical threshold (Ct) values. The Ct values were then analyzed using the 2-ΔΔCT method (Livak and Schmittgen, 2001) using rpoD as a library control.
 
-## RNAseq analysis
+### RNAseq analysis
 
 Transcripts were aligned to the W3110 genome and CDS (CP165600) available on NCBI using the CLC genomics workbench (Qiagen version 22.00) for RNA-seq analysis. The gene expression counts generated as this output were used to perform differentially expressed gene (DEG) analysis using EdgeR (version 3.38.4) (RRID:SCR_012802) to analyze read counts (McCarthy et al., 2012; Robinson et al., 2010). DEGs had an adjusted p-value of less than 0.05.
 
-## Material availability statement
+### Material availability statement
 
 All strains are available upon request. All mutant alleles are readily accessible via the KEIO mutant collection (Baba et al., 2006).

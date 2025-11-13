@@ -37,7 +37,108 @@ Here, we comprehensively investigate how different processing choices influence 
 
 We introduce the abagen toolbox, an open-access software package designed to streamline processing and preparation of the AHBA for integration with neuroimaging data (Markello et al., 2021c, available at https://github.com/rmarkello/abagen; Markello, 2021b copy archived at swh:1:rev:2aeab5bd0f147fa76b488645e148a1c18095378d). Supporting several workflows, abagen offers functionality for an array of analyses and has already been used in several peer-reviewed publications and preprints (Shafiei et al., 2020; Hansen et al., 2021; Shafiei et al., 2021; Brown et al., 2021; Park et al., 2021; Valk et al., 2021; Zhao et al., 2020; Benkarim et al., 2020; Ding et al., 2021; Park et al., 2020; Lariviere et al., 2020; Martins et al., 2021). The primary workflow, used to generate regional gene expression matrices, integrates 17 distinct processing steps that have previously been employed by research groups throughout the published literature (Table 1). We refer to each unique set of processing choices and parameters as a ‘pipeline’. The following results use abagen to investigate how variable application of these processing steps can impact analyses of AHBA data.
 
-## Processing choices influence transcriptomic analyses
+**Table 1.**
+ Abagen pipeline options.Overview of 17 options to be considered when processing the AHBA data. The Choices column indicates the number of parameters explored in the current report (numerator) and the total number of parameters possible for the given option (denominator). A denominator of $n$ indicates a hypothetically near-infinite parameter space. The Description column gives a brief overview of the processing choice; for more detail refer to the relevant section in Materials and methods: Gene expression pipelines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Choices</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Volumetric or surface atlas</td>
+      <td>2/2</td>
+      <td>Whether to use a volumetric or surface representation of the atlas</td>
+    </tr>
+    <tr>
+      <td>Individualized or group atlas</td>
+      <td>1/2</td>
+      <td>Whether to use individualized donor-specific atlases or a group-level atlas</td>
+    </tr>
+    <tr>
+      <td>Use non-linear MNI coordinates</td>
+      <td>2/2</td>
+      <td>Whether to use updated MNI coordinates provided by alleninf package</td>
+    </tr>
+    <tr>
+      <td>Mirror samples across L/R hemisphere</td>
+      <td>3/4</td>
+      <td>Whether to mirror (i.e., duplicate) samples across hemisphere boundary</td>
+    </tr>
+    <tr>
+      <td>Update probe-to-gene annotations</td>
+      <td>2/2</td>
+      <td>Whether to update probe annotations</td>
+    </tr>
+    <tr>
+      <td>Intensity-based filtering threshold</td>
+      <td>3/n</td>
+      <td>Threshold for intensity-based filtering of probes</td>
+    </tr>
+    <tr>
+      <td>Inter-areal similarity threshold</td>
+      <td>1/n</td>
+      <td>Threshold for removing samples with low inter-areal correspondence</td>
+    </tr>
+    <tr>
+      <td>Probe selection method</td>
+      <td>6/8</td>
+      <td>Method by which to select which probe(s) should represent a given gene</td>
+    </tr>
+    <tr>
+      <td>Donor-specific probe selection</td>
+      <td>3/3</td>
+      <td>How specified probe selection should integrate data from different donors</td>
+    </tr>
+    <tr>
+      <td>Missing data method</td>
+      <td>2/3</td>
+      <td>How to handle when brain regions are not assigned expression data</td>
+    </tr>
+    <tr>
+      <td>Sample-to-region matching tolerance</td>
+      <td>3/n</td>
+      <td>Distance tolerance for matching tissue samples to atlas brain regions</td>
+    </tr>
+    <tr>
+      <td>Sample normalization method</td>
+      <td>3/10</td>
+      <td>Method for normalizing tissue samples (across genes)</td>
+    </tr>
+    <tr>
+      <td>Gene normalization method</td>
+      <td>3/10</td>
+      <td>Method for normalizing genes (across tissue samples)</td>
+    </tr>
+    <tr>
+      <td>Normalize only matched samples</td>
+      <td>2/2</td>
+      <td>Whether to perform gene normalization for all versus matched samples</td>
+    </tr>
+    <tr>
+      <td>Normalizing discrete structures</td>
+      <td>2/2</td>
+      <td>Whether to perform gene normalization within structural classes</td>
+    </tr>
+    <tr>
+      <td>Sample-to-region combination method</td>
+      <td>2/2</td>
+      <td>Whether to aggregate tissue samples in regions within or across donors</td>
+    </tr>
+    <tr>
+      <td>Sample-to-region combination metric</td>
+      <td>2/2</td>
+      <td>Metric for aggregating tissue samples into atlas brain regions</td>
+    </tr>
+  </tbody>
+</table>
+
+### Processing choices influence transcriptomic analyses
 
 To understand how choices made during the processing of AHBA data impact downstream analyses, we enumerated 17 decision points (i.e. processing steps or options) that have been modified and used in the literature (Table 1). From these 17 steps we implemented 746,496 distinct processing pipelines, where each pipeline parcellated microarray expression from the AHBA with the Desikan-Killiany atlas (Desikan et al., 2006) to generate a unique brain region-by-gene expression matrix.
 
@@ -45,51 +146,51 @@ Analyses of expression data from the AHBA can be grouped into one of three broad
 
 To examine how differences in processing choices may impact both the expression matrices generated from the different pipelines and derived statistical estimates we ran one analysis from each of these classes on the matrices generated by each processing pipeline. Notably, these analyses are either direct reproductions or variations of analyses that have been previously published (Arnatkeviciute et al., 2019; Oldham et al., 2008; Hawrylycz et al., 2012; Burt et al., 2018). Although there is no ground truth for any of these analyses, findings from previous work offer some context for interpreting the observed results (i.e. data from other species and other modalities; Lau et al., 2021). Nonetheless, we primarily focus on highlighting the potential variability resulting from different processing pipelines.
 
-## Correlated gene expression (CGE)
+#### Correlated gene expression (CGE)
 
 First, we separately correlated the rows of each expression matrix to generate symmetric region × region ‘correlated gene expression’ matrices, indicating the similarity of gene expression profiles between different brain regions (Figure 1a). Previous work in other species has reliably observed that transcriptional similarity in the brain decays with increasing separation distance (Fulcher et al., 2019; Lau et al., 2021). This distance-dependent relationship is an expected feature due to the functional specialization of brain regions, and is consistent with other imaging-derived phenotypes in humans (Roberts et al., 2016; Goulas et al., 2019; Betzel and Bassett, 2018; Mišić et al., 2014; Shafiei et al., 2020; Horvát et al., 2016). We assessed this relationship by extracting the upper triangle of the correlated gene expression matrices and correlating them with the upper triangle of a regional distance matrix, derived by computing the average Euclidean distance between brain region centroids in the Desikan-Killiany atlas (Figure 1a, left panel). Although previous work has highlighted that this relationship is exponential (Arnatkeviciute et al., 2019), we computed the Spearman correlation as both statistics should exhibit similar variability across pipelines and the latter is less computationally expensive.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72129/elife-72129-fig1-v2.jpg)
 
-**Figure 1.:** (a) Examples of the three analyses used to assess differences in gene expression matrices generated by transcriptomic pipelines. First row: a depiction of the region-by-gene expression matrix generated from one of the 746,496 tested processing pipelines. Second row, left: we compute the correlation between rows of each matrix to generate a symmetric region × region CGE matrix. We then compute the correlation between the upper triangle of this CGE matrix and the upper triangle of a regional distance matrix to examine the degree to which CGE decays with increasing distance between regions (Arnatkeviciute et al., 2019). Second row, middle: we compute the Euclidean distance between columns of each matrix to generate a gene × gene GCE matrix. We use previously defined functional gene communities (Oldham et al., 2008) to compute a silhouette score for this GCE matrix to investigate whether genes within a module have more similar patterns of spatial expression than genes between modules. Second row, right: the first principal component is extracted from the RGE matrix. We compute the correlation between this principal component and the whole-brain T1w/T2w ratio (Burt et al., 2018) to understand how closely these maps covary across the brain. (b) The full statistical distributions from each of the three analyses for all 746,496 pipelines. Left panel: Spearman correlation values, , from the CGE analyses. Middle panel: silhouette scores from the GCE analyses. Right panel: Spearman correlation coefficients, ρ, from the RGE analyses. CGE: correlated gene expression; GCE: gene co-expression; RGE: regional gene expression.ρ
+**Figure 1.:** (a) Examples of the three analyses used to assess differences in gene expression matrices generated by transcriptomic pipelines. First row: a depiction of the region-by-gene expression matrix generated from one of the 746,496 tested processing pipelines. Second row, left: we compute the correlation between rows of each matrix to generate a symmetric region × region CGE matrix. We then compute the correlation between the upper triangle of this CGE matrix and the upper triangle of a regional distance matrix to examine the degree to which CGE decays with increasing distance between regions (Arnatkeviciute et al., 2019). Second row, middle: we compute the Euclidean distance between columns of each matrix to generate a gene × gene GCE matrix. We use previously defined functional gene communities (Oldham et al., 2008) to compute a silhouette score for this GCE matrix to investigate whether genes within a module have more similar patterns of spatial expression than genes between modules. Second row, right: the first principal component is extracted from the RGE matrix. We compute the correlation between this principal component and the whole-brain T1w/T2w ratio (Burt et al., 2018) to understand how closely these maps covary across the brain. (b) The full statistical distributions from each of the three analyses for all 746,496 pipelines. Left panel: Spearman correlation values, $ρ$, from the CGE analyses. Middle panel: silhouette scores from the GCE analyses. Right panel: Spearman correlation coefficients, $ρ$, from the RGE analyses. CGE: correlated gene expression; GCE: gene co-expression; RGE: regional gene expression.
 
-## Gene co-expression (GCE)
+#### Gene co-expression (GCE)
 
 For the second type of analysis we separately correlated the columns of each expression matrix to generate gene × gene ‘co-expression’ (GCE) matrices, indicating the similarity in spatial expression patterns between all pairs of genes (Figure 1a). A significant body of research has shown that genes tend to form functional communities, exhibiting synchronized expression patterns across space and time (Oldham et al., 2008), such that gene co-expression patterns tend to be more similar within than between such communities. Here, we obtained a set of gene community assignments derived for the brain from a previously studied human transcriptomic dataset (Oldham et al., 2008). We used these community assignments to calculate a silhouette score (Rousseeuw, 1987) for the gene co-expression matrices generated by each pipeline, measuring how well these communities represented the derived co-expression patterns (Figure 1a, middle panel).
 
-## Regional gene expression (RGE)
+#### Regional gene expression (RGE)
 
 For the third type of transcriptomic analysis, we focused on regional correlations between gene expression measures and an MRI-derived phenotype. Our regional expression measure was defined by computing the first principal component of the region-by-gene expression matrix, representing the axis of maximum spatial variation of gene expression in the brain observed under a given AHBA processing pipeline. As gene expression fundamentally shapes the structure and function of the human brain, it is likely that this principal component may exhibit similar spatial variability to other imaging-derived measures. Recent work has highlighted that the T1w/T2w ratio is a robust phenotype that exhibits patterns of regional variation consistent with other microstructural and functional properties (Gao et al., 2020; Burt et al., 2018; Demirtaş et al., 2019; Fulcher et al., 2019). We therefore correlated the first principal component of gene expression with the whole-brain T1w/T2w ratio (Figure 1a, right panel), measuring the extent to which these values covary across the cortex.
 
-## Pipeline distributions
+#### Pipeline distributions
 
 Results from these three analyses reveal that choice of processing pipeline dramatically influences derived statistical estimates (i.e. the CGE-distance correlation, the gene co-expression silhouette score, and the spatial correlations between gene PC1 and whole-brain T1w/T2w ratio; Figure 1b). We observe that all three of the generated distributions of statistical estimates across the 746,496 pipelines have wide ranges (correlated gene expression: [-0.51,–0.13]; gene co-expression: [-0.78,–0.18]; regional gene expression: [0.00, 0.90]) and are either bimodal (Figure 1b, left/middle panels) or heavily skewed (Figure 1b, right panel).
 
-Since there is no ground truth for these analyses we cannot quantitatively assess whether some pipelines are more or less accurate than others. However, there is strong qualitative evidence to suggest that correlated gene expression should be lower between brain regions that are farther apart (Arnatkeviciute et al., 2019; Krienen et al., 2016; Richiardi et al., 2015; Fulcher et al., 2019; Lau et al., 2021). It is notable, then, that the distribution of distance-dependent estimates is so strongly bimodal (splitting at r≈-0.4), suggesting two very different perspectives on the size of this effect (Figure 1a and b, left panels). As increasingly-detailed single-cell transcriptional data become available (e.g. Yao et al., 2021) we may be able to use these estimates to determine accuracy; for now, we simply note that even for this estimate with strong biological priors we see considerable variability.
+Since there is no ground truth for these analyses we cannot quantitatively assess whether some pipelines are more or less accurate than others. However, there is strong qualitative evidence to suggest that correlated gene expression should be lower between brain regions that are farther apart (Arnatkeviciute et al., 2019; Krienen et al., 2016; Richiardi et al., 2015; Fulcher et al., 2019; Lau et al., 2021). It is notable, then, that the distribution of distance-dependent estimates is so strongly bimodal (splitting at $r≈-0.4$), suggesting two very different perspectives on the size of this effect (Figure 1a and b, left panels). As increasingly-detailed single-cell transcriptional data become available (e.g. Yao et al., 2021) we may be able to use these estimates to determine accuracy; for now, we simply note that even for this estimate with strong biological priors we see considerable variability.
 
-Similar variability can be observed for the other two analyses. While all the pipelines demonstrate relatively poor fit of gene communities to the derived gene co-expression matrices (refer to Materials and methods: Analytic approaches for information on why this is not unexpected), we observe that a portion of the pipelines yield far worse correspondence (Figure 1a and b, middle panels). Moreover, while the correlations between gene PC1 and whole-brain T1w/T2w ratio are largely consistent across pipelines, there are a small group of pipelines that yield correlations that deviate by ρ≈1.0. Notably, the parameter choices for these pipelines are not pathological—that is, their use could be justified—and, as we discuss later (see Results: Variability in parameter importance), modifying just one parameter setting can yield changes in effect sizes within this range.
+Similar variability can be observed for the other two analyses. While all the pipelines demonstrate relatively poor fit of gene communities to the derived gene co-expression matrices (refer to Materials and methods: Analytic approaches for information on why this is not unexpected), we observe that a portion of the pipelines yield far worse correspondence (Figure 1a and b, middle panels). Moreover, while the correlations between gene PC1 and whole-brain T1w/T2w ratio are largely consistent across pipelines, there are a small group of pipelines that yield correlations that deviate by $ρ≈1.0$. Notably, the parameter choices for these pipelines are not pathological—that is, their use could be justified—and, as we discuss later (see Results: Variability in parameter importance), modifying just one parameter setting can yield changes in effect sizes within this range.
 
 Collectively, we find that for all three of these analyses there is substantial variability in the statistical estimates generated by different processing pipelines, and this variability is large enough that, across pipelines, it has a meaningful difference in the potential inferences and conclusions that can be drawn.
 
-## Variability in parameter importance
+### Variability in parameter importance
 
 Next, we quantified the relative importance of different processing steps and parameters on our three derived statistical estimates. While researchers must ultimately make choices for each of the steps individually when processing AHBA data, we wanted to investigate whether unique choices have distinct influences. Moreover, which parameters are most important may differ based on the type of analysis performed.
 
-We investigated parameter importance by calculating a distribution of difference scores for each parameter, measuring the extent to which changing each parameter—holding all other parameters constant—influences the derived statistical metrics from each of the three analyses. For example, given a processing parameter with two choices this procedure yielded a distribution of N/2 difference scores per analysis, where N is the total number of pipelines (i.e. 746,496/2=373,248). We averaged these distributions separately for each analysis to generate a single, summary ‘impact score’ for each processing step, which we then rank-ordered independently for each analysis.
+We investigated parameter importance by calculating a distribution of difference scores for each parameter, measuring the extent to which changing each parameter—holding all other parameters constant—influences the derived statistical metrics from each of the three analyses. For example, given a processing parameter with two choices this procedure yielded a distribution of $N/2$ difference scores per analysis, where $N$ is the total number of pipelines (i.e. $746,496/2=373,248$). We averaged these distributions separately for each analysis to generate a single, summary ‘impact score’ for each processing step, which we then rank-ordered independently for each analysis.
 
 We find considerable agreement in which parameters are the most impactful across analyses (Figure 2a): the most influential processing steps often involve procedures that influence the gene normalization process in some way (e.g. gene normalization method, normalizing only matched samples; Figure 2b). On the other hand, among the least impactful parameters are choices concerning donor-specific probe selection and handling of missing data. It is worth noting that of the probe selection methods tested in the current manuscript (i.e. max intensity, correlation intensity, correlation variance, differential stability, RNAseq correlation, and averaging), three of the six all render the choice of donor-specific probe selection redundant. In other words, these three methods are mutually exclusive with choice of donor-specific probe selection, potentially confounding our ability to measure the real influence of this parameter. We also highlight that choice of atlas may influence the impact of missing data handling: since the Desikan-Killiany atlas is a relatively low-resolution atlas (68 nodes), expression matrices generated from the tested pipelines are missing, at most, data for two brain regions. It is possible that handling of missing data may be more important when higher-resolution parcellations are employed. That is, while some parameters do not appear to affect our results in aggregate, there are potentially specific research questions where these parameters could play an important and impactful role.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72129/elife-72129-fig2-v2.jpg)
 
-**Figure 2.:** (a) Rank of the relative importance for each parameter (-axis) across all three analyses (y-axis). Warmer colors indicate parameters that have a greater influence on statistical estimates. (xb) Statistical distributions from the three analyses, shown as kernel density plots, separated by choice of gene normalization method (the most impactful parameter as shown in panel a). (c) Density plots of the statistical estimates for all 746,496 pipelines shown along the first two principal components, derived from the 746,496 (pipeline) x 3 (statistical estimates) matrix, representing how different the statistical estimates from each of the three analyses are relative to other pipelines. Left panel: pipelines are colored based on choice of gene normalization method, where each color represents 1/3 of the pipelines. Here, the pipelines in which no normalization was applied (purple) are distinguished from those in which some form of normalization was applied (blue and brown). Right panel: pipelines are colored based on whether gene normalization was performed within (True, red) or across (False, purple) structural classes (i.e. cortex, subcortex/brainstem, cerebellum; see Materials and methods: Gene expression pipelines for more information).
+**Figure 2.:** (a) Rank of the relative importance for each parameter ($y$-axis) across all three analyses ($x$-axis). Warmer colors indicate parameters that have a greater influence on statistical estimates. (b) Statistical distributions from the three analyses, shown as kernel density plots, separated by choice of gene normalization method (the most impactful parameter as shown in panel a). (c) Density plots of the statistical estimates for all 746,496 pipelines shown along the first two principal components, derived from the 746,496 (pipeline) x 3 (statistical estimates) matrix, representing how different the statistical estimates from each of the three analyses are relative to other pipelines. Left panel: pipelines are colored based on choice of gene normalization method, where each color represents 1/3 of the pipelines. Here, the pipelines in which no normalization was applied (purple) are distinguished from those in which some form of normalization was applied (blue and brown). Right panel: pipelines are colored based on whether gene normalization was performed within (True, red) or across (False, purple) structural classes (i.e. cortex, subcortex/brainstem, cerebellum; see Materials and methods: Gene expression pipelines for more information).
 
 To investigate those parameters that did play an influential role in the current analyses, we visualized their impact by examining the statistical distributions from each analysis separated by the different parameter choices (shown in Figure 2b for gene normalization method). Dividing the distributions in this way highlights how strongly parameter choice can influence the outcomes of the analyses: for example, when no gene normalization is employed the resulting estimates are dramatically shifted from those generated by pipelines that employed some form of normalization (Figure 2b; no normalization: purple distribution). Indeed, the bimodality and skew observed in the full statistical distributions for the analyses (Figure 1b) is almost entirely explained by this single parameter choice.
 
-To investigate more qualitative differences in how parameter choice influences the processing pipelines we performed a principal component analysis (PCA) on the matrix of statistical estimates from the three analyses (i.e. the 746,496×3 pipeline-by-analysis matrix). We extracted the first two principal components from the statistical estimate matrix (variance explained: PC1 = 70%, PC2 = 26%) and examined how pipeline scores were distributed along these axes (Figure 2c). Delineating the distribution of pipelines based on parameter choice underscores how these options impact the separability of resulting statistical estimates. Reinforcing results presented above, we find that the choice of gene normalization method distinguishes the one-third of pipelines with no normalization (purple) from the remaining two-thirds that applied some form of normalization (blue and brown; Figure 2c, left). It is clear from the distribution of pipelines, however, that other processing choices interact with this parameter. For example, plotting the pipelines by whether the gene normalization was performed separately on samples within each structural class (i.e. cerebral cortex, subcortex, cerebellum) rather than across all tissue samples further delineates the pipelines that applied gene normalization into two distinct clusters (Figure 2c, right).
+To investigate more qualitative differences in how parameter choice influences the processing pipelines we performed a principal component analysis (PCA) on the matrix of statistical estimates from the three analyses (i.e. the $746,496\times3$ pipeline-by-analysis matrix). We extracted the first two principal components from the statistical estimate matrix (variance explained: PC1 = 70%, PC2 = 26%) and examined how pipeline scores were distributed along these axes (Figure 2c). Delineating the distribution of pipelines based on parameter choice underscores how these options impact the separability of resulting statistical estimates. Reinforcing results presented above, we find that the choice of gene normalization method distinguishes the one-third of pipelines with no normalization (purple) from the remaining two-thirds that applied some form of normalization (blue and brown; Figure 2c, left). It is clear from the distribution of pipelines, however, that other processing choices interact with this parameter. For example, plotting the pipelines by whether the gene normalization was performed separately on samples within each structural class (i.e. cerebral cortex, subcortex, cerebellum) rather than across all tissue samples further delineates the pipelines that applied gene normalization into two distinct clusters (Figure 2c, right).
 
 These results reveal how different processing steps are grouped in terms of their importance to analyses of the AHBA, with some groups demonstrating greater potential impact. Broadly, parameters modifying normalization are the most important, followed by parameters influencing how tissue samples are matched to brain regions, and finally parameters impacting probe selection. Moreover, we find that choices within each processing step do not all have an equivalent impact on derived estimates (i.e. performing no gene normalization has a much greater influence than choosing between the two other forms of normalization tested).
 
-## Reproducing published analyses
+### Reproducing published analyses
 
 The previous subsections demonstrate variability across the complete range of reasonable processing pipelines; however, many of these pipelines have not yet been used in practice. To investigate whether the subset of pipelines that have already been implemented in the published literature display similar variability, we used abagen to reproduce the processing procedures from nine peer-reviewed articles that (1) are highly-cited within the field, (2) highlight a wide range of processing options, and (3) sufficiently describe their processing pipelines such that they could be reproduced. We explored how different the gene expression values and statistical outcomes generated by these published pipelines were (Hawrylycz et al., 2015; French and Paus, 2015; Whitaker et al., 2016; Krienen et al., 2016; Anderson et al., 2018; Burt et al., 2018; Romero-Garcia et al., 2018; Anderson et al., 2020b; Liu et al., 2020). To ensure comparability, we standardized the choice of brain parcellation across pipelines, using the Desikan-Killiany atlas in all instances. The pipelines were used to generate nine region-by-gene expression matrices, which were then subjected to the same three analyses described previously.
 
@@ -101,7 +202,7 @@ In reproducing the pipelines we note important differences in processing paramet
 
 Given that imaging transcriptomics is still relatively new and there has been limited work addressing best practices in the field (Arnatkeviciute et al., 2019), these results stress the importance of standardization in use of the AHBA among research groups. Although variation in processing can ostensibly lead to similar inferences in specific analyses, even minor differences in processing choices consistently yield measurable discrepancies in derived expression data. Without proper standardization, these differences will compound and become more problematic as the field continues to grow.
 
-## Standardized processing and reporting with the abagen toolbox
+### Standardized processing and reporting with the abagen toolbox
 
 Across all of our analyses we find that choice of processing steps and parameters can have a strong influence on the statistical outcomes of research with the AHBA. Here, we briefly highlight features that we have integrated into the abagen toolbox to facilitate standardization in future research.
 
@@ -145,139 +246,143 @@ Altogether, the current report highlights the problem of processing variability 
 
 ## Materials and methods
 
-## Code and data availability
+### Code and data availability
 
 All code used for data processing, analysis, and figure generation is available on GitHub (https://github.com/netneurolab/markello_transcriptome; Markello, 2021a copy archived at swh:1:rev:3abbc85596a5baacd93e5e9e56c906c9dbb080f3)and directly relies on the following open-source Python packages: IPython (Perez and Granger, 2007), Jupyter (Kluyver et al., 2016), Matplotlib (Hunter, 2007), NiBabel (Brett et al., 2019), NumPy (Oliphant, 2006; van der Walt et al., 2011; Harris et al., 2020), Pandas (McKinney, 2010), PySurfer (Waskom et al., 2020), Scikit-learn (Pedregosa et al., 2011), SciPy (Virtanen et al., 2020), and Seaborn (Waskom et al., 2018).
 
-## Data
+### Data
 
-## Allen human brain atlas
+#### Allen human brain atlas
 
 The Allen Human Brain Atlas (AHBA) is an open-access online resource containing whole-brain microarray gene expression data obtained from post-mortem tissue samples of six adult human donors (https://human.brain-map.org; Allen Institute for Brain Science, 2013; Hawrylycz et al., 2012). Expression data for over 20,000 genes were sampled from 3702 distinct tissue samples across the six donors (one female, ages 24–57), providing the most spatially comprehensive assay of gene expression in the human brain. Normalized microarray expression data were downloaded for all six donors; RNAseq data were downloaded for the two donors with relevant data.
 
-## Human connectome project
+### Human connectome project
 
 Group-averaged T1w/T2w (a proxy for intracortical myelin) data were downloaded from the S1200 release of the Human Connectome Project (HCP; Van Essen et al., 2013) and used without further processing.
 
-## Brain parcellations
+### Brain parcellations
 
 All analyses were performed with the Desikan-Killiany atlas (DK; 68 cortical nodes), an anatomical parcellation generated by delineating regions based on gyral boundaries (Desikan et al., 2006). To explore the impact of volumetric- versus surface-based parcellations we used a version of the DK atlas in (1) volumetric MNI152, and (2) surface fsaverage5 space; both versions are provided directly with the abagen toolbox. To facilitate comparison between volumetric- and surface-based parcellations, samples from the cerebellum, subcortex and brainstem were omitted.
 
-## The abagen toolbox
+### The abagen toolbox
 
 Source code for abagen is available on GitHub (https://github.com/rmarkello/abagen) and is provided under the three-clause BSD license (https://opensource.org/licenses/BSD-3-Clause). We have integrated abagen with Zenodo, which generates unique digital object identifiers (DOIs) for each new release of the toolbox (e.g. https://doi.org/10.5281/zenodo.3451463). Researchers can install abagen as a Python package via the PyPi repository (https://pypi.org/project/abagen/), and can access comprehensive online documentation via ReadTheDocs (https://abagen.readthedocs.io/).
 
-## Gene expression pipelines
+### Gene expression pipelines
 
 Most neuroimaging analyses using the AHBA must first convert the ‘raw’ data into a pre-processed brain region-by-gene expression matrix. To investigate the extent to which different processing procedures might impact downstream analyses, we used abagen to modify 17 distinct processing steps in the generation of region-by-gene matrices from the original AHBA data. Each unique set of these 17 processing choices and parameters constitutes a pipeline, yielding 746,496 unique pipelines. Here, we describe in detail the 17 processing steps and respective methods for each option that we examined in our analyses (refer to Table 1 for a summary overview of these choices or refer to the abagen documentation for implementation details; https://abagen.readthedocs.io).
 
-## Volumetric or surface atlas
+### Volumetric or surface atlas
 
 Aggregation of tissue samples from the AHBA into discrete brain regions requires researchers to supply an atlas (or parcellation). There are many brain atlases available for use; however, they typically exist in one of two forms: defined (1) in 3D ‘volumetric’ space, or (2) in ‘surface’ space on a 2D representation of the cortical sheet. Many atlases can exist in both of these formats and so beyond the choice of parcellation, researchers must select which representation to use when processing AHBA samples. Choice of atlas may impact how many and which samples are matched to brain regions. In the current manuscript, we examined a volume- and surface-based representation of the Desikan-Killiany atlas (see Materials and methods: Data; Desikan et al., 2006). Note that both versions of the atlas used in the reported analyses are included with the abagen software distribution.
 
-## Individualized or group-level atlas
+### Individualized or group-level atlas
 
 There is growing recognition that brain parcellations derived at the group level tend to obscure individual differences in anatomy or function (e.g. Gordon et al., 2017; Kong et al., 2019; Dickie et al., 2018). Researchers working with the AHBA have thus begun to generate donor-specific parcellations, using individualized atlases to match tissue samples to brain regions. The individualization process can vary dramatically depending on whether researchers are using volumetric or surface atlases and whether they are operating in ‘native’ or standard (i.e. group) space. Because of the immense variability inherent to the individualization process itself, we opted not to explore this parameter in the current manuscript.
 
-## Use non-linear MNI coordinates
+### Use non-linear MNI coordinates
 
 With its initial release the AHBA provided stereotactic coordinates for each tissue sample in MNI space (Fonov et al., 2009; Fonov et al., 2011; Collins et al., 1999); however, two of the six donor brains were scanned in cranio and coordinates were derived using affine registrations to the MNI template, while the remaining four were scanned ex vivo and a non-linear registration was used to generate coordinates. More recently, Gorgolewski et al., 2014 used ANTS (Avants et al., 2011) to perform a standardized, manually corrected non-linear diffeomorphic registration of all the donor brains to MNI space. Analyses collating tissue samples into distinct brain regions often rely on MNI coordinates to match samples to regions, and researchers must choose whether to use the original coordinates provided with the AHBA or the newer, non-linearly generated coordinates. In the current manuscript, we assessed the impact of using (1) the original MNI coordinates and (2) the updated coordinates from Gorgolewski et al., 2014.
 
-## Mirror samples across left-right hemisphere
+### Mirror samples across left-right hemisphere
 
 Only the first two donors included in the AHBA had tissue samples taken from the right hemisphere. Preliminary analyses of these data revealed minimal lateralization of microarray expression, and so samples were collected exclusively from the left hemisphere for the following four donors (Hawrylycz et al., 2012; Hawrylycz et al., 2015). This irregular sampling resulted in limited spatial coverage of expression in the right hemisphere; to resolve this, some researchers have opted to mirror existing tissue samples across the left-right hemisphere boundary (Romero-Garcia et al., 2018). Researchers must decide whether to perform sample mirroring, and, if so, whether they should mirror unilaterally (i.e. only right-to-left or left-to-right) or bilaterally (i.e. both right-to-left and left-to-right). In the current manuscript, we assessed (1) no mirroring, (2) left-to-right mirroring, and (3) bilateral mirroring. The option for mirroring right-to-left was omitted as this is only useful when analyses selectively consider the left hemisphere, not the whole brain.
 
-## Update probe-to-gene annotations
+### Update probe-to-gene annotations
 
 The 60-base-pair probes used to assess microarray expression in the AHBA were annotated with their corresponding gene (or lack thereof) when the data were publicly released. However, as the human reference genome is updated these annotations become increasingly out-of-date. Thus, when researchers choose to use the AHBA data they must decide whether to use the original gene annotations or more recently-generated annotations. In the current manuscript, we assessed using both the original annotations and those generated by Arnatkeviciute et al., 2019.
 
-## Intensity-based filtering threshold
+### Intensity-based filtering threshold
 
 Data from the AHBA are provided with information indicating whether the expression of each microarray probe exceeds the expression levels of background signal. Using this information, researchers can choose to perform an intensity-based filtering procedure wherein probes are only considered if their expression levels are greater than background across a specified percentage of tissue samples. In the current manuscript, we considered three degrees of intensity-based filtering: (1) no filtering (all probes used), (2) 25 % filtering (probes used if they exceeded background for more than 25 % of all samples), and (3) median filtering (probes used if they exceeded background for more than 50 % of all samples).
 
-## Inter-areal similarity threshold
+### Inter-areal similarity threshold
 
 The expression value of some tissue samples in the AHBA differ markedly from all other samples in the dataset. While this could be driven by real spatial variability in expression values throughout the brain, it is also possible that this variability is artifactual. Researchers can opt to assess the inter-areal similarity of tissue samples, quantifying those that differ from the rest by a given threshold, and remove them from consideration. To our knowledge, this processing step has only been implemented in a single research study (Burt et al., 2018), and as such we do not consider it in the current manuscript.
 
-## Probe selection method
+### Probe selection method
 
 The probes used to measure microarray expression levels in the AHBA are often redundant; that is, there are frequently several probes indexing the same gene. Thus, at some point researchers must transition from measuring probe expression levels to measuring gene expression levels. Effectively, this means selecting from or condensing the redundant probes for each gene. There have been at least eight methods proposed in the literature for this process, including selecting a single probe with the (1) max intensity across samples, (2) max variance across samples, (3) highest loading on the first principal components across samples, (4) highest correlation to other probes (or max intensity across samples when only two probes exist), (5) highest correlation to other probes (or max variance across samples when only two probes exist), (6) highest differential stability across donors, (7) highest fidelity to simultaneously-acquired RNAseq data, or (8) simply averaging all probes indexing the same gene. In the current manuscript we only consider six of the most commonly-applied methods (i.e. 1, 4, 5, 6, 7, and 8); the other methods (i.e. 2 and 3) have only been reported in a single research study (Negi and Guda, 2017 and Parkes et al., 2017, respectively) and as such we do not consider them.
 
-## Donor-specific probe selection
+### Donor-specific probe selection
 
 Probe selection (described above) often requires applying some selection criterion to gene expression levels across tissue samples. For these methods, the specified criterion can be measured across donors (i.e. aggregating tissues samples from donors) or independently for each donor. The latter case—performing probe selection independently for each donor—allows for two additional options: (1) using whichever probe is chosen for each donor, even if it differs from the other donors, or (2) using the most-commonly selected probe for all donors. In the current manuscript, we considered all three of these options: (1) aggregating samples across donors, (2) performing probe selection independently for each donor, and (3) using the most commonly-selected probe across donors.
 
-## Missing data method
+### Missing data method
 
 Due to the irregular spatial sampling of data in the AHBA some brain regions may not be assigned any corresponding microarray expression data. Researchers can opt to simply omit these regions from subsequent analyses; however, in some cases, this is not desirable as the spatial distribution of the missing samples may not be random and discarding them may bias resulting estimates. Two options for handling missing data have been proposed in the literature, including filling missing regions with expression data from nearby regions (i.e. nearest-neighbors interpolation; Whitaker et al., 2016), or interpolating data in missing regions based on nearby samples (i.e. linear interpolation; Burt et al., 2018). In the current manuscript, we tested two options: (1) omit brain regions with missing data entirely from subsequent analyses, and (2) fill missing data with expression values using nearest-neighbors interpolation. Linear interpolation has been sparingly used in the published literature (e.g. Burt et al., 2018; Romero-Garcia et al., 2018) and carries an increase in computational cost (approximately an order of magnitude higher than nearest neighbors interpolation); as such, we do not consider it in the current manuscript.
 
-## Sample-to-region matching tolerance
+### Sample-to-region matching tolerance
 
-## Volumetric atlases
+#### Volumetric atlases
 
 While most tissue samples from the AHBA will fall directly within the brain regions delineated by most parcellations, some samples may fall outside the boundaries of these regions. Researchers can nonetheless choose to permit assigning these nearby samples to a given region, but will often set a distance threshold beyond which samples cannot be assigned. In the current manuscript, we considered three distance tolerances: 0 mm (i.e. samples must fall exactly within a region), 1 mm, and 2 mm.
 
-## Surface atlases
+#### Surface atlases
 
 Because tissue samples from the AHBA are defined in volumetric space, matching them to parcels defined on a surface-based atlas requires different considerations than with volumetric atlases. Notably, all samples will have non-zero distances from surface vertices; therefore, when matching to surface atlases distance thresholds are generally considered in terms of standard deviations (Burt et al., 2018; Anderson et al., 2020b). In this way, all samples are matched to the surface and then those that are more than the specified standard deviation(s) above the mean away from the surface are excluded. In the current manuscript we tested three standard deviation distance tolerances: 0 s.d. (i.e. all samples farther than the average distance are excluded), 1 s.d., and 2 s.d.
 
-## Sample normalization method
+### Sample normalization method
 
 Prior to aggregating microarray expression data across donors, researchers can optionally normalize the microarray expression data for each tissue sample across all represented genes (i.e., perform row-wise normalization). This procedure can account for between-sample differences in gene expression potentially driven by measurement errors. There is a number of techniques that have been proposed to normalize expression values; however, in the current manuscript, we considered three normalization methods: (1) no normalization, (2) a z-score transform, and (3) a scaled robust sigmoid transform (Fulcher et al., 2013).
 
-## Gene normalization method
+### Gene normalization method
 
 Prior to aggregating microarray expression data across donors, researchers can optionally normalize the microarray expression data for each represented gene across tissue samples (i.e. perform column-wise normalization). This procedure can account for inter-individual (donor-specific) differences in gene expression data, which remain present in the AHBA despite batch corrections performed by the Allen Institute prior to releasing the data. In the current manuscript, we considered three normalization methods: (1) no normalization, (2) a z-score transform, and (3) a scaled robust sigmoid transform (Fulcher et al., 2013).
 
-## Normalizing only matched samples
+### Normalizing only matched samples
 
 Due to choices in other processing steps (e.g. Volume- or surface-based atlas, Sample-to-region matching tolerance) some tissue samples from the AHBA may not be assigned to any region in a given brain atlas. During gene normalization, where expression from each gene is normalized across tissue samples, researchers must decide whether to use (1) only those tissue samples matched to brain regions, or (2) the entire corpus of tissue samples, irrespective of whether they will be included in the final, processed regional expression matrix. In the current manuscript we consider both of these options.
 
-## Normalizing discrete structures
+### Normalizing discrete structures
 
 There is known variation in gene expression values between tissue samples taken from distinct structural classes (i.e. samples taken from neocortex may have different expression values than those from the brainstem). When performing gene normalization researchers can opt to normalize (1) across all samples irrespective of the structure from which they derive or (2) independently for samples taken from different brain structures. Although the brain atlas used in the current manuscript represents only cortical parcels, this processing choice can interact with Normalizing only matched samples to impact resulting expression values and we therefore test both options.
 
 Note that in the abagen toolbox structural classes are operationalized as: (1) cortex, (2) subcortex and brainstem, (3) cerebellum, and (4) white matter. Subcortex and brainstem are considered as one class because neuroanatomical delineation between these regions are widely contested and expression values in these regions tend to be more similar to one another than to other regions (i.e. data-driven clustering of samples tends to assign subcortical and brainstem samples together).
 
-## Sample-to-region combination method
+### Sample-to-region combination method
 
 Once tissue samples have been assigned to brain regions they need to be combined to generate a single expression profile; however, due to sampling differences between donors, some donors may have more tissue samples assigned to a given brain region than others. Thus, researchers must decide whether to aggregate samples (1) within each brain region independently for each donor and then across donors, or (2) simultaneously across all donors. In the latter case, donors with a higher number of samples matched to a region will contribute more to the expression profile of a given region (Arnatkeviciute et al., 2019). In the current manuscript, we test both of these options.
 
-## Sample-to-region combination metric
+### Sample-to-region combination metric
 
 When aggregating tissue samples into brain regions researchers must decide what aggregation metric they want to use. Although any statistical estimate could be considered, in practice an estimate of central tendency such as the mean expression values across tissue samples is most applicable. In the current manuscript, we test aggregation with both the (1) mean and (2) median.
 
-## Analytic approaches
+### Analytic approaches
 
 Prototypical analyses relying on parcellated microarray expression data from the AHBA fall into three broad categories (Fornito et al., 2019):
 
 In order to examine the interaction between processing options and analytic method, we performed one analysis from each of these three categories, described below, for every output of the 746,496 processing pipelines.
 
-## Correlated gene expression
+### Correlated gene expression
 
 Researchers have reliably found a relationship between correlated gene expression in the brain and the distance between brain regions: that is, brain regions that are farther away from one another tend to have less similar gene expression profiles (Richiardi et al., 2015; Richiardi et al., 2017; Krienen et al., 2016; Vértes et al., 2016; Arnatkeviciute et al., 2019). In order to examine the impact of processing choices on this relationship, we computed the Spearman correlation between the upper triangle of the regional distance matrix (Euclidean distance between brain regions) and the upper triangle of each correlated gene expression matrix (Figure 1a, left). Brain regions for which no gene expression data were available (dependent on pipeline options) were not included in the correlation. Note that this relationship is likely exponential (Arnatkeviciute et al., 2019); however, we calculated the Spearman coefficient as it is more computationally tractable and it should exhibit similar variability across pipelines.
 
-## Gene co-expression
+### Gene co-expression
 
-Researchers have previously shown that gene expression in the brain tends to organize into functionally defined communities or modules (Oldham et al., 2008; Hawrylycz et al., 2012). We examined the extent to which functional gene modules derived from a separate transcriptomic dataset (Oldham et al., 2008) mapped onto the gene co-expression matrices generated from the different processing pipelines. For each gene-by-gene matrix, we calculated the silhouette score (Rousseeuw, 1987) of the gene modules on a modified version of gene co-expression matrix (calculating Euclidean distance between genes instead of gene correlations; Figure 1a, middle) via:s=1N⁢∑i=1Nb⁢(i)-a⁢(i)max⁡{a⁢(i),b⁢(i)}
+Researchers have previously shown that gene expression in the brain tends to organize into functionally defined communities or modules (Oldham et al., 2008; Hawrylycz et al., 2012). We examined the extent to which functional gene modules derived from a separate transcriptomic dataset (Oldham et al., 2008) mapped onto the gene co-expression matrices generated from the different processing pipelines. For each gene-by-gene matrix, we calculated the silhouette score (Rousseeuw, 1987) of the gene modules on a modified version of gene co-expression matrix (calculating Euclidean distance between genes instead of gene correlations; Figure 1a, middle) via:
 
-where a⁢(i) is the average distance of a data point i to all other data points in the same cluster, b⁢(i) is the mean distance of data point i to the nearest neighboring cluster, and N is the total number of data points. The final silhouette score s ranges from –1 to +1, where positive values indicate assortative and negative values indicate disassortative clusters.
+$$
+s=\frac{1}{N}⁢\sumi=1N\frac{b⁢(i)-a⁢(i)}{max⁡{a⁢(i),b⁢(i)}}
+$$
+
+where $a⁢(i)$ is the average distance of a data point $i$ to all other data points in the same cluster, $b⁢(i)$ is the mean distance of data point $i$ to the nearest neighboring cluster, and N is the total number of data points. The final silhouette score $s$ ranges from –1 to +1, where positive values indicate assortative and negative values indicate disassortative clusters.
 
 Note that the original gene modules were defined using a weighted gene co-expression network analysis (WGCNA), which generally requires performing additional processing steps on the gene co-expression matrix. Since we used the raw gene co-expression matrix in the current analysis, we expect lower silhouette scores than those reported in the initial manuscript where the gene communities were initially defined; however, the variance in scores between pipelines should not be significantly impacted by this choice.
 
-## Regional gene expression
+### Regional gene expression
 
 Researchers recently highlighted how the principal component of gene expression in the brain closely mirrors the spatial variation observed in MRI-derived T1w/T2w measurements (typically used as a proxy for myelination; Burt et al., 2018). We examined whether this relationship was present across the outputs of the different pipelines, measuring the Spearman correlation between the T1w/T2w ratio and the first principal component of the regional gene expression matrix (Figure 1a, right). Regional gene expression matrices were mean-centered prior to extraction of the principal component.
 
-## Assessing pipeline impact
+### Assessing pipeline impact
 
 In order to examine the impact of each processing option on the resulting analyses, we calculated a difference score, measuring the extent to which changing each option—holding all other options constant—influenced the derived metrics (i.e. correlation, silhouette score). When there were only two choices for a given option the impact was calculated as the absolute value of the difference between the two choices. When there were more than two choices and choices were ordinal (e.g. sample-to-region matching tolerance) the impact was calculated as the average of the absolute value of the difference between adjacent choices. When there were more than two choices and the choices were categorical (e.g. probe selection method) the impact was calculated as the average of the absolute value of the difference between all combinations of choices. These calculations yielded a distribution of ‘impact’ estimates (i.e. change scores) for each processing option; we represented the final impact score for each processing option as the average of these distributions, taken independently for each of the three analyses. Impact estimates were rank-ordered (where the most impactful parameter was given a rank of one, the second most impactful a rank of two, and so on) to enable direct comparison across the different statistical estimates derived from the three analyses.
 
-## Pipeline dimensionality reduction
+### Pipeline dimensionality reduction
 
 To investigate qualitative differences between the processing pipelines we performed a principal components analysis (PCA) on the matrix of estimates from the three statistical analyses (i.e. the 746,496 × 3 matrix). We mean-centered the columns of the matrix and extracted the first two principal components, examining how pipeline scores were distributed along these two components in relation to different processing options. These principal component highlight the closeness of the estimate generated by each pipeline along the dimensions of maximum statistical variation; that is, two pipelines that are closer together in the reduced-dimension space yielded more similar statistical estimates than two pipelines that are farther apart.
 
-## Reproducing pipelines from the literature
+### Reproducing pipelines from the literature
 
 Although all the processing options explored in the current manuscript are reasonable or viable choices that researchers could make when preparing the AHBA for analysis, in reality these have not all been used in the published literature. In order to examine how pipelines used in the literature compared to those that we assessed, we selected nine articles that relied on data from the AHBA to support a primary research finding and reproduced their processing pipelines in abagen (Hawrylycz et al., 2015; French and Paus, 2015; Whitaker et al., 2016; Krienen et al., 2016; Anderson et al., 2018; Burt et al., 2018; Romero-Garcia et al., 2018; Anderson et al., 2020b; Liu et al., 2020). Note that these articles used a variety of parcellations and so to ensure comparability across pipelines we standardized this parameter, using the Desikan-Killiany atlas in all instances. One parameter that we did not assess in the pipelines explored in the current manuscript—whether to use individualized, donor-specific parcellations or a group-level atlas—was frequently varied in the published pipelines. Thus, when reproducing pipelines that called for individualized volumetric atlases we relied on the donor-specific Desikan-Killiany parcellations provided by Arnatkeviciute et al., 2019; when reproducing pipelines with individualized surface atlases we relied on the donor-specific Desikan-Killiany parcellations provided by Romero-Garcia et al., 2018.
 

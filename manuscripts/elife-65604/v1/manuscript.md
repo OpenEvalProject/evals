@@ -18,6 +18,14 @@ Since the Black Lives Matter movement rose to mainstream prominence, the academi
 
 To estimate the use of the terms blacklist/whitelist and master/slave, I performed searches on the open-access repository Europe PMC which contains millions of biomedical research articles. A search for articles containing blacklist/whitelist returned more than 2,000 articles published in more than 600 journals between 2000 and 2020 (Figure 1), with blacklist appearing more often (1,994 articles) than whitelist (439 articles).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65604/elife-65604-fig1-v1.jpg)
+
+**Figure 1.:** The number of articles on Europe PMC containing the terms blacklist or whitelist (blue; left axis), containing the terms master and slave (orange; left axis), and the total number of articles on Europe PMC (green; right axis) between 2020 and 2000.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65604/elife-65604-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The number of articles on Europe PMC containing the terms master TF(s) or master regulator(s) (blue; left axis), containing the term slave (orange; left axis), and the total number of articles on Europe PMC (green; right axis) between 2020 and 2000.
+
 The first use of the term “blacklist” dates back to the seventeenth century and has a long history of being used in the labor market (Weir, 2013). However, these terms started appearing in the biomedical literature around the mid-nineteenth century. In 1899, an article in the journal The Hospital suggested maintaining a “whitelist” of firms that treat their employees fairly instead of a “blacklist" of firms with a bad reputation (The Hospital, 1899). Since then, the use of these non-inclusive terms has continued to grow (Figure 1).
 
 The terms “master” and “slave” are also widely used in the scientific literature. A search for articles with both these terms found over 3,500 research articles published in more than 900 journals between 2000 and 2020 (Figure 1). Similar to blacklist and whitelist, the use of master and slave is growing with time. Furthermore, a search for “master TFs” or “master regulators” found more than 50,000 articles from 2000 to 2020, with their use increasing each year (Figure 1—figure supplement 1). This suggests that non-inclusive terms are becoming increasingly pervasive, and possibly the norm in the life sciences literature.
@@ -48,6 +56,6 @@ The query used to search articles with master TF(s) or master regulator(s) is as
 
 All the figures were created using ggplot2 v3.3.2 Wickham, 2016 with R v3.6.1. The figures can be reproduced using the available code in the code and data availability section (Wickham, 2016).
 
-## Code and data availability
+### Code and data availability
 
 The source code and data used to generate figures are available on GitHub (https://github.com/asntech/inclusive-science) and also on Zenodo (Khan, 2021).

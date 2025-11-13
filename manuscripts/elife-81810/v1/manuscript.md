@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04qtj9h94 Department of Health Technology at Technical University of Denmark Kongens Lyngby Denmark
+1. Department of Health Technology at Technical University of Denmark Kongens Lyngby Denmark ([ROR:04qtj9h94](https://ror.org/04qtj9h94))
 
 † Corresponding author
 
@@ -35,13 +35,19 @@ We applied this algorithm to a dataset derived from screening PBMCs from 16 heal
 
 ## Results
 
-## Parallel capture of TCRɑβ sequences, peptide-MHC specificity, and sample origin from single cells
+### Parallel capture of TCRɑβ sequences, peptide-MHC specificity, and sample origin from single cells
 
 To obtain single-cell-derived triad information on TCR sequence, pMHC specificity, and sample origin, we stained peripheral blood mononuclear cells (PBMCs) from a total of 16 different healthy donors (Supplementary file 1). All samples were stained with the same panel composed of 10 different viral-derived pMHC multimers, each labeled with a unique barcode for that specificity and a common fluorescent label (allophycocyanin [APC]) (Figure 1; Supplementary file 2). We wished to enrich only for TCRs responsive to less commonly reported pMHCs, hence we co-stained the cells with the three most commonly reported viral-derived pMHC multimers (all A0201 restricted: GLC, GIL, NLV) bearing a different fluorochrome (phycoerythrin [PE]) and labeled with their own unique DNA barcode (Supplementary file 2). We sorted only the APC-labeled pMHC multimer binding T cells (and hence deselected the PE-labeled T cells) and included these in the downstream single-cell processing.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the experimental strategy. All samples are incubated with the same library of barcode-labeled pMHC multimers and subsequently with a sample-specific barcode-labeled hashing antibody to individually label cells derived from a given sample. Multimer-binding cells from all samples are sorted in bulk and processed through the 10x Chromium workflow. The sequencing output simultaneously captures the sample barcode, the pMHC barcode, and the TCR sequences, which are all matched to a single cell based on the 10x barcode. This also provides the means of retrospectively assigning each cell to their sample of origin via the sample-specific hashing barcode. (B) Example showing how the allophycocyanin (APC)-labeled pMHC multimers are sorted collectively from all samples into one tube that is further carried into the 10x workflow. The phycoerythrin (PE)-labeled pMHC multimers are not sorted and hence deselected. A total of 1800 APC-labeled cells are sorted from each donor. Here showing BC126 (large dotplot) and BC341 (small dotplot).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig1-figsupp1-v1.jpg)
+
 Prior to sorting, each sample was stained with a distinct hashing antibody to provide a sample identification barcode associated with the GEMs of the resultant single-cell data set. This is done to enable mixing of cells from different samples, while retaining the information of sample origin, and utilizing the capacity of capturing 6000–10,000 cells per lane in the 10x Genomics workflow. This is essential when capturing T cells based on their specificity since the MHC multimer-positive population is generally of low frequency (<1% of CD8 T cells). When several samples are mixed in the process of running the single-cell analysis, all mRNA and DNA barcodes (derived from hashing antibodies or the MHC multimers) associated with a given cell will be encoded with the same 10x barcode, proving the GEM association (Figure 1; Supplementary file 1).
 
-## Total data from simultaneous capture of cell, TCR, pMHC, and sample ID
+### Total data from simultaneous capture of cell, TCR, pMHC, and sample ID
 
 The single-cell data is annotated using 10x Chromium Cellranger multi v6.1. This results in each GEM being quantified by a count of unique molecular identifiers (UMIs) (Kivioja et al., 2011) for the three components (TCR, pMHC, and sample hashing) based on transcripts of TCR α- and β-chains, barcodes co-attached to pMHC multimers and barcodes co-attached to cell hashing antibodies (Supplementary file 2).
 
@@ -61,59 +67,91 @@ The detected specificities in our data have been cross-referenced with the IEDB 
 
 The data in Figure 2d suggests that most of the captured T cells interact with several of the screened pMHCs to a degree that exceeds the level expected from natural cross-recognition. Therefore, it is reasonable to assume that a large proportion of these multiplets are formed as a result of ambient pMHC leaking into GEMs.
 
-## A data-driven filtering approach
+### A data-driven filtering approach
 
 From these observations, it is clear that a substantial part of the data consists of noise, that is, GEMs with multiplets of pMHC and sample hashing, and that the data must be filtered for proper interpretation.
 
-## Clonotype annotation
+#### Clonotype annotation
 
 The definition of T-cell clones (clonotypes) is fundamental for pairing a given TCR clonotype to its respective pMHC recognition. Initial clonotypes were called using 10x Genomics Cellranger, which defines a clonotype as a set of cells that share identical receptor sequences at the nucleotide level, spanning the entirety of the V(D)J-C genes as well as the junction segments. Assuming reliable gene and CDR3 sequence calls by 10x Cellranger, we redefine clonotypes based on TCR annotation. Subsequently, GEMs with no clonotype annotation from 10x were annotated to existing clonotypes conditioned on matching VJαβ-genes and CDR3αβ sequences or as novel clonotypes. Similarly, clonotypes with identical VJ-CDR3αβ were merged to form larger groups of theoretically identical TCRs (Figure 3—figure supplement 1). Merging GEMs of the same TCR is essential to make statistical inference based on those groupings, for example, determine expected pMHC target per clonotype. The outcome was a set of 2441 TCR clonotypes across the 6073 GEMs containing both TCR and pMHC. For the 337 GEMs containing TCR chain multiplets, the most abundant chain per GEM was for the subsequent analyses selected to represent the true TCR. Note that this annotation was made post the definition of clonotypes and was applied for the TCR inter- versus intra-similarity comparison.
 
-## Defining pMHC recognition for selected TCR clonotypes
+#### Defining pMHC recognition for selected TCR clonotypes
 
 As we have seen earlier, not all GEMs within a given clonotype support the same pMHC target, and defining the pMHC target of a TCR based on individual GEMs thus results in contradicting annotations. The key to identify the expected target for a clonotype is therefore to determine which pMHC identity represents the majority of UMIs across all GEMs within a given clonotype. Figure 3 illustrates an example from a pilot study that accentuates the importance of studying GEMs in ensemble rather than individually. Most GEMs are annotated with multiplets of pMHCs and across all GEMs the most abundant pMHC varies. While all pMHCs are found most abundant in at least one GEM, three pMHCs (TPR B0702, VTE A0101, and RAK B0801) are more often found most abundant (Figure 3a). Although TPR B0702 is detected in fewer GEMs (136) than VTE A0101 (260) and RAK B0801 (186), TPR B0702 is present at generally higher UMI counts (Figure 3b). It is evident that there is a difference in UMI distributions between the different pMHC within the GEMs of a given clonotype, and that TPR B0701 is the significantly most abundant pMHC across the ensemble of GEMs even though this pMHC is only present in a minority proportion of the GEM (Figure 3b). Based on these observations, we argue that the significantly most abundant pMHC should be annotated as the expected binder for the given clonotype rather than annotating based on the majority.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig3-v1.jpg)
+
+**Figure 3.:** (a) All detected pMHC (y-axis) in each gel-bead in emulsion (GEM) (x-axis, n = 467) of clonotype 1. The marker size shows the unique molecular identifier (UMI) count for the particular pMHC in a given GEM, and the color indicates the pMHC with the highest UMI count, similar to what is shown in Figure 1d. If two pMHCs are equally abundant in a GEM, they are both colored. No marker means no detection of that pMHC in that given GEM. (b) The compiled distribution of UMI counts for each peptide (assigning 0 UMI when the pMHC is not detected in a GEM). The asterisk marks that a Wilcoxon test showed that the UMI counts of TPR B0702 were on average higher than for VTE A0101 UMI counts. (c) The specificity concordance across the GEMs of clonotype 1. Concordance is shown by a color gradient, that is, the larger the fraction of GEMs supporting a given specificity the darker the color.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Arc diagram revealing shared VJab-genes and CDR3ab sequences across clonotypes defined by 10x Cellranger. Each node is a clonotype and the size reflects the magnitude gel-beads in emulsion (GEMs) in that clonotype sharing VJab-genes with GEMs of other clonotypes. The first node (c0, green) consists of the GEMs with no 10x clonotype annotation, while the remaining (c > 0) are annotations by 10x Cellranger. The diagram reveals clonotype duplets (single arc connections), triplets (two arcs), quadruplets, quintuplets, and even a single sextuplet. Since node c0 is a mixture of GEMs that were not annotated, the GEMs in this group will match many different clonotypes. Once a c0 VJ-CDR3 matches a clonotype that already is a replicate, the GEM will of course match all of them.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Gel-beads in emulsion (GEMs) are categorized in one of three categories based on the detection of α- and β-chains: TCRs missing any chain, TCRs with multiple α- and/or β-chains, and TCRs with a unique set of one α- and one β-chain. The colors each represent a filtering step. The gray bars present the raw, total data with no filtering. The light blue bars present filtering on 10x Genomic’s Cellranger ‘is cell’ call based on transcript level of TCR sequences only. The dark blue bars present filtering on 10x Genomic’s Cellranger ‘is cell’ call based on transcript level of gene expression (GEX) sequencing. The black bars present filtering of GEX data on mitochondrial load and gene counts. For each step of filtering, the counts within each category are normalized and the total value is listed above the bar. The raw data has a larger proportion of missing chain TCRs than the filtered sets. Filtering on ‘is cell’ based on GEX data yields the largest proportion of unique chains. None of the filters completely nor substantially reduces the proportion of TCRs missing a chain or with multiple chains. See also supplementary note.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The gel-beads in emulsion (GEMs) (x-axis) are evaluated by the abundance of each sample barcode of 10 possible hashings (y-axis). The first section of the heatmap contains GEMs with unambiguous annotation to one sample. The second section illustrates how some GEMs contain barcodes for two samples, which might indicate a doublet, that is, a capture of two T cells in one GEM. The last section reveals GEMs where no barcodes above a certain threshold were detected, and hence must be a result of leakage and can be discarded as noise.
+
 Having annotated the expected pMHC of a given clonotype, one can next go back to the individual GEMs, and label GEMs where the most abundant pMHC corresponds to the expected binder, as ‘true,’ and all others as ‘false,’ and use these annotations to quantify the accuracy of the GEM annotations. Within each clonotype, one can compute a specificity concordance, that is, the fraction of GEMs detected with a certain specificity (defined by most abundant pMHC, i.e., highest pMHC UMI per GEM) (Figure 3c). In many cases across the full data set, the expected specificity for a clonotype coincides with the specificity, defined on a per-GEM level, resulting in high concordance. However, for some clonotypes, for example, clonotype 1, GEMs have diverging annotations and therefore lower concordance dispersed across multiple specificities (Figure 3). The clonotype visualized in Figure 3 is specifically chosen to exemplify how this lower concordance can affect the analysis. For clonotype 1, the fraction of GEMs that support VTE A0101 (0.33) is higher than the fraction of GEMs that supports TPR B0702 (0.26). This results in an overall low concordance, and only by considering the complete ensemble of clonotype 1 GEMs can the correct pMHC target be identified (Figure 3b).
 
-## Improving concordance between GEM and clonotype annotation based on grid search on UMI features
+#### Improving concordance between GEM and clonotype annotation based on grid search on UMI features
 
 To rationally filter data, an accuracy metric was defined and optimized through the filtering process. For all specificities belonging to clonotypes with an assigned expected target, we calculated the overall accuracy as the proportion of GEMs where highest abundance pMHC annotation corresponds to the expected target of the clonotype. The raw unfiltered data yielded accuracy and average concordance scores of 69.6 and 83.8%, respectively. Next, we set out to investigate how different data-driven UMI filters could improve these performance values, removing noise and artifacts from the data. This removal would also reduce the number of included observations, hence the performance of different thresholds for filtering the data was evaluated based on a tradeoff between increased accuracy and discarded number of GEMs.
 
 We tested various thresholds on UMI count and UMI ratios, that is, the ratio between the most abundant and second most abundant UMI feature, for pMHC and TCRαβ, respectively. The optimal thresholds were chosen to maximize the weighted average between accuracy and fraction of retained GEMs to favor increase in accuracy above losing some GEMs. This filtering analysis resulted in optimal thresholds of two pMHC UMI counts and a ratio pMHC UMI counts between top one and two >1. The latter results in the removal of GEMs where two pMHC were equally abundant for low UMI counts. The search did not result in thresholds imposing restrictions on neither TCR UMI counts nor TCR UMI ratio, which underpins that the TCRs with a missing chain as well as multiple chains also contribute to good performance. Imposing this filter yielded 4986 GEMs (82% of total), 1494 clonotypes (61% of total), and resulted in 95.3% accuracy, and a mean concordance of 90.6%.
 
-## Additional filters
+#### Additional filters
 
 Additional filters can be added to further clean the data. We investigated how an integrated filter in the 10x Genomics software, Cellranger, performed in removing potential noise from our data set (Figure 3—figure supplement 2). The filter (labeled ‘is cell’) evaluates whether a GEM has captured a cell based on full level of transcriptome data, when available, and otherwise solely on TCR transcript level. The filter was tested with both levels of transcript data, full level and TCR transcript level, which are respectively referred to as ‘is cell (GEX)’ and ‘is cell.’ Alternatively, viable cells are identified from the transcript data, independently of Cellranger, based on mitochondrial load and a minimum and maximum gene count per GEM. All three filterings are comparable (Figure 3—figure supplement 2) and taken into account in the further evaluations. It is worth noting that, while the filterings based on the full transcript data might remove slightly more noise, the economic costs associated could propose that this should only be applied when the transcript data is required for additional purposes.
 
 Cell hashing is generally a much simpler task to resolve than pMHC multiplets because one hashing entry most often has much higher counts compared to the others (Figure 3—figure supplement 3). Moreover, due to the experimental design, where only one hashing antibody is added to each sample, it is expected that only a single hashing signal is associated with each GEM, that is, this does not mirror the complex nature of the pMHC data, where cross-reactivity could result in more than one pMHC be a true binder to a given TCR. Given this simplicity, we opted for utilizing the existing Seurat hashtag oligo (HTO) tool to demultiplex and annotate cell hashing (Stoeckius et al., 2018). In this setup, cell hashing also enables filtering based on matching HLA between the donor haplotypes and the HLA of the detected pMHC. Including this additional filter reduces the number of GEMs to 4135 (covering a set of 1494 clonotypes). Additionally, depending on the subsequent use of the data, retaining only complete TCRs containing both α and β may be desirable. Including only GEMs where the TCR-pMHC pair is observed more than once, that is, specificity multiplets, reduces the uncertainty described above. Below we investigate the impact of imposing such filters.
 
-## Impacts of filtering
+### Impacts of filtering
 
-## Evaluating filters by comparing TCR similarity across specificity
+#### Evaluating filters by comparing TCR similarity across specificity
 
 To objectively evaluate the performance impact of the presented filters, we define a quantitative evaluation based on the hypothesis that T cells binding the same pMHC (intra-specificity) will share a higher sequence similarity compared to TCRs of different specificities (inter-specificity) (Figure 4). Thus, filtering away artifacts should increase intra-similarity while decreasing the inter-similarity. Here, the similarity score between two TCRs was calculated from the summed score of the pairwise α- and β-chain similarities calculated using a kernel method described in Shen et al., 2012 and applied in Chronister et al., 2021.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig4-v1.jpg)
 
-**Figure 4.:** a) total (unfiltered) data set and (b) the data filtered by the optimized threshold.The similarity per peptide plots (a and b) illustrates the distribution of paired similarity scores for each clonotype (containing both α- and β-chain). For each pMHC, each clonotype is compared to the remaining clonotypes of the same specificity (intra) and across specificities (inter). The count of compared clonotypes is listed just to the right of the y-axis in both (a) and (b). (c) displays the pooled intra- and inter-scores across all peptides for each of the filtering methods: total (no filtering), optimal threshold, matching HLA, hashing singlets, complete TCRs, specificity multiplets, ‘is cell’ by cell-flagging, ‘is cell’ by cell-flagging when including GEX data, and viable cell from analyzing GEX data. An asterisk marks filters where intra-similarity is significantly larger than inter-similarity (Wilcoxon, α = 0.05). (d) displays the pooled intra- and inter-scores across all peptides for each of the filtering methods where each filtering is added cumulatively to the previously listed above it. An asterisk marks filters where intra-similarity is significantly larger than inter-similarity (Wilcoxon, α = 0.05). The count of compared clonotypes is listed just to the right of the y-axis in both (c) and (d).
+**Figure 4.:** The similarity per peptide plots (a and b) illustrates the distribution of paired similarity scores for each clonotype (containing both α- and β-chain). For each pMHC, each clonotype is compared to the remaining clonotypes of the same specificity (intra) and across specificities (inter). The count of compared clonotypes is listed just to the right of the y-axis in both (a) and (b). (c) displays the pooled intra- and inter-scores across all peptides for each of the filtering methods: total (no filtering), optimal threshold, matching HLA, hashing singlets, complete TCRs, specificity multiplets, ‘is cell’ by cell-flagging, ‘is cell’ by cell-flagging when including GEX data, and viable cell from analyzing GEX data. An asterisk marks filters where intra-similarity is significantly larger than inter-similarity (Wilcoxon, α = 0.05). (d) displays the pooled intra- and inter-scores across all peptides for each of the filtering methods where each filtering is added cumulatively to the previously listed above it. An asterisk marks filters where intra-similarity is significantly larger than inter-similarity (Wilcoxon, α = 0.05). The count of compared clonotypes is listed just to the right of the y-axis in both (c) and (d).
 
 Based on this kernel similarity metric, the filters were tested individually and cumulatively, that is, each filter was added to the previous set of filters. The general trend is that TCRs with the same specificity are more similar to each other than to TCRs of different specificities, when computing the intra- and inter-similarities per pMHC before and after filtering on the optimized UMI thresholds (Figure 4a and b). Before filtering, 9 out of 13 pMHCs displayed a higher mean intra-similarity than inter-similarity scores, whereas this number was 11 out 13 pMHCs when applying the UMI thresholds. The outliers before filtering were GIL A0201, VLE A0201, CLG A0201, and RPP B0702, while the outliers were reduced to VLE and RPP after filtering. Generally, the similarity scores often have a wide, overlapping range between the intra- and inter-categories. The three pMHCs that were deselected during sorting, GIL A0201, GLC A0201, and NLV A0201, are only detected in a few TCR binding events. To enhance the power of comparison, the intra- and inter-scores were pooled respectively across the individual pMHCs (Figure 4c and d). The results demonstrate that intra-similarity is significantly higher than inter-similarity at each filtering step, both individually and combined. Moreover, we observe that the differences between intra- and inter-similarity appear to increase as filters are cumulatively added and fewer observations are left (Figure 4d). Particularly, the median inter-similarity score is lowered, suggesting that the filtering steps predominantly remove false-positives.
 
-## Evaluating filters across selected performance metrics
+#### Evaluating filters across selected performance metrics
 
 To compare the effect of the filters, the similarity scores were converted to the performance metric: AUC (area under the receiver operating characteristic [ROC] curve). Here, intra-specificity comparisons are regarded as true-positive observations and inter-specificity comparisons as true-negatives. Based on these performance metric definitions, we quantify the effect of each filtering step (Figure 5) and find that the highest accuracy and highest average concordance are obtained by filtering on the optimal threshold (95.3 and 90.6%), while the highest AUC is obtained from filtering on specificity singlets (70.5%) (Figure 5a). Expectantly, the accuracy and average concordance increase when the filters are imposed cumulatively (Figure 5b). The accumulation of filters also results in drastic reduction of the GEMs, and it is evident that one must carefully weigh out the need for specificity over sensitivity when selecting the desired set of filters.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig5-v1.jpg)
+
+**Figure 5.:** Performance is measured by number and ratio of retained gel-beads in emulsion (GEMs), accuracy defined by proportion of GEMs where most abundant pMHC matches the expected binder (accuracy), average binding concordance (avg. conc.), and AUC of similarity scores (AUC). The filtering steps consist of total (raw, unfiltered data), optimal threshold obtained from grid search, matching HLA, hashing singlets identified from Seurat HTO demultiplexing, complete TCRs with a unique set of α- and β-chain, specificity multiplets such that each TCR-pMHC pair must be observed in two or more GEMs, is cell defined by 10x Genomics Cellranger, is cell (GEX) defined by Cellranger where GEX data is included, and is viable cell defined by mitochondrial load and gene counts. (a) Presentation of the individual effect of each filter. (b) Presentation of the accumulated effects of the listed filters.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The method expects Cellranger Multi outputs from TCR and pMHC barcode sequencing. The gel-beads in emulsion (GEMs) containing both TCR and pMHC barcodes are merged and annotated with cell hashing if available. The detected specificities are mapped against known specificities from databases such as IEDB and VDJdb. Expected pMHC targets are derived for selected clonotypes, which are used for a grid search to determine unique molecular identifier (UMI) thresholds to filter data on. Filters are evaluated by computing TCR similarity as well as other performance scores and plotted.
+
 We conclude that the minimal filtering must include optimal threshold and matching HLA between pMHC and donor haplotype. Filtering on specificity multiplets would inherently result in more reliable observations, risking the removal of rare, low-avidity binding events. Generally, we did not find that including GEX data improved performance considerably. Finally, filtering on incomplete TCRs yields the second highest accuracy and average concordance. Unfortunately, the filter almost halves the number of GEMs. Hence, this filtering should be considered depending on future use of the data. An overview of the pipeline can be found in Figure 5—figure supplement 1.
 
-## Inspecting the filtered data
+### Inspecting the filtered data
 
 To determine the impact of the filtering steps, we have compiled the binding concordance for all clonotypes and applied three selected filtering steps: (1) the raw, unfiltered data, (2) filtering on optimal UMI thresholds and matching HLA, and (3) additionally filtering on complete TCRs (Figure 6). The raw, unfiltered data displays many clonotypes where the most abundant pMHC in GEMs of a given clonotype are dispersed across multiple of the screened pMHCs (Figure 6a). When imposing the recommended set of filters, optimal threshold, and HLA match, the outliers are greatly reduced, although not all low-concordance GEMs are removed (Figure 6b). By additionally filtering on complete TCRs, even fewer outliers are left (Figure 6c). Note again that we have purposely deselected T cells specific for GIL A0201, GLC A0201, and NLV A0201, explaining the few observations for these otherwise frequently recognized epitopes. An overview of gene usage for clonotypes specific for each of the 10 positive pMHC can be found in Figure 6—figure supplement 1.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig6-v1.jpg)
+
+**Figure 6.:** The library peptides are listed on the y-axis and each clonotype is represented on the x-axis. Below the x-axis is annotated the total number of clonotypes and gel-beads in emulsion (GEMs) in the presented data. The marker size shows the number of GEMs supporting a given specificity. The color indicates the binding concordance that is calculated as the fraction of GEMs within a clonotype that support a given pMHC. The higher the concordance, the larger the fraction of supporting GEMs. The three plots illustrate the impact of three filtering criteria. (a) presents raw data with no filtering applied. (b) presents data filtered on optimal threshold and HLA matches. (c) presents data filtered as in (b) with the additional requirement of only complete TCRs (note that cell hasting filtering was not included here). A summary of the specificity singlet distribution for each subfigure is presented in Supplementary file 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81810/elife-81810-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Each subplot is a representation of gene pairings within clonotypes specific for the given peptide-MHC. Repertoires for the 10 selected peptides are displayed, leaving out the three control peptides (NLV, GIL, and GLC). The four genes are connected as nodes in a Sankey diagram where the thickness of each link is proportional to the number of clonotypes with the respective gene pairing. The nodes are labeled by gene name, and atop each stack is given a generic gene label. Genes are colored by frequency within the peptide specificity with a fixed color sequence (from most frequent to least frequent): red, green, blue, cyan, magenta, black, etc.
+
 Many of the remaining low-concordance GEMs still suggest the improbable event of cross-binding across HLA restriction. We suspect that these are artifacts that we have not successfully removed. When the most strict filtering is imposed (Figure 6c), there are 77 GEMs (out of 2833) with a binding concordance of 0.5 or lower, which will be referred to as outliers. Also, 72 of those GEMs contain pMHC multiplets. And 93% of the multiplet outliers actually do contain the pMHC, which defines the high-concordance GEMs, however, at a lower UMI count. In the GEMs with multiple pMHC annotations, the HLA is conserved across the pMHCs in 7% of the cases. In 82% of the cases, the HLAs are different, but still match the HLA haplotype of the donor given by the cell hashing. Of the 77 outliers, the most dominant pMHCs are RVR A0301 (38%) and TPR B0702 (30%). These values are in line with the overall contribution of these pMHCs in the GEMs with a binding concordance above 0.5 (34 and 21%). This suggests that the observed GEMs with low concordance are a result of noise and not a reflection of TCR cross-reactivity. Prior to filtering the data, six clonotypes were identified, which were already registered in IEDB and VDJdb, five with matching pMHC, and one with a different annotation than in our observation (Figure 2d). The five matching clonotypes (nine GEMs) were successfully retained, while the mismatching clonotype (one GEM) was filtered away. Four of these nine GEMs were negative control responses (two GLC and two NLV) and the remaining five GEMs (across two clonotypes) were all responses directed towards FLYALALLL A*02:01. All pMHCs were detected with UMI counts ranging from 17 to 46.
 
-## Comparing single-cell data with fluorescent-based pMHC multimer screening
+### Comparing single-cell data with fluorescent-based pMHC multimer screening
 
-## Investigating dominant clones
+#### Investigating dominant clones
 
 Beyond mapping the landscape of known TCR-pMHC interactions, single-cell screening enables investigation of T cell repertoire diversity. The high resolution both reveals the specificity and the TCR clonality within the individual T cell populations, which is not possible to recover in classical stainings using fluorescent-labeled pMHC multimers (fluorescent multimers). The T cell diversity in the nine donors toward the set of analyzed pMHCs reveals a clear hierarchy with dominant responses in fluorescent multimer staining (Figure 7a); however, the clonality of each specificity is only available via single-cell data (Figure 7b). Here ITRAP represents data filtered by optimal UMI thresholds and matching HLA between pMHC and donor haplotype (given via cell hashing). Single-cell screening further enables comparison of the clonal distribution and the total clonal size per specificity. In this respect, the samples BC328 and BC62 are strikingly similar in their distribution of expanded clones. They both display a large and broad response toward RVR A0301 and two smaller responses toward RPP B0702 and TPS B0702, which are both dominated by a single clonotype. Further, most peptides elicit diverse relative responses between samples. For example, RPP B0702 is the dominant response in samples BC328 and BC62, but the minority response in sample BC314. Sample BC300 contains primarily small clones, that is, fewer cells in each clonotype; however, this sample is generally represented with low amounts of total data (46 GEMs). Of note, small clones might be a result of suboptimal single-cell capture or because high-frequency responses can potentially mask any lower frequency responses present in a given donor (Supplementary file 4) when only 1800 cells are sorted from each sample. Samples represented with many GEMs are expected to be fully covered and therefore may contain more different expanded clonotypes, as sample BC360.
 
@@ -121,7 +159,7 @@ Beyond mapping the landscape of known TCR-pMHC interactions, single-cell screeni
 
 **Figure 7.:** The nine samples, PBMCs from nine individual donors are represented on the x-axis. The marker size defines the distribution of T cells recognizing a given peptide, normalized per sample. (a) The T cell frequencies are visualized as the proportion of a given multimer-positive response within a donor. The black markers represent responses detected above the threshold, that is, ≥10 cells and ≥0.002% of total CD8 T cells, or ≤10 cells but ≥0.01% of total CD8 T cells. The gray dots represent detected specificities below threshold but represented by ≥2 cells. Summed frequencies of detected responses within a donor are given as % of total CD8 T cells and listed just above the x-axis. (b) The T cell frequencies are based on gel-bead in emulsion (GEM) counts normalized per sample from the single-cell data. Absolute GEM counts per sample are listed above the x-axis. The marker is colored by the fraction of GEMs within a specificity that originate from a given sample. Absolute GEM counts per peptide are listed to the right of the plot. The marker contains a donut diagram illustrating the distribution of clonotypes specific for the given peptide in the given sample. The wedge that represents the dominant clone is colored according to the center of the donut. Remaining clones (>1 GEM) are anthracite gray, and all clonotypes only supported by one GEM only are pooled and represented by a single light gray wedge. Comparing the sizes of the T cell populations for each specificity per donor between the two screening methods in (a) and (b) yielded the following Spearman correlations: BC126 (1.00, p<0.0005), BC328 (0.90, p=0.006), BC355 (0.74, p=0.02), BC360 (0.89, p=0.04), BC314 (0.90, p=0.04), and BC353 (1.00, p<0.0005). (c) Representative example showing the four different responses detected with fluorescent-labeled pMHC multimers in donor BC126. (d) Correlation between T cell responses detected by fluorescent-labeled MHC multimers (y-axis) and single-cell capturing (x-axis). Correlation is given by Pearson correlation coefficient 0.73 (p<0.0005). The responses from fluorescent-based screening are given as an adjusted number of cells based on the detected response frequency out of 1800 cells (see calculations in Supplementary file 4). The hollow markers represent responses below detection threshold as described in (a). The responses are colored by the donor-of-origin. BC mix corresponds to BC311, BC11, BC83, BC88, BC341, BC342, and BC76.
 
-## Evaluating ITRAP by ‘ground truth’ of fluorescent-based pMHC multimer screening
+#### Evaluating ITRAP by ‘ground truth’ of fluorescent-based pMHC multimer screening
 
 The net overlap of identified T cell responses between the two screenings (Figure 7a and b) is estimated to 0.63 by Matthew’s correlation coefficient (MCC). Most of the T cell populations detected by fluorescent multimers are also captured in the single-cell screening, reflected by a recall of 0.95. However, the single-cell capture of small T cell clones (Figure 7b) that were not detected using fluorescent multimers (Figure 7a) negatively impacts the precision, yielding a score of 0.71. For fluorescent-labeled MHC multimers, a detection threshold of 10 events is applied, which may account for the difference observed for the very rare clone, of which most were only represented by one GEM per clonotype (demonstrated by a light gray outer circle in Figure 7b). In only two cases, T cell populations were detected with fluorescent multimers but not captured in single cells: BC316/CLG A0201 and BC62/RPH(10mer) B0702 (Figure 7a). The large T cell population of BC316/CLG A0201 was likely a technical artifact related to the barcode-labeled pMHC multimers.
 
@@ -155,43 +193,43 @@ In conclusion, we have demonstrated that ITRAP is a highly flexible tool for den
 
 All healthy donor material was collected from the central blood bank at the university hospital, Rigshospitalet, Copenhagen (under the agreement no. BC29). Collection was done under approval by the Scientific Ethics Committee of the Capital Region, Denmark, and written informed consent was obtained according to the Declaration of Helsinki. This material is fully anonymized.
 
-## Cell samples
+### Cell samples
 
 PBMCs from healthy donors were isolated from whole blood by density centrifugation on Lymphoprep (Axis-Shield PoC) and cryopreserved at −150°C in FCS (Gibco) + 10% DMSO.
 
-## DNA barcodes and dextran conjugation
+### DNA barcodes and dextran conjugation
 
 Oligonucleotides modified with a 5′ biotin tag were purchased from LCG Biosearch Technologies (Denmark). Read from 5′ to 3′, the oligonucleotides were designed with the 10x equivalent Read2N sequence, a 10 nt UMI, a distinct 15mer nucleotide sequences (extracted from Xu et al., 2019), a 9 nt UMI and ending in a 13 nt capture sequence complementary to the TSO of the 10x 5′ capture oligo (sequences are listed in Supplementary file 1). Barcodes were dissolved to 100 μM in RNAse-free water and stored at −20°C. For a working solution, the DNA barcodes were further diluted in PBS + 0.5% BSA + 1 mg/mL herring DNA + 2 mM EDTA to 2.17 μM and attached to PE- or APC- and streptavidin-conjugated dextran from FINA Biosolutions LCC (USA). The amount of DNA barcode attached to each new lot of dextran was titrated as described in Bentzen et al., 2016. DNA barcodes were attached by mixing with dextran-conjugate, followed by incubation, 30 min at 4°C. DNA barcode-assembled dextran-conjugates were stored for up to 24 hr at 4°C.
 
-## Peptides and MHC monomer production
+### Peptides and MHC monomer production
 
 Peptides were purchased from Pepscan (Pepscan Presto) and dissolved to 10 mM in DMSO. UV-sensitive ligands were synthesized as previously described (Bakker et al., 2008; Rodenko et al., 2006; Toebes et al., 2006). Recombinant HLA-A*0201, HLA-A*0301, and HLA-B*0702, heavy chains, and human β2 microglobulin light chain were produced in Escherichia coli. HLA heavy and light chains were refolded with UV-sensitive ligands and purified as described in Hadrup et al., 2009. Specific peptide-MHC complexes were generated by UV-mediated peptide MHC exchange (Chang et al., 2013; Frøsig et al., 2015; Rodenko et al., 2006; Toebes et al., 2006).
 
-## Generation of DNA barcode-labeled MHC multimer libraries
+### Generation of DNA barcode-labeled MHC multimer libraries
 
 Unoccupied SA-binding sites on the DNA barcode-assembled dextran conjugates were used for the co-attachment of biotinylated pMHC molecules. 0.8 pmol pMHC monomer was mixed with 160× 10–15 mol DNA-barcoded dextran-conjugate and incubated 30 min at room temperature (RT). MHC multimers were diluted in PBS with 5.2 μM d-biotin (Avidity, Bio200) to 909 nM and incubated 20 min on ice. DNA-barcoded MHC multimers were stored for up 1 wk at −20°C (PBS supplemented with glycerol and BSA, final concentrations 5 and 0.5%, respectively). Immediately before staining barcode-labeled MHC multimers were thawed at 4°C, centrifuged (5 min at 3300 × g), and pooled (0.8 pmol of each pMHC/sample) to enable the detection of multiple T-cell responses in parallel. The pooled MHC multimers were centrifuged once more; 5 min at 3300 × g, to sediment aggregates before the volume of the reagent pool was reduced by ultrafiltration to obtain a final volume of ~80 μL of MHC multimers as described in Bentzen et al., 2016. Any aggregates in the MHC multimer reagent pool were sedimented by centrifugation, 5 min at 3300 × g before addition to the cell sample.
 
-## MHC multimer staining
+### MHC multimer staining
 
 Cryopreserved PBMCs were thawed and washed by sedimentation, 5 min, 390 × g, 4°C, in RPMI + 10% FCS. Cells were further washed in a barcode-cytometry buffer (PBS + 0.5% BSA). 5 × 106 cells were incubated, 60 min, 4°C, with pooled DNA-barcoded multimers in a total volume of 100 μL (final concentration of each distinct pMHC, 8 nM), and washed three times by sedimentation, 5 min, 390 × g, 4 °C. 5 µL of Human TruStain FcX Fc Blocking reagent was added to a total of 50 µL cell suspension, and incubated 10 min, 4°C. Hashing antibodies (BioLegend, TotalSeq-C0251 anti-human Hashtag 1-10 Antibodies) were centrifuged 10 min, 14,000 × g, 4°C, and 0.5 µL were added to each a distinct sample (Supplementary file 2), and incubated 15 min, 4°C. Next a 5× antibody mix composed of CD8-BV480 (BD 566121, clone RPA-T8) (final dilution 1/50), dump channel antibodies: CD4-FITC (BD 345768) (final dilution 1/80), CD14-FITC (BD 345784) (final dilution 1/32), CD19-FITC (BD 345776) (final dilution 1/16), CD40-FITC (Serotech MCA1590F) (final dilution 1/40), CD16-FITC (BD 335035) (final dilution 1/64), and a dead cell marker (LIVE/DEAD Fixable Near-IR; Invitrogen L10119) (final dilution 1/1000), was mixed for each sample. The antibody mix was added to cell samples and incubated 30 min, 4°C. Cells were washed three times in barcode-cytometry buffer and kept on ice until acquisition.
 
-## Cell sorting
+### Cell sorting
 
 Cells were sorted on a FACS Melody (BD) into tubes containing 100 μL of PBS + 0.5% BSA (tubes were saturated with PBS + 2% BSA in advance). Using FACS Chorus software, we gated on single, live, CD8-positive and ‘dump’ (CD4, 14, 16, 19, and 40)-negative lymphocytes and sorted only APC-positive (PE-negative) cells within this population (Figure 1—figure supplement 1 for gating strategy). Cells sorted from individual samples were collected into the same tube (Figure 1b). The sorted cells were centrifuged for 10 min at 390 × g, and the buffer was removed.
 
-## DNA barcode-labeled MHC multimer stained cells on 10x platform
+### DNA barcode-labeled MHC multimer stained cells on 10x platform
 
 We utilize the 10x 5′ v2 chemistry that allows the cell barcode to be appended at the 5′-end of transcripts, which is essential for capturing the CDR3 region of the V(D)J transcripts. In the 5′ chemistry, the template switch oligo (TSO) is encoded with a cell barcode, that is, one unique 10x barcode for every GEM. The TSO thus comprises the capture oligo, whereas the poly-dT primer is added in free suspension. Reverse transcription is initiated from binding of the poly-dT primer at the 3′-end, and mRNA is captured when the reverse transcriptase enzyme switches at the 5′-end of the transcript to the TSO. All DNA barcodes, partially complementary to the 10x Genomics 5′ TSO, are captured directly onto the GEMs. Annealing and extension during the reverse-transcription reaction associate the cell barcode and UMI from the gel-bead oligo with the pMHC and hashing antibody tags in parallel with the mRNAs in the same droplet.
 
 Downstream processing of mRNA and DNA barcodes is performed according to the manufacturer’s instructions (Chromium Next GEM Single Cell 5' Reagent Kits v2 [Dual Index], with the Feature Barcode technology for Cell Surface Protein & Immune Receptor Mapping) (10x Genomics, USA). Approximately 15,700 cells were loaded (based on 55% recovery from 28,800 sorted cells) to yield a maximum of 9000 cells with an intermediate/high doublet rate (6,9%). Targeted amplification was performed for 13 cycles and the products were separated according to size into <400 bp (DNA barcode-tags) and >400 bp (the TCR sequences) using 0.6× SPRIselect beads (Beckman Coulter, B23318). Separate processing of the >400 bp bead-bound TCR sequences and the <400 bp in solution DNA barcodes was conducted according to the manufacturer’s instruction and the TCR amplification products were sequenced on a NovaSeq running a 150 paired-end program. DNA barcodes, TCR sequences, and mRNA were sequenced to a depth of 13,332, 12,503, and 18,398 mean reads per cell, respectively.
 
-## Bioinformatics
+### Bioinformatics
 
-## Processing of 10x single-cell data
+#### Processing of 10x single-cell data
 
 Hashing barcode reads, peptide-MHC barcode reads, and T cell gene expression reads were provided in fastq format and were processed using 10x Genomics Cellranger multi v6.1.0 (10xGenomics, 2022b). The relevant outputs were the unfiltered count matrices of DNA barcodes and gene expression as well as clonotype annotations of each sequencing contig containing CDR3α/β sequences, V(D)J-C genes, and UMI counts.
 
-## Postprocessing 10x Cellranger clonotyping
+##### Postprocessing 10x Cellranger clonotyping
 
 The raw contig annotations from Cellranger were selected for downstream analysis with filtering on incomplete and unproductive receptor transcripts. Incomplete contigs are not full length, that is, do not span the V-gene start codon until the J-gene stop codon. Unproductive contigs contain a frameshift that either induces an early stop codon or completely removes the stop codon.
 
@@ -199,46 +237,74 @@ Clonotypes defined by 10x were merged when consisting of identical VJ-CDR3αβ, 
 
 Cellranger flags rare nucleotide transcripts as likely artifacts, meaning the GEMs are flagged as unlikely to contain a cell and are therefore not assigned a clonotype (10xGenomics, 2022a). Therefore, GEMs that were not annotated with a clonotype were imputed by searching the duplicate-reduced clonotype set. If no match, a new clonotype ID was annotated to the GEM.
 
-## Filtering based on gene expression
+##### Filtering based on gene expression
 
 Filtering on gene expression data was performed as described in Zhang et al., 2021. Low-quality GEMs such as doublets may be removed by excluding GEMs with more than 2500 genes. Dead cells may be removed by excluding GEMs with fewer than 200 genes and a ratio of mitochondrial gene expression to the total gene expression above 0.2.
 
-## Demultiplexing samples via cell hashing
+### Demultiplexing samples via cell hashing
 
-Cell Hashing uses oligo-tagged antibodies against ubiquitously expressed surface proteins to place a sample barcode on each single cell, enabling different samples to be multiplexed together and run in a single experiment. To demultiplex the samples, the method presented by Stoeckius et al. was implemented (Stoeckius et al., 2018). The method clusters the normalized count matrix using k-medoid clustering into k clusters, k=nsamples+1. For each barcode, a negative binomial distribution is fitted to the pool of all clusters except the cluster with the highest average expression for the given barcode. Each GEM is classified as positive if the barcode value exceeds a 0.99 quantile threshold for the negative distribution, and otherwise classified as negative. If GEMs contain multiple barcodes that pass the threshold, the GEM is annotated as a doublet (Stoeckius et al., 2018).
+Cell Hashing uses oligo-tagged antibodies against ubiquitously expressed surface proteins to place a sample barcode on each single cell, enabling different samples to be multiplexed together and run in a single experiment. To demultiplex the samples, the method presented by Stoeckius et al. was implemented (Stoeckius et al., 2018). The method clusters the normalized count matrix using k-medoid clustering into k clusters, $k=n_{samples}+1$. For each barcode, a negative binomial distribution is fitted to the pool of all clusters except the cluster with the highest average expression for the given barcode. Each GEM is classified as positive if the barcode value exceeds a 0.99 quantile threshold for the negative distribution, and otherwise classified as negative. If GEMs contain multiple barcodes that pass the threshold, the GEM is annotated as a doublet (Stoeckius et al., 2018).
 
-## Defining the expected binder
+### Defining the expected binder
 
 The pMHC and cell hashing barcode annotations were merged with the T cell annotations on the GEMs that contained both TCR and pMHC attributes. Each clonotype is expected to have a preferred target within the pMHC library, thus each clonotype is evaluated to find the pMHC, which is most likely to be that target.
 
 Each clonotype is evaluated to identify the expected target within the pMHC library. The pMHCs that are detected within the GEMs annotated to a given clonotype are compared by their UMI count distribution. The two pMHCs that have the highest mean UMI count are compared, testing the hypothesis that the expected binder will have a significantly higher mean UMI count than the other pMHC (Wilcoxon, α = 0.05). Clonotypes of less than 10 GEMs were not tested. The clonotypes where the mean UMI of the top two pMHCs was significantly different were collected as a training set. The pMHC that had significantly higher mean UMI was annotated as the expected target and specificity annotations of the GEMs were individually evaluated. True interactions were then defined as GEMs where the most abundant pMHC matched the identified expected target. The GEMs where the most abundant pMHC did not match the expected target were labeled as false interactions. The GEMs belonging to clonotypes where no expected target was identified were left out.
 
-## Defining specificity concordance
+### Defining specificity concordance
 
 Concordance is an indirect measure of how cross-reactive a certain clonotype is. Specificity concordance is defined as the ratio of GEMs of a single clonotype that are annotated to bind a particular pMHC. The more GEMs in a clonotype annotated to the same pMHC the larger concordance. If a clonotype is only detected with one pMHC, the specificity concordance is 1.
 
-## Grid search on UMI features
+### Grid search on UMI features
 
-Based on the labels of the training set, a performance metric, o, was defined to evaluate the accuracy at increasing thresholds for UMI count and UMI ratio of pMHC, α-chain, and β-chain. The UMI ratio measures multiplets and is defined as the ratio between the highest UMI count and the second highest UMI count in a GEM:UMIratio=UMImaxUMIsec+0.25
+Based on the labels of the training set, a performance metric, o, was defined to evaluate the accuracy at increasing thresholds for UMI count and UMI ratio of pMHC, α-chain, and β-chain. The UMI ratio measures multiplets and is defined as the ratio between the highest UMI count and the second highest UMI count in a GEM:
+
+$$
+UMI_{ratio}=\frac{UMI_{max}}{UMI_{sec}+0.25}
+$$
 
 A small number (0.25) was added in the denominator to avoid division by zero.
 
-The performance metric, o, is a weighted average of accuracy and fraction of retained GEMs, given by the following equation:o=2⋅acc + fretained GEMs3
+The performance metric, o, is a weighted average of accuracy and fraction of retained GEMs, given by the following equation:
+
+$$
+o=\frac{2⋅acc + f_{retained GEMs}}{3}
+$$
 
 The accuracy metric is defined by the ratio of training set GEMs that were labeled as true interactions over the total number of GEMs in the training set. The performance metric, o, was maximized by finding the set of filters that increase the accuracy without excluding too much data.
 
 The thresholds for filtering were selected from a complete grid search. Each feature was tested in the range of 0 to the median value, determined ad hoc from the experience that thresholds never approached the median value.
 
-## Comparing TCR similarity
+### Comparing TCR similarity
 
 Effects of filtering were also evaluated through a comparison of TCR similarity. The similarity score is based on the kernel similarity score underlying the TCRmatch method between CDR3 sequences (Chronister et al., 2021). This score can be calculated for CDR3s of variable length and takes a value between 0–1, with the value of 1 representing identical pairs. As both the α- and β-chain partake in the pMHC interaction, TCRs will be compared based on the summed similarity between the α- and β-chains, and GEMs missing a chain will be excluded to avoid bias. Two similarity scores are computed for each unique TCRαβ-pair (per clonotype): an intra-score and an inter-score. The intra-score is based on the maximum similarity of the given clonotype to all other clonotypes sharing its pMHC target (intra-specificity). The inter-score is based on the maximum similarity of the given clonotype to an equal-sized set of clonotypes specific to other pMHC targets (inter-specificity). The computation is done peptide-wise, such that clonotypes with maximum concordance for a given peptide will, for that peptide, be included in an intra-similarity score, but for another peptide be included in an inter-similarity score. Clonotypes consisting of GEMs causing diverging specificities were limited to the expected target pMHC or, if nonexisting, to the specificity of highest concordance to avoid potential overlaps from ‘cross-reactive’ clonotypes in the computation.
 
 The similarity difference between intra- and inter-specificity clonotypes was tested for the hypothesis that intra-similarity is greater than inter similarity (Wilcoxon, α = 0.05). The similarity test was performed on all filtering methods described in the paper.
 
-## Validating single-cell capture against fluorescent multimer staining responses
+### Validating single-cell capture against fluorescent multimer staining responses
 
 The 16 donors were known to respond to the panel of peptides used in the screening. Response proportions of sorted CD8+ T cells were detected by fluorescent multimer staining, as described previously. A total of 1800 cells were selected from each donor and, based on the detected response proportions, an adjusted count of cells could be computed. Cells were selected based on two criteria: ≥10 cells and ≥0.002% of total CD8 T cells, or ≤10 cells but ≥0.01% of total CD8 T cells. The multimer responses were compared to GEMs filtered on UMI thresholds and matching HLA. To visually compare the two screening methods, the responses were normalized within each sample and plotted side-by-side. The methods were also quantitatively compared, both in absolute counts of responses and as binary classes with multimer responses as true labels and single-cell responses as query labels.
 
-The correlation in Figure 7d was also fitted via linear regression on log10 transformed data, resulting in the following equation:log10(y)=0.86⋅log10(x)+1.18, R2=0.56
+The correlation in Figure 7d was also fitted via linear regression on log10 transformed data, resulting in the following equation:
 
-The equation was used to estimate the yield of single-cell captured cells relative to multimer screening. Three examples were computed to estimate an approximate 10% yield.log10(10)=0.86⋅log10(0.6)+1.18log10(100)=0.86⋅log10(9.0)+1.18log10(1000)=0.86⋅log10(131.2)+1.18
+$$
+log_{10}(y)=0.86⋅log_{10}(x)+1.18, R^{2}=0.56
+$$
+
+The equation was used to estimate the yield of single-cell captured cells relative to multimer screening. Three examples were computed to estimate an approximate 10% yield.
+
+$$
+log_{10}(10)=0.86⋅log_{10}(0.6)+1.18
+$$
+
+
+
+$$
+log_{10}(100)=0.86⋅log_{10}(9.0)+1.18
+$$
+
+
+
+$$
+log_{10}(1000)=0.86⋅log_{10}(131.2)+1.18
+$$

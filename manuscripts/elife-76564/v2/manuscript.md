@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Neurobiology, University of Utah Salt Lake City United States
-2. https://ror.org/03r0ha626 Interdepartmental Program in Neuroscience, University of Utah Salt Lake City United States
+1. Department of Neurobiology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Interdepartmental Program in Neuroscience, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
@@ -34,13 +34,37 @@ Here, we ask how neuronal apoptosis drives key properties of developmental micro
 
 ## Results
 
-## Multiple microglial states coexist in postnatal retina
+### Multiple microglial states coexist in postnatal retina
 
 To better understand the influence of environmental cues on microglial states, we first sought to understand the extent of microglial heterogeneity in the postnatal retina and then explicitly determine states that were driven by neuronal apoptosis. Second, we previously linked altered CSF1R dependence to a DAM/ATM/PAM-related signature and neuronal apoptosis (Anderson et al., 2019a), so we wanted to identify and characterize microglial states that remained following CSF1R inhibition (PLX3397, PLX). Therefore, we performed scRNAseq on sorted retinal microglia from four groups at postnatal day 6 and 7 (P6/P7): Bax WT, Bax KO, CX3CR1-GFP/ + given vehicle (daily for 3 days), and CX3CR1-GFP/ + pups dosed with PLX3397 (daily for 3 days) (Figure 1). Microglia from Bax WT (26 retinas) and littermate KOs (26 retinas) (CD45+ CD11b+/CX3CR1-GFP+ CCR2-) as well as microglia from PLX (24 retinas) and vehicle controls (22 retinas) (CD45+ CX3CR1-GFP+ Ly6C-) were sorted (Figure 1—figure supplement 1A-D) and sequenced using the 10 X Genomics platform. Following sequencing and manual filtering (Figure 1—figure supplement 2), we used in silico Bax genotyping to sort out and reassign a subset of cells from animals incorrectly partitioned to the Bax WT and KO samples (Figure 1—figure supplement 3). Unsupervised clustering was performed on the 15,084 cells from the four groups (4902 - Bax WT; 4224 - Bax KO; 4198 - Vehicle; 1760 - PLX3397) (Figure 1—figure supplement 4A). Of the 15,084 cells, 1417 in satellite clusters were deemed non-microglia cells based on expression of established markers and were excluded from further analysis (Figure 1—figure supplement 4B-E). Differences in cell surface markers used to sort Bax WT/KO (CD45+CD11b+CX3CR1+CCR2-) compared to PLX/Vehicle (CD45+CX3CR1+Ly6C-) (Figure 1—figure supplement 1) led to variance in the proportion of macrophage/monocyte-like cells (Figure 1—figure supplement 4F), but this had no major impact on microglial cell number (Gray dots, Figure 1—figure supplement 4C, F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-v2.jpg)
+
+**Figure 1.:** (A) Workflow for collection, dissociation, sorting, sequencing, and filtering of individual microglia from four different groups. 13 P6/P7 animals from 6 litters (26 retinas) pooled for Bax WT and KO samples, 12 P6/P7 animals from 2 litters (24 retinas) for PLX, and 11 animals from 2 litters (22 retinas) for Vehicle. (B) UMAP plot of 13,667 microglia cells from all 4 samples distributed into 11 clusters by unsupervised clustering. Blue cells to the right of cluster 1 are members of cluster 6. (C) UMAP plots illustrating the distribution of cells from each condition. Number of cells per condition labeled in lower left. (D) UMAP plots of two genes enriched in each cluster. Color scale is based on relative gene expression: dark purple = highest, light yellow = lowest.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gating strategy for FACs of Sample 1 (primarily Bax WT) and (B) Sample 2 (primarily Bax KO) for single-cell sequencing. Animals were a mixture of CX3CR1-GFP/ + and CX3CR1-+/+. CCR2 was used to exclude monocytes and macrophages. (C) Gating strategy for FACs of CX3CR1-GFP/ + Vehicle and (D) PLX3397 treated samples. Ly6C was used to exclude monocytes and macrophages.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Cells, as identified by CellRanger, were filtered to exclude low quality cells: those with few features (genes) or high mitochondrial content. Cells with especially high transcript counts were eliminated as potential doublets. Cutoffs were set independently for Sample 1 (A), Sample 2 (B), Vehicle (C), and PLX (D) samples. (E) Dataset composition before and after cell filtering.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Summary of in silico genotyping workflow from alignment files to genotyping of individual cells. (B,C) Density plots of the two populations of cells identified by single nucleotide polymorphism content from Sample 1 (B) and Sample 2 (C). Y-axis is density scaled to the number of cells x 1000, and X-axis is natural-log normalized Bax counts. Populations are colored by their resulting genotype assignments: Bax WT (yellow) or Bax KO (maroon). (D) Table of the number of cells from the filtered dataset (Sample 1 or Sample 2) ultimately assigned to each genotype (Bax WT or Bax KO). (E,F) UMAP dimensional reduction of cells from Sample 1 (E’, green) or Sample 2 (D’’, purple) and reassigned to Bax WT (F’, yellow) or Bax KO (F’’, maroon).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) UMAP plot of 15,084 cells from all four conditions. Bax KO, 4224 cells; Bax WT 4902 cells; Vehicle, 4198 cells; PLX3397, 1760 cells. (B) UMAP plot with clusters labeled based on published markers: macrophages (dark red), monocytes (light red), perivascular macrophages (yellow), other myeloid-like cells (teal), non-myeloid 1 and 2 (shades of blue), and microglia (gray). (C) UMAP plots colored by relative gene expression (dark purple = highest, light yellow = lowest) of highly expressed or specific microglia genes. (D) UMAP plots of published monocyte or macrophage genes. (E) UMAP plot of neuronal gene expression. (F) UMAP plots illustrating the distribution of cells across clusters for each sample.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Max projected confocal image of in situ hybridization chain reaction (HCR) on P7 whole mount retina probed for Ccl3. CX3CR1-GFP (protein, green), Ccl3 (RNA, magenta). A’ inset, higher magnification. Scale bar 50 µm (B) Percent Ccl3+ of CX3CR1-GFP+ cells in each layer of the P7 retina of the mid-periphery. (n => 3; ± SEM). Data are from a single experiment. NFL, nerve fiber layer; IPL, inner plexiform layer; OPL, outer plexiform layer.
+
 Unsupervised re-clustering of 13,667 remaining cells yielded 11 microglia clusters (Figure 1). Cells from controls (Bax WT and Vehicle) were represented in every cluster (Figure 1), indicating that microglia in an individual developing CNS region during a specific time window are strikingly diverse. Further, we found that Bax KO and PLX-treated microglia had dramatic and opposing shifts in their distribution compared to controls (Figure 1). To determine the characteristics of the 11 clusters, we examined the top genes for each (Figure 1, Supplementary file 1). While virtually every cell expressed Apoe and Ctsd, both genes were significantly enriched in cluster 0, which had high expression of other DAM (Keren-Shaul et al., 2017), PAM (Li et al., 2019a), and ATM (Hammond et al., 2019) genes, such as Lyz2 and Cd9, but also intermediate levels of homeostatic gene expression such as P2ry12 and Tmem119. Thus, we called this cluster Apoe-enriched. Cluster 1 had highest expression of Tmem119 and P2ry12 as well as other homeostatic genes, including Itgam, Siglech, Tgfbr1, P2ry13, Selplg, and Adgrg1 and so we named it Homeostatic. Cluster 2 was enriched for chemokines including Ccl4 and Ccl3, two genes previously found in injury-responsive microglia in demyelinated lesions (Hammond et al., 2019) and in PAM of developing WM tracts (Li et al., 2019a), and had intermediate/high expression of homeostatic genes (e.g. Tmem119; Figure 1) and so we termed it Hom/chemokine cluster. Ccl3 and Ccl4 are among a set of genes that can be induced by dissociation (Marsh et al., 2020) so we confirmed that retinal microglia express Ccl3 and Ccl4 in vivo by in situ hybridization (Figure 1—figure supplement 5 and data not shown). Cluster 3 was marked by Npl, found in lipid-droplet microglia (Marschallinger et al., 2020), and Apoc1, a lipoprotein high in multiple sclerosis-associated human microglia (Masuda et al., 2019). Since this cluster was substantially increased in PLX-treated retinas, we named this cluster PLX-enriched. Chemokines Cxcl2 and Cxcl10 and pro-inflammatory cytokines, such as Il1b and Tnf, were high in Cluster 4, dubbed the Chemokine/cytokine cluster. Cluster 5 most resembled ATM (Hammond et al., 2019) (69/193 genes shared) and PAM (Li et al., 2019a) (79/193 genes shared) with specific expression of Spp1 and high expression of Fabp5, Ctsl, Lpl, Igf1, and Csf1 and thus we termed it ATM/PAM-like. Cluster 6 was named Antioxidant-responsive cluster due to high expression of antioxidant responsive genes, Hmox1 and Gclm (Rojo et al., 2014). Clusters 7, 8, and 9 represented Cycling microglia and expressed Mki67, Top2a, and Mcm genes. Cluster 10, the smallest, contained 71 cells with high and very specific expression of interferon response genes such as Ccl5, Ifit3, and Ifitm3 (Dorman et al., 2022) and was thus termed Interferon-responsive cluster. Overall, these proportions were consistent with our previous quantification of select homeostatic and DAM-related genes by in situ hybridization (Anderson et al., 2019a). Thus, these data suggest that within the developing retina, several microglial states coexist including homeostatic and various subsets of DAM/PAM/ATM-related and chemokine-expressing microglia.
 
-## Postnatal retinal microglia encompass a spectrum of states from homeostatic to remodeling
+### Postnatal retinal microglia encompass a spectrum of states from homeostatic to remodeling
 
 We noted a continuum of expression of the homeostatic genes Tmem119 and P2ry12 across the clusters that appeared to be inverse to broadly expressed DAM/PAM/ATM genes such as Apoe and Ctsd (Figure 1). We more closely examined the expression of homeostatic genes, as well as genes associated with lysosomal function, lipid metabolism and transport, and other DAM/PAM/ATM-related genes (see methods for lists). As for Tmem119 and P2ry12, we found a gradient of expression of homeostatic genes including Siglech, Tgfbr1, and Selplg which were highest in Homeostatic cluster (1), high/intermediate in Hom/chemokine (2), intermediate in Apoe-enriched (0), Chemokine/cytokine cluster (4), ATM/PAM-like (5), Antioxidant-responsive (6), and Interferon-responsive (10), with lowest expression in PLX-enriched cluster (3), suggesting a spectrum from more to less homeostatic (Figure 2C and C’).
 
@@ -50,13 +74,21 @@ We noted a continuum of expression of the homeostatic genes Tmem119 and P2ry12 a
 
 To determine whether this related to shifting phagocytic function of microglia, we examined the expression of lysosomal genes including Lyz2, Galns and Cst7 and saw roughly the opposite pattern. These genes were either low, absent, or sparse in Homeostatic cluster (1) and Hom/chemokine (2) and generally more highly or broadly expressed in Apoe-enriched (0), PLX-enriched (3), Chemokine/cytokine cluster (4), ATM/PAM-like (5), Antioxidant-responsive (6), and Interferon-responsive (10) (Figure 2D and D’). Notably, Lyz2 showed highest levels in PLX-enriched (3) the least homeostatic cluster. Comparing our clusters to a gene ontology (GO) list of 552 Lysosomal genes (GO:0005764) (Bult et al., 2019), we found cluster 3 had the greatest enrichment (35/552), followed by clusters 5, 10, 6, 4, and 0, with homeostatic clusters (1 and 2) expressing the lowest number of genes. Additionally, genes involved in lipid metabolism and cholesterol transport, important processes following the engulfment of apoptotic cells (Doran et al., 2020), followed the same trend (Figure 2E and E’). Cluster 3 again expressed the highest number (36/1428) of Lipid Metabolic process genes (GO:0006629) (Bult et al., 2019), followed by 5, 6, 4, and 10 while homeostatic clusters (1 and 2) expressed the lowest number. Thus, microglia in clusters (0,3,4,5,6,10) are equipped to be actively breaking down phagocytosed material compared to more homeostatic clusters (1,2). Therefore, we hypothesize that clusters 0,3,4,5,6, and 10 are involved in active remodeling activities and refer to them as remodeling clusters (Figure 2B). We confirmed genes involved in lysosomal and lipid metabolism function were enriched in remodeling clusters by differential expression analysis on clusters (1,2) compared to (0,3,4,5,6,10) (Supplementary file 2). We next examined the expression of additional DAM/ATM/PAM-related genes, including Igf1, and recognition receptors Itgax and Axl. We noted similar low expression in Homeostatic cluster (1) and Hom/chemokine (2) and higher expression in the remodeling clusters (0,3,4,5,6,10) (Figure 2F and F’). Interestingly, DAM/PAM/ATM-related genes had varying cluster specificity. Genes such as Apoe were expressed in nearly every cell (Figure 1), whereas Igf1 and Spp1 were more restricted to specific clusters, suggesting that regulation of these genes is complex (Figure 2F). Together, these results suggest that phagolysosomal function defines the spectrum of microglial states in the postnatal retina.
 
-## Neuronal apoptosis drives multiple remodeling states
+### Neuronal apoptosis drives multiple remodeling states
 
 We previously showed that neuronal death has a major influence on expression of DAM-related genes in postnatal retinal microglia (Anderson et al., 2019a) and wondered whether recognition or clearance of dying neurons was a key factor in driving diverse microglial remodeling states. We examined microglia from Bax KO retinas in which apoptotic death programs in RGCs and other neurons are selectively lost (Fricker et al., 2018) and saw a dramatic shift in cluster distribution with the loss of Bax compared to littermate controls (Figure 3A). We found a fivefold expansion in the Homeostatic cluster (1) in Bax KO compared to WT (Figure 3A, B and C). This was concurrent with decreases in remodeling clusters Apoe-enriched (0), Chemokine/cytokine expressing (4), and ATM/PAM-like (5), and the minor PLX-enriched cluster (3), which were 4.7-fold, 3.46-fold, 5.86-fold, and fivefold more abundant in WT, respectively (Figure 3A and B). Clusters that remained largely unaltered included Hom/chemokine (2), Antioxidant-responsive (6), Cycling (7–9), and Interferon-responsive (10), suggesting they were not driven by apoptotic cell interactions or clearance (Figure 3A and B). Therefore, we conclude that the spectrum of homeostatic to more remodeling clusters (0,3,4, and 5) in the postnatal retina is driven predominately by neuronal apoptosis.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig3-v2.jpg)
+
+**Figure 3.:** (A) UMAP plot of microglia cells from Bax WT (left) and Bax KO (right) samples distributed into 11 clusters. (B) Bar graph of the proportion of cells in each cluster for each sample. Chi-square test comparing cluster distribution ****p < 0.0001. (C) UMAP plots showing expression of representative genes from selected clusters. (D) Volcano plot showing differential gene expression of all Bax KO cells compared to Bax WT cells. Each gene is plotted according to the significance (-Log(p value)) and magnitude (Log(fold change)) of the difference such that those genes enriched in Bax KO are colored purple, and those down-regulated in Bax KO are yellow. Differentially expressed genes are defined by p-value ≤ 0.05 and absolute value of Log(fold change) > 0.25. (E) KEGG Pathway analysis of 183 downregulated genes in Bax KO compared to Bax WT using GeneCodis 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Max projected confocal image of P7 wildtype whole mount retina. CX3CR1-gfp (green); C1q (magenta). Scale bar 100 µm. (B) Percent colocalization of C1q+ cells to CX3CR1-GFP+. (n = 1 WT, n = 4 HET, n = 4 KO; ± SEM) Kruskal-Wallis test statistic = 4.818, p = 0.0667. Data from two litters. (C) Max projected confocal image of whole mount immunostained retinas of Bax WT and littermate Bax KO. CX3CR1-gfp (green); C1q (magenta). Scale bar 50 µm. (D) Quantification of C1q+ microglia in a 0.526 mm2 area of the dorsal, mid-peripheral, vascularized region of the retina. (n = 3 WT, n = 11 Het, n = 9 KO; ± SEM) Data from three litters. One-way ANOVA F(2,20)=19.90 p < 0.0001 and Tukey’s multiple comparisons test *p = 0.0112, ****p < 0.0001.
+
 To further examine microglial genes dependent on neuronal apoptosis, we compared all cells from each genotype, ignoring cluster membership, and identified genes that were specific to each sample (Figure 3D, Supplementary file 3). Consistent with a shift to a more homeostatic state, Tmem119, P2ry12, and Siglech were among the 133 upregulated genes in microglia from Bax KO retina. The 183 downregulated genes included lysosomal and lipid metabolism genes such as Apoe, Lyz2, Cst7, Ctsb, Lpl and Cd68, DAM/PAM/ATM-related genes such as Igf1 and Spp1, and recognition receptors Itgax and Axl (Figure 3C and D). We next performed KEGG analysis using GeneCodis 4 (García-Moreno et al., 2021) on downregulated genes in Bax KO to identify major pathways driven by interactions with dying neurons (Figure 3E). Consistent with the idea that microglial phagocytosis was a key factor in these gene expression changes, we found metabolic and lysosomal pathways significantly reduced. To determine whether loss of Bax altered microglia density or distribution, we used C1q as a marker for microglia, which we validated by both scRNAseq (Figure 1—figure supplement 4C) and immunostaining (Figure 3—figure supplement 1A,B). We found that microglia remained uniformly spaced but that density was reduced by nearly half in Bax KO retinas (Figure 3—figure supplement 1C,D), consistent with our prior flow cytometry analysis (Anderson et al., 2019a). Altogether, this suggests that neuronal apoptosis regulates important properties of microglia in the postnatal retina, including overall density as well as the emergence of multiple remodeling states.
 
-## Subsets of remodeling states survive CSF1R inhibition, while homeostatic microglia are more vulnerable
+### Subsets of remodeling states survive CSF1R inhibition, while homeostatic microglia are more vulnerable
 
 A striking property of microglia in postnatal retina is that ~60% survive inhibition of CSF1R signaling, while only very small subsets show this property in postnatal brain (Anderson et al., 2019a) or adult brain (Zhan et al., 2020). We previously found that surviving microglia had reduced homeostatic gene expression and increased DAM/PAM/ATM gene expression, and this required neuronal apoptosis (Anderson et al., 2019a). Since we found that the less homeostatic remodeling clusters (0,3,4,5) were driven by neuronal apoptosis, we investigated whether these microglial states would be more resistant to CSF1R inhibition. We examined scRNAseq of Vehicle and PLX-treated microglia (dosed for 3 days) and found a large shift in the distribution of cells across clusters with PLX treatment (Figure 4A and B). Several remodeling clusters were either enriched or maintained. The least homeostatic cluster, PLX-enriched (3), which was a very small proportion of cells in both Vehicle and Bax WT (Figure 3A and B), represented nearly 60% of remaining microglia following PLX3397 (increased sixtyfold) and thus seemed to arise, in part, by treatment (Figure 4A and B). This could potentially be due to the further reduction of homeostatic properties of surviving microglia with CSF1R blockade (Kempthorne et al., 2020). Remodeling cluster Chemokine/cytokine (4) was increased twofold with PLX-treatment and ATM/PAM-like (5), Antioxidant-responsive (6), and Interferon-responsive (10) were slightly reduced or unchanged (0.755-fold, 0.654-fold, 0.979-fold, respectively), suggesting they are more resistant than other subsets (Figure 4A and B). Conversely, we found clusters that had high or intermediate expression of homeostatic genes, Apoe-enriched (0), Homeostatic (1), Hom/chemokine (2), and Cycling (7,8,9) were largely absent following PLX treatment, suggesting these clusters are more dependent on CSF1R for survival or that they had shifted to a different state (Figure 4A and B). We noted the overlap between clusters dependent on neuronal apoptosis (0,3,4, and 5) and resistant to loss of CSF1R signaling (3,4,5,6, and 10), illustrating the link between the two and arguing that certain microglial states driven by neuronal apoptosis may confer resistance to CSF1R inhibition. Furthermore, we found that downregulation of Csf1r alone does not alter dependence as more resistant clusters (3,4,5,6, and 10) had slightly reduced expression of Csf1r compared to susceptible clusters (0,1, and 2) but comparable to other susceptible clusters (7,8,9) (Figure 4D), consistent with our previous findings (Anderson et al., 2019a).
 
@@ -66,11 +98,23 @@ A striking property of microglia in postnatal retina is that ~60% survive inhibi
 
 To further probe genes and pathways enriched following CSF1R inhibition, we performed a pairwise comparison on all Vehicle and PLX-treated cells, regardless of cluster identity. We found that DAM/ATM/PAM-related genes Apoe, Itgax, and Fabp5, lysosomal genes Lyz2 and Ctss, and lipid metabolism genes Nceh1, Soat1, Abca1, and Apoc1 were among the 254 upregulated genes in PLX-treated cells (Figure 4C, E, Supplementary file 4). Consistent with a loss of more homeostatic microglia, homeostatic genes including Tmem119, P2ry12, and Siglech were significantly reduced (181 genes downregulated) (Figure 4C, E). To uncover pathways associated with resistance to CSF1R inhibition, we performed KEGG analysis (García-Moreno et al., 2021) on all upregulated genes in PLX cells and found that translation, metabolic pathways, and phagosome processes were enriched (Figure 4F). Altogether, we conclude that a change in CSF1R dependence is linked to increased phagocytosis, lysosomal function, and altered microglia metabolic states, and that homeostatic microglia are more dependent on CSF1R signaling for survival.
 
-## Mer and CR3 are required for apoptotic RGC clearance
+### Mer and CR3 are required for apoptotic RGC clearance
 
 To understand the role of apoptotic cell phagocytosis in promoting distinct microglial properties, we sought to test whether recognition receptors were important both for driving microglial remodeling states as well as changes in CSF1R dependence. We first wanted to confirm that microglia were important for clearance of dying neurons within the retina and identify the recognition receptors required, focusing on apoptotic RGCs. We analyzed genetic KO of receptors previously implicated in the finding, recognition, or phagocytosis of apoptotic cells: find-me pathway, fractalkine receptor CX3CR1 (Wolf et al., 2013), integrin receptor complement receptor 3 (integrin αMß2, CD11b, CR3), and TAM receptors Mer and Axl (Figure 5A; Fourgeaud et al., 2016; Lemke, 2019). We used wildtype animals from the CX3CR1 (CX3CR1-WT) and Mer (Mertk-WT) background as well as CX3CR1-GFP/+ (Jung et al., 2000) for controls. First, we looked at whether loss of any of these receptors resulted in changes to microglial density. By wholemount immunostaining, we found slight variations at P5 but none that reached significance compared to CX3CR1-GFP/+ (Figure 5—figure supplement 1A, B). Next, we analyzed the density of total apoptotic bodies by cleaved caspase 3 (CC3) in the ganglion cell layer after the peak of RGC death to measure any buildup (Figure 5—figure supplement 1C, D and Figure 5—figure supplement 2A). We found that loss of CX3CR1, CR3, Mer, Axl, and both Mer/Axl resulted in increased apoptotic body density compared to WT controls suggesting these pathways were important for microglial phagocytosis of dying cells within the retina. To ask what pathways were important for clearing dying RGCs specifically, we looked at the density of CC3+RBPMS+ double-positive cells at P5 in all KOs (Figure 5B, C and D, Figure 5—figure supplement 2B). We found the CR3 KO, Mertk KO, and Mertk/Axl dKO all had increased density of dying RGCs compared to controls (Figure 5C and D) with no change in overall RGC density or retinal blood vessel development (Figure 5—figure supplement 1E,F,G,H). CX3CR1 and Axl were dispensable for clearance of dying RGCs, and Mertk/Axl dKOs did not appear to have a further clearance deficit above Mertk KO alone (Figure 5C, D). Thus, both CR3 and Mer receptors, which are broadly expressed in microglia, are important for the timely clearance of RGCs undergoing developmental cell death, consistent with prior studies implicating these pathways in efferocytosis in the CNS (Lemke, 2019).
 
-## Axl promotes microglial survival in the absence of CSF1R signaling
+![Figure 5.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cartoon of candidate pathways. (B) Schematic for collection at P5 after the bulk of RGC developmental death. (C) Quantification of the average of central and peripheral 0.4 mm2 RGC death (Figure 5—figure supplement 2B) in dorsal leaf of all genotypes. (left) (n = 6 CX3CR1 WT, n = 8 CX3CR1-GFP/+, n = 4 CX3CR1 KO, n = 13 CR3 KO, CX3CR1-GFP/+; ± SEM) ≥ 2 litters collected for each genotype. Welch’s ANOVA test W(3,12.58) = 23.75, p < 0.0001 and Dunnett’s T3 multiple comparisons tests. (right) (n = 5 Mertk WT, n = 13 Mertk KO, n = 8 Axl KO, n = 15 Mertk Axl dKO; ± SEM) ≥ 2 litters collected for each genotype. Kruskal-Wallis test statistic = 25.97 p < 0.0001 and Dunn’s multiple comparisons tests. Not all comparisons shown on graphs but can be found in Supplementary file 7. (D) Max projected confocal images of dying RGCs (CC3+RBPMS+) in KOs in the dorsal mid-periphery in the ganglion cell layer. Apoptotic bodies, CC3 (magenta); RGCs, RBPMS (green). Scale bars 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Max projected confocal images of whole mount immunostained retinas of all genotypes at P5 of dorsal leaf, mid-peripheral region. C1q (mono). Scale bar 100 µm. (B) Microglia density (C1q+/mm2) for each genotype in dorsal leaf, mid-peripheral, vascularized region. (n = 6 CX3CR1-GFP/+, n = 5 CX3CR1 KO, n = 6 CR3 KO CX3CR1-GFP/+, n = 6 Mertk KO, n = 6 Axl KO, n = 7 Mertk Axl dKO; ± SEM) ≥ 2 litters collected for each genotype. Kruskal-Wallis test statistic = 15.91 p = 0.0071 and Dunn’s multiple comparisons tests. (C) Max projected confocal images of whole mount immunostained retinas of all genotypes at P5 of dorsal leaf, mid-peripheral region. CC3 (mono). Scale bar 100 µm. (D) Total apoptotic body density (CC3+/mm2) for each genotype in entire dorsal leaf (Figure 5—figure supplement 2A). (left) (n = 7 CX3CR1 WT, n = 8 CX3CR1 KO, n = 17 CR3 KO CX3CR1-GFP/+; ± SEM) ≥ 2 litters collected for each genotype. Ordinary one-way ANOVA F(2, 29) = 12.95 p < 0.0001 and Tukey’s multiple comparisons tests. (right) (Mertk WT, n = 12 Mertk KO, n = 12 Axl KO, n = 16 Mertk Axl dKO; ± SEM) ≥ 2 litters collected for each genotype. Welch’s ANOVA test W(3.00,23.07) = 90.36 p < 0.0001 and Dunnett’s T3 multiple comparisons tests. Not all comparisons shown on graph but can be found in Supplementary file 7. (E) Max projected confocal images of whole mount immunostained retinas of all genotypes at P5 of dorsal leaf, mid-peripheral region. RBPMS (mono). Scale bar 100 µm. (F and G) RBPMS density for each genotype in dorsal leaf, central (F) and peripheral (G). (n = 9,8 CX3CR1-GFP/+, n = 4 CX3CR1 KO, n = 5 CR3 KO CX3CR1-GFP/+, n = 7 Mertk KO, n = 8 Axl KO, n = 7 Mertk Axl dKO; ± SEM) ≥ 2 litters collected for each genotype. (F) Central: Ordinary one-way ANOVA F(5,34)=1.391, p = 0.2522 and (G) Peripheral: Ordinary one-way ANOVA F(5,33)=0.43259, p = 0.8937. (H) Max projected confocal images of whole mount immunostained retinas of all genotypes at P5 of dorsal leaf. IB4-lectin (mono). Scale bar 100 µm. ≥ 2 litters observed for each genotype.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Max projected confocal images of dorsal leaf of whole mount immunostained retinas to illustrate area analyzed for total apoptotic body density. Apoptotic cells, CC3 (magenta); RGCs, RBPMS (green). Circular grid in increments of 500 µm. White line in merge outlines area analyzed. Scale bar 100 µm. (B) Confocal of whole mount immunostained retinas. Apoptotic cells, CC3 (magenta); RGCs, RBPMS (green). Circular grid in increments of 500 µm. One central and one peripheral ROI of 0.400 mm2 was analyzed in the dorsal leaf of each animal and averaged. Scale bar 100 µm.
+
+### Axl promotes microglial survival in the absence of CSF1R signaling
 
 Having identified receptors important for RGC clearance (CR3 and Mer), we were next able to ask whether these pathways were also important for driving microglial survival following CSF1R inhibition. We administered PLX3397 as previously published (Anderson et al., 2019a; Figure 6A) and, surprisingly, found that loss of CR3, CX3CR1, or Mer did not significantly reduce the proportion of surviving microglia compared to controls (Figure 6B, C). However, loss of Axl allowed for greater depletion, matching levels achieved with loss of developmental apoptosis (Bax KO) that we previously reported (Anderson et al., 2019a; Figure 6B, C). Mertk/Axl dKOs did not have an additive effect, suggesting Axl signaling alone was important for changes in microglial survival in the absence of CSF1R signaling (Figure 6B, C). Altogether, we find that the receptors important for effective clearance (Mer and CR3) do not alter microglial dependence on CSF1R, but that TAM receptor Axl, which is induced by neuronal apoptosis, augments microglial survival in the absence of CSF1R signaling in retina.
 
@@ -78,9 +122,17 @@ Having identified receptors important for RGC clearance (CR3 and Mer), we were n
 
 **Figure 6.:** (A) Dosing regimen of PLX3397 to various genotypes. (B) Confocal images of microglia in the NFL/GCL in all genotypes from central to mid-periphery of the dorsal leaf. C1q (mono). Scale bars 100 µm. (C) Ratio of density of CD45+CX3CR1-gfp+ or CD45+CD11b+ (microglia/singlets) in PLX treated retinas over genotype-matched controls by flow cytometry. (n = 17 CX3CR1-GFP/+, n = 5 Bax KO, n = 11 CX3CR1 KO, n = 5 CR3 KO CX3CR1-GFP/+, n = 9 Mertk KO, n = 8 Axl KO, n = 7 Mertk Axl dKO; ± SEM) ≥ 2 litters collected for each genotype. Line demarcates data from CX3CR1-GFP/ + and Bax KO previously published in Anderson et al., 2019a. Welch’s ANOVA W(6,18.55) = 16.53, p < 0.0001 and Dunnett’s T3 multiple comparisons test. Not all comparisons shown but can be found in Supplementary file 7.
 
-## Mer and Axl are not required for expression of lysosomal, lipid metabolism, or remodeling genes
+### Mer and Axl are not required for expression of lysosomal, lipid metabolism, or remodeling genes
 
 Since Mer was important for phagocytosis while Axl mediated survival in the absence of CSF1R signaling, we wanted to delineate microglial gene expression changes that were driven by Mer versus Axl. We performed bulk RNA-seq on sorted microglia from P4 Mertk and Axl KOs and compared them to WT controls by DESeq2 (Figure 7A). Compared to controls, we found modest changes in gene expression, with 42 downregulated genes and 44 upregulated genes in Mertk KO microglia (Figure 7B, D, Supplementary file 5). Despite the fact that Mertk KOs had reduced clearance of dying RGCs, there was a minimal effect on lysosomal or lipid metabolism genes when compared to GO lists (Bult et al., 2019). Of the 42 downregulated genes, three are involved with lysosomal processes (Sgsh, Arsb and Ifi30) and six in lipid metabolism (Tspo, Enpp1, Ivd, Nceh1, Lbr, and Gpx1). Further, when we compared our 42 downregulated genes to published datasets ATM (Hammond et al., 2019), PAM (Li et al., 2019a), DAM (Keren-Shaul et al., 2017), only Nceh1 was significantly reduced (Figure 7B, D). Rather, Csf1, Ccl9, Lag3, and Itgax were significantly increased (Figure 7B, D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig7-v2.jpg)
+
+**Figure 7.:** (A) Workflow for P4 retinal collection, dissociation, sorting, and bulk sequencing of microglia from three different groups: WT, Mertk KO, and Axl KOs (n = 3 each). (B,C) Volcano plot of differentially expressed genes in (B) Mertk KO versus WT of (C) Axl KO versus WT. Top, showing all genes and bottom, zoomed in to axis. Each gene is plotted according to the significance (-Log(p value)) and magnitude (Log2 (fold change)) of the difference such that those genes enriched in KO are green and those downregulated in KO are purple. Colored points indicate genes with p-value ≤ 0.05 and absolute value of Log2(fold change) > 0.5. (D) Heatmap of all differentially expressed genes between WT and Mertk KO and WT and Axl KO, colored by z-score of rlog values across samples.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76564/elife-76564-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Workflow for P7 retinal collection, dissociation, sorting, and bulk sequencing of microglia from 2 groups: WT, Mertk Axl dKO (n = 3 each). (B) Volcano plot of bulk sequencing on sorted microglia from WT and Mertk Axl dKO retinas (n = 3 each) padj <0.05. 404 upregulated and 1013 downregulated genes in dKO versus WT. (B) Heatmap of bulk sequencing on sorted microglia from WT and Mertk Axl dKO retinas top 20 genes upregulated and downregulated in dKO versus WT, colored by z-score of rlog values across samples.
 
 Comparison of Axl KO to WT microglia revealed even fewer differentially expressed genes. Consistent with Axl being dispensable for RGC clearance, there was no change in lysosomal and lipid metabolism genes (Bult et al., 2019). DAM/ATM/PAM-related gene expression was largely unaltered, with the exception of Myo1e and Spp1, and other than Spp1, there was no change in genes associated with survival pathways (Figure 7C, D, Supplementary file 5). The majority of differentially expressed genes were different in the two KOs (Figure 7D); however, sequencing of microglia from P7 Mertk/Axl dKO retinas again revealed only a modest change in selected lysosomal, lipid metabolism (Bult et al., 2019), or DAM/PAM/ATM-related genes (Figure 7—figure supplement 1A, B Supplementary file 6). Based upon these findings, we first conclude that while phagocytosis is altered in Mertk KOs, this is not sufficient to suppress expression of most remodeling genes, suggesting that Mer-mediated signaling does not strictly drive microglia remodeling gene expression. Furthermore, while Axl facilitates microglia survival after CSF1R inhibition, it is also not required to drive microglia remodeling gene expression.
 
@@ -106,74 +158,455 @@ Altogether, we show neuronal cell death is a key factor driving multiple states 
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Animal husbandry and procedures
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>B6.129P2 (Cg)-Cx3cr1tm1Litt/J</td>
+      <td>Jackson Laboratories Jung et al., 2000</td>
+      <td>005582</td>
+      <td>A kind gift from Dr. Richard Lang with permission from Dr. Steffen Jung</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>B6.129 × 1-Baxtm1Sjk/J</td>
+      <td>Jackson Laboratories Knudson et al., 1995</td>
+      <td>002994</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>B6.129S4-Itgamtm1Myd/J</td>
+      <td>Jackson Laboratories Coxon et al., 1996</td>
+      <td>003991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>B6.129-Mertktm1Grl/J</td>
+      <td>Lu et al., 1999</td>
+      <td></td>
+      <td>A kind gift from Dr. Greg Lemke</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, M/F)</td>
+      <td>B6.129-Axltm1Grl/J</td>
+      <td>Lu et al., 1999</td>
+      <td></td>
+      <td>A kind gift from Dr. Greg Lemke</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat polyclonal) anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab5450RRID: AB_304897</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit monoclonal) anti-C1q</td>
+      <td>Abcam</td>
+      <td>Cat# ab182451 RRID: AB_2732849</td>
+      <td>IF (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Rabbit monoclonal) anti-active caspase-3</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 559,565RRID: AB_397274</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Guinea pig polyclonal) anti-RBPMS</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# ABN1376RRID: AB_2687403</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 (Donkey polyclonal) anti-goat</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11055RRID: AB_2534102</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>555 (Donkey polyclonal) anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A31572RRID: AB_162543</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>647 (Donkey polyclonal) anti-guinea pig</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 706-605-148RRID: AB_2340476</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 (Rat monoclonal) anti-CD45</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 563,890RRID: AB_2651151</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 (Rat monoclonal) anti-CD11b</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 557,672RRID: AB_396784</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE (Rat monoclonal) anti-CCR2</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# FAB5538PRRID: AB_10718414</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC (Rat monoclonal) anti-Ly6C</td>
+      <td>BD Bioscience</td>
+      <td>Cat# 560,595RRID: AB_1727554</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cx3cr1 ISH probe</td>
+      <td>Molecular Instruments, Choi et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ccl3 ISH probe</td>
+      <td>Molecular Instruments, Choi et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FITC IB4-lectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L9381</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In situ hybridization chain reaction v3.0 (HCR)</td>
+      <td>Molecular Instruments (Los Angeles, CA) Choi et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74,034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext rRNA Depletion Kit (human/mouse/rat)</td>
+      <td>New England BioLabs</td>
+      <td>Cat# E6310L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II RNA Library Prep Kit for Illumina</td>
+      <td>New England BioLabs</td>
+      <td>Cat# E7770L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent D1000 ScreenTape assay</td>
+      <td>Agilent</td>
+      <td>Cat# 5067–5582 and 5067–5583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa Biosystems Kapa Library Quantification Kit</td>
+      <td>Roche</td>
+      <td>Cat# KK4824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaSeq XP kit v1.5</td>
+      <td>Illumina</td>
+      <td>Cat# 20043131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NovaSeq 6,000 S4 reagent kit v1.5</td>
+      <td>Illumina</td>
+      <td>Cat# 20028312</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pexidartinib (PLX3397)</td>
+      <td>AdooQ BioScience</td>
+      <td>Cat# A15520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>corn oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C8267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# BP231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Liberase TM</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 5401119001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Red Blood Cell Lysis Buffer</td>
+      <td>eBioscience</td>
+      <td>Cat# 00-4333-57</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mouse Fc Block</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553,142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D4513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoroshield mounting medium with DAPI</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# F6057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biorender</td>
+      <td>Biorender, Toronto, ON</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon Elements</td>
+      <td>Nikon, Melville, NY</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (v9.0)</td>
+      <td>GraphPad, La Jolla, CA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>Flowjo, LLC, Ashland, Oregon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3ʹ GEM, Library &amp; Gel Bead Kit v3</td>
+      <td>10 X Genomics</td>
+      <td>PN-1000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellranger (v3.1.0)</td>
+      <td>10 X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (v3.1.5)</td>
+      <td>Stuart et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scSplit (v1.0.0)</td>
+      <td>Xu et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>samtools view (v1.8)</td>
+      <td>Danecek et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>freebayes (v1.3.1)</td>
+      <td>Garrison and Marth, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vcffilter (v1.0.1)</td>
+      <td>Garrison et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bcftools merge (v1.9)</td>
+      <td>Danecek et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BBmap (v38.34)</td>
+      <td>Bushnell B. http://sourceforge.net/projects/bbmap</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt (v1.16)</td>
+      <td>Martin, 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v2.7.9a)</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts (v1.6.3)</td>
+      <td>Liao et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 (v1.32.0)</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Animal husbandry and procedures
 
 All animals were treated within the guidelines of the University of Utah Institutional Animal Care and Use Committee (IACUC) and all experiments were IACUC approved. Mice were housed in an AAALAC accredited animal facility with 12 hr light/12 hr dark cycles and ad libitum access to food and water. Both sexes were used for all experiments. Information on the ages of mice used for each experiment can be found in the figures/text. Pexidartinib (PLX3397) was dissolved in corn oil and 10% DMSO and administered to postnatal pups by daily intraperitoneal injection P3-P5 or P4-P6 at 0.25 mg/g body weight. Mice were euthanized by isoflurane asphyxiation followed by decapitation.
 
-## Mouse strains
+#### Mouse strains
 
 The B6.129P2 (Cg)-Cx3cr1tm1Litt/J mice were a gift from Richard Lang with permission from Dr. Steffen Jung (Jung et al., 2000). B6.129 × 1-Baxtm1Sjk/J mice (JAX 002994) (Knudson et al., 1995) and B6.129S4-Itgamtm1Myd/J (JAX 003991) (Coxon et al., 1996) were purchased from the Jackson Laboratory and both were crossed with the B6.129P2 (Cg)-Cx3cr1tm1Litt/J strain. The B6.129-Mertktm1Grl/J and B6.129-Axltm1Grl/J strains (Lu et al., 1999) were a kind gift from Dr. Greg Lemke and double knockouts were generated in house. Analyses were performed prior to rod photoreceptor degeneration in Mertk KO (Duncan et al., 2003).
 
-## Tissue processing
+#### Tissue processing
 
 Following euthanasia, retinas were dissected in ice-cold 0.1 M PBS. For retinal whole mounts for immunostaining, eyes were removed from the head and retinas were carefully dissected from the rest of the eye (cornea, lens, RPE, hyaloid vasculature, vitreous, ciliary body) in ice-cold PBS. Whole neural retinas were washed in PBS for 10–20 min and then fixed in 4% PFA for 30–45 min at room temperature. For RNAase-free dissections for qHCR or FACs, retinas were carefully dissected in RNase-free conditions using ice-cold, sterile RNase-free PBS, removing all non-neural eye tissue (ciliary body, pigmented epithelium, vitreous).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 As previously done (Anderson et al., 2019a), whole retinas were fixed in 4% PFA for 30–40 min and then washed in ice-cold PBS three times for 5–10 min each. Retinas were incubated for 1 hr at room temperature in blocking buffer (0.2% triton-X, 10% BSA, 10% normal donkey serum in 0.01 M PBS), and subsequently incubated in primary antibody for 2 days at 4 °C in (0.2% triton-X, 5% BSA in 0.01 M PBS). They were then washed three times with PBS and incubated in secondary antibodies (5% BSA in PBS) for 2 hr at room temperature, washed, and mounted with Fluoroshield mounting medium with DAPI. Antibody information in Key Resources Table.
 
-## In situ hybridization chain reaction (HCR)
+#### In situ hybridization chain reaction (HCR)
 
 As previously done (Anderson et al., 2019a), wholemount retinas were fixed overnight in 4% PFA in 4 °C. Retinas were washed and dehydrated in methanol/PBS at 25%, 50%, two times 100% for 15 min each, stored in 100% methanol overnight at 4 and 20°C long term. In situ hybridization was performed as published using v3.0 reagents from Molecular Instruments (https://www.molecularinstruments.com) (Choi et al., 2018). Briefly, samples were rehydrated using (75% Methanol/25% PBST, 50% Methanol/50% PBST, 25%, Methanol/75% PBST, two times 100% PBST), treated with Proteinase K, and post fixed 20 min at room temperature in 4% PFA, and washed three times with PBST. Pre-hybridization was performed in 30% probe hybridization buffer for 30 min at 37 °C, and retinas were placed in hybridization buffer at 37 °C overnight. Retinas were washed, placed in amplification buffer for 30 min at room temperature. Separately, hairpins used for amplification were denatured at 95 °C for 90 s and cooled to room temperature for 30 min. Retinas were placed in amplification buffer with hairpins at room temperature in the dark overnight. Retinas were washed, DAPI stained, and mounted on slides. Probes recognizing all known transcript variants for each of Cx3cr1 and Ccl3 were generated by Molecular Instruments. Using the B6.129P2 (Cg)-Cx3cr1tm1Litt/J (Jung et al., 2000), the fluorescent signal represents detection of Cx3cr1 mRNA by HCR and GFP fluorescence which persists through the procedure.
 
-## Confocal microscopy
+#### Confocal microscopy
 
 Confocal images were acquired on an inverted Nikon A1R Confocal Microscope. Images were acquired at 20 X objective with a 3 X digital zoom. Multi-points were stitched with a 10% overlap. Images of retinal whole mounts were 144 multi-point images (on average) to obtain the entire dorsal retina. Stacks through the Z plane were at 0.8 µm steps of about ~13 µm thickness to capture just the nerve fiber layer (NFL) and ganglion cell layer (GCL) at 0.2 μm pixel resolution. Whole mount retina images represent max projections of inner retina (NFL/GCL) from the central retina (optic nerve) to the periphery (edge of retina). In cases of microglial quantification, whole mount imaging and analysis spanned ~25 µm thickness from NFL to inner plexiform layer (IPL). Image acquisition settings were consistent across ages and genotypes.
 
-## Dissociation, fluorescence-activated cell sorting (FACS) and flow cytometry
+#### Dissociation, fluorescence-activated cell sorting (FACS) and flow cytometry
 
 Except for SC-sequencing, we pooled two retinas from an individual animal for each sample for flow cytometry and FACs. Freshly dissected pure retinas were dissociated in PBS, 50 mM HEPES, 0.05 mg/ml DNase I, and 0.025 mg/ml Liberase for 35 min with intermediate trituration at 37 °C. Cells were passed through a 70 µm nylon cell strainer, washed with ice-cold staining buffer (1 X PBS, 2% BSA, 0.1% sodium azide, and 0.05% EDTA), and red blood cells were lysed. Cell counts were determined using a cell counter (Invitrogen Countess) and Fc block was added at 2 μL per 106 cells. Antibodies were applied for 30 min on ice. Antibody information in Key Resources Table. Cells were washed, pelleted, and resuspended in 500 μL staining buffer. FACS was performed using a BD FACS Aria cell sorter at the University of Utah Flow Cytometry Core. Forward and side scatter were used to eliminate debris, and both the width and area of the forward and side scatter was used to discriminate singlets. For flow analysis, roughly 1 million singlet events (300,000 in rare cases) were recorded for flow analysis using FlowJo software (Flowjo, LLC, Ashland, Oregon).
 
-## Single-cell RNA sequencing
+#### Single-cell RNA sequencing
 
 To ensure we captured enough cells for analysis (Liddelow et al., 2020), we pooled 13 animals/26 retinas for each Bax WT (Sample 1) and littermate KO (Sample 2) from six litters. 12 animals/24 retinas for PLX3397 CX3CR1-GFP/ + and 11 animals/22 retinas were pooled for Vehicle CX3CR1-GFP/ + controls each from two litters. Altogether, sequencing data represent 49 animals divided into two experiments: Bax/WT and PLX/Veh. The dissociation was performed as normal, except pooling six retinas per tube during dissociation. CD45+ CD11b+/GFP+ CCR2- cells were sorted for Bax samples and CD45+GFP+ Ly6C- cells were sorted for PLX and Vehicle samples. Cells were sorted using a 5 laser BD FACSAria with a 70 μm nozzle at 55 psi by the University of Utah Flow Core into a cold, empty tube before library generation. 15,000 cells for each Bax sample and 7000–10,000 cells for PLX and Vehicle were loaded onto 10 X chip. Single-cell libraries were generated with 10 X Genomics Single Cell 3’ Gene Expression Library Prep v3 reagents at the University of Utah High Throughput Genomics core. The libraries were sequenced on a NovaSeq 6000 to generate at least 200 million paired end reads of 150 bp per sample.
 
-## Analysis of single-cell RNA-seq data
+#### Analysis of single-cell RNA-seq data
 
 Aligned reads to the mm10 reference from 10 X genomics (version 3.0.0 from Ensembl 93) and generated feature-barcode matrices using cellranger count v3.1.0 with expected-cells set to 5000. Filtered feature matrices from cellranger were further filtered with Seurat (v3.1.5) (Stuart et al., 2019). High-quality cells were selected by <10% mitochondrial gene content, and high number of features (genes). Feature cut-off was specific to each sample: > 1500 for Sample 1, > 1000 for Sample 2, > 1800 for vehicle, and >2500 for PLX-treated. Likely doublets, with high transcript counts, were also eliminated: < 27,000 counts for Sample 1, < 25,000 for Sample 2, < 47,000 for vehicle, and <125,000 for PLX treated. In silico genotyping, as described below, was used to assign cells to the correct Bax groups. Filtered cells from all samples were then combined, without batch correction, using Seurat’s merge function and processed with the SCTransform pipeline (Hafemeister and Satija, 2019). Mitochondrial percentage was regressed out of the model and Bax and presumed Bax-linked genes (Ftl1 and Ftl1-ps1) were excluded from the variable features list used for dimensionality reduction. Ftl1 and Ftl1-ps1 are dramatically regulated by Bax genotype. The Ftl1 gene locus is adjacent to the Bax gene locus and we expect that the Bax mutation impacts Ftl1 and Ftl1-ps1 regulation. We have no reason to believe that this has functional consequences, so we chose to mitigate this source of variation.
 
 From here, we subsetted the data to include only microglial cells. We identified non-microglia populations by their expression of Ptprc, Plac8, Clec12a, Ms4a7, Mrc1, and Rorb, and reran the SCTransform pipeline as before with the exception that FindClusters was run with resolution set to 0.4. Comparison between treatments, clusters, or type (homeostatic vs remodeling) were made with differentially expressed genes, identified with the FindAllMarkers function which, by default, uses natural-log normalized counts (log1p(counts)) for this analysis.
 
-## In silico genotyping
+#### In silico genotyping
 
 During single-cell library preparation, cells from one Bax WT and one Bax KO animal were sorted into the wrong sample so we chose to call these mixed samples Sample1 and Sample2. We used the scSplit pipeline (Xu et al., 2019) to perform in silico genotyping and reassign these cells to the correct condition. Our rationale was that the only thing that would be different between Bax KO and Bax WT littermates would be the Bax gene. As Bax expression is sparse in our dataset, we examined Chromosome 7 (where the Bax locus resides) to identify single nucleotide polymorphisms (SNPs) that would segregate with one of the two Bax alleles. These SNPs were identified within the Sample 1 and Sample 2 genome-aligned reads, without regard to the individual cells, then scSplit created a matrix, comparing SNPs to cell barcodes, to define two groups of cells with distinct SNP profiles. From there we defined which of the two groups was Bax KO by lower average expression of Bax. We acknowledge that the correct genotype cannot be determined with perfect accuracy by this method, but we find that the minority of cells are re-assigned, as we would expect, and that cells cluster more tightly by genotype than by sample.
 
 More specifically, beginning with the bam genome alignment file for each sample generated by cellranger, we used samtools view v1.8 (Danecek et al., 2021) to exclude reads with mapping quality <10, or flagged as unmapped, not primary alignment, fails quality checks, PCR or optical duplicate, or supplementary alignment. These filtered bam files were used to identify SNPs with freebayes v1.3.1 (Garrison and Marth, 2012). Indels, MNPs, and complex alleles were filtered from the input to the algorithm. Region was set to chromosome 7, minimum allele count was set to 2, use-best-n-alleles was set to 2, and minimum base quality was set to 1. Vcffilter v1.0.1 (Garrison et al., 2021) was used to exclude SNPs with quality score ≤ 30. We found that some SNPs were identified in one sample and not the other, so Bcftools merge v1.9 (Danecek et al., 2021) was used to combine all SNPs into a single file. ScSplit count v1.0.0 (Xu et al., 2019) was used to the combined SNPs to generate count matrices for the filtered cell barcodes identified by cellranger, and scSplit run, with expected number of mixed samples set to 1, genotyped the individual cells based on these matrices. The improvement in sample separation was assessed with UMAP reduction through the SCTransform pipeline using default settings and dimensions 1:30.
 
-## Bulk RNA sequencing
+#### Bulk RNA sequencing
 
 For P4 WT, Mertk KO, and Axl KO samples, CD11b+ CD45+ Ly6c- cells from one animal (two retinas) were sorted directly into RLT buffer (from Qiagen RNeasy MicroRNA kit 74034) using a 4 laser BD FACSAria at the University of Utah Flow Core and stored at –80 °C. 2 samples were pooled prior to RNA isolation so that each replicate was two animals/four retinas. WT samples had 5470, 6134, and 7029 cells, Mertk KO samples had 4245, 4038, and 8591 cells, and AXL KO samples had 5790, 5282, and 5071 cells. For P7 WT and Mertk/Axl dKO, CD11b+ CD45+ cells from one animal (two retinas) were sorted directly into RLT buffer and stored at –80 °C. P7 samples were not pooled and thus represent one animal/two retinas. For WT samples, 3783, 4083, and 4982 cells were collected. For Mertk/Axl dKO samples, 2408, 2633, and 2388 cells were collected. We sequenced RNA from three samples for each genotype in a single experiment.
 
 RNA from all samples was purified using the RNeasy Plus Micro kit. The University of Utah High-throughput Genomics core then hybridized total RNA with the NEBNext rRNA Depletion Solution human/mouse/rat to substantially diminish cytoplasmic and mitochondrial rRNA from the samples. Stranded RNA sequencing libraries were prepared as described using the NEBNext Ultra II RNA Library Prep Kit for Illumina. Purified libraries were qualified on an Agilent Technologies 2200 TapeStation using a D1000 ScreenTape assay. The molarity of adapter-modified molecules was defined by quantitative PCR using the Kapa Biosystems Kapa Library Quantification Kit. Individual libraries were normalized to 10 nM, and equal volumes were pooled in preparation for Illumina sequence analysis. Sequencing libraries were chemically denatured and applied to an Illumina NovaSeq flow cell using the NovaSeq XP workflow. Following transfer of the flowcell to an Illumina NovaSeq 6000 instrument, a 150 × 150 cycle paired end sequence run was performed using a NovaSeq 6000 S4 reagent Kit v1.5. Samples were sequenced to a depth of 39–76 million reads.
 
-## Analysis of bulk RNA-seq data
+#### Analysis of bulk RNA-seq data
 
 Optical duplicates were removed with clumpify using BBmap v38.34 (Bushnell B. http://sourceforge.net/projects/bbmap) and default settings, then Illumina adapters were trimmed with cutadapt v1.16 (Martin, 2011) using a minimum overlap of 6 and minimum length of 20. Alignment to mm10/Ensembl release 102 (P4 samples) or mm39/Ensembl release 104 (P7 samples) was accomplished with STAR v2.7.9a (Dobin et al., 2013) using mouse Ensembl release 104 with overhang set to 124. Trimmed reads were aligned in two pass mode to generate a BAM file, sorted by coordinates. Reads were assigned to the target with the largest overlap, and uniquely aligned, reversely stranded reads were counted with featureCounts v1.6.3 (Liao et al., 2014). Differentially expressed genes were identified from counts using DESeq2 v1.32.0 (Love et al., 2014). Features with fewer than five reads in every sample were eliminated before DESeq was run. rlog-transformed values were used for sample visualizations.
 
-## Comparisons to other datasets
+#### Comparisons to other datasets
 
 We used the following gene lists for comparison to our single-cell and bulk sequencing datasets. DAM genes were defined as the top 150 differentially expressed genes when comparing DAM to homeostatic microglia from Table S3 of Keren-Shaul et al., 2017. For developmental gene lists, we used all cluster one PAM markers from Table S1 of Li et al., 2019a and cluster four ATM markers from Table S1 of Hammond et al., 2019. For lysosomal and lipid metabolism genes we used GO lists of 552 ‘Lysosomal’ genes (GO:0005764) and 1428 ‘Lipid Metabolic Process’ genes (GO:0006629) from the MGI mouse genome database (MGD) (Bult et al., 2019). For comparison to interferon-responsive microglia, we used cluster eight markers from Table 5 of Dorman et al., 2022. For exAM activation genes, we used 27 genes from Table 4 of Marsh et al., 2020.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Image analysis
+#### Image analysis
 
 All counts were performed blinded and manual, using Nikon Elements software (Melville, NY).
 
 For double-positive CC3+RBPMS+ or single RBPMS+ counts of retinal whole mounts, two ROIs of roughly 0.4 mm2 of central and periphery of dorsal retina were analyzed and then averaged. Images were max projected and roughly 13 µm thick, spanning the NFL to the GCL. For CC3+ density, the entire dorsal leaf was analyzed, roughly 2–3 mm2 again spanning the NFL to GCL only. See also Figure 5—figure supplement 2. For microglial quantification, whole mount imaging and analysis spanned ~25 µm thickness from NFL to IPL and 0.5625 mm2 of the central to mid-peripheral, vascularized retina of the dorsal leaf.
 
-## Statistical methods
+#### Statistical methods
 
 Detailed statistical information can be found in the graphs, figure legends and Supplementary file 7 including tests used, sample size, and precision measures. For image and flow analysis, a minimum of 4 samples (biological replicates), collected from ≥2 litters (technical replicates), were obtained for each genotype. All image and flow data were analyzed using Prism 9 software (GraphPad, La Jolla, CA). All data were first tested for normality using four different tests: Anderson-Darling, D’Agostino & Pearson, Shapiro-Wilk, and Kolmogorov-Smirnov test. If any one test failed, non-parametric tests were used. We tested for heteroscedasticity in groups of three or more by a Brown-Forsythe test. If not significantly different, we ran an Ordinary one-way ANOVA with post-hoc Tukey’s multiple comparison test. If the standard deviations were significantly different between groups, we ran a Welch’s ANOVA with post-hoc Dunnett’s T3 multiple comparison’s test. Outliers were not excluded. For all data that is presented as the mean, error bars indicate the standard error of the mean, SEM. We used a 95% confidence interval and a p-value of <0.05 for rejecting the null hypothesis. For image and flow data, exact p-values are reported in figure legends and Supplementary file 7. For sequencing data, exact p-values are reported in corresponding tables. Levels of significance were represented as *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001 unless otherwise specified and for image and flow data, represent multiple comparison test results.

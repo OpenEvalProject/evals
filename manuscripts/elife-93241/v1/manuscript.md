@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01yq9ya27 Department of the Control of Genetic Processes, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
-2. https://ror.org/05qrfxd25 Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation
+1. Department of the Control of Genetic Processes, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:01yq9ya27](https://ror.org/01yq9ya27))
+2. Center for Precision Genome Editing and Genetic Technologies for Biomedicine, Institute of Gene Biology, Russian Academy of Sciences Moscow Russian Federation ([ROR:05qrfxd25](https://ror.org/05qrfxd25))
 
 † Corresponding author
 
 ## Abstract
 
-The male-specific lethal complex (MSL), which consists of five proteins and two non-coding roX RNAs, is involved in the transcriptional enhancement of X-linked genes to compensate for the sex chromosome monosomy in Drosophila XY males compared with XX females. The MSL1 and MSL2 proteins form the heterotetrameric core of the MSL complex and are critical for the specific recruitment of the complex to the high-affinity ‘entry’ sites (HAS) on the X chromosome. In this study, we demonstrated that the N-terminal region of MSL1 is critical for stability and functions of MSL1. Amino acid deletions and substitutions in the N-terminal region of MSL1 strongly affect both the interaction with roX2 RNA and the MSL complex binding to HAS on the X chromosome. In particular, substitution of the conserved N-terminal amino-acids 3–7 in MSL1 (MSL1 GS ) affects male viability similar to the inactivation of genes encoding roX RNAs. In addition, MSL1 GS binds to promoters such as MSL1 WT but does not co-bind with MSL2 and MSL3 to X chromosomal HAS. However, overexpression of MSL2 partially restores the dosage compensation. Thus, the interaction of MSL1 with roX RNA is critical for the efficient assembly of the MSL complex on HAS of the male X chromosome.
+The male-specific lethal complex (MSL), which consists of five proteins and two non-coding roX RNAs, is involved in the transcriptional enhancement of X-linked genes to compensate for the sex chromosome monosomy in Drosophila XY males compared with XX females. The MSL1 and MSL2 proteins form the heterotetrameric core of the MSL complex and are critical for the specific recruitment of the complex to the high-affinity ‘entry’ sites (HAS) on the X chromosome. In this study, we demonstrated that the N-terminal region of MSL1 is critical for stability and functions of MSL1. Amino acid deletions and substitutions in the N-terminal region of MSL1 strongly affect both the interaction with roX2 RNA and the MSL complex binding to HAS on the X chromosome. In particular, substitution of the conserved N-terminal amino-acids 3–7 in MSL1 (MSL1GS) affects male viability similar to the inactivation of genes encoding roX RNAs. In addition, MSL1GS binds to promoters such as MSL1WT but does not co-bind with MSL2 and MSL3 to X chromosomal HAS. However, overexpression of MSL2 partially restores the dosage compensation. Thus, the interaction of MSL1 with roX RNA is critical for the efficient assembly of the MSL complex on HAS of the male X chromosome.
 
 ## Introduction
 
@@ -40,9 +40,25 @@ Here, we tested the functional role of different regions in the N-terminal 1–8
 
 ## Results
 
-## The N-terminal 85 amino acids of MSL1 are critical for the activity of the MSL complex
+### The N-terminal 85 amino acids of MSL1 are critical for the activity of the MSL complex
 
 The principal goal of the work is to study the functional role of the N-terminal 85 aa MSL1 followed by the coiled-coil domain involved in homodimerization and interaction with MSL2. With the exception of the coiled-coil domain, the first 15 amino acids represent the most conserved region within the N-terminus of MSL1 among Drosophilidae (Figure 1A). However, among different families of Diptera (Figure 1—figure supplement 1), a high level of homology was only observed for the coiled-coil region, which is required for interactions with MSL2 (Hallacli et al., 2012). The N-terminal amino acids are also conserved among representatives within each of the Diptera families (Figure 1—figure supplement 1), but not across families. For example, the MSL1 of Anopheles mosquitoes, which are closely related to Drosophila melanogaster, features a completely different N-terminal domain.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic presentation of the MSL1 deletion proteins expressed in flies. Alignment of the N-terminal domain (1–207 aa) of MSL1 among Drosophilidae. (B) Immunoblot analysis of protein extracts prepared from adult males y1w1118 (control) and msl-1−; Ubi:msl-1WT/ Ubi:msl-1WT(M1[WT]), and from adult females y1w1118 (control), –msl-1− (msl-1L60/msl-1γ269), M1[WT] (msl-1−; Ubi:msl-1WT/Ubi:msl-1WT), and M1[WT]+MSL2 (msl-1−; Ubi:msl-2WT-FLAG / Ubi:msl-1WT). Immunoblot analysis was performed using anti-MSL1, anti-MSL2, and anti-lamin Dm0 (internal control) antibodies. (C) Immunoblot analysis of protein extracts prepared from adult females expressing different MSL1 protein variants (MSL1WT, MSL1Δ1-85 MSL1Δ1-15, MSL1Δ8-20 MSL1Δ24-39, MSL1Δ41-85, MSL1Δ41-65, MSL1Δ66-85) and y1w1118 females (control). Immunoblot analysis was performed using anti-MSL1, and anti-lamin Dm0 (internal control) antibodies. (D) Viability of males expressing MSL1 variants in the msl-1-null background (marked as M1[*]). Viability (as a relative percentage) of msl-1−(msl-1L60/msl-1γ269); Ubi:msl-1*/ Ubi:msl-1* males to msl-1−; Ubi:msl-1*/Ubi:msl-1* females obtained in the progeny of crosses between females and males with the msl-1−/ CyO, GFP; Ubi:msl-1*/Ubi:msl-1* genotype. Ubi:msl-1* is any transgene expressing one of the tested MSL1 variants. The results are expressed as the mean of three independent crosses, with error bars showing standard deviations. (E) Immunoblot analysis of protein extracts prepared from adult female flies expressing MSL2-FLAG in combination with different MSL1 protein variants (MSL1WT, MSL1Δ1-85 MSL1Δ1-15, MSL1Δ8-20 MSL1Δ24-39, MSL1Δ41-85, MSL1Δ41-65, MSL1Δ66-85) and y1w1118 females (control). Immunoblot analysis was performed using anti-MSL1, anti-MSL2, and anti-lamin Dm0 (internal control) antibodies.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Orange box – Coiled coil domain.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Green boxes – promoter and 5’UTR of Ubi-p63E gene; red box – 3’UTR with polyadenylation signal from dCTCF gene; yellow box – polyadenylation signal from SV40 virus. Lines correspond to introns. Letters show the polylinker region used for cloning of MSL1 cDNAs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Comparing of male-specific lethal (MSL)1 expression in y1w1118 and M1[wt] (msl-1−; Ubi:msl-1WT/ Ubi:msl-1WT) males. Male samples were titrated as twofold dilutions (‘1’, ‘1/2’, ‘1/4’). (B) Comparing of MSL1, MSL2, MSL3 expression in M1[wt]+MSL2 females (msl-1−; Ubi:msl-2WT-FLAG / Ubi:msl-1WT) growing at 18°C and 25°C. Immunoblot analysis was performed using anti-MSL1, anti-MSL2, anti-MSL3, and anti-lamin Dm0 (internal control) antibodies.
 
 To evaluate the functional effects of N-terminal domain deletions in the MSL1 protein in vivo, we created transgenic flies expressing wild-type (MSL1WT) and mutant variants of MSL1 (MSL1Δ1-85, MSL1Δ1-15, MSL1Δ8-20, MSL1Δ24-39, MSL1Δ41-85, MSL1Δ41-65, and MSL1Δ66-85) (Figure 1A). The MSL1 variants were expressed under the control of a strong Ubi-p63E (Ubi) promoter (Figure 1—figure supplement 2). To avoid the influence of position effects on the expression of the MSL1 variants, all transgenes were inserted into the same genomic location (86F8) on the third chromosome using an φC31-based integration system (Bischof et al., 2007).
 
@@ -54,11 +70,23 @@ Homozygous msl-1− females remained viable, whereas males died during the late 
 
 We then asked how MSL2 expression might affect the stability of MSL1 variants. To answer this question, we measured MSL1, and MSL2 proteins in msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1* (Figure 1E). Again, immunoblotting showed that the amount of MSL1 was almost completely eliminated in females expressed either MSL1Δ1-15 and MSL2, or MSL1Δ1-85 and MSL2 (Figure 1E). All other MSL1 variants were present at the same level. Interestingly, there is no noticeable difference in the amount of MSL2 in all samples. Thus, the N-terminal 1–15 aa is essential for the stability of MSL1 independently of MSL2 presence.
 
-## The N-terminus of MSL1 regulates the binding of the MSL complex to the X chromosome in females expressing MSL2
+### The N-terminus of MSL1 regulates the binding of the MSL complex to the X chromosome in females expressing MSL2
 
 We next examined the extent to which deletions in the N-terminal region of MSL1 would affect the recruitment efficiency of the MSL complex to the male X chromosome. Immunostaining of polytene chromosomes from the salivary glands of Drosophila larvae allows the visualization of proteins on interphase chromatin and has been used extensively to study dosage compensation (Dahlsveen et al., 2006; Demakova et al., 2003; Li et al., 2005; Lyman et al., 1997; Meller and Rattner, 2002; Palmer et al., 1994). In the MSL1Δ1-15, MSL1Δ41-85, MSL1Δ41-65, and MSL1Δ1-85 mutant males, rare larvae surviving to 2–3 stages had the polytene chromosomes with poor morphology. For this reason, we used a previously described sensitive model system to study the factors required for the recruitment of the MSL complex to the X chromosome in females (Chang and Kuroda, 1998; Li et al., 2008; Morra et al., 2011; Palmer et al., 1994; Zhou et al., 1995). It was shown (Tikhonova et al., 2019), that MSL1 and MSL2 were specifically recruited to the X chromosome in transgenic females expressing MSL2WT-FLAG under the control of the Ubi promoter inserted into attP-line 86Fb (Ubi:msl-2WT-FLAG).
 
 When the MSL2WT-FLAG was expressed in the msl-1− background, we did not observe the binding of the MSL complex to the female X chromosome (data not shown). However, the binding of MSL1 and MSL2 to the X chromosome was detected in msl-1− females when MSL2WT-FLAG was expressed simultaneously with either MSL1WT or MSL1Δ66-85 (Figure 2, Figure 2—figure supplement 1). These results further supported that the 66–85-aa region is not essential for MSL1 function in dosage compensation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig2-v1.jpg)
+
+**Figure 2.:** Distribution of the MSL complex on the polytene chromosomes from third day female larvae expressing both MSL1* variants and the MSL2WT-FLAG protein. Panels show the immunostaining of proteins using rabbit anti-MSL1 antibody (green) and mouse anti-FLAG antibody (red). DNA was stained with DAPI (blue). M1[WT](♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1WT); M1[Δ1–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ1-85); M1[Δ1–15] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ1-15); M1[Δ8–20] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ8-20); M1[Δ24–39] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ24-39); M1[Δ41–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ41-85); M1[Δ41–65] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ66-85); M1[Δ66–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ66-85).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Distribution of the MSL complex on the polytene chromosomes from third day female larvae expressing both MSL1 variants and the MSL2-FLAG protein. Panels show the immunostaining of proteins using rabbit anti-MSL1 antibody (green) and mouse anti-FLAG antibody (red). DNA was stained with DAPI (blue). M1[WT] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1WT); M1[Δ1–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ1-85); M1[Δ1–15] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ1-15); M1[Δ8–20] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ8-20); M1[Δ24–39] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ24-39); M1[Δ41–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ41-85); M1[Δ41–65] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ66-85); M1[Δ66–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ66-85).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Panels show the immunostaining of proteins using mouse anti-HA antibody (green) and rabbit anti-MSL2 antibody (red). DNA was stained with DAPI (blue). Polytene chromosomes were stretched and compared using ImageJ 1.54 f/Fiji 2.14.0 software.
 
 The expression of all MSL1 variants with deletions of the first 15-aa region (MSL1Δ1-15 and MSL1Δ1-85) resulted in the near-complete loss of the MSL complex binding to the X chromosome in females (Figure 2, Figure 2—figure supplement 1). This result is expected as immunoblotting showed a strong decrease of MSL1 level in MSL1Δ1-15/MSL2WT and MSL1Δ1-85/MSL2WT females (Figure 1E). Previous studies (Dahlsveen et al., 2006; Demakova et al., 2003; Lyman et al., 1997; Meller and Rattner, 2002; Palmer et al., 1994) showed that the inactivation of MSL3, MLE, or roX RNAs resulted in the recruitment of the MSL complex to a small proportion of bands that correspond to the main HAS, including regions of the roX1 (3 F) and roX2 (10 C) genes. In polytene chromosomes in the MSL1Δ1-15 and MSL1Δ1-85 lines, we found only two intense and several faint MSL1/MSL2 bands (Figure 2—figure supplement 2). Interestingly, additional MSL1/MSL2 bands were identified on the polytene autosomes, suggesting that the MSL proteins began to bind to lower affinity sites on autosomes (Figure 2—figure supplement 1). Thus, the deletion of the N terminal 15 aa affects not only the stability of MSL1 but also the specificity of MSL binding to the X chromosome.
 
@@ -66,9 +94,19 @@ The deletion of the 41–85 aa or 41–65 aa regions did not affect the stabilit
 
 Deletion of 24–39 aa, which separates the 1–15 aa and 41–65 aa regions in MSL1, only moderately affects the binding of the MSL2 and MSL1Δ24-39 proteins on polytene chromosomes (Figure 2, Figure 2—figure supplement 1). This observation indicates that the 1–15 aa and 41–65 aa regions have at least partially independent functions in recruiting of the MSL complex to the X chromosome in males. In MSL1Δ8-20 female larvae patterns of MSL1 and MSL2 binding to polytene chromosome are the same as in larvae expressed MSL1Δ24-39 (Figure 2, Figure 2—figure supplements 1 and 2). Thus, a deletion from 8 aa up to 20 aa only partially affects the functions of MSL1, in contrast to the complete inactivation of this protein by deleting the terminal 15 aa (MSL1Δ1-15).
 
-## The N terminal 3-7 amino acids of MSL1 are critical for dosage compensation
+### The N terminal 3-7 amino acids of MSL1 are critical for dosage compensation
 
 Our results showed that MSL1Δ1-15 is unstable, while MSL1Δ8-20 only partially affects the specific recruitment of MSL to the X chromosome suggesting that the most terminal amino-acids are essential for functions. To test the role of the N-terminal amino acids (3-7) in the stability and functions of MSL1, we made several amino acids substitutions in this region. The N-terminal region contains well-conserved basic and aromatic amino acid residues (Figure 1A). We used data about the previously characterized MSL1 mutants (Li et al., 2005) in those three conserved basic amino acids, lysine 3, arginine 4, and lysine 6, or two conserved aromatic amino acids, phenylalanine 5 and tryptophan 7, were replaced by alanine. In our work, we replaced basic amino acids with serine, and aromatic amino acids – with alanine or glycine (Figure 3A). In result we obtained three different transgenes: MSL13S (K3S R4S K6S), MSL12A (F5A W7A), and MSL1GS (K3S R4S F5G K6S W7G).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic presentation of the mutations at the N-terminus of MSL1. (B) Immunoblot analysis of protein extracts prepared from adult female flies expressing different MSL1* variants in the msl-1− (msl-1L60/msl-1γ269) background (M1[WT]: MSL1WT; M1[2 A]: MSL1F5A W7A, M1[3 S]: MSL1K3S R4S K6S; M1[GS]: MSL1K3S R4S F5G K6S W7G). (C) Immunoblot analysis of protein extracts prepared from adult female flies expressing MSL2-FLAG in combination with different MSL1* variants. Immunoblot analysis was performed using anti-MSL1, anti-MSL2, anti-MSL3, and anti-lamin Dm0 (internal control) antibodies. (D) Viability of males expressing MSL1 variants (marked as M1[*]) in the msl-1− (msl-1L60/msl-1γ269) background. Viability (as a relative percentage) of msl-1−; Ubi:msl-1*/ Ubi:msl-1* males to msl-1−; Ubi:msl-1*/Ubi:msl-1* females obtained in the progeny of a cross between females and males with msl-1−/ CyO, GFP; Ubi:msl-1*/Ubi:msl-1* genotype. Ubi:msl-1* is any transgene expressing one of the tested MSL1* variants. (E) Viability of males expressing MSL2WT and MSL1* variants (marked as M1[*]) in the msl-1− background. Viability (as a relative percentage) of msl-1−; Ubi:msl-2WT-FLAG /Ubi:msl-1* males to msl-1−; Ubi:msl-2WT-FLAG /Ubi:msl-1* females obtained in the progeny of cross between males msl-1−/ CyO, GFP; Ubi:msl-1*/Ubi:msl-1* and females msl-1−; Ubi:msl-2/Ubi:msl-2. The results are expressed as the mean of three independent crosses, with error bars showing standard deviations. (F) Distribution of the MSL complex on the polytene chromosomes from third day female larvae expressing both MSL1* variants and the MSL2-FLAG protein. Panels show the merged results of immunostaining of MSL1 (green, rabbit anti-MSL1 antibody) and MSL2 (red, mouse anti-FLAG antibody). DNA was stained with DAPI (blue). Scale bar indicates 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Panels show the results of immunostaining of MSL1 (green, rabbit anti-MSL1 antibody) and MSL2 (red, mouse anti-FLAG antibody). DNA was stained with DAPI (blue). M1[WT] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1WT); M1[2 A] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-12A); M1[3 S] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-13S); M1[GS] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1GS). Scale bar indicates 10 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig3-figsupp2-v1.jpg)
 
 To evaluate the functional effects of N-terminal amino acids of the MSL1 protein in vivo, we created transgenic flies expressing mutants MSL12A, MSL13S, and MSL1GS under the control of the Ubi promoter. All MSL1 variants were targeted by the HAx3 epitope at the C-termini (Figure 3A). MSL12A and MSL13S variants were expressed at levels comparable to MSL1WT in 2–3 day-old msl-1− females that are homozygous for the MSL1 transgenes (Figure 3B and C). At the same time, there was an approximately 1.5–2-fold decrease in the MSL1GS protein compared to MSL1WT.
 
@@ -80,11 +118,11 @@ Next, we asked whether MSL1Δ1-15, MSL1Δ8-20, MSL1Δ24-39, MSL1Δ41-65, MSL1GS,
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig4-v1.jpg)
 
-**Figure 4.:** (A). Immunoblot analysis of protein extracts prepared from S2 cells expressing MSL2-FLAG and different MSL1-HAx3 protein variants (M1[WT]: MSL1WT; M1[Δ*]: MSL1Δ*; M1[2 A]: MSL12A, M1[3 S]: MSL13S; M1[GS]: MSL1GS). Immunoblot analysis was performed using anti-HA (MSL1-HAx3 variants), anti-FLAG (MSL2-FLAG), and anti-lamin Dm0 (internal control) antibodies. (B) Protein extracts from Drosophila S2 cells co-transfected with different MSL1-HAx3 variants and MSL2-FLAG were immunoprecipitated with antibodies against FLAG or HA or nonspecific mouse IgG as a negative control. The immunoprecipitates were analyzed by immunoblotting for the presence of FLAG-tagged proteins in immunoprecipitated samples. (C) Distribution of the MSL1*-HA and MSL2-FLAG on the polytene chromosomes from third day female or male larvae expressing one of MSL1*-HA variants and MSL2-FLAG at the wild-type background (msl-1). Panels show the merged results of immunostaining of MSL1*-HA (green, mouse anti-HA antibody) and MSL2 (red, rabbit anti-MSL2 antibody). DNA was stained with DAPI (blue).+; Ubi:msl-2WT-FLAG /Ubi:msl-1*Figure 4—source data 1.Figure 4A and B.Figure 4—source data 2.Figure 4A and B indicating the relevant bands.
+**Figure 4.:** (A). Immunoblot analysis of protein extracts prepared from S2 cells expressing MSL2-FLAG and different MSL1-HAx3 protein variants (M1[WT]: MSL1WT; M1[Δ*]: MSL1Δ*; M1[2 A]: MSL12A, M1[3 S]: MSL13S; M1[GS]: MSL1GS). Immunoblot analysis was performed using anti-HA (MSL1-HAx3 variants), anti-FLAG (MSL2-FLAG), and anti-lamin Dm0 (internal control) antibodies. (B) Protein extracts from Drosophila S2 cells co-transfected with different MSL1-HAx3 variants and MSL2-FLAG were immunoprecipitated with antibodies against FLAG or HA or nonspecific mouse IgG as a negative control. The immunoprecipitates were analyzed by immunoblotting for the presence of FLAG-tagged proteins in immunoprecipitated samples. (C) Distribution of the MSL1*-HA and MSL2-FLAG on the polytene chromosomes from third day female or male larvae expressing one of MSL1*-HA variants and MSL2-FLAG at the wild-type background (msl-1+; Ubi:msl-2WT-FLAG /Ubi:msl-1*). Panels show the merged results of immunostaining of MSL1*-HA (green, mouse anti-HA antibody) and MSL2 (red, rabbit anti-MSL2 antibody). DNA was stained with DAPI (blue).
 
 The results in S2 cells showed that MSL1Δ41-85 and MSL1GS can co-immunoprecipitate with MSL2, as does MSL1WT (Figure 4B). These results suggest that mutant MSL1Δ41-65 and MSL1GS may be part of the MSL complex. Since S2 cells contain an endogenous MSL1 protein, it seems likely that the mutated MSL1 variants form heterodimers with wild-type ones. We then asked if these mutant protein variants could interact with endogenous MSL1 for specific recruitment to the X chromosome. To distinguish between WT and MSL1 mutants, we generated transgenic lines expressing MSL1Δ41-85-HA or MSL1GS-HA tagged with the HAx3 epitope at the msl-1+ background. In transgenic males and females expressed MSL2 and MSL1 variants in the heterozygous state, we observed complete co-localization between MSL2 and MSL1 variants marked by HAx3 epitope (+). Thus, in the presence of wild-type MSL1, MSL1GS and MSL1Δ41-85 variants enter the MSL complex, in which they specifically bind to the male X chromosome. These results suggest that MSL1GS and MSL1Δ41-85 effectively dimerize with the wild-type MSL1 via the coiled-coil domain.
 
-## The mutants MSL1GS and MSL1Δ41-85 disrupt the recruitment of the MSL complex to HAS
+### The mutants MSL1GS and MSL1Δ41-85 disrupt the recruitment of the MSL complex to HAS
 
 For a more complete understanding of the role played by the N-terminal region of MSL1 in the recruitment of the MSL complex to the X chromosome, we tested the binding of the MSL1, MSL2, and MSL3 proteins by chromatin immunoprecipitation followed by next-generation sequencing (ChIP-seq) with a standard protocol for chromatin fragmentation based on sonication. We obtained MSL protein profiles from two biological replicates of 3-day-old adult males and females.
 
@@ -94,17 +132,45 @@ Next, we compared the binding profiles of MSL1, MSL2, and MSL3 proteins obtained
 
 To test the role played by the N-terminal region of MSL1, we compared the binding of MSL proteins in females expressing MSL2 combined with MSL1WT, MSL1Δ1-15, MSL1Δ41-85, and MSL1GS (Figure 5A). As shown above, MSL2 and MSL1WT effectively bind to most HAS in females. MSL3 was associated with extended regions surrounding the HAS, consistent with previously reported data (Larschan et al., 2007; Sural et al., 2008). In MSL1Δ1-15, MSL1Δ41-85, and MSL1GS flies binding of MSL1, MSL2, and MSL3 to X chromosomal HAS is strongly reduced (Figure 5A-E, Figure 5—figure supplement 3A). At the same time, we noticed that there are HAS in which MSL2 continues to bind effectively when MSL1 in MSL1Δ1-15, MSL1Δ41-85, and MSL1GS flies are strongly reduced (Figure 5—figure supplement 3B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig5-v1.jpg)
+
+**Figure 5.:** To study the functional role of the N-terminal region of male-specific lethal (MSL)1 for the recruitment of the dosage compensation complex, we compared the profiles of MSL1, MSL2, and MSL3 binding in 2–3 day females expressing MSL2 and one of four MSL1 variants (MSL1WT, MSL1GS, MSL1Δ1-15, MSL1Δ41-85). y1w1118 (wild-type males and females), ♀M1[WT]+MSL2 (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1WT females), ♀M1[Δ41–85]+MSL2 (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1Δ41-85 females), ♀M1[Δ1–15]+MSL2 (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1Δ1-15 females), ♀M1[GS]+MSL2 (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1GS females). (A) Average log fold-change between normalized (RPKM) test signals and nonspecific IgG signals in HAS (see Materials and methods). Average log fold-change was calculated after smoothing signals using the Daniell kernel with kernel size 50 and the addition of a pseudocount. Next, the tracks were aggregated using 100 bp bins. (B) Heatmap showing average log fold-change between normalized (RPKM) test signals and nonspecific IgG signals in region ±500 bps from HAS centers. (C and D) Average signal (RPKM) for (C) MSL1 protein and (D) MSL2 protein in different fly lines at HAS (see Methods). (E) Enrichment of MSL1, MSL2, and MSL3 signals associated with the X-linked genes encoding Pp2C1 and the non-coding RNAs roX1 and roX2 in females expressing MSL2 and one of four MSL1 variants (MSL1WT, MSL1GS, MSL1Δ1-15, MSL1Δ41-85).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison of male-specific lethal (MSL)1 (green), MSL2 (red), and MSL3 (yellow) binding in 2–3 day-old males (♂) and females (♀) of the y1w1118 line at HAS and autosomal sites for MSL proteins. Average signal (on the top) and heatmap (on the bottom) showing the log-fold change (FC) between normalized (Reads per kilobase of transcript, per million mapped reads, RPKM) test signals and nonspecific IgG signals in HAS and autosomal regions (see Materials and methods). MSL2 S2 track was obtained from Schauer et al., 2017. LogFC was calculated after smoothing signals using Daniell kernel, with kernel size 50 and the addition of a pseudocount. On the heatmaps, the peaks are ranked according to the average logFC in the ♂M1[wt] sample. (B) Comparing of MSL1, MSL2 and MSL3 binding to HAS in 2–3 day-old y1w1118 and M1[wt] (msl-1−; Ubi:msl-1WT / Ubi:msl-1WT) males. Average log fold-change between normalized (RPKM) test signals and nonspecific IgG signals in HAS (see Materials and methods). Average log fold-change was calculated after smoothing signals using the Daniell kernel with kernel size 50 and the addition of a pseudocount. Next, the tracks were aggregated using 100 bp bins.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Average signal (top) and heatmap (bottom) showing the log fold-change (FC) between normalized (Reads per kilobase of transcript, per million mapped reads, RPKM) test signals and nonspecific IgG signals for high-affinity 'entry' site (HAS) and autosomal regions (see Materials and methods). LogFC was calculated after smoothing signals using the Daniell kernel with kernel size 50 and the addition of a pseudocount. On the heatmaps, the peaks are ranked according to the average logFC in the M1[wt] male sample. ♂ M1[wt] indicates 2–3 day-old msl-1−; Ubi:msl-1WT/ Ubi:msl-1WT males. ♀M1[wt]+MSL2 indicates 2–3 day-old msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1WT females. (B and C) Enrichment of MSL1 (green), MSL2 (red), and MSL3 (yellow) signals associated with the X-linked genes encoding Pp2C1 and the non-coding RNAs roX1 and roX2 in (B) M1[WT] males and (C) M1[WT]+MSL2 females.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** MSL2 binds to HAS (A) only in M1[WT] females or (B) in M1[WT], M1[GS], M1[Δ41–85] and M1[Δ1–15] females.
+
 To investigate observed differences in localization of the MSL proteins at various genomic sites in female fly lines, we calculated the average logFC between normalized (RPKM) test signals and nonspecific IgG signals in regions where MSL1 and MSL2 colocalized in MSL1WT line on X chromosome (see Methods). Resulting list of peaks is mostly associated with HAS (217 out of 220 in total) and is highly enriched by the MSL1, MSL2, and MSL3 proteins in MSL1WT flies, suggesting the binding of the complete MSL complex. As a result of hierarchical clustering, these regions were divided into two groups based on the protein binding profiles of MSL1, MSL2, and MSL3. Cluster 1 (‘MSL2 Sensitive,’ N=133) contains sites to which proteins do not bind during expression of MSL1 mutants. Cluster 2 (‘MSL2 stable,’ N=87) includes sites to which MSL2 continues to bind even in the presence of MSL1 mutations (see Methods, Figure 6A, Figure 6—figure supplement 1, Figure 6—source data 1). In cluster 2 regions, in addition to MSL2, the mutant form of MSL1GS was also enriched. We decided to test whether the stability of MSL2 in the cluster 2 is associated with the presence of PionX sites, to which the MSL2 protein binds most effectively in vitro (Villa et al., 2016). Indeed, PionX sites made up a larger percentage of the peaks of the cluster 2 (17 out of 87), in contrast to cluster 1 (7 out of 133). Additionally, we tested the strength of MSL1 and MSL2 signals from female fly lines in peaks associated with PionX sites in comparison with all other regions from the cluster 2 (Figure 6B). As expected, we found that the MSL2 signal was significantly higher in the group of PionX sites in fly lines with the mutation (MSL1Δ1-15, MSL1Δ41-85, MSL1GS; Wilcoxon signed-rank test, p-value: 0.034, 7.3e-5, 2.2e-5, respectively), which was not noted for the MSL1WT (Wilcoxon signed-rank test, p-value: 0.71). Similar situation was observed for MSL1, whose signal at PionX sites was significantly greater for the MSL1GS females (Wilcoxon signed-rank test, p-value: 0.053) than for the MSL1WT females (Wilcoxon signed-rank test, p-value: 0.35). These results suggest that some of the PionX sites may be bound independently by the MSL2 protein.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig6-v1.jpg)
+
+**Figure 6.:** Regions clusterization with MSL1∩MSL2 overlapping peaks according to MSLs binding in different female fly lines expressing MSL2 and one of four MSL1 variants (MSL1WT, MSL1GS, MSL1Δ41-85, MSL1Δ1-15) (see Materials and methods). M1[WT] (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1WT females), M1[Δ41–85] (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1Δ41-85 females), M1[GS] (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1GS females), M1[Δ1–15] (msl-1−; Ubi:msl-2WT-FLAG/Ubi:msl-1Δ1-15 females). (A) Left - Heatmap of average logFC between MSL and nonspecific IgG signal in female fly lines, hierarchical clusterization, and cluster subdivision is drawn on the left corner. Right - Average logFC profiles of MSL signal in different clusters for female fly lines. Average log fold-change was calculated after smoothing signals using the Daniell kernel with kernel size 100 and the addition of a pseudocount. (B) Boxplot of average LogFC signal of MSL1 and MSL2 in cluster 2. All sites in cluster 2 were subdivided into PionX sites and other HAS, and the strength of MSL1 and MSL2 signals was tested.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Clusters 1 and 2 are associated with MSL2 binding to X chromosomal sites.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Heatmap of average logFC between MSL and nonspecific IgG signal in female fly lines. (B) Examples of MSL1, MSL2, and MSL3 signal enrichment at autosomes in M1[WT] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1WT), M1[GS] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1GS), M1[Δ41–85] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ41-85), M1[Δ1–15] (♀ msl-1−; Ubi:msl-2WT-FLAG/ Ubi:msl-1Δ1-15) females.
 
 Also, we analyzed regions with MSL1 alone peaks (no colocalization with MSL2) on all chromosomes (Figure 6—figure supplement 2). Previously, it was shown that MSL1 binds to promoters independently of the MSL complex (Chlamydas et al., 2016; Hallacli et al., 2012; Straub et al., 2013). Accordingly, MSL2 binding was weak or absent at all such sites. These sites are predominantly located in the promoter regions and MSL1GS binds to all sites with the same efficiency as MSL1WT, confirming that this mutant protein retains its functionality at the sites outside of HAS. The MSL1Δ1-15 and MSL1Δ41-85 are not associated with these sites. The absence of MSL1Δ1-15 can be explained by the low stability of this mutant protein. As MSL1Δ41-85 is expressed more strongly than MSL1GS, it seems likely that the 41–85 aa region facilitates the interaction of MSL1 with transcription factors associated with these promoters.
 
-## Two regions in the N-terminal domain are required for interaction with roX2 RNA
+### Two regions in the N-terminal domain are required for interaction with roX2 RNA
 
 Our results suggest that MSL1GS and MSL1Δ41-85 can interact with wild-type MSL1 and form the complex. Previously it was suggested that the N-terminal part of MSL1 (191 aa) contributes to interaction with roX RNAs (Müller et al., 2020). It can be assumed that the ineffectiveness of MSL1 variants in dosage compensation is associated with their inability to interact with roX RNAs. To test this hypothesis, we obtained transgenic msl-1− (msl-1L60/msl-1γ269) females expressed either of MSL1 variants (MSL1WT-HA, MSL1GS-HA, and MSL1Δ41-85-HA) and roX2 RNA. To express roX2, we used the previously obtained roX2 gene under the control of the Ubi promoter in the 86Fb site (Tikhonova et al., 2022b). The roX2 transgene was expressed at the same level in all females expressed different MSL1 variants (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93241/elife-93241-fig7-v1.jpg)
 
-**Figure 7.:** Extraction of RNA and RNP from adult flies, and immunoprecipitation followed by RNA extraction were prepared as described in the Materials and Methods section and briefly schematically explained in the drawing. (A) Expression levels of the roX2 RNA in females of the y, M1[WT] (1w1118msl-1−; Ubi:msl-1), M1[GS] (WT-HA/ Ubi:roX2msl-1−; Ubi:msl-1), M1[Δ41–85] (GS-HA/ Ubi:roX2msl-1−; Ubi:msl-1Δ41-85-HA/ Ubi:roX2) and msl1 (–msl-1−;Ubi:roX2/TM6,Tb). Individual transcript levels were determined by RT-qPCR with primers for the roX2 gene normalized relative to RpL32 for the amount of input cDNA. The error bars show standard deviations of triplicate measurements. This panel was created using BioRender.com. (B) RNP extracts from adult females were immunoprecipitated with antibodies against MSL1 (IP-MSL1) or nonspecific rabbit IgG (IP-IgG) as a negative control. The efficiency of immunoprecipitation was tested by immunoblot analysis for the presence of HA-tagged MSL1 protein in immunoprecipitate samples. (C) Total RNA was extracted from immunoprecipitates (α-MSL1 or IgG) and analyzed for the presence of roX2 RNA by RT-PCR. RpL32 was used as the negative control. The results of immunoprecipitations are presented as the percentage of input cDNA. ‘output’ – supernatant after immunoprecipitation; ‘IP’ – immunoprecipitated sample. The error bars indicate SDs from three independent biological samples.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7B indicate the relevant bands.
+**Figure 7.:** Extraction of RNA and RNP from adult flies, and immunoprecipitation followed by RNA extraction were prepared as described in the Materials and Methods section and briefly schematically explained in the drawing. (A) Expression levels of the roX2 RNA in females of the y1w1118, M1[WT] (msl-1−; Ubi:msl-1WT-HA/ Ubi:roX2), M1[GS] (msl-1−; Ubi:msl-1GS-HA/ Ubi:roX2), M1[Δ41–85] (msl-1−; Ubi:msl-1Δ41-85-HA/ Ubi:roX2) and msl1 –(msl-1−;Ubi:roX2/TM6,Tb). Individual transcript levels were determined by RT-qPCR with primers for the roX2 gene normalized relative to RpL32 for the amount of input cDNA. The error bars show standard deviations of triplicate measurements. This panel was created using BioRender.com. (B) RNP extracts from adult females were immunoprecipitated with antibodies against MSL1 (IP-MSL1) or nonspecific rabbit IgG (IP-IgG) as a negative control. The efficiency of immunoprecipitation was tested by immunoblot analysis for the presence of HA-tagged MSL1 protein in immunoprecipitate samples. (C) Total RNA was extracted from immunoprecipitates (α-MSL1 or IgG) and analyzed for the presence of roX2 RNA by RT-PCR. RpL32 was used as the negative control. The results of immunoprecipitations are presented as the percentage of input cDNA. ‘output’ – supernatant after immunoprecipitation; ‘IP’ – immunoprecipitated sample. The error bars indicate SDs from three independent biological samples.
 
 The total extracts obtained from the 2–3 days old adult females (Figure 7) were used for immunoprecipitation with MSL1 antibodies. In all cases antibodies efficiently precipitate the tested MSL1 variants (Figure 7B). roX2 RNA was detected (Figure 7C) in precipitate obtained from MSL1WT extract (positive control) and was not found in precipitate obtained from msl-1− extract (negative control). In the case of MSL1GS and MSL1Δ41-85 precipitates, roX2 RNA was not detected as in the negative control. The obtained results suggest that MSL1WT interacts with roX2 in contrast to the MSL1GS and MSL1Δ41-85 mutants. These results are consistent with the hypothesis that failure to interact with roX RNAs is the primary cause of functional inactivation of MSL1GS and MSL1Δ41-85.
 
@@ -134,11 +200,406 @@ Generally, our results are consistent with the model (Valsecchi et al., 2021; Vi
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>86Fb</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 23648</td>
+      <td>P{ry[+t7.2]=hsp70-FLP}1, y[1] w[*]; M{3xP3-RFP.attP}ZH-86Fb; M{RFP[3xP3.PB] GFP[E.3xP3]=vas int.B}ZH-102D</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CyO, GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 9325</td>
+      <td>w[1118]; sna[Sco]/CyO, P[ActGFP.w-]CC2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>y[1] w[1118]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 6598</td>
+      <td>y[1] w[1118]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>msl-2WT-FLAG</td>
+      <td>This lab (Tikhonova et al., 2019)</td>
+      <td>N/A</td>
+      <td>Ubi:msl-2WT-FLAG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>msl-1L60</td>
+      <td>donated by M. Kuroda</td>
+      <td>N/A</td>
+      <td>msl-1L60 /CyO</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>msl-1γ269</td>
+      <td>donated by J. Lucchesi</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-msl-1*</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Ubi-msl-1* transgenes are described in Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>Drosophila genomics resource center</td>
+      <td>DGRC Stock 181; https://dgrc.bio.indiana.edu//stock/181; RRID:CVCL_Z992</td>
+      <td>FlyBase symbol: S2-DRSC.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MSL1 (rabbit polyclonal)</td>
+      <td>This lab</td>
+      <td>N/A</td>
+      <td>MSL1[423–1030]IF (1:500)ChIP (1:200)WB (1:500)IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-MSL2 (rabbit polyclonal)</td>
+      <td>This lab</td>
+      <td>N/A</td>
+      <td>MSL2[421-540]IF (1:500)ChIP (1:100)WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-MSL3 (rabbit polyclonal)</td>
+      <td>This lab</td>
+      <td>N/A</td>
+      <td>ChIP (1:200)WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG clone M2 (mouse monoclonal)</td>
+      <td>Sigma, USA</td>
+      <td>F3165</td>
+      <td>IF (1:100)WB (1:1000)IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA clone HA-7 (mouse monoclonal)</td>
+      <td>Sigma, USA</td>
+      <td>H9658</td>
+      <td>IF (1:50)WB (1:500)IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-lamin Dm0 clone ADL84.12 (mouse monoclonal)</td>
+      <td>DSHB, USA</td>
+      <td>ADL84.12</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG-HRP (mouse monoclonal)</td>
+      <td>Sigma, USA</td>
+      <td>A8592</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 555 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A28180</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>A11008</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce 16% Formaldehyde (w/v), Methanol-free</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>28906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNBr-activated Sepharose</td>
+      <td>Cytiva, UK</td>
+      <td>GE17-0430-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aminolink Plus Coupling Resin</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>20505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRI-reagent</td>
+      <td>MRC, USA</td>
+      <td>TR 118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ribonucleoside Vanadyl Complex</td>
+      <td>NEB, USA</td>
+      <td>S1402S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nuclease-free BSA</td>
+      <td>Sigma, USA</td>
+      <td>126609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phase Lock Gel, QuantaBio - 2302830, Phase Lock Gel Heavy</td>
+      <td>VMR, USA</td>
+      <td>10847–802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampure Xp beads</td>
+      <td>Beckman Coulter, USA</td>
+      <td>A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diamant TaqA Hot-start polymerase</td>
+      <td>Belbiolab, Russia</td>
+      <td>E-TAP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dynabeads Protein A</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>10008D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Applichem, Germany</td>
+      <td>A1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MACSFectin</td>
+      <td>Miltenyi Biotec, USA</td>
+      <td>130-098-410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SFX-Insect Cell Culture Media</td>
+      <td>HyClone, USA</td>
+      <td>SH30278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anti-HA magnetic beads</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>88836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>anti-FLAG magnetic beads</td>
+      <td>Sigma, USA</td>
+      <td>M8823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mouse IgG magnetic beads</td>
+      <td>NEB, USA</td>
+      <td>S1431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halt Protease Inhibitor Cocktail</td>
+      <td>Thermo Fisher Scientific, USA</td>
+      <td>78438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calbiochem Complete Protease Inhibitor Cocktails V</td>
+      <td>Merck, USA</td>
+      <td>539137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calbiochem Complete Protease Inhibitor Cocktails VII</td>
+      <td>Merck, USA</td>
+      <td>539138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucleotides used are listed in ‘Supplementary file 1'</td>
+      <td>Evrogen, Lytech, DNA synthesis</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Crescendo Western Blotting substrate</td>
+      <td>Merck, USA</td>
+      <td>WBLUR0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChIP DNA Clean&amp;Concentrator kit</td>
+      <td>Zymo Research, USA</td>
+      <td>D5205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II DNA Library Prep Kit for Illumina</td>
+      <td>NEB, USA</td>
+      <td>E7645L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay Kit</td>
+      <td>Life Technologies Corporation</td>
+      <td>Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.54 f and Fiji bundle 2.14.0</td>
+      <td>Schindelin et al., 2012</td>
+      <td>N/A</td>
+      <td>fiji.sc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>Martin, 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie version 2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools</td>
+      <td>Ramírez et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS version 2</td>
+      <td>Zhang et al., 2008</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.2.1</td>
+      <td>http://www.r-project.org</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPpeakAnno package</td>
+      <td>Zhu et al., 2010</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChIPseeker package</td>
+      <td>Yu et al., 2015</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pheatmap package.</td>
+      <td>https://github.com/raivokolde/pheatmap; Kolde, 2019</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gviz</td>
+      <td>Helaers et al., 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>100 µm MACS SmartStrainers</td>
+      <td>Miltenyi Biotec, USA</td>
+      <td>130-110-917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>70 µm MACS SmartStrainers</td>
+      <td>Miltenyi Biotec, USA</td>
+      <td>130-110-916</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 PCR-directed mutagenesis was used to make constructs with deletion variants of MSL1 (corresponding primers are given in Supplementary file 1). Different full-sized variants of MSL1 were cloned into an expression vector containing attB site for φC31-mediated recombination, Ubi-p63E promoter with its 5’UTR, 3’UTR with SV40 polyadenylation signal, intronless yellow gene as a reporter for detection of transformants (Figure 1—figure supplement 2).
 
-## Fly crosses and transgenic lines
+### Fly crosses and transgenic lines
 
 Drosophila strains were grown at 25 °C and 75% humidity under standard culture conditions. The transgenic constructs were injected into pre blastoderm embryos using the φC31-mediated site-specific integration system at locus 86Fb (Bischof et al., 2007). The emerging adults were crossed with the y ac w1118 flies, and the progeny carrying the transgene in the 86Fb region were identified by y+ pigmented cuticle.
 
@@ -150,27 +611,27 @@ To assess the role of MSL1 variants in the binding of MSL complex to polytene ch
 
 b males. Ubi:msl-2WT-FLAG is transgene (86Fb) expressing the MSL2 cDNA under the control of the Ubi-p63E promoter at the 86F8 site (Tikhonova et al., 2019). The percentage of Ubi:msl-2WT-FLAG /Ubi-msl-1* female.
 
-## Protein extract preparation
+### Protein extract preparation
 
 Twenty adult flies were cooled in liquid nitrogen, and homogenized for 30 s with a pestle in 200 μL of extraction buffer (20 mM HEPES, pH 7.5, 100 mM KCl, 5% glycerol, 10 mM EDTA, 1% NP-40, 1% sodium deoxycholate, 0.1% SDS, 1 mM DTT, 5 mM PMSF, and 1:100 Calbiochem Complete Protease Inhibitor Cocktails VII and V) and incubated on ice for 10 min. The suspension was sonicated in a Bioruptor (Diagenode, USA) for 3 min on setting H, 15 s ON/45 s OFF. Then 4 x SDS-PAGE sample buffer was added to the homogenate. Extracts were incubated for 10 min at 100 °C, centrifuged at 16,000 x g for 5 min, and loaded on a 6% SDS-PAGE gel.
 
-## Immunostaining of polytene chromosomes
+### Immunostaining of polytene chromosomes
 
 Drosophila hird instar larvae were cultured at 18 °C under standard conditions. Immunoblot analysis showed that the expression of MSL1 and MSL2 under the control of the Ubi-p63E promoter is significantly increased at 18 °C compared to 25 °C (Figure 1—figure supplement 3B). Polytene chromosome staining was performed as described (Murawska and Brehm, 2012). The following primary antibodies were used: rabbit anti-MSL1 at 1:500 dilution, rabbit anti-MSL2 at 1:500 dilution, mouse anti-HA at 1:50 dilution, and mouse anti-FLAG at 1:100 dilution. The secondary antibodies were Alexa Fluor 488 or 555 goat anti-rabbit and anti-mouse, at 1:2000 dilution (Invitrogen). The polytene chromosomes were co-stained with DAPI (AppliChem). Images were acquired on the Nikon Eclipse Ti fluorescent microscope using Nikon DS-Qi2 digital camera, processed with ImageJ 1.54 f and Fiji bundle 2.14.0. 3–4 independent staining and 4–5 samples of polytene chromosomes were performed with each MSL1-expressing transgenic line. Images of stretched chromosomes are obtained as follows: based on the DAPI channel, a chromosome trace is created using the ‘Segmented line’ tool, the thickness is selected (‘Edit-Selection-Properties’), saved as ‘Selection’ in.roi format. This file is opened on top of the desired channel image, and the ‘Edit-Selection-Straighten’ commands are applied.
 
-## Co-immunoprecipitation assay
+### Co-immunoprecipitation assay
 
 Drosophila S2 cells (obtained from DGRC, Stock 181; https://dgrc.bio.indiana.edu//stock/181) grown in SFX medium (HyClone) at 25 °C were co-transfected by plasmid expressing MSL1*–3xHA and plasmid expressing MSL2-3xFLAG with MACSFectin (Miltenyi Biotec), as recommended by the manufacturer. After transfection, the cells were incubated for 48 hr, washed once with cold 1x PBS, and resuspended in 20 packed cell volumes of hypotonic lysis buffer (20 mM Tris-HCl, pH 7.4, with 10 mM KCl, 10 mM MgCl2, 2 mM EDTA, 10% glycerol, 1% Triton X-100, 1 mM DTT, 0.5 mM PMSF and Halt Protease Inhibitor Cocktail). After incubation on ice for 10 min, the cells were sonicated in a Bioruptor (Diagenode, USA) for 2 min on setting L, 15 s ON/45 s OFF, NaCl was added to a final concentration of 420 mM, and incubation on ice continued for 60 min, with periodic mixing. Sonication was repeated as above to reduce viscosity, cell debris was pelleted by centrifugation at 10,000 g for 30 min at 4 °C, and the supernatant was collected for immunoprecipitation with anti-FLAG, anti-HA, and mouse IgG magnetic beads equilibrated in incubation buffer-150 (20 mM Tris-HCl, pH 7.4, with 150 mM NaCl, 10 mM MgCl2, 1 mM EDTA, 1 mM EGTA, 10% glycerol, and 0.1% NP-40). The protein extract (50 μg protein) was adjusted to a volume of 200 µL with buffer-150, mixed with magnetic beads (15 μL), and incubated on a rotary shaker overnight at 4 °C. The beads were then washed with five portions of buffer-150, resuspended in SDS-PAGE loading buffer, boiled, and analyzed by immunoblotting with anti-FLAG-HRP antibodies (Sigma) antibodies. Proteins were detected using the Crescendo Western Blotting substrate (Millipore).
 
-## RNA immunoprecipitation assay
+### RNA immunoprecipitation assay
 
 To prepare the samples, 100 mg of adult flies were ground in a mortar in liquid nitrogen and resuspended in 0.5 mL of VNC-hypotonic lysis buffer (20 mM Tris-HCl, pH 7.4, with 10 mM KCl, 10 mM MgCl2, 10% glycerol, 1% Triton X-100, 1 mM DTT, 0.5 mM PMSF, 2 mM Ribonucleoside Vanadyl Complex, and 1xHalt Protease Inhibitor Cocktail). The suspension was homogenized in a Dounce (loose pestle, 20 strokes) homogenizer and filtered through 100 µm MACS SmartStrainers (Miltenyi Biotec, United States). After incubation on ice for 10 min, the suspension was sonicated in a Bioruptor (Diagenode, USA) for 3 min on setting L (15 s ON/45 sec OFF). NaCl was added to a final concentration of 420 mM, and the suspension was incubated on ice for an additional 60 min with periodic mixing. Sonication was repeated as above to reduce viscosity. Cell debris was pelleted by centrifugation at 10,000 g for 30 min at 4 °C, and the supernatant was collected for subsequent immunoprecipitation. The RNA-protein extracts were diluted to 150 mM of NaCl with VNC-incubation buffer-0 (20 mM Tris-HCl, pH 7.4, 10 mM MgCl2, 10% glycerol, 0.1% NP-40, 0.5 mM PMSF, 2 mM Ribonucleoside Vanadyl Complex, and 1xHalt Protease Inhibitor Cocktail). Rabbit anti-MSL1 (1:200) and non-specific IgG were incubated for 1 hr at room temperature with 20 µL aliquots of Protein A Dynabeads (Thermo Fisher, USA) mixed with 200 µL of PBST. The antibody–Dynabead complexes were then washed and equilibrated in VNC-incubation buffer-150 (20 mM Tris-HCl, pH 7.4, 150 mM NaCl, 10 mM MgCl2, 10% glycerol, 0.1% NP-40, 0.5 mM PMSF, 2 mM Ribonucleoside Vanadyl Complex, and 1xHalt Protease Inhibitor Cocktail). The RNA-protein extracts (10% aliquots were stored as input material for subsequent protein and RNA extractions) were mixed with magnetic beads and incubated on a rotary shaker overnight at 4 °C. The beads were then washed with four portions of VNC-incubation buffer-150 (10% aliquots of supernatants after immunoprecipitation were stored as output material for subsequent protein and RNA extractions). Half of the beads were resuspended in SDS-PAGE loading buffer, boiled, and analyzed by immunoblotting with anti-HA-HRP antibodies (Thermo Fisher, USA). Proteins were detected using the Crescendo Western Blotting substrate (Millipore). The other half of the beads were resuspended in the TRI reagent for subsequent RNA extraction and cDNA synthesis.
 
-## RT-PCR
+### RT-PCR
 
 Total RNA was isolated using the TRI reagent (Molecular Research Center, United States) according to the manufacturer’s instructions. RNA was treated with two units of Turbo DNase I (Ambion) for 30 min at 37 °C to eliminate genomic DNA. The synthesis of cDNA was performed according to the manufacturer’s instructions using 1 μg of RNA or entire sample volume after immunoprecipitation, 100 U of EpiScript reverse transcriptase (LGC Biosearch Technologies, UK), and 10 pM of random hexamers as a primer. The amounts of specific cDNA fragments were quantified by real-time PCR. At least three independent measurements were made for each RNA sample. Relative levels of mRNA expression were calculated in the linear amplification range by calibration to a standard genomic DNA curve to account for differences in primer efficiencies. Individual expression values were normalized with reference to RpL32 mRNA.
 
-## ChIP-seq
+### ChIP-seq
 
 Chromatin was prepared from 2–3-day-old adult flies. Samples of 500 mg each of adult flies were ground in a mortar in liquid nitrogen and resuspended in 10 mL of buffer A (15 mM HEPES-KOH, pH 7.6, 60 mM KCl, 15 mM NaCl, 13 mM EDTA, 0.1 mM EGTA, 0.15 mM spermine, 0.5 mM spermidine, 0.5% NP-40, 0.5 mM DTT) supplemented with 0.5 mM PMSF and Calbiochem Complete Protease Inhibitor Cocktail V. The suspension was then homogenized in a Potter (10 strokes) and subsequently in a Dounce (tight pestle, 15 strokes) homogenizers and filtered through 70 µm MACS SmartStrainers (Miltenyi Biotec, United States). The homogenate was cross-linked with 1% formaldehyde for 15 min at room temperature. Cross-linking was stopped by adding glycine to a final concentration of 125 mM. The nuclei were washed with three 10 mL portions of wash buffer (15 mM HEPES-KOH, pH 7.6, 60 mM KCl, 15 mM NaCl, 1 mM EDTA, 0.1 mM EGTA, 0.1% NP-40, protease inhibitors) and one 5 mL portion of nuclear lysis basic buffer (15 mM HEPES, pH 7.6, 140 mM NaCl, 1 mM EDTA, 0.1 mM EGTA, 1% Triton X-100, 0.5 mM DTT, 0.1% sodium deoxycholate, and protease inhibitors), and resuspended in 1 mL of nuclear lysis buffer (15 mM HEPES, pH 7.6, 140 mM NaCl, 1 mM EDTA, 0.1 mM EGTA, 1% Triton X-100, 0.1% sodium deoxycholate, 0.5% SLS, 0.1% SDS, 0.5 mM PMSF, Calbiochem Complete Protease Inhibitor Cocktail V). The suspension was incubated for 30 min at 4 °C and then sonicated with Covaris ME220 focused-ultrasonicator (50 alternating 15 s ON and 45 s OFF intervals, at 6 °C, peak power 75.0, duty % factor 25, cycles/burst 1000), and 50 µL aliquots were used to test the extent of sonication and to measure DNA concentration. Chromatin was then transferred to 1.5 ml-Eppendorf tubes and centrifuged at 14,000 rpm for 10 min at 4 °C. Finally, supernatants were pooled, aliquoted, and frozen in liquid nitrogen.
 
@@ -178,7 +639,7 @@ For immunoprecipitation chromatin was pre-cleared with Protein A Dynabeads (Ther
 
 The ChIP-seq libraries were prepared with NEBNext Ultra II DNA Library Prep kit, as described in the manufacturer’s instructions. In short, eluted DNA was end-repaired, and terminal adenosine residues were added using the NEBNext reagents. Indexed adapters were ligated, after which the material was size selected at ~200–600 bp with Ampure XP beads (Beckman Coulter). PCR amplification was performed using NEB primers for 15–16 cycles using the Q5 Hot Start HiFi PCR Master Mix (NEB). The PCR-amplified library was purified using Ampure XP beads and its quality was assessed on a Bioanalyzer 2100 system (Agilent). Diluted libraries were clustered on a pair-read flowcell and sequenced using a NovaSeq 6000 system (Illumina) (using «Genetiсo» facility).
 
-## ChIP-seq data processing and sequence analysis
+### ChIP-seq data processing and sequence analysis
 
 All ChIP-seq raw data were presented as two biological replicates with paired-end reads (except MSL1 M1[wt]♂), for which only one biological replicate was obtained. Trimming and mapping were performed using cutadapt software (Martin, 2011) and Bowtie version 2 (Langmead and Salzberg, 2012), as described previously (Sabirov et al., 2021). The dm6 version of the Drosophila melanogaster genome was used as a reference genome. After merging replicates, coverage tracks (BedGraph) were obtained using the deepTools (Ramírez et al., 2014) bamCoverage function, with bin widths of 10 bp and extendReads option and normalized by reads per kilobase of the transcript, per million mapped reads (RPKM). Raw and processed data were deposited in the NCBI Gene Expression Omnibus (GEO) under accession number GSE243396.
 

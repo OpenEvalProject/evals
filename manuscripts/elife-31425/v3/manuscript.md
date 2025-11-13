@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.31425.001 Recurrent connections are thought to be a common feature of the neural circuits that encode memories, but how memories are laid down in such circuits is not fully understood. Here we present evidence that courtship memory in Drosophila relies on the recurrent circuit between mushroom body gamma (MBγ), M6 output, and aSP13 dopaminergic neurons. We demonstrate persistent neuronal activity of aSP13 neurons and show that it transiently potentiates synaptic transmission from MBγ>M6 neurons. M6 neurons in turn provide input to aSP13 neurons, prolonging potentiation of MB γ >M6 synapses over time periods that match short-term memory. These data support a model in which persistent aSP13 activity within a recurrent circuit lays the foundation for a short-term memory.
+Recurrent connections are thought to be a common feature of the neural circuits that encode memories, but how memories are laid down in such circuits is not fully understood. Here we present evidence that courtship memory in Drosophila relies on the recurrent circuit between mushroom body gamma (MBγ), M6 output, and aSP13 dopaminergic neurons. We demonstrate persistent neuronal activity of aSP13 neurons and show that it transiently potentiates synaptic transmission from MBγ>M6 neurons. M6 neurons in turn provide input to aSP13 neurons, prolonging potentiation of MBγ>M6 synapses over time periods that match short-term memory. These data support a model in which persistent aSP13 activity within a recurrent circuit lays the foundation for a short-term memory.
 
 ## Introduction
 
@@ -32,21 +32,45 @@ We previously established that short-term courtship conditioning is mediated by 
 
 ## Results
 
-## Courtship experience modulates circuit properties between MBγ and M6 neurons
+### Courtship experience modulates circuit properties between MBγ and M6 neurons
 
 We confirmed the involvement of MBγ and M6 neurons in courtship conditioning by chronically silencing them using cell-type specific GAL4 drivers (Figure 1—figure supplement 1) to express tetanus toxin light chain (UAS-TNT, an inhibitor of synaptic transmission; [Martin et al., 2002]). Single males of each genotype were trained by first pairing them for 1 hr with a single mated female, and then testing their courtship towards a fresh mated female after a 30 min rest period. We used automated video analysis to derive a courtship index (CI) for each male, defined as the percentage of time over a 10 min test period during which the male courts the female. A suppression index (SI) was then calculated as the relative reduction in the mean courtship indices of trained (CI+) versus naïve (CI-) populations: SI = 100*(1-CI+/CI-). Control flies expressing an inactive form of tetanus toxin (UAS-TNTQ) typically showed a SI of ~40–50% (Figure 1A,B; Supplementary file 1). By contrast, males in which M6 neurons or MBγ neurons were silenced with an inhibitory form of tetanus toxin (UAS-TNT) showed much less or no suppression (Figure 1A,B; Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig1-v3.jpg)
+
+**Figure 1.:** (A) Suppression indices (SI), calculated from mean courtship indices of male flies in which active (UAS-TNT) or inactive (UAS-TNTQ) tetanus toxin is expressed in MBγ neurons (1, VT044966-GAL4; 2, VT030413-GAL4). In this and other panels, statistical significance of differences from zero or from control groups is indicated as follows: ***p<0.001, **p<0.01, *p<0.05, n.s. p>0.05, permutation tests, see Supplementary file 1. (B) Suppression indices (SI), calculated from mean courtship indices of male flies in which active (UAS-TNT) or inactive (UAS-TNTQ) tetanus toxin is expressed in M6 neurons (1, VT014702-GAL4; 2, VT032411-GAL4). See Supplementary file 1. (C) Suppression indices (SI) of naïve or experienced (exp) male flies upon thermogenetic activation of MBγ neurons (1, VT044966-GAL4). See Supplementary file 1. (D) Suppression indices (SI) of naïve or experienced (exp) male flies upon thermogenetic activation of M6 neurons (2, VT032411-GAL4). See Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Maximum intensity projections from confocal images of whole central nervous systems of VT-GAL4 UAS-mCD8-GFP or VT-LexA LexAop-mCD8-GFP males, stained for presynaptic sites (magenta, mAb nc82) and anti-GFP (green). Scale bars, 50 μm.
 
 The DAN inputs to a given MB compartment are believed to modulate synaptic transmission from MB neurons to MBONs, primarily through their presynaptic inputs onto the KCs (Kim et al., 2007; Qin et al., 2012). Some studies have indicated that DANs enhance KC>MBON transmission (Cohn et al., 2015; Owald et al., 2015; Plaçais et al., 2013; Pai et al., 2013), whereas others have suggested that DANs depress these synapses (Aso et al., 2014a; Hige et al., 2015; Owald et al., 2015; Séjourné et al., 2011; Hattori et al., 2017; Lewis et al., 2015). The sign of modulation may therefore depend upon the context. We predicted that, if M6 is the relevant MBON for courtship conditioning, then artificial activation of M6 should suppress courtship. Moreover, if MBγ>M6 transmission is modified by training, then M6 activation should be equally potent in experienced and naïve males, whereas MBγ activation should be either more or less potent in experienced males, depending upon whether training potentiates or depresses MBγ>M6 synapses.
 
 We tested these predictions using the thermosensitive cation channel TrpA1 (open at 32°C and closed at 20°C) (Rosenzweig et al., 2005) to activate either MBγ or M6 cells. To measure the extent of courtship suppression we used unreceptive virgin females (pseudomated females) as testers, which do not elicit significant courtship suppression in experienced males (Keleman et al., 2012). For each condition, we determined a SI as the percentage reduction in courtship activity towards these unreceptive virgins in 10 min assays performed at 32°C compared to 20°C: SI = 100*(1-CI32/CI20). We found that MBγ activation was significantly more potent in experienced males than in naïve males, in which it had only a small effect on courtship (Figure 1C; Supplementary file 1). By contrast, M6 activation suppressed male courtship with equal potency in both naïve and experienced males (Figure 1D; Supplementary file 1). We conclude from these data that courtship experience with mated females potentiates synaptic transmission from MBγ to M6 cells.
 
-## Dopamine modulates synaptic transmission from MBγ to M6 neurons
+### Dopamine modulates synaptic transmission from MBγ to M6 neurons
 
 To examine synaptic transmission between MBγ and M6 neurons, we used optogenetics. We generated a step-function channelrhopodsin variant, SFOCatCh, that combines mutations to increase the off kinetics (SFO = C128S/D156A, [Yizhar et al., 2011]) with a single amino acid substitution to enhance the conductance of divalent cations (CatCh = L132C, [Kleinlogel et al., 2011]). We validated SFOCatCh by whole-cell patch clamp recording in olfactory projection neurons (Figure 2—figure supplement 1). We used SFOCatCh in conjunction with GCaMP6s (Chen et al., 2013) to monitor calcium responses in whole explanted brains of naïve males. The combination of SFOCatCh and GCaMP6s temporally uncouples the optical inputs required for activity manipulation and calcium imaging. In all experiments with SFOCatCh and GCaMP6s reported here, we imaged calcium responses during three consecutive 4 s periods, each of which was preceded by a 100 ms pulse of green, blue, or green light, respectively, to turn SFOCatCh OFF, ON, or OFF again (Figure 2A). This protocol thus provides a pre-stimulus baseline, a during-stimulus response, and a post-stimulus response. To assess whether and how dopamine modulates MBγ>M6 transmission, we repeated this OFF/ON/OFF protocol 3 times at 3 min intervals: first without dopamine, then with either 0.1 mM or 1 mM dopamine delivered for the first second of each imaging period through a perfusion pipette positioned at the γ5 compartment, and finally following dopamine washout (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-v3.jpg)
+
+**Figure 2.:** (A) Experimental protocol. OFF and ON indicate 4 s imaging periods, preceded by 100 ms pulses of 540 nm or 470 nm light to switch SFOCatCh OFF and ON, respectively. Gray bars indicate 1 s focal perfusion into the γ5 compartment. Buffer, dopamine injection (DA) and washout trials are separated by 3 min intervals. (B) Representative calcium responses in M6 dendrites in the γ5 compartment. Scale bar, 10 μm. (C) Average ΔF/F responses in M6 dendrites. n = 10. Mean ± s.e.m. (D) Average ΔF/F responses during the SFOCatCh ON periods of successive buffer, DA, and washout trials. n = 15, 17, 10 for 0, 0.1, and 1.0 mM DA, respectively. ***p<0.001, t-test. (E) Average ΔF/F responses during the SFOCatCh ON periods of successive buffer, apomorphine, and washout trials. n = 12. *p<0.05, ***p<0.001, t-test. (F) Average ΔF/F responses during the SFOCatCh ON periods of successive trials with buffer only, 1 mM DA, and DA plus 0.15 mM mecamylamine (Mec). n = 9. ***p<0.001, t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Patch-clamp recording from an olfactory projection neuron of a GH146-GAL4 UAS-SFOCatCh male. Blue and green bars indicate 100 ms pulses of 470 nm and 540 nm light. (B) and (C) Firing rate (B), n = 11 cell-attached recordings) and membrane potential (C), n = 4 whole-cell recordings of olfactory projection neurons during the first 5 s after stimulation with 470 nm or 540 nm light. Mean ± s.e.m. ***p<0.001 for comparisons to zero, t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative calcium responses in M6 axons. Experimental protocol as in Figure 2A. Scale bar, 10 μm. (B) Average ΔF/F responses in M6 axons during the SFOCatCh ON periods of successive buffer, DA, and washout trials. n = 11, 10, 9 for 0, 0.1, and 1.0 mM DA, respectively. *p<0.05, **p<0.01, one-way ANOVA test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) and (B) Representative calcium responses in M6 dendrites (A) and axons (B) of male brains expressing GCaMP6s in M6 neurons and CsChrimson in MBγ neurons, prior to (pre) and after (post) stimulation with 635 nm LED light Scale bar, 10 μm. Buffer, DA, and washout trials were performed at 3 min intervals. (C) Average ΔF/F responses in M6 dendrites during successive buffer, DA, and washout trials. Light red bar indicates stimulation with 30 2 ms LED pulses at 30 Hz. Mean ± s.e.m. n = 12. (D) Average ΔF/F responses in M6 dendrites during successive buffer, DA, and washout trials. n = 12, 7, 12 for 0, 0.1, and 1.0 mM DA, respectively. *p<0.1, ***p<0.001, one-way ANOVA test.
+
 We could not detect any robust calcium response in either the dendrites (Figure 2B–D) or axon termini (Figure 2—figure supplement 2) of M6 when we activated MBγ with SFOCatCh in the absence of exogenous dopamine. However, a strong dose-dependent calcium response was consistently observed in trials with dopamine during the SFOCatCh ON period. In contrast, little or no response was observed during either the SFOCatCh OFF periods (Figure 2B–D, Figure 2—figure supplement 2) or the SFOCatCh ON period after dopamine washout (Figure 2B,C, Figure 2—figure supplement 2). We obtained similar results when we applied the dopamine receptor agonist apomorphine rather than dopamine (Figure 2E), or used CsChrimson (Klapoetke et al., 2014) rather than SFOCatCh as the optogenetic activator (Figure 2—figure supplement 3). The response to dopamine and SFOCatCh was completely abolished by application of the nicotinic acetylcholine receptor antagonist mecamylamine (Figure 2F), which blocks synaptic transmission from KCs to MBONs (Barnstedt et al., 2016). Together, these data indicate that cholinergic synaptic transmission from MBγ to M6 cells is initially weak but can be acutely potentiated by dopamine.
 
-## Repetitive stimulation of MBγ potentiates MBγ to M6 transmission
+### Repetitive stimulation of MBγ potentiates MBγ to M6 transmission
 
 Whereas we could not detect a strong calcium response in M6 MBONs upon MBγ activation in the absence of dopamine, others have observed calcium responses in various MBONs, including M6, upon activation of KCs without application of dopamine or DAN stimulation (Cohn et al., 2015; Owald et al., 2015). We noted however that in our initial control experiments without dopamine, in which we sometimes performed multiple trials on the same sample, a calcium response could indeed be detected in the later trials. This suggests that stimulus history may account for some of the variability in MBON responses to KC stimulation in the absence of dopamine or DAN activation. To explore this possibility more rigorously, we activated MBγ neurons with SFOCatCh using the same OFF/ON/OFF protocol as before, now repeating the stimulus every minute. The initial stimuli, as previously observed in the trials without exogenous dopamine, did not elicit a detectable GCaMP6s response in M6 neurons. However, after 3–4 trials a significant calcium response was observed (Figure 3A,B). This response increased upon each successive stimulation before reaching a plateau after approximately 20 trials. This response was blocked by the dopamine D1-type receptor antagonist SCH23390 (Figure 3C), regardless of whether it was applied during the induction or plateau phase. This suggests that, upon repetitive stimulation of MBγ neurons, endogenous dopamine enables synaptic transmission to M6 neurons. The most likely source of this endogenous dopamine supply is the aSP13 neurons. Indeed, by shifting GCaMP6s from M6 to aSP13, we confirmed that the aSP13 DANs respond in a similar manner as M6 to the repetitive activation of MBγ neurons (Figure 3E,F)
 
@@ -56,9 +80,21 @@ Whereas we could not detect a strong calcium response in M6 MBONs upon MBγ acti
 
 To determine how long MBγ>M6 synapses remain potentiated after repetitive MBγ activation, we first induced potentiation with 30 pulses of MBγ activation at 1 min intervals, and then examined the response of M6 neurons to a single pulse of MBγ activation after 1, 2 or 3 hr. Potentiation at MBγ>M6 synapses was barely diminished after 1 hr, but fell to about 50% of its initial level after 3 hr (Figure 3D). The persistence of potentiation at MBγ>M6 synapses in these experiments is thus in line with the persistence of the courtship memory after a 30 min training period (Keleman et al., 2012).
 
-## Activation of the MBγ>M6>aSP13 recurrent circuit elicits persistent aSP13 activity
+### Activation of the MBγ>M6>aSP13 recurrent circuit elicits persistent aSP13 activity
 
 Anatomically, DANs and MBONs innervating the same MB compartment, have the potential to form recurrent loops, with MBONs providing input to DANs (Aso et al., 2014a; Takemura et al., 2017; Ichinose et al., 2015; Eichler et al., 2017; Owald et al., 2015). In particular, the axonal termini of M6 MBONs are closely apposed to the aSP13 dendrites (Aso et al., 2014a). We therefore tested whether activation of M6 neurons elicits a calcium response in aSP13 neurons by expressing SFOCatCh in M6 and GCaMP6s in aSP13. Indeed, acute activation of M6 neurons produced a strong calcium response in aSP13 (Figure 4A,B). This response was blocked by the NMDA receptor antagonist AP-5 (Figure 4C), consistent with glutamatergic transmission from M6 cells. Activation of MBγ neurons with SFOCatCh also elicited a strong calcium response in aSP13 neurons (Figure 4E,F) that was also dependent on glutamatergic neurotransmission, as well as both cholinergic transmission and dopamine (Figure 4G).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-v3.jpg)
+
+**Figure 4.:** (A) Experimental protocol for M6 activation and aSP13 imaging, and representative calcium responses in aSP13 axons in the γ5 compartment. Scale bar, 10 μm. (B) Average ΔF/F responses in aSP13 axons, mean ± s.e.m. n = 22. (C) Average ΔF/F responses during the SFOCatCh ON periods in trials with (n = 9) or without 50 μM D-AP-5 (n = 22). ***p<0.001, t-test. (D) Average ΔF/F responses, imaged at 1 Hz after 200 s of post-stimulus section. (E) Experimental protocol for MBγ activation and aSP13 imaging, and representative calcium responses in aSP13 axons in the γ5 compartment. Scale bar, 10 μm. (F) Average ΔF/F responses in aSP13 axons, mean ± s.e.m. n = 13. (G) Average ΔF/F responses during the SFOCatCh ON periods in trials with or without 1 mM DA, 50 μM AP-5, or 150 μM mecamylamine (Mec). n = 13, 13, 5,10, respectively. **p<0.01, ***p<0.001, t-test. (H) Average ΔF/F responses, imaged at 1 Hz after 200 s of post-stimulus section. (I) Suppression indices (SI) of male flies in which shits is expressed in M6 neurons, shifted to 32°C during training or testing, as indicated. ***p<0.001, **p<0.01, *p<0.05, permutation tests, see Supplementary file 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Average ΔF/F responses in the γ5 compartment of males expressing both SFOCatCh and GCaMP6s in aSP13 neurons. Experimental protocol as in Figure 3A. Mean ± s.e.m. n = 6.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31425/elife-31425-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Average ΔF/F responses during the SFOCatCh ON periods with or without 50 μM AP-5. Mean ± s.e.m. n = 6 and 9, respectively.
 
 Whereas the M6 response to MBγ activation was diminished in the post-stimulus OFF period in trials with dopamine (Figure 2B,C), the response of aSP13 neurons to either M6 or MBγ activation persisted into the post-stimulus SFOCatCh OFF period (Figure 4A,B,E and F). In each case, the calcium response in aSP13 gradually declined over a 2 min period (Figure 4D and H). The persistent response of aSP13 neurons is not an intrinsic property of aSP13 neurons, since it was not observed when SFOCatCh was used to activate the aSP13 neurons themselves (Figure 4—figure supplement 1). Given that the response of aSP13 to MBγ or M6 activation is blocked by AP-5, we infer that this persistent activity is induced by glutamatergic transmission from M6 cells.
 
@@ -82,46 +118,46 @@ In summary, our data suggest that a brief persistent activity of aSP13 neurons r
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 Flies for behavior experiments were reared in vials with standard cornmeal food at 25°C, or as indicated, at 60% humidity in a 12 hr:12 hr light:dark cycle. Flies for physiological experiments were reared on standard cornmeal food, supplemented with 500 μM all-trans-retinal, in dark.
 
 For behavioral and physiological experiments we used VT-Gal4 and VT-LexA lines obtained from the VT library, a collection of 2 kb enhancer fragments, generated following the strategy of (Pfeiffer et al., 2008) (B.J.D., unpublished data), UAS-Kir2.1 (Nitabach et al., 2002), UAS-TNT/UAS-TNTQ (Martin et al., 2002), UAS-Shits (Kitamoto, 2002), UAS-TrpA1 (Rosenzweig et al., 2005), UAS-SFOCatCh (VIE-260b) (B.J.D., unpublished), 20xUAS-CsChrimson-tdTomato (SuHwattp5) and LexAop2-opGCaMPs (SuHwattp1) (gift from Barret Pfeiffer), LexAop-IVS-GCaMP6s-p10 (attp1) (Chen et al., 2013). Pseudomated females were (elav-Gal4/+UAS-SP/+) virgins (Keleman et al., 2012).
 
-## Behavior
+### Behavior
 
 Courtship conditioning was performed as described (Siwicki and Ladewski, 2003). For training, solitary males (aged for 5–6 days) were placed in food chambers for 1 hr either with (trained) or without (naïve) a single mated female. After training each male was recovered, allowed to rest for 30 min and tested with a fresh mated female. Tests were performed in 10 mm diameter chambers and videotaped for 10 min (JVC handyman, 30 GB HD). We used automated video analysis to derive a courtship index (CI) for each male, defined as the percentage of time over a 10 min test period during which the male courts the female.
 
-## Statistics
+### Statistics
 
 A MATLAB script (permutation test) (Kamyshev et al., 1999) was used to for statistical comparison of SIs between two groups. Briefly, the entire set of courtship indices for both naïve and trained flies were pooled and then randomly assorted into simulated naïve and trained groups of the same size as the original data. A SI was calculated for each of 100,000 randomly permutated data sets, and P values were estimated for the null hypothesis that learning equals 0 (H0: SI = 0) or for the null hypothesis that experimental and control males learn equally well (H0: SI = SIc).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Fly brains and ventral nerve cords were dissected in Schneider’s insect medium and fixed in 2% paraformaldehyde (PFA) at room temperature for 55 min. Tissues were washed in PBT (0.5% Triton X-100 in phosphate buffered saline (PBS)) and blocked using 5% normal goat serum) before incubation with antibodies (diluted in blocking solution in a volume of 200 μl per sample). Primary antibodies (rabbit anti-GFP A-11122 from Molecular Probes at 2 μg/ml and mouse anti-Bruchpilot nc82 hybridoma supernatant from DSHB at 1 μg/ml) were applied for 2–3 days. After a rinse and four 15 min washes in PBT, tissues were then incubated for 2–3 days with Alexa Fluor 488-conjugated goat anti-rabbit and Alexa Fluor 568-conjugated goat anti-mouse secondary antibodies (Molecular Probes; 2.5 μg/ml and 5 μg/ml, respectively). Each of the antibody incubations were done for 4 hr at room temperature before placing the samples at 4 ˚C for the remainder of the incubation time. After a rinse and four 15 min washes in PBT, tissues were fixed with 4% PFA in PBS for 4 hr, followed by a rinse and four 15 min washes in PBT. Directly before mounting, tissues were rinsed and washed for 15 min in PBS to remove the Triton. The tissues were mounted on poly-L-lysine-coated cover slips and then dehydrated with 10 min ethanol baths of 30%, 50%, 75%, 95% and 3 × 100% followed by three 5 min washes in 100% xylene. Finally, mounted samples were embedded in xylene-based mounting medium (DPX; Electron Microscopy Science, Hatfield, PA) and dried for 2 days. Images were collected using an LSM710 confocal microscope (Zeiss, Germany) fitted with a Plan-Apochromat 20x/0.8 M27 objective.
 
-## SFOCatCh
+### SFOCatCh
 
 SFOCatCh was constructed from a synthetic ChR2 open reading frame with codon usage optimized for Drosophila, using mutagenic PCR to introduce the C128S and D156A substitutions to make it switchable (Yizhar et al., 2011) and the L132C mutation to increase cation conductance (Kleinlogel et al., 2011). The resulting coding fragment was inserted into a modified UAS vector for site-specific insertion at the VIE-260b landing site.
 
-## Two-photon calcium imaging
+### Two-photon calcium imaging
 
 For ex vivo calcium imaging experiments, 5–7 days old naïve males were briefly anesthetized on ice and brains were dissected out in calcium free external saline (ES) containing: 103 mM NaCl, 3 mM KCl, 5 mM TES (N-tris[hydroxymethyl]methyl-2-aminoethane sulfonic acid, a buffer chemical with peak performance around pH7.5), 10 mM trehalose, 10 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 4 mM MgCl2, 7 mM sucrose, pH 7.4, 275 mOsm (Gu and O'Dowd, 2006). The brain explants were transferred into a custom-made imaging chamber and mounted with anterior side up. Brains were perfused with ES supplemented freshly with 2 mM calcium, at speed 2 mL/min, pre-saturated with mixture of 95% O2/5% CO2. All two-photon imaging were performed using 40x N.A. 0.75 water-immersion objective (N-Achroplan, Zeiss), on LSM 7 MP microscope (Zeiss) with a Ti:sapphire laser (Chameleon Vision II, Coherent, Santa Clara, CA). GCaMP was excited at 900 or 920 nm and emission signals were collected by GaAsP photomultiplier tubes (PMTs). Frame images (256 × 256 pixels) were acquired at 5–10 Hz. The region of interest (ROI) covers the entire bilateral medial γ5 lobe in MB. For consistency, imaging focus was kept approximately at the same level in different animal guided by axon position of M6 or aSP13.
 
-## Optogenetic stimulation and functional connectivity
+### Optogenetic stimulation and functional connectivity
 
 For SFOCatCh experiments, neurons were activated with whole field light from a mercury lamp (X-cite 120 PC, Excelitas Technologies). Light was filtered by 38HE 470/40 nm and 43HE 550/25 nm (Zeiss), and pulse duration was controlled by a TTL-triggered shutter (Uniblitz, Rochester, NY). Light density was calculated by dividing light power to fields of view (FOV) of objective: 480 nm, 0.28 mW/mm2, and 540 nm, 0.86 mW/mm2.
 
 For CsChrimson experiments, LED (pE-4000, CoolLED) was used to deliver 2 ms light pulse as stimulation. Light (peak 635 nm) trains were further filtered by 635/18 nm (Semrock, Rochester, NY) and delivered at 30 Hz for 1 s. Light density was calculated as 0.126 mW/mm2 when staying persistent during measurement at 635 nm.
 
-## Focal dopamine perfusion
+### Focal dopamine perfusion
 
 Dopamine (DA) solution was prepared freshly before each experiment. DA solution was back-filled into a glass electrode with fine tip (~3 μm) shortly before each focal application. DA was injected (1 s, 5 p.s.i) in the medial γ5 lobe by Picospritzer-III (Parker, Cleveland, OH) (Cassenaer and Laurent, 2012). We controlled for dopamine diffusion by co-loading a fluorescent dye (Texas red 3000, 0,1 mg/ml) to the focal pipette and monitoring the dye distribution area during two-photon scanning.
 
-## Data analysis
+### Data analysis
 
 GCaMP imaging data was analyzed in a custom program modified from Sun et al., 2016. Fluorescence changes in intensity were calculated as ΔF/F, where F is the average signals of the five frames before each stimulation. ROIs were chosen contained single optical plate with the neural processes of interest. Peak ΔF/F represents mean ΔF/F in continuous five frames responses (SFOCatCh ON) acquired during LTP procedure. All data represented as mean ± s.e.m. All statistical analyses were performed in Graphpad Prism 7.0a. Data were analyzed by unpaired Student’s t-test or one-way ANOVA test with post hoc Tukey’s range tests.
 
-## Electrophysiology
+### Electrophysiology
 
 For ex vivo patch-clamp recording from projection neurons (GH146-Gal4 > UAS SFOCatCh + UAS -mCD8::GFP) in antennal lobe brain explants were prepared as described in Ca imaging section, and recordings were performed as previously described (Gu and O'Dowd, 2006). Electrodes (5–7 MΩ) were filled with saline solution containing 140 mM potassium aspartate, 10 mM HEPES, 1 mM KCl, 4 mM MgATP, 0.5 mM Na3GTP, 1 mM EGTA, pH 7.3, and 265 mOsm. Cell-attached recording was performed in voltage-clamp mode with 0 mV holding potential. Whole-cell patch-clamp recording was performed in current-clamp mode with resting membrane potential around 55–65 mV. Signals were acquired by MultiClamp 700B amplifier, digitized at 10 kHz, and low-pass filtered at 5 kHz.

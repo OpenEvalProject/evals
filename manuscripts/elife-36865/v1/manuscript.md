@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.36865.001 Pdgfra -expressing ( Pdgfra+ ) cells have been implicated as progenitors in many mesenchymal tissues. To determine lineage potential, we generated Pdgfra knockin mice using CRISPR/Cas9. During lung maturation, counter to a prior study reporting that rtTA Pdgfra + cells give rise equally to myofibroblasts and lipofibroblasts, lineage tracing using Pdgfra mice indicated that ~95% of the lineaged cells are myofibroblasts. Genetic ablation of rtTA ;tetO-cre Pdgfra cells using + Pdgfra -driven diphtheria toxin (DTA) led to alveolar simplification, demonstrating that these cells are essential for building the gas exchange surface area. In the adult bleomycin model of lung fibrosis, lineaged cells increased to contribute to pathological myofibroblasts. In contrast, in a neonatal hyperoxia model of bronchopulmonary dysplasia (BPD), lineaged cells decreased and do not substantially contribute to pathological myofibroblasts. Our findings revealed complexity in the behavior of the rtTA Pdgfra -lineaged cells as exemplified by their distinct contributions to myofibroblasts in normal maturation, BPD and adult fibrosis.
+Pdgfra-expressing (Pdgfra+) cells have been implicated as progenitors in many mesenchymal tissues. To determine lineage potential, we generated PdgfrartTA knockin mice using CRISPR/Cas9. During lung maturation, counter to a prior study reporting that Pdgfra+ cells give rise equally to myofibroblasts and lipofibroblasts, lineage tracing using PdgfrartTA;tetO-cre mice indicated that ~95% of the lineaged cells are myofibroblasts. Genetic ablation of Pdgfra+ cells using PdgfrartTA-driven diphtheria toxin (DTA) led to alveolar simplification, demonstrating that these cells are essential for building the gas exchange surface area. In the adult bleomycin model of lung fibrosis, lineaged cells increased to contribute to pathological myofibroblasts. In contrast, in a neonatal hyperoxia model of bronchopulmonary dysplasia (BPD), lineaged cells decreased and do not substantially contribute to pathological myofibroblasts. Our findings revealed complexity in the behavior of the Pdgfra-lineaged cells as exemplified by their distinct contributions to myofibroblasts in normal maturation, BPD and adult fibrosis.
 
 ## Introduction
 
@@ -34,49 +34,89 @@ In this study, we addressed the relationship between Pdgfra+ cells and the thre
 
 ## Results
 
-## Efficient generation of the PdgfrartTA knockin line using CRISPR/Cas9
+### Efficient generation of the PdgfrartTA knockin line using CRISPR/Cas9
 
 To generate PdgfrartTA line, we used the CRISPR/Cas9 technology and designed a guide RNA (gRNA) targeting a site in the first intron of Pdgfra. This is the same insertion site as in the PdgfraGFP line, which is frequently used as a reporter of Pdgfra expression (Chen et al., 2012; Green et al., 2016; Hamilton et al., 2003; McGowan and McCoy, 2014; McGowan and McCoy, 2015). We chose to generate an rtTA knockin line rather than a creERT2 knockin line for two reasons. First, rtTA is activated by doxycycline which does not induce the frequent abortion observed with prenatal administration of tamoxifen that is needed to induce creERT2. Second, rtTA can be used to turn on/off transgene expression dynamically, while creERT2 acts through DNA re-arrangements that are not reversible. A double-stranded donor plasmid was generated that contains a splicing acceptor (SA), rtTA and triple polyadenylation sequence (3 PA), with ~1.5 kb homologous arms on each side (Figure 1A). Coinjection of CAS9 protein, gRNA and donor plasmid yielded 23 pups. Among them, two had the identical correct rtTA insertion through homologous recombination. Initial characterization indicated that the two lines behaved similarly. Thus, we used one of the two lines for all following experiments (Figure 1A and Figure 1—figure supplement 1A,B).
 
-## PDGFRartTA drives rtTA activity faithfully in the Pdgfra expression pattern
+![Figure 1.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig1-v1.jpg)
+
+**Figure 1.:** (A) A schematic overview of the strategy for generating the PdgfrartTA knock-in allele. The gRNA coding sequence is as shown, and the protospacer-adjacent motif (PAM) sequence is indicated in green. The first three of Pdgfra exons are diagramed in blue. The SA-rtTA-3PA fragment is diagramed in red. The homologous arms of the donor vector are indicated as HA-L (~1.5 kb) and HA-R (~1.5 kb). The approximate positions of primers used for PCR analysis are shown (LF-left forward, LB-left back, RF-right forward, RB-right back). (B) Representative immunofluorescent staining showing GFP+ cells in PdgfrartTA;tetO-GFP mice and PdgfraGFP mice at P7, scale bars: 50 µm. (C) Quantification of the percentage of GFP+ cells as compared to total cell number in the lungs of the two different strains as shown in B (14.66 ± 1.04 for PdgfrartTA;tetO-GFP mice and 16.33 ± 1.34 for PdgfraGFP mice, ns for not significant, p=0.379, n = 3 each). (D) FACS analysis of GFP+ cells in PdgfrartTA;tetO-GFP mice and PdgfraGFP mice as indicated at P7. (E) Quantification of the percentage of GFP+ cells as compared to total cell number in the lungs of the two different strains as shown in D (2.07 ± 0.15 for PdgfrartTA;tetO-GFP mice and 3.48 ± 0.64 for PdgfraGFP mice, ns for not significant, p=0.0759, n = 4 each).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Primer sets LF, LB and RF, RB as indicated in Figure 1A were used in genomic PCR on tail DNA of CRISPR/Cas9 injected founder animals. Two samples showed positive homologous recombination-mediated insertion of rtTA cDNA. (C) Representative FACS plot showing GFP+ and PDGFRa+ cells as labeled by CD140a (PDGFRa)-PE antibody in PdgfrartTA;tetO-GFP mice at P7. (D) Quantification of the percentage of GFP+ cells as compared to total PDGFRa+ cells in the lungs as shown in C (78.62 ± 5.71, n = 4).
+
+### PDGFRartTA drives rtTA activity faithfully in the Pdgfra expression pattern
 
 To determine rtTA activity, we mated PdgfrartTA mice with tetO-GFP reporter mice. Doxycycline (dox) administration started at embryonic day (E) 9.5 and continued on to postnatal day (P) 7, the peak of alveologenesis, when the activity was analyzed. In sections of the alveolar region, GFP signal was found regularly at septal tips (Figure 1B). This pattern replicates that of the PdgfraGFP line. Quantification across sections from multiple lung samples showed that GFP+ cells made up a similar percentage of total alveolar cell population in PdgfrartTA;tetO-GFP lungs as compared to PdgfraGFP lungs (Figure 1C). Quantification using flow cytometry analysis from dissociated lungs revealed that GFP+ cells made up a smaller percentage of total lung cells in PdgfrartTA;tetO-GFP lungs as compared to PdgfraGFP lungs, but the difference is not statistically significant (Figure 1D,E). For labeling efficiency in PdgfrartTA;tetO-GFP, flow cytometry analysis showed that out of the total PDGFRa+ cells as labeled by anti-CD140a (PDGFRa)-PE antibody, 78.62 ± 5.71% were GFP+ (Figure 1—figure supplement 1C,D). These results indicate that the knockin rtTA strain recapitulates Pdgfra expression efficiently.
 
-## Lineage tracing revealed that Pdgfra cells give rise primarily to normal alveolar myofibroblasts
+### Lineage tracing revealed that Pdgfra cells give rise primarily to normal alveolar myofibroblasts
 
 To perform lineage tracing of Pdgfra-expressing cells, we generated PdgfrartTA;tetO-cre;Rosa-tdTomato reporter mice. First, with no dox treatment, only rare tdTomato+ cells were observed, suggesting that there is very little leaky activity (Figure 2—figure supplement 1A). Second, when induced with dox starting at E9.5 and analyzed at E12.5, Pdgfra+ lineaged cells represent a large proportion of mesenchymal cells, similar to that of GFP+ cells in E12.5 PdgfraGFP lungs (Figure 2—figure supplement 1B,B’, C and C’). However, there are unlabeled mesenchymal cells in lungs of both strains.
 
 Third, when induced with dox starting at E9.5 and continuing on to P7, the peak of alveologenesis, tdTomato +Pdgfra lineaged cells were primarily located at the septal tips (Figure 2A). TdTomato signal showed substantial colocalization with myofibroblast marker SM22a staining in the alveolar region (Figure 2B–E, arrows). A similar colocalization was observed with another myofibroblasts marker, a-SMA (Figure 2—figure supplement 1D–F). Quantification revealed that 94.3 ± 1.83% of tdTomato+ cells were SM22a-positive (Figure 2N). In comparison, only 5.6 ± 1.19% of tdTomato+ cells were positive for the lipofibroblast marker ADRP (Figure 2F–I and Figure 2N). Interestingly, 3.78 ± 1.48% of tdTomato+ cells were positive for the endothelial marker EGR (Figure 2J–M and Figure 2N). This was also confirmed with ICAM2 staining, a second marker of endothelial cells (Figure 2—figure supplement 1G–I). Focusing on myofibroblasts, quantification revealed that 92.71 ± 0.84% of SM22a + cells were tdTomato+ (Figure 2O), indicating that the majority of the myofibroblasts at P7 are derived from Pdgfra+ cells. There was no labeling of the vascular smooth muscles at P7 (Figure 2—figure supplement 1J–L). While there were labeled cells subjacent to the airway, they did not overlap with airway smooth muscles upon close inspection (Figure 2—figure supplement 1J–L).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig2-v1.jpg)
+
+**Figure 2.:** (A) Timeline of the start of dox treatment and analysis. (B–M) Representative immunofluorescent staining of P7 PdgfrartTA;tetO-cre;Rosa-tdTomato lungs. Markers are as indicated: tdTomato (red), the myofibroblast marker SM22a (green) and DAPI (blue) (B–E); the lipofibroblast marker ADRP (green) (F–I); the endothelium cells marker ERG (green) (J–M). Arrows in panels E, I and M indicate cells with co-localization of signals. Scale bars: 50 µm. (N) Quantification of the percentages within tdTomato+ cells that are also SM22a+ for myofibroblasts, ADRP+ for lipofibroblasts, and ERG+ for endothelial cells, respectively (94.3 ± 1.83 for SM22a, 5.6 ± 1.19 for ADRP and 3.78 ± 1.48 for ERG, n = 3 each). (O) Quantification of the percentage within SM22a+ cells that are also tdTomato+ for lineaged cells (92.71 ± 0.84, n = 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative immunofluorescent staining for tdTomato (red) and DAPI (blue) in lungs of PDGFRartTA;tetO-cre;Rosa-tdTomato mice at P7 without dox feeding. (B,B’) Representative immunofluorescent staining for tdTomato (red) and DAPI (blue) in lungs of PDGFRartTA;tetO-cre;Rosa-tdTomato mice at E12.5. Boxed area in B is magnified in B’. Arrows in panel (B’) indicate unlabeled cells. (C–C’) Representative immunofluorescent staining for GFP (green) and DAPI (blue) in lungs of PdgfraGFP mice at E12.5. Boxed areas in C is magnified in C’. Arrows in panels (C’) indicate unlabeled cells. (D–F) Representative immunofluorescent staining for tdTomato (red), a-SMA (green) and DAPI (blue) in lungs of PDGFRartTA;tetO-cre;Rosa-tdTomato mice at P7. (G–I) Representative immunofluorescent staining for tdTomato (red), ICAM2 (green) and DAPI (blue) in lungs of PDGFRartTA;tetO-cre;Rosa-tdTomato mice at P7. Arrows in panels (I) indicate co-localization of tdTomato and ICAM2 (J–L) Representative immunofluorescent staining for tdTomato (red), SM22a (green) and DAPI (blue) in lungs of PDGFRartTA;tetO-cre;Rosa-tdTomato mice at P7. Arrow in panels (L) indicates vascular smooth muscle cells which are not lineage-labeled. Scale bars: 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Timeline of dox treatment and analysis. PdgfrartTA;tetO-cre;Rosa-tdTomato mice were given one dose of dox injection at P0 followed by dox food until analysis at P7. (B–M): Representative immunofluorescent staining in P7 PdgfrartTA;tetO-cre;Rosa-tdTomato lungs. Markers are as indicated: tdTomato (red), the myofibroblast marker SM22a (green) and DAPI (blue) (B–E); the lipofibroblasts marker ADRP (green) (F–I); the endothelium cells marker ERG (green) (J–M). Arrows in panels E and I indicate co-localization. (N) Quantification of the percentages within tdTomato+ cells that are also SM22a+ for myofibroblasts, ADRP+ for lipofibroblasts, and ERG+ for endothelial cells, respectively (95.57 ± 1.65 for SM22a and 5.25 ± 0.75 for ADRP, n = 3 each). Scale bars: 50 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Timeline of dox treatments and analysis. (B–G) Representative immunofluorescent staining of PdgfrartTA;tetO-cre;Rosa-tdTomato mice at P40. Markers include: tdTomato (red), SM22a (green) and DAPI (blue) (B–D); and tdTomato (red), ADRP (green) and DAPI (blue) (E–G). Scale bars: 50 µm.
+
 Fourth, we traced the postnatal lineage starting at birth by a single dose of dox injection at P0 followed by dox food until analysis at P7 (Figure 2—figure supplement 2A). Similar to our results from prenatal tracing, 95.57 ± 1.65% of tdTomato+ cells were positive for SM22a, and 5.25 ± 0.75% were positive for ADRP (Figure 2—figure supplement 2B–I and Figure 2—figure supplement 2N). Distinct to the result from prenatal tracing, no tdTomato+ cells were positive for ERG (Figure 2—figure supplement 2J–M and Figure 2—figure supplement 2N). Taken together, the findings from our knockin line demonstrate that Pdgfra-lineaged cells give rise primarily to myofibroblasts, with minor contributions to lipofibroblasts and endothelial cells.
 
 We recently showed that in a normal lung, myofibroblasts as defined by a-SMA and SM22a expression, are transiently detected starting at P3, peaks at P7, lowers to close to undetectable levels starting at P14, continuing into adult (Branchfield et al., 2016). The duration of expression corresponds precisely with the first of the two phases of alveologenesis (Schittny et al., 2008). This observation raised the question of whether the loss of myofibroblast markers is due to myofibroblast cell death or their downregulation of smooth muscle characteristics. Since Pdgfra+ cells give rise primarily to myofibroblasts as demonstrated above, we asked whether the tdTomato+ cells simply disappeared, or survived but turned off SM22a expression. After dox induction in the early postnatal stage, tdTomato+ cells were found to survive to adult stage as analyzed at P40, even though very little SM22a or ADRP expression can be detected (Figure 2—figure supplement 3). These data suggest that the transient nature of myofibroblasts during alveologenesis is due to these cells turning on and off smooth muscle markers.
 
-## Single cell transcriptome analysis of Pdgfra+ cells revealed diversity during alveologenesis
+### Single cell transcriptome analysis of Pdgfra+ cells revealed diversity during alveologenesis
 
 To further characterize Pdgfra+ cells during alveologensis, we performed single-cell RNA sequencing (scRNA-Seq) using fluorescence-activated cell sorting (FACS) enriched GFP+ cells from PdgfraGFP lungs at P7 (Figure 1D) and P15 (Figure 3—figure supplement 1). For P7, we analyzed profiles of 3204 sorted cells, with a median of 1596 genes per cell. t-distributed stochastic neighbor embedding (tSNE)-based plot revealed that Pdgfra+ cells from P7 lungs can be separated into five clusters (Figure 3A). Marker gene expression showed that the large cluster one contained the majority of Pdgfra-high expression cells, while the large cluster two contained the majority of Pdgfra-low expression cells. Interestingly, cluster two exhibited enriched expression of Fgf10 and Wnt2 (Figure 3B,C). Consistent with prior publication that Fgf10 lineaged cells give rise to lipofibroblasts (El Agha et al., 2014), cluster two contains cells that express Plin2, a lipofibroblast marker. Cluster three exhibited enriched expression of genes associated with cell cycle and cell proliferation, such as Cks2 and Top2a (Figure 3B). Cluster 4, a distinct small population of cells, expressed Lgr6, which is primarily associated with airway smooth muscle cells (Lee et al., 2017) (Figure 3B,C). Consistent with our finding that Pdgfra+ cells do not contribute to airway smooth muscles, close examination indicated that cluster 4 cells showed no or low Pdgfra expression, suggesting that this small population may have come through GFP+ sorting as escapers from FACS gating. Finally, cluster 5, a distinct small population, exhibited expression enriched in matrix associated genes, including Decorin (Dcn) and several collagen genes (Col1a1, Col3a1 and Col14a1) (Figure 3B,C). Focusing on myofibroblasts and lipofibroblasts, data from scRNAseq suggest that the majority of Pdgfra+ cells express Acta2 and Tagln, while a minority of them express Plin2 (Figure 3C), consistent with our lineage tracing data.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig3-v1.jpg)
+
+**Figure 3.:** (A, D) tSNE plots of scRNAseq data from cells isolated from P7 (A) and P15 (D) PdgfraGFP lungs. Cells can be clustered into five and four main distinct populations at P7 and P15, respectively. Circles in D highlight satellite clusters. (B, E) Heatmap showing top expressed genes across clusters from P7 (B) and P15 (E) PdgfraGFP lungs. (C, F) Distribution of cells expressing the indicated marker genes on tSNE plots from P7 (C) and P15 (F) PdgfraGFP lungs. (G) A list of representative genes showed altered expression in P7 versus P15 PdgfraGFP lungs, as indicated by the average unique molecular identifier (UMI) of the gene per cell in the Pdgfra-high clusters (for Acta2, Actg2, Tagln and Myh11), or in the matrix clusters (for Dcn, Col1a1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative FACS plot showing GFP+ cells in P15 PdgfraGFP mice.
+
 For P15 PdgfraGFP lungs, we were able to profile 1,234 cells with a median of 1441 genes per cell. tSNE-based plot revealed that these cells can be separated into four main clusters with a few satellite groups (Figure 3D). There are similarities and differences as compared to P7. Cluster one at P15, similar as cluster one at P7, contained a majority of Pdgfra-high expressing cells (Figure 3E,F). While they still express myofibroblast markers such as Acta2 and Tagln, their level, as well as the level of other myofibroblast-associated genes, are significantly lower at P15 compared to P7 (Figure 3G), consistent with our finding from antibody staining. Cluster 2, similar to cluster two at P7, exhibited enriched expression of Fgf10 and to a less extent Wnt2 and Plin2 (Figure 3E,F). At P15, we did not detect a cluster equivalent to cluster three at P7, the cluster with cell cycle and cell proliferating gene signature. This is in line with published finding that Ki67, a proliferation marker, correlates with Pdgfra expression at P4, but not at P12 (Kimani et al., 2009). The P15 cluster three was enriched for cells expressing Lgr6, and thereby is similar to cluster four in P7 lungs, with primarily airway smooth muscle cell characteristics (Figure 3E,F). The P15 cluster four exhibited enriched expression of matrix associated genes, some of them the same as cluster five markers in P7 lungs, suggesting that there is a small subset of the Pdgfra-low population that continued to express matrix-associated genes at a high level (Figure 3E–G). At P15 but not at P7, there are several scattered satellite small populations (circled) that are Pdgfra-negative, and are positive for Ptprc (CD45) and enriched for immune markers (Figure 3A,C,D,F). They are likely immune cells that escaped FACS gating.
 
-## Genetic ablation of Pdgfra+ cells leads to simplified alveoli
+### Genetic ablation of Pdgfra+ cells leads to simplified alveoli
 
 Data from us and others have shown that the Pdgfra+ myofibroblasts underline the septal ridges during alveologenesis (Branchfield et al., 2016; Endale et al., 2017; McGowan et al., 2008), raising the hypothesis that Pdgfra+ myofibroblasts may be essential for septae formation. To test this directly, we genetically ablated Pdgfra+ cells in PdgfrartTA;tetO-cre;Rosa-Dta mice. Neonatal triple transgenic mice received three daily injections of dox at P3-P5 to induce DTA expression at the onset of alveologenesis. The pups were harvested at P15 (Figure 4A). After dox induction, qRT-PCR result showed that PdgfrartTA;tetO-cre;Rosa-Dta lungs exhibited a 58% reduction of Pdgfra transcripts compared to controls, indicating the efficiency of ablation (Figure 4B). This ablation led to a clear emphysema-like enlargement of distal airspaces, a 57% increase as quantified by MLI as compared to control (Figure 4C,D,I). This is accompanied by disorganized Elastin, the key extracellular matrix molecule deposited by myofibroblasts (Figure 4E,F). Pdgfra+ cells have been described as niche for AEC2s by way of supporting their proliferation and differentiation (Barkauskas et al., 2013). While there is a decrease of AEC2 cells in the lungs after Pdgfra+ cell loss, there is no change in the % AEC2 cells to total, suggesting that the observed AEC2 reduction is proportion to the overall reduction of total cell number due to simplification (Figure 4G,H and J). Overall, these findings support the conclusion that the presence of Pdgfra+ myofibroblasts are essential for alveologenesis.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig4-v1.jpg)
 
-**Figure 4.:** Pdgfrα+ cells led to simplified alveoli.(A) Timeline of dox treatments and analysis. (B) qRT-PCR analysis indicated decreased Pdgfra expression in Pdgfra lungs compared to controls (1 ± 0.06 for control and 0.42 ± 0.05 for rtTA;tetO-cre;Rosa-DtaPdgfra mice, **p=0.0019, n = 3 each). (rtTA;tetO-cre;Rosa-DtaC–D) Representative H and E stained sections showing that Pdgfra mice have simplified alveoli compared to control. (rtTA;tetO-cre;Rosa-DtaE–F) Representative immunofluorescent stained sections for Elastin (red) and DAPI (blue) showing that Pdgfra lungs have disorganized Elastin. (rtTA;tetO-cre;Rosa-DtaG–H) Representative Immunofluorescent staining for AEC2 cells marker SPC (red) and DAPI (blue) showing that Pdgfra lungs have reduced AEC2 cells in proportion with alveoli simplification. Scale bars: 50 µm. (rtTA;tetO-cre;Rosa-DtaI) Quantification of alveolar simplification by MLI (1 ± 0.05 for control and 1.57 ± 0.04 for Pdgfra mice, ***p=0.0009, n = 3 each). (rtTA;tetO-cre;Rosa-DtaJ) Quantification of the percentage of total cells that are SPC+. There is no change in the proportion with or without ablation (14.9 ± 1.06 for control and 16.4 ± 0.93 for Pdgfra mice, ns for not significant, p=0.3414, n = 3 each).rtTA;tetO-cre;Rosa-Dta10.7554/eLife.36865.015Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Timeline of dox treatments and analysis. (B) qRT-PCR analysis indicated decreased Pdgfra expression in PdgfrartTA;tetO-cre;Rosa-Dta lungs compared to controls (1 ± 0.06 for control and 0.42 ± 0.05 for PdgfrartTA;tetO-cre;Rosa-Dta mice, **p=0.0019, n = 3 each). (C–D) Representative H and E stained sections showing that PdgfrartTA;tetO-cre;Rosa-Dta mice have simplified alveoli compared to control. (E–F) Representative immunofluorescent stained sections for Elastin (red) and DAPI (blue) showing that PdgfrartTA;tetO-cre;Rosa-Dta lungs have disorganized Elastin. (G–H) Representative Immunofluorescent staining for AEC2 cells marker SPC (red) and DAPI (blue) showing that PdgfrartTA;tetO-cre;Rosa-Dta lungs have reduced AEC2 cells in proportion with alveoli simplification. Scale bars: 50 µm. (I) Quantification of alveolar simplification by MLI (1 ± 0.05 for control and 1.57 ± 0.04 for PdgfrartTA;tetO-cre;Rosa-Dta mice, ***p=0.0009, n = 3 each). (J) Quantification of the percentage of total cells that are SPC+. There is no change in the proportion with or without ablation (14.9 ± 1.06 for control and 16.4 ± 0.93 for PdgfrartTA;tetO-cre;Rosa-Dta mice, ns for not significant, p=0.3414, n = 3 each).
 
-## PDGFRa-lineaged cells contribute to pathological myofibroblasts in the bleomycin model of lung fibrosis
+### PDGFRa-lineaged cells contribute to pathological myofibroblasts in the bleomycin model of lung fibrosis
 
 Multiple studies have shown that PDGF signaling plays an important role in fibrosis. Increased PDGF signaling via transgenic expression of a PDGFA ligand or conditional activation of a gain-of-function PDGFRα mutant form is sufficient to cause tissue fibrosis (Olson and Soriano, 2009; Pontén et al., 2003). Chemical inhibitors of PDGFRα/β tyrosine kinase activity can reduce lung fibrosis in a radiation induced fibrosis model (Abdollahi et al., 2005). To directly test the hypothesis that Pdgfra lineaged cells contribute to myofibroblasts in the context of adult pulmonary fibrosis, we carried out lineage tracing in PdgfrartTA;tetO-cre; Rosa-tdTomato triple transgenic mice treated with bleomycin. Mice were given one dose of dox injection one week before bleomycin injury when all alveolar Pdgfra+ cells were SM22-. Lungs were harvested for histology at either 14 or 21 days after bleomycin administration (Figure 5A). Compared to controls treated with PBS at the equivalent stage, we detected a significant increase in lineage-labeled tdTomato+ cells in the bleomycin group (Figure 5B,E,H,K and N). A notable subset of these lineaged cells showed proliferative marker Ki67+ in the bleomycin group, but none in the control group (Figure 5—figure supplement 1). In addition, there were more lineaged cells that are SM22a+ at 21 days after bleomycin (~45%) than at 14 days (~26%) (Figure 5B–M and O). These results suggest that Pdgfra-lineaged cells increase in number and upregulate SM22a expression following bleomycin-induced injury, and contribute significantly to pathological myofibroblasts in this model of adult pulmonary fibrosis.
 
-## Pdgfra-lineaged cells are decreased following neonatal hyperoxia and are not a major contributor to persisting myofibroblasts
+![Figure 5.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig5-v1.jpg)
+
+**Figure 5.:** (A) Timeline of dox treatment, bleomycin administration and analysis. PdgfrartTA;tetO-cre;Rosa-tdTomato mice were given one dose of dox injection 7 days (D) before bleomycin injury. Lungs were analyzed at either D14 or D21 after bleomycin administration. (B–M) Representative immunofluorescent staining for tdTomato (red), SM22a (green) and DAPI (blue) in lungs of PBS-treated controls at D14 (B–D), bleomycin-treated mice at D14 (E–G), PBS-treated controls at D21 (H–J), and bleomycin-treated mice at D21 (K–M). (N) Quantification of the mean percentage of tdTomato+ cells in total (10.14 ± 1.08 for PBS, 20.4 ± 1.75 for bleomycin D14 and 42.93 ± 2.39 for bleomycin D21. PBS versus bleomycin D14, **p=0.0025; PBS versus bleomycin D21, ****p=0.000016; bleomycin D14 versus bleomycin D21, ***p=0.0003; n = 4 each). (O) Quantification of the mean percentage of SM22a + cells in tdTomato+ cells (26.85 ± 2.85 for bleomycin D14 and 45.01 ± 4.1 for bleomycin D21, *p=0.0109, n = 4 each). Scale bars: 50 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D, A’–D’) Representative immunofluorescent staining for tdTomato (red), Ki67 (green) and DAPI (blue) in lungs of PBS-treated controls and bleomycin-treated mice (B, B’) on D14 or D21 post treatment. Boxed areas in (A-D) are magnified in (A’-D’), respectively. Arrows in panels (B’) and (D’) indicate co-localization. Scale bars: 50 µm.
+
+### Pdgfra-lineaged cells are decreased following neonatal hyperoxia and are not a major contributor to persisting myofibroblasts
 
 It has been shown that pathological myofibroblasts increase and persist in both human BPD lungs as well as neonatal hyperoxia model of BPD (Benjamin et al., 2007; Bozyk et al., 2012; Branchfield et al., 2016; Popova et al., 2014). To determine if Pdgfra-lineaged cells contribute to pathological myofibroblasts in the neonatal hyperoxia model of BPD, we examined lineaged cells in PdgfrartTA;tetO-cre;Rosa-tdTomato triple transgenic mice following treatment. Pregnant females were fed dox food until P0, when the females and their pups were switched to normal food that do not contain dox, and raised in 75% O2 until analysis at P12 (Figure 6A). As expected, compared to room air controls, exposure to 75% O2 resulted in simplified alveoli, and a persistence of high SM22a staining at P12 when SM22a staining is already low in room air control lungs (Figure 6B–G). In contrast to the increase of lineaged cells following bleomycin injury, neonatal hyperoxia led to a statistically significant decrease in the tdTomato+ Pdgfra-lineaged cells (Figure 6B–D). As a consequence, few of the high SM22a+ cells showed tdTomato lineage marker (Figure 6F). A previous in vitro study showed that hyperoxia treatment of cultured lung mesenchymal cells lead to an increase of myofibroblasts and concomitant decrease of lipofibroblasts (Rehan and Torday, 2003). Consistent with this, we found a statistically significant decrease of lipofibroblast marker ADRP in neonatal hyperoxia treated lungs (Figure 6H–J), raising the possibility that a possible lipofibroblasts to myofibroblasts transdifferentiation may account for the decrease in the former and the increase in the latter cell type. Taken together, our findings indicate that Pdgfra-lineaged cells contribute significantly to pathological myofibroblasts in the bleomycin model of lung fibrosis, but not in the neonatal hyperoxia model of BPD.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig6-v1.jpg)
 
-**Figure 6.:** Pdgfra-lineaged cells decrease following neonatal hyperoxia-induced injury.(A) Timeline of dox and hyperoxia treatment. Pregnant females were fed dox food between E9.5 and P0. Pups and mother were then fed food without dox, raised in 75% O2 or room air from P0 to P12 and the lungs were harvested at P12. (B, C) Representative immunofluorescent staining for tdTomato (red) and DAPI (blue) showing that the hyperoxia group have decreased tdTomato-lineaged cells compared to room air controls. (D) Quantification showing the percentage of tdTomato+ cells in room air and hyperoxia (17.6 ± 1.37 for room air and 7.25 ± 0.65 for hyperoxia, **p=0.0024, n = 3 each). (E, F) Representative immunofluorescent staining for tdTomato (red), SM22a (green) and DAPI (blue) showing that the hyperoxia group have increased SM22a+ myofibroblasts. (G) Quantification showing relative SM22a staining intensity as quantified in relationship to DAPI intensity (1 ± 0.11 for room air and 1.62 ± 0.17 for hyperoxia, *p=0.0342, n = 3 each). (H, I) Representative immunofluorescent staining for tdTomato (red), ADRP (green) and DAPI (blue) showing that the hyperoxia group have decreased ADRP+ lipofibroblasts. (J) Quantification showing relative ADRP staining intensity as quantified in relationship to DAPI intensity (1 ± 0.04 for room air and 0.74 ± 0.06 for hyperoxia, *p=0.0257, n = 3 each). Scale bars: 50 µm.10.7554/eLife.36865.020Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Timeline of dox and hyperoxia treatment. Pregnant females were fed dox food between E9.5 and P0. Pups and mother were then fed food without dox, raised in 75% O2 or room air from P0 to P12 and the lungs were harvested at P12. (B, C) Representative immunofluorescent staining for tdTomato (red) and DAPI (blue) showing that the hyperoxia group have decreased tdTomato-lineaged cells compared to room air controls. (D) Quantification showing the percentage of tdTomato+ cells in room air and hyperoxia (17.6 ± 1.37 for room air and 7.25 ± 0.65 for hyperoxia, **p=0.0024, n = 3 each). (E, F) Representative immunofluorescent staining for tdTomato (red), SM22a (green) and DAPI (blue) showing that the hyperoxia group have increased SM22a+ myofibroblasts. (G) Quantification showing relative SM22a staining intensity as quantified in relationship to DAPI intensity (1 ± 0.11 for room air and 1.62 ± 0.17 for hyperoxia, *p=0.0342, n = 3 each). (H, I) Representative immunofluorescent staining for tdTomato (red), ADRP (green) and DAPI (blue) showing that the hyperoxia group have decreased ADRP+ lipofibroblasts. (J) Quantification showing relative ADRP staining intensity as quantified in relationship to DAPI intensity (1 ± 0.04 for room air and 0.74 ± 0.06 for hyperoxia, *p=0.0257, n = 3 each). Scale bars: 50 µm.
 
 ## Discussion
 
@@ -84,7 +124,7 @@ To address the origin and plasticity of tissue mesenchymal cell types, we focuse
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/36865/elife-36865-fig7-v1.jpg)
 
-**Figure 7.:** Pdgfra-lineaged cells in development and pathogenesis.In normal development (black notes), Pdgfra-lineaged cells give rise primarily to myofibroblasts, and minimally to lipofibroblasts and endothelial cells. In pathogenesis (blue notes), Pdgfra-lineaged cells contribute substantially to myofibroblasts in the bleomycin model of fibrosis, but contribute minimally to myofibroblasts in the neonatal hyperoxia model of BPD. Black and blue arrows are weighted to indicate distinct extent of contribution.
+**Figure 7.:** In normal development (black notes), Pdgfra-lineaged cells give rise primarily to myofibroblasts, and minimally to lipofibroblasts and endothelial cells. In pathogenesis (blue notes), Pdgfra-lineaged cells contribute substantially to myofibroblasts in the bleomycin model of fibrosis, but contribute minimally to myofibroblasts in the neonatal hyperoxia model of BPD. Black and blue arrows are weighted to indicate distinct extent of contribution.
 
 Lineage tracing during development showed that shortly after birth as the lung enters into the alveologenesis program to build new gas-exchange surface area (P3-P14), Pdgfra+ cells primarily (~95%) give rise to myofibroblasts, with minor (~5%) contribution to lipofibroblasts. This differs from the results from a recent lineage tracing study using a Pdgfra-CreERT2 BAC transgenic line, which showed that lineaged cells gave rise to more lipofibroblasts than myofibroblasts at the same stage (P7) (Ntokou et al., 2015). The difference of the results may be due to differences in the cell populations that are captured by the knock-in line versus the transgenic line. Despite being a BAC transgenic line, it may not recapitulate endogenous Pdgfra expression because it may be missing some required remote regulatory sequences, or it may be influenced by enhancers near the random transgenic insertion site. Conversely, the difference could be due to that our PdgfrartTA knockin line is missing one copy of Pdgfra and thereby deficient in some aspects of lineage contribution. However, there is no notable phenotype in the Pdgfra heterozygotes to indicate haploinsufficiency. In addition, conditional Pdgfra loss-of-function mutants show decreased myofibroblasts and maintenance of lipofibroblasts (McGowan and McCoy, 2014). Thus, if there is any undetected happloinsufficiency in our PdgfrartTA knockin line, the prediction would be a lower lineage contribution to myofibroblasts compared to the BAC transgenic line, opposite to the data shown. Interestingly, ~4% of Pdgfra+ cells give rise to pulmonary endothelial cells in prenatal tracing but not in postnatal tracing. This is consistent with previous result showing that lung endothelial cells can be labeled by Tbx4-rtTA lineage tracing in the early stages but not late stages of development (Zhang et al., 2013).
 
@@ -102,34 +142,156 @@ A number of recent studies have used transcriptome, lineage tracing and epitheli
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>REAGENT or RESOURCE</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>tetO-GFP, mix background</td>
+      <td>Jackson Laboratories</td>
+      <td>016836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>PdgfraGFP , mix background</td>
+      <td>Jackson Laboratories</td>
+      <td>007669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>tetO-Cre, B6 background</td>
+      <td>Jackson Laboratories</td>
+      <td>006234</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>Rosa-tdTomato, B6 background</td>
+      <td>Jackson Laboratories</td>
+      <td>007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (mouse)</td>
+      <td>Rosa-Dta, mix background</td>
+      <td>Jackson Laboratories</td>
+      <td>006331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Elastin</td>
+      <td>Abcam</td>
+      <td>ab21600, 1:500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SM22a</td>
+      <td>Abcam</td>
+      <td>ab14106, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ADRP</td>
+      <td>Abcam</td>
+      <td>ab52356, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERG</td>
+      <td>Abcam</td>
+      <td>ab92513, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ICAM2</td>
+      <td>BD</td>
+      <td>553325, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67</td>
+      <td>Abcam</td>
+      <td>ab15580, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>a-SMA</td>
+      <td>Sigma</td>
+      <td>F3777, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti rabbit FITC</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>111-095-144, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti rabbit Cy3</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>111-165-144, 1:200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti rat FITC</td>
+      <td>Jackson Immuno Research Laboratories</td>
+      <td>112-095-003 1:200</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 To generate PdgfrartTA knockin mouse strain, 5’-GAGACAGTAATTGAGGATCCTGG-3’ was designed to target a PAM site in the first intron of the Pdgfra gene. A plasmid donor was constructed by ligating the splice acceptor (SA), rtTA, and a trimerized simian virus 40 polyadenylation (3 pA) (Hamilton et al., 2003; Zhang et al., 2013). The homologous arms (1.5 kb each) were amplified from C57BL/6 mouse genomic DNA and added. PdgfrartTA mouse line was generated at the University of Wisconsin-Madison transgenic animal facility by injection of 50 ng/µl gRNA, 40 ng/µl CAS9 protein and 25 ng/µl donor plasmid. The founders were identified by PCR using primers: LF, 5’-AGCAACTAACTAAAGCATGGTC-3’; LB, 5’-GCTCAACTCCCAGCTTTTG-3’; RF, 5’-GAAATTGCATCGCATTGTCTG-3’; RB, 5’-ACTCTCATCCGTCTGAGTG-3’. Mice were housed and all experimental procedures were performed in American Association for Accreditation of Laboratory Animal Care-accredited laboratory animal facilities at the University of Wisconsin and University of California San Diego. Prenatal lung PdgfrartTA activity was induced by doxycycline (dox) administration starting at different gestational periods by feeding pregnant females with dox food (625 mg/kg; Test- Diet, Richmond, IN, USA). In postnatal pups and adult mice, PdgfrartTA activity was induced by intraperitoneal injection of dox (100 mg/kg body weight). For prenatal lineage tracing, we chose dox containing food because it is gentle on the pregnant females and effective at inducing activity. For postnatal lineage tracing, we chose dox injection followed by dox food because it showed a much higher efficiency compared to dox containing food only, presumably because the pups do not get to the dox food themselves and the dox transfer through the milk from the dam is not efficient.
 
-## Neonatal hyperoxia model of BPD
+### Neonatal hyperoxia model of BPD
 
 Hyperoxia-exposure was conducted as previously described (Branchfield et al., 2016). Briefly, at P0, new born pups with their mother were placed into a chamber (BioSpherix) with circulated 75% oxygen through to P12. Control pups born at the same time were maintained at normoxia (room air) conditions for the same duration of the experiment. Mothers were swapped between normoxia and hyperoxia litters every fourth day to maintain maternal health. Lungs from both normoxia and hyperoxia groups were harvested at P12.
 
-## Bleomycin model of adult lung fibrosis
+### Bleomycin model of adult lung fibrosis
 
 Mice were anesthetized with ketamine (100 mg/kg) and xylazine (15 mg/kg) prior to delivering a single dose of intratracheal bleomycin (1 unit/kg, Teva Pharmaceutical Industries) dissolved in 50 µL of 0.9% NaCl Irrigation (Abbott Laboratories) via endotracheal intubation. Daily weight and wellness checks were performed until euthanasia at 14 or 21 days post-bleomycin.
 
-## Histology and immunofluorescence staining
+### Histology and immunofluorescence staining
 
 For histological analysis, postnatal mouse lungs were gravity inflated and fixed overnight with 4% paraformaldehyde, and submerged in 30% sucrose at 4°C overnight. Whole lung lobes were embedded in OCT compound (Sakura) for cryo section. Sections were stained using a standard Hematoxylin and Eosin (H and E) protocol. Quantification of lung simplification was performed using the mean linear intercept (MLI) method as previously described (Li et al., 2017).
 
 Immunofluorescence staining was performed following standard protocols and mounted with VECTASHIELD medium with DAPI (Vector Laboratories). Antibodies were listed in the resource table.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was extracted from lungs using Trizol (Invitrogen) and an RNeasy Micro RNA extraction kit (Qiagen). RNA was reverse transcribed using the iScript Select cDNA Synthesis Kit (Bio-Rad). Quantitative PCR was performed using SYBR Green (Bio-Rad). Three technical and three biological replicates were performed for each gene. Primers used for qPCR are: β-actin-F: 5’-CGGCCAGGTCATCACTATTGGCAAC-3’; β-actin-R: 5’-GCCACAGGATTCCA-TACCCAAGAAG-3’; Pdgfra-F: 5’-TGCGGGTGGACTCTGATAATGC-3’; Pdgfra-R: 5’-GTGGAACTACTGGAACCTGTCTCG-3’.
 
-## Lung dissociation, flow cytometry and Single-Cell RNA-sequencing
+### Lung dissociation, flow cytometry and Single-Cell RNA-sequencing
 
 Lung lobes were separated and minced into small pieces in a conical tube containing 6 ml of 2 U/ml dispase (STEMCELL Technologies) followed by rotating incubation for 30 min at 37°C. 15 µl 10 mg/ml DNase I (Sigma) was added and cells were incubated on ice for 5 min. Cells were filtered through 40 µm strainers and centrifuged at 800 rpm for 6 min at 4°C. Cell pellet was resuspended in 1 ml of RBC lysis buffer (Abcam) and lysed for 90 s at room temperature. This was followed by slow and gentle addition of 6 ml DMEM media (GIBCO) and 500 mL of FBS (Hyclone). Cells were centrifuged at 800 rpm for 6 min at 4°C. Cell pellet was resuspended in PBS with 3% BSA (GIBCO) for further staining using CD140a (PDGFRa)-PE (eBioscience, 12-1401-81, 1:100) for flow cytometry. 4’, 6-diamidino-2-phenylindole (DAPI) (Sigma) was used to eliminate dead cells. Flow sorting was performed with a FACS Aria II (BD Biosciences) and data were analyzed with FlowJo software (Tree Star, Inc.).
 
 For Single-Cell RNA-sequencing, PdgfraGFP mouse lungs at P7 and P15 were harvested and single cell preparations were FACS sorted as described above. The sorted cells were then processed following 10X genomics protocol. The sequencing libraries were validated and sequenced using HiSeq4000 platform. Sequencing reads were first aligned to mm10 reference using STAR V2.5.1b (Dobin et al., 2013) and then aligned to annotated transcripts, which were part of the Cell Ranger version 2.1 pipeline (https://www.10xgenomics.com). A customized pre-mRNA reference package was generated to capture all the intronic reads in addition to reads that are mapped to exons. Cell Ranger filtered cells by taking >10% of the top nth barcodes, where n is 1% of the expected number of cell counts being recovered (Zheng et al., 2017). The filtered gene-cell matrices, output from CellRanger, was further analyzed using the Seurat package V2.3 (Butler et al., 2018) and R 3.4 (Team, 2014). The UMI raw counts were log-normalized for each cell to its total expression and scaled to z-scored residuals of linear models that predicts gene expression using normalized UMIs. The scaled data were used to perform dimensionality reduction with Sparsesvd V0.1 (Berry, 1992), graph-based clustering and visualization with t-Distributed Stochastic Neighbor Embedding (t-SNE) (van der Maaten, 2014). Differential gene expression analysis was performed using Wilcoxon rank sum test. Heatmaps, t-SNE plots and visualization of marker expression were generated using Seurat. GEO accession number for the scRNA-seq data is GSE118555.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For quantification of the number of immunofluorescence stained cells, or immunofluorescence staining intensity per field, four independent 20x fields per sample were analyzed. Sections from at least three lungs were quantified for each experimental group. P-values were calculated with two-tailed unpaired Student’s t-test on Prism six software (GraphPad). Data were presented as mean ± SEM, and results were considered statistically significant if p<0.05.

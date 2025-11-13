@@ -42,13 +42,72 @@ Fourth and finally, we tested for brain regions that encoded the distinction bet
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 Participants answered a simple true-or-false probe question after each story (e.g. ‘Emma is on a bus’), to ensure alertness throughout the experiment. Although the MRI results depended on the time interval during the reading of the story and not during the reading or answering of the probe question, the behavioral response to the probe question may give some indication of whether the story conditions were well balanced. If one type of story was more difficult to process, or caused the subjects to think more deeply about the character in the story, that difference may be reflected in a different accuracy or latency in responding to the subsequent probe question. However, no significant differences were observed in accuracy (F3,93=0.15, p=0.930, ANOVA) or latency (F3,93=1.66, p=0.181, ANOVA) among the four social story conditions (Table 1).
 
+**Table 1.**
+ Behavioral results.Mean accuracy and latency for the probe question that was presented after each story, for each of the five experimental conditions. The mean accuracy and latency across all social story conditions are also reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Story type</th>
+      <th>Self-endo</th>
+      <th>Self-exo</th>
+      <th>Other-endo</th>
+      <th>Other-exo</th>
+      <th>Non-social</th>
+      <th>Social (all)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Accuracy (%)</td>
+      <td>Mean</td>
+      <td>94.2</td>
+      <td>93.4</td>
+      <td>93.1</td>
+      <td>93.4</td>
+      <td>90.0</td>
+      <td>93.6</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>1.9</td>
+      <td>1.8</td>
+      <td>1.6</td>
+      <td>1.9</td>
+      <td>2.2</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Latency (ms)</td>
+      <td>Mean</td>
+      <td>1613</td>
+      <td>1601</td>
+      <td>1667</td>
+      <td>1653</td>
+      <td>1957</td>
+      <td>1634</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>54</td>
+      <td>56</td>
+      <td>46</td>
+      <td>56</td>
+      <td>63</td>
+      <td>49</td>
+    </tr>
+  </tbody>
+</table>
+
 When participants responded to the probe questions after non-social, control stories, versus when they responded to the probe questions after social stories, no significant difference in accuracy was found (t31 = −1.83, p=0.077), although as expected, a slightly longer latency was observed after non-social stories than after social stories (t31 = 9.18, p<0.001; see Table 1). The reason for the latency difference is almost certainly because the probe statements in the non-social condition were on average two words longer than those in the social conditions (eight words versus six words), because the character in the probe statements ("You …" or "Emma …") was replaced by an object that required more words to describe (e.g. "The surveillance camera …"). One might therefore expect that it took participants a little longer to read the non-social probe statements compared to the social ones. We suggest that this subtle difference in latency during the post-story question period is unlikely to have affected the comparison of MRI activity between social and non-social conditions, since the relevant MRI activity was evoked by the time period during the reading of the story, not during the reading and answering of the questions.
 
-## Prediction 1
+### Prediction 1
 
 We hypothesized that participants would encode the attentional state of the agents in the stories in enough detail to distinguish between endogenous and exogenous attention, even though the difference between the story types was extremely subtle – only a few words that very slightly altered the semantic meaning of the sentences. We made the strong prediction that decoding would be found within the set of brain areas typically included in the theory-of-mind cortical network. Figure 2 shows six ROIs within the theory-of-mind network, based on a meta-analysis of previous theory-of-mind studies (van Veluw and Chance, 2014). Figure 3A shows the results (see Table 2 and Figure 3—figure supplement 1 for more details). Decoding accuracy for endogenous versus exogenous stories was significantly above chance for the left TPJ, and the significance of the left TPJ decoding survived a multiple comparison correction for the six ROIs (mean decoding accuracy 52.9%, 95% CI 50.7–55.2, puncorrected = 0.0046, pFDR-corrected = 0.0276). For the sake of a thorough evaluation, because different researchers have defined slightly different locations for the TPJ, we replicated the finding of a significant decoding in the left TPJ using three additional, previously reported theory-of-mind ROIs in the left TPJ (Mar, 2011; Molenberghs et al., 2016; Schurz et al., 2014), suggesting that the effect is robust (Figure 3B and Figure 3—figure supplement 2). The results therefore show that activity in the left TPJ allowed for significant decoding of the attentional state – exogenous versus endogenous – of agents in a story.
 
@@ -56,27 +115,317 @@ We hypothesized that participants would encode the attentional state of the agen
 
 **Figure 2.:** Six ROIs were defined based on peaks reported in an activation likelihood estimation meta-analysis of 16 fMRI studies involving theory-of-mind reasoning (van Veluw and Chance, 2014). The ROIs consisted of 10-mm-radius spheres centered on peaks in the bilateral temporoparietal junction (TPJ) and superior temporal sulcus (STS), and two midline structures: the precuneus and medial prefrontal cortex (MPFC). Here, the TPJ and STS ROIs on the left side are shown.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-v1.jpg)
+
+**Figure 3.:** For definition of ROIs, see Figure 2. Each point shows mean decoding accuracy. Error bars show SEM. Red horizontal line indicates chance level decoding. Significance indicated by * (p<0.05) and ** (p<0.01), based on permutation testing (all significant p values also survived FDR correction for multiple comparisons across all six ROIs [all significant corrected ps <0.05]). (A) The ability of a classifier, trained on BOLD activity patterns within each ROI, to decode endogenous (endo) versus exogenous (exo) attention. (B) To test the robustness of the endo-versus-exo decoding in the left TPJ, we replicated the results in three ROIs derived from theory-of-mind neuroimaging meta-analyses (Mar, 2011; Molenberghs et al., 2016; Schurz et al., 2014) other than the one used for the main analysis (van Veluw and Chance, 2014) (see Figure 3—figure supplement 2 for details). (C) The cluster shown had the highest decoding accuracy in the whole-brain, searchlight analysis, for the endo-versus-exo comparison. No clusters in this analysis survived brain-wide correction for multiple comparisons. We here report clusters surviving the conventional uncorrected voxelwise threshold p<0.001, for purely descriptive purposes. See Figure 3—figure supplement 3 and Supplementary file 1 for details. (D) Decoding accuracy for agent (self versus other). (E) Decoding accuracy for the interaction between type of attention and agent. (F) The ability of a classifier, trained to discriminate attention type in self stories, to decode attention type in other stories, and vice versa (i.e. two-way cross-classification), based on activity patterns in the left TPJ ROI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Violin plots showing mean (black horizontal line) and median (white circle) decoding accuracy (%), 95% confidence interval around the mean based on bootstrap distribution (black vertical line), a kernel density estimation (shaded area), and individual data points for each of the six ROIs. The horizontal red line indicates chance decoding. *p<0.05, **p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** To test the robustness of the endogenous-versus-exogenous decoding in the left TPJ, we replicated the results in three ROIs derived from theory-of-mind neuroimaging meta-analyses (Mar, 2011; Molenberghs et al., 2016; Schurz et al., 2014) other than the one used for the main analysis (van Veluw and Chance, 2014). The ROIs were defined as 10-mm-radius spheres around the peak left TPJ coordinates reported in Mar, 2011 (MNI: −53,–56, 22), Schurz et al., 2014 (MNI: −55,–59, 20), and Molenberghs et al., 2016 (MNI: −52,–58, 22). The results showed significant decoding in the Mar ROI (mean decoding accuracy 53.4%, 95% CI 51.0–55.1, p=0.0023), the Schurz ROI (mean decoding accuracy 52.7%, 95% CI 50.8–54.4, p=0.0092), and in the Molenberghs ROI (mean decoding accuracy 53.4%, 95% CI 51.3–55.2, p=0.0020). Violin plots show mean (black horizontal line) and median (white circle) decoding accuracy (%), 95% confidence interval around the mean based on bootstrap distribution (black vertical line), a kernel density estimation (shaded area), and individual data points for the two ROIs. The red horizontal line indicates chance decoding. **p<0.01.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The cluster shown had the highest decoding accuracy in the whole-brain, searchlight analysis, for the endogenous-versus-exogenous comparison. See Supplementary file 1 for numerical details. Top: projected onto a 3D canonical brain surface. Bottom: projected onto sections of the average structural scan generated from the 32 subjects for anatomical localization. For display purposes, the statistical threshold for the activation maps was set to p<0.001, uncorrected.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The cluster shown had the highest decoding accuracy in the whole-brain, searchlight analysis, for the self-versus-other comparison. See Supplementary file 2 for numerical details. Top: projected onto a 3D canonical brain surface. Bottom: projected onto a parasagittal section of the average structural scan generated from the 32 subjects for anatomical localization. For display purposes, the statistical threshold for the activation maps was set to p<0.001, uncorrected.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** The cluster shown had the highest decoding accuracy difference in the whole-brain, searchlight analysis, for the (endogenous-versus-exogenous)SELF versus (endogenous-versus-exogenous)OTHER comparison. See Supplementary file 3 for numerical details. Top: projected onto a 3D canonical brain surface. Bottom: projected onto a parasagittal section of the average structural scan generated from the 32 subjects for anatomical localization. For display purposes, the statistical threshold for the activation maps was set to p<0.001, uncorrected.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** The TPJ is part of the ventral attention network, which has been implicated in exogenous attention. Could it be the case that participants simulate attention orienting when reading the stories, leading to the above-chance endogenous-versus-exogenous decoding in the TPJ? If this is the case, one should expect above-chance decoding also in areas of the dorsal attention network, which has been implicated in endogenous attention. To test this hypothesis, we replicated the endogenous-versus-exogenous analysis in four areas (bilaterally) typically considered to constitute the dorsal attention network: the frontal eye fields (FEF), the anterior and posterior intraparietal sulcus (aIPS and pIPS), and the middle temporal complex (MT+). The ROIs were defined as 10-mm-radius spheres around the peak coordinates (reported in Fox et al., 2006): left FEF (MNI: −25,–16, 61), right FEF (MNI: 27,–14, 58), left aIPS (MNI: −42,–44, 46), right aIPS (MNI: 34,–51, 49), left pIPS (MNI: −22,–72, 51), right pIPS (MNI: 19,–72, 57), left MT+ (MNI: −47,–68, −14), and right MT+ (MNI: 51,–63, −14). The results showed that none of the dorsal attention network ROIs decoded the attention type in the stories better than chance (all ps > 0.05, based on permutation testing with 10,000 iterations, uncorrected for multiple comparisons). Violin plots show mean (black horizontal line) and median (white circle) decoding accuracy (%), 95% confidence interval around the mean based on bootstrap distribution (black vertical line), a kernel density estimation (shaded area), and individual data points. The red horizontal line indicates chance decoding.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Violin plot showing the mean (black horizontal line) and median (white circle) decoding accuracy (%), 95% confidence interval around the mean based on bootstrap distribution (black vertical line), a kernel density estimation (shaded area), and individual data points for a two-way cross-classification analysis based on activity patterns in the left TPJ ROI. The red horizontal line indicates chance decoding. *p<0.05.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp8-v1.jpg)
+
+**Figure 3—figure supplement 8.:** Subjects tended to fixate in a similar spatial pattern across the screen, and engage in similar saccade dynamics, regardless of the type of story presented. No significant ability to decode the story type based on the pattern of eye movement was obtained. The red rectangle in the heat maps in panels A-E indicates the area of the screen within which the story text appeared.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig3-figsupp9-v1.jpg)
+
+**Figure 3—figure supplement 9.:** The difference in average activity across all voxels within each ROI, for the endogenous-versus-exogenous, self-versus-other, and social-versus-nonsocial contrasts, are shown. Violin plot showing the mean (colored horizontal line) and median (white circle) contrast estimate, interquartile range (black vertical line), a kernel density estimation (shaded area), and individual data points. None of the contrasts were statistically significant after controlling for multiple comparisons across all six ROIs (all FDR-corrected ps >0.21).
+
+**Table 2.**
+ Decoding attention type, agent, and the interaction between the two, within the six ROIs.For definition of ROIs, see Figure 2. Mean decoding accuracy (%), 95% confidence interval (based on bootstrap distribution), and p value (based on permutation testing) are shown for each of the six ROIs. Results shown for decoding endogenous (endo) versus exogenous (exo) attention type, self versus other agent type, and the interaction between the two variables. * indicates significant p values that survived correction for multiple comparisons across all six ROIs (FDR-corrected p<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>L TPJ</th>
+      <th>R TPJ</th>
+      <th>L STS</th>
+      <th>R STS</th>
+      <th>MPFC</th>
+      <th>Precuneus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Endo vs. Exo</td>
+      <td>Mean accuracy</td>
+      <td>52.9%</td>
+      <td>51.4%</td>
+      <td>50.4%</td>
+      <td>48.0%</td>
+      <td>49.5%</td>
+      <td>50.2%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>50.7–55.2</td>
+      <td>49.1–53.9</td>
+      <td>47.8–52.8</td>
+      <td>45.9–50.1</td>
+      <td>47.6–51.4</td>
+      <td>48.5–51.8</td>
+    </tr>
+    <tr>
+      <td>P value</td>
+      <td>0.0046*</td>
+      <td>0.1148</td>
+      <td>0.3518</td>
+      <td>0.9547</td>
+      <td>0.6439</td>
+      <td>0.4428</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Self vs. Other</td>
+      <td>Mean accuracy</td>
+      <td>53.0%</td>
+      <td>51.0%</td>
+      <td>52.3%</td>
+      <td>51.3%</td>
+      <td>52.6%</td>
+      <td>52.7%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>50.1–55.6</td>
+      <td>48.5–53.4</td>
+      <td>50.6–54.1</td>
+      <td>48.9–54.1</td>
+      <td>50.5–55.0</td>
+      <td>50.4–55.0</td>
+    </tr>
+    <tr>
+      <td>P value</td>
+      <td>0.0053*</td>
+      <td>0.1974</td>
+      <td>0.0204*</td>
+      <td>0.1241</td>
+      <td>0.0105*</td>
+      <td>0.0099*</td>
+    </tr>
+    <tr>
+      <td rowspan="3">(Self vs. Other) × (Endo vs. Exo)</td>
+      <td>Mean accuracy diff</td>
+      <td>1.6%</td>
+      <td>1.5%</td>
+      <td>2.0%</td>
+      <td>−3.0%</td>
+      <td>2.5%</td>
+      <td>0.6%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>−2.7–6.3</td>
+      <td>−3.6–6.5</td>
+      <td>−2.7–6.3</td>
+      <td>−7.4–1.1</td>
+      <td>−2.3–6.7</td>
+      <td>−5.5–5.5</td>
+    </tr>
+    <tr>
+      <td>P value</td>
+      <td>0.2430</td>
+      <td>0.2639</td>
+      <td>0.1967</td>
+      <td>0.8944</td>
+      <td>0.1414</td>
+      <td>0.3900</td>
+    </tr>
+  </tbody>
+</table>
+
 We then used a searchlight analysis over the whole brain to test whether any further areas may have significantly decoded the endogenous-versus-exogenous distinction. It should be noted that an exploratory searchlight analysis, compared to ROI analyses based on strong predictions, is much more statistically conservative because of the brain-wide correction for multiple comparisons. Its usefulness is that it may reveal any cluster of very strong decoding that was missed by the more sensitive analysis restricted to the ROIs. We found no brain-wide significant clusters of decoding for the endogenous versus exogenous distinction. However, four clusters survived the uncorrected p<0.001 threshold, and are reported in a purely descriptive manner in Figure 3—figure supplement 3 and Supplementary file 1. The brain-wide searchlight peak was located in the left posterior STS (decoding accuracy 53.7%, t = 4.21, p<0.001 uncorrected; Figure 3C), at a distance of 20 mm from the center of the left TPJ ROI, and coincided with the posterior TPJ (TPJp) subregion as defined by Bzdok et al., 2013 and Mars et al., 2012.
 
 To control for potential univariate effects that could drive classifier performance, we explored the endogenous > exogenous and exogenous > endogenous univariate contrasts, which did not reveal any significant activity within the ROIs (Figure 3—figure supplement 9) or anywhere else in the brain, not even at the uncorrected threshold p<0.001 (Supplementary file 5). These findings are compatible with previous studies (e.g. Hassabis et al., 2009) that have demonstrated the superiority of pattern-sensitive multivariate analyses compared with conventional univariate approaches for detecting differences in activity between conditions with highly similar macroscopic characteristics.
 
 In addition to these planned analyses, we explored the endogenous-versus-exogenous decoding within dorsal attention network regions. This analysis was motivated by an alternative hypothesis: people might simulate the act of attention orienting when reading the exogenous and endogenous stories, and thus activate the corresponding ventral (exogenous) attention network, to which the TPJ belongs, and dorsal (endogenous) attention network in a ‘mirror-neuron-like’ fashion (see Discussion for details). However, this control analysis revealed no significant decoding in any of the dorsal attention network ROIs (Figure 3—figure supplement 6).
 
-## Prediction 2
+### Prediction 2
 
 We hypothesized that participants would process the distinction between the two types of agent in the stories (self versus other). We made the strong prediction that decoding would be found within the same set of ROIs in the theory-of-mind cortical network. Figure 3D shows the results (see Table 2 and Figure 3—figure supplement 1 for more details). Decoding accuracy for self versus other stories was significantly above chance, and survived a multiple comparisons correction, for the left TPJ (mean decoding accuracy 53.0%, 95% CI 50.1 to –55.6, puncorrected = 0.0053, pFDR-corrected = 0.0210), left STS (mean decoding accuracy 52.3%, 95% CI 50.6–54.1, puncorrected = 0.0204, pFDR-corrected = 0.0306), MPFC (mean decoding accuracy 52.6%, 95% CI 50.5–55.0, puncorrected = 0.0105, pFDR-corrected = 0.0210), and precuneus (mean decoding accuracy 52.7%, 95% CI 50.4–55.0, puncorrected = 0.0099, pFDR-corrected = 0.0210). These results confirm that the present paradigm, using stories that are subtly different from each other, can obtain social cognitive results that are consistent with previous findings.
 
-## Prediction 3
+### Prediction 3
 
 We hypothesized that areas in the theory-of-mind network would not only encode the distinction between endogenous and exogenous attention, but do so to a significantly different extent in self-related stories than in other-related stories. However, the results showed no significant interaction in any of the ROIs (Figure 3E, Table 2, and Figure 3—figure supplement 1). Thus, we found no support for prediction 3.
 
 An alternative hypothesis is that attention type is encoded similarly in self and others. In a post hoc analysis, we focused on the left TPJ which was the only ROI that showed significant attention type decoding (Prediction 1), and tested for overlap in attention encoding in self and others using a two-way cross-classification analysis (see Figure 3F and Figure 3—figure supplement 7). In this analysis, one classifier was trained to discriminate endogenous versus exogenous self-stories and tested on other-stories, and another classifier was trained to discriminate endogenous versus exogenous other-stories and tested on self-stories, from which an average cross-classification decoding accuracy for the left TPJ was obtained. Endogenous-versus-exogenous decoding significantly generalized across self-stories and other-stories (mean decoding accuracy 51.9%, 95% CI 49.9–54.1, p=0.0393), suggesting at least some degree of overlap in the encoding of attention in others and in oneself.
 
-## Prediction 4
+### Prediction 4
 
 Finally, we asked whether the activity in the theory-of-mind network would distinguish between social stories and nonsocial stories. This final analysis served as a control to check the validity of the story stimuli and confirm that they engaged social cognition as expected. We expected a signal of much greater magnitude in this analysis than in the analyses described above. The reason is that, as noted above, the types of social stories differed from each other by only a few words, and were nearly identical in semantic content; thus any brain signal reflecting those differences is expected to be subtle. The distinction between social and nonsocial stories, however, was much greater semantically, and therefore the evidence of decoding in the brain is expected to be of greater magnitude.
 
 Figure 4 shows the results (see Table 3 and Figure 4—figure supplement 2 for more details). The results are separated into six ROIs, and for each ROI, separated into four individual analyses, corresponding to each of the four main social conditions contrasted with the nonsocial control. Decoding accuracy was significantly greater than chance in almost all analyses across the six ROIs. The right STS showed the least consistent evidence of decoding. The TPJ bilaterally and the precuneus showed the most consistent evidence of decoding. These results show strong evidence of decoding of the social versus nonsocial stimuli in the known theory-of-mind, cortical network.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig4-v1.jpg)
+
+**Figure 4.:** The ability of a classifier, trained on BOLD activity patterns within each of the six ROIs, to decode each of the four social story conditions (endogenous-self, exogenous-self, endogenous-other, and exogenous-other) versus the nonsocial control. Each bar shows mean decoding accuracy, error bars show SEM, red horizontal line shows chance level decoding. Significance indicated by * (p<0.05), ** (p<0.01), and *** (p<0.001) based on permutation testing (all but one of the significant p values also survived FDR correction for multiple comparisons across all six ROIs; see Table 3 for numerical details).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The clusters shown are areas of overlap between four whole-brain, searchlight analyses, for the social-versus-nonsocial comparison (endogenous-self versus nonsocial, exogenous-self versus nonsocial, endogenous-other versus nonsocial, exogenous-other versus nonsocial). See Supplementary file 4 for numerical details. Projected onto a 3D canonical brain surface.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63551/elife-63551-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Violin plots showing mean (black horizontal line) and median (white circle) decoding accuracy (%), 95% confidence interval around the mean based on bootstrap distribution (black vertical line), a kernel density estimation (shaded area), and individual data points for each of the six ROIs. The horizontal red line indicates chance decoding.
+
+**Table 3.**
+ Decoding social versus nonsocial stories within the six ROIs.For definition of ROIs, see Figure 2. Mean decoding accuracy (%), 95% confidence interval (based on bootstrap distribution), and p value (based on permutation testing) are shown for each of the six ROIs. Results shown for each of four social story conditions (endogenous-self, exogenous-self, endogenous-other, and exogenous-other) versus the nonsocial control. * indicates significant p values that survived correction for multiple comparisons across all six ROIs (FDR-corrected p<0.05).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>L TPJ</th>
+      <th>R TPJ</th>
+      <th>L STS</th>
+      <th>R STS</th>
+      <th>MPFC</th>
+      <th>Precuneus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Endo-Self vs. nonsocial</td>
+      <td>Mean accuracy</td>
+      <td>58.5%</td>
+      <td>56.7%</td>
+      <td>53.0%</td>
+      <td>50.9%</td>
+      <td>55.2%</td>
+      <td>54.6%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>55.5–61.6</td>
+      <td>53.5–59.8</td>
+      <td>49.3–56.8</td>
+      <td>47.5–54.0</td>
+      <td>52.3–58.0</td>
+      <td>51.5–57.7</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.0001*</td>
+      <td>0.0001*</td>
+      <td>0.0338*</td>
+      <td>0.2703</td>
+      <td>0.0026*</td>
+      <td>0.0027*</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Exo-Self vs. nonsocial</td>
+      <td>Mean accuracy</td>
+      <td>60.7%</td>
+      <td>56.5%</td>
+      <td>56.3%</td>
+      <td>53.6%</td>
+      <td>54.5%</td>
+      <td>55.7%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>57.0–64.4</td>
+      <td>53.7–58.8</td>
+      <td>53.5–59.0</td>
+      <td>50.5–56.6</td>
+      <td>51.7–57.1</td>
+      <td>51.9–59.4</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.0001*</td>
+      <td>0.0002*</td>
+      <td>0.0001*</td>
+      <td>0.0179*</td>
+      <td>0.0044*</td>
+      <td>0.0001*</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Endo-Other vs. nonsocial</td>
+      <td>Mean accuracy</td>
+      <td>58.4%</td>
+      <td>52.7%</td>
+      <td>53.5%</td>
+      <td>52.2%</td>
+      <td>53.4%</td>
+      <td>55.4%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>55.9–60.9</td>
+      <td>49.6–55.9</td>
+      <td>51.1–55.9</td>
+      <td>48.8–55.0</td>
+      <td>49.5–57.7</td>
+      <td>52.6–58.2</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.0001*</td>
+      <td>0.0497</td>
+      <td>0.0147*</td>
+      <td>0.0969</td>
+      <td>0.0219*</td>
+      <td>0.0014*</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Exo-Other vs. nonsocial</td>
+      <td>Mean accuracy</td>
+      <td>56.7%</td>
+      <td>54.2%</td>
+      <td>53.1%</td>
+      <td>51.5%</td>
+      <td>53.4%</td>
+      <td>55.2%</td>
+    </tr>
+    <tr>
+      <td>95% CI</td>
+      <td>53.8–59.8</td>
+      <td>51.1–57.3</td>
+      <td>50.4–55.9</td>
+      <td>49.1–54.0</td>
+      <td>49.8–56.7</td>
+      <td>52.0–58.5</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.0002*</td>
+      <td>0.0065*</td>
+      <td>0.0319*</td>
+      <td>0.1901</td>
+      <td>0.0197*</td>
+      <td>0.0012*</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -102,15 +451,15 @@ The use of a story-reading paradigm allowed us to systematically manipulate the 
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Thirty-two healthy human volunteers (12 females, 30 right-handed, aged 18–52, normal or corrected to normal vision) participated in the study. Subjects were recruited either from a paid subject pool, receiving 40 USD for participation, or from among Princeton undergraduate students, who received course credits as compensation. In the subject recruitment material, the experiment was described as a ‘Reading Comprehension Study.’ All subjects provided informed consent and all procedures were approved by the Princeton Institutional Review Board.
 
-## Experimental setup
+### Experimental setup
 
 Before scanning, subjects were instructed and then shown three sample trials (which were not part of the stories presented in the subsequent experiment) on a laptop computer screen. All subjects gave the correct response to all three trials on the first try, indicating they had understood the instructions adequately. During scanning, the subjects laid comfortably in a supine position on the MRI bed. Through an angled mirror mounted on top of the head coil, they viewed a translucent screen approximately 80 cm from the eyes, on which visual stimuli were projected with a Hyperion MRI Digital Projection System (Psychology Software Tools, Sharpsburg, PA, USA) with a resolution of 1920 × 1080 pixels. A PC running MATLAB (MathWorks, Natick, MA, USA) and the Psychophysics Toolbox (Brainard, 1997) was used to present visual stimuli. A right hand 5-button response unit (Psychology Software Tools Celeritas, Sharpsburg, PA, USA) was strapped to the subjects’ right wrist. Subjects used the right index finger button to indicate a true response, and the right middle finger to indicate a false response during the probe phase of each trial.
 
-## Experimental conditions and stimuli
+### Experimental conditions and stimuli
 
 Five experimental conditions were included. Subjects were presented with short stories (2–3 sentences, average word count = 24) describing a scene in which an agent, which was either the subject him-/herself (self) or another person (other), directed attention to something in the external world endogenously (e.g., ‘X is attentively looking for Y’) or exogenously (e.g., ‘X’s attention is captured by Y’). These four conditions made up a 2 × 2 factorial design: attention type (endogenous versus exogenous) X agent (self versus other). In addition, we included a control condition featuring stories in which the agent was substituted by a non-human object. In each trial, after a 9–11 s inter-trial interval, the story was presented for 10 s in easily readable, white text on a black background, at the center of the screen, after which a probe statement was shown for 4 s, to which the subjects responded either true or false by button press. See Figure 1 for details, and Supplementary file 6 for all stories.
 
@@ -122,15 +471,15 @@ The purpose of the probe statement at the end of each trial was to ensure that s
 
 The experiment consisted of 10 runs of approximately 4 min each. In each run, the five conditions were repeated two times, yielding a total of 10 trials per run. The trial order was randomized, with the limitation that two consecutive trials could not belong to the same condition. Each run included 18 s of baseline before the onset of the first trial and 12 s of baseline after the offset of the last trial.
 
-## Post-scan questionnaire
+### Post-scan questionnaire
 
 At the end of the scanning session, subjects were asked what they thought the purpose of the experiment was and what they thought it was testing.
 
-## fMRI data acquisition
+### fMRI data acquisition
 
 Functional imaging data were collected using a Siemens Prisma 3T scanner equipped with a 64-channel head coil. Gradient-echo T2*-weighted echo-planar images (EPI) with blood-oxygen dependent (BOLD) contrast were used as an index of brain activity (Logothetis et al., 2001). Functional image volumes were composed of 54 near-axial slices with a thickness of 2.5 mm (with no interslice gap), which ensured that the entire brain excluding cerebellum was within the field-of-view in all subjects (54 × 78 matrix, 2.5 mm x 2.5 mm in-plane resolution, TE = 30 ms, flip angle = 80°). Simultaneous multi-slice (SMS) imaging was used (SMS factor = 2). One complete volume was collected every 2 s (TR = 2000 ms). A total of 1300 functional volumes were collected for each participant, divided into 10 runs (130 volumes per run). The first three volumes of each run were discarded to account for non-steady-state magnetization. A high-resolution structural image was acquired for each participant at the end of the experiment (3D MPRAGE sequence, voxel size = 1 mm isotropic, FOV = 256 mm, 176 slices, TR = 2300 ms, TE = 2.96 ms, TI = 1000 ms, flip angle = 9°, iPAT GRAPPA = 2). At the end of each scanning session, matching spin echo EPI pairs (anterior-to-posterior and posterior-to-anterior) were acquired for blip-up/blip-down field map correction.
 
-## FMRI preprocessing
+### FMRI preprocessing
 
 Results included in this manuscript come from preprocessing performed using FMRIPREP version 1.2.3 (Esteban et al., 2019) (RRID:SCR_016216), a Nipype (Gorgolewski et al., 2011) (RRID:SCR_002502) based tool. Each T1w (T1-weighted) volume was corrected for INU (intensity non-uniformity) using N4BiasFieldCorrection v2.1.0 (Tustison et al., 2010) and skull-stripped using antsBrainExtraction.sh v2.1.0 (using the OASIS template). Spatial normalization to the ICBM 152 Nonlinear Asymmetrical template version 2009c (Fonov et al., 2009) (RRID:SCR_008796) was performed through nonlinear registration with the antsRegistration tool of ANTs v2.1.0 (Avants et al., 2008) (RRID:SCR_004757), using brain-extracted versions of both T1w volume and template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain-extracted T1w using fast (Zhang et al., 2001) (FSL v5.0.9, RRID:SCR_002823).
 
@@ -138,7 +487,7 @@ Functional data was slice time corrected using 3dTshift from AFNI v16.2.07 (Cox,
 
 Many internal operations of FMRIPREP use Nilearn (Abraham et al., 2014) (RRID:SCR_001362) principally within the BOLD-processing workflow. For more details of the pipeline see https://fmriprep.readthedocs.io/en/latest/workflows.html.
 
-## Testing prediction 1
+#### Testing prediction 1
 
 The purpose of the first analysis was to determine whether the brain encoded information concerning the type of attention (endogenous or exogenous) present in the stories. For this analysis, we used MVPA, which tests whether patterns of brain activity can be used to decode the distinction between two conditions. It is a more sensitive analysis than the more common, simple subtraction methods. The reason for using this sensitive measure is that the difference between exogenous and endogenous trial types was extremely subtle. Both trial types engaged social cognition, and therefore might cancel each other out in a simple subtraction. The stimuli were nearly identical, differing only in a few words that indicated the type of attention used by the agent in the story. In addition, the type of attention featured in the story was irrelevant to the task performed by the subject. To accommodate the subtlety of the distinction between conditions, we designed the study to use MVPA. We hypothesized that with MVPA, brain activity would carry information about the endogenous versus exogenous distinction; and that decoding would be evident in regions of interest (ROIs) within the network of areas typically found to be involved in social cognition.
 
@@ -152,20 +501,20 @@ For statistical inference, the true group mean decoding accuracy was compared to
 
 In addition, as further exploratory statistics beyond the targeted hypotheses of this study, we used a whole-brain searchlight analysis (Kriegeskorte et al., 2006) to test for possible areas of decoding outside the ROIs. This searchlight analysis is described in the Supplementary Information (Supplementary file 1–4 and 7, Figure 3—figure supplements 3–5, and Figure 4—figure supplement 1).
 
-## Testing prediction 2
+#### Testing prediction 2
 
 The purpose of the second analysis was to determine whether the brain encoded information concerning the type of agent (self versus other) present in the stories. The analysis methods were the same as for testing hypothesis 1, except that for regressors of interest we used the self-related and other-related trials, collapsed across the type of attention (exogenous or endogenous). Just as for hypothesis 1, we tested the six defined ROIs within the theory-of-mind network.
 
-## Testing prediction 3
+#### Testing prediction 3
 
 The purpose of the third analysis was to test for an interaction between the two variables (endogenous versus exogenous, and self versus other). We used MVPA to test whether the decoding for the type of attention was significantly different between the self-related and the other-related stories. The analysis methods were similar to those used for testing hypotheses 1 and 2, except in the following ways. We computed two MVPA decoding results, the first for distinguishing endogenous-self from exogenous-self stories, the second for distinguishing endogenous-other from exogenous-other stories. We then computed the difference between the two decoding results ([endogenous-self versus exogenous-self] – [endogenous-other versus exogenous-other]) to create a decoding difference score. Just as for hypotheses 1 and 2, we tested the six defined ROIs within the theory-of-mind network (van Veluw and Chance, 2014).
 
 In a post hoc analysis, we tested for overlap in attention type encoding in self and others in the left TPJ ROI by using a two-way cross-classification analysis. One classifier was trained to discriminate endogenous versus exogenous self-stories and tested on other-stories (using a leave-one-run-out approach), and another classifier was trained to discriminate endogenous versus exogenous other-stories and tested on self-stories, from which an average cross-classification decoding accuracy was obtained. Overlap in attention type representations in self and other should be reflected in above-chance decoding.
 
-## Testing prediction 4
+#### Testing prediction 4
 
 The purpose of the fourth analysis was to confirm whether our story stimuli engaged social cognition and thereby recruited brain areas within the expected theory of mind network. The analysis was meant as an added control to check the validity of the paradigm. The analysis methods were similar to those used for testing hypotheses 1–3, except in the following ways. We computed four MVPA decoding results: endogenous-self versus nonsocial, endogenous-other versus nonsocial, exogenous-self versus nonsocial, and exogenous-other versus nonsocial. (Because using MVPA to compare two conditions requires equal numbers of trials in both conditions, it was not possible to use a single analysis to compare all 80 social trials to the 20 nonsocial trials.) Each analysis represents a separate, alternative way to assess the social-versus-nonsocial decoding. Just as for hypotheses 1–3, we tested the six defined ROIs within the theory-of-mind network (van Veluw and Chance, 2014).
 
-## Eye tracking analysis
+### Eye tracking analysis
 
 Eye movements were recorded via an MRI-compatible infrared eye tracker (SR Research EyeLink 1000 Plus), mounted just below the projector screen, sampling at 1000 Hz. Before each scanning session, a calibration routine on five screen locations was used and repeated until the maximum error for any point was less than 1°. The obtained eye position data was cleaned of artifacts related to blink events and smoothed using a 20 ms moving average. We then built an SVM decoding model analogue to the cross-validation approach used for the fMRI data, but here based purely on eye tracking data, to test whether eye movement dynamics alone were sufficient to decode the conditions of interest (endogenous versus exogenous, and self versus other). In keeping with a previous study (Schneider et al., 2013), we organized the data in the following way. The part of the display within which the stimuli appeared was divided into an 8 × 4 grid of 32 equally sized squares. The grid covered the screen area within which the stories were presented (see red outline in Figure 3—figure supplement 8), and approximately corresponded to the locations of individual words (four lines, with eight words per line). For each trial, the proportion of time that the subject fixated within each square (32 features) and the saccades between those regions (32 × 32 = 1024 features) was calculated. These 1056 features, representing information about both where people were looking as well as saccade dynamics, were then averaged across repetitions for each of the four main conditions within each of the 10 runs, yielding one eye movement feature vector per condition per run (per subject). The feature vectors were submitted to an SVM classifier (C = 1). Using a leave-one-run-out approach, the SVM model was trained on endogenous versus exogenous story types, and then tested in the left-out run. At the group level, the decoding accuracies were tested against chance level using t-tests. A similar analysis was then performed on the contrast between self-related stories versus other-related stories. The results showed that endogenous-versus-exogenous and self-versus-other story types could not be decoded significantly better than chance using the pattern of eye movement. See Supplementary Information (Supplementary file 7 and Figure 3—figure supplement 8) for the results of the eye-tracking analysis.

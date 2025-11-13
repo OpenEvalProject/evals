@@ -76,7 +76,7 @@
 
 ## Abstract
 
-The great auk was once abundant and distributed across the North Atlantic. It is now extinct, having been heavily exploited for its eggs, meat, and feathers. We investigated the impact of human hunting on its demise by integrating genetic data, GPS-based ocean current data, and analyses of population viability. We sequenced complete mitochondrial genomes of 41 individuals from across the species’ geographic range and reconstructed population structure and population dynamics throughout the Holocene. Taken together, our data do not provide any evidence that great auks were at risk of extinction prior to the onset of intensive human hunting in the early 16 th century. In addition, our population viability analyses reveal that even if the great auk had not been under threat by environmental change, human hunting alone could have been sufficient to cause its extinction. Our results emphasise the vulnerability of even abundant and widespread species to intense and localised exploitation.
+The great auk was once abundant and distributed across the North Atlantic. It is now extinct, having been heavily exploited for its eggs, meat, and feathers. We investigated the impact of human hunting on its demise by integrating genetic data, GPS-based ocean current data, and analyses of population viability. We sequenced complete mitochondrial genomes of 41 individuals from across the species’ geographic range and reconstructed population structure and population dynamics throughout the Holocene. Taken together, our data do not provide any evidence that great auks were at risk of extinction prior to the onset of intensive human hunting in the early 16th century. In addition, our population viability analyses reveal that even if the great auk had not been under threat by environmental change, human hunting alone could have been sufficient to cause its extinction. Our results emphasise the vulnerability of even abundant and widespread species to intense and localised exploitation.
 
 ## Introduction
 
@@ -96,13 +96,13 @@ Here, we examine the drivers of the extinction of the great auk by analysing who
 
 ## Results
 
-## Mitogenome sequence data
+### Mitogenome sequence data
 
 Using hybridisation capture combined with high-throughput sequencing, we generated short-read sequence data from 66 bone samples of great auk (See Supplementary file 1a for sample information). Following read processing and filtering, 35 samples passed the quality requirements (see Materials and methods) and were suitable for further analysis. In addition to the sequences generated from bones, we included six previously published mitogenome sequences from tissue or feather samples (Thomas et al., 2017) (Supplementary file 1a).
 
 The combined data set comprised 41 complete mitogenomes, representing individuals from across the former range of the great auk and spanning the period 170–15,000 years before present (ybp). For samples in the final data set, the mean average read length of aligned bases to the reference great auk mitogenome (GenBank accession KU158188.1 [Anmarkrud and Lifjeld, 2017]) was 55.12 base pairs (bp), with a range of 41.21–86.95 bp. Unique mitogenome coverage of these samples ranged from 6.39 × to 430.09×, with average coverage of 72.5× (Supplementary file 1c). The final alignment length was 16,641 bp, including 9994 bp (after removal of gaps) that were shared across all 41 mitogenomes.
 
-## Genetic diversity and population structure
+### Genetic diversity and population structure
 
 Haplotype diversity among the great auk mitogenomes was high, with only two individuals yielding identical haplotypes across the 9994 bp covered by all 41 mitogenomes. The two identical sequences differed in age, so that when divided into different age groups, each age group contained a unique set of haplotypes. No reduction of haplotype diversity could be identified in more recent samples (Figure 2).
 
@@ -116,7 +116,7 @@ We observed no structure in the distribution of haplotypes using any of our four
 
 **Figure 3.:** The network was inferred in PopART18 and shows a lack of phylogeographic structure among the dated and undated samples of great auks. Haplotypes are coloured according to sampling location.
 
-## Ocean current data
+### Ocean current data
 
 To evaluate potential reasons for the observed lack of population structure, we sourced data from GPS-equipped drifting capsules that had been deployed in the North Atlantic as part of the ‘Message in a Bottle’ project by Verkís Consulting Engineers. As the great auk was flightless, ocean currents might have influenced its migration patterns. The route taken by the capsules connects some of the main breeding colonies in St Kilda (Scotland), Geirfuglasker/Eldey Island (Iceland), and Funk Island (Canada) (Figure 4).
 
@@ -126,15 +126,197 @@ To evaluate potential reasons for the observed lack of population structure, we 
 
 The extrapolation of present-day ocean current data into the past and the interpretation of the data in the context of great auk movements is merely speculative. However, if ocean currents today are comparable to those of past millennia, then the data do at least provide a possible explanation for how great auks travelled across their former range and between breeding colonies (Figure 4). A full description of the routes taken by the capsules is provided in Appendix 2.
 
-## Demographic history and effective population size
+### Demographic history and effective population size
 
 We reconstructed the demographic history of the great auk using the 25 dated mitogenomes (see Materials and Methods for definition of ‘dated’ samples) and found support for a constant population size through time, with no evidence of a population decline. Despite having a high haplotype diversity, our samples had a shallow divergence and their most recent common ancestor was dated to 42,188 ybp (95% credibility interval 24,743–84,894 ybp; see Appendix 3). The effective female population size (Nef) was estimated at 9558 (95% credibility interval 4548–19,665), assuming a generation interval of 12 years (BirdLife International, 2016a). To examine the effect of including the undated samples, we repeated the analysis on the complete data set while accounting for the uncertainty in the ages of the undated samples. This second analysis also yielded support for a constant population size, with an effective female population size of 7331 (95% credibility interval 2477–19,492). Census size (Nc) estimates based on the effective population size and the range of known Ne/Nc ratios (Frankham, 1995) yielded an expectedly wide range of 12,292–756,346 individuals.
 
-## Population viability analyses and sustainable harvest rates
+### Population viability analyses and sustainable harvest rates
 
 To assess the feasibility of a ‘hunting-only’ scenario of extinction, we used population viability analysis to estimate the proportion of the population that would need to have been harvested in order to cause extinction within 350 years. Population sizes for our simulations were conservatively based on the upper margin of the census size estimates outlined above, consistent with the large census sizes described in historic documents (Birkhead, 1993) (see also Appendix 8). The estimate of 756,346 mature birds is slightly below the census size estimates for the great auk’s closest relative, the razorbill (Alca torda;~1 million mature birds) and significantly below those of common and thick billed murre, also from the Alcidae family (Uria aalge and Uria lomvia; 3 million mature birds each) (BirdLife International, 2016a; BirdLife International, 2016b; BirdLife International, 2016c; BirdLife International, 2017). Given historic reports of millions of great auks (Birkhead, 1993) and in order to reduce the risk of underestimating the census size of great auks, we ran simulations for population sizes of 1 million and 3 million mature birds (2 million and 6 million birds total size including juveniles). All simulation settings were ‘optimistic’ and biased strongly towards survival. This included conservatively high estimates of reproductive success and conservatively low estimates of natural mortality. For a subset of simulations, we also introduced a further, population density dependent, linear reduction of natural mortality to half our already low rates of natural mortality. Furthermore, in order to provide maximum sustainable harvest rate estimates for more ‘realistic’ settings, we ran simulations using estimates for reproductive success and natural mortality obtained from the razorbill.
 
 We found that under our conservative settings, annual harvest rates up to 9% of the pre-hunting population were sustainable. For example, for a pre-hunting population size of 2 million individuals, this corresponds to an annual harvest rate of 180,000 birds. In contrast, an annual harvest rate of 10% of the pre-hunting population combined with an annual egg harvest rate of 5% led to extinction in a large proportion of our simulations. A harvest rate of 10.5% (egg harvest rate 5%) of the pre-hunting population led to extinction within 350 years in all of our simulations. Assuming a density-dependent reduction of mortality had only a small effect on sustainable harvest rates (Table 1). Furthermore, even if no eggs at all were harvested, the population was still at risk of extinction at 10.5% bird harvest rate, with extinction probabilities between 15% (population size 6 million, density-dependent mortality) and 81% (population size 6 million, no density-dependent mortality, [Table 1]). These results were robust to the definition used for extinction. For comparison, when using the much higher mortality rate of the razorbill, with a starting population of 2 million birds and slightly more realistic settings for reproductive age and success, harvest rates are only sustainable up to about 40,000 birds per year even if no eggs are harvested and mortality is gradually reduced to 50% of the starting value as the population density declines (see Supplementary file 2b).
+
+**Table 1.**
+ Population viability analysis.Extinction is defined as ‘only one sex remains’. The number of mature individuals was estimated in Vortex 10.2.8.0, assuming a stable age distribution and given our fixed mortality rates. ‘Maximum- number of eggs’ refers to the number of eggs that would be produced if all mature individuals were breeding. ‘Harvest rate’ describes the percentage of the population that is harvested annually, with egg harvest rate calculated from the maximum number of eggs in parentheses. ‘DD’ refers to density-dependent reduction of mortality. ‘Number of birds’ is the total number of birds killed annually, which was split between the age cohorts (see Appendix 8). ‘Number of eggs’ is total number of eggs harvested annually.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9">Conservative settings</th>
+    </tr>
+    <tr>
+      <th>Population size (total)</th>
+      <th>Mature birds (&gt;4 years)</th>
+      <th>Maximum number of eggs</th>
+      <th>Harvest rate (% of starting population size)</th>
+      <th>DD</th>
+      <th>Number of birds</th>
+      <th>Number of eggs</th>
+      <th>Probability of extinction within 350 years</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>9 (5)</td>
+      <td>No</td>
+      <td>180,000</td>
+      <td>25,688</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>10 (5)</td>
+      <td>No</td>
+      <td>200,000</td>
+      <td>25,688</td>
+      <td>0.79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>10 (5)</td>
+      <td>Yes</td>
+      <td>200,000</td>
+      <td>25,688</td>
+      <td>0.22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>10.5 (5)</td>
+      <td>Yes</td>
+      <td>210,000</td>
+      <td>25,688</td>
+      <td>1.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>10.5 (0)</td>
+      <td>No</td>
+      <td>210,000</td>
+      <td>0</td>
+      <td>0.71</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>10.5 (0)</td>
+      <td>Yes</td>
+      <td>210,000</td>
+      <td>0</td>
+      <td>0.19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>9 (5)</td>
+      <td>No</td>
+      <td>540,000</td>
+      <td>77,065</td>
+      <td>0.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>10 (5)</td>
+      <td>No</td>
+      <td>600,000</td>
+      <td>77,065</td>
+      <td>0.86</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>10 (5)</td>
+      <td>Yes</td>
+      <td>600,000</td>
+      <td>77,065</td>
+      <td>0.33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>10.5 (5)</td>
+      <td>Yes</td>
+      <td>630,000</td>
+      <td>77,065</td>
+      <td>1.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>10.5 (0)</td>
+      <td>No</td>
+      <td>600,000</td>
+      <td>0</td>
+      <td>0.81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6,000,000</td>
+      <td>3,082,594</td>
+      <td>1,541,297</td>
+      <td>10.5 (0)</td>
+      <td>Yes</td>
+      <td>630,000</td>
+      <td>0</td>
+      <td>0.15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9">‘Realistic’ settings</td>
+    </tr>
+    <tr>
+      <td>Population size (total)</td>
+      <td>Mature birds (&gt;5 years)</td>
+      <td>Maximum number of eggs</td>
+      <td>Harvest rate (% of starting population size)</td>
+      <td>DD</td>
+      <td>Number of birds</td>
+      <td>Number of eggs</td>
+      <td>Probability of extinction within 350 years</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2,000,000</td>
+      <td>1,027,532</td>
+      <td>513,766</td>
+      <td>2 (0)</td>
+      <td>Yes</td>
+      <td>40,000</td>
+      <td>0</td>
+      <td>0.19–0.33 (range across multiple repeat simulations)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -164,7 +346,7 @@ Our findings highlight how industrial-scale commercial exploitation of natural r
 
 ## Materials and methods
 
-## Sampling and DNA extraction
+### Sampling and DNA extraction
 
 We obtained great auk material for ancient DNA (aDNA) analyses from various institutions (Supplementary file 1a). Samples were chosen to represent individuals from the major centres of the former geographic distribution of the species (Figure 1), spanning as wide a time period as possible (Supplementary file 1a). The samples range from about 170 years old to about 13,000–15,000 years old. Sample dates are stratigraphically assigned (archaeological material), based on documented information (e.g., dates on which mounted specimens were killed), or estimated from known site information to give dated constraints (e.g., Funk Island material was collected from the top layers of the islands, so the bones are most likely from individuals killed during the intense hunting period that began ~500 years ago). Bones were sampled via drilling using a Dremel 107 2.4 mm engraving cutter to obtain powdered bone (Figure 5) or using a Dremel cutting wheel, which allowed removal of sections of bones that were later powdered using a sonic dismembrator.
 
@@ -176,13 +358,13 @@ All laboratory work prior to polymerase chain reaction (PCR) amplification was c
 
 Genomic DNA was extracted from 20 to 60 mg of bone powder (Supplementary file 1b) using the method described by Dabney et al. (2013). In short, the bone powder was digested using an EDTA-based extraction buffer and DNA purified using a Qiagen MinElute column. After washing with ethanol-based wash buffers (Qiagen), the DNA was eluted in TE buffer for storage.
 
-## DNA sequence data
+### DNA sequence data
 
 Single-stranded sequencing libraries were prepared from aDNA extracts following the protocol by Gansauge and Meyer (2013), with modifications as described by Bennett et al. (2014). For some samples, double-stranded libraries were also built using the protocol described by Meyer and Kircher (2010) (Supplementary file 1b). Hybridisation capture was used to enrich libraries for great auk mitochondrial DNA following the MYcroarray MYbaits Sequence Enrichment protocol v2.3.1 (MYcroarray MYbaits, 2014). Bait design details can be found in Appendix 4 and Appendix 4—figure 1.
 
 Samples were sequenced on Illumina platforms (HiSeq 2500 and MiSeq; further details in Supplementary file 1b) at the Danish National High-Throughput DNA Sequencing Centre or by New Zealand Genomics Limited. Demultiplexing of raw sequence data was performed by the respective sequencing centres. Read processing of demultiplexed sequence data was performed as described by Thomas et al. (2017) using the PALEOMIX v1.2.5 pipeline (Schubert et al., 2014), details of which can be found in Appendix 5.
 
-## Demographic history analyses
+### Demographic history analyses
 
 To reconstruct the demographic history of the great auk through time, we performed a Bayesian phylogenetic analysis of the mitogenome sequences from the 25 dated samples (‘dated’ being defined here as those with associated date information, such as stratigraphically assigned dates; undated refers to those for which there is no associated dating information, such as the Funk Island samples) (Supplementary file 1e). The sequence alignment was analysed using BEAST 1.8.4 (Drummond et al., 2012). Full details of the BEAST analysis, including details of the data-partitioning scheme, can be found in Appendix 6.
 
@@ -190,14 +372,14 @@ To test hypotheses of constant population size through time vs. population size 
 
 A second analysis was performed in BEAST, in which the 16 undated mitogenomes were included in the data set. A uniform prior of either (0,1000) or (0,5000) was specified for the ages of these mitogenomes, depending on independent information about the context of the samples (Shapiro et al., 2011). All other settings and priors matched those used in the analysis of the 25 dated samples. The extended data set was still best described by a constant-size coalescent prior.
 
-## Network analyses
+### Network analyses
 
 Population structure was investigated by inferring a haplotype network using median joining (Bandelt et al., 1999) in PopART (Leigh and Bryant, 2015). Genetic diversity through space and time was visualised using statistical parsimony and a temporal haplotype network, as implemented in TempNet (Prost and Anderson, 2011) (see Appendix 7 for details on TempNet age categories and Supplementary file 1e).
 
-## Population viability analysis
+### Population viability analysis
 
 We performed a population viability analysis using the software Vortex 10.2.8.0 (Lacy and Pollak, 2014) in order to estimate the number of great auks that were hunted annually, as well as the rate at which a given intensity of hunting would result in population collapse and extinction. Full details of the simulations performed and parameter justifications can be found in Appendix 8 and Supplementary file 2a, 2b and 2c.
 
-## Tracking migration routes using GPS capsules
+### Tracking migration routes using GPS capsules
 
 To achieve a better understanding of the feasibility of great auk movement between colonies of the North Atlantic, we accessed data that were initially generated as part of the ‘Message in a Bottle’ project by Verkís Consulting Engineers in Iceland. Two GPS-equipped drifting capsules were released on 10th January 2016 from a helicopter around 40 km southeast of the Reykjanes peninsula (southwestern Iceland). Each of the capsules contained a North Star TrackPack GPS tracking device (https://www.northstarst.com/asset-trackers/trackpack/), which uploaded precise location data six times a day for up to two years, through the GlobalStar satellite network.

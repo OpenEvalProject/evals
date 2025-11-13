@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03xjwb503 Laboratoire Écologie Systématique Évolution, Université Paris-Saclay, CNRS and AgroParisTech Orsay France
-2. https://ror.org/006gw6z14 Estación Biológica de Doñana, CSIC Sevilla Spain
-3. https://ror.org/003vg9w96 UMR Plant Health Institute of Montpellier, CIRAD and INRAE Montpellier France
-4. https://ror.org/01amp2a31 Senckenberg Biodiversity and Climate Research Centre Frankfurt am Main Germany
-5. https://ror.org/04hnzva96 Smithsonian Conservation Biology Institute Front Royal United States
+1. Laboratoire Écologie Systématique Évolution, Université Paris-Saclay, CNRS and AgroParisTech Orsay France ([ROR:03xjwb503](https://ror.org/03xjwb503))
+2. Estación Biológica de Doñana, CSIC Sevilla Spain ([ROR:006gw6z14](https://ror.org/006gw6z14))
+3. UMR Plant Health Institute of Montpellier, CIRAD and INRAE Montpellier France ([ROR:003vg9w96](https://ror.org/003vg9w96))
+4. Senckenberg Biodiversity and Climate Research Centre Frankfurt am Main Germany ([ROR:01amp2a31](https://ror.org/01amp2a31))
+5. Smithsonian Conservation Biology Institute Front Royal United States ([ROR:04hnzva96](https://ror.org/04hnzva96))
 
 † Corresponding author
 
@@ -47,13 +47,13 @@ There are two primary outputs from a PhD: new skills and expertise for the gradu
 
 **Figure 2.:** The three primary benefits of doing a PhD are acquiring expertise (pink circle), learning to work in a collaborative environment (blue), and developing communication skills for sharing knowledge (yellow). For each benefit, general aspects that apply to almost all doctoral students are shown in bold type in the small circle, and specific aspects that depend on, for example, the student’s supervisor or field of research are shown in plain type in the large circle. The large grey area contains more abstract and subjective ideas that are not discussed in the main text. It should be noted that this figure is conceptual, and that the aspects and ideas in it could be grouped in other, equally valid, ways.
 
-## Becoming an expert
+### Becoming an expert
 
 Throughout a doctoral project, a PhD student will develop many of the skills needed to grow into an independent researcher, while also developing expertise in a given field. In addition to learning a great deal about their own field – and adding knowledge to it – a PhD student will learn how to perform a variety of tasks, and thus acquire new transferable skills. These will include autonomy, critical thinking, organization and planning, resilience, and the ability to design, lead and carry out projects. Furthermore, unlike postdocs and principal investigators, who have to carry out various management and administrative tasks, PhD students are usually free to dedicate their working hours almost exclusively to academic pursuits that they are (or can become) passionate about. This freedom is one of the aspects that make the PhD experience unique, and it should not be overlooked or taken for granted. Unfortunately, not all PhD students benefit from or are aware of such autonomy, but this ought to be an objective for all PhDs.
 
 A PhD does not consist of a number of uneventful years that culminate in a single success. Rather, there are many steps along the way – such as mastering a technique, completing a series of experiments or activities in the field, or finishing the first draft of a manuscript – and the feeling of accomplishment that comes with each completed milestone should be a source of pride to the student.
 
-## Working in a collaborative environment
+### Working in a collaborative environment
 
 Learning how to work with other researchers is an important part of getting a PhD. The PhD student’s most important working relationship is with their supervisor (or, in some cases, supervisors), but most PhD students will also have the opportunity to collaborate with other members of their research group or lab, or even with researchers from the wider community. Working on other projects from time to time can help the student’s own project through increased productivity and creativity; moreover, it can strengthen lab cohesion, and might even lead to the student being a co-author on a paper. Additionally, supervising undergraduate students – or even new graduate students – is a good way of acquiring management skills.
 
@@ -61,7 +61,7 @@ Conferences are another way to meet and interact with other researchers. In part
 
 Collaboration also can happen through the many virtual communities that PhD students can join for technical, scientific or moral support. For example, the Global PhD Server enables doctoral students to discuss their experience, exchange anecdotes, and offer or seek help. The @PhDForum supports a variety of activities, such as writing sessions for PhD students working on papers or chapters of their thesis, while Stack Overflow is a good place to offer/seek help with coding and statistics.
 
-## Developing communication skills
+### Developing communication skills
 
 The ability to communicate results is a crucial skill for any researcher. A PhD student will, for example, be required to present their work to other scientists as talks or posters at meetings and conferences. The student will also start learning how to write a scientific article. Moreover, there are many opportunities for PhD students to share their passion and knowledge about their field, such as teaching and mentoring undergraduates and other graduate students. They can also get involved in public outreach, and contribute to awakening new passions or educating citizens on certain topics.
 

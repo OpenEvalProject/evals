@@ -42,23 +42,23 @@ In this paper, we sketch the experiences that we had setting up neuromatch, an o
 
 Conferences work by providing participants with a broad set of communication and socialization channels. In this article we discuss how these channels can be established in an online conference.
 
-## Poster sessions and short talks
+### Poster sessions and short talks
 
 At a legacy conference, posters allow for a larger number of scientists to present their work than would be possible with talks alone. For neuromatch, all abstracts were accepted for a short talk in a parallel session as there are no limitations on space for an online conference. In principle, these talks could be recorded, ensuring that nobody needs to miss any talk, although we did not have enough time to organize this for the first neuromatch. Short talk sessions featured three 12-minute talks, each followed by three minutes of questions, and there were up to six parallel tracks. We found that these short talks led to exciting debates that are typical for posters, and might allow more time for questions and debate at future events. Each parallel track was a separate Zoom room with a volunteer host, a system that mostly worked well except that some rooms were subject to persistent 'Zoombombing' (organized disruption by online miscreants), a problem that can be solved by careful management of the Zoom room settings, or by switching to other platforms such as Crowdcast (Kording, 2020).
 
-## Invited and contributed talks
+### Invited and contributed talks
 
 We largely retained the legacy conference format of a single track for invited talks (30 minutes plus 15 minutes for questions) from established scientists, and contributed talks (18 minutes plus 4 minutes for questions) selected from the submitted abstracts to highlight work from up-and-coming researchers. However, the online platform used – Crowdcast – allowed for some significant innovations. First, everyone was able to see the speaker more clearly than in a lecture theatre. Second, Crowdcast allows anyone to submit a question to ask the speaker at the end, and viewers can vote on those questions. This led to a question and answer session that was considerably more lively and democratic than in a typical legacy conference, where participants often note that the same established professors are asking the same questions at every talk. As in the case of the short talks, it may be better to extend the questions even more to capitalize on the quality of the questions asked in the safer and more democratic online format. The third innovation is the chat window that appears alongside the talk. We did not anticipate how significant this would be. Students and others were able to ask basic questions about definitions or ask for links to papers while the talk was going on. Other participants could answer them in real-time without disrupting the presentation, thereby allowing a deeper level of engagement by the audience than is possible in legacy conferences. Moreover, since recordings of these talks were available immediately after the session, it would be possible to go back and revisit portions of the talk that may have been missed or were presented too quickly.
 
-## One-on-one meetings
+### One-on-one meetings
 
 One feature of a legacy conference that would appear to be impossible to replicate online is the social aspect: chance encounters during the coffee breaks, social events or banquets. In place of this aspect, neuromatch algorithmically matched attendees to other like-minded scientists for individual 15-minute chats. We use a combination of topic modeling techniques and linear programming to solve the matching problem based on a sample of their research abstracts (Achakulvisut et al., 2018). The matching part was based on a highly popular experiment carried out at the Conference on Cognitive Computational Neuroscience, but it is particularly well-suited to an online format. There remains considerable scope for further innovations in replicating or improving on the social experience of legacy conferences, especially as the online format may be less socially intimidating.
 
-## Organizing is much easier
+### Organizing is much easier
 
 We managed to organize neuromatch extremely quickly with a small team and believe that online conferences can be much less burdensome to organize in general. There is no location to organize, no rooms to book, and no projectors, caterers, entertainment, travel or hotel reservations to worry about. Moreover, there is a worldwide pool of potential volunteers who can help remotely. Leading scientists are also, we feel, more likely to accept invitations to speak at online conferences because the time commitment is significantly less.
 
-## Diversity and inclusivity
+### Diversity and inclusivity
 
 Legacy conferences come with additional challenges on the diversity and inclusivity of participants. For example, family duties, gender bias, disabilities, travel bans, limited funding, religious practices, and many other disadvantages may limit participation in legacy conferences. An online platform can remove many of these barriers to increase the potential set of individuals who can participate (Sarabipour, 2020). In neuromatch, we included a session devoted to early-career researchers and had an equal number of men and women among the invited speakers. Moreover, we accepted all short talk submissions.
 

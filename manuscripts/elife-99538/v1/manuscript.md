@@ -11,20 +11,20 @@
 
 ### Affiliations
 
-1. https://ror.org/02jvh3a15 Division for Mental Health and Substance Abuse, Diakonhjemmet Hospital Oslo Norway
-2. https://ror.org/03e71c577 Centre for Addiction and Mental Health Toronto Canada
-3. https://ror.org/03dbr7087 Department of Psychiatry, University of Toronto Toronto Canada
-4. https://ror.org/02t274463 Psychological and Brain Sciences, University of California Santa Barbara Santa Barbara United States
-5. https://ror.org/01xtthb56 Department of Psychology, University of Oslo Oslo Norway
-6. https://ror.org/00j9c2840 Centre for Precision Psychiatry, Division of Mental Health and Addiction, Oslo University Hospital Oslo Norway
-7. https://ror.org/019whta54 Department of Clinical Neurosciences, Lausanne University Hospital (CHUV) and University of Lausanne Lausanne Switzerland
-8. https://ror.org/052gg0110 Department of Psychiatry, University of Oxford Oxford United Kingdom
+1. Division for Mental Health and Substance Abuse, Diakonhjemmet Hospital Oslo Norway ([ROR:02jvh3a15](https://ror.org/02jvh3a15))
+2. Centre for Addiction and Mental Health Toronto Canada ([ROR:03e71c577](https://ror.org/03e71c577))
+3. Department of Psychiatry, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+4. Psychological and Brain Sciences, University of California Santa Barbara Santa Barbara United States ([ROR:02t274463](https://ror.org/02t274463))
+5. Department of Psychology, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+6. Centre for Precision Psychiatry, Division of Mental Health and Addiction, Oslo University Hospital Oslo Norway ([ROR:00j9c2840](https://ror.org/00j9c2840))
+7. Department of Clinical Neurosciences, Lausanne University Hospital (CHUV) and University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+8. Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
 ## Abstract
 
-Menopausal hormone therapy (MHT) is generally thought to be neuroprotective, yet results have been inconsistent. Here, we present a comprehensive study of MHT use and brain characteristics in females from the UK Biobank. 19,846 females with magnetic resonance imaging data were included. Detailed MHT prescription data from primary care records was available for 538. We tested for associations between the brain measures (i.e. gray/white matter brain age, hippocampal volumes, white matter hyperintensity volumes) and MHT user status, age at first and last use, duration of use, formulation, route of administration, dosage, type, and active ingredient. We further tested for the effects of a history of hysterectomy ± bilateral oophorectomy among MHT users and examined associations by APOE ε4 status. Current MHT users, not past users, showed older gray and white matter brain age, with a difference of up to 9 mo, and smaller hippocampal volumes compared to never-users. Longer duration of use and older age at last use post-menopause was associated with older gray and white matter brain age, larger white matter hyperintensity volume, and smaller hippocampal volumes. MHT users with a history of hysterectomy ± bilateral oophorectomy showed younger gray matter brain age relative to MHT users without such history. We found no associations by APOE ε4 status and with other MHT variables. Our results indicate that population-level associations between MHT use and female brain health might vary depending on duration of use and past surgical history. The authors received funding from the Research Council of Norway (LTW: 223273, 249795, 273345, 298646, 300768), the South-Eastern Norway Regional Health Authority (CB: 2023037, 2022103; LTW: 2018076, 2019101), the European Research Council under the European Union’s Horizon 2020 research and innovation program (LTW: 802998), the Swiss National Science Foundation (AMGdL: PZ00P3_193658), the Canadian Institutes for Health Research (LAMG: PJT-173554), the Treliving Family Chair in Women’s Mental Health at the Centre for Addiction and Mental Health (LAMG), womenmind at the Centre for Addiction and Mental Health (LAMG, BHL), the Ann S. Bowers Women’s Brain Health Initiative (EGJ), and the National Institutes of Health (EGJ: AG063843).
+Background:Menopausal hormone therapy (MHT) is generally thought to be neuroprotective, yet results have been inconsistent. Here, we present a comprehensive study of MHT use and brain characteristics in females from the UK Biobank.Methods:19,846 females with magnetic resonance imaging data were included. Detailed MHT prescription data from primary care records was available for 538. We tested for associations between the brain measures (i.e. gray/white matter brain age, hippocampal volumes, white matter hyperintensity volumes) and MHT user status, age at first and last use, duration of use, formulation, route of administration, dosage, type, and active ingredient. We further tested for the effects of a history of hysterectomy ± bilateral oophorectomy among MHT users and examined associations by APOE ε4 status.Results:Current MHT users, not past users, showed older gray and white matter brain age, with a difference of up to 9 mo, and smaller hippocampal volumes compared to never-users. Longer duration of use and older age at last use post-menopause was associated with older gray and white matter brain age, larger white matter hyperintensity volume, and smaller hippocampal volumes. MHT users with a history of hysterectomy ± bilateral oophorectomy showed younger gray matter brain age relative to MHT users without such history. We found no associations by APOE ε4 status and with other MHT variables.Conclusions:Our results indicate that population-level associations between MHT use and female brain health might vary depending on duration of use and past surgical history.Funding:The authors received funding from the Research Council of Norway (LTW: 223273, 249795, 273345, 298646, 300768), the South-Eastern Norway Regional Health Authority (CB: 2023037, 2022103; LTW: 2018076, 2019101), the European Research Council under the European Union’s Horizon 2020 research and innovation program (LTW: 802998), the Swiss National Science Foundation (AMGdL: PZ00P3_193658), the Canadian Institutes for Health Research (LAMG: PJT-173554), the Treliving Family Chair in Women’s Mental Health at the Centre for Addiction and Mental Health (LAMG), womenmind at the Centre for Addiction and Mental Health (LAMG, BHL), the Ann S. Bowers Women’s Brain Health Initiative (EGJ), and the National Institutes of Health (EGJ: AG063843).
 
 ## Introduction
 
@@ -42,11 +42,1243 @@ In summary, emerging evidence suggests differential effects of MHT formulation, 
 
 ## Methods
 
-## Sample characteristics
+### Sample characteristics
 
 The sample was drawn from the UK Biobank cohort (https://www.ukbiobank.ac.uk). Females with diffusion- and T1-weighted magnetic resonance imaging (MRI) data and complete data on demographic factors, lifestyle factors, and BMI from the MRI assessment time point were included, yielding a sample of 20,325. Out of this sample, a total of 19,846 participants had complete data related to MHT user status (Tables 1–2), and 14,693 participants had complete data on APOE ε4 status. These samples provided the basis for the general MHT-use analyses. Among the MHT users, a subsample of 538 participants had complete MHT-related prescription data and MRI data (Table 3, n=521 with data on APOE ε4 status).
 
-## MRI data acquisition and processing
+**Table 1.**
+ Sample demographics of menopausal hormone therapy (MHT) never-, current, and past- users in the whole sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">MHT User Status</th>
+      <th colspan="3">p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Never</td>
+      <td>Current</td>
+      <td>Past</td>
+      <td>Never vs</td>
+      <td>Never vs</td>
+      <td>Current vs</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>12,012</td>
+      <td>1153</td>
+      <td>6681</td>
+      <td>Current</td>
+      <td>Past</td>
+      <td>Past</td>
+    </tr>
+    <tr>
+      <td>Age*</td>
+      <td>61.6±7.1</td>
+      <td>60.1±6.8</td>
+      <td>67.5±6.2</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Ethnic Background, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.084</td>
+      <td>&lt;0.001</td>
+      <td>0.824</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>11,590 (96.6)</td>
+      <td>1128 (98.0)</td>
+      <td>6555 (98.2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>103 (0.9)</td>
+      <td>5 (0.4)</td>
+      <td>27 (0.4)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>96 (0.8)</td>
+      <td>4 (0.3)</td>
+      <td>23 (0.3)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>54 (0.5)</td>
+      <td>1 (0.1)</td>
+      <td>12 (0.2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mixed</td>
+      <td>81 (0.7)</td>
+      <td>5 (0.4)</td>
+      <td>27 (0.4)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other ethnic group</td>
+      <td>73 (0.6)</td>
+      <td>8 (0.7)</td>
+      <td>28 (0.4)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Education, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.260</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>College/University degree</td>
+      <td>6,123 (51.0)</td>
+      <td>606 (52.6)</td>
+      <td>2,813 (42.1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>O levels/GCSEs or equivalent</td>
+      <td>2,234 (18.6)</td>
+      <td>203 (17.6)</td>
+      <td>1,447 (21.7)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A levels/AS levels or equivalent</td>
+      <td>1,656 (13.8)</td>
+      <td>135 (11.7)</td>
+      <td>758 (11.3)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSEs or equivalent</td>
+      <td>471 (3.9)</td>
+      <td>52 (4.5)</td>
+      <td>247 (3.7)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NVQ/HND/HNC or equivalent</td>
+      <td>414 (3.4)</td>
+      <td>38 (3.3)</td>
+      <td>279 (4.2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other professional qualifications</td>
+      <td>602 (5.0)</td>
+      <td>70 (6.1)</td>
+      <td>523 (7.8)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None of the above</td>
+      <td>512 (4.3)</td>
+      <td>49 (4.2)</td>
+      <td>613 (9.2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lifestyle score</td>
+      <td>1.7±1.2</td>
+      <td>1.8±1.3</td>
+      <td>1.7±1.2</td>
+      <td>0.009</td>
+      <td>0.076</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>BMI* (m2/kg)</td>
+      <td>26.0±4.8</td>
+      <td>25.5±4.4</td>
+      <td>26.2±4.6</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Menopausal Status, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>962 (8.0)</td>
+      <td>45 (3.9)</td>
+      <td>37 (0.6)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>9,905 (82.5)</td>
+      <td>769 (66.7)</td>
+      <td>5,528 (82.8)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not sure – had a hysterectomy</td>
+      <td>545 (4.5)</td>
+      <td>247 (21.4)</td>
+      <td>1,057 (15.8)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not sure – other reason</td>
+      <td>600 (5.0)</td>
+      <td>92 (8.0)</td>
+      <td>58 (0.9)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oophorectomy, yes, N (%)</td>
+      <td>443 (3.7)</td>
+      <td>224 (19.4)</td>
+      <td>1172 (17.7)</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.159</td>
+    </tr>
+    <tr>
+      <td>Hysterectomy, yes, N (%)</td>
+      <td>518 (4.5)</td>
+      <td>117 (12.5)</td>
+      <td>1083 (18.8)</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>APOE ε4 status, carrier, N (%)</td>
+      <td>3134 (27.5)</td>
+      <td>284 (26.2)</td>
+      <td>1557 (24.7)</td>
+      <td>0.398</td>
+      <td>&lt;0.001</td>
+      <td>0.278</td>
+    </tr>
+    <tr>
+      <td>APOE ε4, allele, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.649</td>
+      <td>&lt;0.001</td>
+      <td>0.460</td>
+    </tr>
+    <tr>
+      <td>non-carrier</td>
+      <td>8264 (72.5)</td>
+      <td>798 (73.8)</td>
+      <td>4759 (75.3)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ε3/ε4</td>
+      <td>2853 (25.0)</td>
+      <td>257 (23.8)</td>
+      <td>1424 (22.5)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ε4/ ε4</td>
+      <td>281 (2.5)</td>
+      <td>27 (2.5)</td>
+      <td>133 (2.1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age started MHT*</td>
+      <td></td>
+      <td>49.8±6.5</td>
+      <td>47.9±5.6</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age last used MHT*</td>
+      <td></td>
+      <td>60.1±6.8</td>
+      <td>53.9±6.1</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Duration of MHT use*</td>
+      <td></td>
+      <td>10.3±8.6</td>
+      <td>6.0±5.6</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean ± Standard Deviation. Age is given in years. Abbreviations: N, sample size; GCSE, General Certificate of Secondary Education; CSE, Certificate of Secondary Education; NVQ, National Vocational Qualification; BMI, body mass index; APOE, apolipoprotein. Significant differences between groups based on t/χ2 tests are highlighted in bold._
+
+**Table 2.**
+ Sample demographics of menopausal hormone therapy (MHT) users with and without a history of hysterectomy +/-bilateral oophorectomy in the whole sample.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">MHT Users</th>
+      <th colspan="3">p-value</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>No Surgery</td>
+      <td>Hysterectomy</td>
+      <td>Oophorectomy</td>
+      <td>No vs</td>
+      <td>No vs</td>
+      <td colspan="2">Hyster vs</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>5,510</td>
+      <td>544</td>
+      <td>1,407</td>
+      <td>Hyster</td>
+      <td>Oopho</td>
+      <td colspan="2">Oopho</td>
+    </tr>
+    <tr>
+      <td>Age*</td>
+      <td>66.1±6.9</td>
+      <td>69.0±5.6</td>
+      <td>66.7±6.7</td>
+      <td>&lt;0.001</td>
+      <td>0.003</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Ethnic Background, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.710</td>
+      <td>0.272</td>
+      <td colspan="2">0.569</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>5408 (98.3)</td>
+      <td>535 (98.5)</td>
+      <td>1370 (97.4)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>24 (0.4)</td>
+      <td>2 (0.4)</td>
+      <td>8 (0.6)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Black</td>
+      <td>15 (0.3)</td>
+      <td>3 (0.6)</td>
+      <td>8 (0.6)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chinese</td>
+      <td>9 (0.2)</td>
+      <td>0 (0.0)</td>
+      <td>4 (0.3)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Mixed</td>
+      <td>22 (0.4)</td>
+      <td>2 (0.4)</td>
+      <td>6 (0.4)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other ethnic group</td>
+      <td>23 (0.4)</td>
+      <td>1 (0.2)</td>
+      <td>10 (0.7)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Education, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">0.197</td>
+    </tr>
+    <tr>
+      <td>College/University degree</td>
+      <td>2559 (46.4)</td>
+      <td>184 (33.8)</td>
+      <td>557 (39.6)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>O levels/GCSEs or equivalent</td>
+      <td>1,099 (19.9)</td>
+      <td>132 (24.3)</td>
+      <td>323 (23.0)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>A levels/AS levels or equivalent</td>
+      <td>631 (11.5)</td>
+      <td>66 (12.1)</td>
+      <td>156 (11.1)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>CSEs or equivalent</td>
+      <td>206 (3.7)</td>
+      <td>18 (3.3)</td>
+      <td>54 (3.8)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>NVQ/HND/HNC or equivalent</td>
+      <td>209 (3.8)</td>
+      <td>24 (4.4)</td>
+      <td>63 (4.5)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other professional qualifications</td>
+      <td>387 (7.0)</td>
+      <td>60 (11.0)</td>
+      <td>114 (8.1)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>None of the above</td>
+      <td>419 (7.6)</td>
+      <td>60 (11.0)</td>
+      <td>140 (10.0)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Lifestyle score*</td>
+      <td>1.7±1.2</td>
+      <td>1.6±1.2</td>
+      <td>1.8±1.2</td>
+      <td>0.323</td>
+      <td>0.066</td>
+      <td colspan="2">0.044</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2) *</td>
+      <td>25.9±4.50</td>
+      <td>26.1±4.2</td>
+      <td>26.7±4.7</td>
+      <td>0.260</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">0.011</td>
+    </tr>
+    <tr>
+      <td>Menopausal Status, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>81 (1.5)</td>
+      <td>0 (0.0)</td>
+      <td>1 (0.1)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>5,290 (96.0)</td>
+      <td>444 (81.6)</td>
+      <td>615 (43.7)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Not sure – had a hysterectomy</td>
+      <td>0 (0.0)</td>
+      <td>99 (18.2)</td>
+      <td>781 (55.5)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Not sure – other reason</td>
+      <td>139 (2.5)</td>
+      <td>1 (0.2)</td>
+      <td>10 (0.7)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Hysterectomy, yes, N (%)</td>
+      <td></td>
+      <td></td>
+      <td>666 (89.4)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>APOE ε4 status, carrier, N (%)</td>
+      <td>1317 (25.3)</td>
+      <td>113 (21.9)</td>
+      <td>345 (25.9)</td>
+      <td>0.100</td>
+      <td>0.678</td>
+      <td colspan="2">0.085</td>
+    </tr>
+    <tr>
+      <td>APOE ε4, allele, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.095</td>
+      <td>0.427</td>
+      <td colspan="2">0.161</td>
+    </tr>
+    <tr>
+      <td>non-carrier</td>
+      <td>3881 (74.7)</td>
+      <td>402 (78.1)</td>
+      <td>985 (74.1)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>ε3/ε4</td>
+      <td>1194 (23.0)</td>
+      <td>107 (20.8)</td>
+      <td>320 (24.1)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>ε4/ ε4</td>
+      <td>123 (2.4)</td>
+      <td>6 (1.2)</td>
+      <td>25 (1.9)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age at menopause*</td>
+      <td>50.0±5.1</td>
+      <td>43.1±6.8</td>
+      <td>46.9±6.3</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age started MHT*</td>
+      <td>49.2±5.3</td>
+      <td>46.9±5.7</td>
+      <td>45.6±6.1</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age last used MHT*</td>
+      <td>54.7±6.1</td>
+      <td>55.0±7.4</td>
+      <td>55.2±7.4</td>
+      <td>0.312</td>
+      <td>0.014</td>
+      <td colspan="2">0.646</td>
+    </tr>
+    <tr>
+      <td>Duration of MHT use*</td>
+      <td>5.5±5.4</td>
+      <td>8.1±6.6</td>
+      <td>9.6±7.8</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age MHT rel Age Menopause</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Same age</td>
+      <td>1177 (24.7)</td>
+      <td>89 (19.7)</td>
+      <td>303 (46.2)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>After</td>
+      <td>1659 (34.8)</td>
+      <td>283 (62.7)</td>
+      <td>170 (25.9)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Before</td>
+      <td>1931 (40.5)</td>
+      <td>79 (17.5)</td>
+      <td>183 (27.9)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age at oophorectomy*</td>
+      <td></td>
+      <td></td>
+      <td>47.7±8.2</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age at hysterectomy*</td>
+      <td></td>
+      <td>44.5±10.0</td>
+      <td>46.9±7.9</td>
+      <td></td>
+      <td></td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age Oopho rel Age Menopause</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Same age</td>
+      <td></td>
+      <td></td>
+      <td>301 (47.8)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>After</td>
+      <td></td>
+      <td></td>
+      <td>271 (43.0)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Before</td>
+      <td></td>
+      <td></td>
+      <td>58 (9.2)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age Oopho rel Age MHT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Same age</td>
+      <td></td>
+      <td></td>
+      <td>740 (59.0)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>After</td>
+      <td></td>
+      <td></td>
+      <td>367 (29.2)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Before</td>
+      <td></td>
+      <td></td>
+      <td>148 (11.8)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age Hyster rel Age Menopause</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Same age</td>
+      <td></td>
+      <td>278 (61.6)</td>
+      <td>324 (54.8)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>After</td>
+      <td></td>
+      <td>110 (24.4)</td>
+      <td>214 (36.2)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Before</td>
+      <td></td>
+      <td>63 (14.0)</td>
+      <td>53 (9.0)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Age Hyster rel Age MHT</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Same age</td>
+      <td></td>
+      <td>80 (17.2)</td>
+      <td>746 (61.2)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>After</td>
+      <td></td>
+      <td>111 (23.9)</td>
+      <td>296 (24.3)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Before</td>
+      <td></td>
+      <td>274 (58.9)</td>
+      <td>177 (14.5)</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean ± Standard Deviation. Age is given in years. Hysterectomy/hyster included females without bilateral oophorectomy; Oophorectomy/Oopho constitutes bilateral oophorectomy (+/-hysterectomy; no hysterectomy n=X, with hysterectomy n=Y). Abbreviation: N, sample size; GCSE, General Certificate of Secondary Education; CSE, Certificate of Secondary Education; NVQ, National Vocational Qualification; BMI, body mass index; APOE, apolipoprotein. Significant differences between groups based on t/χ2 tests are highlighted in bold._
+
+**Table 3.**
+ Sample demographics of menopausal hormone therapy (MHT) users with prescription data, stratified by estrogen-only MHT or combined MHT use.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estrogens-only</th>
+      <th>Combined</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>224</td>
+      <td>314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years)*</td>
+      <td>66.1±6.6</td>
+      <td>65.5±6.7</td>
+      <td>0.318</td>
+    </tr>
+    <tr>
+      <td>Education N (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.286</td>
+    </tr>
+    <tr>
+      <td>College/University degree</td>
+      <td>104 (46.4)</td>
+      <td>158 (50.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A levels/AS levels or equivalent</td>
+      <td>21 (9.4)</td>
+      <td>29 (9.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>O levels/GCSEs or equivalent</td>
+      <td>45 (20.1)</td>
+      <td>70 (22.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CSEs or equivalent</td>
+      <td>9 (4.0)</td>
+      <td>14 (4.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NVQ/HND/HNC or equivalent</td>
+      <td>5 (2.2)</td>
+      <td>11 (3.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other professional qualifications</td>
+      <td>18 (8.0)</td>
+      <td>16 (5.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None of the above</td>
+      <td>22 (9.8)</td>
+      <td>16 (5.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lifestyle score*</td>
+      <td>1.7±1.2</td>
+      <td>1.8±1.3</td>
+      <td>0.212</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)*</td>
+      <td>26.1±4.1</td>
+      <td>26.1±4.8</td>
+      <td>0.959</td>
+    </tr>
+    <tr>
+      <td>Menopausal Status (%)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>2 (0.9)</td>
+      <td>3 (1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>140 (62.5)</td>
+      <td>285 (90.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not sure – had a hysterectomy</td>
+      <td>77 (34.4)</td>
+      <td>21 (6.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Not sure – other reason</td>
+      <td>5 (2.2)</td>
+      <td>5 (1.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APOE ε4 status, carrier, N (%)</td>
+      <td>64 (29.4)</td>
+      <td>75 (24.8)</td>
+      <td>0.284</td>
+    </tr>
+    <tr>
+      <td>APOE ε4, allele, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>non-carrier</td>
+      <td>154 (70.6)</td>
+      <td>228 (75.2)</td>
+      <td>0.486</td>
+    </tr>
+    <tr>
+      <td>ε3/ ε4</td>
+      <td>59 (27.1)</td>
+      <td>70 (23.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ε4/ ε4</td>
+      <td>5 (2.3)</td>
+      <td>5 (1.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hyster-/Oophorectomy, yes (%)</td>
+      <td>79 (41.1)</td>
+      <td>34 (11.2)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Number of drug regimes</td>
+      <td>1.39 (0.99)</td>
+      <td>2.68 (1.83)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Drug dosage, estrogens (mg)</td>
+      <td>0.3±0.4</td>
+      <td>1.0±0.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Drug dosage, progestin (mg)</td>
+      <td></td>
+      <td>5.4±20.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Duration of use, estrogens (weeks)</td>
+      <td>202.4±197.7</td>
+      <td>244.8±202.2</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Duration of use, progestin (weeks)</td>
+      <td></td>
+      <td>195.2±174.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Route of administration, N (%)</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>oral</td>
+      <td>40 (17.9)</td>
+      <td>193 (61.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transdermal</td>
+      <td>50 (22.3)</td>
+      <td>14 (4.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vaginal</td>
+      <td>109 (48.7)</td>
+      <td>0 (0.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>injectionꞋ</td>
+      <td>4 (1.8)</td>
+      <td>5 (1.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mixed</td>
+      <td>21 (9.4)</td>
+      <td>102 (32.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Estrogens, active ingredient, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate°</td>
+      <td>141 (62.9)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEE</td>
+      <td>18 (8.0)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol°</td>
+      <td>34 (15.2)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol valerate°</td>
+      <td>4 (1.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tibolone</td>
+      <td>0 (0.0)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mixed</td>
+      <td>27 (12.1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Estrogens + Progestins, active ingredient, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate &amp; norethisterone acetate 1</td>
+      <td></td>
+      <td>51 (16.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate &amp; dydrogesterone° 2</td>
+      <td></td>
+      <td>14 (4.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate &amp; norethisterone 1</td>
+      <td></td>
+      <td>13 (4.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate &amp; levonorgestre 2</td>
+      <td></td>
+      <td>2 (0.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol hemihydrate &amp; drospirenone 3</td>
+      <td></td>
+      <td>1 (0.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEE &amp; norgestrel 2</td>
+      <td></td>
+      <td>19 (6.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEE &amp; medroxyprogesterone acetate 1</td>
+      <td></td>
+      <td>10 (3.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CEE &amp; norethisterone1</td>
+      <td></td>
+      <td>2 (0.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol valerate &amp; norethisterone 1</td>
+      <td></td>
+      <td>8 (2.5)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol valerate &amp; levonorgestrel 2</td>
+      <td></td>
+      <td>3 (1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol valerate &amp; medroxyprogesterone acetate 1</td>
+      <td></td>
+      <td>3 (1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol &amp; norethisterone acetate 1</td>
+      <td></td>
+      <td>7 (2.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol &amp; norethisterone 1</td>
+      <td></td>
+      <td>3 (1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>estradiol &amp; progesterone° 1</td>
+      <td></td>
+      <td>2 (0.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>tibolone</td>
+      <td></td>
+      <td>13 (4.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mixed</td>
+      <td></td>
+      <td>163 (51.9)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mean ±Standard Deviation. °Bioidentical form (no circle indicates synthetic form); 1-3=progestin generations; Ꞌincl. subcutaneous and intravenous infections. Abbreviations: N, sample size; GCSE, General Certificate of Secondary Education; CSE, Certificate of Secondary Education; NVQ, National Vocational Qualification; BMI, body mass index; APOE, apolipoprotein; CEE, conjugated equine estrogen. Significant differences between groups based on t/χ2 tests are highlighted in bold._
+
+### MRI data acquisition and processing
 
 A detailed overview of the UK Biobank neuroimaging data acquisition and protocols has been published elsewhere (Alfaro-Almagro et al., 2018; Miller et al., 2016). Harmonized analysis pipelines were used to process raw T1-weighted MRI data for all participants (N=20,540), including automated surface-based morphometry and subcortical segmentation (FreeSurfer, v5.3). To remove poor-quality data likely due to motion, participants with Euler numbers ≥4 standard deviations (SD) (Rosen et al., 2018) below the mean were excluded (n=180), yielding a total of 20,360 participants with T1-weighted MRI data (see Sample characteristics for final sample size).
 
@@ -56,11 +1288,11 @@ Diffusion-weighted MRI data were processed using an optimized diffusion pipeline
 
 Total volume of WMH was derived from T1-weighted and T2-weighted images using BIANCA (FSL, v6.0); a fully automated, supervised method for WMH detection (Griffanti et al., 2016). Preprocessed volumes per participant were exported from the UK Biobank, Field ID: 25781, and log-transformed due to a left-skewed distribution. A total of 19,538 females had data to compute WMH.
 
-## Brain-age prediction
+### Brain-age prediction
 
 In line with our previous studies (Voldsbekk et al., 2021; Schindler et al., 2022), tissue-specific age prediction models in females only were run using XGBoost regression, which is based on a decision-tree ensemble algorithm (https://github.com/dmlc/xgboost; XGBoost, 2025). Hyper-parameters were tuned in nested cross-validations using five inner folds for randomized search and 10 outer folds for model validation. Predicted age estimates were derived using the Scikit-learn library (https://scikit-learn.org), and brain age gap (BAG) values were calculated for each model (predicted – chronological age) to provide estimates of global GM BAG based on T1-weighted data, and global WM BAG based on diffusion-weighted data. The age prediction models were run without a subsample with ICD10 diagnosis known to impact the brain (n=1739, for details see Appendix Note 2), and then applied to the respective group of participants with diagnoses to obtain brain age estimates for the whole sample. This approach was selected to base the prediction models on normative age trajectories, while also including a more representative total sample (females both with and without diagnoses) in the subsequent analyses.
 
-## MHT-related variables
+### MHT-related variables
 
 For the whole sample, general MHT data included user status (never-user, current-user, or past-user), age first started using MHT, age last used MHT, and duration of MHT use (age last used – age first used). In current MHT users, age at last use was set to their age at the imaging assessment to calculate duration of use.
 
@@ -68,29 +1300,37 @@ For a sub-sample, prescription MHT data was extracted from primary care records 
 
 Drug duplicates, meaning the same drug issued on the same date per participant, were excluded. Individuals who switched between regimes were labeled as mixed (see Table 3). Individuals who took MHT after the imaging assessment, based on MHT prescription dates, were excluded (n=6). In total, 538 participants had both detailed MHT and imaging data, and complete data on key demographic variables such as age, education, and menopausal status (see Table 3). Females who had missing data, or had responded ‘do not know,’ ‘prefer not to answer,’ ‘none of the above’ or similar for any of the relevant variables were excluded for the respective analyses. If possible and appropriate, missing data at the imaging time point was replaced with valid data from the baseline assessment. This was the case for the following variables: MHT user status, history of hysterectomy and/or bilateral oophorectomy, and menopausal status. For details on MHT-related variables in the UK Biobank see Supplementary file 1.
 
-## APOE ε genotyping
+### APOE ε genotyping
 
 For genotyping, we used the extensive quality control UK Biobank version 3 imputed data (Bycroft et al., 2018). The APOE ε genotype was approximated based on the two APOE ε single-nucleotide polymorphisms – rs7412 and rs429358 (Lyall et al., 2016). APOE e4 status was labeled carrier for ε3/ε4 and ε4/ε4 combinations, and non-carrier for ε2/ε2, ε2/ε3, and ε3/ε3 combinations. Due to its ambiguity with ε1/ε3, the homozygous ε2/ε4 allele combination was removed (n=484) (Seripa et al., 2007) (https://www.snpedia.com/index.php/APOE). Further information on the genotyping process is available in the UK Biobank documentation.
 
-## Statistical analyses
+### Statistical analyses
 
 The statistical analyses were run using R, v4.2.2. p-values were corrected for multiple comparisons using false discovery rate (FDR) (Benjamini and Hochberg, 1995) correction across all brain measures for all sets of analyses per model (1-3). The sets of FDR corrections are reflected in the corresponding results tables. All variables were standardized prior to performing the regression analyses (subtracting the mean and dividing by the standard deviation). All statistical main and sensitivity analyses by sample and research questions are summarized in Figure 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/99538/elife-99538-fig1-v1.jpg)
 
-## Associations between MHT variables and brain measures in the whole sample
+#### Associations between MHT variables and brain measures in the whole sample
 
 First, we tested for associations between MHT user status (never-user/user) and GM and WM BAG, left and right hippocampus volume, and WMH volume. We further tested whether current and past MHT use, relative to never-use, was associated with the brain measures.
 
-Second, among all MHT users, we assessed associations between age at first use as well as duration of use and brain measures. Among past MHT users, we tested for associations between age at last use and brain measures. In postmenopausal MHT users, we also tested whether age at first and last use in relation to age at menopause (i.e. age started MHT – age at menopause; age last use MHT – age at menopause, respectively) was associated with the brain measures. The following regression models (lm function) were fitted for these analyses, with DV representing each MRI measure (i.e. GM BAG, WM BAG, left and right hippocampus volumes, WMH volume) as dependent variable and IV representing each MHT variable (i.e. MHT user status, age at first use, age at last use, duration of use), as independent variable:(1)DV∼IV+age+education+lifestylescore+BMI+menopausestatus
+Second, among all MHT users, we assessed associations between age at first use as well as duration of use and brain measures. Among past MHT users, we tested for associations between age at last use and brain measures. In postmenopausal MHT users, we also tested whether age at first and last use in relation to age at menopause (i.e. age started MHT – age at menopause; age last use MHT – age at menopause, respectively) was associated with the brain measures. The following regression models (lm function) were fitted for these analyses, with DV representing each MRI measure (i.e. GM BAG, WM BAG, left and right hippocampus volumes, WMH volume) as dependent variable and IV representing each MHT variable (i.e. MHT user status, age at first use, age at last use, duration of use), as independent variable:
+
+$$
+DV∼IV+age+education+lifestylescore+BMI+menopausestatus
+$$
 
 The chosen covariates are known to influence MHT use and brain structure (Beck et al., 2022; de Lange and Cole, 2020; Cox et al., 2018; Ho et al., 2011). The lifestyle score was calculated using a published formula (Foster et al., 2018), and included data on sleep, physical activity, nutrition, smoking, and alcohol consumption (see Appendix Note 3, Supplementary file 2). For these analyses, participants with a history of hysterectomy and/or bilateral oophorectomy were excluded (n=3903), as they might have an increased risk for neurological decline (Phung et al., 2010). Note that Model 1 was not adjusted for menopause status in the analyses only including postmenopausal MHT users.
 
 To test for differences in brain measures between MHT users with a history of hysterectomy without bilateral oophorectomy or bilateral oophorectomy (+/-hysterectomy, proxy of surgical menopause) relative to MHT users without such surgeries, we ran additional regression models within the sample of MHT users using the same model as specified above (model 1).
 
-## Associations between MHT variables and brain measures in a subsample with prescription MHT data
+#### Associations between MHT variables and brain measures in a subsample with prescription MHT data
 
-First, we tested whether MHT formulation (i.e. estrogens-only, estrogens + progestins, none) and route of administration (i.e. oral, transdermal, vaginal, injections, mixed, none) was associated with brain measures. Never-users (dummy-coded as ‘none’) served as a reference group. The following regression model was fitted for these analyses, with DV representing each MRI measure and IV representing MHT formulation or route of administration:(2)DV∼IV+age+education+menopausestatus
+First, we tested whether MHT formulation (i.e. estrogens-only, estrogens + progestins, none) and route of administration (i.e. oral, transdermal, vaginal, injections, mixed, none) was associated with brain measures. Never-users (dummy-coded as ‘none’) served as a reference group. The following regression model was fitted for these analyses, with DV representing each MRI measure and IV representing MHT formulation or route of administration:
+
+$$
+DV∼IV+age+education+menopausestatus
+$$
 
 For these analyses, we only included age, education, and menopause status as covariates to retain the largest possible sample size (n=538; see ‘Sensitivity Analyses’ for follow-up analyses including history of hysterectomy and/or bilateral oophorectomy as an additional covariate).
 
@@ -98,15 +1338,19 @@ In estrogens-only users, we tested whether different active ingredients (i.e. es
 
 In estrogens + progestin users, we also explored whether different active ingredients were associated with brain measures, relative to never-users (see model 2). For this analysis, we only included formulations with N ≥ 10 (see Table 3). We further tested whether bioidentical or synthetic MHT or a mix of both, and progestin generations (i.e. first or second) were associated with brain measures, relative to never-users (see model 2). Third progestin generation users (n=1) were excluded. Among estrogens + progestin users, we further assessed whether duration of estrogens/progestin use (weeks) and drug dosage of estrogens/progestin was differently associated with brain measures. For these models, the estrogens/progestin measures (i.e. duration of use or drug dosage) were included in the same model. The covariates specified in model 2 were included.
 
-## Associations between MHT variables and brain measures by APOE ε4 status
+#### Associations between MHT variables and brain measures by APOE ε4 status
 
-First, we tested for the main effects of APOE ε4 status (i.e. carrier vs non-carrier) and APOE ε4 dose (i.e. non-carrier, ε3/ε4, ε4/ε4) on brain measures, in separate models:(3)DV∼APOEε4+age+education+lifestylescore+BMI+menopausestatus
+First, we tested for the main effects of APOE ε4 status (i.e. carrier vs non-carrier) and APOE ε4 dose (i.e. non-carrier, ε3/ε4, ε4/ε4) on brain measures, in separate models:
+
+$$
+DV∼APOE\epsilon4+age+education+lifestylescore+BMI+menopausestatus
+$$
 
 Similar to model 1, participants with a history of hysterectomy and/or bilateral oophorectomy were excluded for these analyses. Non-carrier served as a reference group.
 
 Second, we re-ran models 1–2 including an APOE ε4 status  × MHT measure interaction term to assess the effects of APOE ε4 status on the associations between MHT variables and brain measures. Main effects for the interaction terms were automatically included in the model.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 To test whether the results were influenced by the inclusion of participants with ICD-10 diagnosis or by non-linear effects of age, the main analyses (models 1–2) were re-run excluding the sub-sample with diagnosed brain disorders (see Appendix Note 2) or adding age (Ding et al., 2013) as additional covariate, respectively. In addition, we re-ran the analyses for MHT formulation and route of administration (model 2) adjusting for a history of hysterectomy and/or bilateral oophorectomy in addition to age, BMI, and lifestyle score (n=460). Since estrogens-only MHTs are commonly prescribed after hysterectomy ±bilateral oophorectomy, we included surgical history as a covariate instead of excluding participants with a surgical history.
 
@@ -116,11 +1360,11 @@ For relevant analyses, the subsample with prescription MHT data was compared to 
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 Sample demographics including lifestyle score, stratified by MHT user group, surgical history among MHT users, and estrogen-only MHT or combined MHT use, are summarized in Tables 1–3, respectively. MHT user group differences for each lifestyle factor contained in the lifestyle score are shown in Supplementary file 2.
 
-## Brain age prediction
+### Brain age prediction
 
 The age prediction accuracy largely corresponded to our previous UK Biobank studies in overlapping samples (Lange et al., 2020; Schindler et al., 2022), as shown in Supplementary file 3. Figure 2 shows the correlations between GM BAG, WM BAG, left and right hippocampus volume, and WMH volume.
 
@@ -128,7 +1372,7 @@ The age prediction accuracy largely corresponded to our previous UK Biobank stud
 
 **Figure 2.:** BAG measures are adjusted for age (Seripa et al., 2007). WM BAG, GM BAG, and hippocampal volumes were available for 20,360 individuals, and 19,538 had data on WMH volume.
 
-## Associations between MHT variables and brain measures in the whole sample
+### Associations between MHT variables and brain measures in the whole sample
 
 In the whole sample, MHT users showed higher GM BAG (i.e. older brain age relative to chronological age; β = 0.034, p = 6.74e-05, pFDR = 0.001) and lower left hippocampal volume (β = −0.02, p = 0.006, pFDR = 0.02) compared to never-users (Supplementary file 4). As shown in Figure 3, stratifying the sample into never-, past-, and current-users showed statistically significant higher GM and WM BAG and lower left and right hippocampal volumes in current users compared to never-users, but no significant difference in past-users relative to never-users. For WMH volume, there were no significant differences between current and past MHT users relative to never-users, respectively (Supplementary file 4, Figure 3).
 
@@ -144,13 +1388,13 @@ MHT use with a history of hysterectomy ± bilateral oophorectomy was associated 
 
 **Figure 4.:** Point plot of estimated marginal means with standard errors from separate regression analysis with MRI measure as dependent variable and history of hysterectomy and/or bilateral oophorectomy as independent (categorical) variable. MHT users without such surgical history served as a reference group. Brain measures include white matter (WM) and gray matter (GM) brain age gap (BAG) as well as left and right hippocampal volumes and total white matter hyperintensity (WMH) volume. Sample sizes were as follows: hysterectomy only (no, n = 5522; yes, n = 546) and bilateral oophorectomy +/- hysterectomy (no, n = 6513; yes, n = 1412). The models were adjusted for age, education, body mass index, lifestyle score, and menopausal status. All variables were standardized prior to performing the regression analysis (subtracting the mean and dividing by the standard deviation). Stars indicate significant associations. Significance codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’.
 
-## Associations between MHT variables and brain measures in a subsample with prescription MHT data
+### Associations between MHT variables and brain measures in a subsample with prescription MHT data
 
 We found no significant associations between MHT formulation, route of administration, MHT type (i.e. bioidentical vs synthetic), MHT active ingredients, progestin generation, dosage, duration of use, and brain measures after adjusting for multiple comparisons (Supplementary file 5).
 
 Before adjusting for multiple comparisons, we observed higher WM BAG in estrogens + progestin users relative to never-users (β = 0.127, p = 0.026, pFDR = 0.832). Users of CEE + MPA (β = 0.634, p = 0.045, pFDR = 0.994) as well as mixed active ingredients (β = 0.179, p = 0.023, pFDR = 0.832) showed higher WM BAG compared to never-users, and oral users showed higher WMH volume (β = 0.134, p = 0.020, pFDR = 0.832). We further observed an association between longer duration of estrogens use and lower WMH volume in estrogens-only users relative to never-users (β = −0.146, p = 0.028, pFDR = 0.832). In estrogens + progestin users, longer duration of estrogens use was trend-level associated with lower left and right hippocampal volumes (left: β = −0.149, p = 0.031, pFDR = 0.832; right: β = −0.165, p = 0.015, pFDR = 0.832).
 
-## Associations between MHT variables and brain measures by APOE ε4 status
+### Associations between MHT variables and brain measures by APOE ε4 status
 
 We found significantly lower right hippocampal volumes in carriers of two APOE ε4 alleles compared to non-carriers (Figure 5). We also observed higher GM BAG and lower left hippocampus volumes in APOE ε4-carriers relative to non-carriers (Supplementary file 6), but these effects were not significant after adjusting for multiple comparisons. We found no significant interactions between APOE ε4 status and MHT variables on brain measures after adjusting for multiple comparisons, both for the analyses including the whole sample (Supplementary file 7) and for the MHT prescription sample (Supplementary file 8).
 
@@ -160,7 +1404,7 @@ We found significantly lower right hippocampal volumes in carriers of two APOE �
 
 Before adjusting for multiple comparisons, we observed a trend-level interaction between APOE ε4 status and MHT use in participants with a hysterectomy without oophorectomy on WMH volume (β = −0.025, p = 0.046, pFDR = 0.927) in the whole sample. In the prescription sample, we observed several interactions between APOE ε4 status and MHT variables on brain measures before FDR correction. For example, mixed estrogens-only use showed an interaction with APOE ε4 status on right hippocampus volume (β = −0.491, p = 0.032, pFDR = 0.511), indicative of smaller volumes in APOE ε4 carriers relative to non-carriers. We also observed an interaction between APOE ε4 status and synthetic estrogens + progestin use on GM BAG (β = −0.512, p = 0.020, pFDR = 0.449), left hippocampus volume (β = 0.502, p = 0.016, pFDR = 0.449), and WMH volume (β = −0.412, p = 0.029, pFDR = 0.449), suggesting lower GM BAG, larger left hippocampus volume, and lower WMH volume in APOE ε4 carriers compared with non-carriers. Please see Appendix Note 4 for the results of all models including APOE ε4 in the prescription sample.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 The results were consistent after removing participants with ICD-10 diagnoses known to impact the brain (see Supplementary file 9 for model 1 analyses and Supplementary file 10 for model 2 analyses), after additionally adjusting for age (see Supplementary file 11), and after removing extreme values (see Supplementary file 12 for model 1 analyses). Detected extreme values are highlighted in Supplementary file 13. Similarly, additionally adjusting for BMI, lifestyle score, and history of hysterectomy and/or bilateral oophorectomy (model 2, Supplementary file 14) or matching never-users to MHT users did not alter the results for the prescription dataset (model 2, Supplementary file 15).
 
@@ -184,6 +1428,6 @@ The current work represents the most comprehensive study of detailed MHT data, A
 
 In conclusion, our findings suggest that associations between MHT use and female brain health might vary depending on duration of use and past surgical history. Although the effect sizes were generally modest, future longitudinal studies and RCTs, particularly focused on the perimenopausal transition window, are warranted to fully understand how MHT use influences female brain health. Importantly, considering risks and benefits, decisions regarding MHT use should be made within the clinical context unique to each individual.
 
-## Data availability statement
+### Data availability statement
 
 This research has been conducted using the UKB under Application 27412. The data that support the findings of this study are available through the UK Biobank application procedure (https://www.ukbiobank.ac.uk/enable-your-research/register). Code to extract prescription MHT data from primary care records (https://github.com/MelisAnaturk/dementia_risk_score/tree/main/scripts) and to run brain age prediction (https://github.com/dmlc/xgboost) is available on Github.

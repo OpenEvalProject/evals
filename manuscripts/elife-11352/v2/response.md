@@ -91,8 +91,6 @@ This is an interesting question. On a strictly locomotor basis, the darts we obs
 
 It makes sense that the lighter an animal is, the more easily it could move around, thus making it more likely to dart. To address the possibility that lower weight predisposed animals to darting, we compared body weight between Darters and Non-Darters, but found no significant differences (Author response image 1). Although males clearly weigh more than females, we feel these data suggest that weight alone cannot account for the incidence of darting.
 
-DOI: http://dx.doi.org/10.7554/eLife.11352.009
-
 Reviewer #3:
 
 It would be useful to compare the darting behavior to freezing behavior more directly in Figure 1. Specifically, it would be helpful to see similar graphics for Figure 1c, d, and e for freezing behavior to visualize the similarity and differences in darting and freezing across training trials.
@@ -109,13 +107,9 @@ In Figure 1, female rats exhibit greater darts/min as compared to male rats in c
 
 As we note in the second paragraph of the manuscript Introduction, there is a vast literature demonstrating heightened locomotor activity in females compared to males. When we examine baseline pre-CS locomotor activity (measured as mean velocity in cm/s), we also observe higher mean velocities in females ( Author response image 2, p<0.0001, unpaired t-test). However, baseline locomotor activity was not different between Darters and Non-darters in either sex, suggesting that locomotor activity does not predict the likelihood of darting.
 
-DOI: http://dx.doi.org/10.7554/eLife.11352.010
-
 To strengthen their argument, the authors should not only compare dart rate extinction between female and male rats but they should also compare the freezing behaviors for both male and female rats as well (Figure 2i and j).
 
 We have previously compared freezing during extinction in males and females, and find no overall sex differences in extinction (Rey et Al., 2014; Gruene et al., 2015). Although general sex differences in freezing during extinction was not the focus of the current manuscript, we have provided those data below. We find a slight but significant main effect of sex in freezing extinction learning (F1,112=4.02, p=0.048, 2-way repeated measures ANOVA). We believe the discrepancy between this result and our previous findings is due to the considerable statistical power conferred by n’s of ~60/sex. We do not observe an effect of sex in extinction retrieval (F1,112=1.84, p=0.18, 2-way repeated measures ANOVA). Data are represented in Author response image 3.
-
-DOI: http://dx.doi.org/10.7554/eLife.11352.011
 
 In Figure 3i, there are no significant differences in the dart rate during extinction training (20CS) yet significance is indicated (****).
 

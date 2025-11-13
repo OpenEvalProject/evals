@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Program in Innate Immunity, Division of Infectious Diseases and Immunology, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/0464eyp60 Program in Chemical Biology, University of Massachusetts Chan Medical School Worcester United States
-3. https://ror.org/0464eyp60 RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States
+1. Program in Innate Immunity, Division of Infectious Diseases and Immunology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Program in Chemical Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+3. RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
 ## Abstract
 
-Intracellular signaling regulators can be concentrated into membrane-free, higher ordered protein assemblies to initiate protective responses during stress — a process known as phase transition. Here, we show that a phase transition of the Caenorhabditis elegans Toll/interleukin-1 receptor domain protein (TIR-1), an NAD + glycohydrolase homologous to mammalian sterile alpha and TIR motif-containing 1 (SARM1), underlies p38 PMK-1 immune pathway activation in C. elegans intestinal epithelial cells. Through visualization of fluorescently labeled TIR-1/SARM1 protein, we demonstrate that physiologic stresses, both pathogen and non-pathogen, induce multimerization of TIR-1/SARM1 into visible puncta within intestinal epithelial cells. In vitro enzyme kinetic analyses revealed that, like mammalian SARM1, the NAD + glycohydrolase activity of C. elegans TIR-1 is dramatically potentiated by protein oligomerization and a phase transition. Accordingly, C. elegans with genetic mutations that specifically block either multimerization or the NAD + glycohydrolase activity of TIR-1/SARM1 fail to induce p38 PMK phosphorylation, are unable to increase immune effector expression, and are dramatically susceptible to bacterial infection. Finally, we demonstrate that a loss-of-function mutation in nhr-8 , which alters cholesterol metabolism and is used to study conditions of sterol deficiency, causes TIR-1/SARM1 to oligomerize into puncta in intestinal epithelial cells. Cholesterol scarcity increases p38 PMK-1 phosphorylation, primes immune effector induction in a manner that requires TIR-1/SARM1 oligomerization and its intrinsic NAD + glycohydrolase activity, and reduces pathogen accumulation in the intestine during a subsequent infection. These data reveal a new adaptive response that allows a metazoan host to anticipate pathogen threats during cholesterol deprivation, a time of relative susceptibility to infection. Thus, a phase transition of TIR-1/SARM1 as a prerequisite for its NAD + glycohydrolase activity is strongly conserved across millions of years of evolution and is essential for diverse physiological processes in multiple cell types.
+Intracellular signaling regulators can be concentrated into membrane-free, higher ordered protein assemblies to initiate protective responses during stress — a process known as phase transition. Here, we show that a phase transition of the Caenorhabditis elegans Toll/interleukin-1 receptor domain protein (TIR-1), an NAD+ glycohydrolase homologous to mammalian sterile alpha and TIR motif-containing 1 (SARM1), underlies p38 PMK-1 immune pathway activation in C. elegans intestinal epithelial cells. Through visualization of fluorescently labeled TIR-1/SARM1 protein, we demonstrate that physiologic stresses, both pathogen and non-pathogen, induce multimerization of TIR-1/SARM1 into visible puncta within intestinal epithelial cells. In vitro enzyme kinetic analyses revealed that, like mammalian SARM1, the NAD+ glycohydrolase activity of C. elegans TIR-1 is dramatically potentiated by protein oligomerization and a phase transition. Accordingly, C. elegans with genetic mutations that specifically block either multimerization or the NAD+ glycohydrolase activity of TIR-1/SARM1 fail to induce p38 PMK phosphorylation, are unable to increase immune effector expression, and are dramatically susceptible to bacterial infection. Finally, we demonstrate that a loss-of-function mutation in nhr-8, which alters cholesterol metabolism and is used to study conditions of sterol deficiency, causes TIR-1/SARM1 to oligomerize into puncta in intestinal epithelial cells. Cholesterol scarcity increases p38 PMK-1 phosphorylation, primes immune effector induction in a manner that requires TIR-1/SARM1 oligomerization and its intrinsic NAD+ glycohydrolase activity, and reduces pathogen accumulation in the intestine during a subsequent infection. These data reveal a new adaptive response that allows a metazoan host to anticipate pathogen threats during cholesterol deprivation, a time of relative susceptibility to infection. Thus, a phase transition of TIR-1/SARM1 as a prerequisite for its NAD+ glycohydrolase activity is strongly conserved across millions of years of evolution and is essential for diverse physiological processes in multiple cell types.
 
 ## Introduction
 
@@ -33,17 +33,37 @@ We also report that a loss-of-function mutation in nhr-8, which alters cholester
 
 ## Results
 
-## Multimerization of TIR-1/SARM1 and its intrinsic NAD+ glycohydrolase activity are required for activation of the p38 PMK-1 innate immune pathway during pathogen infection
+### Multimerization of TIR-1/SARM1 and its intrinsic NAD+ glycohydrolase activity are required for activation of the p38 PMK-1 innate immune pathway during pathogen infection
 
 To determine if C. elegans TIR-1/SARM1 multimerizes to activate the p38 PMK-1 innate immune pathway, we used CRISPR/Cas9 to insert the fluorescent protein wrmScarlet at the C-terminus of the endogenous C. elegans tir-1 locus, which labeled all tir-1 isoforms. In uninfected animals, TIR-1::wrmScarlet is barely detectable in intestinal epithelial cells (Figure 1A). However, P. aeruginosa infection caused TIR-1::wrmScarlet to multimerize into visible puncta within intestinal epithelial cells (Figure 1A and B). We distinguished TIR-1::wrmScarlet puncta from autofluorescent gut granules by comparing images in the red and green fluorescence channels. TIR-1::wrmScarlet puncta are those that are seen in the red, but not the green fluorescence channel (arrowheads in Figure 1A), as opposed to gut granules, which can be seen in both channels (asterisks in Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig1-v3.jpg)
+
+**Figure 1.:** (A) Images of animals expressing TIR-1::wrmScarlet in the indicated conditions. All tir-1::wrmScarlet animals were treated with glo-3(RNAi) to deplete autofluorescent gut granules. Representative images for each condition are displayed. Red fluorescent channel images display both TIR-1::wrmScarlet fluorescence and autofluorescent signal, while the green fluorescent channel images only display signals from autofluorescent gut granules. TIR-1::wrmScarlet puncta are indicated by arrowheads and autofluorescent gut granules by asterisks. Scale bar equals 20 μm (2 μm for the inset enlarged images). (B) The number of puncta present in the last posterior pair of intestinal epithelial cells in the red (tir-1::wrmScarlet), but not the green (autofluorescence) fluorescent channels were quantified using Fiji image analysis software. Each data point is the number of TIR-1::wrmScarlet puncta from one animal. The n is indicated for each condition. *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing). (C) Model of tir-1 showing the domains and the mutations that were introduced using CRISPR-Cas9. (D) Expression of the innate immune effector T24B8.5p::gfp in tir-1 mutants with predicted defects in oligomerization (tir-1ΔSAM, tir-1G747P and tir-1H833A) and NADase catalytic activity (tir-1E788A) during P. aeruginosa infection. Scale bar equals 200 μm. (E) Immunoblot analysis of lysates from the indicated genotypes probed with antibodies targeting the doubly phosphorylated TGY epitope in phosphorylated PMK-1 (phos-PMK-1), total PMK-1 protein (total PMK-1), and tubulin (α-tubulin). nsy-1(ag3) and pmk-1(km25) loss-of-function mutants are the controls, which confirm the specificity of the phospho-PMK-1 probing. (F) The band intensities of three biological replicates of the Western blot shown in (E) were quantified. Error bars reflect SEM. *equals p < 0.05 (one-way ANOVA with Dunnett multiple comparison testing). (G) C. elegans pathogenesis assay with P. aeruginosa and C. elegans of indicated genotypes at the L4 larval stage are shown. Data are representative of three trials. Difference between wild-type and all tir-1 mutants is significant (p < 0.05). The Kaplan-Meier method was used to estimate the survival curves for each group, and the log-rank test was used for all statistical comparisons. Sample sizes, mean lifespan and p-values for all trials are shown in Supplementary file 4. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunoblot analysis of lysates from the indicated genotypes probed with an antibody that recognizes the FLAG epitope. (B) Images of T24B8.5p::gfp immune reporter expression in the indicated genotypes. Scale bars in all images equal 200 μm. See also Figure 1.
 
 C. elegans TIR-1 protein has three characterized domains: a Heat/Armadillo repeat domain, a sterile alpha motif (SAM) domain, and a Toll-interleukin receptor (TIR) domain (Chuang and Bargmann, 2005; Figure 1C). C. elegans TIR-1 oligomerizes in vitro through interactions of its SAM domains (Horsefield et al., 2019). We used CRISPR-Cas9 to delete both SAM domains in tir-1 (tir-1ΔSAM) and to generate point mutants in two residues within the C. elegans TIR domain that are important for the self-association and activity of mammalian SARM1 (C. elegans tir-1G747P and tir-1H833A) (Horsefield et al., 2019; Figure 1D). The C. elegans tir-1ΔSAM, tir-1G747P and tir-1H833A mutants prevented activation of the p38 PMK-1-dependent immune reporter T24B8.5p::gfp in animals infected with P. aeruginosa (Figure 1D). Consistent with these data, the tir-1ΔSAM, tir-1G747P and tir-1H833A mutants have reduced levels of active, phosphorylated p38 PMK-1, equivalent to the tir-1(qd4) null allele (Shivers et al., 2009; Figure 1E and F). Additionally, these mutants are each markedly hypersusceptible to P. aeruginosa infection (Figure 1G).
 
 The TIR domain of C. elegans, TIR-1, and its mammalian homolog, SARM1, possess intrinsic NADase activity (Essuman et al., 2017; Horsefield et al., 2019; Summers et al., 2016). Importantly, oligomerization of mammalian SARM1 and C. elegans TIR-1 is required for maximal NADase activity in vitro (Horsefield et al., 2019). The NADase activity in the TIR domain of mammalian SARM1 requires a putative catalytic glutamate residue (Essuman et al., 2017). We used CRISPR-Cas9 to mutate the homologous glutamate in C. elegans tir-1 (tir-1E788A) and found that it was required for the immunostimulatory activity of tir-1 – tir-1E788A mutants do not induce T24B8.5p::gfp following P. aeruginosa infection (Figure 1D), had less active, phosphorylated p38 PMK-1 (Figure 1E and F), and were more susceptible to P. aeruginosa infection (Figure 1G). We confirmed that tir-1E788A, tir-1ΔSAM and tir-1G747P mutants are translated and not degraded by introducing a 3xFLAG tag at the C-terminus of each mutant using CRISPR-Cas9 (Figure 1—figure supplement 1A and B) and probing for epitope-tagged mutant protein in western blots with an anti-FLAG antibody (Figure 1—figure supplement 1A). In addition, the 3xFLAG-tagged wild-type TIR-1 expressed T24B8.5p::gfp, but the tagged mutant TIR-1 proteins did not (Figure 1—figure supplement 1B). Collectively, these data demonstrate that multimerization of TIR-1 and its intrinsic NADase activity are required to activate the p38 PMK-1 innate immune pathway in the intestine during pathogen infection.
 
-## TIR multimerization and phase transition superactivates its intrinsic NAD+ glycohydrolase activity
+### TIR multimerization and phase transition superactivates its intrinsic NAD+ glycohydrolase activity
 
 To further characterize the mechanism of TIR-1/SARM1 activation, we recombinantly expressed and purified the TIR domain of the TIR-1 protein (called TIR) from E. coli and evaluated its NADase activity in vitro using an etheno-NAD+ (ε-NAD) activity assay, in which hydrolysis of the nicotinamide moiety of ε-NAD leads to an increase in fluorescence. Interestingly, purified TIR only shows very modest NADase activity even at high protein concentrations ( > 15 μM) (Figure 2A). Notably, the NADase activity of TIR increased parabolically with increasing TIR concentrations rather than linearly, suggesting that multimerization of TIR-1 potentiates its NADase activity (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig2-v3.jpg)
+
+**Figure 2.:** (A) NADase activity of purified TIR at increasing TIR protein concentrations is shown. Activity was assessed by incubating TIR protein with 1 mM ε-NAD and monitoring the rate at which the fluorescent product ε-ADPR was produced. Curve represents a nonlinear regression fit of the NADase activity data points (n = 2). (B) NADase activity of 2.5 μM TIR incubated in the presence of 25% (w/v) of macro- (PEG 8000, PEG 3350, and dextran) and micro- (sucrose and glycerol) viscogens was assessed as described in A (n = 2). (C) Dose dependency of macroviscogens on the NADase activity of TIR is shown. A total of 2.5 μM TIR protein was incubated with the indicated PEG compounds at concentrations from 0% to 30% (w/v). NADase activity was assessed as described in A (n = 2). (D) Steady-state kinetic analysis of 2.5 µM TIR incubated in 0–30% (w/v) of PEG 3350 with the ε-NAD substrate at concentrations from 0 to 4000 μM was assessed as described in A. (n = 2). From the steady-state kinetic analysis performed in D, Km(E), kcat (F), and kcat/Km (G) were determined at each PEG 3350 concentration. (H) SDS-PAGE analysis of TIR protein fractions incubated with increasing concentrations of PEG 3350 precentrifugation (C) and after centrifugation, the soluble (S) and pellet (P) protein fractions. NADase activity of TIR protein in each fraction and at each concentration of PEG 3350 was assessed, as described in A, and is represented below the gel image (n = 2, representative image shown). (I) Steady-state kinetic analysis of TIR wild-type, oligomerization mutants (TIRG747P and TIRH833A), and catalytic mutants (TIRE788Q and TIRE788A) in 25% PEG 3350 with 0–2000 μM ε-NAD was assessed as described in D. The inset image outlined in red is an enlarged image of the mutant kinetic data. Kinetic parameters (Km, kcat, and kcat/Km) are shown in the table below the graph (n = 3). (J, K) SDS-PAGE analysis of TIR wild-type, oligomerization mutant (TIRG747P) and catalytic mutants (TIRE788Q and TIRE788A) precipitation in the presence of 25% PEG 3350. Gel represents the soluble (S) and pellet (P) protein fractions of wild-type and mutant TIR following incubation with PEG 3350 and centrifugation. TIRG747P and TIRE788Q were assessed with 10 μM protein in J, and TIRE788A was assessed with 3 μM protein in K (a lower concentration was used for TIRE788A assays because the yield of the purified TIRE788A mutant was low). Quantification of replicates represented below gel images (n = 4, representative images shown). *equals p < 0.05 by one-way ANOVA in J and unpaired t-test in K. (L) Effect of 1,6-hexanediol on TIR NADase activity is shown. TIR protein was incubated in the presence or absence of either 25% PEG 3350 or 500 mM citrate and treated with either 0 or 2% 1,6-hexanediol. The NADase activity of TIR for each condition was assessed using the ε-NAD substrate assay (n = 3). *equals p < 0.05 (unpaired t-test). (M) The NADase activity of TIR protein incubated with either 25% PEG 3350 or 500 mM citrate before (precentrifugation, n = 2) and after centrifugation, the supernatant (n = 4) and precipitant (n = 2) fractions. Precipitation fractions were resuspended in buffer alone or buffer containing 25% PEG 3350 or 500 mM citrate, and NADase activity was assessed. (N) Negative stain electron microscopy in either the absence or presence of 500 mM citrate (diameter of particles = 8.9 nm ± 1.2, n = 65). Representative circular particles are labeled with arrowheads. All error bars reflect SEM. See also Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Enzyme concentration dependence in the presence and absence of either 25 % PEG 3350 or 500 mM sodium citrate (n = 2). (B) Dose-dependence of TIR NADase activity on citrate concentration as described in Figure 2C, except using citrate (n = 2). (C) Steady-state kinetic analysis of TIR as described in Figure 2D, except in the presence of citrate (n = 2). (D–F) From the steady-state kinetic analysis performed in (C), Km(D), kcat (E), and kcat/Km (F) were determined at each citrate concentration. (G) Effect of citrate on TIR aggregation and associated activity as described in Figure 2H (n = 2, representative images shown). (H) Steady-state kinetic analysis of TIR mutants as described in Figure 2I, except in the presence of citrate (n = 3). (I, J) Precipitation of TIR mutants as described in Figure 2J and K, except in the presence of citrate (n = 4, representative images shown). See also Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) SDS-PAGE analysis of TIR protein incubated first with 25% PEG 3350 or 500 mM citrate and subsequently with 2% 1,6-hexanediol; analysis was performed on TIR samples taken precentrifugation (C) or on the soluble (S) and pellet (P) fractions taken after centrifugation (n = 2, representative image shown). (B) SDS-PAGE analysis of TIR protein incubated first with 0 or 2% 1,6-hexanediol and subsequently with 25% PEG 3350 or 500 mM citrate (n = 2, representative image shown); analysis of protein fractions as in (A). (C) SDS-PAGE analysis of TIR protein in the soluble (S) and pellet (P) fractions following incubation with either PEG 3350 or citrate and centrifugation (one spin). Pellet fractions were subsequently resuspended in only buffer or buffer containing 25% PEG 3350 or 500 mM citrate and centrifuged a second time to isolate the soluble (S) and pellet (P) fractions (n = 2, representative image shown). (D) SDS-PAGE analysis of TIR in the soluble (S) and pellet (P) fractions incubated with or without 25% PEG 3350 at the indicated pH (n = 2, representative image shown). TIR steady-state kinetic parameters Km (E), kcat (F), kcat/Km (G) are shown at the indicated pH (n = 2). See also Figure 2.
 
 Given that high concentrations of TIR are required to observe NADase activity, we hypothesized that molecular crowding might activate the enzyme. Therefore, we assessed the effect of several macro- and microviscogens on TIR activity. Macroviscogens reduce the free volume available for protein movement and thus promote aggregation of protein complexes that are capable of self-association (Gadda and Sobrado, 2018; Blacklow et al., 1988). Importantly, macroviscogens have minimal impact on the rate of diffusion of small molecules. By contrast, microviscogens, which are much smaller than most enzymes, affect the diffusion of substrates in solution and, thus, the frequency at which enzymes encounter their substrate (Blacklow et al., 1988). Interestingly, macroviscogens (polyethylene glycol [PEG] 3350 and PEG 8000), but not microviscogens (sucrose or glycerol), dramatically increased the NADase activity of TIR (Figure 2B). These effects were most pronounced with higher molecular weight PEGs, as treatment with smaller molecular weight PEGs (e.g. PEG 1500 and PEG 400) did not increase the enzymatic activity of TIR (Figure 2C). Specifically, PEGs 3350 and 8000 increase TIR activity in a concentration-dependent manner (Figure 2C). Crowding agents also increase the activity of the TIR domain of human SARM1, as well as plant TIR domains (Horsefield et al., 2019; Loring et al., 2021), suggesting that the mechanism of TIR regulation is strongly conserved.
 
@@ -65,9 +85,17 @@ Next, we evaluated the effect of pH on TIR precipitation and NADase activity. Th
 
 We performed negative stain electron microscopy to directly visualize TIR aggregation in vitro (Figure 2N). Protein visualization is not possible with PEG because macroviscogens themselves are stained, confounding image analysis. Therefore, we performed this experiment with citrate. In the absence of citrate, we observed borderline fibrillar structures and protein aggregates, but overall, there were no consistent structures (Figure 2N). However, in the presence of citrate, circular particles emerged (Figure 2N). These data corroborate our discovery that TIR-1::wrmScarlet aggregates in vivo into visible puncta within intestinal epithelial cells (Figure 1A).
 
-## Cholesterol deficiency activates the C. elegans p38 immune pathway through the multimerization and NADase activity of TIR-1/SARM1
+### Cholesterol deficiency activates the C. elegans p38 immune pathway through the multimerization and NADase activity of TIR-1/SARM1
 
 C. elegans is a sterol auxotroph and requires dietary sterols for development, lifespan, fecundity, and resistance to pathogen infection (Hieb and Rothstein, 1968; Chitwood, 1999; Shim et al., 2002; Merris et al., 2003; Yochem et al., 1999; Otarigho and Aballay, 2020; Cheong et al., 2011). As such, 5 μg/mL of cholesterol is a standard additive in C. elegans laboratory growth medium (Brenner, 1974). We found that C. elegans grown in the absence of cholesterol supplementation activated GFP-based transcriptional reporters for two putative immune effector genes, T24B8.5p::gfp and irg-5p::gfp (Figure 3A and B). T24B8.5 and irg-5 are expressed in the intestine, induced during infection with multiple pathogens, including P. aeruginosa, and controlled by the p38 PMK-1 innate immune pathway (Troemel et al., 2006; Shivers et al., 2009; Bolz et al., 2010). qRT-PCR studies confirmed that C. elegans in a low cholesterol environment upregulate T24B8.5 and irg-5, as well as other innate immune effector genes (irg-4 and K08D8.4) (Figure 3C). These data suggest that host defense pathways are activated in the absence of pathogen infection when environmental sterols are scarce.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig3-v3.jpg)
+
+**Figure 3.:** Images of T24B8.5p::gfp (A) and irg-5p::GFP (B) transcriptional immune reporters in wild-type animals grown on standard nematode growth media ( + 5 μg/mL cholesterol) and in the absence of supplemented cholesterol ( + 0 μg/mL cholesterol). (C) qRT-PCR data of the indicated innate immune effector genes in wild-type C. elegans grown in the presence ( + 5 μg/mL) and absence ( + 0 μg/mL) of supplemented cholesterol. *equals p < 0.05 (unpaired t-test). (D and E) Data from mRNA-seq experiments comparing genes differentially regulated in uninfected nhr-8(hd117) mutants versus wild-type animals (D) or uninfected wild-type animals grown in the absence (0 μg/mL) versus presence (5 μg/mL) of supplemental cholesterol (E) (y-axis) are compared with genes differentially expressed in wild-type animals during P. aeruginosa infection (x-axis). All genes are shown in gray. Genes that are differentially expressed in both datasets are shown in black (Fold change >2, q < 0.01). Genes that are annotated as innate immune genes are shown in red. The location of the representative genes T24B8.5, irg-5, irg-4, and K08D8.4, whose expression is examined throughout this manuscript, are shown. (Of note, in the 0 μg/mL cholesterol mRNA-seq data set K08D8.4 did not meet our cut-off threshold, although was significantly upregulated, fold change = 1.79, q = 5.6 × 10–4). See also Supplementary files 1-3. (F, G, H) Images of T24B8.5p::gfp animals of the indicated genotypes grown under the indicated conditions are shown. (H) C. elegans were grown on media solidified with agarose rather than agar. (I, J, K, L) qRT-PCR data of the indicated genes in wild-type and nhr-8(hd117) mutant animals grown on standard nematode growth media ( + 5 μg/mL cholesterol) in the presence or absence of 0.1% Tergitol, as indicated. For the qRT-PCR studies in (C, I, J, K and L), data are the average of three to six independent biological replicates, each normalized to a control gene with error bars representing SEM and are presented as the value relative to the average expression from all replicates of the indicated gene in wild-type animals on standard nematode growth media ( + 5 μg/mL cholesterol). *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing). (M, N) Survival curves for C. elegans pathogenesis assays with P. aeruginosa and C. elegans of the indicated genotypes at the L4 larval stage and exposed to the indicated conditions. Data are representative of three trials. The difference between the nhr-8(hd117) mutant and the other conditions in both M and N is significant (p < 0.05). The Kaplan-Meier method was used to estimate the survival curves for each group, and the log-rank test was used for all statistical comparisons. Sample sizes, mean lifespan and p-values for all trials are shown in Supplementary file 4. (O) P. aeruginosa, isolated from the intestines of animals with the indicated genotypes, were quantified after 24 hr of bacterial infection. Data are colony-forming units (CFU) of P. aeruginosa and are presented as the average of 10 separate biological replicates, with each replicate containing 10–11 animals. *equals p < 0.05 (unpaired t-test). Scale bars in all images equal 200 μm. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) An mRNA-seq experiment as described in Figure 3D, except using a different nhr-8 mutant allele: nhr-8(ok186). (B) Data from mRNA-seq experiments as described in Figure 3D, except comparing genes differentially regulated in uninfected nhr-8(hd117) mutants versus wild-type animals (y-axis) with genes differentially expressed in uninfected wild-type animals grown in the absence (0 μg/mL) versus presence (5 μg/mL) of supplemental cholesterol (x-axis). (C) Images of T24B8.5p::gfp animals as described in Figure 3G. (D) Images of T24B8.5p::gfp on agarose media with 0.1% Tergitol in the presence of supplemented fatty acids, as indicated. See also Figure 3.
 
 The nuclear hormone receptor, NHR-8, a homolog of mammalian liver X receptor (LXR) and pregnane X receptor (PXR), is required for the transport, distribution, and metabolism of cholesterol in C. elegans (Magner et al., 2013; Lindblom et al., 2001). Thus, nhr-8 loss-of-function mutant strains can be used as genetic tools to study conditions of low sterol content. Two previously characterized nhr-8 null alleles are nhr-8(hd117), which lacks the first exon (Magner et al., 2013) and nhr-8(ok186), which is missing most of the ligand-binding domain (Lindblom et al., 2001). Notably, the transcription profile of nhr-8(hd117) and nhr-8(ok186) animals mimics that of wild-type C. elegans infected with the bacterial pathogen P. aeruginosa (Figure 3D, Figure 3—figure supplement 1A, Supplementary files 1 and 2). The correlation between the transcriptional signatures of either the nhr-8(hd117) or the nhr-8(ok186) mutant with the genes that are changed in wild-type animals during pathogen infection was significant across all genes (r = 0.311 and r = 0.370, respectively). Of note, the correlation between these datasets is tighter when comparing only the differentially expressed genes (r = 0.763 and r = 0.849, respectively) and only genes that are also involved in innate immunity (r = 0.677 and r = 0.703, respectively) (Figure 3D and Figure 3—figure supplement 1A). Among the immune effectors that are upregulated in both the nhr-8(hd117) and nhr-8(ok186) mutants, and in wild type animals infected with P. aeruginosa, are T24B8.5, irg-4, irg-5, and K08D8.4; the same genes whose transcription are also induced by cholesterol deprivation (Figure 3C and D, and Figure 3—figure supplement 1A).
 
@@ -79,6 +107,14 @@ It has been previously shown that wild-type C. elegans raised on media without s
 
 Additional analyses of the transcriptome profiling data revealed that targets of the p38 PMK-1 innate immune pathway were strongly enriched among the genes induced in wild-type animals during cholesterol deprivation (Figure 4A). Accordingly, the levels of active, phosphorylated PMK-1 were higher in wild-type animals grown on media without supplemented cholesterol than in animals grown under standard culture conditions (Figure 4B and C). Consistent with these data, the p38 PMK-1 pathway is also activated in nhr-8 loss-of-function mutants. A gene set enrichment analysis of the nhr-8(hd117) and nhr-8(ok186) transcriptome profiling experiments revealed strong enrichment of p38 PMK-1 pathway targets among the genes upregulated in each nhr-8 mutant (Figure 4D and Figure 4—figure supplement 1A). In addition, the nhr-8(hd117) and nhr-8(ok186) mutants had an increased ratio of phosphorylated PMK-1 relative to total PMK-1 compared to wild-type controls (Figure 4E and F). RNAi-mediated knockdown of tir-1, the most upstream component of the p38 signaling cassette (Liberati et al., 2004; Couillault et al., 2004), fully suppressed hyperactivation of T24B8.5p::gfp in nhr-8(hd117) animals (Figure 4G). The tir-1(qd4) loss-of-function mutation completely suppressed the induction of T24B8.5, irg-4, irg-5, and K08D8.4 in the nhr-8(hd117) background (Figure 4H–K). The transcription factors ATF-7 and SKN-1 link PMK-1 activity to its transcriptional outputs (Shivers et al., 2010; Inoue et al., 2005). In nhr-8(hd117) animals, knockdown of atf-7, but not skn-1, abrogated T24B8.5p::gfp activation (Figure 4G and Figure 4—figure supplement 1B and C). Finally, to further support our observation that cholesterol scarcity induces immune defenses upstream of p38 PMK-1, we used the MAPK phosphatase vhp-1, a negative regulator of PMK-1 (Kim et al., 2004). Solubilization of cholesterol with Tergitol was unable to suppress activation of T24B8.5p::gfp induced by knockdown of vhp-1 (Figure 4L).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig4-v3.jpg)
+
+**Figure 4.:** (A) Gene set enrichment analysis (GSEA) of p38 PMK-1 targets in the 0 μg/mL cholesterol mRNA-seq experiment. Fold change in expression of significantly differentially expressed genes (fold-change > 2 and q < 0.01) in uninfected animals grown in the absence (0 μg/mL) versus presence (5 μg/mL) of supplemental cholesterol are ranked from higher expression (red) to lower expression (blue). Normalized enrichment score (NES) and q-value are indicated. p38 PMK-1 targets found in the transcriptional profile are indicated by hit number in the left margin and black lines. (B) An immunoblot analysis of lysates from wild-type C. elegans grown on standard nematode growth media in the presence ( + 5 μg/mL cholesterol) and in the absence ( + 0 μg/mL cholesterol) of supplemented cholesterol using antibodies that recognize the doubly phosphorylated TGY motif of PMK-1 (phos-PMK-1), total PMK-1 protein (total PMK-1), and tubulin (α-tubulin) is shown. PMK-1 is a 43.9 kDa protein and tubulin is a 50 kDa protein. (C) The band intensities of four biological replicates of the Western blot shown in A were quantified. Error bars represent SEM. *equals p < 0.05 (unpaired t-test) (D) GSEA of p38 PMK-1 targets in the nhr-8 mRNA-seq experiment as described in A. (E, F) Western blot experiment (E) and quantification (F) of four biological replicate experiments as described in B and C with the strains of the indicated genotypes. In B and E, pmk-1(km25) and nsy-1(ag3) are loss-of-function mutants that serve as controls to confirm the specificity of phos-PMK-1 and total PMK-1 probing. Error bars represent SEM. *equals p < 0.05 (one-way ANOVA with Dunnett’s multiple comparison testing). (G) Images of T24B8.5p::gfp transcriptional immune reporter expression in wild-type animals and in nhr-8(hd117) mutants grown on control RNAi, tir-1(RNAi) or atf-7(RNAi) bacteria, as indicated. Quantification of GFP expression for this experiment is presented in Figure 4—figure supplement 1C. (H, I, J, K) qRT-PCR data of the indicated genes in the indicated mutant animals grown on standard nematode growth media ( + 5 μg/mL cholesterol). Data are the average of three to seven independent replicates, each normalized to a control gene with error bars representing SEM and are presented as the value relative to the average expression from all replicates of the indicated gene in wild-type animals. *equals p < 0.05 (one-way ANOVA with Dunnett’s multiple comparison testing) (L) Images of T24B8.5p::gfp transcriptional immune reporter animals of the indicated genotypes grown in the presence or absence of 0.1% Tergitol. Scale bars in all images equal 200 μm. (M) Survival curves of C. elegans pathogenesis assay with P. aeruginosa and C. elegans of the indicated genotypes at the L4 larval stage exposed to the indicated conditions. Data are representative of three trials. Difference between nhr-8(hd117) and all other conditions is significant (p < 0.05). The Kaplan-Meier method was used to estimate the survival curves for each group, and the log-rank test was used for all statistical comparisons. Sample sizes, mean lifespan, and p-values for all trials are shown in Supplementary file 4. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Gene set enrichment analysis (GSEA) of p38 PMK-1 targets in the mRNA-seq experiment as described in Figure 4D, except using a different nhr-8 mutant allele: nhr-8(ok186). (B) Images of T24B8.5p::gfp animals, as described in Figure 4G. (C) Fiji was used to quantify the GFP fluorescence of individual animals in the indicated conditions. The n for each condition is presented in the figure and indicates the number of animals quantified. Error bars represent SEM. *equals p < 0.05 (one-way ANOVA with Tukey’s multiple comparison testing). (D) Images of the transgenic C. elegans, in which gfp has been fused to the DAF-16 protein under the indicated conditions. Scale bars in all images equal 200 μm. See also Figure 4.
+
 The c-JUN N-terminal kinase MAPK homolog kgb-1, the insulin signaling pathway forkhead box O family (FOXO) transcription factor daf-16, and the G-protein-coupled receptor (GPCR) fshr-1, each function in parallel to the p38 PMK-1 pathway to regulate immune and stress responses in C. elegans (Troemel et al., 2006; Kim et al., 2004; Powell et al., 2009; Garsin et al., 2003). However, knockdown of each of these genes in nhr-8(hd117) animals failed to suppress T24B8.5p::gfp activation (Figure 4—figure supplement 1B), and RNAi-mediated knockdown of nhr-8 did not induce nuclear localization of DAF-16::GFP (Figure 4—figure supplement 1D). Thus, cholesterol scarcity induces C. elegans innate immune responses through specific activation of p38 PMK-1 immune pathway signaling.
 
 Interestingly, tir-1(qd4);nhr-8(hd117) double mutants were more susceptible to P. aeruginosa infection than nhr-8(hd117) mutants (Figure 4M). These data suggest that the induction of the p38 PMK-1 pathway in the nhr-8(hd117) mutant background promotes resistance to P. aeruginosa infection. In addition, tir-1(qd4);nhr-8(hd117) double mutants were slightly, but significantly and reproducibly, more susceptible than the tir-1(qd4) mutant to killing by P. aeruginosa. We therefore hypothesize that the inherent susceptibility to pathogen-mediated killing in animals that lack sufficient cholesterol (e.g. the nhr-8(hd117) mutant) leads to additive pathogen susceptibility in animals that also lack a functioning p38 PMK-1 host defense pathway (e.g. the tir-1(qd4) mutant).
@@ -87,7 +123,7 @@ To determine if sterol scarcity induces oligomerization and the NAD+ glycohydrol
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig5-v3.jpg)
 
-**Figure 5.:** C. elegans p38 immune pathway through the multimerization and NAD + glycohydrolase activity of TIR-1/SARM1.(A) Images of tir-1::wrmScarlet and nhr-8(hd117);tir-1::wrmScarlet animals as described in Figure 1A exposed to either 0.1% Tergitol or tir-1(RNAi). Scale bar equals 20 μm (2 µm for the inset enlarged images). (B) Quantification of the number of puncta present in the red (TIR-1::wrmScarlet), but not green (autofluorescence) channel with indicated conditions as described in Figure 1B. *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing). (C,D) Images of T24B8.5p::gfp transcriptional immune reporter in tir-1 mutants with defects in oligomerization (tir-1ΔSAM, tir-1G747P, and tir-1H833A) and NADase catalytic activity (tir-1E788A) following nhr-8(RNAi) (C), and during cholesterol deprivation (D). Scale bar equals 200 μm. (E,F) qRT-PCR data of T24B8.5 (E) and irg-4 (F) in wild-type and mutant animals of the indicated genotypes grown on standard nematode growth media ( + 5 μg/mL cholesterol). Data are the average of three independent replicates, each normalized to a control gene with error bars representing SEM and are presented as the value relative to the average expression from all replicates in wild-type animals. *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing).Figure 5—source data 1.Figure 5B Quantification of the number of TIR-1::wrmScarlet puncta present in the last posterior pair of intestinal epithelial cells in the indicated strains and conditions.Figure 5—source data 2.Figure 5E qRT-PCR data of T24B8.5 in wild-type and mutant animals of the indicated genotypes grown on standard nematode growth media ( + 5 μg/mL cholesterol).Figure 5—source data 3.Figure 5F qRT-PCR data of irg-4 in wild-type and mutant animals of the indicated genotypes grown on standard nematode growth media ( + 5 μg/mL cholesterol).
+**Figure 5.:** (A) Images of tir-1::wrmScarlet and nhr-8(hd117);tir-1::wrmScarlet animals as described in Figure 1A exposed to either 0.1% Tergitol or tir-1(RNAi). Scale bar equals 20 μm (2 µm for the inset enlarged images). (B) Quantification of the number of puncta present in the red (TIR-1::wrmScarlet), but not green (autofluorescence) channel with indicated conditions as described in Figure 1B. *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing). (C,D) Images of T24B8.5p::gfp transcriptional immune reporter in tir-1 mutants with defects in oligomerization (tir-1ΔSAM, tir-1G747P, and tir-1H833A) and NADase catalytic activity (tir-1E788A) following nhr-8(RNAi) (C), and during cholesterol deprivation (D). Scale bar equals 200 μm. (E,F) qRT-PCR data of T24B8.5 (E) and irg-4 (F) in wild-type and mutant animals of the indicated genotypes grown on standard nematode growth media ( + 5 μg/mL cholesterol). Data are the average of three independent replicates, each normalized to a control gene with error bars representing SEM and are presented as the value relative to the average expression from all replicates in wild-type animals. *equals p < 0.05 (two-way ANOVA with Tukey’s multiple comparison testing).
 
 Importantly, the C. elegans tir-1ΔSAM, tir-1G747P and tir-1H833A mutants, which contain specific mutations that block oligomerization of TIR-1, and the tir-1E788A strain that carries a mutation in the catalytic glutamine required for the NADase activity, each prevented activation of the p38 PMK-1-dependent immune reporter T24B8.5p::gfp in nhr-8(RNAi) animals (Figure 5C) and during cholesterol deprivation (Figure 5D). Using qRT-PCR, we confirmed that these mutations in tir-1 abrogated the induction of the T24B8.5 (Figure 5E) and irg-4 (Figure 5F) immune effectors in nhr-8(RNAi) animals. We also found that these tir-1 mutants phenocopied the effects of the p38 PMK-1 pathway mutants (tir-1(qd4), nys-1(ag3), and pmk-1(km25)) on the basal expression of these immune effector genes (Figure 5E and F).
 
@@ -95,13 +131,13 @@ It is possible that the organization of TIR-1::wrmScarlet into visible puncta in
 
 In summary, the above data demonstrate for the first time that physiological stresses, both pathogen and non-pathogen, induce TIR-1 multimerization into puncta within intestinal epithelial cells, which then activates the p38 PMK-1 innate immune pathway through the intrinsic NADase activity of the TIR-1 protein complex.
 
-## Sterol scarcity primes p38 PMK-1 immune defenses
+### Sterol scarcity primes p38 PMK-1 immune defenses
 
 Since C. elegans requires cholesterol to survive bacterial infection and must obtain this essential metabolite from its diet, we hypothesized that, when environmental sterols are limited, activation of the p38 PMK-1 pathway represents an evolutionary adaptation that primes immune effector expression to anticipate challenges from bacterial pathogens. To test this hypothesis, we examined the expression of innate immune effector genes during bacterial infection in the presence and absence of cholesterol supplementation. Interestingly, the induction of irg-4p::gfp (Figure 6A), irg-5p::gfp (Figure 6B), and T24B8.5p::gfp (Figure 6C) during P. aeruginosa infection was enhanced when nematodes were infected on media that did not contain supplemented cholesterol. Consistent with these data, P. aeruginosa infection also led to increased activation of irg-4p::gfp (Figure 6D) and irg-5p::gfp (Figure 6E) when nhr-8 was depleted by RNAi.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/74206/elife-74206-fig6-v3.jpg)
 
-**Figure 6.:** (A, B, C, D, E) Images of the indicated transcriptional immune reporters under the indicated conditions. Scale bars in all images equal 200 μm. (F) A heat map compares the expression levels of the 184 genes that were both induced in wild-type animals during P. aeruginosa infection and differentially expressed (either induced or repressed) in nhr-8(hd117) mutants at baseline (each greater than two-fold, q < 0.05). To compare the expression of these genes in wild-type and nhr-8(hd117) mutants, we scaled the expression level in each condition by calculating a z-score for each row and performed hierarchical clustering, which identified two main clusters (Cluster I contains 139 genes and Cluster II contains 45 genes). See also Supplementary file 5. (G) Enrichment of p38 PMK-1-dependent genes in Cluster I and II genes is shown. (H, I, J, K) mRNA-seq data for the indicated genes from the experiment described in (F) showing scaled reads per base from three biological replicates. Error bars represent SEM. *equals q < 0.05 from RNA-seq analysis. (L) Model of p38 PMK-1 pathway activation during sterol scarcity and pathogen infection.Figure 6—source data 1.Figure 6H mRNA-seq data for T24B8.5 from the conditions indicated showing scaled reads per base.Figure 6—source data 2.Figure 6I mRNA-seq data for irg-4 from the conditions indicated showing scaled reads per base.Figure 6—source data 3.Figure 6J mRNA-seq data for irg-5 from the conditions indicated showing scaled reads per base.Figure 6—source data 4.Figure 6K mRNA-seq data for K08D8.4 from the conditions indicated showing scaled reads per base.
+**Figure 6.:** (A, B, C, D, E) Images of the indicated transcriptional immune reporters under the indicated conditions. Scale bars in all images equal 200 μm. (F) A heat map compares the expression levels of the 184 genes that were both induced in wild-type animals during P. aeruginosa infection and differentially expressed (either induced or repressed) in nhr-8(hd117) mutants at baseline (each greater than two-fold, q < 0.05). To compare the expression of these genes in wild-type and nhr-8(hd117) mutants, we scaled the expression level in each condition by calculating a z-score for each row and performed hierarchical clustering, which identified two main clusters (Cluster I contains 139 genes and Cluster II contains 45 genes). See also Supplementary file 5. (G) Enrichment of p38 PMK-1-dependent genes in Cluster I and II genes is shown. (H, I, J, K) mRNA-seq data for the indicated genes from the experiment described in (F) showing scaled reads per base from three biological replicates. Error bars represent SEM. *equals q < 0.05 from RNA-seq analysis. (L) Model of p38 PMK-1 pathway activation during sterol scarcity and pathogen infection.
 
 To provide further support for this hypothesis, we analyzed the expression pattern of p38 PMK-1-dependent transcripts in nhr-8(hd117) mutant animals during P. aeruginosa infection. Of the 472 genes that were induced in wild-type animals during P. aeruginosa infection, 184 were also differentially regulated (either induced or repressed) in nhr-8(hd117) animals that were infected with P. aeruginosa. To perform this analysis in an unbiased manner, we scaled the expression level in each condition for each of these 184 genes by calculating a row z-score and performed hierarchical clustering (Figure 6F). We observed that these 184 genes group into two clusters: Cluster I had 139 genes and Cluster II contained 45 genes (Supplementary file 5). Cluster I was comprised mostly of genes whose expression in the absence of infection was higher in nhr-8(hd117) mutants than wild-type animals (129 of 139 genes). In addition, the majority of Cluster I genes were more strongly induced during P. aeruginosa infection in nhr-8(hd117) animals than wild-type animals. Cluster II, on the other hand, contained genes whose induction on P. aeruginosa were dependent on nhr-8. Importantly, p38 PMK-1-dependent genes were strongly enriched among Cluster I, but not Cluster II, genes (Figure 6G). Thirty-three of the 139 genes in Cluster I are known targets of the p38 PMK-1 immune pathway (24.17-fold enriched, hypergeometric P-value = 7.68 x 10–37), a group that includes the immune effectors T24B8.5 (Figure 6H), irg-4 (Figure 6I), irg-5 (Figure 6J), and K08D8.4 (Figure 6K). By contrast, only three genes in Cluster II are p38 PMK-1-dependent transcripts (6.95-fold enriched, hypergeometric p-value = 0.01) (Figure 6F and G).
 
@@ -125,61 +161,645 @@ We previously demonstrated that a C. elegans nuclear hormone receptor, NHR-86, a
 
 ## Materials and methods
 
-## C. elegans and bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>CaenorhabditisGenetics Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>HT115</td>
+      <td>CaenorhabditisGenetics Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>EC0114</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1-Blue</td>
+      <td>Agilent</td>
+      <td>200,249</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>UCBPP-PA14</td>
+      <td>PMID:7604262</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2; wild-type</td>
+      <td>CGC, PMID:4366476</td>
+      <td>WormBase ID:WBStrain00000001</td>
+      <td>Laboratory reference strain/wild type</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>KU25</td>
+      <td>PMID:15116070/</td>
+      <td>WormBase ID: WBStrain00024040</td>
+      <td>Genotype: pmk-1(km25) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>AU3</td>
+      <td>PMID:12142542</td>
+      <td>WormBase ID: WBStrain00000259</td>
+      <td>Genotype: nsy-1(ag3) II</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>ZD101</td>
+      <td>PMID:19837372</td>
+      <td>WormBase ID:WBStrain00040806</td>
+      <td>Genotype: tir-1(qd4) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>AA968</td>
+      <td>PMID:23931753</td>
+      <td></td>
+      <td>Genotype: nhr-8(hd117) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>AE501</td>
+      <td>PMID:11516648</td>
+      <td>WormBase ID:WBStrain00000059</td>
+      <td>Genotype: nhr-8(ok186) IV</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhadbditis elegans)</td>
+      <td>AU78</td>
+      <td>PMID:19837372</td>
+      <td>WormBase ID:WBStrain00000262</td>
+      <td>Genotype: agIs219 [T24B8.5p::gfp::unc-54–3’UTR; ttx-3p::gfp::unc-54–3’UTR] III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>AU307</td>
+      <td>PMID:24875643</td>
+      <td></td>
+      <td>Genotype: agIs44 [irg-4p::gfp::unc-54–3’UTR; myo-2p::mCherry]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>AY101</td>
+      <td>PMID:20133945</td>
+      <td>WormBase ID:WBStrain00000322</td>
+      <td>Genotype: acIs101 [pDB09.1(irg-5p::gfp); pRF4(rol-6(su1006))]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>TJ356</td>
+      <td>PMID:11747825</td>
+      <td>WormBase ID:WBStrain00034892</td>
+      <td>Genotype: zIs356 [daf-16p::daf-16a/b::gfp + pRF4(rol-6(su1006))]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW278</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: nhr-8(hd117);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW317</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(qd4);nhr-8(hd117)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW339</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums47[E788A]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW369</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums54[ΔSAM]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW374</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums55[G747P]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW381</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums56[H833A]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW386</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums57[tir-1::3xFLAG]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW387</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums58[tir-1[E788A]::3xFLAG]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW388</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1 (ums59[tir-1[ΔSAM]::3xFLAG]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW 389</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums60[tir-1[G747P]::3xFLAG]);agIs219</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW403</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: tir-1(ums63[tir-1::wrmScarlet])</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>RPW404</td>
+      <td>This study</td>
+      <td></td>
+      <td>Genotype: nhr-8(hd117);tir-1(ums63[tir-1::wrmScarlet])</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-total PMK-1(rabbit polyclonal)</td>
+      <td>PMID:30668573</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-p38 MAPK (Thr180/Tyr182)(rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9211</td>
+      <td>WB(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG(mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804</td>
+      <td>WB(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5168</td>
+      <td>WB(1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG-HRP (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab6789</td>
+      <td>WB(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG-HRP(goat polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>7074</td>
+      <td>WB(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Peptone</td>
+      <td>Gibco</td>
+      <td>211820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agar</td>
+      <td>Fisher</td>
+      <td>BP9744</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol</td>
+      <td>Sigma Aldrich</td>
+      <td>C3045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tri-Reagent</td>
+      <td>Sigma Aldrich</td>
+      <td>T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TERGITOL solution (Type NP-40)</td>
+      <td>Sigma Aldrich</td>
+      <td>NP40S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA Buffer</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>89900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halt Protease and Phosphatase inhibitor</td>
+      <td>ThermoFisher Scientific</td>
+      <td>78445</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NuPAGELDS sample buffer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NP0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,6-hexanediol</td>
+      <td>Sigma Aldrich</td>
+      <td>240117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide 1,N6-ethenoadenine dinucleotide; ε-NAD</td>
+      <td>Sigma Aldrich</td>
+      <td>N2630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG 400</td>
+      <td>Sigma Aldrich</td>
+      <td>91893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG 1500</td>
+      <td>Sigma Aldrich</td>
+      <td>86101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG 3350</td>
+      <td>Sigma Aldrich</td>
+      <td>88276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG 8000</td>
+      <td>Sigma Aldrich</td>
+      <td>89510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran</td>
+      <td>Fisher Scientific</td>
+      <td>ICN16011010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma Aldrich</td>
+      <td>S0389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Sigma Aldrich</td>
+      <td>G5516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium citrate</td>
+      <td>Sigma Aldrich</td>
+      <td>S4641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kanamycin</td>
+      <td>Research Products International</td>
+      <td>K22000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>ThermoFisher Scientific</td>
+      <td>R0392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce EDTA-free protease inhibitor mini tablets</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A32955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iProof High-Fidelity DNA Polymerase</td>
+      <td>Bio-Rad Laboratories, Inc</td>
+      <td>172–5301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript gDNA Clear cDNA Synthesis Kit</td>
+      <td>Bio-Rad Laboratories, Inc</td>
+      <td>172–5034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad Laboratories, Inc</td>
+      <td>1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DreamTaq Green PCR</td>
+      <td>ThermoFisher Scientific</td>
+      <td>K1081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DC protein assay</td>
+      <td>Bio-Rad Laboratories, Inc</td>
+      <td>5000116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 4%–12% BisTris gels</td>
+      <td>ThermoFisher Scientific</td>
+      <td>NP0321BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 3%–8% TrisAcetate gels</td>
+      <td>ThermoFisher Scientific</td>
+      <td>EA0375BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Femto PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Strep-Tactin XT Superflow high-capacity resin</td>
+      <td>IBA Lifesciences</td>
+      <td>2-4030-025</td>
+      <td>Product discontinued; suitable replacement is Strep-Tactin XT 4Flow high capacity resin (2-5030-025)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Wizard Plus SV Minipreps DNA Purification System</td>
+      <td>Promega</td>
+      <td>A1460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TALON Metal Affinity Resin</td>
+      <td>Takara</td>
+      <td>635,502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Lysozyme</td>
+      <td>Sigma Aldrich</td>
+      <td>L6876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DpnI</td>
+      <td>NEB</td>
+      <td>R0176S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ADP-ribosyl cyclase</td>
+      <td>Sigma Aldrich</td>
+      <td>A9106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SpCas9 Nuclease</td>
+      <td>IDT</td>
+      <td>1081058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-30a(+) TIR (plasmid)</td>
+      <td>Loring et al., 2021</td>
+      <td></td>
+      <td>Referred to as pET30a+ Strep-ceTIR-HIS in reference</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/imageJ</td>
+      <td>PMID:22743772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OASIS 2</td>
+      <td>PMID:27528229</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Console (Version 3.5)</td>
+      <td>The R Foundation</td>
+      <td></td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC (Version 0.11.5)</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kallisto (version 0.45.0)</td>
+      <td>PMID:27043002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sleuth (version 0.30.0)</td>
+      <td>PMID:28581496</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA (version 4.1.0)</td>
+      <td>PMID:16199517</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pheatmap (version 1.0.12)</td>
+      <td>https://cran.r-project.org/web/packages/pheatmap/index.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID Bioinformatics database</td>
+      <td>PMID:19131956</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans and bacterial strains
 
 The previously published C. elegans strains used in this study were: N2 Bristol (Brenner, 1974), KU25 pmk-1(km25) (Mizuno et al., 2004), AU3 nsy-1(ag3) (Kim et al., 2002), ZD101 tir-1(qd4) (Shivers et al., 2009), AA968 nhr-8(hd117) (Magner et al., 2013), AE501 nhr-8(ok186) (Lindblom et al., 2001), AU78 agIs219 [T24B8.5p::gfp::unc-54–3’UTR; ttx-3p::gfp::unc-54–3’UTR] (Shivers et al., 2009), AU306 agIs44 [irg-4p::gfp::unc-54–3’UTR; myo-2p::mCherry] (Pukkila-Worley et al., 2014), AY101 acIs101 [pDB09.1(irg-5p::gfp); pRF4(rol-6(su1006))] (Bolz et al., 2010), TJ356 zIs356 [daf-16p::daf-16a/b::gfp + pRF4(rol-6(su1006))] (Henderson and Johnson, 2001). The strains developed in this study were: RPW278 nhr-8(hd117);agIs219, RPW317 tir-1(qd4);nhr-8(hd117), RPW339 tir-1(ums47[E788A]);agIs219, RPW369 tir-1(ums54[ΔSAM]);agIs219, RPW374 tir-1(ums55[G747P]);agIs219, RPW381 tir-1(ums56[H833A]);agIs219, RPW386 tir-1(ums57[tir-1::3xFLAG]);agIs219, RPW387 tir-1(ums58[tir-1[E788A]::3xFLAG]);agIs219, RPW388 tir-1 (ums59[tir-1[ΔSAM]::3xFLAG]);agIs219, RPW 389 tir-1(ums60[tir-1[G747P]::3xFLAG]);agIs219, RPW403 tir-1(ums63[tir-1::wrmScarlet]), RPW404 nhr-8(hd117);tir-1(ums63[tir-1::wrmScarlet]). Bacteria used in this study are Escherichia coli OP50, E. coli DH5α, E. coli HT115(DE3), and Pseudomonas aeruginosa strain PA14 (Rahme et al., 1995).
 
-## C. elegans growth conditions and lipid supplementation
+### C. elegans growth conditions and lipid supplementation
 
 C. elegans strains were maintained on standard nematode growth medium (NGM) plates (0.25% bacto peptone, 0.3% sodium chloride, 1.7% agar [Fisher], 5 μg/mL cholesterol [Sigma-Aldrich, BioReagent grade], 25 mM potassium phosphate pH 6.0, 1 mM magnesium sulfate, 1 mM calcium chloride)with E. coli OP50 as a food source, as described (Brenner, 1974). For low-cholesterol medium (0 μg/mL cholesterol), NGM was prepared without cholesterol supplementation, while 0.1% ethanol was added to maintain an equivalent ethanol concentration. For high-cholesterol medium, cholesterol was dissolved in ethanol at 20 mg/mL and added to NGM at a final concentration of 80 μg/mL immediately prior to pouring plates. For all assays with high-cholesterol medium, NGM containing 0.4% ethanol and 5 μg/mL cholesterol were used as control plates. Cholesterol solubilization assays were performed by supplementing NGM containing 5 μg/mL cholesterol with either 0.1% Tergitol (Sigma-Aldrich) or 0.1% Triton X-100 (Sigma-Aldrich). For assays using media solidified with agarose, NGM plates were prepared with 1.7% Ultrapure agarose (ThermoFisher Scientific) in place of agar. All fatty acids were purchased from Nu-Check-Prep Inc, and supplementation performed as previously described with modification (Anderson et al., 2019; Nandakumar and Tan, 2008). Fatty acids were dissolved in 50% ethanol and added at a final concentration of 1 mM to NGM agarose containing 0 μg/mL cholesterol and 0.1% Tergitol immediately prior to plate pouring. Prior to all assays, plates supplemented with lipids and control plates were seeded with E. coli OP50 and grown for 24 hr at room temperature. Assays were performed by picking 10–20 gravid adult animals to either lipid-supplemented or matched control plates. Animals were maintained on the plates for 14 hr at 20 °C, after which they were removed. Eggs laid on the plate were allowed to hatch and develop to the L4 stage at 20 °C. For low-cholesterol assays, animals were grown for two generations on NGM containing 0 μg/mL cholesterol.
 
-## C. elegans strain construction
+### C. elegans strain construction
 
 CRISPR/Cas9 was used to generate tir-1 mutants in both wild-type and TIR-1::3xFLAG backgrounds, as described (Dokshin et al., 2018; Ghanta and Mello, 2020). All CRISPR/Cas9 reagents were purchased from Integrated DNA Technologies. Target guide sequences were selected using the CHOPCHOP web tool (Labun et al., 2019). ssODN and dsDNA repair templates contained indicated edits, deletions or insertions with 35 bp flanking homology arms. crRNA guide and ssODN sequences are listed in Supplementary file 6. For wrmScarlet dsDNA repair template, wrmScarlet was PCR amplified with 35 bp flanking homology arms. PCR was gel purified, diluted to 100 ng/μL, melted and reannealed using a thermal cycler (95 °C – 2 min; 85 °C – 10 s, 75 °C – 10 s, 65 °C – 10 s, 55 °C – 10 s, 45 °C – 10 s, 35 °C – 10 s, 25 °C – 10 s, 4 °C – hold. Ramp down 1 °C per s), and used immediately for injection. A mixture of 0.25 μg/μL Cas9, 0.1 μg/μL tracrRNA and 0.056 μg/μL crRNA were incubated for 15 min at 37 °C. 0.11 μg/μL ssODN or 25 ng/μL dsDNA and 40 ng/μL pRF4(rol-6(su1006)) plasmid were added to the mixture, centrifuged, and microinjected into young adult animals carrying the agIs219 transgene, tir-1(ums57[tir-1::3xFLAG]);agIs219, or N2. The F1 progeny were screened for Rol phenotypes 3–4 days after injection and then for indicated edits using PCR and Sanger sequencing. Primer sequences used for genotyping are listed in Supplementary file 6.
 
-## Feeding RNAi
+### Feeding RNAi
 
 Knockdown of target genes was performed by feeding C. elegans E. coli HT115 expressing dsRNA targeting the gene of interest, as previously described with modification (Fire et al., 1998; Timmons et al., 2001; Conte et al., 2015). In brief, HT115 bacteria expressing dsRNA targeting genes of interest were grown in Lysogeny broth (LB) Lennox medium containing 50 μg/mL ampicillin and 15 μg/mL tetracycline overnight with shaking (250 rpm) at 37 °C. Overnight cultures were seeded onto NGM containing 5 mM IPTG and 50 μg/mL carbenicillin and incubated at 37 °C for 16 hr, after which synchronized L1 animals were transferred to bacterial lawns and allowed to grow until the L4 stage.
 
-## C. elegans bacterial infection and colonization assays
+### C. elegans bacterial infection and colonization assays
 
 “Slow killing” P. aeruginosa infection experiments were performed as previously described (Tan et al., 1999; Foster et al., 2020b). Wild-type is either N2 or agIs219. In brief, a single colony of P. aeruginosa PA14 was inoculated into 3 mL of LB medium and grown with shaking (250 rpm) at 37 °C for 14 hr. Ten μL of overnight culture was spread onto 35 mm petri dishes containing 4 mL slow killing agar (0.35% peptone, 0.3% sodium chloride, 1.7% agar, 5 μg/mL cholesterol, 25 mM potassium phosphate pH 6.0, 1 mM magnesium sulfate, 1 mM calcium chloride). Plates were incubated for 24 hr at 37 °C and for approximately 24 hr at 25 °C. Immediately prior to starting the assay, 0.1 mg/mL 5-fluorodeoxyuridine (FUDR) was added on top of the agar to prevent progeny from hatching. Animals used in all assays were grown at 20 °C with specified growth conditions. For assays involving high cholesterol or nonionic detergents, slow-killing agar plates were prepared with either 80 μg/mL cholesterol (Sigma-Aldrich), 0.1% Tergitol (Sigma-Aldrich), or 0.1% Triton X-100 (Sigma-Aldrich). For experiments using plates containing 80 μg/mL cholesterol, matched control plates containing the equivalent ethanol concentration (0.4%) and 5 μg/mL cholesterol were prepared. All pathogenesis and lifespan assays are representative of three biological replicates. Sample sizes, mean lifespan, and p values for all trials are shown in Supplementary file 4.
 
 CFU of P. aeruginosa were quantified in the intestine of C. elegans as previously described with modifications (Foster et al., 2020b; Singh and Aballay, 2019). Briefly, C. elegans animals were exposed to lawns of P. aeruginosa, which were prepared as previously described, for 24 hr. Animals were then picked to NGM plates lacking bacteria and incubated for 10 min to remove external P. aeruginosa. Animals were then transferred to a second NGM plate, after which 10–11 animals per replicate were collected, washed with M9 buffer containing 25 mM tetramisole (Sigma-Aldrich) and 0.01% Triton X-100 (Sigma-Aldrich), and ground with 1.0 mm silicon carbide beads (BioSpec Products). P. aeruginosa CFUs were quantified from serial dilutions of the lysate grown on LB agar.
 
-## Gene expression analysis and bioinformatics
+### Gene expression analysis and bioinformatics
 
 A total of 2000 synchronized L1 stage C. elegans of the indicated genotypes were grown to the L4 stage and harvested by washing with M9. For expression analysis of C. elegans genes during P. aeruginosa infection, animals at the L4 stage animals were transferred by washing to plates containing E. coli OP50 or P. aeruginosa PA14 lawns. Animals were exposed for four hours and subsequently harvested by washing with M9. RNA was isolated using TriReagent (Sigma-Aldrich), column purified (Qiagen), and analyzed by 100 bp paired-end mRNA-sequencing using the BGISEQ-500 platform (BGIAmericasCorp) with > 20 million reads per sample. Raw fastq reads were evaluated by FastQC (version 0.11.5), clean reads were aligned to the C. elegans reference genome (WBcel235) and quantified using Kallisto (version 0.45.0) (Bray et al., 2016). Differentially expressed genes were identified using Sleuth (version 0.30.0) (Pimentel et al., 2017). Pearson correlation statistical analysis was performed using Prism 9.0. Innate immune genes were identified using DAVID Bioinformatics database biological process gene ontology (GO) term innate immune response (Huang et al., 2009). Heatmaps of differentially expressed genes were generated using pheatmap (version 1.0.12). Gene set enrichment analysis of RNA-seq was performed using GSEA (version 4.1.0) (Subramanian et al., 2005) with a custom gene set database (Supplementary file 7) containing p38 PMK-1-dependent genes generated by analyzing previously published RNA-seq of uninfected pmk-1(km25) animals (Fletcher et al., 2019) with the RNA-seq data analysis pipeline described above. Differential gene expression was defined as a fold change (FC) versus wild-type greater than two and q less than 0.01.
 
 For the qRT-PCR studies, RNA was reverse transcribed to cDNA using the iScript cDNA Synthesis Kit (Bio-Rad Laboratories, Inc), amplified and detected using Syber Green (Bio-Rad Laboratories, Inc) and a CFX384 machine (Bio-Rad Laboratories, Inc). The sequences of primers that were designed for this study are presented in Supplementary file 6. Other primers were previously published (Troemel et al., 2006; Taubert et al., 2008; Richardson et al., 2010; Estes et al., 2010). All values were normalized against the geometric mean of the control genes snb-1 and act-3. Fold change was calculated using the Pfaffl method (Pfaffl, 2001).
 
-## Immunoblot analyses
+### Immunoblot analyses
 
 Protein lysates from 2000 C. elegans grown to the L4 larval stage on E. coli OP50 on NGM agar were prepared as previously described with modification (Peterson et al., 2019; Cheesman et al., 2016). Harvested animals were washed twice with M9 buffer and resuspended in RIPA Buffer (Cell Signaling Technology, Inc) containing 1 x Halt Protease and Phosphatase inhibitor (ThermoFisher Scientific). Samples were lysed using a teflon homogenizer, centrifuged, and protein was quantified from the supernatant of each sample using the DC protein assay (Bio-Rad Laboratories, Inc). NuPAGE LDS sample buffer (ThermoFisher Scientific) was added to a concentration of 1 X, and 12.5–30 μg of total protein from each sample was resolved on NuPAGE 4–12% BisTris (Phospho-PMK-1 and Total-PMK-1) or NuPAGE 3–8% TrisAcetate (TIR-1::3xFLAG) gels (ThermoFisher Scientific), transferred to nitrocellulose membranes using a Trans-Blot Turbo Transfer System (Bio-Rad Laboratories, Inc), blocked with 5% milk powder in TBST and probed with a 1:1,000 dilution of an antibody that recognizes the doubly-phosphorylated TGY motif of PMK-1 (Cell Signaling Technology, #9211), a previously characterized total PMK-1 antibody (Peterson et al., 2019), a monoclonal mouse anti-FLAG antibody (Sigma-Aldrich, M2), or a monoclonal mouse anti-alpha-tubulin antibody (Sigma-Aldrich, Clone B-5-1-2). Horseradish peroxidase (HRP)-conjugated anti-rabbit (Cell Signaling Technology, #7074) and anti-mouse IgG secondary antibodies (Abcam, #ab6789) were diluted 1:10,000 and used to detect the primary antibodies following the addition of ECL reagents (Thermo Fisher Scientific, Inc), which were visualized using a BioRad ChemiDoc MP Imaging System. The band intensities were quantified using Fiji/ImageJ, and the ratio of active phosphorylated PMK-1 to total PMK-1 was calculated.
 
-## TIR-1::wrmScarlet puncta visualization
+### TIR-1::wrmScarlet puncta visualization
 
 For TIR-1::wrmScarlet puncta visualization, all TIR-1::wrmScarlet expressing animals were depleted of autofluorescent gut granules by exposure to glo-3(RNAi) from the L1 stage prior to all experiments. P. aeruginosa was prepared as described for bacterial infection and colonization assays. L4 animals expressing TIR-1::wrmScarlet were transferred to either OP50 or P. aeruginosa containing plates for 24 hr. For imaging, animals were transferred to 2% agarose pads, paralyzed with 300 mM sodium azide, and imaged with a 63 x oil immersion lens. For Tergitol experiments, animals were grown on RNAi plates containing 0.1% Tergitol and the respective RNAi strains and imaged at the L4 stage.
 
-## Microscopy
+### Microscopy
 
 Nematodes were mounted onto agar pads, paralyzed with 10 mM levamisole (Sigma) or 300 mM sodium azide and photographed using a Zeiss AXIO Imager Z2 microscope with a Zeiss Axiocam 506mono camera and Zen 2.3 (Zeiss) software.
 
-## Microscopy image analysis
+### Microscopy image analysis
 
 Image processing and analysis were performed using Fiji image analysis software. In each panel, the exposure time and processing for all images were identical. To quantify T24B8.5p::gfp fluorescence intensity, the DIC channel was used to identify and select the intestine of each animal using the Freehand Tool. The integrated density, which is the product of the area and mean gray value, was then calculated for the green channel of each selected region using the Measurement function. To quantify TIR-1::wrmScarlet puncta, the last posterior pair of intestinal epithelial cells were identified in the DIC channel and selected using the Freehand Tool. We then filtered the red and green channel images using Gaussian Smoothing (sigma radius = 1). The Find Maxima tool was then used to identify puncta in the red channel within the selected area. The Find Maxima settings used for the analysis of P. aeruginosa puncta were prominence: 5, strict: no, exclude edge maxima: no. The settings for the nhr-8(hd117) and Tergitol experiments were prominence: 15, strict: no, exclude edge maxima: no. We then overlayed the location of the red channel puncta in the green channel and determined if there was an autofluorescent puncta in this exact location. TIR-1::wrmScarlet puncta were those that were present in the red, but not the green, channel. Importantly, we only reported puncta that were positively identified by the image analysis software.
 
-## TIR-1 TIR domain expression and purification
+### TIR-1 TIR domain expression and purification
 
 The recombinant C. elegans TIR-1 TIR domain (TIR) was expressed in bacteria as previously described (Loring et al., 2020). Briefly, the TIR domain cloned into the pET-30a(+) vector was transformed into chemically competent E. coli BL21(DE3) cells and maintained as a glycerol stock at –80 °C. An inoculation loop was used to transfer the transformed bacteria into 5 mL of LB media with 50 µg/mL (final concentration) of kanamycin, and the culture was grown overnight at 37 °C while rotating. The next day, the cultures were diluted 1:400 in LB media with 50 µg/mL (final concentration) of kanamycin and grown at 37 °C while shaking at 215 rpm until an OD600 of 0.7–0.8 was reached. After cooling, 50 µM IPTG (final concentration) was added to the culture to induce protein expression. The incubator temperature was decreased to 16 °C, and cells were incubated for an additional 16–18 hr. Bacterial cells were collected by centrifugation at 3000 x g for 15 min at 4 °C, flash frozen in liquid nitrogen, and stored at –80 °C until purification.
 
 For purification, bacterial pellets were thawed on ice and then resuspended in Lysis Buffer (50 mM Tris•HCl pH 7.0, 300 mM NaCl, 10% (w/v) glycerol, 0.001% Tween 20) with Pierce EDTA-free protease inhibitor mini tablets (ThermoFisher Scientific). The resuspension was incubated with 100 µg/mL lysozyme for 10 min at 4 °C and sonicated with a Fisher Scientific Sonic Dismembrator sonicator (FB-705) in 50 mL batches at an amplitude of 30 for 20 s, pulsing for 1 sec on and 1 s off, followed by a delay period of 20 s for a series of 12 cycles. Crude lysate was clarified at 21,000 x g for 25 min at 4 °C, at which point the supernatant was applied to pre-equilibrated Strep-Tactin XT Superflow high-capacity resin (IBA Lifesciences) and allowed to enter the column by gravity flow; the Strep-Tactin resin had been equilibrated in Strep Wash Buffer (50 mM Tris•HCl pH 7.0, 300 mM NaCl). The column was washed with 30 column volumes of Strep Wash Buffer, and the protein was eluted with 25 column volumes of Strep Elution Buffer (Strep Wash Buffer with 50 mM biotin). The protein eluted from the Strep-Tactin column was then applied to pre-equilibrated TALON Metal Affinity Resin (Takara) and allowed to enter the column by gravity flow; the TALON resin was equilibrated in His Wash 1 (50 mM Tris•HCl pH 7.0, 150 mM NaCl, 5 mM imidazole). A series of 15 column volume washes were applied (His Wash 1; His Wash 2: 50 mM Tris•HCl pH 7.0, 150 NaCl, 10 mM imidazole), and the protein was eluted in 20 column volumes of His Elution Buffer (50 mM Tris•HCl pH 7.0, 150 mM NaCl, 150 mM imidazole). The eluted protein was dialyzed overnight in Dialysis Buffer (50 mM Tris•HCl, pH 7.0, 150 mM NaCl). The next day, the protein was concentrated using a 10,000 NMWL Amicon Ultra-15 Centrifugal Filter Unit at 4 °C, and the protein concentration was determined by the Bradford assay. TIR was flash frozen in liquid nitrogen and stored at –80 °C in 25 µL aliquots.
 
-## Fluorescent NADase assay
+### Fluorescent NADase assay
 
 Nicotinamide 1,N6-ethenoadenine dinucleotide (ε-NAD, Sigma-Aldrich) is a fluorescent analog of NAD+ and was utilized in kinetic assays as a TIR-1 substrate. TIR-1 cleaves the nicotinamide moiety from ε-NAD to release nicotinamide and etheno-ADPR (ε-ADPR), which fluoresces (λex = 330 nm, λem = 405 nm). Enzymatic activity was assayed in Assay Buffer (50 mM Tris pH 8.0, 150 mM NaCl; final concentration) using Corning 96–well Half Area Black Flat Bottom Polystyrene NBS Microplates for a final reaction volume of 60 μL, or Corning 384-well Low Volume Black Round Bottom Polystyrene NBS Microplates for a final volume of 20 µL; reactions were initiated by the addition of ε-NAD. ε-ADPR fluorescence intensity readings were taken in real time every 15 s for 15–30 min using Wallac EnVision Manager Software and a PerkinElmer EnVision 2,104 Multilabel Reader. Fluorescence intensity readings (λex = 330 nm, λem = 405 nm) were converted to [ε-ADPR] with an ε-ADPR standard curve, which was produced by incubating fixed concentrations (0–400 µM) of ε-NAD with excess ADP-ribosyl cyclase and plotting the peak fluorescence intensity values against [ε-ADPR]. The activity was linear with respect to time under all conditions tested.
 
-## Effect of crowding agents and sodium citrate on the activity of the TIR domain
+### Effect of crowding agents and sodium citrate on the activity of the TIR domain
 
 The enzymatic activity of the TIR domain was evaluated using the Fluorescent Assay described above. First, the enzyme concentration dependence was determined. For purified protein, the enzyme (0–32.5 µM; final concentration) was added to Assay Buffer in duplicate, briefly incubated at room temperature for 10 min, and the reaction was initiated with 1 mM ε-NAD. Fluorescence intensity was monitored in real time every 15 s for 15 min.
 
@@ -189,41 +809,45 @@ Sodium citrate was prepared as a stock solution of 2 M and filtered. The concent
 
 In all cases, the fluorescence intensity was converted to ε-ADPR using the ε-ADPR standard curve described above. Slopes of the progress curves yielded the velocities of the reactions, which were plotted in GraphPad Prism.
 
-## Effect of PEG 3350 and sodium citrate on steady-state kinetics
+### Effect of PEG 3350 and sodium citrate on steady-state kinetics
 
-Steady-state kinetic reactions were carried out in Assay buffer with either PEG 3350 (0%–25%; final concentration) or sodium citrate (0–1000 mM; final concentration); a constant concentration of 2.5 µM TIR was used in these assays. Reaction components were mixed in duplicate and incubated at room temperature for 10 min before initiating the reaction with ε-NAD (0–4000 µM, final concentration). Fluorescence intensity was monitored every 15 s for 15 min. Using the ε-ADPR standard curve, the fluorescence was converted to [ε-ADPR]. The velocity of the reactions was calculated from the slope of the progress curve at each ε-NAD concentration and plotted in GraphPad Prism. Kinetic parameters were determined by fitting these velocities to the Michaelis-Menten equation (Eq. 1) at each PEG 3350 or sodium citrate concentration. Km, kcat, and kcat/Km values were plotted against PEG 3350 or sodium citrate concentration.,(1)v=VmaxSKm+S
+Steady-state kinetic reactions were carried out in Assay buffer with either PEG 3350 (0%–25%; final concentration) or sodium citrate (0–1000 mM; final concentration); a constant concentration of 2.5 µM TIR was used in these assays. Reaction components were mixed in duplicate and incubated at room temperature for 10 min before initiating the reaction with ε-NAD (0–4000 µM, final concentration). Fluorescence intensity was monitored every 15 s for 15 min. Using the ε-ADPR standard curve, the fluorescence was converted to [ε-ADPR]. The velocity of the reactions was calculated from the slope of the progress curve at each ε-NAD concentration and plotted in GraphPad Prism. Kinetic parameters were determined by fitting these velocities to the Michaelis-Menten equation (Eq. 1) at each PEG 3350 or sodium citrate concentration. Km, kcat, and kcat/Km values were plotted against PEG 3350 or sodium citrate concentration.
+
+$$
+v=\frac{V_{max}S}{K_{m}+S}
+$$
 
 where Vmax is the maximum velocity, [S] is the substrate concentration, and Km is the substrate concentration at half the maximum velocity.
 
-## The TIR domain precipitates in PEG3350 and sodium citrate
+### The TIR domain precipitates in PEG3350 and sodium citrate
 
 Five µM TIR was incubated in Assay Buffer with PEG 3350 (0, 10, 17.5, and 25%; final concentration) or sodium citrate (0, 125, 250, 500, 750, and 1000 mM; final concentration) in duplicate at room temperature for 15 min. The precentrifugation control was removed, and the remainder of the sample was centrifuged at 17,000 x g at 4 °C for 10 min. Following centrifugation, the supernatant was separated from the pellet, and the pellet was resuspended in Assay Buffer with the respective concentration of PEG 3350 or sodium citrate. Samples were diluted 1:2 with gel loading buffer and run on an SDS-PAGE gel. Protein bands were stained by Coomassie and visualized on a BioRad Gel Doc EZ Gel Documentation System with Image Lab Software. Representative images are shown.
 
 Following resuspension of the pellet, all fractions were analyzed in the Fluorescent Assay. After the samples were aliquoted into the assay plate in duplicate, the enzymatic reaction was initiated with 1 mM ε-NAD and monitored every 15 s for 15 min. Fluorescence intensity was converted to ε-ADPR concentration using the ε-ADPR standard curve. Slopes of the progress curves yielded the velocities of the reactions, which were plotted in GraphPad Prism.
 
-## Effect of 1,6-hexanediol on TIR domain activity and precipitation
+### Effect of 1,6-hexanediol on TIR domain activity and precipitation
 
 To evaluate the effect of 1,6-hexanediol on TIR activity, the Fluorescent Assay was performed in triplicate in the absence and presence of PEG 3350 or sodium citrate. For pure protein, 35 µM TIR (final concentration) was incubated in Assay Buffer at room temperature for 10 min with or without 2% 1,6-hexanediol (final concentration). For PEG 3350 or citrate, 2.5 µM TIR was incubated in Assay Buffer with 25% PEG 3350 or 500 mM sodium citrate (final concentrations) for 10 min at room temperature with or without 2% 1,6-hexanediol. The reactions were initiated with 1 mM ε-NAD and monitored every 15 s for 15 min. Using the ε-ADPR standard curve, fluorescence was converted to [ε-ADPR], and the reaction velocities (i.e. slopes of the progress curves) were obtained. Velocities were normalized for enzyme concentration, and these normalized velocities were plotted in GraphPad Prism.
 
 To determine whether 1,6-hexanediol can alter TIR precipitation, 1,6-hexanediol was added either before or after TIR precipitation in duplicate. To assess whether 1,6-hexanediol disrupts TIR precipitation, TIR precipitates were formed first by incubating 10 μM TIR (final concentration) with 25% PEG3350 or 500 mM sodium citrate (final concentration) at room temperature for 15 min. 1,6-hexanediol (0, 1, or 2%; final concentrations) was added to the mixture and incubated at room temperature for an additional 10 min. The precentrifugation control was removed, and the remaining mixture was centrifuged at 21,000 x g for 10 min at 4 °C. Supernatant fractions were removed, and the pellet was resuspended in Assay Buffer with the respective additive and concentration of 1,6-hexanediol. All fractions were run on an SDS-PAGE and stained with Coomassie Blue, and gels were imaged on a BioRad Gel Doc EZ Gel Documentation System with Image Lab Software. Next, we determined if 1,6-hexanediol could prevent TIR precipitation. 10 µM TIR was incubated in Assay Buffer with 1,6-hexanediol (0, 1, or 2%; final concentration) for 15 min at room temperature. 25% PEG 3350 or 500 mM sodium citrate was added to the TIR-buffer-hexanediol mixture and incubated further for 10 min. Controls were removed and the samples were centrifuged at 21,000 x g for 10 min at 4 °C. As before, supernatant fractions were removed, and pellet fractions were resuspended in Assay Buffer with respective additives and hexanediol concentrations. Fractions were analyzed by SDS-PAGE/Coomassie staining; representative images are shown.
 
-## Phase transition reversibility
+### Phase transition reversibility
 
 To evaluate the reversibility of the TIR phase transition, 5 µM of TIR was mixed with Assay Buffer and 25% PEG 3350 or 500 mM sodium citrate in duplicate (final concentrations). Following a 15-min incubation period at room temperature, precentrifugation controls were removed and the sample remaining was centrifuged at 17,000 x g for 10 min at 4 °C. Supernatant fractions were separated from the pellet, which was resuspended in either Assay Buffer alone or Assay Buffer with respective additive. All fractions were analyzed for enzymatic activity in the Fluorescent Assay. Briefly, the precentrifugation, supernatant, and pellet fractions were aliquoted into the assay plates in duplicate and the reaction was initiated with 1 mM ε-NAD. Fluorescence was converted to [ε-ADPR] concentration with the ε-ADPR curve to yield the progress curves. The velocity of the reactions was taken as the slope of the line and the velocities were plotted in GraphPad Prism.
 
 To validate the kinetic data, 10 µM TIR (final concentration) was incubated in Assay Buffer with either 25% PEG 3350 or 500 mM sodium citrate (final concentration) for 15 min at room temperature; control samples were incubated in Assay Buffer only. Samples were centrifuged at 21,000 x g for 10 min at 4 °C, after which the supernatant was separated from the pellet. The pellets from samples initially prepared with additives were resuspended in either Assay Buffer alone or Assay Buffer plus the respective additive; this was not necessary for the sample initially prepared without additive since the protein is primarily located in the supernatant in this case. After removing another control sample (Additive lanes on gel), the resuspended samples were centrifuged again at 21,000 x g for 10 min at 4 °C. As before, the supernatant was removed, and the pellet was resuspended in Assay Buffer with the respective additive. All samples were analyzed for protein content on an SDS-PAGE gel and stained with Coomassie Blue.
 
-## Effect of pH on TIR domain precipitation and kinetics
+### Effect of pH on TIR domain precipitation and kinetics
 
 To determine the effect of pH on TIR precipitation, the experiments described above were carried out in duplicate at pH values from 4.5 to 9.0. Briefly, 5 µM TIR (final concentration) was mixed with Assay Buffer (50 mM buffer; 150 NaCl) with and without 25% PEG 3350 (final concentration); for pH 4.5–5, sodium acetate buffer was used; for pH 5.5–6.5, MES was used; for pH 7–9, Tris was used. The samples were incubated for 15 min at ambient temperature, at which point the samples were centrifuged at 21,000 x g for 10 min at 4 °C. The supernatant was removed, and the pellet was resuspended in either buffer alone or buffer with 25% PEG 3350 (final concentration); the presence or absence of 25% PEG 3350 and the buffer identity of the resuspension solution corresponded to the initial sample preparation. To neutralize the buffer, 10 µL of 1 M Tris (pH 6.8) was added to each sample before running on an SDS-PAGE gel and staining with Coomassie blue. Images of the gels were obtained on the BioRad Gel Doc EZ Gel Documentation System with Image Lab Software. Representative images are shown. ImageJ was used to quantify the bands, which were plotted in GraphPad Prism.
 
 Steady-state kinetic analyses were also performed at each pH in 25% PEG 3350. A constant concentration of 2.5 µM TIR was used in these assays. Reaction components were mixed in quadruplicate and incubated at room temperature for 10 min before initiating the reaction with 0–2000 µM of ε-NAD (final concentration). Fluorescence intensity was monitored every 15 s for 15 min. Using the ε-ADPR standard curve, the fluorescence was converted to [ε-ADPR]. The velocity of the reactions was calculated from the slope of the progress curve at each ε-NAD concentration. Kinetic parameters were determined by fitting these velocities to the Michaelis-Menten equation (Eq. 1) at each pH. The log of Km, kcat, and kcat/Km values were determined and plotted in GraphPad Prism.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Negative stain EM on TIR (270 µg/mL) was performed in Assay Buffer (50 mM Tris, pH 8; 150 mM NaCl) with or without 500 mM sodium citrate. Samples were applied to glow-discharged, carbon- and formvar-coated copper grids and allowed to sit for 1 min and 30 s before blotting excess liquid away. 1% uranyl acetate was used to fix the samples before imaging. Samples were imaged on an FEI Tecnai Spirit 12 microscope. The diameters of particles in the samples with citrate were analyzed in ImageJ.
 
-## TIR domain mutants
+### TIR domain mutants
 
 TIR domain mutants were made using PCR-based methods. The pET30a + TIR-1 TIR domain construct was used as a template (0.2–2 ng/µL; final concentration). The manufacturer’s protocol for iProof High-Fidelity DNA Polymerase (Bio-Rad Laboratories, Inc) was followed using iProof HF buffer supplemented with 3% DMSO. 50 µL reaction volumes were used in the following protocol: initial denaturation for 3 min at 98 °C, denaturation for 45 s at 98 °C, annealing for 1:30 min at 45°C–72°C, extension for 6 min at 72 °C, final extension for 10 min at 72 °C. Denaturation, annealing, and extension steps were repeated 30 times. The following day, DpnI was added to the PCR reactions and incubated at 37 °C for 2 hr to digest the template DNA. The digest was transformed into chemically competent E. coli XL1-Blue cells. Transformants were grown overnight in LB media with 50 µg/mL kanamycin and mini-prepped (Promega). Mutagenesis was validated by Sanger sequencing (Genewiz). The mutants were expressed and purified as described for WT TIR.
 
@@ -231,6 +855,6 @@ Steady-state kinetic analyses of the mutants were carried out in Assay Buffer wi
 
 To evaluate the precipitation capacity of TIR mutants, 10 µM (WT, G747P, E788Q, and H833A) or 3 µM (WT, E788A) of the enzyme was mixed with Assay Buffer (50 mM Tris, pH 8.0; 150 NaCl) with and without 25% PEG 3350 or 500 mM sodium citrate (final concentrations). Precipitation of the TIRE788A mutant was evaluated at 3 µM due to low yields of the protein; WT TIR at 3 µM was included as the proper control. The samples were incubated for 15 min at ambient temperature, at which point the samples were centrifuged at 21,000 x g for 10 min at 4 °C. The supernatant was removed, and the pellet was resuspended buffer with the respective additive (final concentration). Samples were diluted 1:1 with water before running on an SDS-PAGE gel. Stain-free images of the gels were obtained on the BioRad Gel Doc EZ Gel Documentation System with Image Lab Software. Representative images are shown. ImageJ was used to quantify the bands, which were plotted in GraphPad Prism.
 
-## Statistical analyses
+### Statistical analyses
 
 Differences in the survival of C. elegans in the P. aeruginosa pathogenesis assays were determined with the log-rank test after survival curves were estimated for each group with the Kaplan-Meier method. OASIS two was used for these statistical analyses (Han et al., 2016). qRT-PCR studies, intestinal CFU quantification, western blot band intensity quantification, TIR NADase activity, and TIR protein precipitation are presented as the mean ± standard error of the mean. Statistical hypothesis testing was performed with Prism 9 (GraphPad Software) using methods indicated in the figure legends. Sample sizes, mean lifespan, and p-values for all trials are shown in Supplementary file 4.

@@ -15,15 +15,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00wge5k78 The Norwegian College of Fishery Science, Faculty of Biosciences, Fisheries and Economics, UiT ‐ The Arctic University of Norway Tromsø Norway
-2. https://ror.org/02x5c5y60 Structure and Cell Biology of Viruses Lab, CIC bioGUNE, Basque Research and Technology Alliance (BRTA) Derio Spain
-3. https://ror.org/0176yjw32 Universidade Federal de Minas Gerais, Institute of Biological Sciences, Department of Microbiology Belo Horizonte Brazil
-4. https://ror.org/05n3dz165 University of Jyväskylä, Department of Biological and Environmental Science and Nanoscience Center Jyväskylä Finland
-5. https://ror.org/035xkbk20 Aix Marseille Univ, MEPHI Marseille France
-6. https://ror.org/0068ff141 IHU-Méditerranée infection Marseille France
-7. https://ror.org/05etxs293 Diamond Light Source, Harwell Science and Innovation Campus Didcot United Kingdom
-8. https://ror.org/040af2s02 University of Helsinki, Molecular and Integrative Biosciences Research Programme Helsinki Finland
-9. https://ror.org/01cc3fy72 Ikerbasque, Basque Foundation for Science Bilbao Spain
+1. The Norwegian College of Fishery Science, Faculty of Biosciences, Fisheries and Economics, UiT ‐ The Arctic University of Norway Tromsø Norway ([ROR:00wge5k78](https://ror.org/00wge5k78))
+2. Structure and Cell Biology of Viruses Lab, CIC bioGUNE, Basque Research and Technology Alliance (BRTA) Derio Spain ([ROR:02x5c5y60](https://ror.org/02x5c5y60))
+3. Universidade Federal de Minas Gerais, Institute of Biological Sciences, Department of Microbiology Belo Horizonte Brazil ([ROR:0176yjw32](https://ror.org/0176yjw32))
+4. University of Jyväskylä, Department of Biological and Environmental Science and Nanoscience Center Jyväskylä Finland ([ROR:05n3dz165](https://ror.org/05n3dz165))
+5. Aix Marseille Univ, MEPHI Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+6. IHU-Méditerranée infection Marseille France ([ROR:0068ff141](https://ror.org/0068ff141))
+7. Diamond Light Source, Harwell Science and Innovation Campus Didcot United Kingdom ([ROR:05etxs293](https://ror.org/05etxs293))
+8. University of Helsinki, Molecular and Integrative Biosciences Research Programme Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+9. Ikerbasque, Basque Foundation for Science Bilbao Spain ([ROR:01cc3fy72](https://ror.org/01cc3fy72))
 
 † Corresponding author
 
@@ -45,7 +45,7 @@ Jyvaskylavirus description is the first step in unveiling the diversity of giant
 
 ## Results
 
-## Giant viruses are present in Finland
+### Giant viruses are present in Finland
 
 During the summer 2019 a preliminary isolation attempt of local amoebas and giant viruses using samples collected in Central Finland hinted at the presence of these viruses in Finnish samples (Appendix 1 and Appendix 1—figure 1). Although viral-like particles were seen, working with the local protist host presented challenges that initially hindered the virus characterization. We followed up this preliminary screening with a larger isolation effort using three reference host strains: A. castellanii, A. polyphaga, and Vermamoeba vermiformis. Ninety-six environmental samples collected in Central Finland were tested using the three different amoebal hosts. Of these samples, 10 had viral presence confirmed by the appearance of cytopathic effect (CPE) in cultures of A. castellanii followed by visualization of negative stained viral-like particles by electron microscopy (10.41% isolation success in A. castellanii). However, some of the samples belonged to the same sample group and viral morphology was similar between some of the isolates. Adjusting for sample type and unique viral morphologies found, we have then tested 53 unique sample types and found three distinct viral morphologies (5.66% isolation success in A. castellanii) (see Supplementary file 1).
 
@@ -59,7 +59,7 @@ The isolate from sample 85 had a single morphotype of approximately 200 nm in si
 
 This sample was collected from the municipal Waste Treatment Centre, Jyväskylä, Finland. The sample was in soil state and originated from a mixture of 70% garden waste, 15% woodchips, and 15% pretreated biowaste. Virus Ac-85 was chosen as a model to represent the first giant virus isolate from Finland and named Jyvaskylavirus as a homage to the city of its isolation. Jyvaskylavirus has a fast replication cycle in its A. castellanii host, only causes CPE in A. polyphaga or V. vermiformis in high concentrations likely due to cytotoxic effect of the virus preparation, is sensitive to chloroform treatment (10% for 10 min), and is stable for long periods (up to 109 days) even at 37°C (Appendix 1 and Appendix 1—figure 2). A fast replication cycle is a feature also shown for other marseilleviruses (Boyer et al., 2009; Fabre et al., 2017).
 
-## Jyvaskylavirus belongs to the Marseilleviridae family
+### Jyvaskylavirus belongs to the Marseilleviridae family
 
 Jyvaskylavirus contains a 359,967 base pairs (bp) genome, with a 42.80% GC content and 388 predicted open reading frames (ORFs) coding for proteins with sizes that vary between 99 and 1525 amino acids. The positive DNA strand codes for 186 ORFs whereas the other 202 are in the negative strand (Figure 2A; Supplementary file 2). During genome annotation, some of the Nucleocytoviricota conserved proteins were detected, including the DNA polymerase family B (ORF177) and the A32-like packaging ATPase (ORF23). The most of Jyvaskylavirus genes (about 67%) code for uncharacterized proteins. The second major function category is the DNA replication, recombination, and repair genes, including three histone-like proteins (ORF215, 216, 320), a typical marseillevirus genome feature (Figure 2B; Bryson et al., 2022). Three new ORFans were detected (ORF264, 265, 289), representing genes that have no significant similarity with any other sequences from the database used in this analysis. ORF264, 265, and 289 codes for putative proteins with 108, 157, and 119 amino acids, respectively. We searched for translation-related genes and found three translation factors, including a translation initiation factor (ORF154), an elongation factor (ORF318), and a peptide chain release factor (ORF28). No tRNAs or aminoacyl tRNA synthetases genes were found. Furthermore, most of the BLASTp best hits for Jyvaskylavirus amino acid sequences matched Lausannevirus or Port-miou virus that are phylogenetically related to marseilleiviruses from lineage B. This observation can also be reinforced by the phylogeny based on DNA polymerase family B, which clusters the Jyvaskylavirus within Marseilleviridae family, together with other marseilleviruses from clade B (Figure 2C, Appendix 1—figure 3A). When analyzing the genome synteny of different marseilleviruses genomes, it is shown that Jyvaskylavirus presents similarity blocks comparable to those from clade B marseilleviruses (Appendix 1—figure 3B). Searching the Jyvaskylavirus MCP and DNA polymerase sequences in the MGnify database (Richardson et al., 2023) yields multiple hits with significantly low E-values (<1e-80), as expected from the apparent ubiquity of marseilleviruses. Of note was the detection of similar sequences in metagenomes and transcriptomes obtained from drinking water distribution systems of ground and surface waterworks in Central and Eastern Finland, evidencing that marseilleviruses are prevalent but still unexplored in this region (Tiwari et al., 2021).
 
@@ -67,25 +67,25 @@ Jyvaskylavirus contains a 359,967 base pairs (bp) genome, with a 42.80% GC conte
 
 **Figure 2.:** (A) Representative map of Jyvaskylavirus genome features. The G-C content, G-C skew, and open reading frames (ORFs) distribution throughout the DNA sequence are coded by different ring colors as indicated in the color legend above. ORFs coding for the structural proteins mentioned in this paper are indicated by their ORF number. The outer blue ring represents the forward strand (positive sense) whereas the inner blue ring represents the reverse strand (negative sense). This illustrative genome map was constructed using CGView server (Grant and Stothard, 2008). (B) Number of Jyvaskylavirus proteins according to the function predicted during genome annotation; n=388. (C) Maximum-likelihood phylogenetic tree based on DNA polymerase family B amino acid sequences from different nucleocytoviruses. The Jyvaskylavirus sequence is indicated by a blue circle. An asterisk (*) marks close viruses with structures obtained by cryo-electron microscopy (cryo-EM). The alignment was performed with MUSCLE and the maximum-likelihood tree was reconstructed using IQtree software using ultrafast bootstrap (1000 replicates). The best-fit model selected using ModelFinder (implemented in IQtree) was VT+F+ R5. Scale bar indicates the number of substitutions per site.
 
-## Jyvaskylavirus attachment to host cells and extracellular virion clusters by scanning helium ion microscopy
+### Jyvaskylavirus attachment to host cells and extracellular virion clusters by scanning helium ion microscopy
 
 To visualize the interaction of Jyvaskylavirus virions with its A. castellanii host cells, we used a scanning helium ion microscope (HIM). This imaging technology has proven successful in the study of bacteriophages and their host bacteria in the past (Leppänen et al., 2017). We adapted the sample preparation methods to image cultures of A. castellanii infected with Jyvaskylavirus. Sample preparation was made by allowing cells colonize silicon chips treated with poly-l-lysine followed by infection and fixation, avoiding any need for cell scraping and pelleting for successfully imaging the amoeba cells and Jyvaskylavirus virions (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/103492/elife-103492-fig3-v1.jpg)
 
-**Figure 3.:** A. castellanii cells.(A) A. castellanii cells with spined structures (acanthopodia); elongated cell at the center. (B) Details of a cell containing several viral particles on its surface (white arrowheads mark virions). (C) Icosahedrally shaped virions near cell surface invaginations appearing as craters; inset, details of a virion likely starting the infection process through endocytosis. (D) Center, one cell containing viruses on its surface (white arrowhead) near a burst cell displayed with its ruptured content. Right inset, details of the burst cell content, showing several vesicles (yellow asterisks) and viruses (white arrowheads). Left inset, clusters of virions inside extracellular vesicles indicated by white arrows and individual virions by white arrowheads.
+**Figure 3.:** (A) A. castellanii cells with spined structures (acanthopodia); elongated cell at the center. (B) Details of a cell containing several viral particles on its surface (white arrowheads mark virions). (C) Icosahedrally shaped virions near cell surface invaginations appearing as craters; inset, details of a virion likely starting the infection process through endocytosis. (D) Center, one cell containing viruses on its surface (white arrowhead) near a burst cell displayed with its ruptured content. Right inset, details of the burst cell content, showing several vesicles (yellow asterisks) and viruses (white arrowheads). Left inset, clusters of virions inside extracellular vesicles indicated by white arrows and individual virions by white arrowheads.
 
 By HIM imaging A. castellanii cells appear as mainly oval-shaped with spined structures (acanthopodia) protruding from the cell surface; furthermore, a cell with an elongated shape was captured likely in the process of cell division (Figure 3A). No cysts were seen in these samples. At a closer range, cell surfaces appear rugose, full of crevices, and contains virions attached to it (Figure 3B). One of strategies for marseillevirus entry is the triggering of an endosomal-stimulated pathway (Arantes et al., 2016). We captured a cell with virions attached in regions showing invaginations of the cell membrane, probably indicating the process of endocytosis (Figure 3C). These craters, surrounded by walls with varying degrees of steepness, differ in size although the estimated diameter to accommodate at least one virion is about 300 nm (Figure 3C, inset). Alongside intact cells with attached virions, we also observed a broken cell nearby, with most of its cell contents released (Figure 3D, center). Extracellular vesicles larger than 500 nm in size containing multiple virions inside were visualized close to burst cells (Figure 3D, left inset). These virion clusters are important for marseilleviruses, which are smaller than other giant viruses, to reach the required threshold for triggering amoebal phagocytosis and thus initiating their infection cycle through this entry mechanism (Arantes et al., 2016). Details of the ruptured cell contents, revealing the presence of large internal spherical vesicles and intracellular virions, are shown in Figure 3D (right inset). Single virions were also observed on the substrate, suggesting that they could attach to foraging cells.
 
-## Jyvaskylavirus forms intracellular vesicles and viral factories inside A. castellanii host cells
+### Jyvaskylavirus forms intracellular vesicles and viral factories inside A. castellanii host cells
 
 Intracellular details of the replication cycle of Jyvaskylavirus were imaged by transmission electron microscopy using ultrathin sectioning of cells undergoing CPE at 24 hr post-infection (hpi). At 24 hpi, the cells are overtaken by virus production, with intracellular vesicles of varying dimensions (e.g. 1–2 µm), which contain already apparent virions (Figure 4A). Large viral factories are observed, with some occupying almost the entire cell area (Figure 4B). The nucleus and other cellular components, such as mitochondria, can be clearly distinguished within the cell sections (Figure 4A–C). Several individual virions also populated the cytoplasm. One imaged vesicle is juxtaposed to the nuclear membrane and contains several assembled virions with clear icosahedral shape. These virion-rich intracellular vesicles are likely the source of the extracellular ones imaged by HIM in Figure 3D (left inset). Membrane-related structures located near or nearly attached to the luminal side of the large vesicle are discernible (Figure 4C and D). These membrane-derived assembled structures might serve during virus morphogenesis (Figure 4D). Inspection of the interior of viral factories unravels distinct stages of particle formation (Figure 4E). A putative assembly path can be extrapolated from the analysis of images of particles, which transition from a half-assembled icosahedron to a particle with an open vertex through the orderly accumulation of capsid proteins (Figure 4F). This open vertex is potentially used for genome packaging, and it is subsequently closed by the plugging of peripentonal and penton proteins.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103492/elife-103492-fig4-v1.jpg)
 
-**Figure 4.:** A. castellanii cells infected by Jyvaskylavirus.(A) Infected cell containing viruses spread over its cytoplasm marked by C (green) and with intracellular vesicles filled with viruses indicated by white arrows. The nucleus, whose boundary is highlighted in semitransparent cyan, is indicated by the letter N (cyan). (B) One infected cell with a large viral factory (VF, red) in its cytoplasm. (C) View of an intracellular vesicle with icosahedral genome-filled virions as marked by a white arrowhead; membrane-related structures nearby the vesicle interior are marked by dark-yellow triangles. NM (light cyan) and M (yellow) mark the nuclear membrane and the mitochondria, respectively. (D) Enlarged view of the region marked by the black rectangle in (C) showing possible membrane-related structure juxtaposed to or detached from the vesicle interior; black triangles possibly indicated a forming membrane vesicle. (E) Details of virions in different stages of maturation inside the viral factory; DNA-full particles in white arrowheads, empty particles in blue arrowheads. (F) Putative stages of virion assembly (indicated by the black arrows) as derived from the inspection of distinct particles in E and other cellular sections. The white elliptical line highlights a capsid aperture, while the red asterisk indicates an assembling capsid; in the remaining virion images, the capsid appears more assembled.
+**Figure 4.:** (A) Infected cell containing viruses spread over its cytoplasm marked by C (green) and with intracellular vesicles filled with viruses indicated by white arrows. The nucleus, whose boundary is highlighted in semitransparent cyan, is indicated by the letter N (cyan). (B) One infected cell with a large viral factory (VF, red) in its cytoplasm. (C) View of an intracellular vesicle with icosahedral genome-filled virions as marked by a white arrowhead; membrane-related structures nearby the vesicle interior are marked by dark-yellow triangles. NM (light cyan) and M (yellow) mark the nuclear membrane and the mitochondria, respectively. (D) Enlarged view of the region marked by the black rectangle in (C) showing possible membrane-related structure juxtaposed to or detached from the vesicle interior; black triangles possibly indicated a forming membrane vesicle. (E) Details of virions in different stages of maturation inside the viral factory; DNA-full particles in white arrowheads, empty particles in blue arrowheads. (F) Putative stages of virion assembly (indicated by the black arrows) as derived from the inspection of distinct particles in E and other cellular sections. The white elliptical line highlights a capsid aperture, while the red asterisk indicates an assembling capsid; in the remaining virion images, the capsid appears more assembled.
 
-## Jyvaskylavirus 3D architecture
+### Jyvaskylavirus 3D architecture
 
 Jyvaskylavirus icosahedral virion, determined to 6.3 Å resolution as judged by the gold-standard Fourier shell correlation, possesses a diameter of 2516 Å (vertex-to-vertex) and a triangulation number T=309 (h=7, k=13) (Figure 5A, Appendix 1—figure 4, and Appendix 1—table 1). The protein capsid shell, approximately 120 Å thick, can be geometrically represented by trisymmetrons and pentasymmetrons as similarly done with other NCLDVs (Figure 5B; Sinkovits and Baker, 2010). The trisymmetron and pentasymmetron comprises 136 and 30 pseudo-hexameric capsomers, respectively, along with one penton complex, containing five copies of the penton protein (Figure 5B and C). Jyvaskylavirus icosahedral asymmetric unit (IAU) is composed of 51 pseudo-hexameric capsomers plus 1/3 of the capsomer sitting on the icosahedral threefold axis (Figure 5C). Both the capsid organization and virion size are similar to those of other marseilleviruses, such as Melbournevirus and Tokyovirus. Pacmanvirus, considered to be at the crossroads between Asfarviridae and Faustoviruses, also possesses the same T number (309) and a comparable diameter to Jyvaskylavirus. In contrast, other giant viruses, such as ASFV, representative of the Asfarviridae family, have a T number of 277 and a diameter of approximately 2100 Å, while PBCV-1, a member of the Phycodnaviridae family, has a T number of 169 and an average diameter of 1900 Å. All of the abovementioned viruses have been shown to possess an MCP with a vertical double jellyroll (DJR) fold that composes the capsid shell, along with an internal membrane bilayer. Minor capsid proteins have been identified and structurally modeled for the smaller virions ASFV and PBCV-1 (Wang et al., 2019; Shao et al., 2022).
 
@@ -95,7 +95,7 @@ Jyvaskylavirus icosahedral virion, determined to 6.3 Å resolution as judged by 
 
 Beneath the Jyvaskylavirus capsid, the membrane vesicle follows icosahedral symmetry, although it also displays a high degree of sphericity (Figure 5A, left). This internal membrane vesicle encloses the genome. Some particles, excluded during 2D classification, showed heterogeneous membrane morphologies indicating their structural fragility. At the fivefold axis between the capsid and the membrane, there is relatively weak density suggesting the presence of additional proteins (see below), along with a clear bulging of the membrane vesicle at the fivefold (radius of curvature of ~275 Å) (Figure 5A, left). To the best of our knowledge, this bulging has only been clearly observed in the closely related Melbournevirus and Tokyovirus.
 
-## Jyvaskylavirus structural proteins composing the capsid
+### Jyvaskylavirus structural proteins composing the capsid
 
 At 6.3 Å resolution alpha-helical secondary structural motifs are identifiable while the separation of β-strands became clearer beyond 5 Å. Our density corresponding to the capsomer displays unequivocally pseudo-hexameric morphology with the characteristic footprint of trimers formed by vertical DJR seen in other viruses of the kingdom Bamfordviriae (Andrés et al., 2020; Ravantti et al., 2020; Simmonds et al., 2023). A cross-section of the density shows the β-barrel walls, further supporting that the MCP possesses a vertical DJR fold (Figure 5C, inset). During genome annotation based on sequence homology with other marseilleviruses, ORF184 was identified as a potential MCP. We submitted ORF184 to AlphaFold3, which predicted a model with a DJR fold (Figure 5D; Abramson et al., 2024). The fitting of this model into density leaves no doubts about ORF184 being the MCP and a total of 154 copies of the MCP compose the IAU (Figure 5C and E).
 
@@ -129,17 +129,62 @@ In summary, marseilleviruses found in diverse locations and environments worldwi
 
 ## Materials and methods
 
-## Samples used for screening, amoebal host cultivation, and viral isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain Acanthamoeba castellanii</td>
+      <td>Acanthamoeba castellanii</td>
+      <td>Aix Marseille University, France</td>
+      <td>AC</td>
+      <td>Donated by Prof. Bernard La Scola (Aix Marseille University, France)</td>
+    </tr>
+    <tr>
+      <td>Strain Acanthamoeba polyphaga</td>
+      <td>Acanthamoeba polyphaga</td>
+      <td>Aix Marseille University, France</td>
+      <td>AP</td>
+      <td>Donated by Prof. Bernard La Scola (Aix Marseille University, France).</td>
+    </tr>
+    <tr>
+      <td>Strain Vermamoeba vermiformis</td>
+      <td>Vermamoeba vermiformis</td>
+      <td>Aix Marseille University, France</td>
+      <td>AP</td>
+      <td>Donated by Prof. Bernard La Scola (Aix Marseille University, France)</td>
+    </tr>
+    <tr>
+      <td>StrainJyvaskylavirus</td>
+      <td>Jyvaskylavirus</td>
+      <td>This study</td>
+      <td>AC85</td>
+      <td>Finnish clade B marseillevirus. Genome accession number: PQ284187</td>
+    </tr>
+  </tbody>
+</table>
+
+### Samples used for screening, amoebal host cultivation, and viral isolation
 
 To get an overview on the presence of giant viruses in Finland and their virus-host interactions, water and soil samples were collected from Jyvaskyla (Finland) and used fresh for viral isolation. Previously collected and stored samples were also used, e.g., aquaculture water samples, recirculating aquaculture filter pellets, and frozen water from experimental aquaria (Runtuvuori‐Salmela et al., 2022; Almeida et al., 2019a; Almeida et al., 2019b). Sample details can be found at Supplementary file 1. Water samples were collected directly into Eppendorf tubes. Solid samples like soil and composting material (roughly one-fourth of an Eppendorf tube) were resuspended in 1 ml of PAS buffer (120 mg NaCl, 4 mg MgSO4·7H2O, 4 mg CaCl2·2H2O, 142 mg Na2HPO4, 136 mg KH2PO4 in 1 l of water) and strongly vortexed for resuspension (Thomas et al., 2006). Each sample had the following antibiotic mix added to avoid fungal and bacterial contamination during the isolation process: penicillin (0.14 mg/ml), gentamycin (50 mg/ml), amphotericin B (0.25 µg/ml), ciprofloxacin (0.004 mg/ml), vancomycin (0.004 mg/ml), and doxycycline (0.02 mg/ml). Indicated concentrations are the final concentration of each antibiotic in solution.
 
 Isolation was made using A. castellanii, A. polyphaga, and V. vermiformis hosts. All three host strains were kindly donated by Dr. Bernard La Scola and grown using PYG media at room temperature (~25°C) (Jensen et al., 1970). For the isolation process, cells were mixed with 50 µl of the samples in 96-well plates. Cell density was controlled by resuspending confluent T25 flasks in 1 ml of PYG media and diluting it 1/1000 before adding 200 µl to each well in the plates. The antibiotics mentioned above were also present in PYG media used for preparing the isolation plates. Cells were monitored daily for 5 days for the appearance of CPE. In case no effect appeared, the plates were frozen, thawed, and 25 µl of each well used as samples for a second passage. Three passages of all samples were made in all three hosts. Negative samples were those that no CPE appeared after the third passage.
 
-## Growth curve, chloroform sensitivity, and stability
+### Growth curve, chloroform sensitivity, and stability
 
 Growth curves were made by infecting confluent cells in 96-well plates with a low multiplicity of infection (MOI) (1/1000 dilution of the virus stock). For each dilution four wells were prepared. At the indicated time points the samples were frozen and then, after two freeze-thaw cycles, 50 µl of each well were transferred to a new 96-well plate containing confluent A. castellanii cells for titration. Chloroform sensitivity was made by exposing a 900 µl viral aliquot to 10% chloroform for 10 min, inside an Eppendorf tube. As control, 900 µl of the same viral stock was mixed with 100 µl of PAS and incubated for 10 min. After incubation both were serially diluted and titrated (four replicates per dilution). Stability was evaluated by diluting a viral stock serially (−1 to –11, 1 ml aliquots) and storing the viral dilutions at room temperature (~25°C), cold room (~8°C), and inside an incubator (37°C). Samples were stored for 109 days and then titrated. The incubation time used is this long because of the SARS CoV2-related lockdowns that happened during this experiment. All titers were calculated by tissue culture infectious dose (TCID)50 (Reed and Muench, 1938).
 
-## Sequencing and genomic data
+### Sequencing and genomic data
 
 For DNA extraction, a confluent T25 was infected at a low MOI and the supernatant was harvested after the appearance of full CPE. Two aliquots of 2 ml each were subjected to nuclease treatment and capsid precipitation by ZnCl2 (Santos, 1991). After proteinase K treatment the samples were mixed with ethanol:guanidine and DNA extraction was finished using the GeneJET Genomic DNA Purification Kit (Thermo Fisher). DNA paired-end libraries (2 × 250 bp) were constructed with 1 ng of the viral genome as input using the Nextera XT DNA kit (Illumina, Inc, San Diego, CA, USA) and sequenced on the Illumina MiSeq for 39 hr, the same strategy employed by Brahim Belhaouari et al., 2022.
 
@@ -147,7 +192,7 @@ The assembled genome was submitted to ORFs prediction using GeneMarkS (Besemer e
 
 Phylogenetic trees were constructed based on DNA polymerase and MCP amino acid sequences. The sequences used for alignments were obtained using BLASTp (expect threshold: 10-3) against NCBI nonredundant protein sequences (nr) database. The alignments were performed using MUSCLE executed through MEGA X program (Edgar, 2004; Kumar et al., 2018). Maximum-likelihood phylogenetic trees were constructed using IQtree software (version 1.6.12) with 1000 bootstrap replicates as branches support (Kumar, 2018). Best-fit substitution models were selected by ModelFinder algorithm implemented in IQtree (Kalyaanamoorthy et al., 2017). The phylogenetic trees were visualized using iTOL (Letunic and Bork, 2021).
 
-## Microscopy
+### Microscopy
 
 Samples with noticeable CPE during the viral isolation process were prepared for checking the presence of negatively stained viral-like particles. Two microliters of the lysates (supernatant straight from the isolation plate) were added to a microscopy grid and incubated for 2 min at room temperature. The excess liquid was removed with a water-soaked Whatman paper. Then, 5 µl of 2% phosphotungstic acid was added to the grid and its excess was removed after an incubation of 2 min. The grids were left for drying at room temperature for 5 min and used for imaging at a Jeol JEM-1400 electron microscope straight away.
 
@@ -155,15 +200,15 @@ Samples destined for thin sectioning were prepared by infecting a T75 flask with
 
 Substrates for helium ion microscopy were prepared by incubating silicon chips in poly-l-lysine (Sigma-Aldrich) for 5 min followed by two wash steps in sterile water and left to dry overnight. A. castellanii cells were seeded in 24-well plates containing the poly-L-lysine-coated substrates and infected at different MOI. After the appearance of CPE, the samples were fixed with 2.5% glutaraldehyde in 0.1 M sodium cacodylate for 2 hr followed by three washes with 0.1 M sodium cacodylate buffer. After that, the samples were stained by incubation for 1 hr with 1% osmium tetroxide followed by three washes with 0.1 M sodium cacodylate and a second staining with 0.1% tannic acid for 20 min. Dehydration was done with sequential exposure to increasing concentrations of ethanol, using the following percentages: 35%, 50%, 70%, 85%, 95%, and 99%. Each exposure was made for 30 min, except for 99%, which had one 30 min exposure followed by a second overnight exposure to ensure proper dehydration. Ethanol washing was followed up by a critical point drying step using 24 cycles in a Leica EM CPD300 equipment. Macroscopic sample structure did not change during the drying. Imaging was made using the Zeiss Orion Nanofab Helium Ion Microscope from the University of Jyväskylä Nanoscience Center with acceleration voltage 30 kV and ion current 0.2–0.3 pA. Electron flood gun was used during imaging to mitigate positive charging by the ions.
 
-## Virus production for cryo-EM and data collection
+### Virus production for cryo-EM and data collection
 
 A large stock of Jyvaskylavirus was prepared and purified for cryo-EM analysis. Twelve confluent T75 flasks were infected at a low MOI. After the appearance of full CPE the flasks were frozen-thaw to lyse still intact cells, and then all the flask contents were moved to falcon tubes. After one additional freeze-thaw cycle, a brief centrifugation (500×g, 5 min, 10°C) was made to clear the lysate from cell debris. Then, the viruses were pelleted (10,000×g, 60 min, 10°C) and resuspended in 700 µl of PAS. The resuspended viruses were loaded into a 10–50% sucrose gradient and centrifuged (6500×g, 90 min, 10°C). The viral band of the gradient was collected, mixed with PAS buffer to dilute the sucrose, and the viruses were pelleted again. The final pellet was resuspended in 150 µl of PAS buffer, aliquoted and shipped at 10°C to the CIC bioGUNE for cryo-EM analysis. Upon arrival the sample was vitrified using either a Vitrorobot Mark IV (Thermo Fisher) or an Automatic Plunge Freezer EM GP2 (Leica). As a ‘quality control’ step, some of the grids were inspected using the in-house JEM-2200FS (JEOL, Ltd.) cryo-TEM equipped with a K2 bioquantum camera. The remaining grids were shipped for high-resolution imaging at eBIC - Diamond Light Source (Didcot, UK) in line with democratic access to large infrastructure (Stuart et al., 2016). Four data collections on a Titan Krios 300 kV with a K3 camera were performed at a nominal magnification of ×64,000, resulting in a final pixel size of 1.34 or 1.35 Å/pix depending on the microscope used (Appendix 1—table 1). Briefly, samples were vitrified on Quantifoil Cu R2/2 or R2/1 300 mesh grids and then collected over 40–45 fractions (with a dose per frame of ≈1 e-/Å2), with defocus ranges from –0.6 to 3 µm. As we had approximately one particle per hole, different software were used at each data collection to test which strategy would yield the highest number of particles (EPU, TOMO5, and Serial EM; for details in each data collection, see Appendix 1—table 1). After four data collections we obtained 3742 useful particles from 17,720 movies.
 
-## 3D reconstruction of Jyvaskylavirus
+### 3D reconstruction of Jyvaskylavirus
 
 MotionCorr2 was used to correct the induced beam-shift across the frames within the movies, while the CTF of the individual movies was estimated using the CTFFIND4 software (Rohou and Grigorieff, 2015; Zheng et al., 2017). Particle auto-picking for the first data collection was performed in crYOLO, training the model with 10 movies Wagner et al., 2019; however, the picking process was supervised. For the remaining acquisitions, particles were manually selected in RELION 3.1 due to the limited number of movies available (Scheres, 2012). Virions were extracted into a 1000×1000 pixel box, resulting in a final pixel size of 3.087 Å. For each dataset, several rounds of 2D and 3D classifications were performed before 3D refinement, with the initial 3D reference being generated ab initio from a limited number of particles from the first data collection. Subsequently, the particles were re-extracted and re-centered, then combined with those from the other data collection after undergoing the same preprocessing workflow. Further classifications led to a homogeneous class comprising 3742 particles (Appendix 1—table 1), which then underwent 3D icosahedral refinement with the original pixel size (1.34 Å/pix) on a 2304 pix box. This was achieved by using the Picasso HPC at the University of Malaga node of the Spanish Supercomputing Network (RES). Computing resources used for the above refinement included 3 tasks, 32 cpu per task, and 1.6 TB of memory (using --pad 1). Finally, Ewald sphere correction was applied to the final map, resulting in a resolution of 6.3 Å and a notable improvement in the map interpretability and FSC curve (Appendix 1—figure 4).
 
-## Structural analysis of Jyvaskylavirus
+### Structural analysis of Jyvaskylavirus
 
 Using AlphaFold3 we generated an initial atomic model of the MCP corresponding to the ORF184 identified in this study by sequence comparison with other Marseillaviridae (Abramson et al., 2024). The best-ranked predicted model had a confidence level of 95% based on the predicted local-distance difference test, which ranged from 28.7% to 98.9% across the residues. The MCP model was manually fitted into the density corresponding to the pseudo-hexameric capsomer using COOT graphic software (Emsley and Cowtan, 2004). The three molecules were rigid body refined into the 6.3 Å resolution map using PHENIX real-space refinement (Afonine et al., 2018) leading to a CCmask of 52%.
 

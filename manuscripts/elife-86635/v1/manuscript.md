@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01w6qp003 Domestication Lab, Konrad Lorenz Institute of Ethology, Department of Interdisciplinary Life Sciences, University of Veterinary Medicine Vienna Vienna Austria
-2. https://ror.org/008x57b05 Behavioral Ecology and Ecophysiology, Department of Biology, University of Antwerp Antwerp Belgium
-3. https://ror.org/00ed5y156 Centre for Research and Conservation, Royal Zoological Society of Antwerp Antwerp Belgium
+1. Domestication Lab, Konrad Lorenz Institute of Ethology, Department of Interdisciplinary Life Sciences, University of Veterinary Medicine Vienna Vienna Austria ([ROR:01w6qp003](https://ror.org/01w6qp003))
+2. Behavioral Ecology and Ecophysiology, Department of Biology, University of Antwerp Antwerp Belgium ([ROR:008x57b05](https://ror.org/008x57b05))
+3. Centre for Research and Conservation, Royal Zoological Society of Antwerp Antwerp Belgium ([ROR:00ed5y156](https://ror.org/00ed5y156))
 4. SALTO Agro- and Biotechnology, Odisee University of Applied Sciences Sint-Niklaas Belgium
-5. https://ror.org/02a33b393 Max Planck Institute for Evolutionary Anthropology Leipzig Germany
-6. https://ror.org/026stee22 Max-Planck-Institute of Animal Behaviour Radolfzell Germany
-7. https://ror.org/04qmmjx98 Comparative BioCognition, Institute of Cognitive Science, University of Osnabrück Osnabrück Germany
-8. https://ror.org/02f99v835 Endocrinology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany
-9. https://ror.org/02f99v835 Leibniz ScienceCampus Primate Cognition, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany
+5. Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
+6. Max-Planck-Institute of Animal Behaviour Radolfzell Germany ([ROR:026stee22](https://ror.org/026stee22))
+7. Comparative BioCognition, Institute of Cognitive Science, University of Osnabrück Osnabrück Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))
+8. Endocrinology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
+9. Leibniz ScienceCampus Primate Cognition, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
 
 † Corresponding author
 
@@ -34,41 +34,718 @@ Growth trajectories can be highly variable in timing and amplitudes, leading to 
 
 The evolutionary origin and supposed uniqueness of the human adolescent GS remain disputed (Bogin, 2020; Ellison et al., 2012; Gluckman et al., 2013; Holmgren, 2022; Sandel et al., 2023; Stevens et al., 2013; Stulp and Barrett, 2016; Watts and Gavan, 1982; Weisfeld, 2006). Many primates, including humans and bonobos, show a GS in body weight in one or both sexes towards the end of their growth period, with differences in the occurrence, amplitude, timing, and/or duration of this weight-GS between species and between sexes (for detailed discussion of the evolution of such heterochrony and other variability [Bogin, 2020; Leigh, 2001; Leigh and Shea, 1995]). Such weight-GSs in non-human primates seem homologous to the adolescent weight-GS in humans, with the difference that in humans, chimpanzees (Pan troglodytes) and to some degree also bonobos, both adolescence and the associated weight-GS occur delayed compared to other non-human primates, and in humans seem also more squeezed (Leigh, 2001; Leigh, 1996). However, it has been argued that the human adolescent GS is nonetheless unique because beside the weight-GS, it also encompasses a strong GS in linear skeletal length that is evident in both sexes and often occurs even under unfavourable conditions (Bogin, 2020; Hochberg, 2011). In non-human primates, data on linear skeletal growth are scarce, but seem to indicate that accelerations in linear length growth are indeed undetectable or marginal, even in species that show rather extreme weight-GSs such as mandrills (Mandrillus sphinx), chimpanzees (P. troglodytes), or gorillas (Gorilla beringei beringei) (Galbany et al., 2017; Hamada and Udono, 2002; Setchell et al., 2001; Watts and Gavan, 1982; but see Berghänel et al., 2015; Lu et al., 2016). This ‘sharp contrast’ (Bogin, 2020, p. 180) between weight- and length growth rates was recognized by both proponents and opponents of a unique human length-GS (Bogin, 2020; Weisfeld, 2006) and raised explanation attempts (Gluckman et al., 2013).
 
-## Mind the scale: pitfalls in comparing weight- and length growth rates
+### Mind the scale: pitfalls in comparing weight- and length growth rates
 
 One problem in interpreting somatic growth patterns in non-human primates and most other species may be that different measures for growth rates are compared with one another, including weight- and length growth rates (Figure 1). The problem arises from a scaling issue and an inappropriate comparison between linear (length) and cubic (volume = weight) growth (Cullen et al., 2021; Schmidt-Nielsen, 1984). In a simplified case of isometric weight growth, length growth would follow a cubic-root function of weight growth to align, an aspect that is generally acknowledged and underlies discussions about weight–height ratios like the body mass index (Cullen et al., 2021; Schmidt-Nielsen, 1984). Comparisons and interpretations of weight- and length growth rates then typically build on two assumptions. First, it is correctly assumed that notwithstanding their non-linear relationship, weight- and length values still rise and fall together. Second, it is incorrectly assumed that the same logic also applies to the respective growth rates (Figure 1; Cullen et al., 2021). The cubic relationship between weight and length growth inevitably results in a decreasing or, at best, constant length growth rate if the acceleration in weight growth rate does not exceed a quadratic function of age (Figure 1; Cullen et al., 2021). Hence, in many cases, an acceleration in weight growth rate (=spurt) would be accompanied by a decreasing length growth rate, even if both are perfectly aligned with each other in isometric growth. As previously noticed (e.g., Hamada and Udono, 2002), a length-GS is only detectable if the actual acceleration resulting from the weight-GS exceeds the parallel deceleration in length growth rate that results from the cubic relationship. In fact, whether a linear length-GS is detectable is largely independent of the amplitude of the associated weight-GS, and rather depends on various other aspects, such as how fast weight growth rate accelerates, how the level of acceleration changes (e.g., linear or quadratic acceleration), or at which body size the acceleration takes off (for details see Figure 1). Therefore, age trajectories of linear length growth rate are difficult to interpret and require consideration of many aspects. Consequently, a dichotomy between present or absent acceleration in linear length growth seems somewhat arbitrary and leads to misinterpretations (Cullen et al., 2021).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig1-v1.jpg)
+
+**Figure 1.:** (A–E) Top/bottom: Absolute size and growth rate (=1st derivation of size). From left to right: Increasingly fast acceleration of volume (~weight) growth and the aligned length growth, from (A) no acceleration (constant volume growth rate and linear increase in volume) through (B) constant acceleration (linear increase in volume growth rate and quadratic increase in volume) to (C) quadratic acceleration of volume growth rate (cubic increase in volume), and (D, E) even faster volume growth acceleration. Due to the cubic relationship, these volume growth rates would align with decreasing (A, B) or constant length growth rates (C), whereas a detectable acceleration in length growth rate may only be found in cases of very fast acceleration in volume growth rate (D, E). Therefore, the current dichotomy between absent and detectable length GSs would only differentiate between (A–C) and (D, E). Another consequence is that, in non-aquatic animals, a cubic relationship is more likely in smaller animals, whereas in larger animals like humans or bonobos, the relationship tends to follow a lower power of 2.5 or even 2 only, as a result from limitation on the bearable weight of a skeletal construction which relates to the sectional area of bones (for more details see e.g., Juul et al., 1995). This means that in case of an equal volume growth acceleration, an aligned acceleration in linear length growth may become more likely detectable in larger animals simply because of the different underlying scaling laws. (F) The above scaling rules lead to further dynamics depending on the temporal overlap of the curves, making length GSs more pronounced and detectable with increasing size (from left to right). A GS in linear length is detectable if the acceleration resulting from the volume-GS exceeds the deceleration in length growth rate that results from the cubic relationship, with the last one becoming weaker with increasing size, respective age. The figure shows how a change from a constant to a linearly accelerating volume growth rate (like in A and B; equal levels of acceleration) results in different levels of acceleration in linear length growth rate depending on the age/size at which this change occurs, from left (change right after birth, only deceleration in length growth rate) (equal to B) to right (change at late age, strong acceleration in length growth rate). Additionally, this figure highlights that even if both volume and linear length show a GS and are perfectly aligned, the linear length growth rate reaches its peak and starts declining again at a time when volume growth rate still increases. See also Figure 1—figure supplement 1 for non-linear acceleration in volume growth rate.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig1-figsupp1-v1.jpg)
+
 Ignoring the scaling issue can cause several methodological artefacts, including (1) undetectable length-GSs despite pronounced weight-GSs, (2) evidence for length-GSs in larger but not small species despite similar weight-GSs, and (3) a pronounced time lag between length- and weight-GS, even if both are perfectly synchronous (for detailed explanation see Figure 1). Additionally, detectability changes with increasing weight. On the one hand, (4) the same acceleration in weight becomes increasingly detectable in linear length (Figure 1F), but on the other hand, (5) the same difference in absolute body weight is accompanied by smaller and smaller differences in linear length (Figure 1A), which makes absolute differences in length more difficult to detect. Importantly, the resource-limited aspect of growth and thus, the dimension of interest for life history trade-offs is biomass production, and therefore, weight growth (Leigh, 1996; Schmidt-Nielsen, 1984), which then may also mediate limits on length growth. Hence, even though body length may itself be under selection, its investigation within a life history framework is only reasonable if its scaling and alignment with body weight is considered.
 
-## Mind the life stage: is the growth spurt an adolescent growth spurt
+### Mind the life stage: is the growth spurt an adolescent growth spurt
 
 Another problem with detecting adolescent GSs is how growth patterns are assigned to developmental stages like adolescence. In non-human primates, developmental stages or events are sometimes vaguely defined or based on proxy measures such as dental eruption or epiphyseal closing, which is usually impossible to assess in vivo (Bolter and Zihlman, 2012; Gavan, 1953). Physiological markers offer an alternative method to differentiate developmental stages in both sexes, and may be more sensitive in detecting age-related changes (Miller, 2022). Physiological systems have been proposed as the major regulatory mechanisms adjusting energy trade-offs and allocation, and thus, adaptively coordinating the expression of life history traits (Del Giudice, 2020). Thus, physiological makers allow to monitor specific life history transitions at a more detailed level, and facilitate inter-specific comparison.
 
 In the empirical part of our study, we used three physiological markers that are indicative of life history stages, but are also directly related to growth. First, DHEA and DHEA-sulfate (DHEA-S) levels allow to determine the onset of adrenarche, the maturation of the adrenal cortex and the onset of adrenal androgen secretion. This is one of the first life history events during postnatal development characterizing the onset of the juvenile period. Increasing levels of DHEA(-S) might be involved in brain development in apes and humans, and inhibit long-bone growth in humans, paralleling the low growth rates during the juvenile period (Hochberg, 2011). Second, changes in testosterone levels indicate testicular maturation in boys and ovarian maturation in girls, and are therefore a physiological marker for the onset of sexual maturation and associated with the adolescence stage in both sexes (Bribiescas, 2010; Muller, 2017). Furthermore, testosterone promotes muscle growth (Bribiescas, 2010). In boys, the adolescent GS in muscle mass lasts longer than the skeletal GS, with muscle growth proceeding into early adulthood (Bogin, 2020). Third, insulin-like growth factor 1 (IGF-1) binds to IGFBP-3 for transportation, and levels of both increase with increasing levels of testosterone. Hence in primates, IGFBP-3 levels increase strongly at the beginning of puberty, and are directly linked to rates of length growth and, in combination with testosterone, to muscle growth during the adolescent GS (Bernstein et al., 2008; Juul et al., 1995; Miller, 2022).
 
-## Growth in bonobos: a comprehensive test case
+### Growth in bonobos: a comprehensive test case
 
 Our empirical data combined measures of somatic growth with measures of physiological markers to investigate adolescent GSs in bonobos. Information about the life history and development of bonobos is still sparse (Behringer et al., 2016a; Jungers and Susman, 1984; Leigh, 1996). In wild-living females, genital swellings start to increase in size around 5–6 years of age (Kano, 1992), which is also when female testosterone levels rise in captivity (Behringer et al., 2014). Females disperse from their natal group between 5 and 9 years (Toda et al., 2022). In zoo-housed bonobos, menarche occurs between the age of 6 and 11.3 years (Thompson-Handler, 1990; Vervaecke et al., 1999), and they give birth for the first time around 10.7 ± 3.3 years (range: 8–15 years), which is significantly earlier compared to wild populations, where females give first birth around 14.2 years of age (De Lathouwers and Van Elsacker, 2006). In males, testicular descent occurs at 9 years of age in wild bonobos (Kuroda, 1989) and between the sixth and tenth year of age in captivity (Dahl and Gould, 1997), which corresponds to a fast increase in urinary testosterone levels around the age of 8 years (Behringer et al., 2014). Zoo-born males are on average 12.3 years old at their first reproduction (range 7–17.2 years) (Reinartz et al., 2002). Zoo-housed females outlive males by several decades (Stevens, 2020). Compared to other hominoid primates, sexual dimorphism in adult body weight is exceptionally small in bonobos (Leigh and Shea, 1995), and preliminary data on linear dimensions such as postcranial skeleton, body segments, and forearm length suggest a complete absence of sexual size dimorphism in body length (Behringer et al., 2016a; Druelle et al., 2018). In some monomorphic species, males and females do grow at the same rate for a similar duration, whereas others acquire adult body size by bimaturation (O’Mara et al., 2012). Thus, the low extent of adult sex dimorphism alone is a poor predictor for somatic growth trajectories. In bonobos, growth patterns have so far been studied on limited data. For example, based on 13 males and 23 females, it was suggested that both male and female bonobos experience a subadult GS in body weight (Leigh, 1996). So far, no data on linear growth trajectories with corresponding physiological changes have been published.
 
 Here, we provide a large and comprehensive dataset on patterns of growth and physiological ontogeny in zoo-housed bonobos. This dataset allows to critically test the hypothesis that human-like adolescent length-GSs are absent in other primates. We investigated sex-specific GSs in body weight, forearm length, and muscle mass measured as urinary creatinine corrected for specific gravity (Emery Thompson et al., 2012). We combined these three measures of growth with three physiological markers in urine for the timing of developmental stages: DHEA as a marker for adrenarche, testosterone as a marker for onset of sexual maturation, and IGFBP-3 as a marker for the adolescent GS. We first investigated whether GSs in body weight, forearm length, or muscle mass are evident in either sex, and how they are aligned with each other if compared in the same dimension (i.e., after correction for scaling, Figure 1). Then we tested whether these potential GSs relate to physiological markers for the juvenile or the adolescent period (increase in urinary DHEA or testosterone, respectively), and whether they align with increasing levels of IGFBP-3 which was shown to directly relate to adolescent GSs in humans (Juul et al., 1995; Miller, 2022).
 
-## Other primates: is there evidence for pronounced GSs in length?
+### Other primates: is there evidence for pronounced GSs in length?
 
 In a last step, we did a non-systematic literature search on studies investigating length growth rates in other non-human primates. In addition to searching for linear length-GS, we also searched for other patterns that would be likely to show a length-GS if investigated at the scale-corrected dimension. Primarily, periods of constant, plateauing growth rates in linear length do very likely represent length-GSs as can be seen in Figure 1C. Furthermore, studies showing a slowdown in the deceleration in linear length growth might be promising candidates. In addition, we searched for known male and female markers of adolescence to estimate whether GSs would be aligned with such markers and could be assigned to adolescence.
 
 ## Results
 
-## Growth trajectories in bonobos
+### Growth trajectories in bonobos
 
 We applied Generalized Additive Mixed Modelling (GAMM) to our dataset including a comprehensive non-linear random effects structure that implements variation in age trajectories between individuals, between rearing conditions, and between zoos, plus variation resulting from zoo-specific changes in conditions over the years (for details see methods section and Table 1). This approach provided realistic confidence intervals of fitted values and curves, and thus, of variability and uncertainty in the occurrence, timing, and magnitude of patterns like potential GSs (Pedersen et al., 2019; Wieling, 2018; Wood, 2017).
+
+**Table 1.**
+ Statistical results of Generalized Additive Mixed Models (GAMMs) on growth and physiology.Blue: Interaction term results from a separate model (see methods section). Red: Special model structure for insulin-like growth factor-binding protein 3 (IGFBP-3) models (random intercept per individual, random smooth per zoo not sex specific; for details see methods). §: including maternal primiparity, rearing conditions (hand- vs. mother-reared) and zoo- vs. wild-born (see methods section). *: $\sqrt[2.5]{kg}$. Model p-values result from null model comparison. Est. = Estimate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Factor variables</th>
+      <th rowspan="2">Reference Category</th>
+      <th colspan="4">Body weight (kg)</th>
+      <th colspan="4">Body weight (√kg*)</th>
+      <th colspan="4">Lower arm length (cm)</th>
+      <th colspan="4">Lower arm length (cm2.5)</th>
+    </tr>
+    <tr>
+      <th>Est.</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+      <th>Est.</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+      <th>Est.</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+      <th>Est.</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(Intercept)</td>
+      <td></td>
+      <td>22.4</td>
+      <td>0.10</td>
+      <td>222</td>
+      <td>&lt;0.001</td>
+      <td>3.17</td>
+      <td>0.01</td>
+      <td>581</td>
+      <td>&lt;0.001</td>
+      <td>25.2</td>
+      <td>0.06</td>
+      <td>443</td>
+      <td>&lt;0.001</td>
+      <td>3504</td>
+      <td>19.1</td>
+      <td>183</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>4.10</td>
+      <td>0.13</td>
+      <td>30.8</td>
+      <td>&lt;0.001</td>
+      <td>0.20</td>
+      <td>0.01</td>
+      <td>26.9</td>
+      <td>&lt;0.001</td>
+      <td>1.26</td>
+      <td>0.19</td>
+      <td>6.77</td>
+      <td>&lt;0.001</td>
+      <td>567</td>
+      <td>63.0</td>
+      <td>9.00</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Smooth term variables</td>
+      <td></td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>Age trajectories</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Females</td>
+      <td></td>
+      <td>9.12</td>
+      <td>9.39</td>
+      <td>82.3</td>
+      <td>&lt;0.001</td>
+      <td>9.00</td>
+      <td>9.19</td>
+      <td>52.1</td>
+      <td>&lt;0.001</td>
+      <td>8.32</td>
+      <td>8.71</td>
+      <td>120</td>
+      <td>&lt;0.001</td>
+      <td>8.44</td>
+      <td>8.78</td>
+      <td>54.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td></td>
+      <td>9.53</td>
+      <td>9.67</td>
+      <td>116</td>
+      <td>&lt;0.001</td>
+      <td>9.42</td>
+      <td>9.52</td>
+      <td>52.4</td>
+      <td>&lt;0.001</td>
+      <td>7.75</td>
+      <td>8.37</td>
+      <td>115</td>
+      <td>&lt;0.001</td>
+      <td>8.06</td>
+      <td>8.56</td>
+      <td>43.2</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>8.53</td>
+      <td>8.84</td>
+      <td>6.36</td>
+      <td>&lt;0.001</td>
+      <td>9.04</td>
+      <td>9.26</td>
+      <td>7.42</td>
+      <td>&lt;0.001</td>
+      <td>7.05</td>
+      <td>7.77</td>
+      <td>5.34</td>
+      <td>&lt;0.001</td>
+      <td>6.71</td>
+      <td>7.48</td>
+      <td>4.49</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Random smooths</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sampling date per zoo</td>
+      <td></td>
+      <td>103</td>
+      <td>175</td>
+      <td>2.85</td>
+      <td>&lt;0.001</td>
+      <td>97.6</td>
+      <td>175</td>
+      <td>2.53</td>
+      <td>&lt;0.001</td>
+      <td>10.7</td>
+      <td>44.0</td>
+      <td>0.49</td>
+      <td>&lt;0.001</td>
+      <td>7.05</td>
+      <td>37.0</td>
+      <td>0.47</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age trajectory per individual</td>
+      <td></td>
+      <td>600</td>
+      <td>1544</td>
+      <td>14.4</td>
+      <td>&lt;0.001</td>
+      <td>577</td>
+      <td>1545</td>
+      <td>10.5</td>
+      <td>&lt;0.001</td>
+      <td>148</td>
+      <td>336</td>
+      <td>14.6</td>
+      <td>&lt;0.001</td>
+      <td>151</td>
+      <td>336</td>
+      <td>20.5</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age trajectory per rearing§</td>
+      <td></td>
+      <td>2.12</td>
+      <td>53.0</td>
+      <td>0.12</td>
+      <td>&lt;0.001</td>
+      <td>27.6</td>
+      <td>53.0</td>
+      <td>2.29</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>48.0</td>
+      <td>0.00</td>
+      <td>0.116</td>
+      <td>0.00</td>
+      <td>48.0</td>
+      <td>0.00</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Female age trajectory per zoo</td>
+      <td></td>
+      <td>32.1</td>
+      <td>175</td>
+      <td>0.29</td>
+      <td>&lt;0.001</td>
+      <td>21.9</td>
+      <td>175</td>
+      <td>0.18</td>
+      <td>&lt;0.001</td>
+      <td>0.01</td>
+      <td>23.0</td>
+      <td>0.00</td>
+      <td>0.070</td>
+      <td>0.02</td>
+      <td>23.0</td>
+      <td>0.00</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>Male age trajectory per zoo</td>
+      <td></td>
+      <td>35.1</td>
+      <td>168</td>
+      <td>0.35</td>
+      <td>&lt;0.001</td>
+      <td>61.0</td>
+      <td>168</td>
+      <td>0.91</td>
+      <td>&lt;0.001</td>
+      <td>6.69</td>
+      <td>26.0</td>
+      <td>0.88</td>
+      <td>&lt;0.001</td>
+      <td>10.9</td>
+      <td>26.0</td>
+      <td>1.45</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>R2adj (deviance explained)</td>
+      <td></td>
+      <td colspan="4">0.995 (99.5%)</td>
+      <td colspan="4">0.997 (99.7%)</td>
+      <td colspan="4">0.988 (99.1%)</td>
+      <td colspan="4">0.986 (99.0%)</td>
+    </tr>
+    <tr>
+      <td>N (p-value)</td>
+      <td></td>
+      <td colspan="4">8355 (&lt;0.001)</td>
+      <td colspan="4">8355 (&lt;0.001)</td>
+      <td colspan="4">641 (&lt;0.001)</td>
+      <td colspan="4">641 (&lt;0.001)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="4"></td>
+      <td colspan="4"></td>
+      <td colspan="4"></td>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Factor variables</td>
+      <td rowspan="2">Reference Category</td>
+      <td colspan="4">Ln(Creatinine)</td>
+      <td colspan="4">Ln(DHEA)</td>
+      <td colspan="4">Ln(Testosterone)</td>
+      <td colspan="4">Ln(IGFBP-3)</td>
+    </tr>
+    <tr>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td></td>
+      <td>–0.02</td>
+      <td>0.07</td>
+      <td>–0.96</td>
+      <td>0.337</td>
+      <td>2.99</td>
+      <td>0.04</td>
+      <td>84.2</td>
+      <td>&lt;0.001</td>
+      <td>0.43</td>
+      <td>0.05</td>
+      <td>9.15</td>
+      <td>&lt;0.001</td>
+      <td>2.06</td>
+      <td>0.08</td>
+      <td>25.6</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>0.14</td>
+      <td>0.04</td>
+      <td>3.97</td>
+      <td>&lt;0.001</td>
+      <td>–0.05</td>
+      <td>0.04</td>
+      <td>–1.09</td>
+      <td>0.276</td>
+      <td>0.97</td>
+      <td>0.10</td>
+      <td>9.34</td>
+      <td>&lt;0.001</td>
+      <td>0.04</td>
+      <td>0.12</td>
+      <td>0.34</td>
+      <td>0.732</td>
+    </tr>
+    <tr>
+      <td>Smooth term variables</td>
+      <td></td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref.df</td>
+      <td>F</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>Daytime</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>8.98</td>
+      <td>0.003</td>
+      <td>1.77</td>
+      <td>1.94</td>
+      <td>2.04</td>
+      <td>0.116</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>2.46</td>
+      <td>0.118</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>2.94</td>
+      <td>0.089</td>
+    </tr>
+    <tr>
+      <td>Age trajectories</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Females</td>
+      <td></td>
+      <td>2.64</td>
+      <td>2.99</td>
+      <td>6.17</td>
+      <td>&lt;0.001</td>
+      <td>4.69</td>
+      <td>5.44</td>
+      <td>6.16</td>
+      <td>&lt;0.001</td>
+      <td>8.48</td>
+      <td>8.85</td>
+      <td>19.2</td>
+      <td>&lt;0.001</td>
+      <td>5.04</td>
+      <td>5.65</td>
+      <td>5.39</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td></td>
+      <td>4.45</td>
+      <td>4.77</td>
+      <td>20.4</td>
+      <td>&lt;0.001</td>
+      <td>2.97</td>
+      <td>3.38</td>
+      <td>9.77</td>
+      <td>&lt;0.001</td>
+      <td>8.33</td>
+      <td>8.81</td>
+      <td>30.6</td>
+      <td>&lt;0.001</td>
+      <td>3.98</td>
+      <td>4.66</td>
+      <td>5.53</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>4.41</td>
+      <td>4.73</td>
+      <td>3.73</td>
+      <td>0.016</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.24</td>
+      <td>0.622</td>
+      <td>8.05</td>
+      <td>8.63</td>
+      <td>8.24</td>
+      <td>&lt;0.001</td>
+      <td>3.24</td>
+      <td>3.62</td>
+      <td>3.27</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Random smooths</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sampling date per zoo</td>
+      <td></td>
+      <td>24.7</td>
+      <td>56.0</td>
+      <td>2.61</td>
+      <td>&lt;0.001</td>
+      <td>33.0</td>
+      <td>55.0</td>
+      <td>10.5</td>
+      <td>&lt;0.001</td>
+      <td>25.4</td>
+      <td>58.0</td>
+      <td>3.46</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Age trajectory per individual</td>
+      <td></td>
+      <td>42.0</td>
+      <td>385</td>
+      <td>0.18</td>
+      <td>&lt;0.001</td>
+      <td>14.88</td>
+      <td>392</td>
+      <td>0.05</td>
+      <td>0.031</td>
+      <td>66.4</td>
+      <td>397</td>
+      <td>0.38</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>103</td>
+      <td>0.00</td>
+      <td>0.819</td>
+    </tr>
+    <tr>
+      <td>Age trajectory per rearing§</td>
+      <td></td>
+      <td>0.00</td>
+      <td>28.0</td>
+      <td>0.00</td>
+      <td>0.191</td>
+      <td>0.00</td>
+      <td>28.0</td>
+      <td>0.00</td>
+      <td>0.651</td>
+      <td>1.79</td>
+      <td>28.0</td>
+      <td>0.24</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Female age trajectory per zoo</td>
+      <td></td>
+      <td>7.55</td>
+      <td>34.0</td>
+      <td>0.57</td>
+      <td>&lt;0.001</td>
+      <td>2.77</td>
+      <td>60.0</td>
+      <td>0.06</td>
+      <td>0.042</td>
+      <td>6.66</td>
+      <td>66.0</td>
+      <td>0.26</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>35.0</td>
+      <td>0.00</td>
+      <td>0.554</td>
+    </tr>
+    <tr>
+      <td>Male age trajectory per zoo</td>
+      <td></td>
+      <td>0.00</td>
+      <td>33.0</td>
+      <td>0.00</td>
+      <td>0.087</td>
+      <td>0.58</td>
+      <td>60.0</td>
+      <td>0.01</td>
+      <td>0.13</td>
+      <td>2.46</td>
+      <td>63.0</td>
+      <td>0.05</td>
+      <td>0.006</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>R2adj (deviance explained)</td>
+      <td></td>
+      <td colspan="4">0.424 (48.7%)</td>
+      <td colspan="4">0.488 (52.7%)</td>
+      <td colspan="4">0.712 (75.5%)</td>
+      <td colspan="4">0.235 (28.7%)</td>
+    </tr>
+    <tr>
+      <td>N (p-value)</td>
+      <td></td>
+      <td colspan="4">766 (&lt;0.001)</td>
+      <td colspan="4">782 (0.001)</td>
+      <td colspan="4">802 (&lt;0.001)</td>
+      <td colspan="4">163 (0.003)</td>
+    </tr>
+  </tbody>
+</table>
 
 We further re-ran our analyses on two reduced – and more conservative – datasets (see methods section and supplemental material). Our dataset included several wild-born individuals. For those individuals, some information on e.g., exact birthdate, parents or early life conditions that may have influenced their developmental trajectories were not available. Therefore, we re-run all our analyses excluding wild-born individuals, which allowed for controlling for parental ID (sire and dam) and maternal age. Moreover, due to the long-term sampling effort, corresponding data on body weight, forearm length as well as DHEA and testosterone levels were not always available for each individual, and IGFBP-3 was analysed only in some urine samples because of a small urine volume. Therefore, we re-run our analyses on body weight, forearm length, DHEA, and testosterone levels on the subset of individuals for which data on all four measures were available. These analyses yielded identical patterns as the full model (Figure 2—figure supplement 1, Figure 3—figure supplements 1 and 2).
 
 On average, adult male bonobos were significantly larger, heavier and had higher lean body mass than females, but there was also a wide overlap between sexes (Figure 2). Both males and females showed a pronounced GS in body weight (Figure 2A) that was accompanied by a similarly pronounced GS in forearm length which almost perfectly aligned in timing and amplitude (Figure 2B and 4A). Compared to females, male bonobos reached peak growth velocity in both body weight and forearm length 2 years later (6 vs. 8 years of age), and had a longer and in case of weight growth also more pronounced GS, which resulted in a larger adult body size in males (Figure 2A, B). There was no period of decelerated growth prior to this GS in either sex.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig2-v1.jpg)
+
+**Figure 2.:** Fitted values and 95% CIs from Generalized Additive Mixed Models (GAMMs) are shown, implementing variability in trajectories across individuals and zoos. (A, B) Investigating both weight and length growth at the dimension of weight growth reveals pronounced growth spurts (GSs) in both which are strongly aligned with each other in timing and amplitude (see also Figure 4A for easier comparison). (C, D) If instead examined at the scale of one-dimensional length growth, weight, and length growth curves still align with each other but the GSs are not so easily detectable anymore. However, the GS is still evident in female growth, but appears at a younger age than if scale corrected (A, B). The potential fast decrease in growth rate after birth was not covered by linear length data (first half year of age: 2 arm and 854 [729 male] weight measures).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Blue = males; red = females. 95% confidence intervals are plotted.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Since weight and length were not measured pairwise, we used the fitted values from the respective Generalized Additive Mixed Models (GAMMs). The power-exponent of the relationship is calculated as the linear slope of the log–log plot. (A) Log–log plot of weight over length, with data from the growth period (range 0–10 years of age in females and 0–14 years in males, grey circles). During the period of a linear relationship (coloured, blue = males and red = females), the slope (and thus the exponent of the relationship between the non-transformed variables) was 2.4 for both sexes. (B) For the same data used for slope calculation in (A), but with dynamic slope calculation using the first derivative of the GAM-smooth. The exponent for males was relatively stable around 2.5 during this age period, whereas the value decreased in females, reaching about 2.0 towards the end of the growth spurt (see results section, Figures 2—4).
+
 The pronounced GS in male forearm length was only evident if analysed at the weight dimension (i.e., raised to the power of cm2.5, Figure 2B). Remarkably though, the GS in female forearm length was also evident if investigated at linear length (in cm/year, Figure 2D). However, female length growth reached its peak velocity about 1 year earlier when reported in cm/year compared to cm2.5/year (Figure 4A, red and blue dotted line), as predicted based on the mathematical scaling relationship (Figure 1). Consequently, only the corrected GS (in cm2.5/year) matched the GS in body weight (Figure 4A). Reversely, if down-scaling body weight to the dimension of linear length growth (i.e., extracting the 2.5th root, Figure 2C), the pronounced weight-GSs were no longer detectable, and the resulting pattern matched the trajectories in linear length growth (in cm, Figure 2D).
 
 We also found a GS in lean body respective muscle mass in males (Figure 3A), which was 1.5 years after the length- and the weight-GS (Figure 4A), though the difference in timing was within the 95% CIs and not significant. In females, we found no particular peak in the lean body mass growth rate, but growth rate was highest until 5 years of age and decreased thereafter (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig3-v1.jpg)
+
+**Figure 3.:** Fitted values and 95% CIs from Generalized Additive Mixed Models (GAMMs) are shown, which implement variability in trajectories across individuals and zoos. (A) Males showed a pronounced growth spurt (GS) in lean body respective muscle mass, resulting in larger lean body mass in males compared to females where such a GS was not detectable. Be aware though that corrected creatinine values before the age of 3–4 years may be less reliable (Emery Thompson et al., 2012). (B) DHEA levels increased fastest during the first 5 years of life and reached maximal levels at ~15 years. (C) Testosterone levels increased during development in both sexes, but in males, testosterone levels increased longer and reached higher adult levels. They increased fastest at 3.5–4 years in females and 7 years in males. Testosterone levels decreased again after the age of ~30 years of age. (D) IGFBP-3 levels showed a peak of similar height in males and females, occurring at a younger age in females than males.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Blue = males, red = females. 95% confidence intervals are plotted.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Blue = males, red = females. 95% confidence intervals are plotted.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/86635/elife-86635-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** However, this fast change was not appropriately modelled by our Generalized Additive Mixed Models (GAMMs) if the ‘automatic’ estimation of the smoothing parameters was used, leading to strong oversmoothing and much later ages at which maximal levels were attained, and at which the increase in testosterone levels ceased, in both sexes. Therefore, we applied a fixed smoothing parameter to our testosterone GAMMs of sp = 1, which allowed for higher ‘wiggliness’ and thus faster changes, and which solved the issue.
 
 In both sexes, DHEA levels increased fastest during the first 5 years and reached maximum levels around 15 years of age, with similar levels and age trajectories (Figure 3B). As predicted for an adolescent GS, growth patterns and DHEA levels were not associated, and DHEA levels did not show any sex difference in levels or age trajectories that would align to the sex differences in growth (Figure 4).
 
@@ -82,13 +759,240 @@ Testosterone levels increased fast at the age of GS take-off in both sexes (Figu
 
 The weight- and length-GSs were largely aligned with IGFBP-3 levels (Figure 4). In females, IGFBP-3 levels directly aligned with the GS in length and weight and peaked at the same age, whereas in males they reached their maximum levels after the peak in weight and length growth and better matched changes in muscle growth rates, also after considering the wide range of 95% CIs for IGFBP-3. DHEA and testosterone levels declined after 30 years of age (Figure 3B, C).
 
-## Other primate studies on weight and length growth
+### Other primate studies on weight and length growth
 
 We found 13 primate species for which data on length growth rate over age were available (Table 2). For nine species, there was evidence for an acceleration in linear length growth in at least one sex, with all other species showing a period of constant length growth rate or a slowdown in the deceleration. For two species, data on scale-corrected (cubic-transformed) growth were available. In wild Assamese macaques (Macaca assamensis), linear length growth rate only showed a slowdown in deceleration whereas cubic-transformed values showed a significant acceleration in length growth, which occurred also at a later age then the slowdown in linear length growth. In Pigtailed macaques (Macaca nemestrina), cubic-root-transformed weight measures were perfectly linearly correlated with length values. For 10 species for which parallel weight growth data were available, the respective pattern in linear length coincided with a weight-GS, but as predicted, this linear pattern appeared at younger ages than the weight-GS in all species where available data allowed for such detailed analyses. Furthermore, for the 13 primate species, we searched for published proxies of the age of adolescence, such as increase in testes size and testosterone levels in males, and age at first swelling, cycling, ovulation, or menarche in females (Appendix 1—table 1). In most cases, these data were derived from different study populations, but the data on adolescence and growth were both from the same environment, wild, or captive. Overall, GSs occurred at similar ages as reported markers of adolescence within a species, but this comparison was often coarse and non-conclusive, as e.g., age at menarche or first cycling was highly variable for females of most ape species, and increase in male testes size and testosterone levels were often aligned with, but sometimes also occurred at later ages than the GSs (Appendix 1—table 1).
 
+**Table 2.**
+ Evidence of length growth spurts (GSs) from published literature using linear length growth.Measures of linear length growth are taken of: Body length or height = B, Crown-rump/Shoulder-rump/Anterior trunk length = CR/SR/AT, Lower/Upper/Full arm length = LA/UA/A, Thigh/Tibia/Leg length = TH/TI/L. Methods: in zoos = direct measurements, in wild populations = photogrammetry, except on Macaca ochreata (direct on trapped animals). Growth rate acceleration can be seen as proof of a GS, but considering scale correction, a GS is also very likely in case of a period with constant linear length growth rate, and would be possible in cases of just a slowdown in deceleration. For markers of adolescence see Appendix 1—table 1. m = male, f = female, w = wild, z = zoo.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Species (w/z)</th>
+      <th colspan="4">Changes in length growth rate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Acceleration</th>
+      <th>Constant (plateau)</th>
+      <th>Slowdown in deceleration</th>
+      <th>No slowdown in deceleration</th>
+      <th>Aligned with weight-GS</th>
+      <th>Comments</th>
+      <th>Publication</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Macaca assamensis (w)</td>
+      <td></td>
+      <td></td>
+      <td>m + f (LA)</td>
+      <td></td>
+      <td>Not available</td>
+      <td>Acceleration if scale corrected</td>
+      <td>Anzà et al., 2022; Berghänel et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Macaca fuscata (z)</td>
+      <td>m + f (B), m (AT, UA)</td>
+      <td>m (TH, L)</td>
+      <td>m (LA), f (LA)</td>
+      <td>f (UA)</td>
+      <td>Yes (little earlier)</td>
+      <td></td>
+      <td>Hamada, 1994; Hamada et al., 1999; Hamada and Yamamoto, 2010</td>
+    </tr>
+    <tr>
+      <td>Macaca nemestrina (z)</td>
+      <td>m + f (AT, CR, A, LA, L)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td>Nishikawa, 1985; Tarrant, 1975</td>
+    </tr>
+    <tr>
+      <td>Macaca arctoides (z)</td>
+      <td>m (CR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Few individuals</td>
+      <td>Faucheux et al., 1978</td>
+    </tr>
+    <tr>
+      <td>Macaca mulatta (z)</td>
+      <td>(B, TI)1</td>
+      <td>m + f (CR)</td>
+      <td></td>
+      <td></td>
+      <td>Yes (little earlier)</td>
+      <td>1Unknown sex, few individuals</td>
+      <td>Tanner et al., 19901; van Wagenen and Catchpole, 1956</td>
+    </tr>
+    <tr>
+      <td>Macaca ochreata (w)</td>
+      <td>m + f (CR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td>Schillaci and Stallmann, 2005</td>
+    </tr>
+    <tr>
+      <td>Theropithecus gelada (w)</td>
+      <td>m + f (SR)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Not available</td>
+      <td></td>
+      <td>Lu et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Papio anubis (z)</td>
+      <td>m (CRL)</td>
+      <td>m + f (A)</td>
+      <td>m (TH), f (CRL, TH)</td>
+      <td></td>
+      <td>Yes (little earlier)</td>
+      <td></td>
+      <td>Leigh, 2009</td>
+    </tr>
+    <tr>
+      <td>Papio hamadryas (z)</td>
+      <td>m (CR)</td>
+      <td></td>
+      <td></td>
+      <td>f (CR)</td>
+      <td>Yes (m)</td>
+      <td>Coarse data</td>
+      <td>Crawford et al., 1997</td>
+    </tr>
+    <tr>
+      <td>Mandrillus sphinx (z)</td>
+      <td></td>
+      <td>m + f (CR)</td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td>Setchell et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Pan troglodytes (z)</td>
+      <td></td>
+      <td></td>
+      <td>m + f (B)</td>
+      <td></td>
+      <td>Yes</td>
+      <td></td>
+      <td>Hamada and Udono, 2002</td>
+    </tr>
+    <tr>
+      <td>Pongo pygmaeus (z)</td>
+      <td>m + f (B, LA)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>Two individuals</td>
+      <td>Vančatová et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Gorilla beringei beringei (w)</td>
+      <td></td>
+      <td></td>
+      <td>m (B)</td>
+      <td>m (UA), f (B, UA)</td>
+      <td>Not available</td>
+      <td></td>
+      <td>Galbany et al., 2017</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Sample sizes for measurements of growth (body weight, forearm length, and creatinine) as well as for physiological markers (dehydroepiandrosterone [DHEA], testosterone, and insulin-like growth factor-binding protein 3 [IGFBP-3]).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th rowspan="2">Number of males/females</th>
+      <th colspan="3">Samples per ID (mean ± SD/range/median)</th>
+      <th rowspan="2">Number of zoos</th>
+    </tr>
+    <tr>
+      <th>All</th>
+      <th>Males</th>
+      <th>Females</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body weight</td>
+      <td>119/139</td>
+      <td>32.4 ± 67.6/1–659/9</td>
+      <td>40.4 ± 90.3/1–659/9</td>
+      <td>25.5 ± 37.8/1–195/9</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Arm length</td>
+      <td>56/79</td>
+      <td>4.8 ± 3.0/1–11/4</td>
+      <td>4.8 ± 2.9/1–11/5</td>
+      <td>4.8 ± 3.0/1–11/4</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Creatinine</td>
+      <td>65/89</td>
+      <td>4.9 ± 3.7/1–19/4</td>
+      <td>5.3 ± 4.1/1–19/4</td>
+      <td>4.7 ± 3.5/1–16/4</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>DHEA</td>
+      <td>68/87</td>
+      <td>5.1 ± 3.7/1–19/4</td>
+      <td>5.1 ± 4.0/1–19/4</td>
+      <td>5.0 ± 3.5/1–16/4</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Testosterone</td>
+      <td>68/89</td>
+      <td>5.1 ± 3.8/1–19/4</td>
+      <td>5.3 ± 4.1/1–19/4</td>
+      <td>5.0 ± 3.5/1–16/4</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>IGFBP-3</td>
+      <td>45/61</td>
+      <td>1.5 ± 1.4/1–8/1</td>
+      <td>1.7 ± 1.6/1–7/1</td>
+      <td>1.4 ± 1.2/1–8/1</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
-## Growth trajectories and adolescent GSs in zoo-housed bonobos
+### Growth trajectories and adolescent GSs in zoo-housed bonobos
 
 Comparing weight and length growth at comparable scales revealed a pronounced and concerted GS in weight and length in male and female bonobos, with the length-GS in females being also evident at one-dimensional linear length growth scale. Our results on weight growth and adult sex difference in body weight largely match previous results (Leigh, 1996), but peak velocity occurred 1 year later in both sexes in our study, indicating a stronger and more human-like delay of the adolescent GS than previously assumed (Leigh, 2001; Leigh, 1996). In contrast to previous results on much smaller sample sizes (Behringer et al., 2016a; Druelle et al., 2018) we also found an adult sex difference in forearm length, indicating a sexual size dimorphism in length in bonobos.
 
@@ -98,7 +1002,7 @@ One advantage of our bonobo study was the ability to determine adolescence throu
 
 Our bonobo results were for the moment limited to zoo populations. Therefore, we cannot rule out that our results may be limited to the zoo-specific environment or genetic variant, and it remains unknown to which degree they also apply to wild bonobos. However, this affects our main conclusion only marginally, as our results still provide proof that at least some bonobo populations show pronounced adolescent length-GSs, which challenge the hypothesis that an adolescent length-GS is a unique human trait. In addition, our findings have been corroborated by a recent study, which provides initial evidence of an adolescent bone GS in wild-living chimpanzees (Sandel et al., 2023).
 
-## Mind the scale
+### Mind the scale
 
 Our findings demonstrate the importance of considering scaling rules between weight and length growth (Figure 1). Length-GSs are not reliably detectable or interpretable if only linear length growth is analysed, as they might only appear as a temporary slowdown or plateauing in the continuous decline of linear length growth rate even if they would isometrically align with a pronounced weight-GS (Figure 1A–C ,F; Cullen et al., 2021). Previous findings showed similar peak velocities in weight growth in humans compared to non-human primates during the adolescent GS (Leigh, 2001; Leigh, 1996). Despite this similarity in weight-GS, it has been argued that even if non-human primates showed a length-GS during adolescence, its amplitude would be negligible compared to humans (Bogin, 2020). Indeed, the human adolescent length-GS is also evident on the linear scale and more pronounced than in any other primate, including our results on bonobos. However, human body length growth rates during the GS are almost identical with those in chimpanzees, with average peak velocity of height growth in humans being 9–11 cm/year for boys and 7–9 cm/year for girls, and in chimpanzees 8–10 cm/year in males and 6–10 cm/year in females (Bogin, 2020; Hamada and Udono, 2002). Similarly, also the length growth rates of the forearms in our study match or even exceed human forearm growth rates during the adolescent GS (Nowak-Szczepanska and Koziel, 2016). Human-like length growth rates were also found in e.g. captive Japanese macaques, despite their smaller body size (Hamada et al., 1999).
 
@@ -114,45 +1018,45 @@ Altogether, our results show that if compared at comparable scales, the adolesce
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 All data were collected from zoo-housed bonobos from European and North American zoos. Chronological age of 220 individuals born in zoos was known from zoo records. For the 40 wild-born individuals in our dataset, the average age was estimated as 2.5 years (range 0.1–8 years) when brought into captivity. Our dataset includes long-term measures in body weight and forearm length as well as measures of DHEA, creatinine, specific gravity, IGFBP-3, and testosterone extracted from urine samples. Sample sizes, sex distribution, and underlying numbers of different zoos are provided in Table 3.
 
 For all zoo-born individuals, identity of dams and sires was known and taken from the international studbook (Stevens and Pereboom, 2020).
 
-## Data collection
+### Data collection
 
-## Body weight data
+#### Body weight data
 
 We collected measures of body weight on 260 individual bonobos housed at 19 different institutions (Table 3) from two datasets and three publications. The first and largest dataset consisted of bonobo body weights entered into the Zoological Information Management System (ZIMS) software for Husbandry. ZIMS is a web-based record-keeping system used by zoos, aquariums, and zoological associations to capture and organize husbandry information. We acquired written permission from each of the zoos to use the datasets they entered in ZIMS. Data included zoo records between 1955 and December 2020. The second dataset (703 data points) was compiled at the Royal Zoological Society of Antwerp over the years, by collecting historical data from animals in their collection and written communication with several zoos. From this second dataset, we only used data that were not already in ZIMS. In addition, we used published data from Hill, 1968 (N = 2), Jantschke, 1975 (N = 1), and Neugebauer, 1980 (N = 55). We excluded individuals for which only body weights at death were recorded, as well as data points from pregnant females. For every data point, we entered identity of the individual, sex, date of birth (birthdates and estimates for the wild-born individuals were taken from the international studbook Stevens and Pereboom, 2020), date of weighing, location of weight measurement, and rearing conditions (either wild-born: N = 40, zoo-born and hand-reared: N = 50, or zoo-born and mother-reared: N = 170).
 
-## Forearm length data
+#### Forearm length data
 
 Morphometric measurements from bonobos were collected with a transparent Plexiglas tube (125 × 1400 mm, with a metric scale on each side) attached to the enclosures, as previously validated for bonobos (Behringer et al., 2016a). Technical information and figures of the device and the procedure are provided in Behringer et al., 2016a. Morphometric measurements were taken from digitized images from video recordings (Sony HDR–CX115EB Full HD Camcorder) of individuals inserting their arms into the tube for a reward. The digitized images were analysed using ImageJ (Abràmoff et al., 2004). Forearm length was taken from two anatomical surface landmarks, one located distally at the wrist at the depression between the base of the thumb and distal radius, and the second proximally at the point of the posterior depression of the lateral group of forearm extensor muscles and just lateral to the cubital fossa.
 
-## Physiological marker
+#### Physiological marker
 
 Urine samples were collected throughout the day between 6:00 and 20:00 hr. Samples were collected on plastic sheets or from the floor with disposable plastic pipettes and transferred into 2 ml plastic vials. Urine was frozen immediately after collection. All samples were transported frozen to the Max Planck Institute for Evolutionary Anthropology in Leipzig, Germany. All measurements were corrected for specific gravity.
 
-## Creatinine
+#### Creatinine
 
 We measured creatinine levels using the Jaffe reaction (Anestis et al., 2009; Jaffe, 1886).
 
-## DHEA and testosterone
+#### DHEA and testosterone
 
 Urinary DHEA and testosterone were measured using liquid chromatography–tandem mass spectrometry. The extraction of testosterone and DHEA from urine was done following the extraction protocol described elsewhere (Hauser et al., 2008), with the modifications described in Wessling et al., 2018. The extraction method of the urine included a solvolysis, and therefore, the presented urinary measures of DHEA represent a combination of DHEA-S and DHEA concentrations.
 
-## IGFBP-3
+#### IGFBP-3
 
 The amount of urine per sample was limited, and only when the amount of urine was sufficient after having performed all other physiological measurements, we sent frozen aliquots of the samples to the Laboratory for Translational Hormone Analytics in Paediatric Endocrinology, Center of Child and Adolescent Medicine, Justus-Liebig University, Giessen, Germany for analyses of IGFBP-3. In a pilot study, we were unable to determine IGF-I in bonobo urine samples (N = 30 samples). However, urinary IGFBP-3 levels were measured with a radioimmunoassay (RIA) developed for human IGFBP-3 detection (Blum et al., 1990) and validated for bonobos (Behringer et al., 2016b).
 
-## Specific gravity
+#### Specific gravity
 
 We measured specific gravity using a digital hand refractometer (TEC, Ober-Ramstadt, Germany), to correct all urinary physiological measurements for urine concentration (Miller et al., 2004).
 
-## Statistical analyses
+### Statistical analyses
 
-## General setting for all models
+#### General setting for all models
 
 All statistical analyses were performed with R 4.1.3 (R Development Core Team, 2022) using packages mgcv 1.8-40 (Wood, 2017), itsadug 2.4.1 (van Rij et al., 2020) and gratia 0.7.3 (Simpson, 2020), and the complete code is provided in the supplemental material. We applied GAMMs (with Gaussian distribution) which allow for the detection and analysis of complex non-linear relationships (termed ‘smooths’) that are typical for age trajectories like growth curves and changes in physiological markers during development. We used function bam for the body weight models due to large sample size, and gam for all other models (package mgcv), with smooth estimation based on Maximum Likelihood estimation and penalized cubic regression splines as smooth basis. We checked for model assumptions and appropriate model settings using function gam.check (package mgcv) and acf_resid (detection of autocorrelation, package itsadug), and compared the Full model with the Null model (containing the random effects only) via function compareML (package itsadug). GAMM smooths were plotted using package itsadug (functions plot_data, plot_smooth, and plot_diff, with removed random effects). First-order derivatives of the GAMM results were calculated with function derivatives (package gratia) and plotted with ggplot2 (Wickham, 2016). All models had negligible autocorrelation of residuals, apart from the body weight models which showed moderate autocorrelation (rho ≈ 0.3) and were therefore complemented by an AR1 correlation structure term (Wood, 2017) which solved the issue.
 
@@ -168,7 +1072,7 @@ Because of the different sources and sampling periods for body weight, forearm l
 
 The model results were further used to calculate the first-order derivatives of the age trajectories, representing the rate of change of the response variable over time (e.g., for body weight the growth rate in kg/year).
 
-## Specific model settings for testosterone and IGFBP-3 levels
+#### Specific model settings for testosterone and IGFBP-3 levels
 
 Previous studies on age trajectories of testosterone in bonobos showed a strong and rather fast and sudden rise in both males and females (Behringer et al., 2014), which was also evident in the raw data of our study but could not be modelled with automatic estimation of smoothing parameters as this resulted in oversmoothing (Figure 3—figure supplement 3). Therefore, we fixed the smoothing parameter to sp = 1 in all testosterone models, which allowed for higher wiggliness of the age trajectory of testosterone levels and solved the issue.
 

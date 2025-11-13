@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03gnh5541 Institute of Science and Technology Austria Klosterneuburg Austria
+1. Institute of Science and Technology Austria Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))
 
 † Corresponding author
 
@@ -28,29 +28,47 @@ Here, we provide novel insights into mechanisms of gravity-induced NGR1 polariza
 
 ## Results
 
-## NGR1 localizes to statoliths and their sedimentation is accompanied by NGR1 polarization at the lower PM
+### NGR1 localizes to statoliths and their sedimentation is accompanied by NGR1 polarization at the lower PM
 
 To observe NGR localization in the columella cells, we cloned NGR1-GFP under its native promoter (NGR1p::NGR1-GFP) and transformed it into the ngr1/2/3 triple mutants. This construct fully rescued the agravitropic bending phenotype of the ngr1/2/3 triple mutant (see further), proving functionality of the GFP-tagged protein. NGR1-GFP displayed a highly specific columella expression, which was most prominent at the PM and the statolith periphery. NGR1-GFP signal from the PM was not evenly distributed, but rather polarized to the lower side of the columella cells in the vicinity of the sedimented statoliths (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig1-v1.jpg)
+
+**Figure 1.:** (A) Colocalization of NGR1-GFP (yellow) with membrane stain FM4-64 (magenta). The statolith periphery is also decorated by the NGR1-GFP signal. NGR1-GFP is significantly polarized to the bottom area as quantified using upper/lower signal ratio (1=even distribution). (B) NGR1-GFP~30 s and 5 min after gravitropic bending. Orange arrows depict areas where the signal increased after contact with the statoliths. White stars in the transmission channel depict statoliths. (C) Time course of individual columella cell expressing NGR1-GFP. Numbers depict minutes from the 180° rotation. (D) Top: schematic depiction of the experiment design (valid for D-G). Bottom: Quantification of the NGR1-GFP signal at the lower and upper membranes. Similar setup was used for E. and F. Blue stripes in D-F represent intervals at which statoliths touched the bottom membrane. Average of five biological replicas. Shaded regions depict standard deviation (SD). (E) GCaMP signal after root gravitropic bending without (top) and with 20 µM NPA (bottom). The data represent three technical replicates, and three additional biological replicates were conducted, yielding similar results. Shaded regions depict SD.(F) PIN3 enrichment at the bottom of the central columella cells. The average is based on data from five biological replicas. Shaded regions depict SD.(G) DII Venus signal changes after root gravitropic bending. The average is calculated from three biological replicas. Shaded regions depict SD. Blue lines represent approximate time of statolith contact with the new bottom membrane. Bars = 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 35Sp::NGR1-GFP colocalization with chloroplasts in guard cells. Contact sites with PM are depicted by white arrowheads. (B) 35Sp::NGR1-GFP colocalization with chloroplasts in guard cells performed by fluorescence lifetime imaging to separate chlorophyll autofluorescence from GFP. (C) 35Sp::NGR1-GFP in guard cells imaged using airyscan superresolution. White arrowheads point to areas of contact with the PM. (D) NGR1p::NGR1-GFP localization in the columella cell rotated from vertical position upside down (180°). Numbers indicate minutes after rotation. Bars = 5 µm.
 
 Constitutive overexpression of NGR1-GFP under 35 S promoter (35Sp::NGR1-GFP) confirmed that in multiple other cell types, NGR1-GFP localizes to the PM suggesting direct membrane binding mechanism. Additionally, NGR1 is associated with other plastid types such as chloroplasts in guard cells (Figure 1—figure supplement 1A). To separate the GFP signal from the chlorophyll, we used fluorescence lifetime imaging, which confirmed that NGR1-GFP localizes at the chloroplast periphery (Figure 1—figure supplement 1B). This implies a general plastid targeting mechanism of NGR. Notably, chloroplasts in the vicinity of the PM strongly correlated with NGR1 accumulating at the PM nearby, similar to the scenario in columella (Figure 1—figure supplement 1A and C).
 
 This shows that NGR1-GFP localizes to the plastids and PM in their vicinity providing a mechanism for how gravity-induced statolith sedimentation can polarize NGR1-GFP to the bottom PM.
 
-## Timing of events during the gravitropic response
+### Timing of events during the gravitropic response
 
 Next, we tracked the timing of events during gravitropic bending. For that, we used a vertical stage microscope with a rotation stage allowing us to perform gravistimulation while imaging and minimize the time required for rotating the sample. For the gravistimulation, roots, initially located vertically, were rotated 90° to the horizontal position.Further gravistimulation was performed by flipping the root 180° (with the root tip from pointing left to pointing right, or vice versa). 180° rotations were performed during the imaging thus the precise timing could be determined from the individual frame timestamps. Following gravitropic stimulus, NGR1 at the PM relocalized dynamically with the falling statoliths (Figure 1B). First, the signal at the top membrane decreased and then reached the bottom PM together with statoliths, around 5 min after the stimulation (Figure 1C and D). If the root was rotated 180° from the vertical position (from root tip pointing down to pointing up), the time required for the statolith sedimentation has increased due to the cell’s elongated shape and the presence of vacuole. In such a scenario, it took more than 15 min for the statoliths to fall. Again, the increase of the NGR1 signal at the bottom side correlated with the statolith occurrence, implying that statolith vicinity is the region where NGR1 signal gets enriched (Figure 1—figure supplement 1D). When monitored for an extended period of time, NGR1 signal was always decorating the PM proximal to the statolith (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/91523/elife-91523-video1.mp4.jpg)
 
 To put these early gravitropic events in the context of the auxin gradient formation, we tracked PIN3 localization dynamics, intracellular calcium transients, and auxin reporter DII-Venus (Brunoud et al., 2012). Calcium transients are one of the fastest known auxin response events (Monshausen et al., 2011) and we monitored them using plants stably transformed with GCaMP3 fluorescent sensor (Zariwala et al., 2012). While the signal increase at the bottom side of the root was visible within a minute after statoliths touched the bottom membrane, its decrease at the top PM started immediately after rotation. This implies that the first signaling event in the root gravitropic bending is the statolith removal from the top membrane, rather than its arrival at the bottom (Figure 1E). While subsequent changes in the DII-Venus degradation were consistent with the calcium-based timing, the first visible PIN3 polarization to the bottom columella cell sides was detectable only after 15 minutes (Figure 1F and G). Nonetheless, already the earliest auxin asymmetry is likely generated by PIN-mediated polar auxin transport as it was completely blocked by the treatment with N-1-naphthylphthalamic acid (NPA) (Figure 1E), a PIN inhibitor (Abas et al., 2021).
 
 To summarize, statolith sedimentation is accompanied by rapid NGR1 relocation to the PM subdomain proximal to the NGR1-containing statoliths. The first event in gravitropic response is the NGR1 leaving the top membrane accompanied by decrease in the auxin signaling at the upper root side, followed by NGR1 arrival at the bottom membrane and increase in auxin signaling at the bottom side. This initial auxin asymmetry is mediated by PIN-dependent auxin transport, despite visible polarization of PIN3 can be detected only later.
 
-## NGR1 polarization does not require BFA-sensitive trafficking
+### NGR1 polarization does not require BFA-sensitive trafficking
 
 To gain more insight into the dynamics of the NGR1 localization to the PM and amyloplasts, we tested different inhibitors to alter membrane composition and interfere with endocytic trafficking. Recently, it has been shown that RCC1-like domain (RLD) proteins directly interact with NGRs and play a crucial role in polar auxin transport during gravity signaling (Furutani et al., 2020). As RLD trafficking is known to be sensitive to the ARF-GEF inhibitor Brefeldin A (BFA) (Furutani et al., 2020; Wang et al., 2022), we examined if the drug also affects the localization and polarization of NGR1. Five-day-old NGR1p::NGR1-GFP seedlings were incubated with 50 µM BFA together with the protein synthesis inhibitor, cycloheximide (CHX, 50 µM) and the endocytic tracer FM4-64 (2 µM) as described previously (Geldner et al., 2001). Interestingly, while FM4-64-stained membranes accumulated into so-called BFA compartments, NGR1-GFP did not and still showed association with the PM and amyloplasts (Figure 2A–C). Furthermore, the polarization of NGR1 following gravity stimulation was not disrupted in the presence of BFA. Similar effects were observed in overexpressed NGR1 as it also did not show co-localization with BFA aggregates (Figure 2—figure supplement 1A–C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of NGR1p::NGR1-GFP roots treated with 50 µM CHX, 50 µM BFA, and 2 µM FM4-64; mock: DMSO; NGR1-GFP in yellow, FM4-64 in magenta. Three biological replicas were made with similar results. Error bars represent SD. (B) Fluorescence intensity of FM4-64 and NGR1-GFP at the PM (n=29), amyloplasts (n=39) and BFA bodies (n=42) normalized to the average fluorescence intensity of FM4-64 at the PM. Data is pooled from columella cells of the representative experiment shown in A. n equals measured points. Statistical measurements were done with one-way ANOVA; *** equals adj. p-value of <0.0001. (C) Cytofluorogram of colocalization of FM4-64 and NGR1-GFP from the A using Pearson’s coefficient. (D) NGR1p::NGR1-GFP roots treated with FEN, PAO, and DTT. PM/cytoplasm ratio was calculated for mock (n=26), FEN (n=11), LOV (n=7), PAO (n=18), and DTT (n=10) treated seedlings. n equals the number of cells evaluated. Using one-way ANOVA, b is significantly different from a with an adj. p-value of <0.0001, c is significantly different from a with an adj. p-value of 0.006. Bars = 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of BFA treated 35Sp::NGR1-GFP seedlings: pretreatment with 50 µM CHX, followed by treatment with 50 µM BFA for 90 min and 2 µM FM4-64 for 10 min. mock: DMSO. Three additional biological replicas were made with similar results. Bars = 20 µm (B) BFA treatment of 35Sp::NGR1-GFP seedlings: fluorescence intensity of FM4-64 and 35Sp::NGR1-GFP at PM (n=40) and BFA bodies (n=54) normalized to average intensity of FM4-64 at the PM (=1); statistical analysis with one-way ANOVA: *** equals p-value <0.0001 (C) Cytofluorogram of JACoP colocalization analysis; intensity of pixels of FM4-64 on x-axis and 35Sp::NGR1-GFP on y-axis. Data is derived from the experiment shown in Figure 2—figure supplement 1. (D) 50 mM DTT treatment of 35Sp::NGR1-GFP plants for 3 hr followed by 10 min co-treatment with 2 µM FM4-64; intensity profile measured along white line. Three additional biological replicas were made with similar results. Bars = 20 µm (E) PM/cytoplasm signal ratio for untreated (n=26) and 50 mM DTT treated (n=25) 35Sp::NGR1-GFP seedlings; n represents number of cells evaluated. Statistical analysis with unpaired t-test; *** equals p-value <0.0001 (F) Representative image of 1 µM LOV treated NGR1p::NGR1-GFP seedlings; NGR1p::NGR1-GFP in yellow, FM4-64 in magenta. Bars = 10 µm.
+
 This shows that NGR1 localization and gravity-induced polarization does not undergo BFA-sensitive endocytic recycling mediated by the ARF-GEF GNOM as it has been shown for other proteins involved in gravity response like RLDs and PINs (Geldner et al., 2001; Naramoto et al., 2014; Wang et al., 2022).
 
-## NGR1 PM association requires specific membrane composition
+### NGR1 PM association requires specific membrane composition
 
 NGR1 displays PM localization although transmembrane domains are not predicted in its structure and it does not undergo BFA-sensitive trafficking. This implies the existence of posttranslational modifications such as S-acylation or N-myristoylation to associate with PM. For initial insight we used GPS Lipid prediction tool (Xie et al., 2016), which navigated us towards S-acylation. To test for the presence of S-acylation sites, we utilized the reducing properties of Dithiothreitol (DTT), which interferes with the formation of the thioester bond thus effectively preventing S-acylation (Sabol et al., 2017). Following previously described conditions, NGR1-GFP showed an increase in cytoplasmic signal and reduction of PM association (Figure 2D). Similar effect of DTT was observed when expressing NGR1 under the 35 S promoter, suggesting that there is indeed an acylation site (Figure 2—figure supplement 1D–E). Interestingly, NGR1 still localizes to amyloplasts, indicating a different way of plastid association compared to the PM.
 
@@ -60,11 +78,23 @@ Next, we wanted to determine whether sterols might influence the PM association 
 
 These observations show that NGR1 PM but not necessarily plastid localization depends likely on acylation, phospholipid, and sterol membrane composition.
 
-## NGR1 PM localization is synergistically mediated by PBRs and a palmitoylation site
+### NGR1 PM localization is synergistically mediated by PBRs and a palmitoylation site
 
 To further study NGR1 membrane localization, we examined the amino acid sequence of the NGR1 to understand which sites of the protein mediate its association with the membrane. We noticed 2 PBRs K113K114R115K116 (PBR1) and K186K187K188R189 (PBR2) – these strands of positively charged amino acids may mediate the interaction of NGR1 with negatively charged phospholipids. Also, we noticed a conserved Cys206 residue – a potential S-palmitoylation (PALM) site according to the GPS-Lipid post-translational modification prediction tool (Xie et al., 2016).
 
 To test the role of these sites in the NGR1 membrane localization we performed site-directed mutagenesis based on the NGR1p::NGR1-GFP construct. We introduced mutations K114E&R115E (-PBR1), and K187E&K188E (-PBR2) to the PBRs of the NGR1 to neutralize their positive charge, and mutated the conserved cysteine C206A (-PALM) to abolish the potential palmitoylation site (Figure 3A). NGR1-PALM-GFP, NGR1-PBR2-GFP, and NGR1-PBR1&2-GFP under the native NGR1 promoter were transformed into the ngr1/2/3 background. These mutant versions of the NGR1 restored the anti-gravitropic root phenotype of the ngr1/2/3 triple mutant similar to the NGR1-GFP version without mutations (Figure 3—figure supplement 1A). The NGR1-PALM version resembled the root bending of the NGR1WT-GFP version, and NGR1-PBR2 and NGR1-PBR1&2 versions demonstrated a slight delay in the main root angle restoration after reorientation in the vertical scanner setup (Figure 3—figure supplement 1B). Then we performed confocal imaging of the root columella cells to check the localization of the NGR1-PALM-GFP, NGR1-PBR2-GFP, and NGR1-PBR1&2-GFP proteins (Figure 3—figure supplement 1C). To compare the different mutant versions, we quantified the PM/cytoplasm signal ratio. The PM/cytoplasm ratio was slightly decreased for NGR1-PALM-GFP, NGR1-PBR2-GFP, and NGR1-PBR1&2-GFP mutants compared to NGR1WT-GFP (Figure 3—figure supplement 1D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scheme of mutagenesis. K114E&R115E (-PBR1), K187E&K188E (-PBR2), and C206A (-PALM) were introduced to disrupt NGR1 polybasic regions and palmitoylation site. Different combinations of mutations were tested. (B) Main root angle restoration upon reorientation in the vertical scanner setup of the ngr1/2/3 triple mutant complemented with NGR1p::NGR1-PALM&PBR2-GFP and NGR1p::NGR1-PALM&PBR1&2-GFP in comparison to NGR1p::NGR1WT-GFP, Col-0 and ngr1/2/3 triple mutant. (C) Representative confocal microscopy images of the root columella cells of NGR1p::NGR1-GFP, NGR1p::NGR1-PALM&PBR2-GFP, and NGR1p::NGR1-PALM&PBR1&2-GFP. (D) PM/cytoplasm signal ratio for NGR1p::NGR1-GFP, NGR1p::NGR1-PALM&PBR2-GFP, and NGR1p::NGR1-PALM&PBR1&2-GFP variants. Mutation in the polybasic region and palmitoylation site leads to the dissociation of NGR1 protein from the PM. For statistical analysis one-way ANOVA test was used, ‘a’ is significantly different from ‘b’ with a p-value <0.0001. The difference between the PM/Cytoplasm signal ratio of NGR1p::NGR1-PALM&PBR2-GFP and NGR1p::NGR1-PALM&PBR1&2-GFP is not statistically significant. (E) Representative pictures of the root columella cells of NGR1Nmyr -PALM&PBR1&2-GFP and NGR1-PALM&PBR1&2 ROP-CT-GFP. Membrane localization of NGR1-PALM&PBR1&2-GFP is restored upon the addition of LZY1 N-terminal myristoylation site (left) or C-terminal region of ROP2 bearing polybasic region and geranyl-geranylation site (right). (F) PM/cytoplasm ratio quantified for the versions with another acylation site. Different letters designate the statistically significant difference with p<0.0001 in a one-way ANOVA test. For each genotype >35 cells were quantified. (G) Rescued main root angle restoration upon reorientation in the vertical scanner setup of the NGR1p::NGR1Nmyr -PALM&PBR1&2-GFP in ngr1/2/3 line, after the addition of LZY1 N-myristoylation site to the NGR1 version with mutated polybasic regions and palmitoylation site. (H) Rescued gravitropic response of the NGR1p::NGR1-PALM&PBR1&2 ROP-CT-GFP in ngr1/2/3, with the addition of the C-terminus of the ROP2 after the GFP tag. For all the mutant variants more than five separate transgenic lines were observed with similar results. 8–15 roots were quantified for each gravitropic bending experiment. Shaded regions depict SD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Phenotypes of the 5 d.o. seedlings of ngr1/2/3 complemented with NGR1p::NGR1-GFP, NGR1p::NGR1-PALM-GFP, NGR1p::NGR1-PBR2-GFP, NGR1p::NGR1-PBR1&2-GFP. (B) Restoration of the main root angle upon reorientation in the vertical scanner setup. (C) Representative pictures of the root columella cells expressing different versions of NGR1p::NGR1mut-GFP. (D) Quantification of the PM/cytoplasm ratio for NGR1p::NGR1mut-GFP variants. More than 44 cells per genotype were quantified. (E) Phenotypes of the 5 d.o. seedlings of the NGR1p::NGR1-PALM&PBR2-GFP in ngr1/2/3 and NGR1p::NGR1-PALM&PBR1&2-GFP in ngr1/2/3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Alignment of NGR/LZY homologs. LZY1 has the unique N-terminal myristoylation motif. Palmitoylated Cys conserved in other NGRs is not present in LZY1. (B) The sequence of the ROP2 C-terminus with a polybasic region and geranyl-geranylation site. (C) Phenotypes of the plants. ngr1/2/3 complemented with different versions of NGR1p::NGR1mut-GFP with additional LZY1 N-myristoylation site (upper row) or ROP2 C-terminus under native NGR1 promoter (lower row). (D) Representative pictures of the root columella cells expressing different versions of NGR1p::NGR1mut-GFP with additional LZY1 N-myristoylation site (upper row) or ROP2 C-terminus (lower row). (E) Quantification of the PM/Cyt ratio for NGR1p::NGR1Nmyr-mut-GFP variants. More than 44 cells per genotype were quantified. (F) Quantification of the PM/Cyt ratio for NGR1p::NGR1mut ROP-CT-GFP variants. More than 44 cells per genotype were quantified. (G) Gravitropic response of the NGR1p::NGR1Nmyr-mut-GFP in ngr1/2/3 variants with added N-myristoylation site. The restoration of the main root angle upon reorientation in the vertical scanner setup. (H) Gravitropic response in the vertical scanner setup of ngr1/2/3 complemented with the NGR1p::NGR1mut ROP-CT-GFP variants with added ROP2 C-terminus. For all the mutant variants, more than five separate transgenic lines were observed with similar results. Eight to 15 roots were quantified for each gravitropic bending experiment. Error bars depict SD.
 
 As the mutations only in the palmitoylation site or only in the PBRs of the NGR1 did not lead to the significant disruption of the plant gravitropic response and the dissociation of the protein from the membrane, we combined these mutations to check their collective effect. We generated NGR1-PALM&PBR2-GFP with a mutation in the PALM site and the PBR2, and NGR1-PALM&PBR1&2 with a mutation in both PBR1 and PBR2 and PALM site. NGR1p::NGR1-PALM&PBR2-GFP and NGR1p::NGR1-PALM&PBR1&2-GFP could not fully complement ngr1/2/3 triple mutant. The main root of the 5 d.o. seedlings demonstrated inclination from the vertical angle (Figure 3—figure supplement 1E). In contrast to NGR1-GFP complemented ngr1/2/3 plants, complementation with NGR1-PALM&PBR2 displayed partially compromised restoration of the main root angle upon reorientation, while the NGR1-PALM&PBR1&2 root bending was completely disrupted (Figure 3B). With confocal microscopy we observed the dissociation of the NGR1-PALM&PBR2 and NGR1-PALM&PBR1&2 from the PM (Figure 3C). PM/cytoplasm ratio was significantly decreased for both NGR1-PALM&PBR2 and NGR1-PALM&PBR1&2 compared to non-mutated NGR1-GFP (Figure 3D). Taken together, the combination of mutations in PBRs and palmitoylation site resulted in the decrease of NGR1-GFP PM binding and loss of the protein functionality.
 
@@ -76,13 +106,17 @@ We examined the localization of the GFP signal in the columella of both restored
 
 Thus NGR1 PM localization is mediated synergistically by PBRs and palmitoylation site, and the NGR1 PM association is crucial for NGR1 functioning in root gravitropic response.
 
-## D6PK relocalizes in columella following gravistimulation in NGR1-dependent manner
+### D6PK relocalizes in columella following gravistimulation in NGR1-dependent manner
 
 NGR1 protein relocalization occurs simultaneously with statolith sedimentation and is rapidly followed by PIN-dependent asymmetric auxin accumulation at the lower root side. These events, however, precede a visible PIN3 polarization towards the bottom columella cell sides (Figure 1D–G). Alternatively, we hypothesized that asymmetric PIN activation at this position may precede the PIN polarization there and mediate the early auxin asymmetry. To test this, we analyzed the localization of D6PK, a well-established PIN3 activating kinase (Willige et al., 2013). We monitored D6PK under its native promoter with N-terminal YFP and mCHERRY (mCH) tags. This revealed a highly dynamic polarized D6PK localization following gravistimulation. Following 180° rotation, YFP-D6PK and mCH-D6PK displayed a very clear translocation to the new bottom side of the columella cells (Figure 4A–C). To resolve whether this polarization depends on NGR proteins, we transformed mCHERRY-D6PK (mCH-D6PK) to both ngr1/2/3 triple mutants and Col-0 wild type plants. Notably, following gravistimulation, D6PK polarization was absent in ngr1/2/3 triple mutants (Figure 4C–D, Video 2). Surprisingly, other cell types such as meristematic cells or epidermal cells still displayed undisturbed basal (WT-like) D6PK polarity in ngr1/2/3 triple mutant suggesting a role of NGRs in D6PK targeting specifically during gravity response (Figure 4C). To compare D6PK translocation with other events during gravity response, we generated a movie, where polarization of D6PK is compared with the calcium transients, PIN3 mobility, and DII Venus signal (Video 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/91523/elife-91523-fig4-v1.jpg)
 
-**Figure 4.:** (A) Temporal color-coded image of YFP-D6PK translocation induced by 180° rotation. (B) Single gravistimulated (180°) columella cell undergoing YFP-D6PK translocation. White numbers indicate time after rotation (min). (C) mCH-D6PK 10 min after gravistimulation in WT and ngr1/2/3 triple mutant, same temporal color code as in A. Yellow arrow depicts the new bottom membrane. Red arrowhead depicts meristematic cells, which displayed basal D6PK polarity in both genotypes. (D) Quantification of D6PK signal at the columella cell bottom PM upon 180° rotation. Blue strip depicts approximate time of statolith contact with the bottom PM. Bars = 50 µm (A,C) 10 µm (B). Ten cells out of three roots were quantified. Experiment was replicated three times with similar results. Shaded regions depict SD.Figure 4—source data 1.
+**Figure 4.:** (A) Temporal color-coded image of YFP-D6PK translocation induced by 180° rotation. (B) Single gravistimulated (180°) columella cell undergoing YFP-D6PK translocation. White numbers indicate time after rotation (min). (C) mCH-D6PK 10 min after gravistimulation in WT and ngr1/2/3 triple mutant, same temporal color code as in A. Yellow arrow depicts the new bottom membrane. Red arrowhead depicts meristematic cells, which displayed basal D6PK polarity in both genotypes. (D) Quantification of D6PK signal at the columella cell bottom PM upon 180° rotation. Blue strip depicts approximate time of statolith contact with the bottom PM. Bars = 50 µm (A,C) 10 µm (B). Ten cells out of three roots were quantified. Experiment was replicated three times with similar results. Shaded regions depict SD.
+
+![Video 2.](https://cdn.elifesciences.org/articles/91523/elife-91523-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/91523/elife-91523-video3.mp4.jpg)
 
 Taken together, we identified D6PK, a PIN activating kinase to be translocated towards the bottom columella cell sides in an NGR-dependent manner. This provides a plausible mechanism for rapidly redirecting auxin fluxes prior to PIN relocation during root gravitropic response.
 
@@ -90,17 +124,17 @@ Taken together, we identified D6PK, a PIN activating kinase to be translocated t
 
 In this study, we provide several new crucial insights into the mechanism through which plant roots adapt their growth in response to gravity: (i) we mapped the early events after gravistimulation with unprecedented time resolution challenging the current gravitropic models; (ii) we observed real-time relocalization of the key gravitropic regulator, NGR1 on and alongside the descending statoliths and (iii) mapped the conditions for NGR1 crucial association with the PM; and, finally, (iv) we detected rapid, NGR1-dependent relocation of D6PK auxin transport activator. This altogether suggests a new mechanism for rapid redirection of auxin fluxes following gravistimulation.
 
-## Early events during root gravitropic response
+### Early events during root gravitropic response
 
 The temporal correlation between NGR1 relocation and auxin asymmetry dynamics was tested by monitoring auxin-dependent calcium transients. Interestingly, while an auxin-induced calcium wave can be observed following statolith descent to the bottom side of the gravity-sensing cells, preceding this, a decline in calcium transients occurs at the upper root side. These observations suggest that the first signaling event in root gravitropic bending may not be statolith contact with the cell bottom, but rather the departure of statoliths from the upper PM, closely followed by NGR1 and D6PK translocation to the bottom cell sides. Only significantly later, similar polarization of PIN auxin exporters can be confidently observed. This may be reflected by actual onset of the root bending, as there is growing evidence, that the actual root bending begins much sooner than previously reported, in fact, some degree of bending was observed already within the first 5 min following gravistimulation (Dubey et al., 2023; Serre et al., 2023).
 
-## Insights into NGR membrane association and gravity-induced polarization
+### Insights into NGR membrane association and gravity-induced polarization
 
 NGR-GFP relocation to the new bottom membrane happens rapidly and is not affected when ARF GEF-mediated endomembrane trafficking is inhibited. Although the precise mechanism of NGR1 dynamic relocation following gravitropic stimulus still remains elusive, this study brings some new insights. The NGR1 membrane anchoring mechanism is dependent on cysteine acylation and adjacent polybasic stretches, which interact with charged lipids at the membrane surface. Such a mechanism is typical for a plethora of proteins (Hemsley and Grierson, 2008). Since we could restore the protein functionality by adding two different membrane anchors on the NGR1 N and C terminus, we conclude that the mechanism of membrane targeting is rather universal. Point mutated NGR1 proteins which lost their membrane binding ability still retained the statolith binding, implying an independent targeting mechanism. Therefore, we can conclude that statolith-bound NGR1 is not sufficient for the NGR1 function in gravitropism. On the other hand, NGR amyloplast association is apparently an essential aspect of the NGR mobility. While writing this manuscript, two concurrent articles have addressed the mechanism of NGR starch grain association and its translocation to the plasma membrane. These studies reveal that the mobility of the NGR (LAZY4) protein depends on the N-terminal transit peptides. The association of LAZY4 with the translocons in the outer plastid membrane is modulated by mitogen-activated protein kinases, facilitating its dynamic transfer to the plasma membrane (Nishimura et al., 2023; Chen et al., 2023) with a specific lipid composition.
 
 Our pharmacological experiments indicate that both sterols and charged lipids play a role in the NGR membrane binding. This resembles other highly polarized structures such as root hairs, where sterols and phosphatidylinositol 4,5-bisphosphate are vital for the polarity (Champeyroux et al., 2020; Ovecka et al., 2010). Furthermore, PIN2 polarity was defective in sterol synthesis mutants, implying the role of sterols in planar polarity as well (Men et al., 2008). Whether there is mobile sterol-rich domain moving alongside the statolith or the membrane composition is uniform remains to be elucidated.
 
-## Gravity-induced D6PK kinase polarization as mechanism for rapid auxin fluxes redirection
+### Gravity-induced D6PK kinase polarization as mechanism for rapid auxin fluxes redirection
 
 PIN auxin transporters were shown to polarize following gravistimulation to the bottom of gravity-sensing cells (Friml et al., 2002; Furutani et al., 2020; Kleine-Vehn et al., 2010) providing a mechanism for redirection of auxin fluxes downwards. Although PIN polarization has been shown to be reliant on NGR proteins (Ge and Chen, 2019), the timing of early gravitropic events resolved here suggests that it occurs too late to account for the initial auxin asymmetry. Either, we are unable to detect early, less-pronounced PIN asymmetry or there is an additional mechanism preceding the auxin flux redirection via PIN relocation.
 
@@ -112,11 +146,11 @@ Taken together, an updated model of early events in root gravity-sensing cells e
 
 ## Materials and methods
 
-## Plant cultivation
+### Plant cultivation
 
 All Arabidopsis mutants and transgenic lines which were used in this project are in the Columbia-0 (Col-0) background. NGR1p::NGR1-GFP, 35Sp::NGR1-GFP, and D6PKp::mCH-D6PK were generated as part of this research project. D6PKp::YFP-D6PK has been described previously (Zourelidou et al., 2009). Overnight seed sterilization was executed with chlorine gas. Seeds were sown on solid agarose media – half-strength Murashige and Skoog medium supplemented with 1% sucrose (AM+) and 0.8% phyto agar (pH = 5.9) – stratified at 4 °C for 2 days and subsequently grown vertically at 21 °C with 16 hr light/8 hr dark cycles.
 
-## Cloning strategy
+### Cloning strategy
 
 NGR1 promoter was amplified from genomic DNA using the primer pairs NGR1p-B4-FP and NGR1p-B1r-RP, and was cloned into pDONR-P4P1r. NGR1-GFP fusion fragment was obtained by overlapping PCR using the prime pairs NGR1g-B1-FP and NGR1g-L-RP to amplify the NGR1 protein-coding region with genomic DNA as the template and the primer pairs eGFP-L-FP and eGFP-B2-RP to amplify the eGFP coding sequence, with a PKPA protein linker inserted between NGR1 and GFP, and the resulting fragment was cloned into pDONR221. The resulting pENTRY clones were recombined into pH7m24GW to get the final expression construct NGR1p::NGR1-GFP. The pENTR clone NGR1-GFP in pDONR221 was recombined with pH2GW7 to get the construct 35Sp::NGR1-GFP.
 
@@ -126,15 +160,15 @@ NGR1 transformants were selected on plates containing 30 µg/ml hygromycin. NGR1
 
 D6PKp::mCH-D6PK was generated using the Greengate cloning strategy. Greengate entry blocks were generated with the use of the Gibson assembly (pGGA-D6PK promotor) and restriction-ligation assembly (pGGC-D6PK). Two KB fragment upstream of D6PK start codon was used and the BsaI site was removed using point mutated compatible cohesive ends for the Gibson assembly between fragments A and B. Other building blocks used were: pGGB-mCHERRY-linker (pGGB001), pGGD-Dummy (pGGD002), pGGE UBQ10 terminator (pGGE009), pGGF-d-AlanineR (pGGF003), destination vector (pGGZ001 modified to contain bacterial kanamycin resistance; Lampropoulos et al., 2013), plasmids were obtained from Addgene or were kindly provided by Dr. Andrea Bleckmann. pD6PK::mCH-D6PK transformants bearing DAO-selection cassette were selected on the 3 mM D-Alanine.
 
-## Microscopy
+### Microscopy
 
 For imaging, vertically mounted Zeiss LSM800 was used with air objectives Plan Apochromat 20 x/0.8 M27 and Plan Apochromat 10 x/0.45 M27 (Figure 1G, Video 3). Air objective Plan Apochromat 20 x/0.8 M27 and water objective Plan-Apochromat 40 x/1.2 M27 were used in Figure 2, Figure 1—figure supplement 1, Figure 2—figure supplement 1, Figure 3, Figure 3—figure supplements 1 and 2, Figure 4, Video 2 and Video 3. Plan apochromat 60x1.4 Oil objective was used for the airyscan imaging (Figure 1—figure supplement 1C). For fluorescence lifetime imaging (Figure 1—figure supplement 1B), Leica Stellaris 5 with Plan-Apochromat 40 x/1.2 M27 was used. GCaMP signal was imaged using GFP emission (500–540 nm) using 405 nm and 488 nm excitation lasers. Signal obtained by 405 nm excitation was used as a ratiometric reference. For the gravitropic experiments, brightfield images were always taken together with the fluorescent probes to determine the statolith contact with basal PM. This was determined as a time at which statolith movement relative to the cell surface stopped.
 
-## Plant treatments
+### Plant treatments
 
 The following inhibitors were dissolved in DMSO: Brefeldin A (Sigma B7651); Cycloheximide (Sigma C1988); PAO (Sigma P3075); FEN (Sigma 36772); LOV (Sigma PHR1285); NPA (DUCHEFA N0926). BFA treatment was performed as described previously (Geldner et al., 2001). In brief, seedlings were submerged in liquid AM + medium and pre-treated with 50 µM CHX for 30 minutes. Subsequently, they were incubated with 50 µM BFA and 50 µM CHX for 75 minutes. Then, 2 µM FM4-64 (Invitrogen T13320) was added and co-incubated with 50 µM BFA and 50 µM CHX for 15 minutes. Treatment with PAO was executed as described previously Barbosa et al., 2016; seedlings were incubated in 30 µM PAO-containing liquid AM + medium for 20 min, followed by the addition of 2 µM FM4-64 and another 10-min incubation. For quantification purposes, 5-day-old seedlings grown on AM + plates with 1 µM LOV and 250 µg/ml FEN were utilized (Stanislas et al., 2015). Representative images were captured of 5-day-old seedlings that were initially grown on AM + and subsequently transferred to 1 µM LOV and 50 µg/ml FEN for a duration of 2 hr. To treat with DTT, seedlings were incubated in liquid AM + medium supplemented with 50 mM DTT (Sigma; dissolved in H2O) for 3 hr, followed by a 10-min incubation with 2 µM FM4-64 (Sabol et al., 2017). Unless otherwise stated, treated seedlings were mounted in liquid AM + medium for live imaging. As a control for used inhibitors, solvent control treatments were performed in parallel.
 
-## Data analysis
+### Data analysis
 
 To quantify signals in the individual cells, time series were stabilized by Correct 3D drift Fiji plugin. All image data was obtained in 16-bit format. ROI were selected and measured using Microsoft Excel and GraphPad Prism. Data was normalized so that the first value = 1 (Figures 1A, D, F, 4D) or by using reference channel (Figures 1E and 2B).
 
@@ -148,6 +182,189 @@ The location of the PM membrane was confirmed with the FM4-64 staining. The PM r
 
 If not stated otherwise, all experiments were performed in triplicate. Three or more independent transgenic lines were always used with similar results. All error bars and shaded areas around average represent SD.
 
-## List of primers used in the study
+### List of primers used in the study
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transgenic line preparation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NGR1p-B4-FP</td>
+      <td>GGGGACAACTTTGTATAGAAAAGTTGGAAGAGGAGAAGGTGGGAGAGC</td>
+    </tr>
+    <tr>
+      <td>NGR1p-B1r-RP</td>
+      <td>GGGGACTGCTTTTTTGTACAAACTTGTGTTTCTTTTTTTCTGACAATTGACTG</td>
+    </tr>
+    <tr>
+      <td>NGR1p-S-F1</td>
+      <td>ACTAAACAACCCCTTTTGAAACC</td>
+    </tr>
+    <tr>
+      <td>NGR1p-S-F2</td>
+      <td>CAAGATTGAAAAACTATTTGCCCT</td>
+    </tr>
+    <tr>
+      <td>NGR1g-B1-FP</td>
+      <td>GGGGACAAGTTTGTACAAAAAAGCAGGCTCCATGAAGTTCTTCGGGTGGATG</td>
+    </tr>
+    <tr>
+      <td>NGR1g-L-RP</td>
+      <td>CACCATAGCAGGCTTAGGTATCTCGAGAACTATGACTGTAATCA</td>
+    </tr>
+    <tr>
+      <td>eGFP-L-FP</td>
+      <td>GAGATACCTAAGCCTGCTATGGTGAGCAAGGGCGAGGAG</td>
+    </tr>
+    <tr>
+      <td>eGFP-B2-RP</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTGCTACTTGTACAGCTCGTCCATGCC</td>
+    </tr>
+    <tr>
+      <td>pGGC_D6PK _for</td>
+      <td>AGAAGTGAAGCTTGGTCTCAGGCTCCATGATGGCTTCAAAAACTCC</td>
+    </tr>
+    <tr>
+      <td>pGGC_D6PK_rev</td>
+      <td>AGGGCGAGAATTCGGTCTCACTGATCAGAAGAAATCAAACTCAAGATA</td>
+    </tr>
+    <tr>
+      <td>pGGA_D6PKpromA_for</td>
+      <td>GTGAAGCTTGGTCTCAACCTCTGTTGAACCATTTCTAAAAAAAC</td>
+    </tr>
+    <tr>
+      <td>pGGA_D6PKpromA_rev</td>
+      <td>GAGAGAGAGTCCCAATAAATCGTTACCTG</td>
+    </tr>
+    <tr>
+      <td>pGGA_D6PKpromB_for</td>
+      <td>ATTTATTGGGACTCTCTCTCTCTCTCTCTC</td>
+    </tr>
+    <tr>
+      <td>pGGA_D6PKpromB_rev</td>
+      <td>CGAGAATTCGGTCTCATGTTTAACACAGAGCAATCTTAAAC</td>
+    </tr>
+    <tr>
+      <td>pGGA_backbone_for</td>
+      <td>AACATGAGACCGAATTCTC</td>
+    </tr>
+    <tr>
+      <td>pGGA_backbone_rev</td>
+      <td>AGGTTGAGACCAAGCTTC</td>
+    </tr>
+    <tr>
+      <td>Genotyping</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ngr1-F199G07-GT-FP</td>
+      <td>GCGCAGACAAAAATCTTCTTG</td>
+    </tr>
+    <tr>
+      <td>ngr1-F199G07-GT-RP</td>
+      <td>TTGGTGGACTCGTTTGCTTAC</td>
+    </tr>
+    <tr>
+      <td>FLAG-LB4</td>
+      <td>CGTGTGCCAGGTGCCCACGGAATAGT</td>
+    </tr>
+    <tr>
+      <td>ngr2-SAIL723H11-GT-FP</td>
+      <td>TTTGGTTTTATGGACCCAACC</td>
+    </tr>
+    <tr>
+      <td>ngr2-SAIL723H11-GT-RP</td>
+      <td>AAGAGCTTTCTTCCTCCGATG</td>
+    </tr>
+    <tr>
+      <td>SAIL-LB3</td>
+      <td>TAGCATCTGAATTTCATAACCAATCTCGATACAC</td>
+    </tr>
+    <tr>
+      <td>ngr3-GK479C08-GT-FP</td>
+      <td>GCAAACAGATTTTCTTCACCAC</td>
+    </tr>
+    <tr>
+      <td>ngr3-GK479C08-GT-RP</td>
+      <td>GCACAAGTGGCTTCAAAACTC</td>
+    </tr>
+    <tr>
+      <td>GABI-O8409</td>
+      <td>ATATTGACCATCATACTCATTGC</td>
+    </tr>
+    <tr>
+      <td>gNGRmut-NGR1prom-fwd</td>
+      <td>GTAGTCAAAGTTTGGAACTTGAACACC</td>
+    </tr>
+    <tr>
+      <td>gNGRmut-T35S-rev</td>
+      <td>CTGGGAACTACTCACACATTATTCTGG</td>
+    </tr>
+    <tr>
+      <td>Mutagenesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>mutatePBR2-fwd</td>
+      <td>TAAGAATAACAAGGAAGAAAGAGACATAAGCAAGAACTCTG</td>
+    </tr>
+    <tr>
+      <td>mutatePBR2-rev</td>
+      <td>TCTTTCTTCCTTGTTATTCTTACTCTCTATTGATATCTC</td>
+    </tr>
+    <tr>
+      <td>PBR1&amp;2-fragment1-bb-fwd</td>
+      <td>TAAGAATAACAAGGAAGAAAGAGACATAAGCAAGAACTCTG</td>
+    </tr>
+    <tr>
+      <td>PBR1&amp;2-fragment1-bb-rev</td>
+      <td>TCACATCAGACTTTTCTTCCTTAGTTCTTGACAAGAGCTTC</td>
+    </tr>
+    <tr>
+      <td>PBR1&amp;2-fragment2-insert-fwd</td>
+      <td>AAGGAAGAAAAGTCTGATGTGAATAGAGAGC</td>
+    </tr>
+    <tr>
+      <td>PBR1&amp;2-fragment2-insert-rev</td>
+      <td>TCTTTCTTCCTTGTTATTCTTACTCTCTATTGATATCTC</td>
+    </tr>
+    <tr>
+      <td>mutatePALM_C206A-fwd</td>
+      <td>CAAGAAGATTTTTGTCGCTGCAGATGGG</td>
+    </tr>
+    <tr>
+      <td>mutatePALM_C206A-rev</td>
+      <td>CAGCGACAAAAATCTTCTTGAAAAGATATGAGACAGAG</td>
+    </tr>
+    <tr>
+      <td>add-Nmyr-fwd</td>
+      <td>CCACAAGTTCAGGGGGGATCATAACAGAACAAGCACTTCC</td>
+    </tr>
+    <tr>
+      <td>add-Nmyr-rev</td>
+      <td>CCTGAACTTGTGGTGCATCCACCCCCAGAACTTCATGGAGCC</td>
+    </tr>
+    <tr>
+      <td>ROP2-CT-oligo-bridge</td>
+      <td>GCTATAAAAGTGGTGCTTCAGCCACCAAAGCAGAAGAAGAAGAAAAAGAATAAGAACCGTTGCGCGTTCTTGTGA</td>
+    </tr>
+    <tr>
+      <td>NGR-ROP2_CT-after-GFP-fwd</td>
+      <td>ACCGTTGCGCGTTCTTGTGACACCCAGCTTTCTTGTAC</td>
+    </tr>
+    <tr>
+      <td>NGR-ROP2_CT-after-GFP-rev</td>
+      <td>TGAAGCACCACTTTTATAGCCTTGTACAGCTCGTCCATG</td>
+    </tr>
+  </tbody>
+</table>
 
 All the transgenic lines generated in this study can be accessed by contacting the corresponding author.

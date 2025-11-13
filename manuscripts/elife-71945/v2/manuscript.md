@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05abbep66 Department of Biology, Brandeis University Waltham United States
+1. Department of Biology, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Here, we undertook transcriptome analyses in cells that express each SARS-CoV-2 
 
 ## Results
 
-## Expression of individual SARS-CoV-2 proteins specifically remodels the transcriptome
+### Expression of individual SARS-CoV-2 proteins specifically remodels the transcriptome
 
 Infection of cells with SARS-CoV-2 induces strong and specific changes in the transcriptome of host cells and tissues (Blanco-Melo et al., 2020; Wyler et al., 2021). It is assumed that this response results from the hijacking of the cellular systems by the virus as well as from the defense by the host. To identify unknown functions of the individual SARS-CoV-2 proteins and to determine how much each protein contributes to the takeover of cellular systems, we determined how the transcriptome changed when we individually express each viral protein in a human cell line. Specifically, we expressed individual SARS-CoV-2 proteins (Gordon et al., 2020b) in HEK293T cells, and after 48 hr we purified RNA, generated and sequenced 3’ RNA sequencing (RNA-seq) libraries, and identified differentially expressed genes (DEGs; Figure 1A). Extensive cell death or changes in morphology did not occur upon expression of individual proteins, as assessed visually.
 
@@ -51,19 +51,39 @@ Interestingly, expression of most proteins resulted in modest or no changes in t
 
 To identify cellular pathways affected by the expression of the individual SARS-CoV-2 proteins, we performed Gene Ontology (GO) analysis of the DEGs upon expression of the different viral proteins (Supplementary file 1b and Figure 1C). Expression of the viral proteins impacted mRNAs encoding proteins related to different aspects of gene expression (regulation of transcription, translation, and RNA metabolism), cell metabolism, cell division, and innate immunity. For example, expression of Nsp7, an accessory protein of the RNA-dependent RNA polymerase (Kirchdoerfer and Ward, 2019; Hillen, 2020), deregulated expression of genes encoding proteins involved in DNA and RNA metabolism (Figure 1C). Expression of Nsp9 and Nsp13, known to bind RNA and to regulate RNA metabolism, respectively (Egloff et al., 2004; Shu et al., 2020), resulted in the mis-regulation of mRNAs encoding proteins involved in RNA metabolism and translation (Figure 1C). Furthermore, expression of the protein ORF3d, known to bind STOML2 mitochondrial protein, may be a unique antigenic target upon SARS-CoV-2 infection (Gordon et al., 2020b; Hachim et al., 2020; Nelson et al., 2020; Jungreis et al., 2021), resulted in alteration of genes involved in cell metabolism and immunity (Figure 1C). In general, expression of the viral proteins mainly impacted pathways related to RNA metabolism, translation, and cell metabolism that were previously reported to be affected upon viral infection (Blanco-Melo et al., 2020; Gardinassi et al., 2020; Wyler et al., 2021). Expression of Nsp14 affected the expression of genes involved in RNA splicing, metabolism, and processing, translation, cell-cycle control, and the cytoskeleton. Nsp14 also impacted the expression of genes involved in general metabolism, especially on genes implicated in nucleotide metabolism (Figure 1C).
 
-## Nsp14 expression induces transcriptional changes that resemble SARS-CoV-2 infection
+### Nsp14 expression induces transcriptional changes that resemble SARS-CoV-2 infection
 
 We decided to focus on Nsp14, as expression of this protein resulted in significantly more DEGs than any other tested protein. To obtain a more comprehensive view of the transcriptome changes provoked by Nsp14, we complemented the 3’ RNA-seq data with total RNA-seq data generated from cells transfected with Nsp14. The new dataset strongly resembled the one obtained by 3’ RNA-seq (Figure 2A, Supplementary file 1c, and Figure 2—figure supplement 1A) but also contained information about the full-length RNAs, non-poly-adenylated RNAs, and pre-mRNAs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig2-v2.jpg)
+
+**Figure 2.:** (A) MA plot showing the fold change of expression in samples expressing Nsp14 compared to control detected in the total RNA sequencing (RNA-seq). In red significantly downregulated genes, in blue upregulated genes, and in gray non significantly deregulated genes. (B) Scheme representing the approach to determine the overlap with our total RNA-seq data and already published dataset (top). Table reporting the gene set enrichment analysis (GSEA) terms, up- or downregulation, publication, the normalized enriched score (NES), and adjusted p-value (p-adj) when comparing our total RNA-seq data with previously published datasets. Significant terms related to SARS-CoV-2 and MERS infection are indicated in blue, non-significant terms related to influenza A infection are indicated in orange (bottom). (C) Example of GSEA. (D) Nsp14 expression vs. control fold change of intronic signal from total RNA-seq vs. 3’ RNA-seq signal in logarithmic scale for each detected gene. Colored dots represent significantly changing genes (fold change = 2, adjusted p-value < 0.05, N = 3). (E) Nsp14 expression vs. control fold change of intronic signal from total RNA-seq vs. exonic signal from total RNA-seq in logarithmic scale for each detected gene. Colored dots represent significantly changing genes (fold change = 2, adjusted p-value < 0.05, N = 3). (F) RT-qPCR showing the abundance of FGF-18, CXCL8, SH2D2A, and COL13A in the chromatin-bound RNA fraction in cells transfected with an empty plasmid (control) or with Nsp14 (Nsp14). Data represented as mean ± SEM, N = 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Plot showing the overlap between the 3’ RNA sequencing (RNA-seq) dataset and the total RNA-seq dataset. (B) Gene set enrichment analysis (GSEA) showing that Nsp14 expression resembles severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) infection.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative RT-qPCR showing the abundance of the indicated targets (circVKR1, 18S rRNA, U6, and TBP pre-mRNA) in the indicated subcellular fractions (cytoplasmatic RNA, nucleoplasm RNA, and chromatin-bound RNA) from cells transfected with an empty plasmid.Data represented as mean ± SEM, N = 3.
+
 To gain further insights into the mechanism and pathways altered by Nsp14, we performed gene set enrichment analysis (GSEA) of the total RNA-seq data from Nsp14-expressing cells. Strikingly, we found that for genes upregulated upon expression of Nsp14, three of the four most highly enriched GSEA datasets were those of cells infected with SARS-CoV-2 (Blanco-Melo et al., 2020; Figure 2B and C, and Figure 2—figure supplement 1B). Moreover, we observed a smaller but significant enrichment of genes upregulated upon infection with MERS, a related virus (Blanco-Melo et al., 2020). Further, the mRNAs downregulated upon expression of Nsp14 tended to be strongly enriched for those downregulated following SARS-CoV-2 viral infection (Figure 2B). We did not detect enrichment when our dataset were compared to data from cells infected with influenza A virus (Blanco-Melo et al., 2020; Figure 2B). These results demonstrate that expression of a single viral protein can recapitulate a considerable portion of response of a host cell to SARS-CoV-2 infection and highlights the potential importance of Nsp14 in hijacking host gene expression.
 
-## Nsp14 alters gene expression mostly at the transcriptional level
+### Nsp14 alters gene expression mostly at the transcriptional level
 
 To evaluate whether the transcriptome changes were due to alterations at the transcriptional or post-transcriptional level or a combination of both, we utilized intronic signals from the total RNA-seq experiment as a proxy for transcriptional activity (Lee et al., 2020b). For each DEG in the 3’ RNA-seq dataset, we determined whether the intronic signal in the total RNA-seq dataset was altered in the same direction. We observed a strong correlation (R = 0.73 and p-value = 2.2e−16) between these two measures (Figure 2D), indicating that a large part of the response is transcriptional. For example, of the 1862 genes that were upregulated upon Nsp14 expression, 1006 also had higher intronic signal (at least 20% signal increase), whereas only 57 of the showed decreased intronic signal. Similarly, of the 2161 genes downregulated upon Nsp14 expression, 1242 displayed lower intronic signal (at least 20% signal decrease), whereas only 109 showed higher intronic signal (Supplementary file 1d). We then performed a similar analysis using the exonic signal of DEGs in the same total RNA-seq dataset. We obtained an even stronger correlation between the changes in exonic signal and total RNA signal for each gene (R = 0.87 and p-value = 2.2e−16, Figure 2E). In sum, we observed that more than 50% of the changes in the transcriptome upon Nsp14 expression are transcriptional. Notably, this might be an underestimation, as changes in intronic signal could be lower than the steady-state RNA levels or some introns could be very efficiently and quickly removed, so that splicing intermediates are not detected. To further confirm the transcriptional effect, we determined the levels of a subset of DEGs from chromatin-bound nascent RNA from cells transfected with a control or a Nsp14-expressing plasmid. As expected, a pre-mRNA (pre-TBP), was enriched in the chromatin-bound fraction, U6 was abundant in the nuclear compartment (nucleoplasm and chromatin bound), whereas 18S rRNA and a circRNA (circVKR1) were more abundant in the cytoplasm (Figure 2—figure supplement 2A). Then, we checked the expression of some genes that were up or down regulated upon Nsp14 expression in our dataset in the chromatin-bound fraction. Genes upregulated upon Nsp14 expression (FGF-18 and CXCL8) were also upregulated in the chromatin-bound fraction, while the downregulated ones (SH2D2A and COL13A) were downregulated indicating that at least those mRNAs are regulated at the transcriptional level by Nsp14. These results verify the genomic observations and strongly suggest that the gene expression changes observed upon Nsp14 are mainly transcriptional (Figure 2F). Interestingly, we also observed that there are more than 1000 genes that display higher intronic signals with no changes in gene expression, indicating that, in addition to the transcriptional effects, Nsp14 might also affect splicing (Supplementary file 1e).
 
-## Nsp14 expression provokes changes in alternative splicing and circRNAs production
+### Nsp14 expression provokes changes in alternative splicing and circRNAs production
 
 Genes upregulated upon Nsp14 expression are enriched in genes encoding proteins with GO terms related to RNA metabolism and, more specifically, splicing (Figure 1C). Moreover, for more than 1000 genes, there were significant increases in intron signal upon expression of Nsp14 without changes in mRNA levels, suggesting that Nsp14 alters the splicing of these pre-mRNAs (Supplementary file 1e). Indeed, we found that expression of Nsp14 strongly altered the inclusion patterns of almost 2300 exons, with more than 2000 exons displaying lower inclusion in the mature mRNA and 238 showing higher levels of inclusion when we expressed Nsp14 (Figure 3A, Supplementary file 1e, and Figure 3—figure supplement 1A). Furthermore, we also identified genes which used alternative acceptor or donor splice sites upon expression of Nsp14 (Figure 3A and Supplementary file 1e). Moreover, we observed an increase in the retention of more than 2000 introns following Nsp14 expression (Figure 3A and C). Although the effects on exon inclusion and use of alternative splice sites clearly indicate that Nsp14 influences splicing, the increase in intron retention could be secondary to changes in transcription. However, as most of the introns with increased retention are within genes that were not differentially expressed (Figure 3B and Figure 3—figure supplement 1B), we reasoned that expression of Nsp14 leads to changes in splicing in this subset of genes as well. Moreover, the effect of Nsp14 on alternative splicing appears to be specific to particular introns and exons in each gene, as the majority (~62%) of identified genes had a single spicing event altered (Figure 3D and Supplementary file 1e). Notably, most genes with altered splicing do not show expression changes upon Nsp14 expression, further indicating that the detected alternative splicing events are independent to transcriptional changes (Figure 3—figure supplement 1B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig3-v2.jpg)
+
+**Figure 3.:** (A) Table summarizing splicing analysis comparison between Nsp14 expression and control. Thresholds used: ∆PSI (percentage of inclusion) > 15% and a non-overlapping distribution with minimum of 5% difference (N = 3). (B) Fold change vs. expression in logarithmic scale for the genes with upregulated intron retention. In red genes with increased expression and in blue the ones with downregulated expression (fold change = 2, adjusted p-value < 0.05, N = 3). (C) Representative IGV alignment tracks of on gene (PAXIP1) with intronic events differentially changing between conditions (control and Nsp14 expression). The box marks the changing event. On the right, quantification of PSI. (D) Pie chart representing number of alternative splicing events deregulated upon Nsp14 expression by gene; 1772 genes have only one alternative splicing event changing between conditions, 615 has two events and 243 genes have three alternative splicing events changing. (E) Number of circRNAs reads detected in the total RNA sequencing (RNA-seq) experiment. Data represented as mean ± SEM, N = 3, t-test, ***p-value < 0.0005. (F) Fold change vs. expression in logarithmic scale for circRNAs in Nsp14 expression vs. control. In red upregulated genes and in blue downregulated genes (fold change = 2, adjusted p-value < 0.05, N = 3). (G) Plot of fold change vs. expression in logarithmic scale for exonic signal detected in the total RNA-seq dataset in Nsp14 vs. control for genes with upregulated circRNA expression. In red genes with increased expression and (fold change = 2, adjusted p-value < 0.05, N = 3). (H) Plot of fold change vs. expression in logarithmic scale for intronic signal detected in the total RNA-seq dataset in Nsp14 vs. control for genes with upregulated circRNA expression. In red genes with increased expression and in gray non-significant ones (fold change = 2, adjusted p-value < 0.05, N = 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative IGV alignment tracks of on gene (HJURP) with multiple exonic events differentially changing between conditions (control and Nsp14expression). The box marks the changing event. On the right, quantification of percentage of inclusion (PSI). (B) Fold change vs. expression in logarithmic scale for the genes with altered splicing. In red genes with increased expression and in blue the ones with downregulated expression (fold change = 2, adjusted p-value < 0.05, N = 3). (C) Kernel density plot for six intronic features that are significantly changing (Mann Whitney U test, adjusted p-value < 0.05, N = 3) in upregulated intron retention upon Nsp14expression. Thresholds used: ∆PSI > 15% and a non-overlapping distribution with minimum of 5% difference (N = 3). (D) Kernel density plot of intron GC content. In gray the distribution for internal introns (never in first position). In blue introns that appear 10% of the times at first position and in red introns that are in first position in more than 10% of the transcripts.
 
 To further characterize the effects of Nsp14 expression on alternative splicing, we looked for genomic features associated with the altered patterns of splicing in the presence of Nsp14. Interestingly, we found that the affected introns tended to be at the 5’ end of the transcript and were embedded in genomic regions with higher-than-average GC content (Figure 3—figure supplement 1C and Supplementary file 1f). The GC content may be a confounding factor of the location of these introns, as the GC content is higher at the 5’ end of genes and around the transcription start sites (Zhang, 2004). Therefore, we concluded that Nsp14 expression has a strong and specific effect on splicing efficiency for a subset of genes.
 
@@ -73,17 +93,37 @@ Previous research showed that SARS-CoV-2 infection disrupts splicing, mostly by 
 
 As circRNAs are generated by back-splicing, a process that competes with linear pre-mRNA splicing (Ashwal-Fluss et al., 2014), we checked whether Nsp14 also alters circRNAs expression. Using the total RNA-seq data, we found that there is a strong increase (more than twofold) in the total number of circRNA reads upon Nsp14 expression (Figure 3E). Most of the 246 circRNAs that were differentially expressed upon expression of Nsp14 were upregulated (put the number of upregulated; Figure 3F and Supplementary file 1h). These deregulated circRNAs were contained within 190 loci (some loci host multiple circRNAs). Interestingly, the levels of most of the mRNAs that host these circRNAs were unchanged (Figure 3G and Supplementary file 1d). Indeed, Nsp14 did not increase the transcription of loci hosting the upregulated circRNAs (we observed increased levels of intronic sequences in only 20 out of the 190 loci with upregulated circRNAs; Figure 3H and Supplementary file 1d). Together, these results strongly suggest that the increased circRNA levels are caused by increased biosynthesis or stability of the circRNAs. In sum, our data shows that expression of Nsp14 influences alternative splicing and back-splicing on the host cells.
 
-## The effect of Nsp14 on gene expression is independent of the ExoN activity but requires the N7-guanine-methyltransferase domain
+### The effect of Nsp14 on gene expression is independent of the ExoN activity but requires the N7-guanine-methyltransferase domain
 
 Nsp14 has two separated enzymatic activities: (1) works as a proofreading ExoN and (2) it is a N7-guanine-methyltransferase required for the modification of the viral RNA cap. To determine whether the ExoN activity is required for the strong effects of Nsp14 on gene expression, we performed two different experiments. First, we tested whether co-expression of Nsp10, which dramatically increases the ExoN activity of Nsp14 (Bouvet et al., 2012; Bouvet et al., 2014; Ma et al., 2015), resulted in an enhanced effect of Nsp14. Briefly, we transfected HEK293T cells with plasmids for expressing Nsp14 and/or Nsp10. As a control, we used cells transfected with an empty vector. Co-expression of Nsp14 and Nsp10 did not impact levels of Nsp14 protein (Figure 4A). We then prepared RNA from these samples and quantified the expression of some mRNAs that were altered upon expression of Nsp14 alone. For instance, the levels of FGF-18 increased upon expression of Nsp14 alone, whereas the levels of SH2D2A were significantly downregulated (Figure 4—figure supplement 1A). Interestingly, expression of Nsp10 alone or in combination with Nsp14 did not further alter the levels of any of the mRNAs tested (Figure 4—figure supplement 1A). To determine whether the effect is global, we prepared and sequenced total RNA from these samples. Principal component analysis (PCA) showed that data from samples expressing Nsp14 alone separated from the data from the sample transfected with the empty plasmid, whereas that the ones from the samples expressing only Nsp10 almost overlapped with the control. Co-expression of Nsp14 and Nsp10 resulted in transcriptional changes like the ones induced by expression of only Nsp14 (Figure 4—figure supplement 1B). Unlike expression of Nsp14, which provoked a strong remodeling of the mRNA and circRNA populations (Figures 1—3), expression of Nsp10 did not considerably alter the gene expression profile (only 88 DEGs, Figure 4B and C, and Figure 4—figure supplement 1C). As also suggested by the RT-qPCR experiments (Figure 4—figure supplement 1A), the gene expression profiles of cells transfected with Nsp14 alone or in combination with Nsp10 are strikingly similar. Indeed, we observed an almost complete overlap between the DEGs resulting from Nsp14 expression and from co-expression of Nsp14 and Nsp10, and there was a very strong correlation between the fold change in DEGs upon Nsp14 expression with and without Nsp10 co-expression (Figure 4B and C). Moreover, co-expression of Nsp10 did not result in additional differentially expressed mRNAs (Figure 4B and C) and did not alter of the number of circRNAs reads (Figure 4D) compared to expression of Nsp14 alone. These data strongly suggests that the Nsp14 ExoN activity is not responsible for the dramatic effects of Nsp14 expression on the transcriptome.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blot in cells transfected with an empty plasmid (control), Nsp10, Nsp14, or co-expressing Nsp10 and Nsp14 (Nsp10 + Nsp14). Nsp10 and Nsp14 were detected through the Strep tag. Actin was used as loading control. See Figure 4—source data 1. (B) MA plots showing the expression fold change in-between the indicated conditions in the total RNA sequencing (RNA-seq) dataset. Significantly upregulated genes in blue, downregulated in red, and not significantly deregulated in gray. (C) Plot showing the fold change of deregulated genes in samples co-expressing Nsp10 and Nsp14 vs. control (on the y-axis) and Nsp14 vs. control (on the x-axis). (D) Number of circRNAs reads detected in each indicated condition. Data represented as mean ± SEM, N = 3. (E) Plots showing the fold change of deregulated genes in the indicated condition vs. control. (G) RT-qPCR showing the expression of FGF-18, CXCL8, and SH2D2A upon the transfection with an empty plasmid (control), Nsp14 WT, or Nsp14 D331A. Data represented as mean ± SEM, N = 3. (H) RT-qPCR showing the expression of circCDK1, circMARCHF7, and circVKR1 upon the transfection with an empty plasmid (control), Nsp14 WT, or Nsp14 D331A. Data represented as mean ± SEM, N = 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RT-qPCR showing the expression of FGF-18 and SH2D2A in the indicated conditions. Data represented as mean ± SEM, N = 3. (B) Principal component analysis (PCA) for the 3’ RNA sequencing (RNA-seq) of the indicated samples. (C) Plot showing the fold change of deregulated genes in samples expressing Nsp10 vs. control (on the y-axis) and Nsp14 vs. control (on the x-axis).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Scheme of the Nsp14 mutants generated in this study. (B) Principal component analysis (PCA) for the 3’ RNA sequencing (RNA-seq) of the indicated samples. (C) MA plots showing the expression fold change in-between the indicated conditions in 3’ RNA-seq. Significantly upregulated genes in blue, downregulated in red, and not significantly deregulated in gray. (D) RT-qPCR showing the expression of circCDK1, circMARCHF7, and circVKR1 in the indicated conditions. Data represented as mean ± SEM, N = 3. (E) Western blot showing the expression of Nsp14 WT and Nsp14 D331A, detected through the Strep tag. Actin was used as loading control. See Figure 4—figure supplement 2—source data 1.
 
 To definitely test whether the ExoN activity is related to the remodeling of gene expression upon Nsp14 expression, we determined the effect of Nsp14 ExoN mutants on gene expression. Briefly, we generated plasmids for expression of Nsp14 with mutations in the ExoN domain: the double mutant D90A/G92A and the single mutant D273A (Figure 4E, schematic Figure 4—figure supplement 2A). These mutations have been previously shown to completely inhibit the ExoN activity of Nsp14 (Ma et al., 2015; Ogando et al., 2020). We generated and sequenced 3’ RNA-seq libraries from cells that expressed wild-type or ExoN-mutant Nsp14 proteins or eGFP, as a control. PCA indicated that the two mutants have overlapping transcriptomes that differed from the control (Figure 4—figure supplement 2B). The mutations in the ExoN domain did not alter the strong effects induced by Nsp14 expression (Figure 4—figure supplement 2C) and the fold changes in mRNA expression induced upon expression of the wild-type or mutated Nsp14 were also strikingly similar (Figure 4E). Moreover, we did not detect significant differences in the expression of the three tested circRNAs between samples that expressed the wild-type Nsp14 (Nsp14 WT) and the ExoN mutants (Figure 4—figure supplement 2D). Taken together, these data indicate that the ExoN activity of Nsp14 is not required for the observed transcriptome effects.
 
 We also generated a N7-guanine-methyltransferase mutant (Nsp14 D331A), by altering a conserved site previously shown to be essential for the N7-guanine-methyltransferase activity (Jin et al., 2013) (schematic Figure 4—figure supplement 2A). Then, we checked by RT-qPCR how Nsp14 D331A affects the expression of some mRNA and circRNAs that are deregulated with Nsp14 WT. Interestingly, overexpression of Nsp14 D331A does not alter the expression of the tested targets (Figure 4G and H). The lack of effect is not due to low expression or stability of the Nsp14 D331A mutant, as it was expressed at similar levels than Nsp14 WT as assessed by Western blot (Figure 4—figure supplement 2E). In summary, our results indicate that the N7-guanine-methyltransferase domain of Nsp14 is required for driving the gene expression changes described in this study.
 
-## Dissecting the transcriptome changes upon Nsp14 expression
+### Dissecting the transcriptome changes upon Nsp14 expression
 
 To gain further insights into the gene expression program orchestrated by Nsp14, we performed a time course experiment. Briefly, we prepared and sequenced 3’ RNA-seq libraries using RNA isolated from cells transfected with the Nsp-14-expressing plasmid 6, 8, 12, 24, and 48 hr after transfection. As a control, we collected data from cells transfected with a control plasmid (eGFP) harvested at the same time points. Importantly, we observed detectable levels of Nsp14 mRNA and protein even early after transfection (Figure 5—figure supplement 1A and B). As expected, the biological triplicates mapped together in the PCA (Figure 5A). Data diverged across time and between control and Nsp14-expressing cells. The effect of Nsp14 expression dramatically increased over time with a gradual increase in the number of DEGs (Figure 5B, Figure 5—figure supplement 1C, and Supplementary file 2a), as well as an increase in the number of significantly enriched GO terms (Figure 5C and Supplementary file 2b). For example, expression of genes related to cell metabolism, RNA metabolism, and cell cycle were altered relative to the control only at 24 and 48 hr post transfection (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig5-v2.jpg)
+
+**Figure 5.:** (A) Principal component analysis of the 3’ RNA sequencing (RNA-seq) of the time course experiment. Arrows indicate how samples separate according to the time point or condition (Nsp14 expression or control). (B) Heatmap showing increasing number of up- and downregulated genes at different time points after Nsp14 expression. (C) Heatmap representing the Gene Ontology analysis result at the indicated time points. (D) Expression of CXCL8 across the indicated time points in the 3’ RNA-seq data. Data represented as mean ± SEM, N = 3, t-test, **p-value < 0.005, *p-value < 0.05. (E) Luciferase assay showing that CXCL8 is transcriptionally activated after Nsp14 expression. Firefly expression is controlled by CXCL8 promoter, whereas Renilla is under the control of a constitutive promoter. Data represented as mean ± SEM, N = 6, t-test, **p-value < 0.005. (F) Table showing the enrichment for specific transcription factor (TF) binding sites in the promoter (100 bp upstream the transcription starting site of the upregulated genes) (lfc >0.8, adjusted p-value < 0.05) at 8 hr after Nsp14 transfection.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot showing the normalized number of Nsp14 reads from the 3’ RNA sequencing (RNA-seq) experiment, at the indicated time points, in cells transfect with a control plasmid (control), or the Nsp14 plasmid (Nsp14). (B) Western blot showing increasing amount of Nsp14 at the indicated time points in cells transfected with the Nsp14 plasmid. Nsp14 was detected through the Strep tag. Actin was used as loading control. See Figure 5—figure supplement 1—source data 1. (C) MA plots showing the expression fold change in-between the indicated conditions in 3’ RNA-seq. Significantly upregulated genes in blue, downregulated in red, and not significantly deregulated in gray. (D) Expression of selected genes across the indicated time points from the 3’ RNA-seq dataset. Data represented as mean ± SEM, N = 3. (E) Scheme of the CXCL8 promoter region used for the Firefly reporter. (F) Luciferase assay showing NFkB activation. Firefly expression is controlled by a minimal transcriptional activator recognized by NFkB, whereas Renilla is under the control of a ubiquitous promoter. Data represented as mean ± SEM, N = 6, t-test, **p-value < 0.005.
 
 We reasoned that the mRNAs that were differentially expressed at early time points could provide cues regarding the mechanism of action of Nsp14. We observed only 19 DEGs at the 8 hr time point and 200 DEGs at the 12 hr time point (Figure 5B). Interestingly, CXCL8, which encodes IL8, was the most highly induced mRNA at the 8 hr time point (fold change = 11.5, p-value = 1.2e–5, Supplementary file 1h). Furthermore, we found that CXCL8 was induced by more than 12-fold consistently between 8 and 48 hr post transfection (Figure 5D). It was previously reported that CXCL8 mRNA is significantly upregulated following infection of cells with SARS-CoV-2 and that the levels of IL8 are increased in COVID-19 patients (Blanco-Melo et al., 2020; Coperchini et al., 2020; Del Valle et al., 2020; Gardinassi et al., 2020; Li et al., 2021).
 
@@ -95,11 +135,23 @@ To determine if NFkB activation contributes to the early response of cells follo
 
 Then, for the mRNAs strongly upregulated early after Nsp14 transfection, we performed an analysis of their extended promoter regions (1000 bp upstream of the transcription start site). We found that these regions were enriched for binding sites for factors involved in the interferon response such as EGR2, STAT2, and SP3 (Supplementary file 2e). Previous work showed that SARS-CoV-2 infection modulates both the interferon and the NFkB pathways (Blanco-Melo et al., 2020; Vanderheiden et al., 2020; Wyler et al., 2021) and that Nsp14 affects these pathways (Hsu, 2021; Li et al., 2021). Our data indicates that the initial response to Nsp14 expression involves modulation of both the NFkB and the interferon pathways.
 
-## IMPDH2 partially mediates the transcriptional changes induced by Nsp14 expression
+### IMPDH2 partially mediates the transcriptional changes induced by Nsp14 expression
 
 Given the strong transcriptional changes we observed upon Nsp14 expression, it is possible that this viral protein acts directly as a TF. However, previous research showed that Nsp14 localizes in the cytoplasm when expressed in HEK293T cells (Gordon et al., 2020a). We then performed subcellular fractionation and chromatin purification, followed by Western blot at different time points after transfection, and we showed that Nsp14 localizes in the cytoplasm, and it does not associate with chromatin demonstrating that the transcriptional effect is indirect (Figure 6—figure supplement 1A).
 
 Therefore, we explored the hypothesis that host cellular proteins mediate Nsp14-induced gene expression changes. Recent proteomics studies found that Nsp14 interacts with the host protein IMPDH2 (Gordon et al., 2020a; Gordon et al., 2020b), which catalyzes the rate-limiting step of guanine biosynthesis, but did not reveal whether this interaction results in any metabolic or cellular change (Li et al., 2021). One possibility is that Nsp14 activates IMPDH2 which then modulates gene expression directly or indirectly. In support of this possibility, expression of Nsp14 changed the levels of genes involved in purine metabolism (Figure 1C). Furthermore, we found IMPDH2 mRNA expression significantly downregulated upon Nsp14 expression (Figure 6A). As GTP levels inversely regulate IMPDH2 expression (Glesne et al., 1991), we hypothesized that Nsp14 promotes the activation of IMPDH2, leading to higher GTP levels that, in the end, negatively regulate IMPDH2 mRNA. To test whether expression of Nsp14 alters IMPDH2 activity, we performed metabolomic analysis of lysates of cells transfected with a plasmid for expression of Nsp14 or a control plasmid. Consistent with modulation of IMPDH2 activity by Nsp14, we detected an approximately threefold increase in the levels of xanthine diphosphate and GTP (Figure 6B and Supplementary file 3a), the downstream products of XMP. Furthermore, we observed increased concentrations of other nucleotides that directly or indirectly derive from IMP (Figure 6B and Supplementary file 3a), probably due to activated compensatory pathways.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig6-v2.jpg)
+
+**Figure 6.:** (A) Expression of IMPDH2 mRNA is reduced upon Nsp14 expression. Data from the total RNA sequencing (RNA-seq) experiment. Data represented as mean ± SEM, N = 3, t-test, ***p-value < 0.0005. (B) In the upper panel, scheme reporting some of the tested metabolites deriving from inosine-5'-monophosphate (IMP) metabolism. IMPDH2 (highlighted in light blue) catalyzes the conversion of IMP to xanthine-5’-monophosphate (XMP), precursor of guanosine-5'-triphosphate (GTP). Significantly upregulated metabolites are highlighted in red. In the lower panel, GTP cellular concentration significantly increases in Nsp14-expressing cells. Data represented as mean ± SEM, N = 3, t-test, **p-value < 0.005. (C) Western blot showing that mycophenolic acid (MPA) treatment does not alter Nsp14 (detected through the Strep-tag) or IMPDH2 expression. Actin used as loading control. See Figure 6—source data 1. (D) Principal component analysis of the 3’ RNA-seq library of the indicated samples. (E) Table reporting the number of upregulated and downregulated genes in the indicated comparisons. (F) Plot showing the distribution of fold changes of all genes detected in the 3’ RNA-seq in the indicated conditions. (G) RT-qPCR showing the retention of the first intron for PAXIP1, SETD1A, and ZNF507 in the indicated conditions. Data represented as mean ± SEM, N = 3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blots of the subcellular fractionation and chromatin precipitation at the indicated time points post transfection (12, 24, and 48 hr) in cells transfected with an empty plasmid (control), or Nsp14 (Nsp14). Nsp14 was detected through the Strep tag. GAPDH is used as cytoplasmatic marker, and H3K27me3 as a chromatin-bound marker. See Figure 6—figure supplement 1—source data 1. (B) MA plots relative to the 3’ RNA sequencing (RNA-seq) experiment of cells transfected with a control plasmid (control) or Nsp14 (Nsp14) and treated with the vehicle (DMSO) or mycophenolic acid (MPA) (MPA). Significantly upregulated genes in blue, downregulated in red, and not significantly deregulated in gray.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71945/elife-71945-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Expression of inosine-monophosphate dehydrogenase 2 (IMPDH2), FGF-18, SH2D2A, and CXCL8 in the 3’ RNA sequencing (RNA-seq) dataset in the indicated conditions. (B) Venn diagram showing the common genes upregulated (left) or downregulated (right) in samples expressing Nsp14 and treated with or without mycophenolic acid (MPA). (C) RT-qPCR showing the expression of circCDK1, circMARCHF7, and circVKR1 in the indicated conditions. Data represented as mean ± SEM, N = 3. (D) Western blot showing that mizoribine (MZR) treatment does not alter Nsp14 or IMPDH2 expression. Actin used as loading control. See Figure 6—figure supplement 2—source data 1. (E) RT-qPCR showing the expression of FGF-18, CXCL8, and SH2D2A, in the indicated conditions. Data represented as mean ± SEM, N = 3. (F) RT-qPCR showing the expression of circCDK1, circMARCHF7, and circVKR1 in the indicated conditions. Data represented as mean ± SEM, N = 3. (G) RT-qPCR showing the retention of the first intron for PAXIP1, SETD1A, and ZNF507 in the indicated conditions. Data represented as mean ± SEM, N = 3.
 
 To determine if IMPDH2 activity mediates the Nsp14-driven changes in gene expression, we compared the gene expression changes upon Nsp14 expression in the presence of an IMPDH2 inhibitor. Briefly, we transfected cells with a Nsp14 or with a control plasmid (eGFP) and 8 hr later treated the cells with MPA, a non-isoform-selective pan-IMPDH inhibitor, or DMSO. We harvested the cells 40 hr after the treatment. We used a concentration of MPA of 0.5 µM to avoid cytotoxic effects (Qasim et al., 2011). Although we treated the cells with a low concentration of MPA, MPA treatment could reduce the concentration of cellular GTP, which is the primary energy source for mRNA translation. We confirmed that MPA treatment did not alter Nsp14 or IMPDH2 levels by Western blot (Figure 6C).
 
@@ -133,7 +185,7 @@ Nsp14 interacts with the replication complex and in proximity with other enzymes
 
 Finally, we showed that IMPDH2 meditates the effects on cell transcriptome, altered splicing, and circRNAs deregulation induced by Nsp14 expression, as pharmacological inhibition of IMPDH2 activity with MPA and MZR mitigated the effects of Nsp14. Intriguingly, MPA is a known immunosuppressant and antiviral agent (Pan et al., 2012; To et al., 2016; Dang et al., 2017), and it inhibits SARS-CoV-2 propagation (Kato et al., 2020).
 
-## Ideas and speculations
+### Ideas and speculations
 
 Although our data clearly indicate that IMPDH2 mediates the effects induced by Nsp14, we still do not know the detailed mechanism. We reported altered expression of genes involved in purine synthesis, including a decrease in IMPDH2 mRNA levels, and we also detected elevated cellular GTP concentrations upon Nsp14 expression. Taken together, these data suggest that Nsp14 activates IMPDH2. Besides, previous studies showed that Nsp14 interacts with IMPDH2 (Gordon et al., 2020a; Gordon et al., 2020b), but we do not know whether the direct interaction between Nsp14 and IMPDH2 is sufficient for triggering the massive gene expression changes or if this system requires a co-factor.
 
@@ -147,53 +199,238 @@ To sum up, we here provided novel insights regarding the function of Nsp14 in al
 
 ## Materials and methods
 
-## Experimental procedures
+**Key resources table**
 
-## Cell culture
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(SARS-CoV-2)</td>
+      <td>Nsp14</td>
+      <td>wuhCor1/SARS-CoV-2</td>
+      <td>NC_045512 v2:18040–19620</td>
+      <td>UCSC Genome Browser on SARS-CoV-2 Jan. 2020/NC_045512.2 Assembly (wuhCor1)</td>
+    </tr>
+    <tr>
+      <td>Gene(Homo sapiens)</td>
+      <td>IMPDH2</td>
+      <td>UCSC Genome Browser on Human Feb. 2009 (GRCh37/hg19) Assembly</td>
+      <td>NM_000884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5alpha</td>
+      <td>Rosbash Lab</td>
+      <td></td>
+      <td>Electrocompetent cells used for transformation of cloned plasmids</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cell line obtained from Marr Lab Brandeis University. STR authenticated by ATCC, and mycoplasma tested.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (SARS-CoV-2)</td>
+      <td>pLXV-EF1alpha-2XStrep-SARS-CoV2-nsp14-IRES-Puro</td>
+      <td>Addgene</td>
+      <td>Plasmid #141380</td>
+      <td>Human codon optimized</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (SARS-CoV-2)</td>
+      <td>pLXV-EF1alpha-2XStrep-SARS-CoV2-nsp10-IRES-Puro</td>
+      <td>Addgene</td>
+      <td>Plasmid #141376</td>
+      <td>Human codon optimized</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (jellyfish)</td>
+      <td>pLXV-EF1alpha-2XStrep-eGFP-IRES-Puro</td>
+      <td>Addgene</td>
+      <td>Plasmid #141395</td>
+      <td>Human codon optimized</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (SARS-CoV-2)</td>
+      <td>pLXV-EF1alpha-2XStrep-SARS-CoV2-nsp14-D331A-IRES-Puro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human codon optimized, N7-guanine-methyltransferase mutant</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (SARS-CoV-2)</td>
+      <td>pLXV-EF1alpha-2XStrep-SARS-CoV2-nsp14-D273A-IRES-Puro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human codon optimized, ExoN mutant</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (SARS-CoV-2)</td>
+      <td>pLXV-EF1alpha-2XStrep-SARS-CoV2-nsp14-D90A/G92A-IRES-Puro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human codon optimized, ExoN mutant</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Strep (Mouse monoclonal)</td>
+      <td>Quiagen</td>
+      <td>Cat#: 34850</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IMPDH2 (Rabbit polyclonal)</td>
+      <td>Proteintec</td>
+      <td>Cat#: 12948-1-AP</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Actin (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 3700</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nsp14(Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 99098</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: T5168</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Laminin B1(Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab133741</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH(Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 2118</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tri-Methyl-Histone H3 (Lys27)(Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 9733</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG- HRP conjugated (Rabbit monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: ap160p</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG HRP conjugated (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: AP188P</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mizoribine IMPDH inhibitor</td>
+      <td>Selleckchem</td>
+      <td>Cat#: 50924-49-7</td>
+      <td>Used at 10 µM, dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mycophenolic acid(MPA)IMPDH inhibitor</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: M5255</td>
+      <td>Used at 0.5 µM, dissolved in DMSO</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Project for Statistical Computing (https://www.r-project.org/)</td>
+      <td></td>
+      <td>RRID:SCR_001905</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental procedures
+
+#### Cell culture
 
 HEK293T cells were a kind gift from Dr Marr at Brandeis University. HEK293T were authenticated by STR profiling through ATCC. HEK293T were maintained in Dulbecco’s modified Eagle’s medium (Genesee Scientific, 25–500), supplemented with 10% serum (FetalPlex, Gemini Bio/Fisher, # 100–602), and 1× penicillin-streptomycin (Penicillin-Streptomycin 100×, Genesee Scientific, 25-512). Mycoplasma test was performed using Mycoplasma Detection Kit by Southern Biotech (13100-01), according to manufacturer’s instructions.
 
-## Transient plasmid transfection
+#### Transient plasmid transfection
 
 Plasmids pLVX-EF1alpha-SARS-CoV-2-proteins-2xStrep-IRES-Puro proteins are a gift from Nevan Krogan (Addgene) (Gordon et al., 2020b) are listed in Supplementary file 3b and purified by Midi-prep using Invitrogen kit. The day before transfection, 0.35*106 cells per well were plated in 12-well plates. Then, cells were transfected with PEI (polyethylenimine 25 kD linear from Polysciences, cat# 23966-2). Briefly, 1500 ng of total DNA (1200 ng of pLVX-EF1alpha-SARS-CoV-2-proteins-2xStrep-IRES-Pur + 300 ng of pLVX-EF1alpha-eGFP-2xStrep-IRES-Puro) were incubated at RT for 20 min with PEI, with a ratio 3:1 = PEI:DNA in 100 µl of serum-free medium, and the mixture was added to the cells. Forty-eight hours after transfection, the medium was removed, and cells were harvested for following analysis.
 
-## IMPDH2 inhibitors treatment
+#### IMPDH2 inhibitors treatment
 
 MPA (Sigma-Aldrich) was a kind gift from Hedstrom lab at Brandeis University and was reconstituted in DMSO (Sigma-Aldrich) and aliquots were stored at –20°C. Eight hours after transfection, MPA wash freshly diluted into cell media and cells were treated with a final concentration of 50 µM of MPA, or with an equivalent amount of DMSO.
 
 MZR was purchased from Sellechem (50924-49-7), reconstituted in DMSO and aliquots were stored at −20°C. Eight hours after transfection, MZR wash freshly diluted into cell media and cells were treated with a final concentration of 10 µM of MZR, or with an equivalent amount of DMSO.
 
-## RNA extraction and RT-qPCR
+#### RNA extraction and RT-qPCR
 
 RNA was extracted with TriZol (Invitrogen) reagent following the manufacturer’s instructions and then treated with DnaseI (NEB). For RT-qPCRs shown in Figure 2F, Figure 2—figure supplement 2A, and Figure 4—figure supplement 1A, cDNA was prepared with 1000 ng of DnaseI treated RNA (iScript Select cDNA Synthesis Kit, Bio-Rad, following manufacturer’s instructions). Random hexamers were used for the nascent RNA experiment shown in Figure 2F and Figure 2—figure supplement 2A. OligodT primers were used for Figure 4—figure supplement 1A. The produced cDNA was utilized as a template for quantitative real-time PCR performed with the C1000 Thermal Cycler Bio-Rad. The PCR mixture contained Taq polymerase (SYBR green Bio-Rad). Cycling parameters were 95°C for 3 min, followed by 40 cycles of 95°C for 10 s, 55°C for 10 s, and 72°C for 30 s. Fluorescence intensities were plotted vs. the number of cycles by using an algorithm provided by the manufacturer. For the remaining RT-qPCRs, cDNA was synthetized using 1000 ng of RNA as input, 500 ng of oligodT (for mRNAs validation) or random hexamers (for circRNAs validation and alternative splicing validation), 50 mM Tris-HCl pH 8.3, 50 mM KCl, 3 mM MgCl2, 10 mM DTT, 400 µM dATP, 400 µM dCTP, 400 µM dGTP, 400 µM dTTP, and homemade purified MLV-RT (200 units). The produced cDNA was utilized as a template for quantitative real-time PCR performed with the C1000 Thermal Cycler Bio-Rad. The PCR mixture contained homemade purified Taq polymerase, 20 mM Tris-HCl pH 8.8, 10 mM (NH4)2SO4, 10 mM KCl, 2 mM MgSO4, 0.1% Triton X-100, 1× SYBR, 1.075 M ethylene glycol. Cycling parameters were 95°C for 3 min, followed by 40 cycles of 95°C for 10 s, 55°C for 30 s, and 72°C for 30 s. Fluorescence intensities were plotted vs. the number of cycles by using an algorithm provided by the manufacturer. All the primers used in this assay are listed in Supplementary file 3c. Regarding the RT-qPCR for detecting retained introns (Figure 6G and Figure 6—figure supplement 2G), we positioned one primer in the exonic sequence before or after the retained intron, and the other primer in the retained intronic sequence (indicated as exon-intron). In parallel, we also run a reaction using both primers in the exonic regions surrounding the retained intron. We normalized the abundance of the exon-intron and the exon-exon product on a housekeeping gene (TBP mRNA). Finally, we plotted the intronic-exonic ratio, defined as the ratio between the relative abundance of the exon-intron product on the relative abundance of the exon-exon one.
 
-## Nascent RNA purification
+#### Nascent RNA purification
 
 Cells were harvested, washed with PBS, and then resuspended in 50 µl of Hypotonic Buffer (20 mM Tris-HCl pH 7.4, 10 mM KCl, 2 mM MgCl2, 1 mM EGTA, 0.5 mM DTT, Murine RNAse Inhibitor [NEB], Complete Protease Inhibitor [Pierce, PIA32955]). Cells were incubated on ice for 3 min, then NP-40 to a final concentration of 0.1% was added, the cells were gently flicked, and incubated other 3 min in ice. Following, cells were centrifuged for 5 min at 4°C at 1000 rcf. The supernatant (corresponding to the cytoplasmatic fraction) was collect in a separate tube and RNA was extracted with TriZol (Invitrogen), as indicated above. The nuclei in the pellet were gently resuspended in 250 µl of Homogenization Buffer (10 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 0.8 M sucrose, 0.5 mM EDTA, 1 mM DTT, 0.5 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]) were transferred onto 350 µl of sucrose cushion (10 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 M sucrose, 10% glycerol, 0.5 mM EDTA, 1 mM DTT, 0.5 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]), and centrifuged at 21,000 rcf for 10 min at 4°C. The supernatant was removed, and the nuclei (pellet) were resuspended in 150 µl of Nuclear Lysis Buffer (10 mM HEPES-KOH pH 7.5, 100 mM KCl, 10% glycerol, 0.1 M EDTA, 0.15 mM spermine [ThermoFisher], 0.5 mM spermidine [Sigma-Aldrich], 1 mM NaF, 0.1 mM Na3VO4, 0.1 mM ZnCl2, 1 mM DTT, 1 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]); 150 µl of 2× NUN Buffer (mM HEPES-KOH pH 7.5, 300 mM NaCl, 1 M urea, 1% NP-40, 1 mM DTT, 1 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]) were added drop by drop, flicking the tube after each addition. Samples were incubated on ice for 20 min and centrifuged at 21,000 rcf for 30 min at 4°C. The supernatant (nucleoplasm) was collected, and RNA was extracted with TriZol LS (ThermoFisher), according to the manufacturer’s protocol. Nascent RNA associated to chromatin (pellet) was extracted by adding 1 ml of TriZol, incubating the sample at 65°C for 15 min and then proceeding with the previously described extraction. All the fractions were treated with DNaseI (NEB), as previously described, before proceeding with RT-cDNA synthesis (iScript Select cDNA Synthesis Kit, Bio-Rad Random Priming, following manufacturer’s instructions) and RT-qPCR (SYBR Green Bio-Rad), as indicated above.
 
-## 3’ RNA-seq libraries
+#### 3’ RNA-seq libraries
 
 Seventy-five ng of RNA were used as input for preparing 3’ RNA sequencing libraries following CelSeq2 (Hashimshony et al., 2016) protocol, changing the UMI to six bases. Sequencing was performed on Illumina NextSeq 500 system.
 
-## Total RNA-seq libraries
+#### Total RNA-seq libraries
 
 Forty ng of rRNA depleted RNA was used as a starting material for library preparation. NEBNext rRNA Depletion kit (NEB #E7405) was used to deplete ribosomal RNA. Libraries were prepared using the NEXTFLEX Rapid Directional RNA-Seq Kit 2.0 by PerkinElmer, following the manufacturer’s instructions. The samples were sequenced by Novogene (Novogene Corporation Inc 8801 Folsom BLVD, Suite 290, Sacramento, CA) with Hiseq-4000.
 
-## Metabolomic analysis
+#### Metabolomic analysis
 
 Cells were transfected as aforementioned, harvested with Trypsin-EDTA 0.25% 1× phenol red, Genesee Scientific (25-510) and washed three times with cold PBS. PBS was removed and samples were snap-frozen in liquid nitrogen. Samples were sent to Creative Proteomics 45-1 Ramsey Road, Shirley, NY, for metabolomic analysis. Briefly, cell pellet in each sample tube was made into 200 μl of 80% methanol. Cells were lysed on an MM 400 mill mixer with the aid of two metal balls at 30 Hz for 1 min three times, followed by sonication for 3 min in an ice-water bath. The samples were placed at - 20°C for 1 hr before centrifugal clarification at 21,000 g and 5°C for 15 min. The clear supernatant was collected for LC-MS and the precipitated pellet was used for protein assay using a standardized Bradford procedure. Standard solutions containing all targeted nucleotides were prepared, in a concentration range of 0.0002–20 nmol/ml, in an internal standard solution of 13C5-AMP, 13C10-ATP, and 13C10- GTP. Twenty μl of the clear supernatant of each sample was mixed with 180 μl of the internal standard solution. Ten μl aliquots of resultant sample solutions and standard solutions were injected to a C18 column (2.1 × 150 mm, 1.7 μm) to run UPLC-MRM/MS on a Waters Acquity UPLC system coupled to a Sciex QTRAP 6500 Plus mass spectrometer operated in the negative-ion ESI mode. The mobile phase was an acyl amine buffer (A) and acetonitrile/methanol (B) for binary gradient elution (5–65% B in 16 min), at 0.25 ml/min and 55°C. Concentrations of the detected analytes were calculated with internal-standard calibration by interpolating the constructed linear-regression curves of individual compounds, with the analyte-to-internal standard peak ratios measured from sample solutions.
 
-## Protein extraction and Western blot
+#### Protein extraction and Western blot
 
 Cells were lysed in RIPA buffer (150 mM NaCl, 1% Triton X-100, 0.5% SDS, 50 mM Tris-HCl pH 8.0) supplemented with EDTA free protease inhibitor (Pierce, PIA32955) and centrifuged at 4°C 21.1 × 1000 g for 30 min. Lysate was quantified by BCA Assay (ThermoFisher, 23225). Lysates were run on 4–20% gradient polyAcrylamide gels (Bio-Rad, 4568094) with Tris-Glycine SDS Running buffer. Transfer was performed in a Tris-Glycine buffer supplemented with 20% methanol. Membranes were blocked with 3% BSA in TBS-T Buffer pH 7.6 (Tris base 0.2 M, NaCl 1.5 M, 0.1% Tween-20). Membranes were incubated with the following primary antibodies: mouse anti-Actin (Cell Signaling, 3700), rabbit anti-IMPDH2 (Proteintec, 12948-1-AP), mouse anti-Strep-tag (Quiagen, 34850). Secondary antibodies: rabbit anti-mouse HRP conjugated (Millipore), mouse anti-rabbit HRP conjugated (Millipore). Detection was performed using ECL (Pierce, 32106).
 
-## Subcellular fractionation and chromatin precipitation
+#### Subcellular fractionation and chromatin precipitation
 
 Cells were harvested, washed with PBS, and then resuspended in Hypotonic Buffer (20 mM Tris-HCl pH 7.4, 10 mM KCl, 2 mM MgCl2, 1 mM EGTA, 0.5 mM DTT, Murine RNAse Inhibitor [NEB], Complete Protease Inhibitor [Pierce, PIA32955]). Cells were incubated on ice for 3 min, then NP-40 to a final concentration of 0.1% was added, the cells were gently flicked, and incubated other 3 min in ice. Following, cells were centrifuged for 5 min at 4°C at 1000 rcf. The supernatant (corresponding to the cytoplasmatic fraction) was collect in a separate tube. The nuclei in the pellet were gently washed with PBS and then resuspended in 250 µl of Homogenization Buffer (10 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 0.8 M sucrose, 0.5 mM EDTA, 1 mM DTT, 0.5 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]) were transferred onto 350 µl of sucrose cushion (10 mM HEPES-KOH pH 7.5, 10 mM KCl, 1.5 mM MgCl2, 1 M sucrose, 10% glycerol, 0.5 mM EDTA, 1 mM DTT, 0.5 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]), and centrifuged at 21,000 rcf for 10 min at 4°C. The supernatant was removed, and the nuclei (pellet) were washed in PBS and then resuspended in 20 µl of Nuclear Lysis Buffer (10 mM HEPES-KOH pH 7.5, 100 mM KCl, 10% glycerol, 0.1 M EDTA, 0.15 mM Spermine [ThermoFisher], 0.5 mM Spermidine [Sigma-Aldrich], 1 mM NaF, 0.1 mM Na3VO4, 0.1 mM ZnCl2, 1 mM DTT, 1 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]). Twenty µl of 2× NUN Buffer (mM HEPES-KOH pH 7.5, 300 mM NaCl, 1 M urea, 1% NP-40, 1 mM DTT, 1 unit/µl Murine RNase Inhibitor [NEB], protease inhibitor [Pierce, PIA32955]) were added drop by drop, flicking the tube after each addition. Samples were incubated on ice for 20 min and centrifuged at 21,000 rcf for 30 min at 4°C. The supernatant (nucleoplasm) was collected and transferred to a separate tube. Proteins associated to chromatin (pellet) were treated with DNaseI (NEB). Finally, we proceeded with SDS-PAGE and Western blot (loaded the entire collected fractions), as described above.
 
-## Cloning of Nsp14 ExoN mutants
+### Cloning of Nsp14 ExoN mutants
 
-## pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D90A/G92A-IRES-Puro
+#### pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D90A/G92A-IRES-Puro
 
 pLXV-EF1alpha-2xStrep-SARS-CoV-2-nsp14-IRES-Puro was opened with BsrGI-HF (NEB) and EcoRI-HF (NEB). The removed cassette was replaced by ligation with a G-block ordered from GenScript (GenScript UAS Inc, Piscataway, NJ), previously amplified with specific primers.
 
@@ -203,7 +440,7 @@ Gaattcgccgccaccatgtggtcccatccgcagtttgagaagggtggtggttcaggcggaggctccgggggcgggagctg
 
 Primers:
 
-## pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D273A-IRES-Puro
+#### pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D273A-IRES-Puro
 
 pLXV-EF1alpha-2xStrep-SARS-CoV-2-nsp14-IRES-Puro was opened with BstBI (NEB) and AfeI (NEB). The removed cassette was replaced by ligation with a G-block ordered from GenScript (GenScript UAS Inc, Piscataway, NJ), previously amplified with specific primers.
 
@@ -213,9 +450,9 @@ ccacacttcgaacttacttctatgaaatactttgtaaaaatcgggcccgagcggacatgttgtttgtgcgaccgacgagc
 
 Primers:
 
-## Cloning of Nsp14 N7-guanine-methyltransferase mutant
+### Cloning of Nsp14 N7-guanine-methyltransferase mutant
 
-## pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D331A-IRES-Puro
+#### pLXV-EIF1 alpha-2xStrep-SARS-CoV-2-nsp14-D331A-IRES-Puro
 
 pLXV-EF1alpha-2xStrep-SARS-CoV-2-nsp14-IRES-Puro was opened with NdeI (NEB) and AfeI (NEB). The removed cassette was replaced by ligation with a G-block ordered from GenScript (GenScript UAS Inc, Piscataway, NJ), previously amplified with specific primers.
 
@@ -225,13 +462,13 @@ agcgctcctcgcggataagtttcctgtgctccacGCCatcggcaaccctaaggccattaaatgcgtcccccaagctgatg
 
 Primers:
 
-## Cloning of CXCL8-Firefly reporter
+### Cloning of CXCL8-Firefly reporter
 
 pGL_RSV_RF_BG (a modification of the pGL plasmid) was a kind gift from Dr Marr at Brandeis University. pGL_RSV_RF_BG was opened with XhoI and NcoI. DNA was extracted from HEK293T cells with DNeasy Blood & Tissue Kit Quiagen (ID: 69504) according to the manufacturer’s instructions. The CXCL8 promoter was amplified by PCR with Phusion High-Fidelity PCR Master Mix with HF Buffer (NEB) according to the manufacturer’s instruction with the following primers:
 
 The purified insert was digested with XhoI and NcoI and inserted into the plasmid by ligation with T7 DNA ligase (NEB) following the manufacturer’s instructions to generate the pGL_CXCL8_promoter_Firefly.
 
-## Luciferase assay
+### Luciferase assay
 
 The day before transfection 0.18*106 cells per well were plated into 24-well plates. Cells were transfected as aforementioned using 750 ng of total DNA. Cells were transfected with 75 ng of Firefly reporter, 75 ng of Renilla reporter, and 600 ng of pLVX-EF1alpha-SARS-CoV-2-Nsp14-2xStrep-IRES-Puro or 600 ng of empty vector. We used the following plasmids as reporters: pGL_CXCL8_promoter_Firefly, generated as indicated above.
 
@@ -241,26 +478,26 @@ pHAGE NFkB-TA-LUC-UBC-GFP-W was a gift from Darrell Kotton (Addgene plasmid # 49
 
 Forty-eight hours after transfection, cells were lysate in lysis buffer (25 mM Tris-phosphate at pH 7.8, 10% glycerol, 1% Triton X-100, 1 mg/ml of bovine serum albumin [BSA], 2 mM cyclohexylene diamin tetraacetate, and 2 mM DTT). An aliquot of the lysate was added to Firefly Buffer 1× (75 mM Tris pH 8.0, 100 μM EDTA, 530 μM ATP, 5 mM MgSO4) freshly supplemented with 0.1 μM D-luciferin (Goldbio.com) and 100 μM Coenzyme-A (Fisher, #BP2510250), and luminescence was measured. Immediately after, an equal amount of Renilla Buffer 1× supplemented with 10 μM Coelenterazine (Goldbio.com) was added to the sample and luminescence was measured again. Non-transfected cell lysate was used to measure the background signal, that was subtracted before calculating the Firefly/Renilla ratios.
 
-## Bioinformatic analyses
+### Bioinformatic analyses
 
-## Linear RNA alignment and quantification
+#### Linear RNA alignment and quantification
 
 Raw reads were aligned to the human genome (hg38) using STAR (Dobin et al., 2013). Mapped reads in the 3’ UTR were quantified using End Sequence Analysis Toolkit (Gohr and Irimia, 2019) for 3’ RNA libraries. FeatureCounts (Gohr and Irimia, 2019) was used to quantify mapped transcripts from total RNA-seq libraries. DEGs were found using DESeq2 as previously described (Sarrion-Perdigones et al., 2020). DEGs with |L2FC| > 1, p-adjusted value <0.05 were considered significant and used as input in downstream GO analysis (DAVID, v 6.8). For the analysis of the time point 3’ RNA-seq experiment, we used |L2FC| > 0.5, p-adjusted value <0.05. HEK293T cell transcriptome was used as a reference to query for enriched GO terms from up- and downregulated DEG lists. GSEA was performed using the fgsea package in R (Sergushichev et al., 2016). Gene rank was determined prior to GSEA by calculating −log(p-value)* sign(log2 fold change)(Sergushichev et al., 2016). Gene sets used for GSEA were downloaded from Molecular Signatures Database (http://www.msigdb.org). To compare our RNA-seq results with other studies, we used a gene set from MSigDB containing DEGs from published RNA-seq data. A curated list of terms from GSEA were plotted to assess the transcriptional response to viral protein expression. Data visualization was carried out using ggplot2 in R. Non-omics statistical analysis and data visualization was completed using Prism.
 
-## circRNA detection and differential expression analysis
+#### circRNA detection and differential expression analysis
 
 Computational analysis of circRNAs was performed on total RNA-seq data. circRNAs were detected by searching unaligned reads for head-to-tail splice junctions as previously described (Memczak et al., 2013). Differentially expressed circRNAs were found by DESeq2 (Love et al., 2014). circRNA reads were normalized using size factors computed by DESeq2 together with all mapped reads.
 
-## Intronic reads quantification and analysis
+#### Intronic reads quantification and analysis
 
 Reads were aligned with STAR-aligner (Wilson et al., 2013) to the human genome and transcriptome version Hg38. Intronic reads were extracted and counted using Featurecounts function in R with an intronic region reference.
 
-## Alternative splicing analysis
+#### Alternative splicing analysis
 
 Percentage of inclusion (PSI) quantification was done with Vast-Tools (Tapial et al., 2017). Delta PSI was then calculated from the mean of each condition. To determine events changing between Nsp14 and transfection control, we chose a minimum of 15% difference in mean PSI and no overlapping between replicas. Introns and exons feature analysis was done using Matt (Gohr and Irimia, 2019).
 
 With the same approach, we re-analyzed total RNA-seq from HEK293T-hACE2 cells infected with SARS-CoV-2 GSE169158 (Sun et al., 2021). Then, we tested the significance of the overlap between the alternative splicing analysis on our dataset and this dataset by performing a randomization of sets with equal size, evaluating their overlap to generate a null distribution, and calculating the probability of our overlap (10,000 replicas p-value < 0.01).
 
-## Motif enrichment analysis
+#### Motif enrichment analysis
 
 We extracted the promoters’ sequences of upregulated genes with a fold change of at least 1.75 (log2FC > 0.8 and adjusted p-value > 0.05) using windows of 100, 500, and 1000 bases upstream of each annotated transcription start site for each gene. We then used the MEMEsuite (Bailey et al., 2009) using the tool AME (McLeay and Bailey, 2010) for motif enrichment analysis. We used the motif data base Homo sapiens COmprehensive MOdel COllection (HOCOMOCO) v11 TF binding models (binding profiles or binding motifs) for human TFs. As control for the input sequences, we used the tool provided for scrambled sequences option. Finally, we used MEMEsuit tool FIMO (Grant et al., 2011) to identify the position of these motifs in the analyzed 100 bp promoters. We extracted the promoters’ sequences of upregulated genes with a fold change of at least 1.75 (log2FC > 0.8 and adjusted p-value > 0.05) using windows of 100, 500, and 1000 bases upstream of each annotated transcription start site for each gene. We then used the MEMEsuite tool AME (McLeay and Bailey, 2010) for motif enrichment analysis using. We used the motif data base HOmo sapiens COmprehensive MOdel COllection (HOCOMOCO) v11 TF binding models (binding profiles or binding motifs) for human TFs. As control for the input sequences, we used the tool provided scrambled sequences option. Finally. we used MEMEsuit tool FIMO (Grant et al., 2011) to identify the position of these motifs in the analyzed 100 bp promoters.

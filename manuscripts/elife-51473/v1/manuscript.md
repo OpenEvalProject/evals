@@ -28,31 +28,31 @@ Studies of the different forms of competitive selection across animal species ha
 
 **Figure 1.:** The computational primitives underlying competitive selection are shown as ‘hidden computations’. See also Box 1.
 
-## Organization
+### Organization
 
 We begin with two key theoretical (and computational) perspectives on selection that have been discussed in the literature, namely the winner-take-all (WTA) and the accumulation-to-threshold (A2T) perspectives, and describe their isomorphic relationship (section titled ‘Competitive selection as symmetry-breaking: Theory and models’). Next, we break down the seemingly monolithic winner-take-all selection into six key computational primitives (section titled ‘Hidden computational features…’). Here, for each computational feature, we describe its conceptual role in the idealized WTA equation, and discuss its applicability to selection problems that have been studied in behavioral neuroscience. We then explore the demands that its execution places on neural circuit architecture and function, and identify specific circuit motif(s) that can implement the computational feature. In this process, we view the literature on selection through the lens of the elemental computation and summarize relevant findings from different species and forms of selection. Because our focus, here, is on questions of biological realization rather than in-principle operation, we draw selectively upon those studies in the literature that inform issues of neural implementation. Next, we combine the individual circuit motifs from the previous section into a mechanistic framework for competitive selection, and link this WTA-inspired framework back to the A2T perspective, thereby closing the loop between them (section titled ‘Feasibility, generality and limitations…’). In addition, we highlight the biological viability of this framework, and also point out that it has several key elements in common with leading models of decision making that have been proposed to account for behavioral as well as neural results in cortical and subcortical brain areas. Based on these, we argue that the proposed neural circuit framework is canonical - one that can serve as a starting point for experimentally uncovering how core computations of competitive selection are implemented by specific neural mechanisms. The final section aids such future efforts by detailing specific predictions that arise from each of the six computational building blocks, as well as approaches to test them experimentally (section titled ‘Experimentally testable predictions’). We conclude with a broad discussion of challenges in investigating the neural circuit bases of competitive selection.
 
-## Definitions
+### Definitions
 
-## Options
+#### Options
 
 Stimuli or potential choices available to the animal. For instance, in the case of value-based decision-making, option A may be a stimulus associated with a reward of high magnitude but that arrives with long delay, and option B, a stimulus associated with a reward of low magnitude but short delay. In the case of selection for spatial attention, two competing options may be stimuli at two different locations, with one of them aligned with a spatial cue.
 
-## Competitive selection/decision-making
+#### Competitive selection/decision-making
 
 The process by which one option must be selected among many (>1) available options, that is, for which competition among neural representations is required to identify a winner. Examples include selection between two or more stimulus options presented simultaneously, selection between two or more stimulus options presented across time, or selection between two or more neural representations activated by a single (ambiguous) stimulus option. Competitive selection does not include situations in which just one representation is activated because only a single option is available (for instance, attending to a single target in the absence of any distracters), nor situations in which category boundaries are hardwired through learning stable representations in such a manner that no competition among representations is necessary for the choice.
 
-## Norm of an option
+#### Norm of an option
 
 A quantity that represents the ‘worth’ of an option (or of the attribute being compared). This term captures more broadly, ideas encapsulated in specialized terms used in the literature. For instance, in the context of spatial attention, the norm would be the classic ‘stimulus priority’, and in the case of value-based decision-making, it could be the ‘subjective value’. This term is intended, ultimately, to correspond to a continuous quantity that allows for lawful comparisons along some common scale of comparison. (We note that our use of the term ‘norm’ is not intended to correspond directly to the formal mathematical definition of ‘norm’ on vector spaces.)
 
-## Channel
+#### Channel
 
 Group of neurons (excitatory and inhibitory) involved in representing an option.
 
 ## Competitive selection as symmetry-breaking: Theory and models
 
-## Theoretical formulations
+### Theoretical formulations
 
 Competitive selection, at its core, is a symmetry-breaking process: among several options available to the animal, one is chosen, and all the others (temporarily) rejected. From a theoretical perspective, such symmetry-breaking has been described using several equivalent formulations. It has been described as the detection of the peak in the dynamic representational landscape, in which the heights at different points represent the norms of the different options at any instant (Fecteau and Munoz, 2006; Cisek and Kalaska, 2010; Sugawara and Nikaido, 2014; Figure 2A). It has also been framed as a form of categorization - the transformation of continuous inputs (here, graded representations of the options) into two discrete output groups separated by a selection or category boundary such that the neural representation of just one of the options passes into the ‘selected’ category, whereas those of the remaining options fall into a second ‘unselected’ one (Freedman and Assad, 2011; Mysore and Knudsen, 2011b; Mysore and Knudsen, 2012). Cast in the language of dynamical systems, different choices have been described as different attractor states of a dynamic ‘energy function’ defined over the space of option attributes, with competitive selection involving the identification of the attractor with the lowest energy given sensory inputs and internal influences at that instant (Machens et al., 2005; Niessing and Friedrich, 2010). Alternatively, selection can be thought of as the outcome of a template matching process in which either the multiple options are matched to a relevant neural template, or a single option is compared to multiple neural templates, with the one yielding the best match (or lowest error) being the selected option (Riesenhuber and Poggio, 1999); selection in sequential match-to-sample experiments is consistent with this view. Finally, another commonly used description is that competitive selection occurs when the neural representation associated with one of the competing options first crosses some functional response threshold (Figure 2B). Ultimately, however, no matter the description, the outcome of symmetry-breaking is that the selected option, and only that one, triggers downstream consequences that culminate in a percept or behavioral output.
 
@@ -60,9 +60,25 @@ Competitive selection, at its core, is a symmetry-breaking process: among severa
 
 **Figure 2.:** (A) Schematic illustrating the peak-detection formulation of competitive selection. Shown is a representational landscape (depicted here as a continuous ‘hilly’ surface), in which each point corresponds to an option-norm pair. Dots illustrate a few specific option-norm pairs; red dot represents the winning option, i.e., the option corresponding to the highest peak in the landscape. (B) Schematic illustrating the ‘first-to-threshold’ formulation. Shown is the evolution over time of two decision variables, one red and one blue. The winning option is the one (red) that first crosses decision threshold. (C) Modeling. A prominent network architecture involving ‘mutual inhibition’, used in both the winner-take-all (WTA) and accumulation to threshold (A2T) formulations of competitive selection (Roe et al., 2001; Usher and McClelland, 2001; Machens et al., 2005; Wong and Wang, 2006; Mysore and Knudsen, 2012; see text). Arrows with pointed heads denote excitation (recurrent), and those with flat heads denote inhibition.
 
-## Modeling formulations
+### Modeling formulations
 
-From a modeling perspective, two broad classes of models have been employed to account for symmetry-breaking in competitive selection. The first is the class of winner-take-all (WTA) or attractor models. Here, computational units representing different options interact with one another, with the strongest option outcompeting all the others (Carpenter and Grossberg, 1987; Yuille and Grzywacz, 1989; Hahnloser et al., 2000; Maass, 2000; Rousselet et al., 2004). If xi are inputs corresponding to i = 1,… N options, yi are the corresponding transformed outputs, x* denotes the winning input, and i* denotes the winning option, the generalized winner-take-all operation is represented by the equations:(1a)yi={f(xi);ifxi≥xi∀j0;otherwise(1b)i*=i such that  yi=fxi(1c)x*=xi*
+From a modeling perspective, two broad classes of models have been employed to account for symmetry-breaking in competitive selection. The first is the class of winner-take-all (WTA) or attractor models. Here, computational units representing different options interact with one another, with the strongest option outcompeting all the others (Carpenter and Grossberg, 1987; Yuille and Grzywacz, 1989; Hahnloser et al., 2000; Maass, 2000; Rousselet et al., 2004). If xi are inputs corresponding to i = 1,… N options, yi are the corresponding transformed outputs, x* denotes the winning input, and i* denotes the winning option, the generalized winner-take-all operation is represented by the equations:
+
+$$
+y_{i}={f(x_{i});ifx_{i}\geqx_{i}∀j0;otherwise
+$$
+
+
+
+$$
+i^{*}=isuchthaty_{i}=fx_{i}
+$$
+
+
+
+$$
+x^{*}=x_{i^{*}}
+$$
 
 In other words, the option with the dominant representation breaks symmetry and drives the output. The winner-take-all class of models has been used to account for selection both among simultaneously presented options (Koch and Ullman, 1987), as well as between options presented over time (Machens et al., 2005). This class of models accounts for the majority of the theoretical formulations of selection listed above - including peak detection, attractor dynamics, categorization, and error minimizing template matching (Riesenhuber and Poggio, 1999; Machens et al., 2005; Wang, 2008; Mysore and Knudsen, 2012).
 
@@ -70,7 +86,7 @@ The second class of models takes the accumulation-to-threshold (A2T) approach an
 
 Although seemingly different, the WTA and A2T classes of models are not conceptually distinct (Wang, 2012; Figure 2C), but rather view selection from two complementary perspectives. A2T models focus heavily on the time-course of evolution of the neural responses that lead to the representational landscape, and handle symmetry-breaking by building into the model, the notion of threshold crossing, albeit without much detail on how the threshold might be set (Churchland and Ditterich, 2012; Huk and Meister, 2012); but see Lo and Wang, 2006; Wei et al., 2015 for multi-area proposals). By contrast, WTA models typically begin with a representational landscape without much detail on how it might be constructed, and focus on implementing symmetry-breaking. Despite the different emphases, the WTA and A2T models are largely isomorphic, with A2T models necessarily producing a categorical choice, and WTA models being compatible with accumulation of evidence over time (Wang, 2002; Wong and Wang, 2006; Wang, 2008). This correspondence is not surprising considering that, in reality, both the evolution of neural responses over time (construction of the representational landscape), as well as the application of symmetry-breaking transformations, are crucial aspects of any functional description of competitive selection. Consequently, just as the different theoretical formulations employed to describe competitive selection are conceptually equivalent, so are the two broad classes of computational models used to account for it.
 
-## Neural support
+### Neural support
 
 Studies of the different forms of selection have used both the WTA and the A2T models to describe observed neural correlates, supporting their interchangeability at the conceptual level. For instance, selection for spatial attention has been viewed from the perspective of A2T (Ratcliff et al., 2007; Mysore and Knudsen, 2014; Herman et al., 2018) as well as WTA (Fecteau and Munoz, 2006; Mysore and Knudsen, 2011b; Mysore and Knudsen, 2014). Similarly, studies of decision-making have applied A2T (Gold and Shadlen, 2007) as well as WTA models (Hunt et al., 2012; Strait et al., 2014). In the context of perceptual categorization, several studies have interpreted results using A2T (Shadlen and Newsome, 2001; Roitman and Shadlen, 2002), and others using WTA models (Wang and Spelke, 2002; Machens et al., 2005; Wong and Wang, 2006). Finally, studies have examined action selection from both the A2T perspective (Öztürk, 2009; Thura and Cisek, 2014) and the WTA perspective (Cisek, 2007; Cisek and Kalaska, 2010; Koyama et al., 2016).
 
@@ -82,9 +98,9 @@ Despite the wealth of computational models used to implement WTA selection, and 
 
 We note that the winner-take-all equation (Equation 1a) represents the idealized implementation of selection operating with a hard (discontinuous) nonlinearity and noiseless steady-state representations. By contrast, neurons and networks typically implement softer (continuous) nonlinearities, that is, ones in which the transition between a low output state and a high output state occurs over a non-zero range of inputs. Second, neural representations possess significant trial-to-trial variability (or noise), and competitive selection transpires over time - from the instant the options are made available to the animal to the instant of expression of the behavioral or perceptual output corresponding to the chosen option. Third, although the six computations are all key parts of an idealized selection process, they may apply to varying extents to different forms of selection behavior, with the ‘comparison’ (#1) and ‘unitary choice’ (#6) features being essential across the board. Nonetheless, as we will see below, Equation (1a) and the six computational building blocks together serve as a fruitful starting point for constructing a neural circuit framework for competitive selection.
 
-## Neural representation of options
+### Neural representation of options
 
-## Conceptual set-up
+#### Conceptual set-up
 
 Selection operates upon the substrate of neural representations of the competing options. Therefore, a reasonable requirement for lawful comparisons among options is that their neural representations be encoded along a common scale (Levy and Glimcher, 2012), one that embodies the worth, or so-called ‘norm’, of each option (Figure 3AB). The norm can either represent the net contribution of all the attributes of an option that are relevant to the selection process, computed via some weighted combination of those of individual attributes, or can represent just the contribution of a particular attribute that may be being compared at a given instant. To be useful, the norm satisfies two properties. First, it is instantiated in neural activity via a shared or common currency (for instance, firing rate), thereby providing a level playing field for comparisons. Second, the neural encoding of the norm of an option is graded and ordered, with ‘stronger’ neural responses reflecting higher magnitudes of the norm. These properties facilitate the construction of a representational landscape in which each option evokes responses proportional to its norm (Figure 2A). We note that there is no requirement for these representations to be encoded in a separate ‘stage’ or neural circuit. Rather, they can be encoded within the neural circuit(s) performing selection, consistent with past suggestions (Cisek, 2012). Additionally, neither the norm nor its currency are intended to be identical across brain areas or universal across forms of selection. They are ‘local’ notions that ensure a common neural playing field for the comparisons being performed within a brain area at any instant.
 
@@ -92,7 +108,7 @@ Selection operates upon the substrate of neural representations of the competing
 
 **Figure 3.:** (A) Schematic showing the norm of an option as a function of its various attributes (colored axes). The norm of an option encodes its worth to the animal, and can vary from moment to moment. The norm serves as a common frame of reference for comparing among competing options. (B) Illustration of the norm in the context of selective (spatial) attention.
 
-## Neural support
+#### Neural support
 
 Within the literature on different forms of selection, there are several examples of neural norms that serve as the basis for comparison among options; these are discussed below.
 
@@ -114,13 +130,13 @@ In the context of action selection, the ‘probability of execution’ of each c
 
 Thus, there is support from different forms of selection for the representation of competing options in a graded manner that reflects their norm. In many cases, there is additional support for the norm being unidimensional, and for it being encoded in the common currency of neuronal firing rates. This, then, sets the stage for the first step in the computational framework for competitive selection.
 
-## Comparison
+### Comparison
 
-## Conceptual set-up
+#### Conceptual set-up
 
 The first crucial computational feature of the WTA operation that must be implemented by neural circuits is comparison among competing options, that is, the ‘>’ operation (Equation 1a).
 
-## Neural circuit requirements
+#### Neural circuit requirements
 
 Comparison among options can be achieved in neural circuits through inhibition. This can be done by having each option evoke inhibition that is proportional to its norm, and that modulates the representations of all options. Notably, the anatomical scale of the inhibition must be ‘global’, able to reach all the neurons that encode potential competing options. This allows each option to be compared against the others, effectively producing representations that reflect the relative norms of the competing options. From an implementational perspective, one straightforward way to achieve this is via global feedforward inhibition (Figure 4). Such feedforward inhibition among the representations of the options normalizes inputs based on total drive, ensuring that responses stay within the neural dynamic range (Olsen et al., 2010). (We note, however, that this is not the only way to implement comparison, we will discuss an alternate, feedback, implementation in a subsequent section titled ‘Generality: Comparison …’).
 
@@ -128,7 +144,7 @@ Comparison among options can be achieved in neural circuits through inhibition. 
 
 **Figure 4.:** (A) Rows – layers of neurons; columns – neurons encoding for different options (referred to as ‘channels’); channel #5 neurons are labeled. Bottom layer (small, grey circles) – neurons in the input layer to the selection circuit, which gather information about the various attributes of each option. Middle layer (ovals) – inhibitory neurons. Top layer (large circles) – excitatory neurons that signal the winner. Although each channel is capable of triggering output, only the winning channel will. When only a single option is presented, the corresponding output neuron signals the norm of that option. Arrows with flat heads – inhibitory projections; in black: Excitatory input corresponding to option #5; in red: global feedforward inhibition from option #5 to all options (corresponding to the first computation of comparison); in grey: Excitatory and inhibitory connections corresponding to other options. (B) A two-option version of the circuit in A, redrawn for clarity. Arrows depicting input into the circuit and output from the circuit are not shown here (and in subsequent figures), for simplicity.
 
-## Neural support
+#### Neural support
 
 Examples of inhibition sub-serving comparison and selection have been reported in different brain areas and for several forms of selection. Reports involve either the indirect inference of neural inhibition from response patterns - typically by comparison of responses when one option is presented with those when multiple options are, or a direct demonstration of it through causal experiments involving the silencing of appropriate (inhibitory) neurons.
 
@@ -148,19 +164,19 @@ In parallel, direct evidence for the involvement of competitive inhibition among
 
 In summary, based on studies of the neural correlates of selection, there is evidence for (norm-dependent) inhibition involved in the comparison among options. Direct evidence for the presence of such inhibition has been demonstrated in a subset of the cases. Going forward, it will be important to experimentally identify the source of competitive inhibition, and to demonstrate its computational contribution, in various brain areas underlying the different kinds of selection.
 
-## What can the circuit thus far NOT do?
+#### What can the circuit thus far NOT do?
 
 The circuit depicted in Figure 4 can account well for selection of the best option when the two options presented are significantly different from one another. However, when the options are close to one another in norm, it is not effective at signaling the winner reliably, especially in the presence of neural response variability (Carandini and Churchland, 2013; Mahajan and Mysore, 2020). We turn to this computational feature next.
 
-## Categorical selection boundary
+### Categorical selection boundary
 
-## Conceptual set-up
+#### Conceptual set-up
 
 The next ‘hidden’ computational feature of the idealized WTA operation is the categorical identification of the option with the highest norm. For instance, in a two-input example in which the first one has a higher value, the idealized WTA operation correctly selects it as the winner both when the inputs are [10, 2], that is when x1 has a much higher value than x2, and when the inputs are [10, 8], that is when there is only a small difference between them. In other words, the idealized WTA operation implements a step-like category boundary.
 
 In practical terms, the ability of neural circuits to approximate a step-like function promotes the selective enhancement of response differences between similar options straddling the selection boundary, thereby improving the reliability of the signaling the winning option. This improvement in reliability can be appreciated particularly in the context of neural 'noise' (or response variability) that is ubiquitous in biological circuits. If, for instance, the norms of two competing options x1, and x2 are represented by noisy firing rates [10 ± 0.8, 8 ± 0.6] spikes/sec (mean ± sd), the difference between the firing rates on any individual trial can be very small. On the one hand, biological circuits rarely produce a perfectly step-like nonlinearity. On the other hand, a circuit mechanism that can selectively enhance differences across the selection boundary to produce explicitly categorical outputs from continuous inputs (Gollisch and Meister, 2010) can improve signaling reliability substantially. (We note that our discussion here relates specifically to neural responses, and does not impose a requirement that behavioral response profiles be step-like.)
 
-## Neural circuit requirements
+#### Neural circuit requirements
 
 At first glance, amplifying the responses to all options multiplicatively (i.e., with a gain factor) may seem like a potential mechanism to enhance differences between their norms. However, in the context of noisy (neural) responses, the difference between the norms of two options is more reliably quantified by discriminability (d’=difference in response means/√(average response variance)), rather than by a simple disparity between the means. Because uniform amplification scales up both the mean as well as the standard deviation equally, it does not help improve the discriminability. What is needed instead, is differential amplification, such that responses to options that just straddle the selection boundary are driven apart. In simple terms, the more categorical the representation across the selection boundary, the more robust-to-noise the selection will be (Figure 5A).
 
@@ -172,7 +188,7 @@ Recently, it was demonstrated that a donut-like inhibitory motif, in which each 
 
 A second mechanism that has been proposed, specifically in the context of decision-making in circular feature spaces (for instance, the space of motion directions, or orientations), is structured synaptic inhibition (Xue and Liu, 2014). In this scheme, inhibitory neurons encoding for a particular feature value (say, motion direction) deliver strong feedforward inhibition to the excitatory neurons that encode either the same motion direction or the opposite motion direction, but weak inhibition, to excitatory neurons encoding for all other orientation values. In addition, these inhibitory neurons suppress one another (and themselves) with a uniform strength (Figure 5C). It is unclear whether this mechanism directly generalizes to non-circular feature spaces.
 
-## Neural support
+#### Neural support
 
 In the literature, a host of studies have found categorical neural representations in the context of different forms of selection. However, only one study thus far has investigated experimentally how this is achieved in a neural circuit (Mahajan and Mysore, 2020). We discuss these points below.
 
@@ -192,13 +208,13 @@ In summary, there is strong support for categorical neural representations under
 
 An intriguing issue in this context is that whereas categorical neural representations are pervasive, behavioral responses are frequently less categorical: psychometric performance curves (for instance, % correct curves), typically vary gradually with the independent variable (but see You and Mysore, 2020. A plausible explanation is that behavior is the consequence of the aggregated response of a large population of neurons with the animal as a whole frequently performing worse than individual neurons (Newsome et al., 1989). This, however, does not take away from the fundamental issue of how categorical neural representations are produced. It also raises the question of what might be the effect on neural and behavioral responses of disrupting the underlying circuit mechanism? A testable prediction is that such a disruption would cause psychometric curves to become even less categorical than normal, worsening behavioral performance around the selection boundary.
 
-## What can the circuit thus far NOT do?
+#### What can the circuit thus far NOT do?
 
 The circuit depicted in Figure 5 implements a fixed (categorical) selection boundary, with the value being determined by the biophysical properties of the neurons (input/output functions, synapses etc; Mysore and Knudsen, 2012). Therefore, if the options encountered by animals require the selection boundary to shift to different values dynamically, this circuit would be incapable of doing so (Mysore and Knudsen, 2012). This computational feature is considered next.
 
-## Dynamic flexibility of the selection boundary
+### Dynamic flexibility of the selection boundary
 
-## Conceptual set-up
+#### Conceptual set-up
 
 The third ‘hidden’ computational feature of the WTA operation is the identification of the option with the largest norm (i.e., the ‘winner’), independently of the absolute values of the norms of the options. For instance, in a selection problem involving two inputs x1, and x2, WTA correctly selects the winner x* as the first option (x* = x1) both when the inputs are, respectively, [9, 5], and when they are [20, 13]. A fixed boundary would not work in both cases, but instead, a category boundary of 9 is needed in the first case, and of 20, in the second.
 
@@ -210,11 +226,11 @@ In practical terms, this is a problem that animals, and in turn, their neural ci
 
 The dynamic nature of such flexibility, which requires the generation of flexible selection boundaries on the fly, places the constraint that the underlying circuit implementation cannot rely upon plasticity mechanisms. This is in contrast to the slower form of learned flexibility that has been studied in the decision-making literature (Bichot et al., 1996; Miller and Cohen, 2001; Mante et al., 2013; Dajani and Uddin, 2015; Nilsson et al., 2015). There, the response expected to the same stimulus can be qualitatively different in different contexts, based on response 'rules' that are learned by experience and then invoked flexibly based on contextual cues (Freedman and Assad, 2006; Jaramillo et al., 2014; Xiong et al., 2015). Such rule-based flexibility is thought to involve various mechanisms including synaptic plasticity in the appropriate neural pathways (Xiong et al., 2015) and astrocyte function in the cortex (Brockett et al., 2018). By contrast, the ‘flexible category boundary’ that we refer to here, requires flexibility to be built-into the underlying circuitry.
 
-## Neural circuit requirements
+#### Neural circuit requirements
 
 Recent computational modeling (in the context of selection for spatial attention) has predicted that the circuit motif necessary for achieving flexible selection boundaries is feedback inhibition between the representations of the competing options (Mysore and Knudsen, 2012). It stands opposed to feedforward inhibition, the magnitude of which is not modulated by its effect on downstream targets, and which is has been shown to be insufficient for flexibility (Mysore and Knudsen, 2012). Modeling demonstrates that the reciprocal inhibition of inhibition motif (Figure 6B) is the most efficient implementation of feedback among the many implementations that can all work (Mysore and Knudsen, 2012; Figure 6DE). (Incidentally, the terms ‘mutual inhibition among competing options’ or ‘lateral inhibition’ used in previous studies do not always disambiguate between the feedforward vs. feedback scenarios described here. For this reason, we prefer the use of the terminology of feedback as opposed to feedforward inhibition.)
 
-## Neural support
+#### Neural support
 
 Reciprocal inhibition of inhibition has been reported in several brain areas (Pangratz-Fuehrer and Hestrin, 2011; Picardo et al., 2011), including within networks that are involved in different forms of flexible selection (Deleuze and Huguenard, 2006; Brown et al., 2014; Goddard et al., 2014; Jovanic et al., 2016; Fadok et al., 2017; Koyama and Pujala, 2018).
 
@@ -228,13 +244,13 @@ In the context of action selection, the reciprocal inhibition of inhibition moti
 
 In summary, despite the proposed essential role of feedback inhibition for flexible selection, and the presence of this motif in several brain areas/selection circuits, its necessity for flexibility of selection boundaries is yet to be tested experimentally.
 
-## What can the circuit thus far NOT do?
+#### What can the circuit thus far NOT do?
 
 Flexible, categorical selection within a single pair of options is insufficient for adaptive behavior. A circuit for selection must be able to select between any given pair of options. The circuit in Figure 6 will need to be elaborated to achieve this computational feature, and this is considered next.
 
-## Ability to select among many (all) viable pairs of options
+### Ability to select among many (all) viable pairs of options
 
-## Conceptual set-up
+#### Conceptual set-up
 
 The fourth ‘hidden’ computational feature of the idealized WTA operation is the identification of the winner no matter which specific inputs {xk} are active at any instant (and which of those happens to be the largest).
 
@@ -244,7 +260,7 @@ In practical terms, selection and decision-making are typically versatile, opera
 
 **Figure 7.:** (A) Schematics illustrating the ‘copy-and paste’ circuit strategy for achieving invariance to option identities. Top panel: Illustrates a scenario in which only options 1 and 3 are available to the animal (indicated by thick outlines around the input neurons 1 and 3 in the bottom layer). All neurons involved in encoding a particular option constitute a neural ‘channel’; shown is channel 3. Bottom panel: Illustrates a different scenario in which only options 3 and 6 are available. Here, selection between channels 3 and 6 is being solved by simply ‘copying-and-pasting’ the circuit module (red connections) used for selection between options 1 and 3. (B) Schematic of selection circuit illustrating the COSMI strategy for achieving invariance to option identities, discovered in the context of selection for spatial attention (Mahajan and Mysore, 2018; Mahajan and Mysore, 2020). COSMI- Combinatorially optimal coding by sparse, multilobe inhibitory neurons (see also Box 3). A group of high-firing inhibitory neurons, fewer in number than the number of spatial locations encoded (or number of channels), encode space densely with spatial receptive fields that have multiple hotspots or lobes. (C) Spatial receptive fields (RFs) of four Imc neurons, three of which are multilobed; neurons a,b,c,e, here, correspond loosely to the ones in B; adapted from Mahajan and Mysore, 2018.
 
-## Neural circuit requirements and support
+#### Neural circuit requirements and support
 
 To implement this computational feature, the underlying neural circuitry must be designed to handle comparisons for different (all possible) pairs of evoked neural representations.
 
@@ -256,19 +272,19 @@ Outside of the owl study (Mahajan and Mysore, 2018), the circuit mechanisms unde
 
 Thus, versatility of selection across many distinct option-pairs is a useful computational feature. Whether the circuit strategy of combinatorially optimized inhibition is also found in other brain areas/species, or more generally, what the strategy might be, for other forms of selection is yet to be determined experimentally.
 
-## What else ought a selection circuit be able to do?
+#### What else ought a selection circuit be able to do?
 
 Flexible, categorical signaling among all viable pairs of options leads naturally to the next feature; selection among more than two options at any instant. This computational feature is considered next.
 
-## Ability to select among multiple (>2) options
+### Ability to select among multiple (>2) options
 
-## Conceptual set-up
+#### Conceptual set-up
 
 The computations we have discussed, thus far, have all dealt nominally with two competing options at a time. However, the natural world is rich with potential options, and animals frequently select among more than just two competing alternatives. It is, therefore, useful for neural circuits to be able to handle selection amidst such complexity in order to facilitate adaptive behavior. Indeed, this ability is the fifth hidden computational feature of the idealized WTA equation: the winner x* among multiple competing options {xi} is correctly identified even when many xi are present (i.e., i > 2).
 
 An understanding of the neural circuit requirements underlying selection among multiple options is still in its infancy (Churchland and Ditterich, 2012). To motivate better the discussion about potential circuit mechanisms, we first summarize key results from relevant neurophysiological experiments and associated models, and then consider circuit implications.
 
-## Neural and behavioral data
+#### Neural and behavioral data
 
 In the context of selection for spatial attention, several primate studies have used more than one distracter in conjunction with the attentional target. They have shown that responses of neurons in the FEF (Lee and Keller, 2008; Cohen et al., 2009), LIP (Balan et al., 2008), and midbrain superior colliculus (SC) (Basso and Wurtz, 1997; Basso and Wurtz, 1998), to the target stimulus decrease with increasing number of distracters. Recently, work in the barn owl has begun exploring the effect of the number as well as relative priorities of distant competitors on different aspects of competitive responses in the optic tectum (Rajagopalan et al., 2018). Results from increasing the number of competitors are consistent with primate results. Broadly, a role for inhibition that is dependent on the priorities of the stimuli (rather than just their number) has been suggested as a potential mechanism (Basso and Wurtz, 1997; Churchland and Ditterich, 2012).
 
@@ -278,7 +294,7 @@ In the context of value-based decision-making, neural responses in the primate L
 
 Finally, in the context of action selection, neural correlates in the presence of >= 2 movement options have been examined (Bastian et al., 2003). As in other forms of selection, firing rates in PMd have been shown to decrease with increase in target uncertainty (i.e., increase in number of options) (Dekleva et al., 2016), and in M1, a measure corresponding roughly to response variability has been shown to increase systematically (Bastian et al., 2003).
 
-## Models and neural circuit requirements
+#### Models and neural circuit requirements
 
 Several variants of A2T and WTA models have been proposed to explain perceptual decision-making (Roe et al., 2001; Usher and McClelland, 2004; Bogacz et al., 2007; Furman and Wang, 2008; Churchland and Ditterich, 2012; Deco et al., 2013; Xue and Liu, 2014; Tajima et al., 2019), value-based decision-making (Glimcher, 2014) and action selection (Cisek, 2007; Cisek and Kalaska, 2010) amongst multiple options.
 
@@ -294,15 +310,15 @@ Recent experimental and modeling work in the barn owl suggest otherwise. Specifi
 
 In summary, key issues underlying selection among multiple options may yet need to be resolved experimentally. Some open questions are: ‘how does inhibition scale with the number of options?’, ‘how is inhibition from multiple options combined?’, ‘how are floor effects avoided (to ensure that neural responses to the winner stay robust and are not washed out despite inhibition from an increasing number of options)?’, and ‘how do the computational features of flexibility and categorical representations, which have been discussed thus far in the context of two options, continue to be accomplished with >2 options?’.
 
-## Unitary output generation
+### Unitary output generation
 
-## Conceptual set-up
+#### Conceptual set-up
 
 Following the flexible and categorical identification of the winner within any set of competing options, the final (and an essential) computational feature of selection involves ensuring that only the winning option, but not any of the others, is capable of triggering an action or percept. This is implicit in the idealized WTA equation (Equation 1a), which sets the winning option to a high value but all the non-winning options to zero (by definition).
 
 From the point of view of neural circuits, this computational feature translates to a slightly less stringent scenario. Neural circuits do need to ensure that the responses to the winning option are above the functional threshold of output-generating neurons (Lo and Wang, 2006; Furman and Wang, 2008; Seger and Peterson, 2013). However, responses to the other options do not necessarily need to be driven to zero, they just need to be weaker than this functional response threshold. (We note, here, that unitary choice formation is essential only at the very final stage in the selection process, just prior to output production, but is not required to occur at any of the previous stages or sites of computation in the brain.)
 
-## Neural circuit requirement
+#### Neural circuit requirement
 
 We propose that this computation can be implemented in neural circuits by incorporating two additional features – by making the gain of the competitive inhibition high, and by coupling that with recurrent amplification of each option’s representation.
 
@@ -312,7 +328,7 @@ The recurrent excitation required by this implementation is a classic mechanism 
 
 Thus, high-gain competitive inhibition together with downstream recurrent amplification can selectively enhance responses to the option with the highest norm while suppressing the responses to all other options, thereby allowing only the option with the highest norm to drive output.
 
-## Neural support
+#### Neural support
 
 Numerous studies across the selection literature have demonstrated that the responses to the winning option are higher (or enhanced), whereas those to the losing options are low (or suppressed), as described in the previous sections (Freedman et al., 2001; Hernández et al., 2002; Romo et al., 2002; Freedman et al., 2003; Romo et al., 2004; Freedman and Assad, 2006; Padoa-Schioppa and Assad, 2006; Cisek and Kalaska, 2010; Mysore et al., 2011; Mysore and Knudsen, 2011a). However, very little is known about the circuit mechanisms underlying unitary output generation.
 
@@ -340,7 +356,7 @@ Notably, although developed to account for the steady state response properties 
 
 At first glance, this combined circuit appears complex with several seemingly specialized circuit components. Consequently, it raises two critical questions: (a) First, is it biologically plausible? In other words, is there evidence that such a circuit is implemented (either in a combined or distributed fashion) in the brain in the context of any selection task? (b) Second, is it general? In other words, does it represent a specially curated solution that applies only in limited contexts, or can it generalize for neural implementation across brain areas and animal species? We turn to these questions next.
 
-## Plausibility: Biological instantiation of the combined circuit
+### Plausibility: Biological instantiation of the combined circuit
 
 Brain networks in several animal species including birds, fish, reptiles (Mysore and Knudsen, 2011b; Jovanic et al., 2016; Koyama et al., 2016; Knudsen, 2018; Koyama and Pujala, 2018; Mahajan and Mysore, 2018; Fernandes et al., 2019; Mahajan and Mysore, 2020) implement most of the six computational features in the manner depicted in the combined circuit framework (Figure 9). We focus here, specifically on the avian midbrain selection network as an example case (Sereno and Ulinski, 1987; Wang et al., 2004; Wang et al., 2006; Knudsen, 2011). This network is thought to be conserved across all vertebrates (Knudsen, 2018) and to serve selection for spatial attention. It consists of the optic tectum (OT, the avian SC), and satellite inhibitory (Imc) and cholinergic (Ipc) neurons in midbrain tegmentum (Figure 9B).
 
@@ -350,7 +366,7 @@ Thus, there is direct evidence that the avian (as well as fish and reptilian) mi
 
 In addition, in several other species, there is evidence for the plausibility of the circuit implementation needed for a subset of the computational features. For instance, (a) long-range inhibition in monkey cortex (Tamamaki and Tomioka, 2010; Womelsdorf and Everling, 2015), monkey LIP (Falkner et al., 2010), rodent hippocampus/entorhinal cortex (Picardo et al., 2011), and cross-hemispherical suppress (Sooksawate et al., 2011); (b) donut-like inhibition in flies (Jovanic et al., 2016), fish (Koyama et al., 2016; Koyama and Pujala, 2018), and rodent amydgala (Fadok et al., 2017); (b) reciprocal inhibition of inhibition in flies (Jovanic et al., 2016), fish (Koyama et al., 2016; Koyama and Pujala, 2018), and rodent amydgala (Fadok et al., 2017).
 
-## Generality: Comparison with leading computational models of competitive selection
+### Generality: Comparison with leading computational models of competitive selection
 
 To address the issue of generality, we next compare our framework with computational models that have been proposed in the literature to account for behavioral and neural responses (across brain areas) in a range of selection and decision-making tasks.
 
@@ -378,13 +394,13 @@ Finally, in the context of the sixth ‘hidden’ computational feature, we prop
 
 Taken together, there are many points of correspondence between our proposed circuit framework in Figure 9A, and computational models with structured inhibition that have been proposed to account for selection behaviors (Figure 10A–C). There is also little apparent difference between them in terms of overall complexity (Figure 9A vs. Figure 10A–C). Our framework, in essence, serves as a collection of mechanistic building blocks underlying many of the models of selection and decision-making. This point is further illustrated in Figure 10C: abstracting away the implementational details of our combined circuit reduces it to a circuit diagram involving mutually inhibiting populations of neurons, which is identical to the one used to represent each of the leading models with structured inhibition.
 
-## A canonical neural circuit framework
+### A canonical neural circuit framework
 
 The construction of our framework (Figure 9A) from first principles, by using a computational primitive-centric approach, has resulted in potential insights into the complex function of competitive selection. It allows for the deconstruction of a potential selection circuit into core motifs that are associated with specific computations, thereby providing a starting point for the experimental search for neural circuit mechanisms of competitive selection (see section titled ‘Experimentally testable predictions’). By contrast, whereas each of the existing computational models successfully accounts for data from the selection task(s) that it is built to model, it is not always clear why that model works, what circuit elements are essential, and what experiments to design in order to investigate the neural circuit underpinnings of selection in a relevant brain area. Indeed, in some cases, intuition regarding the computational roles of different circuit elements does not appear to be borne out: for instance, it has recently been demonstrated that recurrent amplification as well as feedback inhibition, by themselves, are insufficient to generate categorical selection boundaries (Mahajan and Mysore, 2020), in contrast to previous conjectures.
 
 In light of the links to biology and parallels to existing models, the circuit framework proposed here is potentially capable of accounting for the implementation of selection in different tasks and across different brain areas. This will likely involve the use of alternate, but equivalent, implementations of the proposed core circuit motifs as discussed above, and may involve a distributed implementation of the various computational features across processing stages rather than a combined implementation within one so-called selection circuit. We propose that the building blocks we identify here may be mixed and matched, based on the needs and flavor of a particular selection task, to build a neural circuit to solve it.
 
-## Limitations and caveats
+### Limitations and caveats
 
 An important part of our framework is the representational landscape in which competing options, or more generally, the attributes that are being compared, are encoded along some common scale of comparison (norm), and in some common currency. We pointed to firing rate as a potential common currency, and firing rate-dependent inhibition featured prominently in the remainder of the framework. However, it is unclear if firing rate is the only such currency, and if not, the manner in which the subsequent computations are to be implemented is not clear in the current framework. Related to this point, the framework is also agnostic to how the norm comes to be encoded (see also Box 4), especially considering recent reports that the norm is not universal and can depend on the context (Farashahi et al., 2019; Rouault et al., 2019; Koechlin, 2020).
 
@@ -396,86 +412,86 @@ Despite these limitations, the explicit mapping in our framework, of computation
 
 ## Experimentally testable predictions
 
-## Comparison: source of inhibition
+### Comparison: source of inhibition
 
-## Predictions
+#### Predictions
 
 (a) Neural representations of options are modulated (suppressed) in the presence of competing ones, and (b) neural inhibition plays a key role, and it operates globally in the space of options.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Compare neural responses (in the relevant brain area) to one option versus two competing options and evaluate if response reduction occurs. (b1) Characterize anatomically the underlying neural circuit in detail and assess if inhibitory neurons are part of the circuit (local or distant). (b2) If so, test if disrupting neural inhibition minimizes/abolishes the impact of one option on another; test also the scale or scope of this inhibition with respect to the space of options by systematically changing one the competing options.
 
-## Significance
+#### Significance
 
 These experiments can identify the potential source of inhibition for implementing comparisons among options, reveal if it is of the structured variety or the unstructured (pooled) variety, and whether inhibition is implemented via long-range inhibitory projections or long-range excitatory projections onto local inhibitory neurons.
 
-## Categorical selection boundary
+### Categorical selection boundary
 
-## Predictions
+#### Predictions
 
 (a) Neural representations underlying selection/decision-making are explicitly categorical. (b) An underlying donut-like pattern of competitive inhibition controls these categorical selection boundaries (Mahajan and Mysore, 2020). (c) Disrupting the categorical nature of the neural representation (by causally perturbing the underlying mechanism) causes a degradation of selection behavior specifically around the category boundary.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Measure responses of a neuron that encodes for (prefers) option A, while also presenting a competing option B. Systematically increase norm (priority, subjective value, etc) of option B from values lower than the norm of option A to values higher than that of A (Mysore et al., 2011; You and Mysore, 2020). The resulting response curve, called a CRP (competitor-norm dependent response profile), is expected to show a reduction in responses with increasing norm of option B. Characterize the categorization index of this CRP in a manner that takes into account response variability, and evaluate if it is significantly greater than 0 (Mahajan and Mysore, 2020). (b1) Based on the anatomical characterization above, determine if a donut-like motif is operational in the circuit. (b2) If so, selectively introduce self-inhibition into the circuit (i.e., disrupt the donut-like motif), repeat the CRP measurement, and re-compute the categorization index (Mahajan and Mysore, 2020). It is expected to be substantially lower than before (and potentially not distinguishable from 0). In other words, the responses are expected to be far less categorical without the donut-like motif. (c) Upon introducing self-inhibition (per b2, above), measure also the effect on behavioral responses and compare them to responses in the intact condition, specifically for stimulus options that straddle the selection boundary.
 
-## Significance
+#### Significance
 
 These experiments can reveal if neural responses (and behavior) underlying the selection task are categorical, if there is a donut-like organization of inhibition, if this is implemented via a feedforward or a recurrent path, and whether it controls categorization.
 
-## Flexibility of selection boundary
+### Flexibility of selection boundary
 
-## Predictions
+#### Predictions
 
 (a) The selection boundary is dynamically flexible, and (b) feedback inhibition between competing options controls flexibility.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Measure CRP at a neuron that encodes for (prefers) option A while also presenting a competing (non-preferred) option B. Repeat this measurement in an interleaved manner with one exception: increase the norm of option A to a different (higher value). For each CRP, determine the norm of option B (‘transition’ norm) at which responses drop from a high value to a low value. If this transition norm is coupled to, and shifts with, the strength of option A, the selection boundary is dynamically flexible (no training/plasticity involved; Mysore et al., 2011). (b1) With anatomical (as well as functional) characterization of the circuit, assess if feedback inhibition exists between neurons encoding different options. Examine if this feedback pathway is direct (reciprocal inhibition among inhibitory neurons) or indirect (routed through intermediate excitatory neurons; Mysore and Knudsen, 2012). (b2) Selectively silence feedback inhibition between options (while leaving the inhibitory neurons themselves intact), and repeat measurements of the two response curves in (a). Depending on how the circuit is organized, this may be achieved either by silencing the feedback projections from one channel onto the other (source-side manipulation), or by preventing neurons in one channel from receiving (feedback) inhibition from those of another (recipient-side manipulation). The manipulation is expected to abolish the shifting of the boundary (transition norm) between the two response curves (Mysore and Knudsen, 2012), while leaving intact the response reduction in each curve.
 
-## Significance
+#### Significance
 
 These experiments can reveal dynamically flexible selection boundaries, the presence of direct vs. indirect feedback inhibition between competing options, and also the circuit mechanism underlying flexibility.
 
-## Ability to select among many (all) viable pairs of competing options
+### Ability to select among many (all) viable pairs of competing options
 
-## Predictions
+#### Predictions
 
 (a) Animals are able to select between many different pairs of competing options. (b) This ability is mediated by an overcomplete set of inhibitory neurons with sparse coding, or by a sparse set of inhibitory neurons with combinatorially-optimized dense coding of option space (Mahajan and Mysore, 2018), or by an as yet unknown mechanism that results in norm-remapping (Xie and Padoa-Schioppa, 2016). Below we will discuss experiments to test the first two possibilities.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Present animals with different pairs of options (the laboratory equivalent of having to select between apples and oranges, bananas and blueberries, etc). Animals are expected to be able to perform well and consistently. (b1) Within the anatomically identified network relevant to this behavior, identify neurons that drive the inhibition: these can be inhibitory neurons that directly deliver competitive inhibition, or excitatory neurons with long-range connections that deliver inhibition indirectly by driving local inhibitory neurons that largely serve as simple sign-changers (Schryver et al., 2020). Measure responses of these ‘driver’ neurons to various options (individually), and characterize their encoding preferences. Dense coding by these neurons is indicative of a combinatorially-optimized solution, which can be tested with additional analysis/experiments (Mahajan and Mysore, 2018; Mahajan and Mysore, 2020), whereas sparse/ordered coding by these neurons is indicative of a copy-and-paste solution. (b2) ‘Focal’ or selective disruption of a subset of the driver neurons should affect selection between some pairs of options (all the ones that activate these neurons), but not other option pairs.
 
-## Significance
+#### Significance
 
 Results can reveal the neural circuit mechanisms that implement the ability to select among many (all) different pairs of options.
 
-## Ability to select among multiple (>2) competing options
+### Ability to select among multiple (>2) competing options
 
-## Predictions
+#### Predictions
 
 (a) Animals are able to select among multiple options in a manner that generalizes from selection between two options, but with potential preference reversal effects and contextual effects, and potential shifts in the encoding of the category boundary by individual neurons (Rajagopalan et al., 2018). (b) The neural and behavioral results are accounted for by circuits that involve non-linear combination of inhibitory inputs (Bogacz and Gurney, 2007; Rajagopalan et al., 2018). (c) Disruption of the nonlinearity in the combination of multiple inhibitory inputs impacts selection among multiple (but not two) options.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Present animals with two vs. more than two options, in each case using a CRP stimulus protocol that systematically varies relative norm between the competing options. Measure behavior as well as neural responses and quantify the effect of increasing the number of options on behavioral performance as well as on the neural specification of the selection boundary (i.e., the transition norm; Asadollahi et al., 2011; Mysore and Knudsen, 2011a; Schryver et al., 2020; You and Mysore, 2020). (b) Compare observed outcomes with those predicted by computational models with linear vs. non-linear combination of inhibition, in order to identify the best account for the observed data.
 
-## Significance
+#### Significance
 
 Results will shed light on the neural implementation of a circuit for selection among multiple options, and reveal rules (nonlinearities) governing the integration of inputs from multiple options for such selection.
 
-## Producing a unitary choice
+### Producing a unitary choice
 
-## Predictions
+#### Predictions
 
 High gain competitive inhibition coupled (downstream) with high-gain amplification is involved in the production of unitary choice. Specifically, disruption of high-gain amplification by enhancing amplification of the option that would normally lose, increases the likelihood of that option being selected, but will slow reaction times, consistent with a change in the decision threshold.
 
-## Experimental tests
+#### Experimental tests
 
 (a) Within the anatomically identified network relevant to the selection behavior, investigate the presence and connectivity of amplifier neurons (cholinergic or glutamatergic, for instance). (b) Assay the strength (gain) of amplification by comparing neural responses to a single option without and with silencing of the ‘amplifier’ neurons (Marín et al., 2005; Asadollahi and Knudsen, 2016). (c) During a two option selection task, experimentally disrupt the high-gain amplification by enhancing the output of the amplifier neurons to the weaker option, and measure neural and behavioral outcomes.
 
-## Significance
+#### Significance
 
 These experiments can reveal the neural circuit mechanism involved in setting the ‘threshold’ for selection and the production of unitary choice.

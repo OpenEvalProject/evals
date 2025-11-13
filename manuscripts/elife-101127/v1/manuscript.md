@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03nawhv43 Department of Chemistry, University of California, Riverside Riverside United States
-2. https://ror.org/03nawhv43 Department of Bioengineering, University of California Riverside United States
+1. Department of Chemistry, University of California, Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
+2. Department of Bioengineering, University of California Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
 
 † Corresponding author
 
 ## Abstract
 
-PROteolysis TArgeting Chimeras (PROTACs) are small molecules that induce target protein degradation via the ubiquitin-proteasome system. PROTACs recruit the target protein and E3 ligase; a critical first step is forming a ternary complex. However, while the formation of a ternary complex is crucial, it may not always guarantee successful protein degradation. The dynamics of the PROTAC-induced degradation complex play a key role in ubiquitination and subsequent degradation. In this study, we computationally modelled protein complex structures and dynamics associated with a series of PROTACs featuring different linkers to investigate why these PROTACs, all of which formed ternary complexes with Cereblon (CRBN) E3 ligase and the target protein bromodomain-containing protein 4 (BRD4 BD1 ), exhibited varying degrees of degradation potency. We constructed the degradation machinery complexes with Culling-Ring Ligase 4A (CRL4A) E3 ligase scaffolds. Through atomistic molecular dynamics simulations, we illustrated how PROTAC-dependent protein dynamics facilitating the arrangement of surface lysine residues of BRD4 BD1 into the catalytic pocket of E2/ubiquitin cascade for ubiquitination. Despite featuring identical warheads in this PROTAC series, the linkers were found to affect the residue-interaction networks, and thus governing the essential motions of the entire degradation machine for ubiquitination. These findings offer a structural dynamic perspective on ligand-induced protein degradation, providing insights to guide future PROTAC design endeavors.
+PROteolysis TArgeting Chimeras (PROTACs) are small molecules that induce target protein degradation via the ubiquitin-proteasome system. PROTACs recruit the target protein and E3 ligase; a critical first step is forming a ternary complex. However, while the formation of a ternary complex is crucial, it may not always guarantee successful protein degradation. The dynamics of the PROTAC-induced degradation complex play a key role in ubiquitination and subsequent degradation. In this study, we computationally modelled protein complex structures and dynamics associated with a series of PROTACs featuring different linkers to investigate why these PROTACs, all of which formed ternary complexes with Cereblon (CRBN) E3 ligase and the target protein bromodomain-containing protein 4 (BRD4BD1), exhibited varying degrees of degradation potency. We constructed the degradation machinery complexes with Culling-Ring Ligase 4A (CRL4A) E3 ligase scaffolds. Through atomistic molecular dynamics simulations, we illustrated how PROTAC-dependent protein dynamics facilitating the arrangement of surface lysine residues of BRD4BD1 into the catalytic pocket of E2/ubiquitin cascade for ubiquitination. Despite featuring identical warheads in this PROTAC series, the linkers were found to affect the residue-interaction networks, and thus governing the essential motions of the entire degradation machine for ubiquitination. These findings offer a structural dynamic perspective on ligand-induced protein degradation, providing insights to guide future PROTAC design endeavors.
 
 ## Introduction
 
@@ -29,29 +29,228 @@ Several existing studies have examined a set of PROTACs targeting the same E3 li
 
 In this study, we employed protein–protein docking, structural alignment, atomistic MD simulations, and post-analysis to model a series of CRBN-dBET-BRD4BD1 ternary complexes and the entire degradation machinery complex consisting of BRD4BD1 and a CRL4A E3 ligase scaffold (Figure 1). These degraders, with different linker properties, were all capable of forming stable ternary complexes, but exhibited different degradation capabilities (Nowak et al., 2018; Zhou et al., 2018; Winter et al., 2015; Qin et al., 2018). The best degrader, dBET70, had a DC50/5h of about 5 nM, followed by dBET23 (DC50/5h~50 nM) (Figure 1D and Figure 1—figure supplement 1). Although utilizing the exact same warheads, other degraders such as dBET1 and dBET57 had a DC50/5h of about 500 nM. Our studies identified structural features of the dBETs that contribute to large-scale protein motions and explained the connection between the cellular activities and degradability reported for the dBETs with atomics details. Because finding energetically stable ternary conformations is a critical first step for protein degradation (Nowak et al., 2018; Zaidman et al., 2020; Bai et al., 2021), in addition to protein–protein docking, we also performed MD simulations to thoroughly cover the conformational space and performed energy calculations to ensure that our modeled ternary complexes were thermodynamically stable.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cereblon (CRBN) E3 ligase, consists of an N-terminus domain (mint), helical binding domain (green), and C-terminus domain (gray). Notably, CRBN E3 ligase is also simply termed CRBN in the main text. Bromodomain-containing protein 4 (BRD4BD1; targeted protein) consists of several important Lys residues (K72/76/99/102/111 black sticks) for successful degradation. (B) Degradation machinery complex is constructed with DDB1, CUL4A, NEDD8, Rbx1, E2 enzyme, ubiquitin (Ub), and CRBN-PROTAC-BRD4BD1. Note, the complex without PROTAC recruited BRD4BD1 is termed CRLA4A E3 ligase. (C) An illustration of the theoretical model of ubiquitination reaction. The catalytic site with multiple Asp residues creates a negatively charged environment that attracts Lys residues to enter the catalytic site. Lys and Asp residues then react with the C-terminus Gly of Ub for future degradation. (D) Chemical structure of each dBET PROTAC. aDegradation profile DC50/5h for four PROTACs was obtained from EGFP/mCherry reporter assay published in Nowak et al., 2018. bData published in Qin et al., 2018. cData published in Nowak et al., 2018.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** All protein–protein docking conformations for each PROTAC were superimposed based on CRBN (thick, ribbon) to show different poses of BRD4BD1 (rainbow color; ribbon). Each dBET PROTAC has multiple binding poses that contribute to different degradation efficiency. (A) dBET1 with 186 ternary complex conformations. (B) dBET23 with 168 ternary complexes. (C) dBET57 with 24 ternary complexes. (D) dBET70 with 183 ternary complexes. aDegradation profile DC50/5h for four PROTACs was obtained from EGFP/mCherry reporter assay published in Nowak et al., 2018. bData published in Qin et al., 2018. cData published in Nowak et al., 2018.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Predicted CRBN-dBET23-BRD4BD1 ternary complex index #14 (red) has RMSD of 1.99 Å with respect to the crystal structure (PDB ID: 6BN7). (B) Predicted CRBN-dBET70-BRD4BD1 ternary complex index #91 (cyan) has RMSD of 2.60 Å with respect to the crystal structure (PDB ID: 6BN9). Note, dBET70 degrader was not resolved in the crystal structure. The structural superposition is performed based on the backbone of CRBN and RMSD calculation is conducted based on the backbone of BRD4BD1. PROTAC dBET23 and dBET70 are shown in licorice representation.
+
 Assembling these stable CRBN-dBETx-BRD4BD1 complexes into multiple modeled CRL4A E3 ligase-based scaffold conformations, we first observed that no surface Lys residue(s) of BRD4BD1 was ready for the next ubiquitination step in the modeled degradation machinery complexes. Nevertheless, our unbiased MD simulations illustrated protein structural dynamics of the entire complex and local sidechain arrangements to bring Lys residue(s) to the catalytic pocket of E2/Ub for reactions. Post-analysis revealed the essential motions of the degradation complex and interactions crucial for ubiquitination. Our results relate the structural motion to potential ubiquitination and explain how the linker property affecting the degradation potency. Our results show the importance of the dynamic features in protein structure and how the linker region of a PROTAC may contribute to protein motions to achieve PROTAC-mediated POI degradation.
 
 ## Results
 
 To understand why PROTACs, although forming similar stable E3-PROTAC-POI ternary complexes, induce different degradation efficacy of POIs, we used an integrative approach that combines docking, structural alignment and atomistic MD simulations. Due to the limited availability of experimental determined CRBN-dBETx-BRD4BD1 conformations, we initially employed protein–protein docking to generate numerous CRBN-dBETx-BRD4BD1 ternary complexes for four degraders with different degradation efficacies (Appendix 1—table 1 and Figure 1—figure supplement 1). Subsequently, we constructed degradation machinery complexes by assembling various ternary complexes into the CRL4A E3 ligase scaffold. MD simulations and subsequent post-analysis were employed to quantify protein dynamics and to identify crucial hinge regions governing the structure–dynamics–function relationship within the degradation complexes. With quantitative data, we revealed the importance of the structural dynamics of dBETx-induced motions, which arrange positions of the surface lysine residues of BRD4BD1 and the entire degradation machinery.
 
-## Conformational ensembles of CRBN-dBETx-BRD4BD1 ternary complexes
+### Conformational ensembles of CRBN-dBETx-BRD4BD1 ternary complexes
 
-An effective design of PROTACs relies on a comprehensive understanding, how a degrader, such as dBET, yields different conformations of CRBN-dBETx-BRD4BD1 ternary complexes, ultimately contributing to degradation efficiency. To generate the conformation ensemble, we first constructed the ternary complexes through protein–protein docking using the Molecular Operating Environment (MOE) program and removed complexes with atomic clashes. Figure 1—figure supplement 1 illustrates the docked CRBN-dBETx-BRD4BD1 conformations, with all conformations, except CRBN-dBET57-BRD4BD1, presenting over 160 conformations and displaying various inter-molecular orientations between CRBN and BRD4BD1. Notably, PROTAC dBET57, characterized by a shortest linker, exhibited a constrained protein–protein orientation, resulting in only 24 distinct ternary conformations (Figure 1—figure supplement 1C and Appendix 1—table 1). To validate the modelled conformations, we superimposed the docking results of CRBN-dBET23-BRD4BD1 and CRBN-dBET70-BRD4BD1 ternary complexes onto available crystal structures, revealing highly similar conformations. The computed smallest Cα-root mean square deviation (RMSD) values were 1.99 Å, and 2.60 Å, respectively (Figure 1—figure supplement 2). These ternary ensembles, as depicted in Figure 1—figure supplement 1 were subsequently utilized to construct degradation machinery complexes, as detailed in the Materials and methods subsection (Figure 2).
+An effective design of PROTACs relies on a comprehensive understanding, how a degrader, such as dBET, yields different conformations of CRBN-dBETx-BRD4BD1 ternary complexes, ultimately contributing to degradation efficiency. To generate the conformation ensemble, we first constructed the ternary complexes through protein–protein docking using the Molecular Operating Environment (MOE) program and removed complexes with atomic clashes. Figure 1—figure supplement 1 illustrates the docked CRBN-dBETx-BRD4BD1 conformations, with all conformations, except CRBN-dBET57-BRD4BD1, presenting over 160 conformations and displaying various inter-molecular orientations between CRBN and BRD4BD1. Notably, PROTAC dBET57, characterized by a shortest linker, exhibited a constrained protein–protein orientation, resulting in only 24 distinct ternary conformations (Figure 1—figure supplement 1C and Appendix 1—table 1). To validate the modelled conformations, we superimposed the docking results of CRBN-dBET23-BRD4BD1 and CRBN-dBET70-BRD4BD1 ternary complexes onto available crystal structures, revealing highly similar conformations. The computed smallest C$\alpha$-root mean square deviation (RMSD) values were 1.99 Å, and 2.60 Å, respectively (Figure 1—figure supplement 2). These ternary ensembles, as depicted in Figure 1—figure supplement 1 were subsequently utilized to construct degradation machinery complexes, as detailed in the Materials and methods subsection (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-v1.jpg)
+
+**Figure 2.:** (A) structure alignments of 12 DDB1 PDB structures to the CUL4A based on the BPB part. Red circle indicates a hinge loop connecting BPB and BPA/BPC in DDB1. (B) Structure alignment of CRBN E3 ligase to the DDB1/CUL4A based on the BPA/BPC part, resulting 12 DDB1/CUL4A/CRBN scaffolds. (C) E2/Rbx1/Ub/NEDD8 components (PDBID: 6TTU) are added to the /DDB1/CUL4A/CRBN scaffolds to make 12 diverse CRL4A E3 ligase scaffolds. Red circle indicates another hinge loop in the Rbx1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Three DDB1 conformations (C1, yellow; C2, gold; and C3, pink) were found to have protein clashing and is not considered for further degradation machinery complex construction.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cluster A with interface distance between E2 and E3 ligase ranges from ~1.0 Å to ~10 Å. Five DDB1 conformations were analyzed and grouped in cluster A. A1 (red), A2 (mint), A3 (orange), A4 (cyan), and A5 (purple). (B) Cluster B with interface distance between E2 and E3 ligase ranges from ~14 Å to ~35 Å. Four DDB1 conformations were analyzed and grouped in cluster B. B1 (yellow), B2 (blue), B3 (green), and B4 (pink). Black curved lines indicate the E2–E3 interface distance in each cluster with the closest distance. All nine DDB1 conformations were aligned based on β-propeller domains in DDB1. Other protein components: CUL4A (white), NEDD8 (magenta), E2 (ice blue), Ub (yellow), and Rbx1 (red) were taken from PDB ID 6TTU and added to nine clusters to construct nine CRL4A E3 ligase scaffolds.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** 168 CRBN-dBET23-BRD4BD1 ternary complexes were applied to cluster B1 to construct 104 degradation machinery complexes. Ternary complexes were superimposed on the CRL4A E3 ligase by aligning the backbone of CRBN. The zoom-in region shows the flexibility of the linker of dBET23.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Numbers represent ensemble index. (A) CRBN-dBET1-BRD4BD1 ensembles fall within A1, A2, A4 and A5 clusters. (B) CRBN-dBET23-BRD4BD1 ensembles fall within A1, A2, A3, A5, B1, and B2 clusters. (C) CRBN-dBET57-BRD4BD1 ensembles fall within A1, A2, A4, A5, B1, and B2 clusters. (D) CRBN-dBET70-BRD4BD1 ensembles fall within A1, A2, A3, B1, and B2 clusters.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Aligning CRBN of the two representative clusters A1 and B1 shows similar PROTAC conformations. (A) dBET1. No ternary complex is found in cluster B1 for dBET1. (B) dBET23. (C) dBET57. (D) dBET70. Cluster A1 (red) and Cluster B1 (yellow). Black arrows indicate the hinge loops in both DDB1 and Rbx1 proteins. CUL4A (white), NEDD8 (magenta), E2 (ice blue), Ub (light yellow), and Rbx1 (rose).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** The RMSD was calculated based on the backbone atoms and the first frame of the trajectory was used as reference.
 
 Furthermore, we conducted multiple MD simulations in explicit solvent for five CRBN-dBETx-BRD4BD1 complexes, encompassing four initial conformations derived from our docking models and one from an existing crystal structure (Table 1, total of 15 runs for ternary complexes). Only dBET23 crystal structure is available with the PROTAC and both proteins, while the experimentally determined ternary complexes of dBET1, dBET57 and dBET70 are not available. During 400-ns simulations, the two warheads of a PROTAC bound tightly to CRBN and BRD4BD1, while the linker displayed high flexibility by adopting different conformations and facilitating the interaction between the two proteins across different protein–protein contact surfaces (Figure 3). The residue contact map throughout the 400-ns MD simulation also showed different patterns of protein-protein interactions, indicating that the linkers were able to adopt different conformations (Figure 3—figure supplement 1). Interestingly, despite the molecular docking results suggested limited fluctuation in CRBN-dBET57-BRD4BD1, our MD simulations revealed considerable variation in ternary conformations. The observed large-scale motions in all CRBN-dBETx-BRD4BD1 complexes, as predicted by both docking and MD simulations, underscored the importance of CRBN and BRD4BD1 orientations influenced by the presence of dBETs as key factors of contributing to degradation efficiency.
 
-## Modelled degradation machinery complexes
+![Figure 3.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig3-v1.jpg)
+
+**Figure 3.:** The last molecular dynamics (MD) frame from three MD runs was aligned with initial frame of the C-terminus domain (gray) of CRBN. Two warheads bound tightly to the respective proteins, whereas the linker is highly flexible, adopting various conformations. MD run 1 (red), MD run 2 (pink), MD run 3 (orange), and initial frame (black). (A) CRBN-dBET1_#35-BRD4BD1. (B) CRBN-dBET23_#14-BRD4BD1. (C) CRBN-dBET57_#9-BRD4BD1. (D) CRBN-dBET70_#91-BRD4BD1. (E) CRBN-dBET23xray-BRD4BD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** X-axis is the residues index of BRD4BD1 and y-axis is the Time of MD simulation. The distance cutoff is 12Å.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Computed nonbonded interaction energy between proteins (CRBN-BRD4BD1) and different dBETs using the MD runs of our selected ternary complexes. (See Materials and methods) Only the lowest interaction energy among the 3 random seeds MD simulations is reported here. Note that the energy calculations focus on non-bonded intermolecular interactions and solvation free energy calculations using MM/PBSA, where the configuration entropy loss during protein binding was not explicitly included.
+
+**Table 1.**
+ List of molecular dynamics (MD) simulations for ternary complex CRBN-dBETx-BRD4BD1 and the degradation machinery complex.A1 and B1 indicate that the complex was assembled using scaffold cluster A1 and B1, respectively. The subscript number after each dBET degrader indicates the conformation index number from the protein–protein docking results. B1_dBET1_md3 indicates that a ternary conformation obtained from a CRBN-dBET1_#35-BRD4BD1 MD run (Figure 3 color orange) was used to build the initial conformation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MD index</th>
+      <th>Run</th>
+      <th>MD index</th>
+      <th>Run</th>
+      <th>MD index</th>
+      <th>Run</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CRBN-dBET1_#35-BRD4BD1</td>
+      <td>3</td>
+      <td>A1_dBET1_#35</td>
+      <td>1</td>
+      <td>B1_dBET1_md3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CRBN-dBET23_#14-BRD4BD1</td>
+      <td>3</td>
+      <td>A1_dBET23_#14</td>
+      <td>1</td>
+      <td>B1_dBET23_#14</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CRBN-dBET57_#9-BRD4BD1</td>
+      <td rowspan="2">3</td>
+      <td rowspan="2">A1_dBET57_#9</td>
+      <td rowspan="2">1</td>
+      <td>B1_dBET57_#9_MD1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>B1_dBET57_#9_MD2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CRBN-dBET70_#91-BRD4BD1</td>
+      <td>3</td>
+      <td>A1_dBET70_#91</td>
+      <td>1</td>
+      <td>B1_dBET70_#91</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CRBN-dBET23_xray-BRD4BD1</td>
+      <td>3</td>
+      <td>A1_dBET23_xray</td>
+      <td>1</td>
+      <td>B1_dBET23_xray</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Modelled degradation machinery complexes
 
 To facilitate ubiquitination, once a stable CRBN-dBETx-BRD4BD1 complex is formed, led by CRBN, the ternary complex is assembled with an E3 ligase scaffold for ubiquitination. For this purpose, we utilized a widely employed scaffold, CRBN/DDB1/CUL4A/NEDD8/Rbx1/E2/Ub, to assemble our ternary complex, with CRBN binding to the adaptor protein DDB1 to bring the target protein into proximity with E2/Ub (Figure 1B). Given the dynamic nature of the scaffold complex, we selected 12 distinct DDB1 crystal structures to construct multiple scaffold conformations (Bai et al., 2021). Notably, among these structures, only one of the 12 PDB files had CRBN bound to DDBI (PDB ID 4TZ4). Using this crystal structure as a template, we further built 12 CRL4A E3 ligase scaffolds: DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN. Subsequently, three of the resulting 12 complexes were found to contain clashes and were excluded from further analysis (Figure 2—figure supplement 1). The remaining nine CRL4A E3 ligase scaffolds all formed a ring-like overall shape. We further analyzed the conformations and clustered them using a distance between the E2 and CRBN interface resulting two distinct groups: the ring-forming cluster A, characterized by a gap distance ranging from ~1.0 Å to 10.0 Å (Figure 2—figure supplement 2A, clusters A1-5), and the ring-open cluster B, featuring a much larger gap distance ranging from ~14 Å to 35 Å (Figure 2—figure supplement 2B, clusters B1-4). Subsequently, we allocated 561 modeled CRBN-dBETx-BRD4BD1 conformations, along with a crystal structure (CRBN-dBET23-BRD4BD1), into the nine CRL4A E3 ligase scaffolds, labeled A1 to A5 and B1 to B4, resulting in the construction a total of 5058 degradation machinery complexes.
 
 According to the mechanistic studies (Lv et al., 2021; Valimberti et al., 2015), both a Lys residue of the POI and a Gly residue in the C-terminal G-G motif in Ub must be positioned within an Asp-rich catalytic site for the ubiquitination reaction to occur, with Ub conjugated to the POI by forming a covalent bond between Lys residue and Gly residue (Figure 1C). Using the distance between one Lys residue of BRD4BD1 and the C-terminal Gly residue of Ub as a criterion, we examined each Lys residue of BRD4BD1 across the 5058 degradation machinery complexes. Any complex in which the distance between any Lys of BRD4BD1 and the C-terminal Gly of Ub was found to be <16 Å was retained, resulting in the identification of 1226 degradation machinery complexes with diverse conformations (Table 2). For instance, within cluster B1 scaffold, dBET23 yielded 104 conformational degradation complexes (Figure 2—figure supplement 3). It is noteworthy that in each degradation machinery complex, at least one Lys residue was found within the cutoff criterion. However, due to the wide ring-open conformations of clusters B3 and B4, none of the modelled degradation complexes utilizing these two clusters satisfied our criterion. Given that a distance of 16 Å may appear to be relatively large for catalysis (Bai et al., 2022), we postulated that the protein dynamics could potentially bring the relevant Lys and Gly residues into close proximity to facilitate the ubiquitination reaction.
 
+**Table 2.**
+ Number of ternary complexes used in the molecular docking and construction of degradation machinery complex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="5">Cluster A</th>
+      <th colspan="4">Cluster B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">PROTAC</td>
+      <td rowspan="2">Conformations from protein–protein docking</td>
+      <td colspan="9">Number of conformations for construction of degradation machinery complex</td>
+    </tr>
+    <tr>
+      <td>A1</td>
+      <td>A2</td>
+      <td>A3</td>
+      <td>A4</td>
+      <td>A5</td>
+      <td>B1</td>
+      <td>B2</td>
+      <td>B3</td>
+      <td>B4</td>
+    </tr>
+    <tr>
+      <td>dBET1</td>
+      <td>186</td>
+      <td>81</td>
+      <td>51</td>
+      <td>17</td>
+      <td>22</td>
+      <td>38</td>
+      <td>68</td>
+      <td>106</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dBET23</td>
+      <td>168</td>
+      <td>42</td>
+      <td>52</td>
+      <td>87</td>
+      <td>0</td>
+      <td>23</td>
+      <td>104</td>
+      <td>86</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dBET57</td>
+      <td>24</td>
+      <td>19</td>
+      <td>12</td>
+      <td>0</td>
+      <td>5</td>
+      <td>7</td>
+      <td>17</td>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>dBET70</td>
+      <td>183</td>
+      <td>37</td>
+      <td>73</td>
+      <td>73</td>
+      <td>0</td>
+      <td>10</td>
+      <td>96</td>
+      <td>83</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 Among the docked ensembles of each CRBN-dBETx-BRD4BD1, all top-ranked ternary complexes from protein–protein docking were successfully integrated with the scaffold clusters A and B without encountering clashes (Figure 2—figure supplement 4). For example, dBET1_#35 and dBET70_#91 exhibited the most favorable protein–protein docking energies (Appendix 1—table 2). Intuitively, one might prioritize the ring-forming cluster A due to its smaller gap between the E2 and CRBN interface, potentially facilitating the proximity of Lys and Gly for ubiquitination. However, the conformational ensemble of each CRBN-dBETx- BRD4BD1 provided numerous possible orientations for assembly within the degradation complex, regardless of whether the CRL4A E3 ligase scaffold adopts a ring-forming or ring-open conformation.
 
 Moreover, when constructing a degradation complex, all the highest-ranked ternary complexes from docking scores displayed similar conformations for dBETs, implying that the preferred PROTAC conformations may be predicted. These popular ternary complexes exhibited similar protein–protein contacts and linker conformations (Figure 2—figure supplement 5). Our MD simulations further demonstrated that these initial structures used for modeling degradation complexes effectively directed BRD4BD1 toward ubiquitination (see next subsection).
 
-## Protein structural dynamics in degradation machinery complex
+### Protein structural dynamics in degradation machinery complex
 
 Among the 1226 distinct degradation machinery complexes constructed, none showed the structure of a Lys residue of BRD4BD1 was positioned for ubiquitination. Therefore, for each PROTAC, we selected a degradation machinery complex conformation from clusters A and B with a top docking score CRBN-dBETx-BRD4BD1 ternary conformation for MD simulations (Table 1). To further evaluate the docking scores, we also performed protein–protein interaction energy calculations using MD runs initiated by these ternary conformations with top docking scores. The energy calculations confirmed the thermodynamic stability of top-ranked ternary complexes obtained through protein–protein docking, highlighting the robust binding of their associated dBETs (Figure 3—figure supplement 2). Moreover, they remained structurally stable throughout the MD runs, as evidenced by RMSD plots (see RMSD plots in Figure 2—figure supplement 6).
 
@@ -59,17 +258,63 @@ After confirming that each CRBN-dBETx-BRD4BD1 used for constructing the degradat
 
 Although none of the initial modelled machinery complexes exhibited a Lys residue of BRD4BD1 being ready for ubiquitination, our MD sampling facilitated the movement of different Lys residues of BRD4BD1 from distance greater than 16 Å of the catalytic pocket on E2 to establish close contacts with Gly of Ub for each dBET. Specifically, we observed significant large-scale motions within degradation complex B1_dBET1_#35 (cluster B, docked conformation #35), which recruited three Lys residues K72, K76 and K111 at distances greater than 16 Å, positioning them in the catalytic pocket on E2. Concurrently, a conserved charged residue Asp of E2 approached the C-terminus G75 of Ub, potentially facilitating isopeptide bond formation (Figure 4A and B). Similarly, degradation complex B1_dBET23_#14 (cluster B, docked conformation #14) and B1_dBET70_#91 (cluster B, docked conformation #91) also brought K99 of BRD4BD1 into proximity of the catalytic cavity of E2, where one Asp of E2 approached the the C-terminus G75 of Ub as well (Figure 4C, D, G and H).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig4-v1.jpg)
+
+**Figure 4.:** (A) K111 and D116 of dBET1_#35 (Distance of K72/76 is reported in Figure 4—figure supplement 1). The left y-axis in blue presents the distance between Lys (N atom) of BRD4BD1 and Gly (C atom) of Ub, and the right y-axis in red presents the distance between Asp (O atom) of E2 and Gly (O atom) of Ub. The same left and right y-axis representations are used in C, E and G. (B) K72/76/111 of BRD4BD1 reaches the negatively charged catalytic site of E2. (C) K99 and D117 of dBET23_#14. (D) K99 of BRD4BD1 reaches the negatively charged catalytic site of E2. (E) K102 and D117 of dBET57_#9_MD1. (F) K102 of BRD4BD1 reaches the negatively charged catalytic site of E2. (G) K99 and D87 of dBET70_#91. (H) K99 of BRD4BD1 reaches the negatively charged catalytic site of E2. (refer to Figure 4—figure supplement 3 for data of second seed of MD simulation).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Visualizing four Asp of E2 in close proximity of G75 of Ub. Asp is colored in red with vdW representation. (B) The Lys (N atom) and Gly (C atom) distance of each dBETs. (C) All four Asp (O atom) and Gly (O atom) distance of each dBETs. (D) Probability of satisfying both criteria for each dBETs. Red line indicates the cutoff distance for each criterion: 10 Å for Lys (N atom) Gly (C atom) distance; 6 Ã for Asp (O atom) and Gly (O atom) distance.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** All four Asp (O atom) and Gly (O atom) distance of each dBETs.
+
 In contrast, degradation complex B1_dBET57_#9_MD1 (cluster B, conformation from MD run 1 initiated with docked conformation #9) positioned K102 of BRD4BD1 in close proximity to the catalytic pocket on E2 (Figures 4E and 3F). Notably, BRD4BD1 of dBET1, dBET23 and dBET70 exhibited a closer proximity to Ub (~6 Å) as compared to dBET57 (~10 Å; Figure 4A, C, E and G). Despite degradation complex B1_dBET1_#35 positioned three Lys residues of BRD4BD1 to form stable interactions with the Gly of Ub, the surrounding Asp of E2 was unstable which hindered a successful ubiquitination process (Figure 4A). Further analysis revealed that dBET23 (~85%) and dBET70 (~78%) exhibited a higher probability of fulfilling both criteria for potential chemical reactions, whereas dBET1 (~40%) and dBET57 (~22%) had a lower likelihood (Figure 4—figure supplement 2D). This analysis revealed how dBET23 and dBET70 achieved high degradation efficiency, while dBET1 and dBET57 induced protein motions for bond formation, without achieving all required arrangements simultaneously, resulting in lower degradation efficiency. Our findings are consistent with experimental measurements indicating that all dBETs could degrade BRD4BD1 but with varying degradation potency. By considering the Lys–Gly and Asp-Gly distances, our simulations underscored that dBET23 and dBET70 (with DC50/5h values of ~5 nM and ~50 nM, respectively) are more efficient degraders compared to dBET1 and dBET57 (with DC50/5h values of ~500 nM).
 
 To gain further insights into the overall motion of the degradation complexes, we employed principal component analysis (PCA) to extract essential motions within the complex; Notably, the first two PC modes, PC1 and PC2, accounted over 60% of the overall motions in most MD runs (Appendix 1—table 4). While the specific nature of these motions varied depending on the system, the dBETs induced an inter-protein orientation between CRBN and BRD4BD1, with two hinge regions: loops in Rbx1 and DDB1 proteins contributing prominently to the essential motions of the complex (Figure 5—figure supplement 1). These two hinge regions exhibited twisted and opposite direction motions, facilitating the rearrangement and bringing BRD4BD1 closer to the catalytic cavity of E2, which is a critical step for successful ubiquitination. Indeed, the essential motions revealed by the first two PC modes clearly revealed the plasticity between the protein–protein interfaces in the degradation machinery. Notably, the most significant motion in PC1 shifted E2/Ub/Rbx1/NEDD8 closer to BRD4BD1 (Figure 5—figure supplement 2). Furthermore, the pairwise force matrix between individual residues within the degradation complex offered insights into the non-covalent interactions governing the dynamic behavior of the complex. This interaction network, starting from the dBETs’ linker and extending to the hinge loop of DDB1 and Rbx1 (Figure 5—figure supplement 3), indicated a clear correlation between linker rotation and the movement of the entire degradation complex. Our study highlights the importance of structural dynamics of the degradation complex during the ubiquitination processes, which is influenced by a dBET ligand.
 
 To quantify the correlation between linker rotation and the movement of the degradation complex, we selected four atoms shown in Figure 5A to construct a pseudo dihedral angle and used histograms to depict the population of these pseudo angles. Deviations between the histograms from different time periods indicated the motion of the degradation complex during the MD simulations. Across the first and last 100 ns of an MD run, the degradation complexes large motions with the presence of each dBET (Figure 5B). Given that the only distinction among the four dBETs was the linker, we observed that the complex motions correlated to the C-C-N3-C dihedral angles in the linkers of dBET1, dBET23, dBET70, and dBET57 (Figure 6A). Notably, all four dBETs exhibited substantial shifts of BRD4BD1 of approximately 10 and 15 degrees, which underscores their flexibility in promoting extensive motion of the BRD4BD1 protein for Lys–Gly interaction. The various motions from different degradation complexes also resulted in different sets of Lys residues potentially forming contacts with E2 and Ub. For instance, the degradation complexes dBET23_#14 and dBET70_#91 brought K99 of BRD4BD1 closer to G75 of Ub (Figure 6B), while dBET57_#9_MD1 placed K102 in proximity to G75 of Ub. Despite allowing for different Lys–Gly interactions, dBET57 exhibited weaker interactions. The pairwise force analysis revealed a strong attraction between K99 and G75 of dBET23 and dBET70, and a weaker attraction between K102 and G75 of dBET57_#9_MD1 (Figure 5—figure supplement 4).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-v1.jpg)
+
+**Figure 5.:** (A) Defining the pseudo dihedral angles, Linker(N3)-Leu975(Ca)-Gly1056(Ca)-Thr532(Ca) to capture the essential motion of the degradation complex. (B) Dihedral angle histogram shows the population distribution of the first 100 ns (blue) and last 100 ns (orange) of the MD simulation. The distribution shows a ~10-15o dihedral angle shift.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Overlay of 25 frames from 400-ns MD simulation segment showing the overall dynamic nature of the degradation complex. The green arrows indicate the motion of the hinge region (left panel) and BRD4 (right panel). The whole 400-ns MD trajectories are superimposed based on the backbone of protein. The black circles indicate the two hinge regions: loops in Rbx1 and DDB1 proteins. (A) PROTAC dBET23_#14 degradation complex. (B) PROTAC dBET57_#9_MD1 degradation complex. Zoom-in representations show the PROTAC dynamics.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) cluster A1 degradation machinery complexes. (F–J) cluster B1 degradation machinery complexes. DDB1, pink; CUL4A, white; NEDD8, magenta; E2, ice blue; ubiquitin, yellow; Rbx1, red; HBD of CRBN E3, green; NTD of CRBN E3, mint; CTD of CRBN E3, dark gray; BRD4BD1, blue. Orange balls indicate Lys resides on BRD4BD1. Light gray arrows indicate the direction of protein movements in the PCA.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Tracing the shortest path that propagates through the non-bonded interaction network originated from the linker to the hinge region. (A) Linker to DDB1 (B) Linker to Rbx1. dBET23 (orange), dBET70 (gray), dBET57 (blue), hinge region (green circle).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** dBET1 uses Lys72/76/111; dBET23 and dBET70 use Lys99; dBET57 uses Lys102 for Lys-Gly interaction, respectively.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A) BRD4BD1 of dBET57_#9_MD1 shows larger motion (10–15 degrees) which eventually leads to ubiquitination. (B) BRD4BD1 of dBET57_#9_MD1 shows very little motion (~0 degree) and did not recruit Lys for ubiquitination.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig6-v1.jpg)
 
 **Figure 6.:** (A) Dihedral angles correlated with the degradation complex. r is the dihedral correlation coefficient (See Methods for detailed calculation). (B) Motion of BRD4BD1 and Ub indicates a shift between the initial frames (BRD4BD1, blue; Ub, yellow) and final frames (BRD4BD1, pink; Ub, orange) of MD simulation. K72, K99 and K102 engaged in the interaction with G75 of Ub in each degradation complex, which implies their potential for degrading BRD4BD1. For visualization purposes we present only K72 of dBET1_#35, but K76 and K111 can also engage in interaction with G75 (See Figure 4).
 
 To further examine the correlation between PROTAC rotation and the Lys-Gly interaction, we performed a time-dependent correlation analysis. This analysis showed that PROTAC rotation translates motion over time, leading to the Lys-Gly interaction, with a correlation peak around 60–85 ns, marking the time of the interaction (Figure 7 and Figure 7—figure supplement 1). In addition, the pseudo dihedral angles also showed a high correlation (0.85 in the case of dBET1) with Lys-Gly distance. This indicated that degradation complex undergoes structural rearrangement and drives the Lys-Gly interaction.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig7-v1.jpg)
+
+**Figure 7.:** The peak values of time-dependent correlation were reported. For instance, 0.46lag65 represents the correlation coefficient at 65ns of the MD simulation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101127/elife-101127-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (Please refer to Figure 8 for the dihedral index).
 
 Given the presence of numerous local energy minima conformations in the degradation complex, MD simulations could not sample all conformations comprehensively. Furthermore, as evidenced by the protein–protein docking results (Figure 1—figure supplement 1C), the short linker of dBET57 yielded a less flexible ternary complex, suggesting challenges in sampling various conformations using MD runs. Our dihedral entropies analysis showed that dBET57 has ~0.3 kcal/mol lower entropies than the other dBETs with three different linkers, suggesting that dBET57 is less flexible than other PROTACs (Figure 8).
 
@@ -95,38 +340,70 @@ Revealing structural dynamics of the entire degradation complex that bring surfa
 
 ## Materials and methods
 
-## Modeling CRBN-dBETx-BRD4BD1 ternary complexes
+### Modeling CRBN-dBETx-BRD4BD1 ternary complexes
 
 The inhibitor (JQ1)-bound BRD4BD1 crystal structure (PDB ID: 3MXF) Filippakopoulos et al., 2010 and pomalidomide-bound CRBN crystal structure (PDB ID: 4CI3) Fischer et al., 2014 were downloaded from the PDB website. Four BRD4BD1 PROTACs (dBET1, dBET23, dBET57 and dBET70) were prepared using the builder program in the Molecular Operating Environment (MOE). Ternary complex ensembles were generated using the method 4B protocol implemented in the MOE program (Chemical Computing Group; Drummond et al., 2020). CRBN-dBETx-BRD4BD1 ternary complex was modelled in four steps: (1) CRBN-BRD4BD1 protein-protein docking with a conventional global protein-protein docking approach; (2) Robust conformational sampling of isolated dBET; (3) CRBN-BRD4BD1 pre-generated poses and dBET conformation alignment with respective inhibitors in either protein kept intact while using Maximum Common Substructure (MCS) approach to determine the match on-the-fly between the binding ligands in the protein-protein docking ensemble and supplied dBET; (4) scoring and clustering of modelled CRBN-dBETx-BRD4BD1 ternary complex. Before performing protein–protein docking in step 1, two crystal structures were prepared by adding missing hydrogens and assigning an appropriate protonation state for each protein. In the protein–protein docking step 1, two binary complexes interacted without a linker connecting two warheads. The protein–protein poses were generated, and conformations were stored for the next step. In the dBET (or PROTAC in general) conformational sampling step 2, five dBETs were provided for robust conformational searching. Each iteration was set to 10,000. Ligand core root mean square deviation (RMSD) was set as the default. In the dBETx conformational searching process, each binding warhead in the dBETs was held rigid to retain its bound conformation, whereas the linker region was simulated on-the-fly. A MCS approach was applied in the program to maximize dBET warheads alignment with the binding warheads. The simulated dBET conformations were then stored for the next step. In the protein–protein pose and dBET conformation alignment step, protein–protein poses with two warheads in each binding pocket were aligned with the dBETs’ two binding moieties. The generated ternary complex CRBN-dBETx-BRD4BD1 ensembles were minimized, scored, clustered. Selected represented conformations with docking scores were stored in pdb format for further visualization analysis.
 
-## Constructing CRL4A E3 ligase scaffold: DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN
+### Constructing CRL4A E3 ligase scaffold: DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN
 
 We obtained 12 DNA damage-binding protein 1 (DDB1) PDB structures from the PDB website and named them by the index ID: A1_DDB1 (PDB ID: 4E54), A2_DDB1 (PDB ID: 3E0C), A3_DDB1 (PDB ID: 3I8E), A4_DDB1 (PDB ID: 4TZ4), A5_DDB1 (PDB ID: 4A0L), B1_DDB1 (PDB ID: 2B5L), B2_DDB1 (PDB ID: 3EI4), B3_DDB1 (PDB ID: 3EI3), B4_DDB1 (PDB ID: 6PAI), C1_DDB1 (PDB ID: 6FCV), C2_DDB1 (PDB ID: 4A08), and C3_DDB1 (PDB ID: 4A0B). CUL4A with its DDB1 crystal structure was downloaded (PDB ID: 2HYE) and used as a template. 12 DDB1 crystal structures were superimposed on the CUL4A/DDB1 template via β-propeller domains (BPB) to build 12 DDB1/CUL4A structures. CRBN/DDB1 from A4_DDB1 (PDB ID: 4TZ4) was used as a template, and the rest of the DDB1/CUL4A structures were superimposed via the BPA/BPC domain to build 12 DDB1/CUL4A/CRBN complexes. Next, E2D1 (PDB ID 5FER chain B) was aligned to (PDB ID 6TTU) to replace E2D2. We then aligned the 12 CRBN/DDB1/CUL4A complexes via residues in the C-terminal domain (residues from 416 to 672) in the CUL4A. Components having NEDD8, Rbx1, E2 and Ub with CUL1 (PDB ID 6TTU) were added to the above 12 CRBN/DDB1/CUL4A structures. The final 12 DDB1/CUL4A/Rbx1/NEDD8/E2/Ub/CRBN E3 ligase scaffolds were ready for the next step (Figure 2 for flowchart). Next, we analyzed and classified the 12 CRL4A E3 ligase scaffolds DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN based on the interface distance between the CRBN E3 ligase and the E2. Specifically, we measured residue distances from CRBN E3 to the E2 interface plane among these 12 CRL4A E3 ligase scaffolds. If the CRBN E3 ligase residue distances to E2 plane were <10 Å, with no overlapping or clashing, we grouped those CRL4A E3 ligase scaffolds as cluster A; if the CRBN E3 ligase residue distances to E2 plane were >10 Å (the exact gap distance was from ~14 Å to ~34 Å), we grouped those scaffolds as cluster B. If CRBN E3 and E2 overlapped, we grouped those scaffolds as cluster C, considering them as clashing and abandoned them (Figure 2—figure supplement 1).
 
-## Degradation machinery complex assembling: DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN-dBETx-BRD4BD1
+### Degradation machinery complex assembling: DDB1/CUL4A/NEDD8/Rbx1/E2/Ub/CRBN-dBETx-BRD4BD1
 
 CRBN-dBETx-BRD4BD1 conformations generated from protein–protein docking were aligned with the CRL4A E3 ligase scaffolds using clusters A and B (total of nine CRL4A E3 ligase scaffolds) via the common CRBN structure. Because there are 12 lysine residues on the surface of BRD4BD1 (Figure 1—figure supplement 1A), we considered all the lysine residues that potentially lead to ubiquitination by measuring the distance between the oxygen from the C-terminal glycine of the ubiquitin and the nitrogen atom of surface-exposed lysine residue(s) of the BRD4BD1 by using VMD (Winter et al., 2015; Appendix 1—table 1). Among the modelled CRBN-dBETx-BRD4BD1 conformations each with CRL4A E3 ligase scaffolds (A1, A2, A3, A4, A5, B1, B2, B3, B4), only those with the measured distance less than or close to 16 Å without clashing were kept for further study, as suggested by previous study (Liu et al., 2022).
 
-## MD simulations
+### MD simulations
 
 The top selected CRBN-dBETx-BRD4BD1 conformations from combining protein–protein docking, and structural based steps were used for MD simulations to capture the dynamics of CRBN-dBETx-BRD4BD1 and degradation machinery complexes (Appendix 1—table 1). For each dBET, we selected one CRBN-dBETx-BRD4BD1 conformation. For reference, we also investigated and performed MD simulations for resolved crystal structures. Among four studied dBETs in this work, only CRBN-dBET23-BRD4BD1 (PDB ID 6BN7) has PDB structures for starting the MD simulations. Other ternary complexes missing the CRBN E3 component (PDB ID 4ZC9, no dBET1 Winter et al., 2015 or the dBET degrader (PDB ID 6BNB, no dBET57, PDB ID 6BN9 no dBET70) were not considered. Before proceeding to MD simulations, the missing part in each protein component of each CRL4A E3 ligase complex was built by using structural alignment or the homology modeling method (Waterhouse et al., 2018). In brief, we used (PDB ID 4A0L) as a template for A1_DDB1, (PDB ID 3L7K) as a template for A3_DDB1, and (PDB ID 5HTB) as a template for A5_DDB1 in homology modeling. For the remaining CRL4A E3 ligase complexes (A2, A4, B1, B2, B3, B4), we built the missing part directly using the homology modeling method. We chose one CRL4A E3 ligase complex from each category: A1 in category A and B1 in category B based on the high populations in that complex. Then two criteria were considered to select the top CRBN-dBETx-BRD4BD1 for the ternary complex MD simulations and for degradation machinery complex MD simulations: 1) the common CRBN-dBETx-BRD4BD1 shared in the category (Figure 1—figure supplement 1 and Figure 2—figure supplement 1) the best protein–protein docking score (Appendix 1—table 2).
 
 MD simulations were performed using the AMBER20 software package (Hung et al., 2023) with AMBER ff14SB force field Maier et al., 2015 for proteins and GAFF2 He et al., 2020 for ligand parameterization. The atomic charges were computed using AM1-BCC (Jakalian et al., 2002). A standard AMBER simulation protocol was used. The sequential minimization steps were performed for the hydrogen atoms, side chains and the entire protein complex to clean any clashes. The system was solvated in a TIP3P water box Jorgensen et al., 1983 with distance 12 Å from the edge of the protein. To neutralize the CRL4A E3 ligase complex system, 40 and 46 Na+ ions were added to the water box for C4 cluster and for C12, respectively, with no counter ion added to the ternary complex. Subsequently, the whole complex system with water was minimized by only focusing on water molecules, then the entire complex system. Heating of the complex system from 50 K to 300 K with increments of 25 K was achieved in 200-ps NPT simulation (time step of 2 fs) for each temperature. The system was subsequently equilibrated at 300 K for 500-ps NPT simulation with all atoms relaxed. Long-range electrostatic interactions were computed by the particle mesh Ewald method (PME; Essmann et al., 1995). The SHAKE constraint was applied to all atoms including hydrogens (Ryckaert et al., 1977). The Langevin thermostat with a damping constant of 2 ps–1 was used to maintain a temperature of 300 K. The NPT ensemble at 300 K was used for MD production run for 400 ns, and each frame was collected at 1-ps time intervals. We generated eight CRBN-dBETx-BRD4BD1 complex structures and performed 3 MD runs with different initial velocities for each structure. Sixteen degradation machinery complex structures were constructed, and we ran one MD for each complex (Table 2).
 
-## Dihedral angle correlation
+### Dihedral angle correlation
 
-We used the T-analyst program Ai et al., 2010 to calculate the pairwise correlations between the pseudo dihedral angles and the PROTAC dihedral angles. Each side-chain dihedral angle was recorded every 50 ps through 400 ns trajectories to generate 8000 different angles per dihedral selection. Pairwise correlations were computed using a Pearson correlation formula. We converted the side-chain dihedral angles to Cartesian coordinates by means of equations (1)-(3) to accurately capture their differences and means, thereby preventing erroneous computation of their correlation at the discontinuity margin (±180° or 360°/0°; Ai et al., 2010; Tang and Chang, 2017). Notably, a positive correlation between two sidechains indicates that the two sides rotate similarly during MD simulation.(1)rxy=∑i=1n(xi−x¯)(yi−y¯)∑i=1n(xi−x¯)2∑i=1n(yi−y¯)2(2)x¯=arctan(sin(x1)+sin(x2)+…+sin(xn)cos(x1)+cos(x2)+…+cos(xn))(3)xi−x¯=arctan(sin(xi)cos(x¯)−sin(x¯)cos(xi)cos(xi)cos(x¯)+sin(xi)sin(x¯))rxy=DihedralPearsonCorrelation,x¯=meanofdihedralangles,xi=sidechaindihedralangles
+We used the T-analyst program Ai et al., 2010 to calculate the pairwise correlations between the pseudo dihedral angles and the PROTAC dihedral angles. Each side-chain dihedral angle was recorded every 50 ps through 400 ns trajectories to generate 8000 different angles per dihedral selection. Pairwise correlations were computed using a Pearson correlation formula. We converted the side-chain dihedral angles to Cartesian coordinates by means of equations (1)-(3) to accurately capture their differences and means, thereby preventing erroneous computation of their correlation at the discontinuity margin (±180° or 360°/0°; Ai et al., 2010; Tang and Chang, 2017). Notably, a positive correlation between two sidechains indicates that the two sides rotate similarly during MD simulation.
 
-## Interaction energy calculations
+$$
+r_{xy}=\frac{\sumi=1n(x_{i}−x¯)(y_{i}−y¯)}{\sqrt{\sumi=1n(x_{i}−x¯)^{2}}\sqrt{\sumi=1n(y_{i}−y¯)^{2}}}
+$$
 
-We used MM/PBSA method from AMBER20 Miller et al., 2012 to evaluate the stability of ternary complex by computing the interaction energy between protein (CRBN-BRD4BD1) and ligand (dBETs). From a total of 8000 MD frames making up the 400-ns ternary complex trajectories, system conformations were analyzed every 4 ns. This method computes the energy (E) of a system from the protein (CRBN-BRD4BD1), ligand (dBETs) and protein–ligand complex (CRBN–dBETs–BRD4BD1), and computes the interaction energy as:(4)ΔE=ECRBN−dBETs−BRD4BD1−ECRBN−BRD4BD1−EdBETs
+
+
+$$
+x¯=arctan(\frac{sin(x_{1})+sin(x_{2})+…+sin(x_{n})}{cos(x_{1})+cos(x_{2})+…+cos(x_{n})})
+$$
+
+
+
+$$
+x_{i}−x¯=arctan(\frac{sin(x_{i})cos(x¯)−sin(x¯)cos(x_{i})}{cos(x_{i})cos(x¯)+sin(x_{i})sin(x¯)})
+$$
+
+
+
+$$
+r_{xy}=DihedralPearsonCorrelation,x¯=meanofdihedralangles,
+$$
+
+
+
+$$
+x_{i}=sidechaindihedralangles
+$$
+
+### Interaction energy calculations
+
+We used MM/PBSA method from AMBER20 Miller et al., 2012 to evaluate the stability of ternary complex by computing the interaction energy between protein (CRBN-BRD4BD1) and ligand (dBETs). From a total of 8000 MD frames making up the 400-ns ternary complex trajectories, system conformations were analyzed every 4 ns. This method computes the energy (E) of a system from the protein (CRBN-BRD4BD1), ligand (dBETs) and protein–ligand complex (CRBN–dBETs–BRD4BD1), and computes the interaction energy as:
+
+$$
+ΔE=E_{CRBN−dBETs−BRD4^{BD1}}−E_{CRBN−BRD4^{BD1}}−E_{dBETs}
+$$
 
 The solute dielectric is set to 15.0 to consider the polar surface of protein and solvent dielectric was set to 80.0.
 
-## Pairwise interaction network
+### Pairwise interaction network
 
 Gromacs force distribution analysis (FDA) was used to compute nonbonding forces with Leonard-Jones’ potential and Coulomb potential (Stacklies et al., 2011).The parameter 10 Å was used for the short-range interaction cutoff. The long-range electrostatic forces were computed with PME (Essmann et al., 1995).The first 40 ns of MD simulation were treated as equilibrium plus, and thus the FDA was performed with the following 360 ns. We calculated the sum of pair-wise forces of the degradation complex by using our in-house script. In addition, we constructed the pair-wise forces network of the intramolecular attraction of degradation complex to visualize the shortest path of the PROTAC-guided essential motion at the hinge region by using python library Networkx (Swart et al., 2008; Figure 5—figure supplement 2). To reduce the complexity of the network, we eliminated pair-wise forces that had minor attraction or repulsion. Specifically, pair-wise forces that were within –10 and 10 pN were eliminated.
 
-## Principle component analysis (PCA)
+### Principle component analysis (PCA)
 
 To observe major protein motions, we performed PCA using CPPTRAJ and our in-house code (Hotelling, 1933; Roe and Cheatham, 2013). PCA of MD trajectories for all the simulated systems involved using backbone atoms in the full degradation machinery complex. The first and second PCs were analyzed to reveal the dominant motions (Figure 5—figure supplement 1).

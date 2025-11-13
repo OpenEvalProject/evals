@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.38517.001 Condensins are genome organisers that shape chromosomes and promote their accurate transmission. Several studies have also implicated condensins in gene expression, although any mechanisms have remained enigmatic. Here, we report on the role of condensin in gene expression in fission and budding yeasts. In contrast to previous studies, we provide compelling evidence that condensin plays no direct role in the maintenance of the transcriptome, neither during interphase nor during mitosis. We further show that the changes in gene expression in post-mitotic fission yeast cells that result from condensin inactivation are largely a consequence of chromosome missegregation during anaphase, which notably depletes the RNA-exosome from daughter cells. Crucially, preventing karyotype abnormalities in daughter cells restores a normal transcriptome despite condensin inactivation. Thus, chromosome instability, rather than a direct role of condensin in the transcription process, changes gene expression. This knowledge challenges the concept of gene regulation by canonical condensin complexes.
+Condensins are genome organisers that shape chromosomes and promote their accurate transmission. Several studies have also implicated condensins in gene expression, although any mechanisms have remained enigmatic. Here, we report on the role of condensin in gene expression in fission and budding yeasts. In contrast to previous studies, we provide compelling evidence that condensin plays no direct role in the maintenance of the transcriptome, neither during interphase nor during mitosis. We further show that the changes in gene expression in post-mitotic fission yeast cells that result from condensin inactivation are largely a consequence of chromosome missegregation during anaphase, which notably depletes the RNA-exosome from daughter cells. Crucially, preventing karyotype abnormalities in daughter cells restores a normal transcriptome despite condensin inactivation. Thus, chromosome instability, rather than a direct role of condensin in the transcription process, changes gene expression. This knowledge challenges the concept of gene regulation by canonical condensin complexes.
 
 ## Introduction
 
@@ -50,17 +50,37 @@ To gain insights into how canonical condensins regulate genes, we investigated t
 
 ## Results
 
-## RNA-exosome-sensitive transcripts accumulate when condensin is impaired in fission yeast
+### RNA-exosome-sensitive transcripts accumulate when condensin is impaired in fission yeast
 
 To assess the role of condensin in gene expression in fission yeast, we compared the transcriptomes of wild-type and mutant cells in which the SMC2Cut14 ATPase subunit of condensin was inactivated by the thermosensitive cut14-208 mutation (Saka et al., 1994). We shifted cells growing asynchronously at permissive temperature to the restrictive temperature of 36°C for 2.5 hr (one cell doubling) to inactivate SMC2Cut14 and determined their transcriptomes using strand-specific RNA-seq. We identified 306 transcripts that were differentially expressed with log2 fold changes superior to 0.5 or inferior to −0.5 (FDR ≤ 0.05) in the cut14-208 condensin mutant compared to wild type (Figure 1A). The vast majority of transcripts (98.5%; n = 302/306) exhibited an increased steady-state level in the mutant. We confirmed the increase for six example RNAs by RT-qPCR, using either act1 or nda2 mRNA levels as internal controls (Figure 1B, Figure 1—figure supplement 1A). Thus, gene expression is altered, and mainly increased, in dividing condensin mutant cut14-208 cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig1-v2.jpg)
+
+**Figure 1.:** (A) Volcano plot of RNA levels measured by strand-specific RNA-seq in the cut14-208 condensin mutant after 1 cell doubling at 36°C, from biological triplicates. Genes exhibiting a log2 fold change superior to 0.5 or inferior to −0.5 with an adjusted P-value (padj) ≤ 0.05 are indicated in red. (B) RT-qPCR validation. Total RNA from cells grown at 36°C for 2.5 hr was reverse-transcribed in the presence or absence of Reverse Transcriptase (RT) and cDNAs were quantified by qPCR. Shown are the averages and standard deviations (SDs) measured from three biological replicates. (C) Misregulated RNA in cut14-208. (D) Northern blot analysis of the non-coding RNA mug93as. Cells were shifted at 36°C for 1 cell doubling and total RNA probed for mug93as level. Ribosomal RNA (rRNA) stained with ethidium bromide (EtBr) was used as loading control. (E) Volcano plot of RNA levels measured by RNA-seq from biological triplicates of the rrp6Δ mutant after 1 cell doubling at 36°C. Genes exhibiting a log2 fold change superior to 0.5 or inferior to −0.5 with an adjusted P-value (padj) ≤ 0.05 are indicated in red. (F) Misregulated RNA in rrp6Δ.( G) Genes misregulated in cut14-208 and rrp6Δ. (H) Comparison plots between the transcriptomes of cut14-208 and rrp6Δ. Genes differentially expressed in both mutants are highlighted in red. The correlation coefficient has been calculated for all genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RT-qPCR validation of up-regulated RNA in cut14-208 mutant cells. Total RNA extracted from wild-type and cut14-208 cycling cells grown for 2.5 hr at the restrictive temperature of 36°C was reverse-transcribed in the presence or absence of RT and the cDNA quantified by qPCR. Shown are averages ± SDs measured from n = 3 biological replicates. (B) Pol II occupancy measured by ChIP. Cells of indicated genotypes were grown at the restrictive temperature of 36°C for 2.5 hr and processed for ChIP against RNA Pol II phosphorylated on serine 2 of the CTD (S2P). The transcription termination mutant pfs2-11 was used as a control for Pol II accumulation in the 3’ ends of genes (Wang et al., 2005). Shown are averages ± SDs calculates from 6 ChIPs performed on biological triplicates.
 
 Of the 306 misregulated transcripts, 57% were mRNAs and the remaining 43% were non-protein coding RNAs (ncRNA) (Figure 1C). We found histone mRNAs amongst the upregulated transcripts, confirming previous observations (Kim et al., 2016). However, the analysis of all increased mRNAs revealed no enrichment for a specific gene ontology (GO) term, which suggests that condensin inactivation does not affect the expression of a particular family of protein-coding genes. In contrast, ncRNAs, which represent ~22% of the transcription units in the fission yeast genome (n = 1524/6986; genome version ASM294v2.30), were significantly enriched in the population of transcripts up-regulated in the cut14-208 mutant (p<0.001, Chi-square test). Since most ncRNAs are maintained at a low level by the nuclear RNA-exosome (Wilhelm et al., 2008), their controlled degradation might be compromised in the mutant. We tested this hypothesis by northern blotting using the antisense ncRNA mug93-antisense-1 (mug93as) as a representative example. As shown in Figure 1D, mug93as was barely detectable in a wild-type background but accumulated in cells lacking Rrp6 or defective for Dis3, as expected if it were degraded by the RNA-exosome. Remarkably, mug93as also accumulated in cut14-208 mutant cells, reaching levels reminiscent of the rrp6Δ control. Furthermore, chromatin immunoprecipitation (ChIP) against RNA Pol II revealed no change in RNA Pol II occupancy at neither the mug93as gene, nor two additional example ncRNA genes (ncRNA.489 and ncRNA.540), in cut14-208 cells (Figure 1—figure supplement 1B), although their ncRNA levels were increased between 5- and 30-fold (Figure 1B, Figure 1—figure supplement 1A). These RNAs might therefore accumulate due to impaired degradation rather than increased transcription. Taken together, these results indicate that unstable RNA species accumulate when condensin is defective.
 
 To clearly delineate the number of transcripts targeted by the RNA-exosome that accumulate in the cut14-208 condensin mutant, we compared the transcriptomes of cut14-208 and rrp6Δ cells that had been grown in parallel and processed simultaneously for strand-specific RNA-seq analyses. We identified 663 RNAs that were differentially expressed with log2 fold changes superior to 0.5 or inferior to −0.5 (FDR ≤ 0.05) in the rrp6Δ mutant (Figure 1E). Of these differentially expressed RNAs, 78% were increased in levels and 22% were decreased. The population of Rrp6-sensitive RNAs was considerably enriched in ncRNAs (p<0.001, Chi-square test) (Figure 1F). Pairwise comparison with cut14-208 revealed that ~ 43% (n = 129/302) of the RNAs that accumulated in the condensin mutant also accumulated in cells lacking Rrp6 (Figure 1G,H), with no clear preference for ncRNA and mRNA transcripts (50% each). A hypergeometric test confirmed that this overlap was statistically highly significant (p=4.6e−55). These data indicate that a large fraction of the transcripts that accumulate when condensin is impaired are normally targeted by the ribonuclease Rrp6.
 
-## Read-through transcripts accumulate upon condensin inactivation
+### Read-through transcripts accumulate upon condensin inactivation
 
 Visual inspection of the RNA-seq profile of the cut14-208 mutant revealed a widespread increase of reads downstream of the 3’ ends of genes, suggesting defects in the termination of transcription (for an example, see the hsp9 gene in Figure 2A). Read-through transcripts are abnormal RNAs that are extended at their 3’ ends when RNA polymerases transcribe over Transcription Termination Sites (TTS) into downstream DNA sequences. Dis3 and Rrp6 have been reported to prevent the accumulation of read-through transcripts, although through possibly different mechanisms (Lemay et al., 2014; Zofall et al., 2009). Lemay et al. have shown that 3’-extended hsp9 RNAs accumulate in fission yeast cells when Dis3 is impaired, and to a lesser extent when Rrp6 is lacking (Lemay et al., 2014). By using RNase-H digestion of the 5’ end of hps9 mRNA and northern blotting, we confirmed the accumulation of 3’-extended hsp9 RNA in dis3 and rrp6 mutant cells (Figure 2B). Importantly, cut14-208 mutant cells accumulated 3’-extended hsp9 RNA of the same length as cells depleted of Dis3 or Rrp6. Moreover, other condensin mutants, such as cut3-477 and cut14-180, also accumulated read-through hsp9 RNA (Figure 2—figure supplement 1A), which demonstrates that the accumulation of uncleaved, 3’-extended hsp9 transcripts is a feature of condensin inactivation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig2-v2.jpg)
+
+**Figure 2.:** (A) 3’-extended hsp9 read-through RNA detected by strand-specific RNA-seq in cut14-208. (B) Read-through hsp9 RNA detected by RNase H digestion and northern blotting. Total RNA from indicated strains grown at 36°C was digested by RNase H in the presence of a DNA oligonucleotide complementary to the 5’end of hsp9 mRNA. Cleaved products were revealed by a probe hybridizing downstream the transcription termination site of hsp9 (see probe2 in A), or within the coding sequence (probe 1, shown in A). rDNA stained with EtBr served as loading control. (C) 3’-extended read-through RNAs in cut14-208. (D) Polyadenylated RNAs detected by oligo(dT)-primed RT-PCR. Cells were grown at 36°C for 2.5 hr in PMG supplemented with 60 µM thiamine to repress nmt1-dis3. Total RNA was reverse transcribed using oligo(dT) primers in the presence or absence of RT. cDNA were amplified by 25 cycles of PCR using oligo(dT) and gene specific primers. Minus RT reactions produced no signal. (E) 3’-extended read-through RNAs in rrp6Δ. (F) Overlap between the sets of read-through RNAs in cut14-208 and rrp6Δ. (G) Steady state level of Rrp6. Indicated strains were grown at 36°C for 2.5 hr, total proteins were extracted and probed with an anti-myc antibody. Alpha-tubulin served as loading control.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 3’-extended hsp9 RNA detected by RNase H digestion and northern blotting in condensin mutant cells. Indicated strains were grown at 36°C for 2.5 hr. Total RNA was digested by RNase H in the presence of a DNA oligonucleotide complementary to the 5’end of hsp9 mRNA. Cleaved products were revealed by a probe hybridizing downstream of the transcription termination site of hsp9 (probe two in Figure 2A), or within the coding sequence (probe one in Figure 2A). rDNA stained with EtBr served as loading control. (B) Polyadenylated RNAs detected by oligo(dT)-primed RT-PCR. Cells were grown at 36°C for 2.5 hr in PMG supplemented with 20 µM thiamine to repress nmt1-dis3. Total RNA was reverse transcribed using oligo(dT) primers in the presence or absence of RT. cDNA were amplified by 25 cycles of PCR using oligo(dT) and gene-specific primers. PCR products were separated on an agarose gel and stained with EtBr. Minus RT reactions produced no signal. (C) Venn diagram showing the overlap between the two sets of increased RNAs and read-through RNAs in cut14-208. (D) Pol II occupancy measured by ChIP. Cells of indicated genotypes were grown at the restrictive temperature of 36°C for 2.5 hr and processed for ChIP against RNA Pol II phosphorylated on serine 2 of the CTD (S2P). Shown are averages ± SDs calculates from 6 ChIPs performed on biological triplicates. The positions of primers used for qPCR and the RNA-seq profiles are indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cohesin localisation in cut14-208 condensin mutant cells. Indicated cells were grown at 36°C for 2.5 hr and processed for ChIP against the Psm3 subunit of cohesin tagged with GFP. Psm3-GFP occupancy was assessed at known, conventional cohesin binding sites (Feytout et al., 2011; Schmidt et al., 2009), and at genes showing either read-through transcripts or up-regulate RNAs, in cut14-208 cells. Show are averages ± SDs calculates from 6 ChIPs performed on biological triplicates. (B) Representative strand-specific RNA-seq profiles of the co-transcribed convergent gene pairs nmt2-sec9, tea3-thi1, mei4-act1 and pdt1-prp10 in cut14-208 mutant cells compared to wt. DNA strands (+or -) are indicated.
 
 To determine the prevalence of read-through RNAs in cut14-208 mutant cells, we systematically searched and quantified stretches of consecutive RNA-seq reads that mapped immediately downstream the TTS of annotated genes on the same DNA strand, and did not overlap with downstream genes (see Materials and Methods) (Modolo, 2018). Using these criteria, we identified 489 transcripts, mostly mRNAs and ncRNAs, which were extended at their 3’ ends (Figure 2C). Oligo(dT)-primed RT-PCR showed that read-through RNAs were polyadenylated (Figure 2D, Figure 2—figure supplement 1B). Non-canonical polyadenylation sites might be more frequently used in the cut14-208 mutant than in wild-type cells, as already described for cells lacking Dis3 (Lemay et al., 2014), or 3’-extended RNAs that end at non-canonical sites might be stabilised in the condensin mutant. GO term analysis revealed no specific feature defining the population of read-through transcripts that accumulate in cut14-208 cells. Furthermore, only 111 of the 489 read-through transcripts were also up-regulated (Figure 2—figure supplement 1C), which suggests that the 3’-extended RNAs were not the by-product of increased transcription. In addition, ChIP against transcriptionally active RNA Pol II revealed no increased occupancy downstream canonical TTS in cut14-208 mutant cells (Figure 2—figure supplement 1D), in contrast to the transcription termination mutant pfs2-11 that we used as control (Wang et al., 2005). This result suggests that the termination of transcription remains largely effective in cut14-208 mutant cells. The 3’-extended transcripts that accumulate in cut14-208 cells are, therefore, unlikely to stem from an increased transcription beyond the TTS.
 
@@ -68,7 +88,7 @@ Condensin and cohesin frequently, but not systematically, co-localise along chro
 
 To further investigate the molecular origin of read-through RNAs in condensin mutant cells, we compared cut14-208 with rrp6Δ cells. We detected 622 read-through RNAs, again mostly mRNAs and ncRNAs, in the transcriptome of cells lacking Rrp6 (Figure 2E), which confirms previous reports (Lemay et al., 2014; Zofall et al., 2009). Pol II occupancy remained unchanged downstream the TTS of genes with read-through transcripts in rrp6Δ cells (Figure 2—figure supplement 1D), consistent with the idea that Rrp6 is needed to eliminate read-though RNAs at the co- or post-transcriptional level (Zofall et al., 2009). Importantly, 50% of the read-through RNAs that accumulated in cells lacking Rrp6 were also extended at their 3’ends in the cut14-208 mutant (Figure 2F). This reinforces the idea that the function of Rrp6 might be affected in a cut14-208 background. The steady state level of the Rrp6 protein remained unchanged in cut14-208 mutant cells (Figure 2G). Likewise, we observed no change by RNA-seq in the mRNA levels of RNA-exosome or TRAMP components in the condensin mutant (Supplementary file 1). Collectively, these data indicate that 3’-extended read-through transcripts accumulate upon condensin inactivation in fission yeast and that this accumulation might stem from defects in the processing of these transcripts by Rrp6.
 
-## Condensin is dispensable for gene expression during interphase and metaphase in fission and budding yeasts
+### Condensin is dispensable for gene expression during interphase and metaphase in fission and budding yeasts
 
 Since condensin is regulated over the course of the cell cycle, we sought to determine the phase(s) during which condensin function is required for proper gene expression. We synchronised cut14-208 mutant cells in early S phase at the permissive temperature, raised the temperature to 36°C to inactivate condensin and at the same time released them into the cell cycle. We then measured gene expression by RT-qPCR as cells progressed from early S phase into the cell cycle (Figure 3A). To ensure that cells went only through a single cell cycle at 36°C, we re-arrested cells in late G1 phase by the thermosensitive mutation cdc10-129. Previous work had shown that 10 min at 36°C are sufficient to inactivate condensin in cut14-208 mutant cells (Nakazawa et al., 2011). FACScan analysis of DNA content and cytological observations revealed that cdc10-129 single mutant and cdc10-129 cut14-208 double mutant cells completed S phase (t = 30 min after release) and progressed through G2 phase (t = 60 min) and mitosis (t = 90 min) with similar kinetics (Figure 3B). Chromosome segregation was impaired in the cut14-208 mutant background, as revealed by the appearance of anaphase chromatin bridges (Figure 3B, green line), which were subsequently severed by the septum upon mitotic exit, producing the CUT phenotype (Cells Untimely Torn) (Figure 3B, red line). Accordingly, FACScan analysis revealed the appearance of aberrant karyotypes in post-mitotic cells (t = 120 and 180 min; Figure 3B).
 
@@ -80,11 +100,31 @@ Remarkably, we detected no up-regulation of any of the three reporter RNAs that 
 
 Condensin in the budding yeast S. cerevisiae remains, in contrast, bound to chromosomes throughout the cell cycle (D'Ambrosio et al., 2008b), which is reminiscent to the continuous nuclear localization of the condensin II complex in metazoan cells. This raises the possibility that condensin controls interphase gene expression in this species. We first confirmed that condensin localizes to chromosomes of cells released synchronously into the cell cycle from a G1 mating pheromone arrest (Figure 4—figure supplement 1A). Chromosome spreading and ChIP showed that condensin bound to chromosomes already during G1 phase and that its levels on chromosomes increased as cells passed through S and G2 phases (Figure 4—figure supplement 1B,C). To inactivate condensin in budding yeast, we proteolytically cleaved the kleisin (Brn1) subunit of the condensin ring by inducing expression of a site-specific protease from tobacco etch virus (TEV) using a galactose-inducible promoter, which efficiently released condensin from chromosomes (Cuylen et al., 2011), even during G1 phase (Figure 4—figure supplement 1D). We then compared the transcriptome of G1 phase-arrested cells after condensin cleavage to cells with intact condensin (Figure 4A). Remarkably, solely 26 transcripts were differentially expressed by at least two-fold (Figure 4B). To rule out that such minor effect on gene expression was not an artefact caused by the G1 phase arrest, we repeated the experiment, but this time released cells after Brn1 TEV cleavage from the G1 phase arrest and re-arrested them in the subsequent M phase by addition of the spindle poison nocodazole, before preparing RNA for transcriptome analysis (Figure 4C). In this experiment, only six genes displayed an up- or downregulation of two-fold or more (Figure 4D). We conclude that condensin inactivation by releasing the complex from chromosomes has no major effects on the gene expression program of budding yeast cells when these cells are prevented from undergoing division.
 
-## Gene expression changes in fission yeast condensin mutants are the result of a loss of genome integrity
+![Figure 4.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig4-v2.jpg)
+
+**Figure 4.:** (A) TEV protease expression was induced in cells synchronized in G1 phase by α-factor (strains C3138 and C3139). 2.5 hr after TEV induction, RNA was extracted, cDNA synthesized, labelled and hybridized to tiling arrays. Cell cycle synchronization was scored by FACScan analysis of cellular DNA content and Brn1 cleavage was monitored by western blotting against the C-terminal HA6 tag. (B) Scatter plot of gene expression values of cells from (A) with cleaved or intact Brn1 (mean values of n = 3 biological replicates). Red color highlights two-fold or more up- or downregulated transcripts. (C) TEV protease expression was induced in cells synchronized in G1 phase by α-factor (strains C2335 and C2455). Cells were release into nocodazole 2.5 hr after TEV induction and RNA was extracted 1.5 hr later, cDNA synthesized, labelled and hybridized on tiling arrays. Cell cycle synchronization and Brn1 cleavage was monitored as in A. (D) Scatter plot of gene expression values of cells from (C) with cleaved or intact Brn1 (mean valued of n = 2 biological replicates). Red color highlights two-fold or more up- or downregulated transcripts.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cells were synchronized to G1 phase by α-factor and released (strains C1 and C1584). Samples for chromosome spreads were taken prior to the release, 0.5 and 1 hr after the release in order to yield G1, S and G2 phase samples, as indicated. Cell cycle synchronization was scored by FACScan analysis of cellular DNA content. (B) Condensin levels on chromosomes of cells in (A) were measured by immunofluorescence of chromosome spreads (red, anti-HA; blue DAPI). Scale bar: 5 µm. (C) Cells were synchronized to G1 phase by α-factor (strains C1 and C1597) and released as in (A). Samples for ChIP were taken prior to the release, or 0.5 or 1 hr after the release for G1, S and G2 phase samples, respectively. Condensin levels on chromosomes were measured by anti-PK ChIP at the rDNA locus followed by quantitative PCR. (D) TEV protease expression was induced by addition of galactose (+gal) in cells synchronized in G1 phase by α-factor (strains C1039 and C2455). A control sample was not induced (– gal). Condensin levels on chromosomes were measured by anti-HA ChIP followed by quantitative PCR at the rDNA locus.
+
+### Gene expression changes in fission yeast condensin mutants are the result of a loss of genome integrity
 
 The fact that we observed changes in transcript levels in asynchronously dividing cut14-208 fission yeast mutant cells, but not in fission or budding yeast condensin mutants that are prevented from undergoing anaphase, raises the possibility that defects in chromosome segregation caused by condensin inactivation might be causally responsible for condensin-dependent gene deregulation. Indeed, when we arrested fission yeast cut14-208 cells at the G2/M transition using the analogue-sensitive Cdc2asM17 kinase (Aoi et al., 2014), shifted the temperature to 36°C and then released them from the arrest to complete mitosis, we measured an increase in transcript levels after mitotic exit and the severing of chromosomes (Figure 5—figure supplement 1A–C).
 
 If RNA misregulation were indeed caused by the severing of missegregated chromosomes by the cytokinetic ring, then three key hypotheses should prove correct: (1) any mutation that results in chromosome missegregation and cutting upon mitotic exit should result in an increase in levels of the same or a similar set of RNAs as the cut14-208 mutation, (2) the amplitude of the increase in RNA levels should correlate with the prevalence of missegregation, and (3) preventing chromosome cutting in cut14-208 cells should attenuate the changes in RNA levels. As shown in Figure 5A, mutation of separase (ptr4-1) or of a subunit of the APC/C (cut9-665) resulted in chromosome missegregation and severing by the cytokinetic ring upon mitotic exit, as well as an increase in RNA levels, in a manner similar to cut14-208. Moreover, the amplitude of the increase in RNA levels correlated with the frequency of chromosome cutting in the different mutants (Figure 5A). The analysis of five additional condensin mutations of increasing prevalence of chromosome missegregation further confirmed this correlation (Figure 5—figure supplement 1D,E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig5-v2.jpg)
+
+**Figure 5.:** (A) Gene deregulation in mutant cells in which chromosomes are cut by the cytokinetic ring upon mitotic exit. Strains grown at 36°C for 2.5 hr were processed for cytological analysis and RT-qPCR. Right: cells were stained with DAPI and calcofluor to visualise DNA and the septum, respectively, and to quantify the frequency of chromosome cutting by the septum (CUT cells). Left: total RNA was reverse-transcribed in the presence or absence RT and cDNA quantified by qPCR. Shown are averages ± SDs calculated from three biological replicates. (B–E) Preventing chromosome severing restores normal gene expression in the condensin mutant cut14-208. (B) Cells were grown at 36°C for 2.5 hr and stained with DAPI and calcofluor to reveal DNA and the septum, and measure the frequency of CUT cells, or treated for FACScan analysis of DNA content. (C) Volcano plot of RNA levels measured by strand-specific RNA-seq in the cdc15-140 cut14-208 double mutant after 2.5 hr at 36°C, from biological triplicates. (D) Comparative RNA-seq transcriptomic analysis from biological triplicates. (E) RNA-seq profiles of the mug93as ncRNA. (F–G) The kinetochore mutation mis6-302 and the condensin mutation cut14-208 deregulate a same set of genes. Wildtype and mis6-302 cells grown at 36°C for 8 hr were processed to analyse DNA content by FACScan (F) and RNA levels by RT-qPCR (G). cut14-208 cells and the isogenic wt control grown at 36°C for 2.5 hr were used for comparison. Shown are averages ± SDs measured from biological triplicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Gene expression was assessed in synchronized cut14-208 cells progressing through mitosis. (A) Cells expressing the analogue-sensitive Cdc2asM17 kinase were arrested at the G2/M transition in the presence of 3-Br-PP1 (2 µM), shifted at 36°C, released into mitosis and re-arrested in late G1 phase by the cdc10-129 mutation. (B) Mitotic progression was assessed by cytological observation. DNA was stained with DAPI and the septum with calcofluor. The frequencies of chromatin bridges (green line) and chromosome cutting by the septum (red line) are shown. (C) Total RNA extracted from wild-type and cut14-208 cells shown in (B) was reverse-transcribed in the presence or absence of RT and cDNA quantified by qPCR. (D–E) The amplitude of increase in RNA levels correlates with the prevalence of chromosome severing in condensin mutants. Indicated cells were grown at 36°C for 2.5 hr and processed for cytological analysis of chromosome segregation (D) or RT-qPCR (E). (D) Cells were fixed and processed for immunofluorescence against α-tubulin. DNA was stained with DAPI. Chromosome segregation was assessed in anaphase cells exhibiting a mitotic spindle ≥6 µm in length (n ≥ 100). CUT phenotype was assessed by staining DNA with Hoechst 3342 and the septum by calcofluor (n ≥ 100). Shown are averages ± SDs from biological triplicates. (E) Total RNA extracted from cells grown at 36°C was reverse-transcribed in the presence or absence of RT and the cDNA quantified by qPCR. Shown are the averages ± SDs measured from biological triplicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Venn diagram of 3-extended RNAs detected by strand-specific RNA-seq in indicated strains. (B) RNAseq profiles of the hsp9 gene showing the suppressive effect of cdc15-140 on the accumulation of read-through transcripts caused by cut14-208. (C) Increased RNA levels persist in the double mutant cdc15-140 rrp6Δ. Cells were grown at 36°C for 2.5 hr, total RNA was reverse-transcribed in the presence or absence of RT and cDNA quantified by qPCR. Shown are the averages ± SDs measured from biological triplicates. (D) The mutations cdc12-112 that prevents cytokinesis at the restrictive temperature restored normal RNA levels in a cut14-208 genetic background. Cells were grown at 36°C for 2.5 hr, total RNA was reverse-transcribed in the presence or absence of RT and cDNA quantified by qPCR. Shown are the averages ± SDs measured from biological duplicates.
 
 Furthermore, we found that RNA levels remained comparable to wild-type in cut14-208 cells that were prevented from undergoing cytokinesis. The thermosensitive cdc15-140 mutation prevents cytokinesis at the restrictive temperature (Balasubramanian et al., 1998). Double mutant cells cdc15-140 cut14-208 exhibited chromatin bridges during anaphase at 36°C (Figure 5B), which indicates that cdc15-140 did not suppress the chromosome segregation defect caused by the cut14-208 mutation. However, in the absence of a cytokinetic ring, these chromatin bridges were no longer severed upon mitotic exit. Instead, since fission yeast cells undergo a closed mitosis, chromatin bridges collapsed into a single nucleus as cells exited mitosis. As a consequence, the gain or loss of chromosomal fragments and the production of post-mitotic cells with unbalanced karyotypes were suppressed when cytokinesis was prevented (Figure 5B). Remarkably, parallel RNA-seq analysis revealed that ~98% of the RNAs up-regulated in the cut14-208 single mutant were no-longer detected as differentially expressed in the cut14-208 cdc15-140 double mutant (Figure 5C,D). The suppressive effect of cdc15-140 on cut14-208 with respect to the accumulation of the anti-sense RNA mug93as is shown as an example in Figure 5E. The production of read-through transcripts was similarly suppressed (Figure 5—figure supplement 2A,B). Note that RNA levels remained increased in the cdc15-140 rrp6Δ mutant (Figure 5—figure supplement 2C), ruling out a potential compensatory effect of cdc15-140 on Rrp6 deficiency per se. Finally, we found that cdc12-112, another mutation that also impairs cytokinesis (Chang et al., 1997), equally restored normal gene expression in the cut14-208 genetic background (Figure 5—figure supplement 2D), which confirms that cytokinesis was a driving force for the gene deregulation exhibited by the cut14-208 mutant. Taken together, these data indicate that changes in mRNA and ncRNA levels exhibited by cut14-208 condensin mutant cells are mostly, if not entirely, the consequence of chromosome cleavage during cytokinesis.
 
@@ -96,9 +136,21 @@ It has been reported that the expression of six different families of tRNAs, as 
 
 **Figure 6.:** (A) The accumulation of tRNAs in condensin mutant cells correlates with chromosome missegregation. Cells were grown at 36°C for 2.5 hr and processed for cytological analysis to measure the frequency of chromosome segregation and CUT phenotype (see Figure 5—figure supplement 1D). Total RNA extracted from these cells was reverse-transcribed in the presence or absence of RT and the cDNA were quantified by qPCR with primers unique to the indicated families of tRNAs. SER +MET refers to a dimeric tRNA(SER)-tRNA(MET) transcript (Johnson et al., 1989). (B–C) Total RNA extracted from cells grown at 36°C for 2.5 hr was processed for RT qPCR. (D) Wildtype and mis6-302 cells grown at 36°C for 8 hr were processed for RT-qPCR. cut14-208 cells and the isogenic wt control grown at 36°C for 2.5 hr were used for comparison. All the data shown in Figure 6 are averages ± SDs measured from biological triplicates.
 
-## Non-disjunction of the rDNA during anaphase depletes the RNA-exosome from post-mitotic fission yeast cells and results in ncRNA accumulation
+### Non-disjunction of the rDNA during anaphase depletes the RNA-exosome from post-mitotic fission yeast cells and results in ncRNA accumulation
 
 To investigate further the mechanism of gene deregulation when condensin is impaired, we characterized at higher detail chromosome segregation in cut14-208 mutant cells. It had been reported that condensin plays a major role in the segregation of the rDNA during late anaphase in budding yeast (Freeman et al., 2000; Sullivan et al., 2004). We reached the same conclusion in fission yeast, confirming previous observations (Nakazawa et al., 2008). When we scored the segregation of a GFP-labelled version of the rDNA-binding protein Gar2, we found that sister rDNA copies failed to separate during anaphase in cut14-208 mutant cells, frequently resulting in the formation of anucleolate daughter cells (Figure 7A). The ptr4-1 and mis6-302 mutants also exhibited a high rate of anucleolate cell formation (Figure 7A), whereas the cdc15-140 mutation suppressed the formation of anucleolate cells in the cut14-208 mutant (Figure 7—figure supplement 1C). Thus, the inability to properly segregate the rDNA during anaphase correlates with the accumulation of mRNAs and ncRNAs targeted by the RNA-exosome.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig7-v2.jpg)
+
+**Figure 7.:** (A) Non-disjunction of the rDNA in cut14-208 cells. The nucleolar protein Gar2-mcherry was used as a marker for the rDNA (nucleolus) and the plasma membrane protein Psy1-GFP to visualise cytokinesis. Mutant cells and their isogenic wt controls were grown at 36°C for 2.5 hr (cut14-208 and ptr4-1) or 8 hr (mis6-302), fixed and stained with DAPI. Segregation of the rDNA in daughter nuclei was measured upon mitotic exit. Scale bar: 10 μm. (B) Rrp6 is enriched in the nucleolus, and depleted from anucleolate cut14-208 mutant cells. Indicated cells were grown at 36°C, fixed and processed for immunofluorescence against Gar2-GFP and Rrp6-myc. DNA was stained with DAPI. Lower panel shows the ratio of Rrp6-myc signals measured within daughter nuclei in septated cells. ***p<0.001, Wilcoxon ranked sum test with continuity correction. (C) Asymmetric partitioning of Dis3 in budding yeast upon condensin cleavage. pTEV protease expression was induced in cells synchronized in G1 phase by α-factor. 2.5 hr after TEV induction, cells were released from the arrest and segregation of Dis3-mNeonGreen was scored between 2 and 2.5 hr after the release by measuring the ratio between Dis3 signals in daughter to mother cells (N = 97 (strain C5259), N = 139 (strain C5260); box plot shows median (red) ±first quartile and 1.5x interquartile range (whiskers); ****p<0.0001, unpaired t-test with Welch’s correction). Scale bar: 5 μm. (D–E) The non-coding RNA mug93as accumulate in anucleolate cut14-208 cells. Cells of indicated genotype and expressing Gar2-GFP were grown at 36°C for 2.5 hr, fixed and processed for single molecule RNA FISH using probes complementary to the ncRNA mug93as (D) or the mRNA cct2 (E). Box and whiskers plots show quantifications of RNA spots in cut14-208 compared to wt, and in nucleolate compared to anucleolate mutant cells. ***p<0.001, *p<0.05 and °p>0.05, Wilcoxon non-parametric test.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) cut14-208 mutant cells accumulate DNA damage that can be suppressed by cdc15-140. Cells expressing Rad22-GFP were grown at 36°C for 2.5 hr, fixed and stained with DAPI. Cells exhibiting at least one Rad22-GFP focus were scored. Shown are the averages ± SDs calculated from biological triplicates with more than 100 cells per experiment. (B) DNA damage does not increase RNA levels as cut14-208. Cells expressing Rad22-GFP were synchronised in prometaphase by the nda3-KM311 mutation and released in mitosis in the presence of Camptothecin (CPT), or its vehicle DMSO, to induce DNA damage upon mitotic exit. Asynchronously growing cells expressing Rad22-GFP were treated with zeocin to induce DNA double-strand breaks. The prevalence of DNA damage was measured by scoring Rad22-GFP foci. RNA levels in cells experiencing DNA damage were assessed by RT-qPCR. Shown are averages ± SDs calculated from biological triplicates. (C) The cdc15-140 mutation prevents the production of anucleolate cells in a cut14-208 genetic background. Cells expressing Gar2-GFP were grown at 36°C for 2.5 hr, fixed and stained with DAPI to score the percentage of anucleolate cells. Shown are the averages ± SDs calculated from biological triplicates with more than 100 cells per experiment. (D) Dis3 is enriched in the nucleolus and segregates asymmetrically in cut14-208 mutant cells (arrow). Indicated cells were grown at 36°C, fixed with ethanol and processed for immunofluorescence against Dis3-HA. DNA was stained with DAPI. Right panel shows the ratio of Dis3-HA signals measured within daughter nuclei in septated cells. *** indicates that the difference is statistically significant with ***p<0.001 by the Wilcoxon ranked sum test with continuity correction.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/38517/elife-38517-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Cell cycle synchronization of cells expressing mNeonGreen-tagged Dis3 was scored by FACScan analysis of cellular DNA content and Brn1 cleavage was monitored by western blotting against the C-terminal HA6 tag.
 
 Live imaging of Rrp6 and Dis3 had shown that the two RNases are enriched in the nucleolus of fission yeast cells (Yamanaka et al., 2010). Given the overlap between the differential transcriptomes of cut14-208 and rrp6Δ mutants, we hypothesised that rDNA non-disjunction might alter the localisation of Rrp6 in daughter cells upon mitotic exit. Co-immunostaining of Rrp6 tagged with a myc epitope and Gar2 tagged with GFP confirmed the nuclear localisation of Rrp6 and its marked enrichment within the nucleolus (Figure 7B). In a wild-type background, Rrp6 appeared evenly distributed between nuclei in post-mitotic daughter cells (median signal ratio ~1). In sharp contrast, the amount of Rrp6 was markedly reduced in cut14-208 anucleolate daughter cells compared to their nucleolate counterparts (median signal ratio ~0.25; Figure 7B). We observed a similar asymmetric distribution of Dis3 tagged with an HA epitope in post-mitotic cut14-208 cells (Figure 7—figure supplement 1D). Residual levels of Rrp6 and Dis3 proteins remained detectable in anucleolate cells (Figure 7B, Figure 7—figure supplement 1D), which suggests that a small fraction of Rrp6 and Dis3 molecules is transmitted to daughter cells independently of the rDNA. Live cell imaging in budding yeast furthermore demonstrated that the segregation into the daughter cells of a mNeonGreen-tagged version of Dis3 was severely impaired during the first cell division after condensin inactivation by Brn1 cleavage (Figure 7C, Figure 7—figure supplement 2). We conclude that condensin deficiency leads to rDNA non-disjunction during anaphase and the production of anucleolate post-mitotic cells, which are depleted of Rrp6 and Dis3.
 
@@ -132,15 +184,137 @@ Studies performed over the past 20 years have shown that the three-dimensional o
 
 ## Materials and methods
 
-## Media, molecular genetics and strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic background (S. pombe)</td>
+      <td>972 h-</td>
+      <td>NA</td>
+      <td>245818 [UID] 391418 [GenBank] 245818 [RefSeq]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic background (S. cerevisiae)</td>
+      <td>W303</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagents (yeast strains)</td>
+      <td>See Supplementary file 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (mouse monoclonal)</td>
+      <td>Keith Gull</td>
+      <td>TAT1</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myc (mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>#9E10</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#12CA5</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>#A11122</td>
+      <td>(1:800 for IF and 6 μg / IP for ChIP)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ser2P RNAPII (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab5095</td>
+      <td>6 μg / IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>16B12 (anti-HA.11)</td>
+      <td>1.5 µl / 50 µl beads</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PK (mouse monoclonal)</td>
+      <td>Abd Serotec</td>
+      <td>MCA1360</td>
+      <td>2 µl / 50 µl beads</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See Supplementary file 3</td>
+      <td>Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads protein A</td>
+      <td>Invitrogen</td>
+      <td>#10002D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In vitro transcription kit for probe labelling</td>
+      <td>Ambion/Thermo Fisher</td>
+      <td>T7 riboprobe system (AM1312)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-BrB-PP1</td>
+      <td>Toronto Research Canada</td>
+      <td>A602985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNA seq analysis</td>
+      <td>This study</td>
+      <td>https://github.com/LBMC/readthroughpombe</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Media, molecular genetics and strains
 
 Media and molecular genetics methods were as previously described (Moreno et al., 1991). Fission yeast cells were grown at 28°C in complete YES + A medium or in synthetic PMG medium. The nmt1-dis3 chimerical gene was repressed by the addition of thiamine 60 μM final to the growth medium, as described (Lemay et al., 2014), followed by further cell culture for 12 – 15 hr. Strains used in this study are listed in Supplementary file 2.
 
-## Cell cycle synchronization
+### Cell cycle synchronization
 
 Fission yeast cells were synchronized in early S phase at 28°C by the adjunction of hydroxyurea (HU) 15 mM final. G2/M arrest was achieved using the thermo-sensitive cdc25-22 mutation or the analogue-sensitive cdc2asM17 allele (Aoi et al., 2014), and G1 arrest using the thermo-sensitive cdc10-129 mutation. Reversible prometaphase arrest was performed at 19°C using the cold‐sensitive nda3‐KM311 mutation (Hiraoka et al., 1984). Metaphase arrest was achieved in PMG medium supplemented with thiamine 20 µM using the thiamine repressible nmt41-slp1 gene (Petrova et al., 2013). Mitotic indexes were measured as the percentages of mitotic cells accumulating Cnd2‐GFP in the nucleus (Sutani et al., 1999). Budding yeast cells were grown at 30°C in YEPD to mid-log phase, collected by filtration, washed with ddH2O, and re-suspended at an OD600 of 0.30 in YEPD containing 3 µg/ml α-factor. After one hour, additional α-factor was added to 3 µg/ml. After another hour, an aliquot of cells was used for ChIP (G1 sample) and the remaining cells were collected by filtration, washed with dH2O and re-suspended in YEPD to release the cells from the G1 arrest. 30 min after and 60 min after the release, aliquots were collected for ChIP (S phase sample and G2 sample respectively). Budding yeast strains expressing TEV protease under the GAL1 promoter were grown at 30°C in YEP medium containing 2% raffinose (YEP-R) to mid-log phase, collected by filtration, washed with ddH2O, and re-suspended at an OD600 of 0.15 in YEP-R containing 3 µg/ml α-factor. After one hour, additional α-factor was added to 3 µg/ml. After 30 min, the cultures were split and TEV protease expression was induced in one half by addition of 2% galactose. After another 30 min, cells were collected by filtration, washed with dH2O and re-suspended in YEP-R (uninduced) or YEP-R with 2% galactose (YEP-RG; induced) with 3 µg/ml α-factor. Fresh α-factor was added to 3 µg/ml after another hour to all cultures and ChIP samples were collected one hour later.
 
-## Microscopy
+### Microscopy
 
 To quantify anucleolate cells, cells expressing Gar2-mCherry and Psy1-GFP fusion proteins were fixed with cold methanol and DNA was stained with 4′, 6-diamidino-2-phenylindole (DAPI) at 0.5 μg/ml in PEM buffer (100 mM PIPES, 1 mM EGTA, 1 mM MgSO4, pH 6.9). Gar2-mCherry and Psy1-GFP were directly observed under the fluorescent microscope. Rad22-GFP foci were analysed on cells fixed with iced-cold methanol and stained with DAPI. Cytological analysis of the CUT phenotype was performed as described (Hagan, 2016) except that cells were fixed with cold methanol and stained with Hoechst 33342 (20 μg/ml). Immunofluorescence was performed as described (Robellet et al., 2014), with the following modifications. Cells shifted at 36°C for 2h30 min were fixed with ice-cold ethanol and stored at 4°C. 2 × 107 cells were washed in PEMS (PEM +1.2 M Sorbitol) and digested with Zymolyase 100T (0.4 mg/ml in PEMS) for 30 min at 37°C. Images were processed and quantified using ImageJ with automated background subtraction.
 
@@ -148,29 +322,29 @@ Aliquots of budding yeast cells grown in YEP-RG media were transferred to Concav
 
 Dis3-mNeonGreen fluorescence measurements were performed in Fiji. The z-section with the highest Dis3-mNeonGreen fluorescence was manually determined and a maximum projection of this plus the previous and following slices were performed. All cells where mother and daughter cells were in focus and at least one small bud was present in the mother or daughter cell (to ensure that chromosome segregation had been completed) were marked in the transmission channel and used for analysis. The Dis3 signal was then measured in circular 50 × 50 px ROIs in the mother and daughter cell. After background subtraction (determined as the mean of four 50 × 50 px ROIs in the cell-free region), the ratio of the Dis3 signal in the daughter cells and mother cell was calculated and plotted. Since samples were normally distributed according to a Kolmogorov-Smirnov test, but variances were different according to Levene’s test (α = 0.05), an unpaired t-test with Welch’s correction was chosen to test for statistical significance.
 
-## FACScan
+### FACScan
 
 2 × 106 fission yeast cells were fixed with ethanol 70% (v/v), washed in sodium citrate (50 mM pH 7) and digested with RNase A (100 µg/ml) (Merck). Cells were briefly sonicated and stained with 1 μM Sytox Green (ThermoFischer Scientific). DNA content was quantified on a FACSCALIBUR cytometer using CellQuest Pro software (BD Biosciences). Raw data were analyzed with FlowJo software (BD biosciences). FACScan analysis of budding yeast cells was performed as previously described after staining DNA with either propidium iodide (Figure 4; Cuylen et al., 2011) or SYBR green I (Figure 4—figure supplement 1, Figure 7—figure supplement 2; Cuylen et al., 2013).
 
-## Chromatin immunoprecipitation and quantitative PCR
+### Chromatin immunoprecipitation and quantitative PCR
 
 ChIP against fission yeast RNA Pol II (S2P) was performed as described (Vanoosthuyse et al., 2014) using 2 × 108 cells fixed with 1% formaldehyde at 36°C for 5 min and then 19°C for 25 min. ChIP against Psm3-GFP was performed on cells fixed with 3% formaldehyde at 36°C for 30 min, as described (Bhardwaj et al., 2016). Fixed cells were washed with PBS and lysed using acid‐washed glass beads in a Precellys homogenizer. Chromatin was sheared into 300‐ to 900‐bp fragments by sonication using a Diagenode bioruptor. Sheared chromatin was split in two equivalent fractions subjected to parallel immunoprecipitations using magnetic Dynabeads coated with the appropriate antibody. Total and immunoprecipitated DNA was purified using the NucleoSpin PCR clean‐up kit (Macherey‐Nagel). DNA was analysed on a Rotor‐Gene PCR cycler using QuantiFast SYBR Green mix. ChIP-qPCR experiments for budding yeast cells were performed as described previously (Cuylen et al., 2011). In brief, aliquots of 42 ml culture with an OD600 of 0.6 were fixed in 3% formaldehyde at 16°C. Chromatin was sonicated to an average length of 500 bp using a Diagenode bioruptor. For anti-HA immunoprecipitation, 50 µl protein G dynabeads and 1.5 µl 16B12 antibody (anti-HA.11, Covance) were used. For anti-PK immunoprecipitation, 50 µl protein A dynabeads and 2 µl anti-PK (V5) tag antibody (Abd Serotec MCA1360) were used. Purified DNA was analysed with an ABI 7500 real-time PCR system (Applied Biosystems) using rDNA-specific primers. Primers are listed in Supplementary file 3.
 
-## Chromosome spreads
+### Chromosome spreads
 
 Budding yeast cells were grown at 30°C in YEPD to mid-log phase, collected by filtration, washed with dH2O, and re-suspended at an OD600 of 0.2 in YEPD containing 3 µg/ml α-factor. After one hour, additional α-factor was added to 3 µg/ml. After another hour, an aliquot of cells was used for chromosome spreading (G1 sample) and the remaining cells were collected by filtration, washed with dH2O and re-suspended into YEPD to release the cells from the G1 arrest. Aliquots were collected for chromosome spreading 30 min and 60 min after the release (S and G2 phase samples, respectively). Chromosome spreads were prepared as described previously (Cuylen et al., 2011) and stained for Brn1-HA6 with 16B12 (anti-HA.11, Covance, 1:500) and Alexa Fluor 594–labelled anti-mouse IgG (Invitrogen, 1:600) antibodies and for DNA with DAPI. Images were recorded on a DeltaVision Spectris Restoration microscope (Applied Precision) with a 100×, NA 1.35 oil immersion objective.
 
-## Total RNA extraction and RT-qPCR
+### Total RNA extraction and RT-qPCR
 
 Total RNA was extracted from 2 × 108 fission yeast cells by standard hot‐phenol method. 1 µg of total RNA was reverse-transcribed using Superscript III (Life Technologies) following the manufacturer’s instructions, using random hexamers in the presence or absence of Reverse Transcriptase (RT). cDNAs were quantified by real time qPCR on a Rotor-Gene PCR cycler using QuantiFast SYBR Green mix. The absence of PCR product in minus RT samples has been verified for all RT-qPCR shown in this publication. Primers are listed in Supplementary file 3.
 
-## RNase digestion and northern blot
+### RNase digestion and northern blot
 
 For RNase H digestion, total RNA was hybridized with a DNA oligonucleotide complementary to a sequence located at the 5’ end of the hsp9 mRNA and digested with RNase H (Roche) following the manufacturer’s instructions. For northern blotting, total or RNase H-digested RNA was resolved on 1% agarose gel supplemented with formaldehyde 0.7% (v/v), transferred onto Hybond-XL nylon membranes (Amersham) and cross-linked. Pre-hybridization and overnight hybridization were carried out in ULTRAhyb buffer (Ambion) at 68°C. Strand-specific RNA probes were generated by in vitro transcription using the T7 riboprobe system (Ambion) and internally labelled with [α−32P]-UTP. Membranes were quickly washed with 2X SSC and 0.1% SDS, 10 min in 2X SSC and 0.1% SDS, and 3 times in 0.2X SSC and 0.1% SDS. Blots were imaged with Typhoon 8600 instrument (Molecular Dynamics) and quantified with ImageQuant TL (GE Healthcare).
 
 Single molecule RNA Fluorescence In Situ Hybridization (smFISH), imaging and quantification smFISH was performed on formaldehyde-fixed cells, as described (Keifenheim et al., 2017). Probes were designed and synthetized by Biosearch Technologies (Petaluma, CA). The mug93as and cct2 probes were labelled with Quasar 670. Probe sequences are listed in Supplementary file 3. Cells were imaged on a Leica TCS Sp8, using a 63x/1.40 oil objective, Optical z sections were acquired (z-step size 0.3 microns) for each scan to cover the depth of the cells. For image analysis and quantification, cell boundaries were outlined manually and RNA spots quantified using FISH-quant package implemented in MATLAB, as described (Mueller et al., 2013). The FISH-quant detection technical error was estimated at 6 – 7% by quantifying mRNA numbers using two sets of probes covering the 5’ half or the 3’ half of the rpb1 mRNA and labelled with different dyes.
 
-## RNA-seq and analysis
+### RNA-seq and analysis
 
 RNA-seq was performed on biological triplicates. Total RNA was extracted from 2 × 108 yeast cells by standard hot‐phenol method. RNA quality was determined using TapeStation (Agilent) with RINe score >9. Ribosomal RNA was removed by treating 2 µg of total RNA with the Ribo-Zero Gold rRNA Removal Kit (Yeast) (MRZY1324, Illumina, Paris, France). RNA-seq libraries were prepared using TruSeq Stranded kit. Sequencing was performed on Illumina Hiseq 4000, with single-end reads of 50 nt in length. Total number of reads per sample ranged from 59 million to 93 million. For in-silico analyses, we used the version ASM294v2.30 of the S. pombe genome in fasta format and the corresponding gff3 annotations downloaded from the ebi website (2017/03/22). Scripts are available in the following git repository: https://github.com/LBMC/readthroughpombe (Modolo, 2018; copy archived at https://github.com/elifesciences-publications/readthroughpombe). The RNA-seq reads were processed with cutadapt (Martin, 2011) to remove adaptors and further trimmed with UrQt (--t 20) (Modolo and Lerat, 2015) based on their quality. After quality control with fastqc (Andrews, 2010), we built the reverse complement of the reads in the fastq files using seqkit, indexed the genome (-build) and mapped the trimmed fastq files (--very-sensitive) using Bowtie2 (Langmead and Salzberg, 2012). Mapping output files were saved in bam format with samtools (view -Sb) (1000 Genome Project Data Processing Subgroup et al., 2009).
 
@@ -178,16 +352,16 @@ To detect read-through events, we searched for sections of reads located immedia
 
 Quantifications in mutant strains compared to wt were performed using the package DESeq2 (Love et al., 2014) with R (v3.4.4). For differential expression analyses, we tested for log2 fold change superior to 0.5 or inferior to −0.5. For read-through events, we tested for a log2 fold change superior to 0 compared to the wild type to declare the read-through present in the mutant background. For all analyses, we selected p-values with an FDR ≤ 0.05. The package ggplot2 (v2.2.1) was used for graphics. The orientation of genes was analysed with R scripts.
 
-## High-resolution tiling arrays
+### High-resolution tiling arrays
 
 For transcriptome analysis in G1 phase, Δbar1 cells were grown at 30°C in YEP-R to mid-log phase, collected by filtration, washed with dH2O, and re-suspended at an OD600 of 0.3 – 0.4 in YEP-R containing 3 µg/ml α-factor. After 1.5 hr, galactose was added to 2% and, after another 2.5 hr, 100 ml cells of OD600 = 0.6 – 0.8 were harvested by centrifugation at room temperature for RNA isolation. For transcriptome analysis during G2 phase, cells were grown at 30°C in YEP-R to mid-log phase, collected by filtration, washed with dH2O, and re-suspended at an OD600 of 0.3 – 0.4 in YEP-R containing 3 µg/ml α-factor. After one hour, additional α-factor was added to 3 µg/ml and 30 min later galactose was added to 2%. After another 30 min, cells were collected by filtration, washed with dH2O and re-suspended in YEP-RG with 3 µg/ml α-factor. Fresh α-factor was added to 3 µg/ml after one hour. After another hour, cells were collected by filtration, washed with dH2O and re-suspended in YEP-RG with 10 µg/ml nocodazole. 1.5 hr after the release from G1 phase, 100 ml culture with OD600 of 1.0 were harvested by centrifugation at room temperature for RNA isolation. Samples were collected for FACScan analysis at the indicated time points.
 
 High-resolution tiling arrays were performed and analysed as described (Xu et al., 2009). In brief, RNA isolated from yeast cells was reverse transcribed to cDNA with a mixture of random hexamers and oligo-dT primers, labelled and hybridized to tiled Affymetrix arrays of the budding yeast genome (S288c Genome Chip, http://www-sequence.stanford.edu/s288c/1lq.html). Transcripts that were two-fold or more up- or downregulated are listed in Supplementary file 5.
 
-## Accession number
+### Accession number
 
 RNA-seq data are accessible from the Gene Expression Omnibus (GEO) database under the accession number GSE112281.
 
-## Antibodies
+### Antibodies
 
 Antibodies used in this study are listed in Supplementary file 4.

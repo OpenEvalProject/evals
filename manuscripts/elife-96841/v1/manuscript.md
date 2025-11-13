@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00f7hpc57 Experimental Medicine II, Nikolaus-Fiebiger-Center, Friedrich-Alexander University Erlangen-Nürnberg Erlangen Germany
-2. https://ror.org/02j46qs45 Department of Experimental Biology, Faculty of Science, Masaryk University Brno Czech Republic
+1. Experimental Medicine II, Nikolaus-Fiebiger-Center, Friedrich-Alexander University Erlangen-Nürnberg Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))
+2. Department of Experimental Biology, Faculty of Science, Masaryk University Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
 
 † Corresponding author
 
@@ -33,39 +33,83 @@ Here, we report biochemical evidence for endogenous DVL2 complexes consisting of
 
 ## Results
 
-## Endogenous DVL2 forms oligomeric complexes
+### Endogenous DVL2 forms oligomeric complexes
 
 Performing ultracentrifugation assays, endogenous DVL2 (79 kDa) penetrated far deeper into a sucrose density gradient than AXIN1 (96 kDa) in spite of its lower molecular weight, indicating that DVL2 forms protein complexes (Figure 1A and E). Noteworthy, most DVL2 molecules appeared to be engaged in these complexes (Figure 1A). The complexes occurred in different cell lines (Figure 1—figure supplement 1A), and were detectable with two, siRNA-validated antibodies (Figure 1—figure supplement 1B, C). DVL2 (79 kDa) showed a fractionation pattern similar to thyroglobulin (669 kDa), a commercial molecular weight marker, suggesting DVL2 complex sizes of about eight molecules assuming homotypic complexes (Figure 1A and B). As a control, AXIN1 (96 kDa) showed a fractionation pattern similar to albumin (66 kDa) suggesting monomeric precipitation (Figure 1A and B). Interestingly, the DVL2 complexes appeared to be paralog-specific because complexes were almost absent for DVL1 and DVL3 (Figure 1C and D). The persistence of the complexes at low protein concentrations in cellular extracts indicated that they form via interaction sites with rather high affinity. Although the DIX domain is the best-characterized polymerization domain in DVL2 (Bienz, 2014), its low auto-affinity suggests that it is not involved in the formation of these complexes (Schwarz-Romond et al., 2007a). The striking difference between DVL2 and AXIN1 pointed in the same direction (Figure 1A), since both proteins contain a functional DIX domain (Kishida et al., 1999). Consistently, a DIX domain-inhibiting point mutation (DVL2 M2) (Schwarz-Romond et al., 2007a) did not affect DVL2 complexes (Figure 1C and D).
 
-## A low-complexity region in the C-terminus promotes DVL2 complexes
+![Figure 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig1-v1.jpg)
+
+**Figure 1.:** (A,C) Western blotting for indicated endogenous (A) or transiently expressed proteins, detected with anit-HA antibodies (C) after fractionation of HEK293T cell lysates via sucrose density ultracentrifugation. (B) Silver staining of thyroglobulin (TG) or albumin (ALB) after sucrose density ultracentrifugation of purified proteins. (A-C) shows one out of at least three representative experiments. Analyzed fractions are indicated above the blots according to (E). (D) Amount of the protein that was engaged in large complexes (see label Large in C), relative to the cumulative protein amount detected in all investigated fractions, as determined by 2D densitometry analysis of protein bands from three independent experiments as in (C) (n=3). Results are mean ± SEM, *p<0.05, ***p<0.001 (Student’s t-test). (E) Schematic representation of the ultracentrifugation assay, illustrating the distribution of proteins of different sizes (green) within numbered fractions of a sucrose gradient form low (light gray) to high density (black).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Western blotting for indicated endogenous proteins after fractionation of U2OS (A) or HEK293T cell lysates (B) via sucrose density ultracentrifugation. Fraction numbers are indicated above the blots according to Figure 1E. (C) Western blotting for indicated endogenous proteins in lysates of HEK293T cells, which were transfected with a control or a DVL2-targeting siRNA for 48 hr. (A–C) Two different antibodies were used for DVL2 detection (3224 and 3216, Cell Signaling). (D) Clustal Omega alignment of indicated dishevelled protein sequences, with specific UniProt identifiers provided in brackets. Identity (*) and conservation between amino acid groups of strongly (:) and weakly (.) similar properties are indicated (Sievers et al., 2011). Marks show conserved domains (CD1 and CD2), low-complexity regions (LCR1, LCR2, LCR3, and LCR4) according to the SEG algorithm (Wootton and Federhen, 1993) and the aggregation propensity of individual residues of mouse DVL2 (yellow-orange heat map) according to the TANGO algorithm (Fernandez-Escamilla et al., 2004). LCR4 and CD2 are highlighted in green and magenta, respectively, as they were identified as crucial regions for condensate induction later on.
+
+### A low-complexity region in the C-terminus promotes DVL2 complexes
 
 Deletion of the DEP domain (construct ΔDEP) decreased DVL2 complexes, in line with its reported function in DVL2-DVL2 interaction (Gammons et al., 2016). However, additional deletion of the remaining C-terminus (construct 1–418) markedly reduced them further, demonstrating a strong contribution of the deleted residues 521–736 to complex formation (Figure 2A–C). Importantly, decreased protein complexation of DVL2 ΔDEP and 1–418 in ultracentrifugation experiments conspicuously correlated with decreased formation of condensates in immunofluorescence-based assays (Figure 2D and E) and decreased Wnt pathway activation in reporter assays (Figure 2F). Therefore, we hypothesized that the DVL2 complexes may be important for signaling activity. To identify candidate regions for a more precise mapping within residues 521–736, we used the SEG algorithm predicting low-complexity regions (Wootton and Federhen, 1993), the TANGO algorithm predicting aggregation (Fernandez-Escamilla et al., 2004) and protein alignments (Sievers et al., 2011). We identified four low-complexity regions (LCR1-4), which are associated with protein assembly (Martin et al., 2020; Martin and Mittag, 2018), one potential aggregation site embedded in LCR4, and two domains whose evolutionary conservation may point to functional importance (CD1-2, Figure 1—figure supplement 1D). Since the deletion of residues 521–736 showed strong effects when combined with the DEP deletion (1–418 vs ΔDEP, Figure 2), we performed the following mapping in the ΔDEP context. Given the good correlation between complexes and condensates (Figure 2C and E), we decided to use immunofluorescence-based analysis of condensates for mapping, as it is more convenient than density gradient ultracentrifugation. Upon individual deletion of the six identified regions LCR1-4 and CD1-2, only deletion of LCR4 and CD2 decreased condensate formation and Wnt pathway activation of DVL2 ΔDEP (Figure 3A; Figure 3—figure supplement 1A–C). Combined deletion of LCR4 and CD2 increased the effect (Figure 3A; Figure 3—figure supplement 1A–C). We, therefore, consider the two adjacent regions as one functional unit, hereafter referred to as condensate forming region (CFR). DVL2 ΔDEP-ΔCFR exhibited a marked decrease in the number of cells with condensates (Figure 3A–C), in the number of condensates per cell (Figure 3D; Figure 3—figure supplement 1D–G) and in Wnt pathway activation (Figure 3E), similar to 1–418. Importantly, individual or combined fusion of LCR4 and CD2 to 1–418 sufficed to induce condensation (Figure 3A–D; Figure 3—figure supplements 1D-G and Figure 3—figure supplements 2A and B) and Wnt pathway activation (Figure 3E; Figure 3—figure supplement 2C and D), rendering 1–418+CFR as active as ΔDEP. Mutational inactivation of the DIX domain (1–418+CFR M2) abolished condensates demonstrating that the DIX domain is required for CFR-mediated condensates (Figure 3—figure supplement 2A and B). Interestingly, the investigated DVL2 mutant proteins predominantly formed nuclear condensates in contrast to the cytosolic condensates of WT DVL2, most likely, because a nuclear export signal (Figure 2A) was deleted in these mutants (Figure 3A). However, investigating only cells with cytosolic condensates (Figure 3—figure supplement 2E and F) revealed similar differences between the DVL2 mutants as were observed when investigating mainly cells with nuclear condensates (Figure 3C; Figure 3—figure supplement 2B), suggesting that the detected differences are not due to nuclear localization but reflect the overall condensation capacity of the DVL2 mutants. Moreover, fusion of CFR to the isolated DVL2 DIX or AXIN1 DAX domain sufficed to trigger condensation, which was prevented by M2/M3 mutation of the DIX/DAX domain (Figure 3—figure supplement 2D,G and H). Thus, loss- and gain-of-function experiments identified CFR as the crucial region for condensation and Wnt pathway activation within the DVL2 C-Terminus, which functionally cooperates with the DIX domain.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig2-v1.jpg)
 
-**Figure 2.:** (A) To scale schemes of DVL2 constructs with the DIX, the PDZ, and the DEP domain. A nuclear export signal is highlighted in gray (Itoh et al., 2005). Indicated complexation and condensation summarizes the findings in (B–E). (B) Western blotting for indicated transiently expressed proteins bevor (L) and after fractionation (4-20) of HEK293T cell lysates via sucrose density ultracentrifugation. (C) Percentage of the protein that was engaged in large complexes as specified in (B) (n=3, refer to the legend in Figure 1D for more details). (D) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS and HeLa cells. Scale bars: 20 µm. Insets are magnifications of the boxed areas. Interestingly, DEP domain deleted constructs frequently showed nuclear condensates in contrast to the cytosolic condensates of full length DVL2, which is most likely explained by the deletion of a nearby nuclear export signal (see A) and which still allowed determining differences in condensation capacity. (E) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (D) (n=4). (F) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (n=6). (C, E, F) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test).Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.Figure 2—source data 3.Figure 2.
+**Figure 2.:** (A) To scale schemes of DVL2 constructs with the DIX, the PDZ, and the DEP domain. A nuclear export signal is highlighted in gray (Itoh et al., 2005). Indicated complexation and condensation summarizes the findings in (B–E). (B) Western blotting for indicated transiently expressed proteins bevor (L) and after fractionation (4-20) of HEK293T cell lysates via sucrose density ultracentrifugation. (C) Percentage of the protein that was engaged in large complexes as specified in (B) (n=3, refer to the legend in Figure 1D for more details). (D) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS and HeLa cells. Scale bars: 20 µm. Insets are magnifications of the boxed areas. Interestingly, DEP domain deleted constructs frequently showed nuclear condensates in contrast to the cytosolic condensates of full length DVL2, which is most likely explained by the deletion of a nearby nuclear export signal (see A) and which still allowed determining differences in condensation capacity. (E) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (D) (n=4). (F) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (n=6). (C, E, F) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig3-v1.jpg)
+
+**Figure 3.:** (A) To scale schemes of DVL2 constructs. Indicated condensation (Cond.) summarizes the findings in Figure 3—figure supplement 1B, and the identified crucial regions are highlighted in green (low-complexity region, LCR4) and magenta (conserved domain, CD2). (B) Immunofluorescence of indicated HA-tagged proteins in transiently transfected HeLa cells. Scale bars: 20 µm. Insets are magnifications of the boxed areas. (C) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (B) (n=4). (D) Automated quantification of condensate number per nucleus by the Icy Spot Detector (Olivo-Marin, 2002) in 40 cells from four independent experiments as in (B) (n=40). (E) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (n=4). (C–E), Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS cells. Scale bar: 20 µm. Insets are magnifications of the boxed areas. (B) Percentage of cells with condensates out of 900 transfected cells from three independent experiments as in (A) (n=3). (C) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (ΔDEP n=9; ΔCD1, ΔCD2, ΔCFR n=5; ΔLCR1-4 n=4). (B, C) We categorized constructs with condensation above and below the dotted red line as condensate forming region (CFR) intact and CFR impaired, respectively, and this correlated consistently with Wnt pathway activation. (D) Example for automatic detection (red circles) of condensates formed by DVL2 ΔDEP in the nucleus (white signal) using the Icy Spot Detector (Olivo-Marin, 2002), as performed in Figure 3D. Note the very low number of false negatives (white condensate without red circle) and false positives (red circle without white condensate). Scale bar: 20 µm. (E, G) Area of the nuclei analyzed in Figure 3D (E) and in (F ,G) showing similar sizes of the investigated nuclei (n=40). (F) Automated quantification of condensate number per nucleus by the Icy Spot Detector in 40 cells from four independent experiments similarly performed as in Figure 3B but in U2OS cells (n=40). (B, C, E–G) Results are mean ± SEM, **p<0.01, ***p<0.001 (Student’s t-test).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, G) Immunofluorescence of indicated HA- (A and G upper row) or Flag-tagged proteins (G lower row) in transiently transfected U2OS cells. Scale bars: 20 µm. Insets are magnifications of the boxed areas. (B, E, F, H) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in A, B, F, in Figure 3B (E) and in G ,H (n=4). For (E) (HeLa cells) and (F) (U2OS cells) only cells with cytosolic condensates were quantified. (C) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (n=4). (B, C, E, F, H) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test). (D) To scale schemes of used constructs with dishevelled 2 (DVL2) and AXIN1 parts depicted in black and gray, respectively. Indicated condensation (Cond.) refers to the findings in (B) and (H) and the identified crucial regions are highlighted in green (LCR4) and magenta (CD2).
 
 Next, we investigated whether CFR contributes to the formation of DVL2 complexes detected by density gradient ultracentrifugation. Indeed, CFR deletion from ΔDEP (ΔDEP-ΔCFR) and fusion with 1–418 (1–418+CFR) decreased and increased complexes, respectively (Figure 4A–D). Moreover, replacing the respective sequence in DVL1 with the CFR of DVL2 (DVL1-CFRDVL2) promoted complex formation (Figure 4E and F). Surprisingly, only LCR4 but not CD2 was required for complex formation when deleted from ΔDEP or mediated complex formation when fused to 1–418 (Figure 4A–D), although both parts were required for condensate formation (Figure 3—figure supplement 1B). Of note, LCR4 is not well conserved in DVL1 and DVL3, which do not form complexes (Figure 1C; Figure 1—figure supplement 1D). Together, our data revealed a bipartite, 58 amino acid region at the very C-Terminus of DVL2 consisting of a low complexity region (LCR4) that promotes complexes and condensates and a conserved domain (CD2) that only promotes condensates and is dispensable for complexes.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig4-v1.jpg)
 
-**Figure 4.:** (A, C, E) Western blotting for indicated transiently expressed proteins bevor (L) and after fractionation (4-20) of HEK293T cell lysates via sucrose density ultracentrifugation. (B, D, F) Percentage of the protein that was engaged in large complexes as specified in A, C or E (n=3, refer to the legend to Figure 1D for more details). Results are mean ± SEM, *p<0.05, **p<0.01 (Student’s t-test).Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4.Figure 4—source data 3.Figure 4.
+**Figure 4.:** (A, C, E) Western blotting for indicated transiently expressed proteins bevor (L) and after fractionation (4-20) of HEK293T cell lysates via sucrose density ultracentrifugation. (B, D, F) Percentage of the protein that was engaged in large complexes as specified in A, C or E (n=3, refer to the legend to Figure 1D for more details). Results are mean ± SEM, *p<0.05, **p<0.01 (Student’s t-test).
 
-## LCR4 and CD2 cooperatively mediate DVL2 self-interaction
+### LCR4 and CD2 cooperatively mediate DVL2 self-interaction
 
 Given the role of the CFR parts LCR4 and CD2 in complex and condensate formation of DVL2, we speculated that they might directly mediate DVL2-DVL2 interaction. To analyze the role of a putative aggregation site (aggregon) that was predicted by the TANGO algorithm within LCR4 (Figure 1—figure supplement 1D), we designed mutations of two key valine residues (VV-AA) predicted to prevent aggregation (Figure 5A; Figure 5—figure supplement 1A). LCR4 VV-AA mutation of DVL2 ΔDEP decreased condensate formation as efficiently as LCR4 deletion (Figure 5B and C), and fusion of VV-AA-mutated LCR4 failed to increase condensate formation of 1–418, in contrast to WT LCR4 (Figure 5—figure supplement 1B and C). In CD2, the TANGO algorithm did not predict aggregation sites. However, we detected interspersed phenylalanine residues in CD2 (Figure 5A), which might promote interaction through stacking of their aromatic rings, acting as ‘stickers’ of unstructured regions, as recently described (Martin et al., 2020). CD2 FF-AA mutation decreased condensate formation and Wnt pathway activation as efficiently as CD2 deletion (Figure 5B and C; Figure 5—figure supplement 1D), and CD2 FF-AA fusion failed to increase condensate formation or Wnt pathway activation, in contrast to WT CD2 (Figure 5—figure supplement 1E–G). Our data suggest that CFR is a bipartite protein interaction site for self-association of DVL2. In line with this, the isolated CFR, which exhibited a homogeneous cellular distribution when expressed alone, accumulated within DVL2 condensates upon co-expression of both proteins (Figure 5D and E), suggesting CFR-DVL2 interaction. CFR VV-AA FF-AA mutation markedly reduced this CFR-DVL2 co-localization (Figure 5D and E). Moreover, DVL2 CFR did not co-localize with DVL1 or DVL3 condensates (Figure 5—figure supplement 1H), consistent with the low conservation of the LCR4 aggregon in these paralogs (Figure 1—figure supplement 1D). Notably, co-expression of the isolated CFR inhibited Wnt pathway activation by DVL2 in a dosage-dependent manner, which was attenuated by CFR FF-AA mutation (Figure 5F). In this experiment, free CFR might weaken DVL2-DVL2 interaction by saturating the interaction surface of the CFR within DVL2. Together, our data provide evidence that CFR mediates intermolecular DVL2 self-interaction via an aggregation site in LCR4 and phenylalanine stickers in CD2. Since individual deletion of LCR4 or CD2 was sufficient to impair condensates (Figure 3—figure supplement 1B), both interaction sites most likely cooperate to drive the condensate formation of DVL2.
 
-## DVL2 CFR promotes phase separation
+![Figure 5.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig5-v1.jpg)
+
+**Figure 5.:** (A) Condensate forming region (CFR) amino acid sequence with highlighted LCR4 (green) and CD2 (magenta). Arrowheads point to residues potentially mediating protein-protein interaction. (B) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS cells. Scale bar: 20 µm. Insets are magnifications of the boxed areas. (C) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (B) (n=4). (D) Immunofluorescence of indicated proteins in U2OS cells, which were transfected with Flag-CFR or the Flag-CFR VV-AA FF-AA mutant either alone or in combination with DVL2. Scale bar: 20 µm. (E) Percentage of cells exhibiting co-localization of CFR or CFR VV-AA FF-AA with DVL2 out of 1200 transfected cells from four independent experiments as in (D) (n=4). (F) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells transfected with DVL2 alone or together with rising amounts of either CFR or the CFR FF-AA mutant (black bars [CFR] n=5, magenta bars [CFR FF-AA] n=3). (C, E, F) Results are mean ± SEM, **p<0.01, ***p<0.001 (Student’s t-test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Aggregation propensity (y-axis) of amino acid residues (x-axis) of wild-type (WT) (black curve) or valine residues (VV-AA) mutated (red curve) dishevelled 2 (DVL2) LCR4 according to the TANGO algorithm, which predicts aggregation nucleating regions (Fernandez-Escamilla et al., 2004). (B, E) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS cells. Scale bars: 20 µm. Insets are magnifications of the boxed areas. (C, F) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (B, C) and in (E, F) (n=4). (D, G, J) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells (D, G) and in T-REx cells with DVL1/2/3, RNF43, and ZNRF3 knockout (J upper panel, DVL tKO+) expressing the indicated constructs (n=4). (C, D, F, G, J) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test). (H) Immunofluorescence of indicated proteins in U2OS cells, which were transfected with Flag-CFR together with either HA-DVL1 or HA-DVL3. Scale bar: 20 µm. (I, J, K) Western blotting showing the expression levels of endogenous DVL2 (-), transiently expressed HA-tagged DVL2 WT (DVL2) and indicated DVL2 mutants to Figure 7E (I) to the upper panel of (J) (J lower panel) and to Figure 7G (K) with α-tubulin serving as loading control. One out of three representative experiments is shown. Dotted vertical lines in (J) indicate the splicing of the blots.
+
+### DVL2 CFR promotes phase separation
 
 While 1–418 and DVL2 DIX exhibited a homogenous cellular distribution, fusion of CFR-induced spherical, microscopically visible condensates of 1–418+CFR and DIX+CFR (Figure 3B; Figure 3—figure supplement 2G). To study the nature of CFR-mediated condensates, we treated cells expressing DVL2, 1–418+CFR, or DIX+CFR with a hypoosmolar buffer (osmotic shock) or with the bivalent alcohol 1,6-hexanediol, as previously done in biomolecular condensate research to challenge phase separation (Nott et al., 2015; Ribbeck and Görlich, 2002). Both treatments significantly decreased condensates of all three studied proteins within 3 min for osmotic shock and 1 hr for 1,6-hexanediol (Figure 6A–C; Videos 1 and 2). These findings are consistent with the transition from a two-phase state of condensates with high protein concentration and surrounding spaces with low protein concentration to a one-phase state of homogenous protein distribution (Figure 6A). We concluded that CFR indeed induced phase separation to promote 1–418+CFR and DIX+CFR condensates, in line with the fact that WT DVL2 was shown to undergo phase separation (Kang et al., 2022). Moreover, the fusion of an AXIN1-derived, sequence wise-nonrelated condensate-forming region (CFRAX, see Figure 6—figure supplement 1 for details) to DVL2 ΔDEP-ΔCFR (ΔDEP-ΔCFR+CFRAX) restored condensate formation to the level of ΔDEP (Figure 6D–F), indicating that CFRAX compensates for loss of CFRDVL2. More importantly, CFRAX fusion (ΔDEP-ΔCFR+CFRAX) also rescued the decreased Wnt pathway activation of ΔDEP-ΔCFR compared to ΔDEP (Figure 6G), suggesting that it is indeed the CFR phase-separating activity that is crucial for signaling.
 
-## DVL2 CFR contributes to Wnt pathway activation
+![Figure 6.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig6-v1.jpg)
+
+**Figure 6.:** (A, E) Immunofluorescence of indicated HA-tagged proteins in transiently transfected U2OS cells, which were untreated, exposed to osmotic shock for 3 min, or treated with 1 µM 1,6-hexanediol for 1 hr. Scale bars: 20 µm. Insets are magnifications of the boxed areas. (B, F) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (A) or (E) (n=4). (C) Fluorescence of indicated GFP-tagged proteins in transiently transfected, alive U2OS cells at different time points of osmotic shock treatment. Scale bar: 20 µm. Insets are magnifications of the boxed areas. (D) To scale schemes of dishevelled 2 (DVL2) constructs. Low-complexity region (LCR4), CD2, and CFRAX are highlighted in green, magenta, and blue, respectively. (G) Relative luciferase activity reporting β-catenin-dependent transcription in HEK293T cells expressing the indicated constructs (n=4). (B, F, G) Results are mean ± SEM, **p<0.01, ***p<0.001 (Student’s t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Phase separating (condensate forming region, CFR) propensity score (y-axis) of amino acid residues of AXIN1 (x-axis) according to the catGRANULE algorithm, which predicts liquid-liquid phase separation propensity (Bolognesi et al., 2016). Red arrow points to a potential phase separating region in AXIN1 (CFRAX). (B) Left column: To scale schemes of artificial fusion proteins between the polymerizing AXIN1 DAX domain (gray) with CFRAX (different shades of blue). CFRAX was fused up to three times to the DAX domain (3xCFRAX-DAX). M3 indicates an inhibiting point mutation of DAX-mediated polymerization, which is illustrated by the red X (Fiedler et al., 2011). Middle column: Phase separating (CFR) propensity of the artificial AXIN1 proteins illustrated on the left according to the catGRANULE algorithm. The cumulative CFR scores of the proteins are shown in the upper right corner. Right column: Immunofluorescence of the Flag-tagged proteins indicated on the left in transiently transfected U2OS cells. Scale bar: 20 µm. (C) Percentage of cells with one to three (gray) or more than three condensates (black) out of 900 transfected cells from three independent experiments as in (B) (n=3). Results are mean ± SEM, **p<0.01, ***p<0.001 (Student’s t-test). The increase of condensates upon iterative fusion of CFRAX to the AXIN1 DAX domain validated its activity. Reduced condensation of 3xCFRAX-DAX M3 compared to 3xCFRAX-DAX demonstrated dependency of condensates on DAX-mediated polymerization, which we used as a specificity control for our artificial constructs, as it is the same for wild-type (WT) AXIN1 (Fiedler et al., 2011).
+
+![Video 1.](https://cdn.elifesciences.org/articles/96841/elife-96841-video1.mp4.jpg)
+
+**Video 1.:** Fluorescence of GFP-DVL2 in transiently transfected, alive U2OS cells, which were imaged every 15 s over 3 min of osmotic shock treatment.
+
+![Video 2.](https://cdn.elifesciences.org/articles/96841/elife-96841-video2.mp4.jpg)
+
+**Video 2.:** Fluorescence of GFP-1–418+CFR in transiently transfected, alive U2OS cells, which were imaged every 15 s over 3 min of osmotic shock treatment.
+
+### DVL2 CFR contributes to Wnt pathway activation
 
 In order to determine the impact of CFR within full-size DVL2, we mutated the four crucial residues identified in CFR in DLV2 (DVL2 VV-AA FF-AA). This shifted the DVL2 complexes in ultracentrifugation assays from large to smaller sizes, similar to deletion of CFR (Figure 7A and B), and reduced the formation of condensates by about 50% (Figure 7C and D). Importantly, DVL2 VV-AA FF-AA exhibited more than 50% reduced Wnt pathway activation compared to WT (Figure 7E), with a similar expression of both constructs (Figure 5—figure supplement 1I). The DVL2 variants were transiently expressed on top of endogenous DVL1/2/3 in this experiment. In addition, we used DVL1/2/3 knockout cells, as they represent an elegant system to study Wnt pathway activation upon re-expression of DVL2 variants without any interference of endogenous WT DVL (Paclíková et al., 2017). In these cells, overexpression of DVL2 VV-AA FF-AA almost completely failed to activate the pathway and was as inactive as the DIX domain M2 mutant (Schwarz-Romond et al., 2007a), which can be considered as the gold standard for DVL2 inhibiting point mutations (Figure 7F). In addition, we used DVL1/2/3 knockout cells with additional knockout of RNF43 and ZNRF3 (DVL tKO+), which allowed higher pathway activation upon DVL2 overexpression (Figure 5—figure supplement 1J), as the DVL2-activating receptors were no longer degraded through RNF43 and ZNRF3 (Hao et al., 2012; Paclíková et al., 2021). Also in these cells, DVL2 VV-AA FF-AA exhibited markedly impaired pathway activation as compared to WT (Figure 5—figure supplement 1J). Finally, we re-expressed DVL2 variants at close to endogenous levels in DVL1/2/3 knockout cells to rescue Wnt-induced pathway activation, which was disrupted through DVL knockout (Figure 7G; Figure 5—figure supplement 1K). While re-expression of WT DVL2 resulted in a complete rescue as compared to WT cells, DVL2 VV-AA FF-AA was significantly impaired and as inactive as DVL2 M2 in this assay (Figure 7G). The VV-AA FF-AA mutation inhibited complexation, condensation, and Wnt pathway activation as efficiently as CFR deletion (Figure 7A–F), strongly indicating that it is specifically the interaction activity of CFR through the aggregon and the phenylalanine stickers that is required for signaling. A comparison between the VV-AA FF-AA mutation and the established M2 mutation showed on average about 65% and 80% reduction of Wnt pathway activation as compared to WT, respectively (Figure 7E–G; Figure 5—figure supplement 1K), suggesting that DVL2 CFR markedly contributes to Wnt pathway activation. Consistently, we observed strong significant correlations of CFR-mediated condensation and complexation with Wnt pathway activation for the DVL2 deletion constructs used in our study (Figure 7H).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96841/elife-96841-fig7-v1.jpg)
 
-**Figure 7.:** (A) Western blotting for indicated proteins, which were transiently expressed in HEK293T cells, after fractionation of cell lysates via sucrose density ultracentrifugation (see Figure 1E). (B) Percentage of the protein that was engaged in large complexes or in medium/small complexes, as specified in (A) (n=3, refer to the legend in Figure 1D for more details). (C) Immunofluorescence of indicated HA-tagged DVL2 proteins in transiently transfected U2OS cells. Scale bar: 20 µm. Insets are magnifications of the boxed areas. (D) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (C) (n=4). (E–G) Relative luciferase activity reporting β-catenin-dependent transcription in U2OS cells (E) in T-REx cells with DVL1/2/3 knockout (F DVL tKO) and in T-REx WT and DVL tKO cells (G), which were transiently transfected and treated with Wnt3a conditioned medium, as indicated (n=4). (B, D–G) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test). (H) Plotting of Wnt pathway activation (y-axis) against either condensation (x-axis; left side) or complexation (x-axis; right side) for indicated DVL2 wild-type (WT) and mutant proteins. Correlation strength and significance are indicated by the Pearson‘s correlation coefficient R and the p-value, respectively. Note that condensation correlates with whether CFR is intact (low-complexity region, LCR4 and conserved domain, CD2 intact, green), partially intact (either LCR4 or CD2 intact, gray), or lost (neither LCR4 nor CD2 intact, red), and that the presence of LCR4 determines complexation. The plots summarize data that were shown before within this study.Figure 7—source data 1.Figure 7.Figure 7—source data 2.Figure 7.Figure 7—source data 3.Figure 7.
+**Figure 7.:** (A) Western blotting for indicated proteins, which were transiently expressed in HEK293T cells, after fractionation of cell lysates via sucrose density ultracentrifugation (see Figure 1E). (B) Percentage of the protein that was engaged in large complexes or in medium/small complexes, as specified in (A) (n=3, refer to the legend in Figure 1D for more details). (C) Immunofluorescence of indicated HA-tagged DVL2 proteins in transiently transfected U2OS cells. Scale bar: 20 µm. Insets are magnifications of the boxed areas. (D) Percentage of cells with condensates out of 1200 transfected cells from four independent experiments as in (C) (n=4). (E–G) Relative luciferase activity reporting β-catenin-dependent transcription in U2OS cells (E) in T-REx cells with DVL1/2/3 knockout (F DVL tKO) and in T-REx WT and DVL tKO cells (G), which were transiently transfected and treated with Wnt3a conditioned medium, as indicated (n=4). (B, D–G) Results are mean ± SEM, *p<0.05, **p<0.01, ***p<0.001 (Student’s t-test). (H) Plotting of Wnt pathway activation (y-axis) against either condensation (x-axis; left side) or complexation (x-axis; right side) for indicated DVL2 wild-type (WT) and mutant proteins. Correlation strength and significance are indicated by the Pearson‘s correlation coefficient R and the p-value, respectively. Note that condensation correlates with whether CFR is intact (low-complexity region, LCR4 and conserved domain, CD2 intact, green), partially intact (either LCR4 or CD2 intact, gray), or lost (neither LCR4 nor CD2 intact, red), and that the presence of LCR4 determines complexation. The plots summarize data that were shown before within this study.
 
 ## Discussion
 
@@ -83,38 +127,202 @@ Several studies suggest functional differences between the DVL paralogs (Gentzel
 
 ## Materials and methods
 
-## Cell culture, transfections, and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>DVL2</td>
+      <td>GenBank</td>
+      <td>1856</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>T-REx</td>
+      <td>Paclíková et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>DVL tKO</td>
+      <td>Paclíková et al., 2017</td>
+      <td></td>
+      <td>T-REx cells with DVL1/2/3 triple knockout</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>DVL tKO+</td>
+      <td>Paclíková et al., 2021</td>
+      <td></td>
+      <td>T-REx cells with DVL1/2/3, RNF43 and ZNRF3 penta knockout</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DVL2 (Rabbit polyclonal)</td>
+      <td>CellSignaling</td>
+      <td>Cat# 3216 S;</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DVL2 (Rabbit polyclonal)</td>
+      <td>CellSignaling</td>
+      <td>Cat# 3224 S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-AXIN1 (Rabbit polyclonal)</td>
+      <td>CellSignaling</td>
+      <td>Cat#: 2087 S</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to DVL2</td>
+      <td>Dharmacon/Thermo Fisher Scientific; Soh and Trejo, 2011</td>
+      <td></td>
+      <td>GGAAGAAAUUUCAGAUGAC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-DVL2(plasmid)</td>
+      <td>Bernkopf et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Expression plasmids for deleted and point mutated HA-tagged DVL2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>More than 25 plasmids have been newly generated (please see Molecular Biology for details)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Fluka Analytical</td>
+      <td>84097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thyroglobulin (669 kDa)</td>
+      <td>Sigma Aldrich</td>
+      <td>T9145</td>
+      <td>Size marker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Albumin (66 kDa)</td>
+      <td>Sigma Aldrich</td>
+      <td>A8531</td>
+      <td>Size marker</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,6-Hexanediol</td>
+      <td>Sigma Aldrich</td>
+      <td>240117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TANGO algorithm</td>
+      <td>http://tango.crg.es/; Fernandez-Escamilla et al., 2004</td>
+      <td></td>
+      <td>Prediction of aggregation sites</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spot Detector tool, Icy bio-imaging software</td>
+      <td>Institut Pasteur, version 2.2.1.0; Olivo-Marin, 2002</td>
+      <td></td>
+      <td>Quantify the numbers of condensates per cell</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>catGRANULE algorithm</td>
+      <td>http://s.tartaglialab.com/update_submission/907235/f570b07a95; Bolognesi et al., 2016</td>
+      <td></td>
+      <td>Prediction of liquid-liquid phase separation propensity</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wnt3a medium</td>
+      <td>Willert et al., 2003</td>
+      <td></td>
+      <td>Wnt3a medium was prepared following the published protocol</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, transfections, and treatments
 
 HEK293T, HeLa, and U2OS cells were grown in low glucose DMEM supplemented with 10% fetal calf serum and antibiotics at 37 °C in a 10% CO2 atmosphere, and passaged according to ATCC recommendations, where the cell lines were originally obtained from. Cell lines were authenticated based on cell morphology and size, and cells were tested negative for mycoplasma contamination. T-REx DVL1/2/3 triple knockout cells (DVL tKO) and T-REx DVL1/2/3, RNF43, and ZNRF3 penta knockout cells (DVL tKO+) were generated in the Bryja lab and have been previously described (Paclíková et al., 2017; Paclíková et al., 2021). They were grown in high glucose DMEM supplemented with GlutaMAX, 10% fetal calf serum, and antibiotics at 37 °C in a 10% CO2 atmosphere. Transfections of plasmids and siRNA were performed with polyethylenimine and Oligofectamine (Invitrogen) according to the manufacturer’s recommendations, respectively. Wnt3a medium was prepared as originally described (Willert et al., 2003). For the osmotic shock treatment, cell culture medium was diluted 1:1 with sterile water to reduce the osmolarity by 50%. 1,6-Hexanediol (240117) was obtained from Sigma-Aldrich.
 
-## Molecular biology
+### Molecular biology
 
 The expression vectors for HA-DVL1, HA-DVL2, HA-DVL3, and HA-DVL2 M2 have been described previously (Bernkopf et al., 2015). The expression vectors for HA-ΔDEP, HA-ΔDEP-ΔCD1, HA-ΔDEP-ΔCD2, HA-ΔDEP-ΔLCR1, HA-ΔDEP-ΔLCR2, HA-ΔDEP-ΔLCR3, HA-ΔDEP-ΔLCR4, HA-ΔDEP-ΔCFR, HA-ΔDEP-ΔCFR+CFRAX, HA-1–418, HA-1–418+CD2, HA-1–418+LCR4, HA-1–418+CFR, HA-DVL1-CFRDVL2, HA-DIX, HA-DIX+CFR, HA-ΔCFR, Flag-DAX, Flag-CFR+DAX, Flag-1xCFRAX-DAX, Flag-2xCFRAX-DAX, Flag-3xCFRAX-DAX, Flag-CFR were cloned via standard molecular biology methods. HA-1–418+CFR M2, HA-DIX+CFR M2, Flag-CFR+DAX M3, Flag-3xCFRAX-DAX M3, HA-ΔDEP VV-AA, HA-ΔDEP FF-AA, HA-1–418+LCR4 VV-AA, HA-1–418+CD2 FF-AA, Flag-CFR FF-AA, Flag-CFR VV-AA FF-AA, HA-DVL2 VV-AA FF-AA were generated using site-directed mutagenesis. All generated expression vectors were verified by sequencing. The newly created expression vectors are available from the corresponding author on request.
 
-## Antibodies and siRNA
+### Antibodies and siRNA
 
 We used the following antibodies in this study: Primary antibodies: rb α DVL2 [WB: 1:1000], 3216 S; rb α DVL2 [WB: 1:1000], 3224 S; rb α Axin1 [WB: 1:1000], 2087 S CellSignaling / rat α HA [WB: 1:1000], 11867423001 Roche / rat αα-tubulin [WB: 1:1000], MCA77G Serotec / m α Flag [IF: 1:800], F3165; rb α Flag [IF: 1:300], F7425; rb α HA [IF: 1:200], H6908 Sigma-Aldrich. Secondary antibodies: goat α mouse/rabbit-Cy3 [1:300], goat α rabbit-Cy2 [1:200], goat α mouse/rabbit/rat-HRP [1:2000] (Jackson ImmunoResearch). The siRNA targeting human DVL2 (5’-GGAAGAAAUUUCAGAUGAC-3’) was published (Soh and Trejo, 2011).
 
-## Sucrose gradient ultracentrifugation
+### Sucrose gradient ultracentrifugation
 
 Cells were lysed about 24 hr after transfection, when required, or 48 h after seeding in a Triton X-100-based buffer (150 mM NaCl, 20 mM Tris-HCl pH 7.5, 5 mM EDTA, 1% Triton X-100, Roche protease inhibitor cocktail). A linear sucrose density gradient was prepared in 13×51 mm centrifuge tubes (Beckman Coulter) by overlaying 2 ml of a 50% (v/w) sucrose solution with 2 ml of a 12.5% (v/w) sucrose solution followed by horizontal incubation of the tube for 3 h at RT (Stone, 1974), bevor loading a 200 µl cell lysate sample on top. After centrifugation in a Beckman Coulter Optima MAX Ultracentrifuge (217100 g, 25 °C, 18 hr), 20 fractions à 200 µl were collected from top to bottom and analyzed by Western blotting, as indicated. The commercially available size markers thyroglobulin (669 kDa, T9145) and albumin (66 kDa, A8531) were obtained from Sigma Aldrich. In the case of thyroglobulin and albumin, fractions were analyzed by silver staining of the proteins in polyacrylamide gels.
 
-## Western blot
+### Western blot
 
 Proteins in cell lysates or in fractions of sucrose gradients were denatured, separated by gel electrophoresis in polyacrylamide gels under denaturing conditions (SDS-PAGE), and transferred onto a nitrocellulose membrane (VWR). The proteins were detected using suitable combinations of primary and HRP-conjugated secondary antibodies (see above) via light emission upon HRP-catalyzed oxidation of luminol in a LAS-3000 with Image Reader software (FUJIFILM). Intensities of protein bands were quantified with AIDA 2D densitometry.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were fixed in a 3% paraformaldehyde solution, permeabilized with 0.5% Triton X-100, and blocked with cell culture medium to reduce unspecific antibody binding, before proteins of interest were stained with suitable combinations of primary and fluorochrome-conjugated secondary antibodies (see above). Analysis and image acquisition was performed at an Axioplan II microscope system (Carl Zeiss) using a Plan-NEOFLUAR 100 x/1.30 NA oil objective and a SPOT RT Monochrome camera (Diagnostic Instruments). Cells were categorized in a blinded fashion as ‘cell with condensates’ when exhibiting more than three distinct sphere-like structures, to reduce the number of false positives. The Spot Detector tool of the Icy open source bio-imaging software (Institut Pasteur, version 2.2.1.0) was used to objectively quantify the numbers of condensates per cell (Olivo-Marin, 2002).
 
-## Live-cell imaging
+### Live-cell imaging
 
 For live-cell imaging of the osmotic shock treatment, the culture medium of cells expressing indicated GFP-tagged proteins was replaced with a 50% hypoosmolar phosphate buffered saline solution. Images were acquired at constant exposure times every 15 s over the next 3 min at an Axiovert25 microscope system (Carl Zeiss) using a LD A-Plan 40 x/0.50 Ph2 objective and a SPOT Insight QE camera with the SPOT Basic software (Diagnostic Instruments, version 4.0.1). Videos were rendered using Photoshop 19.1.5 (Adobe).
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 Cells were transfected with a luciferase reporter plasmid either with a β-catenin-dependent promoter (TOP, Tcf optimal) or with a β-catenin-independent control promoter (FOP, far from optimal), a constantly active β-galactosidase expression plasmid and expression plasmids for the proteins of interest, as indicated in the figures. After lysis (25 mM Tris-HCl pH 8, 2 mM EDTA, 5% glycerol, 1% Triton X-100, 20 mM DTT), the luciferase activity was measured via light emission upon luciferin decarboxylation in a Centro LB 960 Microplate Luminometer (Berthold technologies) and the β-galactosidase activity was assessed as a release of yellow ortho-nitrophenol upon ortho-nitrophenyl-β-galactoside hydrolysis using a Spectra MAX 190 (Molecular Devices). The luciferase activities were first normalized to the respective β-galactosidase activities to correct for minor variations in transfection efficiency, before the TOP values were normalized to the respective FOP values to correct for unspecific β-catenin-independent changes. TOP/FOP reporter assays were performed in technical duplicates.
 
-## Statistical analysis
+### Statistical analysis
 
 Data sets were probed for statistical significance using two-tailed Student’s t-tests in a non-paired (Figure 3D; Figure 3—figure supplement 1E–G) or paired (all others) fashion, depending on the experimental setup. Statistical significance is indicated by asterisks in the figures (*p<0.05, **p<0.01, ***p<0.001), when required, and n values of biological replicates are stated in the figure legends for all experiments. We assumed a normal distribution of the data based on the nature of the assays and graphical assessment, which, however, was not formally tested owing to the small sample sizes. p-values for the correlation analyses in Figure 7H were calculated by the test statistic t=R*square root((n-2)/(1 R2)), with n-2 degrees of freedom.

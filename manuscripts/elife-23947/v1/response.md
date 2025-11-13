@@ -38,9 +38,7 @@ In the concluding paragraph, we have also added:
 
 2) The results seem to contradict earlier findings regarding gamma activity. While this is addressed to some extent in the Discussion and a supplementary file, it would be interesting to validate the claimed reasons for the differences. Thus, it would be useful to consider various options by analysis and further evaluations. For example: 1) perform an analysis on the current dataset using the methods and time windows presented in the earlier articles to compare the results.
 
-Comparing to Figure 4B in Ray (2012), our data is shown in Author response image 1 (smoothed with a 333ms sliding window, blue line = successful stops, dashed red line = failed stops).10.7554/eLife.23947.023Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.23947.023
-
-DOI: http://dx.doi.org/10.7554/eLife.23947.023
+Comparing to Figure 4B in Ray (2012), our data is shown in Author response image 1 (smoothed with a 333ms sliding window, blue line = successful stops, dashed red line = failed stops).10.7554/eLife.23947.023Author response image 1.
 
 The power time course relative to the stop signal at 0ms looks very similar to the one in Ray, 2012. We did not perform visual inspection of the power spectra but kept the frequency band to 60-90 Hz to show how only the smoothing over 333ms already affects the appearance of the gamma increase. The purple shaded areas indicate the pre-stop signal window (-200:0ms) and the post-stop signal window (200-400ms).
 
@@ -86,9 +84,7 @@ We extended the following sentence:
 
 B) The contacts were chosen based on the gamma band. This choice may induce a bias by selecting the contact that is responding to the finger tapping by an increase of the gamma band. What would have happened if instead, contacts were chosen based on the global changes in LFP activity during finger tapping?
 
-The plot in Author response image 2 corresponds to Figure 4A but now includes the bipolar contact combinations that showed the highest modulation in the 8-90 Hz range (instead of 60-90 Hz). The new selection procedure resulted in a different bipolar combination for 3 of 9 patients, yet the stronger gamma increase during successful stops is still significant.10.7554/eLife.23947.024Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.23947.024
-
-DOI: http://dx.doi.org/10.7554/eLife.23947.024
+The plot in Author response image 2 corresponds to Figure 4A but now includes the bipolar contact combinations that showed the highest modulation in the 8-90 Hz range (instead of 60-90 Hz). The new selection procedure resulted in a different bipolar combination for 3 of 9 patients, yet the stronger gamma increase during successful stops is still significant.10.7554/eLife.23947.024Author response image 2.
 
 C) How accurate is the contact location ("likely located closer to the dorsal border…").
 

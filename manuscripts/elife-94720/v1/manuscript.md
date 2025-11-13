@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02fa3aq29 Department of Chemistry and Chemical Biology, McMaster University Hamilton Canada
-2. https://ror.org/02fa3aq29 Department of Chemistry and Chemical Biology, and the Department of Biochemistry and Biomedical Sciences, McMaster University Hamilton Canada
+1. Department of Chemistry and Chemical Biology, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
+2. Department of Chemistry and Chemical Biology, and the Department of Biochemistry and Biomedical Sciences, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
 
 † Corresponding author
 

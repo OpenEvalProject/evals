@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.15719.001 The functional communication of neurons in cortical networks underlies higher cognitive processes. Yet, little is known about the organization of the single neuron network or its relationship to the synchronization processes that are essential for its formation. Here, we show that the functional single neuron network of three fronto-parietal areas during active behavior of macaque monkeys is highly complex. The network was closely connected (small-world) and consisted of functional modules spanning these areas. Surprisingly, the importance of different neurons to the network was highly heterogeneous with a small number of neurons contributing strongly to the network function (hubs), which were in turn strongly inter-connected (rich-club). Examination of the network synchronization revealed that the identified rich-club consisted of neurons that were synchronized in the beta or low frequency range, whereas other neurons were mostly non-oscillatory synchronized. Therefore, oscillatory synchrony may be a central communication mechanism for highly organized functional spiking networks. DOI: http://dx.doi.org/10.7554/eLife.15719.001
+The functional communication of neurons in cortical networks underlies higher cognitive processes. Yet, little is known about the organization of the single neuron network or its relationship to the synchronization processes that are essential for its formation. Here, we show that the functional single neuron network of three fronto-parietal areas during active behavior of macaque monkeys is highly complex. The network was closely connected (small-world) and consisted of functional modules spanning these areas. Surprisingly, the importance of different neurons to the network was highly heterogeneous with a small number of neurons contributing strongly to the network function (hubs), which were in turn strongly inter-connected (rich-club). Examination of the network synchronization revealed that the identified rich-club consisted of neurons that were synchronized in the beta or low frequency range, whereas other neurons were mostly non-oscillatory synchronized. Therefore, oscillatory synchrony may be a central communication mechanism for highly organized functional spiking networks.
 
 ## Introduction
 
@@ -30,41 +30,232 @@ Here, we recorded in parallel and assessed functional connectivity and network t
 
 ## Results
 
-The current study includes 12 recording sessions from three macaque monkeys (M: 3, S: 6 and Z: 3). We recorded from the grasping motor network, including part of the ventral premotor (F5), anterior intraparietal (AIP), and additionally from primary motor (M1) cortex area for monkey M (
+The current study includes 12 recording sessions from three macaque monkeys (M: 3, S: 6 and Z: 3). We recorded from the grasping motor network, including part of the ventral premotor (F5), anterior intraparietal (AIP), and additionally from primary motor (M1) cortex area for monkey M (Schaffelhofer and Scherberger, 2016) (Table 1). To engage the grasping motor network, monkeys performed a visually-cued delayed grasping task in which the monkey grasped a handle with one of two different grasp types (Michaels et al., 2015) (Figure 1A,B; see Materials and methods). An average number of 570 trials (SD: 177) were recorded in each session.
+
+**Table 1.**
+ Trial and single unit counts for all datasets. Marked datasets correspond to the displayed example networks in Figures 3–5 and Figure 3—figure supplements 1 and 2. Columns 3–6 show the total and area specific number of units recorded. Columns 7–10 show total and area specific number of units of the largest component of the network, which is the basis for all topological analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Datasets</th>
+      <th>Trials</th>
+      <th>Single units total</th>
+      <th>F5</th>
+      <th>M1</th>
+      <th>AIP</th>
+      <th>Single units used</th>
+      <th>F5</th>
+      <th>M1</th>
+      <th>AIP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M 1</td>
+      <td>958</td>
+      <td>149</td>
+      <td>48</td>
+      <td>57</td>
+      <td>44</td>
+      <td>148</td>
+      <td>48</td>
+      <td>57</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>M 2 *</td>
+      <td>900</td>
+      <td>147</td>
+      <td>52</td>
+      <td>58</td>
+      <td>37</td>
+      <td>137</td>
+      <td>50</td>
+      <td>52</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>M 3</td>
+      <td>621</td>
+      <td>107</td>
+      <td>49</td>
+      <td>32</td>
+      <td>26</td>
+      <td>79</td>
+      <td>41</td>
+      <td>20</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>S 1</td>
+      <td>503</td>
+      <td>86</td>
+      <td>46</td>
+      <td>-</td>
+      <td>40</td>
+      <td>57</td>
+      <td>28</td>
+      <td>-</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>S 2</td>
+      <td>565</td>
+      <td>76</td>
+      <td>39</td>
+      <td>-</td>
+      <td>37</td>
+      <td>64</td>
+      <td>30</td>
+      <td>-</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>S 3</td>
+      <td>460</td>
+      <td>76</td>
+      <td>35</td>
+      <td>-</td>
+      <td>41</td>
+      <td>64</td>
+      <td>28</td>
+      <td>-</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>S 4</td>
+      <td>460</td>
+      <td>82</td>
+      <td>35</td>
+      <td>-</td>
+      <td>47</td>
+      <td>64</td>
+      <td>26</td>
+      <td>-</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>S 5 *</td>
+      <td>557</td>
+      <td>90</td>
+      <td>42</td>
+      <td>-</td>
+      <td>48</td>
+      <td>78</td>
+      <td>37</td>
+      <td>-</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>S 6</td>
+      <td>374</td>
+      <td>83</td>
+      <td>42</td>
+      <td>-</td>
+      <td>41</td>
+      <td>47</td>
+      <td>25</td>
+      <td>-</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Z 1</td>
+      <td>400</td>
+      <td>52</td>
+      <td>29</td>
+      <td>-</td>
+      <td>23</td>
+      <td>33</td>
+      <td>21</td>
+      <td>-</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Z 2</td>
+      <td>436</td>
+      <td>48</td>
+      <td>24</td>
+      <td>-</td>
+      <td>24</td>
+      <td>30</td>
+      <td>17</td>
+      <td>-</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Z 3 *</td>
+      <td>608</td>
+      <td>59</td>
+      <td>30</td>
+      <td>-</td>
+      <td>29</td>
+      <td>41</td>
+      <td>21</td>
+      <td>-</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>570.2</td>
+      <td>87.9</td>
+      <td>39.3</td>
+      <td>49</td>
+      <td>36.4</td>
+      <td>70.2</td>
+      <td>31</td>
+      <td>43</td>
+      <td>28.4</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>177.4</td>
+      <td>31.2</td>
+      <td>8.5</td>
+      <td>12.0</td>
+      <td>8.5</td>
+      <td>35.8</td>
+      <td>10.3</td>
+      <td>16.4</td>
+      <td>10.5</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig1-v2.jpg)
 
-**Figure 1.:** (A) Choice/no-choice task. Setup: Monkeys were cued to grasp a target (handle) with one of two different grip types displayed on a monitor appearing superimposed on the handle. Task: Monkeys had to fixate a red disk for 600–1000 ms (Fixation), followed by a cue period of 300 ms (Cue). Then, either (‘Power’) a green disk was presented on the left indicating a power grip, (‘Precision’) a grey disk on the right indicating precision grip, or (‘Free-choice’) both disks were presented indicating a free-choice between both grips. After the cue a memory period followed (duration: 1100–1500 ms) before the fixation dot was turned off (go-signal) indicating the monkey to execute the grasp movement (maximum duration:1000 ms). (B) Electrode array implantation of monkey M with 6 floating microelectrode arrays (FMAs) in areas AIP, F5, and M1. Arrays were implanted at the lateral end of the intraparietal sulcus (IPS) in AIP, in the posterior bank of the arcuate sulcus (AS) in area F5, and in the anterior bank of the central sulcus (CS) in the hand area of M1. (C) Average firing rate across trials of two example units from area F5 (left) and AIP (right). Each colored line corresponds to the mean activity of one condition. Line shadings represent standard error. Inlays shows the corresponding waveforms displayed as density plots.DOI: http://dx.doi.org/10.7554/eLife.15719.004
+**Figure 1.:** (A) Choice/no-choice task. Setup: Monkeys were cued to grasp a target (handle) with one of two different grip types displayed on a monitor appearing superimposed on the handle. Task: Monkeys had to fixate a red disk for 600–1000 ms (Fixation), followed by a cue period of 300 ms (Cue). Then, either (‘Power’) a green disk was presented on the left indicating a power grip, (‘Precision’) a grey disk on the right indicating precision grip, or (‘Free-choice’) both disks were presented indicating a free-choice between both grips. After the cue a memory period followed (duration: 1100–1500 ms) before the fixation dot was turned off (go-signal) indicating the monkey to execute the grasp movement (maximum duration:1000 ms). (B) Electrode array implantation of monkey M with 6 floating microelectrode arrays (FMAs) in areas AIP, F5, and M1. Arrays were implanted at the lateral end of the intraparietal sulcus (IPS) in AIP, in the posterior bank of the arcuate sulcus (AS) in area F5, and in the anterior bank of the central sulcus (CS) in the hand area of M1. (C) Average firing rate across trials of two example units from area F5 (left) and AIP (right). Each colored line corresponds to the mean activity of one condition. Line shadings represent standard error. Inlays shows the corresponding waveforms displayed as density plots.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Scatter plots of all pairs of condition- and epoch-wise average firing rates of all recorded single units of all datasets (fixation (Fix), cue power (Cue Po), memory power (Mem Po), movement power (Mov Po), cue precision (Cue Pr), memory precision (Mem Pr) and movement precision [Mov Pr]). Due to the high degree of similarity, free-choice and instructed trials were collapsed. In each panel the corresponding correlation coefficient is displayed (mean r = 0.85, SD = 0.08; for all: p<0.001). (B) Firing rate distribution averaged as in A, displayed on a logarithmic x-axis. The firing rate distribution is very similar for all conditions and epochs and close to log-normal.DOI: http://dx.doi.org/10.7554/eLife.15719.005
+**Figure 1—figure supplement 1.:** (A) Scatter plots of all pairs of condition- and epoch-wise average firing rates of all recorded single units of all datasets (fixation (Fix), cue power (Cue Po), memory power (Mem Po), movement power (Mov Po), cue precision (Cue Pr), memory precision (Mem Pr) and movement precision [Mov Pr]). Due to the high degree of similarity, free-choice and instructed trials were collapsed. In each panel the corresponding correlation coefficient is displayed (mean r = 0.85, SD = 0.08; for all: p<0.001). (B) Firing rate distribution averaged as in A, displayed on a logarithmic x-axis. The firing rate distribution is very similar for all conditions and epochs and close to log-normal.
 
 In each area, recordings were obtained from two floating microelectrode arrays (FMAs), for a total of 64 channels (32 per microarray) per area (Figure 1B; see Materials and methods) from which an average of 88 single units (SD: 32) were recorded in parallel. All recorded single units were modulated by the epochs of the task or the grasp types, clearly indicating the behavioral relevance of the performed task to the detected single units (Figure 1C). Nevertheless, in agreement with previous findings (Buzsáki and Mizuseki, 2014), firing rates of individual units were relatively stable for different behavioral states of the task following an approximate log-normal distribution (Figure 1—figure supplement 1).
 
-## Functional connectivity
+### Functional connectivity
 
-The functional connectivity between all simultaneously recorded units of the grasping network was estimated by calculating cross-correlation histograms (CCHs) (
+The functional connectivity between all simultaneously recorded units of the grasping network was estimated by calculating cross-correlation histograms (CCHs) (Figure 2A, Figure 2—figure supplements 1, 2; see Materials and methods), one of the few methods also allowing analyses of the frequency domain (Bastos and Schoffelen, 2016) (see below). It is important to stress that the functional connections we describe here do not necessarily represent monosynaptic connections, but merely the influence of one unit onto another. For each neuron pairing one single CCH was estimated over all task epochs and grasp types, since we were interested in the general network interaction and not grasp type or time specific modulations of the network. A general problem of all connectivity measures is common drive to the network, such as stimulus- or movement-locked, but not pairwise, correlations, causing an overestimations of connections. We corrected these biases by subtracting surrogate CCHs (Figure 2—figure supplement 1A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig2-v2.jpg)
 
-**Figure 2.:** (A) Example crosscorrelation histograms (CCHs) for five example neuron pairs. Displayed amplitude is limited to ±2.5x10−3 coincidences per spike for better comparison. CCHs are color-coded based on their oscillatory synchronization frequency (red: beta band; blue: low frequencies; magenta: beta and low frequencies; black: no underlying frequency). (B) Corresponding frequency spectra of CCHs in a, frequency displayed on logarithmic scale (for better comparison limited to a power of 8x10−5) and color-coded as in A. (C) Same as in A, but for auto-correlation histograms (ACHs). (D) Same as in B, but for the frequency spectra of the ACHs in C. (E) Illustration of different kinds of CCHs to a reference unit and the inferred connectivity. Upper left: No peak is present in the CCH so the unit is not connected to the reference unit. Upper right: A peak at positive time lags indicates a connection from the reference to the target unit. Lower right: A peak is present straddling the 0 time lag with a maximum peak at 0, indicating a bidirectional connection. Lower left: Several peaks and troughs are present with a clear underlying frequency and a maximum peak at a negative time lag, indicating an oscillatory connection from the target to the reference unit.DOI: http://dx.doi.org/10.7554/eLife.15719.006
+**Figure 2.:** (A) Example crosscorrelation histograms (CCHs) for five example neuron pairs. Displayed amplitude is limited to ±2.5x10−3 coincidences per spike for better comparison. CCHs are color-coded based on their oscillatory synchronization frequency (red: beta band; blue: low frequencies; magenta: beta and low frequencies; black: no underlying frequency). (B) Corresponding frequency spectra of CCHs in a, frequency displayed on logarithmic scale (for better comparison limited to a power of 8x10−5) and color-coded as in A. (C) Same as in A, but for auto-correlation histograms (ACHs). (D) Same as in B, but for the frequency spectra of the ACHs in C. (E) Illustration of different kinds of CCHs to a reference unit and the inferred connectivity. Upper left: No peak is present in the CCH so the unit is not connected to the reference unit. Upper right: A peak at positive time lags indicates a connection from the reference to the target unit. Lower right: A peak is present straddling the 0 time lag with a maximum peak at 0, indicating a bidirectional connection. Lower left: Several peaks and troughs are present with a clear underlying frequency and a maximum peak at a negative time lag, indicating an oscillatory connection from the target to the reference unit.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Processing steps of three example CCHs. From left to right: illustration of the processing steps involving surrogate subtraction, smoothing, and cluster statistics to evaluate if a peak or trough in a CCHs was significant. From top to bottom: A CCH with one significant peak, a CCH with multiple significant peaks and troughs having an underlying frequency in the beta range, and a CCH with no significant peak or trough. (B) An examples of all CCHs (small panels) and the ACH of one unit with all other units of one dataset of a unit communicating and oscillating in the low frequency range. The ACH is boldly framed and displayed in red, significant connections are indicated by dark lines in CCHs and not significant connections as transparent lines. Directionality information, which is also derived from the CCHs, is not represented.DOI: http://dx.doi.org/10.7554/eLife.15719.007
+**Figure 2—figure supplement 1.:** (A) Processing steps of three example CCHs. From left to right: illustration of the processing steps involving surrogate subtraction, smoothing, and cluster statistics to evaluate if a peak or trough in a CCHs was significant. From top to bottom: A CCH with one significant peak, a CCH with multiple significant peaks and troughs having an underlying frequency in the beta range, and a CCH with no significant peak or trough. (B) An examples of all CCHs (small panels) and the ACH of one unit with all other units of one dataset of a unit communicating and oscillating in the low frequency range. The ACH is boldly framed and displayed in red, significant connections are indicated by dark lines in CCHs and not significant connections as transparent lines. Directionality information, which is also derived from the CCHs, is not represented.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Same as in Figure 2—figure supplement1B, but for a non-oscillatory synchronized unit. (B) Same as in Figure 2—figure supplement1B, but for a unit communicating and oscillating in the beta range.DOI: http://dx.doi.org/10.7554/eLife.15719.008
+**Figure 2—figure supplement 2.:** (A) Same as in Figure 2—figure supplement1B, but for a non-oscillatory synchronized unit. (B) Same as in Figure 2—figure supplement1B, but for a unit communicating and oscillating in the beta range.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Transfer kernels of one modeled dataset. Gamma functions with different maxima and lengths were used as temporal transfer kernels. The area under the curve was always normalized to 0.02. (B) Histogram of detectability of directed connections. Average number of correct rejections and hits are shown for 10 simulated simple networks (SN) and 10 simulated complex networks. Error bars show the standard error across simulated networks. (C) Same as in B, but for detectability of connections. Any directional information was ignored and it was just estimated if a connection between two units was detected or not. (D) Same as in B, but for detectability of directionality for detected connections. The percent of correct rejections and hits is only for the correctly detected connections as displayed in B, thus a pure evaluation of directionality detectability unbiased by connection detectability. (E) Average CCHs for bidirectional connections and common drive pairs of all 20 simulations. The data was pooled, since no considerable difference between the two types of simulations was found. All simulated pairs of both groups are included irrespective of whether they were detected as significant. Error bars show the standard error across CCHs. Note that even though the average peak is at the zero time lag, many pairs had peaks on either side of the zero time lag. (F) Maximum peak count of bidirectional and common drive pairs (for each ms bin) displayed in E. In case CCHs had two peaks or just showed noise fluctuations, only the time lag of the maximum value was considered in order to avoid preselection biases.DOI: http://dx.doi.org/10.7554/eLife.15719.009
+**Figure 2—figure supplement 3.:** (A) Transfer kernels of one modeled dataset. Gamma functions with different maxima and lengths were used as temporal transfer kernels. The area under the curve was always normalized to 0.02. (B) Histogram of detectability of directed connections. Average number of correct rejections and hits are shown for 10 simulated simple networks (SN) and 10 simulated complex networks. Error bars show the standard error across simulated networks. (C) Same as in B, but for detectability of connections. Any directional information was ignored and it was just estimated if a connection between two units was detected or not. (D) Same as in B, but for detectability of directionality for detected connections. The percent of correct rejections and hits is only for the correctly detected connections as displayed in B, thus a pure evaluation of directionality detectability unbiased by connection detectability. (E) Average CCHs for bidirectional connections and common drive pairs of all 20 simulations. The data was pooled, since no considerable difference between the two types of simulations was found. All simulated pairs of both groups are included irrespective of whether they were detected as significant. Error bars show the standard error across CCHs. Note that even though the average peak is at the zero time lag, many pairs had peaks on either side of the zero time lag. (F) Maximum peak count of bidirectional and common drive pairs (for each ms bin) displayed in E. In case CCHs had two peaks or just showed noise fluctuations, only the time lag of the maximum value was considered in order to avoid preselection biases.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** (A) Maximum peak or trough time lag distribution of all significant connections relative to the zero time lag. In case that more than one significant cluster was detected, only the cluster with the highest absolute value was considered. For bidirectional connections time lags were considered for both directions. Line shadings show standard error across datasets. (B) Maximum peak or trough phase relative to the zero time lag for all connections with significant underlying oscillation classified by a significant peak in their corresponding frequency spectra. Results are shown separately for beta at 20 Hz (red) and low frequency at 4 Hz (blue) oscillations. Note that 4pi (two cycles) corresponds to 100 ms for beta and to 500 ms for low frequency oscillations. Line shadings show standard error across datasets.DOI: http://dx.doi.org/10.7554/eLife.15719.010
+**Figure 2—figure supplement 4.:** (A) Maximum peak or trough time lag distribution of all significant connections relative to the zero time lag. In case that more than one significant cluster was detected, only the cluster with the highest absolute value was considered. For bidirectional connections time lags were considered for both directions. Line shadings show standard error across datasets. (B) Maximum peak or trough phase relative to the zero time lag for all connections with significant underlying oscillation classified by a significant peak in their corresponding frequency spectra. Results are shown separately for beta at 20 Hz (red) and low frequency at 4 Hz (blue) oscillations. Note that 4pi (two cycles) corresponds to 100 ms for beta and to 500 ms for low frequency oscillations. Line shadings show standard error across datasets.
 
 Connections indicated by significant peaks or troughs in CCHs were identified by a cluster-based surrogate test (Maris et al., 2007) to all CCHs (see Materials and methods), testing against surrogate CCHs. To control the family-wise error for the entire network, false discovery rate (FDR) correction was applied across all significant connections (Benjamini and Hochberg, 1995). For later topological analyses of oscillatory synchrony in the network, we applied Fourier transformations (Figure 2B–D; see Materials and methods) to all CCHs and auto-correlation histograms (ACHs). The latter detected periodicity in the spiking of individual units, (Figure 2C), allowing classifying them as oscillators or non-oscillators.
 
@@ -76,21 +267,21 @@ Our simulated networks also allowed for a closer evaluation of zero time lag pea
 
 For a physiological classification of all significantly detected connections, we also analyzed their maximum peak or trough time lag distribution (Figure 2—figure supplement 4A). Interestingly, the maximum peak or trough time lag distribution showed an exponential decay, with most of the peaks or troughs having a very short time lag (45.67% < 10 ms, and 85.12% < 100 ms), indicating predominantly direct influences of the units on each other. In case of oscillatory synchronized single units, as strongly present in the data, the classification of the maximum peak or trough time lags was more complex. Given that the maximum peak or trough time lag could be greater than half a cycle of the underlying frequency, it became unclear which unit is leading and which lagging, due to the presence of side lobes (e.g., see Figure 2A top panel). Since we found high numbers of oscillatory synchronized single units, predominantly in the beta (20 Hz) and in the low frequency range (4 Hz), as described in detail below, we analyzed the distribution of maximum peaks or troughs phase with respect to the underlying oscillatory frequency (Figure 2—figure supplement 4B), and also found an exponential decay, similar to the maximum time lag peak or trough distribution. The majority of phase lags were within half a cycle around the zero time lag for both frequencies (beta connections: 77.70% < π, low frequency connections: 87.66% < π), suggesting that for most oscillatory synchronized connections we could accurately determine which unit was leading and which unit was lagging.
 
-For analyzing the functional network topology, all units not connected to the largest inter-connected component were first discarded (mean number of units dropped: 17.75, SD: 9.56; mean percentage: 23.5%, SD: 13.3%;
+For analyzing the functional network topology, all units not connected to the largest inter-connected component were first discarded (mean number of units dropped: 17.75, SD: 9.56; mean percentage: 23.5%, SD: 13.3%; Table 1) and binary directional connectivity matrices were created for every dataset (Figure 3A). We did not quantify the connection strength, since it has been shown to be biased by different firing rates (Cohen and Kohn, 2011).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig3-v2.jpg)
 
-**Figure 3.:** (A) Connectivity matrix of one dataset from monkey M. Each dot represents a significant connection (Online Methods). Units are ordered by channel number of the recording system. (B) Distance dependent connectivity. From left to right: 56,7%, 11,5%, 5,6%, 5,5%,2,6%, and 1,7%. Note the clear distance dependent decay. (C) The same matrix as in A, but with nodes ordered according to an optimal modularity partition. Colored rectangles surround different network modules. (D) Anatomical network representation of the connectivity matrix in A. The brain is viewed as in Figure 1B. Single units and connections are color coded by module. (E) Schematic illustration of modular topology. Modules (dashed regions) consist mainly of single units of one cortical area, but also include small fractions of units from other areas.DOI: http://dx.doi.org/10.7554/eLife.15719.011
+**Figure 3.:** (A) Connectivity matrix of one dataset from monkey M. Each dot represents a significant connection (Online Methods). Units are ordered by channel number of the recording system. (B) Distance dependent connectivity. From left to right: 56,7%, 11,5%, 5,6%, 5,5%,2,6%, and 1,7%. Note the clear distance dependent decay. (C) The same matrix as in A, but with nodes ordered according to an optimal modularity partition. Colored rectangles surround different network modules. (D) Anatomical network representation of the connectivity matrix in A. The brain is viewed as in Figure 1B. Single units and connections are color coded by module. (E) Schematic illustration of modular topology. Modules (dashed regions) consist mainly of single units of one cortical area, but also include small fractions of units from other areas.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Since no data were recorded from area M1 for these monkeys, the F5 and AIP arrays are presented closer together than in reality for better illustration (dashed line marks anatomical discontinuity). (A) Each node colored based on the module, as in Figure 3C. (B) Nodes and connections colored based on rich-clubness, as in Figure 4E. (C) Nodes and connections colored based on oscillatory components in the ACHs and CCHs, respectively, as in Figure 5B.DOI: http://dx.doi.org/10.7554/eLife.15719.012
+**Figure 3—figure supplement 1.:** Since no data were recorded from area M1 for these monkeys, the F5 and AIP arrays are presented closer together than in reality for better illustration (dashed line marks anatomical discontinuity). (A) Each node colored based on the module, as in Figure 3C. (B) Nodes and connections colored based on rich-clubness, as in Figure 4E. (C) Nodes and connections colored based on oscillatory components in the ACHs and CCHs, respectively, as in Figure 5B.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Van Eck and Waltman, 2007).(A) Each node is colored based on the area it was recorded. (B) Each node colored based on its module. (C) Nodes and connections colored based on oscillatory components in the ACHs and CCHs, respectively. (D) Nodes and connections colored based on rich-clubness. Each circle represents a single neuron and is scaled based on the degree of connectivity. VOS aims to find locations in a low-dimensional space (in this case 2D) in such a way that the distance between each node reflects the similarity between these nodes. Similarity is typically found by calculating the association strength (also known as proximity index) on the co-occurrence matrix of items, which is in this case the weighted network connectivity matrix. Association strength is simply the co-occurrence of two items divided by the product of the number of occurrences of each item. The location of each node is then found by minimizing the sum of the squared distance between all nodes, weighted by the computed similarity between each node. To avoid trivial solutions in which all nodes are assigned the same location, there is an additional constraint that the average distance between all pairs of items must be equal to one. Mathematically, VOS bares much similarity to the method of multi-dimensional scaling (Van Eck et al., 2010). All implementations of VOS were performed using the freely available software, Pajek (http://mrvar.fdv.uni-lj.si/pajek/), and then plotted in Matlab.DOI: http://dx.doi.org/10.7554/eLife.15719.013
+**Figure 3—figure supplement 2.:** (A) Each node is colored based on the area it was recorded. (B) Each node colored based on its module. (C) Nodes and connections colored based on oscillatory components in the ACHs and CCHs, respectively. (D) Nodes and connections colored based on rich-clubness. Each circle represents a single neuron and is scaled based on the degree of connectivity. VOS aims to find locations in a low-dimensional space (in this case 2D) in such a way that the distance between each node reflects the similarity between these nodes. Similarity is typically found by calculating the association strength (also known as proximity index) on the co-occurrence matrix of items, which is in this case the weighted network connectivity matrix. Association strength is simply the co-occurrence of two items divided by the product of the number of occurrences of each item. The location of each node is then found by minimizing the sum of the squared distance between all nodes, weighted by the computed similarity between each node. To avoid trivial solutions in which all nodes are assigned the same location, there is an additional constraint that the average distance between all pairs of items must be equal to one. Mathematically, VOS bares much similarity to the method of multi-dimensional scaling (Van Eck et al., 2010). All implementations of VOS were performed using the freely available software, Pajek (http://mrvar.fdv.uni-lj.si/pajek/), and then plotted in Matlab.
 
-## Inter-area modular and small-world topology
+### Inter-area modular and small-world topology
 
 First, we tested if the networks could be subdivided into modules, such that the number of connections was maximized within and minimized between modules. To properly evaluate modular topology, the fact that connectivity decays with distance has to be considered (Smith and Kohn, 2008; Gerhard et al., 2011). Figure 3B shows the distance-dependent decay of connectivity of our networks according to different subgroups: on the same electrode, on the same array, in the same area, between AIP and F5, between F5 and M1, and between AIP and M1. Connection density was not significantly different within all subgroups (Kruskal-Wallis test, p>0.05).
 
@@ -100,21 +291,21 @@ Having shown that a modular topology is present, what is the detailed structure 
 
 We found significantly higher average cluster coefficients C in comparison to surrogate networks (mean: 0.266, SD: 0.068; permutation test, p<0.001, sig. 12/12 datasets) and on average similar path lengths L (mean: 3.451, SD: 0.823; mean difference to surrogate networks: −0.007; permutation test, p<0.05, sig. higher 5/12, sig. smaller 5/12 datasets). Consequently, all networks had a significant SW-coefficient (mean: 3.05, SD: 0.66; permutation test, p<0.001, sig. 12/12 datasets), suggesting that despite a modular structure the neuronal network is efficiently processing and transmitting information (Watts and Strogatz, 1998).
 
-## Degree centrality, betweenness centrality, and hubs
+### Degree centrality, betweenness centrality, and hubs
 
-Some networks, have been shown to exhibit heavy-tailed centrality distributions, with a small number of nodes strongly embedded in the network (hubs), which make a strong contribution to the network function (
+Some networks, have been shown to exhibit heavy-tailed centrality distributions, with a small number of nodes strongly embedded in the network (hubs), which make a strong contribution to the network function (van den Heuvel and Sporns, 2013a). A simple and robust measure of centrality is degree centrality (k), which is the number of connections per unit. On average 6.27% (SD: 2.29%) of all possible connections were realized. The degree distribution (Figure 4A) was heavy-tailed and best described by an exponential truncated power law model (P(k)~kγ−1ek/kc, γ = 0.6839; cutoff degree of kc = 8.657; EXPTPL: adjusted R2 = 0.9891, including a penalty for number of fitted variables), compared to a power law (P(k)~k−γ; PL: adjusted R2 = 0.9177), exponential (EXP: adjusted R2 = 0.9742), or Gaussian (GAUS: adjusted R2 = 0.6826) model. In contrast, surrogate networks with the same distance-dependent connectivity were not heavy-tailed and were best described by a GAUS model (GAUS: adjusted R2 = 0.9655; PL: adjusted R2 = 0.3061; EXPTPL: adjusted R2 = 0.5006; EXP: adjusted R2 = 0.6419). In agreement with the EXPTPL model, networks had significantly more single units within the low, less within the intermediate, and especially more in the high degree range, than surrogate networks (cluster-based permutation test, p<0.05), clear evidence of hubs, independent of distance-dependent connectivity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig4-v2.jpg)
 
-**Figure 4.:** (A) Average degree centrality distribution of all networks (blue) and corresponding surrogate networks (red). Black lines reflect different models fitted to the data (see legend in B). The degree distribution of each dataset was normalized to the possible maximum number of connections per network. The area under the curve was normalized to 100% before averaging. Line shadings show standard error across datasets. Asterisks represent significant differences to surrogate networks. Inlay shows the same distribution and models on a log-log scale. (B) Same as in , but for the betweenness centrality distribution. Note that the slopes for the EXPTPL and PL model are identical, since the exponential coefficient of the EXPTPL model was zero. (AC) Schematic view of a rich-club topology connecting highly clustered modules. (D) Average rich-club level of all datasets relative to surrogate datasets. Asterisks represent significant differences of rich-club level to surrogate networks. (E) Anatomical network representation, as in Figure 3D, with connections and units color-coded based on rich-club membership (orange).DOI: http://dx.doi.org/10.7554/eLife.15719.014
+**Figure 4.:** (A) Average degree centrality distribution of all networks (blue) and corresponding surrogate networks (red). Black lines reflect different models fitted to the data (see legend in B). The degree distribution of each dataset was normalized to the possible maximum number of connections per network. The area under the curve was normalized to 100% before averaging. Line shadings show standard error across datasets. Asterisks represent significant differences to surrogate networks. Inlay shows the same distribution and models on a log-log scale. (B) Same as in A, but for the betweenness centrality distribution. Note that the slopes for the EXPTPL and PL model are identical, since the exponential coefficient of the EXPTPL model was zero. (C) Schematic view of a rich-club topology connecting highly clustered modules. (D) Average rich-club level of all datasets relative to surrogate datasets. Asterisks represent significant differences of rich-club level to surrogate networks. (E) Anatomical network representation, as in Figure 3D, with connections and units color-coded based on rich-club membership (orange).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Average degree centrality distribution of all networks simulated with the equal rate model (blue) and the corresponding detected networks with the described method for detecting directed functional connectivity (red). Results are shown for the same 10 simulated simple networks and 10 simulated complex networks as in Figure 2—figure supplement 3. Error bars show the standard error across simulated networks. (B) Same as in A, but for the betweenness centrality distributions. (C) Same as in A, but for the rich-club level relative to surrogate datasets. Asterisks represent significant difference of rich-club level to surrogate networks. Two different sets of surrogate networks were calculated per dataset, one for the simulated network and one for the detected network.DOI: http://dx.doi.org/10.7554/eLife.15719.015
+**Figure 4—figure supplement 1.:** (A) Average degree centrality distribution of all networks simulated with the equal rate model (blue) and the corresponding detected networks with the described method for detecting directed functional connectivity (red). Results are shown for the same 10 simulated simple networks and 10 simulated complex networks as in Figure 2—figure supplement 3. Error bars show the standard error across simulated networks. (B) Same as in A, but for the betweenness centrality distributions. (C) Same as in A, but for the rich-club level relative to surrogate datasets. Asterisks represent significant difference of rich-club level to surrogate networks. Two different sets of surrogate networks were calculated per dataset, one for the simulated network and one for the detected network.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Average degree centrality distribution of the modeled neuronal plane (32000 neurons, 2 areas, each divided into 5 subregions coverable by an array, 160 possible electrode position, and a maximum of 20 single units per electrode) with distant dependent random connectivity (Figure 3B). The distribution could be best described by a Gaussian model (adjusted R2 = 0.98). (B) Average degree centrality distribution of 12 different subsamplings of the modeled neuronal plane with exactly the same number of neurons as in the real datasets. Line shadings show standard error across subsamplings. Datasets were processed as in Figure 4A. Average degree distribution could be best described by a Gaussian model (adjusted R2 = 1) and only poorly by a power law model (adjusted R2 = 0.17). (C) Dependency of goodness of power law fit, the size of the largest component relative to the whole network, and the level of compartmentalization on average degree k. Different average degrees were generated by varying the distance-dependent connectivity density of the empirically gained data (Figure 3B) by factors of 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, and 5 times to create a neuronal plane. Goodness of power law fit was highly correlated with the size of the largest component (adjusted R2 = 0.93) and the compartmentalization (adjusted R2 = 0.93).DOI: http://dx.doi.org/10.7554/eLife.15719.016
+**Figure 4—figure supplement 2.:** (A) Average degree centrality distribution of the modeled neuronal plane (32000 neurons, 2 areas, each divided into 5 subregions coverable by an array, 160 possible electrode position, and a maximum of 20 single units per electrode) with distant dependent random connectivity (Figure 3B). The distribution could be best described by a Gaussian model (adjusted R2 = 0.98). (B) Average degree centrality distribution of 12 different subsamplings of the modeled neuronal plane with exactly the same number of neurons as in the real datasets. Line shadings show standard error across subsamplings. Datasets were processed as in Figure 4A. Average degree distribution could be best described by a Gaussian model (adjusted R2 = 1) and only poorly by a power law model (adjusted R2 = 0.17). (C) Dependency of goodness of power law fit, the size of the largest component relative to the whole network, and the level of compartmentalization on average degree k. Different average degrees were generated by varying the distance-dependent connectivity density of the empirically gained data (Figure 3B) by factors of 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, and 5 times to create a neuronal plane. Goodness of power law fit was highly correlated with the size of the largest component (adjusted R2 = 0.93) and the compartmentalization (adjusted R2 = 0.93).
 
 A more global aspect of centrality is captured by betweenness centrality (g), an index of the number of shortest paths from all single units to all others that pass through that single unit, normalized by the number of all shortest paths (van den Heuvel and Sporns, 2013a). Similar to degree centrality, the betweenness centrality distribution (Figure 4B) was heavy-tailed and best described by a PL model, with an estimated exponent of γ = 2.212 (PL: adjusted R2 = 0.9753; EXPTPL: adjusted R2 = 0.9745; EXP: adjusted R2 = 0.9593; GAUS: adjusted R2 = −0.1509). The betweenness centrality distribution of surrogate networks was also heavy-tailed and was best described by an EXPTPL model (EXPTPL: adjusted R2 = 0.99; PL: adjusted R2 = 0.9771; EXP: adjusted R2 = 0.9061; GAUS: R2 = −0.5511). Still, in contrast to the PL model, the EXPTPL model had smaller values in the high and low betweenness centrality range. Statistically networks showed a significantly higher number of single units in the low and fewer units in the intermediate betweenness range than surrogate networks (cluster-based permutation test, p<0.05). These findings confirm the presence of hub neurons for betweenness centrality. Units with high degree centrality also tended to have high betweenness centrality (r = 0.75, p<0.001, Spearman correlation), suggesting a coherent group of hub units. We found no significant differences in number of hubs per area (normalized k ≥ 9, g ≥ 0.03; Tukey's honest significant difference test on average group ranks, p<0.05), indicating a distributed hub topology with no area acting as a network center. Together, we have shown that centrality of single units is strongly heterogeneous in the network, with a large group of units being marginally involved in the network and a small group of spatial distributed hub units being extremely central. The presence of hubs provides further evidence of a complex network topology at the single unit level.
 
@@ -124,7 +315,7 @@ Differences in firing rate and any possible biases due to the applied method to 
 
 It is also possible that subsampling, a natural limitation in electrophysiological recordings, could artificially cause a heavy tailed degree centrality distribution even if the underlying connectivity is random (Han et al., 2005; Gerhard et al., 2011). We simulated a neuronal layer of 32,000 neurons with the same distance-dependent connectivity density as detected in our data (Figure 3B), but with Poisson distributed connectivity (Figure 4—figure supplement 2A; see Materials and methods). Subsampling was performed in correspondence with our array configuration down to the number of neurons we recorded for real datasets, showing no change to the shape of the degree distribution (Figure 4—figure supplement 2B). Only when we decreased the connection density of the model below the detected connectivity in our data was a false heavy-tailed degree distribution apparent (Figure 4—figure supplement 2C), which was highly correlated with the networks breaking apart into unconnected components (R2 = 0.93). Additionally, this effect could not be present in our analyzed data since we only analyzed the largest component of the single unit networks. Theses controls suggest that the existence of hubs can neither be explained by distance-dependent connectivity, differences in firing rates, or subsampling.
 
-## Rich-club topology
+### Rich-club topology
 
 In some networks hubs exhibit a strong tendency to link to each other, forming a rich-club (Colizza et al., 2006), which can be measured by a rich-club coefficient that expresses the tendency of highly connected hub nodes to show above-random levels of interconnectivity (Figure 4C). Hub units showed a significantly higher level of interconnectivity than surrogate networks, with up to 15% more connections (Figure 4D; cluster-based permutation test, p<0.05).
 
@@ -132,25 +323,156 @@ For our equal rate model, we tested if differences in firing rate and the applie
 
 The rich-club contained neurons from all areas with a rich-club level set to k ≥ 9% (Figure 4E, Figure 3—figure supplement 1B and 2C; mean rich-club neurons: 27%, SD: 18%; similar results with k set to other levels). A rich-club that spans multiple areas, as described here, has been proposed as a robust structure facilitating efficient communication (van den Heuvel and Sporns, 2013a).
 
-## Network topology of oscillatory synchrony
+### Network topology of oscillatory synchrony
 
-Oscillatory synchronization has been proposed as a mechanism for efficient communication (
+Oscillatory synchronization has been proposed as a mechanism for efficient communication (Fries, 2009). As demonstrated above, oscillatory and non-oscillatory synchronized spike patterns for communication could be identified (Figure 2, Figure 2—figure supplement 1B, 2). We therefore investigated if specific relationships between distinct frequencies and network topology emerged. Frequency spectra of ACHs of all units and of CCHs that had a significant connection were tested for significant frequency bins above chance (cluster-based surrogate test, p<0.05). We found beta (18–35 Hz) and low frequency (3–7 Hz) oscillations predominantly present in the spiking patterns of all datasets (Figure 5A, and Figure 5—figure supplement 1C–E). Oscillatory synchrony in both frequency ranges was present more often in CCHs (mean beta: 38.3%, low: 44.3%) than in ACHs (mean beta: 22.5%, low: 31.7%), suggesting that the group of oscillating single units (oscillators; Table 2) communicates in their underlying frequency to a larger group of units.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig5-v2.jpg)
 
-**Figure 5.:** (A) Average number of significant frequency bins of all ACHs and CCHs over all datasets. Frequencies displayed on a logarithmic scale. Line shadings bars represent standard error across datasets. (B) Anatomical network representation as in Figure 3D with connections and units color-coded by underlying oscillations (see legend in C). (C) Degree centrality distribution of all datasets separately for beta and low frequency oscillators, non-oscillators, and single units oscillating in both frequency ranges. Upper panel, summed degree centrality distribution of all single units. Median degree is represented by arrows in corresponding color: beta units: 7.5, low frequency units: 6.3, beta and low frequency units: 8.9, and for non-oscillators: 2.7. (D) Same as in C but for the betweenness centrality distribution. Median for beta units: 0.023, low frequency units: 0.016, beta and low frequency units: 0.026, and for non-oscillators: 0.001. (E) Schematic view of the found network topology of oscillators. Oscillators form a rich-club spanning all areas. (F) Distribution of oscillators across areas. The number of single units is normalized to 100% per area. F5 has significantly less beta (red) and significantly more low frequency oscillators (blue) than M1 and AIP. Note that units oscillating in both frequency ranges are counted in both. Non-oscillators (black) still remain the largest group in all areas.DOI: http://dx.doi.org/10.7554/eLife.15719.017
+**Figure 5.:** (A) Average number of significant frequency bins of all ACHs and CCHs over all datasets. Frequencies displayed on a logarithmic scale. Line shadings bars represent standard error across datasets. (B) Anatomical network representation as in Figure 3D with connections and units color-coded by underlying oscillations (see legend in C). (C) Degree centrality distribution of all datasets separately for beta and low frequency oscillators, non-oscillators, and single units oscillating in both frequency ranges. Upper panel, summed degree centrality distribution of all single units. Median degree is represented by arrows in corresponding color: beta units: 7.5, low frequency units: 6.3, beta and low frequency units: 8.9, and for non-oscillators: 2.7. (D) Same as in C but for the betweenness centrality distribution. Median for beta units: 0.023, low frequency units: 0.016, beta and low frequency units: 0.026, and for non-oscillators: 0.001. (E) Schematic view of the found network topology of oscillators. Oscillators form a rich-club spanning all areas. (F) Distribution of oscillators across areas. The number of single units is normalized to 100% per area. F5 has significantly less beta (red) and significantly more low frequency oscillators (blue) than M1 and AIP. Note that units oscillating in both frequency ranges are counted in both. Non-oscillators (black) still remain the largest group in all areas.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Hanning windows used for discrete Fourier transform of all CCHs. All windows were aligned to the zero bin and span four times the frequency of interest period (with a maximum of 1000 ms and a minimum of 150 ms). Frequencies of interest were scaled logarithmically (100 frequencies from 3 to 100 Hz). (B) Hanning windows used for discrete Fourier transform of all ACHs. All windows were aligned to the zero bin and span two times the frequency of interest period (with a maximum of 500 ms and a minimum of 75 ms). (C) Significant frequency bins of power spectra of all ACHs of one example dataset per monkey. Frequencies were calculated and displayed on a logarithmic scale. (D) Significant frequency bins of power spectra of all CCHs of the same example datasets as in C. (E) Average number of significant frequency bins of all ACHs and CCHs of the same example datasets as in C and D.DOI: http://dx.doi.org/10.7554/eLife.15719.018
+**Figure 5—figure supplement 1.:** (A) Hanning windows used for discrete Fourier transform of all CCHs. All windows were aligned to the zero bin and span four times the frequency of interest period (with a maximum of 1000 ms and a minimum of 150 ms). Frequencies of interest were scaled logarithmically (100 frequencies from 3 to 100 Hz). (B) Hanning windows used for discrete Fourier transform of all ACHs. All windows were aligned to the zero bin and span two times the frequency of interest period (with a maximum of 500 ms and a minimum of 75 ms). (C) Significant frequency bins of power spectra of all ACHs of one example dataset per monkey. Frequencies were calculated and displayed on a logarithmic scale. (D) Significant frequency bins of power spectra of all CCHs of the same example datasets as in C. (E) Average number of significant frequency bins of all ACHs and CCHs of the same example datasets as in C and D.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) CCHs for pairs of simulated neurons with an average firing rate around 5 Hz, either firing in an oscillatory (20 Hz, red curve) or non-oscillatory manner (black curve). By jittering their trial-wise temporal offset in firing, we simulated different levels of coupling strength, without disturbing the firing pattern of the individual neurons nor the similarity in firing between the two neurons. Results are shown for a trial-wise jitter of 0 ms (perfect synchronization), 25 ms, and 50 ms (hardly synchronized). (B) Maximum CCH peak heights of oscillatory and non-oscillatory neurons with a systematical trial-offset-jitter from 0 to 50 ms.DOI: http://dx.doi.org/10.7554/eLife.15719.019
+**Figure 5—figure supplement 2.:** (A) CCHs for pairs of simulated neurons with an average firing rate around 5 Hz, either firing in an oscillatory (20 Hz, red curve) or non-oscillatory manner (black curve). By jittering their trial-wise temporal offset in firing, we simulated different levels of coupling strength, without disturbing the firing pattern of the individual neurons nor the similarity in firing between the two neurons. Results are shown for a trial-wise jitter of 0 ms (perfect synchronization), 25 ms, and 50 ms (hardly synchronized). (B) Maximum CCH peak heights of oscillatory and non-oscillatory neurons with a systematical trial-offset-jitter from 0 to 50 ms.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig5-figsupp3-v2.jpg)
 
-**Figure 5—figure supplement 3.:** (A) Average power spectra of population ACHs of trials with high power in both the beta (18–35 Hz) and low frequency (3–7 Hz) band (red curve), and of trials with low power in both frequency bands (blue curve). Due to a limited amount of available trials, data is shown only for the two datasets (M1 and M2) with more than 900 trials recorded. (B) Unit-wise degree centrality similarity for networks calculated on low and high oscillatory trials. Degree centrality is normalized by the maximum possible number of connections of all neurons detected. (C) Average degree centrality distribution of the same networks as in B. Degree centrality is normalized by the maximum possible number of connections of all neurons which were interconnected, excluding isolated neurons. Note that this normalization is slightly different between the high and low oscillatory state network and slightly different to B. (D) Same as in C, but for the average rich-club coefficient relative to surrogate datasets.DOI: http://dx.doi.org/10.7554/eLife.15719.020
+**Figure 5—figure supplement 3.:** (A) Average power spectra of population ACHs of trials with high power in both the beta (18–35 Hz) and low frequency (3–7 Hz) band (red curve), and of trials with low power in both frequency bands (blue curve). Due to a limited amount of available trials, data is shown only for the two datasets (M1 and M2) with more than 900 trials recorded. (B) Unit-wise degree centrality similarity for networks calculated on low and high oscillatory trials. Degree centrality is normalized by the maximum possible number of connections of all neurons detected. (C) Average degree centrality distribution of the same networks as in B. Degree centrality is normalized by the maximum possible number of connections of all neurons which were interconnected, excluding isolated neurons. Note that this normalization is slightly different between the high and low oscillatory state network and slightly different to B. (D) Same as in C, but for the average rich-club coefficient relative to surrogate datasets.
+
+**Table 2.**
+ Number of oscillators in all networks analyzed. Marked datasets correspond to the displayed example networks in Figure 5 and Figure 3—figure supplements 1 and 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Datasets</th>
+      <th>Oscillators total</th>
+      <th>Non-Oscillators</th>
+      <th>Beta Oscillators</th>
+      <th>Low Frequency oscillators</th>
+      <th>Oscillators in both frequency ranges</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M 1</td>
+      <td>83</td>
+      <td>65</td>
+      <td>37</td>
+      <td>60</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>M 2 *</td>
+      <td>60</td>
+      <td>77</td>
+      <td>28</td>
+      <td>37</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>M 3</td>
+      <td>34</td>
+      <td>45</td>
+      <td>12</td>
+      <td>25</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>S 1</td>
+      <td>31</td>
+      <td>26</td>
+      <td>14</td>
+      <td>26</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>S 2</td>
+      <td>32</td>
+      <td>32</td>
+      <td>14</td>
+      <td>22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S 3</td>
+      <td>31</td>
+      <td>33</td>
+      <td>15</td>
+      <td>20</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>S 4</td>
+      <td>26</td>
+      <td>38</td>
+      <td>14</td>
+      <td>19</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>S 5 *</td>
+      <td>40</td>
+      <td>38</td>
+      <td>22</td>
+      <td>25</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>S 6</td>
+      <td>21</td>
+      <td>26</td>
+      <td>14</td>
+      <td>10</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Z 1</td>
+      <td>13</td>
+      <td>20</td>
+      <td>5</td>
+      <td>10</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Z 2</td>
+      <td>13</td>
+      <td>17</td>
+      <td>6</td>
+      <td>9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Z 3 *</td>
+      <td>18</td>
+      <td>23</td>
+      <td>10</td>
+      <td>11</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>33.5</td>
+      <td>36.7</td>
+      <td>15.9</td>
+      <td>22.8</td>
+      <td>5.3</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>19.4</td>
+      <td>17.4</td>
+      <td>8.7</td>
+      <td>13.8</td>
+      <td>3.4</td>
+    </tr>
+  </tbody>
+</table>
 
 Interestingly, there was also a significant group of oscillating single units present in the gamma range (45–80 Hz), which was not mirrored in the CCHs. One possible explanation could be that that these units communicate via long-range gamma synchronization with topographically distant areas we did not record, such as the visual cortex (Gregoriou et al., 2009).
 
@@ -166,13 +488,13 @@ The number of oscillators did not differ between areas (Tukey-Kramer test for ra
 
 A further unresolved question is whether a direct relationship exists between oscillatory synchronization and functional rich-club topology. It is well known that oscillatory synchrony in frontal and motor areas appears in short bursts of only a couple of cycles with variable length and amplitude (Murthy and Fetz, 1996; Lundqvist et al., 2016). We used this property of oscillatory synchrony to split up our data into two equal blocks with high oscillatory and low oscillatory synchrony to investigate the effect on rich-club topology. Since a minimum number of trials are required to properly estimate the functional connectivity for topological analyses, we used the two datasets from monkey M were we recorded more than 900 trials (Table 1). The data was split into two blocks with equal number of trials per condition to prevent any biases by different epochs or conditions. Instead of calculating unit-wise ACHs we pooled the activity of all units and estimated single trial population ACHs spectra, reflecting the trial-wise level of oscillatory synchronization. Single trial population ACHs calculations and frequency analyses were performed the same way as for single unit ACHs (see Materials and methods) and divided by their average power in the beta (18–35 Hz) and low frequency (3–7 Hz) band (Figure 5—figure supplement 1C). After separation into two blocks, the estimation of functional connectivity and network topological analyses were repeated as if they were two separate datasets. For a valid statement about changes in rich-club topology, the network structure and in particular the degree distribution, should not be changed. For both datasets the unit-wise degree as well as the degree distribution were very similar (Figure 5—figure supplement 3B,C), as well as the betweenness centrality distribution (data not shown). However, when comparing the rich-club level there was a striking difference for higher rich-club levels (Figure 5—figure supplement 3D). In both datasets, the high oscillatory state network showed a clear rich-club topology, whereas the low oscillatory state network hardly showed any rich-club effect. These results suggest that a rich-cub topology is only present when there is a high level of oscillatory synchrony in the network.
 
-## Functional network topology and firing rate prediction
+### Functional network topology and firing rate prediction
 
-Utilizing the identified network topology, the firing rate of individual units can be predicted by the firing rate of input units, providing an estimate on how much of the single unit activity can be explained by functional network connectivity. Each CCH can be understood as a transfer function of spike rates between two units, describing the coincidences per spike at every time point relative to each other. Negative time bins bin reflect input from the reference unit to the target unit while positive time bins reflect the output. To predict the firing rate of a unit, we convolved the spike trains of all units having a significant connection to the corresponding unit with their respective CCHs (output part). Assuming single units to be simple linear integrators, we summed up the individual convolved spike trains (
+Utilizing the identified network topology, the firing rate of individual units can be predicted by the firing rate of input units, providing an estimate on how much of the single unit activity can be explained by functional network connectivity. Each CCH can be understood as a transfer function of spike rates between two units, describing the coincidences per spike at every time point relative to each other. Negative time bins bin reflect input from the reference unit to the target unit while positive time bins reflect the output. To predict the firing rate of a unit, we convolved the spike trains of all units having a significant connection to the corresponding unit with their respective CCHs (output part). Assuming single units to be simple linear integrators, we summed up the individual convolved spike trains (Figure 6A,B) and correlated these estimated signals with the original spike trains of the target units smoothed with a Gaussian kernel (SD: 3.66 ms), identical to the CCH smoothing. Ninety-nine percent of predicted firing rate curves were positively correlated with the real firing rates of the corresponding target units (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15719/elife-15719-fig6-v2.jpg)
 
-**Figure 6.:** (A) Average firing rate of one example single unit recorded in F5 in monkey S for the four conditions used in this study during the fixation (Fix), cue (Cue), memory (Mem), and movement period (Mov). The complex tuning patterns for the different task conditions (grip types; free-choice vs. instructed trials) are clearly visible. (B) Predicted firing rate of the same unit as in A based on the population activity of the connected neurons. Curves in (A–B) were smoothed with an additional Gaussian kernel (SD: 40 ms). (C) Histogram of correlation coefficients between the true and predicted spike trains of all single units of all datasets. Significant correlations are marked in red. Note that hardly any correlation coefficient were negative. (D) Histogram of correlation coefficients of condition averaged firing rates. Coloring as in C.DOI: http://dx.doi.org/10.7554/eLife.15719.022
+**Figure 6.:** (A) Average firing rate of one example single unit recorded in F5 in monkey S for the four conditions used in this study during the fixation (Fix), cue (Cue), memory (Mem), and movement period (Mov). The complex tuning patterns for the different task conditions (grip types; free-choice vs. instructed trials) are clearly visible. (B) Predicted firing rate of the same unit as in A based on the population activity of the connected neurons. Curves in (A–B) were smoothed with an additional Gaussian kernel (SD: 40 ms). (C) Histogram of correlation coefficients between the true and predicted spike trains of all single units of all datasets. Significant correlations are marked in red. Note that hardly any correlation coefficient were negative. (D) Histogram of correlation coefficients of condition averaged firing rates. Coloring as in C.
 
 However, these correlations could also be due to synchronous up and down states of the brain (Gilbert and Sigman, 2007), which makes proper statistical testing obligatory. Three different permutation tests were applied: shuffling of trials, shuffling of the output parts of CCHs, and shuffling of input units. Only if the correlation coefficient significantly exceeded all three permutation distributions (p<0.05), the correlation was considered significant. Remarkably, 45% of the firing rate patterns of our single units could be significantly predicted by their inputs. The differences between grasp types and decision conditions could be significantly predicted in 9% of all cases (Figure 6D; positive correlation: 79%; shuffling of the transfer kernels and input units, p<0.05), even using this simple approach that involved no parameter fitting. The functional network topology presented here allows a surprisingly accurate prediction of temporal firing dynamics, suggesting that the network captured in our recordings, despite being a small subset of the entire network, accurately represents a large portion of the relevant communication in the fronto-parietal grasping network.
 
@@ -198,19 +520,19 @@ To our knowledge, these results provide the first evidence of oscillatory synchr
 
 ## Materials and methods
 
-## Basic procedures
+### Basic procedures
 
 Neural activity was recorded simultaneously from many channels in two female and one male rhesus macaque monkey (Animals S, Z, and M; body weight 9, 7, and 10 kg, respectively). Detailed experimental procedures have been described previously (Michaels et al., 2015). All procedures and animal care were in accordance with German and European law and were in agreement with the Guidelines for the Care and Use of Mammals in Neuroscience and Behavioral Research (National Research Council, 2003).
 
-## Behavioral task
+### Behavioral task
 
 Figure 1A illustrates the time course of the behavioral task as described previously (Michaels et al., 2015). Trials started after the monkey placed both hands on the resting positions and fixated a red fixation disk (fixation period). After 600 to 1000 ms, cues in the form of disks were shown next to the fixation disk for 300 ms to instruct the monkey about the required grip type (power or precision; cue period). During this epoch the grasp target, a handle, was also illuminated. In the instructed task one disk was shown, while in the free-choice task both disks were turned on, indicating that the monkey was free to choose between the two grip types. The monkey then had to memorize the instruction for 1100 to 1500 ms (memory period). The switching off of the fixation light cued the monkey to reach and grasp the target (movement period) in order to receive a liquid reward. Importantly, during free choice trials the reward was iteratively reduced every time the monkey repeatedly chose the same grip type. All trials were randomly interleaved and executed in darkness. The behavioral task also contained delayed instructed trials, which were not analyzed in this study.
 
-## Chronic electrode implantation
+### Chronic electrode implantation
 
 Surgical procedures have been described previously (Michaels et al., 2015). In short, each animal was implanted with two floating microelectrode arrays per area (FMAs; Microprobes for Life Sciences; 32 electrodes; spacing between electrodes: 400 μm; length: 1.5 to 7.1 mm monotonically increasing to target grey matter along the sulcus). Animal S and Z were implanted with four FMAs in area AIP and F5 in the left and the right hemisphere, respectively. Animal M was implanted with a total of six FMAs in the same cortical areas and two additional arrays in area M1, in the left hemisphere (Figure 1B).
 
-## Neural recordings and spike sorting
+### Neural recordings and spike sorting
 
 Neural signals from the implanted arrays were amplified and digitally stored using a 128 channel recording system (Cerebus, Blackrock Microsystems; sampling rate 30 kS/s; 0.6–7500 Hz band-pass hardware filter; for monkey S and Z) or a 256 channel Tucker-Davis system (TDT RZ2; sampling rate 24.414 kS/s; 0.6–10,000 Hz band-pass hardware filter; monkey M).
 
@@ -220,63 +542,103 @@ Units were classified as single- or non-single unit based on five criteria: (1),
 
 After the semiautomatic sorting process, redetection of the different average waveforms (templates) was done to detect overlaid waveforms (Gozani and Miller, 1994). To achieve this, filtered signals were convolved with the templates starting with the biggest waveform. Independently for each template, redetection and resorting was run automatically using a linear discriminate analysis for classification of waveforms. After spike identification, the target template was subtracted from the filtered signal of the corresponding channel to reduce artifacts during the detection of the next template. This procedure allowed us to detect spikes with a temporal overlap up to 0.2 ms. Unit isolation was evaluated again, based on the five criteria mentioned above, to determine the final classification of all units into single or non-single units. Stationarity of firing rate was checked for all units and in case it was not stable over the entire recording session (more than 30% change in firing rate between the first 10 min and the last 10 min of recording) the unit was excluded from further analyses (~3% of all single units). Only single units fulfilling all of these criteria, and no multi-units, were further used in this study.
 
-## Functional connectivity analysis
+### Functional connectivity analysis
 
 After sorting, spike events were binned in non-overlapping 1-ms windows to produce a continuous firing rate signal (1 kHz) and aligned to cue and movement onset. Two time windows were chosen for further analysis (Cue onset: −700 to 1500 ms; Movement onset: −300 to 500 ms), since neuronal activity was locked to both events, with a variable memory period between them. Note that all three monkeys had very consistent movement times (mean SD across datasets = 39 ms).
 
-The functional network topology of single-unit populations was derived from analyses of pairwise correlations (Yu et al., 2008). We calculated cross-correlation histograms (CCHs; time lags: −500 ms to 500 ms) between all pairs of single units of each dataset (Bair et al., 2001):(1)CCHn1,n2(τ)=1M∑i=1M∑t=1Nxn1i(t) xn2i(t+τ)(N−|τ|) λ1λ2
+The functional network topology of single-unit populations was derived from analyses of pairwise correlations (Yu et al., 2008). We calculated cross-correlation histograms (CCHs; time lags: −500 ms to 500 ms) between all pairs of single units of each dataset (Bair et al., 2001):
 
-where M is the number of trials, t is time, N is the number of time bins in the trial, xn1i and xn2i are the spike trains of single units n1 and n2 on trial i, τ is the time lag, and λ1 and λ2 are the mean firing rates of the two single units across the entire time interval M. The denominator is normalizing for the degree of overlap (N−|τ|) in the CCH and the geometric mean spike rate λ1λ2, which is the most common normalization used for CCHs (Bair et al., 2001; Smith and Kohn, 2008). The normalized CCHs were then averaged across all time periods and task conditions (e.g., see Figure 2—figure supplement 1A).
+$$
+CCH_{n_{1},n_{2}}(\tau)=\frac{1}{M}\sumi=1M\sumt=1N\frac{x_{n_{1}}^{i}(t) x_{n_{2}}^{i}(t+\tau)}{(N−|\tau|) \sqrt{\lambda_{1}\lambda_{2}}}
+$$
 
-Subsequently, all CCHs were corrected for correlations induced by common stimulus drive or global state changes, such as arm and hand movements, as well as for trial-wise fluctuation in spiking, by simulating and subsequently subtracting surrogate CCHs. Surrogate CCHs contain the same stimulus locked correlation, but no pairwise temporal correlation. To this end, peri-stimulus time histograms (PSTH) were calculated for the same two time windows and alignments (Cue and Movement onset) as mentioned above, separately for each single unit and task condition (smoothed with a Gaussian kernel, SD: 3.66 ms). Artificial spike trains were generated from an inhomogeneous Poisson process using the PSTHs as the rate function (Ramalingam et al., 2013). These artificial spike trains preserved the number of trials and the number of spikes per trial, but varied in the timing of individual spikes (surrogate data; e.g., Figure 2—figure supplement 1A). Since the number of spikes per trial was preserved for all units recorded simultaneously, any trial-wise common drive is equally present and therefore accounted for in the surrogate data (Smith and Kohn, 2008). From these surrogate data, surrogate CCHs were calculated by replacing xni with the trials of the artificial spike trains for the corresponding single unit (surrogate CCHs). This procedure was repeated 1000 times. The resulting surrogate CCHs reflected the level of correlation when both units are statistically independent. Finally, average surrogate CCHs were subtracted from the CCHs to yield the corrected CCHs.
+where $M$ is the number of trials, $t$ is time, $N$ is the number of time bins in the trial, $x_{n_{1}}^{i}$ and $x_{n_{2}}^{i}$ are the spike trains of single units $n_{1} $and $n_{2}$ on trial $i$, $\tau$ is the time lag, and $\lambda_{1}$ and $\lambda_{2}$ are the mean firing rates of the two single units across the entire time interval $M$. The denominator is normalizing for the degree of overlap $(N−|\tau|)$ in the CCH and the geometric mean spike rate $\sqrt{\lambda_{1}\lambda_{2}}$, which is the most common normalization used for CCHs (Bair et al., 2001; Smith and Kohn, 2008). The normalized CCHs were then averaged across all time periods and task conditions (e.g., see Figure 2—figure supplement 1A).
 
-Auto-correlation histograms (ACHs) were generated by setting xn1i=xn2i in Equation 1 for all i, and corrected by generating artificial spike trains and substituting them for xn1i and xn2i in Equation 1 for the calculation of surrogate ACHs.
+Subsequently, all CCHs were corrected for correlations induced by common stimulus drive or global state changes, such as arm and hand movements, as well as for trial-wise fluctuation in spiking, by simulating and subsequently subtracting surrogate CCHs. Surrogate CCHs contain the same stimulus locked correlation, but no pairwise temporal correlation. To this end, peri-stimulus time histograms (PSTH) were calculated for the same two time windows and alignments (Cue and Movement onset) as mentioned above, separately for each single unit and task condition (smoothed with a Gaussian kernel, SD: 3.66 ms). Artificial spike trains were generated from an inhomogeneous Poisson process using the PSTHs as the rate function (Ramalingam et al., 2013). These artificial spike trains preserved the number of trials and the number of spikes per trial, but varied in the timing of individual spikes (surrogate data; e.g., Figure 2—figure supplement 1A). Since the number of spikes per trial was preserved for all units recorded simultaneously, any trial-wise common drive is equally present and therefore accounted for in the surrogate data (Smith and Kohn, 2008). From these surrogate data, surrogate CCHs were calculated by replacing $x_{n}^{i}$ with the trials of the artificial spike trains for the corresponding single unit (surrogate CCHs). This procedure was repeated 1000 times. The resulting surrogate CCHs reflected the level of correlation when both units are statistically independent. Finally, average surrogate CCHs were subtracted from the CCHs to yield the corrected CCHs.
 
-## Cluster-based surrogate test
+Auto-correlation histograms (ACHs) were generated by setting $x_{n_{1}}^{i}=x_{n_{2}}^{i}$ in Equation 1 for all $i$, and corrected by generating artificial spike trains and substituting them for $x_{n_{1}}^{i}$ and $x_{n_{2}}^{i} $in Equation 1 for the calculation of surrogate ACHs.
+
+### Cluster-based surrogate test
 
 For statistical purposes, all surrogate CCHs were corrected by their own average to achieve an equally processed set compared to the corrected CCHs, containing just the chance level of correlation (corrected surrogate CCHs). These 1000 corrected surrogate CCHs were then used to run a nonparametric cluster-based surrogate test, a variation of the cluster-based permutation test (Maris and Oostenveld, 2007), to deal with the multiple comparison problem of testing all time lags. Cluster-based tests are tests for dependent variables, which consider contiguous values fulfilling a certain criterion as a cluster. Instead of calculating a test statistic for individual values, the accumulated values of clusters are tested against a null distribution of accumulated cluster values by chance. In our case, adjacent time lags are not independent, since functional coupling of neurons does not follow millisecond precision. We checked significance for a time window of −200 ms to 200 ms. Calculation of this test statistic involved the following steps:
 
-This procedure was repeated for every CCH. A critical alpha-level of 0.05 was selected. Nevertheless, at this processing step we still have a total alpha-error equal to our set criterion times the number of single unit pairs tested. For complete multiple comparison correction, false discovery rate correction was applied on all found clusters across all compared pairs of single units (Benjamini and Hochberg, 1995) to yield(2)P(k)≤ kmq
+This procedure was repeated for every CCH. A critical alpha-level of 0.05 was selected. Nevertheless, at this processing step we still have a total alpha-error equal to our set criterion times the number of single unit pairs tested. For complete multiple comparison correction, false discovery rate correction was applied on all found clusters across all compared pairs of single units (Benjamini and Hochberg, 1995) to yield
+
+$$
+P_{(k)}\leq \frac{k}{m}q
+$$
 
 where q is our set criterion of 0.05 false positives, m the total number of clusters, k = 1,…,m, and P(k) are the p-values of all clusters in increasing order. All clusters whose p-values did not fulfill Equation 2 were rejected. By doing so we achieved a total alpha-level of 0.05 for each dataset.
 
-## Network analysis
+### Network analysis
 
 For every pair of neurons it was evaluated if there were significant troughs or peaks in their CCHs. If there was only a trough or peak with negative (or positive) time lags, this pair was denoted as having a connection from the input to the target (or the target to the input) unit (Figure 2E). In case there were several clusters on both sides of the zero time lag, or a cluster straddling the zero time lag, we checked the unsigned maximum peak of the corresponding CCH. If the maximum peak was shifted more than 2 ms to either side, the connection was considered unidirectional, as described before. Otherwise, the connection between the two single units was considered functional bidirectional (Figure 2E), since the units are driven by the circuit at the same time. We systematically varied the maximum peak shift (0–5 ms) for bidirectional classification with little to no change to the results. Repeating this procedure for all pairs of single units led to a binary directed connectivity matrix (Figure 3A).
 
 To characterize brain networks on every scale, network measures from the multidisciplinary field of graph theory were utilized (Rubinov and Sporns, 2010).
 
-A network is defined by the nodes (N) and connections between pairs of nodes. In our network nodes represented single units. For all following network measures, n is the number of nodes and l the number of connections. aij is the connection between nodes i and j: aij=1 if the link (i, j) exists and aij=0 otherwise (aii=0 for all i). Furthermore, we define:
+A network is defined by the nodes ($N$) and connections between pairs of nodes. In our network nodes represented single units. For all following network measures, n is the number of nodes and l the number of connections. $a_{ij}$ is the connection between nodes $i$ and $j$: $a_{ij}=1$ if the link $(i, j)$ exists and $a_{ij}=0$ otherwise ($a_{ii}=0$ for all $i$). Furthermore, we define:
 
-Degree centrality, ki, is the number of connections to a node i.(3)ki= ∑j∈Naij
+Degree centrality, ki, is the number of connections to a node i.
 
-Shortest path length, di,j, is the minimum number of nodes connecting nodes i and(4)dij= ∑auv∈gi↔j  auv
+$$
+k_{i}= \sumj\inNa_{ij}
+$$
 
-j. where gi ↔j is the shortest path between i and j.
+Shortest path length, di,j, is the minimum number of nodes connecting nodes $i$ and
 
-Characteristic path length, L, is the average shortest path length between all pairs of nodes of the network.(5)L= 1n(n−1)∑i,j∈Ni≠jdij
+$$
+d_{ij}= \suma_{uv}\ing^{i↔j}  a_{uv}
+$$
 
-Betweenness centrality, gi, is the average fraction of shortest paths that pass through node i.(6)gi= 1(n−1)(n−2)∑h,j∈Nh≠j,h≠i,j≠iρhj(i)ρhj
+$j$. where $g^{i ↔j}$ is the shortest path between $i$ and $j$.
 
-where ρhj is the number of shortest paths between h and j, and ρhj(i) is the number of shortest paths between h and j that pass through i.
+Characteristic path length, L, is the average shortest path length between all pairs of nodes of the network.
 
-Clustering coefficient of the network, C, is the average fraction of existing to maximal possible interconnections between all directly connected nodes to node i.(7)C= 1n∑i∈N2tiki(ki−1)
+$$
+L= \frac{1}{n(n−1)}\sumi,j\inNi\neqjd_{ij}
+$$
 
-Where ki are all connected neighbors to node i and ti is the number of links between them.
+Betweenness centrality, $g_{i}$, is the average fraction of shortest paths that pass through node $i$.
 
-Small-worldness, SW, is the ratio of C and L each normalized by the same measurements for a size matched random network.(8)SW= C/CrandL/Lrand
+$$
+g_{i}= \frac{1}{(n−1)(n−2)}\sumh,j\inNh\neqj,h\neqi,j\neqi\frac{ρ_{hj}^{(i)}}{ρ_{hj}}
+$$
+
+where $ρ_{hj}$ is the number of shortest paths between $h$ and $j$, and $ρ_{hj}^{(i)}$ is the number of shortest paths between $h$ and $j$ that pass through $i$.
+
+Clustering coefficient of the network, C, is the average fraction of existing to maximal possible interconnections between all directly connected nodes to node $i$.
+
+$$
+C= \frac{1}{n}\sumi\inN\frac{2t_{i}}{k_{i}(k_{i}−1)}
+$$
+
+Where $k_{i}$ are all connected neighbors to node $i$ and $t_{i}$ is the number of links between them.
+
+Small-worldness, SW, is the ratio of C and L each normalized by the same measurements for a size matched random network.
+
+$$
+SW= \frac{C/C_{rand}}{L/L_{rand}}
+$$
 
 Small-world networks are formally defined as networks that are significantly more clustered than random networks, yet have approximately the same characteristic path length as random networks (Watts and Strogatz, 1998).
 
-Modularity, Q, is the proportion of all links within modules M with links between modules, when the network is fully subdivided into non-overlapping modules in a way that maximizes the number of within-group connections and minimizes the number of between-group connections.(9)Q= ∑u∈M [euu−(∑v∈M euv)2]
+Modularity, Q, is the proportion of all links within modules M with links between modules, when the network is fully subdivided into non-overlapping modules in a way that maximizes the number of within-group connections and minimizes the number of between-group connections.
 
-where euv is the fraction of all links that connect nodes in module u with nodes in module v.
+$$
+Q= \sumu\inM [e_{uu}−(\sumv\inM e_{uv})^{2}]
+$$
 
-Rich-club coefficient, R, at degree k is the fraction of connections between all nodes of degree k or higher, with respect to the maximum possible number of such connections.(10)R(k)= 2E>kN>k(N>k−1)
+where $e_{uv}$ is the fraction of all links that connect nodes in module $u$ with nodes in module $v$.
 
-where E>k is the number of connections among the N>k nodes having degree of k or higher (Colizza et al., 2006). To reduce inaccuracy for large degrees we calculated the rich-club coefficient only in degree bins containing at least 5 single units (Nk≥5).
+Rich-club coefficient, R, at degree $k$ is the fraction of connections between all nodes of degree $k$ or higher, with respect to the maximum possible number of such connections.
 
-## Statistics for network measures
+$$
+R(k)= \frac{2E_{>k}}{N_{>k}(N_{>k}−1)}
+$$
+
+where $E_{>k}$ is the number of connections among the $N_{>k}$ nodes having degree of $k$ or higher (Colizza et al., 2006). To reduce inaccuracy for large degrees we calculated the rich-club coefficient only in degree bins containing at least 5 single units $(N_{k}\geq5)$.
+
+### Statistics for network measures
 
 For statistical purposes we created two types of surrogate network sets per dataset (1000 partitions each). All surrogate networks were created by shuffling the connectivity matrix. Since connectivity is a function of distance (Smith and Kohn, 2008; Gerhard et al., 2011), distance dependency was reflected in our surrogate data. During shuffling, the number of connections for single units on the same electrode, the same array, the same cortical area, and the different inter-area connections were always held constant (Figure 3B). For all surrogate networks, the total number of single units, number of connections, and the distance-dependent ratio of bi- and uni-directional connections were kept as similar as possible to the original connectivity matrix with only the required network parameter shuffled. We used these sets of surrogate networks to test the small-world coefficient, the degree centrality distribution, and the betweenness centrality distribution. Statistical testing of the rich-club coefficient and conservative testing of modularity requires surrogate networks with a matched degree centrality distribution. To this end, we generated a second set of surrogates networks with the degree distribution preserved. One issue that could arise due to shuffling is that the connectivity matrix of some units or groups of units could become disconnected from the main part of the network, since the calculation of most network measures requires a fully connected, not segregated, network. For this purpose, each surrogate network was tested for segregation into different components. If a network was segregated, it was discarded and the process repeated until 1000 non-segregated networks were generated.
 
@@ -284,32 +646,40 @@ To determine if the degree, the betweenness centrality distribution, or the rich
 
 Since some electrode pairs between F5 and M1 are closer than some other pairs within M1 for monkey M, we repeated statistics for network measures for all datasets from monkey M with physical distance dependent shuffling instead of the above mentioned categories such as 'same electrode', 'same array,' and 'same area'. To this end, we calculated the pairwise physical distance between all pairs of electrodes based on an anatomical diagram (Figure 1B) and defined distance groups with a stepsize of 3.6 mm including 0 mm as one group. The physical distance between AIP and the two other areas is misleading, since the neuronal axons have to pass the central sulcus. Therefore, we set all distances between AIP and the two other areas as a separate maximum distance group. Note that we had to define groups to be able to shuffle connections. Nevertheless, the categorical distance dependent shuffling was subdivided into 8 groups, which is more conservative than the 6 groups defined in the original analysis. All statistics for network measures gave nearly identical results, with no case where a measure was significant when it was not for categorical distance dependent shuffling, and vice versa for non-significant measures. In addition, the normalized rich-club coefficient, which depends on the surrogate networks, was highly correlated (r = 0.98) between the two different ways of distance dependent shuffling.
 
-## Equal rate model
+### Equal rate model
 
 For validation of the estimates of directed functional connectivity, as well as to check for a possible bias in the detected network topology obtained using CCHs, we modeled artificial directed neuronal networks with the same firing rate distribution as the recorded single units. Two sets of networks were generated, one simple network (SN) set with normally distributed connectivity and one complex network (CN) set with heterogeneously distributed connectivity, and in agreement with previous studies both with weak connection strength between neuronal pairs (Cohen and Kohn, 2011).
 
-For each simulated neuron, artificial spike trains were generated with Poisson distributed firing and an average rate randomly drawn from the real firing rate distribution. For the SN set, the number of connections from each neuron to other neurons was drawn randomly from a Gaussian distribution (mean: 5.22, SD: 3.214), mirroring the average degree centrality distribution of surrogate networks. For the complex network set (CN), the number of connections followed precisely the EXPTPL model for the average degree centrality distribution of the measured networks (Figure 4A), with a weak rich-club and small-world topology. In case one neuron was connected to another, spikes were added in a probabilistic manner for a certain amount of time, starting with time point t+1 in ms relative to the spike event, reflecting the axonal delay. The network was updated every millisecond, allowing for multiple interactions. Gamma functions were used as temporal transfer kernels, given by(11)f(t|a,b)= 1baΓ(a)ta−1e−tb
+For each simulated neuron, artificial spike trains were generated with Poisson distributed firing and an average rate randomly drawn from the real firing rate distribution. For the SN set, the number of connections from each neuron to other neurons was drawn randomly from a Gaussian distribution (mean: 5.22, SD: 3.214), mirroring the average degree centrality distribution of surrogate networks. For the complex network set (CN), the number of connections followed precisely the EXPTPL model for the average degree centrality distribution of the measured networks (Figure 4A), with a weak rich-club and small-world topology. In case one neuron was connected to another, spikes were added in a probabilistic manner for a certain amount of time, starting with time point $t+1$ in ms relative to the spike event, reflecting the axonal delay. The network was updated every millisecond, allowing for multiple interactions. Gamma functions were used as temporal transfer kernels, given by
 
-where f is the probability of an additional spike appearing, t is time in ms, a is a constant set to 5 and b is randomly varied between 0 and 3 (Figure 2—figure supplement 3A). The integral of each gamma kernel was set to 0.02, reflecting the connection strength. Since we added spikes to the network, which increases the average firing rates, we lowered the starting rates by a factor and repeated the process until the average rate resembled the rate before adding the connections. As a criterion for similarity we correlated the randomly drawn rates with the network rates and stopped when the residual error was below 0.005. For the results in Figure 2—figure supplement 3 and Figure 4—figure supplement 1 we did not vary the connection strength in order to avoid interaction effects between connection strength and firing rate. However, we varied connection strength randomly between 0.005 and 0.035 with no detectible change to the results. Alternatively, we used a Boxcar kernel (20 ms, integral: 0.02) instead of gamma functions as transfer kernel, which did not degrade the results of this model.
+$$
+f(t|a,b)= \frac{1}{b^{a}Γ(a)}t^{a−1}e^{\frac{−t}{b}}
+$$
+
+where $f$ is the probability of an additional spike appearing, $t$ is time in ms, $a$ is a constant set to 5 and $b$ is randomly varied between 0 and 3 (Figure 2—figure supplement 3A). The integral of each gamma kernel was set to 0.02, reflecting the connection strength. Since we added spikes to the network, which increases the average firing rates, we lowered the starting rates by a factor and repeated the process until the average rate resembled the rate before adding the connections. As a criterion for similarity we correlated the randomly drawn rates with the network rates and stopped when the residual error was below 0.005. For the results in Figure 2—figure supplement 3 and Figure 4—figure supplement 1 we did not vary the connection strength in order to avoid interaction effects between connection strength and firing rate. However, we varied connection strength randomly between 0.005 and 0.035 with no detectible change to the results. Alternatively, we used a Boxcar kernel (20 ms, integral: 0.02) instead of gamma functions as transfer kernel, which did not degrade the results of this model.
 
 For both sets of networks (SN and CN), ten artificial networks with 100 neurons were calculated and processed identically to the real data. Signal detection theory was used to evaluate detectability of connections based on significant CCH peaks or troughs with the originally modeled networks as a reference. Each pairing was classified into one of four categories: 'Hit', if a connection was correctly detected, 'Miss', if a connection was not detected, 'Correct rejection' (CR), if a non-existing connection was detected as no connection, and 'False Alarm' (FA), if a non-existing connection was detected as a connection.
 
-## Subsampling model
+### Subsampling model
 
 We generated an artificial neuronal plane with random (Poisson distributed), distance-dependent connectivity density based on our empirically collected data (Figure 3B). We modeled 2 cortical areas, each divided into 5 sub-regions coverable by an array, each sub-region covered with 160 electrode positions, and 20 single units per electrode, giving a total of 32,000 neurons. Figure 4—figure supplement 2A shows the degree centrality distribution of the full network with an average degree of 3000 and a standard deviation of 70.
 
 Next, we randomly selected 12 subsamples from the neuronal plane with exactly the number of neurons detected as in the real datasets. Subsampling was done with the restriction that always both areas were chosen, with 2 array sub-regions per area and 32 electrode positions per sub-region, reflecting the real recording configuration in most of the datasets. Subsampled networks were then analyzed with the same complex network measures as the real data.
 
-To address the problem that subsampling could artificially cause a heavy tailed degree centrality distribution, even if the underlying connectivity is random, as described in Han et al. (2005), we had a closer look at the parameters mentioned in this study. The average degree of their analyzed networks was 2.19 (SD = 0.45, min = 1.84, max = 2.98), in contrast to our average (non-normalized) degree of 8.28 (SD = 5.73, min = 3.87, max = 25.59). Note that the highest average degree of their analyzed networks was smaller than the lowest average degree of our analyzed networks. More importantly, the underlying networks of their study were strongly fragmented into components (min = 70, max = 591 components), while we excluded all single units which were not part of the largest component, resulting in one component for analysis, while their largest average component size was 20.2. Our network analysis was done on average on 70 single units (min 30, max 148 single units). Based on these different network parameters we concluded that the detected topology, in particular falsely detected power law degree distribution, could be due to the fragmentation into different components. To evaluate this, we created neuronal planes with distance dependent connection density of 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, and 5 times of the empirically collected data. After subsampling, we estimated the goodness of fit for the power law model to the degree centrality distribution, the size of the largest component relative to the whole network, and the level of compartmentalization, described by(12)Compartmentalization=P−1N−1
+To address the problem that subsampling could artificially cause a heavy tailed degree centrality distribution, even if the underlying connectivity is random, as described in Han et al. (2005), we had a closer look at the parameters mentioned in this study. The average degree of their analyzed networks was 2.19 (SD = 0.45, min = 1.84, max = 2.98), in contrast to our average (non-normalized) degree of 8.28 (SD = 5.73, min = 3.87, max = 25.59). Note that the highest average degree of their analyzed networks was smaller than the lowest average degree of our analyzed networks. More importantly, the underlying networks of their study were strongly fragmented into components (min = 70, max = 591 components), while we excluded all single units which were not part of the largest component, resulting in one component for analysis, while their largest average component size was 20.2. Our network analysis was done on average on 70 single units (min 30, max 148 single units). Based on these different network parameters we concluded that the detected topology, in particular falsely detected power law degree distribution, could be due to the fragmentation into different components. To evaluate this, we created neuronal planes with distance dependent connection density of 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, and 5 times of the empirically collected data. After subsampling, we estimated the goodness of fit for the power law model to the degree centrality distribution, the size of the largest component relative to the whole network, and the level of compartmentalization, described by
 
-where N is the number of neurons in the network and P the number of separate components (Figure 4—figure supplement 2C).
+$$
+Compartmentalization=\frac{P−1}{N−1}
+$$
 
-## Frequency analyses
+where $N$ is the number of neurons in the network and P the number of separate components (Figure 4—figure supplement 2C).
+
+### Frequency analyses
 
 We estimated the oscillatory behavior of significant connections of single units (according to CCHs) and the spiking of single units themselves (Bair et al., 1994; Mureşan et al., 2008) (according to ACHs). Since different oscillation frequencies could be present, we computed power spectra of all corrected CCHs and ACHs (Mureşan et al., 2008). The power spectrum gives the magnitude of a signal as a function of frequency. To avoid distortions by sharp peaks with small delays that are occasionally present in CCHs (Fujisawa et al., 2008), which cause a broad band increase in power due to their impulse like properties, we cut out the time range from −5 ms to 5 ms and interpolated the segment linearly. Importantly, sharp peaks were only removed for spectral analyses and not for functional connectivity analyses. Frequency spectra were computed using a discrete Fourier transform algorithm (Siegel et al., 2009) (100 logarithmically scaled frequencies from 3 to 100 Hz). Note that computing power spectra of CCHs and ACHs instead of raw spike trains reduced the influence of firing rate on the power spectrum as well as the problem of frequency leakage due to the binary properties of the spike train (Bair et al., 1994). In analyzing such a large range of frequencies we had to take the specific characteristics of CCHs into account. Underlying oscillation frequencies in physiology are not phase stable, which leads to a limited number of side lobes in the CCH or ACH. The number of side lobes are also strongly frequency dependent, which makes the ideal window length for Fourier transformation around the 0 time lag frequency dependent. We used Hanning windows of four times the frequency of interest period (with a maximum of 1000 ms and a minimum of 150 ms) aligned on the 0 time bin of the CCHs (Figure 5—figure supplement 1A), resulting in approximately 1/frequency and half octave spectro-temporal bandwidth. Each frequency bin was divided by its window length for correct scaling of all frequency bins. To determine significance, we repeated spectral analysis on the corrected surrogate CCHs and ACHs, subtracted their mean spectra from the corresponding spectra of real data and used a cluster-based surrogate test as described before to evaluate the significance of the underlying frequencies in the CCHs.
 
 Spectral analysis of the ACHs differed in one point. Hanning windows covering only one half of the ACHs (with a maximum of 500 ms and a minimum of 75 ms) aligned on the 0 time lag were used (Figure 5—figure supplement 1B). By doing so, an accurate measure of the full frequency range with little distortion of refractory effects present in ACHs (Mureşan et al., 2008) was obtained.
 
-## Oscillatory vs non-oscillatory synchronization model
+### Oscillatory vs non-oscillatory synchronization model
 
 We generated pairs of neurons with 600 trials and a trial length of 3.1 s, similar to our recorded data. Spike trains of neurons were generated as a probabilistic process. In case of oscillatory firing neurons, the probability function was a 20 Hz sinusoid. For non-oscillating neurons, we first randomized the 20 Hz sinusoid, in a second step filtered it with a non-causal 50 Hz low-pass filter (Butterworth filter, fourth order) in order to produce a similar decay in spiking probability, and in a last step the filtered probability vector was variance matched with the 20 Hz sinusoid to have a maximum degree matching between the two kinds of probability functions. For each trial the same probability function was used for both neurons with a spiking probability of 0.05 per ms to stay in a physiological range. Independent Poisson distributed noise was added to both neurons representing background stochastic firing, resulting in an average rate of around 5 Hz per neuron. Varying the different parameters within physiological ranges did not alter the results. To simulate different degrees of coupling strengths we systematically varied the trial-wise time offset in spiking of the pair of neurons to each other from completely synchronized to a jitter of a complete cycle (50 ms) in steps of 1 ms.

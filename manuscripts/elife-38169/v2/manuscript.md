@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.38169.001 In familiar environments, the firing fields of entorhinal grid cells form regular triangular lattices. However, when the geometric shape of the environment is deformed, these time-averaged grid patterns are distorted in a grid scale-dependent and local manner. We hypothesized that this distortion in part reflects dynamic anchoring of the grid code to displaced boundaries, possibly through border cell-grid cell interactions. To test this hypothesis, we first reanalyzed two existing rodent grid rescaling datasets to identify previously unrecognized boundary-tethered shifts in grid phase that contribute to the appearance of rescaling. We then demonstrated in a computational model that boundary-tethered phase shifts, as well as scale-dependent and local distortions of the time-averaged grid pattern, could emerge from border-grid interactions without altering inherent grid scale. Together, these results demonstrate that environmental deformations induce history-dependent shifts in grid phase, and implicate border-grid interactions as a potential mechanism underlying these dynamics.
+In familiar environments, the firing fields of entorhinal grid cells form regular triangular lattices. However, when the geometric shape of the environment is deformed, these time-averaged grid patterns are distorted in a grid scale-dependent and local manner. We hypothesized that this distortion in part reflects dynamic anchoring of the grid code to displaced boundaries, possibly through border cell-grid cell interactions. To test this hypothesis, we first reanalyzed two existing rodent grid rescaling datasets to identify previously unrecognized boundary-tethered shifts in grid phase that contribute to the appearance of rescaling. We then demonstrated in a computational model that boundary-tethered phase shifts, as well as scale-dependent and local distortions of the time-averaged grid pattern, could emerge from border-grid interactions without altering inherent grid scale. Together, these results demonstrate that environmental deformations induce history-dependent shifts in grid phase, and implicate border-grid interactions as a potential mechanism underlying these dynamics.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ To test this prediction, we reexamined datasets from two previous environmental 
 
 ## Results
 
-## Boundary-tethered shifts in grid phase are observed in recorded grid cells during rescaling deformations
+### Boundary-tethered shifts in grid phase are observed in recorded grid cells during rescaling deformations
 
 To test whether boundary-tethered shifts in grid phase are observed during environmental deformations, we reanalyzed data from two classic deformation studies ((Barry et al., 2007) and (Stensola et al., 2012)). In Barry et al., 2007), rats were familiarized with either a 100 cm x 100 cm square or a 100 cm x 70 cm rectangular open environment, and then reintroduced to deformed and undeformed versions of these environments (i.e. all combinations of chamber lengths and widths of 70 cm or 100 cm), while the activity of grid cells was recorded (familiar square: 23 grid cells; familiar rectangle: 13 grid cells meeting criteria; see Materials and methods). In Stensola et al. (2012), rats were familiarized with a 150 cm x 150 cm square open environment, and then reintroduced to deformed (100 cm x 150 cm rectangular) and undeformed versions of this environment, while data were recorded from 51 grid cells. As previously reported (Barry et al., 2007; Stensola et al., 2012), the time-averaged grid patterns of most of these grid cells appeared to rescale when the environment was deformed, though the grid patterns of a subset of cells with smaller grid scales did not.
 
@@ -41,9 +41,25 @@ First, we separated the spiking data of each cell according to the most recently
 
 Even in a familiar environment, finite sampling noise will cause this measure of shift to be nonzero. Compared to this baseline, grid shift increased along deformed, but not undeformed, dimensions (Figure 2A; Figure 2—source data 1). An increased shift was observed even in cells with small-scale grid patterns (Figure 2B), as well as cells whose time-averaged grid patterns did not appear to rescale (Figure 2C). This increase in shift along deformed dimensions was not due to differences in sampling during deformation trials (Figure 2—figure supplement 1). In sum, these results indicate that deformation-induced phase shifts are observed in grid cells regardless of their scale or the extent to which their time-averaged rate maps resemble a rescaling.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig2-v2.jpg)
+
+**Figure 2.:** Data from all experiments in (Barry et al., 2007; Stensola et al., 2012) combined. All error bars denote mean ±SEM. (A) Grid shift as measured by the relative phase between opposing boundary rate maps along deformed and undeformed dimensions. Because of the periodic nature of the grid pattern, shift is bounded by one half of the grid scale. Therefore, we quantify shift as a ratio of shift / (scale/2). (paired t-tests, 1st familiar vs. deformed: t(80) = 5.44, p<0.001; undeformed vs. deformed: t(83) = 4.21, p=0.001; 2nd familiar vs. deformed: t(82) = 5.07, p<0.001; all other comparisons: t < 1.10, p>0.2731; Figure 2—source data 1). (B) Histogram of grid scale (left) and shift ratio separated by grid scale along deformed dimensions with mean familiar shift ratio subtracted (right). (t-test versus 0, scale <60 cm: t(45) = 3.43, p=0.001; scale >60 cm: t(40) = 4.67, p<0.001; Figure 2—source data 1). (C) Histogram of rescaling (left) and shift ratio separated by rescale along deformed dimensions with mean familiar shift ratio subtracted (right). Because rescaling could vary within cell along deformed dimensions, each condition and deformed dimension was treated independently. (t-test versus 0, rescaling <50%: t(61) = 3.39, p=0.001; rescaling >50%: t(130) = 7.05, p<0.001; Figure 2—source data 1). **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** To control for sampling differences following each boundary contact during each trial, we matched the sampling distributions of opposing boundary rate maps when computing shift. (A) Example sampling distributions and boundary rate maps when all data following boundary contacts are included (top row) and when the sampling distributions are equated (bottom row). (B) Because the deformed environments differ in shape and size from the familiar environments, and because the particular movement trajectories of the animal differ from trial to trial, there may be differences in the baseline amount of shift one would expect to observe across conditions. To control for this possibility, we used the whole-trial rate map of each cell as a template for simulating Poisson spikes using the same trajectory as the recorded data. From these simulations, we extracted boundary tethered rate maps and computed shifts between maps tethered to opposite boundaries. We repeated this process 100 times, and took the mean as our measure of the shift one would expect by chance for a cell with that particular rate map and sampling trajectory. This control reflects the shift one would expect if each boundary rate map were a random draw from a stable whole-trial rate map. The shift observed along deformed dimensions exceeded this control (paired t-test: t(87)=5.67, p<0.001). Moreover, the difference between the observed and control shift values was significantly larger along deformed dimensions than that of all other conditions (paired t-tests, 1st familiar vs. deformed: t(80) = 2.66, p=0.010; undeformed vs. deformed: t(83) = 3.77, p<0.001; 2nd familiar vs. deformed: t(82) = 2.64, p=0.010; all other comparisons: t < 1.9, p>0.060; Figure 2—source data 1).
+
 Next, we tested whether the grid pattern of each boundary rate map maintained its familiar phase relative to the corresponding boundary. To address this question, we compared each boundary rate map to the whole-trial familiar environment rate map, while varying the alignment of the two maps along the deformed dimension. If the spatial relationship relative to the most recently contacted boundary is preserved, then each boundary rate map should be most similar to the familiar environment rate map when the two maps are aligned by the corresponding boundary. If, on the other hand, reshaping a familiar environment rescales the grid pattern symmetrically, then the familiar and boundary rate maps should be equally well aligned by either the corresponding or the opposite boundary. Consistent with the boundary-tethered prediction, we found that the correlation between the deformed environment boundary rate map and the familiar environment rate map was maximized when the two maps were aligned by the corresponding boundary rather than the opposite boundary (313 of 390 comparisons; sign test versus 50%: p<0.001; Figure 2—source data 2).
 
 Boundary-tethered shifts in grid phase may contribute to the appearance of rescaling. If so, then the appearance of rescaling should be reduced when the data are divided according to the most recently contacted boundary. In contrast, if boundary-tethered shifts do not contribute to the appearance of rescaling, then a similar amount of rescaling should be observed regardless of whether or not data are conditioned on the most recently contacted boundary. To test these predictions, we computed the grid rescaling factor between the familiar rate map and each deformed-dimension boundary rate map, aligned by the corresponding boundary. For comparison, we also computed the grid rescaling factor between the familiar rate map and the whole-trial rate map, aligned by the same boundary. To ensure that any reduction in rescaling observed was not the product of differential spatial sampling following boundary contact, we randomly selected subsets of the whole-trial data to match the sampling distributions of the whole-trial rate map and boundary rate map for each comparison (Figure 2—figure supplement 1). The mean rescaling across 100 iterations of this analysis was then taken as the final measurement of whole-trial rate map rescaling. This analysis revealed a significant reduction in the appearance of rescaling following boundary-conditioning (Figure 3A; Figure 3—source data 1), consistent with a contribution of boundary-tethered phase shifts to the appearance of rescaling in grid cells.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig3-v2.jpg)
+
+**Figure 3.:** Data from all experiments in (Barry et al., 2007; Stensola et al., 2012) combined unless otherwise noted. All error bars denote mean ± SEM. All reported statistics are paired t-tests, unless otherwise noted. (A) Whole-trial versus boundary-conditioned grid rescaling factors, normalized to range from no rescaling (0%) to a matched rescaling (100%). Boundary-conditioning resulted in a significant reduction in the appearance of rescaling (t(194) = 9.54, p<0.001; Figure 3—source data 1). (B) Field length along deformed and undeformed dimensions during compression deformations. (1st familiar vs. deformed: t(80) = 3.70, p<0.001; undeformed vs. deformed: t(86) = 2.43, p=0.017; 2nd familiar vs. deformed: t(82) = 3.49, p<0.001; all other comparisons: t < 1.45, p>0.151; Figure 3—source data 2). (C) Change in firing rates across conditions. (Peak firing rates, 1st familiar vs. deformation: t(80) = 3.57, p<0.001; 2nd familiar vs. deformation: t(82) = 3.34, p=0.001; 1st familiar vs. 2nd familiar: t(76) = 0.91, p=0.364; Mean firing rates, 1st familiar vs. deformation: t(80) = 3.57, p<0.001; 2nd familiar vs. deformation: t(82) = 3.34, p=0.001; 1st familiar vs. 2nd familiar: t(76) = 0.91, p=0.364; Mean firing rates, 1st familiar vs. deformation: t(80) = 0.54, p=0.591; 2nd familiar vs. deformation: t(82) = 0.03, p=0.978; 1st familiar vs. 2nd familiar: t(76) = 0.71, p=0.479; Figure 3—source data 3). (D) Examples of recorded and predicted rate maps during one deformation trial for two simultaneously recorded cell from (Stensola et al., 2012). (E) Correlation values between the recorded rate map and the rate maps predicted by the boundary-tethered model versus a matched rescaling during compression deformations (Figure 3—source data 4). (F) Cumulative distribution of the correlation values depicted in (E). The boundary-tethered model results in fewer low-similarity predictions than a matched rescaling (two-sample Kolmogorov-Smirnov test: D = 0.2030, p=0.007: Figure 3—source data 4). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) To predict rate maps from the boundary-tethered shifts for each cell and compression deformation trial we first created predicted boundary rate maps from the familiar environment rate map for each displaced boundary. These rate maps were shifted versions of the familiar rate map, aligned by the corresponding boundary. If the length of a boundary changed, then the central portion of the familiar rate map was used to construct the boundary rate map. Next, the contribution of each boundary rate map at each location was weighted by the actual probability of sampling that location following contact with the corresponding boundary for that deformation trial, computed from the actual path of the rat during that deformation trial. The final boundary-tethered prediction was then the smoothed sum of these predicted boundary rate maps. (B) Example recorded rate maps, accompanied by the predictions from the boundary-tethered model and a rescaling matched to the extent of the deformation. Rat, session, and cell identity indicated below each set of recorded rate maps.
 
 We next tested whether environmental deformations affect grid field size. Boundary-tethered phase shifts, when averaged over the whole trial, should yield an increase in field length primarily along deformed dimensions, regardless of whether the environment was compressed or stretched. On the other hand, a pure rescaling of the grid pattern predicts an increase in field length during stretching deformations, but a decrease in field length during compressions. Because both accounts predict an increase in field length during stretching deformations, we focused on compression trials. From the whole-trial rate maps of each cell, we computed the field length during compression deformations, separately along deformed and undeformed dimensions. This analysis revealed an increase in field length along deformed, but not undeformed, dimensions relative to field length in the familiar environment (Figure 3B; Figure 3—source data 2), consistent with the boundary-tethered prediction. For completeness, we also examined stretching deformations. Field length along deformed dimensions also increased numerically during these deformations (mean ±SEM, familiar: 33.27 ± 5.39 cm; deformed: 34.81 ± 4.17 cm), although this effect did not reach significance in this small sample (n = 13; paired t-test: t(12) = 0.22, p=0.828).
 
@@ -53,7 +69,7 @@ Finally, we tested whether deformed rate maps could be accurately predicted by b
 
 In sum, we have shown that conditioning grid cell activity according to the most recently contacted boundary during environmental deformations reveals grid patterns which are shifted relative to one another, anchored to the conditioned boundary, and appear less rescaled than the whole-trial grid pattern. Furthermore, we have shown that whole-trial field length increases along deformed dimensions, and whole-trial peak firing rates decrease during deformations while mean firing rate remains unchanged, matching boundary-tethered predictions. Finally, we have demonstrated that the boundary-tethered phase shifts, coupled with the particular sampling of the navigator, can accurately predict whole-trial rate maps during deformations whether or not the resulting maps resemble a matched rescaling. Together, these results provide convergent evidence that boundary-tethered shifts in grid phase are present during environmental deformations and contribute to distortions of the time-averaged grid pattern.
 
-## A model of border cell-grid cell interactions reproduces boundary-tethered phase shifts, scale-dependent rescaling, and local distortions during deformations
+### A model of border cell-grid cell interactions reproduces boundary-tethered phase shifts, scale-dependent rescaling, and local distortions during deformations
 
 Electrophysiological experiments have shown that rescaling a familiar environment can induce a corresponding rescaling of time-averaged grid patterns, dependent on grid scale (Barry et al., 2007; Stensola et al., 2012). Relatedly, when part of one wall is displaced, the time-averaged grid pattern is locally distorted near that wall, with grid fields neighboring that wall shifting in the direction of displacement (Krupic et al., 2018). Our reanalysis has demonstrated that boundary-tethered shifts in grid phase are observed during rescaling deformations and contribute to the appearance of rescaling in the time-averaged rate maps of grid cells. Together, these results suggest that boundary-tethered phase shifts may also contribute to the scale-dependent and local nature of these deformation-induced distortions.
 
@@ -66,6 +82,22 @@ We addressed this possibility computationally by implementing a spiking network 
 In addition to the connections among units within its module, each grid unit also received initially random excitatory input from all border units. During familiarization, these connections developed through experience via a Hebbian learning rule in which connections between coactive grid and border units were strengthened at the expense of connections from inactive border units (Grossberg, 1980) (Figure 4B; see Materials and methods). Once familiarized, border unit input acted to reinstate the grid network state associated with the same pattern of border unit responses during familiarization. This grid reinstatement occurred even when border inputs were activated at a new location, such as when a displaced boundary was encountered. In a rescaled environment, this grid reinstatement led to shifts in grid phase, such that the phase relative to the most recent border input matched the phase entrained during familiarization in the undeformed environment (Figure 4C,D). Averaged over time, these shifts in grid phase can resemble a rescaling (Figure 4E). Thus, deformations of a familiar environment induced boundary-tethered phase shifts in modeled grid units which can contribute to the appearance of rescaling, similar to those we observed in recorded grid cells.
 
 Next, we tested whether the appearance of rescaling in this model depends on grid scale. To do so, we first familiarized a naive virtual rat with a 150 cm x 150 cm square environment. During this familiarization period, the border-grid connectivity self-organized via Hebbian learning. The virtual rat then explored the familiar environment and deformed versions of this environment without new learning (chamber lengths between 100 cm to 200 cm in increments of 25 cm; chamber sizes chosen to match experiment (Stensola et al., 2012)). Consistent with previous experimental reports (Barry et al., 2007; Stensola et al., 2012), we observed that these deformations induced rescaling of time-averaged rate maps in some grid modules (Figure 5A). To quantify this module-dependent rescaling, we computed the grid rescaling factor required to stretch or compress the time-averaged rate maps in the familiar environment to best match the rate maps in the deformed environment, separately for each unit. We found that the grid patterns of units in large-scale modules rescaled with the environment, but grid patterns of units in small-scale modules tended not to rescale (Figure 5B), as observed experimentally (Stensola et al., 2012). Rate-based simulations with larger border fields covering 100% of the length of one wall, and simulation in which boundary-tethered shifts were induced by fiat both reproduced these results (Figure 5—figure supplement 1; Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig5-v2.jpg)
+
+**Figure 5.:** (A) Rate maps from one grid unit from each module across all rescaling deformations. Colors normalized to the maximum across each set of rate maps. Peak firing rate for each trial noted below the lower left corner of each map. (B) Grid rescaling factors for each module when the familiar open environment is rescaled to various chamber lengths (right). Error bars denote standard error of the mean (SEM) across 30 random grid units. Color denotes module. Distribution of grid scales for each module indicated (left). (C) Rate maps of one grid unit from each module across each partial deformation, plotted as in (A). (D) Correlation between the familiar and deformed environment rate maps across the population (150 grid units, 30 random cells from each module) at each location (bottom heatmaps) and averaged at each east-west position (top plots).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The fields of border cells vary in coverage, with fields often covering the entire length of one wall. To ensure that our results were not exclusive to smaller field (50% the length of one border) border units, we reproduced our findings in a rate-based model in which all border units were active in fields 100% the length of one border. The following parameters were changed during rate-based model simulations: 64 border units were simulated; each grid module was composed of a 32 x 32 unit neural sheet; the grid translation scale factor $\lambda$; the learning rate $s=b$.= 0.000075; weight of grid unit radial uniform inhibition was set to -0.045. Stochastic spiking dynamics were eliminated and instead the output activation of each unit was determined by setting $s=b$ (A) Examples of rate-based border units. (B) Reproduction of scale-dependent grid rescaling (Figure 5A, B). (C) Reproduction of local distortion of the grid pattern during partial deformation (Figure 5C, D).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** In the main text, simulations were carried out over a limited range of grid scales and deformation extents because of computational constraints. (A) To extend this analysis to a much wider range of conditions, and to verify that our results are independent of the specific implementation of the model, we examined the effects of boundary-tethered grid shifts imposed directly on grid patterns. To do so, we first created familiar environment grid cell rate maps by overlapping and rectifying three 60°-offset sine waves (Bush et al., 2014). Next, we created predicted boundary rate maps as described in the main text (Figure 3—figure supplement 1), with sampling biases for each boundary rate map approximated as the inverse distance from the corresponding boundary. (B) Grid rescaling when a familiar 150 cm x 150 cm square environment is deformed as a function of grid scale and deformation extent. Grid rescaling normalized to range from no rescaling (0%) to a matched rescaling (100%). Note the dependence of the appearance of rescaling on grid scale and deformation extent, as well as the abrupt transition from the appearance of rescaling to a lack of an appearance of rescaling with more extreme deformations. (C) Example non-network simulated rate maps of various scales (30 cm, 45 cm, 60 cm, 90 cm, 120 cm) during a subset of deformations.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/38169/elife-38169-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Although grid rescaling was reported during deformation in two electrophysiological studies (Barry et al., 2007; Stensola et al., 2012), another study implementing a more extreme compression deformation experiment did not observe a matched rescaling, that is a rescaling in which the deformed rate map resembled a compressed version of the familiar rate map, in grid cells (Savelli et al., 2008). To test whether the boundary-tethered model could account for a lack of rescaling during this more extreme compression, we familiarized the naive virtual rat with a 135 cm x 135 cm square environment. After this familiarization, the rat then again explored the familiar environment and a compressed 58 cm x 58 cm version of this environment without new learning. During this extreme compression, the grid patterns of modeled grid units did not resemble a matched rescaling of the familiar rate map, although distortions of the grid pattern were observed. Five random grid units from each module, peak firing rate denoted in bold below each map. Color normalized to the maximum for each rate map.
 
 How does scale-dependent rescaling emerge from boundary-tethered shifts in grid phase? Because the grid representation is periodic, border input can only reset the network state to within one period, analogous to a modulo operation. Generally, if the deformation extent is less than the grid period then different boundaries will reinstate different phases, resulting in a time-averaged grid pattern which appears rescaled. When the deformation extent nearly matches the grid period, different boundaries will reinstate a similar phase, yielding a largely undistorted time-averaged pattern. When the deformation extent exceeds the period, different boundaries will again reinstate different phases; thus, the time-averaged pattern will appear distorted. However, in the latter case, additional fields will appear (during stretches) or previously-observed fields will disappear (during compressions). Therefore, the time-averaged pattern, although distorted, will not resemble a simple rescaling of the grid to match the deformation.
 
@@ -93,111 +125,145 @@ Previous work has also revealed conspicuous parallels between deformation-induce
 
 ## Materials and methods
 
-## Model
+### Model
 
-## Border layer
+#### Border layer
 
-The border layer consisted of 32 units. First, the area near each wall in 4 allocentric directions (North, South, East, West) was divided into 8 ‘bricks’ (see [22] for a similar treatment). Each brick extended 12 cm perpendicular from the wall and covered 12.5% of the total environment length along that dimension. Each unit jreceived a uniform input bj=0.1 whenever the simulated rat was within one of four adjacent bricks, resulting in a firing field covering 50% of the environment perimeter for each unit. This input was converted to stochastic spiking activity (see below).
+The border layer consisted of 32 units. First, the area near each wall in 4 allocentric directions (North, South, East, West) was divided into 8 ‘bricks’ (see [22] for a similar treatment). Each brick extended 12 cm perpendicular from the wall and covered 12.5% of the total environment length along that dimension. Each unit $j$received a uniform input $b_{j}=0.1$ whenever the simulated rat was within one of four adjacent bricks, resulting in a firing field covering 50% of the environment perimeter for each unit. This input was converted to stochastic spiking activity (see below).
 
-## Grid layer
+#### Grid layer
 
-The grid layer, derived from the model of [30], consisted of five grid ‘modules’. Each module consisted of a neural sheet with periodic boundary conditions, visualized as a torus. This neural sheet was composed of 642 identical 2 unit x 2 unit tiles (1282 units per module). Each unit in a tile was associated with a particular direction (North, South, East, West), which determined both the movement-direction-specific excitatory input received, as well as its local connectivity. Movement-direction-specific excitatory input vj to grid unit j was determined byvj=γ+gm(d cos(θ−ϕj))where d is the distance moved since the previous timestep, θ is the direction of movement, ϕj is the preferred direction of unit j, gm is a gain factor specific to the module m to which to unit j belongs, and γ=0.6 is a constant. Local connections within each module consisted of shifted radial inhibition, in which each unit inhibited all units within a 12 unit radius by a uniform weight of -0.02. The center of this radial inhibition output for each unit was shifted by 2 units away from that unit in a direction consistent with each units preferred direction. In the absence of other inputs, each grid module yields a hexagonal grid-like pattern of activation on the neural sheet, which is translated during movement at a rate proportional to the gain factor. Thus, to model modules with varying grid scales, the gain factor gm of module mwas set bygm= g12m-12where g1=0.45 is the gain of the smallest-scale module, module 1. This results in a geometric series of biologically-plausible (Stensola et al., 2012) grid scales for each module.
+The grid layer, derived from the model of [30], consisted of five grid ‘modules’. Each module consisted of a neural sheet with periodic boundary conditions, visualized as a torus. This neural sheet was composed of 642 identical 2 unit x 2 unit tiles (1282 units per module). Each unit in a tile was associated with a particular direction (North, South, East, West), which determined both the movement-direction-specific excitatory input received, as well as its local connectivity. Movement-direction-specific excitatory input $v_{j}$ to grid unit $j$ was determined by
 
-## Place layer
+$$
+v_{j}=\gamma+g_{m}(d cos(\theta−ϕ_{j}))
+$$
+
+where $d$ is the distance moved since the previous timestep, $\theta$ is the direction of movement, $ϕ_{j}$ is the preferred direction of unit $j$, $g_{m}$ is a gain factor specific to the module $m$ to which to unit $j$ belongs, and $\gamma=0.6$ is a constant. Local connections within each module consisted of shifted radial inhibition, in which each unit inhibited all units within a 12 unit radius by a uniform weight of -0.02. The center of this radial inhibition output for each unit was shifted by 2 units away from that unit in a direction consistent with each units preferred direction. In the absence of other inputs, each grid module yields a hexagonal grid-like pattern of activation on the neural sheet, which is translated during movement at a rate proportional to the gain factor. Thus, to model modules with varying grid scales, the gain factor $g_{m}$ of module $m$was set by
+
+$$
+g_{m}=\frac{g_{1}}{2^{\frac{m-1}{2}}}
+$$
+
+where $g_{1}=0.45$ is the gain of the smallest-scale module, module 1. This results in a geometric series of biologically-plausible (Stensola et al., 2012) grid scales for each module.
+
+#### Place layer
 
 The place layer consisted of 64 units, subject to uniform recurrent inhibition from all place layer units with a weight of −0.15.
 
-## Border-to-grid connectivity
+#### Border-to-grid connectivity
 
 All grid units received additional excitatory feed-forward projections from all border units. These connections were initialized with random weights uniformly sampled from the range 0 to 0.025, and developed through experience via Hebbian learning (see below and (Pollock et al., 2018)).
 
-## Grid-to-place connectivity
+#### Grid-to-place connectivity
 
 Each place unit received additional excitatory feed-forward projections from 500 random grid units. These connections were initialized with random weights uniformly sampled from the range 0 to 0.022, and developed through experience via Hebbian learning (see below).
 
-## Model dynamics
+### Model dynamics
 
-## Activation
+#### Activation
 
-The dynamics of the network was developed following the methods in [30]. The activation aj of unit j was determined by first computing the total input bj to unit j according tobj={vj+ ∑iIaiwij, grid units∑iIaiwij, place unitswhere ai is a variable quantifying activation of unit i, wij is the weight from unit i to unit j, and Ienumerates all the units. (Note that some weights wij can be zero.) Also recall from above that a border unit receives a constant input when the rat is in a boundary region associated with that unit. The total input bj was used to stochastically determine the spiking sj of each unit j during the current timestep, according tosj= {1, κ(bj− βj)dt>unif(0,1)0, κ(bj− βj)dt≤unif(0,1)where κ= 500 is a scale factor, βj (border units: βj = 0; grid units: βj = 0.1; place units:
+The dynamics of the network was developed following the methods in [30]. The activation $a_{j}$ of unit $j$ was determined by first computing the total input $b_{j}$ to unit $j$ according to
 
-βj= 0.05) is the spike threshold for unit j, unif(0,1) is a single draw from a random uniform distribution ranging from 0 to 1, and dt = 0.003 sec is the length of each timestep. Finally, this spiking activity was integrated to update the activation variable aj of unit jafter each timestep according toaj=aj-ajdtc+ αsj
+$$
+b_{j}={v_{j}+ \sumiIa_{i}w_{ij}, grid units\sumiIa_{i}w_{ij}, place units
+$$
 
-Where α = 0.5 is a scale factor and c = 0.03 sec is the time constant of integration.
+where $a_{i}$ is a variable quantifying activation of unit $i$, $w_{ij}$ is the weight from unit $i$ to unit $j$, and $I$enumerates all the units. (Note that some weights $w_{ij}$ can be zero.) Also recall from above that a border unit receives a constant input when the rat is in a boundary region associated with that unit. The total input $b_{j}$ was used to stochastically determine the spiking $s_{j}$ of each unit $j$ during the current timestep, according to
 
-## Hebbian learning
+$$
+s_{j}= {1, κ(b_{j}− \beta_{j})dt>unif(0,1)0, κ(b_{j}− \beta_{j})dt\lequnif(0,1)
+$$
 
-All Hebbian weigh ts were updated by the competitive learning rulewij= wij+ λajξj- wijai- wij∑n≠ianwhere the sum is only over the set of units with nonzero Hebbian weights to unit j, λ = 0.00001 is the learning rate, ξj is a constant specific to the connection type (border-to-grid: ξ = 0.4; grid-to-place: ξ = 0.5) (Grossberg, 1980; Pilly and Grossberg, 2013). This rule results in competitive activity-dependent weight changes among incoming Hebbian connections, and leads over time to a total weight of ξj across incoming synapses.
+where $κ$= 500 is a scale factor, $\beta_{j}$ (border units: $\beta_{j}$ = 0; grid units: $\beta_{j}$ = 0.1; place units:
 
-## Simulation details
+$\beta_{j}$= 0.05) is the spike threshold for unit $j$, $unif(0,1)$ is a single draw from a random uniform distribution ranging from 0 to 1, and $dt$ = 0.003 sec is the length of each timestep. Finally, this spiking activity was integrated to update the activation variable $a_{j}$ of unit $j$after each timestep according to
 
-## Generating simulated rat paths
+$$
+a_{j}=a_{j}-a_{j}\frac{dt}{c}+\alphas_{j}
+$$
 
-Because some of the deformed environments that we tested have not been experimentally studied, it was necessary to generate simulated rat paths, rather than using experimentally recorded paths. Open-field paths were generated via a bounded random walk model, parameterized by speed and movement direction. At each timestep, unbiased normally distributed random noise was added to both speed (σ= 0.001 cm/msec) and movement direction (σ= 1.5 °/ms). To approximate actual rat exploration, speed was bounded to the range [0, 40] cm/s. If a step would result in the rat path crossing a boundary, random noise was again added repeatedly to the movement direction until the next step would no longer cross the boundary. Open field paths always began in the center of the environment, with the simulated rat stationary and facing a random direction. Linear track paths were generated as straight end to end laps at a constant speed of 20 cm/s.
+Where $\alpha$ = 0.5 is a scale factor and $c$ = 0.03 sec is the time constant of integration.
 
-## Familiarization
+#### Hebbian learning
+
+All Hebbian weigh ts were updated by the competitive learning rule
+
+$$
+w_{ij}=w_{ij}+\lambdaa_{j}ξ_{j}-w_{ij}a_{i}-w_{ij}\sumn\neqia_{n}
+$$
+
+where the sum is only over the set of units with nonzero Hebbian weights to unit $j$, $\lambda$ = 0.00001 is the learning rate, $ξ_{j}$ is a constant specific to the connection type (border-to-grid: $ξ$ = 0.4; grid-to-place: $ξ$ = 0.5) (Grossberg, 1980; Pilly and Grossberg, 2013). This rule results in competitive activity-dependent weight changes among incoming Hebbian connections, and leads over time to a total weight of $ξ_{j}$ across incoming synapses.
+
+### Simulation details
+
+#### Generating simulated rat paths
+
+Because some of the deformed environments that we tested have not been experimentally studied, it was necessary to generate simulated rat paths, rather than using experimentally recorded paths. Open-field paths were generated via a bounded random walk model, parameterized by speed and movement direction. At each timestep, unbiased normally distributed random noise was added to both speed ($\sigma$= 0.001 cm/msec) and movement direction ($\sigma$= 1.5 °/ms). To approximate actual rat exploration, speed was bounded to the range [0, 40] cm/s. If a step would result in the rat path crossing a boundary, random noise was again added repeatedly to the movement direction until the next step would no longer cross the boundary. Open field paths always began in the center of the environment, with the simulated rat stationary and facing a random direction. Linear track paths were generated as straight end to end laps at a constant speed of 20 cm/s.
+
+#### Familiarization
 
 In all simulations, familiarization with the environment was mimicked by allowing the naive simulated rat to explore the environment for 60 min. Prior to familiarization, grid layer activity was allowed to settle into its grid-like attractor state for 2 s without learning. Initialization of the grid layer was biased so that an axis of the settled grid network state would lie at an angle of −7.5° relative to east, consistent with experiments (Krupic et al., 2015; Stensola et al., 2015). Following familiarization, the model weights were saved so that all post-familiarization simulations could begin with the familiarized model.
 
-## Post-familiarization testing simulations
+#### Post-familiarization testing simulations
 
 The model weights were reset to the state saved after familiarization, and the experienced virtual rat was allowed to explore each tested environment for 30 min. Grid layer activity was also initially reset to the familiar environment state corresponding to the rat's start location. Learning was turned off during the testing phase.
 
-## Analysis
+### Analysis
 
-## Statistical tests
+#### Statistical tests
 
 All statistical tests are two-tailed unless otherwise noted. All error bars denote mean ±1 standard error of the mean unless otherwise noted.
 
-## Reanalysis of experimental data
+#### Reanalysis of experimental data
 
 A complete description of the experiments was provided in (Barry et al., 2007; Stensola et al., 2012). Data from Barry et al., 2007) included an initial set of 66 putative cells, from which 38 cells meeting various criteria were selected as grid cells for analysis in the original publication. Similarly, we included only cells with average gridness across both familiar trials > 0.4 from this dataset, yielding 36 included grid cells. Note that unlike in Barry et al., 2007) we did not exclude cells which were poorly fit by rescaling during deformation trials, as boundary-tethered phase shifts predict that distortions which do not resemble a rescaling may occur. For alignment, rescaling, and rate map prediction analyses, the first familiar trial rate map were used for comparison; in the few cases where no rate map was recorded during the first familiar trial, the rate map from the second familiar trial was used instead.
 
-## Unit sampling
+#### Unit sampling
 
 Due to computational constraints and the redundant nature of grid unit activity, only the spikes from 30 randomly chosen grid units in each module were recorded and analyzed during all simulations. All place units were recorded and analyzed.
 
-## Rate maps
+#### Rate maps
 
 Rate maps were created by first dividing the environment into 2.5 cm x 2.5 cm pixels. Then the mean firing rate within each pixel was calculated. Finally, this map was smoothed with an isotropic Gaussian kernel with a standard deviation of 1.5 pixels (3.75 cm) and square extent of 9 pixels x 9 pixels (22.5 cm x 22.5 cm). Pixels which were never visited were excluded during further analyses, with the exception of rate map prediction: all pixels were included during rate map prediction as even few missing pixels lead to large gaps of missing pixels following rescaling.
 
-## Autocorrelations and cross-correlations
+#### Autocorrelations and cross-correlations
 
-Autocorrelations of rate maps were computed similar to previous reports (Sargolini et al., 2006). Briefly, the correlation rbetween overlapping pixels of the original rate map and a shifted version of itself was computed as r=∑i=1I∑j=1J(fij−f−)(f′ij−f′−)∑i=1I∑j=1J(fij−f−)2∑i=1I∑j=1J(f′ij−f′−)2
+Autocorrelations of rate maps were computed similar to previous reports (Sargolini et al., 2006). Briefly, the correlation $r$between overlapping pixels of the original rate map and a shifted version of itself was computed as $r=\frac{\sumi=1I\sumj=1J(f_{ij}−f−)(f′_{ij}−f′−)}{\sqrt{\sumi=1I\sumj=1J(f_{ij}−f−)^{2}}\sqrt{\sumi=1I\sumj=1J(f′_{ij}−f′−)^{2}}}$
 
-where f is the rescaled rate map, f is the familiar rate map, i and i run over pixels in the overlapping regions of these maps, and f− and f- indicate the mean firing rate across overlapping pixels, at a series of single pixel (2.5 cm) step lags. Cross-correlations were computed similarly, except that two different rate maps were correlated, rather than two copies of the same rate map. Autocorrelations and cross-correlations were only estimated for spatial lags with at least 20 overlapping pixels.
+where f is the rescaled rate map, $f$ is the familiar rate map, i and $i$ run over pixels in the overlapping regions of these maps, and $f−$ and $f-$ indicate the mean firing rate across overlapping pixels, at a series of single pixel (2.5 cm) step lags. Cross-correlations were computed similarly, except that two different rate maps were correlated, rather than two copies of the same rate map. Autocorrelations and cross-correlations were only estimated for spatial lags with at least 20 overlapping pixels.
 
-## Grid scale
+#### Grid scale
 
 To compute grid scale for a unit or cell we first computed the rate map autocorrelation. Next, we computed the mean distance from the center of the autocorrelation to the center of mass of the six closest surrounding peaks, excluding the central peak.
 
-## Gridness
+#### Gridness
 
 To compute gridness for each unit, we first computed the autocorrelation of its rate map and its grid scale. Next we masked the autocorrelation, eliminating all pixels at a distance from the center greater than 1.5 its scale and less than 0.5 its scale. We then computed the correlation between the masked autocorrelation and a rotated version of itself, rotated 30°, 60°, 90°, 120°, and 150°. The final measure of gridness was then the difference between the minimum of the [60° 120°] correlations minus the maximum of the [30° 90° 150°] correlations.
 
-## Field length
+#### Field length
 
 Field length along each dimension was estimated from the autocorrelation by first determining the extent of the central peak of the autocorrelation, defined as all contiguous pixels with correlation values greater than 10% of the maximum correlation. Next, field length was computed separately for each dimension as the distance between the most extreme pixels within this central peak along that dimension.
 
-## Grid rescaling factor
+#### Grid rescaling factor
 
-The grid rescaling factor during each deformation trial was computed separately for each unit by comparing rescaled versions of the familiar environment rate map to the deformed environment rate map. Following (Stensola et al., 2012), the familiar rate map was uniformly rescaled to a series of chamber lengths, ranging from 10 cm below the smaller of the deformed and familiar chamber lengths, through 10 cm above the larger of these chamber lengths in 5 cm (2 pixel) increments. This yielded a set of rescaled familiar rate maps for each unit. For each rescaled map, we computed the correlation r (defined above) between the deformed and rescaled rate maps twice, once when the two rate maps were aligned by each opposing boundary. The grid rescaling factor was then defined as the ratio between the rescaled chamber length that yielded the highest correlation and the familiar chamber length, across either alignment.
+The grid rescaling factor during each deformation trial was computed separately for each unit by comparing rescaled versions of the familiar environment rate map to the deformed environment rate map. Following (Stensola et al., 2012), the familiar rate map was uniformly rescaled to a series of chamber lengths, ranging from 10 cm below the smaller of the deformed and familiar chamber lengths, through 10 cm above the larger of these chamber lengths in 5 cm (2 pixel) increments. This yielded a set of rescaled familiar rate maps for each unit. For each rescaled map, we computed the correlation $r$ (defined above) between the deformed and rescaled rate maps twice, once when the two rate maps were aligned by each opposing boundary. The grid rescaling factor was then defined as the ratio between the rescaled chamber length that yielded the highest correlation and the familiar chamber length, across either alignment.
 
 When comparing rescaling factors between whole-trial and boundary-conditioned data, rescaling was only computed for alignment by the conditioned boundary. In order to ensure that differences in rescaling following boundary-conditioning were not due to differential sampling following contact with opposing boundaries, whole-trial rate maps were created from random subsets of the data, with the number of samples at each pixel chosen to match the sampling distribution of the to-be-compared boundary rate map. Because subsampling the data to match these sampling distributions introduces variability in the measure of rescaling, we repeated this measure 100 times for each cell with different random subsets of the data and took the mean rescaling across these iterations as our final measure.
 
-## Grid shift analysis
+#### Grid shift analysis
 
 To test these data for the presence of grid shifts during environmental deformations, we first divided the spiking activity of each cell according to the most recent boundary contact (North, South, East, or West). Boundary contact was defined as the rat being within 12 cm of a boundary. Spiking activity prior to boundary contact at the beginning of the trial was ignored. Next, four separate rate maps were created, one for each most recently contacted boundary. To quantify grid shift along a particular dimension for each cell, the rate maps of opposing boundaries perpendicular to the chosen dimension were cross-correlated at a series of lags in single pixel steps (see above) within the range of plus/minus one half the scale of the grid pattern. In order to ensure that shifts in phase were not due to differential sampling following contact with opposing boundaries, boundary rate maps were created from random subsets of the data, with the number of samples at each pixel chosen to match the sampling distributions of the opposing boundary rate maps. The distance from the center to the nearest peak of this cross-correlogram along the dimension of interest was then determined, with the nearest peak defined by first partitioning the cross-correlogram into ‘blobs’ of contiguous pixels which had positive correlations. Then, the location with the maximum correlation value within the blob nearest to the center was taken as the nearest peak. Because subsampling the data to match the sampling distributions introduces variability in this measure of shift, we repeated this measure 100 times for each cell with different random subsets of the data and took the mean shift across these iterations as our final measure of shift. Because shift is bounded by grid scale, we report shift as a ratio of shift to scale.
 
-## Boundary-tethered rate map prediction
+#### Boundary-tethered rate map prediction
 
 For each cell and deformation trial we first created predicted boundary rate maps for displaced boundaries from the familiar environment rate map. These rate maps were shifted versions of the familiar rate map, aligned by the corresponding boundary (Figure 3—figure supplement 1). If the length of a boundary changed, then the central portion of the familiar rate map was used to generate the predicted boundary rate map. Next, sampling biases were applied as follows. First, a map of the actual sampling behavior following each boundary contact during the deformation trial was computed, as described in the ‘rate maps’ section above. From these maps, the probability of having most recently contacted each boundary was computed at each pixel. The contribution from each boundary rate map was then weighted by this probability. The final rate map predicted by the boundary-tethered model was then the sum of these weighted boundary rate maps, smoothed with the Gaussian kernel described in the ‘Rate maps’ section above.
 
-## Data and code availability
+#### Data and code availability
 
 All simulations were conducted with custom-written MATLAB scripts. These scripts as well as the simulation results presented here are available on Github at https://github.com/akeinath/Keinath_BoundaryTetheredModel (Keinath, 2018; copy archived at https://github.com/elifesciences-publications/Keinath_BoundaryTetheredModel). All values generated by our reanalysis are available as source data files. All original reanalyzed data were originally reported in the following papers:
 
-## Simulations of place units
+### Simulations of place units
 
 Environmental deformations also induce distortions of place cell activity which may reflect a contribution of dynamically-shifting grid input. To test this possibility, we concurrently simulated a population of place units receiving input from grid units during a variety of deformations.
 

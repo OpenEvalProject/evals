@@ -19,15 +19,15 @@
 
 ### Affiliations
 
-1. https://ror.org/020rbyg91 Advanced Neuroimaging Center, National Institutes for Quantum Science and Technology Chiba Japan
-2. https://ror.org/02kpeqv85 System Neuroscience Section, Center for the Evolutionary Origins of Human Behavior, Kyoto University Inuyama Japan
-3. https://ror.org/020rbyg91 Department of Advanced Nuclear Medicine Sciences, National Institutes for Quantum Science and Technology Chiba Japan
+1. Advanced Neuroimaging Center, National Institutes for Quantum Science and Technology Chiba Japan ([ROR:020rbyg91](https://ror.org/020rbyg91))
+2. System Neuroscience Section, Center for the Evolutionary Origins of Human Behavior, Kyoto University Inuyama Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+3. Department of Advanced Nuclear Medicine Sciences, National Institutes for Quantum Science and Technology Chiba Japan ([ROR:020rbyg91](https://ror.org/020rbyg91))
 
 † Corresponding author
 
 ## Abstract
 
-Designer Receptors Exclusively Activated by Designer Drugs (DREADDs) offer a powerful means for reversible control of neuronal activity through systemic administration of inert actuators. Because chemogenetic control relies on DREADD expression levels, understanding and quantifying the temporal dynamics of their expression is crucial for planning long-term experiments in monkeys. In this study, we longitudinally quantified in vivo DREADD expression in macaque monkeys using positron emission tomography with the DREADD-selective tracer [ 11 C]deschloroclozapine (DCZ), complemented by functional studies. Twenty macaque monkeys were evaluated after being injected with adeno-associated virus vectors expressing the DREADDs hM4Di or hM3Dq, whose expression was quantified as changes in [ 11 C]DCZ binding potential from baseline levels. Expression levels of both hM4Di and hM3Dq peaked around 60 days post-injection, remained stable for about 1.5 years, and declined gradually after 2 years. Significant chemogenetic control of neural activity and behavior persisted for about 2 years. The presence of protein tags significantly influenced expression levels, with co-expressed protein tags reducing overall expression levels. These findings provide valuable insights and guidelines for optimizing the use of DREADDs in long-term primate studies and potential therapeutic applications.
+Designer Receptors Exclusively Activated by Designer Drugs (DREADDs) offer a powerful means for reversible control of neuronal activity through systemic administration of inert actuators. Because chemogenetic control relies on DREADD expression levels, understanding and quantifying the temporal dynamics of their expression is crucial for planning long-term experiments in monkeys. In this study, we longitudinally quantified in vivo DREADD expression in macaque monkeys using positron emission tomography with the DREADD-selective tracer [11C]deschloroclozapine (DCZ), complemented by functional studies. Twenty macaque monkeys were evaluated after being injected with adeno-associated virus vectors expressing the DREADDs hM4Di or hM3Dq, whose expression was quantified as changes in [11C]DCZ binding potential from baseline levels. Expression levels of both hM4Di and hM3Dq peaked around 60 days post-injection, remained stable for about 1.5 years, and declined gradually after 2 years. Significant chemogenetic control of neural activity and behavior persisted for about 2 years. The presence of protein tags significantly influenced expression levels, with co-expressed protein tags reducing overall expression levels. These findings provide valuable insights and guidelines for optimizing the use of DREADDs in long-term primate studies and potential therapeutic applications.
 
 ## Introduction
 
@@ -43,7 +43,272 @@ As the developer of the DREADD-selective agonist DCZ (Nagai et al., 2020), we ha
 
 PET imaging data using [11C]DCZ were collected from 15 monkeys before (baseline) and after injections of AAV vectors for expressing hM4Di or hM3Dq (see Table 1). To achieve neuron-specific expression, we used AAV vectors with a preference for neuronal infection, such as AAV2 or AAV2.1 (Kimura et al., 2023), or for incorporation with neuron-specific promoters (e.g., human synapsin promoter; hSyn). To assess the specific binding of [11C]DCZ, we calculated the binding potential relative to a nondisplaceable radioligand (BPND) using a multilinear reference tissue model with the cerebellum as a reference region (Yan et al., 2021). DREADD expression levels were then quantified as the change in BPND (ΔBPND) from baseline values. This approach allowed us to longitudinally and quantitatively monitor the dynamics of DREADD expression in vivo.
 
-## Peak DREADD expression occurred approximately 60 days post-injection
+**Table 1.**
+ Summary of subjects, DREADD used, and functional assessments used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Species</th>
+      <th>Sex</th>
+      <th>weight (kg)</th>
+      <th>Age (years)</th>
+      <th>DREADD</th>
+      <th>[11C]DCZ</th>
+      <th>Behavior</th>
+      <th>FDG</th>
+      <th>Electrophysiology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>153</td>
+      <td>R</td>
+      <td>M</td>
+      <td>6.8</td>
+      <td>10</td>
+      <td>hM4Di</td>
+      <td></td>
+      <td>✓*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>163</td>
+      <td>R</td>
+      <td>M</td>
+      <td>6.1</td>
+      <td>13</td>
+      <td>hM4Di</td>
+      <td></td>
+      <td>✓†</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>R</td>
+      <td>M</td>
+      <td>4.4</td>
+      <td>9</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>201</td>
+      <td>R</td>
+      <td>M</td>
+      <td>6.3</td>
+      <td>8</td>
+      <td>hM4Di</td>
+      <td></td>
+      <td>✓ ‡</td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>207</td>
+      <td>R</td>
+      <td>M</td>
+      <td>6.8</td>
+      <td>6</td>
+      <td>hM4Di</td>
+      <td></td>
+      <td>✓ ‡</td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>R</td>
+      <td>F</td>
+      <td>3.4</td>
+      <td>8</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>218</td>
+      <td>J</td>
+      <td>M</td>
+      <td>7.2</td>
+      <td>4</td>
+      <td>hM4Di</td>
+      <td></td>
+      <td>✓ §</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>221</td>
+      <td>J</td>
+      <td>M</td>
+      <td>6.4</td>
+      <td>4</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>225</td>
+      <td>J</td>
+      <td>F</td>
+      <td>6</td>
+      <td>7</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓ ¶</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>229</td>
+      <td>R</td>
+      <td>M</td>
+      <td>4.6</td>
+      <td>4</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓**</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>234</td>
+      <td>J</td>
+      <td>M</td>
+      <td>5.8</td>
+      <td>5</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓ ¶</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>J</td>
+      <td>M</td>
+      <td>6.9</td>
+      <td>5</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>238</td>
+      <td>J</td>
+      <td>M</td>
+      <td>6.2</td>
+      <td>4</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓ §</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>245</td>
+      <td>J</td>
+      <td>F</td>
+      <td>5.9</td>
+      <td>6</td>
+      <td>hM4Di</td>
+      <td>✓</td>
+      <td>✓**</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>R</td>
+      <td>F</td>
+      <td>3.4</td>
+      <td>8</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>223</td>
+      <td>C</td>
+      <td>M</td>
+      <td>4.2</td>
+      <td>4</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>J</td>
+      <td>M</td>
+      <td>9.9</td>
+      <td>9</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td></td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>J</td>
+      <td>M</td>
+      <td>7.1</td>
+      <td>6</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>241</td>
+      <td>J</td>
+      <td>M</td>
+      <td>5.1</td>
+      <td>3</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>255</td>
+      <td>C</td>
+      <td>M</td>
+      <td>5.2</td>
+      <td>4</td>
+      <td>hM3Dq</td>
+      <td>✓</td>
+      <td></td>
+      <td>✓</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Weight and age are the values recorded at the beginning of the experiments.R, Rhesus; J, Japanese; C, Cynomolgus; M, male; F, female.*Multi-reward task, #153 and #221, Oyama et al., 2022a.†Delayed-reward task, #163, Hori et al., 2021. ‡Delayed matching-to-sample task, #201 and #207, Hirabayashi et al., 2024. §Reversal learning task, #218 and #238, Oyama et al., 2024. ¶Brinkman board/foot sensation, #225 and #234, Hirabayashi et al., 2021.**Delayed response task, #229 and #245, Nagai et al., 2020._
+
+### Peak DREADD expression occurred approximately 60 days post-injection
 
 To evaluate the temporal profile of DREADD expression and determine how quickly expression was established following transduction, we analyzed the [11C]DCZ PET data from seven monkeys that received AAV vector injections into subcortical regions with similar volumes (Tables 1 and 2). These data were originally collected for vector-testing studies, during which PET scans were frequently repeated up to 150 days post-injection. The dataset was selected according to the following criteria: (1) the titer of injected viral vector was 1.0–3.0×1013 gc/ml, and (2) the peak ΔBPND value exceeded 0.5. Analysis showed that expression levels of hM4Di and hM3Dq increased rapidly, reaching peak expression at approximately 60 days after viral vector injection. Notably, no clear differences in expression dynamics were observed between hM3Dq and hM4Di (Figure 1).
 
@@ -51,7 +316,464 @@ To evaluate the temporal profile of DREADD expression and determine how quickly 
 
 **Figure 1.:** (A, B) Parametric coronal images of the increase (relative to baseline) in specific binding of [11C]DCZ (ΔBPND) at 30 (A) and 64 (B) days after adeno-associated virus (AAV) injection, overlaid on MR images. Images were obtained from a monkey (#241) that received multiple injections of AAV with different constructs (see Table 2). (C) Time course of in vivo DREADD expression levels (ΔBPND) up to 150 days after the injections, summarized from 10 regions of interest (ROIs) obtained from seven monkeys. The value at day 0 indicates the baseline (before injection). The black curve is the best-fitted sigmoid curve, which provides a better fit (Bayesian information criterion, BIC = 61.1) than does the double logistic model (BIC = 62.9). Lowercase letters correspond to the DREADD-induced regions described in Table 2.
 
-## Longitudinal assessment of DREADD expression levels
+**Table 2.**
+ Summary of injection location, type of virus vector, titer, and injected volume used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">ID</th>
+      <th rowspan="2">Region</th>
+      <th rowspan="2">Vector</th>
+      <th rowspan="2">Titer(×1013 gc/ml)</th>
+      <th rowspan="2">Volume (µl)</th>
+      <th colspan="4">Symbols in figures</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>5</th>
+      <th>S1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">153</td>
+      <td>R-OFC</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>1.0</td>
+      <td>54</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-rmCD</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">163</td>
+      <td>L-dCDh</td>
+      <td>AAV2.1-hSyn-hM4Di-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-dCDh</td>
+      <td>AAV2.1-hSyn-hM4Di-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>193</td>
+      <td>R-Amygdala</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.0</td>
+      <td>6</td>
+      <td>a</td>
+      <td></td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td rowspan="2">201</td>
+      <td>R-OFC (microinjected)</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.2</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-OFC (microinjected)</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.2</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">207</td>
+      <td>R-OFC (microinjected)</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>1.3</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-OFC (microinjected)</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>1.3</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>R-Put</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.6</td>
+      <td>6</td>
+      <td>b</td>
+      <td>b</td>
+      <td>b</td>
+      <td>b</td>
+    </tr>
+    <tr>
+      <td>215</td>
+      <td>L-Amygdala</td>
+      <td>AAV2-CMV-hM3Dq</td>
+      <td>1.2</td>
+      <td>6</td>
+      <td>c</td>
+      <td>c</td>
+      <td>c</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <td rowspan="2">218</td>
+      <td>R-OFC</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.3</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-OFC</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.3</td>
+      <td>54</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">221</td>
+      <td>L-OFC</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.0</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-rmCD</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td></td>
+      <td>k</td>
+      <td>k</td>
+      <td>k</td>
+    </tr>
+    <tr>
+      <td rowspan="4">223</td>
+      <td>R-Cd</td>
+      <td>AAV2.1-hSyn-hM3Dq-IRES2-AcGFP</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td>d</td>
+      <td>d</td>
+      <td>d</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>R-Put</td>
+      <td>AAV2.1-hSyn-hM3Dq-IRES2-AcGFP</td>
+      <td>5.0</td>
+      <td>3</td>
+      <td></td>
+      <td>l</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-Cd</td>
+      <td>AAV2-CMV-hM3Dq-IRES-AcGFP</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-Put</td>
+      <td>AAV2-hSyn-hM3Dq-IRES2-AcGFP</td>
+      <td>1.0</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>r</td>
+    </tr>
+    <tr>
+      <td rowspan="2">224</td>
+      <td>R-Amygdala</td>
+      <td>AAV2.1-hSyn-hM3Dq-IRES-AcGFP</td>
+      <td>2.0</td>
+      <td>5</td>
+      <td></td>
+      <td>m</td>
+      <td>m</td>
+      <td>m</td>
+    </tr>
+    <tr>
+      <td>L-Amygdala</td>
+      <td>AAV2.1-hSyn-hM3Dq-IRES-AcGFP</td>
+      <td>2.0</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>s</td>
+      <td>s</td>
+    </tr>
+    <tr>
+      <td>225</td>
+      <td>L-SID2</td>
+      <td>AAV2-CMV-hM4Di</td>
+      <td>1.5</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>t</td>
+      <td>t</td>
+    </tr>
+    <tr>
+      <td rowspan="2">229</td>
+      <td>R-dlPFC</td>
+      <td>AAV2.1-hSyn-hM4D-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>35</td>
+      <td></td>
+      <td>n</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-dlPFC</td>
+      <td>AAV2.1-hSyn-hM4D-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>37</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>234</td>
+      <td>R-SID2</td>
+      <td>AAV2.1-hSyn-hM4D-IRES2-AcGFP</td>
+      <td>3.8</td>
+      <td>4</td>
+      <td></td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+    </tr>
+    <tr>
+      <td>236</td>
+      <td>R-Amygdala</td>
+      <td>AAV2-CMV-hM3Dq</td>
+      <td>1.2</td>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>237</td>
+      <td>L-Amygdala</td>
+      <td>AAV2.1-hSyn-hM4Di-IRES2-AcGFP</td>
+      <td>2.0</td>
+      <td>4</td>
+      <td>e</td>
+      <td>e</td>
+      <td>e</td>
+      <td>e</td>
+    </tr>
+    <tr>
+      <td rowspan="2">238</td>
+      <td>R-OFC</td>
+      <td>AAV2.1-CaMKII-hM4Di-IRES-AcGFP</td>
+      <td>1.0</td>
+      <td>49</td>
+      <td></td>
+      <td>q</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-OFC</td>
+      <td>AAV2.1-CaMKII-hM4Di-IRES-AcGFP</td>
+      <td>1.0</td>
+      <td>53</td>
+      <td></td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">241</td>
+      <td>R-Cd</td>
+      <td>AAV2-hSyn-hM3Dq-IRES-AcGFP</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>u</td>
+      <td>u</td>
+    </tr>
+    <tr>
+      <td>L-Cd</td>
+      <td>AAV2-hSyn-hM3Dq</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>g</td>
+      <td>g</td>
+      <td>g</td>
+      <td>g</td>
+    </tr>
+    <tr>
+      <td>R-Put</td>
+      <td>AAV2.1-hSyn-hM3Dq-IRES2-AcGFP</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>h</td>
+      <td>h</td>
+      <td>h</td>
+      <td>h</td>
+    </tr>
+    <tr>
+      <td>L-Put</td>
+      <td>AAV1-hSyn-hM3Dq-IRES2-AcGFP</td>
+      <td>2.0</td>
+      <td>3</td>
+      <td>f</td>
+      <td>f</td>
+      <td>f</td>
+      <td>f</td>
+    </tr>
+    <tr>
+      <td rowspan="2">245</td>
+      <td>R-dlPFC</td>
+      <td>AAV2.1-hSyn-hM4D-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>44</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L-dlPFC</td>
+      <td>AAV2.1-hSyn-hM4D-IRES2-AcGFP</td>
+      <td>4.7</td>
+      <td>40</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">255</td>
+      <td>L-VPL</td>
+      <td>AAV5-hSyn-HA-hM3Dq</td>
+      <td>2.7</td>
+      <td>3</td>
+      <td>j</td>
+      <td>j</td>
+      <td>j</td>
+      <td>j</td>
+    </tr>
+    <tr>
+      <td>R-VPL</td>
+      <td>AAV2-hSyn-hM3Dq</td>
+      <td>1.8</td>
+      <td>3</td>
+      <td>i</td>
+      <td>i</td>
+      <td>i</td>
+      <td>i</td>
+    </tr>
+    <tr>
+      <td>L-Cd</td>
+      <td>AAV2-hSyn-hM4Di</td>
+      <td>1.2</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>R-Cd</td>
+      <td>AAV2-hSyn-hM4Di</td>
+      <td>1.7</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>v</td>
+      <td>v</td>
+    </tr>
+    <tr>
+      <td>L-Put</td>
+      <td>AAV5-hSyn-hM4Di</td>
+      <td>4.6</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-Put</td>
+      <td>AAV2-hSyn-hM4Di</td>
+      <td>1.7</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td>w</td>
+      <td>w</td>
+    </tr>
+  </tbody>
+</table>
+
+_R, right; L, left; OFC, orbitofrontal cortex; rmCD, rostromedial caudate nucleus; dCDh, dorsal part of caudate nucleus head; CD, caudate nucleus; Put, putamen; S1D2, hand index finger region of primary somatosensory cortex; dlPFC, dorsolateral prefrontal cortex; VPL, ventral posterolateral nucleus of thalamus._
+
+### Longitudinal assessment of DREADD expression levels
 
 We then conducted a longitudinal assessment of post-peak expression levels for hM4Di and hM3Dq using repeated [11C]DCZ PET measurements from 16 injection sites, including cortical and subcortical regions, across 11 monkeys. Figure 2 illustrates the temporal changes in normalized ΔBPND, expressed as a percentage of the peak value observed 40–80 days post-AAV injection. hM4Di expression levels remained stable at peak levels for approximately 1.5 years, followed by a gradual decline observed in one case after 2.5 years, and after approximately 3 years in the other two cases (Figure 2B, o and b/e, respectively). Compared with hM4Di expression, hM3Dq expression exhibited greater post-peak fluctuations. Nevertheless, it remained at ~70% of peak levels after about 1 year. This post-peak fluctuation was not significantly associated with the cumulative number of DREADD agonist injections (repeated-measures two-way ANOVA, main effect of activation times, F(1,6) = 5.745, P=0.054). Beyond 2 years post-injection, expression declined to ~50% in one case, whereas another case showed an apparent increase (Figure 2C, c and m, respectively).
 
@@ -59,7 +781,7 @@ We then conducted a longitudinal assessment of post-peak expression levels for h
 
 **Figure 2.:** (A) Parametric coronal images of DREADD expression levels (ΔBPND) overlaid on MR images obtained from monkey #237, measured at 42, 496, 978, and 1,139 days after injection. Scale bar is 10 mm. (B, C) Time course of hM4Di (B) and hM3Dq (C) expression levels normalized to the peak ΔBPND observed between 40 and 80 days post-injection (time between the dotted red vertical lines). Each colored line represents one injection site, and the lowercase letters at the ends of each line correspond to the injection sites listed in Table 2. Each dot represents one [11C]DCZ PET measurement. The dashed black line indicates the group average at 6-month intervals. hM4Di expression levels remained stable for approximately 1.5 and those for hM3Dq about 1 year, after which variable patterns of decline were observed.
 
-## DREADDs effectively modulated neuronal activity and behavior for approximately 2 years
+### DREADDs effectively modulated neuronal activity and behavior for approximately 2 years
 
 We assessed data from 17 monkeys to evaluate the duration over which DREADD activation induced by DREADD agonists produced significant effects on neural activity and behavior. Monkeys expressing hM4Di (N=11) were assessed through behavioral testing, two of which also underwent electrophysiological assessment. Monkeys expressing hM3Dq (N=6) were assessed for changes in glucose metabolism via [18F]FDG-PET (N=5) or alterations in neuronal activity using electrophysiology (N=1). Across these assessments, significant chemogenetic effects were observed for up to 3 years following AAV vector injection (Figure 3). For example, one monkey with bilateral hM4Di expression in the dorsolateral prefrontal cortex (dlPFC; monkey #229) consistently displayed impaired performance on the delayed response task with DCZ administration for up to 2.3 years (867 days) following vector injection (Oyama et al., 2021). Similarly, another monkey with hM3Dq expression in the amygdala (monkey #215) exhibited increased glucose metabolism following DCZ administration for up to 2.5 years (926 days) following vector injection, as measured by FDG-PET (Nagai et al., 2020).
 
@@ -75,23 +797,140 @@ As mentioned above, after more than 3 years, we observed the disappearance of hM
 
 **Figure 4.:** (A) Top: coronal PET image showing ΔBPND of [11C]DCZ data overlaid on an MR image, obtained 44 days after viral vector injection into the right SID2. Filled and open arrowheads represent the central and ipsilateral sulci, respectively. Middle: performance of fine grasping using a modified Brinkman board task, assessing the monkey’s ability to pick up small food pellets with its thumb and index fingers. Values indicate the change in total duration to complete the task between pre- and post-DCZ administration sessions. Ipsi (Contra) refers to performance using the hand ipsilateral (contralateral) to the hM4Di-expressing SID2. Gray lines connect performances from the same sessions using different hands. Error bars, s.e.m. *P<0.002, paired t-test. +P<0.004, paired t-test, adjusted for multiple comparisons. n=5 sessions. Bottom: DCZ-induced change in the foot withdrawal latency in response to cold (magenta) or control (cyan) stimulation. Negative values indicate faster withdrawal latency following DCZ administration. Gray lines connect performances from the same sessions. Error bars, s.e.m. *P<0.001, paired t-test. +P<0.001, paired t-test comparing between pre- and post-DCZ administration. n=7 sessions. (B) Same types of measurements as in (A), but following the extinction of hM4Di expression. The PET image was obtained about 3 years (1051 days) post-vector injection. n=5 and n=4 sessions for Brinkman board task and foot withdrawal test, respectively. (C) A Nissl-stained section demonstrating the absence of neuronal loss at the vector injection sites (left panel) and the contralateral side (right panel). The locations of the filled and open arrowheads correspond to those shown in (A) and (B). Scale bars are 2.5 mm and 250 μm.
 
-## Protein tags reduce peak DREADD expression levels
+### Protein tags reduce peak DREADD expression levels
 
 Finally, we investigated the factors influencing the peak level of DREADD expression. To minimize confounding effects related to injection volume and method, this analysis was limited to cases in which AAV vectors were delivered via microinjector (see ‘Materials and methods).
 
 We applied a linear model incorporating multiple variables, including injection volume, serotype, promoter, titer, tag, and DREADD type, to assess how each factor contributed to peak expression levels. Our analysis revealed that the presence and type of co-expressed protein tags significantly affect peak expression levels (P<0.008; Table 3). Specifically, peak expression levels were lower for vectors in which the fusion HA-tag sequence was encoded at the 5’-terminal site (5’-HA) of the DREADD sequence than they were for vectors that encoded GFP following the internal ribosome entry site (IRES) sequence, both of which resulted in lower peak expression levels compared with vectors that did not include protein tags (Figure 5). A potential interaction between DREADD type and promoter was also observed (Table 3, Figure 5—figure supplement 1); however, given the limited sample size (n=1 for hM3Dq with CMV), no definitive conclusion can be made.
 
+**Table 3.**
+ Results of the linear model analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Effect</th>
+      <th>DFn</th>
+      <th>DFd</th>
+      <th>F-value</th>
+      <th>P value</th>
+      <th>Effect size (η²G)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titer</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2.093</td>
+      <td>0.222</td>
+      <td>0.343</td>
+    </tr>
+    <tr>
+      <td>DREADD</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2.565</td>
+      <td>0.184</td>
+      <td>0.391</td>
+    </tr>
+    <tr>
+      <td>Promoter</td>
+      <td>1</td>
+      <td>4</td>
+      <td>5.280</td>
+      <td>0.083</td>
+      <td>0.569</td>
+    </tr>
+    <tr>
+      <td>Tag</td>
+      <td>2</td>
+      <td>4</td>
+      <td>19.84</td>
+      <td>0.008*</td>
+      <td>0.908</td>
+    </tr>
+    <tr>
+      <td>Serotype</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2.105</td>
+      <td>0.242</td>
+      <td>0.612</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.090</td>
+      <td>0.779</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Titer:promoter</td>
+      <td>1</td>
+      <td>4</td>
+      <td>2.346</td>
+      <td>0.200</td>
+      <td>0.370</td>
+    </tr>
+    <tr>
+      <td>DREADD:promoter</td>
+      <td>1</td>
+      <td>4</td>
+      <td>10.74</td>
+      <td>0.031*</td>
+      <td>0.729</td>
+    </tr>
+    <tr>
+      <td>Titer:tag</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1.494</td>
+      <td>0.328</td>
+      <td>0.428</td>
+    </tr>
+    <tr>
+      <td>Titer:volume</td>
+      <td>1</td>
+      <td>4</td>
+      <td>3.199</td>
+      <td>0.148</td>
+      <td>0.444</td>
+    </tr>
+    <tr>
+      <td>DREADD:volume</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1.497</td>
+      <td>0.288</td>
+      <td>0.272</td>
+    </tr>
+  </tbody>
+</table>
+
+_The ANOVA table describes the factors contributing to the level of expression. The optimal model, selected based on Akaike’s information criterion, was the following: ΔBPND = viral titer + DREADD type + promoter + reporter tag + serotype + injection volume + viral titer:promoter + DREADD type:promoter + viral titer:reporter-tag + viral titer:injection volume + DREADD type:injection volume.DFn, degrees of freedom numerator; DFd, degrees of freedom denominator; η²G, generalized eta-squared.*P<0.05._
+
+![Figure 5.](https://cdn.elifesciences.org/articles/105815/elife-105815-fig5-v1.jpg)
+
+**Figure 5.:** Peak expression levels (ΔBPND) for different constructs showing the presence and type of protein tag. Box plots represent the median (central line), interquartile range (box), and the range (whiskers) of the data. Individual data points are labeled with lowercase letters and correspond to the injection sites listed in Table 2. Note that two cases (right putamen of #223 and left putamen of #255) were identified as outliner and excluded from the analysis (see ‘Materials and methods’).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105815/elife-105815-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Peak expression levels (ΔBPND) are shown for different constructs combining two promoter types and two DREADD types. Box plots represent the median (central line), interquartile range (box), and the range (whiskers) of the data. Individual data points labeled with lowercase letters correspond to the injection sites listed in Table 2.
+
 ## Discussion
 
 DREADDs have emerged as invaluable tools in nonhuman primate research due to their ability to exert effects on nonspatially restricted brain regions, allowing for simultaneous and discrete targeting of multiple areas. This capability makes DREADDs promising for investigating the causal roles of specific neural pathways and cell types in the highly specialized brain circuits found in primates. However, ethical and logistical constraints on using a large number of monkeys highlight the need of moving beyond a trial-and-error approach. It is essential to aggregate data and provide insights that are more widely applicable, thus enabling the development of a more efficient experimental design for DREADD research in monkeys. In vivo PET visualization of DREADDs offers a noninvasive and quantitative means for real-time monitoring of receptor expression. The present study analyzed PET and functional/behavioral data from 43 injection sites across 20 monkeys and revealed three key findings: (1) after AAV injection, DREADD expression levels peaked after approximately 60 days and remained stable for up to 1.5 years, followed by a gradual decline observed after 2–3 years; (2) significant chemogenetic effects on neural activity and behavior persisted for around 2 years; and (3) protein tags significantly influenced peak expression levels, with co-expressed protein tags reducing peak expression. These results offer quantitative insights into the temporal dynamics of DREADD expression, thereby informing strategies for designing long-term experiments. They also confirm the efficacy and reliability of DREADD-mediated interventions.
 
-## Technical considerations
+### Technical considerations
 
 In vivo monitoring of gene expression has been conducted using fluorescent reporters observed through a window or fiber, providing a method to verify transducing protein expression and localization (Diester et al., 2011; Ruiz et al., 2013). Although useful for optogenetics and imaging studies, these methods are invasive, less quantitative, and spatially limited, often requiring cranial surgeries and capturing only two-dimensional data. In contrast, DCZ PET imaging provides a direct, noninvasive, volumetric measure of receptor expression, making it particularly suitable for studies in large animals such as macaques and for translational research with potential application to future human therapies. Nevertheless, PET measurement has certain limitations, including potential variability due to individual differences, underestimation of DREADD expression levels due to the partial volume effect, and the influence of anesthesia on kinetic parameters during imaging sessions. In this study, we have considered these factors and minimized their impact by applying appropriate ROI placements and excluding data collected under inadequate anesthetic conditions (see ‘Materials and methods’).
 
 This study included a retrospective analysis of datasets pooled from multiple studies conducted within a single laboratory, which inherently introduced variability across injection parameters and scan intervals. While such an approach reflects real-world practices in long-term NHP research, future studies, including multicenter efforts using harmonized protocols, will be valuable for systematically assessing inter-individual differences and optimizing key experimental parameters.
 
-## Temporal dynamics of DREADD expression
+### Temporal dynamics of DREADD expression
 
 Our [11C]DCZ PET measurement showed that DREADD expression peaked around 60 days after AAV injection, regardless of whether hM4Di or hM3Dq was used. This pattern was consistent with our previous data regarding hM4Di expression visualized using [11C]clozapine (Nagai et al., 2016). This gradual rise in AAV-mediated gene expression likely reflects rate-limiting steps following viral infection, including transport to the nucleus, uncoating, and conversion to double-strand DNA (Duan et al., 2000; Ferrari et al., 1996; Li and Samulski, 2020; Wang et al., 2007). Similar temporal patterns of AAV-mediated gene expression have been observed in previous studies using in vivo fluorescent measurement. For example, in rats transfected with an AAV5 encoding fluorescence protein (EYFP) in motor cortex and the hippocampus, in vivo fluorescence signals increased sigmoidally, rapidly until day 35, then slowed down (Diester et al., 2011). Similarly, in macaques, ChR2 expression monitored via fluorescence intensity peaked at around 60 days after AAV9 injection (Nakamichi et al., 2019).
 
@@ -99,35 +938,35 @@ Although we modeled the time course of DREADD expression using a single sigmoid 
 
 Despite being derived from a limited dataset, our findings offer important insights for designing chemogenetics studies in primates. Specifically, beginning functional experiments at approximately 60 days post-AAV injection will yield reliable results and avoid unnecessary delays. This timeline may also be applicable to other genetic studies in monkeys, such as those using optogenetics or calcium imaging, which also require proper expression of functional proteins. However, while these tools rely on rapid, light-driven responses and are relatively less dependent on stable functional protein expression, DREADDs require sustained expression for consistent long-term effects.
 
-## Factors influencing peak DREADD expression
+### Factors influencing peak DREADD expression
 
 Although higher AAV titers generally result in increased transgene expression in neurons, excessively high titers can trigger immune responses. In the current study, we used titers that ranged from 1 to 5×1013 gc/ml, achieving a balance between effective expression and minimal immune activation. This may explain why virus titer did not emerge as a significant factor affecting expression levels in our analysis. By contrast, our analysis indicated that the presence and type of protein tags significantly influenced peak DREADD expression levels. Vectors encoding DREADDs with protein tags, particularly 5’-terminal HA tags, were associated with a reduction of peak expression levels. Thus, although these tags are commonly used for antibody detection in DREADD constructs, they negatively impact expression efficacy and potentially affect protein function. Our findings are consistent with a previous PET study using [11C]clozapine and immunohistochemical analysis, which also found reduced hM4Di expression in constructs with 5’-terminal HA tags (Nagai et al., 2016). Additionally, constructs incorporating IRES-GFP might also result in lower expression levels due to the size and composition of the AAV vector, as has been shown in previous studies (Furler et al., 2001; Kimura et al., 2023; Mizuguchi et al., 2000; Zhou et al., 1998). Nevertheless, these constructs have been frequently used in rodent research and have also been effective in producing long-term chemogenetic effects in monkey studies, including the current one (e.g., monkeys #229 and #238). Thus, while the observed decline in DREADD expression resulting from these constructs is not inherently detrimental to experimental outcomes in monkey studies, it serves as a warning that we must be careful when designing vectors to avoid reductions in experimental efficacy.
 
-## Implications for long-term experiments with DREADD expression
+### Implications for long-term experiments with DREADD expression
 
 One of the most important findings was that AAV-mediated DREADD expression was maintained for up to 2 years for hM4Di and at least 1 year for hM3Dq. Throughout the duration of the experiments, chemogenetic effects remained consistent, as verified by individual behavioral and functional assessments. However, hM4Di expression diminished after 3 years, coinciding with the loss of chemogenetic behavioral effects in at least one case. This indicates that while chemogenetic effects can be maintained for up to 2 years, they likely decline gradually beyond this period. Consequently, researchers should anticipate consistent chemogenetic effects for a maximum of 2 years following AAV injection and should be mindful that longer-term experiments are at risk for a decline in effectiveness. Specifically, the inevitable failure to detect DREADDs via immunohistochemistry highlights an important caveat for researchers: timely termination of experiments to ensure verification through in vitro examination is necessary.
 
 The gradual decline in expression levels observed beyond 2 years has several potential causes. First, AAV vectors typically remain episomal in transduced cells, without integrating into the host genome (Weitzman and Linden, 2011). While this poses less of an issue in nondividing neurons, episomal DNA can still be subject to gradual loss or degradation over time. Second, several mechanisms may contribute to the gradual downregulation of transgene expression, including epigenetic modifications, immune responses, and genome stability (Muhuri et al., 2022). For example, promoter silencing—often associated with epigenetic modifications—has been reported (Gray et al., 2011). Neuron-specific promoters have been shown to achieve more efficient and prolonged transgene expression than ubiquitous promoters like CMV (Paterna et al., 2000). Our study found no evidence of cell death at AAV injection sites (Figure 4C), suggesting that neuronal loss was not a primary cause of the eventual decline in expression levels. Repeated receptor activation did not affect DREADD expression levels or chemogenetic efficacy in a previous study (Oyama et al., 2022b). Thus, identifying the factors that cause expression to eventually decline remains of critical importance. With this knowledge, we can develop strategies to maintain persistent transgene expression in neurons for more than 2 years, which will benefit both chemogenetic studies and therapeutic applications. Despite this uncertainty, our data offers important guidelines for chemogenetics studies in nonhuman primates, demonstrating that up to 2 years of reliable expression is achievable.
 
-## Translational implications
+### Translational implications
 
 This research has significant translational implications, particularly for the development of DREADD-based therapies for treating neurological and psychiatric disorders. DREADD-based approaches have shown promising therapeutic potential, with successful application in monkey models of disease conditions such as epileptiform seizures (Miyakawa et al., 2023) and Parkinson’s disease (Chen et al., 2023). Extending these findings to human clinical applications positions PET imaging as a powerful tool for real-time, noninvasive confirmation of target protein expression—a critical factor for ensuring therapeutic efficacy. PET reporter imaging has already shown its value in human gene therapy for certain movement disorders, where sustained protein expression has been correlated with treatment efficacy (Mittermeyer et al., 2012; Tai et al., 2022). Our study reinforces this utility by demonstrating that when DREADD expression was no longer detectable via PET, the chemogenetic effects were also diminished.
 
-## Conclusion
+### Conclusion
 
 Our study describes short- and long-term dynamics of DREADD expression in nonhuman primates using [11C]DCZ PET imaging, complemented by assessment of functional efficacy. The findings provide critical insights into the practicality of multi-year studies using chemogenetic neuromodulation with DREADDs, including the expression time course and factors affecting expression stability. This work offers valuable guidance for designing future long-term nonhuman primate studies and underscores the translational potential of using DREADDs combined with PET imaging for noninvasive, gene-targeted therapies for neurological and psychiatric disorders.
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 A total of 20 macaque monkeys (10 Japanese, Macaca fuscata; 8 Rhesus, Macaca mulatta; 2 Cynomolgus, Macaca fascicularis; 16 males, 4 females; weight, 3.4–9.9 kg; age, 3–13 years at the beginning of experiments) were used (Table 1). The monkeys were kept in individual primate cages in an air-conditioned room. A standard diet, supplementary fruits/vegetables, and a tablet of vitamin C (200 mg) were provided daily. All experimental procedures involving animals were carried out in accordance with the Guide for the Care and Use of Nonhuman Primates in Neuroscience Research (The Japan Neuroscience Society; https://www.jnss.org/en/animal_primates) and were approved by the Animal Ethics Committee of the National Institutes for Quantum Science and Technology (Permit Number: 11–1038).
 
-## Viral vector production
+### Viral vector production
 
 We used a total of 11 AAV vectors. AAV2-Syn-HA-hM3Dq, AAV2-Syn-HA-hM4Di, and AAV5-Syn-HA-hM4Di were purchased from Addgene (MA, USA). The other viral vectors were produced by a helper-free triple transfection procedure, which was purified by affinity chromatography (GE Healthcare, Chicago, USA). Viral titer was determined by quantitative polymerase chain reaction using Taq-Man technology (Life Technologies, Waltham, USA).
 
-## Surgical procedures and viral vector injections
+### Surgical procedures and viral vector injections
 
 Surgical procedures have been described in detail in previous reports (Hirabayashi et al., 2021; Nagai et al., 2020; Nagai et al., 2016; Oyama et al., 2023; Oyama et al., 2022b Oyama et al., 2021). The AAV vectors and brain regions into which they were injected are summarized in Table 2. Before surgery, structural scans of the head were acquired via magnetic resonance (MR) imaging (7 tesla 400 mm/SS system, Bruker, Billerica, MA, USA) and X-ray computed tomography (CT) (Accuitomo170, J. MORITA CO., Kyoto, Japan) under anesthesia (continuous intravenous infusion of propofol 0.2–0.6 mg/kg/min). Overlay MR and CT images were created using PMOD image analysis software (PMOD 4.4, PMOD Technologies Ltd, Zurich, Switzerland) to estimate the stereotaxic coordinates of target brain structures.
 
@@ -137,7 +976,7 @@ Viral vectors were injected with a stereotaxic apparatus or a hand-held syringe.
 
 For handheld injection, the target cortex was exposed by removing a bone flap and reflecting the dura mater. Injections were made under visual guidance through an operating microscope (Leica M220, Leica Microsystems GmbH, Wetzlar, Germany) at an oblique angle to the brain surface. Each hemisphere received nine tracks of injections: one at the caudal tip, four along the dorsal bank, and four along the ventral bank of the principal sulcus, with 3–5 µL per track, depending on the depth (Oyama et al., 2023).
 
-## PET imaging
+### PET imaging
 
 PET imaging was conducted as previously reported (Nagai et al., 2020). Briefly, PET scans were performed using a microPET Focus 220 scanner (Siemens Medical Solutions USA, Malvern, USA). Monkeys were initially immobilized with ketamine (5–10 mg/kg) and xylazine (0.2–0.5 mg/kg) and maintained under anesthesia with isoflurane (1–3%) throughout the PET procedures. The isoflurane level was carefully adjusted to ensure the stability of continuously monitoring physiological parameters, such as body temperature, heart rate, SpO2, and end-tidal CO2. End-tidal CO2 levels were maintained between 35 and 45 mmHg to prevent substantial changes in cerebral blood flow (Markwalder et al., 1984), which could impact tracer kinetics. Transmission scans were performed for about 20 min with a Ge-68 source. Emission scans were acquired in 3D list mode with an energy window of 350–750 keV after intravenous bolus injection of [11C]DCZ (~350 MBq) and [18F]FDG (~200 MBq). Data acquisition lasted for 90 min.
 
@@ -145,23 +984,23 @@ To estimate the specific binding of [11C]DCZ, regional binding potential relativ
 
 For the FDG study, DCZ (1 μg/kg) or vehicle was administered intravenously 1 min before FDG injection. Data were converted to standardized uptake value (SUV) images, averaged between 30- and 60 min, and normalized to SUV ratio (SUVR) images using the mean whole-brain value. Metabolic changes induced by DCZ were calculated as ΔSUVR and defined by the different DCZ and vehicle conditions, with VOIs for FDG analysis matching those used in the [11C]DCZ-PET study.
 
-## Administration of DREADD agonists
+### Administration of DREADD agonists
 
 Deschloroclozapine (DCZ; HY-42110, MedChemExpress) was the primary agonist used. DCZ was first dissolved in dimethyl sulfoxide (DMSO; FUJIFILM Wako Pure Chemical Corp.) and then diluted in saline to a final volume of 1 ml, with the final DMSO concentration adjusted to 2.5% or less. DCZ was administered intramuscularly at a dose of 0.1 mg/kg for hM4Di activation, and at 1–3 µg/kg for hM3Dq activation. For behavioral testing, DCZ was injected approximately 15 min before the start of the experiment unless otherwise noted. Fresh DCZ solutions were prepared daily.
 
 In a limited number of cases, clozapine-N-oxide (CNO; Toronto Research Chemicals) or compound 21 (C21; Tocris) was used as an alternative DREADD agonist for some hM4Di experiments. Both compounds were dissolved in DMSO and then diluted in saline to a final volume of 2–3 ml, also maintaining DMSO concentrations below 2.5%. CNO and C21 were administered intravenously at doses of 3 mg/kg and 0.3 mg/kg, respectively.
 
-## Behavioral tasks
+### Behavioral tasks
 
 The behavioral experiments are summarized in Table 1. Complete descriptions of the detailed procedures for each behavioral experiment are available in previous reports (Hirabayashi et al., 2024; Hirabayashi et al., 2021; Hori et al., 2021; Oyama et al., 2024; Oyama et al., 2022a; Oyama et al., 2021). Here we focus on a modified Brinkman board task and a sensitivity to cold stimulation task, which were used to analyze the behavior of a monkey (#234) that had hM4Di expressed in its primary somatosensory cortex (Figure 4). In the modified Brinkman board task, monkeys picked food pellets out of 10 slots in a board with one of their hands (i.e., contralateral or ipsilateral to the DREADD-expressing hemisphere), and the amount of time needed to pick up all 10 pellets was recorded. The time to complete each trial was normalized to the number of pellets successfully picked up to obtain a value that reflected manual dexterity. In a single experimental session, a monkey performed five to ten trials with each hand before and 10 min after intravenous systemic administration of DCZ. In the sensitivity to cold task, monkeys were trained to place a sole of one of their feet on a cold metal plate that was placed in front of their monkey chair. The latency with which they withdrew their foot from the plate was recorded and used as an index of sensitivity to a cutaneous (cold) stimulus. If a monkey did not withdraw its foot within 60 s, the trial was terminated and a withdraw latency of 60 s was assigned for that trial. The monkeys performed five to ten trials for each of two temperature conditions (30°C for control and 10°C for cold stimulation) both before and 10 min after DCZ administration. Chemogenetic effects were assessed by comparing performance on the tasks pre- and post-injection and between contralateral and ipsilateral hands and feet (only the contralateral side should be affected by DCZ).
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 All data and statistical analyses were performed using the R statistical computing environment (R Development Core Team, 2025). To model the time course of DREADD expression, we used a single sigmoid function, referencing past in vivo fluorescent measurements (Diester et al., 2011). Curve fitting was performed using least squares minimization. For comparison, a double logistic function was also tested and evaluated using the Bayesian information Criterion (BIC) to assess model fit. Repeated-measures two-way ANOVAs were used to examine the effect of cumulative number of activation times ×days after injection on post-peak fluctuation.
 
 To identify factors influencing peak expression levels, a stepwise model selection using the stepAIC() function from the MASS package (Venables and Ripley, 2002) was performed. To minimize potentially confounding effects related to injection method and volume, we restricted this analysis to cases in which a microinjector was used to deliver the AAV and excluded cortical injections into the orbitofrontal cortex and dlPFC, which involved larger, manually administered injection volumes. Starting with a full model that included six factors—virus titer, DREADD type, promoter, tag, serotype, and injection volume—along with all their interactions, the best-fitting linear model was determined based on Akaike information criterion (AIC). A permutation-based outlier analysis was also performed to detect and exclude statistical outliers that could disproportionally influence the regression results. The resulting best model included six variables and five interactions (Titer:Promoter, DREADD:Promoter, Titer:Tag, Titer:Volume, and DREADD:Volume). The significance of their contributions to the peak expression level, as well as the effect sizes (generalized eta-squared, η²G), were assessed using type II analysis of variance with the anova_test() function from the rstatix package (Kassambara, 2023).
 
-## Histology and immunostaining
+### Histology and immunostaining
 
 For histological inspection, monkeys were deeply anesthetized with sodium pentobarbital (50 mg/kg, i.v.) or sodium thiopental (50 mg/kg, i.v.) after administration of ketamine hydrochloride (5–10 mg/kg, i.m.) and then transcardially perfused with saline at 4°C, followed by 4% paraformaldehyde in 0.1 M phosphate buffered saline (PBS, pH 7.4) at 4°C. The brain was removed from the skull, postfixed in the same fresh fixative overnight, saturated with 30% sucrose in phosphate buffer (PB) at 4°C, and then cut serially into 50-μm-thick sections on a freezing microtome. For visualizing immunoreactive GFP (co-expressed with hM4Di) signals, a series of every sixth section was immersed in 1% skim milk for 1 h at room temperature and incubated overnight at 4°C with rabbit anti-GFP monoclonal antibody (1:500, G10362, Thermo Fisher Scientific, Waltham, MA, USA) in PBS containing 0.1% Triton X-100 and 1% normal goat serum for 2 days at 4°C. The sections were then incubated in the same fresh medium containing biotinylated goat anti-rabbit IgG antibody (1:1000; Jackson ImmunoResearch, West Grove, PA, USA) for 2 h at room temperature, followed by avidin-biotin-peroxidase complex (ABC Elite, Vector Laboratories, Burlingame, CA, USA) for 2 h at room temperature. For visualizing the antigen, the sections were reacted in 0.05 M Tris-HCl buffer (pH 7.6) containing 0.04% diaminobenzidine (DAB), 0.04% NiCl2, and 0.003% H2O2. The sections were mounted on gelatin-coated glass slides, air-dried, and cover-slipped. Parts of other sections were Nissl-stained with 1% Cresyl violet. Images of sections were digitally captured using an optical microscope equipped with a high-grade charge-coupled device camera (Biorevo, Keyence, Osaka, Japan).
 

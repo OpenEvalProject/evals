@@ -12,24 +12,24 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Biology, University of Oxford Oxford United Kingdom
-2. https://ror.org/026stee22 Development and Evolution of Cognition Group, Max Planck Institute of Animal Behavior Konstanz Germany
-3. https://ror.org/026zzn846 School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom
-4. https://ror.org/0364c8r59 Department of Pedagogy, Chubu Gakuin University Gifu Japan
-5. https://ror.org/00z3td547 College of Life Science, Northwest University Xi’an China
-6. https://ror.org/00byf8747 Department of Science, Gorongosa National Park Sofala Mozambique
-7. https://ror.org/014g34x36 Interdisciplinary Center for Archaeology and Evolution of Human Behaviour (ICArEHB), Universidade do Algarve Faro Portugal
-8. https://ror.org/0476hs695 CIBIO, Centro de Investigação em Biodiversidade e Recursos Genéticos Vairão Portugal
-9. https://ror.org/02wn5qz54 Wild Minds Lab, School of Psychology and Neuroscience, University of St Andrews St Andrews United Kingdom
-10. https://ror.org/052gg0110 School of Anthropology and Museum Ethnography, University of Oxford Oxford United Kingdom
-11. https://ror.org/01swzsf04 Faculty of Psychology and Educational Sciences, and Swiss Center for Affective Sciences, University of Geneva Geneva Switzerland
-12. https://ror.org/022kthw22 Department of Brain and Cognitive Sciences, University of Rochester Rochester United States
+1. Department of Biology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Development and Evolution of Cognition Group, Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+3. School of Biological and Behavioural Sciences, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+4. Department of Pedagogy, Chubu Gakuin University Gifu Japan ([ROR:0364c8r59](https://ror.org/0364c8r59))
+5. College of Life Science, Northwest University Xi’an China ([ROR:00z3td547](https://ror.org/00z3td547))
+6. Department of Science, Gorongosa National Park Sofala Mozambique ([ROR:00byf8747](https://ror.org/00byf8747))
+7. Interdisciplinary Center for Archaeology and Evolution of Human Behaviour (ICArEHB), Universidade do Algarve Faro Portugal ([ROR:014g34x36](https://ror.org/014g34x36))
+8. CIBIO, Centro de Investigação em Biodiversidade e Recursos Genéticos Vairão Portugal ([ROR:0476hs695](https://ror.org/0476hs695))
+9. Wild Minds Lab, School of Psychology and Neuroscience, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
+10. School of Anthropology and Museum Ethnography, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+11. Faculty of Psychology and Educational Sciences, and Swiss Center for Affective Sciences, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+12. Department of Brain and Cognitive Sciences, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
 
 † Corresponding author
 
 ## Abstract
 
-We know vanishingly little about how long-lived apes experience senescence in the wild, particularly with respect to their foraging behaviors. Chimpanzees use tools during foraging, and given the cognitive and physical challenges presented by tool use, tool-use behaviors are potentially at a heightened risk of senescence, though this has never been investigated in wild individuals. Accordingly, we sampled data from a longitudinal video archive that contained footage of wild chimpanzees using stone hammers and anvils to crack hard-shelled nuts ( nut cracking ) at an ‘outdoor laboratory’ over a 17-year period (with focal chimpanzees aging from approximately 39–44 to 56–61 years across this period). Over time, elderly chimpanzees began attending experimental nut-cracking sites less frequently than younger individuals. Several elderly chimpanzees exhibited reductions in efficiency across multiple stages of nut cracking, including taking longer to both select stone tools prior to use and use tools to crack open nuts and consume the associated pieces of kernel. Two chimpanzees began using less streamlined behavioral sequences to crack nuts, including a greater number of actions (such as more numerous hammer strikes). Notably, we report interindividual variability in the extent to which elderly chimpanzees’ tool-use behaviors changed during our sample period – ranging from small to profound reductions in engagement and efficiency – as well as differences in the specific aspects of nut cracking that changed for each individual. We discuss the possible causes of these changes – and recommendations for future research – with reference to literature surrounding the senescence of captive and wild primates.
+We know vanishingly little about how long-lived apes experience senescence in the wild, particularly with respect to their foraging behaviors. Chimpanzees use tools during foraging, and given the cognitive and physical challenges presented by tool use, tool-use behaviors are potentially at a heightened risk of senescence, though this has never been investigated in wild individuals. Accordingly, we sampled data from a longitudinal video archive that contained footage of wild chimpanzees using stone hammers and anvils to crack hard-shelled nuts (nut cracking) at an ‘outdoor laboratory’ over a 17-year period (with focal chimpanzees aging from approximately 39–44 to 56–61 years across this period). Over time, elderly chimpanzees began attending experimental nut-cracking sites less frequently than younger individuals. Several elderly chimpanzees exhibited reductions in efficiency across multiple stages of nut cracking, including taking longer to both select stone tools prior to use and use tools to crack open nuts and consume the associated pieces of kernel. Two chimpanzees began using less streamlined behavioral sequences to crack nuts, including a greater number of actions (such as more numerous hammer strikes). Notably, we report interindividual variability in the extent to which elderly chimpanzees’ tool-use behaviors changed during our sample period – ranging from small to profound reductions in engagement and efficiency – as well as differences in the specific aspects of nut cracking that changed for each individual. We discuss the possible causes of these changes – and recommendations for future research – with reference to literature surrounding the senescence of captive and wild primates.
 
 ## Introduction
 
@@ -49,13 +49,182 @@ Overall, with increasingly old age (measured by progressive field seasons), elde
 
 ## Results
 
-## Sampled data
+### Sampled data
 
 We sampled five timepoints separated by intervals of 3–5 years (field seasons 1999–2000, 2004–2005, 2008–2009, 2011–2012, and 2016–2017; with each field season referred to hereafter by its initial year). The exact age at which chimpanzees may be considered ‘old’ is a point of continued debate. However, chimpanzees are generally considered to begin entering old age at approximately 40 years old (Morbeck et al., 2002; Campos et al., 2022; Finch and Austad, 2015), after which survivorship begins to decrease more rapidly than earlier in adulthood (Wood et al., 2023). We therefore confined our analysis to individuals who were at least 30 years of age in at least three of the five sampled field seasons. This sample allowed us to collect data longitudinally, beginning with ages where chimpanzees are in the prime of adulthood and spanning into old age. Under these criteria, we were able to include four old-age females (Fana, Jire, Velu, and Yo) and one old-age male (Tua) in our analyses. All five of these individuals were present at Bossou when the long-term research project was established in 1976; as a consequence, their birth years are estimates based on physical growth characteristics at the time of first observation (see Table 1). Given that these estimated birth years range from 1956 to 1961, these individuals are estimated to be between 39 and 44 years old at the start of our sampling window (1999), and therefore are entering the window of ‘old age’. By 2016, estimated ages ranged from 56 to 61 years old, reflecting an age which is near the maximum for wild chimpanzees. All four females were present at Bossou throughout the entire sampled time-frame for our analysis; however, Tua, the only adult male, disappeared in September 2013 (presumed dead). Therefore, data for Tua spans a shorter time frame between the 1999 and 2011 field seasons. As all five focal individuals’ ages are within five years of each other (and therefore similar estimates), we use the progression through field seasons as a proxy for increasing age and treat all individuals as similarly ‘old’ at each field season.
 
+**Table 1.**
+ Summary of sampled observations for each focal old-age individual.Total time observed includes all time individuals were present in the first 10 encounters of each field season (Observed Encounters). Dashed lines (-) represent where no data was collected for an individual in a given field season. Males have names in all capitals, whereas females have names in capitals and lower case.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">ID</th>
+      <th rowspan="2">DOB*</th>
+      <th rowspan="2">Date of Death (Age)</th>
+      <th colspan="5">Age (years)</th>
+      <th colspan="5">Observed Encounters (% including interaction with nuts or stone tools)</th>
+      <th colspan="5">Total Time Observed (minutes)</th>
+      <th colspan="5">Action Sequences Coded (for individual nuts)</th>
+    </tr>
+    <tr>
+      <th>1999</th>
+      <th>2004</th>
+      <th>2008</th>
+      <th>2011</th>
+      <th>2016</th>
+      <th>1999</th>
+      <th>2004</th>
+      <th>2008</th>
+      <th>2011</th>
+      <th>2016</th>
+      <th>1999</th>
+      <th>2004</th>
+      <th>2008</th>
+      <th>2011</th>
+      <th>2016</th>
+      <th>1999</th>
+      <th>2004</th>
+      <th>2008</th>
+      <th>2011</th>
+      <th>2016</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fana</td>
+      <td>1956</td>
+      <td>2022 (67)</td>
+      <td>44</td>
+      <td>49</td>
+      <td>53</td>
+      <td>56</td>
+      <td>61</td>
+      <td>10 (70%)</td>
+      <td>10 (70%)</td>
+      <td>10 (80%)</td>
+      <td>7 (28.6%)</td>
+      <td>10 (40%)</td>
+      <td>280.6</td>
+      <td>275.2</td>
+      <td>184.2</td>
+      <td>105.7</td>
+      <td>283.5</td>
+      <td>80</td>
+      <td>77</td>
+      <td>80</td>
+      <td>-</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Jire</td>
+      <td>1958</td>
+      <td>Alive as of 2025 (67)</td>
+      <td>42</td>
+      <td>47</td>
+      <td>51</td>
+      <td>54</td>
+      <td>59</td>
+      <td>10 (80%)</td>
+      <td>10 (80%)</td>
+      <td>10 (90%)</td>
+      <td>10 (60%)</td>
+      <td>10 (80%)</td>
+      <td>339.4</td>
+      <td>349.9</td>
+      <td>275.0</td>
+      <td>282.1</td>
+      <td>308.6</td>
+      <td>100</td>
+      <td>91</td>
+      <td>104</td>
+      <td>42</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>TUA</td>
+      <td>1957</td>
+      <td>2013 (56)</td>
+      <td>43</td>
+      <td>48</td>
+      <td>52</td>
+      <td>55</td>
+      <td>-</td>
+      <td>10 (70%)</td>
+      <td>10 (80%)</td>
+      <td>10 (80%)</td>
+      <td>5 (60%)</td>
+      <td>-</td>
+      <td>174.4</td>
+      <td>212.1</td>
+      <td>204.3</td>
+      <td>116.0</td>
+      <td>-</td>
+      <td>103</td>
+      <td>96</td>
+      <td>81</td>
+      <td>26</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Velu</td>
+      <td>1959</td>
+      <td>2017 (58)</td>
+      <td>41</td>
+      <td>46</td>
+      <td>50</td>
+      <td>53</td>
+      <td>58</td>
+      <td>10 (60%)</td>
+      <td>10 (80%)</td>
+      <td>7 (85.7%)</td>
+      <td>1 (100%)</td>
+      <td>7 (42.9%)</td>
+      <td>189.4</td>
+      <td>281.8</td>
+      <td>158</td>
+      <td>23.1</td>
+      <td>202.4</td>
+      <td>85</td>
+      <td>99</td>
+      <td>50</td>
+      <td>-</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Yo</td>
+      <td>1961</td>
+      <td>2021 (60)</td>
+      <td>39</td>
+      <td>44</td>
+      <td>48</td>
+      <td>51</td>
+      <td>56</td>
+      <td>10 (80%)</td>
+      <td>10 (70%)</td>
+      <td>10 (90%)</td>
+      <td>3 (33%)</td>
+      <td>5 (40%)</td>
+      <td>200.7</td>
+      <td>304.5</td>
+      <td>363.7</td>
+      <td>211.3</td>
+      <td>282.7</td>
+      <td>66</td>
+      <td>70</td>
+      <td>141</td>
+      <td>20</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Date of birth (DOB) was estimated for these individuals at the start of longitudinal data collection at Bossou (1976). Thus, ages for individuals are estimates. Ages are approximated from January of the estimated year of birth, and the end of the final month of each field season (e.g. for the 1999-2000 field season – abbreviated to 1999 - ages are estimated using 29th February 2000 as the end of the field season)._
+
 A summary of sampling effort for each chimpanzee in each field season can be found in Table 1, including their estimated ages in each field season (and subsequent year of death), the number of encounters sampled for behavior coding for each individual (between 10 and 1 per individual per field season; median = 10), the total duration each individual was observed during the field season (mean = 280.6 min per individual per field season; SD = 83.3 min), and the number of nuts that they were observed cracking (between 141 and 5 nuts per year; median across individuals and field seasons = 80).
 
-## Attendance at the outdoor laboratory
+### Attendance at the outdoor laboratory
 
 We modeled the rate at which focal old-aged chimpanzees attended the outdoor laboratory over progressive field seasons, whilst controlling for the total length of each field season. We compared this relationship with attendance data from younger individuals (between the ages of 8 and 30 years; see Figure 2a). This younger cohort acted as a baseline control for changes in attendance rate at the population level that are unlikely to be due to senescence. In each sampled field season, the number of individuals over the age of 30 (older cohort) varied between five and six individuals, whereas the number of chimpanzees between the ages of 8 and 30 years (younger cohort) varied between five and two individuals.
 
@@ -65,11 +234,11 @@ We modeled the rate at which focal old-aged chimpanzees attended the outdoor lab
 
 In 1999, chimpanzees in the older cohort had a marginally lower attendance rate than the younger cohort (encounters/day: older cohort = 0.68; younger cohort = 0.74). However, by 2016, this difference was much larger, with older chimpanzees being less likely to visit the outdoor laboratory compared to younger individuals (encounters/day in 2016: older cohort = 0.32; younger cohort = 0.53; see Figure 2b for data from each elderly individual). Correspondingly, a model of attendance rate over successive field seasons (including data across all field seasons) identified a significantly greater decline in attendance rate for the older cohort across successive field seasons as compared to the younger cohort (interaction effect of field season and age-cohort: z=–2.285; p=0.022; see Appendix 2—table 1 for full model output). Conversely, we found no evidence of a decline in attendance rate for chimpanzees in our younger cohort over successive field seasons (z=–1.572; p=0.11). We confirmed the importance of this interaction effect by comparing the fit of the full model with a model lacking the interaction effect between age-cohort and field season (therefore assuming an identical relationship across field seasons for both cohorts) and a null model (which assumed no effect of field season). AIC comparison confirmed that the model which included an interaction effect offered the best explanation of the data relative to model complexity (AICInteraction = 340; AICInteraction-removed=343; AICNull = 376). All four elderly female chimpanzees exhibited attendance rates that were lower in 2016 than in 1999; however, for Tua (the elderly adult male), attendance rates in his earliest and latest field seasons were approximately equal (1999=0.48 encounters/day; 2011=0.5 encounters/day; see Figure 2b).
 
-## Behaviors at the outdoor laboratory
+### Behaviors at the outdoor laboratory
 
 We measured how the proportion of time each elderly individual spent interacting with nuts and stones when present at the outdoor laboratory changed over successive field seasons (see Figure 2c). By 2011, the final year of this analysis (we omitted the use of 2016 for this analysis, see Methods), two old-aged individuals (Fana and Velu) spent substantially less time engaging with nuts and stone tools (% time engaging with nuts and stone tools in each season; Fana: 1999=62.3%; 2011=15.6%; Velu: 1999=51.6%; 2011=5.0%). We did not observe either individual successfully cracking any nuts at the outdoor laboratory in 2011. Most interactions with nuts and stone tools involved scavenging kernels from the ground (produced by other individuals’ nut cracking behaviors), or in the case of Velu, a short attempt to crack open a nut, before ceasing the behavior and feeding from oil-palm fruits. Correspondingly, in 2011, Fana spent more time engaging in ‘Other’ behaviors, such as resting and grooming (+38.3% of total time in 2011 compared with 1999), whereas Velu spent more time eating palm fruits (+35.5%) and drinking water from the water point (+25.8%; note that data for Velu come from a single encounter in 2011, so proportions should be interpreted with caution). Conversely, three individuals spent similar proportions of time engaging with nuts and stone tools when present at the outdoor laboratory (change in % time between 1999 and 2011: Jire = –5.5%; Tua = +6.9%; Yo = +8.9%). For these individuals, the small-scale changes in total time engaging with nuts and stones are more likely to be the product of chance fluctuation in engagement across field seasons.
 
-## Tool-selection time
+### Tool-selection time
 
 Chimpanzees select stone tools based on their physical characteristics such as raw material, size, and weight (Carvalho et al., 2008; Boesch and Boesch, 1983; Sirianni et al., 2015; Braun et al., 2025). Therefore, stone-tool selection at the central stone matrix represents a complex decision-making task where chimpanzees must evaluate an extensive set of options (over 50 total stones). Between 1999 and 2016, we recorded the duration of 108 stone-tool selection events across 49 encounters for the five focal old-aged individuals (see Figure 3a, and Appendix 2—table 2). A mixed-effect model with the year of the field season as both a random intercept and random slope for each individual offered the best explanation for the total variation in the time taken to select tools (see Figure 3b for a visualization of the random slope model). This model outperformed a null model which assumed no effect of field season (AICYear-RandomSlope=231; AICNull = 234) as well as a model which included a fixed slope for field seasons – and therefore the same aging effect – across all individuals (where models were refit by restricted maximum likelihood to improve the accuracy of random-effect estimation; AICYear-Random=244; AICYear-Fixed=246; see Appendix 2—Tables 3–5 for model summaries). The best explanation for our data is therefore one where aging has a significant effect on tool-selection time; however, the effects of aging differ between individuals. The random-slope model identified that Yo underwent the greatest increase in stone-tool selection time across sampled field seasons, followed by Fana and then Jire. Velu exhibited relative consistency in the duration of stone-tool selection across field seasons, and the only individual to show a negative relationship between the duration of stone-tool selection and increasing years was Tua.
 
@@ -77,7 +246,7 @@ Chimpanzees select stone tools based on their physical characteristics such as r
 
 **Figure 3.:** (a) Tool-selection duration times for each old-aged individual. Color correlates with the number of stone tools removed from the matrix prior to that particular tool-selection event. Shape indicates the number of tools selected by an individual in a given tool-selection event. The lines and shaded areas represent a smoothed linear relationship describing the data for each individual. (b) A mixed effect model describing the duration of stone tool-selection events across a scaled parameter of the year for each field season. Individuals are included in the model as both a random intercept and slope. The plot shows the model’s prediction of the relationship between the duration of stone-tool selection and year for each individual, compared with the baseline fixed effect of year.
 
-## Efficiency processing oil-palm nuts
+### Efficiency processing oil-palm nuts
 
 Across the five focal elderly chimpanzees, we recorded sequences of actions used to crack 1601 individual nuts (1538 oil-palm nuts and 63 coula nuts). As coula nuts were only provided alongside oil-palm nuts in one sampled field season (2011), we filtered data to include only the 1538 oil-palm nuts when modeling the influence of progressive old age on the efficiency of nut cracking and described data on the cracking of coula nuts separately (see Appendix 3).
 
@@ -85,17 +254,105 @@ For three efficiency metrics, models that contained the year of the field season
 
 Whilst all four female chimpanzees took longer to crack nuts in later years, the extent of change varied across individuals, from profound changes that are more likely to indicate senescence to changes that were more likely attributable to small-scale chance fluctuations across nuts (see Figure 4). Yo exhibited the largest increase in time between 1999 and 2016 (+28.4 s; difference between 1999 and 2016 = +104%; see Appendix 4 for an additional dataset for the duration of nut cracking behaviors performed by Yo in 2018, and corresponding analysis, which demonstrates that Yo took longer to crack oil-palm nuts at an even older age), and Velu exhibited the second largest increase in total time taken to crack oil-palm nuts (+26.5 s;+158%). Jire exhibited a more moderate increase in time taken to crack oil-palm nuts during the same timeframe (+9.7 s;+79%), followed by Fana, who exhibited the smallest change across all females (+5.7 s;+52%). For Fana, it is unclear whether this change represents chance fluctuations, given such small changes in nut cracking duration. Tua, the adult male, exhibited little evidence of a change in oil-palm nut cracking duration across field seasons, with his mean duration of oil-palm nut cracking decreasing by 0.67 s by 2008 (the latest year Tua was observed cracking oil-palm nuts).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/105411/elife-105411-fig4-v1.jpg)
+
+**Figure 4.:** This plot only includes metrics in which random slope models outperformed corresponding null models (see Figure 4—figure supplement 1 for all metrics). Data is summarized using boxplots (central lines in the boxes indicate median values, and upper and lower boundaries of boxes indicate the 25th and 75th percentiles; lines express the range of data, and dots indicate outliers for a given individual in a given year). Sample size available in Table 1.All data relate to the cracking and processing of individual oil-palm nuts. These metrics include, for each nut cracked, (a) the total time taken, (b) the number of discrete actions, and (c) the number of hammer strikes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105411/elife-105411-fig4-figsupp1-v1.jpg)
+
 Between 1999 and 2016, the median number of actions Yo used to crack and process each oil-palm nut increased (+14 actions per nut; +108% change between 1999 and 2016), as did the median number of times Yo struck each nut with the hammer stone (+8 strikes per nut; +200% change between years). By analyzing the composition of Yo’s action repertoire between 1999 and 2016 (Appendix 2—table 10), we determined that, in addition to more striking actions, Yo peeled shell away from kernels using her teeth more frequently in later years (peelteeth SHELL = +6.78% of the total action repertoire composition) and also consumed all kernel in a greater number of bites (eat KERNEL = +5.16% change in total action repertoire composition). Similarly, Velu exhibited an increase in the median number of actions used to crack and process each nut between 1999 and 2016, though this effect was milder (+7 actions; +70% change between 1999 and 2016). For Velu, the majority of these additional actions were strikes of the hammer stone (+4 strikes; +100%). For Fana and Jire, we detected a smaller change in the median number of actions used to crack open oil-palm nuts by 2016 (Fana = +2.5 actions; Jire = +3 actions); however, given that these changes are small, it is more difficult to rule out the possibility that they are due to chance fluctuations in samples between years. Additionally, for Fana and Jire, the median number of striking actions performed per nut in 1999 and 2016 was very similar (Jire: +2 strikes; Fana +1 strike). We found no evidence of Tua performing more or fewer actions when cracking oil-palm nuts (including hammer strikes) over field seasons.
 
 ## Discussion
 
 We provide the first account of how a tool-use behavior performed by wild chimpanzees changed with progressively older age. Across a seventeen-year window, during which chimpanzees aged from 39-44 years to 56–61 years old, elderly chimpanzees began visiting experimental nut-cracking sites less frequently. This change in attendance rate was not observed for younger chimpanzees and was therefore confined to individuals who were approaching their maximum age in the wild. In addition, when present at nut cracking sites, two individuals (Fana and Velu) exhibited a lower engagement with nuts and stone tools in 2011 (the latest field season for this analysis) as compared with their behavior in earlier field seasons. With progressive aging, three individuals took longer to select stone tools (Yo, Fana, and Jire), several individuals took longer to crack open oil-palm nuts and consume all of the kernel, and two individuals (Yo and Velu) cracked and processed oil-palm nuts using a greater number of actions, including more frequent strikes of the hammer stone. Across metrics of engagement and efficiency, we detected interindividual differences in the extent to which nut cracking behaviors changed with progressive aging, including some individuals who exhibited little-to-no change in behavior across the time period sampled (see Table 2). Overall, our results provide initial evidence that elderly wild chimpanzees are subject to variable effects of aging on their habitual stone tool-use behaviors.
 
+**Table 2.**
+ Summary of changes observed in each chimpanzee with progressive aging.Summaries describe the differences between the first and last field season each individual was sampled (although models underlying each result used data from all field seasons). The term ‘Possible Mild Increase/Decrease’ is used to note where we identified a change for a particular metric, but this change was considerably smaller than for other individuals, and therefore could be due to chance. We address these instances on a case-by-case basis within the Results. Dashed lines (-) indicate where we found no strong evidence for behavioural change. Names of males are listed in all capitals; females’ names are in capitals and lower case.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Individual</th>
+      <th rowspan="2">Sex</th>
+      <th rowspan="2">Attendance</th>
+      <th rowspan="2">Engagement</th>
+      <th rowspan="2">Tool Selection Time</th>
+      <th colspan="3">Oil-Palm Nut Cracking</th>
+      <th rowspan="2">Summary</th>
+    </tr>
+    <tr>
+      <th>Total Time</th>
+      <th># Actions</th>
+      <th># Strikes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fana</td>
+      <td>F</td>
+      <td>Decrease</td>
+      <td>Decrease</td>
+      <td>Increase</td>
+      <td>Possible mild increase</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Rate of attendance at the outdoor laboratory decreased, and Fana engaged with nuts and stones less often when present. Fana took longer to select tools. However, her general tool-using efficiency was mostly constant.</td>
+    </tr>
+    <tr>
+      <td>Jire</td>
+      <td>F</td>
+      <td>Decrease</td>
+      <td>Possible Mild Decrease</td>
+      <td>Increase</td>
+      <td>Mild increase</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Rate of attendance at the outdoor laboratory decreased. Jire took longer to select stone tools. General tool-using efficiency was mostly constant, but Jire took slightly longer to crack oil-palm nuts in later years.</td>
+    </tr>
+    <tr>
+      <td>TUA</td>
+      <td>M</td>
+      <td>-</td>
+      <td>Possible Mild Increase</td>
+      <td>Decrease</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Tua became slightly faster at selecting tools, and his tool-using efficiency was constant across years.</td>
+    </tr>
+    <tr>
+      <td>Velu</td>
+      <td>F</td>
+      <td>Decrease</td>
+      <td>Decrease (although sample size was small in 2011)</td>
+      <td>-</td>
+      <td>Increase</td>
+      <td>Increase</td>
+      <td>Increase</td>
+      <td>Rate of attendance at the outdoor laboratory decreased. Velu engaged with nuts and stones less often when present. Velu took longer to crack oil-palm nuts and used more striking actions.</td>
+    </tr>
+    <tr>
+      <td>Yo</td>
+      <td>F</td>
+      <td>Decrease</td>
+      <td>Possible Mild Increase</td>
+      <td>Increase</td>
+      <td>Increase</td>
+      <td>Increase</td>
+      <td>Increase</td>
+      <td>Rate of attendance at the outdoor laboratory decreased. When present, Yo spent a slightly greater proportion of time engaging with nuts and stones. Yo took much longer to select tools and demonstrated the largest reduction in tool-using efficiency.</td>
+    </tr>
+  </tbody>
+</table>
+
 Whilst the outdoor laboratory locations are experimentally created nut-cracking sites, previous research on the performance of nut cracking across the home range at Bossou established that chimpanzees visit the outdoor laboratory at rates comparable to naturally occurring sites (Almeida-Warren et al., 2022), meaning that for most individuals at Bossou, the outdoor laboratory is a readily visited site for foraging. However, at progressively older ages, elderly chimpanzees began to visit the outdoor laboratory less frequently. This result was not found for younger chimpanzees between the ages of 8 and 30 years old, suggesting that changes in elderly chimpanzees’ attendance rates were not an artefact of environmental changes over field seasons (which would likely affect both age cohorts similarly).
 
 In addition, by 2011, two elderly chimpanzees (Velu and Fana) engaged with nuts and stone tools less frequently than they had done during visits to the outdoor laboratory throughout earlier years (although note for Velu, data for 2011 were collected from a single encounter). The possible causes for these changes in attendance rate – and engagement with nuts and stone tools when present at the outdoor laboratory – are manifold. Firstly, physiological changes with aging – such as in metabolism and nutrient requirements – could influence individuals’ dietary preferences, reducing the appeal of nuts as an available food source. Secondly, physical senescence may make visiting nut cracking sites more challenging for elderly individuals, such as through reduced capacity for locomotion. Changes in locomotion have been documented in aging captive apes (Neal Webb et al., 2019). In the context of wild apes, reduced mobility may further restrict the available area that elderly chimpanzees can traverse during daily ranging, encouraging them to visit foraging patches that are more proximal to their immediate locations than the outdoor laboratory. Chimpanzees habitually plan their routes towards tool-use sites (Almeida-Warren et al., 2022); however, the extent to which their doing so changes during old age is unclear. Thirdly, it is possible that tool use may become more challenging due to changes in elderly chimpanzees’ cognitive or physical condition (see latter sections of our discussion), which may reduce the appeal of visiting nut-cracking sites. Fourthly, changes in social association may have influenced the likelihood that elderly chimpanzees visited experimental nut-cracking sites. When experiencing increasingly old ages, many primates (Neal Webb et al., 2019; Siracusa et al., 2022b; Campos et al., 2024; Almeling et al., 2016; Machanda and Rosati, 2020) – and other mammals (Siracusa et al., 2022a; Rudd et al., 2024; Albery et al., 2022) – display higher social selectivity and spend a greater proportion of their time either in isolation or in smaller group associations. This social aging arguably may not be senescence per se, but can either be the result of senescent processes (perhaps even exacerbating senescence; Siracusa et al., 2022a), or may act to benefit individuals experiencing senescence, such as reducing the risk of injury from antagonistic interactions with social partners, or by shielding oneself from contagious disease (Siracusa et al., 2022a; Siracusa et al., 2024). In the context of our study, chimpanzees at Bossou typically arrive at the outdoor laboratory when travelling in groups, and therefore party members may be led to nut-cracking sites by associated conspecifics, rather than through independent choice. Previous research has demonstrated that whilst gregariousness appears to be constant across ages in the Bossou chimpanzees (Schofield et al., 2023), two old-aged individuals became notably peripheral in social networks constructed using data from the 2011 field season (Schofield et al., 2019) (Yo and Velu; the two individuals we identified as having the lowest attendance rates), indicating that they were more often seen arriving at the outdoor laboratory alone or travelling as a pair. In tandem with the profound reduction in population size at Bossou throughout our study period (Matsuzawa et al., 2004), changes in social structure may have disproportionately affected elderly chimpanzees, leading to a lower likelihood of visiting the outdoor laboratory alongside – or to regroup with – other community members. Further research is required to link our observed changes in nut cracking engagement to their underlying causes.
 
 Through the collection of longitudinal behavioral data, we were able to evaluate whether at older ages, chimpanzees perform less streamlined tool-use behaviors. At Bossou, chimpanzees exhibit interindividual variation in nut cracking efficiency; however, within-individual efficiency is stable over the majority of each chimpanzee’s lifetime (Berdugo et al., 2025). To assess for aging effects, we therefore compared behavior in middle and later adulthood for each chimpanzee, permitting signals of aging to be identified using individually bespoke baselines of efficiency. Focal chimpanzees exhibited high efficiency in the first field season (1999), suggesting that we began sampling data before the onset of tool-use senescence (see Biro et al., 2003 for data on striking efficiency of adults at Bossou, where all adults use approximately 2–4 strikes per oil-palm nut – our focal subset of adults fell within this range in 1999). Of the five individuals included in our study, three individuals took longer to select stone tools over progressing field seasons (Yo, Fana, and Jire), two females showed very small increases in the amount of time taken to crack and process nuts (Fana and Jire), whereas two other females exhibited comparatively dramatic increases in the time taken to crack and process each nut (Yo and Velu). Yo and Velu also exhibited more frequent striking using the hammer stone, and Yo performed additional actions to peel shell away from kernels with her mouth and consumed kernels with a greater number of bites (see Video 1 for footage of Yo cracking oil-palm nuts in 1999 and 2016). Our results therefore suggest that there is measurable interindividual variation in the effects of extreme aging on the efficiency of both tool selection and use in wild chimpanzees.
+
+![Video 1.](https://cdn.elifesciences.org/articles/105411/elife-105411-video1.mp4.jpg)
 
 Our findings mirror reports of interindividual variability in the senescence of cognitive and physiological systems in both captive and wild primates (Tarou et al., 2002; Rothwell et al., 2021; Morbeck et al., 2002; Freire-Cobo et al., 2021; Hämäläinen et al., 2015). Whilst it is outside the scope of our study to determine the precise cognitive, physical, and resultant motivational changes that led to reductions in engagement with tools, rates of tool selection, and the efficiency of tool use, our results can generate predictions about how changes in fine-scale processes may translate into the behavioral changes we have observed with progressive aging. For the chimpanzees that experienced reductions in nut cracking efficiency (as discussed above), these changes could be due to changes in physical strength and dexterity (Lowenstine et al., 2016; Morbeck et al., 2002), visual acuity (Fujisawa et al., 2010), dentition (where tooth decay may render peeling and chewing actions more difficult; Lowenstine et al., 2016; Albrecht et al., 2024), or possibly due to changes in cognition relevant to effective tool use (Lacreuse et al., 2014; Lacreuse et al., 2020), such as executive functioning or working memory. Changes in tool use behavior may also have emerged to actively compensate for the effects of senescence that are not in themselves specific to tool use; for example, tooth wear and subsequent periodontal disease are common in old-aged chimpanzees (Lowenstine et al., 2016; Albrecht et al., 2024). The additional strikes of the hammer stone performed by Yo and Velu to crack oil-palm nuts may have therefore been motivated by the desire to break the kernel into a greater number of smaller pieces, which were easier to peel and consume. This conclusion is somewhat supported by post-mortem data for Velu following her death in 2017, as she exhibited heavy wear patterns on both incisors and premolars and was missing several molars on the lower jaw (Matsuzawa, 2018). Similarly to tool-using efficiency, the duration of tool selection may have taken longer for several individuals due to difficulties identifying the properties of available stones, perhaps due to changes in perceptual systems (such as poorer vision; Fujisawa et al., 2010), or cognitive challenges in predicting the properties of objects. Alternatively, longer tool-selection times could have also been due to the need for chimpanzees to weigh up the benefits of specific tool properties (e.g. weight and size), relative to age-related changes in their physical strength and mobility. Bridging the gap between age-related changes in tool-use behavior and changes in cognitive and physiological processes requires further study and would likely benefit from experimental approaches where possible.
 
@@ -104,6 +361,8 @@ Our study used longitudinal video data collected from a unique, decades-long sys
 Firstly, we were unable to analyze whether specific ecological variables – such as the availability of different food sources and demographic changes at Bossou – influence aging individuals’ attendance at the outdoor laboratory, as well as at naturally occurring nut cracking sites (see discussion above). Nevertheless, by using the attendance of younger individuals as a control, we were able to identify that the reduction in attendance over field seasons was limited to older individuals, suggesting a specific change in behavior associated with chimpanzees experiencing progressively old age. Further research is needed to understand what factors lead to this reduced engagement with nut cracking at older ages; how aging individuals compensate for calorie loss from reduced nut cracking, and more generally, how aging influences chimpanzees’ foraging behaviors across their entire home range.
 
 Secondly, we were not able to eliminate all possible ecological explanations for age-related changes in tool-using efficiency (Falótico et al., 2022; Proffitt et al., 2022). Some ecological variables were controlled for as part of the experimental set up at the outdoor laboratory. For example, chimpanzees were always tested during similar months of the year in each field season, and were provided with oil-palm nuts at a suitable stage of maturity (and thus of similar hardness). Previous studies at Bossou have also revealed that chimpanzees are able to select nuts that are suitable for cracking, further suggesting that chimpanzees can account for differences in nut quality during tool use (Sakura and Matsuzawa, 1991; although this could also have been affected by aging itself, such as through reduced visual acuity impeding suitable nut selection; Fujisawa et al., 2010). Whilst it is possible that other ecological factors may influence our results, we believe that inter-seasonal ecological differences are unlikely to fully explain them. Firstly, if differences in chimpanzees’ nut cracking efficiency between seasons were being driven by ecological variation, we predict that this inter-annual variation would be equally present across early and late field seasons. However, contrary to this prediction, nut-cracking efficiency was very similar across early field seasons (and across individuals during these years); changes in efficiency were only detected in later field seasons, when chimpanzees were sampled at older ages. Secondly, if inter-annual differences in ecology rendered nut cracking more difficult in later field seasons, we would expect these ecological changes to affect all individuals similarly. This was also not the case, as changes in behavior differed between individuals – some maintained similar levels of efficiency (such as Fana), whereas other individuals experienced profound reductions in efficiency (such as Velu and Yo). For Yo (the individual with the greatest reduction in tool-using efficiency), the observations that Yo took even longer to crack oil-palm nuts in 2018 (and that Yo also struggled to crack coula nuts in 2011, see Appendices 3 and 4 for further information, and Video 2) provide evidence for a directional, individual-specific reduction in nut-cracking efficiency across later years, rather than her efficiency being dictated by ecological variation. We could not provide nut-cracking efficiency data for a cohort of younger adults across field seasons, as there was only one young adult (male) individual at Bossou between 1999 and 2016. An additional younger adult cohort would have been a desirable control group for our study, to complement the long-term efficiency baselines we provide at the level of the individual. For future studies, we believe that the collection of a wider array of ecological data would be valuable for discriminating between explanations with greater confidence and, where possible, future studies should aim to collect long-term data on the behavior of younger adults as additional control groups.
+
+![Video 2.](https://cdn.elifesciences.org/articles/105411/elife-105411-video2.mp4.jpg)
 
 Thirdly, as data were collected from video footage, we could not examine how the dimensions of tools and raw material types influenced chimpanzees’ tool-use behaviors over different encounters and across field seasons. Throughout long-term data collection at Bossou, the stone tools available at the outdoor laboratory have been kept as consistent as possible, and chimpanzees select tools with physical properties which likely enhance nut cracking efficiency (Carvalho et al., 2008; Braun et al., 2025). Indeed, changes in tool-using efficiency may be borne from increasing difficulty selecting appropriate tools with aging. Future studies should gather data on tool properties to support analyses of aging effects in tool use. These studies could be combined with data collection on even more finely grained behaviors of apes when using tools, such as the specific grips used to manipulate objects over time (Neufuss et al., 2017; Malherbe et al., 2024).
 
@@ -117,7 +376,7 @@ In sum, we demonstrate that the tool-use behaviors of wild chimpanzees can chang
 
 ## Methods
 
-## Study site and video archive
+### Study site and video archive
 
 Established in 1976, Bossou (07° 390’ N; 008° 300’ W) is a site of long-term research focused on a small population of wild West-African chimpanzees (Matsuzawa et al., 2011). Chimpanzees at Bossou possess an extensive repertoire of tool-use behaviors (Humle, 2011), including nut cracking (Carvalho et al., 2008; Matsuzawa, 1994; Biro et al., 2003; Biro et al., 2006). For many years, the size of the Bossou chimpanzee community remained relatively stable at around 20 individuals; however, following a flu-like epidemic in 2002 that killed 5 individuals (Matsuzawa et al., 2004), the population began an irrecoverable decline. At the time of writing (2025), the Bossou community consists of just three individuals.
 
@@ -129,21 +388,21 @@ We collected and analyzed data on the behaviors of chimpanzees at the outdoor la
 
 Over the years, the outdoor laboratory has operated at two locations in the forest. Between 1999 and 2008, data was only collected at one specific location across the years. However, in 2011, a second clearing was made available to chimpanzees, with an identical experimental set up. In 2011, data was collected in both locations simultaneously. By 2016, all data collection had transitioned to the newer, second location. For the majority of our analyses, we therefore used data from the first location between the years of 1999–2011 and the second location in 2016. For only one analysis (attendance rate, see below), we used data from both the first and second outdoor laboratory location in 2011. All behavior coding in our study was performed using the open-access software BORIS (Friard and Gamba, 2016), with videos viewed on a 59 cm monitor.
 
-## Attendance
+### Attendance
 
 We recorded the total number of times chimpanzees were encountered at the outdoor laboratory in each field season. An encounter was defined as any instance where one or a group of chimpanzees visited the outdoor laboratory and lasted until all chimpanzees left. If a chimpanzee left the outdoor laboratory and returned before all other individuals had left, it was classed as part of the same encounter. We collected data on the five chimpanzees experiencing increasingly old age, as well as for an additional cohort of all adult and subadult individuals between the ages of 8 and 30 years old. This second cohort of individuals allowed us to evaluate whether changes in attendance rate over progressive field seasons may be due to confounding factors other than senescence, such as changes in environmental food availability or population structure, or changes in the number of experimental nut cracking sites. For our younger cohort of chimpanzees, we used a minimum age of 8 years old, as chimpanzees at Bossou acquire the skill of nut cracking by 7 years of age. For this analysis, we also excluded two adult females (Pama and Nina) who never learnt to successfully crack nuts using stone tools. To evaluate whether progressive aging reduced attendance rates, we constructed a Poisson GLMM with field season as a continuous fixed effect (scaled about the mean), and cohort (above or below 30 years) as a categorical variable. Rates of attendance were estimated using encounters (a count variable) and the inclusion of an offset term in our model (the number of days of the field season). Importantly, we included an interaction term in our model to see whether the relationship between aging across field seasons and attendance rate was more severe for our focal elderly individuals compared with the younger cohort. Individual ID was included as a random intercept to account for repeated measures of the same individual across field seasons.
 
-## Behaviors at the outdoor laboratory
+### Behaviors at the outdoor laboratory
 
 We estimated whether, over successive field seasons, elderly individuals began spending a greater or lesser proportion of their time engaging in nut cracking when present at the outdoor laboratory, as compared with other commonly performed behaviors. For each elderly individual, we sampled the first 10 encounters of each field season in which they were present (totaling a maximum of 50 encounters per individual across all field seasons). For each encounter, we timed how long individuals engaged in one of four mutually exclusive categories of behavior:
 
 For behaviors 1–3, coding ceased when individuals stopped interacting with all relevant objects of one behavior (e.g. leaf tools, stones, fruits) and began engaging in another behavior (either another behavior from 1 to 3, or ‘Other’ behaviors such as grooming). If an individual dropped all relevant items and was idle for at least 1 min, they were considered to be resting, and behaviors were marked as ‘Other’. For field seasons in which individuals did not visit the outdoor laboratory on at least 10 occasions, all available encounters were used. We also recorded the total amount of time each focal individual spent at the outdoor laboratory during each encounter. We calculated the proportion of time individuals spent engaging in each type of behavior across all encounters of each field season (thus, controlling for differences in the total time individuals were observed between years). For this analysis, we omitted any videos collected at the second outdoor laboratory site (including some videos from 2011 and all videos from 2016). We chose to do so as the two sites vary in how accessible they are (with the original site being situated at the top of a steep hill, but the second requiring no climb). This difference in terrain may influence the behaviors of the chimpanzees once arriving at the outdoor laboratory, for example, more time resting following climbing.
 
-## Stone-tool selection
+### Stone-tool selection
 
 We measured the time taken for the old-aged chimpanzees to select stone tools at the central matrix during each of the sampled field seasons. We sampled the first 10 encounters with each individual for each field season. All tool-selection events in these encounters were sampled. We began timing when chimpanzees approached the matrix, and we considered their gaze to be fixed on at least one stone tool. We stopped timing when chimpanzees turned away from the matrix holding all acquired stone tools. We recorded the number of stone tools taken by the focal chimpanzee during each instance of stone-tool selection (a categorical score of ‘one’ or ‘two’ stones). Additionally, we recorded the number of stone tools that had been removed from the stone-tool matrix prior to each stone selection event (including those removed by other individuals, as well as the focal chimpanzee during previous instances of stone-tool selection). We could therefore incorporate into our analysis a metric of how many options were available to chimpanzees during each stone-tool selection event (where higher numbers of previously selected tools indicated a smaller pool of possible choices). We did not sample instances where chimpanzees selected and used tools which were not positioned at the central matrix (i.e. when using tools which had already been transported away from the matrix by other chimpanzees). When modeling tool-selection time over field seasons, both the number of stones that a chimpanzee selected from the central matrix (one or two) and the number of stones previously removed from the matrix were included in our model as fixed effects, to control for additional variation in selection time introduced by these two factors (see Statistical analyses below for more details on GLMM model structures).
 
-## Coding discrete actions
+### Coding discrete actions
 
 When performing complex technical skills—including tool-use behaviors— experienced apes organize individual actions into more streamlined goal-directed sequences (Byrne et al., 2013; Howard-Spink et al., 2024; Inoue-Nakamura and Matsuzawa, 1997; Boesch et al., 2020), and begin to successfully perform behaviors more quickly (Howard-Spink et al., 2024; Boesch and Boesch, 1983; Biro et al., 2003; Neufuss et al., 2017); however, whether experiencing progressively old age influences this efficiency has not yet been studied.
 
@@ -153,7 +412,7 @@ Coding of action sequences started when an individual began interacting with a n
 
 The total corpus of actions was parsed into sequences directed at the cracking of individual nuts and the consumption of all associated kernels. Only sequences which described the entire processing of a nut, from acquisition of the nut to complete consumption of the kernel, were included in our analysis. A number of metrics of efficiency were extracted from action sequences directed at individual nuts, which emphasize the speed with which kernels can be acquired and consumed, and the extent to which the actions used to do so reflect a streamlined behavioral sequence:
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed in R (version 4.3.3 Angel Food Cake). For attendance rates, tool-selection times, and the metrics of efficiency cracking individual nuts, we used linear and generalized linear mixed-effect models to assess for the effects of age (using the lme4 package; Bates et al., 2015). Linear mixed-effect models were used in any instance where time was a response variable (time was logged to confer normality); whereas, if a response variable was measured in counts (e.g. number of actions used to crack open a nut; number of encounters over a field season, etc.), we employed generalized linear mixed-effect models using a Poisson distribution. In both instances, the year of the field season (scaled about the mean) was used as a fixed effect, as a proxy for age.
 

@@ -15,8 +15,8 @@
 
 ### Affiliations
 
-1. https://ror.org/038fcbc74 Institut de Génomique Fonctionnelle de Lyon (IGFL), CNRS UMR 5242, INRAE USC 1370, École Normale Supérieure de Lyon Lyon France
-2. https://ror.org/02vjkv261 U1213 Nutrition, Diabète et Cerveau, Institut National de la Santé et de la Recherche Médicale Lyon France
+1. Institut de Génomique Fonctionnelle de Lyon (IGFL), CNRS UMR 5242, INRAE USC 1370, École Normale Supérieure de Lyon Lyon France ([ROR:038fcbc74](https://ror.org/038fcbc74))
+2. U1213 Nutrition, Diabète et Cerveau, Institut National de la Santé et de la Recherche Médicale Lyon France ([ROR:02vjkv261](https://ror.org/02vjkv261))
 
 † Corresponding author
 
@@ -36,17 +36,41 @@ Thus, T3 exerts a broad influence on different tissues to regulate energy expend
 
 ## Results
 
-## BATKO mice present a BAT-specific deletion of T3 signaling
+### BATKO mice present a BAT-specific deletion of T3 signaling
 
 The blockade of T3 signaling specifically in brown adipocytes in adults has been achieved using the Ucp1CreERT2 (Figure 1—figure supplement 1; Rosenwald et al., 2013). It was combined with two available floxed alleles to ascertain a full blockade of the T3 response in brown adipocytes. In the absence of tools to eliminate Thra, we used ThraAMI, a recombinant ‘floxed’ allele of the Thra gene, in which Cre-mediated recombination allows the expression of TRα1L400R, a dominant-negative version of the TRα1 receptor (Quignodon et al., 2007). TRα1L400R prevents the recruitment of coactivators and is thus condemned to constitutively repress T3 target genes expression. Thus, we expect the effects of this knock-in to be stronger than a knock-out. Then, we used Thrblox, a recombinant allele of Thrb gene, in which two loxP sequences flank the exon encoding the DNA-binding domain of TRβ1/TRβ2 (Winter et al., 2009). This approach eliminates T3 responsiveness. Ucp1CreERT2xThraAMI/+Thrbloxlox/lox mice (Figure 1A) are called BATKO mice and compared with ThraAMI/+Thrbloxlox/lox CTRL littermates.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the BATKO mice. BATKO mice carry the Ucp1CreERT2 transgene, allowing the brown-adipocyte-specific expression of the tamoxifen-sensitive CreERT2 recombinase. BATKO mice are also heterozygous for the ThraAMI allele, which encodes the TRα1L400R dominant-negative receptor after Cre-mediated deletion of a STOP cassette flanked by loxP sequences. BATKO mice are homozygous for the Thrblox allele in which exon 3 is flanked by two tandem-arranged loxP sequences. After tamoxifen injection, Cre-mediated recombination selectively excise the loxP-flanked sequences in brown adipocytes, resulting in the expression of TRα1L400R and elimination of TRβ. Control mice (CTRL, not represented here) had the same genotype except for the absence of the Ucp1CreERT2 transgene and were also tamoxifen treated. (B) Sanger sequencing chromatogram of a fragment of Thra cDNA prepared from BAT RNA of BATKO mice. Arrows indicate the positions of the TRα1L400R mutations. (C) Relative mRNA expression of Thrb in different peripheral and central tissues of CTRL and BATKO mice (H: heart, M: muscle, L: liver, St: striatum, Hy: hypothalamus) (n = 5–6/group). (D) Evaluation of T3 response in propylthiouracil (PTU)-fed CTRL and BATKO mice through the induction of Hr, a well characterized TR target gene, after 24 hr of TH (+ or −; n = 5–7/group). Statistical significance is shown for the comparison of CTRL and BATKO mice treated with TH. Error bars represent the standard deviation (SD). ***p < 0.001 for the indicated comparisons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ucp1CreERT2:Rosa26TdTomato reporter mice were dissected and their tissues observed under a Leica M205FA fluorescent stereomicroscope. Results are shown for one mouse.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Serum concentration (in pmol/l) of free T3 (left panel) and free T4 (right panel) in CTRL and BATKO mice in different experimental conditions (RT: room temperature) (n = 4–5/group).
+
 We verified that the ThraAMI allele was expressed in the BAT of BATKO mice (Figure 1B) and that Thrb expression was drastically reduced (93%) in the BAT of BATKO mice, but not in other tissues (Figure 1C). As expected, the T3-induced regulation of Hr expression, a classical T3 target gene in many tissues (Zekri et al., 2022), was selectively and almost completely lost in the BAT of BATKO mice (Figure 1D). The observed residual responses most likely reflect the presence in BAT of other cell types, like endothelial cells and immune cells (Biagi et al., 2021). Importantly, there was no significant difference between BATKO and CTRL mice in free T3 or free T4 serum levels, whatever the temperature and diet conditions used in this report (Figure 1—figure supplement 2). Altogether, BATKO mice present an altered T3 signaling specifically in brown adipocytes, allowing us to decipher the cell-autonomous functions of T3 in this cell type.
 
-## Establishment of a catalog of TR direct target genes in BAT
+### Establishment of a catalog of TR direct target genes in BAT
 
 We first aimed at establishing a complete list of TR direct target genes in brown adipocytes, defined as genes: (1) with a TR-binding site (TRBS) within 30 kb of the transcription start site (TSS) (Chatonnet et al., 2013), (2) which mRNA levels are rapidly (within 24 hr) increased in BAT in response to T3 and T4 (collectively TH), and (3) which induction is lost in BATKO mice, that is, controlled locally by TR in brown adipocytes (and thus, not secondary to the sympathetic stimulation of the tissue caused by the TH treatment).
 
 Ucp1CreERT2xThraGS/+ mice express specifically in brown adipocytes a GS-tagged version of TRα1 (Hirose et al., 2019; Richard et al., 2020) used for chromatin immunoprecipitation sequencing (ChIPseq). We identified 4210 TRBS, in the vicinity of 2311 genes, essentially located within 10 kb of the TSS (Figure 2A) and mostly in intronic sequences (Figure 2B). TRBS was preferentially present on motifs related to the so-called DR4 consensus sequence (AGGTCAnnnnRGGnCA), described as preferential for TR fixation (Flamant, 2016; Figure 2C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig2-v2.jpg)
+
+**Figure 2.:** (A) Consensus sequence found in brown adipose tissue (BAT) TRBS (thyroid hormone receptor-binding site), as identified by de novo motif search. (B) Frequency of TRBS distribution around transcription start sites (TSSs). (C) Pie chart of the 4210 TRBS distribution in the genome (UTR: untranslated region). (D) Venn diagrams of upregulated (left panel) and downregulated (right panel) genes after TH intraperitoneal injection in wild-type propylthiouracil (PTU)-treated mice for different periods. (E) Percentage of genes which possess a TRBS within 30 kb of their TSS among genes whose expression in the BAT is regulated or not by T3 (upregulated in red, downregulated in blue, not regulated in gray). (F) Venn diagram of genes whose expression is induced by T3 in at least one of the time points (in brown, RNAseq data) and genes with a TRBS within 30 kb of their TSS (in blue, chromatin immunoprecipitation sequencing [ChIPseq] data), that is, TR direct targer genes. (G) Left: Time-course analysis of Hr (top) and Ucp1 (bottom) expression in BAT after 24 hr of TH treatment of wild-type hypothyroid mice (RT-qPCR). Statistical significance is shown for the different time points versus untreated PTU-fed mice (n = 4–6/group). Right: Extract of the TRBS in the Mus musculus genome browser around Hr (top) and Ucp1 (bottom). (H) Heatmap representing in both CTRL and BATKO mice the expression of TR direct target genes upregulated after 24 hr of TH injection in CTRL hypothyroid mice. Colors represent the z-scores, see scale besides the heatmap (n = 4–5/group). Relative expression of several TR direct target genes 24 hr after TH treatment in (I) CTRL/BATKO and (J) Sham/denervated PTU-fed C57BL6/J mice. Statistical significance is shown for the comparisons between CTRL-TH and BATKO-TH, or SHAM-TH and BATKO-TH mice (n = 5–7/group). (K) Gene ontology dot plot of the 639 TR direct target genes. Only the ‘biological processes’ terms with a fold-enrichment >1.5 were kept. Some of the terms were shortened to increase readability without affecting the meaning. Error bars represent the standard deviation (SD). ***p < 0.001 for the indicated comparisons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots with total protein (bottom of the pictures) and tyrosine hydroxylase (top of the pictures) extracted from BAT. Each lane represents a different sample, from sham mice (+) or denervated mice (−). (B) Relative quantification of tyrosine hydroxylase protein in the BAT of sham and denervated mice. Quantity of tyrosine hydroxylase is relative to the quantity of total proteins. Error bars represent the standard error of the mean (SEM). ***p < 0.001 versus SHAM mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Venn diagram designed to highlight TR direct target genes that include a PGC1⍺-binding site.
 
 Time-course analysis of BAT transcriptome in hypothyroid (PTU-fed) wild-type mice treated with TH for 3, 6, 12, or 24 hr was conducted by RNAseq. It revealed that a large number of genes were regulated (1946 upregulated, 1744 downregulated) in a time-dependent manner (Figure 2D). We observed that 49% of genes induced by T3 after 3 hr possess a TRBS within 30 kb of their TSS. This ratio fell below 10% for T3-repressed genes and for genes which expression was insensitive to T3 (Figure 2E). This suggests that downregulation of gene expression is not directly exerted by T3-bound TR, but is an indirect consequence of the TH treatment, either cell autonomous or resulting from sympathetic stimulation. Given these considerations, the rest of the study was restricted to positively regulated genes.
 
@@ -54,29 +78,92 @@ We then crossed the RNAseq and the ChIPseq datasets to obtain a curated list of 
 
 According to gene ontology analysis, TR direct target genes were directly involved in the ‘regulation of cold-induced thermogenesis’ (Figure 2K), including Ucp1 and Ppargc1a, two fundamental actors of this process. Interestingly, Ppargc1a encodes for PGC1⍺, a co-activator of TR (Yuan et al., 2013). Using a published list of PGC1⍺-binding sites (GSE110053) (Chang et al., 2018), we found that around 33% of TR direct target genes showed a co-localization of TR and PGC1⍺-binding sites (Figure 2—figure supplement 2), including genes involved in lipid metabolism as well as Ucp1 and Ucp3 (Figure 2—source data 3). In addition, many of TR direct target genes we identified were involved in mitochondrial transport, respiratory chain, catabolism, and biogenesis of lipids, as well as genes involved in the glycolysis and the citric acid cycle. Finally, we also found genes involved in proliferation, a process of BAT mid-term adaptation to physiological stressors like cold (Fukano et al., 2016). In summary, TR direct target genes belong to several biological processes, many of them being directly connected to BAT thermogenesis.
 
-## Altered response of BATKO mice to temperatures below thermoneutrality
+### Altered response of BATKO mice to temperatures below thermoneutrality
 
 Based on the roles of TR target genes identified above, we predicted that BATKO mice would display alterations in BAT thermogenesis. At 23°C, neither body weight, nor body composition, nor metabolic rate were altered in BATKO mice, but food consumption was increased (Figure 3—figure supplement 1). As these small variations occurred at 23°C, which is a moderate cold exposure for mice (Reitman, 2018), we submitted them to a more drastic cold challenge.
 
 BATKO mice maintained their body temperature normally at 4°C during 72 hr but they tended again to consume more food than CTRL mice (Figure 3A). We thus combined cold exposure with fasting, causing a severe hypothermia in BATKO mice which led us to end the experiment (Figure 3B). A similar phenotype was obtained when TRβ was the only mutated TR, suggesting that a significant part of the effects mediated by T3 in BAT requires TRβ (Figure 3—figure supplement 2). Globally, alteration of T3 signaling in BAT requires a higher energy intake to maintain body temperature during a cold stress. This suggests that compensatory thermogenic processes are triggered to maintain body temperature in BATKO mice fed ad libitum. In that context, we notably observed that the browning of the WAT was exacerbated in BATKO mice (Figure 3—figure supplement 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig3-v2.jpg)
+
+**Figure 3.:** (A) Core body temperature (left) and food consumption (right, over 48 hr) of CTRL and BATKO mice exposed to 4°C in the presence of food (n = 5–7/group). BATKO mice tended to eat more than CTRL mice. (B) Core body temperature in CTRL and BATKO mice exposed to 4°C in the absence of food. After 8 hr of cold exposure, BATKO mice reached severe hypothermia and the experiment was stopped (n = 4–5/group). Body weight gain and food consumption of CTRL and BATKO mice at room temperature (C, n = 4–5/group) or 30°C (D, n = 5–8/group). Error bars represent the standard error of the mean. ***p < 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Body composition of BATKO and CTRL mice measured by nuclear magnetic resonance (n = 7–9/group). (B) VCO2 (ml/hr/kg), (C) VO2 (ml/hr/kg), (D) metabolic rate, (E) respiratory quotient (ratio of VO2/VCO2), (F) cumulative food consumed by CTRL and BATKO mice, as monitored during 48 hr with 12 hr light/dark cyles (dark phases are represented by gray areas). Error bars represent the standard error of the mean (SEM). ***p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Core body temperature in CTRL and BATβKO mice exposed to 4°C in the absence of food. After 11 hr of cold exposure, BATβKO mice reached severe hypothermia and the experiment was stopped (n = 6/group). (B) Body weight gain and food consumption of CTRL and BATβKO mice at room temperature (n = 4–6/group). Error bars represent the standard error of the mean. *p<0.05 and ***p < 0.001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Relative expression of genes in the WAT (n = 4–7/group) and (B) representative images of UCP1 staining in the WAT, in CTRL and BATKO mice after a 72 hr 4°C exposure (with ad libitum access to food). Browning was exacerbated in BATKO mice. Thrb was not affected in WAT. Statistical significance is shown for the CTRL 4°C versus BATKO 4°C group comparison. **p<0.01 and ***p<0.001 for the indicated comparisons.
+
 HFD represents another challenge for the thermogenic capacity. BATKO mice gained less weight than CTRL mice during HFD at 23°C, despite similar food intake (Figure 3C). Again, this phenotype was reproduced when TRβ only was mutated, reinforcing the importance of TRβ in T3-mediated regulation of BAT thermogenic processes (Figure 3—figure supplement 2). Collectively, the resistance to diet-induced obesity suggests that mice with an altered T3 signaling in BAT have a higher energy expenditure. Higher energy expenditure was not observed in BATKO mice by 48 hr of indirect calorimetry (Figure 3—figure supplement 1) but even a minor difference could explain the subtle difference between BATKO and CTRL mice. HFD feeding was then conducted at thermoneutrality, eliminating the need to activate alternate mechanisms to defend body temperature. In this condition, the opposite result was observed, BATKO mice being more sensitive to diet-induced obesity than CTRL mice with similar food intake (Figure 3D). Collectively, these results point out that BATKO mice suffer from a reduced efficiency of BAT adaptive thermogenesis both in condition of cold exposure and excess of calories. When exposed to HFD at 23°C, the activation of alternative thermogenic processes combined with the defect in adipocytes thermogenesis results in a paradoxical resistance to obesity of BATKO mice.
 
-## BAT TR signaling controls the expression of a subset of genes induced during cold exposure
+### BAT TR signaling controls the expression of a subset of genes induced during cold exposure
 
 To better understand the molecular response controlled by TR signaling in the BAT during cold response, we compared the BAT transcriptome of BATKO and CTRL mice after 24 hr at 4°C, in the presence of food. Among 2865 cold-induced genes (Figure 4—source data 1), 491 (17%) displayed a different response in BATKO mice (Figure 4A). For most of them, the cold induction was partially or completely lost in BATKO mice. Noteworthy, Ppargc1a was the only classical thermogenic marker that was part of this subset (Figure 4—source data 1). The highly stringent statistical interaction model that we used (Love et al., 2014) failed to reveal an influence of T3 on the cold response of the Ucp1 and Dio2 genes, two classical thermogenic markers. Thus, we used RT-qPCR to measure Ucp1 and Dio2 mRNA levels on a larger number of samples and found that the cold induction of these genes was indeed altered in BATKO mice (Figure 4B). Thus, the high stringency of the statistical model used avoids false positives, allowing to trustfully highlights genes of interest, but some of them can be missed due to a lack of statistical sensitivity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig4-v2.jpg)
 
-**Figure 4.:** (A) Heatmap representation of cold-responsive genes altered in BATKO mice, after 24 hr at 4°C. Colors represent the z-scores, see scale in heatmap (n = 3–5/group). (B) Relative mRNA expression of Ucp1 (left panel) and Dio2 (right panel) in CTRL and BATKO mice at 30°C or after 24 hr at 4°C. Statistical significance is shown for the comparison between CTRL and BATKO mice at 4°C (n = 4–6/group). (C) Gene ontology dot plot representation of biological processes enriched in the 491 genes inefficiently induced in BATKO mice at cold. Some of the terms were shortened to increase readability without affecting the meaning. Error bars represent the standard deviation (SD). *p < 0.05, **p < 0.01 for the indicated comparisons.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Heatmap representation of cold-responsive genes altered in BATKO mice, after 24 hr at 4°C. Colors represent the z-scores, see scale in heatmap (n = 3–5/group). (B) Relative mRNA expression of Ucp1 (left panel) and Dio2 (right panel) in CTRL and BATKO mice at 30°C or after 24 hr at 4°C. Statistical significance is shown for the comparison between CTRL and BATKO mice at 4°C (n = 4–6/group). (C) Gene ontology dot plot representation of biological processes enriched in the 491 genes inefficiently induced in BATKO mice at cold. Some of the terms were shortened to increase readability without affecting the meaning. Error bars represent the standard deviation (SD). *p < 0.05, **p < 0.01 for the indicated comparisons.
 
 Using gene ontology, we found that the genes which cold response was significantly altered in BATKO mice were often directly connected to thermogenesis (Figure 4C). This gene set notably included genes involved in mitochondrial activity and respiratory chain. Other genes were involved in glycolysis, Krebs cycle, lactate metabolism, and glucose transport which have all been shown to be crucial to fuel BAT thermogenesis (Jeong et al., 2018). Genes involved in both lipolysis/fatty acid oxidation and lipogenesis, two processes required for an appropriate lipid use during thermogenesis, were also altered. Finally, a gene set reflecting cell proliferation was activated (Figure 4—source data 2). Restriction of this list to the TR direct target genes (Table 1) also highlighted secreted peptides (Bmp8b and Fgf21) and enzymes participating in heat-producing creatine futile cycle (Alpl). Ppargc1a still belonged to this list of restricted genes of interest, reinforcing its importance in TR-mediated regulation, as abovementioned. Collectively, the BAT transcriptome of BATKO mice evidenced several altered pathways crucial for BAT thermogenesis that could explain their phenotype.
 
-## T3 in BAT controls BAT proliferation
+**Table 1.**
+ List of T3/TR target genes dysregulated during cold exposure in BATKO mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biological function</th>
+      <th>TR-dependent cold-induced genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lipid metabolism</td>
+      <td>Fabp3, Pla2g12a, Acsl5, Aspg, Mcee</td>
+    </tr>
+    <tr>
+      <td>Glucose metabolism</td>
+      <td>Slc2a4, Ogdh, Idh3a</td>
+    </tr>
+    <tr>
+      <td>Cell cycle progression</td>
+      <td>Cux1, Ccnd1</td>
+    </tr>
+    <tr>
+      <td>Mitochondrial activity</td>
+      <td>Ppargc1α, Coq10a, Uqcc2, Cyb561</td>
+    </tr>
+    <tr>
+      <td>Futile cycle</td>
+      <td>Alpl</td>
+    </tr>
+    <tr>
+      <td>Secreted peptides</td>
+      <td>Bmp8b, Fgf1</td>
+    </tr>
+  </tbody>
+</table>
+
+### T3 in BAT controls BAT proliferation
 
 RNAseq analysis revealed that TH might participate in BAT proliferation, both during hyperthyroidism and cold exposure. After 5 days of TH treatment, wild-type PTU-fed mice displayed an overexpression of 72% of a group of genes previously described to be involved in cell cycle (Whitfield et al., 2002; Figure 5—figure supplement 1). This translated into an effective increase in cell proliferation when TH treatment was associated with an injection of EdU 24 hr before sampling. This effect was insensitive to BAT denervation (Figure 5—figure supplement 1), suggesting that it most likely results from a cell-autonomous response to T3.
 
 As predicted by the transcriptomic data after 24 hr of cold exposure, we also observed that proliferation is triggered in the BAT when CTRL mice were exposed 72 hr to cold, but 2.5-fold less proliferative cells were observed in BATKO mice, in the same conditions (Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig5-v2.jpg)
+
+**Figure 5.:** Representative images (left) and quantification (right) of EdU-positive proliferative cells in brown adipose tissue (BAT) from both CTRL and BATKO mice exposed 72 hr to 4°C and injected with EdU after 24 and 48 hr of cold. Nuclei are stained in blue with DAPI. Percentage of proliferative cells is the ratio of proliferative cells on the number of nuclei (n = 4–7/group). Statistical significance is shown for the comparison CTRL 4°C versus BATKO 4°C. Error bars represent the standard deviation (SD). ***p < 0.001r for the indicated comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81996/elife-81996-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) RNAseq expression pattern of cell cycle genes (Whitfield et al., 2002) after 5 days of TH treatment in wild-type propylthiouracil (PTU)-fed mice. Genes are divided into four groups, according to their regulation by TH treatment (n = 4/group) and the presence of a thyroid hormone receptor-binding site (TRBS) within 30 kb from their promoter. (B) Representative images (left) and quantification (right) of EdU-positive proliferative cells (green cells) in BAT from wild-type hypothyroid mice treated or not with TH during 5 days and co-injected with EdU at day 4. Nuclei are stained in blue with DAPI. Percentage of proliferative cells is the ratio of proliferative cells on the number of nuclei (n = 5–6/group). (C) Quantification of EdU-positive cells in BAT from PTU-fed denervated or sham mice treated or not with TH during 5 days and co-injected with EdU at day 4. Percentage of proliferative cells is the ratio of proliferative cells on the number of nuclei (n = 5/group). Error bars represent the standard deviation (SD). ***p<0.001.
 
 As most of the cell-cycle genes induced by T3 do not have a TRBS within 30 kb (Figure 5—figure supplement 1), the link between the TR direct target genes and proliferation in BAT yet remains uncertain. Ccnd1, encoding cyclin D1, is one of the TR direct target gene (Figure 2—source data 1) and also belongs to the genes that are under the control of TH signaling during cold exposure (Figure 4—source data 2). It is thus an interesting candidate to play a significant part in this process.
 
@@ -98,17 +185,272 @@ In humans, BAT has triggered a lot of interest for its ability to increase energ
 
 In conclusion, we used a combination of both omics data and BAT-specific TR-signaling alteration in mice to introduce an unprecedented view of T3 cell-autonomous response in brown adipocytes. We showed that T3 signaling in BAT controls both key metabolic pathways and tissue plasticity that are essential for adaptive thermogenesis. These results represent a valuable database that pave the way for further metabolic studies to detail the molecular implications of T3 signaling during BAT adaptive thermogenesis. Finally, as T3 acts in many other tissues, a similar approach could be used to put together the puzzle of T3 influence in energy expenditure.
 
-## Limitations of the study
+### Limitations of the study
 
 One of the objectives of this study was to define a catalog of TR direct target genes in brown adipocytes, based on a combination of RNAseq and ChIPseq. Both TRα and TRβ are present in the BAT (Minakhina et al., 2020) but we only performed the TRα1 ChIPseq due to the absence of adequate tools for the TRβ ChIPseq. The cistromes of the two receptors might not fully overlap, and we might have missed a fraction of the TRBS on the genes of interest. However, this limitation should be tempered since previous data have indicated that TRβ-selective binding site are infrequent in the mouse genome (Chatonnet et al., 2013). Another limitation is that we assigned genes to a given TRBS by considering only its distance to the transcription starting site. Chromatin 3D organization and insulation are well known to influence the interactions between distant regulatory elements, and the linear distance is only partially informative. The additional genomic investigations required to overcome these limitations remain for the moment hardly feasible in mouse tissues. Finally, we did not look at protein changes while post-translational events could occur.
 
 ## Materials and methods
 
-## Animal procedures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (male mice)</td>
+      <td>C57BL/6J (male)</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (male mice)</td>
+      <td>C57BL/6J-BATKO (male)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Material and methods’, section ‘Genetically modified mouse models’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (male mice)</td>
+      <td>C57BL/6J-BATβKO (male)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Material and methods’, section ‘Genetically modified mouse models’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UCP1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam: ab10983</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit linked to peroxidase (goat polyclonal)</td>
+      <td>Promega</td>
+      <td>Promega: W401B</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase (rabbit polyclonal)</td>
+      <td>Merck</td>
+      <td>Merck: AB152</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG linked to peroxidase (goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Bio-Rad: STAR124P</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See Table 2</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity Western ECL Substrat</td>
+      <td>Bio-Rad</td>
+      <td>Bio-Rad: 1705060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Diaminobenzidine staining</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: D5905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher: C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA SENSE Kit</td>
+      <td>Lexogen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Accel-NGS 2S Plus DNA kits</td>
+      <td>Swift Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PTU-containing diet</td>
+      <td>Harlan Teklad</td>
+      <td>Teklad Custome Diet: TD95125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T3</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T2877</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T2376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-OHDA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: H4381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cobas 600</td>
+      <td>Roche</td>
+      <td></td>
+      <td>T3/T4 serum quantification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica TP1020</td>
+      <td>Leica</td>
+      <td></td>
+      <td>Tissue section dehydration</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primer sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer forward</th>
+      <th>Primer reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ucp1</td>
+      <td>AAGCTGTGCGATGTCCATGT</td>
+      <td>AAGCCACAAACCCTTTGAAAA</td>
+    </tr>
+    <tr>
+      <td>Hr</td>
+      <td>AGAGGTCCAAGGAGCATCAAGG</td>
+      <td>TTCCTCTTGTTGCTCTGCCTCC</td>
+    </tr>
+    <tr>
+      <td>Fndc5</td>
+      <td>ATGAAGGAGATGGGGAGGAA</td>
+      <td>GCGGCAGAAGAGAGCTATAACA</td>
+    </tr>
+    <tr>
+      <td>Bmp8b</td>
+      <td>ACCTGTACCGTGCCATGACG</td>
+      <td>CGGTCGCGTTCCACTATGTTG</td>
+    </tr>
+    <tr>
+      <td>Idh3a</td>
+      <td>AAGAGGTTTTGCTGGTGGTGTTC</td>
+      <td>TTGCGCTCCTCCCACTGAATAG</td>
+    </tr>
+    <tr>
+      <td>Fabp3</td>
+      <td>CATCGAGAAGAACGGGGATA</td>
+      <td>TCATCTGCTGTCACCTCGTC</td>
+    </tr>
+    <tr>
+      <td>Dio2</td>
+      <td>AACAGCTTCCTCCTAGATGCC</td>
+      <td>ATTCAGGATTGGAGACGTGC</td>
+    </tr>
+    <tr>
+      <td>Cidea</td>
+      <td>GGACAGAAATGGACACCGGGTAG</td>
+      <td>TGACATTGAGACAGCCGAGGAAG</td>
+    </tr>
+    <tr>
+      <td>Cox7a1</td>
+      <td>AGGCTCTGGTCCGGTCTTTTAG</td>
+      <td>GGTCATTGTCGGCCTGGAAG</td>
+    </tr>
+    <tr>
+      <td>Plin5</td>
+      <td>GCGCCACACAGCAGAATGTC</td>
+      <td>GGCAAAGCCACCACTCGATTC</td>
+    </tr>
+    <tr>
+      <td>Slc25a20</td>
+      <td>TCAGGCTTCTTCAGGGGAGAAC</td>
+      <td>CCACTGGCAGGAACATCTCG</td>
+    </tr>
+    <tr>
+      <td>Pdk4</td>
+      <td>TTTCCAGGCCAACCAATCCAC</td>
+      <td>GTGGCCCTCATGGCATTCTTG</td>
+    </tr>
+    <tr>
+      <td>Prdm16</td>
+      <td>TAGCTGCTTCTGGGCTCAAGG</td>
+      <td>ACGTCACCGTCACTTTTGGC</td>
+    </tr>
+    <tr>
+      <td>Aco2</td>
+      <td>TGCCTAAGGTGGCTGTACCATC</td>
+      <td>CACTTCCTGGTTTATGTCCTTGGC</td>
+    </tr>
+    <tr>
+      <td>Thrb</td>
+      <td>CTCTTCTCACGGTTCTCCTC</td>
+      <td>AACCAGTGCCAGGAATGT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures
 
 All experiments were carried out in accordance with the European Community Council Directive of September 22, 2010 (2010/63/EU) regarding the protection of animals used for experimental and other scientific purposes. The research project was approved by a local animal care and use committee (C2EA015) and authorized by the French Ministry of Research.
 
-## Genetically modified mouse models
+### Genetically modified mouse models
 
 The genetic background of all mice that were used in the present study was C57BL6/J. ThraAMI/+ (Quignodon et al., 2007), Thrblox/lox (Winter et al., 2009), and Ucp1CreERT2 (Rosenwald et al., 2013) mouse lines were crossbred to introduce the different recombinant alleles in Ucp1CreERT2xThraAMI/+Thrbloxlox/lox mice. The expression of the ThraAMI allele allows the expression of the TRα1L400R mutant, which has dominant-negative properties over TRα and TRβ, after Cre/loxP-mediated excision of a stop cassette (Quignodon et al., 2007). Despite the persistence of one intact Thra allele in ThraAMI/+ mice after Cre-recombinase action, the dominant-negative action of TRα1L400R eliminates the capacity of cells to respond to T3. Thrblox has 2 tandem-arranged loxP sequences, allowing Cre-mediated excision of exon 3 of the Thrb gene, which encodes the DNA-binding domain of the TRβ1/TRβ2 receptor, resulting in a frameshift and a loss of function (Winter et al., 2009). In the present study, we used mice of the Ucp1CreERT2 line, in which CreERT2 expression is under the control of the Ucp1 promoter (Rosenwald et al., 2013). In the absence of physiological stressors, Ucp1 is specifically expressed in brown adipocytes, thus restricting Cre-mediated recombination to this cell type. CreERT2-recombinase action occurs after its translocation to the nucleus, allowed by tamoxifen treatment. Tamoxifen was injected intraperitoneally every day during 5 days at 50 mg/kg of mice.
 
@@ -116,7 +458,7 @@ In Ucp1CreERT2 mice, we used a Rosa26TdTomato reporter transgene, also known as 
 
 In order to address chromatin occupancy by TR specifically in brown adipocytes, we used ThraGS/+ mice (Hirose et al., 2019) to generate ad hoc Ucp1CreERT2xThraGS/+ transgenic mice. These mice were generated by knocking in the Thra locus a sequence encoding TRα1 fused with protein G and streptavidin protein (GS) after a floxed stop cassette. In the presence of the Ucp1CreERT2, tamoxifen injection allows the recombination at the loxP sites that excise the stop cassette specifically in brown adipocytes, allowing the expression of the GS-TRα1 only in this cell type. This strategy has already been successfully used in other tissues, including striatum and heart (Richard et al., 2020; Hirose et al., 2019).
 
-## Experimental animal procedures
+### Experimental animal procedures
 
 We used 2- to 5-month-old male mice for experiments. Genetically modified mice were generated in our own animal facility, whereas wild-type C57BL6/J mice were ordered from a commercial supplier (Charles River). Mice were fed ad libitum with LASQC Rod16 R diet (Altromin, Germany) and housed under recommended conditions (notably, at room temperature, i.e., 23°C). Hypothyroidism in adult animals was induced as previously described, with 14 days of treatment with a propylthiouracil (PTU)-containing diet (Harlan Teklad TD95125, Madison, WI) (Weiss et al., 1998). It was combined in some cases by hyperthyroidism induced by intraperitoneal injections of a T3/T4 mix (T4 at 2 μg/g of mice and T3 at 0.2 μg/g of mice, Sigma-Aldrich), daily for the five last days or once at day fourteen of the PTU treatment. T3, the active compound, was not injected alone to get close to hyperthyroid conditions met in vivo.
 
@@ -124,19 +466,19 @@ Before assessment of cold response, mice were housed for 10 days at 30°C (with 
 
 At the end of experiments, mice were anesthetized by an intraperitoneal injection of xylazine (25 mg/kg) and ketamine (130 mg/kg) mixture. Blood was drawn from the vena cava and collected in heparin-coated tubes to retrieve plasma. Several tissues and organs were dissected and either directly processed for histology or snap frozen and stored at −80°C for later RNA preparation.
 
-## Indirect calorimetry and body composition measurement
+### Indirect calorimetry and body composition measurement
 
 Body composition was measured in awake mice by low-field nuclear magnetic resonance with a Minispec LF90II device (Bruker). Phenomaster metabolic cages were used for indirect calorimetry measurements (TSE Systems, Berlin, Germany). Mice were first placed in individual cages for a 24-hr period of habituation to isolation, after which oxygen consumption (VO2) and carbon dioxide rejection (VCO2) were continuously recorded for 48 hr, under a normal 12 hr light/dark cycle. VO2 and VCO2 were expressed as ml/hr/kg of mice. Respiratory quotient was obtained as the VO2 / VCO2 ratio. The metabolic rate was calculated according to the Weir formula (Weir, 1990) as following: Metabolic rate (kcal/min) = 3.94*VO2 + 1.1*VCO2.
 
-## BAT denervation
+### BAT denervation
 
 Chemical denervation of BAT sympathetic nerve endings was performed in wild-type PTU-fed mice under isoflurane 2% anesthesia and ketoprofen (1 mg/kg) analgesia. This technique, which involves injections of 6-hydroxydopamine (6-OHDA), a neurotoxin selective for sympathetic neurons, permits a specific denervation of sympathetic neurons, while keeping the sensory fibers intact (Nitta et al., 1992). The effects of sympathetic denervation were compared to those obtained after vehicle injection (0.15 mol/l NaCl and 1% ascorbic acid, sham mice). Briefly, the two lobes of interscapular BAT were exposed through a midline skin incision along the upper dorsal surface and gently separated from the skin with surgical forceps. Then, injections of 6-OHDA (Sigma-Aldrich) were performed directly into each lobe of the interscapular BAT. For each lobe, 10 µl (10 mg/ml) was injected in several times (10 injections of 1 µl) using a Hamilton syringe (i.e., 20 µl/mice). The skin incision was then closed with several surgical stitches. Animals were allowed to recover for 5 days before further experiments.
 
-## Western-blot analysis
+### Western-blot analysis
 
 Cell extracts from BAT were lysed in standard lysis buffer (20 mM Tris–HCl, pH 8, 138 mM NaCl, 1% NP40, 2.7 mM KCl, 1 mM MgCl2, 5% glycerol, 5 mM EDTA (ethylenediaminetetra-acetic acid), 1 mM Na3VO4, 20 mM NaF, 1 mM dithiothreitol, 1% protease inhibitors), and homogenized using FastPrep (MP Biomedicals). Proteins were assayed in triplicate with Pierce BCA Protein Assay Kit (Thermo Fisher Scientific). Aliquots of 30 μg of proteins, denatured in buffer (20% glycerol, 10% β-mercaptoethanol, 10% sodium dodecyl sulfate [SDS], 62.5 mM Tris) were analyzed from 12% SDS–polyacrylamide gel electrophoresis (PAGE) and transferred to PVDF Immobilon membranes (Bio-Rad). After 1-hr saturation in TBS (Tris-Buffered Saline)/0.2% Tween/2% milk at room temperature, the membranes were probed (overnight at 4°C) with rabbit polyclonal anti-tyrosine hydroxylase (Merck, AB152) diluted in TBS/0.2% Tween/2% milk. Then, membranes were rinsed threetimes in TBS/0.2% Tween for 10 min and incubated for 1 hr with goat secondary anti-rabbit IgG linked to peroxidase (dilution 1:5000; Bio-Rad) in TBS/0.2% Tween/2% milk. Membranes were rinsed again and exposed to Clarity Western ECL Substrate (Bio-Rad). The intensity of the spots was determined by densitometry with ChemiDoc Software (Bio-Rad) and analyzed using the Image LabTM software (Bio-Rad). Quantification of whole protein levels (using the stain-free protocol provided by Bio-Rad) was used for normalization. Stain-Free technology enabled fluorescent visualization of 1D SDS–PAGE gels and corresponding blots. The relative amount of total protein in each lane on the blot was calculated and used for quantitation normalization.
 
-## Histology
+### Histology
 
 BAT and WAT samples were fixed in 10 ml Zinc Formal Fixx (Thermo Fisher Scientific) during 24 hr at 4°C. Samples were dehydrated using the Leica TP1020 semi-enclosed processor and embedded in paraffin. 6 μm sections were processed for immunohistochemistry (IHC) and EdU detection. Tissue sections from different mice were assayed on the same slide to minimize staining variability.
 
@@ -144,15 +486,15 @@ For IHC, deparaffinized sections were incubated overnight at 4°C with rabbit po
 
 EdU detection was assessed as recommended by the manufacturer (Click-iT EdU Cell Proliferation Kit, Thermo Fisher), following deparaffinization of BAT sections. Images were acquired on a DM6000 Leica microscope. Both EdU-positive cells and DAPI (4’,6-diamidino-2-phenylindol)-marked nuclei were quantified on pictures of whole BAT sections to avoid any bias of field selection.
 
-## Plasma T3/T4 quantification
+### Plasma T3/T4 quantification
 
 Plasmatic free T3 and free T4 were quantified on a Cobas 6000 automat with the Cobas e601module (Roche, ECL analysers).
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
 RNAs were extracted using Trizol (Invitrogen, Carlsbad, CA, USA). Total RNA was reverse transcribed to cDNA using MMLV reverse transcriptase (Promega, Wisconsin, USA). RT-qPCRs (quantitative reverse transcription polymerase chain reactions) were performed using SYBRGreen mix (Bio-Rad iQ supermix). The results were analyzed according to the ΔΔCT method (Bookout and Mangelsdorf, 2003). Hprt was used as the reference gene. Primers are listed in Table 2.
 
-## RNAseq analysis
+### RNAseq analysis
 
 cDNA libraries were prepared using the total RNA SENSE kit (Lexogen, Vienna, Austria) and analyzed on a Nextseq 500 sequencer (Illumina) as previously described (Richard et al., 2020; Guyot et al., 2014). Raw data of single-end sequencing were aligned on the GRCm38 (mm10) reference genome using Bowtie (Galaxy Version 2.2.6.2) and converted to count tables using htseqcount (Galaxy Version 0.6.1galaxy3), respectively. Differential gene expression analysis was performed with DESeq2 (R package, Version 1.34.0) (Love et al., 2014) using the following thresholds: adjusted p value <0.05; average expression >10 reads per million, log2 fold-change >0.6 or <−0.6. The effects of mutations on cold exposure were assessed using the interaction model (Ge, 2021). Thresholds for the interaction model were the following: average expression >10 reads per million, adjusted p value <0.05.
 
@@ -160,10 +502,10 @@ Differentially expressed genes expression was visualized as clustered heatmaps u
 
 Gene ontology analyses were made using the Gene Ontology Resource (http://geneontology.org).
 
-## ChIPseq and analysis
+### ChIPseq and analysis
 
 Freshly dissected small pieces of BAT were incubated during 25 min at room temperature under agitation with a crosslink solution (250 mM disuccinimidyl glutarate, 50 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid, 100 mM NaCl, 1 mM EDTA, 0.5 mM ethylene glycol tetraacetic acid). Then, 1% formaldehyde was added for 20 min followed by 50 mM glycine addition. The tissue was rinsed several times with cold PBS. Chromatin immunoprecipitation was then performed as previously described (Chatonnet et al., 2013). Sequencing libraries were prepared from the immunoprecipitated fraction and the input fraction as a control, using the Accel-NGS 2S Plus DNA library kits with single indexing (Swift Biosciences). They were analyzed on a Nextseq 500 sequencer (Illumina). Raw data of paired-end sequencing were aligned on the GRCm38 (mm10) reference genome using Bowtie (Galaxy Version 2.2.6.2). MACS2 (Galaxy Version 2.1.1.20160309.0) was used for peak calling and peaks with a score inferior to 60 were filtered out. De novo motif search was performed using SeqPos motif tool (version 1.0.0). Genes within 30 kb of peaks were called out using GREAT (http://great.stanford.edu/public/html/). We chose a distance of 30 kb upstream or downstream of the TSS to attribute a TRBS to a gene. Although arbitrary, this distance was found to maximize the ratio of T3-responsive genes among the included genes, without excluding genes which have been well characterized as TRα1 target genes in other neural systems, such as Klf9 or Hr (Gil-Ibañez et al., 2013). The distribution of distances of TRBSs around TSSs, as well as the distribution of TRBSs in the genome, were assessed using PAVIS (https://manticore.niehs.nih.gov/pavis2/).
 
-## Statistical analysis
+### Statistical analysis
 
 The data shown represent the average values for animals with the same genotype that were given the same treatment. The number of animals used in each experiment (n) is indicated in figure legends. Except when anything else is mentioned, the error bars represent the standard deviation. For comparing two means, the statistical relevance was determined using an unpaired Student’s t-test. For determining the effects of the mutations on food consumption, body temperature, body weight overtime, we used a two-way analysis of variance (ANOVA) with time as one factor, and the other parameter as the second factor. For comparing the different levels of one factor to a control group, the statistical relevance was determined using the one-way ANOVA method. When this test showed significant differences (p value <0.05), a post hoc Tukey test was used for multiple comparisons. To assess the effects of the mutations or the denervation on a given treatment (2 factors with 2 levels each), the statistical relevance was determined using a two-way ANOVA. Only when the interaction term was significant (interaction p value <0.05), a post hoc Tukey test was used to compare the effects of the indicated combinations. For any of these tests, statistical relevance is shown in the graphs as follows: *p value <0.05, **p value <0.01, ***p value <0.001.

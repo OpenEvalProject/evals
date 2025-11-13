@@ -53,45 +53,121 @@ The purpose of this study was to assess whether the personalized approach based 
 
 ## Results
 
-## Descriptive statistics
+### Descriptive statistics
 
 We identified four papers meeting the inclusion criteria (Kim et al., 2020a; Wölfel et al., 2020; Young et al., 2020; Zou et al., 2020). Among the patients reported in these four studies, 30 patients (approximately 60% of the participants in the original studies) met our inclusion criteria (Table 1). Three studies were from Asia and one was from Europe. The lowest and highest detection limit among those studies were 15.3 copies/mL and 68 copies/mL, respectively. These are relatively lower than the commonly used threshold values (the median was 100 copies/mL [Fung et al., 2020; Giri et al., 2021; van Kasteren et al., 2020]). The data were collected by February of 2020, which was during the early phase of the COVID-19 pandemic. Participants were hospitalized patients of ages ranging from 28 to 78 years; the sex ratio was mostly even.
 
-## Model fitting
+**Table 1.**
+ Summary of the viral load data used for modeling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Country</th>
+      <th># of included (excluded) patients</th>
+      <th>Sampling site</th>
+      <th>Reporting unit</th>
+      <th>Detection limit (copies/mL)</th>
+      <th>Symptom onset of patients</th>
+      <th>Age‡</th>
+      <th>Sex (M:F)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Young et al.</td>
+      <td>Singapore</td>
+      <td>12 (6)</td>
+      <td>nasopharynx</td>
+      <td>cycle threshold*</td>
+      <td>68.0</td>
+      <td>1/21 - 1/30</td>
+      <td>37.5 (31–56)</td>
+      <td>6:6</td>
+    </tr>
+    <tr>
+      <td>Zou et al.</td>
+      <td>China</td>
+      <td>8 (8)</td>
+      <td>nose</td>
+      <td>cycle threshold*</td>
+      <td>15.3</td>
+      <td>1/11 - 1/26</td>
+      <td>52.5 (28–78)</td>
+      <td>3:5</td>
+    </tr>
+    <tr>
+      <td>Kim et al.</td>
+      <td>Korea</td>
+      <td>2 (7)</td>
+      <td>nasopharynx and oropharynx</td>
+      <td>cycle threshold*</td>
+      <td>68.0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Wölfel et al.</td>
+      <td>Germany</td>
+      <td>8 (1)</td>
+      <td>pharynx</td>
+      <td>viral load (copies/swab)†</td>
+      <td>33.3</td>
+      <td>1/23 - 2/4</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Viral load was calculated from cycle threshold values using the conversion formula: log10⁡(Viral \ load \ [copies/mL])=−0.32×Ct \ values \ [cycles]+14.11 (Peiris et al., 2003).† One swab = 3 mL (Wölfel et al., 2020).‡ Median (range)._
+
+### Model fitting
 
 Three models were fitted to the data: the baseline model, the ‘eclipse phase’ model, and the ‘innate immune response’ model. The estimated model parameters, the estimated (mean) curves and the individual fitted curves are reported in Supplementary file 1, Figure 1, respectively. Although all the three models lead to similar results (Figure 1), the baseline model shows a longer tail than the two other models, due to the lower estimated death rate of infected cells (Supplementary file 1). Further, the three models showed similar values of the Akaike information criterion (AIC) and the Bayesian information criterion (BIC) (Supplementary file 2). Unless otherwise stated, the results presented in thereafter refer to the baseline model.
 
-## One-size-fits-all approach
+![Figure 1.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig1-v1.jpg)
+
+**Figure 1.:** The solid lines are the estimated viral load curves of the three models for the best fit parameters (Blue: baseline model, Green: ‘ecliplse phase’ model, Yellow: ‘innate immune response’ model). The shaded regions correspond to 95% predictive intervals. The 95% predictive interval was created using bootstrap approach.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The dots and curves represent the observed and estimated viral load (Blue: baseline model, Green: ‘ecliplse phase’ model, Yellow: ‘innate immune response’ model), respectively. The detection limit for each patient is shown as dotted horizontal line.
+
+### One-size-fits-all approach
 
 By considering a fixed time of 10 days since symptom onset as the criterion for ending isolation, the probability of releasing patients who are still infectious was estimated to be 0.9% (95%CI: 0.6 to 1.2), with a lengthy prolonged isolation of 6.8 days (95% empirical CI: 1 to 8) when considering 105 copies/mL as the infectiousness threshold value (Figure 2AB). The estimated probability of prematurely ending isolation becomes 6.6% (95%CI: 5.8 to 7.4) and 0% with a prolonged isolation of 4.8 days (95% empirical CI: −2 to 8) and 8.3 days (95% empirical CI: 6 to 10) if we consider 104.5 and 105.5 copies/mL as infectiousness threshold values, respectively (Figure 2A). To guarantee a probability lower than 5%, we estimated that patients need to be isolated for 7 days, 11 days, and 5 days for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively (Figure 2A). In this case, again, the length of the prolonged isolation was estimated to be substantial (Figure 2B): 3.8 days (95% empirical CI: −2 to 5), 5.8 days (95% empirical CI: −2 to 8), and 3.3 days (95% empirical CI: 0 to 4) for infectiousness threshold values of 105.0, 104.5, and 105.5 copies/mL, respectively. In sum, to guarantee low probabilities to prematurely end the isolation and thus release patients who are still infectious, the associate cost is to have unnecessary long isolations for the majority of patients.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig2-v1.jpg)
 
-**Figure 2.:** (A) Probability of prematurely ending the isolation of infectious patients for different lengths of the isolation period and for different infectiousness threshold values. (B) Mean length of unnecessarily prolonged isolation for different lengths of the isolation period and for different infectiousness threshold values. Color keys and symbols apply to both panels. Note that the symbols correspond to the shortest isolation periods when the condition is met.Figure 2—source data 1.The numbers in parentheses are the 95% empirical CI.
+**Figure 2.:** (A) Probability of prematurely ending the isolation of infectious patients for different lengths of the isolation period and for different infectiousness threshold values. (B) Mean length of unnecessarily prolonged isolation for different lengths of the isolation period and for different infectiousness threshold values. Color keys and symbols apply to both panels. Note that the symbols correspond to the shortest isolation periods when the condition is met.
 
-## Personalized approach using PCR test results
+### Personalized approach using PCR test results
 
 By considering two consecutive negative test results repeated at an interval of 1 day as the criterion for ending isolation, the probability of prematurely ending isolation was estimated to be 8.1% (95%CI: 7.2 to 9.0) with a negligible length of prolonged isolation of 1.2 days (95% empirical CI: −1 to 3) when considering 105.0 copies/mL as the infectiousness threshold value (Figure 3A). By acting on the testing strategy, we can control both the probability of prematurely ending isolation and the length of prolonged isolation. The probability of ending isolation of infectious patients decreased with a longer interval between testing and more consecutive negative results (the upper panel in Figure 3A). However, the length of prolonged isolation increased at the same time (the lower panel in Figure 3A). If a 5% or lower risk of prematurely ending isolation is considered, three consecutive negative test results with the tests performed every day minimizes the length of unnecessary isolation (2.3 days [95% empirical CI: 0 to 5]) (Figure 3A). We repeated the same analyses using different infectiousness threshold values (104.5 and 105.5 copies/mL). Both the probability of prematurely ending isolation and the length of prolonged isolation were not much influenced by infectiousness threshold values, because the viral load is directly measured in the personalized approach (Figure 3B,C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig3-v1.jpg)
 
-**Figure 3.:** (A) Probability of prematurely ending isolation (upper panels) and mean length of unnecessarily prolonged isolation (lower panels) for different values of the interval between PCR tests and the number of consecutive negative results necessary to end isolation; the infectiousness threshold value is set to 105.0 copies/mL. The areas surrounded by purple and pink dotted lines are those with 1% or 5% or lower of risk of prematurely ending isolation of infectious patients, respectively, and the triangles and circles correspond to the conditions which realize the shortest prolonged isolation within each area. (B) Same as A, but for an infectiousness threshold value of 104.5 copies/mL. (C) Same as A, but for an infectiousness threshold value of 105.5 copies/mL. Color keys and symbols apply to all panels.Figure 3—source data 1.5.0 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the 95% CI.Figure 3—source data 2.5.0 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the empirical 95% CI.Figure 3—source data 3.4.5 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the 95% CI.Figure 3—source data 4.4.5 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the empirical 95% CI.Figure 3—source data 5.5.5 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the 95% CI.Figure 3—source data 6.5.5 copies/mL as an infectiousness threshold value).The cell with numbers in bold corresponds to the baseline. The numbers in parentheses are the empirical 95% CI.
+**Figure 3.:** (A) Probability of prematurely ending isolation (upper panels) and mean length of unnecessarily prolonged isolation (lower panels) for different values of the interval between PCR tests and the number of consecutive negative results necessary to end isolation; the infectiousness threshold value is set to 105.0 copies/mL. The areas surrounded by purple and pink dotted lines are those with 1% or 5% or lower of risk of prematurely ending isolation of infectious patients, respectively, and the triangles and circles correspond to the conditions which realize the shortest prolonged isolation within each area. (B) Same as A, but for an infectiousness threshold value of 104.5 copies/mL. (C) Same as A, but for an infectiousness threshold value of 105.5 copies/mL. Color keys and symbols apply to all panels.
 
-## Comparison between the one-size-fits-all and the personalized approach
+### Comparison between the one-size-fits-all and the personalized approach
 
 To highlight the differences between the one-size-fits-all and the personalized approaches, we systematically compared the two approaches by looking at the length of the prolonged isolation for a 5% or lower (Figure 4A) or 1% or lower (Figure 4B) risk of prematurely ending isolation. For the personalized approach, the best combination of the number of consecutive negative test results and the interval of tests was selected for each infectiousness threshold value. The personalized approach was not influenced by the infectiousness threshold values and yielded to shorter prolonged isolation compared with the one-size-fits-all approach. However, because the prolonged isolation for the one-size-fits-all approach was influenced by infectiousness threshold values, the difference between the one-size-fits-all and personalized approaches in prolonged isolation became smaller with higher infectiousness threshold values.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig4-v1.jpg)
 
-**Figure 4.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.Figure 4—source data 1.The numbers in parentheses are the empirical 95% CI.
+**Figure 4.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.
 
-## Influence of model selection
+### Influence of model selection
 
 Figure 5 shows the length of the prolonged isolation for a 5% or lower or 1% or lower risk of prematurely ending the isolation for all the analyzed models. Regardless of the considered models, the personalized approach allows shorted length of unnecessarily isolation. Nonetheless, it is important to remark that the length of prolonged isolation is slightly different among the analyzed models. For example, under the one-size-fits-all approach, it was longer for the ‘innate immune response’ model as compared with the other two; this is due to larger variability in viral load especially at the late phase of the infection (Figure 1). Under the personalized approach, the length of prolonged isolation was longer in the baseline model as compared to the two alternative models (Figure 1). In summary, by comparing the three models, we can conclude that the one-size-fits-all approach is sensitive to the variability of the viral load curve, whereas the personalized approach is sensitive to the decay speed of the viral load.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69340/elife-69340-fig5-v1.jpg)
 
-**Figure 5.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation and for the three analyzed models. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.Figure 5—source data 1.The numbers in parentheses are the empirical 95% CI.
+**Figure 5.:** (A) Mean length of prolonged isolation for different infectiousness threshold values and for the two approaches when considering a 5% or lower risk of prematurely ending isolation and for the three analyzed models. Note that for the personalized approach, the interval between PCR tests and the number of consecutive negative results necessary to end isolation were selected to minimize the duration of prolonged isolation. (B) Same as A, but considering a 1% or lower risk of prematurely ending isolation. Color keys apply to both panels.
 
 ## Discussion
 
@@ -111,15 +187,15 @@ In conclusion, until the vaccination effort successfully suppresses the widespre
 
 ## Materials and methods
 
-## Viral load data
+### Viral load data
 
-We searched PubMed and Google Scholar for papers reporting longitudinal viral load data of COVID-19 patients. We set five inclusion criteria: (1) multiple observations of the viral load were reported per patient (if cycle thresholds were reported instead of viral load, they were transformed to viral load by using the following conversion formula [Zou et al., 2020]: log10⁡(Viral load [copies/mL])=−0.32×Ct values [cycles]+14.11); (2) viral load was measured from upper respiratory specimens (i.e. nose, pharynx) for consistency; (3) viral load along with the time since symptom onset was reported; (4) the patients were not under antiviral treatment (antiviral therapy can directly influence the viral dynamics); and (5) patients were symptomatic (because we used the time since symptom onset as the time scale). We used the de-identified secondary data from published studies, and thus ethics approval for this study was not necessary.
+We searched PubMed and Google Scholar for papers reporting longitudinal viral load data of COVID-19 patients. We set five inclusion criteria: (1) multiple observations of the viral load were reported per patient (if cycle thresholds were reported instead of viral load, they were transformed to viral load by using the following conversion formula [Zou et al., 2020]: $log_{10}⁡(Viral load [copies/mL])=−0.32\timesCt values [cycles]+14.11$); (2) viral load was measured from upper respiratory specimens (i.e. nose, pharynx) for consistency; (3) viral load along with the time since symptom onset was reported; (4) the patients were not under antiviral treatment (antiviral therapy can directly influence the viral dynamics); and (5) patients were symptomatic (because we used the time since symptom onset as the time scale). We used the de-identified secondary data from published studies, and thus ethics approval for this study was not necessary.
 
-## Modeling SARS-CoV-2 viral dynamics
+### Modeling SARS-CoV-2 viral dynamics
 
-We developed a mathematical model of SARS-CoV-2 viral dynamics (Ikeda et al., 2016; Kim et al., 2020b; Perelson, 2002). The model is composed of two components: (1) the ratio between the number of uninfected target cells at time t and the number of uninfected target cells at time 0 (t=0 corresponds to the time of symptom onset), f(t); and (2) the amount of virus per unit in sample specimen (copies/mL) at time t, V(t). V(t) exponentially increases since infection, reaches a peak, and starts declining because of the depletion of target cells, which is consistent with the observed viral dynamics. Model parameters were calibrated by fitting the longitudinal data with a mixed-effect model. Details on the model and the fitting procedure are reported in Appendix 1. To account for individual variability in the viral dynamics, we simulated V(t) for 1000 patients by sampling from the posterior distributions of the model parameters. To simulate the viral load measured by a PCR test, V^(t), we added a measurement error to V(t) (see Appendix 1 for details). The model used here (baseline model) is one of the simplest models for viruses causing acute respiratory infection. Given that the biological infection process has not been fully understood yet, we believe using a simple model represents an appropriate baseline choice. Specifically in the literature of SAS-CoV-2 studies, several different models have been used including the baseline model (Gonçalves et al., 2020; Goyal et al., 2020; Goyal et al., 2021; Kim et al., 2020b). Nonetheless, to investigate to what extent the model choice affects our findings, we considered two alternative models: the ‘eclipse phase’ model (Baccam et al., 2006; Gonçalves et al., 2020) and the ‘innate immune response’ model (Baccam et al., 2006). The detailed description of the analyzed models is reported in Appendix 1.
+We developed a mathematical model of SARS-CoV-2 viral dynamics (Ikeda et al., 2016; Kim et al., 2020b; Perelson, 2002). The model is composed of two components: (1) the ratio between the number of uninfected target cells at time $t$ and the number of uninfected target cells at time 0 ($t=0$ corresponds to the time of symptom onset),$ f(t)$; and (2) the amount of virus per unit in sample specimen (copies/mL) at time $t$, $V(t)$. $V(t)$ exponentially increases since infection, reaches a peak, and starts declining because of the depletion of target cells, which is consistent with the observed viral dynamics. Model parameters were calibrated by fitting the longitudinal data with a mixed-effect model. Details on the model and the fitting procedure are reported in Appendix 1. To account for individual variability in the viral dynamics, we simulated $V(t)$ for 1000 patients by sampling from the posterior distributions of the model parameters. To simulate the viral load measured by a PCR test,$ V^(t)$, we added a measurement error to $V(t)$ (see Appendix 1 for details). The model used here (baseline model) is one of the simplest models for viruses causing acute respiratory infection. Given that the biological infection process has not been fully understood yet, we believe using a simple model represents an appropriate baseline choice. Specifically in the literature of SAS-CoV-2 studies, several different models have been used including the baseline model (Gonçalves et al., 2020; Goyal et al., 2020; Goyal et al., 2021; Kim et al., 2020b). Nonetheless, to investigate to what extent the model choice affects our findings, we considered two alternative models: the ‘eclipse phase’ model (Baccam et al., 2006; Gonçalves et al., 2020) and the ‘innate immune response’ model (Baccam et al., 2006). The detailed description of the analyzed models is reported in Appendix 1.
 
-## Assessment and comparison of the one-size-fits-all and the personalized approach
+### Assessment and comparison of the one-size-fits-all and the personalized approach
 
 In the one-size-fits-all approach, we assumed isolation to end after a fixed time since symptom onset, whereas in the personalized approach using PCR tests, isolation ends after obtaining a given number of consecutive negative test results (with a given time interval between the tests). As the baseline scenario for the one-size-fits-all approach (here referred to as the ‘symptom-based strategy’), we considered a fixed time of 10 days. As the baseline scenario for the personalized approach (here referred to as the ‘test-based strategy’), we considered two consecutive negative test results repeated at a daily interval (in agreement with the CDC guidelines [Centers for Disease Control and Prevention, 2020a]). Here, we assumed the testing starts immediately after symptom onset.
 

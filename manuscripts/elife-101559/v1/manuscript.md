@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Neuroscience, Washington University in St. Louis St. Louis United States
-2. https://ror.org/01yc7t268 Ph.D. Program in Neuroscience, Washington University in St. Louis St. Louis United States
-3. https://ror.org/01yc7t268 Master’s Program in Biomedical Engineering, Washington University in St. Louis St. Louis United States
-4. https://ror.org/0168r3w48 Department of Neuroscience, Howard Hughes Medical Institute, University of California, San Diego San Diego United States
+1. Department of Neuroscience, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Ph.D. Program in Neuroscience, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Master’s Program in Biomedical Engineering, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+4. Department of Neuroscience, Howard Hughes Medical Institute, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
 ## Abstract
 
-Signaling dynamics are crucial in biological systems, and biosensor-based real-time imaging has revolutionized their analysis. Fluorescence lifetime imaging microscopy (FLIM) excels over the widely used fluorescence intensity imaging by allowing the measurement of absolute signal levels independent of sensor concentration. This capability enables the comparison of signaling dynamics across different animals, body regions, and timeframes. However, FLIM’s advantage can be compromised by factors like autofluorescence in biological experiments. To address this, we introduce FLiSimBA, a flexible computational framework for realistic F luorescence Li fetime Sim ulation for B iological A pplications. Through simulations, we analyze the signal-to-noise ratios of fluorescence lifetime data, determining measurement uncertainty and providing necessary error bars for lifetime measurements. Furthermore, we challenge the belief that fluorescence lifetime is unaffected by sensor expression and establish quantitative limits to this insensitivity in biological applications. Additionally, we propose innovations, notably multiplexed dynamic imaging that combines fluorescence intensity and lifetime measurements. This innovation can transform the number of signals that can be simultaneously monitored, thereby enabling a systems approach in studying signaling dynamics. Thus, by incorporating different factors into our simulation framework, we uncover surprises, identify limitations, and propose advancements for fluorescence lifetime imaging in biology. This quantitative framework supports rigorous experimental design, facilitates accurate data interpretation, and paves the way for technological advancements in fluorescence lifetime imaging.
+Signaling dynamics are crucial in biological systems, and biosensor-based real-time imaging has revolutionized their analysis. Fluorescence lifetime imaging microscopy (FLIM) excels over the widely used fluorescence intensity imaging by allowing the measurement of absolute signal levels independent of sensor concentration. This capability enables the comparison of signaling dynamics across different animals, body regions, and timeframes. However, FLIM’s advantage can be compromised by factors like autofluorescence in biological experiments. To address this, we introduce FLiSimBA, a flexible computational framework for realistic Fluorescence Lifetime Simulation for Biological Applications. Through simulations, we analyze the signal-to-noise ratios of fluorescence lifetime data, determining measurement uncertainty and providing necessary error bars for lifetime measurements. Furthermore, we challenge the belief that fluorescence lifetime is unaffected by sensor expression and establish quantitative limits to this insensitivity in biological applications. Additionally, we propose innovations, notably multiplexed dynamic imaging that combines fluorescence intensity and lifetime measurements. This innovation can transform the number of signals that can be simultaneously monitored, thereby enabling a systems approach in studying signaling dynamics. Thus, by incorporating different factors into our simulation framework, we uncover surprises, identify limitations, and propose advancements for fluorescence lifetime imaging in biology. This quantitative framework supports rigorous experimental design, facilitates accurate data interpretation, and paves the way for technological advancements in fluorescence lifetime imaging.
 
 ## Introduction
 
@@ -32,29 +32,49 @@ Here, we introduce Fluorescence Lifetime Simulation for Biological Applications 
 
 ## Results
 
-## Simulation of fluorescence lifetime data in biological tissue
+### Simulation of fluorescence lifetime data in biological tissue
 
 To realistically mimic the fluorescence lifetime in biological tissue, we simulated contributions from sensor fluorescence, autofluorescence, afterpulse, and background, which is composed of both a small amount of light leakage and the dark current of the photon detectors (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig1-v1.jpg)
 
-**Figure 1.:** Fluorescence Lifetime Simulation for Biological Applications (FLiSimBA).The sensor fluorescence lifetime distribution of a FRET-based sensor was modeled as a double exponential decay, as shown in Equation 1 (τ=2.14 ns, 1τ=0.69 ns) and the lifetimes of photons were sampled with replacement. After the sensor fluorescence was convolved with the probability density function (PDF) of the instrument response function (IRF), the following were added to produce the final simulated data: autofluorescence (autoF) empirically measured from brain tissue with photon number 2F, afterpulse of the photomultiplier tube (PMT), and background signal (consisting of the dark current of the PMT and light leak) with photon number autoFF. The histograms of the final simulated data were similar to those of the experimental data. The simulation was repeated 500 times under each backgroundP and sensor fluorescence photon number (1F) condition. The fitted sensorP (based on a double exponential decay fitting of the final simulated data) and empirical lifetime were used for subsequent analyses and evaluations.1
+**Figure 1.:** The sensor fluorescence lifetime distribution of a FRET-based sensor was modeled as a double exponential decay, as shown in Equation 1 (τ1=2.14 ns, τ2=0.69 ns) and the lifetimes of photons were sampled with replacement. After the sensor fluorescence was convolved with the probability density function (PDF) of the instrument response function (IRF), the following were added to produce the final simulated data: autofluorescence (autoF) empirically measured from brain tissue with photon number FautoF, afterpulse of the photomultiplier tube (PMT), and background signal (consisting of the dark current of the PMT and light leak) with photon number Fbackground. The histograms of the final simulated data were similar to those of the experimental data. The simulation was repeated 500 times under each P1 and sensor fluorescence photon number (Fsensor) condition. The fitted P1 (based on a double exponential decay fitting of the final simulated data) and empirical lifetime were used for subsequent analyses and evaluations.
 
-For sensor fluorescence, we sampled a specific number of photons (Fsensor) with replacement from an ideal distribution of photon lifetimes. In the examples in this study, we used the lifetime distribution of the FLIM-compatible A Kinase Activity Reporter (FLIM-AKAR), a Förster resonance energy transfer (FRET)-based biosensor that measures the activity of protein kinase A (PKA) in a variety of biological contexts, including brain slices and freely moving animals (Chen et al., 2014; Chen et al., 2017; Lee et al., 2019; Lee et al., 2021; Tilden et al., 2024). The fluorescence lifetime of FLIM-AKAR follows a double exponential decay defined by the following equation:(1)F(t)=F0∗(P1∗e(−tτ1)+P2∗e(−tτ2))\begin{document}$$\displaystyle F\left (t\right)=F_{0}\ast (P_{1}\ast e^{\left (-\frac{t}{\tau _{1}}\right)}+P_{2}\ast e^{\left (-\frac{t}{\tau _{2}}\right)} ) $$\end{document}
+For sensor fluorescence, we sampled a specific number of photons (Fsensor) with replacement from an ideal distribution of photon lifetimes. In the examples in this study, we used the lifetime distribution of the FLIM-compatible A Kinase Activity Reporter (FLIM-AKAR), a Förster resonance energy transfer (FRET)-based biosensor that measures the activity of protein kinase A (PKA) in a variety of biological contexts, including brain slices and freely moving animals (Chen et al., 2014; Chen et al., 2017; Lee et al., 2019; Lee et al., 2021; Tilden et al., 2024). The fluorescence lifetime of FLIM-AKAR follows a double exponential decay defined by the following equation:
+
+$$
+F(t)=F_{0}∗(P_{1}∗e^{(−\frac{t}{\tau_{1}})}+P_{2}∗e^{(−\frac{t}{\tau_{2}})})
+$$
 
 where F(t) is the number of photons that arrive at time t, F0 is the number of photons at time 0, τ1, and τ2 are time constants corresponding to lifetime distributions of the donor fluorophore that is either free or undergoing FRET, and P1 and P2 are the proportions of the donor fluorophores in these two states (Figure 1). Following sampling, we convolved the lifetime histogram with the probability density function (PDF) of an instrument response function (IRF) to account for instrument noise.
 
 Subsequently, we added a specific number of sampled photons (FautoF) from an autofluorescence curve, whose distribution was determined via fluorescence measurements in brain tissue without any sensor expression. The autofluorescence lifetime histogram exhibited faster decay than that of FLIM-AKAR (Figure 2—figure supplement 1A). After that, we added the afterpulse of the PMT, long-lasting signals from ionization of residual gas inside the PMT following a photon detection event (Akgun et al., 2008). The afterpulse was modeled as an even lifetime distribution with the amount of signal as a fraction of sensor fluorescence. Finally, we added a specific number of background signals (Fbackground) that was empirically determined from measurements, accounted for largely by ambient light leakage and the dark current of the PMT. We generated 500 simulated fluorescence lifetime histograms for each P1 and sensor photon count (for additional details, see Materials and methods).
 
-The simulated histogram closely matched the experimental histogram (Figure 1). Following histogram generation, we used two commonly used fluorescence lifetime metrics to evaluate the simulated data (Chen et al., 2017; Harvey et al., 2008; Lee et al., 2021; Ma et al., 2024; Mongeon et al., 2016; Yasuda et al., 2006b). First, fluorescence lifetime data were evaluated with empirical lifetimes, defined as the average lifetime of all photons:(2)empiricallifetime=∑(F(t)∗t)∑F(t)\begin{document}$$\displaystyle  empirical\,lifetime=\frac{\sum \left (F\left (t\right)\ast t\right)}{\sum F\left (t\right)}$$\end{document}
+The simulated histogram closely matched the experimental histogram (Figure 1). Following histogram generation, we used two commonly used fluorescence lifetime metrics to evaluate the simulated data (Chen et al., 2017; Harvey et al., 2008; Lee et al., 2021; Ma et al., 2024; Mongeon et al., 2016; Yasuda et al., 2006b). First, fluorescence lifetime data were evaluated with empirical lifetimes, defined as the average lifetime of all photons:
 
-in which t is the lifetime of photons arriving at a specific time channel, and F(t) is the photon count from that time channel. Additionally, simulated histograms were fitted with a double exponential decay equation with Gauss-Newton nonlinear least-square fitting algorithm:(3)F(t)=[F0∗(P1∗e−tτ1+P2∗e−tτ2)+SHG]⊗IRF+Fbackgrounad\begin{document}$$\displaystyle F(t)=\left[F_0 *\left(P_1 * e^{-\frac{t}{\tau_1}}+P_2 * e^{-\frac{t}{\tau_2}}\right)+S H G\right] \otimes I R F+F_{backgrounad}$$\end{document}
+$$
+empiricallifetime=\frac{\sum(F(t)∗t)}{\sumF(t)}
+$$
+
+in which t is the lifetime of photons arriving at a specific time channel, and F(t) is the photon count from that time channel. Additionally, simulated histograms were fitted with a double exponential decay equation with Gauss-Newton nonlinear least-square fitting algorithm:
+
+$$
+F(t)=[F_{0}∗(P_{1}∗e^{−\frac{t}{\tau_{1}}}+P_{2}∗e^{−\frac{t}{\tau_{2}}})+SHG]⊗IRF+F_{backgrounad}
+$$
 
 in which F0 is photon count from sensor fluorescence at time 0, Fbackground is background signal, SHG is second harmonic generation that is added at time 0, and ⊗ represents convolution. Both experimental and simulated data showed good fitting (Figure 2—figure supplement 1B). For subsequent analyses and evaluations, empirical lifetime and fitted P1, corresponding to the proportion of slower decay (free donor fluorophore) were used (Figure 1).
 
-## Bias and noise introduced by different sources of signals
+### Bias and noise introduced by different sources of signals
 
 To understand how different fluorescence and electronic sources contribute to bias and noise, we analyzed the fitted P1 and empirical lifetime across a range of values for the simulated P1 and sensor photon counts. Autofluorescence (autoF) decreased the fitted P1 and empirical lifetime, consistent with the faster decay of autofluorescence compared with that of FLIM-AKAR sensor fluorescence (Figure 2, Figure 2—figure supplement 1; Figure 2B: p<0.0001, sensor +autoF vs sensor only under all sensor photon number conditions for both fitted P1 and empirical lifetime). Further addition of afterpulse and background did not significantly change the fitted P1 (Figure 2; Figure 2B: p>0.6, final simulated data vs sensor + autoF condition for all sensor photon number conditions), consistent with consideration of the background term during the fitting procedure. In contrast, afterpulse and background increased the empirical lifetime, as they are evenly distributed across lifetime time channels and have a higher mean lifetime than FLIM-AKAR (Figure 2; Figure 2B: p<0.0001, final simulated data vs sensor + autoF for all sensor photon number conditions). Afterpulse and background had a greater impact on empirical lifetime compared with autofluorescence. This is because the empirical lifetime of background/afterpulse (~4.90 ns) deviates more from FLIM-AKAR (2–2.3 ns) than the empirical lifetime of autofluorescence (around 1.69 ns) does. Thus, while autofluorescence affects both the fitted P1 and empirical lifetime, only empirical lifetime is sensitive to afterpulse and background.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig2-v1.jpg)
+
+**Figure 2.:** (A) Simulated example histograms (upper panels) and heatmaps (middle and lower panels) showing the average fitted P1 and empirical lifetime of the simulated data across a range of P1 and sensor photon number conditions. Fluorescence lifetime histograms were simulated with the sensor only, sensor + autofluorescence (autoF), and sensor + autofluorescence + afterpulse + background (final simulated data). (B) Summaries of fitted P1 (left) and empirical lifetime (right) with simulated P1=0.5854. *p<0.05 for sensor + autoF (cyan) vs sensor only (orange); n.s. not significant for final simulated data (purple) vs sensor + autoF (cyan); #p<0.05 for final simulated data (purple) vs sensor + autoF (cyan). Two-way ANOVA with Šídák’s multiple comparisons test. n=500 simulations. The data are represented as means and standard deviations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fluorescence lifetime histograms of sensor fluorescence and autofluorescence. Note that autofluorescence has lower photon counts and shows faster decay compared with sensor fluorescence. (B) Examples of fluorescence decay histograms and fitted curves of experimental and simulated data. (C) Empirical lifetime, fitted P1, and χ2 from fitting (simulated P1=0.5854) of simulated and experimental data. *p<0.05, n.s. not significant. n=500 for simulations and n=7 for experimental data. One-way ANOVA with Šídák’s multiple comparisons test.
 
 Importantly, the biases introduced by autofluorescence, afterpulse, and background were less pronounced at higher sensor photon counts, which can be explained by the relatively small contribution of these factors when sensor fluorescence is high. Notably, as the number of sensor photons increased, the biases not only decreased but also plateaued, which made fluorescence lifetime less dependent on the number of sensor photons (Figure 2). Furthermore, the variance also decreased at higher photon counts for both the fitted P1 and empirical lifetime (Figure 2B). Thus, higher photon counts resulted in both less bias and less noise.
 
@@ -62,7 +82,7 @@ To quantify how well our simulation matches the experimental conditions, we calc
 
 In summary, using FLiSimBA, we realistically simulated fluorescence lifetime data in biological settings and quantitatively defined how different sources of signals contribute to bias and noise. These curves and quantitative approaches can, therefore, be used to evaluate the impact of optimization of these different sources on fluorescence lifetime measurements.
 
-## Determination of minimum photon number requirements to achieve specific SNRs
+### Determination of minimum photon number requirements to achieve specific SNRs
 
 How many photons do we need for a given FLIM experiment in a biology experiment? Are more photons always better? A greater number of photons translates into a better SNR but also a lower sampling rate and reduced size for the field of view. How can we quantitatively find the optimal compromise among these factors? As sensor fluorescence increases, the variances of both the fitted P1 and empirical lifetime decrease (Figure 2B), and the ability to detect a specific amount of fluorescence lifetime response increases. Although the number of photons required to achieve a certain SNR was analyzed previously (Esposito et al., 2007; Esposito et al., 2008; Gerritsen et al., 2002; Köllner and Wolfrum, 1992; Kumar, 2012; Lakowicz, 2006; Nasser and Meller, 2022; Netaev et al., 2022; Philip and Carlsson, 2003; Roethlein et al., 2015; Trinh and Esposito, 2021; Turton et al., 2003; Walsh et al., 2016; Xiao et al., 2021; Yasuda, 2006a), such analysis was not performed with consideration of biological samples in realistic experiments involving autofluorescence, background, and afterpulse.
 
@@ -70,17 +90,17 @@ To determine the minimum number of photons required for a certain SNR, we analyz
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic illustrating the power analysis used to calculate the minimum detectable difference between two lifetime distributions. (B, C) Minimum detectable differences in the fitted P (1B) and empirical lifetime (C) for different numbers of sensor photons and for different numbers of pairs of sampled data (n). The data were simulated with P=0.5.1
+**Figure 3.:** (A) Schematic illustrating the power analysis used to calculate the minimum detectable difference between two lifetime distributions. (B, C) Minimum detectable differences in the fitted P1 (B) and empirical lifetime (C) for different numbers of sensor photons and for different numbers of pairs of sampled data (n). The data were simulated with P1=0.5.
 
 Using realistic determination of the SNR with FLiSimBA, we also quantitatively evaluated the impact of specific hardware changes on the SNR. HBDs are advantageous over traditional gallium arsenide phosphide (GaAsP) PMTs because of their narrower IRF width and lack of afterpulsing (Becker et al., 2011). However, hybrid detectors are more expensive. Thus, it is valuable to quantify the benefits of HBDs over traditional GaAsP PMTs for SNRs. We generated fluorescence lifetime histograms with narrower IRFs and no afterpulses for HBDs and compared them with the simulated data for traditional GaAsP PMTs (Figure 4A and B). Hybrid detectors and GaAsP PMTs displayed similar photon-dependent changes in fitted P1 and empirical lifetime (Figure 4). Furthermore, a given sensor photon number gave a comparable MDD for HBDs and GaAsP PMTs (Figure 4). The similarity in the MDD curves can be explained by similar levels of variance between HBDs and PMTs (Figure 4C and D): although HBDs with a narrower IRF introduced less noise than GaAsP detectors (Figure 4G and H; noise from sampling from the IRF: standard deviation (STD) of fitted P1: 0.0008 for GaAsP PMTs and 0.0005 for HBDs; STD of empirical lifetime: 0.0003 for GaAsP PMTs and 0.0001 for HBDs), the noise of lifetime measurements was dominated by photon noise, and not by IRF noise (Figure 4G and H; noise from sampling of photons: STD of fitted P1: 0.0028 for both GaAsP PMTs and HBDs; STD of empirical lifetime: 0.0025 for both GaAsP PMTs and HBDs). Thus, although HBD can offer other advantages (Becker et al., 2011; Trinh and Esposito, 2021), HBDs with a narrower IRF and no afterpulse yield little improvement in the SNR for fluorescent protein-based sensors in biological applications.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig4-v1.jpg)
 
-**Figure 4.:** (A) Differences in instrument response function (IRF) widths and afterpulse ratios between the GaAsP PMT and HBD. These specific parameters are used in subsequent simulations. (B) Gaussian IRFs used for simulation, reflecting different Gaussian widths for the GaAsP PMT and HBD. (C, D) Distributions of the fitted P (1C) and empirical lifetime (D) of the simulated data from the GaAsP PMT or HBD, with simulated P=0.5 and showing the sensor photon number dependence. The data are represented as means and standard deviations. (1E, F) Minimum detectable difference in the fitted P (1E) and empirical lifetime (F) for different numbers of sensor photons and different numbers of data samples. The data were simulated with P=0.5. (1G, H) Distribution of the fitted P (1G) and empirical lifetime (H) of the simulated data from the GaAsP PMT or HBD, with noise introduced from either sampling of photons or sampling from the IRF distribution. The data were simulated without autofluorescence, afterpulse, or background and are represented as means and standard deviations. n=500 simulations.
+**Figure 4.:** (A) Differences in instrument response function (IRF) widths and afterpulse ratios between the GaAsP PMT and HBD. These specific parameters are used in subsequent simulations. (B) Gaussian IRFs used for simulation, reflecting different Gaussian widths for the GaAsP PMT and HBD. (C, D) Distributions of the fitted P1 (C) and empirical lifetime (D) of the simulated data from the GaAsP PMT or HBD, with simulated P1=0.5 and showing the sensor photon number dependence. The data are represented as means and standard deviations. (E, F) Minimum detectable difference in the fitted P1 (E) and empirical lifetime (F) for different numbers of sensor photons and different numbers of data samples. The data were simulated with P1=0.5. (G, H) Distribution of the fitted P1 (G) and empirical lifetime (H) of the simulated data from the GaAsP PMT or HBD, with noise introduced from either sampling of photons or sampling from the IRF distribution. The data were simulated without autofluorescence, afterpulse, or background and are represented as means and standard deviations. n=500 simulations.
 
 In summary, the quantitative and biologically realistic curves generated with FLiSimBA allow users to determine the appropriate trade-off in each experiment. Given the specific sensor brightness, sensor lifetime, and expected signal amplitude in specific biological applications, FLiSimBA allows the users to select the imaging speed and size of the imaging field to achieve the desired SNR. In addition, FLiSimBA allows users to evaluate the trade-off between performance improvement and price with specific hardware changes.
 
-## Expression level dependence of fluorescence lifetime estimates
+### Expression level dependence of fluorescence lifetime estimates
 
 Sensor expression levels often change over days and across animals and is usually assumed not to influence lifetime estimates because fluorescence lifetime is an intensive property of fluorophores. However, this assumption is true only if the biosensor is the only contributor to measurements. With autofluorescence, afterpulse, and background signals present in biological applications, the amount of sensor fluorescence relative to these contributing factors can lead to an apparent change in fluorescence lifetime estimates even if the biosensor is in the same conformational state (Ma et al., 2024). Here, we challenge the conventional view that fluorescence lifetime is independent of sensor expression and use simulation to define the range in which sensor expression has a negligible influence on lifetime.
 
@@ -88,23 +108,23 @@ We first determined how sensor expression levels altered the relative responses 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig5-v1.jpg)
 
-**Figure 5.:** P and the empirical lifetime.1(A) Schematic illustrating the following question under investigation: in biological systems, as autofluorescence, the afterpulse ratio, and the background remain constant, does the lifetime response change as sensor brightness increases? (B, C) Distribution of the fitted P (1B) and empirical lifetime (C) from fluorescence lifetime data with simulated P values of 0.4 and 0.5 across different sensor photon numbers. *p<0.05, 1P=0.4 vs 1P=0.5, two-way ANOVA with Šídák’s multiple comparisons test; 1#p<0.05, vs photons = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. (D, E) Distribution of the changes in the fitted P (1D) and empirical lifetime (E) for different sensor photon numbers. The simulated P varied from 0.4 to 0.5. *p<0.05, vs photon count = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. The data are represented as means and standard deviations. n=500 simulations.1
+**Figure 5.:** (A) Schematic illustrating the following question under investigation: in biological systems, as autofluorescence, the afterpulse ratio, and the background remain constant, does the lifetime response change as sensor brightness increases? (B, C) Distribution of the fitted P1 (B) and empirical lifetime (C) from fluorescence lifetime data with simulated P1 values of 0.4 and 0.5 across different sensor photon numbers. *p<0.05, P1=0.4 vs P1=0.5, two-way ANOVA with Šídák’s multiple comparisons test; #p<0.05, vs photons = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. (D, E) Distribution of the changes in the fitted P1 (D) and empirical lifetime (E) for different sensor photon numbers. The simulated P1 varied from 0.4 to 0.5. *p<0.05, vs photon count = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. The data are represented as means and standard deviations. n=500 simulations.
 
 Since fluorescence lifetime allows comparison of absolute levels of analytes (Brinks et al., 2015; Lazzari-Dean et al., 2019; Ma et al., 2024; van der Linden et al., 2021; Zheng et al., 2015), we determined the range where changes in sensor expression do not significantly affect fitted P1 or empirical lifetime (Figure 6A). A higher sensor photon count reduces the likelihood of significant changes in lifetime due to sensor expression (Figure 6A). Thus, we determined the minimum number of sensor photons needed for a specific change in sensor expression to have a negligible impact on lifetime measurements (Figure 6A). We first determined the apparent change in fitted P1 and empirical lifetime introduced by the change in sensor expression levels (Figure 6C, purple traces). As sensor fluorescence increased, the sensor expression-induced apparent change in fitted P1 and empirical lifetime decreased. Additionally, by considering the variance associated with a specific photon count, we calculated the minimum change in fitted P1 or empirical lifetime that would result in a statistically significant difference due to sensor expression changes (Figure 6C, black traces, t test threshold, see Materials and methods). The intersection of these two traces (Figure 6C) indicates the minimum number of sensor photons required to tolerate a certain amount of sensor photon changes (i.e. t tests did not show a statistically significant difference) (Figure 6B). As the total number of sensor photons increased, a greater difference in sensor expression was tolerated. Fitted P1 could tolerate more photon changes than empirical lifetime for a given number of sensor photons (Figure 6B). These curves provide quantitative guidelines for determining the necessary sensor photon counts to compare absolute lifetime values across different sensor expression levels.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic illustrating the question under investigation: as the biological analyte, autofluorescence, afterpulse ratio, and background signals remain constant, as the sensor expression/brightness increases, what is the minimum number of sensor photons needed to tolerate a specific change in sensor expression such that the apparent lifetimes are not significantly different? (B) Relationship between changes in photon number due to changes in expression level and the minimum number of sensor photons required not to reach statistical significance for both the fitted P and empirical lifetime. The data were simulated with 1P=0.5. The minimum number of sensor photons was calculated by interpolating the intersection between the two curves in (1C). (C) Plots of changes reaching statistical significance according to t tests (calculated as 1.96*standard error of the difference in the mean) and apparent changes due to sensor expression for both the empirical lifetime (upper panels) and fitted P (lower panels). The data were simulated with 1P=0.5. Different sensor expression changes are plotted in each panel. The data are represented as means and standard deviations.1
+**Figure 6.:** (A) Schematic illustrating the question under investigation: as the biological analyte, autofluorescence, afterpulse ratio, and background signals remain constant, as the sensor expression/brightness increases, what is the minimum number of sensor photons needed to tolerate a specific change in sensor expression such that the apparent lifetimes are not significantly different? (B) Relationship between changes in photon number due to changes in expression level and the minimum number of sensor photons required not to reach statistical significance for both the fitted P1 and empirical lifetime. The data were simulated with P1=0.5. The minimum number of sensor photons was calculated by interpolating the intersection between the two curves in (C). (C) Plots of changes reaching statistical significance according to t tests (calculated as 1.96*standard error of the difference in the mean) and apparent changes due to sensor expression for both the empirical lifetime (upper panels) and fitted P1 (lower panels). The data were simulated with P1=0.5. Different sensor expression changes are plotted in each panel. The data are represented as means and standard deviations.
 
 Together, the data in Figures 5 and 6 not only challenge the conventional view that fluorescence lifetime is independent of sensor expression levels in biology experiments, but also, more importantly, quantitatively define the range of sensor expression levels that enable comparison of either relative responses or absolute lifetime values across diverse sensor expression levels. These results are critical for guiding experiments that involve comparisons across animals, across brain regions, and across chronic time periods.
 
-## Innovating to reduce sensor expression dependence: avoiding autofluorescence and lowering background signal
+### Innovating to reduce sensor expression dependence: avoiding autofluorescence and lowering background signal
 
 Sensor expression dependence limits comparisons of fluorescence lifetime values and responses across chronic periods and across animals. Thus, we investigated the extent to which the dependence of sensor expression could be mitigated by achievable technological advances, in particular, by developing sensors outside the autofluorescence spectra (e.g. red-shifted sensors), and/or by lowering background signal (e.g. with photodetectors with low dark current, together with better light proofing) (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig7-v1.jpg)
 
-**Figure 7.:** (A, B) Distribution of the change in fitted P (1A) and empirical lifetime (B) with different sensor photon numbers, under no autofluorescence, low background, and both improvement conditions. The simulated P varied from 0.4 to 0.5. *p<0.05, vs photon count = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. n=500 simulations. The data are represented as means and standard deviations. (1C, D) Relationships between changes in photon number due to expression level and the minimum number of sensor photons required not to reach statistical significance for both the fitted P (1C) and empirical lifetime (D) under no autofluorescence, low background, or both improvement conditions. The data were simulated with P=0.5. The orange traces are the same as the corresponding data in 1Figures 5 and 6 and were reused here for comparison purposes.
+**Figure 7.:** (A, B) Distribution of the change in fitted P1 (A) and empirical lifetime (B) with different sensor photon numbers, under no autofluorescence, low background, and both improvement conditions. The simulated P1 varied from 0.4 to 0.5. *p<0.05, vs photon count = 800,000, one-way ANOVA with Dunnett’s multiple comparisons test. n=500 simulations. The data are represented as means and standard deviations. (C, D) Relationships between changes in photon number due to expression level and the minimum number of sensor photons required not to reach statistical significance for both the fitted P1 (C) and empirical lifetime (D) under no autofluorescence, low background, or both improvement conditions. The data were simulated with P1=0.5. The orange traces are the same as the corresponding data in Figures 5 and 6 and were reused here for comparison purposes.
 
 If sensors could be made with emission spectra that do not overlap with tissue autofluorescence (e.g. red or far-red sensors), both the relative response and absolute values of fitted P1 no longer depended on sensor expression (Figure 7A and C left panels; 7A: p=0.047 for 30,000 photons, p>0.8 for the other photon counts, vs 800,000 photons). This expression independence can be explained by the fact that only autofluorescence contributes to the sensor expression-dependent bias of fitted P1 (Figure 2). With no autofluorescence, the relative response in empirical lifetime showed less dependence on sensor expression (Figure 7B, left, p<0.05 for 150,000 photons or less, p>0.2 for the other photon counts, vs 800,000 photons), whereas the absolute empirical lifetime could tolerate less change in sensor expression (Figure 7D, left). Thus, sensors with spectra that avoid overlap with autofluorescence are completely independent of sensor expression levels when fitted P1 is used as the metric of evaluation.
 
@@ -114,9 +134,17 @@ Consistent with the results above, when there was no autofluorescence and the ba
 
 In summary, using FLiSimBA, we show quantitatively the benefit gained from future technological innovations: Developing sensors outside autofluorescence spectra or having a lower background can significantly reduce the dependence of fluorescence lifetime on sensor expression in biological systems, increasing the versatility of lifetime comparison across animals, brain regions, and chronic time scales, as well as allowing us to quantify the absolute levels of analytes.
 
-## Innovating for multiplexing: revealing the feasibility and specifying sensor characteristics for multiplexed imaging with both fluorescence lifetime and intensity
+### Innovating for multiplexing: revealing the feasibility and specifying sensor characteristics for multiplexed imaging with both fluorescence lifetime and intensity
 
 Understanding of any biological systems requires the quantification of the dynamics of many biological signals that interact together. Multiplexed imaging with sensors with different excitation and emission spectra is powerful, but only a few color channels can be effectively separated. Combining fluorescence lifetime and intensity could greatly enhance the capacity to monitor more biological signals simultaneously, and this idea is becoming increasingly feasible with the development of genetically encoded and chemigenetic sensors (Farrants et al., 2024; Frei et al., 2022; van der Linden et al., 2021). However, this approach was only used to distinguish sensors with different lifetimes in different spatial compartments (Frei et al., 2022; Rahim et al., 2022), or fluorophores that do not change dynamically and thus do not act as sensors (Hamilton and Sanabria, 2019; Rahim et al., 2022; Rice and Kumar, 2014; Widengren et al., 2006), and there was no quantitative framework for exploring the multiplexing capacity to analyze the dynamics of biosensors. Here, we investigated whether the combined signal of sensors with different lifetimes can be effectively deconvolved to quantitate the dynamic intensity change of each sensor – if this is feasible, this new approach could be used to simultaneously track the dynamics of multiple signals in the same spatial location, or in photometry experiments (Figure 8A), thus greatly enhancing our ability to understand the systems biology of signaling.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig8-v1.jpg)
+
+**Figure 8.:** (A) Schematic illustrating the motivation for the question. Sensor 1 and sensor 2 are intensity-based sensors with the same color but different fluorescence lifetimes (with single exponential decay constants τ1 and τ2, respectively). The fluorescence signals are combined, and then mathematically deconvolved into individual components. Dotted lines: true fluorescence lifetime histograms of the two sensors; solid lines: simulated fluorescence lifetime histograms with standard deviation (gray shading) before and after deconvolution. (B) Schematic illustrating the question under investigation: when sensor 1 and sensor 2 change fluorescence intensities and their combined fluorescence is collected simultaneously, can the respective intensities be deconvoluted from the combined measurements? (C) Deconvoluted number of sensor 1 photons based on different simulated sensor 1 photons. Sensor 2 was simulated with a photon count of 500 k. The left and right graphs are based on either 0.5 or 4 ns differences in the single exponential decay constants between the two sensors. The left and right graphs show that the variance in deconvoluted sensor 1 photons is less when the lifetime separation between sensor 1 and sensor 2 is greater. n=500 simulations. The data are represented as means and standard deviations. (D) Schematic illustrating the calculation of the statistical power for detecting a specific change in sensor 1 photon counts. (E) Heatmaps showing the statistical power of detecting specific changes in the intensity of sensor 1 with different sensor 1 baseline photons, different sensor 2 photons, and different lifetime separations between the two sensors. The red line denotes the change in intensity that provides a statistical power of 80%. (F) Relationship between the minimum detectable intensity change in sensor 1 to reach 80% statistical power and the lifetime difference between the two sensors. Curves were plotted with different sensor 1 baseline photons (left, 500 k sensor 2 photons) and different sensor 2 photons (right, 200 k sensor 1 baseline photons).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/101559/elife-101559-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Method of interpolating the minimum detectable intensity change to reach 80% statistical power. Statistical power and sensor 1 intensity change were fitted to a 5-parameter logistic function to calculate sensor 1 intensity change that gives a statistical power of 80%. Data are based on 500 k sensor 2 photons, 200 k sensor 1 baseline, and 0.5 ns lifetime separation between the two sensors. (B) Heatmaps showing the minimum detectable intensity change of sensor 1 to reach 80% statistical power, with different sensor 2 photons, sensor 1 baseline, and lifetime separation between the two sensors. Note that minimum detectable intensity change decreases as sensor 2 photons decreases, sensor 1 baseline increases, and lifetime separation increases. (C) Minimum detectable intensity changes of sensor 1 and sensor 2. Simulation assumed that the two sensors had the same baseline intensity, and both had a dynamic range in intensity that spanned from 1 to 2 fold of the baseline.
 
 We modeled a multiplexed system with two sensors, each displaying a single exponential decay in its fluorescence lifetime histogram but with different decay constants. Furthermore, in response to a change in the concentration of a biological analyte, the fluorescence lifetime of each sensor remains constant, whereas the fluorescence intensity is modulated. We used FLiSimBA to simulate multiplexed fluorescence lifetime imaging with realistic parameters and noise in biological systems. Subsequently, we deconvolved the combined histogram by fitting it with a double exponential decay equation (Equation 3, Gauss-Newton nonlinear least-square fitting algorithm), whose decay time constants corresponded to those of the two sensor species (Figure 8A).
 
@@ -132,23 +160,23 @@ In summary, our simulation showed that multiplexed fluorescence lifetime imaging
 
 Here, we provide a quantitative framework for analyzing fluorescence lifetime in realistic biological settings. We introduce FLiSimBA, a platform that accurately simulates fluorescence lifetime data for biological applications (Figures 1 and 2). With FLiSimBA, we address key questions in FLIM. First, to understand SNRs, we determined the number of photons required for different minimum detectable differences (Figure 3). Additionally, we assessed the impact of hardware changes on SNRs by comparing GaAsP PMTs with hybrid detectors (Figure 4). Moreover, we challenged the conventional view that biosensor expression levels do not affect fluorescence lifetime. We revealed how variation in sensor expression influences response amplitude (Figure 5) and identified the amount of expression level variation that does not significantly alter fluorescence lifetime estimates (Figure 6). Finally, we evaluated the feasibility, quantified the benefits, and specified the parameter space for FLIM innovations that minimize expression level dependence (Figure 7) or enable multiplexed imaging with lifetime and intensity (Figure 8). In summary, our study provides valuable insights and a quantitative framework for defining the power and limitations of fluorescence lifetime experiments in biological applications.
 
-## FLiSimBA as a tool for realistic simulation of FLIM and FLiP experiments
+### FLiSimBA as a tool for realistic simulation of FLIM and FLiP experiments
 
 FLiSimBA is a necessary and useful tool for FLIM and FLiP experiments for a few reasons. First, it realistically simulates lifetime data from biological applications. Second, FLiSimBA and the quantitative framework we provide can precisely define the benefits and limitations of FLIM or FLiP experiments, enabling rigorous experimental design and data interpretation. Third, the versatility of FLiSimBA allows easy adaption to different sensors, tissues, organisms, and analysis methods (Bajzer et al., 1991; Chen et al., 2022; Jo et al., 2005; Mannam et al., 2020; Periasamy, 1988; Rowley et al., 2011; Shen et al., 2024; Smith et al., 2019; Steinbach, 2012; Stringari et al., 2011; Wang et al., 2022; Wu et al., 2016; Xiao et al., 2023; Zickus et al., 2020).
 
 While this study used specific parameters from FLIM-AKAR and our imaging systems to demonstrate the power of FLiSimBA, FLiSimBA allows customizable inputs (Figure 1) with minimal model assumptions to suit specific experimental settings. Users should carefully select mathematical models for their fluorescence sensors (Chen et al., 2014; Steinbach, 2012), measure autofluorescence that matches the age, brain region, and data collection conditions (e.g. ex vivo or in vivo) of the tissue (Campbell et al., 2024; Jang et al., 2022; Morrow et al., 2024; Tehrani et al., 2023), as well as measure afterpulse ratio, background, and dark currents relevant to their specific FLIM or FLiP settings. While these input parameters do not alter the general insights from this study, they affect quantitative values and it is thus crucial to accurately match experimental conditions to enhance the rigor of experimental design and data interpretation.
 
-## Insights into measurement uncertainty of FLIM
+### Insights into measurement uncertainty of FLIM
 
 Beyond providing a package to realistically simulate FLIM data, our results also provide insights into critical questions for FLIM usage in biology that were not previously available. Quantifying the uncertainty of fluorescence lifetime measurements is a key aspect of any measurement but is often neglected. Our results provide the amplitude of the error bars and reveal the sources of bias and noise in fluorescence lifetime measurements in realistic biological experiments. Therefore, these results facilitate the disambiguation of signals from noise in data interpretation and empower FLIM users to design optimal experiments by precisely evaluating the compromise between the SNR, field-of-view size, and imaging speed.
 
-## Insights into expression level dependence of FLIM
+### Insights into expression level dependence of FLIM
 
 Our analysis of expression level dependence demonstrates that small quantitative changes can impact qualitative conclusions: Because of the influence of autofluorescence, afterpulse, and background, changes in sensor expression levels can lead to changes in lifetime measurements. This challenges the widely held assumptions about the very advantage of fluorescence lifetime measurements: Its insensitivity to sensor expression levels. While this issue is less problematic when the same sample is compared over short periods (for example, minutes), it can lead to misinterpretation when fluorescence lifetime is compared across prolonged periods (for example, days or weeks) or between samples with different sensor expression levels (for example, between individual animals). Thus, apparent changes in fluorescence lifetime observed over days, across cell types, or subcellular compartments may reflect variations in sensor expression levels rather than true differences in biological signals (Figure 6). Therefore, considering biologically realistic factors in FLiSimBA is essential, as it qualitatively impacts the conclusions.
 
 Importantly, our results not only highlight this issue but also provide a solution by defining the range where expression levels do not significantly affect lifetime (Figures 5 and 6). Practically, for a sensor with medium brightness delivered via in utero electroporation, adeno-associated virus, or as a knock-in gene, the brightness may not always fall within the expression level-independent regime. Therefore, these analyses are critical for identifying the conditions in which FLIM and FLiP can be reliably used to compare biosensor measurements over chronic time periods, across animals, and to quantify absolute levels of biological signals.
 
-## Insights into future FLIM innovation
+### Insights into future FLIM innovation
 
 Our quantitative platform demonstrates how we can improve FLIM through future innovation. First, whereas our simulations showed little advantage of hybrid detectors over GaAsP PMTs in terms of the SNR (Figure 4), different types of hybrid detectors offer narrower IRFs at the cost of lower quantum efficiency (QE). FLiSimBA enables the evaluation of the trade-off between IRF width and QE. Additionally, hybrid detectors are more advantageous for sensors with shorter fluorescence lifetimes (Trinh and Esposito, 2021) and FLiSimBA allows exploration of the range in which they provide clear benefits in biological settings.
 
@@ -160,45 +188,91 @@ Thus, FLiSimBA and our quantitative framework are instrumental for enabling opti
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Matlab</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python.org</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fluorescence Lifetime Simulation for Biological Applications (FLiSimBA)</td>
+      <td>Yao Chen’s Laboratory (Ma et al., 2025)</td>
+      <td></td>
+      <td>Authors: Pingchuan Ma, Peter Chen, Yao Chen, 2025, version 1, https://github.com/YaoChenLabWashU/Publication/tree/main/Simulation_manuscript</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures for rodent husbandry and surgery were performed following protocols approved by the Washington University Institutional Animal Care and Use Committee and in accordance with National Institutes of Health guidelines. CD-1 mice (Envigo #030) were used. The experiments were performed according to the Animal Research: Reporting of In Vivo Experiments (ARRIVE) guidelines (Percie du Sert et al., 2020).
 
-## DNA plasmid
+### DNA plasmid
 
 For experimentally determined FLIM-AKAR data, AAV-FLIM-AKAR (Chen et al., 2014) (Addgene #63058) was used to express the FLIM-AKAR sensor in the primary somatosensory cortex by in utero electroporation (Chen et al., 2017).
 
-## Acute brain slice preparation
+### Acute brain slice preparation
 
 Mice were anesthetized with isoflurane at 15–19 days of age and then decapitated. Their brains were rapidly dissected and put in sucrose-based cutting solution (concentrations in mM: 75 sucrose, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 87 NaCl, 25 glucose, 1 MgCl2). 300 μm-thick coronal sections containing the primary somatosensory cortex were obtained with a vibratome (Leica Instruments, VT1200S) in cold sucrose-based cutting solution. After sectioning, the slices were transferred to artificial cerebral spinal fluid (ACSF) (concentrations in mM: 127 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 2 CaCl2, 1 MgCl2, and 25 glucose) and incubated at 34℃ for 10 min for recovery. The slices were kept at room temperature in ACSF with 5% CO2 and 95% O2. The slices were then transferred to a microscope chamber and ACSF was perfused at a flow rate of 2–4 mL/min for imaging.
 
-## Two-photon fluorescence lifetime imaging microscopy (2pFLIM)
+### Two-photon fluorescence lifetime imaging microscopy (2pFLIM)
 
 2pFLIM was performed as described previously (Chen et al., 2014; Chen et al., 2017; Ma et al., 2024; Tilden et al., 2024). A custom-built microscope with a mode-locked laser source (Spectra-Physics, Insight X3 operating at 80 MHz) was used. Photons were collected with fast photomultiplier tubes (PMTs, Hamamatsu, H10770PB-40). A 60 X (Olympus, NA 1.1) objective was used. Image acquisition was performed with the custom-written software ScanImage (Chen et al., 2014; Chen et al., 2017; Ma et al., 2024; Pologruto et al., 2003; Tilden et al., 2024) in MATLAB 2012b. The excitation wavelength was 920 nm. Emission light was collected through a dichroic mirror (FF580-FDi01−25X36, Semrock) and a band-pass filter (FF03-525/50-25, Semrock). Images covering 15 μm × 15 μm fields of view were collected at 128x128 pixels via a frame scan at 4 Hz. The FLIM board SPC-150 (Becker and Hickl GmbH) was used, and time-correlated single photon counting was performed with 256 time channels. Photons from 20 frames were pooled for fluorescence lifetime calculations. Only healthy cells (judged by gradient contrast images) at 30–50 μm below the slice surface were selected. Each individual cell was analyzed as a region of interest (ROI). Photons from a given ROI were pooled for further analysis.
 
-## Experimental data collection, parameter determination, and simulation
+### Experimental data collection, parameter determination, and simulation
 
 The simulation packages were provided in MATLAB and Python. The simulation was performed in MATLAB 2022a or Python with the following steps (Figure 1A). The final simulated histograms consisted of the IRF-convolved sensor fluorescence, autofluorescence, afterpulse, and background fluorescence. The simulations were performed with 256 time channels for each laser cycle from an 80 MHz laser (12.5 ns interpulse interval). For each P1 and sensor photon number condition, the simulation was repeated 500 times.
 
-## Generation of photon populations for sensor fluorescence
+#### Generation of photon populations for sensor fluorescence
 
 For FLIM-AKAR sensor fluorescence, τ1 and τ2 were previously determined to be 2.14 ns and 0.69 ns, respectively (Chen et al., 2014; Chen et al., 2017). To determine the appropriate photon counts and P1 range for simulation, sensor fluorescence histogram was fitted with Equation 3.
 
-For Figures 1—7, to simulate the fluorescence lifetime with double exponential decay, we generated a population of photons with Equation 1 with F0\begin{document}$F_{0}$\end{document} equal to 1,000,000. We generated photon populations and corresponding fluorescence lifetime histograms with P1 ranging from 0.4 to 0.6 with an increment of 0.01.
+For Figures 1—7, to simulate the fluorescence lifetime with double exponential decay, we generated a population of photons with Equation 1 with $F_{0}$ equal to 1,000,000. We generated photon populations and corresponding fluorescence lifetime histograms with P1 ranging from 0.4 to 0.6 with an increment of 0.01.
 
-## Sensor fluorescence sampling and IRF convolution
+#### Sensor fluorescence sampling and IRF convolution
 
 For sensor fluorescence sampling, a specific number of photons were randomly drawn with replacement from the corresponding population generated with double exponential decay. IRF convolution of the fluorescence lifetime histogram was performed: the lifetime of each photon in the sample was redistributed along the time channels based on the probability of the IRF distribution. Following convolution, the histogram was wrapped around such that any photons whose lifetimes were beyond 12.5 ns (inter-pulse interval of laser) were redistributed to the next cycle.
 
-In all the figures except for Figure 4, the IRF was empirically measured by second harmonic generation of the mouse tail with excitation at 1050 nm. The lifetime histogram was normalized to the total photon number and used as the IRF. For Figure 4, the IRFs of both systems were modeled as Gaussian distributions with different Gaussian widths. The mean of the Gaussian distribution (μ) was set as the peak channel of the experimentally collected IRF. The full width at half maximum (FWHM) of the Gaussian IRF of the GaAsP PMT was set to match the FWHM of the experimentally collected IRF (340 ps). The FWHM of the hybrid detector Gaussian IRF was set as 120 ps based on the HPM-100–40 model (Becker & Hickl) (Becker et al., 2011). The standard deviation (STD, σ) of the Gaussian distribution of the IRFs was determined based on the relationship with the FWHM:(4)FWHM=22ln2∗σ\begin{document}$$\displaystyle  FWHM=2\sqrt{2ln2}\ast\sigma$$\end{document}
+In all the figures except for Figure 4, the IRF was empirically measured by second harmonic generation of the mouse tail with excitation at 1050 nm. The lifetime histogram was normalized to the total photon number and used as the IRF. For Figure 4, the IRFs of both systems were modeled as Gaussian distributions with different Gaussian widths. The mean of the Gaussian distribution (μ) was set as the peak channel of the experimentally collected IRF. The full width at half maximum (FWHM) of the Gaussian IRF of the GaAsP PMT was set to match the FWHM of the experimentally collected IRF (340 ps). The FWHM of the hybrid detector Gaussian IRF was set as 120 ps based on the HPM-100–40 model (Becker & Hickl) (Becker et al., 2011). The standard deviation (STD, σ) of the Gaussian distribution of the IRFs was determined based on the relationship with the FWHM:
 
-The Gaussian distribution was defined as follows: (5)G(t)=1σ2π∗e−12(t−μσ)2\begin{document}$$\displaystyle  G\left(t\right)=\frac{1}{\sigma \sqrt{2\pi}}\ast e^{\frac{- 1}{2}\left (\frac{t- \mu}{\sigma }\right)^{2}}$$\end{document}
+$$
+FWHM=2\sqrt{2ln2}∗\sigma
+$$
+
+The Gaussian distribution was defined as follows: 
+
+$$
+G(t)=\frac{1}{\sigma\sqrt{2\pi}}∗e^{\frac{−1}{2}(\frac{t−\mu}{\sigma})^{2}}
+$$
 
 The Gaussian IRF was generated by normalization of G(t) against the total photon count.
 
 For Figure 4G and H, to isolate the noise from the sampling of photons, sensor fluorescence sampling was performed 500 times, followed by analytical IRF convolution of each sensor fluorescence decay histogram. To isolate the noise from sampling from the IRF distribution, only one sensor photon decay histogram was generated, and each photon was reassigned to a single lifetime value based on the probability density distribution of the IRF, and this procedure was repeated 500 times.
 
-## Autofluorescence
+#### Autofluorescence
 
 All biological tissues exhibit autofluorescence due to fluorescent cellular components and metabolites, such as nicotinamide-adenine dinucleotide (NAD), flavins, and aromatic amino acids (Georgakoudi and Quinn, 2023; Ma et al., 2024; Malak et al., 2022).
 
@@ -208,7 +282,7 @@ For simulations, we introduced up to 10% fluctuation in the number of photons by
 
 For Figure 4, the autofluorescence lifetime was simulated as double exponential decay (Equation 1). For the remaining figures, the autofluorescence lifetime was sampled from the empirical autofluorescence lifetime distribution, where the background was subtracted from the average autofluorescence lifetime histogram.
 
-## Afterpulse and background fluorescence
+#### Afterpulse and background fluorescence
 
 The afterpulse ratio of the PMT was derived from the IRF histogram and the background fluorescence measurement described above. Then the photons per channel were averaged at the end of the IRF histograms, where the distribution was even across time channels. The number was subtracted by the background fluorescence and the result was used as the afterpulse. Subsequently, the ratio between the number of photons contributing to the afterpulse and the total number of photons from the IRF histogram was calculated as the afterpulse ratio. For GaAsP PMTs, an afterpulse ratio of 0.32% was used in all figures except for Figure 2 and Figure 2—figure supplement 1, where a ratio of 0.40% was used to match the specific experimental data.
 
@@ -216,7 +290,7 @@ Afterpulse and background fluorescence were simulated by sampling with replaceme
 
 Please note that we used the specific parameters described above for this study, including using the double-exponential decay model and parameters for FLIM-AKAR, the measured autofluorescence amount and distribution from acute mouse brain slices at a specific age, the empirically measured IRF, afterpulse ratio, and background fluorescence for our 2pFLIM microscope. These input parameters (Figure 1) should be altered to adapt to different biological applications. Although they do not change the conclusions of this study (e.g. there is an expression level-dependent and -independent regime for fluorescence lifetime), the specific input parameters would alter the quantitative thresholds (e.g. the precise threshold above which fluorescence lifetime is not significantly altered by expression levels).
 
-## FLIM analysis
+### FLIM analysis
 
 Two metrics were used for subsequent data visualization and analysis. First, after the fluorescence lifetime histograms were fitted with Equation 3, fitted P1, corresponding to the proportion of slower decay (2.14 ns), was used for data visualization and analysis. Second, the empirical lifetimes of all the photons were calculated based on Equation 2.
 
@@ -224,36 +298,56 @@ For all figures except for Figure 2 and Figure 2—figure supplement 1, the time
 
 For comparison between experimental and simulated data, we determined the photon counts and P1 of experimental conditions from fluorescence lifetime histograms from whole fields of view in brain slices. We subtracted empirically collected autofluorescence (which includes dark currents, SHG, and background) and afterpulse (with an afterpulse ratio of 0.4%) from the histogram to derive the sensor histogram. Sensor histograms from seven experimental acquisitions were averaged and fitted with Equation 3, using a lifetime range of 1.8–11.5 ns, with SHG and Fbackground set to 0. The fitted P1 (0.5854) and photon number (652,126) were used for simulations in Figure 2B, Figure 2—figure supplement 1B and C. To minimize system artifact interference at the histogram edges, fitted P1 and empirical lifetime were calculated within the 1.8–11.5 ns range for Figure 2 and Figure 2—figure supplement 1B and C.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 For each simulated condition, the mean and STD of the fitted P1 or the empirical lifetime of the 500 simulation repeats were calculated.
 
-For Figures 3 and 4, the minimum detectable difference (MDD) was calculated by:(6)MDD=z∗SE(diff^)\begin{document}$$\displaystyle  M D D=z * S E(\widehat{diff})$$\end{document}
+For Figures 3 and 4, the minimum detectable difference (MDD) was calculated by:
 
-where SE refers to the standard error, and diff^\begin{document}$\widehat{diff}$\end{document} is the estimated mean difference between two distributions. With a significance level of 0.05 and a power of 0.8, the z value is 2.806. which was used for the calculations in this study. Under a certain sensor photon number, the STD of the two metrics under different P1 conditions (condition 1 and condition 2) were similar. Thus, given a certain sensor photon count, the STD under P1 condition (0.5 in Figure 2) was used to calculate the MDD:(7)MDD=z∗STD(condition1)2+STD(condition2)2n∽ z∗2∗STDn\begin{document}$$\displaystyle  MDD=z\ast\frac{ \sqrt{STD_{\left (condition\,1\right)^{2}}+STD_{\left (condition\,2\right)^{2}}}}{\sqrt{n}}\backsim \ \frac{z\ast \sqrt{2}\ast STD}{\sqrt{n}}$$\end{document}
+$$
+MDD=z∗SE(diff^)
+$$
+
+where SE refers to the standard error, and $diff^$ is the estimated mean difference between two distributions. With a significance level of 0.05 and a power of 0.8, the z value is 2.806. which was used for the calculations in this study. Under a certain sensor photon number, the STD of the two metrics under different P1 conditions (condition 1 and condition 2) were similar. Thus, given a certain sensor photon count, the STD under P1 condition (0.5 in Figure 2) was used to calculate the MDD:
+
+$$
+MDD=z∗\frac{\sqrt{STD_{(condition1)^{2}}+STD_{(condition2)^{2}}}}{\sqrt{n}}∽ \frac{z∗\sqrt{2}∗STD}{\sqrt{n}}
+$$
 
 where n is the number of data pairs used to analyze whether there was a significant change in the fitted P1 or empirical lifetime.
 
-For Figures 6 and 7, to determine whether a certain amount of sensor expression-induced apparent change in the fitted P1 or empirical lifetime was significant, t tests were used to compare whether there was any statistically significant difference between two distributions with the same simulated P1 but different photon numbers. The critical value of the t statistic is z=1.96 for a significance level of 0.05. The equation z∗SE(diff^)\begin{document}$z\ast SE (\widehat{diff})$\end{document} was used to calculate the fitted P1 or empirical lifetime difference that would be statistically significant. As the photon count increased, there was an intersection where the mean fitted P1 or empirical lifetime difference between the two distributions became less than the difference that would reach statistical significance, and this intersection point (determined by linear interpolation of the curves plotted on a log scale for both axes) was used to determine the minimum number of sensor photons required to tolerate a specific amount of change in sensor fluorescence.
+For Figures 6 and 7, to determine whether a certain amount of sensor expression-induced apparent change in the fitted P1 or empirical lifetime was significant, t tests were used to compare whether there was any statistically significant difference between two distributions with the same simulated P1 but different photon numbers. The critical value of the t statistic is z=1.96 for a significance level of 0.05. The equation $z∗SE(diff^)$ was used to calculate the fitted P1 or empirical lifetime difference that would be statistically significant. As the photon count increased, there was an intersection where the mean fitted P1 or empirical lifetime difference between the two distributions became less than the difference that would reach statistical significance, and this intersection point (determined by linear interpolation of the curves plotted on a log scale for both axes) was used to determine the minimum number of sensor photons required to tolerate a specific amount of change in sensor fluorescence.
 
 Detailed information on the quantification, sample size, and statistical tests used are summarized in the Figure Legends, Figures, and Results. T tests were performed to test whether two distributions had equal means. For analysis of variance, one-way or two-way ANOVA was performed followed by multiple comparison tests.
 
-## Simulation and analysis of multiplexed imaging with fluorescence intensity and lifetime data
+### Simulation and analysis of multiplexed imaging with fluorescence intensity and lifetime data
 
-For Figure 8 and Figure 8—figure supplement 1, the simulations were performed with a laser cycle of 50 ns to capture the fluorescence decay curve of Sensor 2 with a longer lifetime constant. The fluorescence lifetime histograms of sensor 1 and sensor 2 were simulated as single exponential decays:(8)F(t)=F0e−tτ⊗IRF\begin{document}$$\displaystyle F\left (t\right)=F_{0}e^{\frac{- t}{\tau }}\otimes IRF$$\end{document}
+For Figure 8 and Figure 8—figure supplement 1, the simulations were performed with a laser cycle of 50 ns to capture the fluorescence decay curve of Sensor 2 with a longer lifetime constant. The fluorescence lifetime histograms of sensor 1 and sensor 2 were simulated as single exponential decays:
+
+$$
+F(t)=F_{0}e^{\frac{−t}{\tau}}⊗IRF
+$$
 
 where the decay constants τ for sensor 1 and sensor 2 are different.
 
-To simulate the fluorescence lifetime with single exponential decay, we generated a population of photons with Equation 8 with F0\begin{document}$F_{0}$\end{document} equal to 1,000,000. For sensor 1, the population was generated with τ=2.0 ns. For sensor 2, the population was generated with τ=2.5, 3.0, 3.5, 4.0, or 6.0 ns.
+To simulate the fluorescence lifetime with single exponential decay, we generated a population of photons with Equation 8 with $F_{0}$ equal to 1,000,000. For sensor 1, the population was generated with τ=2.0 ns. For sensor 2, the population was generated with τ=2.5, 3.0, 3.5, 4.0, or 6.0 ns.
 
 Fluorescence lifetime histograms of sensor 1 and sensor 2 were generated by sampling from the corresponding population, followed by IRF convolution. The histograms of sensor 1 and sensor 2 were added together as the combined histogram. Autofluorescence and background signals were simulated with the same probability density function as above but with 3.2-fold of photon numbers to accommodate for the longer acquisition time needed with a longer laser cycle to reach the same number of photons. Afterpulse was added proportional to the sensor photons as described above.
 
 The combined histograms were fitted by a double exponential decay (Equation 3), with fixed τ1 and τ2 that were used for the simulation that generated the histograms. The fitting was performed with the Gauss-Newton nonlinear least-square fitting algorithm. F0, P1, and P2 generated from the fitting were used to calculate the number of photons that contributed to sensor 1 and sensor 2, respectively.
 
-The statistical power to detect the difference between two distributions of sensor intensity was calculated as follows: (9)β=1−normcdf(1.96−ΔISE(dlff^))\begin{document}$$\displaystyle  \beta =1- normcdf\left (1.96- \frac{\Delta I}{SE(\widehat{dlff})}\right)$$\end{document}
+The statistical power to detect the difference between two distributions of sensor intensity was calculated as follows:
 
-where normcdf is the cumulative distribution function of a normal distribution, ΔI\begin{document}$\Delta I$\end{document} is the intensity (photon number) change to be detected, SE refers to the standard error, and diff^\begin{document}$\widehat{diff}$\end{document} is the estimator of the mean difference between two distributions.
+$$
+\beta=1−normcdf(1.96−\frac{ΔI}{SE(dlff^)})
+$$
 
-The relationship between the statistical power β and the intensity change ratio (ΔF/F0\begin{document}$\Delta F/F_{0}$\end{document}) was fitted to a 5-parameter logistic curve: (10)β(ΔF/F0)=D+A−D(1+(ΔF/F0C)B)E\begin{document}$$\displaystyle \beta _{\left (\Delta F/F_{0}\right)}=D+\frac{A- D}{\left (1+\left (\frac{\Delta F/F_{0}}{C}\right)^{B}\right)^{E}}$$\end{document}
+where normcdf is the cumulative distribution function of a normal distribution, $ΔI$ is the intensity (photon number) change to be detected, SE refers to the standard error, and $diff^$ is the estimator of the mean difference between two distributions.
 
-where A, B, C, D, and E are constants in the equation. The intensity change ratio corresponding to a statistical power of 80% is determined by solving the equation with β∆F/F0=0.8\begin{document}$\beta _{\left (\Delta F/F_{0}\right)}=0.8$\end{document} and defined as the minimum detectable ∆F/F0\begin{document}$\Delta F/F_{0}$\end{document}.
+The relationship between the statistical power β and the intensity change ratio ($ΔF/F_{0}$) was fitted to a 5-parameter logistic curve:
+
+$$
+\beta_{(ΔF/F_{0})}=D+\frac{A−D}{(1+(\frac{ΔF/F_{0}}{C})^{B})^{E}}
+$$
+
+where A, B, C, D, and E are constants in the equation. The intensity change ratio corresponding to a statistical power of 80% is determined by solving the equation with $\beta_{\DeltaF/F_{0}}=0.8$ and defined as the minimum detectable $\DeltaF/F_{0}$.

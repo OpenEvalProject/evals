@@ -26,7 +26,7 @@ Since brains have to operate in dynamic environments and during ego-motion, neur
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65459/elife-65459-fig1-v1.jpg)
 
-**Figure 1.:** (A) The response to a 1 s long step current is displayed for three sample neurons from the Allen brain cell database (Allen Institute, 2018b). The cell id and sweep number identify the exact cell recording in the Allen brain cell database. (B) The response of a simple leaky integrate-and-fire (LIF) neuron model with SFA to the 1-s-long step current. Neuron parameters used: top row , β=0.5⁢mV, τa=1⁢s; middle row Ii⁢n⁢p⁢u⁢t=0.024⁢A, β=1⁢mV, τa=1⁢s; bottom row Ii⁢n⁢p⁢u⁢t=0.024⁢A, β=1⁢mV, τa=300⁢ms. (Ii⁢n⁢p⁢u⁢t=0.022⁢AC) Symbolic architecture of recurrent spiking neural network (SNN) consisting of LIF neurons with and without SFA. (D) Minimal SNN architecture for solving simple instances of STORE-RECALL tasks that we used to illustrate the negative imprinting principle. It consists of four subpopulations of input neurons and two LIF neurons with SFA, labeled NR and NL, that project to two output neurons (of which the stronger firing one provides the answer). (E) Sample trial of the network from (D) for two instances of the STORE-RECALL task. The input ‘Right’ is routed to the neuron NL, which fires strongly during the first STORE signal (indicated by a yellow shading of the time segment), that causes its firing threshold (shown at the bottom in blue) to strongly increase. The subsequent RECALL signal (green shading) excites both NL and NR, but NL fires less, that is, the storing of the working memory content ‘Right’ has left a ‘negative imprint’ on its excitability. Hence, NR fires stronger during recall, thereby triggering the answer ‘Right’ in the readout. After a longer pause, which allows the firing thresholds of NR and NL to reset, a trial is shown where the value ‘Left’ is stored and recalled.
+**Figure 1.:** (A) The response to a 1 s long step current is displayed for three sample neurons from the Allen brain cell database (Allen Institute, 2018b). The cell id and sweep number identify the exact cell recording in the Allen brain cell database. (B) The response of a simple leaky integrate-and-fire (LIF) neuron model with SFA to the 1-s-long step current. Neuron parameters used: top row $\beta=0.5⁢mV$, $\tau_{a}=1⁢s$, $I_{i⁢n⁢p⁢u⁢t}=0.024⁢A$; middle row $\beta=1⁢mV$, $\tau_{a}=1⁢s$, $I_{i⁢n⁢p⁢u⁢t}=0.024⁢A$; bottom row $\beta=1⁢mV$, $\tau_{a}=300⁢ms$, $I_{i⁢n⁢p⁢u⁢t}=0.022⁢A$. (C) Symbolic architecture of recurrent spiking neural network (SNN) consisting of LIF neurons with and without SFA. (D) Minimal SNN architecture for solving simple instances of STORE-RECALL tasks that we used to illustrate the negative imprinting principle. It consists of four subpopulations of input neurons and two LIF neurons with SFA, labeled NR and NL, that project to two output neurons (of which the stronger firing one provides the answer). (E) Sample trial of the network from (D) for two instances of the STORE-RECALL task. The input ‘Right’ is routed to the neuron NL, which fires strongly during the first STORE signal (indicated by a yellow shading of the time segment), that causes its firing threshold (shown at the bottom in blue) to strongly increase. The subsequent RECALL signal (green shading) excites both NL and NR, but NL fires less, that is, the storing of the working memory content ‘Right’ has left a ‘negative imprint’ on its excitability. Hence, NR fires stronger during recall, thereby triggering the answer ‘Right’ in the readout. After a longer pause, which allows the firing thresholds of NR and NL to reset, a trial is shown where the value ‘Left’ is stored and recalled.
 
 SFA is an attractive feature from the perspective of the metabolic cost of neural coding and computation since it reduces firing activity (Gutierrez and Denève, 2019). But this increased metabolic efficiency comes at the cost of making spike codes for sensory stimuli history-dependent. Hence, it becomes harder to decode information from spikes if neurons with SFA are involved (Weber and Fairhall, 2019; Weber et al., 2019). This problem appears already for very simple input streams, where the same stimulus is presented repeatedly, since each presentation is likely to create a somewhat different neural code in the network. However, it has recently been shown that a careful network construction can ensure that stable neural codes emerge on the network level (Gutierrez and Denève, 2019).
 
@@ -38,23 +38,29 @@ However, these working memory tasks capture just a small fragment of temporal co
 
 ## Results
 
-## Network model
+### Network model
 
-We employ a standard simple model for neurons with SFA, the generalized leaky integrate-and-fire (LIF) model G⁢L⁢I⁢F2 from Teeter et al., 2018; Allen Institute, 2018a. A practical advantage of this simple model is that it can be efficiently simulated and that it is amenable to gradient descent training (Bellec et al., 2018a). It is based on a standard LIF neuron model. In a LIF neuron, inputs are temporally integrated, giving rise to its membrane potential. The neuron produces a spike when its membrane potential is above a threshold vth. After the spike, the membrane potential is reset and the neuron enters a refractory period during which it cannot spike again. The precise dynamics of the LIF model is given in Equation (2) in Materials and methods. The G⁢L⁢I⁢F2 model extends the LIF model by adding to the membrane voltage a second hidden variable, a variable component a⁢(t) of the firing threshold A⁢(t) that increases by a fixed amount after each spike z⁢(t) of the neuron, and then decays exponentially back to 0 (see Figure 1B, E). This variable threshold models the inactivation of voltage-dependent sodium channels in a qualitative manner. We write zj⁢(t) for the spike output of neuron j, which switches from 0 to 1 at time t when the neuron fires at time t, and otherwise has value 0. With this notation, one can define the SFA model by the equations(1)Aj(t)=vth+βaj(t),aj(t+1)=ρjaj(t)+(1−ρj)zj(t),where vth is the constant baseline of the firing threshold Aj⁢(t), and β>0 scales the amplitude of the activity-dependent component. The parameter ρj=exp⁢(-1τa,j) controls the speed by which aj⁢(t) decays back to 0, where τa,j is the adaptation time constant of neuron j. For simplicity, we used a discrete-time model with a time step of δt=1 ms (see Materials and methods for further details). We will in the following also refer to this model as ‘LIF with SFA.’ Consistent with the experimental data (Allen Institute, 2018a), we consider recurrent networks of LIF neurons, SNNs, of which some fraction is equipped with SFA. It turns out that the precise fraction of neurons with SFA does not matter for most tasks, especially if it stays somewhere in the biological range of 20–40%. We usually consider for simplicity fully connected recurrent networks, but most tasks can also be solved with sparser connectivity. Neurons in the recurrent network project to readout neurons, which produce the output of the network (see Figure 1C). The final output was either the maximum value after applying the softmax or thresholded values after applying the sigmoid on each readout neuron.
+We employ a standard simple model for neurons with SFA, the generalized leaky integrate-and-fire (LIF) model $G⁢L⁢I⁢F_{2}$ from Teeter et al., 2018; Allen Institute, 2018a. A practical advantage of this simple model is that it can be efficiently simulated and that it is amenable to gradient descent training (Bellec et al., 2018a). It is based on a standard LIF neuron model. In a LIF neuron, inputs are temporally integrated, giving rise to its membrane potential. The neuron produces a spike when its membrane potential is above a threshold vth. After the spike, the membrane potential is reset and the neuron enters a refractory period during which it cannot spike again. The precise dynamics of the LIF model is given in Equation (2) in Materials and methods. The $G⁢L⁢I⁢F_{2}$ model extends the LIF model by adding to the membrane voltage a second hidden variable, a variable component $a⁢(t)$ of the firing threshold $A⁢(t)$ that increases by a fixed amount after each spike $z⁢(t)$ of the neuron, and then decays exponentially back to 0 (see Figure 1B, E). This variable threshold models the inactivation of voltage-dependent sodium channels in a qualitative manner. We write $z_{j}⁢(t)$ for the spike output of neuron $j$, which switches from 0 to 1 at time $t$ when the neuron fires at time $t$, and otherwise has value 0. With this notation, one can define the SFA model by the equations
+
+$$
+A_{j}(t)=v_{th}+\betaa_{j}(t),a_{j}(t+1)=ρ_{j}a_{j}(t)+(1−ρ_{j})z_{j}(t),
+$$
+
+where vth is the constant baseline of the firing threshold $A_{j}⁢(t)$, and $\beta>0$ scales the amplitude of the activity-dependent component. The parameter $ρ_{j}=exp⁢(\frac{-1}{\tau_{a,j}})$ controls the speed by which $a_{j}⁢(t)$ decays back to 0, where $\tau_{a,j}$ is the adaptation time constant of neuron $j$. For simplicity, we used a discrete-time model with a time step of $\deltat=1$ ms (see Materials and methods for further details). We will in the following also refer to this model as ‘LIF with SFA.’ Consistent with the experimental data (Allen Institute, 2018a), we consider recurrent networks of LIF neurons, SNNs, of which some fraction is equipped with SFA. It turns out that the precise fraction of neurons with SFA does not matter for most tasks, especially if it stays somewhere in the biological range of 20–40%. We usually consider for simplicity fully connected recurrent networks, but most tasks can also be solved with sparser connectivity. Neurons in the recurrent network project to readout neurons, which produce the output of the network (see Figure 1C). The final output was either the maximum value after applying the softmax or thresholded values after applying the sigmoid on each readout neuron.
 
 In order to analyze the potential contribution of SFA to temporal computing capabilities of SNNs, we optimized the weights of the SNN for each task. We used for this stochastic gradient descent in the form of BPTT (Mozer, 1989; Robinson and Fallside, 1987; Werbos, 1988), which is, to the best of our knowledge, the best-performing optimization method. Although this method performs best for differentiable neural network models, it turns out that the non-differentiable output of a spiking neuron can be overcome quite well with the help of a suitably scaled pseudo-derivative (Bellec et al., 2018a). In general, similar task performance can also be achieved with a biologically plausible learning method for SNNs e-prop (Bellec et al., 2020). Although computing rather than learning capabilities are in the focus of this paper, we demonstrate for one of the most demanding tasks that we consider, 12AX task, that almost the same task performance as with BPTT can be achieved with e-prop.
 
-## SFA provides working memory simultaneously for many pieces of information and yields powerful generalization capability
+### SFA provides working memory simultaneously for many pieces of information and yields powerful generalization capability
 
 To elucidate the mechanism by which SFA supports temporal computing capabilities of SNNs, we first consider classical working memory tasks, where information just has to be temporally stored by the neural network, without the need for frequent updates of this working memory during an instance of the task.
 
-## Negative imprinting principle
+#### Negative imprinting principle
 
 To demonstrate how neurons with SFA can contribute to solving working memory tasks, we first consider the standard case where just a single value, for example, the position left or right of a prior stimulus, has to be stored during a delay. The simple network shown in Figure 1D, consisting of two neurons with SFA (NL and NR), can already solve this task if there are long gaps between different instances of the task. We assume that these two neurons receive spike inputs from four populations of neurons. Two of them encode the value that is to be stored, and the other two convey the commands STORE and RECALL through high-firing activity in these populations of input neurons (see Figure 1E for an illustration). The neuron NL (NR) fires when the population that encodes the STORE command fires (yellow shading in Figure 1D) and simultaneously the input population for value ‘Right’ (‘Left’) is active. Furthermore, we assume that the input population that encodes the RECALL command (green shading in Figure 1E) causes both NL and NR to fire. However, the firing threshold of that one of them that had fired during the preceding STORE command is higher (see the blue threshold in the left half and the red threshold in the right half of Figure 1E), causing a weaker response to this RECALL command. Hence, if the spikes of NL and NR are each routed to one of the two neurons in a subsequent winner-take-all (WTA) circuit, the resulting winner encodes the value that has been stored during the preceding STORE command. The time courses of the firing thresholds of neurons NL and NR in Figure 1E clearly indicate the negative imprinting principle that underlies this working memory mechanism: the neuron that fires less during RECALL was the one that had responded the strongest during the preceding STORE phase, and this firing left a stronger ‘negative imprint’ on this neuron. Note that this hand-constructed circuit does not work for large ranges of time differences between STORE and RECALL, and more neurons with SFA are needed to solve the subsequently discussed full versions of the task.
 
-## Scaling the negative imprinting principle up to more realistic working memory tasks
+#### Scaling the negative imprinting principle up to more realistic working memory tasks
 
-We wondered whether SNNs with SFA can also solve more realistic working memory tasks, where not just a single bit, but a higher-level code of a preceding image, sentence, or movie clip needs to be stored. Obviously, brains are able to do that, but this has rarely been addressed in models. In addition, brains are generally exposed to ongoing input streams also during the delay between STORE and RECALL, but need to ignore these irrelevant input segments. Both of these more demanding aspects are present in the more demanding version of the STORE-RECALL task that is considered in Figure 2A. Here the values of 20, instead of just 1, input bits need to be stored during a STORE command and recalled during a RECALL command. More precisely, a 20-dimensional stream of input bits is given to the network, whose values during each 200 ms time segment are visualized as 4 × 5 image in the top row of Figure 2A. Occasionally, a pattern in the input stream is marked as being salient through simultaneous activation of a STORE command in a separate input channel, corresponding, for example, to an attentional signal from a higher brain area (see yellow shading in Figure 2A). The task is to reproduce during a RECALL command the pattern that had been presented during the most recent STORE command. Delays between STORE and RECALL ranged from 200 to 1600 ms. 20 binary values were simultaneously extracted as network outputs during RECALL by thresholding the output values of 20 linear readout neurons. We found that an SNN consisting of 500 neurons with SFA, whose adaptive firing threshold had a time constant of τa=800 ms, was able to solve this task with an accuracy above 99% and average firing activity of 13.90 ± 8.76 Hz (mean ± standard deviation). SFA was essential for this behavior because the recall performance of a recurrent network of LIF neurons without SFA, trained in exactly the same way, stayed at chance level (see Materials and methods). In Figure 2A, one sees that those neurons with SFA that fired stronger during STORE fire less during the subsequent RECALL, indicating a use of the negative imprinting principle also for this substantially more complex working memory task.
+We wondered whether SNNs with SFA can also solve more realistic working memory tasks, where not just a single bit, but a higher-level code of a preceding image, sentence, or movie clip needs to be stored. Obviously, brains are able to do that, but this has rarely been addressed in models. In addition, brains are generally exposed to ongoing input streams also during the delay between STORE and RECALL, but need to ignore these irrelevant input segments. Both of these more demanding aspects are present in the more demanding version of the STORE-RECALL task that is considered in Figure 2A. Here the values of 20, instead of just 1, input bits need to be stored during a STORE command and recalled during a RECALL command. More precisely, a 20-dimensional stream of input bits is given to the network, whose values during each 200 ms time segment are visualized as 4 × 5 image in the top row of Figure 2A. Occasionally, a pattern in the input stream is marked as being salient through simultaneous activation of a STORE command in a separate input channel, corresponding, for example, to an attentional signal from a higher brain area (see yellow shading in Figure 2A). The task is to reproduce during a RECALL command the pattern that had been presented during the most recent STORE command. Delays between STORE and RECALL ranged from 200 to 1600 ms. 20 binary values were simultaneously extracted as network outputs during RECALL by thresholding the output values of 20 linear readout neurons. We found that an SNN consisting of 500 neurons with SFA, whose adaptive firing threshold had a time constant of $\tau_{a}=800$ ms, was able to solve this task with an accuracy above 99% and average firing activity of 13.90 ± 8.76 Hz (mean ± standard deviation). SFA was essential for this behavior because the recall performance of a recurrent network of LIF neurons without SFA, trained in exactly the same way, stayed at chance level (see Materials and methods). In Figure 2A, one sees that those neurons with SFA that fired stronger during STORE fire less during the subsequent RECALL, indicating a use of the negative imprinting principle also for this substantially more complex working memory task.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65459/elife-65459-fig2-v1.jpg)
 
@@ -64,15 +70,90 @@ Interestingly, this type of working memory in an SNN with SFA shares an importan
 
 We also found that it was not possible to decode the stored information from the firing activity between STORE and RECALL, as one would expect if the network would store the information through persistent firing. Actually, the firing activity was quite low during this time period. Hence, this demo shows that SNNs with SFA have, in addition to persistent firing, a quite different method for transient storage of information.
 
-## Generalization of SFA-enhanced temporal computations to unseen inputs
+#### Generalization of SFA-enhanced temporal computations to unseen inputs
 
 In contrast to the brain, many neural network models for working memory can store only information on which they have been trained. In fact, this tends to be unavoidable if a model can only store a single bit. In contrast, the human brain is also able to retain new information in its working memory. The SNN with SFA that we used for the 20-dimensional working memory task also had this capability. It achieved a performance of 99.09%, that is, 99.09% of the stored 20-dimensional bit vectors were accurately reproduced during recall, on bit vectors that had never occurred during training. In fact, we made sure that all bit vectors that had to be stored during testing had a Hamming distance of at least five bits to all bit vectors used during training. A sample segment of a test trial is shown in Figure 2A, with the activity of input neurons at the top and the activation of readout neurons at the bottom.
 
-## No precise alignment between time constants of SFA and working memory duration is needed
+#### No precise alignment between time constants of SFA and working memory duration is needed
 
-Experimental data from the Allen Institute database suggest that different neurons exhibit a diversity of SFA properties. We show that correspondingly a diversity of time constants of SFA in different neurons provides high performance for temporal computing. We consider for simplicity the one-dimensional version of the task of Figure 2A, where just a single bit needs to be stored in working memory between STORE and RECALL commands. The expected delay between STORE and RECALL (see the header row of Table 1) scales the working memory time span that is required to solve this task. Five fixed time constants were tested for SFA (τa=200 ms, 2 s, 4 s, 8 s, see top five rows of Table 1). Also, a power-law distribution of these time constants, as well as a uniform distribution, was considered (see last two rows of Table 1). One sees that the resulting diversity of time constants for SFA yields about the same performance as a fixed choice of the time constant that is aligned with the required memory span of the task. However, a much larger time constant (see the row with τa=8 s in the column with an expected memory span of 200 ms or 2 s for the task) or a substantially smaller time constant (see the row with τa=2 s in the column with an expected memory span of 8 s) tends to work well.
+Experimental data from the Allen Institute database suggest that different neurons exhibit a diversity of SFA properties. We show that correspondingly a diversity of time constants of SFA in different neurons provides high performance for temporal computing. We consider for simplicity the one-dimensional version of the task of Figure 2A, where just a single bit needs to be stored in working memory between STORE and RECALL commands. The expected delay between STORE and RECALL (see the header row of Table 1) scales the working memory time span that is required to solve this task. Five fixed time constants were tested for SFA ($\tau_{a}=200$ ms, 2 s, 4 s, 8 s, see top five rows of Table 1). Also, a power-law distribution of these time constants, as well as a uniform distribution, was considered (see last two rows of Table 1). One sees that the resulting diversity of time constants for SFA yields about the same performance as a fixed choice of the time constant that is aligned with the required memory span of the task. However, a much larger time constant (see the row with $\tau_{a}=8$ s in the column with an expected memory span of 200 ms or 2 s for the task) or a substantially smaller time constant (see the row with $\tau_{a}=2$ s in the column with an expected memory span of 8 s) tends to work well.
 
-## SFA improves the performance of SNNs for common benchmark tasks that require nonlinear computational operations on temporally dispersed information
+**Table 1.**
+ Recall accuracy (in %) of spiking neural network (SNN) models with different time constants of spike frequency adaptation (SFA) (rows) for variants of the STORE-RECALL task with different required memory time spans (columns).Good task performance does not require good alignment of SFA time constants with the required time span for working memory. An SNN consisting of 60 leaky integrate-and-fire (LIF) neurons with SFA was trained for many different choices of SFA time constants for variations of the one-dimensional STORE-RECALL task with different required time spans for working memory. A network of 60 LIF neurons without SFA trained under the same parameters did not improve beyond chance level (~50% accuracy), except for the task instance with an expected delay of 200 ms where the LIF network reached 96.7% accuracy (see top row).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Expected delay between STORE and RECALL</th>
+      <th>200 ms</th>
+      <th>2 s</th>
+      <th>4 s</th>
+      <th>8 s</th>
+      <th>16 s</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Without SFA (τa=0 ms)</td>
+      <td>96.7</td>
+      <td>51</td>
+      <td>50</td>
+      <td>49</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>τa=200 ms</td>
+      <td>99.92</td>
+      <td>73.6</td>
+      <td>58</td>
+      <td>51</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>τa=2 s</td>
+      <td>99.0</td>
+      <td>99.6</td>
+      <td>98.8</td>
+      <td>92.2</td>
+      <td>75.2</td>
+    </tr>
+    <tr>
+      <td>τa=4 s</td>
+      <td>99.1</td>
+      <td>99.7</td>
+      <td>99.7</td>
+      <td>97.8</td>
+      <td>90.5</td>
+    </tr>
+    <tr>
+      <td>τa=8 s</td>
+      <td>99.6</td>
+      <td>99.8</td>
+      <td>99.7</td>
+      <td>97.7</td>
+      <td>97.1</td>
+    </tr>
+    <tr>
+      <td>τa power-law dist. in [0, 8] s</td>
+      <td>99.6</td>
+      <td>99.7</td>
+      <td>98.4</td>
+      <td>96.3</td>
+      <td>83.6</td>
+    </tr>
+    <tr>
+      <td>τa uniform dist. in [0, 8] s</td>
+      <td>96.2</td>
+      <td>99.9</td>
+      <td>98.6</td>
+      <td>92.1</td>
+      <td>92.6</td>
+    </tr>
+  </tbody>
+</table>
+
+### SFA improves the performance of SNNs for common benchmark tasks that require nonlinear computational operations on temporally dispersed information
 
 We now turn to more demanding temporal computing tasks, where temporally dispersed information not only needs to be stored, but continuously updated in view of new information. We start out in this section with three frequently considered benchmark tasks of this type: sequential MNIST, Google Speech Commands, and delayed XOR.
 
@@ -82,11 +163,11 @@ An SNN with SFA was able to solve this task with a test accuracy of 93.7%, where
 
 We also compared the performance of SNNs with and without SFA on the keyword-spotting task Google Speech Commands Dataset (Warden, 2018) (v0.02). To solve this task, the network needs to correctly classify audio recordings of silence, spoken unknown words, and utterings of 1 of 10 keywords by different speakers. On this task, the performance of SNNs increases with the inclusion of SFA (from 89.04% to 91.21%) and approaches the state-of-the-art artificial recurrent model (93.18%) (see Section 3 of Appendix 1 and Appendix 1—table 1).
 
-Finally, we tested the performance of SNNs with SFA on the delayed-memory XOR task, a task which had previously already been used as benchmark tasks for SNNs in Huh and Sejnowski, 2018. In this task, the network is required to compute the exclusive-or operation on a time series of binary input pulses and provide the answer when prompted by a go-cue signal. Across 10 different runs, an SNN with SFA solved the task with 95.19±0.014% accuracy, whereas the SNN without SFA just achieved 61.30±0.029% (see Section 4 of Appendix 1 and Appendix 1—figure 3).
+Finally, we tested the performance of SNNs with SFA on the delayed-memory XOR task, a task which had previously already been used as benchmark tasks for SNNs in Huh and Sejnowski, 2018. In this task, the network is required to compute the exclusive-or operation on a time series of binary input pulses and provide the answer when prompted by a go-cue signal. Across 10 different runs, an SNN with SFA solved the task with $95.19\pm0.014%$ accuracy, whereas the SNN without SFA just achieved $61.30\pm0.029%$ (see Section 4 of Appendix 1 and Appendix 1—figure 3).
 
 The good performance of SNNs with SFA on all three tasks demonstrates that SFA provides computational benefits to SNNs also for substantially more demanding temporal computing tasks in comparison with standard working memory tasks. Before we turn to further temporal computing tasks that are of particular interest from the perspective of neuroscience and cognitive science, we first analyze the contribution of other slow mechanisms in biological neurons and synapses on the basic working memory task and on sMNIST.
 
-## Comparing the contribution of SFA to temporal computing with that of other slow processes in neurons and synapses
+### Comparing the contribution of SFA to temporal computing with that of other slow processes in neurons and synapses
 
 Facilitating short-term plasticity (STP-F) and depressing short-term plasticity (STP-D) are the most frequently discussed slower dynamic processes in biological synapses. STP-F of synapses, also referred to as paired-pulse facilitation, increases the amplitudes of postsynaptic potentials for the later spikes in a spike train. Whereas synaptic connections between pyramidal cells in the neocortex are usually depressing (Markram et al., 2015), it was shown in Wang et al., 2006 that there are facilitating synaptic connections between pyramidal cells in the medial prefrontal cortex of rodents, with a mean time constant of 507 ms (standard deviation 37 ms) for facilitation. It was shown in Mongillo et al., 2008 that if one triples the experimentally found mean time constant for facilitation, then this mechanism supports basic working memory tasks.
 
@@ -98,7 +179,7 @@ We tested the resulting five different types of SNNs, each consisting of 60 neur
 
 Figure 2C shows that for sMNIST both SNNs with SFA and SNNs with STP-D achieve high performance. Surprisingly, the performance of SNNs with facilitating synapses is much worse, both for sMNIST and for the working memory task.
 
-## SFA supports demanding cognitive computations on sequences with dynamic rules
+### SFA supports demanding cognitive computations on sequences with dynamic rules
 
 Complex cognitive tasks often contain a significant temporal processing component, including the requirement to flexibly incorporate task context and rule changes. To test whether SFA can support such cognitive processing, we consider the 12AX task (Frank et al., 2001). This task is an extension of the A-X version of the continuous performance task (CPT-AX), which has been extensively studied in humans (Barch et al., 2009). It tests the ability of subjects to apply dynamic rules when detecting specific subsequences in a long sequence of symbols while ignoring irrelevant inputs (O'Reilly and Frank, 2006; MacDonald, 2008). It also probes the capability to maintain and update a hierarchical working memory since the currently active rule, that is, the context, stays valid for a longer period of time and governs what other symbols should be stored in working memory.
 
@@ -116,7 +197,7 @@ Overall, the network received during each trial (episode) sequences of 90 symbol
 
 We show in Figure 3 that a generic SNN with SFA can solve this quite demanding version of the 12AX task. The network consisted of 200 recurrently connected spiking neurons (100 with and 100 without SFA), with all-to-all connections between them. After training, for new symbol sequences that had never occurred during training, the network produced an output string with all correct symbols in 97.79% of episodes.
 
-The average firing activity of LIF neurons with SFA and LIF neurons without SFA was (12.37±2.90) Hz and (10.65±1.63) Hz (mean ± standard deviation), respectively (the average was calculated over 2000 test episodes for one random initialization of the network). Hence, the network operated in a physiologically meaningful regime.
+The average firing activity of LIF neurons with SFA and LIF neurons without SFA was $(12.37\pm2.90)$ Hz and $(10.65\pm1.63)$ Hz (mean ± standard deviation), respectively (the average was calculated over 2000 test episodes for one random initialization of the network). Hence, the network operated in a physiologically meaningful regime.
 
 These results were obtained after optimizing synaptic weights via BPTT. However, training with a recently published biologically plausible learning method called random e-prop (Bellec et al., 2020) produced a similar performance of 92.89% (averaged over five different network initializations).
 
@@ -126,7 +207,7 @@ Neuronal networks in the brain are subject to various sources of noise. A highly
 
 Surprisingly, it was not necessary to create a special network architecture for the two levels of working memory that our more complex version of the 12AX task requires: a near perfectly performing network emerged from training a generic fully connected SNN with SFA.
 
-## SFA enables SNNs to carry out complex operations on sequences of symbols
+### SFA enables SNNs to carry out complex operations on sequences of symbols
 
 Learning to carry out operations on sequences of symbols in such a way that they generalize to new sequences is a fundamental capability of the human brain, but a generic difficulty for neural networks (Marcus, 2003). Not only humans but also non-human primates are able to carry out operations on sequences of items, and numerous neural recordings starting with (Barone and Joseph, 1989) up to recent results such as (Carpenter et al., 2018; Liu et al., 2019) provide information about the neural codes for sequences that accompany such operations in the brain. The fundamental question of how serial order of items is encoded in working memory emerges from the more basic question of how the serial position of an item is combined with the content information about its identity (Lashley, 1951). The experimental data both of Barone and Joseph, 1989 and Liu et al., 2019 suggest that the brain uses a factorial code where position and identity of an item in a sequence are encoded separately by some neurons, thereby facilitating flexible generalization of learned experience to new sequences.
 
@@ -136,15 +217,15 @@ We trained an SNN consisting of 320 recurrently connected LIF neurons (192 with 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65459/elife-65459-fig4-v1.jpg)
 
-**Figure 4.:** (A) Two sample episodes where the network carried out sequence duplication (left) and reversal (right). Top to bottom: spike inputs to the network (subset), sequence of symbols they encode, spike activity of 10 sample leaky integrate-and-fire (LIF) neurons (without and with SFA) in the SNN, firing threshold dynamics for these 10 LIF neurons with SFA, activation of linear readout neurons, output sequence produced by applying argmax to them, and target output sequence. (B–F) Emergent neural coding of 279 neurons in the SNN (after removal of neurons detected as outliers) and peri-condition time histogram (PCTH) plots of two sample neurons. Neurons are sorted by time of peak activity. (B) A substantial number of neurons were sensitive to the overall timing of the tasks, especially for the second half of trials when the output sequence is produced. (C) Neurons separately sorted for duplication episodes (top row) and reversal episodes (bottom row). Many neurons responded to input symbols according to their serial position, but differently for different tasks. (D) Histogram of neurons categorized according to conditions with statistically significant effect (three-way ANOVA). Firing activity of a sample neuron that fired primarily when (E) the symbol ‘g’ was to be written at the beginning of the output sequence. The activity of this neuron depended on the task context during the input period; (F) the symbol ‘C’ occurred in position 5 in the input, irrespective of the task context.Figure 4—source data 1.
+**Figure 4.:** (A) Two sample episodes where the network carried out sequence duplication (left) and reversal (right). Top to bottom: spike inputs to the network (subset), sequence of symbols they encode, spike activity of 10 sample leaky integrate-and-fire (LIF) neurons (without and with SFA) in the SNN, firing threshold dynamics for these 10 LIF neurons with SFA, activation of linear readout neurons, output sequence produced by applying argmax to them, and target output sequence. (B–F) Emergent neural coding of 279 neurons in the SNN (after removal of neurons detected as outliers) and peri-condition time histogram (PCTH) plots of two sample neurons. Neurons are sorted by time of peak activity. (B) A substantial number of neurons were sensitive to the overall timing of the tasks, especially for the second half of trials when the output sequence is produced. (C) Neurons separately sorted for duplication episodes (top row) and reversal episodes (bottom row). Many neurons responded to input symbols according to their serial position, but differently for different tasks. (D) Histogram of neurons categorized according to conditions with statistically significant effect (three-way ANOVA). Firing activity of a sample neuron that fired primarily when (E) the symbol ‘g’ was to be written at the beginning of the output sequence. The activity of this neuron depended on the task context during the input period; (F) the symbol ‘C’ occurred in position 5 in the input, irrespective of the task context.
 
-The average firing activity of LIF neurons without SFA and LIF neurons with SFA was (19.88±2.68) Hz, and (21.51±2.95) Hz (mean ± standard deviation), respectively. The average was calculated over 50,000 test episodes for one random initialization of the network.
+The average firing activity of LIF neurons without SFA and LIF neurons with SFA was $(19.88\pm2.68)$ Hz, and $(21.51\pm2.95)$ Hz (mean ± standard deviation), respectively. The average was calculated over $50,000$ test episodes for one random initialization of the network.
 
-## A diversity of neural codes emerge in SNNs with SFA trained to carry out operations on sequences
+### A diversity of neural codes emerge in SNNs with SFA trained to carry out operations on sequences
 
 Emergent coding properties of neurons in the SNN are analyzed in Figure 4B–D, and two sample neurons are shown in Figure 4E, F. Neurons are sorted in Figure 4B, C according to the time of their peak activity (averaged over 1000 episodes), like in Harvey et al., 2012. The neurons have learned to abstract the overall timing of the tasks (Figure 4B). A number of network neurons (about one-third) participate in sequential firing activity independent of the type of task and the symbols involved (see the lower part of Figure 4B and the trace for the average activity of neurons left of the marker for the start of duplication or reversal). This kind of activity is reminiscent of the neural activity relative to the start of a trial that was recorded in rodents after they had learned to solve tasks that had a similar duration (Tsao et al., 2018).
 
-The time of peak activity of other neurons in Figure 4B depended on the task and the concrete content, indicated by a weak activation during the loading of the sequence (left of the marker), but stronger activation after the start of duplication or reversal (right of the marker). The dependence on the concrete content and task is shown in Figure 4C. Interestingly, these neurons change their activation order already during the loading of the input sequence in dependence of the task (duplication or reversal). Using three-way ANOVA, we were able to categorize each neuron as selective to a specific condition (symbol identity, serial position in the sequence, and type of task) or a nonlinear combination of conditions based on the effect size ω2. Each neuron could belong to more than one category if the effect size was above the threshold of 0.14 (as suggested by Field, 2013). Similar to recordings from the brain (Carpenter et al., 2018), a diversity of neural codes emerged that encode one variable or a combination of variables. In other words, a large fraction of neurons encoded a nonlinear combinations of all three variables (see Figure 4D). Peri-condition time histogram (PCTH) plots of two sample neurons are shown in Figure 4E, F: one neuron is selective to symbol ‘g’ but at different positions depending on task context; the other neuron is selective to symbol ‘C’ occurring at position 5 in the input, independent of task context. Thus one sees that a realization of this task by an SNN, which was previously not available, provides rich opportunities for a comparison of emergent spike codes in the model and neuronal recordings from the brain. For more details, see the last section of Materials and methods.
+The time of peak activity of other neurons in Figure 4B depended on the task and the concrete content, indicated by a weak activation during the loading of the sequence (left of the marker), but stronger activation after the start of duplication or reversal (right of the marker). The dependence on the concrete content and task is shown in Figure 4C. Interestingly, these neurons change their activation order already during the loading of the input sequence in dependence of the task (duplication or reversal). Using three-way ANOVA, we were able to categorize each neuron as selective to a specific condition (symbol identity, serial position in the sequence, and type of task) or a nonlinear combination of conditions based on the effect size $\omega^{2}$. Each neuron could belong to more than one category if the effect size was above the threshold of 0.14 (as suggested by Field, 2013). Similar to recordings from the brain (Carpenter et al., 2018), a diversity of neural codes emerged that encode one variable or a combination of variables. In other words, a large fraction of neurons encoded a nonlinear combinations of all three variables (see Figure 4D). Peri-condition time histogram (PCTH) plots of two sample neurons are shown in Figure 4E, F: one neuron is selective to symbol ‘g’ but at different positions depending on task context; the other neuron is selective to symbol ‘C’ occurring at position 5 in the input, independent of task context. Thus one sees that a realization of this task by an SNN, which was previously not available, provides rich opportunities for a comparison of emergent spike codes in the model and neuronal recordings from the brain. For more details, see the last section of Materials and methods.
 
 ## Discussion
 
@@ -174,69 +255,139 @@ Altogether, we have shown that SFA, a well-known feature of a substantial fracti
 
 In this section, we first describe the details of the network models that we employ, and then we continue with the description of the training methods. After that, we give details about all the tasks and analyses performed.
 
-## Network models
+### Network models
 
-## LIF neurons
+#### LIF neurons
 
-A LIF neuron j spikes as soon at its membrane potential Vj⁢(t) is above its threshold vth. At each spike time t, the membrane potential Vj⁢(t) is reset by subtracting the threshold value vth and the neuron enters a strict refractory period for 3–5 ms (depending on the experiment) where it cannot spike again. Between spikes, the membrane voltage Vj⁢(t) is following the dynamics(2)τm⁢V˙j⁢(t)=-Vj⁢(t)+Rm⁢Ij⁢(t),where τm is the membrane constant of neuron j, Rm is the resistance of the cell membrane, and Ij is the input current.
+A LIF neuron $j$ spikes as soon at its membrane potential $V_{j}⁢(t)$ is above its threshold $v_{th}$. At each spike time $t$, the membrane potential $V_{j}⁢(t)$ is reset by subtracting the threshold value $v_{th}$ and the neuron enters a strict refractory period for 3–5 ms (depending on the experiment) where it cannot spike again. Between spikes, the membrane voltage $V_{j}⁢(t)$ is following the dynamics
 
-Our simulations were performed in discrete time with a time step δt=1 ms. In discrete time, the input and output spike trains are modeled as binary sequences xi⁢(t),zj⁢(t)∈{0,1δ⁢t}, respectively. Neuron j emits a spike at time t if it is currently not in a refractory period, and its membrane potential Vj⁢(t) is above its threshold. During the refractory period following a spike, zj⁢(t) is fixed to 0. The neural dynamics in discrete time reads as follows:(3)Vj⁢(t+δ⁢t)=α⁢Vj⁢(t)+(1-α)⁢Rm⁢Ij⁢(t)-vth⁢zj⁢(t)⁢δ⁢t,where α=exp⁡(-δ⁢tτm), with τm being the membrane constant of the neuron j. The spike of neuron j is defined by zj⁢(t)=H⁢(Vj⁢(t)-vthvth)⁢1δ⁢t, with H⁢(x)=0 if x<0 and 1 otherwise. The term -vth⁢zj⁢(t)⁢δ⁢t implements the reset of the membrane voltage after each spike.
+$$
+\tau_{m}⁢V˙_{j}⁢(t)=-V_{j}⁢(t)+R_{m}⁢I_{j}⁢(t),
+$$
 
-In all simulations, the Rm was set to 1⁢G⁢Ω. The input current Ij⁢(t) is defined as the weighted sum of spikes from external inputs and other neurons in the network:(4)Ij⁢(t)=∑iWj⁢iin⁢xi⁢(t-dj⁢iin)+∑iWj⁢irec⁢zi⁢(t-dj⁢irec),where Wj⁢iin and Wj⁢irec denote respectively the input and the recurrent synaptic weights and dj⁢iin and dj⁢irec the corresponding synaptic delays.
+where $\tau_{m}$ is the membrane constant of neuron $j$, $R_{m}$ is the resistance of the cell membrane, and $I_{j}$ is the input current.
 
-## LIF neurons with SFA
+Our simulations were performed in discrete time with a time step $\deltat=1$ ms. In discrete time, the input and output spike trains are modeled as binary sequences $x_{i}⁢(t),z_{j}⁢(t)\in{0,\frac{1}{\delta⁢t}}$, respectively. Neuron $j$ emits a spike at time $t$ if it is currently not in a refractory period, and its membrane potential $V_{j}⁢(t)$ is above its threshold. During the refractory period following a spike, $z_{j}⁢(t)$ is fixed to 0. The neural dynamics in discrete time reads as follows:
 
-The SFA is realized by replacing the fixed threshold vth with the adaptive threshold Aj⁢(t), which follows the dynamics (reproducing Equation (1) for arbitrary δ⁢t):(5)Aj(t)=vth+βaj(t),aj(t+δt)=ρjaj(t)+(1−ρj)zj(t)δt.
+$$
+V_{j}⁢(t+\delta⁢t)=\alpha⁢V_{j}⁢(t)+(1-\alpha)⁢R_{m}⁢I_{j}⁢(t)-v_{th}⁢z_{j}⁢(t)⁢\delta⁢t,
+$$
 
-Now, the parameter ρj is given by ρj=exp⁢(-δ⁢tτa,j). In all our simulations, δ⁢t was set to 1 ms.
+where $\alpha=exp⁡(-\frac{\delta⁢t}{\tau_{m}}),$ with $\tau_{m}$ being the membrane constant of the neuron $j$. The spike of neuron $j$ is defined by $z_{j}⁢(t)=H⁢(\frac{V_{j}⁢(t)-v_{th}}{v_{th}})⁢\frac{1}{\delta⁢t}$, with $H⁢(x)=0$ if $x<0$ and 1 otherwise. The term $-v_{th}⁢z_{j}⁢(t)⁢\delta⁢t$ implements the reset of the membrane voltage after each spike.
 
-The spiking output of LIF neuron with SFA j is then defined by zj⁢(t)=H⁢(Vj⁢(t)-Aj⁢(t)Aj⁢(t))⁢1δ⁢t.
+In all simulations, the $R_{m}$ was set to $1⁢G⁢Ω$. The input current $I_{j}⁢(t)$ is defined as the weighted sum of spikes from external inputs and other neurons in the network:
+
+$$
+I_{j}⁢(t)=\sumiW_{j⁢i}^{in}⁢x_{i}⁢(t-d_{j⁢i}^{in})+\sumiW_{j⁢i}^{rec}⁢z_{i}⁢(t-d_{j⁢i}^{rec}),
+$$
+
+where $W_{j⁢i}^{in}$ and $W_{j⁢i}^{rec}$ denote respectively the input and the recurrent synaptic weights and $d_{j⁢i}^{in}$ and $d_{j⁢i}^{rec}$ the corresponding synaptic delays.
+
+#### LIF neurons with SFA
+
+The SFA is realized by replacing the fixed threshold $v_{th}$ with the adaptive threshold $A_{j}⁢(t)$, which follows the dynamics (reproducing Equation (1) for arbitrary $\delta⁢t$):
+
+$$
+A_{j}(t)=v_{th}+\betaa_{j}(t),a_{j}(t+\deltat)=ρ_{j}a_{j}(t)+(1−ρ_{j})z_{j}(t)\deltat.
+$$
+
+Now, the parameter $ρ_{j}$ is given by $ρ_{j}=exp⁢(\frac{-\delta⁢t}{\tau_{a,j}})$. In all our simulations, $\delta⁢t$ was set to 1 ms.
+
+The spiking output of LIF neuron with SFA $j$ is then defined by $z_{j}⁢(t)=H⁢(\frac{V_{j}⁢(t)-A_{j}⁢(t)}{A_{j}⁢(t)})⁢\frac{1}{\delta⁢t}$.
 
 Adaptation time constants of neurons with SFA were chosen to match the task requirements while still conforming to the experimental data from rodents (Allen Institute, 2018b; Pozzorini et al., 2013; Pozzorini et al., 2015; Mensi et al., 2012). For an analysis of the impact of the adaptation time constants on the performance, see Table 1.
 
-## LIF neurons with activity-dependent increase in excitability: ELIF neurons
+#### LIF neurons with activity-dependent increase in excitability: ELIF neurons
 
 There exists experimental evidence that some neurons fire for the same stimulus more for a repetition of the same sensory stimulus. We refer to such neurons as ELIF neurons since they are becoming more excitable. Such repetition enhancement was discussed, for example, in Tartaglia et al., 2014. But to the best of our knowledge, it has remained open whether repetition enhancement is a network effect, resulting, for example, from a transient depression of inhibitory synapses onto the cell that is caused by postsynaptic firing (Kullmann et al., 2012), or a result of an intrinsic firing property of some neurons. We used a simple model for ELIF neurons that is dual to the above-described LIF neuron model with SFA: the threshold is lowered through each spike of the neuron, and then decays exponentially back to its resting value. This can be achieved by using a negative value for β in Equation (1).
 
-## Models for short-term plasticity (STP) of synapses
+#### Models for short-term plasticity (STP) of synapses
 
-We modeled the STP dynamics according to the classical model of STP in Mongillo et al., 2008. The STP dynamics in discrete time, derived from the equations in Mongillo et al., 2008, are as follows:(6)uj⁢i′⁢(t+δ⁢t)=exp⁡(-δ⁢tF)⁢uj⁢i′⁢(t)+Uj⁢i⁢(1-uj⁢i⁢(t))⁢zi⁢(t)⁢δ⁢t,(7)uj⁢i⁢(t+δ⁢t)=Uj⁢i+uj⁢i′⁢(t),(8)rj⁢i′⁢(t+δ⁢t)=exp⁡(-δ⁢tD)⁢rj⁢i′⁢(t)+uj⁢i⁢(t)⁢(1-rj⁢i′⁢(t))⁢zi⁢(t)⁢δ⁢t,(9)rj⁢i⁢(t+δ⁢t)=1-rj⁢i′⁢(t),(10)Wj⁢iS⁢T⁢P⁢(t+δ⁢t)=Wj⁢irec⁢uj⁢i⁢(t)⁢rj⁢i⁢(t),where zi⁢(t) is the spike train of the presynaptic neuron and Wj⁢irec scales the synaptic efficacy of synapses from neuron i to neuron j. Networks with STP were constructed from LIF neurons with the weight Wj⁢irec in Equation (4) replaced by the time-dependent weight Wj⁢iS⁢T⁢P⁢(t).
+We modeled the STP dynamics according to the classical model of STP in Mongillo et al., 2008. The STP dynamics in discrete time, derived from the equations in Mongillo et al., 2008, are as follows:
 
-STP time constants of facilitation-dominant and depression-dominant network models were based on the values of experimental recordings in Wang et al., 2006 of PFC-E1 (D=194±18 ms, F=507±37 ms, U=0.28±0.02) and PFC-E2 (D=671±17 ms, F=17±5 ms, U=0.25±0.02) synapse types, respectively. Recordings in Wang et al., 2006 were performed in the medial prefrontal cortex of young adult ferrets. In the sMNIST task for the depression-dominant network model (STP-D), we used values based on PFC-E2, and for facilitation-dominant network model (STP-F) we used values based on PFC-E1 (see sMNIST task section below). For the STORE-RECALL task, we trained the network with the data-based time constants based on PFC-E2 and PFC-E1 and also an extended time constants variant where both facilitation and depression time constants were equally scaled up until the larger time constant matched the requirement of the task (see One-dimensional STORE-RECALL task section below).
+$$
+u_{j⁢i}^{′}⁢(t+\delta⁢t)=exp⁡(\frac{-\delta⁢t}{F})⁢u_{j⁢i}^{′}⁢(t)+U_{j⁢i}⁢(1-u_{j⁢i}⁢(t))⁢z_{i}⁢(t)⁢\delta⁢t,
+$$
 
-## Weight initialization
 
-Initial input and recurrent weights were drawn from a Gaussian distribution Wj⁢i∼w0nin⁢𝒩⁢(0,1), where nin is the number of afferent neurons and 𝒩⁢(0,1) is the zero-mean unit-variance Gaussian distribution and w0=1⁢VoltRm⁢δ⁢t is a normalization constant (Bellec et al., 2018a). In the default setting, it is possible for neurons to have both positive and negative outgoing weights, also to change their sign during the optimization process. See Section 2 of Appendix 1 for more results with sparse connectivity and enforcement of Dale’s law using deep rewiring (Bellec et al., 2018b).
 
-## Sigmoid and softmax functions
+$$
+u_{j⁢i}⁢(t+\delta⁢t)=U_{j⁢i}+u_{j⁢i}^{′}⁢(t),
+$$
 
-In the STORE-RECALL task (1- and 20-dimensional), the sigmoid function was applied to the neurons in the output layer. The sigmoid function is given by(11)σ⁢(x)=11+e-x,where x represents a real-valued variable. The result, bounded to [0,1] range, is then thresholded at the value of 0.5 to obtain the final predictions – neuron active or not. More precisely, the neuron is active if σ⁢(x)≥0.5, otherwise it is not.
 
-The softmax function (used in tasks sMNIST, 12AX, Duplication/Reversal) is given by(12)Softmax⁢(xi)=exi∑j=1mexj,where xi is a real-valued output of neuron i in the output layer with m neurons. The final prediction after applying the softmax is then obtained by taking the maximum of all values calculated for each neuron in the output layer.
 
-## Training methods
+$$
+r_{j⁢i}^{′}⁢(t+\delta⁢t)=exp⁡(\frac{-\delta⁢t}{D})⁢r_{j⁢i}^{′}⁢(t)+u_{j⁢i}⁢(t)⁢(1-r_{j⁢i}^{′}⁢(t))⁢z_{i}⁢(t)⁢\delta⁢t,
+$$
 
-## BPTT
 
-In artificial recurrent neural networks, gradients can be computed with BPTT (Mozer, 1989; Robinson and Fallside, 1987; Werbos, 1988). In SNNs, complications arise from the non-differentiability of the output of spiking neurons. In our discrete-time simulation, this is formalized by the discontinuous step function H arising in the definition of the spike variable zj⁢(t). All other operations can be differentiated exactly with BPTT. For feedforward artificial neural networks using step functions, a solution was to use a pseudo-derivative H′⁢(x):=max⁡{0,1-|x|} (Esser et al., 2016), but this method is unstable with recurrently connected neurons. It was found in Bellec et al., 2018a that dampening this pseudo-derivative with a factor γ<1 (typically γ=0.3) solves that issue. Hence, we use the pseudo-derivative(13)dzj(t)dvj(t):=γmax{0,1−|vj(t)|},where vj⁢(t) denotes the normalized membrane potential vj⁢(t)=Vj⁢(t)-Aj⁢(t)Aj⁢(t). Importantly, gradients can propagate in adaptive neurons through many time steps in the dynamic threshold without being affected by the dampening.
+
+$$
+r_{j⁢i}⁢(t+\delta⁢t)=1-r_{j⁢i}^{′}⁢(t),
+$$
+
+
+
+$$
+W_{j⁢i}^{S⁢T⁢P}⁢(t+\delta⁢t)=W_{j⁢i}^{rec}⁢u_{j⁢i}⁢(t)⁢r_{j⁢i}⁢(t),
+$$
+
+where $z_{i}⁢(t)$ is the spike train of the presynaptic neuron and $W_{j⁢i}^{rec}$ scales the synaptic efficacy of synapses from neuron $i$ to neuron $j$. Networks with STP were constructed from LIF neurons with the weight $W_{j⁢i}^{rec}$ in Equation (4) replaced by the time-dependent weight $W_{j⁢i}^{S⁢T⁢P}⁢(t)$.
+
+STP time constants of facilitation-dominant and depression-dominant network models were based on the values of experimental recordings in Wang et al., 2006 of PFC-E1 ($D=194\pm18$ ms, $F=507\pm37$ ms, $U=0.28\pm0.02$) and PFC-E2 ($D=671\pm17$ ms, $F=17\pm5$ ms, $U=0.25\pm0.02$) synapse types, respectively. Recordings in Wang et al., 2006 were performed in the medial prefrontal cortex of young adult ferrets. In the sMNIST task for the depression-dominant network model (STP-D), we used values based on PFC-E2, and for facilitation-dominant network model (STP-F) we used values based on PFC-E1 (see sMNIST task section below). For the STORE-RECALL task, we trained the network with the data-based time constants based on PFC-E2 and PFC-E1 and also an extended time constants variant where both facilitation and depression time constants were equally scaled up until the larger time constant matched the requirement of the task (see One-dimensional STORE-RECALL task section below).
+
+#### Weight initialization
+
+Initial input and recurrent weights were drawn from a Gaussian distribution $W_{j⁢i}∼\frac{w_{0}}{\sqrt{n_{in}}}⁢𝒩⁢(0,1)$, where $n_{in}$ is the number of afferent neurons and $𝒩⁢(0,1)$ is the zero-mean unit-variance Gaussian distribution and $w_{0}=\frac{1⁢Volt}{R_{m}}⁢\delta⁢t$ is a normalization constant (Bellec et al., 2018a). In the default setting, it is possible for neurons to have both positive and negative outgoing weights, also to change their sign during the optimization process. See Section 2 of Appendix 1 for more results with sparse connectivity and enforcement of Dale’s law using deep rewiring (Bellec et al., 2018b).
+
+#### Sigmoid and softmax functions
+
+In the STORE-RECALL task (1- and 20-dimensional), the sigmoid function was applied to the neurons in the output layer. The sigmoid function is given by
+
+$$
+\sigma⁢(x)=\frac{1}{1+e^{-x}},
+$$
+
+where $x$ represents a real-valued variable. The result, bounded to $[0,1]$ range, is then thresholded at the value of 0.5 to obtain the final predictions – neuron active or not. More precisely, the neuron is active if $\sigma⁢(x)\geq0.5$, otherwise it is not.
+
+The softmax function (used in tasks sMNIST, 12AX, Duplication/Reversal) is given by
+
+$$
+Softmax⁢(x_{i})=\frac{e^{x_{i}}}{\sum_{j=1}^{m}e^{x_{j}}},
+$$
+
+where xi is a real-valued output of neuron $i$ in the output layer with $m$ neurons. The final prediction after applying the softmax is then obtained by taking the maximum of all values calculated for each neuron in the output layer.
+
+### Training methods
+
+#### BPTT
+
+In artificial recurrent neural networks, gradients can be computed with BPTT (Mozer, 1989; Robinson and Fallside, 1987; Werbos, 1988). In SNNs, complications arise from the non-differentiability of the output of spiking neurons. In our discrete-time simulation, this is formalized by the discontinuous step function $H$ arising in the definition of the spike variable $z_{j}⁢(t)$. All other operations can be differentiated exactly with BPTT. For feedforward artificial neural networks using step functions, a solution was to use a pseudo-derivative $H^{′}⁢(x):=max⁡{0,1-|x|}$ (Esser et al., 2016), but this method is unstable with recurrently connected neurons. It was found in Bellec et al., 2018a that dampening this pseudo-derivative with a factor $\gamma<1$ (typically $\gamma=0.3$) solves that issue. Hence, we use the pseudo-derivative
+
+$$
+\frac{dz_{j}(t)}{dv_{j}(t)}:=\gammamax{0,1−|v_{j}(t)|},
+$$
+
+where $v_{j}⁢(t)$ denotes the normalized membrane potential $v_{j}⁢(t)=\frac{V_{j}⁢(t)-A_{j}⁢(t)}{A_{j}⁢(t)}$. Importantly, gradients can propagate in adaptive neurons through many time steps in the dynamic threshold without being affected by the dampening.
 
 Unless stated otherwise, the input, the recurrent, and the readout layers were fully connected and the weights were trained simultaneously.
 
-## e-prop
+#### e-prop
 
 In the 12AX task, the networks were trained using the biologically plausible learning method random e-prop (Bellec et al., 2020) in addition to BPTT.
 
-## Tasks
+### Tasks
 
-## One-dimensional STORE-RECALL task
+#### One-dimensional STORE-RECALL task
 
 The input to the network consisted of 40 input neurons: 10 for STORE, 10 for RECALL, and 20 for population coding of a binary feature. Whenever a subpopulation was active, it would exhibit a Poisson firing with a frequency of 50 Hz. For experiments reported in Figure 2D, each input sequence consisted of 20 steps (200 ms each) where the STORE or the RECALL populations were activated with probability 0.09 interchangeably, which resulted in delays between the STORE-RECALL pairs to be in the range [200, 3600] ms. For experiments reported in Table 1, the input sequences of experiments with the expected delay of 2, 4, 8, and 16 s were constructed as a sequence of 20, 40, 80, and 120 steps, respectively, with each step lasting for 200 ms. For the experiment with expected delay of 200 ms, the input sequence consisted of 12 steps of 50 ms.
 
 Networks were trained for 400 iterations with a batch size of 64 in Table 1 and 128 in Figure 2B. We used Adam optimizer with default parameters and initial learning rate of 0.01, which was decayed every 100 iterations by a factor of 0.3. To avoid unrealistically high firing rates, the loss function contained a regularization term (scaled with coefficient 0.001) that minimizes the squared difference of the average firing rate of individual neurons from a target firing rate of 10 Hz. In Figure 1D, E, the weights were chosen by hand and not trained. The test performance was computed as the batch average over 2048 random input sequences.
 
-Networks consisted of 60 recurrently connected neurons in all experiments except in Figure 1D, E, where only two neurons were used without recurrent connections. The membrane time constant was τm=20 ms, the refractory period 3 ms. In Figure 1D, E, the two LIF neurons with SFA had β=3 mV and τa=1200 ms. In Figure 2D, for LIF with SFA and ELIF networks, we used β=1 mV and β=−0.5 mV, respectively, with τa=2000 ms. Table 1 defines the adaptation time constants and expected delay of the experiments in that section. To provide a fair comparison between STP and SFA models in Figure 2D, we train two variants of the STP model: one with the original parameters from Wang et al., 2006 and another where we scaled up both F and D until the larger one reached 2000 ms, the same time constant used in the SFA model. The scaled up synapse parameters of STP-D network were F=51±15 ms, D=2000±51 ms, and U=0.25, and of STP-F network F=2000±146 ms, D=765±71 ms, and U=0.28. The data-based synapse parameters are described in the STP synapse dynamics section above. The baseline threshold voltage was 10 mV for all models except ELIF for which it was 20 mV and the two neurons in Figure 1D, E for which it was 5 mV. The synaptic delay was 1 ms. The input to the sigmoidal readout neurons were the neuron traces that were calculated by passing all the network spikes through a low-pass filter with a time constant of 20 ms.
+Networks consisted of 60 recurrently connected neurons in all experiments except in Figure 1D, E, where only two neurons were used without recurrent connections. The membrane time constant was $\tau_{m}=20$ ms, the refractory period 3 ms. In Figure 1D, E, the two LIF neurons with SFA had $\beta=3$ mV and $\tau_{a}=1200$ ms. In Figure 2D, for LIF with SFA and ELIF networks, we used $\beta=1$ mV and $\beta=−0.5$ mV, respectively, with $\tau_{a}=2000$ ms. Table 1 defines the adaptation time constants and expected delay of the experiments in that section. To provide a fair comparison between STP and SFA models in Figure 2D, we train two variants of the STP model: one with the original parameters from Wang et al., 2006 and another where we scaled up both $F$ and $D$ until the larger one reached 2000 ms, the same time constant used in the SFA model. The scaled up synapse parameters of STP-D network were $F=51\pm15$ ms, $D=2000\pm51$ ms, and $U=0.25$, and of STP-F network $F=2000\pm146$ ms, $D=765\pm71$ ms, and $U=0.28$. The data-based synapse parameters are described in the STP synapse dynamics section above. The baseline threshold voltage was 10 mV for all models except ELIF for which it was 20 mV and the two neurons in Figure 1D, E for which it was 5 mV. The synaptic delay was 1 ms. The input to the sigmoidal readout neurons were the neuron traces that were calculated by passing all the network spikes through a low-pass filter with a time constant of 20 ms.
 
-## 20-Dimensional STORE-RECALL task
+#### 20-Dimensional STORE-RECALL task
 
 The input to the network consisted of commands STORE and RECALL, and 20 bits, which were represented by subpopulations of spiking input neurons. STORE and RECALL commands were represented by four neurons each. The 20 bits were represented by population coding where each bit was assigned four input neurons (two for value 0, and two for value 2). When a subpopulation was active, it would exhibit a Poisson firing with a frequency of 400 Hz. Each input sequence consisted of 10 steps (200 ms each) where a different population encoded bit string was shown during every step. Only during the RECALL period the input populations, representing the 20 bits, were silent. At every step, the STORE or the RECALL populations were activated interchangeably with probability 0.2, which resulted in the distribution of delays between the STORE-RECALL pairs in the range [200, 1600] ms.
 
@@ -244,31 +395,31 @@ To measure the generalization capability of a trained network, we first generate
 
 Networks were trained for 4000 iterations with a batch size of 256 and stopped if the error on the training batch was below 1%. We used Adam optimizer (Kingma and Ba, 2014) with default parameters and initial learning rate of 0.01, which is decayed every 200 iterations by a factor of 0.8. We also used learning rate ramping, which, for the first 200 iterations, monotonically increased the learning rate from 0.00001 to 0.01. The same firing rate regularization term was added to the loss as in the one-dimensional STORE-RECALL setup (see above). To improve convergence, we also included an entropy component to the loss (scaled with coefficient 0.3), which was computed as the mean of the entropies of the outputs of the sigmoid neurons. The test performance was computed as average over 512 random input sequences.
 
-We trained SNNs with and without SFA, consisting of 500 recurrently connected neurons. The membrane time constant was τm=20 ms, and the refractory period was 3 ms. Adaptation parameters were β=4 mV and τa=800 ms with baseline threshold voltage 10 mV. The synaptic delay was 1 ms. The same sigmoidal readout neuron setup was used as in the one-dimensional STORE-RECALL setup (see above).
+We trained SNNs with and without SFA, consisting of 500 recurrently connected neurons. The membrane time constant was $\tau_{m}=20$ ms, and the refractory period was 3 ms. Adaptation parameters were $\beta=4$ mV and $\tau_{a}=800$ ms with baseline threshold voltage 10 mV. The synaptic delay was 1 ms. The same sigmoidal readout neuron setup was used as in the one-dimensional STORE-RECALL setup (see above).
 
 We ran five training runs with different random seeds (initializations) for both SNNs with and without SFA. All runs of the SNN with SFA network converged after ~ 3600 iterations to a training error below 1%. At that point we measured the accuracy on 512 test sequences generated using the previously unseen test bit strings, which resulted in test accuracy of 99.09% with a standard deviation of 0.17%. The LIF network was not able to solve the task in any of the runs (all runs resulted in 0% training and test accuracy with zero standard deviation). On the level of individual feature recall accuracy, the best one out of five training runs of the LIF network was able to achieve 49% accuracy, which is the chance level since individual features are binary bits. In contrast, all SNNs with SFA runs had individual feature-level accuracy of above 99.99%.
 
-## Decoding memory from the network activity
+#### Decoding memory from the network activity
 
-We trained a support vector machine (SVM) to classify the stored memory content from the network spiking activity in the step before the RECALL (200 ms before the start of RECALL command). We performed a cross-validated grid-search to find the best hyperparameters for the SVM, which included kernel type {linear, polynomial, RBF} and penalty parameter C of the error term {0.1, 1, 10, 100, 1000}. We trained SVMs on test batches of the five different training runs of 20-dimensional STORE-RECALL task. SVMs trained on the period preceding the RECALL command of a test batch achieved an average of 4.38% accuracy with a standard deviation of 1.29%. In contrast, SVMs trained on a period during the RECALL command achieved an accuracy of 100%. This demonstrates that the memory stored in the network is not decodable from the network firing activity before the RECALL input command.
+We trained a support vector machine (SVM) to classify the stored memory content from the network spiking activity in the step before the RECALL (200 ms before the start of RECALL command). We performed a cross-validated grid-search to find the best hyperparameters for the SVM, which included kernel type {linear, polynomial, RBF} and penalty parameter $C$ of the error term {0.1, 1, 10, 100, 1000}. We trained SVMs on test batches of the five different training runs of 20-dimensional STORE-RECALL task. SVMs trained on the period preceding the RECALL command of a test batch achieved an average of 4.38% accuracy with a standard deviation of 1.29%. In contrast, SVMs trained on a period during the RECALL command achieved an accuracy of 100%. This demonstrates that the memory stored in the network is not decodable from the network firing activity before the RECALL input command.
 
 Additionally, analogous to the experiments of Wolff et al., 2017, we trained SVMs on network activity during the encoding (STORE) period and evaluated them on the network activity during reactivation (RECALL), and vice versa. In both scenarios, the classifiers were not able to classify the memory content of the evaluation period (0.0% accuracy).
 
-## sMNIST task
+#### sMNIST task
 
 The input consisted of sequences of 784 pixel values created by unrolling the handwritten digits of the MNIST dataset, one pixel after the other in a scanline manner as indicated in Appendix 1—figure 3A. We used 1 ms presentation time for each pixel gray value. Each of the 80 input neurons was associated with a particular threshold for the gray value, and this input neuron fired whenever the gray value crossed its threshold in the transition from the previous to the current pixel.
 
 Networks were trained for 36,000 iterations using the Adam optimizer with batch size 256. The initial learning rate was 0.01, and every 2500 iterations the learning rate was decayed by a factor of 0.8. The same firing rate regularization term was added to the loss as in the STORE-RECALL setup (see above) but with the scaling coefficient of 0.1.
 
-All networks consisted of 220 neurons. Network models labeled LIF with SFA and ELIF in the Figure 2C had 100 neurons out of 220 with SFA or transient excitability, respectively. The network with SFA had 100 neurons out of 220 with SFA and the rest without. The neurons had a membrane time constant of τm=20 ms, a baseline threshold of vth=10 mV, and a refractory period of 5 ms. LIF neurons with SFA and ELIF neurons had the adaptation time constant τa=700 ms with adaptation strength β=1.8 mV and –0.9 mV, respectively. The synaptic delay was 1 ms. Synapse parameters were F=20 ms, D=700 ms, and U=0.2 for the STP-D model, and F=500 ms, D=200 ms, and U=0.2 for the STP-F model. The output of the SNN was produced by the softmax of 10 linear output neurons that received the low-pass filtered version of the spikes from all neurons in the network, as shown in the bottom row of Appendix 1—figure 3B. The low-pass filter had a time constant of 20 ms. For training the network to classify into one of the 10 classes, we used cross-entropy loss computed between the labels and the softmax of output neurons.
+All networks consisted of 220 neurons. Network models labeled LIF with SFA and ELIF in the Figure 2C had 100 neurons out of 220 with SFA or transient excitability, respectively. The network with SFA had 100 neurons out of 220 with SFA and the rest without. The neurons had a membrane time constant of $\tau_{m}=20$ ms, a baseline threshold of $v_{th}=10$ mV, and a refractory period of 5 ms. LIF neurons with SFA and ELIF neurons had the adaptation time constant $\tau_{a}=700$ ms with adaptation strength $\beta=1.8$ mV and –0.9 mV, respectively. The synaptic delay was 1 ms. Synapse parameters were $F=20$ ms, $D=700$ ms, and $U=0.2$ for the STP-D model, and $F=500$ ms, $D=200$ ms, and $U=0.2$ for the STP-F model. The output of the SNN was produced by the softmax of 10 linear output neurons that received the low-pass filtered version of the spikes from all neurons in the network, as shown in the bottom row of Appendix 1—figure 3B. The low-pass filter had a time constant of 20 ms. For training the network to classify into one of the 10 classes, we used cross-entropy loss computed between the labels and the softmax of output neurons.
 
-## The 12AX task
+#### The 12AX task
 
 The input for each training and testing episode consisted of a sequence of 90 symbols from the set {1,2,A,B,C,X,Y,Z}. A single episode could contain multiple occurrences of digits 1 or 2 (up to 23), each time changing the target sequence (A…X or B…Y) after which the network was supposed to output R. Each digit could be followed by up to 26 letters before the next digit appeared. More precisely, the following regular expression describes the string that was produced: [12][ABCXYZ]{1,10}((A[CZ]{0,6}X|B[CZ]{0,6}Y)|([ABC][XYZ])){1,2}. Each choice in this regular expression was made randomly.
 
 The network received spike trains from the input population of spiking neurons, producing Poisson spike trains. Possible input symbols were encoded using ‘one-hot encoding’ scheme. Each input symbol was signaled through a high firing rate of a separate subset of five input neurons for 500 ms. The output consisted of two readout neurons, one for L, one for the R response. During each 500 ms time window, the input to these readouts was the average activity of neurons in the SNN during that time window. The final output symbol was based on which of the two readouts had the maximum value.
 
-The neurons had a membrane time constant of τm=20 ms, a baseline threshold vth=30 mV, a refractory period of 5 ms, and synaptic delays of 1 ms. LIF neurons with SFA had an adaptation strength of β=1.7 mV, and adaptation time constants were chosen uniformly from [1,13500] ms.
+The neurons had a membrane time constant of $\tau_{m}=20$ ms, a baseline threshold $v_{th}=30$ mV, a refractory period of 5 ms, and synaptic delays of 1 ms. LIF neurons with SFA had an adaptation strength of $\beta=1.7$ mV, and adaptation time constants were chosen uniformly from $[1,13500]$ ms.
 
 A cross-entropy loss function was used to minimize the error between the softmax applied to the output layer and targets, along with a regularization term (scaled with coefficient 15) that minimized the squared difference of average firing rate between individual neurons and a target firing rate of 10 Hz. The SNN was trained using the Adam optimizer for 10,000 iterations with a batch size of 20 episodes and a fixed learning rate of 0.001. An episode consisted of 90 steps, with between 4 and 23 tasks generated according to the task generation procedure described previously. We trained the network consisting of 200 LIF neurons (100 with and 100 without SFA) with BPTT using five different network initializations, which resulted in an average test success rate of 97.79 with a standard deviation of 0.42%.
 
@@ -276,7 +427,7 @@ In the experiments where the fraction of neurons with SFA varied, the network wi
 
 The network consisting of 100 LIF neurons with and 100 LIF neurons without SFA, trained with random e-prop, resulted in an average test success rate of 92.89% with a standard deviation of 0.75% (average over five different network initializations).
 
-## Symbolic computation on strings of symbols (Duplication/Reversal task)
+#### Symbolic computation on strings of symbols (Duplication/Reversal task)
 
 The input to the network consisted of 35 symbols: 31 symbols represented symbols from the English alphabet {a, b, c, d, … x, y, z, A, B, C, D, E}, one symbol was for ‘end-of-string’ (EOS) ‘*’, one for cue for the output prompt ‘?’, and two symbols to denote whether the task command was duplication or reversal. Each of the altogether 35 input symbols were given to the network in the form of higher firing activity of a dedicated population of 5 input neurons outside of the SNN (‘one-hot encoding’). This population of input neurons fired at a ‘high’ rate (200 Hz) to encode 1, and at a ‘low’ rate (2 Hz) otherwise. The network output was produced by linear readouts (one per potential output symbol, each with a low-pass filter with a time constant of 250 ms) that received spikes from neurons in the SNN (see the row ‘Output’ in Figure 4A). The final output symbol was selected using the readout that had the maximum value at the end of each 500 ms time window (a softmax instead of the hard argmax was used during training), mimicking WTA computations in neural circuits of the brain (Chettih and Harvey, 2019) in a qualitative manner.
 
@@ -284,8 +435,8 @@ The network was trained to minimize the cross-entropy error between the softmax 
 
 The training was performed for 50,000 iterations, with a batch size of 50 episodes. We used Adam optimizer with default parameters and a fixed learning rate of 0.001. Each symbol was presented to the network for a duration of 500 ms. The primary metric we used for measuring the performance of the network was success rate, which was defined as the percentage of episodes where the network produced the full correct output for a given string, that is, all the output symbols in the episode had to be correct. The network was tested on 50,000 previously unseen strings.
 
-The network consisted of 192 LIF neurons with SFA and 128 LIF neurons without SFA. All the neurons had a membrane time constant of τm=20 ms, a baseline threshold vth=30 mV, a refractory period of 5 ms, and a synaptic delay of 1 ms. LIF neurons with SFA in the network had an adaptation strength of β=1.7 mV. It was not necessary to assign particular values to adaptation time constants of firing thresholds of neurons with SFA; we simply chose them uniformly randomly to be between 1 ms and 6000 ms, mimicking the diversity of SFA effects found in the neocortex (Allen Institute, 2018b) in a qualitative manner. All other parameters were the same as in the other experiments. We trained the network using five different network initializations (seeds) and tested it on previously unseen strings. Average test success rate was 95.88% with standard deviation 1.39%.
+The network consisted of 192 LIF neurons with SFA and 128 LIF neurons without SFA. All the neurons had a membrane time constant of $\tau_{m}=20$ ms, a baseline threshold $v_{th}=30$ mV, a refractory period of 5 ms, and a synaptic delay of 1 ms. LIF neurons with SFA in the network had an adaptation strength of $\beta=1.7$ mV. It was not necessary to assign particular values to adaptation time constants of firing thresholds of neurons with SFA; we simply chose them uniformly randomly to be between 1 ms and 6000 ms, mimicking the diversity of SFA effects found in the neocortex (Allen Institute, 2018b) in a qualitative manner. All other parameters were the same as in the other experiments. We trained the network using five different network initializations (seeds) and tested it on previously unseen strings. Average test success rate was 95.88% with standard deviation 1.39%.
 
-## Analysis of spiking data for Duplication/Reversal task
+#### Analysis of spiking data for Duplication/Reversal task
 
-We used three-way ANOVA to analyze if a neuron’s firing rate is significantly affected by task, serial position in the sequence, symbol identity, or combination of these (similar to Lindsay et al., 2017). In such a multifactorial experiment, factors are crossed with each other, and we refer to these factors as ‘conditions.’ For two possible tasks, 5 possible positions in the input sequence, and 31 possible symbols, there are 2∗5∗31=310 different conditions. The analysis was performed on the activity of the neurons of the trained SNN during 50,000 test episodes. From each episode, a serial position from the input period was chosen randomly, and hence each episode could be used only once, that is, as one data point. This was to make sure that each entry in the three-way ANOVA was completely independent of other entries since the neuron’s activity within an episode is highly correlated. Each data point was labeled with the corresponding triple of (task type, serial position, symbol identity). To ensure that the dataset was balanced, the same number of data points per particular combination of conditions was used, discarding all the excess data points, resulting in a total of 41,850 data points – 135 data points per condition, that is, 135 repeated measurements for each condition and per neuron, but with no carryover effects for repetitions per neuron since the internal state variables of a neuron are reset between episodes. In such a scenario, neurons can be seen as technical replicates. For the analysis, neurons whose average firing rate over all episodes (for the input period) was lower than 2 Hz or greater than 60 Hz were discarded from the analysis to remove large outliers. This left 279 out of the 320 neurons. To categorize a neuron as selective to one or more conditions, or combination of conditions, we observed p-values obtained from three-way ANOVA and calculated the effect size ω2 for each combination of conditions. If the p-value was less than 0.001 and ω2 greater than 0.14 for a particular combination of conditions, the neuron was categorized as selective to that combination of conditions. The ω2 threshold of 0.14 was suggested by Field, 2013 to select large effect sizes. Each neuron can have a large effect size for more than one combination of conditions. Thus, the values shown in Figure 4D sum to a value greater than 1. The neuron shown in Figure 4E had the most prominent selectivity for the combination of Task × Position × Symbol, with ω2=0.394 and p<0.001. The neuron shown in Figure 4F was categorized as selective to a combination of Position × Symbol category, with ω2=0.467 and p<0.001. While the three-way ANOVA tells us if a neuron is selective to a particular combination of conditions, it does not give us the exact task/symbol/position that the neuron is selective to. To find the specific task/symbol/position that the neuron was selective to, Welch’s t-test was performed, and a particular combination with maximum t-statistic and p<0.001 was chosen to be shown in Figure 4E, F.
+We used three-way ANOVA to analyze if a neuron’s firing rate is significantly affected by task, serial position in the sequence, symbol identity, or combination of these (similar to Lindsay et al., 2017). In such a multifactorial experiment, factors are crossed with each other, and we refer to these factors as ‘conditions.’ For two possible tasks, 5 possible positions in the input sequence, and 31 possible symbols, there are $2∗5∗31=310$ different conditions. The analysis was performed on the activity of the neurons of the trained SNN during 50,000 test episodes. From each episode, a serial position from the input period was chosen randomly, and hence each episode could be used only once, that is, as one data point. This was to make sure that each entry in the three-way ANOVA was completely independent of other entries since the neuron’s activity within an episode is highly correlated. Each data point was labeled with the corresponding triple of (task type, serial position, symbol identity). To ensure that the dataset was balanced, the same number of data points per particular combination of conditions was used, discarding all the excess data points, resulting in a total of 41,850 data points – 135 data points per condition, that is, 135 repeated measurements for each condition and per neuron, but with no carryover effects for repetitions per neuron since the internal state variables of a neuron are reset between episodes. In such a scenario, neurons can be seen as technical replicates. For the analysis, neurons whose average firing rate over all episodes (for the input period) was lower than 2 Hz or greater than 60 Hz were discarded from the analysis to remove large outliers. This left 279 out of the 320 neurons. To categorize a neuron as selective to one or more conditions, or combination of conditions, we observed p-values obtained from three-way ANOVA and calculated the effect size $\omega^{2}$ for each combination of conditions. If the p-value was less than 0.001 and $\omega^{2}$ greater than 0.14 for a particular combination of conditions, the neuron was categorized as selective to that combination of conditions. The $\omega^{2}$ threshold of 0.14 was suggested by Field, 2013 to select large effect sizes. Each neuron can have a large effect size for more than one combination of conditions. Thus, the values shown in Figure 4D sum to a value greater than 1. The neuron shown in Figure 4E had the most prominent selectivity for the combination of Task × Position × Symbol, with $\omega^{2}=0.394$ and $p<0.001$. The neuron shown in Figure 4F was categorized as selective to a combination of Position × Symbol category, with $\omega^{2}=0.467$ and $p<0.001$. While the three-way ANOVA tells us if a neuron is selective to a particular combination of conditions, it does not give us the exact task/symbol/position that the neuron is selective to. To find the specific task/symbol/position that the neuron was selective to, Welch’s t-test was performed, and a particular combination with maximum t-statistic and $p<0.001$ was chosen to be shown in Figure 4E, F.

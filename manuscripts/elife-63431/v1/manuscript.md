@@ -32,11 +32,19 @@ Apart from nucleotide-based replicators, very interesting replication systems us
 
 In the past, metastable hairpin states have been prepared in a physically separated manner. The reaction was then triggered by mixing. For example, the mixing of hairpins with a trigger sequence has been shown to form long concatemers (Dirks and Pierce, 2004). With a similar logic, mixing a low entropy combination of molecules was used to create entropically driven DNA machines, including exponentially amplifying assemblies (Zhang et al., 2007). These reactions run downwards into the binding equilibrium. However, the preparation of the initial low entropy state required human intervention or a unique flow setting for mixing.
 
-## Sequence design
+### Sequence design
 
 We designed a set of cooperatively replicating DNA strands using the program package NUPACK (Zadeh et al., 2011). The sequences are designed to have self-complementary double hairpins and are pairwise complementary within the molecule pool, such that the 3’ hairpin of one strand is complementary to the 5’ hairpin of the next. Their structure resembles the secondary structure of proto-tRNAs proposed by stereochemical theories (Figure 1a), comprising two hairpin loops that surround the anticodon with a few neighboring bases (Krammer et al., 2012). The lengths of 82–84 nt of the double hairpins are that of average tRNA molecules (Sharp et al., 1985), with stem loops consisting of 30–33 nt and the information-encoding interjacent domains of 15 nt. As the replication mechanism is based on hybridization only, it is expected to perform equally well for DNA and RNA. Here, we implemented the system with DNA and not RNA as done previously (Krammer et al., 2012). Both, in the design and the implementation we did not see significant differences between the two versions. Because of the simpler and more inexpensive synthesis of the 82–84 nt long sequences we now implemented the replicator in DNA. Due to short heating times and moderate magnesium concentrations, we estimate that an RNA version could survive for days if not weeks (Li and Breaker, 1999; Mariani et al., 2018). The most critical step regarding the RNA stability would be the initial temperature spike to 95 °C, which remains unchanged from our previous study (Krammer et al., 2012) and did not prove critical. We also show that an RNA version behaves structurally identical to the implemented DNA version (Figure 1—figure supplement 1).
 
-## Replication mechanism
+![Figure 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig1-v1.jpg)
+
+**Figure 1.:** (a) Transfer RNA folds into a double-hairpin conformation upon very few base substitutions. In that configuration, the 3’-terminal amino acid binding site (green) is close to the anticodon (blue) and a double hairpin structure forms. A set of pairwise complementary double hairpins can encode and replicate sequences of information. A binary code implemented in the position of the anti-codon, the information domain, allows to encode and replicate binary sequences (red vs blue). Each strand (82-84 nt) comprises two hairpin loops (gray) and an interjacent unpaired information domain of 15 nt length (blue/red, here: $0_{D}$). The displayed structure of eight strands shows replication of a template corresponding to the binary code 0010. Note, that no covalent linkage is involved in the process. (b) Replication is driven by thermal oscillations in four steps: (0) The hairpins are activated into their closed conformation by fast cooling indicated by triangles. (1) Strands with matching information domain bind to the template. (2) Fluctuations in the bound strands’ hairpins facilitate the hybridization of neighboring strands. (3) Subsequent heating splits replica from template, while keeping the longer hairpin sequences connected, freeing both as templates for the next cycle.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Combinations of sets of four complementary double hairpins are displayed for (a) DNA and (b) RNA at 25 °C, 1 M Na+ and 0.625 mM per strand. For (b) every 'T' in the DNA sequence is substituted by a 'U'. Due to computational limitations the only four strands could be calculated at a time. The predicted structures look as expected, forming the backbone (top and bottom from center) and the information domain bonds (left and right from center), which are flanked by the closed hairpins. The DNA (a) and RNA (b) version are identical. Also, there is no difference in structure or free energy between information domain '0' and information domain '1'. The calculated free energies are given below each structure and are averaged over each complete set.
+
+### Replication mechanism
 
 The replication mechanism is a template-based replication, where instead of single nucleotides, information is encoded by a succession of oligomers. The domain, at the location of the anticodon in tRNA, is the template sequence and thus contains the information to be replicated. We therefore term it information domain. The goal is to replicate the succession of information domains.
 
@@ -50,67 +58,119 @@ The basic principle of this replication mechanism was previously explored by Kra
 
 ## Results
 
-## Analysis of molecule conformations
+### Analysis of molecule conformations
 
 Native polyacrylamide gel electrophoresis (PAGE) showed that the double hairpins assembled as intended (Figure 2). Comparing different subsets of strands allowed to identify all gel bands.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig2-v1.jpg)
+
+**Figure 2.:** Samples contained strands at 200 nM concentration each and were slowly annealed as described in Materials and methods. Lane contents are indicated at the top of each lane. Comparison of different lanes allowed for the attribution of bands to complexes. Complexes incorporating all present strands are marked (•). The red channel shows the intensity $0_{A}$-Cy5, the cyan channel shows SYBR Green I fluorescence. Single information domain bonds (lane 2, 7) break during gel electrophoresis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Ferguson plot of differently sized complexes compared to linear dsDNA (gray lines) of comparable mass. The slopes of log(mobility) vs. gel concentration are proportional to the friction constants of the molecules (Rodbard and Chrambach, 1970). (b) Linear dsDNA shows significantly lower friction constants than any of the complexes of at least two molecules. Symbolic complexes are indicated next to the data points. This is due to the branched structure of the complexes and conforms with the suggested assembly geometry. Idealized tertiary structures of complexes $0_{A}0_{B}$ and $0_{A}0_{B}$:$0¯_{A}0¯_{B}$, and 100 bp dsDNA are given as size reference.
+
 All complexes were formed at concentrations of 200 nM of each strand and could be resolved despite their branched tertiary structure. Friction coefficients of complexes of two to four strands were 1.6–1.8-fold higher than for linear dsDNA, and 2.4-fold higher for larger complexes (4:4 configuration, ca. 660 nt, Figure 2—figure supplement 1). This agrees with the branched structure of the suggested strand assembly geometry (Figure 1a). Partially assembled complexes of two or three strands bound to a four-strand template could be resolved (Figure 6—figure supplement 1). Complexes containing single bound information domains were not stable during electrophoresis (Figure 2, lanes 2, 7 and Figure 6—figure supplement 1). This allowed to differentiate fully assembled complexes from those where individual strands are bound to a template but have not formed backbone duplexes. Covalent end labels and two reference lanes on each gel were used to quantify concentrations from gel intensities using image analysis as described in Materials and methods.
 
-## Selection by agglomeration and sedimentation
+### Selection by agglomeration and sedimentation
 
 For a replicator to be autonomous, there must be a mechanism in place to select, assemble and (re-)accumulate its molecular components purely at one location. We argue that DNA hydrogels could offer such a solution. While DNA often, also in our case, assembles into agglomerates, DNA hydrogels have been shown to be able to form fluid phases if gaps of single bases were added to create flexible linkers between molecules (Nguyen and Saleh, 2017).
 
-We combined eight matching hairpin sequences of design as introduced in Figure 1 at moderately elevated concentrations and cooled the system to only 25 °C after separating the molecules at 95 °C (Figure 3). We found the spontaneous formation of agglomerates that were large enough to sediment under gravity. The initial homogeneous fluorescence turned into micrometer-sized grains and sedimented within hours. The fluorescence was provided by a covalently attached label to either strand 0A or 1A. Since the double hairpins have a periodic boundary condition, they can create large assemblies (Figure 3a).
+We combined eight matching hairpin sequences of design as introduced in Figure 1 at moderately elevated concentrations and cooled the system to only 25 °C after separating the molecules at 95 °C (Figure 3). We found the spontaneous formation of agglomerates that were large enough to sediment under gravity. The initial homogeneous fluorescence turned into micrometer-sized grains and sedimented within hours. The fluorescence was provided by a covalently attached label to either strand $0_{A}$ or $1_{A}$. Since the double hairpins have a periodic boundary condition, they can create large assemblies (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-v1.jpg)
+
+**Figure 3.:** (a) In a simple, sealed microfluidic chamber (Figure 3—figure supplement 2), the hairpin strands can self-assemble into agglomerates and sediment on a timescale of hours. The sample was initially heated to 95 °C for 10 s to ensure an unbound initial state, then rapidly (within 30 s) cooled to 25 °C, where self-assembly and sedimentation occured. Note, that agglomeration and sedimentation only occured if all eight matching hairpins were provided (top two rows) but not in the case of a knockout (-$1_{D}$, bottom row). For quantification, the bulk and sediment intensities were normalized by the first frame after heating. Samples contained strands at total concentration of 5 µM, about threefold higher than in Figure 2 and the following replication experiments. (b) Time traces of concentration increase for sediment and bulk of different configurations, same examples as shown in a. The time traces of all further knockout permutations are shown in Figure 3—figure supplement 1b. (c) Final concentration increase of sediment, relative to first frame after heating, for all configurations. The final values (N≥3) for c/c0 are retrieved from fitting the time traces. For the full set of complementary hairpins, self-assembly and sedimentation is most pronounced.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Original fluorescence microscopy images (left) and cuttings (right) as shown in Figure 3a. To calculate c/c0 time traces (Figure 3b), (c) the image stacks were stabilized and the whole flank was integrated, the cuttings serve barely illustrative purpose. (b) Time traces of concentration increase for sediment and bulk of all different configurations, including all knockout permutations. (c) Final concentration increase of sediment, relative to first frame after heating, for all configurations including labeling and random-sequence controls (bottom three rows). The sedimentation of the full system is independent of the label and its position. Random sequences do not show agglomeration nor sedimentation. (d) Concentration dependence of the sedimentation kinetics. The characteristic sedimentation time is determined by fitting the initial increase of c/c0 over time with an exponential function. The concentration dependence can be fitted with a power law function y(c) = a1+a2*cp, which yields an exponent of p = –﻿1.06, fit with weighted error bars displayed.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) One chamber contained five independent pockets of 20 µL capacity, which were accessed through a 0.5 mm channel. After inserting the sample, the pockets were sealed with Parafilm. An additional pocket contained a temperature sensor in water, which was used for the PID temperature regulation. (b) Image of one chamber. The chamber design is cut out of a 500 µm FEP foil and fit between two plane sapphires. Three Peltier elements are attached to the backside of the chamber which allow quick heating and cooling of the sample at rates > 2 K/s. This package is then screwed onto an aluminum base by a steel top frame. The sapphire allowed full visual access to the sample.
 
 It is evident from Figure 3—video 1 that the sedimentation was very selective. When only seven of the eight matching hairpins were present, sedimentation was much weaker and, in most cases, undetectable (Figure 3b,c). For the full system, the sedimentation kinetics showed to be strongly concentration dependent (Figure 3—figure supplement 1b). Analogous experiments with random sequences (random pool of 84 nt strands) at equal concentration did not show agglomeration nor sedimentation (Figure 3—figure supplement 1c). We have previously found that similar hairpin molecules provided the shortest sequences capable of forming agglomerates (Morasch et al., 2016).
 
 The above results suggest that agglomeration could serve as an efficient way to assemble matching hairpins from much less structured and selected sequences in an autonomous way. After the molecules have been assembled as sedimented agglomerates, a convection flow can carry the large assemblies into regions of warmer temperatures, where the molecules would be disassembled by heat and activated for replication with a cooling step. Similar recycling behavior is seen in thermal gradient traps (Morasch et al., 2016), which were also found to enhance the molecular assembly (Mast et al., 2013) with characteristics that can match the above scenario.
 
-## Templating kinetics
+### Templating kinetics
 
-Hybridization between stems of neighboring hairpins (Figure 1b, step 2) was catalyzed by the presence of already assembled complexes 0¯A0¯B0¯C0¯D, confirming its role as a template. Assembly kinetics at 45 °C were recorded in reactions containing 200 nM of each strand for a range of template concentrations. At 120 nM template concentration, 40 % yield was achieved within 10 min (Figure 4b, black line). The untemplated, spontaneous reaction proceeded significantly slower (1.4 % yield, light gray line).
+Hybridization between stems of neighboring hairpins (Figure 1b, step 2) was catalyzed by the presence of already assembled complexes $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$, confirming its role as a template. Assembly kinetics at 45 °C were recorded in reactions containing 200 nM of each strand for a range of template concentrations. At 120 nM template concentration, 40 % yield was achieved within 10 min (Figure 4b, black line). The untemplated, spontaneous reaction proceeded significantly slower (1.4 % yield, light gray line).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic representation of the templating step at constant temperature. (b) Kinetics of tetramer formation at 45 °C with different starting concentrations of template ($c¯_{0}$). Data includes concentrations of all complexes containing tetramers. (c) Templating observed over a broad temperature range. Large circles show data for reactions at $c¯_{0}=120$ nM of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$, small circles show the spontaneous formation ($c¯_{0}=0$). The latter increases at T > 45 °C. Above 48 °C, binding of monomers to the template gets weaker, slowing down the rate of template assisted formation. This is consistent with the melting temperatures of the information domains (see Figure 4—figure supplement 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Melting temperatures of complementary information domains (red, strands $0_{A}+0¯_{A}$, determined via quenching of $0_{A}$-Cy5) and backbone domains (blue, strands $0_{A}+0_{B}$, determined via UV absorption). Dashed lines show simulation data. Dotted gray lines depict simulated melting curves for $0_{B}+0_{C}$, $0_{C}+0_{D}$, $0_{D}+0_{A}$. The hatched area indicates the thermal oscillation range of 45–67 °C. (b) Simulated equilibrium concentrations in a reaction mixture containing 200 nM of each of $0_{A}$, $0_{B}$, $0_{C}$, $0¯_{A}$, $0¯_{B}$, $0¯_{C}$. The peak temperature of the thermal oscillations mostly melts the bond between the trimers $0_{A}0_{B}0_{C}$ and $0¯_{A}0¯_{B}0¯_{C}$ but is below the melting transition of $0_{A}0_{B}0_{C}$ or $0¯_{A}0¯_{B}0¯_{C}$ (yellow, green).
 
 Assembly rates showed a strong dependence on incubation temperature (Figure 4c). At 39 °C, the reaction proceeded significantly slower than at 42 °C or 45 °C. This is because the hairpins are predominantly in closed configuration and cannot bind to neighboring molecules in the assembly. Binding between complementary information domains still occurs, but the formation of bonds between neighboring strands becomes rate limiting. Above the melting temperature of the information domain (48 °C) (see Figure 4—figure supplement 1), template-directed assembly becomes slower. However, the slower kinetics of template-directed product formation are partially superposed by the spontaneous product formation lacking an initial template (Figure 4c, small circles), which becomes an additional reaction channel due to the now open hairpins.
 
-## Exponential amplification
+### Exponential amplification
 
-As intermediate step toward replication, we studied amplification reactions under thermal oscillations (Figure 5). The amplification reactions only contained strands encoding for information domain '0', that is 0A, 0¯A, 0B, 0¯B, …, 0¯D. The strands were subjected to thermal oscillations between Tbase = 45 °C and Tpeak = 67 °C. The lower temperature was held for 20 min, the upper for one second with temperature ramps amounting to 20±1 s in each full cycle. This asymmetric shape of the temperature cycle accords with differences in kinetics of the elongation step and the melting of the information domain. It is typical for trajectories in thermal convection settings with local heating (Braun et al., 2003).
+As intermediate step toward replication, we studied amplification reactions under thermal oscillations (Figure 5). The amplification reactions only contained strands encoding for information domain '0', that is $0_{A}$, $0¯_{A}$, $0_{B}$, $0¯_{B}$, …, $0¯_{D}$. The strands were subjected to thermal oscillations between Tbase = 45 °C and Tpeak = 67 °C. The lower temperature was held for 20 min, the upper for one second with temperature ramps amounting to 20±1 s in each full cycle. This asymmetric shape of the temperature cycle accords with differences in kinetics of the elongation step and the melting of the information domain. It is typical for trajectories in thermal convection settings with local heating (Braun et al., 2003).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig5-v1.jpg)
 
-**Figure 5.:** (a) Amplification time traces for concentration c for sequence 0000 during the first four to six cycles (Tpeak = 67 °C) for template () concentrations 0¯A0¯B0¯C0¯D from 0 to 45 nM. The data was fitted using the cross-catalytic model from equation (1). Strands c¯0, 0A, 0¯A, …, 0B were used at 200 nM concentration each. Data points show concentrations of complexes 4:4. (0¯Db) Initial reaction velocity as a function of initial template concentration . The data points show good agreement with the line calculated from the fits in panel c¯0a. (c) Amplification proceeded for peak temperatures below 74 °C. Above, backbone duplexes start to melt, and the complexes are no longer stable. The base temperature was 45 °C, reactions initially contained 30 nM of complex  as template. (0¯A0¯B0¯C0¯Dd) Serial transfer experiment. The reaction containing strands , 0A, 0¯A, …, 0B (black circles) survived successive dilution by a factor of 1/2 every three cycles at almost constant concentration. In contrast, a reaction with the same amount of template 0¯D, but lacking monomers 0¯A0¯B0¯C0¯D, fades out (open circles). The solid line shows the model from 0¯A−DEquation 1.Figure 5—source data 1.
+**Figure 5.:** (a) Amplification time traces for concentration c for sequence 0000 during the first four to six cycles (Tpeak = 67 °C) for template ($0¯_{A}0¯_{B}0¯_{C}0¯_{D}$) concentrations $c¯_{0}$ from 0 to 45 nM. The data was fitted using the cross-catalytic model from equation (1). Strands $0_{A}$, $0¯_{A}$, $0_{B}$, …, $0¯_{D}$ were used at 200 nM concentration each. Data points show concentrations of complexes 4:4. (b) Initial reaction velocity as a function of initial template concentration $c¯_{0}$. The data points show good agreement with the line calculated from the fits in panel a. (c) Amplification proceeded for peak temperatures below 74 °C. Above, backbone duplexes start to melt, and the complexes are no longer stable. The base temperature was 45 °C, reactions initially contained 30 nM of complex $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ as template. (d) Serial transfer experiment. The reaction containing strands $0_{A}$, $0¯_{A}$, $0_{B}$, …, $0¯_{D}$ (black circles) survived successive dilution by a factor of 1/2 every three cycles at almost constant concentration. In contrast, a reaction with the same amount of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$, but lacking monomers $0¯_{A−D}$, fades out (open circles). The solid line shows the model from Equation 1.
 
-The growth of molecular assemblies with different initial concentrations of template 0¯A0¯B0¯C0¯D revealed an almost linear dependence of the reaction velocity on the initial amount of template (Figure 5a, b). This confirms the exponential nature of the replication. The cross-catalytic replication kinetics can be described by a simplistic model that only considers the concentrations ct of the template 0A0B0C0D and its complement c-t of 0¯A0¯B0¯C0¯D:(1)ddtc(t)=k⋅c¯(t)+k0,ddtc¯(t)=k⋅c(t)+k0
+The growth of molecular assemblies with different initial concentrations of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ revealed an almost linear dependence of the reaction velocity on the initial amount of template (Figure 5a, b). This confirms the exponential nature of the replication. The cross-catalytic replication kinetics can be described by a simplistic model that only considers the concentrations $ct$ of the template $0_{A}0_{B}0_{C}0_{D}$ and its complement $c-t$ of $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$:
 
-Here, k is the rate of cross-catalysis and k0 the spontaneous formation rate. For c(t)≈c¯(t), the model corresponds to simple exponential growth on a per-cycle basis. The model can be solved in closed form but does not account for saturation effects from the depletion of monomers. Therefore, it is not valid for concentrations similar to the total concentration of each strand. Fitting the model to the amplification reactions with 0–45 nM of template 0¯A0¯B0¯C0¯D revealed rate constants of k = 0.16 cycle−1 and k0 = 0.4 nM cycle−1 (Figure 5b). Amplification was robust with regard to the peak temperature of the oscillations. For Tpeak below 74 °C, the reaction remained almost unaffected (Figure 5c). Above, the temperature is too close to the melting transitions of the hairpin-hairpin duplexes, ranging from 76 to 79 °C (Figure 4—figure supplement 1).
+$$
+\frac{d}{dt}c(t)=k⋅c¯(t)+k_{0},\frac{d}{dt}c¯(t)=k⋅c(t)+k_{0}
+$$
 
-The ability to withstand consecutive dilutions is characteristic for exponentially growing replicators and was tested for in serial transfer experiments. Strands encoding for '0' (i.e. 0A, 0¯A, 0B, etc.) were thermally cycled with 30 nM of template 0¯A0¯B0¯C0¯D. After three cycles each, samples were diluted one to one with buffer containing all eight strands as monomers at 200 nM each (Figure 5d). This high frequency of dilutions prevented the reaction from transitioning into the saturating regime. The cross-catalytic model was fitted to the data with the dilution factor as single free parameter, that was found to be 0.43. The difference from the theoretical value of 0.50 was likely due to strands sticking to the reaction vessels before dilution. As a control, a reaction with the same initial concentration of template 0¯A0¯B0¯C0¯D, but without monomers 0¯A, 0¯B, 0¯C, 0¯D, was subjected to the same protocol. As the control could not grow exponentially, it gradually died out (Figure 5d, open circles).
+Here, $k$ is the rate of cross-catalysis and $k_{0}$ the spontaneous formation rate. For $c(t)≈c¯(t)$, the model corresponds to simple exponential growth on a per-cycle basis. The model can be solved in closed form but does not account for saturation effects from the depletion of monomers. Therefore, it is not valid for concentrations similar to the total concentration of each strand. Fitting the model to the amplification reactions with 0–45 nM of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ revealed rate constants of $k$ = 0.16 cycle−1 and $k_{0}$ = 0.4 nM cycle−1 (Figure 5b). Amplification was robust with regard to the peak temperature of the oscillations. For Tpeak below 74 °C, the reaction remained almost unaffected (Figure 5c). Above, the temperature is too close to the melting transitions of the hairpin-hairpin duplexes, ranging from 76 to 79 °C (Figure 4—figure supplement 1).
 
-## Sequence replication
+The ability to withstand consecutive dilutions is characteristic for exponentially growing replicators and was tested for in serial transfer experiments. Strands encoding for '0' (i.e. $0_{A}$, $0¯_{A}$, $0_{B}$, etc.) were thermally cycled with 30 nM of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$. After three cycles each, samples were diluted one to one with buffer containing all eight strands as monomers at 200 nM each (Figure 5d). This high frequency of dilutions prevented the reaction from transitioning into the saturating regime. The cross-catalytic model was fitted to the data with the dilution factor as single free parameter, that was found to be 0.43. The difference from the theoretical value of 0.50 was likely due to strands sticking to the reaction vessels before dilution. As a control, a reaction with the same initial concentration of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$, but without monomers $0¯_{A}$, $0¯_{B}$, $0¯_{C}$, $0¯_{D}$, was subjected to the same protocol. As the control could not grow exponentially, it gradually died out (Figure 5d, open circles).
 
-The above-mentioned reactions did amplify, but not replicate actual sequence information, as they only contained strands with 0/0¯ information domains. To study the replication of arbitrary sequences of binary code, replication reactions with all 16 strands encoding for '0' and '1' were performed. To discriminate sequences encoded in equally sized complexes and deduce error rates, we compared these results to those from different reaction runs with defects, that is lacking one or two of the hairpin sequences required for the faithful replication of a particular template. Reference reactions contained all 16 strands (0A, 0¯A, 1A, 1¯A, 0B, …, 1¯D) at 100 nM each, and were run for each of three different template sequences (0¯A0¯B0¯C0¯D, 0¯A1¯B0¯C1¯D, and 0¯A0¯B1¯C1¯D) (Figure 6). The product yields were quantified from reaction time traces, extracted by integrating the intensities of all gel bands containing tetramers with the labeled strand 0A.
+### Sequence replication
 
-Leaving out a single strand (reaction label “+++−”, for example omitting 0D for template 0¯A0¯B0¯C0¯D) reduced the yield of full-size product to about 40 % (Figure 6a, b). The non-zero product yield with a missing strand is most likely due to the incorporation of the corresponding strand with an information domain mismatch (here 1D). This type of mismatch allows the hairpin backbone to form regardless, and the unfaithful product can propagate since both strands needed for an amplification of '1' at position D (1D and 1¯D) are provided.
+The above-mentioned reactions did amplify, but not replicate actual sequence information, as they only contained strands with 0/$0¯$ information domains. To study the replication of arbitrary sequences of binary code, replication reactions with all 16 strands encoding for '0' and '1' were performed. To discriminate sequences encoded in equally sized complexes and deduce error rates, we compared these results to those from different reaction runs with defects, that is lacking one or two of the hairpin sequences required for the faithful replication of a particular template. Reference reactions contained all 16 strands ($0_{A}$, $0¯_{A}$, $1_{A}$, $1¯_{A}$, $0_{B}$, …, $1¯_{D}$) at 100 nM each, and were run for each of three different template sequences ($0¯_{A}0¯_{B}0¯_{C}0¯_{D}$, $0¯_{A}1¯_{B}0¯_{C}1¯_{D}$, and $0¯_{A}0¯_{B}1¯_{C}1¯_{D}$) (Figure 6). The product yields were quantified from reaction time traces, extracted by integrating the intensities of all gel bands containing tetramers with the labeled strand $0_{A}$.
 
-In particular during the first few cycles, mostly complex 0A0B0C:0¯A0¯B0¯C0¯D (3:4) was detected in the gel, instead of the desired tetramer product (Figure 6—figure supplement 1). This was expected given the lack of strand 0D and provides an upper limit on the error rate of the full replication. The fact that the full reaction produced almost no complexes 3:4 or 4:3 indicates that the incomplete product was indeed caused by the lack of a particular strand.
+![Figure 6.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig6-v1.jpg)
 
-Removal of a further strand either directly next to the previous one ('++−−', missing strands 0Cand0D) or not ('+−+−', missing strands 0Band0D) reduced the yield of product tetramers even further. Due to the periodic design those two variants represent all defective sets with two missing strands. Replication of the other two templates 0¯A1¯B0¯C1¯D and 0¯A0¯B1¯C1¯D produced very similar results. Product concentrations after six cycles are given in Figure 6c for each of the three templates as well as an average over the template sequences (horizontal lines). A single defect reduced the yield of tetramer complexes to about 40 %, two defects to 15–20 %, which is close to 0.4×0.4=0.16≃15−20 %, that is the combined probability of two independent mismatches.
+**Figure 6.:** (a) Replication of sequence $0_{A}0_{B}0_{C}0_{D}$. Reactions were started with 15 nM initial template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$. All strands ($0_{A}$, $0¯_{A}$, $1_{A}$, …, $1¯_{D}$) were present at 100 nM each. Native-PAGE results comparing the reaction of all 16 strands ('++++') with the reaction lacking strand $0_{D}$ ('+++−'). The defective set '+++−' mostly produced 3:4 complexes instead of 4:4 complexes (see schematics on the right). The overall yield of tetramer-containing complexes was greatly reduced. As size reference, the marker lane contained complexes $0_{A}0_{B}0_{C}0_{D}$, $0_{A}0_{B}0_{C}$, $0_{A}0_{B}$, and monomers $0_{A}$. The complete gel is presented in Figure 6—figure supplement 1. (b) Product concentration over time for the complete sequence network (yellow) and three defective sets with missing strands. Data was integrated by quantitative image analysis from electrophoresis gels using covalent markers on the $0_{A}$-strand counting all product complexes containing tetramers. Mutations of information in the product from '0' to '1' were induced by defective reactions that lacked strands $0_{D}$ ('+++−'), $0_{C}and0_{D}$ ('++−−'), and $0_{B}and0_{D}$ ('+−+−'). All reactions were initiated with 15 nM of $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$. The solid line shows data from reaction '++++' without template. (c) End point comparison of reactions with templates $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ (panels a, b), $0¯_{A}1¯_{B}0¯_{C}1¯_{D}$, and $0¯_{A}0¯_{B}1¯_{C}1¯_{D}$ after six cycles. Horizontal lines indicate averages of the three template sequences. A single missing strand reduced product yield to about 40 %, two missing strands to 15–20 %.
 
-## Replication fidelity
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Assembly yields of different strands bound to tetramer template $0_{A}0_{B}0_{C}0_{D}$. Lane contents are given above each lane, complexes are identified on the right. Samples were annealed as for Figure 2 and described in Materials and methods. The red channel shows the intensity of $0_{A}$-Cy5, the cyan channel shows SYBR Green I. Single or unconnected strands (lanes 2, 4) detached from the template during electrophoresis. Complexes of size 2:4, 3:4, and 4:4 were resolved. (b) Full PAGE result from Figure 6a. The gel shows replication of template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ in a reaction containing all strands ('++++', left) with a reaction lacking strand $0_{D}$ ('+++−', right). The marker lane contained complexes $0_{A}0_{B}0_{C}0_{D}$, $0_{A}0_{B}0_{C}$, $0_{A}0_{B}$, and monomer $0_{A}$, and was prepared as described in Materials and methods.
+
+Leaving out a single strand (reaction label “+++−”, for example omitting $0_{D}$ for template $0¯_{A}0¯_{B}0¯_{C}0¯_{D}$) reduced the yield of full-size product to about 40 % (Figure 6a, b). The non-zero product yield with a missing strand is most likely due to the incorporation of the corresponding strand with an information domain mismatch (here $1_{D}$). This type of mismatch allows the hairpin backbone to form regardless, and the unfaithful product can propagate since both strands needed for an amplification of '1' at position D ($1_{D}$ and $1¯_{D}$) are provided.
+
+In particular during the first few cycles, mostly complex $0_{A}0_{B}0_{C}$:$0¯_{A}0¯_{B}0¯_{C}0¯_{D}$ (3:4) was detected in the gel, instead of the desired tetramer product (Figure 6—figure supplement 1). This was expected given the lack of strand $0_{D}$ and provides an upper limit on the error rate of the full replication. The fact that the full reaction produced almost no complexes 3:4 or 4:3 indicates that the incomplete product was indeed caused by the lack of a particular strand.
+
+Removal of a further strand either directly next to the previous one ('++−−', missing strands $0_{C}and0_{D}$) or not ('+−+−', missing strands $0_{B}and0_{D}$) reduced the yield of product tetramers even further. Due to the periodic design those two variants represent all defective sets with two missing strands. Replication of the other two templates $0¯_{A}1¯_{B}0¯_{C}1¯_{D}$ and $0¯_{A}0¯_{B}1¯_{C}1¯_{D}$ produced very similar results. Product concentrations after six cycles are given in Figure 6c for each of the three templates as well as an average over the template sequences (horizontal lines). A single defect reduced the yield of tetramer complexes to about 40 %, two defects to 15–20 %, which is close to $0.4\times0.4=0.16≃15−20$ %, that is the combined probability of two independent mismatches.
+
+### Replication fidelity
 
 The observed rate of erroneous product formation can be attributed to the spontaneous background rate (Figure 4b,c, Figure 5a,b and Figure 6b). The reaction ‘+−+−' (dark green) amplified similarly to the untemplated reference reaction (solid line), as it did not contain any strands that could bind next to each other to the template and form a backbone duplex (Figure 6b). For the templated reactions '+++−' and '++−−', templating worked for partial sequences, producing intermediate yields.
 
-The reduction in yield caused by a single defect (i.e. missing strand) to ~40 % (and to ~16 % for two defects) translates into a replication fidelity per information domain of ~60 %. The exact value for the replication fidelity is 62 % and can be calculated from Figure 6b by extracting the endpoint concentrations (blue vs. yellow line) and calculating 1−14nM37nM=0.62.
+The reduction in yield caused by a single defect (i.e. missing strand) to ~40 % (and to ~16 % for two defects) translates into a replication fidelity per information domain of ~60 %. The exact value for the replication fidelity is 62 % and can be calculated from Figure 6b by extracting the endpoint concentrations (blue vs. yellow line) and calculating $1−\frac{14nM}{37nM}=0.62$.
 
-However, this is a worst-case estimation, and the replication fidelity is likely higher due to binding competition. The mutations caused by a single defect ('+++-') in Figure 6b were imposed by not providing strand 0D for a template ending with 0¯D and only leaving the option to incorporate 1D instead. For the full system ('++++'), however, with the presence of the matching strand, there is a binding competition for position D. Since the matching strand preferentially binds, the unfaithful incorporation of the wrong strand would be reduced. A similar effect of competition was observed in a protein-catalyzed ligation reaction (Toyabe and Braun, 2019). There, a comparable binding competition lead to a sevenfold decrease of the inferior ligation reaction in the presence of competition (Figure 2a, b therein). Therefore, we expect the real fidelity to be better than above lower bound estimate.
+However, this is a worst-case estimation, and the replication fidelity is likely higher due to binding competition. The mutations caused by a single defect ('+++-') in Figure 6b were imposed by not providing strand $0_{D}$ for a template ending with $0¯_{D}$ and only leaving the option to incorporate $1_{D}$ instead. For the full system ('++++'), however, with the presence of the matching strand, there is a binding competition for position D. Since the matching strand preferentially binds, the unfaithful incorporation of the wrong strand would be reduced. A similar effect of competition was observed in a protein-catalyzed ligation reaction (Toyabe and Braun, 2019). There, a comparable binding competition lead to a sevenfold decrease of the inferior ligation reaction in the presence of competition (Figure 2a, b therein). Therefore, we expect the real fidelity to be better than above lower bound estimate.
 
 It is interesting to project and compare this per information domain replication fidelity to a per nucleotide replicator (i.e. polymerization). To do so, we define a threshold in the decrease of melting temperature per information domain as the criterion for when the replication mechanism is still functional. Then, we estimate how many point mutations in the information domain can maximally be tolerated to stay within this range of decrease in melting temperature. From this, we can calculate a hypothetical, corresponding per nucleotide fidelity to the measured information domain fidelity.
 
-We compared the properties of the duplex 0:0¯ to duplexes 0:0¯*, where 0¯* differs from 0¯ by K point mutations. We assumed that within the temperature range of this replication mechanism (Figure 7b, gray box) a reduction in information domain melting temperature Tm of the mutated duplex 0:0¯* by up to 10 °C compared to the original duplex 0:0¯ would be tolerated by the replication reaction. This was inferred from the width of the melting transition of duplex 0:0¯ (Figure 7b), where a shift of 10 °C corresponds to an increase of the unbound fraction from 0.08 at Tbase = 45 °C to 0.66 at 55 °C. In terms of free energies of the information domain duplex, this difference corresponds to ΔG(0:0¯*) ≥ −12.5 kcal/mol compared to ΔG(0:0¯) = −15.4 kcal/mol. 99 % of all duplexes 0:0¯*, with 0¯* containing three point mutations, met that criterion (Figure 7a). Therefore, up to K=3 point mutations can be allowed.
+We compared the properties of the duplex 0:$0¯$ to duplexes 0:$0¯$*, where $0¯$* differs from $0¯$ by $K$ point mutations. We assumed that within the temperature range of this replication mechanism (Figure 7b, gray box) a reduction in information domain melting temperature Tm of the mutated duplex 0:$0¯$* by up to 10 °C compared to the original duplex 0:$0¯$ would be tolerated by the replication reaction. This was inferred from the width of the melting transition of duplex 0:$0¯$ (Figure 7b), where a shift of 10 °C corresponds to an increase of the unbound fraction from 0.08 at Tbase = 45 °C to 0.66 at 55 °C. In terms of free energies of the information domain duplex, this difference corresponds to ΔG(0:$0¯$*) ≥ −12.5 kcal/mol compared to ΔG(0:$0¯$) = −15.4 kcal/mol. 99 % of all duplexes 0:$0¯$*, with $0¯$* containing three point mutations, met that criterion (Figure 7a). Therefore, up to $K=3$ point mutations can be allowed.
 
-We will assume that the replication did not differentiate between information domain 0¯ and any information domain 0¯* if 0¯ and 0¯* differ by less than K point mutations. The fidelity per information domain pKN is given by a cumulative binomial distribution:(2)pK(N)=∑k=0K−1(Nk)pN−k(1−p)k
+![Figure 7.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig7-v1.jpg)
 
-Here, N is the information domain length, and p the per nucleotide replication fidelity. The reduction in binding energy of the information domain duplex 0:0¯* and subsequent change in melting temperature was used as criterion to define the functionality of the replicator and to translate between a per information domain and a per nucleotide approach. As justified above, we calculate with K=3 mutations within the N=15 bases of the information domain, that is the replication can tolerate up to three mismatches in the information domain. From Figure 6 we extracted a per information domain fidelity of p3(15)=0.62, and deduce a per nucleotide fidelity of p=85 %. In fact, information domain duplexes 0:0¯* with mutations at two internal bases all show similar properties as information domains with a total of three mutations (Figure 7—figure supplement 1). This refinement (p2(13)=0.62) would increase the per nucleotide fidelity to p=90 %. We therefore estimate that a per nucleotide replication process would need a replication fidelity of 85–90 % to produce sequences with an error rate equivalent to the presented mechanism. Detailed calculations of the per nucleotide fidelities can be found in the supplementary information.
+**Figure 7.:** The binding energies quantify the ability of the replication mechanism to discriminate nucleotide mutations. (a) Cumulative free energy distributions of information domain duplexes 0:$0¯$ (red), $1$:$1¯$ (light red), as well as all 0:$0¯$* and $1$:$1¯$* with up to three point mutations in $0¯$* and $1¯$* (yellow, green, blue). 99 % of duplexes 0:$0¯$* with three point mutations have free energies ΔG ≥ -12.5 kcal/mol (dashed line), significantly weaker than that of 0:$0¯$ (ΔG = -15.4 kcal/mol). (b) Melting curves of information domain duplexes 0:$0¯$ (red), $1$:$1¯$ (light red), and the two duplexes 0:$0¯$* indicated by arrows in panel a. Even the 0:$0¯$* duplex (i) at the low end of the ΔG distribution has a melting temperature of about 10 °C below that of 0:$0¯$. This difference in melting temperature destabilizes binding of the information domain and causes the replication mechanism to reject these sequences in the thermal oscillation regime between Tbase = 45 °C and Tpeak = 67 °C (gray box).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63431/elife-63431-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Cumulative free energy distribution of duplexes 0:$0¯$* (as in Figure 7), split into information domains $0¯$* containing mutations at terminal bases (thin lines) and those with internal mutations only (thick lines). The dashed line shows combined data for two to three internal mutations. The logarithmic plot shows the fast drop and thus small influence by special mutations in the energy landscape.
+
+We will assume that the replication did not differentiate between information domain $0¯$ and any information domain $0¯$* if $0¯$ and $0¯$* differ by less than $K$ point mutations. The fidelity per information domain $p_{K}N$ is given by a cumulative binomial distribution:
+
+$$
+p_{K}(N)=\sumk=0K−1(Nk)p^{N−k}(1−p)^{k}
+$$
+
+Here, $N$ is the information domain length, and $p$ the per nucleotide replication fidelity. The reduction in binding energy of the information domain duplex 0:$0¯$* and subsequent change in melting temperature was used as criterion to define the functionality of the replicator and to translate between a per information domain and a per nucleotide approach. As justified above, we calculate with $K=3$ mutations within the $N=15$ bases of the information domain, that is the replication can tolerate up to three mismatches in the information domain. From Figure 6 we extracted a per information domain fidelity of $p_{3}(15)=0.62$, and deduce a per nucleotide fidelity of $p=85$ %. In fact, information domain duplexes 0:$0¯$* with mutations at two internal bases all show similar properties as information domains with a total of three mutations (Figure 7—figure supplement 1). This refinement ($p_{2}(13)=0.62$) would increase the per nucleotide fidelity to $p=90$ %. We therefore estimate that a per nucleotide replication process would need a replication fidelity of 85–90 % to produce sequences with an error rate equivalent to the presented mechanism. Detailed calculations of the per nucleotide fidelities can be found in the supplementary information.
 
 ## Discussion
 
@@ -132,32 +192,210 @@ Therefore, replication and translation could have, at an early stage, emerged al
 
 ## Materials and methods
 
-## Strand design
+**Key resources table**
 
-DNA double-hairpin sequences were designed using the NUPACK software package (Zadeh et al., 2011). In addition to the secondary structures of the double-hairpins, the design algorithm was constrained by all target dimers. Candidate sequences were selected for optimal homogeneity of binding energies and melting temperatures. Backbone domains connecting consecutive strands (e.g. 0A0B0C) had to be the most stable bonds in the system, in particular more stable than between a template and a newly formed product complex (e.g. 0B:0¯B). On the other hand, hairpin melting temperatures had to be low enough to allow for a sufficient degree of thermal fluctuations. To reconcile this with the length of the strands, mismatches were introduced in the hairpin stems. The sequences of all strands are listed in Supplementary file 1.
 
-## Thermal cycling assays
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0A</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGCGTTAATTCCCGC GCCTATCGGGAATGTAA CGCAGTGGGTAATAATG ACGATAGCCGTTCGGGA AAAGCGAACGGTATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0B</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGCGATACCGTTCG CTTTTCCCGAACGGCT ATCGCAGTGGGTAATA ATGAGCGAACTGTCGG TGCTTGCGACAGTGTCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0C</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGGCGACACTGTCG CAAGCACCGACAGTTC GCCAGTGGGTAATAAT GAGCGGTTCCTTGCGG AGTAGGCAAGGAATCCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0D</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGGCGGATTCCTTG CCTACTCCGCAAGGAA TCGCCAGTGGGTAATA ATGACGTTACATTCCC GATAGGCGCGGGAATTAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0¯A</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGCGCATTAACGCG CTTGTCCCGCGTTAAT TGCGCTCATTATTACC CACTCGCTCTCGGCTG TTTTGCCCAGCCGAGCAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0¯B</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P – GCTGCGTTGCATTGGC GATCAAAGCCAATGCG AACGCTCATTATTACC CACTCGCAATTAACGC GGGACAAGCGCGTTAATGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0¯C</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGGTTGGAGAAGGC GAACAGCACGCCTTCC CAACCTCATTATTACCC ACTCGTTCGCATTGGC TTTGATC GCCAATGCAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0¯D</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGCGCTGCTCGGCT GGGCAAAACAGCCGAG AGCGCTCATTATTACCC ACTGTTGGGAAGGCGT GCTGTTCGCCTTCTCCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1A</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGCGTTAATTCCCG CGCCTATCGGGAATGT AACGCAAAAGAAGAGA AAGACGATAGCCGTTC GGGAAAAGCGAACGGTATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1B</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGCGATACCGTTCG CTTTTCCCGAACGGCT ATCGCAAAAGAAGAGA AAGAGCGAACTGTCGG TGCTTGCGACAGTGTCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1C</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGGCGACACTGTCG CAAGCACCGACAGTTC GCCAAAAGAAGAGAAA GAGCGGTTCCTTGCGG AGTAGGCAAGGAATCCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1D</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCAGGCGGATTCCTTG CCTACTCCGCAAGGAA TCGCCAAAAGAAGAGA AAGACGTTACATTCCC GATAGGCGCGGGAATTAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1¯A</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGCGCATTAACGCG CTTGTCCCGCGTTAAT TGCGCTCTTTCTCTTC TTTTCGCTCTCGGCTG TTTTGCCCAGCCGAGCAGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1¯B</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGCGTTGCATTGGC GATCAAAGCCAATGCG AACGCTCTTTCTCTTC TTTTCGCAATTAACGC GGGACAAGCGCGTTAATGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1¯C</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P - GCTGGTTGGAGAAGGC GAACAGCACGCCTTCC CAACCTCTTTCTCTTC TTTTCGTTCGCATTGG CTTTGATCGCCAATGCAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1¯D</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>P- GCTGCGCTGCTCGGCT GGGCAAAACAGCCGAG AGCGCTCTTTCTCTTC TTTTGTTGGGAAGGCG TGCTGTTCGCCTTCTCCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0A – Cy5</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>Cy5 -GCAGCGTTAATTCCCGC GCCTATCGGGAATGTAA CGCAGTGGGTAATAATG ACGATAGCCGTTCGGGA AAAGCGAACGGTATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>1A – Cy5</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>Cy5 - GCAGCGTTAATTCCCG CGCCTATCGGGAATGT AACGCAAAAGAAGAGA AAGACGATAGCCGTTC GGGAAAAGCGAACGGTATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R (random)</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNNNNNN</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R (random) – Cy5</td>
+      <td>Biomers</td>
+      <td></td>
+      <td>Cy5 - NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNN NNNNNNNNNNNNNNNNNNNN</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NUPACK</td>
+      <td>nupack.org</td>
+      <td>https://doi.org/10.1002/jcc.21596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ http://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ stabilization plugin</td>
+      <td>http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-All reactions were performed in salt 20 mM Tris-HCl pH 8, 150 mM NaCl with added 20 mM MgCl2. DNA oligonucleotides (Biomers, Germany) were used at 200 nM concentration per strand in reactions containing a fixed-sequence subset of eight strands (e.g. 0/0¯ only) and 100 nM per strand in reactions containing all 16 different strands.
+### Strand design
+
+DNA double-hairpin sequences were designed using the NUPACK software package (Zadeh et al., 2011). In addition to the secondary structures of the double-hairpins, the design algorithm was constrained by all target dimers. Candidate sequences were selected for optimal homogeneity of binding energies and melting temperatures. Backbone domains connecting consecutive strands (e.g. $0_{A}0_{B}0_{C}$) had to be the most stable bonds in the system, in particular more stable than between a template and a newly formed product complex (e.g. $0_{B}$:$0¯_{B}$). On the other hand, hairpin melting temperatures had to be low enough to allow for a sufficient degree of thermal fluctuations. To reconcile this with the length of the strands, mismatches were introduced in the hairpin stems. The sequences of all strands are listed in Supplementary file 1.
+
+### Thermal cycling assays
+
+All reactions were performed in salt 20 mM Tris-HCl pH 8, 150 mM NaCl with added 20 mM MgCl2. DNA oligonucleotides (Biomers, Germany) were used at 200 nM concentration per strand in reactions containing a fixed-sequence subset of eight strands (e.g. 0/$0¯$ only) and 100 nM per strand in reactions containing all 16 different strands.
 
 Thermal cycling was done in a standard PCR cycler (Bio-Rad C1000). Reaction kinetics were obtained by running each reaction for different run times or numbers of cycles in parallel. The products were analyzed using native PAGE. The time between thermal cycling and PAGE analysis was minimized to exclude artifacts from storage on ice.
 
 Template sequences were prepared using a two-step protocol. Annealing from 95°C to 70°C within 1 hr, followed by incubation at 70 °C for 30 min. Afterwards, samples were cooled to 2 °C and stored on ice. When assembling complexes containing paired information domains (Figure 2), samples were slowly cooled down from 70 to 25 °C within 90 min before being transferred onto ice. DNA double hairpins were quenched into monomolecular state by heating to 95 °C and subsequent fast transfer into ice water.
 
-## Product analysis
+### Product analysis
 
-DNA complexes were analyzed using native polyacrylamide gel electrophoresis (PAGE) in gels at 5 % acrylamide concentration and 29:1 acrylamide / bisacrylamide ratio (Bio-Rad, Germany). Gels were run at electric fields of 14 V/cm at room temperature. Strand 0A/1A was covalently labeled with Cy5. Cy5 fluorescence intensities were later used to compute strand concentrations. As an additional color channel, strands were stained using SYBR Green I dye (New England Biolabs). Complexes were identified by comparing the products obtained from annealing different strand subsets.
+DNA complexes were analyzed using native polyacrylamide gel electrophoresis (PAGE) in gels at 5 % acrylamide concentration and 29:1 acrylamide / bisacrylamide ratio (Bio-Rad, Germany). Gels were run at electric fields of 14 V/cm at room temperature. Strand $0_{A}$/$1_{A}$ was covalently labeled with Cy5. Cy5 fluorescence intensities were later used to compute strand concentrations. As an additional color channel, strands were stained using SYBR Green I dye (New England Biolabs). Complexes were identified by comparing the products obtained from annealing different strand subsets.
 
-To correctly identify bands in the time-resolved measurements, gels were run with a marker lane. The marker contained strands 0A (200 nM), 0B (150 nM), 0C (50 nM), and 0D (100 nM), and was prepared using the two-step annealing protocol from 95 to 70 °C. The unequal strand concentrations ensured that the sample contained a mixture of mono-, di-, tri-, and tetramers.
+To correctly identify bands in the time-resolved measurements, gels were run with a marker lane. The marker contained strands $0_{A}$ (200 nM), $0_{B}$ (150 nM), $0_{C}$ (50 nM), and $0_{D}$ (100 nM), and was prepared using the two-step annealing protocol from 95 to 70 °C. The unequal strand concentrations ensured that the sample contained a mixture of mono-, di-, tri-, and tetramers.
 
 Electrophoresis gels were imaged in a multi-channel imager (Bio-Rad ChemiDoc MP), image post processing, and data analysis were performed using a self-developed LabVIEW software. Post-processing corrected for inhomogeneous illumination by the LEDs, image rotation, and distortions of the gel lanes if applicable. Background fluorescence was determined from empty lanes on the gel, albeit generally low in the Cy5 channel.
 
 For the determination of reaction yields, the intensities of all gel bands containing strands of the sequence length of interest were added up. For strings of four strands, these were the single tetramer as well as its complex with di- and tri- and tetramers. Single strands separated from their complements during electrophoresis (Figure 2 and Figure 6—figure supplement 1).
 
-## Thermal melting curves
+### Thermal melting curves
 
-Thermal melting curves were measured using either UV absorbance at 260 nm wavelength in a UV/Vis spectrometer (JASCO V-650, 1 cm optical path length), via quenching of the Cy5 label at the 5'-end of strand 0A (excitation: 620–650 nm, detection: 675–690 nm), or using fluorescence of the intercalating dye SYBR Green I (excitation: 450–490 nm, detection: 510–530 nm). Fluorescence measurements were performed in a PCR cycler (Bio-Rad C1000). Samples measured via fluorescence were at 200 nM of each strand, those measured via UV absorption contained 1 µM total DNA concentration to improve the signal-to-noise ratio. Before analysis of the melting curves (Mergny and Lacroix, 2003), data were corrected for baseline signals from reference samples containing buffer and intercalating dye, if applicable.
+Thermal melting curves were measured using either UV absorbance at 260 nm wavelength in a UV/Vis spectrometer (JASCO V-650, 1 cm optical path length), via quenching of the Cy5 label at the 5'-end of strand $0_{A}$ (excitation: 620–650 nm, detection: 675–690 nm), or using fluorescence of the intercalating dye SYBR Green I (excitation: 450–490 nm, detection: 510–530 nm). Fluorescence measurements were performed in a PCR cycler (Bio-Rad C1000). Samples measured via fluorescence were at 200 nM of each strand, those measured via UV absorption contained 1 µM total DNA concentration to improve the signal-to-noise ratio. Before analysis of the melting curves (Mergny and Lacroix, 2003), data were corrected for baseline signals from reference samples containing buffer and intercalating dye, if applicable.
 
-## Self-assembly and sedimentation analysis
+### Self-assembly and sedimentation analysis
 
 The samples were mixed in the replication buffer (150 mM NaCl, 20 mM MgCl2, 20 mM Tris-HCl pH 8) at a total oligomer concentration of 5 µM, that is varying concentration per strand depending on the number of different strands in the configuration (4, 7, or 8). The microfluidic chamber was assembled with a custom cut, 500 µm thick, Teflon foil placed between two plane sapphires (Figure 3—figure supplement 2). Three Peltier elements (QuickCool QC-31–1.4-3.7AS, purchased from Conrad Electronics, Germany) were attached to the backside of the chamber to provide full temperature control. The chamber was initially flushed with 3M Novec7500 (3M, Germany) to avoid bubble formation. The samples were pipetted into the microfluidic chamber through the 0.5 mm channels using microloader pipette tips (Eppendorf, Germany). The chamber was then sealed with Parafilm and heated to 95 °C for 10 s to fully separate the strands and cooled rapidly (within 30 s) to 25 °C. Assembly and sedimentation were monitored for 20 hr on a fluorescence microscope (Axiotech Vario, Zeiss, Germany) with two LEDs (490 nm and 625 nm, Thorlabs, Germany) using a 2.5 x objective (Fluar, Zeiss, Germany). The observed sedimentation was independent of the attached dye and its position (Figure 3—figure supplement 1c). Prior to image analysis the image stacks were stabilized using an ImageJ plugin (Li, 2008). The ratio of sedimented fluorescence relative to the first frame after heating was used to quantify sedimentation (Figure 3). The sedimentation time-traces (Figure 3b) were fitted with a Sigmoid function to determine the final concentration increase c/c0 (Figure 3c). The experiment was also performed with random 84 nt DNA strands at 5 µM total concentration to exclude unspecific agglomeration (Figure 3—figure supplement 1c).

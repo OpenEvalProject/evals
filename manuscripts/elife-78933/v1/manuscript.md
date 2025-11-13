@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Epidemiology, Mailman School of Public Health, Columbia University New York United States
-2. https://ror.org/00hj8s172 Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University New York United States
+1. Department of Epidemiology, Mailman School of Public Health, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Department of Environmental Health Sciences, Mailman School of Public Health, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
@@ -24,7 +24,7 @@ Like many places, by February 2022 South Africa had experienced four distinct pa
 
 ## Results
 
-## Model fit and validation
+### Model fit and validation
 
 The model-inference system uses case and death data to reconstruct the transmission dynamics of SARS-CoV-2, while accounting for under-detection of infection, infection seasonality, implemented nonpharmaceutical interventions (NPIs), and vaccination (see Materials and methods). Overall, the model-inference system is able to fit weekly case and death data in each of the nine South African provinces (Figure 1A, Appendix 1—figure 1, and additional discussion in Appendix 1). Additional testing (in particular, for the infection-detection rate) and visual inspections indicate that posterior estimates for the model parameters are consistent with those reported in the literature, or changed over time and/or across provinces in directions as would be expected (see Appendix 1).
 
@@ -40,13 +40,13 @@ In addition, as a fourth model validation, we generated retrospective prediction
 
 **Figure 2.:** Model-inference was trained on cases and deaths data since March 15, 2020 until 2 weeks (1st plot in each panel) or 1 week (2nd plot) before the Delta or Omicron (BA.1) wave (see timing on the x-axis); the model was then integrated forward using the estimates made at the time to predict cases (left panel) and deaths (right panel) for the remaining weeks of each wave. Blue lines and surrounding shades show model fitted cases and deaths for weeks before the prediction (line = median, dark blue area = 50% CrIs, and light blue = 80% CrIs, summarized over n=100 model-inference runs totaling 50,000 model realizations). Red lines show model projected median weekly cases and deaths; surrounding shades show 50% (dark red) and 80% (light red) CIs of the prediction (n = 50,000 model realizations). For comparison, reported cases and deaths for each week are shown by the black dots; however, those to the right of the vertical dash lines (showing the start of each prediction) were not used in the model. For clarity, here we show 80% CIs (instead of 95% CIs, which tend to be wider for longer-term projections) and predictions for the four most populous provinces (Gauteng in A and B; KwaZulu-Natal in C and D; Western Cape in E and F; and Eastern Cape in G and H). Predictions for the other five provinces are shown in Appendix 1—figure 3.
 
-## Pandemic dynamics and key model-inference, using Gauteng province as an example
+### Pandemic dynamics and key model-inference, using Gauteng province as an example
 
 Next, we use Gauteng, the province with the largest population, as an example to highlight pandemic dynamics in South Africa thus far and develop key model-inference estimates (Figure 3 for Gauteng and Appendix 1—figures 4–11 for each of the other eight provinces). Despite lower cases per capita than many other countries, infection numbers in South Africa were likely much higher due to under-detection. For Gauteng, the estimated infection-detection rate during the first pandemic wave was 4.59% (95% CI: 2.62–9.77%), and increased slightly to 6.18% (95% CI: 3.29–11.11%) and 6.27% (95% CI: 3.44–12.39%) during the Beta and Delta waves, respectively (Appendix 1—table 1). These estimates are in line with serology data. In particular, a population-level sero-survey in Gauteng found 68.4% seropositivity among those unvaccinated at the end of the Delta wave (Madhi et al., 2022). Combining the reported cases at that time (~6% of the population size) with undercounting of infections in sero-surveys due to sero-reversions and reinfections suggests that the overall detection rate would be less than 10%.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78933/elife-78933-fig3-v1.jpg)
 
-**Figure 3.:** (A) Observed relative mobility, vaccination rate, and estimated disease seasonal trend, compared to case and death rates over time. Key model-inference estimates are shown for the time-varying effective reproduction number R (tB), transmissibility R (TXC), population susceptibility (D, shown relative to the population size in percentage), infection-detection rate (E), and infection-fatality risk (F). Grey shaded areas indicate the approximate circulation period for each variant. In (B) – (F), blue lines and surrounding areas show the estimated mean, 50% (dark) and 95% (light) CrIs; boxes and whiskers show the estimated mean, 50% and 95% CrIs for estimated infection rates. All summary statistics are computed based on n=100 model-inference runs totaling 50,000 model realizations. Note that the transmissibility estimates (R.TX in C) have removed the effects of changing population susceptibility, NPIs, and disease seasonality; thus, the trends are more stable than the reproduction number (Rt in B) and reflect changes in variant-specific properties. Also note that infection-fatality risk estimates were based on reported COVID-19 deaths and may not reflect true values due to likely under-reporting of COVID-19 deaths
+**Figure 3.:** (A) Observed relative mobility, vaccination rate, and estimated disease seasonal trend, compared to case and death rates over time. Key model-inference estimates are shown for the time-varying effective reproduction number Rt (B), transmissibility RTX (C), population susceptibility (D, shown relative to the population size in percentage), infection-detection rate (E), and infection-fatality risk (F). Grey shaded areas indicate the approximate circulation period for each variant. In (B) – (F), blue lines and surrounding areas show the estimated mean, 50% (dark) and 95% (light) CrIs; boxes and whiskers show the estimated mean, 50% and 95% CrIs for estimated infection rates. All summary statistics are computed based on n=100 model-inference runs totaling 50,000 model realizations. Note that the transmissibility estimates (RTX in C) have removed the effects of changing population susceptibility, NPIs, and disease seasonality; thus, the trends are more stable than the reproduction number (Rt in B) and reflect changes in variant-specific properties. Also note that infection-fatality risk estimates were based on reported COVID-19 deaths and may not reflect true values due to likely under-reporting of COVID-19 deaths.
 
 Using our inferred under-detection (Figure 3E), we estimate that 32.83% (95% CI: 15.42–57.59%, Appendix 1—table 2) of the population in Gauteng were infected during the first wave, predominantly during winter when more conducive climate conditions and relaxed public health restrictions existed (see the estimated seasonal and mobility trends, Figure 3A). This high infection rate, while with uncertainty, is in line with serology measures taken in Gauteng at the end of the first wave (ranging from 15% to 27% among 6 sero-surveys during November 2020; Figure 1B) and a study showing 30% sero-positivity among participants enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial in South Africa during August – November 2020 (Shinde et al., 2021).
 
@@ -60,13 +60,161 @@ Due to these large pandemic waves, prior to the detection of Omicron (BA.1) in G
 
 **Figure 4.:** Heatmaps show (A) Estimated mean infection rates by week (x-axis) and province (y-axis), (B) Estimated mean cumulative infection numbers relative to the population size in each province, and (C) Estimated population susceptibility (to the circulating variant) by week and province. (D) Boxplots in the top row show the estimated distribution of increases in transmissibility for Beta, Delta, and Omicron (BA.1), relative to the Ancestral SARS-CoV-2, for each province (middle bar = median; edges = 50% CIs; and whiskers = 95% CIs; summarized over n=100 model-inference runs); boxplots in the bottom row show, for each variant, the estimated distribution of immune erosion to all adaptive immunity gained from infection and vaccination prior to that variant. Red lines show the mean across all provinces.
 
-## Model inferred epidemiological characteristics across the nine provinces in South Africa
+### Model inferred epidemiological characteristics across the nine provinces in South Africa
 
 Across all nine provinces in South Africa, the pandemic timing and intensity varied (Figure 4A–C). In addition to Gauteng, high cumulative infection rates during the first three pandemic waves are also estimated for Western Cape and Northern Cape (Figure 1C–E, Figure 4B and Appendix 1—table 2). Overall, all nine provinces likely experienced three large pandemic waves prior to the growth of Omicron (BA.1); estimated average cumulative infections ranged from 60% of the population in Limpopo to 122% in Northern Cape (Figure 4B). Corroboration for these cumulative infection estimates is derived from mortality data. Excess mortality before the Omicron (BA.1) wave was as high as 0.47% of the South African population by the end of November 2021 (The South African Medical Research Council (SAMRC), 2021), despite the relatively young population (median age: 27.6 years (Anonymous, 2020b) vs. 38.5 years in the US [United States Census Bureau, 2020]) and thus lower expected infection-fatality risk (Levin et al., 2020; O’Driscoll et al., 2021). Assuming an infection-fatality risk of 0.5% (similar to estimates in COVID-19 Forecasting Team, 2022 for South Africa), these excess deaths would convert to a 94% infection rate.
 
 We then use these model-inference estimates to quantify the immune erosion potential and increase in transmissibility for each VOC. Specifically, the immune erosion (against infection) potential is computed as the ratio of two quantities – the numerator is the increase of population susceptibility due to a given VOC and the denominator is population immunity (i.e. complement of population susceptibility) at wave onset. The relative increase in transmissibility is also computed as a ratio, that is, the average increase due to a given VOC relative to the ancestral SARS-CoV-2 (see Materials and methods). As population-specific factors contributing to transmissibility (e.g. population density and average contact rate) would be largely cancelled out in the latter ratio, we expect estimates of the VOC transmissibility increase to be generally applicable to different populations. However, prior exposures and vaccinations varied over time and across populations; thus, the level of immune erosion is necessarily estimated relative to the local population immune landscape at the time of the variant surge and should be interpreted accordingly. In addition, this assessment does not distinguish the sources of immunity or partial protection against severe disease; rather, it assesses the overall loss of immune protection against infection for a given VOC.
 
 In the above context, we estimate that Beta eroded immunity among 63.4% (95% CI: 45.0–77.9%) of individuals with prior ancestral SARS-CoV-2 infection and was 34.3% (95% CI: 20.5–48.2%) more transmissible than the ancestral SARS-CoV-2. These estimates for Beta are consistent across the nine provinces (Figure 4D, 1st column and Table 1), as well as with our previous estimates using national data for South Africa (Yang and Shaman, 2021c). Additional support for the high immune erosion of Beta is evident from recoverees of ancestral SARS-CoV-2 infection who were enrolled in the Novavax NVX-CoV2373 vaccine phase 2a-b trial (Shinde et al., 2021) and found to have a similar likelihood of COVID-19, mostly due to Beta, compared to those seronegative at enrollment.
+
+**Table 1.**
+ Estimated increases in transmissibility and immune erosion potential for Beta, Delta, and Omicron (BA.1).The estimates are expressed in percentage for the median (and 95% CIs). Note that estimated increases in transmissibility for all three variants are relative to the ancestral strain, whereas estimated immune erosion is relative to the composite immunity combining all previous infections and vaccinations accumulated until the surge of the new variant. See main text and Methods for details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Province</th>
+      <th>Quantity</th>
+      <th>Beta</th>
+      <th>Delta</th>
+      <th>Omicron (BA.1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">All combined</td>
+      <td>% Increase in transmissibility</td>
+      <td>34.3 (20.5, 48.2)</td>
+      <td>47.5 (28.4, 69.4)</td>
+      <td>94 (73.5, 121.5)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>63.4 (45, 77.9)</td>
+      <td>24.5 (0, 53.2)</td>
+      <td>54.1 (35.8, 70.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gauteng</td>
+      <td>% Increase in transmissibility</td>
+      <td>42.2 (35.6, 48.3)</td>
+      <td>51.8 (44.5, 58.7)</td>
+      <td>112.6 (96.2, 131.8)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>65 (57, 72.2)</td>
+      <td>44.3 (36.4, 54.9)</td>
+      <td>64.1 (56, 74.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">KwaZulu-Natal</td>
+      <td>% Increase in transmissibility</td>
+      <td>29.7 (22.9, 36.6)</td>
+      <td>52.5 (44.8, 60.8)</td>
+      <td>90.6 (77.9, 102.4)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>58.1 (48.3, 71.3)</td>
+      <td>17.3 (1.4, 27.6)</td>
+      <td>51.1 (39.3, 58.1)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Western Cape</td>
+      <td>% Increase in transmissibility</td>
+      <td>23.4 (20.2, 27.4)</td>
+      <td>55.2 (48.2, 62.7)</td>
+      <td>86.1 (72.6, 102.6)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>68.9 (62.5, 76.4)</td>
+      <td>41.5 (35.6, 53.5)</td>
+      <td>61 (55.5, 67.3)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Eastern Cape</td>
+      <td>% Increase in transmissibility</td>
+      <td>24.1 (18, 29.7)</td>
+      <td>50.2 (40.5, 57.4)</td>
+      <td>78.4 (67.6, 89.2)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>54.6 (45.1, 61.2)</td>
+      <td>24.2 (15.4, 36.2)</td>
+      <td>45.3 (34.5, 57.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Limpopo</td>
+      <td>% Increase in transmissibility</td>
+      <td>32.6 (24.9, 39.8)</td>
+      <td>38.9 (31.5, 50.5)</td>
+      <td>91.8 (82.6, 102.4)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>56.3 (38.4, 76.2)</td>
+      <td>1.8 (0, 21.2)</td>
+      <td>42.1 (33.2, 53.2)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mpumalanga</td>
+      <td>% Increase in transmissibility</td>
+      <td>31.2 (25.4, 38.6)</td>
+      <td>35.3 (24.9, 48.2)</td>
+      <td>88.6 (72.8, 104.3)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>55.6 (39.8, 70)</td>
+      <td>3.1 (0, 21.7)</td>
+      <td>45.9 (37.7, 55.7)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">North West</td>
+      <td>% Increase in transmissibility</td>
+      <td>43.8 (36.9, 52.1)</td>
+      <td>36.8 (25.6, 47.5)</td>
+      <td>100 (81.7, 121.1)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>67 (58.4, 75.4)</td>
+      <td>12.4 (0.4, 30.5)</td>
+      <td>56.6 (48.2, 68.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Free State</td>
+      <td>% Increase in transmissibility</td>
+      <td>42.7 (35, 49.8)</td>
+      <td>43.8 (31.9, 52.1)</td>
+      <td>92.2 (77.4, 106.9)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>70 (64.5, 76.2)</td>
+      <td>27.7 (17.6, 41.6)</td>
+      <td>57 (49.5, 66.6)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Northern Cape</td>
+      <td>% Increase in transmissibility</td>
+      <td>38.6 (32.6, 44.8)</td>
+      <td>63.1 (50.4, 79.2)</td>
+      <td>106 (94.7, 119.6)</td>
+    </tr>
+    <tr>
+      <td>% Immune erosion</td>
+      <td>75 (67.4, 82)</td>
+      <td>47.9 (40.5, 59.1)</td>
+      <td>64 (57.3, 72.6)</td>
+    </tr>
+  </tbody>
+</table>
 
 Estimates for Delta vary across the nine provinces (Figure 4D, 2nd column), given the more diverse population immune landscape among provinces after two pandemic waves. Overall, we estimate that Delta eroded 24.5% (95% CI: 0–53.2%) of prior immunity (gained from infection by ancestral SARS-CoV-2 and/or Beta, and/or vaccination) and was 47.5% (95% CI: 28.4–69.4%) more transmissible than the ancestral SARS-CoV-2. Consistent with this finding, and in particular the estimated immune erosion, studies have reported a 27.5% reinfection rate during the Delta pandemic wave in Delhi, India (Dhar et al., 2021) and reduced ability of sera from Beta-infection recoverees to neutralize Delta (Liu et al., 2021; de Oliveira and Lessells, 2021).
 
@@ -86,54 +234,68 @@ The COVID-19 pandemic has caused devastating public health and economic burdens 
 
 ## Materials and methods
 
-## Data sources and processing
+### Data sources and processing
 
 We used reported COVID-19 case and mortality data to capture transmission dynamics, weather data to estimate infection seasonality, mobility data to represent concurrent NPIs, and vaccination data to account for changes in population susceptibility due to vaccination in the model-inference system. Provincial level COVID-19 case, mortality, and vaccination data were sourced from the Coronavirus COVID-19 (2019-nCoV) Data Repository for South Africa (COVID19ZA)(Data Science for Social Impact Research Group at University of Pretoria, 2021). Hourly surface station temperature and relative humidity came from the Integrated Surface Dataset (ISD) maintained by the National Oceanic and Atmospheric Administration (NOAA) and are accessible using the ‘stationaRy’ R package (Iannone, 2020a; Iannone, 2020b). We computed specific humidity using temperature and relative humidity per the Clausius-Clapeyron Equation (Wallace and Hobbs, 2006). We then aggregated these data for all weather stations in each province with measurements since 2000 and calculated the average for each week of the year during 2000–2020.
 
 Mobility data were derived from Google Community Mobility Reports (Google Inc, 2020); we aggregated all business-related categories (i.e. retail and recreational, transit stations, and workplaces) in all locations in each province to weekly intervals. For vaccination, provincial vaccination data from the COVID19ZA data repository recorded the total number of vaccine doses administered over time; to obtain a breakdown for numbers of partial (one dose of mRNA vaccine) and full vaccinations (one dose of Janssen vaccine or two doses of mRNA vaccine), separately, we used national vaccination data for South Africa from Our World in Data (Anonymous, 2020a; Mathieu et al., 2021) to apportion the doses each day. In addition, cumulative case data suggested 18,586 new cases on November 23, 2021, whereas the South Africa Department of Health reported 868 (Department of Health Republic of South Africa, 2021a). Thus, for November 23, 2021, we used linear interpolation to fill in estimates for each province on that day and then scaled the estimates such that they sum to 868.
 
-## Model-inference system
+### Model-inference system
 
 The model-inference system is based on our previous work estimating changes in transmissibility and immune erosion for SARS-CoV-2 VOCs including Alpha, Beta, Gamma, and Delta (Yang and Shaman, 2021c; Yang and Shaman, 2022). Below we describe each component.
 
-## Epidemic model
+#### Epidemic model
 
-The epidemic model follows an SEIRSV (susceptible-exposed-infectious-recovered-susceptible-vaccination) construct per Equation 1:(1){dSdt=RLt−btetmtβtISN−ε−v1, t−v2,tdEdt=btetmtβtISN−EZt+ε dIdt=EZt−IDtdRdt=IDt−RLt+v1, t+v2,t
+The epidemic model follows an SEIRSV (susceptible-exposed-infectious-recovered-susceptible-vaccination) construct per Equation 1:
+
+$$
+{\frac{dS}{dt}=\frac{R}{L_{t}}−\frac{b_{t}e_{t}m_{t}\beta_{t}IS}{N}−\epsilon−v_{1, t}−v_{2,t}\frac{dE}{dt}=\frac{b_{t}e_{t}m_{t}\beta_{t}IS}{N}−\frac{E}{Z_{t}}+\epsilon \frac{dI}{dt}=\frac{E}{Z_{t}}−\frac{I}{D_{t}}\frac{dR}{dt}=\frac{I}{D_{t}}−\frac{R}{L_{t}}+v_{1, t}+v_{2,t}
+$$
 
 where S, E, I, R are the number of susceptible, exposed (but not yet infectious), infectious, and recovered/immune/deceased individuals; N is the population size; and ε is the number of travel-imported infections. In addition, the model includes the following key components:
 
-­(2)R0t=[aq2t+bqt+c][TcTt]Texp(3)bt=R0(t)R0(t)¯
+­
 
-In essence, the seasonality function in Equation 2 assumes that humidity has a bimodal effect on seasonal risk of infection, with both low and high humidity conditions favoring transmission [i.e. the parabola in 1st set of brackets, where q(t) is weekly specific humidity measured by local weather stations]; and this effect is further modulated by temperature, with low temperatures promoting transmission and temperatures above a certain threshold limiting transmission [i.e. 2nd set of brackets, where T(t) is weekly temperature measured by local weather stations and Tc is the threshold]. As SARS-CoV-2 specific parameters (a, b, c, Tc, and Texp in Equation 2) are not available, to estimate its seasonality using Equation 2, as done in Yang and Shaman, 2021c, we use parameters estimated for influenza (Yuan et al., 2021) and scale the weekly outputs [i.e., R0t ] by the annual mean (i.e. R0¯) per Equation 3. In doing so, the scaled outputs (bt) are no longer specific to influenza; rather, they represent the relative, seasonality-related transmissibility by week, general to viruses sharing similar seasonal responses. As shown in Figure 2A, bt estimates over the year averaged to 1 such that weeks with bt >1 (e.g. during the winter) are more conducive to SARS-CoV-2 transmission, whereas weeks with bt <1 (e.g. during the summer) have less favorable climate conditions for transmission. The estimated relative seasonal trend, bt, is used to adjust the relative transmission rate at time t in Equation 1.
+$$
+R_{0}t=[aq^{2}t+bqt+c][\frac{T_{c}}{Tt}]^{T_{exp}}
+$$
 
-## Observation model to account for under-detection and delay
+
+
+$$
+b_{t}=\frac{R_{0}(t)}{R_{0}(t)¯}
+$$
+
+In essence, the seasonality function in Equation 2 assumes that humidity has a bimodal effect on seasonal risk of infection, with both low and high humidity conditions favoring transmission [i.e. the parabola in 1st set of brackets, where q(t) is weekly specific humidity measured by local weather stations]; and this effect is further modulated by temperature, with low temperatures promoting transmission and temperatures above a certain threshold limiting transmission [i.e. 2nd set of brackets, where T(t) is weekly temperature measured by local weather stations and Tc is the threshold]. As SARS-CoV-2 specific parameters (a, b, c, Tc, and Texp in Equation 2) are not available, to estimate its seasonality using Equation 2, as done in Yang and Shaman, 2021c, we use parameters estimated for influenza (Yuan et al., 2021) and scale the weekly outputs [i.e., $R_{0}t$ ] by the annual mean (i.e. $R_{0}¯$) per Equation 3. In doing so, the scaled outputs (bt) are no longer specific to influenza; rather, they represent the relative, seasonality-related transmissibility by week, general to viruses sharing similar seasonal responses. As shown in Figure 2A, bt estimates over the year averaged to 1 such that weeks with bt >1 (e.g. during the winter) are more conducive to SARS-CoV-2 transmission, whereas weeks with bt <1 (e.g. during the summer) have less favorable climate conditions for transmission. The estimated relative seasonal trend, bt, is used to adjust the relative transmission rate at time t in Equation 1.
+
+#### Observation model to account for under-detection and delay
 
 Using the model-simulated number of infections occurring each day, we further computed the number of cases and deaths each week to match with the observations, as done in Yang et al., 2021a. Briefly, we include (1) a time-lag from infectiousness to detection (i.e. an infection being diagnosed as a case), drawn from a gamma distribution with a mean of Td,mean days and a standard deviation of Td, sd days, to account for delays in detection (Appendix 1—table 5); (2) an infection-detection rate (rt), that is the fraction of infections (including subclinical or asymptomatic infections) reported as cases, to account for under-detection; (3) a time-lag from infectiousness to death, drawn from a gamma distribution with a mean of 13–15 days and a standard deviation of 10 days; and (4) an infection-fatality risk (IFRt). To compute the model-simulated number of new cases each week, we multiplied the model-simulated number of new infections per day by the infection-detection rate, and further distributed these simulated cases in time per the distribution of time-from-infectiousness-to-detection. Similarly, to compute the model-simulated deaths per week and account for delays in time to death, we multiplied the simulated-infections by the IFR and then distributed these simulated deaths in time per the distribution of time-from-infectious-to-death. We then aggregated these daily numbers to weekly totals to match with the weekly case and mortality data for model-inference. For each week, the infection-detection rate (rt), the infection-fatality risk (IFRt)., and the two time-to-detection parameters (Td, mean and Td, sd) were estimated along with other parameters (see below).
 
-## Model inference and parameter estimation
+#### Model inference and parameter estimation
 
-The inference system uses the ensemble adjustment Kalman filter (EAKF [Anderson, 2001]), a Bayesian statistical method, to estimate model state variables (i.e. S, E, I, R from Equation 1) and parameters (i.e. βt , Zt, Dt, Lt, et, from Equation 1 as well as rt, IFRt and other parameters from the observation model). Briefly, the EAKF uses an ensemble of model realizations (n=500 here), each with initial parameters and variables randomly drawn from a prior range (see Appendix 1—table 5). After model initialization, the system integrates the model ensemble forward in time for a week (per Equation 1) to compute the prior distribution for each model state variable and parameter, as well as the model-simulated number of cases and deaths for that week. The system then combines the prior estimates with the observed case and death data for the same week to compute the posterior per Bayes' theorem (Anderson, 2001). During this filtering process, the system updates the posterior distribution of all model variables and parameters for each week. For a further discussion on the filtering process and additional considerations, see the Appendix 1; diagnosis of model posterior estimates for all parameters are also included in the Appendix 1 and Appendix 1—figures 15–23.
+The inference system uses the ensemble adjustment Kalman filter (EAKF [Anderson, 2001]), a Bayesian statistical method, to estimate model state variables (i.e. S, E, I, R from Equation 1) and parameters (i.e. $\beta_{t}$ , Zt, Dt, Lt, et, from Equation 1 as well as rt, IFRt and other parameters from the observation model). Briefly, the EAKF uses an ensemble of model realizations (n=500 here), each with initial parameters and variables randomly drawn from a prior range (see Appendix 1—table 5). After model initialization, the system integrates the model ensemble forward in time for a week (per Equation 1) to compute the prior distribution for each model state variable and parameter, as well as the model-simulated number of cases and deaths for that week. The system then combines the prior estimates with the observed case and death data for the same week to compute the posterior per Bayes' theorem (Anderson, 2001). During this filtering process, the system updates the posterior distribution of all model variables and parameters for each week. For a further discussion on the filtering process and additional considerations, see the Appendix 1; diagnosis of model posterior estimates for all parameters are also included in the Appendix 1 and Appendix 1—figures 15–23.
 
-## Estimating changes in transmissibility and immune erosion for each variant
+#### Estimating changes in transmissibility and immune erosion for each variant
 
-As in Yang and Shaman, 2021c, we computed the variant-specific transmissibility (RTX) as the product of the variant-specific transmission rate (βt) and infectious period (Dt). Note that Rt, the time-varying effective reproduction number, is defined as Rt=btetmtβtDtS/N=btetmtRTXS/N.   To reduce uncertainty, we averaged transmissibility estimates over the period a particular variant of interest was predominant. To find these predominant periods, we first specified the approximate timing of each pandemic wave in each province based on: (1) when available, genomic surveillance data; specifically, the onsets of the Beta wave in Eastern Cape, Western Cape, KwaZulu-Natal, and Northern Cape, were separately based on the initial detection of Beta in these provinces as reported in Tegally et al., 2021; the onsets of the Delta wave in each of the nine provinces, separately, were based on genomic sequencing data from the Network for Genomic Surveillance South Africa (NGS-SA)(The National Institute for Communicable Diseases (NICD) of the National Health Laboratory (NHLS) on behalf of the Network for Genomics Surveillance in South Africa (NGS-SA), 2021); and (2) when genomic data were not available, we used the week with the lowest case number between two waves. The specified calendar periods are listed in Appendix 1—table 6. During later waves, multiple variants could initially co-circulate before one became predominant. As a result, the estimated transmissibility tended to increase before reaching a plateau (see, e.g. Figure 2C). In addition, in a previous study of the Delta pandemic wave in India (Yang and Shaman, 2022), we also observed that when many had been infected, transmissibility could decrease a couple months after the peak, likely due to increased reinfections for which onward transmission may be reduced. Thus, to obtain a more variant-specific estimate, we computed the average transmissibility (RTX¯) using the weekly RTX estimates over the 8-week period starting the week prior to the maximal Rtx during each wave; if no maximum existed (e.g. when a new variant is less transmissible), we simply averaged over the entire wave. We then computed the change in transmissibility due to a given variant relative to the ancestral SARS-CoV-2 as (RTX,variant¯−RTX,ancestral¯)RTX,ancestral¯×100%.
+As in Yang and Shaman, 2021c, we computed the variant-specific transmissibility ($R_{TX}$) as the product of the variant-specific transmission rate ($\beta_{t}$) and infectious period (Dt). Note that Rt, the time-varying effective reproduction number, is defined as $R_{t}=b_{t}e_{t}m_{t}\beta_{t}D_{t}S/N=b_{t}e_{t}m_{t}R_{TX}S/N.  $ To reduce uncertainty, we averaged transmissibility estimates over the period a particular variant of interest was predominant. To find these predominant periods, we first specified the approximate timing of each pandemic wave in each province based on: (1) when available, genomic surveillance data; specifically, the onsets of the Beta wave in Eastern Cape, Western Cape, KwaZulu-Natal, and Northern Cape, were separately based on the initial detection of Beta in these provinces as reported in Tegally et al., 2021; the onsets of the Delta wave in each of the nine provinces, separately, were based on genomic sequencing data from the Network for Genomic Surveillance South Africa (NGS-SA)(The National Institute for Communicable Diseases (NICD) of the National Health Laboratory (NHLS) on behalf of the Network for Genomics Surveillance in South Africa (NGS-SA), 2021); and (2) when genomic data were not available, we used the week with the lowest case number between two waves. The specified calendar periods are listed in Appendix 1—table 6. During later waves, multiple variants could initially co-circulate before one became predominant. As a result, the estimated transmissibility tended to increase before reaching a plateau (see, e.g. Figure 2C). In addition, in a previous study of the Delta pandemic wave in India (Yang and Shaman, 2022), we also observed that when many had been infected, transmissibility could decrease a couple months after the peak, likely due to increased reinfections for which onward transmission may be reduced. Thus, to obtain a more variant-specific estimate, we computed the average transmissibility ($R_{TX}¯$) using the weekly RTX estimates over the 8-week period starting the week prior to the maximal Rtx during each wave; if no maximum existed (e.g. when a new variant is less transmissible), we simply averaged over the entire wave. We then computed the change in transmissibility due to a given variant relative to the ancestral SARS-CoV-2 as $\frac{(R_{TX,variant}¯−R_{TX,ancestral}¯)}{R_{TX,ancestral}¯}\times100%$.
 
-To quantify immune erosion, similar to Yang and Shaman, 2021c, we estimated changes in susceptibility over time and computed the change in immunity as ΔImm = St+1 – St +it, where St is the susceptibility at time-t and it is the new infections occurring during each week-t. We sum over all ΔImm estimates for a particular location, during each wave, to compute the total change in immunity due to a new variant, ΣΔImmv. Because filter adjustment could also slightly increase S, to avoid overestimation, here we only included substantial increases (i.e. ΔImm per week >0.5% of the total population) when computing changes due to a new variant. As such, we did not further account for smaller susceptibility increases due to waning immunity [for reference, for a population that is 50% immune and a 2-year mean immunity period, 0.5 / (52×2)×100% = 0.48% of the population would lose immunity during a week due to waning immunity]. We then computed the level of immune erosion as the ratio of ΣΔImmv to the model-estimated population immunity prior to the first detection of immune erosion, during each wave. That is, as opposed to having a common reference of prior immunity, here immune erosion for each variant depends on the state of the population immune landscape –that is, combining all prior exposures and vaccinations – immediately preceding the surge of that variant.
+To quantify immune erosion, similar to Yang and Shaman, 2021c, we estimated changes in susceptibility over time and computed the change in immunity as ΔImm = St+1 – St +it, where St is the susceptibility at time-t and it is the new infections occurring during each week-t. We sum over all ΔImm estimates for a particular location, during each wave, to compute the total change in immunity due to a new variant, $ΣΔImm_{v}$. Because filter adjustment could also slightly increase S, to avoid overestimation, here we only included substantial increases (i.e. ΔImm per week >0.5% of the total population) when computing changes due to a new variant. As such, we did not further account for smaller susceptibility increases due to waning immunity [for reference, for a population that is 50% immune and a 2-year mean immunity period, 0.5 / (52×2)×100% = 0.48% of the population would lose immunity during a week due to waning immunity]. We then computed the level of immune erosion as the ratio of $ΣΔImm_{v}$ to the model-estimated population immunity prior to the first detection of immune erosion, during each wave. That is, as opposed to having a common reference of prior immunity, here immune erosion for each variant depends on the state of the population immune landscape –that is, combining all prior exposures and vaccinations – immediately preceding the surge of that variant.
 
 For all provinces, model-inference was initiated the week starting March 15, 2020 and run continuously until the week starting February 27, 2022. To account for model stochasticity, we repeated the model-inference process 100 times for each province, each with 500 model realizations and summarized the results from all 50,000 model estimates.
 
-## Model validation using independent data
+### Model validation using independent data
 
 To compare model estimates with independent observations not assimilated into the model-inference system, we utilized three relevant datasets:
 
-## Model validation using retrospective prediction
+### Model validation using retrospective prediction
 
 As a fourth model validation, we generated model predictions at 2 or 1 weeks before the week of highest cases for the Delta and Omicron (BA.1) waves, separately, and compared the predicted cases and deaths to reported data unknown to the model. Predicting the peak timing, intensity, and epidemic turnaround requires accurate estimation of model state variables and parameters that determine future epidemic trajectories. This is particularly challenging for South Africa as the pandemic waves tended to progress quickly such that cases surged to a peak in only 3–7 weeks. Thus, we chose to generate retrospective predictions 2 and 1 weeks before the peak of cases in order to leverage 1–6 weeks of new variant data for estimating epidemiological characteristics. Specifically, for each pandemic wave, we ran the model-inference system until 2 weeks (or 1 week) before the observed peak of cases, halted the inference, and used the population susceptibility and transmissibility of the circulating variant estimated at that time to predict cases and deaths for the remaining weeks (i.e. 10–14 weeks into the future). Because the infection detection rate and fatality risk are linked to observations of cases and deaths, changes of these quantities during the prediction period could obscure the underlying infection rate and accuracy of the prediction. Thus, for these two parameters specifically, we used model-inference estimates for corresponding weeks to allow comparison of model-predicted cases and deaths with the data while focusing on testing the accuracy of other key model estimates (e.g. transmissibility of the new variant). As for the model-inference, we repeated each prediction 100 times, each with 500 model realizations and summarized the results from all 50,000 ensemble members.
 
-## Data Availability
+### Data Availability
 
 All data used in this study are publicly available as described in the “Data sources and processing” section.
 
-## Code availability
+### Code availability
 
 All source code and data necessary for the replication of our results and figures are publicly available at https://github.com/wan-yang/covid_SouthAfrica (copy archived at swh:1:rev:40c0e5ac5ab65005b600a4ca646fec04b0870b81) (Yang, 2022).

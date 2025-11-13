@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.38131.001 The mitochondrion of apicomplexan parasites is critical for parasite survival, although the full complement of proteins that localize to this organelle has not been defined. Here we undertake two independent approaches to elucidate the mitochondrial proteome of the apicomplexan Toxoplasma gondii . We identify approximately 400 mitochondrial proteins, many of which lack homologs in the animals that these parasites infect, and most of which are important for parasite growth. We demonstrate that one such protein, termed Tg ApiCox25, is an important component of the parasite cytochrome c oxidase (COX) complex. We identify numerous other apicomplexan-specific components of COX, and conclude that apicomplexan COX, and apicomplexan mitochondria more generally, differ substantially in their protein composition from the hosts they infect. Our study highlights the diversity that exists in mitochondrial proteomes across the eukaryotic domain of life, and provides a foundation for defining unique aspects of mitochondrial biology in an important phylum of parasites.
+The mitochondrion of apicomplexan parasites is critical for parasite survival, although the full complement of proteins that localize to this organelle has not been defined. Here we undertake two independent approaches to elucidate the mitochondrial proteome of the apicomplexan Toxoplasma gondii. We identify approximately 400 mitochondrial proteins, many of which lack homologs in the animals that these parasites infect, and most of which are important for parasite growth. We demonstrate that one such protein, termed TgApiCox25, is an important component of the parasite cytochrome c oxidase (COX) complex. We identify numerous other apicomplexan-specific components of COX, and conclude that apicomplexan COX, and apicomplexan mitochondria more generally, differ substantially in their protein composition from the hosts they infect. Our study highlights the diversity that exists in mitochondrial proteomes across the eukaryotic domain of life, and provides a foundation for defining unique aspects of mitochondrial biology in an important phylum of parasites.
 
 ## Introduction
 
@@ -40,11 +40,19 @@ Elucidating the proteomes of mitochondria is key to understanding their function
 
 ## Results
 
-## Spatially-restricted biotinylation of mitochondrial matrix proteins
+### Spatially-restricted biotinylation of mitochondrial matrix proteins
 
 A genetically modified plant ascorbate peroxidase (APEX) was recently developed as a tool for biotinylating proximal proteins in mammalian cells (Hung et al., 2014; Rhee et al., 2013). This technique was used to define the proteome of the matrix and inter-membrane space of mammalian mitochondria. An alternative spatial biotinylation approach involves the use of a genetically modified, promiscuous biotin protein ligase (BirA*), an approach that is typically utilised to elucidate protein-protein interactions (Roux et al., 2012). We sought to utilize APEX and BirA* to map the mitochondrial matrix proteome of T. gondii.
 
 We generated parasite strains expressing APEX or BirA* fused at their N-termini to the mitochondrial matrix-targeting sequence of TgHsp60 (van Dooren et al., 2009). Immunofluorescence assays demonstrated that both mitochondrially-targeted APEX (mtAPEX) and mitochondrially-targeted BirA* (mtBirA*) co-localised with TgTom40, a marker for the T. gondii mitochondrion (Figure 1A–B; van Dooren et al., 2016). Western blots confirmed the presence of mtAPEX and mtBirA* proteins of the expected mass (Figure 1C–D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Immunofluorescence assays of parasites expressing c-myc-tagged, mitochondrially-targeted APEX (A) and BirA* (B), labelled with anti-c-myc (green) and the mitochondrial marker TgTom40 (red). Scale bars are 2 µm. (C–D) Western blots of parasites expressing c-myc-tagged, mitochondrially-targeted APEX (C) and BirA* (D), labelled with anti-c-myc. (E) Oregon Green-conjugated avidin (Avidin-OG) labelling of T. gondii parasites expressing mtAPEX, and cultured in the absence (top) or presence (bottom) of biotin-phenol and H2O2. Biotinylated proteins are labelled in green. (F) Avidin-OG labelling of T. gondii parasites expressing mtBirA*, and cultured in the absence (top) or presence (bottom) of biotin. Biotinylated proteins are labelled in green. Scale bars are 2 µm. (G) Neutravidin-HRP protein blot of WT, mtBirA* or mtAPEX parasites cultured in the presence of biotin or biotin-phenol. (H) Western blots of the mitochondrial matrix marker mtHsp60 and the mitochondrial intermembrane space marker cyt c in WT, mtBirA* or mtAPEX parasites cultured in the presence of biotin (lanes 1 – 4) or biotin-phenol (lanes 5 – 8). Parasites were either harvested following treatment to yield the total (T) protein fraction, or biotinylated proteins were purified on a streptavidin-agarose column to yield the bound (B) fraction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note: vector is not drawn to scale.
 
 To determine whether mtAPEX could label mitochondrial proteins, we treated parasites with biotin-phenol for 1 hr, initiated biotinylation by adding H2O2 for 1 min, then fixed and labelled parasites with Oregon green-conjugated avidin, a specific stain for biotinylated proteins. We observed mitochondrial labelling in treated parasites, and not in untreated parasites (Figure 1E), consistent with mtAPEX mediating the biotinylation of mitochondrial proteins. In untreated parasites, we observed labelling of endogenously biotinylated proteins in the apicoplast, consistent with previous observations (Figure 1E; Chen et al., 2015; Jelenska et al., 2001).
 
@@ -54,11 +62,19 @@ To observe the extent of protein biotinylation in the treated mtAPEX and mtBirA*
 
 To determine the specificity of labelling, we extracted proteins from treated WT, mtAPEX and mtBirA* parasites and subjected these to affinity purification using streptavidin-conjugated magnetic beads. We separated purified proteins by SDS-PAGE and probed with antibodies against TgHsp60 (mtHsp60), a mitochondrial matrix marker (Toursel et al., 2000; van Dooren et al., 2016), and against T. gondii cytochrome c (cyt c), a mitochondrial intermembrane space marker (E.T. and G.v.D., unpublished). We did not detect mtHsp60 or cyt c in the streptavidin bound fraction in WT parasites treated with biotin-phenol and H2O2, or with biotin (Figure 1H). We detected bound mtHsp60, but not bound cyt c, in proteins extracted from both biotin-phenol-treated mtAPEX and biotin-treated mtBirA* parasites. This is consistent with the mitochondrial labelling that we observe being specific for the mitochondrial matrix.
 
-## Quantitative proteomics to elucidate the mitochondrial matrix proteome
+### Quantitative proteomics to elucidate the mitochondrial matrix proteome
 
 Having established two independent approaches for specifically labelling mitochondrial matrix proteins, we next undertook a label-free quantitative proteomic analysis of biotinylated proteins in treated mtAPEX and mtBirA* parasites. First, we generated three independent cell lysate pools of WT and mtAPEX cells treated with biotin-phenol and H2O2, and WT and mtBirA* cells treated with biotin. Biotinylated proteins were purified from these lysates using streptavidin beads, reduced, alkylated, and trypsin-digested before being identified using mass spectrometry (MS). Triplicate samples were then processed through our in-house quantitation pipeline to determine the relative abundance of each protein identified in the mtAPEX or mtBirA* samples as compared to WT controls. These data are represented on a volcano plot as a fold-change (log2 value) vs significance of the change (–log10 p value) (Figure 2A–B). This revealed an enrichment of numerous proteins in the mtAPEX and mtBirA* samples. Using cut-offs of p<0.001 and a WT:mtAPEX/mtBirA* log2 fold change of ≤−2.5, 421 proteins were identified in total: 213 proteins in the APEX samples and 369 proteins in the mtBirA* samples, with 161 proteins common to both proteomes (Figure 2C; Supplementary file 1). Hereafter, we refer to the list of 421 proteins as the mitochondrial proteome of T. gondii.
 
-## Bioinformatic characterisation of the mitochondrial proteome
+![Figure 2.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Volcano plots showing the log2 protein ratios vs –log10 p values of biotinylated proteins in WT compared to mtAPEX (WT/APEX) samples (A) and in WT compared to mtBirA* samples (WT/BirA*) (B) following the quantitative pipeline analysis. Proteins were deemed to be enriched in the mitochondrion if the log2 fold change in protein expression was ≤−2.5 and the p value ≤ 0.001 (red). (C) Venn diagram of the mtAPEX and mtBirA* proteomes. 161 proteins were identified in both proteomes, while 52 were unique to the mtAPEX proteome and 208 unique to the mtBirA* proteome. (D) Metabolic map of expected mitochondrial proteins (circles), showing proteins present (blue) and absent (yellow) from the T. gondii mitochondrial proteome. Black arrows represent the flow of metabolites through metabolic pathways in the mitochondrion, and blue arrows depict the flow of ions, minerals or metabolic pathway products.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Pie chart depicting mitochondrial targeting peptide predictions of the T. gondii mitochondrial proteome using MitoProt II. Proteins with high (>0.9; blue), medium (0.5 – 0.9; aqua) and low (<0.5; pink) prediction scores are shown.
+
+### Bioinformatic characterisation of the mitochondrial proteome
 
 To test the validity of the T. gondii mitochondrial proteome, we undertook a series of in silico and experimental analyses. Proteins targeted to the mitochondrial matrix typically harbor an N-terminal amphipathic α-helix that facilitates import into the organelle (van Dooren et al., 2016). We examined the T. gondii mitochondrial proteome for proteins predicted to contain such an N-terminal targeting domain using the rules-based computational prediction tool MitoProt II (Claros and Vincens, 1996). Approximately 40% of proteins in the proteome had a strongly predicted N-terminal targeting sequences (probability of mitochondrial import >0.9), and a further ~20% had a moderately predicted targeting sequence (probability of import 0.5 – 0.9; Figure 2—figure supplement 1; Supplementary file 1). A further ~40% had a low probability of mitochondrial import (probability of import <0.5; Figure 2—figure supplement 1). This suggests that either the mitochondrial proteome has many false positives, or that many T. gondii mitochondrial proteins lack N-terminal targeting sequences, or that mitochondrial prediction tools such as MitoProt II are not suitable for analysis of mitochondrial proteins from T. gondii. Notably in this regard, the dataset used to develop MitoProt II did not include T. gondii proteins (Claros and Vincens, 1996).
 
@@ -72,17 +88,25 @@ We analysed which of the 97 ‘true positive’ mitochondrial proteins were foun
 
 We examined the mitochondrial proteome for likely false positives. We identified 16 proteins that other studies have demonstrated do not localise to the mitochondrion (Supplementary file 3). Notably, 14 of these were identified only in the mtBirA* proteome, while one was present in both the mtBirA* and mtAPEX proteomes, again consistent with the existence of more false positives in the mtBirA* proteome. In total, of the 421 proteins in the mitochondrial proteome, we identified 97 that are known or expected to localise to the mitochondrion, and 16 that are known to localise elsewhere.
 
-## Localisation of uncharacterized proteins from the mitochondrial proteome
+### Localisation of uncharacterized proteins from the mitochondrial proteome
 
 Of the 421 putative mitochondrial proteins identified in the mitochondrial proteome, 150 (36%) were annotated as ‘hypothetical’ proteins, and a further 140 (33%) had no previously defined role or experimentally determined localization in T. gondii (Supplementary file 1). We attempted to localize 37 proteins selected at random from this ‘uncharacterized’ protein data set by introducing a hemagglutinin (HA) epitope tag at the 3’ end of the native locus of genes encoding these proteins. We then undertook immunofluorescence assays to determine the localization of the proteins, co-labelling with anti-TgTom40 as a marker for the mitochondrion (van Dooren et al., 2016). We were successful in localizing 27 of the 37 selected proteins. Of these, 22 (81%) localized to the mitochondrion, three to the cytosol, one to the endoplasmic reticulum and one to the nucleus (Figure 3). All 13 that were identified in both the mtAPEX and mtBirA* proteomes localized to the mitochondrion, suggesting a high degree of confidence in the mitochondrial localization of proteins identified from both datasets. Five of the six proteins found solely in the mtAPEX proteome localized to the mitochondrion, while four of the eight proteins found only in the mtBirA* proteome localized to the mitochondrion. This is consistent with the dataset of proteins identified only in the mtBirA* proteome having more false positives than the other datasets.
 
-## Phylogenetic analyses of the mitochondrial proteome
+![Figure 3.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig3-v2.jpg)
+
+**Figure 3.:** (A–AA) Proteins with no previously determined localization in T. gondii were selected from the mitochondrial proteome, and the corresponding gene was tagged at the 3’-terminus of the open reading frame with a HA tag. Immunofluorescence assays depict HA-tagged proteins (green) co-labelled with the mitochondrial marker TgTom40 (red). The http://toxodb.org gene identification number is depicted for every gene that was tagged.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Note: vector is not drawn to scale.
+
+### Phylogenetic analyses of the mitochondrial proteome
 
 We next examined the evolutionary history of proteins from the mitochondrial proteome. First, we undertook reciprocal Basic Local Alignment Search Tool (BLAST) searches to identify homologs of proteins from the mitochondrial proteome in the apicomplexan parasites Plasmodium falciparum, Babesia bovis and Cryptosporidium parvum, and the chromerid Vitrella brassicaformis. Using this approach, we identified homologs for 71% of T. gondii mitochondrial proteins in P. falciparum, 61% in B. bovis, 28% in C. parvum, and 83% in V. brassicaformis (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig4-v2.jpg)
 
-**Figure 4.:** T.gondii mitochondrial proteome reveal that many mitochondrial proteins are restricted to T. gondii and related organisms, and that most are important for parasite survival.(A) Bar graph depicting the percentage of orthologs from the mitochondrial proteome of T. gondii (Tg) found in P. falciparum (Pf), B. bovis (Bb), C. parvum (Cp) and V. brassicaformis (Vb). Phenotype scores are indicated with shading, and reveal that most ortholog groups in each category are important or critical for tachyzoite growth. (B–C) Venn diagram depicting ortholog groupings from the mitochondrial proteome of T. gondii compared to (B) non-coccidian apicomplexans, chromerids and eukaryotes, or (C) non-coccidian apicomplexans, chromerids and animals. (D) Bar graph depicting distribution of phenotype scores in genes belonging to ortholog groups found only in T. gondii and other coccidians (Tg only), in T. gondii, non-coccidian apicomplexans and chromerids (Tg+ Api+ Chr), and in T. gondii, non-coccidian apicomplexans, chromerids and animals (Tg+ Api+ Chr+ Api). In (A) and (D), genes with phenotype scores of >-2 were considered dispensable, −2 to −4 were considered important, and <-4 were considered critical.
+**Figure 4.:** (A) Bar graph depicting the percentage of orthologs from the mitochondrial proteome of T. gondii (Tg) found in P. falciparum (Pf), B. bovis (Bb), C. parvum (Cp) and V. brassicaformis (Vb). Phenotype scores are indicated with shading, and reveal that most ortholog groups in each category are important or critical for tachyzoite growth. (B–C) Venn diagram depicting ortholog groupings from the mitochondrial proteome of T. gondii compared to (B) non-coccidian apicomplexans, chromerids and eukaryotes, or (C) non-coccidian apicomplexans, chromerids and animals. (D) Bar graph depicting distribution of phenotype scores in genes belonging to ortholog groups found only in T. gondii and other coccidians (Tg only), in T. gondii, non-coccidian apicomplexans and chromerids (Tg+ Api+ Chr), and in T. gondii, non-coccidian apicomplexans, chromerids and animals (Tg+ Api+ Chr+ Api). In (A) and (D), genes with phenotype scores of >-2 were considered dispensable, −2 to −4 were considered important, and <-4 were considered critical.
 
 We were next interested in the extent of novelty in the T. gondii mitochondrial proteome when compared to non-apicomplexan eukaryotes. We examined conserved orthology groupings of the 421 proteins in the mitochondrial proteome and identified 418 proteins that clustered into 412 separate orthology groups (http://orthomcl.org; Chen et al., 2006). We identified 86 proteins that were unique to T. gondii and closely related coccidians such as Neospora caninum, 243 proteins with orthologs in non-apicomplexan eukaryotes, and a set of 89 proteins that were found only in apicomplexans and/or chromerids (Figure 4B; Supplementary file 1).
 
@@ -90,13 +114,33 @@ Novel drug targets against apicomplexans are likely to emerge from proteins whic
 
 In an additional analysis, we searched for homologs of proteins from the T. gondii mitochondrial proteome in a recently-published ‘high-confidence’ mitochondrial proteome of yeast (Morgenstern et al., 2017). We identified yeast homologs to 161 proteins in the T. gondii mitochondrial proteome (Supplementary file 1). Of these, 103 were predicted to localize to the yeast mitochondrion, and 58 were predicted not to localize to the yeast mitochondrion. The high proportion of non-mitochondrial homologs suggests that aspects of mitochondrial biology in T. gondii may localize elsewhere in other eukaryotes. Notably, however, 42 of the 58 ‘non-mitochondrial’ proteins (72%) were identified in the BirA*-only dataset, which our previous analyses suggest may harbor more false positives. It is conceivable, therefore, that many of the proteins with non-mitochondrial homologs in yeast are false positives.
 
-## Phenotype analyses of the mitochondrial proteome
+### Phenotype analyses of the mitochondrial proteome
 
 Our data indicate substantial novelty in mitochondrial biology of T. gondii and related organisms. Often, such derived features are less important for an organism’s survival than proteins that have been conserved across evolution. A recent genome-wide, CRISPR-based loss-of-function screen in T. gondii found that genes conserved in eukaryotes were, in general, more important for parasite fitness than genes with a more restricted phylogenetic distribution (Sidik et al., 2016). To determine whether the same was true for mitochondrial proteins, we analysed the T. gondii mitochondrial proteome using the Sidik et al data set (Sidik et al., 2016). The Sidik et al study ascribed phenotype scores to each gene in the T. gondii nuclear genome, with more negative scores indicative of a greater importance for a gene’s contribution to parasite fitness. The Sidik et al study found that most genes that were important for parasite growth had phenotype scores of below −2, and most dispensable genes had phenotype scores of greater than −2 (Sidik et al., 2016). Based on this, we categorised proteins in the mitochondrial proteome as dispensable (phenotype score >-2), important (−2 to −4), or critical (<-4) for parasite growth. Notably, 35% of proteins from the mitochondrial proteome were critical, and 39% were important, for parasite growth (Figure 4A; Supplementary file 1). Of the T. gondii mitochondrial proteins with orthologs in P. falciparum,~75% were important or critical, and similar values apply for those with orthologs in B. bovis, C. parvum, and V. brassicaformis (Figure 4A). Of the proteins conserved between T. gondii and apicomplexans/chromerids, over 80% were important or critical for parasite growth, while over 70% of proteins collectively found in apicomplexans, chromerids and animals were important or critical (Figure 4D; Supplementary file 1).
 
-## TgApiCox25 is important for mitochondrial oxygen consumption in T. gondii.
+### TgApiCox25 is important for mitochondrial oxygen consumption in T. gondii.
 
 Having identified ~175 proteins in the T. gondii mitochondrial proteome that have no clear orthologs outside the apicomplexan/chromerid lineage, and no predicted function, we embarked on a broad project to characterise the importance and role of these proteins. In the remainder of this manuscript, we focus on one such protein, annotated as TGGT1_264040, which (for reasons that will become apparent) we termed TgApiCox25. TgApiCox25 belongs to an OrthoMCL ortholog grouping that is restricted to apicomplexans, contains no recognisable functional domains, and is important for parasite fitness. It has a predicted molecular mass of 25 kDa, and we confirmed its localisation to the mitochondrion (Figure 3R). To establish the importance of TgApiCox25 for parasite growth, and to facilitate subsequent characterisation of its function, we replaced the native promoter of TgApiCox25 with an anhydrotetracycline (ATc)-regulated promoter using a CRISPR-based genome editing approach (Figure 5—figure supplement 1A). We performed PCR screening analysis to identify clonal parasites that had integrated the ATc-regulated promoter into the TgApiCox25 locus (Figure 5—figure supplement 1B–C). We termed the resultant ATc-regulated TgApiCox25 strain ‘rTgApiCox25’. We then introduced a HA tag at the 3’ end of the open reading frame of the rTgApiCox25 locus. We termed the resultant HA-tagged, ATc-regulated TgApiCox25 strain ‘rTgApiCox25-HA’. To measure the extent of target protein knockdown upon the addition of ATc in the rTgApiCox25 strain, we cultured parasites in the absence of ATc, or in the presence of ATc for 1 – 3 days, then undertook western blotting. This revealed substantial depletion of TgApiCox25-HA 2 days after ATc addition, with the TgApiCox25-HA protein barely detectable after 3 days in ATc (Figure 5A). To determine the importance of TgApiCox25 on parasite growth we compared plaque sizes of parental wild type (WT) and rTgApiCox25 parasites grown in the absence or presence of ATc for 9 days. This revealed that growth of rTgApiCox25, but not WT, parasites was severely impaired in the presence of ATc (Figure 5B–C). Interestingly, rTgApiCox25 parasites grew better in the absence of ATc than WT parasites (Figure 5B–C). To determine whether the growth phenotype observed upon TgApiCox25 knockdown was specifically due to loss of TgApiCox25, we complemented the rTgApiCox25 strain with a copy of TgApiCox25 expressed from the constitutive α-tubulin promoter (generating a strain we termed cTgApiCox25-HA/rTgApiCox25). The presence of the constitutive copy of TgApiCox25 restored growth of rTgApiCox25 parasites in the presence of ATc (Figure 5B–C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig5-v2.jpg)
+
+**Figure 5.:** (A) Western blot of proteins extracted from rTgApiCox25-HA parasites grown in the absence of ATc, or in ATc for 1–3 days, and detected using anti-HA antibodies (top) and anti-TgTom40 (as a loading control; bottom). (B) Plaque assays measuring growth of WT, rTgApiCox25 and complemented cTgApiCox25-HA/rTgApiCox25 parasites cultured in the absence (top) or presence (bottom) of ATc. Assays are from a single experiment and are representative of 3 independent experiments. (C) Quantification of plaque size from WT, rTgApiCox25 and complemented cTgApiCox25-HA/rTgApiCox25 parasites grown in the absence or presence of ATc for 9 days. Box and whisker plots depict the median plaque size (centre line), the 25th and 75th percentiles (box) and the 5th and 95th percentiles (lines). Data are from 30 plaques per flask from a single experiment, except in the case of the rTgApiCox25 strain, where only 18 plaques were discernible. (D) Basal mitochondrial oxygen consumption rates (mOCR) in WT parasites grown in the absence of ATc or in the presence of ATc for 3 days (orange), and rTgApiCox25 parasites grown in the absence of ATc, or in the presence of ATc for 1 – 3 days (blue). A linear mixed-effects model was fitted to the data, and the values depict the mean ± s.e.m. from three independent experiments. A one-way ANOVA followed by Tukey’s multiple pairwise comparison test was performed. Relevant p values are shown. (E) Basal mOCR plotted against basal extracellular acidification rate (ECAR) of WT cells grown in the absence of ATc, the presence of cycloheximide (CHX) for 1 day, or the presence of ATc for 3 days, and rTgApiCox25 parasites grown in the absence of ATc or presence of ATc for 1 – 3 days (mean ± s.e.m. of the linear mixed-effects model described above; n = 3).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Diagram depicting the promoter replacement strategy to generated ATc-regulated TgApiCox25. A single guide RNA (sgRNA) was designed to target the T. gondii genome near the start codon of TgApiCox25, and mediate a double stranded break at the target site. A plasmid containing the sgRNA and GFP-tagged Cas9 endonuclease was co-transfected into T. gondii parasites with a PCR product encoding the ATc regulated ‘t7s4’ promoter, which contains 7 copies of the Tet operon and a Sag4 minimal promoter, flanked by 50 bp of sequence homologous to the regions immediately up- and down-stream of the TgApiCox25 start codon. The PCR product also contain a ‘spacer’ region that separates the regulatable promoter from the native promoter of TgApiCox25 gene to enable sufficient regulation. The parasite’s homologous repair pathway will mediate integration of the PCR product into the TgApiCox25 locus. The ‘TgApiCox25 fwd’, ‘TgApiCox25 rvs’ and ‘t7s4 fwd’ primers were used in screening parasite clones for successful integration of the regulatable promoter at the target site. (B–C) PCR screening analysis using genomic DNA extracted from parasite clones to identify clones that had successfully integrated the promoter. (B) Screening using the TgApiCox25 fwd and rvs primers. This will amplify a product of 1,064 bp if the locus is unmodified, and a product of 2,991 bp if the ATc-regulatable promoter has integrated successfully. (C) Screening using the TgApiCox25 rvs and t7s4 fwd primers. This will amplify a product of 928 bp if the ATc-regulatable promoter has integrated successfully. The analyses in B and C revealed that clone three had successfully integrated the ATc-regulatable promoter.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Maximal mOCR, comprising of the sum of the basal mOCR (colored) and the spare capacity (white), of TATi/∆ku80 (WT) parasites grown in the absence of ATc or in the presence of ATc for 3 days (orange), and rTgApiCox25 cells grown in the absence of ATc, or in the presence of ATc for 1–3 days (blue). A linear mixed-effects model was fitted to the data, which are depicted as the mean ±s.e.m. from three independent experiments. A one-way ANOVA followed by Tukey’s multiple pairwise comparison test was performed on the maximal mOCR values. Relevant p values are shown.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Immunofluorescence assays assessing mitochondrial morphology in rTgApiCox25 parasites grown in the absence of ATc (top) or in the presence of ATc for 3 days (bottom). Mitochondria were labelled using antibodies against TgTom40 (red). Images are representative of 100 four-cell vacuoles examined in two independent experiments. The scale bar is 2 µm. (B) Plaque assays of rTgApiCox25 parasites grown for 9 days in the absence (left) or presence (right) of ATc. rTgApiCox25 parasites were not preincubated in ATc (no ATc preinc; top) or pre-incubated in ATc for 3 days (3d + ATc preinc; bottom) before commencing the experiment. Plaque assays are from a single experiment, representative of 3 independent experiments.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Note: vector is not drawn to scale.
 
 A major function of the mitochondrion is in oxidative phosphorylation, where the catabolism of organic molecules by the TCA cycle and other metabolic pathways contributes electrons to an electron transport chain on the inner membrane of the organelle (van Dooren et al., 2006). Electrons are ultimately used to reduce O2, with the electron transport chain simultaneously generating a proton gradient across the inner membrane. This proton gradient is then used to drive the F-type ATP synthase, a rotary motor that phosphorylates ADP to form ATP, the energy currency of cells. Defects in any of the processes involved in oxidative phosphorylation will lead to defects in mitochondrial O2 consumption. To test whether TgApiCox25 has a role in oxidative phosphorylation, we established an assay to measure O2 consumption by the parasite using a Seahorse XFe96 extracellular flux analyzer. We grew rTgApiCox25 parasites in the absence of ATc, or presence of ATc for 1 – 3 days then used the XFe96 analyzer to measure basal mitochondrial O2 consumption rates (mOCR) in extracellular parasites. This revealed a significant,~80% depletion in basal mOCR upon TgApiCox25 knockdown (Figure 5D), concomitant with knockdown of protein levels (Figure 5A).
 
@@ -108,15 +152,253 @@ Next, we asked whether knockdown of TgApiCox25 led to general defects in mitocho
 
 The data presented here indicate that the defects we observed in mitochondrial O2 consumption upon TgApiCox25 knockdown were not due to general defects in parasite viability, metabolism or mitochondrial morphology. We conclude that TgApiCox25 has an important, specific role in oxidative phosphorylation in T. gondii parasites.
 
-## TgApiCox25 is a component of cytochrome c oxidase
+### TgApiCox25 is a component of cytochrome c oxidase
 
 Our findings that TgApiCox25 is critical for mitochondrial O2 consumption prompted us to investigate whether this protein is a component of the mitochondrial electron transport chain that mediates O2 consumption. The mitochondrial electron transport chain consists of several large protein complexes. To determine whether TgApiCox25 exists in a protein complex, we extracted proteins from TgApiCox25-HA parasites using 1% (v/v) Triton X-100 detergent, and separated these proteins by blue native-PAGE, a technique that preserves the native conformation of proteins and protein complexes. Western blotting of TgApiCox25-HA extracts separated by blue native-PAGE and detected with anti-HA antibodies revealed that TgApiCox25-HA exists at a molecular mass of ~600 kDa (Figure 6A). By contrast, the monomeric form of TgApiCox25-HA, extracted from parasites and separated by SDS-PAGE, had a mass of approximately 25 kDa (Figure 6B). We conclude that TgApiCox25 is a component of a ~ 600 kDa protein complex in the parasite mitochondrion.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot of proteins extracted from TgApiCox25-HA parasites, separated by blue native-PAGE, and detected with anti-HA antibodies. (B) Western blot of proteins extracted from TgApiCox25-HA parasites, separated by SDS-PAGE, and detected with anti-HA antibodies. (C) Volcano plot showing the log2 fold change vs –log10 p values of proteins purified from TgApiCox25-HA vs TgTom40-HA parasites using anti-HA immunoprecipitations and detected by mass spectrometry. Only proteins detected in each of the three independent experiments for both parasite lines are depicted. Proteins enriched in the TgApiCox25-HA samples (p<0.05; log2 fold change >5) have been coded according to whether they are orthologous to canonical cytochrome c oxidase subunits (green triangles), or restricted to the apicomplexan lineage (blue circles; ApiCox subunits). TgApiCox25 is also depicted (red diamond).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Western blots of proteins extracted from parasites expressing TgApiCox25-HA (A) or TgTom40-HA (B). Extracts include samples before immunoprecipitation (Total), samples that did not bind to the anti-HA beads (Unbound), and samples that bound to the anti-HA beads (Bound). Samples were probed with anti-HA (top) and anti-TgTom40 (bottom) antibodies. Immunoprecipitations are representative of three independent experiments. Bound fractions from each experiment were subjected to mass spectrometry-based protein identification.
+
 To elucidate the proteins that comprise the TgApiCox25-containing complex, we immunoprecipitated TgApiCox25-HA and associated proteins with anti-HA-coupled agarose beads (Figure 6—figure supplement 1A), then performed mass spectrometry to identify the proteins that were part of this complex. As a negative control, we immunopurified TgTom40-HA (Figure 6—figure supplement 1B), the central protein of the ~400 kDa translocon of the outer mitochondrial membrane (TOM) complex (van Dooren et al., 2016), and subjected these extracts to mass spectrometry-based protein identification. Using this approach, we identify 12 proteins, including TgApiCox25, that were enriched in the TgApiCox25-HA immunoprecipitation compared to the TgTom40-HA immunoprecipitation (Figure 6C; Table 1; Supplementary file 5). Of these 12 proteins, three are annotated as being canonical components of cytochrome c oxidase (COX, also known as Complex IV of the mitochondrial electron transport chain; Figure 6C; Table 1). These proteins included TgCox2A (TGGT_226590) and TgCox2b (TGGT1_310470), split Cox2 homologs that are found in apicomplexans and which have previously been localised to the mitochondrion of T. gondii (Funes et al., 2002; Morales-Sainz et al., 2008), as well as TgCox5b (TGGT1_209260). Profile hidden Markov model similarity searches revealed that 7 of the remaining 8 TgApiCox25-associated proteins have homologs in other apicomplexans as well as in chromerids, whereas one (TGGT1_265370; TgApiCox16) is restricted to T. gondii (Table 1). All of the proteins detected were identified in the mitochondrial proteome (Table 1; Supplementary file 1), including TGGT1_297810 (TgApiCox30), an HA-tagged version of which we previously confirmed localizes to the mitochondrion in immunofluorescence assays (Figure 3X). All these proteins except TgApiCox16 are predicted to be important for growth of the tachyzoite stage of T. gondii (Table 1; Sidik et al., 2016).
+
+**Table 1.**
+ Summary of the features of proteins identified in proteomic analysis of the TgApiCox25 complex.Similarity searches were performed using HMMER (https://www.ebi.ac.uk/Tools/hmmer/). The accession numbers listed were derived from http://EuPathDB.org (apicomplexan and chromerid species) or www.ncbi.nlm.nih.gov (all others). Abbreviations: Plasmodium falciparum (Pf), Cryptosporidium parvum (Cp), Vitrella brassicaformis (Vb), Saccharomyces cerevisiae (Sc), Homo sapiens (Hs), Arabidopsis thaliana (At).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">ToxoDB gene ID (http://toxodb.org)</th>
+      <th rowspan="2">Protein annotation</th>
+      <th rowspan="2">Predicted protein mass (kDa)</th>
+      <th rowspan="2">Mitochon-drial proteome (this study)</th>
+      <th rowspan="2">Phenotype score (Sidik et al., 2016)</th>
+      <th colspan="6">Similarity search (E-value)</th>
+    </tr>
+    <tr>
+      <th>Pf</th>
+      <th>Cp</th>
+      <th>Vb (Chromerid)</th>
+      <th>Sc (Fungi)</th>
+      <th>Hs (Animal)</th>
+      <th>At (Plant)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TGGT1_264040</td>
+      <td>Hypothetical protein (TgApiCox25)</td>
+      <td>24.5</td>
+      <td>✓</td>
+      <td>−2.54</td>
+      <td>Conserved unknown protein PF3D7_1464000.1 (2.4e−53)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_12326 .t1 (5.2e−29)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_265370</td>
+      <td>Hypothetical protein (TgApiCox16)</td>
+      <td>16.0</td>
+      <td>✓</td>
+      <td>1.56</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_209260</td>
+      <td>Putative cytochrome c oxidase subunit (TgCox5b)</td>
+      <td>34.8</td>
+      <td>✓</td>
+      <td>−3.07</td>
+      <td>Putative COX5B PF3D7_0927800.1 (4.3e−101)</td>
+      <td>x</td>
+      <td>COX5B-2 Vbra_9355 .t1 (1.6e−92)</td>
+      <td>Cox4p P04037 (0.32)</td>
+      <td>Cox5B NP_001853.2 (0.05)</td>
+      <td>COX5b At1g80230 (2.1e−08)</td>
+    </tr>
+    <tr>
+      <td>TGGT1_221510</td>
+      <td>Hypothetical protein (TgApiCox18)</td>
+      <td>17.9</td>
+      <td>✓</td>
+      <td>−3.28</td>
+      <td>Conserved unknown protein PF3D7_0523300.1 (1.5e−48)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_21271 .t1 (5.2e−45)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_262640</td>
+      <td>Cg8 family protein (TgApiCox23)</td>
+      <td>23.8</td>
+      <td>✓</td>
+      <td>−3.49</td>
+      <td>Cg8 protein PF3D7_0708700.1 (3.1e−64)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_3012 .t1 (2.4e−53)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_297810</td>
+      <td>Hypothetical protein (TgApiCox30)</td>
+      <td>29.6</td>
+      <td>✓</td>
+      <td>−3.64</td>
+      <td>Conserved unknown protein PF3D7_0915700.1 (1.2e−46)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_17445 .t1 (6.7e−33)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_247770</td>
+      <td>Hypothetical protein (TgApiCox19)</td>
+      <td>19.2</td>
+      <td>✓</td>
+      <td>−2.61</td>
+      <td>Conserved unknown protein PF3D7_1402200.1 (1.2e−34)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_2065 .t1 (1.7e−27)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_229920</td>
+      <td>Hypothetical protein (TgApiCox35)</td>
+      <td>35.0</td>
+      <td>✓</td>
+      <td>−3.84</td>
+      <td>Conserved unknown protein PF3D7_0306500.1 (1.5e−90)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_6819 .t1 (1.6e−73)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_306670</td>
+      <td>Hypothetical protein (TgApiCox26)</td>
+      <td>25.8</td>
+      <td>✓</td>
+      <td>−3.68</td>
+      <td>Conserved unknown protein PF3D7_1439600.1 (2.6e−43)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_888 .t1 (1.2e−36)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_226590</td>
+      <td>Putative cytochrome c oxidase subunit (TgCox2a)</td>
+      <td>34.5</td>
+      <td>✓</td>
+      <td>−3.80</td>
+      <td>Cytochrome c oxidase subunit 2 PF3D7_1361700.1 (4.9e−58)</td>
+      <td>x</td>
+      <td>Cytochrome c oxidase subunit 2 Vbra_8641 .t1 (3.6e−33)</td>
+      <td>Cox2 P00410 (2.6e−06)</td>
+      <td>Cox2 P00403 (0.0004)</td>
+      <td>Cox2 P93285 (3.3e−06)</td>
+    </tr>
+    <tr>
+      <td>TGGT1_310470</td>
+      <td>Putative cytochrome c oxidase subunit (TgCox2b)</td>
+      <td>21.2</td>
+      <td>✓</td>
+      <td>−4.18</td>
+      <td>Cytochrome c oxidase subunit 2 PF3D7_1430900.1 (7.6e−75)</td>
+      <td>x</td>
+      <td>Cytochrome c oxidase subunit 2 Vbra_14923 .t1 (4.2e−7)</td>
+      <td>Cox2 P00410 (4.3e−31)</td>
+      <td>Cox2 P00403 (9.2e−29)</td>
+      <td>Cox2 P93285 (3.8e−37)</td>
+    </tr>
+    <tr>
+      <td>TGGT1_286530</td>
+      <td>Hypothetical protein (TgApiCox24)</td>
+      <td>25.4</td>
+      <td>✓</td>
+      <td>−2.82</td>
+      <td>Conserved unknown protein PF3D7_1362000.1 (6.0e−45)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_10089 .t1 (1.2e−11)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_254030</td>
+      <td>Zinc finger CDGSH-type domain-containing protein (TgApiCox13)</td>
+      <td>13.2</td>
+      <td>✓</td>
+      <td>−4.26</td>
+      <td>CDGSH iron-sulfur domain-containing protein PF3D7_1022900.1 (7.8e−42)</td>
+      <td>x</td>
+      <td>CDGSH iron-sulfur domain-containing protein 3 Vbra_4701 .t1 (1.2e−44)</td>
+      <td>x</td>
+      <td>CDGSH iron-sulfur domain-containing protein 3 (2.7e−11)</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGGT1_242840</td>
+      <td>Membrane protein (TgApiCox14)</td>
+      <td>13.9</td>
+      <td>✓</td>
+      <td>−3.58</td>
+      <td>Conserved unknown protein PF3D7_1339400.1 (4.1e−16)</td>
+      <td>x</td>
+      <td>Hypothetical Protein Vbra_9996 .t1 (1.8e−9)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>TGVEG_442760</td>
+      <td>Cytochrome C family oxidase subunit III (TgCoxIII)</td>
+      <td>16.8</td>
+      <td>-</td>
+      <td>N/A</td>
+      <td>Cytochrome c oxidase subunit 3 mal_mito_1 (5.2e−5)</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
 
 Three further proteins, TGGT1_254030, TGGT1_242840, and a cytochrome c oxidase subunit III (CoxIII) homologue (TGVEG_442760), were highly enriched in the TgApiCox25 immunoprecipitation but excluded from our analysis because they were absent from at least one replicate of the control data set (Supplementary file 5; Table 1). Both TGGT1_254030 and TGGT1_242840 were present in the mitochondrial proteome, and were predicted to be important for parasite growth. TGGT1_242840 was phylogenetically restricted to apicomplexans and chromerids, whereas TGGT1_254030 had homology to the human CDGSH iron-sulfur domain containing protein 3 (Table 1).
 
 As a direct test for whether TgApiCox25 interacts with TgCox2a, we introduced a FLAG epitope tag into the native locus of TgCox2a in the TgApiCox25-HA background strain, generating a strain we termed TgCox2a-FLAG/TgApiCox25-HA (Figure 7—figure supplement 1A–B). We separated proteins from the TgCox2a-FLAG/TgApiCox25-HA strain using blue native-PAGE and performed western blotting with anti-FLAG antibodies. This revealed that TgCox2a-FLAG exists in a protein complex of ~600 kDa (Figure 7A). Immunoprecipitation of TgCox25-HA with anti-HA antibodies co-purified TgCox2a-FLAG, but not TgAtpB, the β–subunit of the F1 domain of ATP synthase, or the mitochondrial outer membrane protein TgTom40 (Figure 7B). Similarly, immunoprecipitation of TgCox2a-FLAG with anti-FLAG antibodies co-purified TgApiCox25, but not TgAtpB or TgTom40 (Figure 7B). Together, these data indicate that TgCox2a-FLAG exists in the same complex as TgApiCox25-HA.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig7-v2.jpg)
+
+**Figure 7.:** (A) Anti-FLAG western blot of proteins from the TgCox2a-FLAG/TgApiCox25-HA strain separated by blue native-PAGE. (B) Western blots of proteins extracted from the TgCox2a-FLAG/TgApiCox25 HA strain and subjected to immunoprecipitation using anti-HA (anti-HA IP) or anti-FLAG (anti-FLAG IP) antibody-coupled beads. Extracts include samples before immunoprecipitation (Total), samples that did not bind to the anti-HA or anti-FLAG beads (Unbound), and samples that bound to the anti-HA or anti-FLAG beads (Bound). Samples were probed with anti-HA to detect TgApiCox25-HA, anti-FLAG to detect TgCox2a-FLAG, anti-AtpB to detect the β-subunit of T. gondii ATP synthase, and anti-TgTom40. (C) Anti-HA (left) and anti-FLAG (right) western blots of proteins from the TgApiCox25-FLAG/TgApiCox30-HA strain separated by blue native-PAGE. (D) Western blots of proteins extracted from the TgApiCox25-FLAG/TgApiCox30-HA strain and subjected to immunoprecipitation using anti-HA (anti-HA IP) or anti-FLAG (anti-FLAG IP) antibody-coupled beads. Extracts include samples before immunoprecipitation (Total), samples that did not bind to the anti-HA or anti-FLAG beads (Unbound), and samples that bound to the anti-HA or anti-FLAG beads (Bound). Samples were probed with anti-HA to detect TgApiCox30-HA, anti-FLAG to detect TgApiCox25-FLAG, anti-AtpB, and anti-TgTom40. (E) Western blot of proteins extracted from rTgApiCox25-HA/TgCox2a-FLAG parasites grown in the absence of ATc, or in ATc for 1 – 3 days, separated by SDS-PAGE and detected using anti-HA (top), anti-FLAG (middle) and anti-TgTom40 (as a loading control; bottom). (F) Western blot of proteins extracted from TgCox2a-FLAG/rTgApiCox25-HA parasites grown in the absence of ATc, or in ATc for 1 – 3 days, separated by blue native-PAGE, and detected using anti-FLAG antibodies.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38131/elife-38131-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Diagram depicting the 3’ replacement strategy to generate FLAG-tagged TgCox2a. An sgRNA was designed to target the T. gondii genome near the stop codon of TgCox2a, and mediate a double stranded break at the target site. A plasmid containing the sgRNA and GFP-tagged Cas9 endonuclease was co-transfected into T. gondii parasites with a PCR product encoding a FLAG epitope tag flanked by 50 bp of sequence homologous to the regions immediately up- and down-stream of the TgCox2a stop codon. The parasite’s homologous repair pathway will mediate integration of the PCR product into the TgCox2a locus. Forward and reverse primers were used to screen parasite clones for successful integration of the FLAG tag at the target site, yielding a 260 bp product in the native locus and a 361 bp product in the modified locus. (B) PCR screening analysis using genomic DNA extracted from putative TgCox2a-FLAG/TgApiCox25-HA parasites (clones 1 – 10) and TgCox2a-FLAG/rTgApiCox25-HA parasites (clones 11 – 12). Clones 1 – 5 and 7 – 12 yielded PCR products that indicated that these clones had been successfully modified. (C) Diagram depicting the 3’ replacement strategy to generate FLAG-tagged TgApiCox25. An sgRNA was designed to target the T. gondii genome near the stop codon of TgApiCox25, and mediate a double stranded break at the target site. A plasmid containing the sgRNA and GFP-tagged Cas9 endonuclease was co-transfected into T. gondii parasites with a PCR product encoding a FLAG epitope tag flanked by 50 bp of sequence homologous to the regions immediately up- and down-stream of the TgApiCox25 stop codon. The parasite’s homologous repair pathway will mediate integration of the PCR product into the TgApiCox25 locus. Forward and reverse primers were used to screen parasite clones for successful integration of the FLAG tag at the target site, yielding a 385 bp product in the native locus and a 492 bp product in the modified locus. (B) PCR screening analysis using genomic DNA extracted from putative TgApiCox25-FLAG/TgApiCox30-HA parasites. Clones 1, 5 – 7 yielded PCR products that indicated that these clones had been successfully modified.
 
 To test whether TgApiCox25 interacts with TgApiCox30, we introduced a FLAG epitope tag into the native locus of TgApiCox25 in the TgApiCox30-HA background, generating a strain we termed TgApiCox25-FLAG/TgApiCox30-HA (Figure 7—figure supplement 1C–D). Western blots of proteins separated by blue native-PAGE indicated that both TgApiCox25-FLAG and TgApiCox30-HA exist in a ~600 kDa protein complex (Figure 7C). Immunoprecipitation of TgApiCox30 with anti-HA antibodies purified TgApiCox25 but not TgAtpB or TgTom40, and immunoprecipitation of TgApiCox25 with anti-FLAG antibodies co-purified TgApiCox30 but not TgAtpB or TgTom40 (Figure 7D). We conclude that TgApiCox25-FLAG and TgApiCox30-HA exist in the same protein complex.
 
@@ -152,11 +434,700 @@ Our study highlights the divergence of mitochondrial proteomes across the eukary
 
 ## Materials and methods
 
-## Parasite culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Toxoplasma gondii)</td>
+      <td>RH∆hxgprt</td>
+      <td>PMID: 8662859</td>
+      <td></td>
+      <td>Parental strain for mtAPEX and mtBirA* strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>mtAPEX-cmyc in RH∆hxgprt</td>
+      <td>This paper</td>
+      <td></td>
+      <td>mtAPEX-cmyc-expressing T. gondii</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>mtBirA*-cmyc in RH∆hxgprt</td>
+      <td>This paper</td>
+      <td></td>
+      <td>mtBirA*-cmyc-expressing T. gondii</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TATi/∆ku80</td>
+      <td>PMID: 22144892</td>
+      <td></td>
+      <td>Parental for 3' HA tag integration strains and rTgApiCox25 strain and derivatives thereof</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_209420 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_209870 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_210730 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_213420 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_217020 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_220100 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_223500 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_229620 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_232600 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_248600 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_258100 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_259710 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_260840 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_263080 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_263400 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_263840 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_265360 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_264040 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag; termedTgApiCox25-HA strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_275650 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_278250 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_278720 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_286120 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_290460 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_297810 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag; termed TgApiCox30-HA strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_300030 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_316900 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TGGT1_318400 HA in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gene contains integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>rTgApiCox25 in TATi/∆ku80</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATc-regulated promoter driving TgApiCox25 expression</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>rTgApiCox25-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Regulatable TgApiCox25 gene with integrated 3' HA tag</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>cTgApiCox25-HA/rTgApiCox25</td>
+      <td>This paper</td>
+      <td></td>
+      <td>rTgApiCox25 strain complemented with constitutive TgApiCox25-HA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TgCox2A-FLAG inTgApiCox25-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Integrated 3' FLAG tag in TgCox2a locus of TgApiCox25-HA strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TgCox2A-FLAG in rTgApiCox25-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Integrated 3' FLAG tag in TgCox2a locus of rTgApiCox25-HA strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. gondii)</td>
+      <td>TgApiCox25-FLAG in TgApiCox30-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Integrated 3' FLAG tag in TgApiCox25 locus of TgApiCox30-HA strain</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapians)</td>
+      <td>Human Foreskin Fibroblasts</td>
+      <td>Gift from Holger Schülter, Peter MacCallum Cancer Centre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-cmyc</td>
+      <td>Santa Cruz</td>
+      <td>Clone 9E10</td>
+      <td>(1:200 to 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-HA</td>
+      <td>Sigma</td>
+      <td>Clone 3F10</td>
+      <td>(1:200 to 1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-FLAG</td>
+      <td>Sigma</td>
+      <td>Clone M2</td>
+      <td>(1:500 to 1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-AtpB</td>
+      <td>Agrisera</td>
+      <td>cat #: AS05 085</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-TgTom40</td>
+      <td>PMID: 27458014</td>
+      <td></td>
+      <td>(1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-TgCytC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Peptide antibody made against residues 1–14 (MSRAEPDVQVPSGD) ofT. gondii cytochrome c (TGGT1_219750) (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Hsp60</td>
+      <td>PMID: 15279947</td>
+      <td></td>
+      <td>(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse Alexa Fluor 488</td>
+      <td>Life Technologies</td>
+      <td>cat #: A11029</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rat Alexa Fluor 488</td>
+      <td>Life Technologies</td>
+      <td>cat #: A11006</td>
+      <td>(1:100 to 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rat CF 488A</td>
+      <td>Sigma</td>
+      <td>cat #: SAB4600046</td>
+      <td>(1:100 to 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit Alexa Fluor 546</td>
+      <td>Life Technologies</td>
+      <td>cat #: A11035</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse HRP-conjugated</td>
+      <td>Santa Cruz</td>
+      <td>cat #: sc-2005</td>
+      <td>(1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rat HRP-conjugated</td>
+      <td>Santa Cruz</td>
+      <td>cat #: sc-2006</td>
+      <td>(1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit HRP-conjugated</td>
+      <td>Santa Cruz</td>
+      <td>cat #: sc-2004</td>
+      <td>(1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP-conjugated TrueBlot Ultra</td>
+      <td>eBioscience</td>
+      <td>cat #: 18-8817-31</td>
+      <td>(1:5,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG M2 affinity gel</td>
+      <td>Sigma</td>
+      <td>cat #: A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA affinity matrix</td>
+      <td>Sigma</td>
+      <td>cat #: 11815016001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Avidin, Oregon Green-conjugated</td>
+      <td>Life Technologies</td>
+      <td>cat #: A6374</td>
+      <td>(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NeutrAvidin, HRP-conjugated</td>
+      <td>Life Technologies</td>
+      <td>cat #: A2664</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin magnetic beads</td>
+      <td>Thermo Scientific</td>
+      <td>cat #: PIE88817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-mito-APEX</td>
+      <td>PMID: 23086203</td>
+      <td>Addgene cat # 42607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBirA*−3XhA-LIC-DHFR</td>
+      <td>PMID: 25691595</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSAG1::Cas9-U6::sgUPRT</td>
+      <td>PMID: 24825012</td>
+      <td>Addgene cat # 54467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUgCTH3</td>
+      <td>PMID: 28205520</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mtAPEX-cmyc in pBTM3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii expression vector encoding mitochondrially targeted APEX</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mtBirA*-cmyc in pBTM3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii expression vector encoding mitochondrially targeted APEX</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_209420 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_209870 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_210730 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_213420 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_217020 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_220100 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_223500 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_229620 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_232600 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_248600 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_258100 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_259710 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_260840 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_263080 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_263400 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_263840 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_265360 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_264040 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene (TgApiCox25)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_275650 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_278250 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_278720 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_286120 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_290460 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_297810 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene (TgApiCox30)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_300030 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_316900 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TGGT1_318400 HA in pgCH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T. gondii 3' replacment vector that introduces 1xHA tag into target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TgApiCox25 5' sgRNA in pSAG1::Cas9-U6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pSAG1::Cas9-U6 vector expressing sgRNA that targets 5' region of TgApiCox25</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TgApiCox25 3' sgRNA in pSAG1::Cas9-U6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pSAG1::Cas9-U6 vector expressing sgRNA that targets 3' region of TgApiCox25</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TgCox2a 3' sgRNA in pSAG1::Cas9-U6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pSAG1::Cas9-U6 vector expressing sgRNA that targets 3' region of TgCox2a</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TgApiCox25 in pUgCTH3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector that expresses TgApiCox25-HA from the constitutive α-tubulin promoter</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mitochondrial Matrix Quantitative Proteome search tool</td>
+      <td>This paper</td>
+      <td>https://bit.ly/2FySSmU</td>
+      <td>Link to region of ToxoDB website containing the T. gondii mitochondrial proteome search tool</td>
+    </tr>
+  </tbody>
+</table>
+
+### Parasite culture
 
 T. gondii parasites were passaged in human foreskin fibroblasts (HFF) sourced from the Peter MacCallum Cancer Centre, and were verified mycoplasma-free. Parasites were cultured in Dulbecco’s Modified Eagle’s Medium, supplemented with 1% (v/v) fetal bovine serum and antibiotics. Where appropriate, ATc was added to a final concentration of 0.5 µg/ml. Plaque assays were performed as described previously (van Dooren et al., 2008), with plaque sizes measured using ImageJ.
 
-## Plasmid construction and parasite transfection
+### Plasmid construction and parasite transfection
 
 To generate a T. gondii strain expressing mitochondrial matrix-targeted APEX, we amplified the coding sequence of monomeric APEX using the primers APEX fwd and APEX rvs (Supplementary file 4), and the vector pcDNA3-mito-APEX as template (a gift from Alice Ting; Addgene plasmid # 42607; Martell et al., 2012). The resultant PCR product was digested with AvrII and NdeI and ligated into equivalent sites of the vector Hsp60L-mDHFR in pBTM3 (Figure 1—figure supplement 1; (van Dooren et al., 2016). This fuses the mitochondrial targeting sequence of TgHsp60 to 3x c-myc-tagged APEX. The resultant vector was transfected into RH∆hxgprt strain T. gondii parasites, and selected on phleomycin as described (Messina et al., 1995). To generate a T. gondii strain expressing a mitochondrial matrix-targeted BirA*, we amplified the coding sequence of BirA* using the primers BirA* fwd and BirA* rvs (Supplementary file 4), and the vector pBirA*−3XHA-LIC-DHFR as template (Chen et al., 2015; a gift from Peter Bradley, University of California Los Angeles). The resultant product was digested with BglII and XbaI and ligated into the BglII and AvrII sites of pgCM3 (GvD, unpublished). The BirA*−3x c-myc cassette of the resultant vector was digested with AvrII and NotI and ligated into the equivalent sites of the Hsp60L-mDHFR in pBTM3 vector. This fuses the mitochondrial targeting sequence of TgHsp60 to 3x c-myc-tagged BirA*. The resultant vector was transfected into RH∆hxgprt strain T. gondii parasites, and selected on phleomycin.
 
@@ -170,11 +1141,11 @@ To FLAG tag the native locus of TgCox2a, we generated a vector expressing a sgRN
 
 To FLAG tag the native locus of TgApiCox25, we generated a vector expressing a sgRNA targeting the region around the stop codon of TgApiCox25, modifying the pSAG1::Cas9-U6::sgUPRT vector using Q5 mutagenesis with the primer ApiCox25 3’rep CRISPR fwd and the Universal Reverse primer (Supplementary file 4). We also amplified a FLAG tag containing 50 bp of flanking sequence either side of the TgApiCox25 stop codon, using the primers ApiCox25 3’rep fwd and ApiCox25 3’rep rvs, and the FLAG tag gBlock as template (Supplementary file 4). We co-transfected the plasmid and PCR product into TgApiCox30-HA strain parasites, selected GFP positive parasites by flow cytometry 3 days post-transfection, then screened for successful integrants using the primers ApiCox25 3’rep screen fwd and TgApiCox25 screen rvs (Supplementary file 4).
 
-## Synthesis of biotin-phenol
+### Synthesis of biotin-phenol
 
 Biotin phenol was synthesised as described previously (Rhee et al., 2013). 50 mg/ml biotin (Sigma) was slowly mixed with 1.1 equivalents of 2-(7-aza-1H-benzotriazole-1-yl)-1,1,3,3-tetramethyluronium (Sigma) and 3.0 equivalents of N,N-diisopropylethylamine (Sigma). The mixture was stirred for 10 min at room temperature, then 1.0 equivalent of tyramine (Sigma) was added slowly. The resulting solution was stirred overnight at room temperature. The synthesised biotin-phenol was purified from the unreacted material with a Reveleris flash chromatography system (Grace, MD, USA) and a C18-WP 4 g column, using an acetonitrile/water gradient. Eluting compounds were monitored with a UV detector (220 nm, 278 nm, and 350 nm) and an evaporative light scattering detector (ELSD) coupled to the flash chromatography system. The eluted biotin-phenol in acetonitrile/water mixture was freeze-dried and reconstituted in dimethyl sulfoxide at a final concentration of 200 mM. The purity of biotin-phenol was confirmed by ultra-high performance liquid chromatography (UHPLC, Dionex).
 
-## Biotinylation approaches
+### Biotinylation approaches
 
 For biotin-phenol labelling, freshly egressed wild type or mtAPEX-expressing parasites were resuspended in parasite growth medium. Biotin-phenol was added to the parasites at final concentration of 1 mM, and parasites were incubated at 37°C for 1 hr. Biotinylation was initiated by the addition of 1 mM H2O2 for 45 s, and halted by centrifuging cells at 12,000 g for 30 s. The medium was removed, and parasite cells were washed three times in quenching solution (10 mM sodium azide, 10 mM sodium ascorbate, and 5 mM Trolox in phosphate-buffered saline (PBS)), and once in PBS. Cell pellets were stored at −80°C until further processing.
 
@@ -188,11 +1159,11 @@ The volume of peptide filtrates was reduced to ~12 μl in a centrifugal evapora
 
 MS analysis was performed on a Q-Exactive Classic mass spectrometer as previously described (Delconte et al., 2016). Raw files consisting of high-resolution MS/MS spectra were processed with MaxQuant (version 1.5.2.8) for feature detection and protein identification using the Andromeda search engine (Cox et al., 2011). Extracted peak lists were searched against the UniProtKB/Swiss-Prot Homo sapiens and Toxoplasma gondii ME49 (ToxoDB-12.0) databases and a separate reverse decoy database to empirically assess the false discovery rate (FDR) using strict trypsin specificity allowing up to three missed cleavages. The minimum required peptide length was set to seven amino acids. Modifications: Carbamidomethylation of Cys was set as a fixed modification, while N-acetylation of proteins and oxidation of Met were set as variable modifications. The mass tolerance for precursor ions and fragment ions were 20 ppm and 0.5 Da, respectively. The ‘match between runs’ option in MaxQuant was used to transfer identifications made between runs on the basis of matching precursors with high mass accuracy (Cox and Mann, 2008). PSM and protein identifications were filtered using a target-decoy approach at a false discovery rate (FDR) of 1%.
 
-## Quantitative proteomics pipeline
+### Quantitative proteomics pipeline
 
 Statistically-relevant protein expression changes were identified using a custom pipeline as previously described (Delconte et al., 2016). Probability values were corrected for multiple testing using Benjamini–Hochberg method. Cut-off lines with the function y= -log10(0.05) + c/(x-x0) (Keilhauer et al., 2015) were introduced to identify significantly enriched proteins. c was set to 0.2 while x0 was set to one representing proteins that are differentially expressed within 1 or two standard deviations.
 
-## Bioinformatic analyses of data
+### Bioinformatic analyses of data
 
 Homologs of T. gondii mitochondrial proteome proteins were identified in the apicomplexan parasites P. falciparum (strain 3D7), C. parvum and B. bovis, and the chromerid V. brassicaformis, through reciprocal Basic Local Alignment Search Tool (BLAST) searches. T. gondii mitochondrial proteome proteins were used as query sequences in initial searches using target protein databases from relevant EuPathDB websites (http://PlasmoDB.org– P. falciparum; http://PiroplasmaDB.org – Babesia bovis; http://CryptoDB.org – Cryptosporidium parvum and Vitrella brassicaformis; Aurrecoechea et al., 2013). Hits from the initial BLAST search were queried in reciprocal BLAST searches against the T. gondii genome database (http://toxodb.org), regardless of the score or E-value obtained. Hits that returned the corresponding T. gondii protein that was originally searched against were considered as a homolog. Expect (E) values obtained from the initial BLAST search and the reciprocal BLAST search were recorded (Supplementary file 1). Homologs of proteins identified in the purified ApiCox25 complex were identified using the profile hidden Markov model search tool HMMER (https://www.ebi.ac.uk/Tools/hmmer/).
 
@@ -200,11 +1171,11 @@ Ortholog grouping for each protein was obtained from ToxoDB. Each ortholog group
 
 The presence of predicted mitochondrial targeting peptides was assessed using MitoProt (Claros and Vincens, 1996), with the probability of export into the mitochondria recorded (Supplementary file 1). Metabolic pathway enrichment was assessed using the Metabolic Pathway search tool on ToxoDB, using a p value cut-off of <0.05.
 
-## Immunofluorescence assays and microscopy
+### Immunofluorescence assays and microscopy
 
 IFAs were performed as described previously (van Dooren et al., 2008). Primary antibodies used were mouse anti-c-myc (1:200 dilution; Santa Cruz clone 9E10), rat anti-HA (1:200 dilution; Sigma clone 3F10), and rabbit anti-Tom40 (1:2000 dilution; van Dooren et al., 2016). Secondary antibodies used were goat anti-mouse Alexa Fluor 488 (1:500 dilution; Life Technologies), goat anti-rat Alexa Fluor 488 (1:100 to 1:500 dilution; Life Technologies), goat anti-rat CF 488A (1:100 to 1:500 dilution; Sigma), and goat anti-rabbit Alexa Fluor 546 (1:500 dilution; Life Technologies). Biotinylation was performed as outlined for the proteomics, except that mtAPEX samples were incubated in H2O2 for 1 min. For visualizing biotinylated proteins, we used Oregon Green-conjugated avidin (1:1000 dilution; Life Technologies). Images were acquired on a DeltaVision Elite deconvolution microscope (GE Healthcare) fitted with a 100X UPlanSApo oil immersion objective lens (NA 1.40). Images were deconvolved and adjusted for contrast and brightness using SoftWoRx Suite 2.0 software, and subsequently processed using Adobe Illustrator.
 
-## Immunoprecipitations
+### Immunoprecipitations
 
 Immunoprecipitations were performed as described previously (van Dooren et al., 2016), except that parasite samples were solubilized in 1% (v/v) Triton X-100. HA-tagged proteins were purified using anti-HA affinity matrix (Sigma; rat anti-HA clone 3F10 antibodies) and FLAG-tagged proteins were purified using anti-FLAG M2 affinity gel (Sigma; mouse anti-FLAG clone M2 antibodies). For mass spectrometry sample preparation, anti-HA beads bound with HA-tagged protein complexes were frozen at −80°C for 1 hr, then eluted at 37°C in 0.2 M glycine containing 1% (v/v) Triton X-100 (pH 2.3). Samples were neutralized in ammonium bicarbonate, then extracted in chloroform:methanol as described (Pankow et al., 2016). After extraction, the pellets were dried and stored at −80°C before mass spectrometry analysis.
 
@@ -214,18 +1185,18 @@ Peptides reconstituted in 0.1% TFA and 2% acetonitrile (ACN) were loaded using a
 
 The spectra obtained from the instrument were used to search against the UniProt TOXGV (T. gondii) database together with common contaminants using the Mascot search engine (Matrix Science Ltd., London, UK). Briefly, carbamidomethylation of cysteines was set as a fixed modification, acetylation of protein N-termini and methionine oxidation was included as variable modifications. Precursor mass tolerance was 10 ppm, product ions were searched at 0.5 Da tolerances, maximum of 2 missed trypsin cleavages, minimum peptide length defined at 6, maximum peptide length 144, and peptide spectral matches were validated using Percolator based on q-values at a 1% false discovery rate.
 
-## SDS-PAGE, Blue Native-PAGE and immuno/affinity-blotting
+### SDS-PAGE, Blue Native-PAGE and immuno/affinity-blotting
 
 SDS-PAGE and protein blotting were performed as described previously (van Dooren et al., 2008), except that membranes used for neutravidin blotting were blocked with 3% (w/v) bovine serum albumin (BSA). Blue native PAGE was performed using the NativePAGE system (Thermo Scientific) as described previously (van Dooren et al., 2016). Blots were probed with antibodies against mouse anti-c-myc (1:500 dilution; Santa Cruz clone 9E10), rabbit anti-Hsp60 (1:1000 dilution; Tonkin et al., 2004), rabbit anti-T. gondii cytochrome c (1:500 dilution; E.T. and G.v.D., unpublished), rat anti-HA (1:500 to 1:1000 dilution; Sigma clone 3F10), mouse anti-FLAG (1:500 to 1:2000 dilution; Sigma clone M2), and rabbit anti-AtpB (1:500; Agrisera, catalog number AS05 085). Horseradish peroxidase (HRP)-conjugated anti-mouse, anti-rat and anti-rabbit antibodies (Santa Cruz) were used at 1:5000 dilution. For probing for mouse antibodies on immunoprecipitation western blots, HRP-conjugated anti-mouse TrueBlot ULTRA antibodies (eBioscience) were used at 1:5000 dilution. Neutravidin-HRP (Life Technologies) was used to detect biotinylated proteins on membranes at 1:10,000 dilution.
 
-## Seahorse XFe96 extracellular flux analysis
+### Seahorse XFe96 extracellular flux analysis
 
 Wild type (TATi/∆ku80) and rTgApiCox25 parasites were grown in the absence of ATc, in the presence of ATc for 1 – 3 days, or with 100 µM cycloheximide for 1 day. Parasites were filtered through a 3 µm polycarbonate filter and washed twice in Seahorse XF base medium (Agilent Technologies), supplemented with 1 mM L-glutamine and 5 mM D-glucose (supplemented base medium), before resuspension to 1.5 × 107 cells/ml in the supplemented base medium. 96-well Seahorse culture plates were coated with 3.5 µg/cm2 of CellTak cell adhesive (Corning) according to the manufacturer’s instructions. Briefly, 1 mg/ml CellTak was diluted 1:50 in 0.1 M sodium bicarbonate. 15 µl of CellTak solution was added to each well of a Seahorse cell culture plate and incubated at RT for 20 mins. The solution was removed and the plate washed twice in sterile water, before drying. 100 µl of the parasite suspensions (1.5 × 106 parasites) were seeded into wells of the coated plate, and the plate was centrifuged at 50 g for 3 min. An additional 75 µL of supplemented base medium was added to each well following centrifugation. Parasites were kept at 37°C in a non-CO2 incubator until the start of experiment. Parasite oxygen consumption rates (OCR) and extracellular acidification rates (ECAR) were measured using an Agilent Seahorse XFe96 Analyzer at 3 min intervals. To determine the maximal OCR, parasites were treated with 20 µM oligomycin A, B and C mix (Sigma) to inhibit ATP synthase, then subsequently treated with 1 µM carbonyl cyanide-4-(trifluoromethoxy)phenylhydrazone (FCCP; Sigma). To determine the non-mitochondrial OCR, parasites were treated with 10 µM antimycin A (Sigma) and 1 µM atovaquone (the minimal concentration that preliminary experiments indicated is sufficient to maximally inhibit mitochondrial OCR). The mitochondrial OCR (mOCR) was calculated by subtracting the non-mitochondrial OCR from the basal and maximal OCR values. A minimum of 4 wells were used for background correction in each assay plate, and 4 – 5 technical replicates were used for each condition. Wells that yielded negative OCR values were excluded from the final analysis.
 
-## Miscellaneous data analysis
+### Miscellaneous data analysis
 
 XFe96 data were compiled using the Wave Desktop program. Analysis of parasite OCR and ECAR were performed using the R software environment (Source code 1). Linear mixed-effects models were fitted to the data, with error between plates and wells (i.e. between and within experiments) defined as the random effect, and the OCR and ECAR measurements in the different parasite strains (WT and rTgApiCox25) and the time since ATc-addition defined as the fixed effect. Data from the TgApiCox25-HA and TgTom40-HA co-immunopreciptation proteomics were analysed in the R software environment using the EdgeR package (Source code 2; Robinson and Smyth, 2008). Only proteins identified in both experimental conditions and each biological replicate were included in the final analysis. Graphing of the XFe96 and TgApiCox25 proteomic data were performed in GraphPad Prism v. 7.0.
 
-## Data availability
+### Data availability
 
 The mitochondrial proteome data are available on individual gene pages on the ToxoDB website (http://toxodb.org), and a ‘Mitochondrial Matrix Quantitative Proteome’ search tool is available in the proteomics section of ToxoDB (https://bit.ly/2FySSmU). To use the search tool, first select the experiment that you want to query. ‘Control APEX vs mito APEX’ queries the APEX data, and ‘Control BirA vs mito BirA’ queries the BirA* data. Next select the direction of the query. To examine genes that are enriched in the mitochondrial matrix proteomes, select ‘down-regulated’ (i.e. proteins that are less abundant in control samples than in the mito APEX/BirA* samples). Next select the desired P value. For our analyses, we utilised a P value of ≤ 0.001. Finally, select the desired fold difference. For our analyses, we utilised a log2 fold change value of ≤ − 2.5, which corresponds to a fold change between the experimental and control samples of ≥5.657 (i.e. 5.657-fold down-regulated).

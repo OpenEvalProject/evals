@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02pp7px91 Center for Adaptive Rationality, Max Planck Institute for Human Development Berlin Germany
-2. https://ror.org/01nftxb06 Department of Biology and Ecology of Fishes, Leibniz Institute of Freshwater Ecology and Inland Fisheries Berlin Germany
-3. https://ror.org/04qw24q55 Behavioural Ecology Group, Wageningen University Wageningen Netherlands
+1. Center for Adaptive Rationality, Max Planck Institute for Human Development Berlin Germany ([ROR:02pp7px91](https://ror.org/02pp7px91))
+2. Department of Biology and Ecology of Fishes, Leibniz Institute of Freshwater Ecology and Inland Fisheries Berlin Germany ([ROR:01nftxb06](https://ror.org/01nftxb06))
+3. Behavioural Ecology Group, Wageningen University Wageningen Netherlands ([ROR:04qw24q55](https://ror.org/04qw24q55))
 
 † Corresponding author
 

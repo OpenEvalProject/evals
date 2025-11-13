@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03c4mmv16 School of Psychology, University of Ottawa Ottawa Canada
-2. https://ror.org/036s2ns10 uOttawa Brain and Mind Research Institute Center for Neural Dynamics, University of Ottawa Ottawa Canada
-3. https://ror.org/03c4mmv16 Department of Cellular and Molecular Medicine, Faculty of Medicine, University of Ottawa Ottawa Canada
+1. School of Psychology, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
+2. uOttawa Brain and Mind Research Institute Center for Neural Dynamics, University of Ottawa Ottawa Canada ([ROR:036s2ns10](https://ror.org/036s2ns10))
+3. Department of Cellular and Molecular Medicine, Faculty of Medicine, University of Ottawa Ottawa Canada ([ROR:03c4mmv16](https://ror.org/03c4mmv16))
 
 † Corresponding author
 
@@ -30,11 +30,126 @@ Modern extracellular recording techniques allow researchers to monitor the simul
 
 Several methods have been developed, each with specialized features, including Kilosort4 (Pachitariu et al., 2023), SpyKING CIRCUS (Yger et al., 2018), MountainSort (Chung et al., 2017), Herding Spikes (Hilgen et al., 2017), YASS (Lee et al., 2017a), and JRCLUST (Jun et al., 2017). A detailed comparison of these methods is presented in Table 1. A common lacking feature in these methods is the ability to identify cell types in a biologically validated fashion. Despite evidence showing differences in action potential kinetics for distinct cell types as well as the use of optogenetics (Hilgen et al., 2017), there exist no large-scale validation efforts, to our knowledge, showing that extracellular waveforms can be used to reliably distinguish cell types. Methods leveraging genetic differences between cell types offer statistical measures predictive of cell types, such as Fano Factor (Becchetti et al., 2012). These methods have provided researchers with the ability to infer, in a post-hoc fashion, the most probable cell types that were sampled. Yet, a fully integrated suite offering an open-source data analysis pipeline paired with a validated experimental protocol allowing for high-density cell-type-specific activation during recordings is needed. Such a method will enable the investigation of dense and intricate circuits in a flexible, scalable, and generalizable manner.
 
+**Table 1.**
+ lang.: Programming language, # elect.: Maximum number of electrodes tested on, data preproc.: Data preprocessing (formatting, filtering, artefact removal) included, event/channel loc.: Localization of single events, waveform extrac.: Spike features (such as peak-to-peak distance and full-width half max) are extracted from waveforms, e/i sorting: excitatory and inhibitory cell sorting, validation: validation of cell-type sorting (+)=ground truth validation via intracellular recordings, but not e/i validation, experim. prot.: integrates an experimental protocol to allow for network manipulation, unsuper.: unsupervised, requiring no manual user intervention, source code available: entire code is open-source and available.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>lang.</th>
+      <th># elect.</th>
+      <th>data preproc.</th>
+      <th>event/ channel loc.</th>
+      <th>waveform extrac.</th>
+      <th>e/i sorting</th>
+      <th>validation</th>
+      <th>experim. prot.</th>
+      <th>unsuper.</th>
+      <th>source code available</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>spikeMAP</td>
+      <td>Python andMatlab</td>
+      <td>4096</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Kilosort4 (Pachitariu et al., 2023)</td>
+      <td>Python</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>SpyKING CIRCUS (Yger et al., 2018; Yger et al., 2023)</td>
+      <td>Python</td>
+      <td>4225</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>(+)</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>MountainSort (Chung et al., 2017)</td>
+      <td>Matlab and C++</td>
+      <td>16</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Herding Spikes (Hilgen et al., 2017)</td>
+      <td>Python</td>
+      <td>4096</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>(+)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>YASS (Lee et al., 2017a; Lee et al., 2017b)</td>
+      <td>Python</td>
+      <td>512</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>JRCLUST (Jun, 2017, Jun, 2017)</td>
+      <td>Matlab and CUDA</td>
+      <td>120(1000)</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>(+)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
 Here, we introduce spikeMAP, an open-source, unsupervised and scalable spike sorting analysis pipeline which performs cell-type classification as validated on high-density MEAs. Crucially, we tightly integrate our analysis with an experimental protocol utilizing a stabilized step function opsin to dynamically probe distinct populations and validate sorting while avoiding the light-induced artefacts common on CMOS-based chip designs (Fiscella et al., 2012). Our analysis pipeline, taking advantage of dense sampling, estimates cell-body location for each detected spike, yielding well-separated clusters associated with single neurons. Spike waveform features were extracted utilizing signal interpolation to estimate half-amplitude and peak-to-peak durations. These values were then entered in a principal component analysis with k-means clustering to identify uncorrelated signals from single channels on the array. Optimal separability of clusters was assessed by linear discriminant analysis. Each channel’s source location was identified using spatiotemporal characteristics of spike waveforms across the array. We further classified cells as putative excitatory or inhibitory based on their waveform properties. As a final validation, we introduced a method taking advantage of long timescale optogenetics (step function opsins) to perform cell-type-specific stimulation in acute prefrontal cortex slices from mice, providing a biological verification to our statistical methods. Together, spikeMAP provides a comprehensive toolkit for experimenters to flexibly interrogate cell-type-specific computations in a variety of neural circuits throughout the brain.
 
 ## Results
 
-## Spike sorting
+### Spike sorting
 
 Our spike sorting pipeline (Figure 1) performs three main tasks: (i) the detection of voltage deflections associated with putative somatic spikes, (ii) the identification of individual putative neurons using spike clustering, and (iii) the spatial localization of single cells in high-density recordings. We demonstrate the use of this pipeline through targeted high-density recording from medial prefrontal cortex of mouse (Figure 2A; see Materials and methods). First, putative spike times were detected as threshold crossings (Figure 2Bi; Lewicki, 1998), identifying negative signal peaks from the mean of the filtered signal (see Materials and methods). Optimal threshold choice is key in discriminating spikes from noise, as the number of spikes detected per electrode is highly dependent on the threshold used (Figure 2C). Here, the optimal threshold for detection was selected by fitting the voltage histogram of each channel with a Gaussian distribution to separate spiking activity from normally distributed noise (Figure 2D). At a threshold of –3σ, the signal could be largely accounted for by Gaussian noise, while a separation between signal and noise began around a threshold of –4σ. To avoid multiple detections of the same event, an absolute refractory period was imposed to discard successive events within <2ms. Although filtering is crucial in event detection, it can introduce signal distortion (Yael and Bar-Gad, 2017). To resolve this issue, the unfiltered voltage around the time of each spike was extracted (Figure 2Bii), yielding a series of high-frequency (18 kHz) waveforms for each channel.
 
@@ -60,7 +175,7 @@ In sum, SpikeMAP provides an end-to-end pipeline to perform spike-sorting on hig
 
 **Figure 4.:** (A) Distribution of signal-to-noise ratio (SNR) over all spike-sorted clusters of a single recording (N=8059). (B) Examples of mean voltages (black lines) and individual voltages (gray lines) around individual spikes.
 
-## Cell type classification based on action potential waveform kinetics
+### Cell type classification based on action potential waveform kinetics
 
 Despite technological advances, the ability to identify distinct cell types based solely on extracellular voltage has remained challenging. Current data processing methods often rely on waveform kinetics (Barthó et al., 2004) to return a classification of contributing excitatory and inhibitory units. As technological progress continuously allows for denser arrays, waveform spike analyses are increasingly sensitive to noise generated by the signal of proximal units. Here, we first implemented a classification method using current knowledge about cell-type-specific waveform kinetics and spline interpolation to distinguish putative excitatory and inhibitory neurons in dense networks. We then validated this classification using a combination of viral strategies, optogenetics, and pharmacology while simultaneously recording from stimulated mouse prefrontal cortex networks.
 
@@ -74,9 +189,9 @@ Next, we identified putative excitatory and inhibitory neurons using two time co
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/106557/elife-106557-fig6-v1.jpg)
 
-**Figure 6.:** A) (N=570) and inhibitory (B) (N=54) neurons.(C) Mean firing rate across neurons. Vertical bars: SEM.
+**Figure 6.:** (C) Mean firing rate across neurons. Vertical bars: SEM.
 
-## A step-function opsin validation approach for cell classification
+### A step-function opsin validation approach for cell classification
 
 While multielectrode arrays have allowed the simultaneous recording from thousands of electrodes, the reliance on light-sensitive complementary metal-oxide-semiconductor (CMOS) circuits has limited the ability of researchers to use them in conjunction with optogenetics. As the ability to rapidly perturb distinct populations in large networks provides valuable insight as to how local circuits represent information (Lemon et al., 2021; Buzsáki, 2010), it is of broad interest to validate methodologies that allow for optogenetic manipulation of defined cell populations in multielectrode arrays.
 
@@ -94,17 +209,68 @@ To characterize the refractory period of the step-function opsin, we delivered r
 
 Furthermore, the reduction in firing rate upon opsin deactivation was more prominent for longer interval trials (Figure 8E). These results provided key insights to inform multielectrode array recording protocols, allowing us to selectively activate and inactivate PV interneurons in a temporally precise fashion using tools compatible with multielectrode array technology.
 
-## Optogenetic validation of E/I classification on multielectrode arrays
+### Optogenetic validation of E/I classification on multielectrode arrays
 
 To validate our prior waveform-based cell-type classification in mouse prefrontal cortex slices, we selectively activated transfected PV interneurons with the step-function opsin construct while performing multielectrode recordings (Table 2). To prevent the propagation of optogenetic activation throughout the network, we first recorded in the presence of 10 μM cyanquixaline (CNQX) and 100 μM picrotoxin (PTX) to block AMPA receptors and GABAA receptors, respectively (leading to a reduction in FR of 0.0937 Hz, p<0.001 from baseline). We photostimulated with brief 100 ms pulses of blue light and examined post-stimulation responses of all identified neurons recorded (n=8189, 3 slices, from 3 mice; Figure 9A). In the presence of synaptic blockers, optogenetic activation of targeted PV interneurons led to a significant increase in mean firing rate for the population of cells that had been classified as inhibitory based on their waveform properties (I neurons; Figure 9B, n=430, p<0.003). Neurons classified as excitatory neurons based on their waveform kinetics, on the other hand, showed only a subtle decrease in mean firing rate (Figure 9B, n=7759, p<0.001). A clustering analysis on the spike waveform properties of putative excitatory and inhibitory neurons provides further evidence of classification (Figure 10). The overall firing rates in slice recordings were relatively low and thus were not permissive to the use of cross-correlations in validating putative excitatory and inhibitory neurons. While our pharmacological manipulations attempted to largely eliminate network effects, the slight reduction in firing rate of putative excitatory neurons may reflect the involvement of GABAB receptor-mediated inhibition (Kohl and Paulsen, 2010).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/106557/elife-106557-fig9-v1.jpg)
 
-**Figure 9.:** A) Average firing rate for putative excitatory and inhibitory neurons.The shaded area represents the SEM. (B) Quantification of change in firing rate following optogenetic stimulation. Average firing rates are taken over four recordings obtained from three mice. (C) Delta change in firing rate (on – drugs) (D) Opto-evoked change in firing rate.
+**Figure 9.:** The shaded area represents the SEM. (B) Quantification of change in firing rate following optogenetic stimulation. Average firing rates are taken over four recordings obtained from three mice. (C) Delta change in firing rate (on – drugs) (D) Opto-evoked change in firing rate.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/106557/elife-106557-fig10-v1.jpg)
 
 **Figure 10.:** Insets show cartoons of individual spikes with broader (E) and narrower (I) waveforms.
+
+**Table 2.**
+ Summary of SpikeMAP open-source data.Datasets were obtained from four mice. The optogenetic stimulation protocol (see Materials and methods) was run once per dataset. Data is available from: https://doi.org/10.6084/m9.figshare.29416472.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>File name</th>
+      <th>Animal #</th>
+      <th>Protocol #</th>
+      <th># of E cells identified</th>
+      <th># of I cells identified</th>
+      <th>Total recording time (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R20211221_Slice1_Vars3.mat</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3687</td>
+      <td>47</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>R20211213_Slice2_Vars3.mat</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2943</td>
+      <td>350</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>R20211209_Slice3_Vars3.mat</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1994</td>
+      <td>712</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>R20211219_Slice3_Vars3.mat</td>
+      <td>4</td>
+      <td>2</td>
+      <td>1138</td>
+      <td>32</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
 Next, we examined in further detail the response profiles of individual neurons to photostimulation in order to validate our algorithm at the single cell level. In the absence of synaptic blockers, individual neurons displayed a diverse range of responses to light stimulation, including neurons showing no significant change in firing rate (ΔFR ~0), neurons showing an increase in firing rate (ΔFR >0), and neurons showing a decrease in firing rate (ΔFR <0; Figure 9C). We applied a strict criterion to separate neurons showing a statistically robust increase in firing rate (see Materials and methods). We found that 56% of neurons that had been classified as I displayed a light-induced increase in firing rate. Conversely, we found that only 8% of neurons that had been classified as E showed an increase in firing rate after photostimulation. The percentage of I cells responsive to light may be influenced by our viral strategy, which targets only a subset of PV-expressing interneurons largely located in the infralimbic and prelimbic cortical subregions. Additionally, non-PV inhibitory interneurons and some excitatory neurons could have been initially classified as inhibitory based on their waveform properties. These experiments, however, unambiguously identified a subset of genetically identified PV neurons: those that showed a transient photostimulation-induced increase in firing rate. Through a comparison with FWHM and PTP features, these results demonstrate that a step-function opsin approach is a viable and scalable method for validating spike waveform classification on multielectrode arrays.
 
@@ -126,62 +292,70 @@ In sum, our work described a fully integrated method with an open-source, unsupe
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 PV-CRE mice (PvalbCre gene designation, 008069) were acquired from Jackson Laboratory (Bar Harbor, ME, USA). All mouse lines were homozygous and in C57BL/6x129S4 background. Mice were kept on a 12:12 hr light/dark cycle, with access to food and water ad libitum. All experiments and procedures were performed in accordance with approved procedures and guidelines set forth by the University of Ottawa Animal Care and Veterinary Services (protocol # 3471).
 
-## Stereotaxic injections
+### Stereotaxic injections
 
 For stereotaxic injections, P21 mice were injected with 0.05 mg/kg buprenorphine and anesthetized by inhalation of isoflurane. Injections were performed using a 10 μL Hamilton syringe with a 33-gauge needle, and 1 μL was injected per coordinate. Stereotaxic coordinates are as follows, from the bregma landmark: mPFC [anterior–posterior (AP), +2.4 —> +2.6; medial–lateral (ML), ±0.42; dorsal–ventral (DV), –1.5 —>–1.8]. The DV coordinate was calculated from the surface of the pia. For ChR2 expression, 400 nL of pAAV-Ef1a-DIO hChR2 (C128S/D156A)-EYFP was injected, per site, (bilaterally) and animals were left to recover for 2–3 weeks before ex vivo electrophysiological recordings.
 
-## Slices
+### Slices
 
 mPFC slices were prepared from 35- to 42-day-old PV-CRE mice, 2–3 weeks post-stereotaxic injections. For slice preparation, mice were anesthetized by inhalation of isoflurane (Baxter Corporation) and killed by decapitation. The brain was removed, and coronal brain slices were sectioned while immersed in an ice-cold choline chloride-based cutting solution of the following composition: 119 mM choline-Cl, 2.5 mM KCl, 1 mM CaCl2, 4.3 mM MgSO4-7H2O, 1 mM NaH2PO4, 1.3 mM sodium L-ascorbate, 26.2 mM NaHCO3, and 11 mM glucose, and equilibrated with 95% O2 and 5% CO2. Slices were recovered in a chamber containing standard artificial cerebrospinal fluid solution (aCSF) of the following composition: 119 mM NaCl, 2.5 mM CaCl2, 1.3 mM MgSO4- 7H2O, 1 mM NaH2PO4, 26.2 mM NaHCO3, and 11 mM glucose, at a temperature of 37 °C, continuously bubbled with a mixture of 95% O2 and 5% CO2. Slices were recovered for 1 hr in the recovery chamber and equilibrated to a temperature of ∼25 °C before the recordings were performed. The tissue was continuously perfused with fresh aCSF. The recordings shown in this paper were 24 min long and were as follows: baseline (2 min), opto-on (2 min), opto-off (2 min), CNQX wash-on (5 min), CNQX +opto on (2 min), CNQX +opto off (2 min), PTX wash-on (5 min), CNQX and PTX +opto on (2 min), CNQX and PTX +opto off (2 min). MEA-chip baseline (no slice) was recorded (30 s) as control prior to adding each slice. Slices were imaged on the multi-electrode array and preserved for immunohistochemistry verification of virus expression site.
 
-## Whole-cell electrophysiology
+### Whole-cell electrophysiology
 
 Neurons were visualized for whole-cell recordings using an upright microscope: BX61WU upright microscope (60 X, 1.0 NA objective; Olympus, Melville, NY). PV neurons were visually identified by EYFP expression. Whole-cell recordings were performed using borosilicate glass patch electrodes (3–6 MΩ; World Precision Instruments) pulled on a Narishige PC-10 pipette puller. Electrical signals were recorded using an Axon Multiclamp 700B amplifier, filtered at 2 kHz, and digitized at 10 kHz with an Axon Digidata 1440 A digitizer. All experiments were performed at room temperature in Ringer’s solution containing (in mM) 119 NaCl, 2.5 CaCl2, 1.3 MgSO4-7H20, 1 NaH2PO4, and 26.2 NaHCO3, and 11 glucose saturated with 95% O2 and 5% CO2 (pH 7.3, 295–310 mOsm/L). Electrodes were filled with an intracellular solution of the following compositions (in mM): 115 K-gluconate, 20 KCl, 10 HEPES, 4 ATP-Mg, 0.5 GTP, 10 Na-phosphocreatine (pH = 7.2–7.3; 270–290 mOsm/L).
 
-## Multielectrode array recordings
+### Multielectrode array recordings
 
 Extracellular voltage was recorded using High-Density Multi Electrode Arrays (HD-MEAs) from 3 Brain, Switzerland (https://www.3brain.com/). A detailed description of the technology behind this system can be found in Imfeld et al., 2008 and in Berdondini et al., 2009. High-density recordings from the mouse’s prefrontal cortex were performed in vitro using the BioCAM X platform with HD-MEA Arena chips (3Brain GmbH, Switzerland). This system records using 4096 square microelectrodes (pitch = 42 μm) positioned in a 64x64 layout (2.67mm x 2.67 mm area) with a sampling rate fs of 18 kHz when recording from the entire 64x64 array. Activity was recorded at 12 bits resolution per channel. The data was visualized and acquired with the BrainWaveX software provided by 3Brain.
 
-## Spike sorting
+### Spike sorting
 
 A code library for SpikeMAP in Python and Matlab is available as open source software from figshare, as well as from GitHub (copy archived at Giraud, 2020).
 
-## Filtering
+### Filtering
 
 The extracellular voltages recorded by multielectrode arrays typically reflect the dynamics of multiple cells in proximity to a given electrode (Rey et al., 2015), raising the problem of how to isolate individual units. The unfiltered voltage at individual channels was characterized by sharp deflections (Figure 2Bi) that are typical of in vitro extracellular activity in spontaneously active cortical circuits (Hemberger et al., 2019). As a necessary first step to isolate individual units, we filtered the extracellular voltage using a second-order Butterworth bandpass filter (300–5000 Hz; Figure 2Bii) to remove slowly changing field potentials and high-frequency noise (Bullmann et al., 2019). Recording artefacts (voltage deflection > ± 500 µV) were removed and set to the mean voltage.
 
-## Spike detection
+### Spike detection
 
-Putative spike times were detected using a voltage-threshold method (Lewicki, 1998), identifying negative signal peaks below a threshold of x\begin{document}$x$\end{document} standard deviation (SD) from the mean of the filtered signal. Here, x\begin{document}$x$\end{document} is calculated for each recording, by plotting the filtered voltage histogram for each channel and fitting it with a Gaussian curve to determine the SD value at which non-normal, putative spike-related activity is found. An absolute refractory period was applied, and successive events within <2ms were discarded. Next, the unfiltered voltage around the time of each spike (from –5 to +5ms) was extracted (Figure 2Bii), yielding a series of high-frequency (18 kHz) waveforms for each channel. For the data shown here, all three recordings used had x=4.5\begin{document}$x=4.5$\end{document} SD.
+Putative spike times were detected using a voltage-threshold method (Lewicki, 1998), identifying negative signal peaks below a threshold of $x$ standard deviation (SD) from the mean of the filtered signal. Here, $x$ is calculated for each recording, by plotting the filtered voltage histogram for each channel and fitting it with a Gaussian curve to determine the SD value at which non-normal, putative spike-related activity is found. An absolute refractory period was applied, and successive events within <2ms were discarded. Next, the unfiltered voltage around the time of each spike (from –5 to +5ms) was extracted (Figure 2Bii), yielding a series of high-frequency (18 kHz) waveforms for each channel. For the data shown here, all three recordings used had $x=4.5$ SD.
 
-## Isolation of single units
+### Isolation of single units
 
 To isolate single-cell activity, we employed a principal component analysis on individual channels, which revealed distinct clusters putatively corresponding to individual cells (Figure 2E). Next, clusters amongst the principal components of rrSVD were extracted using a k-means cluster analysis (k=2; Xu and Wunsch, 2005). A linear discriminant analysis (LDA) was then applied to the labeled principal components (Hill et al., 2011) to determine how well the data were separated by this approach. LDA provides an estimate of linear classification error between the two clusters assuming equal class covariance. Tenfold cross-validation was employed, where chance corresponds to an error estimate of 0.5 (Figure 2G). Clusters with error lower than chance were merged by applying the same label to all waveforms. Each cluster was considered a putative neuron.
 
-## Center-of-mass triangulation
+### Center-of-mass triangulation
 
-In order to precisely estimate soma locations between each recording electrode, we used a center-of-mass analysis (Muthmann et al., 2015; Hilgen et al., 2017). For each putative soma identified previously, a 3-by-3 matrix with elements aij\begin{document}$\boldsymbol{a}_{ij}$\end{document} was constructed by extracting the waveforms on adjacent electrodes. Location (2,2) of this matrix was the amplitude of the negative peak in mean waveform of the somatic electrode. Surrounding locations were populated with the amplitude of the negative peaks of all electrodes immediately adjacent to the somatic electrode. The row of the center-of-mass is given byr=∑i∑j(i⋅aij)∑ijaij\begin{document}$$\displaystyle  r=\frac{\sum _{i}\sum _{j}\left (i\cdot \boldsymbol{a}_{ij}\right)}{\sum _{ij}\boldsymbol{a}_{ij}}$$\end{document}
+In order to precisely estimate soma locations between each recording electrode, we used a center-of-mass analysis (Muthmann et al., 2015; Hilgen et al., 2017). For each putative soma identified previously, a 3-by-3 matrix with elements $a_{ij}$ was constructed by extracting the waveforms on adjacent electrodes. Location (2,2) of this matrix was the amplitude of the negative peak in mean waveform of the somatic electrode. Surrounding locations were populated with the amplitude of the negative peaks of all electrodes immediately adjacent to the somatic electrode. The row of the center-of-mass is given by
 
-and the column isc=∑i∑j(j⋅aij)∑ijaij.\begin{document}$$\displaystyle  c=\frac{\sum _{i}\sum _{j}\left (j\cdot \boldsymbol{a}_{ij}\right)}{\sum _{ij}\boldsymbol{a}_{ij}}.$$\end{document}
+$$
+r=\frac{\sumi\sumj(i⋅a_{ij})}{\sumija_{ij}}
+$$
+
+and the column is
+
+$$
+c=\frac{\sumi\sumj(j⋅a_{ij})}{\sumija_{ij}}.
+$$
 
 In addition to center-of-mass triangulation, SpikeMAP includes protocols to perform monopolar triangulation and grid-based convolution, offering additional options to estimate putative soma locations based on waveform amplitudes.
 
-## Spline interpolation
+### Spline interpolation
 
 The mean waveform for each single cell was resampled at a higher rate using a piecewise cubic spline interpolation (Matlab R2015b), constructing new points within the boundaries of a set of known points using query points at 90 kHz.
 
-## E/I classification
+### E/I classification
 
 We used a combination of cell-type-specific viral strategies and optogenetics to address cell-type distinction. We injected PV-CRE mice (B6.Cg-Pvalb<tm1.1(cre)Aibs>/J) with a stabilized step-function opsin (pAAV-Ef1a-DIO hChR2 (C128S/D156A)-EYFP) bilaterally in the medial prefrontal cortex (mPFC; Berndt et al., 2009). This allows for selective, prolonged activation of parvalbumin (PV) interneurons with a 100ms pulse of 465 nm blue light and deactivation with a 10 s pulse of 545–580 nm green-yellow light. Next, we computed a z-score for each neuron corresponding to photostimulation-evoked change in firing rate, expressed in units of SD from the baseline mean (Figure 5D). We isolated cells showing a robust increase in firing rate (z score >3). A total of (n=8189, 3 slices, from 3 mice) was classified in this fashion. Overall, 7759 (94.75 %) were reliably classified as excitatory and 430 (5.25 %) were reliably identified as inhibitory. This number is close to the expected percentage of PV interneurons in cortex (4–6%; Markram et al., 2004).
 
-## LED photostimulation
+### LED photostimulation
 
 LED photostimulation was delivered using a PlexBright LED module and controller (465 nm; Plexon). Light was delivered through a 200 μm patch fiber cable with a bare fiber tip with ∼1 cm of glass exposed. Photodeactivation was delivered using a yellow activation wideband 545–580 nm filter (BP545-580; Olympus).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Brain slices used for immunohistochemistry were prepared from 35- to 42-day-old mice with 1×PBS used as the solvent for all solutions. Mice were anesthetized by inhalation of isoflurane. They were then intracardially perfused with 5 mL of PBS pH = 7.4 followed by 10 mL of 4% paraformaldehyde/ 0.1 M PBS, pH 7.4 for 10 min. Postfixation in 4% PFA was carried out for 2 hr before sequential cryoprotection steps in 15% and 30% sucrose over the course of 2 d. Brains were frozen in −30 °C isopentane, mounted in cryomatrix, and cut to 40 μm slices on a cryostat (CM 3050 S; Leica). Free-floating sections were blocked in 0.5% PBS-Triton-X-100 (TX-100) for 45 min and incubated in primary antibody against GFP (GFP-1020; 1:1000, AvesLabs) in blocking solution at 20 °C. On the following morning, slices were washed three times, for 5 min each time, with 0.5% PBS-Triton-X-100 before incubation in the secondary antibody goat anti-chicken–conjugated AlexaFluor 488 (Jackson Labs, 703-546-155) for 3 hr at room temperature. Slices were washed with 0.1% Tx-100 three times, for 5 min each time, before mounting onto slides with Vectashield (Vector Labs). Additionally, all slices used for recordings were saved, kept immersed in Formalin 10% in PBS pH = 7.4, for immunohistochemistry to verify viral expression. The protocol is the same as above.

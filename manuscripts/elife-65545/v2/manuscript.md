@@ -41,7 +41,7 @@ Since the initial discovery of PLN decades ago (Kirchberber et al., 1975), it ha
 
 ## Results
 
-## SERCA activity in the presence of DWORF
+### SERCA activity in the presence of DWORF
 
 Previous studies of DWORF function focused on the apparent calcium affinity and not the maximal activity of SERCA in the presence of DWORF (Nelson et al., 2016; Makarewich et al., 2018). These studies demonstrated that DWORF does not alter the apparent calcium affinity of SERCA. A recent study claimed to show that DWORF increases the apparent calcium affinity of SERCA (Li et al., 2021), though our current data (Figure 2) and previous studies by others (Nelson et al., 2016; Makarewich et al., 2018) do not support their conclusion. To investigate if there was a direct functional effect of DWORF on the apparent calcium affinity (KCa) or maximal activity (Vmax) of SERCA, we used an in vitro membrane co-reconstitution system (e.g., Ceholski et al., 2012; Trieber et al., 2009; Trieber et al., 2005). To achieve this, DWORF was co-reconstituted into membrane vesicles with SERCA and the calcium-dependent ATPase activity was measured (Figure 2). The previously reported ATPase activity curves for SERCA in the absence and presence of PLN (Glaves et al., 2019; Gorski et al., 2013) were compared to the activity curves for SERCA in the absence and presence of DWORF. At a molar ratio of ~1–2 DWORF per SERCA, DWORF increased the turnover rate of SERCA at nearly all calcium concentrations tested (0.01–15 µM free calcium). The maximal activity (Vmax) of SERCA in the absence of DWORF increased 1.7-fold in the presence of DWORF (Vmax values were 4.1 ± 0. and 6.9 ± 0.1 µmol/min/mg, respectively). This level of SERCA activation is comparable to the small-molecule activator CDN1163 (Kang et al., 2016). There was no significant effect of DWORF on the apparent calcium affinity of SERCA (KCa values of 0.42 ± 0.03 and 0.48 ± 0.03 µM calcium, respectively). Thus, DWORF acted as a direct activator of SERCA by increasing its maximal activity (turnover rate).
 
@@ -49,7 +49,7 @@ Previous studies of DWORF function focused on the apparent calcium affinity and 
 
 **Figure 2.:** (A) ATPase activity of SERCA membrane vesicles in the absence (black line) and presence of DWORF (gray line). (B) Comparison to previously published ATPase activity for SERCA in the absence (black line) and presence of phospholamban (gray line). Only the fitted curves from reference (Anderson et al., 2015) are shown. (C) ATPase activity of SERCA membrane vesicles in the absence (black bar) and presence (gray bar) of the small molecule activator CDN1163 at saturating calcium concentration (3 µM).
 
-## Cellular calcium transport in the presence of DWORF
+### Cellular calcium transport in the presence of DWORF
 
 Previous studies have shown that DWORF relieves SERCA inhibition by displacing PLN from the inhibitory groove of SERCA (Nelson et al., 2016; Makarewich et al., 2018). Our data are consistent with this observation, and we add a new facet of DWORF function as a direct activator of SERCA even in the absence of PLN. To determine whether increased ATPase activity was accompanied by increased cellular calcium transport activity, we utilized a newly developed approach for measuring calcium uptake into the endoplasmic reticulum (ER) of live cells (Bovo et al., 2019). The technique used an inducible human SERCA2a stable cell line (t-Rex-293 cells) containing the calcium release channel RyR2, which allows manipulation of ER calcium load, and an ER-targeted calcium indicator R-CEPIA1er, which allows measurement of ER calcium load (Bovo et al., 2019; Bovo et al., 2016). The cell line was transiently transfected with mCer-DWORF (or mCer-PLN) to assess regulation of SERCA2a. mCer-DWORF was predominantly expressed in the ER (estimated from the overlap between the mCer-DWORF and the R-CEPIA1er signals; Figure 3A), with a distribution pattern similar to SERCA (Bovo et al., 2019). To determine SERCA2a function, the plasma membrane was permeabilized with saponin to allow control of the cytosolic-free calcium and ATP concentrations. ER calcium uptake was quantified from the increase in R-CEPIA1er fluorescence after full ER calcium depletion by caffeine followed by RyR2 inhibition with ruthenium red and tetracaine (RyR + Tetr; Figure 3B), which blocks the principal calcium leak pathway (Bovo et al., 2019). The first derivative of ER calcium uptake (d[Ca2+]ER/dt) was plotted against the corresponding [Ca2+]ER to estimate the maximum ER calcium uptake rate and the maximum ER calcium load (Figure 3C). As expected, PLN transfection decreased ER calcium uptake compared to control. The opposite effect was observed with DWORF transfection, which almost doubled SERCA calcium uptake rate over the entire range of physiological ER calcium loads. These data indicated that DWORF acts as a potent activator of SERCA2a and this regulation is direct, not requiring pre-existing inhibition of SERCA by PLN. Moreover, it was noteworthy that DWORF enhanced the maximum ER calcium load (Figure 3C, arrow). Since the thermodynamic driving force for calcium transport is the ATP/ADP ratio, we conclude that DWORF enhances SERCA catalytic efficiency and reduces the energetic cost of calcium transport (Bovo et al., 2019).
 
@@ -59,7 +59,15 @@ Previous studies have shown that DWORF relieves SERCA inhibition by displacing P
 
 To investigate the effect of DWORF on SERCA in cellular calcium handling dynamics, we mimicked cardiac calcium handling in the heterologous cell model expressing SERCA and RyR (Figure 4, Figure 4—figure supplement 1). This system generates periodic calcium waves due to spontaneous calcium release by RyR2 followed by calcium reuptake by SERCA (Figure 4A, B). Co-expression of DWORF resulted in increased ER calcium load (Figure 4B; [Ca2+]ER) and increased frequency (Figure 4B; Tau(s)) and amplitude of spontaneous calcium waves, suggesting a significantly faster calcium reuptake due to increased SERCA activity. In contrast, PLN significantly decreased the calcium uptake rate by slowing the calcium wave recovery. Similar effects of DWORF on spontaneous calcium release were observed when calcium waves were measured as cytosolic calcium fluctuations in intact cells (Figure 4C) with a significant increase in the average amplitude and integral of RyR-mediated calcium release events in DWORF-expressing cells (Figure 4D). These results demonstrate that DWORF expression increases ER calcium load by enhancing SERCA-mediated calcium uptake. These data support the observation that DWORF directly increases the calcium-dependent ATPase activity of SERCA (Figure 2).
 
-## Relative affinity of DWORF binding to SERCA
+![Figure 4.](https://cdn.elifesciences.org/articles/65545/elife-65545-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Co-expression of sarco-endoplasmic reticulum calcium pump (SERCA)2a and ryanodine receptor (RyR2) produced Ca2+ waves due to spontaneous activation of RyR2 followed by SERCA Ca2+ reuptake. DWORF increased the magnitude ([Ca2+]ER) and frequency (rate of recovery of [Ca2+]ER, Tau(s)) of spontaneous Ca2+ waves, while phospholamban significantly decreased it. Similar effects of DWORF on spontaneous calcium release were observed when Ca2+ waves were measured as cytosolic Ca2+ fluctuations in intact cells. (C) Average amplitude and frequency of RyR-mediated Ca2+ release events were significantly increased in DWORF-expressing cells. (D) The integral of RyR-mediated Ca2+ release events was significantly increased in DWORF-expressing cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65545/elife-65545-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Representative line-scan images of R-CEPIA1er during an initial 45 s recording are shown. Line-scan images of R-CEPIA1er were calibrated with ionomycin (see Materials and methods) to generate profiles of changes in ER Ca2+ concentration ([Ca2+]ER) as shown in Figure 4A. Experimental details can be found in Bovo et al., Am J Physiol Heart Circ Physiol (2019) 316:H1323-H1331.
+
+### Relative affinity of DWORF binding to SERCA
 
 To gain insight into the mechanism of SERCA activation by DWORF, we measured the relative binding of PLN and DWORF to SERCA in a cell environment. Fluorescent protein tags were fused to SERCA, PLN, and DWORF, and intermolecular fluorescence resonance energy transfer (FRET) was quantified in cells expressing pairs of fusion proteins. This method was recently used to show that PLN and DWORF had similar apparent affinities for SERCA in intact cells (Makarewich et al., 2018; Singh et al., 2019). In addition, we previously showed that PLN affinity for SERCA is sensitive to calcium, where the affinity was decreased by high calcium in permeabilized cells or during extended calcium elevations in rapidly paced cardiomyocytes (Bidwell et al., 2011). This apparent change in affinity suggests that PLN binds more avidly to the conformations of SERCA that prevail under resting conditions when cytosolic calcium is low. The enhanced interaction with calcium-free forms of SERCA offers a mechanistic explanation for the effect of PLN on the apparent calcium affinity of SERCA. PLN binds to SERCA in a groove formed by transmembrane segments M2, M6, and M9 (Akin et al., 2013; Toyoshima et al., 2013; Winther et al., 2013). Upon calcium binding to SERCA, M2 undergoes a conformational change that closes the inhibitory groove and forms the calcium-bound E1 state of SERCA. PLN appears to act as a competitive inhibitor of calcium binding by impeding groove closure and formation of the calcium-bound E1 state.
 
@@ -69,13 +77,13 @@ To determine how the SERCA-DWORF regulatory complex responds to changes in calci
 
 **Figure 5.:** The average acceptor sensitization FRET efficiency of cells co-transfected with mCer-SERCA2a and either (A) YFP-PLN or (B) YFP-DWORF. FRET efficiency was measured at high and low calcium concentrations to assess the relative affinity of phospholamban (PLN) and DWORF for the calcium-free and calcium-bound conformations of SERCA. (C) Hyperbolic fits to data provide quantification of the apparent dissociation constant (KD) of the SERCA-PLN or SERCA-DWORF regulatory complexes. Ca decreases the apparent affinity of PLN for SERCA, yet it increases the affinity of DWORF for SERCA.
 
-## Structure of DWORF
+### Structure of DWORF
 
 To gain molecular insight into the activation behavior described above, we generated two molecular models of DWORF, one as a continuous α-helix and another as an N-terminal α-helix (residues 1–13), a flexible linker (residues 14–16; centered around Pro15), and a C-terminal α-helix (residues 17–35). The models were embedded in a lipid bilayer and equilibrated using MD simulations for 4 µs (Figure 6). Both starting models quickly converged on a bent helix or helix-linker-helix structure, though the overall structure was dynamic in the simulations and varied somewhat depending on the starting model. A similar behavior has been observed with SLN (Aguayo-Ortiz et al., 2020). The MD simulations support the helix-linker-helix model, with a bent or unwound region centered on Pro15, as the more stable and probable structure of DWORF (Figure 2B). This model was maintained over 4 µs of MD simulations. To further rationalize this model, we carried out predictions of the secondary structure (Buchan and Jones, 2019; Deléage, 2017; Drozdetskiy et al., 2015; Torrisi et al., 2019) and the transmembrane region (Buchan and Jones, 2019; Tusnády and Simon, 2001; Krogh et al., 2001; Rost and Liu, 2003), as well as hydrophobic moment analysis of the DWORF peptide using only the amino acid sequence (Figure 1). The secondary structure predictions suggested that residues 9–35 are likely to be found as an α-helix, and prediction of the transmembrane domain suggested that residues 10–33 reside in the membrane.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/65545/elife-65545-fig6-v2.jpg)
 
-**Figure 6.:** A) and as a helix-linker-helix (B).Shown are snapshots during the simulations (0, 1, 2, 3, and 4 µs), as well as the RMSD (nm), kink angle, per-residue secondary structure (coil in dark gray and helix in light gray), and tilt angles of the transmembrane helix domain (TMD) and the amphipathic helix (AH). Notice that both simulations support a helix-linker-helix structure of DWORF. The MD simulation in (B) indicates that the helix-linker-helix structure is maintained, though it is dynamic during the time course of the simulation.
+**Figure 6.:** Shown are snapshots during the simulations (0, 1, 2, 3, and 4 µs), as well as the RMSD (nm), kink angle, per-residue secondary structure (coil in dark gray and helix in light gray), and tilt angles of the transmembrane helix domain (TMD) and the amphipathic helix (AH). Notice that both simulations support a helix-linker-helix structure of DWORF. The MD simulation in (B) indicates that the helix-linker-helix structure is maintained, though it is dynamic during the time course of the simulation.
 
 To evaluate the N-terminal juxtamembrane helix in the helix-linker-helix model of DWORF and the potential ‘helix breaker’ property of Pro15, we carried out hydrophobic moment analysis of the DWORF amino acid sequence (Figures 1 and 7). Hydrophobic moment analysis revealed an amphipathic helix comprising residues 1–13, which is remarkably like the N-terminus of PLN. However, DWORF has a shorter sequence following the proline residue (Pro21 in PLN and Pro15 in DWORF), which includes only the transmembrane domain. PLN has a polar helical region (residues Gln22 to Asn30) that follows the proline residue and precedes the transmembrane domain (residues 31–51), and this feature is absent in DWORF. The presence of the amphipathic helix allows hydrophobic residues to be located on one side of the helix and hydrophilic residues on the other. In the molecular model, the hydrophobic residues are oriented towards the lipid bilayer, while the hydrophilic residues are exposed to the aqueous solvent. As a result, DWORF modulates the local lipid bilayer (Figure 7B). The amphipathic juxtamembrane region is also observed in PLN (PDB code 2KYV; Verardi et al., 2011) and the amyloid precursor protein (PDB code 2LLM; Nadezhdin et al., 2011). Thus, the formation of this juxtamembrane helix suggests that DWORF may mimic some of the structural features of PLN.
 
@@ -83,7 +91,7 @@ To evaluate the N-terminal juxtamembrane helix in the helix-linker-helix model o
 
 **Figure 7.:** (A) Hydrophobic moment analysis revealed amphipathic helices at the N-terminus of DWORF (left panel) and phospholamban (PLN) (right panel). Notice the similar distribution of polar (red) and apolar (black) residues in the helix-kink structure of DWORF and PLN N-terminal to a proline residue (Pro15 in DWORF and Pro21 in PLN). (B) Time-averaged local membrane thickness in the molecular dynamics simulation of the DWORF helix-linker-helix model. Notice how the bilayer becomes thinner around the short transmembrane helix and amphipathic helix of DWORF. The maximum and minimum widths of the lipid bilayer are indicated by the blue-white-red color-coded bar.
 
-## Molecular model of the SERCA-DWORF complex
+### Molecular model of the SERCA-DWORF complex
 
 To consider the implications of the helix-linker-helix model of DWORF, we generated structures of DWORF bound to the inhibitory groove of SERCA using protein-protein docking and MD simulations. DWORF was docked to the SERCA-PLN complex (PDB: 4KYT; Akin et al., 2013) with Pro15 of DWORF aligned with Asn34 of PLN (Figure 8). Three replicate SERCA-DWORF complexes were generated using the most populated structures of DWORF based on root-mean-square deviation (RMSD) clustering analysis of the MD simulations. During the 1 µs MD simulation times, the SERCA-DWORF complexes were maintained and the interaction remained stable (Figure 8A) with the exception of MD replicate MD2, which lost contact with DWORF for approximately 25% of the simulation time. However, the SERCA-DWORF interaction was reestablished. While the main focus of this study was not the precise molecular interactions of the complex, there are some interactions between DWORF and SERCA that appear to stabilize the complex (Figure 8B). Pro15 and Ile16 of DWORF interact with Trp107 on M2 of SERCA. At the base of the transmembrane helix of DWORF, Tyr31 packs against a short orthogonal helix at the base of M9 in the inhibitory groove of SERCA (Pro952 and Ile956). In addition to these anchoring interactions, hydrophobic interactions dominate the interface, with the inhibitory groove of SERCA lined by DWORF hydrophobic residues including Leu17, Ile20, Ile23, Val24, Ile27, Ile28, and Ile30. The MD simulations also reveal that the bilayer thickness is modulated by DWORF in the vicinity of the inhibitory groove and the calcium access funnel of SERCA (Figure 8C).
 
@@ -99,13 +107,13 @@ The two main assumptions that underlie this model include (i) DWORF binds to the
 
 ## Discussion
 
-## Functional effect of DWORF
+### Functional effect of DWORF
 
 The data presented here demonstrate that DWORF is a direct activator of SERCA, enhancing calcium-dependent ATPase activity of SERCA in reconstituted membranes and SERCA-dependent calcium dynamics in living cells. While DWORF displaces PLN from SERCA as previously reported (Nelson et al., 2016; Makarewich et al., 2018), we have shown that DWORF also has a direct effect on SERCA function that is opposite to the inhibitory properties of PLN. The opposing functions of DWORF and PLN represent a previously unknown regulatory axis for fine-tuning SERCA-dependent calcium homeostasis in response to demand for cardiac output. Previous studies of DWORF overexpression in mouse models with normal PLN expression level demonstrated that peak systolic calcium transient amplitude and SR calcium load were significantly increased with DWORF overexpression (Nelson et al., 2016; Makarewich et al., 2018). While these findings were attributed to DWORF displacement of PLN and relief of SERCA inhibition, these findings are also consistent with a dual mechanism that includes direct activation of SERCA by DWORF.
 
 The membrane reconstitution system allowed us to assess the effect of DWORF on SERCA function in a controlled membrane environment. This SERCA-DWORF two-component system is well-suited for measurements of ATPase activity (Ceholski et al., 2012; Trieber et al., 2009; Trieber et al., 2005; Gorski et al., 2013; Douglas et al., 2005) and calcium transport (Smeazzetto et al., 2017) in the presence of regulatory subunits such as PLN and DWORF. PLN is a known inhibitor of SERCA in that it reduces the apparent affinity for calcium (Figure 2A). Herein, we measured SERCA ATPase activity in the presence of DWORF, which allowed assessment of both the apparent calcium affinity and maximal activity of SERCA. Previous studies of DWORF function focused on the apparent calcium affinity of SERCA (Nelson et al., 2016; Makarewich et al., 2018). At a near equimolar ratio, DWORF acted as a direct activator by increasing the maximal activity of SERCA 1.7-fold without an effect on the apparent calcium affinity (Figure 2B). The magnitude of the Vmax increase seen in the presence of DWORF (~1.7 fold) is similar to that seen in the presence of the small-molecule activator of SERCA, CDN1163 (~1.5-fold; Kang et al., 2016). Thus, the important feature of DWORF and PLN regulation in cardiac muscle is that the regulatory subunits have different functions. The primary effect of PLN is to alter the apparent calcium affinity of SERCA, and the primary effect of DWORF is to alter the maximal activity of SERCA. These distinct but complimentary functions allow for a fine level of control of SERCA-mediated calcium homeostasis.
 
-## Cellular effect of DWORF
+### Cellular effect of DWORF
 
 Membrane co-reconstitution systems can provide mechanistic insight into SERCA regulation; however, it is both an advantage and disadvantage that they lack the complexity of a cellular environment. HEK293 cells have been established as a novel cardiomimetic system for evaluating SERCA-dependent calcium-handling and its regulation by PLN (Bovo et al., 2019). This approach provides the complex environment of a cell, while avoiding the confounding effects of imaging cells during contractions. Co-expression of SERCA2a and RyR2 in this cell system causes periodic calcium transients (waves) similar to those that elicit contractions in cardiomyocytes. The HEK cell model lacks endogenous SERCA regulators, and it can be stably transfected with the exogenous regulators PLN and DWORF. This enabled the observation of ER calcium load, calcium uptake rate, and changes in the magnitude and frequency of calcium waves. These are SERCA-dependent cellular responses to changes in calcium concentration and the presence of SERCA regulatory subunits. This system was used to test the effects of DWORF on SERCA-dependent cellular calcium dynamics. As was observed for PLN, DWORF co-localized with SERCA in ER membranes (Figure 3A). DWORF increased two key parameters of SERCA function, ER calcium content (Figure 3B) and ER calcium uptake rate (Figure 3C). These parameters reflect the kinetics and thermodynamics of SERCA in the absence and presence of DWORF, and the effects were opposite to what is seen for PLN.
 
@@ -113,7 +121,7 @@ An alternative measure of ER calcium load and SERCA activity was provided by the
 
 This raised the question, what is the mechanism by which DWORF activates SERCA? To address this, FRET efficiency between SERCA-PLN and SERCA-DWORF was measured at high and low calcium concentrations to assess the relative affinity of PLN and DWORF for the calcium-bound and calcium-free conformations of SERCA (Figure 5A, B). The data provided relative measures of the dissociation constants (KD) of the SERCA-PLN and SERCA-DWORF complexes (Figure 5C). Previous studies have shown that PLN remains associated with SERCA even in the presence of calcium (e.g., Bidwell et al., 2011; Dong and Thomas, 2014; Mueller et al., 2004; Li et al., 2004). Consistent with these observations, elevated calcium did not abolish binding of PLN to SERCA, instead it reduced the apparent affinity of PLN for SERCA (Figure 5A, C). In contrast, calcium increased the apparent affinity of DWORF for SERCA (Figure 5B, C), revealing that DWORF prefers to interact with conformations of SERCA that prevail at high calcium. In the context of the current model of DWORF as a competitive inhibitor of PLN binding to SERCA, the data suggest that DWORF would compete more effectively when calcium is elevated, helping to relieve SERCA inhibition each time that increased transport function is required. In addition, the inverted calcium dependence of the SERCA-DWORF interaction offers an explanation for the direct activation of SERCA by DWORF observed in reconstituted membranes (Figure 2) and cellular calcium dynamics (Figures 3 and 4). While PLN inhibition involves preferential interaction and stabilization of SERCA enzymatic states that prevail at low calcium (e.g., Akin et al., 2013; Asahi et al., 2000; Jones et al., 2002), DWORF preferentially binds and stabilizes SERCA states that are populated during calcium elevations. This DWORF interaction enhances the kinetics of rate-limiting steps in the SERCA transport cycle.
 
-## Unique structure of DWORF
+### Unique structure of DWORF
 
 A critical step was to evaluate the structure of DWORF in comparison to the well-characterized SERCA regulatory subunits PLN (Akin et al., 2013; Verardi et al., 2011) and SLN (Toyoshima et al., 2013; Winther et al., 2013; Mascioni et al., 2002). Both SLN and PLN form continuous transmembrane helices with well-defined orientations in the membrane. The cytoplasmic domain of PLN is longer than that found in SLN and DWORF, and it lies along the membrane surface in the structure determined by NMR spectroscopy (PDB ID: 2KYV; Verardi et al., 2011). In the X-ray crystal structures of the SERCA-PLN (Akin et al., 2013) and SERCA-SLN (Toyoshima et al., 2013; Winther et al., 2013) complexes, PLN and SLN are found as continuous transmembrane helices (residues ~ 24–48 and ~1–31, respectively), though the cytoplasmic domain of PLN was not resolved. The helical transmembrane domains of PLN and SLN facilitate the structural interactions in the SERCA-bound states, and it is a critical feature of these peptides. In contrast, the DWORF transmembrane domain appears to be discontinuous (residues Leu17 to Ser35), with a break at Pro15 and an N-terminal helix that lies along the membrane surface (residues Met1 to Leu13).
 
@@ -121,56 +129,192 @@ The molecular structure of the SERCA-DWORF complex remains unknown. The current 
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL c2x DWORF plasmid</td>
+      <td>This study</td>
+      <td></td>
+      <td>MBP-DWORF fusion; H.S. Young lab</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human DWORF</td>
+      <td>This study</td>
+      <td>NCBI: NP_001339058.1</td>
+      <td>Purified human DWORF peptide; H.S. Young lab</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CDN1163; 4-(1-methylethoxy)-N-(2-methyl-8-quinolinyl)-benzamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1682</td>
+      <td>Previously published SERCA activator (PMID:26702054)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C12E8; octaethylene glycol monododecyl ether</td>
+      <td>Nikkol</td>
+      <td>BL-8SY</td>
+      <td>Detergent for solubilizing SERCA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Egg PC; L-α-phosphatidylcholine (Egg, Chicken)</td>
+      <td>Avanti</td>
+      <td>840051</td>
+      <td>Natural lipid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Egg PE; L-α-phosphatidylethanolamine (Egg, Chicken)</td>
+      <td>Avanti</td>
+      <td>840021</td>
+      <td>Natural lipid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Egg PA; L-α-phosphatidic acid (Egg, Chicken)</td>
+      <td>Avanti</td>
+      <td>840101</td>
+      <td>Natural lipid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin, calcium salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>I3909</td>
+      <td>Facilitates the transport of calcium across the plasma membrane</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ruthenium red</td>
+      <td>Sigma-Aldrich</td>
+      <td>R2751</td>
+      <td>RyR inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>C0750</td>
+      <td>RyR2 agonist</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP_RyR2</td>
+      <td>Donated by Dr. C. George (PMID:15047862)</td>
+      <td></td>
+      <td>Mammalian expression construct containing GFP fused RyR2</td>
+    </tr>
+    <tr>
+      <td>Cell line (HEK 293)</td>
+      <td>T-Rex-293 Cell Line</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R71007</td>
+      <td>Mammalian cell line for the stable expression of proteins of interest</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EYFP-PLN</td>
+      <td>Singh et al., 2019</td>
+      <td></td>
+      <td>Constitutively fluorescent green/yellow fluorescent protein fusion construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EYFP-DWORF</td>
+      <td>Singh et al., 2019</td>
+      <td></td>
+      <td>Constitutively fluorescent green/yellow fluorescent protein fusion construct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCerulean-SERCA</td>
+      <td>Bovo et al., 2019</td>
+      <td></td>
+      <td>Fluorescent protein fusion construct</td>
+    </tr>
+    <tr>
+      <td>Cell line (HEK 293)</td>
+      <td>AAV-293 cells</td>
+      <td>Agilent Technologies</td>
+      <td>240073</td>
+      <td>HEK293 cell line optimized for AAV transfection</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 All reagents were of the highest purity available: octaethylene glycol monododecyl ether (C12E8; Nikkol Group, Nikko Chemicals Co., Ltd., Tokyo, Japan); egg yolk phosphatidylcholine (EYPC), phosphatidylethanolamine (EYPE), and phosphatidic acid (EYPA) (Avanti Polar Lipids, Alabaster, AL); all reagents used in the coupled enzyme assay include NADH, ATP, PEP, lactate dehydrogenase, and pyruvate kinase (Sigma-Aldrich, Oakville, ON Canada).
 
-## Co-reconstitution of DWORF and SERCA
+### Co-reconstitution of DWORF and SERCA
 
 Recombinant human DWORF was expressed as a maltose-binding protein (MBP) fusion with a TEV cleavage site for removal of MBP. DWORF was purified by a combination of organic extraction (chloroform-isopropanol-water) and reverse-phase HPLC (Douglas et al., 2005). Purified DWORF was stored as lyophilized thin films (63 µg aliquots). SERCA1a was purified from rabbit skeletal muscle SR. For co-reconstitution, lyophilized DWORF (63 µg) was suspended in a 100 µl mixture of trifluoroethanol-water (5:1) and mixed with lipids (360 µg EYPC and 40 µg EYPA) from stock chloroform solutions. The peptide-lipid mixture was dried to a thin film under nitrogen gas and desiccated under vacuum overnight. The peptide-lipid mixture was hydrated in buffer (20 mM imidazole pH 7.0; 100 mM NaCl; 0.02% NaN3) at 50°C for 15 min, cooled to room temperature, and detergent-solubilized by the addition of C12E8 (0.2% final concentration) with vigorous vortexing. Detergent-solubilized SERCA1a was added (300 µg in a total volume of 300 µl) and the reconstitution was stirred gently at room temperature. Detergent was slowly removed by the addition of SM-2 Bio-Beads (Bio-Rad, Hercules, CA) over a 4 hr time course (final weight ratio of 25 Bio-Beads to one detergent). Following detergent removal, the reconstitution was centrifuged over a sucrose step-gradient (20–50% layers) for 1 hr at 100,000 g. The reconstituted proteoliposomes at the gradient interface were removed, flash-frozen in liquid-nitrogen, and stored at −80°C. The final molar ratio was 120 lipids to 2 DWORF to 1 SERCA. To ensure the proper ratio of ~2 DWORF per SERCA in the reconstituted proteoliposomes, quantitative SDS-PAGE was used with known quantities of SERCA and DWORF proteins as standards (Trieber et al., 2009; Trieber et al., 2005; Young et al., 2001).
 
-## ATPase activity assays of SERCA reconstitutions
+### ATPase activity assays of SERCA reconstitutions
 
 ATPase activity of the co-reconstituted proteoliposomes was measured by a coupled-enzyme assay over a range of calcium concentrations from 0.1 μM to 10 μM (Trieber et al., 2009; Trieber et al., 2005). The assay has been adapted to a 96-well format utilizing Synergy 4 (BioTek Instruments) or SpectraMax M3 (Molecular Devices) microplate readers. Data points were collected at 340 nm wavelength, with a well volume of 155 μl containing 10–20 nM SERCA at 30°C (data points collected every 28–39 s for 1 hr). The reactions were initiated by the addition of proteoliposomes to the assay solution. The Vmax (maximal activity) and KCa (apparent calcium affinity) were determined based on non-linear least-squares fitting of the activity data to the Hill equation (Sigma Plot software, SPSS Inc, Chicago, IL). Errors were calculated as the standard error of the mean for a minimum of four independent reconstitutions.
 
-## In-cell calcium uptake and spontaneous calcium release methods
+### In-cell calcium uptake and spontaneous calcium release methods
 
 pCMV R-CEPIA1er was a gift from Dr. Masamitsu Iino (Addgene, USA). The vector encoding the human RyR2 cDNA fused to GFP at the N-terminus was kindly provided by Dr. Christopher George (University of Cardiff, UK). The vector encoding human SERCA2a cDNA was kindly provided by Dr. David Thomas (University of Minnesota, USA). The SERCA2a cDNA was cloned into the mCerluean-M1 modified plasmid (Addgene, USA), yielding SERCA2a fused to a modified Cerulean fluorescent protein (mCer) at the N-terminus. SERCA2a cDNA was also cloned into the inducible expression vector pcDNA5/FRT/TO for the generation of SERCA2a stable cell line. The sequences were all verified by single pass primer extension analysis (ACGT Inc, USA).
 
-## Generation of SERCA2a stable cell line
+### Generation of SERCA2a stable cell line
 
 Stable inducible Flp-In T-Rex-293 cell line expressing SERCA2a was generated using the Flp-In T-REx Core Kit (Invitrogen, USA) as described (Bovo et al., 2019). Flp-In T-REx-293 cells were co-transfected with the pOG44 vector encoding the Flp recombinase and the expression vector pcDNA5/FRT/TO containing the SERCA2a cDNA. 48 hr after transfection, the growth medium was replaced with a selection medium containing 100 μg/ml hygromycin. The hygromycin-resistant cell foci were selected and expanded. Stable cell lines were cultured in high glucose Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 100 units/ml penicillin, 100 mg/ml streptomycin, and 10% fetal bovine serum (FBS) at 5% CO2 and 37°C. Expression of SERCA2a in the stable cell line was verified by western blot analysis 48 hr after induction of recombinant pump expression with 1 μg/ml tetracycline. This strategy results in SERCA2a expressed 10-fold over endogenous SERCA2b (Bovo et al., 2019), so calcium uptake is dominated by the exogenous cardiac isoform. MCer-DWORF expression in these cells showed a similar pattern as CEPIA-1er (Figure 4A), indicating that DWORF is preferentially localized in the ER membrane. Since CICR depends on RyR2 expression level, we analyzed calcium waves only in cells that had similar GFP-RyR2 signal.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Changes in the luminal ER [Ca2+] ([Ca2+]ER) and cytosolic [Ca2+] ([Ca2+]Cyt) were measured with laser scanning confocal microscopy (Radiance 2000 MP, Bio-Rad, UK) equipped with a ×40 oil-immersion objective lens (N.A. = 1.3). T-Rex-293 cells expressing SERCA2a were transiently co-transfected with plasmids containing the cDNA of RyR2, DWORF, and R-CEPIA1er. Experiments were conducted 48 hr after transfection to obtain the optimal level of recombinant protein expression. The surface membrane was permeabilized with saponin (0.005%). Experiments were conducted after wash out of saponin with a solution of 100 mM K-aspartate, 15 mM KCl, 5 mM KH2PO4, 5 mM MgATP, 0.35 mM EGTA, 0.22 mM CaCl2, 0.75 mM MgCl2, 10 mM HEPES (pH 7.2), and 2% dextran (MW: 40,000). Free [Ca2+] and [Mg2+] of this solution were 200 nM and 1 mM, respectively.
 
-## [Ca2+]ER measurements
+### [Ca2+]ER measurements
 
 [Ca2+]ER was recorded as changes in fluorescence intensity of the genetically encoded ER-targeted Ca2+ sensor R-CEPIA1er (Bovo et al., 2016). R-CEPIA1er was excited with a 514 nm line of the argon laser and signal was collected at >560 nm. Line-scan images were collected at a speed of 10 ms/line. The R-CEPIA1er signal (F) was converted to [Ca2+]ER by the following formula: [Ca2+]SE = Kd × [(F - Fmin)/(Fmax - F)]. Fmax was recorded in 5 mM Ca2+ and 5 μM ionomycin and Fmin was recorded after ER Ca2+ depletion with 5 mM caffeine. The Kd (Ca2+ dissociation constant) was 564 μM (Mekahli et al., 2011). SERCA-mediated Ca2+ uptake was calculated as the first derivative of [Ca2+]ER refilling (d[Ca2+]ER/dt) after RyR2 inhibition with ruthenium red (15 μM) and tetracaine (1 mM). RyR2-independent Ca2+ leak was analyzed as the first derivative of [Ca2+]ER decline (d[Ca2+]ER/dt) after simultaneous inhibition of RyR2 and SERCA. ER Ca2+ uptake and Ca2+ leak rates were plotted as a function of [Ca2+]ER to analyze maximum ER Ca2+ uptake rate and maximum ER Ca2+ load. All 2-D images and line-scan measurements for [Ca2+]ER were analyzed with ImageJ software (NIH, USA).
 
-## Cytosolic [Ca2+] ([Ca2+]i) measurements
+### Cytosolic [Ca2+] ([Ca2+]i) measurements
 
 [Ca2+]i was measured in intact cells with the high-affinity Ca2+ indicator Fluo-4 (Molecular Probes/Invitrogen, Carlsbad, CA). To load the cytosol with Fluo-4, cells were incubated at room temperature with 10 μM Fluo-4 AM for 15 min in Tyrode solution (140 mM NaCl, 4 mM KCl, 0.5 mM CaCl2, 1 mM MgCl2, 10 mM glucose, 10 mM HEPES, pH 7.4), followed by a 20 min wash. Fluo-4 was excited with the 488 nm line of an argon laser and the emission signal collected at wavelengths above 515 nm. Spontaneous Ca2+ waves were measured at different [Ca2+] (0.5, 1, 2, 5, and 10 mM). In the end of each experiment, caffeine was applied to induce maximal ER Ca2+ release.
 
-## Statistics
+### Statistics
 
 Data are presented as mean ± standard error of the mean (SEM) of n measurements. Statistical comparisons between groups were performed with the Student's t test for unpaired data sets. Differences were considered statistically significant at p<0.05. Statistical analysis and graphical representation of averaged data were carried out on OriginPro7.5 software (OriginLab, USA).
 
-## In-cell FRET methods
+### In-cell FRET methods
 
-## Fluorescence resonance energy transfer measurements
+#### Fluorescence resonance energy transfer measurements
 
 Acceptor sensitization FRET was quantified as previously described (Bidwell et al., 2011). AAV 293 cells were cultured in DMEM cell culture medium supplemented with 10% FBS (ThermoScientific, Waltham, MA). Following culture, cells were transiently transfected using either MBS mammalian transfection kit (Agilent Technologies, Stratagene, La Jolla, CA) or Lipofectamine 3000 transfection kit (Invitrogen) with either EYFP-PLN or DWORF, and mCerulean (mCer)-SERCA constructs in a 1:5 molar plasmid ratio with the fluorescent protein fused via a five amino acid linker to the N-terminus (Makarewich et al., 2018; Singh et al., 2019; Autry et al., 2011; Robia et al., 2007). Cells were then plated 24 hr before imaging in four-well chambered coverglass plates coated with poly-D-lysine and imaged utilizing wide-field fluorescent microscopy. Cells were imaged on a Nikon Eclipse Ti 2 equipped with a Photometrix Prime 95B CMOS camera (Tucson, AZ) and Lumencor Spectra X (Beaverton, OR). Imaging was done in a permeabilization buffer containing 120 mM potassium aspartate, 15 mM potassium chloride, 5 mM magnesium ATP, 0.75 mM magnesium chloride, 2% dextran, 5 mM potassium phosphate, 2 mM EGTA, 20 mM HEPES, and either 0 or 1.7 mM added calcium chloride. Cells were permeabilized in 0.005% saponin buffer for 1 min and then washed twice with buffer before imaging. Data were collected using a 20× 0.75 N.A. objective using 50 ms exposure times for all channels and analyzed using in FIJI using a macro selecting cells with a CFP intensity above 150 AU above background, circularity of 0.4–1 AU, and size of 500–2500 pixels with a rolling background size of 200. FRET efficiency was calculated according to Eapp = IDA – a(IAA) – d(IDD) /(IDA – a(IAA) + (G-d)) IDD (Zal and Gascoigne, 2004), where IDA is the intensity of fluorescence of acceptor emission with donor excitation; IAA is the intensity of acceptor fluorescence with acceptor excitation; and IDD is the fluorescence intensity of donor emission with donor excitation. G represents the ratio of sensitized emission to the corresponding amount of donor recover during acceptor photobleaching and acts as a correction factor, which is constant for a given fluorophore and image conditions. Constants a and d are bleed-through constants calculated from a = IDA/ IAA for a control sample transfected with only YFP-labeled SERCA, and d = IDA/ IDD for a sample transfected with only Cer-labeled SERCA. These values were determined to be a = 0.185, d = 0.405, and G = 2.782. FRET intensity of each cell was then compared to the cell’s YFP intensity, which was used as a measure of protein expression ([PLN]). This leads to estimates of apparent dissociation constant (KD), YFP intensity at ½ FRETmax, and intrinsic FRET of the SERCA-PLN complex, which is equal to the FRETmax. Data were fit with a hyperbola of the function FRET = (FRETmax)([PLN])/(KD + [PLN]).
 
-## Cell lines
+#### Cell lines
 
 The Flip-In T-Rex Cell Line was purchased from Thermo Fisher Scientific. The Flip-In T-Rex Cell Line is derived from 293 human embryonic kidney cells. The 293 parental cell line was obtained from the American Type Culture Collection, and every batch of cells has a Certificate of Analysis. Low passage AAV-293 cells (a type of HEK-293 cell) were obtained from Agilent Technologies. All cells were routinely screened for Mycoplasma using DAPI staining and PCR.
 
-## Molecular modeling of DWORF
+#### Molecular modeling of DWORF
 
 The protein structure homology-modeling program MODELLER (Webb and Sali, 2016) was used to generate molecular models of DWORF as a continuous α-helix (residues 1–35) and a helix-linker-helix (residues 1–13 modeled as an α-helix; residues 14–16 as random coil; and residues 17–35 as an α-helix). In evaluating the amino acid sequence of DWORF, we carried out secondary structure prediction using PSIPRED (Buchan and Jones, 2019), MLRC (Deléage, 2017), JPRED v4.0 (Drozdetskiy et al., 2015), and Porter v5.0 (34). We performed transmembrane region predictions using MEMSAT-SVM (Buchan and Jones, 2019), HMMTOP (Tusnády and Simon, 2001), TMHMM v2.0 (Krogh et al., 2001), and PredictProtein (Rost and Liu, 2003). Finally, we carried out hydrophobic moment analysis to identify regions of amphipathic helices using PEPWHEEL (Di Scala et al., 2014) and HMOMENT (Rice et al., 2000). The SERCA-DWORF complex was modeled based on the SERCA-PLN structure (PDB: 4KYT; Akin et al., 2013) using PyMol v1.7 (Schrodinger, LLC, 2015) and the SwissModel server (Waterhouse et al., 2018).
 
-## Molecular dynamics simulations
+#### Molecular dynamics simulations
 
 The DWORF and SERCA-DWORF models were inserted in a 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) lipid bilayer containing a total 180 and 370 lipid molecules, respectively, using the membrane builder module of CHARMM-GUI web server (Jo et al., 2008; Jo et al., 2009). The systems were solvated using a TIP3P water model with a minimum margin of 20 Å between the protein and the edges of the periodic box in the z-axis. Chloride and sodium ions were added to reach a concentration of 150 mM and neutralize the total charge of the system. MD simulations were carried out using the Amber ff19SB (Tian et al., 2020) and Lipid 17 force field topologies with the parameters implemented in Amber 18 and AmberTools package (Salomon-Ferrer et al., 2013). The systems were energy minimized and equilibrated with NVT and NPT ensembles following the six-step preparation protocol recommended by CHARMM-GUI (Lee et al., 2016). Langevin thermostat algorithm was used to maintain the temperature at 310 K and the Monte Carlos barostat to set the pressure at 1.0 bar. All bonds involving hydrogens were constrained using the SHAKE algorithm. Each DWORF model was subjected to 4 µs MD simulation, while three independent replicates of the SERCA-DWORF complex were subjected to 1 µs MD simulations. For the MD analysis, MDAnalysis python library (Michaud-Agrawal et al., 2011) was used to convert AMBER MD trajectories and coordinates to GROMACS files. We calculated the backbone RMSD, the tilt angle relative to the membrane normal of the TMD and AH (helanal library), the secondary structure (do_dssp), helix kink angle, number of contacts (mindist) and selection of residues within 3.0 Å of a query structure (select) for MD trajectories using the built-in tools of GROMACS 5.1.4 (Abraham et al., 2015) and MDAnalysis. Local membrane property analysis was performed for both systems with the g_lomepro package (Gapsys et al., 2013) implemented in GROMACS. The frames of each simulation were subjected to a backbone RMSD clustering analysis using a cutoff value of 2.0 and 2.5 Å to retrieve the most representative structures of DWORF and SERCA-DWORF, respectively. The plots were constructed with Gnuplot v5.2 (http://www.gnuplot.info) and figures were generated with PyMOL v1.7.

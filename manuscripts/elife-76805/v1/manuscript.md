@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Stanford Cardiovascular Institute, Stanford University School of Medicine Stanford United States
-2. https://ror.org/00f54p054 Department of Biochemistry, Stanford University School of Medicine Stanford United States
+1. Stanford Cardiovascular Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Department of Biochemistry, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -40,35 +40,67 @@ In the present study, we examined five adult-onset HCM-causing mutations in the 
 
 ## Results
 
-## Mutations do not significantly impact light chain loading
+### Mutations do not significantly impact light chain loading
 
 We first sought to determine whether any of the five mutations impacted the expected 1:1:1 stoichiometry of myosin heavy chain:ELC:RLC of our purified proteins. To test this, we used a Coomassie SDS-PAGE gel-based assay that quantified the ratio of myosin heavy chain to ELC and RLC (Figure 2A, B). For this assay, we used a two-headed myosin construct that contains the myosin head, full lever arm, and the first two heptads of the S2 tail, followed by a GCN4 leucine zipper moiety to ensure dimerization, a GFP tag, and a C-terminal affinity clamp peptide tag (2-hep myosin [Nag et al., 2017]). When compared to the paired wild-type (WT) 2-hep control, none of the mutants had significantly changed ELC loading (p vs WT for D778V = 0.085, L781P=0.17, S782N=0.53, A797T=0.78, F834L=0.95) or RLC loading (p vs WT for D778V = 0.14, L781P=0.28, S782N=0.32, A797T=0.82, F834L=0.78), suggesting that at least for these five mutations in the context of our purified system, light chain loading is not significantly impacted (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative gel used to quantitate light chain loading (L781P 2-hep is shown). For each sample, myosin was titrated in a denaturing SDS-PAGE gel, stained with Coomassie, and scanned for 700 nm fluorescence. See Materials and Methods. (B) Light chain loading across all WT 2-hep samples measured. Mean essential light chain/heavy chain (ELC/HC) = 0.19 ± 0.02, regulatory light chain/heavy chain (RLC/HC) = 0.11 ± 0.02 (mean ± SD). Expected ELC/HC and RLC/HC ratios, if Coomassie staining were unbiased, are 0.168 and 0.146. (C) Light chain loading of mutant 2-hep myosins normalized to WT controls. For each mutant, light chain loading was not statistically different from WT.Figure 2—source data 1.Uncropped representative gel used to quantitate light chain loading (L781P 2-hep is shown) ± annotation.Figure 2—source data 2.(2B) Ratio of pixel density of ELC/RLC over WT 2-hep myosin heavy chain, based on fluorescent imaging of Coomassie stained gels. (2 C) Ratio of LC/HC for mutants over same-day WT LC/HC controls.
+**Figure 2.:** (A) Representative gel used to quantitate light chain loading (L781P 2-hep is shown). For each sample, myosin was titrated in a denaturing SDS-PAGE gel, stained with Coomassie, and scanned for 700 nm fluorescence. See Materials and Methods. (B) Light chain loading across all WT 2-hep samples measured. Mean essential light chain/heavy chain (ELC/HC) = 0.19 ± 0.02, regulatory light chain/heavy chain (RLC/HC) = 0.11 ± 0.02 (mean ± SD). Expected ELC/HC and RLC/HC ratios, if Coomassie staining were unbiased, are 0.168 and 0.146. (C) Light chain loading of mutant 2-hep myosins normalized to WT controls. For each mutant, light chain loading was not statistically different from WT.
 
-## Only D778V impacts the actin-activated ATPase rate of two-headed myosin with a short tail
+### Only D778V impacts the actin-activated ATPase rate of two-headed myosin with a short tail
 
 We then examined the effects of each of the five mutations on myosin’s actin-activated ATPase activity of 2-hep β-cardiac myosin. We have previously shown that 2-hep myosin produces similar ATPase rates to S1 constructs, albeit with a slightly tighter apparent affinity for actin (Kapp; Adhikari et al., 2019). Of the five mutations, only D778V produced a significantly different actin-activated ATPase rate as compared to WT, increasing the turnover number kcat by 16 ± 9% (p=0.041, average of three technical replicates of each of two biological replicates, compared to WT controls; Figure 3A; see raw values in Supplementary file 1 and raw plots in Figure 3—figure supplement 1). In contrast, L781P, S782N, A797T, and F834L all had actin-activated ATPase curves that very closely resembled their matched WT controls (Figure 3B–E; see raw values in Supplementary file 1).
 
-## Lever arm mutations have varying effects on actin gliding velocity
+![Figure 3.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig3-v1.jpg)
+
+**Figure 3.:** (A–E) Representative actin-activated ATPase curves of 2-hep constructs for each lever arm mutant, normalized to their WT controls. Each plot shows a single biological replicate (one of two, see Supplementary file 1), where error bars represent the SD of three technical replicates. Where error bars are not shown, error is smaller than the size of the data point. Mutant data are plotted against their prep-matched WT 2-hep control (gray) and normalized to the WT kcat value. Curves are fit to Michaelis-Menten kinetics, and the shaded areas represent 95% CI of the fits. Only D778V produced a significant difference: the kcat was increased by 16 ± 9% (average of two independent biological replicates compared to WT controls). (F) In vitro motility velocities of lever arm mutants. Each data point represents the average velocity of the mutant 2-hep on a single slide normalized to the WT 2-hep velocity from the same slide. Bars represent the average of the data points. D778V increased the velocity by 46 ± 8% over WT, L781P reduced the velocity by 30 ± 8% compared to WT, A797T reduced the velocity by 5 ± 6%, and S782N and F834L had no significant effects on motility velocity (mean ± SD of the data points shown). **** indicates p≤0.0001, * indicates p≤0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–O) Each plot shows a single biological replicate of the ATPase results reported here (raw data, not normalized). Data points represent the average of three technical replicates, and error bars show SD (where error bars are not shown, error is smaller than the size of the data point). Curves are fit to Michaelis-Menten kinetics, and shaded areas represent the SE of the fit. Every curve is a separate biological replicate (i.e. each WT 2-hep, WT 25-hep, mutant 2-hep, and mutant 25-hep shown are from a separate batch of cells and protein preparation). Data are shown in the same order presented in Supplementary file 1, where fitting results for each curve are detailed.
+
+### Lever arm mutations have varying effects on actin gliding velocity
 
 We next assessed the effects of lever arm mutations on actin gliding velocity in an in vitro actin gliding motility assay (Aksel et al., 2015). For these experiments, we again used the 2-hep myosin construct, attached to the surface via interaction of its C-terminal affinity clamp to SNAP-PDZ. In the pliant region, the D778V mutation increased actin gliding velocity by 46 ± 8% (mean ± SD, p<0.0001), the L781P mutation reduced velocity by 30 ± 8% (mean ± SD, p<0.0001), and the S782N mutation had no significant effect on velocity (p=0.19) as compared to actin gliding velocities of same day WT 2-hep controls (Figure 3F). In contrast, mutations in the light chain-binding domains had little to no effect on gliding velocities, as the A797T mutation reduced velocity by only 5 ± 6% (mean ± SD, p=0.033) and the F834L mutation had no significant effect on velocity (p=0.72; Figure 3F). Actin gliding velocity is primarily a function of detachment kinetics and step size (Liu et al., 2018). Thus, it appears that as a whole, mutations in the pliant region may have more impact on myosin’s motor properties (i.e., attachment and detachment kinetics and step size), while the mutations in the light chain-binding regions may impact myosin’s activity primarily through a different mechanism. Accordingly, we next sought to further dissect the effects of pliant region mutations using harmonic force spectroscopy (HFS).
 
-## Harmonic force spectroscopy reveals altered detachment kinetics and step sizes due to pliant region mutations
+### Harmonic force spectroscopy reveals altered detachment kinetics and step sizes due to pliant region mutations
 
 We have previously described an optical trap setup called HFS that allows for the measurement of myosin’s detachment rate from actin as a function of external load force (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017) as well as its step size (Vander Roest et al., 2021). Myosin’s detachment rate is reduced in the presence of resistive load forces and increased in the presence of assistive load forces, in accordance with the force-velocity relationship of contracting heart muscle (Sung et al., 2015; Greenberg et al., 2014). Here, we used HFS to measure the load-dependent detachment rates and step size of a short S1 (sS1) myosin construct containing the motor domain of myosin plus the first half of the lever arm (amino acids 1–808), allowing for the binding of the ELC but not the RLC, followed by a GFP tag.
 
-We measured detachment kinetics of several molecules each of WT, D778V, L781P, and S782N and fit their behavior to the Arrhenius equation with a harmonic force correction as described previously (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017), where kB is the Boltzmann constant and T is temperature:(1)kdet (F, ΔF)= k0I0ΔFδkBTexp-FδkBT
+We measured detachment kinetics of several molecules each of WT, D778V, L781P, and S782N and fit their behavior to the Arrhenius equation with a harmonic force correction as described previously (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017), where kB is the Boltzmann constant and T is temperature:
 
-This equation is a function of k0, the detachment rate at zero load force, δ, a measure of the force sensitivity, and F, the average external load force applied. Since the molecule experiences sinusoidal force, the equation is corrected with a zero-order Bessel function I0 which is a function of ΔF, the amplitude of the sinusoidal force. We then averaged the individual molecules (WT n=10 molecules, D778V n=12, L781P n=22, and S782N n=11) to obtain the characteristic k0 and δ values of WT and each lever arm mutant myosin. Interestingly, each pliant region mutation resulted in significant changes to the load force vs. detachment rate curve (Figure 4A and Figure 4—figure supplement 1), consistent with previous studies showing that mutations frequently impact force-dependent kinetics (Vander Roest et al., 2021; Liu et al., 2018). The fitted values for k0 (WT = 147.0 ± 6.8 s–1 (mean ± SEM); D778V = 315.6 ± 14.0 s–1, p<0.0001; L781P = 101.7 ± 5.8 s–1, p<0.0001; and S782N = 145.3 ± 6.7 s–1, p=0.88; Figure 4B) roughly correlate to the changes we observed in motility velocity, consistent with the fact that motility velocity is detachment rate-limited (Liu et al., 2018). Interestingly, fitted values for δ demonstrate that all three pliant region mutations reduce force sensitivity (WT = 1.04 ± 0.05 nm (mean ± SEM); D778V = 0.68 ± 0.05 nm, p<0.0001; L781P = 0.81 ± 0.03 nm, p=0.0006; S782N = 0.83 ± 0.05 nm, p=0.0039; Figure 4C). We also measured the step size d of each mutation, and notably only L781P had any measurable impact on step size (WT = 4.3 ± 1.4 nm (mean ± SD); D778V = 4.5 ± 1.4 nm, p=0.66; L781P = 2.5 ± 1.4 nm, p=0.0032; S782N = 4.3 ± 1.2 nm, p=0.97; Figure 4D).
+$$
+k_{det} (F, ΔF)= k_{0}I_{0}\frac{ΔF\delta}{k_{B}T}exp\frac{-F\delta}{k_{B}T}
+$$
 
-## Pliant region mutations have varied impacts on duty ratio, ensemble force, and power output
+This equation is a function of k0, the detachment rate at zero load force, δ, a measure of the force sensitivity, and F, the average external load force applied. Since the molecule experiences sinusoidal force, the equation is corrected with a zero-order Bessel function I0 which is a function of $Δ$F, the amplitude of the sinusoidal force. We then averaged the individual molecules (WT n=10 molecules, D778V n=12, L781P n=22, and S782N n=11) to obtain the characteristic k0 and δ values of WT and each lever arm mutant myosin. Interestingly, each pliant region mutation resulted in significant changes to the load force vs. detachment rate curve (Figure 4A and Figure 4—figure supplement 1), consistent with previous studies showing that mutations frequently impact force-dependent kinetics (Vander Roest et al., 2021; Liu et al., 2018). The fitted values for k0 (WT = 147.0 ± 6.8 s–1 (mean ± SEM); D778V = 315.6 ± 14.0 s–1, p<0.0001; L781P = 101.7 ± 5.8 s–1, p<0.0001; and S782N = 145.3 ± 6.7 s–1, p=0.88; Figure 4B) roughly correlate to the changes we observed in motility velocity, consistent with the fact that motility velocity is detachment rate-limited (Liu et al., 2018). Interestingly, fitted values for δ demonstrate that all three pliant region mutations reduce force sensitivity (WT = 1.04 ± 0.05 nm (mean ± SEM); D778V = 0.68 ± 0.05 nm, p<0.0001; L781P = 0.81 ± 0.03 nm, p=0.0006; S782N = 0.83 ± 0.05 nm, p=0.0039; Figure 4C). We also measured the step size d of each mutation, and notably only L781P had any measurable impact on step size (WT = 4.3 ± 1.4 nm (mean ± SD); D778V = 4.5 ± 1.4 nm, p=0.66; L781P = 2.5 ± 1.4 nm, p=0.0032; S782N = 4.3 ± 1.2 nm, p=0.97; Figure 4D).
 
-Given measured values for kcat, k0, step size, and the load-dependent detachment rate kdet, duty ratio r as a function of load force F can be calculated as follows Liu et al., 2018:(2)r(F)=kattachkattach+kdet(F)
+![Figure 4.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig4-v1.jpg)
 
-where kattach is the force-independent attachment rate, described by:(3)kattach=1kcat-1k0-1
+**Figure 4.:** (A) Detachment rate of sS1 myosin as a function of load force, average of all molecules (wild type [WT]: n=10 molecules, D778V: n=12 molecules, L781P: n=22 molecules, S782N: n=11 molecules). WT curve is shown in gray, D778V curve is shown in red, L781P curve is shown in purple, and S782N curve is shown in cyan. Dotted lines show error propagated from SEM of fitted parameters. (B) k0, the detachment rate at zero load force, for WT and each mutant sS1. D778V increased the detachment rate by 115 ± 9% (mean ± SEM), while L781P reduced the detachment rate by 31 ± 10%, and S782N had no significant effect on detachment rate. (C) δ, the measure of force sensitivity, for WT and each mutant sS1. All the pliant region mutations reduced the force sensitivity: D778V by 35 ± 11%, L781P by 22 ± 8%, and S782N by 21 ± 10% (mean ± SEM). (D) Step size for WT and each mutation. Only L781P affected step size, reducing it by 42 ± 22% (mean ± SEM). Each data point represents the average value for one molecule, and bars show the average of the data points. ** indicates p≤0.01, *** indicates p≤0.001, **** indicates p≤0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Detection of single actin-myosin interaction events (representative) from the change in the amplitude and the phase (region marked with cyan color for bead 1 [x1] and yellow color for bead 2 [x2]) of the oscillating trapped beads for wild type (WT) (A), D778V (B), L781P (C), and S782N (D). Stage oscillation is shown in the top panel of (A–H). Detachment rates (one point corresponds to one event) obtained from HFS measurements of one representative molecule of WT (E), D778V (F), L781P (G), and S782N (H) at different assistive (<0), zero and resistive (>0) load forces. (I–L) Representative fitting using Arrhenius equation (corrected for harmonic force, equation 1) of the detachment rates obtained at different load forces for one molecule each of WT (I), D778V (J), L781P (K), and S782N (L).(M–P) Detachment rate curves obtained for every molecule of WT (M), D778V (N), L781P (O), and S782N (P), where the thick line shows the average of all of the molecules (same as Figure 3A). (Q – T) Fitting of histogram of displacements (obtained from each event) of one representative molecule of WT (Q), D778V (R), L781P (S), and S782N (T).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Plots show the same data from Figure 3B–D with data points (representing unique molecules) from independent protein preparations shown in different colors and with different shapes. Wild type (WT), L781P, and S782N molecules come from two unique protein preparations, and D778V molecules come from three unique protein preparations.
+
+### Pliant region mutations have varied impacts on duty ratio, ensemble force, and power output
+
+Given measured values for kcat, k0, step size, and the load-dependent detachment rate kdet, duty ratio r as a function of load force F can be calculated as follows Liu et al., 2018:
+
+$$
+r(F)=\frac{k_{attach}}{k_{attach}+k_{det}(F)}
+$$
+
+where kattach is the force-independent attachment rate, described by:
+
+$$
+k_{attach}=\frac{1}{k_{cat}}-\frac{1}{k_{0}}^{-1}
+$$
 
 The resulting force-dependent duty ratio is plotted in Figure 5A. Here, we plot only resistive forces since the ensemble behavior of heart muscle is to move against a load (blood pressure) during contraction. Duty ratio is increased when myosin spends more of its catalytic cycle in the force-producing state, bound to actin. Thus, mutant motors with faster detachment rates have lower duty ratios. In this case, the effect of reduced δ in pliant mutations had the strongest effect on duty ratio: even for S782N, which only affected force sensitivity, duty ratio was lowered at resistive forces. For D778V, this effect was compounded by the marked increase in k0, which was not offset by the relatively smaller increase in kcat. For L781P, the effect of reduced δ dominated the decreased k0, except at high resistive force.
 
@@ -76,17 +108,29 @@ The resulting force-dependent duty ratio is plotted in Figure 5A. Here, we plot 
 
 **Figure 5.:** Calculation of (A) duty ratio, (B) average force, and (C) average power output at resistive forces based on measured detachment rate k0, actin-activated ATPase rate kcat, force-dependent detachment rate kdet(F), and step size (see equations 2-6). Wild type (WT) curves are shown in gray, D778V curves are shown in red, L781P curves are shown in purple, and S782N curves are shown in cyan, where dotted lines in the same color show error, propagated from the SEM of the individual molecules.
 
-Using duty ratio, we can also calculate the average force that an individual myosin would exert in an ensemble system, which is again dependent on the load force (Liu et al., 2018):(4)FavF=F r(F)
+Using duty ratio, we can also calculate the average force that an individual myosin would exert in an ensemble system, which is again dependent on the load force (Liu et al., 2018):
+
+$$
+F_{av}F=F r(F)
+$$
 
 Results from this calculation are plotted in Figure 5B. The overall trends for average force resemble that of duty ratio because average force is just load force (the x-axis) multiplied by duty ratio.
 
-Finally, power output is a function of force × velocity. Velocity itself a function of detachment rate kdet and step size d:(5)velF=kdetF×d
+Finally, power output is a function of force × velocity. Velocity itself a function of detachment rate kdet and step size d:
 
-such that power output is calculated by:(6)Pav(F)=velF×Fav(F)
+$$
+velF=k_{det}F\timesd
+$$
+
+such that power output is calculated by:
+
+$$
+P_{av}(F)=velF\timesF_{av}(F)
+$$
 
 Results from this calculation are plotted in Figure 5C. In this case, the increased velocity of D778V myosin dominates over the reduced average force, resulting in an increase in power output, particularly at high resistive forces. For L781P, the reduction in both step size and detachment rate results in a decrease in power output. S782N, by contrast, is relatively similar to WT in its power output.
 
-## Lever arm mutants result in increased actin-activated ATPase when the S2 tail is present
+### Lever arm mutants result in increased actin-activated ATPase when the S2 tail is present
 
 To assess whether lever arm mutations impact myosin S2 tail-based autoinhibition, we introduced the mutations into a 25-hep myosin construct that is identical to 2-hep myosin, except that it contains the first 25 heptads of the S2 tail, rather than only the first 2 heptads. Thus, the myosin tail is long enough in the 25-hep construct for the myosin heads to fold back onto the tail. We have previously shown that this 25-hep myosin has a reduced kcat as compared to the 2-hep myosin, such that a significant proportion of the 25-hep myosin is autoinhibited by the presence of the S2 tail (Nag et al., 2017; Trybus et al., 1997). This autoinhibition could arise from the IHM structure, where some of the myosin heads are sterically unable to bind actin. Mutations that disrupt autoinhibition show smaller differences between the 2-hep and 25-hep kcat’s (Adhikari et al., 2019; Sarkar et al., 2020; Vander Roest et al., 2021).
 
@@ -94,13 +138,25 @@ Here, we found that all five of the lever arm mutations showed smaller differenc
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig6-v1.jpg)
 
-**Figure 6.:** (A–F) Representative actin-activated ATPase curves for each mutant, normalized to the mutant 2-hep control kcat. (A) is reproduced from Vander Roest et al., 2021. Each data point represents the average of three technical replicates of one biological replicate (one of two, see Figure 3—figure supplement 1 and Supplementary file 1), and error bars represent SDs. Where error bars are not shown, error is smaller than the size of the data point. Curves are fitted to Michaelis-Menten kinetics, and shaded areas represent the 95% CI of the fits. Arrows with percentages on each graph show the percent change from the 2-hep to the matched 25-hep (average of both biological replicates, not just the representative curve shown). See Supplementary file 1 for full results.Figure 6—source data 1.Turnover rate per second vs (actin) of the actin-activated ATPase activity of each mutant 25-hep and 2-hep myosin pair. Raw rates are depicted in the left-hand boxes and 25-hep myosin rates normalized its mutant 2-hep myosin control are shown in the right-hand boxes. Data shown is for all technical replicates of the depicted representative biological replicate for each mutant 2-hep/25-hep pair.
+**Figure 6.:** (A–F) Representative actin-activated ATPase curves for each mutant, normalized to the mutant 2-hep control kcat. (A) is reproduced from Vander Roest et al., 2021. Each data point represents the average of three technical replicates of one biological replicate (one of two, see Figure 3—figure supplement 1 and Supplementary file 1), and error bars represent SDs. Where error bars are not shown, error is smaller than the size of the data point. Curves are fitted to Michaelis-Menten kinetics, and shaded areas represent the 95% CI of the fits. Arrows with percentages on each graph show the percent change from the 2-hep to the matched 25-hep (average of both biological replicates, not just the representative curve shown). See Supplementary file 1 for full results.
 
-## Mutations in the light chain-binding domain reduce SRX, while pliant region mutations do not reduce SRX
+### Mutations in the light chain-binding domain reduce SRX, while pliant region mutations do not reduce SRX
 
 To determine the effect of lever arm mutations on the SRX, we next measured the single-turnover ATPase activity of the myosins in the absence of actin. In this experiment, myosin is loaded with a roughly equimolar amount of fluorescent mant-ATP, then chased with excess unlabeled ‘dark’ ATP (Anderson et al., 2018; Stewart et al., 2010; Rohde et al., 2018). The fluorescence of the sample decays, and the decay rate can only be adequately fit with a double-exponential function (it does not fit a single exponential), suggesting the presence of two distinct structural states. We have previously correlated the slower SRX rate to a folded back state, whereas the faster DRX rate appears to be correlated with a structure where the heads are not bound to the S2 tail (Anderson et al., 2018; Rohde et al., 2018).
 
 Here, we performed the single-turnover ATPase experiment with mutant and WT 25-hep myosins. Surprisingly, the pliant region mutations showed no significant reduction in the SRX state (Figure 7A–D and G; WT = 57 ± 10% (mean ± SD); D778V = 63 ± 10%, p=0.20; L781P = 61 ± 11%, p=0.42; and S782N = 68 ± 5%, p=0.018; Figure 7—figure supplement 1). In fact, S782N showed a statistically significant, though functionally small, increase in the SRX phase. This unanticipated result is in opposition to the actin-activated ATPase result comparing the 2-hep vs 25-hep constructs, which suggested that the autoinhibition was disrupted. In contrast, the light chain-binding region mutations did show a statistically significant reduction in SRX compared to WT (Figure 7E–F and G; A797T = 26 ± 6%, a 31% decrease, p<0.0001; and F834L = 16 ± 4%, a 41% decrease, p<0.0001), in keeping with their increases in 25-hep actin-activated ATPase rates. None of the mutations affected the rates of either the fast or slow phases (Supplementary file 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig7-v1.jpg)
+
+**Figure 7.:** (A–F) Single mant-ATP turnover curves for WT 25-hep and each mutant. Thin curves show curves fitted to a biexponential decay and normalized to the fitted Y0=1.0 and plateau=0.0 from each replicate, while thick lines show average fitted curves across all replicates. Note that in several cases, the average curve obscures individual replicate curves underneath. The dotted black line represents a simulated single-exponential decay with the slow rate of the average curve, and the dotted gray line represents a simulated single-exponential decay with the fast rate of the average curve. (G) Percent slow phase of multiple replicates of each mutant. Pairwise comparisons show that only A797T and F834L significantly reduce the super relaxed state (SRX) state, resulting in a 31 ± 4% and 41 ± 4% (mean ± SEM) reduction in slow phase, respectively. S782N resulted in an 11 ± 4% (mean ± SEM) increase in SRX. * indicates p≤0.05, **** indicates p≤0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–F) Representative single ATP turnover data (semi-transparent data points) for each wild type (WT) and mutant 25-hep, fitted to a biexponential decay (solid line) and normalized to the fitted Y0=1.0 and fitted plateau=0.0. The gray dotted line shows a simulated single-exponential decay with the fast rate of the shown fitted curve, and the black dotted line represents a simulated single-exponential decay with the slow rate of the shown fitted curve.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/76805/elife-76805-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A–F) Single mant-ATP turnover curves for WT 2-hep and each mutant. Thin curves show curves fitted to a biexponential decay and normalized to the fitted Y0=1.0 and plateau=0.0 from each replicate, while thick lines show average fitted curves across all replicates. Average curves obscure individual replicate curves underneath in some cases. The dotted black line represents a simulated single-exponential decay with the slow rate of the average curve, and the dotted gray line represents a simulated single-exponential decay with the fast rate of the average curve. (G) Percent slow phase of multiple replicates of each WT and mutant 2-hep. For all mutations, the slow phase is similarly low as compared to the WT control.
 
 As a control, we assayed the single-turnover ATPase rates of the 2-hep constructs, and we did not see any statistically significant changes in the percent SRX turnover for any of the mutations as compared to WT 2-hep (Figure 7—figure supplement 2; WT = 21 ± 5%; D778V = 16 ± 9%, p=0.19; L781P = 23 ± 2%, p=0.23; S782N = 21 ± 4%; p=0.99; A797T = 18 ± 6%, p=0.08; F834L = 26 ± 5%, p=0.12 [mean ± SD]). This suggests that the increased SRX turnover for both WT and the pliant mutations is S2 tail-dependent and not based on any changes specific to the motor domain. In contrast, the A797T and F834L 2-heps had a similar fraction of SRX turnover as compared to the 25-hep constructs, suggesting that these mutations virtually extinguish the S2 tail-dependent autoinhibition measured by the single-turnover assay.
 
@@ -108,7 +164,7 @@ As a control, we assayed the single-turnover ATPase rates of the 2-hep construct
 
 The myosin lever arm performs one of the most important functions of the myosin chemomechanical cycle: it amplifies the transduction of the chemical energy of ATP hydrolysis into physical motion, allowing for myosin’s motor function. This crucial role explains why the lever arm is both highly conserved and a hotspot for HCM-causing mutations. Here, we have characterized five such mutations spanning the pliant region and the light chain-binding regions, giving insights into the role of the lever arm in generating force and power output, as well as its role in myosin S2 tail-based autoinhibition. The impacts of the mutations on myosin function segregate them naturally into two categories: the light chain-binding region mutations, A797T and F834L, behave very differently from the pliant region mutations, D778V, L781P, and S782N.
 
-The functional changes in myosin’s motor activity caused by the pliant region mutations were dramatic and ran the full spectrum of potential outcomes: D778V increased actin-activated ATPase of the 2-hep construct along with in vitro motility velocity and k0, L781P decreased motility velocity, k0, and step size, and S782N did not result in changes in any parameter except the force sensitivity of the detachment rate δ. That these mutations can have such varied and substantial effects on myosin activity speaks to the importance of the pliant region in coupling the activity of the lever arm to the rotation of the converter domain.
+The functional changes in myosin’s motor activity caused by the pliant region mutations were dramatic and ran the full spectrum of potential outcomes: D778V increased actin-activated ATPase of the 2-hep construct along with in vitro motility velocity and k0, L781P decreased motility velocity, k0, and step size, and S782N did not result in changes in any parameter except the force sensitivity of the detachment rate $\delta$. That these mutations can have such varied and substantial effects on myosin activity speaks to the importance of the pliant region in coupling the activity of the lever arm to the rotation of the converter domain.
 
 One feature that was shared among the pliant region mutations was a reduction in the force sensitivity δ. Reduced force sensitivity suggests a mechanism where mutations partially uncouple the force perceived at the ATP-binding site from the force applied at the anchor point at the C-terminus of the lever arm. We previously observed a decrease in δ for the P710R mutation, which is located in between the SH helices and the converter domain approximately 20 Å from the pliant region (Vander Roest et al., 2021). Pliant region mutations may likewise reduce rigidity, thus uncoupling the force transduction and reducing δ. The term ‘pliant region’ itself comes from the varied positions of this region observed in different crystal structures (Houdusse et al., 2000; Gourinath et al., 2003), suggesting that its compliance or ability to assume multiple conformations is an important feature of its function; thus, any alteration to the rigidity of this region would likely have strong impacts on myosin function in sarcomeres. It is possible that reductions in δ as a result of pliant region mutations could impact contraction and/or relaxation kinetics in patients with these specific mutations.
 
@@ -130,23 +186,215 @@ In summary, this study allowed for a detailed analysis of lever arm function, sp
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>MYH7</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 4625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>MYL3</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 4634</td>
+      <td>N-terminal FLAG-TEV tag added</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>MYL2</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 4633</td>
+      <td>N-terminal His-TEV tag added</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BJ5183-AD-1</td>
+      <td>Agilent</td>
+      <td>200,157</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta (DE3) pLysS</td>
+      <td>Sigma-Aldrich</td>
+      <td>70,956</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>C2C12</td>
+      <td>ATCC</td>
+      <td>CRL-1772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pAdEasy-1-MYH7 sS1</td>
+      <td>10.1073/pnas.1309493110</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pAdEasy-1-MYH7 2hep</td>
+      <td>10.1038/nsmb.3408</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pAdEasy-1-MYH7 25hep</td>
+      <td>10.1038/nsmb.3408</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bos taurus)</td>
+      <td>Bovine cardiac acetone powder</td>
+      <td>Pelfreez</td>
+      <td>57,195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pShuttle-CMV- MYH7 sS1</td>
+      <td>10.1073/pnas.1309493110</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pShuttle-CMV- MYH7 2hep</td>
+      <td>10.1038/nsmb.3408</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pShuttle-CMV- MYH7 25hep</td>
+      <td>10.1038/nsmb.3408</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D778V S</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>GGAGGAAATGAGGGTCGAGAGGCTGAGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D778V AS</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>GGCTCAGCCTCTCGACCCTCATTTCCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>L781P S</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>GATGATGCGGCTCGGCCTCTCGTCCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>L781P AS</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>AAGGACGAGAGGCCGAGCCGCATCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>S782N S</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>TGAGGGACGAGAGGCTGAACCGCATCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>S782N AS</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>GATGATGCGGTTCAGCCTCTCGTCCCTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>A797T S</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>GTACTCCATTCTGGTGAGCACACCTCGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>A797T AS</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>CCCGAGGTGTGCTCACCAGAATGGAGTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F834L S</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>CTGGATGAAGCTCTACTTAAAGATCAAGCCGCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F834L AS</td>
+      <td>This paper</td>
+      <td>Mutagenesis primer</td>
+      <td>CAGCGGCTTGATCTTTAAGTAGAGCTTCATCCAG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FAST</td>
+      <td>10.1016 /j.celrep.2015.04.006</td>
+      <td></td>
+      <td>Filament tracking and velocity measurement software</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Recombinant human β-cardiac myosin constructs described within, including sS1, 2-hep (short-tailed), and 25-hep (long-tailed), were purified as described previously (Nag et al., 2017; Sommese et al., 2013) with some minor modifications. Heavy chain myosin (MYH7) was co-expressed with human ELC (MYL3) containing an N-terminal FLAG tag followed by a TEV protease site in the differentiated mouse myoblast C2C12 cell line (ATCC) using adenovirus generated in HEK293T cells (ATCC) using the AdEasy Vector System (Qbiogene Inc, Carlsbad, CA, USA). The sS1 construct used in this study contained a C-terminal eGFP tag, while the 2-hep and 25-hep constructs contained both eGFP and PDZ C-peptide on their C termini, respectively. C2C12 cells were infected with adenovirus constructs 48 hr after differentiation and harvested 4 days after infection in a lysis buffer containing 50 mM NaCl, 20 mM MgCl2, 20 mM imidazole pH 7.5, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, 3 mM ATP, 1 mM PMSF, 5% sucrose, and Roche protease inhibitors. Cells were then immediately flash frozen in liquid nitrogen. Note that this lysis buffer composition differs from our previously published methods—salt concentration and sucrose are lowered and MgCl2 concentration is raised to encourage the native mouse myosin to form filaments, reducing contamination. Pellets were stored up to 6 months at –80°C, then thawed at room temperature for purification. HEK293 and C2C12 cell lines were tested for mycoplasma contamination using the Mycoalert plus kit (Lonza).
 
 Cells were lysed with 50 strokes of a dounce homogenizer and clarified by spinning at 30,000 RPM in a Ti-60 fixed angle ultracentrifuge rotor for 30 min. Supernatant was bound to anti-FLAG resin for 1–2 hr at 4°C. The resin was then washed with a wash buffer containing 150 mM NaCl, 5 mM MgCl2, 20 mM imidazole pH 7.5, 1 mM EDTA, 1 mM EGTA, 1 mM DTT, 3 mM ATP, 1 mM PMSF, 10% sucrose, and Roche protease inhibitors. For both the 2-hep and 25-hep constructs, native mouse RLC was depleted with a buffer containing 20 mM Tris pH 7.5, 200 mM KCl, 5 mM CDTA pH 8.0, and 0.5% Triton-X-100 for 1 hr at 4°C, and human RLC (purified from Escherichia coli as previously described [Nag et al., 2017]) was added to the resin with wash buffer and incubated for >2.5 hr at 4°C. The resin was then incubated overnight with TEV protease at 4°C to cleave the ELC-myosin complex off of the resin. The next day, the supernatant was further purified using a HiTrap Q HP column on an fast protein liquid chromatography (FPLC) with a gradient of 0–600 mM NaCl over 20 column volumes in a buffer containing 10 mM imidazole pH 7.5, 4 mM MgCl2, 10% sucrose, 1 mM DTT, and 2 mM ATP. Pure fractions (determined by Coomassie staining on 10% SDS PAGE) were collected and concentrated to 5–50 uM using Amicon Ultra 0.5 mL centrifugal filters with a 50 or 100 kDa cutoff, which aids in removing any unbound ELC or RLC. The myosin was then used directly for ATPase assays, buffer exchanged for single turnover assays (described below), or flash frozen in liquid nitrogen for in vitro motility or optical trapping experiments.
 
-## Deadheading
+### Deadheading
 
 For further analysis using in vitro motility or optical trapping, the myosin was subjected to a ‘deadheading’ procedure to remove any myosin that bound irreversibly to actin. After thawing on ice, myosin was first incubated with a >10× excess of F-actin for 5 min on ice. 2 mM ATP was then added to the mixture, and it was further incubated for 3 min on ice. The F-actin was then pelleted by ultracentrifugation at 95 K RPM in a TLA-100 rotor, and the supernatant containing active myosin was collected and used. This procedure was applied to all 2-hep myosin samples used for in vitro motility, while we found empirically that it was only necessary to deadhead the D778V sS1 myosin for optical trapping (the WT and other mutants were not deadheaded). This is because in a single molecule experiment, a ‘dead’ myosin head does not generate useful data; instead, it binds to the actin irreversibly and destroys the actin dumbbell. This rarely occurred for the WT, L781P, and S782N myosins, but was more frequent for D778V. Thus, we deadheaded only D778V to reduce dumbbell loss.
 
-## In vitro motility
+### In vitro motility
 
 Motility measurements of 2-hep WT and mutant myosins were collected as described previously (Aksel et al., 2015). Multichannel flow chambers were constructed on microscopy slides using double-sided tape and coverslips coated in 0.1% nitrocellulose/0.1% collodion in amyl acetate. SNAP-PDZ (purified from E. coli as described previously [Aksel et al., 2015]) was first flowed into each channel at a concentration of 3 μM in assay buffer (AB: 25 mM imidazole pH 7.5, 25 mM KCl, 4 mM MgCl2, 1 mM EGTA, and 10 mM DTT) and incubated for 2 min at room temperature. Then, each channel was blocked with assay buffer plus 1 mg/mL BSA (ABBSA) twice for 2 min each. Myosin, diluted to 50–100 nM in ABBSA, was then flowed into each channel and incubated for 2 min. Each channel was then washed with ABBSA, then loaded with final GO buffer containing 2 mM ATP, 2.5 nM TMR-phalloidin-labeled actin, and an oxygen-scavenging system (0.4% glucose, 0.11 mg/mL glucose oxidase, and 0.018 mg/mL catalase) in ABBSA.
 
 The slide was then imaged on a Nikon Ti-E inverted microscope with a 100 × TIRF objective at a rate of 2 Hz with an exposure of 300 ms for 30 s on an Andor iXon + EMCCD camera. Each channel was imaged in three separate frames, and that data was combined for analysis. Movies were analyzed using Fast Automated Spud Trekker (Aksel et al., 2015) for filament tracking and velocity measurement using the following parameters: window size n=5, path length P=10, percent tolerance pt=20, and minimum velocity for stuck classification minv=80 nm/s. Filtered mean velocity was used as unloaded velocity. At least five replicates of each mutant were performed across 13, 3, 3, 4, 3, and 4 independent protein preparations for WT, D778V, L781P, S782N, A797T, and F834L 2-heps, respectively (biological replicates), with additional technical replicates for mutants with smaller or no difference from WT (to confirm little or no variation from WT). Temperature varied from 21 to 23°C during imaging; these temperature variations result in some variation in velocity between slides, but every mutant channel was imaged on the same slide at the same temperature as a WT control. Each mutant was then normalized to the WT control from the same slide, which negates the effect of slight variations in temperature. p-Values were determined using a paired t-test comparing mutant velocities to their paired WT control velocities.
 
-## Optical trapping
+### Optical trapping
 
 To obtain load-dependent detachment rates of single myosin-actin interaction events, HFS measurements were performed in a dual-beam optical trap. The details of the instrumental setup and the method are similar to what has been previously described (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017). The sample chambers for this experiment are made by sticking a No. 1.5 coverslip onto a 1 mm thick microscope slide with the use of double-sided tape (Figure 9A, bottom). These coverslips are spin-coated with silica beads (diameter ~1.6 micrometer, Bangs Laboratories, Fishers, IN, USA) and then with an amyl acetate solution containing 0.1% nitrocellulose and 0.1% collodion. After forming the chamber, the surface of the coverslip and the platform beads are functionalized by flowing anti-GFP antibody (product #ab1218, Abcam, Cambridge, United Kingdom) solution in AB buffer (25 mM imidazole at pH 7.5, 25 mM KCl, 4 mM MgCl2, 1 mM EGTA, and 10 mM DTT) into the chamber for 2–3 min. The concentration of the anti-GFP antibody solution is kept low (1 nM) to ensure only a stochastic presence of the molecules on the surface. BSA (1 mg/mL) solution in AB buffer (ABBSA) is then flown into the chamber for 2–3 min to passivate/block the remaining uncovered glass surfaces. A 50 nM solution of GFP functionalized (C-terminal) short construct of either WT or mutants of human β-cardiac myosin (sS1-eGFP) in ABBSA buffer is then flown into the chamber for 2–3 min. These sS1-eGFP molecules are thus translationally immobilized on the surface by binding to the anti-GFP antibody (Fig. S7A, top). The unattached free myosin molecules are then washed away with ABBSA buffer. Finally, a solution containing filaments of 0.3 nM TMR-phalloidin-labeled biotinylated actin (Cytoskeleton, Denver, CO, USA), 0.4% glucose, 0.11 mg/mL glucose oxidase, 0.018 mg/mL catalase, 2 mM ATP, and 1-micrometer-diameter streptavidin-coated polystyrene beads (Bangs Laboratories) diluted (~5000 times) in ABBSA is flown in, prior to the sealing of the chamber with vacuum grease. This entire sample chamber preparation is done at 23°C.
 
@@ -154,11 +402,15 @@ To obtain load-dependent detachment rates of single myosin-actin interaction eve
 
 **Figure 9.:** (A) The sample chamber (bottom) is shown in an orientation suitable for an inverted microscope. On top, the typical arrangement of the protein complexes on top of a platform bead is depicted. (B) A typical stroking event—as expected during actin-myosin interaction in a harmonic force spectroscopic (HFS) setup—is depicted. In a standard HFS experiment, the stage oscillates, resulting in a variety of assistive or resistive external load forces applied to the stroking myosin.
 
-The stiffnesses of the two optical traps were kept between 0.08 and 0.10 pN/nm for all experiments. Each trap was calibrated by trapping single polystyrene beads in them and then by using the power spectrum method, as described elsewhere (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017). Corrections were made to rectify the effect of the anti-aliasing filter in the system. The contributions from the surface effects were also corrected during calibration. At this point in the experiment—after calibration—each trap contained one streptavidin-coated polystyrene bead. Next, an actin filament was snared between the two trapped beads using a biotin-streptavidin linkage by moving the chamber (i.e. the microscope stage) with respect to the position of the optical traps in 3D. The filament is then stretched by pulling the two beads from their ends (by steering the optical traps away from each other) to form a ‘dumbbell’ (Figure 9B). At this point in the experiment, the actin filament is stretched and held in the solution. On the surface, the myosin molecules (in the presence of ATP) are ready to initiate stroking events upon actin interaction. The actin dumbbell is then lowered toward the platform beads on the surface (keeping the stage under 200 Hz oscillation) anticipating potential interactions with single myosin molecules (Figure 9B). The stage oscillation imparts different amounts of assistive or resistive external forces during each stroking event based on the stochastic binding of myosin. In the time-trace data, the myosin-actin interactions and stroking events are identified by an expected change in the phase and the amplitude of the bead-oscillation in both the traps (Liu et al., 2018). Upon detachment after the stroking events, the oscillation in the position of the two trapped beads returns to its initial value. Several stroking events for each myosin molecule are recorded. These stroking events are then identified and binned based on the extent of external force. Then, using maximum likelihood estimation, detachment rates for every force range are obtained from the durations of the events for each molecule (Liu et al., 2018). The external load/force (F) dependent change in the detachment rates (kd) is exponential in nature:(7)kd F,∆F=k0I0∆FδkBTe-FδkBT
+The stiffnesses of the two optical traps were kept between 0.08 and 0.10 pN/nm for all experiments. Each trap was calibrated by trapping single polystyrene beads in them and then by using the power spectrum method, as described elsewhere (Liu et al., 2018; Sung et al., 2015; Sung et al., 2017). Corrections were made to rectify the effect of the anti-aliasing filter in the system. The contributions from the surface effects were also corrected during calibration. At this point in the experiment—after calibration—each trap contained one streptavidin-coated polystyrene bead. Next, an actin filament was snared between the two trapped beads using a biotin-streptavidin linkage by moving the chamber (i.e. the microscope stage) with respect to the position of the optical traps in 3D. The filament is then stretched by pulling the two beads from their ends (by steering the optical traps away from each other) to form a ‘dumbbell’ (Figure 9B). At this point in the experiment, the actin filament is stretched and held in the solution. On the surface, the myosin molecules (in the presence of ATP) are ready to initiate stroking events upon actin interaction. The actin dumbbell is then lowered toward the platform beads on the surface (keeping the stage under 200 Hz oscillation) anticipating potential interactions with single myosin molecules (Figure 9B). The stage oscillation imparts different amounts of assistive or resistive external forces during each stroking event based on the stochastic binding of myosin. In the time-trace data, the myosin-actin interactions and stroking events are identified by an expected change in the phase and the amplitude of the bead-oscillation in both the traps (Liu et al., 2018). Upon detachment after the stroking events, the oscillation in the position of the two trapped beads returns to its initial value. Several stroking events for each myosin molecule are recorded. These stroking events are then identified and binned based on the extent of external force. Then, using maximum likelihood estimation, detachment rates for every force range are obtained from the durations of the events for each molecule (Liu et al., 2018). The external load/force (F) dependent change in the detachment rates (kd) is exponential in nature:
+
+$$
+k_{d} F,\DeltaF=k_{0}I_{0}\frac{\DeltaF\delta}{k_{B}T}e^{\frac{-F\delta}{k_{B}T}}
+$$
 
 where kB is the Boltzmann constant, T is the temperature, k0 is the detachment rate at zero external force, I0 is a correction for the harmonic force with ΔF amplitude, and δ is the measure of force sensitivity of the myosin molecule. k0 and δ are the parameters that vary in mutant myosins as compared to WT. These values can be obtained by fitting the spread of the kd values at different external forces with the equation S1. During each stroking event, the positions of the dumbbells are shifted accordingly and therefore, the step sizes for individual myosin molecules can also be obtained by analyzing the same HFS data (Vander Roest et al., 2021). In the HFS experiments, however, the presence of several compliant-elements—e.g., rotation of the beads, biotin-streptavidin linkage between the beads and the actin, surface attachment of the myosin etc.—makes the step size measurement complicated. Our reported data of step-sizes do not have compliance correction and the values of the step-sizes are, therefore, smaller than what is expected for myosin’s working stroke. The data reported in this paper are gathered from the interactions of multiple different individual myosin molecules with different actin dumbbells (technical replicates) during independent experiments done over several different days with two separate protein preparations for each WT and mutant protein (biological replicates). p-Values for WT vs each mutant k0, δ, and step size were determined using an unpaired t-test with Welch’s correction (correcting due to varying SDs by mutant), where each molecule was treated as an individual replicate. Molecules came from 2, 2, 2, and 3 unique protein preparations for WT, D778V, L781P, and S782N sS1, respectively (Fig. S4).
 
-## Actin-activated ATPase assay
+### Actin-activated ATPase assay
 
 Actin-activated ATPase rates were measured using an NADH-coupled assay as previously described (Vander Roest et al., 2021; De La Cruz and Ostap, 2009). Actin was prepared as described previously (Spudich and Watt, 1971) and dialyzed 4× into assay buffer: 5 mM KCl, 10 mM imidazole pH 7.5, 3 mM MgCl2, and 1 mM DTT. Actin was then mixed with a 1:50–200 molar ratio of gelsolin (prepared from E. coli as described previously [Dawson et al., 2003]), mixed thoroughly, and incubated on ice for >30 min. In a clear 96-well plate with 100 uL final volume, actin × gelsolin was mixed with assay buffer to achieve 0–80 μM final concentrations and enough myosin to achieve 25 nM final concentration. To measure the basal ATPase rate, myosin was added without actin at final concentrations of 75–125 nM. The plate was then incubated at room temperature for 10 min with constant shaking. To initiate the reaction, 20 uL of a 5× coupling solution containing 100 U/mL lactate dehydrogenase (product #L1254, Sigma-Aldrich, St. Louis, MO, USA), 500 U/mL pyruvate kinase (product #500–20, Lee Biosolutions, Maryland Heights, MO, USA), 2.5 mM phospho(enol) pyruvate (Sigma P0564), 10 mM ATP, and 2 mM NADH (Sigma N8129). The plate was again incubated for 2–5 min at room temperature with shaking before reading absorbance at 340 nm every 15–30 s for 15–25 min. A standard curve of ADP from 0 to 300 μM was created to convert the absorbance values to concentration of ADP produced.
 
@@ -166,10 +418,10 @@ Rates for each concentration of actin were calculated from the slope of a plot o
 
 To obtain plots in Figures 2 and 5, rates from one biological replicate were normalized to the kcat’s of the same-day WT 2-hep and mutant 2-hep, respectively. A t-test was used to compare the WT 2-hep to the mutant 2-hep rates. To obtain the data in Supplementary file 1, each individual biological replicate was fitted to standard Michaelis-Menten kinetics to obtain kcat and Kapp, where errors reported represent the SE of the fit. Errors reported in the four rightmost columns of Supplementary file 1 (mutant 2-hep/WT 2-hep kcat ratio, mutant 25-hep/mutant 2-hep kcat ratio, average mutant 2-hep/WT 2-hep kcat ratio, and average mutant 25-hep/mutant 2-hep kcat ratio) are calculated using SE propagation methods for ratios and averages, respectively, propagating the SE from the fit of kcat.
 
-## Single ATP turnover assays
+### Single ATP turnover assays
 
 To determine data reported in Figure 6, Fig. S2, and Supplementary file 2a single mant-ATP turnover assay was used as described previously (Anderson et al., 2018). Briefly, myosin was buffer exchanged 5× into assay buffer containing 100 mM KOAc, 10 mM Tris pH 7.5, 1 mM DTT, 4 mM MgCl2, and 1 mM EDTA in a 50 or 100 kDa cutoff 0.5 μL Amicon filter. Myosin was then mixed with appropriate volumes of assay buffer containing 0 mM KOAc and 100 mM KOAc to achieve final salt concentrations of 5 mM (for 25-hep myosin) or 25 mM (for 2-hep myosin—2-hep does not show a dependence on salt concentration in this assay [Anderson et al., 2018]) KOAc and myosin concentrations of 200–900 nM with a 100 μL final assay volume. This was added to a 96-well black plate, where only a single well was measured at a time. 2′-(or-3′)-O-(N-methylanthraniloyl) adenosine 5′-triphosphate (mant-ATP, Thermo-Fisher Scientific, Waltham, MA, USA) was serially diluted to concentrations of 5–15 μM in assay buffer and added to the myosin at a final concentration of 1×–1.2×. Within 10–20 s, excess unlabeled ATP (4 mM final concentration) was added to the myosin + mant-ATP mixture, and the fluorescent signal (470 nm Em/405 nm Ex) was measured every ~2 s for 16 min. The ‘dead time’ between adding unlabeled ATP and the first fluorescence measurement was recorded for each well and added to the time measured by the plate reader. Fluorescence signal vs time was plotted for each replicate and fitted to a five-parameter biexponential decay. Ambiguous fits were discarded. Average fast rates, slow rates, percent fast phase decay, and percent slow phase decay (with their SEMs) are presented in Supplementary file 2. For Figure 6A–F, representative curves for each protein were normalized to the fitted Y0=1.0 and plateau value=0.0 and fitted again to a five-parameter biexponential decay. They are plotted alongside simulated single exponential curves that have the fast rates and slow rates, respectively. A range of 4–10 technical replicates of each protein construct were performed across 8, 3, 4, 3, 3, and 3 independent protein preparations for WT, D778V, L781P, S782N, A797T, and F834L 2-heps, respectively, and 4, 4, 5, 4, 5, and 4 independent protein preparations for WT, D778V, L781P, S782N, A797T, and F834L 25-heps, respectively (biological replicates). p-Values for WT vs each mutant were determined using unpaired t-tests across all technical and biological replicates.
 
-## Light chain loading gel assay
+### Light chain loading gel assay
 
 Loading of the ELC and RLC was determined using denaturing SDS-PAGE. Before analysis, WT and mutant 2-hep myosins were buffer exchanged 5× in a 50 or 100 kDa 0.5 μL Amicon filter to remove any light chains that were unbound to the heavy chain. Myosin samples were loaded in a dilution series across the gel at 10 pmol, 5 pmol, 3 pmol, 2 pmol, and 1 pmol per lane. After separation by gel electrophoresis, the gel was stained in Coomassie, destained, and its fluorescence was scanned at 700 nm with a LI-COR Odyssey imaging system. Each band was quantified using Fiji (Schindelin et al., 2012). A plot of raw integrated density vs pmol protein loaded was generated for each light chain and the heavy chain of each protein sample. Non-linear points were removed (due to the much higher molecular weight of the heavy chain as compared to the light chains, the linear range does not fully overlap—e.g., the 10 pmol load is generally non-linear with the 5, 3, 2, and 1 pmol loads for the heavy chain), and a linear fit was generated for each light chain and the heavy chain of each protein sample separately. The slope of each light chain fit was divided by the slope of the heavy chain fit for each protein sample, respectively, to give raw data as presented for WT 2-hep in Fig. S1B. Expected ratios based on the molecular weights of the light chains and heavy chain are noted in the legend of Fig. S1, but Coomassie staining is biased by amino acid identity in each protein sample, thus it is not unusual that measured ratios deviate somewhat from expected values based on molecular weight alone. Fig. S1 shows light chain ratios for each mutant 2-hep normalized to their same-day WT 2-hep controls. Three biologically independent protein preparations were analyzed for each mutant along with nine biologically independent protein preparations for WT 2-hep. p-Values were determined using a paired t-test, where each mutant 2-hep was paired with its same-day WT 2-hep control.

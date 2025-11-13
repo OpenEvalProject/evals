@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Applied Mathematics and Theoretical Physics, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 UK Dementia Research Institute at University of Cambridge, Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom
+1. Department of Applied Mathematics and Theoretical Physics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. UK Dementia Research Institute at University of Cambridge, Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ The question of how the ER homogenises its content across cell expanses is an op
 
 ## Results
 
-## Tubule contractility-driven ER luminal motion yields inadequate transport kinetics
+### Tubule contractility-driven ER luminal motion yields inadequate transport kinetics
 
 To assess the kinetics of particle motion in the lumen of tubular structures, detailed in Figure 1, in response to their contractility, we generate an in silico simulation model of the process. The model incorporates local calculations for the low Reynolds number hydrodynamics of a contracting tubule, assuming in the first instance the no-slip boundary conditions at the tubule walls (i.e. Poiseuille hydrodynamics), into a global analysis of the flows throughout the network geometry, by using Kirchhoff’s laws and standard graph theoretical results (see Materials and methods for details).
 
@@ -49,79 +49,97 @@ The fluid flows in the edges of the network (model in Hydrodynamic modelling com
 
 **Figure 2.:** (a) Cross-sectionally averaged flow velocities in a typical edge as obtained in our simulations. Histograms of instantaneous speeds (b) and edge traversal speeds (c) using data from simulations in the C0 network with flow (blue) and with just diffusion (red). The insets in (b) and (c) illustrate the distributions of instantaneous speeds and average edge traversal speeds, respectively, as experimentally measured in Holcman et al., 2018. The symbols indicate the values taken by the probability mass function and the curves are log-normal distributions fitted to all average edge traversal speeds obtained. Histograms of average edge traversal speeds obtained from simulations in networks C1–C4 from Figure 9d with flow (d) and only diffusion (e) and from simulations in the regular honeycomb network with active flows (f). The inset in (f) illustrates the honeycomb geometry. Points indicate mean ± 1 SD over the four networks (C1–C4) of normalised frequencies in each speed range; curves are log-normal (d–f) or normal (f) distributions fitted to all average edge traversal speeds for each set of pinch parameters. The means of the original simulation results and of the fitted distributions are indicated in the legends in each of (c–f).
 
-Moreover, the results for all measures of transport under pure diffusion, in the absence of pinching-induced flows, are virtually indistinguishable from those where the pinching-driven flows are included (see Figure 2b, c). Within the framework of transport theory, this conclusion can be rationalised by estimating the relevant Péclet numbers that measure the relative importance of advection and diffusion. Using the average value U‾∼1.3 µm/s of the mean flow speeds over time and edges as a velocity scale, we may estimate a mean Péclet number as Pe∼U‾R/D. Using R=30 nm and the measured diffusivity D≈0.6 µm2 s−1 (Holcman et al., 2018), this leads to the estimate Pe∼0.07. Flows affect transport for Péclet numbers above order-one values (Leal, 2007), and therefore the pinching-driven flows have a negligible influence on the transport inside the ER network. In order for fluid motion to have a noticeable effect, one would thus need flows to be either stronger, or sustained in one direction for longer. The chaotic flows produced by the pinching events with stochastic parameters suggested by resolution-limited microscopy (Holcman et al., 2018) appear too weak to generate fast, non-diffusive edge traversals.
+![Video 1.](https://cdn.elifesciences.org/articles/93518/elife-93518-video1.mp4.jpg)
+
+**Video 1.:** Edges are colour-coded with magnitude of instantaneous flow.
+
+Moreover, the results for all measures of transport under pure diffusion, in the absence of pinching-induced flows, are virtually indistinguishable from those where the pinching-driven flows are included (see Figure 2b, c). Within the framework of transport theory, this conclusion can be rationalised by estimating the relevant Péclet numbers that measure the relative importance of advection and diffusion. Using the average value $U‾∼1.3$ µm/s of the mean flow speeds over time and edges as a velocity scale, we may estimate a mean Péclet number as $Pe∼U‾R/D$. Using $R=30$ nm and the measured diffusivity $D≈0.6$ µm2 s−1 (Holcman et al., 2018), this leads to the estimate $Pe∼0.07$. Flows affect transport for Péclet numbers above order-one values (Leal, 2007), and therefore the pinching-driven flows have a negligible influence on the transport inside the ER network. In order for fluid motion to have a noticeable effect, one would thus need flows to be either stronger, or sustained in one direction for longer. The chaotic flows produced by the pinching events with stochastic parameters suggested by resolution-limited microscopy (Holcman et al., 2018) appear too weak to generate fast, non-diffusive edge traversals.
 
 Importantly, our conclusions remain unchanged upon relaxing the no-slip boundary conditions, an important point to consider since the tubule membranes themselves could be moving in response to the nanoscale fluid flow. This can be modelled by introducing a finite slip boundary condition to couple the membrane-bound lipids with luminal flows (see Materials and methods, Incorporating slip boundary conditions for details). Our simulations show that slip boundary conditions have virtually no effect on the average edge traversal speeds (Figure 3a). Physically, while a non-zero wall slip does change the shape of the flow profiles in the tubules (Figure 3b), it does not modify the cross-sectionally averaged flow speeds which directly affect global particle transport. These results justify our use of Poiseuille hydrodynamics (no-slip boundary conditions) throughout this work.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig3-v1.jpg)
 
-**Figure 3.:** (a) Distributions of average edge traversal speeds in simulations of a C1 network pinching with the original pinch parameters as measured in Holcman et al., 2018 and used in Figure 2, for different slip lengths , and 300 nm. (λ=0,3,30b) Longitudinal flow profile  inside a cylindrical tubule for different slip lengths, all with the same volume flux u(r); an increase of the slip length leads to a redistribution of the flow in the cross-section.Q
+**Figure 3.:** (a) Distributions of average edge traversal speeds in simulations of a C1 network pinching with the original pinch parameters as measured in Holcman et al., 2018 and used in Figure 2, for different slip lengths $\lambda=0,3,30$, and 300 nm. (b) Longitudinal flow profile $u(r)$ inside a cylindrical tubule for different slip lengths, all with the same volume flux $Q$; an increase of the slip length leads to a redistribution of the flow in the cross-section.
 
-## Tubule pinching-induced transport is network geometry independent and fails to facilitate luminal homogenisation
+### Tubule pinching-induced transport is network geometry independent and fails to facilitate luminal homogenisation
 
 To estimate the contribution of the network geometry to the outcomes of our transport simulations, we compare results across four different ER structures, which we label C1–C4. We illustrate these reconstructed networks along with the source data in Figure 9. The distributions of the average edge traversal speeds appear insensitive to ER structure variations for both pinching-induced and exclusively diffusional transport. This is reflected in the small deviations from the mean of the data points averaged across the different structures (Figure 2d, e). Furthermore, pinching-induced flows inside a regular honeycomb network (Figure 2f, inset) with a typical ER edge length (1 µm) appear to be within a reasonable variance compared to the natural networks. Therefore, this mathematical idealisation of the ER network geometry can be used for exploring the consequences of the network ultrastructure contractility on transport kinetics in a standardised manner.
 
-To test the effectiveness of the particle velocities for facilitating luminal material exchange across the ER, we track homogenisation kinetics by measuring intermixing of particles of two distinct colours equally seeded in each half of a honeycomb network at t=0 (Figure 4; see also Video 2 for the flows inside such a network driven by pinches with the parameters from Holcman et al., 2018). The measure of homogenisation is given by the variance Var(ϕ(t))≡Var(nb(t)−nr(t)) over 20 regions of the network (Figure 4a, horizontal lines) of the difference between the numbers nb (blue) and nr (red) of particles of each colour in region; note Var=0 represents perfect homogeneity. The measures of mixing over time for pure diffusion and active transport with parameters (Holcman et al., 2018) from Figure 2 show a nearly complete overlap (Figure 4e; see also Video 3 and Video 4), distinct from faster mixing under stronger flows in a network driven by pinches whose lengths are increased to their maximum possible value (i.e. the length of the tubule) and which are in addition sped up by a factor of 10 (see Video 5; see also (A combination of high frequency and pinch length is required to replicate experimental particle speeds) for a discussion of the effects of artificially strong pinch parameters on average edge traversal speeds). This indicates that the presumed biological pinching parameters would be inadequate to facilitate ER luminal material exchange.
+To test the effectiveness of the particle velocities for facilitating luminal material exchange across the ER, we track homogenisation kinetics by measuring intermixing of particles of two distinct colours equally seeded in each half of a honeycomb network at $t=0$ (Figure 4; see also Video 2 for the flows inside such a network driven by pinches with the parameters from Holcman et al., 2018). The measure of homogenisation is given by the variance $Var(ϕ(t))≡Var(n_{b}(t)−n_{r}(t))$ over 20 regions of the network (Figure 4a, horizontal lines) of the difference between the numbers $n_{b}$ (blue) and $n_{r}$ (red) of particles of each colour in region; note $Var=0$ represents perfect homogeneity. The measures of mixing over time for pure diffusion and active transport with parameters (Holcman et al., 2018) from Figure 2 show a nearly complete overlap (Figure 4e; see also Video 3 and Video 4), distinct from faster mixing under stronger flows in a network driven by pinches whose lengths are increased to their maximum possible value (i.e. the length of the tubule) and which are in addition sped up by a factor of 10 (see Video 5; see also (A combination of high frequency and pinch length is required to replicate experimental particle speeds) for a discussion of the effects of artificially strong pinch parameters on average edge traversal speeds). This indicates that the presumed biological pinching parameters would be inadequate to facilitate ER luminal material exchange.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig4-v1.jpg)
 
-**Figure 4.:** (a) Initial configuration of blue and red particles in honeycomb network. The strips used to quantify mixing are illustrated in black dotted line. The configuration after  s of mixing in a passive network with no flow (t=3b), an active network pinching with the original pinch parameters (c), and an active network pinching with maximally long pinches at 10 times the original rates (d). (e) The measure of mixing  against Var(ϕ(t)) for the passive network (blue), the network pinching with the original parameters (red), and the network pinching with maximally long and 10× faster pinches (yellow).t
+**Figure 4.:** (a) Initial configuration of blue and red particles in honeycomb network. The strips used to quantify mixing are illustrated in black dotted line. The configuration after $t=3$ s of mixing in a passive network with no flow (b), an active network pinching with the original pinch parameters (c), and an active network pinching with maximally long pinches at 10 times the original rates (d). (e) The measure of mixing $Var(ϕ(t))$ against $t$ for the passive network (blue), the network pinching with the original parameters (red), and the network pinching with maximally long and 10× faster pinches (yellow).
 
-## Theoretical analysis of advection due to a single pinch explains weak pinching-induced transport
+![Video 2.](https://cdn.elifesciences.org/articles/93518/elife-93518-video2.mp4.jpg)
 
-The slow luminal transport driven by the pinching-induced flows is intrinsically linked to the volume of fluid expelled by each pinch during a contraction. The fundamental reason underlying the weak pinching-induced transport is that individual pinches are very weak generators of flow; even in the best possible configuration, the volumes of fluid pushed by each pinch are too small to impact luminal transport. Specifically, in Materials and methods (Advection due to a single pinch), we mathematically show that, given a pinch of length 2L, the maximum displacement Δzmax a suspended particle may be advected by an individual pinch is(1)Δzmax=83L.
+**Video 2.:** Edges are colour-coded with magnitude of instantaneous flow.
 
-Using the experimentally measured average value of the pinch length 2L=0.14 µm (Holcman et al., 2018), a typical pinch can then propel a particle by a maximum distance of Δzmax≈0.19 µm.
+![Video 3.](https://cdn.elifesciences.org/articles/93518/elife-93518-video3.mp4.jpg)
 
-This may, equivalently, be framed in terms of velocities. A transported particle experiences an average velocity during the contraction of at most Vmax=8L/3T, where T is the duration of a contraction or a relaxation. Using the pinch length as above and the average values of 2T=0.213 s (Holcman et al., 2018) this leads to the estimate Vmax≈3.9 µm/s, which is an order of magnitude smaller than the measured typical edge traversal speed of ∼45 µm/s, consistent with the order-of-magnitude difference between the measurements and the predictions of the computational model.
+![Video 4.](https://cdn.elifesciences.org/articles/93518/elife-93518-video4.mp4.jpg)
 
-Note that a slip boundary condition keeps the volume flux expelled out of (or driven into) the pinching regions unchanged, but decreases the maximum flow speed (see Figure 3). Therefore, a non-zero slip length would only decrease the theoretical maximum advective displacement Δzmax a suspended particle can achieve; therefore slip length plays no significant role in our theoretical argument to rationalise the weak pinching-induced transport.
+![Video 5.](https://cdn.elifesciences.org/articles/93518/elife-93518-video5.mp4.jpg)
 
-## Marginal addition of coordinated contractility to luminal transport
+### Theoretical analysis of advection due to a single pinch explains weak pinching-induced transport
+
+The slow luminal transport driven by the pinching-induced flows is intrinsically linked to the volume of fluid expelled by each pinch during a contraction. The fundamental reason underlying the weak pinching-induced transport is that individual pinches are very weak generators of flow; even in the best possible configuration, the volumes of fluid pushed by each pinch are too small to impact luminal transport. Specifically, in Materials and methods (Advection due to a single pinch), we mathematically show that, given a pinch of length $2L$, the maximum displacement $Δz_{max}$ a suspended particle may be advected by an individual pinch is
+
+$$
+Δz_{max}=\frac{8}{3}L.
+$$
+
+Using the experimentally measured average value of the pinch length $2L=0.14$ µm (Holcman et al., 2018), a typical pinch can then propel a particle by a maximum distance of $Δz_{max}≈0.19$ µm.
+
+This may, equivalently, be framed in terms of velocities. A transported particle experiences an average velocity during the contraction of at most $V_{max}=8L/3T$, where $T$ is the duration of a contraction or a relaxation. Using the pinch length as above and the average values of $2T=0.213$ s (Holcman et al., 2018) this leads to the estimate $V_{max}≈3.9$ µm/s, which is an order of magnitude smaller than the measured typical edge traversal speed of $∼45$ µm/s, consistent with the order-of-magnitude difference between the measurements and the predictions of the computational model.
+
+Note that a slip boundary condition keeps the volume flux expelled out of (or driven into) the pinching regions unchanged, but decreases the maximum flow speed (see Figure 3). Therefore, a non-zero slip length would only decrease the theoretical maximum advective displacement $Δz_{max}$ a suspended particle can achieve; therefore slip length plays no significant role in our theoretical argument to rationalise the weak pinching-induced transport.
+
+### Marginal addition of coordinated contractility to luminal transport
 
 The theoretical upper bound in the previous section for the maximum luminal transport producible by an individual pinch is realisable only in the hypothetical situation where the flow generated by the pinch is all directed to one end of the tubule that is when the other end is effectively blocked. Moreover, content transport produced during the contraction of a single tubule would then be reversed when the tubule relaxes back to its original state, with a single pinch site expected to exhibit only reciprocal (i.e. time-reversible) motions. Any advection contributing to edge traversals must thus be dominated by non-reciprocal motions of multiple pinches resulting in net displacements of solute particles.
 
-The simplest system capable of producing non-reciprocal motions consists of two pinches, and the optimal sequence of motions to maximise the resulting advective particle displacement is illustrated in Figure 5. We show in Materials and methods (Extension to nonlinear interactions between two pinches) that this is indeed the optimal two-pinch coordination, which results in a time-averaged displacement equal to the upper bound derived in Equation 1. Since this optimal sequence of motions involves one pinch site starting a pinch halfway through the pinching of the other site, it is reasonable to estimate its duration as 3T, and therefore an average particle speed of 8L/9T≈1.3 µm/s. The low particle speed achievable by the optimal coordination between two pinches suggests that a very high level of coordination among multiple tens of pinches per tubule would be required to reproduce the measured edge traversals.
+The simplest system capable of producing non-reciprocal motions consists of two pinches, and the optimal sequence of motions to maximise the resulting advective particle displacement is illustrated in Figure 5. We show in Materials and methods (Extension to nonlinear interactions between two pinches) that this is indeed the optimal two-pinch coordination, which results in a time-averaged displacement equal to the upper bound derived in Equation 1. Since this optimal sequence of motions involves one pinch site starting a pinch halfway through the pinching of the other site, it is reasonable to estimate its duration as $3T$, and therefore an average particle speed of $8L/9T≈1.3$ µm/s. The low particle speed achievable by the optimal coordination between two pinches suggests that a very high level of coordination among multiple tens of pinches per tubule would be required to reproduce the measured edge traversals.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig5-v1.jpg)
 
-## A combination of high frequency and pinch length is required to replicate experimental particle speeds
+### A combination of high frequency and pinch length is required to replicate experimental particle speeds
 
-Since the magnitude of ER contractility suggested by microscopy (Holcman et al., 2018) (pinch lengths and frequency) does not explain the measured speeds, we set out to explore different sets of parameters that may generate particle velocities closer to the experimental measurements. The currently achievable imaging spatiotemporal resolution limits the detection of tubular diameter contractility by microscopy. Therefore, it is reasonable to postulate that the relevant parameters may have been underestimated. We simulate ER transport varying individually or in combination the values of pinch duration 2T, waiting time Twait between successive pinches on a tubule, and pinch length 2L.
+Since the magnitude of ER contractility suggested by microscopy (Holcman et al., 2018) (pinch lengths and frequency) does not explain the measured speeds, we set out to explore different sets of parameters that may generate particle velocities closer to the experimental measurements. The currently achievable imaging spatiotemporal resolution limits the detection of tubular diameter contractility by microscopy. Therefore, it is reasonable to postulate that the relevant parameters may have been underestimated. We simulate ER transport varying individually or in combination the values of pinch duration $2T$, waiting time $T_{wait}$ between successive pinches on a tubule, and pinch length $2L$.
 
-We first decrease both the original (Holcman et al., 2018) values of T and Twait by the same factor of 1/α, where α≥1, and simulate particle transport in the honeycomb network (Figure 6a). In effect, this simply ‘fast-forwards’ the flows in the original active network by a factor of α, and Brownian particles of the original diffusivity are released into this sped-up flow. Instantaneous and edge traversal speeds exhibit corresponding increases when we increase the value of α (Figure 6a). An extreme value of α=100 produces an average edge traversal speed distribution that peaks at around 8 µm/s (Figure 6a). Similar results are observed in the C0 network from a COS-7 cell (Figure 6b). The longer tails of these distributions (compared to those from the honeycomb network) result from the variation in edge lengths in the real network, with shorter edges, across which edge traversals are correspondingly fast, contributing to the tails.
+We first decrease both the original (Holcman et al., 2018) values of $T$ and $T_{wait}$ by the same factor of $1/\alpha$, where $\alpha\geq1$, and simulate particle transport in the honeycomb network (Figure 6a). In effect, this simply ‘fast-forwards’ the flows in the original active network by a factor of $\alpha$, and Brownian particles of the original diffusivity are released into this sped-up flow. Instantaneous and edge traversal speeds exhibit corresponding increases when we increase the value of $\alpha$ (Figure 6a). An extreme value of $\alpha=100$ produces an average edge traversal speed distribution that peaks at around 8 µm/s (Figure 6a). Similar results are observed in the C0 network from a COS-7 cell (Figure 6b). The longer tails of these distributions (compared to those from the honeycomb network) result from the variation in edge lengths in the real network, with shorter edges, across which edge traversals are correspondingly fast, contributing to the tails.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig6-v1.jpg)
 
-**Figure 6.:** Histograms of instantaneous speeds (top) and average edge traversal speeds (bottom), for an active honeycomb network (a) and the reconstructed C0 network from Figure 9a–c (b) with pinch parameters  and T decreased to Twait times the original values from 1/αHolcman et al., 2018, and the same measured diffusivity . Histograms of instantaneous speeds (top) and average edge traversal speeds (bottom) for the C1–C4 networks from D=0.6μm2s−1Figure 9d with varying pinch parameters: original parameters from Holcman et al., 2018 (c); pinch length increased to the total length of the tubule (d); a fivefold increase in the rate of pinching and pinch length set to the total length of the tubule (e); a tenfold increase in the rate of pinching and pinch length set to the total length of the tubule (f). Bottom rows: points indicate mean ± 1 SD over the four networks (C1–C4) of normalised frequencies in each speed range; curves are log-normal distributions fitted to all average edge traversal speeds for each set of pinch parameters; insets show means of original simulation results and of fitted distributions.
+**Figure 6.:** Histograms of instantaneous speeds (top) and average edge traversal speeds (bottom), for an active honeycomb network (a) and the reconstructed C0 network from Figure 9a–c (b) with pinch parameters $T$ and $T_{wait}$ decreased to $1/\alpha$ times the original values from Holcman et al., 2018, and the same measured diffusivity $D=0.6\mum^{2}s^{−1}$. Histograms of instantaneous speeds (top) and average edge traversal speeds (bottom) for the C1–C4 networks from Figure 9d with varying pinch parameters: original parameters from Holcman et al., 2018 (c); pinch length increased to the total length of the tubule (d); a fivefold increase in the rate of pinching and pinch length set to the total length of the tubule (e); a tenfold increase in the rate of pinching and pinch length set to the total length of the tubule (f). Bottom rows: points indicate mean ± 1 SD over the four networks (C1–C4) of normalised frequencies in each speed range; curves are log-normal distributions fitted to all average edge traversal speeds for each set of pinch parameters; insets show means of original simulation results and of fitted distributions.
 
-These results suggest that, in order to produce average edge traversal speeds of the same order as the experimental values, we would need an active network sped up by an unrealistic factor considerably greater than 100, probably on the order of α∼O(103) or higher and corresponding to multiple thousands of pinches occurring on average per second on each tubule. Similarly, it takes an extreme increase in pinch site size spanning the entire length of an average tubule, only to yield an average edge traversal speed of ∼10 µm/s (Figure 6d).
+These results suggest that, in order to produce average edge traversal speeds of the same order as the experimental values, we would need an active network sped up by an unrealistic factor considerably greater than 100, probably on the order of $\alpha∼O(10^{3})$ or higher and corresponding to multiple thousands of pinches occurring on average per second on each tubule. Similarly, it takes an extreme increase in pinch site size spanning the entire length of an average tubule, only to yield an average edge traversal speed of $∼10$ µm/s (Figure 6d).
 
-Next, we attempt to obtain a better fit to experimental data by combining changes in both the pinches’ time and geometry parameters. In Figure 6e, f, these maximally long pinches are sped up by a factor of α=5 and 10, respectively, which yields speeds averaging around 30 µm/s and above 60 µm/s, respectively. Notably, the tail of the speeds distribution appear longer than that seen in the experiments.
+Next, we attempt to obtain a better fit to experimental data by combining changes in both the pinches’ time and geometry parameters. In Figure 6e, f, these maximally long pinches are sped up by a factor of $\alpha=5$ and 10, respectively, which yields speeds averaging around 30 µm/s and above 60 µm/s, respectively. Notably, the tail of the speeds distribution appear longer than that seen in the experiments.
 
-## Luminal transport kinetics derived from contractile ER tubular junctions and sheets
+### Luminal transport kinetics derived from contractile ER tubular junctions and sheets
 
 As shown above, establishing effective transport in a tubular constriction-driven model based on realistic ER fluid dynamics requires a set of questionable assumptions, compelling us to explore alternatives. Thus, we set out to investigate how ER luminal transport would be impacted by the contractility of its structural components with volumes larger than tubules: (1) the tubular junctions (Figure 1c), (2) the perinuclear ER sheets (Figure 1f), and (3) the peripheral sheets (Figure 1d).
 
-First, we run numerical simulations of transport driven by contracting junctions on an ER network (C1 from Figure 9d; sketch of junctions in Figure 1c). Since junctions contracting at the tubular pinch temporal parameters measured experimentally yielded inadequate transport, we consider contractions/relaxations with duration 2T exponentially distributed with a mean of α−1 times the original value in Holcman et al., 2018 and the waiting time Twait between subsequent contractions/relaxations exponentially distributed with a mean β−1 times the original value (i.e. values of α>1 and β>1 reflecting faster and more frequent pinches). Naturally, the results depend on the choice of the volume ΔV expelled by a junction during each contraction. Using fluorescence microscopy images, we may estimate the volume in junctions (see Materials and methods, Experimental estimates of junction volumes). We assume that the junction volumes are drawn from a normal distribution with the same mean and SD as our data set that is the distribution N(0.0045 µm3, 0.0021 µm3). Volumes greater than the maximum value in our experimental estimate (0.0081 µm3) or less than the minimum value (0.0020 µm3) are rejected.
+First, we run numerical simulations of transport driven by contracting junctions on an ER network (C1 from Figure 9d; sketch of junctions in Figure 1c). Since junctions contracting at the tubular pinch temporal parameters measured experimentally yielded inadequate transport, we consider contractions/relaxations with duration $2T$ exponentially distributed with a mean of $\alpha^{−1}$ times the original value in Holcman et al., 2018 and the waiting time $T_{wait}$ between subsequent contractions/relaxations exponentially distributed with a mean $\beta^{−1}$ times the original value (i.e. values of $\alpha>1$ and $\beta>1$ reflecting faster and more frequent pinches). Naturally, the results depend on the choice of the volume $ΔV$ expelled by a junction during each contraction. Using fluorescence microscopy images, we may estimate the volume in junctions (see Materials and methods, Experimental estimates of junction volumes). We assume that the junction volumes are drawn from a normal distribution with the same mean and SD as our data set that is the distribution N(0.0045 µm3, 0.0021 µm3). Volumes greater than the maximum value in our experimental estimate (0.0081 µm3) or less than the minimum value (0.0020 µm3) are rejected.
 
-We show the results in Figure 7a. The thick solid line illustrates a set of values of (α,β) which produces distributions of average edge traversal speeds with means similar to the experimental values in Holcman et al., 2018, and the dashed lines 1 SD away. We are interested in values of (α,β) close to unity because this corresponds to junctions which pinch with similar pinch durations and frequencies as the experimentally observed tubule pinches and are therefore biologically plausible; (α,β)≈ (2.5,2) is the closest pair on this line to unity. However, only for α≈1 do we obtain average edge traversal speed distributions of reasonable shapes (i.e. approximately Gaussian), which would require a large β=5 to match experimental results quantitatively.
+We show the results in Figure 7a. The thick solid line illustrates a set of values of $(\alpha,\beta)$ which produces distributions of average edge traversal speeds with means similar to the experimental values in Holcman et al., 2018, and the dashed lines 1 SD away. We are interested in values of $(\alpha,\beta)$ close to unity because this corresponds to junctions which pinch with similar pinch durations and frequencies as the experimentally observed tubule pinches and are therefore biologically plausible; $(\alpha,\beta)≈$ (2.5,2) is the closest pair on this line to unity. However, only for $\alpha≈1$ do we obtain average edge traversal speed distributions of reasonable shapes (i.e. approximately Gaussian), which would require a large $\beta=5$ to match experimental results quantitatively.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig7-v1.jpg)
 
-**Figure 7.:** Contour plots of the mean values of the average edge traversal speeds obtained from simulations of our model in a junction- and tubule-driven C1 network from Figure 9 with different values of  and with contraction volumes (α,β) expelled during each contraction drawn from (ΔVa) the normal distribution estimated for the junction volumes  (in µmN(0.0045,0.0021)3); (b) two-thirds the estimated normal distribution for the junction volume; and (c) half the estimated distribution for the junction volume. Thick solid black lines indicate the mean of the average edge traversal speed distribution reported in Holcman et al., 2018 (45.01 µm/s) and thick dotted black lines indicate mean ± SD (45.01 ± 12.75 µm/s).
+**Figure 7.:** Contour plots of the mean values of the average edge traversal speeds obtained from simulations of our model in a junction- and tubule-driven C1 network from Figure 9 with different values of $(\alpha,\beta)$ and with contraction volumes $ΔV$ expelled during each contraction drawn from (a) the normal distribution estimated for the junction volumes $N(0.0045,0.0021)$ (in µm3); (b) two-thirds the estimated normal distribution for the junction volume; and (c) half the estimated distribution for the junction volume. Thick solid black lines indicate the mean of the average edge traversal speed distribution reported in Holcman et al., 2018 (45.01 µm/s) and thick dotted black lines indicate mean ± SD (45.01 ± 12.75 µm/s).
 
-Furthermore, the assumption that the entire junction volume is expelled during a contraction may not be realistic, as it would require extreme bending/extension of tubule walls and the ability of the entire junction to empty and fill out during each contraction. Reducing the volume ΔV expelled in each contraction to two-thirds of the estimated distribution of the junction’s volume (results shown in Figure 7b) or to half (Figure 7c) causes the average edge traversal speeds to drop considerably. The lower the proportion of the junction volume expelled during a contraction, the faster the pinches are required to be (i.e. large value of α) and the larger the frequencies of the pinch events (large β) in order to produce reasonably high average edge traversal speeds.
+Furthermore, the assumption that the entire junction volume is expelled during a contraction may not be realistic, as it would require extreme bending/extension of tubule walls and the ability of the entire junction to empty and fill out during each contraction. Reducing the volume $ΔV$ expelled in each contraction to two-thirds of the estimated distribution of the junction’s volume (results shown in Figure 7b) or to half (Figure 7c) causes the average edge traversal speeds to drop considerably. The lower the proportion of the junction volume expelled during a contraction, the faster the pinches are required to be (i.e. large value of $\alpha$) and the larger the frequencies of the pinch events (large $\beta$) in order to produce reasonably high average edge traversal speeds.
 
-Next, we consider the particle transport generated by two types of ER sheets contracting and relaxing over a duration 2T (see Materials and methods for details). The perinuclear sheets are shaped as contiguous layers of flat cisternae with a luminal volume larger than the tubules branching from these structures (see sketch in Figure 1f). Accordingly, their contraction with 2T=5 s and  Vsheet = 10 µm3 yields a mean average traversal speed of 35 µm/s consistent with the single-particle tracking experiments (see Figure 8b). However, the speeds distribution tails towards higher values (Figure 8a, b), something that has not be observed experimentally so far; it may be that high velocities cannot be recovered in experiments due to the constraints on linkage distance imposed to ensure trajectory fidelity in particle tracking.
+Next, we consider the particle transport generated by two types of ER sheets contracting and relaxing over a duration $2T$ (see Materials and methods for details). The perinuclear sheets are shaped as contiguous layers of flat cisternae with a luminal volume larger than the tubules branching from these structures (see sketch in Figure 1f). Accordingly, their contraction with $2T=5$ s and  $V_{sheet}$ = 10 µm3 yields a mean average traversal speed of 35 µm/s consistent with the single-particle tracking experiments (see Figure 8b). However, the speeds distribution tails towards higher values (Figure 8a, b), something that has not be observed experimentally so far; it may be that high velocities cannot be recovered in experiments due to the constraints on linkage distance imposed to ensure trajectory fidelity in particle tracking.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig8-v1.jpg)
 
-**Figure 8.:** Distributions of instantaneous speeds (a) and average edge traversal speeds (b) obtained from simulations of the C1 network from Figure 9 driven by the contraction of a perinuclear sheet. In these simulations, the sheet undergoes one contraction + relaxation lasting  s, and expels a volume 2T=5 µmVsheet=103 of fluid during a contraction. Colour maps of normalised average edge traversal speeds obtained from simulations of the C1 network from Figure 9 driven by contraction of tubules + sheets (c) and junctions + tubules (d), respectively. (e) The speeds averaged along the  direction of the network, y, are plotted against V(x), to effectively project the information onto one dimension from c (blue solid line) and d (red dashed line). (xf, g) Histograms of average edge traversal speeds (dots) and normal fits (lines) and mean AETS (inset) in C1 networks with parameters adjusted as follows to approximate a network with peripheral sheets: Junction  expels a volume k of fluid in each pinch, the pinches are Vk/6 times slower than the original tubule pinches, and all nodes actively pinch (α−1=2.5f); and node  expels a volume k of fluid in each pinch, the pinches are Vk/2 times slower than the original tubule pinches, and only a third of the nodes actively pinch (α−1=5g).
+**Figure 8.:** Distributions of instantaneous speeds (a) and average edge traversal speeds (b) obtained from simulations of the C1 network from Figure 9 driven by the contraction of a perinuclear sheet. In these simulations, the sheet undergoes one contraction + relaxation lasting $2T=5$ s, and expels a volume $V_{sheet}=10$ µm3 of fluid during a contraction. Colour maps of normalised average edge traversal speeds obtained from simulations of the C1 network from Figure 9 driven by contraction of tubules + sheets (c) and junctions + tubules (d), respectively. (e) The speeds averaged along the $y$ direction of the network, $V(x)$, are plotted against $x$, to effectively project the information onto one dimension from c (blue solid line) and d (red dashed line). (f, g) Histograms of average edge traversal speeds (dots) and normal fits (lines) and mean AETS (inset) in C1 networks with parameters adjusted as follows to approximate a network with peripheral sheets: Junction $k$ expels a volume $V_{k}/6$ of fluid in each pinch, the pinches are $\alpha^{−1}=2.5$ times slower than the original tubule pinches, and all nodes actively pinch (f); and node $k$ expels a volume $V_{k}/2$ of fluid in each pinch, the pinches are $\alpha^{−1}=5$ times slower than the original tubule pinches, and only a third of the nodes actively pinch (g).
 
 Furthermore, our simulations reveal that the flow decays sharply with distance away from the sheet where it originated as it branches out into tubules. This is illustrated in Figure 8c, d and we further quantify the spatial gradient of the average edge traversal speeds across Cartesian 2D coordinates in Figure 8e, revealing the stark contrast between the homogeneous profile for contracting junctions (red dotted line) vs sheet-driven transport (blue solid line). The short range of influence afforded by contracting perinuclear ER sheets thus argues against its ability to sustain mixing flows and fast particle transport on the distal tubular network.
 
-Instead, we explore whether the peripheral sheets (i.e. the smaller flat inter-tubular ER regions, see sketch in Figure 1d) may overcome the range limit. The peripheral sheets have volumes significantly larger than tubules and junctions, which we estimated at 0.12 µm ± 0.04 µm3 (see Figure 13 and Materials and methods, Experimental estimates of volumes of peripheral sheets for details). This suggests that the peripheral sheets could produce average edge traversal speeds compatible with experimental measurements. Assuming that a sheet typically occupies the area enclosed by a ‘triangle’ of tubules, we may incorporate the transport inside a sheet-driven network using our model for contracting junctions (also referred to as ‘nodes’ in our graph theoretical methodology), but with junction volumes set to the measured sheet volumes (see Experimental estimates of volumes of peripheral sheets for details) and with either (1) each node expelling one third of the volume expelled by a contracting sheet (since a peripheral sheet is in contact with three nodes on average), or (2) a contracting node expelling the entire volume expelled by a contracting sheet, but with only one-third of the junctions actively contracting at any one time. If we further assume that during each contraction a peripheral sheet expels half its total volume so that in simulation (1) node k expels a volume Vk/6 in each contraction and in simulation (2) each active node k expels a volume Vk/2, then nodes which contract at rates α−1=2.5 and α−1=5 times slower than the tubule pinches in Holcman et al., 2018 in simulations (1) and (2), respectively, give average edge traversal speeds in the correct range of 40 µm/s (Figure 8f, g). The contraction of peripheral sheets may thus be offered as a plausible mechanism for fast luminal transport, provided they are able to contract with sufficiently high rates.
+Instead, we explore whether the peripheral sheets (i.e. the smaller flat inter-tubular ER regions, see sketch in Figure 1d) may overcome the range limit. The peripheral sheets have volumes significantly larger than tubules and junctions, which we estimated at 0.12 µm ± 0.04 µm3 (see Figure 13 and Materials and methods, Experimental estimates of volumes of peripheral sheets for details). This suggests that the peripheral sheets could produce average edge traversal speeds compatible with experimental measurements. Assuming that a sheet typically occupies the area enclosed by a ‘triangle’ of tubules, we may incorporate the transport inside a sheet-driven network using our model for contracting junctions (also referred to as ‘nodes’ in our graph theoretical methodology), but with junction volumes set to the measured sheet volumes (see Experimental estimates of volumes of peripheral sheets for details) and with either (1) each node expelling one third of the volume expelled by a contracting sheet (since a peripheral sheet is in contact with three nodes on average), or (2) a contracting node expelling the entire volume expelled by a contracting sheet, but with only one-third of the junctions actively contracting at any one time. If we further assume that during each contraction a peripheral sheet expels half its total volume so that in simulation (1) node $k$ expels a volume $V_{k}/6$ in each contraction and in simulation (2) each active node $k$ expels a volume $V_{k}/2$, then nodes which contract at rates $\alpha^{−1}=2.5$ and $\alpha^{−1}=5$ times slower than the tubule pinches in Holcman et al., 2018 in simulations (1) and (2), respectively, give average edge traversal speeds in the correct range of 40 µm/s (Figure 8f, g). The contraction of peripheral sheets may thus be offered as a plausible mechanism for fast luminal transport, provided they are able to contract with sufficiently high rates.
 
 Furthermore, by relating the work done by a peripheral sheet contraction to the dissipation due to the flows induced inside the sheet and in the rest of the network, the energetic cost of one such contraction may be estimated to be of the order of 1000 molecules of ATP (see Materials and methods, Energetic cost estimate for contracting peripheral sheets for details). For reference, a kinesin motor protein uses one molecule of ATP to move 8 nm (Coy et al., 1999; Schnitzer and Block, 1997), whereas a muscle fibre consumes hundreds of thousands of ATP per second (Barclay, 2017). These peripheral sheet contractions may be directly ATP-driven, or they might come as a result of other mechanical processes in the cell, similar to mechanisms generating cytoplasmic mixing flow (Klughammer et al., 2018; Guo et al., 2014; Lin et al., 2016).
 
@@ -145,9 +163,9 @@ In conclusion, it is worth emphasising that our in silico fluid dynamical modell
 
 Here, we describe the mathematical and physical model for the fluid mechanics and transport driven by active contractions in the ER. This requires the introduction of a network model for the geometry of the ER (Network modelling) and individual pinches (Pinch modelling) and a framework for the hydrodynamics of pinching tubules (Hydrodynamic modelling). Our solution method for the flows inside our network is then described in Solving the hydrodynamic network model. From simulations of Brownian particles advected by these flows (Simulating particle transport) quantitative measures of particle transport (Data processing: instantaneous speeds and average edge traversal speeds) are extracted for comparison with experiment. Boundary slip is incorporated into our model in Incorporating slip boundary conditions. The force required to pinch a tubule is estimated in Estimate of forces required for pinches. In Derivation of theoretical bounds for active flows driven by pinching tubules, we present in detail the derivations of the theoretical results discussed in Theoretical analysis of advection due to a single pinch explains weak pinching-induced transport (transport upper bound by a single pinch) and Marginal addition of coordinated contractility to luminal transport (coordination of pinches). Finally, modifications of our model to explore alternative flow generation mechanisms are discussed in Modelling of alternative flow generation mechanisms, and the energetic cost in contracting a peripheral sheet is estimated in Energetic cost estimate for contracting peripheral sheets.
 
-## Network modelling
+### Network modelling
 
-We represent the ‘skeleton’ of a two-dimensional ER network as a planar graph with each node assigned a position 𝐱∈ℝ2. Given an edge of the network labelled (i,j) and of length |𝐱i−𝐱j|=l, we model the lumen of the corresponding tubule to occupy a cylinder of radius R whose axis lies along the edge and has length l. This assumption avoids the intrinsic difficulty in defining a precise boundary between a tubule and a tubular junction, as well as leading to a simplified model of the intra-nodal dynamics of a solute particle (see below); since the tubules are long compared to the size of the junctions, the impact of their small overlap can be safely neglected.
+We represent the ‘skeleton’ of a two-dimensional ER network as a planar graph with each node assigned a position $𝐱\inℝ^{2}$. Given an edge of the network labelled $(i,j)$ and of length $|𝐱_{i}−𝐱_{j}|=l$, we model the lumen of the corresponding tubule to occupy a cylinder of radius $R$ whose axis lies along the edge and has length $l$. This assumption avoids the intrinsic difficulty in defining a precise boundary between a tubule and a tubular junction, as well as leading to a simplified model of the intra-nodal dynamics of a solute particle (see below); since the tubules are long compared to the size of the junctions, the impact of their small overlap can be safely neglected.
 
 We mathematically reconstruct a model ER network, which we refer to as C0, using the skeleton image of the COS7 ER network given in Supplementary file 3 of Holcman et al., 2018; this network is reproduced in Figure 9a. We use the multi-point tool in ImageJ (Schneider et al., 2012) to place numbered points at the positions of the nodes on the source skeleton image, and then obtain a list of the indices and position coordinates of each node. The edges are then manually tabulated as a list of pairs of nodes; this gives us all the information required to construct a mathematical graph as shown in Figure 9b, with the original network superimposed on the mathematical model in Figure 9c. Note that in what follows we work with the largest connected component of the source skeleton image in order to study transport in a fully connected network. We also use the same procedure to extract the graph structures from microscopy images, of four smaller ER networks which we label C1–C4 (original network with mathematical graph superimposed in Figure 9d). In Figure 9e, we show the distributions of the edge (tubule) lengths in each of the C0–C4 networks, as well as the mean edge lengths, the mean degrees (the degree of a node is the number of edges connected to it), and the number of nodes. The mean edge lengths are around 1 µm and mean degrees are approximately 3. In order to compare the biological network to an idealised ER system, we also consider a honeycomb network, that is one where every node (apart from those at the boundaries) has a degree of 3, with all edge lengths exactly 1 µm.
 
@@ -155,246 +173,410 @@ We mathematically reconstruct a model ER network, which we refer to as C0, using
 
 **Figure 9.:** (a) Skeleton image of COS7 ER reproduced from Supplementary figure 3 of Holcman et al., 2018. (b) Model ER graph (blue solid lines) reconstructed from (a) using ImageJ. (c) Experimental images in (a) superimposed with mathematical model from (b). (d) Microscopy images of four different COS7 ER networks (labelled C1–C4) with reconstructed model networks (blue solid lines) superimposed. (e) Distributions of edge lengths in the C0–C4 networks. Bottom right: mean edge lengths, mean degrees (i.e. number of edges connected to a node) and number of nodes of the C0–C4 networks.
 
-## Pinch modelling
+### Pinch modelling
 
 To describe the pinches (Figure 1e), we consider a model where the kinematics of each pinch is fully prescribed in time. We therefore assume that the active biochemical forces responsible for the deformation of the tubules balance with the elastic resistance of the tubules and with the dissipative forces in the fluid in such a way that the pinches occur as described.
 
-The geometrical model for a pinch is illustrated in Figure 10. Each tubule is assumed to have a pinch site at its midpoint (i.e. with L1=L2); we make this simplifying assumption in our simulations, after verifying that more general pinch locations (L1≠L2) have virtually no effect on particle transport. The pinching events occur at the pinch sites stochastically and independently of each other. Each pinch is defined geometrically by three parameters from a random distribution (see below): (1) the duration of a pinch 2T, (2) the time Twait between the end of a pinch and the beginning of a new one on the same site, and (3) the length of a pinch 2L (see Figure 10). We assume for simplicity that all pinches are axisymmetric so that using the notation of Figure 10, each tubule remains a cylinder of time-varying radius denoted by r=a(z,t). Pinches are assumed to have reflectional symmetry about the plane in the cross-section through the centre of the pinch (i.e. in Figure 10 each pinch is characterised by the same length L on either side of it). The total length of a tubule is denoted by l=L1+2L+L2, so the portion before the pinch has length L1, and that after the pinch is of length L2.
+The geometrical model for a pinch is illustrated in Figure 10. Each tubule is assumed to have a pinch site at its midpoint (i.e. with $L_{1}=L_{2}$); we make this simplifying assumption in our simulations, after verifying that more general pinch locations ($L_{1}\neqL_{2}$) have virtually no effect on particle transport. The pinching events occur at the pinch sites stochastically and independently of each other. Each pinch is defined geometrically by three parameters from a random distribution (see below): (1) the duration of a pinch $2T$, (2) the time $T_{wait}$ between the end of a pinch and the beginning of a new one on the same site, and (3) the length of a pinch $2L$ (see Figure 10). We assume for simplicity that all pinches are axisymmetric so that using the notation of Figure 10, each tubule remains a cylinder of time-varying radius denoted by $r=a(z,t)$. Pinches are assumed to have reflectional symmetry about the plane in the cross-section through the centre of the pinch (i.e. in Figure 10 each pinch is characterised by the same length $L$ on either side of it). The total length of a tubule is denoted by $l=L_{1}+2L+L_{2}$, so the portion before the pinch has length $L_{1}$, and that after the pinch is of length $L_{2}$.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig10-v1.jpg)
 
-**Figure 10.:** The tubule has a radius of  outside the pinch, R in the pinch (where a(z,t) is the axial coordinate), and z at its narrowest point that is the centre of the pinch. The portion of the tubule before the tubule has length b(t) while that after has length L1; the pinch is symmetric and has a length L2. 2L and Q1,Q2,Q3, denote the volume fluxes through the tubule in the four different regions as indicated. The pressures at the end of the tubule are Q4 at p=p1 and z=0 at p=p2.z=L1+2L+L2
+**Figure 10.:** The tubule has a radius of $R$ outside the pinch, $a(z,t)$ in the pinch (where $z$ is the axial coordinate), and $b(t)$ at its narrowest point that is the centre of the pinch. The portion of the tubule before the tubule has length $L_{1}$ while that after has length $L_{2}$; the pinch is symmetric and has a length $2L$. $Q_{1},Q_{2},Q_{3},$ and $Q_{4}$ denote the volume fluxes through the tubule in the four different regions as indicated. The pressures at the end of the tubule are $p=p_{1}$ at $z=0$ and $p=p_{2}$ at $z=L_{1}+2L+L_{2}$.
 
-We model the geometrical profile of each pinch of length 2L as following a linear radius change (see Figure 10). Within a pinch located at z=z0, the radius of the cylinder is therefore given by(2)a(z,t)=b(t)+[R−b(t)]|z−z0|L,−L≤z−z0≤L.
+We model the geometrical profile of each pinch of length $2L$ as following a linear radius change (see Figure 10). Within a pinch located at $z=z_{0}$, the radius of the cylinder is therefore given by
 
-The time-varying function b(t)≤R is therefore the minimum pinch radius in the centre of the tubule. As the simplest modelling choice, we assume in our simulations that b changes in time sinusoidally and thus will use b(t)=(R+b0)/2+(R−b0)cos⁡(πt/T)/2, where t is time after the pinch begins and b0 is the value of b halfway in time through the pinch. Choosing a smooth time variation for the function b(t) will ensure the continuity of fluxes in time (see Equation 10 later). We have verified that changing the pinch shape to a smoother geometry has essentially no impact on the fluid volume expelled/taken in, and therefore no significant effect on the flows/transport.
+$$
+a(z,t)=b(t)+[R−b(t)]\frac{|z−z_{0}|}{L},−L\leqz−z_{0}\leqL.
+$$
 
-In our simulations, the stochastic pinch parameters are drawn from the distributions measured in Holcman et al., 2018. The pinch duration 2T is therefore drawn from an exponential distribution with rate parameter λ=ln⁡10/0.167 s−1 (so the mean value is 2T=0.0725 s), the time between pinches Twait from an exponential distribution with rate parameter λwait=ln⁡10/0.851 s−1 (mean value Twait=0.370 s) and the pinch length 2L from a uniform distribution with mean µm and variance σ2=(0.062/ln⁡10)μm2≈(0.040 μm)2. Throughout we set the tubule radius R=30 nm and b0=0.01R (recall from Figure 10).
+The time-varying function $b(t)\leqR$ is therefore the minimum pinch radius in the centre of the tubule. As the simplest modelling choice, we assume in our simulations that $b$ changes in time sinusoidally and thus will use $b(t)=(R+b_{0})/2+(R−b_{0})cos⁡(\pit/T)/2$, where $t$ is time after the pinch begins and $b_{0}$ is the value of $b$ halfway in time through the pinch. Choosing a smooth time variation for the function $b(t)$ will ensure the continuity of fluxes in time (see Equation 10 later). We have verified that changing the pinch shape to a smoother geometry has essentially no impact on the fluid volume expelled/taken in, and therefore no significant effect on the flows/transport.
 
-## Hydrodynamic modelling
+In our simulations, the stochastic pinch parameters are drawn from the distributions measured in Holcman et al., 2018. The pinch duration $2T$ is therefore drawn from an exponential distribution with rate parameter $\lambda=ln⁡10/0.167$ s−1 (so the mean value is $2T=0.0725$ s), the time between pinches $T_{wait}$ from an exponential distribution with rate parameter $\lambda_{wait}=ln⁡10/0.851$ s−1 (mean value $T_{wait}=0.370$ s) and the pinch length $2L$ from a uniform distribution with mean µm and variance $\sigma^{2}=(0.06^{2}/ln⁡10)\mum^{2}≈(0.040 \mum)^{2}$. Throughout we set the tubule radius $R=30$ nm and $b_{0}=0.01R$ (recall from Figure 10).
 
-## Hydrodynamics of network
+### Hydrodynamic modelling
 
-We assume that the fluid occupying the ER network is Newtonian. Flow inside the network occurs at low Reynolds number, which can be justified as follows. From experiments in Holcman et al., 2018, we know that velocity scale relevant to ER flows is of the order U∼10−5 ms−1. With a typical tubule radius R∼10−8 m and a kinematic viscosity of at least that of water ν≈10−6 m2 s−1, we obtain a Reynolds number of the order Re=UR/ν∼10−7, so the flow is indeed Stokesian and inertial effects in the fluid can be safely neglected.
+#### Hydrodynamics of network
+
+We assume that the fluid occupying the ER network is Newtonian. Flow inside the network occurs at low Reynolds number, which can be justified as follows. From experiments in Holcman et al., 2018, we know that velocity scale relevant to ER flows is of the order $U∼10^{−5}$ ms−1. With a typical tubule radius $R∼10^{−8}$ m and a kinematic viscosity of at least that of water $ν≈10^{−6}$ m2 s−1, we obtain a Reynolds number of the order $Re=UR/ν∼10^{−7}$, so the flow is indeed Stokesian and inertial effects in the fluid can be safely neglected.
 
 At a typical instance in time, a tubule undergoing contraction (or relaxation) causes a net volume flux to exit (or enter) the corresponding tubule. In the context of our graph theoretical model, we therefore model each pinch site as a ‘pinch node’ generating a net hydrodynamic source/sink whenever the tubule contracts/relaxes.
 
-However, since it is not guaranteed that the total volume created by all pinching events always adds up to zero, we need a mechanism for the corresponding net volume to exit, or enter, the network. We achieve this through a number of ‘exit nodes’ that allow mass to be globally conserved, located at the periphery of the network. From a hydrodynamic standpoint, we impose the pressure condition p=p0 at each exit node to model their connection to a large fluid reservoir.
+However, since it is not guaranteed that the total volume created by all pinching events always adds up to zero, we need a mechanism for the corresponding net volume to exit, or enter, the network. We achieve this through a number of ‘exit nodes’ that allow mass to be globally conserved, located at the periphery of the network. From a hydrodynamic standpoint, we impose the pressure condition $p=p_{0}$ at each exit node to model their connection to a large fluid reservoir.
 
 We numerically tested the robustness of our results to the details of the exit nodes by repeating simulations with different configurations. The exact choices of exit nodes turn out to not affect the transport results shown below provided there are sufficiently many of them to avoid channelling the entire network’s worth of pinch-induced flow into a few tubules towards the exterior, thereby producing artificially strong flows.
 
-## Hydrodynamic model for a pinch
+#### Hydrodynamic model for a pinch
 
-## Flow rate
+##### Flow rate
 
-The velocity field in a straight cylindrical tubule at low Reynolds number is the classical parabolic Poiseuille flow (Batchelor, 1967). When integrated over a cross-section of the tubule, this flow yields the Hagen–Poiseuille law relating the pressure change Δp across a length l of a tubule to the a net volume flux Q in the positive axial direction,(3)Δp=−8μlπR4Q,
+The velocity field in a straight cylindrical tubule at low Reynolds number is the classical parabolic Poiseuille flow (Batchelor, 1967). When integrated over a cross-section of the tubule, this flow yields the Hagen–Poiseuille law relating the pressure change $Δp$ across a length $l$ of a tubule to the a net volume flux $Q$ in the positive axial direction,
 
-where μ is the dynamic viscosity of the Newtonian fluid. Note that when Q>0 our notation leads to Δp<0, meaning that the pressure decreases across the length of the channel.
+$$
+Δp=−\frac{8\mul}{\piR^{4}}Q,
+$$
 
-The result in Equation 3 is valid for a straight (i.e. not pinching) tubule, and we need to generalise it to the case of a pinching tubule. Consider first a more general axisymmetric pipe whose radius a(z,t) varies with axial position z and time. We may use the long-wavelength (lubrication) solution to Stokes’ equations for the streamwise velocity u(z,r,t) and flux Q(z,t) inside such a pipe into which a flux Q1(t) enters at z=0 (Alim et al., 2013),(4)u(z,r,t)=2Q(z,t)πa(z,t)2[1−(ra(z,t))2],
+where μ is the dynamic viscosity of the Newtonian fluid. Note that when $Q>0$ our notation leads to $Δp<0$, meaning that the pressure decreases across the length of the channel.
 
-where(5)Q(z,t)=Q1(t)−2π∫0za(z~,t)∂a(z~,t)∂tdz~.
+The result in Equation 3 is valid for a straight (i.e. not pinching) tubule, and we need to generalise it to the case of a pinching tubule. Consider first a more general axisymmetric pipe whose radius $a(z,t)$ varies with axial position $z$ and time. We may use the long-wavelength (lubrication) solution to Stokes’ equations for the streamwise velocity $u(z,r,t)$ and flux $Q(z,t)$ inside such a pipe into which a flux $Q_{1}(t)$ enters at $z=0$ (Alim et al., 2013),
 
-The equality in Equation 5 can be derived using an intuitive mass conservation argument, independently of the inspired ansatz in Equation 4. Conservation of mass inside a small section [z,z+δz] of the cylinder requires Q(z)−Q(z+δz)=2πaa˙δz+O(δz2). Considering the limit δz→0 and integrating the resulting expression for ∂Q/∂z from 0 to z yields Equation 5.
+$$
+u(z,r,t)=2\frac{Q(z,t)}{\pia(z,t)^{2}}[1−(\frac{r}{a(z,t)})^{2}],
+$$
 
-In order for the no-slip boundary conditions at r=a(z,t) to be satisfied, and also to satisfy the incompressibility condition ∇⋅𝐮=0, the radial component of the velocity, v(z,r,t), is necessarily non-zero and given by Alim et al., 2013 as(6)v(z,r,t)=∂a(z,t)∂tra(z,t)[2−(ra(z,t))2]+2∂a(z,t)∂zQ(z,t)rπa(z,t)3[1−(ra(z,t))2].
+where
 
-Our geometrical model for each pinch in Pinch modelling yields straightforwardly a piecewise linear expression for a(z,t) in different regions of the tubule, with the time dependence entering only through the value of the pinch radius b(t). Denoting by Qi (1≤i≤4) the fluxes in the four regions of the pinched tubules shown in Figure 10, we may substitute the linear shape functions into Equation 5 and obtain(7)Q2=Q1−2πb˙(z−L1)2L(R2−(R−b)(z−L1)3L),(8)Q3=Q1−2πb˙L(R6+b3)−2πb˙[z−(L1+L)]{b+R−2b2L[z−(L1+L)]−R−b3L2[z−(L1+L)]2},(9)Q4=Q1−2πb˙L(R3+2b3).
+$$
+Q(z,t)=Q_{1}(t)−2\pi\int_{0}^{z}a(z~,t)\frac{∂a(z~,t)}{∂t}dz~.
+$$
 
-Note that the final expression may be rearranged as(10)Q4−Q1=−2πb˙L(R3+2b3),
+The equality in Equation 5 can be derived using an intuitive mass conservation argument, independently of the inspired ansatz in Equation 4. Conservation of mass inside a small section $[z,z+\deltaz]$ of the cylinder requires $Q(z)−Q(z+\deltaz)=2\piaa˙\deltaz+O(\deltaz^{2})$. Considering the limit $\deltaz→0$ and integrating the resulting expression for $∂Q/∂z$ from 0 to $z$ yields Equation 5.
+
+In order for the no-slip boundary conditions at $r=a(z,t)$ to be satisfied, and also to satisfy the incompressibility condition $\nabla⋅𝐮=0$, the radial component of the velocity, $v(z,r,t)$, is necessarily non-zero and given by Alim et al., 2013 as
+
+$$
+v(z,r,t)=\frac{∂a(z,t)}{∂t}\frac{r}{a(z,t)}[2−(\frac{r}{a(z,t)})^{2}]+2\frac{∂a(z,t)}{∂z}\frac{Q(z,t)r}{\pia(z,t)^{3}}[1−(\frac{r}{a(z,t)})^{2}].
+$$
+
+Our geometrical model for each pinch in Pinch modelling yields straightforwardly a piecewise linear expression for $a(z,t)$ in different regions of the tubule, with the time dependence entering only through the value of the pinch radius $b(t)$. Denoting by $Q_{i}$ ($1\leqi\leq4$) the fluxes in the four regions of the pinched tubules shown in Figure 10, we may substitute the linear shape functions into Equation 5 and obtain
+
+$$
+Q_{2}=Q_{1}−\frac{2\pib˙(z−L_{1})^{2}}{L}(\frac{R}{2}−\frac{(R−b)(z−L_{1})}{3L}),
+$$
+
+
+
+$$
+Q_{3}=Q_{1}−2\pib˙L(\frac{R}{6}+\frac{b}{3})−2\pib˙[z−(L_{1}+L)]{b+\frac{R−2b}{2L}[z−(L_{1}+L)]−\frac{R−b}{3L^{2}}[z−(L_{1}+L)]^{2}},
+$$
+
+
+
+$$
+Q_{4}=Q_{1}−2\pib˙L(\frac{R}{3}+\frac{2b}{3}).
+$$
+
+Note that the final expression may be rearranged as
+
+$$
+Q_{4}−Q_{1}=−2\pib˙L(\frac{R}{3}+\frac{2b}{3}),
+$$
 
 which may be interpreted as the instantaneous volume source/sink during a contraction/relaxation at a pinch site.
 
-## Pressure drop
+##### Pressure drop
 
-We next need to compute the pressure drop in the pinches. We integrate the z-component of the Stokes equation(11)∂p∂z=1r∂∂r(r∂u∂r)+μ∂2u∂z2,
+We next need to compute the pressure drop in the pinches. We integrate the $z$-component of the Stokes equation
 
-along 0≤z≤L1+2L+L2, and use the solution for u, to obtain(12)Δp≡p2−p1=−8μπ∫0L1+2L+L2Q(z,t)a(z,t)4dz+μ∂u∂z|0L1+2L+L2≈−8μπ∫0L1+LQ(z)a(z,t)4dz⏟I1−8μπ∫L1+LL1+2L+L2Q(z)a(z,t)4dz⏟I2.
+$$
+\frac{∂p}{∂z}=\frac{1}{r}\frac{∂}{∂r}(r\frac{∂u}{∂r})+\mu\frac{∂^{2}u}{∂z^{2}},
+$$
 
-Here, the second term on the right-hand side of Equation 12 has vanished because ∂zu∝∂z(Q/a2) but Q and a are approximately constant at the entrance and exits of the tubule when the pinch site is sufficiently far from the ends of the tubule so that the flow is fully developed there.
+along $0\leqz\leqL_{1}+2L+L_{2}$, and use the solution for $u$, to obtain
 
-Using the expression (Equation 7) for Q2, an integration yields(13)I1=−8μQ1L1πR4−8μπ[LQ13(R−b)(1b3−1R3)+∫L1L1+LQ2(z)−Q1a(z,t)4dz]
+$$
+Δp≡p_{2}−p_{1}=−\frac{8\mu}{\pi}\int_{0}^{L_{1}+2L+L_{2}}\frac{Q(z,t)}{a(z,t)^{4}}dz+\mu\frac{∂u}{∂z}|_{0}^{L_{1}+2L+L_{2}}≈−\frac{8\mu}{\pi}\int_{0}^{L_{1}+L}\frac{Q(z)}{a(z,t)^{4}}dz⏟I_{1}−\frac{8\mu}{\pi}\int_{L_{1}+L}^{L_{1}+2L+L_{2}}\frac{Q(z)}{a(z,t)^{4}}dz⏟I_{2}.
+$$
 
-and, by symmetry,(14)−I2=8μQ4L2πR4−8μπ[−LQ43(R−b)(1b3−1R3)+∫L1+2L+L2L1+L−Q3(z)+Q4a(z,t)4dz].
+Here, the second term on the right-hand side of Equation 12 has vanished because $∂_{z}u∝∂_{z}(Q/a^{2})$ but $Q$ and $a$ are approximately constant at the entrance and exits of the tubule when the pinch site is sufficiently far from the ends of the tubule so that the flow is fully developed there.
 
-Subtracting these two results (and noting the integrals cancel out by symmetry) we obtain the modified Hagen–Poiseuille expression for a pinching tubule as(15)Δp=−8μπ[L1R4+L3(R−b)(1b3−1R3)]Q1−8μπ[L2R4+L3(R−b)(1b3−1R3)]Q4.
+Using the expression (Equation 7) for $Q_{2}$, an integration yields
 
-Note that this relationship is linear in each of Q1 and Q4, and is to be solved alongside Equation 10 to relate the flow rates and pressure drops to the change in size of the pinches. Importantly, the classical Hagen–Poiseuille law is recovered as b→R since Equation 14 becomes in that limit(16)Δp=−8μ(L1+2L+L2)Q1πR4,
+$$
+I_{1}=\frac{−8\muQ_{1}L_{1}}{\piR^{4}}−\frac{8\mu}{\pi}[\frac{LQ_{1}}{3(R−b)}(\frac{1}{b^{3}}−\frac{1}{R^{3}})+\int_{L_{1}}^{L_{1}+L}\frac{Q_{2}(z)−Q_{1}}{a(z,t)^{4}}dz]
+$$
 
-which agrees with Equation 3 when taking l=L1+2L+L2.
+and, by symmetry,
 
-## Solving the hydrodynamic network model
+$$
+−I_{2}=\frac{8\muQ_{4}L_{2}}{\piR^{4}}−\frac{8\mu}{\pi}[−\frac{LQ_{4}}{3(R−b)}(\frac{1}{b^{3}}−\frac{1}{R^{3}})+\int_{L_{1}+2L+L_{2}}^{L_{1}+L}\frac{−Q_{3}(z)+Q_{4}}{a(z,t)^{4}}dz].
+$$
+
+Subtracting these two results (and noting the integrals cancel out by symmetry) we obtain the modified Hagen–Poiseuille expression for a pinching tubule as
+
+$$
+Δp=−\frac{8\mu}{\pi}[\frac{L_{1}}{R^{4}}+\frac{L}{3(R−b)}(\frac{1}{b^{3}}−\frac{1}{R^{3}})]Q_{1}−\frac{8\mu}{\pi}[\frac{L_{2}}{R^{4}}+\frac{L}{3(R−b)}(\frac{1}{b^{3}}−\frac{1}{R^{3}})]Q_{4}.
+$$
+
+Note that this relationship is linear in each of $Q_{1}$ and $Q_{4}$, and is to be solved alongside Equation 10 to relate the flow rates and pressure drops to the change in size of the pinches. Importantly, the classical Hagen–Poiseuille law is recovered as $b→R$ since Equation 14 becomes in that limit
+
+$$
+Δp=−\frac{8\mu(L_{1}+2L+L_{2})Q_{1}}{\piR^{4}},
+$$
+
+which agrees with Equation 3 when taking $l=L_{1}+2L+L_{2}$.
+
+### Solving the hydrodynamic network model
 
 The incorporation of pinches as ‘dummy nodes’ into the graph theoretical framework of Network modelling along with Equations 10 and 14 for the necessary pinch-related quantities allow us to reduce the problem of determining the time-dependent flows in an active pinching network into the simpler problem of solving at each instant for the instantaneous fluxes inside a ‘passive’ network with newly added nodes, appropriate sources/sinks, and modified pressure drops. Note that since the flows at these sub-cellular scales are inertialess (i.e. Stokes flows), we are able to effectively decouple time from our problem and solve the problem in the quasi-steady limit.
 
-For each edge (i.e. tubule) (i,j) in the network, we define Qij to be the flow rate from node i to node j, with the sign convention that flow is from i to j if Qij>0. For mathematical convenience, we define Qij=0 in all cases where (i,j) is not an edge in the graph. The goal is to solve for the values of the Qij’s corresponding to each edge.
+For each edge (i.e. tubule) $(i,j)$ in the network, we define $Q_{ij}$ to be the flow rate from node $i$ to node $j$, with the sign convention that flow is from $i$ to $j$ if $Q_{ij}>0$. For mathematical convenience, we define $Q_{ij}=0$ in all cases where $(i,j)$ is not an edge in the graph. The goal is to solve for the values of the $Q_{ij}$’s corresponding to each edge.
 
-After the incorporation of the dummy nodes, we denote by N the number of nodes and E the number of edges. We label the nodes such that {1,…,M} denotes the M exit nodes. Let qi be the source or sink carried by the ith node (so that qi=0 if i is a normal node, qi is as specified by the RHS of Equation 10 if i is a pinch node, and qi is a quantity to be determined if i is an exit node). Our M+E independent variables are therefore {qi|i=1,…,M} (that is, the sources/sinks carried by the exit nodes), and the Qij’s corresponding to each edge. To obtain their values, we employ the viscous hydraulic analogues of Kirchhoff’s laws.
+After the incorporation of the dummy nodes, we denote by $N$ the number of nodes and $E$ the number of edges. We label the nodes such that ${1,…,M}$ denotes the $M$ exit nodes. Let $q_{i}$ be the source or sink carried by the $i^{th}$ node (so that $q_{i}=0$ if $i$ is a normal node, $q_{i}$ is as specified by the RHS of Equation 10 if $i$ is a pinch node, and $q_{i}$ is a quantity to be determined if $i$ is an exit node). Our $M+E$ independent variables are therefore ${q_{i}|i=1,…,M}$ (that is, the sources/sinks carried by the exit nodes), and the $Q_{ij}$’s corresponding to each edge. To obtain their values, we employ the viscous hydraulic analogues of Kirchhoff’s laws.
 
-## Kirchhoff’s first law (K1)
+#### Kirchhoff’s first law (K1)
 
-The first equation is that mass is conserved at each junction, that is, for each node i we have(17)∑jQij=qi,
+The first equation is that mass is conserved at each junction, that is, for each node $i$ we have
 
-which gives us therefore N equations. Note that these equations together imply global conservation of mass, ∑i=1Nqi=0.
+$$
+\sumjQ_{ij}=q_{i},
+$$
 
-## Kirchhoff’s second law (K2)
+which gives us therefore $N$ equations. Note that these equations together imply global conservation of mass, $\sumi=1Nq_{i}=0$.
 
-The second equation is a statement of consistency of pressure, namely that the pressure change around any cycle (i.e. closed loop) of the network is zero. Therefore, in a given cycle C={v1,v2,…,vn,vn+1=v1}, if Δpvivi+1 denotes the pressure change from node vi to node vi+1, we necessarily have(18)∑i=1nΔpvivi+1=0.
+#### Kirchhoff’s second law (K2)
+
+The second equation is a statement of consistency of pressure, namely that the pressure change around any cycle (i.e. closed loop) of the network is zero. Therefore, in a given cycle $C={v_{1},v_{2},…,v_{n},v_{n+1}=v_{1}}$, if $Δp_{v_{i}v_{i+1}}$ denotes the pressure change from node $v_{i}$ to node $v_{i+1}$, we necessarily have
+
+$$
+\sumi=1nΔp_{v_{i}v_{i+1}}=0.
+$$
 
 Note that the pressure change across a node is negligible.
 
 The K2 statement in Equation 18 applies to all cycles in the graph, which would give us more equations than we need since the vectors of coefficients in Equation 18 are linearly dependent. Instead, we need a minimal set of linearly independent K2 equations, corresponding to the cycles in a cycle basis of the graph, and we need only apply K2 to these cycles.
 
-To construct a cycle basis of the graph G, we use standard results from graph theory (Wilson, 2015). We first construct a spanning tree T, defined as a connected subgraph which contains all the nodes of G and no cycle, as shown in Figure 11a on an example. Any tree T has N−1 edges. Therefore, there are E−(N−1) edges in the graph G but not in the spanning tree T; for each such edge e, we denote by Ce the unique cycle in the graph created by adding the edge e to the tree T (see Figure 11b). The set of all such cycles Ce is then a cycle basis of G, and thus there are E−(N−1) cycles in this set. There are therefore E−N+1 independent cycles in the cycle basis.
+To construct a cycle basis of the graph $G$, we use standard results from graph theory (Wilson, 2015). We first construct a spanning tree $T$, defined as a connected subgraph which contains all the nodes of $G$ and no cycle, as shown in Figure 11a on an example. Any tree $T$ has $N−1$ edges. Therefore, there are $E−(N−1)$ edges in the graph $G$ but not in the spanning tree $T$; for each such edge $e$, we denote by $C_{e}$ the unique cycle in the graph created by adding the edge $e$ to the tree $T$ (see Figure 11b). The set of all such cycles $C_{e}$ is then a cycle basis of $G$, and thus there are $E−(N−1)$ cycles in this set. There are therefore $E−N+1$ independent cycles in the cycle basis.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig11-v1.jpg)
 
-**Figure 11.:** (a) A graph  (black solid lines) and its spanning tree G (black dots). (Tb) The unique cycle  (red) formed by adding an edge Ce to e∈G∖T. (Tc) A breadth-first search (BFS) starting at the rightmost node; the graph is explored in the order red, green, blue.
+**Figure 11.:** (a) A graph $G$ (black solid lines) and its spanning tree $T$ (black dots). (b) The unique cycle $C_{e}$ (red) formed by adding an edge $e\inG∖T$ to $T$. (c) A breadth-first search (BFS) starting at the rightmost node; the graph is explored in the order red, green, blue.
 
-To compute the spanning tree T we use a breadth-first search algorithm (Goodrich and Tamassia, 2015). We start from an arbitrary node and explore its neighbouring nodes. We add to T any previously unexplored node (and the corresponding edge) which does not result in the creation of a cycle in T. We then repeat this (in an arbitrary order) on the neighbours of the previous generation of nodes added to T, until no more nodes are left to explore. This is illustrated on an example in Figure 11c.
+To compute the spanning tree $T$ we use a breadth-first search algorithm (Goodrich and Tamassia, 2015). We start from an arbitrary node and explore its neighbouring nodes. We add to $T$ any previously unexplored node (and the corresponding edge) which does not result in the creation of a cycle in $T$. We then repeat this (in an arbitrary order) on the neighbours of the previous generation of nodes added to $T$, until no more nodes are left to explore. This is illustrated on an example in Figure 11c.
 
-A similar algorithm is also used to compute the cycles Ce in the cycle basis. This time, however, denoting e=(i,j), the algorithm is started from i and set to terminate as soon as j is visited, yielding a path in the tree from i to j, which, together with the original edge (i,j), completes a cycle.
+A similar algorithm is also used to compute the cycles $C_{e}$ in the cycle basis. This time, however, denoting $e=(i,j)$, the algorithm is started from $i$ and set to terminate as soon as $j$ is visited, yielding a path in the tree from $i$ to $j$, which, together with the original edge $(i,j)$, completes a cycle.
 
-## Pressure boundary conditions at exit nodes
+#### Pressure boundary conditions at exit nodes
 
-At this point in the modelling, we have M+E independent variables (the flow rates in each edge and at the exit nodes), N equations from K1 (i.e. Equation 17), and E−N+1 equations from K2 (i.e. Equation 18). The remaining M−1 equations follow from requiring the exit nodes to be at the same pressure, modelling their connection to a common fluid reservoir. This is ensured by the  M−1 equations(19)∑1→jΔp=0
+At this point in the modelling, we have $M+E$ independent variables (the flow rates in each edge and at the exit nodes), $N$ equations from K1 (i.e. Equation 17), and $E−N+1$ equations from K2 (i.e. Equation 18). The remaining $M−1$ equations follow from requiring the exit nodes to be at the same pressure, modelling their connection to a common fluid reservoir. This is ensured by the  $M−1$ equations
 
-for j=2,…,M, where the sum ∑1→j is defined to be over any path  from node 1 to node j. Note that thanks to Kirchhoff’s second law, this quantity is independent of the specific path taken from 1 to j.
+$$
+\sum1→jΔp=0
+$$
 
-We then solve the resulting linear system of M+E equations numerically. Note that we do not need to specify the value of the fluid viscosity μ in our algorithm because it cancels out in the K2 equations, Equation 18, and in the pressure boundary condition equation, Equation 19.
+for $j=2,…,M$, where the sum $\sum1→j$ is defined to be over any path  from node 1 to node $j$. Note that thanks to Kirchhoff’s second law, this quantity is independent of the specific path taken from 1 to $j$.
 
-## Simulating particle transport
+We then solve the resulting linear system of $M+E$ equations numerically. Note that we do not need to specify the value of the fluid viscosity μ in our algorithm because it cancels out in the K2 equations, Equation 18, and in the pressure boundary condition equation, Equation 19.
+
+### Simulating particle transport
 
 With our solution for the flows in the active network at each instant of time, we now proceed to track the motion of Brownian particles inside the network using a discretisation of their stochastic equations of motion, as a model for the transport of proteins in the ER network.
 
-We use the simplest approach where we superimpose Brownian motion onto advection by the flow inside each tubule. Let 𝐱(t) denote the position of a Brownian particle in a tubule and 𝐱n the finite-difference approximation of 𝐱(nΔt), where Δt is a discrete time step. The displacement of the particle at each time step can be obtained approximately using an explicit first-order Euler scheme(20)𝐱n+1=𝐱n+𝐔(𝐱n,t)Δt+𝐗(Δt),
+We use the simplest approach where we superimpose Brownian motion onto advection by the flow inside each tubule. Let $𝐱(t)$ denote the position of a Brownian particle in a tubule and $𝐱_{n}$ the finite-difference approximation of $𝐱(nΔt)$, where $Δt$ is a discrete time step. The displacement of the particle at each time step can be obtained approximately using an explicit first-order Euler scheme
 
-where 𝐔 is the instantaneous flow velocity, and the random noise term 𝐗(Δt) is drawn from a zero-mean Gaussian with variance ⟨𝐗(Δt)𝐗(Δt)⟩=2DΔt𝐈, where D is the Brownian diffusivity of the particle. In our simulations, we take the diffusion constant to be the mean intranode diffusivity measured in Holcman et al., 2018, D≈0.6 µm2 s−1. We include interactions between particles and walls by assuming that particles perfectly reflect off walls (i.e. elastic collisions). The particles are modelled as rigid spheres of diameter 5 nm, and the size of the particle matters only during elastic collisions with the walls of the tubules. As relevant in the limit of low volume fraction, we neglect hydrodynamic interactions between particles and perform ensemble averaging of the trajectories of many independent particles.
+$$
+𝐱_{n+1}=𝐱_{n}+𝐔(𝐱_{n},t)Δt+𝐗(Δt),
+$$
 
-When a particle enters a node, we model its dynamics as follows. We consider a particle to have entered a node only if it has reached the end of a tubule, say of length l, at which instance we assign the particle to the node point (i.e. the single-point associated with the node in the graph description of the ER network). Although nodes contain a three-dimensional volume, their typical nodal length scale is of the order R≪l, and thus approximating them by point nodes is appropriate on the scale of the whole network. To decide towards which of the connected tubules the particle leaves the node, we estimate the values of the Péclet number Pe in each of the tubules. We define a local Péclet Pei=UiR/D where Ui is the mean flow velocity through tubule i, with Ui>0 for flow out of the node and Ui≤0 otherwise. We then assume that the particle enters a neighbouring tubule i connected to the node with a probability proportional to max⁡(Pei+1,0). This ensures that we have the expected behaviour in both limits of Pe: at high (positive) Péclet numbers, the probability is proportional to the flow speeds in each of the connected tubules, while at low Péclet the exit of the node is limited by diffusion and thus the exit is equally likely in each tubule.
+where $𝐔$ is the instantaneous flow velocity, and the random noise term $𝐗(Δt)$ is drawn from a zero-mean Gaussian with variance $⟨𝐗(Δt)𝐗(Δt)⟩=2DΔt𝐈$, where $D$ is the Brownian diffusivity of the particle. In our simulations, we take the diffusion constant to be the mean intranode diffusivity measured in Holcman et al., 2018, $D≈0.6$ µm2 s−1. We include interactions between particles and walls by assuming that particles perfectly reflect off walls (i.e. elastic collisions). The particles are modelled as rigid spheres of diameter 5 nm, and the size of the particle matters only during elastic collisions with the walls of the tubules. As relevant in the limit of low volume fraction, we neglect hydrodynamic interactions between particles and perform ensemble averaging of the trajectories of many independent particles.
 
-## Data processing: instantaneous speeds and average edge traversal speeds
+When a particle enters a node, we model its dynamics as follows. We consider a particle to have entered a node only if it has reached the end of a tubule, say of length $l$, at which instance we assign the particle to the node point (i.e. the single-point associated with the node in the graph description of the ER network). Although nodes contain a three-dimensional volume, their typical nodal length scale is of the order $R≪l$, and thus approximating them by point nodes is appropriate on the scale of the whole network. To decide towards which of the connected tubules the particle leaves the node, we estimate the values of the Péclet number $Pe$ in each of the tubules. We define a local Péclet $Pe_{i}=U_{i}R/D$ where $U_{i}$ is the mean flow velocity through tubule $i$, with $U_{i}>0$ for flow out of the node and $U_{i}\leq0$ otherwise. We then assume that the particle enters a neighbouring tubule $i$ connected to the node with a probability proportional to $max⁡(Pe_{i}+1,0)$. This ensures that we have the expected behaviour in both limits of $Pe$: at high (positive) Péclet numbers, the probability is proportional to the flow speeds in each of the connected tubules, while at low Péclet the exit of the node is limited by diffusion and thus the exit is equally likely in each tubule.
 
-During each simulation, we compute the edge traversal speeds as follows. A particle is defined to traverse an edge (i,j) if it travels from node (i.e. junction) i to node j, or from j to i, without visiting i or j in between. The corresponding edge traversal time is then the time between the arrival at the target node and the most recent departure from the node of origin. The edge traversal speed is naturally defined as the length of the tubule (i,j) divided by the edge traversal time.
+### Data processing: instantaneous speeds and average edge traversal speeds
 
-The average edge traversal speed associated with an edge (i,j) is then defined as the mean over all edge traversal events across (i,j) of the edge traversal speeds.
+During each simulation, we compute the edge traversal speeds as follows. A particle is defined to traverse an edge $(i,j)$ if it travels from node (i.e. junction) $i$ to node $j$, or from $j$ to $i$, without visiting $i$ or $j$ in between. The corresponding edge traversal time is then the time between the arrival at the target node and the most recent departure from the node of origin. The edge traversal speed is naturally defined as the length of the tubule $(i,j)$ divided by the edge traversal time.
 
-In addition, we also compute for each particle the ‘instantaneous’ speeds defined by Vn=|𝐗(tn+1)−𝐗(tn)|/Δt, where tn=nΔt with Δt=18 ms, which is the same temporal resolution as in the particle tracking carried out in Holcman et al., 2018.
+The average edge traversal speed associated with an edge $(i,j)$ is then defined as the mean over all edge traversal events across $(i,j)$ of the edge traversal speeds.
 
-## Incorporating slip boundary conditions
+In addition, we also compute for each particle the ‘instantaneous’ speeds defined by $V_{n}=|𝐗(t_{n+1})−𝐗(t_{n})|/Δt$, where $t_{n}=nΔt$ with $Δt=18$ ms, which is the same temporal resolution as in the particle tracking carried out in Holcman et al., 2018.
 
-The methodology we have detailed thus far assumes no-slip boundary conditions at the tubule walls for the fluid flow. However, the membrane-bound lipids themselves could also flow in response to the nanoscale luminal flows. This may be modelled by introducing a finite slip boundary condition on the tubule wall. The slip boundary conditions with a slip length λ≥0 at the wall r=a(z,t) are given by(21)u=−λ∂u∂r,
+### Incorporating slip boundary conditions
 
-and (𝐮−∂a∂t𝐞r)⋅𝐧=0, with 𝐧=∂a∂z𝐞z−𝐞r, which simplifies to(22)v−∂a∂zu=∂a∂t.
+The methodology we have detailed thus far assumes no-slip boundary conditions at the tubule walls for the fluid flow. However, the membrane-bound lipids themselves could also flow in response to the nanoscale luminal flows. This may be modelled by introducing a finite slip boundary condition on the tubule wall. The slip boundary conditions with a slip length $\lambda\geq0$ at the wall $r=a(z,t)$ are given by
 
-We may then derive the long-wavelength solution for the flow field inside an axisymmetric deforming tubule as follows. Using an ansatz for the axial component u that is motivated by the uniform-radius Poiseuille flow with slip,(23)u(r,z,t)=21+4λa(z,t)Q(z,t)πa(z,t)2[1−(ra(z,t))2+2λa(z,t)],
+$$
+u=−\lambda\frac{∂u}{∂r},
+$$
 
-we may solve the incompressibility condition 1r∂∂r(rv)+∂u∂z=0. Regularity at r=0 constrains the integration constant to be zero, yielding(24)v(r,z,t)=11+4λa(z,t)∂a(z,t)∂tra(z,t)[2−(ra(z,t))2+4λa(z,t)]+21+4λa(z,t)∂a∂zQ(z,t)πa(z,t)2ra(z,t){1+3λ−(ra(z,t))2−λa(z,t)11+4λa(z,t)[4λa(z,t)+2−(ra(z,t))2]},
+and $(𝐮−\frac{∂a}{∂t}𝐞_{r})⋅𝐧=0$, with $𝐧=\frac{∂a}{∂z}𝐞_{z}−𝐞_{r}$, which simplifies to
+
+$$
+v−\frac{∂a}{∂z}u=\frac{∂a}{∂t}.
+$$
+
+We may then derive the long-wavelength solution for the flow field inside an axisymmetric deforming tubule as follows. Using an ansatz for the axial component $u$ that is motivated by the uniform-radius Poiseuille flow with slip,
+
+$$
+u(r,z,t)=\frac{2}{1+\frac{4\lambda}{a(z,t)}}\frac{Q(z,t)}{\pia(z,t)^{2}}[1−(\frac{r}{a(z,t)})^{2}+\frac{2\lambda}{a(z,t)}],
+$$
+
+we may solve the incompressibility condition $\frac{1}{r}\frac{∂}{∂r}(rv)+\frac{∂u}{∂z}=0$. Regularity at $r=0$ constrains the integration constant to be zero, yielding
+
+$$
+v(r,z,t)=\frac{1}{1+\frac{4\lambda}{a(z,t)}}\frac{∂a(z,t)}{∂t}\frac{r}{a(z,t)}[2−(\frac{r}{a(z,t)})^{2}+\frac{4\lambda}{a(z,t)}]+\frac{2}{1+\frac{4\lambda}{a(z,t)}}\frac{∂a}{∂z}\frac{Q(z,t)}{\pia(z,t)^{2}}\frac{r}{a(z,t)}{1+3\lambda−(\frac{r}{a(z,t)})^{2}−\frac{\lambda}{a(z,t)}\frac{1}{1+\frac{4\lambda}{a(z,t)}}[\frac{4\lambda}{a(z,t)}+2−(\frac{r}{a(z,t)})^{2}]},
+$$
 
 which automatically satisfies the boundary condition in Equation 22. Note that the mass conservation equations are not affected by the introduction of a slip length.
 
-Using the new solution for u, the modified Hagen–Poiseuille expression with slip may be derived as before to be(25)Δp=−8μπ{L1R4+L64λ3(R−b)[log⁡(1+4λ/b1+4λ/R)−4λb(1−2λb)+4λR(1−2λR)]}Q1−8μπ{L2R4+L64λ3(R−b)[log⁡(1+4λ/b1+4λ/R)−4λb(1−2λb)+4λR(1−2λR)]}Q4,
+Using the new solution for $u$, the modified Hagen–Poiseuille expression with slip may be derived as before to be
 
-which does recover the no-slip result as λ→0.
+$$
+Δp=−\frac{8\mu}{\pi}{\frac{L_{1}}{R^{4}}+\frac{L}{64\lambda^{3}(R−b)}[log⁡(\frac{1+4\lambda/b}{1+4\lambda/R})−\frac{4\lambda}{b}(1−\frac{2\lambda}{b})+\frac{4\lambda}{R}(1−\frac{2\lambda}{R})]}Q_{1}−\frac{8\mu}{\pi}{\frac{L_{2}}{R^{4}}+\frac{L}{64\lambda^{3}(R−b)}[log⁡(\frac{1+4\lambda/b}{1+4\lambda/R})−\frac{4\lambda}{b}(1−\frac{2\lambda}{b})+\frac{4\lambda}{R}(1−\frac{2\lambda}{R})]}Q_{4},
+$$
+
+which does recover the no-slip result as $\lambda→0$.
 
 These results may then be used to simulate particle transport with slip boundary conditions. In Figure 3a, we plot the distributions of average edge traveral speeds obtained from simulations of a C1 network pinching with the original pinch parameters from Holcman et al., 2018 for four different values of the boundary slip length. In Figure 3b, we further display the profiles of the longitudinal flow (Equation 23) for different slip lengths with the volume flux fixed.
 
-## Estimate of forces required for pinches
+### Estimate of forces required for pinches
 
 In this section, we derive an order-of-magnitude estimate for the forces required to pinch an ER tubule.
 
-We first estimate the difference in the membrane’s elastic energy, ΔE=Epinched−Eunpinched, between the pinched (Epinched) and unpinched configurations (Eunpinched). In the absence of spontaneous curvature, the Helfrich free energy h per unit area of a membrane is given by(26)h=kc2(2H)2+k‾K,
+We first estimate the difference in the membrane’s elastic energy, $ΔE=E_{pinched}−E_{unpinched}$, between the pinched ($E_{pinched}$) and unpinched configurations ($E_{unpinched}$). In the absence of spontaneous curvature, the Helfrich free energy $h$ per unit area of a membrane is given by
 
-where kc and k‾ are bending rigidities, H is the mean curvature, and K is the Gaussian curvature (Helfrich, 1973). The mean and Gaussian curvatures may be expressed in terms of the principal curvatures κ1,κ2 as H=(κ1+κ2)/2 and K=κ1κ2. We take κ1 and κ2 to be the principal curvatures in the directions normal and parallel, respectively, to the tubule’s longitudinal axis.
+$$
+h=\frac{k_{c}}{2}(2H)^{2}+k‾K,
+$$
 
-The dominant contribution to ΔE is from Epinched, specifically from the region near the centre of the pinch, taken to be at z=0, where the tubule radius is smallest. We have κ1=1/a(z,t) and κ2=O(R/L2), yielding H=1/2a+O(R/L2) and K=O(R/aL2). The dominant contribution to the membrane energy E=2π∫−LLhadz is therefore from H, in a neighbourhood of z=0. Since real pinches do not have kinks, a linear term, for the purposes of estimating membrane energy, is unphysical, and we expect a(z,t0)=b0+O(z2) near z=0, where b0 is the pinch radius in the centre of the pinch in the maximally contracted state and t0 denotes a time at which the tubule is in a pinched state. We may therefore write a(z)=b0+Rz2/L2 to obtain an order-of-magnitude estimate of the membrane energy in the pinched state.
+where $k_{c}$ and $k‾$ are bending rigidities, $H$ is the mean curvature, and $K$ is the Gaussian curvature (Helfrich, 1973). The mean and Gaussian curvatures may be expressed in terms of the principal curvatures $κ_{1},κ_{2}$ as $H=(κ_{1}+κ_{2})/2$ and $K=κ_{1}κ_{2}$. We take $κ_{1}$ and $κ_{2}$ to be the principal curvatures in the directions normal and parallel, respectively, to the tubule’s longitudinal axis.
 
-Evaluating the integral for Epinched then yields the leading-order estimate(27)ΔE∼kcLb0R,
+The dominant contribution to $ΔE$ is from $E_{pinched}$, specifically from the region near the centre of the pinch, taken to be at $z=0$, where the tubule radius is smallest. We have $κ_{1}=1/a(z,t)$ and $κ_{2}=O(R/L^{2}),$ yielding $H=1/2a+O(R/L^{2})$ and $K=O(R/aL^{2})$. The dominant contribution to the membrane energy $E=2\pi\int_{−L}^{L}hadz$ is therefore from $H$, in a neighbourhood of $z=0$. Since real pinches do not have kinks, a linear term, for the purposes of estimating membrane energy, is unphysical, and we expect $a(z,t_{0})=b_{0}+O(z^{2})$ near $z=0$, where $b_{0}$ is the pinch radius in the centre of the pinch in the maximally contracted state and $t_{0}$ denotes a time at which the tubule is in a pinched state. We may therefore write $a(z)=b_{0}+Rz^{2}/L^{2}$ to obtain an order-of-magnitude estimate of the membrane energy in the pinched state.
 
-We may take kc,k‾∼50kBT (kB is the Boltzmann constant times and T the room temperature) (Faizi et al., 2019), with estimate values R=30nm and L=70nm. The minimum pinch radius b0 may be estimated to be 10 nm allowing for membrane thickness and incomplete squeeze, yielding(28)ΔE∼8×10−19J.
+Evaluating the integral for $E_{pinched}$ then yields the leading-order estimate
+
+$$
+ΔE∼k_{c}\frac{L}{\sqrt{b_{0}R}},
+$$
+
+We may take $k_{c},k‾∼50k_{B}T$ ($k_{B}$ is the Boltzmann constant times and $T$ the room temperature) (Faizi et al., 2019), with estimate values $R=30nm$ and $L=70nm$. The minimum pinch radius $b_{0}$ may be estimated to be 10 nm allowing for membrane thickness and incomplete squeeze, yielding
+
+$$
+ΔE∼8\times10^{−19}J.
+$$
 
 The hydrodynamic contribution to the energy expenditure during a pinch may be calculated as the sum of the dissipation inside the pinch and in the rest of the network (see Energetic cost estimate for contracting peripheral sheets for an analogous calculation for a contracting peripheral sheet). We find that the hydrodynamic contribution is negligible compared to the elastic component of the work done to pinch a tubule.
 
-An estimate for the force required to pinch the tubule may then finally be obtained as F∼ΔE/R∼30pN.
+An estimate for the force required to pinch the tubule may then finally be obtained as $F∼ΔE/R∼30pN$.
 
-## Derivation of theoretical bounds for active flows driven by pinching tubules
+### Derivation of theoretical bounds for active flows driven by pinching tubules
 
-## Advection due to a single pinch
+#### Advection due to a single pinch
 
-In this section, we calculate an upper bound for the axial distance Δz a particle can be advected by the flow produced by an individual pinch. Recall the formula for the volume ‘source’ due to a pinch,(29)q=−23πb˙L(R+2b).
+In this section, we calculate an upper bound for the axial distance $Δz$ a particle can be advected by the flow produced by an individual pinch. Recall the formula for the volume ‘source’ due to a pinch,
 
-Among all possible ways for a particle to be transported by a pinch, an upper bound on the transport distance Δz≤Δzmax can be reached if all of the following conditions are satisfied: (1) All of the source flows to one side of the pinch (i.e. there is no leakage on the other side); (2) The particle travels outside the pinching region (axial flows within the pinching region produce smaller advective displacements than those outside, as may be verified numerically); (3) The particle travels along the centreline of the tubule (i.e. at twice the cross-section averaged flow velocity, a standard Poiseuille result); (4) The minimum pinch radius b0 (recall from Figure 10) is 0.
+$$
+q=−\frac{2}{3}\pib˙L(R+2b).
+$$
 
-Under conditions (1) and (2), the cross-section averaged speed corresponding to maximal transport generated from a single pinch can then be computed using Equation 29 as(30)πR2U‾(t)=−23πb˙L(R+2b).
+Among all possible ways for a particle to be transported by a pinch, an upper bound on the transport distance $Δz\leqΔz_{max}$ can be reached if all of the following conditions are satisfied: (1) All of the source flows to one side of the pinch (i.e. there is no leakage on the other side); (2) The particle travels outside the pinching region (axial flows within the pinching region produce smaller advective displacements than those outside, as may be verified numerically); (3) The particle travels along the centreline of the tubule (i.e. at twice the cross-section averaged flow velocity, a standard Poiseuille result); (4) The minimum pinch radius $b_{0}$ (recall from Figure 10) is 0.
 
-Using condition (3), the position of the particle along the centreline z(t) satisfies then the ordinary differential equation(31)z˙=2U‾(t)=−4L3R2b˙(R+2b).
+Under conditions (1) and (2), the cross-section averaged speed corresponding to maximal transport generated from a single pinch can then be computed using Equation 29 as
 
-Integrating this equation from t=0 (start of contraction, with b(0)=R) to T (end of contraction, with b(T)=b0) then leads to(32)Δz=8L3(1−b02R−b022R2).
+$$
+\piR^{2}U‾(t)=−\frac{2}{3}\pib˙L(R+2b).
+$$
 
-The value of Δz is maximised when b0=0 (i.e. when condition (4) holds), yielding the upper bound(33)Δz≤Δzmax=83L.
+Using condition (3), the position of the particle along the centreline $z(t)$ satisfies then the ordinary differential equation
 
-## Extension to nonlinear interactions between two pinches
+$$
+z˙=2U‾(t)=−\frac{4L}{3R^{2}}b˙(R+2b).
+$$
+
+Integrating this equation from $t=0$ (start of contraction, with $b(0)=R$) to $T$ (end of contraction, with $b(T)=b_{0}$) then leads to
+
+$$
+Δz=\frac{8L}{3}(1−\frac{b_{0}}{2R}−\frac{b_{0}^{2}}{2R^{2}}).
+$$
+
+The value of $Δz$ is maximised when $b_{0}=0$ (i.e. when condition (4) holds), yielding the upper bound
+
+$$
+Δz\leqΔz_{max}=\frac{8}{3}L.
+$$
+
+#### Extension to nonlinear interactions between two pinches
 
 An isolated pinch is only capable of reciprocal motions. The simplest system capable of producing non-reciprocal motions is illustrated in Figure 5 and consists of two pinch sites arranged in series near the midpoint of a long horizontal tubule.
 
 We may calculate an upper bound on the net particle displacement that can be achieved after both pinch sites pinch exactly once. We make the assumptions (2)–(4), and in addition, allow pinches to spend extended amounts of time in their completely closed state; any deviation from these assumptions will result in net transport that is further reduced.
 
-How can we maximise the positive (i.e. rightward in Figure 5) particle displacements induced by the contractions, and minimise the magnitude of the negative (leftward) displacement induced by relaxations? As in the figure, let us denote the pinch on the left ‘pinch 1’ and that on the right ‘pinch 2’. Pinch 1 produces maximum positive displacement (magnitude 4L/3, i.e. half of the optimal value from Equation 33) when pinch 2 is completely open, that is, when the hydrodynamic resistance to its right is minimal. Pinch 2 then produces maximum positive displacement (of magnitude 8L/3, i.e. the optimal value in Equation 33) when pinch 1 is completely closed and all pinch-induced flow continues to be directed rightwards. Similarly, pinch 1 produces minimal negative displacement when pinch 2 is completely closed (zero average displacement, since no flow is then allowed to escape to the right of pinch 2), while pinch 2 then produces a negative displacement of magnitude 4L/3 to the left when pinch 1 is completely open. These optima can be achieved by the non-reciprocal sequence of motions illustrated in Figure 5: close pinch 1, close pinch 2, open pinch 1, and open pinch 2. The coordination between two pinches can therefore be used to generate the net displacement of 8L/3 equal to the theoretical upper bound from Equation 33.
+How can we maximise the positive (i.e. rightward in Figure 5) particle displacements induced by the contractions, and minimise the magnitude of the negative (leftward) displacement induced by relaxations? As in the figure, let us denote the pinch on the left ‘pinch 1’ and that on the right ‘pinch 2’. Pinch 1 produces maximum positive displacement (magnitude $4L/3$, i.e. half of the optimal value from Equation 33) when pinch 2 is completely open, that is, when the hydrodynamic resistance to its right is minimal. Pinch 2 then produces maximum positive displacement (of magnitude $8L/3$, i.e. the optimal value in Equation 33) when pinch 1 is completely closed and all pinch-induced flow continues to be directed rightwards. Similarly, pinch 1 produces minimal negative displacement when pinch 2 is completely closed (zero average displacement, since no flow is then allowed to escape to the right of pinch 2), while pinch 2 then produces a negative displacement of magnitude $4L/3$ to the left when pinch 1 is completely open. These optima can be achieved by the non-reciprocal sequence of motions illustrated in Figure 5: close pinch 1, close pinch 2, open pinch 1, and open pinch 2. The coordination between two pinches can therefore be used to generate the net displacement of $8L/3$ equal to the theoretical upper bound from Equation 33.
 
-## Modelling of alternative flow generation mechanisms
+### Modelling of alternative flow generation mechanisms
 
 We have described in detail our modelling of a network driven by the pinching of tubules. In this study, we explore two other flow generation mechanisms: the contraction of tubular junctions and the contraction of ER sheets. Our model for pinching tubules is readily generalised to account for these mechanisms, as we describe below.
 
-## Experimental estimates of junction volumes
+#### Experimental estimates of junction volumes
 
 From fluorescence microscopy images of ER networks, we measure the fluorescence intensity of junctions (i.e. the number of pixels in a junction multiplied by the mean intensity per pixel). We can then translate this intensity into an estimate of junction volume, assuming that intensity is directly proportional to volume. In order to calibrate the fluorescence intensity, we use our measurements for tubules. Specifically, we use the measured intensities of tubules and their known volumes, obtained by measurements of tubule lengths and the assumption that they are cylinders of radius 30 nm, in order to determine the proportionality constant to convert between pixel intensity and volume. Our new measurement of the intensities of the junctions then allows us to obtain estimates of their volumes; we obtain twelve values, ranging between 0.0020 and 0.0081 µm3, with a mean of 0.045 µm3 and an SD of 0.0021 µm3.
 
-## Mathematical modelling of contractions of tubular junctions
+#### Mathematical modelling of contractions of tubular junctions
 
-To include the contribution of tubular junctions into the model (Figure 1c), we assume that in addition to the pinch sites along tubules, each tubular junction pinches independently of other tubules and other tubular junctions. Given a junction, we assume that it expels the same volume ΔV of fluid during a contraction for all its pinches (and takes in the same volume when it relaxes). Each pinch is assumed to create a sinusoidal flow source, so a pinch lasting for a time 2T produces a flow rate S(t)=ΔVsin⁡(πt/T)π/2T at a time t measured from the beginning of the pinch, where the numerical factors in S(t) are chosen such that the volume expelled during a contraction is indeed ∫0TS(t)dt=ΔV. We accommodate the flows from the junctions mathematically by modifying our K1 equations, Equation 17, to allow the normal nodes to also carry non-zero sources (as opposed to just the pinch nodes, as was the case before); the other equations in the model remain unchanged.
+To include the contribution of tubular junctions into the model (Figure 1c), we assume that in addition to the pinch sites along tubules, each tubular junction pinches independently of other tubules and other tubular junctions. Given a junction, we assume that it expels the same volume $ΔV$ of fluid during a contraction for all its pinches (and takes in the same volume when it relaxes). Each pinch is assumed to create a sinusoidal flow source, so a pinch lasting for a time $2T$ produces a flow rate $S(t)=ΔVsin⁡(\pit/T)\pi/2T$ at a time $t$ measured from the beginning of the pinch, where the numerical factors in $S(t)$ are chosen such that the volume expelled during a contraction is indeed $\int_{0}^{T}S(t)dt=ΔV$. We accommodate the flows from the junctions mathematically by modifying our K1 equations, Equation 17, to allow the normal nodes to also carry non-zero sources (as opposed to just the pinch nodes, as was the case before); the other equations in the model remain unchanged.
 
-## Mathematical modelling of contractions of perinuclear sheets
+#### Mathematical modelling of contractions of perinuclear sheets
 
-In the tubule-pinching model, we included M exit nodes located towards the exterior of the network and through which flow could enter and exit the system in order to conserve mass. To account for the connection to a perinuclear sheet (Figure 1f), we now assign a number of these exit nodes, denoted M2<M, to be ‘sheet nodes’, i.e. nodes which are directly connected to a perinuclear sheet, so that a number M1=M−M2>0 of exit nodes remain. This is illustrated in Figure 12, where we show the C1 network from Figure 9 with both sheet nodes (blue asterisks) and exit nodes (red squares).
+In the tubule-pinching model, we included $M$ exit nodes located towards the exterior of the network and through which flow could enter and exit the system in order to conserve mass. To account for the connection to a perinuclear sheet (Figure 1f), we now assign a number of these exit nodes, denoted $M_{2}<M$, to be ‘sheet nodes’, i.e. nodes which are directly connected to a perinuclear sheet, so that a number $M_{1}=M−M_{2}>0$ of exit nodes remain. This is illustrated in Figure 12, where we show the C1 network from Figure 9 with both sheet nodes (blue asterisks) and exit nodes (red squares).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig12-v1.jpg)
 
-**Figure 12.:** Figure 9 with  exit nodes (red squares) and M1=13 perinuclear sheet nodes (blue asterisks).M2=9
+**Figure 12.:** Illustration of the C1 network from Figure 9 with $M_{1}=13$ exit nodes (red squares) and $M_{2}=9$ perinuclear sheet nodes (blue asterisks).
 
-A sheet contraction + relaxation lasting a time 2T produces a total source Ssheet(t)=Vsheetπsin⁡(πt/T)/2T at a time t from the beginning of the pinch, where again, the integral of Ssheet over a contraction gives a volume Vsheet of fluid expelled by the sheet.
+A sheet contraction + relaxation lasting a time $2T$ produces a total source $S_{sheet}(t)=V_{sheet}\pisin⁡(\pit/T)/2T$ at a time $t$ from the beginning of the pinch, where again, the integral of $S_{sheet}$ over a contraction gives a volume $V_{sheet}$ of fluid expelled by the sheet.
 
-Similarly to the mathematical model with tubular pinches only, our independent variables are the E tubule fluxes, the M1 sources at the exit nodes, and the M2 sources at the sheet nodes. As before, the K1 (Equation 17) and K2 (Equation 18) equations give us E+1 equations. The requirement (analogous to Equation 19) that the exit nodes are at the same mechanical pressure gives us M1−1 equations. We make the additional assumption that the sheet nodes are all at the same mechanical pressure (i.e. that they are connected to the same reservoir), which provides an additional M2−1 equations. Requiring that the sources at the sheet nodes sum to the prescribed flow rate Ssheet yields one additional equation, so we again have a system of E+M independent linear equations.
+Similarly to the mathematical model with tubular pinches only, our independent variables are the $E$ tubule fluxes, the $M_{1}$ sources at the exit nodes, and the $M_{2}$ sources at the sheet nodes. As before, the K1 (Equation 17) and K2 (Equation 18) equations give us $E+1$ equations. The requirement (analogous to Equation 19) that the exit nodes are at the same mechanical pressure gives us $M_{1}−1$ equations. We make the additional assumption that the sheet nodes are all at the same mechanical pressure (i.e. that they are connected to the same reservoir), which provides an additional $M_{2}−1$ equations. Requiring that the sources at the sheet nodes sum to the prescribed flow rate $S_{sheet}$ yields one additional equation, so we again have a system of $E+M$ independent linear equations.
 
-## Experimental estimates of volumes of peripheral sheets
+#### Experimental estimates of volumes of peripheral sheets
 
 To model the contraction of peripheral sheets (Figure 1d), we need to estimate their contained volumes. Using the open-source image analysis software Fiji (Schindelin et al., 2012), we identify nine regions roughly occupied by peripheral sheets in a microscopy image of an ER network; this is illustrated in yellow in Figure 13. We then measure their areas (in µm2) and convert them to volumes by multiplication with the diameter of a tubule, taken as 60 nm, assuming that the effective thickness of a sheet is equal to the tubular diameter. From our nine data values, we finally obtain a mean sheet volume of 0.12 µm3 and an SD of 0.04 µm3.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig13-v1.jpg)
 
-## Energetic cost estimate for contracting peripheral sheets
+### Energetic cost estimate for contracting peripheral sheets
 
 The dominant energy expenditure in deforming a pinching tubule is in creating the large membrane curvatures at the narrowest sections of the pinch, and much less work is done against the small volumes of fluid displaced (Estimate of forces required for pinches). A contracting peripheral sheet, however, displaces a relatively large volume of fluid without attaining the extreme curvatures required in a pinching tubule. We therefore expect, intuitively, that the hydrodynamic contribution will dominate the energy expenditure budget. We now explicitly show this by estimating both elastic and hydrodynamic contributions.
 
-To derive an order-of-magnitude estimate of the energetic cost, we consider an idealisation of a peripheral sheet consisting, in the relaxed state, of two parallel circular membranes r<R located at z=±D, and in the fully contracted state, of two paraboloids at z=±Dr2/R2 (see Figure 14). The membranes deform as paraboloids between these two states, and we denote the ‘vertical’ distance between the two membranes as d(r,t). We take R=0.8 µm, the value consistent with a sheet thickness 2D=60 nm and the mean sheet volume (in the fully relaxed state) of 2πR2D=0.12 µm3 (see estimation in Experimental estimates of volumes of peripheral sheets).
+To derive an order-of-magnitude estimate of the energetic cost, we consider an idealisation of a peripheral sheet consisting, in the relaxed state, of two parallel circular membranes $r<R$ located at $z=\pmD$, and in the fully contracted state, of two paraboloids at $z=\pmDr^{2}/R^{2}$ (see Figure 14). The membranes deform as paraboloids between these two states, and we denote the ‘vertical’ distance between the two membranes as $d(r,t)$. We take $R=0.8$ µm, the value consistent with a sheet thickness $2D=60$ nm and the mean sheet volume (in the fully relaxed state) of $2\piR^{2}D=0.12$ µm3 (see estimation in Experimental estimates of volumes of peripheral sheets).
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/93518/elife-93518-fig14-v1.jpg)
 
-To estimate the elastic contribution, we present an argument similar to the one carried out in Estimate of forces required for pinches. In the fully contracted state, the principal curvatures of one membrane scales as ∼2D/R2, so the Gaussian curvature K∼4D2/R4 and the mean curvature H∼2D/R2, yielding the Helfrich energy density h∼k[2H2+K]∼12kD2/R4, where k is the typical bending rigidity. The total bending energy of the fully contracted membrane is then E∼πR2h∼2×10−20J. In the relaxed state, the membranes are flat and have zero bending energy. Thus, the total energy required to contract the two membranes can be estimated as(34)ΔE≈4×10−20J.
+To estimate the elastic contribution, we present an argument similar to the one carried out in Estimate of forces required for pinches. In the fully contracted state, the principal curvatures of one membrane scales as $∼2D/R^{2}$, so the Gaussian curvature $K∼4D^{2}/R^{4}$ and the mean curvature $H∼2D/R^{2}$, yielding the Helfrich energy density $h∼k[2H^{2}+K]∼12kD^{2}/R^{4}$, where $k$ is the typical bending rigidity. The total bending energy of the fully contracted membrane is then $E∼\piR^{2}h∼2\times10^{−20}J$. In the relaxed state, the membranes are flat and have zero bending energy. Thus, the total energy required to contract the two membranes can be estimated as
+
+$$
+ΔE≈4\times10^{−20}J.
+$$
 
 To estimate the hydrodynamic contribution, we first note that the work done instantaneously by the contracting sheet against the fluid, of dynamic viscosity μ, say, is the sum of dissipation rate in the sheet itself and the dissipation rate in the rest of the ER network outside the sheet due to the sheet-induced flows. Any work done against the fluid outside the ER network is neglected since flows decay over short length scales across the network.
 
-We first consider the contribution from within the sheet. We may use lubrication theory to estimate the flows inside a contracting peripheral sheet since the sheet is fairly flat. The leading-order lubrication flow between the contracting membranes (located at z=±d(r,t)) is in the radial direction, and given by ur=−1μ∂p∂r(d2−z2), where the unknown radial pressure gradient ∂p∂r may be calculated from mass conservation 2πr∫−ddurdz=−∂∂t(∫0r4πr′d(r′,t)dr′), thus yielding a radial velocity(35)ur=−3∫0rr′d˙dr′2rd3(d2−z2).
+We first consider the contribution from within the sheet. We may use lubrication theory to estimate the flows inside a contracting peripheral sheet since the sheet is fairly flat. The leading-order lubrication flow between the contracting membranes (located at $z=\pmd(r,t)$) is in the radial direction, and given by $u_{r}=−\frac{1}{\mu}\frac{∂p}{∂r}(d^{2}−z^{2})$, where the unknown radial pressure gradient $\frac{∂p}{∂r}$ may be calculated from mass conservation $2\pir\int_{−d}^{d}u_{r}dz=−\frac{∂}{∂t}(\int_{0}^{r}4\pir^{′}d(r^{′},t)dr^{′})$, thus yielding a radial velocity
 
-The dominant contribution to the rate-of-strain tensor is erz≈12∂ur∂z∼3R2DT, where T∼0.5 s is the contraction duration (in the main text we considered a value of T of 2.5 or 5 times larger than the experimentally measured pinch duration; here we take 5). Therefore, the total work done over a contraction scales as the total dissipation rate times the contraction duration T, and we scale(36)Winside∼2μ9R24D2T2×2πR2DT=9πμR4DT.
+$$
+u_{r}=−\frac{3\int_{0}^{r}r^{′}d˙dr^{′}}{2rd^{3}}(d^{2}−z^{2}).
+$$
 
-Taking the viscosity of the intra-luminal fluid to be 10 times that of water, this is computed to be(37)Winside∼8×10−18J.
+The dominant contribution to the rate-of-strain tensor is $e_{rz}≈\frac{1}{2}\frac{∂u_{r}}{∂z}∼\frac{3R}{2DT}$, where $T∼0.5$ s is the contraction duration (in the main text we considered a value of $T$ of 2.5 or 5 times larger than the experimentally measured pinch duration; here we take 5). Therefore, the total work done over a contraction scales as the total dissipation rate times the contraction duration $T$, and we scale
 
-The dissipation rate in the network outside the sheet may be estimated by calculating the total dissipation rate in an idealised network consisting of ‘generations’ of tubules, each of length 1 µm, with the first generation consisting of three tubules connected to the peripheral sheet, and each tubule in the ith generation branching out into three tubules of the (i+1)th generation ad infinitum. The dissipation rate due to a Poiseuille flow of flux q inside a tubule of length l and radius R may be calculated to be(38)Dtube=8μq2lπR4.
+$$
+W_{inside}∼2\mu\frac{9R^{2}}{4D^{2}T^{2}}\times2\piR^{2}DT=\frac{9\pi\muR^{4}}{DT}.
+$$
 
-Denoting by Q the total volume flux created by the contracting sheet, we may calculate the dissipation rate in the network of tubules by summing the above expression across all the tubules as follows. The ith generation of tubules is comprised of 3i tubules each carrying a flux of Q/3i. Summing the total dissipation rates across all generations gives(39)Dnetwork=∑i=1∞3i8μlπR4(Q3i)2=4μQ2lπR4.
+Taking the viscosity of the intra-luminal fluid to be 10 times that of water, this is computed to be
 
-We may scale Q as Q∼Vs/2T, recalling our assumption that each peripheral sheet contraction expels half of the volume Vs contained in the sheet (which is consistent with the paraboloidal membrane profile we have taken for the fully contracted sheet). The total dissipation over the contraction duration T in this network of tubules is therefore(40)Woutside∼μVs2lπR4T.
+$$
+W_{inside}∼8\times10^{−18}J.
+$$
 
-Scaling the sheet volume with its mean value Vs∼0.12 µm3, we may compute this to be(41)Woutside∼10−16J.
+The dissipation rate in the network outside the sheet may be estimated by calculating the total dissipation rate in an idealised network consisting of ‘generations’ of tubules, each of length 1 µm, with the first generation consisting of three tubules connected to the peripheral sheet, and each tubule in the $i^{th}$ generation branching out into three tubules of the $(i+1)^{th}$ generation ad infinitum. The dissipation rate due to a Poiseuille flow of flux $q$ inside a tubule of length $l$ and radius $R$ may be calculated to be
 
-The total work done during a contraction is therefore W=Winside+Woutside∼10−16J. Given that the energy released by the hydrolysis of one ATP molecule is of the order of 10−19J (Bray, 2001), we thus estimate that each contraction of a peripheral sheet would require on the order of 1000 molecules of ATP.
+$$
+D_{tube}=\frac{8\muq^{2}l}{\piR^{4}}.
+$$
+
+Denoting by $Q$ the total volume flux created by the contracting sheet, we may calculate the dissipation rate in the network of tubules by summing the above expression across all the tubules as follows. The $i^{th}$ generation of tubules is comprised of $3^{i}$ tubules each carrying a flux of $Q/3^{i}$. Summing the total dissipation rates across all generations gives
+
+$$
+D_{network}=\sumi=1∞3^{i}\frac{8\mul}{\piR^{4}}(\frac{Q}{3^{i}})^{2}=\frac{4\muQ^{2}l}{\piR^{4}}.
+$$
+
+We may scale $Q$ as $Q∼V_{s}/2T$, recalling our assumption that each peripheral sheet contraction expels half of the volume $V_{s}$ contained in the sheet (which is consistent with the paraboloidal membrane profile we have taken for the fully contracted sheet). The total dissipation over the contraction duration $T$ in this network of tubules is therefore
+
+$$
+W_{outside}∼\frac{\muV_{s}^{2}l}{\piR^{4}T}.
+$$
+
+Scaling the sheet volume with its mean value $V_{s}∼0.12$ µm3, we may compute this to be
+
+$$
+W_{outside}∼10^{−16}J.
+$$
+
+The total work done during a contraction is therefore $W=W_{inside}+W_{outside}∼10^{−16}J$. Given that the energy released by the hydrolysis of one ATP molecule is of the order of $10^{−19}J$ (Bray, 2001), we thus estimate that each contraction of a peripheral sheet would require on the order of 1000 molecules of ATP.

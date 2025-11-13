@@ -19,16 +19,16 @@
 ### Affiliations
 
 1. Department of Biosciences, The Cell Physiology Lab and “Centro Interuniversitario di Medicina Molecolare e Biofisica Applicata”, Università degli Studi di Milano Milano Italy
-2. https://ror.org/02mh8wx89 Department of Physiology and Pathophysiology, School of Basic Medical Science, Tianjin Medical University Tianjin China
-3. https://ror.org/05dfcz246 School of Integrative Medicine, Tianjin University of Traditional Chinese Medicine Tianjin China
-4. https://ror.org/00a2xv884 College of Pharmaceutical Sciences, Zhejiang University Hangzhou China
-5. https://ror.org/05dfcz246 Institute of Traditional Chinese Medicine Tianjin University of Traditional Chinese Medicine Tianjin China
+2. Department of Physiology and Pathophysiology, School of Basic Medical Science, Tianjin Medical University Tianjin China ([ROR:02mh8wx89](https://ror.org/02mh8wx89))
+3. School of Integrative Medicine, Tianjin University of Traditional Chinese Medicine Tianjin China ([ROR:05dfcz246](https://ror.org/05dfcz246))
+4. College of Pharmaceutical Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+5. Institute of Traditional Chinese Medicine Tianjin University of Traditional Chinese Medicine Tianjin China ([ROR:05dfcz246](https://ror.org/05dfcz246))
 
 † Corresponding author
 
 ## Abstract
 
-Tongmai Yangxin (TMYX) is a complex compound of the Traditional Chinese Medicine (TCM) used to treat several cardiac rhythm disorders; however, no information regarding its mechanism of action is available. In this study we provide a detailed characterization of the effects of TMYX on the electrical activity of pacemaker cells and unravel its mechanism of action. Single-cell electrophysiology revealed that TMYX elicits a reversible and dose-dependent (2/6 mg/ml) slowing of spontaneous action potentials rate (−20.8/–50.2%) by a selective reduction of the diastolic phase (−50.1/–76.0%). This action is mediated by a negative shift of the I f activation curve (−6.7/–11.9 mV) and is caused by a reduction of the cyclic adenosine monophosphate (cAMP)-induced stimulation of pacemaker channels. We provide evidence that TMYX acts by directly antagonizing the cAMP-induced allosteric modulation of the pacemaker channels. Noticeably, this mechanism functionally resembles the pharmacological actions of muscarinic stimulation or β-blockers, but it does not require generalized changes in cytoplasmic cAMP levels thus ensuring a selective action on rate. In agreement with a competitive inhibition mechanism, TMYX exerts its maximal antagonistic action at submaximal cAMP concentrations and then progressively becomes less effective thus ensuring a full contribution of I f to pacemaker rate during high metabolic demand and sympathetic stimulation.
+Tongmai Yangxin (TMYX) is a complex compound of the Traditional Chinese Medicine (TCM) used to treat several cardiac rhythm disorders; however, no information regarding its mechanism of action is available. In this study we provide a detailed characterization of the effects of TMYX on the electrical activity of pacemaker cells and unravel its mechanism of action. Single-cell electrophysiology revealed that TMYX elicits a reversible and dose-dependent (2/6 mg/ml) slowing of spontaneous action potentials rate (−20.8/–50.2%) by a selective reduction of the diastolic phase (−50.1/–76.0%). This action is mediated by a negative shift of the If activation curve (−6.7/–11.9 mV) and is caused by a reduction of the cyclic adenosine monophosphate (cAMP)-induced stimulation of pacemaker channels. We provide evidence that TMYX acts by directly antagonizing the cAMP-induced allosteric modulation of the pacemaker channels. Noticeably, this mechanism functionally resembles the pharmacological actions of muscarinic stimulation or β-blockers, but it does not require generalized changes in cytoplasmic cAMP levels thus ensuring a selective action on rate. In agreement with a competitive inhibition mechanism, TMYX exerts its maximal antagonistic action at submaximal cAMP concentrations and then progressively becomes less effective thus ensuring a full contribution of If to pacemaker rate during high metabolic demand and sympathetic stimulation.
 
 ## Introduction
 
@@ -42,11 +42,23 @@ We first investigated whether TMYX could modify the spontaneous electrical activ
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig1-v1.jpg)
 
-**Figure 1.:** (A) Representative time-courses (top) and sample traces (bottom) of spontaneous action potentials (APs) recorded from rabbit SAN cells in control conditions and in the presence of TMYX (2 and 6 mg/ml). Here and in other figures the arrows indicate the time of recording of the sample traces. (B) Dose-response relationship of the AP rate reduction induced by TMYX; each point represents the mean ± SEM% value obtained at the following doses: 0.2, 0.6, 2, 5, 6, 20, 60 mg/ml (n = 68). The Hill fitting (full line, y = ymax/(1+(k/x)h)) yielded the following values: ymax = 92.7%, k = 4.9 mg/ml, and h = 1.3. (C) Summary of the effects of TMYX on the AP parameters (n = 7–12, details in the Materials and methods) normalized to the corresponding control values. Statistical analysis was carried out prior to normalization, *p < 0.01 vs. control (Student’s paired t-test). Data related to this figure are available in Figure 1—source data 1.Figure 1—source data 1.
+**Figure 1.:** (A) Representative time-courses (top) and sample traces (bottom) of spontaneous action potentials (APs) recorded from rabbit SAN cells in control conditions and in the presence of TMYX (2 and 6 mg/ml). Here and in other figures the arrows indicate the time of recording of the sample traces. (B) Dose-response relationship of the AP rate reduction induced by TMYX; each point represents the mean ± SEM% value obtained at the following doses: 0.2, 0.6, 2, 5, 6, 20, 60 mg/ml (n = 68). The Hill fitting (full line, y = ymax/(1+(k/x)h)) yielded the following values: ymax = 92.7%, k = 4.9 mg/ml, and h = 1.3. (C) Summary of the effects of TMYX on the AP parameters (n = 7–12, details in the Materials and methods) normalized to the corresponding control values. Statistical analysis was carried out prior to normalization, *p < 0.01 vs. control (Student’s paired t-test). Data related to this figure are available in Figure 1—source data 1.
 
 To dissect the action of the drug during the various phases of the AP, we quantitatively evaluated specific AP parameters (early diastolic depolarization [EDD]; AP duration [APD]; maximum diastolic potential [MDP]; take-off potential [TOP]) in the absence and during perfusion of different doses of TMYX (0.2, 0.6, 2, and 6 mg/ml). As shown in Figure 1B, the spontaneous rate was significantly reduced at all doses investigated, and this effect was for the largest part caused by a significant decrease of the EDD (rate: –6.3 ± 1.2%, –8.2 ± 0.9%, –20.8 ± 1.6%, –50.2 ± 6.5%; EDD:–9.7 ± 1.5%, –12.8 ± 4.4%, –50.1 ± 3.7%, –76.0 ± 5.7%). A small increase of the APD was observed at doses ≥ 0.6 mg/ml (6.2 ± 0.8%, 8.7 ± 1.1%, 17.1 ± 3.7%); TOP and MDP were not affected (Figure 1C).
 
 Figure 1 provides evidence that TMYX lowers AP rate mainly by affecting the pacemaker mechanisms governing the EDD process. Since the If current is relevant to the generation of this phase (Bucchi et al., 2007; DiFrancesco, 1993), we wondered whether this current could be a target of TMYX. We initially explored the effects of TMYX both on the voltage dependence and on the maximal conductance of If. To this aim we used a double-pulse protocol which allows to observe the effect of a drug on the current both near the half-activation voltage (–65 mV) and at full activation (–125 mV, Figure 2A). Perfusion of SAN cells with TMYX 6 mg/ml modified the current at both voltages, but in opposite directions: in the sample recordings shown in Figure 2A, at –65 mV the current was reduced by 40.5%, while at –125 mV was increased by 12.9%. This apparently paradoxical behavior was observed in all cells investigated (n = 6 cells) and a possible explanation requires the combination of two contrasting effects: a negative shift of the activation curve and an increase of the maximal conductance. To evaluate this possibility, we carried out a quantitative characterization of these effects. The activation curves of the If current were measured in n = 7 cells before and during TMYX (6 mg/ml) and mean ± SEM values are plotted in Figure 2B. Boltzmann fitting of experimental data confirmed a significant hyperpolarizing shift of the activation curve (11.9 mV, p < 0.01). If considered alone this effect would tend to decrease the contribution of the current to pacemaker depolarization, hence to rate slowing.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative whole-cell currents elicited by a double-step protocol (–65 mV/1.5 s and –125 mV/0.5 s; holding potential –35 mV) before (control) and during drug (TMYX 6 mg/ml) perfusion. (B) Voltage-dependent activation curves obtained in control conditions (filled circles) and during TMYX perfusion (empty circles). Boltzmann fitting (full lines, y = 1/(1 + exp((V−V½)/s))) of mean fractional activation values (n = 7 cells) yielded the following half-activation (V½) and inverse-slope factors (s) parameters: –57.3 and 9.8 mV (control) and –69.2 and 11.3 mV (TMYX); the shift caused by TMYX is statistically significant (p < 0.01, extra sum-of-squares F test). (C) Mean fully activated current/voltage (I/V) relations measured before (filled circles) and during drug perfusion (empty circles, n = 5 cells). Linear fitting yielded reversal potentials of –13.6 and –12.7 mV and slopes of 0.328 and 0.389 (pA/pF)/mV in control and in the presence of TMYX, respectively; the slopes are significantly different (p < 0.01, linear regression analysis test). (D) Steady-state I/V fitting curves obtained by multiplying the activation curves (Boltzmann fitting, panel B) and fully activated I/V relation (linear fitting, panel C) in control condition and in the presence of the drug. Data related to this figure are available in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative whole-cell currents (bottom) elicited by a double-step protocol (top, –65 mV/1.5 s and –125 mV/0.5 s from a holding potential of –35 mV) in control condition and during TMYX (2 mg/ml) perfusion. (B) Voltage-dependent activation curves obtained in control condition and during TMYX perfusion; each data point represents the mean ± SEM fractional activation value at the voltages indicated (n = 6 cells). Fitting of data by the Boltzmann equation (continuous lines) yielded half-activation values (V½) and inverse-slope factors (s) of –56.4 and 7.9 mV in control and –63.1 and 9.2 mV in the presence of TMYX; curves are significantly shifted (p < 0.01, extra sum-of-squares F test). (C) Mean fully activated current/voltage (I/V) relations measured before and during drug perfusion (n = 6 cells). The slope of the linear regression fitting in the presence of TMYX was significantly increased (+7.5%, p < 0.01, linear regression analysis test). (D) Steady-state fitting currents obtained by multiplying the continuous lines shown in panels B (activation curves: Boltzmann fitting) and C (fully activated I/V relation: linear fitting) in control condition and in the presence of the drug. At potentials more positive than the cross-over point (–85 mV), the contribution of the negative shift induced by TMYX (2 mg/ml) is greater than the increment in conductance, while the opposite occurs at more negative potentials. In the pacemaker range of potentials TMYX has the net effect of reducing the contribution of the If current to the diastolic depolarization. Data related to this figure are available in Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Left: Mean ± SEM steady-state current/voltage relation obtained from n = 7 cells in control (filled circles) and during TMYX perfusion (empty circles). Currents were elicited by a train of eight hyperpolarizing steps encompassing the voltage range −20/–110 mV (ΔV between steps, –15 mV); step durations were longer at more depolarized potentials to ensure attainment of complete steady-state. Continuous lines through data points represent the best fitting procedures (obtained using the following equation: Idensity=(a*V + b)*(1/ (1+ exp((V−V½)/s)))) which describes the product of a Boltzmann relation times the fully activated I/V relation. Best fitting yielded the following values: a, 0.339 and 0.394 (pA/pF)/mV; b, 7.663 and 7.296 mV; V½, –51.4 and –64.3 mV; s, 10.2 and 11.5 mV, respectively for control and TMYX conditions. Right: Representative sample traces recorded in control condition and in the presence of TMYX (6 mg/ml) at two different potentials (–65 and –110 mV). In the diastolic depolarization voltage range the net effect of TMYX is a reduction of the If current. Data related to this figure are available in Figure 2—figure supplement 2—source data 1.
 
 To better investigate the TMYX-induced current increase at –125 mV, we measured the fully activated current/voltage (I/V) relation in control condition and in the presence of TMYX (6 mg/ml, n = 5; Figure 2C). Linear fitting of mean ± SEM data confirmed that TMYX increased the slope of the fully activated I/V relation by 18.6%.
 
@@ -55,6 +67,18 @@ Data in Figure 2A, B, and C thus indicate that TMYX exerts functionally opposite
 Taken together, data presented in Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2 reveal that at diastolic voltages TMYX reduces the If contribution by shifting its voltage dependence to more negative values. Since the cholinergic control of the If current, and thus of SAN rate, operates via a similar mechanism, we asked whether one or more components of TMYX could act as muscarinic agonist. To address this point, we compared the effects of TMYX (6 mg/ml) and acetylcholine (ACh, 1 µM) on If and on cell rate, as measured in the absence and presence of the muscarinic blocker atropine (10 µM).
 
 If current traces recorded at –65 mV in control and in the presence of either TMYX (top) or ACh (bottom), delivered alone (left) or in combination with atropine (right), are shown in Figure 3A.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative sample current traces recorded during steps to –65 mV in the presence and in the absence of TMYX (6 mg/ml, top) and acetylcholine (ACh) (1 µM, bottom) delivered alone (left) or in combination with atropine (10 µM, right). (B) Mean ± SEM steady-state current reduction. Atropine did not modify the action of TMYX (TMYX, –34.6 ± 4.9%; TMYX + atropine, –33.5 ± 3.4%, n = 6) but abolished the effect of ACh (ACh, –54.7 ± 4.0%; ACh+ atropine, 1.2% ± 6.9%, n = 6). N.S. Not significant, p = 0.594; *p < 0.01 vs. ACh (Student’s paired t-test). (C) Representative action potentials (APs) recorded in the same condition as in panel A. (D) Mean ± SEM rate reduction. Atropine did not reduce the ability of TMYX to induce cell bradycardia (TMYX, –42.6 ± 5.8%; TMYX + atropine, –37.6 ± 4.8%, n = 6), but abolished the action of ACh (71.5 ± 3.6%) (n = 7). N.S. Not significant, p = 0.807; *p < 0.01 vs. ACh (Student’s paired t-test). Data related to this figure are available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative steady-state time-courses (top) and sample current traces (bottom) recorded at –65 mV for 2.75 s (holding potential, –35 mV) in control condition and in the presence of TMYX (6 mg/ml, left) delivered alone or in combination with the adenosine A1-receptor blocker 1,3-dipropyl-8-cyclopentylxanthine (DPCPX) (1 µM, right). Empty squares represent steady-state current amplitudes recorded during manual adjustment (hyperpolarization) of the holding potential to compensate for the effect of the drugs. (B) Bar-graph of the steady-state current reduction (mean ± SEM %, n = 6): TMYX, –38.1 ± 3.5%; TMYX + DPCPX, –43.6 ± 5.2%. N.S. Not significant, p = 0.111 (Student’s paired t-test). Data related to this figure are available in Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative sample traces of spontaneous action potentials (APs) showing the effect of TMYX (2 mg/ml) in control condition (left) and in the presence of the PKA blocker H-89 (1 µM, right). (B) The box chart plot shows the spontaneous rate of APs (Hz) recorded in the conditions shown in panel A (n = 7 cells; control, 4.9 ± 0.2; TMYX, 3.6 ± 0.3; H-89, 4.4 ± 0.3; H-89+ TMYX, 3.2 ± 0.4. *,§,^ indicate p < 0.05, * vs. control; § vs. TMYX; ^ vs. H89). In the box, the middle line represents the mean value, the extremities indicate the SEM, and the whiskers are the maximum and minimum values. Statistical analysis was carried out using one-way ANOVA followed by Fisher’s LSD post hoc test for repeated measurements. Data related to this figure are available in Figure 3—figure supplement 2—source data 1.
 
 The TMYX-induced reduction of the If current was not modified by atropine (TMYX: –34.6 ± 4.9%, TMYX + atropine: –33.5 ± 3.4%, n = 7), while atropine abolished the effect of ACh (n = 6; Figure 3A and B). In line with the findings on If, we also observed that the muscarinic block did not antagonize the rate-slowing effect elicited by TMYX on SAN cells (TMYX: –42.6 ± 5.8%; TMYX + atropine: –37.6 ± 4.8%, n = 6; Figure 3C and D). On the other hand, atropine abolished the ACh-induced rate slowing (n = 7; Figure 3C and D).
 
@@ -66,6 +90,14 @@ After excluding the involvement of a direct activation of the muscarinic (and ad
 
 To investigate the existence of a possible functional interference between cAMP and TMYX, we performed the experiments shown in Figure 4, where the effect of TMYX (6 mg/ml) on the whole-cell If, measured in the diastolic range of potentials, was assessed in the absence (basal) and in the presence of two concentrations of cAMP in the pipette solution (10, 100 µM).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative time-courses (left) of the steady-state amplitudes of the current recorded at –65 mV/2.75 s (sample traces, right) in control conditions and in the presence of TMYX (6 mg/ml). Experiments were carried out in the absence (top, n = 15), and in the presence of 10 µM (middle, n = 6) and 100 µM (bottom, n = 6) cAMP in the pipette intracellular solution. Empty squares in top and middle panels indicate steady-state currents recorded after manual adjustment of the holding level (ΔV) to compensate for the inhibitory effect induced by TMYX. (B) Bar-graph of the TMYX-induced current reductions (mean ± SEM%) obtained in the three different conditions: TMYX/basal cAMP, –49.1 ± 3.0%, n = 15; TMYX + cAMP 10 µM, –37.9 ± 5.1%, n = 6; TMYX + cAMP 100 µM, –2.3 ± 3.3%, n = 6. *p = 0.049 cAMP 10 µM vs. basal cAMP; *p < 0.01 cAMP 100 µM vs. basal cAMP; ^p < 0.01 cAMP 100 µM vs. cAMP 10 µM (one-way ANOVA followed by Fisher’s LSD post hoc test multiple comparisons). Data related to this figure are available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The bar-graph illustrates the effects of TMYX (6 mg/ml) on the whole-cell If current (elicited at –65 mV) assessed in basal condition, in the presence of the phosphodiesterase inhibitor 3-isobutyl-1-methylxanthine (IBMX), and of IBMX + cAMP. IBMX and cAMP (100 and 10 µM, respectively) were added to the pipette/intracellular solution, while TMYX was externally delivered. Mean ± SEM TMYX-induced current reduction (%) values were: basal, 49.1 ± 3.0%, n = 15; IBMX, 33.4 ± 3.4%, n = 10; IBMX + cAMP, 24.3 ± 2.8%, n = 4. *p < 0.01, IBMX vs. basal; *p < 0.01, IBMX+ cAMP vs. basal. (B) The bar-graph illustrates the effects of TMYX (6 mg/ml) on the whole-cell If current (elicited at –65 mV) measured in basal condition, in the presence of a stimulator of adenylyl cyclase delivered alone (Forskolin) or in combination with cAMP and cAMP + IBMX. Forskolin, cAMP, and IBMX (100, 10, and 100 µM, respectively) were added to the pipette/intracellular solution, while TMYX was externally delivered. Mean ± SEM TMYX-induced current reduction (%) values were: basal, 49.1 ± 3.0%, n = 15; Forsk, 35.9 ± 3.3%, n = 5; Forsk + cAMP, 28.5 ± 4.9%, n = 5; Forsk + cAMP + IBMX, 9.4 ± 3.4%, n = 5. *p = 0.022, Forsk vs. basal; *p < 0.01, Forsk + cAMP vs. basal; *p < 0.01, Forsk + cAMP + IBMX vs. Basal; ^p < 0.01 Forsk + cAMP + IBMX vs. Forsk; §p < 0.01, Forsk+ cAMP + IBMX vs. Forsk + cAMP. Statistical analysis was carried out using one-way ANOVA followed by Fisher’s LSD post hoc test for multiple comparisons. Data related to this figure are available in Figure 4—figure supplement 1—source data 1.
+
 Representative time-courses (left) and current traces (right), recorded in the three different experimental conditions during repetitive hyperpolarizing steps to –65 mV in the absence and presence of TMYX, are presented in Figure 4A. A progressive loss of modulatory efficacy of TMYX clearly appears as the intracellular cAMP content increases. As shown in the bar-graph plots in Figure 4B a quantitative evaluation of the results yielded the following TMYX-induced current reductions (mean ± SEM): basal cAMP, –49.1 ± 3.0%, n = 15; cAMP 10 µM, –37.9 ± 5.1%, n = 6; cAMP 100 µM, –2.3 ± 3.3% n = 6 (all conditions are significantly different, see legend). The modulatory efficacy of the drug, and its dependence upon intracellular cAMP, was also estimated by means of the ΔV method (empty squares in Figure 4A; Material and methods for details) since this analysis allows to assess the shift of the If activation curve (Accili and DiFrancesco, 1996; DiFrancesco et al., 1989). Mean ± SEM TMYX-induced hyperpolarizing ΔV (shift) values were: basal cAMP, 6.3 ± 0.3 mV, n = 15; cAMP 10 µM, 4.5 ± 0.7 mV, n = 6; cAMP 100 µM, 0.45 ± 0.45 mV n = 6 (all significantly different, p < 0.01, one-way ANOVA followed by Fisher’s LSD post hoc test multiple comparisons). However, since, in addition to its effect on the activation curve, TMYX also affects the maximal conductance of the current, the ΔV values measured in the experimental paradigm of Figure 4 represent an underestimation of the absolute shift.
 
 The evidence that the modulatory efficacy of TMYX is counteracted by increasing concentrations of cAMP suggests the intriguing hypothesis of an antagonistic action between these two compounds; additional evidence supporting a mutual interference is presented in Figure 4—figure supplement 1. In this case, the cAMP content of SAN cells was experimentally raised by: (i) inhibiting its degradation using a phosphodiesterase (PDE) inhibitor (IBMX, 100 µM) and (ii) favoring its overproduction using an activator of the adenylyl cyclase (Forskolin, 100 µM). The ability of TMYX (6 mg/ml) to reduce the If current was then quantified in the presence of different combinations of these substances and of cAMP (10 µM). The bar-graphs shown in Figure 4—figure supplement 1A,B confirm the presence of an inverse dependence between cAMP levels and TMYX efficacy. However, these experiments do not provide details on the underlying mechanism.
@@ -74,19 +106,27 @@ We therefore proceeded by taking advantage of the inside-out macropatch configur
 
 To verify this possibility, we first evaluated the shift of the If voltage dependence induced by cAMP using the ΔV method (Accili and DiFrancesco, 1996; DiFrancesco et al., 1989) and then the ability of TMYX to reverse this shift (Figure 5). Inside-out If currents were elicited by a train of hyperpolarizing steps (–105 mV) while membrane patches were exposed to different cAMP concentrations (1, 10, 100 µM) delivered alone and in the presence of TMYX (6 mg/ml). Representative time-courses, current traces, and the corresponding analysis are shown in Figure 5. Exposure to cAMP elicited a dose-dependent increase of the current, which was quantified as the voltage correction necessary to restore steady-state control current levels (ΔVcAMP/Cont: 6.1 ± 0.5, 12.8 ± 0.5, and 13.6 ± 0.9 mV for 1, 10, 100 µM cAMP, respectively; Figure 5A, empty triangles). Addition of TMYX (cAMP+ TMYX) resulted in a reversible reduction of cAMP action quantified as the ΔV correction required to compensate for the effect of TMYX (ΔVTMYX/cAMP: 3.5 ± 0.4, 4.7 ± 0.6, and 0 mV for 1, 10, 100 µM cAMP, respectively; Figure 5A, empty squares). The difference between experimental ΔVcAMP/Cont and ΔVTMYX/cAMP values represents the cAMP-induced shift in the presence of TMYX (ΔV(cAMP+TMYX)/Cont). Dose-dependent ΔVcAMP/Cont (empty triangles) and ΔV(cAMP+TMYX)/Cont (empty circles) values calculated for each patch are plotted in the left panel of Figure 5B, and Hill fittings of data points yielded half-maximal concentrations (k) of 1.17 and 5.66 µM for the two conditions, respectively. To better illustrate the antagonism exerted by TMYX (6 mg/ml) on cAMP, we calculated the TMYX-induced fractional inhibition by normalizing the TMYX-induced inhibition of cAMP action (ΔVTMYX/cAMP) to the corresponding full cAMP modulation (ΔVcAMP/Cont). This procedure was applied both on experimental data points and on the corresponding Hill fittings shown in Figure 5B, left and results are plotted in Figure 5B, right (filled diamonds and dashed line). This distribution demonstrates that in inside-out conditions TMYX antagonizes the effect of cAMP at intermediate (1, 10 µM), but not at high cAMP doses, and the maximal antagonistic effect (63.7%) was observed at a cAMP concentration of 0.8 µM.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sample time-courses (left) and current traces (right) of If amplitudes recorded in inside-out macropatches during hyperpolarizing steps (–105 mV); cAMP (1, 10, 100 µM, n = 4–6) was perfused alone (cAMP) or in combination with a fixed dose of TMYX (6 mg/ml, cAMP + TMYX). Empty triangles and squares represent current amplitudes observed after correcting the applied voltage (ΔV) to compensate for (and evaluate) both the effect of cAMP (triangles) and the ability of TMYX to reduce cAMP modulation (squares). (B) Left: cAMP-induced shifts of the If activation curve obtained in the presence of cAMP alone (cAMP/Cont, empty triangles) and of cAMP+ TMYX ((cAMP+ TMYX)/Cont, empty circles). The continuous lines represent dose-response Hill fittings of experimental data points (cAMP/Cont: k = 1.17 µM and h = 1.30; (cAMP+ TMYX)/Cont: k = 5.66 µM and h = 0.94; 13.6 mV was the maximal shift experimentally measured and was therefore taken as ymax for both conditions). (B) Right: The antagonism exerted by TMYX on cAMP action was calculated as the fractional inhibition of the If current as derived from the Hill fittings (HillcAMP/Cont−Hill(cAMP+TMYX)/Cont)/HillcAMP/Cont and from experimental points (diamond symbols, see text for details). Data related to this figure are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75119/elife-75119-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative If current traces recorded from an inside-out macropatch at a voltage of –105 mV (holding potential, –35 mV) in control condition and in the presence of TMYX (6 mg/ml). The same experiment was repeated in three additional patches and no significant difference in steady-state current amplitude was observed, n = 4; p = 0.12. (B,C) Representative steady-state I/V and g/V curves obtained in an inside-out macropatch sample by applying a slowly hyperpolarizing ramp (from –35 to –145 mV, rate –110 mV/min, B, top) in the absence (control) and in the presence of the drug (TMYX). (D) Box plot showing V½ (top) and gmax (bottom) values obtained from Boltzmann fitting of the g/V curves shown in panel C (n = 4 patches). In the box, the middle line represents the mean value, the extremities stand for SEM, and the whiskers are the maximum and minimum values. Statistical comparison of experimental data revealed that TMYX does not exert any modulatory action on these parameters (V½: control, –113.5 ± 1.0 mV; TMYX, –112.4 ± 2.3 mV, p = 0.451; gmax: control, 0.71 ± 0.21 nS; TMYX, 0.69 ± 0.19 nS, p = 0.528; Student’s paired t-test). Data related to this figure are available in Figure 5—figure supplement 1—source data 1.
+
 ## Discussion
 
 Natural botanical compounds commonly used in TCM have recently become of interest also to modern pharmacological studies whose approach is to scientifically challenge their efficacy and to isolate active molecules that could represent novel acquisitions to the western pharmacopeia (Chen et al., 2006; Tang and Huang, 2013; Tu, 2016). Indeed, several studies have demonstrated the safe and beneficial effects of TCM drugs on different pathologies including cancer and cardiovascular diseases (Efferth et al., 2007; Li et al., 2013; Pommier, 2006). Interestingly, cardiovascular TCM drugs often target ion channels; for example, the antiarrhythmic agent Wenxin Keli binds to atrial Na+ channels according to a mechanism of potential relevance in the treatment of atrial fibrillation (Hu et al., 2016).
 
 In this study we have characterized the effects of TMYX on the properties of pacemaker cells since this drug is used in TCM to treat cardiovascular diseases including cardiac arrhythmias, coronary artery disease (CAD), and angina (Cai et al., 2018; Fan et al., 2016).
 
-## At low doses TMYX mainly controls the EDD and the If current
+### At low doses TMYX mainly controls the EDD and the If current
 
 Our study indicates a reversible and dose-dependent depression of SAN cell rate due to a robust reduction of the slope of the EDD and by a limited prolongation of the APD (Figure 1). These actions are similar to those elicited by the selective If blocker ivabradine, which is the only pure heart rate-reducing drug used in western medicine for the treatment of angina and heart failure (Borer et al., 2012; Bucchi et al., 2002; Tardif et al., 2013; Thollon et al., 1997). When tested in SAN cells, TMYX (2 mg/ml, Figure 1B) and ivabradine (3 µM, Bucchi et al., 2007) slow cell rate by 20.8% and 16.2% and prolong the APD by 8.6% and 9.4%, respectively. Similar effects of ivabradine (3 µM) have also been reported in SAN tissue preparation (rate: −19.6/–23.8%, APD50: + 6.7/ + 8.9%, Thollon et al., 1997; Thollon et al., 1994). Since the APD prolongation represents a pro-arrhythmic effect, the evidence that, at least in single SAN cells, ivabradine and TMYX act similarly on this parameter, suggests a dose-dependent safety of the drug in relation to AP prolongation-dependent arrhythmias. This observation correlates with the use of this drug in TCM clinic.
 
 TMYX exerts a dual action on If: a negative shift of the voltage dependence and an increase of the maximal conductance, and the former action prevails at physiological voltages (Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2). Interestingly, a negative shift of the activation curve is also the main mechanism during a moderate muscarinic stimulation (DiFrancesco et al., 1989) however, this mechanism is not shared with ivabradine. In SAN cells, a moderate cholinergic activation causes a reduction of cell cAMP content, and this associates with a decreased cAMP-dependent modulation of sinoatrial HCN/funny channels; the opposite sequence of events occurs during adrenergic modulation of pacemaker rate (DiFrancesco, 1993). For this reason, the shift of the If voltage dependence can be considered a readout parameter of the functional interaction between cAMP and HCN/funny channels. cAMP synthesis is operated by the Ca2+-sensitive and Ca2+-insensitive adenylyl cyclase (AC1/8 and AC5/6, respectively), while cAMP conversion to AMP is catalyzed by the action of the PDE. AC and PDE are therefore central elements of a regulatory pathway that controls cell cAMP dynamics at rest and during autonomic stimulation (Mika and Fischmeister, 2021; Robinson et al., 2021; Sirenko et al., 2021; Yaniv et al., 2015). According to St Clair et al., 2017, PDE4 is particularly relevant in basal conditions, while PDE3 activity is important during β-adrenergic stimulation. A further level of physiological refinement is provided by the evidence that pacemaker channels are localized in caveolar structures (Barbuti et al., 2004; Barbuti et al., 2012), and this compartmentalization ensures the existence of functional microdomains where cAMP oscillations may differ from those occurring in the bulk of the cytoplasm (Mika and Fischmeister, 2021). Taken together these regulatory pathways control cAMP levels, hence SAN rate, in pacemaker cells.
 
-## TMYX exerts a direct competitive antagonism on the cAMP-induced activation of the If current
+### TMYX exerts a direct competitive antagonism on the cAMP-induced activation of the If current
 
 Whole-cell experiments presented in Figure 2B reveal that the shift induced by TMYX (6 mg/ml) is –11.9 mV, a value similar to the maximal shift induced by ACh (1 µM, 12.6 mV, Accili et al., 1997). This comparison thus suggests that the voltage-dependent modulation of If induced by 6 mg/ml TMYX should approximate saturation. However, despite a similar effect on the current, 1 µM ACh blocks the spontaneous activity of SAN cells (DiFrancesco et al., 1989), while 6 mg/ml TMYX reduces rate only by ~50% (Figure 1). Since TMYX does not act on the muscarinic receptor (Figure 3), this difference likely arises from the robust cholinergic activation of IK(ACh). While TMYX does not activate the muscarinic receptor, it is conceivable that it may interfere with the cAMP-dependent modulation of the If current somewhere along the pathway downstream the receptor. This conclusion is further supported by the evidence that TMYX efficacy is independent from the stimulation of the adenosine receptor and basal PKA activation (Figure 3—figure supplement 1, Figure 3—figure supplement 2), whose effect on the If current is also mediated by a reduction of the cellular cAMP (Zaza et al., 1996).
 
@@ -106,13 +146,114 @@ In conclusion, TMYX slows the spontaneous rate of SAN cells and the underlying m
 
 ## Materials and methods
 
-## Animal procedures and cell isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Oryctolagus cuniculus)</td>
+      <td>New Zealand rabbit</td>
+      <td>Charles River</td>
+      <td></td>
+      <td>Female, 35–41 days</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetylcholine chloride (ACh)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>A6625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 3′,5′-cyclic monophosphate sodium salt monohydrate (cAMP)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>A6885</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>F6886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,3-Dipropyl-8-cyclopentylxanthine (DPCPX)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>C101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Isobutyl-1-methylxanthine (IBMX)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>I5879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H-89 dihydrochloride hydrate (H-89)</td>
+      <td>Sigma-Aldrich (Merck)</td>
+      <td>B1427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp – Clampfit</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp – Clampex</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin</td>
+      <td>Origin Lab</td>
+      <td>RRID:SCR_014212</td>
+      <td>OriginPro 2020</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 5</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tongmai Yangxin</td>
+      <td>Le Ren Tang Pharmaceutical Factory</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal procedures and cell isolation
 
 All animal procedures performed in this study were carried out in accordance with the guidelines of the care and use of laboratory animals established by the Italian and UE laws (D. Lgs n° 2014/26, 2010/63/UE); the experimental protocols were approved by the Animal Welfare Committee of the Università degli Studi di Milano and by the Italian Ministry of Health (protocol number 1127-2015).
 
 New Zealand female rabbits (0.8–1.2 kg) were anesthetized by intramuscular injection of xilazine (5 mg/kg) and euthanized by an overdose i.v. injection of sodium thiopental (60 mg/kg). The hearts were then quickly removed and placed in pre-warmed (37°C) normal Tyrode’s solution (mM: NaCl, 140; KCl, 5.4; CaCl2, 1.8; MgCl2, 1; D‐glucose, 5.5; Hepes‐NaOH, 5; pH 7.4) containing heparin (10 U/ml). After surgical isolation, the SAN was cut into five to six pieces and treated according to a standard procedure to obtain isolated SAN cells (Bucchi et al., 2007). Cells were kept alive and in optimal conditions at 4°C and used for electrophysiological recordings within 48 hr.
 
-## Experimental solutions
+### Experimental solutions
 
 Spontaneous APs were recorded from single cells or small beating aggregates; during these recordings the cells were perfused with a normal Tyrode’s solution and the patch pipettes were filled with (mM): NaCl, 10; K‐aspartate, 130; ATP (Na-salt), 2; MgCl2, 2; CaCl2, 2; EGTA‐KOH, 5; Hepes‐KOH, 10; creatine phosphate, 5; GTP (Na-salt), 0.1; pH 7.2. Similar solutions were used to record the If current in whole-cell condition with the addition of BaCl2 (1 mM) and MnCl2 (2 mM) to the extracellular Tyrode’s to block contaminating K+ and Ca2+ currents. In inside‐out recordings the control solution used to perfuse the intracellular side of the excised patches contained (mM): NaCl, 10; K‐aspartate, 130; CaCl2, 2; EGTA-KOH, 5; Hepes‐KOH, 10; pH 7.2, and the patch‐pipette solution contained (mM): NaCl, 70; KCl, 70; CaCl2, 1.8; MgCl2, 1; BaCl2, 1; MnCl2, 2; Hepes‐NaOH, 5; pH 7.4. The resistance of patch pipettes used in whole-cell experiments measured 3–5 MΩ; larger pipettes (0.5–2 MΩ) were used during inside-out macropatch recordings.
 
@@ -122,7 +263,7 @@ A stock solution was daily prepared by dissolving the appropriate amount of subs
 
 Control and test solutions were delivered to the cells through a fast perfusion system or loaded in the whole-cell pipette solution as indicated in the text.
 
-## Patch-clamp experiments and data analysis
+### Patch-clamp experiments and data analysis
 
 Experiments were carried out using the patch-clamp amplifier Axopatch 200B and the pClamp 10.7 software (Molecular Devices, CA); data were analyzed with Clampfit, OriginPro 2020 (Origin Lab, Northampton, MA), Prism 5 (GraphPad Software, San Diego, CA), and a customized software.
 
@@ -142,7 +283,7 @@ In some analyses (Figures 4 and 5) the effect of TMYX on the If current was asse
 
 Whole-cell and inside-out experiments were carried out at 35°C ± 0.5°C and at room temperature, respectively.
 
-## Statistical analysis
+### Statistical analysis
 
 No statistical method was used to predetermine sample size, but our samples sizes are similar to those reported in previous studies (Altomare et al., 2006; Bucchi et al., 2007; Milanesi et al., 2006; Thollon et al., 1994; Van Bogaert and Pittoors, 2003).
 

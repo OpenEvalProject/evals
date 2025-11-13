@@ -50,57 +50,221 @@ In this paper, we return to the study previously described by Tong et al. We use
 
 ## Results
 
-## Patients and setting
+### Patients and setting
 
 Recruitment to the study was described previously (Tong et al., 2015). Briefly, consenting patients admitted to two ICUs (a paediatric unit and a general adult surgical unit) at Sunpasitthiprasong Hospital, Ubon Ratchathani, Thailand, during a period of three months in 2008 were recruited. MRSA screening was performed on admission and then twice weekly until discharge. Nasal swabs and fingertip cultures were also taken from ICU health care workers (HCWs) at three time points. Each screen consisted of swabbing the anterior nares, throat (or endotracheal suction tube if intubated), axilla, catheter urine if catheterised, and wounds if present (including pressure sores). Microbiological culture and bacterial identification have also been described previously (Tong et al., 2015). Up to ten colonies on primary culture plates were saved per sample. All colonies from nasal swab cultures were selected for sequencing, together with up to one colony from cultures from each other positive body site. For one subject (an adult ICU patient designated T126), additional colonies were collected, up to a maximum of 29 for some time points, also as described previously (Tong et al., 2015).
 
 The complete set of subjects screened consisted of 169 adult patients, 98 child patients and 37 HCWs. To the dataset of Tong et al., which comprised up to three sequences from each subject for a total of 76, we added 923 more, for a total of 999. Of these, four were excluded as suspected contaminants, leaving 995, from 55 subjects (compared to 51 in the previous study). Five subjects were HCWs, 21 were surgical ICU patients, and 29 were paediatric ICU patients. The number of sequences per subject ranged from 1 to 239 (mean 18). In addition, 20 sequences (one per patient) for isolates originating from an earlier study in the same hospital (Harris et al., 2010) were included for the purposes of comparison. All isolates belonged to ST 239.
 
-## Phylogeny reconstruction
+### Phylogeny reconstruction
 
 The complete core chromosome sequence alignment was 3,043,210 base pairs in length. Bayesian phylogenetic analysis was conducted using ExaBayes 1.5 (Aberer et al., 2014). Figure 1 displays the 50% majority-rule consensus tree, rooted using the TW20 strain (Holden et al., 2010) as an outgroup. Eight clades are highlighted: those designated 1 to 5 are the five previously identified by Tong et al. (2015) but much enlarged by additional data, whereas clades 6 to 8 all include some sequences that were isolated tips in the phylogeny in that paper but are now part of larger clades. Of the 20 sequences from the earlier Harris et al. study, 16 were part of these clades (but generally basal tips within them) whereas the remaining four were isolated.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig1-v3.jpg)
 
-**Figure 1.:** Branch lengths are in substitutions per site. Eight clades are highlighted. Clades 1 to 5 correspond to those identified by Tong et al. (2015), while the additional three are newly designated.Figure 1—source data 1.
+**Figure 1.:** Branch lengths are in substitutions per site. Eight clades are highlighted. Clades 1 to 5 correspond to those identified by Tong et al. (2015), while the additional three are newly designated.
 
-## Identification of potential multiple colonisation events
+### Identification of potential multiple colonisation events
 
 The transmission process amongst the study subjects was investigated using phyloscanner v1.4.2 (Wymant et al., 2017). This tool, intended for the analysis of large genetic datasets of within- and between- host pathogen data, reconstructs the relative positions of hosts in the chain of transmission.
 
 This reconstruction was performed with an awareness of the possibility that subjects may experience multiple independent infection or colonisation events, in which case each such event should be treated as a separate entity when investigating transmission. An initial phyloscanner investigation suggested that sequences from five subjects (designated T035, T099, T159, T271 and T327) formed two phylogenetic clades where the median patristic distance between clade MRCAs (across the ExaBayes posterior) was greater than 100 substitutions, sufficiently diverse that they were unlikely to be the product of single-strain colonisation events. The sequences from each of these were separated into two groups and each was subsequently treated independently. We will refer to links in the transmission chain as ‘colonisations’; each isolate belongs to a single colonisation. Numerical codes prefixed with a ‘T’ are used for study subjects and codes with ‘C’ for colonisations. In most cases the numbers after this prefix match; for example C009 is the sole colonisation of subject T009. For the five multiply-colonised subjects, a lowercase letter is used to differentiate them, for example C035a and C035b are the two colonisations of subject T035.
 
-## Trace colonisations
+### Trace colonisations
 
 Of 60 identified colonisations from the 55 subjects, cultures for 33 came only from a single positive swab. Those for the remaining 27 were obtained either on at least two time points, from at least two body sites, or both. The median number of available sequences per colonisation was 1, but this rises to 14.5 with these singletons excluded. In 25 of the 33 single-swab colonisations, previous and/or subsequent examinations of the same patient did not identify MRSA belonging to the same colonisation, while in eight only one examination was performed. In what follows we refer to these 33 as trace colonisations.
 
 When compared to those from multiple isolations, sequences from trace colonisations showed greater similarity to those from isolates collected from other study subjects at an earlier time. Figure 2 displays the distribution of the median number of SNPs separating the isolates in each colonisation from the most closely related isolate sampled on an earlier date. There was strong evidence supporting a difference in the distribution of these distances between trace and non-trace colonisations (Mann-Whitney U test p=0.018), suggesting that the nature of trace isolates could be fundamentally different to that of typical isolates from a non-trace colonisation, rather than being simply the product of colonisations of a similar nature subject to sparser sampling. A similar pattern was observed when the median SNP distance was calculated from only those isolates in a non-trace colonisation that were acquired at the time of the first positive swab (Figure 2—figure supplement 1) although in this case statistical support was lacking (p=0.119). For six trace colonisations (C104, C105, C223, C225, C270, and C271b), our subsequent phyloscanner analysis inferred an infector from amongst the patients already or previously present in the hospital at the time that the sample in question was taken. For the six patients corresponding to these colonisations, the positive swab was acquired on the day of or day after ICU admission, and within three days of hospital admission. Such a short time from hospital admission to a positive swab with a sample very similar to those already existing in the hospital was not observed for any non-trace isolates. Four of the six swabbed negative for MRSA on a subsequent occasion. These observations suggest that at least some of the trace category were of a different nature to colonisations providing multiple isolates, and that they potentially represent incidental, transient exposure of patients to strains in the overall hospital environment. The possibility of sample contamination also cannot be excluded in any individual example.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig2-v3.jpg)
+
+**Figure 2.:** Blue dots are colonisations isolated from a single swab only (trace colonisations), while red were acquired from colonisations where multiple swabs were isolated. For three colonisations (two trace) the first collection date was the commencement of the study and hence there was no such earlier isolate. The x-axis transfers to a log scale on the right of the dotted line.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Blue dots are colonisations isolated from a single swab only (trace colonisations), while red were acquired from colonisations where multiple swabs were isolated. For three colonisations (two trace) the first collection date was the commencement of the study and hence there was no such earlier isolate. The x-axis transfers to a log scale on the right of the dotted line.
+
 Our main interest is in the transmission of established, rather than transient, colonisations, as these represent the bacterial reservoir from which further colonisations will be derived, meaning they should be prioritised when designing interventions for infection control. The only strong evidence available to us that a given sample is not the result of transient colonisation is the acquisition of multiple samples of the same strain. The confirmation of colonisation with multiple swabs also greatly reduces the possibility of contamination. As a result, we exercise caution and omit the trace category from consideration for the bulk of the main text of this paper. Versions with them included are presented as figure supplements.
 
-## Reconstructed transmission events
+### Reconstructed transmission events
 
 Phyloscanner leverages the signal that transmission leaves on the phylogenetic topology (Romero-Severson et al., 2016) in order to reconstruct the direction of transmission between colonised individuals. It works by performing ancestral state reconstruction on a phylogeny using maximum parsimony, using the set of colonisations as states. It identifies phylogenetic relationships between colonisations by examining the arrangement of subgraphs: contiguous blocks of phylogenetic nodes which all have the same reconstructed state. Pairs of colonisations that are closely related in the transmission chain are identified by proximity of their subgraphs and the direction of transmission between them inferred from their topological arrangement, as shown in Figure 3. We performed this procedure on the consensus phylogeny shown in Figure 1, but also, to allow for phylogenetic uncertainty, each of 100 random trees from the ExaBayes posterior.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig3-v3.jpg)
 
-**Figure 3.:** phyloscanner identifies transmission pairs by ancestral state reconstruction of hosts (left) and subsequent classification of the topological relationships between the subgraphs reconstructed to each host (right).In this example the hosts are designated (A to D). Here host A is inferred to be the infector of hosts (B and C). The transmission from (A to C) was of only a single pathogen lineage, while that from A to B was of two, with the result that host B has two subgraphs. The subgraph from host D forms a sibling clade to the rest of the phylogeny and, as a result, no inference is made about transmission.
+**Figure 3.:** In this example the hosts are designated (A to D). Here host A is inferred to be the infector of hosts (B and C). The transmission from (A to C) was of only a single pathogen lineage, while that from A to B was of two, with the result that host B has two subgraphs. The subgraph from host D forms a sibling clade to the rest of the phylogeny and, as a result, no inference is made about transmission.
 
 Figure 4 superimposes the results of the reconstruction using the consensus phylogeny onto the timeline of patient stays in the hospital. The timings of positive and negative screening events are indicated by circles and crosses respectively. Horizontal lines represent hospital and ICU stays and are coloured by population (hospital ward or HCW). Reconstructed transmission events are indicated by grey arrows, appearing at a time indicating the upper bound for the date at which the transmission could have occurred (the earliest time of sampling amongst the tips in the recipient subgraph). Multiple arrows appearing between the same two subjects (for example between C012 and C159b) suggest the transmission of multiple lineages, either simultaneously or over a more extended period of time. All such events reconstructed here are within-ward, although four between-ward events were reconstructed with trace colonisations as recipients (see Figure 4—figure supplement 1). The great majority of events were consistent with the timeline of hospital and ICU stays, allowing that subjects may act as infectors subsequent to their departure from the premises due to environmental contamination or an unsampled intermediary carrier. Two exceptions are the descent of C271a from C327a when subject T271 left the hospital prior to subject T327’s arrival, and descent of C009 from C159a prior to the arrival of T159.
 
-## Epidemiologically plausible transmissions have high posterior support
+![Figure 4.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig4-v3.jpg)
+
+**Figure 4.:** Each row represents a colonisation, with thin lines representing the colonised subject’s presence in the hospital and thick lines their presence as a patient in an ICU. Colours of the lines and the y-axis labels indicate surgical ICU patients (green), paediatric ICU patients (red) and HCWs (blue). Crosses represent times of screens that were negative for MRSA, while circles those that returned positive swabs and sequenced isolates. The grey arrows represent reconstructed transmission events. These appear when at least one subgraph from the recipient is descended from an adjacent subgraph from the infector. Such a transmission may also involve unsampled intermediaries or the environment. The timings of these arrows represent the upper bound for the time at which they could have occurred rather than an exact estimate. The dotted vertical lines demarcate the period of sampling.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Each row represents a colonisation, with thin lines representing the colonised subject’s presence in the hospital and thick lines their presence as a patient in an ICU. Colours of the lines and the y-axis labels indicate surgical ICU patients (green), paediatric ICU patients (red) and HCWs (blue). Light colours are colonisations providing only trace isolates, whereas dark lines were identified on multiple dates or at different body sites. Crosses represent times of screens that were negative for MRSA, while circles those that returned positive swabs and sequenced isolates. The grey arrows represent reconstructed transmission events. These appear when at least one subgraph from the recipient is descended from an adjacent subgraph from the infector. Such a transmission may also involve unsampled intermediaries or the environment. The timings represent the last possible time at which these could have occurred, which is the earliest time of sampling of all the sequences involved in the recipient subgraphs. The dotted vertical lines demarcate the period of sampling.
+
+### Epidemiologically plausible transmissions have high posterior support
 
 To see if these apparently impossible reconstructed events were phylogenetically well-supported, we investigated whether the pattern persisted when the analysis was performed on the 100 sampled posterior trees. Specifically, for every subgraph of each host in each tree, we identified the last sampled colonisation in the transmission chain (if any), and checked whether that transmission was consistent with the timings of hospital stays and sample collection dates. Figure 5 shows the results. The transmission from C327a to C271a had posterior support of 1, but this would disappear entirely if a single tip from C271a was removed. Subgraphs from four other colonisations (and an additional six trace colonisations, see Figure 5—figure supplement 1) were the result of impossible infection events that had non-negligible support (in the range from 0.28 to 0.76). Two of these involved patient T159 as the source, and the remaining two involved the closely related triplet of C071, C092, and C099b.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig5-v3.jpg)
+
+**Figure 5.:** Each bar represents a colonisation, and the colours represent the proportions of the posterior set of trees where the transmission chain prior to that host involves no sampled subjects (blue), involves one or more sampled subjects all of which are possible given known timings of entry and departure to the hospital and sampling of isolates (green) and at least one sampled subject where the timings are in conflict, with the infector entering the hospital after isolates from the recipient were acquired (red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Each bar represents a colonisation, and the colours represent the proportions of the posterior set of trees where the transmission chain prior to that host involves no sampled subjects (blue), involves one or more sampled subjects all of which are possible given known timings of entry and departure to the hospital and sampling of isolates (green) and at least one sampled subject where the timings are in conflict, with the infector entering the hospital after isolates from the recipient were acquired (red). The graph is divided into non-trace (left) and trace (right) colonisations.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Each bar represents a colonisation, and the colours represent the proportions of the posterior set of trees where the transmission chain prior to that host involves no sampled subjects (blue), involves one or more sampled subjects all of which are possible given known timings of entry and departure to the hospital and sampling of isolates (green) and at least one sampled subject where the timings are in conflict, with the infector entering the hospital after isolates from the recipient were acquired (red). The graph is divided into non-trace (left) and trace (right) colonisations.
+
 We performed a separate analysis where the set of tips from each subject was randomly down-sampled to a maximum of five. This resulted in considerably more impossible reconstructed events (Figure 5—figure supplement 2).
 
-## Transmission clusters
+### Transmission clusters
 
 Figure 6 presents the phyloscanner host relationship diagram, displaying the division of the 27 colonisations into 12 clusters of closely-related infections. (Clusters here indicate groups of colonisations linked by any number of reconstructed transmission events, and no genetic distance threshold was applied.) Links between colonisations are made up of three segments, whose colour represents the frequency of a given topological relationship between two colonisations in the ExaBayes posterior. The outer two, which have directional arrows, represent transmission in the direction of the arrow, while the central segment represents the ‘complex’ ancestral relationship (Wymant et al., 2017), which suggests a close genetic relationship for which the direction of transmission is unclear. Links are also labelled with the proportion of posterior trees featuring any one of these three relationships. To avoid excessive clutter in the figure, they are only displayed when this number is 0.5 or greater. Two of the large clusters revolve around the long-staying patients T012 in the paediatric ICU and T126 in the general ICU. 8 of the 12 clusters are singletons, representing colonisations not closely related to any other sample in this study. Figure 7 gives the equivalent diagram from an analysis where each subject’s isolates were further subdivided by the body site of origin; links with coloured backgrounds connect colonisations from the same patient. The same figures with trace colonisations included can be seen in Figure 6—figure supplement 1 and Figure 7—figure supplement 1. Separating colonisations by body site can clarify relationships, most strikingly for C249, whose close relationships with a large number of other colonisations, with no clear directionality, in Figure 6 is resolved into separate origins for the samples with an axillary origin, which show support for being transmitted from either C183 or C194, and the remainder, which are likely to have come from C197 or C358. Note that these diagrams are representations of the pairwise relationships between colonisations and do not attempt to resolve these into a single transmission history.
 
-## Between-subject transmission bottlenecks are of very variable size
+![Figure 6.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig6-v3.jpg)
+
+**Figure 6.:** Each node represents all the sequences for one colonisation. Node fill colours designate patients in the two hospital ICUs and the HCWs. Edges appear where colonisations share a relationship with posterior support of at least 0.5 and consist of three elements: arrows representing transmission in either direction and a central line segment representing the ‘complex’ topological relationship, which is indicative of transmission but the direction is ambiguous. Each of these is coloured according to the proportion of posterior trees showing the corresponding relationship. Edges are also labelled with the overall posterior support for any topology suggesting transmission.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Each node represents all the sequences for one colonisation. Node fill colours designate patients in the two hospital ICUs and the HCWs and nodes with faded colours representing trace colonisations. Edges appear where colonisations share a relationship with posterior support of at least 0.5 and consist of three elements: arrows representing transmission in either direction and a central line segment representing the ‘complex’ topological relationship, which is indicative of transmission but the direction is ambiguous. Each of these is coloured according to the proportion of posterior trees showing the corresponding relationship. Edges are also labelled with the overall posterior support for any topology suggesting transmission.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig7-v3.jpg)
+
+**Figure 7.:** Each node represents all the sequences for one colonisation of one body site. Node fill colours designate patients in the two hospital ICUs and the HCWs. Edges appear where colonisations share a relationship with posterior support of at least 0.5 and consist of three elements: arrows representing transmission in either direction and a central line segment representing the ‘complex’ topological relationship, which is indicative of transmission but the direction is ambiguous. Each of these is coloured according to the proportion of posterior trees showing the corresponding relationship. Edges are also labelled with the overall posterior support for any topology suggesting transmission, and edges connecting colonisations from sites from the same subject have a grey background. Nodes are annotated with colonisation IDs and a code for body site: A = axilla, C = endotracheal suction, N = nose, T = throat, W = wound.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** Each node represents all the sequences for one colonisation of one body site. Node fill colours designate patients in the two hospital ICUs and the HCWs and nodes with faded colours representing trace colonisations. Edges appear where colonisations share a relationship with posterior support of at least 0.5 and consist of three elements: arrows representing transmission in either direction and a central line segment representing the ‘complex’ topological relationship, which is indicative of transmission but the direction is ambiguous. Each of these is coloured according to the proportion of posterior trees showing the corresponding relationship. Edges are also labelled with the overall posterior support for any topology suggesting transmission, and edges connecting colonisations from sites from the same subject have a grey background. Nodes are annotated with colonisation IDs and a code for body site: A = axilla, C = endotracheal suction, F = fingertips, N = nose, T = throat, U = urine, W = wound.
+
+### Between-subject transmission bottlenecks are of very variable size
 
 We investigated the size of the bottleneck at transmission for six pairs of colonisations in detail. (By ‘bottleneck’ we refer to the total number of genetic lineages passed from one colonisation to another; in this study we cannot differentiate between multiple lineage transmission at a single time point and the transmission of multiple single lineages at different points.) All six had a reconstructed transition in one or both directions in 95% of posterior trees, and, in the subgraphs involved in those transmissions, a posterior median of at least five tips in those belonging to the recipient. The latter condition ensured that a reasonable number of sequences were sampled from the recipient, to prevent the inference of narrow bottlenecks due simply to low sequence counts. These pairs are summarised in Table 1. The transition counts represent a lower limit on the number of lineages transmitted from one subject to another that are necessary to explain the phylogeny.
+
+**Table 1.**
+ Six pairs of colonisations for whom transmission was reconstructed with a posterior score of at least 0.95 and, for those reconstructed transmissions, a posterior median of at least five tips were in the recipient subgraphs.Each row gives the posterior median and the limits of the 95% highest posterior density (HPD) interval for the number of reconstructed transmissions between the subjects, in either direction. The posterior median number of tips in the recipient subgraphs, and the nucleotide diversity amongst those tips, are also given. In five cases the inferred direction of transmission is clear, but for C183 and C194 it is not.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Colonisation A</th>
+      <th rowspan="2">Colonisation B</th>
+      <th colspan="3">Number of A to B transitions 95 % HPD</th>
+      <th rowspan="2">Tips in descendant B subgraphs (median)</th>
+      <th rowspan="2">Nucleotide diversity transmitted to B (median)</th>
+      <th colspan="3">Number of B to A transitions 95% HPD</th>
+      <th rowspan="2">Tips in descendant A subgraphs (median)</th>
+      <th rowspan="2">Nucleotide diversity transmitted to A (median)</th>
+      <th rowspan="2">Direction</th>
+    </tr>
+    <tr>
+      <th>Median</th>
+      <th>Lower</th>
+      <th>Upper</th>
+      <th>Median</th>
+      <th>Lower</th>
+      <th>Upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C012</td>
+      <td>C137</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>79</td>
+      <td>1.46E-06</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>A to B</td>
+    </tr>
+    <tr>
+      <td>C012</td>
+      <td>C159b</td>
+      <td>34</td>
+      <td>25</td>
+      <td>38</td>
+      <td>39</td>
+      <td>2.20E-06</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>1</td>
+      <td>1.40E-06</td>
+      <td>A to B</td>
+    </tr>
+    <tr>
+      <td>C126</td>
+      <td>C234</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>10</td>
+      <td>1.92E-06</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>A to B</td>
+    </tr>
+    <tr>
+      <td>C126</td>
+      <td>C271a</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>21</td>
+      <td>3.11E-07</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>A to B</td>
+    </tr>
+    <tr>
+      <td>C126</td>
+      <td>C327a</td>
+      <td>5</td>
+      <td>4</td>
+      <td>5</td>
+      <td>9</td>
+      <td>2.68E-06</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>A to B</td>
+    </tr>
+    <tr>
+      <td>C183</td>
+      <td>C194</td>
+      <td>15</td>
+      <td>1</td>
+      <td>23</td>
+      <td>31</td>
+      <td>3.41E-07</td>
+      <td>5</td>
+      <td>0</td>
+      <td>19</td>
+      <td>12</td>
+      <td>7.08E-07</td>
+      <td>Unclear</td>
+    </tr>
+  </tbody>
+</table>
 
 Two very long-stay ICU patients, T012 and T126, both appeared to transmit to other patients through bottlenecks of quite variable strength. C012 transmitted to C137 through a relatively narrow bottleneck and C159b through an extremely wide one, and the corresponding patients’ ICU stays each overlapped with T012 for at least four weeks, with both occupying a neighbouring bed to T012 for some (but not all) of that time. C126 transmitted a single lineage to C271a in every posterior tree, but showed a wider bottleneck in transmitting to both C234 and C327a. Subject T271 occupied the adjacent bed to subject T126 for 10 days but neither T234 nor T327 ever did.
 
@@ -108,7 +272,7 @@ Finally, C183 and C194 had such similar sequences that the reconstruction sugges
 
 Table 1 also presents figures for the nucleotide diversity in the recipient population for these six events. This shows no obvious correlation with bottleneck size, indicating that the diversity in a sample may have be transmitted, but may also have arisen within-host.
 
-## The majority of subjects showed no evidence of phylogeny/body site correlation
+### The majority of subjects showed no evidence of phylogeny/body site correlation
 
 23 study subjects had tested positive for MRSA colonising at least two different body sites. In every case, one site was the anterior nares. Two subjects (T178 and T322) provided only a single sequence from each of two sites, which rendered them unsuitable for further investigation as only one phylogenetic topology is possible under that circumstance. To investigate phylogeny-site associations in the remaining 21 subjects, we ran ExaBayes on the sequences from each separately and analysed the results using BaTS (Parker et al., 2008), to identify deviations from the null hypothesis of no phylogeny-site association according to the association index (AI), parsimony score (PS) and the size of largest monophyletic clade (MC) for each trait.
 
@@ -116,19 +280,286 @@ Deviation from the null in the AI statistic indicates the presence of phylogenet
 
 Table 2 summarises the results of this analysis. For 11 of 21 subjects there was no evidence of any association between a tip’s position in the phylogeny and the site the corresponding sequence was acquired from. For another six, the only statistic to show deviation from the null at the p=0.05 level was the AI. The lack of significance for the PS suggested that no site-specific monophyletic clades were present, but this cannot identify divergent singleton tips. Examination of the ExaBayes consensus trees by eye revealed singletons for only one patient, T271. In this case the divergence (431.2 SNPs) of a single isolate from an endotracheal suction tube from the remaining isolates was so large that it had already been taken into account by the separation of the patient’s sequences into colonisations C271a and C271b; the trace colonisation C271b is the single endotracheal sequence.
 
+**Table 2.**
+ Results of the investigation of body site/phylogeny associations.Each row corresponds to a single BATS analysis on a posterior set of phylogenies consisting just of the sequences from that subject. The p-values are given for the association index (AI), parsimony score (PS) and largest monophyletic clade (MC) size for all body sites present in the dataset. Values with an asterisk (*) correspond to statistics whose values are identical under both hypotheses due to singleton sequences from some sites.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Subject</th>
+      <th rowspan="3">Number of Sequences</th>
+      <th colspan="7">p-value</th>
+    </tr>
+    <tr>
+      <th rowspan="2">AI</th>
+      <th rowspan="2">PS</th>
+      <th colspan="5">MC</th>
+    </tr>
+    <tr>
+      <th>Axilla</th>
+      <th>Nose</th>
+      <th>Throat</th>
+      <th>Trachea</th>
+      <th>Wound</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T009</td>
+      <td>31</td>
+      <td>0.026</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>0.031</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T012</td>
+      <td>223</td>
+      <td>0.24</td>
+      <td>0.18</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.14</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T065</td>
+      <td>11</td>
+      <td>&lt;0.001</td>
+      <td>1*</td>
+      <td></td>
+      <td>0.29</td>
+      <td></td>
+      <td>1*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T071</td>
+      <td>13</td>
+      <td>0.16</td>
+      <td>1</td>
+      <td></td>
+      <td>0.16</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T092</td>
+      <td>12</td>
+      <td>0.035</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T095</td>
+      <td>11</td>
+      <td>0.099</td>
+      <td>1*</td>
+      <td></td>
+      <td>0.1</td>
+      <td>1*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T099</td>
+      <td>19</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+      <td>0.16</td>
+      <td></td>
+      <td></td>
+      <td>1*</td>
+    </tr>
+    <tr>
+      <td>T126</td>
+      <td>239</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.004</td>
+      <td>0.1</td>
+      <td></td>
+      <td>0.004</td>
+      <td>1*</td>
+    </tr>
+    <tr>
+      <td>T137</td>
+      <td>79</td>
+      <td>0.004</td>
+      <td>1</td>
+      <td></td>
+      <td>0.12</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T159</td>
+      <td>46</td>
+      <td>0.7</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T183</td>
+      <td>48</td>
+      <td>0.04</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>0.22</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T188</td>
+      <td>19</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T194</td>
+      <td>32</td>
+      <td>0.13</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>1</td>
+      <td>0.37</td>
+      <td>1*</td>
+      <td>1*</td>
+    </tr>
+    <tr>
+      <td>T197</td>
+      <td>35</td>
+      <td>0.74</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>T232</td>
+      <td>11</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td></td>
+      <td>0.001</td>
+      <td>0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T234</td>
+      <td>10</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td>1*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T249</td>
+      <td>14</td>
+      <td>0.002</td>
+      <td>&lt;0.001</td>
+      <td>0.017</td>
+      <td>0.016</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T271</td>
+      <td>23</td>
+      <td>0.043</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>0.49</td>
+      <td>1</td>
+      <td>1*</td>
+      <td>1*</td>
+    </tr>
+    <tr>
+      <td>T327</td>
+      <td>10</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+      <td>0.51</td>
+      <td>1*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T330</td>
+      <td>8</td>
+      <td>1</td>
+      <td>1*</td>
+      <td></td>
+      <td>0.26</td>
+      <td>1*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T358</td>
+      <td>22</td>
+      <td>0.004</td>
+      <td>1</td>
+      <td></td>
+      <td>0.06</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The remaining four subjects are T009, T126, T232 and T249, where the ExaBayes topologies were analysed for the signals of separate colonisation events and single lineage transmission from one site to another. Consensus trees are displayed in Figure 8. Posterior support for either signal in the tree sets for T009 and T126 was negligible or absent (less than 0.05). For T249, the axial samples formed a separate clade with posterior support of 1, but trees in which these were nested within the remaining diversity were absent from the posterior; it can be seen from Figure 7 that these probably originated with a different subject from the rest. For T232 there was considerable support for both nasal and throat samples forming clades (0.712 and 0.513) respectively, and also for the diversity of each being nested in that of the other (0.514 and 0.482).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig8-v3.jpg)
 
-**Figure 8.:** Tips are coloured by body site of origin. Branch lengths are in substitutions per site. Trees were rooted using the TW20 outgroup (not shown).Figure 8—source data 1.
+**Figure 8.:** Tips are coloured by body site of origin. Branch lengths are in substitutions per site. Trees were rooted using the TW20 outgroup (not shown).
 
 Ultimately, only three of the 21 subjects (T232, T249 and T271) had phylogenies consistent with separate colonisation events affecting different body sites or groups of sites. Only T249 exhibited one nested clade from a single site, which would be indicative of a single transmission from another site through a narrow bottleneck, but statistical support for this remains limited.
 
-## Identification of transmission pairs from single genomes
+### Identification of transmission pairs from single genomes
 
 Previous studies have not had access to such rich within-host sampling, and have frequently identified transmission pairs using SNP distance between individual isolates from hosts. As our data admits a more powerful approach based on the topology, we compared our results to those from a hypothetical study where only a single sequence is available from each subject. We used phyloscanner as a gold standard for identification of transmission pairs, and pairs of subjects that were definitively not transmission pairs. For the latter we used posterior support of less than 0.05 for having adjacent subgraphs and a topological relationship implying ancestry. We used two standards for positively identifying pairs. The first was in inverse of the previous, that is support greater than 0.95 for having adjacent subgraphs and a topological relationship implying ancestry. This version, however, has some problems as a gold standard as it does not attempt to eliminate the possibility of unsampled intermediaries in the transmission chain. For a second version where these are much less likely, we used support greater than 0.95 for having adjacent subgraphs and a topological relationship that implied the transmission of multiple lineages. This is the equivalent of the ‘PP’ topology of Romero-Severson et al. (Romero-Severson et al., 2016) which was shown to be highly suggestive of direct transmission. (Intuitively, for a missing intermediary to be present in this scenario, multiple lineages would need to be transmitted at least twice, which is a rarer event than repeated transmission of at least one lineage.) This classification, however, means that subjects from whom only trace colonisations were identified have to be excluded, as it is impossible to reconstruct multiple lineage transmission if one subject contributes only a single tip to the phylogeny (or both do). As this is an analysis from which there is little reason to remove trace colonisations, which would not be identifiable in our hypothetical single-sample study, we present both versions.
 
 For each subject, we used the samples taken at the first positive swab as potential samples from a single-sequence study. For each pair of these acquired from different subjects, we calculated the raw SNP distance and used these figures to evaluate the performance of SNP distance as means to determine transmission pairs and members of clusters, using the above two measures as gold standards. The results can be seen in Figure 9. Subfigure A shows how the sensitivity and specificity vary with the threshold. To prevent bias in these results due to variable sample counts per subject, these figures are weighted by the probability of (uniformly) selecting a given pair of sequences from all those available from the same pair of subjects. (The maximum threshold shown in this figure is 60 SNPs, but see Figure 9—figure supplement 1 for the range up to 500 SNPs.)
+
+![Figure 9.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig9-v3.jpg)
+
+**Figure 9.:** (A) Plots of the sensitivity and specificity of using the number of SNPs to identify transmission pairs, for different distance thresholds. (B) ROC curves plotting true positive rate (sensitivity) against false positive rate (1-specificity) for different thresholds. The curve is annotated with selected threshold values. The gold standard for identifying transmission pairs in the version on the left is a topological relationship suggesting at least one transmitted lineage, while on the right at least two are required, a criterion which will occur much less often if there is a missing intermediary in transmission.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/46402/elife-46402-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** The gold standard for identifying transmission pairs in the version on the left is a topological relationship suggesting at least one transmitted lineage, while on the right at least two are required, a criterion which will occur much less often if there is a missing intermediary in transmission.
 
 For both gold standards, SNP distance has generally good specificity for reasonable thresholds, staying above 0.75 for less than 140 SNPs. Sensitivity reaches 0.75 at a threshold of 16 SNPs for the version which is indifferent to unsampled intermediaries, but this requires 37 SNPs for the strict version.
 
@@ -158,21 +589,21 @@ This study demonstrates the additional insights into bacterial transmission that
 
 ## Materials and methods
 
-## Sequencing
+### Sequencing
 
 DNA was extracted, libraries prepared and 100 bp paired end sequences determined for 2320 isolates on an Illumina HiSeq2000, as previously described (Reuter et al., 2016).
 
-## Tagged genomic library preparation and DNA sequencing
+### Tagged genomic library preparation and DNA sequencing
 
 Illumina reads were mapped onto the TW20 (accession number FN433596) reference sequence using SMALT (http://www.sanger.ac.uk/resources/software/smalt/) as previously described (Tong et al., 2015). A minimum of 30x depth of coverage for more than 92% of the reference genomes was achieved for both references (see Supplemental Table 1 of Tong et al). The default mapping parameters recommended for reads were employed, but with the minimum score required for mapping increased to 30 to make the mapping more conservative. Candidate SNPs were identified using samtools mpileup (Li et al., 2009) with SNPs filtered to remove those at sites with a mapping depth less than five reads and a SNP score below 60. SNPs at sites with heterogeneous mappings were be filtered out if the SNP is present in less than 75% of reads at that site (Harris et al., 2010). Identification of the core genomes was performed as previously described (Holden et al., 2013; Harris et al., 2010). The coordinates of the accessory regions of the TW20 chromosome, which were removed from the alignment for all later analyses, are described in Supplementary file 2. Recombination was detected in the genomes using Gubbins (http://sanger-pathogens.github.io/gubbins/) using the default parameters (Croucher et al., 2015).The predicted recombination regions of the TW20 chromosome are described in Supplementary file 3. Regions identified as the location of recombination were also removed from the alignment for all later analyses. De novo assembly of genomes of all isolates was performed using Velvet v0.7.03 (Zerbino, 2010).
 
-## Phylogenetic reconstruction
+### Phylogenetic reconstruction
 
 The posterior set of phylogenies for the full alignment was generated using ExaBayes 1.5 (Aberer et al., 2014). The TW20 reference sequence was included as an outgroup. Due to computational memory limits, the alignment was divided into six sequential partitions of around 500,000 bp each, but in ExaBayes all parameters and the phylogenetic topology were linked across the six. Four MCMC runs, each in turn consisting of four coupled chains, were run for 5,000,000 generations with chain swaps every five generations and the heat factor set to 0.016. 50% of states in each run were discarded as burn-in, and the topologies forming output for all four runs were combined into a single tree set. The concatenated parameter trace for all four was examined to verify that the effective sample size (ESS) for the prior, likelihood and all numerical parameters was at least 200. The estimated ESS for the topology for the unified set of trees was calculated using RWTY 1.0.1 (Warren et al., 2017) and similarly verified to ensure a value of at least 200. The consensus tree was a 50% majority rule tree, with branch lengths, constructed using the sumt command in MrBayes 3.2.6 (Ronquist et al., 2012).
 
 Input trees for the BaTS body site analysis were constructed by making separate alignments of all the sequences from each subject along with the TW20 outgroup. ExaBayes was run again on each with configurations varying depending on the number of sequences involved. Once again the output was checked to ensure all ESSs, including the estimated ESS for the topology, were at least 200, and consensus trees were built using sumt.
 
-## Phyloscanner
+### Phyloscanner
 
 A random sample of 100 trees from the ExaBayes posterior were used as input for phyloscanner v.1.4.2 (Wymant et al., 2017). Identification of subjects who experienced clear multiple colonisation was performed in a pre-processing step using phyloscanner’s dual infection detection utility with a k value of 30,432.1. For a single tree, this will divide the tips from a single subject into separate colonisations if the patristic distance between the MRCA nodes of each colonisation is equal to or greater than 100 SNPs. For each subject, the most common division when this procedure was applied to all 100 trees was used to define the number of colonisations and the sequences making up each one; this is equivalent to dividing a host’s tips into two groups in cases where the median patristic distance between these MRCAs across the posterior was at least 100 SNPs.
 
@@ -184,10 +615,10 @@ The cluster diagrams were created by defining two colonisations to be related in
 
 When defining gold standard transmission pairs and non-transmission pairs for the SNP threshold analysis, both versions used posterior support of less than 0.05 for adjacency and a topological relationship of ‘ancestry’, ‘multiple ancestry’ or ‘complex’ to define the latter. The first version used posterior support of 0.95 of the same relationships to define pairs, whereas the second used support of 0.95 for adjacency and either ‘multiple ancestry’ or ‘complex’.
 
-## Phylogeny/body site association
+### Phylogeny/body site association
 
 The separate BaTS analysis (Parker et al., 2008) was performed on the posterior tree set constructed from the sequences from each patient whose isolates were obtained from more than one body site. In each such set, the TW20 outgroup was pruned from every tree before BaTS was run. 1000 replicates of state randomisation were used to estimate the null distribution of the AI, PS and MC statistics.
 
-## Visualisation
+### Visualisation
 
 Phylogeny diagrams were created using ggtree 1.8.2 (Yu et al., 2017).

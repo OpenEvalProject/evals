@@ -120,6 +120,79 @@ The EQIPD consortium has developed a quality system that is free for anyone to u
 
 Quality systems usually appear as a response to an existing need (Table 1). For example, the development of the Good Laboratory Practice (GLP) standards, introduced first by the Food and Drug Administration (FDA) in the late 1970s, was triggered by poor research practices that compromised human health, such as mis-identification of control and experimental animals, omitted, non-reported or suppressed scientific findings, data inventions, replacements of animals lost to follow-up, and mis-dosing of animals (Bongiovanni et al., 2020; Marshall, 1983). In the Organisation for Economic Co-operation and Development (OECD) Principles (https://www.oecd.org/chemicalsafety/testing/overview-of-good-laboratory-practice.htm), GLP is defined as 'a quality system concerned with the organisational process and the conditions under which non-clinical health and environmental safety studies are planned, performed, monitored, recorded, archived and reported'.
 
+**Table 1.**
+ Comparison of quality systems.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Quality system</th>
+      <th>ISO 9001</th>
+      <th>GLP (FDA, OECD)</th>
+      <th>EQIPD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Year Launched</td>
+      <td>1987, 2015</td>
+      <td>1976, 1981</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td>Application area</td>
+      <td>A general QMS that can be applied to all aspects of organizations (not focused on biomedical research)</td>
+      <td>Non-clinical health and environmental safety studies upon which hazard assessments are based</td>
+      <td>Non-regulated preclinical (non-clinical) biomedical research</td>
+    </tr>
+    <tr>
+      <td>Initial stimulus to be developed</td>
+      <td>Procuring organizations needed a basis of contractual arrangements with their suppliers (i.e., basic requirements for a supplier to assure product quality)</td>
+      <td>Regulators such as FDA aimed to avoid poorly managed or fraudulent non-clinical studies on safety of new drugs</td>
+      <td>Biomedical research community (industry and academia) recognized the negative impact of lacking research rigor on the development of novel therapeutics, and the need for a comprehensive practical solution to help enhance preclinical data reliability</td>
+    </tr>
+    <tr>
+      <td>Customers</td>
+      <td>Typically outside of the organization (anyone who requires a product or service)</td>
+      <td>Typically outside of the organization (patients, regulators, sponsors, etc.)</td>
+      <td>In most cases, both inside (scientists themselves) and outside (patients, funders, collaboration partners, publishers, etc.) of the organization</td>
+    </tr>
+    <tr>
+      <td>Objectives</td>
+      <td>To certify that a product (which can be preclinical data) or a service is provided with consistent, good-quality characteristics, which satisfy the stated or implied needs of customers</td>
+      <td>To ensure the quality, integrity and reliability of data on the properties and/or safety of test items concerning human health and/or the environment</td>
+      <td>To facilitate generating robust and reliable preclinical data and thereby boost innovation</td>
+    </tr>
+    <tr>
+      <td>Main focus</td>
+      <td>Standardization of processes The organizational overall performance is continuously improved (process approach) to enhance customer satisfaction and development initiatives are done on a sound basis for sustainability</td>
+      <td>The organizational process and the conditions under which non-clinical health and environmental safety studies are planned, performed, monitored, recorded, archived and reported</td>
+      <td>The outcome of research activities that is robust, reliable, traceable, properly recorded, reconstructible, securely stored and trustworthy (generated under appropriately unbiased conditions)</td>
+    </tr>
+    <tr>
+      <td>Dedicated quality professionals</td>
+      <td>Not required (advisable for larger organizations)</td>
+      <td>Required</td>
+      <td>Not required (advisable for larger organizations)</td>
+    </tr>
+    <tr>
+      <td>Formal training on implementation and use</td>
+      <td>Not required</td>
+      <td>Required</td>
+      <td>Advisable, but not required</td>
+    </tr>
+    <tr>
+      <td>Assessments</td>
+      <td>External (ISO auditors) and internal (internal auditors)</td>
+      <td>External (health authorities/governmental inspectors) and internal (QA auditors)</td>
+      <td>Self-assessment (by Process Owner), external (by EQIPD)*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Additional internal assessments may be conducted by qualified colleagues (e.g. dedicated quality professionals) outside the research unit but within the same organization (advisable for larger organizations)._
+
 GLP is a standard approach to quality in the regulated areas of preclinical drug development (which largely relate to non-clinical safety and toxicology studies rather than efficacy; see Appendix 1 Glossary for a definition of regulated research), where trained personnel perform mainly routine analyses, following defined Standard Operating Procedures (SOPs), and deliver data ultimately supporting patient safety.
 
 There have been attempts to develop a quality system based on GLP, that is, taking GLP as the basis and eliminating elements that are seen as excessive for the purposes of non-regulated drug discovery. However, GLP does not provide explicit guidance regarding those aspects of study design, conduct, analysis and reporting that are important to minimize the risk of bias and make research robust. In other words, even if it were made less demanding, conventional GLP cannot address some of today’s key challenges in non-regulated preclinical research.
@@ -132,6 +205,100 @@ EQIPD was started in October 2017 and during the first phase (until June 2018), 
 
 During the second phase (July 2018 - January 2019), a working group was assembled from the EQIPD consortium members (n = 20). Based on the collected information, the working group nominated 75 statements that could define a functional quality system in non-regulated research. After three Delphi feedback rounds and two consensus meetings, these statements were revised, resulting in a final list of 18 core requirements (Table 2; see below for details).
 
+**Table 2.**
+ EQIPD Core Requirements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>#</th>
+      <th>Item</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Research team</td>
+      <td>1</td>
+      <td>Process Owner for the EQIPD Quality System must be identified</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Communication process must be in place</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Quality culture</td>
+      <td>3</td>
+      <td>The research unit must have defined quality objectives</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>All activities must comply with relevant legislation and policies</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>The research unit must have a procedure to act upon concerns of potential misconduct</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Data integrity</td>
+      <td>6</td>
+      <td>Generation, handling and changes to data records must be documented</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Data storage must be secured at least for as long as required by legal, contractual or other obligations or business needs</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Reported research outcomes must be traceable to experimental data</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Reported data must disclose all repetitions of a study, an experiment, or a test regardless of the outcome</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Research processes</td>
+      <td>10</td>
+      <td>Investigator must declare in advance whether a study is intended to inform a formal knowledge claim</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>All personnel involved in research must have adequate training and competence to perform assigned tasks</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Protocols for experimental methods must be available</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Adequate handling and storage of samples and materials must be ensured</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Research equipment and tools must be suitable for intended use and ensure data integrity</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Continuous improvement</td>
+      <td>15</td>
+      <td>Risk assessment must be performed to identify factors affecting the generation, processing and reporting of research data</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Critical incidents and errors during study conduct must be analyzed and appropriately managed</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>An approach must be in place to monitor the performance of the EQIPD Quality System, and address identified issues</td>
+    </tr>
+    <tr>
+      <td>Sustainability</td>
+      <td>18</td>
+      <td>Resources for sustaining the EQIPD Quality System must be available</td>
+    </tr>
+  </tbody>
+</table>
+
 During the third phase (February 2019 – September 2019), a supporting framework was developed (see below) and pilot implementation of the quality system started at four independent research sites.
 
 Based on the feedback from those pilot implementation sites and interactions with the stakeholder group, an updated version of the framework was released for beta-testing in November 2019. The final version of the quality system was released in September 2020.
@@ -140,9 +307,50 @@ Based on the feedback from those pilot implementation sites and interactions wit
 
 Table 3 presents five principles on which the EQIPD Quality System is based. These principles delineate in a maximally concise and direct form that the EQIPD Quality System is meant to support scientists in triggering changes in research practices, and that it will help to identify objectives and direction of change but will not prescribe any specific solutions as long as the research processes are kept transparent and traceable.
 
+**Table 3.**
+ Key principles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Principle</th>
+      <th>Explanation</th>
+      <th>Examples (related to the use of randomization)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Engage with autonomy</td>
+      <td>Decisions about specific needs and solutions are made by researchers, and not by EQIPD. EQIPD has formulated core requirements for the QS implementation and, as a partner in this process, EQIPD asks critical questions and provides recommendations that are voluntary to follow and are provided only to help the researchers throughout the implementation and use.</td>
+      <td>EQIPD recommends applying randomization to all studies but it is for the researcher to decide whether randomization is applied to a particular study or a particular study design</td>
+    </tr>
+    <tr>
+      <td>Grow through reflection</td>
+      <td>What it means to have the right quality level in place is suggested by your environment (collaborators, funders, institution, etc.). EQIPD does not ‘invent’ needs or requirements of your funders or your collaborators. As a partner in this process, EQIPD QS only allows you to see these requirements better and suggests ways of implementing them (Gilis, 2020).</td>
+      <td>EQIPD identifies overlapping requirements from different stakeholders toward the use and reporting of randomization.</td>
+    </tr>
+    <tr>
+      <td>Focus on goal</td>
+      <td>Focus on the outcome (performance standards), not on the path, timelines or the tools to get there (Guillén, 2010).</td>
+      <td>EQIPD highlights the importance of ‘randomness’ (lack of pattern or predictability) in the correctly developed randomization sequence but leaves it up to the user to select a specific method or tool.</td>
+    </tr>
+    <tr>
+      <td>Be transparent</td>
+      <td>Key research processes must be transparent. This principle applies specifically to retention and accessibility of information related to key decisions related to study design, conduct, or analysis (e.g. decisions to include or exclude certain data points in the analysis).</td>
+      <td>If one decides not to apply randomization, the decision must be stated and must be justified, recorded and reported.</td>
+    </tr>
+    <tr>
+      <td>Leave a trace</td>
+      <td>Key research processes must be traceable. Complementary to the principle above, this principle refers to retention and accessibility of all information that is necessary for a complete reconstruction of a key research process (e.g. raw data related to reported data are findable, and reported data are reconstructable from raw data).</td>
+      <td>If one does apply randomization, the way you apply randomization must be traceable and reported.</td>
+    </tr>
+  </tbody>
+</table>
+
 The EQIPD Quality System will deal with highly diverse research environments and associated challenges. The five principles are, therefore, instrumental in finding answers to specific questions – for example, is this particular practice in line with the EQIPD expectations? or should this particular process be documented?
 
-## Flexible: driven by the needs of an individual research unit
+### Flexible: driven by the needs of an individual research unit
 
 Research environments are highly diverse: the needs of researchers at a big pharma company are different from those at a biotech; the needs of CROs are different from those of academic labs, etc. Thus, improving data quality is a challenge that cannot be tackled using a one-size-fits-all solution and flexibility is a critical requirement for future success.
 
@@ -156,7 +364,7 @@ EQIPD has developed tools (for optional use) that help scientists to identify an
 
 For example, EQIPD has reviewed research quality expectations of several major public funders and pharmaceutical companies. Summaries of these expectations as well as examples of how these expectations can be met are available for downloading from the EQIPD’s online Toolbox (https://eqipd-toolbox.paasp.net).
 
-## Team effort: understanding and endorsing research quality objectives
+### Team effort: understanding and endorsing research quality objectives
 
 The focus on the specific needs of an individual research unit is ensured by the Process Owner, a person within the organization who has access to the necessary resources, and the competence and the authority to implement all steps needed to establish the EQIPD Quality System. Typically, the Process Owner should be someone who directs the work of the research unit (e.g. group leader, principal investigator, CEO or department head) and is knowledgeable about the importance of quality in research. EQIPD expects the Process Owner to be identified at the very first step of implementing the EQIPD Quality System (Table 2; core requirement #1).
 
@@ -174,7 +382,7 @@ It is important that the mission statement is understood, willingly accepted and
 
 If a Process Owner, alone or together with the research team members, cannot generate a clear and convincing answer to this question, no further steps should be taken and the implementation of the quality system is best postponed until a good answer is found and the research team is willing to embrace a quality mindset.
 
-## EQIPD Quality System as part of the overall organizational quality culture
+### EQIPD Quality System as part of the overall organizational quality culture
 
 The Process Owner may also be asked and should be prepared to explain that the EQIPD Quality System does not replace and does not intend to re-interpret any of the existing rules, policies and other quality systems (which focus on specific areas) that apply to the research unit’s environment.
 
@@ -188,7 +396,7 @@ A particularly relevant example concerns the care and use of laboratory animals 
 
 Ethical concerns on the use of animals in research have promoted the creation of a legal framework in almost every country (e.g. Animal Welfare Act in the US; Directive 2010/63 in the EU). Scientific evidence demonstrates that many aspects of animal care and use that are beyond the legal requirements have a direct impact on research results (Guillén and Steckler, 2020). The EQIPD team has developed a concise checklist that allows scientists to review if their animal care and use processes meet at least a minimum standard that supports the implementation and maintenance of the EQIPD Quality System. This review could optionally serve as the basis for further, more specific accreditation of the animal care and use program (i.e. AAALAC International accreditation) to ensure the implementation of high standards of animal care and use that would further contribute to increasing the quality of research (Appendix 2 Animal care and use checklist).
 
-## EQIPD-defined principles, user-defined content
+### EQIPD-defined principles, user-defined content
 
 Implementation of the EQIPD Quality System does not require researchers to stop or reduce ongoing experimental work. It is designed so that it takes only minimal effort to sign up and begin the journey toward a quality system that should help researchers gradually improve certain quality aspects of their work.
 
@@ -196,7 +404,7 @@ The EQIPD Quality System gives guidance on expectations for quality-related meas
 
 For example, integrity of research data is one of the central concepts that the EQIPD Quality System aims to support. Four core requirements define the desired outcomes for raw data generation and handling (core requirement #6; Table 2), data storage (core requirement #7; Table 2), data traceability (core requirement #8; Table 2), and transparency of reported data (core requirement #9; Table 2). Thus, the ‘what’ is clearly described. However, there are various ways to fulfil these requirements. For instance, secure data storage could be achieved by using conventional paper-based laboratory notebooks, electronic laboratory notebooks, custom-built electronic solutions or paper-based controlled-access archives. Thus, there is flexibility in how integrity of research data could be achieved, and it is for the users of the system to decide on the best solution for their specific situation.
 
-## Focused on the generation of fit-for-purpose research data
+### Focused on the generation of fit-for-purpose research data
 
 In general, EQIPD recommends that scientists apply protection against risks of bias for every study and unambiguously disclose the protective measures used. Each study has a particular purpose and the rigor applied to the study should be defined, documented in advance and be commensurate with the purpose of the study.
 
@@ -204,13 +412,74 @@ There are modes of research that can tolerate a certain level of uncertainty and
 
 There are also modes of research where researchers cannot accept inadequate control of the risks that can bias the research results (Dirnagl, 2016; Hooijmans et al., 2014). For research that is conducted with the prior intention of informing a knowledge claim, EQIPD requires that maximal possible rigor is applied (and exceptions explained and documented in the study plan; see Table 4). Such research will usually (but not always) involve some form of null hypothesis statistical testing or formal Bayesian analysis. Here, hypotheses are articulated in advance of data collection, with pre-specified criteria defining the primary outcome measure and the statistical test to be used.
 
+**Table 4.**
+ Expectations toward rigor in study design.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All research</th>
+      <th>Research informing a formal knowledge claim (i.e. research requiring maximal rigor)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Study plan</td>
+      <td>Should be defined and documented before starting the experiments</td>
+      <td>Must be defined and documented before starting the experiments</td>
+    </tr>
+    <tr>
+      <td>Study hypothesis</td>
+      <td>Advised to define</td>
+      <td>Must be pre-specified</td>
+    </tr>
+    <tr>
+      <td>Blinding</td>
+      <td>Advised to implement</td>
+      <td>Should be implemented, exceptions must be justified and documented</td>
+    </tr>
+    <tr>
+      <td>Randomization</td>
+      <td>Advised to implement</td>
+      <td>Should be implemented, exceptions must be justified and documented</td>
+    </tr>
+    <tr>
+      <td>Sample size calculation</td>
+      <td>Advised to define and document before starting the experiments</td>
+      <td>Must be defined and documented before starting the experiments (e.g. included in the study plan)</td>
+    </tr>
+    <tr>
+      <td>Data analysis</td>
+      <td>Advised to define and document before starting the experiments</td>
+      <td>Must be defined and documented before starting the experiments (e.g. as a formal statistical analysis plan and/or included in the study plan)</td>
+    </tr>
+    <tr>
+      <td>Inclusion and exclusion criteria</td>
+      <td>Advised to define and document before starting the experiments</td>
+      <td>Must be defined and documented before starting the experiments (e.g. included in the study plan)</td>
+    </tr>
+    <tr>
+      <td>Deviations from study plan</td>
+      <td>Advised to document</td>
+      <td>Must be documented</td>
+    </tr>
+    <tr>
+      <td>Preregistration</td>
+      <td>-</td>
+      <td>Should be implemented</td>
+    </tr>
+  </tbody>
+</table>
+
 Examples of research requiring maximal possible rigor include:
 
 EQIPD requires that investigators assert in advance whether a study will be conducted to inform a formal knowledge claim (core requirement #10; Table 2), and that they explicitly state this in the study (experimental) plans prepared before studies and experiments are conducted.
 
 Further, it is required for all types of research that everyone in the research unit is adequately trained and competent (core requirement #11; Table 2), has access to protocols for experimental methods (core requirement #12; Table 2), follows adequate procedures for the handling and storage of samples and materials (core requirement #13; Table 2), and uses research equipment and tools that are suitable for the intended use (core requirement #14; Table 2).
 
-## A system, not just a collection of guidelines and recommendations
+### A system, not just a collection of guidelines and recommendations
 
 Development and implementation of flexible and fit-for-purpose solutions are usually enabled by introducing a continuous improvement process (Deming, 1986). Within the EQIPD environment, the improvement cycle is rooted in the following workflow:
 
@@ -228,19 +497,72 @@ The early adopters of the EQIPD Quality System, through their feedback to the EQ
 
 It is a general understanding that not all research units are equally prepared or willing to implement a Quality System, an effort that requires investing time and resources. Tools developed and shared by EQIPD can also be used for other purposes – for example, as a source of information about specific aspects of good research practice, as a guidance for specific types of projects (e.g. industry-academia collaboration), or to enable a specific collaboration project by providing a purpose-fit certification of the current practices being in line with the EQIPD expectations (Table 5).
 
+**Table 5.**
+ Levels of use of the EQIPD framework.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Levels of use:</th>
+      <th>Information only (incl. training)</th>
+      <th>Purpose-fit certification</th>
+      <th>Quality System</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EQIPD guidance:</td>
+      <td>Recommendations on best practices, examples, templates</td>
+      <td>Basic set of core requirements</td>
+      <td>Full set of core requirements</td>
+    </tr>
+    <tr>
+      <td>Main users:</td>
+      <td>Research units, funding organizations</td>
+      <td>Research units</td>
+      <td>Research units</td>
+    </tr>
+    <tr>
+      <td>Expected use:</td>
+      <td>As necessary, follow specific recommendations or use provided tools to improve work processes (e.g. increase transparency or make raw data findable or improve reporting) As appropriate, use information provided by EQIPD in training programs; communicate to collaborators, grantees, etc.</td>
+      <td>Confirm that current quality practices are in line with the basic set of EQIPD core requirements (related to data integrity and rigor in study design, conduct, analysis, and reporting)</td>
+      <td>Align current research quality practices with the EQIPD expectations (implement full set of core requirements including those that define quality system – i.e. availability of resources, process owner, quality objectives, and continuous improvement mechanisms)</td>
+    </tr>
+    <tr>
+      <td>Dedicated efforts by the research unit (e.g., regular and sustained efforts, dedicated personnel):</td>
+      <td>None</td>
+      <td>Limited</td>
+      <td>Yes (proportional to quality objectives)</td>
+    </tr>
+    <tr>
+      <td>Context of use:</td>
+      <td>Research unit is informed about expectations by current or future collaborators, funders, sponsors, publishers, etc.</td>
+      <td>Flexible solution driven by the time- and resource-critical needs of specific collaboration(s)</td>
+      <td>Stable solution for long-term maintenance of research rigor standards</td>
+    </tr>
+    <tr>
+      <td>Assessment by the EQIPD team:</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
 Since the scientists themselves will be the main users of the EQIPD framework, their leading and proactive role in improving the quality of their own scientific data will define the ways the framework can be used to prepare more and more research units to accept a Quality System as a means for long-term maintenance or research rigor standards.
 
 ## Implementation of the EQIPD Quality System
 
 Even a lean and user-friendly quality system requires effort and resources to be implemented and maintained. This consideration makes it important to emphasize that a decision to start implementing the EQIPD Quality System should be well justified and regularly checked by the Process Owner and discussed with the research team.
 
-## Size of the research unit
+### Size of the research unit
 
 The EQIPD Quality System can be implemented at any level (university, research institute, company, or a laboratory). While this is the desired case, EQIPD encourages the transition toward better quality practices at the level of individual labs, departments or research groups, no matter how small they are, provided that there is a researcher capable, authorized and willing to take on the role of Process Owner.
 
 The EQIPD Quality System is not intended to be used at the level of individual projects. Otherwise, it may create confusion and increase the risk of errors as the same people within a research unit may follow separate research quality practices depending on the project that they are working on.
 
-## Implementation path
+### Implementation path
 
 There are several ways in which the EQIPD core requirements can be introduced within a research unit in terms of timing and sequence (Figure 2). Whether supported by the (optional) EQIPD tools or not, any of the possible implementation scenarios are acceptable as long as the outcome is the same, that is, a quality system implementing all 18 core requirements.
 
@@ -258,7 +580,7 @@ Phase 3 – Completion of the remaining core requirements enabling formal recogn
 
 The implementation is concluded with an important sustainability checkpoint: the Process Owner is expected to estimate the required resources and make them available for maintaining the EQIPD Quality System (core requirement #18; Table 2).
 
-## Supporting tools
+### Supporting tools
 
 EQIPD has developed several tools (Figure 2) that are freely available to support the implementation and maintenance of the Quality System:
 
@@ -272,13 +594,13 @@ Traditional quality systems require either internal (within the organization) or
 
 The EQIPD Quality System is conceived as beginning with research scientists and extending to the research environment, and the compliance mechanisms are in line with this approach typically requiring no quality professionals.
 
-## Self-assessment
+### Self-assessment
 
 The Process Owner is expected to use a self-assessment form provided by EQIPD to check whether Core Requirements and research unit-specific needs are appropriately addressed. The form guides the Process Owner through each core requirement, links out to the corresponding online Toolbox item, which describes background, expectations and provides further guidance documents.
 
 The self-assessment serves two purposes. On the one hand, it allows the Process Owner to monitor performance of the quality system. On the other hand, it provides the base for an external assessment.
 
-## External assessment
+### External assessment
 
 The external assessment of the research unit, performed as peer review, is a quality verification step that is recommended and important for the full implementation and the successful maintainance of QS. However, this step is not required and adopters of the Quality System may stop at the self-assessment stage.
 

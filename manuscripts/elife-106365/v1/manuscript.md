@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05rdf8595 CINBIO, Universidade de Vigo Vigo Spain
-2. https://ror.org/05rdf8595 Department of Biochemistry, Genetics and Immunology, Universidade de Vigo Vigo Spain
+1. CINBIO, Universidade de Vigo Vigo Spain ([ROR:05rdf8595](https://ror.org/05rdf8595))
+2. Department of Biochemistry, Genetics and Immunology, Universidade de Vigo Vigo Spain ([ROR:05rdf8595](https://ror.org/05rdf8595))
 
 † Corresponding author
 
@@ -28,11 +28,15 @@ Predictions about future evolutionary events can be performed with simulation-ba
 
 ## Methods
 
-## A method for forecasting protein evolution by combining birth-death population genetics with structurally constrained substitution models of protein evolution
+### A method for forecasting protein evolution by combining birth-death population genetics with structurally constrained substitution models of protein evolution
 
 Following previous methods for forecasting evolution based on simulations (Lässig and Łuksza, 2014; Neher et al., 2014), we developed a method to simulate the forward-in-time evolutionary history of a protein sample with a birth-death process that considers the fitness of the protein variant (based on folding stability) at every temporal node. The method derives the birth and death rates for a protein variant based on the fitness of that variant, where a high fitness results in a high birth rate and a low death rate, which can lead to a large number of descendants, and the opposite leading to a few or none (extinction) descendants. Thus, the fitness of the molecular variant at every node drives its corresponding forward in time birth-death evolutionary history. The details of this simulation process are outlined below.
 
-First, similarly to common simulators of molecular evolution (Arenas, 2012; Hoban et al., 2012; Yang, 2006), a given protein sequence and structure (hereafter, protein variant) is assigned to the root node. The fitness (f) of the protein variant (A) is calculated from its folding stability (free energy, ΔG) following the Boltzmann distribution (Goldstein, 2013) (Equation 1, which takes values from 0 to 1),(1)f(A)=11+eΔG/kT\begin{document}$$\displaystyle f\left (A\right)=\frac{1}{1+e^{\Delta G/\text{kT}}}$$\end{document}
+First, similarly to common simulators of molecular evolution (Arenas, 2012; Hoban et al., 2012; Yang, 2006), a given protein sequence and structure (hereafter, protein variant) is assigned to the root node. The fitness (f) of the protein variant (A) is calculated from its folding stability (free energy, ΔG) following the Boltzmann distribution (Goldstein, 2013) (Equation 1, which takes values from 0 to 1),
+
+$$
+f(A)=\frac{1}{1+e^{ΔG/kT}}
+$$
 
 Protein folding stability constrains protein evolution and is commonly used to obtain protein fitness (Bastolla et al., 2007; Goldstein, 2013; Liberles et al., 2012; Lobkovsky et al., 2010; Mendez et al., 2010; Sella and Hirsh, 2005; Zeldovich et al., 2007). The user can alternatively choose whether the fitness of the modeled protein variant is determined solely by its folding stability or by its similarity to the stability of a real protein variant (i.e., a protein structure from the Protein Data Bank, PDB). We believe the latter can be more realistic, as in nature, high folding stability does not necessarily indicate high fitness, but a stability that closely resembles that of a real protein may suggest high fitness since the real stability is the result of a selection process (which also incorporates negative design). If the fitness is derived from only the folding stability of the protein variant, the birth rate (b) is considered equal to the fitness. Alternatively, if the fitness is determined based on the similarity in folding stability between the modeled variant and a real variant, the birth rate is assumed to be 1 minus the root mean square deviation (RMSD, which offers advantages such as minimizing the influence of small deviations while amplifying larger differences, thereby enhancing the detection of remarkable molecular changes) in folding stability. Notice that the smaller this difference, the higher the birth rate. In both cases, the death rate (d) is considered as 1-b to allow a constant global (birth-death) rate. In this model, the fitness influences reproductive success, where protein variants with higher fitness have higher birth rates leading to more birth events, while those with lower fitness have higher death rates leading to more extinction events. This parameterization is meaningful in the context of protein evolution because the fitness of a protein variant can affect its survival (birth or extinction) without necessarily altering its rate of evolution. Although a higher growth rate can sometimes correlate with higher fitness, a variant with high fitness does not necessarily accumulate substitutions more rapidly.
 
@@ -44,23 +48,25 @@ The birth-death process is simulated forward in time deciding whether every next
 
 **Figure 1.:** Given a protein variant assigned to a node at time t (blue node), its fitness is calculated considering its protein folding stability. Then, the fitness is used to determine the birth and death rates for that variant, which provide the time to the next birth or death event (horizontal dashed line) that corresponds to the forward-in-time branch length. Next, the variant is evolved forward in time toward each descendant, upon the previously determined branch length, under an SCS model of protein evolution. The process is repeated, forward in time, starting at each new variant. If a death event occurs, the variant of the extinct node (pink node) is obtained, but it does have descendants. The process finishes when a particular sample size or simulation time is reached (i.e. t+n).
 
-(2)tn=e(s(b+d))\begin{document}$$\displaystyle t_{n}=e^{(s(b+d))}$$\end{document}
+$$
+t_{n}=e^{(s(b+d))}
+$$
 
 This process simultaneously simulates, forward in time, evolutionary history and protein evolution, with protein evolution influencing the evolutionary history through selection from the folding stability. Indeed, selection can vary among protein variants at their corresponding nodes of the evolutionary history. The process produces a forward in time birth-death phylogenetic history that encompasses nodes that reached the ending time, internal nodes, and nodes that were extinct at some time, along with the protein variant associated with each node.
 
 The implemented SCS models consider molecular energy functions based on amino acid contact matrices and configurational entropies per residue in unfolded and misfolded proteins (Arenas et al., 2013; Bastolla et al., 2007; Mendez et al., 2010). These models incorporate both positive and negative design strategies. In particular, the evaluation of the target protein structure while taking into account a database of residue contacts from alternative protein structures in the PDB, thus considering background genetic information that helps reduce prediction biases (Minning et al., 2013). Technical details about these SCS models are presented in our previous study (Arenas et al., 2013). Next, SCS models outperformed models that ignore structural evolutionary constraints in terms of phylogenetic likelihood, among other properties (Arenas et al., 2013; Arenas et al., 2016a; Bordner and Mittelmann, 2014). The method also implements common empirical substitution models of protein evolution (i.e. Blosum62, CpRev, Dayhoff, DayhoffDCMUT, FLU, HIVb, HIVw, JTT, JonesDCMUT, LG, Mtart, Mtmam, Mtrev24, RtRev, VT, and WAG; Supplementary file 1A) and the user can specify any particular exchangeability matrix for all sites or for each site, allowing for heterogeneity of the substitution process among sites (details in Supplementary file 1A and in the software documentation). In addition, the framework implements heterogeneous substitution rates among sites by the traditional Gamma distribution (+G; Yang, 1996) and proportion of invariable sites (+I; Fitch and Margoliash, 1967), and also the user can directly alter the substitution rate at each site for any empirical or SCS model (Table S1). Regarding the evolutionary history, in addition to the birth-death process presented before, the user can specify a particular phylogenetic tree or simulate a coalescent evolutionary history (Hudson, 1983; Kingman, 1982; Supplementary file 1A). In this regard, we maintained the capabilities of the previous version, including the coalescent with recombination (Hudson, 1983) which can be homogeneous or heterogeneous along the sequence according to Wiuf and Posada, 2003, variable population size over time (growth rate or demographic periods), several migration models that is island (Hudson, 1998), stepping-stone (Kimura and Weiss, 1964), and continent-island Wright, 1931 with temporal variation of migration rates and convergence of demes or subpopulations, simulation of haploid or diploid data, and longitudinal sampling (Navascués et al., 2010; details in Supplementary file 1A and in the software documentation). The framework outputs a simulated multiple sequence alignment with the protein sequences of the internal and tip nodes, as well as their folding stabilities and the evolutionary history, among other information (Supplementary file 1A and software documentation).
 
-## Study data for evaluating the method for forecasting protein evolution
+### Study data for evaluating the method for forecasting protein evolution
 
 We evaluated the accuracy of the method for forecasting protein evolution using viral proteins sampled over time (longitudinal sampling). Specifically, we used protein sequences from previous experiments of virus evolution monitored over time, which contain consensus molecular data (avoiding rare variants) that belong to different evolutionary time points.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/106365/elife-106365-fig2-v1.jpg)
 
-**Figure 2.:** T31.Left: Distribution of the observed amino acid substitutions along the HIV-1 matrix (MA) protein sequences at time T31. Right: Distribution of the indicated amino acid substitutions (shown in blue) along the protein structure.
+**Figure 2.:** Left: Distribution of the observed amino acid substitutions along the HIV-1 matrix (MA) protein sequences at time T31. Right: Distribution of the indicated amino acid substitutions (shown in blue) along the protein structure.
 
 We identified a representative protein structure for each dataset, which was used to predict the folding stability and to inform the SCS model. In particular, we obtained the protein structures of the sequences at the initial time (T1) from the PDB (Supplementary file 1C). For the case of the HIV-1 protease, we obtained the protein structure through homology modeling. We used SWISS-MODEL (Arnold et al., 2006) to identify the best-fitting templates of PDB structures (Supplementary file 1C). Next, we predicted the protein structures by homology modeling with Modeller (Sali and Blundell, 1993) using the protein sequences and corresponding best-fitting structural templates.
 
-## Forward in time prediction of viral protein variants
+### Forward in time prediction of viral protein variants
 
 The evaluation was performed with the previously presented real data, which includes a real protein variant present at the initial time (T1) and subsequent protein variants present at a later time (Tn). We applied the method for forecasting protein evolution to predict the most likely protein variants at Tn derived from the real protein variant observed at the initial time (T1). The prediction error was determined by measuring the distance between the real protein variants and the predicted variants corresponding to time Tn.
 
@@ -68,27 +74,88 @@ Thus, we assigned to the initial node (T1) the corresponding real protein varian
 
 To investigate the effect of selection on the predictions, we compared the accuracy of forecasting protein evolution when selection from the protein structure is considered and when it is ignored (neutral evolution). If selection is considered, as previously presented, the probability of birth and death events was based on the fitness of the protein variants, and protein evolution was modeled using an SCS model (Arenas et al., 2013). In the case of neutral evolution, all protein variants equally fit and are allowed. Since variants are observed, we allowed birth events. However, it assumed the absence of death events as no information independent of fitness is available to support their inclusion, thereby avoiding the imposition of arbitrary death events based on an arbitrary death rate. Also, to model neutral evolution, we used an exchangeability matrix with the same relative rates of change to all amino acid pairs.
 
-## Accuracy of the predicted protein variants
+### Accuracy of the predicted protein variants
 
 We assessed the accuracy of the method for forecasting protein evolution by comparing the predicted and real protein variants present at time Tn, both at the protein sequence and structure levels.
 
-For data containing multiple sequences at time Tn (i.e. HIV-1 MA dataset), we calculated the Kullback-Leibler (KL) divergence, which provides a distance between two multiple sequence alignments (the real and predicted data) based on the distribution of amino acid frequencies along the sequences (Equation III, where factors P and Q denote the distribution of amino acid frequencies in the real and predicted protein sequences at time Tn, respectively, i refers to protein site) (Kullback and Leibler, 1951). This distance was only calculated for data with a set of sequences at time Tn (HIV-1 MA) because a single sequence does not provide site-specific variability.(3)KL(P∥Q)=∑iPi×log(PiQi)\begin{document}$$\displaystyle  KL\,(P\parallel Q)=\sum\limits_{i}{P_{i}} \times {\rm log}(\frac{P_{i}}{Q_{i}} )$$\end{document}
+For data containing multiple sequences at time Tn (i.e. HIV-1 MA dataset), we calculated the Kullback-Leibler (KL) divergence, which provides a distance between two multiple sequence alignments (the real and predicted data) based on the distribution of amino acid frequencies along the sequences (Equation III, where factors P and Q denote the distribution of amino acid frequencies in the real and predicted protein sequences at time Tn, respectively, i refers to protein site) (Kullback and Leibler, 1951). This distance was only calculated for data with a set of sequences at time Tn (HIV-1 MA) because a single sequence does not provide site-specific variability.
 
-We also compared the real and predicted evolutionary trajectories of protein variants using the Grantham distance, which measures the differences between amino acids based on their physicochemical properties (Grantham, 1974). In particular, for both real and predicted protein variants, we calculated the Grantham distance at each protein site that differs between the two datasets, considering its evolution from T1 to the subsequent multiple sequence alignment at Tn. We examined sites that varied over time, thus the general site-specific Grantham distance Gi was calculated as the frequency of each amino acid f at site i multiplied by the specific Grantham distance between amino acid m at time Tn and amino acid n at time T1, normalized with the largest Grantham distance Gmax to obtain values between 0 and 1 (Equation IV). Next, to compare the real and predicted data, we calculated the site-specific difference of Grantham distance Gbi between the real P and predicted Q protein variants (Equation V),(4)Gi=∑m=120fm×G(m,n)Gmax\begin{document}$$\displaystyle  G_{i}=\sum _{m=1}^{20}f_{m}\times \frac{G_{\left (m,n\right)}}{G_{max}}$$\end{document}(5)Gbi=∣GP,i−GQ,i∣\begin{document}$$\displaystyle Gb_{i}=\mid G_{P,i}- G_{Q,i}\mid $$\end{document}
+$$
+KL(P∥Q)=\sumiP_{i}\timeslog(\frac{P_{i}}{Q_{i}})
+$$
+
+We also compared the real and predicted evolutionary trajectories of protein variants using the Grantham distance, which measures the differences between amino acids based on their physicochemical properties (Grantham, 1974). In particular, for both real and predicted protein variants, we calculated the Grantham distance at each protein site that differs between the two datasets, considering its evolution from T1 to the subsequent multiple sequence alignment at Tn. We examined sites that varied over time, thus the general site-specific Grantham distance Gi was calculated as the frequency of each amino acid f at site i multiplied by the specific Grantham distance between amino acid m at time Tn and amino acid n at time T1, normalized with the largest Grantham distance Gmax to obtain values between 0 and 1 (Equation IV). Next, to compare the real and predicted data, we calculated the site-specific difference of Grantham distance Gbi between the real P and predicted Q protein variants (Equation V),
+
+$$
+G_{i}=\summ=120f_{m}\times\frac{G_{(m,n)}}{G_{max}}
+$$
+
+
+
+$$
+Gb_{i}=∣G_{P,i}−G_{Q,i}∣
+$$
 
 In addition, we obtained and compared the protein folding stability (ΔG) of the predicted and real protein variants observed at time Tn, using their corresponding protein structures, with DeltaGREM (Arenas et al., 2016a; Minning et al., 2013).
 
 ## Results
 
-## Implementation of the forecasting protein evolution method
+### Implementation of the forecasting protein evolution method
 
 We extended the previous version of our framework ProteinEvolver (Arenas et al., 2013), maintaining its previous capabilities (i.e. simulation of protein evolution upon user-specified phylogenetic trees and upon phylogenetic trees simulated with the coalescent with or without recombination, migration, demographics and longitudinal sampling, empirical and SCS models, among others; Supplementary file 1A), by adding, among others (Supplementary file 1A), the forward in time modeling of protein evolution that combines a birth-death process based on the fitness of every protein variant (folding stability) at each node to determine its birth and death rates, as well as SCS models of protein evolution. The framework ProteinEvolver2 is written in C and distributed with a detailed documentation and a variety of illustrative practical examples. The framework is freely available from https://github.com/MiguelArenas/proteinevolver (Arenas, 2025).
 
-## Evaluation of predictions of HIV-1 MA evolution
+### Evaluation of predictions of HIV-1 MA evolution
 
 Regarding the evolution of the HIV-1 MA protein, the Grantham distance and the KL divergence between the real variants at time Tn and the corresponding predicted variants were low (around 5% and 6%, respectively; Table 1), and they did not differ comparing predictions that consider selection on the folding stability (including birth-death models with constant and variable global birth-death rate among lineages) and predictions that ignore it (Table 1). On the other hand, we found that the folding stability of the protein variants predicted considering selection on the folding stability (again, including birth-death models with constant or variable global birth-death rate among lineages) was closer to the folding stability of the real protein variants than that of the protein variants predicted under neutral evolution (Table 1). In particular, the protein variants predicted ignoring selection were less stable than those predicted considering selection and also less stable than the real protein variants.
 
-## Evaluation of predictions of SARS-CoV-2 Mpro and PLpro evolution
+**Table 1.**
+ Comparison of real and predicted sequences of the HIV-1 MA protein considering predictions based on the SCS and neutral models.For the data simulated under the SCS [including birth-death models with constant (SCS) and variable global birth-death rate among lineages (GlobalBDvar)] and neutral models, the table shows the Grantham distance between the amino acids that changed during the real and predicted evolutionary trajectories and the Kullback-Leibler (KL) divergence between the real and predicted multiple sequence alignments. Next, it shows the folding stability (ΔG) of the real protein variants at times T1 and T31 and the folding stability of the predicted protein variants at time T31. The error corresponds to the 95% confidence interval from the mean (100 samples) of predictions of folding stability.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Grantham distance</th>
+      <th>KL divergence</th>
+      <th>ΔG of the real variant at T1 (kcal/mol)</th>
+      <th>ΔG of the real variants at T31 (kcal/mol)</th>
+      <th>ΔG of the predicted variants at T31 (kcal/mol)</th>
+      <th>ΔΔG (kcal/mol) at T31 (predicted – real variants)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SCS model</td>
+      <td>5%</td>
+      <td>6%</td>
+      <td>–9.72</td>
+      <td>–10.34±0.14</td>
+      <td>–9.96±0.02</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>SCS GlobalBDvar model</td>
+      <td>5%</td>
+      <td>6%</td>
+      <td>–9.72</td>
+      <td>–10.34±0.14</td>
+      <td>–10.03±0.03</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Neutral model</td>
+      <td>5%</td>
+      <td>6%</td>
+      <td>–9.72</td>
+      <td>–10.34±0.14</td>
+      <td>–9.21±0.07</td>
+      <td>1.14</td>
+    </tr>
+  </tbody>
+</table>
+
+### Evaluation of predictions of SARS-CoV-2 Mpro and PLpro evolution
 
 The analyses of the SARS-CoV-2 Mpro and PLpro data showed Grantham distances between the real and predicted sequences around 25% and 36%, respectively (Figure 3A). Again, this distance was similar when comparing predictions based on models that consider selection on the protein folding stability (including birth-death models with constant or variable global birth-death rate among lineages) and a model of neutral evolution. Regarding comparisons based on the protein folding stability, we found again that the models that consider selection from the folding stability produce variants closer to the stability of the real protein variants than the model that ignores selection (Figure 3B). Indeed, protein variants derived from the models that consider selection were more stable than those derived from the model of neutral evolution. Next, we did not find statistically significant differences in sequence similarity or folding stability between variants predicted under birth-death models with constant or variable global birth-death rate among lineages (Figure 3).
 
@@ -96,7 +163,7 @@ The analyses of the SARS-CoV-2 Mpro and PLpro data showed Grantham distances bet
 
 **Figure 3.:** Predictions based on data simulated under the SCS [including birth-death models with constant (SCS) and variable global birth-death rate among lineages (GlobalBDvar)] and neutral models. (A) Grantham distance calculated from the amino acid changes that occurred during the real and predicted evolutionary trajectories based on SCS and neutral models of protein evolution. (B) Variation of protein folding stability (ΔΔG) between real and predicted protein variants based on SCS and neutral models of protein evolution. Notice that positive ΔΔG indicates that the real protein variants are more stable than the predicted protein variants and vice versa. Error bars correspond to the 95% confidence interval of the mean of prediction error from 100 multiple sequence alignments simulated for the corresponding population and time.
 
-## Evaluation of predictions of influenza NS1 protein evolution
+### Evaluation of predictions of influenza NS1 protein evolution
 
 The evolutionary predictions for the influenza NS1 protein varied depending on the model used. Specifically, at the sequence level and for the two prediction time points studied, Grantham distances between the real and predicted protein sequences were around 23.5% for the models that incorporated structural evolutionary constraints, compared to about 25.5% for the neutral model (Figure 4A). These differences became more pronounced when examining predictions based on protein folding stability. For both time points, models that included selection consistently generated protein variants with stability more similar to that of the observed variants than those predicted by the neutral model (Figure 4B). Indeed, sequences predicted by the model that accounts for selection were generally more stable than those predicted under neutral evolution. Again, we found no statistically significant differences in sequence similarity or folding stability between variants predicted under birth-death models with constant or variable global birth-death rate among lineages (Figure 4).
 
@@ -104,7 +171,7 @@ The evolutionary predictions for the influenza NS1 protein varied depending on t
 
 **Figure 4.:** Predictions were performed for two time points (longitudinal samples T2 and T3). Predictions based on data simulated under the SCS [including birth-death models with constant (SCS) and variable global birth-death rate among lineages (GlobalBDvar)] and neutral models. (A) Grantham distance calculated from the amino acid changes that occurred during the real and predicted evolutionary trajectories based on SCS and neutral models of protein evolution. (B) Variation of protein folding stability (ΔΔG) between real and predicted protein variants based on SCS and neutral models of protein evolution. Notice that positive ΔΔG indicates that the real protein variants are more stable than the predicted protein variants and vice versa. Error bars correspond to the 95% confidence interval of the mean of prediction error from 100 multiple sequence alignments simulated for the corresponding population and time.
 
-## Evaluation of predictions of HIV-1 PR evolution
+### Evaluation of predictions of HIV-1 PR evolution
 
 In general, the Grantham distance, which compared the evolutionary trajectories of the real and predicted protein variants from time T1 to later times, varied among viral populations (patients; Figure 5A). However, for the majority of these populations, the distance remained below 30% and exhibited minor fluctuations over time. One particular population exhibited a notable trend, with the distance increasing from 10% to nearly 60% over time. Considering that the length of the evolutionary trajectories of the protein can differ among the studied populations, we explored whether the accumulated number of amino acid substitutions could affect the accuracy of the predictions, and we found that the number of substitutions varied among populations and this variability did not correlate with the Grantham distance between the real and predicted data (R2=0.0001, Figure 5B). In general, the folding stability of the predicted protein variants was similar or slightly less stable than that of the real protein variants [with a difference ranging from 0 to 9 kcal/mol and a mean of 3.1±0.9 (95% CI) kcal/mol; Figure 5C]. Indeed, the folding stability exhibited small fluctuations, increasing and decreasing, over time.
 

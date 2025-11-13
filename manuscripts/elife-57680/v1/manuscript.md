@@ -26,7 +26,7 @@
 
 ## Abstract
 
-The function of the voltage-gated KCNQ1 potassium channel is regulated by co-assembly with KCNE auxiliary subunits. KCNQ1-KCNE1 channels generate the slow delayed rectifier current, I Ks , which contributes to the repolarization phase of the cardiac action potential. A three amino acid motif (F57-T58-L59, FTL) in KCNE1 is essential for slow activation of KCNQ1-KCNE1 channels. However, how this motif interacts with KCNQ1 to control its function is unknown. Combining computational modeling with electrophysiological studies, we developed structural models of the KCNQ1-KCNE1 complex that suggest how KCNE1 controls KCNQ1 activation. The FTL motif binds at a cleft between the voltage-sensing and pore domains and appears to affect the channel gate by an allosteric mechanism. Comparison with the KCNQ1-KCNE3 channel structure suggests a common transmembrane-binding mode for different KCNEs and illuminates how specific differences in the interaction of their triplet motifs determine the profound differences in KCNQ1 functional modulation by KCNE1 versus KCNE3.
+The function of the voltage-gated KCNQ1 potassium channel is regulated by co-assembly with KCNE auxiliary subunits. KCNQ1-KCNE1 channels generate the slow delayed rectifier current, IKs, which contributes to the repolarization phase of the cardiac action potential. A three amino acid motif (F57-T58-L59, FTL) in KCNE1 is essential for slow activation of KCNQ1-KCNE1 channels. However, how this motif interacts with KCNQ1 to control its function is unknown. Combining computational modeling with electrophysiological studies, we developed structural models of the KCNQ1-KCNE1 complex that suggest how KCNE1 controls KCNQ1 activation. The FTL motif binds at a cleft between the voltage-sensing and pore domains and appears to affect the channel gate by an allosteric mechanism. Comparison with the KCNQ1-KCNE3 channel structure suggests a common transmembrane-binding mode for different KCNEs and illuminates how specific differences in the interaction of their triplet motifs determine the profound differences in KCNQ1 functional modulation by KCNE1 versus KCNE3.
 
 ## Introduction
 
@@ -46,17 +46,53 @@ Here, we combined computational protein-protein docking, molecular dynamics, and
 
 ## Results
 
-## Probing the spatial proximity of KCNQ1 V141 and I274 to KCNE1
+### Probing the spatial proximity of KCNQ1 V141 and I274 to KCNE1
 
 For building KCNQ1-KCNE1 models, we collected residue contact restraints from previously published biophysical experiments on the KCNQ1-KCNE1 interaction: disulfide crosslinking (Chung et al., 2009; Wang et al., 2011; Chan et al., 2012; Wang et al., 2012), Cd(II)-cysteine bridging (Tapper and George, 2001), and double mutant cycle analysis (Strutz-Seebohm et al., 2011; Li et al., 2015). Restraints were compiled in a state-dependent manner based on the data informing whether a crosslink or mutation favored the open or closed channel state. Most restraints were available for the region N-terminal to the KCNE1 TMD (S37-A44) whereas a smaller number of restraints fell within the TMD (L45-L71). To obtain additional contact information for the KCNE1 TMD, we performed KCNQ1-KCNE1 disulfide trapping experiments and tested if KCNQ1 V141 and I274 are close to L45, V47, or L48 in KCNE1. Residues V141 and I274 are the location of two of five known KCNQ1 gain-of-function mutations within the putative KCNE1-binding region between the VSD and PD: S140G (Chan et al., 2012; Chen et al., 2003a; Peng et al., 2017), V141M (Chan et al., 2012; Peng et al., 2017; Hong et al., 2005), I274V (Arnestad et al., 2007), A300T (Bianchi et al., 2000), V307L (Bellocq et al., 2004). For three of those mutations (V141M, I274V, V307L) a gain-of-function phenotype is observed only when KCNE1 is present, suggesting a physical interaction. Indeed, in cysteine exchange experiments, V141C was previously shown to crosslink with residues flanking the KCNE1 TMD on the extracellular side (Chung et al., 2009; Wang et al., 2011; Chan et al., 2012). We expanded upon these earlier studies and tested for disulfide bond formation between cysteines introduced at V141 or I274 in KCNQ1 and L45, V47, or L48 in KCNE1 using oxidation-state dependent electrophysiology measurements (Figure 2, Figure 2—figure supplements 1–3). L45, V47, and L48 were selected because their sidechains are oriented toward KCNQ1 in an earlier KCNQ1-KCNE1 model by Kang et al., 2008.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig2-v1.jpg)
+
+**Figure 2.:** (A) Whole-cell currents (left) and average current-voltage (I–V) relationships (right) of CHO-K1 cells transiently expressing KCNQ1 I274C and KCNE1 L45C. Cells were exposed to control bath solution containing DTT or Cu-phenanthroline (Cu-phen.). (mean ± SEM, Control n = 6, DTT n = 6, Cu-phen n = 5). (B) Whole-cell currents (left) and average I-V relationships (right) of CHO-K1 cells expressing KCNQ1 V141C and KCNE1 L48C, which were exposed to control bath solution, DTT, or Cu-phenanthroline, respectively. (Control n = 7, DTT n = 5, Cu-phen n = 5). Solid lines represent fits with a Boltzmann function (Itail/Itailmax = (1-IBottom) / (1+exp[(V1/2app-V)/k]) + IBottom) and the parameters of the fit are summarized in Supplementary file 1 – Table 1. Control measurements of KCNQ1 WT, V141C, and I274C with and without KCNE1 under reducing (+DTT) and oxidizing (+Cu-phen.) conditions are displayed in Figure 2—figure supplement 1 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Whole-cell currents (left) and average I-V relationships (right) of CHO-K1 cells expressing KCNQ1 WT, which were exposed to control bath solution, DTT, or Cu-phenanthroline (Cu-phen.), respectively. (mean ± SEM, Control n = 9, DTT n = 5, Cu-phen. n = 5) (B) Whole-cell currents and average I-V relationships of CHO-K1 cells expressing KCNQ1 V141C, which were exposed to control bath solution containing DTT or Cu-phenanthroline. (Control n = 13, DTT n = 7, Cu-phen. n = 5) (C) Whole-cell currents and average I-V relationships of CHO-K1 cells expressing KCNQ1 I274C measured with or without DTT or Cu-phenanthroline in the bath solution. (Control n = 12, DTT n = 7, Cu-phen. n = 7) Solid lines represent fits with a Boltzmann function (Itail/Itailmax = (1 - IBottom) / (1+exp[(V1/2app - V)/k]) + IBottom) and the parameters of the fit are summarized in Supplementary file 1 – Table 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Whole-cell currents (left) and average I-V relationships (right) of CHO-K1 cells expressing KCNQ1 and KCNE1 WT, which were exposed to control bath solution, DTT, or Cu-phenanthroline (Cu-phen.), respectively. (mean ± SEM, Control n = 10, DTT n = 4, Cu-phen. n = 6) (B) Whole-cell currents and average I-V relationships of CHO-K1 cells expressing KCNQ1 V141C and KCNE1 WT, which were exposed to control bath solution containing DTT or Cu-phenanthroline. (Control n = 18, DTT n = 12, Cu-phen. n = 9) (C) Whole-cell currents and average I-V relationships of CHO-K1 cells expressing KCNQ1 I274C and KCNE1 WT measured with or without DTT or Cu-phenanthroline in the bath solution. (Control n = 20, DTT n = 9, Cu-phen. n = 11) Solid lines represent fits with a Boltzmann function (Itail/Itailmax = (1 - IBottom) / (1+exp[(V1/2app - V)/k]) + IBottom) and the parameters of the fit are summarized in Supplementary file 1 – Table 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Average I-V relationships and activation curves of currents recorded from CHO-K1 cells transiently expressing KCNQ1 I274C and KCNE1 L48C. Cells were exposed to control bath solution, DTT, or Cu-phenanthroline (Cu-phen.), respectively. (mean ± SEM, Control n = 12, DTT n = 7, Cu-phen. n = 7) (B) Average I-V relationships and activation curves of currents measured from CHO-K1 cells transiently expressing KCNQ1 V141C and KCNE1 V47C, which were exposed to control bath solution, DTT, or Cu-phenanthroline (Cu-phen.), respectively. (mean ± SEM, Control n = 13, DTT n = 10, Cu-phen. n = 7) (C) Average I-V relationships and activation curves of CHO-K1 cells expressing KCNQ1 I274C and KCNE1 V47C with and without DTT or Cu-phenanthroline in the bath solution. (Control n = 8, DTT n = 6, Cu-phen n = 6) Solid lines represent fits with a Boltzmann function (Itail/Itailmax = (1 - IBottom) / (1+exp[(V1/2app - V)/k]) + IBottom) and the parameters of the fit are summarized in Supplementary file 1 – Table 1.
+
 The dual mutation KCNQ1 I274C+KCNE1 L45C led to a channel that was highly conductive under reducing conditions, but displayed lower peak current under oxidizing conditions (Figure 2A). This result indicates that disulfide bond formation between these cysteine-substituted residues trapped the KCNQ1-KCNE1 channel in a conformation that favors the closed state. In contrast, channels formed by co-expression of KCNQ1 V141C with KCNE1 L48C exhibited smaller current amplitude under reducing conditions (Figure 2B), indicating that disulfide bond formation between V141C and L48C favored the open state. These results are consistent with the prediction that L45 and L48 are in spatial proximity to KCNQ1 I274 and V141, respectively. The mutant KCNQ1 channels alone (Figure 2—figure supplement 1) or in the presence of WT KCNE1 (Figure 2—figure supplement 2) were insensitive to the addition of DTT or Cu-phenanthroline. Other KCNQ1-KCNE1 residue pairs tested (V141C-V47C, I274C-V47C, I274C-L48C) (Figure 2—figure supplement 3) showed no changes under reducing or oxidizing conditions. Together, these results show that the effect of DTT and Cu-phenanthroline is dependent on the presence of introduced cysteines at KCNQ1 residues V141, I274 and KCNE1 residues L48 and L45.
 
-## Development of integrated structural models of the KCNQ1-KCNE1 complex
+### Development of integrated structural models of the KCNQ1-KCNE1 complex
 
 The above experimental information and the structural data collected from the literature were used as contact restraints to develop structural models for the KCNQ1-KCNE1 complex by molecular docking. Separate restraint lists for building KCNQ1-KCNE1 channel models in closed and open states were compiled (Supplementary file 1 – Table 2 and 3). As input for docking, we used models of human KCNQ1 (Kuenze et al., 2019) with the VSD and PD in resting/closed (RC) or fully activated/open (AO) conformations. Those models were previously developed based on homology modeling with the structures of X. laevis KCNQ1 (Sun and MacKinnon, 2017) and the KV1.2/2.1 chimera (Long et al., 2007). The models have been recently confirmed by cryo-electron microscopy (EM)-determined structures of human KCNQ1 (Sun and MacKinnon, 2020), to which the model-predicted VSD and PD conformations are highly similar (Figure 3—figure supplement 1; Cα-RMSD for VSD and PD less than 1.9 Å and 2.0 Å, respectively). In the putative KCNE1-binding region used for docking, the homology models agree well with the cryo-EM structures; surface-exposed residues have a sidechain RMSD less than 2.5 Å and 4.0 Å in the RC and AO model, respectively (Figure 3—figure supplement 1). In addition, homology modeling provided a conformation for the VSD in the resting state, a state for which no experimental structure exists.
 
 Using Rosetta protein-protein docking (Gray et al., 2003; Gray, 2006) and Rosetta Membrane potentials (Yarov-Yarovoy et al., 2006; Barth et al., 2007), the ensemble of ten models of the NMR-determined KCNE1 TMD structure (S37-L71) (PDB: 2K21) (Kang et al., 2008) was docked to the KCNQ1 models (Kuenze et al., 2019). We focused our structural studies on the isolated KCNE1 TMD (including a short stretch of the N-terminal TMD-flanking region (S37-A44)) because previous studies had demonstrated that this domain alone is sufficient to produce the slow activation kinetics and increased current amplitude expected for KCNQ1-KCNE1 channels (Melman et al., 2001). Models were generated by iterative rounds of protein-protein docking (Figure 3—figure supplement 2), each with a rigid-body docking phase and an all-atom flexible backbone and sidechain refinement phase, resulting in a steady optimization of the model restraint score and minimization of the Rosetta-calculated binding energy (ΔGBinding) for the KCNQ1-KCNE1 interaction (Figure 3—figure supplement 3). The most favorably scoring models of the KCNQ1-KCNE1 complex in the RC and AO conformation that exhibit the best combined experimental restraint, Rosetta ΔGBinding, and MolProbity scores (Supplementary file 1 – Table 4) are illustrated in Figure 3. The atomic coordinates for these models are included in the supporting material for this paper (Supplementary files 2 and 3) and can be obtained from PDB-Dev (PDBDEV: 00000042) (Vallat et al., 2018).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic cartoon depicting the functional states of the VSD (green box) and PD (blue box) in the KCNQ1-KCNE1 models. The S4 helix (with positive gating charges “+”) and S4-S5L, which connects S4 to the PD, are shown as green and blue cylinders, respectively. KCNE1 was docked to KCNQ1 with the VSD/PD in the resting/closed (RC) or activated/open (AO) conformation. (B) Side view of the KCNQ1-KCNE1 docking models. KCNQ1 is represented with cylindrical helices and KCNE1 is depicted as yellow ribbon. Residues F57, T58, and L59 are drawn as spheres and colored light blue, red, and dark blue, respectively. The approximate position of the membrane bilayer is indicated by horizontal lines and the extracellular and intracellular side are labeled EXT and INT, respectively. (C) View of the KCNQ1-KCNE1 models from the extracellular side. KCNE1 is bound in a cleft between the VSD and PD and makes contacts to three KCNQ1 subunits. The position of the other three equivalent KCNE1-binding sites in the tetrameric KCNQ1 channel is indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Comparison of the PD from the Rosetta model of the resting/closed (RC) state with the PD from the cryo-EM model of the activated/closed (AC) conformation (PDB: 6V00). (B) Comparison of the PD from the Rosetta model of the activated/open (AO) state with the PD from the cryo-EM model of the AO conformation (PDB: 6V01). (C) Comparison of the VSD in an activated conformation from the Rosetta AO model with the VSD from the cryo-EM AC model (PDB: 6V00). (D) Comparison of one KCNQ1 subunit from the Rosetta RC model with the corresponding subunit from the cryo-EM AC model (PDB: 6V00). The RMSD was calculated excluding the S4 and S4-S5L helix because those two helices undergo conformational changes during transition from the resting (RC) to the activated (AC) state. (E) Comparison of one KCNQ1 subunit from the Rosetta AO model with the corresponding subunit from the cryo-EM AO model (PDB: 6V01). (F) Summary of the Cα-RMSD values (in Å) calculated for the structural comparisons in (A) to (E). (G) Comparison of the KCNE1-binding pocket from the Rosetta RC model with that from the cryo-EM AC model (PDB: 6V00). Surface-exposed sidechains are represented as sticks in the right panel. (H) Comparison of the KCNE1 binding pocket from the Rosetta AO model with that from the cryo-EM AO model (PDB: 6V01). (I) Summary of the backbone and sidechain RMSD values and rotamer similarity for surface-exposed residues depicted in the structural comparisons in (G) and (H). (J) Close-up views of surface-exposed residues in the KCNE1-binding region depicted in (G). Sidechain conformations in the Rosetta RC model are compared with those in the cryo-EM AC model and with the cryo-EM density map (EMD: 20966). Sidechains with a rotamer state that does not fit into the density are indicated with an arrow. (K) Close-up views of surface-exposed residues in the KCNE1-binding region depicted in (G). Sidechain conformations in the Rosetta AO model are compared with those in the cryo-EM AO model and with the cryo-EM density map (EMD: 20967).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Modeling was conducted in three stages: preparation of KCNE1 input structures and KCNQ1 homology models, iterative protein-protein docking and distance restraint score-based filtering for model generation, and visual model inspection and MD simulation for model analysis. Individual modeling steps are written within rounded rectangular boxes whereas the names of used algorithms and programs are within skewed rectangular boxes. Compare also with Materials and method details.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** For every model of KCNE1 docked to KCNQ1 in (A) the resting/closed or (B) activated/open conformation, the Rosetta binding energy (ΔGBinding) and protein-protein interface RMSD relative to the best scoring model is plotted. Colors represent the docking round (left) or a model’s atom pair restraint score (right), respectively.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Docking of the NMR-determined model of KCNE1 (S37–L71) (PDB: 2K21) (Kang et al., 2008) to the cryo-EM-determined open state model of KCNQ1 (PDB: 6V01) (Sun and MacKinnon, 2020). Left: Rosetta-binding energy (ΔGBinding) for KCNE1 versus the docking models’ interface RMSD (I-RMSD) and fraction of recovered contacts compared to the model developed by docking KCNE1 to the Rosetta homology model of the KCNQ1 open state structure. Right: Comparison of the best-scoring model obtained by docking KCNE1 to the cryo-EM model of KCNQ1 versus the Rosetta KCNQ1-KCNE1 model developed in this work. The I-RMSD between the two models is indicated. (B) Docking of the NMR-determined model of KCNE3 (P51–V85) (PDB: 2NDJ) (Kroncke et al., 2016) to the cryo-EM-determined open state model of human KCNQ1 (PDB: 6V01) (Sun and MacKinnon, 2020). Left: Rosetta binding energy for KCNE3 versus the docking models’ I-RMSD and fraction of recovered contacts compared to the cryo-EM model of the KCNQ1-KCNE3 complex. Right: Comparison of the best-scoring KCNQ1-KCNE3 docking model with the cryo-EM model of the KCNQ1-KCNE3 complex. (C) Docking of the NMR-determined model of KCNE3 (PDB: 2NDJ) (Kroncke et al., 2016) to the Rosetta homology model of the KCNQ1 open state structure. Left: Rosetta binding energy for KCNE3 versus the docking models’ I-RMSD and fraction of recovered contacts relative to the cryo-EM model of the KCNQ1-KCNE3 complex. Right: Structural model developed by docking KCNE3 to the Rosetta homology model compared to the cryo-EM-determined model for the KCNQ1-KCNE3 complex (PDB: 6V01) (Sun and MacKinnon, 2020).
 
 Within the KCNQ1-KCNE1 models, the KCNE1 TMD is bound in a cleft formed by S6 from one KCNQ1 subunit, S5, the P helix from a second subunit, and S1 and S4 from a third (Figure 3B+C). The N-terminal end of the KCNE1 TMD leans towards S1, S5, and S6, and its C-terminal end contacts S1 and the bottom of S4. The FTL motif resides deep in the membrane and is oriented toward KCNQ1 (Figure 3B+C). In the AO model, the KCNE1 TMD C-terminus forms additional interactions with the cytosolic end of S6, which is kinked toward the membrane. Those interactions are absent in the RC model, in which S6 extends more vertically into the cytoplasm. Other than these small differences, the KCNE1 TMD-binding mode within the RC and AO KCNQ1 channel is deemed similar.
 
@@ -70,23 +106,61 @@ To assure the robustness of our structure prediction protocol, control docking c
 
 In summary, using iterative protein-protein docking and model filtering with experimental restraints, we extensively probed the KCNQ1-KCNE1 interaction and developed molecular models of the channel complex that favorably agree with the available experimental data. These models were tested by the subsequent experimental and MD analysis.
 
-## Experimental validation of the KCNE1-binding site of KCNQ1
+### Experimental validation of the KCNE1-binding site of KCNQ1
 
 To gain further mechanistic insight into how KCNE1 and KCNQ1 interact, we analyzed the location and degree of their contacts by performing MD simulations of our structural models (Figure 5A and B, Figure 5—figure supplement 1) coupled with site-directed mutagenesis. For MD simulations, KCNQ1-KCNE1 models were prepared with a stoichiometry of 4:2 KCNQ1:KCNE1 subunits. This appears to be the predominant stoichiometry on the surface of mammalian cells (Plant et al., 2014), although the possibility for multiple ratios ranging from 4:1 to 4:4 has been discussed (Morin and Kobertz, 2008; Nakajo et al., 2010; Murray et al., 2016). In our modeling procedure, we did not expect to find changes in the KCNE1 interaction mode for different KCNQ1:KCNE1 ratios, because we first docked one KCNE1 molecule to tetrameric KCNQ1 and subsequently created 4:2 and 4:4 complexes by imposing C2 or C4 symmetry, respectively. In our final MD analysis, we focused on the 4:2 stoichiometry and observed no significant changes in the interaction mode between the two KCNE1 subunits and with respect to the model obtained by Rosetta docking.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig5-v1.jpg)
+
+**Figure 5.:** (A) Left: Surface representation of the KCNE1 binding cleft in the KCNQ1 RC model. Residues are colored by their average MD contact number with KCNE1 (indicated in parentheses). Right: Matrix of KCNQ1-KCNE1 contacts (bottom) and histogram of the number of intermolecular contacts for KCNE1 (top) (mean ± SD). (B) Left: Surface representation of the KCNE1 binding site in the KCNQ1 AO model with residues colored by their average MD contact number. Right: Matrix and histogram of the number of intermolecular contacts for KCNE1 (mean ± SD). (C) Interaction of KCNQ1 with the upper, middle, and lower part of the KCNE1 TMD. Three selected sites in KCNQ1 and their neighboring residues in KCNQ1 and KCNE1 are displayed: left – W323, middle – Y267, right – K362+N365. Residue sidechains are drawn as sticks and potential H-bond contacts are indicated by dashed lines. Histograms of the average MD contact number with KCNE1 for the selected residues in the KCNQ1 RC and AO model are shown next to the structural models. (D) Whole-cell currents of CHO-K1 cells stably expressing KCNE1 and transfected with KCNQ1 WT or mutant cDNA. (E) Normalized activation curves for currents recorded from cells expressing KCNQ1 WT or mutants. (mean ± SEM, WT n = 45, W323A n = 22, W323L n = 25, W323F n = 58, Y267F n = 22, K362A n = 31, N365A n = 24).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Side and extracellular views of the MD simulation box containing the KCNQ1-KCNE1 RC model. The KCNQ1-KCNE1 complex was embedded in a membrane bilayer containing 287 POPC molecules in the outer leaflet and 245 POPC and 28 PIP2 molecules in the inner leaflet. The system was hydrated with 53,265 water molecules and the charge was neutralized by adding 192 K+ and 146 Cl- ions (corresponds to 150 mM KCl). The KCNQ1-KCNE1 complex is shown in ribbon and surface representation. The lipid fatty acid chains are depicted by yellow sticks and the head group phosphates are represented as orange spheres. K+ and Cl- ions are displayed as gray and magenta spheres, respectively. (B) Side and extracellular views of the MD simulation box containing the KCNQ1-KCNE1 AO model. The KCNQ1-KCNE1 complex was embedded in a membrane bilayer containing 286 POPC molecules in the outer leaflet and 246 POPC and 28 PIP2 molecules in the inner leaflet. The system was hydrated with 47,051 water molecules and the charge was neutralized by adding 174 K+ and 128 Cl- ions (corresponds to 150 mM KCl). The same representation styles and colors for protein, lipids, and ions as in (A) are used. (C) Average Cα-atom RMSD for KCNQ1 and KCNE1 relative to the starting structure over the course of the MD trajectory. (D) Sidechain-sidechain distances between gating charge residues in S4 (R1–R6) and negatively charged residues in S2 (E160, E170) and S3 (D202) confirm the resting and activated VSD conformations in the KCNQ1 RC and AO model, respectively. Distances were measured between the geometric centers of the sidechain atoms: H2N = Cζ(NH2)-NεH-CδH2 (Arg), H3Nζ-CεH2 (Lys), Cγ-Nδ1-Cε1H-Nε2H-Cδ2H (His), HOOCγ-CβH2 (Asp), HOOCε-CγH2 (Glu). (E) Average pore radius of KCNQ1 calculated with the program HOLE (Smart et al., 1996). The shaded area corresponds to one standard deviation. The approximate radius of a K+ ion is indicated by a dashed line. Amino acid residues forming constriction sites along the channel pore are labeled. The region between 3 Å and 14 Å corresponds to the selectivity filter region.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Activation and deactivation times from fits to currents recorded from channels formed by KCNQ1 mutants + KCNE1 WT. (mean ± SEM, WT n = 9–58 (τact)/17–63 (τdeact), W323A n = 6–48/5–12, W323L n = 5–50/6–19, W323F n = 27–70/9–56, K362A n = 9–17/6–17, N365A n = 13–55/8–17, Y267F n = 8–46/7–10) (B) Activation and deactivation times from fits to currents recorded from channels formed by KCNQ1 WT + KCNE1 mutants. (mean ± SEM, WT n = 56–293 (τact)/42–261 (τdeact), V50A n = 21–48/4–42, F56A n = 7–35/4–24, L59A n = 7–44/4–24, L63A n = 4–27/4–29, I66A n = 15–41/11–35). Activation and deactivation times for KCNQ1-KCNE1 channels with KCNE1 mutations at Y46, F57, and Y65, respectively, are shown in Figure 7A. Time constants significantly different from those of KCNQ1 WT + KCNE1 WT are indicated (*p<0.001, Student’s t-test).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Rosetta KCNQ1-KCNE1 RC model (A) and AO model (B) with extended C-terminal ends for KCNQ1 S6 and KCNE1. Residues that were identified in cysteine-crosslinking (Lvov et al., 2010) and double mutant cycle experiments (Chen et al., 2020) to be in proximity are depicted as spheres.
+
 The first residues in the KCNE1 TMD and TMD-flanking region (S37-G50) interact with S1, the S1-S2 loop, the P helix, and S6 in both the RC and AO channel models (Videos 1 and 2, Supplementary file 1 – Table 5). Among those residues, the largest number of contacts with KCNE1 is made by W323 at the N-terminal end of S6 (Figure 5C, left panel). Mutations of W323 to Ala and Leu led to KCNQ1-KCNE1 channels with faster activation (Figure 5—figure supplement 2A) and a significantly hyperpolarized activation curve compared to the WT channel (change in ‘apparent’ activation V1/2 (see Materials and methods): ΔV1/2app,W323A = -6.4 mV, ΔV1/2app,W323L = -11.3 mV) (Figure 5D+E). Mutations of other residues in S6 (V324, V334 [Nakajo et al., 2011]) and in the nearby P helix (A300 [Bianchi et al., 2000], V307 [Bellocq et al., 2004]) also caused channel opening at more negative voltages, likely via destabilization of the closed state. This region has been implicated with the positive G(V) shift by KCNE1 (Nakajo et al., 2011). Mutation of W323 to Phe resulted in a WT-like channel (ΔV1/2app,W323F = 0.5 mV) suggesting that an aromatic or large hydrophobic moiety is an important structural component required for interaction of site 323 with KCNE1. Our structural model shows that the indole ring of W323 caps the sidechain of KCNE1 Y46, which is tucked in between S6 and the P helix (Figure 5C).
 
+![Video 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-video2.mp4.jpg)
+
 The middle part of the KCNE1 TMD (L51-Y65) interacts with S1 and S5 in both the RC and AO channel models (Figure 5A and B, Videos 1 and 2, Supplementary file 1 – Table 5). KCNE1 interacts in slightly different ways with the C-terminal end of S4 in the RC and AO models owing to the movement of S4 when the VSD becomes activated (Video 3). Among the KCNQ1 residues interacting with the middle part of the KCNE1 TMD, Y267 in S5 had the largest number of MD contacts with KCNE1. Our structural models suggest Y267 engages in an H-bond contact with the sidechain of T58 (Figure 5C, middle panel). We therefore used electrophysiology to experimentally confirm an interaction with KCNE1. Substitution of Y267 with Phe, which maintains the aromatic sidechain character but lacks a hydroxyl group, resulted in a significant alteration of the voltage-dependence of KCNQ1-KCNE1 activation (ΔV1/2app,Y267F = 13.5 mV) (Figure 5D+E). We also noted that channel activation was previously shown to be altered by Ala mutations at Y267 and other residues in S5, mostly L266 and F270 (Strutz-Seebohm et al., 2011), which underscores the importance of the S5-KCNE1 interface.
+
+![Video 3.](https://cdn.elifesciences.org/articles/57680/elife-57680-video3.mp4.jpg)
 
 At its cytosol-proximal end, the KCNE1 TMD interacts with the S0-S1 loop, S4, and, in the AO channel model, additionally with the loop connecting S4 and S4-S5L and with the C-terminal end of S6 (Figure 5C right panel, Videos 1 and 2). The latter interaction may specifically contribute to the stability of the open state by reducing the dynamics of S6 and locking the S6 gate open. To test this hypothesis, we introduced Ala mutations at K362 and N365 in S6, and determined the effect on the voltage-dependence of KCNQ1 activation. Both mutations resulted in significantly depolarized activation V1/2app (ΔV1/2app,K362A = 14.7 mV, ΔV1/2app,N365A = 14.7 mV) (Figure 5D+E) and significantly faster deactivation (Figure 5—figure supplement 2A), indicating that these mutant channels required more energy to open. A proximity between the C-terminal ends of the KCNE1 TMD and S6 is supported by the results of cysteine-crosslinking experiments (Lvov et al., 2010), which showed that H363C in KCNQ1 formed disulfide bonds with H73C, S74C, and D76C in KCNE1. While these residues were not included in our docking because of their location in a flexible linker region, they are close to the last KCNE1 residue in our models. Extending the models by five additional KCNE1 residues can bring H73, S74, and D76 in contact with H363 (Figure 5—figure supplement 3). Furthermore, using double mutant cycle analysis, Chen et al., 2020 recently suggested that H73, S74, and D76 can interact with another residue on S6, I368. This result can also be explained by our structural models (Figure 5—figure supplement 3). Interestingly, the sequence R360-Q361-K362-H363 has been observed to undergo a major conformational change during KCNQ1 gating (Sun and MacKinnon, 2020). This structural change has been associated with PIP2 binding (Sun and MacKinnon, 2020). Analysis of our KCNQ1-KCNE1 model suggests interaction with KCNE1 may play an additional stabilizing role to this channel-lipid interaction.
 
 Taken together, these results have identified several important interactions in the transmembrane KCNE1-binding site of KCNQ1. We next focused on identifying and validating the KCNE1 sites that interacted with KCNQ1 in the MD simulations.
 
-## Experimental validation of KCNE1 residues interacting with KCNQ1
+### Experimental validation of KCNE1 residues interacting with KCNQ1
 
 The KCNE1 residues observed in MD simulations to make many contacts with KCNQ1 include Y46, V47, L51, F54, F57, T58, I61, M62, and Y65 in both the RC and AO channel models (Figure 5A and B). Additionally, in the AO model, S64, I66, and K69 interact with KCNQ1 S6 (Figure 5C, right panel). Residues Y46 and Y65, which border the KCNE1 TMD on the extra- and intracellular side, respectively, make the most contacts (Figure 6, Figure 6—figure supplement 1). Y46 is tucked in between S6 and the P helix. Y65 occupies the space below S4 and the loop connecting S4 and S4-S5L. Interactions at those two outermost points appear to anchor KCNE1 in its binding cleft and define its helical orientation (Figure 6A, Videos 1 and 2). The FTL residues are in the interface with KCNQ1; F57 is packed against S5, T58 is deeply buried between S1, S4, and S5, and L59 directly interacts with S1 (Figure 6B, Videos 1 and 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig6-v1.jpg)
+
+**Figure 6.:** (A) Cartoon representation of the KCNE1 TMD and its surrounding helical segments in the KCNQ1 AO model. The KCNQ1-KCNE1 RC model is shown in Figure 6—figure supplement 1. Residues Y46, F57, and Y65, at which mutation to Ala or Leu led to a significant change in V1/2app of KCNQ1 activation (Figure 7), are drawn as spheres. (B) View of the KCNE1-KCNQ1 interface from the extracellular side at planes indicated in (A). KCNQ1-KCNE1 residue interactions in the RC and AO model are also shown in Videos 1 and 2, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cartoon representation of the KCNE1 TMD and its surrounding helical segments in the KCNQ1 RC model. The sidechains of residues Y46, F57, and Y65, at which mutation to alanine or leucine led to a significant change in V1/2app of KCNQ1 activation (see Figure 7), are shown in spheres. (B) View of the KCNQ1-KCNE1 interface from the extracellular side at planes indicated in (A).
+
 To validate this model-predicted binding mode, we correlated the pattern of KCNQ1-contacting positions in KCNE1 with site-directed mutagenesis data for KCNE1 (Figure 7). Exhaustive mutational scans of the KCNE1 TMD with Cys (Wang et al., 2012) or Trp and Asn (Chen and Goldstein, 2007) were previously reported. In addition, we tested Ala mutations at selected positions across the KCNE1 TMD and studied the mutational effects on voltage-dependent activation and gating kinetics of the resulting KCNQ1-KCNE1 channels (Figure 7A; Supplementary file 1 – Table 6). Aromatic residues were also mutated to Leu, and residues Y46 and Y65 were additionally changed to Phe.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig7-v1.jpg)
+
+**Figure 7.:** (A) Whole-cell currents measured from CHO-K1 cells transiently expressing KCNQ1 with KCNE1 WT or KCNE1 variants carrying mutations at residues Y46, F57, or Y65, respectively. Normalized activation curves are shown next to the currents (mean ± SEM, WT n = 270, Y46F n = 28, Y46L n = 14, Y46A n = 14, F57L n = 58, F57A n = 14, Y65F n = 23, Y65L n = 23, Y65A n = 18). Solid lines represent fits with a Boltzmann function (Itail/Itailmax = (1-IBottom) / (1+exp[(V1/2app-V)/k]) + IBottom) with the parameters of the fit summarized in Supplementary file 1 – Table 6. Activation time constants (τact) and deactivation time constants (τdeact) from fits to currents at each potential (WT n = 56–293, Y46F n = 8–36, Y46L n = 15–32, Y46A n = 22–30, F57L n = 58–66, F57A n = 3–17, Y65F n = 4–24, Y65L n = 17–57, Y65A n = 10–29). Time constants significantly different from those of WT KCNQ1+KCNE1 are indicated (*p<0.001, Student’s t-test). (B) Change in residual solvent-accessible surface area (ΔSASA) between KCNE1 alone and KCNE1+KCNQ1 calculated from MD simulations of the KCNQ1-KCNE1 RC and AO model (mean ± SD). ΔSASA values > 20% are shown with blue bars and indicate that a residue is part of the KCNQ1-KCNE1 interface. The approximate region of the KCNE1 TMD is indicated in gray. (C) Change in voltage-dependence of KCNQ1 activation by mutations in KCNE1. ΔV1/2 values of Trp and Asn mutants were previously reported by Chen and Goldstein, 2007, and those of Cys mutants are from Wang et al., 2012. In the latter case, experiments were performed with WT or Cys-less KCNQ1 (Q1*). Positions where mutations led to a significant change in V1/2 (|V1/2|>20 mV for KCNE1 expressed in oocytes in previous studies (Wang et al., 2012; Chen and Goldstein, 2007), |V1/2|>10 mV for KCNE1 expressed in CHO-K1 cells in this study) are indicated (■). (mean, *p<0.001, Student’s t-test).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic showing the definition of the helical screw axis in KCNE1 and associated rotation angle θ. High-impact mutation sites in the KCNE1 TMD with |ΔV1/2| > |ΔV1/2|threshold (see Figure 7C) are shown as red spheres in the structural model. (B) KCNE1 residues are grouped according to their change in solvent-accessible surface area (ΔSASA) between KCNE1 alone and KCNE1 bound to KCNQ1, and their |ΔV1/2| values are plotted. The group average is indicated by a black line. The rank correlation between ΔSASA and |ΔV1/2| for the KCNE1 orientation predicted by the structural models in this work (θ = 0°) is compared to cases where KCNE1 is rotated 90° or 180° in the clockwise or anticlockwise direction. (C) Receiver operating characteristic (ROC) curves for classifying a KCNE1 position as high-impact mutation site based on its residue ΔSASA value. A ROC curve above the dashed line indicates that in this orientation residues with high ΔSASA value (i.e. KCNQ1-contacting residues) coincide with high-impact mutation sites better than with 50% chance. (D) Summary of the statistics computed for the classification tasks in (B) and (C) for the model-predicted and three other hypothetical KCNE1 helix orientations: Spearman rank correlation coefficient with associated p-value, area under the ROC curves (AUC), and p-value for the χ2 test of independence of the frequencies of KCNQ1-contacting and high-impact mutations sites using a ΔSASA cutoff of 20%.
 
 We defined KCNQ1-contacting positions in KCNE1 by calculating the relative change in solvent-accessible surface area (ΔSASA) owing to KCNQ1-KCNE1 binding at every position in KCNE1 (Figure 7B). Residues with >20% ΔSASA are partially or fully buried in the KCNQ1-KCNE1 interface and expected to be more sensitive to mutation. We observed a fairly good match between the pattern of KCNE1 interface positions (in both the RC and AO model) and the location of high-impact mutation sites (according to a |ΔV1/2| threshold criterion; see legend to Figure 7). 87% (14/16) of the high impact mutation sites in KCNE1 were located at the interface with KCNQ1 (ΔSASA >20%), and 71% (5/7) of the positions with low impact on channel activation were solvent-exposed (ΔSASA <20%) (Figure 7C). Thus, there is a clear dependence between KCNQ1-contact sites and high-impact mutation sites in KCNE1 for the orientation proposed by the structural models (p<0.05, χ2-test). However, no significant correlation was found when we simulated other hypothetical orientations for KCNE1 by rotation around its helical screw axis (Figure 7—figure supplement 1). This result and the following in-depth mutational analysis of selected KCNE1 residues support the model-predicted binding mode for KCNE1.
 
@@ -96,7 +170,7 @@ Mutations at F57 and Y65 also had a significant impact on KCNQ1-KCNE1 function (
 
 Taken together, these results have identified several KCNE1 residues that interact with KCNQ1. We next focused on the interactions of the KCNE1 FTL motif and compared them with those of the TVG motif in KCNE3.
 
-## Comparison of the KCNE1 TMD-binding mode with that of KCNE3
+### Comparison of the KCNE1 TMD-binding mode with that of KCNE3
 
 KCNE1 FTL (F57-T58-L59) is essential to induce slow activation of KCNQ1 (Melman et al., 2001; Melman et al., 2002). A hydroxylated amino acid at the middle position of this motif was previously found to be necessary for this effect (Melman et al., 2002). Replacement of FTL with TVG from KCNE3 shifts the G(V) curve of KCNQ1-KCNE1 channels towards that of KCNQ1-KCNE3 and removes KCNE1-specific effects on the gate and S4 movement (Barro-Soria et al., 2017). The proposed mechanism responsible for this effect is direct binding of FTL to the PD in KCNQ1 (Melman et al., 2004; Panaghie et al., 2006), and changed binding upon mutation to TVG. However, later studies have failed to confirm a direct interaction (Xu et al., 2013). Our refined models of the KCNQ1-KCNE1 complex together with recently released structures of the KCNQ1-KCNE3 complex (Sun and MacKinnon, 2020) provide new insight into the binding and mode of action of the activation motifs from KCNE1 and KCNE3.
 
@@ -108,9 +182,31 @@ How KCNE subunits modify KCNQ1 function in such profoundly different ways is a l
 
 We found that KCNE1 FTL binds in a cleft between the KCNQ1 S1 (F127, F130), S4 (V241), and S5 (I263, L266, Y267 and F270) in both the RC and AO conformation (Figure 8D, Figure 9A and B). This binding mode places the activation motif in proximity to the conserved PAG (P343-A344-G345) motif in S6 – a segment that undergoes critical conformational changes during channel gating. Gating occurs as a consequence of S6 bending at the PAG motif, which causes S6 to swing away from the channel axis, opening the cytosolic gate. While the FTL residues are not in direct contact with S6, our structural model suggests that they can affect the nearby PAG motif through the mediation of S5 (Figure 9D, Video 3). Alanine mutational scanning of S5 previously showed that the V1/2 shift of KCNQ1 activation by KCNE1 is reduced by mutations Y267A and F270A, and to a smaller extent by L271A, I274A, and F275A (Strutz-Seebohm et al., 2011). Mutation F270A also altered the volume-dependency of V1/2 changes resulting from substitution of KCNE1 T58 with amino acids of different size (Strutz-Seebohm et al., 2011). Furthermore, KCNE1 FTL was responsible for the suppression of constitutive currents in KCNQ1 channels with mutation I268A, even in cases of functionally decoupled voltage sensor and pore domains (Barro-Soria et al., 2017). These data are consistent with binding of FTL to this region on S5 leading to triggering of changes in the activation gate of KCNQ1. Indeed, dynamical network analysis of our MD simulations shows that S5 connects KCNE1 T58 with KCNQ1 S6 through several short pathways in a residue interaction network (Figure 9—figure supplement 1A and B). These allosteric interactions could alter the conformational dynamics of S6 around the PAG motif and influence gate opening.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig8-v1.jpg)
+
+**Figure 8.:** (A) Left: KCNE1 model bound to KCNQ1 in the RC conformation. Right: Experimental structure of KCNE3 (Sun and MacKinnon, 2020) bound to KCNQ1 in a decoupled state with an activated VSD and a closed PD (PDB: 6V00). KCNE1 residues Y46, F57, T58, L59, Y65, and the corresponding residues in KCNE3 are shown in spheres. (B) Left: KCNE1 model in complex with KCNQ1 in the AO conformation. Right: Experimental structure of KCNE3 (Sun and MacKinnon, 2020) bound to KCNQ1 with an activated VSD and an open PD (PDB: 6V01). (C) Residue neighborhood around Y46 in KCNE1 and its homologous residue Y60 in KCNE3. (D) Binding site of KCNE1 FTL and KCNE3 TVG. The putative H-bond between KCNQ1 Y267 and KCNE1 T58 is indicated by a dashed line. (E) Residue neighborhood around Y65 in KCNE1 and its homologous residue Y79 in KCNE3. (F) Occurrence of the Y267-T58 H-bond in MD simulations of the KCNQ1-KCNE1 RC and AO model.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Whole-cell currents of wildtype KCNQ1-KCNE1 channel and KCNQ1 Y267F–KCNE1 T58V. (B) Normalized activation curves for KCNQ1-KCNE1, KCNQ1 Y267F–KCNE1, KCNQ1–KCNE1 T58V, and KCNQ1 Y267F–KCNE1 T58V. From Boltzmann function fits, the following free energy changes of channel opening were obtained: ΔGY267F = 0.66 kcal/mol, ΔGT58V = -0.36 kcal/mol, ΔGY267F/T58V = 0.90 kcal/mol. The coupling energy was calculated as ΔΔG = ΔGY267F/T58V – (ΔGY267F + ΔGT58V) = 0.60 kcal/mol. (mean ± SEM, WT/WT n = 70, Y267F/WT n = 32, WT/T58V n = 24, Y267F/T58V n = 11).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig9-v1.jpg)
+
+**Figure 9.:** (A) KCNE1/3 binding cleft in unbound KCNQ1 (PDB: 6UZZ) (Sun and MacKinnon, 2020). Residues on S1, S4, and S5, which surround FTL in the KCNQ1-KCNE1 model and TVG in the KCNQ1-KCNE3 structure, as well as residues in the S6 helix are shown. (B) Predicted binding mode of the KCNE1 FTL as discussed in the text. Potentially interacting residues are indicated and their distances are labeled. (C) Binding mode of the KCNE3 TVG observed in the KCNQ1-KCNE3 structure (PDB: 6V00). The distances to potentially interacting residues are labeled. (D) Schematic representation of the interactions induced by binding of KCNE1 (blue arrows) and KCNE3 (olive arrows), respectively. The expected relative strength of an interaction computed with the Rosetta energy function is indicated by the arrow thickness (Rosetta energy unit, REU). KCNE1/3 binding may be allosterically coupled to S6 as supported by previously reported functional interactions of KCNE3 with S338, and KCNE1 with F339 and F340 (Melman et al., 2004; Panaghie et al., 2006). Those interactions may affect S6 kinking at the PAG motif and influence gate opening.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Residue interaction networks calculated from MD simulations of the KCNQ1-KCNE1 RC (left) or AO model (right), respectively. Network edges between residues are drawn as solid lines. Smaller subnetworks (termed communities) partition the original network and are shown in different colors. Communities correspond to regions of the protein complex which move in a concerted fashion. Pathways in the network connecting KCNE1 T58 and KCNQ1 F340 are colored blue. The shortest path between T58 and F340 is shown in red. (B) Betweenness centrality (BC) of residues along pathways connecting T58 and F340 in the KCNQ1-KCNE1 RC (left) or AO model (right), respectively. Betweenness centrality corresponds to the number of shortest paths from all nodes to all others that pass through that residue. Thus, residues with higher betweenness are important for communication within the protein. Residues with high betweenness are in S5, S6, and KCNE1. (C) Rosetta interface scores (I_sc) for the interaction of KCNQ1 S5 with KCNE1 or KCNE3, respectively. Residues are colored according to their I_sc values (white: 0 REU, red: ≤−3.0 REU) (indicated in parentheses). (D) Computationally predicted changes of the interface score for KCNQ1-KCNE1 and KCNQ1-KCNE3, respectively, after substituting each S5 residue for alanine. Data represent the mean ± SEM interface score change of 30 independent Rosetta FlexddG (Barlow et al., 2018) calculations.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/57680/elife-57680-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Multiple sequence alignment of the TMD from KCNE1-5. Similar and identical amino acid residues are colored yellow and red, respectively. The position of the ‘activation motif’, which corresponds to FTL in KCNE1, is indicated. (B) Sequence identity and similarity calculated over the TM region in (A) between KCNE family members.
+
 There are several lines of experimental evidence that support this model. KCNQ1 residues F339 and F340, which are one helix turn before the PAG motif, were shown to be energetically coupled to KCNE1 T58 based on double mutant cycle analysis (Strutz-Seebohm et al., 2011; Li et al., 2015). This is in accord with our dynamical network analysis (Figure 9—figure supplement 1A and B) and with the observation that mutations at either F339, F340, or T58 produce similar functional outcomes (Melman et al., 2004). Furthermore, the phenotype of some mutations in S6 can be altered or rescued by KCNE1: non-functional KCNQ1 A341V mutant channels can be rendered functional when co-expressed with KCNE1 (Mikuni et al., 2011), and constitutively active F340W channels can be suppressed by mutation at KCNE1 T58 (Panaghie et al., 2006), which points to an effect of KCNE1 on the channel gate. Previously, these data were taken as evidence for a direct physical contact between T58 and S6, leading to a model in which KCNE1 lies close to or forms a part of the KCNQ1 PD (Tapper and George, 2001; Melman et al., 2004; Strutz-Seebohm et al., 2011; Li et al., 2015). However, our KCNQ1-KCNE1 models, in accord with structures of the related KCNQ1-KCNE3 complex (Sun and MacKinnon, 2020), indicate that KCNE1 is too far away to directly contact the middle region of S6. Instead, we propose an allosteric mechanism for control of KCNQ1 gating, in which binding of the FTL motif influences the conformational state of the S6 PAG motif by interacting with S5, which then directly impacts the key gating residues in S6 (Figure 9D, Video 3).
 
 Comparison of the binding modes of KCNE1 and KCNE3 also suggests how the activation motifs of these proteins could trigger different effects on the KCNQ1 gate through mediation of S5. We observed different interactions are made by the KCNE1 FTL versus the KCNE3 TVG (Figure 9B+C, Video 4). KCNE1 F57 and L59 are much bulkier than the corresponding KCNE3 residues, T71 and G73, possibly leading to different steric effects on neighboring residues in KCNQ1 S1 and S5. Furthermore, the model predicts an H-bond between KCNE1 T58 and KCNQ1 Y267, which is absent for KCNE3 V72. Replacing V72 with a hydroxylated amino acid could restore this H-bond interaction, which offers an explanation why the KCNE3 V72T mutant leads to channel properties akin to KCNQ1-KCNE1 (Melman et al., 2002). Scoring with the Rosetta energy function suggests a larger binding free energy for FTL compared to TVG (Figure 9D, Figure 9—figure supplement 1C) and a decrease of binding by Ala mutations of residues in S5 (Figure 9—figure supplement 1D). Together these observations support the notion that FTL and TVG induce distinct interactions of varying strength with S5 that determine the effect of the KCNE subunits on the S6 gate.
+
+![Video 4.](https://cdn.elifesciences.org/articles/57680/elife-57680-video4.mp4.jpg)
 
 The outlined mechanistic model agrees qualitatively with observations from Barro-Soria et al., 2017, who showed that KCNE1 and KCNE3 have different effects on the VSD and PD. While KCNE1 acts both on the VSD and PD, shifting S4 movement to more negative potentials and gate opening to more positive potentials, KCNE3 mainly affects the VSD (Barro-Soria et al., 2017), effectively eliminating gating by stabilizing the intermediate and fully activated VSD states (Sun and MacKinnon, 2020; Kroncke et al., 2016). The FTL and TVG motifs were found to determine whether the KCNE subunits affect the gate and the second S4 movement that is seen in voltage clamp fluorometry studies of KCNQ1-KCNE1 and correlates with the opening of KCNQ1-KCNE1 channels (Barro-Soria et al., 2017). This can be explained by the differences in the interaction modes between FTL and TVG seen in our models. Furthermore, significantly less contacts are observed for FTL or TVG with S4 (only KCNQ1 V241 is within van der Waals distance of either T58 or V72) (Figure 8D), which is consistent with the notion that these sites have minimal impact on S4 movement. This is in contrast to other residues in KCNE1 and KCNE3, one to two helix turns C-terminal to FTL and TVG, which make direct contacts with S4, explaining how both KCNE proteins affect S4 movement (Panaghie and Abbott, 2007; Nakajo and Kubo, 2007; Rocheleau and Kobertz, 2008; Osteen et al., 2010; Ruscic et al., 2013; Barro-Soria et al., 2014; Barro-Soria et al., 2015).
 
@@ -122,7 +218,227 @@ In summary, our results imply that all KCNE subunits interact with KCNQ1 by adop
 
 ## Materials and methods
 
-## Computational docking of KCNE1 to KCNQ1
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1</td>
+      <td>ATCC Manassas, VA</td>
+      <td>RRID:SCR_001672</td>
+      <td>Expression cell line</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>KCNQ1</td>
+      <td>HUGO Gene Nomenclature Committee (HGNC)</td>
+      <td>Gene ID: 3784; HGNC:629</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>KCNE1</td>
+      <td>HUGO Gene Nomenclature Committee (HGNC)</td>
+      <td>Gene ID: 3753; HGNC:624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Nucleobond Xtra Maxi EF</td>
+      <td>Macherey-Nagel Inc, Bethlehem, PA</td>
+      <td>Cat. # NC00089196</td>
+      <td>Used to isolate DNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-EGFP</td>
+      <td>BD Biosciences-Clontech Mountain View, CA</td>
+      <td></td>
+      <td>Used to express KCNQ1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-Scarlet</td>
+      <td>PMID:19687231</td>
+      <td></td>
+      <td>Used to express KCNE1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QuikChange II XL</td>
+      <td>Agilent technologies Santa Clara, CA</td>
+      <td>Cat. # 200521</td>
+      <td>Used to generate channel protein variants</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene six transfection reagent</td>
+      <td>Promega Corporation Madison, WI</td>
+      <td>Cat. # E2691</td>
+      <td>Used to transfect cDNAs</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ 303</td>
+      <td>TOCRIS Minneapolos, MN</td>
+      <td>Cat. # 3899</td>
+      <td>Chemical compound, drug</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft Redmon, WA</td>
+      <td></td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PatchController</td>
+      <td>Nanion Technologies Munich, Gemany</td>
+      <td></td>
+      <td>Electrophysiology data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DataController</td>
+      <td>Nanion Technologies Munich, Gemany</td>
+      <td></td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Axon Instruments Sunnyvale, CA</td>
+      <td>RRID:SCR_011323</td>
+      <td>Electrophysiology data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Axon Instruments Sunnyvale, CA</td>
+      <td>RRID:SCR_011323</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sigmaplot</td>
+      <td>SPSS San Jose, CA</td>
+      <td>RRID:SCR_003210</td>
+      <td>Data plotting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software San Diego, CA</td>
+      <td>RRID:SCR_000306</td>
+      <td>Data analysis and plotting</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ROSETTA (version 3.9)</td>
+      <td>PMID:21187238 URL: https://www.rosettacommons.org/</td>
+      <td>RRID:SCR_015701</td>
+      <td>Protein-protein docking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>PMID:17452350 URL: http://molprobity.biochem.duke.edu</td>
+      <td>RRID:SCR_014226</td>
+      <td>Analysis of docking models</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM-GUI</td>
+      <td>PMID:25130509 URL: http://www.charmm-gui.org</td>
+      <td></td>
+      <td>Preparation of MD system</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMBER 16</td>
+      <td>PMID:16200636 URL: https://ambermd.org</td>
+      <td>RRID:SCR_014230</td>
+      <td>Program for execution of MD simulations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CPPTRAJ</td>
+      <td>PMID:26583988 URL: https://ambermd.org/AmberTools.php</td>
+      <td></td>
+      <td>Tools for analysis of MD trajectories</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Antechamber</td>
+      <td>PMID:16458552 URL: https://ambermd.org/AmberTools.php</td>
+      <td></td>
+      <td>Parameterization of PIP2 lipid molecule</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gaussian 09</td>
+      <td>Gaussian, Inc, Wallingford CT URL: https://gaussian.com</td>
+      <td>RRID:SCR_014897</td>
+      <td>Parameterization of PIP2 lipid molecule</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC URL: https://pymol.org/</td>
+      <td>RRID:SCR_000305</td>
+      <td>Visualization of KCNQ1-KCNE1 models</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD</td>
+      <td>PMID:8744570 URL: https://www.ks.uiuc.edu/Research/vmd/</td>
+      <td>RRID:SCR_001820</td>
+      <td>Visualization of MD simulations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>PMID:9195488 URL: http://www.holeprogram.org</td>
+      <td></td>
+      <td>Calculation of channel pore radius</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NACCESS</td>
+      <td>URL: http://wolf.bms.umist.ac.uk/naccess/</td>
+      <td></td>
+      <td>SASA calculation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NetworkView Plugin for VMD</td>
+      <td>PMID:22982572 URL: https://www.ks.uiuc.edu/Research/ vmd/plugins/networkview/</td>
+      <td></td>
+      <td>Network analysis of MD simulations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Anaconda</td>
+      <td>Anaconda Software Distribution. Computer software. Vers. 2–2.4.0. Anaconda, Inc URL: https://www.anaconda.com</td>
+      <td></td>
+      <td>Data plotting</td>
+    </tr>
+  </tbody>
+</table>
+
+### Computational docking of KCNE1 to KCNQ1
 
 Molecular models of the KCNQ1-KCNE1 complex were developed by computational docking with Rosetta (version 3.9) (Leaver-Fay et al., 2011; Figure 3—figure supplement 2). KCNE1 was docked to human KCNQ1 models of the closed state with the VSD and PD in resting and closed (RC) conformations and to models of the open state with the VSD and PD in fully activated and open (AO) conformations. Molecular modeling was guided by contact restraints derived from the results of disulfide crosslinking and site-directed mutagenesis experiments, which were obtained in this study or collected from previous literature reports (Tapper and George, 2001; Chung et al., 2009; Wang et al., 2011; Chan et al., 2012; Wang et al., 2012; Strutz-Seebohm et al., 2011; Li et al., 2015). Two separate restraint lists for docking of KCNE1 to either the closed or open KCNQ1 model were compiled based on the functional annotation of the channel state under the experimental conditions. A crosslink restraint was assigned the closed or open conformation if it trapped the channel in the closed or open state, respectively, or both conformations if the channel state was unclear. For example, Chung and coworkers (Chung et al., 2009) reported that disulfide crosslinks KCNE1 K41–KCNQ1 I145 and KCNE1 L42–KCNQ1 V324 favored the open state, whereas crosslinks KCNE1 K41–KCNQ1 V324 and KCNE1 L42–KCNQ1 I145 stabilized the closed state. Similarly, Wang et al., 2011 concluded, in the closed state, KCNQ1 residues T144, I145, Q147 are preferably crosslinked to KCNE1 R36-E43, whereas in the open state, those positions in KCNQ1 crosslink with KCNE1 G40, and KCNQ1 Q147 can be disulfide-bonded to KCNE1 R36, G38, and K41. Complete restraint lists for development of the closed and open KCNQ1-KCNE1 model can be found in Supplementary file 1 – Table 2 and 3, respectively.
 
@@ -130,13 +446,13 @@ Prior to docking, the TMD and a short stretch of the N-terminal juxtamembrane do
 
 For MD simulations, KCNQ1-KCNE1 models were prepared with a stoichiometry of 4:2 KCNQ1:KCNE1 subunits. This appears to represent the predominant stoichiometry on the surface of mammalian cells (Plant et al., 2014), although the possibility of multiple stoichiometries ranging from 4:1 to 4:4 has been discussed (Plant et al., 2014; Morin and Kobertz, 2008; Nakajo et al., 2010; Murray et al., 2016; Chen et al., 2003b). The docked conformation of KCNE1 was duplicated and aligned with the opposite half of KCNQ1 by 180° rotation around the central channel axis. Subsequently, the interface of both KCNE1 molecules with KCNQ1 was relaxed by sidechain rotamer repacking and energy minimization of all backbone and sidechain degrees of freedom in Rosetta. Representative KCNQ1-KCNE1 complex models (with 4:2 stoichiometry) are provided with the supporting material to this paper (Supplementary file 2 and 3) and can be obtained from PDB-Dev under accession number PDBDEV_00000042. Restraints used in docking and starting model coordinates can be obtained from https://doi.org/10.5281/zenodo.3598943.
 
-## MD simulations of KCNQ1-KCNE1 models
+### MD simulations of KCNQ1-KCNE1 models
 
 MD simulations of KCNQ1-KCNE1 models were performed in explicit phospholipid membranes at 310 K with AMBER16 (Case et al., 2016) employing the ff14SB (Maier et al., 2015) force field for proteins and the Lipid17 force field (Gould IR, Skjevik AA, Dickson CJ, Madej BD, Walker RC, 2018, "Lipid17: A Comprehensive AMBER Force Field for the Simulation of Zwitterionic and Anionic Lipids", manuscript in preparation). As starting conformations for MD, the Rosetta model with the best combined ΔGBinding and MolProbity scores and two additional low-energy models from the ensemble of Rosetta docking models were selected, and prepared with a 4:2 KCNQ1:KCNE1 stoichiometry, as described above. Models were aligned to the membrane normal using the PPM webserver (Lomize et al., 2012) and embedded into bilayers of POPC (palmitoyloleoyl-phosphatidylcholine) and PIP2 (phosphatidyl-4,5-bisphosphate) (~280 lipids per leaflet) using the membrane builder tool of the CHARMM-GUI website (Wu et al., 2014). A TIP3P water layer with 24 Å thickness containing 150 mM of KCl was added on either side of the membrane. In addition, four K+ ions were placed in the channel selectivity filter at positions inferred from the X-ray structure of KV1.2–2.1 (PDB: 2R9R). Bilayers contained 10 mol% of PIP2 in the inner leaflet which comprised equal numbers of C4-PO4- and C5-PO4-mono-protonated PIP2 molecules with stearoyl and arachidonoyl conjugations at the sn-1 and sn-2 position. The geometry of PIP2 was optimized with Gaussian 09 (Gaussian, Inc, Wallingford CT) on the B3LYP/6–31G** level of theory, and assignment of AMBER atom types and calculation of RESP charges was done with Antechamber (Wang et al., 2006). Bond and angle parameters of the protonated C4-PO4 or C5-PO4 group in PIP2 were adjusted to values previously reported for phosphorylated amino acids (Homeyer et al., 2006) to avoid simulation instabilities. SHAKE (Ryckaert et al., 1977) bond length constraints were applied to all bonds involving hydrogen. Nonbonded interactions were evaluated with a 10 Å cutoff, and electrostatic interactions were calculated by the particle-mesh Ewald method (Darden et al., 1993).
 
 Each MD system was first minimized for 15,000 steps using steepest descent followed by 15,000 steps of conjugate gradient minimization. With protein and ions restrained to their initial coordinates, the lipid and water were heated to 50 K over 1000 steps with a step size of 1 fs in the NVT ensemble using Langevin dynamics with a rapid collision frequency of 10,000 ps−1. The system was then heated to 100 K over 50,000 steps with a collision frequency of 1000 ps−1 and finally to 310 K over 200,000 steps and a collision frequency of 100 ps−1. After changing to the NPT ensemble, restraints on ions were gradually removed over 500 ps and the system was equilibrated for another 5 ns at 310 K with weak positional restraints (with a force constant of 1 kcal mol−1 Å−2) applied to protein Cα atoms. The protein restraints were then gradually removed over 10 ns, and production MD was conducted for 450 ns using a step size of 2 fs, constant pressure periodic boundary conditions, anisotropic pressure scaling and Langevin dynamics. Four independent simulations were carried out for the RC and AO KCNQ1-KCNE1 model yielding 1.80 µs of total MD data for each state. Representative snapshots from the MD simulations can be obtained from https://doi.org/10.5281/zenodo.3598943.
 
-## Analysis of KCNQ1-KCNE1 MD simulations
+### Analysis of KCNQ1-KCNE1 MD simulations
 
 Analysis of MD trajectories with CPPTRAJ (version 18.0) (Roe and Cheatham, 2013) included calculation of Cα-atom root-mean-square deviations (Cα-RMSD), enumeration of protein-protein hydrogen bonds, measurement of residue pair distances in the VSD, and counting of intermolecular contacts between KCNQ1 and KCNE1. Residue contact numbers were calculated by counting within a 4 Å radius of a given KCNQ1 or KCNE1 residue the number of heteroatoms from the other protein binding partner (i.e. the contact number of a KCNE1 residue was calculated by counting the number of atoms from KCNQ1 that were within 4 Å and vice versa). The residue contact number was then averaged over both KCNE1 molecules in all MD trajectories of the RC or AO KCNQ1-KCNE1 model, respectively.
 
@@ -144,7 +460,7 @@ Measurement of the channel pore radius was carried out with the HOLE program (Sm
 
 Dynamical network analysis was performed with the Network View plugin (Eargle and Luthey-Schulten, 2012) in VMD (Humphrey et al., 1996). A node in the network was assigned to every amino acid in KCNQ1 and KCNE1 centered at their Cα atom. Network edges were defined between nodes whose residues were within 4.5 Å distance for at least 75% of the MD trajectory. The last 400 ns of simulation were used for the analysis. Edge weights were derived from the pairwise residue correlation matrix calculated with the program Carma (Glykos, 2006). Network communities were determined with the Girvan-Newman algorithm (Girvan and Newman, 2002) implemented in the program gncommunities as part of the Network View plugin (Eargle and Luthey-Schulten, 2012).
 
-## Control docking calculations for KCNE1 and KCNE3
+### Control docking calculations for KCNE1 and KCNE3
 
 To check whether use of homology models of KCNQ1 as input for docking affected structure prediction of the KCNQ1-KCNE1 complex, docking calculations were also carried out with the cryo-EM-determined structure of human KCNQ1 (Sun and MacKinnon, 2020), which was released after the KCNQ1-KCNE1 models of this work were completed. In addition, docking calculations were performed with KCNE3 to assure that our computational protocol could recapitulate the experimentally observed structure for the KCNQ1-KCNE3 complex.
 
@@ -152,15 +468,15 @@ Prior to docking, the cryo-EM-determined open state structure of human KCNQ1 bou
 
 Similarly, ten models of the KCNE3 TMD NMR structure (P51-V85) (PDB: 2NDJ) (Kroncke et al., 2016) were docked to both the cryo-EM and Rosetta KCNQ1 AO model using the same computational protocol and published experimental restraints for the KCNQ1-KCNE3 complex (Kroncke et al., 2016). Similarity between the docking model and experimental KCNQ1-KCNE3 structure was assessed based on the all-atom interface RMSD and fraction of native contacts recovered.
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 Chinese hamster ovary cells (CHO-K1, CRL 9618, American Type Culture Collection, Manassas VA, USA) were grown in F-12 nutrient medium (GIBCO/Invitrogen, San Diego, CA, USA) supplemented with 10% fetal bovine serum (ATLANTA Biologicals, Norcross, GA, USA), penicillin (50 units/mL), streptomycin (50 μg/mL) at 37°C in 5% CO2. The identity of CHO-K1 cells was certified by American Type Culture Collection using Cytochrome C Oxidase (COI) assay testing. Cells were negative for mycoplasma contamination and are regularly tested using the MycoAlert PLUS Mycoplasma Detection Kit (Lonza, Rockville, MD, USA). Unless stated otherwise, all tissue culture media was obtained from Life Technologies, Inc (Grand Island, NY, USA). CHO-K1 cells constitutively expressing human KCNE1 (designated CHO-KCNE1 cells) were generated using the FLP-in system (Thermo Fisher Scientific, Waltham, MA, USA) and maintained under selection with hygromycin B (600 μg/mL) as described previously (Vanoye et al., 2018).
 
-## Plasmids and heterologous expression
+### Plasmids and heterologous expression
 
 KCNQ1 cDNA (GenBank accession AF000571) was engineered in the pIRES2-EGFP expression vector (BD Biosciences-Clontech, Mountain View, CA, USA) or a modified pIRES2-mScarlet vector, and KCNE1 cDNA (GenBank accession L28168) was cloned into a pIRES2-DsRed-MST vector as described previously (Vanoye et al., 2018; Lundquist et al., 2005; Manderfield and George, 2008). These vectors allowed co-expression of KCNQ1 and KCNE1 with fluorescent proteins as means for tracking successful cell transfection. Mutants of KCNQ1 and KCNE1 were generated using the QuikChange II XL system (Agilent technologies, Santa Clara, CA, USA). Correctness of the KCNQ1 and KCNE1 coding region was checked by DNA sequencing (Eurofins Genomics, Louisville, KY, USA), and plasmid DNA was amplified using an endotoxin-free plasmid preparation method (Nucleobond Xtra Maxi EF, Macherey-Nagel Inc, Bethlehem, PA, USA). Transfection of plasmid DNA encoding KCNQ1 and KCNE1 WT or variants into CHO-K1 cells for manual patch clamp experiments was performed using Fugene as previously described (Vanoye et al., 2009). Transfection of KCNQ1 WT and variant cDNA into CHO-KCNE1 cells (i.e. CHO-K1 cells with stable expression of KCNE1) and the transfection of KCNQ1 WT and KCNE1 WT or mutant cDNA into CHO-K1 cells for automated patch clamp recordings were done by electroporation using the Maxcyte STX system (MaxCyte Inc, Gaithersburg, MD, USA) as described previously (Vanoye et al., 2018).
 
-## Electrophysiology
+### Electrophysiology
 
 Automated patch clamp experiments were performed using the Syncropatch 768 PE platform (Nanion Technologies, Munich, Germany) equipped with single-hole, 384-well recording chips with medium resistance (2–4 MΩ). Pulse generation and data collection were carried out with PatchController384 V.1.3.0 and DataController384 V1.2.1 software (Nanion Technologies, Munich, Germany). Whole-cell currents were filtered at 3 kHz and acquired at 10 kHz. The access resistance and apparent membrane capacitance were estimated using built-in protocols. Whole-cell currents were recorded at room temperature in the whole-cell configuration from −80 to +60 mV (in 10 mV steps) at 1990 ms after the start of the voltage pulse from a holding potential of −80 mV. The external bath solution contained: 140 mM NaCl, 4 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 5 mM glucose, pH 7.4. The internal solution contained: 60 mM KF, 50 mM KCl, 10 mM NaCl, 10 mM HEPES, 10 mM EGTA, 2 mM ATP-K2, pH 7.2. Whole-cell currents were not leak-subtracted. The contribution of background currents was determined by recording before and after addition of 20 μM of the IKs blocker HMR1556. Recordings with measurable outward current were examined to verify block by HMR1556. Only HMR1556-sensitive currents and recordings meeting the following criteria were used in data analysis: seal resistance ≥0.5 GΩ, series resistance ≤20 MΩ, capacitance ≥1 pF, voltage-clamp stability (defined as the standard error for the baseline current measured at the holding potential for all test pulses being <10% of the mean baseline current). Current-voltage (I-V) relationships were derived for all cell recordings meeting these criteria.
 
@@ -168,6 +484,6 @@ Oxidation-state dependent electrophysiological recordings of cysteine mutants of
 
 The possibility for disulfide bond formation between KCNQ1 and KCNE1 cysteine mutants was tested by perfusing cells with 10 mM 1,4-dithiothreitol (DTT, reducing) or 100–350 μM Cu(II)-phenanthroline (Cu-phen, oxidizing) in the external bath solution and measuring whole-cell currents as described above. Because the IKs current when analyzed by whole-cell voltage clamp in mammalian cells exhibits rundown (see Supplemental Figure 2 in Vanoye et al., 2018), which varies in both rate and magnitude, thus confounding experiments on a single cell in which there is a time lapse between conditions and treatments, we recorded from multiple different cells for each treatment (Control, +DTT, +Cu-phen) to average the cell-to-cell variability. In addition, cells were recorded for all treatments from a specific cell transfection batch and from at least three distinct transfections for each KCNQ1-KCNE1 combination.
 
-## Electrophysiological data analysis
+### Electrophysiological data analysis
 
 Data were collected for each experimental condition from at least three transfections and analyzed and plotted using DataController384 V1.2.1 (Nanion Technologies, Munich, Germany), Clampfit V10.4 (Molecular Devices Corp.), Excel (Microsoft Office 2013, Microsoft), SigmaPlot 2000 (Systat Software, Inc, San Jose, CA, USA) and OriginPro 2016 (OriginLab, Northampton, MA, USA) software. Whole-cell currents were normalized for membrane capacitance and results expressed as mean ± SEM. The number of cells used for each experimental condition and the threshold for statistical significance (p<0.001) are given in the figure legends or table footnotes. Additional custom semi-automated data handling routines were used for rapid analysis of current density, voltage-dependence of activation, and gating kinetics. The voltage-dependence of activation was determined only for cells with mean current density greater than the background current amplitude. Since normalized KCNQ1-KCNE1 tail currents do not saturate at the potentials tested nor would they saturate at more depolarized potentials (see Figure 3C in Wang et al., 2020 and Figure 3C in Wang et al., 2012), we refer to the V1/2 value determined by curve fitting as the ‘apparent’ activation V1/2 (V1/2app).

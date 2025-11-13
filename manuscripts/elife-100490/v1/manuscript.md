@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00y4zzh67 Department of Anatomy and Cell Biology, School of Medicine and Health Sciences, George Washington University Washington, DC United States
+1. Department of Anatomy and Cell Biology, School of Medicine and Health Sciences, George Washington University Washington, DC United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
 2. Thomas Jefferson High School for Science and Technology Alexandria United States
-3. https://ror.org/02bn3v102 Department of Pathology, George Washington Medical Faculty Associates Washington, DC United States
-4. https://ror.org/00y4zzh67 Department of Surgery, George Washington Medical Faculty Associates Washington, DC United States
-5. https://ror.org/00y4zzh67 Department of Biomedical Engineering, GW School of Engineering and Applied Science, George Washington University Washington, DC United States
+3. Department of Pathology, George Washington Medical Faculty Associates Washington, DC United States ([ROR:02bn3v102](https://ror.org/02bn3v102))
+4. Department of Surgery, George Washington Medical Faculty Associates Washington, DC United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
+5. Department of Biomedical Engineering, GW School of Engineering and Applied Science, George Washington University Washington, DC United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
 
 † Corresponding author
 
@@ -37,29 +37,81 @@ Both ADH and DCIS conditions can potentially expose cells to crowding in vivo. H
 
 ## Results
 
-## Cell crowding enhances invasiveness in high-grade DCIS cells
+### Cell crowding enhances invasiveness in high-grade DCIS cells
 
 Cell crowding reflects a common condition in tumor microenvironments for ADH and DCIS, arising from aberrant cell proliferation within spatially constrained intraductal spaces. We examined the influence of this prevalent environmental factor on the invasiveness of these cells in vitro. To conduct this investigation, we assembled a panel of cell lines derived from the normal breast epithelial cell line MCF10A, including its H-RAS mutation-driven derivatives associated with various pathologies (So et al., 2012; Miller, 2000): MCF10AT1, MCF10DCIS.com, and invasive cells MCF10CA1a. MCF10AT1 resembles ADH (Dawson et al., 1996), MCF10DCIS.com mimics high-grade DCIS (Miller et al., 2000), and MCF10CA1a represents a malignant invasive cancer that was observed to form metastatic lesions in a mouse xenograft (Santner et al., 2001). The current classification of DCIS relies on histological factors such as cell growth patterns and cytonuclear features (Holland et al., 1994; Allred, 2010). Comedo-DCIS is a histologic subtype, which is characterized by apoptotic cell death, representing a high-grade DCIS with higher invasive potential than those of lower-grades (Shekhar et al., 2008). MCF10DCIS.com forms comedo-type DCIS lesions that can spontaneously transition to invasive cancer when xenografted (Miller et al., 2000).
 
 To compare cell invasiveness under normal cell density and cell crowding conditions in vitro, we opted for a modified 2D matrix degradation assay. This approach allowed us to quantify overall cell invasiveness by normalizing it with the total cell number, thereby accounting for differences in cell densities. We chose this method over transwell, 3D Matrigel, or spheroid assays, where quantifying cell invasiveness as a function of cell density is challenging. By modifying an existing collagen-crosslinked polyacrylamide hydrogel matrix-based invasion assay (Denisin and Pruitt, 2016; Fischer et al., 2012), we could determine the invasive cell fraction out of the total cell population by fluorescence imaging of the invasion gel bed and cell nuclei through low magnification (4 X) imaging (Figure 1A, Figure 1—figure supplement 1 for a detailed procedure) when cells were at normal density versus under cell crowding conditions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig1-v1.jpg)
+
+**Figure 1.:** (A) We used a collagen-crosslinked polyacrylamide hydrogel matrix-based invasion assay to assess the effect of cell crowding on cell invasiveness. Representative images show gelatin-Alexa488 conjugates, where dark areas in the green (Gelatin488) background indicate cell invasion through degradation, and DAPI staining marks cell locations (blue; DAPI) in a 2 d invasion assay of MCF10DCIS.com cells under normal density (ND; upper panel) and overconfluent (OC; lower panel) conditions. ‘Masked’ images are thresholded to produce positive masks applied to the ‘DAPI’ images. Individual cell locations detected in ‘DAPI’ images are marked with purple circles in ‘Detected points’ images. The total number of cells within the field of view is counted from these points. By overlaying the mask and DAPI images, ‘Masked DAPI’ images are obtained, and invaded cells are detected and represented by purple circles in ‘Masked points’ images. The invasive cell fraction is calculated by the ratio of the number of invaded cells to the total number of cells (0.24 for ND and 0.59 for OC MCF10DCIS.com cells). These data show that cell invasiveness is enhanced by cell crowding. Scale bar = 100 μm. (B) Comparison of ‘Gelatin488’ images of MCF10A (normal breast epithelial cells), MCF10AT1 (ADH-mimicking cells), MCF10DCIS.com (high-grade DCIS mimic), and MCF10CA1a (invasive breast cancer cells) between ND and OC conditions. MCF10DCIS.com cell invasion is significantly higher under cell crowding than under ND conditions. (C) Invasive cell fractions of these cells between ND (blue circles) and OC (red circles) conditions are compared, showing that cell crowding-induced increases in invasiveness are notable only in MCF10DCIS.com cells. The number of cell invasion analyses was as follows: MCF10A (ND: 10; OC: 7), MCF10AT1 (ND: 6; OC: 6), MCF10DCIS.com (ND: 9; OC: 9), and MCF10CA1a (ND: 6; OC: 7). We used the two-tailed Mann-Whitney U test, a nonparametric and unpaired statistical method, to compare differences between groups. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05, throughout the manuscript.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Green fluorescent gelatin images were thresholded to highlight invasion areas (in red) due to degradation (visible as dark regions in the original image). Here, 4.34% of the total area indicated cell invasion. (B) DAPI images (in blue, showing nuclei locations) were processed with the Trackmate plugin in Image J to detect individual DAPI spots (displayed in purple). The total cell count in this instance was estimated at 315. (C) The highlighted invasive areas from (A) served as masks for the DAPI locations, selecting only the invasive cells (those in the white regions resulting from the overlay between cell positions in purple and invasive zones in cyan). (D) The resultant images display the locations of invasive cells in purple. The invasive cell count from this image was 80. (E) The fraction of invasive cells was determined by comparing the number of invasive cells (from D) with the overall cell count (from B). Thus, the invasive cell fraction was 25.4% (80 out of 315). Scale bar = 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A-B) Live cells seeded at ND (~70%) (n=2) were cultured for 1 (n=4), 3 (n=4), 5 (n=8), 7 (n=8), and 10 (n=8) d post-confluence (denoted as ‘d’). Cells were stained with propidium iodide (PI, red) to mark dead cells, followed by WGA-488 (green) to label nuclei. After staining, cells were fixed and imaged using confocal microscopy (4 X), with red and green signals quantified via the TrackMate plugin in ImageJ. The percentage of dead cells, based on PI-positive signals, is presented in A. Both confluent (day 3) and OC (day 5–10) MCF10DCIS.com cells showed similar viability to ND cells, with less than 1% cell death (0.85±0.25%). On average, the fraction of dead cells was 1.58±0.98%, confirming that cell crowding does not additionally induce cell death. Representative PI/WGA-488/merged images from days 1, 3, 5, 7, and 10 are shown in B. Scale bar = 100 μm. For the t-test, we employed a nonparametric approach using the Mann-Whitney test with a two-tailed p-value, which was used throughout the manuscript. The statistical significance levels are denoted as follows: ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) MCF10DCIS.com cells were grown to: normal density (ND; 40–70%), confluence (100%), and overconfluence (OC). The time points for these growth stages were 2 d before confluence (D-2) for ND, day 0 (D0) for confluence, and days 5–10 after confluence (D5) for OC. We selected the cell crowding condition (OC conditions) during days 5–10 as cell morphology (B) and invasiveness (C) reached equilibrium after day 5. (B) Brightfield microscopy images of MCF10DCIS.com cells on the indicated days. Cells exhibited significant compaction starting from day 5. Scale bar = 100 μm. (C-D) Time-dependent invasiveness of MCF10DCIS.com cells as they progressed to OC. The cell invasiveness increased until day 5 and plateaued between days 5 and 10. When these cells were reseeded at normal density on day 2 (reseeded D2), their invasiveness decreased to levels similar to the original ND cells. (E) Formerly OC cells reseeded at ND showed a slight reduction in the fraction of invasive cells (light teal circles) to approximately 15%, comparable to ND cells (blue circles) before exposure to OC conditions. These results suggest that the OC-induced increase in invasiveness is largely reversible. (F) To test if acidity of OC cell media, despite frequent changing, contributed to increased invasiveness of DCIS.com cells, we used acidic OC media (day 7) to treat ND DCIS.com cells for 2 d. Conditioned media did not alter invasiveness of ND DCIS.com cells. For the t-test, we employed a nonparametric approach using the Mann-Whitney test with a two-tailed p-value, which was used throughout the manuscript. The statistical significance levels are denoted as follows: ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
 We observed alterations in live cell morphology and invasiveness as they progressed from normal density (ND: 40–70%) to full confluence (100%) and beyond. Our goal was to determine a distinct time window, termed overconfluence (OC), where cell crowding-induced changes level off. The OC time window was achieved in cells cultured for an additional 5–10 d after reaching 100% confluence, with the growth medium replaced twice per day to prevent acidification. We confirmed that the cells remained largely viable under crowding conditions, with minimal cell death (~1.58%) similar to that observed in ND cells (~0.85%) (Figure 1—figure supplement 2A–B). The schematic of the timeline to achieve the OC conditions, and low-magnification (4 X) bright-field images at different time points from the ND to OC conditions are shown in Figure 1—figure supplement 3A–B. The time-dependent equilibration of cell invasiveness after the cells reached confluence is demonstrated in Figure 1—figure supplement 3C–D using our quantifiable collagen-crosslinked polyacrylamide hydrogel matrix-based invasion assay. Cell crowding mechanosensing significantly increased the invasive cell fraction of MCF10DCIS.com cells from ~24 (ND cells) to 59% (OC cells) (Figure 1A). The enhanced invasiveness of MCF10DCIS.com cells under cell crowding was largely reversible. When OC cells were reseeded at normal density for invasion assays, their invasive cell fraction decreased to approximately 15%, slightly lower (p=0.012) than the initial value of around 24% (Figure 1—figure supplement 3C and E). In contrast, normal breast epithelial cells (MCF10A) and the ADH-mimicking MCF10AT1 cells did not display invasiveness under ND conditions or enhanced invasiveness under OC conditions, indicating insensitivity to cell crowding (Figure 1B–C).
 
 The invasive cell fraction of ND MCF10CA1a cells was already ~80%, and the additional increase in invasiveness due to cell crowding was not readily discernible, with a slight increase to ~82% under crowded conditions (Figure 1B–C). These data suggest a striking and selective mechanosensing effect of cell crowding on cell invasiveness in MCF10DCIS.com cells. To ensure that acidification did not affect the invasiveness of MCF10DCIS.com cells despite the frequent replacement of the cell growth medium, we incubated ND cells for two days with acidified medium from cultures of OC MCF10DCIS.com cells. We observed that medium acidity did not alter cell invasiveness (Figure 1—figure supplement 3F), reinforcing that the increased invasiveness under OC conditions was induced by cell crowding.
 
-## Cell crowding reduces cell volume and stiffens MCF10DCIS.com cells
+### Cell crowding reduces cell volume and stiffens MCF10DCIS.com cells
 
 As cells became crowded, we observed a reduction in cell size. Previous reports indicate an inverse relationship between cell volume and cortical stiffness (Tzur et al., 2009; Guo et al., 2017), leading us to hypothesize that reduced cell volume would be accompanied by increased cortical stiffness. Research on glioma cell invasion underscores the critical role of hydrodynamic cell volume changes in penetration into surroundings (Cuddapah et al., 2014; Watkins and Sontheimer, 2011), suggesting that significant cell volume reduction facilitates cell invasion. Additionally, increased cortical stiffness is known to help cells overcome the physical barriers of the dense extracellular matrix (Angstadt et al., 2022; Gudjonsson et al., 2005; Barai et al., 2021). We thus investigated whether cell crowding selectively induces pro-invasive cell volume reduction and cell stiffening in MCF10DCIS.com cells, thereby priming them for invasion.
 
 To measure the cell volume of individual cells, we used confocal microscopy with a 60 X oil immersion objective to obtain z-stack images of live or fixed cells stably expressing red fluorescent protein (RFP) (Shcherbakova et al., 2016). Using a nanoindenter attached to the confocal microscope (Figure 2—figure supplement 1A), we extracted Young’s modulus of live individual cells to assess changes in cortical stiffness. Cell crowding significantly reduced cell volume (Figure 2A and B) and increased cortical stiffness (Figure 2C) in both MCF10DCIS.com and MCF10A cells. However, the changes in volume and stiffness from ND to OC conditions were more pronounced in MCF10DCIS.com cells (Figure 2—figure supplement 1B, C). The cell crowding-induced alterations in cell volume and stiffness were negligible in MCF10AT1 cells (Figure 2A–C). In MCF10CA1a cells, cell crowding led to an increase in stiffness, but a decrease in volume was not evident. This was expected because the cell volume was already too small to be accurately measured with the available resolution (Figure 2A–C). The notable plasticity in cell volume and stiffness changes observed in MCF10DCIS.com cells in response to cell crowding potentially underscores the critical link between this plasticity and mechanosensitive increases in cell invasiveness. We assessed cell volume changes only as an effector event of cell crowding, without measuring cell stiffness, because cell volume reflects the mechanical properties of the entire cell, while Young’s modulus can vary depending on the location of indentations in the plasma membrane (Radmacher, 2002; Guilak et al., 2000). The observed cell volume changes by cell crowding (Figure 2A) depended on the ND cell volume, as OC cell volumes under crowding conditions were comparable across all cells. Consequently, the ND cell volume and the volume changes from ND to OC conditions exhibited an approximately linear relationship (R²~0.97; Figure 2—figure supplement 1D). This finding suggests that the ND cell volume could serve as an indicator of relative cell volume plasticity.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig2-v1.jpg)
+
+**Figure 2.:** Cell volume (V; mean and SD) differences between normal density (ND) (blue circles) and overconfluence (OC) (red circles) conditions of MCF10A, MCF10AT1, MCF10DCIS.com, and MCF10CA1a cells are plotted. The high-grade DCIS cell mimic, MCF10DCIS.com, shows a large volume reduction due to cell crowding. The number of single-cell volume analyses (technical replicates merged from three independent experimental repeats) was as follows: MCF10A (ND: 44; OC: 14), MCF10AT1 (ND: 16; OC: 16), MCF10DCIS.com (ND: 38; OC: 24), and MCF10CA1a (ND: 29; OC: 31). (B) Representative confocal microscopy images of RFP-coexpressing cells of the four cell types in ND and OC conditions. The images include x-y (left) and x-z (right) views, with scale bar = 10 μm. The large volume reduction of MCF10DCIS.com cells is evident. (C) Plots showing changes in cortical stiffness (mean and SD) measured by Young’s modulus (Y) using a nanoindenter, displaying significant cell stiffening of MCF10DCIS.com cells due to cell crowding. The number of single-cell stiffness measurements (technical replicates merged from two independent experimental repeats) was as follows: MCF10A (ND: 21; OC: 19), MCF10AT1 (ND: 19; OC: 14), MCF10DCIS.com (ND: 19; OC: 21), and MCF10CA1a (ND: 11; OC: 10). (D) Hyperosmotic conditions induced by PEG 300 treatment (light blue and darker blue circles for untreated and 2% PEG 300=74.4 mOsm/Kg, respectively; navy circles for 4% PEG 300=148.8 mOsm/kg) lead to dose-dependent cell volume reduction. The number of single-cell volume analyses (technical replicates merged from three independent experimental repeats) was as follows: MCF10DCIS.com (ND control: 62; ND +2% PEG: 23; ND +4% PEG: 10). (E) Treatment with 2% PEG 300 (darker blue circles) for 2 d significantly increased the invasiveness (mean and SD) of MCF10DCIS.com cells, similar to the OC case (red circles). The number of cell invasion analyses (technical replicates merged from two independent experimental repeats) was as follows: MCF10DCIS.com (ND control: 13; ND +4% PEG: 12; OC: 10). ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cell crowding-induced cell volume and stiffness changes assessed by our confocal microscope, which captures 3D volume of single RFP-expressing cells (right image) and includes a nanoindenter device (Chiaro, Optics11life) that can indent a single-cell (load vs indentation curve) to extract Young’s modulus in the elastic regime (red dashed box) using a Hertzian model. The indentation probe has a spring constant and tip diameter of ~0.24 N/m and 10 μm, respectively. We confirmed that RFP expression did not alter cell volume. (B-C) Cell volume and stiffness differences between normal density (ND) and overconfluence (OC) conditions calculated using the cell volume and stiffness data in Figure 2A and C were normalized to the ND cell volume (B) or stiffness (C), with the highest changes observed in high-grade MCF10DCIS.com cells. (D) Normalized volume change (Nor. ΔV) linearly scaled with ND cell volume (mean VND), with an R² value of approximately 0.97, signifying a highly linear relationship. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
 To validate the pro-invasive nature of cell volume reduction in MCF10DCIS.com cells, we examined the effect of hyperosmotic cell volume reduction in ND cells using polyethylene glycol (PEG) 300 for 15 min. The cell volume reduction effects of this treatment were previously described (Guo et al., 2017; Zhou et al., 2009; Sachs and Sivaselvan, 2015). PEG 300 effectively reduced ND MCF10DCIS.com cell volume in a dose-dependent manner, showing a greater reduction with 148.8 mOsmol/kg PEG 300 than with 74.4 mOsmol/kg PEG 300 (Figure 2D). To assess the impact of PEG-induced cell volume reduction on cell invasiveness, we used a collagen-crosslinked polyacrylamide hydrogel matrix-based invasion assay and exposed cells to 74.4 mOsmol/kg PEG 300 for 2 d. While treatment with 148.8 mOsmol/kg PEG 300 significantly reduced cell viability, cells treated with 74.4 mOsmol/kg PEG 300 remained viable for 2 d. Monitoring changes in cell invasiveness revealed that exposure of ND MCF10DCIS.com cells to 74.4 mOsmol/kg PEG 300 increased cell invasiveness (Figure 2E), confirming the causal relationship between cell volume reduction and increased cell invasiveness.
 
-## Cell crowding induces TRPV4 relocation to plasma membrane in MCF10DCIS.com cells
+### Cell crowding induces TRPV4 relocation to plasma membrane in MCF10DCIS.com cells
 
 Cell volume regulation typically depends on osmotic gradients that direct the movement of water across cell membranes (Jiang and Sun, 2013). This process is facilitated by ion flux modulation, which is controlled by ion channels and ion transporters located on the plasma membrane (Jentsch, 2016; Matthews et al., 2007; Wiggins and Phillips, 2005; Martinac and Poole, 2018; Zhang et al., 2015). Notably, cells capable of achieving minimal cell volumes have been shown to successfully invade neighboring tissues (Watkins and Sontheimer, 2011). Based on this, we speculated that the high cell volume plasticity observed in MCF10DCIS.com cells underlies their ability to penetrate the surrounding tissues. To achieve such efficient cell volume changes, cell crowding-induced mechanotransduction in MCF10DCIS.com cells may involve modulation of the number of ion channels or transporters on the plasma membrane.
 
 To compare the plasma membrane-associated proteins between ND and OC conditions, we employed mass spectrometry and profiled those proteins using streptavidin-pulled surface-biotinylated cell lysates. Figure 3A shows the relative protein densities on the plasma membrane under ND (blue bars) and OC (red bars) conditions in MCF10DCIS.com cells. The figure highlights the top 25 proteins that exhibit over a fivefold increase in expression on the plasma membrane in the OC condition compared to the ND condition (triangle plots). The gene names of these 25 proteins are presented in Figure 3A; Figure 3—source data 7 provides the corresponding protein names along with the corresponding fold increases. Notably, TRPV4, a member of the transient receptor potential family of ion channels known for its mechanosensitive properties (Ranade et al., 2015; Michalick and Kuebler, 2020), showed a remarkable 153-fold increase in plasma membrane association in response to cell crowding (Figure 3A). Additionally, we observed an increase in plasma membrane association of other ion channels, such as SCN11A (the alpha subunit of the voltage-gated sodium channel Nav1.9) with ~42 fold enrichment, and KCNN4 (the small-conductance calcium-activated potassium channel 3 SK3) showing ~ sixfold increase (Figure 3A). To evaluate the relative plasma membrane association of proteins under OC versus ND conditions, we performed a comparable mass spectrometry analysis of cell-surface biotinylated cell lysates for MCF10A, MCF10AT1, and MCF10CA1a cells. The top 25 gene/protein names showing increased plasma membrane associations in these cells are listed in Figure 3—source data 8. Unlike in MCF10DCIS.com cases, there was no cell-crowding-induced relocation of ion channels and ion transporters to the plasma membrane in MCF10A and MCF10AT1 cells. However, in MCF10CA1a cells, ion transporters such as ATP2B4 showed a ~37 fold greater plasma membrane association under crowding conditions (Figure 3—source data 8). This suggests that plasma membrane relocations of these ion channels and ion transporters in response to cell crowding selectively occurred in MCF10DCIS.com cells and, to an extent, in invasive ductal cancer MCF10CA1a cells (Figure 3—source data 8).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-v1.jpg)
+
+**Figure 3.:** (A) Mass spectrometry data showing proteins enriched in the plasma membrane (PM) > fivefold (fold changes represented using triangle plots; OC/ND ratio on the right axis) when cells are under overconfluence (OC) (red bars) relative to normal density (ND) conditions (blue bars). Ion channels are marked with red boxes, where TRPV4 shows about a 160-fold increased association with the plasma membrane under OC conditions. (B) Proteins near and on the plasma membrane were pulled down after cell surface biotinylation with streptavidin beads and immunoblotted for TRPV4. TRPV4 is significantly associated with the plasma membrane in OC MCF10DCIS.com cells. In MCF10CA1a cells, TRPV4 appears to be associated with the plasma membrane under both ND and OC conditions, with a slight increase under OC conditions. (C) Immunoblots of whole-protein lysates demonstrate similar overall TRPV4 protein levels across MCF10A cell derivatives, regardless of cell density. This indicates that the differing plasma membrane association of TRPV4 is due to trafficking changes, not expression level changes. GAPDH is used as a loading control. (D) Representative immunofluorescence (IF) images by confocal microscopy show TRPV4 (red) localization compared to the control protein transferrin receptor (TfR; green) in MCF10A, MCF10AT1, MCF10DCIS.com, and MCF10CA1a cells under ND and OC conditions. DAPI (blue) staining was used for visualizing the nuclei. As observed in the biochemical data in (B-C), cell crowding induces the relocation of TRPV4 to the plasma membrane in MCF10DCIS.com cells. TRPV4 is associated with the plasma membrane in ND MCF10CA1a cells, with a clear elevated association in OC cells. Scale bar = 10 μm. (E) Plasma membrane-associated TRPV4 (%) is quantified for the four cell lines under ND and OC conditions by line analysis, showing a significant increase in both MCF10DCIS.com cells and MCF10CA1a cells due to cell crowding. The number of cells used for line analyses (technical replicates merged from three independent experimental repeats) was as follows: MCF10A (ND: 6; OC: 12), MCF10AT1 (ND: 6; OC: 11), MCF10DCIS.com (ND: 12; OC: 8), and MCF10CA1a (ND: 10; OC: 10). (F) IF images show that hyperosmotic conditions induced by PEG 300 (74.4 mOsm/Kg) treatment also relocate TRPV4 (red) to the plasma membrane in MCF10DCIS.com cells. TfR localization remains consistent under hyperosmotic conditions. Increased relocation is also observed in MCF10CA1a cells. Scale bar = 10 μm. (G) The increased plasma membrane association of TRPV4 due to hyperosmotic stress is quantified by line analysis. The number of cells used for line analyses (technical replicates merged from two independent experimental repeats) was as follows: MCF10A (ND control: 6; ND +4% PEG: 15), MCF10AT1 (ND control: 6; ND +4% PEG: 9), MCF10DCIS.com (ND control: 12; ND +4% PEG: 8), and MCF10CA1a (ND control: 10; ND +4% PEG: 21). Scale bar = 10 μm. (H) Representative regions of interest (ROIs) of TRPV4-stained immunohistochemistry (IHC) images in different pathology phenotypes. High-grade ductal carcinoma in situ (DCIS) and invasive ductal cancer (IDC) ROIs clearly exhibit plasma membrane association of TRPV4. Two high-grade DCIS IHC images were acquired by two different people and both show plasma membrane-associated TRPV4. Scale bar = 20 μm. (I) Statistical results from independent histological evaluations of pathologies and TRPV4 distributions of 97 ROIs from 39 patient specimens indicate a high correlation (>70%) of plasma membrane association of TRPV4 with high-grade DCIS or IDC pathologies. Y/N: Yes/no, indicating both pathologists agreed that PM ion channels were present/absent. E: Equivocal, indicating the pathologists disagreed. Significantly high proportions of high-grade DCIS (75%) and IDC (73%) ROIs exhibited plasma membrane TRPV4 association, which was not observed in lower-risk cases. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Immunofluorescence images (A) and immunoblots (B) verified the binding specificity of TRPV4 antibodies in control normal density (ND) DCIS.com cells and TRPV4-depleted cells treated with either 2 μM siRNA (Dharmacon On Target Plus SMART Pool L-004195-00-0005) or 1 and 2 μg shRNA (shRNA pool, Santa Cruz sc-61726-SH) for 36 hr. (A) Compared to invariant transferrin receptor (TfR) staining (green), TRPV4 (red) depletion was 40% with 1 µg shRNA and 80% with 2 µg shRNA, as quantified by intensity measurements. DAPI (blue) is also shown in the merged images. All images were visualized using the same intensity settings. Scale bar = 20 µm. (B) Immunoblot results confirmed this dose-responsive depletion of TRPV4, with 33% reduction observed at 1 µg shRNA and 51% at 2 µg.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) We used the plasma membrane marker DiIC18(3) to confirm the association of TRPV4 with the plasma membrane in MCF10DCIS.com and MCF10CA1a cells under overconfluence (OC) conditions. As described in the Methods section, we stained DiIC18(3) in live cells and co-stained TRPV4 and DAPI in fixed and permeabilized cells. The immunofluorescence (IF) images show TRPV4 (red), DiIC18(3) (DiI, green), and DAPI (blue). The line profile plots on the right demonstrate colocalization of TRPV4 with DiIC18(3) at the plasma membrane (PM), marked by the green DiIC18(3) signal, which overlaps with the red TRPV4 signal. The nucleus location (NUC) is indicated by the blue DAPI signal. Scale bar = 20 μm. (B) We examined the relocation of KCNN4 and PIEZO1 to the plasma membrane in response to cell crowding. Mass spectrometry showed a slight increase in KCNN4 at the plasma membrane under OC conditions. In ND MCF10DCIS.com cells, KCNN4 was predominantly cytosolic, whereas PIEZO1 showed some plasma membrane association. Under OC conditions, both KCNN4 and PIEZO1 showed a modest relocation to the plasma membrane. (C) Line analysis confirmed a slight increase in plasma membrane association for both KCNN4 and PIEZO1 under OC conditions compared to ND conditions. Scale bar = 20 μm. For the statistical analysis, we employed a nonparametric approach using the Mann-Whitney test with a two-tailed p-value. The levels of statistical significance are denoted as follows: **** indicates p<0.0001, *** indicates p<0.001, * indicates p<0.1, and ‘ns’ indicates p>0.05.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Relative TRPV4 associations with the plasma membrane (PM), cytoplasm (Cyt), and nucleus (Nuc) are plotted for ND versus OC conditions in MCF10A (10 A), MCF10AT1 (10AT1), MCF10DCIS.com (10DCIS.com), and MCF10CA1a (10CA1a) cells. (B) Similar analyses were performed to compare the intracellular TRPV4 associations in PM, Cyt, and Nuc between control ND and 74.4 or 148.8 mOsm/kg PEG 300 treatment groups. We employed a nonparametric approach using the Mann-Whitney test with a two-tailed p-value for the statistical analysis. The levels of statistical significance are denoted as follows: **** indicates p<0.0001, *** indicates p<0.001, * indicates p<0.1, and ‘ns’ indicates p>0.05.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) To determine whether the seemingly plasma membrane-associated TRPV4 under hyperosmotic conditions was indeed localized at the plasma membrane of live cells, we used an extracellular domain (ECD) TRPV4 antibody. See the Methods section for sample preparation details. Live-cell imaging with 60 X confocal microscopy revealed distinct binding of the ECD TRPV4 antibodies (red) exclusively in MCF10DCIS.com cells treated with 74.4 mOsm/kg PEG 300 for 15 min. No binding was observed in the untreated control group. Brightfield images are shown below the fluorescence images. (B) Line analysis demonstrated that ~60% of TRPV4 was plasma membrane-associated under 2% (74.4 mOsm/kg) PEG 300 conditions, compared to ~0% in untreated cells. Statistical analysis was conducted using a nonparametric Mann-Whitney test with two-tailed p-values. Statistical significance levels are indicated as follows: ****p<0.0001, ***p<0.001, *p<0.1, and ‘ns’ denotes p>0.05.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Previously overconfluence (OC) MCF10DCIS.com cells were trypsinized and reseeded under normal density (ND) conditions. These cells were fixed and stained for TRPV4 (red) and DAPI (blue) for immunofluorescence (IF) imaging. While TRPV4 was elevated at the plasma membrane under OC conditions, it redistributed to the cytoplasm after the cells were reseeded under ND conditions. (B) The reseeded ND cells responded similarly to hyperosmotic stress (74.4 mOsm/Kg PEG 300 for 15 min), with TRPV4 relocating to the plasma membrane. (C) Line analysis demonstrated that the reseeded ND cells exhibited a TRPV4 distribution pattern comparable to their initial ND counterparts without (blue circles) and with (red circles) hyperosmotic conditions. Statistical analysis was performed using a nonparametric Mann-Whitney test with two-tailed p-values. Statistical significance levels are denoted as follows: ****p<0.0001, ***p<0.001, *p<0.1, and ‘ns’ indicates p>0.05.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Representative IHC images for each pathology from different patients are displayed. A selective presence of TRPV4 pools in the plasma membrane was mainly observed in high-grade ductal carcinoma in situ (DCIS) and invasive ductal carcinoma (IDC) lesions. Two pathologists independently conducted annotations. When a consensus was not reached, the case was labeled ‘equivocal.’ The cases were categorized according to the subsequent criteria: Case 1: Absence of TRPV4. Case 2: Intracellular TRPV4 localization. Case 3: Presence of TRPV4 in the plasma membrane, with or without intracellular TRPV4. (A) Benign cases. IHC images - (Top): Pathology: UDH: usual ductal hyperplasia; protein distribution: case 2; (Middle): Pathology: benign (columna); protein distribution: case 2; (Bottom): Pathology: benign (papilloma); protein distribution: case 2. Scale bars = 30 μm. (B) Atypical ductal hyperplasia (ADH) cases. IHC images - (Top): Pathology: ADH: atypical ductal hyperplasia; protein distribution: case 2; (Bottom): Pathology: ADH: atypical ductal hyperplasia; protein distribution: case 2. Scale bars = 50 μm. (C) Low-grade (LG) DCIS cases. IHC images - (Top): Pathology: low-grade DCIS; protein distribution: case 2; (Bottom): Pathology: low-grade DCIS; protein distribution: case 2. Scale bars = 50 μm. (D) Intermediate-grade (IMG) DCIS cases. IHC images - (Top): Pathology: intermediate-grade DCIS; protein distribution: case 2; (Bottom): Pathology: intermediate-grade DCIS; protein distribution: case 2. Scale bars = 50 μm. (E) High-grade (HG) DCIS cases. IHC images - (Top): Pathology: high-grade DCIS; protein distribution: case 3; (Middle): Pathology: high-grade DCIS; protein distribution: the distinction between case 2 and case 3 is equivocal; (Bottom): Pathology: high-grade DCIS; protein distribution: case 3. Scale bars = 50 μm. (F) Invasive ductal carcinoma (IDC) cases. IHC images - (Top): Pathology: IDC; protein distribution: case 3; (Middle): Pathology: IDC; protein distribution: case 2. (Bottom): Pathology: IDC; protein distribution: case 3. Scale bars = 50 μm.
 
 TRPV4 plays a pivotal role in facilitating the passage of calcium ions (Ca2+) and is integral in detecting various forms of mechanical stresses, including temperature fluctuations and osmotic pressure (Rosenbaum et al., 2020; Lee et al., 2019b). Activation of TRPV4 channels elevates intracellular calcium levels, leading to cell volume increase via osmotic water influx (Rosenbaum et al., 2020; Becker et al., 2005). Nav1.9 primarily contributes to the generation and propagation of action potentials in sensory neurons and is associated with various pain disorders (Dib-Hajj et al., 2015; Bennett et al., 2019; Huang et al., 2019). SK3 channels are activated by elevated intracellular calcium levels and serve diverse physiological functions (Gu et al., 2018; Stocker, 2004). However, unlike TRPV4, Nav1.9 and SK3 channels are not generally classified as mechanosensors. Consequently, we focused on TRPV4, the mechanosensor channel displaying the most significant increase in the plasma membrane association under cell crowding conditions, to further investigate its role in promoting pro-invasive cell volume reduction in MCF10DCIS.com cells.
 
@@ -75,15 +127,31 @@ To assess the relationship between cell crowding-induced cell volume reduction a
 
 We investigated whether TRPV4 relocation to the plasma membrane induced by cell crowding is reversible, as suggested by its impact on invasiveness (Figure 1—figure supplement 3F). To test this, previously OC MCF10DCIS.com cells were reseeded under ND conditions. We then assessed TRPV4 localization via IF imaging to determine if most channels returned to the cytoplasm with only a modest localization at the plasma membrane, and could be relocated to the plasma membrane under mechanical stress, such as hyperosmotic conditions, again. Consistent with their initial ND state, reseeded ND MCF10DCIS.com cells displayed intracellular TRPV4 distribution (Figure 3—figure supplement 5A). Upon exposure to hyperosmotic stress (74.4 mOsm/Kg PEG 300), TRPV4 was again relocated to the plasma membrane (Figure 3—figure supplement 5B). These findings, quantified through line analysis (Figure 3—figure supplement 5C), demonstrate that the mechanosensing response of MCF10DCIS.com cells is reversible.
 
-## Patient tissue analysis shows selective plasma membrane association of TRPV4 in high-grade DCIS cells
+### Patient tissue analysis shows selective plasma membrane association of TRPV4 in high-grade DCIS cells
 
 MCF10DCIS.com cells represent a basal cell model for high-grade DCIS cells driven by HRAS mutation (Miller et al., 2000). However, the majority of patient-derived DCIS cells originate from the luminal cell population and lack the HRAS mutation (Samson et al., 2021). Moreover, there are limited options for patient-derived DCIS cell line models, and those that are available are not associated with well-defined pathological grades (Yong et al., 2014; Ransom and Sontheimer, 1995). Thus, to seek generality of our finding regarding the selective association between plasma membrane relocation and high-grade DCIS pathology, we examined 39 breast cancer patient tissue blocks to assess the selectivity in vivo. We designed an early-stage retrospective study by selecting various breast tissue pathologies that range from benign to invasive cancer. Those pathologies include benign (including usual ductal hyperplasia, papilloma, columnar changes), ADH, low- to high-grade DCIS, and invasive ductal carcinoma (IDC). We also incorporated normal regions for comparison. Hematoxylin and eosin (H&E) staining was used to visualize tissue sections from each patient, excluding samples with prior cancer diagnoses or drug treatments. In total, 97 regions of interest (ROIs) from H&E-stained sections of 39 patient tissue blocks were selected. Two pathologists independently assessed TRPV4 distribution patterns at the single-cell level in corresponding ROIs in the immunohistochemistry (IHC) images (Figure 3H). A detailed methodology is described in the Methods section and more example images are shown in Figure 3—figure supplement 6—source data 1. High-grade DCIS cells, as depicted in Figure 3H, clearly demonstrated plasma membrane-associated TRPV4 (Figure 3H), a feature absent in lower-grade DCIS cells (intermediate- and low-grade). This distinction sets them apart not only from cells with ADH and benign pathologies but also from lower-grade DCIS cells. As demonstrated by the IF images in Figure 3D for MCF10CA1a (invasive cell mimic), IDC cells exhibited notable plasma membrane TRPV4 (Figure 3H), suggesting that they possess a similar pro-invasive mechanotransduction capability to high-grade DCIS cells.
 
 We found that the sensitivity and specificity for plasma membrane TRPV4 in high-grade DCIS cells were 0.75±0.19 (15/20) and 0.98±0.03 (61/62), respectively (95% confidence interval) (Figure 3I). It is important to note that the specificity calculation excluded IDC cases. Notably, even in less aggressive pathologies, a significant amount of TRPV4 was localized in the nuclei, as shown for MCF10A and MCF10AT1 cells in the IF images in Figure 3D. This underscores our interpretation from the in vitro results in Figure 3A–D that increased plasma membrane association of TRPV4 in high-grade DCIS cells results from changes in protein localization through trafficking alterations, rather than differences in expression levels. These initial in vivo results clearly demonstrate the selective and specific association of TRPV4 with the plasma membrane in high-grade DCIS cells. Notably, this association is absent in lower-grade DCIS, ADH, benign, and normal cells, thereby confirming our in vitro findings using MCF10A cell derivatives. These results suggest a potentially critical role for TRPV4 in the progression of high-grade DCIS.
 
-## Cell crowding inhibits ion channels and triggers their plasma membrane relocations
+### Cell crowding inhibits ion channels and triggers their plasma membrane relocations
 
 A calcium-permeant ion channel like TRPV4 is known to influence intracellular calcium dynamics (Becker et al., 2005). While activation of TRPV4 typically elevates calcium levels and this potentially increases cell volume (Hoffmann et al., 2009; Stutzin and Hoffmann, 2006; Clapham, 2007), the impact of its inhibition is less clear, given the multifaceted nature of calcium signaling in cell volume control (Jentsch, 2016). This complexity is compounded by compensatory cellular mechanisms and the involvement of other ion channels in response to altered calcium homeostasis (Jentsch, 2016; Becker et al., 2005). Considering these factors, we hypothesized that cell crowding might inhibit calcium-permeant ion channels that are constitutively active at the plasma membrane, including TRPV4, which would then lower intracellular calcium levels and subsequently reduce cell volume via osmotic water movement. To test this, we employed the Fluo-4 calcium assay (Gee et al., 2000) to compare relative intracellular calcium levels of MCF10DCIS.com cells between ND and confluent (Con) conditions through 4 X confocal microscopy imaging with 488 nm excitation. For this calcium assay, we opted for confluent conditions instead of OC conditions to collect the Fluo-4 signal from confluent monolayers of MCF10DCIS cells, which demonstrates comparable cell-crowding induced TRPV4 relocation to the plasma membrane (Figure 4—figure supplement 1A) as observed in the OC condition. This choice was made because more than one layer of cells was occasionally observed in OC conditions, which would yield an overestimation of crowding-dependent intracellular calcium levels. The intracellular Fluo-4 signal under Con conditions was significantly lower than that under ND conditions, as shown in the fluorescence images of ND versus Con cells in Figure 4A. Time-dependent Fluo-4 images were acquired over 25 min. For ND cell images, the average Fluo-4 intensity values were calculated from 10 to 15 selected cells (highlighted in the white box in Figure 4A). For Con cell images, intensity values were derived from all cells within the entire 50 μm by 50 μm field of view, as depicted in Figure 4A. After background subtraction, the intensity values were plotted in Figure 4B. The temporal Fluo-4 intensity profiles from both ND and Con cells remained largely constant over the measured 20 min period. However, Con cells exhibited significantly lower Fluo-4 intensity compared to ND cells, indicating reduced intracellular calcium levels (Figure 4C). Lower Fluo-4 intensity in Con cells than in ND cells was not due to limited Fluo-4 reagent in Con samples. Within cell clusters, cells experiencing crowding exhibited notably lower Fluo-4 levels compared to those at the periphery (Figure 4—figure supplement 1B), suggesting that cell crowding had resulted in a decrease in intracellular calcium levels, likely due to the mechanosensitive inhibition of calcium-permeable channels like TRPV4.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig4-v1.jpg)
+
+**Figure 4.:** (A) To compare intracellular calcium (Ca²+) levels, we used a Fluo-4 AM assay, where green fluorescence intensity increases with higher intracellular Ca²+ levels. Calcium levels are significantly lower in confluent (Con) MCF10DCIS.com cells. (B) The temporal progression of averaged Fluo-4 intensity in normal density (ND) MCF10DCIS.com cells (blue curve) in the box shown on the left image is compared with that of Con cells (red curve). Fluo-4 intensity is consistently lower in Con cells than in ND cells for approximately 25 min (200 ms acquisition time and 30 s time interval). (C) Fluo-4 intensity reduction due to cell crowding is significant in MCF10DCIS.com cells. 10 images were used for calculating average Fluo-4 intensities for both ND and Con cells. (D-H) Pharmacological inhibition of TRPV4 with 1 nM GSK219 generates dips in the Fluo-4 signal. Fluo-4 images at the baseline (t1) and the dip (t2) post 1 nM GSK219 are compared in MCF10DCIS.com cells between ND (D) and Con (F) conditions. The Fluo-4 intensity time traces are compared between ND (blue; E) and Con (red; G) conditions, showing that the magnitude of the dip (marked as ΔCa) is significantly lower in Con cells, where TRPV4 activity is largely inhibited under cell crowding conditions. Notably, the magnitude of ΔCa increased with higher GSK219 doses (1 nM vs. 0.2 nM), but remained significantly lower in Con MCF10DCIS.com cells, with smaller changes observed under the 0.2 nM GSK219 condition. The number of ΔCa measurements (H) (technical replicates merged from two independent experimental repeats) was as follows: MCF10DCIS.com (ND+ GSK219 Low: 9; ND+ GSK219 High: 12; Con+ GSK219 High: 10; Con+ GSK219 Low: 14). (I-M) TRPV4 activation with 0.2 pM GSK101 leads to a small spike in ND cells (I, J). However, in Con cells, the same GSK101 treatment leads to a notably larger spike in Fluo-4 intensity, indicating that TRPV4 inhibition and subsequent relocation to the plasma membrane by cell crowding primes the ion channels for activation. GSK101 treatment also leads to a dose-dependent increase in the spike magnitude with a higher GSK101 concentration being strikingly high in Con MCF10DCIS.com cells (0.05 pM: 101 L; 0.2 pM: 101 H). The number of ΔCa measurements (M) (technical replicates merged from two independent experimental repeats) was as follows: MCF10DCIS.com (ND+ GSK101 Low: 7; ND+ GSK101 High: 9; Con+ GSK101 Low: 9; Con+ GSK101 High: 9). (N-Q) TRPV4 activation status-dependent intracellular localization changes. (N) IF images of TRPV4 (red) and TfR (green) in ND MCF10DCIS.com cells show that GSK101 does not increase plasma membrane association of TRPV4. However, GSK219 significantly relocates TRPV4 to the plasma membrane in a dose-dependent manner (Figure 4—figure supplement 2B for all dose cases), similar to ND cells treated with 74.4 mOsm/Kg PEG 300. (O) In OC cells, while GSK219 does not significantly alter TRPV4 association with the plasma membrane, GSK101 depletes plasma membrane TRPV4 in a dose-dependent manner (Figure 4—figure supplement 2B for all dose cases), suggesting that TRPV4 activation status affects its trafficking. Relative plasma membrane associations with different treatments are quantified for ND (P) and OC (Q) cells using line analysis. The number of line analyses (P, Q) (technical replicates merged from two independent experimental repeats) was as follows: ND and OC MCF10DCIS.com (control: 12 and 8; GSK219 Low: 6 and 7; GSK219 High: 6 and 13; GSK101 Low: 7 and 8; GSK101 High: 7 and 10; 2% PEG: 12 and 12). (R) The values of Fluo-4 spikes by GSK101 and dips by GSK219 show a linear relationship (R²~0.69) with the plasma membrane TRPV4 association, indicating a negative correlation between them. This reinforces the observation that TRPV4 inhibition increases its association with the plasma membrane, while activation shows the reverse effect. (S-V) Compared to the Fluo-4 intensity in control MCF10DCIS.com cells (S, T), shRNA showed similar baseline Fluo-4 levels (U, V). However, hyperosmotic stress by 74.4 mOsm/Kg PEG 300 (light gray box) led to a noticeable spike only in control ND cells. Additionally, cell crowding conditions (Con) led to a decreased Fluo-4 level (at t1 baseline in the image in S and red time trace in T); but a reduced in Fluo-4 level difference in shRNA-treated MCF10DCIS.com cells (t1; U) compared to control cases (S, T), as shown in the image and time trace (t1; V). (W) Relative Fluo-4 time-averaged intensities are plotted for individual control ND (blue) vs. Con (red) cells, and shRNA-treated ND (semi-transparent blue) vs. Con (semi-transparent red) cells. Intracellular calcium levels in shRNA ND cells are lower than those in control ND cells, reflecting the reduced number of TRPV4 channels. The decrease in calcium levels by crowding (Con) in shRNA cells is clearly lower than in control cells, reflecting the importance of TRPV4 in mechanosensing cell volume reduction. The number of Fluo-4 average measurements (technical replicates merged from two independent experimental repeats) was as follows: MCF10DCIS.com control and TRPV4 shRNA groups (ND: 19 and 18; Con: 11 and 17). (X) PEG 300-induced calcium spikes are significantly lower in shRNA cells (semi-transparent gray) than in control cells (gray), reinforcing TRPV4’s crucial role in MCF10DCIS.com mechanotransduction. The number of ΔCa measurements under 2% PEG 300 condition was as follows: ND MCF10DCIS.com (ND: 19; TRPV4shRNA: 16). (Y) TRPV4 silencing significantly reduced the mechanosensing cell volume reduction effect. Control ND cells underwent a 48% volume reduction in response to 74.4 mOsm/Kg PEG 300, whereas TRPV4-silenced cells reduced their volume by only 27%. The number of single-cell volume measurements (technical replicates merged from two independent experimental repeats) was as follows: ND and TRPV4shRNA treated MCF10DCIS.com (Control: 11 and 13; 2% PEG 8 and 11). ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confluent cell density (Con) also triggered the relocation of TRPV4 (red) to the plasma membrane, similar to OC conditions, as shown in immunofluorescence (IF) image (left). We used DiIC18(3) to indicate the plasma membrane location (green; DiI; middle image), and the merged image (right) of TRPV4 and DiIC18(3) shows excellent overlay at the plasma membrane (PM), as illustrated in the line profile plots from our line analysis. DAPI (blue) staining was used to locate the nucleus (NUC). Scale bar = 20 μm. (B) Confluent cell density resulted in lower intracellular calcium levels compared to less confluent cells. Live MCF10DCIS.com cells stained with Fluo-4 were imaged using confocal microscopy at 488 nm. Two line profiles crossing peripheral cells (less confluent than confluent cells) and adjacent confluent cells within the clusters clearly showed that the peripheral cells have a higher Fluo-4 signal (700 au) compared to the confluent cells within the cluster (200 au), highlighting the crowding-induced intracellular calcium reduction. Background regions (bg) were noted with cyan dashed-lines in the fluorescent image and in the plots. Scale bar = 100 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cell viability assays in which viable cells were counted based on trypan blue exclusion after 2 d of GSK101 or GSK219 treatment in the specified concentration ranges of ductal carcinoma in situ (DCIS) in normal density (ND) (white bars) and overconfluence (OC) (gray bars) conditions. Treatment ranges were selected so that cell viability was >90%. Concentrations used for dose-dependent assays were 0.05 and 0.2 pM for GSK101, and 0.2 and 1 nM for GSK219 (marked by dotted red boxes). (B) Representative confocal microscopy immunofluorescence images showed effects of GSK101 (0.05 and 0.2 pM) or GSK219 (0.2 and 1 nM) treatment for two days on TRPV4 (red) and control transferrin receptor (TfR; green) distributions in ND and OC cells in a dose-dependent manner. DAPI (blue) signal is shown in the merged images. Scale bar = 20 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Using the Fluo-4 assay, we observed an initial calcium spike (marked as ‘Rise’) in ND MCF10DCIS.com cells in response to 74.4 mOsmol/kg PEG 300, due to osmotic water outflow. This was followed by a homeostatic relaxation, aimed at restoring calcium levels, which likely involved the inhibition of ion channels like TRPV4, leading to their plasma membrane relocation. Scale bars = 20 μm. (B) The same hyperosmotic condition (74.4 mOsm/Kg PEG 300 for 15 min) led to the relocation of KCNN4 and PIEZO1 to the plasma membrane, similar to the relocations observed under OC conditions. Line analysis results showed the relative relocations of each channel in response to hyperosmotic (PEG) and cell crowding (OC) stresses, compared to ND conditions.
 
 To investigate whether TRPV4 inhibition was involved in decreased intracellular calcium levels and subsequent relocation of TRPV4 to the plasma membrane, we employed TRPV4-specific pharmacological agents to alter TRPV4 activity and modulate calcium concentrations in ND MCF10DCIS.com cells without applying cell crowding conditions. To inhibit TRPV4 activity, we used a TRPV4 inhibitor (GSK2193874; GSK219) (Cheung et al., 2017) at 0.2 and 1 nM, which we confirmed to have insignificant effects on cell viability in both ND and OC conditions for 2 d (Figure 4—figure supplement 2A). GSK219 treatments immediately caused a modest dip in the Fluo-4 signal, or intracellular calcium level, followed by a recovery, indicating cellular homeostatic activity. Figure 4D shows Fluo-4 images taken before and at the signal dip after applying 1 nM GSK219, where the dip in the Fluo-4 signal is not visually apparent. However, the temporal profile of Fluo-4 intensity in Figure 4E, which corresponds to the time points marked in Figure 4D (t1: baseline and t2: dip), clearly shows the dip at t2, indicated by ΔCa (the vertical dashed line between the dip and the baseline). This modest Fluo-4 dip at t2 represents the inhibition of activity by GSK219 on a small population of constitutively active TRPV4 channels at the plasma membrane under ND conditions.
 
@@ -107,11 +175,27 @@ To investigate the role of TRPV4 in mechanotransduction, we used shRNA to silenc
 
 Notably, TRPV4 silencing significantly reduced the immediate calcium spike as summarized in Figure 4X. This calcium spike was attributed to increased calcium concentration due to hyperosmotically reduced cell volume (Figure 4—figure supplement 3A). Thus, TRPV4 may play a critical role in mechanotransduction, enabling cells to sufficiently reduce their volume in response to mechanical stress (large volume plasticity). To further investigate this, we examined the effect of TRPV4 silencing on ND MCF10DCIS.com cell volume reduction in response to hyperosmotic stress. We indeed found that control ND cells underwent a 48% volume reduction in response to 74.4 mOsm/Kg PEG 300, whereas TRPV4-silenced cells only reduced their volume by 27% (Figure 4Y). Notably, the reduced cell volume change observed in TRPV4-silenced cells under hyperosmotic conditions supports the idea that the observed calcium spikes are driven by cell volume reduction. This finding reinforces the concept that TRPV4 enhances cellular mechanosensitivity through channel inactivation–induced calcium reduction in response to mechanical stress.
 
-## TRPV4 inhibition drives cell volume reduction and increased invasiveness under cell crowding
+### TRPV4 inhibition drives cell volume reduction and increased invasiveness under cell crowding
 
 To elucidate the relationship between TRPV4 inhibition, cell volume reduction, and increased invasiveness under cell crowding, we investigated the effects of TRPV4 activity status on these processes. Specifically, we evaluated how 2 d treatments with GSK101 and GSK219 impacted the cell volumes of ND and OC MCF10DCIS.com cells. This treatment duration was selected to align with the timeframe in which cell volume reduction and invasiveness changes are observed in response to cell crowding.
 
 Under ND conditions, activating TRPV4 with GSK101 (0.05 or 0.2 pM for 2 d), which led to only modest calcium spikes and largely unaltered TRPV4 distribution (Figure 4I and N; Figure 4—figure supplement 2B), did not significantly impact cell volume (Figure 5A). Conversely, TRPV4 inhibition by GSK219 treatment (1 nM for 2 d) that induced greater calcium dips and a significant plasma membrane relocation of TRPV4 (Figure 4D and N: Figure 4—figure supplement 2B), led to a noticeable cell volume reduction (Figure 5A). 0.2 nM GSK219 treatment had a negligible impact on ND cell volume (Figure 5A). The GSK219 effect in ND MCF10DCIS.com cell volume was similar to that observed under hyperosmotic conditions by 74.7 mOsm/Kg PEG 300 (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig5-v1.jpg)
+
+**Figure 5.:** (A-C). MCF10DCIS.com cell volume changes with TRPV4 inhibition and activation. (A) In ND MCF10DCIS.com cells, TRPV4 agonist GSK101, which did not alter plasma membrane association of TRPV4, did not affect cell volume. Conversely, TRPV4 inhibitor GSK219, which increased plasma membrane association in a dose-dependent manner, reduced cell volume, with the effect of 1 nM GSK219 (219 H) being similar to that of 74.4 mOsm/Kg (2%) PEG 300. (B) Under OC conditions, GSK101, which led to significant Fluo-4 spikes, increased cell volume in a dose-dependent manner, while GSK219 and PEG only mildly reduced cell volume. (C) Cell volume changes in MCF10DCIS.com cells show an inverse relationship (R²=0.59) with plasma membrane association of TRPV4, reflecting the activation status of the channel. The number of single-cell volume measurements (technical replicates merged from three independent experimental repeats): ND (A) and OC (B) MCF10DCIS.com cells (Control: 33 and 43; GSK101 0.05 pM: 19 and 15; GSK101 0.2 pM: 9 and 22; GSK219 0.1 nM: 10 and 36; GSK101 1 nM: 15 and 9; 2% PEG 300: 23 and 8). (D-F) Cell invasiveness increases with greater cell volume reduction and plasma membrane association of TRPV4. (D) Cell invasiveness significantly increased with higher GSK219 concentrations under ND conditions. (E) GSK101 under OC conditions caused a notable decrease in cell invasiveness in a dose-dependent manner. (F-G) Plasma membrane association of TRPV4 predictably reports cell invasiveness (R²~0.69; F), while cell invasiveness and cell volume are inversely related (R²~0.69; G), reinforcing our observation that cell volume reduction promotes cell invasiveness. The number of invasive cell fraction measurements (technical replicates merged from two independent experimental repeats): ND (D) and OC (E) MCF10DCIS.com cells (Control: 6 and 4; GSK101 0.05 pM: 4 and 4; GSK101 0.2 pM: 4 and 4; GSK219 0.1 nM: 4 and 4; GSK101 1 nM: 4 and 4; 2% PEG 300: 4 and 7). (H-M) To assess if cell motility also follows the trend of cell invasiveness, we performed a single-cell motility assay by tracking nuclear WGA in individual live cells every 60 s for 25 min. (H) Representative trajectories of individual cells were color-coded to reflect displacement at each time interval. Compared to untreated ND cells, 0.2 pM GSK101 treatment slowed overall cell diffusion, while 1 nM GSK219 and 74.4 mOsm/Kg PEG 300 treatments increased cell diffusion. ShRNA TRPV4 (Sh-ctrl) increased cell motility under ND conditions. However, with TRPV4 depletion, treatment with 74.4 mOsm/Kg PEG 300 failed to increase cell diffusivity (D) in shRNA-treated cells (Sh-PEG), unlike in the untreated cells. Scale bar = 200 μm. Using single-cell analysis, we quantified cell diffusivity (D) and speed (v; movement directionality). (I) GSK101 treatment significantly reduced D, while GSK219 and PEG 300 notably increased it. shRNA TRPV4 also increased ND cell D, but PEG treatment did not change D in the shRNA-treated cells. (J) GSK101, GSK219, PEG 300, and shRNA treatments increased v, with GSK101 causing the most significant increase. The directionality of shRNA-treated ND cells was unaffected by PEG treatment. The number of single-cell motility measurements of MCF10DCIS.com cells (technical replicates merged from two independent experimental repeats): Control: 81; GSK101: 100; GSK219: 100, PEG: 100; shRNA: 102; shRNA +PEG: 104. (K) Like cell invasiveness, cell motility (D) positively scales with plasma membrane association of TRPV4 (R²~0.73). (L) Cell motility (D) inversely relates to cell volume (R²~0.89). (M) Cell motility (D) and cell invasiveness show a strong linear relationship (R²~0.85), enabling the use of cell motility measurements to assess overall cell invasiveness. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The effects of 2 d of treatment with GSK101 (0.05 and 0.2 pM), GSK219 (0.2 and 1 nM), and PEG 300 (74.4 mOsm/kg) on the invasiveness of MCF10DCIS.com cells under normal density (ND) and overconfluence (OC) conditions. Gelatin488 images demonstrated the dose-dependent negative effects of GSK101 and positive effects of GSK219 on cell invasiveness. Similar to GSK219, PEG 300 also increased cell invasiveness. Scale bar = 100 μm. (B) Immunofluorescence (IF) images of β−actin (green) and DAPI (blue) in MCF10DCIS.com cells under ND (left) and OC (right) conditions. Strong stress fiber formation was observed in OC cells, while it was absent in ND cells, which was reflected by the increased stiffness of OC cells (Figure 2C). This suggests that cell crowding may enhance cell motility. Scale bar = 20 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig6-v1.jpg)
+
+**Figure 6.:** (A) In MCF10CA1a cells, plasma membrane relocation of TRPV4 was induced by a 15 min treatment with 2% PEG 300 (74.4 mOsm/kg) or by overconfluence (OC) conditions. IF images show a largely intracellular distribution of TRPV4 (red) in normal density (ND) control cells, whereas cells treated with PEG 300 or subjected to OC exhibit a significant increase in plasma membrane-associated TRPV4. Nuclei are stained with DAPI (blue). Scale bars in all panels of this figure represent 10 μm. (B) Line analysis quantifying plasma membrane-associated TRPV4 (%) reveals significant increases following a 1 hr treatment with GSK219 (1 nM), a 15 min exposure to 74.4 mOsm/kg PEG 300, or under OC conditions in MCF10CA1a cells. In contrast, no significant increase in plasma membrane TRPV4 is observed with GSK101 treatment. (C) In MCF10CA1a cells, cell movement diffusivity (D) increased following GSK219 or PEG 300 treatments, whereas it decreased with GSK101. Conversely, movement directionality (v) increased significantly with GSK101 (0.2 pM) but remained unchanged with GSK219 or PEG treatments. (D-O) No plasma membrane relocation of TRPV4 was observed in response to inhibition by GSK219, hyperosmotic stress induced by PEG 300, or cell crowding (OC) in MCF10AT1 (D, E, F), MDA-MB-231 (G, H, I), ETCC-006 (J, K, L), and ETCC-010 (M, N, O) cells. Similarly, GSK219 or PEG 300 did not increase single-cell motility in these cells. This is demonstrated by IF images (TRPV4: red; DAPI: blue) (D, G, J, M), line analysis results for plasma membrane-associated TRPV4 (E, H, K, N), and single-cell motility analyses for diffusivity (D) and directionality (v) (F, I, L, O). Notably, none of these cell lines showed motility changes in response to PEG 300 treatment. However, responses to TRPV4 activation (GSK101) and inhibition (GSK219) varied across cell types, suggesting distinct roles of TRPV4 in their cancer biology. In MCF10AT1 cells (F), GSK219 significantly reduced diffusivity (D), while no other treatment affected D or v. In MDA-MB-231 cells (I), neither D nor v was altered by any treatment, indicating that TRPV4 has an insignificant role in their motility. Both ETCC-006 and ETCC-010 cells exhibited increased diffusivity with GSK101; however, GSK219 also increased diffusivity in ETCC-006 cells (L), while having no effect on ETCC-010 cells (O). Directionality (v) increased with GSK101 in ETCC-006 cells (L), whereas ETCC-010 cells showed no change in v across all conditions (O). The number of line analyses for plasma membrane-associated TRPV4 under ND control, ND +0.2 pM GSK101, ND +1 nM GSK219, ND +2% PEG 300, and OC conditions (technical replicates merged from three independent experimental repeats) were: MCF10CA1a (B): 11, 6, 8, 12, 10; MCF10AT1 (E): 13, 9, 8, 9, 19; MDA-MB-231 (H): 13, 9, 8, 9, 19; ETCC-006 (K): 12, 10, 10, 5, 10; and ETCC-010 (N): 5, 5, 7, 5, 6. The number of single-cell motility analyses under ND control, ND +0.2 pM GSK101, ND +1 nM GSK219, and ND +2% PEG 300 conditions were: MCF10CA1a (C): 100, 100, 100, 100; MCF10AT1 (F): 130, 161, 582, 183; MDA-MB-231 (I): 57, 6, 21, 442; ETCC-006 (L): 65, 66, 24, 100; and ETCC-010 (O): 317, 1136, 43, 71. (P) Plasma membrane association of TRPV4 (% PM TRPV4) scaled positively with cell diffusivity (D) over a broader range in MCF10DCIS.com cells compared to MCF10CA1a cells, consistent with the higher cell volume plasticity observed in MCF10DCIS.com cells. This finding suggests that both cell types engage a pro-invasive mechanotransduction pathway. (Q) In contrast, this scaling relationship is absent in MCF10AT1, MDA-MB-231, ETCC-006, and ETCC-010 cells, indicating a lack of the mechanotransduction response. (R) The presence of this pathway in MCF10CA1a and MCF10DCIS.com cells is further supported by the observed > twofold increase in TRPV4 plasma membrane association (x-axis; PM TRPV4_peg/PM TRPV4_ctrl) and > onefold increase in diffusivity (y-axis; Dpeg/Dctrl) following PEG-300 treatment. (S) The cell volume reduction-driven mechanotransduction pathway is further demonstrated by plotting PEG-300-induced changes in TRPV4 plasma membrane association (x-axis; PM TRPV4_peg/PM TRPV4_ctrl) against the diffusivity ratio with GSK219 versus GSK101 (y-axis), where both cell types show a significantly greater than twofold increase, highlighting the activation of this pathway in MCF10DCIS.com and MCF10CA1a cells.****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns: p>0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100490/elife-100490-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The effects of treatment with GSK101 (0.2 pM, 1 hr), GSK219 (1 nM, 1 hr), and PEG 300 (74.4 mOsm/kg, 15-miniutes) on cells under normal density (ND) or overconfluence (OC) conditions revealed differences in TRPV4 localization (red) in the immunofluorescence (IF) images (cyan: DAPI). Only MCF10CA1a cells show GSK219, PEG 300, and OC-induced TRPV4 relocation to the plasma membrane. Other cell types, including MCF10AT1, MDA-MB-231, ETCC-06, and ETCC-10, did not exhibit this translocation. Scale bar = 20 μm.
 
 Under Con conditions, GSK101 triggered significant dose-dependent calcium spikes, leading to corresponding increases in cell volume (Figure 5B). In contrast, GSK219 under Con conditions had minimal effects on intracellular calcium levels and did not alter TRPV4 distribution at the plasma membrane, resulting in a slight cell volume reduction at 1 nM (Figure 5B). Similarly, PEG 300 caused a modest decrease in cell volume, comparable to the effect of 1 nM GSK219 (Figure 5B). As expected, plasma membrane-associated TRPV4 (% PM TRPV4) showed a significant inverse linear correlation with cell volume (R² ≈ 0.59) (Figure 5C). These findings (Figure 5A–B) indicate that increased TRPV4 inhibition and the subsequent reduction in intracellular calcium levels in response to cell crowding are associated with decreased cell volume in MCF10DCIS.com cells.
 
@@ -123,7 +207,7 @@ Using the single-cell motility assay, we investigated how TRPV4 enhances cell in
 
 Interestingly, as GSK219 and hyperosmotic conditions promoted increased cell movement (D; Figure 5I), they also slightly increased cell directionality (v; Figure 5J). Remarkably, cell movement increased in proportion to the amount of TRPV4 at the plasma membrane (Figure 5K; R²~0.73) and decreased with greater cell volume (Figure 5L; R²~0.89). Cell movement and invasiveness showed a strong linear correlation (Figure 5M; R²~0.85), suggesting that these behaviors are governed by the same underlying mechanisms. Thus, our motility assay can inform cell invasiveness at the single-cell level.
 
-## Mechanosensitive TRPV4 relocation to plasma membrane indicates enhanced invasiveness
+### Mechanosensitive TRPV4 relocation to plasma membrane indicates enhanced invasiveness
 
 We investigated whether the mechanosensitive relocation of TRPV4 to the plasma membrane can reliably predict a cell’s ability to undergo pro-invasive mechanosensitive cell volume reduction. To achieve this, we used changes in cell motility as markers for overall shifts in cell invasiveness, given the strong correlation observed between cell motility and invasiveness (Figure 5M). Our hypothesis is that cells with such mechanotransduction capability, like MCF10DCIS.com cells, should show increased plasma membrane association of TRPV4 when inhibited with GSK219 or under hyperosmotic conditions, evidenced by increased cell motility (D) while demonstrating the opposite effect with GSK101 treatment.
 
@@ -159,57 +243,361 @@ The study’s insights have far-reaching implications, unlocking new research pa
 
 ## Materials and methods
 
-## Cell lines and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10A</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0598</td>
+      <td>Non-tumorigenic human breast epithelial cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10AT1</td>
+      <td>Karmanos Cancer Institute</td>
+      <td>RRID:CVCL_5554</td>
+      <td>Premalignant variant of MCF10A with oncogenic H-Ras expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10DCIS.com</td>
+      <td>Karmanos Cancer Institute</td>
+      <td>RRID:CVCL_5552</td>
+      <td>DCIS progression model with features of comedo necrosis, derived from MCF10AT1</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MCF10CA1a</td>
+      <td>Karmanos Cancer Institute</td>
+      <td>RRID:CVCL_6675</td>
+      <td>Invasive carcinoma derivative of MCF10DCIS.com</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>ETCC-010</td>
+      <td>Leibniz Institute DSMZ</td>
+      <td>RRID:CVCL_6G22</td>
+      <td>Patient-derived, hTERT-immortalized DCIS cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>ETCC-006</td>
+      <td>Leibniz Institute DSMZ</td>
+      <td>RRID:CVCL_6G19</td>
+      <td>Patient-derived, hTERT-immortalized DCIS cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MDA-MD-231</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0062</td>
+      <td>Highly aggressive, triple-negative breast cancer cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>hTRPV4 shRNA Plasmid; shRNA</td>
+      <td>Santa Cruz</td>
+      <td>sc-61726-SH</td>
+      <td>Plasmid construct to transfect and express the shRNA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pCSII-EF-miRFP670v1-hGem(1/110)</td>
+      <td>Vladislav Verkhusha, Addgene</td>
+      <td>80006</td>
+      <td>Lentiviral construct to transfect and express the gene</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRPV4 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab39260</td>
+      <td>1:500 (IF), 1:100 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-transferrin receptor (Mouse monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>13–6800</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Piezo1 (extracellular) (Rabbit polyclonal)</td>
+      <td>Alomone</td>
+      <td>APC-087</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KCNN4 (KCa3.1, SK4) (extracellular) (Mouse monoclonal)</td>
+      <td>Alomone</td>
+      <td>ALM-051</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG (H+L) Highly Cross-Absrobed Secodary Antibody, Alexa Fluor Plus 555 (Goat polyclonal); anti-rabbit-Alexa 550</td>
+      <td>Thermo Fisher</td>
+      <td>A32732</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG (H+L) Highly Cross-Absrobed Secodary Antibody, Alexa Fluor 488 (Goat polyclonal); anti-mouse-Alexa 488</td>
+      <td>Thermo Fisher</td>
+      <td>A11029</td>
+      <td>1:5,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRPV4 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>PA5-41066</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (6C5) (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-32233</td>
+      <td>1:2,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG (H+L) Superclonal Secondary Antibody, HRP (Goat superclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A28177</td>
+      <td>1:4,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG (H+L) Superclonal Secondary Antibody, HRP (Goat superclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>A27036</td>
+      <td>1:4,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRPV4 (extracellular) (Rabbit polyclonal)</td>
+      <td>Alomone</td>
+      <td>ACC-124</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin UltraLink Resin; resin</td>
+      <td>Thermo Fisher</td>
+      <td>53114</td>
+      <td>High-capacity streptavidin resin for affinity purification of biotinylated proteins</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lenti-X Packaging Single Shots (Ecotropic)</td>
+      <td>Takara Bio</td>
+      <td>631278</td>
+      <td>Lentiviral packaging system for efficient viral particle production in ecotropic host cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kits; bicinchoninic acid assay</td>
+      <td>Pierce</td>
+      <td>23225</td>
+      <td>Quantitative protein assay based on colorimetric detection of peptide bonds</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fluo-4 Direct Calcium Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>F10471</td>
+      <td>Fluorescent assay for real-time calcium flux measurement in live cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK 1016790 A; GSK101</td>
+      <td>Tocris</td>
+      <td>64T33</td>
+      <td>TRPV4 agonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK 2193874; GSK219</td>
+      <td>Tocris</td>
+      <td>5106</td>
+      <td>TRPV4 antagonist</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylene glycol 300; PEG 300</td>
+      <td>Millipore Sigma</td>
+      <td>8074845000</td>
+      <td>Osmotic reagent used to induce hyperosmotic stress</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene Infection/Transfection Reagent; polybrene</td>
+      <td>Sigma-Aldrich</td>
+      <td>TR-1003–50 UL</td>
+      <td>8 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin Dihydrochloride, puromycin</td>
+      <td>Thermo Fisher</td>
+      <td>A1113803</td>
+      <td>1 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-Lysine</td>
+      <td>Fisher Scientific</td>
+      <td>A005C</td>
+      <td>50 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>VWR</td>
+      <td>100503–974</td>
+      <td>0.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fluorescein-gelatin</td>
+      <td>Thermo Fisher</td>
+      <td>G13187</td>
+      <td>1 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gelatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2500</td>
+      <td>4 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link(TM) Sulfo-NHS-Biotin</td>
+      <td>Thermo Fisher</td>
+      <td>A39256</td>
+      <td>2 mM</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI and Hoechst Nucleic Acid Stains; DAPI</td>
+      <td>Thermo Fisher</td>
+      <td>D3571</td>
+      <td>300 nM, Immunofluorescence, Line analysis, Cell invasion assay,</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiI Stain (1,1’-Dioctadecyl-3,3,3',3'-Tetramethylindocarbocyanine Perchlorate (‘DiI’;DiIC18(3)))</td>
+      <td>Thermo Fisher</td>
+      <td>D282</td>
+      <td>5 μM, Materials and Methods – Immunofluorescence, Line analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>8-well chambered slides</td>
+      <td>Nunc Lab-Tek</td>
+      <td>155409PK</td>
+      <td>Materials and Methods – Live cell detection, Cell invasion assay, Calcium reporter assay, Cell viability assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Q Exactive HF mass spectrometer</td>
+      <td>Thermo Fisher</td>
+      <td></td>
+      <td>Materials and Methods – Mass spectrometry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MatTek 35 mm dishes with No. 1.5 coverslip, 14 mm glass diameter, and Poly-D-Lysine coated glass bottoms</td>
+      <td>MatTek</td>
+      <td>P35GC-1.5–14 C</td>
+      <td>Materials and methods – Cell motility Assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WGA-488</td>
+      <td>Thermo Fisher</td>
+      <td>W11261</td>
+      <td>10 μg/mL (motility assay), 1 μg/mL (viability assay), Materials and methods – Cell motility assay; Cell viability assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium Iodide Ready Flow Reagent; propidium iodide; PI</td>
+      <td>Thermo Fisher</td>
+      <td>R37169</td>
+      <td>Materials and methods – Cell viability assay</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and treatments
 
 MCF10A cells were purchased from ATCC, and MCF10AT1, MCF10DCIS.com, and MCF10CA1a cells were obtained from the Barbara Ann Karmanos Cancer Institute through a material transfer agreement. ETCC-006 and ETCC-010 cells were purchased from the Leibniz Institute DSMZ, and MDA-MB-231 cells were from ATCC. All cell lines were authenticated prior to purchase, used at a low passage number (<15), and confirmed to be mycoplasma-free by PCR analysis. MCF10A and MCF10AT1 cells were maintained in DMEM/F12 medium supplemented with 5% horse serum, 20 ng/mL EGF, 0.5 μg/mL hydrocortisone, 10 μg/mL insulin, and 1% penicillin and streptomycin. Additionally, MCF10A cells were supplemented with 100 ng/mL cholera toxin. MCF10DCIS.com and MCF10CA1a cells were cultured in DMEM/F12 with 5% horse serum and 1% penicillin and streptomycin. ETCC-006 and ETCC-010 cells were maintained in RPMI 1640 supplemented with 10% fetal bovine serum (FBS) and 1% penicillin and streptomycin. MDA-MB-231 cells were cultured in DMEM/F12 with 10% FBS and 1% penicillin and streptomycin. All cells were cultured at 37 °C in 5% CO₂. For TRPV4 modulation, we used the TRPV4 activator GSK1016790A (GSK101; Tocris 64T33) and the TRPV4 inhibitor GSK2193874 (GSK219; Tocris 5106).
 
 For volume measurements, parental cells were mixed with those expressing RFP at a 9:1 ratio to distinguish individual cells. Cells were treated with 2% (74.4 mOsmol/kg) or 4% PEG 300 (148.8 mOsmol/kg; v/v; Millipore Sigma 8074845000) in culture medium for 15 min, 2% PEG- 00 for 48 hr, GSK1016790A (Tocris; 0.05 and 0.2 pM), or GSK2193874 (Tocris; 0.2 and 1 nM) for 48 hr.
 
-## TRPV4 knockdown by shRNA
+### TRPV4 knockdown by shRNA
 
 Cells in growth medium without penicillin and streptomycin were transfected with the hTRPV4 shRNA plasmid (1 and 2 µg; Santa Cruz sc-61726-SH) and Lipofectamine3000 in opti-MEM. At 6 hr after transfection, the medium was replaced, and cells were cultured for 30 hr before processing for western blot and immunofluorescence analyses.
 
-## Immunofluorescence
+### Immunofluorescence
 
 The cells were fixed with 4% paraformaldehyde (Fisher Scientific) for 20 min, followed by permeabilization with 0.1% saponin (Fisher Scientific) for 5 min at room temperature (RT). After permeabilization, the cells were washed three times in PBS and blocked in 0.1% saponin +10% BSA in PBS at RT for 1 hr. Cells were incubated with primary antibodies overnight at 4 °C in 0.1% saponin in PBS. The primary antibodies used were TRPV4 (Abcam 39260; different lot numbers were tested and selected for optimal performance; 1:500 dilution), TfR (Thermo Fisher Scientific 13–6800; 1:500 dilution), PIEZO1 (Alomone APC-087; 1:500), and KCNN4 (Alomone ALM-051; 1:500). Cells were washed three times in PBS, incubated with fluorescent-tagged anti-rabbit-Alexa 555 or anti-mouse-Alexa 488 secondary antibodies (Thermo Fisher Scientific) and DAPI for 1 hr at RT, imaged by confocal microscopy. For plasma membrane staining, DiIC18(3) (1,1'-Dioctadecyl-3,3,3',3'-Tetramethylindocarbocyanine Perchlorate; DiIC18(3); Thermo Fisher Scientific, Cat # D282) was diluted in warm PBS to 5 μM. Media was removed from the cells, then the 5 μM DiIC18(3) in PBS was added. The dish was transferred to the incubator (37 C, 5% CO2) for 10 min. Following the 10 min incubation, the DiIC18(3) in PBS was removed and the cells were washed 2 x with complete cell growth media. The cells were then fixed with 2% PFA in PBS.
 
-## Confocal imaging and image processing
+### Confocal imaging and image processing
 
 2D images were acquired using a Yokogawa spinning-disk confocal microscope (Andor Technology) installed in a Nikon Eclipse TE2000 inverted microscope using a 60 x/1.49NA Plan Apo objective (Nikon). The samples were illuminated using 430, 488, 561, and 647 nm solid-state lasers (Andor Technology). Images were acquired using an iXon back-illuminated EMCCD camera (Andor Technology). For volume measurements, 3D confocal images were acquired using z-step sizes calculated based on Nyquist conditions. Images were processed using ImageJ (NIH) or Imaris (Bitplane) software. For live cell imaging, cells were maintained in 5% CO2 at 37 °C in a stage-top incubator (Oko-lab).
 
-## Western blotting
+### Western blotting
 
 ND cells (40–60% cell density) were lysed in SDS sample buffer, and OC cells were lysed in cytoskeleton buffer (10 mM Tris pH 7.4,100 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton X-100, 10% glycerol, 0.1% SDS, 0.5% deoxycholate). SDS sample buffer (Bio-Rad) supplemented with reducing reagent was added to lysates and boiled at 100 °C for 10 min. The samples were separated on 4–15% SDS-PAGE gels and transferred to nitrocellulose membranes (Bio-Rad). Membranes were blocked in TBST (TBS +0.1% Tween-20) containing 5% non-fat milk or 10% BSA and then incubated with primary TRPV4 antibody (Thermo Fisher Scientific PA541066; 1:1000) and GAPDH (Santa Cruz sc-32233; 1:2000) overnight at 4 °C. Membranes were washed three times in TBST (5 min each) and then incubated with horseradish peroxidase (HRP)-conjugated anti-rabbit (Thermo Fisher Scientific A28177) or anti-mouse (Thermo Fisher Scientific A28177) secondary antibodies for 30 min at RT. Blots were visualized using West Femto maximum sensitivity chemiluminescent substrate (Thermo Fisher Scientific).
 
-## Lentiviral infection and stable cell generation
+### Lentiviral infection and stable cell generation
 
 To produce lentiviruses encoding RFP, HEK-293 cells were transfected with the lentiviral vector plasmid DNA using Lenti-X Packaging Single Shots (Takara). pCSII-EF-miRFP670v1-hGem(1/110) was a gift from Vladislav Verkhusha (Addgene plasmid # 80006; http://n2t.net/addgene:80006; RRID:Addgene_80006). Supernatants containing lentiviral pseudoparticles were harvested 24 and 48 hr post-transfection. Harvested lentiviral particles were immediately stored at −80 °C. To establish stable cell lines, 70% confluent cells at 1 d post-seeding were infected with lentivirus in the presence of 8 µg/mL polybrene (Sigma-Aldrich). Two days after transduction, 1µg/mL puromycin (Thermo Fisher Scientific) was added to the medium to select for stably transduced cells. The samples were visualized daily to ensure that the untransduced cells in the wells were not viable. Once the polyclonal populations had sufficiently expanded, cell stocks were prepared and harvested for protein expression assays.
 
-## Cell invasion assay
+### Cell invasion assay
 
 For cell invasion assays, 8-well chamber slides (Nunc Lab-Tek) were coated with 50 µg/mL poly-L-lysine (Fisher Scientific) for 30 min and washed with PBS. The slides were fixed with 0.5% glutaraldehyde (VWR) for 20 min and washed. Gelatin was conjugated with fluorescein by mixing 200 µL fluorescein-gelatin (1 mg/mL; ThemoFisher Scientific) with 800 μL unlabeled gelatin (4 mg/mL) (Sigma-Aldrich), followed by incubation for 5 min at 60 °C. The gelatine mix was allowed to cool at RT for 5 min and then applied, and the slides were incubated for 15 min. Slides were washed with PBS and disinfected with 70% ethanol for 30 min. Following three PBS washes, the residual reactive groups were quenched with growth medium by incubating at room temperature for 30 min in the dark. Cells were seeded in a fresh growth medium and incubated undisturbed on a horizontal surface at RT for 30 min to encourage cell distribution. Chamber slides were incubated with 5% CO2 at 37 °C. To detect cell invasion, cells were fixed with 4% formaldehyde and stained with DAPI (Thermo Fisher Scientific), and imaging was performed using a 4 x/0.2 NA Plan Apo objective (Nikon). Cell invasion was determined by quantifying the sites of the degraded matrix, which were visible as dark areas in the bright-green fluorescent gelatin matrix. The area of gelatin digestion and the number of cells were calculated using the ImageJ software.
 
-## Nanoindenter assay for measuring cortical stiffness
+### Nanoindenter assay for measuring cortical stiffness
 
 Stiffness measurements were performed on live cells in 5% CO2 at 37 °C, maintained in a stage-top environmental chamber (Oko-lab) using a nanoindenter (Optics11 Chiaro) attached to the confocal microscope. Nanoindentation was performed at the cell surface of single cells with an indentation probe with a spring constant (0.24 N/m) and tip diameter (10 μm). The Hertzian contact model was used to fit the data to extract Young’s modulus in the elastic regime.
 
-## Surface biotinylation and pull-down assay
+### Surface biotinylation and pull-down assay
 
 ND cells that were 40–70% confluent and OC cells were detached and washed twice with PBS. The cells were resuspended at a concentration of 25×106 cells/mL in PBS containing 2 mM sulfo-NHS-biotin (Invitrogen). The reaction mixture was then incubated at RT for 60 min. Cells were washed three times with 1 M Tris pH 8.0 to quench and remove the excess biotin reagent. Cell pellets were lysed in 1.0 mL of cold lysis buffer (50 mM HEPES pH 7.2, 150 mM NaCl, 1.0% Triton X-100, 1.0% CHAPS, 100 x protease and phosphatase inhibitors). Lysates were incubated on ice for 30 min, transferred to tubes, and centrifuged (10,000×g for 5 min) to remove insoluble material. Supernatants were collected, and protein concentrations were measured using the bicinchoninic acid assay (Pierce). We washed 50 µL resin (Thermo Fisher Scientific) with immobilized streptavidin twice with binding buffer (0.1 M phosphate, 0.15 M NaCl pH 7.2) and centrifuged at 5000×g for 1 min. Biotin-labeled cell lysate (1 mg) was added to the resin and incubated with rotation for 1 hr at RT. The resin was washed by resuspending in binding buffer, centrifuging to pellet the resin, and removing the supernatant by aspiration. The wash was repeated four times. Samples were boiled in SDS-PAGE sample buffer with DTT and separated by electrophoresis.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Peptide mixtures from each sample were analyzed by LC-MS/MS using a nano-LC system (Easy nLC1000) connected to a Q Exactive HF mass spectrometer (Thermo Fisher Scientific). The platform was configured with a nano-electrospray ion source (Easy-Spray, Thermo Fisher Scientific), an Acclaim PepMap 100 C18 nanoViper trap column (3 μm particle size, 75 μm ID ×20 mm length), and an EASY-Spray C18 analytical column (2 μm particle size, 75 μm ID ×500 mm length). Peptides were eluted at a flow rate of 300 nL/min using linear gradients of 5–25% acetonitrile (in aqueous phase and 0.1% formic acid) for 40 min, followed by 45% for 10 min, and static flow at 90% for 10 min. Mass spectrometry data were collected in a data-dependent manner, switching between one full-scan MS mode (m/z:380–1400; resolution: 60 K; AGC:3e6; maximum ion time: 20ms), and 10 MS/MS scans (resolution: 15 K; AGC:1e5; maximum ion time: 120 ms; nCE:27) of the top 10 target ions. Ions were sequenced once and dynamically excluded from the list for 20 s. The datasets were searched using MaxQuant at default parameters against the UniProt Human Proteome database.
 
-## Line analysis
+### Line analysis
 
 IF images of ion channels (TRPV4, PIEZO1, or KCNN4), TfR, DiIC18(3), and DAPI were opened in ImageJ. These images were concatenated so that a line crossing a cell in all three images could be used to measure an approximate percentage of protein localization in the plasma membrane, cytosol, or nucleus. Background was subtracted from all images. DiIC18(3) signal was used as a guide for plasma membrane location (between 50% of the peak intensity) and DAPI signal (between 50% of the peak intensity) for nuclear locations. The cytosol location was defined as the region between the 50% peak intensity points of the DiIC18(3) and DAPI signals. The ion channel signal in each window along the line was then averaged. The percentage of protein localization in the plasma membrane, cytosol, or nucleus for a cell was calculated by dividing the average intensity of each location by the sum of intensities in all three locations.
 
-## Live cell detection of plasma membrane-associated TRPV4
+### Live cell detection of plasma membrane-associated TRPV4
 
 Cells were seeded in a LabTek II 8-well Chambered Coverglass dish (Thermo Fisher 155409) at a density of 10,000 cells per well and allowed to adhere and grow for 2 d. Afterward, the cells were incubated on ice for 1 hr with 1:300 Anti-TRPV4 (extracellular) rabbit primary antibody (Alomone ACC-124) in either complete media or 74 mOsm/Kg PEG 300 in complete media. Following the incubation, the cells were washed twice with the respective media (complete media or 74 mOsm/Kg PEG 300 in complete media) while remaining on ice. Subsequently, the cells were stained for 1 hr at 22 °C with 1:5000 Donkey anti-Rabbit IgG H+L Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647 (Thermo Fisher A31573) in the same respective media. After the staining period, the cells were imaged.
 
-## Pipeline for analyses of patient histologic samples
+### Pipeline for analyses of patient histologic samples
 
 Case 1: Absence of TRPV4.
 
@@ -219,14 +607,14 @@ Case 3: Presence of TRPV4 in the plasma membrane, with or without intracellular 
 
 The independent annotations concerning protein localization by the two pathologists were then subjected to statistical tests for selectivity and specificity. Any IHC ROIs with classification disagreements between the pathologists were designated as equivocal cases.
 
-## Calcium reporter assay
+### Calcium reporter assay
 
 This assay was completed using the Fluo-4 Direct Calcium Assay Kit (Thermo Fisher F10471), including the assay buffer (Thermo Fisher), 2 X Fluo-4 calcium assay reagent (Thermo Fisher), and preweighed, water-soluble probenecid (Thermo Fisher P36400; 2.5 mM). The 2 X Fluo-4 calcium assay reagent was first prepared by adding 10 mL of the Fluo-4 calcium assay buffer and 200 μL of 250 mM probenecid to the desiccated calcium assay reagent at room temperature (21 °C). This mixture was then vortexed and allowed to sit for 15 min. While waiting for the 2 X Fluo-4 calcium assay reagent to finish being prepared, the media from the well of a LabTek II Chambered Coverglass with Cover #1.5 Borosilicate Sterile 8-well plate (Thermo Fisher 155409) was removed and replaced with 200 μL of complete media. Once the 2 X Fluo-4 calcium assay reagent was fully prepared, 200 μL of the reagent was added to the well with 200 μL of complete media. The 8-well plate was then placed at 37 °C and 5% CO₂ for 30 min. Following 30 min at 37 °C and 5% CO₂, the 8-well plate was removed from the incubator and placed at room temperature for 30 min. After incubation in the reagent for 30 min at room temperature, the 8-well plate was imaged using the confocal microscope with a 488 nm laser for 30 min with 30 s intervals between images and an exposure time of 200 ms. If the sample was treated, the sample was imaged for 35 min with 30 s intervals, with the treatment being added after 5 min had elapsed. Added treatments all had a final volume of 200 μL and were composed of: 1 nM GSK 2 in 1:1 media:2 X Fluo-4 calcium assay reagent, 0.2 nM GSK 2 in 1:1 media:2 X Fluo-4 calcium assay reagent, 0.2 pM GSK 1 in 1:1 media:2 X Fluo-4 calcium assay reagent, 1:1:1 water:media:2 X Fluo-4 calcium assay reagent, and 0.3 Osm/L PEG 300 in 1:1 media:2 X Fluo-4 calcium assay reagent.
 
-## Cell motility assay
+### Cell motility assay
 
 Cells were first seeded in MatTek 35 mm dishes with No. 1.5 coverslip, 14 mm glass diameter, and Poly-D-Lysine coated glass bottoms (MatTek P35GC-1.5–14 C). Once the cells adhered, they were stained with 10 μg/mL WGA-488 (Thermo Fisher W11261) for 10 min at room temperature. Following the staining, the cells were washed with complete media twice and then incubated at 37 °C and 5% CO₂ for 1 hr. During this incubation, the cells received the following treatments: 0.2 pM GSK 101 in complete media for 1 hr, 0.05 pM GSK 101 in complete media for 1 hr, 1 nM GSK 219 in complete media for 1 hr, 0.2 nM GSK 219 in complete media for 1 hr, 74.4 mOsm/Kg PEG 300 in complete media for 15 min, and 1:1 hypoosmotic solution in complete media for 15 min. After the incubation, the sample was placed in an OkoLab chamber at 37 °C and 5% CO₂ for imaging. Imaging was completed using a confocal microscope with a 488 nm laser for 3 hr with 1 min intervals.
 
-## Cell viability assay
+### Cell viability assay
 
 MCF10DCIS.com cells were plated in a LabTek II 8-well Chambered Coverglass dish (Thermo Fisher 155409) at a seeding density of 10,000 cells per well. Once the cells in the well reached the desired number of days post-confluence, they were stained using Propidium Iodide Ready Flow Reagent (Thermo Fisher R37169). Specifically, one drop of propidium iodide (PI) was added to 500 µL of cell growth medium per well and incubated for 15 min at room temperature (22 °C). After staining, the cells were washed twice with complete growth medium. Next, the cells were stained with 1 µg/mL WGA-488 (Thermo Fisher w11261) in complete growth medium for 15 min at 37 °C in a 5% CO₂ atmosphere. Following the incubation with WGA-488, the cells were washed three times with complete growth medium and then incubated for 2 hr at 37 °C in 5% CO₂ to allow WGA migration into the nuclei. Finally, the cells were imaged using confocal microscopy at 4 X magnification, with laser excitation at 488 nm for WGA-488 and 560 nm for propidium iodide.

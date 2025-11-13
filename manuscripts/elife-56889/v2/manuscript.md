@@ -37,19 +37,281 @@ We previously identified TMCO1 as a eukaryotic member of the Oxa1 superfamily, w
 
 ## Results
 
-## Interaction partners of natively isolated TMCO1-ribosome complexes
+### Interaction partners of natively isolated TMCO1-ribosome complexes
 
 To identify components of TMCO1-ribosome complexes we solubilized microsomes isolated from 3xFlag-TMCO1 HEK293 cells, affinity purified via the Flag tag on TMCO1, isolated the ribosome-bound fraction by sedimentation, and identified co-purifying proteins by quantitative mass spectrometry (Figure 1A,B). Ribosomal proteins, subunits of the Sec61 complex, and TMCO1 were enriched relative to control cells lacking the Flag tag, whereas known translocon accessory factors—including subunits of the OST and TRAP complexes, TRAM, Sec62/63 and the signal peptidase complex—were either weakly enriched or absent. We also observed strong enrichment of three poorly studied proteins: the single-pass membrane protein CCDC47 (calumin) and two subunits of the Nicalin-TMEM147-NOMO transmembrane complex (Dettmer et al., 2010).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig1-v2.jpg)
+
+**Figure 1.:** (A) Emetine- and micrococcal nuclease-treated membranes from wild-type (WT) or 3xFlag-TMCO1 (Flag) HEK293 cells were digitonin-solubilized, immunoprecipitated via the 3xFlag tag on TMCO1, and the eluate sedimented through a sucrose cushion to isolate the ribosome-associated fraction for analysis. (B) Proteins enriched in the ribosomal fraction after immunoprecipitation from 3xFlag-TMCO1 or wild-type membranes. (C) Top hits were confirmed by western blotting. The catalytic STT3A subunit of the OST complex is not detected. (D) Topology and domain structure for the top hits, based on Uniprot annotation, homology modeling, de novo structure prediction (in RaptorX-Contact), and experimental mapping; the Sec61 complex is not shown. Distinguishing features include the large globular luminal domain of Nicalin (in contrast with the flexible luminal domains of NOMO and CCDC47), the large globular cytosolic domain of CCDC47 (with a conserved C-terminal coiled-coil), and a conserved cytosolic coiled-coil between the first two TMDs of TMCO1. TMEM147 is the core, multi-pass subunit of the Nicalin-TMEM147-NOMO complex Dettmer et al., 2010; note that the short extra-membrane loops of TMEM147 make it difficult to detect by mass spectrometry.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of co-purifying components in the ribosome-bound fraction (“Pellet”), following immunoprecipitation from digitonin-solubilized microsomes isolated from HEK293 cells stably expressing 3xFlag-TMCO1 or 3xFlag-Nicalin. (B) Digitonin-solubilized microsomes from 3xFlag-TMCO1 HEK293 cells were cleared of ribosomes by sedimentation. The ribosome-free fraction (“Input”) was then subjected to affinity purification using anti-Flag or anti-NOMO antibodies. Immunoprecipitation of 3xFlag-TMCO1 recovers only trace amounts of the other components, and NOMO1 immunoprecipitation fails to recover either TMCO1 or CCDC47. However, as shown previously (Dettmer et al., 2010), Nicalin is efficiently recovered by NOMO immunoprecipitation.
 
 We confirmed recovery of Sec61, TMCO1, Nicalin, TMEM147, NOMO and CCDC47 in the ribosome-associated fraction following 3xFlag-TMCO1 immunopreciptation (Figure 1C,D). Notably, the catalytic OST subunit STT3A was not detected, consistent with the absence of OST from the TMCO1-ribosome complexes. Affinity purification via a Flag tag on Nicalin recovered TMCO1, CCDC47 and NOMO in the ribosome-bound fraction (Figure 1—figure supplement 1A), indicating that these proteins can be isolated as a single, ribosome-associated complex. In the absence of ribosomes, however, only components of the Nicalin-TMEM147-NOMO complex remained intact (Figure 1—figure supplement 1B), suggesting that TMCO1, CCDC47 and the pre-formed Nicalin-TMEM147-NOMO complex assemble in the context of the ribosome.
 
 CCDC47, Nicalin, TMEM147 and NOMO are abundant ER-localized proteins, conserved across eukaryotes, widely expressed in human tissues, and associated with several human diseases (Itzhak et al., 2016; Burdon et al., 2011; Sharma et al., 2012; Xin et al., 2010; Caglayan et al., 2013; Alanay et al., 2014; Li et al., 2019; Reuter et al., 2017; Morimoto et al., 2018). Although their functions remain obscure, CCDC47 has been linked to various membrane-associated processes (Morimoto et al., 2018; Zhang et al., 2007; Konno et al., 2012; Thapa et al., 2018; Yamamoto et al., 2014), and the Nicalin-TMEM147-NOMO complex has been proposed to regulate subunit assembly and localization of several cell surface receptors and ion channels (Almedom et al., 2009; Gottschalk et al., 2005; Kamat et al., 2014; Rosemond et al., 2011). More recently, all four genes were identified in a genome-wide screen for factors that impair surface expression of a mutant TRP channel (Talbot et al., 2019). That these proteins can be stably isolated with TMCO1-bound ribosome-Sec61 complexes suggests a link between these observations and a co-translational process at the ER.
 
-## Architecture of a ribosome-bound TMCO1 translocon
+### Architecture of a ribosome-bound TMCO1 translocon
 
 We sought to clarify the role of these ribosome-associated membrane components by examining their arrangement relative to key functional domains of the ribosome and the Sec61 complex. Using chemical cross-linking and mass spectrometry (XL-MS), we identified 1229 unique, high-confidence intra- and inter-protein cross-links in the affinity-purified complexes (Figure 2—figure supplement 1A,B). Multiple cross-links between 60S ribosomal subunits and the cytosolic-facing regions of Sec61, TMCO1, CCDC47, TMEM147 and NOMO confirmed their predicted membrane topologies, and placed them in the vicinity of the ribosome exit tunnel (Figure 1D and Figure 2—figure supplement 1C,D).
 
 We next used single particle cryo-electron microscopy (cryo-EM) to directly visualize the natively purified complexes (Figure 2, Figure 2—figure supplements 2–5 and Table 1). Density for the ribosome is well-defined, revealing hybrid state A/P and P/E tRNAs, and a mixture of nascent polypeptides in the exit tunnel (Figure 2—figure supplement 5A). Additional density is visible surrounding the ribosome exit tunnel. Local resolution within the translocon varies from ~3.5–4.5 Å in Sec61 and regions contacting the ribosome, to ~5.5–7.5 Å for most of the membrane region, and ~10–15 Å in peripheral and luminal regions (Figure 2—figure supplement 4 and Figure 2—figure supplement 5B,C). Sec61 is in a conformation similar to that observed in the ribosome-Sec61-OST complex (Braunger et al., 2018), with a closed lateral gate and the plug helix occluding the central pore (Figure 2—figure supplement 5D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-v2.jpg)
+
+**Figure 2.:** (A) Density for the 80S ribosome, A/P and P/E tRNAs is from the sharpened global map after low-pass filtering by local resolution. The translocon density is from the unsharpened focused map after low-pass filtering by local resolution; isolated densities for Sec61 (green), TMEM147 (purple), TMCO1 (blue) and CCDC47 (violet) are shown at a single threshold. The focused map is also shown at a lower threshold (transparent) to highlight luminal density and the micelle. (B) Closeup of the Sec61 complex, including experimentally observed cross-links (red) between Sec61γ and the indicated ribosomal subunits (yellow). (C) Closeup of the TMEM147-Nicalin complex (purple, pink), and cross-links between uL24 and the conserved TM3-TM4 loop of TMEM147. (D) The luminal domain of Nicalin (pink) extends below TMEM147 in a large lobe of density. (E) Closeup of TMCO1, and multiple intra- and inter-molecular cross-links. (F) Closeup of the cytosolic domain of CCDC47 and cross-links to the indicated ribosomal subunits, Sec61α, and the TMCO1 coiled coil; a cross-link that exceeds the distance cutoff of 35 Å is in black. Density in panels B-F is from the unsharpened signal-subtracted map after low-pass filtering by local resolution.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Classification of cross-linked residue pairs. Crosslinks are reported at a false discovery rate of 0.55% corresponding to a classification score threshold of 1.5 (dashed red line). FDR was determined by modeling the distributions of crosslinks with zero (blue), one (red) or two (yellow) peptides randomly matching at given score using a decoy database (see methods). (B) Distance distributions for all ribosome-ribosome crosslinks mapping to a high-resolution cryo-EM structure of the human ribosome (PDB ID 4UG0) (Khatter et al., 2015). After applying a conservative cutoff (SVM score ≥ 1.5), 715 crosslinks could be mapped to the structure with the majority (91.3%) of crosslink Cα-Cα distances lying within the 35 Å upper limit (red dashed line). A distribution sampled from all possible Lys-Lys pairs on the ribosome (purple) is shown for comparison. (C) Network diagram of the 130 strongest (SVM score ≥ 1.5) intra- (purple lines) and inter-molecular (cyan lines) unique cross-linked residue pairs involving the membrane components. Luminal (white), transmembrane (grey) and cytosolic (cyan) regions of the membrane components are indicated. Crosslinks between the luminal domain of Nicalin and the cytosolic domain of NOMO, and between the C-terminus of TMCO1 and eS7, are likely non-physiologic (dashed red lines). (D) Surface representation of the human ribosomal large subunit highlighting the locations of proteins crosslinked to one or more of the membrane components. Ribosomal subunits are colored as in (C), and the exit tunnel is marked with a red asterisk.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Initial rounds of 3D classification yielded five classes containing tRNA density and luminal density extending below the detergent micelle. These were subjected to additional 3D refinement followed by 3D classification with signal subtraction, using a mask encompassing the translocon and part of the ribosomal large subunit (cyan). 3D refinement of the major translocon-containing class was performed with the signal subtracted particles (Map 1), or with unsubtracted particles subjected first to global refinement (Map 2), followed by focused refinement (Map 3) using a mask around the translocon (magenta). The three final maps are shown with their resolutions and EMD deposition codes.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Three maps were used for the final analysis: (A) Translocon map after signal subtraction (Map 1), (B) Global map calculated with unsubtracted particles (Map 2) and (C) Focused map calculated with unsubtracted particles (Map 3). Left, Maps colored by local resolution as estimated by Relion; middle, angular particle distribution in two views; right, gold-standard Fourier shell correlation (FSC) curve with indicated resolution at FSC = 0.143.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Section through a sharpened global map after low-pass filtering by local resolution, showing density for a mixture of nascent polypeptides (orange) throughout the ribosome exit tunnel. (B) Model vs. map FSC curve calculated with a masked version of the signal-subtracted Map 1 and the final translocon model. (C) Model of the translocon, colored by local B-factor. (D) Closeup of the Sec61 complex fit into the unsharpened focused map after low-pass filtering by local resolution. The lateral gate (between TM2 and TM7) of Sec61 is closed, and the plug helix occupies the central pore. (E) Closeup of the seven TMDs of TMEM147, the single-TMD of Nicalin, and the Sec61 “hinge” region, fit into the same map as in (D). This view is rotated ~180° from that shown in Figure 2C.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Amino acid sequence of human TMEM147 colored by ConSurf conservation score. Transmembrane helices (TM) are indicated. (B) Top-scoring iTasser homology model for TMEM147, based on the APH-1 subunit of human γ-secretase (PDB ID 5A63) (Bai et al., 2015), and color ramped from N- (blue) to C-terminus (red). Note the distinctive arrangement of the seven TMEM147 TMDs. (C) Amino acid sequence of human Nicalin colored by ConSurf conservation score. The N-terminal signal peptide (SP) and single transmembrane helix (TM) are indicated. (D) Top-scoring iTasser homology model for the Nicalin luminal domain, based on the Nicastrin subunit of human γ-secretase, and color ramped from N-(blue) to C-terminus (red). (E) Superposition of the Nicalin (pink) and TMEM147 (purple) homology models on the APH1-Nicastrin subunits (white) of γ-secretase. The cytosolic end of TMEM147 TM3 is ~10 residues shorter than the corresponding region in APH-1; as noted in the main text, this allows TMEM147 to approach Sec61 despite limited space available in the ribosome-membrane junction.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Amino acid sequence of human TMCO1 colored by ConSurf conservation score. Transmembrane helices (TM) are indicated. (B) Heat map of the RaptorX-Contact probabilities of two residues being in close proximity (Cβ-Cβ distance <8 Å); higher probabilities are darker. (C) Top five scoring models from RaptorX-Contact; each model is color ramped from the N-terminus (blue) to C-terminus (red). (D) High-probability (p ≥ 0.80) RaptorX-Contact contacts (white lines) mapped onto the final TMCO1 model after fitting into the cryo-EM density map.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Amino acid sequence of human CCDC47 colored by ConSurf conservation score. The N-terminal signal peptide (SP) and single transmembrane helix (TM) are indicated. (B) Heat map of the RaptorX-Contact probabilities of two residues being in close proximity (Cβ-Cβ distance <8 Å); higher probabilities are darker. (C) Top five scoring models from RaptorX-Contact; each model is color ramped from the N-terminus (blue) to C-terminus (red). (D) High-probability (p ≥ 0.80) RaptorX-Contact contacts (white lines) mapped onto the final CCDC47 model after fitting into the cryo-EM density map.
+
+**Table 1.**
+ Cryo-EM data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Data collection and processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>64,000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.0 to −2.5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.68</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Micrographs used</td>
+      <td>5562</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>1,049,128</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>82,684</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Map 1 (EMD-21426)</td>
+      <td>Map 2 (EMD-21427)</td>
+      <td>Map 3 (EMD-21435)</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.8</td>
+      <td>3.4</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>3.3 to 10.3</td>
+      <td>3.0 to 15.4</td>
+      <td>3.2 to 13.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement and validation</td>
+      <td></td>
+      <td></td>
+      <td>60S–translocon PDB ID 6W6L</td>
+    </tr>
+    <tr>
+      <td>Resolution for refinement (Å)</td>
+      <td></td>
+      <td></td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td></td>
+      <td></td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td></td>
+      <td></td>
+      <td>8012 (1718)*</td>
+    </tr>
+    <tr>
+      <td>Nucleotide bases</td>
+      <td></td>
+      <td></td>
+      <td>3939 (0)</td>
+    </tr>
+    <tr>
+      <td>Average B factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td></td>
+      <td></td>
+      <td>156 (260)</td>
+    </tr>
+    <tr>
+      <td>Nucleotide</td>
+      <td></td>
+      <td></td>
+      <td>191 (N/A)</td>
+    </tr>
+    <tr>
+      <td>R.M.S. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td></td>
+      <td></td>
+      <td>0.006 (0.005)</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td></td>
+      <td></td>
+      <td>0.809 (1.013)</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td></td>
+      <td></td>
+      <td>2.03 (2.43)</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td></td>
+      <td></td>
+      <td>9.41 (13.66)</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers</td>
+      <td></td>
+      <td></td>
+      <td>1.42 (3.39)</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td></td>
+      <td></td>
+      <td>93.7 (94.4)</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td></td>
+      <td></td>
+      <td>6.2 (5.4)</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td></td>
+      <td></td>
+      <td>0.1 (0.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the translocon components only._
 
 A cluster of eight TMDs visible near the Sec61 hinge were unambiguously assigned to the Nicalin-TMEM147 sub-complex using a homology model based on the APH1-Nicastrin sub-complex of human γ-secretase (Figure 2—figure supplement 6; Dettmer et al., 2010; Bai et al., 2015; Haffner et al., 2004). The distinctive arrangement of the seven TMEM147 TMDs could be docked into the density as a rigid body with only minor adjustments (Figure 2C and Figure 2—figure supplement 5E). This enabled assignment of the remaining helical density to the single Nicalin TMD, which packs against TM1 of TMEM147 in its evolutionarily predicted position. Here, the large luminal domain of Nicalin extends into low-resolution density directly below the translocon (Figure 2D). Notably, the cytosolic end of TM3 in TMEM147 is ten residues shorter than the corresponding TM3 in APH-1 (Figure 2—figure supplement 6E). This allows TMEM147 to bind Sec61 despite limited space in the ribosome-translocon junction, and positions the short cytosolic regions of TMEM147 in contact with uL24 and rRNA H7, in agreement with the XL-MS (Figure 2C and Figure 2—figure supplement 1C,D).
 
@@ -65,11 +327,31 @@ The translocon extends ~90 x 120 x 140 Å, with Sec61 and its accessory facto
 
 A prominent feature of the complex is a large (~25 x 30 x 30 Å), lipid-filled cavity formed at the center of the translocon by Sec61, TMEM147 and TMCO1 (Figure 3B). Like other structurally characterized members of the Oxa1 superfamily (Anghel et al., 2017; Kumazaki et al., 2014; Borowska et al., 2015), the transmembrane helices of TMCO1 form a funnel that extends from the cytosol into the lipid bilayer (Figure 4A). In bacterial YidC, this funnel operates as a transient binding site for TMDs, which are then released into the membrane (Kumazaki et al., 2014; Borowska et al., 2015). TMCO1 is located on the ‘back’ side of Sec61 in the TMCO1 translocon (Figure 4B). Here, the TMCO1 funnel lines the lipid-filled cavity at the center of the translocon, suggesting that a hydrophobic segment could be inserted from the cytosol into a protected membrane environment.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig4-v2.jpg)
+
+**Figure 4.:** (A) Comparison of experimentally determined structures for bacterial, archaeal and human members of the Oxa1 superfamily of membrane protein biogenesis factors. The evolutionarily conserved three TMD core (cyan, lime and orange), forms a funnel extending from the cytosol into the bilayer. A surface representation of TMCO1 (blue) is shown at right. (B) Slice through the membrane of the TMCO1 translocon, viewed from the cytosol. The large lipid-filled cavity formed by Sec61, TMEM147 and TMCO1 is visible at the center of the translocon. Red arrows indicate known (via Sec61) and potential (via TMCO1 and TMEM147) routes into the membrane. (C) Closeup of the Sec61-TMEM147 interaction. The seven TMDs of TMEM147 (purple) form a large funnel that extends from the ER lumen into the lipid bilayer. (D) Surface representation of TMEM147. The hinge region of Sec61 (green) partially occludes the bilayer-exposed opening of the funnel (left), but not the luminal opening (right).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Arrangement of Sec61 (green) and the TMEM147-Nicalin complex (purple, pink) in the TMCO1 translocon, highlighting the Sec61 hinge region interaction with the luminal TMEM147 funnel. (B) Structurally analogous interaction of presenillin-1 (yellow) with the APH-1 subunit (cyan) of γ-secretase (PDB ID 5A63) (Bai et al., 2015). Note that the APH-1 funnel is completely occupied by presenillin-1. (C) The Hrd1 protein conducting ERAD channel (PDB ID 5V6P) (Schoebel et al., 2017) contains a large cytosolic funnel that opens to the bilayer. TM1 of a neighboring Hrd1 subunit (green) is proposed to gate access to the cytosolic leaflet of the bilayer.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Orthogonal views of the (A) TMCO1- (B) OST translocons (PDB ID 6FTI) (Braunger et al., 2018), aligned on the Sec61 complex. The primary ribosome contacts are mediated by CCDC47 (violet), TMCO1 (blue) and TMEM147 (purple) in the TMCO1 translocon, and by RPN1 (orange) in OST; these binding sites are non-overlapping. By contrast, there are extensive steric clashes between the luminal domains of Nicalin (pink) and STT3A (yellow). In addition, TMDs of TMCO1, TMEM147 and Nicalin overlap with TMDs of the STT3A (catalytic subunit), DC2 and OST4 in the OST complex. Note the presence of an unassigned helix in the OST structure, proposed to belong to the opsin substrate TMD (red), which resides near the large, lipid-filled cavity observed in the TMCO1 translocon.
+
 TMEM147 also lines the lipid-filled cavity. Here, its seven TMDs form a funnel that extends from the lumen partway across the membrane. Within the bilayer, the Sec61 hinge (located between TM5 and TM6) contacts TM2, TM3 and TM4 inside the TMEM147 funnel. A similar intra-membrane interaction is observed in γ-secretase, where the presenilin C-terminus fills the hydrophobic APH-1 funnel (Figure 4—figure supplement 1B; Bai et al., 2015). Unlike in γ-secretase, however, the Sec61 hinge only partially occupies the TMEM147 funnel, laterally sealing it in membrane, but leaving it open to the lumen (Figure 4C,D). This is reminiscent of the Hrd1 protein conducting ERAD channel, in which a structurally similar hydrophilic funnel, proposed to transport transmembrane segments from the bilayer to the cytosol, opens to the cytosol, and is laterally sealed by a neighboring Hrd1 subunit (Figure 4—figure supplement 1C; Schoebel et al., 2017). By analogy, TMEM147 could insert a hydrophobic segment from the lumen into the central membrane cavity in a process gated by Sec61. Taken together, these structural observations suggest that the TMCO1 translocon may be specialized for membrane protein biogenesis.
 
-## The TMCO1 translocon functions in multi-pass membrane protein biogenesis
+### The TMCO1 translocon functions in multi-pass membrane protein biogenesis
 
 We sought to test this possibility by sequencing the mRNAs associated with ribosomes recovered after affinity purification via the Flag tag on TMCO1 (RIP-seq). Remarkably, we observed strong enrichment for transcripts encoding secretory pathway transmembrane proteins (Figure 5A). Of these, single-pass proteins—by far the most abundant type of membrane protein in the human genome—were strongly depleted (Figure 5B). By contrast, transcripts encoding multi-pass membrane proteins with four or more TMDs were enriched (Figure 5B). These include numerous transporters, receptors, transferases and hydrolases (Figure 5C). Consistent with selective enrichment of TMCO1-linked transcripts, we observed enrichment across three orders of magnitude of transcript abundance in the input sample (Figure 5D), and this was independent of protein length (Figure 5—figure supplement 1A). These data directly link the TMCO1 translocon to a co-translational process involving hundreds of different multi-pass clients.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig5-v2.jpg)
+
+**Figure 5.:** (A) Log2 enrichment of transcripts encoding proteins of the indicated categories according to Uniprot annotation. Enrichment was calculated as (Flag IP - Ctrl IP)/Input, where “Flag IP” and “Ctrl IP” are the average transcript levels in the ribosome fraction following anti-Flag immunoprecipitation from digitonin-solubilized wild-type (Ctrl) or 3xFlag-TMCO1 (Flag) HEK293 membranes (n=3), and “Input” is the average transcript abundance in the total membrane fraction (n=2). More than 98% of the most enriched transcripts (right of the dashed line) encode secretory pathway transmembrane proteins. (B) Proportion of secretory pathway transmembrane proteins containing the indicated number of Uniprot-predicted TMDs in the input (gray), and in the 529 most enriched membrane-protein encoding transcripts from the elution (red). (C) PANTHER classification for the enriched set of membrane proteins. (D) Transcript levels in the TMCO1 immunoprecipitated sample (“IP abundance”) plotted against transcript levels in total HEK293 membranes (“input abundance”). Enrichment (above the dashed line) is seen across three orders of magnitude of input mRNA abundance. (E) Representative western blot of total HEK293 lysate from wild-type (WT) and knockout (ΔTMCO1 and ΔTRAM) cells, in duplicate. Expression of the multi-pass membrane protein EAAT1, is decreased in the TMCO1 knockout cells, but is unaffected by deletion of the unrelated Sec61 accessory factor, TRAM. Note that the EAAT1 “multimer” band is from SDS-induced aggregation. (F) As in (E), for the indicated single- and double-knockout cells. Tubulin serves as a loading control. Note that disruption of Nicalin reduces the expression levels of its binding partner, NOMO, as shown previously (Dettmer et al., 2010). The faint band migrating just above Nicalin in the ΔNicalin cells is a cross-reacting band. (G) Quantification of protein expression levels for EAAT1 (monomer and multimer), showing mean and S.D., relative to WT cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56889/elife-56889-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Plot of RIP-seq transcript enrichment (“IP enrichment”) vs. protein “engaged length” for all observed secretory pathway transmembrane proteins. Here, “engaged length” is defined as the number of residues following the signal peptide or first transmembrane domain. No correlation is observed between the engaged length and enrichment. (B) Steady-state expression levels and glycosylation patterns of the multi-pass protein EAAT1, and two single-pass proteins, integrin α5 and TRAPα. EAAT1 and integrin α5 are plasma membrane proteins, and TRAPα is an ER membrane protein. The 'multimer' bands visible in the EAAT1 blot are from SDS-induced aggregation, exacerbated here by the denaturing conditions used for deglycosylation (compare with Figure 5E, F). The asterisk indicates a cross-reactive band. (C) Quantification of EAAT1 mRNA levels by qRT PCR analysis. GAPDH-normalized EAAT1 mRNA levels (mean, S.D.) in the indicated cell lines, relative to wild-type cells. In each case, EAAT1 mRNA levels change by less than 1.5-fold.
 
 To evaluate the role of the TMCO1 translocon in biogenesis, we monitored the endogenous protein levels of the ‘Excitatory amino acid transporter 1’ (EAAT1; SLC1A3; GLAST-1) in HEK293 cells lacking different accessory components. EAAT1 is a member of the large solute carrier (SLC) transporter superfamily, more than one-third of which were enriched by RIP-seq. EAAT1 functions as a homotrimer, and its structure contains multiple TMDs of marginal hydrophobicity and re-entrant helical loops on both sides of the membrane, all of which are required for function (Canul-Tec et al., 2017).
 
@@ -89,11 +371,476 @@ As the folding capacity of the cell must be robust to mutations and other stress
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 Affinity Gel (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# A2220, RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal, FLAG</td>
+      <td>Sigma</td>
+      <td>Cat# F7425, RRID:AB_439687</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit, polyclonal TMCO1</td>
+      <td>Anghel et al., 2017</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit, polyclonal Sec61β</td>
+      <td>Görlich et al., 1992</td>
+      <td></td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse, monoclonal EAAT1</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-515839</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit, polyclonal Sec61α</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA5-21773, RRID:AB_11152794</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit, polyclonal L17</td>
+      <td>Abgent</td>
+      <td>Cat# AP9892b, RRID:AB_10613776</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal STT3A</td>
+      <td>Novus</td>
+      <td>Cat# H00003703-M02, RRID:AB_2198043</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal Tubulin</td>
+      <td>Abcam</td>
+      <td>Cat# ab7291, RRID:AB_2241126</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Integrin α5</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4705, RRID:AB_2233962</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Nicalin</td>
+      <td>Bethyl</td>
+      <td>Cat# A305-623A-M, RRID:AB_2782781</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal TMEM147</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA5-95876, RRID:AB_2807678</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal Nomo1</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA5-47534, RRID:AB_2607776</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal CCDC47</td>
+      <td>Bethyl</td>
+      <td>Cat# A305-100A, RRID:AB_2631495</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# R78007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9</td>
+      <td>Anghel et al., 2017</td>
+      <td></td>
+      <td>3xFlag-Cas9 integrated into FRT site</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, 3xFlag-TMCO1</td>
+      <td>Anghel et al., 2017</td>
+      <td></td>
+      <td>Obtained by CRISPR-Cas9; one nonfunctional and one N-terminally tagged TMCO1 allele</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔTMCO1</td>
+      <td>Anghel et al., 2017</td>
+      <td></td>
+      <td>TMCO1 disrupted by CRISPR-Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔNicalin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nicalin disrupted by CRISPR-Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔCCDC47</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CCDC47 disrupted by CRISPR-Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔTMCO1, ΔNicalin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Nicalin disrupted by CRISPR-Cas9 in ΔTMCO1 background</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔTMCO1, ΔCCDC47</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CCDC47 disrupted using CRISPR-Cas9 in ΔTMCO1 background</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, ΔTMCO1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TMCO1 disrupted by CRISPR-Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, ΔTRAM</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TRAM1 disrupted by CRISPR-Cas9</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔNicalin, 3xFlag-Nicalin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Randomly integrated 3xFlag-Nicalin in ΔNicalin background</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Flp-In T-REx 293, 3xFlag-Cas9, ΔTMCO1, 3xFlag-TMCO1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Randomly integrated 3xFlag-TMCO1 in ΔTMCO1 background</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-n1</td>
+      <td>Addgene</td>
+      <td>Cat# 6085–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-3xFlag-TMCO1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human TMCO1 with an N-terminal 3xFlag tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-3xFlag-Nicalin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human Nicalin with an N-terminal 3xFlag tag following the signal peptide</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330</td>
+      <td>Addgene</td>
+      <td>Cat# 42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-TRAM1-sgRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTTGATGCCATAGTAATAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA targeting Nicalin</td>
+      <td>Invitrogen</td>
+      <td>Custom Synthesis</td>
+      <td>ACGGAATGCAGTGCTGAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA targeting CCDC47</td>
+      <td>Invitrogen</td>
+      <td>Custom Synthesis</td>
+      <td>TCAGTGATTATGACCCGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH fwd</td>
+      <td>IDT</td>
+      <td>Custom Synthesis</td>
+      <td>ACAACTTTGGTATCGTGGAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH rev</td>
+      <td>IDT</td>
+      <td>Custom Synthesis</td>
+      <td>GCCATCACGCCACAGTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EAAT1 fwd</td>
+      <td>IDT</td>
+      <td>Custom Synthesis</td>
+      <td>TTCCTGGGGAACTTCTGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EAAT1 rev</td>
+      <td>IDT</td>
+      <td>Custom Synthesis</td>
+      <td>CCATCTTCCCTGATGCCTTA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3xFlag Peptide</td>
+      <td>ApexBio</td>
+      <td>Cat# A6001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>micrococcal nuclease</td>
+      <td>NEB</td>
+      <td>Cat# M0247S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNAseI</td>
+      <td>Promega</td>
+      <td>Cat# M6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>EndoH</td>
+      <td>NEB</td>
+      <td>Cat# P0702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PNGaseF</td>
+      <td>Promega</td>
+      <td>Cat# 9PIV483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript gDNA Clear cDNA Synthesis Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1725034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboZero</td>
+      <td>Illumina</td>
+      <td>Cat# 20037135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Universal Mycoplasma Detection Kit</td>
+      <td>ATCC</td>
+      <td>Cat# 30–1012K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>digitonin</td>
+      <td>Calbiochem</td>
+      <td>Cat# 11024-24-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>disuccinimidyl suberate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 21555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Ambion</td>
+      <td>Cat# 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION, v.3.1</td>
+      <td>Zivanov et al., 2018</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF v.0.5</td>
+      <td>Zhang, 2016</td>
+      <td>RRID:SCR_016500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein Prospector v.5.23.0</td>
+      <td>Trnka et al., 2014</td>
+      <td>RRID:SCR_014558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer v.2.2</td>
+      <td>Thermo Scientific</td>
+      <td>RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera v.1.13.1</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol v.2.3</td>
+      <td>www.pymol.org</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix v.1.18–3845</td>
+      <td>Afonine et al., 2018</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RaptorX-Contact</td>
+      <td>Wang et al., 2017</td>
+      <td>RRID:SCR_018118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>i-Tasser</td>
+      <td>Zhang, 2008</td>
+      <td>RRID:SCR_014627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>Morin et al., 2013</td>
+      <td>RRID:SCR_003511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot v.0.9</td>
+      <td>Emsley et al., 2010</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil 1.2/1.3 200 mesh, pre-coated with amorphous 2 nm Carbon</td>
+      <td>Ted Pella, Inc</td>
+      <td>Cat# 668–200-CU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Freestyle 293 Expression media</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 12-338-026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1 L PETG square media bottles</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 09-923-16C</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 Antibodies against human TMCO1, Sec61β and TRAPα were characterized previously (Fons et al., 2003; Anghel et al., 2017; Görlich et al., 1992). Additional antibodies were obtained from the following sources: anti-EAAT1 (Santa Cruz, sc-515839), anti-Sec61α (Thermo Fisher, PA5-21773), anti-uL22 (Abgent, AP9892b), anti-STT3A (Novus, H00003703-M02), anti-Tubulin (Abcam, ab7291), anti-Integrin α5 (Cell signaling, 4705) anti-Nicalin (Bethyl, A305-623A-M), anti-TMEM147 (Thermo Fisher, PA5-95876), anti-NOMO (Thermo Fisher, PA5-47534), anti-CCDC47 (Bethyl, A305-100A), anti-TRAM1 (Abcam, ab190982), anti-Mouse rabbit HRP (Abcam, ab6708), anti-Rabbit donkey HRP (Sigma, SAB3700863), anti-Goat rabbit HRP (Sigma, A5420).
 
-## Cell culture
+### Cell culture
 
 Flp-In T-REx 293 cells containing a 3xFlag-Cas9 construct were maintained in DMEM supplemented with 10% FBS (Gemini Foundation) and penicillin/streptomycin mixture (Invitrogen). TMCO1 knockout and 3xFlag-TMCO1 HEK293 cell lines have been described and characterized previously (Anghel et al., 2017). Nicalin and CCDC47 knockout cell lines were generated using the CRISPR/Cas9 system, in both parental and TMCO1 knockout backgrounds. Cas9 expression was induced by addition of 10 ng/mL doxycycline followed by transfection of sgRNAs targeting either Nicalin (ACGGAATGCAGTGCTGAACA) or CCDC47 (TCAGTGATTATGACCCGTT). Cells were grown for 48 hr, followed by single cell sorting into 96 well plates for clonal isolation. Nicalin and CCDC47 knockouts in parental and TMCO1 knockout backgrounds were verified by western blot and genomic DNA sequencing.
 
@@ -105,7 +852,7 @@ Stable cell lines overexpressing N-terminally 3xFlag tagged TMCO1 and Nicalin we
 
 Cells were checked approximately every three months for mycoplasma contamination using the Universal Mycoplasma Detection Kit (ATCC), and were found to be negative.
 
-## Isolation of TMCO1-ribosome complexes for interaction analysis
+### Isolation of TMCO1-ribosome complexes for interaction analysis
 
 For mass spectrometry, approximately 2 × 108 of wild-type (control) and 3xFlag-TMCO1 cells were pelleted, resuspended in ice cold hypotonic lysis buffer (10 mM Hepes pH 7.4, 10 mM potassium acetate, 1 mM magnesium chloride) and incubated on ice for 15 min. Unless otherwise noted, all buffers included emetine at a final concentration of 50 µg/ml. Cells were lysed with 25 strokes of a pre-chilled dounce tissue grinder with a tight-fitting pestle, then 250 mM sucrose and 1 mM PMSF was added to the lysate. Nuclei were pelleted by centrifugation at 700 x g for 3 min. The membrane-containing supernatant was removed and put on ice. The pellet was washed with 1 ml ice cold assay buffer (50 mM Hepes pH 7.4, 250 mM sucrose, 250 mM potassium acetate, 10 mM magnesium chloride) and centrifuged again, and the supernatant combined with the membrane fraction. Membranes were sedimented at 10,000 x g for 10 min at 4°C and resuspended in assay buffer to an A260 of ~50.
 
@@ -117,11 +864,11 @@ Ribosome pellets were resuspended in 50 mM Hepes pH 7.4, 100 mM sodium chloride,
 
 Small-scale IPs were performed similarly, using microsomes isolated from stably integrated 3xFlag-TMCO1 or 3xFlag-Nicalin HEK293 cells.
 
-## Isolation of complexes for XL-MS and cryo-EM
+### Isolation of complexes for XL-MS and cryo-EM
 
 Affinity purification of TMCO1-ribosome complexes for XL-MS and cryo-EM was done as described above with the following changes. Typically, XL-MS samples were produced from ~4×109 cells, and cryo-EM samples from ~7×108 cells. Emetine was not used. To remove any contaminating DNA, isolated membranes were treated with 5 U/ml RNase Free DNase (Promega, M6101) for 15 min at room temperature. Following affinity purification, TMCO1-ribosome complexes were isolated via sedimentation through a 300 µl sucrose cushion (0.5 M sucrose, 150 mM potassium acetate, 50 mM Hepes pH 7.4, 5 mM magnesium chloride, 0.25% digitonin) at 355,000 x g for 45 min in a TLA120.1 rotor. Pellets were resuspended in 150 mM potassium acetate, 50 mM Hepes pH 7.4, 5 mM magnesium chloride, 0.25% digitonin, and concentration determined by A260.
 
-## Chemical cross-linking and mass spectrometry
+### Chemical cross-linking and mass spectrometry
 
 Approximately 85 μg of purified TMCO1-ribosome complexes were resuspended in 150 mM potassium acetate, 50 mM Hepes pH 7.4, 5 mM magnesium chloride, 0.25% digitonin to a concentration of 0.5 mg/ml. Crosslinking was performed by adding disuccinimidyl suberate (DSS, Thermo Fisher, 21555) (prepared as a fresh 10 mM stock in DMSO) to a final concentration of 0.5 mM and incubating for 30 min at 35°C. Crosslinking reactions were mixed by lightly agitating the tube every 5 min during incubation, and quenched by adding 100 mM Tris pH 8. Reactions were TCA precipitated before processing for mass spectrometry. Pellets were washed with ice cold acetone to remove excess lipid and detergent, and then pelleted again.
 
@@ -131,17 +878,29 @@ Samples were reconstituted in 5 µl of 0.1% formic acid for mass spectrometry. L
 
 Separate peaklists were generated for ETD and HCD scans using Proteome Discoverer 2.2 (Thermo) and searched using Protein Prospector 5.23.0 (66). The search database consisted of the sequences of 82 human ribosomal protein components in addition to 10 sequences corresponding to the membrane associated components: TMCO1, Nicalin, NOMO1, NOMO2, NOMO3, Sec61A1, Sec61A2, Sec61β, Sec61γ, TMEM147 and CCDC47. The sequence of TMCO1 contained the N-terminal 3xFlag tag (reported crosslinked residue numbers reference the endogenous sequence). The three NOMO isoforms are highly homologous and in most cases cross-links to NOMO could not be assigned a specific isoform. These proteins were confirmed to be the dominant components of the sample by MS analysis of late eluting SEC fractions (corresponding to linear peptides). The 92 target proteins were concatenated with a decoy database consisting of 10 randomized amino acid sequences of for each target sequence (1012 total protein sequences searched). ETD peaklists were searched using Prospector instrument type ESI-ETD-high-res and HCD peaklists were searched using ESI-Q-high-res. Other search parameters were: mass tolerance of 7 ppm (precursor) and 15 ppm (product); fixed modifications of carbamidomethylation on cysteine; variable modifications of peptide N-terminal glutamine conversion to pyroglutamate, oxidation of methionine, and ‘dead-end’ modification of lysine and the protein N-terminus by semi-hydrolyzed BS3, protein N-terminal acetylation, protein N-terminal methionine loss, and incorrect monoisotopic precursor selection (neutral loss of 1 Da); crosslinking reagent was DSS/BS3; trypsin specificity was used with three missed cleavages and three variable modifications per peptide were allowed. The top 85 product ion signals were used for the search. Searches were performed using 64 cores on an HPC cluster and took about 4 hr to complete.
 
-Cross-link spectral matches (CSM) were initially kept with peptide scores above 20, score difference above 0, and length of each peptide between 4–25 residues. A linear support vector machine (SVM) model was constructed to classify CSMs between decoy and target classes (Trnka et al., 2014). Features selected for the SVM classifier were: score difference, percent of ions matched, precursor charge state, rank of each peptide, and length of each peptide. Models were trained on half of the dataset and parameters were chosen to give a specificity of 90% tested on the other half of the data. Separate classifiers were built for ETD and HCD results. The best scoring CSM per unique cross-linked residue pair was selected and the ETD and HCD results were merged. The distribution of cross-linked residue pairs with one and two incorrectly identified peptides was modeled using essentially the same logic as (Fischer and Rappsilber, 2017), but extending their analysis to account for the 10x increased size of decoy database. The number of target-target hits with one wrong peptide is given by:tf(TT)=(1/k)∗TD−(2/k2)∗DDand the number with both wrong is given by:ff(TT)=(1/k2)∗DDwhere TT, TD, and DD are the number of target-target, target-decoy, and decoy-decoy hits, and k is the scaling factor describing the ratio in size of the decoy database to size of the target database. In this case k = 10. The final list of cross-links was reported at an SVM score of 1.5 which corresponded to a 0.55% FDR. Distance analysis was performed by measuring the Cα-Cα distances between all ribosome cross-links against an EM reconstruction of the human 80S ribosome (PDB ID 4ug0). At the reporting threshold of 1.5, the violation rate (fraction of mappable cross-links > 35 Å) was 8.7%.
+Cross-link spectral matches (CSM) were initially kept with peptide scores above 20, score difference above 0, and length of each peptide between 4–25 residues. A linear support vector machine (SVM) model was constructed to classify CSMs between decoy and target classes (Trnka et al., 2014). Features selected for the SVM classifier were: score difference, percent of ions matched, precursor charge state, rank of each peptide, and length of each peptide. Models were trained on half of the dataset and parameters were chosen to give a specificity of 90% tested on the other half of the data. Separate classifiers were built for ETD and HCD results. The best scoring CSM per unique cross-linked residue pair was selected and the ETD and HCD results were merged. The distribution of cross-linked residue pairs with one and two incorrectly identified peptides was modeled using essentially the same logic as (Fischer and Rappsilber, 2017), but extending their analysis to account for the 10x increased size of decoy database. The number of target-target hits with one wrong peptide is given by:
 
-## Cryo-EM sample preparation and data acquisition
+$$
+tf(TT)=(1/k)^{∗}TD−(2/k^{2})^{∗}DD
+$$
+
+and the number with both wrong is given by:
+
+$$
+ff(TT)=(1/k^{2})^{∗}DD
+$$
+
+where TT, TD, and DD are the number of target-target, target-decoy, and decoy-decoy hits, and k is the scaling factor describing the ratio in size of the decoy database to size of the target database. In this case k = 10. The final list of cross-links was reported at an SVM score of 1.5 which corresponded to a 0.55% FDR. Distance analysis was performed by measuring the Cα-Cα distances between all ribosome cross-links against an EM reconstruction of the human 80S ribosome (PDB ID 4ug0). At the reporting threshold of 1.5, the violation rate (fraction of mappable cross-links > 35 Å) was 8.7%.
+
+### Cryo-EM sample preparation and data acquisition
 
 Quantifoil 1.2/1.3 200 mesh grids coated in a 2 nm carbon film (Ted Pella, Inc) were glow discharged for 30 s immediately before use. Using an FEI Vitrobot, 2.5 μl of ~100 nM sample was applied to each grid, which was then incubated for 15 s at 22°C and 100% humidity, blotted for 11 s, and flash frozen in liquid ethane. Data were collected on an FEI Titan Krios at 300 KV using Latitude S (Gatan) software, targeting defocus values from −2.5 to −1.0 μm. Exposure movies were recorded using a Gatan K3 energy filter and direct electron detector in super resolution mode at 64,000x magnification (super resolution pixel size of 0.68 Å) and a total exposure of 50e-/Å2 fractionated over 40 frames.
 
-## Data processing
+### Data processing
 
 5562 super resolution movies were summed and motion corrected using Motioncor2 (Zheng et al., 2017) with 2x binning, generating corrected micrographs with a pixel size of 1.36 Å. Contrast transfer function (CTF) parameters were estimated using GCTF (Zhang, 2016). 1,049,128 Particles were picked using the semi-autonomous particle picking algorithm in Relion3.1 (70). All 2D classification, 3D classification, and 3D refinement steps were performed in Relion3.1. Reference-free 2D classification was used to discard non-ribosome containing particles. An initial round of 3D classification using a reference 80S ribosome (EMD-5592) low pass filtered to 60 Å as an initial model was used to isolate particles with clear ribosomal features. Particles in the best classes from this initial round of classification were further examined via a second round of 3D classification against the same initial model. Five classes from this second round of 3D classification showed clear density for 40S and 60S ribosomal subunits, tRNAs, and luminal density below the micelle. Particles from these classes were used for an initial 3D refinement (286,091 particles). CTF refinement was used to estimate beamtilt across the dataset and refine per-particle defocus values. The ribosome density in this initial map was further refined by focused refinement using local angular searches and a mask around the ribosome density (Figure 2—figure supplement 3, yellow mask). Non-translocon density was then removed from the particle set using signal subtraction and a mask surrounding the translocon (Figure 2—figure supplement 3, cyan mask). These signal subtracted particles were subjected to 3D classification without alignment. One of the classes from this classification showed strong density for the TMCO1 translocon (82,684 particles, 28.8%). Particles from this class were refined using a translocon mask and local angular searches, producing a 3.8 Å reconstruction (Map 1, EMD-21426). We also reverted these particles to their original, ribosome-containing state for further analysis without signal subtraction. This produced a 3.4 Å reconstruction of the entire ribosome-translocon complex (Map 2, EMD-21427). Focused refinement with a translocon mask (Figure 2—figure supplement 3, magenta mask) and local angular searches produced a 3.8 Å reconstruction with improved translocon density (Map 3, EMD-21435). Where noted, maps were sharpened by applying a B-factor determined by the automated methods implemented in Relion3.1 (70). Additionally, local resolution estimation and filtering was performed using automated methods implemented in Relion3.1.
 
-## Model building and refinement
+### Model building and refinement
 
 We used the 60S ribosomal subunit, A/P and P/E tRNAs and the nascent chain from the human 80S ribosome-nascent chain complex structure (PDB ID 6OM0), and the Sec61 complex from the mammalian 80S ribosome-Sec61-OST structure (PDB ID 6FTI) as starting points for model building. Homology models for TMEM147 and Nicalin were generated in iTasser (Yang et al., 2015), using the γ-secretase subunits, APH-1 and Nicastrin, as templates (PDB ID 5A63). TMCO1 and CCDC47 models were generated with RaptorX-Contact (Wang et al., 2017; Xu, 2019).
 
@@ -149,7 +908,7 @@ All three maps were used for model building. The 60S ribosomal subunit (with tRN
 
 Real-space refinement of the model (60S and translocon) was done with PHENIX (Afonine et al., 2018), against the focused map (Map 3) (unsharpened, and low-pass filtered by local resolution). Three rounds of global minimization and group B-factor refinement were performed with tight secondary structure, reference model, rotamer, and Ramachandran restraints applied. Secondary structure- and reference model restraints were determined from the starting models. Hydrogen-bonding and base-pair and stacking parallelity restraints were applied to the rRNA. Final model statistics are provided in Table 1. Structure figures were generated with UCSF Chimera and PyMOL (http://www.pymol.org).
 
-## RIP-seq analysis
+### RIP-seq analysis
 
 Affinity purified TMCO1-ribosome complexes were isolated as described above (‘Isolation of TMCO1-ribosome complexes for interaction analysis’), with the following changes. ~ 108 cells were processed for each of three biological replicates. All buffers were made using DEPC-treated RNase free water. Solubilized membranes were incubated with M2 Flag affinity gel (Sigma, A2220) for 2 hr at 4°C with end-over-end mixing. To remove contaminating DNA, 1 U RNase-Free DNase (Promega, M6101) was added to the sample during resin binding. Unbound material was removed and the resin was washed four times with five column volumes of wash buffer to remove contaminating ribosomes. TMCO1-ribosome complexes were isolated by centrifugation as before. After centrifugation, the final pellet was resuspended in 250 mM sucrose, 300 mM potassium acetate, 50 mM Hepes pH 7.4, 5 mM magnesium acetate, 50 µg/mL emetine and 0.1% digitonin, flash frozen and stored at −80°C until ready for sequencing.
 
@@ -157,7 +916,7 @@ All mRNA sequencing was performed at the University of Chicago Genomics Facility
 
 For mRNA sequencing of total membrane-associated mRNAs, membrane suspensions from three biological replicates of parental HEK293 TRex cells were prepared as above, with the inclusion of 1 U/mL SuperaseIn and 50 µg/mL emetine at all times. Membranes were washed twice with 250 mM sucrose, 150 mM potassium acetate, 50 mM Hepes pH 7.4, 5 mM magnesium acetate, 50 µg/mL emetine, and then RNA was Trizol extracted. For each biological replicate, ribosomal RNA was removed by Oligo-dT affinity purification and cDNA libraries were prepared, sequenced, and analyzed as described above.
 
-## Analysis of membrane protein expression levels and glycosylation patterns
+### Analysis of membrane protein expression levels and glycosylation patterns
 
 For each replicate of the expression analysis, 750,000 cells were plated on poly-L-lysine coated plates and grown overnight. Cells were harvested by centrifugation, lysed using RIPA buffer (1% triton, 0.5% deoxycholate, 0.1% SDS and 1X protease inhibitor cocktail), and EAAT1 protein levels analyzed by SDS-PAGE and western blotting. Immunoblots were quantified using ImageJ (Schneider et al., 2012).
 

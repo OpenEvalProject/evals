@@ -17,15 +17,15 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Biochemistry & Biophysics, University of California, San Francisco San Francisco United States
-2. https://ror.org/05ykr0121 Department of Pharmaceutical Chemistry and Cardiovascular Research Institute, University of California, San Francisco San Francisco United States
-3. https://ror.org/0078xmk34 Division of Biological Sciences, University of Montana Missoula United States
+1. Department of Biochemistry & Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Pharmaceutical Chemistry and Cardiovascular Research Institute, University of California, San Francisco San Francisco United States ([ROR:05ykr0121](https://ror.org/05ykr0121))
+3. Division of Biological Sciences, University of Montana Missoula United States ([ROR:0078xmk34](https://ror.org/0078xmk34))
 
 † Corresponding author
 
 ## Abstract
 
-Borrelia burgdorferi ( Bb ), the causative agent of Lyme disease, adapts to vastly different environments as it cycles between tick vector and vertebrate host. During a tick bloodmeal, Bb alters its gene expression to prepare for vertebrate infection; however, the full range of transcriptional changes that occur over several days inside of the tick are technically challenging to capture. We developed an experimental approach to enrich Bb cells to longitudinally define their global transcriptomic landscape inside nymphal Ixodes scapularis ticks during a transmitting bloodmeal. We identified 192 Bb genes that substantially change expression over the course of the bloodmeal from 1 to 4 days after host attachment. The majority of upregulated genes encode proteins found at the cell envelope or proteins of unknown function, including 45 outer surface lipoproteins embedded in the unusual protein-rich coat of Bb . As these proteins may facilitate Bb interactions with the host, we utilized mass spectrometry to identify candidate tick proteins that physically associate with Bb . The Bb enrichment methodology along with the ex vivo Bb transcriptomes and candidate tick interacting proteins presented here provide a resource to facilitate investigations into key determinants of Bb priming and transmission during the tick stage of its unique transmission cycle.
+Borrelia burgdorferi (Bb), the causative agent of Lyme disease, adapts to vastly different environments as it cycles between tick vector and vertebrate host. During a tick bloodmeal, Bb alters its gene expression to prepare for vertebrate infection; however, the full range of transcriptional changes that occur over several days inside of the tick are technically challenging to capture. We developed an experimental approach to enrich Bb cells to longitudinally define their global transcriptomic landscape inside nymphal Ixodes scapularis ticks during a transmitting bloodmeal. We identified 192 Bb genes that substantially change expression over the course of the bloodmeal from 1 to 4 days after host attachment. The majority of upregulated genes encode proteins found at the cell envelope or proteins of unknown function, including 45 outer surface lipoproteins embedded in the unusual protein-rich coat of Bb. As these proteins may facilitate Bb interactions with the host, we utilized mass spectrometry to identify candidate tick proteins that physically associate with Bb. The Bb enrichment methodology along with the ex vivo Bb transcriptomes and candidate tick interacting proteins presented here provide a resource to facilitate investigations into key determinants of Bb priming and transmission during the tick stage of its unique transmission cycle.
 
 ## Introduction
 
@@ -39,9 +39,21 @@ To provide a more comprehensive set of Bb determinants driving tick-borne transm
 
 ## Results
 
-## A two-step enrichment process facilitates robust transcriptional profiling of Bb during the tick bloodmeal
+### A two-step enrichment process facilitates robust transcriptional profiling of Bb during the tick bloodmeal
 
 To gain a more comprehensive understanding of Bb gene expression throughout the tick phase of the transmission cycle, we developed an experimental approach to characterize the Bb transcriptome of spirochetes isolated from nymphal I. scapularis ticks during a days-long bloodmeal in which Bb is transmitted to a vertebrate host. We aimed to establish a longitudinal transcriptional profile encompassing key pathogen transmission events each day of feeding after ticks attached to their mouse bloodmeal hosts (Figure 1A). We fed Bb-infected nymphal ticks on naive mice and collected the feeding ticks at daily intervals after the start of feeding until 4 days after attachment, at which time the ticks had fully engorged and detached from the mice. The major bottleneck for such an RNA sequencing (RNA-seq) approach is capturing sufficient quantities of Bb transcripts from complex multi-organism samples in which pathogen transcripts represent a very small minority. Our initial attempts to uncover Bb mRNA by simply removing tick mRNA with polyA-depletion and removing tick rRNA sequences using Depletion of Abundant Sequences by Hybridization (DASH; Dynerman et al., 2020; Gu et al., 2016) were unsuccessful. This approach resulted in an average of only 0.09% of RNA-seq reads mapping to Bb mRNA – approximately 10-fold less than we estimated would be needed to feasibly obtain robust transcriptome-wide differential gene expression analysis (Haas et al., 2012).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of Bb during nymphal I. scapularis feeding. Bb in the nymphal tick midgut respond to the nutrient-rich bloodmeal by multiplying and changing their transcriptional state (Ouyang et al., 2012; de Silva and Fikrig, 1995). At the same time, the tick gut undergoes numerous changes to digest the bloodmeal (Caimano et al., 2015; Sonenshine and Anderson, 2014). After two to three days of feeding, a small number of Bb leave the midgut and enter the salivary glands (blue), while the majority are left behind in the gut after engorgement (Dunham-Ems et al., 2009). (B) Schematic of Bb enrichment process from feeding ticks. Whole ticks are dissociated, αBb antibodies are added to lysates, and antibodies and Bb are captured magnetically. RNA is extracted and RNA-seq libraries are prepared. DASH is then used to remove rRNA before sequencing. This process increases Bb reads in the resulting sequencing data. (C) RT-qPCR results showing the percentage of Bb flaB and I. scapularis gapdh RNA in the enriched versus depleted fractions after the enrichment process. Data come from 4 replicates each from day 2, day 3, and day 4, mean +/-SE. ****p-value <0.0001, paired t test. Nearly all Bb flaB RNA was found in the enriched fraction. (D) The percentage of reads mapping to rRNA before and after DASH. n=4. Data are shown as mean +/-SD. ****p-value <0.0001, paired t test. rRNA reads are drastically reduced after DASH. (E) The percentage of reads in RNA-seq libraries mapping to Bb. Bb mRNA reads make up a larger proportion of libraries than without enrichment. n=4. Data are shown as mean +/-SD, see Figure 1—source data 1. (F) The number of reads in millions (M) mapped to Bb for each day. n=4. Data are shown as mean +/-SD. An average of 4.3 million reads per sample mapped to Bb genes, covering 92% of annotated genes with at least 10 reads.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot with αBb on lysate from cultured Bb: wildtype (A3, left), a mutant lacking ospA (ospA1), and the mutant with ospA restored (ospA +B1) (Battisti et al., 2008). Molecular weight markers are shown on left (kD), and OspA size is noted on right. αBb recognizes OspA among other proteins. (B) Immunofluorescence microscopy with αBb (green, left) and propidium iodide (PI) (DNA, red, center) on each day of feeding (merge is yellow, right). αBb antibody recognizes Bb in the tick across the bloodmeal.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Log2 fold changes versus mean normalized number of read counts comparing cultured Bb input and samples after enrichment with αBb. n=3. Red dots, p-value <0.05, Wald tests, see Figure 1—figure supplement 2—source data 1. The gene expression changes induced during processing are much smaller than those observed between days of feeding.
 
 To dramatically increase Bb transcript representation in our libraries, we physically enriched Bb cells from tick lysates prior to library preparation by adding an initial step of immunomagnetic separation (Figure 1B). We took advantage of a commercial antibody previously generated against whole Bb cells (αBb, RRID: AB_1016668). By western blot analysis, we confirmed that αBb specifically recognized several Bb proteins, including surface protein OspA (Figure 1—figure supplement 1A), which is highly prevalent on the Bb surface in the tick (Ohnishi et al., 2001). In addition, immunofluorescence microscopy with αBb showed clear recognition of Bb cells from within the tick at each day of feeding (Figure 1—figure supplement 1B). After collecting infected nymphal ticks from mice one, two, three, and four days post-attachment, we used αBb and magnetic beads to enrich Bb cells from the tick material in the lysates. We tracked relative Bb enrichment through RT-qPCR of Bb flaB RNA and tick gapdh RNA in the separated samples. Measuring Bb flaB RNA from both Bb-enriched samples and their matched Bb-depleted fractions, we found over 95% of total Bb flaB RNA was present in enriched fractions (Figure 1C), suggesting our approach captured the vast majority of Bb transcripts from the tick.
 
@@ -51,9 +63,21 @@ As expected, for samples pulled from the mice one, two, and three days after att
 
 To evaluate whether our approach introduced any major artifacts in Bb expression, we sequenced and compared RNA-seq libraries from in vitro cultured Bb cells before and after immunomagnetic enrichment. We found minimal expression differences (29 genes with p<0.05, fold changes between 0.83 and 1.12; Figure 1—figure supplement 2 and Figure 1—figure supplement 2—source data 1), suggesting experimental enrichment did not significantly alter global transcriptome profiles for Bb. Thus, our enrichment approach enabled genome-wide analysis of Bb population-level expression changes that occur within the feeding nymph as Bb is transmitted to the host.
 
-## Global ex vivo profiling of Bb reveals extent and kinetics of transcriptional changes
+### Global ex vivo profiling of Bb reveals extent and kinetics of transcriptional changes
 
 To provide a broad overview of Bb expression changes in the tick during the nymphal I. scapularis transmission bloodmeal, we performed principal component analysis (PCA) on the Bb transcriptome data from one, two, three, and four days after attachment (n=4). We reasoned that if many longitudinal expression changes were occurring across Bb populations, we would observe greater data variability between time points than between biological replicates. Indeed, we found replicates from each day grouped together, whereas distinct time points were largely non-overlapping. The first principal component, which explained 64% of the variance in our data, correlated well with day of feeding (Figure 2A). The global pattern suggested that Bb gene expression changes generally trended in the same direction over the course of feeding with the most dramatic differences between flanking timepoints on day 1 and day 4.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig2-v1.jpg)
+
+**Figure 2.:** (A) Principal component analysis of normalized read counts from samples from across feeding, see Figure 2—source data 1. PC1 correlates strongly with day of feeding. (B) Schematic depicting how data was analyzed, as pairwise comparisons between the first day after attachment and all other days. (C–E) Volcano plots of differentially expressed genes comparing day 2 versus day 1 (C), day 3 versus day 1 (D), and day 4 versus day 1 (E). The total number of upregulated genes is shown in the top right and the number of downregulated genes is shown in the top left. Yellow dots are genes that first change expression between day 1 and day 2, red dots are genes that first change expression between day 1 and day 3, and purple dots are genes that first change expression between day 1 and day 4. Two genes with log2 fold changes >4 are shown at x=4, and five genes with -log10(padj)>60 are shown at y=60. Only genes with p-value <0.05 from Wald tests and at least a twofold change are highlighted, see Figure 2—source data 2. n=4. By day 4 of feeding, 153 genes are upregulated and 33 genes are downregulated from day 1 baseline levels.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Tukey style boxplot of Transcripts Per Million (TPM) on each day for rpoS. Black dots represent replicates. n=4. ****p-value <0.00001, Wald test. rpoS expression increases over the course of feeding. (B) Volcano plot of DE genes comparing day 4 to day 1, with RpoS-upregulated genes (blue). Genes upregulated by RpoS in ticks increase during feeding. (C) Volcano plot of DE genes comparing day 4 to day 1, with Rrp1-upregulated (blue) and downregulated (pink) genes. Rrp1-regulated genes correlate well with genes up and downregulated during feeding. (D) Volcano plot of DE genes comparing day 4 to day 1, with RelBbu-upregulated (blue) and downregulated (pink) genes. About half of RelBbu genes change in the expected direction over feeding.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The overlap of twofold changed genes with genes that changed expression in Bb cultures grown in conditions mimicking feeding ticks. Genes are grouped based on the first day that they changed twofold from day 1. ‘Fed tick’ culture conditions were 37 °C, pH 6.8 in Revel et al., 2002 and 35 °C, pH 7.4 in Ojaimi et al., 2003 and genes elevated in these conditions in one or both studies are highlighted in red. ‘Unfed tick’ culture conditions were 23 °C, pH 7.5 in Revel et al., 2002 and 23 °C, pH 7.4 in Ojaimi et al., 2003 and genes elevated in these conditions in one or both studies are highlighted in teal. Genes that were not elevated in either condition in those studies are in gray. Particularly for genes that increase on day 2, there is a large overlap with genes elevated in ‘fed tick’ culture conditions in previous studies. (B) The overlap of twofold changed genes with genes that changed expression between fed nymphs and dialysis membrane chambers (DMCs) mimicking mammalian conditions. Genes are grouped based on the first day that they changed twofold from day 1. Bb expression in fed nymphs versus in DMCs was compared by Iyer et al., 2015 using bacterial RNA amplification and microarray, while Grassmann et al., 2023 used TBDCapSeq. Genes elevated in fed nymphs in one or both studies are highlighted in red, while genes elevated in DMCs in one or both studies are highlighted in purple. Genes that were elevated in conflicting conditions between the two studies are in dark gray, and genes not elevated in either condition are in light gray. For genes that increase on day 2, there is a large overlap with genes elevated in fed nymphs, while genes that increase first on days 3 and 4 have a larger overlap with genes elevated in DMCs.
 
 Using day 1 (early attachment) as a baseline, we performed differential expression analysis for all Bb genes at subsequent time points (day 2, day 3, day 4; Figure 2B and Figure 2—source data 2). We examined changes with p-values <0.05 when adjusted for multiple hypothesis testing and fold changes above a twofold threshold (listed in Figure 3—source data 1). These analyses mirrored the global longitudinal expression pattern predicted by the PCA. The total number of differentially expressed (DE) genes when compared to day 1 increased with each subsequent timepoint to day 4. By day 4, there were 186 DE genes, including 153 upregulated and 33 downregulated (Figure 2C–E). Across all later time point comparisons to day 1, DE genes were highly overlapping and largely changed in the same directions. For example, of the DE genes that increased on day 2, 29 of 30 were still increased on day 3, and 29 of 30 were still increased on day 4. In the day 2, day 3, and day 4 comparisons to the day 1 baseline, we found 192 DE genes in total (Figure 3—source data 1). We observed some differences between gene expression patterns, such as the overall timing and kinetics of expression changes. Transcript levels for some DE genes changed suddenly over the course of feeding, while others were more gradual. To our knowledge, this is the first comprehensive report of global Bb expression changes over multiple stages of a tick feeding.
 
@@ -65,19 +89,19 @@ We also compared the DE genes to two studies that assessed Bb gene expression di
 
 Through comparisons to these previous studies, we were able to verify that our data captured many expected transcriptional trends occurring during tick feeding. Nevertheless, 14% of the twofold DE genes were not previously found to change expression in these different tick-feeding contexts (Grassmann et al., 2023; Iyer et al., 2015; Ojaimi et al., 2003; Revel et al., 2002) or identified in these RNA-seq studies as dependent upon RpoS, Rrp1, or RelBbu (Caimano et al., 2015; Drecktrah et al., 2015; Grassmann et al., 2023), which are three known Bb regulatory programs active in the tick (Samuels et al., 2021). These additional genes highlight the necessity of measuring transcription in the tick environment and suggest we uncovered gene expression changes specific to the tick stage of the Bb enzootic cycle. The nature and dynamics of these changes provide insights into potential genetic determinants of Bb survival, proliferation, and dissemination in the tick during transmission.
 
-## Bb genes upregulated during feeding are found predominantly on plasmids
+### Bb genes upregulated during feeding are found predominantly on plasmids
 
 Bb has a complex, highly fragmented genome (Barbour, 1988; Figure 3A), including numerous plasmids that are necessary during specific stages of the enzootic cycle (Schwartz et al., 2021) suggesting they contain genes that are crucial for pathogen transmission and survival. In fact, many genes found on the plasmids have been previously shown to alter expression upon environmental changes or in different host environments (Iyer et al., 2015; Ojaimi et al., 2005; Revel et al., 2002; Tokarz et al., 2004). Thus, we reasoned that many of the 192 DE Bb genes that change expression from day 1 to any later feeding time point (Figure 3—source data 1) would reside on the plasmids, and we examined their distribution throughout the genome. Consistent with these previous reports, we found that most of the upregulated genes were located on the plasmids (143/158; 90%), while fewer were found on the chromosome (15/158; 10%; Figure 3B), which is home to the majority of metabolic and other housekeeping genes. In contrast, the majority of the downregulated genes were found on the chromosome (27/34, 79%; Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig3-v1.jpg)
 
-**Figure 3.:** Bb genes upregulated during feeding are found predominantly on plasmids.(A) Schematic of the chromosome and plasmids in the Bb B31-S9 genome. Plasmid names denote whether the plasmid is linear (lp) or circular (cp) and the length of plasmids in kilobases (kb). For example, lp17 is a 17 kb linear plasmid. Genome is shown approximately to scale. (B–C) The number of genes from each chromosome or plasmid that increased (B) or decreased (C) expression twofold during feeding, see Figure 3—source data 1 for gene information. Upregulated genes are distributed across plasmids, while most downregulated genes are found on the chromosome and lp54.Figure 3—source data 1.Bb genes from across tick feeding timepoints.
+**Figure 3.:** (A) Schematic of the chromosome and plasmids in the Bb B31-S9 genome. Plasmid names denote whether the plasmid is linear (lp) or circular (cp) and the length of plasmids in kilobases (kb). For example, lp17 is a 17 kb linear plasmid. Genome is shown approximately to scale. (B–C) The number of genes from each chromosome or plasmid that increased (B) or decreased (C) expression twofold during feeding, see Figure 3—source data 1 for gene information. Upregulated genes are distributed across plasmids, while most downregulated genes are found on the chromosome and lp54.
 
 Several plasmid-encoded genes that were longitudinally upregulated in our dataset have known roles during the tick bloodmeal or in mammalian infection. Linear plasmid 54 (lp54), which is an essential plasmid present in all Bb isolates (Casjens et al., 2012), contained the largest number of upregulated genes. Many of the genes on lp54 are regulated by RpoS during feeding, including those encoding adhesins DbpA and DbpB, which are important for infectivity in the host (Blevins et al., 2008). This set also included five members of a paralogous family of outer surface lipoproteins BBA64, BBA65, BBA66, BBA71, and BBA73. BBA64 and BBA66 are necessary for optimal transmission via the tick bite (Gilmore et al., 2010; Patton et al., 2013). These findings indicate our dataset captures key Bb transcriptional responses known to be important for survival inside the tick during a bloodmeal.
 
 Many upregulated genes were also encoded by cp32 plasmid prophages. Bb strain B31-S9 harbors seven cp32 isoforms that are highly similar to each other (Casjens et al., 2012). When cp32 prophages are induced, phage virions called ϕBB1 are produced (Eggers and Samuels, 1999). In addition to phage structural genes, cp32 contain loci that encode various families of paralogous outer surface proteins (Stevenson et al., 2000). Amongst the cp32 genes that increased over feeding were members of the RevA, Erp, and Mlp families, which are known to increase expression during the bloodmeal (Gilmore et al., 2001). We also found several phage genes that were upregulated, including those encoding proteins annotated as phage terminases on cp32-3, cp32-4, and cp32-7 (BBS45, BBR45, and BBO44). Some cp32 genes have been shown to change expression in response to the presence of blood (Tokarz et al., 2004) and as a part of the stringent response regulated by RelBbu (Drecktrah et al., 2015), while BBD18 and RpoS regulate prophage production in the tick midgut after feeding (Wachter et al., 2023). Our data suggest that some prophage genes are upregulated over the course of tick feeding, raising the possibility that cp32 prophage are induced towards the end of feeding. Overall, our data support the long-held idea that the Bb plasmids, which house many genes encoding cell envelope proteins, proteins of unknown function, and prophage genes, play a critical role in the enzootic cycle during the key transition period of tick feeding.
 
-## Bb genes encoding outer surface proteins are highly prevalent among upregulated genes
+### Bb genes encoding outer surface proteins are highly prevalent among upregulated genes
 
 To gain a better overall sense of the types of genes that changed over feeding and the timing of those changes, we grouped DE genes into functional categories. Since a high proportion of plasmid genes encode lipoproteins within the unique protein-rich outer surface of Bb, genes of unknown function, and predicted prophage genes (Casjens et al., 2000; Fraser et al., 1997), we expected that many of the DE genes would fall into these categories. We classified the genes as related to either: cell envelope, bacteriophage, cell division, DNA replication and repair, chemotaxis and motility, metabolism, transporter proteins, transcription, translation, stress response, protein degradation, or unknown (Drecktrah et al., 2015; see Figure 3—source data 1).
 
@@ -85,13 +109,13 @@ Of the genes that increased twofold over feeding, the clear majority each day of
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig4-v1.jpg)
 
-**Figure 4.:** Bb genes encoding outer surface proteins are highly prevalent among upregulated genes.(A) The number of Bb genes that change over the course of tick feeding sorted into functional categories. Genes that first change 2 days after attachment are shown in yellow, 3 days after attachment in red, and 4 days after attachment in purple. A majority of upregulated genes fall into cell envelope and unknown categories. (B) Schematic of the outer membrane of Bb showing outer surface lipoproteins. Lipoproteins can also reside in the periplasmic space. (C) Heat map of expression levels of all genes encoding outer surface lipoproteins as average Transcripts Per Million (TPM) across the 4 days of tick feeding, see Figure 4—source data 1. Gene names highlighted in blue were twofold upregulated and genes in pink twofold downregulated over feeding (see Figure 2). A majority of genes encoding outer surface proteins increased in expression throughout feeding, while having different magnitudes of expression.Figure 4—source data 1.Bb genes across feeding timepoints.
+**Figure 4.:** (A) The number of Bb genes that change over the course of tick feeding sorted into functional categories. Genes that first change 2 days after attachment are shown in yellow, 3 days after attachment in red, and 4 days after attachment in purple. A majority of upregulated genes fall into cell envelope and unknown categories. (B) Schematic of the outer membrane of Bb showing outer surface lipoproteins. Lipoproteins can also reside in the periplasmic space. (C) Heat map of expression levels of all genes encoding outer surface lipoproteins as average Transcripts Per Million (TPM) across the 4 days of tick feeding, see Figure 4—source data 1. Gene names highlighted in blue were twofold upregulated and genes in pink twofold downregulated over feeding (see Figure 2). A majority of genes encoding outer surface proteins increased in expression throughout feeding, while having different magnitudes of expression.
 
 When looking at changes across these functional categories, the overrepresentation of cell envelope proteins was striking, while not unexpected. The Bb outer surface is covered with lipoproteins (Figure 4B), and these proteins are critical determinants in Bb interactions with the various environments encountered during the enzootic cycle (Kurokawa et al., 2020). We found that more than half (46 of 83) of annotated outer surface lipoproteins (Dowdell et al., 2017; Iyer et al., 2015) changed expression twofold over the time course (Figure 4C). These data suggested widespread changes may be occurring on the Bb outer surface during feeding.
 
 To understand the functional implications of expression changes in a majority of outer surface lipoproteins, we also compared their relative expression. The magnitude of expression varied greatly, with ospA, ospB, ospC, and bba59 being the most highly expressed outer surface protein genes. Many of the outer surface protein genes that we found had increased expression over feeding were much less abundantly expressed (Figure 4C and Figure 4—source data 1). However, even the genes that appeared to have low expression in these population level measurements could play important roles in transmission if they are highly expressed in a small number of crucial cells, such as those that ultimately escape the midgut. While bulk RNA-seq cannot distinguish what is happening at the single-cell level, our data suggest that during the bloodmeal, Bb are undergoing a complex outer surface transformation driven by increases in transcription of a majority of the genes encoding these lipoproteins.
 
-## Identification of candidate tick interaction partners of Bb cells ex vivo
+### Identification of candidate tick interaction partners of Bb cells ex vivo
 
 Our RNA-seq data suggested that the outer surface of Bb transforms over the course of feeding as Bb are primed for transmission to a vertebrate host. At the same time, the tick midgut environment is changing as the tick begins to digest its bloodmeal (Sonenshine and Anderson, 2014). Tick-Bb interactions are likely crucial at the beginning of the tick bloodmeal, as Bb adhere to the tick gut epithelium before becoming motile and migrating out of the midgut and into the salivary glands (Dunham-Ems et al., 2009). Some Bb outer surface proteins, such as BBE31 and BBA52 play key roles in pathogen migration through interactions with the tick environment (reviewed in Kurokawa et al., 2020). We wanted to explore the changing tick environment to identify tick proteins with which Bb could interact throughout the tick bloodmeal. Since our Bb enrichment process retained some tick material, we reasoned that tick proteins that interact with Bb would be present in these samples.
 
@@ -99,7 +123,7 @@ To outline the changes occurring in the tick during feeding and to identify cand
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86636/elife-86636-fig5-v1.jpg)
 
-**Figure 5.:** Bb cells ex vivo.(A) Schematic of experiment to determine candidate tick proteins interacting with Bb over the course of feeding. Ticks were collected 1 day and 4 days after placement on mice. Uninfected ticks at the same time points were mixed with cultured Bb as controls. Bb was enriched with αBb antibody as in RNA-seq experiments and then subjected to mass spectrometry to identify tick proteins present in the samples. Venn diagram depicts the proteins enriched in day 1 and day 4 samples over controls in at least two of three replicates, see Figure 5—source data 1 for all proteins. Tick proteins that are enriched with Bb vary greatly over the course of feeding. (B) Tick proteins uniquely identified one day after placement that are annotated as extracellular matrix (ECM) proteins, see Figure 5—source data 2. (C) Tick proteins uniquely identified four days after attachment that are annotated as low-density lipoprotein receptors, see Figure 5—source data 3. ECM and membrane proteins may be good candidates for Bb-interacting proteins.Figure 5—source data 1.Bb-enriched samples.Sheet 1, all proteins; sheet 2, proteins enriched on day 1 only; sheet 3, proteins enriched on day 4 only; sheet 4, proteins enriched on day 1 and day 4.Figure 5—source data 2.Figure 5—source data 3.
+**Figure 5.:** (A) Schematic of experiment to determine candidate tick proteins interacting with Bb over the course of feeding. Ticks were collected 1 day and 4 days after placement on mice. Uninfected ticks at the same time points were mixed with cultured Bb as controls. Bb was enriched with αBb antibody as in RNA-seq experiments and then subjected to mass spectrometry to identify tick proteins present in the samples. Venn diagram depicts the proteins enriched in day 1 and day 4 samples over controls in at least two of three replicates, see Figure 5—source data 1 for all proteins. Tick proteins that are enriched with Bb vary greatly over the course of feeding. (B) Tick proteins uniquely identified one day after placement that are annotated as extracellular matrix (ECM) proteins, see Figure 5—source data 2. (C) Tick proteins uniquely identified four days after attachment that are annotated as low-density lipoprotein receptors, see Figure 5—source data 3. ECM and membrane proteins may be good candidates for Bb-interacting proteins.
 
 Some of the proteins enriched with Bb from the tick may be good candidates for key Bb-interacting partners during feeding, especially if they are localized to the surface of tick cells where they may encounter Bb. The scarcity of both predicted and experimentally validated functions and localizations for tick proteins makes it difficult to fully assess the potential for tick protein interactions with extracellular Bb. Nevertheless, of the proteins found exclusively one day after attachment, 10 were categorized as extracellular matrix proteins using the PANTHER gene database (Thomas et al., 2022), and this category was statistically enriched (Fisher’s exact test, FDR = 0.000093; Figure 5B and Figure 5—source data 2). 30 additional proteins were annotated with a cellular component as plasma membrane. Four days after attachment, we did not detect any annotated extracellular matrix proteins; however, we identified 31 proteins that are likely to be found at the membrane, including two proteins annotated as putative low-density lipoprotein receptors (Figure 5C and Figure 5—source data 3). These extracellular matrix and membrane proteins may be the most likely to directly interact with Bb during this timeframe and are candidates for tick proteins important in the Bb dissemination process. The proteins present in the changing tick environment may be key determinants of pathogen transmission as Bb remodels its outer surface while preparing to migrate through the tick to a new host.
 
@@ -117,27 +141,275 @@ Our method has produced a transcriptomic resource providing critical insights in
 
 ## Methods
 
-## B. burgdorferi culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain(Borrelia burgdorferi)</td>
+      <td>B31-S9</td>
+      <td>Sourced from Dr. Patricia Rosa</td>
+      <td></td>
+      <td>Streptomycin resistant strain</td>
+    </tr>
+    <tr>
+      <td>Strain(Ixodes scapularis)</td>
+      <td>Ixodes scapularis nymphal ticks</td>
+      <td>Sourced from Tick Lab at Oklahoma State University (OSU) (RNA-seq) and BEI Resources (mass spec)</td>
+      <td>BEI Cat# NR-44115</td>
+      <td>Ticks were sourced as larvae; fed on mice and allowed to molt to nymphs in lab</td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C3H/HeJ</td>
+      <td>Jackson Laboratories</td>
+      <td>Strain#:00659</td>
+      <td>Tick hosts were 4–6 week old female mice</td>
+    </tr>
+    <tr>
+      <td>Strain(Borrelia burgdorferi)</td>
+      <td>B31-A3</td>
+      <td>Sourced from Dr. Patricia Rosa</td>
+      <td></td>
+      <td>Used for anti-Bb western only</td>
+    </tr>
+    <tr>
+      <td>Strain(Borrelia burgdorferi)</td>
+      <td>ospA1</td>
+      <td>Sourced from Dr. Patricia Rosa; Battisti et al., 2008</td>
+      <td></td>
+      <td>ospA mutant; Used for anti-Bb western only</td>
+    </tr>
+    <tr>
+      <td>Strain(Borrelia burgdorferi)</td>
+      <td>ospA+B1</td>
+      <td>Sourced from Dr. Patricia Rosa; Battisti et al., 2008</td>
+      <td></td>
+      <td>ospA restored; Used for anti-Bb western only</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Borrelia burgdorferi (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Invitrogen: PA1-73004; RRID: AB_1016668</td>
+      <td>10 mg added to immunomagnetic enrichment; IF(1:100), WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit HRP secondary (goat polyclonal)</td>
+      <td>Advansta</td>
+      <td>Advansta: R-05072–500; RRID: AB_10719218</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H+L) Alexa 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Invitrogen: A-11008; RRID: AB_143165</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Invitrogen 10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zymo Direct-zol RNA Microprep Kit</td>
+      <td>Zymo Research</td>
+      <td>R2062</td>
+      <td>With on column DNase</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Directional RNA Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7760L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Multiplex Oligos for Illumina Dual Index</td>
+      <td>New England Biolabs</td>
+      <td>E7600S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa HiFi Real-Time Library Amplification Kit</td>
+      <td>Roche</td>
+      <td>Kapa KK2702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cas9</td>
+      <td>New England Biolabs</td>
+      <td>M0386S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman Universal PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Applied Biosystems 4304437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Applied Biosystems A25741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>crRNAs targeting tick, mouse, Bb rRNA</td>
+      <td>Dynerman et al.; Ring et al., 2022</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>flaB F</td>
+      <td>Jewett et al., 2007</td>
+      <td>qPCR primers</td>
+      <td>5’- TCTTTTCTCTGGTGAGGGAGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>flaB R</td>
+      <td>Jewett et al., 2007</td>
+      <td>qPCR primers</td>
+      <td>5’-TCCTTCCTGTTGAACACCCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>flaB probe</td>
+      <td>Jewett et al., 2007</td>
+      <td>qPCR probe</td>
+      <td>/56-FAM/AAACTGCTCAGGCTGCACCGGTTC/36-TAMSp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gapdh F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>5’-TTCATTGGAGACACCCACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gapdh R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>5’-CGTTGTCGTACCACGAGATAA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Propidium iodide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Invitrogen P3566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>TRIzol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Invitrogen 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DASHit</td>
+      <td>Dynerman et al., 2020</td>
+      <td></td>
+      <td>http://dashit.czbiohub.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>Patro et al., 2017</td>
+      <td>RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v9.5.1</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEAKS Online Xpro 1.6</td>
+      <td>Bioinformatics Solutions Inc.</td>
+      <td>RRID:SCR_022841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BSK II</td>
+      <td>Rosa Lab Recipe</td>
+      <td></td>
+      <td>Media used to grow Bb; https://www.niaid.nih.gov/sites/default/files/lzp_recipes.pdf</td>
+    </tr>
+  </tbody>
+</table>
+
+### B. burgdorferi culture
 
 Bb strain B31-S9 (Rego et al., 2011) was provided by Dr. Patricia Rosa (NIAID, NIH, RML) and cultured in BSK II media at 35 °C, 2.5% CO2. B31-S9 was used for all RNA-seq and Bb enrichment experiments. Wildtype Bb strain B31-A3, ospA1-mutants (ospA1) and ospA-restored Bb (ospA+B1) Battisti et al., 2008 used in αBb western blot were also provided by Dr. Rosa.
 
-## Tick feeding experiments
+### Tick feeding experiments
 
 I. scapularis larvae were purchased from the Tick Lab at Oklahoma State University (OSU) for RNA-seq experiments or provided by BEI Resources, a division of the Center for Disease Control, for mass spectrometry experiments. Before and after feeding, ticks were maintained in glass jars with a relative humidity of 95% (saturated solution of potassium nitrate) in a sealed incubator at 22 °C with a light cycle of 16 hr/8 hr (light/dark). Animal experiments were conducted in accordance with the approval of the Institutional Animal Care and Use Committee (IACUC) at UCSF, Project Number AN183452. Ticks were fed on young (4–6 week-old) female C3H/HeJ mice acquired from Jackson Laboratories. Mice were anesthetized with ketamine/xylazine before placement of ≤100 larval or ≤30 nymphal ticks. Replete larval ticks were placed in the incubator to molt before being used as nymphs in experiments. Nymphal ticks were either pulled off isoflurane anesthetized mice at various times during feeding (1–3 days after placement) or allowed to feed to repletion and collected from mouse cages (4 days after placement).
 
-## Western blot with αBb antibody
+### Western blot with αBb antibody
 
 To determine whether the αBb antibody targeted ospA, wildtype Bb (B31-A3), ospA1-mutants (ospA1) and ospA-restored Bb (ospA+B1) (Battisti et al., 2008) were cultured to approximately 5x107 Bb/mL. 3 mLs of culture were centrifuged for 7 min at 8000 x g, washing twice with PBS. Pelleted cells were lysed in 50 µL of water, and 25 µg of protein per sample were mixed with 5 X loading dye (0.25% Bromophenol Blue, 50% Glycerol, 10% Sodium Dodecyl Sulfate, 0.25 M Tris-Cl pH 6.8, 10% B-Mercaptoethanol), run on a Mini-PROTEAN TGX 4–15% gel (Bio-Rad, Hercules, CA), and transferred using the Trans-Blot Turbo Transfer System (Bio-Rad). After transfer, the blot was blocked for 30 minutes at 4 °C in TBST (Tris buffered saline with 0.1% tween) with 5% milk, then treated with αBb antibody (Invitrogen, Waltham, MA: PA1-73004; RRID: AB_1016668) diluted 1:10,000 for 1 hr at room temperature, followed by anti-rabbit HRP secondary antibody (Advansta, San Jose, CA: R-05072–500; RRID: AB_10719218) diluted 1:5000 for 45 min at room temperature with three short PBST washes between each step. Blots were exposed using Clarity Western ECL Substrate (Bio-Rad) and imaged using the Azure C400 imaging system (Azure Biosystems, Dublin, CA). This experiment was repeated three times.
 
-## Enrichment of Bb from feeding ticks
+### Enrichment of Bb from feeding ticks
 
 To sequence RNA from Bb inside of feeding ticks, Bb were enriched to increase the ratio of Bb to tick material. Larval ticks were fed to repletion on three mice that were infected with Bb through intraperitoneal and subcutaneous injection with 104 total Bb. Approximately 5 months later, the molted nymphal ticks were fed on eight mice, which were housed individually during the feeding. We estimated that 83% of the ticks were infected with Bb by crushing 12 unfed nymphs in BSK II media and checking for viable Bb days later. Ticks were pulled from all mice and pooled into four biological replicates 1 day after placement (14 ticks per replicate), 2 days after placement (12 ticks per replicate), and 3 days after placement (6 ticks per replicate) and collected from cages 4 days after placement (7 ticks per replicate). Shortly after collection, ticks were washed with water and placed in a 2 mL glass dounce grinder (Kimble, DWK Life Sciences, Millville, NJ) in 500 µL of phosphate-buffered saline (PBS). Ticks were homogenized first with the large clearance pestle and then the small clearance pestle. The homogenate was transferred to a 1.5 mL Eppendorf tube and 500 µL of PBS was added to total 1 mL. At this stage, 50 µL of homogenate was removed as an input sample and mixed with 500 µL of TRIzol (Invitrogen) for RNA extraction. Two µL of αBb antibody (Invitrogen: PA1-73004; RRID: AB_1016668) was added to the homogenate, which was then placed on a nutator at 4 °C for 30 min. During incubation, 50 µL of Dynabeads Protein G (Invitrogen) per sample were washed twice in PBS. After incubation with the antibody, the homogenate and antibody mixture were added to the beads. This mixture was placed on a nutator at 4 °C for 30 min. Tubes were then placed on a magnet to secure beads, and the homogenate was removed and saved to create depleted samples. The depleted homogenate was centrifuged at 8000 x g for 7 min, 900 µL of supernatant was removed, and 500 µL of TRIzol was added to the pellet to create depleted samples. The beads were washed twice with 1 mL of PBS, resuspending the beads each time. The second wash was removed and 500 µL of TRIzol was added to the beads to create enriched samples. RNA was extracted from all input, enriched, and depleted samples using the Zymo Direct-zol RNA Microprep Kit with on-column DNase treatment (Zymo Research, Irvine, CA). The step-by-step Bb enrichment protocol is available at: https://dx.doi.org/10.17504/protocols.io.36wgqjrbovk5/v1.
 
-## Enrichment of Bb from culture
+### Enrichment of Bb from culture
 
 To test whether the Bb enrichment process altered gene expression levels, we performed the enrichment protocol on cultured Bb. Tubes of Bb in BSK II media were grown to 9x104 Bb/mL at 35 °C. 1 mL of culture was spun down at 8000 x g for 7 min, media was removed, Bb were washed in 1 mL of PBS and spun again. Pelleted Bb were resuspended in 1 mL of fresh PBS. These samples were used as starting homogenate for the Bb enrichment protocol and input, enriched, and depleted fractions were collected as above. RNA-seq libraries from these samples were prepared and sequenced as below.
 
-## RNA-seq library preparation and sequencing
+### RNA-seq library preparation and sequencing
 
 To make RNA-seq libraries from enriched Bb RNA, 50 ng of total RNA was used as input into the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (New England Biolabs, Ipswich, MA). Libraries were prepared following the manufacturer’s protocol for use of the kit with purified mRNA or rRNA-depleted RNA, despite starting with total RNA. Libraries were barcoded using NEBNext Multiplex Oligos for Illumina Dual Index (New England Biolabs).
 
@@ -147,39 +419,39 @@ After transcription of dgRNAs, we performed DASH Protocol Version 4 (Lyden et al
 
 Following DASH, RNA-seq libraries were sequenced on an Illumina NovaSeq S2 (2 lanes) with paired-end 100 base pair reads. Libraries from in vitro cultured control experiment were sequenced on an Illumina NextSeq with paired-end 75 base pair reads. FASTQ files and raw Bb read counts for in vitro control experiment (GSE217146) and ex vivo experiment (GSE216261) have been deposited in NCBI’s Gene Expression Omnibus (Edgar et al., 2002) under SuperSeries accession number GSE217236.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
-## DASH
+#### DASH
 
 To measure the success of our rRNA depletion through DASH, we used DASHit software (Dynerman et al., 2020) to determine the percentage of reads that would be DASHable by our guide RNAs (Ring et al., 2022). For pre-DASH data, we sequenced the input of each of our RNA-seq libraries before performing DASH on a MiSeq V2 Micro (Illumina, San Diego, CA). We tested DASHability on a random subset of 200,000 paired-end reads chosen by seqtk v1.3 (RRID:SCR_018927) from each pre- and post-DASH library. Paired t test comparing DASHable reads before and after DASH was performed using GraphPad Prism v9.5.1 (GraphPad Software, San Diego, CA).
 
-## Differential expression analysis
+### Differential expression analysis
 
 To map our RNA-seq data to Bb, we wanted to optimize for mapping reads that came from the many paralogous gene families found across the plasmids of the genome. We used the pseudoalignment tool Salmon v1.2.1 (Patro et al., 2017), which is used to accurately map reads coming from different isoforms of the same gene, for this reason. While using Salmon to map to gene sequences may improve mapping to paralogous genes, it may also have a tradeoff of reduced mapping of reads that fall on the ends of genes that reside in operons. Nevertheless, all samples should be similarly affected, and any undercounting should not change differential expression results. Reads were first trimmed of bases with quality scores less than 20 using Cutadapt (Martin, 2011) via Trim Galore v0.6.5 (RRID:SCR_011847). Reads were mapped to Bb gene sequences (for all protein coding and pseudogenes in the Genbank feature table) as a reference transcriptome from NCBI Genbank GCA_000008685.2 ASM868v2 (with plasmids lp5, cp9, and lp56 removed as they are not present in B31-S9) using Salmon with the following parameters: --validateMappings --seqBias --gcBias. Before mapping, the transcriptome was indexed using the Salmon index command with the whole genome as decoys and the parameter --keepDuplicates to keep all duplicate genes.
 
 Read counts from Salmon were used as input into DESeq2 v1.24.0 (Love et al., 2014) for differential expression analysis in R version 3.6.1. DESeq2 function PlotPCA() was used to create a PCA plot from read counts after running the varianceStabilizingTransformation() function. For differential expression analysis between days, a DESeq object was created from count data using the DESeq() function. The lfcShrink() function with the apeglm method (Zhu et al., 2019) was used to calculate fold changes between days. DESeq2 uses a Benjamini-Hochberg multiple testing correction, and we focused the majority of our analysis on genes that had an adjusted p-value <0.05 and used an additional cutoff requiring genes to change twofold between conditions. Code used for differential expression analysis is available at: https://github.com/annesapiro/Bb-tick-feeding (copy archived at Sapiro et al., 2023).
 
-## Mapping to other species
+### Mapping to other species
 
 To determine the source of non-Bb reads in our RNA-seq libraries, trimmed reads were mapped to tick and mouse genomes using STAR v2.7.3a (Dobin et al., 2013). The I. scapularis ISE6 genome (RefSeq assembly GCF_002892825.2, ISE6_asm2.2_dedeplicated) (Miller et al., 2018) was indexed using STAR run mode genomeGenerate with option --genomeChrBinNbits 18. The Mus musculus genome GRCm39 (RefSeq assembly GCF_000001635.27) was indexed using STAR run mode genomeGenerate with basic options. Reads were mapped using STAR to each genome using basic options. The percentage of reads that mapped to these genomes was determined by adding the percentage of uniquely mapped reads, reads mapped to multiple loci, and reads mapped to too many loci. To identify the potential source of reads that did not map to tick, mouse, or Bb in day 4 samples, one million reads from day 1 and day 4 libraries were used as input into CZ ID (Kalantar et al., 2020), which determined that a large number of reads mapped to bacterial species Pseudomonas fulva. Full RNA-seq libraries were then mapped to the P. fulva genome (NCBI GenBank GCF_001186195.1 ASM118619v1), using the standard options of Bowtie2 (Langmead and Salzberg, 2012) to calculate the overall alignment rate.
 
-## Comparisons to other studies
+### Comparisons to other studies
 
 Genes identified in previous studies were compared to time course expression changes. Here, we considered RpoS-regulated genes as those found in Grassmann et al., 2023 that were upregulated by RpoS in both fed nymphs and DMCs and those upregulated by RpoS only during tick transmission (Grassmann et al. Supplemental Tables 5 and 6). RpoS did not suppress the expression of any genes in fed nymphs in the study. Genes up- and down-regulated by RpoS in DMCs only (Grassmann et al. Supplemental Tables 7 and 8) are noted in Figure 2—source data 2 and Figure 3—source data 1 for reference along with genes found to be regulated by RpoS in DMCs in Caimano et al., 2019 (Tables 2 and 3), which were used for RpoS comparisons in previous versions of this study. Rrp1 up- and down-regulated genes were those identified in vitro in Caimano et al., 2015, Table S2. RelBbu up- and down-regulated genes were examined by Drecktrah et al., 2015 in three different in vitro conditions: starvation (Tables S6 and S9), recovery (Tables S7 and S10), and stationary phase (Tables S5 and S8). For simplicity, we considered genes as RelBbu-regulated if they were up- or down-regulated in one or more of these conditions (Figure 2—source data 2 and Figure 3—source data 1). One gene was regulated in opposing directions across conditions and is noted in our tables as ‘both’ and was excluded from the comparison analysis. Genes changing between ‘unfed tick’ and ‘fed tick’ culture conditions in Revel et al., 2002 were those found in Table 3. Genes from Ojaimi et al., 2003 Table 4 with increased expression in vitro at 35 °C relative to 25 °C were considered higher in ‘fed tick’ while those in Ojaimi et al., 2003 Table 5 with increased expression at 25 °C relative to 35 °C were considered higher in ‘unfed tick’. Genes more highly expressed in nymphs than DMCs from Iyer et al., 2015 were found in Table S4, and genes more highly expressed in DMCs than nymphs were found in Table S8. Genes differentially expressed between nymphs and DMCs in Grassmann et al., 2023 were determined from the DESeq2 comparison between WT DMC vs Fed Nymphs found in Supplemental Table 3, in accordance with author cutoffs of at least a threefold difference and q-value<0.05. As many of these studies used different strains of Bb and different genome annotations, some genes were not examined here as they were not present in the B31-S9 strain used.
 
-## Gene classification
+### Gene classification
 
 To classify genes into functional groups, functional categories were sourced from Drecktrah et al., 2015 where available. Other gene functions were sourced from Fraser et al., 1997. Genes found within the co-transcribed ‘late’ bacteriophage operon (Zhang and Marconi, 2005) were considered ‘bacteriophage’ even if their function is unknown. Outer surface proteins were those found in Dowdell et al., 2017 plus additional outer surface proteins listed in Iyer et al., 2015 that were also found in Dowdell et al., 2017 Supporting Table S2 categories SpII and SpI as evidence of outer surface localization. Outer surface and periplasmic lipoproteins were classified as ‘cell envelope’ in the absence of other classifications. Gene family information from Casjens et al., 2000 was considered to aid in classification. Figure 3—source data 1 contains the classification source for each gene.
 
-## RT-qPCR measuring Bb enrichment
+### RT-qPCR measuring Bb enrichment
 
 To test the efficacy of the Bb enrichment protocol, RT-qPCR was used to quantify Bb flaB and I. scapularis gapdh transcript levels in enriched and depleted fractions. cDNA was synthesized from 8 μL of RNA extracted from Bb enrichment samples and their matched depleted samples from day 2, day 3, and day 4 post-attachment using the qScript cDNA Synthesis Kit (Quantabio). cDNA was diluted 2 X before use in qPCR. To measure flaB copies, standards of known concentration were created from purified PCR products. These standards were made from PCR with primers with the following sequences: 5’-CACATATTCAGATGCAGACAGAGGTTCTA and 5’-GAAGGTGCTGTAGCAGGTGCTGGCTGT. A dilution series with 10-fold dilutions between 106 copies and 101 copies of this PCR template was run alongside enriched and depleted samples. qPCR was performed using Taqman Universal PCR Master Mix (Applied Biosystems, Waltham, MA). The primers used to amplify flaB were: 5’- TCTTTTCTCTGGTGAGGGAGCT and 5’-TCCTTCCTGTTGAACACCCTCT (used at 900 nM) and the probe was /56-FAM/AAACTGCTCAGGCTGCACCGGTTC/36-TAMSp (used at 250 nM) (Jewett et al., 2007). For tick gapdh RT-qPCR, the cDNA samples were diluted an additional 2 X. Standards of known concentration were created using the qPCR primer sequences: 5’-TTCATTGGAGACACCCACAG and 5’-CGTTGTCGTACCACGAGATAA (used at 900 nM). qPCR was performed using PowerUp SYBR Green Master Mix (Applied Biosystems). For both flaB and gapdh, the number of copies in each sample was calculated based on the standards of known concentration. Three technical replicates were averaged from each of four biological replicates at each time point tested. We totaled the number of copies in each matched enriched and depleted fraction to calculate the percentage of flaB or gapdh that was found in either sample. All qPCR was performed on the QuantStudio3 Real-Time PCR System (Applied Biosystems). Paired t tests were performed using GraphPad Prism v9.5.1.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 To test whether the αBb antibody recognized Bb inside of the tick, ticks at each day of feeding were crushed in 50 µL of PBS. Ten µL of lysate was spotted onto slides and allowed to air dry before slides were heated briefly three times over a flame. Heat fixed slides were then treated with acetone for 1 hr. Slides were incubated with αBb primary antibody (1:100 diluted in PBS +0.75% BSA) for 30 min at 37 °C in a humid chamber. A control without primary antibody was also used for each day. Slides were washed once in PBS for 15 min at room temperature, then rinsed in distilled water and air dried. Anti-rabbit IgG Alexa 488 (Invitrogen: A-11008; RRID: AB_143165) diluted 1:100 in PBS +0.75% BSA was added for 30 min at 37 °C in a humid slide chamber. Slides were washed in PBS for 15 min at room temperature three times, adding 1:100 Propidium Iodide (Invitrogen) during the second wash. Slides were then rinsed with distilled water and air dried before the addition of mounting media (Fluoromount-G, SouthernBiotech, Birmingham, AL) and cover slips. Fluorescence imaging was performed on a Nikon Ti2 inverted microscope for widefield epifluorescence using a 100 X/1.40 objective. Images were captured with NIS-Elements AR View 5.20 and then processed with ImageJ software (Schneider et al., 2012). No strong florescence signal was observed on the control slides without primary antibody.
 
-## Mass spectrometry of Bb-enriched samples
+### Mass spectrometry of Bb-enriched samples
 
 To identify which tick proteins were found in samples after Bb enrichment across feeding, both uninfected and infected ticks were fed on mice. Three biological replicates of uninfected ticks one day after placement (11 ticks per replicate), infected ticks 1 day after placement (27 ticks per replicate), uninfected ticks 4 days after placement (8 ticks per replicate), and infected ticks four days after placement (16 ticks per replicate) were collected. Before αBb enrichment, the uninfected tick samples were mixed with Bb grown in culture that was washed with PBS (3x104 Bb one day after placement and 3x106 Bb 4 days after placement) and mixed lysates were rotated at room temperature for 30 min. Infected tick samples underwent the Bb enrichment process immediately. The enrichment process followed the same protocol used for RNA-seq. Sample volumes were increased to 1 mL as needed, and then 2 µL of αBb antibody (Invitrogen: PA1-73004; RRID: AB_1016668) was added, and samples were rotated at 4 °C for 30 min. Fifty µL of Dynabeads Protein G per sample were washed in PBS during this incubation and added to the lysates, which were rotated at 4 °C for 30 min. The beads were washed twice with 1 mL of PBS, and then placed into 50 µL of lysis buffer (iST LYSE, PreOmics, Martinsried, Bayern, Germany). Samples were boiled at 95 °C for 5 min, and lysates were removed from beads and frozen for mass spectrometry preparation.
 

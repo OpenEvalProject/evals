@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02qyf5152 Department of Systems and Control Engineering, Indian Institute of Technology Bombay India
-2. https://ror.org/01b9n8m42 Division of Data & Decision Sciences, Tata Consultancy Services Research Mumbai India
-3. https://ror.org/01y2jtd41 Department of Biochemistry, University of Wisconsin-Madison Madison United States
-4. https://ror.org/01y2jtd41 Department of Chemical & Biological Engineering, University of Wisconsin-Madison Madison United States
-5. https://ror.org/00jmfr291 Department of Electrical Engineering & Computer Science, University of Michigan Ann Arbor United States
-6. https://ror.org/00jmfr291 Department of Biomedical Engineering, University of Michigan Ann Arbor United States
-7. https://ror.org/00jmfr291 Department of Statistics, University of Michigan Ann Arbor United States
-8. https://ror.org/01y2jtd41 Department of Bacteriology, University of Wisconsin-Madison Madison United States
+1. Department of Systems and Control Engineering, Indian Institute of Technology Bombay India ([ROR:02qyf5152](https://ror.org/02qyf5152))
+2. Division of Data & Decision Sciences, Tata Consultancy Services Research Mumbai India ([ROR:01b9n8m42](https://ror.org/01b9n8m42))
+3. Department of Biochemistry, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+4. Department of Chemical & Biological Engineering, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+5. Department of Electrical Engineering & Computer Science, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+6. Department of Biomedical Engineering, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+7. Department of Statistics, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+8. Department of Bacteriology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ The flexibility and accuracy of the LSTM model enabled systematic integration in
 
 ## Results
 
-## LSTM outperforms the generalized Lotka Volterra ecological model
+### LSTM outperforms the generalized Lotka Volterra ecological model
 
 Our first objective was to compare the predictive performance of the LSTM model to a commonly used ecological modeling approach. The gLV model is a widely used ecological model consisting of a coupled set of ordinary differential equations that captures the growth dynamics of members of a community based on their intrinsic growth rate and interactions between all pairs of community members (Venturelli et al., 2018). Therefore, the gLV model is not suited to capture higher order interactions among species or changes in inter-species interactions resulting from variation in the environment. By contrast, the LSTM modeling framework is flexible and can capture complex relationships between species as well as time-dependent changes in inter-species interactions. To evaluate the strengths and limitations of these modeling frameworks, we characterized the performance of the gLV and LSTM models in learning the behavior of a ground truth model that included pairwise and third-order interactions between species (Methods).
 
@@ -48,25 +48,33 @@ Our ground truth model is based on a gLV model of a 25-member synthetic gut comm
 
 Recall that we restrict our attention to simpler (fewer species) communities for training to determine if the behavior of lower order communities can be used to predict higher order communities. Further, pairwise inter-species interactions are easier to decipher in lower order communities due to potential co-variation among parameters (correlations between parameters) as a consequence of model structure or methods of data collection. A similar training/test partitioning was used to generate predictive models of complex community behaviors (Venturelli et al., 2018; Clark et al., 2021; Hromada et al., 2021).
 
-The prediction performance of the trained gLV and LSTM models on the hold-out test set are similar for the ground truth model containing only pairwise interactions (Pearson R2 of 0.89 and 0.85 for gLV and LSTM models, respectively) (Figure 1b, c left). For the ground truth model with mild third-order interactions (interaction coefficients that do not exceed 25% of the maximum of the absolute values of the coefficients for the second-order interactions), the performance of the LSTM model is substantially better than the gLV model with the R2-score of 0.85, as opposed to 0.52 for the gLV model (Figure 1b, c, middle). In addition, the LSTM model performs significantly better than the gLV model for higher magnitude (moderate) third-order perturbations (third-order interaction coefficients that do not exceed 50% of the maximum of the absolute values of the coefficients for second-order interactions) (Figure 1b, c, right).
+The prediction performance of the trained gLV and LSTM models on the hold-out test set are similar for the ground truth model containing only pairwise interactions (Pearson $R^{2}$ of 0.89 and 0.85 for gLV and LSTM models, respectively) (Figure 1b, c left). For the ground truth model with mild third-order interactions (interaction coefficients that do not exceed 25% of the maximum of the absolute values of the coefficients for the second-order interactions), the performance of the LSTM model is substantially better than the gLV model with the $R^{2}$-score of 0.85, as opposed to 0.52 for the gLV model (Figure 1b, c, middle). In addition, the LSTM model performs significantly better than the gLV model for higher magnitude (moderate) third-order perturbations (third-order interaction coefficients that do not exceed 50% of the maximum of the absolute values of the coefficients for second-order interactions) (Figure 1b, c, right).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig1-v1.jpg)
 
-**Figure 1.:** For both models, training data consists of low species richness communities ( species, >0.05, Pearson correlation p-value N=82,475lt0.0001). (a) & (d): Data was generated using a gLV model that captures monospecies growth and pairwise interactions. Scatter plots of true versus predicted species abundance at  using the gLV and LSTM models, respectively. t=48⁢hr represents a vector of species abundances. (Xb) & (e) Scatter plot of true versus predicted species abundance of the gLV and LSTM models, respectively when the simulated data is subjected to low magnitude (mild) third-order interactions. (c) & (f) Scatter plot of true versus predicted species abundance of gLV and LSTM models, respectively when the simulated data is further subjected to moderately large third-order interactions. (g) Scatter plot of true versus predicted species abundance for the LSTM model. The training set included a set of higher richness communities (50 each of 11 and 19 member communities). All predictions are forecasted from the species abundance at time 0.
+**Figure 1.:** For both models, training data consists of low species richness communities ($>0.05$ species, $N=82,475$, Pearson correlation p-value lt0.0001). (a) & (d): Data was generated using a gLV model that captures monospecies growth and pairwise interactions. Scatter plots of true versus predicted species abundance at $t=48⁢hr$ using the gLV and LSTM models, respectively. $X$ represents a vector of species abundances. (b) & (e) Scatter plot of true versus predicted species abundance of the gLV and LSTM models, respectively when the simulated data is subjected to low magnitude (mild) third-order interactions. (c) & (f) Scatter plot of true versus predicted species abundance of gLV and LSTM models, respectively when the simulated data is further subjected to moderately large third-order interactions. (g) Scatter plot of true versus predicted species abundance for the LSTM model. The training set included a set of higher richness communities (50 each of 11 and 19 member communities). All predictions are forecasted from the species abundance at time 0.
 
 This in silico analysis highlights the advantages of adopting more expressive neural network models over severely constrained ecological models such as gLV. In addition, a key advantage of the proposed LSTM model over the gLV model is the amount of time required for training the two models. The gLV equations are coupled nonlinear ordinary differential equations, and thus training gLV models requires substantial computational time (nearly 5–6 hr), whereas the LSTM models can be trained in minutes on the same platform. Therefore, the LSTM approach is highly suited for real-time training and planning of experiments. Note that both the composite as well as the LSTM model require tuning of hyperparameters for optimal performance. The details of the computational implementation are provided in the Methods section.
 
-To further leverage this in silico experimental approach, we aimed to identify what type of datasets are required for building predictive models of high richness community behaviors depending on the nature of their underlying interactions. In further analyzing our results, we observed a crescent shaped prediction profile, representing an inherent bias, which we hypothesized was due to the training data containing only communities with ≤6 species (Figure 1c). To test this hypothesis, we augmented the training set with 100 communities enriched with a larger number of species (randomly sampled 11 and 19-member communities). Using this enriched training set, the LSTM model accurately predicts the community dynamics of the hold-out set with an R2 of 0.95 (Figure 1d). In sum, the LSTM has difficulty predicting the behavior of high richness communities when the training data consists of only low richness communities. However, adding a moderate number of high richness communities to the training set eliminates the prediction bias and improves the prediction performance of the LSTM.
+To further leverage this in silico experimental approach, we aimed to identify what type of datasets are required for building predictive models of high richness community behaviors depending on the nature of their underlying interactions. In further analyzing our results, we observed a crescent shaped prediction profile, representing an inherent bias, which we hypothesized was due to the training data containing only communities with ≤6 species (Figure 1c). To test this hypothesis, we augmented the training set with 100 communities enriched with a larger number of species (randomly sampled 11 and 19-member communities). Using this enriched training set, the LSTM model accurately predicts the community dynamics of the hold-out set with an $R^{2}$ of 0.95 (Figure 1d). In sum, the LSTM has difficulty predicting the behavior of high richness communities when the training data consists of only low richness communities. However, adding a moderate number of high richness communities to the training set eliminates the prediction bias and improves the prediction performance of the LSTM.
 
-## LSTM accurately predicts experimentally measured microbial community assembly
+### LSTM accurately predicts experimentally measured microbial community assembly
 
 After validating our methods using the ground truth modeling approach described above, we evaluated the ability of the LSTM to capture the dynamics of experimentally characterized synthetic human gut microbial communities. We tested the effectiveness of the LSTM on time-resolved species abundance data from a previous study of a well-characterized twelve-member synthetic human gut community (Venturelli et al., 2018). The experimental data consists of species abundance sampled approximately every 12hr. A total of 175 microbial communities with sizes varying from 2 to 12 were used to train and evaluate the LSTM model. Of the 175 microbial communities, 102 microbial communities were selected randomly to constitute the training set, while the remaining 73 microbial communities constituted the hold-out test set (Supplementary file 1). This train/test split was similar to that used to train a gLV model in the previous study (Venturelli et al., 2018). The previous study represented perturbations in cell densities and nutrient availability by diluting the community 20-fold every 24 hr into fresh media (i.e. passaging of the communities) (Figure 2a ). The sequential dilutions of the communities are external perturbations that introduce further complexity towards model training.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig2-v1.jpg)
+
+**Figure 2.:** (a) Proposed LSTM modeling methodology for the dynamic prediction of species abundance in a microbial community. The initial abundance information is an input to the first LSTM cell, the output of which is trained to predict abundance at the next time point. Consequently, the predicted abundance becomes an input to another LSTM cell with shared weights to predict the abundance at the subsequent time point. The process is repeated until measurements at all time points are available. $X$ represents a vector of species abundances. Thus, all predictions are forecasted from the abundance at time 0. (b) Scatter plot of measured (true) and predicted species abundance of a 12-member synthetic human gut community at 12 hr ($N=876$, p-value $=2.44⁢e-257$). (c) Scatter plot of measured (true) and predicted abundance at 24 hr (p-value $=6.51⁢e-257$). (d) Scatter plot of measured (true) and predicted abundance at 36 hr (p-value $=7.42⁢e-257$). (e) Scatter plot of measured (true) and predicted abundance at 48 hr (p-value $=1.66⁢e-227$). (f) Scatter plot of measured (true) and predicted abundance at 60 hr (p-value $=3.39⁢e-227$).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Histogram of prediction $R^{2}$-scores on the test set. The prediction $R^{2}$-score for each community is determined between the measured (true) and predicted abundances of all species in that community at all time instants. Prediction of individual species abundance in communities that display (b) accurate predictions (11-member community), (c) close to the median (3-member), and (d) poor predictions (four-member). We note the difference in abundance scales for some species such as BH and BO. Despite the order of magnitude difference in the scales, our proposed LSTM network does a great job at predicting species abundance with consistency across all species in (a). This is primarily due to feature standardization during the training and inference of LSTM networks.
+
 We trained a LSTM network to predict species abundances at various time points given the information of initial species abundance. We found that a total of five LSTM units can predict species abundance at different time points (12, 24, 36, 48, and 60 hr) based on the initial species abundance. The output of each LSTM unit is used as an input to the next unit. However, the input to the current LSTM unit is randomized between the output from the previous LSTM unit and the true abundance at the current time point in the randomized teacher forcing mode of training in order to eliminate temporal bias in the prediction of end-point species abundances. We did not model the passaging perturbations explicitly, since the experimental procedure was consistent across all communities. This also highlights the advantage of using black-box approaches, such as the LSTM network, where physical parameters such as dilution do not need to be explicitly modeled. Here, each LSTM unit consists of a single hidden layer comprising of 2048 hidden units with ReLU activation. The details on hyperparameter tuning, learning rates, and choice of optimizer are provided in the Methods section.
 
-Despite the passaging perturbations and variation in the sampling times, the LSTM accurately predicts (Pearson R2-scores of 0.74, 0.73, 0.74, 0.70, and 0.69 at time points 12, 24, 36, 48, and 60 hr, respectively) not only the end-point species abundance, but also the abundances at intermediate time points on hold-out test sets (Figure 2b-f). These results demonstrate that the LSTM model can accurately predict the temporal changes in species abundance of multi-species communities in the presence of external perturbations. Representative communities that were accurately or poorly predicted by the LSTM are shown in (Figure 2—figure supplement 1).
+Despite the passaging perturbations and variation in the sampling times, the LSTM accurately predicts (Pearson $R^{2}$-scores of 0.74, 0.73, 0.74, 0.70, and 0.69 at time points 12, 24, 36, 48, and 60 hr, respectively) not only the end-point species abundance, but also the abundances at intermediate time points on hold-out test sets (Figure 2b-f). These results demonstrate that the LSTM model can accurately predict the temporal changes in species abundance of multi-species communities in the presence of external perturbations. Representative communities that were accurately or poorly predicted by the LSTM are shown in (Figure 2—figure supplement 1).
 
-## LSTM enables end-point design of multifunctional synthetic human gut microbiomes
+### LSTM enables end-point design of multifunctional synthetic human gut microbiomes
 
 The chemical transformations (i.e. functions) performed by the community are the key design variables for microbiome engineering goals, as evidenced by their major impacts on human health (Sharon et al., 2014). Thus, we explored prediction of microbial community functions by applying the LSTM framework to design health-relevant metabolite profiles using synthetic human gut communities.
 
@@ -74,15 +82,47 @@ A core function of gut microbiota is to transform complex dietary substrates int
 
 We used the species abundance and metabolite concentrations from our previous work (Clark et al., 2021) to train an initial LSTM model. This model uses a feed-forward network (FFN) at the output of the final LSTM unit that maps the endpoint species abundance (a 25-dimensional vector) to the concentrations of the four metabolites (Figure 3a). The entire neural network model comprising LSTM units and a feed-forward network is learned in an end-to-end manner during the training process, (i.e. all the network weights are trained simultaneously). Cross-validation of this model (Model M1, Supplementary file 1) on a set of hold-out community observations shows good agreement between the model predictions and experimental measurements for metabolite concentrations and microbial species abundances (Figure 3—figure supplement 1). Thus, we used this model to design high species richness (i.e. >10 species) communities with tailored metabolite profiles (Figure 3a).
 
-We first used the LSTM model M1 to simulate every possible combination of >10 species (26,434,916 total communities). The simulated communities separate into two regions: one centered around a dense ellipse of high butyrate concentration characterized by communities containing the butyrate-producing species Anaerostipes caccae (AC) and a second dense ellipse of communities that produce low levels of butyrate and lacked AC (Figure 3b). This bimodality due to the presence/absence of AC is consistent with our previous finding that AC is the strongest driver of butyrate production in this system (Clark et al., 2021). In addition, the strong negative correlation between lactate and butyrate in the AC+ cluster of communities (R2=0.72, p<0.001, N=14,198,086) is consistent with the ability of AC to transform lactate into butyrate (Clark et al., 2021). These results demonstrate that the LSTM model can capture the major microbial drivers of metabolite production as well as the correlations between different metabolites.
+![Figure 3.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-v1.jpg)
+
+**Figure 3.:** (b) Heatmap of butyrate and lactate concentrations of all possible communities predicted by the LSTM model M1. Grey points indicate communities chosen via $k$-means clustering to span metabolite design space. Colored boxes indicate ‘corner’ regions defined by $95^{th}$ percentile values on each axis with points of the corresponding color indicating designed communities within that ‘corner’. Insets show heat maps of acetate and succinate concentrations for all communities within the corresponding boxes on the main figure. Boxes on the inset indicate ‘corners’ defined by $95^{th}$ percentile values on each axis with colored points corresponding to the same points indicated on the main plot. (c) Cross-validation accuracy of LSTM model trained and validated on a random 90/10 split of all community observations (model M2), evaluated as Pearson correlation $R^{2}$ for the correlation of predicted versus measured for each variable (all p-valueslt0.05, N and p-value for each test reported in Supplementary file 1). Dashed line indicates $R^{2}=0.5$, which is used as a cutoff for including a variable in the subsequent network diagrams. (d) and (e) Network representation of median LIME explanations of the LSTM model M2 from (c) for prediction of each metabolite concentration (d) or species abundance (e) by the presence of each species. Edge widths are proportional to the median LIME explanation across all communities from (b) used to train the model in units of concentration (for (d)) or normalized to the species’ self-impact (for (e)). Only explanations for those variables where the cross-validated predictions had $R^{2}>0.5$ are shown. Networks were simplified by using lower thresholds for edge width (5 mM for (d), 0.2 for (e)). Red and blue edges indicate positive and negative contributions, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Each plot indicates the comparison of predicted versus measured species abundance (a), butyrate concentration (b), acetate concentration (c), lactate concentration (d), or succinate concentration (e) for cross-validation of model M1 predictions of the validation communities from Clark et al., 2021 (model trained on 110 pairwise communities, 156 communities with 3–5 species, and 124 communities with 11-17 species; cross-validation shown is prediction of a different set of 124 communities with 11–17 species, including 82 communities with all 5 butyrate producers (AC, ER, FP, CC, RI) and 42 communities with the 4 butyrate producers other than AC). Each data point indicates the average of biological replicates of a single community. Black lines indicate linear regressions with slope ($m$) and $R^{2}$ indicated in the legends. Dashed blue line indicates.$x=y$.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Histogram of the model M1 predicted total carbon concentration in butyrate, acetate, lactate, and succinate for all possible communities with >10 species (26,434,916 communities).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Scatter plot of prediction accuracy (correlation of predicted versus measured) of each variable (25 species abundances, 4 metabolite concentrations) by the LSTM model M1 versus the composite model based on the method from Clark et al., 2021. For metabolites, prediction accuracy is also included where the regression model from the composite model is replaced with a Random Forest Regressor (Triangles) or a Feed Forward Network (Plus Signs). Pearson correlation,$R^{2}$ p-values and N reported in Supplementary file 1. (b–e) Prediction accuracy of model M1 for the indicated metabolites. Dashed line indicates the linear regression for all data points. Legends indicates the Pearson correlation $R^{2}$ (including p-values, N=80 for Corner, 100 for Distributed) and RMSE for communities from the ‘corner’ set (red) or ‘distributed’ set (blue) for each variable. Solid black lines indicate.$x=y$ (f) Confusion matrix for classification of the ‘corner’ communities into their specified classes (shown in Figure 3b). Values indicate the fraction of communities from each predicted class whose metabolite concentrations were closest (Euclidean distance) to the centroid of each class (Measured Class). Colored boxes indicate ‘sub-classes’ that fall within the four major classes determined in the lactate and butyrate concentration space as shown in Figure 3b. (g) Scatter plot of misclassification rate between each pair of classes (values from (f), fraction of communities misclassified from one class to the other) versus the Euclidean distance between the centroids of that pair of classes. Black data points indicate pairs of classes that fall within the same major classes defined by the colored boxes in (f) and red data points indicate pairs of classes that do not fall within the same major class.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Error bars indicate bootstrapped 95% confidence interval on the mean of between 3 and 22 biological replicates. The dashed lines indicate +/- 10mM and the numbers on the plot indicate the number of species with mean net production of that metabolite outside the +/- 10 mM range.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Box plots of LIME explanations for the metabolites acetate, butyrate, lactate and succinate. LIME analysis to compute the impact of initial species abundances on metabolite predictions in the 25-member (full) community was performed after training on each subset of data that resulted from a 20-fold partitioning. In each box, the black horizontal line shows the median LIME explanation over the 20 samples, each box encloses the first (Q1) and third (Q3) quartiles, whiskers extend to the farthest data points within the range 1.5*(Q3 - Q1). Data points that exceed this range are considered outliers, which are shown as black circles.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Box plots of LIME explanations for each species in the 25-member synthetic human gut community. LIME analysis to compute the impact of initial species abundances on the end-point species abundance predictions in the 25-member (full) community was performed after training on each subset of data that resulted from a 20-fold partitioning. In each box, the black horizontal line shows the median LIME explanation over the 20 samples, each box encloses the first (Q1) and third (Q3) quartiles, and whiskers extend to the farthest data points within the range 1.5*(Q3 - Q1). Data points that exceed this range are considered outliers, which are shown as black circles. LIME explanations from each fold are normalized to the given species self-impact such that the LIME explanation of a species to predict its own abundance is equal to one.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (a) Scatter plot of LIME explanations of each species impact on each other species in model M2 versus the corresponding interspecies interaction parameter ($a_{i⁢j}$) from the gLV model from Clark et al., 2021. Dashed line indicates the linear regression with the regression parameters shown in the legend (N=600). (b) Heatmap representation of agreement/disagreement between specific interactions for the same comparison as in (a). Legend describes what each color represents.
+
+We first used the LSTM model M1 to simulate every possible combination of >10 species (26,434,916 total communities). The simulated communities separate into two regions: one centered around a dense ellipse of high butyrate concentration characterized by communities containing the butyrate-producing species Anaerostipes caccae (AC) and a second dense ellipse of communities that produce low levels of butyrate and lacked AC (Figure 3b). This bimodality due to the presence/absence of AC is consistent with our previous finding that AC is the strongest driver of butyrate production in this system (Clark et al., 2021). In addition, the strong negative correlation between lactate and butyrate in the AC+ cluster of communities ($R^{2}=0.72$, $p<0.001$, N=14,198,086) is consistent with the ability of AC to transform lactate into butyrate (Clark et al., 2021). These results demonstrate that the LSTM model can capture the major microbial drivers of metabolite production as well as the correlations between different metabolites.
 
 We used our simulated metabolite production landscape to plan informative experiments for testing the predictive capabilities of our model. First, we designed a set of ‘distributed’ communities that spanned the range of typical metabolite concentrations predicted by our model. To this end, we selected 100 communities closest to the centroids of 100 clusters determined using k-means clustering of the four-dimensional metabolite space. Second, we designed a set of communities to test our model’s ability to predict extreme shifts in metabolite outputs. To do so, we identified four ‘corners’ of the distribution in the lactate and butyrate space (Figure 3b). We next examined the relationship between acetate and succinate within each of these corners and found that the distributions varied depending on the given corner (Figure 3b, inset). The total carbon concentration in the fermentation end products across all predicted communities displayed a narrow distribution (mean 316 mM, standard deviation 20 mM, Figure 3—figure supplement 2). The production of the four metabolites are coupled due to the structure of metabolic networks and fundamental stoichiometric constraints (Oliphant and Allen-Vercoe, 2019). Therefore, the model learned the inherent ‘trade-off’ relationships between these fermentation products based on the patterns in our data. We chose a final set of 80 ‘corner’ communities for experimental validation (five communities from each combination of maximizing or minimizing each metabolite, Methods).
 
 By experimentally characterizing the endpoint community composition and metabolite concentrations of the 180 designed communities, we found that the LSTM model M1 accurately predicted the rank order of metabolite concentrations and microbial species abundances. The LSTM model substantially outperformed the composite model (gLV and regression, model from previous work [Clark et al., 2021]) trained on the same data for the majority (59%) of output variables (Figure 3—figure supplement 3a). Additionally, replacing the regression module of the composite model with either a Random Forest Regressor or a Feed Forward Network did not improve the metabolite prediction accuracy beyond that of the LSTM (Figure 3—figure supplement 3a). One of the key limitations of the composite models is that the metabolite variables are a function of the endpoint species abundance, but the species abundances are not a function of the metabolite concentrations. By contrast, the LSTM model can capture such feedbacks between metabolites and species. Notably, the LSTM model prediction accuracy for the metabolites was similar for both the ‘distributed’ and ‘corner’ communities (Figure 3—figure supplement 3b–e). These results indicate that our model is useful for designing communities with a broad range of metabolite profiles that includes those at the extremes of the metabolite distributions.
 
-To determine if the LSTM model could separate groups of communities with extreme behaviors, we treated the ‘corners’ as classes and quantified the classification accuracy of our model. The model accurately classified the communities when considering only butyrate and lactate concentrations. However, the model had poorer separation when acetate and succinate were also considered in defining the classes (Figure 3—figure supplement 3f). The misclassification rate was higher for small Euclidean distances between classes and decreased with the Euclidean distance (Figure 3—figure supplement 3g). This implies that the insufficient variation in concentrations due to fundamental stoichiometric constraints limited our ability to define 16 distinct classes that maximized/minimized each metabolite. While model M1 accurately predicted metabolite concentrations and the majority of species abundances, several individual species abundances were poorly predicted (R2=0-0.6, Figure 3—figure supplement 3a). Thus, we used the dataset to improve the LSTM model. To this end, we combined the new observations with the original observations and randomly partitioned the data into 90% for training and 10% for cross-validation. The resulting model (M2, Supplementary file 1) was substantially more predictive of species abundances (R2>0.5 for all but five species FP, RI, CA, BA, CH (Figure 3c)).
+To determine if the LSTM model could separate groups of communities with extreme behaviors, we treated the ‘corners’ as classes and quantified the classification accuracy of our model. The model accurately classified the communities when considering only butyrate and lactate concentrations. However, the model had poorer separation when acetate and succinate were also considered in defining the classes (Figure 3—figure supplement 3f). The misclassification rate was higher for small Euclidean distances between classes and decreased with the Euclidean distance (Figure 3—figure supplement 3g). This implies that the insufficient variation in concentrations due to fundamental stoichiometric constraints limited our ability to define 16 distinct classes that maximized/minimized each metabolite. While model M1 accurately predicted metabolite concentrations and the majority of species abundances, several individual species abundances were poorly predicted ($R^{2}=0-0.6$, Figure 3—figure supplement 3a). Thus, we used the dataset to improve the LSTM model. To this end, we combined the new observations with the original observations and randomly partitioned the data into 90% for training and 10% for cross-validation. The resulting model (M2, Supplementary file 1) was substantially more predictive of species abundances ($R^{2}>0.5$ for all but five species FP, RI, CA, BA, CH (Figure 3c)).
 
-## Using local interpretable model-agnostic explanations to decipher interactions
+### Using local interpretable model-agnostic explanations to decipher interactions
 
 One of the commonly noted limitations of machine learning models is their lack of interpretability for extracting biological information about a system. Fortunately, generally applicable tools have been developed to aid in model interpretation. Thus, we sought to use such methods to decipher key relationships among variables within the LSTM to deepen our biological understanding of the system. We used local interpretable model-agnostic explanations (LIME) (Ribeiro et al., 2016b), to quantify the impact of each species’ presence on each metabolite and species in each of the sub-communities used to train model M2. We used the median impact of each species presence on each metabolite or species across all training instances to generate networks that revealed microbe-metabolite (Figure 3d) and microbe-microbe (Figure 3e) interactions. In general, these networks represent broad design principles for the community metabolic outputs by indicating which species have the most consistent and strong impacts on each metabolite and species abundance across a wide range of sub-communities. For instance, the metabolite network highlights Anaerostipes caccae (AC) as having the largest positive effect on butyrate production with an additional positive contribution from EL and a negative contribution from DP, consistent with the previous composite gLV model of butyrate production by this community (Clark et al., 2021).
 
@@ -90,25 +130,49 @@ In addition, the number of microbial species impacting each metabolite in these 
 
 The LIME explanations of inter-species interactions exhibited a statistically significant correlation with their corresponding inter-species interaction parameters from a previously parameterized gLV model of this system (Clark et al., 2021; Figure 3—figure supplement 7a). The sign of the interaction was consistent in 80% of the interactions with substantial magnitude (>0.05 in both the LIME explanations and gLV parameters) (Figure 3—figure supplement 7b). This consistency with previous observations suggests that the LSTM model was able to capture similar broad trends in inter-species relationships as gLV (interpreted through the average LIME explanation across all observed communities). The LSTM model captured more nuanced context-specific behaviors (interpreted as the LIME explanation for one specific community context) than the mathematically restricted gLV model, which substantially improved the predictive capability of the LSTM model. These results demonstrate that the LSTM framework is useful for developing high accuracy predictive models for the design of precise community-level metabolite profiles. Our approach also preserves the ability to decipher different types of interactions in the LSTM model that are explicitly encoded in less accurate and flexible ecological models such as gLV.
 
-## Sensitivity of LSTM model prediction accuracy highlights poorly understood species and pairwise interactions
+### Sensitivity of LSTM model prediction accuracy highlights poorly understood species and pairwise interactions
 
-Identification of species that limit prediction performance could guide selection of informative experiments to deepen our understanding of the behaviors of poorly predicted communities. Therefore, we evaluated the sensitivity of the LSTM model (model M2) prediction accuracy to species presence/absence and the amount of training data. High sensitivity of model prediction performance to the number of training communities indicates that collection of additional experimental data would continue to improve the model. Additionally, identifying poorly understood communities will guide machine learning-informed planning of experiments. To evaluate the model’s sensitivity to the size of the training dataset, we computed the hold-out prediction performance (R2) as a function of the size of the training set by sub-sampling the data (Figure 4a). We used 20-fold cross-validation to predict metabolite concentrations and species abundance. Our results show that the ability to improve prediction accuracy as a function of the size of the training data set was limited by the variance in individual species abundance in the training set (Figure 4—figure supplement 1). For instance, certain species with low variance (e.g. FP, EL, DP, RI) in abundance in the training set displayed low sensitivity to the amount of training data and were poorly predicted by the model. The high sensitivity of specific metabolites (e.g. lactate) and species (e.g. AC, BH) to the amount of training data indicates that further data collection would likely improve the model’s prediction performance.
+Identification of species that limit prediction performance could guide selection of informative experiments to deepen our understanding of the behaviors of poorly predicted communities. Therefore, we evaluated the sensitivity of the LSTM model (model M2) prediction accuracy to species presence/absence and the amount of training data. High sensitivity of model prediction performance to the number of training communities indicates that collection of additional experimental data would continue to improve the model. Additionally, identifying poorly understood communities will guide machine learning-informed planning of experiments. To evaluate the model’s sensitivity to the size of the training dataset, we computed the hold-out prediction performance ($R^{2}$) as a function of the size of the training set by sub-sampling the data (Figure 4a). We used 20-fold cross-validation to predict metabolite concentrations and species abundance. Our results show that the ability to improve prediction accuracy as a function of the size of the training data set was limited by the variance in individual species abundance in the training set (Figure 4—figure supplement 1). For instance, certain species with low variance (e.g. FP, EL, DP, RI) in abundance in the training set displayed low sensitivity to the amount of training data and were poorly predicted by the model. The high sensitivity of specific metabolites (e.g. lactate) and species (e.g. AC, BH) to the amount of training data indicates that further data collection would likely improve the model’s prediction performance.
 
-To determine how pairwise combinations of species impacted model prediction performance, we used 20-fold cross-validation to evaluate the prediction performance (R2) on subsets of the total dataset, where subsets were selected based on the presence of individual species or pairs of species (Figure 4b). Using this approach, we identified individual species and species pairs that had the greatest impact on the prediction performance of metabolite concentrations. Sample subsets with poor prediction performance highlight individual species and species pairs whose presence reduced the model’s ability to accurately predict metabolite concentrations. Although the subsets were smaller than the total data set (n=761), calculation of prediction performance was not limited by small sample sizes, where the number of communities in each subset ranged from n=77 to n=478.
+![Figure 4.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig4-v1.jpg)
+
+**Figure 4.:** (a) Sensitivity of metabolite prediction performance ($R^{2}$) to the amount of training data. Training datasets were randomly subsampled 30 times using 50–100% of the total dataset in increments of 10%. Each subsampled training set was subject to 20-fold cross-validation to assess prediction performance. Lineplot of the mean prediction performance over the 30 trials for each percentage of the data. Error bars denote 1 s.d. from the mean. (b) Schematic scatter plot representing how communities containing species A and B define a poorly predicted subsample of the full sample set (c) Heatmap of prediction performance ($R^{2}$) of acetate for each subset of communities containing a given species (diagonal elements) or pair of species (off-diagonal elements). (d) Heatmap of prediction performance for acetate, butyrate, lactate, and succinate. A sample subset containing a given species or pair of species included all communities in which the species were initially present. Predictions for each community were determined using 20-fold cross validation so that for each model the predicted samples were excluded from the training samples. N and p-values are reported in Supplementary file 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Sensitivity of species abundance prediction performance ($R^{2}$) to the size of the training dataset.Training datasets were randomly subsampled 30 times using 50% to 100% of the total dataset in increments of 10%. Each subsampled training set was subject to 20-fold cross-validation to assess prediction performance. Sub-plots show the mean prediction performance (±one standard deviation) over the 30 trials for each percentage of the dataset. Subplots were sorted according to the variance in species abundance taken over the total dataset. In general, prediction performance of low variance species was less likely to improve in response to more training data. N and p-values are reported in Supplementary file 1.
+
+To determine how pairwise combinations of species impacted model prediction performance, we used 20-fold cross-validation to evaluate the prediction performance ($R^{2}$) on subsets of the total dataset, where subsets were selected based on the presence of individual species or pairs of species (Figure 4b). Using this approach, we identified individual species and species pairs that had the greatest impact on the prediction performance of metabolite concentrations. Sample subsets with poor prediction performance highlight individual species and species pairs whose presence reduced the model’s ability to accurately predict metabolite concentrations. Although the subsets were smaller than the total data set ($n=761$), calculation of prediction performance was not limited by small sample sizes, where the number of communities in each subset ranged from $n=77$ to $n=478$.
 
 The interaction network shown in Figure 3d shows the impact of individual species on each metabolite, but does not provide information about whether the effect is due to individual species or pairwise interactions. To determine whether pairwise interactions influence metabolite concentrations, we quantified how prediction performance changed in response to the presence individual species and pairs of species. Specifically, if prediction performance taken over a subset of communities containing a given species pair was markedly different than prediction performance for the subsets corresponding to the individual species, this implies that the given pairwise interaction impacts metabolite production. Using equation 5 (Methods), we found that the prediction performance of lactate and butyrate were the least sensitive to species pairs (average decrease in prediction performance for subsets with species pairs of 0.72% and 1.10% compared to corresponding single species subsets). However, the prediction performance of acetate and succinate were the most sensitive to the presence of species pairs (increase in prediction performance of 6.68% for acetate and a decrease of 2.951% for succinate). This difference in prediction performance suggests that pairwise interactions influences the production of acetate and succinate, while the production of lactate and butyrate are primarily driven by the action of single species. The sensitivity of acetate and succinate to pairwise interactions is consistent with the inferred interaction network shown in Figure 3d, which highlights multiple species-metabolite interactions for acetate and succinate and sparse and strong species-metabolite interactions for butyrate and lactate.
 
 Pairs of certain Bacteroides and butyrate producers including BY-RI, BU-RI, and BY-AC resulted in reduced prediction performance of acetate. This suggests that interactions between specific Bacteroides and butyrate producers were important for acetate transformations, which is consistent with the conversion of acetate into butyrate. Based on the LIME analysis in Figure 3d, AC, DP, and BP had the largest impact on lactate. Thus, the hold-out prediction performance for lactate was primarily impacted by specific pairs that include these species. In sum, these results demonstrate how the LSTM model can be used to identify informative experiments for investigating poorly understood species and interactions between species, where collection of more data would likely improve model prediction performance.
 
-## Time-resolved measurements of communities reveal design rules for qualitatively distinct metabolite dynamics
+### Time-resolved measurements of communities reveal design rules for qualitatively distinct metabolite dynamics
 
 We next leveraged the LSTM model’s dynamic capabilities to understand the temporal changes in metabolite concentrations and community assembly of the 25-member synthetic gut microbiome. To this end, we chose a representative subset of 95 out of the 180 communities from Figure 3b, Figure 5—figure supplement 1a, 60 communities for training, 34 for validation, plus the full 25-member community and experimentally characterized species abundance and metabolite concentrations every 16 hr during community assembly (Figure 5a). We analyzed the dynamic behaviors of these communities using a clustering technique to extract high-level design rules of species presence/absence that determined qualitatively distinct temporal metabolite trajectories (i.e. broad trends consistent across a set of communities) and exploited the LSTM framework to identify context-specific impacts of individual species on metabolite production (i.e. a more fine-tuned case-by-case analysis).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig5-v1.jpg)
+
+**Figure 5.:** (a) Schematic of experiment and network representing a minimal spanning tree across the 95 communities where weights (indicated by edge length) are equal to the Euclidean distance between the metabolite trajectories for each community. Node colors indicate clusters determined as described in the Materials and methods. Red node with black outline annotated with ‘25’ represents the 25-member community. Annotations indicate the most specific microbial species presence/absence rules that describe most data points in the cluster of the corresponding color as determined by a decision tree classifier (Materials and methods). Communities that deviate from the rules for their cluster are indicated with a border matching the color of the closest cluster whose rules they do follow. Network visualization generated using the draw_kamada_kawai function in networkx (v2.1) for Python 3. (b–g) Temporal changes in metabolite concentrations for communities within each cluster (indicated by sub-plot border color), with individual communities denoted by transparent lines. Solid lines and shaded regions represent the mean ±1 s.d. of all communities in the cluster. (h) Schematic of LSTM model training and computation of gradients to evaluate impact of species abundance on metabolite concentrations in a specific community context. (i) Heatmap of model M3 prediction accuracy for four metabolites in the 34 validation communities at each time point (Pearson correlation $R^{2}$, N=34 for all tests). (j) Heatmap of the gradient analysis of model M3 as described in (h) for the full 25-species community. N and p-values are reported in Supplementary file 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Minimal spanning tree of a graph representation of the 180 communities characterized in Figure 3 where each node is a community and each weight is the Euclidean distance between a pair of communities in the 4-dimensional metabolite space to show that the subset of communities characterized in the dynamic experiment was representative of all 180 communities characterized in Figure 3. Blue and red nodes indicate the subset of communities chosen for dynamic characterization and used as training and validation examples for LSTM model M3 in Figure 5. These subsets were chosen by first performing kmeans clustering with $k=94$ for the 180 communities and identifying the 94 communities closest to each cluster centroid and then repeating this process to subsample 34 for the 94 communities (as the training/validation split). (b) and (c) Scatter plots showing where the clusters from Figure 5a fall in the 48 hr metabolite measurement space for comparison with Figure 3b. Each datapoint represents a community with the color corresponding to the clusters in Figure 5a. Legend indicates the percentage of communities from each cluster that come from the ‘corner’ or ‘distributed’ sets. (d) Decision tree classifier explaining which species’ presence determines the clusters of dynamic community behavior from Figure 5. Annotation indicate the percentage of communities from each cluster that can be explained by the indicated paths, which are also annotated on Figure 5a.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Heatmap represents $R^{2}$ for the prediction accuracy of model M3 of the abundance of each species at each time point in the 34 validation communities.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/73870/elife-73870-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (a) Schematic detailing the implementation of the discretized gLV model and the addition of a feed-forward neural network to predict metabolites from species abundance, where $A$ is a matrix of species interaction coefficients, $r$ is a vector of growth rates, and ⊙ is the Hadamard product. (b) Schematic of the LSTM model, which uses an LSTM cell to compute a hidden state vector, which is the input to a feed-forward neural network that predicts a vector of species abundances and metabolite concentrations at each time step. See Computational Methods for a detailed description. (c) Scatter plot of experimentally measured (true) and predicted species absolute abundance using the approximate gLV model. gLV model prediction performance ($N=2,625$) of species abundance on held-out test data after training on the same training data used to fit LSTM model M3. (d) Scatter plot of experimentally measured (true) and predicted species absolute abundance using the LSTM + FFN model ($N=2,625$). (e) Scatter plot of experimentally measured (true) and predicted metabolite concentrations using the gLV + FFN model ($N=105$ for every metabolite). (f) Scatter plot of experimentally measured (true) and predicted metabolite concentrations using the LSTM +FFN model ($N=105$ for every metabolite). Lines denote.$x=y$.
 
 The temporal trajectories of species abundance and metabolite concentrations showed a wide range of qualitatively distinct trends across the 95 communities (Figure 5b–g). For example, some metabolites concentrations monotonically increased (e.g. butyrate in Figure 5b, c, e and g), monotonically decreased (e.g. lactate in Figure 5b, c) or exhibited biphasic dynamics (e.g. acetate in Figure 5c). To determine if there were communities with similar temporal changes in metabolite concentrations, we clustered communities using a minimal spanning tree (Grygorash et al., 2006) on the Euclidean distance between the metabolite trajectories of each pair of communities (Figure 5a). The resulting six clusters exhibited high quantitative within-cluster similarity and qualitatively distinct metabolite trajectories (Figure 5b–g). Clusters 4 and 5, which contained the largest number of communities, had a high fraction of ‘distributed’ communities (Figure 3b). Clusters with a smaller number of communities contained a higher percentage of ‘corner’ communities (Figure 5—figure supplement 1b,c). Therefore, the LSTM model informed by endpoint measurements of species abundance and metabolite concentrations elucidated ‘corner’ communities with qualitatively distinct temporal behaviors. These communities were unlikely to be discovered via random sampling of sub-communities due to the high density of points towards the center of the distribution and low density of communities in the tails of the distribution (Figure 3b). Additionally, some ‘corner’ communities that were similar in metabolite profiles when considering the endpoint measurement separated into different clusters when considering the dynamic data (e.g. Clusters 2 and 3, which have similar metabolite profiles at 48 hr but qualitatively distinct dynamics) (Figure 5b). This demonstrates that using a community design approach to explore the extremes of system behaviors with a limited time resolution enabled the identification of new features when the communities with extreme functions were characterized with higher time resolution.
 
 To identify general patterns in species presence/absence of these communities that could explain the temporal behaviors of each cluster, we used a decision tree analysis to identify an interpretable classification scheme (Figure 5—figure supplement 1d). Using this approach, the large clusters were separated by relatively simple classification rules (i.e. AC+ for Cluster 4 and AC- for Cluster 5), whereas the smaller clusters had more complex classification rules involving larger combinations of species (3–7 species), all involving AC, DP, and DL (Figure 5a). The influential role of DP was corroborated by a previous study showing that DP substantially inhibits butyrate production (Clark et al., 2021). In addition, the inferred microbe-metabolite networks based on the LSTM model M2 demonstrated that the presence of DL was linked to higher acetate and lower succinate production (Figure 3d), consistent with its key role in shaping metabolite dynamics in this system. The variation in the number of communities across clusters is consistent with previous observations that species-rich microbial communities tend towards similar behavior(s) (e.g. Clusters 4 and 5 contained many communities). By contrast, more complex species presence/absence design rules are required to identify communities that deviate from this typical behavior (e.g. Clusters 1–3 and 6 contained few communities) (Clark et al., 2021).
 
-## Using LSTM with higher time-resolution to interpret contextual interactions
+### Using LSTM with higher time-resolution to interpret contextual interactions
 
 While our clustering analysis identified general design rules for metabolite trajectories, there remained unexplained within-cluster variation. Thus, we used the LSTM framework to identify those effects beyond these general species presence/absence rules that determine the precise metabolite trajectory of a given community. Simultaneous predictions of species abundance and the concentration of all four metabolites at all time points necessitates specific modifications to the LSTM architecture shown in Figure 2a. In particular, we consider a 29-dimensional input vector whose first 25 components correspond to the species abundance, while the remaining four components correspond to the concentration of metabolites (Figure 5h). The 29-dimensional feature vector is suitably normalized so that the different components have zero mean and unity variance. The feature scaling is important to prevent dominance of high-abundance species. The output of each LSTM unit is fed into the input block of the subsequent LSTM unit in order to advance the model forward in time. The reason behind concatenating instantaneous species abundances with metabolite concentrations can be understood as follows. Prediction of metabolite concentrations at various time points requires a time-series model (either using ODEs or LSTM in this case). Further, the future trajectory of metabolite concentrations is a function of both the species abundance, as well as the metabolite concentrations at the current time instant. Therefore, we concatenate both the metabolite concentrations and species abundances to create a 29-dimensional feature vector. The trained LSTM framework on the 60 training communities (model M3) displayed good prediction performance on the metabolite concentrations of the 34 validation communities plus the full 25-species community (Figure 5i). The prediction accuracy of species abundance was lower than metabolite concentrations, presumably due to the limited number of training set observations of each species (Figure 5—figure supplement 2).
 
@@ -134,89 +198,977 @@ While previous approaches have used machine learning methods to predict microbio
 
 ## Materials and methods
 
-## Experimental methods
+**Key resources table**
 
-## Strain maintenance and culturing
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Prevotella copri CB7)</td>
+      <td>PC</td>
+      <td>DSM 18205</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Parabacteroides johnsonii M-165)</td>
+      <td>PJ</td>
+      <td>DSM 18315</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides vulgatus NCTC 11154)</td>
+      <td>BV</td>
+      <td>ATCC 8482</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides fragilis EN-2)</td>
+      <td>BF</td>
+      <td>DSM 2151</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides ovatus NCTC 11153)</td>
+      <td>BO</td>
+      <td>ATCC 8483</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides thetaiotaomicron VPI 5482)</td>
+      <td>BT</td>
+      <td>ATCC 29148</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides caccae VPI 3452 A)</td>
+      <td>BC</td>
+      <td>ATCC 43185</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides cellulosilyticus CRE21)</td>
+      <td>BY</td>
+      <td>DSMZ 14838</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteroides uniformis VPI 0061)</td>
+      <td>BU</td>
+      <td>DSM 6597</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Desulfovibrio piger VPI C3-23)</td>
+      <td>DP</td>
+      <td>ATCC 29098</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium longum subs. infantis S12)</td>
+      <td>BL</td>
+      <td>DSM 20088</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium adolescentis E194a (Variant a))</td>
+      <td>BA</td>
+      <td>ATCC 15703</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bifidobacterium pseudocatenulatum B1279)</td>
+      <td>BP</td>
+      <td>DSM 20438</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Collinsella aerofaciens VPI 1003)</td>
+      <td>CA</td>
+      <td>DSM 3979</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella lenta 1899 B)</td>
+      <td>EL</td>
+      <td>DSM 2243</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Faecalibacterium prausnitzii A2-165)</td>
+      <td>FP</td>
+      <td>DSM 17677</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium hiranonis T0-931)</td>
+      <td>CH</td>
+      <td>DSM 13275</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Anaerostipes caccae L1-92)</td>
+      <td>AC</td>
+      <td>DSM 14662</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Blautia hydrogenotrophica S5a33)</td>
+      <td>BH</td>
+      <td>DSM 10507</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Clostridium asparagiforme N6)</td>
+      <td>CG</td>
+      <td>DSM 15981</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eubacterium rectale VPI 0990)</td>
+      <td>ER</td>
+      <td>ATCC 33656</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Roseburia intestinalis L1-82)</td>
+      <td>RI</td>
+      <td>DSM 14610</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Coprococcus comes VPI CI-38)</td>
+      <td>CC</td>
+      <td>ATCC 27758</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dorea longicatena 111–35)</td>
+      <td>DL</td>
+      <td>DSMZ 13814</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Dorea formicigenerans VPI C8-13)</td>
+      <td>DF</td>
+      <td>DSM 3992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ATCACG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ATCACG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CGATGT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CGATGT ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TTAGGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TTAGGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TGACCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TGACCA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ACAGTG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ACAGTG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GCCAAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GCCAAT ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CAGATC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CAGATC ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ACTTGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ACTTGA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GATCAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GATCAG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TAGCTT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TAGCTT ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GGCTAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GGCTAC ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CTTGTA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CTTGTA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: AGTCAA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC AGTCAA ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: AGTTCC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC AGTTCC ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ATGTCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ATGTCA ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CCGTCC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CCGTCC ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GTAGAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GTAGAG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GTCCGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GTCCGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GTGAAA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GTGAAA ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GTGGCC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GTGGCC ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GTTTCG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GTTTCG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CGTACG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CGTACG ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GAGTGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GAGTGG ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GGTAGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GGTAGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ACTGAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ACTGAT ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ATGAGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ATGAGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: ATTCCT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC ATTCCT ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CAAAAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CAAAAG ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CAACTA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CAACTA ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CACCGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CACCGG ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CACGAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CACGAT ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CACTCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CACTCA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CAGGCG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CAGGCG ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CATGGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CATGGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CATTTT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CATTTT ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CCAACA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CCAACA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CGGAAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CGGAAT ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CTAGCT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CTAGCT ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CTATAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CTATAC ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: CTCAGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC CTCAGA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: GACGAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC GACGAC ACACTCTTTCCCTACACGACGCTCTTCCGATCT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TAATCG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TAATCG ACACTCTTTCCCTACACGACGCTCTTCCGATCT T ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TACAGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TACAGC ACACTCTTTCCCTACACGACGCTCTTCCGATCT GT ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TATAAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TATAAT ACACTCTTTCCCTACACGACGCTCTTCCGATCT CGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TCATTC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TCATTC ACACTCTTTCCCTACACGACGCTCTTCCGATCT ATGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TCCCGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TCCCGA ACACTCTTTCCCTACACGACGCTCTTCCGATCT TGCGA ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TCGAAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TCGAAG ACACTCTTTCCCTACACGACGCTCTTCCGATCT GAGTGG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward Primer Index: TCGGCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>AATGATACGGCGACCACCGAGATCTACAC TCGGCA ACACTCTTTCCCTACACGACGCTCTTCCGATCT CCTGGAG ACTCCTACGGGAGGCAGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ATCACGAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ATCACGAG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CGATGTTC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CGATGTTC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TTAGGCGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TTAGGCGA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TGACCAAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TGACCAAT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ACAGTGCT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ACAGTGCT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GCCAATGT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GCCAATGT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CAGATCGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CAGATCGA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ACTTGAAA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ACTTGAAA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GATCAGTG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GATCAGTG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TCTACCTC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TCTACCTC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CTTGTATG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CTTGTATG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TAGCTTCC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TAGCTTCC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GGCTACCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GGCTACCA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ATGCACTT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ATGCACTT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GACGGAAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GACGGAAC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AGCCTTGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AGCCTTGG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CCGTAGAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CCGTAGAG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GTGAGACT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GTGAGACT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AATGCTCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AATGCTCA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GCATCGTA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GCATCGTA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CGAACAGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CGAACAGC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TCGGAAGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TCGGAAGG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TTCTGTCG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TTCTGTCG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GTACTCAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GTACTCAC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AGTAATAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AGTAATAC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CAAGATAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CAAGATAT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TGTTTGGT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TGTTTGGT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CTCCAACC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CTCCAACC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AAATTCTG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AAATTCTG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CCCGCCAA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CCCGCCAA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TACAAATA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TACAAATA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GGGCTATA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GGGCTATA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TTTCGGAC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TTTCGGAC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TGCGCGTC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TGCGCGTC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TCCCGCTG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TCCCGCTG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GTTTCAGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GTTTCAGG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GGAGGGGG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GGAGGGGG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GCTGTTAG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GCTGTTAG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: GAGTGTGA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT GAGTGTGA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CGTCCCCG</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CGTCCCCG GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CCTCATCA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CCTCATCA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CCACGACA</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CCACGACA GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT A ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: CATTGGCT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT CATTGGCT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TC ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AGGGGCCC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AGGGGCCC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CTA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ACGACACT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ACGACACT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT GATA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: ACCGACGC</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT ACCGACGC GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT ACTCA ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: TATAGTAT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT TATAGTAT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT TTCTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse Primer Index: AACTCAGT</td>
+      <td>IDT</td>
+      <td></td>
+      <td>CAAGCAGAAGACGGCATACGAGAT AACTCAGT GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT CACTTCT ggactaccagggtatctaatcctgt</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental methods
+
+#### Strain maintenance and culturing
 
 All anaerobic culturing was carried out in an anaerobic chamber with an atmosphere of 2.5 ± 0.5% H2, 15±1% CO2 and balance N2. All prepared media and materials were placed in the chamber at least overnight before use to equilibrate with the chamber atmosphere. The strains used in this work were obtained from the sources listed in our previous publication (Clark et al., 2021) and permanent stocks of each were stored in 25% glycerol at -80°C. Batches of single-use glycerol stocks were produced for each strain by first growing a culture from the permanent stock in anaerobic basal broth (ABB) media (Oxoid) to stationary phase, mixing the culture in an equal volume of 50% glycerol, and aliquoting 400µL into Matrix Tubes (ThermoFisher) for storage at -80°C. Quality control for each batch of single-use glycerol stocks included (1) plating a sample of the aliquoted mixture onto LB media (Sigma-Aldrich) for incubation at 37°C in ambient air to detect aerobic contaminants and (2) Illumina sequencing of 16 S rDNA isolated from pellets of the aliquoted mixture to verify the identity of the organism. For each experiment, precultures of each species were prepared by thawing a single-use glycerol stock and combining the inoculation volume and media as described in Clark et al., 2021 to a total volume of 5 mL (multiple tubes inoculated if more preculture volume needed). Cultures were incubated until stationary phase at 37°C using the preculture incubation times described in Clark et al., 2021. All experiments were performed in a chemically defined medium (DM38), as previously described (Clark et al., 2021). This medium supports the individual growth of all organisms except Faecalibacterium prausnitzii (Clark et al., 2021).
 
-## Community culturing experiments and sample collection
+#### Community culturing experiments and sample collection
 
-Synthetic communities were assembled using liquid handling-based automation as described previously (Clark et al., 2021). Briefly, each species’ preculture was diluted to an OD600 of 0.0066 in DM38. Community combinations were arrayed in 96 deep well (96DW) plates by pipetting equal volumes of each species’ diluted preculture into the appropriate wells using a Tecan Evo Liquid Handling Robot inside an anaerobic chamber. For experiments with multiple time points, duplicate 96DW plates were prepared for each time point. Each 96DW plate was covered with a semi-permeable membrane (Diversified Biotech) and incubated at 37°C. After the specified time had passed, 96DW plates were removed from the incubator and samples were mixed by pipette. Cell density was measured by pipetting 200µL of each sample into one 96-well microplate (96 W MP) and diluting 20 L of each sample into 180µL of PBS in another 96 W MP and measuring the OD600 of both plates (Tecan F200 Plate Reader). We selected the value that was within the linear range of the instrument for each sample. A total of 200µL of each sample was transferred to a new 96DW plate and pelleted by centrifugation at 2400xg for 10 min. A supernatant volume of 180µL was removed from each sample and transferred to a 96-well microplate for storage at -20°C and subsequent metabolite quantification by high performance liquid chromatography (HPLC). Cell pellets were stored at -80°C for subsequent genomic DNA extraction and 16 S rDNA library preparation for Illumina sequencing. 20µL of each supernatant was used to quantify pH using a phenol Red assay (Silverstein, 2012). Phenol red solution was diluted to 0.05% weight per volume in 0.9% w/v NaCl. Bacterial supernatant (20µL) was added to 180µ of phenol red solution in a 96 W MP, and absorbance was measured at 560 nm (Tecan Spark Plate Reader). A standard curve was produced by fitting the Henderson-Hasselbach equation to fresh media with a pH ranging between 3 and 11 measured using a standard electro-chemical pH probe (Mettler-Toledo). We used (1) to map the pH values to the absorbance measurements.(1)pH=pKa+b⋅log10⁡(A-AminAmax-A)
+Synthetic communities were assembled using liquid handling-based automation as described previously (Clark et al., 2021). Briefly, each species’ preculture was diluted to an OD600 of 0.0066 in DM38. Community combinations were arrayed in 96 deep well (96DW) plates by pipetting equal volumes of each species’ diluted preculture into the appropriate wells using a Tecan Evo Liquid Handling Robot inside an anaerobic chamber. For experiments with multiple time points, duplicate 96DW plates were prepared for each time point. Each 96DW plate was covered with a semi-permeable membrane (Diversified Biotech) and incubated at 37°C. After the specified time had passed, 96DW plates were removed from the incubator and samples were mixed by pipette. Cell density was measured by pipetting 200µL of each sample into one 96-well microplate (96 W MP) and diluting 20 L of each sample into 180µL of PBS in another 96 W MP and measuring the OD600 of both plates (Tecan F200 Plate Reader). We selected the value that was within the linear range of the instrument for each sample. A total of 200µL of each sample was transferred to a new 96DW plate and pelleted by centrifugation at 2400xg for 10 min. A supernatant volume of 180µL was removed from each sample and transferred to a 96-well microplate for storage at -20°C and subsequent metabolite quantification by high performance liquid chromatography (HPLC). Cell pellets were stored at -80°C for subsequent genomic DNA extraction and 16 S rDNA library preparation for Illumina sequencing. 20µL of each supernatant was used to quantify pH using a phenol Red assay (Silverstein, 2012). Phenol red solution was diluted to 0.05% weight per volume in 0.9% w/v NaCl. Bacterial supernatant (20µL) was added to 180µ of phenol red solution in a 96 W MP, and absorbance was measured at 560 nm (Tecan Spark Plate Reader). A standard curve was produced by fitting the Henderson-Hasselbach equation to fresh media with a pH ranging between 3 and 11 measured using a standard electro-chemical pH probe (Mettler-Toledo). We used (1) to map the pH values to the absorbance measurements.
 
-The parameters b and pKa were determined using a linear regression between pH and the log term for the standards in the linear range of absorbance (pH between 5.2 and 11) with Amax representing the absorbance of the pH 11 standard, Amin denoting the absorbance of the pH 3 standard and A representing the absorbance of each condition.
+$$
+pH=pK_{a}+b⋅log_{10}⁡(\frac{A-A_{min}}{A_{max}-A})
+$$
 
-## HPLC quantification of organic acids
+The parameters $b$ and pKa were determined using a linear regression between pH and the $log$ term for the standards in the linear range of absorbance (pH between 5.2 and 11) with $A_{max}$ representing the absorbance of the pH 11 standard, $A_{min}$ denoting the absorbance of the pH 3 standard and $A$ representing the absorbance of each condition.
 
-Butyrate, succinate, lactate, and acetate concentrations in culture supernatants were quantified as described previously (Clark et al., 2021). Supernatant samples were thawed in a room temperature water bath before addition of 2µL of H2⁢SO4 to precipitate any components that might be incompatible with the running buffer. The samples were then centrifuged at 2400xg for 10 min and then 150µL of each sample was filtered through a 0.2µm filter using a vacuum manifold before transferring 70µL of each sample to an HPLC vial. HPLC analysis was performed using a Shimadzu HPLC system equipped with a SPD-20AV UV detector (210 nm). Compounds were separated on a 250×4.6 mm Rezex OA-Organic acid LC column (Phenomenex Torrance, CA) run with a flow rate of 0.2 ml min-1 and at a column temperature of -50°C. The samples were held at 4°C prior to injection. Separation was isocratic with a mobile phase of HPLC grade water acidified with 0.015 N H2⁢S⁢O4 (415⁢μ⁢LL-1). At least two standard sets were run along with each sample set. Standards were 100, 20, and 4 mM concentrations of butyrate, succinate, lactate, and acetate, respectively. The injection volume for both sample and standard was 25µL. The resultant data was analyzed using the Shimadzu LabSolutions software package.
+#### HPLC quantification of organic acids
 
-## Genomic DNA extraction and sequencing library preparation
+Butyrate, succinate, lactate, and acetate concentrations in culture supernatants were quantified as described previously (Clark et al., 2021). Supernatant samples were thawed in a room temperature water bath before addition of 2µL of $H_{2}⁢SO_{4}$ to precipitate any components that might be incompatible with the running buffer. The samples were then centrifuged at 2400xg for 10 min and then 150µL of each sample was filtered through a 0.2µm filter using a vacuum manifold before transferring 70µL of each sample to an HPLC vial. HPLC analysis was performed using a Shimadzu HPLC system equipped with a SPD-20AV UV detector (210 nm). Compounds were separated on a 250×4.6 mm Rezex OA-Organic acid LC column (Phenomenex Torrance, CA) run with a flow rate of 0.2 ml min-1 and at a column temperature of -50°C. The samples were held at 4°C prior to injection. Separation was isocratic with a mobile phase of HPLC grade water acidified with 0.015 N $H_{2}⁢S⁢O_{4}$ ($415⁢\mu⁢LL^{-1}$). At least two standard sets were run along with each sample set. Standards were 100, 20, and 4 mM concentrations of butyrate, succinate, lactate, and acetate, respectively. The injection volume for both sample and standard was 25µL. The resultant data was analyzed using the Shimadzu LabSolutions software package.
 
-Genomic DNA extraction and sequencing library preparation were performed as described previously (Clark et al., 2021). Genomic DNA was extracted from cell pellets using a modified version of the Qiagen DNeasy Blood and Tissue Kit protocol. First, pellets in 96DW plates were removed from -80°C and thawed in a room temperature water bath. Each pellet was resuspended in 180⁢μ⁢L of enzymatic lysis buffer (20 mM Tris-HCl (Invitrogen), 2 mM Sodium EDTA (Sigma-Aldrich), 1.2% Triton X-100 (Sigma-Aldrich), 20 mg/mL Lysozyme from chicken egg white (Sigma-Aldrich)). Plates were then covered with a foil seal and incubated at 37°C for 30 min with orbital shaking at 600 RPM. Then, 25⁢μ⁢L of 20⁢mgmL-1 Proteinase K (VWR) and 200 L of Buffer AL (QIAGEN) were added to each sample before mixing with a pipette. Plates were then covered by a foil seal and incubated at 56°C for 30 min with orbital shaking at 600 RPM. Next, 200⁢μ⁢L of 100% ethanol (Koptec) was added to each sample before mixing and samples were transferred to a Nucleic Acid Binding (NAB) plate (Pall) on a vacuum manifold with a 96DW collection plate. Each well in the NAB plate was then washed once with 500⁢μ⁢L Buffer AW1 (QIAGEN) and once with 500⁢μ⁢L of Buffer AW2 (QIAGEN). A vacuum was applied to the Pall NAB plate for an additional 10 min to remove any excess ethanol. Samples were then eluted into a clean 96DW plate from each well using 110⁢μ⁢L of Buffer AE (QIAGEN) preheated to 56°C. Genomic DNA samples were stored at -20°C until further processing.
+#### Genomic DNA extraction and sequencing library preparation
 
-Genomic DNA concentrations were measured using a SYBR Green fluorescence assay and then normalized to a concentration of 1⁢ngL-1 by diluting in molecular grade water using a Tecan Evo Liquid Handling Robot. First, genomic DNA samples were removed from -20°C and thawed in a room temperature water bath. Then, 1⁢μ⁢L of each sample was combined with 95⁢μ⁢L of SYBR Green (Invitrogen) diluted by a factor of 100 in TE Buffer (Integrated DNA Technologies) in a black 384-well microplate. This process was repeated with two replicates of each DNA standard with concentrations of 0, 0.5, 1, 2, 4, and 6⁢ngL-1. Each sample was then measured for fluorescence with an excitation/emission of 485/535 nm using a Tecan Spark plate reader. Concentrations of each sample were calculated using the standard curve and a custom Python script was used to compute the dilution factors and write a worklist for the Tecan Evo Liquid Handling Robot to normalize each sample to 1⁢ngL-1 in molecular grade water. Samples with DNA concentration less than 1⁢ngL-1 were not diluted. Diluted genomic DNA samples were stored at -20°C until further processing.
+Genomic DNA extraction and sequencing library preparation were performed as described previously (Clark et al., 2021). Genomic DNA was extracted from cell pellets using a modified version of the Qiagen DNeasy Blood and Tissue Kit protocol. First, pellets in 96DW plates were removed from -80°C and thawed in a room temperature water bath. Each pellet was resuspended in $180⁢\mu⁢L$ of enzymatic lysis buffer (20 mM Tris-HCl (Invitrogen), 2 mM Sodium EDTA (Sigma-Aldrich), 1.2% Triton X-100 (Sigma-Aldrich), 20 mg/mL Lysozyme from chicken egg white (Sigma-Aldrich)). Plates were then covered with a foil seal and incubated at 37°C for 30 min with orbital shaking at 600 RPM. Then, $25⁢\mu⁢L$ of $20⁢mgmL^{-1}$ Proteinase K (VWR) and 200 L of Buffer AL (QIAGEN) were added to each sample before mixing with a pipette. Plates were then covered by a foil seal and incubated at 56°C for 30 min with orbital shaking at 600 RPM. Next, $200⁢\mu⁢L$ of 100% ethanol (Koptec) was added to each sample before mixing and samples were transferred to a Nucleic Acid Binding (NAB) plate (Pall) on a vacuum manifold with a 96DW collection plate. Each well in the NAB plate was then washed once with $500⁢\mu⁢L$ Buffer AW1 (QIAGEN) and once with $500⁢\mu⁢L$ of Buffer AW2 (QIAGEN). A vacuum was applied to the Pall NAB plate for an additional 10 min to remove any excess ethanol. Samples were then eluted into a clean 96DW plate from each well using $110⁢\mu⁢L$ of Buffer AE (QIAGEN) preheated to 56°C. Genomic DNA samples were stored at -20°C until further processing.
 
-Amplicon libraries were generated from diluted genomic DNA samples by PCR amplification of the V3-V4 of the 16 S rRNA gene using custom dual-indexed primers for multiplexed next generation amplicon sequencing on Illumina platforms (Clark et al., 2021). Primers were arrayed in skirted 96-well PCR plates (VWR) using an acoustic liquid handling robot (Labcyte Echo 550) such that each well received a different combination of one forward and one reverse primer (0.1⁢μ⁢L of each). After liquid evaporated, dry primers were stored at -20°C. Primers were resuspended in 15⁢μ⁢L PCR master mix (0.2⁢μ⁢L Phusion High Fidelity DNA Polymerase [Thermo Scientific], 0.4⁢μ⁢L 10 mM dNTP Solution [New England Biolabs], 4⁢μ⁢L 5 x Phusion HF Buffer [Thermo Scientific], 4⁢μ⁢L 5 M Betaine [Sigma-Aldrich], 6.4⁢μ⁢L Water) and 5⁢μ⁢L of normalized genomic DNA to give a final concentration of 0.05 M of each primer. Primer plates were sealed with Microplate B seals (Bio-Rad) and PCR was performed using a Bio-Rad C1000 Thermal Cycler with the following program: initial denaturation at 98°C (30 s); 25 cycles of denaturation at 98°C (10 s), annealing at 60°C (30 s), extension at 72°C (60 s); and final extension at 72°C (10 min). Of PCR products from each well, 2 µL were pooled and purified using the DNA Clean & Concentrator (Zymo) and eluted in water. The resulting libraries were sequenced on an Illumina MiSeq using a MiSeq Reagent Kit v3 (600-cycle) to generate 2 × 300 paired end reads.
+Genomic DNA concentrations were measured using a SYBR Green fluorescence assay and then normalized to a concentration of $1⁢ngL^{-1}$ by diluting in molecular grade water using a Tecan Evo Liquid Handling Robot. First, genomic DNA samples were removed from -20°C and thawed in a room temperature water bath. Then, $1⁢\mu⁢L$ of each sample was combined with $95⁢\mu⁢L$ of SYBR Green (Invitrogen) diluted by a factor of 100 in TE Buffer (Integrated DNA Technologies) in a black 384-well microplate. This process was repeated with two replicates of each DNA standard with concentrations of 0, 0.5, 1, 2, 4, and $6⁢ngL^{-1}$. Each sample was then measured for fluorescence with an excitation/emission of 485/535 nm using a Tecan Spark plate reader. Concentrations of each sample were calculated using the standard curve and a custom Python script was used to compute the dilution factors and write a worklist for the Tecan Evo Liquid Handling Robot to normalize each sample to $1⁢ngL^{-1}$ in molecular grade water. Samples with DNA concentration less than $1⁢ngL^{-1}$ were not diluted. Diluted genomic DNA samples were stored at -20°C until further processing.
 
-## Bioinformatic analysis for quantification of species abundance
+Amplicon libraries were generated from diluted genomic DNA samples by PCR amplification of the V3-V4 of the 16 S rRNA gene using custom dual-indexed primers for multiplexed next generation amplicon sequencing on Illumina platforms (Clark et al., 2021). Primers were arrayed in skirted 96-well PCR plates (VWR) using an acoustic liquid handling robot (Labcyte Echo 550) such that each well received a different combination of one forward and one reverse primer ($0.1⁢\mu⁢L$ of each). After liquid evaporated, dry primers were stored at -20°C. Primers were resuspended in $15⁢\mu⁢L$ PCR master mix ($0.2⁢\mu⁢L$ Phusion High Fidelity DNA Polymerase [Thermo Scientific], $0.4⁢\mu⁢L$ 10 mM dNTP Solution [New England Biolabs], $4⁢\mu⁢L$ 5 x Phusion HF Buffer [Thermo Scientific], $4⁢\mu⁢L$ 5 M Betaine [Sigma-Aldrich], $6.4⁢\mu⁢L$ Water) and $5⁢\mu⁢L$ of normalized genomic DNA to give a final concentration of 0.05 M of each primer. Primer plates were sealed with Microplate B seals (Bio-Rad) and PCR was performed using a Bio-Rad C1000 Thermal Cycler with the following program: initial denaturation at 98°C (30 s); 25 cycles of denaturation at 98°C (10 s), annealing at 60°C (30 s), extension at 72°C (60 s); and final extension at 72°C (10 min). Of PCR products from each well, 2 µL were pooled and purified using the DNA Clean & Concentrator (Zymo) and eluted in water. The resulting libraries were sequenced on an Illumina MiSeq using a MiSeq Reagent Kit v3 (600-cycle) to generate 2 × 300 paired end reads.
+
+#### Bioinformatic analysis for quantification of species abundance
 
 Sequencing data were used to quantify species relative abundance as described previously (Clark et al., 2021). Sequencing data were demultiplexed using Basespace Sequencing Hub’s FastQ Generation program. Custom python scripts were used for further data processing as described previously (Clark et al., 2021). Paired end reads were merged using PEAR (v0.9.10) (Zhang et al., 2014) after which reads without forward and reverse annealing regions were filtered out. A reference database of the V3-V5 16 S rRNA gene sequences was created using consensus sequences from next-generation sequencing data or Sanger sequencing data of monospecies cultures. Sequences were mapped to the reference database using the mothur (v1.40.5) (Schloss et al., 2009) command classify.seqs (Wang method with a bootstrap cutoff value of 60). Relative abundance was calculated as the read count mapped to each species divided by the total number of reads for each condition. Absolute abundance of each species was calculated by multiplying the relative abundance by the OD600 measurement for each sample. Samples were excluded from further analysis if .1% of the reads were assigned to a species not expected to be in the community (indicating contamination). We expect the precision of our measurements to drop rapidly for species representing <1% of the community due to limited sequencing depth. We typically sequenced on the order of 10,000 molecules of PCR amplified DNA of the 16 S rRNA gene per sample, so if a species is only represented by on the order of 10 of those molecules (0.1%), then a single sequencing read error would be a 10% error, whereas a species represented by (>100) reads (1%) would only have 1% error per read.
 
-## Choice of sample sizes
+#### Choice of sample sizes
 
 Sample sizes were chosen based on limitations of experimental throughput as increased number of biological replicates would have reduced the number of possible different communities that could be observed. We chose a minimum of two biological replicates (for complex communities in our validation set) and some sample types have up to seven biological replicates (such as the full community, which was repeated in most experiments as a control for consistency between experimental days).
 
-## Computational methods
+### Computational methods
 
-## Long short-term memory for dynamic prediction on microbial communities
+#### Long short-term memory for dynamic prediction on microbial communities
 
 Long short term memory (LSTM) networks belong to the class of recurrent neural networks (RNNs) and model time-series data. They were first introduced by Hochreiter et al. (Hochreiter and Schmidhuber, 1997) to overcome the vanishing or exploding gradients problem (Hochreiter, 1998) that occur due to long-term temporal dependencies. Since their inception, LSTMs have been further refined (Gers et al., 2000; Graves and Schmidhuber, 2005) and find numerous applications in several domains, including but not limited to neuroscience (Storrs and Kriegeskorte, 2019), weather forecasting (Karevan and Suykens, 2020), predictive finance (Fischer and Krauss, 2018), Google Voice for speech recognition (Esch, 2014; Fischer and Krauss, 2018) and Google Allo for message suggestion (Wei et al., 2018).
 
-Similar to any recurrent neural network, an LSTM network comprises of a network of multiple LSTM units, each representing the input-output map at a time instant. Figure 2 shows the schematic of the proposed LSTM network architecture for abundance prediction. For a microbial community comprising of N species, each LSTM unit models the dynamics at time t using the following set of equations:(2)it=σ(Wiixt+bii+Whiht−1+bhi)ft=σ(Wifxt+bif+Whfht−1+bhf)gt=tanh⁡(Wigxt+big+Whght−1+bhg)ot=σ(Wioxt+bio+Whoht−1+bho)ct=ft⊙ct−1+it⊙gtht=ot⊙tanh (ct),
+Similar to any recurrent neural network, an LSTM network comprises of a network of multiple LSTM units, each representing the input-output map at a time instant. Figure 2 shows the schematic of the proposed LSTM network architecture for abundance prediction. For a microbial community comprising of $N$ species, each LSTM unit models the dynamics at time $t$ using the following set of equations:
 
-where ht, ct, xt are the hidden state, cell state and input abundance at time t, respectively, and it, ft, gt, ot are input, forget, cell and output gates, respectively. σ is the sigmoid function, and ⊙ denotes the Hadamard product. The parameters {Wm⁢n,bm⁢n} for m,n∈{f,g,h,i,o} are trainable and shared across all LSTM units. The output gate ot is further used to generate the abundance for next time instant as:(3)yt:xt+1=Wyoot+byo.
+$$
+i_{t}=\sigma(W_{ii}x_{t}+b_{ii}+W_{hi}h_{t−1}+b_{hi})f_{t}=\sigma(W_{if}x_{t}+b_{if}+W_{hf}h_{t−1}+b_{hf})g_{t}=tanh⁡(W_{ig}x_{t}+b_{ig}+W_{hg}h_{t−1}+b_{hg})o_{t}=\sigma(W_{io}x_{t}+b_{io}+W_{ho}h_{t−1}+b_{ho})c_{t}=f_{t}⊙c_{t−1}+i_{t}⊙g_{t}h_{t}=o_{t}⊙tanh (c_{t}),
+$$
 
-As shown in Figure 2, yt is fed to the LSTM unit at the next timestep (t+1), which in turn predicts the species abundance at time t+2. The process is repeated across multiple LSTM units in order to obtain xtfinal. The entire architecture is trained to minimize the mean-squared loss between the predicted abundance xtfinal and true abundance x^tfinal.
+where ht, ct, xt are the hidden state, cell state and input abundance at time $t$, respectively, and it, ft, gt, ot are input, forget, cell and output gates, respectively. σ is the sigmoid function, and ⊙ denotes the Hadamard product. The parameters ${W_{m⁢n},b_{m⁢n}}$ for $m,n\in{f,g,h,i,o}$ are trainable and shared across all LSTM units. The output gate ot is further used to generate the abundance for next time instant as:
 
-## Using teacher forcing for intermittent time-series forecasting (Figures 1, 2 and 5)
+$$
+y_{t}:x_{t+1}=W_{yo}o_{t}+b_{yo}.
+$$
 
-The end-goal for the proposed LSTM-network based abundance predictor is to accurately capture the steady-state (final) abundance from initial abundance. In typical LSTM networks, the output of the recurrent unit at the previous timestep yt-1 is used as an input to the recurrent unit at the current timestep xt. This kind of recurrent model, while has the ability to predict final abundance, is incapable of handling the one-step-ahead prediction. The problem is even more critical when one tries to anticipate more than a single timestep into the future. Teacher forcing (Benny Toomarian and Barhen, 1992) entails a training procedure for recurrent networks, such as LSTMs, where ‘true’ abundances at intermittent timesteps are used to guide (like a teacher) the model to accurately anticipate one-step-ahead abundance.
+As shown in Figure 2, yt is fed to the LSTM unit at the next timestep ($t+1$), which in turn predicts the species abundance at time $t+2$. The process is repeated across multiple LSTM units in order to obtain $x_{t_{final}}$. The entire architecture is trained to minimize the mean-squared loss between the predicted abundance $x_{t_{final}}$ and true abundance $x^_{t_{final}}$.
 
-Teacher forcing is an efficient method of training RNN models that use the ground truth from a prior time step as input. This is achieved by occasionally replacing the predicted abundance yt-1 from the previous timestep with the true abundance x^t at the current timestep as input abundance to the LSTM unit at the current timestep during the training process. Teacher forcing not only stabilizes the training process, it forces the output abundances at all times to closely match the corresponding true abundances. This is precisely why we do not just use the ground truth abundances at intermittent timesteps in order to robustify the prediction of steady-state abundance. Once trained, the inference in such models is achieved by ignoring the ground truth abundances and using the predicted abundance from previous instant to roll forward the model in time. Teacher forcing was used to train the LSTM in all cases where intermediate time points were measured (Figures 1, 2 and 5), as opposed to cases that only included initial and final time points (Figures 3 and 4).
+#### Using teacher forcing for intermittent time-series forecasting (Figures 1, 2 and 5)
 
-## Metabolite profiling
+The end-goal for the proposed LSTM-network based abundance predictor is to accurately capture the steady-state (final) abundance from initial abundance. In typical LSTM networks, the output of the recurrent unit at the previous timestep $y_{t-1}$ is used as an input to the recurrent unit at the current timestep xt. This kind of recurrent model, while has the ability to predict final abundance, is incapable of handling the one-step-ahead prediction. The problem is even more critical when one tries to anticipate more than a single timestep into the future. Teacher forcing (Benny Toomarian and Barhen, 1992) entails a training procedure for recurrent networks, such as LSTMs, where ‘true’ abundances at intermittent timesteps are used to guide (like a teacher) the model to accurately anticipate one-step-ahead abundance.
+
+Teacher forcing is an efficient method of training RNN models that use the ground truth from a prior time step as input. This is achieved by occasionally replacing the predicted abundance $y_{t-1}$ from the previous timestep with the true abundance $x^_{t}$ at the current timestep as input abundance to the LSTM unit at the current timestep during the training process. Teacher forcing not only stabilizes the training process, it forces the output abundances at all times to closely match the corresponding true abundances. This is precisely why we do not just use the ground truth abundances at intermittent timesteps in order to robustify the prediction of steady-state abundance. Once trained, the inference in such models is achieved by ignoring the ground truth abundances and using the predicted abundance from previous instant to roll forward the model in time. Teacher forcing was used to train the LSTM in all cases where intermediate time points were measured (Figures 1, 2 and 5), as opposed to cases that only included initial and final time points (Figures 3 and 4).
+
+#### Metabolite profiling
 
 Microbial communities are a rich source of a variety of metabolites that are very commonly used as nutritional supplements, natural compounds to cure infectious diseases and in sustainable agriculture development. The concentration and chemical diversities of metabolites produced in a microbial community is a direct consequence of the diversity of interactions between organisms in the community. In essence, the dynamical evolution of relative species abundance and intra-community interactions govern the nature and amount of metabolites produced in the community. The functional map between species abundance and concentration of metabolites is highly complex and nonlinear, and is often approximated using simple regressors involving unary and pairwise interaction terms. In this paper, we model the species-metabolite map through appropriate modification of the LSTM network.
 
-The aforementioned LSTM network for predicting the species abundance is suitably modified to augment four additional components that correspond to the concentration of metabolites at each time instant. In particular, the species abundance data (of size Nspecies) is concatenated with the metabolite concentration data (of size Nmetabs) to form a (Nspecies+Nmetabs)-dimensional feature vector, which is suitably normalized so that the different components have zero mean and unity variance. The feature scaling is important to prevent over reliance on features with a broad range of values. Concatenation of species abundance data and the metabolite concentration data ensures that the future trajectory of metabolite concentrations evolves as a function of both the species abundance, as well as the metabolite concentrations at previous time instants. As before, the (Nspecies+Nmetabs)-dimensional output of each LSTM unit is fed into the input block of the subsequent LSTM unit in order to advance the model forward in time. The model predictions at each time point is then transformed back to the original scale in order to obtain the Pearson R2 scores on the unnormalized data. Compared with existing approaches that employ ordinary differential equations (ODEs) and multiple linear regression models for predicting metabolites, the proposed architecture enables more accurate and rapid estimation of all four metabolites. All the LSTM models were implemented in Python using PyTorch on an Intel i7-7700HQ CPU @2.80 GHz processor with 16 GB RAM and NVIDIA GeForce GTX 1060 (6GB GDDR5) GPU. The exact details of the neural network architecture consisting of number of layers, learning rate, choices of optimizer and nonlinear activations are described in Supplementary file 1.
+The aforementioned LSTM network for predicting the species abundance is suitably modified to augment four additional components that correspond to the concentration of metabolites at each time instant. In particular, the species abundance data (of size $N_{species}$) is concatenated with the metabolite concentration data (of size $N_{metabs}$) to form a $(N_{species}+N_{metabs})$-dimensional feature vector, which is suitably normalized so that the different components have zero mean and unity variance. The feature scaling is important to prevent over reliance on features with a broad range of values. Concatenation of species abundance data and the metabolite concentration data ensures that the future trajectory of metabolite concentrations evolves as a function of both the species abundance, as well as the metabolite concentrations at previous time instants. As before, the $(N_{species}+N_{metabs})$-dimensional output of each LSTM unit is fed into the input block of the subsequent LSTM unit in order to advance the model forward in time. The model predictions at each time point is then transformed back to the original scale in order to obtain the Pearson $R^{2}$ scores on the unnormalized data. Compared with existing approaches that employ ordinary differential equations (ODEs) and multiple linear regression models for predicting metabolites, the proposed architecture enables more accurate and rapid estimation of all four metabolites. All the LSTM models were implemented in Python using PyTorch on an Intel i7-7700HQ CPU @2.80 GHz processor with 16 GB RAM and NVIDIA GeForce GTX 1060 (6GB GDDR5) GPU. The exact details of the neural network architecture consisting of number of layers, learning rate, choices of optimizer and nonlinear activations are described in Supplementary file 1.
 
-## Data preprocessing for LSTM networks
+#### Data preprocessing for LSTM networks
 
-Data normalization is one of the most widely adopted practices for efficient training of neural networks. Data normalization is known to speed up the training leading to faster convergence. At the same time, when working with multi-modal data or data with features represented at multiple scales, it is recommended to normalize the features (also known as feature standardization) to the same scale in order to avoid over reliance on features with large magnitudes. A common choice for feature standardization is to have zero-mean and unit-variance for each feature in the data. Let xi(n)⁢(k) and cj(n)⁢(k) represent the abundance of the ith-species and concentration of the jth-metabolite at the kth time instant for the nth sample. The mean and standard deviation of the quantities {xi(n)⁢(k)} and {cj(n)⁢(k)} can then be computed over the training dataset defined by:μxi(k)=1Nsamples∑n=1Nsamplesxi(n)(k),μcj(k)=1Nsamples∑n=1Nsamplescj(n)(k),σxi(k)=1Nsamples∑n=1Nsamples(xi(n)(k)−μxi(k))2,σcj(k)=1Nsamples∑n=1Nsamples(cj(n)(k)−μcj(k))2.
+Data normalization is one of the most widely adopted practices for efficient training of neural networks. Data normalization is known to speed up the training leading to faster convergence. At the same time, when working with multi-modal data or data with features represented at multiple scales, it is recommended to normalize the features (also known as feature standardization) to the same scale in order to avoid over reliance on features with large magnitudes. A common choice for feature standardization is to have zero-mean and unit-variance for each feature in the data. Let $x_{i}^{(n)}⁢(k)$ and $c_{j}^{(n)}⁢(k)$ represent the abundance of the $i^{th}$-species and concentration of the $j^{th}$-metabolite at the $k^{th}$ time instant for the $n^{th}$ sample. The mean and standard deviation of the quantities ${x_{i}^{(n)}⁢(k)}$ and ${c_{j}^{(n)}⁢(k)}$ can then be computed over the training dataset defined by:
 
-The quantities can then be standardized as:x~i(n)(k):xi(n)(k)−μxi(k)σxi(k),c~j(n)(k):cj(n)(k)−μcj(k)σcj(k).
+$$
+\mu_{x_{i}}(k)=\frac{1}{N_{samples}}\sumn=1N_{samples}x_{i}^{(n)}(k),\mu_{c_{j}}(k)=\frac{1}{N_{samples}}\sumn=1N_{samples}c_{j}^{(n)}(k),\sigma_{x_{i}}(k)=\sqrt{\frac{1}{N_{samples}}\sumn=1N_{samples}(x_{i}^{(n)}(k)−\mu_{x_{i}}(k))^{2}},\sigma_{c_{j}}(k)=\sqrt{\frac{1}{N_{samples}}\sumn=1N_{samples}(c_{j}^{(n)}(k)−\mu_{c_{j}}(k))^{2}}.
+$$
 
-The process is repeated for all species and metabolites at each time-point, and the scaled inputs {x~i(n)⁢(k)} and {c~j(n)⁢(k)} are then fed to the LSTM neural networks for prediction. During inference on the test data, the normalized output of each LSTM unit is inversely transformed back to its original scale using the precomputed {μxi⁢(k),σxi⁢(k)} and {μcj⁢(k),σcj⁢(k)}. The readers are encouraged to refer to Goodfellow et al., 2016; Zheng and Casari, 2018 for additional details on feature standardization. It is also not uncommon to normalize the data with respect to the mean and standard deviation of the entire dataset (and not just with respect to the training dataset). However, in practical scenarios, the test data is not known a priori, and thus it is undesirable to employ statistics from the hold-out test data for feature standardization. In our implementation of data preprocessing for LSTM networks, we had employed feature standardization using (a) training data only, and (b) both training and test data. The predictive performance of our LSTM models was nearly identical for both of these feature standardization approaches. The feature standardization can be toggled by the normalize_all variable in our open-source implementation.
+The quantities can then be standardized as:
 
-## Hyperparameter tuning for LSTM networks
+$$
+x~_{i}^{(n)}(k):\frac{x_{i}^{(n)}(k)−\mu_{x_{i}}(k)}{\sigma_{x_{i}}(k)},c~_{j}^{(n)}(k):\frac{c_{j}^{(n)}(k)−\mu_{c_{j}}(k)}{\sigma_{c_{j}}(k)}.
+$$
 
-Similar to other learning algorithms, training an LSTM network entails choosing a set of hyperparameters for optimal performance. We used an exhaustive grid-search for hyperparameter optimization, while the choice of learning algorithm (optimizer) was restricted to Adam (Kingma and Ba, 2014) due to its superior empirical performance. For each experiment, nearly 10% of the training dataset was reserved as a cross-validation set, and the performances of the trained models were evaluated using cross-validation sets. This information was used to select the best hyperparameter settings. The choices for hyperparameters include: (a) learning rate, (b) number of hidden layers per LSTM unit, (c) number of units per layer within an LSTM unit, (d) mini-batch size, and (e) input data normalization. The input features are normalized to have zero mean and unit variance. The choices of learning rates include 0.005, 0.001, and 0.0001, respectively, each with a decay of 0.25 after every 25 epochs. The gradual decay in learning rates prevents potential overfitting to the data. An L2 regularization term with a very small weight decay coefficient (10-5) is augmented to the loss function for preventing further overfitting. Choices for mini-batch size included 1, 10, 20, and 50, respectively. It was observed that sizes 10 and 20 resulted in improved training loss, and hence we used mini-batch sizes of 10 or 20 in all evaluations. The number of hidden layers per LSTM cell was iterated from 1 to 2. A two-layered LSTM did not result in any noticeable improvement over a single-layered LSTM cell, and thus we restricted our focus to just a single-layered LSTM cell for the sake of simplicity and faster training/inference. Finally, we tried 512, 1024, 2048, and 4096 hidden units per LSTM cell, and depending upon the complexity of the problem, we used 2048 hidden units (predictions of species and no prediction of metabolites) or 4096 hidden units (simultaneous prediction of species and metabolites). The exact details on the number of training epochs, learning rates, decay rates for different experiments can be found in the Supplementary file 1.
+The process is repeated for all species and metabolites at each time-point, and the scaled inputs ${x~_{i}^{(n)}⁢(k)}$ and ${c~_{j}^{(n)}⁢(k)}$ are then fed to the LSTM neural networks for prediction. During inference on the test data, the normalized output of each LSTM unit is inversely transformed back to its original scale using the precomputed ${\mu_{x_{i}}⁢(k),\sigma_{x_{i}}⁢(k)}$ and ${\mu_{c_{j}}⁢(k),\sigma_{c_{j}}⁢(k)}$. The readers are encouraged to refer to Goodfellow et al., 2016; Zheng and Casari, 2018 for additional details on feature standardization. It is also not uncommon to normalize the data with respect to the mean and standard deviation of the entire dataset (and not just with respect to the training dataset). However, in practical scenarios, the test data is not known a priori, and thus it is undesirable to employ statistics from the hold-out test data for feature standardization. In our implementation of data preprocessing for LSTM networks, we had employed feature standardization using (a) training data only, and (b) both training and test data. The predictive performance of our LSTM models was nearly identical for both of these feature standardization approaches. The feature standardization can be toggled by the normalize_all variable in our open-source implementation.
 
-## Specific applications of computational methods
+#### Hyperparameter tuning for LSTM networks
 
-## Comparison of gLV and LSTM in silico (Figure 1)
+Similar to other learning algorithms, training an LSTM network entails choosing a set of hyperparameters for optimal performance. We used an exhaustive grid-search for hyperparameter optimization, while the choice of learning algorithm (optimizer) was restricted to Adam (Kingma and Ba, 2014) due to its superior empirical performance. For each experiment, nearly 10% of the training dataset was reserved as a cross-validation set, and the performances of the trained models were evaluated using cross-validation sets. This information was used to select the best hyperparameter settings. The choices for hyperparameters include: (a) learning rate, (b) number of hidden layers per LSTM unit, (c) number of units per layer within an LSTM unit, (d) mini-batch size, and (e) input data normalization. The input features are normalized to have zero mean and unit variance. The choices of learning rates include 0.005, 0.001, and 0.0001, respectively, each with a decay of 0.25 after every 25 epochs. The gradual decay in learning rates prevents potential overfitting to the data. An L2 regularization term with a very small weight decay coefficient ($10^{-5}$) is augmented to the loss function for preventing further overfitting. Choices for mini-batch size included 1, 10, 20, and 50, respectively. It was observed that sizes 10 and 20 resulted in improved training loss, and hence we used mini-batch sizes of 10 or 20 in all evaluations. The number of hidden layers per LSTM cell was iterated from 1 to 2. A two-layered LSTM did not result in any noticeable improvement over a single-layered LSTM cell, and thus we restricted our focus to just a single-layered LSTM cell for the sake of simplicity and faster training/inference. Finally, we tried 512, 1024, 2048, and 4096 hidden units per LSTM cell, and depending upon the complexity of the problem, we used 2048 hidden units (predictions of species and no prediction of metabolites) or 4096 hidden units (simultaneous prediction of species and metabolites). The exact details on the number of training epochs, learning rates, decay rates for different experiments can be found in the Supplementary file 1.
 
-To compare the LSTM and gLV models, we used a ground truth model of a 25-species community of the form:(4)dxi(t)dt=⟮ri+∑j=1Nspeciesaijxj(t)+∑j=1j≠iNspecies∑k=1k≠i,jNspeciesbijkxj(t)xk(t)⟯xi(t),
+### Specific applications of computational methods
+
+#### Comparison of gLV and LSTM in silico (Figure 1)
+
+To compare the LSTM and gLV models, we used a ground truth model of a 25-species community of the form:
+
+$$
+\frac{dx_{i}(t)}{dt}=⟮r_{i}+\sumj=1N_{species}a_{ij}x_{j}(t)+\sumj=1j\neqiN_{species}\sumk=1k\neqi,jN_{species}b_{ijk}x_{j}(t)x_{k}(t)⟯x_{i}(t),
+$$
 
 where and represent individual species exponential growth rate and pairwise interaction coefficients, respectively. The parameters represent the effect of third-order interactions. The parameters and were derived from a gLV model in a previous study (Clark et al., 2021). We consider three types of simulation studies, each corresponding to varying contributions of the third-order interactions (second-order only: , mild third-order: uniformly sampling in the range , moderate third order: uniformly sampling in the range ). In each scenario, the ground truth data was generated for 624 training communities (25 monospecies, 300 two-member, 100 three-member, 100 five-member, and 99 six-member communities) by simulating the species abundance trajectories over the course of 48 hr and ‘sampling’ every 8 hr. The values from these ‘sampled’ time points were used to train both an LSTM model (methods described above in ‘Computational Methods’ with specific details in Supplementary file 1) and a standard gLV model (trained using FMINCON function in MATLAB as described previously [Clark et al., 2021]). These two models were then used to predict a set of 3299 hold-out communities >10 species simulated using the same ground truth model. For an additional analyses, the training data for the LSTM was augmented by including ground truth data for an additional 100 communities with 11 or 19 species.
 
-## LSTM training for experimental 12-species community (Figure 2)
+#### LSTM training for experimental 12-species community (Figure 2)
 
 The data used in this analysis consisted of 175 microbial community subsets of a 12-species community sampled every 12 hr for 60 hr (Venturelli et al., 2018). Of these communities, 102 were chosen randomly to constitute the training data and the remaining 73 constituted the hold-out set. The LSTM was trained as described above in ‘Computational Methods’ with specific details in Supplementary file 1.
 
-## Using LSTM Model to design multifunctional communities (Figure 3)
+#### Using LSTM Model to design multifunctional communities (Figure 3)
 
-We used the LSTM model trained on previous data (Figure 3a) to design two sets of communities: a ‘distributed’ community set and a ‘corner’ community set. For the ‘distributed’ community set, we first took the predicted metabolite concentrations for all communities with .10 species and used k-means clustering with k=100 (Python 3, scikit-learn v0.23.1, sklearn.cluster.Kmeans function) to identify 100 cluster centroids that were distributed across all of the predictions. We then found the closest community to each centroid in terms of Euclidean distance in the four-dimensional metabolite concentration space. These 100 communities constituted the ‘distributed’ community set.
+We used the LSTM model trained on previous data (Figure 3a) to design two sets of communities: a ‘distributed’ community set and a ‘corner’ community set. For the ‘distributed’ community set, we first took the predicted metabolite concentrations for all communities with .10 species and used $k$-means clustering with $k=100$ (Python 3, scikit-learn v0.23.1, sklearn.cluster.Kmeans function) to identify 100 cluster centroids that were distributed across all of the predictions. We then found the closest community to each centroid in terms of Euclidean distance in the four-dimensional metabolite concentration space. These 100 communities constituted the ‘distributed’ community set.
 
 For the ‘corner’ community set, we first defined four ‘corners’ in the lactate and butyrate concentration space by binning all communities with .10 species as shown in Figure 3b:
 
@@ -224,21 +1176,21 @@ Within each of those four ‘corners’, we identified four ‘sub-corners’ in
 
 This process resulted in 16 ‘sub-corners’ total. For each ‘sub-corner’, we then chose a random community and then identified four more communities that were maximally different from that community in terms of which species were present (Hamming distance). This overall process resulted in 80 communities constituting the ‘corner’ community set.
 
-## Composite model: gLV model for predicting species abundance (Figure 3)
+#### Composite model: gLV model for predicting species abundance (Figure 3)
 
 To benchmark the performance of the LSTM model for predicting metabolite production, we used a previously described Composite Model consisting of a generalized Lotka-Volterra (gLV) model for predicting species abundance dynamics and a regression model with interaction terms to predict metabolite concentration at a given time from the species abundances at that time (Clark et al., 2021). Because our LSTM model was trained on the same dataset as Composite Model M3 from Clark et al., 2021, we used those gLV model parameters.
 
-## Composite model: regression models for predicting metabolite concentrations (Figure 3)
+#### Composite model: regression models for predicting metabolite concentrations (Figure 3)
 
 Our composite model implementation is similar to the model described in Clark et al., 2021 for predicting metabolite concentration from community composition at a particular time. We used the exact gLV model parameter distributions obtained by Clark et al., 2021, which were determined using an approach based on Shin et al., 2019. The regression model mapping endpoint species abundance to metabolite concentrations from Clark et al., 2021 was focused specifically on the prediction of butyrate. Therefore, we adapted the approach to prediction of multiple metabolites. First, we modified the model form to include first order and interaction terms for all 25 species, rather than just the butyrate producers. Then, we separately trained four regression models, one for each metabolite (butyrate, lactate, acetate, succinate), using the measured species abundance and measured metabolite concentrations from the same dataset used to train the LSTM model. We trained these models as described previously (Clark et al., 2021) by using Python scikit-learn (Pedregosa, 2011) and performed L1 regularization to minimize the number of nonzero parameters. Regularization coefficients were chosen by using 10-fold cross validation. We selected the regularization coefficient value with the lowest median mean-squared error across the training splits.
 
 For predicting end-point metabolite profiles from initial species abundance using the LSTM network, a feed-forward network (FFN) was used at the output of the last LSTM unit to convert end-point species abundance to end-point metabolite concentrations. On the other hand, the composite model in Clark et al., 2021 uses multiple linear regressors at its output to predict a given metabolite concentration from species abundance. At this point, it is still unclear if the superior performance of LSTM network is due to the addition of a more powerful FFN at its output over the multiple linear regressors at the output of the composite model. Therefore, we replaced the simple multiple linear regressors component of the composite model from Clark et al., 2021 with a Random Forest regressor (Segal, 2004) or a FFN. However, neither of these additions improved the metabolite prediction accuracy beyond that of the LSTM with a FFN (Figure 3—figure supplement 3a).
 
-## Composite model: simulations for prediction (Figure 3)
+#### Composite model: simulations for prediction (Figure 3)
 
 Custom MATLAB scripts were used to predict community assembly using the gLV model as described previously (Clark et al., 2021). For each community, the growth dynamics were simulated using each parameter set from the posterior distribution of the gLV model parameters. The resulting community compositions for each simulation at 48 hr were used as an input to the regression models (multiple linear regression/Random Forest/FFN) implemented in Python to predict the concentration of each metabolite in each community for each gLV parameter set. Because of the large number of communities and the large number of parameter sets (i.e., hundreds of simulations per community), we used parallel computing (MATLAB parfor) to complete the simulations in a reasonable timeframe (∼1 hr for the communities in Figure 3—figure supplement 3a).
 
-## Understanding relationships between variables using LIME (Figure 3)
+#### Understanding relationships between variables using LIME (Figure 3)
 
 Black-box methods, such as the LSTM-networks employed in this manuscript, do not offer much insights into the underlying mechanics that make them so powerful. Consequently, any potential pitfalls that may come along with building such models remain unexplored. For networks that are of significant biological importance, basing assumptions on falsehoods can be catastrophic. We overcome this limitation by resorting to Local Interpretable Model-Agnostic Explanations (LIME) (Ribeiro et al., 2016a).
 
@@ -248,32 +1200,40 @@ We carried out the LIME analysis to generate interpretable prediction explanatio
 
 In a separate analysis, we investigated the sensitivity of LIME explanations to the training data used to fit the LSTM model. Because the purpose of this analysis was to understand the variability in LIME explanations and not to understand the dependence of LIME explanations on different communities, we only considered LIME explanations of the full community. This is in contrast to the LIME explanations shown in Figure 3d, e, which present the median LIME explanation taken over all of the communities in the training data. Training data was varied using 20-fold cross-validation, and LIME sensitivity of both metabolites (Figure 3—figure supplement 5) and species (Figure 3—figure supplement 6) was computed after fitting the LSTM model to each partition of the training data.
 
-## Understanding relationships between variables using prediction sensitivity (Figure 4)
+#### Understanding relationships between variables using prediction sensitivity (Figure 4)
 
-For each metabolite (Acetate, Butyrate, Lactate, Succinate), fractions of 0.5, 0.6, 0.7, 0.8, 0.9, and 1 of the total dataset were randomly sampled. Each sub-sampled dataset was subject to 20-fold cross validation to determine the sensitivity of held-out prediction performance to the amount of data available for training. This process was repeated 30 times, and the average prediction over the 30 trials was used to compute the final held-out prediction performance (R2).
+For each metabolite (Acetate, Butyrate, Lactate, Succinate), fractions of 0.5, 0.6, 0.7, 0.8, 0.9, and 1 of the total dataset were randomly sampled. Each sub-sampled dataset was subject to 20-fold cross validation to determine the sensitivity of held-out prediction performance to the amount of data available for training. This process was repeated 30 times, and the average prediction over the 30 trials was used to compute the final held-out prediction performance ($R^{2}$).
 
-The sensitivity of the model to the presence of individual species and pairs of species was determined by evaluating prediction performance (R2) for subsets of the data containing each species and each possible pair of species. To evaluate how prediction performance of each metabolite was affected by the presence of species pairs, we computed the average percent difference between prediction performance taken over subsets containing a single species and all pairs of species using the following equation:(5)Pairwisesensitivity=100Nspecies2∑i=1Nspecies∑j≠iNspeciesRij2−Ri2Ri2,
+The sensitivity of the model to the presence of individual species and pairs of species was determined by evaluating prediction performance ($R^{2}$) for subsets of the data containing each species and each possible pair of species. To evaluate how prediction performance of each metabolite was affected by the presence of species pairs, we computed the average percent difference between prediction performance taken over subsets containing a single species and all pairs of species using the following equation:
 
-where Ri2 is the prediction performance taken over the subset of samples containing species i, and Ri⁢j2 is the prediction performance taken over the subset of samples containing species i and j.
+$$
+Pairwisesensitivity=\frac{100}{N_{species}^{2}}\sumi=1N_{species}\sumj\neqiN_{species}\frac{R_{ij}^{2}−R_{i}^{2}}{R_{i}^{2}},
+$$
 
-## Clustering metabolite trajectories (Figure 5)
+where $R_{i}^{2}$ is the prediction performance taken over the subset of samples containing species $i$, and $R_{i⁢j}^{2}$ is the prediction performance taken over the subset of samples containing species $i$ and $j$.
+
+#### Clustering metabolite trajectories (Figure 5)
 
 To generate the clusters from the dynamic community observations (Figure 5), we used a graph-theoretic divisive clustering algorithm (Jain et al., 1999) based on the minimal spanning tree (Zahn, 1971). We first generated an undirected graph wherein each node was a community observed in our experiment and each edge weight was the Euclidean distance between two communities based on all metabolite measurements (4 metabolites ×3 time points = 12-dimensional space for Euclidean distance calculation). We then determined the minimal spanning tree for this graph using the minimum_spanning_tree function in networkx (v2.1) for Python 3. We then used this minimal spanning tree to generate clusters by iteratively removing the edge with the largest weight until 6 clusters were formed. In each iteration, if any edge removal resulted in a cluster with <5 communities (i.e. minimum cluster size), that edge was returned and the next largest edge was removed. The number of clusters and minimum cluster size were chosen based on an elbow method (Pal and Biswas, 1997), wherein scatter plots were made of the mean intracluster distance versus the number of clusters for various minimum cluster sizes and a combination of minimum cluster size and number of clusters that fell on the elbow of the plot was chosen.
 
-## Decision tree classification of metabolite trajectories (Figure 5)
+#### Decision tree classification of metabolite trajectories (Figure 5)
 
 The decision tree shown in Figure 5—figure supplement 1d and used to produce the annotations in Figure 5a was generated using the DecisionTreeClassifier with the default parameter settings in scikit-learn (v0.23.1) for Python 3 (visualization generated using plot_tree function from the same).
 
-## Understanding relationships between variables using sensitivity gradients (Figure 5)
+#### Understanding relationships between variables using sensitivity gradients (Figure 5)
 
 Interpretability of neural-network (NN) models continues to be an interesting challenge in machine learning. While LIME is a great tool to explain what machine learning classifiers are doing, it is model-agnostic and uses simple linear models to approximate local behavior. Model-agnostic characteristic enforces retraining linear models on the training data and analyzing local perturbations, before LIME can be used to invoke interpretability. Moreover, the type of modifications that need to be performed on the data to get proper explanations are typically use case specific. Consequently, model-aware interpretability methods that take into account the weights of an already trained NN are more suitable.
 
-For tasks, such as classification of images and videos, there is a natural way to interpret NN models using class activation maps (CAMs) (Selvaraju et al., 2017). CAMs assign appropriate weighting to different convolutional filters and highlights part of the images that activate a given output class the most. However, CAMs do not extend to other NN architectures, such as LSTMs. Fortunately for us, the answer to interpretability lies in the model training itself. Let Y be the output variable of interest whose perturbation with respect to an input x needs to be estimated. The effect of x on Y can be approximated through the partial derivative ∂⁡Y∂⁡x. For instance, Y may denote butyrate concentration in an experiment, while x can be used to represent abundance of a given species. The sign of the partial derivative depicts positive (or negative) correlation between the two variables, while the magnitude represents the extent of it. In order to evaluate the partial derivatives, we freeze the weights of the already trained LSTM model and declare the inputs to be variables. A single backpropagation pass then evaluates the partial derivatives of an output variable of interest with respect to all the input variables. This is in contrast to LIME-based interpretability method, which requires training an additional model on top of an already trained deep learning model. Most deep learning libraries already implement a computational graph for performing efficient forward and backward passes during the training phase. This computational graph can be used to evaluate sensitivity gradients.
+For tasks, such as classification of images and videos, there is a natural way to interpret NN models using class activation maps (CAMs) (Selvaraju et al., 2017). CAMs assign appropriate weighting to different convolutional filters and highlights part of the images that activate a given output class the most. However, CAMs do not extend to other NN architectures, such as LSTMs. Fortunately for us, the answer to interpretability lies in the model training itself. Let $Y$ be the output variable of interest whose perturbation with respect to an input $x$ needs to be estimated. The effect of $x$ on $Y$ can be approximated through the partial derivative $\frac{\partial⁡Y}{\partial⁡x}$. For instance, $Y$ may denote butyrate concentration in an experiment, while $x$ can be used to represent abundance of a given species. The sign of the partial derivative depicts positive (or negative) correlation between the two variables, while the magnitude represents the extent of it. In order to evaluate the partial derivatives, we freeze the weights of the already trained LSTM model and declare the inputs to be variables. A single backpropagation pass then evaluates the partial derivatives of an output variable of interest with respect to all the input variables. This is in contrast to LIME-based interpretability method, which requires training an additional model on top of an already trained deep learning model. Most deep learning libraries already implement a computational graph for performing efficient forward and backward passes during the training phase. This computational graph can be used to evaluate sensitivity gradients.
 
-There indeed are other methods for explanation of neural networks, most notably the Shapley explainability method (Lundberg and Lee, 2017). This method is substantially more computationally burdensome than LIME or a sensitivity gradient based method (Jia, 2019a; Jia, 2019b). LIME and sensitivity gradients are based on first-order perturbations around the already learned model, and can be used to depict local model behavior with little to no computational burden. By contrast, explainability methods like Shapley are computationally expensive. An exact computation of Shapley values for a K-dimensional input requires estimating 2K possible coalitions of the feature values and the “absence” of a feature has to be simulated by drawing random instances, which increases the variance for the estimate of the Shapley values estimation.
+There indeed are other methods for explanation of neural networks, most notably the Shapley explainability method (Lundberg and Lee, 2017). This method is substantially more computationally burdensome than LIME or a sensitivity gradient based method (Jia, 2019a; Jia, 2019b). LIME and sensitivity gradients are based on first-order perturbations around the already learned model, and can be used to depict local model behavior with little to no computational burden. By contrast, explainability methods like Shapley are computationally expensive. An exact computation of Shapley values for a $K$-dimensional input requires estimating $2^{K}$ possible coalitions of the feature values and the “absence” of a feature has to be simulated by drawing random instances, which increases the variance for the estimate of the Shapley values estimation.
 
-## Comparison of the discretized gLV model to the LSTM (Figure 5—figure supplement 3)
+#### Comparison of the discretized gLV model to the LSTM (Figure 5—figure supplement 3)
 
-To train the gLV model using the same algorithm used to train the LSTM and enable metabolite prediction, the gLV model was discretized and augmented with a feed-forward neural network.The approximate gLV model isxi(t+1)=xi(t)(ri+∑j=1Nspeciesaijxj(t)),ci(t+1)=FFN(xi(t+1)),
+To train the gLV model using the same algorithm used to train the LSTM and enable metabolite prediction, the gLV model was discretized and augmented with a feed-forward neural network.The approximate gLV model is
 
-where xi is the abundance of species i, ri is the growth rate of species i, ai⁢j represents the impact of species j on species i, and ci is the concentration of metabolite i. Metabolite concentrations at time step t are predicted using a feed-forward neural network (FFN). The structure of the discretized gLV model requires that all species abundances are strictly non-negative. When training the gLV, the data were pre-processed such that each feature (species abundance and metabolite concentration) ranges between zero and one based on the maximum value of each feature in the training data, computed at each time step. This is in contrast to the scaling used for the LSTM, which results in negative values for transformed species abundances. The stochastic gradient descent algorithm was used to train the LSTM and the discretized gLV model, using the Adam (Kingma and Ba, 2014) optimizer. The default settings of the Pytorch function, ReduceLROnPlateau, were used to adjust the learning rate during training. Species growth rates, ri, and interaction coefficients, ai⁢j, were initialized to zero prior to fitting.
+$$
+x_{i}^{(t+1)}=x_{i}^{(t)}(r_{i}+\sumj=1N_{species}a_{ij}x_{j}^{(t)}),c_{i}^{(t+1)}=FFN(x_{i}^{(t+1)}),
+$$
+
+where $x_{i}$ is the abundance of species $i$, $r_{i}$ is the growth rate of species $i$, $a_{i⁢j}$ represents the impact of species $j$ on species $i$, and $c_{i}$ is the concentration of metabolite $i$. Metabolite concentrations at time step $t$ are predicted using a feed-forward neural network (FFN). The structure of the discretized gLV model requires that all species abundances are strictly non-negative. When training the gLV, the data were pre-processed such that each feature (species abundance and metabolite concentration) ranges between zero and one based on the maximum value of each feature in the training data, computed at each time step. This is in contrast to the scaling used for the LSTM, which results in negative values for transformed species abundances. The stochastic gradient descent algorithm was used to train the LSTM and the discretized gLV model, using the Adam (Kingma and Ba, 2014) optimizer. The default settings of the Pytorch function, ReduceLROnPlateau, were used to adjust the learning rate during training. Species growth rates, $r_{i}$, and interaction coefficients, $a_{i⁢j}$, were initialized to zero prior to fitting.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.31804.001 In Arabidopsis, development during flowering is coordinated by transport of the hormone auxin mediated by polar-localized PIN-FORMED1 (AtPIN1). However Arabidopsis has lost a PIN clade sister to AtPIN1, Sister-of-PIN1 (SoPIN1), which is conserved in flowering plants. We previously proposed that the AtPIN1 organ initiation and vein patterning functions are split between the SoPIN1 and PIN1 clades in grasses. Here we show that in the grass Brachypodium sopin1 mutants have organ initiation defects similar to Arabidopsis atpin1 , while loss of PIN1 function in Brachypodium has little effect on organ initiation but alters stem growth. Heterologous expression of Brachypodium SoPIN1 and PIN1b in Arabidopsis provides further evidence of functional specificity. SoPIN1 but not PIN1b can mediate flower formation in null atpin1 mutants, although both can complement a missense allele. The behavior of SoPIN1 and PIN1b in Arabidopsis illustrates how membrane and tissue-level accumulation, transport activity, and interaction contribute to PIN functional specificity.
+In Arabidopsis, development during flowering is coordinated by transport of the hormone auxin mediated by polar-localized PIN-FORMED1 (AtPIN1). However Arabidopsis has lost a PIN clade sister to AtPIN1, Sister-of-PIN1 (SoPIN1), which is conserved in flowering plants. We previously proposed that the AtPIN1 organ initiation and vein patterning functions are split between the SoPIN1 and PIN1 clades in grasses. Here we show that in the grass Brachypodium sopin1 mutants have organ initiation defects similar to Arabidopsis atpin1, while loss of PIN1 function in Brachypodium has little effect on organ initiation but alters stem growth. Heterologous expression of Brachypodium SoPIN1 and PIN1b in Arabidopsis provides further evidence of functional specificity. SoPIN1 but not PIN1b can mediate flower formation in null atpin1 mutants, although both can complement a missense allele. The behavior of SoPIN1 and PIN1b in Arabidopsis illustrates how membrane and tissue-level accumulation, transport activity, and interaction contribute to PIN functional specificity.
 
 ## Introduction
 
@@ -40,23 +40,51 @@ Exploring this hypothesis, here we present the functional analysis of both the S
 
 ## Results
 
-## The SoPIN1 and PIN1 clades have different functions in Brachypodium
+### The SoPIN1 and PIN1 clades have different functions in Brachypodium
 
 We targeted Brachypodium SoPIN1, PIN1a and PIN1b with gene-specific Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) and for all three genes recovered independent single base-pair lesions causing frame shifts and premature stop codons (Figure 1A). The wild-type Brachypodium inflorescence meristem normally makes several lateral spikelet meristems (lsm) before producing a terminal spikelet meristem (tsm) (Figure 1B)(Derbyshire and Byrne, 2013). Both lateral and terminal spikelet meristems are consumed in the production of florets (Figure 1D and F). The sopin1-1 inflorescence meristems had severe organ and spikelet branch initiation defects (Figure 1C), which resulted in reduced total whole-plant spikelet number (Figure 1H). When spikelets did form, sopin1-1 spikelet meristems were often devoid of new organs (Figure 1E) and very few recognizable florets were produced (Figure 1I). In support of the sopin1-1 lesion being responsible for these varied inflorescence phenotypes, we complemented inflorescence development and seed set by crossing sopin1-1 to the previously published SoPIN1-Citrine fusion line (Figure 1—figure supplement 1)(O'Connor et al., 2014). The pleotropic defects displayed by sopin1-1 in the inflorescence are remarkably similar to loss-of-function pin1 mutants in Arabidopsis (Okada et al., 1991) and Cardamine hirsuta (Barkoulas et al., 2008).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig1-v1.jpg)
+
+**Figure 1.:** (A) SoPIN1, PIN1a, and PIN1b CRISPR-derived mutant alleles (see Materials and methods). Coding sequences are indicated by grey boxes. Arrowheads indicate CRISPR target sites and are labeled with the type of DNA lesion (C insertion, T insertion, or A deletion). All mutant alleles have frame shifts that result in premature stop codons at the positions indicated. (B–G) Inflorescence phenotypes of CRISPR-derived sopin1-1, pin1a-1, and pin1b-1 mutants. See Figure 2 for whole-plant phenotypes. (B–E) and (G) are scanning electron microscopy (SEM). (B) Immature wild-type (WT) (inbred line Bd21-3) Brachypodium inflorescence with several lateral spikelet meristems (lsm), and a terminal spikelet meristem (tsm). (C) sopin1-1 plants have severe organ initiation defects in the inflorescence. (D) Detail of a wild-type lateral spikelet meristem outlined by a box in (B) showing an immature lemma (l), which is the leaf-like organ that subtends the floral meristem (fm). (E) Detail of barren lateral spikelet meristem outlined by box in (C). (F) Mature inflorescence phenotypes of WT (Inbred Bd21-3), sopin1-1, pin1a-1, pin1b-1, and double pin1a-1/pin1b-1 mutants. The terminal spikelet (ts) of each inflorescence is indicated for comparison. Arrowhead indicates bent internode tissue in pin1b-1. Genotypes for (G–I) are indicated at the bottom of (I). (G) SEM details of representative spikelet meristems. (H) Box-plot of total whole-plant spikelet number at seed-set. (n = 22–53 plants each genotype). Samples with different letters are significantly different from each other (ANOVA, Tukey HSD, p<0.05). See ‘Figure 1H–I Source Data 1’ for source data. (I) Box-plot of the number of florets in each terminal spikelet of the central branch at seed set. (n = 22–53 plants each genotype). Samples with different letters are significantly different from each other (ANOVA, Tukey HSD, p<0.05). See ‘Figure 1H–I Source Data 1’ for source data. (J) Medial confocal Z-section of pZmUbi::DII-Venus (DII) expression in a WT spikelet co-expressing SoPIN1 tagged with Cerulean (a CFP variant) under the native SoPIN1 promoter. Organ primordia are numbered I2, I1, P1 from youngest to oldest. DII is normally degraded at SoPIN1 convergence points in I2 and I1 primordia (asterisks), and in response to auxin treatment (See Figure 1—figure supplement 2). Inset shows color look-up-table for all subsequent PIN images and color look-up-table for DII. (K) Medial confocal Z-section of pZmUbi::DII-Venus expression in a sopin1-1 spikelet meristem. DII degradation does not occur in the periphery of sopin1-1 meristems, and organs fail to initiate (arrow). Scale bars: 100 µm in (B) and (C), 20 µm in (D) and (E), 1 cm in (F), 50 µm each in (G), and 25 µm in (J) and (K).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Wild-type inflorescence (Bd21-3 background) with wild-type mature spikelets (s). (B) sopin1-1 inflorescence with an aborted spikelet (asterisk) and several barren white spikelet nodes (n). Green internode (i) tissue is also labeled. (C) Inflorescence of a sopin1-1 mutant plant complemented by previously published full-length SoPIN1 internal Citrine fluorescent protein fusion under the native SoPIN1 promoter (+SoPIN1 CIT) (O'Connor et al., 2014). (N = 34: 6 sopin1-1 phenotype, 28 wt phenotype) Scale bars: 1 cm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) 1 µM NAA-treated, and (B) mock-treated spikelet meristems expressing pZmUbi::DII-Venus imaged every 30 min after treatment. Images from left to right, pre-treatment expression, 30 min, 60 min and 90 min time-points. (C) Relative mean fluorescence in a radius at the spikelet meristem tip in NAA-treated and Mock samples at 0, 30, 60 and 90 min time points. Scale bars: 25 µm.
 
 In wild-type spikelet meristems SoPIN1 convergence point formation is coincident with an increase in the auxin signaling reporter DR5 (O'Connor et al., 2014), as well as a decrease in the nuclear auxin response reporter protein DII-Venus (Brunoud et al., 2012) (DII) (Figure 1J), which functions in Brachypodium and is degraded in the presence of auxin in spikelet meristems (Figure 1—figure supplement 2). In sopin1-1 meristems DII accumulation was uniformly high for long stretches of the epidermis and the patterned reduction of DII both in the meristem epidermis and internally failed to occur, suggesting a failure to organize auxin maxima (Figure 1K arrow).
 
 In contrast to the severe defects of sopin1-1, organ initiation in pin1a-1 and pin1b-1 single mutants was largely unaffected. The mature inflorescences of both pin1a-1 and pin1b-1 had normal spikelets (Figure 1F) and spikelet meristem morphology was indistinguishable from wild-type (Figure 1G). Mutant pin1a-1 plants appeared visually wild-type but we measured a slight increase in total spikelet number (Figure 1H). Mutant pin1b-1 plants were similar to wild-type with respect to both spikelet and floret numbers (Figure 1H and I) but often had bent apical internodes (Figure 1F arrowhead). While pin1a-1 and pin1b-1 single mutants had no clear organ initiation defects they showed changes in internode length (Figure 2). Plant stature in pin1a-1 mutants was largely indistinguishable from wild-type (Figure 2B) but we measured a small reduction in the length of the I4 internode (Figure 2E). In contrast pin1b-1 plants were easily distinguished from wild-type because of a significant increase in internode length at the base of the plant, resulting in greater overall plant height (Figure 2E). The elongated basal internodes and bent stems of pin1b-1 resulted in a less compact plant architecture compared to the other genotypes (Figure 2C). The increase in basal internode length in pin1b-1 single mutants was rescued by the previously published PIN1b-Citrine fluorescent reporter (O'Connor et al., 2014) (Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) Whole-plant phenotypes for WT (Bd21-3), pin1a-1, pin1b-1, and double pin1a-1/pin1b-1 mutants. (E) Stacked bar graph of the length of the first 5 internodes below the inflorescence of the main branch, labeled I1-I5 from top to bottom. Lines connect analogous internodes between genotypes. Analogous internodes with different letters are significantly different from each other (ANOVA, Tukey HSD, p<0.05). I5 internodes were not significantly different between genotypes and are unlabeled. Internode lengths significantly different from WT are indicated by asterisks. (n = 18–51 individuals each genotype) See ‘Figure 2—source data 1' for source data. Scale bars: 1 cm in (A–D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Stacked bar graph of the length of the first 5 internodes below the inflorescence of the main branch, labeled I1-I5 from top to bottom, for pin1b-1 and pin1b-1 containing the previously published full-length PIN1b internal Citrine fluorescent protein fusion under the native PIN1b promoter (+PIN1b-CIT) (O'Connor et al., 2014) (n = 10 each genotype). Lines connect analogous internodes between genotypes. Internodes that are significantly different between genotypes are marked with asterisks. The I4 and I5 internodes are significantly shorter in the complemented line than in pin1b-1 (ANOVA, Tukey HSD, p<0.05). See ‘Figure 2—source data 2” for source data.
+
 The PIN1a and PIN1b duplication is specific to, but conserved within the grasses (O'Connor et al., 2014). Thus we suspected these two genes would show a degree of genetic redundancy. Indeed pin1a-1/pin1b-1 (pin1a/b) double mutants showed a synergistic phenotype with severely reduced plant height (Figure 2D) resulting primarily from reduced internode growth in the upper internodes (Figure 2E). However, despite loss of both PIN1a and PIN1b function, pin1a/b double mutants made normal spikelet meristems (Figure 1G), had a wild-type total spikelet number (Figure 1H) and showed only a small reduction in floret number in the terminal spikelet (Figure 1I). In addition unlike sopin1-1 plants, pin1a/b double mutants set ample seed.
 
 Combined these phenotypes provide further support for functional distinction between the SoPIN1 and PIN1 clades and indicate that while the PIN1 clade is expendable for organ initiation in Brachypodium, it is involved in the regulation of internode growth.
 
-## AtPIN1, SoPIN1 and PIN1b accumulate differently in Arabidopsis under the same transcriptional control
+### AtPIN1, SoPIN1 and PIN1b accumulate differently in Arabidopsis under the same transcriptional control
 
 During organ formation in the Brachypodium shoot, expression of both SoPIN1 and PIN1b precedes PIN1a, which only accumulates significantly at the sites of vein formation after organs begin to grow (O'Connor et al., 2014). In the earliest stages of initiation prior to the periclinal cell divisions that are the hallmark of morphogenesis, SoPIN1 forms convergent polarization patterns around presumed auxin maxima in the meristem epidermis, while PIN1b is expressed internally and orients away from maxima (O'Connor et al., 2014). Because of their early expression, opposing polarization patterns and their clear single-mutant phenotypes in Brachypodium, we focused on characterizing SoPIN1 and PIN1b as representatives of the SoPIN1 and PIN1 clades.
 
 The difference between the sopin1-1 and pin1b-1 phenotypes in Brachypodium could be due to their different expression patterns and not necessarily to differences in their polarization with respect to auxin concentration or flux as previously hypothesized (O'Connor et al., 2014). In order to assess the functional differences between the proteins independent of transcriptional context, we expressed both Brachypodium proteins tagged with Citrine (a YFP derivative) in wild-type Arabidopsis (Columbia, Col-0) under the control of a 3.5 kb Arabidopsis PIN1 promoter fragment which includes sequences known to drive PIN1 expression sufficient to complement pin1 mutants (proAtPIN1) (Benková et al., 2003; Heisler et al., 2005). In the Arabidopsis inflorescence meristem, wild-type AtPIN1 forms convergent polarization patterns that mark the sites of initiating flower primordia (Figure 3A). Remarkably, despite the loss of the SoPIN1 clade from Arabidopsis, Brachypodium SoPIN1 also created clear convergent polarization patterns in Arabidopsis inflorescence meristems but was less abundant in the central domain of the apical dome (Figures 3B, 25 of 27 meristems from 4 independent transgenic events). Similar to AtPIN1, SoPIN1 protein abundance was highest in the meristem epidermis and SoPIN1 convergence points were most clearly observed surrounding I2 and I1 primordia (Figure 3B). Below the epidermis wild-type AtPIN1 accumulates in small groups of cells that will become the vasculature (Figure 3—figure supplement 1 panel A arrows). In contrast, sub-epidermal SoPIN1 accumulated in an ill-defined ring shape surrounding the meristem central domain without distinct foci of accumulation (Figure 3—figure supplement 1 panel B, 15 of 23 meristems from 4 independent transgenic events).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig3-v1.jpg)
+
+**Figure 3.:** Arabidopsis AtPIN1 promoter (proAtPIN1) driven expression of GFP-tagged AtPIN1 and Citrine-tagged (a YFP derivative) SoPIN1 and PIN1b in wild-type Columbia (Col-0) Arabidopsis. (A,D,G,J) AtPIN1, (B,E,H,K) SoPIN1, (C,F,I,L) PIN1b. (A–C) Maximum projections of inflorescence meristem apexes. Arrows in (A) and (B) indicate convergence points (cp) in I2 primordium. Arrowhead in (C) indicates internalized PIN1b in punctate membrane bodies. The I2 and I1 primordia are labeled. (D–F) Tiled confocal maximum projections of longitudinal hand-sections through inflorescence apexes. Arrows indicate SoPIN1 epidermal accumulation in sepal primordia and flower pedicels in (E) and the lack of AtPIN1 and PIN1b epidermal accumulation in the same tissues in (D) and (F). Box in (D) shows detail area in Figure 3—figure supplement 1 panel D. (G–I) Tiled confocal maximum projections of longitudinal hand-sections through mature basal inflorescence stem internodes 1 cm above the rosette. (J–L) Tiled confocal maximum projections of hand cross-sections through basal internodes 1 cm above the rosette. Signal at the edge of each section (arrowheads) is cuticle auto-fluorescence. The cortex (co), cambium (ca), xylem parenchyma (xp), and pith (p) tissues are indicated in (G–L). Arrows in (H) and (K) indicate cortex and pith ectopic accumulation of SoPIN1. Red signal in all panels is chlorophyll auto-florescence. Scale bars: 25 µm in (A–C), and 100 µm in (D–L).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Confocal z-section of AtPIN1 accumulation in vascular-associated domains just below the apex of the meristem shown in Figure 3A. (B) Confocal z-section of SoPIN1 accumulation in a ring-shaped domain just below the apex of the meristem shown in Figure 3B. (C) Confocal z-section of PIN1b accumulation in vascular-associated domains just below the apex of the meristem shown in Figure 3C. (D) Maximum projection detail of AtPIN1 accumulation in both pith (p) and procambium (pc) tissues in the immature inflorescence stem outlined with a box in Figure 3D. (E) Maximum projection detail of rootward polarized SoPIN1 (arrows) in a longitudinal hand-section of the basal internode pith tissue. (F) Maximum projection detail of rootward polarized PIN1b (arrows) in a longitudinal hand-section of the basal internode xylem parenchyma tissue. Red signal in (D–F) is chlorophyll auto-florescence. Scale bars: 25 µm.
 
 In contrast to both AtPIN1 and SoPIN1, under the same promoter significant PIN1b accumulation was absent from the meristem epidermis in 19 of 29 meristems from 7 independent transgenic events. In the meristems where PIN1b accumulated in the epidermis it did not show clear convergent polarization patterns and its polarity was often unclear (Figures 3C, 10 meristems from 2 events). Within initiating organs PIN1b often localized to punctate vesicular bodies inside cells, not in the cell membrane (Figure 3C arrowhead). PIN1b accumulation remained low just below the meristem apex, but in contrast to SoPIN1, PIN1b formed defined domains around the presumptive developing vascular bundles similar to AtPIN1 (Figure 3—figure supplement 1 panel C arrows). The lack of PIN1b protein in the meristem epidermis was not due to silencing of the transgene in these lines because we observed abundant PIN1b protein in the developing vasculature below the apex, even in plants where the meristem had no detectable epidermal expression (Figure 3F) (8 samples from 4 events). In contrast, AtPIN1 and SoPIN1 accumulated in both the vasculature and the epidermis in these more mature tissues (Figure 3D and E) although SoPIN1 seemed more abundant in the epidermis than AtPIN1 (see arrows) (SoPIN1 - 5 samples from 2 events).
 
@@ -64,29 +92,77 @@ In order to determine whether there were similar tissue-level differences in pro
 
 Taken together these results show that even under the same transcriptional control AtPIN1, SoPIN1 and PIN1b show distinct tissue-level accumulation patterns in Arabidopsis. While the overall behavior of the two Brachypodium proteins is similar to AtPIN1 in many tissues, there are behaviors unique to each. PIN1b fails to accumulate in epidermal tissues where AtPIN1 and SoPIN1 remain high, whereas SoPIN1 accumulates in the mature cortex and pith tissue where AtPIN1 and PIN1b do not. The convergent polarization patterns of SoPIN1 and the vascular accumulation of PIN1b in Arabidopsis are remarkably similar to their native behaviors in Brachypodium (O'Connor et al., 2014) suggesting protein-intrinsic features might control tissue-level accumulation in the two species.
 
-## SoPIN1 but not PIN1b can restore organ initiation and bulk auxin transport in AtPIN1 null mutants
+### SoPIN1 but not PIN1b can restore organ initiation and bulk auxin transport in AtPIN1 null mutants
 
 To determine whether the observed differences in SoPIN1 and PIN1b polarization and accumulation have functional consequences in Arabidopsis, we used the proAtPIN1-driven SoPIN1 and PIN1b constructs to complement the Arabidopsis pin1-613 mutant (also known as pin1-7). The pin1-613 allele is a putative null T-DNA insertion allele with severe organ initiation defects in the inflorescence (Zourelidou et al., 2014; Bennett et al., 2006; Smith et al., 2006). Given that epidermal AtPIN1 function is important for organ initiation (Bilsborough et al., 2011; Kierzkowski et al., 2013), as expected only SoPIN1 and not PIN1b was able to complement the pin1-613 mutation and mediate organ initiation (Figure 4A). 3 out of 6 independent SoPIN1-expressing transgenic events showed complementation whereas all 10 independent PIN1b-expressing transgenic events failed to complement. However phenotypic complementation of pin1-613 by SoPIN1 was incomplete with mature plants showing a variety of phenotypic defects (Figure 4A, Figure 4—figure supplement 1). Most notably each flower produced more sepals and petals than wild-type but almost no stamens (Figure 4C, Figure 4—figure supplement 2). SoPIN1-complemented pin1-613 plants were thus sterile. We wondered whether these phenotypes could be explained by poor auxin transport function of SoPIN1 in Arabidopsis. However SoPIN1 restored wild-type levels of bulk auxin transport to pin1-613 basal internodes (Figure 4D). Thus SoPIN1 is capable of supporting organ initiation and mediating rootward auxin transport in the stem, but it is not functionally identical to AtPIN1 expressed under the same promoter.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig4-v1.jpg)
+
+**Figure 4.:** (A) From left to right, inflorescence phenotypes of WT (Col-0), proAtPIN1::SoPIN1 in pin1-613, proAtPIN1::PIN1b in pin1-613, and pin1-613 alone. Note that PIN1b-expressing pin1-613 plants are indistinguishable from pin1-613 alone. See Figure 4—figure supplement 1 for whole-plant phenotypes. (B) Flower (left), and inflorescence apex (right) of WT (Col-0). (C) Flower (left), and inflorescence apex (right) of proAtPIN1::SoPIN1 complemented pin1-613 mutants. Note the increase in petal number and lack of stamens in the flower, see Figure 4—figure supplement 2 for organ counts. (D) Box-plot of bulk auxin transport (counts per minute, CPM) through basal internodes 1 cm above the rosette of 40-day-old Arabidopsis inflorescence stems. (n = 16 each genotype). Samples with different letters are significantly different from each other (ANOVA, Tukey HSD, p<0.05). See Figure 4—source data 1 for source data. Scale bars: 1 cm in (A), 1 mm in (B–C).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** From left to right, Col-0 (WT), proAtPIN1::SoPIN1 complemented pin1-613, proAtPIN1::PIN1b expressing pin1-613, and pin1-613 alone. Scale bar: 1 cm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Mean and standard-error of sepal, petal, stamen and carpel organ numbers in heterozygous pin1-613 or wild-type (white bars) and proAtPIN1::SoPIN1-complemented pin1-613 flowers (grey bars) (n = 30). See Figure 4—source data 2 for source data.
+
 In SoPIN1-complemented pin1-613 mutants, SoPIN1 protein accumulation in the meristem epidermis was higher than that observed in a wild-type or heterozygous genetic background and the pronounced convergent polarization patterns observed in the wild-type background were less defined (Figure 5A, Figure 5—figure supplement 1) (16 of 16 meristems). SoPIN1-complemented meristems showed a variety of phyllotactic defects and had highly variable morphologies (Figure 5—figure supplement 1 panel B) (16 of 16 meristems). Similar to the pattern observed in the wild-type background, sub-epidermal SoPIN1 in pin1-613 mutants accumulated in a loosely defined ring within which individual vein traces were difficult to discern (Figure 5I) (13 of 16 meristems). In mature tissues SoPIN1 accumulated in the epidermis, vasculature and pith, similar to the wild-type background (Figure 5C, E and G).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig5-v1.jpg)
+
+**Figure 5.:** Arabidopsis PIN1 promoter (proAtPIN1) driven expression of Citrine-tagged (YFP derivative) SoPIN1 and PIN1b in null pin1-613 mutant tissue. (A,C,E,G,I) SoPIN1, (B,D,F,H,J,K,L,M) PIN1b. (A–B) Maximum projections of inflorescence meristem apexes. Arrow in (B) indicates PIN1b ring shaped epidermal domain. See Figure 5—figure supplement 1 for SoPIN1 expression in a pin1-613 segregating family. See Figure 5—figure supplement 2 for more examples of PIN1b expression in pin1-613 apexes. (C–D) Tiled confocal maximum projections of longitudinal hand-sections through inflorescence apexes. Arrow in (D) indicates increased PIN1b in the epidermis in the pin1-613 background. (E–F) Tiled maximum projections of longitudinal hand-sections through mature basal inflorescence stem internodes 1 cm above the rosette. (G–H) Tiled maximum projections of hand cross-sections through mature basal internodes 1 cm above the rosette. Signal at the edge of each section (arrowheads) is cuticle auto-florescence. The cortex (co), cambium (ca), xylem parenchyma (xp), and pith (p) tissues are indicated in (E–H). Arrows in (E) and (G) indicate cortex and pith accumulation of SoPIN1. (I) Confocal z-section of SoPIN1 accumulation in a ring-shaped domain just below the apex of a complemented pin1-613 meristem. (J) Longitudinal hand-section of PIN1b just below a pin1-613 meristem apex. Arrow shows rootward polarized PIN1b. (K) Detail of polarized PIN1b in the meristem epidermis of a pin1-613 meristem apex. (L) Cross-section of PIN1b (arrow) in distinct bundles 2 mm below a pin1-613 meristem apex. (M) Rootward polarization of PIN1b (arrow) 3–4 mm below the apex of a pin1-613 meristem. Red signal in all panels is chlorophyll auto-florescence. Scale bars: 25 µm in (A–B), 100 µm in (C–H), and 25 µm in (I–M).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) proAtPIN1::SoPIN1 expression in 6 different WT or heterozygous pin1-613 meristem samples. (B) proAtPIN1::SoPIN1 expression in 6 different complemented pin1-613 meristems. All samples were imaged with identical settings to show the increase in SoPIN1 accumulation in the pin1-613 mutant background. Red signal is chlorophyll auto-florescence. Scale bars: 25 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Two representative meristems each from four different transgenic events. All samples were imaged with identical settings. Scale bars: 25 µm.
 
 In contrast to SoPIN1, PIN1b-expressing pin1-613 plants had pin-formed inflorescences that were indistinguishable from pin1-613 alone (Figure 4A) (all 10 expressing events failed to complement). The lack of complementation mediated by PIN1b was not caused by silencing or low expression level because abundant PIN1b signal was observed in pin1-613 meristems (23 of 26 pin1-613 meristems from 7 events). In contrast to the wild-type background, most PIN1b expressing pin1-613 samples had abundant epidermal expression forming a ring-shaped domain around the meristem apex (Figure 5B and D arrow, Figure 5—figure supplement 2) (14 of 19 meristems from 6 events). Also unlike the wild-type background, PIN1b in the epidermis of pin1-613 meristems was more consistently targeted to the membrane and was often polar (Figure 5K). However even with this elevated polar expression in the meristem epidermis, PIN1b was unable to mediate organ initiation in pin1-613 mutants. Below the apex PIN1b was polarized rootward in pin1-613 meristems (Figure 5J), forming defined traces associated with the vasculature (Figure 5F and L). In the basal stem of pin1-613 mutants PIN1b accumulated in a pattern similar to wild-type, although the arrangement of vascular bundles was irregular (Figure 5H). Remarkably, despite clear polar PIN1b expression in pin1-613 mutant stems (Figure 5M), PIN1b was unable to rescue bulk auxin transport in this tissue (Figure 4D).
 
 Because PIN1b seemed to form more defined sub-epidermal traces than SoPIN1 (Compare Figure 3—figure supplement 1 panels B and C, and Figure 5I and L) we thought PIN1b combined with SoPIN1 may improve the partial SoPIN1-mediated complementation of pin1-613. We tested two independent PIN1b events for complementation of pin1-613 when combined with a SoPIN1 event that showed partial complementation, but all double SoPIN1/PIN1b expressing pin1-613 plants appeared phenotypically similar to the SoPIN1-only complementation (data not shown). Thus SoPIN1 combined with PIN1b is no better than SoPIN1 alone. In total these results demonstrate that when expressed in Arabidopsis, there is a clear functional separation between SoPIN1 and PIN1b independent of transcriptional control.
 
-## SoPIN1 and PIN1b show different behaviors when expressed in the meristem epidermis
+### SoPIN1 and PIN1b show different behaviors when expressed in the meristem epidermis
 
 Epidermal-specific AtPIN1 expression is sufficient to rescue organ initiation in atpin1 mutants (Bilsborough et al., 2011), highlighting the importance of AtPIN1 epidermal expression to organ initiation. We wanted to test specifically the ability of SoPIN1 and PIN1b to perform this epidermal function. In order to drive increased PIN1b expression in the epidermis and to help reduce transgene position-effect variation of expression level, we utilized a two-component expression system in the Landsberg erecta (Ler) background to drive SoPIN1 and PIN1b under the control of the epidermis-enriched Arabidopsis ML1 promoter (Hereafter designated proAtML1>>) (Lenhard and Laux, 2003; Sessions et al., 1999). Under the control of proAtML1 we achieved consistently high epidermal accumulation of both SoPIN1 and PIN1b, but similar to the proAtPIN1 driven expression described above, only SoPIN1 showed clear convergent polarization patterns around the sites of organ initiation (Figure 6A–6D, Figure 6—figure supplements 1 and 2) (11 of 11 meristems from 2 events). Despite consistently high epidermal expression with this system, PIN1b polarity remained difficult to determine and in many cells the abundance of protein on the membrane remained low (Figure 6D) (13 of 13 meristems from 2 events). Instead PIN1b accumulated in intracellular bodies, especially in the cells of the apical dome and the central domain of initiating organs (Figure 6—figure supplement 3 panels A-D). Intracellular PIN1b did not co-localize with early endosomes as assayed by FM4-64 (Figure 6—figure supplement 3 panel C arrows), or show the perinuclear localization characteristic of the endoplasmic reticulum, suggesting accumulation in either the golgi apparatus or in vacuoles. PIN1b abundance and polarity was highest at the boundaries of lateral organs (Figure 6—figure supplement 2). Thus SoPIN1 and PIN1b show consistent behaviors in the meristem epidermis when expressed under either proAtPIN1 or proAtML1. Despite increased PIN1b expression under proAtML1 and a resulting increase in protein accumulation in the apex, PIN1b was still unable to form convergent polarization patterns in wild-type plants.
 
-## Both SoPIN1 and PIN1b can rescue the Arabidopsis pin1-4 mutation when expressed in the meristem epidermis
+![Figure 6.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig6-v1.jpg)
+
+**Figure 6.:** Maximum projections of proAtML1::LhG4 driving pOP::SoPIN1 or pOP::PIN1b (proAtML1 >>SoPIN1 and proAtML1 >>PIN1b) in wild-type Landsberg erecta (Ler) (A–D), and pin1-4 (E–L) inflorescence meristems and mature basal internodes. (A) SoPIN1 and (B) PIN1b maximum projections of wild-type Ler inflorescence meristems. I3, I2, I1, and P1 primordia are indicated. White boxes around each I2 primordium indicate the regions detailed in (C–D). Asterisk in (C) indicates convergence point. Arrow in (D) indicates punctate PIN1b. (E) SoPIN1 and (F) PIN1b maximum projections of complemented pin1-4 inflorescence meristems. I3, I2, I1, and P1 primordia are indicated. White boxes around each I2 primordia indicate the regions detailed in (G–H). Asterisks mark convergence points in (G) and (H). Red signal in (C,D,G,H) is cell wall propidium iodide staining. See Figure 6—figure supplement 1 for additional samples of proAtML1 >>SoPIN1 and Figure 6—figure supplement 2 for additional samples of proAtML1 >>PIN1b in both WT and pin1-4 meristems. See Figure 6—figure supplement 3 for details of PIN1b epidermal intracellular localization in WT and pin1-4 meristem apexes. (I–J) Tiled maximum projections of cross hand-sections of mature basal internodes of SoPIN1 (I) and PIN1b (J) -complemented pin1-4 plants showing PIN signal in the outer cortex layers (arrows). The cortex (co), cambium (ca), xylem parenchyma (xp), and pith (p) tissues are indicated. Red signal in (I–J) is chlorophyll auto-florescence. (K–L) Epidermal maximum projections showing rootward polarized PIN localization (arrows) in the basal internode of SoPIN1 (K), and PIN1b (L) -complemented pin1-4 plants. Scale bars: 25 µm in (A–H). 100 µm in (I–L).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) proAtML1 >>SoPIN1 expression in three different wild-type Ler meristems. (B) proAtML1 >>SoPIN1 expression in three different complemented pin1-4 meristems. Capture settings are identical in all samples. Scale bars: 25 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) proAtML1 >>PIN1b expression in three different wild-type Ler meristems. (B) proAtML1 >>PIN1b expression in three different complemented pin1-4 meristems. Capture settings are identical in all samples. Scale bars: 25 µm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Wild-type (Ler) meristem expressing proAtML1 >>PIN1b. Boxes numbered 1–3 indicate the positions of detail images in (B–D). (B) Organ boundary. (C) Incipient organ. (D) Meristem apex. (E) pin1-4 meristem complemented by proAtML1 >>PIN1b. Boxes numbered 1–3 indicate the positions of detail images in (F–H). (F) Meristem apex. (G) Organ boundary. (H) Convergence point, indicated by asterisk. Red signal is FM4-64 vital stain. Scale bars: 5 µm.
+
+### Both SoPIN1 and PIN1b can rescue the Arabidopsis pin1-4 mutation when expressed in the meristem epidermis
 
 In order to determine whether the increased PIN1b abundance in the epidermis achieved by the proAtML1 two-component system had functional consequences, we crossed these transgenes to the pin1-4 mutant allele. The pin1-4 allele is in the Landsberg erecta (Ler) background and has a single P579 to L amino acid change in the second-to-last transmembrane domain of AtPIN1 (Bennett et al., 1995), but the phenotype is similarly severe to the null pin1-613 allele (Figure 7A–C). However using immuno-localization we detected abundant AtPIN1 protein produced in pin1-4 meristems (Figure 7C), while similar to previous authors we did not detect any protein in pin meristems of the null pin1-613 allele (Figure 7B) (Zourelidou et al., 2014; Bennett et al., 2006) (6 pin1-613 meristems, 5 pin1-4 meristems). The AtPIN1 protein detected in pin1-4 mutants accumulated primarily in the provascular tissues below the pin apex (Figure 7C) and appeared apolar (Figure 7D). Instead the perinuclear AtPIN1 localization in pin1-4 suggests accumulation in the endoplasmic reticulum (Figure 7D, arrow). The presence of AtPIN1 protein produced in pin1-4 mutants indicates that AtPIN1 in this background may retain partial function despite the severity of the mutant phenotype.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig7-v1.jpg)
 
-**Figure 7.:** pin1-613, and pin1-4 meristems.(A) AtPIN1 protein accumulation in wild-type Ler inflorescence apex shows polar PIN protein at the sites of initiating organs (asterisk), and during vein patterning below the apex (arrow). (B) No AtPIN1 protein is detected in pin1-613 null mutant pin-formed apexes. (C) Abundant AtPIN1 protein is detected in pin1-4 pin-formed apexes, primarily in provascular tissues below the meristem apex (arrow). Box shows region of detail in (D). (D) Detail of boxed area shown in (C). AtPIN1 protein in pin1-4 accumulates in a perinuclear domain (arrow). All samples are 9 µm longitudinal sections. Scale bars: 25 µm in A-C, and 5 µm in D.
+**Figure 7.:** (A) AtPIN1 protein accumulation in wild-type Ler inflorescence apex shows polar PIN protein at the sites of initiating organs (asterisk), and during vein patterning below the apex (arrow). (B) No AtPIN1 protein is detected in pin1-613 null mutant pin-formed apexes. (C) Abundant AtPIN1 protein is detected in pin1-4 pin-formed apexes, primarily in provascular tissues below the meristem apex (arrow). Box shows region of detail in (D). (D) Detail of boxed area shown in (C). AtPIN1 protein in pin1-4 accumulates in a perinuclear domain (arrow). All samples are 9 µm longitudinal sections. Scale bars: 25 µm in A-C, and 5 µm in D.
 
 Indeed both SoPIN1 and PIN1b driven by proAtML1 were able to rescue the organ formation defects of pin1-4 (Figure 8A). In contrast to the partial SoPIN1-mediated complementation and failure of PIN1b to complement pin1-613 described above, both SoPIN1 and PIN1b-complemented pin1-4 plants made WT flowers that produced seed (Figure 8—figure supplement 1). In addition SoPIN1 and PIN1b were both able to rescue bulk auxin transport in the pin1-4 basal internode, although PIN1b was less effective than SoPIN1 (Figure 8B). In general SoPIN1 and PIN1b-mediated complementation of pin1-4 was phenotypically similar, but perhaps as a result of the decreased transport rate in PIN1b-complemented pin1-4 plants, this genotype showed a significant increase in stem diameter (Figure 8C), providing further evidence that SoPIN1 and PIN1b are not functionally equal.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig8-v1.jpg)
+
+**Figure 8.:** (A) From left to right, wild-type Ler, proAtML1 >>PIN1b complemented pin1-4, proAtML1 >>SoPIN1 complemented pin1-4, and pin1-4 alone. Arrow indicates barren pin inflorescence in pin1-4. See Figure 8—figure supplement 1 for inflorescence phenotypes. (B) Box-plot of bulk auxin transport (counts per minute, CPM) through basal internodes 1 cm above the rosette of 40-day-old Arabidopsis inflorescence stems (n = 16 each genotype). Samples with different letters are significantly different from each other (ANOVA, Tukey HSD, p<0.05). See Figure 8—source data 1 for source data. (C) Box-plot of stem cross-sectional area (square mm) of the mature basal internode 1 cm above the rosette (n = 12 each genotype). Samples with different letters are significantly different from each other. (ANOVA, Tukey HSD, p<0.05). See Figure 8—source data 2 for source data. Representative Toluidine Blue O stained hand cross-sections are shown above each box for each genotype. Scale bars: 1 cm in (A). 500 µm in (C).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Wild-type Ler, (B) proAtML1 >>SoPIN1 complemented pin1-4, and (C) proAtML1 >>PIN1b complemented pin1-4 inflorescence apexes. Scale bars: 1 mm.
 
 SoPIN1-complemented pin1-4 meristems were slightly smaller than wild-type (Figure 6—figure supplement 1), but the protein localization was similar to the pattern observed in the WT background, with clear convergent polarization around initiating organs (Figure 6E and G) (10 of 10 meristems from 1 event). In contrast, compared to the WT background, PIN1b localization in pin1-4 was dramatically altered (compare Figure 6B with Figure 6F). Most obvious was an increase in membrane targeted PIN1b and a corresponding reduction in intracellular PIN1b (Figure 6H, Figure 6—figure supplement 3 panels E-H). PIN1b polarization in the pin1-4 background was more apparent than in wild-type, and convergent polarization patterns clearly marked incipient organs (Figure 6H) (10 of 10 meristems from 1 event). PIN1b-complemented meristems accumulated less PIN protein in the apical dome compared to SoPIN1-complemented meristems, and the meristems were larger (Figure 6—figure supplement 2).
 
@@ -94,7 +170,7 @@ In the basal internode, both PINs had similar accumulation patterns in the corte
 
 ## Discussion
 
-## The SoPIN1 and PIN1 clades have different functions in Brachypodium
+### The SoPIN1 and PIN1 clades have different functions in Brachypodium
 
 During spikelet development in Brachypodium, SoPIN1 forms convergent polarization patterns surrounding the sites of organ initiation and strong expression of the auxin response reporter DR5 (O'Connor et al., 2014). We provide additional evidence here that SoPIN1 polarizes towards sites of high auxin concentration by showing that a DII minimum occurs at SoPIN1 convergence points. In sopin1 mutants the reduction of DII does not occur, suggesting that SoPIN1 functions to concentrate auxin at epidermal maxima, and similar to Arabidopsis, this is required for organ initiation in the inflorescence. The barren inflorescence phenotype of sopin1-1 mutants and the specificity of SoPIN1 for the outer tissues and for convergent polarization patterns in Brachypodium provides further support for the idea that auxin maximum formation is necessary for organ initiation and that this is primarily mediated by convergent PIN in the meristem epidermis (Bhatia et al., 2016; Jönsson et al., 2006; Kierzkowski et al., 2013; Smith et al., 2006).
 
@@ -104,25 +180,33 @@ In contrast to sopin1 mutants, loss of pin1 clade function in Brachypodium has v
 
 Grasses contain intercalary meristems, bands of indeterminate tissue separated from the apical meristem that are responsible for internode growth after organ initiation. Auxin dynamics in this more basal meristematic tissue may be important for controlling stem growth. Indeed loss of the ABCB1 auxin exporter in maize and Sorghum results in dwarfism associated with reduced activity of intercalary meristems (Knöller et al., 2010; Multani et al., 2003). The role of PIN1a and PIN1b in regulating intercalary meristem growth will be an important avenue for future work, especially since plant stature has played such an important role in grass domestication.
 
-## The properties that define PIN behavior and function
+### The properties that define PIN behavior and function
 
-## Membrane accumulation
+#### Membrane accumulation
 
 We used heterologous expression of SoPIN1 and PIN1b in Arabidopsis to explore the ways in which different PIN family members may have different properties post-transcription (Summarized in Figure 9). When expressed in the meristem epidermis in wild-type Arabidopsis, SoPIN1 is localized to the membrane in most cells while PIN1b often accumulates internally (Figure 6—figure supplement 3). Thus with the same transcriptional control, different PINs can vary in the degree to which, after protein production, they accumulate at the plasma membrane. The differential membrane targeting of PIN1b and SoPIN1 is a tissue-specific phenomenon however, because unlike in the epidermis, in the basal internode both PINs accumulate at the rootward plasma membrane (Figure 3—figure supplement 1 panels E and F). The regulation of PIN plasma membrane polar targeting and endocytic recycling has been an important avenue for understanding PIN function and general membrane protein biology (Luschnig and Vert, 2014). Our results provide further evidence that at least some of the signals governing membrane accumulation are inherent in, and vary between, different PIN family members (Wisniewska et al., 2006).
 
-## Tissue accumulation
+![Figure 9.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig9-v1.jpg)
+
+**Figure 9.:** Polarized SoPIN1 is represented by green lines, polarized PIN1b by blue lines, un-polarized PIN1b by blue ovals, and the putative partially functional pin1-4 protein is indicated by magenta circles. Red arrows indicate measured auxin transport in the mature basal internode, while red bar-headed lines indicated reduced transport. Black arrows represent polarized PIN patterns. Convergence points are marked with asterisks. (A) When expressed in both the epidermis and internal tissues with proAtPIN1 in wild-type Col-0, SoPIN1 forms convergent polarization patterns in the epidermis and is partially able to rescue the organ initiation phenotypes and bulk transport in null pin1-613 mutants. (B) When SoPIN1 is expressed in the epidermis from the proAtML1 promoter, it forms convergence points in the wild-type Ler background and is able to rescue more fully the organ initiation phenotypes of the pin1-4 single amino acid change mutation. (C) In contrast, when PIN1b is expressed in both the epidermis and internal tissues from the proAtPIN1 promoter in wild-type Col-0, it accumulates mostly in the internal tissues, and is unable to complement the pin1-613 organ initiation phenotype. It is also unable to transport auxin through mature stem segments, despite apparently AtPIN1-like accumulation and polarization in the stem. (D) When PIN1b is expressed in the epidermis from the proAtML1 promoter it does not form convergent polarization patterns and is often un-polarized in the wild-type Ler background (blue ovals), but it does in the pin1-4 background, where it is able to rescue the defective organ initiation phenotype and mediate bulk transport. See Figure 9—figure supplement 1 for a protein alignment comparing AtPIN1 to other PIN1-clade protein sequences from diverse angiosperms.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/31804/elife-31804-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Wrapped protein alignment showing PIN1 clade members from across the angiosperms. Grass PIN1a proteins are indicated with grey rectangle, grass PIN1b proteins are indicated with black rectangle, and Brassicaceae PIN1 proteins are indicated with red rectangle. Domains that are unique to the Brassicaceae family proteins are indicated by transparent red boxes over the alignment. (B) Sequenced angiosperm species and version numbers, from https://phytozome.jgi.doe.gov. Species used in the alignment in (A) are indicated with green ovals. See Figure 9—source data 1 for source data.
+
+#### Tissue accumulation
 
 Under the same transcriptional control AtPIN1, SoPIN1 and PIN1b show different tissue-level accumulation patterns in Arabidopsis. In wild-type plants, proAtPIN1-expressed PIN1b shows reduced overall accumulation in the epidermis compared to AtPIN1 or SoPIN1 (Compare Figure 3D–3F). Even with greater expression under proAtML1, the intracellular PIN1b signal observed in the meristem epidermis (Figure 6—figure supplement 3) suggests that PIN1b protein could be actively targeted to the vacuole for degradation as has been shown for PIN2 in the root (Abas et al., 2006; Kleine-Vehn et al., 2008b). In contrast, SoPIN1 is abundant in the meristem epidermis and accumulates in the mature cortex and pith tissues where AtPIN1 and PIN1b do not (Figure 3H arrows). Because we observed clear AtPIN1 accumulation in the immature pith (Figure 3—figure supplement 1 panel D), this suggests that proAtPIN1 is at least initially active in pith tissue and that the PIN1 clade members AtPIN1 and PIN1b are removed later in development, while SoPIN1 is not. Laser capture micro-dissection and RNAseq of mature stem tissue has detected abundant AtPIN1 transcription in the mature pith (T. Greb, personal communication, February 2017) suggesting that even at maturity AtPIN1, and probably PIN1b, are actively cleared post-transcriptionally from this tissue. Our results suggest that the AtPIN1 expression domain is far broader than is indicated by the protein accumulation pattern and further highlight the importance of PIN post-transcriptional regulation for controlling PIN tissue-level abundance.
 
 In Arabidopsis endogenous PIN family members show a degree of cross-regulation where loss-of-function mutations in one PIN family member result in tissue-level accumulation of a different PIN in a compensatory pattern (Blilou et al., 2005; Paponov et al., 2005; Vieten et al., 2005). We observed similar behavior in the pin1-613 null background where SoPIN1 and PIN1b accumulation in the meristem epidermis was increased in the absence of AtPIN1 (Figure 5—figure supplements 1 and 2). This sensitivity of SoPIN1 and PIN1b to the presence of AtPIN1, even while under the AtPIN1 promoter, suggests that wild-type AtPIN1 is able to compete with SoPIN1 and PIN1b post-transcriptionally for residency at the membrane. However we did not observe the same competitive effect with proAtML1 where SoPIN1 and PIN1b tissue-level accumulation, though not membrane residence, seemed similar between pin1-4 mutant and wild-type meristems (Figure 6—figure supplements 1 and 2). This difference between proAtPIN1 and proAtML1 may be because PIN transcription under proAtPIN1 is sensitive to the dosage of other PINs as has been suggested (Vieten et al., 2005). Alternatively, the lack of increased SoPIN1 and PIN1b accumulation in the pin1-4 mutant background may be because the AtPIN1 protein produced in pin1-4 is still able to compete with the other expressed PINs. Regardless, these results highlight the sensitivity of PIN tissue-level abundance to both transcriptional and post-transcriptional control, and the variability between PIN family members independent of transcription.
 
-## Transport activity
+#### Transport activity
 
 In Arabidopsis phosphorylation of PINs by several different families of protein kinases is thought necessary for efficient auxin transport (Zourelidou et al., 2014; Barbosa et al., 2014; Jia et al., 2016; Willige et al., 2013). PIN activation by phosphorylation may explain the inability of PIN1b to mediate bulk auxin transport in the basal internode of pin1-613 plants despite being expressed, accumulating at the membrane and being polarized rootward in this tissue (Figure 4D, Figure 5M). It is possible that in the proAtPIN1 domain PIN1b does not interact with the appropriate activating kinase and it is thus unphosphorylated and inactive. Indeed a partially unphosphorylatable form of AtPIN1 fails to complement fully the bulk auxin transport defect of pin1-613 mutants in the basal internode (Zourelidou et al., 2014) and AtPIN1 polarity can be uncoupled from phosphorylation status, and thus presumably transport activity can be independent of polarization (Weller et al., 2017).
 
 However, when expressed using proAtML1, PIN1b expression in the outer tissue layers of the basal internode appears sufficient to mediate bulk auxin transport in pin1-4 (Figure 8B). One explanation for this is that PIN1b activity may be tissue dependent, perhaps because of the differing expression domains of activating kinases (Zourelidou et al., 2014). Arabidopsis PIN4 and PIN7 are present in the proAtML1 domain (Bennett et al., 2016) making it conceivable that these PINs are the normal targets of activating kinases in this tissue. Alternatively, kinases in the Ler genetic background may be more effective at activating PIN1b than those in Col, but the dramatic effect of the pin1-4 allele vs wild-type AtPIN1 on PIN1b polarization behavior within the Ler background makes this explanation unlikely (see below). In either case the behavior of PIN1b in pin1-613 provides a clear indication that even once a PIN has accumulated at the cell membrane in a tissue it may not be active.
 
-## Interaction
+#### Interaction
 
 A particularly striking result is the ability of PIN1b to form convergent polarization patterns and mediate organ initiation in the pin1-4 missense mutant background when it is unable to do so in the null pin1-613 background. It is unlikely that differences between proAtPIN1 and proAtML1-mediated expression can explain this differential complementation because both promoters drive expression in the epidermis and both promoters are sufficient to complement atpin1 mutants using wild-type AtPIN1 as well as SoPIN1. As described above, it is possible that differences in activating enzymes or similar interactors between the Ler and Col backgrounds could contribute to the strikingly different behavior of PIN1b in pin1-4 vs pin1-613. Indeed mutation of the leucine-rich repeat receptor-like kinase ERECTA, which is mutated in the Ler background, has known effects on PIN1 localization when combined with other mutations in the ERECTA family (Chen et al., 2013; Torii et al., 1996). However the dramatic effect of wild-type AtPIN1 vs pin1-4 on PIN1b membrane targeting (compare Figure 6—figure supplement 3 panels A-D to E-H) within the Ler background suggests the differing genetic backgrounds of each complementation (Ler vs Col-0) is not sufficient to explain the differential complementation.
 
@@ -132,7 +216,7 @@ If PIN1b is indeed inactive in null pin1-613 mutants as we hypothesized above th
 
 Direct PIN-PIN interactions have so far not been shown, but if one PIN type can convey targeting, polarity or activity information to another through direct or indirect interaction this may be relevant to auxin transport in tissues where multiple PINs are coexpressed, such as in the Arabidopsis root meristem (Blilou et al., 2005), or in the shoot apical meristems of most angiosperms where the SoPIN1 and PIN1 clade proteins likely overlap, as they do during spikelet development in Brachypodium (O'Connor et al., 2014).
 
-## Polarity
+#### Polarity
 
 We previously showed that the polarization dynamics of SoPIN1, PIN1a and PIN1b in Brachypodium could be modeled by assigning two different polarization modes to the SoPIN1 and PIN1 clades (O'Connor et al., 2014). In the model, SoPIN1 orients toward the adjacent cell with the highest auxin concentration thus transporting auxin up the concentration gradient and providing a positive feedback to concentrate auxin into local maxima. In contrast, in the model PIN1a and PIN1b proteins are allocated in proportion to net auxin flux thus providing a positive feedback in which flux through the tissue is amplified by the allocation of PIN1a/b in the direction of that flux. The assignment of two different polarization modes was previously used to describe the behavior of AtPIN1 during organ placement and vein patterning using an auxin-concentration based switching mechanism between the up-the-gradient (UTG) and with-the-flux (WTF) polarization modes (Bayer et al., 2009). However it has also been suggested that a flux-based mechanism alone can account for both convergence points and vein patterning (Abley et al., 2016; Cieslak et al., 2015; Stoma et al., 2008).
 
@@ -140,56 +224,229 @@ Despite evidence that convergent PIN polarization is dependent on localized auxi
 
 In wild-type Brachypodium, the SoPIN1 and PIN1a/b expression domains are almost entirely mutually exclusive (O'Connor et al., 2014), making it possible that the observed polarization differences between the two clades are due to expression context or tissue-level stability and not to functional differences between the proteins themselves. More specifically, perhaps an UTG mechanism dominates the epidermis while a WTF mechanism is utilized in the internal tissues and different PINs interact equally with these context-dependent mechanisms. Our heterologous expression studies do not exclusively support context-dependent or protein-dependent mechanisms for SoPIN1 and PIN1 polarization. It is clear that alone only SoPIN1 and AtPIN1 show the convergent polarization patterns associated with UTG polarization, and alone only SoPIN1 and AtPIN1 are thus able to mediate organ initiation, while PIN1b cannot. On the other hand, all three PINs are capable of rootward polarization in the basal internode tissue and PIN1b can be co-opted to convergent polarization at the meristem epidermis in the presence of pin1-4. The results presented here do not demonstrate whether within a single cell SoPIN1 and PIN1b would orient differently with respect to auxin as might be expected for the dual polarization model (O'Connor et al., 2014). However such context-independent polarization behavior was previously observed for PIN1 and PIN2 in the root where both PINs can polarize in opposing directions within a single cell type when expressed in the PIN2 domain (Kleine-Vehn et al., 2008a; Wisniewska et al., 2006).
 
-## Outlook
+### Outlook
 
 In total our Brachypodium mutant phenotypes and heterologous expression results point to multiple levels at which PIN family members can be functionally distinct. Differential membrane targeting, tissuelevel accumulation, transport activity, indirect or direct interaction and the resultant polarity may all contribute to the dynamics of PIN action during plant development. In most flowering plants two PIN clades, SoPIN1 and PIN1, with differing functions and differing transcriptional and post-transcriptional properties mediate auxin transport in the shoot, but these properties are seemingly combined into AtPIN1 in Arabidopsis and other Brassicaceae species. Because PIN1b alone is unable to mediate organ initiation while AtPIN1 can, and these two PINs are both members of the same clade, AtPIN1 may have gained the ability to form convergent polarization patterns and mediate organ initiation after or coincident with the loss of the SoPIN1 clade. Indeed when comparing Brassicaceae PIN1 proteins against a broad sampling of other angiosperm PIN1 proteins, the Brassicaceae PIN1 proteins have several divergent protein domains (Figure 9—figure supplement 1), suggesting possible neofunctionalization within the Brassicacea family. Alternatively an expansion of the PIN3,4,7 clade is also characteristic of Brassicaceae species (Bennett et al., 2014; O'Connor et al., 2014), making it possible duplicated members of this clade buffered the loss of SoPIN1. However there is no indication that PIN3,4,7 have a role in organ initiation in the inflorescence (Guenot et al., 2012). Regardless, we believe the combination of SoPIN1 and PIN1 characteristics into AtPIN1 coincident with the loss of the SoPIN1 clade represents a form of reverse-subfunctionalization, the combination of functions originally split between homologs into a single protein after gene loss. It is not surprising that PINs may be particularly amenable to this kind of functional evolution because, as described above, there are several post-transcriptional regulatory steps that ultimately combine to control PIN function in plants. The output of auxin transport is the sum of an extensive network of post-transcriptional interactions that all act to regulate auxin transport itself, and this gives the system plasticity during development and perhaps also over evolutionary time.
 
 ## Materials and methods
 
-## sopin1-1, pin1a-1, and pin1b-1 creation with CRISPR
+### sopin1-1, pin1a-1, and pin1b-1 creation with CRISPR
 
 SoPIN1 (Bradi4g26300), PIN1a (Bradi1g45020) and PIN1b (Bradi3g59520) were targeted with CRISPR using vectors developed for rice (Miao et al., 2013). CRISPR constructs were transformed into Brachypodium inbred line Bd21-3 using previously published methods (Bragg et al., 2015).
 
-## sopin1-1 CRISPR
+#### sopin1-1 CRISPR
 
 The SoPIN1 guide was AGGCTGTCGTACGAGGAGT. This guide was shorter than the typical 20 bp in an effort to provide greater target specificity for SoPIN1 (Fu et al., 2014). In the T0 regenerated plants 5 out of 9 independent transgenic events showed severe organ initiation defects and all 5 contained lesions in the SoPIN1 CRIPSR target site. Unfortunately only one of the events with a T0 phenotype set seed. In the T1 progeny of this event only those individuals that contained the CRISPR transgene showed lesions in the SoPIN1 CRISPR target site and these plants showed the sopin1 phenotype and thus failed to set seed, suggesting active editing by the SoPIN1 CRISPR transgene in this event.
 
 Not all events showed such efficient editing however, and we identified an independent T1 family where a C insertion in the SoPIN1 CRISPR target site co-segregated with the barren inflorescence phenotype. We designated this allele, which causes a premature stop codon before the end of the third exon codon 739 base pairs downstream from the target site, sopin1-1. (Primer IDs 1–2 Table 1) We backcrossed a heterozygous sopin1-1 plant to the Bd21-3 parental line and all F1 progeny (N = 4) were wild-type. In the F2 generation, plants homozygous for the sopin1-1 lesion co-segregated with the barren inflorescence phenotype (N = 60: 32 het, 18 homo,10 wt). Amongst these plants, 16 did not have the Cas9 transgene (Primer IDs 3–4 Table 1) and the barren inflorescence phenotype still co-segregated with the sopin1-1 lesion (N = 16: 8 het, 3 homo, 5 wt). We crossed the T1 sopin1-1 heterozygous plant with a line homozygous for the previously published SoPIN1-Citrine genomic reporter line (O'Connor et al., 2014). In the F2 we identified two individuals homozygous for sopin1-1 but heterozygous for the SoPIN1-Citrine transgene. Only F3 progeny individuals that lacked the SoPIN1-Citrine transgene showed a sopin1-1 phenotype, while those that contained the SoPIN1-Citrine transgene made spikelets and set seed (N = 34: 6 sopin1-1 phenotype, 28 wt phenotype) (Figure 1—figure supplement 1). This complementation was independent of the presence of Cas9.
 
-## pin1a-1 CRISPR
+**Table 1.**
+ PrimersSee methods for usage.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID#</th>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>524_Bradi4g26300_4230_F</td>
+      <td>CGTTCCGTGTTGATTCCGATG</td>
+      <td>sopin1-1 genotyping with HgaI digestion</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>525_Bradi4g26300_4923_R</td>
+      <td>CTGGAGTAGGTGTTGGGGTTC</td>
+      <td>sopin1-1 genotyping with HgaI digestion</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>526_Cas9_8622_F</td>
+      <td>TCCCAGAGAAGTACAAGGAGATCT</td>
+      <td>Cas9 Genotyping</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>527_Cas9_9159_R</td>
+      <td>TTGTACACGGTGAAGTACTCGTAG</td>
+      <td>Cas9 Genotyping</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>104_BdPIN_11_QPCR_F</td>
+      <td>ACAACCCTTACGCCATGAAC</td>
+      <td>pin1a-1 genotyping with NcoI digestion</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>473_PIN1a_dom1_shortR</td>
+      <td>CACACGAACATGTGCAGGTC</td>
+      <td>pin1a-1 genotyping with NcoI digestion</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>541_Bradi3g59520_PIN1b_5084_F</td>
+      <td>TGATGCTCTTCATGTTCGAGTACC</td>
+      <td>pin1b-1 genotyping with mboI digestion</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>542_Bradi3g59520_PIN1b_5838_R</td>
+      <td>GGAGTAAACTACGTTGTGACAAGG</td>
+      <td>pin1b-1 genotyping with mboI digestion</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>019 - Ubi-1 Prom attB4 F</td>
+      <td>GGGGACAACTTTGTATAGAAAAGTTGCTGCAGTGCAGCGTGACCCGG</td>
+      <td>pZmUbi amplification for cloning</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>020 - Ubi-1 Prom attB1 R</td>
+      <td>GGGGACTGCTTTTTTGTACAAACTTGCTGCAGAAGTAACACCAAACA</td>
+      <td>pZmUbi amplification for cloning</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>PIN1pro-GW-F</td>
+      <td>GGGGACAACTTTGTATAGAAAAGTTGTTACCCTCATCCATCATTAACTT</td>
+      <td>proAtPIN1 amplification</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>PIN1pro-GW-R</td>
+      <td>GGGGACTGCTTTTTTGTACAAACTTGTCTTTTGTTCGCCGGAGAAGAGA</td>
+      <td>proAtPIN1 amplification</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>455 BdSoPIN1 cacc mRNA</td>
+      <td>TCACATCTGCTGCCGCTGCC</td>
+      <td>SoPIN1-Citrine coding region amplification</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>302 - PIN_7 qPCR UTR R2</td>
+      <td>AATCCCAAAAGCCGACATTG</td>
+      <td>SoPIN1-Citrine coding region amplification</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>466 BdPIN1b cacc mRNA-2</td>
+      <td>CACCTGTACACACTGCGGCGCT</td>
+      <td>PIN1b-Citrine coding region amplification</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>308 - PIN_5 qPCR UTR R1</td>
+      <td>ACTCGCTAACCAACCCCTTAATT</td>
+      <td>PIN1b-Citrine coding region amplification</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>MVR087 - pin1-613 RP (SALK_047613)</td>
+      <td>AATCATCACAGCCACTGATCC</td>
+      <td>pin1-613 genotyping</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>MVR086 - pin1-613 LP (SALK_047613)</td>
+      <td>CAAAAACACCCCCAAAATTTC</td>
+      <td>pin1-613 genotyping</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>MVR036 - LBb1.3</td>
+      <td>ATTTTGCCGATTTCGGAAC</td>
+      <td>pin1-613 genotyping</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>344 - Citrine Seq R</td>
+      <td>GAAGCACATCAGGCCGTAG</td>
+      <td>PIN1b-Citrine and SoPIN1-Citrine genotyping</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>524_Bradi4g26300_4230_F</td>
+      <td>CGTTCCGTGTTGATTCCGATG</td>
+      <td>SoPIN1-Citrine genotyping</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>541_Bradi3g59520_PIN1b_5084_F</td>
+      <td>TGATGCTCTTCATGTTCGAGTACC</td>
+      <td>PIN1b-Citrine genotyping</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>543_pin1-4_Aci_F</td>
+      <td>GCTTTTGCGGCGGCTATGAGATTTGT</td>
+      <td>pin1-4 genotyping with AciI digestion</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>544_pin1-4_Aci_R</td>
+      <td>GCTTCTGATTTAATTTGTGGGTTTTCA</td>
+      <td>pin1-4 genotyping with AciI digestion</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>076 - BASTA_F2</td>
+      <td>CTTCAGCAGGTGGGTGTAGAG</td>
+      <td>ML1::LhG4 genotyping</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>077 - BASTA_R2</td>
+      <td>GAGACAAGCACGGTCAACTTC</td>
+      <td>ML1::LhG4 genotyping</td>
+    </tr>
+  </tbody>
+</table>
+
+#### pin1a-1 CRISPR
 
 The PIN1a guide was ATCTACTCCCGGCGGTCCAT. We identified edited plants in the T1 generation (Primer IDs 5–6 Table 1), then found a homozygous T insertion in the T2 generation which was independent of Cas9, resulting in a premature stop codon 939 base pairs downstream, here designated pin1a-1. No single-mutant pin1a-1 phenotypes were observed.
 
-## pin1b-1 CRISPR
+#### pin1b-1 CRISPR
 
 The PIN1b guide was AGGGCAAGTACCAGATCC. We identified a single plant from the regenerating T0 PIN1b CRISPR population that had longer basal internodes and twisted leaves. This plant was homozygous for an A deletion in the PIN1b CRISPR target site causing a premature stop in the second exon 502 base pairs downstream, here designated pin1b-1 (Primer IDs 7–8 Table 1). All T1 progeny showed the pin1b phenotype and were homozygous for the pin1b-1 lesion. We backcrossed these T1 plants to Bd21-3 and all F1 progeny had a wild-type phenotype (N = 11). In the F2, the pin1b phenotype co-segregated with the pin1b-1 lesion (N = 215, 91 het, 39 homo, 26 wt). Amongst these plants, 24 did not have the Cas9 transgene and the pin1b phenotype still co-segregated perfectly with the pin1b-1 lesion (N = 24: 10 het, six homo, eight wt). We crossed pin1b-1 without Cas9 to a line homozygous for the previously published PIN1b-Citrine transgene (O'Connor et al., 2014). In the F3 we identified lines homozygous for both the transgene and pin1b-1 and used these to quantify internode lengths compared to pin1b-1 (Figure 2—figure supplement 1).
 
-## pin1a-1/pin1b-1 double mutant
+#### pin1a-1/pin1b-1 double mutant
 
 Homozygous pin1b-1 lacking Cas9 was crossed to homozygous pin1a-1 lacking Cas9. In the F2 phenotypically pin1b-1 plants that were also genotyped heterozygous for pin1a-1 were identified. In the homozygous pin1b-1 F3 generation the double pin1a-1/pin1b-1 mutant phenotype segregated perfectly with the pin1a-1 lesion (N = 23: 10 het, five homo, eight wt). Double pin1a-1/pin1b-1 mutants were easily identified by phenotype and produce seed.
 
-## Brachypodium reporter constructs
+### Brachypodium reporter constructs
 
 All constructs were cloned using Multi-site Gateway (Invitrogen Grand Island, NY) and were transformed into Brachypodium Bd21-3 using previously published methods (Bragg et al., 2015). For pZmUbi::DII-Venus, we first cloned the maize ubiquitin promoter into pDONR P4-P1R (Primer IDs 9–10 Table 1) and this was subsequently recombined with pDONR 221 containing Arabidopsis DII and pDONR P2R-P3 containing Venus-N7 (Brunoud et al., 2012) into the Multi-site Gateway binary vector pH7m34GW (http://gateway.psb.ugent.be/). In the T3 generation degradation of DII-Venus in the presence of auxin was validated by treating excised Brachypodium spikelet meristems with 1 µM 1-naphthaleneacetic acid (NAA) or mock treatment in 70% ethanol and imaging every 30 min (Figure 1—figure supplement 2).
 
 For SoPIN1-Cerulean, the promoter plus 5’ coding pDONR-P4-P1R and 3’ coding plus downstream pDONR-P2R-P3 fragments from (O'Connor et al., 2014) were used. Maize codon-optimized Cerulean fluorescent protein, courtesy of David Jackson, was amplified with 5x Ala linkers and cloned into pENTR/D-TOPO. These three fragments were then recombined into pH7m34GW.
 
-## Arabidopsis reporter constructs
+### Arabidopsis reporter constructs
 
 All constructs were cloned using Multi-site Gateway (Invitrogen) and transformed using standard floral dip. For proAtPIN1 complementation, a 3.5 kb Arabidopsis PIN1 promoter region was amplified from a genomic clone previously reported to complement the pin1 (Heisler et al., 2005) and cloned into Gateway vector pDONR P4-P1R (Primer IDs 11–12 Table 1). For each Brachypodium PIN-Citrine fusion construct, the entire PIN coding region, including the Citrine insertion, was amplified from the previously published reporter constructs (O'Connor et al., 2014) and cloned into pENTR/D TOPO (Primer IDs 13–16 Table 1). The Citrine fusion in each is located in a position known to complement pin1 mutations (Heisler et al., 2010; Wisniewska et al., 2006; Xu et al., 2006). The proAtPIN1 pDONR P4-P1R and PIN coding region pENTR/D-TOPO vectors were then recombined into Gateway binary vector pH7m24GW (http://gateway.psb.ugent.be/) and transformed by floral dip into both Col-0 and plants heterozygous for pin1-613 (also known as pin1-7, SALK_047613) (Bennett et al., 2006; Smith et al., 2006). Complementation was assessed in the T3 generation, and all plants were genotyped for both the pin1-613 mutation (Primer IDs 17–19 Table 1) and for presence of the PIN transgene (Primer IDs 20–22 Table 1).
 
 For the proAtML1 lines the PIN coding regions with Citrine insertion pENTR/D TOPO Gateway vectors were recombined downstream of the two-component OP promoter in vector pMoA34-OP (Moore et al., 1998) and then transformed into the proAtML1 driver line in the Landsberg erecta background (Lenhard and Laux, 2003). Lines homozygous for both the proAtML1 driver and OP::PIN were crossed to het pin1-4 and complementation was assessed in the F2 and F3 generations. All complemented plants were genotyped for pin1-4 (Primer IDs 23–24 Table 1), the Brachypodium PINs (Primer IDs 20–22 Table 1) and the presence of the ML1 driver transgene (Primer IDs 25–26 Table 1).
 
-## Confocal and Scanning Electron Microscopy
+### Confocal and Scanning Electron Microscopy
 
 All confocal images were captured on a Zeiss 780 laser scanning confocal using a W Plan-Apochromat 20x or 63x magnification 1.0 numerical aperture objectives (Zeiss, Jena, Germany). Detection wavelengths: 517–570 nm for Citrine-tagged PINs, 535–552 for DII-Venus, 463–509 for SoPIN1-CERULEAN, 490–543 for AtPIN1-GFP, 691–753 nm for FM4-64, 561–606 nm for Dylight 549, 631–717 nm for Propidium Iodide and 646–726 for chlorophyll A auto-fluorescence. The pinhole was set to one airy unit for all meristem stacks and details of sub-epidermal polarization but was open to the maximum setting for tiled longitudinal and cross sections of the basal internode (Figures 3D–L, 5C–H and and 6I–J). Detection gain and laser power were varied according to signal strength unless direct comparisons between genotypes were made as indicated in figure legends, except for Figure 1J and K where the DII gain was higher in Figure 1K in order to show DII distribution.
 
 Cryo scanning electron microscopy was performed on a Zeiss EVO HD15 SEM fitted with a LaB6 filament and a Quorum PP3010T (Quorum Technololgies, Lewes, Sussex. UK) cryo preparation unit using the BSD (Backscattered electron) detector with probe current as set to 10 nA, and 15.00 kV gun voltage. Frozen samples were coated in <1.5 nm Pt.
 
-## Auxin transport assays
+### Auxin transport assays
 
 Auxin transport assays were carried out as described in (Crawford et al., 2010). Briefly, 17 mm long basal internodes were excised and the apical end submerged in 30 μl Arabidopsis salts (ATS) without sucrose (pH = 5.6) containing 1 μM 14C-IAA (American Radiolabeled Chemicals, ST. Louis, M ). After 6 hr incubation the basal 5 mm segment was excised, cut in half, and shaken overnight at 400 RPM in 200 μl scintillation liquid prior to scintillation counting. 10 µM N-1-Naphthylphthalamic Acid (NPA), an auxin transport inhibitor, was added prior to incubation for negative controls.
 
-## AtPIN1 Immuno-Localization
+### AtPIN1 Immuno-Localization
 
 Detection of AtPIN1 in sectioned apexes was performed as previously described (O'Connor et al., 2014). Commercial polyclonal goat anti-AtPIN1 (AP-20) was used at a concentration of 1:150 (Santa Cruz Biotechnology, Dallas, Texas). Affinity-purified Donkey Anti-Goat Dylight 549 secondary was used at a concentration of 1:200 (Jackson Immuno Research, West Grove, PA, USA). Control samples where the primary antibody was omitted showed a similar level of background signal as pin1-613 null mutant samples.

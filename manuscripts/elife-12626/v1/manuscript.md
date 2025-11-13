@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.12626.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from “The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate” by Ward and colleagues, published in Cancer Cell in 2010 ( Ward et al., 2010 ). The experiments that will be replicated are those reported in Figures 2, 3 and 5. Ward and colleagues demonstrate the mutations in isocitrate dehydrogenase 2 ( IDH2 ), commonly found in acute myeloid leukemia (AML), abrogate the enzyme’s wild-type activity and confer to the mutant neomorphic activity that produces the oncometabolite 2-hydroxyglutarate (2-HG) (Figures 2 and 3). They then show that elevated levels of 2-HG are correlated with mutations in IDH1 and IDH2 in AML patient samples (Figure 5). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.12626.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from “The common feature of leukemia-associated IDH1 and IDH2 mutations is a neomorphic enzyme activity converting alpha-ketoglutarate to 2-hydroxyglutarate” by Ward and colleagues, published in Cancer Cell in 2010 (Ward et al., 2010). The experiments that will be replicated are those reported in Figures 2, 3 and 5. Ward and colleagues demonstrate the mutations in isocitrate dehydrogenase 2 (IDH2), commonly found in acute myeloid leukemia (AML), abrogate the enzyme’s wild-type activity and confer to the mutant neomorphic activity that produces the oncometabolite 2-hydroxyglutarate (2-HG) (Figures 2 and 3). They then show that elevated levels of 2-HG are correlated with mutations in IDH1 and IDH2 in AML patient samples (Figure 5). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -35,83 +35,83 @@ Discovery of IDH neomorphic function, resulting in the production of the 'oncome
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors.
 
-## Protocol 1: Assessing the α-ketoglutarate dependent NADPH consumption of wild-type or mutant IDH2
+### Protocol 1: Assessing the α-ketoglutarate dependent NADPH consumption of wild-type or mutant IDH2
 
 In this protocol, 293T cells are transfected with empty vector, IDH2WT, or IDH2R172K. Lysates are generated from these cells and their ability to produce NADPH from NADP+ and isocitrate is assayed (Figure 2A). The same lysates are also assayed for their ability to consume NADPH in the presence of 0.5 mM α-ketoglutarate (α-KG) (Figure 2B). Expression of the transfected protein will be confirmed by Western blot (Figure 2C).
 
-## Sampling
+#### Sampling
 
 Oxidative and reductive activity (Figures 2A and B):
 
 Confirmatory Western Blot (Figure 2C)
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
-## Notes
+##### Notes
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 Statistical Analysis of the Replication Data:
 
-## Known differences from the original study
+#### Known differences from the original study
 
 Although not performed by the original authors, actin was added as internal loading control for Western blots and will be added to the resulting data. Details of the Western blot protocol and possible stripping/sodium azide treatment were unspecified; information was added by the replicating lab. The details of the transfection specifics were unspecified and that information is provided by the replicating lab. Additionally, these experiments will be conducted in 6-well dishes, however, if total protein yield is not sufficient, the replicating lab will scale up to 25 cm dishes.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/8l4ea/).
 
-## Protocol 2: Production of 2-HG from IDH2 WT and mutant transfected cells
+### Protocol 2: Production of 2-HG from IDH2 WT and mutant transfected cells
 
 In this protocol, the production of 2-HG from 293T cells transfected with vectors expressing IDH2WT or IDH2R172K is measured by gas chromatography-mass spectrometry (as seen in Figures 3A–C). The amount of 2-HG relative to glutamate is quantified, as seen in Figure 3D.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
-## Notes
+##### Notes
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/8l4ea/).
 
-## Protocol 3: Assessing the correlation of IDH status with 2-HG levels in samples from patients with AML
+### Protocol 3: Assessing the correlation of IDH status with 2-HG levels in samples from patients with AML
 
 In this protocol, samples from patients with acute myeloid leukemia (AML) are examined for their IDH mutational status and their level of 2-HG, as seen in Figure 5.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
-## Provisions for quality control
+#### Provisions for quality control
 
 All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/8l4ea/). This includes confirmation of the GCMS peaks and elution times as well as MS QC data.
 
-## Power calculations
+### Power calculations
 
 For details of power calculations, see spreadsheet and additional files at https://osf.io/9jkpg/
 
-## Protocol 1
+#### Protocol 1
 
 Summary of original data estimated from graph reported in Figure 2A:
 
@@ -125,40 +125,40 @@ Linear regression to determine slopes from estimates values.
 
 Calculations performed with R software (version 3.2.2) (R Core Team, 2015)
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
-
-Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
-
-## Figure 2A (NADPH production) values
-
-## Figure 2B (NADP+ production) values
-
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Figure 2A (NADPH production) values
+##### Figure 2A (NADPH production) values
 
-## Figure 2B (NADP+ production) values
+##### Figure 2B (NADP+ production) values
 
-## Protocol 2: Figure 3D
+#### Test family
+
+Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
+
+##### Figure 2A (NADPH production) values
+
+##### Figure 2B (NADP+ production) values
+
+### Protocol 2: Figure 3D
 
 Summary of original data
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 3: Figure 5C
+### Protocol 3: Figure 5C
 
-## Summary of original data
+#### Summary of original data
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
 Power calculations were performed using R software version 3.2.2 and G*Power (version 3.1.7) (Faul et al., 2007). Bonferroni corrected one-sample t-tests compared to. 01 (threshed as reported by original authors).

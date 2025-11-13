@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Mammalian articular cartilage is an avascular tissue with poor capacity for spontaneous repair. Here, we show that embryonic development of cartilage in the skate ( Leucoraja erinacea ) mirrors that of mammals, with developing chondrocytes co-expressing genes encoding the transcription factors Sox5, Sox6 and Sox9. However, in skate, transcriptional features of developing cartilage persist into adulthood, both in peripheral chondrocytes and in cells of the fibrous perichondrium that ensheaths the skeleton. Using pulse-chase label retention experiments and multiplexed in situ hybridization, we identify a population of cycling Sox5/6/9 + perichondral progenitor cells that generate new cartilage during adult growth, and we show that persistence of chondrogenesis in adult skates correlates with ability to spontaneously repair cartilage injuries. Skates therefore offer a unique model for adult chondrogenesis and cartilage repair and may serve as inspiration for novel cell-based therapies for skeletal pathologies, such as osteoarthritis.
+Mammalian articular cartilage is an avascular tissue with poor capacity for spontaneous repair. Here, we show that embryonic development of cartilage in the skate (Leucoraja erinacea) mirrors that of mammals, with developing chondrocytes co-expressing genes encoding the transcription factors Sox5, Sox6 and Sox9. However, in skate, transcriptional features of developing cartilage persist into adulthood, both in peripheral chondrocytes and in cells of the fibrous perichondrium that ensheaths the skeleton. Using pulse-chase label retention experiments and multiplexed in situ hybridization, we identify a population of cycling Sox5/6/9+ perichondral progenitor cells that generate new cartilage during adult growth, and we show that persistence of chondrogenesis in adult skates correlates with ability to spontaneously repair cartilage injuries. Skates therefore offer a unique model for adult chondrogenesis and cartilage repair and may serve as inspiration for novel cell-based therapies for skeletal pathologies, such as osteoarthritis.
 
 ## Introduction
 
@@ -28,15 +28,15 @@ Here, we characterize the development and growth of the cartilaginous endoskelet
 
 ## Results
 
-## The metapterygium of the skate, Leucoraja erinacea
+### The metapterygium of the skate, Leucoraja erinacea
 
 The pectoral fin endoskeleton of jawed vertebrates consisted ancestrally of three basal cartilages – from anterior to posterior, the propterygium, mesopterygium and metapterygium – and a series of articulating distal radials (Davis et al., 2004). Among extant jawed vertebrates, this ancestral ‘tribasal’ condition has been retained in the pectoral fins of chondrichthyans and non-teleost ray-finned fishes (e.g. in sturgeon, gar and bichir), but has been reduced in tetrapods and teleosts, to include only derivatives of the metapterygial and pro-/mesopterygial components, respectively (Davis, 2013). Our study focused on the metapterygium of the skate (Figure 1), as this element is relatively large, reliably identifiable across all embryonic and post-embryonic stages and easily accessible for surgical manipulation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig1-v1.jpg)
 
-**Figure 1.:** Leucoraja erinacea.A radiograph reveals the skeletal anatomy of an adult skate. The metapterygium (false colored red in i) is the caudalmost basal fin cartilage. The plane of section through the metapterygium used for Figures 2–6 is indicated with a dashed line and x. Scale bar = 5 cm.
+**Figure 1.:** A radiograph reveals the skeletal anatomy of an adult skate. The metapterygium (false colored red in i) is the caudalmost basal fin cartilage. The plane of section through the metapterygium used for Figures 2–6 is indicated with a dashed line and x. Scale bar = 5 cm.
 
-## Embryonic development and growth of cartilage in the skate metapterygium
+### Embryonic development and growth of cartilage in the skate metapterygium
 
 In mammals, early cartilage development is marked by the accumulation of preskeletal mesenchyme into a ‘condensation’ at the site of future chondrogenesis (Hall and Miyake, 2000). Cells within this condensation begin to secrete cartilage extracellular matrix (ECM) components and undergo overt differentiation into chondrocytes. To investigate the early development of cartilage in the skate, we prepared a histological series of skate metapterygia from embryonic stage (S) 30 through to hatching and used a modified Masson’s trichrome stain to visualize condensation, differentiation and ECM secretion.
 
@@ -44,15 +44,35 @@ At S30, the presumptive metapterygium exists as condensed mesenchyme, with peric
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig2-v1.jpg)
 
-**Figure 2.:** Transverse histological sections through the centre of the developing metapterygium at (a) S30 (white dashed line indicates condensation boundary), (b) S31, (c) S32, (d) S33 and (e) hatching. By hatching, the metapterygium is (e) bound by a fibrous perichondrium, and (ie) a surface layer of calcified cartilage in the form of mineralized ‘tesserae’ begins to develop beneath the perichondrium. (iif) Cells in the hyaline cartilaginous core of the metapterygium adopt typical chondrocyte morphology, and are recessed within lacunae in the abundant extracellular matrix. All sections stained with modified Masson’s trichrome. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; pc, perichondrium; ts, tesserae. Scale bars: (a-e) 50 μm, (iif) 20 μm.
+**Figure 2.:** Transverse histological sections through the centre of the developing metapterygium at (a) S30 (white dashed line indicates condensation boundary), (b) S31, (c) S32, (d) S33 and (e) hatching. By hatching, the metapterygium is (ei) bound by a fibrous perichondrium, and (eii) a surface layer of calcified cartilage in the form of mineralized ‘tesserae’ begins to develop beneath the perichondrium. (f) Cells in the hyaline cartilaginous core of the metapterygium adopt typical chondrocyte morphology, and are recessed within lacunae in the abundant extracellular matrix. All sections stained with modified Masson’s trichrome. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; pc, perichondrium; ts, tesserae. Scale bars: (a-eii) 50 μm, (f) 20 μm.
 
-## Conserved co-expression of genes encoding ECM components and upstream transcriptional regulators in embryonic skate chondrocytes
+### Conserved co-expression of genes encoding ECM components and upstream transcriptional regulators in embryonic skate chondrocytes
 
 Mammalian hyaline cartilage ECM is composed largely of fibrils of type II collagen, which entrap aggregates of the hydrated proteoglycan aggrecan (Eyre, 2002; Kiani et al., 2002). Col2a1 and Agc (the genes encoding type II collagen and aggrecan, respectively), in turn, are directly transcriptionally regulated in chondrocytes by the SRY-box transcription factors Sox9, Sox5, and Sox6 (Bell et al., 1997; Lefebvre et al., 1998; Lefebvre et al., 2001). To test for conservation of these gene expression features in chondrocytes of the skate metapterygium, we characterized the co-expression of genes encoding cartilage ECM components and upstream transcriptional regulators in situ.
 
 We first cloned fragments of skate Cola2a1 (Figure 3—figure supplement 1) and Agc (Figure 3—figure supplement 2) and tested for their expression in the S32 metapterygium by chromogenic mRNA in situ hybridization. We found that both Col2a1 (Figure 3a) and Agc (Figure 3b) are expressed in chondrocytes throughout the skate metapterygium, reflecting shared ECM properties between skate and mammalian hyaline cartilage. To test for conservation of the regulatory relationship between Sox5, Sox6 and Sox9, we used multiplexed fluorescent in situ hybridization by chain reaction (HCR) to test for co-expression of these genes (Figure 3—figure supplements 3–4) in metapterygium chondrocytes. We observed co-expression of Col2a1 and Sox9 in chondrocytes throughout the metapterygium (Figure 3c–d), as well as co-expression of Col2a1, Sox5 and Sox6 (Figure 3e–f), indicating likely conservation of regulation of genes encoding cartilage ECM components by SoxE- and SoxD-class transcription factors in skate cartilage.
 
-## Proliferation of chondrocytes and putative perichondral progenitor cells in the metapterygium of skate hatchlings
+![Figure 3.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig3-v1.jpg)
+
+**Figure 3.:** (a) At S32, chromogenic mRNA in situ hybridization reveals that chondrocytes within the developing metapterygium express Col2a1 and (b) Agc1. Multiplexed fluorescent mRNA in situ hybridization by chain reaction (HCR) reveals that skate chondrocytes co-expression (c-d) Col2a1 and Sox9, and (e-f) Col2a1, Sox5 and Sox6, pointing to conservation of transcriptional regulation of Col2a1 by SoxD- and E-class transcription factors in jawed vertebrates. Plane of section as indicated in Figure 1i. Scale bars: (a-d) 50 μm, (di) 30 μm, (e-f) 50 μm, (fi) 30 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Phylogenetic analysis of selected vertebrate fibrillar collagen amino acid sequences resolves five clades (Col3a1, Col1a1, Col1a2, Col2a1 and Col5a2) and confirms orthology of our newly reported little skate Col2a1 sequence (GenBank MT254563).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Phylogenetic analysis of selected vertebrate aggrecan (Agc) amino acid sequences confirms orthology of our newly reported little skate Agc sequence (GenBank MT254564).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Phylogenetic analysis of amino acid sequences of selected vertebrate SoxE family members resolves three clades (Sox8, Sox9 and Sox10), and confirms orthology of our newly reported little skate Sox9 sequence (GenBank MT254560).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Phylogenetic analysis of amino acid sequences of selected vertebrate SoxD family members resolves three clades (Sox5, Sox6 and Sox13), and confirms orthology of our newly reported little skate Sox6 sequence (GenBank MT254562). We also report a new sequence fragment for little skate Sox5 (GenBank MT254561), which falls within the predicted 3’ UTR, and so was not included in this analysis.
+
+### Proliferation of chondrocytes and putative perichondral progenitor cells in the metapterygium of skate hatchlings
 
 To characterize patterns of cell proliferation within the growing metapterygium, we conducted a label retention experiment in skate hatchlings. Incorporation and detection of thymidine analogues, such as 5-ethynyl-2'-deoxyuridine (EdU), provides a sensitive readout of DNA synthesis and, by extension, cell proliferation (Salic and Mitchison, 2008). Briefly, hatchling skates were given a single intraperitoneal microinjection of EdU, and were then harvested at 1-, 5-, 10- and 40 days post-injection (hereafter referred to as 1-, 5-, 10- and 40 day chase, respectively), to test for label retention within the metapterygium. In animals analyzed at 1 day chase, EdU+ chondrocytes were recovered throughout the cartilage of the metapterygium, though with a concentration of EdU+ cells around the periphery of the element (Figure 4a), pointing to the continued proliferation of differentiated chondrocytes at hatching. We also observed EdU+ cells within the perichondrium of the metapterygium at 1 day chase (Figure 4b). These label-retaining cells exhibited a distinct, flattened nuclear morphology (relative to adjacent chondrocytes), and were recovered in increasingly greater numbers within the perichondrium at 5- (Figure 4c) and 10 day chase (Figure 4d). By 40 days chase (Figure 4d), we observed a marked decrease in the number of EdU+ perichondral cells. This pattern of label retention (Figure 4f) is suggestive of an expanding or self-renewing cell population within the perichondrium, with a greater number of label-retaining cells arising through proliferation of EdU+ progenitors but reduction in the number of label-retaining cells with eventual dilution of EdU to undetectable levels. In animals analyzed at 10- (Figure 4g) and 40 days chase (Figure 4h), we observed numerous clusters of EdU+ chondrocytes in cartilage immediately adjacent to EdU+ perichondral cells. As cells of the inner perichondrium are known to give rise to new chondrocytes in the cartilaginous anlage of the chick limb skeleton (Scott-Savage and Hall, 1979), we speculate that these subperichondral EdU+ chondrocytes are the progeny of label-retaining perichondral cells, and that growth of the hatchling metapterygium occurs both through proliferation of differentiated chondrocytes, and by recruitment of new chondrocytes from progenitor cells within the perichondrium.
 
@@ -62,27 +82,105 @@ To characterize patterns of cell proliferation within the growing metapterygium,
 
 Using mRNA in situ hybridization by HCR, we investigated gene expression at the cartilage-perichondrium interface within the metapterygium of skate hatchlings. As in S32 embryos, we noted co-expression of Col2a1 and Sox9 (Figure 4i) and Col2a1, Sox5 and Sox6 (Figure 4j) in chondrocytes of the metapterygium. However, we also observed cells within the perichondrium that expressed Sox9, Sox5 and Sox6 but not Col2a1 (Figure 4i,j). These cells were invariably located within the innermost region of the perichondrium, at the cartilage-perichondral interface, and exhibited the flattened nuclear morphology of the EdU+ perichondral cells described above. Taken together, our label retention and gene expression data point to the perichondrium as a source of cartilage progenitor cells in skate hatchlings.
 
-## Histological features of cartilage in the adult skate metapterygium
+### Histological features of cartilage in the adult skate metapterygium
 
 We next examined histological features of the adult skate metapterygium, by vibrotomy (Figure 5a) and histochemical staining of paraffin sections with a modified Masson’s trichrome stain (Figure 5b). In transverse sections through the metapterygium, we noted that the core of the element has the glassy appearance of hyaline cartilage, while the surface of the cartilage is covered by a rind of calcified tesserae (Figure 5a–b). Cells in the core of the metapterygium exhibit typical hyaline chondrocyte morphology (Figure 5c), are embedded in an ECM that stains with Light Green, and express high levels of type II collagen (Figure 5d). A higher magnification view of the tesserae reveals that these sit beneath a well-developed, fibrous perichondrium, which stains variably red and blue/green with trichrome staining (Figure 5e). We intermittently see a thin layer of unmineralized cartilage between the surface of the tesserae and the perichondrium, likely corresponding with the ‘supratesseral’ cartilage that has been previously reported in the stingray, Urobatis halleri (Seidel et al., 2017). Closer examination of the intertesseral joint region (i.e. the zone of cartilage between adjacent tesserae – Figure 5f) reveals cells with typical chondrocyte morphology within ECM up to the boundary between hyaline cartilage and the perichondrium, as well as a distinct population of flattened, spindle-shaped cells at the boundary between cartilage and perichondrium (Figure 5fi), hereafter referred to as ‘inner perichondral cells’.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig5-v1.jpg)
 
-**Figure 5.:** (a) Transverse vibratome and (b) histological sections through the adult skate metapterygium reveal cartilage canals (asterisks) originating in the perichondrium and extending into the cartilaginous core of the element. The surface of the metapterygium is covered by calcified tesserae (dashed outlines). (c) Cells within the hyaline cartilage core of the metapterygium exhibit typical chondrocyte morphology, and (d) are surrounded by abundant pericellular type II collagen. (e) Mineralized tesserae sit between the hyaline cartilage core and an overlying fibrous perichondrium. (f) Examination of the unmineralized hyaline cartilage of the intertesseral joint region reveals a population of flattened, spindle-shaped cells (black arrowheads in f) sitting at the boundary between the cartilage and the perichondrium. (ig) Cartilage canals (asterisk) can be seen entering the hyaline cartilage of the metapterygium through the intertesseral joint region. These canals originate in the perichondrium, and extend into the core cartilage of the metapterygium. (h) Cartilage canals are not lined by an epithelium, and contain some red blood cells (black arrows), but predominantly (i) connective tissue-like cells – many of which appear to be invading adjacent cartilage ECM (black arrows). (j) Cartilage canals are sites of active type collagen secretion, as indicated by positive immunostaining for Col2a1. (b-c) and (e-i) stained with modified Masson’s trichrome. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; itj, intertesseral joint region; pc, perichondrium; ts, tesserae. Scale bars: (a-b) 2 mm, (c-d) 30 μm, (e-f) 50 μm, (f) 30 μm, (ig) 50 μm, (h-j) 30 μm.
+**Figure 5.:** (a) Transverse vibratome and (b) histological sections through the adult skate metapterygium reveal cartilage canals (asterisks) originating in the perichondrium and extending into the cartilaginous core of the element. The surface of the metapterygium is covered by calcified tesserae (dashed outlines). (c) Cells within the hyaline cartilage core of the metapterygium exhibit typical chondrocyte morphology, and (d) are surrounded by abundant pericellular type II collagen. (e) Mineralized tesserae sit between the hyaline cartilage core and an overlying fibrous perichondrium. (f) Examination of the unmineralized hyaline cartilage of the intertesseral joint region reveals a population of flattened, spindle-shaped cells (black arrowheads in fi) sitting at the boundary between the cartilage and the perichondrium. (g) Cartilage canals (asterisk) can be seen entering the hyaline cartilage of the metapterygium through the intertesseral joint region. These canals originate in the perichondrium, and extend into the core cartilage of the metapterygium. (h) Cartilage canals are not lined by an epithelium, and contain some red blood cells (black arrows), but predominantly (i) connective tissue-like cells – many of which appear to be invading adjacent cartilage ECM (black arrows). (j) Cartilage canals are sites of active type collagen secretion, as indicated by positive immunostaining for Col2a1. (b-c) and (e-i) stained with modified Masson’s trichrome. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; itj, intertesseral joint region; pc, perichondrium; ts, tesserae. Scale bars: (a-b) 2 mm, (c-d) 30 μm, (e-f) 50 μm, (fi) 30 μm, (g) 50 μm, (h-j) 30 μm.
 
 Interestingly, the adult skate metapterygium is permeated by a series of canals, which originate at the surface of the cartilage, and extend toward the core of the element (Figure 5a–b). These cartilage canals occur throughout the metapterygium, originate within the perichondrium and enter the cartilage between tesserae (i.e. through the intertesseral joint region), and are not lined by an epithelium (Figure 5g). Cartilage canals contain an abundance of cells, including some red blood cells (Figure 5h), but predominantly cells with connective tissue/mesenchymal morphology – many of which appear to be invading from the canal into surrounding cartilage ECM (Figure 5i). Immunostaining for type II collagen reveals that cartilage canals are zones of active ECM synthesis, with high levels of type II collagen being secreted by cells at the periphery of the canals (Figure 5j).
 
-## Conserved co-expression of Col2a1, Sox5, Sox6 and Sox9 in peripheral chondrocytes and perichondral cells in adult skate cartilage
+### Conserved co-expression of Col2a1, Sox5, Sox6 and Sox9 in peripheral chondrocytes and perichondral cells in adult skate cartilage
 
 To test for cells that are actively expressing cartilage ECM products in the adult skeleton, we analyzed expression of Col2a1 by mRNA in situ hybridization on sections of adult metapterygium. High levels of Col2a1 transcription were detected around the periphery of the cartilage – that is in the intertesseral joint region and in cartilage adjacent to tesserae – and also in the thin layer of supratesseral cartilage that sits between the tesserae and the perichondrium (Figure 6a). In situ hybridization by HCR revealed that both supratesseral and peripheral chondrocytes co-expressed Col2a1 and Sox9 (Figure 6b–c), as well as Col2a1, Sox5, Sox6 (Figure 6d–e), pointing to retention of transcriptional features of developing cartilage around the periphery of the adult metapterygium. Interestingly, as in hatchling skates, we also observed co-expression of Sox5, Sox6 and Sox9 (but not Col2a1) in the flattened cells of the inner perichondrium (Figure 6b,d).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig6-v1.jpg)
 
-**Figure 6.:** Col2a1, Sox9, Sox5 and Sox6 in peripheral chondrocytes and inner perichondral cells of the adult metapterygium.(a) Col2a1 is highly expressed by peripheral chondrocytes of the metapterygium, in supratesseral chondrocytes and in the hyaline cartilage around the tesserae (b) Supratesseral and (c) peripheral chondrocytes co-express Col2a1 and Sox9, as well as (d-e) Col2a1, Sox5 and Sox6. In (b) and (d) white brackets indicate inner perichondral cells that co-express Sox9, Sox5 and Sox6 but not Col2a1. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; pc, perichondrium; ts, tesserae. Scale bars: (a) 100 μm, (b-e) 15 μm.
+**Figure 6.:** (a) Col2a1 is highly expressed by peripheral chondrocytes of the metapterygium, in supratesseral chondrocytes and in the hyaline cartilage around the tesserae (b) Supratesseral and (c) peripheral chondrocytes co-express Col2a1 and Sox9, as well as (d-e) Col2a1, Sox5 and Sox6. In (b) and (d) white brackets indicate inner perichondral cells that co-express Sox9, Sox5 and Sox6 but not Col2a1. Plane of section as indicated in Figure 1i. hc, hyaline cartilage; pc, perichondrium; ts, tesserae. Scale bars: (a) 100 μm, (b-e) 15 μm.
 
-## Label-retaining progenitor cells in adult perichondrium give rise to new chondrocytes during cartilage growth
+### Label-retaining progenitor cells in adult perichondrium give rise to new chondrocytes during cartilage growth
 
 Given the indeterminate growth of cartilaginous fishes, we speculated that the transcriptional signature of embryonic cartilage in the periphery of the adult skate metapterygium could reflect recently born chondrocytes contributing to ECM expansion, while the presence of this signature in the inner perichondrium could reflect progenitors of new chondrocytes. We therefore sought to test for the presence and fate of cycling cells in the adult skate metapterygium using a label retention experiment. Due to the relatively slow growth rate of cartilaginous fishes, we reasoned that a pulse-chase label retention experiment could be used not only to localize cell proliferation within the metapterygium, but also to lineage trace label-retaining cells to test for contributions to hyaline cartilage. Briefly, eight adult female skates were given three intraperitoneal injections of EdU, 48 hr apart, and two animals were then euthanized, fixed and processed for EdU detection 3 days, 1 month, 2 months and 5.5 months following the final IP EdU injection (hereafter referred to as 3 day, 1 month, 2 month and 5.5 month chase, respectively). EdU detection was performed on transverse paraffin sections though the metapterygium, with EdU+ cells scored according to their location in the outer perichondrium, inner perichondrium, cartilage canals or cartilage (i.e. chondrocytes). 30–40 sections were analyzed from each animal, but quantification was performed by counting the sum total and tissue localization of EdU+ cells in five adjacent sections through the metapterygium (as indicated in Figure 1i) after pulse + 3 days, 1 month, 2 month and 5.5 month chase (Table 1).
+
+**Table 1.**
+ Recovery of EdU-retaining cells within the metapterygium of adult skates after pulse and 3 day, 1-, 2- and 5.5 month chase.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Number of EdU-retaining cells in…</th>
+    </tr>
+    <tr>
+      <th>Chase time</th>
+      <th>Perichondrium (outer)</th>
+      <th>Perichondrium (inner)</th>
+      <th>Cartilage canals</th>
+      <th>Chondrocytes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3 days (1)</td>
+      <td>22</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>3 days (2)</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1 month (1)</td>
+      <td>9</td>
+      <td>7</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1 month (2)</td>
+      <td>9</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2 months (1)</td>
+      <td>16</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2 months (2)</td>
+      <td>107</td>
+      <td>31</td>
+      <td>4</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5.5 months (1)</td>
+      <td>271</td>
+      <td>259</td>
+      <td>20</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>5.5 months (2)</td>
+      <td>66</td>
+      <td>15</td>
+      <td>20</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
 
 After a 3 day chase, EdU+ cells were recovered almost exclusively in the perichondrium, with most appearing as cells with rounded nuclei in the outer perichondrium (Figure 7a), and relatively few as flattened cells of the inner perichondrium (Figure 7b). No EdU+ chondrocytes were detected after a 3 day chase. After 1 month and 2 month chases, we continued to detect EdU+ cells within the outer and inner perichondrium, and we also observe EdU+ cells within the cartilage canals that originate in the perichondrium and permeate the core of the metapterygium (Figure 7c–d). After a 5.5 month chase, we detected an abundance of EdU+ cells in both the outer and inner perichondrium (Figure 7e), as well as abundant EdU+ chondrocytes in the peripheral hyaline cartilage of the intertesseral joint region (Figure 7f) and in cartilage subjacent to the tesserae (Figure 7g), as well as relatively few EdU+ chondrocytes within the mineralized matrix of the tesserae (Table 1). EdU+ cells are present in greater abundance within cartilage canals after a 5.5 month chase (Figure 7h) and given the relative dearth of EdU+ cells in cartilage canals after the 3 day, 1 month and 2 month chases, we speculate that these EdU+ cartilage canal cells are of perichondral origin. After the 5.5 month chase, we also observed EdU+ cells that appeared to be invading hyaline cartilage from the blind ends of cartilage canals (Figure 7i), and in one individual we observed three instances of EdU+ chondrocytes immediately adjacent to the blind ends of cartilage canals (Figure 7j).
 
@@ -92,9 +190,33 @@ After a 3 day chase, EdU+ cells were recovered almost exclusively in the pericho
 
 Taken together, our label retention and gene expression data point to the morphologically distinct Sox5/Sox6/Sox9 + cells of the inner perichondrium as adult cartilage progenitor cells, with a capacity to give rise to new chondrocytes both in the periphery (i.e. appositional growth), and also in the core of the metapterygium, via cartilage canals (i.e. interstitial growth). Additionally, while the number of EdU+ cells is highly variable between individuals, the general trend of a greater number of label-retaining perichondral cells after the 2 month and 5.5 month chases – and, more specifically, a greater number of label-retaining cells within the inner perichondrium – points to the likely self-renewal of perichondral cells, perhaps with a progressive sequence of differentiation from outer perichondral cell to inner perichondral cell, and eventually to chondrocyte – either in the periphery, or deeper in the core (via cartilage canals).
 
-## Adult skates spontaneously repair partial-thickness cartilage injury
+### Adult skates spontaneously repair partial-thickness cartilage injury
 
 Mammalian articular hyaline cartilage is unable to spontaneously heal following injury. Rather, articular cartilage injuries tend to infill with fibrocartilage – a subtype of cartilage that exhibits large bundles of collagen fibres, and with ECM composed substantially of type I collagen (Eyre and Wu, 1983; Benjamin and Ralphs, 2004). Fibrocartilage is mechanically inferior to hyaline cartilage at the articular surfaces of synovial joins, and its formation within articular cartilage lesions can result in the onset of degenerative osteoarthritis. We sought to test whether the persistence of adult chondrogenesis in the skate metapterygium – and the presence of cartilage progenitor cells in the perichondrium – correlated with an ability to spontaneously repair injured hyaline cartilage. We conducted a surgical cartilage injury experiment, in which a metapterygium cartilage biopsy was performed in 26 adult skates using a 4 mm biopsy punch (producing a cartilage void of ~1/4 to 1/3 diameter of the metapterygium – Figure 8a). Two animals were euthanized one-week post-operation, and at monthly intervals for the following year, and processed histologically to assess the extent of repair.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-v1.jpg)
+
+**Figure 8.:** (a) 3D reconstruction of a dissected metapterygium 2 weeks following experimental cartilage injury. Note the biopsy (red asterisk) has left a void of ~1/3 the diameter of the metapterygium. (b, bi) By 2 months post-operation (p.o.), the injury site has been filled with a fibrous connective tissue, and (c, ci) by 3 months p.o., this connective tissue begins to differentiate into cartilage. Note that the cells of the repair tissue adopt chondrocyte morphology, and the ECM of the repair tissue is integrated with adjacent cartilage. (d) By 12 months p.o., the injury site has been completely filled with repair cartilage. (di) Red staining of ECM at the surface of the repair tissue (*) could indicate the re-appearance of tissue with a perichondral-like nature, or the re-establishment of tesserae at the injured surface of the metapterygium. However, (dii) the vast majority of repair tissue is composed of typical hyaline cartilage. (e) Immunofluorescence reveals abundant type II collagen (Col2a1) in the ECM of repair cartilage. In (b-d), the red dashed line indicates the boundary of the biopsy, and the black dashed line indicates the extent of repair cartilage. In (e) the red dashed line indicates the boundary of the biopsy, and the white dashed line indicates the extent of repair cartilage. hc, hyaline cartilage; pc, perichondrium; ts, tesserae. Scale bars: (a) 1 cm, (b) 100 μm, (bi) 30 μm, (c) 100 μm, (ci) 30 μm, (d) 100 μm, (di) 50 μm, (dii) 50 μm, (e) 50 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Eight months after cartilage biopsy, the injury site has largely filled with repair cartilage. (b) The vast majority of repair cartilage resembles typical hyaline cartilage, though (c) we also observe some superficial red staining of the ECM (*), which could indicate the re-appearance of tissue with a perichondral-like nature, or the re-establishment of superficial tesserae at the surface of the metapterygium. In all panels, the red dashed line indicates the boundary of the biopsy, and the black dashed line indicates the extent of repair cartilage.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (a) Eleven months after cartilage biopsy, the injury site has completely filled with repair cartilage. (b) The repair cartilage consists largely of typical hyaline cartilage, though with some superficial red staining of the ECM, which could indicate the re-appearance of tissue with a perichondral-like nature, or the re-establishment of superficial tesserae at the surface of the metapterygium. In all panels, the red dashed line indicates the boundary of the biopsy, and the black dashed line indicates the extent of repair cartilage.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Twelve months after cartilage biopsy, the injury site has nearly completely filled with repair cartilage. The repair cartilage consists largely of typical hyaline cartilage, though with some superficial red staining of the ECM, which could indicate the re-appearance of tissue with a perichondral-like nature, or the re-establishment of superficial tesserae at the surface of the metapterygium. The red dashed line indicates the boundary of the biopsy, and the black dashed line indicates the extent of repair cartilage. Note that this image is from a different individual than that figure in Figure 7d.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** (a) Immunodetection of type II collagen reveals localization to the pericellular ECM of both uninjured and repair cartilage in the metapterygium. Conversely, we detected no type I collagen in the ECM of uninjured or repair cartilage, despite (b) positive immunodetection of type I collagen in the ECM of adjacent skeletal muscle fibres. In (a) red dashed line indicates the boundary of the biopsy, with repair cartilage to the left.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/53414/elife-53414-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** (a–b) In two animals, failed biopsies resulted in damage to the perichondrium without removal of cartilage. In both instances, this resulted in the induction of large masses of ectopic cartilage beneath the perichondrium, and above the tesserae. hc, hyaline cartilage; pc, perichondrium; ts, tesserae.
 
 In animals assessed at 1 and 2 months post-operation (mpo) (n = 4), cartilage injuries were in-filled with a fibrous connective tissue (Figure 8b, bi), but by 3mpo (n = 2), this connective tissue began to differentiate into cartilage (i.e. with typical hyaline chondrocytes, albeit at a much higher density than in the adjacent, uninjured cartilage – Figure 8c, ci). In animals assessed at 4-10mpo (n = 14), tissue within the injury sites showed varying degrees of progressive differentiation into cartilage, starting from the interface between the injury site and adjacent cartilage and progressing toward the surface of the metapterygium (Figure 8—figure supplement 1), and by 11-12mpo (n = 4), injury sites were completely or near-completely filled with repair cartilage (Figure 8d, Figure 8—figure supplement 2, 3). Chondrocytes within the repair cartilage remained at much higher density than in the adjacent cartilage, and the surface of the injury site remained irregular, with some superficial red staining of the ECM (Figure 8di). This could reflect the re-appearance of tissue with a perichondral-like nature, or a step toward re-establishment of tesserae at the surface of the metapterygium, as these tissues stained variably red-blue and red, respectively, with modified Masson’s trichrome stain. However, the vast majority of repair tissue resembled typical hyaline cartilage, with a Light Green-stained ECM that integrates with adjacent uninjured cartilage and no evidence of ECM fibre bundles typical of fibrocartilage (Figure 8dii).
 
@@ -106,7 +228,7 @@ Interestingly, in two animals collected between 4-10mpo, our biopsy had been uns
 
 The cartilaginous nature of the endoskeleton in sharks, skates, rays and holocephalans has long been appreciated, but the fundamental processes of cartilage development and growth in this group remain largely unexplored. We have shown that embryonic development of cartilage in the skate closely mirrors development of mammalian cartilage, but that unique features of the adult skate skeleton – including the presence of chondroprogenitors in the perichondrium and a network of cartilage canals – facilitates the continued growth of cartilage throughout life. This persistence of adult chondrogenesis, in turn, correlates with ability to spontaneously repair injured cartilage, in a manner so far undocumented in any other vertebrate taxon.
 
-## Evolution of endoskeletal development in jawed vertebrates
+### Evolution of endoskeletal development in jawed vertebrates
 
 The endoskeleton of bony fishes (including tetrapods) forms largely through a process of endochondral ossification. In endochondral ossification, pre-skeletal mesenchyme aggregates to form a condensation at the site of skeletogenesis, and cells within this condensation undergo progressive differentiation, starting from the centre, into chondrocytes and eventually enlarged, hypertrophic chondrocytes (Hall, 2005; Karsenty et al., 2009; Long and Ornitz, 2013). Chondrocyte and hypertrophic chondrocyte fates are determined and characterized by the expression of genes encoding distinct sets of transcription factors and ECM components, with the transcription factors Sox5, Sox6 and Sox9 regulating the expression of Col2a1 and Agc1 in chondrocytes (Bell et al., 1997; Lefebvre et al., 1998; Lefebvre et al., 2001; Smits et al., 2001; Akiyama et al., 2002; Han and Lefebvre, 2008), and the transcription factor Runx2 regulating the expression of Col10a1 (the gene encoding non-fibrillar type X collagen) in hypertrophic chondrocytes (Linsenmayer et al., 1991; Takeda et al., 2001; Zheng et al., 2009; Simões et al., 2006; Higashikawa et al., 2009; Ding et al., 2012). Hypertrophic cartilage is ultimately invaded by vasculature, and is replaced by bone, with bone-forming cells (osteoblasts) arising both from the perichondrium/periosteum, and through transdifferentiation of hypertrophic chondrocytes (Colnot et al., 2004; Roach, 1992; Roach et al., 1995; Zhou et al., 2014; Yang et al., 2014; Park et al., 2015; Hu et al., 2017). Within growing endochondral bones, non-hypertrophic cartilage persists in the growth plate, where chondrocytes continue to proliferate and contribute to lengthening of an element, and at points of endoskeletal articulation. Upon cessation of growth, growth plate cartilage will hypertrophy and ossify, with non-hypertrophic cartilage persisting only at articular surfaces.
 
@@ -114,7 +236,7 @@ In skate, onset of endoskeletal development is marked by the appearance of mesen
 
 Unlike in bony fishes, however, chondrocytes in the skate metapterygium do not undergo hypertrophy, but rather remain terminally differentiated in a non-hypertrophic state. While cartilaginous fishes, strictly speaking, lack bone, they nevertheless possess the vast majority of transcription factors and ECM components required to make bone (Venkatesh et al., 2014), and there are instances of mineralization within the skeleton of cartilaginous fishes that share molecular properties with bone – for example expression of Col10a1, Col1a1 and SPARC in the mineralized areolar tissue of the vertebral column, and immunolocalization of types I and X collagen to tesserae and pre-mineralized supratesseral cartilage (Egerbacher et al., 2006; Enault et al., 2015; Criswell et al., 2017; Seidel et al., 2017; Debiais-Thibaud et al., 2019). These observations, combined with palaeontological evidence for the presence of bone along the gnathostome stem (Donoghue et al., 2006; Charest et al., 2018), are consistent with bone as an ancestral feature of jawed vertebrates, the loss of this tissue in extant cartilaginous fishes, and the independent re-deployment of deeply conserved mechanisms of cartilage mineralization at sites such as tesserae and the axial column.
 
-## Adult chondroprogenitor cells contribute to post-embryonic growth of cartilage in the skate
+### Adult chondroprogenitor cells contribute to post-embryonic growth of cartilage in the skate
 
 There has been relatively little work on postembryonic growth of hyaline cartilage in cartilaginous fishes, perhaps owing to the general difficulties of locating and maintaining a suitable range of subadult life stages. Growth of the tessellated calcified cartilage of cartilaginous fishes has been well documented, particularly in the stingray Urobatis halleri, where it has been shown that tesserae continue to grow throughout life, and that this growth likely occurs by accretion, with continuous mineralization of a thin layer of ‘supratesseral’ cartilage that sits between the tesserae and the perichondrium, and of ‘subtesseral’ cartilage beneath the tesserae (Dean et al., 2009; Seidel et al., 2016; Seidel et al., 2017). We have discovered a population of label-retaining cartilage progenitor cells (characterized by co-expression of Sox5, Sox6 and Sox9) in the inner perichondrium of adult skates, and we have traced their chondrocyte progeny to the peripheral unmineralized cartilage and (occasionally) mineralized tesserae of the metapterygium. Based on our observation of a similar cell type in the metapterygium perichondrium of hatchling skates, these observations point to a general mechanism of appositional post-embryonic cartilage growth, wherein progenitor cells of perichondral origin give rise to new chondrocytes in the periphery of the metapterygium – some of which will become incorporated into growing tesserae, while others (e.g. in the intertesseral joint regions) will persist as unmineralized hyaline cartilage (Figure 9).
 
@@ -126,13 +248,13 @@ In addition to appositional growth of cartilage in the metapterygium, we also fi
 
 Cartilage canals that extend from the perichondrium into the core of endoskeletal elements have been shown to occur in the vertebrae, jaws and pectoral girdles of sharks and rays (Hoenig and Walsh, 1982; Dean et al., 2010). Similar canals have been described from the cartilage of embryonic tetrapods, though in tetrapods these are transient structures that function in mediating the replacement of cartilage by bone during endochondral ossification (Blumer et al., 2004; Blumer et al., 2008). Conversely, cartilage canals in cartilaginous fishes persist within the adult skeleton, have been described as containing blood vessels and lymph-like and other amorphous materials, as well as immature chondrocytes, and have been speculated to function in the nourishment and maintenance of cartilage in the adult endoskeleton (Hoenig and Walsh, 1982; Dean et al., 2010). The cartilage canals that we have described in the metapterygium of the skate closely resemble those described previously in other cartilaginous fishes, and findings from our label retention experiments are consistent with a function for these canals in transporting material (including pre-chondrocytes) to the core cartilage of the metapterygium. It therefore seems likely that cartilage canals do, indeed, function in the maintenance, nourishment, and, most likely, interstitial growth of cartilage in the endoskeleton of cartilaginous fishes.
 
-## Spontaneous repair of hyaline cartilage in the skate
+### Spontaneous repair of hyaline cartilage in the skate
 
 We have found that the persistence of cartilage progenitor cells and chondrogenesis in the adult skate skeleton correlates with an ability to spontaneously repair injured cartilage – albeit with a tissue containing a significantly higher density of chondrocytes relative to normal adult cartilage. A comparative analysis of the mechanical properties of normal and repair cartilage remains to be conducted, though the ECM of skate repair cartilage is composed of type II collagen and appears to integrate seamlessly with adjacent tissue, and cells within repair cartilage appear indistinguishable from adjacent chondrocytes. While it is not currently possible to precisely trace the cell lineage of repair cartilage within our injury paradigm, the demonstrated chondrogenic potential of the adult skate perichondrium during normal growth, as well as our observation that mechanical perturbation of the surface of the metapterygium is sufficient to induce a large mass of ectopic cartilage beneath the perichondrium, points to the perichondrium as the most likely source of repair cartilage following injury.
 
 Our findings stand in contrast with previous work in the dogfish (Scyliorhinus spp.), which determined that the cartilaginous skeleton of sharks could not heal following injury (Ashhurst, 2004). This was based on a design in which cartilaginous fin radials were bisected and monitored for repair over 26 weeks. It was observed that cut surfaces of dogfish fin rays were initially capped by a fibrous tissue, with subsequent appearance near the injury site of a disorganized, cartilage-like tissue that failed to integrate with existing ray cartilage or to unite the bisected elements. Importantly, the cartilage injury in that study (i.e. complete bisection) was severe, and may have posed an insurmountable barrier to repair, even for a tissue with local progenitors and repair potential (i.e. it is possible that the repair response that we report in skate requires some scaffold of normal cartilage as a foundation for repair). Additionally, fin rays are relatively small, and therefore may exhibit different growth properties relative to larger elements of the endoskeleton. Additional studies of repair potential across the range of skeletal elements and tissue types in cartilaginous fishes are needed to determine whether cartilage repair is a general feature of the skeleton, or a unique property of specific skeletal elements.
 
-## Skate as a model for adult chondrogenesis and cartilage repair
+### Skate as a model for adult chondrogenesis and cartilage repair
 
 Osteoarthritis (OA) is a debilitating deterioration of joint cartilage with symptoms ranging from stiffness and joint pain to complete immobility. OA can severely impact quality of life, and has an extremely high economic burden, and so there is great interest in identifying novel therapeutic strategies to promote joint cartilage repair. Joint cartilage repair still poses a substantial clinical challenge, owing to the avascular and aneural nature of articular cartilage, and therefore its limited capacity to initiate spontaneous repair. Recently, focus has shifted from surgical approaches (e.g. microfracture and autologous chondrocyte implantation – Rodrigo et al., 1994; Brittberg et al., 1994) to stem cell-based therapies for cartilage defects – namely the application of patient-derived mesenchymal stem cells (MSCs) or induced pluripotent stem cells (iPSCs) as sources of repair tissue for damaged cartilage (Bernhard and Vunjak-Novakovic, 2016; Murphy et al., 2017; Harrell et al., 2019). While these approaches hold great promise, some challenges nevertheless remain. Derivation of persistent cartilage from MSCs is challenging, as chondrogenically differentiated MSCs will often continue on a path toward hypertrophy and ultimately ossification (Pelttari et al., 2006; Steinert et al., 2007), while the use of incompletely differentiated iPSCs can result in heterogeneous repair tissue, and may come with a risk of teratoma formation (Heng et al., 2004; Saito et al., 2015).
 
@@ -140,7 +262,7 @@ The unique endoskeletal growth and repair properties of cartilaginous fishes may
 
 ## Materials and methods
 
-## Animals, euthanasia and fixation
+### Animals, euthanasia and fixation
 
 Leucoraja erinacea adults and embryos were maintained in large rectangular tanks or seatables, respectively, in flow-through natural seawater at a constant temperature of 15°C at the Marine Resources Center of the Marine Biological Laboratory in Woods Hole, MA, U.S.A. Adult skates were fed on a diet of squid and capelin. Skate embryos were staged according to the lesser-spotted dogfish (Scyliorhinus canicula) staging table of Ballard et al. (1993) and the winter skate (Leucoraja ocellata) staging table of Maxwell et al. (2008). Prior to fixation, all skate embryos and adults were euthanized with an overdose of ethyl 3-aminobenzoate methanesulfonate salt (MS-222 - Sigma) in seawater (1 g/L MS-222 buffered with 2 g/L sodium bicarbonate). Animals were kept in a euthanasia bath until the cessation of gill pumping and heartbeat, and for adults, decapitation was used as a secondary method of euthanasia.
 
@@ -148,7 +270,7 @@ All skate embryos were fixed overnight in 4% paraformaldehyde (Electron Microsco
 
 All work involving skate embryos and adults was conducted in strict accordance with protocols approved by the Marine Biological Laboratory Institutional Animal Care and Use Committee.
 
-## Paraffin histology and histochemical staining
+### Paraffin histology and histochemical staining
 
 For paraffin embedding of embryonic tissue, specimens were cleared 3 × 20 min in Histosol (National Diagnostics) at room temperature, transitioned through 2 × 30 min steps in 1:1 Histosol:molten paraffin in a standard wax oven at 60°C, then left in molten paraffin (RA Lamb Wax – Fisher Scientific) at 60°C overnight. The following day, specimens were moved through four changes of molten paraffin (each >1 hr) before positioning and embedding in a Peel-A-Way embedding mold (Sigma).
 
@@ -156,11 +278,11 @@ For paraffin embedding of adult skate tissue, samples were rinsed several times 
 
 All blocks were left to set overnight at room temperature before sectioning at 8 μm on a Leica RM2125 rotary microtome. Sections were mounted on Superfrost plus slides (VWR) and stained with a modified Masson’s trichrome stain, according to the protocol of Witten and Hall (2003). All histochemical staining was carried out at least in triplicate (i.e. on three separate stage-matched individuals).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Slides to be used for immunofluorescence were dewaxed in histosol and rehydrated through a descending ethanol series into 1X PBS + 0.1% Triton X-100 (PBT). For enzymatic antigen retrieval, slides were incubated in 147 u/mL hyaluronidase (Sigma) in PBS pH 6.7 for 1 hr at 37°C followed by 0.1% (w/v) pepsin (Sigma) in 0.01N HCl for 30 min at 37°C for anti-Col2a1 or 0.1% (w/v) pepsin in 0.5M acetic acid for 2 hr at 37°C for anti-Col1a1, according to the protocol of Egerbacher et al. (2006). Slides were then rinsed 3 × 10 min in PBT, blocked for 30 min in 10% sheep serum and incubated in primary antibody (under a parafilm coverslip) in a humidified chamber overnight at 4°C. The following day, slides were rinsed 3 × 5 min in 1X PBT, and then incubated in secondary antibody (under a parafilm coverslip) in a humidified chamber overnight at 4°C. Slides were then rinsed 3 × 10 min in PBT and coverslipped with Fluoromount G containing DAPI (Southern Biotech). Primary and secondary antibodies were diluted in 10% sheep serum in PBT to the following concentrations: anti-COL2A1 (II.II6B3, Developmental Studies Hybridoma Bank, University of Iowa; 1:20), anti-COL1A1 (LF-68, Kerafast; 1:100), AF568-conjugated goat-anti-rabbit IgG (A11011, Invitrogen; 1:500) and AF488-conjugated goat-anti-mouse IgG (A11001, Invitrogen; 1:500). All immunostaining was carried out in triplicate (on three separate stage-matched individuals), and negative controls were conducted by following the same staining protocol but in the absence of primary antibody.
 
-## EdU incorporation experiments
+### EdU incorporation experiments
 
 5-ethynyl-2'-deoxyuridine (EdU – ThermoFisher Scientific) retention experiments were conducted to label the nuclei of cell that have undergone S-phase DNA synthesis and their progeny (Salic and Mitchison, 2008). For skate hatchling EdU retention experiments, hatchlings were anaesthetized in MS-222 in seawater (150 mg/L MS-222 buffered with 300 mg/L sodium bicarbonate) and given a single intraperitoneal (IP) microinjection of 2 μL of a 5 mM EdU solution in 1X PBS with a Picospritzer pressure injector. Animals were then recovered in seawater and reared in a flow-through seatable for 1, 5, 10 or 40 days, at which point animals were euthanized and fixed as described above.
 
@@ -168,7 +290,7 @@ For adult skate EdU pulse-chase experiments, eight adults weighing between 750�
 
 EdU detection was carried out on 8 μm paraffin sections using the Click-iT EdU Cell Proliferation Kit (ThermoFisher Scientific) according to the manufacturer’s instructions. After detection, slides were coverslipped with Fluoromount G containing DAPI, imaged, then de-coverslipped in water and stained with modified Masson’s trichrome. Given the large size of the metapterygium and the relative sparsity of certain label-retaining cell types (e.g. chondrocytes in adult sections), cell counts were performed across five successive sections through the region of the metapterygium indicated in Figure 1 for adult skates, and three successive sections through the equivalent region of the metapterygium in hatchlings. For counts of EdU+ perichondral cells in skate hatchlings, the sum total of EdU+ cells for each individual were plotted against chace time in MS Excel, and a polynomial trend line was added.
 
-## mRNA in situ hybridization and phylogenetic analysis
+### mRNA in situ hybridization and phylogenetic analysis
 
 For paraffin embedding and sectioning of adult tissues for mRNA in situ hybridization, tissues were rehydrated into diethyl pyrocarbonate (DEPC)-treated water and demineralised for 24 hr in Morse Solution (5 g sodium citrate dihydrate, 12.5 mL formic acid and 37.5 mL DEPC water). Demineralised tissues were then dehydrated stepwise into 100% ethanol before infiltration, paraffin embedding and sectioning as described above.
 
@@ -184,14 +306,14 @@ The sea lamprey aggrecan-like protein sequence (ENSPMAP00000001826) was retrieve
 
 The Leucoraja erinacea Sox5 sequence corresponds with the 3’ untranslated region (UTR) of the Sox5 transcript, and so orthology could not be confirmed as described above. However, this sequence showed significant homology with the 3’ UTR of predicted Sox5 transcripts from other chondrichthyan species (Rhincodon typus, Amblyraja radiata and Callorhinchus milii) by BLAST.
 
-## Cartilage injury experiments
+### Cartilage injury experiments
 
 For cartilage injury experiments, adult skates ranging in weight from 500 to 750 g were anaesthetized in MS-222 in aerated seawater (150 mg/L MS-222 buffered with 300 mg/L sodium bicarbonate) until the animals failed to respond to noxious stimulus (e.g. a pinch with forceps). Anaesthetized animals were given a pre-operative analgesic (0.25 mg butorphanol by intramuscular injection) and then moved from the anesthesia bath to an operating table, where their gills were perfused with anesthetic seawater for the duration of the procedure (~5 min). A small (~2 cm) surgical incision was made through the dorsal surface of the fin,~3 cm from the base of the metapterygium, and a wedge of cartilage was removed from the metapterygium using a 4 mm biopsy punch. Following biopsy, the incision was sutured, animals were given a postoperative dose of antibiotic (15 mg ceftazidime by intramuscular injection) and then recovered in aerated seawater until fully awake before returning to their holding tank. No animals died as a result of the procedure. Two animals were collected one-week post-operation, and then at monthly intervals for the following year. All animals were euthanized, dissected, fixed and processed for histological analysis as described above.
 
-## MicroCT scanning
+### MicroCT scanning
 
 Tissue samples from adult skates collected one-week post-biopsy were imaged by X-ray microtomography (microCT) at the Cambridge Biotomography Centre (Department of Zoology, University of Cambridge). Samples were scanned using a Nikon XTH225 ST scanner, at 100kV and a 120microamps beam current.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 All microscopy was performed with a Zeiss Axioscope A1 and Zen software. All images were processed and plates prepared using Adobe Photoshop CC and Adobe Illustrator CC.

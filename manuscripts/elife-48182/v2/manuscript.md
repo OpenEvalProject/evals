@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.48182.001 With every glimpse of our eyes, we sample only a small and incomplete fragment of the visual world, which needs to be contextualized and integrated into a coherent scene representation. Here we show that the visual system achieves this contextualization by exploiting spatial schemata, that is our knowledge about the composition of natural scenes. We measured fMRI and EEG responses to incomplete scene fragments and used representational similarity analysis to reconstruct their cortical representations in space and time. We observed a sorting of representations according to the fragments' place within the scene schema, which occurred during perceptual analysis in the occipital place area and within the first 200 ms of vision. This schema-based coding operates flexibly across visual features (as measured by a deep neural network model) and different types of environments (indoor and outdoor scenes). This flexibility highlights the mechanism's ability to efficiently organize incoming information under dynamic real-world conditions.
+With every glimpse of our eyes, we sample only a small and incomplete fragment of the visual world, which needs to be contextualized and integrated into a coherent scene representation. Here we show that the visual system achieves this contextualization by exploiting spatial schemata, that is our knowledge about the composition of natural scenes. We measured fMRI and EEG responses to incomplete scene fragments and used representational similarity analysis to reconstruct their cortical representations in space and time. We observed a sorting of representations according to the fragments' place within the scene schema, which occurred during perceptual analysis in the occipital place area and within the first 200 ms of vision. This schema-based coding operates flexibly across visual features (as measured by a deep neural network model) and different types of environments (indoor and outdoor scenes). This flexibility highlights the mechanism's ability to efficiently organize incoming information under dynamic real-world conditions.
 
 ## Introduction
 
@@ -42,7 +42,59 @@ To test these hypotheses, we used a novel visual paradigm in which participants 
 
 In our study, we experimentally mimicked the fragmented nature of naturalistic visual inputs by dissecting scene images into position-specific fragments. Six natural scene images (Figure 1a) were each split into six equally-sized fragments (three vertical × 2 horizontal), resulting in 36 conditions (six scenes × 6 fragments). In separate fMRI (n = 30) and EEG (n = 20) experiments, participants viewed these fragments at central fixation while performing an indoor/outdoor categorization task to ensure engagement with the stimulus (Figure 1b). Critically, this design allowed us to investigate whether the brain sorts the fragments with respect to their place in the schema in the absence of explicit location differences (Figure 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig1-v2.jpg)
+
+**Figure 1.:** (a) The stimulus set consisted of six natural scenes (three indoor, three outdoor). Each scene was split into six rectangular fragments. (b) During the fMRI and EEG recordings, participants performed an indoor/outdoor categorization task on individual fragments. Notably, all fragments were presented at central fixation, removing explicit location information. (c) We hypothesized that the visual system sorts sensory input by spatial schemata, resulting in a cortical organization that is explained by the fragments’ within-scene location, predominantly in the vertical dimension: Fragments stemming from the same part of the scene should be represented similarly. Here we illustrate the hypothesized sorting in a two-dimensional space. A similar organization was observed in multi-dimensional scaling solutions for the fragments’ neural similarities (see Figure 1—figure supplement 1 and Video 1). In subsequent analyses, the spatiotemporal emergence of the schema-based cortical organization was precisely quantified using representational similarity analysis (Figure 2).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a/b) A multi-dimensional scaling (MDS) of the fragments’ neural similarity in OPA (a) and after 200 ms of processing (b) revealed a sorting according to vertical location, which was visible in a two-dimensional solution. This visualization suggests that schemata are a prominent organizing principle for representations in OPA and after 200 ms of vision. A time-resolved MDS for the EEG data can be found in Video 1.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-video1.mp4.jpg)
+
+**Video 1.:** To directly visualize the emergence of schematic coding from the neural data, we performed a multi-dimensional scaling (MDS) analysis, where the time-resolved neural RDMs (averaged across participants) were projected onto a two-dimensional space. The RDM time series was smoothed using a sliding averaging window (15 ms width). Computing MDS solutions across time yielded a movie (5 ms resolution), where fragments travel through an arbitrary space, eventually forming a meaningful organization. Notably, around 200 ms, a division into the three vertical locations can be observed.
+
 To quantify the sorting of fragments during cortical processing we used spatiotemporally resolved representational similarity analysis (Cichy et al., 2014; Kriegeskorte et al., 2008). We first extracted representational dissimilarity matrices (RDMs) from the fMRI and EEG data, which indexed pairwise dissimilarities of the fragments’ neural representations (for details on RDM construction see Figure 2—figure supplement 1). In the fMRI (Figure 2a), we extracted spatially-resolved neural RDMs from scene-selective occipital place area (OPA) and parahippocampal place area (PPA), and from early visual cortex (V1) (for temporal response profiles in these regions see Figure 2—figure supplement 2). In the EEG (Figure 2b), we extracted time-resolved neural RDMs from −200 ms to 800 ms relative to stimulus onset from posterior EEG electrodes (for other electrode groups see Figure 2—figure supplements 3–5).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-v2.jpg)
+
+**Figure 2.:** (a) To test where and when the visual system sorts incoming sensory information by spatial schemata, we first extracted spatially (fMRI) and temporally (EEG) resolved neural representational dissimilarity matrices (RDMs). In the fMRI, we extracted pairwise neural dissimilarities of the fragments from response patterns across voxels in the occipital place area (OPA), parahippocampal place area (PPA), and early visual cortex (V1). (b) In the EEG, we extracted pairwise dissimilarities from response patterns across electrodes at every time point from −200 ms to 800 ms with respect to stimulus onset. (c) We modelled the neural RDMs with three predictor matrices, which reflected their vertical and horizontal positions within the full scene, and their category (i.e., their scene or origin). (d) The fMRI data revealed a vertical-location organization in OPA, but not V1 and PPA. Additionally, the fragment’s category predicted responses in both scene-selective regions. (e) The EEG data showed that both vertical location and category predicted cortical responses rapidly, starting from around 100 ms. These results suggest that the fragments’ vertical position within the scene schema determines rapidly emerging representations in scene-selective occipital cortex. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean. In further analysis, we probed the flexibility of this schematic coding mechanism (Figure 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Pairwise neural dissimilarity values were into representational dissimilarity matrices (RDMs), so that for every time point one 36 × 36 matrix containing estimates of neural dissimilarity was available. Here, an example RDM at 200 ms post-stimulus is shown, which exemplifies the ordering of fragment combinations for all RDMs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Functional MRI data were analyzed in three regions of interest (here shown on the right hemisphere): primary visual cortex (V1), occipital place area (OPA), and parahippocampal place area (PPA). Each of these ROIs showed reliable net responses to the fragments, peaking 3 TRs after stimulus onset. The activation time courses were baseline-corrected by subtracting the activation from the first two TRs. (b), GLM analysis across the response time course. Most prominently after 3 TRs, the neural organization in OPA was explained by the fragments’ vertical location, reflecting a neural coding in accordance with spatial schemata. Additionally, scene category predicted neural organization in OPA and PPA. Error margins reflect standard errors of the mean. Significance markers represent p<0.05 (corrected for multiple comparisons across ROIs).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Based on previous studies on multivariate decoding of visual information, we restricted our main analysis to a group of posterior electrodes (where we expected the strongest effects). For comparison, we also analyzed data in central and anterior electrode groups. The central group consisted of 20 electrodes (C3, TP9, CP5, CP1, TP10, CP6, CP2, Cz, C4, C1, C5, TP7, CP3, CPz, CP4, TP8, (C6, C2, T7, T8) and the anterior group consisted of 26 electrodes (F3, F7, FT9, FC5, FC1, FT10, FC6, FC2, F4, F8, Fp2, AF7, AF3, AFz, F1, F5, FT7, FC3, FCz, FC4, FT8, F6, F2, AF4, AF8, Fpz). RDMs were constructed in an identical fashion to the posterior group used for the main analyses (Figure 2—figure supplement 1). We computed general discriminability of the 36 scene fragments in the three groups by averaging all off-diagonal elements of the RDMs. As expected, the resulting time courses of pair-wise discriminability revealed the strongest overall decoding in the posterior group, followed by the central and anterior groups. RSA results for these electrodes are found in Figure 2—figure supplement 4/5. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a/b) Repeating the main RSAs for the central electrode group yielded a similar pattern as the posterior group, revealing both vertical location information (from 85 ms to 485 ms) and category information (from 100 ms to 705 ms). (c/d) Removing DNN features abolished category information, but not vertical location information, most prominently between 185 ms and 350 ms. This result is consistent with the schematic coding observed for posterior signals. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a/b) Also responses recorded from the anterior group yielded both vertical location information (from 85 ms to 350 ms) and category information (from 165 ms to 610 ms). (c/d) In contrast to the other electrode groups, removing DNN features rendered location and category information insignificant, suggesting that they are not primarily linked to sources in frontal brain areas. This observation also excludes explanations based on oculomotor confounds. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** We interpret the vertical location organization in the neural data as reflecting prior schematic knowledge about scene structure. Alternatively, however, the vertical location organization could in principle result from learning the composition of the scenes across the experiment. In the latter case, one would predict that vertical location effects should primarily occur late in the experiment (e.g., in the second half), and less so towards the beginning (e.g., in the first half). To test this, we split into halves both the fMRI data (three runs each) and the EEG data (first versus second half of trials) and for each half modeled the neural data as a function of the vertical and horizontal location and category predictors. (a) For the fMRI data, we found significant vertical location information in the OPA for in the first half (t[29]=3.46, p<0.001, pcorr <0.05) and a trending effect for the second half (t[29] = 2.07, p = 0.024, pcorr >0.05). No differences between the splits were found in any region (all t<0.90, p>0.37). (b) For the EEG data, we also found very similar results for the two spits, with no significant differences emerging at any time point. Together, these results suggest that the vertical location organization cannot solely be explained by extensive learning over the course of the experiment. Significance markers represent p<0.05 (corrected for multiple comparisons). Empty markers represent p<0.05 (uncorrected). Error margins reflect standard errors of the mean.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** To test whether vertical location information can be observed across all three vertical bins, we modelled the neural data as a function of the fragments’ vertical location, now separately for each pairwise comparison along the vertical axis (i.e., top versus bottom, top versus middle, and middle versus bottom). (a) For the fMRI data, we only found consistent evidence for vertical location information in the OPA: top versus bottom (t[29]=4.10, p<0.001, pcorr <0.05), top versus middle (t[29]=2.13, p=0.021, pcorr >0.05), middle versus bottom (t[29]=2.06, p=0.024, pcorr >0.05). Although the effect was numerically bigger for top versus bottom, we did not find a significant difference between the three pairwise comparisons in OPA (F[2,58]=2.71, p=0.075). (b) For the EEG data, we found significant vertical location information for all three comparisons. Here, the middle-versus-bottom comparison yielded the weakest effect, which was significantly smaller than the effect for top versus bottom from 120 ms and 195 ms and significantly smaller than the effect for top versus middle from 110 ms to 285 ms. Together, these results suggest that schematic coding can be observed consistently across the different comparisons along the vertical axis, although comparisons including the top fragments yielded stronger effects. Significance markers represent p<0.05 (corrected for multiple comparisons). Empty markers represent p<0.05 (uncorrected). Error margins reflect standard errors of the mean.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (a) To control for task difficulty effects in the indoor/outdoor classification task, we computed paired t-tests between all pairs of fragments, separately for their associated accuracies and response times. We then constructed two predictor RDMs that contained the t-values of the pairwise tests between the fragments: For each pair of fragments, these t-values corresponded to dissimilarity in task difficulty (e.g., comparing two fragments associated with similarly short categorization response times would yield a low t-value, and thus low dissimilarity). This was done separately for the fMRI and EEG experiments (matrices from the EEG experiment are shown). The accuracy and response time RDMs were mildly correlated with the category RDM (fMRI: accuracy: r = 0.10, response time: r = 0.15; EEG: accuracy: r = 0.17, response time: r = 0.16), but not with the vertical location RDM (fMRI: both r < 0.01, EEG: both r < 0.01). After regressing out the task difficulty RDMs, we found highly similar vertical location and category information as in the previous analyses (Figure 3b/c). (b) In the fMRI, only category information in OPA was significantly reduced when task difficulty was accounted for. (c) In the EEG, towards the end of the epoch – when participants responded – location and category information were decreased. This shows that the effects of schematic coding – emerging around 200 ms after onset – cannot be explained by differences in task difficulty. The dashed significance markers represent significantly reduced information (compared to the main analyses, Figure 3b/c) at p<0.05 (corrected for multiple comparisons).
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** We defined our vertical location predictor as categorical, assuming that top, middle, and bottom fragments are coded distinctly in the human brain. An alternative way of constructing the vertical location predictor is in terms of the fragments’ Euclidean distances, where fragments closer together along the vertical axis (e.g., top and middle) are represented more similarly than fragments further apart (e.g., top and bottom). (a) For the fMRI data, we found that the categorical and Euclidean predictors similarly explained the neural data, with no statistical differences between them (all t[29] <1.15, p>0.26). (b) For the EEG data, we found that both predictors explained the neural data well. However, the categorical predictor revealed significantly stronger vertical location information from 75 ms to 340 ms, suggesting that, at least in the EEG data, the differentiation along the vertical axis is more categorical in nature. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
 
 We then quantified schema effects using separate model RDMs for horizontal and vertical locations (Figure 2c). These location RDMs reflected whether pairs of fragments shared the same location or not. We additionally constructed a category model RDM, which reflected whether pairs of fragments stemmed from the same scene or not.
 
@@ -55,6 +107,22 @@ The key observation was that the fragments’ vertical location predicted neural
 The schema-based organization co-exists with a prominent scene-category organization: In line with previous findings (Lowe et al., 2018; Walther et al., 2009), category was accurately predicted in OPA (t[29] = 3.12, p=0.002, pcorr <0.05) and PPA (t[29] = 4.26, p<0.001, pcorr <0.05) (Figure 2d), and from 60 ms to 775 ms (peak: t[19] = 6.39, p<0.001, pcorr <0.05) (Figure 2e).
 
 To efficiently support vision in dynamic natural environments, schematic coding needs to be flexible with respect to visual properties of specific scenes. The absence of vertical location effects in V1 indeed highlights that schematic coding is not tied to the analysis of simple visual features. To more thoroughly probe this flexibility, we additionally conducted three complementary analyses (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-v2.jpg)
+
+**Figure 3.:** (a) To determine the role of categorization-related visual features in this schematic organization, we regressed out RDMs obtained from 18 layers along the ResNet50 DNN before repeated the three-predictor general linear model (GLM) analysis (Figure 2c). (b/c) Removing DNN features abolished category information in fMRI and EEG signals, but not vertical location information. (d) To test for generalization across different scene types, we restricted location predictor RDMs to comparisons across indoor and outdoor scenes. Due to this restriction, category could not be modelled. (e/f) In this analysis, vertical location still predicted neural organization in OPA and from 70 ms. (g) Finally, we combined the two analyses: we first regressed out DNN features prior and then modelled the neural RDMs using the restricted predictor RDMs (d). (h) In this analysis, we still found significant vertical location information in OPA. (i) Notably, vertical location information in the EEG signals was delayed to after 180 ms, suggesting that at this stage schematic coding becomes flexible to visual and conceptual attributes. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) In addition to the ResNet50 DNN, we also used the more widely used AlexNet DNN architecture (pretrained on the ImageNet dataset, implemented in the MatConvNet toolbox) as a model for visual categorization. AlexNet consists of 5 convolutional and three fully-connected layers. We created 8 RDMs, separately for each layer of the DNN. (b/c) Removing the AlexNet DNN features rendered category information non-significant in fMRI and EEG signals. However, we still found vertical location information in OPA and from 65 ms to 375 ms. (c–e) When additionally restricting the analysis to comparisons between indoor and outdoor scenes, the fragments’ vertical location still predicted neural activations in OPA and from 95 ms to 375 ms. In sum, these results are highly similar to the results obtained with the ResNet50 model (Figure 3b/c/h/i). Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a/b) Goodness of fit (R2) across ROIs (a) and time (b) of the GLMs used to regress out DNN features, obtained from ResNet50 (left) or AlexNet (right). For the EEG time series, mean R2 across the baseline period were subtracted. Note that GLMs based on the ResNet50 RDMs had more predictor variables, which may contribute to their better fit. Error bars represent standard errors of the mean.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48182/elife-48182-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** We used three control models that explicitly account for low-level visual features: a pixel-dissimilarity model, GIST descriptors, and the fragments’ neural dissimilarity in V1. Critically, all three models did not account for the fragments’ vertical location organization. Moreover, unlike the DNN models, the low-level models were also unable to account for the fragments’ categorical organization. (a/b) Results after regressing out the pixel dissimilarity model, which captured the fragments’ pairwise dissimilarity in pixel space (i.e., 1- the correlation of their pixel values). (c/d) Results after regressing out the GIST model, which captured the fragments’ pairwise dissimilarity in GIST descriptors (i.e., in their global spatial envelope). (e/f) Results after regressing out the V1 model, which captured the fragments’ pairwise neural dissimilarity in V1 (i.e., the averaged RDM across participants) and thereby provides a brain-derived measure of low-level feature similarity. Significance markers represent p<0.05 (corrected for multiple comparisons). Error margins reflect standard errors of the mean.
 
 First, we tested whether schematic coding is tolerant to stimulus features relevant for visual categorization. Categorization-related features were quantified using a deep neural network (DNN; ResNet50), which extracts such features similarly to the brain (Wen et al., 2018). We removed DNN features by regressing out layer-specific RDMs constructed from DNN activations (see Materials and Methods for details) (Figure 3a); subsequently, we re-estimated location and category information.
 
@@ -84,15 +152,67 @@ To conclude, our findings provide the first spatiotemporal characterization of a
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CoSMoMVPA</td>
+      <td>Oosterhof et al., 2016</td>
+      <td>RRID:SCR_014519</td>
+      <td>For data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fieldtrip</td>
+      <td>Oostenveld et al., 2011</td>
+      <td>RRID:SCR_004849</td>
+      <td>For EEG data preprocessing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks Inc.</td>
+      <td>RRID:SCR_001622</td>
+      <td>For stimulus delivery and data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychtoolbox 3</td>
+      <td>Brainard, 1997</td>
+      <td>RRID:SCR_002881</td>
+      <td>For stimulus delivery</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPM12</td>
+      <td>www.fil.ion.ucl.ac.uk/spm/software/spm12/</td>
+      <td>RRID:SCR_007037</td>
+      <td>For fMRI data preprocessing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Thirty adults (mean age 23.9 years, SD = 4.4; 26 females) completed the fMRI experiment and twenty (mean age 24.0 years, SD = 4.3; 15 females) completed the EEG experiment. All participants had normal or corrected-to-normal vision. They all provided informed consent and received monetary reimbursement or course credits for their participation. All procedures were approved by the ethical committee of the Department of Education and Psychology at Freie Universität Berlin (reference 140/2017) and were in accordance with the Declaration of Helsinki.
 
-## Stimuli
+### Stimuli
 
 The stimulus set (Figure 1a) consisted of fragments taken from three images of indoor scenes (bakery, classroom, kitchen) and three images of outdoor scenes (alley, house, farm). Each image was split horizontally into two halves, and each of the halves was further split vertically in three parts, so that for each scene six fragments were obtained. Participants were not shown the full scene images prior to the experiment.
 
-## Experimental design
+### Experimental design
 
 The fMRI and EEG designs were identical, unless otherwise noted. Stimulus presentation was controlled using the Psychtoolbox (Brainard, 1997; RRID:SCR_002881). In each trial, one of the 36 fragments was presented at central fixation (7° horizontal visual angle) for 200 ms (Figure 1b). Participants were instructed to maintain central fixation and categorize each stimulus as an indoor or outdoor scene image by pressing one of two buttons.
 
@@ -102,43 +222,43 @@ In the fMRI, participants performed six identical runs. Within each run, each of
 
 In both experiments, participants performed very well in the indoor/outdoor categorization task (fMRI: 94% correct, 658 ms mean response time, EEG: 96%, 606 ms). Differences in task difficulty across fragments were not related to the neural effects of interest (Figure 2—figure supplement 8).
 
-## fMRI recording and preprocessing
+### fMRI recording and preprocessing
 
 MRI data was acquired using a 3T Siemens Tim Trio Scanner equipped with a 12-channel head coil. T2*-weighted gradient-echo echo-planar images were collected as functional volumes (TR = 2 s, TE = 30 ms, 70° flip angle, 3 mm3 voxel size, 37 slices, 20% gap, 192 mm FOV, 64 × 64 matrix size, interleaved acquisition). Additionally, a T1-weighted image (MPRAGE; 1 mm3 voxel size) was obtained as a high-resolution anatomical reference. During preprocessing, the functional volumes were realigned and coregistered to the T1 image, using MATLAB (RRID:SCR_014519) and SPM12 (www.fil.ion.ucl.ac.uk/spm/; RRID:SCR_014519).
 
-## fMRI region of interest definition
+### fMRI region of interest definition
 
 We restricted our analyses to three regions of interest (ROIs). We defined scene-selective occipital place area (OPA; Dilks et al., 2013) and parahippocampal place area (PPA; Epstein and Kanwisher, 1998) using a functional group atlas (Julian et al., 2012). As a control region, we defined early visual cortex (V1) using a probabilistic atlas (Wang et al., 2015). All ROIs were defined in standard space and then inverse-normalized into individual-participant space. For each ROI, we concatenated the left- and right-hemispheric masks and performed analyses on the joint ROI.
 
-## EEG recording and preprocessing
+### EEG recording and preprocessing
 
 The EEG was recorded using an EASYCAP 64-channel system and a Brainvision actiCHamp amplifier. The electrodes were arranged in accordance with the standard 10–10 system. The data was recorded at a sampling rate of 1000 Hz and filtered online between 0.03 Hz and 100 Hz. All electrodes were referenced online to the Fz electrode. Offline preprocessing was performed in MATLAB, using the FieldTrip toolbox (Oostenveld et al., 2011; RRID:SCR_004849). The continuous EEG data were epoched into trials ranging from 200 ms before stimulus onset to 800 ms after stimulus onset, and baseline corrected by subtracting the mean of the pre-stimulus interval for each trial and channel separately. Trials containing movement-related artefacts were automatically identified and removed using the default automatic rejection procedure implemented in Fieldtrip. Channels containing excessive noise were removed based on visual inspection. Blinks and eye movement artifacts were identified and removed using independent components analysis and visual inspection of the resulting components. The epoched data were down-sampled to 200 Hz.
 
-## Representational similarity analysis
+### Representational similarity analysis
 
 To model the representational structure of the neural activity related to our stimulus set, we used representational similarity analysis (RSA; Kriegeskorte et al., 2008). We first extracted neural RDMs separately for the fMRI and EEG experiments, and then used the same analyses to model their organization. To retrieve the fragments’ position within the original scene, as well their scene category, we used a regression approach, where we modeled neural dissimilarity as a linear combination of multiple predictors (Proklova et al., 2016; Proklova et al., 2019).
 
-## Constructing neural dissimilarity – fMRI
+#### Constructing neural dissimilarity – fMRI
 
 For the fMRI data, we used cross-validated correlations as a measure of pairwise neural dissimilarity. First, patterns for each ROI were extracted from the functional images corresponding to the trials of interest. After shifting the activation time course by 3 TRs (i.e., 6 s, accounting for the hemodynamic delay), we extracted voxel-wise activation values for each trial, from the TR that was closest to the stimulus onset on this trial (for results across 6 TRs with respect to trial onset, see Figure 2—figure supplement 2). To account for activation differences between runs, the mean activation across conditions was subtracted from each voxel’s values, separately for each run. For each ROI, response patterns across voxels were used to perform multivariate analyses using the CoSMoMVPA toolbox (Oosterhof et al., 2016; RRID:SCR_014519). For each TR separately, we performed correlation-based (Haxby et al., 2001) multi-voxel pattern analyses (MVPA) for each pair of fragments. These analyses were cross-validated by repeatedly splitting the data into two equally-sized sets (i.e., half of the runs per set). For this analysis, we correlated the patterns across the two sets, both within-condition (i.e., the patterns stemming from the two same fragments and from different sets) and between-conditions (i.e., the patterns stemming from the two different fragments and from different sets). These correlations were Fisher-transformed. Then, we subtracted the within- and between-correlations to obtain a cross-validated correlation measure, where above-zero values reflect successful discrimination. This procedure was repeated for all possible splits of the six runs. Performing this MVPA for all pairs of fragments yielded a 36 × 36 representational dissimilarity matrix (RDM) for each ROI. RDMs’ entries reflected the neural dissimilarity between pairs of fragments (the diagonal remained empty).
 
-## Constructing neural dissimilarity – EEG
+#### Constructing neural dissimilarity – EEG
 
 For the EEG data, we used cross-validated classification accuracies as a measure of pairwise neural dissimilarity. We thus constructed RDMs across time by performing time-resolved multivariate decoding analyses (Contini et al., 2017). RDMs were built by computing pair-wise decoding accuracy for all possible combinations of the 36 stimuli, using the CoSMoMVPA toolbox (Oosterhof et al., 2016). As we expected the highest classification in sensors over visual cortex (Battistoni et al., 2018; Kaiser et al., 2016), only 17 occipital and posterior sensors (O1, O2, Oz, PO3, PO4, PO7, PO8, POz, P1, P2, P3, P4, P5, P6, P7, P8, Pz) were used in this analysis. We report results for other electrode groups in Figure 2—figure supplements 3–5. For each participant, classification was performed separately for each time point across the epoch (i.e., with 5 ms resolution). The analysis was performed in a pair-wise fashion: Linear discriminant analysis classifiers were always trained and tested on data from two conditions (e.g., the middle left part of the alley versus the top right part of the farm), using a leave-one-trial-out partitioning scheme. The training set consisted of all but one trials for each of the two conditions, while one trial for each of the two conditions was held back and used for classifier testing. This procedure was repeated until every trial was left out once. Classifier performance was averaged across these repetitions. The pairwise decoding analysis resulted in a 36-by-36 neural RDM for each time point. A schematic description of the RDM construction can be found in Figure 2—figure supplement 1.
 
-## Location and category predictors
+#### Location and category predictors
 
 We predicted the neural RDMs in a general linear model (GLM; see below) with three different predictor RDMs (36 × 36 entries each) (Figure 2c): In the vertical location RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same vertical location, or the value 1, if they stem from different vertical locations (for results with an alternative predictor RDM using Euclidean distances see Figure 2—figure supplement 9). In the horizontal location RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same horizontal location, or a value of 1, if they stem from different horizontal locations. In the category RDM, each pair of conditions is assigned either a value of 0, if the fragments stem from the same scene, or a value of 1, if they stem from different scenes.
 
 In an additional analysis, we sought to eliminate properties specific to either the indoor or outdoor scenes, respectively. We therefore constructed RDMs for horizontal and vertical location information which only contained comparisons between the indoor and outdoor scenes. These RDMs were constructed in the same way as explained above, but all comparisons within the same scene type of scene were removed (Figure 3d).
 
-## Modelling neural dissimilarity
+#### Modelling neural dissimilarity
 
 To reveal correspondences between the neural data and the predictor matrices, we used GLM analyses. Separately for each ROI (fMRI) or time point (EEG), we modelled the neural RDM as a linear function of the vertical location RDM, the horizontal location RDM, and the category RDM. Prior to each regression, the neural RDMs and predictor RDMs were vectorized by selecting all lower off-diagonal elements – the rest of the entries, including the diagonal, was discarded. Values for the neural RDMs were z-scored. Separately for each subject and each time point, three beta coefficients (i.e., regression weights) were estimated. By averaging across participants, we obtained time-resolved beta estimates for each predictor, showing how well each predictor explains the neural data over time.
 
 Furthermore, we performed an additional GLM analysis with a vertical location predictor and a horizontal location predictor, where comparisons within indoor- and outdoor-scenes were removed (Figure 3d–f); these comparisons were also removed from the regression criterion. Using the same procedure as in the previous GLM analysis, we then estimated the beta coefficients for each predictor at each time point, separately for each subject. For this analysis, a category RDM could not be constructed, as all comparisons of fragments from the same scene were eliminated.
 
-## Controlling for deep neural network features
+#### Controlling for deep neural network features
 
 To control for similarity in categorization-related visual features, we used a deep neural network (DNN) model. DNNs have recently become the state-of-the-art model of visual categorization, as they tightly mirror the neural organization of object and scene representations (Cichy et al., 2016; Cichy et al., 2017; Cichy and Kaiser, 2019; Groen et al., 2018; Güçlü and van Gerven, 2015; Wen et al., 2018). DNNs are similar to the brain as they are trained using excessive training material while dynamically adjusting the ‘tuning’ of their connections. Here, we used a DNN (see below) that has been trained to categorize objects across a large number of images and categories, therefore providing us with a high-quality model of how visual features are extracted for efficient categorization. By comparing DNNs activations and brain responses to the scene fragments, we could quantify to which extent features routinely extracted for categorization purposes account for schema-based coding in the human visual system.
 
@@ -146,10 +266,10 @@ In a two-step approach, we re-performed our regression analysis after removing t
 
 As a DNN model, we used a pre-trained version (trained on image categorization for the ImageNet challenge) of the ResNet50 model (He et al., 2016), as implemented in MatConvNet (Vedaldi and Lenc, 2015). This model’s deeper, residual architecture outperforms shallower models in approximating visual cortex organization (Wen et al., 2018). ResNet50 consists of 16 blocks of residual layer modules, where information both passes through an aggregate of layers within the block, and bypasses the block; then the residual between the processed and the bypassing information is computed. Additionally, ResNet50 has one convolutional input layer, and one fully-connected output layer. Here, to not inflate the number of intercorrelated predictor variables, we only used the final layer of each residual block, and thus 18 layers in total (16 from the residual blocks, and the input and output layers). For each layer, an RDM was built using 1-correlation between the activations of all nodes in the layer, separately for each pair of conditions. For regressing out the DNN RDMs, we added one predictor for each available RDM. In Figure 3—figure supplement 1, we show that an analysis using the AlexNet architecture (Krizhevsky et al., 2012) yields comparable results; in Figure 3—figure supplement 2, we additionally provide information about the DNN model fit across regions and time points.
 
-## Statistical testing
+### Statistical testing
 
 For the fMRI data, we tested the regression coefficients against zero, using one-tailed, one-sample t-tests (i.e., testing the hypothesis that coefficients were greater than zero). Multiple-comparison correction was based on Bonferroni-corrections across ROIs. A complete report of all tests performed on the fMRI data can be found in Supplementary file 1. For the EEG data, we used a threshold-free cluster enhancement procedure (Smith and Nichols, 2009) to identify significant effects across time. Multiple-comparison correction was based on a sign-permutation test (with null distributions created from 10,000 bootstrapping iterations) as implemented in CoSMoMVPA (Oosterhof et al., 2016). The resulting statistical maps were thresholded at Z > 1.64 (i.e., p<0.05, one-tailed against zero). Additionally, we report the results of one-sided t-tests for all peaks effects. To estimate the reliability of onset and peak latencies we performed bootstrapping analyses, which are reported in Supplementary Items 2/3.
 
-## Data availability
+### Data availability
 
 Data are publicly available on OSF (DOI.ORG/10.17605/OSF.IO/H3G6V).

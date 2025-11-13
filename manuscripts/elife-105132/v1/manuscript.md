@@ -19,9 +19,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02rx3b187 Univ. Grenoble Alpes, CNRS, CEA, IBS Grenoble France
-2. https://ror.org/02rx3b187 Univ. Grenoble Alpes, CNRS, DPM Grenoble France
-3. https://ror.org/01rk35k63 Molecular Microbiology and Structural Biochemistry, Université de Lyon, CNRS Lyon France
+1. Univ. Grenoble Alpes, CNRS, CEA, IBS Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+2. Univ. Grenoble Alpes, CNRS, DPM Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+3. Molecular Microbiology and Structural Biochemistry, Université de Lyon, CNRS Lyon France ([ROR:01rk35k63](https://ror.org/01rk35k63))
 
 † Corresponding author
 
@@ -34,6 +34,14 @@ Teichoic acids (TA) are linear phospho-saccharidic polymers and important consti
 Teichoic acids (TA) are major components of the cell envelope of Gram-positive bacteria. TA are complex linear polysaccharides attached either to the plasma membrane (lipoteichoic acids, LTA) or to the peptidoglycan (PG) (wall teichoic acids, WTA) (Brown et al., 2013; Denapaite et al., 2012; Percy and Gründling, 2014). Either WTA or LTA are dispensable in some laboratory conditions for the growth of Bacillus subtilis (D’Elia et al., 2006a; Schirner et al., 2009) or Staphylococcus aureus (D’Elia et al., 2006b; Oku et al., 2009), but at least one type must be present (Schirner et al., 2009; Oku et al., 2009). In Streptococcus pneumoniae, LTA are dispensable (Heß et al., 2017), and reduced amount of WTA is tolerated (Minhas et al., 2023) (strains totally devoid of WTA have not been characterized yet due to partial redundancy of WTA attachment enzymes). TA participate in numerous cellular processes such as cell wall elongation and hydrolysis, cell division, transport processes, cation homeostasis, resistance to antimicrobial peptides, and interactions with the environment or the host.
 
 In studies of Gram-positive bacteria (B. subtilis, S. aureus, Enterococcus gallinarum, and Streptococcus gordonii) by cryo-electron microscopy of vitreous sections (CEMOVIS; Dubochet et al., 1988), a region between the cytoplasmic membrane and the cell wall was proposed to be a periplasmic space (Matias and Beveridge, 2007; Matias and Beveridge, 2008; Zuber et al., 2006). A most interesting speculation is the possible role of TA in maintaining this periplasmic space, so that it would be isotonic with the cytoplasm (Figure 1A; Erickson, 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig1-v1.jpg)
+
+**Figure 1.:** (A) TA (multicolored rods) attached to the membrane (M) or to the peptidoglycan (PG) exclude each other to maintain a periplasmic space (PS) as proposed by Erickson, 2021. The sizes of the molecules are not to scale and their density in the different locations is arbitrary. Additional functions arise from the presentation of various choline-binding proteins (blue). (B) Polymerized TA attached to undecaprenyl pyrophosphate are transferred at the cell surface onto PG by the phosphotransferase LytR to form wall teichoic acids (WTA); or onto DGlcp-DAG by TacL to form lipoteichoic acids (LTA). The enzymes are depicted by their AlphaFold models. The most abundant TA species have 6 repeating units (n = 4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Chemical structure of (A) lipoteichoic acids (LTA), (B) wall teichoic acids (WTA), and (C) the membrane-bound precursor. The constituent of the repeating unit are in green the acetamido-4-amino-6-deoxygalactopyranose (AATGalpNAc), in yellow the glucopyranose (DGlcp), in pink the ribitol-5-phosphate, in cyan the N-acetylgalactosamine (DGalpNAc), in purple the phosphocholine. One or both phosphocholine residues can be absent on the terminal unit. Some units may also lack the phosphocholine on the proximal DGalpNAc. The most abundant species have 6 repeating units (n = 4). LTA are β-1-linked to monoglucosyldiacylglycerol (blue). WTA are α-1-linked via a phosphodiester to position 6 of a N-acetyl muramic acid of the peptidoglycan (PG, gray). The precursors remain attached to an undecaprenyl pyrophosphate (orange). The one-letter nomenclature of constituents proposed by Gisch et al., 2013 is given in magenta around the LTA.
 
 In most organisms, LTA and WTA have different compositions and are assembled and exported by different pathways (Brown et al., 2013; Percy and Gründling, 2014). TA of streptococci of the mitis group, such as S. pneumoniae, are particular in two ways: LTA and WTA are products of the same biosynthetic pathway and are therefore of very similar composition, and they are uniquely decorated by phosphocholine residues (Figure 1B; Denapaite et al., 2012).
 
@@ -53,55 +61,188 @@ In this work, using CEMOVIS (cryo-electron microscopy of vitreous thin sections)
 
 ## Results
 
-## Cryo-electron microscopy analysis of S. pneumoniae cell envelope
+### Cryo-electron microscopy analysis of S. pneumoniae cell envelope
 
 CEMOVIS is a cellular cryo-electron microscopy method that previously provided evidence for a periplasmic space in several Gram-positive bacteria (Zuber et al., 2006; Matias and Beveridge, 2005). To investigate the contribution of TA to the architecture of the cell envelope of S. pneumoniae, we applied CEMOVIS (Figure 2—figure supplement 1) to the WT strain and two mutants thereof thought to be deficient in the attachment of TA to the cell wall (ΔlytR) or to the plasma membrane (ΔtacL) (Heß et al., 2017; Minhas et al., 2023).
 
 As in other bacterial species, CEMOVIS reveals the existence of a periplasm in WT S. pneumoniae, as evidenced by a light region observed between the plasma membrane and the cell wall (Figure 2). Within this light region, a single dark line runs parallel to the membrane. This observation in S. pneumoniae supports the idea that a periplasmic space exists in Gram-positive bacteria, and that this space contains organized material, which was previously described as a granular layer (Zuber et al., 2006).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig2-v1.jpg)
+
+**Figure 2.:** (A) CEMOVIS micrographs allowing full view (white scale bar, 100 nm) and zoom (black scale bar, 10 nm) of WT and mutant strains. O and I signal the outer and inner sides of the cell envelope. A periplasmic space can be observed in all three strains. A granular layer is seen as a thin black line in the periplasmic space (arrowheads) of WT cells, whereas it is not observed in the ΔlytR and ΔtacL strains. (B) Corresponding pixel intensity profile of the cell envelope is shown for each strain. The intensity profiles were measured perpendicularly to the cell surface in regions boxed in white, and show variations in the density of the envelope ultrastructure. CW, cell wall; P, periplasm; GL, granular layer; M, membrane.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The ribbon spans the entire EM grid. Scale bar, 100 µm. (B) Stitching of several acquisitions areas showing one cryo-section (Brown et al., 2013) and half of a second one (Denapaite et al., 2012) inside the ribbon. Scale bar, 5 µm. (C). Cells are uniformly distributed in the section. Representative acquisition areas, where cells are located at the center of a hole in the carbon, are pointed with a white arrowhead. Scale bar, 1 µm. Black arrowheads: knife marks; asterisks: ice contamination. Some crevasses can be observed but the section is devoid of cracks and very low ice contamination is present on the surface. Knife marks along the cutting direction of the knife cannot be avoided, although compression artifact is rather limited as the cells preserve a round shape. Thus, it can be said reasonably that the sections are exploitable and that artifacts induced by cryo-sectioning do not impair image interpretation and ultrastructure measurement.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** CEMOVIS micrographs allowing full view (white scale bar, 100 nm) and zoom (black scale bar, 10 nm) of WT and mutant strains. O and I signal the outer and inner sides of the cell envelope. A periplasmic space can be observed in all three strains. A granular layer is seen as a thin black line in the periplasmic space (arrowheads) of WT cells, whereas it is not observed in the ΔlytR and ΔtacL strains.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) CETOVIS of a ΔtacL cell section. (A) Raw image of a tilt series. (B) Full view (scale bar, 100 nm) and zoom (scale bar, 20 nm) of a slice through the cryo-electron tomogram. Yellow arrow, membrane; magenta arrow; periplasmic space; cyan bracket, peptidoglycan. A reduction in the thickness of the periplasmic space and peptidoglycan layer is observed throughout the volume. No granular layer is detected in the volume. (C) TEM micrographs of stained freeze-substituted thin sections of the cell envelope of wild type (WT), ΔlytR, and ΔtacL cells. The appearance varies depending on the angle between the cell envelope and the section plane. Two examples are shown for each strain. No consistent difference could be discerned between the strains. Scale bar, 100 nm.
+
 If a Gram-positive periplasm filled with TA exists, it must contain LTA, which are anchored in the plasma membrane, and possibly WTA protruding from the inner face of the cell wall layer (Erickson, 2021). This hypothesis predicts that variations in LTA and/or WTA incorporation should modify the architecture of the cell envelope. Strikingly, the granular layer present in the WT strain completely disappears in ΔlytR and ΔtacL cells (Figure 2, Figure 2—figure supplement 2). In the absence of TacL, the thickness of the periplasmic space is significantly reduced by (34 ± 5)% (SE) compared to that of the WT strain (Table 1), supporting the idea that LTA occupy the periplasmic space. Similarly, the absence of LytR induces a significant reduction of the periplasm thickness ((29 ± 5)% (SE), Table 1), suggesting that WTA also participate in the maintenance of this region. The thickness of the periplasmic spaces in ΔtacL and ΔlytR strains does not differ significantly from each other. In order to increase the signal-to-noise ratio of our cryo-EM images, we took advantage of the exceptional grid adhesion of one vitreous ribbon of ΔtacL cells (Figure 2—figure supplement 2) to perform CETOVIS (cryo-electron tomography of vitreous sections). The reconstructed cryo-electron tomogram confirmed the absence of the granular layer throughout the entire volume of a ΔtacL cell section (Figure 2—figure supplement 3A, B).
+
+**Table 1.**
+ Dimensions of cell envelope structures measured on CEMOVIS images.*p=0.05 can be removed from the footnote (twice).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strain</th>
+      <th colspan="3">Mean thickness (nm) ± SD (nb of measurements)a</th>
+      <th rowspan="2">Ratio of thicknessCW/PS</th>
+      <th rowspan="2" colspan="2">GL dist. from membraneb(nm) ± SD</th>
+    </tr>
+    <tr>
+      <th>CW</th>
+      <th>PS</th>
+      <th>GL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>15.9 ± 2.5 (Trouve et al., 2021b)</td>
+      <td>10.8 ± 1.4 (Trouve et al., 2021b)</td>
+      <td>3.2 ± 0.8 (Trouve et al., 2021b)</td>
+      <td>1.5</td>
+      <td colspan="2">5.0 ± 0.8 (Trouve et al., 2021b)</td>
+    </tr>
+    <tr>
+      <td>ΔtacL</td>
+      <td>13.5 ± 3.7 (Trouve et al., 2021b)c **/d **</td>
+      <td>6.9 ± 2.3 (Trouve et al., 2021b)c **/d #</td>
+      <td>NA</td>
+      <td>1.95c **/d **</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>ΔlytR</td>
+      <td>10.2 ± 1.7 (Trouve et al., 2021b)c **/d **</td>
+      <td>7.7 ± 2.0 (Trouve et al., 2021b)c **/d #</td>
+      <td>NA</td>
+      <td>1.32c #/d **</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td colspan="6">a Values in nm are presented as mean values ± standard deviations (with numbers of measurements in parentheses). They have been measured using images with a pixel size of 3.7 Å. NA, not applicable.b Measured from the outer surface of the cytoplasmic membrane to the inner most side of the GL.c ANOVA test was performed between corresponding structures of WT and mutant cells. #, no statistical difference; *p = 0.05; **p = 0.01.d ANOVA test was performed between corresponding structures of ΔlytR and ΔtacL cells. #, no statistical difference; *p = 0.05; **p = 0.01.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Interestingly, CEMOVIS data obtained from the WT, ΔlytR, and ΔtacL strains also showed that the thickness of the cell wall layer itself is affected when WTA or LTA assembly is impaired (Figure 2, Figure 2—figure supplement 2, Table 1). Indeed, we observed a significant reduction of the cell wall thickness of (17 ± 5)% (SE) or (36 ± 4)% (SE) in the absence of TacL or LytR, respectively. Consistent with the fact that WTA are covalently linked to the PG, the reduction in the cell wall thickness is more pronounced in ΔlytR cells compared to ΔtacL cells. In contrast to the CEMOVIS method, transmission electron microscopy analysis of sectioned stained freeze-substituted resin-embedded samples (Figure 2—figure supplement 3C) did not reveal measurable differences between the cell wall of the WT and mutant strains. The differing appearance of Gram-positive cell envelope using the CEMOVIS and freeze-substitution methods, and the difficulty of evidencing the periplasmic space with the latter, had previously been mentioned and discussed (Matias and Beveridge, 2005).
 
-## Cellular localization of TA insertion
+### Cellular localization of TA insertion
 
 Intrigued by the effect of the absence of TacL or LytR on the ultrastructure of the cell envelope, we examined how the deletion of tacL or lytR impacts the localization of TA assembly in S. pneumoniae cells. To localize newly synthesized TA, an excess of aCho was added for 5 min to exponentially growing cell cultures. Cells were then fixed prior to secondary labeling by strain-promoted azide-alkyne cyclo-addition (SPAAC) click reaction with the DBCO-linked fluorophore Alexa Fluor 647 (DBCO-AF647), following a protocol adapted from Trouve et al., 2021a. As expected, TA insertion occurs at mid-cell (Figure 3—figure supplement 1). Although the morphology of ΔtacL cells is altered, with pointy poles and some expanded and shrunk cells, enriched aCho incorporation was also detected at midcell. In the ΔlytR strain, in contrast to the WT parental and ΔtacL strains, the 5-min incubation with aCho yielded only a weak mid-cell labeling in few cells (Figure 3—figure supplement 1). The weak labeling of ΔlytR cells may reflect one or a combination of the following: (1) TA are less abundant, (2) cells incorporate less aCho into TA, or (3) cells grow more slowly, so that the 5-min pulse represents a shorter fraction of their cell cycle.
 
 The photophysical properties of AF647 are amenable to direct stochastic optical reconstruction microscopy (dSTORM), which allowed the reconstruction of super-resolved images as presented in Figure 3, showing the localization of fluorescent TA after a 5-min labeling pulse experiment. Corresponding images in conventional fluorescence and bright-field mode are shown in Figure 3—figure supplement 2. In the three strains, TA were mostly inserted at mid-cell, where the PG is assembled (Trouve et al., 2021b). However, some localizations were also detected elsewhere at the cell surface in all three strains. This heterogenous labeling was similar in all three strains, rendering the weak labeling at the division site of ΔlytR cells difficult to identify. This is in contrast to what is observed with PG insertion, where very little signal is observed outside of the cell division zone (Figure 3 and Trouve et al., 2021b). The localization patterns of newly incorporated TA observed in these experiments are mostly that of WTA, since this distribution is preserved in sacculi preparations (Figure 3—figure supplement 2B). The bright spots that were often seen in sacculi likely correspond to aggregated material that is trapped inside unbroken sacculi.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig3-v1.jpg)
+
+**Figure 3.:** For comparison, the same pulse–chase procedure was applied to reveal the newly synthesized peptidoglycan (PG) with a metabolic labeling using 2 mM azido-D-Ala-D-Ala. Scale bars are 1 µm. Corresponding conventional and bright-field images are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The three top rows are with the same imaging settings. The fluorescent signal of the bottom row was enhanced. Scale bars, 2 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Corresponding conventional and bright-field microscopy images of the pulse–chase experiments shown by direct stochastic optical reconstruction microscopy (dSTORM) imaging in Figure 3. Newly synthesized teichoic acids (TA) were revealed in growing wild type (WT), ΔtacL, and ΔlytR cells by a 5-min pulse of metabolic labeling with 1.5 mM aCho followed by a chase, and secondary fluorescent labeling with clickable DBCO-AF647. For comparison, the same pulse–chase procedure was applied to reveal the newly synthesized peptidoglycan with a metabolic labeling using 1.5 mM azido-D-Ala-D-Ala. (B) dSTORM imaging (with corresponding conventional and bright-field images at half scale) of sacculi prepared from cells pulse-labeled during 5 min and chased for 15 min. Labeled TA in sacculi were revealed by secondary fluorescent labeling with clickable DBCO-AF647. Scale bars, 1 µm.
+
 While there is no discernible difference between the WT and ΔtacL cells in the distribution of TA labeled during a 5-min pulse, the evolution of this distribution following a chase, when growth is pursued for up to 35 min (about one WT generation time) without aCho, is markedly different between the two strains (Figure 3). In the WT strain, the separated banded pattern expected from the insertion of unlabeled TA at the division site is observed, mirroring the patterns produced by PG labeling. After 35 min of chase, most WT cells show polar or equatorial labelings following completion of their division. In contrast, in ΔtacL cells, labeled TA can be seen over the whole new cell surface that is generated during the pulse and the first 15 min of chase. An unlabeled region is visible at mid-cell in ΔtacL cells only after 35 min of chase. The chased pattern of labeled PG in the ΔtacL strain is not affected and is similar to that in WT.
 
 In dSTORM imaging of the ΔlytR strain, the patterns are difficult to discern and many cells show no specific mid-cell labeling. When visible, the labeled area extends during the chase, as described above for the ΔtacL strain.
 
-## Separation of labeled LTA and WTA by low-speed centrifugation
+### Separation of labeled LTA and WTA by low-speed centrifugation
 
 In previous studies, unlabeled TA from the pneumococcus have been analyzed by polyacrylamide gel electrophoresis in the presence of sodium dodecyl sulfate (SDS) (SDS–PAGE). Purified WTA were revealed in gel by an Alcian blue staining procedure, whereas LTA from crude membrane fractions were revealed by immune-blotting with anti-phosphocholine antibodies (e.g. Flores-Kim et al., 2019; Flores-Kim et al., 2022). The standard preparative purification of TA from S. pneumoniae starts with the sedimentation of mechanically broken cell walls, which contain the WTA, with the concomitant detergent solubilization of LTA (e.g. Heß et al., 2017). Alternatively, for analysis of LTA by immuno-blotting for example, protoplasts prepared by PG enzymatic digestion would be osmotically lysed, cellular debris would be sedimented by low-speed centrifugation and discarded, and LTA-containing membranes would finally be collected by ultracentrifugation (e.g. Flores-Kim et al., 2019; Flores-Kim et al., 2022). On the other hand, WTA can be released from cell wall fragments by thorough digestion of the PG (e.g. Heß et al., 2017; Bui et al., 2012) or alkaline hydrolysis (e.g. Flores-Kim et al., 2019; Flores-Kim et al., 2022).
 
 Since we were able to fluorescently label TA, we thought it would allow simpler in-gel analysis. WT cells were cultured over two generations in C-medium devoid of choline but supplemented with 200 µM aCho. Cells having thus metabolically incorporated aCho were lyzed by overnight digestion of the cell wall with lysozyme, mutanolysin and recombinant LytA. The aCho was coupled to a DBCO-fluorescent Alexa dye (AF488) by SPAAC click reaction during the lysis incubation. The lysates were then cleared of debris by a low-speed centrifugation at 10,000 × g, and ultracentrifugation of the supernatant at 100,000 × g was subsequently performed to separate the membrane from the soluble fraction. Since at this stage the TA were fluorescently labeled, we were surprised to find more fluorescence in the low-speed pellet than in the pellet resulting from the ultracentrifugation. Analysis of the soluble fraction (the supernatant) by SDS–PAGE showed the pattern expected from labeled WTA migrating as a set of poorly resolved bands with low electrophoretic mobility, as in typical Alcian blue-stained gels (Flores-Kim et al., 2019; Flores-Kim et al., 2022; Figure 4A). The pattern expected from labeled LTA, a ladder of well-resolved bands with a greater electrophoretic mobility than the WTA, was observed chiefly in the low-speed pellet. Centrifugation of cells lysates with labeled TA at different speeds confirmed that 2 min at 20,000 × g were sufficient to sediment most of the LTA (Figure 4A). The nature of high-mobility species and other details on the fractionation and the electrophoresis are commented in the SI (Notes on the fraction of LTA and WTA, Figure 4—figure supplement 1; Notes on the electrophoresis, Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-v1.jpg)
+
+**Figure 4.:** (A) Polyacrylamide gel electrophoresis of fluorescently labeled teichoic acids (TA) demonstrating separation of lipoteichoic acids (LTA) and wall teichoic acids (WTA) by centrifugation. Labeled compounds were revealed by UV transillumination. TA were labeled by growing wild type (WT) cells in C-medium in the presence of 200 µM aCho. Cells were lysed overnight with lysozyme, mutanolysin and LytA and the azido-groups were modified by reaction with 25 µM DBCO-AF488. The lysate was centrifuged for 2 min at 1250, 5000, or 20,000 × g. The pellets were resuspended in the initial volume. An aliquot of the 20,000 × g supernatant was treated with alkaline phosphatase. The buffer with the lysing enzymes, the medium with and without aCho and the culture supernatant were similarly incubated with 25 µM DBCO-AF488. B, lysis buffer with enzymes; M−, C-medium without aCho; M+, C-medium with aCho; MC, culture supernatant; L, lysate; P, pellet; S, supernatant; AP, alkaline phosphatase-treated. The control samples (B, M−, M+, and MC were loaded at one-fourth the volume of the cellular samples). Labels on the right side of the gel identify species coupled to the fluorophore AF488. (B, C) Titration of cellular TA. WT cells were grown for two generation in the presence of aCho prior to cell lysis. DBCO-AF488 (1.9 µM) was incubated for 24 hr with varying amounts of cell lysate corresponding to up to 2.9 × 108 cells⋅ml−1. The remaining DBCO-AF488 was blocked by addition of 100 mM aCho, and the various species were separated by polyacrylamide (17%) gel electrophoresis (B). The bands were quantified and the relative amount of the various species were plotted against the cell concentration (C). Black circles, blocked DBCO-AF488; open circle, phosphocholine; open triangle, TA. A linear regression of the DBCO-AF488 points at low cellular concentration was applied to obtain the titration point as the intercept of the cell concentration axis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Effect of the concentration of added recombinant LytA on the sedimentation of lipoteichoic acids (LTA). Wild type (WT) cells grown in C-medium with 200 µM aCho were click-labeled with DBCO-AF488 and lysed overnight with mutanolysin, lysozyme, and various concentrations of recombinant LytA. Lysates were centrifuged at 20,000 × g for 2 min. The pellets were resuspended in one-fourth the initial volume and samples were analyzed by gel electrophoresis. Fluorescently labeled compounds were revealed by UV transillumination. (B) Pelleting of labeled LTA-containing membranes from WT cells at different centrifugation speeds after spheroplast lysis (left lanes) and after direct enzymatic lysis (right lanes). A culture of WT cells in C-medium with 200 µM aCho was divided in two. One half was treated and fractionated by centrifugation according to Flores-Kim et al., 2019; Flores-Kim et al., 2022, prior to click-labeling overnight with 25 µM DBCO-AF488. The other half of the culture was click-labeled with 25 µM DBCO-AF488 and lysed overnight with mutanolysin, lysozyme, and LytA, prior to fractionation by centrifugation. Pellets at the indicated relative centrifugal forces were resuspended in one-half the initial volume. (C) Sedimentation of WT cell membranes, lysed by microfluidics (left lanes) or after direct enzymatic lysis (right lanes), analyzed by sodium dodecyl sulfate (SDS)–PAGE in a 12% acrylamide gel with a Tris-glycine buffer system. A 1-l culture of WT cells in BHI was harvested and resuspended in 25 ml of 50 mM Tris pH 8, 150 mM NaCl, 2× complete protease inhibitors, and 2 mM EDTA. Twenty ml of the resuspension were submitted to five passes through an LM20 Microfluidizer at 18 kpsi, and 5 ml were processed by direct enzymatic digestion. Pellets at the indicated relative centrifugal forces were resuspended in one-fifth the initial volume. M, molecular mass markers, L, whole lysate; P, pellet; S, supernatant; CB, Coomassie blue staining; fluo AF488, UV transillumination; WB PBP2x, western blot with anti-PBP2x serum.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Three lanes on the left of the gels: wild type (WT) cells were grown in C-medium in the presence of 200 µM aCho prior to lysis and secondary labeling with 10 µM DBCO-AF488 overnight at room temperature. Samples were further incubated 4 hr with either 1000 U⋅ml−1 alkaline phosphatase (AP), nothing (−), or 10 mM additional aCho. Six lanes on the right of gels. In either 50 mM Tris pH 8, 150 mM NaCl or C-medium, and 20 µM DBCO-AF488 were incubated at room temperature for 4 hr with either 0, 10 mM, or 200 µM aCho. Prior to gel loading, samples were supplemented with 8% glycerol, 0.8% sodium dodecyl sulfate (SDS), 8 mM DTT, and trace of bromophenol blue. The migration position of the fluorophore-triazole-linked species are indicated on the left or on the gels by symbols (PCho^, phospho-choline; Cho*, choline). The position of the DBCO-AF488 reagent is indicated on the right or on the gel with the symbol #.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–F) Protein Coomassie staining of teichoic acids (TA) analysis gels presented in Figures 4A—6A, B, E. (G) Coomassie staining of a gel showing the enzymes used during cell lysis, individually, mixed, and in the context of TA labeling and cell lysis and fractionation. The resulting protein profile was found to be variable, due to protease contamination from the commercial mutanolysin.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Iodine vapor-stained thin layer chromatography of lipids extracted from wild type (WT) cell lysate, the resuspended low-speed centrifugation pellet and the supernatant (Spnt) of the lysate. Lipids were tentatively identified according to Meiers et al., 2014. GlcDAG, mono-glucosyl-diacyl-glycerol (DGlcp-DAG); GalGlcDAG, galactosyl-glucosyl-diacyl-glycerol (DGalp-DGlcp-DAG). (B) Negative stain electron micrograph of the resuspended low-speed centrifugation pellet. Magnification was ×4800. Scale bar, 1 µm.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The main panel is 13C-1H HSQC (constant-time) spectrum; 13C nuclei that are coupled to either zero or two other carbons (red) and those coupled to one or three other carbons (dark blue), exhibit opposite signs. The inset is 31P 1D spectrum. The peak nomenclature is that proposed by Gisch et al., 2013. Peaks A1 to A6, GRO1 GRO3 are originating from the lipid anchor DGlcp-DAG of LTA.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A, B) Titration of cellular teichoic acids (TA). Wild type (WT) cells were grown for two generations in the presence of aCho. DBCO-AF488 (3.7 µM) was incubated for 24 hr with varying amount of cell lysate corresponding to up to 2.9 × 108 cells⋅ml–1. The remaining DBCO-AF488 was blocked by addition of 100 mM aCho, and the various species were separated by polyacrylamide gel electrophoresis. (A) The gel was imaged by transillumination with UV light. (B) The bands were quantified and the relative amount of the various species were plotted against the cell concentration. Black circles, blocked DBCO-AF488; open circle, phospho-choline; open triangle, TA. A linear regression of the DBCO-AF488 points at low cellular concentration was applied to obtain the titration point as the intercept of the cell concentration axis.
+
 Low-speed centrifugation pellets were not transparent and had a loose consistency, different from unbroken cell pellets or classical compact membrane pellets sedimented at 100,000 × g. Coomassie blue staining of electrophoresis gels of the supernatant and pellets of low-speed centrifugation showed that the pellet and supernatant have different protein profiles (Figure 4—figure supplement 3A). After chloroform extraction, iodine-stained thin layer chromatography showed that the low-speed pellet contained most of the lipids (Figure 4—figure supplement 4A) and negative stain transmission electron micrograph of the low-speed pellet revealed membranous material (Figure 4—figure supplement 4B). Taken together, these observations indicate that the LTA-containing membrane fraction of lysed S. pneumoniae cells sediments when submitted to low relative centrifugal force.
 
-## NMR analysis of LTA prepared after low-speed centrifugation
+### NMR analysis of LTA prepared after low-speed centrifugation
 
 To determine that the low-speed sedimentation of LTA-containing membranes was not an artifact of the labeling method, we applied the same separation method to unlabeled cells followed by the extraction procedure previously reported (Heß et al., 2017) for NMR analysis. The 31P NMR spectrum showed the presence of the typical TA phosphorus peaks from internal and terminal units (Figure 4—figure supplement 5). Subsequent treatment with hydrazine to remove acyl chains improved the spectra as expected (Gisch et al., 2013). Natural abundance 13C, 1H-HSQC spectrum showed the presence of the expected sugar species, including the glucosyl-glycerol from the lipid anchor of LTA (A and GRO peaks, Figure 4—figure supplement 5).
 
-## Titration of cellular TA
+### Titration of cellular TA
 
 The fluorescent labeling of TA by click chemistry and separation of LTA and WTA allowed the titration of the different species in cells. For this, we incubated varying quantities of the aCho-labeled cell lysate with fixed amounts of DBCO-AF488. Samples were analyzed by gel electrophoresis and the relative amount of the various fluorescent species was determined by densitometry and plotted against the concentration of cells. The gels and quantifications are shown in Figure 4B, C, Figure 4—figure supplement 6A, B for two concentrations of DBCO-AF488. For intermediate amounts of lysate, the concentrations of clickable groups were too low to reach reaction completion during the incubation time. Only with the highest amount of lysate could the fluorophore be nearly consumed. However, for low amounts of lysate, when the fluorophore is in large excess, the reaction is also expected to have neared completion. Therefore, the fraction of unreacted DBCO-AF488 was linearly extrapolated to zero from the measurements at low lysate concentrations, to obtain the amount of lysate that would titrate the fluorophore in an infinite reaction time. Thus, 1.9 µM DBCO-AF488 would titrate the metabolized aCho from (0.24 ± 0.01) × 2.8 × 108 cells⋅ml–1 and 3.7 µM would titrate aCho from (0.45 ± 0.01) × 2.8 × 108 cells⋅ml–1 (Figure 4B, C, Figure 4—figure supplement 6A, B), which is equivalent to (17 ± 2) × 106 incorporated aCho molecules per cell. Since about 55% of labeled choline are incorporated into TA, the rest being found in the form of phosphocholine, there are about (9.4 ± 1.1) × 106 labeled TA choline per cell. Over two generations grown in the exclusive presence of labeled choline, at most 75% of TA choline residues are expected to be labeled, as measured previously (Di Guilmi et al., 2017). The total amount of TA choline residues per cell can therefore be estimated to be about (12.5 ± 1.5) × 106. Assuming that the major species of TA consists of 6 repeating units, as determined previously (Gisch et al., 2013; Bui et al., 2012), with each unit comprising about two choline residues, the number of TA molecules per cell is about 106.
 
 Although the electrophoretic mobility of the longest species of LTA overlaps that of the shortest WTA species, the major species are well separated (Figure 4B, C, Figure 4—figure supplement 6A, B), allowing their relative quantification. Labeled choline residues incorporated into LTAs were found to account for 15 ± 5% of the TA choline residues. Assuming that the amount of polymerized TA precursors is negligible, and that size distribution is similar for LTA and WTA, LTA and WTA represent roughly 15 and 85% of pneumococcal TA, respectively.
 
-## Modification of TA length in different S. pneumoniae growth phases
+### Modification of TA length in different S. pneumoniae growth phases
 
 Using TA labeling and sedimentation separation, we examined whether changes in the distribution of TA could be detected during growth. WT and ΔlytA cells were grown with aCho over two generations. LytA is the main autolysin of S. pneumoniae, and culture of cells lacking this PG hydrolase show an extended stationary phase with minimal lysis. Cells were harvested during the exponential phase of growth, at the onset of the stationary phase, and when the WT cells started to lyse. Remarkably, longer species of LTA can be observed at later stages of growth (Figure 5A, B, Figure 5—figure supplement 1A). Assuming that the most abundant form consists of 6 repeating units (Gisch et al., 2013), the 5- and 7-unit species are the next most abundant species, and traces of the 8- and 9-unit species can be detected during the exponential phase of growth. Later during the culture, although the 6-unit species remains the most abundant and the 5-unit is detected at level comparable as earlier in the culture, longer species become more abundant with up to 17 identifiable units. Surprisingly, the size distribution appears to be bimodal with a first group of species consisting of 5–11 units, and a second group of longer forms where the most abundant one contains 15 units. When considering the electrophoretic pattern, it should be considered that the signal of the different species is proportional not only to their amount but also to their length, since longer species harbor more labeled choline residues. Therefore, long species are less abundant than they appear.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig5-v1.jpg)
+
+**Figure 5.:** (A) Wild type (WT) cells grown in C-medium containing 200 µM aCho were harvested during the exponential growth phase (Ex), at the onset of the stationary phase (St), and during the autolysis (Ly). TA were fluorescently click-labeled with DBCO-AF488 and cells were completely lysed by the addition of peptidoglycan (PG) hydrolases prior to centrifugation. Lipoteichoic acids (LTA) are found in the pellet (P) whereas wall teichoic acids (WTA) are observed in the supernatant (S). The amounts of cells at the different culture stages were normalized. The LTA samples are eightfold concentrated compared to the WTA samples. Fluorescently labeled TA were revealed by UV transillumination after sodium dodecyl sulfate (SDS)–polyacrylamide electrophoresis. (B) Densitometric profiles of the fluorescent intensities of exponential (blue) and stationary phase samples (orange) shown in (A). (C) Electrophoretic analysis of TA of WT cells grown in C-medium with 0.1% yeast extract and pulse-labeled for 5 min with 200 µM aCho, and chased by further growth in the same medium without added aCho for the indicated duration.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) ΔlytA cells grown in C-medium containing 200 µM aCho were harvested during the exponential growth phase (Ex), at the onset of the stationary phase (St), and during the autolysis (Ly). TA were fluorescently click-labeled with DBCO-AF488 and cells were completely lysed by the addition of peptidoglycan hydrolases prior to centrifugation. Lipoteichoic acids (LTA) are found in the pellet (P) whereas wall teichoic acids (WTA) are observed in the supernatant (S). The amounts of cells at the different culture stages were normalized. The LTA samples are eightfold concentrated compared to the WTA samples. Fluorescently labeled TA were revealed by UV transillumination after sodium dodecyl sulfate (SDS)–PAGE. (B) Electrophoretic analysis of TA of wild type (WT) cells grown in BHI and pulse-labeled for 5 min with the addition of 1.5 mM aCho, and chased by further growth in the same medium without added aCho for the indicated duration.
 
 There was no significant difference between the strains with and without LytA (Figure 5A, B, Figure 5—figure supplement 1A). The ΔlytA did not lyse spontaneously, but a similar amount of TA with the same distribution was obtained from the lysing lytA+ culture. Thus, although the WT cells lyse, their WTA and LTA are not degraded and remain unchanged in the medium.
 
 We also monitored the fate of the labeled species during a chase period of further growth following a 5-min labeling pulse of WT cells, mirroring the dSTORM observations. No modification of the pulse-labeled TA could be detected during the chase time, whether the growth, labeling pulse and chase were performed in BHI or C-medium and supplemented with yeast extract (Figure 5C, Figure 5—figure supplement 1B).
 
-## LTA and the role of TacL
+### LTA and the role of TacL
 
 WTA and LTA were examined in a strain devoid of TacL, which is thought to be responsible for the attachment of LTA to membrane glycolipids (Figure 6A). Labeled TA were found in the pellet, and when analyzed by gel electrophoresis were indistinguishable from LTA. After double checking that the strain was indeed deleted for the tacL gene, we hypothesized that the sedimented TA could be membrane-bound precursors still attached to the undecaprenyl pyrophosphate lipid carrier. In support of this idea, pulse-labeled LTA-like bands disappeared during a chase (Figure 6B), as would be expected if these compounds were precursors being transformed into WTA. This is in contrast to the WT strain (Figure 5C), in which labeled mature LTA are detected throughout a chase period.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig6-v1.jpg)
+
+**Figure 6.:** (A) Electrophoretic analysis of teichoic acids (TA) from the wild type (WT) strain, or deleted of the gene encoding the glycosyltransferase TacL, or the phosphotransferase LytR. Cells were grown in C-medium with no choline and 200 µM aCho, prior to cell lysis with peptidoglycan (PG) hydrolases and secondary labeling with DBCO-AF488. Lysates were fractionated by centrifugation and the pellets were resuspended in one fourth the initial volume: P, pellet; S, supernatant. (B–E) Identification of sedimented TA from lysates of ΔtacL cells as undecaprenyl pyrophosphate bound precursors. (B) Pulse–chase labeling experiment of TA in strain ΔtacL. Cells grown in BHI were exposed to 1.5 mM aCho for 10 min (pulse), prior to washing and further incubation in the same media without aCho (chase) for various time prior to cell lysis and secondary labeling with DBCO-AF488. Samples were treated with alkaline phosphatase prior to electrophoresis. (C) Pellets containing labeled TA from WT and ΔtacL cells were resuspended in a Tris- or ammonium acetate-buffered solution at pH 8 or pH 4.2 and incubated for 3 hr at room temperature or 99°C prior to electrophoresis. (D) Labeled TA from WT and ΔtacL cells were submitted to the first steps of the traditional procedure of lipoteichoic acids (LTA) isolation: boiling in 4% sodium dodecyl sulfate (SDS) in a citrate-buffered solution at pH 4.7, lyophilization and ethanol wash of the lyophilizate, butanol extraction and retention of the aqueous fraction. (E) Labeled sedimented TA from WT and ΔtacL cells were incubated overnight without or with various concentrations of recombinant P. aeruginosa colicin M prior to electrophoretic separation. (F) To probe on which side of the plasma membrane the TA are positioned, secondary click-labeling with DBCO-AF488 was performed prior or after cell lysis of WT and ΔtacL cells grown in C-medium in the presence of 0.2 mM aCho. L, whole lysate; S, supernatant of 20,000 × g, 2-min centrifugation; P, pellet resuspended in one-fourth initial volume.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The in-gel fluorescence was measured using ImageJ with unsaturated images. The densitometry down the migration lanes is shown on the right. The relative surface areas corresponding to the fluorescence intensity are shown for the LTA (in orange) and WTA (in blue). (A) Cells were grown in C-medium with 200 µM aCho and treated as in the experiment shown in Figure 6A, the quantification of which is shown in the lower graphs. Note that the pellets samples were fourfold concentrated. (B) Cells were grown in BHI and labeled during 5 min with 1.5 mM aCho as in Figure 6B.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/105132/elife-105132-fig6-figsupp2-v1.jpg)
 
 The pyrophosphate linkage in the PG precursor lipid II is labile at low pH and high temperature (Higashi et al., 1967). Reasoning that the same should be true for the TA precursor, we incubated the sedimented fraction from the WT and ΔtacL strain at 99°C at either pH 8 or pH 4.2. The TA sedimented from the ΔtacL lysate were degraded at both pH, whereas those from the parental strain were still detected (Figure 6C). This observation suggested that the previously reported failure to isolate TA from the membrane fraction of a ΔtacL strain could be due to the process that involves boiling at pH 4.7 (Heß et al., 2017). To test this hypothesis, we submitted resuspended pellets of labeled TA from the WT and ΔtacL strains to the initial steps of the reported isolation procedure for LTA: boiling in SDS at pH 4.7, lyophilization and ethanol wash of the lyophilizate followed by butanol extraction and retention of the aqueous fraction (Heß et al., 2017). Although material was lost at each step, LTA from WT cells survived the procedure unscathed, whereas pelleted TA from the ΔtacL strain was lost at the first step, which involves boiling at low pH (Figure 6D). In that case, labeled material with a lower electrophoretic mobility appeared as a smear like that of solubilized WTA.
 
@@ -111,7 +252,7 @@ The combined results show that TacL is indeed the glycosyltransferase responsibl
 
 To evaluate if the membrane-bound TA precursors accumulating in the ΔtacL strain are located on the inner or outer side of the plasma membrane, cells were grown in C-medium in the presence of 0.2 µM aCho, and the secondary labeling with DBCO-AF488 was performed by a 2-hr incubation at room temperature either before, or after cell lysis. Samples were analyzed by gel electrophoresis (Figure 6F). LTA in the WT strain or membrane-bound precursors in the ΔtacL strain were equally labeled before and after lysis, like WTA. In contrast, cytoplasmic azido-phosphocholine was only labeled after lysis, demonstrating that the DBCO-AF488 dye is membrane impermeant. These observations are in agreement with the polymerization of TA taking place at the cell surface (Gibson and Veening, 2023).
 
-## LytR is the main WTA phosphotransferase
+### LytR is the main WTA phosphotransferase
 
 Previous work indicated that LytR is the major enzyme mediating the final step in WTA formation (Minhas et al., 2023). As shown in Figure 6A, the proportion of WTA decreased in the ΔlytR strain. However, there was still WTA present, indicating that perhaps another LCP protein can also produce WTA. To further evaluate the contribution of LytR in WTA assembly, the relative amount of WTA and LTA in WT and ΔlytR cells was determined by densitometry of in-gel fluorescence, following growth in C-medium supplemented with 200 µM aCho, or pulse labeling in BHI with 1.5 mM aCho (Figure 6—figure supplement 1). In the WT strain, labeled WTA in this particular experiment was found to represent ~80% of the total labeled TA, whereas in the ΔlytR strain, this proportion decreased to ~40%. Thus, the ratio of WTA to LTA amounts is decreased about five to sevenfold in the absence of LytR.
 
@@ -141,23 +282,61 @@ The propensity of S. pneumoniae membrane to sediment at low centrifugal speed, d
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. pneumoniae)</td>
+      <td>WT</td>
+      <td>Gift from J.-P. Claverys, Toulouse, France</td>
+      <td>sspCM246</td>
+      <td>R800, rpsL1, Δcps, adr+, StrR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pneumoniae)</td>
+      <td>ΔtacL</td>
+      <td>This study</td>
+      <td>sspCM514</td>
+      <td>R800, rpsL1, ΔtacL, Δcps, adr+, StrR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. pneumoniae)</td>
+      <td>ΔlytR</td>
+      <td>This study</td>
+      <td>sspCM493</td>
+      <td>R800, rpsL1, ΔlytR, Δcps, adr+, StrR</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and culture conditions
 
 S. pneumoniae strains are listed in the Key resource table. Glycerol stocks of WT, ΔlytA, ΔtacL, and ΔlytR cells were used to inoculate Bacto BHI broth (BD), C-medium (Trouve et al., 2021a). Cultures were grown at 37°C in a static incubator with a 5% CO2 atmosphere. Two successive dilutions of the cultures were performed to ensure that steady-state growth was reached. To characterize growth phases, cells were grown in 2.5 ml of BHI or C-medium in 24-well plates sealed with a transparent film. Cultures were inoculated at an OD600 of 0.03 (or 0.12 for the ΔlytR strain in C-medium). In a BMG Fluostar Omega plate reader at 37°C, turbidity was measured at 595 nm every 20 min after 5 s agitation.
 
-## High-pressure freezing
+### High-pressure freezing
 
 Cells at an OD600 of 0.2–0.3 were collected by centrifugation. Pellets were supplemented with or without 20% dextran in phosphate-buffered saline (PBS). Pellets supplemented with dextran were drawn into copper tubes. Pellets without dextran were dispensed in 3-mm type A gold/copper platelets, covered with the flat side of a 3-mm type-B aluminum platelet (Leica Microsystems). The samples were vitrified by high-pressure freezing using an HPM100 system (Leica Microsystems) in which cells were subjected to a pressure of 210 MPa at –196°C.
 
-## CEMOVIS and CETOVIS
+### CEMOVIS and CETOVIS
 
 Copper tubes were trimmed at <−140°C in an EM UC7 Cryo-ultramicrotome equipped with a micromanipulator (Leica Microsystems). Ultrathin sections were produced with a 35° diamond cryo-knife (Diatome) at a nominal thickness of 70 nm and at a nominal cutting feed of 50 mm⋅s–1. Sections were transferred onto Quantifoil carbon-covered 200-mesh copper grids using the micromanipulator and an antistatic device for favoring the attachment of the ribbon to the grid. Grids were transferred to a Gatan cryoholder kept at –170°C and inserted into a TF20 cryo-electron microscope (FEI) equipped with a tungsten field emission gun. The accelerating voltage was 200 kV. Specimens were irradiated with a low electron dose. Images were recorded with a CMOS CETA camera at a nominal magnification ranging from ×5000 to ×29,000 (pixel size 8.1–3.7 Å). No peculiar image processing was performed on the micrograph. For CETOVIS, tilt series were acquired from –50° to +50° with an increment of 2.5° according to the dose symmetric Hagen scheme. Images were acquired at a defocus of –10 μm at nominal magnification ×29,000 (pixel size 3.7 Å). Tilt series were aligned, and tomogram reconstructed using the IMOD software package (Mastronarde, 2006), using the patch tracking method, followed by weighted back projection and SIRT like filter for purposes of representation.
 
-## Freeze-substitution and ultramicrotomy at room temperature
+### Freeze-substitution and ultramicrotomy at room temperature
 
 The freeze-substitution and ultramicrotomy protocols were derived from Bauda et al., 2024. Briefly, following high-pressure freezing, the vitrified pellets were freeze-substituted at –90°C for 80 hr in acetone supplemented with 2% OsO4 (AFS2; Leica Microsystems). The samples temperature was increased slowly to –60°C (2°C⋅hr–1). The temperature was further raised to –30°C (2°C⋅hr–1) after 8–12 hr, and finally to 0°C within 1 hr. The temperature was decreased to –30°C within 30 min, and rinsed in pure acetone four times. The samples were infiltrated with progressively higher concentrations of resin (Embed812, EMS) in acetone, while the temperature was gradually increased to 20°C. Pure resin was supplemented at room temperature. Following polymerization at 60°C for 48 hr, 70 nm thick sections were produced using a Leica UC7 ultramicrotome and placed onto formvar carbon-coated 200-mesh copper grids (Agar Scientific). Uranyl acetate (2% during 5 min) was used to stain the sections, followed by a 5-min incubation in lead citrate. After rinsing in water, the sections were imaged using a Tecnai G2 spirit BioTwin (FEI) microscope operating at 120 kV, at nominal magnifications of 11,000 to ×23,000 (pixel size of 5.6–2.8 Å), with an Orius SC1000B CCD camera (Gatan).
 
-## Conventional and super-resolved fluorescence microscopy
+### Conventional and super-resolved fluorescence microscopy
 
 Cultures in exponential phase (25 ml, OD600 of 0.3) were centrifuged at 3220 × g at room temperature for 15 min. The bacterial pellets were resuspended in 1/25th original volume of pre-warmed BHI supplemented with either 2 mM azido-D-Ala-D-Ala for PG labeling or 1.5 mM aCho for labeling of the TA, and incubated for 5 min at 37°C water bath (the ‘pulse’ period).
 
@@ -173,29 +352,29 @@ Observations were made with an Abbelight SAFe 360 commercial STORM microscope. F
 
 The 15,000 frame sets were processed with the FIJI plugin ThunderSTORM, which localizes the center of a Gaussian function fitted to each individual fluorescence signal and returns a data table containing the localization coordinates of all labeled molecules. Correction of drifts occurring during each set of acquisition and reconstruction of the final super-resolution images were performed in the same software.
 
-## TA labeling, cell lysis, and fractionation for electrophoretic analysis
+### TA labeling, cell lysis, and fractionation for electrophoretic analysis
 
 TA were labeled by growing cells WT or mutant strains in C-medium in the presence of 200 µM aCho to an OD600 of 0.5. Cells were harvested, washed and resuspended to an OD600 of 15 in 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2 containing 0.36 mg⋅ml–1 lysozyme, 0.32 mg⋅ml–1 mutanolysin, 0.36 mg⋅ml–1 RNase, 0.36 mg⋅ml–1 DNase, and 25 µM DBCO-AF488. After lysis overnight on wheel at room temperature cells were centrifuged for 2 min at 1250, 5000, or 20,000 × g. The pellets were resuspended in the same volume. An aliquot of the 20,000×g supernatant was incubated at 37°C for 2 hr with 10 kU of calf intestinal alkaline phosphatase.
 
 Samples were then analyzed by electrophoresis on polyacrylamide gel (12%, acrylamide:bis-acrylamide 29:1) in the presence of 1% SDS with a Tris/tricine buffer system. The gels were imaged by trans-illumination with UV light without saturation on a BioRad Chemidoc imager.
 
-## Lipid analysis
+### Lipid analysis
 
 WT cells were grown to an OD600 of 0.5 in BHI and harvested by centrifugation for 15 min at 3220 × g. Cells were washed twice with 1 ml 50 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM MgCl2 and resuspended in 1 ml of the same solution containing 0.36 mg⋅ml–1 lysozyme, 0.32 mg⋅ml–1 mutanolysin, 0.36 mg⋅ml–1 RNase, and 0.36 mg⋅ml–1 DNase. After overnight incubation at room temperature. Half of the sample was centrifuged for 2 min at 20,000 × g, and the pellet was resuspended in the initial volume of the same buffer. The pellet, supernatant, and whole 500 µl fractions were each extracted twice with 500 µl CHCl3. The organic fractions were dried and redissolved in 40 µl CHCl3/methanol (80:20) prior to analysis by thin layer chromatography on 0.2 mm silica plates (Macherey-Nagel Xtra SIL G) developed with CHCl3/methanol/acetic acid (80:15:8) and stained with iodine vapour.
 
-## Negative stain electron microscopy of pellets
+### Negative stain electron microscopy of pellets
 
 Negative Stain-Mica-carbon Flotation Technique (MFT)-Valentine procedure was applied (Valentine et al., 1968). Samples were absorbed to the clean side of a carbon film on mica, stained and transferred to a 400-mesh copper grid. The images were taken under low dose conditions (<10 e−⋅Å−2) with defocus values between 1.2 and 2.5 μm on a Tecnai 12 LaB6 electron microscope at 120 kV accelerating voltage using CCD Camera Gatan Orius 1000. The stain was Sodium Silico Tungstate Na4O40SiW12 at 1% in distilled water (pH 7–7.5).
 
-## Isolation of membrane-bound TA for NMR analysis
+### Isolation of membrane-bound TA for NMR analysis
 
 WT cells grown in BHI to OD600 0.8 were harvested by centrifugation (20 min, 4500 × g) and resuspended in 10 ml of 50 mM Tris-HCl pH 8, 150 mM NaCl, 5 mM MgCl2 with 10 µg⋅ml−1 each of RNAse and DNAse, 9 µg⋅ml–1 mutanolysin, 50 µg⋅ml–1 lysozyme. After overnight incubation on a rotating wheel at 20°C, the lysate was centrifuged for 10 min at 15,000 × g. The pellet was washed thrice with 5 ml water and thrice with 3 ml 100 mM ammonium acetate pH 4.2. The pellet was resuspended in 2.5 ml of the same buffer and 2.5 ml of water-saturated butanol. After vigorous mixing for 30 min, phases were separated by centrifugation at 3220 × g for 10 min. The butanol phase was reextracted twice with 2.5 ml water. The aqueous phases were combined and extracted with 8 ml and then 2 ml CHCl3. The resulting combined chloroform phases was reextracted with 4 ml water. All water phases were combined and lyophilized. One half of the sample was dissolved in 200 µl of D2O for NMR analysis. The other half of the sample was dissolved in 500 µl hydrazine 64% and incubated at room temperature for 4 hr prior to addition of 500 µl acetone. The sample was dried under nitrogen flow, dissolved in 500 µl acetone and dried again. After dissolution in 200 µl D2O and removal of insoluble material by centrifugation at 20,000 × g for 10 min, the hydrazinolized sample was analyzed by NMR.
 
-## NMR analysis
+### NMR analysis
 
 NMR experiments were recorded on 600 and 700 MHz spectrometers equipped with a 5-mm TCI probe at 50°C. 13C-1H HSQC (constant time) and 2D 13C-edited 1H-1H total correlated spectroscopy (TOCSY) were used to confirm 1H-13C assignment. 31P 1D experiment was recorded with 1H decoupling during acquisition and a recycling delay of 1 s. Data were processed with TopSpin 3.5 (Bruker) and analyzed with CcpNmr 2.5.
 
-## Titration of cellular TA
+### Titration of cellular TA
 
 A preculture of WT cells in BHI was washed twice with C-medium without choline prior to inoculating a C-medium culture containing 200 µM aCho at an OD600 of 0.06. After incubation at 37°C, cells were harvested when the OD600 reached 0.265, that is after more than two generations in C-medium.
 
@@ -207,15 +386,15 @@ The cell lysate and dilutions thereof were mixed with an equal volume of DBCO-AF
 
 Samples were then analyzed by electrophoresis on polyacrylamide gel (17%, acrylamide:bis-acrylamide 29:1) in the presence of 1% SDS with a Tris/tricine buffer system. The gels were imaged by trans-illumination with UV light without saturation on a Bio-Rad Chemidoc imager. Band intensities were quantified using ImageJ.
 
-## TA characterization at different stages of cell culture
+### TA characterization at different stages of cell culture
 
 WT and ΔlytA cells were grown for over two generations in chemically defined medium (C-medium) devoid of choline but supplemented with 200 µM aCho over two generations. Cells were harvested during the exponential phase of growth at an OD600 of 0.38, at the onset of the stationary phase at the OD600 of 0.75, and when the WT cells started to lyse (OD600 0.46). TA were labeled and cell were lysed, LTA and WTA were separated by centrifugation and analyzed by electrophoresis as described above.
 
-## TA pulse and pulse–chase labeling
+### TA pulse and pulse–chase labeling
 
 Exponentially growing WT cells in C-medium were harvested and resuspended at an OD600 of 8 in the same medium containing 200 µM aCho and no choline. After 0, 2, 5, and 10 min, 150 µl aliquots were withdrawn, immediately centrifuged for 30 s at 10,000 × g and resuspended in the same volume of 50 mM Tris-HCl pH 8, 150 mM NaCl. The washing procedure was repeated once prior to lysis, secondary fluorescent click-labeling and fractionation as above. Pellets containing LTA were resuspended in one-eighth volume for concentration. TA were analyzed by gel electrophoresis as above.
 
-## Hydrolysis of sedimented TA from ΔtacL cells
+### Hydrolysis of sedimented TA from ΔtacL cells
 
 Three procedures were tested. First, pellets of labeled lysates of WT or ΔtacL cells were resuspended in solutions of 150 mM NaCl buffered with either 50 mM Tris-HCl pH 8 or ammonium acetate pH 4.2, and incubated for 3 hr at room temperature or 99°C.
 
@@ -223,7 +402,7 @@ Second, the LTA isolation procedure of Hess and colleagues (Heß et al., 2017) w
 
 Third, recombinant colicin M from P. aeruginosa (generous gift from T. Touzé) prepared as described previously (Barreteau et al., 2012), was added at various concentrations to resuspended pellets and the mixtures were incubated overnight at room temperature.
 
-## Notes on the fractionation of LTA and WTA
+### Notes on the fractionation of LTA and WTA
 
 Although sedimentation of LTA was observed at relative centrifugal force as low as 2000 × g, the pelleting was not always complete, even after prolonged centrifugation at 20,000 × g. Incomplete cell lysis cannot account for the incomplete pelleting of LTA, since intact cells or large fragments would be expected to add to the pellet material. We found out that the quality of the separation of LTA from solubilized WTA by sedimentation depended on the amount of recombinant LytA used during the lysis (Figure 4—figure supplement 1A). This parameter was difficult to adjust since the exactly adequate amount appeared to depend on the particulars of the experiment (strain, cell density). We think that the multivalent choline-binding domain of LytA crosslinks LTA bound to membrane vesicles, leading to the formation of large aggregates that sediment more easily. In support of this explanation, the presence of recombinant LytA also impacts the migration of the solubilized TA, causing species with lower electrophoretic mobilities to be more abundant at the top of the gels.
 
@@ -231,7 +410,7 @@ The fractionation of LTA and WTA with the procedure used previously (Flores-Kim 
 
 Indeed, when cells, mechanically broken using a microfluidizer, were fractionated at different centrifugal speeds (Figure 4—figure supplement 1C), most of the membranes were found in the pellet sedimented at 100,000 × g. This different behavior indicates that the mechanical processing impacts the sedimentation properties of membranes, probably by changing the size of the fragments. Since the large minimal volume of culture compatible with the microfluidic equipment precluded labeling of the TA, the membranes were monitored by Western blot using an antibody against the membrane protein PBP2x. A fraction of the same culture was treated by direct enzymatic lysis and low-speed centrifugation. In this case, no PBP2x was detected, presumably due to degradation by proteases present in the commercial mutanolysin, even in the presence of protease inhibitors.
 
-## Notes on the electrophoresis
+### Notes on the electrophoresis
 
 Several points should be made regarding the electrophoretic system. We used gels with acrylamide concentrations of either 12% or 17%. Although the acrylamide concentration had little consequence on the separation of WTA and LTA, we observed that the migration of small soluble compounds was greatly affected (Figure 4—figure supplement 2A, B). Thus, the phospho-choline-triazole-AF488 migrates a lesser distance than the choline-triazole-AF488 or the DBCO-AF488 in 12% acrylamide gels, whereas the opposite occurs in 17% gels. The separation of the choline-triazole-AF488 and the DBCO-AF488 is not sufficient in 17% gels.
 

@@ -46,19 +46,39 @@ Here, we applied live cell imaging, biochemical assays, and iterative computatio
 
 ## Results
 
-## A mechanistic model of proximal insulin signalling
+### A mechanistic model of proximal insulin signalling
 
 The recruitment behaviour of Akt in response to insulin is indicative of negative feedback, however the source of this feedback is unknown. Given the complexity of feedback architectures, we developed a computational model of insulin signalling to help dissect potential origins of negative feedback in this system (Figure 1A). Our model included nodes representing proximal insulin signalling (IR, IRS/PI3K) and accounted for various intricacies of Akt activation, such as its phosphorylation states (at both T309 and S474) as well as the positive feedback loop onto mTORC2 in response to SIN1 T86 phosphorylation (Humphrey et al., 2013; Yang et al., 2015). The model also included the previously described negative feedback loop from mTORC1/S6K to IRS/PI3K. As mTORC1 activation requires Akt-mediated phosphorylation of AKT1S1/PRAS40 (Sancak et al., 2007; Wang et al., 2007), we incorporated this feedback mechanism into the model using phospho-PRAS40 (T246) as a surrogate for mTORC1 activation (Figure 1A). The new model was formulated using ordinary differential equations (ODEs) and implemented in MATLAB that mathematically represents the network interactions as a series of ODEs based on established kinetic laws (see Materials and methods and Supplementary file 1 for detailed model descriptions).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depicting model architecture with negative feedback via mTORC1 onto the insulin receptor substrate/phosphoinositide 3-kinase (IRS/PI3K) node (IR, insulin receptor; NFB, negative feedback). (B) 3T3-L1 adipocytes expressing TagRFP-T-Akt2 were treated with 1 or 100 nM insulin. Recruitment was assessed using live cell total internal reflection fluorescence microscopy (TIRFM) (n = 9 for 1 nM and n = 10 for 100 nM). (C) 3T3-L1 adipocytes were treated with 1 or 100 nM insulin for the times specified. Lysates were immunoblotted with antibodies as specified, with 14-3-3 as a loading control. A representative image for five to eight independent biological replicates is presented. (D) Quantification of panel C. Data is normalised to 14-3-3 and expressed as a percentage of the maximum phosphorylation observed for each phospho-site in response to 100 nM insulin (1 nM; n = 8, 100 nM; n = 5; p, phosphorylated). (E) Model 1 (mTORC1 to IRS/PI3K) was calibrated (fitted) using Akt recruitment, T309 and S474 phosphorylation, and PRAS40 phosphorylation in response to 1 and 100 nM insulin (purple and blue, respectively) and overlaid with the experimentally observed kinetics for each outcome. The time axes are presented as a log2 scale to highlight the early response kinetics, with 0 added for completeness. Model simulations are shown as dotted lines while experimental kinetics are shown as smooth lines as the mean ± SEM. (F) Model prediction of the effect of mTORC1 inhibition on Akt recruitment in response to 1 nM insulin. The value of parameter Ki2 was set to null to model complete inhibition of mTORC1 catalytic activity. (G) 3T3-L1 adipocytes expressing TagRFP-T-Akt2 were treated with 20 nM rapamycin for 5 min followed by 1 nM insulin. Recruitment was assessed using TIRFM (38 control cells [n = 2], 39 rapamycin treated cells [n = 3]). (H) 3T3-L1 adipocytes were treated with 20 nM rapamycin for 5 min followed by 1 nM insulin for 10 min. Lysates were immunoblotted with antibodies as specified, with 14-3-3 as a loading control. A representative western blot (left) and quantification (right) is presented (n = 3; p, phosphorylated). All data expressed as mean ± SEM; PM, plasma membrane; IR, insulin receptor; Rapa, rapamycin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Box and whiskers plots (median; interquartile range and min/max) of the local minima from 200 independent calibration runs (repeats) of negative feedback models 1 (mammalian target of rapamycin complex 1/S6-kinase [mTORC1/S6K] to insulin receptor substrate/phosphoinositide 3-kinase [IRS/PI3K]), 2 (rapamcyin constrained), and 3 (no negative feedback), where for each run, we randomly resampled the starting parameter values as input for the genetic algorithm. The lowest of these were deemed the global optimum (dark border) and were used for the simulations and predictions. (B and C) Model simulations of Akt recruitment, T309 and S474 phosphorylation and PRAS40 phosphorylation in response to 1 and 100 nM insulin (simulation; dotted lines), overlaid with the experimentally observed kinetics for each outcome (experiment; solid lines, mean ± SEM) for the negative feedback models 2 (B) and 3 (C). Purple and blue indicate 1 and 100 nM insulin, respectively. NFB, negative feedback; PM, plasma membrane.
+
 To train and evaluate our model, we first assessed the recruitment of TagRFP-T tagged Akt2 (described previously Norris et al., 2017) in live 3T3-L1 adipocytes using total internal reflection fluorescence microscopy (TIRFM). This cell line was used as they are exquisitely insulin responsive, providing a high signal-to-noise ratio for evaluating phenotypic responses. In response to 1 nM insulin, plasma membrane (PM)-associated Akt displayed overshoot behaviour. Specifically, PM levels of Akt reached a maximum at 75 s post-insulin stimulation, followed by a rapid decline that reached a new steady state that was roughly half of its maximum by 10 min post-stimulation (Figure 1B). In response to 100 nM insulin, the maximum recruitment of Akt was fourfold higher than 1 nM insulin, with an initial overshoot followed by a secondary increase (Figure 1B), which may reflect the engagement of a positive feedback signal at this dose. A similar overshoot was observed for insulin-stimulated phosphorylation of Akt at its activating sites T309 and S474 (Figure 1C,D), indicating that the overshoot in Akt recruitment is reflected in its activation. The kinetics of T309 phosphorylation were much faster than S474 phosphorylation. Interestingly the phosphorylation of Akt substrates (AS160, FOXO1, GSK3, and PRAS40) did not exhibit an overshoot (Figure 1C,D). Although Akt singly phosphorylated at T309 is active, the delayed onset of S474 phosphorylation doubles Akt activity (Kearney et al., 2019) and likely extends the peak phosphorylation observed for these substrates.
 
-## Negative feedback is not mediated via mTORC1
+### Negative feedback is not mediated via mTORC1
 
 Our model, when trained with the Akt recruitment, Akt phosphorylation, and PRAS40 phosphorylation data, was able to reasonably recapitulate the experimental data (model 1; Figure 1E). We next used our model to predict the effect of a 1 nM insulin stimulus in the presence of the mTORC1 inhibitor rapamycin, to block mTORC1-mediated negative feedback. The model predicted a loss of the overshoot and a 25% increase in the recruitment of Akt to the PM (Figure 1F). To test this prediction, we recapitulated these conditions in 3T3-L1 adipocytes. Despite complete inhibition of mTORC1 activity by rapamycin, no change was observed in either Akt recruitment (Figure 1G) or phosphorylation (Figure 1H). When we included this rapamycin data for model calibration, the model could not reasonably recapitulate the experimental data (model 2; Figure 1—figure supplement 1A,B), further suggesting that mTORC1 is unlikely to be involved in negative feedback under these conditions. Furthermore, calibration of a model without negative feedback was unable to recapitulate the overshoot in Akt recruitment or phosphorylation (model 3; Figure 1—figure supplement 1C). Together, these data point to a feedback mechanism during the early insulin response that drives the overshoot in Akt recruitment that is independent of mTORC1.
 
-## Negative feedback is Akt-dependent
+### Negative feedback is Akt-dependent
 
 Based on the existing model architecture, we hypothesised that negative feedback from PDPK1, mTORC2, or Akt could give rise to an overshoot in Akt recruitment when connected to an upstream node such as IRS/PI3K or PTEN. To explore these mechanisms, we constructed six additional models that each incorporated a potential negative feedback mechanism and calibrated each with our training data (models 4–9; Figure 2A, Figure 2—figure supplement 1A–F, Supplementary file 1). This allowed us to examine possible competing feedback structure hypotheses, by performing separate model calibrations and comparing how well each of the model variants fitted the experimental data. Identifiability analysis (Maiwald et al., 2016; Rateitschak et al., 2012; Raue et al., 2009) demonstrated that all models were similarly unidentifiable, with at least one parameter not identifiable in each model (Supplementary file 2), which is not surprising given the size and scope of the models (see Materials and methods for detailed description).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic depicting the model architecture including the hypothetical negative feedback loops from phosphoinositide-dependent protein kinase 1 (PDPK1), mammalian target of rapamycin complex 2 (mTORC2), or Akt, onto phosphatase and tensin homolog (PTEN) or the insulin receptor substrate/phosphoinositide 3-kinase (IRS/PI3K) node (IR, insulin receptor; NFB, negative feedback). (B) Box and whiskers plots (median; interquartile range and min/max) of the local minima from 200 independent calibration runs (repeats) of negative feedback models 4–9, where for each run, we randomly resampled the starting parameter values as input for the genetic algorithm. The lowest of these were deemed the global optimum (dark border) and these were used for simulations and predictions. (C) Predictions from models 7–9 for the effect of Akt inhibition on Akt recruitment in response to 1 nM insulin. The parameter values of Ki2a, Ki2b, Kf11a, and Kf11b were set to null in order to model Akt inhibition by GDC0068. (D) 3T3-L1 adipocytes expressing TagRFP-T-Akt2 were treated with 10 μM GDC0068 for 5 min followed by 1 nM insulin. Recruitment was assessed using total internal reflection fluorescence microscopy (TIRFM) (41 control cells [n = 3], 43 GDC0068-treated cells [n = 3]). (E) 3T3-L1 adipocytes were treated with 10 μM GDC0068 or vehicle control for 5 min followed by 1 nM insulin for 10 min. Subcellular fractionation was performed to obtain the plasma membrane. Lysates were immunoblotted with antibodies as specified, with caveolin and 14-3-3 as loading controls. A representative western blot (left) and quantitation of plasma membrane Akt2 (right) are presented (n = 6, unpaired two-tailed t-test; WCL, whole cell lysate). (F) 3T3-L1 adipocytes expressing WT, W80A, W80A-T309A-S474A, or W80A-K181A TagRFP-T-Akt2 were exposed to 20 μM MK2206 for 3 min, followed by 1 and 100 nM insulin. Recruitment was assessed using TIRFM (16 WT cells [n = 2], 93 W80A cells [n = 10], 53 W80A-K181A cells [n = 4], 35 W80A-T309A-S474A cells [n = 3]). (G) 3T3-L1 adipocytes expressing WT, W80A, W80A-T309A-S474A, or W80A-K181A TagRFP-T-Akt2 were treated with 1 and 100 nM insulin in the absence of MK2206. Recruitment was assessed using TIRFM (41 WT cells [n = 3], 60 W80A cells [n = 7], 21 W80A-K181A cells [n = 2], 22 W80A-T309A-S474A cells [n = 2]). (H) Model predictions of the effect of losing Akt T309 or Akt S474 phosphorylation on Akt recruitment in response to 1 and 100 nM insulin. The parameter values of Kf6 and Kf7 were set to null to represent loss of Akt T309 and Akt S474 phosphorylation, respectively. (I) 3T3-L1 adipocytes expressing W80A, W80A-T309A, or W80A-S474A TagRFP-T-Akt2 were exposed to 20 μM MK2206 for 3 min, followed by 1 and 100 nM insulin. Recruitment was assessed using TIRFM (55 W80A cells [n = 9], 57 W80A T309A cells [n = 6] 121 W80A S474A cells [n = 12]). All data expressed as mean ± SEM; PM, plasma membrane; *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The hypothetical negative feedback models 4 (A), 5 (B), 6 (C), 7 (D), 8 (E), and 9 (F) were used to predict Akt recruitment, T309 and S474 phosphorylation, and PRAS40 phosphorylation in response to 1 and 100 nM insulin (simulation; dotted lines). This was overlaid with the experimentally observed kinetics for each outcome (experiment; solid lines, mean ± SEM). Purple and blue indicate 1 and 100 nM insulin, respectively. PM, plasma membrane.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) 3T3-L1 adipocytes were preincubated with vehicle (DMSO) or 10 μM GDC0068 for 5 min, then stimulated with 1 nM insulin for times specified. Lysates were immunoblotted with antibodies as specified, with 14-3-3 as a loading control (n = 3; p, phosphorylated). (B) Total internal reflection fluorescence microscopy (TIRFM) was used to assess plasma membrane recruitment of TagRFP-T-Akt2 in 3T3-L1 fibroblasts in response to 1 nM insulin, 100 nM insulin, and 10 μM GDC0068 (51 cells). TIRFM was used to assess recruitment of TagRFP-T-Akt2 in (C) HEK294E (45 cells), (D) HeLa (48 cells), and (E) MCF7 (8 cells) cells in response to 100 nM insulin followed by the addition of 10 μM GDC0068, then 300 nM wortmannin. (F) Overlay of the TIRF recruitment profiles of 3T3-L1 adipocytes expressing TagRFP-T-Akt2 in response to 1 and 100 nM insulin, with varying types of Akt inhibition; in the presence of GDC0068 (WT+GDC), phospho-dead (W80A T309A S474A) and kinase-dead (W80A K181A) MK2206 resistant mutants in the presence of MK2206. (G) The kinetics of insulin-stimulated Akt recruitment (from Figure 1B) overlaid with Akt phosphorylation and substrate phosphorylation (from Figure 1C,D) in 3T3-L1 adipocytes. All data expressed as mean ± SEM; PM, plasma membrane.
 
 Quantitative assessment of model fitting based on the objective function revealed that Akt to IRS/PI3K (model 9) best matched the experimental data, followed by mTORC2 to PTEN (model 7), and then Akt to PTEN (model 8) (Figure 2B). Consistent with this, qualitative assessment of models 7–9 revealed greater consistency between model dynamics and experimental data compared to models 4–6 (Figure 2—figure supplement 1A–F). For example, model 4 showed a significant discordance in pAkt S474 dynamics, while models 5 and 6 displayed delayed pAkt T309 accumulation in response to 1 nM insulin (Figure 2—figure supplement 1A–C). Overall, since models 7–9 displayed superior quantitative and qualitative consistency with experimental data, we focused on interrogating these models hereafter.
 
@@ -66,19 +86,27 @@ Each of the feedback loops in these three models would be driven by Akt (Akt to 
 
 To ensure these effects were not GDC0068-specific, but rather a general feature of Akt inhibition, we employed an orthogonal chemical genetics approach to inhibit Akt. The W80A mutation in Akt renders it insensitive to inhibition by MK2206, a compound that prevents Akt PM recruitment (Wu et al., 2010). Thus, MK2206 can block endogenous Akt activation, leaving ectopic W80A Akt kinase-dead mutants to be specifically interrogated in cells (Green et al., 2008; Kajno et al., 2015; Kearney et al., 2019). In the presence of MK2206, W80A TagRFP-T-Akt2 displayed similar recruitment kinetics to WT TagRFP-T-Akt2 (Figure 2F), consistent with our earlier study (Kearney et al., 2019). We assessed insulin-stimulated recruitment of two W80A kinase-dead TagRFP-T-Akt2 mutants, which confer loss of kinase activity by differential mechanisms; by preventing Akt phosphorylation at its activating sites (W80A-T309A-S474A; Beg et al., 2017), or by preventing ATP binding (W80A-K181A; Cong et al., 1997). Both mutants exhibited 3.5-fold augmented recruitment and loss of overshoot behaviour compared to W80A Akt (Figure 2F). These responses phenocopied the recruitment of WT Akt in the presence of GDC0068 (Figure 2—figure supplement 2F), and again were remarkably similar to the model prediction with the removal of feedback from Akt to IRS/PI3K (Figure 2C). In the absence of MK2206, the PM recruitment of the kinase-dead mutants was still potentiated, but also exhibited an overshoot, suggesting competition with endogenous Akt (Figure 2G). Taken together, these data indicate the presence of an Akt-dependent feedback signal which limits its activation at the PM, likely through the IRS/PI3K node.
 
-## Phosphorylation of Akt at S474 is not required for negative feedback engagement
+### Phosphorylation of Akt at S474 is not required for negative feedback engagement
 
 While phosphorylation of Akt at T309 is essential for Akt kinase activity (Alessi et al., 1996a; Kearney et al., 2019), the role of S474 phosphorylation remains controversial. However, in adipocytes, we have shown S474 phosphorylation is required only for maximal kinase activity (Kearney et al., 2019). As the overshoot in Akt recruitment correlated with the kinetics of T309 phosphorylation, but not S474 phosphorylation (Figure 2—figure supplement 2G), we hypothesised that feedback is rapidly engaged following Akt T309 phosphorylation, and that S474 phosphorylation is not required for feedback engagement.
 
 To test this, we simulated the effect of losing either T309 or S474 phosphorylation on insulin-stimulated Akt recruitment in our three models (Figure 2H). As expected, the predictions for loss of T309 phosphorylation in each model was identical to their prediction of Akt inhibition (Figure 2C). However, each model’s prediction for loss of S474 phosphorylation was markedly different (Figure 2H). We tested these predictions experimentally by observing insulin-stimulated recruitment of W80A-T309A and W80A-S474A TagRFP-T-Akt2 by TIRFM (Figure 2I). Loss of S474 phosphorylation resulted in an attenuated overshoot in response to 1 nM insulin but no difference in response magnitude compared to control. This recruitment profile is consistent with a subtle loss of feedback, which likely occurs because Akt is only fully active once phosphorylated at both T309 and S474 residues (Alessi et al., 1996a; Kearney et al., 2019). An additional twofold increase was observed with 100 nM insulin, similar to control. In response to 1 nM insulin, W80A-T309A Akt displayed a loss of overshoot and a threefold increase in PM association in comparison to control (Figure 2I). This phenocopied chemical and genetic inhibition of Akt (Figure 2D,F), which was expected since T309A Akt has no kinase activity (Alessi et al., 1996a; Kearney et al., 2019). Additionally, with a subsequent 100 nM insulin stimulus, there was only a modest increase in W80A-T309A recruitment. These response profiles were in close agreement with the predictions arising from the Akt to IRS/PI3K model (Figure 2H). These combined modelling and experimental analyses support that the phosphorylation of Akt at S474 is largely redundant in activating the negative feedback.
 
-## Akt regulates PI(3,4,5)P3 abundance
+### Akt regulates PI(3,4,5)P3 abundance
 
 Irrespective of where the feedback was engaged, all three models assumed that Akt regulates PIP3 levels through negative feedback. To assess whether this was the case, we measured insulin-stimulated PIP3 content in adipocytes, in the presence or absence of Akt inhibition. We utilised three small-molecule inhibitors, which abolish Akt kinase activity via distinct mechanisms: by binding the ATP-binding site of Akt (GDC0068), by preventing Akt PM recruitment (MK2206), and by inhibiting PDPK1 to prevent Akt T309 phosphorylation (GSK2334470) (Figure 3—figure supplement 1). Stimulation with 1 nM insulin increased PIP3 content approximately fivefold relative to basal, confirming the validity of the assay (Figure 3A). Strikingly, each inhibitor further augmented insulin-stimulated PIP3 abundance approximately fivefold relative to insulin alone (Figure 3A), suggesting that Akt regulates PIP3 abundance.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig3-v1.jpg)
+
+**Figure 3.:** (A) 3T3-L1 adipocytes were treated with 10 μM GDC0068, 10 μM MK2206, 10 μM GSK2334470, or vehicle control for 15 min, followed by 1 nM insulin for 10 min. Lipids were extracted from the cells and PI(3,4,5)P3 (PIP3) mass measured using a competitive ELISA. PIP3 is expressed relative to PI(4,5)P2 obtained from the same samples (n = 6–7). Boxes capture lower quartile and upper quartile with the median displayed as a horizontal line in the middle; whiskers are min and max. (B) 3T3-L1 adipocytes expressing phosphoinositide-dependent protein kinase 1 (PDPK1)-eGFP were stimulated with 1 and 100 nM insulin, in the presence of 10 μM GDC0068, 10 μM MK2206, or vehicle control. Recruitment was assessed by total internal reflection fluorescence microscopy (TIRFM) (123 control cells [n = 3], 121 GDC0068-treated cells [n = 3], 118 MK2206-treated cells [n = 3]). (C) 3T3-L1 adipocytes expressing Gab2PH-eGFP were stimulated with 1 nM insulin, followed by 10 μM GDC0068, and then 1 μM wortmannin. Recruitment was assessed by TIRFM (11 cells, n = 3). (D) 3T3-L1 adipocytes co-expressing TagRFP-T-Akt2 and Gab2PH-eGFP were stimulated with 1 nM insulin, 10 μM MK2206 and then 1 μM wortmannin. Recruitment was assessed by TIRFM (20 cells, n = 4). (E) TagRFP-T-Akt2 recruitment responses and (F) the corresponding Gab2PH-eGFP recruitment responses of 3T3-L1 adipocytes co-expressing Gab2PH-eGFP with either WT, W80A, or W80A-T309A TagRFP-T-Akt2. Cells were treated with 10 μM MK2206 3 min prior to 1 nM insulin and then 10 μM GDC0068 (7, 8, and 9 cells expressing WT, W80A, and W80A T309A Akt2-TagRFP-T, respectively; n = 3). All data expressed as mean ± SEM; PM, plasma membrane; *p<0.05 compared to insulin alone.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 3T3-L1 adipocytes were incubated with GSK2334470 (PDPK1 inhibitor) at the indicated dose for 15 min followed by 1 nM insulin for 10 min. Lysates were immunoblotted with antibodies as specified, with 14-3-3 as a loading control (p, phosphorylated). A representative image is presented.
+
 We hypothesised that the ability of Akt to regulate PIP3 abundance would influence the recruitment of other PIP3-binding proteins, such as PDPK1 and GAB2 (Currie et al., 1999; Gu et al., 2003; Yoshizaki et al., 2007). Both PDPK1-eGFP and Gab2PH-eGFP were recruited to the PM upon insulin stimulation and displayed PM recruitment overshoots (Figure 3B,C). Furthermore, their degree of recruitment was markedly enhanced with GDC0068 and MK2206 (Figure 3B–D), consistent with increased PIP3 in the absence of Akt activity. To directly assess the requirement of Akt activity for feedback, we examined recruitment of Gab2PH-eGFP in cells co-expressing WT, W80A, or W80A-T309A TagRFP-T-Akt2. In the presence of MK2206, the Akt constructs behaved as expected (Figure 3E), while MK2206-dependent hyper-recruitment of Gab2PH-eGFP was rescued by co-expression of W80A Akt, but not WT or W80A-T309A Akt (Figure 3F). These data suggest that Akt regulates PIP3 abundance and this alters the localisation of PIP3-binding proteins.
 
-## Akt regulates PI3K recruitment to the PM
+### Akt regulates PI3K recruitment to the PM
 
 Elevated PIP3 abundance following Akt inhibition likely resulted from its increased production by PI3K, or suppressed breakdown by phosphatases such as PTEN. So far, the Akt to IRS/PI3K model best recapitulated the experimental data; however to further interrogate this model, we tested whether Akt controls PIP3 degradation. To this end, we simulated the effect of PI3K inhibition on the rate of Akt dissociation from the PM across the three models. Both the Akt to PTEN and mTORC2 to PTEN models predicted a slower rate of Akt dissociation in the absence of Akt activity, due to impaired PIP3 degradation by PTEN (Figure 4A). In contrast, the Akt to IRS/PI3K model predicted no difference in Akt PM dissociation (Figure 4A). To test this experimentally, we stimulated adipocytes expressing W80A (active) or W80A-T309A (kinase-dead) TagRFP-T-Akt2 with insulin, and then the PI3K inhibitor wortmannin, once PM Akt had achieved a steady-state concentration. There was no difference in their rate of PM dissociation, consistent with the Akt to IRS/PI3K negative feedback model (Figure 4B). We next conducted the same experiment using PDPK1-eGFP, in the presence or absence of GDC0068 or MK2206. Regardless of whether Akt was inhibited, there was no difference in the rate of PDPK1 PM dissociation (Figure 4C). To corroborate these experiments, we used adipocytes expressing constitutively active PI3K (p110*), as well as W80A (active) or W80A-T309A (kinase-dead) TagRFP-T-Akt2. Expression of p110* (Hu et al., 1995) allowed a constant rate of PIP3 production, while the rate of PIP3 degradation was unaltered. When stimulated with MK2206, there was no increase in W80A-T309A Akt recruitment, indicating no loss of feedback (Figure 4D). Furthermore, there was no difference in the PM dissociation rate between W80A and W80A-T309A Akt (Figure 4D). We next measured TagRFP-T-Akt2 recruitment in HCC1937 human breast cancer cells, which do not express PTEN, the primary PIP3 phosphatase (Kabuyama et al., 1996; Lee et al., 2018; Maehama and Dixon, 1998; Myers et al., 1998). Akt recruitment increased in response to IGF1 and increased further with GDC0068 (Figure 4E). This was consistent with the engagement of Akt-mediated feedback in the absence of PTEN.
 
@@ -90,7 +118,7 @@ Both our modelling and experimental data suggested that Akt regulates the abilit
 
 Together, these data are consistent with the Akt to IRS/PI3K negative feedback model. Specifically, upon acute growth factor stimulation, Akt translocates to the PM where it is phosphorylated and activated. Akt then engages a negative feedback mechanism that limits PM-associated PI3K and consequently lowers PIP3 abundance.
 
-## Akt releases IRS from the PM to the cytosol to limit IR-IRS interaction
+### Akt releases IRS from the PM to the cytosol to limit IR-IRS interaction
 
 We next investigated how Akt controls PI3K localisation. The speed of the feedback suggested that Akt-mediated phosphorylation of PI3K itself could drive changes in its localisation. However, PI3K does not contain an Akt substrate motif (R-X-R-X-X-S/T, where R represents arginine, X represents any amino acid, and S/T represents serine/threonine) (Alessi et al., 1996b). Furthermore, translocation of PI3K to the PM is thought to be primarily regulated by interactions with other proteins, rather than post-translational modification of PI3K itself (Rordorf-Nikolic et al., 1995). IRS1 and IRS2 are the primary adaptor proteins responsible for recruiting PI3K to the PM following insulin stimulation (White, 2003). Consequently, we explored whether Akt regulates IRS1/2 behaviour.
 
@@ -104,21 +132,41 @@ We next dissected whether these changes in IRS1/2 localisation were a product of
 
 Despite occurring independent of the IR, we hypothesised that these changes in IRS localisation would ultimately serve to shrink the pool of IRS available to interact with activated IR. Following immunoprecipitation of endogenous IRS1 or IRS2 followed by mass spectrometry, the IR was only detected in the presence of insulin, consistent with a strong insulin-dependent interaction (Figure 5J). However, the amount of IR detected was augmented in the presence of Akt inhibitors GDC0068 and MK2206 (approximately 17- and 7-fold for IRS1; 19- and 12-fold for IRS2, respectively; Figure 5J), suggesting that Akt controls the level of interaction between the IR and IRS. These data suggest that Akt limits PI3K-mediated PIP3 production by depleting PM-associated IRS, to reduce the pool of IRS available to interact with activated IR.
 
-## Phosphorylation of IRS releases it from the PM and limits Akt recruitment
+### Phosphorylation of IRS releases it from the PM and limits Akt recruitment
 
 We next explored how Akt controls IRS localisation. Phosphorylation is frequently responsible for changes in protein localisation (Cohen, 2002) and we have previously identified an abundance of insulin-regulated phosphorylation sites on IRS1/2 (Humphrey et al., 2013). Thus, we hypothesised that Akt phosphorylates IRS to release it from the PM and engage negative feedback.
 
 Collectively, IRS1 and IRS2 contained 11 phosphorylation sites within an Akt substrate motif (R-X-R-X-X-S/T) (Alessi et al., 1996b). To investigate whether these phosphorylation sites were responsible for the depletion of PM-associated IRS1/2 upon insulin stimulation, we concurrently mutated these Ser/Thr residues on human IRS1-eGFP (herein 6P IRS1) and human IRS2-eGFP (herein 5P IRS2) to alanine, to prevent phosphorylation (Figure 6A,B). We then co-expressed 6P IRS1 or 5P IRS2 with TagRFP-T-Akt2 in adipocytes and utilised TIRFM to measure changes in their localisation. Following insulin stimulation, WT IRS1/2 dissociated from the PM; however, increased PM abundance was observed for both 6P IRS1 and 5P IRS2 (Figure 6C,D). Furthermore, expression of 6P IRS1 or 5P IRS2 in adipocytes resulted in hyper-recruitment of Akt to the PM compared to cells expressing WT IRS (Figure 6C,D). This response mimicked GDC0068 treatment (Figure 2D), causing athreefold increase in PM Akt upon insulin stimulation. These data suggest that phosphorylation of IRS1/2 facilitates its removal from the PM and drives negative feedback.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig6-v1.jpg)
+
+**Figure 6.:** (A) IRS1-eGFP was concurrently mutated at six phosphorylation sites to make up ‘6P IRS1’ – S270A, S307A, S330A, T525A, S527A, and S1101A (human). (B) IRS2-eGFP was concurrently mutated at five phosphorylation sites to make up ‘5P IRS2’ – S306A, S346A, S365A, S577A, S1149A (human). Each of these Ser/Thr residues resided within an Akt substrate motif (R-X-R-X-X-S/T). Each of these residues was located outside the PH (pleckstrin homology) and PTB (phosphotyrosine-binding) domains of IRS1/2. (C) 3T3-L1 adipocytes were co-electroporated with IRS1-eGFP (WT or 6P) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by total internal reflection fluorescence microscopy (TIRFM) (95 WT cells [n = 3], 96 6 P cells [n = 3]). (D) 3T3-L1 adipocytes were co-electroporated with IRS2-eGFP (WT or 5P) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by TIRFM (139 WT cells [n = 5], 103 5P cells [n = 5]). (E) Quantification of phosphorylated IRS2 S306 (S303 in mouse) peptides across three mass spectrometry experiments. (F) Quantification of phosphorylated IRS2 S577 (S573 in mouse) peptides across three mass spectrometry experiments. (E–F) In vitro: recombinant Akt; mass spectrometry was used to quantify IRS2 phosphorylation following an in vitro assay using immunoprecipitated IRS2-FLAG and recombinant active Akt2 (n = 4, two-tailed t-test corrected for multiple comparisons). Cells: Akt inhibitors; 3T3-L1 adipocytes were treated with 10 μM GDC0068, 10 μM MK2206, or vehicle control for 5 min followed by 1 nM insulin for 10 min. Mass spectrometry-based phosphoproteomics was used to quantify IRS2 phosphorylation (n = 8, two-tailed t-test corrected for multiple comparisons). Cells: mTORC1 inhibitors; Triple-SILAC labelled HEK-293E cells were treated with 100 nM rapamycin, 3 nM rapalink, or vehicle control for 4 hr followed by 100 nM insulin for 10 min. Mass spectrometry-based phosphoproteomics was used to quantify IRS2 phosphorylation (n = 4). (G) 3T3-L1 adipocytes were co-electroporated with IRS2-eGFP (WT or S306/577A) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by TIRFM (79 WT cells [n = 3], 74 S306/577A cells [n = 3]). (H) 3T3-L1 adipocytes were co-electroporated with IRS2-eGFP (WT or S306/577A) and phosphoinositide-dependent protein kinase 1 (PDPK1)-TagRFP-T. Cells were stimulated with 1 nM insulin and recruitment assessed by TIRFM (49 WT cells [n = 3], 76 S306/577A cells [n = 3]). All data expressed as mean ± SEM; PM, plasma membrane; *p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–F) 3T3-L1 adipocytes were co-electroporated with insulin receptor substrate 1 (IRS1)-eGFP (WT or mutant) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by total internal reflection fluorescence microscopy (TIRFM) (n = 3). All data expressed as mean ± SEM; PM, plasma membrane.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A–E) 3T3-L1 adipocytes were co-electroporated with insulin receptor substrate 2 (IRS2)-eGFP (WT or mutant) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by total internal reflection fluorescence microscopy (TIRFM) (n = 3). All data expressed as mean ± SEM; PM, plasma membrane.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Quantification of phosphorylated insulin receptor substrate 2 (IRS2) S365 (S362 in mouse) peptides across three mass spectrometry experiments. (B) Quantification of phosphorylated IRS2 S1149 (S1138 in mouse) peptides across three mass spectrometry experiments. (A–B) In vitro: recombinant Akt; mass spectrometry was used to quantify IRS2 phosphorylation following an in vitro assay using immunoprecipitated IRS2-FLAG and recombinant active Akt2 (n = 4, two-tailed t-test corrected for multiple comparisons). Cells: Akt inhibitors; 3T3-L1 adipocytes were treated with 10 μM GDC0068, 10 μM MK2206, or vehicle control for 5 min followed by 1 nM insulin for 10 min. Mass spectrometry-based phosphoproteomics was used to quantify IRS2 phosphorylation (n = 8, two-tailed t-test corrected for multiple comparisons). Cells: mTORC1 inhibitors; Triple-SILAC labelled HEK-293E cells were treated with 100 nM rapamycin, 3 nM rapalink, or vehicle control for 4 hr followed by 100 nM insulin for 10 min. Mass spectrometry-based phosphoproteomics was used to quantify IRS2 phosphorylation (n = 4). All data expressed as mean ± SEM; PM, plasma membrane; *p<0.05.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/66942/elife-66942-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** 3T3-L1 adipocytes were co-electroporated with human insulin receptor substrate 1 (IRS1)-eGFP (WT or S270/527A) and TagRFP-T-Akt2. Cells were stimulated with 1 nM insulin and recruitment assessed by total internal reflection fluorescence microscopy (TIRFM) (n = 3). All data expressed as mean ± SEM; PM, plasma membrane.
+
 To investigate which of these 11 phosphorylation sites were responsible for the dissociation of IRS from the PM, we individually mutated each of these Ser/Thr residues on IRS1-eGFP and IRS2-eGFP to alanine to prevent phosphorylation. We then co-expressed this mutant with TagRFP-T-Akt2 and monitored their localisation using TIRFM. No single mutation phenocopied 6P IRS1 or 5P IRS2, with each mutant having only a subtle effect on Akt and IRS localisation (Figure 6—figure supplement 1A–F, Figure 6—figure supplement 2A–E). This indicated that at least two insulin-stimulated phosphorylation events cooperate to release IRS1/2 from the PM and limit downstream signal propagation.
 
-## Akt directly phosphorylates IRS2 at S306 and S577
+### Akt directly phosphorylates IRS2 at S306 and S577
 
 We next investigated whether any of the 11 IRS phosphorylation sites making up the 6P IRS1 and 5P IRS2 were directly phosphorylated by Akt. Our criteria for an Akt substrate were that the IRS residue (1) can be phosphorylated by Akt in vitro, (2) cannot be phosphorylated in the presence of GDC0068/MK2206 (Akt inhibitors) in cells, and (3) can be phosphorylated in the presence of rapamycin/rapalink (mTORC1 inhibitors) in cells, to exclude S6K as the upstream kinase – S6K is activated downstream of Akt and also recognises the R-X-R-X-X-S/T substrate motif (Alessi et al., 1996b). In this context IRS residues phosphorylated by S6K were not of interest as this feedback mechanism is mTORC1/S6K-independent (Figures 1 and 5C–D).
 
 To address these criteria, we performed three experiments which relied on quantifying IRS1/2 phosphorylation using mass spectrometry. Quantifying all 11 IRS1/2 phosphorylation sites across all experiments was technically challenging, due to limited sequence coverage. However, four of the five IRS2 phosphorylation sites were identified in all experiments, and so we focused on these phosphorylation sites hereafter. IRS2 S365 (S362 in mouse) was phosphorylated by Akt in vitro and sensitive to GDC0068/MK2206 in cells (Figure 6—figure supplement 3A). However, IRS2 S365 phosphorylation was also rapalink/rapamycin sensitive (Figure 6—figure supplement 3A), implicating it as an S6K substrate. IRS2 S1149 (S1138 in mouse) phosphorylation was not increased following insulin stimulation and was unable to be phosphorylated by Akt in vitro (Figure 6—figure supplement 3B), suggesting it is not an Akt substrate. However, IRS2 S306 (S303 in mouse) and S577 (S573 in mouse) were phosphorylated by Akt in vitro, and in cells were sensitive to GDC0068/MK2206, but not rapamycin/rapalink (Figure 6E,F). These data were sufficient to classify IRS2 S306 and S577 as novel Akt substrates.
 
-## Akt phosphorylation of IRS2 at S306 and S577 promotes PM dissociation of IRS2 to limit downstream signal propagation
+### Akt phosphorylation of IRS2 at S306 and S577 promotes PM dissociation of IRS2 to limit downstream signal propagation
 
 We hypothesised that Akt-mediated phosphorylation of IRS2 S306 and S577 synergistically depletes PM-associated IRS2 to drive negative feedback. When IRS2 S306 or S577 were individually mutated to alanine (S306A IRS2 or S577A IRS2), IRS2 still dissociated from the PM upon insulin stimulation, but with a higher endpoint compared to WT IRS2, and both mutants subtly increased Akt translocation to the PM (Figure 6—figure supplement 2A,D). However, concurrent mutation of both phosphorylation sites (S306/577A IRS2) prevented PM dissociation of IRS2 (Figure 6G), mimicking Akt inhibition with GDC0068 and MK2206 (Figure 5A,B). Furthermore, expression of S306/577A IRS2 resulted in hyper-recruitment of Akt and PDPK1 to the PM compared to cells expressing WT IRS2 (Figure 6G,H), consistent with increased PIP3 levels. Intriguingly, mutation of the corresponding phosphorylation sites in IRS1 (S270/527A) did not prevent its dissociation from the PM upon insulin stimulation and only had a subtle effect on Akt recruitment (Figure 6—figure supplement 4), demonstrating alternate regulation between the IRS isoforms. These data suggest that Akt-mediated phosphorylation of IRS2 S306 and S577 synergistically dissociates PM-associated IRS2 to limit PIP3 production and Akt activation.
 
@@ -146,7 +194,458 @@ Losing negative feedback from Akt to IRS resulted in a profound increase in PIP3
 
 ## Materials and methods
 
-## Modelling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>3T3-L1</td>
+      <td>Dr Howard Green, Harvard Medical School</td>
+      <td>RRID:CVCL_0A20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293E</td>
+      <td>American Type Culture Collection</td>
+      <td>RRID:CVCL_6974</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>American Type Culture Collection</td>
+      <td>RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HCC1937</td>
+      <td>American Type Culture Collection</td>
+      <td>RRID:CVCL_0290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>MCF7</td>
+      <td>Associate Prof. Jeff Holst, Centenary Institute</td>
+      <td>RRID:CVCL_0031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAkt T309 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#9275</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAkt T309 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#13038</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAkt S474 (mouse monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#4051</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAS160 T642 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#4288</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pPRAS40 T246 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#2997</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pGSK3ɑ/β S21/29 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#9327</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pFOXO1 S256 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#9461</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>14-3-3 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-629</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pP70S6K T389 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#9205</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Akt2 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#3063</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Caveolin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab17052</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pan Akt (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#4685</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PI3K p85 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#4257</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PI3K p110 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#4249</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRS1 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#2382</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Na,K-ATPase (rabbit polyclonal)</td>
+      <td>Prof. Gus Lienhard</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IR (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#3025</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pTyrosine (rabbit monoclonal mix)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#8954</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ɑ-Tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T9026</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRS1 (rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#3407</td>
+      <td>IP (2 µL per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRS2 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#3089</td>
+      <td>IP (2 µL per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F1804</td>
+      <td>IP (5 µg per sample)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG control (rabbit)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-2027</td>
+      <td>IP (control)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A21428</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3X FLAG Peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I5500; CAS 11070-73-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin-like growth factor 1 (IGF1)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat#130-093-886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epidermal growth factor (EGF)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat#130-097-749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDC0068</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat#S2808; CAS 1001264-89-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK2206</td>
+      <td>MedChemExpress</td>
+      <td>Cat#HY-10358; CAS 1032350-13-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Wortmannin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#W1628; CAS 19545-26-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>Cat#R-5000; CAS 53123-88-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapalink</td>
+      <td>Prof. Kevan Shokat (Rodrik-Outmezguine et al., 2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK2334470</td>
+      <td>Tocris</td>
+      <td>Cat# 4143; CAS 1227911-45-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PIP3 ELISA</td>
+      <td>Echelon Biosciences</td>
+      <td>Cat#K-2500S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PI(3,4)P2 ELISA</td>
+      <td>Echelon Biosciences</td>
+      <td>Cat#K-4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TagRFP-T-Akt2 (plasmid)</td>
+      <td>Norris et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TagRFP-T-Akt2 W80A; W80A-T309A; W80A-S474A; W80A-T309A-S474A; W80A-K181A (plasmids)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PDPK1-eGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PDPK1-TagRFP-T (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PH-Gab2-GFP (plasmid)</td>
+      <td>Sergio Grinstein – Addgene</td>
+      <td>Plasmid #35147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PI3K p110* (plasmid)</td>
+      <td>Morris Birnbaum</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIG FLAG-Akt2 W80A; W80A-T309A (plasmids)</td>
+      <td>Kearney et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRS1-eGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRS1-eGFP S270A; S307A; S330A; T525A; S527A; S1101A; S270A-S307A-S330A-T525A-S527A-S1101A (6P); S270A-S527A; DelPH; DelPTB (plasmids)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRS2-eGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRS2-eGFP S306A; S346A; S365A; S577A; S1149A; S306A-S346A-S365A-S577A-S1149A (5P); S306A-S577A (plasmids)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>IRS2-FLAG (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA Primers</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>See Materials and methods and Supplementary file 3 for DNA sequences</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>Cox and Mann, 2008; Tyanova et al., 2016</td>
+      <td>RRID:SCR_014485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:SCR_013715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Software Inc.</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tableau Prep</td>
+      <td>Tableau Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.R-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQM</td>
+      <td>IntiQuan</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Modelling
 
 We constructed nine mechanistic models to investigate different possible network structures of the PI3K/Akt signalling pathway. All models included components representing proximal insulin signalling proteins (IR, IRS, PI3K). The activation of this pathway is initiated by insulin binding the IR. Then, IRS bind the IR and recruit PI3K to the PM. In the model, the IRS/PI3K node represents proximal insulin signalling. Activated PI3K phosphorylates PIP2, converting it to PIP3. This is negatively regulated by PTEN. In the model, Akt is activated by PDPK1 and mTORC2 through phosphorylation at T309 and S474, respectively. mTORC2 has two independent activation mechanisms: (1) binding of SIN1 to PIP3 that releases its inhibition on mTOR kinase activity (Liu et al., 2015) and (2) phosphorylation of SIN1 T86 residue by Akt (Humphrey et al., 2013; Yang et al., 2015). Activated Akt phosphorylates PRAS40, which results in mTORC1 activation. In the model, Akt singly phosphorylated at T309, and doubly phosphorylated at T309 and S474 has kinase activity. However, Akt singly phosphorylated at S474 is not active. All models were trained with the data in Figure 1B and C,D (pAkt T309, pAkt S474, and pPRAS40 T246).
 
@@ -154,67 +653,89 @@ Additionally, model 1 included negative feedback from mTORC1 to IRS/PI3K. Model 
 
 These models were formulated using ODEs. The rate equations, ODEs, and the best-fitted parameter sets for each network model are given in Supplementary file 1. The code for the modelling has been deposited to Github (Ghomlaghi et al., 2021). The model construction and calibration processes were implemented in MATLAB (The MathWorks Inc 2019a) and the IQM toolbox (http://www.intiquan.com/intiquan-tools/) was used to compile the IQM file for a MEX file which makes the simulation much faster.
 
-The quality of a mathematical model is generally justified by its ability to recapitulate known experimental data. Model calibration (or model training) is the process of estimation of the model’s parameters. This process produces a ‘best-fitted’ model that best recapitulates biological observations used for model calibration. Model calibration was done by estimating the model parameter values to minimise an objective function J that quantifies the difference between model simulation results and corresponding experimental measurements:J(p)=∑j=1Mwj∑i=1Nyj,iD-yj(ti,p)σj,i2
+The quality of a mathematical model is generally justified by its ability to recapitulate known experimental data. Model calibration (or model training) is the process of estimation of the model’s parameters. This process produces a ‘best-fitted’ model that best recapitulates biological observations used for model calibration. Model calibration was done by estimating the model parameter values to minimise an objective function $J$ that quantifies the difference between model simulation results and corresponding experimental measurements:
 
-Here, M denotes number of available experimental data sets for fitting and N is the number of time points in each experimental data set. yj(ti,p) is simulation result of the model for the component j in the network at the time point ti while parameter set p is used for the simulation. Finally, yj,iD is the mean value of the experimental data of component j at time point ti with the error variance σj,i. wj is the weight of the component j.
+$$
+J(p)=\sum_{j=1}^{M}w_{j}\sum_{i=1}^{N}\frac{y_{j,i}^{D}-y_{j}(t_{i},p)}{\sigma_{j,i}}^{2}
+$$
 
-A genetic algorithm (GA) was used to optimise the objective function (Man et al., 1996; Reali et al., 2017; Shin et al., 2014). This was done by using the Global Optimization Toolbox and the function ga in MATLAB. Selection rules in GA select the individual solutions with the best fitness values (called ‘elite solutions’) from the current population. The elite count was set to 5% of the population size. Crossover rules combine two parents to generate offspring for the next generation. The crossover faction was set at 0.8. Mutation rules apply random changes to individual parents to generate the population of the next generation. For the mutation rule, we generated a random number from a Gaussian distribution with mean 0 and standard deviation σk, which was applied to the individuals of the current generation. The standard deviation function (σk) is given by the recursive formula as follows:σk=σk-1(1-kG)where k is the kth generation, G is the number of generation, and σ0=1. To derive the best-fitted parameter sets, we carried out repeated GA runs with population size of 200 and the generation number set to 800.
+Here, $M$ denotes number of available experimental data sets for fitting and $N$ is the number of time points in each experimental data set. $y_{j}(t_{i},p)$ is simulation result of the model for the component $j$ in the network at the time point $t_{i}$ while parameter set $p$ is used for the simulation. Finally, $y_{j,i}^{D}$ is the mean value of the experimental data of component $j$ at time point $t_{i}$ with the error variance $\sigma_{j,i}$. $w_{j}$ is the weight of the component $j$.
 
-## Modelling identifiability analysis
+A genetic algorithm (GA) was used to optimise the objective function (Man et al., 1996; Reali et al., 2017; Shin et al., 2014). This was done by using the Global Optimization Toolbox and the function ga in MATLAB. Selection rules in GA select the individual solutions with the best fitness values (called ‘elite solutions’) from the current population. The elite count was set to 5% of the population size. Crossover rules combine two parents to generate offspring for the next generation. The crossover faction was set at 0.8. Mutation rules apply random changes to individual parents to generate the population of the next generation. For the mutation rule, we generated a random number from a Gaussian distribution with mean 0 and standard deviation $\sigma_{k}$, which was applied to the individuals of the current generation. The standard deviation function ($\sigma_{k}$) is given by the recursive formula as follows:
+
+$$
+\sigma_{k}=\sigma_{k-1}(1-\frac{k}{G})
+$$
+
+where $k$ is the kth generation, $G$ is the number of generation, and $\sigma_{0}=1$. To derive the best-fitted parameter sets, we carried out repeated GA runs with population size of 200 and the generation number set to 800.
+
+### Modelling identifiability analysis
 
 Identifiability analysis for all tested models (models 4–9; Figure 2A) was performed using a well-established method based on profile likelihood (Maiwald et al., 2016; Rateitschak et al., 2012; Raue et al., 2009). This method is able to detect both structural and practical non-identifiable parameters through calculating confidence intervals defined by a threshold in the profile likelihoods, as detailed previously (Rateitschak et al., 2012). A parameter is considered to be identifiable if the confidence interval of its estimate is finite (Rateitschak et al., 2012). Another important advantage of this approach is that it is computationally efficient and thus suitable for medium-to-large (non-minimal) models such as those considered in this paper (Rateitschak et al., 2012).
 
-For normally distributed observational noise, this function corresponds to the maximum likelihood estimate of θ. The profile likelihood of a parameter θ is given by Maiwald et al., 2016; Rateitschak et al., 2012; Raue et al., 2009:χPL2(θi)=minθj≠i⁡χ2(θ)which represents a function in θi of least increase in the residual sum of squares χ(θ).
+For normally distributed observational noise, this function corresponds to the maximum likelihood estimate of θ. The profile likelihood of a parameter θ is given by Maiwald et al., 2016; Rateitschak et al., 2012; Raue et al., 2009:
 
-Profile likelihood-based confidence interval (CI) can be derived via:CI(θ)={θ|χPL2(θ)−χPL2(θ^)<Δα}where Δα=χ2(α,df) is the threshold, α is a confidence level (the α quantile of the χ2 distribution), df is the degree of freedom (df=1 for pointwise confidence interval and df=#ofparameters for simultaneous confidence intervals, respectively). θ^ denotes the best-fitted parameter set.
+$$
+χ_{PL}^{2}(\theta_{i})=min\theta_{j\neqi}⁡χ^{2}(\theta)
+$$
 
-Supplementary file 2 contains the identifiability analysis results for models 4–9. In each plot, the black dashed lines depict pointwise confidence levels of α=95%. The results show for each parameter whether it is structurally (indicated by a flat curve in both directions) or practically (indicated by a flat curve only in one direction) non-identifiable (Rateitschak et al., 2012). Overall, these results demonstrate that all the models are non-identifiable, meaning each model has at least one non-identifiable parameter. As most large ODE-based models in systems biology are unidentifiable to some extent, the results here were expected given the detailed scope of our models, which were designed to capture the important biological mechanisms within the insulin signalling network, including multiple feedback/feedforward loops. Because generally there is a trade-off between model identifiability and level of biological details, although the models in this study could be made more identifiable through model abstraction, such a process is inevitably at the cost of sacrificing specific biological details and may weaken the models’ explanatory and predictive power.
+which represents a function in $\theta_{i}$ of least increase in the residual sum of squares χ(θ).
 
-## Cloning
+Profile likelihood-based confidence interval (CI) can be derived via:
+
+$$
+CI(\theta)={\theta|χ_{PL}^{2}(\theta)−χ_{PL}^{2}(\theta^)<Δ_{\alpha}}
+$$
+
+where $Δ_{\alpha}=χ^{2}(\alpha,df)$ is the threshold, $\alpha$ is a confidence level (the α quantile of the χ2 distribution), $df$ is the degree of freedom ($df=1$ for pointwise confidence interval and $df=#ofparameters$ for simultaneous confidence intervals, respectively). $\theta^$ denotes the best-fitted parameter set.
+
+Supplementary file 2 contains the identifiability analysis results for models 4–9. In each plot, the black dashed lines depict pointwise confidence levels of $\alpha=95%$. The results show for each parameter whether it is structurally (indicated by a flat curve in both directions) or practically (indicated by a flat curve only in one direction) non-identifiable (Rateitschak et al., 2012). Overall, these results demonstrate that all the models are non-identifiable, meaning each model has at least one non-identifiable parameter. As most large ODE-based models in systems biology are unidentifiable to some extent, the results here were expected given the detailed scope of our models, which were designed to capture the important biological mechanisms within the insulin signalling network, including multiple feedback/feedforward loops. Because generally there is a trade-off between model identifiability and level of biological details, although the models in this study could be made more identifiable through model abstraction, such a process is inevitably at the cost of sacrificing specific biological details and may weaken the models’ explanatory and predictive power.
+
+### Cloning
 
 TagRFP-T-Akt2 consists of human Akt2 tagged with TagRFP-T at its N-terminus as described previously (Norris et al., 2017). TagRFP-T-Akt2 W80A, W80A-T309A, W80A-S474A, W80A-T309A-S474A, and W80A-K181A were generated using site-directed mutagenesis (Sanchis et al., 2008). PDPK1-eGFP consists of human PDPK1 tagged with eGFP at its C-terminus. To generate PDPK1-eGFP, R777-E159 Hs.PDPK1 was kindly gifted from Dominic Esposito (Addgene plasmid #70443) and was used as a template to amplify human PDPK1. Human PDPK1 was placed in the pEGFP-C1 vector using Gibson assembly cloning (Gibson, 2011). PH-Gab2-GFP was a gift from Sergio Grinstein (Addgene plasmid #35147). Constitutively active p110 (p110*) was kindly gifted by Morris Birnbaum. pMIG FLAG-W80A and FLAG-W80A-T309A Akt2 were generated as previously described (Kearney et al., 2019). IRS1-eGFP consists of human IRS1 tagged with eGFP at its C-terminus. To generate IRS1-eGFP, R777-E109 Hs.IRS1 was kindly gifted from Dominic Esposito (Addgene plasmid #70393) and was used as a template to amplify human IRS1. Human IRS1 was placed in the pEGFP-C1 vector using Gibson assembly cloning (Gibson, 2011). IRS2-eGFP consists of human IRS2 tagged with eGFP at its C-terminus. To generate IRS2-eGFP, R777-E111 Hs.IRS2 was kindly gifted from Dominic Esposito (Addgene plasmid #70395) and was used as a template to amplify human IRS2. Human IRS2 was placed in the pEGFP-C1 vector using Gibson assembly cloning (Gibson, 2011). Mutations in IRS1-eGFP and IRS2-eGFP were generated using site-directed mutagenesis (Sanchis et al., 2008). DelPH IRS1-eGFP consists of IRS1 without its PH domain (residues 2–115 removed, based on Dhe-Paganon et al., 1999) and was generated using Gibson assembly cloning (Gibson, 2011). DelPTB IRS1-eGFP consists of IRS1 without its PTB domain (residues 161–265 removed, based on Eck et al., 1996) and was generated using Gibson assembly cloning (Gibson, 2011). To generate IRS2-FLAG, IRS2-eGFP was used as a template, and eGFP replaced with a FLAG tag (DYKDDDDK) using Gibson assembly cloning (Gibson, 2011). To generate PDPK1-TagRFP-T, TagRFP-T-Akt2 was used as a template to amplify TagRFP-T, and this was inserted into PDPK1-eGFP to replace eGFP, using Gibson assembly cloning (Gibson, 2011). Plasmid and primer DNA sequences are provided in Supplementary file 3.
 
-## Cell culture
+### Cell culture
 
 3T3-L1 fibroblasts obtained from the Howard Green Laboratory (Harvard Medical School) were cultured in high glucose Dulbecco’s modified eagle medium (DMEM) (Gibco by Life Technologies) supplemented with 10% (v/v) fetal bovine serum (FBS) (Gibco by Life Technologies), and 1× GlutaMAX (Gibco by Life Technologies) at 37°C and 10% CO2. Cells were differentiated into adipocytes as described previously (Fazakerley et al., 2015; Norris et al., 2018) and used for experiments 7–12 days after initiation of differentiation. 3T3-L1 adipocytes stably expressing FLAG-W80A or FLAG-W80A-T309A Akt2 were generated using retrovirus as previously described and characterised previously (Kearney et al., 2019). HEK293E, HeLa, and HCC1937 cell lines were obtained from the American Type Culture Collection and grown in the medium described above to culture 3T3-L1 cells. MCF7 cells were a gift from Associate Prof. Jeff Holst (Centenary Institute) and were validated by STR. Cells were maintained in Minimum Essential Media (Gibco by Life Technologies Cat#10370–021), with the addition of 10% (v/v) FBS, 1× GlutaMAX, and 1 mM sodium pyruvate (Gibco by Life Technologies) at 37°C and 5% CO2. Cells were routinely tested for mycoplasma contamination and found to be contamination-free.
 
-## Western blotting
+### Western blotting
 
 3T3-L1 adipocytes were serum-starved with DMEM containing 1× GlutaMAX and 0.2% BSA (w/v) for 2 hr. Cells were then exposed to drugs/insulin. Cells were then placed on ice, washed with cold PBS, lysed with 1% (w/v) SDS in PBS containing protease inhibitors (Roche Applied Science) and phosphatase inhibitors (2 mM Na3VO4, 1 mM Na4O7P2, and 10 mM NaF), and tip probe-sonicated. Lysates were centrifuged at 13,000× g for 15 min at 4°C. The lipid layer was removed, and protein content was quantified using the Pierce BCA Protein Assay Kit (Thermo Scientific); 10 μg of lysate was then resolved by SDS-PAGE and transferred to PVDF membranes. Membranes were blocked and immunoblotted as described previously (Fazakerley et al., 2015). Densitometry analysis was performed using ImageStudioLite version 5.2.5 (LI-COR). Band intensities were normalised to the loading control. Statistical tests were performed using GraphPad Prism version 7.0. For the quantification of the blots in Figure 1C,D, the time courses were normalised to the mean intensity of all samples (within a blot). Next, biological replicates were normalised to the maximum of the mean of all responses (across blots) within a dose. As some of the 1 and 100 nM time courses were acquired separately, the difference in magnitude between the doses was determined by the three biological 1 and 100 nM replicates that were acquired concurrently and run on the same gels. The representative blot is an example of a paired experiment.
 
-## Live cell TIRFM
+### Live cell TIRFM
 
 3T3-L1 adipocytes were electroporated 6–8 days post-differentiation with 6–10 μg of plasmid and placed onto the Matrigel-coated µ-Dish 35 mm, high Glass Bottom coverslips (Ibidi) as described previously (Norris et al., 2017). For other cell types, cells were transfected using Lipofectamine 2000 (Thermo Scientific). Twenty-four hours later, cells were serum-starved for 2 hr and then incubated at 37°C with Krebs-Ringer-phosphate-HEPES buffer (0.6 mM Na2HPO4, 0.4 mM NaH2PO4, 120 mM NaCl, 6 mM KCl, 1 mM CaCl2, 1.2 mM MgSO4, and 12.5 mM HEPES [pH 7.4]) supplemented with 10 mM glucose, 1× minimum essential medium amino acids (Gibco by Life Technologies), 1× GlutaMAX, and 0.2% (w/v) BSA. While imaging, temperature and humidity were then maintained using an Okolab cage incubator and temperature control. The cells were treated using a custom-made perfusion system. Images were acquired with a CFI Apochromat TIRF 60× oil, NA 1.49 objective, using the Nikon Ti-LAPP H-TIRF module angled to image ∼90 nm into cells. Images were acquired approximately every 15 s. To quantify changes in the PM recruitment of each protein of interest, we measured the average pixel intensity (and subtracted background intensity) for each cell over the time course using Fiji (Schindelin et al., 2012). Each cellular response to stimuli was normalised to its average intensity over the basal period. The cell-to-cell heterogeneity in Akt recruitment responses (described previously; Norris et al., 2021) can make the comparison of several large population TIRF responses difficult to interpret if presented as mean ± SD. These data are presented as mean ± SEM to aid interpretation. Rate constants (Figure 4B–D) were calculated using Graphpad Prism version 7.0, by fitting an exponential curve to the data (plateau followed by one-phase decay). To assess the relative cell surface level of IRS1 (Figure 5F), TIRF and epifluorescence images were acquired and for each cell its median TIRF intensity (corrected for background) was normalised to its median epifluorescence intensity (corrected for background) using Fiji (Schindelin et al., 2012).
 
-## PI(3,4,5)P3 and PI(4,5)P2 Mass ELISA
+### PI(3,4,5)P3 and PI(4,5)P2 Mass ELISA
 
 3T3-L1 adipocytes were serum-starved with DMEM containing 1× GlutaMAX and 0.2% (w/v) BSA for 2 hr. Cells were then preincubated with drugs or vehicle controls and stimulated with 1 nM insulin. Lipids were extracted from cells and measured using an ELISA kit (Echelon Biosciences). 1 × 10 cm dish of 3T3-L1 adipocytes was used for each sample. For each sample, PIP3 mass was normalised to PIP(4,5)P2 mass. PIP(4,5)P2 is highly abundant in cells (Guillou et al., 2007) and thus is only marginally affected by changes in PI3K activity (Condliffe et al., 2005). As has been done previously (Clark et al., 2011; Costa et al., 2015; Guillou et al., 2007), we normalised to PI(4,5)P2 mass to account for differences in extraction efficiency between samples, and control for total cellular phosphoinositides.
 
-## Subcellular fractionation
+### Subcellular fractionation
 
 3T3-L1 adipocytes were serum-starved for 2 hr, and then exposed to DMSO, 10 μM MK2206, or 10 μM GDC0068 for 5 min, followed by 1 nM insulin for 10 min. Cells were placed on ice, washed with cold PBS, and harvested in cold HES buffer (20 mM HEPES, 1 mM EDTA, 250 mM sucrose, pH 7.4) containing phosphatase (2 mM Na3VO4, 1 mM Na4O7P2, 10 mM NaF) and protease (Roche Applied Science) inhibitors. All subsequent steps were carried out at 4°C. Cells were homogenised by passing through a 22-gauge needle 10 times and a 27-gauge needle six times prior to centrifugation at 500× g for 10 min. The supernatant was centrifuged at 13,550× g for 12 min to pellet the PM and mitochondria/nuclei, while the supernatant contained the cytosol, LDM fraction, and HDM fraction. The supernatant was then centrifuged at 21,170× g for 17 min to pellet the HDM fraction. That supernatant was then centrifuged at 235,200× g for 75 min to obtain the cytosol fraction (supernatant) and the LDM fraction (pellet). The PM and mitochondria/nuclei pellet was resuspended in HES buffer and again centrifuged at 13,550× g for 12 min. The pellet was then resuspended in HES buffer, layered over high sucrose HES buffer (20 mM HEPES, 1 mM EDTA, 1.12 M sucrose, pH 7.4), and centrifuged at 111,160× g for 60 min in a swing-out rotor. The PM fraction was collected at the interface between the sucrose layers, and pelleted by centrifugation at 235,200× g for 75 min. All pellets were resuspended in HES buffer containing phosphatase and protease inhibitors. Protein concentrations for each fraction were determined using the Pierce BCA Protein Assay Kit (Thermo Scientific).
 
-## Immunofluorescence/TIRFM
+### Immunofluorescence/TIRFM
 
 3T3-L1 adipocytes were seeded onto Matrigel-coated eight-well microslides (Ibidi). Forty-eight hours later, cells were serum-starved for 2 hr and then exposed to DMSO, 10 μM MK2206, or 10 μM GDC0068 for 5 min, followed by 1 nM insulin for 10 min. The coverslips were then briefly immersed in ice-cold PBS and fixed with 4% paraformaldehyde in PBS at room temperature for 15 min. Cells were then washed twice with room temperature PBS and quenched with 200 mM glycine for 10 min. Cells were then blocked and permeabilised with 2% BSA/0.1% saponin in PBS for 30 min. Cells were incubated with the anti-PI3K p85 (Cell Signaling Technology CST4257S) primary antibody (1:100 in 2% BSA/0.1% saponin in PBS) for 1 hr at room temperature. Cells were then washed with 2% BSA/0.1% saponin in PBS three times, and then incubated with anti-rabbit-IgG conjugated to Alexa Fluor 555 (1:200 in 2% BSA/0.1% saponin in PBS) at room temperature for 1 hr in the dark. Cells were then washed five more with PBS and then stored and imaged in 5% glycerol/2.5% 1,4-diazabicyclo[2.2.2]octane in PBS. Images were acquired using the Nikon Ti-LAPP H-TIRF module angled to image ∼90 nm into cells. To quantify relative changes in PM PI3K p85, for each cell we measured the median pixel intensity (corrected for background) using Fiji (Schindelin et al., 2012).
 
-## Endogenous IRS1 and IRS2 immunoprecipitation for LC-MS/MS
+### Endogenous IRS1 and IRS2 immunoprecipitation for LC-MS/MS
 
 3T3-L1 adipocytes were serum-starved for 2 hr and then exposed to DMSO, 10 μM MK2206, or 10 μM GDC0068 for 5 min, followed by 1 nM insulin for 10 min. Cells were washed three times with ice-cold PBS and lysed in cold lysis buffer (1% (v/v) NP40, 10% (v/v) glycerol, 137 mM NaCl, 25 mM Tris pH 7.4) containing phosphatase (2 mM Na3VO4, 1 mM Na4O7P2, 10 mM NaF) and protease (Roche Applied Science) inhibitors. All subsequent steps were performed at 4°C. Lysates were passed through a 22-gauge needle 10 times, followed by a 27-gauge needle six times. Lysates were then solubilised for 15 min on ice prior to centrifugation at 18,000× g for 20 min to remove lipid and cell debris; 850 μg of each supernatant was then incubated with 2 μL of antibody (IRS1; Cell Signaling Technology CST3407S or IRS2; Cell Signaling Technology CST3089S) or the same amount of Rabbit IgG control (Santa Cruz) for 2 hr with rotation. 50 μL of Dynabeads Protein G (Invitrogen) were added into each antibody-lysate mixture and incubated for 2 hr with rotation. Beads were washed once with lysis buffer and then four times with PBS. Beads were incubated in 25 μL elution buffer 1 (2 M urea, 5 mM TCEP, 20 mM 2-chloroacetamide, 5 μg/mL trypsin, 50 mM Tris-HCl, pH 7.5) for 30 min at room temperature, and then 100 μL elution buffer 2 (2 M urea, 50 mM Tris-HCl, pH 7.5) was added. Eluate was collected into a LowBind Eppendorf tube and digested for 16 hr at room temperature. Peptides were then acidified by adding TFA to a final concentration of 1% (v/v) and stored at 4°C prior to LC-MS/MS.
 
-## IRS2-FLAG immunoprecipitation and in vitro kinase assay for LC-MS/MS
+### IRS2-FLAG immunoprecipitation and in vitro kinase assay for LC-MS/MS
 
 IRS2-FLAG was transfected into HEK293E cells using Lipofectamine 2000 (Thermo Scientific). Twenty-four hours later, cells were serum-starved for 2 hr and treated with 10 μM MK2206 for 30 min. Cells were placed on ice, washed with cold PBS, and harvested in cold lysis buffer (1% (v/v) NP40, 10% (v/v) glycerol, 137 mM NaCl, 25 mM Tris pH 7.4) containing phosphatase (2 mM Na3VO4, 1 mM Na4O7P2, 10 mM NaF) and protease (Roche Applied Science) inhibitors. All subsequent steps were carried out at 4°C. Cells were homogenised by passing through a 22-gauge needle 10 times and a 27-gauge needle six times prior to solublisation on ice for 15 min. Then samples were centrifuged at 18,000× g for 20 min; 1 mg of the supernatant was incubated with 5 μg of anti-FLAG antibody (Sigma-Aldrich), on a rotator for 2 hr. Then, this was mixed with protein G agarose beads (GE Healthcare) on a rotator for a further 2 hr. Beads were washed four times with lysis buffer, once with kinase buffer (25 mM Tris-HCl [pH 7.5], 10 mM MgCl2, 5 mM beta-glycerophosphate, 0.1 mM Na3VO4, 1 mM DTT), and then dried. To elute the protein from the beads, 0.4 μg/μL of 3× FLAG peptide (Sigma-Aldrich) in kinase buffer was added to each sample and incubated for 1 hr with rapid agitation (1500 rpm using an Eppendorf ThermoMixer C). The eluate was removed. To determine the concentration of IRS2-FLAG obtained, an aliquot of eluate and Albumin standards (Thermo Scientific) were resolved by SDS-PAGE and stained using SYPRO Ruby Protein Gel Stain (Bio-Rad). Remaining eluate was stored at −20°C for further analysis.
 
 100 ng of immunoprecipitated IRS2-FLAG protein, 30 ng of recombinant active Akt2 (SignalChem), and 100 μM ATP were mixed in kinase buffer (25 mM Tris-HCl [pH 7.5], 10 mM MgCl2, 5 mM beta-glycerophosphate, 0.1 mM Na3VO4, 1 mM DTT). Samples were incubated at 30°C for 1 hr with rapid agitation (500 rpm). Samples were placed at 70°C for 10 min, then cooled on ice to room temperature. Proteins were reduced and alkylated by the addition of 10 mM TCEP (Thermo Scientific, Bond-Breaker TCEP solution, Neutral pH) and 40 mM 2-chloroacetamide (Sigma-Aldrich) and incubated at 45°C for 5 min. Samples were cooled on ice to room temperature, and 1% (w/v) SDC (in 25 mM Tris pH 7.5) added to the samples; 10 ng of trypsin and 10 ng of LysC were added and samples shaken at 37°C with rapid agitation (2000 rpm) for 18 hr. Samples were then mixed with equal volume of 1% TFA in ethyl acetate (45 µL) and vortexed to dissolve precipitated SDC. Peptides were desalted using StageTips (Rappsilber et al., 2003) using SDB-RPS solid-phase extraction discs (Empore). Briefly, 200 µL tips were packed with two layers of SDB-RPS material and placed into a 3D-printed 96-well StageTips adapter (Harney et al., 2019) for centrifugation. StageTips were equilibrated with sequential 50 µL washes of 100% acetonitrile, 30% MeOH with 1% TFA, and 0.2% TFA in water by centrifugation at 1000× g for 2 min. Peptides were then loaded onto the StageTips by centrifugation at 1000× g for 2 min. StageTips were washed sequentially with 1% TFA in ethyl acetate, 1% TFA in isopropanol and 0.2% TFA in 5% acetonitrile, and eluted into PCR strip tubes with 5% ammonium hydroxide in 60% ACN. Peptides were concentrated to dryness in a vacuum concentrator at 45°C for 30 min. Peptides were resuspended in MS loading buffer (10 µL 3% ACN/0.1% TFA) prior to LC-MS/MS analysis.
 
-## Pharmacological inhibition experiments and phosphoproteomics for LC-MS/MS
+### Pharmacological inhibition experiments and phosphoproteomics for LC-MS/MS
 
 For GDC0068/MK2206 experiments, 3T3-L1 adipocytes were serum-starved for 2 hr and then exposed to vehicle (DMSO), 10 μM MK2206 or 10 μM GDC0068 for 5 min, followed by 1 nM insulin for 10 min. Cells were harvested in ice-cold SDC lysis buffer (4% sodium deoxycholate/100 mM Tris pH 8.5), boiled at 95°C for 5 min, centrifuged at 18,000× g for 15 min, and the layer of fat removed prior to determining protein concentration by BCA assay.
 
 For rapamycin/rapalink experiments, HEK-293E cells were maintained in DMEM, with 4.5 g glucose/L, 2 mM L-GlutaMAX, and 10% FBS. Cells were passaged for six doublings in stable isotope labelling by amino acids in cell culture (SILAC) DMEM containing three different isotopic versions of lysine and arginine supplemented with 10% dialysed FBS, generating ‘triple‐labelled’ SILAC cells (Ong et al., 2002). Cells were serum‐starved for 4 hr together with either 100 nM rapamycin, 3 nM RapaLink1, or vehicle (DMSO), and then treated with 100 nM insulin for 10 min. Experiments were performed with four biological replicates and label switching. Cells were harvested in ice-cold GdmCl lysis buffer (6 M GdmCl, 100 mM Tris pH 8.8, 10 nM TCEP, 40 mM CAA). Protein concentration was estimated by BCA assay, and SILAC samples mixed accordingly in equal ratios. Samples were processed using the EasyPhos method (Humphrey et al., 2015a) and phosphopeptides were resuspended in MS loading buffer (0.3% v/v TFA/2% (v/v) ACN) prior to LC-MS/MS.
 
-## LC-MS/MS and MS data analysis
+### LC-MS/MS and MS data analysis
 
 For endogenous IRS1/2 immunoprecipitation and IRS2-FLAG in vitro kinase assay samples, peptides were analysed using a Dionex HPLC coupled to a Q-Exactive HF-X benchtop Orbitrap mass spectrometer (Thermo Fisher Scientific). Peptides were injected onto an in-house packed 75 µm ID × 40 cm column packed with 1.9 μm C18 (ReproSil Pur C18-AQ, Dr Maisch) and separated by a binary gradient of buffer A (0.1% formic acid) and buffer B (0.1% formic acid/80% ACN). Peptides were separated by a gradient of 5–30% (IP) or 5–40% (in vitro kinase assay) buffer B at a flow rate of 300 or 400 nL/min. Eluting peptides were directly analysed with one full scan (350–1400 m/z, R = 60,000). The top 5 (in vitro kinase assay) or 15 (IP) most intense precursors were fragmented with a collision energy of 27% and MS2 spectra collected at a resolution of 15,000.
 
@@ -224,6 +745,6 @@ RAW MS data was analysed using using MaxQuant (Cox and Mann, 2008) with searches
 
 Data was filtered, normalised, and analysed using R, Tableau Prep, and Graphpad Prism. For the phosphoproteomics with GDC0068/MK2206, LFQ Intensities were log2-transformed and median normalised. For endogenous IRS1/2 immunoprecipitation, intensities were log2-transformed and then normalised to the intensity of IRS in each sample. Then, values were normalised to the mean of the insulin treated sample.
 
-## Data and materials availability
+### Data and materials availability
 
 RAW and MaxQuant processed data have been deposited in the PRIDE proteomeXchange repository and can be accessed at https://www.ebi.ac.uk/pride/archive/, using the accession PXD023441. The reactions, rate equations, differential equations, and parameter sets required to reproduce the models can be found in Supplementary file 1. The code for the modelling has been deposited to Github (Nguyen Lab, 2021a, copy archived at swh:1:rev:09b5d4f838bf60e790c10843fec901516845d7e2, Nguyen Lab, 2021b). Plasmids generated in this study will be made available upon request. Any further information and requests for resources should be directed to james.burchfield@sydney.edu.au or david.james@sydney.edu.au.

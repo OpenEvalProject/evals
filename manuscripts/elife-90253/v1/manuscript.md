@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/009nz6031 CEITEC Masaryk University Brno Czech Republic
-2. https://ror.org/02skbsp27 Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) Gatersleben Gatersleben Germany
+1. CEITEC Masaryk University Brno Czech Republic ([ROR:009nz6031](https://ror.org/009nz6031))
+2. Leibniz Institute of Plant Genetics and Crop Plant Research (IPK) Gatersleben Gatersleben Germany ([ROR:02skbsp27](https://ror.org/02skbsp27))
 
 † Corresponding author
 
 ## Abstract
 
-Heat stress is a major threat to global crop production, and understanding its impact on plant fertility is crucial for developing climate-resilient crops. Despite the known negative effects of heat stress on plant reproduction, the underlying molecular mechanisms remain poorly understood. Here, we investigated the impact of elevated temperature on centromere structure and chromosome segregation during meiosis in Arabidopsis thaliana . Consistent with previous studies, heat stress leads to a decline in fertility and micronuclei formation in pollen mother cells. Our results reveal that elevated temperature causes a decrease in the amount of centromeric histone and the kinetochore protein BMF1 at meiotic centromeres with increasing temperature. Furthermore, we show that heat stress increases the duration of meiotic divisions and prolongs the activity of the spindle assembly checkpoint during meiosis I, indicating an impaired efficiency of the kinetochore attachments to spindle microtubules. Our analysis of mutants with reduced levels of centromeric histone suggests that weakened centromeres sensitize plants to elevated temperature, resulting in meiotic defects and reduced fertility even at moderate temperatures. These results indicate that the structure and functionality of meiotic centromeres in Arabidopsis are highly sensitive to heat stress, and suggest that centromeres and kinetochores may represent a critical bottleneck in plant adaptation to increasing temperatures.
+Heat stress is a major threat to global crop production, and understanding its impact on plant fertility is crucial for developing climate-resilient crops. Despite the known negative effects of heat stress on plant reproduction, the underlying molecular mechanisms remain poorly understood. Here, we investigated the impact of elevated temperature on centromere structure and chromosome segregation during meiosis in Arabidopsis thaliana. Consistent with previous studies, heat stress leads to a decline in fertility and micronuclei formation in pollen mother cells. Our results reveal that elevated temperature causes a decrease in the amount of centromeric histone and the kinetochore protein BMF1 at meiotic centromeres with increasing temperature. Furthermore, we show that heat stress increases the duration of meiotic divisions and prolongs the activity of the spindle assembly checkpoint during meiosis I, indicating an impaired efficiency of the kinetochore attachments to spindle microtubules. Our analysis of mutants with reduced levels of centromeric histone suggests that weakened centromeres sensitize plants to elevated temperature, resulting in meiotic defects and reduced fertility even at moderate temperatures. These results indicate that the structure and functionality of meiotic centromeres in Arabidopsis are highly sensitive to heat stress, and suggest that centromeres and kinetochores may represent a critical bottleneck in plant adaptation to increasing temperatures.
 
 ## Introduction
 
@@ -35,15 +35,61 @@ In this study, we have discovered that heat stress significantly reduces the amo
 
 ## Results
 
-## Pollen production and fertility decline with increasing temperature
+### Pollen production and fertility decline with increasing temperature
 
 In our previous work, we identified the cenh3-4 allele of Arabidopsis centromeric histone CENH3 that carries a mutation in the splicing donor site of the third exon (Capitao et al., 2021). This leads to a 10-fold reduction in fully spliced CENH3 mRNA and a decreased amount of centromeric histone. Consequently, cenh3-4 plants have smaller centromeres and are sensitive to oryzalin (Capitao et al., 2021). Under standard conditions, cenh3-4 mutants are barely distinguishable from wild type, but we noticed their reduced fertility when grown at an elevated temperature. To systematically assess this phenotype, we grew plants under standard conditions (21°C) until they formed four true leaves, and then continued their cultivation in growth chambers tempered to 16°C, 21°C, 26°C, and 30°C (Figure 1—figure supplement 1). At 16°C, plants exhibited the slowest growth, but also the highest fertility, as assessed by pollen count and silique length, which is indicative of seed yield (Figure 1). Fertility slightly decreased at 21°C and further declined at 26°C. In cenh3-4 mutants, we noticed a sharp decline in pollen production and fertility at 26°C (86±48 pollen per anther), whereas the fertility of the wild type was still relatively high (213±58 pollen per anther) (Figure 1B and C). Both cenh3-4 and wild type plants became infertile at 30°C. The heat-induced sterility was reversible and cenh3-4 as well as wild type plants transferred from 30°C to 21°C regained fertile flowers (Figure 1—figure supplement 1C). These data indicate that pollen production and fertility gradually decline with increasing temperature and this trend is particularly pronounced in cenh3-4 mutants that have become almost sterile already at 26°C.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig1-v1.jpg)
+
+**Figure 1.:** (A) Analysis of silique length through the main stem of wild type (WT) grown at 16°C (n=18), 21°C (n=25), 26°C (n=13), 30°C (n=20) and cenh3-4 mutant at 16°C (n=22), 21°C (n=20), 26°C (n=22), and 30°C (n=11). The silique position is numbered from the oldest to the youngest silique on the main stem. Error bars depict standard deviation. (B) Anthers of the abovementioned plants after Alexander staining. (C) Quantification of viable pollen per anther (n=45). Significance of the difference is counted using two-tailed t-test. Source values for (A) and (C) are available in Source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Approximately 6-week-old wild type (WT) and cenh3-4 plants grown at 16°C, 21°C, 24°C, 26°C, 28°C, and 30°C. (B) Effect of temperature on WT and cenh3-4 inflorescence morphology. (C) Restoration of fertility in heat-induced sterile WT and cenh3-4 plants; plants were grown at 30°C for 3 weeks and then transferred to 21°C for 2 more weeks.
+
 It has been reported that extreme heat stress alters chromosome segregation fidelity and the duration of Arabidopsis meiosis (De Jaeger-Braet et al., 2022). Temperatures of 34°C and above abolished chromosome pairing and synapsis and led to the formation of univalents. However, meiotic chromosomes are fully paired at 30°C (Ning et al., 2021; De Jaeger-Braet et al., 2022; Fu et al., 2022), indicating that the recombination defects are not primarily responsible for abortive pollen development at this temperature.
 
-## Heat stress delays meiotic progression and induces micronuclei
+### Heat stress delays meiotic progression and induces micronuclei
 
 To assess the effect of temperature on meiotic progression and chromosome segregation at temperatures up to 30°C, we performed live imaging of meiotic divisions in the HTA10:RFP reporter line, which marks chromatin (Valuchova et al., 2020). We measured the duration of meiotic divisions from the end of diakinesis until the formation of haploid nuclei in telophase II (Figure 2—figure supplement 1). Meiotic divisions were slowest at 16°C and lasted, on average, 441 and 459 min in wild type and cenh3-4, respectively (Videos 1 and 2, Figure 2A). Meiosis progressed significantly faster with increasing temperature. Wild type meiotic divisions took 169 min at 21°C and 142 min at 26°C (Videos 3 and 4). Meiotic divisions were also rapid in cenh3-4 at 21°C, lasting on average 156 min, but slowed down to 238 min at 26°C (Videos 5 and 6). This contrasts with the situation in wild type, where divisions occur at the fastest rate at 26°C. Interestingly, meiotic divisions were prolonged at 30°C in both wild type and cenh3-4 mutants to 286 and 264 min, respectively (Videos 7 and 8). The slowdown of meiosis at 26°C and 30°C in cenh3-4, and at 30°C in wild type coincides with the steep decline of pollen production (Figure 1B and C) and indicates problems with meiotic progression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig2-v1.jpg)
+
+**Figure 2.:** (A) Graphical representation of the duration of meiosis I (from the end of diakinesis to the end of anaphase I; Figure 2—figure supplement 1), interkinesis, and meiosis II (prometaphase II to telophase II) calculated from live imaging of anthers in wild type (WT) and cenh3-4 plants grown at 16°C, 21°C, 26°C, and 30°C. Error bars represent standard deviation (from 16°C to 30°C: in wild type n=36, 36, 36, 45 and cenh3-4 n=35, 24, 24, 4, resp.) Significance of the difference is indicated (two-tailed t-test; ****p<0.0001). (B) Anther loculi in the tetrad stage of wild type, cenh3-4 and spo11-2-3 plants grown at 16°C, 21°C, 26°C, and 30°C. DNA was stained with DAPI. Blue arrowheads indicate examples of produced micronuclei. Scale bar = 10 µm. (C) Number of micronuclei per lobe in wild type (WT, n=19, 19, 19, 19), cenh3-4 (n=19, 19, 19, 19), and spo11-2-3 (n=19, 26, 21) plants. Error bars represent standard deviation. Significance of the difference from plants of the corresponding genotype grown at 21°C is indicated (two-tailed t-test; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). Source values for (A) and (C) are available in Source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Scale bar = 5 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Temperature distribution in the growth chamber during a 34°C day/18°C night regime. (B) Effect of 21°C/18°C and 34°C/18°C; day/night, temperature regimes on wild type (WT) and cenh3-4 fertility. (C) Number of viable pollen in wild type at 21°C/18°C (n=44), at 34°C/18°C (n=47) and cenh3-4 mutant at 34°C/18°C (n=47). (D) Number of produced micronuclei per lobe in wild type anthers of plants grown at 21°C/18°C or 34°C/18°C. Material was collected at different time points during the day. n=10–13. Error bars depict standard deviation. Source values for (C) and (D) are available in Source data 1.
+
+![Video 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/90253/elife-90253-video2.mp4.jpg)
+
+**Video 2.:** Production of micronuclei could be seen in a few pollen mother cells.
+
+![Video 3.](https://cdn.elifesciences.org/articles/90253/elife-90253-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/90253/elife-90253-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/90253/elife-90253-video5.mp4.jpg)
+
+**Video 5.:** Production of micronuclei could be detected in some pollen mother cells.
+
+![Video 6.](https://cdn.elifesciences.org/articles/90253/elife-90253-video6.mp4.jpg)
+
+**Video 6.:** Production of micronuclei could be detected in most pollen mother cells.
+
+![Video 7.](https://cdn.elifesciences.org/articles/90253/elife-90253-video7.mp4.jpg)
+
+**Video 7.:** Aberrant meiotic products are detected.
+
+![Video 8.](https://cdn.elifesciences.org/articles/90253/elife-90253-video8.mp4.jpg)
+
+**Video 8.:** Most pollen mother cells (PMCs) undergo aberrant meiotic division and only a few PMCs undergo normal meiotic division resulting in forming unbalanced tetrads.
 
 Live imaging in cenh3-4 plants and, at 30°C, also in wild type showed formation of micronuclei that began to form during meiosis I and persisted till telophase II (Videos 7 and 8). We quantified the micronuclei in fixed anthers at the tetrad stage using confocal microscopy (Figure 2B and C). The micronuclei were apparent in cenh3-4 mutants at all temperatures, which is consistent with partially impaired centromere function in these plants (Capitao et al., 2021). Nevertheless, their occurrence substantially increased at 26°C and severe defects in chromosome segregation were observed at 30°C (Figure 2B and C; Videos 6 and 8) resulting in very few regular tetrads. Whereas we occasionally detected micronuclei at lower temperatures also in wild type, albeit at a much lower level than in cenh3-4, their incidence increased 17-fold between 26°C and 30°C (Figure 2B and C, Videos 4 and 7). In addition, we observed dyads and polyads, which is consistent with the previous study performed at a similar temperature (De Storme and Geelen, 2020). These data show that temperature-induced fertility reduction coincides with increased occurrence of micronuclei.
 
@@ -51,19 +97,51 @@ Micronuclei may arise from acentric fragments and dicentric chromosomes derived 
 
 In its natural habitats, A. thaliana usually flowers from March to early summer under average daily temperatures lower than the ones used for cultivation in laboratories (Shindo et al., 2007; Brachi et al., 2010). Due to the day-night cycle, they never experience sustained temperatures over 30°C. Therefore, we tested whether meiotic defects observed after continuous cultivation at 30°C could also be induced under more physiological conditions that mimic a hot day. To this end, we cultivated plants in chambers tempered to 18°C overnight and increased temperature to 34°C for 6 hr during the day (Figure 2—figure supplement 2). We observed a drastic reduction in fertility and pollen count, as well as an increased frequency of micronuclei compared to control plants grown under the 18°C/21°C night/day regime (Figure 2—figure supplement 2B–D). These data suggest that heatwaves occurring during flowering can have a detrimental effect on Arabidopsis meiosis.
 
-## Heat stress reduces the amounts of centromeric histone on meiotic centromeres
+### Heat stress reduces the amounts of centromeric histone on meiotic centromeres
 
 Our phenotypic analysis indicates that cenh3-4 mutants grown at 26°C exhibit the same behavior as wild type plants grown at 30°C. Therefore, we investigated whether increasing temperature weakens the centromere structure, which could explain the temperature sensitivity of cenh3-4 plants with less centromeric histone. CENH3 is present on meiotic chromosomes from early prophase I (Talbert et al., 2002; Lermontova et al., 2006) and its signal is most visible in pachytene when homologous chromosomes are fully synapsed.
 
 To assess the effect of temperature on centromeres, we analyzed the CENH3 signal on pachytene chromosomes in anthers of the Arabidopsis eYFP:CENH3 reporter line (Le Goff et al., 2020; Demidov et al., 2022) grown at 21°C, 26°C, and 30°C. While eYFP:CENH3 was readily detectable on pachytene chromosomes at 21°C, the signal decreased significantly at 26°C and declined further at 30°C (Figure 3A and B). This trend was observed in three independent experiments (Figure 3B). In contrast, the eYFP:CENH3 signal in tapetum nuclei adjacent to pollen mother cells (PMCs) exhibited the opposite trend and increased with elevated temperature (Figure 3A and C). This resulted in a striking difference in signal intensity at 30°C, where the tapetum exhibited a strong eYFP:CENH3 signal, whereas the signal on pachytene chromosomes in the same field of view was barely detectable (Figure 3A). We validated the observation that elevated temperature reduces the level of CENH3 on pachytene chromosomes also in non-tagged wild type plants by immunodetection using a CENH3 antibody (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig3-v1.jpg)
+
+**Figure 3.:** (A) eYFP:CENH3 expression and DAPI staining of meiotic pachytene (blue dots) and mitotic tapetal cells (red dots) in wild type plants grown at 21°C, 26°C, and 30°C. Scale bar = 5 µm. (B) Quantification of CENH3 fluorescence intensity per centromere in pachytene. Each interleaved scatter plot with median and interquartile range shows results of an independent experiment (left graph n=102, 103, 125, middle n=359, 220, 233 and right graph n=386, 268, 233). (C) Quantification of eYFP:CENH3 signal intensity in tapetum cells of plants grown at 21°C, 26°C, and 30°C. Each graph represents an independent experiment (left graph n=369, 262, 203 and right graph n=358, 266, 213). (D) Expression of BMF1:eYFP in pachytene in plants grown at 21°C, 26°C, and 30°C. DNA is counterstained with DAPI. Scale bar = 5 µm. (E) Quantification of BMF1:eYFP signal intensity per centromere in pachytene in two independent experiments; left graph n=120 and right n=100. Two-tailed t-test is used to depict the significance of the difference. Source values for (B, C, and E) are available in Source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunolocalization of CENH3 (red) on pachytene chromosomes stained by DAPI (gray) in pollen mother cells from wild type flowers exposed to 21°C and 30°C. Scale bar = 2 µm. (B) Quantification of the CENH3 signal intensity per pachytene centromere in plants grown at 21°C (n=49) and 30°C (n=50). Significance of the difference assessed by the two-tailed t-test is indicated. Source values are available in Source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Scale bar = 5 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) BMF1:TagRFP signal in roots of wild type and cenh3-4 mutants. The same conditions of image acquisitions were used. Scale bar = 20 µm. (B) No BMF1:eYFP signal is detected in pollen mother cells of cenh3-4 mutants grown at 21°C even when maximum intensity of the excitation laser was used. Scale bar = 20 µm.
+
 CENH3 acts as a platform for the binding of additional kinetochore and SAC proteins. BMF1 is an Arabidopsis BUB1-related protein that associates with centromeres throughout the cell cycle (Komaki and Schnittger, 2017). We generated Arabidopsis marker lines expressing BMF1::BMF1:eYFP and BMF1::BMF1:TagRFP constructs, and validated BMF1 co-localization with CENH3 from early prophase I to telophase II (Figure 3—figure supplement 2, Video 9). The BMF1 signal was not detected in roots or in meiotic cells of cenh3-4 mutants indicating that BMF1 loading on centromeres is CENH3 dependent (Figure 3—figure supplement 3). Analysis of the BMF1:eYFP signal in wild type plants grown at elevated temperatures showed a decrease in the signal on pachytene chromosomes at 26°C, and BMF1 was undetectable at 30°C (Figure 3D and E). These data suggest that similar to CENH3, elevated temperature reduces the kinetochore protein BMF1 at meiotic centromeres.
 
-## Heat stress prolongs SAC in metaphase I
+![Video 9.](https://cdn.elifesciences.org/articles/90253/elife-90253-video9.mp4.jpg)
+
+### Heat stress prolongs SAC in metaphase I
 
 In our previous report, we showed that reduced amount of CENH3 and smaller centromeres prolong the biorientation of mitotic chromosomes in cenh3-4 plants (Capitao et al., 2021). Biorientation is monitored by the SAC and its satisfaction triggers anaphase. We hypothesized that meiotic chromosomes with heat-induced reductions in CENH3 might take longer to properly attach to the spindle and satisfy the SAC. The core SAC proteins temporarily associate with the kinetochore during spindle formation and disappear just before the onset of anaphase.
 
 BMF3 is one of the core components of the Arabidopsis SAC, which associates with the kinetochores during prometaphase and extends this association in the presence of a spindle inhibitor (Komaki and Schnittger, 2017; Lampou et al., 2023). To monitor the SAC on meiotic chromosomes, we generated Arabidopsis lines expressing BMF3::BMF3:TagRFP, and BMF3::BMF3:GFP together with the tubulin marker TagRFP:TUB4. First, we validated the localization of BMF3 on meiotic chromosomes by live cell imaging, as BMF3 has previously only been analyzed in the context of mitosis (Komaki and Schnittger, 2017). We observed the BMF3:GFP signal during prometaphase/metaphase I, it disappeared at the onset of anaphase I and reappeared again during metaphase II, suggesting that BMF3 is a component of the meiotic SAC (Figure 4A, Video 10). We then analyzed the effect of temperature on SAC duration. Since the signal was more prominent in metaphase I, we measured the duration of the active SAC during meiosis I. We observed that while the BMF3:GFP signal persisted for an average approximately 22.7 min at 21°C and 26°C, its appearance was prolonged to 40.5 min at 30°C (Figure 4B, Videos 11 and 12). We also noticed that the intensity of the BMF3 signal appeared to decrease with increasing temperature (Figure 4—figure supplement 1A). A weaker but prolonged association of BMF3 with the meiosis I kinetochore was also observed in cenh3-4 mutants with reduced levels of centromeric histone (Figure 4—figure supplement 1B and C). These observations are consistent with the notion that elevated temperature leads to partial depletion of CENH3 and impairment of centromere structure, which may prolong the time required for chromosome biorientation and SAC satisfaction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig4-v1.jpg)
+
+**Figure 4.:** (A) Time lapse series of BMF3:GFP (cyan) and TagRFP:TUB4 (magenta) in pollen mother cell from nuclear envelope breakdown to telophase II. Scale bar = 5 µm. (B) Duration of BMF3:GFP signal in plants grown at 21°C (n=24), 26°C (n=32), and 30°C (n=31). Significance of the difference was calculated via two-tailed t-test. Source values for (B) are available in Source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90253/elife-90253-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) BMF3:GFP signal in meiosis I obtained by live cell imaging in pollen mother cells (PMCs) incubated at indicated temperature. Intensity of the BMF3:GFP signal changes in the course of meiosis and the red rectangles indicate PMCs with the peak BMF3:GFP signal intensity. Scale bar = 5 µm. (B) BMF3:TagRFP signal in meiosis I in wild type and cenh3-4 plants obtained by live cell imaging microscopy. Scale bar = 5 µm. (C) Duration of the BMF3:TagRFP signal in PMCs during meiosis I in wild type (n=26) and cenh3-4 (n=31) plants. Each datapoint corresponds to one meiocyte. Significance of the difference assessed by two-tailed t-test is indicated. Source values are available in Source data 1.
+
+![Video 10.](https://cdn.elifesciences.org/articles/90253/elife-90253-video10.mp4.jpg)
+
+![Video 11.](https://cdn.elifesciences.org/articles/90253/elife-90253-video11.mp4.jpg)
+
+![Video 12.](https://cdn.elifesciences.org/articles/90253/elife-90253-video12.mp4.jpg)
 
 ## Discussion
 
@@ -81,24 +159,24 @@ In conclusion, our study highlights the significant impact of temperature on the
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 A. thaliana ecotype Columbia (Col-0), cenh3-4 (Capitao et al., 2021), and spo11-2-3 (Hartung et al., 2007) seeds were grown on soil in growth chambers at 21°C, 16 hr/8 hr light/dark cycles and 50% of humidity until the 1.04 growth stage. Plants were then transferred to different chambers with continuous 16°C, 21°C, 26°C, 30°C or 34°C/18°C and 21°C/18°C at 16 hr/8 hr light/dark cycles and 50% of humidity. Plants used for live cell imaging were generated by crossing HTA10:RFP (Valuchova et al., 2020) and pRPS5A::TagRFP:TUB4 (Prusicki et al., 2019) reporter lines with cenh3-4 mutant and BMF3::BMF3:GFP reporter lines, respectively. eYFP:CENH3 reporter line was described and characterized in previous studies (Le Goff et al., 2020; Demidov et al., 2022).
 
-## Generating reporter lines
+### Generating reporter lines
 
 To generate the BMF1 and BMF3 reporter lines, we amplified the promoter and genomic regions of BMF1 using the primers CACCTGAGTCTCCAACGTTA and CGAAGAGCATAACGAGATGCG. The PCR products were then cloned into the destination vectors pGWB659 and pGWB640, respectively, to create marker lines tagged with TagRFP and eYFP at the C-terminus. Similarly, we amplified the BMF3 promoter and genomic regions using the primers CACCATGCAGATGGTCCTCC and GAAGTCCATTGGCATTGCAAA, and subcloned them into pGWB459 and pGWB650 destination vectors using gateway cloning to generate the BMF3::BMF3:TagRFP and BMF3::BMF3:GFP lines, respectively. We then introduced these constructs into wild type and cenh3-4 plants using Agrobacterium-mediated floral dip transformation. We used non-segregating homozygous transgenic lines for microscopic analyses.
 
-## Assessment of plant fertility
+### Assessment of plant fertility
 
 Pollen viability was determined by Alexander staining (Alexander, 1969). Anthers were imaged using Zeiss Axioscope A1 equipped with 20×/0.5 objective (Zeiss) and processed in Zeiss ZEN software. Silique length was assessed from images of main stems scanned by an Epson scanner and the siliques were measured using the Fiji Analyze/Measure function (Schindelin et al., 2012).
 
-## Cytology
+### Cytology
 
 To examine micronuclei, DAPI staining of PMCs was used in whole anther as described (Capitao et al., 2021). Anthers were imaged using Zeiss LSM780 confocal microscope (63×/1.4 oil objective) and image processing was done using Zeiss ZEN software (Zeiss). To quantify the fluorescence signal intensity of eYFP:CENH3 and BMF1:eYFP, anthers were DAPI stained as described above, and Z-stacks were acquired using Zeiss LSM880 confocal microscope equipped with the Fast module 32-channels Airyscan detector (63×/1.4 oil objective). The fluorescence intensity was quantified using Fiji (Schindelin et al., 2012) according to the procedure described by Shihan et al., 2021. This involved generating a SUM of signal in Z-stacks covering one nucleus, background subtraction, and measuring Raw Integral Density per one signal. This process was repeated individually in each nucleus.
 
 Immunodetection of CENH3 was performed with a custom-made polyclonal antiserum raised against the N-terminal peptide of CENH3 (1:1000) (Capitao et al., 2021) and anti-Rabbit-CY3 (Jackson ImmunoResearch). Arabidopsis inflorescences were fixed in 1× PBS buffer supplemented with 4% formaldehyde and 0.05% Tween for 15 min in vacuum and 45 min at room temperature. The floral buds were washed with 1× PBS and digested with cytohelicase (0.1 g cytohelicase, 0.25 g polyvinylpyrollidone, and 0.375 g sucrose in 25 ml of water) for 2 hr. Buds were washed once with 1× PBS and anthers were dissected on glass slides, squashed and frozen in liquid nitrogen. The slides were blocked with 3% BSA in 1× PBS supplemented with 0.5% Triton X-100 for 30 min at 37°C. Anti-CENH3 antibody in 1× PBS supplemented with 3% BSA was added to each slide and incubated over night at 4°C. Slides were washed with 1× PBS and anti-Rabbit-CY3 secondary antibody diluted in 1× PBS supplemented with 3% BSA was added to each slide and incubated for 1 hr at 37°C. Slides were washed with 1× PBS, stained with DAPI, and mounted in Vectashield. Slides were observed using AxioImager.Z2 fluorescence microscope (Zeiss). Images were analyzed using ZEN (Zeiss) and Fiji (Schindelin et al., 2012) softwares. Signal intensity was measured at the peak signal of each centromere and was normalized to the background signal.
 
-## Live cell imaging
+### Live cell imaging
 
 Live cell imaging of meiosis was performed by light-sheet fluorescence microscopy using Light-sheet Z.1 microscope (Zeiss) as previously described (Valuchova et al., 2020; Capitao et al., 2021). Imaging of male meiosis was conducted using 10× or 20× objectives (Detection Optics 10×/0.5 or 20×/1.0), single illumination (Illumination Optics 10×/0.2) and two track imaging with 488 nm laser for GFP and eYFP, and 561 nm laser for RFP, in 5 min time increments. Imaging of BMF3:GFP and TagRFP:TUB4 markers for SAC analysis was performed using fast scanning in 1 min time increments. Images were deconvolved with a Regularized Inverse Filter and further processed in Zeiss ZEN software for Light-sheet (Zeiss). To correct occasional sample drift, the Correct 3D drift plugin in Fiji (Parslow et al., 2014) was used.

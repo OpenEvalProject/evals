@@ -27,51 +27,117 @@ Here, we aim to narrow the gap between descriptive statistical models and biophy
 
 ## Results
 
-## Background: Poisson GLM with spike history
+### Background: Poisson GLM with spike history
 
-The Poisson GLM provides a simple yet powerful description of the encoding relationship between stimuli and neural responses (Truccolo et al., 2005). A recurrent Poisson GLM, often referred to in the neuroscience literature simply as ‘the GLM’, describes neural encoding in terms of a cascade of linear, nonlinear, and probabilistic spiking stages (Figure 1a). The GLM parameters consist of a stimulus filter 𝐤, which describes how the neuron integrates an external stimulus, a post-spike filter 𝐡, which captures dependencies on spike history, and a baseline b that determines baseline firing rate in the absence of input. The outputs of these filters are summed and passed through a nonlinear function fr to obtain the conditional intensity for an inhomogeneous Poisson spiking process. The model can be written concisely in discrete time as:(1)λt=fr(k⋅xt+h⋅ythist+b)(spikerate)(2)yt∣λt∼Poiss(Δλt)λt=fxyz(probabilisticspiking)where λt≥0 is the spike rate (or conditional intensity) at time t, 𝐱t is the spatio-temporal stimulus vector at time t, 𝐲th⁢i⁢s⁢t is a vector of relevant spike history at time t, and yt is the spike count in bin of size Δ. Although spike generation is conditionally Poisson, the model can capture complex history-dependent response properties such as refractoriness, bursting, bistability, and adaptation (Weber and Pillow, 2016). Additional filters can be added to the model in order to incorporate dependencies on covariates of the response such as spiking in other neurons or local field potential recorded on nearby electrodes (Truccolo et al., 2005; Pillow et al., 2008; Kelly et al., 2010). A common choice for the nonlinearity is exponential, f⁢(z)=exp⁡(z), which corresponds to the ‘canonical’ inverse link function for Poisson GLMs.
+The Poisson GLM provides a simple yet powerful description of the encoding relationship between stimuli and neural responses (Truccolo et al., 2005). A recurrent Poisson GLM, often referred to in the neuroscience literature simply as ‘the GLM’, describes neural encoding in terms of a cascade of linear, nonlinear, and probabilistic spiking stages (Figure 1a). The GLM parameters consist of a stimulus filter $𝐤$, which describes how the neuron integrates an external stimulus, a post-spike filter $𝐡$, which captures dependencies on spike history, and a baseline $b$ that determines baseline firing rate in the absence of input. The outputs of these filters are summed and passed through a nonlinear function $f_{r}$ to obtain the conditional intensity for an inhomogeneous Poisson spiking process. The model can be written concisely in discrete time as:
 
-Previous literature has offered a quasi-biological interpretation of the GLM known as ‘soft threshold’ integrate-and-fire (IF) model (Plesser and Gerstner, 2000; Gerstner, 2001; Paninski et al., 2007; Mensi et al., 2011). This interpretation views the summed filter outputs as the neuron’s membrane potential. This is similar to the standard IF model in which membrane potential is a linearly filtered version of input current (as opposed to conductance-based input). The nonlinear function fr can be interpreted as a ‘soft threshold’ function that governs a smooth increase in the instantaneous spike probability as a function of membrane depolarization. Lastly, the post-spike current 𝐡 determines how membrane potential is reset following a spike.
+$$
+(1)\lambda_{t}=f_{r}(k⋅x_{t}+h⋅y_{t}^{hist}+b)(spikerate)(2)y_{t}∣\lambda_{t}∼Poiss(Δ\lambda_{t})\lambda_{t}=fxyz(probabilisticspiking)
+$$
 
-We can rewrite the standard GLM to emphasize this biological interpretation explicitly:(3)Vt=k⋅xt+h⋅ythist+b(membranepotential)(4)λt=fr(Vt)λt=fxyffdgjz(instantaneousspikerate)λt=fxyz(5)yt∣λt∼Poiss(Δλt).λt=fffjz(probabilisticspiking)λt=fxyz
+where $\lambda_{t}\geq0$ is the spike rate (or conditional intensity) at time $t$, $𝐱_{t}$ is the spatio-temporal stimulus vector at time $t$, $𝐲_{t}^{h⁢i⁢s⁢t}$ is a vector of relevant spike history at time $t$, and $y_{t}$ is the spike count in bin of size $Δ$. Although spike generation is conditionally Poisson, the model can capture complex history-dependent response properties such as refractoriness, bursting, bistability, and adaptation (Weber and Pillow, 2016). Additional filters can be added to the model in order to incorporate dependencies on covariates of the response such as spiking in other neurons or local field potential recorded on nearby electrodes (Truccolo et al., 2005; Pillow et al., 2008; Kelly et al., 2010). A common choice for the nonlinearity is exponential, $f⁢(z)=exp⁡(z)$, which corresponds to the ‘canonical’ inverse link function for Poisson GLMs.
 
-Note that in this ‘soft’ version of the IF model, the only noise source is the conditionally Poisson spiking mechanism; this differs from other noisy extensions of the IF model with linear current-based input and ‘hard’ spike thresholds, which require more elaborate methods for computing likelihoods (Paninski, 2004; Pillow et al., 2005; Paninski et al., 2008). To convert this model to a classic leaky integrate-and-fire model, we could replace fr with a ‘hard’ threshold function that jumps from zero to infinity at some threshold value of the membrane potential, set the stimulus filter 𝐤 to an exponential decay filter, and set the post-spike filter 𝐡 to a delta function that causes instantaneous reset of the membrane potential following a spike. The GLM membrane potential is a linear function of the input, just as in the classic leaky IF model, and thus both models fail to capture the nonlinearities apparent in the synaptic inputs to most real neurons (Schwartz and Rieke, 2011).
+![Figure 1.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig1-v2.jpg)
 
-## Interpreting the GLM as a conductance-based model
+**Figure 1.:** (A) Diagram illustrating novel biophysical interpretation of the generalized linear model (GLM). The stimulus $x_{t}$ is convolved with a conductance filter $𝐤$ weighted by $D=(E_{e}-E_{i})$, the difference between excitatory and inhibitory current reversal potentials, resulting in total synaptic current $I_{t⁢o⁢t}⁢(t)$. This current is injected into the linear RC circuit governing the membrane potential $V_{t}$, which is subject to a leak current with conductance $g_{t⁢o⁢t}$ and reversal potential $V_{0}$. The instantaneous probability of spiking is governed by a the conditional intensity $\lambda_{t}=f(V_{t})$, where $f$ is a nonlinear function with non-negative output. Spiking is conditionally Poisson with rate $\lambda_{t}$, and spikes gives rise to a post-spike current or filter $𝐡$ that affects the subsequent membrane potential. (B) Conductance-based encoding model (CBEM). The stimulus $𝐱_{t}$ is convolved with filters $𝐤_{e}$ and $𝐤_{i}$, whose outputs are transformed by rectifying nonlinearity $f_{g}$ to produce excitatory and inhibitory synaptic conductances $g_{e}⁢(t)$ and $g_{i}⁢(t)$. These time-varying conductances and the static leak conductance $g_{l}$ drive synaptic currents with reversal potentials $E_{e}$, $E_{i}$, and $E_{l}$, respectively. The resulting membrane potential $V_{t}$ is added to a linear spike-history term, given by $𝐡⋅𝐲_{t}^{h⁢i⁢s⁢t}$, and then transformed via rectifying nonlinearity $f_{r}$ to obtain the conditional intensity $\lambda_{t}$, which governs conditionally Poisson spiking as in the GLM. Figure 1—figure supplement 1 shows that the CBEM parameters can be recovered from simulated data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Estimates (solid traces) of excitatory (blue) and inhibitory (red) filters from 10 min of simulated spike trains. (Dashed lines indicate true filters). The inhibitory filter was oppositely tuned and delayed compared to the excitatory filter. (B) The $L_{2}$ norm between the estimated input filters and the true filters as a function of the amount of training data. (C) The log-likelihood of the fit CBEM on the test data converged towards the log-likelihood of the true model. (D,E,F) Same as A-C for a simulation in which $𝐤_{i}$ had the same tuning as $𝐤_{e}$ with a delay.
+
+Previous literature has offered a quasi-biological interpretation of the GLM known as ‘soft threshold’ integrate-and-fire (IF) model (Plesser and Gerstner, 2000; Gerstner, 2001; Paninski et al., 2007; Mensi et al., 2011). This interpretation views the summed filter outputs as the neuron’s membrane potential. This is similar to the standard IF model in which membrane potential is a linearly filtered version of input current (as opposed to conductance-based input). The nonlinear function $f_{r}$ can be interpreted as a ‘soft threshold’ function that governs a smooth increase in the instantaneous spike probability as a function of membrane depolarization. Lastly, the post-spike current $𝐡$ determines how membrane potential is reset following a spike.
+
+We can rewrite the standard GLM to emphasize this biological interpretation explicitly:
+
+$$
+(3)V_{t}=k⋅x_{t}+h⋅y_{t}^{hist}+b(membranepotential)(4)\lambda_{t}=f_{r}(V_{t})\lambda_{t}=fxyffdgjz(instantaneousspikerate)\lambda_{t}=fxyz(5)y_{t}∣\lambda_{t}∼Poiss(Δ\lambda_{t}).\lambda_{t}=fffjz(probabilisticspiking)\lambda_{t}=fxyz
+$$
+
+Note that in this ‘soft’ version of the IF model, the only noise source is the conditionally Poisson spiking mechanism; this differs from other noisy extensions of the IF model with linear current-based input and ‘hard’ spike thresholds, which require more elaborate methods for computing likelihoods (Paninski, 2004; Pillow et al., 2005; Paninski et al., 2008). To convert this model to a classic leaky integrate-and-fire model, we could replace $f_{r}$ with a ‘hard’ threshold function that jumps from zero to infinity at some threshold value of the membrane potential, set the stimulus filter $𝐤$ to an exponential decay filter, and set the post-spike filter $𝐡$ to a delta function that causes instantaneous reset of the membrane potential following a spike. The GLM membrane potential is a linear function of the input, just as in the classic leaky IF model, and thus both models fail to capture the nonlinearities apparent in the synaptic inputs to most real neurons (Schwartz and Rieke, 2011).
+
+### Interpreting the GLM as a conductance-based model
 
 Here, we propose a novel biophysically realistic interpretation of the classic Poisson GLM as a dynamical model with conductance-based input. In brief, this involves writing the GLM as a conductance-based model with excitatory and inhibitory conductances governed by affine functions of the stimulus, but constrained so that total conductance is fixed. This removes voltage-dependence of the membrane currents, making the membrane potential itself an affine function of the stimulus. The remainder of this section lays out the mathematical details of this interpretation explicitly.
 
-Consider a neuron with membrane potential Vt governed by the ordinary differential equation:(6)d⁢Vtd⁢t=-gl⁢(Vt-El)-ge⁢(t)⁢(Vt-Ee)-gi⁢(t)⁢(Vt-Ei)where gl is leak conductance, ge⁢(t) and gi⁢(t) are time-varying excitatory and inhibitory synaptic conductances, and El, Ee and Ei are the leak, excitatory and inhibitory reversal potentials.
+Consider a neuron with membrane potential $V_{t}$ governed by the ordinary differential equation:
 
-A natural question to ask is: under what conditions, if any, is this model a GLM? Answering this question aims to reveal what biophysical assumptions the GLM implicitly enforces when modeling spike trains. Here, we provide a set of sufficient conditions for an equivalence between the two. The definition of a GLM requires the membrane potential Vt to be an affine (linear plus constant) function of the stimulus, which holds if the two following conditions are met:
+$$
+\frac{d⁢V_{t}}{d⁢t}=-g_{l}⁢(V_{t}-E_{l})-g_{e}⁢(t)⁢(V_{t}-E_{e})-g_{i}⁢(t)⁢(V_{t}-E_{i})
+$$
 
-The first condition implies ge⁢(t)+gi⁢(t)=c, for some constant c, and the second implies that ge⁢(t)⁢Ee+gi⁢(t)⁢Ei is a linear function of the stimulus.
+where $g_{l}$ is leak conductance, $g_{e}⁢(t)$ and $g_{i}⁢(t)$ are time-varying excitatory and inhibitory synaptic conductances, and $E_{l}$, $E_{e}$ and $E_{i}$ are the leak, excitatory and inhibitory reversal potentials.
 
-We can satisfy these two conditions simultaneously by modeling the excitatory and inhibitory conductances as affine functions of the stimulus, driven by linear filters of opposite sign:(7)ge(t)=kc⋅xt+be(GLMexcitatoryconductance)gi(t)=−kc⋅xt+bi,(GLMinhibitoryconductance)where 𝐤c denotes the linear ‘conductance’ filter, and be and bi are arbitrary constants. Under this setting, excitatory and inhibitory conductances are driven by equal and opposite linear projections of the stimulus, with total conductance fixed at gt⁢o⁢t=gl+be+bi.
+A natural question to ask is: under what conditions, if any, is this model a GLM? Answering this question aims to reveal what biophysical assumptions the GLM implicitly enforces when modeling spike trains. Here, we provide a set of sufficient conditions for an equivalence between the two. The definition of a GLM requires the membrane potential $V_{t}$ to be an affine (linear plus constant) function of the stimulus, which holds if the two following conditions are met:
 
-We can therefore rewrite the membrane equation (Equation 6) as:(8)dVtdt=−gtotVt+(Ee−Ei)kc⋅xt+btot,(GLMmembraneequation)where bt⁢o⁢t=be⁢Ee+bi⁢Ei. Setting the initial voltage to the steady-state value V0=bt⁢o⁢t/gt⁢o⁢t, the instantaneous membrane potential is then given by(9)Vt=𝐤⋅𝐱t+V0,where the equivalent standard GLM filter 𝐤 is equal to the linear convolution of 𝐤c with an exponential decay filter, that is: 𝐤=∫0t(Ee-Ei)⁢𝐤c⁢(t)⁢e-gt⁢o⁢t⋅(t-t′)⁢𝑑t′. This shows that membrane potential Vt is an affine function of the stimulus, so by adding a monotonic nonlinearity and conditionally Poisson spiking, the model is clearly a GLM.
+The first condition implies $g_{e}⁢(t)+g_{i}⁢(t)=c$, for some constant $c$, and the second implies that $g_{e}⁢(t)⁢E_{e}+g_{i}⁢(t)⁢E_{i}$ is a linear function of the stimulus.
 
-Thus, to summarize, the GLM can be interpreted as a conductance-based model in which a linear filter drives equal and opposite fluctuations in excitatory and inhibitory synaptic conductances. The GLM filter 𝐤 is equal to the convolution of this conductance filter with an exponential decay filter whose time constant is the inverse of the (constant) total conductance.
+We can satisfy these two conditions simultaneously by modeling the excitatory and inhibitory conductances as affine functions of the stimulus, driven by linear filters of opposite sign:
 
-## The conductance-based encoding model (CBEM)
+$$
+g_{e}(t)=k_{c}⋅x_{t}+b_{e}(GLMexcitatoryconductance)g_{i}(t)=−k_{c}⋅x_{t}+b_{i},(GLMinhibitoryconductance)
+$$
+
+where $𝐤_{c}$ denotes the linear ‘conductance’ filter, and $b_{e}$ and $b_{i}$ are arbitrary constants. Under this setting, excitatory and inhibitory conductances are driven by equal and opposite linear projections of the stimulus, with total conductance fixed at $g_{t⁢o⁢t}=g_{l}+b_{e}+b_{i}$.
+
+We can therefore rewrite the membrane equation (Equation 6) as:
+
+$$
+\frac{dV_{t}}{dt}=−g_{tot}V_{t}+(E_{e}−E_{i})k_{c}⋅x_{t}+b_{tot},(GLMmembraneequation)
+$$
+
+where $b_{t⁢o⁢t}=b_{e}⁢E_{e}+b_{i}⁢E_{i}$. Setting the initial voltage to the steady-state value $V_{0}=b_{t⁢o⁢t}/g_{t⁢o⁢t}$, the instantaneous membrane potential is then given by
+
+$$
+V_{t}=𝐤⋅𝐱_{t}+V_{0},
+$$
+
+where the equivalent standard GLM filter $𝐤$ is equal to the linear convolution of $𝐤_{c}$ with an exponential decay filter, that is: $𝐤=\int_{0}^{t}(E_{e}-E_{i})⁢𝐤_{c}⁢(t)⁢e^{-g_{t⁢o⁢t}⋅(t-t^{′})}⁢𝑑t^{′}.$ This shows that membrane potential $V_{t}$ is an affine function of the stimulus, so by adding a monotonic nonlinearity and conditionally Poisson spiking, the model is clearly a GLM.
+
+Thus, to summarize, the GLM can be interpreted as a conductance-based model in which a linear filter drives equal and opposite fluctuations in excitatory and inhibitory synaptic conductances. The GLM filter $𝐤$ is equal to the convolution of this conductance filter with an exponential decay filter whose time constant is the inverse of the (constant) total conductance.
+
+### The conductance-based encoding model (CBEM)
 
 From this novel interpretation of the GLM, it is straightforward to formulate a more realistic conductance-based statistical spike train model. Namely, we can remove the constraint needed to construct a GLM: that excitatory and inhibitory conductance sum to a constant. Relaxing this constraint, so that total conductance can vary, results in a new model that we refer to as the conductance-based encoding model (CBEM). The CBEM represents an extension of GLM to allow for differential tuning of excitation and inhibition and adds rectifying nonlinearities governing the relationship between the stimulus and synaptic conductances. (See model diagram, Figure 1b). The CBEM model is no longer a GLM because the filtering it performs on the stimulus is nonlinear.
 
-Formally, the CBEM is driven by excitatory and inhibitory synaptic conductances that are each linear-nonlinear functions of the stimulus:ge(t)=fg(ke⋅xt+be)(CBEMexcitatoryconductance)(10)gi(t)=fg(ki⋅xt+bi)(CBEMinhibitoryconductance),where 𝐤e and 𝐤i are linear filters driving excitatory and inhibitory conductance, respectively, fg is a soft-rectifying nonlinearity that ensures that conductances are non-negative (see Materials and methods, Equation 14), and be and bi determine the baseline excitatory and inhibitory conductances in the absence of input. The CBEM membrane potential Vt then evolves according to the ordinary differential equation (Equation 6) under the influence of the two time-varying conductances ge⁢(t) and gi⁢(t).
+Formally, the CBEM is driven by excitatory and inhibitory synaptic conductances that are each linear-nonlinear functions of the stimulus:
 
-To incorporate spike-history effects, we add a linear autoregressive term to the membrane potential. This results in an ‘effective’ membrane potential V~t given by:(11)V~t=Vt+h⋅ythist,(effectivemembranepotential)where 𝐲th⁢i⁢s⁢t is a vector of binned spike history at time t. We convert membrane potential to spike rate using a biophysically motivated output nonlinearity proposed by Mensi et al. (2011):(12)λ(t)=fr(V~t)=αlog⁡(1+exp⁡(V~t−μβ)),(outputnonlinearity)where μ is a ‘soft’ spike threshold, and α and β jointly determine slope and sharpness of the nonlinearity, respectively (see Materials and methods). Spiking is then a conditionally Poisson process given the rate, as in the Poisson GLM (Equation 5).
+$$
+g_{e}(t)=f_{g}(k_{e}⋅x_{t}+b_{e})(CBEMexcitatoryconductance)
+$$
+
+
+
+$$
+g_{i}(t)=f_{g}(k_{i}⋅x_{t}+b_{i})(CBEMinhibitoryconductance),
+$$
+
+where $𝐤_{e}$ and $𝐤_{i}$ are linear filters driving excitatory and inhibitory conductance, respectively, $f_{g}$ is a soft-rectifying nonlinearity that ensures that conductances are non-negative (see Materials and methods, Equation 14), and $b_{e}$ and $b_{i}$ determine the baseline excitatory and inhibitory conductances in the absence of input. The CBEM membrane potential $V_{t}$ then evolves according to the ordinary differential equation (Equation 6) under the influence of the two time-varying conductances $g_{e}⁢(t)$ and $g_{i}⁢(t)$.
+
+To incorporate spike-history effects, we add a linear autoregressive term to the membrane potential. This results in an ‘effective’ membrane potential $V~_{t}$ given by:
+
+$$
+V~_{t}=V_{t}+h⋅y_{t}^{hist},(effectivemembranepotential)
+$$
+
+where $𝐲_{t}^{h⁢i⁢s⁢t}$ is a vector of binned spike history at time t. We convert membrane potential to spike rate using a biophysically motivated output nonlinearity proposed by Mensi et al. (2011):
+
+$$
+\lambda(t)=f_{r}(V~_{t})=\alphalog⁡(1+exp⁡(\frac{V~_{t}−\mu}{\beta})),(outputnonlinearity)
+$$
+
+where $\mu$ is a ‘soft’ spike threshold, and $\alpha$ and $\beta$ jointly determine slope and sharpness of the nonlinearity, respectively (see Materials and methods). Spiking is then a conditionally Poisson process given the rate, as in the Poisson GLM (Equation 5).
 
 The CBEM is similar to the Poisson GLM in that the only source of stochasticity is the conditionally Poisson spiking mechanism: we assume no additional noise in the conductances or the voltage. This simplifying assumption, although not biophysically accurate, makes log-likelihood simple to compute, allowing for efficient maximum likelihood inference using standard ascent methods (see Materials and methods).
 
-## Validating the CBEM modeling assumptions with intracellular data
+### Validating the CBEM modeling assumptions with intracellular data
 
-To validate the modeling assumptions of the CBEM, we use intracellular recordings from RGCs. First, we establish that an LN model can capture the relationship between stimuli and synaptic conductances measured intracellularly (Figure 2). An LN model for RGC conductances is plausible because the bipolar cells that drive RGCs are known to be well-characterized by LN models (Rieke, 2001; Demb et al., 2001; Beaudoin et al., 2008; Gollisch and Meister, 2010; Liu et al., 2017; Real et al., 2017). To test the assumption in detail, we analyzed voltage clamp recordings from ON parasol RGCs in response to a full-field noise stimulus (Trong and Rieke, 2008). We fit the measured conductances with a linear-nonlinear model with a soft-rectified nonlinearity to account for synaptic thresholding at the bipolar-to-ganglion cell synapse (and at the amacrine cell synapses for the inhibitory inputs): fg⁢(⋅)=log⁡(1+exp⁡(⋅)). The model accurately captured the relationship between projected stimuli and observed conductances on test data, accounting for 79 ± 4% (mean ± SEM) and 63 ± 3% of the variance of mean excitatory and inhibitory conductances, respectively.
+To validate the modeling assumptions of the CBEM, we use intracellular recordings from RGCs. First, we establish that an LN model can capture the relationship between stimuli and synaptic conductances measured intracellularly (Figure 2). An LN model for RGC conductances is plausible because the bipolar cells that drive RGCs are known to be well-characterized by LN models (Rieke, 2001; Demb et al., 2001; Beaudoin et al., 2008; Gollisch and Meister, 2010; Liu et al., 2017; Real et al., 2017). To test the assumption in detail, we analyzed voltage clamp recordings from ON parasol RGCs in response to a full-field noise stimulus (Trong and Rieke, 2008). We fit the measured conductances with a linear-nonlinear model with a soft-rectified nonlinearity to account for synaptic thresholding at the bipolar-to-ganglion cell synapse (and at the amacrine cell synapses for the inhibitory inputs): $f_{g}⁢(⋅)=log⁡(1+exp⁡(⋅))$. The model accurately captured the relationship between projected stimuli and observed conductances on test data, accounting for 79 ± 4% (mean ± SEM) and 63 ± 3% of the variance of mean excitatory and inhibitory conductances, respectively.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig2-v2.jpg)
 
-**Figure 2.:** The CBEM describes the relationship between stimulus and each synaptic conductance with a linear-nonlinear (LN) cascade, consisting of a linear filter followed by a fixed rectifying nonlinearity. (A) LN conductance model schematic. (B) The percent variance explained () for excitatory and inhibitory conductances from 6 ON parasol RGCs, computed using cross-validation with a 6 s test stimulus. Error bars indicate standard deviation across all test stimuli. (R2C) The excitatory conductance as a function of the filtered stimulus values for the example cell indicated in green in B. The gray region shows the middle 50-percentile of the distribution of observed excitatory conductance given the filtered stimulus value. The soft-rectifying nonlinearity (dark blue) closely matched the average conductance given the filtered stimulus value (light blue points). (D) Measured excitatory conductances in the same cell (black) and predictions from the LN model (blue) in response to a test stimulus. (E) The inhibitory conductance nonlinearity for the same neuron. The soft-rectifying nonlinearity (dark red) closely approximated the average inhibitory conductance as a function of the filtered stimulus value (light red). (F) Measured excitatory conductances (black) and the predictions of the LN model (red) on a test stimulus for the same cell.
+**Figure 2.:** The CBEM describes the relationship between stimulus and each synaptic conductance with a linear-nonlinear (LN) cascade, consisting of a linear filter followed by a fixed rectifying nonlinearity. (A) LN conductance model schematic. (B) The percent variance explained ($R^{2}$) for excitatory and inhibitory conductances from 6 ON parasol RGCs, computed using cross-validation with a 6 s test stimulus. Error bars indicate standard deviation across all test stimuli. (C) The excitatory conductance as a function of the filtered stimulus values for the example cell indicated in green in B. The gray region shows the middle 50-percentile of the distribution of observed excitatory conductance given the filtered stimulus value. The soft-rectifying nonlinearity (dark blue) closely matched the average conductance given the filtered stimulus value (light blue points). (D) Measured excitatory conductances in the same cell (black) and predictions from the LN model (blue) in response to a test stimulus. (E) The inhibitory conductance nonlinearity for the same neuron. The soft-rectifying nonlinearity (dark red) closely approximated the average inhibitory conductance as a function of the filtered stimulus value (light red). (F) Measured excitatory conductances (black) and the predictions of the LN model (red) on a test stimulus for the same cell.
 
-Second, we establish that the output nonlinearity fr, which maps membrane potential to instantaneous firing rate (Equation 12), provides an accurate description of the empirical relationship between membrane potential and spiking (Figure 3). To validate this model component, we examined dynamic current clamp recordings from two ON parasol RGCs. The dynamic clamp recordings drove RGCs with currents determined by previously measured excitatory and inhibitory conductances. To reduce noise, we computed average membrane potential over repeated presentations of the same measured conductance traces. We then computed nonparametric estimates of the nonlinearity (see Materials and methods). We found that the parametric function we assumed (Equation 12) closely approximated a non-parametric estimate of the nonlinearity (Figure 3c black; see Materials and methods for details).
+Second, we establish that the output nonlinearity $f_{r}$, which maps membrane potential to instantaneous firing rate (Equation 12), provides an accurate description of the empirical relationship between membrane potential and spiking (Figure 3). To validate this model component, we examined dynamic current clamp recordings from two ON parasol RGCs. The dynamic clamp recordings drove RGCs with currents determined by previously measured excitatory and inhibitory conductances. To reduce noise, we computed average membrane potential over repeated presentations of the same measured conductance traces. We then computed nonparametric estimates of the nonlinearity (see Materials and methods). We found that the parametric function we assumed (Equation 12) closely approximated a non-parametric estimate of the nonlinearity (Figure 3c black; see Materials and methods for details).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig3-v2.jpg)
 
@@ -79,7 +145,7 @@ Second, we establish that the output nonlinearity fr, which maps membrane potent
 
 Note that although previous analyses of RGC responses using Poisson GLMs have shown that an exponential nonlinearity captures the mapping from stimuli to spike rates more accurately than a rectified-linear nonlinearity (Pillow et al., 2008), we found the opposite here: the nonlinearity was better described with a soft-rectification function. This discrepancy may result from the fact that the GLM has a single nonlinearity, whereas the CBEM has a cascade of two nonlinearities: one mapping filter output to conductance, and a second mapping membrane potential to spike rate.
 
-## Predicting conductances from spikes with CBEM
+### Predicting conductances from spikes with CBEM
 
 We now turn to a key application of the CBEM: the inferring of excitatory and inhibitory synaptic conductances from extracellular spike train data. To test the model’s ability to make such predictions, we fit the model parameters to a dataset consisting of stimuli and observed spike times. We then used the inferred filters to predict the excitatory and inhibitory conductances elicited in response to novel stimuli recorded in the same cells.
 
@@ -93,21 +159,37 @@ Figure 4 shows the conductance filters estimated from intracellular data (fit to
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig5-v2.jpg)
 
-**Figure 5.:** (A) The correlation coefficient () between the mean observed excitatory synaptic input to a novel 6 s stimulus and the conductance predicted by the LN cascade fit to the excitatory conductance (y-axis) compared to the CBEM prediction from spikes (x-axis) for each cell. Error bars indicate the minimum and maximum values observed across all cross-validated stimuli (rB) Same as C for the inhibitory conductance. (C) The excitatory (blue) and inhibitory (red) filters estimated from voltage-clamp recordings. The thick traces show the mean filters. (D) The excitatory (blue) and inhibitory (red) filters estimated by the CBEM from spike trains. (E) The cross-correlation of the excitatory and inhibitory conductances for an example cell measured from the data (black trace; region shows standard deviation across the 10 stimuli) compared to the cross-correlation in the CBEM fit to that cell (red trace). Arrows indicate the peaks of the cross-correlations. In the data, excitation and inhibition are anti-correlated and show similar timing. However, excitation precedes inhibition in the model. (F) The cross-correlation peak times between excitation and inhibition measured from data (y-axis) compared to the conductances predicted by the CBEM (x-axis) for all 6 cells. Negative values on the x-axis indicate that excitation leads inhibition in the CBEM fits to these cells. (G) Comparing the timing of excitatory and inhibitory conductances from the data and the CBEM for the example cell in E. The cross-correlation between the measured excitatory conductance and the CBEM’s excitatory conductance (blue) and the cross-correlation between data and model for the inhibitory conductances (red). (H) Cross-correlation peak times between measured and CBEM predicted inhibition (y-axis) and excitation (x-axis).
+**Figure 5.:** (A) The correlation coefficient ($r$) between the mean observed excitatory synaptic input to a novel 6 s stimulus and the conductance predicted by the LN cascade fit to the excitatory conductance (y-axis) compared to the CBEM prediction from spikes (x-axis) for each cell. Error bars indicate the minimum and maximum values observed across all cross-validated stimuli (B) Same as C for the inhibitory conductance. (C) The excitatory (blue) and inhibitory (red) filters estimated from voltage-clamp recordings. The thick traces show the mean filters. (D) The excitatory (blue) and inhibitory (red) filters estimated by the CBEM from spike trains. (E) The cross-correlation of the excitatory and inhibitory conductances for an example cell measured from the data (black trace; region shows standard deviation across the 10 stimuli) compared to the cross-correlation in the CBEM fit to that cell (red trace). Arrows indicate the peaks of the cross-correlations. In the data, excitation and inhibition are anti-correlated and show similar timing. However, excitation precedes inhibition in the model. (F) The cross-correlation peak times between excitation and inhibition measured from data (y-axis) compared to the conductances predicted by the CBEM (x-axis) for all 6 cells. Negative values on the x-axis indicate that excitation leads inhibition in the CBEM fits to these cells. (G) Comparing the timing of excitatory and inhibitory conductances from the data and the CBEM for the example cell in E. The cross-correlation between the measured excitatory conductance and the CBEM’s excitatory conductance (blue) and the cross-correlation between data and model for the inhibitory conductances (red). (H) Cross-correlation peak times between measured and CBEM predicted inhibition (y-axis) and excitation (x-axis).
 
 Although the extracellular model predicted the basic timecourse of the observed conductances with high fidelity, there were small systematic discrepancies between model-predicted and measured conductances. For example, measured conductances had nearly zero lag in their cross-correlation (0.0 ± 2.4 ms; see also Cafaro and Rieke, 2013), whereas the predicted excitatory conductance slightly preceded the inferred inhibition for all six cells (r = 12.6 ± 1.0 ms, Student’s t-test p < 0.0001; Figure 5e–f). The predicted excitation preceded the average measured excitation by 5.6 ± 0.7 ms (p = 0.0005), while the predicted inhibition showed only a slight and statistically insignificant delay compared to the measured inhibition (r = 2.5 ± 1.3 ms, p = 0.11; Figure 5g–h).
 
-## Positively correlated excitation and inhibition in ON-midget cells
+### Positively correlated excitation and inhibition in ON-midget cells
 
 We also applied the CBEM to spike trains recorded from 5 ON-midget cells in response to the same type of full-field noise used for the parasol cells. In contrast to the parasol cells, ON-midget cells have positively correlated excitation and inhibition with excitation preceding inhibition (Cafaro and Rieke, 2013). This breaks the GLM assumption of equal and opposite tuning of the two conductances. A set of unique 6 s stimuli were used to the the model (33–35 trials for spike recordings and 5–20 trials for the LN conductance model). The models were compared to the average conductances recorded in response to a repeated novel 6 s stimulus (5–10 repeats).
 
 The CBEM captured the tuning of the synaptic conductances received by the midget cells. An example cell is shown in Figure 6—figure supplement 1. The CBEM predicted the excitatory conductance with an average correlation of r = 0.85 ± 0.03 compared to the intracellular LN model with a correlation of r = 0.95 ± 0.003 (Figure 6a). The inhibitory conductance showed more nonlinear behavior than can be captured by a single LN unit: the CBEM predicted inhibition with r = 0.33 ± 0.06 and the LN fit to the conductance had a correlation coefficient of only r = 0.54 ± 0.07 (Figure 6b). The CBEM captured the fact that the inhibitory input had ON tuning, but delayed compared to excitation (Figure 6c–d). This was also seen in the cross-correlation between excitation and inhibition (Figure 6e). The data showed a cross-correlation peak with excitation preceding inhibition by 10.1 ± 0.52 ms, and the CBEM showed a similar timing difference of 8.2 ± 0.8 ms (paired Student’s t-test, p = 0.06; Figure 6f). However, midget cells receive OFF inhibitory input in addition to the larger ON inhibitory input (Cafaro and Rieke, 2013), and therefore a single LN unit could not completely capture inhibition in these cells. The true excitation was faster than the predicted excitation by r = 3.8 ± 0.8 ms (Student’s t-test p = 0.008), and the measured inhibition was similarly timed with the model estimate (1.56 ± 0.6 ms, p = 0.06; Figure 6g–h). In summary, the CBEM can discover positive correlations between excitation and inhibition despite being initialized using a GLM with oppositely tuned excitation and inhibition (see Materials and methods).
 
-## Characterizing spike responses with CBEM
+![Figure 6.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig6-v2.jpg)
+
+**Figure 6.:** The plot follows the same conventions as the parasol results in Figure 5. (A,B) The correlation coefficient ($r$) between the mean observed excitatory and inhibitory synaptic input to a novel 6 s stimulus and the conductance predicted by the LN cascade fit to the excitatory conductance (y-axis) compared to the CBEM prediction from spikes (x-axis) for each cell. Conductance predictions for a single example cell are shown in Figure 6—figure supplement 1. The excitatory (blue) and inhibitory (red) filters estimated from voltage-clamp recordings (C) and by the CBEM from spike trains (D). (E) The cross-correlation of the excitatory and inhibitory conductances for an example cell measured from the test stimulus (data) compared to the cross-correlation predicted by the CBEM fit to that cell (red trace). (F) The cross-correlation peak times between excitation and inhibition measured from data compared to the conductances predicted by the CBEM for all five cells. (G) Comparing the timing of excitatory and inhibitory conductances from the data and the CBEM for the example cell in E. The cross-correlation between the measured excitatory conductance and the CBEM’s excitatory conductance (blue) and the cross-correlation between data and model for the inhibitory conductances (red). (H) Cross-correlation peak times between measured and CBEM predicted inhibition and excitation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Left: Linear kernels for the excitatory (blue) and inhibitory (red) inputs estimated from the conductance-based model (light red, light blue) and estimated by fitting a linear-nonlinear model directly to the measured conductances (dark red, dark blue). The filters represent a combination of events that occur in the retinal circuitry in response to a visual stimulus, and are primarily shaped by the cone transduction process. Right: Conductances predicted by our model on a withheld test stimulus. Measured conductances (black) are compared to the predictions from the CBEM filters (fit to spiking data) and an LN model (fit to conductance data). For visualization, we scaled the estimated conductances from the CBEM as in Figure 4.
+
+### Characterizing spike responses with CBEM
 
 Given the CBEM’s ability to infer intracellular conductances from spike train data, we sought to examine how well it predicts spike responses to novel stimuli. Most encoding models are only tested with data from extracellular recordings, which are far easier to obtain and to sustain over longer periods. It therefore seems natural to ask: does the CBEM’s increased degree of biophysical realism confer advantages for predicting spikes?
 
 To answer this question, we fit the CBEM and classic Poisson GLM to a population of 9 extracellularly recorded macaque RGCs stimulated with full-field binary white noise (Uzzell and Chichilnisky, 2004; Pillow et al., 2005). We evaluated spike rate prediction by comparing the peri-stimulus time histogram (PSTH) of the simulated models to the PSTH of real neurons using a 5 s test stimulus (Figure 7). The CBEM had higher prediction accuracy than the GLM for all nine cells, 86% of the variance of the PSTH on average vs. 77% for the GLM. We then evaluated spike train prediction by comparing log-likelihood on a 5 min test dataset. The CBEM again outperformed the GLM on all cells, offering an improvement of 0.34 ± 0.11 bits/spike on average over the GLM.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig7-v2.jpg)
+
+**Figure 7.:** (A) Spike rate prediction performance for the population of nine cells for 5 s test stimulus. The true rate (black) was estimated using 167 repeat trials. The red circle indicates the cell shown in C. (B) Log-likelihood of the CBEM compared to the GLM computed on a 5 min test stimulus. (C) (top) Raster of responses of an example OFF parasol RGC to repeats of a novel stimulus (black) and simulated responses from the GLM (blue) and the CBEM (red). (middle) Spike rate (PSTH) of the RGC and the GLM (blue) and CBEM (red). The PSTHs were smoothed with a Gaussian kernel with a 2 ms standard deviation. (bottom) The CBEM predicted excitatory (blue) and inhibitory (orange) conductances. The conductances are given in arbitrary units because the model does not include membrane capacitance. Figure 7—figure supplement 1 CBEM conductance predictions.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The difference in the GLM predicted rate ($\lambda_{G⁢L⁢M}$) and the measure spike rate ($\lambda_{true}$) from the PSTH in Figure 7c compared to the excitatory conductances predicted by the CBEM. We only considered the time points for which the predicted rate and the measured rate differed by at least one spike/s (gray region denotes the eliminated interval). (B) Same as A for the inhibitory conductance.
 
 To gain insight into the CBEM’s superior performance, we examined the average firing rate predictions of the GLM along with the average conductance predictions of the CBEM (Figure 7c). We found that GLM rate prediction errors (relative to the PSTH of the real neuron) were anti-correlated with the magnitude of the CBEM inhibitory conductance; the CBEM inhibitory conductance at times when the GLM spike rate exceeded the true spike rate was significantly higher than the CBEM inhibitory conductance at times when the GLM spike rate underestimated the true spike rate (t-test, p < 0.0001; Figure 7—figure supplement 1b). This suggests that the CBEM inhibitory conductance helped CBEM predictions by reducing the firing at times when the GLM over-predicted the firing rate. In contrast, the distribution of excitatory conductances did not depend on the sign of the rate prediction error (t-test, p = 0.19; Figure 7—figure supplement 1a), and the predicted excitatory conductance was positively correlated with the magnitude of the error (r = 0.33, p < 0.0001).
 
@@ -117,7 +199,7 @@ Previous experiments have indicated that inhibition only weakly modulates paraso
 
 **Figure 8.:** (A) Spike rate prediction performance and (B) cross-validated log-likelihood for the population of nine cells for 7 s test stimulus for the GLM and the CBEM with only an excitatory input term (CBEMexc). (C) The full CBEM with inhibition shows improved spike rate predication and (D) cross-validated log-likelihood compared to the model without inhibition. (E) The GLM filters for nine parasol RGCs (black) compared to the excitatory conductance filters estimated by the CBEM without an inhibitory input (blue). The GLM filters are shown scaled to match the height of the CBEMexc filters.
 
-## Capturing spike responses across contrasts
+### Capturing spike responses across contrasts
 
 Retinal ganglion cells adapt to stimulus statistics such as contrast or variance; increases in stimulus contrast lead to decreases in gain of the neural response, allowing the dynamic range of the response to adapt to the range of contrast values present in the stimulus (Chander and Chichilnisky, 2001; Fairhall et al., 2001; Baccus and Meister, 2002; Beaudoin et al., 2008; Mante et al., 2005; Garvert and Gollisch, 2013; Marava, 2013; Demb and Singer, 2015). Understanding this phenomenon is critical for understanding how the retina codes natural stimuli, because natural scenes vary widely over contrast in both space and time. However, classic linear-nonlinear models with a single linear component fail to capture such effects. This motivates the need for a biophysically plausible modeling framework that can explain RGC responses across stimulus conditions (Ozuysal and Baccus, 2012; Clark et al., 2013; Cui et al., 2016b).
 
@@ -125,9 +207,19 @@ Previous work has shown that changes in the balance of excitatory and inhibitory
 
 To quantify the CBEM’s ability to capture contrast-dependent gain changes in RGC responses, we compared GLM filters fit to RGC responses at each contrast with GLM filters fit to data simulated from the all-contrasts CBEM. (Figure 9a) shows GLM filters obtained at each contrast for an example RGC, while Figure 9b shows comparable filters fit to spikes simulated from the CBEM fit to this neuron. Both sets of filters exhibit large reductions in amplitude with increasing contrast, the key signature of contrast gain adaptation. Across all eight RGCs, we found high correlation in the filter amplitude scaling for real RGC and simulated CBEM responses (r = 0.61, p < 0.05; Figure 9—figure supplement 1).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig9-v2.jpg)
+
+**Figure 9.:** (A) GLM filters for an example ON cell fit to responses recorded at 24%, 48%, and 96% contrast. (B) GLM filters fit to spike trains simulated from the CBEM fit to the cell shown in A. The CBEM was fit to responses at all three contrast levels. Filter height comparisons for CBEM fits to all cells are shown in Figure 9—figure supplement 1. Spike train prediction performance of the (C) GLM and (D) the CBEM tested on a 4 min stimulus at 24% (left column), 48% (middle column), and 96% (right column) contrast. The model trained on all three contrast levels (y-axis) is plotted against the same class of model trained only at the probe contrast level (x-axis). Figure 9—figure supplement 2 shows the cross-correlation between the CBEM predicted excitation and inhibition over a range of contrasts.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig9-figsupp1-v2.jpg)
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A) The average CBEM cross-correlation between excitation and inhibition for the 5 OFF cells fit to multi-contrast stimuli. The cross-correlations were computed from 12% (lightest trace) to 100% (darkest trace) contrast. (B) Same as A for the 3 ON cells. (C) The peak correlation between excitation and inhibition (maximum magnitude of the cross-correlation within 30 ms of 0 lag) as a function of contrast for all eight cells . The thick lines show the peak of the average cross-correlation for ON cells (blue) and OFF cells (red). The thin lines show the correlation for individual cells. (D) The mean total synaptic conductance in the CBEM fit ($g_{e}⁢(t)+g_{i}⁢(t)$ averaged across time) as a function of contrast. Follows the same conventions as C. (E) The standard deviation of the total synaptic conductance as a function of contrast. (F) The skewness of the total synaptic conductance as a function of contrast. Unlike the mean and variance, the skewness in the CBEM fits begins to saturate with increased contrast.
+
 We found that the CBEM maintained predictive performance across contrast levels more accurately than the GLM (Figure 9c–d). At 24% contrast, the GLM fit to all contrasts lost an average 0.36 ± 0.41 bits/sp (normalized test log-likelihood) compared to GLM fit specifically to the 24% contrast stimulus, while the CBEM lost only 0.16 ± 0.2 bits/sp. At 48% contrast, the GLM lost 0.20 bits/sp while CBEM only lost 0.07 ± 0.14 bits/sp. Finally, both models only lost 0.05 ± 0.08 bits/sp in the 96% contrast probe. The GLM’s partial ability to generalize across these particular conditions despite having only one stimulus filter can be viewed as a consequence of our biophysical interpretation of the GLM; the GLM is equivalent to a biophysical model in which synaptic excitation and inhibition are governed by equal filters of opposite sign; Figure 4 left shows that this assumption is approximately correct for ON parasol RGCs. However, the flexibility conferred by the slight differences in these filters with separate nonlinearities gave the CBEM greater accuracy in predicting RGC responses across a range of contrasts. We find that the correlation between excitation and inhibition in the CBEM is not constant: the CBEM predicts that the magnitude of the correlation depends on contrast Figure 9—figure supplement 2a-b. The CBEM predicted that, on average, excitation and inhibition were most anticorrelated at 22% contrast for the ON cells and 34% contrast for the OFF cells Figure 9—figure supplement 2c. Additionally, the CBEM predicts that the mean and variance of the total synaptic conductance increases with contrast Figure 9—figure supplement 2d-f.
 
-## Capturing spike responses to spatially varying stimuli
+### Capturing spike responses to spatially varying stimuli
 
 To analyze the CBEM’s ability to capture responses to spatially varying stimuli, we examined a dataset of 27 parasol RGCs stimulated with spatio-temporal binary white noise stimuli (Pillow et al., 2008). We fit spatio-temporal filters consisting of a 5 × 5 pixel field over the same temporal extent as the models fit to full-field stimuli. The temporal profiles of excitatory and inhibitory CBEM filters were qualitatively similar to those that we observed in the full-field stimulus condition (Figure 10a,c). The filters were not constrained to be spatio-temporally separable (the filters were constrained to be rank 2; Figure 10b), which allowed the synaptic inputs to have different temporal interactions compared to the full-field stimulus.
 
@@ -141,7 +233,7 @@ To gain insight into how the model’s excitatory and inhibitory inputs shape th
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/47012/elife-47012-fig11-v2.jpg)
 
-**Figure 11.:** (A) Example sequences of 5 × 5 pixel frames of three different types of spatiotemporal noise stimuli used to probe the CBEM. The spatio-temporal stimulus was the same binary noise stimulus used to fit the cells. The full-field stimulus consisted of binary noise at the same contrast and frame rate as the original spatio-temporal stimulus. In the opposing center-surround condition, the center pixel was of opposite contrasts to the surround pixels and the sign of the center pixel was selected randomly on each frame. (B) The mean cross-correlation of the CBEM predicted excitatory and inhibitory conductances for the OFF cells (top) and ON cells (bottom) in response to full-field noise (black), spatio-temporal noise (grey), and opposing center-surround noise (red). The strong negative component showed that  is delayed and oppositely tuned compared to gi. (geC) Average firing rate of the GLM (blue), CBEM (red), and CBEMexc (green) fits to 16 OFF cells (top) and 11 ON cells (middle) in response to opposing center-surround contrasts steps (bottom).
+**Figure 11.:** (A) Example sequences of 5 × 5 pixel frames of three different types of spatiotemporal noise stimuli used to probe the CBEM. The spatio-temporal stimulus was the same binary noise stimulus used to fit the cells. The full-field stimulus consisted of binary noise at the same contrast and frame rate as the original spatio-temporal stimulus. In the opposing center-surround condition, the center pixel was of opposite contrasts to the surround pixels and the sign of the center pixel was selected randomly on each frame. (B) The mean cross-correlation of the CBEM predicted excitatory and inhibitory conductances for the OFF cells (top) and ON cells (bottom) in response to full-field noise (black), spatio-temporal noise (grey), and opposing center-surround noise (red). The strong negative component showed that $g_{i}$ is delayed and oppositely tuned compared to $g_{e}$. (C) Average firing rate of the GLM (blue), CBEM (red), and CBEMexc (green) fits to 16 OFF cells (top) and 11 ON cells (middle) in response to opposing center-surround contrasts steps (bottom).
 
 Finally, we simulated GLM and CBEM responses to center-surround contrast steps. The stimulus sequence started as a gray field stepping to a black center pixel with white surround for 500 ms, stepping to a gray field for 500 ms, then stepping to a white center and black surround, finally returning to a gray field (Figure 11c bottom). The CBEM and GLM showed similar onset responses, but the sustained responses of the CBEM simulations showed inhibition-dependent suppression for both ON and OFF cells (Figure 11c top and middle). The shape and sustained response of the CBEMexc fit to the OFF cells to center-surround steps qualitatively differed to the full CBEM: the CBEMexc response decayed and then rebounded slightly instead of showing only a decaying response. Thus, full-field and independent spatio-temporal noise resulted in excitatory and inhibitory correlations that fit closely with the assumptions contained in the GLM. Spatial correlations, and in particular negative correlations, in the stimulus break these assumptions by co-activating excitatory and inhibitory inputs (Cafaro and Rieke, 2013) and therefore spatially correlated stimuli differentiate the CBEM’s predictions from the GLM. These results indicate that, although the GLM captures much of the RGC responses to full-field noise, capturing the inhibitory and excitatory synaptic inputs will aid in understanding processing of naturalistic stimuli which contain spatial structure.
 
@@ -165,100 +257,226 @@ Future work will require modeling the neural code using naturalistic stimuli, wh
 
 ## Materials and methods
 
-## Electrophysiology
+### Electrophysiology
 
 We analyzed four sets of parasol RGCs. All data were obtained from isolated, peripheral macaque monkey, Macaca mulatta, retina.
 
-## Synaptic current recordings
+### Synaptic current recordings
 
 We analyzed the responses of 6 ON parasol cells previously described in Trong and Rieke (2008). Cell-attached and voltage clamp recordings were performed to measure spike trains and excitatory and inhibitory currents in the same cells. The stimulus, delivered with an LED, consisted of a one dimensional, full-field white noise signal, filtered with a low pass filter with a 60 Hz cutoff frequency, and sampled at a 0.1ms resolution. Spike trains were recorded using 10 unique 6 s stimuli, and each stimulus was repeated three or four times. After the spike trains were recorded, the excitatory and inhibitory synaptic currents to the same stimuli were measured using voltage clamp recordings. Active conductances intrinsic to the RGC were blocked during these recordings and the holding potential was set to isolate either the excitatory or inhibitory inputs received by the cell. For four of the cells, two to four trials were recorded for each of the 10 stimuli for the excitatory and inhibitory currents. For the two remaining cells, three to four excitatory current trials were recorded for all 10 stimuli and one to two trials for the inhibitory current were obtained for 8 of the stimuli. Conductances were estimated by dividing the current by the approximate driving force (−70 mV for the excitatory currents, and 70 mV for the inhibitory).
 
 The 5 ON-midget cells were recorded as described previously (Dunn et al., 2006; Trong and Rieke, 2008; Cafaro and Rieke, 2013). Retinas were obtained through the Tissue Distribution Program of the Regional Primate Research Center at the University of Washington and procedures were approved by the Institutional Animal Care and Use Committee. The same type of full-field noise stimuli were used for the midget cells as with the parasol cells, and the recordings were again divided into 6 s trials. Spike trains were obtained with cell attached recordings. For each cell, 33–35 trials of unique stimuli were recorded, and 10 (for 4 cells) or 20 (for 1 cell) trials were recorded in response to a repeated stimulus. Excitatory and inhibitory currents were recorded for 5–20 trials each for non-repeated stimuli, and 5–10 trials were recorded in response to the repeated validation stimulus. Conductances were again estimated by dividing the current by the approximate driving force (−70 mV for the excitatory currents, and 70 mV for the inhibitory).
 
-## Dynamic clamp recordings
+### Dynamic clamp recordings
 
-The membrane potentials of 2 ON parasol retinal ganglion cells were recorded during dynamic clamp experiments previously reported in Cafaro and Rieke (2013). The cells were current clamped and current was injected into the cells according to the equation(13)I⁢(t)=ge⁢(t)⁢(V⁢(t-Δt)-Ee)+gi⁢(t)⁢(V⁢(t-Δt)-Ei)where ge and gi were conductances recorded in RGCs in response to a light stimulus. The injected current at time t was computed using the previous measured voltage with offset Δt = 100 μs. The reversal potentials were Ee=0 mV and Ei=-90 mV.
+The membrane potentials of 2 ON parasol retinal ganglion cells were recorded during dynamic clamp experiments previously reported in Cafaro and Rieke (2013). The cells were current clamped and current was injected into the cells according to the equation
+
+$$
+I⁢(t)=g_{e}⁢(t)⁢(V⁢(t-Δ_{t})-E_{e})+g_{i}⁢(t)⁢(V⁢(t-Δ_{t})-E_{i})
+$$
+
+where $g_{e}$ and $g_{i}$ were conductances recorded in RGCs in response to a light stimulus. The injected current at time $t$ was computed using the previous measured voltage with offset Δt = 100 μs. The reversal potentials were $E_{e}=0$ mV and $E_{i}=-90$ mV.
 
 For the first cell, 18 repeat trials were recorded for a 19 s stimulation, and 24 repeat trials were obtained from the second cell.
 
-## RGC population recordings: full-field stimulus
+### RGC population recordings: full-field stimulus
 
 We analyzed data from two experiments previously reported in Uzzell and Chichilnisky (2004) and Pillow et al. (2005). The first experiment included nine simultaneously recorded parasol RGCs (5 ON and 4 OFF). The stimulus consisted of a full-field binary noise stimulus (independent black and white frames) with a root-mean-square contrast of 96%. The stimulus was displayed on a CRT monitor at a 120 Hz refresh rate and the contrast of each frame was drawn independently. A 10 min stimulus was obtained for characterizing the cell responses, and a 5-min segment was used to obtain a cross-validated log-likelihood. Spike rates were obtained by recording 167 repeats of a 7.5 s stimulus.
 
 In a second experiment, eight cells (3 ON and 5 OFF parasol) were recorded in response to a full-field binary noise stimulus (120 Hz) at 24%, 48%, and 96% contrast. An 8 min stimulus segment at each contrast level was used for model fitting, and cross-validated log-likelihoods were obtained using a novel 4 min segment at each contrast level.
 
-## RGC population recordings: spatio-temporal stimulus
+### RGC population recordings: spatio-temporal stimulus
 
 We analyzed 11 ON and 16 OFF parasol RGCs which were previously reported in Pillow et al. (2005). The stimulus consisted of a spatio-temporal binary white noise pattern (i.e. a field of independent white and black pixels). The stimulus was 10 pixels by 10 pixels (pixel size of 120 μm × 120 μm on the retina), and the contrasts of each pixel was drawn independently on each frame (120 Hz refresh rate). The root-mean-square contrast of the stimulus was 96%.
 
 A 10-min stimulus was obtained for characterizing the cell responses, and a 5-min segment was used to obtain a cross-validated log-likelihood. Spike rates were obtained by recording 600 repeats of a 10 s stimulus.
 
-## Modeling methods
+### Modeling methods
 
-## The conductance-based encoding model
+#### The conductance-based encoding model
 
-The CBEM introduced above models the spike train response of a RGC to a visual stimulus as a Poisson process where the spike rate is a function of the membrane potential (Figure 1b). The membrane potential is approximated by considering a single-compartment neuron with linear membrane dynamics and conductance-based input (Equation 6). Note that we have ignored capacitance, which would provide an (unobserved) scaling factor on d⁢V/d⁢t, but will not affect our results. The synaptic inputs (Equation 10) take the form of linear-nonlinear functions of the stimulus, 𝐱, where fg is a nonlinear function ensuring positivity of the conductances. We will assume a ‘soft-rectification’ nonlinearity given by(14)fg⁢(z)=log⁡(1+exp⁡(z)),which behaves like a smooth version of a linear half-rectification function.
+The CBEM introduced above models the spike train response of a RGC to a visual stimulus as a Poisson process where the spike rate is a function of the membrane potential (Figure 1b). The membrane potential is approximated by considering a single-compartment neuron with linear membrane dynamics and conductance-based input (Equation 6). Note that we have ignored capacitance, which would provide an (unobserved) scaling factor on $d⁢V/d⁢t$, but will not affect our results. The synaptic inputs (Equation 10) take the form of linear-nonlinear functions of the stimulus, $𝐱$, where $f_{g}$ is a nonlinear function ensuring positivity of the conductances. We will assume a ‘soft-rectification’ nonlinearity given by
 
-Given the conductances, we could then obtained the membrane voltage. We use a first-order exponential integrator method to solve this equation, which is exact under the assumption that ge(t) and gi(t)(15)V(t+Δ)=exp⁡(−Δgtot(t))(Vt−Itot(t)gtot(t))+Itot(t)gtot(t),where(16)gtot(t)=ge(t)+gi(t)+gl(17)Itot(t)=ge(t)Ee+gi(t)Ei+glEl,for gt⁢o⁢t⁢(t) and It⁢o⁢t⁢(t), and assuming V⁢(0)=El at the start of each experiment.
+$$
+f_{g}⁢(z)=log⁡(1+exp⁡(z)),
+$$
 
-For a set of spike times s1:ns⁢p in the interval [0,S] and parameters Θ, the log-likelihood in continuous time is(18)log⁡p⁢(s1:ns⁢p∣𝐱[0,S],Θ)=∑i=1ns⁢plog⁡(λ⁢(si))-∫0Sλ⁢(t)⁢𝑑twhere the spike rate, λ⁢(t), is a function of the voltage plus spike history (Equation 12). This likelihood can be discretely approximated as the product of T Bernoulli trials in bins of width Δ (Citi et al., 2014)(19)log⁡p⁢(y1:T∣𝐱1:T,Θ)=∑t=1Tyt⁢log⁡(1-exp⁡(-λt⁢Δ))-(1-yt)⁢λt⁢Δwhere yi=1 if a spike occurred in the ith bin and 0 otherwise.
+which behaves like a smooth version of a linear half-rectification function.
 
-The membrane voltage (and firing rate) is computed by integrating the membrane dynamics equation (Equation 6). In practice, we evaluate V along the same discrete lattice of points of width Δ (t=1,2,3,…T) that we use to discretize the log-likelihood function. Assuming ge and gi remain constant within each bin, the voltage equation becomes a simple linear differential equation which we solve according to Equation 15.
+Given the conductances, we could then obtained the membrane voltage. We use a first-order exponential integrator method to solve this equation, which is exact under the assumption that $g_{e}(t)$ and $g_{i}(t)$
 
-The model parameters we fit were 𝐤e, 𝐤i, be, bi, and 𝐡, which were selected using conjugate-gradient methods to maximize the log-likelihood.
+$$
+V(t+Δ)=exp⁡(−Δg_{tot}(t))(V_{t}−\frac{I_{tot}(t)}{g_{tot}(t)})+\frac{I_{tot}(t)}{g_{tot}(t)},
+$$
 
-The reversal potential and leak conductance parameters were kept fixed at Ee=0⁢m⁢V, gl=200, El=-60⁢m⁢V, and Ei=-80⁢m⁢V. For modeling the cells in which we had access to intracellular recordings, we set the time bin width to Δ=0.1⁢m⁢s to match the sampling frequency of the synaptic current recordings. For the remaining cells, which were recorded in separate experiments, we set Δ=0.083⁢m⁢s, 100 times the frame rate of the visual stimulus.
+where
 
-The stimulus filters spanned over 100 ms, or over 1000 time bins. Therefore, we restricted the excitation and inhibitory filters to a low dimensional basis to limit the total number of free parameters in the model. The basis consisted of 10 raised cosine ‘bumps’ (Pillow et al., 2005; Pillow et al., 2008) of the form(20)bj(t)={12cos⁡(log⁡[t+c]−ϕja)+12forlog⁡[t+c]−ϕja∈[−π,π]0otherwisewhere t is in seconds. We set c = 0.02 and a=2⁢(ϕ2-ϕ1)/π. The ϕj were evenly spaced from ϕ1=log⁡(0.0+c), ϕ10=log⁡(0.150+c) so that the peaks of the filters spanned 0 ms to 150 ms. The spike history filter was also represented in a low-dimensional basis. The refractory period was accounted for with five square basis functions of width 0.4 ms, spanning the period 0-2 ms after a spike. The remaining spike history filter consisted of 7 raised cosine basis functions (c = 0.0001) with filter peaks spaced from 2 ms to 90 ms.
+$$
+g_{tot}(t)=g_{e}(t)+g_{i}(t)+g_{l}
+$$
 
-The log-likelihood function for this model is not concave in the model parameters, which increases the importance of selecting a good initialization point compared to the GLM. We initialized the parameters by fitting a simplified model which had only one conductance with a linear stimulus dependence, gl⁢i⁢n⁢(t)=𝐤l⁢i⁢n⁢𝐱t⊤ (note that this allowed for negative conductance values). We initialized this filter at 0, and then numerically maximized the log-likelihood for 𝐤l⁢i⁢n. We then initialized the parameters for the complete model using 𝐤e=c⁢𝐤l⁢i⁢n and 𝐤i=-𝐤l⁢i⁢n, thereby exploiting a mapping between the GLM and the CBEM (see Results).
 
-When fitting the model to real spike trains, one conductance filter would occasionally become dominant early in the optimization process. This was likely due to the limited amount of data available for fitting, especially for the cells that were recorded intracellularly. The intracellular recordings clearly indicated that the cells received similarly scaled excitatory and inhibitory inputs. To alleviate this problem, we added a penalty term, ϕ, to the log-likelihood to the L2 norms of 𝐤e and 𝐤i:(21)ϕ⁢(𝐤e,𝐤i)=12⁢(λe⁢||𝐤e||2+λi⁢||𝐤i||2)
 
-Thus, we maximized(22)ℒ(θ)=log⁡p(y1:T|x1:T,ke,ki,be,bi)−ϕ(ke,ki)
+$$
+I_{tot}(t)=g_{e}(t)E_{e}+g_{i}(t)E_{i}+g_{l}E_{l},
+$$
 
-All cells were fit using the same penalty weights: λe=1 and λi=0.2. We note that unlike the typical situation with cascade models that contain multiple filters, intracellular recordings can directly measure synaptic currents. Future work with this model could include more informative, data-driven priors on 𝐤e and 𝐤i.
+for $g_{t⁢o⁢t}⁢(t)$ and $I_{t⁢o⁢t}⁢(t)$, and assuming $V⁢(0)=E_{l}$ at the start of each experiment.
+
+For a set of spike times $s_{1:n_{s⁢p}}$ in the interval $[0,S]$ and parameters $Θ$, the log-likelihood in continuous time is
+
+$$
+log⁡p⁢(s_{1:n_{s⁢p}}∣𝐱_{[0,S]},Θ)=\sumi=1n_{s⁢p}log⁡(\lambda⁢(s_{i}))-\int_{0}^{S}\lambda⁢(t)⁢𝑑t
+$$
+
+where the spike rate, $\lambda⁢(t)$, is a function of the voltage plus spike history (Equation 12). This likelihood can be discretely approximated as the product of $T$ Bernoulli trials in bins of width $Δ$ (Citi et al., 2014)
+
+$$
+log⁡p⁢(y_{1:T}∣𝐱_{1:T},Θ)=\sumt=1Ty_{t}⁢log⁡(1-exp⁡(-\lambda_{t}⁢Δ))-(1-y_{t})⁢\lambda_{t}⁢Δ
+$$
+
+where $y_{i}=1$ if a spike occurred in the $i$th bin and 0 otherwise.
+
+The membrane voltage (and firing rate) is computed by integrating the membrane dynamics equation (Equation 6). In practice, we evaluate $V$ along the same discrete lattice of points of width $Δ$ ($t=1,2,3,…T$) that we use to discretize the log-likelihood function. Assuming $g_{e}$ and $g_{i}$ remain constant within each bin, the voltage equation becomes a simple linear differential equation which we solve according to Equation 15.
+
+The model parameters we fit were $𝐤_{e}$, $𝐤_{i}$, $b_{e}$, $b_{i}$, and $𝐡$, which were selected using conjugate-gradient methods to maximize the log-likelihood.
+
+The reversal potential and leak conductance parameters were kept fixed at $E_{e}=0⁢m⁢V$, $g_{l}=200$, $E_{l}=-60⁢m⁢V$, and $E_{i}=-80⁢m⁢V$. For modeling the cells in which we had access to intracellular recordings, we set the time bin width to $Δ=0.1⁢m⁢s$ to match the sampling frequency of the synaptic current recordings. For the remaining cells, which were recorded in separate experiments, we set $Δ=0.083⁢m⁢s$, 100 times the frame rate of the visual stimulus.
+
+The stimulus filters spanned over 100 ms, or over 1000 time bins. Therefore, we restricted the excitation and inhibitory filters to a low dimensional basis to limit the total number of free parameters in the model. The basis consisted of 10 raised cosine ‘bumps’ (Pillow et al., 2005; Pillow et al., 2008) of the form
+
+$$
+b_{j}(t)={\frac{1}{2}cos⁡(\frac{log⁡[t+c]−ϕ_{j}}{a})+\frac{1}{2}for\frac{log⁡[t+c]−ϕ_{j}}{a}\in[−\pi,\pi]0otherwise
+$$
+
+where $t$ is in seconds. We set c = 0.02 and $a=2⁢(ϕ_{2}-ϕ_{1})/\pi$. The $ϕ_{j}$ were evenly spaced from $ϕ_{1}=log⁡(0.0+c)$, $ϕ_{10}=log⁡(0.150+c)$ so that the peaks of the filters spanned 0 ms to 150 ms. The spike history filter was also represented in a low-dimensional basis. The refractory period was accounted for with five square basis functions of width 0.4 ms, spanning the period $0-2$ ms after a spike. The remaining spike history filter consisted of 7 raised cosine basis functions (c = 0.0001) with filter peaks spaced from 2 ms to 90 ms.
+
+The log-likelihood function for this model is not concave in the model parameters, which increases the importance of selecting a good initialization point compared to the GLM. We initialized the parameters by fitting a simplified model which had only one conductance with a linear stimulus dependence, $g_{l⁢i⁢n}⁢(t)=𝐤_{l⁢i⁢n}⁢𝐱t⊤$ (note that this allowed for negative conductance values). We initialized this filter at 0, and then numerically maximized the log-likelihood for $𝐤_{l⁢i⁢n}$. We then initialized the parameters for the complete model using $𝐤_{e}=c⁢𝐤_{l⁢i⁢n}$ and $𝐤_{i}=-𝐤_{l⁢i⁢n}$, thereby exploiting a mapping between the GLM and the CBEM (see Results).
+
+When fitting the model to real spike trains, one conductance filter would occasionally become dominant early in the optimization process. This was likely due to the limited amount of data available for fitting, especially for the cells that were recorded intracellularly. The intracellular recordings clearly indicated that the cells received similarly scaled excitatory and inhibitory inputs. To alleviate this problem, we added a penalty term, $ϕ$, to the log-likelihood to the $L_{2}$ norms of $𝐤_{e}$ and $𝐤_{i}$:
+
+$$
+ϕ⁢(𝐤_{e},𝐤_{i})=\frac{1}{2}⁢(\lambda_{e}⁢||𝐤_{e}||^{2}+\lambda_{i}⁢||𝐤_{i}||^{2})
+$$
+
+Thus, we maximized
+
+$$
+ℒ(\theta)=log⁡p(y_{1:T}|x_{1:T},k_{e},k_{i},b_{e},b_{i})−ϕ(k_{e},k_{i})
+$$
+
+All cells were fit using the same penalty weights: $\lambda_{e}=1$ and $\lambda_{i}=0.2$. We note that unlike the typical situation with cascade models that contain multiple filters, intracellular recordings can directly measure synaptic currents. Future work with this model could include more informative, data-driven priors on $𝐤_{e}$ and $𝐤_{i}$.
 
 In several analyses, we fit the CBEM without the inhibitory conductance, labeled as the CBEMexc. All the fixed parameters used in the full CBEM were held at the same values in the CBEMexc.
 
 Code for fitting the CBEM has been made available at https://github.com/pillowlab/CBEM (Latimer, 2018; copy archived at https://github.com/elifesciences-publications/CBEM).
 
-## Fitting the CBEM to simulated spike trains
+#### Fitting the CBEM to simulated spike trains
 
 To examine the performance of our numerical maximum likelihood estimation of the CBEM, we fit the parameters to simulated spike trains from the model with known parameters (Figure 1—figure supplement 1). Our first simulated cell qualitatively mimicked experimental RGC datasets, with input filters selected to reproduce the stimulus tuning of macaque ON parasol RGCs (excitation oppositely tuned and delayed compared to excitation, or ‘crossover’ inhibition). The second simulated cell had similar excitatory tuning, but the inhibitory input had the same tuning as excitation with a short delay. The stimulus consisted of a one dimensional white noise signal, binned at a 0.1 ms resolution, and filtered with a low-pass filter with a 60 Hz cutoff frequency. We validated our maximum likelihood fitting procedure by examining error in the fitted filters, and evaluating the log-likelihood on a 5-min test set. With increasing amounts of training data, the parameter estimates converged to the true parameters for both simulated cells. Therefore, standard fast and non-global optimization algorithms can reliably fit the CBEM to spiking data, despite the fact that the model does not have the concavity guarantees of the standard GLM.
 
-## Fitting the conductance nonlinearity
+#### Fitting the conductance nonlinearity
 
-We selected the nonlinear function fg governing the synaptic conductances by fitting a linear-nonlinear cascade model to intracellularly measured conductances evoked during visual stimulation (Hunter and Korenberg, 1986; Paninski et al., 2012; Park et al., 2013; Barreiro et al., 2014). We modeled the mean conductance ge¯⁢(t) as(23)ge¯(t)=aefg((ke∗x)(t)+be)+ϵt(24)ϵt∼𝒩(0,σ2)where 𝐱 is a full-field temporal stimulus, and ae and be are constants. We selected a fixed function for the nonlinearity fg. Thus, we chose the 𝐤e, ae, and be that minimized the squared error between the LN prediction and the measured excitatory conductance.
+We selected the nonlinear function $f_{g}$ governing the synaptic conductances by fitting a linear-nonlinear cascade model to intracellularly measured conductances evoked during visual stimulation (Hunter and Korenberg, 1986; Paninski et al., 2012; Park et al., 2013; Barreiro et al., 2014). We modeled the mean conductance $g_{e}¯⁢(t)$ as
 
-The soft-rectifying function was selected to model the conductance nonlinearity;(25)fg(s)=log⁡(1+exp⁡(s)).
+$$
+g_{e}¯(t)=a_{e}f_{g}((k_{e}∗x)(t)+b_{e})+ϵ_{t}
+$$
+
+
+
+$$
+ϵ_{t}∼𝒩(0,\sigma^{2})
+$$
+
+where $𝐱$ is a full-field temporal stimulus, and $a_{e}$ and $b_{e}$ are constants. We selected a fixed function for the nonlinearity $f_{g}$. Thus, we chose the $𝐤_{e}$, $a_{e}$, and $b_{e}$ that minimized the squared error between the LN prediction and the measured excitatory conductance.
+
+The soft-rectifying function was selected to model the conductance nonlinearity;
+
+$$
+f_{g}(s)=log⁡(1+exp⁡(s)).
+$$
 
 We chose to fix these nonlinearities to known functions rather than fitting with a more flexible empirical form (e.g., Ahrens et al., 2008; McFarland et al., 2013). Fixing these nonlinearities to a simple, closed-form function allowed for fast and robust maximum likelihood parameter estimates while still providing an excellent description of the data.
 
-## Fitting the spike-rate nonlinearity
+#### Fitting the spike-rate nonlinearity
 
-We used a spike-triggered analysis (de Boer and Kuyper, 1968) on membrane voltage recordings to determine the spike rate nonlinearity, fr, as a function of voltage for the CBEM. This is the same procedure for estimating the LN-model nonlinearity proposed in Chichilnisky (2001); Mease et al. (2013), but substituting the filtered stimulus with the average voltage measured across trials. The membrane potential and spikes were recorded in dynamic-clamp experiments over several repeats of simulated conductances for two cells. We computed the mean voltage recorded over all runs of the dynamic-clamp condition, which largely eliminated the action potential shapes from the voltage trace. Using the spike times from all the repeats, we computed the probability of a spike occurring in one time bin given the mean voltage, V¯:(26)p(Sp|V¯)=p(V¯|Sp)p(Sp)p(V¯)where p⁢(V¯|S⁢p) is the spike-triggered distribution of the membrane potential. The distribution over voltage in all times bins is p⁢(V¯). The spike rate (in terms of spikes per bin) is p⁢(S⁢p). We combined the spike times and voltage distributions for the two cells to compute a common spike rate function.
+We used a spike-triggered analysis (de Boer and Kuyper, 1968) on membrane voltage recordings to determine the spike rate nonlinearity, $f_{r}$, as a function of voltage for the CBEM. This is the same procedure for estimating the LN-model nonlinearity proposed in Chichilnisky (2001); Mease et al. (2013), but substituting the filtered stimulus with the average voltage measured across trials. The membrane potential and spikes were recorded in dynamic-clamp experiments over several repeats of simulated conductances for two cells. We computed the mean voltage recorded over all runs of the dynamic-clamp condition, which largely eliminated the action potential shapes from the voltage trace. Using the spike times from all the repeats, we computed the probability of a spike occurring in one time bin given the mean voltage, $V¯$:
 
-We then obtained a least-squares fit to approximate the nonlinearity with a soft-rectification function of the the form(27)p(Sp|V¯)≈fr(t)Δ(28)fr(t)=αlog⁡(1+exp⁡((Vt−μ)β)).
+$$
+p(Sp|V¯)=\frac{p(V¯|Sp)p(Sp)}{p(V¯)}
+$$
 
-The parameters fit to the empirical spike-rate nonlinearity was α=90⁢s⁢p/s, μ=-53⁢m⁢V and β=1.67⁢m⁢V.
+where $p⁢(V¯|S⁢p)$ is the spike-triggered distribution of the membrane potential. The distribution over voltage in all times bins is $p⁢(V¯)$. The spike rate (in terms of spikes per bin) is $p⁢(S⁢p)$. We combined the spike times and voltage distributions for the two cells to compute a common spike rate function.
+
+We then obtained a least-squares fit to approximate the nonlinearity with a soft-rectification function of the the form
+
+$$
+p(Sp|V¯)≈f_{r}(t)Δ
+$$
+
+
+
+$$
+f_{r}(t)=\alphalog⁡(1+exp⁡(\frac{(V_{t}−\mu)}{\beta})).
+$$
+
+The parameters fit to the empirical spike-rate nonlinearity was $\alpha=90⁢s⁢p/s$, $\mu=-53⁢m⁢V$ and $\beta=1.67⁢m⁢V$.
 
 We chose to fit the spike-rate nonlinearity with the average voltage recorded over repeat data, instead of looking at the voltage in bins preceding spikes (Jolivet et al., 2006). The average voltage is closer in spirit to the voltage in our model than the single-trial voltage, because the voltage dynamics we considered (Equation 6) did not include noise nor post-spike currents.
 
-## Generalized linear models
+#### Generalized linear models
 
-For a baseline comparison to the CBEM, we also fit spike trains with a GLM. We used the same Bernoulli discretization of the point-process log-likelihood function for the GLM as we did with the CBEM:(29)log⁡p(y1:T|x1:T,k,b,h)=∑t=1Tytlog⁡(1−exp⁡(−λtΔ))−(1−yt)λtΔwhere the firing rate is(30)λt=fr⁢((𝐤*𝐱)⁢(t)+b+(𝐡*𝐲h⁢i⁢s⁢t)⁢(t)).
+For a baseline comparison to the CBEM, we also fit spike trains with a GLM. We used the same Bernoulli discretization of the point-process log-likelihood function for the GLM as we did with the CBEM:
 
-The stimulus filter is 𝐤 and the spike history filter is 𝐲h⁢i⁢s⁢t. We used conjugate-gradient methods to find the maximum likelihood estimates for the parameters. We set fr⁢(⋅)=exp⁡(⋅), which is the canonical inverse-link function for Poisson GLMs. We confirmed previous results that the soft-rectifying nonlinearity, fr⁢(⋅)=log⁡(1+exp⁡(⋅)), did not capture RGC responses as well as the exponential function (Pillow et al., 2008).
+$$
+log⁡p(y_{1:T}|x_{1:T},k,b,h)=\sumt=1Ty_{t}log⁡(1−exp⁡(−\lambda_{t}Δ))−(1−y_{t})\lambda_{t}Δ
+$$
 
-## Modeling respones to spatio-temporal stimuli
+where the firing rate is
 
-For spatio-temporal stimuli, the filters for the CBEM and GLM (𝐤,𝐤e, and 𝐤i) spanned both space and time. Although the stimulus we used was a 10 × 10 grid of pixels, the receptive field (RF) of the neurons did not cover the entire grid. We therefore limited the spatial extent of the linear filters to a 5 × 5 grid of pixels, where the center pixel was the strongest point in the GLM stimulus filter.
+$$
+\lambda_{t}=f_{r}⁢((𝐤*𝐱)⁢(t)+b+(𝐡*𝐲^{h⁢i⁢s⁢t})⁢(t)).
+$$
 
-The filters were represented as a matrix where the columns span the pixel space and the rows span the temporal dimension. The number of parameters was reduced by decomposing the spatio-temporal filters into a low-rank representation (Pillow et al., 2008). The filter at pixel x and time τ became(31)k(x,τ)=∑j=1Jks,j(x)kt,j(τ)where 𝐤s,j was a vector containing the spatial portion of the filter of length 25 (the number of pixels in the RF) and 𝐤t,j represented the temporal portion of the filter. The temporal filters were projected into the same 10-dimensional basis as the temporal filters used to model the full-field stimuli and the spatial filters were represented in the natural pixel basis. For identifiability, we normalized the spatial filters and forced the sign of the center pixel of the spatial filters to be positive. We used rank two filters (J=2) for the CBEM and GLM. Therefore, each filter contained 2 × 25 spatial and 2 × 10 temporal parameters for a total of 70 parameters. In the GLM, we found no significant improvement using rank three filters. To fit these low-rank filters, we alternated between optimizing over the spatial and temporal components of the filters.
+The stimulus filter is $𝐤$ and the spike history filter is $𝐲^{h⁢i⁢s⁢t}$. We used conjugate-gradient methods to find the maximum likelihood estimates for the parameters. We set $f_{r}⁢(⋅)=exp⁡(⋅)$, which is the canonical inverse-link function for Poisson GLMs. We confirmed previous results that the soft-rectifying nonlinearity, $f_{r}⁢(⋅)=log⁡(1+exp⁡(⋅))$, did not capture RGC responses as well as the exponential function (Pillow et al., 2008).
 
-## Evaluating model performance
+#### Modeling respones to spatio-temporal stimuli
 
-We evaluated single-trial spike train predictive performance by computing the log-likelihood on a test spike train. We computed the difference between the log (base-2) likelihood under the model and the log-likelihood under a homogeneous rate model (L⁢Lh) that captured only the mean spike rate:(32)LLh=nsp∗log2⁡(λ¯)+(T−nsp)log2⁡(1−λ¯)(33)λ¯=nspT.where the test stimulus is of length T (in discrete bins) and contains ns⁢p spikes. We then divided by the number of spikes to obtain the predictive performance in units of bits per spike (bits/sp) (Panzeri et al., 1996; Brenner et al., 2000; Paninski et al., 2004)(34)bitsperspike=LLmodel−LLhnsp.
+For spatio-temporal stimuli, the filters for the CBEM and GLM ($𝐤,𝐤_{e},$ and $𝐤_{i}$) spanned both space and time. Although the stimulus we used was a 10 × 10 grid of pixels, the receptive field (RF) of the neurons did not cover the entire grid. We therefore limited the spatial extent of the linear filters to a 5 × 5 grid of pixels, where the center pixel was the strongest point in the GLM stimulus filter.
 
-We evaluated model predictions of spike rate by simulating 2500 trials from the model for a repeated stimulus. We computed the firing rate, or PSTH, by averaging the number of spikes observed in 1 ms bins and smoothing with a Gaussian filter with a standard deviation of 2 ms. The percent of variance in the PSTH explained by the model is(35)%varianceexplained=100×1−∑t=1T(PSTHdata(t)−PSTHmodel(t))2∑t=1T(PSTHdata(t)−PSTHdata¯)2where P⁢S⁢T⁢Hd⁢a⁢t⁢a¯ denotes the average value of the PSTH.
+The filters were represented as a matrix where the columns span the pixel space and the rows span the temporal dimension. The number of parameters was reduced by decomposing the spatio-temporal filters into a low-rank representation (Pillow et al., 2008). The filter at pixel $x$ and time $\tau$ became
+
+$$
+k(x,\tau)=\sumj=1Jk_{s,j}(x)k_{t,j}(\tau)
+$$
+
+where $𝐤_{s,j}$ was a vector containing the spatial portion of the filter of length 25 (the number of pixels in the RF) and $𝐤_{t,j}$ represented the temporal portion of the filter. The temporal filters were projected into the same 10-dimensional basis as the temporal filters used to model the full-field stimuli and the spatial filters were represented in the natural pixel basis. For identifiability, we normalized the spatial filters and forced the sign of the center pixel of the spatial filters to be positive. We used rank two filters ($J=2$) for the CBEM and GLM. Therefore, each filter contained 2 × 25 spatial and 2 × 10 temporal parameters for a total of 70 parameters. In the GLM, we found no significant improvement using rank three filters. To fit these low-rank filters, we alternated between optimizing over the spatial and temporal components of the filters.
+
+#### Evaluating model performance
+
+We evaluated single-trial spike train predictive performance by computing the log-likelihood on a test spike train. We computed the difference between the log (base-2) likelihood under the model and the log-likelihood under a homogeneous rate model ($L⁢L_{h}$) that captured only the mean spike rate:
+
+$$
+LL_{h}=n_{sp}∗log_{2}⁡(\lambda¯)+(T−n_{sp})log_{2}⁡(1−\lambda¯)
+$$
+
+
+
+$$
+\lambda¯=\frac{n_{sp}}{T}.
+$$
+
+where the test stimulus is of length $T$ (in discrete bins) and contains $n_{s⁢p}$ spikes. We then divided by the number of spikes to obtain the predictive performance in units of bits per spike (bits/sp) (Panzeri et al., 1996; Brenner et al., 2000; Paninski et al., 2004)
+
+$$
+bitsperspike=\frac{LL_{model}−LL_{h}}{n_{sp}}.
+$$
+
+We evaluated model predictions of spike rate by simulating 2500 trials from the model for a repeated stimulus. We computed the firing rate, or PSTH, by averaging the number of spikes observed in 1 ms bins and smoothing with a Gaussian filter with a standard deviation of 2 ms. The percent of variance in the PSTH explained by the model is
+
+$$
+%varianceexplained=100\times1−\frac{\sumt=1T(PSTH_{data}(t)−PSTH_{model}(t))^{2}}{\sumt=1T(PSTH_{data}(t)−PSTH_{data}¯)^{2}}
+$$
+
+where $P⁢S⁢T⁢H_{d⁢a⁢t⁢a}¯$ denotes the average value of the PSTH.

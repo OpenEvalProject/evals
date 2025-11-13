@@ -31,7 +31,7 @@
 
 ## Abstract
 
-Bicuspid aortic valve (BAV) is the most common congenital cardiovascular disease in general population and is frequently associated with the development of thoracic aortic aneurysm (TAA). There is no effective strategy to intervene with TAA progression due to an incomplete understanding of the pathogenesis. Insufficiency of NOTCH1 expression is highly related to BAV-TAA, but the underlying mechanism remains to be clarified. A comparative proteomics analysis was used to explore the biological differences between non-diseased and BAV-TAA aortic tissues. A microfluidics-based aorta smooth muscle-on-a-chip model was constructed to evaluate the effect of NOTCH1 deficiency on contractile phenotype and mitochondrial dynamics of human aortic smooth muscle cells (HAoSMCs). Protein analyses of human aortic tissues showed the insufficient expression of NOTCH1 and impaired mitochondrial dynamics in BAV-TAA. HAoSMCs with NOTCH1-knockdown exhibited reduced contractile phenotype and were accompanied by attenuated mitochondrial fusion. Furthermore, we identified that mitochondrial fusion activators (leflunomide and teriflunomide) or mitochondrial fission inhibitor (Mdivi-1) partially rescued the disorders of mitochondrial dynamics in HAoSMCs derived from BAV-TAA patients. The aorta smooth muscle-on-a-chip model simulates the human pathophysiological parameters of aorta biomechanics and provides a platform for molecular mechanism studies of aortic disease and related drug screening. This aorta smooth muscle-on-a-chip model and human tissue proteomic analysis revealed that impaired mitochondrial dynamics could be a potential therapeutic target for BAV-TAA. National Key R and D Program of China, National Natural Science Foundation of China, Shanghai Municipal Science and Technology Major Project, Shanghai Science and Technology Commission, and Shanghai Municipal Education Commission.
+Background:Bicuspid aortic valve (BAV) is the most common congenital cardiovascular disease in general population and is frequently associated with the development of thoracic aortic aneurysm (TAA). There is no effective strategy to intervene with TAA progression due to an incomplete understanding of the pathogenesis. Insufficiency of NOTCH1 expression is highly related to BAV-TAA, but the underlying mechanism remains to be clarified.Methods:A comparative proteomics analysis was used to explore the biological differences between non-diseased and BAV-TAA aortic tissues. A microfluidics-based aorta smooth muscle-on-a-chip model was constructed to evaluate the effect of NOTCH1 deficiency on contractile phenotype and mitochondrial dynamics of human aortic smooth muscle cells (HAoSMCs).Results:Protein analyses of human aortic tissues showed the insufficient expression of NOTCH1 and impaired mitochondrial dynamics in BAV-TAA. HAoSMCs with NOTCH1-knockdown exhibited reduced contractile phenotype and were accompanied by attenuated mitochondrial fusion. Furthermore, we identified that mitochondrial fusion activators (leflunomide and teriflunomide) or mitochondrial fission inhibitor (Mdivi-1) partially rescued the disorders of mitochondrial dynamics in HAoSMCs derived from BAV-TAA patients.Conclusions:The aorta smooth muscle-on-a-chip model simulates the human pathophysiological parameters of aorta biomechanics and provides a platform for molecular mechanism studies of aortic disease and related drug screening. This aorta smooth muscle-on-a-chip model and human tissue proteomic analysis revealed that impaired mitochondrial dynamics could be a potential therapeutic target for BAV-TAA.Funding:National Key R and D Program of China, National Natural Science Foundation of China, Shanghai Municipal Science and Technology Major Project, Shanghai Science and Technology Commission, and Shanghai Municipal Education Commission.
 
 ## Introduction
 
@@ -43,93 +43,272 @@ The traditional TAA animal models are frequently applied for the pathogenesis re
 
 ## Materials and methods
 
-## Aorta smooth muscle-on-a-chip model design and fabrication
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>NOTCH1</td>
+      <td>NCBI</td>
+      <td>ID: 4851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human aortic smooth muscle cell line</td>
+      <td>ATCC</td>
+      <td>CRL1999, Lot Number: 70019189, RRID:CVCL_4009</td>
+      <td>Female, 11 months old, Caucasian</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Primary human aortic smooth muscle cells</td>
+      <td>ATCC</td>
+      <td>PCS100012</td>
+      <td>Male, 29 years old, African American</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Primary human aortic smooth muscle cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary human aortic smooth muscle cells isolated from non-diseased and BAV-TAA patients (Asian).</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>NOTCH1 targeted shRNA</td>
+      <td>GeneChem (Shao et al., 2015).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Ascending aorta</td>
+      <td>Zhongshan Hospital, Fudan University</td>
+      <td></td>
+      <td>Ascending aortic tissues from non-diseased and BAV-TAA patients.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DRP1 (D6C7) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 8570S, RRID:AB_10950498</td>
+      <td>(1:1000), western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MFF (E5W4M) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 84580, RRID:AB_2728769</td>
+      <td>(1:1000), western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mitofusin-1 (D6E2S) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 14739S, RRID:AB_2744531</td>
+      <td>(1:1000), western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mitofusin-2 (D1E9) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat # 11925, RRID:AB_2750893</td>
+      <td>(1:1000), western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Notch1 [EP1238Y] (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab52627, RRID:AB_881725</td>
+      <td>(1:1000), western blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- TAGLN (SM22) (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab14106, AB_443021</td>
+      <td>(1:1000), western blotting, (1:300) for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Calponin (CNN1) (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab46794, RRID:AB_2291941</td>
+      <td>(1:1000), western blotting, (1:300) for IF</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tetramethylrhodamine methyl ester (TMRM)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # I34361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoSOX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # M36008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MitoTracker</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat # M22426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mdivi-1</td>
+      <td>Sigma</td>
+      <td>Cat # M0199</td>
+      <td>a final concentration of 30 μM.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leflunomide</td>
+      <td>Sigma</td>
+      <td>Cat # L5025</td>
+      <td>a final concentration of 75 μM.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Teriflunomide</td>
+      <td>Sigma</td>
+      <td>Cat # SML0936</td>
+      <td>a final concentration of 75 μM.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Commercial flexible PDMS membrane</td>
+      <td>Hangzhou Bald Advanced Materials</td>
+      <td># KYQ-200</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Aorta smooth muscle-on-a-chip model design and fabrication
 
 The structure of the three-layer microfluidic aorta smooth muscle-on-a-chip model was designed using computer-aided design (CAD) software (Autodesk Inc). The size of the three layers were 100 mm × 40 mm × 6 mm. The top and bottom layers had microchannels with dimensions of 70 mm × 6 mm × 4 mm, and the middle layer contained a microchannel with dimensions of 70 mm × 6 mm × 6 mm. Molds of the three layers were custom-made using a high-precision computer numerical control (CNC) engraving machine (Jingyan Technology). The frame of the molds and the microchannels were carved out of polymethyl methacrylate (PMMA) plates, which were then glued on another PMMA plate. Polydimethylsiloxane (PDMS, Sylgard 184, Dow Corning) was polymerized in defined casts at a weight ratio of base to curing agent of 10:1. The mixed PDMS was poured into the molds and underwent cross-linking at 70°C for 2 hr. Commercialized PDMS membranes were purchased from Hangzhou Bald Advanced Materials. Detailed parameters of the commercialized PDMS membrane were provided as follows: thickness of 200 ± 2 μm, shore A hardness of 50, Yang's elastic modulus of 1.7 MPa, tensile strength of 4 MPa, tear strength of 7 KN/m and light transmittance of 93%. The Young's modulus values were obtained by the following experiments. The tensile stress–strain responses was measured using a tensile testing machine (Instron). Prior to the measurement, the PDMS membrane was cut into a piece of 3 cm length and 3 mm width membrane. The membrane was fixed to the testing machine with a fixture. The sample was automatically stretched in a gradient within the proportional limit. The Young's modulus of the PDMS membrane was calculated by the slope value of the tensile stress–strain curve. Subsequently, the three PDMS layers were peeled off the molds. The bottom layer of the PDMS slab was bonded with one PDMS membrane after oxygen plasma treatment (Harrick Plasma), and the top PDMS layer was bonded to another PDMS membrane in a similar manner. The middle PDMS layer was then sandwiched between the top and bottom membranes; this step was performed under a microscope to guarantee that the upper and lower microchannels fully overlapped with the middle microchannel.
 
-## Mechanical stimulation
+### Mechanical stimulation
 
 The cells were stretched by applying different percentages of rhythmic strain to the PDMS membranes for 24 hr. The vacuum pump was connected to a water-oil separator, which dried the gas to protect the downstream vacuum regulator and solenoid valve. The inlet of the vacuum pumps was then connected to the computer-controlled solenoid system by applying rhythmic stretching at a frequency of 1 Hz and then connected to the gas channel of the aorta smooth muscle-on-a-chip model. The regulator was used to control the vacuum magnitude. The solenoid valve was a voltage-dependent on/off valve used to control the stretching frequency of the PDMS membrane. When the supply voltage was greater than 24 V, the gas in the channel was pumped out, which stretched the PDMS membrane. Otherwise, the gas channel was connected to the atmosphere, and the membrane deformation recovered. The on/off frequency of the solenoid valve was controlled by a microcontroller unit (MCU). Thus, the stretching frequency could be controlled by changing the preset program of the MCU, and the stretching amplitude could be controlled by adjusting the vacuum regulator manually. We used two pressure ranges, 10 kPa (7.18 ± 0.44%, low strain) and 15 kPa (17.28 ± 0.91%, high strain), throughout the experiments. As the control, cells were cultured in aorta smooth muscle-on-a-chip models under static conditions. After 24 hr of rhythmic strain, samples were collected for immunofluorescence, RT-qPCR, western blotting and mitochondrial membrane dynamics analyses.
 
-## Human aortic sample collection
+### Human aortic sample collection
 
 Written informed consent was obtained from all patients before participation. Human aortic specimens were utilized under approvals of Zhongshan Hospital, Fudan University Ethics Committee (NO. B2020-158) in accordance with the Declaration of Helsinki. Human aortic samples were collected from patients who underwent ascending aorta surgery at Zhongshan Hospital, Fudan University. Echocardiography was used to characterize aortic valve morphology and ascending aortic diameter prior to surgery. The tissue samples were immediately frozen in liquid nitrogen and stored at −80°C. Six aortic tissues were obtained from patients with a tricuspid aortic valve but without aortic dilation (non-diseased; mean age: 62.2 years; range: 51–74 years; four males), and another six samples were obtained from patients with BAV-related thoracic aortic aneurysm (BAV-TAA; mean age: 59.3 years; range: 43–72 years; four males). The patients’ basic information is available in Supplementary file 1a.
 
-## Primary human smooth muscle cell isolation
+### Primary human smooth muscle cell isolation
 
 Primary human aortic smooth muscle cells (p-HAoSMCs) were isolated from non-diseased ascending aortic tissues and BAV-TAA aortic tissues (n = 3). The ascending aortic tissues were washed with phosphate-buffered saline (PBS, Thermo Fisher Scientific). The intima and adventitia layers of the tissues were removed, and the media layer was preserved for the harvesting of p-HASMCs. Subsequently, the media layer was cut into small pieces (2–3 mm in length) and cultured in high-glucose Dulbecco’s modified Eagle’s medium (DMEM, Gibco) with 20% fetal bovine serum (FBS, Gibco) and 1% penicillin and streptomycin (p/s, Gibco) for 2–3 weeks at 37°C and 5% CO2 in a humidified incubator. After approximately 10–12 days, the p-HASMCs started to migrate out of the tissue pieces. When the cells reached approximately 80% confluency, first-passaged cells were rinsed with PBS, digested using 0.25% trypsin (Gibco), and replated in smooth muscle cell culture medium (SMCM, ScienCell). The cells were characterized through an immunofluorescence analysis of four different specific markers of smooth muscle cells (CNN1, SM22, MYH11 and α-SMA). We used p-HASMCs at a low passage (P2-P5) in all the experiments.
 
-## Cell culture
+### Cell culture
 
 In addition to the p-HAoSMCs isolated from aortic tissues, a human aortic smooth muscle cell line (CRL1999) and commercialized p-HAoSMCs (PCS-100–012) were purchased from ATCC (American Type Culture Collection) in accordance with their ethical regulations and compliances. p-HAoSMCs and the CRL1999 cell line were cultured in SMCM. Prior to cell seeding, the surface of the cell culture channel was coated with mouse collagen at a concentration of 80 µg/mL (Sigma) by incubating for 1 hr at room temperature and drying for 2 hr at 70°C. Afterward, the cell culture channel was washed with PBS, and cells were seeded on the PDMS membranes in a cell culture channel at a density of 2 x 106 cells/mL. The cells were cultured in Dulbecco’s modified Eagle’s medium/nutrient mixture F-12 (DMEM/F-12, Thermo Fisher Scientific) supplemented with 10% FBS in a cell culture channel. After seeding, aorta smooth muscle-on-a-chip models were incubated at 37°C and 5% CO2 in a humidified incubator for 24 hr for cell attachment. The aorta smooth muscle-on-a-chip models were then ready for mechanical stimulation experiments.
 
-## Cell line
+### Cell line
 
 HAoSMCs cell line (CRL1999, Lot number 70019189, Homo sapiens) and primary HAoSMCs (PCS-100–012, Lot number 80323179, Homo sapiens) were purchased from ATCC. The identity has been authenticated by STR analysis and mycoplasma contamination was conformed by sterility test and pathogenic virus test provided by ATCC. The cells have human unique DNA profiles and were negative for mycoplasma contamination.
 
-## Drug screening
+### Drug screening
 
 Mdivi-1 (Sigma), an inhibitor of mitochondrial fission, was dissolved in dimethylsulfoxide (DMSO) and stored at −20°C before use, and fresh medium was used to obtain a final concentration of 30 μM. Leflunomide and teriflunomide (Sigma), two different activators of mitochondrial fusion, were dissolved in DMSO at appropriate concentrations. Prior to cell treatment, fresh medium was used to obtain a concentration of 75 μM for both drugs. After the cells were fully attached to the PDMS membrane in the cell culture channel, medium containing a mitochondrial fusion activator (leflunomide and teriflunomide) or mitochondrial fission inhibitor (Mdivi-1) was added to the aorta smooth muscle-on-a-chip models. After 24 hr of rhythmic strain, the samples were collected for comparative experiments.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Immunofluorescence analysis was performed in the microfluidic aorta smooth muscle-on-a-chip model in situ after 24 hr of rhythmic stretch. The medium was aspirated from the cell culture channel, and the cells were washed with PBS, immediately fixed with 4% paraformaldehyde (Beyotime) for 30 min at room temperature and permeabilized with 1% (v/v) Triton X-100 (Beyotime) for 15 min. Afterward, blocking solution with 5% bovine serum albumin (Sigma) was applied to the cells to block nonspecific binding sites for 30 min at room temperature, and the cells were incubated overnight at 4°C with primary antibodies. The primary antibodies used in this study and their working concentrations are listed in Supplementary file 1b. After incubation, the cells were washed three times with PBS and incubated with Alexa 594 anti-rabbit secondary antibody (Thermo Fisher Scientific) at a dilution of 1:300 for 1 hr at room temperature under dark conditions. The nuclei were counterstained with 4′,6-diamidino-2-phenyllindole (DAPI) (Thermo Fisher Scientific) for 10 min. The aorta smooth muscle-on-a-chip models were then disassembled, and images were acquired with a fluorescence microscope (Leica DMi8) and analyzed using ImageJ software.
 
-## Western blotting
+### Western blotting
 
 Cells and aortic tissue samples were lysed using RIPA (Beyotime) lysis buffer supplemented with protease inhibitor phenyl methyl sulfonyl fluoride (PMSF, Beyotime). To collect an appropriate concentration of protein for western blotting, we collected and pooled cell protein from three microfluidic aorta smooth muscle-on-a-chip model. For the tissue samples, the intima and adventitia were peeled out, and the middle layers were ground into small pieces. The extracts were incubated for 30 min on ice for complete lysis and centrifuged at 14,000 rpm and 4°C for 25 min. The supernatant was collected after centrifugation, and the debris was discarded. The protein concentrations were quantified using a BCA Protein Assay kit (Thermo Fisher Scientific). The extracted proteins were diluted in sample loading buffer and heated for 5 min at 95°C. Ten micrograms of each protein sample were then separated by running on a 10% SDS-PAGE gel and subsequently transferred to 0.2 µm polyvinylidene fluoride (PVDF) membranes (Millipore). The PVDF membranes were blocked with 5% skimmed milk (Beyotime) for 1 hr at room temperature and incubated with different primary antibodies (Supplementary file 1b) overnight at 4°C. The membranes were then incubated with horseradish peroxidase-conjugated goat anti-rabbit and goat anti-mouse IgG secondary antibodies (Cell Signaling Technology) at 1:6000 dilution for 1 hr at room temperature. Bands were detected using the SuperSignal chemiluminescence reagent substrate (Millipore). The protein expression level was normalized using the housekeeping protein β-actin. Quantitative estimation of the band intensity was performed using Image J software.
 
-## Knockdown of NOTCH1 by lentivirus short hairpin RNA
+### Knockdown of NOTCH1 by lentivirus short hairpin RNA
 
 NOTCH 1-targeted short hairpin RNA (shRNA) was designed and synthesized by GeneChem. p-HASMCs and CRL-1999 cells were seeded in six-well plates (6 x 105 cells/well) and cultured in a humidified incubator at 37°C with 5% CO2. When the cells reached 30% confluency, the cells were divided into three groups: control (WT), negative control shRNA (NC) and NOTCH1 knockdown (NOTCH1-KD). The cells in the NC and NOTCH1-KD groups were infected with lentivirus-nonspecific shRNA and lentivirus-shRNA-NOTCH1 at a multiplicity of infection (MOI) of 10 according to the manufacturer’s recommended protocol (GeneChem). After 8–12 hr of infection, the virus particles were removed from the respective wells, and fresh SMCM was added. The cells were further cultured for 72 hr in a humidified incubator at 37°C with 5% CO2. To establish a stable cell line, the cells were treated with puromycin at a concentration of 2 µg/mL for 5 days. When the cells reached approximately 80% confluency, the cells were harvested, and the knockdown efficiency of NOTCH1 was evaluated by qRT-PCR and western blotting assays.
 
-## Morphology and membrane potential analyses of mitochondria
+### Morphology and membrane potential analyses of mitochondria
 
 For analyses of the mitochondrial morphology and membrane potential, we used different types of fluorescent dyes, including tetramethylrhodamine methyl ester (TMRM), MitoSOX, and MitoTracker (all from Thermo Fisher Scientific), according to the manufacturer’s guidelines. Cells were stretched on aorta smooth muscle-on-a-chip models for 24 hr. An appropriate concentration of each fluorescent dye was added to three different aorta smooth muscle-on-a-chip models and incubated at 37°C for 30 min in the dark. After incubation, the channels were washed three times with PBS, and the nuclei were counterstained with Hoechst (Sigma) for 10 min. Representative staining images of all three fluorescent dyes (under static and strain conditions) were acquired using a fluorescence microscope (Leica) and analyzed using Image J software.
 
-## Estimation of the ATP concentration
+### Estimation of the ATP concentration
 
 The level of ATP production by cells on the aorta smooth muscle-on-a-chip models was determined using an ATP assay kit (Beyotime) following the manufacturer’s instructions. In brief, after mechanical stimulation of the cells on the aorta smooth muscle-on-a-chip models, the cells were lysed using ATP lysis buffer, and total protein was collected by centrifugation of the cell lysate at 12,000 rpm and 4°C for 5 min. After centrifugation, the supernatant was collected, mixed with ATP detection reagent and incubated for 10 min at room temperature. After incubation, the ATP concentration was measured using a luminometer. An ATP concentration standard curve was then established and used to calculate the ATP concentration of each sample.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 The aortic samples were minced and lysed with RIPA on ice for 30 min. The extracts were centrifuged at 14,000 rpm and 4°C for 25 min, and the supernatant was collected after centrifugation. The protein concentrations were quantified using a BCA Protein Assay kit (Thermo Fisher Scientific). Filter-aided sample preparation (FASP) was performed for protein digestion. Before alkylation with 10 mM dithiothreitol (DTT, Sigma) and 30 mM iodoacetamide (IAA, Sigma), the proteins were loaded in 10 kDa centrifugal filter tubes (Millipore) and treated twice with 50 mM NH4HCO3 (Sigma). The extracts were digested with trypsin at a ratio of 1:50 and incubated at 37°C overnight. Trifluoroacetic acid (TFA, 0.1%) was added to stop the digestion reaction. One hundred micrograms of peptides containing 0.1% TFA was loaded in high-pH reversed-phase fractionation spin columns (Thermo Fisher Scientific). We obtained 10 flow-through fractions, and two fractions were combined to obtain one sample. The resulting five fractions were dried by vacuum centrifugation. The samples were resuspended in 30 μL of solvent A (A: water with 0.1% formic acid; B: ACN with 0.1% formic acid), separated by nanoLC and analyzed by on-line electrospray tandem mass spectrometry. The experiments were performed using a nanoAquity UPLC system (Waters Corporation) connected to a quadrupole-Orbitrap mass spectrometer (Q Exactive HF) (Thermo Fisher Scientific) equipped with an online nanoelectrospray ion source. Two microliters of peptide sample were loaded onto an analytical column (Acclaim PepMap C18, 75 μm x 25 cm) and subsequently separated with a linear gradient from 5% B to 30% B over 110 min. The column flow rate was maintained at 300 nL/min, and the column temperature was maintained at 45°C. An electrospray voltage of 2.2 kV versus the inlet of the mass spectrometer was used.
 
 The Q Exactive HF mass spectrometer was operated in the data-dependent mode to switch automatically between MS and MS/MS acquisition. Survey full-scan MS spectra (m/z 350–1500) were acquired with a mass resolution of 60 K. The automatic gain control (AGC) was set to 3000000 with a maximum injection time of 50 ms. Fifteen sequential high-energy collisional dissociation (HCD) MS/MS scans with a resolution of 15.0 K were acquired with the Orbitrap. The intensity threshold was 50,000, and the maximum injection time was 80 ms. The AGC target was set to 100,000, and the isolation window was 1.6 m/z. Ions with charge states of 2+, 3+, and 4+ were fragmented with a normalized collision energy (NCE) of 30%. In all cases, one microscan was recorded using dynamic exclusion of 20 s. In the MS/MS, the fixed first mass was set to 110. Online peaks were used for the analysis of proteomic data. The precursor mass error tolerance was set to 10 ppm with a fragment mass error tolerance of 0.05 Da. In all software programs, carbamidomethylation was set as a fixed modification, and variable modifications of oxidation (M), acetylation (N-term) and deamidation (NQ) were included. The false discovery rate (FDR) for peptide and protein identifications was set to 1%. Total ion chromatography (TIC) was used for normalization. The rest of the parameters were set to the default values. The MS/MS spectra were searched using the Andromeda search engine against the Swiss-Prot database (Taxonomy: Homo sapiens, Release 2020-11-02) (total of 20385 entries). The statistical analyses were mainly conducted in R 3.6.1. Label-free quantification (LFQ) was used for the following analysis flow. Proteins containing more than 50% missing values were removed, and the remaining missing values were inputted by k-nearest neighbor (kNN) imputation based on the Euclidean distance using the DMwR package in R. After normalizing the trimmed mean of M-values (TMM), PCA showed no significant batch effect. Differential expression analysis was conducted using the Limma package. The proteins with a p-value threshold of 0.05 and fold change > 1.5 were identified as differentially expressed proteins and inputted into the IPA. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD026303.
 
-## Statistical analyses
+### Statistical analyses
 
 The experimental results are expressed as the means ± standard deviations (SDs). A minimum of three individual replications of each group were used for the relative analyses. The statistical analyses were performed using GraphPad Prism eight software. Two‐tailed Student’s t tests were used to compare values between two groups, and one‐way or two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test was used for multiple-group comparisons. Statistical significance was indicated by *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.
 
 ## Results
 
-## The relationship between NOTCH1 insufficiency and mitochondrial dysfunction in human TAA
+### The relationship between NOTCH1 insufficiency and mitochondrial dysfunction in human TAA
 
 To explore the pathological process involved in BAV-TAA, aortic tissues were collected from six patients with BAV-TAA who underwent ascending aorta replacement and six patients with non-diseased aorta who underwent cardiac surgery. The clinical characteristics of the patients are shown in Supplementary file 1a. Hematoxylin and eosin (H and E) staining showed interrupted elastic fibers and thinning of the tunica media in the BAV-TAA aortas compared with non-diseased aortic tissue (Figure 1a). A Western blotting analysis showed that NOTCH1 expression was significantly lower in BAV-TAA aortic tissues than in non-diseased aortic tissues. SM22 and CNN1 expression was significantly reduced in BAV-TAA aortic tissues (Figure 1b–c). We evaluated the expression of mitochondrial fission- and fusion-related proteins in non-diseased and BAV-TAA aortic tissues. The results showed that DRP1 and MFF expression was increased in the BAV-TAA group compared with the non-diseased group, but the differences were not significant probably due to individual patient differences, which resulted in relatively large protein expression differences within each group. However, the protein expression of MFN1 and MFN2 was significantly lower in the BAV-TAA group than in the non-diseased group (Figure 1c). In general, we found that MFN1 and MFN2 were expressed at low levels in tissues with NOTCH1 insufficiency (Figure 1d). The expression of NOTCH1 exhibited a positive correlation with MFN1 and MFN2 in aortic tissues. The expressions of DRP1 and MFF did not show a correlation with the expression of NOTCH1 (Figure 1e).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig1-v2.jpg)
 
-**Figure 1.:** (a) H and E staining of non-diseased and BAV-TAA aortic tissues. The scale bar represents 1 mm in the low field and 200 μm in the high field. (b) Representative images of the western blotting analysis of the expression of NOTCH1, the mitochondrial dynamics proteins DRP-1, MFF, MFN1, and MFN2 and the contractile phenotype proteins SM22 and CNN1 in six non-diseased and six BAV-TAA aortic tissue fragments. (c) Quantification of the total band densities of the proteins normalized to the corresponding band density of β-actin (n = 6, *p < 0.05, two‐tailed Student’s t tests were used between two groups). (d) Correlation analysis among the quantified protein expression levels of NOTCH1, MFN1, and MFN2. A positive correlation was found between NOTCH1 and MFN1 or MFN2 in aortic tissues. The R2 between NOTCH1 and MFN2 was 0.8069, and that between NOTCH1 and MFN1 was 0.6137. (e) Correlation analysis between the quantified protein expression of NOTCH1 and DRP1 or MFF. No correlation was found. (f) The enriched canonical pathways identified by IPA. (g) Heatmap of the expression of enriched proteins involved in mitochondrial dysfunction, the oxidative phosphorylation pathways and acute phase response signaling. (h) Volcano plot visualization of the differentially expressed proteins related to mitochondrial dysfunction. The colors indicate the following: gray, no differential expression; red, upregulated proteins; and blue, downregulated proteins. The proteins related to mitochondrial dysfunction are labeled. All the data are expressed as the means ± SDs.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.
+**Figure 1.:** (a) H and E staining of non-diseased and BAV-TAA aortic tissues. The scale bar represents 1 mm in the low field and 200 μm in the high field. (b) Representative images of the western blotting analysis of the expression of NOTCH1, the mitochondrial dynamics proteins DRP-1, MFF, MFN1, and MFN2 and the contractile phenotype proteins SM22 and CNN1 in six non-diseased and six BAV-TAA aortic tissue fragments. (c) Quantification of the total band densities of the proteins normalized to the corresponding band density of β-actin (n = 6, *p < 0.05, two‐tailed Student’s t tests were used between two groups). (d) Correlation analysis among the quantified protein expression levels of NOTCH1, MFN1, and MFN2. A positive correlation was found between NOTCH1 and MFN1 or MFN2 in aortic tissues. The R2 between NOTCH1 and MFN2 was 0.8069, and that between NOTCH1 and MFN1 was 0.6137. (e) Correlation analysis between the quantified protein expression of NOTCH1 and DRP1 or MFF. No correlation was found. (f) The enriched canonical pathways identified by IPA. (g) Heatmap of the expression of enriched proteins involved in mitochondrial dysfunction, the oxidative phosphorylation pathways and acute phase response signaling. (h) Volcano plot visualization of the differentially expressed proteins related to mitochondrial dysfunction. The colors indicate the following: gray, no differential expression; red, upregulated proteins; and blue, downregulated proteins. The proteins related to mitochondrial dysfunction are labeled. All the data are expressed as the means ± SDs.
 
 To further explore the biological differences between non-diseased and BAV-TAA aortic tissues, a comparative proteomics analysis of global proteins in aortic tissues was performed by high-performance liquid chromatography tandem mass spectrometry. In total, 70 upregulated proteins and 257 downregulated proteins were identified (Supplementary file 2). The enriched canonical pathways identified by Ingenuity Pathway Analysis (IPA) showed that acute phase response signaling, mitochondrial dysfunction and oxidative phosphorylation pathways were significantly enriched in BAV-TAA aortic tissues (Figure 1f, Supplementary file 1c). Among these pathways, Z-score of oxidative phosphorylation pathway was −2.333, indicating significantly inhibited. Z-score of mitochondria dysfunction was not applicable due to insufficient evidence in the knowledge base for confident activity predictions across datasets. In addition, metabolic signaling pathways affecting mitochondrial function, such as the EIF2 and sirtuin signaling pathways, were also significantly enriched in BAV-TAA. Figure 1g and Supplementary file 1d show the enriched proteins associated with mitochondrial dysfunction, oxidative phosphorylation pathways, and acute phase response signaling. In total, seven upregulated proteins and 11 downregulated proteins were found to be related to acute phase response signaling, and one upregulated protein and 10 downregulated proteins were associated with mitochondrial dysfunction (Figure 1g, Supplementary file 1d). Figure 1h shows a volcano plot of these 11 differentially expressed proteins that allows visualization of the fold change and p-value of all differentially expressed proteins between the two groups. MFN1, MFN2, and NOTCH1 were not detected by mass spectrometry analysis, mainly because the aortic tissues contain highly cross-linked extracellular matrix that can be refractory to protein extraction. The publicly available data of the most compressive clinical aortic proteome, up to now, also indicated the missingness of MFN1, MFN2, DRP1, and NOTCH1 protein in aortic specimens (Herrington et al., 2018).
 
-## Construction of aorta smooth muscle-on-a-chip model
+### Construction of aorta smooth muscle-on-a-chip model
 
 During cardiac systolic and diastolic cycles, the thoracic aortic wall experiences rhythmic tensile strain. Ascending aorta is the first section of the aorta, which starts from the left ventricle of the heart and extends to the aortic arch. It is connected to the left ventricular outflow track and is the part that pumps oxygenated blood to the body's tissues and organs. Clinical studies have shown that the circumferential strains of the aortic wall range from low values of 7.0 ± 2.5% to high values of 21.5 ± 12.4%, and these can be further influenced by age, the aortic diameter, and the presence of aortopathy (Akazawa et al., 2016; Bell et al., 2014). To better simulate the rhythmic tensile strain experienced by HAoSMCs in vivo, we developed a compact microfluidic aorta smooth muscle-on-a-chip model with commercialized highly flexible polydimethylsiloxane (PDMS) membranes (Figure 2a). The model was composed of three chambers: (i) a top vacuum chamber deforming the upper PDMS membrane; (ii) a middle chamber containing the culture medium to maintain cell growth on the PDMS membranes; and (iii) a bottom vacuum chamber deforming the lower PDMS membrane. HAoSMCs were cultured on the PDMS membranes in the middle cell culture chamber. The dimensions of the model are shown in Figure 2—figure supplement 1a. The measured Young's elastic modulus values of the commercialized PDMS membrane were 1.71 MPa within 25% tensile strain and 1.67 MPa within 500% tensile strain (Figure 2—figure supplement 2) and it shows excellent homogeneity and tensile properties (Figure 2—figure supplement 3). The rhythmic tensile strain was generated by connecting the top and bottom chambers to a vacuum pump that cyclically deformed the PDMS membrane. The rhythm and value of the dynamic negative pressure in the chambers were controlled by a set of apparatuses consisting of a monochip computer, a pressure regulator and a solenoid valve.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic overview of the in vitro chip model. (b) Cross-sectional view of the microfluidic aorta smooth muscle-on-a-chip model showing the deformations of the PDMS membranes under different vacuum pressures. The scale bar represents 5 mm. (c) Measured tensile strains of the upper (red) and lower (blue) membranes at negative pressures of 10 kPa and 15 kPa for five cycles. The peak tensile strain per cycle averaged 7.18 ± 0.44% with a cyclic negative pressure of 10 kPa and 17.28 ± 0.91% with a cyclic negative pressure of 15 kPa.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Assembly and parameters of the PDMS aorta-on-a-chip model. (b) Membrane deformation under different vacuum pressures (0 kPa, 10 kPa, 15 kPa, and 20 kPa).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Tensile strains of 25%. (b) Tensile strains of 500%.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The photographs of a piece of PDMS membrane before stretching (a), 500% elongation (b), recovered PDMS membrane (c) after 500% stretching.
+
 To quantify the tensile strains of the PDMS membrane generated by negative pressure in a vacuum chamber, we captured the real-time deformations of the PDMS membranes and measured the changes in length. We captured the real-time deformations of the PDMS membranes from a cross-sectional view of the microfluidic model, with vacuum pressures of 0 kPa, 10 kPa, and 15 kPa, and measured the strain magnitude of the PDMS membrane (Figure 2b). The two deformations of the upper and lower PDMS membranes were coincident in terms of amplitudes and rhythms (Figure 2c). A vacuum pressure of 10 kPa induced 7.18 ± 0.44% strain (7.09 ± 0.18% strain in the lower layer and 7.27 ± 0.28% strain in the upper layer), and 15 kPa induced 17.28 ± 0.91% strain (17.29 ± 0.62% strain in the lower layer and 17.23 ± 0.64% strain in the upper layer) (Figure 2c and Figure 2—figure supplement 1b). We tested three prototypes with varying culturing channels, that is 2, or 4, or 6 mm in width (Figure 2b–c and Figure 2—animations 1–6). Finally, we opted for the largest size to harvest enough cells for protein analysis replication. To replicate different strains on the human aortic wall, we applied 7.18 ± 0.44% strain induced by a vacuum pressure of 10 kPa as a relatively low strain and 17.28 ± 0.91% strain induced by a vacuum pressure of 15 kPa as a relatively high strain.
 
-## Rhythmic tensile strain defines cell alignment and enhances cell contractility
+### Rhythmic tensile strain defines cell alignment and enhances cell contractility
 
 To identify the effect of rhythmic tensile strain on the contractility of HAoSMCs, the changes in cellular morphology, alignment and contractile/synthetic phenotypic markers were assessed under rhythmic low/high strain or static conditions (Figure 3a). Cytoskeletal F-actin staining images of HAoSMCs showed a decrease in the cell width and an increase in the cell length in the presence of rhythmic low or high strain (Figure 3b). The results also revealed an increase in the length-to-width ratio from 2.33 ± 0.82 under static conditions to 2.74 ± 1.01 under low strain or 3.50 ± 1.19 under high strain (Figure 3c). Compared with the irregular orientation of the cells observed under static culture, the cells tended to align perpendicularly to the direction of the applied strain. The angle between the directions of the cellular alignment and the applied strain was approximately 90° (Figure 3d). To evaluate the effect of rhythmic tensile strain on the expression of phenotypic markers, the protein levels of SM22, CNN1, and OPN in HAoSMCs were measured by western blotting. The results showed that the contractile phenotype markers SM22 and CNN1 were upregulated under either low or high strain (Figure 3e–f). The expression of the synthetic phenotypic marker OPN under both rhythmic low and high strain was lower than that observed under static conditions. These results indicate that the application of rhythmic strain can induce HAoSMCs to spread to longer shapes, align unidirectionally, and exhibit enhanced contractility on the chip model.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig3-v2.jpg)
 
-**Figure 3.:** (a) Schematic workflow of cell culture on the chip model. (b) Representative images of cytoskeletal F-actin staining of HAoSMCs exposed to low or high rhythmic strain for 24 hr. The scale bar represents 200 μm. (c) Length-to-width ratio of HAoSMCs after exposure to low or high rhythmic strain for 24 hr. (n = 3, cells were measured in three fields per sample,data from every single cell were plotted. ****p < 0.0001, one-way ANOVA followed by Tukey’s post hoc test). (d) Alignments of HAoSMCs exposed to low or high rhythmic strain for 24 hr. (e) Representative images of the western blotting analyses of protein markers of the contractile phenotype (SM22 and CNN1) and synthetic phenotype (OPN) of HAoSMCs after exposure to low or high rhythmic strain for 24 hr. (f) Quantification of the total band densities for individual proteins normalized to the corresponding band of β-actin (n = 4, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, one-way ANOVA followed by Tukey’s post hoc test). All the data are expressed as the means ± SDs.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.
+**Figure 3.:** (a) Schematic workflow of cell culture on the chip model. (b) Representative images of cytoskeletal F-actin staining of HAoSMCs exposed to low or high rhythmic strain for 24 hr. The scale bar represents 200 μm. (c) Length-to-width ratio of HAoSMCs after exposure to low or high rhythmic strain for 24 hr. (n = 3, cells were measured in three fields per sample,data from every single cell were plotted. ****p < 0.0001, one-way ANOVA followed by Tukey’s post hoc test). (d) Alignments of HAoSMCs exposed to low or high rhythmic strain for 24 hr. (e) Representative images of the western blotting analyses of protein markers of the contractile phenotype (SM22 and CNN1) and synthetic phenotype (OPN) of HAoSMCs after exposure to low or high rhythmic strain for 24 hr. (f) Quantification of the total band densities for individual proteins normalized to the corresponding band of β-actin (n = 4, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, one-way ANOVA followed by Tukey’s post hoc test). All the data are expressed as the means ± SDs.
 
-## Contractility and mitochondrial dynamics in NOTCH1-insufficient HAoSMCs
+### Contractility and mitochondrial dynamics in NOTCH1-insufficient HAoSMCs
 
 To clarify the effect of NOTCH1 insufficiency on HAoSMC contractility, we cultured NOTCH1-insufficient cells under rhythmic low or high strain or static conditions and then characterized the expression of phenotypic markers. The schematic workflow of the experimental design is shown in Figure 4a. First, NOTCH1 was knocked down in HAoSMCs using a lentivirus expressing short hairpin RNA (shRNA) targeting NOTCH1 (Shao et al., 2015). To evaluate the effect of the lentivirus vector on NOTCH1 and phenotypic markers, HAoSMCs without any treatments (WT), HAoSMCs treated with negative control shRNA (NC) and HAoSMCs treated with NOTCH1 shRNA (NOTCH1-KD) were verified using quantitative real-time PCR and western blotting experiments. An approximately 60% reduction in NOTCH1 mRNA expression was found in the NOTCH1-KD group compared with the WT and NC groups (Figure 4—figure supplement 1a). Under static conditions, the mRNA expression of SM22 and CNN1 was upregulated and that of OPN was downregulated in the NOTCH1-KD group compared with the WT and NC groups (Figure 4—figure supplement 1a). The same tendency was found for the protein expression levels by western blotting analysis (Figure 4—figure supplement 1b–c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic workflow of NOTCH1-KD HAoSMCs on the chip model. (b) Representative images of immunofluorescence staining of SM22 and CNN1 after exposure to rhythmic low or high strain for 24 hr. The scale bar represents 200 μm. (c) Intensity of immunofluorescence staining of SM22 and CNN1 (n=3, data from three independent biological replicates each with two to four technical replicates were plotted. *p < 0.05, **p < 0.01, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). (d) Representative images of the western blotting analyses of SM22 and CNN1 in the WT and NOTCH1-KD groups exposed to rhythmic low or high strains for 24 hr. (e) Quantification of the total band densities for individual proteins normalized to the corresponding band density of β-actin (n = 4, **p < 0.01, ***p < 0.001, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). All the data are expressed as the means ± SDs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig4-figsupp1-v2.jpg)
 
 NOTCH1-KD and WT HAoSMCs were cultured on aorta smooth muscle-on-a-chip models under rhythmic strain and static conditions to characterize the expression of SM22 and CNN1. As shown in Figure 4b–c, immunofluorescent staining images showed that SM22 and CNN1 were upregulated in the NOTCH-KD group compared with the WT group under static conditions. However, the opposite results were observed under rhythmic strain conditions: the expression of SM22 and CNN1 in NOTCH-KD HAoSMCs was lower than that in the WT group under rhythmic strain conditions. Western blotting analyses revealed similar alterations in the expression of SM22 and CNN1 (Figure 4d–e). In WT HAoSMCs, rhythmic strain induced the upregulation of SM22 and CNN1 expression compared with the levels observed under static conditions. However, a downregulation of SM22 and CNN1 expression was detected in NOTCH-KD HAoSMCs exposed to rhythmic strain. These results suggested that rhythmic strain induced different effects between WT and NOTCH-KD HAoSMCs. In NOTCH-KD HAoSMCs, SM22 and CNN1 expression were higher under static conditions and lower under rhythmic strain than those in WT HAoSMCs.
 
@@ -137,13 +316,21 @@ Furthermore, we assessed the alterations in mitochondrial function and dynamics 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig5-v2.jpg)
 
-**Figure 5.:** (a) Representative images of the western blotting analyses of MFN1, MFN2, DRP1 and MFF expression in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. (b) Quantification of the total band densities for four individual proteins normalized to the corresponding band density of β-actin (n = 4, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). (c) MitoTracker staining images of the mitochondrial morphologies in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. The scale bar represents 50 μm. (d) Quantification of the mitochondria length (n = 3, **p < 0.01, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). (e) TMRM staining of the mitochondrial membrane potentials in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. The scale bar represents 100 μm. (f) Quantification of the relative TMRM fluorescence intensity (**p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). (g) MitoSOX staining of mitochondrial superoxide generation in the WT and NOTCH1-KD groups. The scale bar represents 100 μm. (h) Quantification of the relative MitoSOX fluorescence intensity (n=3, data from three independent biological replicates each with two to three technical replicates were plotted. *p < 0.05, **p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). (i) The ATP concentrations were measured using an ATP Determination Kit (n=3, data from three independent biological replicates each with two technical replicates were plotted. **p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). Quantitative measurements were calculated using ImageJ software. All the data are expressed as the means ± SDs.Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.Figure 5—source data 4.Figure 5—source data 5.
+**Figure 5.:** (a) Representative images of the western blotting analyses of MFN1, MFN2, DRP1 and MFF expression in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. (b) Quantification of the total band densities for four individual proteins normalized to the corresponding band density of β-actin (n = 4, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). (c) MitoTracker staining images of the mitochondrial morphologies in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. The scale bar represents 50 μm. (d) Quantification of the mitochondria length (n = 3, **p < 0.01, ****p < 0.0001, two-way ANOVA followed by Tukey’s post hoc test). (e) TMRM staining of the mitochondrial membrane potentials in the WT and NOTCH1-KD groups under rhythmic low or high strain or static conditions. The scale bar represents 100 μm. (f) Quantification of the relative TMRM fluorescence intensity (**p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). (g) MitoSOX staining of mitochondrial superoxide generation in the WT and NOTCH1-KD groups. The scale bar represents 100 μm. (h) Quantification of the relative MitoSOX fluorescence intensity (n=3, data from three independent biological replicates each with two to three technical replicates were plotted. *p < 0.05, **p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). (i) The ATP concentrations were measured using an ATP Determination Kit (n=3, data from three independent biological replicates each with two technical replicates were plotted. **p < 0.01, two-way ANOVA followed by Tukey’s post hoc test). Quantitative measurements were calculated using ImageJ software. All the data are expressed as the means ± SDs.
 
 Mitochondrial dynamics play an important role in the maintenance of normal mitochondrial function. As shown in Figure 5e–f, the fluorescence intensity of the tetramethylrhodamine methyl ester perchlorate (TMRM) staining, which reflects the mitochondrial membrane potential, was lower in NOTHC1-KD HAoSMCs than in the WT group under rhythmic strain. These results indicated loss of mitochondrial membrane potential in NOTCH1-KD HAoSMCs under rhythmic strain. The mitochondrial superoxide (MitoSOX) staining of NOTHC1-KD HAoSMCs was significantly higher than that of the WT group under rhythmic strain (Figure 5g–h), which indicated that ROS production was increased in NOTCH1-KD HAoSMCs under rhythmic strain conditions. As an energy source of cells synthesized by mitochondria, the ATP concentration was also evaluated. Rhythmic strain increased the ATP concentration in both WT and NOTHC1-KD HAoSMCs, but under rhythmic strain conditions, a lower ATP concentration was found in NOTCH1-KD HAoSMCs than in WT HAoSMCs (Figure 5i). No significant difference in the TMRM or MitoSOX fluorescence intensity or ATP concentration was found between WT and NOTCH1-KD HAoSMCs under static conditions, which indicated that NOTCH1 insufficiency did not affect mitochondrial function under static conditions. Taken together, these data indicated that NOTCH1 insufficiency could induce mitochondrial dysfunction in HAoSMCs by reducing mitochondrial fusion, inducing loss of mitochondrial membrane potential, increasing ROS production and generating insufficient ATP under rhythmic strain, and these effects are accompanied by an impaired contractile phenotype. These findings were consistent with previous studies showing that imbalanced mitochondrial dynamics could induce VSMC dedifferentiation into the synthetic phenotype (Salabei and Hill, 2013).
 
-## Drugs rescued the impairment of mitochondrial dynamics in NOTCH1-insufficient HAoSMCs from BAV-TAA
+### Drugs rescued the impairment of mitochondrial dynamics in NOTCH1-insufficient HAoSMCs from BAV-TAA
 
 To confirm whether the decreased contractile phenotype of NOTCH1-knockdown HAoSMCs can be rescued by inhibition of mitochondrial fission or activation of mitochondrial fusion, we evaluated the phenotypic alterations and mitochondrial dynamics of NOTCH1-insufficient HAoSMCs treated with a mitochondrial fission inhibitor (Mdivi-1) or mitochondrial fusion activators (leflunomide or teriflunomide) under rhythmic high-strain conditions. A schematic workflow of the drug screening experiments was shown in Figure 6a. Non-aneurysmal HAoSMCs with NOTCH1 knockdown and BAV-TAA HAoSMCs were used in drug testing experiments. The expression of MFN1 and/or MFN2 was reduced in NOTCH1-knockdown HAoSMCs of non-aneurysmal patient #1, #2, #3 and cells of BAV-TAA patient #2, #3 under rhythmic high-strain condition compared to static condition. Also, the cellular expression of SM22 and/or CNN1 was reduced in non-aneurysmal patient #1, #2 and BAV-TAA patient #1, #2, #3 under rhythmic high-strain condition compared to static condition. (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic workflow of the experimental design. After treatment with treated with Mdivi-1, leflunomide and teriflunomide on the chip models with (b) a NOTCH1-knockdown HAoSMC cell line (CRL1999), (c) NOTCH1-knockdown p-HAoSMCs isolated from non-diseased aortic tissues, (d) NOTCH1-knockdown p-HAoSMCs purchased from ATCC, and (e–g) p-HAoSMCs isolated from aortic tissues from three patients with BAV-TAA, quantification of the total band densities of the mitochondria-related proteins MFN1, MFN2, DRP-1, and MFF and the contractile phenotype proteins SM22 and CNN1 were normalized to the corresponding band densities of β-actin. All the data are expressed as the means ± SDs. n = 3, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, one-way ANOVA followed by Tukey’s post hoc test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69310/elife-69310-fig6-figsupp2-v2.jpg)
 
 In the model using CRL1999 HAoSMCs (Figure 6b), all three drugs enhanced MFN1 and MFN2 expression to different extents, and the greatest increase in MFN1 expression was obtained with Mdivi-1. In addition, the three drugs all decreased DRP1 expression to different extents but did not affect MFF expression. The three drugs also increased SM22 and CNN1 expression to different extents, and the maximal expression of SM22 and CNN1 was obtained with leflunomide. In p-HAoSMCs isolated from patients in the non-diseased group (Figure 6c), the three drugs increased MFN1 expression, but no significant difference was found compared with the control group. Teriflunomide significantly increased MFN2 and DRP1 expression and significantly decreased MFF expression. Although the effects of these drugs on mitochondrial dynamics were not desirable, all three drugs increased the expression of SM22 and CNN1 to different extents. In p-HAoSMCs (ATCC) (Figure 6d), none of the three drugs exerted an obvious effect on MFN1, MFN2, and DRP1 expression, and teriflunomide significantly decreased MFF expression. All three drugs increased the expression of SM22 and CNN1 to different extents.
 

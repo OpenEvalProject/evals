@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.44912.001 Penicillin and related antibiotics disrupt cell wall synthesis to induce bacteriolysis. Lysis in response to these drugs requires the activity of cell wall hydrolases called autolysins, but how penicillins misactivate these deadly enzymes has long remained unclear. Here, we show that alterations in surface polymers called teichoic acids (TAs) play a key role in penicillin-induced lysis of the Gram-positive pathogen Streptococcus pneumoniae ( Sp ). We find that during exponential growth, Sp cells primarily produce lipid-anchored TAs called lipoteichoic acids (LTAs) that bind and sequester the major autolysin LytA. However, penicillin-treatment or prolonged stationary phase growth triggers the degradation of a key LTA synthase, causing a switch to the production of wall-anchored TAs (WTAs). This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis. Similar changes in surface polymer assembly may underlie the mechanism of antibiotic- and/or growth phase-induced lysis for other important Gram-positive pathogens.
+Penicillin and related antibiotics disrupt cell wall synthesis to induce bacteriolysis. Lysis in response to these drugs requires the activity of cell wall hydrolases called autolysins, but how penicillins misactivate these deadly enzymes has long remained unclear. Here, we show that alterations in surface polymers called teichoic acids (TAs) play a key role in penicillin-induced lysis of the Gram-positive pathogen Streptococcus pneumoniae (Sp). We find that during exponential growth, Sp cells primarily produce lipid-anchored TAs called lipoteichoic acids (LTAs) that bind and sequester the major autolysin LytA. However, penicillin-treatment or prolonged stationary phase growth triggers the degradation of a key LTA synthase, causing a switch to the production of wall-anchored TAs (WTAs). This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis. Similar changes in surface polymer assembly may underlie the mechanism of antibiotic- and/or growth phase-induced lysis for other important Gram-positive pathogens.
 
 ## Introduction
 
@@ -32,17 +32,25 @@ In normally growing bacteria, PG hydrolases are thought to participate in a numb
 
 To better understand PG hydrolase regulation and penicillin-induced lysis, we used Sp as a model system. It has the advantage of requiring a single PG hydrolase called LytA for lysis-induction (Figure 1A and Figure 1—figure supplement 1) (Tomasz et al., 1970; Tomasz and Waks, 1975). The problem is therefore more genetically tractable in Sp than in other model organisms where multiple PG hydrolases are implicated in lysis-induction (Heidrich et al., 2001; Uehara et al., 2009; Vollmer et al., 2008). Another benefit of Sp is its propensity to lyse following prolonged growth in stationary phase (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975). Like penicillin-induced lysis, autolysis in stationary phase is LytA-dependent (Fernebro et al., 2004; Mellroth et al., 2012; Tomasz et al., 1970; Tomasz and Waks, 1975). This property of Sp cells enabled us to develop a genetic screen for LytA regulators. The screen revealed a key role for surface polymers called teichoic acids (TAs) in controlling LytA activity. TAs are major constituents of the cell surface in Gram-positive bacteria and are either lipid-anchored (lipoteichoic acids, LTAs) or wall-anchored (wall teichoic acids, WTAs) (Figure 1B) (Brown et al., 2013; Percy and Gründling, 2014). Our results indicate that Sp cells primarily produce LTAs during normal exponential growth, which bind and sequester LytA. However, entry into stationary phase and penicillin-treatment were both found to trigger the degradation of the Sp LTA synthase, causing a switch to the production of WTAs. This change allows LytA to associate with and degrade its cell wall substrate, thus promoting osmotic lysis. We propose that changes in surface polymer assembly may similarly underlie the mechanism of antibiotic-induced lysis for a number of other important Gram-positive pathogens.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig1-v2.jpg)
+
+**Figure 1.:** (A) The indicated strains were grown in THY at 37 ˚C in 5% CO2. At an OD600 of ~0.5, they were challenged with penicillin G (PenG) (0.5 μg/ml final). Growth was monitored every 30 min for 15 hr. (B) Schematic diagram of the cell envelope of Sp. The cell wall peptidoglycan (PG) (blue) contains Wall Teichoic Acid (WTA) polymers and the lipid bilayer contains Lipoteichoic Acid (LTA). The constituents of the repeating unit in LTAs and WTAs are indicated; Cho, choline; GlcNac, N-acetylglucosamine; Rbo, ribitol; ATTGal, 2-acetamido-4-amino-2,4,6-trideoxygalactose; Glc, glucose; Phos, phosphate. The following figure supplement is available for Figure 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Growth curves of the indicated strains at 37°C in 5% CO2. Measurements of culture OD600 were recorded approximately every 30 min for 15 hr. Samples were collected at the indicates time points (E, exponential; S, stationary; A, autolysis), normalized to an OD600 of 0.5 and analyzed by SDS-PAGE and immunoblotting using an anti-LytA antibody (LytA). LC (loading control) indicates a Ponceau S stain of the nitrocellulose membrane used for immunoblot analysis.
+
 ## Results
 
-## Identification of TacL as a potential LytA control factor
+### Identification of TacL as a potential LytA control factor
 
 Previous studies indicated that LytA protein levels remain constant during growth, and we have confirmed this result (Figure 1—figure supplement 1) (Fernebro et al., 2004; Henriques Normark and Normark, 2002; Mellroth et al., 2012). Based on this observation, we hypothesized that LytA activity is negatively regulated during normal exponential growth by an inhibitory factor(s). In this scenario, inhibition would be relieved upon entry into stationary phase or exposure to cell wall synthesis inhibitors triggering lysis. If correct, this hypothesis predicts that the putative LytA inhibitory factor(s) should be essential for growth in wild type (LytA+) cells but become non-essential in cells lacking LytA (∆lytA). Therefore, to identify the potential LytA inhibitor(s), we used transposon sequencing (Tn-Seq) to screen for Sp genes displaying the expected pattern of essentiality/non-essentiality. Transposon libraries were prepared in a wild-type strain D39 without its capsule (WT) and a derivative deleted for lytA (ΔlytA) (Fenton et al., 2016; Land and Winkler, 2011). When the insertion profiles were compared, we found that the gene tacL (SPD_1672) was virtually devoid of insertions in the WT library, but readily inactivated by insertions in the ΔlytA library (Figure 2A). To validate the Tn-Seq results, we constructed a TacL-depletion strain in which the sole copy of tacL was placed under control of a zinc-regulated promoter (ΔtacL PZn-tacL) (Eberhardt et al., 2009). When TacL was produced (+Zn), cells were viable regardless of their LytA status (Figure 2B). However, when TacL was depleted (-Zn), viability was severely compromised only in cells producing LytA (Figure 2B). Furthermore, TacL depletion during growth in liquid medium caused premature LytA-dependent autolysis in exponential phase (Figure 2C). Consistent with these findings, a high-throughput CRISPRi study in Sp cells showed that TacL depletion led to increased lysis in stationary phase and aberrant cell morphology (Liu et al., 2017). Thus, tacL has the genetic properties expected for a gene encoding a LytA inhibitor that is active during normal exponential growth.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig2-v2.jpg)
 
-**Figure 2.:** tacL can be inactivated in cells lacking lytA.(A) Transposon insertion profiles from the Tn-Seq screen. Mariner transposon libraries were generated in wild-type (WT) and ΔlytA mutant strains and insertion sites were mapped to the Sp genome using Illumina sequencing. The height of each line reflects the number of sequencing reads at each position. Note that transposon insertions in tacL were much more readily isolated in cells lacking lytA. (B) Spot dilutions of the indicated strains in the presence and absence of inducer (Zn). The indicated strains were grown to exponential phase, normalized for OD600 and serially diluted. Aliquots (5 μl) of each dilution were spotted onto TSAII 5% SB plates in the presence or absence of 100 µM ZnCl2. Plates were incubated at 37 ˚C in 5% CO2 and imaged. (C) Depletion of tacL results in growth arrest and lysis in exponential phase while its overexpression results in protection against growth-phase-dependent autolysis. Strains containing a zinc-inducible tacL allele (Pzn-tacL) were grown in THY to mid-exponential phase. Cultures were diluted into fresh THY to an OD600 of 0.025 in the presence or absence of 100 µM ZnCl2 and grown at 37 ˚C in 5% CO2. Growth was monitored by taking OD600 measurements approximately every 30 min for 15 hr.
+**Figure 2.:** (A) Transposon insertion profiles from the Tn-Seq screen. Mariner transposon libraries were generated in wild-type (WT) and ΔlytA mutant strains and insertion sites were mapped to the Sp genome using Illumina sequencing. The height of each line reflects the number of sequencing reads at each position. Note that transposon insertions in tacL were much more readily isolated in cells lacking lytA. (B) Spot dilutions of the indicated strains in the presence and absence of inducer (Zn). The indicated strains were grown to exponential phase, normalized for OD600 and serially diluted. Aliquots (5 μl) of each dilution were spotted onto TSAII 5% SB plates in the presence or absence of 100 µM ZnCl2. Plates were incubated at 37 ˚C in 5% CO2 and imaged. (C) Depletion of tacL results in growth arrest and lysis in exponential phase while its overexpression results in protection against growth-phase-dependent autolysis. Strains containing a zinc-inducible tacL allele (Pzn-tacL) were grown in THY to mid-exponential phase. Cultures were diluted into fresh THY to an OD600 of 0.025 in the presence or absence of 100 µM ZnCl2 and grown at 37 ˚C in 5% CO2. Growth was monitored by taking OD600 measurements approximately every 30 min for 15 hr.
 
-## TacL protects cells from extracellular LytA
+### TacL protects cells from extracellular LytA
 
 LytA lacks a discernible motif for protein secretion and the mechanism by which it is exported has yet to be defined (Díaz et al., 1989). Therefore, one possible way in which TacL could control the ability of LytA to cleave the cell wall is through the inhibition of LytA secretion during exponential growth. Such a model predicts that both TacL+ and TacL- cells should be equally sensitive to the addition of purified LytA. To test this possibility, recombinant LytA (rLytA) was purified from Escherichia coli (Figure 3A) and added to exponentially growing cultures of ΔlytA or ΔlytA ΔtacL cells (Figure 3B). As observed previously, addition of rLytA to ∆lytA (TacL+) cells had no impact on growth during exponential phase and only caused lysis in stationary phase (Figure 3B) (Fernebro et al., 2004; Mellroth et al., 2012). However, the addition of rLytA to ΔlytA ΔtacL cells led to rapid cell lysis during exponential growth (Figure 3B). We therefore conclude that TacL is required for the growth-phase-dependent control of LytA activity at a step after its export to the cell surface.
 
@@ -50,7 +58,7 @@ LytA lacks a discernible motif for protein secretion and the mechanism by which 
 
 **Figure 3.:** (A) Coomassie-stained gel of recombinant LytA (rLytA) purified from E. coli. Molecular weight markers (in kDa) are shown. (B) Growth curves of the indicated strains before and after the addition of 1 μg/ml rLytA. Cells lacking lytA (ΔlytA) or tacL and lytA (ΔlytA ΔtacL) were challenged with rLytA at an OD600 of ~0.2. In the absence of TacL, cells rapidly lyse after rLytA addition. By contrast and as reported previously, the ΔlytA (TacL+) strain only lyses in stationary phase in a manner similar to LytA+ cells (Fernebro et al., 2004; Mellroth et al., 2012).
 
-## TacL-dependent LTA biogenesis is antagonistic with WTA synthesis
+### TacL-dependent LTA biogenesis is antagonistic with WTA synthesis
 
 TacL is a polytopic membrane protein predicted to have a large extracellular loop domain (Figure 4A). It was originally named RafX because the gene encoding it is located within a locus involved in raffinose utilization (Wu et al., 2014). Initial studies indicated that TacL was required for proper teichoic acid biogenesis (Wu et al., 2014), but its role in the process was not clear due the unique way in which Sp cells synthesize these polymers. Unlike most firmicutes, WTA and LTA in Sp cells have identical main chains (Brown et al., 2013; Denapaite et al., 2012; Fischer et al., 1993; Gisch et al., 2013; Heß et al., 2017; Percy and Gründling, 2014). Furthermore, bioinformatic analysis indicates that Sp cells are likely to make WTAs and LTAs from a common precursor polymer linked to an undecaprenyl phosphate (Und-P) lipid carrier (Figure 4A) (Denapaite et al., 2012). To make WTAs, the polymer is thought to be transferred to the cell wall by LCP-type enzymes (Figure 4A) (Brown et al., 2013; Kawai et al., 2011; Percy and Gründling, 2014; Schaefer et al., 2017). A recent study using mass spectrometry found that TacL is likely to be the corresponding LTA synthase (Heß et al., 2017). It is thought to be responsible for transferring the TA polymer from Und-P to the glycolipid anchor diglucosyl-diacylglycerol (Glc2-DAG) to form LTAs (Figure 4A) and was therefore renamed TacL for teichoic acid ligase (Heß et al., 2017). Consistent with this assignment, HHPred analysis indicates that TacL shares remote similarity with O-antigen ligases (99.7% probability, E-value 5.1e-13) (Heß et al., 2017; Wu et al., 2014), enzymes from Gram-negative bacteria that carry out a similar reaction, the transfer of O-antigen glycan polymers from Und-P to a lipid A-core glycolipid acceptor (Kalynych et al., 2014).
 
@@ -60,7 +68,7 @@ TacL is a polytopic membrane protein predicted to have a large extracellular loo
 
 We confirmed a role for TacL in LTA biogenesis by measuring LTA levels in exponentially growing cells with or without TacL inactivation (Figure 4B). Membrane preparations from whole cell lysates were analyzed by SDS-PAGE followed by immunoblotting with commercially available antibodies specific for the phosphatidyl-choline (PCho) modifications found on the TAs of Sp cells (Denapaite et al., 2012; Fischer et al., 1993; Gisch et al., 2013; Percy and Gründling, 2014). As reported previously using this method, we observed a ladder-like banding pattern of PCho-containing material ranging from 10 to 15 kDa in TacL+ cells (Figure 4B) (Wu et al., 2014). As expected based on the recent mass spectrometry study, the signal for this material was dramatically reduced in the ∆tacL strain and was restored upon complementation with tacL expressed from an ectopic locus (Figure 4B) (Heß et al., 2017). Thus, our results are consistent with the detected material indeed being LTA and that TacL is required for its formation. In a parallel set of samples, we measured the effect of TacL inactivation on the production of WTAs, which were detected as alcian blue-silver stained polymers released from purified cell wall sacculi (Pollack and Neuhaus, 1994). Only a modest level of WTA material was produced in exponentially growing TacL+ cells (Figure 4B). However, TacL-defective cells had a striking increase in WTAs that was reduced back to near wild-type levels upon tacL complementation (Figure 4B). Our results thus provide additional support for the idea that TacL is the LTA ligase. Furthermore, the finding that WTAs increase when LTA synthesis is blocked suggests that the two pathways are antagonistic and are likely competing for the shared Und-P linked precursor (Figure 4A).
 
-## A switch from LTA to WTA synthesis occurs at the onset of autolysis
+### A switch from LTA to WTA synthesis occurs at the onset of autolysis
 
 Our results thus far indicate that loss of TacL function during exponential growth leads to a change in teichoic acid synthesis from LTA to WTA and the induction of LytA-dependent autolysis (Figures 2, 3 and 4). Connecting these two phenomena is that LytA not only has a cell wall cleaving amidase domain, but also possesses an array of six choline-binding domains (CBDs) that promote its association with PCho-modified teichoic acids (Fernández-Tornero et al., 2001; Li et al., 2015; Sandalova et al., 2016). Thus, we reasoned that the LytA-dependent lethality observed upon TacL depletion may result from a switch in LytA localization from LTAs to WTAs where the enzyme will have better access to its substrate to promote cell wall degradation and lysis.
 
@@ -76,7 +84,7 @@ We wondered whether the same change in teichoic acid production and LytA localiz
 
 **Figure 6.:** (A) Growth curves of the indicated strains before and after challenge with penicillin G (PenG) (0.5 μg/ml final). At the indicates time points (B, before PenG addition; A, after addition; L, lysis), samples from the lytA(H26A) strain were collected, normalized to an OD600 of 0.5 and processed as described in Materials and methods. The growth curve of WT treated with PenG was used as reference for the timing of lysis (B) Samples from (A) were analyzed to detect LytA(H26A) in whole cell lysates (cells), associated with protoplast membranes, or with cell wall sacculi. The cytoplasmic protein SigA was used as a control for protoplast integrity. The immunoblots were from the same membrane and exposure but were cropped to re-order the lanes for clarity. LTAs in the membrane fraction and WTA in the cell wall fraction were monitored by immunoblot and alcian blue-silver staining, respectively.
 
-## TAs are released from cells at the onset of autolysis
+### TAs are released from cells at the onset of autolysis
 
 The rapid disappearance of LTAs at the onset of autolysis suggests that in addition to the switch from LTA production to WTAs, other mechanisms are at work to remove existing LTA molecules from the membrane. Accordingly, Waks and Tomasz, 1978 previously observed the release of choline-containing TA polymers into the medium following treatment of Sp cells with cell wall synthesis inhibitors (Waks and Tomasz, 1978). To further investigate this phenomenon, cell membrane fractions and culture supernatants were harvested from LytA-defective cells before and during an autolysis time-course induced by either PenG treatment or stationary phase growth. As above, a WT (LytA+) strain was used as a reference to guide sample collection. In both cases, LTAs were detected in the membrane at early time points (E and B), but choline-containing material was absent from the supernatant (Figure 7). However, as autolysis progressed, an increase in choline-containing material in the supernatant was observed, while at late time points, LTAs in the membrane were barely detectable (Figure 7). Given their shared structure with WTAs (Gisch et al., 2013), it is not possible to definitively conclude that the released material is derived from LTAs. However, the coincidence of choline-containing polymers appearing in the medium with LTAs being lost from the membrane suggests that this material indeed reflects LTA release. Thus, in conjunction with the prior results of Waks and Tomasz, 1978, our results suggest that LTAs are released from cells during autolysis by an as yet unknown mechanism. Coupled with the switch in teichoic acid synthesis to favor WTAs over LTAs, LTA release would allow for the rapid depletion of LTAs and re-localization of LytA to WTAs where it can promote destruction of the wall matrix.
 
@@ -84,11 +92,23 @@ The rapid disappearance of LTAs at the onset of autolysis suggests that in addit
 
 **Figure 7.:** (A) Growth curve of the indicated strains cultured at 37 ˚C in 5% CO2. At the indicated time points (E, exponential; S, stationary; A, autolysis), samples from the ΔlytA mutant were collected, normalized to an OD600 of 0.5 and processed as described in Materials and methods. The WT growth curve was used as a reference for the timing of autolysis. (B) Samples from (A) were analyzed to detect LTA in membranes (Memb) or culture medium (Sup, supernatant) by immonoblot. (C) Growth curve of the indicated strains cultured at 37 ˚C in 5% CO2. At an OD600 of ~0.5 the cultures were challenged with penicillin G (PenG) (0.5 µg/ml final). At the indicated time points (B, before PenG addition; A, after addition; L, lysis), samples from the ∆lytA mutant were collected and normalized to an OD600 of 0.5. (D) Samples from (C) were analyzed to detect LTA in membranes (Memb) or supernatant (Sup) by immunoblot.
 
-## The autolytic switch is triggered by FtsH-dependent degradation of TacL
+### The autolytic switch is triggered by FtsH-dependent degradation of TacL
 
 We were next interested in determining how the switch in teichoic acid synthesis is initiated in response to autolytic conditions. Given that the change involves a loss of detectable LTAs, we suspected that TacL may be the primary regulatory target. As an initial test of this hypothesis, we monitored the effect of tacL overexpression (PZn-tacL) from an ectopic locus on autolysis induction. For both stationary-phase growth and penicillin treatment, tacL overexpression was found to prevent the induction of autolysis (Figure 8—figure supplement 1), suggesting that a reduction in TacL levels underlies the autolytic switch from LTA to WTA production.
 
 To investigate this possibility further, a functional FLAG-tagged derivative of TacL was generated and its steady-state levels were monitored in ΔlytA cells at different phases of growth or following penicillin treatment (Figure 8A and B, and Figure 8—figure supplement 2). A reproducible decrease in TacL-FLAG abundance was observed at time points corresponding to autolysis onset in a reference LytA+ strain (Figure 8A and B, and Figure 8—figure supplement 2). To determine whether this reduction in TacL-FLAG levels was caused by protease degradation, we monitored the half-life of TacL-FLAG following the inhibition of protein synthesis with chloramphenicol (Cm). The protein appeared to be relatively stable in exponential phase, but its half-life decreased significantly in late stationary phase or in response to penicillin treatment (Figure 8C and Figure 8—figure supplement 2C). We therefore conclude that TacL degradation is induced in response to conditions that trigger autolysis.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-v2.jpg)
+
+**Figure 8.:** (A) Growth curves of the indicated strains harboring a functional TacL-FLAG fusion as the sole source of TacL. At an OD600 of ~0.5 the cultures were challenged with penicillin G (PenG) (0.5 µg/ml final). At the indicated time points (B, before penG addition; A, after addition; L, lysis), samples from the ∆lytA and ∆ftsH∆lytA strains were collected and normalized to an OD600 of 0.5. Samples from a TacL+ ∆lytA strain were collected at the same time points. The growth curve of this strain was omitted from the figure for clarity. The growth curve of the TacL-FLAG LytA+ strain (WT) treated with PenG was used as reference for the timing of lysis. (B) Samples from (A) were processed as described in Materials and methods to detect TacL-FLAG and FtsH from whole cell lysates, LTA from membrane preparations, and WTAs released from purified cell wall sacculi. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (C) TacL-FLAG stability before and after PenG exposure. Wild-type Sp harboring TacL-FLAG was grown as in (A). Prior to PenG exposure (-PenG) or 2 hr after addition (+PenG), cultures were treated with chloramphenicol (Cm) (50 μg/ml final) to block translation. Samples were collected immediately before and 10, 20, 30 min after Cm addition and analyzed by SDS-PAGE and anti-FLAG immunoblotting to detect TacL. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (D) Transposon insertion profiles from a mariner transposon library generated in wild-type Sp and grown in the presence or absence of sub-inhibitory doses of penicillin G (PenG) or chloramphenicol (Cm). Transposon insertions in ftsH were significantly enriched (p<0.0001) in the presence of PenG compared to no drug or the Cm-treated control. The following figure supplements are available for Figure 8.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Growth curves of wild-type (WT) Sp and a strain harboring a zinc-inducible tacL allele (WT +tacL) Exponentially growing cultures were diluted into fresh THY at an OD600 of 0.025 in the presence of 100 µM ZnCl2 and incubated at 37°C in 5% CO2. (B) The same strains as in (A) were grown in THY in the presence of 100 µM ZnCl2 to an OD600 of 0.5 and then challenged with penicillin G (0.5 μg/ml final). Growth was monitored approximately every 30 min for 15 hr. Note that tacL overexpression blocks cell lysis in both conditions.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/44912/elife-44912-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Growth curves of the indicated strains harboring a functional TacL-FLAG fusion as the sole source of TacL. At the indicated time points (E, exponential phase; S, stationary phase; A, autolysis), samples from the ∆lytA and ∆ftsH ∆lytA strains were collected and normalized to an OD600 of 0.5. Samples from a TacL+ ∆lytA strain were collected at the same time points. The growth curve of this strain was omitted from the figure for clarity. The growth curve of the TacL-FLAG LytA+ strain (WT) was used as reference for the timing of autolysis. (B) Samples from (A) were processed as described in Materials and methods to detect TacL-FLAG and FtsH from whole cell lysates, LTA from membrane preparations, and WTAs released from purified cell wall sacculi. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading. (C) TacL-FLAG stability in exponential and stationary phases. Wild-type Sp harboring TacL-FLAG was grown as in (A). In exponential phase (E) or 2 hr after entry into stationary phase (S), cultures were treated with chloramphenicol (Cm) (50 μg/ml final) to block translation. Samples were collected immediately before and 10, 20, 30 min after Cm addition and analyzed by SDS-PAGE and anti-FLAG immunoblotting to detect TacL. A region of the nitrocellulose membrane used for immunoblot analysis was stained with Ponceau S (PonS) to control for loading.
 
 To identify the protease responsible for TacL degradation, we performed an additional Tn-seq screen. The rationale for the screen was that mutants unable to degrade TacL should be defective in the induction of autolysis and therefore more tolerant than WT cells to penicillin treatment. We used our original transposon library prepared in the WT strain and grew it either without drug or in the presence of a sub-lethal concentration of penicillin G that caused a mild growth defect without affecting viability. We then compared the transposon insertion profiles observed in the Tn-Seq data from these two conditions. A few genes were identified in which transposon insertions were significantly enriched in the penicillin treated condition versus the no drug or unrelated drug control (Figure 8D). One of these genes was ftsH, encoding a highly conserved ATP-dependent zinc metallopeptidase (Ito and Akiyama, 2005). FtsH has two transmembrane segments and a well-known role in the degradation of membrane protein substrates (Langklotz et al., 2012). We therefore focused on FtsH as a candidate for the protease targeting TacL.
 
@@ -114,63 +134,325 @@ TAs have been implicated in the control of PG hydrolases in other Gram-positive 
 
 ## Materials and methods
 
-## Strains, plasmids and routine growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Streptococcus  pneumoniae(Sp) D39 Δcps)</td>
+      <td>WT (Sp D39 Δcps)</td>
+      <td>Malcolm Winkler lab (Lanie et al., 2007)</td>
+      <td>Wildtype S. pneumoniae D39 Δcps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn001</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔbgaA::kan</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn002</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔbgaA::add9(spec)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn003</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔbgaA::tetM(tet)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn004</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔbgaA::cat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn005</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔbgaA::erm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn351</td>
+      <td>Fenton et al., 2016</td>
+      <td>ΔlytA::cat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>AKF_Spn704</td>
+      <td>This study</td>
+      <td>ΔlytA::erm</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn001</td>
+      <td>This study</td>
+      <td>ΔlytA::erm  ΔtacL::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn002</td>
+      <td>This study</td>
+      <td>ΔftsH::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn003</td>
+      <td>This study</td>
+      <td>ΔlytA::erm ΔftsH::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn004</td>
+      <td>This study</td>
+      <td>lytA(H26A), erm</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn005</td>
+      <td>This study</td>
+      <td>lytA(H26A), erm ΔtacL::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn006</td>
+      <td>This study</td>
+      <td>tacL-FLAG, spec</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn007</td>
+      <td>This study</td>
+      <td>tacL-FLAG, spec ΔftsH::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn008</td>
+      <td>This study</td>
+      <td>tacL-FLAG, spec ΔlytA::erm</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn009</td>
+      <td>This study</td>
+      <td>tacL-FLAG, spec ΔlytA::erm ΔftsH::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn010</td>
+      <td>This study</td>
+      <td>ΔbgaA::(PZn-tacL, tet)</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn011</td>
+      <td>This study</td>
+      <td>ΔbgaA::(PZn-tacL, tet) ΔlytA::erm</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn012</td>
+      <td>This study</td>
+      <td>ΔbgaA::(PZn-tacL, tet) ΔtacL::cat</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sp D39 Δcps)</td>
+      <td>JFK_Spn013</td>
+      <td>This study</td>
+      <td>ΔbgaA::(PZn-tacL, tet) ΔtacL::cat ΔlytA::erm</td>
+      <td>(see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli DH5a)</td>
+      <td>DH5a</td>
+      <td>Gibco BRL</td>
+      <td>F-hsdR17 Δ(argF-lacZ)U169 phoA glnV44 Φ80dlacZ Δ M15 gyrA96 recA1 endA1 thi-1 supE44 deoR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli BL21)</td>
+      <td>BL21</td>
+      <td>New England Biolabs</td>
+      <td>E. coli B F– ompT gal dcm lon hsdSB(rB–mB–) [malB+]K-12(λS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLEM023</td>
+      <td>Fenton et al., 2016</td>
+      <td>bgaA’::Pzn::MCS::tetM::bgaA’ bla</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a</td>
+      <td>Novagen</td>
+      <td>PT7, lacIq; vector used for protein expression</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMagellan6</td>
+      <td>Fenton et al., 2016</td>
+      <td>IRL(MmeI)::add9::IRR(MmeI) bla</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>‘pMalC9’</td>
+      <td>Fenton et al., 2016</td>
+      <td>MBP::Himar1 bla</td>
+      <td>plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFK_001</td>
+      <td>This study</td>
+      <td>tacL in pLEM023</td>
+      <td>plasmid (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFK_002</td>
+      <td>This study</td>
+      <td>lytA in pET24a</td>
+      <td>plasmid (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LytA (rabbit polyclonal)</td>
+      <td>This study</td>
+      <td></td>
+      <td>1:50000 (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FtsH (rabbit polyclonal)</td>
+      <td>Kotschwar et al., 2004</td>
+      <td></td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SigA (rabbit polyclonal)</td>
+      <td>Fujita, 2000</td>
+      <td></td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (TacL-FLAG; rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_796202</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LTA (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_1163630</td>
+      <td>1:1000; anti-Phosphocholine TEPC-15</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG-HRP</td>
+      <td>BioRad</td>
+      <td>RRID:AB_1102634</td>
+      <td>1:20000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, plasmids and routine growth conditions
 
 All Sp strains were derived from the unencapsulated D39 strain (D39 Δcps) (Lanie et al., 2007). Cells were grown in Todd Hewitt broth (Beckton Dickinson) supplemented with 0.5% yeast extract (THY) at 37°C in an atmosphere containing 5% CO2. Strains were grown on pre-poured tryptic soy agar 5% sheep blood plates (TSAII 5% sheep blood, Beckton Dickinson) with a 5 ml overlay of 1% nutrient broth (NB, Beckton Dickinson) agar containing the required additives or on TSA agar plates containing 5% defribrinated sheep blood (Northeast laboratory). Luria-Bertani (LB) broth and LB agar were used for E. coli. Antibiotic concentrations were used as previously described (Fenton et al., 2016). All strains, plasmids and oligonucleotides used in this study are provided in the key resources and the supplemental material 1, respectively. The D39 Δcps genotype (Δcps2A’-Δcps2H’) was excluded from derivative strains for clarity. All S. pneumoniae strains used in this study are derivatives of D39 Δcps. Cam = chloramphenicol, Erm = erythromycin, Kan = kanamycin, Spec = spectinomycin, Tet = tetracycline, Amp = ampicillin.
 
-## Transformation of Sp
+### Transformation of Sp
 
 Transformations were performed as previously described (Fenton et al., 2016). Briefly, cells in early exponential phase were back-diluted to an optical density at 600 nm (OD600) of 0.03 and competence was induced with 500 pg/ml competence stimulating peptide 1 (CSP-1; Anaspec), 0.2% BSA, and 1 mM CaCl2. Cells were transformed with 100 ng genomic DNA (gDNA) or plasmid DNA. Transformants were selected on TSAII overlay plates containing the appropriate additives.
 
-## Growth curves
+### Growth curves
 
 To monitor growth kinetics and autolysis, Sp cells in early exponential phase were diluted to an OD600 of 0.025 and grown to mid exponential phase in THY media containing the appropriate additives at 37°C in an atmosphere containing 5% CO2. These cells were used as the inoculum and were diluted to OD600 of 0.025 in THY with the indicated additives and growth was monitored by measuring OD600 every 30 min. The figures that report growth curves are representative of experiments that were performed on at least two independent samples.
 
-## Library generation and transposon insertion sequencing (Tn-seq)
+### Library generation and transposon insertion sequencing (Tn-seq)
 
 Tn-seq was performed as described previously (Fenton et al., 2016; Fenton et al., 2018). A total of two independently generated libraries were used in this study: one from D39 Δcps (WT) and another from its ΔlytA derivative. Briefly, genomic DNA with Magellan6 transposon insertions generated in vitro was transformed into competent Sp. To ensure that more than 50% of all TA sites had at least one transposon insertion,>300,000 transformants were recovered from each library and gDNA isolated. gDNAs were digested with MmeI, followed by adapter ligation. Transposon–chromosome junctions were amplified and sequenced on the Illumina HiSeq. 2500 platform using TruSeq Small RNA reagents (Tufts University Core Facility Genomics; RRID:SCR_016383). Reads were demultiplexed, trimmed, and transposon- insertion sites mapped onto the D39 genome using methods described previously (Fenton et al., 2016; Fenton et al., 2018). After normalization, a Mann Whitney U test was used to identify genomic regions with significant differences in transposon insertion profiles (Fenton et al., 2016; Fenton et al., 2018). Transposon insertion profiles were visualized using the Artemis genome browser (v10.2; RRID:SCR_004267) (Carver et al., 2012).
 
 Additional libraries were also generated by replating the D39 Δcps (WT) library in the presence and absence of 0.025 μg/ml penicillin G or 1.25 μg/ml chloroamphenicol. To maintain library complexity,>4,000,000 colonies were collected from each library and gDNA isolated and analyzed as described above.
 
-## Isolation and analysis of pneumococcal LTAs
+### Isolation and analysis of pneumococcal LTAs
 
 Sp strains were grown in THY at 37°C in an atmosphere containing 5% CO2 to the indicated growth phase (additives were added as indicated) and normalized to an OD600 of 0.5. 20 ml of the normalized culture was collected by centrifugation at 5000 g for 5 min and the cell pellet was washed twice with 2 ml SMM (0.5 M sucrose, 20 mM maleic acid, 20 MgCl2, pH 6.5) before resuspending it in 2 ml SMM. Protoplasts were generated by addition of 20 mg/ml lysozyme and 100 units mutanolysin (Sigma) and incubated at 37°C for 30 min. Complete protoplasting was monitored by light microscopy. Protoplasts were pelleted by centrifugation at 5000 g for 5 min and resuspended in 2 ml cold hypotonic buffer to lyse them (20 mM HEPES (Na+), pH 8.0, 100 mM NaCl, 1 mM dithiothreitol (DTT), 1 mM MgCl2, 1 mM CaCl2, 2X complete protease inhibitors (Roche), 6 μg/ml RNAse A, 6 μg/ml DNAse). Unbroken spheroplasts were removed by centrifugation 5,000 rpm for 10 min, and then the membrane fraction was collected by ultracentrifugation at 100,000 g for 1 hr at 4°C. The pellet was resuspended in 1 ml SDS sample buffer (200 mM Tris-HCL, pH 6.8, 40% glycerol, 2% SDS, 0.04% Coomassie Blue G-250), boiled for 10 min, and separated by Tris-tricine PAGE followed by immunoblotting with anti-PCho monoclonal antibody TEPC-15 (Sigma). To analyze TAs released into the culture medium, the supernatant from each sample was collected, flash-frozen using liquid nitrogen, and lyophilized. The lyophilized powder was then resuspended in 0.5 ml of distilled water. Samples were dialyzed against three 0.5 ml changes of distilled water followed by the addition of 0.5 ml of 2X SDS sample buffer (400 mM Tris-HCL, pH 6.8, 80% glycerol, 4% SDS, 0.08% Coomassie Blue G-250). To detect TAs, samples were analyzed as described above. The results in figures analyzing LTA levels are representative of experiments that were performed on at least two independently collected samples.
 
-## Isolation and analysis of pneumococcal WTAs
+### Isolation and analysis of pneumococcal WTAs
 
 Sp strains were grown in THY at 37°C in an atmosphere containing 5% CO2 to the indicated growth phase and normalized to an OD600 of 0.5. 20 ml of the normalized culture was collected by centrifugation at 7000 g for 5 min. The pellet was resuspended in 2 ml of buffer 1 (50 mM 2-(N-morpholino) ethanesulfonic acid (MES)), pH 6.5) and centrifuged at 7000 g for 5 min. The resulting pellet was resuspended in 2 ml of buffer 2 (50 mM MES, pH 6.5, 4% (w/v) SDS) and incubated in boiling water for 1 hr. After incubation, the cell wall sacculi were collected at 7000 g for 5 min and washed with 2 ml of buffer 2. The sample was transferred into a clean microfuge tube and centrifuged at 16000 rpm for 5 min. The pellet was then washed with 2 ml of buffer 2, followed by successive washes with 2 ml of buffer 3 (50 mM MES, pH 6.5, 2% (w/v) NaCl) and 2 ml of buffer 1. The samples were then centrifuged at 16000 rpm for 5 min, resuspended in 2 ml of buffer 4 (20 mM Tris-HCl, pH 8.0, 0.5% (w/v) SDS) supplemented with 2 μl of proteinase K (20 mg/ml), and incubated at 50°C for 4 hr with shaking (1000 rpm). After incubation, the pellet was collected by centrifugation and washed with 2 ml of buffer 3 followed by three washes with distilled water. The pellet was then collected by centrifugation and subjected to alkaline hydrolysis by resuspending the pellet in 0.5 ml of 1N sodium hydroxide solution and incubation at 25°C for 16 hr with shaking (1000 rpm). Insoluble cell wall material was pelleted by centrifugation (13000 rpm for 5 min) and the supernatants containing the extractable WTA were collected and combined 1:1 with 0.5 ml native sample buffer (62.5 mM Tris-HCl, pH 6.8, 40% glycerol, 0.01% bromophenol blue). To detect WTA, samples were analyzed by native PAGE followed by alcian-blue silver staining as described in Pollack et al. (Pollack and Neuhaus, 1994). The figures that report WTA levels are representative of experiments that were performed on at least two independently collected samples.
 
-## LytA subcellular fractionation
+### LytA subcellular fractionation
 
 Sp strains were grown in THY at 37°C in an atmosphere containing 5% CO2 to the indicated growth phase (PenG was added as indicated) and normalized to an OD600 of 0.5. 40 ml of the normalized culture was collected by centrifugation at 5000 g for 5 min. The cell pellet was washed twice with 2 ml SMM followed by resuspension with 2 ml of SMM and divided into two 1 ml samples (Samples A and B) and pelleted by centrifugation. Sample A (whole cell lysate) was lysed by resuspension in 500 μl of lysis buffer (see below), followed by addition of 500 μl SDS sample buffer containing 10% 2-mercaptoethanol and boiled for 10 min. To determine the amount of LytA that localized with the cell wall (WTA-bound) and the membrane (LTA-bound) fractions, sample B was resuspended in 500 μl SMM and protoplasts were generated by the addition of 20 mg/ml lysozyme and 100 units mutanolysin (Sigma) and incubated at 37°C for 30 min. Complete protoplasting was monitored by light microscopy. The protoplasts were then pelleted (Sample C) and the supernatant containing the cell wall (Sample D) was collected. 500 μl of SDS-sample buffer containing 10% 2-mercaptoethanol was then added to sample D and boiled for 10 min to release WTA-bound LytA. To release LytA from membrane-bound LTA, sample C was incubated with 500 μl SMM supplemented with 2% choline chloride (w/v) for 30 min at 25°C with gentle shaking. The protoplasts were then pelleted by centrifugation, and the supernatant containing LytA was collected. 500 μl of SDS-sample buffer containing 10% 2-mercaptoethanol was added to the supernatant fraction and then boiled for 10 min. Samples A, C, and D were analyzed by SDS-PAGE followed by immunoblotting with anti-LytA and anti-sigA antisera. WTAs in sample D were analyzed by alcian-silver blue staining. LTAs in sample C were analyzed by immunoblot using anti-PCho monoclonal antibody TEPC-15 (Sigma). The figures that report LytA levels are representative of experiments that were performed on at least two independently collected samples.
 
-## Measurement of TacL-FLAG steady-state level
+### Measurement of TacL-FLAG steady-state level
 
 Sp strains were grown in THY at 37°C in an atmosphere containing 5% CO2 to the indicated growth phase (PenG was added as indicated). Cultures were normalized to an OD600 of 0.5 and 5 ml of each were harvested immediately before and 10, 20, 30 min after addition of chloramphenicol (50 μg/ml final concentration) to block translation. The cultures were maintained at 37°C for the duration of the experiment. Samples were then analyzed by SDS-PAGE and immunoblotting using anti-FLAG polyclonal antibody (Sigma). The figures that report TacL-FLAG levels are representative of experiments that were performed on at least two independently collected samples.
 
-## Recombinant LytA (rLytA) purification
+### Recombinant LytA (rLytA) purification
 
 Recombinant LytA was produced in E. coli BL21(DE3) containing the pET24a-lytA expression vector. Cells were grown in LB supplemented with 50 ug/ml kanamycin at 37°C with vigorous agitation and lytA expression was induced when cells reached an OD600 of 0.5 with 1 mM IPTG for 2 hr at 37°C. Cells were collected by centrifugation and stored overnight at −20°C. The cell pellets were resuspended in E. coli lysis buffer (20 mM Tris, pH 7.5, 500 mM NaCl, DNase 200 μg/ml, and 2X complete protease inhibitors (Roche)). The cell suspension was then lysed by two passages through a cell disruptor (Constant systems Ltd.) at 25000 psi and unbroken cells were removed by centrifugation. The supernatant was then passed over a DEAE cellulose column (Sigma). After washing with 20 column volumes of wash buffer (20 mM NaPO4, 1.5M NaCl, pH 7), LytA was eluted with two column volumes of wash buffer supplemented with 140 mM choline chloride. Protein-containing fractions were pooled and dialyzed against 20 mM Tris, pH 7.5, 150 mM NaCl, 5 mM choline chloride and 10% glycerol and flash-frozen in liquid N2 and stored at −80 ˚C.
 
-## Antisera and immunoblot analysis
+### Antisera and immunoblot analysis
 
 Sp cultures were normalized to an OD600 of 0.5 and 5 ml harvested by centrifugation. Cell pellets were resuspended in 100 ul of lysis buffer (20 mM Tris pH 7.5, 10 mM EDTA, 1 mg/ml lysozyme, 100 units mutanolysin (Sigma), 10 μg/ml DNase I, 100 μg/ml RNase A, and 2X complete protease inhibitors (Roche Applied Sciences) and incubation at 37°C for 10 min. Equal volume of SDS sample buffer (100 μl, 0.25 M Tris pH 6.8, 4% SDS, 20% glycerol, 10 mM EDTA) containing 10% 2-mercaptoethanol was added. Proteins were separated by SDS-PAGE, electroblotted onto nitrocellulose membrane and blocked in 5% nonfat milk in phosphate-buffered saline (PBS)−0.5% Tween-20. The blocked membranes were probed with anti-LytA (1:50,000), B. subtilis anti-FtsH (1:10,000) (Kotschwar et al., 2004), B. subtilis anti-SigA (Fujita, 2000) (1,10,000), anti-FLAG (Sigma; RRID:AB:796202) (1:1,000), and anti-PCho TEPC-15 (Sigma; RRID:AB_1163630) (1:1,000) diluted into 1% nonfat milk in 1X PBS-0.05% Tween-20. Primary antibodies were detected using horseradish peroxidase-conjugated goat, anti-rabbit IgG (1:20,000, BioRad; RRDID:AB_1102634) and the Western Lightning reagent kit as described by the manufacturer (PerkinElmer). Chemiluminescence was imaged on a FluorChem R system (ProteinSimple).
 
-## Strain construction
+### Strain construction
 
-## Sp deletion strains
+#### Sp deletion strains
 
 All Sp deletion strains were generated using linear PCR fragments as described in Fenton et al. (2016) are listed in Supplementary file 1 (Fenton et al., 2016). Briefly, regions of approximately 1 kb flanking each gene were amplified, and an antibiotic resistance cassette placed between them using isothermal assembly. Assembled PCR products were transformed directly into Sp as described above. In all cases, deletion primers were given the name: ‘gene name’_5FLANK_F/R for 5′ regions and ‘gene name’_3FLANK_F/R for 3′ regions. Antibiotic markers were amplified from ΔbgaA::antibiotic cassette (bga gene disrupted with an antibiotic cassette) strains using the AB_Marker_F/R primers. A full list of primer sequences can be found in the Supplementary file 1. Extracted gDNA from deletion strains was confirmed by diagnostic PCR using the AntibioticMarker_R primer in conjunction with a primer binding ∼200 bp 5′ of the disrupted gene; these primers were given the typical name: ‘gene name’_Seq_F. Confirmed gDNAs of single gene deletions were diluted to 20 ng/μl and used for the construction of multiple knockout strains. For strains containing multiple deletions and construct integrations, transformants were verified by diagnostic re-streaking on media containing the proper antibiotics. When needed, each construct was confirmed by diagnostic PCR and/or sequencing.
 
-## Pzn-tacL
+#### Pzn-tacL
 
 The tacL ORF, with its native RBS, was amplified using primers tacL_F_nativeRBS_XhoI and tacL_R_BamHI. The primers introduced XhoI and BamHI sites used for cloning into pLEM023 cut with the same enzymes, resulting in plasmid pJFK001. The plasmid was sequenced and used to transform strain D39 Δcps Δbga::kan. Integration into the bga locus was confirmed by antibiotic marker replacement and PCR using the BgaA_FLANK_F primer. gDNA from the resulting strain was prepared and then used to transform the appropriate Sp strains.
 
-## tacL-FLAG
+#### tacL-FLAG
 
 The tacL ORF, including its native promoter and RBS and a C-terminal FLAG sequence, was generated by isothermal assembly from 3 PCR products: 1) a PCR product containing an upstream region of tacL and the tacL ORF (including a C-terminal FLAG sequence) amplified with oligos tacL_5F_F and tacL_FLAG; 2) a PCR product containing a Spec cassette amplified with oligos AB_Marker_FLAG_F and AB_Marker_R; and 3) a PCR product containing a downstream region of tacL amplified with oligos tacL_3F_F and tacL_3F_R. The assembled product was used to transform strain D39 Δcps ΔlytA::erm ΔtacL::cat. Integration into the ΔtacL::cat locus was confirmed by antibiotic marker replacement and PCR, sequencing, and immunoblot analysis. gDNA from the resulting strain was prepared and then used to transform the appropriate S. pneumoniae strains.
 
-## lytA-H26A
+#### lytA-H26A
 
 The lytA ORF, including its native promoter and RBS and the H26A mutation, was generated by isothermal from 4 PCR products: 1) a PCR product containing an upstream region of lytA and the H26A mutation amplified with oligos LytA_5F_F and LytA_H26A_R; 2) a PCR product containing the LytA-H26A mutation and the 3’ end of lytA using oligos LytA_H26A_F and LytA_ABMarkerF_R; 3) a erythromycin cassette amplified with oligos AB_Marker_ F and AB_Marker_R; and 4) a PCR product containing a downstream region of lytA amplified with oligos lytA_3F_F_AB_Marker_R and lytA_3F_R. The assembled product was used to transform strain D39 Δcps ΔlytA::erm. Integration into the ΔlytA::cat locus was confirmed by antibiotic marker replacement and PCR, sequencing, and immunoblot analysis. gDNA from the resulting strain was prepared and then used to transform the appropriate Sp strains. pET24a-lytA (pJFK002)
 

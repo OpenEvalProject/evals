@@ -39,35 +39,87 @@ Organic electrochemical transistor (OECT) has emerged as a promising transducer 
 
 ## Results
 
-## Working principle of OECT-array for NT detection
+### Working principle of OECT-array for NT detection
 
-Our device is based on a miniaturized microarray of OECTs (OECT-array) on a 200 μm thick polyethylene terephthalate (PET) substrate. Each functional unit consists of a platinum GATE (Pt-GATE) electrode and a conductive poly(3,4-ethylenedi-oxythiophene):poly(styrene-sulfonate) (PEDOT:PSS) film that bridges the gold SOURCE and DRAIN electrodes (Figure 1a). When an OECT-array was engaged in a biological electrolyte, some molecules (e.g., CA-NTs; Figure 1b) could undergo electro-oxidation reaction on the surface of the Pt-GATE electrode. In this process, the catechol groups of CA-NT molecules are oxidized into quinone with the release of two electrons, which are transferred to the GATE to generate a Faradic current, decrease the potential drop at the GATE/electrolyte interface, and subsequently increase the effective GATE voltage Vg-eff, as described by:(1)ΔVg−eff∝2.30(1+γ)κT2qlog[C],where γ is the ratio between the volumetric capacitance of the PEDOT:PSS active channel (Cvolumetric) and the capacitance of the GATE-electrolyte interface (CG-E) (Figure 1c); k is the Boltzmann constant; T is the absolute temperature; q is the charge of an electron; [C] is the concentration of the reactive molecules released into the biological solution (Tang et al., 2011a). Notably, Equation (1) is normally applicable in a relatively high-concentration regime; For lower concentrations of analyst, we can use an empirical relationship given by Zhang et al. (2014):(2)ΔVg−eff=A×[C]β,where A and β are constants determined by fitting our experimental data.
+Our device is based on a miniaturized microarray of OECTs (OECT-array) on a 200 μm thick polyethylene terephthalate (PET) substrate. Each functional unit consists of a platinum GATE (Pt-GATE) electrode and a conductive poly(3,4-ethylenedi-oxythiophene):poly(styrene-sulfonate) (PEDOT:PSS) film that bridges the gold SOURCE and DRAIN electrodes (Figure 1a). When an OECT-array was engaged in a biological electrolyte, some molecules (e.g., CA-NTs; Figure 1b) could undergo electro-oxidation reaction on the surface of the Pt-GATE electrode. In this process, the catechol groups of CA-NT molecules are oxidized into quinone with the release of two electrons, which are transferred to the GATE to generate a Faradic current, decrease the potential drop at the GATE/electrolyte interface, and subsequently increase the effective GATE voltage Vg-eff, as described by:
+
+$$
+ΔV_{g−eff}∝2.30(1+\gamma)\frac{κT}{2q}log[C],
+$$
+
+where γ is the ratio between the volumetric capacitance of the PEDOT:PSS active channel (Cvolumetric) and the capacitance of the GATE-electrolyte interface (CG-E) (Figure 1c); k is the Boltzmann constant; T is the absolute temperature; q is the charge of an electron; [C] is the concentration of the reactive molecules released into the biological solution (Tang et al., 2011a). Notably, Equation (1) is normally applicable in a relatively high-concentration regime; For lower concentrations of analyst, we can use an empirical relationship given by Zhang et al. (2014):
+
+$$
+ΔV_{g−eff}=A\times[C]^{\beta},
+$$
+
+where A and β are constants determined by fitting our experimental data.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig1-v2.jpg)
 
 **Figure 1.:** (a) Systematic diagram of using the OECT for monitoring neurotransmitter release. (b) Illustration of CA-NT’s electro-oxidation reaction on the surface of the Pt-GATE electrode. (c) Diagram showing the working principle of an OECT device. Cvolumetric and CG-E denotes the volumetric capacitance across the PEDOT:PSS active layer and the capacitance between the GATE electrode and the electrolyte respectively. Vvolumetric and VG-E denotes voltage across the active PEDOT:PSS layer and between the GATE electrode and the electrolyte respectively.
 
-## Electrical characterization of the OECT device
+### Electrical characterization of the OECT device
 
 To accommodate an easy implantation in the brain of a living animal, the OECT-array was designed and fabricated into a slim blade shape (~1 mm wide,~15 mm long, and ~200 μm thick) with a tapering tip. Four sets of functional OECT units were integrated at the top 5 mm of a device, each spaced by 1.2 mm (Figure 2a, also see Figure 2—figure supplement 1). The Pt-GATE and the PEDOT:PSS channel were exposed to the biological environment and all the rest area was insulated by a micropatterned layer of SU-8 photoresist. In the electrical characterization, a dual channel sourcemeter was used to provide the GATE voltage between the Pt-GATE and the SOURCE electrode (VGS), and the drain voltage across the active channel (VDS, the voltage between the DRAIN and the SOURCE electrode); the channel currents running through the DRAIN and the SOURCE electrode (IDS) was monitored (Figure 2b). A transfer curve (VGS vs. IDS) and the corresponding transconductance (gm) of a functional OECT-unit in phosphate-buffered saline (PBS) were firstly acquired (also see Figure 2—figure supplement 2). The OECT-array was then characterized for its capability to detect the release of CA-NTs. Specific biological molecules were manually added to the electrolyte environment to mimic a pulsed release. In solutions (e.g., PBS) that are clear of any active background molecules, the detection limit can reach as low as 1 nM for pulsed release of dopamine, and was relatively consistent for different types of CA-NTs, including noradrenaline and adrenaline (Figure 2—figure supplement 2). In the artificial cerebral spinal fluid (ACSF) solution containing a high level of interfering background molecules (e.g., 1.28 mM ascorbate) that mimics the brain extracellular environment (Mo and Ogorevc, 2001), the OECT-array still showed obvious responses to the fluctuation of CA-NT concentration at 30 nM (Figure 2c). For quantitative analysis, the recorded IDS fluctuation was converted to the change of the effective GATE voltage (ΔVg-eff) using the I-V transfer characterization for each independent device. The ΔVg-eff was further calibrated to the fluctuation of dopamine concentration in ACSF over a wide range of concentration values (30 nM ~ 0.1 mM), suggesting an extremely good dynamic range of the OECT-array for detecting CA-NTs, and the data could be fitted well with Equation (2) (Figure 2d).
 
-## In vivo detection of CA-NTs using the OECT-array
+![Figure 2.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig2-v2.jpg)
+
+**Figure 2.:** (a) Photographs showing the overall (left), enlarged (middle) and bent view of the flexible OECT-array. Scale bar indicates 5 mm in left panel and 200 μm in the middle panel. (b) Wiring diagram showing the working setup of an OECT-array. (c) Ex vivo recording of IDS changes in response to artificially added dopamine to ACSF containing a high level of ascorbate acid (1.28 mM; VDS = 0.06 V; VGS = 0.6 V). (d) The calibration curve showing the relationship between the measured ΔVg-eff and changes of dopamine concentrations, n = 3, error bars indicate standard error. The dash line shows linear fitting of the data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Hchannel = 10 μm, denoting the height of the exposed PEDOT:PSS channel (distance between the SOURCE and DRAIN electrode connected with the channel). Wchannel = 40 μm, denoting the width of the exposed PEDOT:PSS channel (width of the SOURCE and DRAIN electrode connected with the channel). Hgate = 800 μm, denoting the height of the GATE electrode exposed in the patterned SU-8 insulation layer. Wgate = 600 μm, denoting the width of the GATE electrode exposed in the patterned insulation layer. Dunit = 1,200 μm, denoting the distance between the adjacent OECT-units.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Representative IDS curve (black) and corresponding transconductance (red) curve recorded from an OECT-device in PBS. (b–f) Response of an OECT-device to concentration change of different neurotransmitters, including dopamine (b), adrenaline (c), noradrenaline (d), γ-aminobutyric acid (GABA; e) and glutamate (f) as characterized in PBS. n = 3, error bars indicate standard error.
+
+### In vivo detection of CA-NTs using the OECT-array
 
 We next examined the feasibility of using the OECT-array to detect the release of NTs, especially dopamine, in the brain of a living animal. An OECT-array was implanted to the VTA (−5.6 mm A/P, 0.8 mm M/L, 8 mm below dura) of an anesthetized rat using a stereotactic apparatus (Figure 3a). This region was selected because it is one of the main regions involved in dopaminergic signalling in a mammalian brain, mediating reward- and reinforcement-related behaviors (Fields et al., 2007). In parallel, a tungsten electrode was inserted to the medial forebrain bundle (MFB; −1.8 mm A/P, 2 mm M/L, 8 mm below dura) to evoke somatodendritic release of dopamine in VTA (Kita et al., 2009). Another tungsten electrode were bundled with the OECT-array for confirmative electrical recording (Figure 3b). Proper positioning of the OECT-array in VTA was confirmed by the spontaneous firing pattern. After being implanted to a rat brain, the VGS-IDS transfer curve of the OECT-array was firstly acquired, and the derived transconductance curve was found to overlap well with the characterization acquired in ACSF (Figure 3c, also see Figure 3—figure supplement 1), suggesting a stable device performance in brain tissues and the validity of the ex vivo calibration results (Figure 2d). Upon electrical stimulation (200 μA, 2 ms pulse width) in the MFB, the IDS of the 1st OECT-unit immediately showed a downward fluctuation, indicating the successful detection of a transient dopamine release. The release intensity was observed to linearly associate with the number of electrical pulses delivered to MFB (Figure 3d,e). When the stimulation sequence ramped from 1 to 100 electrical pulses, the amplitude of dopamine release in the VTA (as a result of transient release) rose from 36.13 ± 11.95 to 356.05 ± 52.07 nM (Figure 3e). When the stimulation electrode was moved out of the MFB to an irrelevant region (−1.8 mm A/P, 2 mm M/L, 3.5 mm below dura), even a very strong stimulation failed to induce any dopamine release. These results proved the basic feasibility of using the OECT for reliable and real-time detection of NT release in a mammalian brain.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig3-v2.jpg)
+
+**Figure 3.:** (a) Schematic diagram (upper) and surgical photogram (lower) of the experimental setup. The 1st unit (orange) of an OECT-array was implanted to VTA to monitor somatodendritic dopamine release evoked by electrical stimulation in MFB. (b) Front (upper) and side (lower) view of the device bundle containing an OECT-array and a recording tungsten electrode. Scale bar, 1 mm. (c) Representative transfer (black) and transconductance (red) curve of an OECT device placed ex vivo in the ACSF (upper; VDS = 0.06V; VGS = 0.6V) or in vivo in a rat brain (lower; VDS = 0.06V; VGS = 0.6V). (d) The IDS recording (left) from an OECT-unit in the VTA in response to neural stimulation in MFB using different number of electrical pulses. The corresponding measurements of dopamine release from multiple trials were shown in the right boxplot. The whisker range is 1 ~ 99%, and each box show 25, 50% and 75% percentile of the data collected from three animals. For the control experiments, the stimulation was made off the MFB. (e) The correlation between the intensity of dopamine release in VTA and the number of electrical pulses in MFB, n = 3, error bars indicate standard error. The dash line shows linear fitting of the data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Raw transfer curve (VDS = 0.06 V) in brain (black) and ACSF (red). (b) Output characterization upon different VGS (color-coded) in PBS.
+
 In another scenario, NTs are released at axonal terminals originated from the far away somata for signal transmission. We then examined the possibility of using the OECT-array to monitor dopamine release at remote axonal terminals after a long-range projection. Specifically, we focused on the mesolimbic pathway, in which the projection of dopaminergic neurons connects VTA and NAc (Garris et al., 1999). Accordingly, the OECT-array was implanted in the NAc (1.2 mm A/P, 1.4 mm M/L, 8.4 mm below dura), and a tungsten electrode was placed in the VTA for neural stimulation (Figure 4a, also see Figure 4—figure supplement 1). The surgical tracks in these two regions indicated the precise placement of the devices. Activation of relevant dopamine neurons was later confirmed by immunostaining for tyrosine hydroxylase (TH) and c-Fos in these cells (Figure 4b). In VTA, the majority of TH+ staining was observed to be on neuron somata; however, in NAc, the TH+ staining was mostly punctuated, suggesting an enrichment of dopaminergic axonal terminals in this region (Figure 4b). Before any electrochemical measurement, the polysynaptic connection between these two regions was firstly verified by electrical recording, which showed a clear temporal synchronization of spiking activity for neurons in the VTA and the NAc (Figure 4—figure supplement 2). To evoke dopamine release along the mesolimbic pathway, a 200 μA electrical stimulus (50 Hz, 2 ms pulse width, 50 pulses) was applied in the VTA to activate the dopaminergic neurons. Concurrently, the signals were transmitted to the NAc and monitored by the OECT-array. From the 1st OECT-unit placed in the NAc, a significant downward fluctuation of the IDS was recorded by the OECT-array (Figure 4c), and accordingly the evoked dopamine release was significantly higher than that of the control groups, in which the placement of the stimulation electrode and the recording OECT-unit were not paired on the dopaminergic pathway (Figure 4d). Notably, we found that the evoked dopamine release was frequency dependent, and a 50 Hz stimulation in the VTA induced the most significant changes (Figure 4e), which echoes a previous study that reported varying efficiency to evoke dopamine release by stimulating VTA using electrical signals of different frequencies (Addy et al., 2010). We then compared simultaneous recording from multiple OECT-units. As the placement of unit two was already away from the center of NAc, the recorded dopamine release was significantly lower than that from unit 1 (Figure 4f). These results demonstrated sensitive monitoring of NT release by the OECT-array at the remote axon projection terminals, and showed a potential for mapping neuronal electrochemical events by the array of multiple OECT-units on a single device.
 
-## Mapping across different dopaminergic pathways
+![Figure 4.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic diagram of using an OECT-array to map dopamine release around NAc region in response to neural stimulation of VTA. (b) Immunostaining of brain tissues in NAc (upper) or VTA (lower) after the electrochemical measurements. The NAc brain slices were stained for dopaminergic axon terminals (TH+, red) and cell nuclei (DAPI, cyan); the VTA brain slices were stained for dopaminergic neurons (TH+, red) and neural activation marker (c-Fos+, green). The implantation track of the OECT-array (in NAc) and the stimulation electrode (in VTA) were indicated by the dashed lines. Scale bar, 100 μm. (c) The IDS recorded from the OECT-unit placed in NAc in response to electrical stimulation of VTA (2 ms pulse width, 50 Hz, 50 pulses; VDS = 0.05V; VGS = 0.65V). The gray curves are the raw IDS recording from multiple VTA-stimulation trials, the solid red curve shows the average of all 34 trials, and the red shade indicates the range of standard error. (d) Quantitative measurements of dopamine release in NAc in response to VTA-stimulation, n = 3, * indicates p<0.05 by student t-test. (e) Frequency-dependent dopamine release in the NAc as evoked by VTA stimulation (2 ms pulse width, 1 s duration, 30, 50, or 100 Hz), n = 3. (f) Comparison of dopamine release simultaneously measured by the 1st (inside NAc) and the 2nd (outside NAc) OECT-unit in response to VTA-stimulation (2 ms pulse width, 50 Hz, 1 s duration), n = 8, ** indicates p<0.005 by student t-test. For panel d-f, error bars indicate standard error.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Nissl blue staining of the coronal section of NAc region showing the surgical track of an OECT-array (left) and a tungsten electrode (right) after an experiment. Slice thickness, 50 μm. Scale bar, 1 mm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Electrophysiological recording in parallel with dopamine monitoring in NAc upon VTA-stimulation. The raster plot (upper) and post-stimulation time histogram (lower) in VTA (a) and NAc (b) upon electrical stimulation in VTA. Data from 38 trials were shown.
+
+### Mapping across different dopaminergic pathways
 
 Activation of VTA/SNc complex simultaneously evokes dopamine release in NAc and CPu via mesolimbic and nigrostriatal pathways, respectively (Garris and Wightman, 1994). Our OECT-array provides the opportunity to simultaneously characterize the dopamine releasing profile across the two pathways, which cannot be precisely accessed by existing methods (Schwerdt et al., 2017). For each OECT-unit, the size of GATE electrode was 0.48 mm2 and four of them (on one OECT-array) were sufficient to cover brain locations spanning from NAc to different parts of CPu (Garris et al., 1999; Phillips et al., 2003). In this experiment, the OECT-array was inserted into the striatum with an angle of 14o between the device and the dorsal-ventral axis. In this way, the 1st OECT-unit was placed in the NAc region, and the 3rd and 4th OECT units were placed in the lower and upper part of CPu (Figure 5a, specific coordinates provided in Materials and methods). As the 2nd OECT-unit was in the transition region between NAc and CPu, signals were not taken from this unit.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig5-v2.jpg)
 
-**Figure 5.:** (a) Immunohistochemical staining for TH in the CPu and the NAc after an electrochemical measurement. The surgical track of the OECT-array was indicated by the dashed box. The location of each OECT-unit was denoted by dashed lines. Scale bar, 1 mm. (b) Immunohistochemical staining for TH in the VTA and SNc. The surgerical tracks of the stimulation electrodes in VTA or SNc were indicated by dashed boxes. Scale bar, 1 mm. (c) Quantitative analysis of dopamine release in NAc and different parts of CPu simultaneously measured by multiple OECT-units upon electrical stimulation of the mesolimbic (in VTA) or the nigrostriatal (in SNc) pathways. n = 10, the error bars indicate error, ** indicates p<0.005 by student t-test, n.s. stands for ‘not significant’.Figure 5—source data 1.
+**Figure 5.:** (a) Immunohistochemical staining for TH in the CPu and the NAc after an electrochemical measurement. The surgical track of the OECT-array was indicated by the dashed box. The location of each OECT-unit was denoted by dashed lines. Scale bar, 1 mm. (b) Immunohistochemical staining for TH in the VTA and SNc. The surgerical tracks of the stimulation electrodes in VTA or SNc were indicated by dashed boxes. Scale bar, 1 mm. (c) Quantitative analysis of dopamine release in NAc and different parts of CPu simultaneously measured by multiple OECT-units upon electrical stimulation of the mesolimbic (in VTA) or the nigrostriatal (in SNc) pathways. n = 10, the error bars indicate error, ** indicates p<0.005 by student t-test, n.s. stands for ‘not significant’.
 
 To specifically activate the mesolimbic pathway or nigrostriatal pathway, we delivered electrical stimulation to either VTA (−5.3 mm A/P, 0.8 mm M/L, 7.9 ~ 8.4 mm below dura) or SNc (−5.3 mm A/P, 2 mm M/L, 7.5 ~ 7.9 mm below dura) (Figure 5b), and investigated the corresponding dopamine release pattern in the striatum. We found that either VTA- or SNc-stimulation could evoke significant dopamine release in the large striatal region covered by the OECT-array (Figure 5c), which was not observed if the electrical stimulation was delivered to an irrelevant site (−5.3 mm A/P, 0.8 mm M/L, 4.9 mm below dura) (Garris and Wightman, 1994). Switching the stimulation site from VTA to SNc only affected the response in the NAc, but not in other striatal regions, suggesting a primary involvement of NAc in the mesolimbic pathway. However, it is interesting to find that SNc-stimulation also induced some dopamine release in the NAc, suggesting a possible cross-talk between the mesolimbic and the nigrostriatal pathways. Such connection between the two pathways was further evidenced by a similar response in the CPu (recorded by unit 3 and 4) to VTA- or SNc-stimulation.
 
 Based on the dopamine mapping in the striatum, we then hypothesized a mutual innervation mechanism between VTA and SNc that contributes to the cross-talk between the mesolimbic and the nigrostriatal pathways. To validate this hypothesis, we firstly conducted electrophysiology recording to probe dopamine neuron activity in the SNc in response to VTA-stimulation or vice versa, and confirmed a reciprocal excitation between these two nuclei (Figure 6—figure supplement 1). Then, we used a blade (~200 μm thick,~1.3 mm wide) to make a mechanical lesion between the VTA and the SNc, which physically disconnected the two regions (Figure 6a,b). Such disruption has differential effects on dopamine release in different parts of striatum. In the NAc, cutting off VTA-SNc connections lowered the dopamine release in response to VTA-activation, and substantially reduced the response under SNc-stimulation (Figure 6c), suggesting that SNc is involved in mesolimbic signalling via the reciprocal connection between VTA and SNc. Similarly, in the lower part of CPu, we observed a reduction of dopamine release under either VTA- or SNc-stimulation after the physical lesion (Figure 6d), suggesting that VTA also partially affects nigrostriatal pathway through the mutual innervation between VTA and SNc. However, in the upper part of CPu, we found that dissociation of VTA and SNc had almost no effects on either VTA- or SNc-stimulation induced response (Figure 6e). This observation indicated that the VTA-SNc reciprocal connection is not involved in the nigrostriatal signalling from SNc to upper CPu. However, signals resulted from the activation of VTA can still reach upper CPu to induce neurochemical response (Figure 6e), which is a sign for the existence of a cascade transmission circuit from VTA to upper CPu (Pennartz et al., 2009; Figure 6f). Taken together, the mapping of the electrochemical events by using the OECT-array experimentally demonstrated a cross-talk between the mesolimbic and nigrostriatal dopaminergic pathways, and also supported a heterogeneous projection from SNc to CPu, which is differentially affected by VTA-SNc reciprocal connections.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic diagram of dopamine mapping in the NAc and CPu in response to surgically isolated VTA- or SNc-stimulation. (b) Immunohistochemical staining for TH in a brain slice showing the surgical tracks of the stimulation electrode in the VTA or SNc, and the mechanical lesion between these two regions. Scale bar, 1 mm. (c–e) Quantitative analysis of the change in dopamine release pattern at different brain regions across mesolimbic and nigrostriatal pathways, including the NAc (c), lower CPu (d) and upper CPu (e), in response to VTA- or SNc-stimulation before and after the surgical lesion to mechanically break the mutual connections between VTA and SNc. n = 6, error bars indicate standard error, *indicates p<0.05 by student t-test; n.s. stands for ‘not significant’. +/- indicates that the measurements were conducted with/without the VTA-SNc surgical lesion. (f) Summary of the identified complex cross-talk between the mesolimbic and nigrostriatal pathways as regulated by the mutual connection between VTA and SNc.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50345/elife-50345-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) The raster plot (upper) and post stimulation time histogram (PSTH; lower) in SNc upon electrical stimulation in VTA. (b) The raster plot (upper) and PSTH (lower) in VTA upon electrical stimulation in SNc. (c) Representative waveform of the spontaneous spiking of the dopaminergic neurons (>100 spikes). These spikes typically have a long action potential duration greater than 3 ms. (d) Quantitative analysis of the spike count 100 ms after electrical stimulation. The post-stimulation counts were normalized to before-stimulation counts, n = 6, error bars indicate standard error, * indicates p<0.05 by student t-test. For panel (a) and (b), the stimulation is 2 ms pulse width, 50 Hz, 5 pulses, 200 μA amplitude.
 
 ## Discussion
 
@@ -85,30 +137,103 @@ In summary, this proof-of-concept study demonstrates the development and applica
 
 ## Materials and methods
 
-## Fabrication of the OECT-array
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Sprague Dawley rat</td>
+      <td>Chinese University of Hong Kong</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-tyrosine hydroxylase</td>
+      <td>Abcam</td>
+      <td>Cat# ab112</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>sheep anti-c-Fos antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab6167</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AZ 5214 photoresist</td>
+      <td>MicroChem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AZ 400K developer</td>
+      <td>MicroChem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEDOT:PSS</td>
+      <td>Heraeus</td>
+      <td>Clevios PH-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GOPS</td>
+      <td>International Laboratory</td>
+      <td>Cat# 1094601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Matlab</td>
+      <td>2014a/2015a</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fabrication of the OECT-array
 
 The fabrication of the OECT-array mainly involves sequential deposition and patterning of the gold (Au)/chromium (Cr) SOURCE and DRAIN electrodes, the Pt-GATE electrode, the PEDOT:PSS (Clevios PH-500, Heraeus) channel active layer, and the SU-8 (MicroChem) insulating layer (Wang et al., 2018). First, the 200 μm thick polyethylene terephthalate (PET) substrates were cleaned by ultrosonication in chemical solvent (acetone and isopropanol; Sigma-Aldrich) and oxygen plasma (Harrick Plasma) treatment. Then, the Au (100 nm)/Cr (10 nm) electrodes were deposited on the PET substrate by magnetron sputtering and patterned through a lift-off process. Specifically, a layer of AZ5214 photoresist (MicroChem) was spin-coated on the PET substrate, patterned by UV exposure, and then developed using AZ 400K developer (MicroChem). The Au/Cr electrodes was deposited and patterned by a lift-off process, forming the SOURCE and the DRAIN electrode, which were spaced by a channel of 10 μm in length and 40 μm in width. Following the same procedure, a layer of Pt (100 nm)/titanium (10 nm) was deposited to form the Pt-GATE measured at 600 × 800 μm2. The PEDOT:PSS aqueous dispersion was first mixed with dimethyl sulfoxide (DMSO; 5% in volume ratio; Sigma-Aldrich), glycerin (5% in volume ratio; Sigma-Aldrich) and (3-glycidyloxypropyl) trimethoxysilane (GOPS; 1% in volume ratio; International Laboratory) to enhance the conductivity and film stability. Then the PEDOT:PSS was spin-coated and annealed at 150°C in nitrogen for 1 hr. Unwanted PEDOT:PSS was removed along with the photoresist by rinsing in acetone (Sigma-Aldrich). The device was packaged by patterning a layer of photoresist (2 μm; SU-8 2002) to insulate the metal electrodes from aqueous electrolyte. The devices were cleaned in PBS solution before use.
 
-## Recording setup for an OECT-array
+### Recording setup for an OECT-array
 
 In an electrochemical analysis using the OECT-array, multiple dual-channel sourcemeters (2612/2614, Keithley) were used. The OECT-units were electrically separated from each other. To acquire the transfer curve for each OECT-unit, the VDS was maintained constant, while VGS was swept from 0 to 1.2 V for ex vivo (or in vivo) analysis. During signal recording, the applied VGS was determined by referencing to the transfer curve to maximize the transconductance (gm) for the best signal amplification. For ex vivo measurements, the neurotransmitter molecules (e.g., dopamine, noradrenaline and adrenaline; Sigma-Aldrich) with designed concentrations were added to PBS solution to mimic a pulsed release, and the fluctuation of IDS as a function of time was recorded. For in vivo measurements, the evoked IDS fluctuation was recorded upon electrical stimulation of the neuronal circuits in the brain of an anesthetized animal. All data was collected using the software TSP-express (Keithley).
 
-## Animal surgery
+### Animal surgery
 
 All experimental procedures involving animals were approved by the university Animal Ethics Committee. Animal licenses, (16-97) in DH/HA and P/8/2/5 Pt.5 and (18-129) in DH/SHS/8/2/5 Pt.4, were approved by Department of Health of the Government of Hong Kong Special Administration Region. Both male and female Sprague Dawley rats (300 ~ 400 g) were used. Before the experiments, the animals were firstly anesthetized with intraperitoneal injection of urethane (2 g/kg; Sigma-Aldrich), and then mounted on a stereotactic frame (Narishige). A heating pad was placed underneath the animals to maintain a temperature of 37°C throughout an experiment. For monitoring somatodendritic dopamine release in VTA (Figure 3a), two holes (2 × 2 mm2) were drilled on the skull. The stereotactic coordinates for stimulation in MFB was −1.8 mm A/P, 2 mm M/L, 8 mm below dura. The stereotactic coordinates for the 1st OECT unit was −5.6 mm A/P, 0.8 mm M/L, 8 mm below dura. The control experiments were conducted in the same way except that the stimulation is moved out of MFB (−1.8 mm A/P, 2 mm M/L, 3.5 mm below dura). For monitoring dopamine release remotely along the mesolimbic pathway (Figure 4a), the tungsten electrode was implanted in the VTA (−5.6 mm A/P, 1 mm M/L, 7.9 ~ 8.4 mm below dura) for electrical stimulation, and the OECT-array was implanted in the NAc (1st OECT unit; 1.2 mm A/P, 1.4 mm M/L, 8.4 mm below dura) for electrochemical monitoring. In the control experiments, the OECT-array was not moved, and the electrical stimulation was delivered to an irrelevant region (−5.6 mm A/P, 1 mm M/L, 4.9 mm D/V below dura). For investigations about the cross-talk between the mesolimbic and the nigrostriatal pathway (Figure 5a), a tungsten electrode (FHC) was either implanted at VTA (−5.3 mm A/P, 0.8 mm M/L, 7.9 ~ 8.4 mm below dura) or SNc (−5.3 mm A/P, 2 mm M/L, 7.5 ~ 7.9 mm below dura) for electrical stimulation of dopaminergic signalling pathway. In the control experiments, the stimulation was delivered to a region out of VTA or SNc (−5.3 mm A/P, 0.8 mm M/L, 4.9 mm below dura). The OECT-array was inserted to an exposed rat brain (1.2 mm A/P, 3 mm M/L) with 14o tilted towards the lateral side, and was allowed to travel 7.2 ~ 7.4 mm. In this configuration, the 1st unit was placed in NAc and the coordinates were 1.2 mm A/P, 1.4 mm M/L, 7.1 mm below dura; the 3rd unit was placed lower CPu and the coordinates were 1.2 mm A/P, 1.9 mm M/L, 4.7 mm below dura; the 4th unit was placed in upper CPu and the coordinates are 1.2 mm A/P, 2.2 mm M/L, 3.5 mm below dura. After an experiment, the animal was sacrificed and transcardially perfused with chilled PBS and then 4% Paraformaldehyde (PFA; in PBS). The brain was isolated and stored in 4% PFA (in PBS) for later anatomical or immunohistochemical analysis.
 
-## Electrical stimulation
+### Electrical stimulation
 
 To evoke action potentials in brain tissue, a tungsten metal electrode (~200 μm in diameter) was used to deliver current stimulation to appropriate brain locations. To evoke somatodendritic dopamine release (Figure 3), the electrical stimuluses (50 Hz, 2 ms pulse width, 200 μA amplitude; AMPI) of different duration (1, 10, 30, 50, and 100 pulses) were delivered in MFB. To detect the NT release at axonal projection terminals (Figures 4–6), a pulse sequence (50 Hz, 2 ms pulse width, 1 s duration, 200 μA amplitude) was used. The interval between each stimulation is at least 50 s to avoid NT depletion.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 An isolated brain was fixed in 4% PFA for 2 days followed by soaking in 30% sucrose until it settled to the bottom. The sample was then frozen-sectioned (Thermo Scientific) into coronal slices of 25 or 50 μm thickness for further processing. Before immunostaining, the brain slices were rehydrated in PBS for 2 hr and blocked by 3% bovine serum albumin (BSA) in tris-buffered saline with 0.25% Triton X-100 (TBST) for 2 hr. Next, the slides were incubated with primary antibodies at 4°C overnight followed by a thorough rinse in TBST solution. The slices were further incubated with secondary antibodies at room temperature for 2 hr and afterward DAPI solution (10 μg/ml; Abcam) for 30 min. After rinsing in TBST, the slides were dehydrated in 30% ethanol, 50% ethanol, 75% ethanol, 100% ethanol and 100% xylene sequentially, and mounted for further imaging and storage. Specifically for the horseradish peroxidase/3,3'-Diaminobenzidine (HRP/DAB) staining, the sectioned brain slices were rehydrated in PBS for 2 hr and were blocked by hydrogen peroxide blocking solution (Abcam) for 30 min and by 3% BSA in TBST for 2 hr. Afterwards, the slices were incubated in primary antibody at 4°C overnight. After a thorough wash in TBST solution for 10 min for three times, the slices were further incubated in biotinylated secondary antibody (Abcam) for 30 min followed by TBST wash for 10 min for three times. Next, the peroxide-labeled streptavidin solution (Abcam) was applied for 30 min and subsequently washed in TBST for 10 min for three times. The DAB chromogen (Abcam) was diluted in DAB substrate (Abcam) to working concentration, and the diluted chromogen solution was applied directly to the slides. At satisfactory staining level, the slides were rinsed in deionized water to stop the development. The slices were dehydrated and mounted in the same way aforementioned for imaging and storage. The antibodies used in this study are: rabbit anti-tyrosine hydroxylase (0.3 μg/ml; ab112, Abcam) and sheep anti-c-Fos antibody (2 μg/ml; ab6167, Abcam).
 
-## Microscopy
+### Microscopy
 
 The fluorescently stained brain slides were imaged using a laser scanning confocal microscope equipped with a 40 × water immersion lens (SP8, Leica). For each slice, the scan was performed with 1 μm z-resolution, and a maximum projection of each scan was then acquired. For overall anatomical evaluation, the HRP/DAB-stained brain slides were imaged using a stereoscope.
 
-## Statistical analysis
+### Statistical analysis
 
 A MATLAB program was developed to convert the recorded change of IDS to ΔVg-eff by using the transfer curve to quantitatively analyze the level of recorded NT release as recorded by individual OECT-unit. Specifically, the IDS before electrical stimulation was converted to voltage value according to the transfer curved (as baseline); the peak IDS (the minimal IDS value evoked by an electrical stimulation before reversing back to baseline) in response to NT release was also converted to voltage value in the same manner; these two voltage values were further subtracted and absolutized to obtain ΔVg-eff. The calculated ΔVg-eff was further converted to change of molecular concentration by using a calibration curve fitted from the ex vivo experimental results. For statistical analysis, student t-test was performed to determine the statistical significance between the experimental conditions and the control groups, p<0.05 indicates a significant difference. At least three independent biological replicates were used if not otherwise specified. For Figure 3, data from ~20 trials were collected from each animal. For Figure 4,~30 trials were performed on each animal. For Figure 5, the data were collected from 10 animals, and ~30 trials were performed on each animal. For Figure 6, the data were collected from six animals, and ~30 trials were performed on each animal.

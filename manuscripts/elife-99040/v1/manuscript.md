@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Centre for Developmental Neurobiology, King’s College London London United Kingdom
-2. https://ror.org/0220mzb33 Department of Medical and Molecular Genetics, King’s College London London United Kingdom
+1. Centre for Developmental Neurobiology, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. Department of Medical and Molecular Genetics, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
 
 † Corresponding author
 
@@ -29,11 +29,19 @@ Here, we conducted a systematic genome-wide analysis of somatic single-nucleotid
 
 ## Results
 
-## Somatic mutations often disrupt cleavage and polyadenylation sequences in cancer
+### Somatic mutations often disrupt cleavage and polyadenylation sequences in cancer
 
 We first analysed SNVs neighbouring annotated human cleavage and polyadenylation positions (paSNVs) in 3’UTRs from the PolyA_DB3 database (Wang et al., 2018). We considered two distinct cohorts: ‘Normal’ paSNVs from a healthy human population (the 1000 Genomes phase 3 data Fairley et al., 2020) and ‘Cancer’ paSNVs from the whole-genome sequencing of cancer samples (PCAWG) (ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium, 2020).
 
 For each paSNV, we calculated the change in cleavage/polyadenylation efficiency using the APARENT2 neural network model, which has been shown to infer this statistic more accurately than earlier approaches (Linder et al., 2022). We additionally assessed the loss and gain of the two strongest polyadenylation signals, AATAAA and ATTAAA (referred to as AWTAAA throughout this study; Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig1-v1.jpg)
+
+**Figure 1.:** (A) Bioinformatics workflow used to analyse the effect of paSNVs on pre-mRNA cleavage and polyadenylation. (B) Top, effects of UP- and DOWN-paSNVs on the APARENT2 score (mean ± SEM) as a function of their position with respect to annotated pre-mRNA cleavage sites (CSs). Bottom, combined distribution of AWTAAA-affecting paSNVs in both datasets. (C) Box plot showing that paSNVs disrupting polyadenylation signals are significantly less frequent compared to control groups of events in the normal population. (D) paSNVs disrupting polyadenylation signals are enriched for singletons, consistent with purifying selection against such events in the normal population.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) As expected, (A) AWTAAA-containing paSNVs tend to be associated with a relatively high APARENT2 score and (B) the loss or gain of AATAAA typically reduced or increased the score, respectively. (C) Box plot comparison of normal-population allele frequencies of cleavage/polyadenylation signal-disrupting mutations defined by considering only AWTAAA gain/loss, only APARENT2 score changes, or both (DOWN-paSNVs). (D) Bar plot comparison of normal-population fractions of singletons for cleavage/polyadenylation signal-disrupting mutations defined by considering only AWTAAA gain/loss, only APARENT2 score changes, or both (DOWN-paSNVs).
 
 As expected, paSNVs predicted to have a strong impact on cleavage/polyadenylation were often situated immediately upstream of a CS, with most of them affecting AWTAAA hexamers (Figure 1B). Furthermore, the presence of AATAAA or ATTAAA in polyadenylation signals tended to be associated with a high APARENT2 score (Figure 1—figure supplement 1A), and the loss or gain of AATAAA led to a significantly stronger decrease or increase in the score, respectively, compared to other mutations (Figure 1—figure supplement 1B). This provided internal validation of the algorithm’s performance in our hands.
 
@@ -43,19 +51,49 @@ Consistent with the earlier studies (Linder et al., 2022; Kainov et al., 2016; F
 
 Notably, a comparison of the Normal and Cancer datasets showed that cancer somatic mutations, on average, had a stronger effect on the polyadenylation efficiency in both the UP- and DOWN-paSNV groups (Figure 1B; LOR sample variance 0.115 in cancer vs 0.0876 in normal). DOWN-paSNVs were significantly enriched in cancer compared to the normal population data (Figure 2A). We also observed that mutations disrupting AWTAAA hexamers in 3'UTRs tended to occur near annotated cleavage sites in cancer (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bar plot showing enrichment of paSNVs disrupting polyadenylation signals among cancer somatic mutations. (B) Bar plot showing enrichment of single-nucleotide variants (SNVs) affecting AWTAAA sequences in 3’UTRs close to annotated cleavage sites (CSs) among cancer somatic mutations. (C) Box plot showing that somatic mutations disrupt stronger cleavage/polyadenylation signals in cancer. (D) paSNVs disrupting polyadenylation signals occur in more evolutionary conserved regions in cancer (mean PhastCons score in 15-nt window centred at SNVs). (E) Distribution of DOWN-paSNVs across cancer types in the Pan-Cancer Analysis of Whole Genomes (PCAWG) project.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The plot is generated similarly to Figure 2D except the conservation was calculated for the exact single-nucleotide variant (SNV) position.
+
 Interestingly, cancer-specific DOWN-paSNVs affected cleavage/polyadenylation signals with higher APARENT2 scores (Figure 2C). Furthermore, DOWN-paSNVs tended to affect more evolutionarily conserved sequences in the Cancer dataset compared to the Normal control (Figure 2D, Figure 2—figure supplement 1). In total, we identified 1614 distinct cancer somatic DOWN-paSNVs affecting 1570 cleavage/polyadenylation events in 1460 genes in 602 tumours, i.e., 22.7% of all tumour samples in PCAWG (Supplementary file 1). Notably, nearly half of the DOWN-paSNVs originated from colorectal adenocarcinoma, with the remaining mutations distributed across a wide range of other cancer types (Figure 2E).
 
 We concluded that mutations disrupting functional cleavage/polyadenylation signals are abundant in cancer cells despite being subject to strong purifying selection in a healthy population.
 
-## Cancer-specific mutations in cleavage and polyadenylation sequences are enriched in tumour suppressor genes
+### Cancer-specific mutations in cleavage and polyadenylation sequences are enriched in tumour suppressor genes
 
 There are two possible explanations for the enrichment of DOWN-paSNV events in cancer: (1) an increase in the overall mutation load and (2) positive selection for such mutations. Since the latter possibility may increase the incidence of mutations in cancer driver genes, we analysed the distribution of DOWN-paSNVs within genes from the Cancer Gene Census (Tate et al., 2019). This revealed a remarkable over-representation of the DOWN-paSNVs in tumour suppressor genes, with the magnitude of this effect being greater than the corresponding enrichment of nonsense mutations (SNVs creating a premature translation termination codon) (Figure 3A, B, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig3-v1.jpg)
+
+**Figure 3.:** (A) Stacked bar plot showing enrichment of single-nucleotide variants (SNVs) disrupting polyadenylation signals (DOWN-paSNVs) in tumour suppressors in cancer. (B–C) Overrepresentation of (B) tumour suppressors but not (C) oncogenes among genes with cancer somatic DOWN-paSNVs, as compared to genes with cancer somatic BG-paSNVs. Fractions of tumour suppressors and oncogenes are also shown for all genes and genes containing cancer somatic nonsense (premature stop codons), missense (altered amino acid residues) and synonymous (synonymous codons) mutations. Note that the enrichment of tumour suppressors is stronger for DOWN-paSNVs compared to nonsense mutations. (C) Top 10 GO Biological Process terms significantly enriched in genes with cancer somatic DOWN-paSNVs. Note the enrichment of apoptosis- and cell death-related functions. (D) GO Molecular Function terms significantly enriched in genes with cancer somatic DOWN-paSNVs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Normalized stacked bar plot showing enrichment of single-nucleotide variants (SNVs) disrupting polyadenylation signals (DOWN-paSNVs) in tumour suppressors for Census genes only. Note that nonsense mutations show a similar to DOWN-paSNVs enrichment in tumour suppressors, but not oncogenes. Conversely, UP-paSNVs are enriched in oncogenes but not tumour suppressors.
 
 Notably, DOWN-paSNVs were not enriched in the oncogenes (Figure 3C), in line with the disruptive nature of such mutations under normal conditions (Figure 1). Conversely, oncogenes but not tumour suppressors showed some enrichment for UP-paSNVs (Figure 3A and Figure 3—figure supplement 1).
 
 Overall, DOWN-paSNVs were found to affect 38 tumour suppressor genes, i.e., 14.3% of all genes in this category in the Census dataset. In several cases, including LRP1B and FOXO1, which are known to act as tumour suppressors in certain cancers, the same signal/polyadenylation signal was disrupted by the same or different mutations in more than one sample (see columns Mut_Recurrence and Signal_Recurrence in Supplementary file 1). Consistent with tumour suppressors being a major target of DOWN-paSNVs, genes with this type of mutations were significantly enriched for apoptosis-related functions (Figure 3D; e.g. tumour suppressors CASP9 or FHIT). We also detected the enrichment of proteins interacting with the ubiquitination pathway (Figure 3D, E; e.g. tumour suppressors SMAD2, APC, and AXIN1).
 
 To independently confirm the functional impact of DOWN-paSNVs in cancer, we compared the mutational excess of different types of somatic mutations using DigDriver (Sherman et al., 2022), a neural network-based method that accounts for cancer-specific mutation rates. This analysis revealed a significantly higher observed-to-expected mutation rate for DOWN-paSNV events in cancer compared to the BG-paSNV group (Figure 4—figure supplement 1). DOWN-paSNVs tended to be enriched in tumour suppressor genes, consistent with positive selection for these events in cancer (Figure 4A). No such enrichment was detected in oncogenes (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Enrichment of different groups of cancer somatic single-nucleotide variants (SNVs) in (A) tumour suppressors and (B) oncogenes calculated using DigDriver relative to genes not listed in Cancer Census (non-Census) and presented with 95% confidence intervals. Note that DOWN-paSNVs and nonsense mutations are enriched in tumour suppressors but not in oncogenes. In contrast, oncogenes are often affected by missense mutations, as expected. (C) Cancer somatic DOWN-paSNVs co-occur in the same tumour with non-synonymous damaging SNVs, a group of somatic mutations defined in Calabrese et al., 2020, more often than BG-paSNVs. Note that the co-occurrence is particularly high for tumour suppressors. (D) The overall frequency of non-synonymous damaging SNVs is significantly higher in the DOWN-paSNV-containing group compared to the DOWN-paSNV-lacking group of tumour suppressor genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Box plot showing that wild-type tumour suppressors have stronger cleavage/polyadenylation signals than oncogenes and non-Census genes. (B) All Census genes classifiable as tumour suppressors (‘Tumour suppressors+;’ see Materials and methods) have stronger cleavage/polyadenylation signals compared to oncogenes and non-Census genes. (C) Tumour suppressors associated with ‘hallmarks of cancer’ have stronger cleavage/polyadenylation signals than ‘non-hallmark’ tumour suppressor genes.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/99040/elife-99040-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The graph illustrates the fraction of genes with copy number increases >3 in at least one cancer sample. Notably, copy number increases are significantly less frequent in cancer genes affected by DOWN-paSNVs compared to their BG-paSNV counterparts. The lack of statistical significance in the comparison between tumour suppressors with DOWN-paSNVs and BG-paSNV genes is probably due to the limited number of copy number variation (CNV) events in the former group.
 
 Of note, our analysis of wild-type sequences showed that tumour suppressor 3’UTRs are characterized by stronger cleavage/polyadenylation signals compared to oncogenes and non-cancer genes (Figure 4—figure supplement 2A, B). Moreover, tumour suppressors associated with hallmarks of cancer (Hanahan and Weinberg, 2011) in the Census dataset had stronger cleavage/polyadenylation signals than the rest of tumour suppressor genes (Figure 4—figure supplement 2C).
 
@@ -65,7 +103,7 @@ The analysis of allele copy number variation (CNV) showed that increased copy nu
 
 Taken together, these data suggest that somatic mutations disrupting cleavage and polyadenylation can facilitate the inactivation of tumour suppressors in cancer.
 
-## Somatic mutations in cleavage and polyadenylation signals can decrease the expression of tumour suppressor genes
+### Somatic mutations in cleavage and polyadenylation signals can decrease the expression of tumour suppressor genes
 
 Genetic inactivation of functional cleavage/polyadenylation sequences may negatively affect gene expression (see e.g. Higgs et al., 1983). To explore this possibility, we turned to the colorectal adenocarcinoma subset of PCAWG, as it contained most of the DOWN-paSNVs in tumour suppressors and the corresponding gene expression information (Calabrese et al., 2020). We shortlisted detectably expressed tumour suppressors that contained DOWN-paSNVs and no other damaging mutations in specific cancer samples, and were wild-type in other samples. Seven genes passing these filters were involved in various aspects of tumour biology, including cell survival and DNA repair (CASP9, NDRG1, and XPA), mTOR signalling (TSC1), and transcription and RNA processing (ETV6, ISY1, and SMAD2).
 
@@ -103,37 +141,216 @@ In conclusion, our study reveals that the genetic inactivation of cleavage and p
 
 ## Materials and methods
 
-## Source data sets
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>XPA</td>
+      <td>Ensembl</td>
+      <td>ENSG00000136936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TOP10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C404003</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Colorectal carcinoma, HCT-116</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N3 (plasmid)</td>
+      <td>Clontech</td>
+      <td>Cat# 6080–1</td>
+      <td>https://www.addgene.org/vector-database/2493/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL3-Control (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat# U47296</td>
+      <td>https://www.addgene.org/212937/</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pML651-WT (plasmid)</td>
+      <td>This paper</td>
+      <td>Minigene</td>
+      <td>pEGFP-N3-based construct containing wild-type XPA 3’ region</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pML651-MUT (plasmid)</td>
+      <td>This paper</td>
+      <td>Minigene</td>
+      <td>pEGFP-N3-based construct containing mutated XPA 3’ region</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pML663-WT (plasmid)</td>
+      <td>This paper</td>
+      <td>Minigene</td>
+      <td>pGL3-based construct containing wild-type XPA 3’ region</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pML663-MUT (plasmid)</td>
+      <td>This paper</td>
+      <td>Minigene</td>
+      <td>pGL3-based construct containing mutated XPA 3’ region</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO4220</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AACGCTAGCAAATAAAGGAAATTTAGATTGGTCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO4221</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATCGGTCGACTCAACAATCAGATAGTCAACCATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO4159</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCCTAATAGCAGAGATAAACATTGAGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO4160</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAACTCAATGTTTATCTCTGCTATTAGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO944</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCCGCGACTCTAGATCATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO358</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTAACCATTATAAGCTGCAATAAACAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO775</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGAACGGCATCAAGGTGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MLO776</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTCAGGTAGTGGTTGTCG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>jetPRIME transfection reagent</td>
+      <td>Polyplus</td>
+      <td>Cat# 101000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat# E2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>APARENT2</td>
+      <td>Linder et al., 2022</td>
+      <td></td>
+      <td>https://github.com/johli/aparent-resnet</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DIGDriver</td>
+      <td>Sherman et al., 2022</td>
+      <td></td>
+      <td>https://github.com/maxwellsh/DIGDriver</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cluster Profiler</td>
+      <td>Wu et al., 2021</td>
+      <td>RRID:SCR_016884</td>
+      <td>http://bioconductor.org/packages/release/bioc/html/clusterProfiler.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Source data sets
 
 Pre-mRNA CS positions and the corresponding metadata were obtained from the PolyA_DB3 database (Wang et al., 2018) (release 3.2 https://exon.apps.wistar.org/PolyA_DB/). The phase-3 1000 genomes vcf files were downloaded from the International Genome Sample Resource (https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/). Cancer somatic SNVs and indels from whole-genome sequencing of 2583 unique tumours (PCAWG) were downloaded from the International Cancer Genome Consortium (ICGC) data portal (https://dcc.icgc.org/) and the database of Genotypes and Phenotypes (dbGaP) (project code: phs000178). Only bona fide SNVs that differed from the reference genome at a single-nucleotide position were included in the analysis. The v97 release of the Cancer Gene Census was downloaded from https://cancer.sanger.ac.uk/cosmic/download.
 
-## Data processing
+### Data processing
 
-CSs located in 3’UTRs according to PolyA_DB3 were extended by 102 nt on both sides to generate 205-nt intervals. All SNVs from the 1000 genomes and the PCAWG datasets mapping to these intervals were kept for further analyses (paSNVs). FASTA files corresponding to wild-type and mutant 205-nt intervals were analysed by the APARENT2 (Linder et al., 2022). For each variant, we estimated the log odds ratio (LOR) of mutant (mut) variant isoform abundance with respect to the wild-type (wt) abundance (abundance was calculated by summing all cleavage probabilities mapping to 205-nt interval) as follows:LOR=ln(mut/(1−mut))−ln(wt/(1−wt))
+CSs located in 3’UTRs according to PolyA_DB3 were extended by 102 nt on both sides to generate 205-nt intervals. All SNVs from the 1000 genomes and the PCAWG datasets mapping to these intervals were kept for further analyses (paSNVs). FASTA files corresponding to wild-type and mutant 205-nt intervals were analysed by the APARENT2 (Linder et al., 2022). For each variant, we estimated the log odds ratio (LOR) of mutant (mut) variant isoform abundance with respect to the wild-type (wt) abundance (abundance was calculated by summing all cleavage probabilities mapping to 205-nt interval) as follows:
+
+$$
+LOR=ln(mut/(1−mut))−ln(wt/(1−wt))
+$$
 
 Incidence of PAS hexamers was quantified using the vcountPattern function from the Biostrings R/Bioconductor package (doi:10.18129/B9.bioc.Biostrings). Evolutionary conservation was calculated for either exact SNV positions or 15-nt SNV-centred windows using the GenomicScores (Puigdevall and Castelo, 2018) and the phastCons100way.UCSC.hg19 (Siepel et al., 2005) R/Bioconductor packages. Only unique SNV entries were kept for further analysis. In cases where a single SNV was located near more than one distinct CS, the strongest effect on cleavage/polyadenylation was used for further analyses. GO terms enrichment was analysed using the ClusterProfiler R/Bioconductor package (Wu et al., 2021).
 
 To analyse changes in polyadenylation scores of all mutations affecting AWTAAA sequences in 3’UTRs in Figure 2B, APARENT2 scores were calculated for all SNV-centred 205-nt intervals from both datasets located within canonical UCSC 3’UTRs. SNVs disrupting AWTAAA sequence with LOR≤–1 within 100-nt intervals centred around polyA_DB3 CSs were considered ‘annotated’.
 
-## Cancer Census gene enrichment
+### Cancer Census gene enrichment
 
 Enrichment of different types of SNVs in Cancer Census genes was calculated using a two-tailed Fisher’s exact test. Somatic SNVs in protein-coding sequences were classified as ‘Nonsense,’ ‘Missense,’ or ‘Synonymous’ based on the information provided in PCAWG maf files (‘Variant_Classification’ column). Tumour suppressors were defined as genes labelled as ‘TSG’ but not ‘Oncogene’ in the Census dataset. A similar stringent approach was used to define oncogenes. Genes annotated as both ‘Tumour suppressors’ and ‘Oncogenes’ were excluded (most analyses), analysed as ‘Both’ (Figure 3A and Figure 3—figure supplement 1), or combined with tumour suppressors to form the extended ‘Tumour suppressor+’ group (Figure 4—figure supplement 2B).
 
-## DigDriver enrichment analysis
+### DigDriver enrichment analysis
 
-We used the ‘Analyzing new mutation sets’ mode of DigDriver to process different functional categories of somatic SNVs. Functional annotation was taken from DigPreprocess.py annotMutationFile output files. Enrichment/excess of mutations of the Census cancer gene category was calculated as:∑observedmutcat1∑expectedmutcat1∑observedmutnoncancergenes∑expectedmutnoncancergenes
+We used the ‘Analyzing new mutation sets’ mode of DigDriver to process different functional categories of somatic SNVs. Functional annotation was taken from DigPreprocess.py annotMutationFile output files. Enrichment/excess of mutations of the Census cancer gene category was calculated as:
+
+$$
+\frac{\frac{\sumobservedmutcat1}{\sumexpectedmutcat1}}{\frac{\sumobservedmutnoncancergenes}{\sumexpectedmutnoncancergenes}}
+$$
 
 To calculate the 95% confidence interval (CI) of this enrichment, we performed bootstrap resampling of tumour suppressors, oncogenes and non-cancer genes in each mutation class for 1000 iterations. In each iteration, the enrichment/excess of mutations was calculated as described above. The 2.5th and 97.5th percentiles of the resampled distribution were used as the 95% confidence interval boundaries.
 
-## Gene expression analysis
+### Gene expression analysis
 
 To analyse the possible effect of DOWN-paSNVs on transcript abundance, we selected tumour suppressor genes from the published colorectal adenocarcinoma study Calabrese et al., 2020, which contained DOWN-paSNVs and no other damaging SNVs (i.e. Non-syn. variants from the binarized gene-centric table in Calabrese et al., 2020) in some samples, and no mutations in other samples. We normalized the available gene expression data (FPKM) to account for gene copy number variation and log2-tranformed them to obtain Log2(nFPKM) values. Gene-specific Log2(nFPKM) values for the wild-type samples were then subtracted from corresponding Log2(nFPKM) values for the DOWN-paSNVs samples to obtain distributions of gene expression differences (ΔLog2(nFPKM)). A one-tailed Wilcoxon signed-rank test was used to analyse the significance of a negative shift of ΔLog2(nFPKM) distributions compared to 0.
 
-## DNA constructs
+### DNA constructs
 
 All plasmids were propagated in the TOP10 E. coli strain (Thermo Fisher Scientific, cat# C404003). To generate read-through XPA minigenes (pML651-WT and pML651-MUT), a 431-nt gBlock fragment (Integrated DNA Technologies) encoding the human XPA 3’UTR in its natural context (chr9:100436867–100437297; GRCh37/hg19) and either the wild-type or mutated PAS were cloned into the pEGFP-N3 plasmid (Clontech) at the BsrGI and NotI sites. To generate luciferase reporter plasmids (pML663-WT and pML663-MUT), the entire XPA 3’UTR (chr9: 100437071–100437680; GRCh37/hg19) was amplified from HCT-116 genomic DNA using KAPA HiFi DNA polymerase HotStart ReadyMix (Roche, cat# KK2601) with MLO4220 (5'-AACGCTAGCAAATAAAGGAAATTTAGATTGGTCCT-3') and MLO4221 (5'-ATCGGTCGACTCAACAATCAGATAGTCAACCATGA-3') primers. The PCR product was gel-purified and cloned into the pGL3-Control plasmid (Promega, cat# U47296) at the XbaI and SalI sites. The cancer-specific PAS mutation was introduced using a modified Quikchange site-directed mutagenesis protocol, using the KAPA HiFi DNA polymerase HotStart ReadyMix (Roche, cat# KK2601) with MLO4159 (5'-GCCCTAATAGCAGAGATAAACATTGAGTTG-3') and MLO4160 (5'-CAACTCAATGTTTATCTCTGCTATTAGGGC-3') primers. All constructs were verified by Sanger sequencing. Plasmid maps are available on request.
 
-## Minigenes experiments
+### Minigenes experiments
 
 HCT-116 cells were purchased from ATCC (Cat# CCL-247), confirmed to have characteristic morphology using light microscopy (https://www.atcc.org/products/ccl-247#detailed-product-images), and tested negative for mycoplasma contamination using a LookOut Mycoplasma PCR Detection Kit (Sigma-Aldrich, cat# MP0035). Cells were cultured in a humidified incubator at 37 °C, 5% CO2, in DMEM containing 4.5 g/L glucose, GlutaMAX and 110 mg/L sodium pyruvate (Thermo Fisher Scientific, cat# 11360070) supplemented with 10% FBS (Hyclone, cat# SV30160.03) and 100 units/ml PenStrep (Thermo Fisher Scientific, cat# 15140122). For passaging, cells were washed with 1x PBS and dissociated in 0.05% Trypsin-EDTA (Thermo Fisher Scientific, cat# 15400054) for 10 min at 37 °C.
 
@@ -141,6 +358,6 @@ For read-through minigene transfection experiments, cells were typically seeded 
 
 For luciferase minigene transfection experiments, cells were typically seeded overnight in 100 μl of culture medium at 5×103 per well of a 96-well plate. Next morning, 70 ng of a firefly luciferase reporter construct containing XPA sequences and 30 ng of the Renilla luciferase control (pRL-TK; Promega) were mixed with 0.2 μl of jetPRIME transfection reagent in 10 μl of jetPRIME transfection buffer, incubated for 10 min at RT and added drop-wise to the cells. Following a 24 hr incubation, transfected cells were analysed using a Dual-Glo Luciferase Assay System (Promega, cat# E2920) as recommended by the manufacturer. Luminescence was measured using a Berthold Mithras LB940 plate reader.
 
-## Statistics
+### Statistics
 
 Unless stated otherwise, all statistical procedures were performed in R. Data were averaged from at least three biological replicates and shown as box plots, with box bounds representing the first and the third quartiles and whiskers extending from the first and the third quartile to the lowest and highest data points or, if there are outliers, 1.5x of the interquartile range. Data obtained from RT-qPCR and luciferase assays were compared using the two-tailed Student’s t-test assuming unequal variances. Genome-wide data were analysed using the Wilcoxon rank sum test or Fisher’s exact test (two-tailed if not stated otherwise). Specific tests used and the p-values obtained are indicated in the figures and/or figure legends.

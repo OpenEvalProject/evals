@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03mstc592 Cell Biology and Biophysics Unit, European Molecular Biology Laboratory Heidelberg Germany
-2. https://ror.org/03mstc592 Advanced Light Microscopy Facility, European Molecular Biology Laboratory Heidelberg Germany
+1. Cell Biology and Biophysics Unit, European Molecular Biology Laboratory Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))
+2. Advanced Light Microscopy Facility, European Molecular Biology Laboratory Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))
 
 † Corresponding author
 
 ## Abstract
 
-Development of multicellular organisms requires the generation of gene expression patterns that determines cell fate and organ shape. Groups of genetic interactions known as Gene Regulatory Networks (GRNs) play a key role in the generation of such patterns. However, how the topology and parameters of GRNs determine patterning in vivo remains unclear due to the complexity of most experimental systems. To address this, we use the zebrafish notochord, an organ where coin-shaped precursor cells are initially arranged in a simple unidimensional geometry. These cells then differentiate into vacuolated and sheath cells. Using newly developed transgenic tools together with in vivo imaging, we identify jag1a and her6 / her9 as the main components of a Notch GRN that generates a lateral inhibition pattern and determines cell fate. Making use of this experimental system and mathematical modeling we show that lateral inhibition patterning is promoted when ligand-receptor interactions are stronger within the same cell than in neighboring cells. Altogether, we establish the zebrafish notochord as an experimental system to study pattern generation, and identify and characterize how the properties of GRNs determine self-organization of gene patterning and cell fate.
+Development of multicellular organisms requires the generation of gene expression patterns that determines cell fate and organ shape. Groups of genetic interactions known as Gene Regulatory Networks (GRNs) play a key role in the generation of such patterns. However, how the topology and parameters of GRNs determine patterning in vivo remains unclear due to the complexity of most experimental systems. To address this, we use the zebrafish notochord, an organ where coin-shaped precursor cells are initially arranged in a simple unidimensional geometry. These cells then differentiate into vacuolated and sheath cells. Using newly developed transgenic tools together with in vivo imaging, we identify jag1a and her6/her9 as the main components of a Notch GRN that generates a lateral inhibition pattern and determines cell fate. Making use of this experimental system and mathematical modeling we show that lateral inhibition patterning is promoted when ligand-receptor interactions are stronger within the same cell than in neighboring cells. Altogether, we establish the zebrafish notochord as an experimental system to study pattern generation, and identify and characterize how the properties of GRNs determine self-organization of gene patterning and cell fate.
 
 ## Introduction
 
@@ -29,11 +29,19 @@ Other important parameters in a GRN are the nature and affinities of the ligand-
 
 The notochord constitutes an underappreciated system that is ideal for studying the generation of Notch patterns. Initially, notochord coin-shaped precursor cells are arranged unidimensionally. These simple and well-defined cell-cell contacts greatly facilitate mathematical modeling and theoretical analysis, making it valuable for studying the relationship between GRNs parameters and patterns. In vertebrates, such as zebrafish, notochord precursors give rise to two different cell types (Dale and Topczewski, 2011): vacuolated cells, located in the inner part of the organ, that contain a large vacuole that provides hydrostatic pressure (Adams et al., 1990; Bagwell et al., 2020; Ellis et al., 2013), and sheath cells, which form the surface of the cylindrical structure (Dale and Topczewski, 2011; Grotmol et al., 2003; Figure 1A). The cell fate decision between vacuolated and sheath cells depends on Notch signaling (Yamamoto et al., 2010). Inhibition of the Notch ligands jag1a and jag1b by morpholino (MO) injection leads to an excess of vacuolated cells, while overexpression of NICD promotes sheath cell fate (Yamamoto et al., 2010). However, most of the components and topology of the GRN that coordinates cell fate in the notochord remain unknown.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of notochord development. At 18–19 hpf most of the notochord is composed of coin-shaped precursor cells. During the following 8 hours, progressively, in an antero-posterior order, coin-shaped precursor cells begin their differentiation into sheath cells and vacuolated cells. (B) Airyscan confocal section of a zebrafish notochord at 19 hpf using the rcn3:lyn-mNeonGreen transgenic line. (C) Transmission electron microscopy of a zebrafish notochord at 19 hpf. (D) Magnification of boxed area in (C). (E) (Top) Schematic representation of the model for a Lateral Induction Network shows a pair of cells where the ligand in one cell activates NICD release in the neighboring cell. NICD activates ligand expression in its own cell. (Bottom) Representative simulation of this network applied to an array of cells unidimensionally arranged. (F) (Top) Schematic representation of the model for a Lateral Inhibition Network shows a pair of cells where the ligand in one cell activates NICD release in the neighboring cell. NICD activates the expression of the repressor, which in turn inhibits ligand expression. (Bottom) Simulation of this network applied to an array of cells unidimensionally arranged. (G–L) Maximal intensity projection of Airyscan confocal sections of a zebrafish tail at 22 hpf. (J–L) Magnification of boxed area in (G). n = 10 fish. (L) Intensity profile across a horizontal line in panel (L). (M) jag1a:mScarlet and tp1:GFP expression levels across a 1 μm thick horizontal line on a single plane of the image shown in J. Scale bars, 1 μm (D) 10 μm (B, C, J), 100 μm (G).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Representative simulations of NICD and Ligand molecules in each cell for the lateral induction (A) and lateral inhibition (B) models. Each line represents a different cell. Related to models and simulations shown in Figure 1E and F. (C) Confocal projections of 24-hpf zebrafish stained with in situ HCR probes against jag1a (magenta) and jag1b (green). (D–F) Airyscan confocal projections at a higher magnification of boxed region in (C). n = 5 fish. (G) jag1a:mScarlet and tp1:GFP expression levels of each individual cell. Shown values are the mean intensity in a manually selected region of the cytoplasm of each independent cell on a single plane of the image shown in Figure 1J. Cells that are not labeled with jag1a:mScarlet or tp1:GFP cannot be distinguished, and were not included in the analysis. (H) Scatter plot of the intensities shown in Figure 1M. Pearson correlation and p-value of the correlation is shown in the plot. Scale bars, 200 μm (C) and 50 μm (D).
+
 Here, we exploit the in vivo imaging and genetic manipulations that the zebrafish model offers to quantitatively study the generation of Notch patterns. We establish the zebrafish notochord as the first unidimensional system to study lateral inhibition patterning. Using this experimental model, we show that jag1a generates a lateral inhibition pattern, a possibility thought to be restricted to the other Notch ligands (Boareto, 2020; Boareto et al., 2015; Sjöqvist and Andersson, 2019). Using a combination of single-cell RNA-Seq analysis and genetic perturbations, we identify her6/her9 and jag1a as the key genes that promote sheath and vacuolated fate. Our computational modeling further reveals that a stronger cis- than trans-inhibition promotes the generation of lateral inhibition patterns. We experimentally validate the role of cis-inhibition in our GRN, finding that jag1a is sufficient to disrupt the expression of Notch-target genes in the cells where it is expressed. Altogether, our results describe and characterize a novel Notch GRN that generates lateral inhibition patterns and determines cell fate.
 
 ## Results
 
-## Jag1a and Notch activity show a lateral inhibition pattern in the zebrafish notochord
+### Jag1a and Notch activity show a lateral inhibition pattern in the zebrafish notochord
 
 Notch signaling generates patterns of gene expression by signaling at cell-cell contacts (Bray, 2006; Shaya et al., 2017). Thus, a prerequisite for the study of Notch patterning in the notochord is the characterization of cell-cell contacts. To describe the contacts between cells, we generated an rcn3:lyn-mNeonGreen transgenic line that labels the plasma membrane of all notochord cells. We observed that notochord precursor cells are coin-shaped and unidimensionally arranged one cell after another (Figure 1B). Using transmission electron microscopy, we confirmed this cell arrangement and observed that coin-shaped notochord cells are isolated from the rest of the tissues by a layer of extracellular matrix (Figure 1C–D). Thus, the contacts of each notochord cell are restricted to the two neighboring cells in the stack. This unidimensional geometry with very well-defined cell-cell contacts makes the notochord an ideal system to study Notch patterning.
 
@@ -43,9 +51,17 @@ Then, we experimentally evaluated whether one of these two patterns was present 
 
 To verify that the observed pattern is generated by lateral inhibition, we injected previously validated (Yamamoto et al., 2010) splicing-jag1a and atg-jag1b MOs into the tp1:GFP;jag1a:mScarlet double transgenic line. By using a splicing-jag1a MO we specifically inhibited endogenous jag1a genes but not our jag1a:mScarlet reporter. First, we observed that when we injected the two MOs simultaneously, the tp1:GFP signal almost completely disappeared in the notochord, but not in the neighboring tissues (Figure 2D), supporting the hypothesis that jag1a and jag1b are the main, if not the only, Notch ligands expressed in the notochord. We also observed an increase in the number of jag1a:mScarlet-positive cells that are directly adjacent to other jag1a:mScarlet-positive cells, suggesting that a lateral inhibition process is disrupted upon inhibition of jag1a and jag1b. This effect was also observed, although to a lower extent, when injecting the jag1a or jag1b MOs separately, indicating that jag1a and jag1b have similar, but not completely redundant roles in the generation of the lateral inhibition pattern (Figure 2A–E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) jag1a:mScarlet tp1:GFP 21 hpf fish embryos injected with control MO (A), jag1a + control MO (B), jag1b + control MO (C), or control MO (D), together with lyn-miRFP mRNA to visualize membranes. (E) Quantification of the average number of jag1a-positive cells directly adjacent to each jag1a-positive cell. Two-tailed p-value is shown in the plot. (F) Cell fate of cells expressing jag1a or the tp1:GFP at the coin-shape stage. Quantifications from images as shown in G (standard deviation jag1a = 2.696, tp1 = 2.631; n = 5 fish). (G) Time lapse of optical sections of notochord cells using the tp1:GFP; jag1a:mScarlet double transgenic line. First frame corresponds to 24 hpf. Scale bars, 20μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) In vivo time-lapse imaging of zebrafish notochords starting acquisition at 22 hpf using the rcn3:mNeonGreen transgenic line. Acquisition was based on a feedback microscopy protocol, where low quality images were first acquired and then analyzed at the time of acquisition to perform high zoom tile scan imaging only in the notochord cells. (A, C) show maximum projection of Airyscan confocal notochord reconstructions. (B, D) show zoomed images of single Airyscan confocal optical sections magnified from (A, C), respectively. Scale bars, 100 μm (A, C), and 20 μm (B, D).
+
 Together, our results show that Jag1 is not restricted to the generation of lateral induction patterns as previously thought, but can also generate lateral inhibition patterns.
 
-## Jag1a and Notch activity are early markers of notochord cell fate
+### Jag1a and Notch activity are early markers of notochord cell fate
 
 Finding early markers of differentiation is important to understand cell fate decisions. However, no early marker of notochord cell differentiation has been reported to date. Having identified an alternating tp1-jag1a pattern, we evaluated whether it is associated with vacuolated and sheath cell fates. To test this, we used the tp1:GFP;jag1a:mScarlet double transgenic reporter, and followed notochord cells by time lapse in vivo imaging (Figure 2G and Figure 2—video 1). We found that jag1a-positive cells gave rise to vacuolated cells, while tp1-positive cells differentiated into sheath cells (Figure 2F). Interestingly, at the end of the movie, most of the vacuolated cells are labeled with jag1a:mScarlet, while there are some non-labeled cells at the notochord surface. This suggests that the non-labeled cells at the disc-shape stage are Notch active and will differentiate into sheath cells, but their Notch activity is not strong enough to activate the non-endogenous tp1 promoter.
 
@@ -53,33 +69,77 @@ Having identified jag1a is an early marker for cell fate, we decided to verify i
 
 Altogether, these results establish jag1a and Notch activity as the first available markers of vacuolated and sheath cell fates, and confirmed that this cell fate decision is mediated by a lateral inhibition process.
 
-## her9 and her6 have a complementary expression pattern to jag1a
+### her9 and her6 have a complementary expression pattern to jag1a
 
 Having identified that the jag1a-Notch alternating pattern correlates with fate, we aimed to identify which are the components of the GRN that make this pattern possible. Notch lateral inhibition model predicts the presence of a Notch target gene that represses jag1a expression. This gene should have a mutually exclusive pattern with jag1a.
 
 The bHLH genes of the HES/HEY families are good candidates as they are transcriptional repressors often activated by Notch signaling (Kageyama et al., 2007). In the notochord, her9 has been shown to be a Notch target gene (Yamamoto et al., 2010). However, the fact that no notochord phenotype was found for the her9 knockdown zebrafish (Yamamoto et al., 2010) suggests functional redundancy with other genes. To identify in an unbiased manner all the HES/HEY genes that repress jag1a, we analyzed single-cell RNA-Seq data (Wagner et al., 2018). We found that her6 and her9 are the most highly expressed genes of this family in the notochord at 18 and 24 hours post-fertilization (hpf) (Figure 3A, Figure 3—figure supplement 1A-F). To evaluate their expression pattern, we analyzed mRNA expression by fluorescent in situ hybridization based on a hybridization chain reaction (HCR). her6 and her9 were expressed in an alternating pattern with jag1a (Figure 3B–O). Importantly, in the her6/her9 HCR mRNA staining, we did not observe unlabeled cells, as was the case with tp1, highlighting the importance of identifying endogenous Notch target genes. In contrast to her6 and her9 expression, her12, which was expressed at a much lower level according to the RNA-Seq, was not detected in the notochord by HCR (Figure 3—figure supplement 1G-M). The observed alternating patterns suggest that her6 and her9 could repress jag1a expression in the notochord.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heatmap showing the expression levels of the zebrafish HES/HEY family genes. Values represent average normalized UMIs in all notochord cells at 18 and 24 hpf. (B) Projection of confocal optical sections of 18 hpf zebrafish stained with in situ HCR probes against her6 (green) and jag1a (magenta). Transmitted light is shown in gray scale. (C) Maximal projection of confocal Airyscan optical sections of the boxed area in (B). (D), Intensity profile of her6 (green) and jag1a (magenta) along a 1 μm thick horizontal line on the in situ HCR shown in (C). (E–G) Magnified views of boxed area in (C), n = 8. (H) Scatter plot of the intensities shown in D. Each point represents her6 and jag1a intensity in a 1-pixel width times 1 um height square. Pearson correlation and p-value of the correlation is shown in the plot. (I–O) Analogous images to (B–H) based on the her9 probe instead of her6 probe, n = 9. Scale bars, 50 μm (B, I), 20 μm (C, E, J, L).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F) UMAP plots showing notochord cells at 10, 14, 18, and 24 hpf. Cells are labeled depending on the developmental stage (A) or using a logarithmic color scale of of emilin3a, her6, her9, jag1a, and jag1b normalized expression (B–F). (G) Projection of confocal optical sections of 18 hpf zebrafish stained with in situ HCR probes against her12 (green) and jag1a (magenta). Transmitted light is shown in gray scale. (H) Maximal projection of confocal Airyscan optical sections of the boxed area in (G). (I) Intensity profile of her6 (green) and jag1a (magenta) along the notochord based on in situ HCR shown in (H). (J–M) Magnified views of boxed area in (H) n = 8. (M), Scatter plot of the intensities shown in (I). R represents Pearson’s correlation. (N) Guides used for her6 and her9 deletion and rbpj binding sites. Distances are represented as number of base pairs related taking the transcription start (TSS) site as cero. Only binding sites closer than 20 kb from the TSS are shown. Scale bars, 50 μm (G) 20 μm (H, J).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) UMAP plots showing notochord cells at 10, 14, 18, and 24 hpf. Cells are labeled based on a logarithmic color scale of notch1a (A), notch1b (B), notch2 (C) and notch3 (D) normalized expression. (E) Heatmap showing the expression levels of the Notch receptor genes. Values represent average normalized UMIs in all notochord cells at 18 and 24 hpf. (F) Projection of confocal optical sections of 18 hpf zebrafish stained with in situ HCR probe against notch2 (green). Transmitted light is shown in gray scale, n = 11. (G) Projection of confocal Airyscan optical sections of the boxed area in (F). Scale bars, 50 (F) 20 μm (G).
+
 To analyze if her6 and her9 could be direct targets of Notch signaling, we analyzed Rbp-Jκ binding sites in a recently published zebrafish CUT & RUN experiment (Ye et al., 2021). Several Rbp-Jκ binding sites were identified in the proximity of her6 and her9 transcription start sites, supporting the hypothesis that these genes are direct Notch targets (Figure 3—figure supplement 1N, Ye et al., 2021).
 
 Aside from the ligand and repressor, the other main component of a lateral inhibition Notch GRN is the Notch receptor. By single-cell RNA-Seq data analysis (Wagner et al., 2018) we found that notch2 was detected in most cells at the highest levels at 18 and 24 hpf (Figure 3—figure supplement 2A-E). notch2 notochord expression was confirmed by fluorescent HCR (Figure 3—figure supplement 2F–G). Altogether, we identified the main components of the lateral inhibition GRN, finding her6 and her9 as candidate genes to repress jag1a expression, and notch2 as the main Notch receptor in the notochord.
 
-## her6 and her9 inhibit jag1a expression
+### her6 and her9 inhibit jag1a expression
 
 To directly assess if her6 and her9 are sufficient to inhibit jag1a expression, we established notochord-specific genetic mosaics. To that end, we aimed at identifying a highly specific notochord promoter to overexpress her6 or her9, while simultaneously labeling the perturbed cells. Making use of the single-cell RNA-Seq dataset (Wagner et al., 2018), we identified emilin3a as the gene that offers the best balance between notochord specificity and high expression levels (Figure 4—figure supplement 1A,B). We cloned a 5 kb promoter upstream of the coding region and showed that it is sufficient to drive gene expression in the notochord, including most of both jag1a:mNeonGreen- and tp1:GFP cells (Figure 4—figure supplement 1C-J). Next, we used this promoter and the p2a system (Kim et al., 2011b) to generate her6 or her9 gain-of-function cells concomitantly with GFP expression, or only-GFP as a control. For each of these constructs, we quantified the level of jag1a:mScarlet expression in the GFP-p2a-her6, GFP-p2a-her9 or only-GFP positive cells in comparison to the rest of the notochord. We found that GFP-p2a-her6 and GFP-p2a-her9 cells had a lower level of jag1a:mScarlet than only-GFP cells, indicating that her6 and her9 repress jag1a expression in a cell autonomous manner (Figure 4A–G). This result was confirmed by quantifying endogenous jag1a mRNA expression by fluorescent HCR (Figure 4—figure supplement 2A-G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig4-v1.jpg)
+
+**Figure 4.:** (A – E) Airyscan confocal optical sections of live 22 hpf transgenic jag1a:mScarlet zebrafish injected with emilin3a:GFP (A and B), emilin3a:GFP-p2a-her6 (C and D) or emilin3a:GFP-p2a-her9 (E and F). DNA constructs were injected at the one-cell stage together with I-SceI protein. (B, D, F) show the boundary of GFP segmentation in A, C, and E, respectively, and manual outline of the notochord. (G), Quantification of jag1a:mScarlet intensity inside GFP-positive cells segmented as exemplified in (B, D, F). Values in the plot represent the intensity of jag1a:mScarlet inside segmented cells divided by the jag1a:mScarlet intensity inside the notochord outside of the segmented cells. Each point represents an individual fish (n = 12 GFP, n = 7 GFP-p2a-her6, n = 11 GFP-p2a-her9). Two-tailed p-values are shown in the plot. (H), Airyscan confocal sections of embryo at 22 hpf injected with Cas9 together with a control guide (H) or Cas9 together with her6/her9 gRNAs (I). (J) Quantification of the average number of jag1a-positive cells directly adjacent to each jag1a-positive cell. For each individual fish, we count how many jag1a-positive cells are adjacent to each jag1a-postive cell, and then calculate the average for that fish. This value would be equal to 2 in case all the cells are jag1a-positive, and zero if no jag1a-positive cell is adjacent to another jag1a-positive cell. Each individual point in the plot represents the average value for an independent fish (n = 7 control, n = 8 her6/her9 KOs). Two-tailed p-value is shown in the plot. Scale bars, 20 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Boxplot representing emilin3a expression in different tissues at 18 (A) and 24 hpf (B) according to single-cell transcriptomics. (C) Maximum projection of optical confocal sections of an emilin3a:mScarlet transgenic line at 21 hpf. Transmitted light is shown in gray scale. (D – I) Airyscan confocal optical sections of 21 hpf double transgenic emilin3a:mScarlet/tp1:GFP (D–F) or emilin3a:mScarlet/jag1a:mNeonGreen. Although at different intensities, emilin3a expression can be detected in most of the cells. Arrowheads point to the tp1:GFP- and jag1a:mNG-positive cells to facilitate their identification in the emilin3a:mScarlet channel. (J) 98% ± 3% of the tp1:GFP 99% ± 2% of the jag1a:mNeonGreen cells are emilin3a:mScarlet positive. Cells with an emilin3a:mScarlet signal that is more intense than the background were considered emilin3a:mScarlet-positive. Each dot represents an individual fish (n = 10 tp1:GFP, n = 6 jag1a:mNG). (n. s.) non-significant (0.67) differences by two-tailed t-test. Scale bars, 200 μm (C), 10 μm (D, G).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A – F) Airyscan confocal optical sections of fixed 22 hpf transgenic injected with emilin3a:GFP (A and B), emilin3a:GFP-p2a-her6 (C and D) or emilin3a:GFP-p2a-her9 (E and F) constructs. GFP was detected by antibody staining and her6 and her9 mRNA by in situ HCR in whole mount embryos. (B, D, F) show the boundary of GFP segmentation in A, C, and E, respectively, and manual outline of the notochord. (G) Quantification of jag1a mRNA intensity inside GFP-positive cells segmented as exemplified in A-F. Each point represents an individual fish (n = 13 GFP, n = 12 GFP-her6, n = 10 GFP-her9). Scale bars, 20 μm.
+
 Having identified her6 and her9 as genes sufficient to inhibit jag1a expression, we studied if these genes are necessary for lateral inhibition patterning in the notochord. To this end, we generated her6/her9 double transient knockouts (Figure 3—figure supplement 1N) in a jag1a:mScarlet;rcn3:lyn-mNeonGreen background, and quantified the number of jag1a-positive cells that are found adjacent to each jag1a-positive cell. We found this value to be increased upon her6 and her9 gene deletion, showing that her6 and her9 are necessary for lateral inhibition (Figure 4H–J). Altogether, we show that her6 and her9 are the repressors in the GRN that generate a lateral inhibition pattern in the notochord.
 
-## her6/her9 and jag1a determine notochord cell fate
+### her6/her9 and jag1a determine notochord cell fate
 
 To test if the identified GRN genes are sufficient to determine cell fate, we first expressed GFP-p2a-her6, GFP-p2a-her9 or only-GFP in a mosaic fashion in the notochord cells, and evaluated its effect on cell fate. At 2 days postfertilization (dpf), a stage where vacuolated and sheath cells can be distinguished, we found a higher proportion of sheath cells in GFP-p2a-her6 and GFP-p2a-her9 expressing cells. This result indicates that her6 and her9 are sufficient to determine sheath cell fate (Figure 5A–D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig5-v1.jpg)
+
+**Figure 5.:** (A–C, E–F) Confocal optical sections of 2 dpf live zebrafish that were injected with the emilin3a:GFP (A, E) emilin3a:GFP-p2a-her6 (B), emilin3a:GFP-p2a-her9 (C) or emilin3a:GFP-p2a-jag1a (F) constructs. DNA constructs were injected at the one-cell stage together with I-SceI protein. (D and G) Proportion of vacuolated cells at 2 dpf are shown. Proportion of vacuolated cells was calculated by counting the number of vacuolated cells divided by the sum of the number of sheath and vacuolated cells. Each point in D, G represents an independent fish quantified from on z-stack confocal planes (D, n = 9 GFP, n = 10 GFP-her6, n = 10 GFP-her9, G, n = 5 GFP, n = 5 GFP-jag1a). Two-tailed p-values are shown in D and G. Scale bars, 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Optical sections of 2 dpf zebrafish that were injected with the emilin3a:GFP or emilin3a:GFP-p2a-JICD constructs. (C) Proportion of vacuolated cells at 2 dpf. This proportion was calculated by counting the number of vacuolated cells divided by the sum of the number of sheath and vacuolated cells. Each point represents an independent fish quantified from on z-stack confocal acquisitions (n = 9 GFP, n = 6 GFP-jag1aICD). (n.s.) p-value > 0.05 by two-tailed t-test. Scale bars, 50μm.
+
 Next, we expressed GFP-p2a-jag1a or only-GFP. Interestingly, we found that the Notch ligand jag1a is sufficient to drive vacuolated cell fate in the same cells where it is expressed (Figure 5E–G). Taken together, our results show that not only the Notch targets her6/her9 drive cell fate, but also the Notch ligand jag1a determines cell fate in the same cell where it is expressed.
 
-## Stronger cis than trans interactions are required for lateral inhibition patterning
+### Stronger cis than trans interactions are required for lateral inhibition patterning
 
 After observing that jag1a, a Notch ligand, drives vacuolated cell fate on the same cell where it is expressed, we next investigated the mechanism mediating this process. First, we explored a potential signaling role of the ligand intracellular domain. It has been shown that upon Notch-ligand trans-interaction, not only the NICD is cleaved in the receiver cell, but also the intracellular domain of some ligands, including Jag1, is cleaved inside the sender cell, leading to bidirectional signaling (Ikeuchi and Sisodia, 2003; Kim et al., 2011a; Kolev et al., 2005; LaVoie and Selkoe, 2003; Liebler et al., 2012; Metrich et al., 2015). The intracellular domain of jag1a (JICD) would then inhibit Notch signaling in the sender cell (Kim et al., 2011a). Thus, overexpression of the full-length ligand in our experiment would increase the amount of ligand that is available to be cleaved, leading to Notch inhibition and promoting vacuolated cell fate. To test this hypothesis, we expressed mScarlet-p2a-JICD or only-mScarlet in a mosaic fashion in notochord cells. We did not observe any effect of JICD on cell fate (Figure 5—figure supplement 1), showing that JICD signaling is not sufficient to explain the jag1a effect on fate in the notochord.
 
 Next, we considered two different signaling circuits that could explain how jag1a can promote vacuolated cell fate in the cells where it is expressed. First, through trans-interactions with the Notch receptor, jag1a could activate Notch signaling and as a consequence, her6/her9 expression in their neighbors. Her6 and her9 would inhibit jag1a in these neighbors, and this would in turn diminish the amount of Notch signaling that the initial cell receives, promoting vacuolated cell fate. A second possible explanation comes from the observation that when Notch ligands are expressed in the same cell as the Notch receptor, they can mutually inhibit each other through cis-inhibition (Celis de and Bray, 1997; Klein et al., 1997; Micchelli et al., 1997). Thus, overexpression of jag1a would deplete the Notch receptor in a cell-autonomous manner, making this cell non-responsive to Notch signaling and thus promoting vacuolated cell fate (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig6-v1.jpg)
+
+**Figure 6.:** (A) Two possible circuits may explain the effect of jag1a on fate of the cell where jag1a is overexpressed. Circuit 1 is based on the interaction of ligand and receptor in trans. Circuit 2 is based on a possible role of cis-inhibition of the Notch receptor by the ligand. Cells where we overexpress the ligand are represented as the cell on the left. Adjacent cells are represented on the right. OE, overexpression. (B – G), Airyscan confocal planes of fixed 22 hpf transgenic fish injected with emilin3a:GFP (B–D) or emilin3a:GFP-p2a-jag1a (E–G) constructs. GFP was detected by antibody staining and her6 and her9 mRNA by in situ HCR in whole mount embryos. (C and F) show the notochord outline manually selected and the outline of GFP-positive cells automatically segmented. (D and G) show the outline of the manually selected notochord and the neighborhood to the GFP-positive cells. On the right side of each panel, a magnified view of the boxed region is shown. (H, I) Quantification of her6 and her9 mRNA expression after GFP-based segmentation as shown in (C, F) or (D, G), respectively. Values of her6 and her9 expression levels inside the segmented area inside the notochord were divided by the expression levels of the same genes in the region outside the segmented area, also inside the notochord. Each point represents a different fish. Two-tailed p-values are shown in the plots. n.s., non-significant. (J) Escape rates from the homogeneous steady state (indicated by Maximum Lyapunov Exponents, or MLE) as a function of Kcis and Ktrans parameters. Positive MLE values (red) support patterning, while negative MLE values (blue) do not. Scale bars, 20 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** A) Schematic representation of a lateral inhibition model with mutual inhibition. Ligand binding to Notch receptor releases NICD, that activates Repressor expression. The repressor inhibits Ligand expression. In addition, when Notch receptor and Ligand are present in the same cell, they mutually inhibit to each other. (B) Representative simulation of the model shown in (A).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75429/elife-75429-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** They are represented by Maximum Lyapunov Exponents, or MLE, as a function of Kcis and Ktrans parameters. Positive MLE values (red) support patterning, while negative MLE values (blue) do not. (A, C, E, G) Non-cooperativity. (B, D, E, H) Cooperativity. βN, production rate of Notch receptor; βL, production rate of Ligand, βR, production rate of receptor. Panel H has been duplicated from Figure 5J for easier comparison with the rest of plots.
 
 To study which of these genetic circuits is predominant in the notochord, we overexpressed jag1a-GFP or only-GFP in some notochord cells and quantified her6 and her9 expression both within the same cell and in their neighboring cells. We found only a minor or no increase in her6/her9 expression in the neighboring cells (Figure 6B, D, E, G,I), suggesting a small Notch-ligand trans-interaction. On the other hand, we observed a strong reduction of her6/her9 expression in the jag1a-expressing cells (Figure 6C, F and H). Although we cannot rule out that the small effect in the neighboring cells is due to limiting Notch receptor levels, the strong effect observed in the jag1a-expressing cells suggests the main mechanism regulating cell fate in its own cell is cis-inhibition.
 
@@ -107,7 +167,276 @@ Altogether, we have established the notochord as a new model system to study the
 
 ## Materials and methods
 
-## Animal handling and generation of transgenic lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP-Booster Alexa Fluor 488.anti-GFP Alpaca/recombinant VHH domain, monoclonal.</td>
+      <td>Chromotek</td>
+      <td>gb2AF488</td>
+      <td>Used at (1:500) dilution.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>jag1a:mScarlet</td>
+      <td>This paper</td>
+      <td></td>
+      <td>“Animal handling and generation of transgenic lines” Methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>jag1a:mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>“Animal handling and generation of transgenic lines” Methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>emilin3a:mScarlet</td>
+      <td>This paper</td>
+      <td></td>
+      <td>“Animal handling and generation of transgenic lines” Methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>rcn3:lyn-mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>“Animal handling and generation of transgenic lines” Methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>tp1:GFP</td>
+      <td>Parsons et al., 2009</td>
+      <td></td>
+      <td>“Animal handling and generation of transgenic lines” Methods section</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 1: pTarBAC_HA1_iTol2_F</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>gcgtaagcggggcacatttcattacctctttctccgcacccgacatagatCCCTGCTCGAGCCGGGCCCAAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 2: pTarBAC_HA2_iTol2_R</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>gcggggcatgactattggcgcgccggatcgatccttaattaagtctactaATTATGATCCTCTAGATCAGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 3: jag1a_HA1_mScarlet_F</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>gaggcgtgtggcggctgaagtggtagttttcacagcgacagacacacagacagacaaaccACCATGGTGAGCAAGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 4: jag1a_HA2_FRT_R</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>agcagcacgtgagcggacagcgccgcaaaagttgagctcggtctgagaatGGAGGCTACCATGGAGAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 5: jag1a_HA1_mNG_F</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>gaggcgtgtggcggctgaagtggtagttttcacagcgacagacacacagacagacaaaccACCATGGTGAGCAAGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 6: Scaffold</td>
+      <td>Shah et al., 2015</td>
+      <td>Primer</td>
+      <td>GATCCGCACCGACTCGGTGCCACTTTTTCAAGTTGATAACGGACTAGCCTTATTTTAACTT GCTATTTCTAGCTCTAAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 7: her6_guide1</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>taatacgactcactataGGTGGTCGGCGCCCCTCCATgttttagagctagaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 8: her6_guide2</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>taatacgactcactataGGGTGGCCATTCTTTGAAGGgttttagagctagaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 9: her9_guide1</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>taatacgactcactataGGGTGACTGACAGCCCGCGGgttttagagctagaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 10: her9_guide2</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>taatacgactcactataGGGGGAAACCCTGCGGCCGTgttttagagctagaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 11: univ_guide</td>
+      <td>Wierson et al., 2020</td>
+      <td>Primer</td>
+      <td>taatacgactcactataGGGAGGCGTTCGGGCCACAGgttttagagctagaa</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 12: her6_F</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>GTTTGCTGTTTCTGAGCGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 13: her6_R</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>GGGAAGCACGTCTGAGTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 14: her9_F</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>CCGCGCAGTATGTGAATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer 15: her9_R</td>
+      <td>This paper</td>
+      <td>Primer</td>
+      <td>ACCTTCACAGGCTACAGAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Control MO</td>
+      <td>Yamamoto et al., 2010</td>
+      <td>Morpholino</td>
+      <td>CCTCTTACCTCAGTTACAATTTATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>jag1a_splMO</td>
+      <td>Yamamoto et al., 2010</td>
+      <td>Morpholino</td>
+      <td>AAGCCAAACCCGCACATACCCGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>jag1b_atgMO</td>
+      <td>Yamamoto et al., 2010</td>
+      <td>Morpholino</td>
+      <td>CTGAACTCCGTCGCAGAATCATGCC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mScarlet FRT kan FRT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 1 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mNG FRT kan FRT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 2 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>emilin3a mScarlet</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 3 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rcn3 lyn mNeonGreen</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 4 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SP6 lyn-miRFP-pA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 5 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>emilin3a GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 6 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>emilin3a GFP-p2a-her6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 7 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>emilin3a GFP-p2a-her9</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 8 file.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>emilin3a mScarlet-p2a-JICD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Sequence available in Source data 9 file.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMESSAGEmMACHINESP6 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#:AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tricaine (MESAB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:A5040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code for image analysis and mathematical modeling</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available in github: https://github.com/hsancheziranzo/notochord-lateral-inhibition (copy archived at swh:1:rev:2e5c5fe15e30ea6bacdc0282e1506b44b05415af, Sánchez-Iranzo, 2022)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal handling and generation of transgenic lines
 
 The construct to generate Tg(jag1a:mScarlet) transgenic line was generated by BAC recombineering using the CH211-21D8 BAC. We first used EL250 (Lee et al., 2001) bacteria to recombine first the iTol2Amp cassette (Suster et al., 2011, primers 1 and 2, Key Resources Table) and substitute the loxP site in the BAC backbone. To recombine the mScarlet sequence into the BAC, we first used Gibson Assembly to substitute mCherry-p2a-CreERT2 by mScarlet in the mCherry-p2a-CreERT2-FRT-kan-FRT plasmid (Sánchez-Iranzo et al., 2018) to generate an mScarlet-FRT-kan-FRT plasmid (Source data 1). Then, we used the primers 3 and 4 (Key Resources Table) to amplify and recombine the mScarlet-FRT-kan-FRT into the ATG of jag1a in the BAC CH211-21D8. Finally, we removed the kanamycin resistance by activating flipase expression in the EL250 bacteria.
 
@@ -121,11 +450,11 @@ As a reporter of Notch activity, we used the tp1:GFP line (Parsons et al., 2009)
 
 All experiments were performed on embryos younger than 3 dpf, as is stipulated by the EMBL internal policy 65 (IP65) and European Union Directive 2010/63/EU.
 
-## her6 and her9 Knockout
+### her6 and her9 Knockout
 
 To generate her6 and her9 transient knockout (crispants), we designed guide RNAs (gRNAs) targeting the beginning and the end of both her6 and her9, resulting in whole gene deletion. Guides were identified using CRISPRscan (Doench et al., 2014; Moreno-Mateos et al., 2015) and synthesized as previously described (Shah et al., 2015; Primers 6–10, Key Resources Table). The injection mix included custom-produced Cas9-GFP at 2.4 mg/mL, KCl 300 mM and the four gRNAs, each of them at 12.5 ng/μL. Only embryos where the antero-posterior axis was shortened were selected for imaging. As a control, we used embryos where a gRNA with no target in the zebrafish genome (Wierson et al., 2020; Primer 11, Key Resources Table) was injected. Primers 12–15 (Table S2) were used for the detection of the deleted allele in all the fish used for imaging. Effective deletion was confirmed by sequencing of two KO her6 and two KO her9 PCR products; only embryos where both a her6 and her9 knockout band was detected by PCR (7/10) were considered for the quantification. Heterozygous embryos for both rcn3:mNeonGreen and jag1a:mScarlet transgenes were used in this experiment. Cells with jag1a:mScarlet intensity lower than 10% of the maximum intensity value in each image were considered negative for jag1a.
 
-## jag1a and jag1b MOs
+### jag1a and jag1b MOs
 
 The injection mix contained 100 ng/uL of lyn-miRFP mRNA and 0.4 mM of MO (Gene Tools). Specifically, the jag1a/jag1b mix contained 0.2 mM jag1a + 0.2 mM jag1b, the jag1a mix contained 0.2 mM jag1a + 0.2 control MO, the jag1b mix contained 0.2 mM jag1b + 0.2 mM control MO, and the control MO mix contained 0.4 mM of control MO. jag1a and jag1b MOs had been described and validated previously (Yamamoto et al., 2010).
 
@@ -135,29 +464,170 @@ The lyn-miRFP (Shcherbakova et al., 2016) mRNA injected, not only allowed membra
 
 Cell fate analysis emilin3a:GFP (Source data 6), emilin3a:mScarlet (Source data 3), emilin3a:GFP-p2a-her6 (Source data 7), emilin3a:GFP-p2a-her9 (Source data 8) or emilin3a:mScarlet-p2a-jag1a (Source data 9) were cloned using Gibson Assembly using as template synthesized her6, her9, and jag1a cDNAs. These plasmids were injected at the one cell stage using Isce-I as previously described (Rembold et al., 2006). GFP fluorescence and transmitted light were imaged in vivo at 2 dpf. Quantifications were made on 3D confocal stacks. Number of cells were manually quantified using the Cell Counter Fiji plugin (Schindelin et al., 2012).
 
-## Hybridization chain reaction and immunofluorescence
+### Hybridization chain reaction and immunofluorescence
 
 First, emilin3a:GFP, emilin3a:GFP-p2a-her6, emilin3a:GFP-p2a-her9 or emilin3a:mScarlet-p2a-jag1a constructs were injected at the one cell stage and fish were fixed at 20–22 hpf. Hybridization chain reaction (Molecular Instruments) was performed following manufacturer instructions. her6, her9, jag1a, jag1b and notch2 probes were produced by Molecular Instruments as 20 probe set sizes. If GFP needed to be detected, after HCR protocol, samples were incubated overnight with anti-GFP nanobody A488 (gb2AF488, Chromotek, 1:500), followed by 5 × 30 min SSCT 5 X washing steps.
 
-## Single-cell RNA-Seq analysis
+### Single-cell RNA-Seq analysis
 
 Single-cell RNA-Seq data was obtained from Wagner et al., 2018 (Wagner et al., 2018). We filtered the raw data and selected the cells labeled as notochord in the original publication, and analyzed them using the Scanpy v1.4.4 (Wolf et al., 2018) python package. UMAP coordinates were calculated using normalized non-logarithmically transformed values and the scanpy.pp.neighbors function with n_neighbors = 20 and n_pcs = 5 parameter values. log(UMI +1) values were represented in the UMAP plots, where log represents natural logarithm. Boxplots and heatmaps were generated using the seaborn python package.
 
-emilin3a was found as the gene with the best balance between notochord enrichment and high expression levels. We did this by selecting the gene with the highest score according to this equation:(1)score= Expr_N2Expr_NN
+emilin3a was found as the gene with the best balance between notochord enrichment and high expression levels. We did this by selecting the gene with the highest score according to this equation:
 
-where Expr_N represents the average of normalized UMIs for each gene across all notochord cells at 18 hpf, and Expr_NN represents the analogous values for the non-notochord cells at the same stage. Genes with the highest score are shown in Table 1.
+$$
+score= \frac{Expr_N^{2}}{Expr_NN}
+$$
+
+where $Expr_N$ represents the average of normalized UMIs for each gene across all notochord cells at 18 hpf, and $Expr_NN$ represents the analogous values for the non-notochord cells at the same stage. Genes with the highest score are shown in Table 1.
 
 Interpretation of the data was supported by the extensive data available in ZFIN (Howe et al., 2021).
 
-## Electron microscopy
+**Table 1.**
+ Genes with a highest score for specificity and expression levels in the notochord at 18 hpf.Expression: Average expression in Notochord cells (normalized UMIs per million). Enrichment: Average expression in notochord cells divided by average expression in the rest of the cells in the fish at 18 hpf. Score: Expression multiplied by enrichment (equivalent to the equation described above).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Expression</th>
+      <th>Enrichment</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>emilin3a</td>
+      <td>5055.75</td>
+      <td>1118.16</td>
+      <td>5653.16</td>
+    </tr>
+    <tr>
+      <td>ntd5</td>
+      <td>5929.62</td>
+      <td>134.03</td>
+      <td>794.74</td>
+    </tr>
+    <tr>
+      <td>col2a1a</td>
+      <td>9083.50</td>
+      <td>67.75</td>
+      <td>633.59</td>
+    </tr>
+    <tr>
+      <td>cmn</td>
+      <td>1536.94</td>
+      <td>330.67</td>
+      <td>508.22</td>
+    </tr>
+    <tr>
+      <td>loxl5b</td>
+      <td>1264.29</td>
+      <td>330.84</td>
+      <td>418.28</td>
+    </tr>
+    <tr>
+      <td>col9a1b</td>
+      <td>1511.20</td>
+      <td>226.72</td>
+      <td>342.62</td>
+    </tr>
+    <tr>
+      <td>ta</td>
+      <td>1443.23</td>
+      <td>162.65</td>
+      <td>234.74</td>
+    </tr>
+    <tr>
+      <td>LOC100333762</td>
+      <td>642.86</td>
+      <td>303.86</td>
+      <td>195.34</td>
+    </tr>
+    <tr>
+      <td>lgals1l1</td>
+      <td>2163.88</td>
+      <td>86.59</td>
+      <td>187.38</td>
+    </tr>
+    <tr>
+      <td>col9a2</td>
+      <td>1331.86</td>
+      <td>103.37</td>
+      <td>137.68</td>
+    </tr>
+    <tr>
+      <td>si:ch211-125-g7.4</td>
+      <td>501.98</td>
+      <td>272.60</td>
+      <td>136.84</td>
+    </tr>
+    <tr>
+      <td>si:dkey-12l12.1</td>
+      <td>408.15</td>
+      <td>304.23</td>
+      <td>127.17</td>
+    </tr>
+    <tr>
+      <td>col9a3</td>
+      <td>754.32</td>
+      <td>140.39</td>
+      <td>105.90</td>
+    </tr>
+    <tr>
+      <td>LOC100334188</td>
+      <td>393.62</td>
+      <td>205.68</td>
+      <td>80.96</td>
+    </tr>
+    <tr>
+      <td>pmp22b</td>
+      <td>1001.80</td>
+      <td>68.64</td>
+      <td>68.76</td>
+    </tr>
+    <tr>
+      <td>si:dkey-99l1.9</td>
+      <td>499.03</td>
+      <td>131.45</td>
+      <td>65.60</td>
+    </tr>
+    <tr>
+      <td>si:ch73-23l24.1</td>
+      <td>317.78</td>
+      <td>205.60</td>
+      <td>65.34</td>
+    </tr>
+    <tr>
+      <td>lgals2a</td>
+      <td>1018.17</td>
+      <td>64.08</td>
+      <td>65.24</td>
+    </tr>
+    <tr>
+      <td>twist2</td>
+      <td>306.83</td>
+      <td>167.20</td>
+      <td>51.60</td>
+    </tr>
+    <tr>
+      <td>lect1</td>
+      <td>616.97</td>
+      <td>79.24</td>
+      <td>48.89</td>
+    </tr>
+  </tbody>
+</table>
+
+### Electron microscopy
 
 For EM imaging, samples were chemically fixed by immersing them in 2.5% glutaraldehyde and 4% paraformaldehyde in 0.1 M PHEM buffer. Sections were post-stained with uranyl acetate for 5 min and with lead citrate for 2 min. The overall EM protocol is similar to previously reported (Schieber et al., 2010).
 
-## Microscopy
+### Microscopy
 
 Zebrafish embryos were embedded in 0.6% agarose low gelling temperature (A0701, Sigma) with 0.16 mg ml−1 Tricaine in E3 medium. For imaging embryos between 18 and 24 hpf, agarose covering the tail was removed to allow freely development of their tail. Imaging was performed with a Zeiss LSM880 laser scanning confocal microscope, using a 40 x/1.1NA water-immersion objective.
 
-## Adaptive feedback microscopy workflow
+### Adaptive feedback microscopy workflow
 
 The adaptive feedback microscopy workflow was set up on Zeiss LSM880 AiryScan Fast microscope. Automated image analysis and definition of high-zoom tile positions was implemented as a Fiji plugin using previously developed AutoMicTools library (https://git.embl.de/halavaty/AutoMicTools). MyPic VBA macro (Politi et al., 2018) was used as a communication interface between the Fiji plugin and ZenBlack software controlling the microscope.
 
@@ -165,7 +635,7 @@ Both low-zoom and high-zoom images were acquired using AiryFast modality to enab
 
 To show the same region of the notochord independently on the move of the developing embryo, we used a custom-made Fiji Macro where the region of interest was manually selected every 10 frames, and the region of interest interpolated for the rest of the timepoints.
 
-## Image analysis
+### Image analysis
 
 Python 3.7.4 was used for image analysis. First, the intensities of each of the channels was normalized between 0 and 1, where 0 was assigned to the minimum intensity value in the image, and 1 to the maximum value. Then, a gaussian filter was applied to the channel. This was done using the filters.gaussian_filter function of scipy.ndimage package, with a sigma value equal to 3. Then, both adaptive and global single-value segmentation were applied to the GFP channel. For the global single-value segmentation, the value was chosen automatically for each image as 1.5 times the median intensity of the GFP channel. To generate the adaptive segmentation, we calculated the local mean using as a kernel a uniform circle of 120 pixel diameter, and the rank.mean function of the skimage.filters package. Only the pixels with a higher value than both the global and the adaptive thresholds were considered for further analysis (Segmentation 1).
 
@@ -177,14 +647,14 @@ To determine the relative intensity inside the ‘GFP-positive cells’ or the �
 
 In all the analyzed images, the stepsize is 63.7 nm/pixel. Plots were generated using boxplot and swarmplot functions of the seaborn python package.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using the scipy.stats python package. The specific statistical test used, including sample size and the p-values are indicated in the figures and figure legends.
 
-## Data and code availability
+### Data and code availability
 
 Code is available under the MIT open source license on GitHub at: https://github.com/hsancheziranzo/notochord-lateral-inhibition (copy archived at swh:1:rev:2e5c5fe15e30ea6bacdc0282e1506b44b05415af) (Sánchez-Iranzo et al., 2021; Sánchez-Iranzo, 2022). Images used for image analysis are available in Mendeley Data: https://doi.org/10.17632/fzmk5k982j.1 (CC BY 4.0).
 
-## Materials availability
+### Materials availability
 
 Requests for experimental resources and reagents should be directed to and will be fulfilled by Alba Diz-Muñoz (diz@embl.de) or Héctor Sánchez-Iranzo (hector.sanchez@kit.edu).

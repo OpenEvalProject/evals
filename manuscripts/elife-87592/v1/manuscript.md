@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Department of Physiology and Pharmacology, Karolinska Institute Stockholm Sweden
-2. https://ror.org/01tm6cn81 Department of Physiology, Institute of Neuroscience and Physiology, Sahlgrenska Academy, University of Gothenburg Gothenburg Sweden
-3. https://ror.org/03r8z3t63 School of Biomedical Sciences, University of New South Wales Sydney Australia
-4. https://ror.org/03trvqr13 Victor Chang Cardiac Research Institute, Darlinghurst Sydney Australia
-5. https://ror.org/012a77v79 Epigenetics and Diabetes Unit, Department of Clinical Sciences, Lund University Diabetes Centre, Lund University Malmö Sweden
-6. https://ror.org/051mrsz47 School of Health Sciences, University of Skövde Skövde Sweden
+1. Department of Physiology and Pharmacology, Karolinska Institute Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Department of Physiology, Institute of Neuroscience and Physiology, Sahlgrenska Academy, University of Gothenburg Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+3. School of Biomedical Sciences, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+4. Victor Chang Cardiac Research Institute, Darlinghurst Sydney Australia ([ROR:03trvqr13](https://ror.org/03trvqr13))
+5. Epigenetics and Diabetes Unit, Department of Clinical Sciences, Lund University Diabetes Centre, Lund University Malmö Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
+6. School of Health Sciences, University of Skövde Skövde Sweden ([ROR:051mrsz47](https://ror.org/051mrsz47))
 
 † Corresponding author
 
 ## Abstract
 
-Polycystic ovary syndrome’s (PCOS) main feature is hyperandrogenism, which is linked to a higher risk of metabolic disorders. Gene expression analyses in adipose tissue and skeletal muscle reveal dysregulated metabolic pathways in women with PCOS, but these differences do not necessarily lead to changes in protein levels and biological function. To advance our understanding of the molecular alterations in PCOS, we performed global proteomic and phosphorylation site analysis using tandem mass spectrometry, and analyzed gene expression and methylation. Adipose tissue and skeletal muscle were collected at baseline from 10 women with and without PCOS, and in women with PCOS after 5 weeks of treatment with electrical stimulation. Perilipin-1, a protein that typically coats the surface of lipid droplets in adipocytes, was increased whereas proteins involved in muscle contraction and type I muscle fiber function were downregulated in PCOS muscle. Proteins in the thick and thin filaments had many altered phosphorylation sites, indicating differences in protein activity and function. A mouse model was used to corroborate that androgen exposure leads to a shift in muscle fiber type in controls but not in skeletal muscle-specific androgen receptor knockout mice. The upregulated proteins in muscle post treatment were enriched in pathways involved in extracellular matrix organization and wound healing, which may reflect a protective adaptation to repeated contractions and tissue damage due to needling. A similar, albeit less pronounced, upregulation in extracellular matrix organization pathways was also seen in adipose tissue. Our results suggest that hyperandrogenic women with PCOS have higher levels of extra-myocellular lipids and fewer oxidative insulin-sensitive type I muscle fibers. These could be key factors leading to insulin resistance in PCOS muscle while electric stimulation-induced tissue remodeling may be protective. Swedish Research Council (2020-02485, 2022-00550, 2020-01463), Novo Nordisk Foundation (NNF22OC0072904), and IngaBritt and Arne Lundberg Foundation. Clinical trial number NTC01457209.
+Background:Polycystic ovary syndrome’s (PCOS) main feature is hyperandrogenism, which is linked to a higher risk of metabolic disorders. Gene expression analyses in adipose tissue and skeletal muscle reveal dysregulated metabolic pathways in women with PCOS, but these differences do not necessarily lead to changes in protein levels and biological function.Methods:To advance our understanding of the molecular alterations in PCOS, we performed global proteomic and phosphorylation site analysis using tandem mass spectrometry, and analyzed gene expression and methylation. Adipose tissue and skeletal muscle were collected at baseline from 10 women with and without PCOS, and in women with PCOS after 5 weeks of treatment with electrical stimulation.Results:Perilipin-1, a protein that typically coats the surface of lipid droplets in adipocytes, was increased whereas proteins involved in muscle contraction and type I muscle fiber function were downregulated in PCOS muscle. Proteins in the thick and thin filaments had many altered phosphorylation sites, indicating differences in protein activity and function. A mouse model was used to corroborate that androgen exposure leads to a shift in muscle fiber type in controls but not in skeletal muscle-specific androgen receptor knockout mice. The upregulated proteins in muscle post treatment were enriched in pathways involved in extracellular matrix organization and wound healing, which may reflect a protective adaptation to repeated contractions and tissue damage due to needling. A similar, albeit less pronounced, upregulation in extracellular matrix organization pathways was also seen in adipose tissue.Conclusions:Our results suggest that hyperandrogenic women with PCOS have higher levels of extra-myocellular lipids and fewer oxidative insulin-sensitive type I muscle fibers. These could be key factors leading to insulin resistance in PCOS muscle while electric stimulation-induced tissue remodeling may be protective.Funding:Swedish Research Council (2020-02485, 2022-00550, 2020-01463), Novo Nordisk Foundation (NNF22OC0072904), and IngaBritt and Arne Lundberg Foundation. Clinical trial number NTC01457209.
 
 ## Introduction
 
@@ -46,11 +46,11 @@ We have previously shown that electrically stimulated muscle contractions, known
 
 ## Methods
 
-## Ethical approval
+### Ethical approval
 
 The study was conducted at the Sahlgrenska University Hospital and the Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden, in accordance with the standards set by the Declaration of Helsinki. Procedures have been approved by the Regional Ethical Review Board of the University of Gothenburg (approval number 520-11) and the study was registered at https://clinicaltrials.gov/ (NTC01457209). All women provided oral and written informed consent before participation in the study.
 
-## Participants and study protocol
+### Participants and study protocol
 
 Women with PCOS were diagnosed according to the Rotterdam criteria (Group. REA-SPCW, 2004). This cohort has previously been described in detail and included 21 overweight and obese cases and 21 overweight and obese controls matched for age, weight, and BMI (Kokosar et al., 2016; Stener-Victorin et al., 2016). Of these, subcutaneous adipose tissue and skeletal muscle biopsies from 10 women with PCOS and 10 controls were included in the proteomics analysis. Participants reported to the laboratory in the morning after an overnight fast on menstrual cycle days 1–10 or irrespective of cycle day in ameno/oligomenorrheic women. Anthropometrics were measured and BMI was calculated as previously described (Kokosar et al., 2016; Stener-Victorin et al., 2016). Fasting blood samples were taken and HOMA-IR (fasting insulin [mU/ml] × fasting glucose [mM]/22.5) was calculated. Circulating testosterone was measured by GC-MS/MS (Kokosar et al., 2016). Anthropometrics, reproductive and endocrine variables for those included in the proteomics analysis are given in Table 1. Needle biopsies from subcutaneous adipose tissue from the umbilical area and skeletal muscle tissue from vastus lateralis were obtained under local anesthesia (Xylocaine, AstraZeneca AB, Södertälje, Sweden), from cases and controls (Figure 1A). The fat biopsies were rinsed with saline before both tissues were snap-frozen in liquid nitrogen and stored at −80°C until further analysis. Thereafter, women with PCOS received low-frequency electrical stimulations causing muscle contractions, so called electroacupuncture. Acupuncture needles were placed in somatic segments corresponding to the innervation of the ovaries and pancreas, bilaterally in abdominal muscle, in quadriceps muscles, and in the muscles below the medial side of the knee. Needles were inserted to a depth of 15–40 mm with the aim of reaching the muscles. Needles were connected to an electrical stimulator (CEFAR ACUS 4; Cefar-Compex Scandinavia, Landsbro, Sweden) and stimulated with a low-frequency (2 Hz) electrical signal for 30 min. The intensity was adjusted every 10th minute due to receptor adaptation, with the intention to produce local muscle contractions without pain or discomfort. Treatment was given three times per week over 5 weeks, and the number of treatments varied from 11 to 19. Two sets of needle placements were alternated to avoid soreness (Figure 1B; Stener-Victorin et al., 2016). Baseline measurements were repeated after 5 weeks of treatment, within 48 hr after the last treatment, and new fat and muscle biopsies were collected. After all relevant clinical information was obtained, samples were coded and anonymized.
 
@@ -58,45 +58,146 @@ Women with PCOS were diagnosed according to the Rotterdam criteria (Group. REA-S
 
 **Figure 1.:** (A) Muscle and fat biopsies collected from 10 controls and 10 women with polycystic ovary syndrome (PCOS) at baseline and after treatment with electrical stimulations. Electrical stimulations were given 3 times/week for 5 weeks. (B) The electrical stimulation protocol alternating between protocol 1 in red dots and protocol 2 in blue dots. Acupuncture points not connected to the stimulator were stimulated manually. (C) A PCOS-like mouse model treated with the androgen receptor blocker flutamide or lacking androgen receptors in skeletal muscle (SkMARKO). Created with https://www.biorender.com/.
 
-## Proteomic sample preparation and LC-MS/MS analysis
+**Table 1.**
+ Anthropometric and biochemical analyses in study participants.
 
-## Tissue lysis and LC/MS-MS
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Controls baseline(n=10)</th>
+      <th>PCOS baseline(n=10)</th>
+      <th>Controls vs. PCOS(p-value)</th>
+      <th>PCOS treatment(n=10)</th>
+      <th>Baseline vs. treatment(p-value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>31.2±4.8</td>
+      <td>30.1±5.1</td>
+      <td>0.60</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Weight (kg)</td>
+      <td>88.2±11.0</td>
+      <td>88.6±15.6</td>
+      <td>0.82</td>
+      <td>89.0±14.9</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>30.5±3.7</td>
+      <td>30.5±4.1</td>
+      <td>0.88</td>
+      <td>30.7±4.0</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Ferriman-Gallwey score</td>
+      <td>2.1±1.7</td>
+      <td>7.7±4.5</td>
+      <td>0.003</td>
+      <td>9.2±6.0</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Testosterone (pg/ml)</td>
+      <td>258±77</td>
+      <td>476±211</td>
+      <td>0.004</td>
+      <td>347±220</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Insulin (mU/ml)</td>
+      <td>8.2±3.5</td>
+      <td>11.4±8.5</td>
+      <td>0.47</td>
+      <td>8.5±4.8</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Glucose (mmol/l)</td>
+      <td>5.2±0.3</td>
+      <td>4.8±0.4</td>
+      <td>0.044</td>
+      <td>4.8±0.3</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR</td>
+      <td>1.92±0.96</td>
+      <td>2.75±2.00</td>
+      <td>0.41</td>
+      <td>1.89±1.33</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin A1c (mmol/mol)</td>
+      <td>31.5±2.6</td>
+      <td>31.7±2.7</td>
+      <td>1.00</td>
+      <td>30.5±2.9</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mmol/l)</td>
+      <td>0.71±0.18</td>
+      <td>1.11±0.58</td>
+      <td>0.076</td>
+      <td>1.01±0.58</td>
+      <td>0.066</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data are presented as mean ± SD. Differences between PCOS and controls were analyzed by Mann-Whitney U test. Wilcoxon signed-rank test was used to analyze changes between measurements at baseline and after 5 weeks of treatment. p-value < 0.05 was considered significant._
+
+### Proteomic sample preparation and LC-MS/MS analysis
+
+#### Tissue lysis and LC/MS-MS
 
 The individual muscle and adipose tissue biopsies (20–50 mg) were homogenized in 300 μl lysis buffer (50 mM triethylammonium bicarbonate [TEAB; Fluka, Sigma-Aldrich] and 2% sodium dodecyl sulfate) with 1.4 mm ceramic spheres (FastPrep matrix D) using FastPrep-24 instrument (MP Biomedicals, OH, USA). The protein concentration was determined using Pierce BCA Protein Assay (Thermo Scientific, Rockford, IL, USA) and the Benchmark Plus microplate reader (Bio-Rad Laboratories, Hercules, CA, USA).
 
-## Sample preparation for global proteomic analysis
+#### Sample preparation for global proteomic analysis
 
 Aliquots containing 25 μg of each individual sample were digested with trypsin using the filter-aided sample preparation method. Briefly, protein samples were reduced with 100 mM dithiothreitol at 60°C for 30 min, transferred on 30 kDa MWCO Nanosep centrifugal filters (Pall Life Sciences, Ann Arbor, MI, USA), washed with 8 M urea solution and alkylated with 10 mM methyl methanethiosulfonate in 50 mM TEAB and 1% sodium deoxycholate. Digestion was performed in 50 mM TEAB, 1% sodium deoxycholate at 37°C in two stages: the samples were incubated with 250 ng of Pierce MS-grade trypsin (Thermo Fisher Scientific, Rockford, IL, USA) for 3 hr, then 250 ng more of trypsin was added and the digestion was performed overnight. The peptides were collected by centrifugation, labeled using TMT 10-plex isobaric mass tagging reagents (Thermo Scientific). Sodium deoxycholate was then removed by acidification with 10% trifluoroacetic acid. The mixed labeled samples were fractionated on the AKTA chromatography system (GE Healthcare Life Sciences, Sweden) using the XBridge C18 3.5 μm, 3.0×150 mm column (Waters Corporation, Milford, CT, USA) and 25 min gradient from 7% to 40% solvent B at the flow rate of 0.4 ml/min; solvent A was 10 mM ammonium formate in water at pH 10.00, solvent B was 90% acetonitrile, 10% 10 mM ammonium formate in water at pH 10.00. The initial 40 fractions were combined into 20 pooled fractions in the order 1+21, 2+22, 3+23, etc. The pooled fractions were dried on Speedvac and reconstituted in 20 μl of 3% acetonitrile, 0.1% formic acid for analysis.
 
-## Sample preparation for phosphoproteomic analysis
+#### Sample preparation for phosphoproteomic analysis
 
 Aliquots containing 450 μg of each individual sample were digested with trypsin using the filter-aided sample preparation method. The phosphopeptides were enriched using Pierce TiO2 Phosphopeptide Enrichment and Clean Up Kit (Thermo Fisher Scientific). The purified phosphopeptide samples were evaporated to dryness, reconstituted in 50 mM TEAB, and labeled using TMT 10-plex isobaric mass tagging reagents (Thermo Fisher Scientific). The TMT-labeled phosphopeptide samples were mixed into corresponding sets and purified using Pierce C-18 Spin Columns (Thermo Fisher Scientific). Purified samples were dried on Speedvac and reconstituted in 15 μl of 3% acetonitrile, 0.1% formic acid for analysis.
 
-## LC-MS/MS analysis
+#### LC-MS/MS analysis
 
 All samples were analyzed on Orbitrap Fusion Tribrid (Thermo Fisher Scientific) interfaced with Thermo Easy-nLC 1000 nanoflow liquid chromatography system (Thermo Fisher Scientific). Peptides were trapped on the C18 trap column (100 μm × 3 cm, particle size 3 μm) separated on the C18 analytical column (75 μm × 30 cm) home-packed with 3 μm Reprosil-Pur C18-AQ particles (Dr. Maisch, Germany) using the gradient from 5% to 25% B in 45 min, from 25% to 80% B in 5 min, solvent A was 0.2% formic acid and solvent B was 98% acetonitrile, 0.2% formic acid. Precursor ion mass spectra were recorded at 120,000 resolution. The most intense precursor ions were selected (‘top speed’ setting with a duty cycle of 3 s), fragmented using CID at collision energy setting of 30 spectra and the MS2 spectra were recorded in ion trap. Dynamic exclusion was set to 30 s with 10 ppm tolerance. MS3 spectra were recorded at 60,000 resolution with HCD fragmentation at a collision energy of 55 using the synchronous precursor selection of the five most abundant MS/MS fragments. The phosphopeptides were trapped on the NanoViper C18 trap column (100 μm × 2 cm, particle size 2 μm, Thermo Scientific) and separated on the home-packed C18 analytical column (75 μm × 30 cm) using the gradient from 7% to 32% B in 100 min, from 32% to 100% B in 5 min, solvent A was 0.2% formic acid and solvent B was 80% acetonitrile, 0.2% formic acid. The mass spectrometry settings were the same as described above for the global proteomic analysis, but HCD fragmentation at collision energy of 33 was used in MS2.
 
-## Proteomic data analysis
+#### Proteomic data analysis
 
 Identification was performed using Proteome Discoverer version 2.4 (Thermo Fisher Scientific). The database search was performed using the Mascot search engine v. 2.5.1 (Matrix Science, London, UK) against the Swiss-Prot Homo sapiens database. For phosphopeptide samples, phosphorylation on serine, threonine, and tyrosine was added as a variable modification. Quantification was performed in Proteome Discoverer 2.4. TMT reporter ions were identified with 3 mmu mass tolerance in the MS3 HCD spectra for the total proteome experiment and with 20 ppm mass tolerance in the MS2 HCD spectra for the phosphopeptide experiment, and the TMT reporter S/N values for each sample were normalized within Proteome Discoverer 2.4 on the total peptide amount. Only the unique identified peptides were considered for protein quantification. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the Proteomics Identifications (PRIDE) (RRID:SCR_003411) (Deutsch et al., 2020) partner repository with the dataset identifier PXD025358.
 
 The normalized abundance counts were used for the downstream analysis using the Differential Enrichment analysis of Proteomics data package (DEP) (Zhang et al., 2018). The counts were log2 transformed and proteins that were quantified in less than 2/3 of the samples were removed. Missing values were imputed using random draws from a Gaussian distribution around the minimal value as the missing value was not random but concentrated to proteins with low intensities. The data was batch effect adjusted using ComBat (Johnson et al., 2007) with the LC-MS/MS run assigned as the batch covariate. Differential expression analysis was performed on the dataset with DEP’s test_diff function which uses protein-wise linear models and empirical Bayes statistics using limma (Smyth, 2004). The differential expression analysis calculated the log2 fold changes (FC), p-values and q-values between the three groups control and PCOS at baseline (W0), and PCOS after 5 weeks of treatment (W5) generating two different result datasets. Proteins and phosphorylation enrichment were determined to be significantly differentially expressed between the groups if the p-value <0.05, and log2 FC ≥0.5 or log2 FC ≤–0.5.
 
-## mRNA expression and DNA methylation arrays
+### mRNA expression and DNA methylation arrays
 
 mRNA was extracted from adipose tissue (n=17) and skeletal muscle (n=8) biopsies collected at steady state during the hyperinsulinemic-euglycemic clamp before and after 5 weeks of electrical stimulation in those with PCOS using the RNeasy Lipid Tissue Mini Kit for adipose tissue and RNeasy Fibrous Tissue Mini Kit for skeletal muscle (QIAGEN). Nucleic acid concentration was measured with a spectrophotometer (NanoDrop, Thermo Scientific), and RNA quality was determined with an automated electrophoresis station (Experion, Bio-Rad). A HumanHT-12 v4 Expression BeadChip array (Illumina) was used to analyze global mRNA expression. cRNA synthesis, including biotin labeling, was carried out using an Illumina TotalPrep RNA Amplification Kit (Life Technologies and Invitrogen). Biotin-cRNA complex was then fragmented and hybridized to the probes on the Illumina BeadChip array before being hybridized and stained with streptavidin-Cy3 according to the manufacturer’s instructions. Probes were visualized with an Illumina HiScan fluorescence camera. The Oligo package from Bioconductor was used to compute robust multichip average expression measures (Bolstad et al., 2003).
 
 For methylation array studies, DNA was isolated from adipose tissue (n=17) and skeletal muscle (n=9) biopsies taken at steady state during the hyperinsulinemic-euglycemic clamp before and after 5 weeks of electrical stimulation of women with PCOS using the QIAamp DNA Mini Kit (QIAGEN). Nucleic acid concentrations and purity were estimated with a NanoDrop spectrophotometer (Thermo Scientific, Wilmington, DE, USA), and DNA integrity was checked by gel electrophoresis. Genome-wide DNA methylation was analyzed with the Infinium HumanMethylation450k BeadChip array (Illumina). The array contains 485,577 cytosine probes covering 21,231 (99%) RefSeq genes (Bibikova et al., 2011). A DNA Methylation Kit (D5001-D5002, Zymo Research) was used to convert genomic DNA to bisulfite-modified DNA. Briefly, gDNA (500 ng) of high quality was fragmented and hybridized on the BeadChip, and the intensities of the signals were measured with a HiScanQ scanner (Illumina).
 
-## Array data analysis
+#### Array data analysis
 
 The bioinformatics analyses of DNA methylation array data were performed as described previously (Rönn et al., 2015). In brief, Y chromosome probes, rs-probes, and probes with an average detection p-value>0.01 were removed. After quality control and filtering, methylation data were obtained for 298,289 CpG sites in adipose tissue and 298,332 CpG sites in skeletal muscle. Beta-values were converted to M-values, M=log2(β/(1 – β)), which were used for all data analyses. Data were then quantile-normalized and batch-corrected with COMBAT (Johnson et al., 2007). The differentially methylated sites were identified using a paired t-test (limma package, Bioconductor). To improve interpretation, after all the preprocessing steps, the data were reconverted to beta-values ranging from 0% (unmethylated) to 100% (completely methylated).
 
-## Pathway enrichment analysis
+### Pathway enrichment analysis
 
 The tool Uniprot, Universal Protein Resource (RRID:SCR_002380), was used to retrieve protein names. We applied enrichment analysis to all differently expressed proteins and phosphorylation sites using Enrichr (RRID:SCR_001575) and STRING (RRID:SCR_005223). Ontology terms with a q-value <0.05 and including at least 3 proteins/phosphosites or an odds ratio >100 were considered as enriched.
 
-## Histological analyses and immunofluorescence
+### Histological analyses and immunofluorescence
 
 Skeletal muscle and adipose tissue biopsies were fixed in histofix (Histolab, Sweden) for >72 hr and then stored in 70% ethanol. Tissues were dehydrated and fixated in paraffin blocks. Paraffin-embedded adipose tissue and muscle tissue were cut into 7 μm sections using a rotary microtome (Leica Microtome) and mounted on Superfrost Plus Adhesion microscope glass slides (Epredia J1800AMNZ, #10149870, Thermo Fisher Scientific). Picrosirius red staining (cat#24901-250, Polysciences, Inc) was used to identify and quantify fibrillar collagen in adipose and muscle tissue. Adipose tissue quantification of picrosirius red staining before and after electrical stimulation treatment was performed using a semi-automatic macro in ImageJ software. This macro allows for calculation of the total area (μm2) and the % of collagen staining from each area adjusting the minimum and maximum thresholds. Three different random pictures per section (4–5 sections/subject) were taken at ×10 or ×20 magnification using a regular bright-field microscope (Olympus BX60 and PlanApo, ×20/0.7, Olympus, Japan). All images were analyzed on ImageJ software v1.47 (National Institutes of Health, Bethesda, MD, USA) using this protocol with the following modification: threshold min 0, max 2. Skeletal muscle quantification of picrosirius red staining was performed using the same protocol described above. % of collagen staining was calculated on 8–10 images of different microscopic fields from each muscle sample.
 
@@ -104,25 +205,25 @@ For immunofluorescence, the muscle sections were deparaffinized twice in xylene 
 
 Skeletal muscle fiber size and type were quantified in muscle biopsies frozen in Tissue-Tek O.C.T. Compound (Sakura Finetek, Gothenburg, Sweden). Cross sections (10 µm) were cryosectioned using an NX70-Epredia cryostat, moved onto glass slides (Expredia, J1800AMNZ) and stored at –20°C. The sections were subsequently immunohistochemically stained for type I fibers and fiber boundaries. In brief, the sections were dried at room temperature for 60 min and then fixed in 4% formaldehyde (Merck, 100496) for 30 min, permeabilized with 0.5% PBS-Triton X-100 (Sigma-Aldrich, 9036-19-5) for 20 min and thereafter incubated with 0.25% PBS-Triton X-100 with 10% goat serum for 30 min. The sections were then incubated with primary MYH7 antibody (1:25; DSHB, BA-F8) for type I fibers overnight at 4°C and subsequently secondary antibody Alexa Flour 568 (1:500; Thermo Fisher, A-11031) for 60 min at room temperature, both in 0.1% PBS-Triton X-100 with 1% BSA. Finally, the sections were incubated with WGA Oregon Green 488 (Invitrogen, W7024) for fiber boundaries for 3 hr, whereafter Fluoromount-G mounting medium (Thermo Fisher, 00-4959-52) and coverslips were applied. The slides were visualized using a Zeiss AxioScan.Z1 slide scanner. Fiber cross-sectional area was automatically determined using MyoVision v1.0 and the proportion of type I fibers was manually counted on ImageJ. A total of 579 fibers from seven controls (60–150 fibers per muscle section) and 177 fibers (15–80 fibers per muscle section) from women with PCOS were quantified. Data are graphically depicted with each individual fiber quantified.
 
-## Mouse study protocol and western blot analysis
+### Mouse study protocol and western blot analysis
 
 All animal experiments were carried out in compliance with the ARRIVE guidelines. Three-week-old wild-type (wt) female mice on C57Bl/6J background were purchased from Janvier Labs (C57BL/6NRj, Le Genest-Saint-Isle, France). Female skeletal muscle androgen receptor knockout mice (SkMARKO) were generated by crossing ARflox mice with B6;C3-Tg(ACTA1-rtTA,tetO-cre)102Monk/J (HSA-rtTA/TRE-Cre) mice (Xiong et al., 2022). To induce Cre recombinase expression, at 3 weeks of age, SkMARKO mice were given a diet containing 200 mg/kg doxycycline (Specialty Feeds SF11-059) for the entire duration of the experiment. Mice were maintained under standard housing conditions; ad libitum access to food and water in a temperature- and humidity-controlled, 12 hr light/dark environment. Procedures were approved by the Sydney Local Health District Animal Welfare Committee within National Health and Medical Research Council guidelines for animal experimentation or the Stockholm Ethical Committee for Animal Research (approval number 20485-2020). At 4 weeks of age, wt and SkMARKO female mice received a subcutaneous silastic implant containing 5–10 mg DHT (5α-Androstan-17β-ol-3-one, A8380, Sigma-Aldrich, St. Louis, MO, USA) or empty implant (n=5–8/group). A subset of DHT-exposed wt mice received a slow-release flutamide pellet (n=5, 25 mg flutamide/pellet, 90-day release, Innovative Research of America, Sarasota, FL, USA) (Figure 1C; Ascani et al., 2023). At 15–17 weeks of age, the mice were euthanized and gastrocnemius muscle tissue was dissected and snap-frozen.
 
 15–20 mg of gastrocnemius muscle was homogenized in RIPA buffer along with protease inhibitors. Protein was quantified using Pierce BCA assay (Thermo Fisher Scientific, Cat# 23227). Diluted protein lysates were mixed with loading buffer containing β-mercaptoethanol, and heated at 65°C, before being loaded into polyacrylamide gel (handcast 10% or AnykD PROTEAN TGX Precast Protein Stain-Free Gel [Bio-Rad, CA, USA]) and electro-transferred to PVDF membranes using a PVDF Transfer Pack. The membranes were blocked with blocking solution (5% BSA or 5% skim milk in TBS containing 0.1% Tween 20) for 1 hr and incubated overnight with anti-myosin primary antibody, dilution 1:1000 (MYH7 antibody, Sigma-Aldrich Cat# M8421). After washing and incubation with secondary antibody, dilution 1:10,000 (rabbit anti-mouse IgG HRP, Abcam Cat# 97046), immunoreactive protein bands were visualized through enhanced chemiluminescence using ECL substrate. Bands were visualized with the ChemiDoc XRS system (Bio-Rad, CA, USA) and analyzed with the image analysis program Image Lab (Bio-Rad, CA, USA). After initial imaging, membranes were stripped in mild stripping buffer, blocked, and re-probed with GAPDH (Abcam, Cat# ab8245) or beta-actin antibody (Santa Cruz, Cat# 47778).
 
-## Statistics
+### Statistics
 
 Differences in clinical characteristics and histological quantification between women with PCOS and controls were assessed using the Mann-Whitney U test and data are presented as mean ± SD. Wilcoxon signed-rank test was used to analyze changes between measurements at baseline and after 5 weeks of treatment. Differences in protein expression were calculated on log2 fold change. Proteins and phosphorylation enrichments were determined to be significantly differentially expressed between cases and controls, and after 5 weeks of treatment in women with PCOS, if the p-value <0.05, and log2 FC ≥0.5 or log2 FC ≤–0.5. Proteomic data are presented as log2 fold change. Differences between wt controls and treated mice were assessed using one-way ANOVA with Dunnet’s multiple comparisons test. A two-way ANOVA was used to analyze the effect of treatment and mouse genotype, and data are presented as mean ± SEM. No statistical methods were used to predetermine sample size; it was based on previous experience. Animals were allocated to experimental groups arbitrarily without formal randomization.
 
 ## Results
 
-## Clinical characteristics
+### Clinical characteristics
 
 Women with PCOS had more antral follicles <9 mm (22.7±7.9 vs 9.4±4.1, p=0.001), larger ovary volume (8.0±2.9 vs 5.0±2.7 ml, p=0.028), higher Ferriman-Gallwey score, and higher circulating testosterone than controls (Table 1). Six of the 10 women with PCOS met all three PCOS criteria; two had hyperandrogenemia and PCO morphology, one had hyperandrogenism and irregular cycles, and one had irregular cycles and PCO morphology. Five weeks of treatment lowered testosterone, HOMA-IR, and HbA1c levels, tended to decrease triglyceride levels but did not improve Ferriman-Gallwey score (Table 1).
 
 Data are presented as mean ± SD. Differences between PCOS and controls were analyzed by Mann-Whitney U test. Wilcoxon signed-rank test was used to analyze changes between measurements at baseline and after 5 weeks of treatment.
 
-## Total protein expression and phosphorylation in skeletal muscle
+### Total protein expression and phosphorylation in skeletal muscle
 
 In total, we identified 3480 proteins in skeletal muscle. 58 unique proteins were found to be differentially expressed in skeletal muscle from women with PCOS versus controls (p<0.05, and log2 FC ≥0.5 or ≤–0.5, Figure 2A, ). 25 proteins were upregulated and 33 were downregulated in women with PCOS and the log2 fold change in expression ranged from –3.06 to 1.21 (Supplementary file 1a). We searched for enriched signaling pathways among the differently expressed proteins using STRING analysis. Our network had significantly more interactions than expected (enrichment p-value <1e–16). This means that the differently expressed proteins have more interactions with each other than what would be expected from a random set of proteins of the same size. Such an enrichment indicates that the proteins are biologically linked. Upregulated proteins were enriched in lipid metabolic pathways including negative regulation of cholesterol transport, regulation of lipoprotein lipase activity, and negative regulation of metabolic processes (Supplementary file 1b). This enrichment was driven by increased expression of apolipoproteins C-I, C-II, and C-III (Figure 2B), which are also enriched in the negative regulation of lipoprotein lipase activity (GO:0051005). Aldo-keto reductase family 1 members C1 and C3 (AKR1C1 and AKR1C3, Figure 2B), which have an androsterone dehydrogenase activity (GO:0047023), were also upregulated and AKR1C1 was strongly correlated to higher circulating testosterone levels (Spearman’s rho = 0.65, p=0.002), suggesting that muscle may produce testosterone via the backdoor pathway. Moreover, perilipin-1 that typically coats the surface of lipid droplets in adipocytes (Gandolfi et al., 2011; Zhao et al., 2021), the so-called extra-myocellular adipocytes, was increased in PCOS muscle. The increased expression of perilipin-1 was confirmed by immunofluorescence staining and quantification of muscle biopsies (Figure 2C and D).
 
@@ -140,13 +241,13 @@ Then, an androgen-exposed PCOS-like mouse model was used to corroborate that and
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87592/elife-87592-fig4-v1.jpg)
 
-**Figure 4.:** (A) Decreased expression of the slow type I skeletal muscle fibers myosin heavy chain beta (MYH7) in dihydrotestosterone (DHT)-exposed polycystic ovary syndrome (PCOS)-like mice. This effect was partly blocked by the androgen receptor antagonist flutamide (n=5–6/group). (B) Decreased expression of slow type I skeletal muscle fibers (MYH7) in skeletal muscle-specific androgen receptor knockout mice (SkMARKO) compared to wild type (wt) (p=0.033). DHT exposure did not alter the number of type I fibers in SkMARKO (n=6–8/group). (C) Representative expression of myosin heavy chain beta. Differences in (A) are based on one-way ANOVA with Dunnets multiple comparisons test and (B) on two-way ANOVA, and presented as mean ± SEM. The full raw unedited uncropped blots with the relevant bands clearly labeled are provided as Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) Decreased expression of the slow type I skeletal muscle fibers myosin heavy chain beta (MYH7) in dihydrotestosterone (DHT)-exposed polycystic ovary syndrome (PCOS)-like mice. This effect was partly blocked by the androgen receptor antagonist flutamide (n=5–6/group). (B) Decreased expression of slow type I skeletal muscle fibers (MYH7) in skeletal muscle-specific androgen receptor knockout mice (SkMARKO) compared to wild type (wt) (p=0.033). DHT exposure did not alter the number of type I fibers in SkMARKO (n=6–8/group). (C) Representative expression of myosin heavy chain beta. Differences in (A) are based on one-way ANOVA with Dunnets multiple comparisons test and (B) on two-way ANOVA, and presented as mean ± SEM. The full raw unedited uncropped blots with the relevant bands clearly labeled are provided as Figure 4—source data 1.
 
 We searched for overlap between the differentially expressed proteins in skeletal muscle in this study and the differentially expressed genes in our previous meta-analysis of gene expression array data (Manti et al., 2020). As suspected, the overlap between gene expression and protein levels was small. We found that 1 upregulated and 12 downregulated genes in muscle biopsies from women with PCOS were also differently expressed at the protein level in this study (Supplementary file 1c). Several proteins involved in skeletal muscle contraction were consistently downregulated at the mRNA expression level in muscle tissue from women with PCOS including MYL3, MYOZ2, TNNT1, LMOD2, NRAP, and XIRP1 (Supplementary file 1c).
 
 We identified 5512 phosphosites in muscle, and 61 sites in 40 unique proteins were differentially phosphorylated in PCOS versus controls (Supplementary file 1d), suggesting different protein activity. Eleven of the differently expressed proteins had one or more differently phosphorylated sites, including increased phosphorylation of Ser 130, 382, and 497 in perilipin-1. Many of the proteins in the thick and thin filaments had one or more altered phosphorylation sites (Figure 3G). There were no significantly enriched pathways among the differently expressed phosphosites.
 
-## Total protein expression and phosphorylation in adipose tissue
+### Total protein expression and phosphorylation in adipose tissue
 
 In total, we identified 5000 proteins in adipose tissue but the difference between groups was modest. 21 unique proteins were found to be differentially expressed in adipose tissue from women with PCOS versus controls (p<0.05, and log2 FC ≥0.5 or ≤–0.5, Figure 5A). Six proteins were upregulated and 15 were downregulated in women with PCOS and the log2 fold change in expression ranged from 2.1 to –1.6 (Figure 5B, Supplementary file 1c). Several of the upregulated proteins play a role in immune system processes including immunoglobulins, human leukocyte antigen (HLA) class I histocompatibility antigen, and sequestosome 1. Sequestosome 1 may also regulate the mitochondrial organization (Poon et al., 2021). Three mitochondrial matrix proteins – tRNA pseudouridine synthase A, Enoyl-CoA hydratase domain-containing protein 2, and NAD kinase 2 – had an altered expression (Figure 5B), possibly indicating mitochondrial dysfunction. There were three significantly enriched signaling pathways in adipose tissue based on a lower expression of leiomodin-1 and adseverin: actin nucleation (GO:0045010), positive regulation of cytoskeleton organization (GO:0051495), and positive regulation of supramolecular fiber organization (GO:1902905).
 
@@ -158,7 +259,7 @@ Both low-grade inflammation and transforming growth factor beta (TGFβ)-induced 
 
 We identified 5734 phosphosites in adipose tissue, of which 39 were differently phosphorylated sites in 34 unique proteins. Ten of these sites had lower phosphorylation (Supplementary file 1f). There was no overlap between differently phosphorylated proteins and differently expressed proteins. Perilipin-1 had two phosphorylation sites with higher phosphorylation: Ser 497 and 516 in PCOS adipose tissue compared to controls (Supplementary file 1f). Ser 497 showed increased phosphorylation in perilipin-1 in both muscle and adipose tissue. Under adrenergic stimulation, perilipin-1 is phosphorylated at Ser 497 by protein kinase A, which in turn triggers lipolysis by hormone sensitive lipase in adipocytes (Marcinkiewicz et al., 2006).
 
-## Skeletal muscle protein expression and phosphorylation changes in skeletal muscle after treatment with electrical stimulation
+### Skeletal muscle protein expression and phosphorylation changes in skeletal muscle after treatment with electrical stimulation
 
 Since long-term electrically stimulated muscle contractions improve glucose regulation and lower androgen levels in women with PCOS (Stener-Victorin et al., 2016), we analyzed genome-wide mRNA expression from women with PCOS after treatment to identify changes in skeletal muscle gene expression in response to stimulation. None of the transcripts exhibited changes in expression after FDR correction after 5 weeks of treatment (q<0.05), but 12 transcripts had an FC >1.2 (p<0.05, ), of which 5 were different collagens. We also analyzed whether the response to electrical stimulation was associated with DNA methylation changes in skeletal muscle. We found that 41,186 (13.8%) of 298,332 analyzed CpG sites had differential methylation in skeletal muscle after treatment (p<0.05), which is almost three times more than expected by chance (p<0.0001, χ2 test). Of these, 43 CpG sites remained significant after FDR correction (q<0.05, ). The majority of the sites (74%) showed decreased methylation in response to treatment. The absolute change in DNA methylation in response to treatment ranged from 3% to 14% points.
 
@@ -170,7 +271,7 @@ Since mRNA expression was not significantly regulated in response to repeated el
 
 198 phosphosites in 152 unique proteins showed a changed phosphorylation in response to electrical stimulation. 178 sites had higher phosphorylation, and 46 sites were less phosphorylated (Supplementary file 1j). There were no significant enriched pathways among the proteins with differently expressed phosphorylation sites. 38 of the differently expressed proteins had one or more differently phosphorylated sites. These proteins, with changes in both total protein and phosphorylation levels, were enriched in actin filament organization (GO:0007015).
 
-## Total protein expression and phosphorylation in adipose tissue after treatment
+### Total protein expression and phosphorylation in adipose tissue after treatment
 
 Similar to skeletal muscle, long-term electrical stimulations had minimal effects on gene expression in adipose tissue. None of the transcripts exhibited changes in expression after FDR correction (q<0.05) after 5 weeks of treatment, or had a FC >1.2 (data not shown). We found that 23,517 (7.9%) of 298,289 analyzed CpG sites had differential methylation in adipose tissue after 5 weeks of treatment (p<0.05), which is more than expected by chance (p<0.0001, χ2 test). The majority (63.5%) of these sites showed reduced methylation in response to treatment. One CpG site remained significant after FDR correction (q<0.05, –2.2% points reduced methylation of cg13383058 in the transcription start site of CD248). Therefore, we investigated whether the long-term effects were regulated at the protein level. 61 unique proteins were found to be changed in adipose tissue after electrical stimulation treatment (Figure 7A, Supplementary file 1k). Most of the proteins were upregulated (85%) and nine were downregulated in women with PCOS after treatment, and the log2 fold change in expression ranged from –0.89 o 1.41. The upregulated enriched signaling pathways include ECM organization and Fc-gamma receptor signaling (Supplementary file 1l). In accordance with these findings, 5 weeks of treatment increased the fibrillar collagen content in adipose tissue (Figure 7B). The expression of DNA topoisomerase 1 and leimodulin-1 was lower in women with PCOS than in controls but increased after treatment (Supplementary file 1k). Leimodulin-1 is required for proper contractility of smooth muscle cells by mediating nucleation of actin filaments, and myosin regulatory light polypeptide 9 plays an important role in regulating smooth muscle contractile activity. The enzyme prostacyclin synthase, a potent mediator of vasodilation, was also increased and could act on the smooth muscles in the vessel wall. 49 phosphosites in 46 unique proteins showed altered phosphorylation in response to electrical stimulation. All except four sites had higher phosphorylation (Supplementary file 1m). There were no significantly enriched pathways among the proteins with differently expressed phosphosites.
 
@@ -182,7 +283,7 @@ Similar to skeletal muscle, long-term electrical stimulations had minimal effect
 
 ## Discussion
 
-## Proteome signature in PCOS
+### Proteome signature in PCOS
 
 We have profiled the proteome of skeletal muscle and adipose tissue to advance our understanding of the pathophysiology of PCOS. The changes in protein expression in adipose tissue were small, whereas in skeletal muscle of women with PCOS there was a clear downregulation of proteins involved in muscle contraction. The skeletal muscle contains a mixture of slow-twitch oxidative and fast-twitch glycolytic myofibers, which exhibit different physiological properties. Type I, or red fibers, are slow-twitch fatigue-resistant muscle fibers that have higher mitochondrial and myoglobin content, and are thus more aerobic than type II fast-twitch fibers. Several proteins specific to or known to be highly expressed in type I muscle fibers were consistently downregulated in women with PCOS. These proteins are located in both the thick and the thin filaments of slow-twitch fibers. These data suggest that there are fewer type I fibers, decreased number and/or smaller, in the PCOS muscle. Unfortunately, we were unable to quantify the number of type I fibers in the entire cohort because of the poor quality of the PCOS muscle biopsies and the unavailability of muscle tissue. We also identified several differently phosphorylated sites in proteins located in the thick and thin filaments, indicating a differential protein activity, since phosphorylation can change the activity of a protein.
 
@@ -196,7 +297,7 @@ PCOS is associated with chronically elevated levels of inflammatory markers in t
 
 In adipose tissue, the difference between groups was small with relatively few differently expressed proteins but several of the proteins with a higher expression play a role in immune system processes including immunoglobulins and HLA-B. Sequestosome-1 is an immunometabolic protein that is both involved in the activation of nuclear factor kappa-B and regulates mitochondrial functionality by modulating the expression of genes underlying mitochondrial respiration (Poon et al., 2021). Alterations in the immune response and immunometabolic pathways are seen in both muscle and adipose tissue, but whether and how these alterations affect and potentially contribute to the pathophysiology of PCOS remains to be investigated.
 
-## Electrical stimulation-related proteome changes
+### Electrical stimulation-related proteome changes
 
 Regular physical exercise improves insulin sensitivity and is the first-line approach to manage both reproductive and metabolic disturbances in those with PCOS and overweight or obesity, but adherence is low. Electrical stimulations inducing contraction could therefore be an alternative way to ameliorate symptoms in women with PCOS, alongside exercise. Transcriptomic changes in response to one single bout of electrical stimulation mimic the response to one bout of exercise (Benrick et al., 2020). Therefore, we hypothesize that long-term treatment with electrical stimulation or exercise also triggers overlapping signaling pathways. Five weeks of repeated treatment with electrical stimulation did not alter mRNA expression but increased the expression of several hundred proteins in skeletal muscle and about 50 proteins in adipose tissue. The most pronounced changes in both tissues were mechanisms involved in wound healing such as the increase in ECM formation and enriched pathways for nitric oxide metabolic process and Fc-gamma receptor signaling pathways. Moreover, wound healing and blood coagulation pathways were upregulated in skeletal muscle, suggesting that repeated needling induces small damages in the tissues that trigger a wound healing response. However, increased expression of ECM-related structural components such as collagens and integrins are not only involved in wound healing, but are also increased in response to muscle contractions as previously shown in response to eccentric exercise and repeated electrical stimulation with electrodes (Mackey et al., 2011; Hyldahl et al., 2015). We propose that these changes are induced by contraction but we cannot rule out that the ECM-related changes occurred as a direct result of repeated needle insertion. The delayed synthesis of collagens and subsequent strengthening of the ECM structural matrix in response to both exercise and electrical stimulation without needle insertion (Mackey et al., 2011; Hyldahl et al., 2015) supports the idea that contractions induce remodeling of the ECM that may provide protective adaptation to repeated contractions.
 
@@ -204,10 +305,10 @@ We hypothesized that electrical stimulations mimic the response to repeated exer
 
 Repeated treatment with electrical stimulation improves glucose homeostasis and lowers Hba1c in women with PCOS (Stener-Victorin et al., 2016). A not so well-characterized, upregulated pathway involves exocytosis and protein transport, which is of interest with regard to glucose transporter 4 (GLUT4) translocation stimulated by AMP kinase (AMPK). The activity of AMPK in muscle increases substantially during contraction and increases glucose transport. AMPK has been linked to at least two mechanisms for the control of vesicle trafficking, namely the regulation of Rab and the generation of phosphatidylinositol 3,5-bisphosphate in the control of GLUT4 translocation (Sylow et al., 2017). The Rab GTPase-activating proteins TBC1D1 and TBC1D4 are thought to mediate the effects of AMPK on GLUT4 translocation and glucose transport. At present, it is unclear which specific Rab proteins might be regulated by AMPK downstream of TBC1D1 and TBC1D4, but Rab-13 appears to act downstream of TBC1D4 (Sylow et al., 2017). Six Rab proteins showed higher expression after electrical stimulation, including Rab-13, making these proteins potential candidates for regulating glucose uptake by electrically stimulated contractions. The proteome in adipose tissue and skeletal muscle did not show differential expression of proteins with well-known metabolic effects that can easily explain the improvement in Hba1c. This could be due to the timepoint when the biopsies were collected, which was within 48 hr of the last treatment when the acute effects of electrical stimulation are no longer present and the long-term changes may be more subtle.
 
-## Limitations
+### Limitations
 
 The interpretation of the protein expression in this study is limited by the relatively small number of women (n=10/group), the inclusion of only Caucasian women, and a mix of PCOS phenotypes since we used the Rotterdam diagnostic criteria. Moreover, we cannot distinguish whether the identified dysregulated pathways are responses to PCOS or causal effectors. Some may argue that another limitation is the fact that we cannot identify the changes in protein expression in specific cell types, i.e., adipocytes and myocytes, as the biopsies consist of many different cell types and structures, e.g., nerves, immune cells, vessels, and connective tissue. However, this can also be seen as a strength, as no cell acts independently of the cells surrounding it.
 
-## Conclusions
+### Conclusions
 
 Our findings suggest that highly oxidative and insulin-sensitive type I muscle fibers are decreased in PCOS which in combination with more extra-myocellular lipids may be key factors for insulin resistance in PCOS muscle. In adipose tissue, the difference between groups was small. A 5-week treatment with electrical stimulation triggered a wound healing response in both adipose tissue and skeletal muscle. In addition, remodeling of the ECM can provide protective adaptation to repeated skeletal muscle contractions.

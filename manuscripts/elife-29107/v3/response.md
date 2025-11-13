@@ -174,9 +174,7 @@ An attractive genetic experiment for the future would be to constitutively expre
 
 We agree that the proposed experiment would be very interesting. We did not yet attempt to constitutively express DIS and RAM2 in the str background. However, we tried whether constitutive expression of DIS and RAM2 and a combination of both under the control of a strong ubiquitin promoter in the wild-type could enhance root colonization. In two independent experiments, we could neither detect enhanced transcript accumulation of DIS and RAM2 (normalized to Ubiquitin10 transcript accumulation) nor enhanced root length colonization. Therefore, we suspect that increased transcript accumulation of DIS and RAM2 may be difficult to achieve in L. japonicus hairy roots. The approach works per se because in a previous study we observed that RAM1 transcript accumulation was strongly increased in colonized wild-type roots, when the roots were transformed with a RAM1 fused to the very same ubiquitin promoter (see Pimprikar et al. 2016, Figure S3).
 
-Please see the results from one of the two experiments below.10.7554/eLife.29107.049Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.29107.049
-
-DOI: http://dx.doi.org/10.7554/eLife.29107.049
+Please see the results from one of the two experiments below.10.7554/eLife.29107.049Author response image 1.
 
 One question relates to a point raised by previous reviewer 3 and the authors' reply that membrane formation during initial colonization is supported by vesicles. Would a photosynthetic nurse plant be able to provide the lipids for vesicle formation and thus lipids that could be sourced to form new arbuscules (as pointed out before)? Please discuss.
 

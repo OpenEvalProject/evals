@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03rc6as71 Shanghai Engineering Research Center of Tooth Restoration and Regeneration & Tongji Research Institute of Stomatology & Department of Prosthodontics, Shanghai Tongji Stomatological Hospital and Dental School, Tongji University Shanghai China
-2. https://ror.org/03gqsr633 Department of Neurology and Neurological Rehabilitation, Shanghai Disabled Persons' Federation Key Laboratory of Intelligent Rehabilitation Assistive Devices and Technologies, Yangzhi Rehabilitation Hospital (Shanghai Sunshine Rehabilitation Center), School of Medicine, Tongji University Shanghai China
+1. Shanghai Engineering Research Center of Tooth Restoration and Regeneration & Tongji Research Institute of Stomatology & Department of Prosthodontics, Shanghai Tongji Stomatological Hospital and Dental School, Tongji University Shanghai China ([ROR:03rc6as71](https://ror.org/03rc6as71))
+2. Department of Neurology and Neurological Rehabilitation, Shanghai Disabled Persons' Federation Key Laboratory of Intelligent Rehabilitation Assistive Devices and Technologies, Yangzhi Rehabilitation Hospital (Shanghai Sunshine Rehabilitation Center), School of Medicine, Tongji University Shanghai China ([ROR:03gqsr633](https://ror.org/03gqsr633))
 
 † Corresponding author
 
 ## Abstract
 
-It has been well validated that chronic psychological stress leads to bone loss, but the underlying mechanism remains unclarified. In this study, we established and analyzed the chronic unpredictable mild stress (CUMS) mice to investigate the miRNA-related pathogenic mechanism involved in psychological stress-induced osteoporosis. Our result found that these CUMS mice exhibited osteoporosis phenotype that is mainly attributed to the abnormal activities of osteoclasts. Subsequently, miRNA sequencing and other analysis showed that miR-335-3p, which is normally highly expressed in the brain, was significantly downregulated in the nucleus ambiguous, serum, and bone of the CUMS mice. Additionally, in vitro studies detected that miR-335-3p is important for osteoclast differentiation, with its direct targeting site in Fos . Further studies demonstrated FOS was upregulated in CUMS osteoclast, and the inhibition of FOS suppressed the accelerated osteoclastic differentiation, as well as the expression of osteoclastic genes, such as Nfatc1, Acp5, and Mmp9 , in miR-335-3p-restrained osteoclasts. In conclusion, this work indicated that psychological stress may downregulate the miR-335-3p expression, which resulted in the accumulation of FOS and the upregulation of NFACT1 signaling pathway in osteoclasts, leading to its accelerated differentiation and abnormal activity. These results decipher a previously unrecognized paradigm that miRNA can act as a link between psychological stress and bone metabolism.
+It has been well validated that chronic psychological stress leads to bone loss, but the underlying mechanism remains unclarified. In this study, we established and analyzed the chronic unpredictable mild stress (CUMS) mice to investigate the miRNA-related pathogenic mechanism involved in psychological stress-induced osteoporosis. Our result found that these CUMS mice exhibited osteoporosis phenotype that is mainly attributed to the abnormal activities of osteoclasts. Subsequently, miRNA sequencing and other analysis showed that miR-335-3p, which is normally highly expressed in the brain, was significantly downregulated in the nucleus ambiguous, serum, and bone of the CUMS mice. Additionally, in vitro studies detected that miR-335-3p is important for osteoclast differentiation, with its direct targeting site in Fos. Further studies demonstrated FOS was upregulated in CUMS osteoclast, and the inhibition of FOS suppressed the accelerated osteoclastic differentiation, as well as the expression of osteoclastic genes, such as Nfatc1, Acp5, and Mmp9, in miR-335-3p-restrained osteoclasts. In conclusion, this work indicated that psychological stress may downregulate the miR-335-3p expression, which resulted in the accumulation of FOS and the upregulation of NFACT1 signaling pathway in osteoclasts, leading to its accelerated differentiation and abnormal activity. These results decipher a previously unrecognized paradigm that miRNA can act as a link between psychological stress and bone metabolism.
 
 ## Introduction
 
@@ -32,31 +32,49 @@ In this context, we primarily established the chronic unpredictable mild stress 
 
 ## Results
 
-## CUMS induces behavioral and physiological changes
+### CUMS induces behavioral and physiological changes
 
 The mental state of mice was examined by body weight, behavioral and serum parameters. It is shown that the CUMS mice had significantly lower body weights (Figure 1B) compared to the control group. They had considerably lower distances (Figure 1C) and times (Figure 1D) within the central area of the open field but did not differ from the control group in terms of the total distance moved in the open field (Figure 1E). Besides, the tail-hanging experiment showed that the immobilization time of mice in the CUMS group to give up struggling was significantly increased (Figure 1F and G). At the same time, they had a lower sucrose preference index (Figure 1H). In addition, serum corticosterone (CORT) (Figure 1J) and norepinephrine (NE) (Figure 1J) levels were significantly elevated in CUMS mice. Taken together, these results all indicated that CUMS modeling caused the mice to develop anxiety and depression-like behaviors.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the procedure used to establish a CUMS model in mice. (B) Body weight (n = 9). (C) Distance moved and (D) time spent in the central area of open-field test (OFT) (n = 9). (E) Total distance moved in OFT (n = 9). (F) Frequency and amplitude of body movements during struggle. (G) Immobility in tail suspension test (TST) (n = 9). (H) Sucrose preference index (n = 9). (I) Serum corticosterone (CORT) levels (n = 6). (J) Serum norepinephrine (NE) levels (n = 5). All data are presented as means ± SD; ns, p>0.05, *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of the procedure used to establish a CUMS model in mice. (B) Body weight (n = 9). (C) Distance moved and (D) time spent in the central area of open-field test (OFT) (n = 9). (E) Total distance moved in OFT (n = 9). (F) Frequency and amplitude of body movements during struggle. (G) Immobility in tail suspension test (TST) (n = 9). (H) Sucrose preference index (n = 9). (I) Serum corticosterone (CORT) levels (n = 6). (J) Serum norepinephrine (NE) levels (n = 5). All data are presented as means ± SD; ns, p>0.05, *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.
 
-## CUMS leads to bone loss
+### CUMS leads to bone loss
 
 Next, mouse femurs from different groups were dissected for micro-CT scanning (Figure 2A–D) and H&E staining (Figure 2E). Then, quantitatively analyzed histomorphometry, bone mineral density, and bone microarchitecture to assess the bone remodeling were influenced by psychological stress. It was found that the femurs of CUMS mice had sparse cancellous bone and thinner cortical bone compared to control mice, indicating that psychological stress harmed both cancellous and cortical bone.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig2-v1.jpg)
 
-**Figure 2.:** (A) Three-dimensional reconstruction images of femurs from control and CUMS mice. (B) Representative X-ray images of femurs from control and CUMS mice. Quantitative micro-CT analysis of femur (C) trabecular bone and (D) cortical bone. (E) H&E staining, scale bar, 200 um. All data are presented as mean ± SD, n = 7; *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Three-dimensional reconstruction images of femurs from control and CUMS mice. (B) Representative X-ray images of femurs from control and CUMS mice. Quantitative micro-CT analysis of femur (C) trabecular bone and (D) cortical bone. (E) H&E staining, scale bar, 200 um. All data are presented as mean ± SD, n = 7; *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.
 
-## CUMS promotes bone formation slightly but enhances osteoclast activity significantly
+### CUMS promotes bone formation slightly but enhances osteoclast activity significantly
 
 To further explore the cause of psychological stress-induced bone loss, the osteogenic activity of mice was then examined in the CUMS group. Firstly, Masson staining visualized that more osteoid was present in cortical and cancellous bone in CUMS mice (Figure 3A). In addition, the distance between two fluorochromes calcein lines was found wider in CUMS mice, suggesting the mineral deposition rate in CUMS mice was faster than control ones (Figure 3D). Then RNA were isolated to examine osteoblast-related genes and found that the expression of osterix (Osx), osteocalcin (Ocn), osteopontin (Opn), and dentin matrix protein 1 (Dmp1) was elevated at the mRNA level in CUMS mice, whereas no significant difference was observed in runt-related transcription factor 2 (Runx2) and alkaline phosphatase (Alpl) (Figure 3E). Besides, immunohistochemical staining of OSX and OCN displayed that the protein expression of OSX was higher in CUMS mice (Figure 3B), but no considerable difference could be found in OCN (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig3-v1.jpg)
+
+**Figure 3.:** (A) Masson staining. (B, C) Representative IHC images for OSX, OCN expression in the femur. (D) Calcein double labeling of cortical bone with quantification of MAR. (E) qRT-PCR quantification analysis of osteogenic markers including Osx, Ocn, Opn, Dmp1, Runx2, and Alpl. (F) Representative tartrate-resistant acid phosphatase (TRAP) staining images of the femur with quantitative analysis of (G) osteoclast surface per bone surface (Oc.S/BS) and (H) number per bone surface (N.OC/B). (I) qRT-PCR quantification analysis of osteogenic markers including Ca2, Mmp9, Nfatc1, and Acp5. (J) Representative IHC images for MMP9 in the femur. All data are presented as mean ± SD, n = 3; *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test. Scale bar, 100 um.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Serum ELISA assay of osteogenic and osteoclastic markers. (B) Serum biochemical assay of osteogenic and osteoclastic markers. All data are presented as mean ± SD, n = 4; ns, p>0.05, *p<0.05, **p<0.01, by unpaired Student’s t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** All data are presented as mean ± SD, n = 3; ns, p>0.05, by unpaired Student’s t-test.
+
 Since the enhanced osteogenesis could not explain the reduced bone mass under psychological stress, we further examined the osteoclastic activity of CUMS mice. Tartrate-resistant acid phosphatase (TRAP) staining showed a significant increase in the number and area of TRAP-positive osteoclasts under CUMS (Figure 3G and H). Then, RT-PCR analysis of mouse femurs revealed that several osteoclastic genes, such as Ca2, Mmp9, Nfatc1, and Acp5, were significantly increased in CUMS mice (Figure 3I, Figure 3—figure supplement 2). Consistently, immunohistochemistry analyses also showed an elevated MMP9 expression in CUMS mice (Figure 3J). What’s more, the serum concentration of TRAP, calcium (CA), and phosphate (P) also increased in CUMS mice, while parathyroid hormone (PTH) level in serum decreased (Figure 3—figure supplement 1), which indicated that they might be in the initial phase of osteoporosis. The enhanced osteoclastic function promoted ions release from the bone matrix and in turn slightly promote the level of CA and P and suppress the PTH secretion temporarily. Thus, these data demonstrate that osteoclastic activity is elevated in vivo under psychological stress, which may be a more direct and vital cause of the decline in bone mass.
 
-## miR-335-3p is apparently downregulated in CUMS mice
+### miR-335-3p is apparently downregulated in CUMS mice
 
 To search the key miRNAs involved in the abnormal bone metabolism correlated to chronic stress, femurs (dissected off the growth plate) were collected from different groups for sRNA-seq, respectively. The heat map and volcano plot analysis displayed that a number of miRNAs were significantly altered in CUMS mice (Figure 4A and B). The most significant variations including miR-335-3p, miR-133a-3p, miR-1298-5p, miR-144-5p, miR-1b-5p, mi5-582-3p, based on the criteria of |Log2 Fold Change (FC)|>1.5.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig4-v1.jpg)
+
+**Figure 4.:** (A) The heatmap and (B) volcano plot for visualization of differentially expressed miRNAs in the femur proximal to the distal femoral growth plate (p<0.05). (C, D) Gene Ontology (GO) terms associated with targeted mRNA of differentially expressed miRNAs between groups obtained by database (miRDB and miRTarBase) prediction. (E) Validation by real-time expression analysis of miRNAs with statistically significant differences (Con, n = 3; chronic unpredictable mild stress [CUMS], n = 5). (F) Real-time expression of miR-335-3p in five stress-related brain regions (n = 4) and (G) serum (n = 3). All data are presented as mean ± SD, n = 5; *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig4-figsupp1-v1.jpg)
 
 In addition, based on these differentially expressed miRNAs, miRDB and miRTarBase databases were used to predict potential target genes, which then performed bioinformatics analysis. In total, 184 Gene Ontology (GO) terms were enriched in target genes according to the criteria false discovery rate (FDR) < 0.05. The results identified alteration in the DNA binding, transcription activity, cell differentiation, and nervous system development, with most predicted genes being enriched (Figure 4C and D).
 
@@ -64,13 +82,29 @@ Later, a 3.4-fold and 31-fold decrease in miR-335-3p, miR-133a-3p was further ve
 
 In addition, it is stress signals received by the brain that induced local miR-335-3p alterations in bone tissue. miR-335-3p is highly expressed in the brain, according to the mouse small noncoding RNA tissue atlas (https://www.ccb.uni-saarland.de/asra/; Figure 4—figure supplement 1). So the expression of miR-335-3p were detected subsequently in five critical brain regions, including medial prefrontal cortex (mPFC), nucleus ambiguous (NAC), amygdala, hypothalamus, and hippocampus, which play key roles in receiving and processing chronic stress. Only miR-335-3p was significantly decreased in NAC (Figure 4G). Consistently, the miR-335-3p level in the serum of CUMS mice was also reduced (Figure 4H). These results imply that brain-derived and femur-expressed miR-335-3p maintain bone homeostasis under normal conditions. Psychological stress leads to a decrease in miR-335-3p secreted by NAC, which in turn reduces levels in the femur.
 
-## The decrease in miR-335-3p promotes osteoclast activity and bone loss
+### The decrease in miR-335-3p promotes osteoclast activity and bone loss
 
 To further confirm whether miR-335-3p affected osteoclast activity, RAW264.7 cells were transfected with mimic-NC, mimic-miR-335-3p, inhibitor-NC, or inhibitor-miR-335-3p, respectively (Figure 5—figure supplement 1). Cytochemical TRAP staining (Figure 5A–C) and pit formation assay (Figure 5D and E) showed that mimic-miR-335-3p impaired the activity and function of osteoclasts, while inhibitor-miR-335-3p significantly promotes the activity and function of osteoclasts. Next, the mRNA levels of Acp5, Nfatc1, and Mmp9 in the indicated RAW264.7 cells were determined using qRT-PCR. A significantly decreased expression in these osteoclast-related genes was observed in the mimic-miR-335-3p group, but an increased expression happened in the inhibitor-miR-335-3p group (Figure 5F). Additionally, in the inhibitor-miR-335-3p group, more intranuclear NFATC1, FOS, and co-localization signals were observed by immunofluorescence staining, and this response was inhibited by transfection of mimic (Figure 5G). More importantly, mice injected with antagomir-miR-335-3p showed significant bone loss, although the bone mass in mice injected with agomir-miR-335-3p did not find a remarkable change (Figure 5I). These results suggest that miR-335-3p may play an important role in vivo as a bone protector.
 
-## miR-335-3p alters osteoclast activity by targeting Fos
+![Figure 5.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative cytochemical tartrate-resistant acid phosphatase (TRAP) staining images, Scale bar, 200 um. (B) The amounts of osteoclasts (multinucleated TRAP-positive cells), n = 5. (C) The positive TRAP area of osteoclasts, n = 5. (D) Representative resorption pits, Scale bar, 200 um. (E) The area of resorbed surface, n = 6. (F) qRT-PCR quantification analysis of Acp5, Nfatc1, Mmp9 expression of RANKL-induced RAW264.7 transfected with mimic-NC, mimic-miR-335-3p, inhibitor-NC, or inhibitor-miR-335-3p, n = 3. (G) Representative IF images for FOS, NFATC1, and HOCHEST expression, Scale bar, 200 um. (H) Three-dimensional reconstruction images of femurs from agomir NC, agomir-mir-335-3p, antagomir NC, and antagomir-miR-335-3p mice. (I) Quantitative micro-CT analysis of femur trabecular bone, n = 3; scale bar, 1 mm. All data are presented as mean ± SD; *p<0.05, **p<0.01, ***p<0.001, by unpaired Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** All data are presented as mean ± SD; *p<0.05, ****p<0.0001, by unpaired Student’s t-test.
+
+### miR-335-3p alters osteoclast activity by targeting Fos
 
 To seek the downstream molecular mechanisms that mediate the effects of miR-335-3p on the osteoclast, the ingenuity pathways analysis was made based on miR-335-3p and its predicted target gene in the miRDB and miRTarBase databases. The results show that Fos is one of the mRNA that miR-335-3p could target with a high prediction score and have a tight connection with osteoclast differentiation and maturation and osteoporosis (Figure 6A). FOS has been previously described as a regulator of transcription factors. It could induce NFATC1 translocation and finally increase the expression of osteogenic markers such as Acp5, Ctsk, and Mmp9 (Deng et al., 2022). Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis based on the above predicted target genes resulted in the same higher enrichment for transcription factors activity and DNA binding (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig6-v1.jpg)
+
+**Figure 6.:** (A) The ingenuity pathways analysis (IPA) of miR-335-3p and its predictive target gene. (B) Kyoto Encyclopedia of Genes and Genomes (KEGG) terms associated with targeted mRNA of differentially expressed miRNAs between groups obtained by database (miRDB and miRTarBase) prediction. (D) Firefly luciferase activity (n = 3). (C) Sequence alignment of miR-335-3p and its predictive target sites in 3′UTR of Fos. (E) Representative IF images for FOS, CTSK, and HOCHEST expression in the femur (scale bar, 50 um). (F) Representative cytochemical tartrate-resistant acid phosphatase (TRAP) staining images (scale bar, 200 um). (G) The area and (H) the number of osteoclasts (multinucleated TRAP-positive cells) (n = 4). (I) qRT-PCR quantification analysis of Acp5, Nfatc1, Mmp9 expression of RANKL-induced RAW264.7 transfected with inhibitor-NC, miR-335-3p-inhibitor, or miR-335-3p-inhibitor+T5224 (n = 3).All data are presented as mean ± SD; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, by one-way ANOVA with Tukey’s post hoc test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95944/elife-95944-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** All data are presented as mean ± SD, n = 3; ns, p>0.05, by unpaired Student’s t-test.
 
 Next, the dual-luciferase, co-transfection of miR-335-3p, suppressed the luciferase activity of the reporter containing wildtype Fos 3'UTR sequence by dual-luciferase reporter assay, which further strongly verifies the direct target relationship between miR-335-3p and Fos. But it failed to completely return to normal luciferase activity of two predicted target sites (Figure 6D) deleted construct, which means other binding sites still exist (Figure 6C). Furthermore, at the protein level, there were stronger signals that FOS co-localized with CTSK in the femur of CUMS mice, whose miR-335-3p level decreased (Figure 6E), although there was no significant difference at the mRNA level (Figure 6—figure supplement 1). These results suggest that the enhanced osteoclastic activity under psychological stress may be due to the reduction in miR-335-3p in the femur, which in turn slows down its inhibitory effect on Fos in osteoclast.
 
@@ -98,68 +132,263 @@ In conclusion, our study suggests that enhanced osteoclast activity is a major c
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Male C57BL/6J mice, aged 6 weeks, purchased from Shanghai Model Organisms Center, Inc, were raised at the Hubei Laboratory Animal Center, Tongji University, with a 12 hr light/12 hr dark cycle, a room temperature of 22–24°, humidity of 45–55%, and free access to food and water. All experimental procedures were approved by and performed in accordance with the standards of the Animal Welfare Committees of Tongji University in Shanghai, China (number: TJ-HB-LAC-2023-39).
 
-## Establishment of CUMS mouse models
+### Establishment of CUMS mouse models
 
 After 1 week of acclimation, 18 mice were divided into the control group and CUMS model group. CUMS was carried out as described previously (Antoniuk et al., 2019; Willner, 2017) with slight modifications, and the stimulations included 24 hr food deprivation, 24 hr water deprivation, 1 min tail pinch, 7 hr 45° cage tilt, 24 hr wet cage, 5 min forced swimming, 5 hr physical restraint, and 24 hr day/night reversal. These stressors were randomized to CUMS mice and continued for 6 weeks, while control mice were handled daily in the housing room. Body weight was monitored once every week at 15:30-16:30. Figure 1A shows the schedule of this study.
 
-## Validation of the function of miR-335-3p in vivo
+### Validation of the function of miR-335-3p in vivo
 
 The mice were randomly divided into four groups: (1) agomir NC, (2) agomir-miR-335-3p, (3) antagomir NC, and (4) antagomir-miR-335-3p groups. Mice in the agomir NC group and agomir-miR-335-3p group were treated with negative control agomir (5 nM) and agomir (5 nM) (QianMo Biotechnology Company, Shanghai, China) by tail vein injection every 5 days. Mice in the antagomir NC group and antagomir-miR-335-3p (QianMo Biotechnology Company) group were treated with negative control antagomir (50 nM) and antagomir (50 nM) at the same time interval. The injection lasted 8 weeks.
 
-## Behavior analysis
+### Behavior analysis
 
 All behavioral tests were done in a dimly lit and quiet room. Animals were acclimatized in the room for at least 2 hr before formal testing. The testing period did not span the diurnal period of the mice. The behavioral performance was monitored and recorded using a digital camera connected to a computer running the Tracking Master software.
 
-## Open-field test (OFT)
+### Open-field test (OFT)
 
 The mice were placed in a white open field (40 cm long, 40 cm wide, and 40 cm high). The total horizontal distance traveled in 10 min, as well as the time and distance traveled in the center area (20 cm * 20 cm), was recorded and calculated. 75% alcohol was used to clean the box during the tests of different mice.
 
-## Tail suspension test (TST)
+### Tail suspension test (TST)
 
 The mice were suspended individually, with one end of an adhesive tape fixed about 1 cm from the tip of the tail, and the other end stocked to the TST apparatus. The mice were held at a 25–30 cm distance between the tip of their nose and the ground. Their behavior was monitored for 6 min, and the immobility time in the latter 4 min was calculated.
 
-## Sucrose preference test (SPT)
+### Sucrose preference test (SPT)
 
 Mice were single housed and provided with two identical bottles of drinking water. First, mice were acclimatized to two bottles of normal drinking water for 24 hr. Then, they were given one bottle of normal water and one bottle of 1% sucrose water for the next 24 hr and switched the positions of the two water bottles at the 12th hour. Mice were water and food deprived for 24 hr before the test. During the test, they had free access to normal water and 1% sucrose water, and the positions of the bottles were switched in the middle of the test. The liquid consumption in each bottle over 12 hr was measured, and the sucrose preference index was calculated by dividing the consumption of sucrose solution by the total amount of fluid (water +sucrose).
 
-## Serum ELISA
+### Serum ELISA
 
 The concentrations of CORT, NE, BGP, TRAP, CTSK, and PTH in serum were measured using ELISA kits (Jiangsu MEIMIAN Industrial Co Ltd, Yancheng, China).
 
-## Serum biochemistry
+### Serum biochemistry
 
 The concentrations of CA and P in serum were measured using biochemical kits (Jiangsu MEIMIAN Industrial Co Ltd).
 
-## Micro-CT analysis
+### Micro-CT analysis
 
 The left femur was dissected from each group of mice, fixed in 4% paraformaldehyde (PFA) for 48 hr, and stored in 0.4% PFA until scanning.
 
 Micro-CT analysis (micro-CT 50, Scanco Medical, Zurich, Switzerland) was performed at a voxel size of 14  μm as described previously (Dempster et al., 2013; Parfitt et al., 1987; Kim et al., 2021a). Furthermore, 100 slices of trabecular bone underneath the growth plate (1.4  mm), and 50 slices of the cortex bone area (0.7  mm) were reconstructed for the statistical analysis. Sigma  = 1.2, supports  = 2, and threshold  = 200 were used to calculate the following parameters: bone volume (BV), bone volume over tissue volume (BV/TV), bone mineral density (BMD), trabecular separation (Tb.Sp), trabecular number (Tb.N), and trabecular thickness (Tb.Th).
 
-## Histological analysis
+### Histological analysis
 
 The right femur samples were fixed with 4% PFA for 48 hr, decalcified in 0.5 mol/L ethylene diamine tetraacetic acid (pH 7.4) for 3 weeks, and paraffin-embedded. Next, the samples were sectioned into 4-um-thick slices. H&E (Beyotime, China; C0105S) was conducted to evaluate histological morphology. Osteogenic activities were detected by Masson staining (Servicebio, China; G1006) and immunohistochemical staining for OSX (Abcam, Cambridge, MA; ab22552) and OCN (Affinity, China; DF12303). For double fluorochrome labeling, a total of two intraperitoneal injections of calcein (5 mg/kg; Sigma-Aldrich, St. Louis, MO) were given at 7-day intervals at the end of CUMS modeling, and MAR was calculated using ImageJ. Osteoclastic activities were detected by immunohistochemical staining for MMP9 (Abclonal, China; A0289) and TRAP staining (Sigma-Aldrich; 387A). The number of osteoclasts (N. OCs/BS/mm) and the TRAP-positive surface of osteoclast (OC.S/B) was calculated using ImageJ. At the level of mechanism validation, immunohistochemical staining for FOS (Cell Signaling, USA; #2250), CTSK (Santa Cruz Biotechnology, CA; sc-48353), NFATC1 (Santa Cruz Biotechnology; sc-7294), and HOCHEST (Thermo Fisher, Waltham; H3570) was used to observe the location and abundance of protein expression.
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 Total RNA was extracted from tissues or cells using RNAiso Plus (Takara Biotechnology, Japan; 9109) according to the manufacturer’s guidelines. RNA concentration was assessed with NanoDrop One. For mRNAs, cDNA was synthesized using PrimeScript RT Master Mix (Takara Biotechnology; RR036A), and a reaction mix was prepared using SYBR green master mix (Yeasen, Shanghai, China; 11201ES08). For miRNAs, miDETECT A Track miRNA qRT-PCR Starter Kit (RiboBio, Guangzhou, China; C10712-1) was used. The expression levels of the target gene were calculated using the comparative Ct (2–ΔΔCT) method with GAPDH or U6 for normalization, respectively, and using CFX Opus 96 (Bio-Rad Laboratories, Hercules, CA). The amplifications of the miRNAs were carried out using miR-335-3p-F, miR-133a-3p-F, miR-1298-5p-F, miR-144-5p-F, miR-1b-5p-F, miR-582-3p-F, miR-141-3p-F, and U6-F as forward primer and unified reverse primer as a reverse primer to amplify miR-335-3p, miR-133a-3p, miR-193b-3p, miR-1298-5p, miR-144-5p, miR-1b-5p, miR-582-3p, miR-141-3p, and U6, respectively. The primer sequences were as follows:
 
-## microRNA sequencing (sRNA-seq)
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>5'- 3'</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mouse-Opg-F</td>
+      <td>ACCCAGAAACTGGTCATCAGC</td>
+    </tr>
+    <tr>
+      <td>mouse-Opg-R</td>
+      <td>CTGCAATACACACACTCATCACT</td>
+    </tr>
+    <tr>
+      <td>mouse-Rankl-F</td>
+      <td>CAGCATCGCTCTGTTCCTGTA</td>
+    </tr>
+    <tr>
+      <td>mouse-Rankl-R</td>
+      <td>CTGCGTTTTCATGGAGTCTCA</td>
+    </tr>
+    <tr>
+      <td>mouse-Nfatc1-F</td>
+      <td>ATGCGAGCCATCATCGA</td>
+    </tr>
+    <tr>
+      <td>mouse-Nfatc1-R</td>
+      <td>GGGATGTGAACTCGGAAGAC</td>
+    </tr>
+    <tr>
+      <td>Mouse-Fos-F</td>
+      <td>CGGGTTTCAACGCCGACTA</td>
+    </tr>
+    <tr>
+      <td>Mouse-Fos-R</td>
+      <td>TTGGCACTAGAGACGGACAGA</td>
+    </tr>
+    <tr>
+      <td>mouse-Acp5-F</td>
+      <td>GACAAGAGGTTCCAGGAGACC</td>
+    </tr>
+    <tr>
+      <td>mouse-Acp5-R</td>
+      <td>GGGCTGGGGAAGTTCCAG</td>
+    </tr>
+    <tr>
+      <td>mouse-Calcr-F</td>
+      <td>CGTTCTTTATTACCTGGCTCTTGTG</td>
+    </tr>
+    <tr>
+      <td>mouse-Calcr-R</td>
+      <td>TCTGGCAGCTAAGGTTCTTGAAA</td>
+    </tr>
+    <tr>
+      <td>mouse-Mmp9-F</td>
+      <td>GGAACTCACACGACATCTTCCA</td>
+    </tr>
+    <tr>
+      <td>mouse-Mmp9-R</td>
+      <td>GAAACTCACACGCCAGAAGAATTT</td>
+    </tr>
+    <tr>
+      <td>mouse-Ca2-F</td>
+      <td>GCTGCAGAGCTTCACTTGGT</td>
+    </tr>
+    <tr>
+      <td>mouse-Ca2-R</td>
+      <td>AAACAGCCAATCCATCCGGT</td>
+    </tr>
+    <tr>
+      <td>mouse-Oscar-F</td>
+      <td>TGGTCATCAGTTTCGAAGGTTCT</td>
+    </tr>
+    <tr>
+      <td>mouse-Oscar-R</td>
+      <td>CAGCCCCAAACGGATGAG</td>
+    </tr>
+    <tr>
+      <td>mouse-Dcstamp-F</td>
+      <td>TGTATCGGCTCATCTCCTCCAT</td>
+    </tr>
+    <tr>
+      <td>mouse-Dcstamp-R</td>
+      <td>GACTCCTTGGGTTCCTTGCTT</td>
+    </tr>
+    <tr>
+      <td>mouse-Clcn7-F</td>
+      <td>AGCCTGGACTATGACAACAGC</td>
+    </tr>
+    <tr>
+      <td>mouse-Clcn7-R</td>
+      <td>GGAAAGCCGTGTGGTTGATT</td>
+    </tr>
+    <tr>
+      <td>mouse-Ctsk-F</td>
+      <td>GAAGCAGTATAACAGCAAGGTGGAT</td>
+    </tr>
+    <tr>
+      <td>mouse-Ctsk-F</td>
+      <td>TGTCTCCCAAGTGGTTCATGG</td>
+    </tr>
+    <tr>
+      <td>mouse-Sp7-F</td>
+      <td>ATGGCGTCCTCTCTGCTTG</td>
+    </tr>
+    <tr>
+      <td>mouse-Sp7-R</td>
+      <td>TGAAAGGTCAGCGTATGGCTT</td>
+    </tr>
+    <tr>
+      <td>mouse-Ocn-F</td>
+      <td>CTGACCTCACAGATgCCAAGC</td>
+    </tr>
+    <tr>
+      <td>mouse-Ocn-R</td>
+      <td>TGGTCTGATAGCTCGTCACAAG</td>
+    </tr>
+    <tr>
+      <td>mouse-Opn-F</td>
+      <td>AGCAAGAAACTCTTCCAAGCAA</td>
+    </tr>
+    <tr>
+      <td>mouse-Opn-R</td>
+      <td>GTGAGATTCGTCAGATTCATCCG</td>
+    </tr>
+    <tr>
+      <td>mouse-Dmp1-F</td>
+      <td>CATTCTCCTTGTGTTCCTTTGGG</td>
+    </tr>
+    <tr>
+      <td>mouse-Dmp1-R</td>
+      <td>TGTGGTCACTATTTGCCTGTc</td>
+    </tr>
+    <tr>
+      <td>mouse-Runx2-F</td>
+      <td>CCTTTACCTACACCCCGCCA</td>
+    </tr>
+    <tr>
+      <td>mouse-Runx2-R</td>
+      <td>GGATGCTGACGAAGTACCAT</td>
+    </tr>
+    <tr>
+      <td>mouse-Alpl-F</td>
+      <td>CCAACTCTTTTGTGCCAGAGA</td>
+    </tr>
+    <tr>
+      <td>mouse-Alpl-R</td>
+      <td>GGCTACATTGGTGTTGAGCTTTT</td>
+    </tr>
+    <tr>
+      <td>mouse-Gapdh-F</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+    </tr>
+    <tr>
+      <td>mouse-Gapdh-R</td>
+      <td>GGGGTCGTTGATGGCAACA</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-335-3p-F</td>
+      <td>UUUUUCAUUAUUGCUCCUGACC</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-1298-5p-F</td>
+      <td>UUCAUUCGGCUGUCCAGAUGUA</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-144-5p-F</td>
+      <td>GGAUAUCAUCAUAUACUGUAAGU</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-141-3p-F</td>
+      <td>UAACACUGUCUGGUAAAGAUGG</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-133a-3p.1-F</td>
+      <td>UUGGUCCCCUUCAACCAGCUG</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-193b-3p-F</td>
+      <td>AACUGGCCCACAAAGUCCCGCU</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-1b-5p-F</td>
+      <td>TGGTTTTTGGGGTACATACTTCTTTAC</td>
+    </tr>
+    <tr>
+      <td>mmu-miR-582-3p-F</td>
+      <td>UAACCUGUUGAACAACUGAAC</td>
+    </tr>
+  </tbody>
+</table>
+
+### microRNA sequencing (sRNA-seq)
 
 Total RNA was extracted from M-exos and HM-exos using the Trizol reagent (Takara Biotechnology; 9109), and RNA integrity was assessed using a 2100 bioanalyzer (Agilent Technologies, CA). An Illumina TruSeq Small RNA kit (Illumina, San Diego, CA) was used to construct the library, and a high-throughput sequencing platform was used to sequence the enriched 18–32 nt small RNA fragments. The differentially expressed miRNAs in the two groups of exosomes were screened (p-value<0.05), miRDB (http://www.mirdb.org/) and DIANA (https://dianalab.e-ce.uth.gr/) databases were used to predict the target genes of the miRNAs, and KEGG enrichment analysis was performed for the identified target genes.
 
-## 3'UTR luciferase reporter assay
+### 3'UTR luciferase reporter assay
 
 A fragment of the Fos 3′UTR containing wildtype (WT) or mutant (Mut) predicted two binding sites from TargetScan (http://www.targetscan.org) database for miR-335-3p was inserted into the pMIR-REPORT vector. HEK293 cells were cotransfected with either Fos-WT or Fos-Mut vector and either miR-335-3p mimic or miRNA mimic negative control (mimic NC) using Lipofectamine 2000 (Invitrogen, USA; 11668019). Luciferase activity was determined at 48 hr post-transfection using the Dual-Glo Luciferase Assay System (Promega, Madison, WI; E2940) following the manufacturer’s instructions. Data were normalized by dividing firefly luciferase activity with that of Renilla luciferase enzyme activity.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 The Raw 264.7 cells (RRID:CVCL_0493; gifts from Dr. Shengbing Yang, Shanghai Key Laboratory of Orthopaedic Implants, Department of Orthopaedic Surgery, Shanghai Ninth People’s Hospital, Shanghai Jiao Tong University School of Medicine, Shanghai, 200125, China) were authenticated through STR profiling and tested negative for mycoplasma contamination. They were used for osteoclastic differentiation induction via RANKL (R&D Systems, USA; 462-TEC) (50 nM). The entire inducing process lasted 4 days, and medium refreshed every 3 days. In addition, Raw264.7 cells were transfected with miR-335-3p mimic, miR-335-3p inhibitor, and NC synthesized by RiboBio via Fugene HD (Promega; E2311) when cells’ confluency reached 50%. For the pit formation assay, RAW264.7-derived osteoclasts were assayed on bone slices (Boneslices, Denmark), as previously described (Luo et al., 2016). Pits were stained with toluidine blue, and pit area was examined using ImageJ.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are represented as the mean ± SD. Differences between two groups were determined by Student’s t-test. Differences among three groups were determined by one-way ANOVA with Tukey’s post hoc test. All experiments were repeated at least three times. A value of p<0.05 was considered significant.

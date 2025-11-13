@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.48943.001 In the fungus Ustilago maydis , sexual pheromones elicit mating resulting in an infective filament able to infect corn plants. Along this process a G2 cell cycle arrest is mandatory. Such as cell cycle arrest is initiated upon the pheromone recognition in each mating partner, and sustained once cell fusion occurred until the fungus enter the plant tissue. We describe that the initial cell cycle arrest resulted from inhibition of the nuclear transport of the mitotic inducer Cdc25 by targeting its importin, Kap123. Near cell fusion to take place, the increase on pheromone signaling promotes Cdc25 degradation, which seems to be important to ensure the maintenance of the G2 cell cycle arrest to lead the formation of the infective filament. This way, premating cell cycle arrest is linked to the subsequent steps required for establishment of the infection. Disabling this connection resulted in the inability of fungal cells to infect plants.
+In the fungus Ustilago maydis, sexual pheromones elicit mating resulting in an infective filament able to infect corn plants. Along this process a G2 cell cycle arrest is mandatory. Such as cell cycle arrest is initiated upon the pheromone recognition in each mating partner, and sustained once cell fusion occurred until the fungus enter the plant tissue. We describe that the initial cell cycle arrest resulted from inhibition of the nuclear transport of the mitotic inducer Cdc25 by targeting its importin, Kap123. Near cell fusion to take place, the increase on pheromone signaling promotes Cdc25 degradation, which seems to be important to ensure the maintenance of the G2 cell cycle arrest to lead the formation of the infective filament. This way, premating cell cycle arrest is linked to the subsequent steps required for establishment of the infection. Disabling this connection resulted in the inability of fungal cells to infect plants.
 
 ## Introduction
 
@@ -33,17 +33,37 @@ Here we tried to uncover the elements required for the pheromone-induced cell cy
 
 ## Results
 
-## Activation of the pheromone cascade promotes G2 cell cycle arrest via inhibitory phosphorylation of Cdk1
+### Activation of the pheromone cascade promotes G2 cell cycle arrest via inhibitory phosphorylation of Cdk1
 
 We sought to address the molecular mechanisms behind the G2 cell cycle arrest observed upon pheromone response in U. maydis. This response requires, in each mating partner, the recognition of the compatible pheromone by its cognate receptor and the transmission of the signal through a conserved MAPK cascade (Müller et al., 2003; Vollmeister et al., 2012). However, the expression of pheromone and pheromone receptor genes requires poor nutritional conditions, which enables the activity of the transcriptional regulator Prf1 that activates the promoters from the a-locus (Hartmann et al., 1999; Kaffarnik et al., 2003) (Figure 1—figure supplement 1A). Since changes in nutritional conditions could alter the cell cycle pattern in this fungus (Pérez-Martín et al., 2006), we took advantage of the previous description of an activated allele of the pheromone cascade MAPKK Fuz7 (fuz7DD, Figure 1—figure supplement 1B), whose expression faithfully recapitulates the pheromone response in U. maydis (Müller et al., 2003; Zarnack et al., 2008). In this way, we make the activation of the pheromone MAPK cascade independent of the elements located upstream of this cascade (i. e. receptors and pheromones) allowing us to focus on the connections between the pheromone response MAPK cascade and cell cycle regulators.
 
 When an ectopic copy of the fuz7DD allele was expressed under the control of the crg1 promoter (induced by arabinose and repressed by glucose) (Figure 1—figure supplement 1C and D), it mimicked the G2 cell cycle arrest observed when pheromone is sensed by U. maydis (García-Muse et al., 2003): cells accumulate 2C DNA content, carrying a single nucleus with an intact nuclear membrane (U. maydis breaks down its nuclear envelope at mitosis; Straube et al., 2005) (Figure 1A and B). Furthermore, this cell cycle arrest was dependent on Kpp2, the downstream MAPK, but independent of Prf1 (Figure 1—figure supplement 1E).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cells expressing the fuz7DD allele accumulated with a 2C DNA content. Fluorescence/Activated Cell Sorter (FACS) analysis of the DNA content of a control strain and a strain carrying an ectopic copy of the fuz7DD allele under the control of the crg1 promoter growing in inducing (Complete Medium Arabinose, CMA) and non-inducing (Complete Medium Glucose, CMD) conditions (Figure 1—figure supplement 1). The period of incubation in testing media is indicated (hours). (B) Cells expressing the fuz7DD allele induce conjugative hyphae that are arrested in G2 phase. Representative image of cells expressing the fuz7DD allele and carrying NLS-GFP and Cut11-Cherry fusions to detect the nucleus and the nuclear envelope, growing in CMA for 6 hr. This image was a composition from various images to show different stages during the production of the conjugation hyphae. Bar: 15 μm. (C) Cells expressing the fuz7DD showed increased levels of Cdk1 inhibitory phosphorylation (Cdk1Y15P). Data acquisition is described in Figure 1—figure supplement 2A and. Means are shown (Figure 1—source data 1). (D) Interfering with the Cdk1 inhibitory phosphorylation resulted in inability to arrest cell cycle upon fuz7DD allele expression. Fuz7DD-derived strains carrying the NLS-GFP reporter as well as the indicated mutations were incubated in inducing conditions (CMA) for 6 hr. Filaments were sorted as carrying 1, 2 or 3 and more nuclei. The graph shows the result from three independent experiments, counting more than 100 filaments each. Means and SDs are shown (Figure 1—figure supplement 2 and Figure 1—source data 2). (E) Protein levels of G2/M regulators upon fuz7DD allele expression. Strains carrying HA-tagged versions of Clb2, Cdc25 and Wee1 and carrying the fuz7DD allele or not (control) were incubated for the indicated time in induction conditions (CMA). Similar amount of protein extracts was separated by SDS-PAGE. Immunoblots were incubated with an antibody against HA. As loading control, we used the Cdk1 protein, which can be detected using anti-PSTAIRE (which recognizes both Cdk1 and Cdk5). (F) Overexpression of cdc25 does not abrogate the fuz7DD-dependent cell cycle arrest. Representative images of cultures growing in inducing conditions (CMA) for 6 hr, from a control strain expressing the fuz7DD allele, and a strain co-expressing both the fuz7DD allele and an ectopic copy of cdc25 (Figure 1—figure supplement 4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme of the pheromone response cascade stressing the requirement of Prf1 phosphorylation via PKA and MAPK to induce the genes encoding the receptors and pheromone (left) and a simplified activation using the fuz7DD allele (right). Mating requires poor nutritional conditions, which through the cAMP/PKA cascade together with the MAPK cascade activate the transcriptional regulator Prf1, allowing the transcription of the mating type genes encoding the pheromone and pheromone receptor and thereby promoting a positive feedback loop that enables the pheromone response (Hartmann et al., 1999; Kaffarnik et al., 2003). (B) Amino acid changes responsible of fuz7DD allele. (C) Scheme of the transgene driving fuz7DD allele under the control of Pcrg1. (D) Representative images of cells carrying the fuz7DD allele in conditions of repression (glucose) or activation (arabinose) of crg1 promoter. Cells were grown by 6 hr in complete medium (CM) amended with the indicated carbon source. (E) DNA content analyzed by flow cytometry of strains expressing the fuz7DD allele and carrying deletions of kpp2, encoding the pheromone MAPK, or prf1, encoding the transcriptional activator responsible of pheromone and receptors gene activation. Cells were incubated by the indicated time in CMD (glucose) or CMA (arabinose).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Western blot analysis of inhibitory phosphorylation of Cdk1. Cells carrying or not the fuz7DD allele were grown for the indicated time in inducing conditions (CMA) and samples were taken and submitted to Western blot analysis. Immunoblots were incubated successively with an antibody that recognizes the Cdk1 phosphorylated form (anti-Cdc2-Y15P) and anti-PSTAIRE, which recognizes both Cdk1 and Cdk5. Levels of Cdk1 phosphorylation were determined by quantifying the level of antibody signal using a ChemiDoc (Bio-Rad). Differences in loading of samples were corrected by dividing each phosphopeptide-specific antibody signal by the Cdk1 (anti-PSTAIRE) antibody signal. This experiment was carried out two independent times and the values shown in Figure 1C are the average from both repeats. (B and E) Schemes of the strains used for the expression of a cdk1 allele refractory to inhibitory phosphorylation as well as the conditional strain for wee1. The ectopic copy of cdk1-myc alleles, was inserted at the intergenic region (IG) between the putative ORF UMAG_10893 and UMAG_04177 at chromosome 12, which is a permissive region for integration. The conditional wee1nar1 allele was expressed in minimal medium amended with nitrate and repressed in complete medium (CM). (C) Western blot analysis to show the level of expression of the Cdk1 ectopic transgenes (tagged with myc epitope) growing in non-inducing conditions (CMD) and inducing conditions (CMA) for 6 hr. (D and F) Representative images of cultures of strains used to acquisition of data showed in the graph of Figure 1D. Cultures were incubated for 6 hr in inducing conditions for fuz7DD and repression conditions for nar1 promoter (CMA).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Quantitative real time-PCR for the indicated genes in a control as well as fuz7DD-expressing strains. RNA was isolated after 6 hr of induction of crg1 promoter (arabinose complete medium, CMA). As internal control, the expression of tub1 (encoding Tubulin α) was used. Values are referred to the expression of each gene in control strain. Each column represents the mean value of three independent biological replicates. Error bars represent the SD; **p<0.01 based on a two-tailed Student´s t-test to control sample. (B) Ability to arrest the cell cycle of strains carrying the fuz7DD allele as well as mutations that disable the b-dependent cell cycle arrest: loss of function of Chk1 (chk1Δ) and constitutive expression of hsl1 by exchange of its native promoter with tef1 promoter, which is not repressed (hsl1tef1). The indicated strains, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr. Filaments were sorted as carrying 1, 2 or 3 and more nuclei. The graph shows the result from three independent experiments, counting more than 100 filaments each. Means and SDs are shown. (C) Effects of the absence of repression of hsl1 in the filament morphology. Representative images of strains expressing fuz7DD and carrying (hsl1tef1) or not (control) the constitutive expression of hsl1 growing for 6 hr in CMA. Note that keeping the transcription of hsl1 active resulted in affection of the morphology of the filament as well as in the apparition of constrictions in the filament neck (inset). These morphological defects were described previously in the b-dependent filament and attributed to some interaction of Hsl1 kinase with septins (Castanheira and Pérez-Martín, 2015). Bar: 15 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schemes of the strains used for the expression of an ectopic copy of cdc25-3HA allele. (B) Quantitative real time-PCR for cdc25 in the indicated strains. RNA was isolated after 4 hr of induction of crg1 promoter (arabinose complete medium, CMA). As internal control, the expression of tub1 (encoding Tubulin α) was used. Values are referred to the expression of cdc25 in control strain growing in glucose. Each column represents the mean value of three independent biological replicates. Error bars represent the SD. (C) Representative western blot analysis to show the level of expression of the cdc25 ectopic transgene (tagged with 3 HA epitope) growing in inducing conditions (CMA) for the indicated time. (D) Ability to arrest the cell cycle upon expression of fuz7DD of a strain overexpressing an ectopic copy of cdc25. The indicated strains, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr. Filaments were sorted as carrying 1, 2 or 3 and more nuclei. The graph shows the result from three independent experiments, counting more than 100 filaments each. Means and SDs are shown.
+
 We observed that the expression of the fuz7DD allele was correlated with an increase in the level of inhibitory phosphorylation of Cdk1, which has been reported to be associated with G2 cell cycle arrest in U. maydis (Sgarlata and Pérez-Martín, 2005a; Sgarlata and Pérez-Martín, 2005b) (Figure 1C and Figure 1—figure supplement 2A). Moreover, the impairment of Cdk1 inhibitory phosphorylation, either by the expression of cdk1AF, an allele refractory to inhibitory phosphorylation, or by the downregulated expression of wee1, the cognate kinase responsible for inhibitory phosphorylation (Sgarlata and Pérez-Martín, 2005b), abrogated the fuz7DD-dependent cell cycle arrest (Figure 1D and Figure 1—figure supplement 2B–F).
 
 These results supported the notion that the G2 cell cycle arrest associated with the activation of the pheromone cascade was dependent on the inhibitory phosphorylation of Cdk1.
 
-## The molecular mechanisms for pheromone cascade-mediated cell cycle arrest are likely to be different from those described for b-dependent cell cycle arrest
+### The molecular mechanisms for pheromone cascade-mediated cell cycle arrest are likely to be different from those described for b-dependent cell cycle arrest
 
 The mechanism of cell cycle arrest induced by the b-factor, which is responsible for the sustained G2 arrest during the growth of the infective filament, also involves an increase in the level of Cdk1 inhibitory phosphorylation (Mielnichuk et al., 2009). Moreover, in agreement with a previous report (Zarnack et al., 2008), we observed that the transcription of hsl1, a negative regulator of the Wee1 kinase, was strongly downregulated upon expression of the fuz7DD allele (Figure 1—figure supplement 3A), as it occurs in b-dependent cell cycle arrest (Castanheira et al., 2014; Heimel et al., 2010). These findings prompted us to think that pheromone-dependent and b-dependent cell cycle arrests might share the same molecular mechanisms. To add further support to this idea, we analyzed the involvement in the fuz7DD-dependent cell cycle arrest of other elements required for b-dependent cell cycle arrest, like the Chk1 kinase. However, our results indicated that Chk1 was not involved in fuz7DD-dependent cell cycle arrest (Figure 1—figure supplement 3B). In the same way, it was already reported that expression of the fuz7DD allele does not upregulate biz1 expression (Flor-Parra et al., 2006; Zarnack et al., 2008), suggesting different mechanisms for pheromone- and b-dependent cell cycle arrest.
 
@@ -53,9 +73,29 @@ Since the observed downregulation of Cdc25 levels could account for G2 cell cycl
 
 In summary, these previous results indicated that some elements, like the downregulation of hsl1 (and thereby the upregulation of Wee1) seemed to be shared by b- and pheromone cascade-induced cell cycle arrest. However, other elements, like the downregulation of biz1 and the Chk1-mediated retention of Cdc25 at cytoplasm seemed to be unique for b-dependent cell cycle arrest.
 
-## Pheromone cascade-induced cell cycle arrest depends on an alternative cyclin interacting with a Cdk-like kinase
+### Pheromone cascade-induced cell cycle arrest depends on an alternative cyclin interacting with a Cdk-like kinase
 
 In our search for elements connected to the pheromone cascade that could be involved in the induction of the cell cycle arrest, we recalled the gene pcl12, which has been reported to be strongly induced by the pheromone MAPK (Flor-Parra et al., 2007). This gene encodes a cyclin from the Pcl family (Measday et al., 1997), and its ectopic expression under a regulatable promoter (such as the crg1 promoter) was sufficient to induce the formation of a cell structure resembling a conjugation tube, which was also arrested at G2 phase (Flor-Parra et al., 2007). For that reason, we were curious about the involvement of this protein in the pheromone cascade-induced cell cycle arrest. Indeed, we found that Pcl12 was required for the induction of cell cycle arrest as well as for the observed decrease in Cdc25 levels upon the expression of the fuz7DD allele (Figure 2A and B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig2-v2.jpg)
+
+**Figure 2.:** (A) The cyclin Pcl12 and the Cdk-like kinase Crk1 were required for Fuz7DD-dependent cell cycle arrest. Representative images of cultures of strains carrying the fuz7DD allele and the indicated mutations. Cultures were incubated for 12 hr in inducing conditions for fuz7DD (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW) to detect septa. Note that filaments in the mutants were composed of cell compartments carrying one nucleus each and separated by septa. Bar: 20 μm. (B) The cyclin Pcl12 and the Cdk-like kinase Crk1 were required for Fuz7DD-dependent decrease of Cdc25 levels. Western blot analysis to show the level of Cdc25 (upper blot) upon expression of fuz7DD allele in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (C) Ability to arrest the cell cycle upon expression of fuz7DD or pcl12 in distinct mutant strains. The indicated strains, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each. Means and SDs are shown (Figure 2—source data 2). Representative images corresponding to the respective cultures could be found at Figure 2E and F as well as at Figure 2—figure supplement 3. (D) Scheme of Crk1, showing the mutant alleles used in this work. These mutants were already described: crk1KD, is a kinase-dead loss of function mutant; crk1AEF is refractory to T-loop activation by Fuz7; crk1AAA is refractory to phosphorylation by the MAPK Kpp2 (Garrido et al., 2004). (E) Crk1 is required for cell cycle arrest promoted upon expression of pcl12. Representative images of cultures of strains carrying an ectopic copy of pcl12 under crg1 promoter and the indicated mutations. Crk1KD carried the K145A mutation that inactivates its kinase catalytic activity (Garrido et al., 2004). Cultures were incubated for 6 hr in inducing conditions for pcl12 (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW) to detect septa. Bar: 15 μm. (F) Representative images of cultures of strains carrying the fuz7DD allele as well as the indicated mutations. Cultures were incubated for 6 hr in inducing conditions for fuz7DD (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW). Bar: 15 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images of cultures of strains carrying the fuz7DD allele as well as a thermosensitive cdk5 allele. Cultures were incubated for 6 hr in inducing conditions for fuz7DD (CMA) and restrictive conditions for cdk5ts (32°C). Cdk5 was required for the maintenance of strong polar growth required during the formation of conjugation tubes, and in its absence the cells undergo isotropic growth resulting in the formation of a bulbous structure at the tip of the cell (Castillo-Lluva et al., 2007). Bar: 15 μm. (B) Ability to arrest the cell cycle upon expression of fuz7DD of a strain defective for Cdk5. The indicated strains, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr at 32°C. Filaments were sorted as carrying 1, 2 or 3 and more nuclei. The graph shows the result from three independent experiments, counting more than 100 filaments each. Means and SDs are shown. *In the case of cdk5ts mutant, the cells carrying bulbous structure at their tips were considered as filaments for counting purposes. (C) Western blot analysis to show the level of Cdc25 protein (upper blot) as well as the levels of Cdk5 (bottom blot). Cdk1 levels were used as loading control. Extracts were obtained from cells growing in inducing conditions (CMA) for the indicated time at 32°C.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** List of specifically bound peptides to Pcl12-GFP and found in LC/MS analysis is shown. Comprehensive data from the proteomic analysis of Pcl12-GFP-interacting proteins is included as a single Excel spreadsheet (Figure 2—source data 1).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Representative images of cultures of strains expressing an ectopic copy of pcl12 (Pcrg1:pcl12) as well as the indicated mutations, used for the graph showed in Figure 2C. Cultures were incubated for 6 hr in inducing conditions for Pcrg1:pcl12 (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW). Note that mutants in MAPK signaling showed an aberrant deposition of CFW staining. Bar: 15 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Representative images of cultures of strains expressing the fuz7DD allele, and carrying single and double mutations in crk1 and pcl12. Cultures were incubated for 12 hr in inducing conditions for fuz7DD (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW) to detect septa. Note the different morphology of filaments in single mutants as well as the enhancement of the morphological defects in double mutants. Bar: 20 μm. Control image is the same as showed in Figure 2A. (B) Scheme proposing the formation of distinct complexes of Pcl12 and Crk1 depending on their roles in morphogenesis or cell cycle arrest.
 
 Pcl12 forms a complex with the essential cyclin-dependent kinase Cdk5 (Castillo-Lluva et al., 2007). The Pcl12-Cdk5 complex is required for sustained polar growth during the formation of the conjugation tubes in response to pheromone treatment (Flor-Parra et al., 2007). However, we found that Cdk5 was not required for fuz7DD-induced cell cycle arrest (Figure 2—figure supplement 1). Since Pcl12 is a cyclin, this result suggested the existence of alternative partners (most likely kinases) for Pcl12 during pheromone cascade-induced cell cycle arrest. To identify these putative partners, we performed coimmunoprecipitation coupled with liquid chromatography-mass spectrometry (LC/MS) analysis of a GFP-tagged Pcl12 version in the presence of the expression of the fuz7DD allele. We found the kinase Crk1 among the major peptides copurifying with Pcl12 (Figure 2—figure supplement 2, Figure 2—source data 1). Crk1 (Cdk-Related Kinase 1) was previously described as a regulator of polar growth since its overexpression induces cell filamentation (Garrido and Pérez-Martín, 2003). In support of a functional role of the observed Pcl12 and Crk1 physical interaction, we found that loss of function of Crk1 abrogated fuz7DD-dependent cell cycle arrest as well as the decrease in Cdc25 levels in a similar manner as the pcl12 mutant did (Figure 2A and B). Furthermore, we also observed that Crk1 was also required for cell cycle arrest upon ectopic expression of pcl12 (Figure 2C and E). These results sustained the idea that Crk1 and Pcl12 were working together during the pheromone cascade-induced cell cycle arrest, most likely as a complex.
 
@@ -65,11 +105,23 @@ These results indicated that the described activation of Crk1 via the pheromone 
 
 Both Crk1 and Pcl12 were previously described as regulators involved in morphogenesis of the conjugative tube (Flor-Parra et al., 2007; Garrido et al., 2004), although the relationships between these factors at this level were not studied. We observed that, in contrast to the cell cycle arrest, which is abrogated by a single mutation in either pcl12 or crk1, the effects of each gene mutation on the morphology of the resulting filament upon expression of fuz7DD allele were distinct, and the double mutant was more affected than single mutants (Figure 2—figure supplement 4A). On the basis of these genetic interactions, we propose that Pcl12 and Crk1 work together, most likely forming a complex, and acting on the pheromone cascade-induced cell cycle arrest. However, it seems that these proteins also work in parallel pathways during the control of conjugation tube morphogenesis, most likely through the Pcl12-Cdk5 complex in one pathway, and through Crk1 receiving MAPK cascade signals in the other (Figure 2—figure supplement 4B).
 
-## Kap123, the importin for Cdc25, seems to be phosphorylated upon activation of the pheromone cascade
+### Kap123, the importin for Cdc25, seems to be phosphorylated upon activation of the pheromone cascade
 
 The results shown above can be included in a working model in which the pheromone cascade-dependent induction of the expression of pcl12 enables the formation of a Crk1-Pcl12 complex, which is responsible for the cell cycle arrest at G2. In support of this view, we observed that the cell cycle arrest induced by ectopic expression of pcl12 was dependent on the inhibitory phosphorylation of Cdk1 (Figure 3—figure supplement 1A and B), similarly to the fuz7DD-induced cell cycle arrest. However, in clear contrast with the observed drop in Cdc25 levels upon fuz7DD expression, the levels of Cdc25 did not decrease upon the ectopic expression of pcl12 (Figure 3—figure supplement 1C). This result reinforced our conclusion that the decrease in Cdc25 levels was not responsible for pheromone cascade-induced cell cycle arrest at G2.
 
 Strikingly, we also observed that in the filaments produced upon ectopic pcl12 expression, a GFP-Cdc25 fusion was excluded from the nucleus. Moreover, this exclusion was abrogated, as it was the cell cycle arrest, if the activity of Crk1 was eliminated (Figure 3A and B). Since the phosphatase Cdc25 must be transported to the nucleus to activate mitosis entry (Mielnichuk and Pérez-Martín, 2008), we hypothesized that retaining Cdc25 in the cytoplasm could explain the observed G2 cell cycle arrest upon ectopic pcl12 expression and, most likely, also upon fuz7DD expression. This hypothesis was reminiscent of the b-induced retention of Cdc25 at the cytoplasm via interaction with 14-3-3 proteins. However, we considered unlikely to be the same mechanism, because for b-dependent cell cycle arrest such cytoplasmic retention can be saturated by overexpression of Cdc25, and we observed that it was not the case for the pheromone cascade-induced cell cycle arrest (Figure 1F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig3-v2.jpg)
+
+**Figure 3.:** (A) Expression of an ectopic copy of pcl12 resulted in exclusion of Cdc25 from nucleus. Representative images of cultures of strains expressing an ectopic copy of pcl12 and the indicated mutations. The cells carried an endogenous GFP-Cdc25 fusion as well as a Cut11-cherry fusion to detect nuclear membrane. Arrows pointed to nuclei in the filaments. Insets show merged images of selected nuclei (asterisk) from the respective filaments. Cultures were incubated for 6 hr in inducing conditions (CMA). Bar: 20 μm. (B) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control (Pcrg1:pcl12) and crk1 loss of function mutant (crk1Δ). The graph shows the result from three independent experiments, counting 50 filaments each (Figure 3—source data 1). Means and SDs are shown. (C) The presence of Crk1-Pcl12 complex inhibits the interaction between Cdc25 and its importin, Kap123. Soluble extracts from strains carrying Cdc25-3HA and Kap123-GFP tagged in their corresponding endogenous loci, and carrying ectopic copies of pcl12 or wee1 under the control of crg1 promoter, were incubated with GFP-trap beads and the immunoprecipitates submitted to Western blot with anti-HA (Cdc25) and anti-GFP (Kap123) antibodies in succession. Cells were grown in inducing conditions (CMA, (A) or repressive conditions (CMD, (D) for crg1 promoter during 6 hr. (D and F) Decrease in the electrophoretic mobility of Kap123 in response to pheromone-cascade activation. Extracts from cells carrying a Kap123-3HA allele and expressing fuz7DD or pcl12 grown in inducing conditions (CMA) for the indicated time were submitted to Western blot with anti-HA. (E) The observed decrease in the electrophoretic mobility is sensitive to the treatment with phosphatase. Anti-HA immunoprecipitates of cell extracts from cultures expressing or not fuz7DD for 6 hr (CMA) were incubated at 30°C for 20 min in the absence (-) or presence (+) of lambda protein phosphatase (λ PPase) and were then subjected to immunoblot analysis with anti-HA. (G) Fuz7DD-dependent phosphorylation of Kap123 requires Pcl12, Crk1 and Kpp2. Western blot analysis of extracts from strains carrying kap123-3HA allele and the indicated mutations, incubated in inducing conditions for fuz7DD expression (CMA) for the indicated time. (H) Ectopic expression of pcl12 induces a decreased electrophoretic mobility of Kap123 that is dependent on Crk1 but not on Kpp2 and Fuz7. Western blot analysis of extracts from strains carrying kap123-3HA allele and the indicated mutations, incubated in inducing conditions for pcl12 expression (CMA) for the indicated time.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schemes of the strains used for the co-expression of an ectopic copy of pcl12 as well as a cdk1 allele refractory to inhibitory phosphorylation. (B) Representative images of cultures of indicated strains. Cultures were incubated for 6 hr in inducing conditions for crg1 promoter (CMA). Cells carried a constitutively expressed NLS-GFP reporter to detect nuclei and were stained with Calcofluor White (CFW) to detect the septa. Bar: 15 μm. (C) Western blot analysis showing the levels of Cdc25 (upper blot) upon ectopic expression of pcl12 in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Dendrogram of β-importins from fission (Sp) and budding (Sc) yeast including putative β-importins from U. maydis (UMAG). The graph was created by the distance-based minimum-evolution method, based on 500 replicates. Bootstrap values are given (1 = 100), and branching points and the scale bar denote substitutions per site. Note that U. maydis showed β-importins from each family but for family IMB3. However, β-importins from IMB3 and IMB4 families show significant functional redundancy (Chook and Süel, 2011), opening the possibility that in U. maydis Kap123 could fulfill the roles of both families. (B) α-importin Srp1 (UMAG_10699) and β-importin Kap123 are essential in U. maydis. Conditional strains in which the importin proteins could be depleted were constructed by exchanging the endogenous promoter of srp1 and kap123 with the nar1 promoter, which is induced by growing the cells in nitrate as nitrogen source and repressed by adding ammonium or amino acids as nitrogen source. The figure shows representative plates of serial tenfold dilutions of cultures from wild-type strain and the conditional strains, spotted in solid minimal medium amended with nitrate (MMD, permissive conditions) and rich medium (YPD, restrictive conditions). Plates were incubated for 3 days at 28°C. (C) Kap123 is required for nuclear localization of Cdc25. Strains carrying an endogenous GFP-Cdc25 fusion and the conditional alleles for srp1 and kap123, were incubated in restrictive conditions (YPD) for 6 hr. Note that while Kap123 seems to be required for nuclear localization of the GFP-Cdc25 fusion, Srp1 seems to be dispensable. β-importins often are able to import cargos independently of α-importin (Xu et al., 2010).
 
 One of the interactors of Pcl12 obtained from the coimmunoprecipitation coupled with LC/MS analysis was the uncharacterized protein UMAG_15014. Sequence phylogeny analysis indicated that this protein (renamed Kap123) belongs to the family of β importins of class 3 and 4 (Figure 3—figure supplement 2A). Since Pcl12 is a cytoplasmic protein (Flor-Parra et al., 2007), we considered Kap123 unlikely to be involved in the transport of Pcl12 to the nucleus. A previous report showed that Sal3 from S. pombe, which is one of the members of the class 3 β importin family, was involved in the nuclear import of Cdc25 in this fungus (Chua et al., 2002). Therefore, we decided to analyze whether U. maydis Kap123 was required for the nuclear localization of Cdc25, and we found that it was (Figure 3—figure supplement 2B and C). This result prompted us to hypothesize that Kap123 could be a target of the Crk1-Pcl12 complex and that the action of this complex could disable the interaction between Kap123 and Cdc25 upon pheromone signaling. In this way, interference with the nuclear localization of Cdc25 could explain pheromone cascade-induced G2 cell cycle arrest. Using GFP-trap beads, we analyzed the ability of a Kap123-GFP fusion to interact with Cdc25 under conditions for the ectopic expression of pcl12 in the presence or absence of functional Crk1 kinase. Additionally, to discard any effect of the expected interaction between Kap123 and Cdc25 as a consequence of the induced cell cycle arrest, we used the overexpression of Wee1 as a control for G2 cell cycle arrest (Sgarlata and Pérez-Martín, 2005b). In support of our hypothesis, we observed that the presence of a Crk1-Pcl12 complex, but not G2 cell cycle arrest alone, disables the ability of Kap123 to interact with Cdc25 (Figure 3C).
 
@@ -77,25 +129,41 @@ We also observed that upon fuz7DD expression, the mobility of a Kap123-HA allele
 
 The decrease in the electrophoretic mobility of Kap123 upon expression of fuz7DD was dependent on the presence of functional alleles of crk1, pcl12, and kpp2 (Figure 3G). In the case of ectopic expression of pcl12, Crk1 was required for the decreased electrophoretic mobility of Kap123, but neither fuz7 nor kpp2 were required (Figure 3H). These results mirrored the same genetic requirements as the cell cycle arrest, suggesting a causal relationship between phosphorylation of Kap123 and cell cycle arrest.
 
-## Pheromone cascade-induced cell cycle arrest is mediated by the phosphorylation of Cdc25 importin, Kap123
+### Pheromone cascade-induced cell cycle arrest is mediated by the phosphorylation of Cdc25 importin, Kap123
 
 The previous results suggested that Kap123 could be phosphorylated by the Pcl12-Crk1 complex and that this modification could alter the ability of Kap123 to interact with Cdc25. To support this hypothesis, we looked for Kap123 mutants that were refractory to the phosphorylation by Pcl12-Crk1 complex. Since Crk1 has been defined both as a CDK-like and as a MAPK, and no consensus sequence for its phosphorylation sites was known, we considered, as a first approach, the established phosphorylation consensus sequences for both CDK and MAPK. Kap123 carries in its sequence 2 and 5 putative phosphorylation sites for CDK and MAPK, respectively. Using distinct threonine- or serine-to-alanine mutants at predicted phosphorylation sites in the Kap123 sequence (Figure 4—figure supplement 1A), we analyzed the electrophoretic mobility of HA-tagged Kap123 mutants in conditions of fuz7DD expression, and we found that the change of Thr867 to Ala (one of the putative CDK sites) resulted in abrogation of the electrophoretic mobility shift of Kap123 upon fuz7DD expression (Figure 4—figure supplement 1B). The mutant allele Kap123T867A showed no reduced electrophoretic mobility upon fuz7DD expression and pcl12 expression (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scheme of Kap123 showing the change to Alanine in Threonine 867, which is located at the 16th HEAT repeat. (B and C) Absence of electrophoretic mobility decrease in the Kap123T867A mutant upon expression of fuz7DD or pcl12. Extracts from cells carrying the indicated kap123 allele and expressing fuz7DD or pcl12 grown in inducing conditions (CMA) for the indicated time were submitted to Western blot with anti-HA. (D and E) Absence of cell cycle arrest in the Kap123T867A mutant. Control cells as well as cells carrying the mutant kap123T867A allele and expressing either fuz7DD or pcl12 were incubated for 6 hr in CMA. Bar: 20 μm. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each (Figure 4—source data 1). Means and SDs are shown. (F) GFP-Cdc25 is not excluded from nucleus in the kap123T867A mutant strain. Representative image of strain expressing an ectopic copy of pcl12 and carrying the kap123T867A allele. The cells also carried an endogenous GFP-Cdc25 fusion as well as a Cut11-cherry fusion to detect nuclear membrane. Arrows pointed to nuclei in the filaments. Cultures were incubated for 6 hr in inducing conditions (CMA). Bar: 20 μm. (G) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control and kap123T867A mutant cells expressing pcl12 and incubated for 6 hr in inducing conditions (CMA). The graph shows the result from three independent experiments, counting 50 filaments each (Figure 4—source data 2). Means and SDs are shown. (H) Kap123T867A binds Cdc25 in the presence of a Crk1-Pcl12 complex. Soluble extracts from strains carrying Cdc25-3HA and Kap123-GFP or Kap123T867A-GFP alleles, and carrying ectopic copies of pcl12 under the control of crg1 promoter, were incubated with GFP-trap beads and the immunoprecipitates submitted to Western blot with anti-HA (Cdc25) and anti-GFP (Kap123) antibodies in succession. Cells were grown in inducing conditions (CMA, (A) or repressive conditions (CMD, (D) for crg1 promoter during 6 hr.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Scheme of Kap123 showing putative CDK as well as MAPK phosphorylation sites based on sequence. Since Crk1 has been defined both as a CDK-like and as a MAPK, and no consensus sequence for its phosphorylation sites was known, we considered the established consensus sequences for both CDK and MAPK. (B) Analysis of the electrophoretic mobility reduction of Kap123 alleles carrying distinct threonine or serine to alanine changes. In all cases the mutation was introduced in the endogenous copy of the gene at the same time the C-terminal 3 HA epitope was inserted. Ser327 and Thr894 changes were not obtained, most likely because compromised the functionality of the mutant.
 
 Encouragingly, the presence of this mutant allele makes the cells unable to undergo cell cycle arrest in response to the expression of either fuz7DD or pcl12 (Figure 4D and E). Moreover, cells carrying the kap123T867A allele were unable to retain Cdc25 in the cytoplasm upon ectopic expression of pcl12 (Figure 4F and G). Also, we found that the Kap123T867A-GFP allele, in contrast to the wild-type GFP-tagged allele, was able to interact with Cdc25 in conditions of the ectopic expression of pcl12 (Figure 4H).
 
 Taken together, these data supported a model in which the pheromone cascade enables the formation of a Crk1-Pcl12 complex that inhibits the transport of Cdc25 to the nucleus by the phosphorylation of Kap123 importin, thereby promoting G2 cell cycle arrest.
 
-## Cell cycle arrest in response to pheromone requires the phosphorylation of Kap123
+### Cell cycle arrest in response to pheromone requires the phosphorylation of Kap123
 
 Following our model, we aimed to test directly the response to pheromone of cells carrying mutations that abolished the pheromone cascade-induced cell cycle arrest. Addition of synthetic pheromone to a culture of compatible mating type cells induced the formation of conjugative tubes that were cell cycle arrested (Spellig et al., 1994; Szabó et al., 2002). Therefore, we treated a1 mating type cells from U. maydis carrying an HA-tagged Kap123 allele, as well as its phosphorylation-defective version, with different concentrations of a2 synthetic pheromone, and analyzed the ability of cells to arrest the cell cycle. In concordance with our model, we found that cells carrying the kap123T867A allele were not able to arrest the cell cycle, even at the highest pheromone concentrations (Figure 5A). We analyzed, by Western blot, samples from these cultures and we observed a shift in the electrophoretic mobility of the wild-type allele but not the kap123T867A allele at different pheromone concentrations (Figure 5B). Furthermore, the presence of the kap123T867A allele makes the cells unable to keep Cdc25 out of the nucleus in response to synthetic pheromone (Figure 5C and D). All these results added further support to our model about the process by which pheromone triggers G2 cell cycle arrest in U. maydis cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig5-v2.jpg)
 
-**Figure 5.:** (A) kap123 mutant is unable to arrest the cell cycle in response to synthetic pheromone. The indicated strains were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each (T867AFigure 5—source data 1). Means and SDs are shown. (B) Pheromone treatment results in a decrease in electrophoretic mobility of Kap123. Western blot from extracts obtained from a1 mating-type cells carrying HA-tagged wild-type or kap123 alleles that were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. (T867AC) kap123 mutant is unable to exclude Cdc25 from nucleus in response to synthetic pheromone. Representative images of cultures of wild-type and T867Akap123 mutant cells carrying endogenous GFP-Cdc25 and Cut11-Cherry gene fusions, in the presence of 0,25 μg/ml of a2 synthetic pheromone for 6 hr in CMD. Note the presence of more than one nucleus that accumulates GFP-Cdc25 in the T867Akap123 mutant strain. Bar: 15 μm. (T867AD) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control and kap123 mutant cells in the presence of 0,25 μg/ml of a2 synthetic pheromone for 6 hr in CMD. The graph shows the result from three independent experiments, counting 50 filaments each (T867AFigure 5—source data 2). Means and SDs are shown.10.7554/eLife.48943.026Figure 5—source data 1.Figure 5A.10.7554/eLife.48943.027Figure 5—source data 2.Figure 5D.
+**Figure 5.:** (A) kap123T867A mutant is unable to arrest the cell cycle in response to synthetic pheromone. The indicated strains were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each (Figure 5—source data 1). Means and SDs are shown. (B) Pheromone treatment results in a decrease in electrophoretic mobility of Kap123. Western blot from extracts obtained from a1 mating-type cells carrying HA-tagged wild-type or kap123T867A alleles that were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. (C) kap123T867A mutant is unable to exclude Cdc25 from nucleus in response to synthetic pheromone. Representative images of cultures of wild-type and kap123T867A mutant cells carrying endogenous GFP-Cdc25 and Cut11-Cherry gene fusions, in the presence of 0,25 μg/ml of a2 synthetic pheromone for 6 hr in CMD. Note the presence of more than one nucleus that accumulates GFP-Cdc25 in the kap123T867A mutant strain. Bar: 15 μm. (D) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control and kap123T867A mutant cells in the presence of 0,25 μg/ml of a2 synthetic pheromone for 6 hr in CMD. The graph shows the result from three independent experiments, counting 50 filaments each (Figure 5—source data 2). Means and SDs are shown.
 
-## The absence of G2 cell cycle arrest during pheromone response has little impact on the ability of U. maydis to infect plants
+### The absence of G2 cell cycle arrest during pheromone response has little impact on the ability of U. maydis to infect plants
 
 The importance of cell cycle synchronization as a step prior to cell fusion during mating in unicellular eukaryotes was clearly illustrated more than 25 years ago by the defects in mating observed in the S. cerevisiae far1 mutants, which lack the main control to arrest the cell cycle upon pheromone response (Chang and Herskowitz, 1990; Pope et al., 2014). Since the virulence of U. maydis is dependent on mating, we expected that the ability of U. maydis to infect corn plants would be affected in the absence of cell cycle arrest upon response to the pheromone. To test the hypothesis, we constructed compatible strains (a1 b1 and a2 b2 mating type) carrying the kap123T867A allele, and infected corn plants with compatible mixtures of control and mutant strains. We found that strains unable to undergo pre-mating cell cycle arrest were as virulent as wild-type strains (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig6-v2.jpg)
+
+**Figure 6.:** (A) kap123T867A mutant strains are able to infect plants. Disease symptoms caused by crosses of wild-type and kap123T867A mutant strains. The symptoms were scored 14 days after infection. Two independent experiments were carried out and the average values are expressed as percentage of the total number of infected plants (n: 30 plants in each experiment) (Figure 6—source data 1). (B) kap123T867A mutant is able to mate. Crosses of control as well as kap123T867A mutant strains carrying compatible mating types (a1 b1 and a2 b2) in charcoal-containing agar plates. Positive fuzzy phenotype can be detected as a white-appearance mycelial growth. Note that mutant combinations were slightly affected in the ability to produce fuzzy phenotype. Plates were incubated at 22°C for two days. (C) kap123T867A mutant filaments were affected in nuclear number. Crosses from compatible strains (wild-type or kap123T867A mutant) carrying a NLS-GFP fusion under control of the b-factor-dependent dik6 promoter were scrapped from agar surface, mounted on microscopy slides and epifluorescence was observed. Representative images show DIC and fluorescence in GFP channel. Bar: 20 μm. (D) Quantification of the nuclear content of filaments obtained from charcoal plates. The graph shows the result from two independent experiments, counting more than 50 filaments each (Figure 6—source data 2). Means and SDs are shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** To prove that, we took advantage of the AB33 strain, a special haploid strain carrying compatible b alleles under the control of a nitrate-induced promoter, which upon growth in minimal medium containing nitrate resulted in the formation of the b-dependent G2-arrested filament (Brachmann et al., 2001). We have introduced the kap123T867A allele in AB33-derived cells carrying a NLS-GFP reporter that is expressed in b-activation conditions. The figure shows representative images of cultures from the indicated strains and growing in inducing conditions for b transcription (minimal medium with nitrate, 8 hr). Bar: 20 μm. Note that the mutant cells were cell cycle arrested at the same extent as the control strain in similar conditions.
 
 This unexpected result suggested a minor role of pheromone-induced cell cycle arrest in the virulence process, and therefore we were interested to understand the reasons for it. We wondered about the outcome from crosses of kap123T867A mutant strains. Mating in U. maydis is easily scored by the formation of dikaryotic filaments on charcoal plates, which can be observed as a white-appearing mycelial growth (fuzzy phenotype) (Banuett and Herskowitz, 1989). We observed that although slightly impaired, the mutant crosses showed a positive fuzzy phenotype (i.e., they were able to mate) (Figure 6B). Therefore, we were curious about the nuclear content of the filaments resulting from these crosses. To address this question, we crossed haploid strains expressing a GFP fusion to a nuclear localization signal under control of the b-dependent dik6 promoter (Mielnichuk et al., 2009). In this way, only cells resulting from mating and therefore activating the transcriptional program dependent on b-factor (which subunits are provided by each mating partner) produced a fluorescent nuclear signal, so the mating-derived filaments can be distinguished from the cell population background (frequently enriched in aberrant elongated cells). We found that the majority of b-dependent filaments from wild-type crosses carried two nuclei, whereas filaments obtained from mutant crosses frequently carried two (62% of filaments), three (35%) and less frequently four (3%) nuclei (Figure 6C and D). We did not find filaments carrying more than four nuclei (from a total of 100 filaments counted).
 
@@ -103,13 +171,13 @@ To understand these results, it is worth remembering that once the cytoplasms of
 
 The inability of cells carrying the kap123T867A allele to arrest the cell cycle in response to pheromone (this is, to synchronize their cell cycles before cytogamy) will result, most likely, in the fusion of mating partners at different stages of the cell cycle. However, once the two cytoplasms fuse, the establishment of a barrier at G2 by the b-factor would resynchronize the respective nuclear content in the resulting filament. In the case of mating partners fusing their cytoplasms during G1 to G2 phases (i. e. providing a single nucleus each), the result will be a dikaryotic filament with nuclei arrested at G2. Only for those partners that fuse during or immediately after mitosis (and before cytokinesis), the result will be a filament carrying three nuclei (only one partner carried two nuclei before fusion) or four nuclei (the two partners carried two nuclei each), with these nuclei arrested at G2. In any case, the final result will be a cell cycle arrested filament (by virtue of b-factor) and therefore it will be proficient for infection, explaining the ability of mutant cells to infect corn plants. Interestingly, this ability to synchronize the cell cycle status of distinct nuclei in a common cytoplasm by homeodomain proteins of the b-factor family is the basis for accurate cell division in other basidiomycete dikaryotic fungi such as Coprinopsis cinerea (de Sena-Tomás et al., 2013).
 
-## The MAPK Kpp2 directs Cdc25 downregulation
+### The MAPK Kpp2 directs Cdc25 downregulation
 
 We were curious about the observed dramatic decrease in Cdc25 levels upon expression of the fuz7DD allele and whether this observation bears any functional relevance. To link the observed downregulation of Cdc25 with the pheromone response, we analyzed the levels of Cdc25 in a1 mating type haploid cells in response to increasing concentrations of a2 synthetic pheromone (Figure 7A). We found that the lowest pheromone concentration tested (0.25 μg/ml), although able to induce the formation of cell cycle arrested conjugation tubes (Figure 5A), did not induce a decrease in the levels of Cdc25. However, increasing the amount of pheromone (up to 25 μg/ml) was correlated with a decrease in Cdc25 levels, suggesting a dose-response relationship between pheromone cascade signaling and Cdc25 levels.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig7-v2.jpg)
 
-**Figure 7.:** (A) High levels of pheromone resulted in a decrease in Cdc25 levels. Western blot from extracts obtained from a1 mating-type cells carrying a HA-tagged Cdc25 endogenous allele that were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. Similar amount of protein extracts was separated by SDS-PAGE. Immunoblots were incubated with an antibody against HA. As loading control, we used the Cdk1 protein, which can be detected using anti-PSTAIRE (which recognizes both Cdk1 and Cdk5). Cell response refers to percentage of cells showing conjugation tube in each culture. (B) Inability to retain Cdc25 at the cytoplasm resulted in stabilization of Cdc25 levels in response to expression of the fuz7 allele. Western blot analysis to show the level of Cdc25 (upper blot) in cells growing in inducing conditions (CMA) for the expression of DDfuz7 allele during the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (DDC) The MAPK Kpp2 is required for down-regulation of Cdc25 levels. Strains expressing at the same time fuz7 and DDpcl12 and carrying or not a loss of function allele of kpp2, were grown during the indicated time in inducing conditions (CMA). Extracts were analyzed by Western blot to detect Cdc25-3HA protein levels (upper blot) and the levels of Cdk1, which were used as loading control (bottom blot). (D) Kpp2 is able to interact with Cdc25 upon activation of the pheromone cascade. Soluble extracts from strains carrying Cdc25-3HA and a Kpp2KD-GFP tagged in their corresponding endogenous loci, and carrying ectopic copies of the indicated genes under the control of crg1 promoter, as well as additional mutations (also indicated) were incubated with GFP-trap beads and the immunoprecipitates submitted to Western blot with anti-HA (Cdc25) and anti-GFP (Kpp2KD) antibodies in succession. Cells were grown in inducing conditions (CMA, (A) or repressive conditions (CMD, (D) for crg1 promoter during 6 hr. (E) Scheme of U. maydis Cdc25, showing the N-terminal specific extension, and the postulated MAPK phosphorylation sites, with the Serine residue (in red) exchanged to Alanine in the mutant allele cdc25. (AAAF) The N-terminal extension of Cdc25 determines its down-regulation in response to expression of the fuz7 allele. Western blot analysis to show the level of Cdc25 or Cdc25 Δ1–270 (upper blot) upon expression of DDfuz7 allele in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (DDG) Putative MAPK phosphorylation sites were involved in the down-regulation of Cdc25 in response to expression of the fuz7 allele. Western blot analysis to show the level of Cdc25 or Cdc25DDAAA (upper blot) upon expression of fuz7 allele in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (DDH) Cell cycle arrest in response to expression of the fuz7 allele is unaffected by the absence of down-regulation of Cdc25. DDfuz7-expressing strains carrying the indicated DDcdc25 alleles, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each (Figure 7—source data 1). Means and SDs are shown. (I) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control and strains carrying the indicated cdc25 alleles, expressing pcl12 and incubated for 6 hr in inducing conditions (CMA). The graph shows the result from three independent experiments, counting 50 filaments each (Figure 7—source data 2). Means and SDs are shown.10.7554/eLife.48943.033Figure 7—source data 1.Figure 7H.10.7554/eLife.48943.034Figure 7—source data 2.Figure 7I.
+**Figure 7.:** (A) High levels of pheromone resulted in a decrease in Cdc25 levels. Western blot from extracts obtained from a1 mating-type cells carrying a HA-tagged Cdc25 endogenous allele that were incubated for 6 hr in the presence of the indicated synthetic a2 pheromone concentrations in CMD medium. Similar amount of protein extracts was separated by SDS-PAGE. Immunoblots were incubated with an antibody against HA. As loading control, we used the Cdk1 protein, which can be detected using anti-PSTAIRE (which recognizes both Cdk1 and Cdk5). Cell response refers to percentage of cells showing conjugation tube in each culture. (B) Inability to retain Cdc25 at the cytoplasm resulted in stabilization of Cdc25 levels in response to expression of the fuz7DD allele. Western blot analysis to show the level of Cdc25 (upper blot) in cells growing in inducing conditions (CMA) for the expression of fuz7DD allele during the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (C) The MAPK Kpp2 is required for down-regulation of Cdc25 levels. Strains expressing at the same time fuz7DD and pcl12 and carrying or not a loss of function allele of kpp2, were grown during the indicated time in inducing conditions (CMA). Extracts were analyzed by Western blot to detect Cdc25-3HA protein levels (upper blot) and the levels of Cdk1, which were used as loading control (bottom blot). (D) Kpp2 is able to interact with Cdc25 upon activation of the pheromone cascade. Soluble extracts from strains carrying Cdc25-3HA and a Kpp2KD-GFP tagged in their corresponding endogenous loci, and carrying ectopic copies of the indicated genes under the control of crg1 promoter, as well as additional mutations (also indicated) were incubated with GFP-trap beads and the immunoprecipitates submitted to Western blot with anti-HA (Cdc25) and anti-GFP (Kpp2KD) antibodies in succession. Cells were grown in inducing conditions (CMA, (A) or repressive conditions (CMD, (D) for crg1 promoter during 6 hr. (E) Scheme of U. maydis Cdc25, showing the N-terminal specific extension, and the postulated MAPK phosphorylation sites, with the Serine residue (in red) exchanged to Alanine in the mutant allele cdc25AAA. (F) The N-terminal extension of Cdc25 determines its down-regulation in response to expression of the fuz7DD allele. Western blot analysis to show the level of Cdc25 or Cdc25 Δ1–270 (upper blot) upon expression of fuz7DD allele in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (G) Putative MAPK phosphorylation sites were involved in the down-regulation of Cdc25 in response to expression of the fuz7DD allele. Western blot analysis to show the level of Cdc25 or Cdc25AAA (upper blot) upon expression of fuz7DD allele in cells growing in inducing conditions (CMA) for the indicated time. Levels of Cdk1 were used as loading control (bottom blot). (H) Cell cycle arrest in response to expression of the fuz7DD allele is unaffected by the absence of down-regulation of Cdc25. fuz7DD-expressing strains carrying the indicated cdc25 alleles, which also carried the NLS-GFP transgene, were incubated in inducing conditions (CMA) for 6 hr. Filaments from each culture were counted and sorted as carrying 1 (cell cycle arrested) or more than one nucleus (not arrested). The graph shows the result from three independent experiments, counting more than 100 filaments each (Figure 7—source data 1). Means and SDs are shown. (I) Quantification of number of filaments showing GFP fluorescence associated with the nucleus in control and strains carrying the indicated cdc25 alleles, expressing pcl12 and incubated for 6 hr in inducing conditions (CMA). The graph shows the result from three independent experiments, counting 50 filaments each (Figure 7—source data 2). Means and SDs are shown.
 
 We entertained the possibility that the observed downregulation of Cdc25 was a side effect of the permanent cytosolic retention of Cdc25, which might promote its degradation by some way, not necessarily related to the pheromone response. In support of this explanation we observed that the downregulation of Cdc25 levels requires the retention of Cdc25 in the cytoplasm, since expression of the fuz7DD allele in a kap123T867A mutant strain does not result in a decrease in Cdc25 levels (Figure 7B). However, we also observed that pcl12 ectopic expression, despite being able to arrest the cell cycle and retain Cdc25 in the cytoplasm, was unable to induce a decrease in the Cdc25 level (Figure 3—figure supplement 1C). Furthermore, from the above described experiments using different pheromone doses, it was clear that the lowest pheromone concentration (0.25 μg/ml), was able to induce the phosphorylation of Kap123 (Figure 5B) as well as the retention of Cdc25 at cytoplasm (Figure 5C and D), but not its downregulation (Figure 7A). These observations suggested that although cytoplasmic retention was required, it was not sufficient to induce the downregulation of Cdc25.
 
@@ -123,13 +191,13 @@ Compared to other fungal Cdc25-like phosphatases, U. maydis Cdc25 carries an unu
 
 In summary, these data strongly suggested that the MAPK Kpp2 targets and downregulates the phosphatase Cdc25, most likely promoting its degradation.
 
-## The pheromone-dependent decrease of Cdc25 levels is required for virulence
+### The pheromone-dependent decrease of Cdc25 levels is required for virulence
 
 We analyzed the capacity of sexually compatible strains (a1 b1 and a2 b2 mating type) carrying the cdc25AAA allele to infect plants. Strikingly, we found that the presence of this mutant allele strongly affected the ability of fungal cells to produce disease to corn plants (Figure 8A). The defect in virulence could be attributed to problems related to the mating process itself or it might be related to subsequent steps, such as the ability of the fungus to proliferate within the plant, for example. To address this issue, we took advantage of the solopathogenic strain SG200, which is a haploid strain that carries the genetic information from the two different mating types and, as a consequence, does not require cell fusion to produce the infective hypha (Bölker et al., 1995). SG200-derived cells carrying the cdc25AAA allele were as virulent as the control strain (Figure 8A), suggesting a problem in mating associated with the presence of the cdc25AAA allele. Moreover, a cdc25AAA mutant cross showed a weak fuzzy phenotype in charcoal plates, in comparison to wild-type control, indicating some kind of problem with the formation of the dikaryotic filament (Figure 8B). We wondered whether the impaired fuzzy phenotype in the mutant crosses was caused by defects in cell fusion. To address that question, we used the Pdik6-NLS-GFP reporter described above. Since this reporter will be only active in the presence of a functional b-factor, it can be used as an indirect readout of cell fusion between compatible sexual partners, observing the appearance of nuclear GFP fluorescence in the cell mixture resulting from cross. We crossed mutant haploid cells carrying the dik6 reporter, and we were able to observe filaments carrying nuclear GFP signal, indicating that cell fusion was not affected. Interestingly, these filaments were multinucleated (Figure 8C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig8-v2.jpg)
 
-**Figure 8.:** (A) cdc25 mutant strains are affected in the ability to infect plants. Disease symptoms caused by crosses of wild-type and AAAcdc25 mutant strains. Strikingly, solopathogenic SG200-derived strains were not affected. The symptoms were scored 14 days after infection. Two independent experiments were carried out and the average values are expressed as percentage of the total number of infected plants (n: 30 plants in each experiment) (AAAFigure 8—source data 1). (B) cdc25 mutant is affected in the formation of dikaryotic hyphae. Crosses of control as well as AAAcdc25 mutant strains carrying compatible mating types (AAAa1 b1 and a2 b2) in charcoal-containing agar plates. Positive fuzzy phenotype can be detected as a white-appearance mycelial growth. Note that mutant combinations were affected in the ability to produce fuzzy phenotype. Plates were incubated at 22°C for two days. (B) cdc25 mutant cells are able to fuse. Crosses from compatible strains (wild-type or AAAcdc25 mutant) carrying a NLS-GFP fusion under control of the b-factor-dependent AAAdik6 promoter were scrapped from agar surface, mounted on microscopy slides and epifluorescence was observed. Representative images show DIC and fluorescence in GFP channel. Bar: 20 μm. (C) cdc25 mutant filaments were affected in nuclear number. Graph shows the quantification of the nuclear content of filaments obtained from charcoal plates. The graph shows the result from two independent experiments, counting more than 50 filaments each (AAAFigure 8—source data 2). Means and SDs are shown. (E) b-induced cell cycle arrest de novo is not affected by the presence of cdc25 mutant allele. Representative images of cultures from AB33-derived strains that were incubated in inducing conditions (minimal medium with nitrate) for 8 hr. Bar: 20 μm.AAA10.7554/eLife.48943.036Figure 8—source data 1.Figure 8A.10.7554/eLife.48943.037Figure 8—source data 2.Figure 8D.
+**Figure 8.:** (A) cdc25AAA mutant strains are affected in the ability to infect plants. Disease symptoms caused by crosses of wild-type and cdc25AAA mutant strains. Strikingly, solopathogenic SG200-derived strains were not affected. The symptoms were scored 14 days after infection. Two independent experiments were carried out and the average values are expressed as percentage of the total number of infected plants (n: 30 plants in each experiment) (Figure 8—source data 1). (B) cdc25AAA mutant is affected in the formation of dikaryotic hyphae. Crosses of control as well as cdc25AAA mutant strains carrying compatible mating types (a1 b1 and a2 b2) in charcoal-containing agar plates. Positive fuzzy phenotype can be detected as a white-appearance mycelial growth. Note that mutant combinations were affected in the ability to produce fuzzy phenotype. Plates were incubated at 22°C for two days. (B) cdc25AAA mutant cells are able to fuse. Crosses from compatible strains (wild-type or cdc25AAA mutant) carrying a NLS-GFP fusion under control of the b-factor-dependent dik6 promoter were scrapped from agar surface, mounted on microscopy slides and epifluorescence was observed. Representative images show DIC and fluorescence in GFP channel. Bar: 20 μm. (C) cdc25AAA mutant filaments were affected in nuclear number. Graph shows the quantification of the nuclear content of filaments obtained from charcoal plates. The graph shows the result from two independent experiments, counting more than 50 filaments each (Figure 8—source data 2). Means and SDs are shown. (E) b-induced cell cycle arrest de novo is not affected by the presence of cdc25AAA mutant allele. Representative images of cultures from AB33-derived strains that were incubated in inducing conditions (minimal medium with nitrate) for 8 hr. Bar: 20 μm.
 
 In contrast to the multinucleated filaments found from crosses involving the Kap123T867A mutant, which seemed not to be able to bypass the G2 barrier imposed by the b-factor (we never found more than four nuclei per filament, Figure 6D), a significant proportion of the filaments observed in cdc25AAA crosses showed more than five nuclei (Figure 8D). Since cells carrying the cdc25AAA allele were able to be arrested in response to activation of the pheromone cascade (Figure 7H), these observations prompted us to think that the presence of the cdc25AAA allele could affect the G2 cell cycle arrest activated in the presence of a functional b-factor. However, we observed that the presence of the cdc25AAA allele did not affect the ability of AB33 cells (see Figure 6—figure supplement 1 for a description of this strain) to undergo cell cycle arrest upon the expression of compatible b proteins (Figure 8E).
 
@@ -147,7 +215,7 @@ G2 cell cycle arrest is established before mating and is maintained once the dik
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/48943/elife-48943-fig9-v2.jpg)
 
-**Figure 9.:** U.maydis. Scheme showing the distinct steps at cell cycle level occurring during the formation of the infective filament of U. maydis. Arrows and bars denote positive and negative interactions. Yellow stars denote phosphorylation. For details, see discussion section.
+**Figure 9.:** maydis. Scheme showing the distinct steps at cell cycle level occurring during the formation of the infective filament of U. maydis. Arrows and bars denote positive and negative interactions. Yellow stars denote phosphorylation. For details, see discussion section.
 
 The reasons for using distinct mechanisms to retain Cdc25 in the cytoplasm are probably related to the degree of reversibility of each developmental step during the infection process. The pheromone recognition by each mating partner has to culminate with the fusion of the respective conjugation tubes. If for some reason this step does not occur, the unmated cells must be able to return to the previous vegetative status. In other words, the pheromone cell cycle arrest should be reversible if the stimulus (pheromone) disappears and mating was not successful. A control mediated by the phosphorylation of importin could probably be easily reversed by some phosphatase (specific or not) once the signaling through the pheromone cascade is abrogated. The formation of the dikaryotic filament, however, is a more terminal decision in the sense that once the mating partners fuse their respective cytoplasms, if they are compatible at the b-locus, the infective filament is committed to infecting the plant. The presence of two independent cell cycle brakes, provided by the retention of Cdc25 at cytoplasm by 14-3-3 proteins and by the transcriptional repression of clb1 could make this step less reversible.
 
@@ -157,17 +225,237 @@ Central to the pheromone-induced cell cycle arrest in U. maydis was the complex 
 
 ## Materials and methods
 
-## U. maydis growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ustilago maydis</td>
+      <td>Strains used in this study are listed inSupplementary file 1</td>
+      <td>Perez-Martin lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli strain</td>
+      <td>DH5α</td>
+      <td>CGSC</td>
+      <td>12384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSTAIRE (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology, Inc</td>
+      <td>Sc-53</td>
+      <td>RRID:AB_2074908</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Cdc2 (Tyr15) (10A11, Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4539</td>
+      <td>RRID:AB_560953</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA, High affinity (3F10, Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>1 867 423</td>
+      <td>RRID:AB_390919</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA-HRP conjugate, High affinity (3F10, Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>12 013 819 001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Myc-HRP conjugate (9E10, mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>1 814 150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, Living Colors (JL-8, mouse monoclonal)</td>
+      <td>Clontech</td>
+      <td>632380</td>
+      <td>RRID:AB_2314359</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-HRP conjugate (Donkey polyclonal)</td>
+      <td>Amersham Biosciences</td>
+      <td>NA934</td>
+      <td>RRID:AB_772206</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat IgG-HRP conjugate (Mouse, monoclonal)</td>
+      <td>SIGMA</td>
+      <td>R7636</td>
+      <td>RRID:AB_1840005</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-HRP conjugate (Goat polyclonal)</td>
+      <td>SIGMA</td>
+      <td>A0168</td>
+      <td>RRID:AB_257867</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Roche</td>
+      <td>834 555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>clonNAT (nourseothricin)</td>
+      <td>Werner BioAgents</td>
+      <td>CAS#96736-11-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418</td>
+      <td>Formedium</td>
+      <td>G418-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carboxine</td>
+      <td>SIGMA</td>
+      <td>45371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phleomycin</td>
+      <td>InvivoGen</td>
+      <td>ant-ph-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Roche Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>11-697-498-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Roche</td>
+      <td>04-906-837-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Synthetic U. maydis a2 pheromone</td>
+      <td>Proteomic Services from National Center of Biotechnology, CSIC, Madrid</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Pure RNA isolation kit</td>
+      <td>Roche</td>
+      <td>11828665001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap_MA</td>
+      <td>Chromotek</td>
+      <td>gtma-400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IgG coupled to Dynabeads (M-270 Epoxy)</td>
+      <td>Thermo Fisher</td>
+      <td>14304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanced SYBR Green supermix</td>
+      <td>BioRad</td>
+      <td>172–5260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Supersignal West Femto Maximum Sensitivity Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>34095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>170–5061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mini-Protean TGX gels</td>
+      <td>Bio-Rad</td>
+      <td>456–1095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### U. maydis growth conditions
 
 Ustilago maydis strains are derived from FB1 and FB2 genetic backgrounds (Banuett and Herskowitz, 1989) and are listed in Supplementary file 1. Cells were grown in rich medium (YPD), complete medium (CMD or CMA) or minimal medium (MMD) (Holliday, 1974). Controlled expression of genes under the crg1 and nar1 promoters was performed as described previously (Brachmann et al., 2001). FACS analyses were described previously (García-Muse et al., 2003).
 
 U. maydis strains used in the presented experiments are as follows:
 
-## U maydis strain generation
+### U maydis strain generation
 
 To construct the different strains, transformation of U. maydis protoplasts with the desired constructions was performed as described previously (Tsukuda et al., 1988). Integration of the corresponding construction into the corresponding loci was verified in each case by diagnostic PCR and subsequent Southern blot analysis or RT-PCR analysis of transcripts depending on the type of integrated mutant allele. U. maydis DNA isolation was performed as previously described (Tsukuda et al., 1988).
 
-## Plasmid construction
+### Plasmid construction
 
 Plasmid pGEM-T easy (Promega) and pJET1.2 (Thermo Fisher) was used for subcloning and sequencing of genomic fragments generated by PCR.
 
@@ -177,11 +465,11 @@ Kap123 serine or threonine to alanine mutant variants were constructed as casset
 
 Further details of the constructions explained above are available on request.
 
-## RNA analysis
+### RNA analysis
 
 Total RNA was extracted with acidic phenol solution. After extraction, the RNA was cleaned using the High Pure RNA Isolation Kit (Roche Diagnostics GmbH). For RT- PCR, cDNA was synthesized using the High Capacity cDNA Reverse Transcription Kit (Applied Biosystems) employing 1 μg total RNA per sample. qRT-PCR was performed using the SsoAdvanced Universal SYBR Green Supermix (BioRad) in a CFX96 Real-Time PCR system (BioRad). Reaction conditions were as follows: 3 min 95°C followed by 40 cycles of 10 s 95°C/10 s 60°C/30 s 72°C.
 
-## Cell lysates preparation and gel electrophoresis analyses
+### Cell lysates preparation and gel electrophoresis analyses
 
 Protein extracts were performed using an adapted chloroacetic acid (TCA) method. Briefly, cells from 5- to 10 ml aliquots of cultures were harvested, and 1 ml of 20% TCA was added. The supernatant was removed after centrifugation, and the pellet was resuspended in 100 μl of 20% TCA and stored at −80°C for 1 hr. Samples were thawed on ice, glass beads were added, and cells were broken using a FastPrep FP120 cell disrupter (BIO 101 ThermoSavant, Obiogene, Carlsbad, CA). The lysate was recovered by punching a hole on the bottom of the tube, and the glass beads were further washed with 200 μl of 5% TCA. Lysates were centrifuged at 1000 × g for 3 min, and the pellet was thoroughly resuspended in 100 μl of 2 × Laemmli buffer and 50 μl of 2 M Tris base. After boiling for 5 min, 10–20 μl were loaded in the gels.
 
@@ -189,28 +477,28 @@ For general purposes, TGX (4–20%) gels from BioRad were used, at constant 100 
 
 Western blots were repeated from at least three independent experiments in each case.
 
-## Protein–protein interaction analysis by Co-immunoprecipitation
+### Protein–protein interaction analysis by Co-immunoprecipitation
 
 To perform immunoprecipitations, crude protein extracts were prepared. Briefly, cells were harvested by centrifugation at 4°C and washed twice with ice-cold water. The cell pellet was resuspended in ice-cold HB buffer (25 mM MOPS pH 7.2, 15 mM MgCl2, 15 mM EGTA, 1% Triton X-100, PhosSTOP [1 tablet per 10 mL], Roche protease inhibitor cocktail [1 tablet per 10 mL]) and cells were broken using a FastPrep FP120 cell disrupter. The lysate was recovered by punching a hole on the bottom of the tube, and the glass beads were further washed with ice-cold HB buffer, and the lysated was cleared by centrifugation (10 min/13000xg).
 
 For co-immunoprecipitation analysis, approximately 3.5 mg of total protein extracts (1 ml) were incubated with 1 μg of the monoclonal antibody for 2 hr at 4°C and then prewashed G-protein coupled magnetic beads (50 μl) were added and incubated for 30 min at 4°C with agitation. For GFP trap, 50 μl GFP trap beads were mixed with 3.5 mg of total protein extracts (1 ml) for 2 hr at 4°C, with agitation. Immunoprecipitates were washed six times with 1 ml of HB buffer.
 
-## Proteomic sample preparation and LC-MS analysis of peptides
+### Proteomic sample preparation and LC-MS analysis of peptides
 
 Crude extracts were obtained and incubated with GFP-trap beads as explained above. After separation of the protein samples by SDS-PAGE and Coomassie Brilliant Blue R250 (Serva, 17525, Heidelberg, Germany) staining and distaining of the SDS-Gel was performed and each lane was cut into 10 pieces. A digest with trypsin NB sequencing grade (Serva, 37283.01, Heidelberg, Germany) was performed with each gel piece over night at 37°C. The eluates of the five upper and the five lower gel pieces were combined, suspended in sample buffer (98% H2O, 2% acetonitrile and 0.1% formic acid) and analyzed by LC-MS.
 
 Peptides generated with trypsin on-bead digestion were subjected to LC-MS analysis: 1.5 µL of each peptide sample were separated with nano-flow LC using an RSLCnano Ultimate 3000 system (Thermo Fisher Scientific). Peptides were loaded for 5 min with 0.07% trifluoroacetic acid on an Acclaim PepMap 100 pre-column (100 µm x 2 cm, C18, 3 µm, 100 Å; Thermo Fisher Scientific) with a flow rate of 20 µL/min. Separation of peptides was done with reverse phase chromatography on an Acclaim PepMap RSLC column (75 µm x 50 cm, C18, 3 µm, 100 Å; Thermo Fisher Scientific) at a flow rate of 300 nL/min. The solvent composition was gradually changed within a time period of 94 min from 96% solvent A (0.1% formic acid) and 4% solvent B (80% acetonitrile, 0.1% formic acid) to 10% solvent B within 2 min, to 30% solvent B within the following 58 min, to 45% solvent B within the next 22 min, and to 90% solvent B within the following 12 min. All solvents and acids had Optima LC/MS quality and were purchased from Thermo Fisher Scientific. Eluting peptides were on-line ionized with nano-electrospray (nESI) using the Nanospray Flex Ion Source (Thermo Scientific) at 1.5 kV (liquid junction) and on-line transferred into an Orbitrap VelosPro mass spectrometer (Thermo Fisher Scientific). Full scans were recorded in a mass range of 300 to 1650 m/z at a resolution of 30,000 followed by data-dependent top 15 CID fragmentation (dynamic exclusion enabled). LC-MS method programming and data acquisition was performed with the XCalibur 4.0 software (Thermo Fisher Scientific).
 
-## Plant infections, mating assays
+### Plant infections, mating assays
 
 Pathogenic development of wild type and mutant strains was assayed by plant infections of the maize (Zea mays) variety Early Golden Bantam (Olds seeds) as described before (Kämper et al., 2006). For mating assays, strains were crossed on charcoal-containing complete medium plates and incubated at 22°C (Holliday, 1974).
 
-## Microscopy
+### Microscopy
 
 Images were obtained using a Nikon Eclipse 90i fluorescence microscope with a Hamamatsu Orca-ER camera driven by Metamorph (Universal Imaging, Downingtown, PA). Images were further processed with ImageJ software.
 
 To determine the presence of Cdc25 at nucleus, merged (RGB) images from cells carrying a cut11-cherry allele (marking the nuclear membrane) and a GFP-Cdc25 allele were used. In each nucleus, a line was traced covering all nucleus diameter and also surrounding cytoplasm using the ImageJ software and the plot intensity for each channel was obtained (using the RGB line profile plugging from ImageJ). Those cells in which the signal inside the nucleus was above the cytoplasmic background were considered as positive for nuclear GFP. In the few cases of strong cytoplasmic background, the sorting or not of that particular nucleus was decided case by case, by looking the intensity of nuclear signal.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 To determine the statistical significance of differences a two-tailed Student t-test was used. P-Values were calculated with the GraphPad Prism 5.0 software.

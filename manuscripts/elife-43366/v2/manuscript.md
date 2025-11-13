@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.43366.001 Cell-cell communication via gap junctions regulates a wide range of physiological processes by enabling the direct intercellular electrical and chemical coupling. However, the in vivo distribution and function of gap junctions remain poorly understood, partly due to the lack of non-invasive tools with both cell-type specificity and high spatiotemporal resolution. Here, we developed PARIS ( p airing a ctuators and r eceivers to optically is olate gap junctions), a new fully genetically encoded tool for measuring the cell-specific gap junctional coupling (GJC). PARIS successfully enabled monitoring of GJC in several cultured cell lines under physiologically relevant conditions and in distinct genetically defined neurons in Drosophila brain, with ~10 s temporal resolution and sub-cellular spatial resolution. These results demonstrate that PARIS is a robust, highly sensitive tool for mapping functional gap junctions and study their regulation in both health and disease.
+Cell-cell communication via gap junctions regulates a wide range of physiological processes by enabling the direct intercellular electrical and chemical coupling. However, the in vivo distribution and function of gap junctions remain poorly understood, partly due to the lack of non-invasive tools with both cell-type specificity and high spatiotemporal resolution. Here, we developed PARIS (pairing actuators and receivers to optically isolate gap junctions), a new fully genetically encoded tool for measuring the cell-specific gap junctional coupling (GJC). PARIS successfully enabled monitoring of GJC in several cultured cell lines under physiologically relevant conditions and in distinct genetically defined neurons in Drosophila brain, with ~10 s temporal resolution and sub-cellular spatial resolution. These results demonstrate that PARIS is a robust, highly sensitive tool for mapping functional gap junctions and study their regulation in both health and disease.
 
 ## Introduction
 
@@ -27,9 +27,29 @@ Gap junctions are intercellular channels that are expressed in virtually all tis
 
 To overcome these limitations, we developed an all-optical approach named PARIS (pairing actuators and receivers to optically isolate gap junctions) in which we express an optically controlled actuator in one cell, to generate an electrochemical gradient of specific molecules between two connected cells, and a fluorescent receiver in the adjacent cell, to detect the movement of the molecules across the gap junctions. GJC between the actuator cell (i.e. expressing actuators) and the receiver cell (i.e. expressing receivers) is detected by a fluorescence increase in the receiver following the optical activation of the actuator (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram depicting the principle and process of PARIS. (B1–B3) Demonstration of PARIS using in HEK293T cells. (B1) Schematic depicting the principle of ArchT/pHluorin pair based PARIS. (B2) Representative images showing expression of the actuator ArchT-BFP (blue) and the receiver pHluorinCAAX (green) in transfected HEK293T cells neighboring to each other. The pseudocolor images showing the basal fluorescence and 4 s ArchT activation induced pHluorin response in the adjacent cell/remote cell. The boxed ‘1’ and ‘2’ above the images (or traces in B3) identify stages before photostimulation and in the peak response. (B3) Representative traces and group analysis of ΔF/F0 in the cells adjacent and remote to the actuator cells (n = 10–17 cells). The stimulus (561 nm light, 0.5 mW) is indicated by the yellow circle in the image and the yellow vertical line in the traces. (C1–C3) Similar to (B), except PARIS signals were recorded before and after CBX treatment (100 μM, 10 min, n = 10 cells). (D) Representative traces of ΔF/F0 using increasing stimulation time (laser power, 0.5 mW). (E–F) Grouped peak ΔF/F0 and peak signal-to-noise ratio (SNR) of PARIS signals recorded with increasing stimulation time (n = 5–12 cells for each data point); the data were fit to a single Hill function (solid lines). (G) Summary of the half-rise and half-decay times of the PARIS signals measured with 4 s or 20 s stimulation (n = 14–18 cells). The scale bars represent 10 μm. *p<0.05, **p<0.01, ***p<0.001, N.S., not significant (p>0.05). In this and subsequent figures, error bars in the representative traces indicate the s.e.m. from three repeat experiments.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A1–A3) Activation of a GMP photocyclase BeCyclOp induced no detectable fluorescence change in a cGMP sensor FlincG3 in 293 T cells co-expressing cGMP based actuator and receiver (561 nm, 0.5 mW, 40 s). (B1–B3) Similar to (A) but used an actuator and a receiver based on Ca2+ (561 nm, 0.5 mW, 80 s). (C) Group analysis of peak ΔF/F0 % from actuator/receiver pairs based on cGMP, Ca2+ respectively (n = 3–11 cells per group). The scale bars represent 10 μm. NS., not significant (p>0.05).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A1–A3) Photostimulation induced increases of pHluorin fluorescence in HEK293T cells co-expressing ArchT and pHluorinCAAX (top row) or pHluorin (second row), but not in HEK293T cells co-expressing ArchTD95N and pHluorinCAAX (third row) or expressing only pHluorinCAAX (bottom row). The stimulus (561 nm light, 0.5 mW) is indicated by the yellow circle in the image (A2) and shaded area in the traces (A3). Error bars indicate ±SEM from three repeats (B) Group data for the experiments shown in (A and B) (n = 11–23 cells per group). (C–F) Representative autonomous traces and group peak ΔF/F0 % under increased stimulating time (0.5 mW laser power, (C–D) or increased laser power (20 s stimulation time, (E–F). The lines are single Hill fits to the data (n = 3–10 cells for each point). The scale bars represent 10 μm. ***p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic diagram depicting a cluster of four HEK293T cells connected by gap junctions. One cell expresses the actuator, and the three receiver cells (R1, R2, and R3) are connected in series to the actuator. (B,C) Time-lapse pseudocolor images and ΔF/F0 traces of the PARIS signals measured in the receiver cells following light-induced activation of the actuator cell. (D) Group data of the peak change in pHluorinCAAX fluorescence in cells R1, R2, and R3 measured as shown in (B); n = 16 cells per group. The scale bar in (B) represents 10 μm. **p<0.005 and ***p<0.001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic diagram showing the process for calibrating pH. (B) Confocal images showing pHluorin (top) and BFP fluorescence (bottom) of cells perfused with buffers with the indicated pH levels. (C) pH calibration curve for mTagBFP-pHluorinCAAX. The GFP/BFP ratio was fitted with a Hill function (n = 10 cells for each point). (D) Schematic diagram and confocal images showing co-expression of mTagBFP-pHluorinCAAX and ArchT-P2A-mRuby3. The yellow circle indicates the stimulation region. (E) Representative traces of the GFP/BFP ratio and pH change upon a 20 s or 4 s stimulation at 561 nm (three stimuli delivered at 3-min intervals) in cells co-expressing mTagBFP-pHluorinCAAX and ArchT-P2A-mRuby3 (green lines) and in cells expressing only mTagBFP-pHluorinCAAX (gray line). Error bars indicate the s.e.m. from triplicate experiments. (F) Summary of the estimated peak change in pH in the experiments shown in (E) based on the calibration curve shown in (C) (n = 10 cells per group). The scale bars represents10 μm. A, actuator cells; R, receiver cells.
+
 ## Results
 
-## Development of a novel all-optical tool for monitoring GJC
+### Development of a novel all-optical tool for monitoring GJC
 
 At the beginning, we tested several pairs of optical actuators/receivers based on generating/detecting small molecules that can readily diffuse across gap junctions, such as cGMP, Ca2+ and proton (H+). Our first step was to test whether the actuator/receiver pair can generate a cell-autonomous signal. We found that, when co-expressed in HEK293T cells (i.e. in the cis configuration), neither a light-activated cGMP cyclase BeCylOp (Gao et al., 2015) paired with a cGMP sensor FlincG3 (Bhargava et al., 2013) nor the red shifted channelrhodopsin CsChrimson (Klapoetke et al., 2014) paired with a sensitive Ca2+ indicator GCaMP6s (Chen et al., 2013) could generate detectable light-induced signal (Figure 1—figure supplement 1).
 
@@ -41,33 +61,73 @@ We next examined whether PARIS based on ArchT/pHluorin can be used to measure GJ
 
 **Figure 2.:** (A1–A2) PARIS detection of gap junctional coupling under increasing light power and the application of CBX (0.01 mW to 1.5 Mw, 20 s). (B1–B2) Electrophysiological recording of the gap junctional currents during actuator activation. (B1), Schematic diagram depicting dual patch-clamp recording of a pair of HEK293T cells connected by gap junctions; one cell of the pair expresses ArchT-BFP. (B2), Light steps applied to the actuator cell (top, from 0.1 mW to 0.5 mW), recorded currents in the receiver cell (middle); elimination of the currents by the application of CBX (100 μM, 10 min treatment, bottom). (C1–C2) Similar experiment using the same cells shown in (B), except that voltage steps (from −60 mV to −40 mV) were applied to the actuator cell, while the receiver cell was clamped at −50 mV. (D1–D3) Input-output curve for peak ΔF/F0 % or currents measured in the receiver cell versus illumination intensity or voltage in the absence or presence of CBX. (E) Summary data showing the relative CBX-mediated inhibition of signals measured with PARIS or current recording (n = 3–15 cells per group). (F) Schematic depicting the process of FRAP method to detect gap junctional communication using Calcein-AM dye. (G,H) Comparison of basal fluorescence between PARIS and FRAP during sequential five photostimulation and photobleaching. (G) Exemplary images showing the fluorescence of Calcein or pHluorin at the beginning of 1st, 3rd and 5th FRAP or PARIS measurement. (H) Traces of fluorescence intensity from five consecutive FRAP and PARIS measurements. The half-rise time for the first traces are indicated with dotted lines reflecting the curve-fit analysis. Yellow or purple lines represent the stimulation (561 nm) or bleaching (405 nm) period. (I) Quantified comparison of basal fluorescence, SNR and the half-rise time between FRAP and PARIS method as experiments shown in (F,G) (n = 5 cells). The scale bar represents 10 μm in (G). ***p<0.001, N.S., not significant.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig3-v2.jpg)
+
+**Figure 3.:** (A) Top, representative images showing adjacent HEK293T cells expressing ArchT/pHluorin. Bottom, pseudocolor images of 40 s laser illumination‒induced peak PARIS signals in receiver cells. Where indicated, the cells were treated with DMSO (Ctrl), 8-Br-cAMP (500 μM), Forskolin (10 μM), or TPA (340 nM) for 6 hr before PARIS measurements. (B) Representative traces and group analysis of PARIS signals in (A) (n = 6–8 cells per group). (C) Top, representative images showing expression of ArchT/pHluorin in HeLa cells with or without transfection of various gap junction proteins. Bottom, pseudocolor images of 40 s laser illumination‒induced peak PARIS signals measured in receiver cells. (D) Representative traces and group analysis of PARIS signals in (C) (n = 6–10 cells per group). (E) Schematic diagram depicting the application of PARIS in cultured rat cardiomyocytes (CMs). Shown below is a corresponding confocal image of the actuator CM and receiver CM, which express ArchT and pHluorinCAAX, respectively. Note that the actuator CM expresses both ArchT and pHluorinCAAX. (F) Top, PARIS responses in the actuator and receiver CMs before adding heptanol, 5 min after treatment of heptanol (2 mM), and 3 min after perfusion by Tyrode solution. Shown at the left is a confocal image of the actuator and receiver CMs. Bottom, corresponding traces of the experiments shown above. Note that the light stimulus elicited a response in both CMs, but only the receiver CM was sensitive to heptanol. (G–H) Summary of the half-rise and half-decay times of the PARIS signals and peak ΔF/F0 for pHluorinCAAX fluorescence in receiver CMs (n = 10 cells). The scale bars represent 10 μm (A,C) or 50 μm (F). *p<0.05, **p<0.01, ***p<0.001, N.S., not significant (p>0.05).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Example images of a cardiomyocyte (CM) expressing ArchT (left), showing Fluo-8 fluorescence at the rest state (middle) and the exciting state (right). (B) Ca2+ transients measured using Fluo-8 fluorescence in the same CM shown in (A) before and after light stimulation. (C–D) Summary of the rate of Ca2+ transients measured with Fluo-8 (C) and the beating rates (D) from untransfected CMs and ArchT-expressing CM before and after light stimulation (n = 11–26 cells per group); cells were stimulated with 20 s pulses at 0.1 mW with 2 min intervals for five repeats. The scale bar represents 50 μm. NS., not significant (p>0.05).
+
 We then quantified the ArchT-induced pH change in the actuator cells using the ratiometric pH indicator mTagBFP-pHluorinCAAX generated by fusing the pH-insensitive blue fluorescent protein mTagBFP (Subach et al., 2008) to the N-terminus of pHluorinCAAX and then calibrating the correlation between pH and the ratio of GFP/BFP fluorescence (Figure 1—figure supplement 4). Based on a fit to the titration curve, we estimated that a 4 s and 20 s laser pulse induces a transient increase of intracellular pH from 7.35 to 7.45 and 7.80 respectively in actuator cells (Figure 1—figure supplement 4D–F), which allowed us to repeatedly elicit a PARIS signal in specific cells as shown above. Together, these data provide proof-of-principle that PARIS is a robust tool for measuring GJC between connected cells.
 
-## Electrophysiological validation of PARIS and its comparison with FRAP in HEK293T cells
+### Electrophysiological validation of PARIS and its comparison with FRAP in HEK293T cells
 
 We have showed that PARIS could detect GJC in a photostimulation-dependent way and sensitive to CBX (Figure 2A,D1 and Figure 1). Next, we further validated PARIS by patch-clamping the receiver cell in order to record the gap junction-mediated current induced by activating the actuator cell using a laser pulse (Figure 2B1). Applying increasingly stronger light pulses to the actuator cell yielded time-locked currents in the receiver cell that were blocked by CBX (Figure 2B2,D2). In the same cells, voltage steps on the actuator cell also elicited non-rectifying and CBX sensitive currents in the receiver cell (Figure 2C,D3). Quantification of the group data showed that the CBX inhibition of GJC was independent from the approaches used to activate the actuator cell (by light or voltage) and from the signals measured in the receiver cell (pHluorinCAAX fluorescence or currents) (Figure 2E). In addition, we performed a head-to-head comparison between PARIS and FRAP—a dye diffusion based methods which detects the gap junction mediated fluorescence recovery after photobleaching (Figure 2F). The PARIS signal was stable for five sequential pulses at 2 min intervals, whereas the FRAP signal decayed considerably over the same time period in terms of both basal fluorescence and SNR (Figure 2G–I). Moreover, the PARIS signal had considerably faster kinetics than FRAP, with a half-rise time of ~21 s compared to ~197 s, respectively (Figure 2J).
 
-## PARIS enables reporting regulations of gap junction and disease-causing mutations in connexin genes
+### PARIS enables reporting regulations of gap junction and disease-causing mutations in connexin genes
 
 Phosphorylation has been implicated in the modulation of GJC by affecting the trafficking, assembly/disassembly, degradation and gating of gap junctions (Laird, 2005; Nihei et al., 2010). To test whether PARIS could report GJC under different regulations such as protein phosphorylation, we treated PARIS-expressing HEK293T cells with the cAMP analog 8-Br-cAMP, the adenylyl cyclase agonist forskolin, or the protein kinase C (PKC) agonist tetradecanoylphorbol acetate (TPA). Compared with the control group, treating cells with TPA significantly inhibited the PARIS signal compared to the control group; in contrast, neither 8-Br-cAMP nor forskolin had obvious effect (Figure 3A,B), suggesting that activating PKC—but not protein kinase A—inhibits GJC, which is in general consistent with previous reports (Lampe, 1994; Sirnes et al., 2009).
 
 Mutations in GJA1, the gene encoding Cx43, have been linked to a number of diseases such as the inherited oculodentodigital dysplasia (Paznekas et al., 2009). We therefore asked whether PARIS could be used to probe the function of Cxs encoded by mutated Cx genes. We performed PARIS in HeLa cells, which do not express measurable levels of endogenous Cxs (Elfgang et al., 1995). As expected, no PARIS signal was elicited in receiver HeLa cells upon photoactivating the actuator cell; while in HeLa cells expressing GJA1, photoactivating the actuator cell elicited a robust fluorescence increase in the adjacent receiver cell (Figure 3C,D). Interestingly, expressing a Cx43 protein with either the R202H or R76H mutation—which affects Cx43 trafficking and gap junction permeability (Shibayama et al., 2005)—caused a significant reduction in the PARIS signal compared to cells expressing wild-type Cx43 (Figure 3C,D). These data indicate that PARIS can be used to probe the effects of clinically relevant mutations in gap junction proteins.
 
-## PARIS can report the activity of functional gap junctions between cardiomyocytes
+### PARIS can report the activity of functional gap junctions between cardiomyocytes
 
 Next, we examined whether PARIS can be used to study gap junctions in a physiologically relevant system, namely cardiomyocytes (CMs). Gap junctions formed by Cx40, Cx43, and Cx45 play an important role in CMs by synchronizing their contractions and defects in these connexins have been associated with cardiovascular diseases (Jongsma and Wilders, 2000). Using CMs cultured from neonatal rats (Figure 3E), we observed that stimulating actuator CMs induced a robust fluorescence increase in receiver CMs with half-rise and half-decay times of approximately 14 and 21 s respectively, and the responses were reversibly blocked by the gap junction blocker heptanol (Garcia-Dorado et al., 1997) (Figure 3F–H). Neither the rate of spontaneous Ca2+ transients in CMs nor the rate of cellular beating was altered by the expression or stimulation of the actuator protein (Figure 3—figure supplement 1), supporting the notion that expressing and activating PARIS does not affect cellular functions.
 
-## PARIS can be used to measure cell-specific GJC in Drosophila brain
+### PARIS can be used to measure cell-specific GJC in Drosophila brain
 
 We then examined whether PARIS can be used to measure gap junction activity (i.e. electrical synapses) between genetically defined cell types in the brain. Using the Drosophila olfactory system as a model system, we first confirmed that ArchT and pHluorin can produce cell-autonomous signals in an ex vivo preparation (Figure 4—figure supplement 1). We expressed both the actuator and the receiver with dual binary expression systems (GH146-QF > QUAS ArchT, GH146-Gal4 > UAS pHluorinCAAX) in excitatory projection neurons (ePNs) in the fly olfactory pathway (Stocker et al., 1997) and measured cell autonomous PARIS signal from the antenna lobe (AL) in the isolated fly brain (i.e. in the cis configuration, Figure 4—figure supplement 1A–G). The ePN autonomous signal could be elicited repeatedly in the same sample for up to 2 hr, with no obvious loss of signal strength (Figure 4—figure supplement 1H,I), indicating that PARIS is stable in intact living tissue.
 
 We then used PARIS to measure electrical synapses formed between excitatory projection neurons (ePNs) and excitatory local neurons (eLNs), both of which have dendritic arborizations in the antennal lobe (AL) (Shang et al., 2007) (Figure 4—figure supplement 2, first row). We generated a transgenic Drosophila line expressing the actuator (GH146-QF > QUAS ArchT) selectively in ePNs and the receiver (Kras-Gal4 >UAS pHluorinCAAX) selectively in eLNs (Figure 4A). Stimulating a 20 μm diameter region in the AL elicited a rapid increase in pHluorinCAAX fluorescence, with half-rise and half-decay times of approximately 12 s and 29 s, respectively (Figure 4B,C,F,G), consistent with previously reported electrophysiological data indicating that ePNs and eLNs are electrically coupled (Huang et al., 2010; Yaksi and Wilson, 2010). Importantly, no response was elicited in the brain when the transgenic flies were pretreated with CBX or in the brain of ShakB2 flies, which have a mutation in their gap junction proteins (Zhang et al., 1999), confirming that the signal measured in the receiver neurons is indeed mediated by gap junctions (Figure 4B,C,F,G). Next, we divided the AL into four regions based on orientation and then scanned each region, revealing that laser illumination can induce a fluorescence increase in each region (Figure 4D,E,H), indicating that electrical coupling is a general property between ePNs and eLNs in the AL. In addition, we examined gap junction activity between ePNs and other cell types by pairing ePNs as the receiver cells with various actuator cells that have anatomical overlap with ePNs, including inhibitory local neurons (iLNs), glial cells, and Keyon cells (Figure 4—figure supplement 2, second-bottom rows). However, when activated, none of these three cell types caused a measurable PARIS signal in the receiver cells (Figure 4—figure supplement 3), suggesting that ePNs may not form functional gap junction connections with iLNs, glial cells, or Keyon cells.
 
-## PARIS can be used to map functional gap junctions in distinct neuronal structures
+![Figure 4.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic diagram depicting the anatomy of the antennal lobe (AL) in a transgenic Drosophila line in which the ePNs express ArchT and the eLNs express pHluorinCAAX (indicated in red and green, respectively). D, V, L, and M refer to dorsal, ventral, medial, and lateral, respectively. (B, C) Pseudocolor images (B) and time course (C) of PARIS signals in the AL of the transgenic flies shown in (A). Note that a 30 s pulse of 561 nm light (0.5 mW) elicited a significant PARIS signal between ePNs and eLNs (top row); in contrast, no signal was elicited when the brain was treated with 100 μM CBX (middle row, 15 min), in flies with the ShakB2 mutation (bottom row). The boxed ‘1–3’ above the images/traces identify stages before photostimulation, in the peak response and in the end of imaging process. (D, E) Pseudocolor images (D) and time course (E) showing PARIS responses of four ROIs from the lateral (L), dorsal (D), middle and ventral (V) part of the AL in the same transgenic Drosophila line in (A). Where indicated, the flies were treated with saline or carbenoxolone (CBX); n = 5 flies per group. (F, G) Summary of the peak PARIS signal (F) and the half-rise and half-decay times (G) elicited by 30 s photostimulation (n = 7–15 flies per group). (H) Group data for the peak PARIS response between eLNs-ePN measured in the four stimulating ROIs indicated in (D) (n = 5 flies per group). The scale bars 20 μm. **p<0.005, ***p<0.001, N.S., not significant (p>0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic diagram depicting the imaging setup and the antennal lobe (AL) in a transgenic fly co-expressing ArchT and pHluorinCAAX in ePNs. (B–D) Pseudocolor images (B), representative traces (C), and summary data (D) showing ePN-autonomous pHluorinCAAX responses measured in the AL (n = 6–9 flies per group). Note that the light stimulus had no effect in flies in which ArchT was not expressed. (E) Time course of the change in pHluorin fluorescence in responses to 561 nm light delivered at the indicated power. (F) Laser illumination with 647 nm light at 1 mW does not induce a detectable PARIS signal. (G) Peak ΔF/F0 plotted against laser power. The solid line is a Hill fit to the data (n = 9 for each data point). (H) Repetitive light stimuli elicit a reproducible cell-autonomous signal in transgenic flies. Shown are ten consecutive recordings of ePN signals collected over a 2 hr period; where indicated, 561 nm light was applied at 0.5 mW. The dashed horizontal line indicates the average peak response from the ten stimuli. (I), Summary of the peak change in pHluorinCAAX fluorescence normalized to the first response measured at the indicated times (n = 8–13 flies for each group). The scale bar represents 20 μm. ***p<0.001, N.S., not significant (p>0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Red channel, the expression of RFP (mRuby3) linked ArchT; green channel, the expression of pHluorinCAAX. The correspondent diver lines used were listed on the left side. The scale bars represent 50 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–C) Similar to Figure 4, except the PARIS signal was measured between ePNs and Keyon cells (ePN-KC), inhibitory local neurons (ePN-iLN), and glial cells (ePN-Glia); n = 7–17 flies per group. PARIS signals between ePNs and eLNs (ePN-eLN) from Figure 4 were represented as a control. The scale bar represents 20 μm. ***p<0.001.
+
+### PARIS can be used to map functional gap junctions in distinct neuronal structures
 
 Electrical coupling between neurons could happen through dendritic networks, axon-axonal connections or somatic contacts, which contribute the signal integration and decision of neuronal firing (Belousov and Fontes, 2013; Yaksi and Wilson, 2010). Capitalizing on the entire optical nature of PARIS, we further examined whether PARIS can be used to measure functional GJC in subcellular compartments, thereby providing spatial resolution that is not accessible to traditional methods such as electrophysiological recording or dye injection. In the Drosophila olfactory system, ventrally localized inhibitory projection neurons (iPNs) and ePNs form gap junctions participating odor information processing (Wang et al., 2014). Anatomically, both ePNs and iPNs have dendrites in the AL and axons that project to the lateral horn (LH) (Figure 6A,B; see also Liang et al. (2013); Parnas et al., 2013). Thus, whether gap junctions are formed between iPNs and ePNs in the AL, LH, or both is currently unknown. To answer this question, we expressed the actuator (Mz699-Gal4 > UAS ArchT) in iPNs and the receiver (GH146-QF > QUAS pHluorinCAAX) in ePNs. We then separately illuminated ePNs-iPNs overlapping regions in the AL or LH to test the presence of functional GJC. Interestingly, stimulating the AL—but not the LH—elicited a significant increase in pHluorinCAAX fluorescence, and this response was eliminated in the presence of CBX (Figure 5B–D). As a control, we confirmed that CBX had no significant influence on the autonomous signal measured at either the AL or LH when both the actuator and receiver were co-expressed in iPNs (i.e. in the cis configuration; Mz699 >ArchT/pHluorin, Figure 5B,C,F). These results support the notion that iPNs and ePNs form functional gap junctions at the AL (i.e. via dendrite-dendrite contacts), but not at the LH (i.e. via axon-axon contacts).
 
-## Further optimization of PARIS by screening of more potent proton pumps
+![Figure 5.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic diagrams depicting two transgenic Drosophila lines in which the ePNs express pHluorinCAAX and iPNs express ArchT (top, shown in green and red), or only the iLNs co-expressing ArchT and pHluorinCAAX (bottom, shown in yellow) in the olfactory pathway are indicated. (B, C) Pseudocolor images (B) and time course (C) of PARIS signals in the AL and LH regions of the transgenic flies shown in (A). Note that in flies in which the ePNs and iPNs express the receiver and actuator, respectively, a 20 s pulse of yellow light elicited a significant PARIS signal in the AL, but not in the LH. Moreover, the signal induced in the AL was inhibited by 100 μM CBX. CBX had no effect in flies in which the actuator and receiver were co-expressed in the same iPNs (i.e., in the cis configuration). (D–F) Group data for the peak PARIS signals (D), the half-rise and half-decay times measured in the indicated conditions (E) and the iPN autonomous responses (n = 3–11 flies per group). The scale bars in (B) represent 20 μm. *p<0.05, N.S., not significant (p>0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Red channel, the expression of RFP (mRuby3) linked ArchT; green channel, the expression of pHluorinCAAX. The correspondent diver lines used were listed on the left side. The scale bar represents 50 μm.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig6-v2.jpg)
+
+**Figure 6.:** (A) Screening for high-efficiency proton actuators. Actuators were fused with BFP at the C-terminus and co-expressed with pHluorinCAAX in HEK293T cells. Top left, membrane trafficking performance of two candidates besides ArchT; top right, phylogenic tree of screened rodopsins. The tree was built using PhyML (Guindon and Gascuel, 2003); bottom, cell-autonomous pHluorin signals of all the potential proton pumps under 20 s photostimulation (n = 5–13 cells per group). (B,C) Exemplary responses and grouped cell-autonomous peak ΔF/F0 % of ArchT, Lari and CarO under increased laser power (20 s stimulation time). The data were fit to a single Hill function (solid lines, n = 10 cells for each data point). The scale bar in (A) represents 10 μm. .
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43366/elife-43366-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal images showing the expression of two new proton pumps besides ArchT in HEK293T cells. Proton pumps were fused with BFP at the C-terminus and co-expressed with pHluorinCAAX. (B) The normalized line-scanning plots of the fluorescence signals in both blue and green channels. (C) Relative colocalization were measured by Pearson’s colocalization ratios of the Autuator-BFP according to pHluorinCAAX (n = 28 for each protein). The scale bars represent 10 μm. ***p<0.001.
+
+### Further optimization of PARIS by screening of more potent proton pumps
 
 To further improve PARIS’s performance for in vivo GJC detecting, we explored the light sensitivity of proton pumps with high-sequence homology to ArchT cloned from fungi, algae, bacteria to proteobacteria (Figure 6A, up right). By measuring the cell-autonomous pHluorin fluorescence increase in response to green-yellow light, we found that six candidates exhibited larger ΔF/F0 than ArchT with a fungi rhodopsin that we named Lari showed the best membrane trafficking performance and 26-times the light-sensitivity of ArchT (Figure 6A–C, Figure 6—figure supplement 1). Therefore, Lari provides a more powerful actuator for in vivo application of PARIS in the future.
 
@@ -75,11 +135,11 @@ To further improve PARIS’s performance for in vivo GJC detecting, we explored 
 
 Here, we describe the development of PARIS, a new all-optical approach for detecting GJC in specific cells. We show that PARIS can be readily adapted for use in both in vitro and ex vivo preparations, including cultured cell lines, primary cardiomyocytes, and transgenic flies. We validated that this system specifically reports functional gap junctions using a variety of electrophysiological, pharmacological, and genetic approaches. By focusing on defined sets of neurons in the Drosophila olfactory system, we show that as the first completely genetically encoded method, PARIS can be applied to repeatedly probe electrical synapses in distinct, genetically tractable neurons with high temporal resolution (on the order of ~10 s) and high spatial resolution.
 
-## Choice of the actuator and receiver
+### Choice of the actuator and receiver
 
 We initially screened three pairs of actuators/receivers, namely ArchT/pHluorin, BeCylOp/FlincG3 and CsChrimson/GCaMP6s. The latter two pairs failed to function in cis to generate receiver responses by activating the actuator (Figure 1—figure supplement 1). For the cGMP based pair, we have also performed the cis experiments in the presence of PDE inhibitor IBMX that prevented the cGMP hydrolyzation and still observed no signal; meanwhile FlincG did response to exogenous application of cGMP (data not shown). Thus, one possible explanation for the absence of the autonomous signal is that light activation of BeCylOp generated limited cGMP that could not induce FlincG3 (EC50 = 0.89 μM) (Bhargava et al., 2013) response. For the pair with CsChrimson, a non-selective cation channel allows not only Ca2+ but also other cations to pass the channel (Klapoetke et al., 2014), we deduce the photoactivation induced Ca2+ influx in the CsChrimson expressing HEK293T cells was still under the detection limit of GCaMP6s. Indeed, we found CsChrimson/GCaMP6s could function in cis to generate cell autonomous signals in cultured hippocampus neurons that endogenously express voltage-gated Ca2+ channel to allow further Ca2+ influx (data not shown).
 
-## Advantages of PARIS over existing techniques
+### Advantages of PARIS over existing techniques
 
 First, PARIS relies solely on light and therefore is virtually non-invasive compared with existing methods including paired-recording (Bennett et al., 1963; Furshpan and Potter, 1959), dye microinjection (Stewart, 1978) and scrape loading (el-Fouly et al., 1987). In addition, given that the activation of the actuator can be specific to subcellular resolution, PARIS can provide spatial information of the functional gap junctions, as shown by our ability to functionally map gap junctions formed at dendrite-dendrite contacts in AL but not at axon-axon contacts in LH between ePNs and iPNs in the Drosophila olfactory system (Figure 5), while such resolution cannot be easily achieved by any of the previously existed method.
 
@@ -87,7 +147,7 @@ With respect to those relatively non-invasive methods which rely on the diffusio
 
 Moreover, the actuator and receiver proteins in PARIS are both genetically encoded. Recently, several innovative hybrid approaches were developed to monitor gap junctions (Kang and Baker, 2016; Qiao and Sanes, 2015; Tian et al., 2012). Using a channel/transporter/enzyme-dependent step for the transfer of small molecules, these approaches can in principle achieve genetic specificity in terms of targeting defined cells. In practice, however, these methods require the addition of an exogenous substrate (Qiao and Sanes, 2015; Tian et al., 2012) or a patch electrode to establish an electrochemical gradient between connected cells (Kang and Baker, 2016), thereby limiting their application, particularly in vivo. In contrast, all the components in PARIS are genetically encoded by relatively small genes, vastly increasing the range of cell types in which they can be selectively expressed. For example, we show that the PARIS proteins can be introduced using transfection (Figures 1–3), virus-mediated expression (Figure 3), and ex vivo transgenic labeling (Figure 4 and 5). Given that similar transgenic tools are available for higher organisms, including mammals, PARIS can easily be adapted to other preparations and animal models, including the highly complex mammalian nervous system. In mammalian systems and model organisms in which transgenic techniques are currently unavailable or impractical, recombinant viruses such as lentiviruses, retroviruses, and adeno-associated viruses can be conveniently packaged with these genetic components and used to infect the appropriate target cells.
 
-## Limitations of PARIS
+### Limitations of PARIS
 
 In most animal cells, intracellular pH is believed to be tightly regulated for optimal biochemical reactions; thus, even a small change in intracellular pH is rapidly restored to a set point by buffers and proton exchangers/transporters located on the membrane of cells or intracellular organelles (Hoffmann and Simonsen, 1989). This robust system for maintaining pH homeostasis enabled us to repeatedly elicit a PARIS signal in both cultured cells and transgenic animals. One caveat to our approach may be the ability of pH to regulate gap junction activity during PARIS. The uncoupling effect of acidic intracellular pH on GJC has long been described across different Cx-consisted gap junctions in vertebrates (Peracchia, 2004; Turin and Warner, 1977) and different innexin-consisted gap junctions in invertebrates (Giaume et al., 1980; Obaid et al., 1983; Stergiopoulos et al., 1999), while alkalization was reported to increase the junctional conductance and the total number of opened channels in gap junction plagues (Palacios-Prado et al., 2010). For the mostly wide expressed Cx43 channels, it has a pKa of ~6.7 in oocytes and fully closed when pH is under 6.4 while fully open when pH is above 7.2 (Stergiopoulos et al., 1999), which enables PARIS measurement to reveal the GJC mediated by Cx43. However, there is one type of gap junctions that has been reported to be sensitive to alkalization—Cx36 consisted gap junctions (González-Nieto et al., 2008). Based on the reported pH-conductance curve, the junctional conductance decreased to 50% when pH increased 0.8 unit from 7.2 to 8. As shown in Figure 1—figure supplements 4 and 0.1-unit pH increase from 7.35 to 7.45 was enough to induce PARIS signal. So PARIS is still possible in reporting Cx36 consisted GJC under proper activation of the actuator. Even though we conclude that PARIS induced pH fluctuation is controllable and transient, one should still be cautious to the possible modification towards gap junctions as well as cell physiology. For the long-time measurements, either reduce the power or shorten the time of laser illumination, meanwhile increase the interval between each measurement should be helpful to decrease the pH influence. An even more sensitive pH indicator could help to minimize the pH influence as well.
 
@@ -97,17 +157,265 @@ PARIS requires the exclusive expression of the actuator and receiver in differen
 
 Lastly, to protect against false negatives of PARIS, a control experiment in the cis configuration is recommended in different customized preparations and context to ensure the function of the actuators and help to optimize the expression level of actuators/receivers as well as the photostimulation parameters accordingly; Meanwhile, PARIS signals alone from cells connected by potential unknown gap junctions should not be interpreted as definitive without confirmation from pharmacology, genetic interventions or a complementary method.
 
-## Future perspectives
+### Future perspectives
 
 Future refinements to PARIS include the use of the new actuators we have screened combining a receiver with higher pH sensitivity, thereby increasing both the signal-to-noise ratio and temporal resolution, allowing for an even wider range of in vitro and in vivo applications. Finally, the use of additional spectrally non-overlapping pairs of proton-related actuators and receivers, as well as developing actuator-receiver pairs that transport and detect other gap junction‒permeable small molecules, may provide the opportunity to detect gap junctions between multiple cell types and/or structures.
 
 ## Materials and methods
 
-## Molecular cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GH146-Gal4</td>
+      <td>Liqun Luo lab</td>
+      <td>RRID:BDSC_30026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GH146-QF</td>
+      <td>Liqun Luo lab</td>
+      <td>RRID:BDSC_30015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GH298-Gal4</td>
+      <td>Liqun Luo lab</td>
+      <td>RRID:BDSC_37294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Krasavietz-Gal4</td>
+      <td>Donggen Luo lab</td>
+      <td>flybaseID#_ FBti0027494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ShakB2</td>
+      <td>Donggen Luo lab</td>
+      <td>flybaseID#_ FBal0015575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mz699-Gal4</td>
+      <td>Liqun Luo lab</td>
+      <td>flybaseID#_ FBti0007260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Repo-Gal4</td>
+      <td>Yi Rao lab</td>
+      <td>RRID:BDSC_7415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB247-Gal4</td>
+      <td>Yi Rao lab</td>
+      <td>RRID:BDSC_64306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-pHluorinCAAX</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>QUAS-pHluorinCAAX</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ArchT-P2A- mRuby3CAAX</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>QUAS-ArchT-P2A-mRuby3CAAX</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Cat#CCL-2; RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>CBX</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C4790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Heptanol</td>
+      <td>J and K Scientific</td>
+      <td>Cat#415422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Forskolin</td>
+      <td>TargetMol</td>
+      <td>Cat#T2939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>8-Br-cAMP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#B7880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>TPA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P1585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Calcein-AM</td>
+      <td>AAT Bioquest</td>
+      <td>Cat#22002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Fluo-8-AM</td>
+      <td>AAT Bioquest</td>
+      <td>Cat#21082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 vector</td>
+      <td>Michael Lin lab</td>
+      <td>Addgene: 52519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-Lari-BFP2</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC28</td>
+      <td>(Pfeiffer et al., 2012)</td>
+      <td>Addgene: 36431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC28-10xUAS-pHluorinCAAX-p10</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC28-5xQUAS pHluorinCAAX-p10</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC28-10xUAS--ArchT-P2A-mRuby 3CAAX-p10</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC28-5xQUAS -ArchT-P2A-mRuby 3CAAX-p10</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>human ORFeome 8.1</td>
+      <td>Center for Cancer Systems Biology</td>
+      <td>http://horfdb.dfci.harvard.edu/</td>
+      <td>Full-length human cDNAs</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 9.1</td>
+      <td>OriginLab</td>
+      <td>https://www.originlab.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/products/matlab.html; RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Inverted confocal microscope</td>
+      <td>Nikon</td>
+      <td>Ti-E A1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning
 
 All plasmids were constructed using the Gibson assembly (Gibson et al., 2009) method. In brief, plasmid vectors and inserts were amplified by PCR using ~30 bp overlapping primers. The fragments were assembled using T5 exonuclease, Phusion DNA polymerase, and Taq DNA ligase (New England Biolabs). All sequences were verified using Sanger sequencing in our in-house facility (sequencing platform in the School of Life Sciences of the Peking University). For cultured cell expression experiments, genes were cloned into the pcDNA3.1 vector unless otherwise noted. ArchT was amplified from pAAV-CAG-ArchT-GFP (Han et al., 2011), codon-optimized rhodopsin genes from different species were synthesized by Qinglan Biotec then fused at the C-terminus with BFP2, a trafficking sequence (TS), and an ER export sequence (ERex), producing Actuator-BFP2. In addition, ArchT was linked directly with a TS and ERex and then fused with mRuby3, yielding pcDNA3.1-ArchT-P2A-mRuby3. mTagBFP was fused to the N-terminus of pHluorinCAAX to generate pcDNA3.1-mTagBFP-pHluorinCAAX. The GJA1 gene was amplified from a cDNA library (hORFeome database 8.1) and fused with RFP (pHuji) (Shen et al., 2014) via a P2A linker to generate pHuji-P2A-GJA1, which was then cloned into the N3 expression vector. Mutations in ArchT and GJA1 were introduced using overlapping PCR with primers containing the mutations of interest. To generate transgenic Drosophila lines, the following four plasmids were used: ArchT (linked with mRuby3CAAX, HA tag and Flag tag: ArchT-HA-TS-ERex-P2A-mRuby3-Flag-CAAX) and pHluorinCAAX were cloned into pJFRC28-10xUAS vector (Pfeiffer et al., 2012)/pJFRC28-5xQUAS vector (made by replacing 10xUAS with 5XQUAS in pJFRC28) respectively, yielding UAS/QUAS-ArchT and UAS/QUAS-pHluorin transgenic flies.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HEK293T cells and HeLa cells were purchased and certified from ATCC (ATCC, Gaithersburg, MD). The cells were negative for mycoplasma. HEK293T cells and HeLa cells were cultured in DMEM containing 10% (v/v) FBS and 1% penicillin-streptomycin (all from Gibco) at 37°C in humidified air containing 5% CO2. For transfection, cells were plated at 50% confluence on 12 mm glass coverslips in 24-well plates; 12–24 hr after plating, the cells were transfected using polyethylenimine (PEI), with a typical ratio of 1 μg DNA: 3 μg PEI per well; 6 hr after transfection (or 2 hr after transfection for electrophysiological experiments), the culture medium was replaced with fresh medium and the cells were incubated for an additional 18–24 hr prior to imaging or electrophysiological recording. For PARIS transfection, the ArchT-BFP2 and pHluorinCAAX constructs were transfected in separate wells; 6 hr after transfection, the cells were dissociated, mixed by pipette, combined into a single well, and incubated for 24 hr prior to imaging. Alternatively, in some experiments, we used sequential transfection, in which the cells were first transfected with the pHluorinCAAX construct; 6 hr later, the medium was changed and the cells were transfected with the ArchT-BFP2 construct. The medium was changed 6 hr later, and the cells were incubated for 24 hr prior to imaging.
 
@@ -115,40 +423,40 @@ For PARIS measurements in HeLa cells, 0.5 μg pHluorinCAAX was mixed with 0.5 μ
 
 HEK293T cells were co-transfected with the mTagBFP-pHluorinCAAX and ArchT-P2A-mRuby3 plasmids (each at 0.5 μg per well in a DNA:PEI ratio of 1:3) or mTagBFP-pHluorinCAAX alone (1 μg per well) 24 hr prior to imaging. Cover slips with cells attached were immersed in Tyrode’s solution containing (in mM): 150 NaCl, 4 KCl, 2 MgCl2, 2 CaCl2, 10 HEPES, and 10 glucose (pH 7.4) and then pre-treated with 10 μM Nigericin for 5 min, after which the calibration buffers were perfused into the chamber. After Nigericin was added, GFP and BFP channels were recorded simultaneously at 5 s intervals (500 ms/frame, 512 × 512 pixels) using a Nikon A1 confocal microscope. Calibration buffers (containing 10 μM Nigericin) at pH 7, 7.5, 8, 8.5, and 9.5 contained (in mM) 120 KCl, 30 NaCl, 2 MgCl2, 10 Glucose, and 10 HEPES; for pH 5.5 and 6.5 buffers, HEPES was replaced with 10 mM MES.
 
-## Electrophysiology
+### Electrophysiology
 
 Patch-clamp recordings were performed using an Olympus IX81 upright microscope equipped with a 40x/0.95 NA objective; images were acquired using Micro-Manager (https://micro-manager.org/). Laser light was delivered via a Sutter DG-4 equipped with a xenon lamp. Cultured HEK293T cells were bathed in Tyrode’s solution. Actuator HEK293T cells were identified by blue fluorescence (excitation filter: 350/50 nm; emission filter: 448/60 nm). ArchT was activated using the same light source filtered through a 560/25 nm Sutter VF5 filter. Light intensity was adjusted using the Sutter DG-4 and was calculated by measuring the light power transmitted through the objective using a SANWA laser power meter LP1). Recording electrodes (with a tip resistance of 3–6 MΩ when filled with internal solution) were fabricated using a Sutter P-97 electrode puller and controlled using Sutter MP-225 micromanipulators. The recording electrodes were filled with an internal solution containing (in mM): 130 K-gluconate, 10 KCl, 2 MgCl2, 2.5 Mg-ATP, 0.25 Na-GTP, 10 HEPES, and 0.4 EGTA (pH adjusted to 7.4 with KOH; osmolarity adjusted to 300 mOsm with sucrose); where indicated, 100 μM carbenoxolone (CBX) (Sigma-Aldrich) was applied by perfusion. The recording signal was amplified and digitized using a HEKA EPC10 double patch-clamp amplifier and collected using Patch Master. Currents were smoothed using a 20 ms moving average in order to minimize 50 Hz AC noise. For simultaneous optical and electrophysiology recordings, the Sutter DG-4 light source was triggered by the HEKA EPC10 amplifier in order to synchronize the electrophysiological recording with the light simulation. All recordings were performed at room temperature.
 
-## FRAP measurements in HEK293T cells
+### FRAP measurements in HEK293T cells
 
 A 1 mM stock solution of Calcein-AM was added to the culture medium to a final concentration of 1 μM. The cells were then incubated for 10 min before washing 3 times with 1 ml Tyrode’s solution. The coverslips containing the attached cells were then placed in a chamber containing Tyrode’s solution and imaged using a Nikon A1 confocal microscope. A typical FRAP experiment was performed using 488 nm imaging for measuring the baseline (1 s/frame, 5 s interval, five frames, 512 × 512 pixels), 405 nm bleaching (12 s, ROI ~5 μm in diameter within the cell), and 488 nm imaging for 2 min in order to track Calcein recovery.
 
-## Preparation, culture, transfection, and infection of primary cardiomyocytes
+### Preparation, culture, transfection, and infection of primary cardiomyocytes
 
 Cardiomyocytes (CMs) were enzymatically dissociated from the ventricles of neonatal (P0) Sprague-Dawley rats, and 0.5–1 × 105 CMs per well were seeded on 12 mm glass coverslips coated with poly-D-lysine (Sigma-Aldrich) in 24-well plates and grown in DMEM containing 10% FBS and 1% penicillin-streptomycin (all from Gibco) at 37°C in humidified air containing 5% CO2. Forty-eight hours after plating, CMs were simultaneously transfected with the ArchT-BFP2 plasmids using Lipofectamine 3000 (Invitrogen) and infected with an adenovirus carrying pHluorinCAAX under CMV promoter (Vigene Biosciences). In brief, before transfection/infection, the medium in each well was replaced with 500 μl Opti-MEM. DNA (1 μg) and Lipofectamine 3000 (1.5 μl) were diluted in 100 μl Opti-MEM and incubated for 15 min at room temperature before additional to each well. At the same time, 1 μl of adeno-associated virus carrying the pHluorinCAAX (3 × 1010 pfu/ml) was added into the same wells. Eight hours later, the Opti-MEM was replaced with standard DMEM medium, and the CMs were incubated for an additional 24 hr prior to imaging.
 
-## Measurements of beating rate and Ca2+ transients in CMs
+### Measurements of beating rate and Ca2+ transients in CMs
 
 CMs were transfected with ArchT-BFP2 plasmids using Lipofectamine 3000 as described above; 24 hr after transfection, CMs expressing ArchT-BFP2 were loaded with 1 μM Fluo-8 AM (AAT Bioquest) for 20 min, washed with 1 ml Tyrode’s solution for three times. CMs were imaged with 488 nm excitation in Tyrode’s solution at room temperature using a Nikon A1 confocal microscope for 1 min to record Ca2+ transients, followed by stimulation with 561 nm for 20 s (5 trials at 2 min intervals). After stimulation, another 1 min of time-lapse imaging was performed using 488 nm excitation to record Ca2+ transients. Ca2+ transients recorded before and after light stimulation were counted using ImageJ analysis of the green channel. All images were generated at a rate of 100 ms/frame. Beating rate was measured using ImageJ analysis of the white-field images.
 
-## Fly strains
+### Fly strains
 
 Drosophila stocks were raised at 25°C on standard corn meal-agar-molasses medium. GH298-Gal4, Mz699-Gal4 (III) (Ito et al., 1997), and GH146-Gal4 (II) (Stocker et al., 1997) and GH146-QF (Potter et al., 2010) were kindly provided by Dr. Liqun Luo. Krasavietz-Gal4 (Dubnau et al., 2003) and ShakB2 (Zhang et al., 1999) strains were gifts from Dr. Donggen Luo which has been verified by genotyping and sequencing the mutated site. Repo-Gal4 and MB247-Gal4 strains were gifts from Dr. Yi Rao. UAS/QUAS-ArchT and UAS/QUAS-pHluorinCAAX transgenic flies were generated at the Core Facility of Drosophila Resource and Technology, Institute of Biochemistry and Cell Biology, Chinese Academy of Sciences. All the transgenic flies have been genotype verified by sequencing in our in-house facility (sequencing platform in the School of Life Sciences of the Peking University).
 
-## Ex vivo fly brain preparations for PARIS imaging
+### Ex vivo fly brain preparations for PARIS imaging
 
 The entire brain from adult flies within 2 weeks after eclosion (no gender preference) was dissected using fine forceps into Ca2+-free adult-like hemolymph (ALH) at RT containing (in mM): 108 NaCl, 5 KCl, 5 HEPES, five trehalose, five sucrose, 26 NaHCO3, 1 NaH2PO4, 2 CaCl2, and 1–2 MgCl2 (275 mOsm) (Wang et al., 2003). The brain was then transferred to a glass-bottom chamber containing ALH for confocal imaging. The brain was held in place using a custom-made platinum frame and positioned with the anterior surface of the brain toward the objective (for imaging and stimulation of the antennal lobe), or with the posterior surface toward the objective (for imaging and stimulation of the lateral horn).
 
-## Fluorescence imaging and light stimulation
+### Fluorescence imaging and light stimulation
 
 Imaging and light stimulation were performed at RT using an inverted Nikon A1 confocal microscope equipped with a Nikon sapphire laser and either a 40x/1.35 NA oil objective (for HEK293T and HeLa cells) or a 20x/0.75 NA air objective (for CMs and fly brains). During imaging, the cells (HEK293T cells, HeLa cells, or CMs) were immersed in Tyrode’s solution. Cells expressing the actuator (ArchT-BFP2) or receiver (pHluorinCAAX) were identified by the presence of blue or green fluorescence respectively. ArchT-BFP2 was excited at 405 nm and visualized using a 450/50 nm filter; pHluorin was excited at 488 nm and visualized using a GaSP photomultiplier after passing through a 525/50 nm filter. Blue fluorescent cells in adjacent to green cells were selected to conduct photostimulation with a ROI of 10–20 μm in diameter. ArchT was photostimulated using a 561 nm scanning laser at 0.5 mW for experiments using cell lines (except for the power-dependent measurements) and 0.1 mW for experiments using CMs. Typically, cells were first imaged using 488 nm excitation (256 × 256 pixels, 500 ms/frame, 2–5 s intervals) to obtain a baseline fluorescence measurement. After obtaining a baseline, pulses of 561 nm laser light were applied to activate the ArchT (4 s/pulse, 5–10 pulses with no delay), intertwined with 488 nm imaging of the receiver. The 488 nm imaging was continued (2–5 s intervals) for 1–2 min after the 561 nm stimulation in order to record the fluorescence recovery of the receiver. For experiments using gap junction blockers and modulators, 100 μM CBX (Sigma-Aldrich), 2 mM heptanol (J and K Scientific), 500 μM 8-Br-cAMP (Sigma-Aldrich), 500 μM forskolin (TargetMol), or 340 nM TPA (Sigma-Aldrich) was applied by adding a 1000x stock solution to the chamber. For CM experiments, heptanol was washed out of the chamber for 3 min by perfusion with Tyrode’s solution.
 
 Fly brains were stimulated and imaged in ALH using the same laser configuration described above at RT. Genotypes of samples were verified by both the presence and the pattern of green (pHluorin) or red (ArchT) fluorescence. The antennal lobe (AL) and lateral horn (LH) were identified by the green fluorescence of pHluorin and were stimulated with 0.5 mW laser intensity using an ROI 20–30 μm in diameter. Ctrl brain and shakeB mutant brain were photostimulated and imaged in ALH after dissection, brain in CBX group were immersed in ALH containing 100 μM CBX for 15 min before photostimulation and imaging.
 
-## Data analysis
+### Data analysis
 
 Time series images were analyzed using Nikon NIS and ImageJ with a stack stablizing plugin (http://www.cs.cmu.edu/~kangli/code/Image_Stabilizer.html). A mean background value obtained from regions away from the pHluorin was subtracted in order to correct for fluorescence intensity (F). For each pixel, we calculated the normalized change in fluorescence intensity (ΔF/F0), where F0 is the baseline fluorescence averaged from five frames obtained prior to light stimulation. ΔF/F0 over time was further processed using Origin 9.1 (OriginLab). ΔF/F0 images were processed with MATLAB (MathWorks) using custom-written scripts in order to produce pseudocolor images which is provided as Source code 1.
 
-## Data presentation and statistical analysis
+### Data presentation and statistical analysis
 
 All summary data are reported as the mean ±s.e.m. The raw data of each cell or brain sample are presented in the graphs and the sample size are indicated in the legends. All data analyses were performed using Origin 9.1 (OriginLab). Differences between groups were tested using the Student’s unpaired or paired t-test, and differences with p<0.05 (two-sided) were considered statistically significant. For Figure 4H, a two-way ANOVA with Tukey post-hoc test was used.

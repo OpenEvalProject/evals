@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/022k4wk35 The Key Laboratory of Cell Proliferation and Regulation Biology, Ministry of Education, College of Life Sciences, Beijing Normal University Beijing China
-2. https://ror.org/03r0ha626 Molecular Medicine Program, Department of Human Genetics, Division of Urology, Department of Surgery, University of Utah School of Medicine Salt Lake City United States
+1. The Key Laboratory of Cell Proliferation and Regulation Biology, Ministry of Education, College of Life Sciences, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+2. Molecular Medicine Program, Department of Human Genetics, Division of Urology, Department of Surgery, University of Utah School of Medicine Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 

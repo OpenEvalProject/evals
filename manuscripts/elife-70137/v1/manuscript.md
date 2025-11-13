@@ -30,37 +30,79 @@ Here, we uncover that PER2 rhythms in the ex vivo SCN under entrainment to optog
 
 ## Results
 
-## An integrated system for long-term optogenetic stimulation and bioluminescence recording
+### An integrated system for long-term optogenetic stimulation and bioluminescence recording
 
 To entrain the SCN slice with optogenetic stimulation, light pulses must be given periodically for multiple days to weeks. While repeated and long-term optogenetic stimulation of the SCN with ChR2 has been used to successfully entrain circadian locomotor behavior (Jones et al., 2015; Tackenberg et al., 2021), long-term blue light exposure in culture can decrease cell viability via toxic byproducts (Stockley et al., 2017). To test the effects of sustained blue light exposure on SCN slices, we delivered blue light pulses (470 nm, 1.2 mW/mm2) for 12 hr to SCN slices expressing a bioluminescent translational reporter of the core clock gene Per2, PER2::LUC (Yoo et al., 2004), but no optogenetic construct. We applied 10 Hz, 10 ms light pulses that can be used to optogenetically drive SCN neurons to fire at light-driven spike frequency in vivo (Jones et al., 2015; Mazuski et al., 2018; Meijer et al., 1998). We found that PER2::LUC bioluminescence became arrhythmic following the prolonged blue light exposure (Figure 1A and B). This effect was not reversible with a medium change (Figure 1A), suggesting that long-term blue light exposure per se can impair circadian rhythmicity in SCN slice cultures.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative PER2::LUC bioluminescence rhythms of adult SCN slices exposed to either red (top) or blue (bottom) 10 Hz light pulses (red or blue bars) for 12 hr. The black arrow indicates the timing of media change. (B) Fold change in the rhythm amplitude following sham, blue, or red light exposure (Student’s t-test, mean ± SEM, n = 3, ***p < 0.001). (C) Merged ChrimsonR-tdT fluorescence and the brightfield images of an SCN slice. Scale = 100 μm. (D) Diagrams showing a multi-channel luminometer integrated with an optogenetic stimulation apparatus.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative PER2::LUC rhythms of SCN slice cultures from an adult (P60) and a young (P12) mouse. Young SCN slice cultures with stabilized glutamine (alanyl-glutamine) showed higher amplitude in PER2::LUC rhythms for a longer duration, compared to rhythms from adult SCN slices in culture medium containing regular glutamine.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Custom-written Matlab code has access to a luminometer data collection software, a multifunction I/O device turning on/off the photomultiplier tubes (PMTs), and a signal generator controlling LEDs. Thus, it can schedule periodic stimulation and execute a series of events during optogenetic stimulation — pause PMT recording, target positioning, LED stimulation, and PMT recording resumption.
 
 Since side effects of light exposure decrease with increasing irradiation wavelength (Tyssowski and Gray, 2019; Wäldchen et al., 2015), we tested whether using red light (625 nm) mitigates light impairment of SCN rhythms. Twelve hr red light pulses (625 nm, 10 Hz, 10 ms, 1.25 mW/mm2) did not significantly affect the PER2::LUC rhythm in SCN slices (Figure 1A and B), suggesting that using red light stimulation could be more feasible for prolonged optogenetic light stimulation ex vivo. We thus expressed a red light-activated opsin, ChrimsonR, fused with a red fluorescent protein tdTomato (tdT) throughout SCN slices using synapsin promoter-controlled AAVs targeting all SCN neurons (AAV-Syn-ChrimsonR-tdT, Klapoetke et al., 2014) to mimic widespread retinal photic inputs to the SCN (Chen et al., 2011; Fernandez et al., 2016; Figure 1C).
 
 To extend the duration over which we can observe the SCN slice throughout entrainment, we improved the quality and robustness of PER2::LUC rhythmicity by using brain slices from younger mice that usually survive longer in culture (Humpel, 2015), and by using stabilized glutamine media that were shown to reduce ammonia production and improve cell viability in cell culture (Christie and Butler, 1999; Imamoto et al., 2013; Figure 1—figure supplement 1). With these modifications, ex vivo SCN rhythms were stable for more than three weeks, long enough to conduct entrainment paradigms without culture medium changes that may perturb ex vivo SCN rhythms and entrainment. For precise temporal control of optogenetic stimulation of multiple SCN slices, we integrated an optogenetic stimulation apparatus into a multi-channel luminometer (Figure 1D). To minimize the potential effect of LED-generated heat on SCN rhythmicity while achieving sufficient light intensity for optogenetic stimulation, we set up a light delivery path in which an LED placed outside the incubator housing the luminometer could deliver 625 nm light through a fiber optic cable and a collimation lens (Figure 1D). We then created a program interface for remotely operating PER2::LUC luminometry and optogenetic stimulation in a coordinated manner (Figure 1—figure supplement 2).
 
-## Discrete optogenetic light pulses differentially alter SCN clock gene waveforms to induce phase and period responses
+### Discrete optogenetic light pulses differentially alter SCN clock gene waveforms to induce phase and period responses
 
 To test how this integrated system induces phase resetting of circadian rhythms that fundamentally underlies circadian entrainment, we applied 10 Hz optogenetic light stimulations to ChrimsonR-expressing SCN slices on the 3rd or 4th day of recording at three different circadian times (CT) as defined by the timing of the intrinsic PER2::LUC rhythm of each SCN slice. We chose 10 Hz stimulation as light-driven SCN spike frequency in vivo ranges from 7–13 Hz (Meijer et al., 1998). By convention, CT12 was defined as the peak time of the PER2::LUC rhythm and is correlated in vivo with the onset of nocturnal behavioral activity (Yoo et al., 2004). Thus, the rising phase (CT0–12) of the PER2::LUC rhythm represents the day phase of intrinsic SCN circadian time, while the falling phase (CT12–24) corresponds to physiological night. Light stimulation in vivo at CT6, CT14, and CT21 induces representative phase responses in the locomotor circadian rhythm (no phase shift, phase delays, and phase advances, respectively) (Daan and Pittendrigh, 1976; Johnson, 1999). We found that the phase responses to ChrimsonR-mediated stimulation in ex vivo SCN indeed mimicked the phase responses of circadian behavior in intact mice to light stimulations (Figure 2A and C). Optogenetic stimulation of SCN slices at CT6 induced little phase shift (0.14 ± 0.19 hr; mean ± SEM), whereas optogenetic stimulation at CT14 and CT21 induced significant phase delays and advances, respectively (CT14: –4.25 ± 0.76 hr, CT21: 4.38 ± 0.67 hr; Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices stimulated with single 15 min 10 Hz optogenetic pulses (red bar) at CT6 (left), 14 (middle), and 21 (right). Linear regressions of the pre-stimulation and post-stimulation cycle peaks are indicated as the blue and green dashed lines, respectively. Phase shifts are depicted by yellow arrows. (B) Representative PER2::LUC rhythms of SCN slices before and after stimulation (red bar). Green traces depict differences in normalized bioluminescence between the pre-stim and post-stim rhythms (black and blue traces, respectively). (C) Quantification of phase shifts following stimulation. Positive and negative phase shifts indicate phase advance and delay, respectively. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, **p < 0.01, ****p < 0.0001). (D) Normalized PER2::LUC induction following stimulation. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, *p < 0.05, **p < 0.01). (E) Fold change in duration of the rising (R; dashed boxes) and falling (F; open boxes) phases of PER2::LUC rhythms following stimulation. (RM two-way ANOVA with Sidak’s multiple comparisons tests, mean ± SEM, n = 3–4, ***p < 0.001). (F) Quantification of period changes following stimulation using linear regression of peaks (left) and Lomb-Scargle periodogram (right). Positive and negative period changes indicate period lengthening and shortening, respectively. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, *p < 0.05, **p < 0.01, ****p < 0.0001).Figure 2—source data 1.Figure 2C–F.
+**Figure 2.:** (A) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices stimulated with single 15 min 10 Hz optogenetic pulses (red bar) at CT6 (left), 14 (middle), and 21 (right). Linear regressions of the pre-stimulation and post-stimulation cycle peaks are indicated as the blue and green dashed lines, respectively. Phase shifts are depicted by yellow arrows. (B) Representative PER2::LUC rhythms of SCN slices before and after stimulation (red bar). Green traces depict differences in normalized bioluminescence between the pre-stim and post-stim rhythms (black and blue traces, respectively). (C) Quantification of phase shifts following stimulation. Positive and negative phase shifts indicate phase advance and delay, respectively. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, **p < 0.01, ****p < 0.0001). (D) Normalized PER2::LUC induction following stimulation. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, *p < 0.05, **p < 0.01). (E) Fold change in duration of the rising (R; dashed boxes) and falling (F; open boxes) phases of PER2::LUC rhythms following stimulation. (RM two-way ANOVA with Sidak’s multiple comparisons tests, mean ± SEM, n = 3–4, ***p < 0.001). (F) Quantification of period changes following stimulation using linear regression of peaks (left) and Lomb-Scargle periodogram (right). Positive and negative period changes indicate period lengthening and shortening, respectively. (One-way ANOVA with Tukey’s multiple comparisons test, mean ± SEM, n = 3–4, *p < 0.05, **p < 0.01, ****p < 0.0001).
 
 Strikingly, optogenetic stimulation of SCN slices differentially altered the waveform of PER2::LUC rhythms on the stimulated cycle, depending on the timing of the stimulation (Figure 2B). Stimulation at night (CT14, CT21) induced greater acute increases in PER2::LUC expression in SCN slices than did stimulation in the day (CT6) (CT6: 0.33 ± 0.02 artificial unit (AU), CT14: 0.70 ± 0.04 AU, CT21: 0.57 ± 0.07 AU; Figure 2D). The differential PER2::LUC induction led to differential changes in the duration of specific phases of PER2::LUC rhythms (Figure 2E). Stimulation at CT14 induced an acute increase in PER2, elongating the falling phase (1.31 ± 0.06 fold change (FC)) to induce a phase delay, whereas stimulation at CT21 accelerated the rising phase (0.72 ± 0.04 FC) to induce a phase advance. Stimulation at CT6, however, did not significantly alter either the rising or the falling phase duration (rising phase: 0.97 ± 0.01 FC, falling phase: 1.06 ± 0.01 FC) despite small PER2::LUC induction, thus causing little phase shift. Together, differential waveform changes in PER2 rhythms underpin time-dependent phase responses to light stimulation in the SCN.
 
 Further, the acute phase shifts were accompanied by a subsequent sustained changes in the free-running circadian period (i.e. circadian period of an oscillator in the absence of external time cues such as light) of SCN slices that persisted for multiple days as an after-effect of the acute phase-shifting stimulations (Figure 2A and F). Similar to after-effects of light induced phase shifts on circadian locomotor behavior (Pittendrigh and Daan, 1976a), phase delays in PER2::LUC rhythms following stimulation at CT14 led to period lengthening on subsequent cycles, whereas phase advances following CT21 stimulation resulted in period shortening (linear regression method. CT14: 0.91 ± 0.14 hr, CT21: –1.57 ± 0.28 hr; Lomb-Scargle periodogram. CT14: 1.46 ± 0.38 hr, CT21: –1.98 ± 0.28 hr; Figure 2F). These after-effects on period were not the result of persistent waveform changes – the PER2::LUC waveform returned to its free-running sinusoidal form after the stimulated cycle. Thus, the SCN itself, in isolation from extra-SCN clocks and neural inputs, has plasticity of the circadian period following acute light stimulation.
 
-## Daily phase-specific waveform changes drive entrainment at the clock gene level
+### Daily phase-specific waveform changes drive entrainment at the clock gene level
 
 Individual phase shifts by external time cues are the building blocks of circadian entrainment (Pittendrigh and Daan, 1976b). Daily, repeated phase shifts to light adjust the endogenous circadian period to match the 24 hr day and align circadian rhythms in a particular temporal relationship with the daily light-dark cycle (i.e. phase angle of entrainment). Remarkably, animals can entrain to single light pulses given repeatedly as a cycle (T-cycle), even to cycle periods that deviate modestly from 24 hr, such as a 22 hr light cycle (Pittendrigh and Daan, 1976b). This so-called one-pulse entrainment is the simplest form of entrainment well-documented in the literature and can be used to easily interpret whether biological clocks can entrain to certain external cues. To test whether optogenetic stimulation can entrain the isolated SCN clock, we delivered periodic optogenetic light stimulation at intervals (optogenetic day-night cycle lengths, or T-cycles) that significantly deviated from the near-24 hr endogenous period of the SCN, to clearly differentiate the entrained state from free-running. One cohort of SCN slices was stimulated every 22 hr (T22) while the other cohort was stimulated every 25 hr (T25, Figure 3A). SCN in both cohorts demonstrated the canonical responses defining circadian entrainment—matching of clock period to the period of the input stimulus (Figure 3B, Figure 3—figure supplements 1 and 2), adopting a stable timing relationship with the repeating stimulus (stable phase angle, Figure 3C, Figure 3—figure supplement 3), and initiating a subsequent free-run from the point in time of the entrained phase angle upon cessation of the stimulus (Figure 3A). Importantly, PER2::LUC rhythms in the SCN entrained to the different T-cycles with different phase angles of entrainment (Figure 3C, Figure 3—figure supplement 3), as predicted by the non-parametric model of circadian entrainment, and previously observed at the level of behavioral outputs (Pittendrigh and Daan, 1976b). PER2::LUC rhythms under T22 and T25 cycles showed that the periodic stimulation was aligned with the late falling and the late rising phases, respectively, where acute stimulation produces phase advances and delays, respectively (Figure 3A). Indeed, PER2::LUC rhythms in the SCN were entrained to short and long period cycles by daily phase advances or daily phase delays, respectively. The daily phase advances and delays were respectively derived from repeated acceleration of the PER2::LUC rising phase (0.79 ± 0.03 fold change) or elongation of the falling phase (1.17 ± 0.03 fold change; Figure 3A, E and F). Taken together, our results demonstrate that PER2::LUC rhythms in SCN slices can entrain to periodic optogenetic stimulation, and reveal that PER2 rhythms in the SCN encode different input cycle lengths via repeated rising phase shortening or falling phase lengthening.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices entrained with 1–1.5 hr 10 Hz optogenetic pulse (red bars) every 22 hr (left) or 25 hr (right). Linear regressions of the pre- and post-entrainment cycle peaks are indicated as the blue and green dashed lines, respectively. Yellow dashed lines indicate half-maxes on the rising phase during entrainment. Grey dashed lines indicate the pre-entrainment cycle period as a reference. (B–D) Quantification of period during entrainment (B), phase angle of entrainment (C), period change by entrainment (D). (B and D) were analyzed using one-way ANOVA with Tukey’s multiple comparisons tests (mean ±  SEM, n  =  4–6, ****p < 0.0001, ***p < 0.001), (C) was analyzed using Student’s t-test (mean ±  SEM, n  =  5–6, ****p < 0.0001). (E) Representative waveforms of PER2::LUC bioluminescence rhythms before (black trace) and during (blue trace) entrainment to T22 (left) and T25 cycles (right). Red bars depict optogenetic stimulation during entrainment. (F) Fold change in duration of the rising (R; dashed boxes) and falling (F; open boxes) phases of PER2::LUC rhythms during entrainment compared with before entrainment. (RM two-way ANOVA with Sidak’s multiple comparisons tests, mean ±  SEM, n  =  5–6, ***p < 0.001, ****p < 0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices entrained with 1–1.5 hr 10 Hz optogenetic pulse (red bars) every 22 hr (left) or 25 hr (right). Actograms are plotted on a 22 hr (left) or 25 hr (right) time scale. Linear regressions of the pre- and post-entrainment cycle peaks are indicated as the blue and green dashed lines, respectively. Yellow dashed lines indicate half-maxes on the rising phase during entrainment. Gray dashed lines indicate the pre-entrainment cycle period as a reference.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (One-way ANOVA with Tukey’s multiple comparisons tests, mean ±  SEM, n  =  4–6, ****p < 0.0001, ***p < 0.001).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Blue dots denote acrophases.
+
 We also tested whether PER2 rhythms in SCN slices show plasticity of endogenous clock period in constant darkness following T-cycle entrainment. T-cycle entrainment by repeated light pulses in vivo produces after-effects on the period of circadian locomotive behavior: short and long T-cycles produce period shortening and lengthening, respectively (Pittendrigh and Daan, 1976b; Schwartz et al., 2011). As phase shifts by single stimulation had profound period after-effects on PER2::LUC rhythms (Figure 2D), repeated phase shifts by periodic stimulation were expected to have significant period after-effects. Surprisingly, however, repeated phase advances in PER2::LUC rhythms in SCN slices during T22 entrainment and phase delays during T25 entrainment did not produce statistically significant period after-effects (Figure 3D, Figure 3—figure supplement 2). This suggests that phase shifts (rather than changes in the endogenous period) are a primary driver of matching circadian PER2 rhythms in the SCN to the period of T-cycles, as proposed by non-parametric model of entrainment (Pittendrigh and Daan, 1976b).
 
-## The SCN clock entrains to skeleton photoperiods with a minimum tolerable night
+### The SCN clock entrains to skeleton photoperiods with a minimum tolerable night
 
 Circadian oscillators in the SCN encode the length and timing of the daily light period (i.e. photoperiod) (Goldman, 2001; Rusak and Morin, 1976), thereby promoting seasonal changes in physiology and behavior. Strikingly, light cycles consisting of only brief light pulses defining dawn and dusk (i.e. skeleton photoperiods) have been shown to simulate most aspects of full photoperiods at the behavioral level, with the interval between the brief dawn and dusk pulses determining the photoperiodic state of circadian behavior (Pittendrigh and Daan, 1976b). This remarkable ability of the circadian system to lock onto the timing of light transitions can, in principle, result from properties of circadian photoreception in the retina (input), downstream behavioral modulation (output), or properties of the SCN clock itself. Here we have tested directly whether the SCN clock itself can be entrained to different photoperiods by brief daily transitions that simulate dawn and dusk.
 
 We applied to SCN slices an optogenetic equivalent of skeleton photoperiods mimicking short (winter-like), equinox, or long (summer-like) photoperiods (8 hr, 12 hr, and 16 hr daylight per day), respectively (Figure 4A and B). For the 12:12 skeleton photoperiod entrainment, we gave short optogenetic stimulations twice per day (12 hr apart). We initiated entraining stimulations with one stimulation at the trough of the free-running PER2::LUC rhythm to mimic dawn, and the other stimulation at the peak to mimic dusk (Figure 4A,B, 12:12). The 12:12 skeleton indeed entrained SCN slices such that PER2::LUC rhythm period during entrainment became matched to the 24 hr optogenetic light cycle length (Figure 4C, Figure 4—figure supplement 1), and the phase angle of entrainment (measured as the difference in time between the dusk pulse and the half-max on the rising phase of PER2::LUC rhythm) was stable (Figure 4D, Figure 4—figure supplement 2). To test for 8:16 short day skeleton photoperiod entrainment, we initiated twice-daily optogenetic stimulations 8 hr apart, with the ‘dawn’ pulse given 2 hr after the trough of the free-running PER2::LUC rhythm, and the ‘dusk’ pulse given 2 hr before the peak (Figure 4A,B, 8:16). The 8:16 skeleton photoperiod entrained PER2::LUC rhythms to 24 hr period (Figure 4C, Figure 4—figure supplement 1) with a stable phase angle (Figure 4D, Figure 4—figure supplement 2) such that the rising phase (SCN day) was encompassed within the 8 hr ‘short day’ interval between the ‘dawn’ and ‘dusk’ stimulations (Figure 4B). To test for entrainment to 16:8 long day skeleton photoperiods, we initiated optogenetic stimulations twice daily 16 hr apart, with the ‘dawn’ stimulation applied 2 hr before the trough and the ‘dusk’ stimulation applied 2 hr after the peak (Figure 4A and B). In contrast to the 12:12 and the 8:16 skeletons, when SCN were presented 16:8 skeleton photoperiods they did not maintain alignment of the PER2::LUC rising phase (SCN day) with the ‘daytime’ interval (16 hr), but instead rapidly phase-advanced across the ‘dawn’ pulse until achieving similar phase angles to the 8:16 skeleton, stably aligning the SCN day (rising) phase within the 8 hr short day interval (Figure 4B–D). This phenomenon in SCN slices replicates the phase jump of circadian locomotor behavior in rodents (Pittendrigh and Daan, 1976b; Figure 4—figure supplement 3) and flies (Pittendrigh and Minis, 1964) during attempted entrainment to long-day skeleton photoperiods, a characteristic expression of circadian plasticity in which entrainment to short-day skeleton photoperiods is more stable. Together, our results show that the SCN clock itself can entrain to different photoperiods by dawn and dusk light pulses, and suggest that the phase-jumping behavior during skeleton periods is derived from SCN-intrinsic clock plasticity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic diagram of optogenetic stimulation paradigm for 8:16 (left), 12:12 (middle), and 16:8 (right) skeleton photoperiod entrainment. Optogenetic pulses (yellow and grey bars for nominal dawn and dusk pulses, respectively) were given twice (8 hr, 12 hr, or 16 hr apart) every 24 hr, targeting near the peak and trough (blue ticks) of PER2::LUC rhythms (black). (B) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices entrained with 15 min 10 Hz red optogenetic pulses at 8:16 (left), 12:12 (middle), or 16:8 (right) interval of 24 hr. Linear regressions of the pre-, post-entrainment cycle peaks and during-entrainment cycle half-maxes are indicated as the blue, green, and orange dashed lines, respectively. (C–E) Quantification of period during entrainment (C), phase angle of entrainment (D), period change following entrainment (E). (One-way ANOVA with Tukey’s multiple comparisons test, mean ±  SEM, n  =  3, **p < 0.01). (F) Representative waveforms of PER2::LUC rhythms in SCN slices in a free-running condition (before and after entrainment), and those entrained to optogenetic 8:16, 12:12, 16:8 photoperiod entrainment. Optogenetic light pulses were given at times indicated by yellow and grey lines marking nominal dawns and dusks, respectively. (G) Fold changes in the duration of the rising phase (top) and the falling phase (bottom) during and after entrainment, compared to before entrainment. (RM two-way ANOVA with Sidak’s multiple comparisons tests, mean ±  SEM, n  =  3, *p < 0.05, **p < 0.01, ****p < 0.0001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Blue dots denote acrophases.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Representative double-plotted wheel-running actogram showing a behavioral phase jump to the preferred phase angle of 16:8 long skeleton photoperiod entrainment. The black tick marks indicate 6 min-binned wheel-running activity. A mouse under a light cycle of 12 hr light (yellow bar) and 12 hr darkness was released into constant darkness and then presented with a 16:8 skeleton photoperiod. The 16 hr interval between 1 hr light pulses defining dawn and dusk was initially aligned with the subjective day (i.e. the time from the nocturnal behavioral offset [blue dashed line] to the onset [red dashed line]). As the circadian rhythm rapidly phase-advanced across the nominal dusk pulse, the shorter 8 hr interval became aligned with the subjective day instead of the night.
 
 Entrainment to different skeleton photoperiods also altered the molecular waveform of the SCN clock (Figure 4F). Stimulations at dawn shortened the PER2::LUC rising phase (8:16 skeleton: 0.84 ± 0.02 fold change (FC), 12:12 skeleton: 0.88 ± 0.03 FC, 16:8 skeleton: 0.70 ± 0.03 FC), while stimulations at dusk lengthened the falling phase (8:16 skeleton: 1.16 ± 0.04 FC, 12:12 skeleton: 1.15 ± 0.03 FC, 16:8 skeleton: 1.30 ± 0.03 FC), to match the clock period to 24 hr and set the phase angle of entrainment (Figure 4F and G). The net effect was that PER2 rhythms show asymmetric waveforms with the falling phase longer than the rising phase in all skeleton photoperiods (Figure 4F and G). However, changes in the waveform did not persist when the rhythms were free-running in constant darkness following entrainment (Figure 4G), indicating that the waveform changes are direct effects of optogenetic light stimulation accelerating and decelerating different phases of the molecular clock during entrainment. Additionally, as entrainment to 8:16 skeleton photoperiods causes period lengthening of circadian behavior in vivo (Pittendrigh and Daan, 1976b), it induced a trend toward period lengthening of PER2::LUC rhythms as an after-effect (0.47 ± 0.11 hr), although these did not reach statistical significance (Figure 4E, Figure 4—figure supplement 2). Taken together, skeleton photoperiods entrain PER2 rhythms in the SCN via opposing actions of light pulses on the duration of the rising and the falling phases to match the clock period to 24 hr.
 
@@ -68,15 +110,23 @@ To determine the waveform of PER2::LUC rhythms in SCN stably entrained to a long
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig5-v1.jpg)
 
-**Figure 5.:** (A) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices entrained to optogenetic skeleton photoperiods (yellow and gray bars for nominal dawn and dusk pulses, respectively) from the 12:12 skeleton to the 14:10 to the 16:8. The left and the middle actogram show that a phase jump (blue arrow) begins during the 14:10 and the 16:8 skeleton photoperiods, respectively. The right actogram depicts SCN PER2::LUC rhythms entrained to all the three skeleton photoperiods without a phase jump. (B) Representative waveforms of the PER2::LUC rhythms entrained to the 12:12 (upper left) and the 16:8 (upper right) skeleton photoperiods simulated by optogenetic stimulation (yellow and grey bars for nominal dawn and dusk pulses, respectively). The bottom plot shows a superimposed image of the two upper plots. (C) Proportion of entrained SCN slices (without a phase jump) and the phase-jumped slices for the 12:12, 14:10, and 16:8 skeleton photoperiods (n = 9).Figure 5—source data 1.Figure 5C.
+**Figure 5.:** (A) Representative double-plotted PER2::LUC bioluminescence actograms of SCN slices entrained to optogenetic skeleton photoperiods (yellow and gray bars for nominal dawn and dusk pulses, respectively) from the 12:12 skeleton to the 14:10 to the 16:8. The left and the middle actogram show that a phase jump (blue arrow) begins during the 14:10 and the 16:8 skeleton photoperiods, respectively. The right actogram depicts SCN PER2::LUC rhythms entrained to all the three skeleton photoperiods without a phase jump. (B) Representative waveforms of the PER2::LUC rhythms entrained to the 12:12 (upper left) and the 16:8 (upper right) skeleton photoperiods simulated by optogenetic stimulation (yellow and grey bars for nominal dawn and dusk pulses, respectively). The bottom plot shows a superimposed image of the two upper plots. (C) Proportion of entrained SCN slices (without a phase jump) and the phase-jumped slices for the 12:12, 14:10, and 16:8 skeleton photoperiods (n = 9).
 
 SCN slices that did stably entrain to the 16:8 long skeleton photoperiod exhibited a broader PER2::LUC rhythm waveform with more prominent PER2::LUC inductions following stimulation at each dawn and dusk transition, compared to the same slices under the 12:12 skeleton photoperiod (Figure 5B). Providing SCN slices with simulation of dawn and dusk transitions was sufficient to mimic waveform broadening of the clock gene rhythms induced by complete long photoperiods (e.g. a cycle of 16 hr light and 8 hr darkness) (Messager et al., 1999; Schaap et al., 2003). Dawn stimulation for the 16:8 skeleton aligned with the late falling phase of the rhythms and led to a greater increase in the slope of the rising phase than did the 12:12 dawn stimulation aligned with the trough (Figure 5B). At dusk, the timing of the 16:8 skeleton stimulation at the early falling phase was later than that of the 12:12 stimulation, triggering greater PER2::LUC induction (Figure 5B). Our results show that the timing of light-dark transitions at dawn and dusk differentially drives photoperiodic effects on the clock gene rhythm waveform in the SCN likely via the observed changes in the magnitude of Per induction.
 
-## The SCN clock expresses regionally distinct clock-resetting capacities
+### The SCN clock expresses regionally distinct clock-resetting capacities
 
 The SCN clock is a functional network of heterogenous cellular oscillators which themselves are autonomous clocks. Recently, genetic dissection approaches (e.g. cell-type-specific knockouts) (Mieda et al., 2015) and real-time imaging of the ex vivo SCN (Evans et al., 2013) further revealed aspects SCN timekeeping at the network level, broadly defining the ventral region marked by vasoactive intestinal polypeptide (VIP) secreting neurons, and the dorsal region marked by arginine vasopressin (AVP) secreting neurons, as distinct functional nodes within the SCN network. SCN slices explanted from mice entrained to extreme lighting conditions such as 20:4 photoperiods (20 hr light:4 hr darkness) or 22 hr light cycles (11 hr light:11 hr darkness) showed regional phase differences and coupling profiles in PER2::LUC rhythms within the SCN distinct from those of SCN slices explanted from mice under a standard light cycle (12 hr light:12 hr darkness) (Azzi et al., 2017; Evans et al., 2013). However, these post-hoc ex vivo studies assay the relaxation of previous light cycle encoding, not the process of entrainment itself (Rohr et al., 2019), and it remains unclear how light input alters network function of the SCN clock in real time. As phase shifts in circadian rhythms by such light pulses underlie light entrainment (Pittendrigh and Daan, 1976b), we assessed how the circadian phase shifts by single light pulses impact the network state of the SCN clock. To do that, we combined optogenetic stimulation of the SCN ex vivo with spatially imaging real-time PER2::LUC bioluminescence in SCN using a light-tight microscope equipped with an LED illumination system.
 
 Pan-neuronal optogenetic stimulation of SCN neurons was applied at CT14 or CT21 and the subsequent network-level changes in the SCN clock were observed following this phase-delaying or phase-advancing stimulation. Subregional bioluminescence rhythm analysis and subsequent hierarchical clustering analysis revealed the spatiotemporal distribution of circadian phase, period, phase response, and period response within the SCN (Figure 6). Before stimulation, the circadian oscillator network in SCN slices exhibited a baseline phase distribution where the dorsomedial lip was most phase-leading and the ventrolateral area the most phase-lagging, and the distribution of circadian period was almost uniform across the SCN (Figure 6A). Optogenetic stimulation induced phase shifts and the period changes of different magnitudes in different regions of the SCN (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig6-v1.jpg)
+
+**Figure 6.:** (A) The upper row shows phase maps of PER2::LUC bioluminescence rhythms in the unilateral SCN before and after optogenetic stimulation at CT14 (left) or CT21 (right), and regional distribution of the phase shifts in response to corresponding stimulation. The lower row displays the period maps before and after the stimulation, and the period change maps. The crossed arrows denote the SCN orientation. D = dorsal, V = ventral, M = medial, L = lateral. The phase maps depict peak times in hours relative to the mean in each condition. Pre-stim and post-stim phases indicate the last peak before stimulation and the first peak after stimulation, respectively. Positive and negative phase shifts indicate phase advances and delays, respectively. Positive and negative period changes indicate period lengthening and shortening, respectively. (B) Representative Rayleigh plots (24 hr circular plots) for regional peak PER2::LUC phases in the SCN, and bar graphs of the circular variance before and after optogenetic stimulation at CT14 (left) or CT21 (right). (Wilcoxon matched-pairs test, n = 6–7, *p < 0.05). The arrows in the Rayleigh plots indicate mean Rayleigh vectors. (C) Group-averaged clusters of the phase shift, period change, pre-stimulation peak phase, and post-stimulation peak phase for CT14 (left) or CT21 (right) stimulation (n = 6–7). Clusters were hierarchically formed using Ward’s minimum variance method. Different colors indicate different clusters. The crossed arrows denote the SCN orientation. D = dorsal, V = ventral, M = medial, L = lateral. (D–E) Phase shifts (left) and period changes (middle) in corresponding clusters in (C), and peak time differences between the phase-leading and the phase-lagging clusters (right) for CT14 (D) or CT21 stimulation (E). Phase shifts and period changes were analyzed using RM One-way ANOVA with Tukey’s multiple comparisons test, mean ±  SEM, n = 6–7, *p < 0.05. Peak time differences were analyzed using paired t-test, mean ±  SEM, n = 6–7, *p < 0.05, ***p < 0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70137/elife-70137-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (Paired t-test, n = 6–7, **p < 0.01).
 
 Following CT14 stimulation, the lateral region showed larger phase delays than did the medial region. In contrast, period lengthening effects were more prominent in the medial SCN than in the lateral SCN, indicating an inverse correlation between phase change and period plasticity among SCN subregions (Figure 6A and C). To classify the SCN into subregions with different rhythmic properties in an unsupervised manner, we performed group-averaged clustering analysis and identified a lateral-medial axis with three clusters for phase shifts (lateral shell: –1.33 ± 0.18 hr, lateral core: –1.64 ± 0.17 hr, medial: –0.64 ± 0.30 hr) and a ventrolateral-dorsomedial axis with three clusters for period changes (dorsomedial: 0.36 ± 0.16 hr, ventrolateral: 0.08 ± 0.14 hr, in-between: 0.31 ± 0.14 hr; Figure 6C and D). In terms of changes in phase coupling, the phase variance within the SCN was increased following stimulation (Figure 6B), indicating a larger phase desynchrony in the SCN. The phase difference between the medial and the lateral regions increased following stimulation (pre-stim: 1.50 ± 0.11 hr, post-stim: 2.17 ± 0.25 hr) as larger phase delays occurred in the phase-lagging, lateral region than in the phase-leading, medial region (Figure 6C and D).
 
@@ -104,28 +154,150 @@ Lastly, our study provides technical contributions to studies of SCN entrainment
 
 ## Materials and methods
 
-## Animals and housing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>PER2::LUC</td>
+      <td>Yoo et al., 2004</td>
+      <td>RRID: IMSR_JAX:006852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV1-Syn-ChrimsonR-tdT</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>Addgene viral prep # 59171-AAV1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClockLab Analysis</td>
+      <td>Actimetrics</td>
+      <td>Matlab-based ClockLab Analysis ver. 2.72</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LumiCycle</td>
+      <td>Actimetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Signal Generator</td>
+      <td>Mhinstek</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OptoLumicycle</td>
+      <td>This study</td>
+      <td>https://github.com/SuilKim/OptoLumicycle (Kim, 2021b copy archived at swh:1:rev:fffae11b1135c5775ee40ffa48bed05315f5282e)</td>
+      <td>Codes for an integrated system of luminometry and optogenetic stimulation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED driver</td>
+      <td>Thorlabs</td>
+      <td>LEDD1B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber-coupled LEDs</td>
+      <td>Thorlabs</td>
+      <td>M470F3 (470 nm), M625F2 (625 nm)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fiber collimation package</td>
+      <td>Thorlabs</td>
+      <td>F230SMA-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multi-mode fiber cable (Ø1500μm, 0.39NA)</td>
+      <td>Thorlabs</td>
+      <td>M93L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Relay switch</td>
+      <td>Sensata-Crydom</td>
+      <td>DC60S5-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Multi-functional I/O device</td>
+      <td>National Instruments</td>
+      <td>USB-6001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and housing
 
 P11-14 heterozygous PER2::LUC knock-in mice (Yoo et al., 2004) were used for organotypic slice culture and subsequent procedures as the PER2::LUC knock-in allele can alter circadian functions such as free-running period and entrainment (Ralph et al., 2021). All animals were housed in a 12:12 LD cycle, and had food and water provided ad libitum. Both male and female mice were used in experiments. Experiments were performed in accordance with the Vanderbilt University Institutional Animal Care and Use Committee and National Institutes of Health guidelines.
 
-## Organotypic slice culture and AAV viral transduction
+### Organotypic slice culture and AAV viral transduction
 
 Removed brains were mounted and cut into coronal slices (300 μm) on a vibrating blade microtome (Leica) in cold HBSS supplemented with 100 U/ml penicillin/streptomycin, 10 mM HEPES, and 4.5 mM sodium bicarbonate. The SCN slices were dissected out and transferred onto a PTFE membrane insert (Millipore) in 35 mm culture dishes with 1.2 ml of DMEM (D5030, Sigma) supplemented with 3.5 g/L D-glucose, 2 mM Glutamax (Gibco), 10 mM HEPES, 25 U/ml penicillin/streptomycin, 2% B-27 Plus (Gibco), and 0.1 mM D-Luciferin sodium salt (Tocris). The SCN slice position was adjusted to the center of the dish and 1.5 μl AAV (pAAV1-Syn-ChrimsonR-tdT, Addgene) (Klapoetke et al., 2014) was placed directly onto the SCN slice. The culture dishes were then sealed with an optically clear PCR plate film (Bio-Rad) and maintained in a non-humidified incubator at 36.8 °C for about 10 days. The opsin expression was checked after about 10 days of viral transduction by imaging tdT fluorescence.
 
-## Bioluminescence recording and in situ optogenetic stimulation
+### Bioluminescence recording and in situ optogenetic stimulation
 
 After viral transduction, bioluminescence from firefly luciferase in each of PER2::LUC SCN slices was recorded in 6 min intervals by a 32-channel/4-photomultiplier tube luminometer LumiCycle (Actimetrics) in a non-humidified, light-tight incubator at 36.8 °C. Baseline rhythms were recorded for at least three days before optogenetic stimulation. For optogenetic stimulation, 625 nm LED light (10 Hz, 10 ms pulse width, 1.5 mW/mm2) was delivered at the center (6 mm illumination radius) of a target culture dish by a fiber-coupled LED (M625F2, Thorlabs). The LED was located outside the incubator and coupled to a multimode fiber cable (Ø1500μm, 0.39NA) (M93L, Thorlabs) and a fiber collimation package (F230SMA-B, Thorlabs) tethered above samples. Light pulses were generated by an LED driver (LEDD1B, Thorlabs) and a signal generator (Mhinstek). For remotely turning on and off the photomultiplier tubes in the luminometer, a relay switch (Sensata-Crydom) was added in the electrical circuit of the luminometer and connected to a multi-functional I/O device (National Instruments). Custom-written code (OptoLumicycle, Kim, 2021a) in Matlab (Mathworks) was used to access luminescence data collection software (Actimetrics), the multi-functional I/O device, and a signal generator software (Mhinstek). The Matlab code loaded a spreadsheet having stimulation settings and time schedules, and executed a series of events during optogenetic stimulation: pause bioluminescence recording, target positioning, stimulation initiation, stimulation termination, and resumption of the recording. For a long light exposure test, 12 h blue or red light pulses (10 Hz, 10 ms pulse width, 1.2 mW/ mm2) were illuminated onto PER2::LUC SCN slices by LEDs (M470F3 or M625F2, respectively, Thorlabs) coupled to a multimode fiber cable (Ø1500μm, 0.39NA) (M93L, Thorlabs). Blue light-illuminated samples were given a medium change 2 days after illumination.
 
-## Bioluminescence recording data analysis and visualization
+### Bioluminescence recording data analysis and visualization
 
 Raw bioluminescence data were baseline-subtracted using 24 hr running averages and smoothed by 2.4 hr moving averages using LumiCycle Analysis software (Actimetrics), and then they were loaded as normalized actograms into Matlab-run ClockLab software (Actimetrics) for further analyses. Phase shifts were determined as the time difference between the observed post-stimulation peak of the bioluminescence rhythm and the predicted peak from a linear regression of at least three cycles before stimulation. Period changes were determined as the difference in the period length between the pre-stim and the post-stim cycles. Period length was calculated using a linear regression of at least three peaks or using Lomb-Scargle periodogram in ClockLab software. If peaks were not obvious, the period length was determined using half-maxes of the rising phase. Acrophases were calculated using ClockLab software. For data visualization, smoothed and baseline-subtracted bioluminescence rhythms were represented as double-plotted actograms normalized to min and max values of the data for each line of the actograms, using Excel (Microsoft) and Prism (Graphpad). The actograms were 24h-plotted unless otherwise stated. Bioluminescence rhythms of 12 hr light-exposed slices were visualized using Excel and LumiCycle Analysis software. For quantifying the effect of a long light exposure on the rhythm amplitude, the amplitude of the first post-treatment cycle was normalized to the amplitude of the last pre-treatment cycle. For waveform analyses of single phase shifts, smoothed bioluminescence rhythms with and without stimulation were normalized to extrapolated peak and trough values based on the average dampening rate of the rhythm amplitude over time. Then the rhythms with stimulation were subtracted from those without stimulation. Normalized induction following stimulation was calculated as the first-cycle amplitude of the subtraction data. For waveform analyses of bioluminescence rhythms during T cycle entrainment, smoothed bioluminescence rhythms before T22/T25 entrainment and during T22 entrainment were normalized to peak and trough values, and the rhythms during T25 entrainment were normalized to actual troughs and interpolated peaks based on the first cycle of the free-running rhythms released in constant darkness. For waveform analyses of bioluminescence rhythms during skeleton photoperiods, the smoothed first derivatives were taken from the smoothed, baseline-subtracted bioluminescence rhythms normalized to min and max values, using Excel and Prism. The duration of the rising and falling phases was determined using the time duration between the zero crossings of the first derivatives. If the first derivatives were close to zero but did not make a zero crossing due to an increase immediately following an optogenetic stimulation, the local minimum was defined as the end of the rising phase. Waveform data were visualized using Excel and Prism.
 
-## Time-lapse bioluminescence imaging with optogenetic stimulation and data analyses
+### Time-lapse bioluminescence imaging with optogenetic stimulation and data analyses
 
 SCN slices expressing PER2::LUC and pAAV-ChrimsonR-tdT were cultured in the sealed 35 mm dishes as described above, and the dishes were transferred into a temperature-controlled chamber of the LV200 microscope system (Olympus) equipped with an imaging software (CellSens, Olympus), an EM-CCD camera (Hamamatsu) and an LED light illumination system (CoolLED). Bioluminescent images were acquired every ten minutes using a 40 x objective lens and 0.2 x tube lens. For optogenetic stimulation, 10 Hz 635 nm LED light pulses with 10 ms pulse width were illuminated for 15 min using real-time controllers (Olympus) and the experimental manager of CellSens imaging software. Stimulation time was determined using at least three cycles of PER2::LUC bioluminescence rhythms before stimulation. For regional analyses in ImageJ (NIH), background noise in bioluminescent image series were removed using grouped Z projections with group size two and minimum intensity method, and 15 × 15 pixel ROIs were generated based on average intensity projections of the image series. Mean intensity data from each ROI was 0th-order smoothed in Prism, and peak times of the bioluminescence rhythms were determined using Excel. To create a circadian phase map, peak time data were normalized to the mean and plotted as a rainbow-colored heat map in Prism. A circadian period map was created using period values calculated from three cycle peaks for each ROI. Phase shifts and period changes were calculated as described above. To determine the overall phase dispersion within the SCN slice, circular variance (= 1 − mean vector length) was calculated and Rayleigh plots were generated using Oriana (Kovach Computing Services).
 
 For cluster analyses in each dimension (e.g. phase shift), two clusters were formed from each SCN slice using Ward’s minimum variance method in SPSS (IBM) to separate ROIs with larger values from ROIs with smaller values, and then two-clustered SCN slices were color-coded in Excel. The color-coded clusters were group-averaged using ImageJ, and the group-averaged was clustered again in SPSS to divide into three regions. To calculate the difference in each dimension among the three clusters, bioluminescent image series were re-analyzed using ROIs corresponding to each cluster.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed in Prism (Graphpad). Statistical tests used for each experiment are provided in the figure legend. Data are presented as a mean ± standard error of mean (SEM) and differences between groups were considered statistically significant when p < 0.05.

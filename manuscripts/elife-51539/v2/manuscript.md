@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.51539.001 We previously reported a CRISPR-mediated knock-in strategy into introns of Drosophila genes, generating an attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP transgenic library for multiple uses (Lee et al., 2018a). The method relied on double stranded DNA (dsDNA) homology donors with ~1 kb homology arms. Here, we describe three new simpler ways to edit genes in flies. We create single stranded DNA (ssDNA) donors using PCR and add 100 nt of homology on each side of an integration cassette, followed by enzymatic removal of one strand. Using this method, we generated GFP-tagged proteins that mark organelles in S2 cells. We then describe two dsDNA methods using cheap synthesized donors flanked by 100 nt homology arms and gRNA target sites cloned into a plasmid. Upon injection, donor DNA (1 to 5 kb) is released from the plasmid by Cas9. The cassette integrates efficiently and precisely in vivo. The approach is fast, cheap, and scalable.
+We previously reported a CRISPR-mediated knock-in strategy into introns of Drosophila genes, generating an attP-FRT-SA-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP transgenic library for multiple uses (Lee et al., 2018a). The method relied on double stranded DNA (dsDNA) homology donors with ~1 kb homology arms. Here, we describe three new simpler ways to edit genes in flies. We create single stranded DNA (ssDNA) donors using PCR and add 100 nt of homology on each side of an integration cassette, followed by enzymatic removal of one strand. Using this method, we generated GFP-tagged proteins that mark organelles in S2 cells. We then describe two dsDNA methods using cheap synthesized donors flanked by 100 nt homology arms and gRNA target sites cloned into a plasmid. Upon injection, donor DNA (1 to 5 kb) is released from the plasmid by Cas9. The cassette integrates efficiently and precisely in vivo. The approach is fast, cheap, and scalable.
 
 ## Introduction
 
@@ -57,7 +57,7 @@ Here, we report the development of methods, using either a PCR-generated, single
 
 ## Results and discussion
 
-## ssDNA homology donors
+### ssDNA homology donors
 
 dsDNA homology donors for insertion of large cassettes in Drosophila typically require stretches of 500 nt to 1 kb of homology to the target site on either side of the SIC (Rong and Golic, 2000; Beumer et al., 2013; Zhang et al., 2014; Diao et al., 2015; Bier et al., 2018; Lee et al., 2018a). The large size of the homology regions affects cloning efficiency of the donor constructs (Lee et al., 2018a). Single stranded homology donors typically rely on much shorter homology arms (50–100 nt) to successfully integrate short DNA segments in Drosophila (~200 nt) based on homology-directed repair (Beumer et al., 2013; Gratz et al., 2013; Wissel et al., 2016; Bier et al., 2018). To facilitate and speed up the preparation of homology donor constructs, we decided to test ssDNA donors for CRISPR-mediated homologous recombination of donors that are 1 to 2 kb.
 
@@ -69,9 +69,292 @@ To produce ssDNA homology donors, we established a cloning-free method based on 
 
 We first tested the efficacy of ssDNA drop-in constructs as a substrate for homology-directed repair in Drosophila S2R+ cells stably transfected with Cas9 (S2R+-MT::Cas9; Viswanatha et al., 2018). Specifically, we were interested in generating a collection of Drosophila S2R+ cells in which different organelles are marked by a protein tagged with a superfolder GFP (sfGFP) in each cell line (Pédelacq et al., 2006). We therefore amplified a SIC consisting of attP-SA-Linker-sfGFP-Linker-SD-attP (1392 nt including homology arms) using 20 different gene-specific primer pairs (Figure 2A, Supplementary file 3). Each gene-specific ssDNA homology donor was electroporated into Cas9-positive cells along with a corresponding gene-specific gRNA and then subjected to fluorescence-activated cell sorting (FACS) (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of drop-in cassette encoding for sfGFP artificial exon. Size of the construct including the homology arms is indicated on the right. sfGFP: superfolderGFP; SA: Splice Acceptor of mhc; SD: Splice Donor of mhc; L: flexible linker that consists of four copies of Gly-Gly-Ser. (B) Diagram of steps to isolate cell clones resulting from successful homologous recombination events. (C) Examples of S2R+ cells with organelles marked with GFP. Left panel, antibody staining; middle panel, GFP signal; right panel, the merge.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** All cell lines express mCherry::Clic, which is present in the parental cell line and thus in these derivatives. Single cell clones with GFP expression levels greater than 2 × 102 were retained.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Left panels, confocal fluorescence detection of GFP fusion proteins in single-cell isolated clones. The specific proteins tagged by GFP knock-in are indicated. Center panels, confocal fluorescence detection of mCherry::Clic, which is present in the parental cell line and thus in these derivatives. Right panels, merged image.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Western blot analysis of selected clones using anti-GFP antibody shows expected protein sizes.
+
 The frequency of GFP+ cells was determined by FACS (Figure 2—figure supplement 1) to range between ~1–4%. GFP-positive cells were clonally isolated, cultured, and analyzed. We observed that for any given clone, all cells had the same subcellular GFP localization, indicating that they were derived from a single cell and that the insertion was stably integrated. For 19 out of 20 genes targeted we observed GFP signal by FACS (Table 1). For 12 of 19 genes, we could establish GFP+ clones, verify correct integration by PCR, and determine subcellular localization by immunostaining (Table 1, Figure 2C, Figure 2—figure supplement 2). With the exception of Ref2P, all correct insertions of GFP resulted in fusion proteins with the expected subcellular distribution. The genes for which we observed GFP signal by FACS but could not successfully isolate GFP+ clones tended to be expressed at low levels in S2R+ cells based on modEncode expression profiling (Cherbas et al., 2011; Table 1). For these genes it is possible that the signal-to-noise ratio for GFP was insufficient to robustly select GFP+ clones, leading to the loss of positive cells in the population.
 
+**Table 1.**
+ Summary of ssDNA drop-in mediated homologous recombination in S2R+ cells
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organelle</th>
+      <th>Fly protein</th>
+      <th>clones obtained</th>
+      <th>population imaged</th>
+      <th>clones imaged</th>
+      <th>insertion sequence verified</th>
+      <th>Immunostained</th>
+      <th>Correct GFP localization</th>
+      <th>DGRC stock#</th>
+      <th>S2R+ expression (modENCODE RPKM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Autophagosomes</td>
+      <td>Atg8a</td>
+      <td>14</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>Autophagosomes/aggregates</td>
+      <td>Ref(2)P</td>
+      <td>9</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Ref2P, a-FK2</td>
+      <td>N</td>
+      <td>N</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <td>Endoplasmic reticulum (ER)</td>
+      <td>Calnexin99A</td>
+      <td>16</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Cnx99a</td>
+      <td>Y</td>
+      <td>273</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>Endoplasmic reticulum (ER), transitional</td>
+      <td>Sec23</td>
+      <td>30</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>*</td>
+      <td>294</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>Endosomes, early</td>
+      <td>Rab5</td>
+      <td>9</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Endosomes, recycling</td>
+      <td>Rab11</td>
+      <td>23</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>*</td>
+      <td>274</td>
+      <td>302</td>
+    </tr>
+    <tr>
+      <td>G-Bodies (cytoplasmic puncta)</td>
+      <td>Pfk</td>
+      <td>14</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Golgi (cis-Golgi)</td>
+      <td>Gmap</td>
+      <td>10</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-GMAP</td>
+      <td>Y</td>
+      <td>276, 277</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Golgi (trans-Golgi)</td>
+      <td>Sec71</td>
+      <td>10</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Golgi (trans-Golgi)</td>
+      <td>Golgin245</td>
+      <td>1</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Golgin245</td>
+      <td>Y</td>
+      <td>280</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Kinetochore</td>
+      <td>Polo</td>
+      <td>2</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>275</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Lipid droplets</td>
+      <td>Seipin</td>
+      <td>12</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Lysosomes</td>
+      <td>spin</td>
+      <td>2</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Arl8</td>
+      <td>Y</td>
+      <td>293</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Lysosomes</td>
+      <td>Arl8</td>
+      <td>9</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Arl8</td>
+      <td>Y</td>
+      <td>291</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>Mitochondria</td>
+      <td>Tim17b</td>
+      <td>3</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>a-ATP5A</td>
+      <td>N</td>
+      <td>N</td>
+      <td>266</td>
+    </tr>
+    <tr>
+      <td>Mitochondria</td>
+      <td>Tom20</td>
+      <td>17</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-ATP5A</td>
+      <td>Y</td>
+      <td>302</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>Nuclear membrane, inner</td>
+      <td>dLBR</td>
+      <td>0</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Nuclear membrane, inner</td>
+      <td>Lamin</td>
+      <td>53</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Lamin</td>
+      <td>Y</td>
+      <td>292</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>Nucleolus</td>
+      <td>Fibrillarin</td>
+      <td>14</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>Y</td>
+      <td>a-Fib</td>
+      <td>Y</td>
+      <td>278, 279</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Peroxisomes</td>
+      <td>Pmp70</td>
+      <td>6</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
+
+_* = distribution was as expected, but no antibody available to test by co-stain_
+
 Sequencing of the SIC insertion sites (Table 1) for the 12 cell lines showed that the insertions are precise. Western blotting of cell lysates confirmed that the inserted tags lead to GFP fusion proteins of the expected molecular weights (Figure 2—figure supplement 3). Given the dynamic localization of Polo protein during mitosis (Llamazares et al., 1991) we recorded the Polo subcellular localization pattern in live cells through mitosis. Time-lapse confocal imaging of Polo-GFP showed that the protein is localized to centrosomes, spindle, and midbody during cell division, in agreement with the data obtained by immunofluorescence (Llamazares et al., 1991) or using polo-GFP transgenes (Moutinho-Santos et al., 1999; (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/51539/elife-51539-video1.mp4.jpg)
 
 Previously, PCR generated double-stranded constructs containing GFP and an antibiotic resistance gene have been used for homologous recombination in S2 cells (Böttcher et al., 2014; Kunzelmann et al., 2016). However, selection with a drug resistance gene was used to enrich the population and GFP integration frequency was about 2% as judged by FACS. We were able to generate GFP protein traps in S2 cells using long ssDNA in up to 4% transfected cells and obtain clones without using drug-based selection (Figure 2, Figure 2—figure supplement 2).
 
@@ -79,7 +362,7 @@ Previous studies by Richardson et al. (2016) analyzed the binding dynamics of Ca
 
 In summary, ssDNA drop-in constructs are simple to produce and provided an efficient homology substrate in S2R+ cells for about 60% of the tested genes. The generated cell lines with marked organelles—endoplasmic reticulum (2), recycling endosomes, cis and trans Golgi, kinetochores, lysosomes (2), mitochondria, nucleoli and nuclear envelopes (Table 1)—are listed at the Drosophila RNAi Screening Center (DRSC) website (https://fgr.hms.harvard.edu/crispr-modified-cell-lines) and available through the Drosophila Genomics Resource Center (DGRC; https://dgrc.bio.indiana.edu). These cell lines will be a useful resource for small- and large-scale studies of organelle biogenesis, organelle function, and/or subcellular distribution of organelles or specific fusion proteins, and genetic and pharmacological screens to identify regulators of organelle homeostasis.
 
-## Integration of ssDNA drop-in donors in the germline
+### Integration of ssDNA drop-in donors in the germline
 
 We next generated a drop-in SIC for in vivo Drosophila transformation that can be amplified using PCR primers. Our initial experiments showed that the empirical size limit for ssDNA production was ~2 kb, significantly smaller than the ~5 kb SIC present in the CRIMIC cassettes currently used by the GDP (Lee et al., 2018a). A minimal SIC should contain attP sites to enable downstream RMCE applications and a dominant marker that allows detection of positive insertions in the targeted locus. The smallest self-sufficient visible dominant marker in Drosophila is 3XP3-EGFP (Horn et al., 2000). Hence, in order to remain under the size limit, we generated an attP-3XP3-EGFP-attP PCR template that is 1242 nt long and can be used for ssDNA donor (1442 nt including two 100 nt homology arms) generation (Figure 3A). The attP-3XP3-EGFP-attP cassette is not mutagenic unless inserted in exons and only generates a landing site for RMCE in the targeted region.
 
@@ -93,9 +376,17 @@ Short ssDNA homology donors were previously used in Drosophila to integrate smal
 
 In summary, the ssDNA constructs are efficient donors for S2R+ cells for protein tagging by knock-in but for fly transgenesis they are not more efficient than the standard CRIMIC method. Nevertheless, the ease and low cost of producing these constructs and the transformation efficiency in S2 cells may justify their use to integrate GFP tags or landing sites in cultured cells or the germline.
 
-## dsDNA drop-in donors of <2 kb are efficient homology donors for transgenesis
+### dsDNA drop-in donors of <2 kb are efficient homology donors for transgenesis
 
 Given that the ssDNA drop-in constructs did not increase the success rate of fly transformation, we next attempted to optimize dsDNA homology donors for production ease and transformation efficiency. One means of increasing the targeting rate is to shorten the SIC, since homologous recombination is dependent on the size of the inserted cassette (Beumer et al., 2013). We used three strategies to shorten SICs (Figure 4A). First, we used a shortened GAL4 construct, referred to as miniGAL4 (1200 nt), which is about half the size of full-length GAL4 (2646 nt) and has about 50% of the transcriptional activity of full-length GAL4 in yeast (Ding and Johnston, 1997). Second, we used a very short dominant marker. Because 3XP3-EGFP is ~1 kb in length, we opted to use an alternative marker that is only ~200 nt long and contains a ubiquitous U6 promoter expressing a gRNA sequence (gRNA1) that does not have a target in the fly genome. This strategy is based on the single-strand annealing (SSA) pathway of DNA repair to reconstitute expression of a transgenic ubiquitous mCherry that is interrupted by the gRNA1 target sequence (Figure 4—figure supplement 1; Garcia-Marques et al., 2019). Upon Cas9-mediated double strand break, the modified non-functional mCherry gene is repaired and becomes functional, providing a visible marker. This SSA dependent repair reaction occurs in the F1 generation upon stable integration of U6:gRNA1 in the genome (Figure 4—figure supplement 1). Third, we shortened the polyA sequence from 135 nt to 35 nt (minipolyA) (McFarland et al., 2006). This resulted in attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-attP, which functions as a gene trap and is 1968 nt in length, including homology arms. We also generated a smaller minimal mutagenic construct, attP-SA-3XSTOP-minipolyA-U6gRNA1-attP, that is 715 nt in length including homology arms (Figure 4A). Both dsDNA drop-in constructs are small enough to be commercially synthesized at a low cost (less than $250).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of synthesized plasmid drop-in donors. mPA indicates minipolyA. (B) Schematic of the donor plasmid followed by linearization by Cas9 in germ cells and integration of donors in vivo. gRNAtarget is gene specific gRNA. (C) Injection results for the 10 genes selected for comparison of transformation efficacy. Numbers indicate positive events/fertile G0 single fly crosses. Red, no positive events; light green, positive non-confirmed events; and dark green, genes with PCR-confirmed events.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematics of the action of gRNA1-based detection of dominant marker. (B) Crossing scheme for screening the transgenics using U6gRNA1 as dominant marker. The crosses for a second chromosome insertion are shown; for insertions on other chromosomes, an appropriate balancer stock would be used in the second and third crosses.
 
 To further improve the insertion efficiency, we decided to induce in vivo linearization of the plasmid constructs. Linearization has previously been shown to boost homologous recombination rates in cell culture, zebrafish and mouse transgenesis (Cristea et al., 2013; Hisano et al., 2015; Suzuki et al., 2016; Yao et al., 2017). Hence, use of short 100 nt left and right homology arms flanked by the gRNA1 target sites to linearize the construct in vivo upon injection may significantly increase the frequency of homologous recombination (Figure 4B).
 
@@ -113,9 +404,17 @@ The miniGAL4 construct had never been tested in flies. We therefore compared ful
 
 In summary, the decrease of SIC size and linearization increased the transgenesis rate compared to CRIMIC templates. We used novel selection markers, smaller polyA tails, and new GAL4 variants to decrease the size of the integrated construct. However, this decrease in size came with trade-offs. The U6-gRNA1 dominant marker is very easy to detect and is smaller than previously established dominant markers. However, this marker requires the presence of other transgenes for detection (Figure 4—figure supplement 1) and the reconstituted dominant marker transgene segregates independently from the targeted gene. These limitations make establishing and maintaining stocks more challenging. Moreover, T2A-miniGAL4 may not be strong enough to drive robust reporter expression in genes with low expression levels.
 
-## Large double stranded drop-in dsDNA donors (~5 kb) are efficient homology donors to integrate CRIMIC-like SICs
+### Large double stranded drop-in dsDNA donors (~5 kb) are efficient homology donors to integrate CRIMIC-like SICs
 
 To avoid the issues raised in the previous section, we designed a strategy to integrate full length CRIMIC cassettes with short homology arms. To achieve this, we tested whether large DNA fragments with short homology arms (100 nt) could be integrated in target genes upon linearization using the gRNA1 in vivo. This would allow the use of dominant markers like 3XP3-EGFP as well as integration of the full length GAL4 gene with an extended polyA tail, that is the CRIMIC cassette SIC. Unfortunately, synthesis of a full length 5 kb CRIMIC cassette would be cost prohibitive (>$1,000) especially for thousands of genes. Hence, we developed a modified cloning strategy in which we first synthesize a gRNA1 target-100nt homology arm-Restriction cassette-100nt homology arm-gRNA1 target inserted into a pUC57 vector for each target gene (cost is $80). The SIC containing attP-FRT-T2A-GAL4-polyA-3XP3-EGFP-FRT-attP is then subcloned directionally into this plasmid in a single straightforward cloning step, replacing the restriction cassette with the SIC of interest (Figure 6A). We refer to these constructs drop-in int100-CRIMIC constructs. The SIC can be replaced by any other effector (e.g. SA-GFP-SD) to generate other homology donor constructs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of a single step cloning vector pUC57. LHA Left Homology Arm, RE1 Restriction Enzyme 1, RE2 restriction Enzyme 2, RHA Right Homology Arm. (B) Injection results for the seven genes selected to estimate transformation efficacy. Numbers indicate positive events/G0 single fly crosses. (C) Third instar larval brain expression domain of CG5009 as determined by crossing conventional CRIMIC or drop-in int100-CRIMIC flies to UAS-NLS-mCherry reporter lines. Scale bar is 100 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51539/elife-51539-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Third instar larval brain expression domain of Khc as determined by crossing conventional T2A-miniGAL4 or drop-in int100-CRIMIC flies to UAS-NLS-mCherry reporter lines. Scale bars are 100 µm.
 
 We injected vectors containing the full length CRIMIC cassette for seven of the genes in which we previously successfully inserted dsDNA drop-in cassettes. Using the drop-in int100-CRIMIC cassette we obtained multiple knock-in alleles in five genes, as verified by PCR (Figure 6B). Hence, 100 nt homology arms are sufficient to integrate large SICs into target sites. In addition, increasing homology arm length to 200 nt should not increase synthesis costs, as the total length of the construct remains less than 500 nt. Whether use of 200 nt may improve efficiency remains to be tested.
 
@@ -127,68 +426,68 @@ In summary, we have developed efficient pipelines for CRISPR knock-in using ssDN
 
 ## Materials and methods
 
-## Generation of templates for ssDNA production
+### Generation of templates for ssDNA production
 
 The sequences of scaffold vectors can be found in Supplementary file 1. Briefly, to generate the attP-3XP3-EGFP-attP, the scaffold vector 3XP3-EGFP cassette was amplified by PCR using the long primers 3XP3-EGFP-RI-for and 3XP3-EGFPrev-NotI and cloned between the EcoRI and NotI sites in pCasper3 (Thummel and Pirrotta, 1992). To generate attP-SA-sfGFP-SD-attP, a scaffold vector that we named pScaffold was produced by integrating annealed oligonucleotides with sequences M13For-attPfor-SbfI-AvrII-attPrev-M13rev in pCasper3 backbone in EcoRI-NotI sites. SA-sfGFP-SD was cloned as a three-fragment ligation in pScaffold with linker-SA (amplified from pDoubleHeader [Li-Kroeger et al., 2018]) with primers SA-for-Sbf and Linker-SA-rev_BamHI), sfGFP (amplified from pUAST-NLS-sfGFP-3XMyc-PEST with primers sfGFP-for_BamHI and sfGFP-rev_KpnI), and Linker-SD (amplified from pDoubleHeader with primers Linker-SD-for_KpnI and Linker-SD-rev_NotI).
 
-## Production of ssDNA drop-in constructs
+### Production of ssDNA drop-in constructs
 
 Gene-specific homology donors were produced by incorporating the homologous sites (regions spanning 100 nt upstream of 3 nt prior to the PAM (protospacer adjacent motif) for left homology arm or 97 nt downstream of that region for the right homology arm (Supplementary file 1) as 5’ overhangs to primers with complementarity to the template (26 bases for the forward primer and 24 bases for the reverse primer). The long primers were ordered from IDT (Coralville, Iowa) as Ultramers. See Supplementary file 3 for sequences of primers. The reverse primers were 5’ phosphorylated. Four 50 μl PCR reactions were set up with Q5 Hot Start High-Fidelity 2X Master Mix (NEB #M0494L). PCR conditions were optimized using gradient PCR (Bio-Rad C1000 Touch). The optimal annealing temperature was 70°C. The elongation time was 1 min for attP-3XP3-EGFP-attP and attP-SA-sfGFP-SD-attP. Resulting PCR amplicons were pooled in two samples and isolated using Qiaquick spin columns (Qiagen #28106) following the manufacturer’s protocol. Samples were eluted in 2 × 50 μl elution buffer from the kit. Two lambda exonuclease (NEB #M0262L) digestion reactions of 100 μl were set up using 4–6 μg DNA and 8 μl enzyme each. Digestion conditions were 37°C for 1 hr, followed by 10 min at 75°C for heat inactivation. Reaction products were pooled in two samples and ssDNA isolated using NEB Monarch DNA purification kit following the manufacturer’s instructions (NEB #T1030L). Samples were isolated in 2 × 10 μl prewarmed (55°C) elution buffer from the kit and the DNA concentration was measured using NanoDrop One (ThermoFisher Scientific).
 
-## Generation of GFP Knock-In cell lines
+### Generation of GFP Knock-In cell lines
 
-## Cell culture and regular media
+#### Cell culture and regular media
 
 Drosophila cells stably expressing Cas9 (S2R+-MT::Cas9; Drosophila Genomics Resource Center cell stock #268; Viswanatha et al., 2018) were cultured in Schneider’s Drosophila Medium 1X (ThermoFisher Scientific #21720024) with 10% FBS and 1% penicillin/streptomycin (referred to as regular media). We note that this cell line is a derivative of S2R+ NPT005 (DGRC #229) and thus contains an mCherry tag in the Clic locus (Neumüller et al., 2012).
 
-## Conditioned media
+#### Conditioned media
 
 Conditioned media were prepared as previously described by Housden et al. (2017).
 
-## Cellular transfection
+#### Cellular transfection
 
 Electroporation of S2R+-MT::Cas9 cells was performed using a Lonza 4D Nucleofector (Lonza #AAF-1002B) following the manufacturer’s protocol. For each transfection, 1 µg of sgRNA (100 ng) and 2 µL of the sfGFP donor (100 ng) were used with 4 × 105 sub-confluent S2R+-MT::Cas9 cells. See Supplementary file 3 for all sgRNA, long primers and insert sequences. After electroporation, cells were immediately placed in regular media and health was monitored. Cell cultures were then maintained and expanded for FACS.
 
-## Isolation of Single-Cell clones
+#### Isolation of Single-Cell clones
 
 Prior to FACS, 106 cells were filtered through a 40 µM Falcon Cell Strainer (Corning #21008–949) into 15 mL conical tubes (ThermoFisher Scientific #14-959-70C). Single cells were then FACS-isolated on a BD Aria IIu, based on the presence of GFP with an expression level greater than 2 × 102 (see Figure 2—figure supplement 1). Single cells were sorted into wells of a 96 well plate (VWR #29444–010) filled with 100 µL of conditioned medium. Cells were observed ~14 days later and any viable clones were expanded.
 
-## Analysis of GFP Knock-In cell lines
+### Analysis of GFP Knock-In cell lines
 
-## Image analysis
+#### Image analysis
 
 Multiple clonal cell lines were generated per gene and image analysis was used to measure the expression of the GFP knock-in marker. Several images of each live clone were taken using an InCell Analyzer 6000 automated confocal fluorescence microscope (GE Healthcare Lifesciences) using the dsRed channel to detect mCherry fluorescence present in all cells and the FITC channel to detect GFP fluorescence. Images were analyzed using CellProfiler (version 2.1.1). As mCherry is present throughout each cell, this image was used by CellProfiler to determine the outline of individual cells using the command ‘Identify Primary Objects.’ The outlines generated from this step were then applied to the GFP image through the process ‘Identify Secondary Objects.’ GFP fluorescence intensity was then measured using the command ‘Measure Object Intensity,’ which averages the GFP fluorescence within all of the cellular outlines (see Figure 2—figure supplement 2). Mean GFP intensities for each clone were noted, and the three clones per gene with the highest means were chosen for molecular analysis. All other clones were pooled and stored for use in a subsequent FACS if needed. Image data were managed using OMERO, as supported by the Harvard Medical School Image Data Management Core.
 
-## Genomic DNA extraction
+#### Genomic DNA extraction
 
 Genomic DNA was extracted from individual clones using a Quick-DNA MiniPrep Kit (Zymo Research #D3024) according to the manufacturer’s protocol. Concentrations were measured using a NanoDrop 8000 Spectrophotometer (ThermoFisher Scientific #ND-8000-GL).
 
-## Molecular analysis
+#### Molecular analysis
 
 Due to the large size of the insertion, the 5’ and 3’ integration sites of each insertion were analyzed by PCR amplifying and sequencing a fragment spanning the junction of each end of the insertion with flanking DNA (see Supplementary file 3 for a list the two primer sets per gene). These flanking sites were PCR amplified with High Fidelity Phusion Polymerase (NEB #M0530) using the following program: 1) 98°C for 30 s, 2) 98°C for 10 s, 3) 56°C for 30 s, 4) 72°C for 30 s (35 cycles), 5) 72°C for 10 min, 6) 4°C hold. PCR products were excised from a 2% TAE agarose gel and purified using a QIAquick Gel Extraction Kit (Qiagen #28704) and Sanger sequenced at the Dana-Farber/Harvard Cancer Center DNA Resource Core.
 
-## Immunostaining
+#### Immunostaining
 
 Cells were fixed in 4% paraformaldehyde in phosphate-buffered saline with 0.1% Triton X-100 for 30 min. A standard staining protocol was used. Primary antibodies were used as indicated: Chicken anti-GFP (1:1000, Abcam ab13970), Mouse anti-Lamin (1:500, DSHB #ADL84.12), Mouse anti-Calnexin99A (1:5, DSHB #Cnx99A 6-2-1), Mouse anti-ATP5A (1:100, Abcam ab14748), Rabbit anti-Arl8 (1:500, DSHB Arl8), Goat anti-GMAP (1:2000, DSHB, #GMAP), Goat anti-Golgin245 (1:2000, DSHB, #Golgin245), Rabbit anti-Ref2P (1:500, Abcam #ab178440), Rabbit anti-Myc-tag (1:1000, Cell Signaling Technology #2278S). Secondary antibodies with Alexa Fluor conjugates and DAPI (Molecular Probes #D-1306) were used at 1:1000. Images were obtained using a GE IN Cell 6000 automated confocal microscope with a 60x objective. Time-lapse videos were generated by imaging every 30 s over a 2 hr period.
 
-## Western blotting
+#### Western blotting
 
 Clones that are generated using phase one template contained a 5 bp deletion in the splice donor portion of the insert. To determine if full-length fusion proteins were generated, we analyzed the following: S2R+-MT::Cas9 (unmodified control), Actin::GFP (a GFP-positive control), Rab11 GFP knock-in (no deletion in the insert control), spin GFP knock-in (5 bp deletion), two Lam GFP knock-in clones (5 bp deletion in the first, 206 bp deletion in the second), Ref2p GFP knock-in (5 bp deletion), and Cnx99a GFP knock-in (5 bp deletion). Cells were spun down and lysed by resuspension in Pierce RIPA Buffer (ThermoFisher Scientific #89901) and Halt Protease Inhibitor Cocktail, EDTA-Free (ThermoFisher Scientific #87785). Cells were agitated for 30 min at 4°C and then centrifuged at 15,000 rpm for 20 min at 4°C. The lysates (supernatant) were removed and held at −20°C. Protein concentrations were determined using a Pierce BCA Protein Assay Kit (ThermoFisher Scientific #23227) according to the manufacturer’s protocol. Appropriate volumes of each lysate were added to 4X Laemmli Sample Buffer (BioRad #1610747), vortexed, held at 100°C for 10 min, and then spun down at 13,000 rpm for 3 min before loading into a Mini-PROTEAN TGX Precast Gel (BioRad #4561095) and running at 100 V for 1 hr. The gel was then transferred onto a PVDF membrane (BioRad #1620177) using the Trans-Blot Turbo Transfer System (BioRad #1704150). After blocking with 5% blocking solution and washing in TBST, the membrane was incubated in the primary antibody rabbit anti-GFP (1:5000; Molecular Probes #A6455) shaking at 4°C overnight. The membrane was then washed four times with TBST and incubated with Donkey anti-rabbit HRP (1:3000; GE Healthcare #NA934) for 1 hr at room temperature, washed with TBST, and prepared for imaging using the SuperSignal West Pico PLUS Chemiluminescent Substrate (ThermoFisher Scientific #34580) according to manufacturer’s protocol. The blot was imaged using a ChemiDoc MP Imaging System (see Supplementary file 3 top panel; BioRad #17001402). The blot was then stripped with Restore PLUS Western Blot Stripping Buffer (ThermoFisher Scientific #46430), reprobed with mouse anti-tubulin (1:2000; SigmaT #5168) and Sheep anti-mouse HRP (1:3000; GE Healthcare #NXA931), and re-imaged (see Supplementary Figure # middle panel). The blot was then stripped again and reprobed with mouse anti-lamin (1:500; DSHB #ADL84.12) and Sheep anti-mouse Horse Radish Peroxidase (HRP) (1:3000; GE Healthcare #NXA931), and re-imaged (see Supplementary Figure # bottom panel).
 
 For western analysis in adult flies, flies were dissected and lysed in 0.1% CHAPS buffer [50 mM NaCl, 200 mM HEPES, 1 mM EDTA and protease inhibitor cocktail (Roche)]. Tissue or cell debris were removed by centrifugation. Isolated lysates were subjected to electrophoresis using a 4–12% gradient SDS-PAGE gel and transferred to Immobilon-FL polyvinylidene difluoride membranes. Loading input was adjusted for protein concentration. Primary antibodies used were as follows: Rabbit anti-ACOX1 (1:1000; HPA021195, Sigma), Rabbit anti-β-galactosidase (1:1000; MP Biomedicals #55976), and Mouse anti-Actin-c4 (1:5000; Millipore Sigma #MAB1501). Secondary antibodies include Jackson ImmunoResearch HRP conjugated (1:5000). Blots were imaged on a Bio-Rad ChemiDocMP. The intensity of each band was measured and normalized to a loading control using Imagelab software (Bio-RAD). Three biological replicates were performed and ordinary one way ANOVA was used to compare expression levels of ACOX1 in different conditions. Two technical replicates were performed for β-galactosidase measurements.
 
-## Fly injections
+### Fly injections
 
 ssDNA constructs were injected at 50–100 ng/µl concentration with 25 ng/µl gene specific gRNA encoding pCFD3 vector (Port et al., 2014). attP-SA-3XStop-minipolyA-U6gRNA1-attP and attP-SA-T2A-miniGAL4-minipolyA-U6gRNA1-att dsDNA drop-in constructs were injected at ~150 ng/µl concentration together with 25 ng/µl gene specific gRNA. dsDNA drop-in int100-CRIMIC constructs were injected at 300–400 ng/µl along with 25 ng/µl gene specific gRNA and 25 ng/µl pCFD3-gRNA1. Injections were performed as described in Lee et al. (2018a). 400–600 y w; iso; attP2(y+){nos-Cas9(v+)} embryos per genotype were injected. Resulting G0 males and females were crossed to y w flies as single fly crosses for 3XP3-EGFP detection and with actin5C-Cas9; actin5C-GF-gRNA2-FP; actin5C-mCherr-#1-ry flies for gRNA1 detection (Figure 4—figure supplement 1; Garcia-Marques et al., 2019). Up to five independent lines were generated per construct per gene. actin5C-GF-#2-FP is an internal control that would detect non-specific activation of dominant markers. We have not detected GFP in any of the screened flies, showing the specificity of dominant marker detection through gRNA1.
 
-## PCR validation
+### PCR validation
 
 PCR primers that flank the integration site were designed for each targeted gene (Supplementary file 3 for primer sequences). These primers were used in combination with insert-specific primers that bind 5’ of the inserted cassette in reverse orientation and 3’ of the insert in forward orientation (pointing outwards from the insert cassette). 200–800 nt amplicons were amplified from genomic DNA from individual insertion lines through single fly PCR (Gloor et al., 1993) using OneTaq PCR master mix (NEB #M0271L). PCR conditions were denaturation at 95°C for 30 s, 95°C 30 s, 58°C 30 s, 68°C 1 min for 34 cycles and 68°C 5 min.
 
-## dsDNA drop-in constructs production
+### dsDNA drop-in constructs production
 
 Templates for ordering the dsDNA drop-in constructs can be found in Supplementary file 2. dsDNA drop-in constructs were ordered for production from Genewiz (‘ValueGene’ option) in pUC57 Kan vector backbone at 4 μg production scale. When lyophilized samples arrived from production, samples were resuspended in 25 μl of ddH2O at 55°C for 30 min. 19 μl was mixed with 1 μl gene-specific gRNA plasmid (25 ng/ul final concentration of gRNA plasmid). The rest was stored at −20°C for back-up purposes.
 
-## Confocal imaging of transgenic larval brains
+### Confocal imaging of transgenic larval brains
 
 Dissection and imaging were performed following the protocols in Lee et al. (2018a). In brief, fluorescence-positive 3rd instar larvae were collected in 1x PBS solution and then cut in half and inverted to expose the brain. Brains were transferred into 1.5 mL eppendorf tubes and fixed in 4% PFA in 1xPBS buffer for 20 min. Brains were then washed for 10 min three times in 0.2% PBST. Finally, samples were mounted on glass slides with 8 µL of VectaShield (VectorLabs #H-1000) and imaged at 20x zoom with a Nikon W1 dual laser spinning-disc confocal microscope.

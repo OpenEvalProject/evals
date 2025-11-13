@@ -24,37 +24,37 @@
 
 ## Abstract
 
-10.7554/eLife.24133.001 Studies of highly diverged species have revealed two mechanisms by which meiotic recombination is directed to the genome—through PRDM9 binding or by targeting promoter-like features—that lead to dramatically different evolutionary dynamics of hotspots. Here, we identify PRDM9 orthologs from genome and transcriptome data in 225 species. We find the complete PRDM9 ortholog across distantly related vertebrates but, despite this broad conservation, infer a minimum of six partial and three complete losses. Strikingly, taxa carrying the complete ortholog of PRDM9 are precisely those with rapid evolution of its predicted binding affinity, suggesting that all domains are necessary for directing recombination. Indeed, as we show, swordtail fish carrying only a partial but conserved ortholog share recombination properties with PRDM9 knock-outs. DOI: http://dx.doi.org/10.7554/eLife.24133.001
+Studies of highly diverged species have revealed two mechanisms by which meiotic recombination is directed to the genome—through PRDM9 binding or by targeting promoter-like features—that lead to dramatically different evolutionary dynamics of hotspots. Here, we identify PRDM9 orthologs from genome and transcriptome data in 225 species. We find the complete PRDM9 ortholog across distantly related vertebrates but, despite this broad conservation, infer a minimum of six partial and three complete losses. Strikingly, taxa carrying the complete ortholog of PRDM9 are precisely those with rapid evolution of its predicted binding affinity, suggesting that all domains are necessary for directing recombination. Indeed, as we show, swordtail fish carrying only a partial but conserved ortholog share recombination properties with PRDM9 knock-outs.
 
 ## Introduction
 
 Meiotic recombination is a fundamental genetic process that generates new combinations of alleles on which natural selection can act and, in most sexually-reproducing organisms, plays critical roles in the proper alignment and segregation of homologous chromosomes during meiosis (Coop and Przeworski, 2007; de Massy, 2013; Lam and Keeney, 2014). Meiotic recombination is initiated by a set of double strand breaks (DSBs) deliberately inflicted throughout the genome, whose repair leads to crossover and non-crossover recombination events (Lam and Keeney, 2014). Most of the molecular machinery involved in this process in vertebrates has been conserved since the common ancestor of plants, animals and fungi (de Massy, 2013). Notably, in all sexually reproducing species that have been examined, the SPO11 protein generates DSBs, which localize to histone H3 lysine K4 trimethylation marks (H3K4me3) along the genome (Borde et al., 2009; Buard et al., 2009; Lam and Keeney, 2014). Yet not all features of meiotic recombination are conserved across species. As one example, in many species, including all yeast, plant and vertebrate species studied to date, recombination events are localized to short intervals (of hundreds to thousands of base pairs; Lange et al., 2016) known as recombination hotspots, whereas in others, such as in flies or worms, the recombination landscape seems more uniform, lacking such hotspots (Rockman and Kruglyak, 2009; Chan et al., 2012; Heil et al. 2015)
 
-Among species with recombination hotspots, there are at least two mechanisms directing their location. In mammalian species, including apes, mice and likely cattle, the locations of recombination hotspots are specified by PRDM9 binding (
+Among species with recombination hotspots, there are at least two mechanisms directing their location. In mammalian species, including apes, mice and likely cattle, the locations of recombination hotspots are specified by PRDM9 binding (Baudat et al., 2010; Myers et al., 2010; Parvanov et al., 2010; Sandor et al., 2012; Great Ape Genome Project et al., 2016). In these species, PRDM9 has four major functional domains: a KRAB, SSXRD and PR/SET domain (referred to as the SET domain in what follows), followed by a C2H2 zinc finger (ZF) array (Figure 1). During meiosis, PRDM9 binds sequences throughout the genome, as specified by its ZF array (reviewed in Ségurel et al., 2011), and the SET domain of PRDM9 makes H3K4me3 and H3K36me3 marks nearby (Eram et al., 2014; Powers et al., 2016). These actions ultimately serve to recruit SPO11 to initiate DSBs, by a mechanism that remains unknown but is associated with the presence of both histone marks (Grey et al., 2017; Getun et al., 2017) and may involve KRAB and SSXRD domains (Parvanov et al., 2017).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-v2.jpg)
 
-**Figure 1.:** Shown are the four domains: KRAB domain (in tan), SSXRD (in white), PR/SET (in light green) and ZF (in gray/dark green; the approximate structure of identified ZFs is also shown). The number of unique species included from each taxon is shown in parenthesis. Complete losses are indicated on the phylogeny by red lightning bolts and partial losses by gray lightning bolts. Lightning bolts are shaded dark when all species in the indicated lineage have experienced the entire loss or same partial loss. Lightning bolts are shaded light when it is only true of a subset of species in the taxon. ZF arrays in dark green denote those taxa in which the ZF shows evidence of rapid evolution. White rectangles indicate cases where we could not determine whether the ZF was present, because of the genome assembly quality. For select taxa, we present the most complete PRDM9 gene found in two examplar species. Within teleost fish, we additionally show a PRDM9 paralog that likely arose before the common ancestor of this taxon; in this case, the number of species observed to have each paralog is in paranthesis. Although the monotremata ZF is shaded gray, it was not included in our analysis of rapid evolution because of its small number of ZFs.DOI: http://dx.doi.org/10.7554/eLife.24133.003
+**Figure 1.:** Shown are the four domains: KRAB domain (in tan), SSXRD (in white), PR/SET (in light green) and ZF (in gray/dark green; the approximate structure of identified ZFs is also shown). The number of unique species included from each taxon is shown in parenthesis. Complete losses are indicated on the phylogeny by red lightning bolts and partial losses by gray lightning bolts. Lightning bolts are shaded dark when all species in the indicated lineage have experienced the entire loss or same partial loss. Lightning bolts are shaded light when it is only true of a subset of species in the taxon. ZF arrays in dark green denote those taxa in which the ZF shows evidence of rapid evolution. White rectangles indicate cases where we could not determine whether the ZF was present, because of the genome assembly quality. For select taxa, we present the most complete PRDM9 gene found in two examplar species. Within teleost fish, we additionally show a PRDM9 paralog that likely arose before the common ancestor of this taxon; in this case, the number of species observed to have each paralog is in paranthesis. Although the monotremata ZF is shaded gray, it was not included in our analysis of rapid evolution because of its small number of ZFs.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** A maximum likelihood phylogeny built with RAxML, using an alignment of SET domains, distinguishes between genes that cluster with mammalian PRDM9 and PRDM11 with 100% bootstrap support. Genes shown in black, which are orthologous to both PRDM9 and PRDM11, are only found in jawless fish.DOI: http://dx.doi.org/10.7554/eLife.24133.004
+**Figure 1—figure supplement 1.:** A maximum likelihood phylogeny built with RAxML, using an alignment of SET domains, distinguishes between genes that cluster with mammalian PRDM9 and PRDM11 with 100% bootstrap support. Genes shown in black, which are orthologous to both PRDM9 and PRDM11, are only found in jawless fish.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** A NJ guide tree analysis on SET domains identified in our RefSeq, whole genome assembly, and transcriptome datasets was used as an initial step to identify sequences clustering with human PRDM9/7 or PRDM11. These sequences (in red) were selected for phylogenetic analysis with RAxML; they included all RefSeq genes in our dataset that have been previously annotated as PRDM9/7 or PRDM11 (in yellow). Genes more closely related to known PRDM genes other than PRDM9 or PRDM11 (in black) were excluded from further analysis.DOI: http://dx.doi.org/10.7554/eLife.24133.005
+**Figure 1—figure supplement 2.:** A NJ guide tree analysis on SET domains identified in our RefSeq, whole genome assembly, and transcriptome datasets was used as an initial step to identify sequences clustering with human PRDM9/7 or PRDM11. These sequences (in red) were selected for phylogenetic analysis with RAxML; they included all RefSeq genes in our dataset that have been previously annotated as PRDM9/7 or PRDM11 (in yellow). Genes more closely related to known PRDM genes other than PRDM9 or PRDM11 (in black) were excluded from further analysis.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** For three swordtails (X. malinche) and one bearded dragon, the FPKM per individual is plotted for each transcript. For humans, the point represents the average expression of 122 individuals from the gene expression atlas (see Materials and methods). For bearded dragons, PRDM9 and RAD50 were represented by multiple transcripts (two and three respectively), and the average expression level is shown. Dashed lines show the point estimate or average expression level of PRDM9 to highlight that several genes in each species have expression levels comparable to or lower than PRDM9 in testes.DOI: http://dx.doi.org/10.7554/eLife.24133.006
+**Figure 1—figure supplement 3.:** For three swordtails (X. malinche) and one bearded dragon, the FPKM per individual is plotted for each transcript. For humans, the point represents the average expression of 122 individuals from the gene expression atlas (see Materials and methods). For bearded dragons, PRDM9 and RAD50 were represented by multiple transcripts (two and three respectively), and the average expression level is shown. Dashed lines show the point estimate or average expression level of PRDM9 to highlight that several genes in each species have expression levels comparable to or lower than PRDM9 in testes.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Each plot shows the 95% range of diversity levels at that site for all C2H2 ZFs from a species of that taxon (gray); the values at PRDM9 are show in red or blue. Turtles, snakes and coelacanth show a pattern of diversity that is similar to those in mammalian species with a complete PRDM9 ortholog, with higher diversity at DNA-binding sites (residues 11, 12, 15 and 18) and reduced diversity at most other sites. In bony fish, this pattern is not observed in PRDM9β genes (blue) or in partial PRDM9α genes (shown for A. mexicanus), where PRDM9 ZF diversity is more typical of other C2H2 ZFs.DOI: http://dx.doi.org/10.7554/eLife.24133.007
+**Figure 1—figure supplement 4.:** Each plot shows the 95% range of diversity levels at that site for all C2H2 ZFs from a species of that taxon (gray); the values at PRDM9 are show in red or blue. Turtles, snakes and coelacanth show a pattern of diversity that is similar to those in mammalian species with a complete PRDM9 ortholog, with higher diversity at DNA-binding sites (residues 11, 12, 15 and 18) and reduced diversity at most other sites. In bony fish, this pattern is not observed in PRDM9β genes (blue) or in partial PRDM9α genes (shown for A. mexicanus), where PRDM9 ZF diversity is more typical of other C2H2 ZFs.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** Shown are two mouse from the same species (Mus musculus subspecies; Genbank: AB844114.1; FJ899852.1), two pythons from the same species (Python bivittatus; the genome sequence and a Sanger resequenced individual; see Materials and methods), and two species of swordtail fish (X. birchmanni and X. malinche; genome sequences). The position weight matrix was obtained using C2H2 prediction tools available at http://zf.princeton.edu.DOI: http://dx.doi.org/10.7554/eLife.24133.008
+**Figure 1—figure supplement 5.:** Shown are two mouse from the same species (Mus musculus subspecies; Genbank: AB844114.1; FJ899852.1), two pythons from the same species (Python bivittatus; the genome sequence and a Sanger resequenced individual; see Materials and methods), and two species of swordtail fish (X. birchmanni and X. malinche; genome sequences). The position weight matrix was obtained using C2H2 prediction tools available at http://zf.princeton.edu.
 
 A common feature of the recombination landscape in these species is that recombination tends to be directed away from PRDM9-independent H3K4me3 peaks (Brick et al., 2012) and, in particular, only a small proportion of hotspots occurs at transcription start sites (TSSs; Myers et al., 2005; Coop et al., 2008). In contrast, in yeasts, plants, and vertebrate species (such as birds and canids) that lack functional PRDM9 orthologs, recombination events are concentrated at or near promoter-like features, including TSSs and CpG islands (CGIs), perhaps because they are associated with greater chromatin accessibility (Lichten and Goldman, 1995; Auton et al., 2013; Choi et al., 2013; Hellsten et al., 2013; Lam and Keeney, 2015; Singhal et al., 2015). Similarly, in mouse knockouts for PRDM9, recombination events appear to default to promoter-like features that carry H3K4me3 peaks (Brick et al., 2012; Narasimhan et al., 2016).
 
@@ -72,35 +72,35 @@ To date, studies of fine-scale recombination rates are limited to a handful of o
 
 ## Results
 
-## Initial identification of PRDM9 orthologs in vertebrates
+### Initial identification of PRDM9 orthologs in vertebrates
 
 In order to identify which species have PRDM9 orthologs, we searched publically available nucleotide and whole genome sequences to create a curated dataset of vertebrate PRDM9 sequences. To this end, we implemented a blastp-based approach against the RefSeq database, using human PRDM9 as a query sequence (see Materials and methods for details). We supplemented this dataset with 44 genes strategically identified from 30 whole genome assemblies and seven genes identified from de novo assembled transcriptomes from testis of five species lacking genome assemblies (see Materials and methods for details). Neighbor joining (NJ) and maximum likelihood trees were built using identified SET domains to distinguish bona fide PRDM9 orthologs from members of paralagous gene families and to characterize the distribution of PRDM9 duplication events (Figure 1—figure supplement 1 and 2). Since the placement of the major taxa used in our analysis is not controversial, in tracing the evolution of PRDM9 orthologs, we assumed that the true phylogenetic relationships between taxa are those reported by several recent papers (synthesized by the TimeTree project; Hedges et al., 2015).
 
 This approach identified 227 PRDM9 orthologs (Supplementary file 1A,B), found in jawless fish, cartilaginous fish, bony fish, coelacanths, turtles, snakes, lizards, and mammals. We confirmed the absence of PRDM9 in all sampled birds and crocodiles (Oliver et al., 2009; Singhal et al., 2015), the absence of non-pseudogene copies in canids (Oliver et al., 2009; Muñoz-Fuentes et al., 2011), and additionally were unable to identify PRDM9 genes in amphibians (Figure 1), despite targeted searches of whole genome sequences (Supplementary file 1B).
 
-We further inferred an ancient duplication of PRDM9 in the common ancestor of teleost fish, apparently coincident with the whole genome duplication that occurred in this group (
+We further inferred an ancient duplication of PRDM9 in the common ancestor of teleost fish, apparently coincident with the whole genome duplication that occurred in this group (Figure 1, Figure 2). We used both phylogenetic methods and analysis of the ZF structure to distinguish these copies (see Figure 2—figure supplement 1, Materials and methods) and refer to them as PRDM9α and PRDM9β in what follows. While PRDM9β orthologs were identified in each species of teleost fish examined, we were unable to identify PRDM9α type orthologs within three major teleost taxa, suggesting at minimum three losses of PRDM9α type orthologs within teleost fish (Figure 2, Supplementary file 1A). Several additional duplication events appear to have occurred more recently in other vertebrate groups, including in jawless fish, cartilaginous fish, bony fish, and mammals (Supplementary file 1A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig2-v2.jpg)
 
-**Figure 2.:** Shown are the four domains: KRAB domain (in tan), SSXRD (in white), PR/SET (in light green) and ZF (in gray/dark green; the approximate structure of identified ZFs is also shown). The number of unique species included from each taxon is shown in parenthesis. Complete losses are indicated on the phylogeny by red lightning bolts and partial losses by gray lightning bolts. Lightning bolts are shaded dark when all species in the indicated lineage have experienced the loss. Lightning bolts are shaded light when it is only true of a subset of species in the taxon. ZF arrays in dark green denote those taxa in which the ZF shows evidence of rapid evolution. White rectangles indicate cases where we could not determine whether the ZF was present, because of the genome assembly quality. While many taxa shown have more than one PRDM9α ortholog, the genes identified from each species generally have similar domain architectures. Exceptions include Clupeiformes, Esociformes, and Holostean fish, for which two alternative forms of PRDM9α paralogs are shown. Based on this distribution, we infer that the common ancestor of ray-finned fish likely had a rapidly evolving and complete PRDM9α ortholog.DOI: http://dx.doi.org/10.7554/eLife.24133.009
+**Figure 2.:** Shown are the four domains: KRAB domain (in tan), SSXRD (in white), PR/SET (in light green) and ZF (in gray/dark green; the approximate structure of identified ZFs is also shown). The number of unique species included from each taxon is shown in parenthesis. Complete losses are indicated on the phylogeny by red lightning bolts and partial losses by gray lightning bolts. Lightning bolts are shaded dark when all species in the indicated lineage have experienced the loss. Lightning bolts are shaded light when it is only true of a subset of species in the taxon. ZF arrays in dark green denote those taxa in which the ZF shows evidence of rapid evolution. White rectangles indicate cases where we could not determine whether the ZF was present, because of the genome assembly quality. While many taxa shown have more than one PRDM9α ortholog, the genes identified from each species generally have similar domain architectures. Exceptions include Clupeiformes, Esociformes, and Holostean fish, for which two alternative forms of PRDM9α paralogs are shown. Based on this distribution, we infer that the common ancestor of ray-finned fish likely had a rapidly evolving and complete PRDM9α ortholog.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The reciprocal monophyly of PRDM9 orthologs α and β is reasonably well supported and in particular bootstrap support for the monophyly of PRDM9α genes is 75%. The ZF domains for representative PRDM9 orthologs of each type are shown to the right, with each gray pentagon indicating the location of a ZF. In swordtail fish, the complete ZF array is found within a single exon, and the last tandem array of six ZFs forms a minisatellite structure. DOI: http://dx.doi.org/10.7554/eLife.24133.010
+**Figure 2—figure supplement 1.:** The reciprocal monophyly of PRDM9 orthologs α and β is reasonably well supported and in particular bootstrap support for the monophyly of PRDM9α genes is 75%. The ZF domains for representative PRDM9 orthologs of each type are shown to the right, with each gray pentagon indicating the location of a ZF. In swordtail fish, the complete ZF array is found within a single exon, and the last tandem array of six ZFs forms a minisatellite structure.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Red lines show the median (solid) and first and third quantiles (dashed lines) for all 48 complete PRDM9 orthologs identified in vertebrates that have four or more ZFs. Blue lines show the median (solid) and first and third quantiles (dashed lines) for all other C2H2 ZF genes from X. maculatus (157 genes). Results about the rate of ZF evolution in the PRDM9β gene from X. maculatus are qualitatively similar regardless of our choice of which cluster of individual ZF domains to include in our analysis, indicating that our ability to detect evidence of positive selection at DNA-binding residues in these arrays, or lack thereof, is unlikely to be influenced by this choice.DOI: http://dx.doi.org/10.7554/eLife.24133.011
+**Figure 2—figure supplement 2.:** Red lines show the median (solid) and first and third quantiles (dashed lines) for all 48 complete PRDM9 orthologs identified in vertebrates that have four or more ZFs. Blue lines show the median (solid) and first and third quantiles (dashed lines) for all other C2H2 ZF genes from X. maculatus (157 genes). Results about the rate of ZF evolution in the PRDM9β gene from X. maculatus are qualitatively similar regardless of our choice of which cluster of individual ZF domains to include in our analysis, indicating that our ability to detect evidence of positive selection at DNA-binding residues in these arrays, or lack thereof, is unlikely to be influenced by this choice.
 
-## Expression of PRDM9 in the germline of major vertebrate groups
+### Expression of PRDM9 in the germline of major vertebrate groups
 
 Since a necessary condition for PRDM9 to play a role in meiotic recombination is for it to be expressed in the germline, we looked for PRDM9 in expression data from testis tissues in order to confirm its presence. We focused on testis expression rather than ovaries because although both obviously contain germline cells, preliminary analyses suggested that meiotic gene expression is more reliably detected in testes (see Materials and methods). We selected 23 representative species, spanning each major vertebrate group, with publically available testis expression or testis RNA-seq (Supplementary file 2A); we also generated testis RNA-seq data for two species of bony fish (see Materials and methods). In teleost fish with both PRDM9α and PRDM9β genes, we were able to detect either the expression of both orthologs or only expression of PRDM9α orthologs. In species of teleost fish with only PRDM9β genes, we consistently identified expression of PRDM9β genes. More generally, we were able to identify PRDM9 expression in nearly all RNA-seq datasets from species in which the genome carried a putative ortholog, the elephant shark (Callorhinchus milii) being the sole exception (Supplementary file 2B,C).
 
-## Confirmation of PRDM9 loss events
+### Confirmation of PRDM9 loss events
 
 Concerned that absences of PRDM9 observed in some species could reflect lower quality genome assemblies rather than true loss events, we also used testis RNAseq data to investigate putative losses of PRDM9 in amphibians and fish (PRDM9α). To this end, we relied on the fact that when PRDM9 is present, it is detectable in RNAseq data from the whole testis of vertebrates (see above). Our approach was to analyze testis transcriptome data from species lacking PRDM9 sequences in their genome assemblies, using an analysis that is not biased by the genome assembly (see Materials and methods). For each species, we confirmed that the dataset captured the appropriate cell populations and provided sufficient power to detect transcripts that are expressed during meiosis at levels comparable to PRDM9 in mammals (Figure 1—figure supplement 3, Supplementary file 2B,D). With this approach, we were able to find support for the loss of PRDM9 in salamanders (Cynops pyrrhogaster, Ambystoma mexicanum) and frogs (Xenopus tropicalis). Because of the paucity of amphibian genomes, however, it is not clear whether or not these examples represent a widespread loss of PRDM9 within amphibians or more recent, independent losses. Within bony fish, we were able to confirm the three independent losses of PRDM9α type orthologs in one species each of percomorph (Xiphophorus birchmanni), cypriniform (Danio rerio) and osteoglossomorph fish (Osteoglossum bicirrhosum). Thus, in all cases with sufficient power to detect expression of PRDM9 in testes data, our findings were consistent with inferences based on genome sequence data.
 
-## Inferences of PRDM9 domain architecture
+### Inferences of PRDM9 domain architecture
 
 PRDM9 orthologs identified in jawless fish, some bony fish, coelacanths, lizards, snakes, turtles, and placental mammals have a complete domain structure, consisting of KRAB, SSXRD and SET domains, as well as a C2H2 ZF array. The phylogenetic relationships between these species suggest that a complete PRDM9 ortholog was present in the common ancestor of vertebrates (Figure 1).
 
@@ -110,15 +110,863 @@ Because these frequent N-terminal losses could be the result of assembly or gene
 
 For representative cases where we were able to confirm missing N-terminal domains, we further investigated whether the truncated genes had become pseudogenes by testing whether the ratio of nonsynonymous to synonymous substitutions in the SET domain is significantly different than 1 (see Materials and methods). In all cases of N-terminal truncation, the partial PRDM9 shows evidence of functional constraint (i.e., dN/dS <1, where dN is the rate of amino-acid substitutions and dS of synonymous substitutions; see Materials and methods for more details). This conservation is most strikingly seen in teleost fish, in which a partial PRDM9 ortholog has been evolving under constraint for hundreds of millions of years (Figure 1, Figure 2—figure supplement 1, Supplementary file 3A). These observations suggest that in these species, PRDM9 has an important function that it performs without KRAB or SSXRD domains. Moreover, these cases provide complementary observations to full PRDM9 knockouts in amphibians and archosaurs, allowing the roles of specific domains to be dissected.
 
-## Evidence for rapid evolution of PRDM9 binding specificity
+### Evidence for rapid evolution of PRDM9 binding specificity
 
 Rapid evolution of the PRDM9 ZF array has been reported previously in all species with evidence for PRDM9-directed recombination, including cattle, apes and mice. While it is not known whether this rapid evolution is a necessary consequence of its role in recombination, plausible models suggest it is likely to be (see Introduction). If so, we expect species with PRDM9-directed recombination to show evidence for rapidly-evolving PRDM9 ZF arrays and can use this feature to hone in on the subset of PRDM9 orthologs most likely to play a role in recombination.
 
-To this end, we characterized the rapid evolution of the PRDM9 ZF in terms of the proportion of amino acid diversity within the ZF array that occurs at DNA-binding sites (using a modification of the approach proposed by Oliver et al., 2009). This summary statistic is sensitive to both rapid amino acid evolution at DNA binding sites and concerted evolution between the individual ZFs (see Materials and methods). Using this statistic, placental mammals that have PRDM9-directed recombination show exceptionally high rates of evolution of the PRDM9 ZF compared to other ZFs (Table 1; Baudat et al., 2010; Myers et al., 2010; Parvanov et al., 2010). Moreover, two of six cattle PRDM9 orthologs that we identified were previously associated with interspecific variation in recombination phenotypes (Supplementary file 3B; Sandor et al., 2012; Ma et al., 2015), and both are seen to be rapidly evolving (Table 1, Supplementary file 3B).10.7554/eLife.24133.012Table 1.Evolution of the ZF in PRDM9 orthologs with different domain architectures. PRDM9 orthologs for which an empirical comparison dataset is available are ordered by their domain structures: from the top, we present cases of complete PRDM9 orthologs with KRAB-SSXRD-SET domains; partial orthologs putatively lacking KRAB or SSXRD domains or partial orthologs lacking both; then those containing only the SET domain. A row is shaded green if the ZF is in the top 5% most rapidly evolving C2H2 ZF in the species, as summarized by the proportion of amino-acid diversity at DNA-binding sites, and is blue if it is ranked first. A complete PRDM9 ortholog from dolphins (Balaenoptera acuforostrata scammoni) is shaded in gray because there is no amino acid diversity between ZFs of the tandem array. The empirical rank is also shown, as are the number of PRDM9 orthologs identified in the species. Asterisks indicate PRDM9 orthologs known to play a role in directing recombination. For PRDM9 genes from teleost fish, under major group, we additionally indicate whether or not the gene is a PRDM9α or PRDM9β gene.DOI: http://dx.doi.org/10.7554/eLife.24133.012OrganismMajor groupPRDM9 structureProportion AA diversity at DNA-binding sitesRankNumber of PRDM9 genes from speciesNumber of ZF genes evaluated from speciesBalaenoptera acutorostrata scammoniplacentalKRAB-SSXRD-SETNANA1272Bison bison bisonplacentalKRAB-SSXRD-SET0.66711285Bos taurus* (chr1)placentalKRAB-SSXRD-SET0.68413313Bos taurus (chrX)placentalKRAB-SSXRD-SET0.41463313Bos taurus* (chrX)placentalKRAB-SSXRD-SET0.41473313Bubalus bubalisplacentalKRAB-SSXRD-SET0.66711268Chelonia mydasturtleKRAB-SSXRD-SET0.414111235Chlorocebus sabaeusplacentalKRAB-SSXRD-SET0.50011344Chrysemys picta belliiturtleKRAB-SSXRD-SET0.47811308Cricetulus griseusplacentalKRAB-SSXRD-SET0.78131259Dasypus novemcinctusplacentalKRAB-SSXRD-SET0.61411289Dipodomys ordiiplacentalKRAB-SSXRD-SET0.56711194Esox luciusteleost fish (α)KRAB-SSXRD-SET0.45514234Fukomys damarensisplacentalKRAB-SSXRD-SET0.43031227Homo sapiens*placentalKRAB-SSXRD-SET0.68711357Latimeria chalumnaecoelacanthKRAB-SSXRD-SET0.54521227Loxodonta africanaplacentalKRAB-SSXRD-SET0.61711381Macaca fascicularisplacentalKRAB-SSXRD-SET0.68011364Macaca mulattaplacentalKRAB-SSXRD-SET0.64511366Marmota marmota marmotaplacentalKRAB-SSXRD-SET0.48311277Microcebus murinusplacentalKRAB-SSXRD-SET1.00011326Mus musculus*placentalKRAB-SSXRD-SET0.91011224Nannospalax galiliplacentalKRAB-SSXRD-SET1.00011307Octodon degusplacentalKRAB-SSXRD-SET0.33353227Octodon degusplacentalKRAB-SSXRD-SET0.33163227Ovis ariesplacentalKRAB-SSXRD-SET0.61512252Ovis ariesplacentalKRAB-SSXRD-SET0.39842252Ovis aries musimonplacentalKRAB-SSXRD-SET0.353121285Papio anubisplacentalKRAB-SSXRD-SET0.58511404Pelodiscus sinensisturtleKRAB-SSXRD-SET0.69211221Peromyscus maniculatus bairdiiplacentalKRAB-SSXRD-SET1.00011243Protobothrops mucrosquamatussquamataKRAB-SSXRD-SET0.46251195Python bivittatussquamataKRAB-SSXRD-SET0.57111206Rattus norvegicusplacentalKRAB-SSXRD-SET0.57011255Rousettus aegyptiacusplacentalKRAB-SSXRD-SET0.74211258Salmo salarteleost fish (α)KRAB-SSXRD-SET0.53894510Salmo salarteleost fish (α)KRAB-SSXRD-SET0.500114510Sus scrofaplacentalKRAB-SSXRD-SET0.54211248Thamnophis sirtalissquamataKRAB-SSXRD-SET0.45931179Tupaia chinensisplacentalKRAB-SSXRD-SET1.00011249Tursiops truncatusplacentalKRAB-SSXRD-SET0.93911233Myotis lucifugusplacentalSSXRD-SET0.52412308Myotis lucifugusplacentalSSXRD-SET0.310682308Octodon degusplacentalSSXRD-SET0.282463227Sarcophilus harrisiimarsupialSSXRD-SET0.2242772344Callorhinchus milliicartilaginous fishKRAB-SET0.3146163Astyanax mexicanusteleost fish (α)SET0.258602158Astyanax mexicanusteleost fish (β)SET0.1671522158Clupea harengusteleost fish (α)SET0.27964118Clupea harengusteleost fish (α)SET0.27874118Clupea harengusteleost fish (α)SET0.274104118Clupea harengusteleost fish (β)SET0.1581144118Cynoglossus semilaevisteleost fish (β)SET0.182801107Danio rerioteleost fish (β)SET0.1793451367Esox luciusteleost fish (α)SET0.295324234Esox luciusteleost fish (β)SET0.1921764234Esox luciusteleost fish (β)SET0.1921774234Fundulus heteroclitusteleost fish (β)SET0.1891581206Haplochromis burtoniteleost fish (β)SET0.1801481168Ictalurus punctatusteleost fish (α)SET0.320148140Ictalurus punctatusteleost fish (α)SET0.319158140Ictalurus punctatusteleost fish (α)SET0.306248140Ictalurus punctatusteleost fish (α)SET0.303258140Ictalurus punctatusteleost fish (α)SET0.286338140Ictalurus punctatusteleost fish (α)SET0.276398140Ictalurus punctatusteleost fish (α)SET0.253558140Ictalurus punctatusteleost fish (β)SET0.1791278140Larimichthys croceateleost fish (β)SET0.192701115Lepisosteus oculatusholostei fishSET0.223481106Maylandia zebrateleost fish (β)SET0.1731611176Neolamprologus bricharditeleost fish (β)SET0.1731411152Nothobranchius furzeriteleost fish (β)SET0.1802451266Notothenia coriicepsteleost fish (β)SET0.16783187Oreochromis niloticusteleost fish (β)SET0.1731731190Oryzias latipesteleost fish (β)SET0.2131041191Otolemur garnettiiplacentalSET0.2661211285Poecilia formosateleost fish (β)SET0.1911841242Poecilia latipinnateleost fish (β)SET0.1911751235Poecilia mexicanateleost fish (β)SET0.1911871244Poecilia reticulatateleost fish (β)SET0.1911621212Pundamilia nyerereiteleost fish (β)SET0.1731341147Pygocentrus nattereriteleost fish (α)SET0.331122142Pygocentrus nattereriteleost fish (β)SET0.1791242142Salmo salarteleost fish (β)SET0.1884114510Salmo salarteleost fish (β)SET0.1804544510Sinocyclocheilus anshuiensisteleost fish (β)SET0.1852242284Sinocyclocheilus anshuiensisteleost fish (β)SET0.1852252284Sinocyclocheilus grahamiteleost fish (β)SET0.1852111271Sinocyclocheilus rhinocerousteleost fish (β)SET0.1852082269Sinocyclocheilus rhinocerousteleost fish (β)SET0.1852092269Takifugu rubripesteleost fish (β)SET0.18866198Xiphophorus maculatusteleost fish (β)SET0.1911171158
+To this end, we characterized the rapid evolution of the PRDM9 ZF in terms of the proportion of amino acid diversity within the ZF array that occurs at DNA-binding sites (using a modification of the approach proposed by Oliver et al., 2009). This summary statistic is sensitive to both rapid amino acid evolution at DNA binding sites and concerted evolution between the individual ZFs (see Materials and methods). Using this statistic, placental mammals that have PRDM9-directed recombination show exceptionally high rates of evolution of the PRDM9 ZF compared to other ZFs (Table 1; Baudat et al., 2010; Myers et al., 2010; Parvanov et al., 2010). Moreover, two of six cattle PRDM9 orthologs that we identified were previously associated with interspecific variation in recombination phenotypes (Supplementary file 3B; Sandor et al., 2012; Ma et al., 2015), and both are seen to be rapidly evolving (Table 1, Supplementary file 3B).
+
+**Table 1.**
+ Evolution of the ZF in PRDM9 orthologs with different domain architectures. PRDM9 orthologs for which an empirical comparison dataset is available are ordered by their domain structures: from the top, we present cases of complete PRDM9 orthologs with KRAB-SSXRD-SET domains; partial orthologs putatively lacking KRAB or SSXRD domains or partial orthologs lacking both; then those containing only the SET domain. A row is shaded green if the ZF is in the top 5% most rapidly evolving C2H2 ZF in the species, as summarized by the proportion of amino-acid diversity at DNA-binding sites, and is blue if it is ranked first. A complete PRDM9 ortholog from dolphins (Balaenoptera acuforostrata scammoni) is shaded in gray because there is no amino acid diversity between ZFs of the tandem array. The empirical rank is also shown, as are the number of PRDM9 orthologs identified in the species. Asterisks indicate PRDM9 orthologs known to play a role in directing recombination. For PRDM9 genes from teleost fish, under major group, we additionally indicate whether or not the gene is a PRDM9α or PRDM9β gene.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organism</th>
+      <th>Major group</th>
+      <th>PRDM9 structure</th>
+      <th>Proportion AA diversity at DNA-binding sites</th>
+      <th>Rank</th>
+      <th>Number of PRDM9 genes from species</th>
+      <th>Number of ZF genes evaluated from species</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Balaenoptera acutorostrata scammoni</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>272</td>
+    </tr>
+    <tr>
+      <td>Bison bison bison</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.667</td>
+      <td>1</td>
+      <td>1</td>
+      <td>285</td>
+    </tr>
+    <tr>
+      <td>Bos taurus* (chr1)</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.684</td>
+      <td>1</td>
+      <td>3</td>
+      <td>313</td>
+    </tr>
+    <tr>
+      <td>Bos taurus (chrX)</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.414</td>
+      <td>6</td>
+      <td>3</td>
+      <td>313</td>
+    </tr>
+    <tr>
+      <td>Bos taurus* (chrX)</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.414</td>
+      <td>7</td>
+      <td>3</td>
+      <td>313</td>
+    </tr>
+    <tr>
+      <td>Bubalus bubalis</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.667</td>
+      <td>1</td>
+      <td>1</td>
+      <td>268</td>
+    </tr>
+    <tr>
+      <td>Chelonia mydas</td>
+      <td>turtle</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.414</td>
+      <td>11</td>
+      <td>1</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>Chlorocebus sabaeus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.500</td>
+      <td>1</td>
+      <td>1</td>
+      <td>344</td>
+    </tr>
+    <tr>
+      <td>Chrysemys picta bellii</td>
+      <td>turtle</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.478</td>
+      <td>1</td>
+      <td>1</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>Cricetulus griseus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.781</td>
+      <td>3</td>
+      <td>1</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <td>Dasypus novemcinctus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.614</td>
+      <td>1</td>
+      <td>1</td>
+      <td>289</td>
+    </tr>
+    <tr>
+      <td>Dipodomys ordii</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.567</td>
+      <td>1</td>
+      <td>1</td>
+      <td>194</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>teleost fish (α)</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.455</td>
+      <td>1</td>
+      <td>4</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td>Fukomys damarensis</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.430</td>
+      <td>3</td>
+      <td>1</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Homo sapiens*</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.687</td>
+      <td>1</td>
+      <td>1</td>
+      <td>357</td>
+    </tr>
+    <tr>
+      <td>Latimeria chalumnae</td>
+      <td>coelacanth</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.545</td>
+      <td>2</td>
+      <td>1</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Loxodonta africana</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.617</td>
+      <td>1</td>
+      <td>1</td>
+      <td>381</td>
+    </tr>
+    <tr>
+      <td>Macaca fascicularis</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.680</td>
+      <td>1</td>
+      <td>1</td>
+      <td>364</td>
+    </tr>
+    <tr>
+      <td>Macaca mulatta</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.645</td>
+      <td>1</td>
+      <td>1</td>
+      <td>366</td>
+    </tr>
+    <tr>
+      <td>Marmota marmota marmota</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.483</td>
+      <td>1</td>
+      <td>1</td>
+      <td>277</td>
+    </tr>
+    <tr>
+      <td>Microcebus murinus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>1.000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>326</td>
+    </tr>
+    <tr>
+      <td>Mus musculus*</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.910</td>
+      <td>1</td>
+      <td>1</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>Nannospalax galili</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>1.000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>307</td>
+    </tr>
+    <tr>
+      <td>Octodon degus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.333</td>
+      <td>5</td>
+      <td>3</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Octodon degus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.331</td>
+      <td>6</td>
+      <td>3</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Ovis aries</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.615</td>
+      <td>1</td>
+      <td>2</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>Ovis aries</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.398</td>
+      <td>4</td>
+      <td>2</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>Ovis aries musimon</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.353</td>
+      <td>12</td>
+      <td>1</td>
+      <td>285</td>
+    </tr>
+    <tr>
+      <td>Papio anubis</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.585</td>
+      <td>1</td>
+      <td>1</td>
+      <td>404</td>
+    </tr>
+    <tr>
+      <td>Pelodiscus sinensis</td>
+      <td>turtle</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.692</td>
+      <td>1</td>
+      <td>1</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>Peromyscus maniculatus bairdii</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>1.000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>Protobothrops mucrosquamatus</td>
+      <td>squamata</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.462</td>
+      <td>5</td>
+      <td>1</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td>Python bivittatus</td>
+      <td>squamata</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.571</td>
+      <td>1</td>
+      <td>1</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Rattus norvegicus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.570</td>
+      <td>1</td>
+      <td>1</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>Rousettus aegyptiacus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.742</td>
+      <td>1</td>
+      <td>1</td>
+      <td>258</td>
+    </tr>
+    <tr>
+      <td>Salmo salar</td>
+      <td>teleost fish (α)</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.538</td>
+      <td>9</td>
+      <td>4</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <td>Salmo salar</td>
+      <td>teleost fish (α)</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.500</td>
+      <td>11</td>
+      <td>4</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <td>Sus scrofa</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.542</td>
+      <td>1</td>
+      <td>1</td>
+      <td>248</td>
+    </tr>
+    <tr>
+      <td>Thamnophis sirtalis</td>
+      <td>squamata</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.459</td>
+      <td>3</td>
+      <td>1</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>Tupaia chinensis</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>1.000</td>
+      <td>1</td>
+      <td>1</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>Tursiops truncatus</td>
+      <td>placental</td>
+      <td>KRAB-SSXRD-SET</td>
+      <td>0.939</td>
+      <td>1</td>
+      <td>1</td>
+      <td>233</td>
+    </tr>
+    <tr>
+      <td>Myotis lucifugus</td>
+      <td>placental</td>
+      <td>SSXRD-SET</td>
+      <td>0.524</td>
+      <td>1</td>
+      <td>2</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>Myotis lucifugus</td>
+      <td>placental</td>
+      <td>SSXRD-SET</td>
+      <td>0.310</td>
+      <td>68</td>
+      <td>2</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>Octodon degus</td>
+      <td>placental</td>
+      <td>SSXRD-SET</td>
+      <td>0.282</td>
+      <td>46</td>
+      <td>3</td>
+      <td>227</td>
+    </tr>
+    <tr>
+      <td>Sarcophilus harrisii</td>
+      <td>marsupial</td>
+      <td>SSXRD-SET</td>
+      <td>0.224</td>
+      <td>277</td>
+      <td>2</td>
+      <td>344</td>
+    </tr>
+    <tr>
+      <td>Callorhinchus millii</td>
+      <td>cartilaginous fish</td>
+      <td>KRAB-SET</td>
+      <td>0.314</td>
+      <td>6</td>
+      <td>1</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>Astyanax mexicanus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.258</td>
+      <td>60</td>
+      <td>2</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>Astyanax mexicanus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.167</td>
+      <td>152</td>
+      <td>2</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>Clupea harengus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.279</td>
+      <td>6</td>
+      <td>4</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>Clupea harengus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.278</td>
+      <td>7</td>
+      <td>4</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>Clupea harengus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.274</td>
+      <td>10</td>
+      <td>4</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>Clupea harengus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.158</td>
+      <td>114</td>
+      <td>4</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>Cynoglossus semilaevis</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.182</td>
+      <td>80</td>
+      <td>1</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>Danio rerio</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.179</td>
+      <td>345</td>
+      <td>1</td>
+      <td>367</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.295</td>
+      <td>32</td>
+      <td>4</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.192</td>
+      <td>176</td>
+      <td>4</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td>Esox lucius</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.192</td>
+      <td>177</td>
+      <td>4</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <td>Fundulus heteroclitus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.189</td>
+      <td>158</td>
+      <td>1</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Haplochromis burtoni</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.180</td>
+      <td>148</td>
+      <td>1</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.320</td>
+      <td>14</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.319</td>
+      <td>15</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.306</td>
+      <td>24</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.303</td>
+      <td>25</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.286</td>
+      <td>33</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.276</td>
+      <td>39</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.253</td>
+      <td>55</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Ictalurus punctatus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.179</td>
+      <td>127</td>
+      <td>8</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <td>Larimichthys crocea</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.192</td>
+      <td>70</td>
+      <td>1</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>Lepisosteus oculatus</td>
+      <td>holostei fish</td>
+      <td>SET</td>
+      <td>0.223</td>
+      <td>48</td>
+      <td>1</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>Maylandia zebra</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.173</td>
+      <td>161</td>
+      <td>1</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>Neolamprologus brichardi</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.173</td>
+      <td>141</td>
+      <td>1</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>Nothobranchius furzeri</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.180</td>
+      <td>245</td>
+      <td>1</td>
+      <td>266</td>
+    </tr>
+    <tr>
+      <td>Notothenia coriiceps</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.167</td>
+      <td>83</td>
+      <td>1</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>Oreochromis niloticus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.173</td>
+      <td>173</td>
+      <td>1</td>
+      <td>190</td>
+    </tr>
+    <tr>
+      <td>Oryzias latipes</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.213</td>
+      <td>104</td>
+      <td>1</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>Otolemur garnettii</td>
+      <td>placental</td>
+      <td>SET</td>
+      <td>0.266</td>
+      <td>121</td>
+      <td>1</td>
+      <td>285</td>
+    </tr>
+    <tr>
+      <td>Poecilia formosa</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.191</td>
+      <td>184</td>
+      <td>1</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>Poecilia latipinna</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.191</td>
+      <td>175</td>
+      <td>1</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>Poecilia mexicana</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.191</td>
+      <td>187</td>
+      <td>1</td>
+      <td>244</td>
+    </tr>
+    <tr>
+      <td>Poecilia reticulata</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.191</td>
+      <td>162</td>
+      <td>1</td>
+      <td>212</td>
+    </tr>
+    <tr>
+      <td>Pundamilia nyererei</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.173</td>
+      <td>134</td>
+      <td>1</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <td>Pygocentrus nattereri</td>
+      <td>teleost fish (α)</td>
+      <td>SET</td>
+      <td>0.331</td>
+      <td>12</td>
+      <td>2</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>Pygocentrus nattereri</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.179</td>
+      <td>124</td>
+      <td>2</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>Salmo salar</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.188</td>
+      <td>411</td>
+      <td>4</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <td>Salmo salar</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.180</td>
+      <td>454</td>
+      <td>4</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <td>Sinocyclocheilus anshuiensis</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.185</td>
+      <td>224</td>
+      <td>2</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>Sinocyclocheilus anshuiensis</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.185</td>
+      <td>225</td>
+      <td>2</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>Sinocyclocheilus grahami</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.185</td>
+      <td>211</td>
+      <td>1</td>
+      <td>271</td>
+    </tr>
+    <tr>
+      <td>Sinocyclocheilus rhinocerous</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.185</td>
+      <td>208</td>
+      <td>2</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <td>Sinocyclocheilus rhinocerous</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.185</td>
+      <td>209</td>
+      <td>2</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <td>Takifugu rubripes</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.188</td>
+      <td>66</td>
+      <td>1</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Xiphophorus maculatus</td>
+      <td>teleost fish (β)</td>
+      <td>SET</td>
+      <td>0.191</td>
+      <td>117</td>
+      <td>1</td>
+      <td>158</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition to placental mammals, PRDM9 orthologs in jawless fish, some bony fish (Salmoniformes, Esociformes, Elopomorpha), turtles, snakes, lizards, and coelacanths show similarly elevated values of this statistic (Figure 1—figure supplement 4). In fact, PRDM9 is the most rapidly evolving ZF gene genome-wide in most species in these taxa and all PRDM9 orthologs with the complete domain structure were in the top 5% of the most rapidly evolving ZFs in their respective genomes (Table 1, Supplementary file 3B). In contrast, evidence of such rapid evolution is absent from other taxa of bony fish, including all PRDM9β orthologs and partial PRDM9α orthologs, as well as from the putatively partial PRDM9 orthologs found in the elephant shark, the Tasmanian devil, and in several species of placental mammals (see Materials and methods for details). We only observed one instance (little brown bat, Myotis lucifugus) in which a partial PRDM9 ortholog was evolving unusually rapidly (Table 1); in this case, we were unable to confirm the loss of the missing KRAB domain (see Materials and methods), so it remains possible this ortholog is in fact intact. In summary, with one possible exception, species show evidence of rapid evolution of the ZF binding affinity if and only if they carry the intact PRDM9 ortholog found in placental mammals. This concordance of rapid evolution with the complete domain structure is highly unlikely by chance (taking into account the phylogenetic relationship between orthologs, p<10−6; see Materials and methods). Assuming that rapid evolution of the ZF is indicative of PRDM9-directed recombination, these observations carry two implications: KRAB and SSXRD domains are required for this role and non-mammalian species such as turtles or snakes also use PRDM9 to direct recombination.
 
-## Analysis of SET domain catalytic residues
+### Analysis of SET domain catalytic residues
 
 While partial orthologs of PRDM9 have lost one or both of their N-terminal domains, they retain the SET and ZF domains known to play a role in recombination, are under purifying selection, and are expressed in testis. In principle then, these partial orthologs could still play a role in directing recombination. To evaluate this possibility, we started by examining whether the catalytic activities of the SET domains of partial PRDM9 orthologs are conserved. We did so because the catalytic specificities of PRDM9 are believed to be important to its role in directing recombination: two marks made by the SET domain of PRDM9, H3K4me3 and H3K36me3, are associated with hotspot activity in mammals (Powers et al., 2016; Grey et al., 2017; Yamada et al., 2017; Getun et al., 2017) and the human PRDM9 is unusual in being able to add methyl groups to different lysine residues of the same nucleosomes, when most other methyltransferase genes are responsible for only a single mark (Eram et al., 2014; Powers et al., 2016).
 
@@ -126,57 +974,57 @@ Specifically, we focused on three tyrosine residues shown to be important for th
 
 We found that each of the three residues is broadly conserved across the vertebrate phylogeny, with substitutions observed in only 57 of 227 PRDM9 orthologs, including 11 genes from placental mammals and 46 genes from bony fish. Strikingly, however, none of these substitutions occur in a complete PRDM9 ortholog containing KRAB, SSXRD, SET and ZF domains. Within mammals, the majority of PRDM9 orthologs that experienced these substitutions lack the ZF array entirely, including eight PRDM7 genes from primates, which share a substitution at Y357, and one PRDM9 ortholog from a bat (Miniopterus natalensis) that carries a substitution at Y276. Others are lacking the KRAB domain, including PRDM9 orthologs identified from a lemur (Galeopterus variegatus) and a rodent (Octodon degus), which carry substitutions at Y276 and Y357, respectively.
 
-Within bony fish, we identified 46 PRDM9 orthologs with substitutions at one or more of these residues, including the partial PRDM9 ortholog from holosteans (see above) and all PRDM9β orthologs in teleosts (
+Within bony fish, we identified 46 PRDM9 orthologs with substitutions at one or more of these residues, including the partial PRDM9 ortholog from holosteans (see above) and all PRDM9β orthologs in teleosts (Supplementary file 1A). The distribution of substitutions at these residues within PRDM9β genes suggests that numerous independent substitution events have occurred in this gene family following the loss of KRAB and SSXRD domains (Figure 3). In contrast, no substitutions were observed at these residues in any PRDM9α ortholog, regardless of their domain architecture. These observations could be consistent with a lack of constraint on the ancestral methyltransferase activities of PRDM9 in PRDM9β genes after the PRDM9α/PRDM9β duplication event (or conceivably an indication that there has been convergent evolution towards a new functional role). Thus, PRDM9β genes not only lack KRAB and SSXRD domains, they likely lack some methyltransferase activity of the SET domain.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig3-v2.jpg)
 
-**Figure 3.:** (a) Lineages within bony fish carrying substitutions at each of three tyrosine residues involved in H3K4me3 catalysis in human PRDM9 are shown in blue, yellow and red. (b) Lineages carrying substitutions at one, two or three of these residues are shown in red, pink and blue respectively. All PRDM9β genes as well as a partial PRDM9 ortholog from holostean fish carry one or more substitutions at these residues. The PRDM9β gene from Xiphophorus is indicated by the presence of asterisk.DOI: http://dx.doi.org/10.7554/eLife.24133.013
+**Figure 3.:** (a) Lineages within bony fish carrying substitutions at each of three tyrosine residues involved in H3K4me3 catalysis in human PRDM9 are shown in blue, yellow and red. (b) Lineages carrying substitutions at one, two or three of these residues are shown in red, pink and blue respectively. All PRDM9β genes as well as a partial PRDM9 ortholog from holostean fish carry one or more substitutions at these residues. The PRDM9β gene from Xiphophorus is indicated by the presence of asterisk.
 
-## Fish species with a partial PRDM9 ortholog share broad patterns of recombination with species that lack PRDM9
+### Fish species with a partial PRDM9 ortholog share broad patterns of recombination with species that lack PRDM9
 
-To more directly test the hypothesis that the partial ortholog of PRDM9 does not direct recombination, we examined patterns of crossing-over in naturally-occurring swordtail fish hybrids (
+To more directly test the hypothesis that the partial ortholog of PRDM9 does not direct recombination, we examined patterns of crossing-over in naturally-occurring swordtail fish hybrids (X. birchmanni x X. malinche; see Materials and methods). Like other percomorphs, swordtail fish have testis-specific expression of a PRDM9β type gene that lacks the KRAB and SSXRD domains, and has a slowly evolving ZF array (Figure 4; Figure 4—figure supplement 1); they further carry substitutions at two catalytic residues of the SET domain (Y341F and Y357P), as well as at residues of the SET domain implicated in H3K4me2 recognition (see Materials and methods). Based on these features, we predicted that they should behave like a PRDM9 knockout, with no increase in recombination around the PRDM9 motif.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-v2.jpg)
 
-**Figure 4.:** (a) The ZF array of PRDM9 appears to be evolving slowly in Xiphophorus, with few changes over 1 million years of divergence (Cui et al., 2013; Jones et al., 2013). (b) PRDM9 is upregulated in the germline relative to the liver in X. birchmanni (circles) and X. malinche (squares; panel shows three biological replicates for each species). (c) The computationally-predicted PRDM9 binding sites is not unusually associated with H3K4me3 peaks in testes (d) Crossover rates increase near H3K4me3 peaks in testis (e) Crossover rates increase near CGIs (f) Crossover rates do not increase near computationally-predicted PRDM9 binding sites (see Figure 4—figure supplement 3 for comparison). Crossover rates were estimated from ancestry switchpoints in naturally occurring hybrids between X. birchmanni and X. malinche (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.24133.014
+**Figure 4.:** (a) The ZF array of PRDM9 appears to be evolving slowly in Xiphophorus, with few changes over 1 million years of divergence (Cui et al., 2013; Jones et al., 2013). (b) PRDM9 is upregulated in the germline relative to the liver in X. birchmanni (circles) and X. malinche (squares; panel shows three biological replicates for each species). (c) The computationally-predicted PRDM9 binding sites is not unusually associated with H3K4me3 peaks in testes (d) Crossover rates increase near H3K4me3 peaks in testis (e) Crossover rates increase near CGIs (f) Crossover rates do not increase near computationally-predicted PRDM9 binding sites (see Figure 4—figure supplement 3 for comparison). Crossover rates were estimated from ancestry switchpoints in naturally occurring hybrids between X. birchmanni and X. malinche (see Materials and methods).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** In general, the seven meiosis-related genes surveyed had higher expression in tissues containing germline cells than liver tissue, but this pattern was much more pronounced in testis tissue (compared to ovary tissue). As a result, we focused our analysis of meiosis related genes on RNAseq data generated from testis. Results shown are based on analysis of three male and female biological replicates from each swordtail species (X. birchmanni and X. malinche).DOI: http://dx.doi.org/10.7554/eLife.24133.015
+**Figure 4—figure supplement 1.:** In general, the seven meiosis-related genes surveyed had higher expression in tissues containing germline cells than liver tissue, but this pattern was much more pronounced in testis tissue (compared to ovary tissue). As a result, we focused our analysis of meiosis related genes on RNAseq data generated from testis. Results shown are based on analysis of three male and female biological replicates from each swordtail species (X. birchmanni and X. malinche).
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Partial correlation analyses suggest that the association between the TSS and recombination rate in swordtails is explained by H3K4me3 peaks and CGIs.DOI: http://dx.doi.org/10.7554/eLife.24133.016
+**Figure 4—figure supplement 2.:** Partial correlation analyses suggest that the association between the TSS and recombination rate in swordtails is explained by H3K4me3 peaks and CGIs.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Most work investigating relationships between PRDM9 motifs and recombination rates have focused on the PRDM9 motif empirically inferred from recombination hotspots, but the empirical motif is unknown for many species. To generate results comparable to those we present for swordtails in Figure 4F, we therefore determined recombination rate (using the map based on LD patterns in the CEU; Frazer et al., 2007) as a function of distance to computationally predicted binding sites for the PRDM9A motif in humans and as a function of distance to computationally predicted binding sites for the gor-1 PRDM9 allele (Schwartz et al., 2014) in gorillas (using the LD-based map from Great Ape Genome Project et al., 2016).DOI: http://dx.doi.org/10.7554/eLife.24133.017
+**Figure 4—figure supplement 3.:** Most work investigating relationships between PRDM9 motifs and recombination rates have focused on the PRDM9 motif empirically inferred from recombination hotspots, but the empirical motif is unknown for many species. To generate results comparable to those we present for swordtails in Figure 4F, we therefore determined recombination rate (using the map based on LD patterns in the CEU; Frazer et al., 2007) as a function of distance to computationally predicted binding sites for the PRDM9A motif in humans and as a function of distance to computationally predicted binding sites for the gor-1 PRDM9 allele (Schwartz et al., 2014) in gorillas (using the LD-based map from Great Ape Genome Project et al., 2016).
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** H3K4me3 peaks found only in the testis and not in the liver of X. birchmanni have higher observed recombination rates in X. birchmanni – X. malinche hybrids. This pattern supports the conclusion that H3K4me3 peaks are associated with recombination in swordtails.DOI: http://dx.doi.org/10.7554/eLife.24133.018
+**Figure 4—figure supplement 4.:** H3K4me3 peaks found only in the testis and not in the liver of X. birchmanni have higher observed recombination rates in X. birchmanni – X. malinche hybrids. This pattern supports the conclusion that H3K4me3 peaks are associated with recombination in swordtails.
 
 ![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig4-figsupp5-v2.jpg)
 
-**Figure 4—figure supplement 5.:** Results shown in A-E are from five replicate runs of 2000 testis-specific sequences using liver-specific sequences as a background comparison set. The swordtail computationally-predicted PRDM9 binding motif is shown for comparison.DOI: http://dx.doi.org/10.7554/eLife.24133.019
+**Figure 4—figure supplement 5.:** Results shown in A-E are from five replicate runs of 2000 testis-specific sequences using liver-specific sequences as a background comparison set. The swordtail computationally-predicted PRDM9 binding motif is shown for comparison.
 
 To test these predictions, we collected ~1X genome coverage from 268 natural hybrids and inferred crossover events from ancestry switchpoints between the two parental species using a hidden Markov model (see Materials and methods). By this approach, we found recombination rates to be elevated near TSSs and CGIs, two promoter-like features (Figure 4; Figure 4—figure supplement 2). Moreover, and in contrast to what is observed in species with PRDM9-mediated recombination (Figure 4—figure supplement 3), there is no elevation in recombination rates near computationally-predicted PRDM9 binding sites (Figure 4F). These patterns resemble those previously reported for birds lacking PRDM9 (Singhal et al., 2015).
 
 In addition, we performed native chromatin Chip-seq with an H3K4me3 antibody in X. birchmanni testis and liver tissue. Consistent with a role for H3K4me3 in inducing DSBs, recombination is increased around H3K4me3 peaks (testing the association with distance, rho = −0.072, p=2.3e-69; Figure 4), an effect that remains significant after correcting for distance to TSSs and CGIs (rho = −0.026, p=5.4e-10). In fact, the increase in recombination rate near the TSS is almost completely explained by the joint effects of proximity to H3K4me3 peaks and CGI (TSS with both: rho = −0.009, p=0.02). Windows that contain testis-specific H3K4me3 peaks have significantly higher recombination rates than those that contain liver-specific H3K4me3 peaks (Figure 4; Figure 4—figure supplement 4). However, H3K4me3 peaks in the testis are not enriched for the computationally predicted PRDM9 motifs (Figure 4), nor do they overlap with PRDM9 motifs in the testis more than the liver (see Methods). Conversely, sequence motifs associated with testis-specific H3K4me3 peaks do not resemble the predicted PRDM9 motif (Figure 4; Figure 4—figure supplement 5). Thus, there is no evidence that PRDM9 lays down the H3K4me3 marks associated with an increase in recombination in swordtails.
 
-## Recombination landscapes in vertebrates with and without PRDM9
+### Recombination landscapes in vertebrates with and without PRDM9
 
 To put the genomic patterns of recombination in swordtail fish in an explicit comparative framework, we re-analyzed patterns of recombination near TSSs and CGIs in previously published genetic maps based on LD data from three species without functional PRDM9 genes (dog, zebra finch and long-tailed finch) and three species known to use PRDM9-mediated recombination (human, gorilla and mouse), as well as using a pedigree-based genetic map for one species with a complete PRDM9 ortholog, but for which no direct evidence of PRDM9’s role in recombination has yet been reported (sheep; see Materials and methods for details and references).
 
-Among species with complete PRDM9 genes, recombination rates are either weakly reduced near TSSs and CGIs or similar to what is seen in nearby windows (
+Among species with complete PRDM9 genes, recombination rates are either weakly reduced near TSSs and CGIs or similar to what is seen in nearby windows (Figure 5; see Figure 5—figure supplement 1 for results with genetic maps based on pedigrees or admixture switches instead of LD data in humans and dogs). In contrast, in all species lacking PRDM9 and in swordtail fish, the recombination rate is notably increased in windows overlapping either a TSS or CGI relative to nearby windows. Quantitative comparisons are difficult because of the varying resolution of the different genetic maps. Nonetheless, these results indicate that patterns of recombination near TSSs and CGIs differ between species carrying complete PRDM9 orthologs and species lacking PRDM9 altogether, and that swordtail fish exhibit patterns of recombination similar to species that completely lack PRDM9, despite the presence of a partial ortholog.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig5-v2.jpg)
 
-**Figure 5.:** For each species, recombination rates were binned in 10 kb windows along the genome; curves were fit using gaussian loess smoothing. The fold change in recombination rates shown on the y-axis is relative to recombination rates at the last point shown. Species shown in the top row have complete PRDM9 orthologs (mouse, human, gorilla and sheep), whereas species in the bottom row have no PRDM9 ortholog (dog, zebra finch, long-tailed finch), or a partial PRDM9 ortholog (swordtail fish).DOI: http://dx.doi.org/10.7554/eLife.24133.020
+**Figure 5.:** For each species, recombination rates were binned in 10 kb windows along the genome; curves were fit using gaussian loess smoothing. The fold change in recombination rates shown on the y-axis is relative to recombination rates at the last point shown. Species shown in the top row have complete PRDM9 orthologs (mouse, human, gorilla and sheep), whereas species in the bottom row have no PRDM9 ortholog (dog, zebra finch, long-tailed finch), or a partial PRDM9 ortholog (swordtail fish).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/24133/elife-24133-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (a) Recombination rates near the TSS and CGI in dogs are shown using recombination maps inferred either from LD patterns or pedigree data. The magnitude of the peak near these features is lower in the map with lower resolution. This observation raises the possibility that a higher resolution map in swordtail fish would result in a higher peak near these features. (b) Recombination rates near the TSS and CGI in humans are shown using recombination maps inferred either from LD patterns or ancestry switches in African-American samples. Recombination rates near the TSS and CGI in human do not seem to be strongly influenced by the choice of genetic map, though peaks at these features are slightly reduced in admixture- and pedigree-based methods.DOI: http://dx.doi.org/10.7554/eLife.24133.021
+**Figure 5—figure supplement 1.:** (a) Recombination rates near the TSS and CGI in dogs are shown using recombination maps inferred either from LD patterns or pedigree data. The magnitude of the peak near these features is lower in the map with lower resolution. This observation raises the possibility that a higher resolution map in swordtail fish would result in a higher peak near these features. (b) Recombination rates near the TSS and CGI in humans are shown using recombination maps inferred either from LD patterns or ancestry switches in African-American samples. Recombination rates near the TSS and CGI in human do not seem to be strongly influenced by the choice of genetic map, though peaks at these features are slightly reduced in admixture- and pedigree-based methods.
 
 ## Discussion
 
@@ -198,11 +1046,11 @@ In this regard, it is worth noting that in mammalian species studied to date, re
 
 ## Materials and methods
 
-## Identification of putative PRDM9 orthologs from the RefSeq database
+### Identification of putative PRDM9 orthologs from the RefSeq database
 
 As a first step in understanding the distribution of PRDM9 in vertebrates, we identified putative PRDM9 orthologs in the RefSeq database. We used the blastp algorithm (Altschul et al., 1990) using the Homo sapiens PRDM9 sequence, minus the rapidly evolving tandem ZF array, with an e-value threshold of 1e-5. We downloaded GenPept files and used Batch Entrez to retrieve the corresponding GenBank files (September 2016). The longest transcript for each locus and amino acid and DNA sequences corresponding to the KRAB, SSXRD and SET domains of these sequences (as annotated by the Conserved Domain Database; Marchler-Bauer et al., 2015), were downloaded using a R script (Supplementary file 4). The retrieved SET domain sequences, an additional 44 retrieved from whole genome assemblies, as well as seven retrieved from RNAseq datasets for five species without sequenced genomes (see Predicting PRDM9 orthologs from whole genome sequences) were input into ClustalW2 (Larkin et al., 2007), in order to generate a neighbor-joining (NJ) guide tree (see Figure 1—figure supplement 2). This approach was used to identify and remove genes that cluster with known PRDM family genes from humans and that share the SET domain of PRDM9 but were previously reported to have diverged from PRDM9 before the common ancestor of vertebrates (Vervoort et al., 2016; see Phylogenetic Analysis of PRDM9 orthologs and related gene families).
 
-## Predicting PRDM9 orthologs from whole genome sequences
+### Predicting PRDM9 orthologs from whole genome sequences
 
 There were a number of groups not included in the RefSeq database or for which we were unable to identify PRDM9 orthologs containing the complete domain architecture. For 33 representative species from these groups, we investigated whether we could find additional PRDM9 orthologs in their whole genome assemblies (see Supplementary files 1,2) (Song et al., 2015; Xiong et al., 2016; Bradnam et al., 2013; Georges et al., 2015). To this end, we ran tblastn against the whole genome assembly, using the PRDM9 ortholog from the most closely related species that contained a KRAB domain, a SET domain, and at least one ZF domain (Supplementary file 1B). The number of hits to each region was limited to ten, and gene models were only predicted when a blast hit to the SET domain was observed with an e-value threshold of 1e-10.
 
@@ -210,13 +1058,13 @@ When a single contig was identified containing an alignment to the full length o
 
 The positions of KRAB, SSXRD and SET domains for each gene model were annotated using CD-blast (Domain Accessions smart00317, pfam00856, cl02566, pfam09514, pfam01352, cd07765, smart00349). This approach resulted in the identification of additional PRDM9 orthologs containing at minimum the SET domain, in two jawless fish, two cartilaginous fish, nine bony fish, one monotreme, two marsupials, one turtle, four lizards, and eight snakes (Supplementary file 1A). We were unable to detect PRDM9 orthologs in one lizard (Anolis carolinenesis), or in any of three amphibian species (Supplementary file 1B). We used RNA-seq data to investigate whether these negative findings are due to genome assembly quality or reflect true losses (see below).
 
-## Phylogenetic analysis of PRDM9 orthologs and related gene families
+### Phylogenetic analysis of PRDM9 orthologs and related gene families
 
 To understand the evolution of PRDM9 within vertebrates, we used a phylogenetic approach. We first built an alignment of the amino acid sequences of putative PRDM9 and PRDM11 SET domains using Clustal Omega (Sievers et al., 2011). We included genes clustering with PRDM11 because it had been reported that PRDM11 arose from a duplication event of PRDM9 in the common ancestor of bony fish and tetrapods (Vervoort et al., 2016), and we were interested in identifying any PRDM9 orthologs carried by vertebrate species that may precede this duplication event. The alignment coordinates were then used to generate a nucleotide alignment, which was used as input into the program RAxML (v7.2.8; Stamatakis, 2006). We performed 100 rapid bootstraps followed by maximum likelihood estimation of the tree under the General Reversible Time substitution model, with one partition for each position within a codon. The resulting phylogeny contained monophyletic groups corresponding to the PRDM9 and PRDM11 duplication event, with 100% bootstrap support (Figure 1—figure supplement 1). These groups were used to label each putative ortholog as PRDM9 or PRDM11. Only jawless fish have PRDM9 orthologs basal to this duplication event, suggesting PRDM11 arose from PRDM9 before the common ancestor of cartilaginous fish and bony vertebrates. We observed at least one PRDM11 ortholog in each of the other vertebrate species examined.
 
 Within teleost fish, we identified two groups of PRDM9 orthologs, which we refer to as PRDM9α and PRDM9β (Figure 2—figure supplement 1). While the bootstrap support for the monophyly of the two groups is only 75% for PRDM9α and 54% for PRDM9β, the potential duplication event suggested by this tree is coincident with the whole genome duplication event known to have occurred in the common ancestor of teleost fish (Taylor et al., 2003). Moreover, the phylogenetic grouping based on the SET domain is concordant with general differences in the domain architectures between the two orthologs: In contrast to PRDM9α, PRDM9β genes have derived ZF array structures, containing multiple tandem ZF arrays spread out within the same exon (Figure 2—figure supplement 1) and are always found without the KRAB and SSXRD domains, whereas PRDM9α genes generally have a single tandem array of ZFs consistent with the inferred ancestral domain architecture, and occasionally have KRAB and SSXRD domains (Figure 2).
 
-## Confirming the expression or absence of PRDM9 in the testes of major phylogenetic groups
+### Confirming the expression or absence of PRDM9 in the testes of major phylogenetic groups
 
 A necessary condition for PRDM9 to be involved in recombination is its expression in meiotic cells. For groups of taxa in which we detected a PRDM9 ortholog, we evaluated whether this ortholog was expressed in the testes, using a combination of publically available RNAseq data and RNAseq data that we generated. Additionally, in groups of species where PRDM9 appeared to be absent from the genome, we used publically available RNAseq data to confirm the absence of expression of PRDM9. In both cases, we used a stringent set of criteria to try to ensure that the absence of expression was not due to data quality issues (see details below).
 
@@ -226,11 +1074,11 @@ In order to identify potential PRDM9 transcripts in each of 24 assembled transcr
 
 Failure to detect PRDM9 could mean that PRDM9 is not expressed in that tissue, or that data quality and sequencing depth are too low to detect its expression. To distinguish between these possibilities, we used other recombination-related genes as positive controls, reasoning that if expression of several other conserved recombination-related genes were detected, the absence of PRDM9 would be more strongly suggestive of true lack of expression. Eight recombination-related genes are known to be conserved between yeast and mice (Lam and Keeney, 2014). We used the subset of seven that could be reliably detected in whole genome sequences, and we asked which transcriptomes had reciprocal best tblastn (e-value <1e-5) hits to all of these proteins, using query sequences from humans (Supplementary file 2A; Supplementary file 2D). In addition, in order to assess whether PRDM9 expression might simply be lower than that of other meiotic genes, we quantified absolute expression of PRDM9 and the seven conserved recombination-related proteins in whole testes, using data from three major taxa (bony fish, mammals, and reptiles); see Analysis of PRDM9 expression levels and expression levels of other conserved recombination-related genes for more details. Together, these results suggest that not detecting PRDM9 in whole testes transcriptomes provides support for its absence.
 
-## RNA extraction and sequencing of liver and gonad tissue from swordtail fish
+### RNA extraction and sequencing of liver and gonad tissue from swordtail fish
 
 Three Xiphophorus birchmanni and three X. malinche were collected from the eastern Sierra Madre Oriental in the state of Hidalgo, Mexico. Fish were caught using baited minnow traps and were immediately euthanized by decapitation (Texas A&M AUP# - IACUC 2013–0168). Testis, ovaries, and liver were dissected and stored at 4°C in RNAlater. Total RNA was extracted from testis, ovary and liver tissue using the Qiagen RNeasy kit (Valencia, CA, USA) following the manufacturer’s protocol. RNA was quantified and assessed for quality on a Nanodrop 1000 (Nanodrop technologies, Willmington, DE, USA) and approximately 1 μg of total RNA was used input to the Illumina TruSeq mRNA sample prep kit. Samples were prepared following the manufacturer’s protocol with minor modifications. Briefly, mRNA was purified using manufacturer’s beads and chemically fragmented. First and second strand cDNA was synthesized and end repaired. Following A-tailing, each sample was individually barcoded with an Illumina index and amplified for 12 cycles. The six libraries were sequenced on the HiSeq 2500 at the Lewis Sigler Institute at Princeton University to collect single-end 150 bp reads, while single-end 100 bp data was collected on the HiSeq 4000 at Weill Cornell Medical College for all other samples (SRA Accessions: SRX2436594 and SRX2436597). Reads were processed and a de novo transcriptome assembled for the highest coverage testis library following the approach described above for publicly available samples. Details on assembly quality are available in Supplementary file 2A. Other individuals were used in analysis of gene expression levels (see next section).
 
-## Analysis of PRDM9 expression levels and expression levels of other conserved recombination-related genes
+### Analysis of PRDM9 expression levels and expression levels of other conserved recombination-related genes
 
 To determine whether some of the genes in our conserved recombination-related gene set were expressed at similar levels to PRDM9, implying similar detection power, we examined expression levels of these genes in three species representing the bony fish, reptilian, and mammalian taxa (Xiphophorus malinche, Pogona vitticeps, and Homo sapiens).
 
@@ -242,7 +1090,7 @@ Several publically available databases already exist for tissue specific express
 
 Examination of these results demonstrated that other meiotic genes (2-5) in each species had expression levels comparable to PRDM9 (Figure 1—figure supplement 3). This finding suggests that these genes are appropriate positive controls, in that detecting their expression but not that of PRDM9 provides evidence against expression of PRDM9 in testes.
 
-## Confirmation of PRDM9 domain loss and investigation of loss of function
+### Confirmation of PRDM9 domain loss and investigation of loss of function
 
 In addition to complete losses of PRDM9, we were unable to identify one or more functional domains of PRDM9 in orthologs identified from the platypus, Tasmanian devil, elephant shark, all bony fish and several placental mammals.
 
@@ -258,35 +1106,39 @@ We analyzed these alignments with codeml, comparing the likelihood of two models
 
 We also investigated constraint in all mammalian Ref-seq orthologs that appear to lack only an annotated KRAB or SSXRD domain; for this larger number of genes, we did not confirm all domain losses, due to the large number of genome searches that would be required and lack of RNAseq data for most species. We found evidence of purifying selection in all cases except for five PRDM7 orthologs from primates, for which we had been unable to identify a KRAB domain (Supplementary file 3C). PRDM7 is thought to have arisen from a primate specific duplication event and to have undergone subsequent losses of the C2H2 ZF array and of some catalytic specificity of its SET domain (Blazer et al., 2016). Thus, PRDM7 orthologs are unlikely to function in directing recombination. Our findings further suggest they are evolving under very little constraint, and may even be non-functional. More generally, within placental mammals, the majority of partial PRDM9 orthologs that we identified lack the ZF array completely or have truncated arrays (notably, there are fewer than four tandem ZFs in 24 of 28 orthologs), in sharp contrast to other taxa in which partial orthologs to PRDM9 lack the N terminal domains, yet have conserved ZF arrays and are constrained. Moreover, the paralogs lacking a long ZF tend to be found in species that already carry a complete PRDM9 ortholog (21 of 24). Thus, some of these cases may represent recent duplication events in which one copy of PRDM9 is under highly relaxed selection, similar to PRDM7 in primates.
 
-## Evolutionary patterns in the SSXRD domain
+### Evolutionary patterns in the SSXRD domain
 
 The SSXRD domain is the shortest functional domain in the PRDM9 protein. One species of cartilaginous fish (Rhincodon typus), and several species of bony fish (Anguilla anguilla, A. rostrata, A. japonica, Salmo trutta, S. salar) have weakly predicted SSXRD domains (e-values >10, see Supplementary file 1B and 2C). This observation is potentially suggestive of functional divergence or loss of this domain. Unfortunately, because the domain is so short, there is little power to reject dN/dS = 1; though the estimate of dN/dS was 0.10 and 0.11 between cartilaginous fish and eel and salmon orthologous regions, respectively, the difference between models was not significant in either case. Based on these findings, we tentatively treat the weakly predicted SSXRD domain in Rhincodon typus and in the above species of bony fish as evidence that this domain is present in these species, but note that we were unable to identify a similar region in predicted gene models from another species of cartilaginous fish (Callorhinchus milii).
 
-## PCR and Sanger sequencing of python PRDM9
+### PCR and Sanger sequencing of python PRDM9
 
 We performed Sanger sequencing of Python bivittatus PRDM9 from a single individual to collect additional data on within species diversity of the ZF array (Figure 1—figure supplement 5). Primers were designed based on the Python bivattatus genome (Castoe et al., 2013) to amplify the ZF containing exon of PRDM9 and through a gap in the assembly. Primers were assessed for specificity and quality using NCBI Primer Blast (http://www.ncbi.nlm.nih.gov/tools/primer-blast/) against the nr reference database and were synthesized by IDT (Coralville, IA, USA).
 
 DNA was extracted from approximately 20 mg of tissue using the Zymo Quick-DNA kit (Irvine, CA, USA) following the manufacturer’s protocol. PCR was performed using the NEB Phusion High-Fidelity PCR kit (Ipswich, MA, USA). Reactions were performed following manufacturer’s instructions with 60 ng of DNA and 10 μM each of the forward (ZF: 5’TTTGCCATCAGTGTCCCAGT’3; gap: 5’ GCTTCCAGCATTTTGCCAGTT’3) and reverse (ZF: 5’ TTGATTCACTTGTGAGTGGACAT’3; gap: 5’ GAGCTTTGCTGAAATCGGGT’3) primers. Products were inspected for non-specific amplification on a 1% agarose gel with ethidium bromide, purified using a Qiagen PCR purification kit (Valencia, CA, USA) and sequenced by GeneWiz (South Plainfield, NJ, USA).
 
-## Analysis of PRDM9 ZF array evolution
+### Analysis of PRDM9 ZF array evolution
 
 In species in which PRDM9 is known to play a role in recombination, the level of sequence similarity between the individual ZFs of the tandem array is remarkably high, reflective of high rates of ZF turnover due to paralogous gene conversion and duplication events (Oliver et al., 2009; Myers et al., 2010; Jeffreys et al., 2013). It has further been observed that DNA-binding residues show high levels of amino acid diversity, suggestive of positive selection acting specifically at DNA-binding sites, that is, on binding affinity (e.g. Oliver et al., 2009; Schwartz et al., 2014). These signals have been previously studied by comparing site specific rates of synonymous versus non-synonymous substitutions (dN/dS) between paralogous ZFs in PRDM9’s tandem ZF array (Oliver et al., 2009). Assessing statistical significance using this approach is problematic, however, because the occurrence of paralogous gene conversion across copies means that there is no single tree relating the different ZFs, in violation of model assumptions (Schierup and Hein, 2000; Wilson and McVean, 2006). Here, we used a statistic sensitive to both rapid evolution at DNA-binding sites and high rates of gene conversion: the total proportion of amino acid diversity observed at DNA-binding sites within the ZF array. We then assessed significance empirically by comparing the value of this statistic to other C2H2 ZF genes from the same species (where possible).
 
 To this end, for each species with a PRDM9 ortholog, we downloaded the nucleotide and protein sequences for all available RefSeq genes with a C2H2 ZF motif annotated in Conserved Domain Database (pfam id# PF00096). To simplify alignment generation, we only used tandem ZF arrays with four or more ZFs matching the 28 amino acid long C2H2 motif (X2-CXXC-X12-HXXXH-X5 where X is any amino acid). In all of our analyses, if a gene had multiple tandem ZF arrays that were spatially separated, only the first array of four or more adjacent ZFs was used for the following analysis (Supplementary file 3B). However, an alternative analysis using all ZFs or different subsets of ZFs led to qualitatively similar results for the PRDM9β orthologs from bony fish, where ZFs are commonly found in multiple tandem arrays separated by short linker regions in the predicted amino acid sequence (Figure 2—figure supplement 1; Figure 2—figure supplement 2). For species with PRDM9 orthologs with fewer than five ZFs, we implemented blastn against the whole genome sequence using the available gene model as a query sequence, in order to determine whether or not there was a predicted gap within the ZF array, and, if there was, to identify any additional ZFs found in the expected orientation at the beginning of the adjacent contig. This approach was able to successfully identify additional ZF sequences on contigs adjacent to PRDM9 in the genome assembly for two species (Latimeria chalumnae and Protobothrops mucrosquamatus). These ZFs were included in subsequent analysis (Supplementary file 1A).
 
-Using the alignments generated above, we determined the amino acid diversity along the ZF domains of PRDM9 genes and all other C2H2 ZFs from the same species (Table 1, Supplementary file 3B), and calculated the proportion of the total amino acid diversity at canonical DNA-binding residues of the ZF array. Specifically, we calculated the heterozygosity xk at position k across the aligned ZFs from a single tandem array as:xk=1− ∑i=1mfi2
+Using the alignments generated above, we determined the amino acid diversity along the ZF domains of PRDM9 genes and all other C2H2 ZFs from the same species (Table 1, Supplementary file 3B), and calculated the proportion of the total amino acid diversity at canonical DNA-binding residues of the ZF array. Specifically, we calculated the heterozygosity xk at position k across the aligned ZFs from a single tandem array as:
+
+$$
+x_{k}=1− \sumi=1mf_{i}^{2}
+$$
 
 where m is the number of unique amino acids found at position k across the fingers, and fi is the frequency of the ith unique amino acid across the fingers. The total proportion P of amino acid diversity assigned to DNA-binding residues is the sum of xk at DNA-binding sites over the sum of xk at all sites in the ZF array. To compare results to those for other genes, we ranked PRDM9 by the value P compared to all other C2H2 ZF genes from the same species (Table 1, Supplementary file 3B).
 
 We used the R package phylotools (Zhang et al., 2012; https://cran.r-project.org/web/packages/phylotools/index.html) to calculate a p-value for the correlation between complete domain structure and rapid evolution of the PRDM9 ZF array, taking into account phylogenetic relationships between PRDM9 orthologs. We coded these variables using a binary approach with ‘00’ for incomplete domain structure and no evidence of rapid evolution and ‘11’ for complete domain structure and evidence of rapid evolution. To describe the phylogenetic relationships between orthologs, we used the RAxML tree that we constructed from the SET domain for all PRDM9 orthologs. Species with missing ZF information, including species where PRDM9 has been lost, were excluded from this analysis using the drop.tip function of the ape package (Paradis et al., 2004), resulting in a tree with 91 tips. We used the phyloglm command to perform a logistic regression evaluating the relationship between domain structure and the odds of rapid evolution of the ZF array.
 
-## Analysis of the SET domain catalytic residues
+### Analysis of the SET domain catalytic residues
 
 In order to investigate whether the catalytic function of the SET domain is conserved in the PRDM9 orthologs identified above, we asked whether any PRDM9 orthologs in our dataset carried substitutions at three catalytic residues shown to mediate the methyltransferase activity of human PRDM9 (Wu et al., 2013). To this end, we used Clustal Omega to create an amino acid alignment of the SET domain with 15 amino acids of flanking sequence for each PRDM9 ortholog in our dataset and asked whether the gene had substitutions to tyrosine residues at positions aligning to Y276, Y341 and Y357 in human PRDM9 (Supplementary file 1A). Domain alignments deposited at Baker et al., 2017.
 
 In total, 57 genes were identified as having substitutions in at least one of these residues, including 11 from placental mammals and 46 from bony fish (Supplementary file 1A). To visualize the distribution of these substitution events within bony fish, we mapped these substitutions onto the phylogeny of PRDM9 orthologs generated above (Figure 3).
 
-## Characterizing patterns of recombination in hybrid swordtail fish
+### Characterizing patterns of recombination in hybrid swordtail fish
 
 Percomorph fish have a partial ortholog of PRDM9 that lacks the KRAB and SSXRD domains found in mammalian PRDM9. As a result, we hypothesized that they would behave like PRDM9 knockouts, in that the predicted PRDM9 binding motif would not co-localize with recombination events, and functional genomic elements such as the TSS and CGIs would be enriched for recombination events.
 
@@ -308,7 +1160,7 @@ After determining the minimum distance between each 10 kb window and the feature
 
 Most work in humans and mice has focused on the empirical PRDM9 binding motif rather than the computationally predicted motif. Since we expect the computationally predicted motif to be a poorer predictor of PRDM9 binding, we checked how its use would affect the analyses, by repeating the analysis described above for the computational prediction obtained for the human PRDM9A allele, using recombination rates in 10 kb windows estimated from the CEU LD map (Frazer et al., 2007); downloaded from: http://www.well.ox.ac.uk/~anjali/AAmap/). We also repeated this analysis for the gor-1 PRDM9 allele in Gorilla gorilla, using recombination rates in 10 kb windows estimated from a recent LD map (Schwartz et al., 2014; Great Ape Genome Project et al., 2016; downloaded from Stevison, 2016: https://github.com/lstevison/great-ape-recombination).
 
-## Comparisons of recombination landscapes with and without PRDM9
+### Comparisons of recombination landscapes with and without PRDM9
 
 To investigate whether patterns of recombination rates near the TSS and CGI systematically distinguish between species that do and do not use PRDM9-directed recombination, we compared available data across species. We downloaded previously published recombination maps for three species without PRDM9 genes (dog, Auton et al., 2013, zebra finch and long-tailed finch, Singhal et al., 2015) and four species with complete PRDM9 orthologs (human, Frazer et al., 2007; Hinch et al., 2011; gorilla, Great Ape Genome Project et al., 2016; sheep, Johnston et al., 2016; and mouse, Brunschwig et al., 2012).
 
@@ -320,7 +1172,7 @@ A caveat is that other than for swordtail and sheep, we relied on LD based genet
 
 We note further that although the peak in recombination rate at these features in swordtail fish appears to be less prominent than in dog or birds, quantitative comparisons of different species are difficult because these maps differ in their resolution.
 
-## Native chip-seq of X. birchmanni testis and liver tissue
+### Native chip-seq of X. birchmanni testis and liver tissue
 
 Whole testis and liver were dissected from two X. birchmanni adults and stored in HypoThermosol FRS (BioLife Solutions, Bothell, WA) buffer on ice until processing. Native chromatin ChIP was performed as described previously (Markenscoff-Papadimitriou et al., 2014). Briefly, tissue was homogenized and lysed; the lysate was spun through a sucrose cushion (to pellet nuclei). Nuclei were resuspended in 500 ul MNase digestion buffer and digested with 1 unit of micrococcal nuclease (MNase, Sigma N5386, St. Louis, MO) for 2 min at 37 C, then inactivated with 20 ul 0.5M EDTA and chilled on ice. The first soluble chromatin fraction was recovered by spinning for 10 min at 10,000 rcf at 4C and collecting the supernatant. To isolate the second soluble chromatin fraction, the pellet was resuspended in 500 µl dialysis buffer, rotated overnight at 4 C, then centrifuged for 10 min at 10,000 rcf at 4 C to pellet insoluble material. The digestion quality of each fraction was evaluated on an agarose gel. The two soluble fractions were combined for chromatin immunoprecipitation with 1 µg of H3K4me3 antibody (Millipore 04–745, Billerica, MA); 1/10 vol was retained as an input control. Antibody was bound to the remaining chromatin overnight while rotating at 4 C. The next day blocked Protein A and Protein G beads were added, and rotated for 3 hr. The bound beads were then washed a total of 7 times with chilled wash buffers and immunoprecipitated chromatin was eluted in elution buffer for 30 min at 37 C and cleaned up with ChIP DNA Clean and Concentrator kit (Zymo Research, Irvine, CA). Libraries were prepared for sequencing using the NuGEN ultralow library prep kit (NuGEN, San Carlos, CA) following manufacturer’s instructions and sequenced on an Illumina HiSeq 2500 at Hudson Alpha to collect 10.3–10.5 and 12.2–14.5 paired-end 50 bp reads for pull-down and input samples respectively.
 

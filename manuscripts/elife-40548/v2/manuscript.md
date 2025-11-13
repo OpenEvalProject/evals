@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.40548.001 Signal transduction at vertebrate excitatory synapses involves the rapid activation of AMPA (α-amino-3-hydroxy-5-methyl-4-isoxazole propionate) receptors, glutamate-gated ion channels whose four subunits assemble as a dimer-of-dimers. Technical advances in cryo-electron microscopy brought a slew of full-length structures of AMPA receptors, on their own and in combination with auxiliary subunits. These structures indicate that dimers might undergo substantial lateral motions during gating, opening up the extracellular layer along the central twofold symmetry axis. We used bifunctional methanethiosulfonate cross-linkers to calibrate the conformations found in functional AMPA receptors in the presence and absence of the auxiliary subunit Stargazin. Our data indicate that extracellular layer of AMPA receptors can get trapped in stable, opened-up conformations, especially upon long exposures to glutamate. In contrast, Stargazin limits this conformational flexibility. Thus, under synaptic conditions, where brief glutamate exposures and the presence of auxiliary proteins dominate, extracellular domains of AMPA receptors likely stay compact during gating.
+Signal transduction at vertebrate excitatory synapses involves the rapid activation of AMPA (α-amino-3-hydroxy-5-methyl-4-isoxazole propionate) receptors, glutamate-gated ion channels whose four subunits assemble as a dimer-of-dimers. Technical advances in cryo-electron microscopy brought a slew of full-length structures of AMPA receptors, on their own and in combination with auxiliary subunits. These structures indicate that dimers might undergo substantial lateral motions during gating, opening up the extracellular layer along the central twofold symmetry axis. We used bifunctional methanethiosulfonate cross-linkers to calibrate the conformations found in functional AMPA receptors in the presence and absence of the auxiliary subunit Stargazin. Our data indicate that extracellular layer of AMPA receptors can get trapped in stable, opened-up conformations, especially upon long exposures to glutamate. In contrast, Stargazin limits this conformational flexibility. Thus, under synaptic conditions, where brief glutamate exposures and the presence of auxiliary proteins dominate, extracellular domains of AMPA receptors likely stay compact during gating.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Our results suggest that the more opened-up a given conformation of the extracel
 
 ## Results
 
-## The LBD layer opens up in desensitized AMPA receptors
+### The LBD layer opens up in desensitized AMPA receptors
 
 The rupture of the LBD intra-dimer interface is a structural hallmark of AMPA receptor desensitization, as shown by biophysical studies based on the structures of isolated ligand binding domains (Sun et al., 2002; Armstrong et al., 2006). Several cryo-electron microscopy (cryo-EM) structures of full-length receptors (Nakagawa et al., 2005; Dürr et al., 2014; Meyerson et al., 2014), such as the one shown in Figure 1A, suggest that desensitization might involve further rearrangements of the ligand-binding domains, including movement of the two LBD dimers away from the central twofold axis of symmetry and an even more substantial ‘opening’ of the ATD-layer parallel to the membrane plane.
 
@@ -48,6 +48,22 @@ The ability of the cross-linkers of different lengths to access the inter-dimer 
 Based on the structural models of homomeric, full-length GluA2 receptors, we identified positions 665 and 666 (in the loop connecting α-helices F and G in the LBDs) as best positioned to follow separation of the LBD dimers (Figure 1A–C). The presumptive geometries of the sulfhydryl groups (SG) for cysteine mutants at these sites, in the agonist bound states of GluA2 receptor (with and without auxiliary subunits) are shown in Figure 1C. The structure of the desensitized GluA2 receptor (EMDB: 2688, Figure 1A) is not detailed enough to measure residue distances, but the equivalent residues are 21 Å apart in homologous kainate receptors (PDB: 5KUF; Meyerson et al., 2016). Based on these structural data, all six bis-MTS cross-linkers should be able to modulate desensitized V666C and A665C receptors by preventing engineered Cys at both sites from reaching their full separation in the desensitized state, in the absence of auxiliary subunits. Given the distances in published structures, one might expect M10M to stabilize active V666C receptors in the absence of auxiliary subunit Stargazin and M8M in its presence (Figure 1C–D).
 
 As shown in Figure 2B and D, bis-MTS cross-linkers M1M to M10M all caused strong reduction of the peak current in V666C mutant when applied in the desensitized state. To quantify this effect, the peak current was measured from the control pulses before (Ipeak pre-trap, four pulses) and after the 1 min application (trap) of the cross-linker (Ipeak post-trap, second control pulse after the trap, arrows in Figure 2A–C). For each patch, the ratio of Ipeak post-trap over Ipeak pre-trap was determined and plotted as shown in Figure 2D–E.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig2-v2.jpg)
+
+**Figure 2.:** (A) Control recording of wild-type (WT) GluA2 receptors in response to a trapping protocol. Movements of the piezo reflecting the solution exchange are shown in thin, black lines above the current trace. Composition of the solutions is indicated in thick lines above the piezo trace. Downward ticks are 200 ms control jumps from DTT (1 mM) to DTT and glutamate (Glu, 10 mM). Four pre-trap control pulses were followed by a 1 min long trapping pulse (red line) in Glu (10 mM) and M3M (1 μM). After the trapping pulse, the patch was exposed to 10 post-trap control pulses. The first post-trap pulse gives no response because receptors are desensitized (for details, see Materials and methods). (B) Same as in (A), but for V666C mutant. The top two recordings are from the same patch: in the first trace, V666C receptors were exposed only to Glu. Trapping of the same patch in Glu and M1M (1 μM), results in pronounced peak current reduction, which partly recovered with τrecovery = 30 ± 7 s, n = 5 (grey dots; post-trap control pulses extended to 30 for fit). The bottom trace is a different patch trapped in bMTSp (1 μM), showing even stronger peak current reduction without any recovery. (C) As in (B) but for the A665C mutant. The two traces are paired recordings of the same patch. Post-trap control pulses show that A665C cross-links to itself, but most of the current recovers within several seconds after the trap (grey dots; τrecovery = 3.3 ± 0.4 s, n = 17). If the same patch is now trapped in Glu and M8M (1 μM), the peak current reduction is much more pronounced and does not recover. (D) Summary of the trapping effects for WT (black) and V666C (red) for cross-linkers M1M (7 Å) to M10M (18 Å). Trapping effect after 1 min was calculated as the ratio of the post-trap and pre-trap peak current (arrows in A-C). MTSEA is a monofunctional reagent and ‘w/o MTS’ stands for ‘without MTS’ (Glu only, pooled for all experiments). Dashed line indicates no effect. For peak current reduction in a bis-MTS vs. w/o MTS (pooled), p < 10−7, for all cross-linkers. (E) Same as in (D), but for A665C (red) in cross-linkers M3M (9 Å) to M10M (18 Å). A665C mutant in the presence and absence of an MTS cross-linker resulted in p ≤ 0.02, depending on the cross-linker. For statistics vs. WT and between different bis-MTS, see Figure 2—source data 1. (F) Trapping time for V666C receptors in M3M, M6M and M10M. The 1-min trapping protocol was repeated up to six times, resulting in a cumulative exposure of the patch to a bis-MTS of up to 6 min. The data were fit with a monoexponential for each cross-linker (τ indicated in brackets). (G) Trapping profile of desensitized V666C receptors shows the effect of each cross-linker vs. its length, in the first minute of exposure. The data were fit with a parabola (red line): f(x) = K0 + K1*(x – K2)2 (for details, see Materials and methods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distances between sulfhydryl groups of GluA2 S662C and I664C residues in the respective full-length cryo-EM structures (PDB accession codes in capitals). Color-coding as in Figure 1. (B) Summary of trapping effects for cross-linkers M3M-M10M for S662C mutant compared with WT. WT data are the same as in Figure 2D–E. Trapping effect was measured as a ratio of the peak current post and pre-trap as described in Materials and methods. Dashed line indicates no effect. (D) Same as in (C), but for I664C mutant.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Position of the K493C mutant in a full-length GluA2 receptor (PDB: 3 KG). Subunits are color-coded as in Figure 1 and Cα atoms of K493C are shown as spheres. Top-down view of the LBDs shows intra-dimer position of the mutation. (B) Effects of bis-MTS cross-linkers M1M-M10M on peak currents (black) and steady-state currents (red) of K493C mutant. Trapping effects are shown as a ratio of averaged post-trap over averaged pre-trap currents (encircled in (C)). Amplitude of the post-trap current was determined once the steady-state levels were reached, which in some patches took >1 min of exposure to bis-MTS. Dashed line indicates no effect. (C) Current traces of K493C receptors during trapping with various bis-MTS cross-linkers. Legend is the same as in Figure 2A–C. Baseline is indicated as a black, dashed line at the bottom of each trace. Note current increase during the cross-linker application (thick, red line). (D) Zooms of encircled pre- and post-trap control pulses from traces in (C).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Extracellular domains of an GluA2 receptor (subunits color-coded as in Figure 1), with SG atoms of wild-type, free cysteines shown as magenta spheres, of A665C mutant as cyan and of V666C as orange spheres. (B) Plot summarizing size of the trapping effect vs. absolute peak current in the patch for M3M (red), M6M (green), M8M (blue) and M10M (black) cross-linkers. Solid lines are linear regression fits with the resulting R2 indicated in brackets.
 
 For the V666C mutant, bis-MTS cross-linkers from 7 to 15 Å in length (M1M-M8M; 1 µM), inhibited ~90% of the peak current in the patch after a 1-min application (Figure 2—source data 1). The longest (M10M) cross-linker was the slowest one to act (Figure 2F), leading to less inhibition (~70%) in the first minute of exposure. The reduction was less pronounced for A665C mutant for all cross-linkers (~50%, Figure 2E and Figure 2—source data 1).
 
@@ -69,23 +85,39 @@ Next, we tested if the cross-linkers specifically target introduced cysteines. W
 
 We also considered the possibility that bis-MTS cross-linkers might be spuriously cross-linking to wild-type cysteines on the receptor or forming inter-receptor cross-links (Figure 2—figure supplement 3A). If this were the case, the peak current reduction effect would be expected to scale with the number of the receptors in the membrane, that is peak current, but no such correlation was found (Figure 2—figure supplement 3B). In addition, longer cross-linkers would be expected to be more efficient in forging inter-receptor cross-links, but we found that the longest cross-linker, M10M, was the slowest to react on desensitized AMPA receptors (Figure 2F). The absence of the strong peak current reduction in the WT receptors also speaks against the bis-MTS cross-linkers interacting with native cysteine residues. These results led us to conclude that the bis-MTS cross-linkers can cross-link cysteines introduced at the LBD inter-dimer interface (V666C).
 
-## Cross-linked desensitized states are highly stable
+### Cross-linked desensitized states are highly stable
 
 Upon establishing specific and strong reduction of the peak current in desensitizing V666C receptors by the bis-MTS cross-linkers, we next sought to examine the stability of trapped states. The more stable the trapped state, the longer we would expect that it takes for trapping effects to reverse, and vice versa. The fastest recovery after trapping was observed with M1M (τ = 30 ± 7 s, n = 5) and the time constant of the peak current recovery could be measured by directly fitting the peak current of the post-trap control pulses (grey dots in Figure 2B). With longer bis-MTS cross-linkers, the recovery time increased to minutes, making direct measurements of the recovery time from post-trap control pulses impractical. Instead, the experimental design was adjusted to allow measurements of long recovery times as described in Materials and methods and Figure 4. After the receptors were trapped with M3M for 1 min, the peak current in the patch did recover, but very slowly, taking over 10 min (600 applications of Glu) to reach the pre-trapping levels. With longer cross-linkers, the peak current was essentially irreversible over the timescales we could measure (20 min; Figure 4D–G). The progressive inability of the receptors to recover from trapping with longer cross-linkers indicates increasingly stable trapped states corresponding to greater separation of the cross-linked subunits in the desensitized state (Figure 4G–H). Desensitized AMPA receptors with a disulphide bridge formed between the two V666C residues at inter-dimer interface fit in well with this trend, recovering in seconds following 100 s exposure to the oxidizing agent CuPhen (Figure 4H). Multiple stable desensitized states trapped by bis-MTS are a possible explanation for the low-resolution cryo-EM structures of desensitized AMPA receptors in the absence of auxiliary subunits (Meyerson et al., 2014; Dürr et al., 2014).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig4-v2.jpg)
+
+**Figure 4.:** (A) To obtain a stable baseline response to glutamate, we first repeated brief glutamate applications in reducing conditions (1 mM DTT). In the given example, we gave 17 pulses (100 ms, 1 Hz). (B) In the following step, the patch was exposed to 1 μM cross-linker (here M3M) and 10 mM Glu for 1 min, with control pulses before and after the trap. (C) After the trapping protocol, the patch was again exposed to fast, reducing Glu jumps like in (A) in order to follow recovery of the response. In this example, we could record 1230 consecutive episodes (~20 min) and obtain almost complete recovery. Note the difference between the current amplitude in the 1st episode (grey) and the 1230th episode (red). The recovery of the patch current (Ipeak) in typical experiments for different cross-linkers is plotted in panels D - F (panel E is the same patch as in panels A - C). Black dots show the responses before the trap and red dots the peak current after the trap. The gap in red dots in (D) represents a switch between recording protocols. (G) Summary of the peak current recovery for different cross-linkers. The percentage of recovered current is the ratio of the peak currents recorded 3–10 min after the trap to the peak current before trapping. Dashed, red line denotes a limit after which no recovery of the current could be measured within 10 min after the trap. (H) Plot of recovery time from trapped desensitized states (as described above and in Materials and methods) vs. the inter-dimer separation at position V666C in the LBD layer. The first data point indicates recovery from V666C disulphide bridges formed in desensitized state.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Increasing the concentraion of the reducing agent DTT from 1 to 5 mM during control pulses did not result in consistent increase in recovery of the peak current after trapping in 1 μM M6M. Recovery experiment was the same as described in Figure 4A–C, but with 5 mM DTT in the control pulses (n = 6 and n = 10 for 1 and 5 mM DTT, respectively). The percentage of recovered peak current was determined as the ratio of the peak current 3–10 min after the trap over the peak current just before the trap.
+
 To ensure that the lack of recovery was not due to a limited reducing capacity, we tested a higher concentration of the reducing agent DTT (5 mM instead of 1 mM). Stronger reducing conditions did not consistently promote recovery of V666C receptors trapped by a long cross-linker M6M (12 Å; p = 0.3, Figure 4—figure supplement 1).
 
-## Activation limits conformational heterogeneity of the LBD layer
+### Activation limits conformational heterogeneity of the LBD layer
 
 We next investigated if the extracellular layer of activated V666C receptors is also accessible to a similarly wide range of bis-MTS cross-linkers. According to the cryo-EM structure of AMPA receptor in complex with glutamate and a desensitization blocker (Meyerson et al., 2014) (Figure 1C), V666C residues are 19 Å apart and therefore we reasoned that all six cross-linkers should restrain the receptor with M10M (18 Å) expected to stabilize the active conformation.
 
 To maintain the active state, we blocked desensitization with cyclothiazide (CTZ, 100 μM). As shown in Figure 5, block of desensitization reduced inhibition by bis-MTS cross-linkers in the first minute of exposure (see Figure 5 – source data 1for statistics). Current inhibition for every cross-linker in the presence and absence of desensitization is shown in Figure 5B. With M1M, about 15% of V666C receptors recovered from inhibition with a time constant of τ = 7.1 ± 1 s, n = 4, leading to the final inhibition of 0.65 ± 0.02, n = 12 (not shown). For M3M, the recovery was still faster with τ = 1.98 ± 0.2 s, n = 8 (grey dots in Figure 5A), with about 15% the receptors recovering and leading to the final inhibition of 0.53 ± 0.03, n = 9. The fast recovery indicates that with dimer separation of about 9 Å, active receptors were trapped in an unstable, stereochemically strained state. Notably, the SG of V666C are 9 Å apart in a structure solved with the partial agonist NOW, which may represent a pre-open state (Yelshanskaya et al., 2014).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig5-v2.jpg)
+
+**Figure 5.:** (A) Current traces of trapping active V666C receptors. Cyclothiazide (CTZ) was included at 100 μM throughout the experiment to block desensitization. The duration of the trapping pulse is indicated in green. For M3M, gray dots indicate recovery from trap immediately after the trap (τ = 2.0 ± 0.2 s, n = 8). Post- and pre-trap current amplitude was determined from the control pulses (arrows). (B) Summary of bis-MTS trapping (1 min) of desensitizing (black) and non-desensitizing V666C receptors (green). Desensitizing data are from Figure 2E. p values compare the desensitizing and non-desensitizing condition. For p values comparing effects with and without bis-MTS and between the cross-linkers, see Figure 5—source data 1. Bis-MTS length is indicated in brackets; ‘w/o MTS’: without MTS. (C) Trapping profile of active V666C receptors after the first minute of exposure fit with parabola (green line), reaching the minimum (green triangle) at (13, 0.3). Trapping profile of desensitized receptors is shown as a red, dashed line (parabola with minimum at 11 Å, black triangle). (D) Dependence of the trapping time on the length of the bis-MTS. V666C receptors were exposed up to six times to the trapping protocol described in (A). Current reduction was determined after each 1-min application to a bis-MTS. Current decay was described with a monexponential fit (τ in brackets).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) To check whether M10M modifies active V666C receptors silently, a patch containing V666C receptors was first exposed to Glu (10 mM) and M10M (1 µM) in CTZ (100 µM) to block desensitization as shown in (1). Colors are as in Figures 2 and 5. The patch was then exposed to short (100 ms) jumps into 10 mM Glu (in reducing conditions), until CTZ unbound, as deduced from desensitization of the response (2). Freely desensitizing receptors in the same patch were then exposed again to M10M and glutamate, without CTZ (3). (B) Summary of effects on V666C receptors in active state (M10M + CTZ) and after CTZ unbinding (M10M-CTZ) (paired recordings). For comparison, the trapping of patches that were never treated with CTZ (M10M) is also plotted. Pre- and post-trap current amplitudes were measured from peaks indicated with arrows in (A). P value compares patches from which CTZ unbound and patches that were never treated with CTZ. (C) Time constant of deactivation (τOFF) was measured for active V666C receptors before (blue) and after (red) 1 min trap in M10M (from control pulses as indicated with a blue and red star in (A-1)). Normalized current decays were fit with a monoexponential. (D) Summary of τOFF as determined in (C).
+
 With desensitization blocked, AMPA receptors displayed a distinct trapping profile from that of desensitized receptors (Figure 5C). All cross-linkers modulated active state less than the desensitized in the first minute of exposure, apart from M8M (15 Å; Figure 5B) and a fraction of active receptors trapped with the shorter cross-linkers (M1M and M3M) recovered fast from the trap. The trapping profile against linker length was sharper, indicative of less conformational heterogeneity. At 12–15 Å (bMTSp, M6M and M8M), active receptors were trapped most effectively and without fast recovery; at 18 Å (M10M) the extent of trapping decreased (Figure 5—source data 1). This places the preferred V666C sulfhydryl separation in the active state around 15 Å, somewhat closer than 19 Å obtained in the cryo-EM structure of active GluA2 (Figure 1C). The description of the trapping profile by a parabola (with minimum at 13 Å) was not as good as for the desensitized condition, with the profound trapping by M8M being underestimated.
 
 The generally reduced inhibition of active receptors, compared to desensitized ones, led us to investigate the possibility that bis-MTS reagents modify non-desensitizing V666C receptors in other ways than current amplitude reduction. We measured the rate of receptor deactivation before and after the trap in M10M in the presence of desensitization blocker CTZ and found no difference (Figure 5—figure supplement 1C–D, τpre-trap = 1.7 ms ± 0.2, τpost-trap = 1.6 ± 0.2 ms, n = 8, p = 0.05 (paired randomization test)). We considered the possibility that non-desensitizing (CTZ bound) receptors were modified by M10M in a functionally silent manner. We tested this scenario with the following experiment: a patch with V666C receptors was first trapped in M10M and CTZ; CTZ was then washed-out of the patch until V666C receptors were able to desensitize again freely (Figure 5—figure supplement 1A (2)). After this, we exposed receptors to M10M and glutamate (Figure 5—figure supplement 1A (3)). If non-desensitizing V666C receptors had been silently modified by M10M, then a fraction of the receptors should have been protected resulting in the reduced sensitivity to further trapping by M10M. V666C receptors initially exposed to M10M in the presence of CTZ were modified to the same extent as naïve receptors (Ipeak post-trap/Ipeak pre-trap for V666C initially trapped in CTZ: 0.23 ± 0.04, n = 6 and for V666C never trapped in CTZ: 0.30 ± 0.03, n = 16, p = 0.07; Figure 5—figure supplement 1B). Taken together, these results strongly suggest that non-desensitizing V666C receptors were not silently modified by M10M. Instead, the reduced inhibition of active receptors reflected state-dependent protection from modification. The effect of M10M was inhibitory rather than potentiating, despite its length (18 Å) matching closely the predicted V666C separation of 19 Å (Figure 1C).
 
-## Auxiliary subunits do not alter the geometry of desensitized receptors
+### Auxiliary subunits do not alter the geometry of desensitized receptors
 
 Trapping with bis-MTS cross-linkers so far indicated more conformational flexibility of the LBD layer in desensitized than activated AMPA receptors. However, synaptic AMPA receptors are rarely expressed alone and are instead associated with various auxiliary proteins that re-define their kinetic properties (Schwenk et al., 2012; Jackson and Nicoll, 2011). We therefore wondered if the presence of auxiliary subunits, such as Stargazin (Stg), could affect conformational flexibility of AMPA receptors.
 
@@ -93,11 +125,19 @@ Recently, cryo-EM structures of AMPA receptors in complex with auxiliary subunit
 
 To test this hypothesis, we repeated the trapping experiments on complexes of AMPA receptors with Stg (Figure 6). GluA2 and Stg were co-expressed and association of complexes was assessed by measuring the ratio of kainate current over glutamate current (KA/Glu). The relative efficacy of the partial agonist kainate is known to be higher for GluA2-Stg complexes than for GluA2 alone, making it a good marker of GluA2-Stg association (Tomita et al., 2005; Shi et al., 2009). After establishing formation of the GluA2 V666C-Stg complexes in the patch, we proceeded with the trapping protocol that exposed complexes to glutamate and a bis-MTS cross-linker (1 μM) for 1 min (Figure 6A–B), as described previously. No blocker of desensitization was added and the receptors were allowed to desensitize freely. Stargazin reduces desensitization of AMPA receptors so the crosslinking represents trapping across a mixture of active and desensitized states.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig6-v2.jpg)
+
+**Figure 6.:** (A) Current traces of V666C trapping in M3M, without (top) and with Stargazin (Stg; bottom). Legend is the same as in Figure 2, with a trapping pulse shown here in orange. (B) Same as in (A), but for M10M. (C) Trapping effects for V666C without (black) and with Stg (orange). Post- and pre-trap peak current was determined from the control pulses (arrows in (A) and (B)). Data without Stg are the same as in Figure 2D. p values compare the effects of the respective cross-linker with and without Stg. For statistics vs. w/o MTS and between cross-linkers, see Figure 6—source data 1. (D) Trapping profile of desensitizing V666C + Stg complexes. The data were fit with a parabola (orange line); the fit reaches minimum (orange triangle) at (11, 0.3). Trapping profile of desensitized receptors without Stg is shown as red, dashed line (parabola with minimum at (11, 0.1); black tringle). (E) The kainate/glutamate (KA/Glu) peak current ratio was determined for each patch before and after trapping with a bis-MTS (similar to the experimental design in Figure 3A–C with 1 mM KA and 10 mM Glu in 1 mM DTT). V666C + Stg KA/Glu measurements before and after trap shown here are paired recordings, pooled for various bis-MTS cross-linkers.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Trapping speed of M6M for active V666C receptors (empty circles) and desensitized in the presence (black diamonds) and absence (black circles) of Stargazin (Stg). Receptors were exposed to 1 μM M6M for 1 min intervals (as described Figure 2F and Materials and methods), with up to six sequential applications. Current reduction was determined after each 1-min exposure, averaged across patches and plotted here vs. cumulative trapping time. Current decay was monoexponential in every case, with τ indicated in brackets. (B) Same as in (A), but for M10M. (C) Trapping speed of M1M for active V666C receptors in the presence (black diamonds) and absence (empty circles) of Stg. (D) Same as in (C) but for M8M.
+
 The trapping results summarized in Figure 6C show that the presence of auxiliary subunit Stg apparently protected V666C receptors from cross-linking by bis-MTS. Indeed, following trapping, a robust response was preserved, and could not be overcome by longer trapping intervals (Figure 6—figure supplement 1A–B). Based on published structures, the decrease in the trapping extent was expected for M10M (Figure 6C and Figure 6—source data 1), but not for shorter bis-MTS. This result indicates the presence of alternative conformations that have a more compact extracellular layer or that otherwise render cysteines inaccessible to modulation by bis-MTS.
 
 To test whether bis-MTS cross-linkers perhaps act on non-complexed V666C receptors only, without affecting V666C-Stg complexes, we measured the KA/Glu current ratio before and after the bis-MTS trap for a series of patches. We reasoned that if only non-complexed V666C receptors were being modified, the glutamate-activated current should reduce, but the kainate current (which is almost entirely carried by GluA2-Stg complexes) should not. Therefore, preferential trapping of non-complexed V666C mutants should lead to an increase in KA/Glu ratio. As shown in Figure 6E, the KA/Glu ratio was not affected (before trap: 0.46 ± 0.03; after trap: 0.43 ± 0.02, n = 13; p = 0.2, paired randomization test), indicating V666C-Stg complexes were being modified by bis-MTS cross-linkers.
 
-## Stargazin maintains active receptors in a compact arrangement
+### Stargazin maintains active receptors in a compact arrangement
 
 The trapping profile of V666C-Stg complexes (orange in Figure 6D) reflects the partial protection from trapping in the presence of Stg for all cross-linker lengths, but its overall shape is practically superposable onto the trapping profile of desensitized V666C receptors without Stg (red, dashed line in Figure 6D). Strikingly, the two curves reach their minimum at the same point of 11 Å (triangles in Figure 6D) and have identical curvature. This indistinguishable length dependence indicated that the trapping of V666C-Stg complexes came primarily from trapping desensitized receptors, and that the active complexes of V666C-Stg might be untouched by bis-MTS cross-linkers.
 
@@ -121,6 +161,14 @@ All bis-MTS cross-linkers, when applied to the mutants at the inter-dimer LBD in
 
 In Figure 8A–B, the trapping profiles of V666C receptors with the available structural models of GluA2 in the equivalent condition are compared. The shallow trapping profile of desensitized AMPA receptors indicates a structural ensemble of conformations broadly in agreement with multiple desensitized states (Meyerson et al., 2014; Robert and Howe, 2003). Even though the LBD dimer-dimer separation observed in the model (> 18 Å, EMDB: 2688) was not tested with the bis-MTS cross-linker of the corresponding length, extrapolation of the trapping profile indicates such conformations are available to desensitized AMPA receptors. However, the longest cross-linker (18 Å) was the slowest one to act on desensitized receptors, indicating that this conformation, and more ‘open’ ones, are not readily available for cross-linking, but slowly get populated during prolonged exposures to agonist. The longest cross-linker, M10M, was also the slowest one to act in the active state. There, the strongest cross-linking effect was achieved by the 12–15 Å-long bis-MTS (green in Figure 8B). This suggests inter-dimer V666C residues are closer together in the active state than 19 Å, predicted by the structural model (PDB: 4UQ6). The extracellular layer was also seen in an ‘opened’ arrangement in NMDA receptors (Zhu et al., 2016), with the caveat that these structures were antagonist-bound and therefore not equivalent to our observations.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig8-v2.jpg)
+
+**Figure 8.:** (A) Trapping profiles for V666C in desensitized states, without (red) and with (orange) Stargazin (Stg). Solid lines are fit parabola, with local minima indicated as triangles. The right handside of the x-axis is marked as > 18 Å, as the resolution of the only available desensitized structure without auxiliary subunits is too low to measure residue distances. Vertical, dashed, black lines indicate V666C sulfhydryl separation in the respective structure (PDB accession codes in brackets). Names of structures are color-coded same as the trapping profiles. (B) Same as in (A), but for active state without (green) and with Stg (orange). 4YU0 is a structure of soluble, isolated LBDs. Quis: quisqualate (full agonist), RR: (R, R) −2b (Kaae et al., 2007) and LY: LY451646 (both desensitization blockers). (C) Schematic summarizing the bis-MTS cross-linking results. Color-code same as in Figure 1; ATDs are omitted. Black spheres represent bound glutamate. Upper row: in the absence of Stg, GluA2 receptors access ‘open’ LBD conformation (black arrows) upon long exposures to agonist. Bottom row: presence of Stg limits ‘opening’ of the LBD layer even at longer agonist exposures.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/40548/elife-40548-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** ‘Native’ column represents apparent conformations of the LBD layer when it is not crosslinked. Muliple overlaid tiles indicate mulitple available positions of an LBD..
+
 The presence of Stg lead to universal attenuation of the cross-linking effect, for all bis-MTS lengths and both functional states, desensitized and active (orange and blue in Figure 8A and B, respectively). The longest crosslinker (M10M) produced the least trapping, even following long exposures (~3 min). Thus, the LBD layer could not be modulated by bis-MTS cross-linkers for majority of these receptors. This result chimes with structural and FRET experiments (Shaikh et al., 2016), where the presence of Stg made the LBD and ATD layer more compact. In the desensitized state, the shape of the trapping profile is the same, with or without Stg (Figure 8A), with both parabola reaching a minimum point at 11 Å (triangles in Figure 8A). This is in excellent agreement with the structure of desensitized GluA2-Stg complex (PDB: 5VOV). In the active state with Stg, our results deviate from the available full-length active structures. Both short and long (7 or 15 Å) bis-MTS reagents failed to inhibit currents in the first minute of trapping, indicating more compact LBD arrangements over this timescale than obtained in the structures. In other words, if structures can be obtained in a time-resolved manner in milliseconds following glutamate exposure (Unwin, 1995), our results suggest they should be more compact than structures solved to date.
 
 The protection from trapping in our cross-linking experiments most likely has multiple origins. Although ‘protection’ could result from a persistent long-distance separation, outside the range of the crosslinkers, several observations and common sense speak against this possibility. First, we previously showed that active receptors could be trapped by zinc bridges in compact arrangements (Baranovic et al., 2016). Second, the long distance would have to be maintained throughout the exposure, because any transit between compact and dilated arrangements must pass through intermediate separations, allowing crosslinkers to span the gap, assuming extremely rapid reactivity of the bis-MTS compounds (Kenyon and Bruice, 1977). Our reaction rates are close to the maximum expected (105 M–1s–1; Liu et al., 1997). Third, even the most dilated structures are in the range of crosslinker lengths that we used. Fourth, the mixed trapping condition for GluA2-Stg complexes in the absence of CTZ apparently supports desensitized state trapping over a wide range of geometries but no additional active state trapping. We cannot discount specific, state-dependent protection from crosslinking, produced by a unique, closed-cleft LBD conformation provoked by Stg in the active state, but it seems to us unlikely. We reasoned that protection from crosslinking could, at least partly, be accounted for by reduced accessibility of cysteine residues during exposure to bis-MTS. Docking data in Figure 7D–E show that conformations which reduce the accessibility of the V666C side chains are indeed accessible to the active LBDs. These arrangements are more compact than the available structures of the full-length receptor in the active state (Chen et al., 2017; Twomey et al., 2017a).
@@ -133,17 +181,104 @@ Long agonist exposures of minutes to hours are standard in structural biology ex
 
 ## Materials and methods
 
-## Molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>RRID: CVCL_0045</td>
+      <td>ACC No. 305</td>
+      <td>Obtained from Leibniz Forschungsinstitut DSMZ (Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH, Germany).</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>GluA2; GluA2flip</td>
+      <td>Other</td>
+      <td>ID_GenBank: M38061.1</td>
+      <td>Gift from Mark Mayer (NIH); vector: pRK5 with IRES eGFP, unedited (Q) at the pore site, signal peptide: 21 amino acid.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Stargazin; Stg</td>
+      <td>Other</td>
+      <td>ID_GenBank: NM_007583.2</td>
+      <td>Gift from Susumu Tomita; vector: pRK5 with IRES dsRed (dsRed_Max Addgene plasmid: 21718).</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleobond Xtra Midi EF</td>
+      <td>Macherey and Nagel</td>
+      <td>740420.5</td>
+      <td>Plasmid DNA preparation kit.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bifunctional methanethiosulfonate cross-linkers; bis-MTS</td>
+      <td>Toronto Research Chemicals, North York, Canada</td>
+      <td>M1M: M258800; M3M: P760350; M6M: H294250; bMTSp: P193250; M8M: O235850; M10M: D210875</td>
+      <td>Obtained as powder, stock prepared in DMSO, used at final concentration of 1 μM or 50 μM, as indicated.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Monofunctional methanethiosulfonate linker; MTSEA</td>
+      <td>Toronto Research Chemicals, North York, Canada</td>
+      <td>MTSEA: A609150</td>
+      <td>Obtained as powder, stock prepared in DMSO, used at final concentration of 1 μM.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclothiazide; CTZ</td>
+      <td>Hello Bio, Bristol, UK</td>
+      <td>HB0221</td>
+      <td>Obtained as powder, stock prepared in DMSO, used at final concentration of 100 μM.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kainate; KA</td>
+      <td>Abcam plc, Cambridge, UK</td>
+      <td>ab120100</td>
+      <td>Obtained as powder, stock prepared in Ringer, used at final concentration of 1 mM.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Docking</td>
+      <td>Source: https://github.com/aplested/cystance (copy archived at https://github.com/elifesciences-publications/cystance); this paper (Plested, 2018)</td>
+      <td></td>
+      <td>Python script for PyMOL and CCP4.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Randomization test</td>
+      <td>Source: https://github.com /aplested/DC-Stats (copy archived at https://github.com/elifesciences-publications/DC-Stats);DC-Stats suite (Plested and Lape, 2018)</td>
+      <td></td>
+      <td>10^5 iterations performed for each test.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology
 
 In all experiments, the unedited (Q586) GluA2flip version of rat GluA2 gene was expressed from the pRK5 vector. Amino acid numbering refers to the mature receptor assuming a signal peptide of 21 amino acids in length. As a marker of transfection, eGFP was expressed from the same vector, downstream from an internal ribosomal entry sequence (IRES). Mouse Stargazin gene (a kind gift from Susumu Tomita) was expressed from a separate pRK8 vector containing IRES-dsRed (Carbone and Plested, 2016). All mutations were introduced by overlap PCR and confirmed by double-stranded sequencing.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 GluA2 constructs were expressed transiently in HEK293 cells using calcium-phosphate precipitation or PEI method as described previously (Baranovic et al., 2016; Riva et al., 2017). HEK293 cells were obtained from the Leibniz Forschungsinstitut DSMZ (Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH, Germany) ACC no. 305 (RRID: CVCL_0045) and tested negative for mycoplasma. Cells were maintained in MEM Eagle medium (PAN-Biotech GmbH, Aidenbach, Germany) supplemented with 10% (v/v) fetal bovine serum and antibiotics (penicillin (100 U/mL) and streptomycin (0.1 mg/mL; PAN-Biotech).
 
 For transfections, 2–3 μg of DNA was transfected per 35 mm dish and cells were washed after 6–8 hr. Recordings were performed 24–72 hr after the transfection at room temperature. For transfections with Stargazin, Stargazin DNA was co-transfected with GluA2 DNA at 2:1 mass ratio and after the transfection, cell medium was supplemented with 40 μM NBQX to reduce Stargazin-induced cytotoxicity.
 
-## Solutions
+### Solutions
 
 Chemicals were obtained from Sigma Aldrich (Munich, Germany), Abcam plc (Cambridge, UK) and Hello Bio (Bristol, UK). MTS compounds were obtained from Toronto Research Chemicals (North York, Canada).
 
@@ -151,7 +286,7 @@ The internal (pipette) solution for recordings without Stargazin contained (mM):
 
 All MTS compounds were obtained as powder. Although monofunctional MTS reagents are known to be highly reactive and unstable in aqueous solutions (Kenyon and Bruice, 1977), this information is lacking for bifunctional cross-linkers used in this study. Hence, we took special care to minimize exposure of bis-MTS compounds to oxidizing (aqueous) solutions (Takatsuka and Nikaido, 2010). The powder was dissolved in DMSO, aliquoted and kept on ice on the day of the experiment. Once a stable patch recording was obtained, an aliquot was dissolved in external solution to a final concentration of 1 μM and applied to the patch. This way, aqueous bis-MTS solutions were on average 2–3 min old at the moment of application. Each MTS stock was tested with GluA2 wild-type receptors and K493C receptors as negative and positive controls, respectively. The final MTS concentration of 1 μM was chosen based on previous work (Sobolevsky et al., 2003; Yelshansky et al., 2004). We avoided higher concentrations of MTS compounds due to potential cross-reactivity and chaining effects.
 
-## Patch clamp electrophysiology
+### Patch clamp electrophysiology
 
 Ligands and drugs were applied to outside-out patches via a custom made 4-barrel glass (VitroCom, USA) mounted to a linear piezo–electric wafer (PiezoMove P-601.4, PI, Germany) (Lau et al., 2013). Two barrels were perfused with control solutions and the third barrel with the trapping solution, as described below. All patches were voltage clamped at −40 mV unless stated otherwise. Currents were low-pass filtered at 10 kHz (−3 dB cut-off, eight-pole Bessel filter) using an Axopatch200B amplifier (Molecular Devices, USA) and acquired with AxographX software (Axograph Scientific, Australia, RRID:SCR_014284) at 20 kHz sampling rate via Instrutech ITC-18 digitizer (HEKA, Germany). Current traces were digitally filtered at 1 kHz (low-pass) for presentation in figures.
 
@@ -159,9 +294,13 @@ To assess the effect of different bifunctional cross-linkers on AMPA receptors, 
 
 For recordings of GluA2 receptors co-expressed with auxiliary subunit Stargazin, care must be taken that GluA2 receptors are indeed associating with Stargazin. One strategy to minimize the presence of lone V666C receptors relies on the relief of spermine (polyamine) block at positive voltages imparted by complexation with Stargazin (Carbone and Plested, 2016). Although we have included spermine in the pipette solution and measured relieve of block for each patch, we did not perform recordings at positive voltages, as the currents were not stable enough during minutes-long trapping protocols. Instead, a change in kainate efficacy was used as a marker of GluA2-Stargazin association as described in the text.
 
-## Analysis
+### Analysis
 
-Trapping effects were quantified as the ratio of the average current after the trap (determined from the second post-trap control pulse) and average current before the trap (determined from the four pre-trap control pulses; arrows in Figure 2A–C):Activefraction=IposttrapIpretrap
+Trapping effects were quantified as the ratio of the average current after the trap (determined from the second post-trap control pulse) and average current before the trap (determined from the four pre-trap control pulses; arrows in Figure 2A–C):
+
+$$
+Activefraction=\frac{I_{posttrap}}{I_{pretrap}}
+$$
 
 In case of desensitizing receptors, peak current was measured and in the case of non-desensitizing receptors, steady-state current.
 
@@ -169,9 +308,15 @@ The trapping time of each cross-linker (at 1 μM) was determined from cumulative
 
 To determine the rate of recovery from trapping by MTS cross-linkers, the number of post-trap control pulses was increased until full recovery was attained. An envelope of post-trap peak current responses was then created in Igor Pro and fit with a monoexponential. This approach was possible only for faster recovery rates, on the time scale of seconds, such as recovery of desensitized V666C receptors from trapping with M1M (Figures 2B and 4D) and from direct V666C sulfhydryl cross-links (Figure 4H) and recovery of active V666C receptors from trapping with M1M and M3M (Figure 5A). With longer bis-MTS cross-linkers, the recovery time increased from seconds to minutes, making direct measurements of the recovery time from post-trap control pulses impractical. Instead, the experimental design was re-adjusted to allow measurements of long recovery times as described in Figure 4A–C. In brief, peak current in the patch was initially recorded with 100 ms jumps into glutamate in control conditions until it stabilized. Then, a trapping protocol was performed as described above, with control pulses before and after the trap. After the trapping protocol, the current in the patch was again monitored, for about 10 min, with fast control jumps into glutamate in order to follow any potential recovery of the peak current. In this time period, desensitized V666C receptors managed to recover only from trapping by M1M and M3M (Figure 4D–G), in which case the recovery was fit with a monoexponential.
 
-Trapping profiles (Figures 2G and 6D) were fit with a parabola in Igor Pro:fx= K0+K1(x-K2)2where K1 defines the curvature, K0 the minimum effect and K2 the x value at the minimum. Data points were weighted by the standard error of the mean for the fit.
+Trapping profiles (Figures 2G and 6D) were fit with a parabola in Igor Pro:
 
-## Computational docking
+$$
+fx=K_{0}+K_{1}(x-K_{2})^{2}
+$$
+
+where K1 defines the curvature, K0 the minimum effect and K2 the x value at the minimum. Data points were weighted by the standard error of the mean for the fit.
+
+### Computational docking
 
 To investigate structures of the LBD tetramer that could preclude trapping by blocking access to the Cys666 SG moiety, we treated each dimer as a rigid body and subjected them to rotations and translations in the membrane plane. Python scripts (available at https://github.com/aplested/cystance; copy archived at https://github.com/elifesciences-publications/cystance) were written as a glue for molecular manipulations in PyMOL and CCP4 (RRID:SCR_007255) functions to measure geometry and exposure of the cysteine (AREAIMOL, NCONT (Winn et al., 2011)). For each run, trial arrangements that reduced Cys666 SG accessibility in subunit A whilst also keeping the dimers in close proximity (with minimal atom clashes) and maintaining physiologically plausible in-plane linker arrangements were retained as seeds for subsequent rounds, and the step size was reduced. Trial arrangements with more than 10 atom clashes (< 2.2 Å) were rejected. No refinement was done to eliminate spurious clashes from flexible surface residues. The optimization was ended when no further improvement was possible. Each search lasted about 5–10 min on a 2017 Macbook Pro.
 

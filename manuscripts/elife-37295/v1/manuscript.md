@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.37295.001 The functions performed by the concentric shells of multilayered dsRNA viruses require specific protein interactions that can be directly explored through their mechanical properties. We studied the stiffness, breaking force, critical strain and mechanical fatigue of individual Triple, Double and Single layered rotavirus (RV) particles. Our results, in combination with Finite Element simulations, demonstrate that the mechanics of the external layer provides the resistance needed to counteract the stringent conditions of extracellular media. Our experiments, in combination with electrostatic analyses, reveal a strong interaction between the two outer layers and how it is suppressed by the removal of calcium ions, a key step for transcription initiation. The intermediate layer presents weak hydrophobic interactions with the inner layer that allow the assembly and favor the conformational dynamics needed for transcription. Our work shows how the biophysical properties of the three shells are finely tuned to produce an infective RV virion.
+The functions performed by the concentric shells of multilayered dsRNA viruses require specific protein interactions that can be directly explored through their mechanical properties. We studied the stiffness, breaking force, critical strain and mechanical fatigue of individual Triple, Double and Single layered rotavirus (RV) particles. Our results, in combination with Finite Element simulations, demonstrate that the mechanics of the external layer provides the resistance needed to counteract the stringent conditions of extracellular media. Our experiments, in combination with electrostatic analyses, reveal a strong interaction between the two outer layers and how it is suppressed by the removal of calcium ions, a key step for transcription initiation. The intermediate layer presents weak hydrophobic interactions with the inner layer that allow the assembly and favor the conformational dynamics needed for transcription. Our work shows how the biophysical properties of the three shells are finely tuned to produce an infective RV virion.
 
 ## Introduction
 
@@ -33,49 +33,113 @@ Double-stranded RNA (dsRNA) viruses have a number of common challenges derived f
 
 RV, a major causative agent of severe dehydrating diarrhea in children under five years (GBD Diarrhoeal Diseases Collaborators, 2017), is a multilayered virus of clinical relevance and one of the main study models for the Reoviridae family. The RV infectious particle is a 100 nm non-enveloped triple-layered particle (TLP) composed of three concentric protein shells enclosing the dsRNA genome and the viral RNA polymerase and capping enzyme (Figure 1A) (Settembre et al., 2011). The inner layer is a T = 1 capsid formed by 60 asymmetric dimers of the VP2 protein (102 kDa) that surrounds the eleven dsRNA genomic segments associated with the RNA-dependent RNA-polymerase VP1 (125 kDa) and the RNA-capping enzyme VP3 (88 kDa) at the pentameric positions (Estrozi et al., 2013; Periz et al., 2013). This thin single-layered particle (SLP), an intermediate structure that is involved in the packing and replication of the viral genome, is surrounded by a thick T = 13 layer formed by 260 VP6 pear-shaped trimers (45 kDa) (Settembre et al., 2011; McClain et al., 2010) in the double-layered particle (DLP). This particle, which does not disassemble during the infection, constitutes the transcriptional machinery that initiates the core steps of the viral replication cycle once delivered in the host cell cytoplasm (Cohen et al., 1979; Bass et al., 1992; Lawton et al., 1997). The DLP is not infectious since it cannot recognize, bind to and penetrate the host target cell. These abilities are incorporated in the outer layer of the TLP formed by VP4 and VP7. The VP7 glycoprotein is organized as 260 Ca2+-stabilized trimers that cap and embrace through its N-terminal arm each VP6 trimer of the DLP (Settembre et al., 2011; Chen et al., 2009). Sixty spikes are anchored on the VP6 layer depressions that surround the pentameric positions and are clamped by the VP7 layer. The viral spike is formed by three copies of VP4 that must be proteolytically processed to VP5* and VP8* by trypsin-like proteases from the intestinal lumen or from within cells to generate a fully-infectious virion (Settembre et al., 2011; Estes et al., 1979; Estes et al., 1981; Clark et al., 1981). Interestingly, the assembly of the VP6 T = 13 layer on the 60 VP2 dimers (T = 1) that build the SLP is one of the best examples of symmetry mismatch, of which the consequences for virus particle stability are still not well understood. This mismatch is preserved in most reoviruses, and has been associated with the regulation of the polymerase activity (McClain et al., 2010). In contrast with the plethora of information obtained during 30 years of structural studies on the particle components (Trask et al., 2012), little is known about the mechanical properties of the RV particle layers, subviral particles and TLP, and their mutual influence in contributing to the virus stability along its cycle. Both the application (Rief et al., 1997; Perrino and Garcia, 2016) and measurement (Hua et al., 2002; Alsteens et al., 2017) of forces on single molecules are key methodologies to decipher the function of biomolecular systems. Specifically, the study of viral capsids by Atomic Force Microscopy (AFM) enables the exploration of physicochemical properties, such as mechanics and electrostatics, in liquid milieu by using a sharp tip attached to a cantilever to probe individual particles (Roos et al., 2010). Single indentation assay consists on deforming a virus particle with the AFM tip while recording the cantilever bending vs. the virus deformation to induce the virus breakage (Roos, 2018). The force-indentation curves (FIC) so obtained inform about the virus stiffness or spring constant (elasticity), breaking force and brittleness. AFM also allows applying repetitive loading cycles to individual viruses at low force (~100 pN) which results in mechanical fatigue experiments (Moreno-Madrid et al., 2017). AFM directly probed the existence of pressure (Kindt et al., 2001; Smith et al., 2001) in some phages (Evilevitch et al., 2011; Hernando-Pérez et al., 2012) that is used to translocate their genome into the host (González-Huici et al., 2004). In a similar way, it has been found that human adenovirus pressurizes during maturation, and that this pressure is related to the degree of condensation of the dsDNA of the viral minichromosome (Ortega-Esteban et al., 2015a; Ortega-Esteban et al., 2015b). In addition, the influence of both homologous (Mertens et al., 2015; Zeng et al., 2017a) and heterologous (Llauró et al., 2016a; Snijder et al., 2016) cargos have been explored in virus mechanics. The alteration of the capsid structure with maturation (Roos et al., 2012; Hernando-Pérez et al., 2014a), mutations (Castellanos et al., 2012; van Rosmalen et al., 2018) or cementing proteins (Hernando-Pérez et al., 2014b; Llauró et al., 2016b) also influences virus mechanics. However, these studies have been never applied to multilayered virus particles, which enable direct measurements of the inter-layer interactions magnitude. Here, we explore the mechanical properties of individual TLP, DLP and SLP particles by single indentation assay and probe their stability against mechanical fatigue. Our experiments, in combination with Finite Element (FE) analysis, the atomic structure of the layers and the calculation of the electrostatic properties of each particle, allow to probe and interpret the intra and interlayer interactions and relate them to their role during the virus replication cycle.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the mature RV TLP. Color code is detailed. (B) DLP and SLP generation from TLP. VP7 and VP5*/VP8* are disassembled from TLP in the presence of EDTA. High concentration of Ca2+ ions takes apart VP6 trimers to liberate SLP. (C–E) Coomassie blue-stained SDS-PAGE gels and negative staining electron microscopy of TLP (C), DLP (D) and SLP (E). Positions of rotavirus structural proteins (VP) are indicated. The question mark indicates the unknown position and structure of VP3. The bar represents 100 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cryo-electron micrograph of TLP. The bar represents 50 nm. The inset corresponds to a transverse section of the map. (B) Surface-shaded representation of the outer surface of TLP viewed along an icosahedral 2-fold axis. The surface is radially color-coded to represent VP8*/VP5* spikes in red, VP7 in yellow, VP6 in green and VP2 in green. The density is contoured at 1 σ above the mean. (C) Assessment of the resolution by FSC curve. For 0.5 and 0.3 FSC threshold the resolution is 14.2 and 12.6, respectively.
+
 ## Results
 
-## Purification and characterization of TLP, DLP and SLP
+### Purification and characterization of TLP, DLP and SLP
 
 Previous studies have shown that RV TLP can be converted to DLP by disassembling the outer VP4-VP7 layer with chelating agents such as ethylenediaminetetraacetic acid (EDTA) (Estes et al., 1979). Once purified, DLP can be converted to SLP by chaotropic agents such as CaCl2 (Figure 1B) (Bican et al., 1982). TLP were purified from infected cells, and DLP and SLP were produced and purified combining the above described treatments with several ultracentrifugation steps to remove the proteins of the disassembled layers. Homogeneous populations of TLP, DLP and SLP were obtained, as indicated by SDS-PAGE and negative staining electron microscopy analysis (Figure 1C–E). Spike polypeptides (VP5*/VP8*) and VP7 glycoprotein are totally removed in purified DLP (Figure 1D) while VP6 is absent in the isolated cores (Figure 1E).
 
-## AFM topography of TLP and RV subviral particles
+### AFM topography of TLP and RV subviral particles
 
 After the adsorption of particles on substrate, we used AFM in jumping mode (Ortega-Esteban et al., 2012) for the topographical characterization of individual particles in liquid. Our high resolution images (Figure 2) are compatible with the structures obtained from cryo-EM (Settembre et al., 2011; Zhang et al., 2008) and x-ray (McClain et al., 2010), where thousands and millions of particles are averaged, respectively. Spikes protruding from the TLP (Figure 2A) as well as the DLP pentameric and hexameric depressions (Figure 2B) are resolved. In contrast, SLP offers featureless structure (Figure 2C). Although the distinctive topography of TLP allows their unambiguous identification, they exhibit a broad distribution of height values (Figure 2D–E). This behavior is probably due to the number of spikes (Figure 2—figure supplement 1) present at the interface between the particles and the substrate surface and to the mode of how they influence the particle adsorption. The height data of TLP (Figure 2E, red) suggest two populations centered at ~74 and ~62 nm, represented by filled and empty symbols, respectively. We propose that these data correspond to the presence (red filled squares, Figure 2E) or absence (red empty squares, Figure 2E) of spikes at the particle-surface interface. In the first case the presence of spikes would prevent partially the contact between the VP7 layer and the substrate (Figure 2—figure supplement 2), thus precluding virus adsorption and deformation. However, when the VP7 layer directly rests on the surface, TLP collapse to an average height value of 62 nm (Figure 2) probably due to a strong VP7-surface interaction (Zeng et al., 2017a). In contrast, DLP and SLP present a narrower height distribution (Figure 2E) whose average values are compatible with the nominal values (70 nm for DLP and 55 nm for SLP), indicating a little deformation due to the adsorption on the surface of 6% and 2% for DLP and SLP respectively (Llauró et al., 2015; Zeng et al., 2017b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig2-v1.jpg)
+
+**Figure 2.:** (A–C) AFM images of TLP (A), DLP (B) and SLP (C). (D) Height profile of the TLP, DLP and SLP taken along the central part (indicated with arrows) of the particles shown in panels A-C. Dashed line indicates the height of the particle obtained at the VP7 layer. (E) Box plot of heights measured from single TLP [69.7 ± 6.1 nm (red, N = 129)], DLP [65.7 ± 2.8 nm (blue, N = 82)] and SLP [53.8 ± 0.9 nm (green, N = 71)]. The two different populations of TLP are indicated with filled and empty red squares (see main text). Height data are available from Figure 2—source data 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Gallery of AFM images of TLP presenting different spike occupancy from high (top left) to low (bottom right). The scale bar represents 40 nm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** VP2, VP6 and VP7 are depicted in green, blue and yellow colors, respectively. Regarding the nominal height of each particle (55 nm for SLP, 70 nm for DLP and 76 nm for TLP), the SLP suffers the lowest percentage of deformation (2%) after substrate adsorption. The substrate deforms the DLP by 6%. The TLP without spikes at the interface between the particle and the substrate (62 nm) undergoes the highest percentage of deformation (18%), suggesting a strong interaction of the VP7 layer and the HOPG. This high deformation is hugely reduced to 3% in the TLP with spikes present at the particle-substrate interface (74 nm).
+
 Although icosahedral symmetry imposition renders an ideal RV particle with 60 trimeric spikes (Figure 1A and Figure 1—figure supplement 1), previous studies have shown that some positions are unoccupied in the purified TLP (Chen and Ramig, 1992; Trask and Dormitzer, 2006; Rodríguez et al., 2014). To estimate the amount of spike protein in TLP, VP5* was quantified relative to protein VP6 (occupancy). Densitometric analysis of Coomassie-stained gels (Figure 1C) produced an occupancy of 52%. Cryo-EM analysis and three-dimensional reconstruction (3DR) of these TLP showed an equivalent occupancy (~50%) when the relative density of the spikes in the 3DR is determined using the VP2-VP6-VP7 shell density as a reference (Figure 1—figure supplement 1). This occupancy correlates with the different number of spikes detected in the AFM images of single TLP (Figure 2—figure supplement 1). Since lateral spikes are easily removed by the AFM tip (Video 1), we analyzed the upper ~1/3 region of the virus surface, where the spikes point upwards and present a maximum resistance to AFM imaging. Although we cannot ignore that the AFM tip could remove some spikes, we minimized this effect by using the first image obtained for each particle. Our AFM topographies, which uniquely allow for the first time the direct imaging of the individual spikes, provide a more realistic view of the RV virion as a distribution ranging from fully decorated to almost naked particles. (Figure 2 and Figure 2—figure supplement 1). We can directly observe an average occupancy of 35%, compatible with electrophoretic and cryo-EM bulk analysis results. These data support the in vitro recoating assays, demonstrating that an occupancy as low as 10% is enough to generate particles with high specific infectivity (Trask and Dormitzer, 2006).
 
-## Single indentation assay
+![Video 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-video1.mp4.jpg)
+
+**Video 1.:** This video corresponds to the particle of Figure 5A. White arrows indicate the line where the profiles have been obtained.
+
+### Single indentation assay
 
 In order to investigate the contribution of the different layers to the mechanical stability of the RV particle, systematic single indentation experiments of the different particles were performed (Figure 3) resulting in broken structures. In order to understand the nature of each particle breakage it is interesting to compare their topographies before and after fracture (Figure 3A–C), and to consider the average indentation curves for each type of structure (Figure 3D, strong colors). While TLP breaks into large fragments (Figure 3A, right), both DLP and SLP show circular deformations that can be attributed to the tip apex (Figure 3B–C, right). The average of TLP nanoindentation curves (Figure 3D, strong red) shows a linear regime that corresponds to the virus elastic deformation up to ~2.0 nm at ~2.1 nN, where the elastic limit is reached. Afterwards the structure yields plastically without breaking until 2.5 nN at 4.7 nm, during 2.7 nm (red double headed arrow, Figure 3D), where the downwards slope indicates fracture. The same reasoning applied to both DLP and SLP result in plastic deformations of ~13 nm and ~39 nm, respectively (blue and green double headed arrows, Figure 3D). Virus topographies and indentation assays indicate that while TLP undergoes a brittle (glass-like) fracture, both DLP and SLP experience ductile (rubber-like) breakage.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig3-v1.jpg)
 
-**Figure 3.:** (A–C) AFM topographies of an individual TLP (A), DLP (B) and SLP (C) before (left) and after (right) nanoindentation. (D) Force Indentation Curves (FICs) measured for each individual TLP (N = 7 from 45), DLP (N = 7 from 11) and SLP (N = 7 from 16), as indicated. The average curve is highlighted for each specimen. Double headed arrows indicate plastic deformation, as explained in text. FIC data are available from Figure 3—source data 1.10.7554/eLife.37295.012Figure 3—source data 1.
+**Figure 3.:** (A–C) AFM topographies of an individual TLP (A), DLP (B) and SLP (C) before (left) and after (right) nanoindentation. (D) Force Indentation Curves (FICs) measured for each individual TLP (N = 7 from 45), DLP (N = 7 from 11) and SLP (N = 7 from 16), as indicated. The average curve is highlighted for each specimen. Double headed arrows indicate plastic deformation, as explained in text. FIC data are available from Figure 3—source data 1.
 
-## Stiffness and yield strain of TLP and RV subviral particles
+### Stiffness and yield strain of TLP and RV subviral particles
 
-The analysis of single particle FIC charts (Figure 3D) provides some mechanical parameters. In particular, the linear fitting of the curves before reaching the elastic limit informs about the particle elastic constant or stiffness (Figure 4A). Statistical analysis of the FIC linear part result in spring constants of kTLP = 0.76 ± 0.30 N/m, kDLP = 0.34 ± 0.20 N/m and kSLP = 0.22 ± 0.07 N/m. The elastic limit can be linked to the breaking force of the probed particle. The analysis of the breaking force provides values of 2.9 ± 0.5 nN, 0.9 ± 0.3 nN and 0.45 ± 0.10 nN for TLP, DLP and SLP, respectively (Figure 4B). This monotonic decrease of both the spring constant and breaking force with the reduction of the number of layers indicates that virus mechanics captures the reinforcement nature of concentric shells: the more layers in the structure, the stronger it becomes. The calculation of the yield strain ε=Δhh0 (Figure 4—figure supplement 1), where Δh is the indentation corresponding to the force at the elastic limit and h0 the height of the intact particle, reveals that TLP, although with a high dispersion, can sustain larger elastic deformations than DLP and SLP. This simultaneous high rigidity and yield strain is exceptional since an increment in the spring constant and breaking force is usually associated with a lower yield strain as it happens, for example, with glass (Schijve, 2009).
+The analysis of single particle FIC charts (Figure 3D) provides some mechanical parameters. In particular, the linear fitting of the curves before reaching the elastic limit informs about the particle elastic constant or stiffness (Figure 4A). Statistical analysis of the FIC linear part result in spring constants of kTLP = 0.76 ± 0.30 N/m, kDLP = 0.34 ± 0.20 N/m and kSLP = 0.22 ± 0.07 N/m. The elastic limit can be linked to the breaking force of the probed particle. The analysis of the breaking force provides values of 2.9 ± 0.5 nN, 0.9 ± 0.3 nN and 0.45 ± 0.10 nN for TLP, DLP and SLP, respectively (Figure 4B). This monotonic decrease of both the spring constant and breaking force with the reduction of the number of layers indicates that virus mechanics captures the reinforcement nature of concentric shells: the more layers in the structure, the stronger it becomes. The calculation of the yield strain $\epsilon=\frac{Δh}{h_{0}}$ (Figure 4—figure supplement 1), where Δh is the indentation corresponding to the force at the elastic limit and h0 the height of the intact particle, reveals that TLP, although with a high dispersion, can sustain larger elastic deformations than DLP and SLP. This simultaneous high rigidity and yield strain is exceptional since an increment in the spring constant and breaking force is usually associated with a lower yield strain as it happens, for example, with glass (Schijve, 2009).
 
-## Finite elements analysis of TLP and RV subviral particles
+### Finite elements analysis of TLP and RV subviral particles
 
 The analysis of how the TLP and DLP inform upon the mechanical properties of VP6 and VP7 layers has to be considered with care. The only layer for which an individualized analysis of the mechanical properties can be performed is the SLP. Although the genome and the replication/transcription machinery reside inside the VP2 shell, it is expected that they have no relevant effect on the particle's response to deformation. The relatively low packing fraction of RV (~20%) compared to pressurized dsDNA viruses (Purohit et al., 2005) suggests a small pressure whose influence on the effective elastic constant will be smaller than our error bars. In any case, the presence of the core would only affect to the estimation of the Young’s Modulus of the VP2 layer, but not to the inferred properties of the VP6 and VP7 layers. For TLP and DLP, the isolation of the mechanical parameters for VP7 and VP6 layers is also complex because they include internal shells with their mutual interactions. Specifically, the mechanical response of DLP is due to the VP6 shell and the internal SLP, whereas in the TLP there is an additional contribution of the VP7 layer. Taking this into account, FE simulations (Gibbons and Klug, 2008) were performed to extract the effective Young’s moduli for the different capsid layers from the measured spring constants kSLP, kDLP, kTLP (see Materials and methods and Figure 4—figure supplement 1). The nanoindentation of SLP was implemented first, yielding a value for the Young’s modulus of YVP2 = 0.53 ± 0.20 GPa. A second layer of 8 nm thickness, representing that of VP6, was added on top of the VP2 layer, and a Young’s modulus YVP6 = 0.08 ± 0.07 GPa was needed to recover the spring constant of DLP, kDLP. Finally, a 3.5 nm thick third layer was placed on top of the DLP, requiring a Young’s modulus YVP7 = 1.0 ± 0.9 GPa to yield the same spring constant as the TLP, kTLP. We can compare the Young’s modulus between layers resulting in YVP7 / YVP6=12 and YVP2 / YVP6=6.5. Figure 4C shows the map of the stress supported by the constituent layers of each subviral particle, demonstrating that the VP7 layer accumulates most of the stress in TLP. Thus, nanoindentation experiments and FE analysis, indicate the VP7 shell to be the stiffer layer of the RV structure, but also the most elastic, whereas the thick VP6 layer is remarkably soft and brittle.
 
-## Mechanical fatigue
+![Figure 4.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig4-v1.jpg)
+
+**Figure 4.:** Box plots of (A) elastic constant, and (B) breaking force calculated from the FIC (Figure 3) for TLP (red, N = 45), DLP (blue, N = 11) and SLP (green, N = 16), as explained in text. Data are Figure 4—source data 1 and 2. The yield strain (ε) which is a combination of elasticity and breaking force, can be found in Figure 4—figure supplement 2. (C) Stress distribution at 4 nm of indentation in the models used in the FE simulations of SLP (left), DLP (middle) and TLP (right). Inset color scale represents the value of the von Mises stress in Pa. See Materials and methods and Figure 4—figure supplement 1 for more information.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Force-indentation curves obtained from finite element simulations of the AFM nanoindentation experiments. The green line represents the values obtained for the SLP; the blue line corresponds to the DLP, and the red line to the TLP. In all cases, the Young’s moduli of the different layers were selected to achieve the experimentally observed spring constant (Figure 3 and Materials and methods). Dotted lines represent experimental indentation curves.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** This figure presents box plots of the yield strain for TLP (red, N = 45), DLP (blue, N = 11) and SLP (green, N = 16). The yield strain is defined by the coefficient between the indentation at the elastic limit and the original height of the particle, as indicated by the inset. Data are available from Figure 4—figure supplement 2—source data 1.
+
+### Mechanical fatigue
 
 While the single indentation assay probes the global mechanical response of virus particles, fatigue experiments explore the local response of the virus building blocks (capsomers). Mechanical fatigue experiments are performed by applying cyclic forces of ~100 pN, well below the breaking force (~1 nN), at every pixel of the virus (Ortega-Esteban et al., 2013) and the gradual disassembly of viral particles is typically induced (Hernando-Pérez et al., 2014a). Cyclic imaging of the TLP (Figure 5A, left) at forces between 100 pN to 200 pN per pixel shows that, while the VP4 spikes are removed from the particle surface in a few frames (Figure 5A, middle and Video 1), the VP7 layer remains mostly intact (Figure 5A, right) during 80 frames (light red in Figure 5E, Figure 5—figure supplement 1 and Video 5). These results illustrate that the spikes are easily removed by the AFM tip and are not strongly anchored. However, the VP7 layer displays a strong resistance against fatigue, in agreement with the high stiffness and breaking force demonstrated in single indentation assay experiments. A strong binding energy between capsomers would not only result in a high resistance of individual proteins against fatigue, but also will contribute to a high breaking force when all capsomers are probed in a single indentation assay experiment. We have found similar results before in lambda phage (Hernando-Pérez et al., 2014a).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig5-v1.jpg)
+
+**Figure 5.:** Topographic evolution of TLP (A), TLP + EDTA (B), DLP (C) and SLP (D) during continuous imaging at low force (~60–120 pN) indicating the corresponding displayed frames. (E) Topographic evolutions obtained at the position indicated with a white cross (A–D) in TLP (red), DLP (blue) and SLP (green) particles. Dark red color indicates fatigue of TLP + EDTA. Red and blue arrows indicate the loss of height from TLP to DLP and for DLP to SLP, respectively. Data are available from Figure 5—source data 1. Videos 1–4 present the temporal evolution of these particles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Topographical evolution of a TLP subjected to fatigue during 80 frames at 60–100 pN. White arrows indicate the line where the height profiles are taken. (B) Profile evolution with the black lines corresponding to the profiles of the frames shown in (A), and the gray lines corresponding to the rest of the profiles. Video 5 shows all the process. Data is available from Figure 5—figure supplement 1—source data 1.
+
 The current model proposes a calcium concentration drop in endosomal compartments during RV entry as the factor that triggers VP7 disassembly and membrane penetration (Arias et al., 2015). In fact, calcium depletion by chelating agents (as EDTA) (Estes et al., 1979) is used to uncoat TLP to DLP by inducing VP7 trimer dissociation (Figure 1). To explore the structural consequences of this process in real time, we carried out fatigue assays on TLP while EDTA simultaneously flowed in the AFM liquid chamber, as described in Material sand methods, to induce the gradual depletion of Ca ions of the particles (Figure 5B, Video 2). In these conditions, fatigue induces the neat VP7 detachment from the VP6 subjacent layer (indicated by a circle in Figure 5B#19) even before the spikes are removed. Indeed, the evolution of the topographic profiles (dark red in Figure 5E) show abrupt downwards steps very close to the VP7 thickness (red arrow of Figure 5E) indicating that TLP particle loses VP7 completely while keeping VP6 (Video 2). These results not only suggest that Ca ions mediate the interaction between VP7 and VP6 layers, but also that the absence of ions weakens the interaction between VP7 subunits. If fatigue continues, VP6 subunits are neatly removed from VP2 layer (circle in Figure 5B#29). Therefore, VP6 shell appears as a weak shell whose interaction with the beneath VP2 layer is not very strong, since it peels off rapidly to reveal the SLP.
+
+![Video 2.](https://cdn.elifesciences.org/articles/37295/elife-37295-video2.mp4.jpg)
+
+**Video 2.:** This video corresponds to the particle of Figure 5B. White arrows indicate the line where the profiles have been obtained.
 
 We found similar results on experiments performed on DLP. Again, fatigue induced a clean VP6 disassembly after less than 10 frames (circle in Figure 5C#8, and Video 3). In this case the evolution of the topographic profiles (blue in Figure 5E) undergoes sharp reductions very close to the VP6 thickness, inducing the gradual uncovering of the innermost VP2 (blue arrow in Figure 5E). These experiments not only illustrate a weak interaction between VP6 and VP2 layers, but also a very feeble VP6-VP6 binding force. Finally, the thin SLP VP2 is highly unstable under fatigue experiments collapsing well before reaching 10 frames (green in Figure 5D, and Video 4).
 
-## RV TLP nanoindentation-fatigue combined analysis
+![Video 3.](https://cdn.elifesciences.org/articles/37295/elife-37295-video3.mp4.jpg)
+
+**Video 3.:** This video corresponds to the particle of Figure 5C. White arrows indicate the line where the profiles have been obtained.
+
+![Video 4.](https://cdn.elifesciences.org/articles/37295/elife-37295-video4.mp4.jpg)
+
+**Video 4.:** This video corresponds to the particle of Figure 5D. White arrows indicate the line where the profiles have been obtained.
+
+![Video 5.](https://cdn.elifesciences.org/articles/37295/elife-37295-video5.mp4.jpg)
+
+**Video 5.:** This video corresponds to the particle of Figure 5—figure supplement 1.
+
+### RV TLP nanoindentation-fatigue combined analysis
 
 We have seen that removing of Ca ions is key for inducing the transition from TLP to DLP in the fatigue experiments (Figure 5A–B, and red charts in Figure 5E). To access to VP6 and VP2 layers in the presence of Ca ions, we combined single indentation with fatigue assays. Our aim is to produce local disruptions in the TLP shell by performing a controlled FIC and then monitor the progressive disassembly induced by fatigue experiments. Therefore, we intent to crack the three layers at once without tearing apart the particle like in Figure 3A, by adjusting the indentation up to 40 nm (data not shown) after imaging the TLP 24 times (Figure 6A#24). Right after the FIC (Figure 6A#25), the induced fracture reaches a maximum depth of ~23 nm that includes the thickness of the three layers (Figure 6B). However, the shape of the crack shows that some VP2 layer has been exposed (Figure 6B, dotted line) and its distance to the VP7 layer external face is compatible with the thickness of VP7 and VP6 layers (3,5 and 8 nm, respectively). The subsequent fatigue cycles increased the VP2 uncovered area (Figure 6A#56, Video 6) without any signature of the TLP-DLP transition. These experiments indicate that VP6 hardly survives to VP7 removal, supporting a strong interaction between VP7 and VP6 layers in the presence of Ca and, once again, a weak binding between VP6 and VP2.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig6-v1.jpg)
 
-**Figure 6.:** (A) Topographical evolution of a TLP subjected to fatigue until image #24, where a controlled FIC locally perforated the three layers. Frame #25 shows the particle right after the FIC. Topography #56 is the same particle 31 frames after the FIC. Imaging force of ~100 pN. (B) Height profile evolution obtained at the white arrows depicted in the topographies. Dotted grey line indicates the position of VP2 layer. Data are available from Figure 6—source data 1. Video 6 presents the temporal evolution of this particle.10.7554/eLife.37295.032Figure 6—source data 1.Figure 6B.
+**Figure 6.:** (A) Topographical evolution of a TLP subjected to fatigue until image #24, where a controlled FIC locally perforated the three layers. Frame #25 shows the particle right after the FIC. Topography #56 is the same particle 31 frames after the FIC. Imaging force of ~100 pN. (B) Height profile evolution obtained at the white arrows depicted in the topographies. Dotted grey line indicates the position of VP2 layer. Data are available from Figure 6—source data 1. Video 6 presents the temporal evolution of this particle.
+
+![Video 6.](https://cdn.elifesciences.org/articles/37295/elife-37295-video6.mp4.jpg)
+
+**Video 6.:** Two moderate nanoindentations of ~ 40 nm were performed at frames 24 and 66, respectively. This video corresponds to the particle of Figure 6.
 
 ## Discussion
 
@@ -83,13 +147,98 @@ The characterization of the biophysical properties of viral particles has proven
 
 In contrast with the hydrophobic nature of the SLP outer surface, the calculation of the electrostatic potential surface of the DLP reveals a very negative outer surface (Figure 7B) (Mathieu et al., 2001). The structures of the transcriptionally active particles of other dsRNA viruses present a similar negatively charged outer surface (Figure 7—figure supplement 2), which may reflect a common strategy to avoid the interaction with the newly synthesized negative charged transcripts. In addition to transforming the SLP particle in the transcription-active DLP (Lawton et al., 1997), the VP6 that polymerizes on the surface of the SLP acts as an adaptor for the interaction with the outer RV shell (Figure 7F–G). VP7 trimers are stabilized through the binding of calcium ions at each subunit interface (Aoki et al., 2009). The bottom inner surface of the VP7 trimer has minimal contacts with the VP6 trimer apex of which the most intense is mediated by the VP7 N termini that embraces the underlying VP6 trimer (Figure 7H). These arms also interact with adjacent VP7 trimers generating a cooperative lattice that reinforce the RV outer shell. Our fatigue experiments (Figure 5) demonstrate weak interactions of VP6, both intertrimeric and with the VP2 layer. These analyses also suggest a strong interaction of the VP7 trimers with the underlying VP6 and with the surrounding VP7 trimers in the presence of calcium (Figure 6). Many viral particles are stabilized by calcium ions bound to the interfaces between their capsomers which is allowed by the unique coordination chemistry of the Ca ion (Zhou et al., 2009; Carafoli and Krebs, 2016). These ions are required to maintain the capsid structural integrity and/or regulate its proper assembly/disassembly (Zhou et al., 2009). Examples include bacteriophages of the Leviviridae and Microviridae families (McKenna et al., 1996; Persson et al., 2008); plant Tombusviruses (and its associate satellite virus), Sobemoviruses, Bromoviruses or Virgaviruses (Harrison et al., 1978; Jones and Liljas, 1984; Speir et al., 1995) and different animal viruses including members of the Polyoma, Noda, Picorna, Birna and Parvoviridae families (Tsao et al., 1991). Actually, previous studies have directly probed the mechanical role of calcium ions in the shell stability of tomato bushy stunt virus nanoparticles (Llauró et al., 2015). Surprisingly, the inward facing electrostatic potential surface of the VP7 layer (Figure 7F) is highly negative. We propose that calcium ions, beyond stabilizing the VP7 trimers, would be sandwiched between the VP7 inner and VP6 outer surfaces to allow their assembly. VP7 assembles into trimers that are stabilized through the binding of two calcium ions at each subunit interface (Aoki et al., 2009). Thus, the depletion of calcium will promote the destabilization of the VP7 intertrimeric interactions and induce the rapid disassembly of this shell by the destabilization of the VP7/VP6 electrostatic interactions (Figure 5B).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig7-v1.jpg)
+
+**Figure 7.:** Electrostatic potential of the outer surface of SLP (A), DLP (B) and TLP (C). Positive charge distribution is represented in blue, negative in red and hydrophobic in white. (D) Electrostatic potential of the inner surface of a VP6 trimer. (E) Electrostatic potential of the outer face of the VP2 shell. The positions for the interaction of the five quasi-equivalent trimers on the VP2 surface are marked with triangles of different colors. (F) Electrostatic potential of the inner surface of a VP7 trimer. (G) Electrostatic potential of the outer surface of a VP6 trimer. (H) Schematic representation of the VP2 (green), VP6 (blue) and VP7 (yellow) layers interaction. Thick black springs indicate a relatively high VP7-VP7 and VP6-VP7 interactions. The thin white springs point to weak VP6-VP6 and VP6-VP2 interactions. In panels D-G the insets indicate the point-of-view.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Ribbon representation of the side (left) and top (right) views of the atomic structure of the VP6 trimer (PDB 3KZ4) localized at the three-fold axis of the RV particle intermedium shell (Mathieu et al., 2001). The 65–72 loop, that interacts with the hydrophobic outer surface of the VP2 viral core.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/37295/elife-37295-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Outer surface of: T = 1 capsids of L-A virus (L–A); Turreted T1 capsids of cytoplasmic polyhedrosis virus (CPV), and orthoreovirus; T1 core of Blue Tongue Virus (BTV); and DLP of RV viewed along a two-fold axis of icosahedral symmetry. The surface charge representations show the distribution of negative (red) and positive (blue) charges.
+
 Mechanical parameters, such as stiffness, breaking force and yield strain also inform of important differences between the three layers (Figure 4). Similar to that observed for the height distribution (Figure 2E), the dispersion detected for TLP stiffness kTLP (Figure 4A) could be correlated with the unequal presence and distribution of spikes in each particle. The incorporation of the VP7 layer on the DLP produces a significant increase in stiffness (Figure 4A) and yield strain (Figure 4—figure supplement 2). Thus, while the Young’s modulus value of the VP7 shell is within the highest values as obtained for bacteriophages (Roos et al., 2012; Ivanovska et al., 2004), the VP6 layer presents the lowest value ever reported for a viral protein shell (Marchetti et al., 2016). In fact, the FE simulations of the TLP show that the stiff VP7 layer accumulates most of the stress during the indentation (Figure 4C), protecting the internal VP6 and VP2 layers by shielding the stress transmission to these layers. Taken together, nanoindentation and mechanical fatigue experiments demonstrate that the VP7 shell provides the resistance needed by the RV particle to bear with the severe conditions of extracellular media. RV is transmitted through the faecal-oral route and has to overcome the stringent physicochemical conditions of digestion at both the stomach and small intestine, where it infects mature enterocytes (Estes and Greenberg, 2013; Ramig, 2004). The viscosity of the chyle (Jonas, 1976) is about 10 to 100 times larger than the host cytoplasm (Luby-Phelps et al., 1993) and presents higher molecular crowding (Hernando-Pérez et al., 2014a). Therefore, the VP7 shell has to be stable enough to overcome the constant barrage of molecular impacts in the small intestine. In fact, fatigue experiments provide a good approximation for these molecular impacts on RV particles (Hernando-Pérez et al., 2014a). Interestingly, the VP7 shell of TLP is able to withstand fatigue even at 200 pN (Figure 5A) indicating a strong intercapsomeric linkage. The labile nature of VP6 layer, showing both the lowest values of elasticity and Young’s modulus, is related with their structure (weak contacts of the VP6 trimers with VP2 and between them) and we propose that this feature is necessary for its function. It has been suggested that removal of VP7 causes the dilation of the particle pentameric channels allowing the flux of nucleotides, ions and transcripts (Chen et al., 2009; Aiyegbo et al., 2013). The removal of VP7 promotes the outward movement of the VP6 pentameric trimers. This conformational change is transmitted through the underlying VP2 decamer to the VP1 polymerase, enabling its activity. In other viruses, such as MVM (Castellanos et al., 2012) a similar conformational dynamics is favored by a low mechanical stability. In particular, the increase of local stiffness in MVM mutants blocks the conformational changes required for dsDNA translocation. Similarly, the high flexibility resulting from the low mechanical stability of the trimeric VP6 layer would favor its functional roles: this thick layer becomes the adaptor that allows the transformation of a highly hydrophobic SLP into a negative-charged DLP, overcoming the symmetry mismatch between the T = 1 and T = 13 layers, and generating a transcriptionally active particle. The VP6 shell constitutes the thickest and, according to our data, the softest layer of the RV particle, which allows for large deformations when TLP or DLP are adsorbed (Figure 2 and Figure 2—figure supplement 2). Finally, the SLP exists only in the viroplasm environment during RNA packaging and replication. The high electrodensity of the viroplasm is a signature of a large concentration of macromolecules that results in a higher molecular crowding than the cytoplasm. This fact would explain the higher Young’s modulus value of VP2 layer when compared with that of VP6. This Young’s modulus combined with a presumably smaller adsorption energy with the substrate, result in non-deformed particle after adsorption, as it happens with other virus capsids (Carrasco et al., 2009).
 
 In this mechanical study of a multi-layered virus we have shown how the biophysical properties and interactions of the three particle shells are finely tuned to produce an infective RV virion. While the high mechanical strength provided by the strong VP7-VP7 and VP7-VP6 interactions (Figure 7H, black springs) relates to protection tasks, the lower resistance of the VP6-VP6 and VP6-VP2 interactions (Figure 7H, white springs) guarantees the conformational dynamics required for transcription. Importantly, the interference with this finely tuned mechanical regulation offers new venues for development of antiviral strategies.
 
 ## Materials and methods
 
-## TLP, DLP and SLP production and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Chlorocebus aethiops)</td>
+      <td>MA104</td>
+      <td>ECACC Cat# 85102918</td>
+      <td>RRID:CVCL_3845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rotavirus A)</td>
+      <td>SA11-C4111</td>
+      <td>PMID: 11913378</td>
+      <td>GenBank:KJ450831; KJ450832;KJ450833; KJ450834;KJ450835; KJ450836;KJ450837; KJ450838;KJ450839; KJ450840;KJ450841</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xmipp</td>
+      <td>PMID: 15477099</td>
+      <td></td>
+      <td>http://xmipp.cnb.csic.es/twiki/bin/view/Xmipp/WebHome</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID: 23000701</td>
+      <td>RRID:SCR_016274</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COMSOL Multiphysics 4.3</td>
+      <td>Comsol, Stockholm, Sweden</td>
+      <td>RRID:SCR_014767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND3</td>
+      <td>PMID: 12781660</td>
+      <td></td>
+      <td>http://grigoriefflab.janelia.org/ctf</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Delphi</td>
+      <td>PMID: 11913378</td>
+      <td></td>
+      <td>http://honig.c2b2.columbia.edu/delphi/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID: 24873828</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+  </tbody>
+</table>
+
+### TLP, DLP and SLP production and purification
 
 The simian rotavirus strain SA11-C4111 (Rodríguez et al., 2014) was used in this study. Viruses were grown using the monkey epithelial cell line MA104 (ECACC 85102918), cultured in MEM with 10% fetal calf serum, and used between passages 10 and 25. The amplified viruses were used within three passages of the last plaque isolation step.
 
@@ -99,7 +248,7 @@ The preparation of DLP from purified TLP by treatment with EDTA at 37°C and its
 
 SLP were prepared form purified DLP by treatment with 1.25M CaCl2 in a solution containing 0.75M trehalose, 0.15M NaCl, 20 mM Borate buffer (pH 8.45) and Complete-EDTA Free protease inhibitors (Roche) at the manufacturer recommended concentration. DLP, at a concentration of 100 µg/ml, where incubated for 2 hr at 37°C with gentle agitation. After the treatment, the concentration of trehalose in the mixture was reduced to 0.25M by dilution with two volumes of the buffer without trehalose, and incubated at room temperature (22°C) during 90 min, with gentle agitation. SLP were concentrate by centrifugation (20.000 g, 60 min, 22°C) and resuspended in a buffer containing 1.50M trehalose, 0.15M NaCl, 20 mM Tris:HCl (pH 8.45) and Complete-EDTA Free protease inhibitors (Roche) at the manufacturer recommended concentration. Purified SLP were diluted to 0.2 mg/ml in 1xTNC containing 0.5M trehalose, flash frozen in liquid nitrogen as small (5 µl) aliquots, and stored at −80°C.
 
-## Electron microscopy and image processing
+### Electron microscopy and image processing
 
 For transmission electron microscopy, purified particles were applied to glow-discharged carbon-coated grids and negatively stained with 2% aqueous uranyl acetate. Images were recorded on a Gatan 1 k CCD camera in a FEI Tecnai 12 microscope operated at 120 kV.
 
@@ -109,7 +258,7 @@ Image processing operations were performed using Xmipp (Marabini et al., 1996) a
 
 The electrostatic potentials were calculated using DelPhi software (Rocchia et al., 2002) and surface-colored with UCFS Chimera.
 
-## AFM experiments
+### AFM experiments
 
 Measurements were carried out with an AFM (Nanotec Electrónica S.L., Madrid, Spain) operating in Jumping Mode Plus (Ortega-Esteban et al., 2012). This intermittent-contact imaging mode consists on performing low force-versus-Z-piezo-displacement (FZ) curves at every point of the imaging area, with nanometric lateral movements of the sample where it is far (~40 nm) from the tip. All the experiments were carried out with rectangular silicon-nitride cantilevers (RC800PSA, Olympus, Tokyo, Japan) with nominal springs constants of 0.05 N/m, and were routinely calibrated using the Sader's method (Sader et al., 1999). The obtained images were processed using the WSxM software (Horcas et al., 2007).
 
@@ -123,7 +272,7 @@ Real time experiments of TLP disassembly while removing Ca ions was carried out 
 
 TLP were initially in the AFM liquid chamber with 70 µl of TNC buffer. This chamber was connected to two syringe pumps (NE-1000, New Era Pump Systems, Inc.). One of the syringes was used for pumping TNE buffer into the chamber while, simultaneously, the other syringe was withdrawing liquid. The pumping/withdrawing rate was 1 µl/min, and the fatigue experiments lasted ~80 min. Under these conditions TNC buffer was totally replaced by TNE at the end of the experiment, thus ensuring the chelation of all the Ca2 +ions initially present in the TLP.
 
-## Finite Element (FE) simulations of rotavirus
+### Finite Element (FE) simulations of rotavirus
 
 Finite elements simulations mimicking the AFM nanoindentation of the different rotavirus particles were performed using the program COMSOL Multiphysics 4.3 (Comsol, Stockholm, Sweden). In the simulations, each layer was modeled as a homogenous spherical shell made of a material with Young’s modulus E and Poisson ratio ν = 0.3 (a standard value for protein-like materials). This model shell was placed on a hard flat substrate and indented by a hard spherical object with radius Rin = 15 nm, mimicking the nominal radius of the AFM tip. The system was simulated using a 2D axisymmetric model that was meshed with over 1400–6000 triangular elements. The contacts between the shell and the tip as well as the supporting surface during indentation were implemented with a contact normal penalty factor. This parameter controls the hardness of the interface surface and it is used to prevent the penetration of the two boundaries coming into contact. The penalty factor used was Y/Δx, where Y is the Young’s modulus and Δx is the minimum element size of the mesh of the material which is indented. A parametric, non-linear solver was used to simulate the stepwise lowering of the tip onto the capsid. The spring constant was obtained in all cases from the slope of the force versus indentation curves at a small value of the indentation of 2 nm. For multilayer shells, two different cases were simulated: a model in which the shells are joint and coupled (using the COMSOL option Union to finalize the geometry), and a second case in which the layers are independent and uncoupled (using the option Assembly to finalize the geometry). In both cases, the results for the stress distribution, the force-indentation curves and the spring constant for small indentations were identical.
 

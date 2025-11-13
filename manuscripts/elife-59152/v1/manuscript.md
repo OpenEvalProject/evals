@@ -32,21 +32,64 @@ To test the above competing hypotheses, we enhanced dopamine function in humans 
 
 Two hundred and forty-eight participants performed an information-seeking task adapted from our previous publication (Charpentier et al., 2018), in which 16 participants did not complete the task in full; therefore, data of 232 subjects was analyzed. The study was a double-blind pharmacological intervention where one group of participants received Placebo (n = 116, females = 72, mean age = 24.36, Table 1) and the other received L-DOPA (150 mg) (n = 116, females = 71, mean age = 25.44, Table 1).
 
+**Table 1.**
+ Demographics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographics</th>
+      <th>Placebo mean (SD)</th>
+      <th>L-DOPA mean (SD)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>24.36 (7.91)</td>
+      <td>25.44 (7.92)</td>
+      <td>0.301</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>Females N= 72</td>
+      <td>Females N= 71</td>
+      <td>0.893</td>
+    </tr>
+    <tr>
+      <td>Income (1-9)</td>
+      <td>4.85 (2.38)</td>
+      <td>4.61 (2.54)</td>
+      <td>0.462</td>
+    </tr>
+    <tr>
+      <td>Education Level (1-10)</td>
+      <td>7.09 (1.72)</td>
+      <td>7.39 (1.50)</td>
+      <td>0.157</td>
+    </tr>
+  </tbody>
+</table>
+
+_There were no differences between groups in terms of demographics. p-Value is of independent sample t-test , or in the case of gender of X2. Education was measured on a scale ranging from 1 (no formal education) to 10 (Doctoral degree ). Annual household income was measured on a scale from 1 (less than 10K) to 10 (more than 100K)._
+
 Participants began the task 40 min after receiving L-DOPA or Placebo (as in Guitart-Masip et al., 2012; Sharot et al., 2009; Sharot et al., 2012), as the half-life of L-DOPA is 90 min. They were endowed with £5 at the beginning of each of the four blocks to invest in two of five stocks in a simulated stock market. There were 50 trials per block. On each trial, participants observed the evolution of the market (i.e. whether the market was going up or down) and the exact value of the market (Figure 1). They then bid for a chance to know (or remain ignorant about) the value of their portfolio. Specifically, they indicated how much they were willing to pay to receive or avoid information about the value of their portfolio on a scale ranging from 99 p to gain knowledge through 0 p (no preference) to 99 p to remain ignorant. The more they were willing to pay, the more likely their choice was to be honored. Information was non-instrumental; it could not be used to increase rewards, avoid losses, or make changes to portfolio.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/59152/elife-59152-fig1-v1.jpg)
 
 **Figure 1.:** (A) Participants observed the evolution of a financial market after investing in two of its five companies. They then indicated whether they believed their portfolio value likely went up or down relative to the previous trial and indicated their confidence in their answer. They then indicated how much they were willing to pay to receive or avoid information about their portfolio value. Next, their portfolio value in points was presented on screen or hidden (‘XX points’ was shown).
 
-## L-DOPA did not alter general information-seeking
+### L-DOPA did not alter general information-seeking
 
 L-DOPA administration did not alter general aspects of information-seeking (Figure 2). In particular, there were no difference between the Placebo and L-DOPA groups in the average number of trials in which participants selected to pay for information (Placebo = 71.16 trials, L-DOPA = 72.89 trials, t(230) = 0.226, p=0.821, independent samples t-test ), pay to avoid information (Placebo = 27.79 trials, L-DOPA = 27.97 trials, t(230) = 0.036, p=0.971), or not to pay at all (i.e. entered 0 p: Placebo = 93.86 trials, L-DOPA = 92.65 trials, t(230) = 0.145 p=0.885). There was also no difference in the average amount each group paid to receive information (Placebo = 18.18 p, L-DOPA = 15.68 p, t(228) = 0.928, p=0.355) or avoid it (Placebo = 11.34 p, L-DOPA = 9.95 p, t(223) = 0.587, p=0.558). These results suggest that dopamine does not generally alter information-seeking. Finally, there was no difference across groups in the number of trials participants missed (that is trials in which they were too slow in responding: Placebo = 7.03 trials, L-DOPA = 6.50 trials, t(230) = 0.283, p=0.777), suggesting no difference in engagement with the task.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59152/elife-59152-fig2-v1.jpg)
 
-**Figure 2.:** There were no differences in general information-seeking between those who received Placebo and those who were administered L-DOPA. In particular, there were no differences in the average number of trials on which the participants decided to receive or to avoid information or were indifferent (i.e. paid 0). Furthermore, there was no difference across groups in the number of trials participants missed (that is trials in which they were too slow in responding). Error bars SEM.Figure 2—source data 1.Figure 2.
+**Figure 2.:** There were no differences in general information-seeking between those who received Placebo and those who were administered L-DOPA. In particular, there were no differences in the average number of trials on which the participants decided to receive or to avoid information or were indifferent (i.e. paid 0). Furthermore, there was no difference across groups in the number of trials participants missed (that is trials in which they were too slow in responding). Error bars SEM.
 
-## L-DOPA diminished the effect of valence on information-seeking
+### L-DOPA diminished the effect of valence on information-seeking
 
 In this task, we had previously shown that despite participants wanting information both when the market was going down and when it was going up (Charpentier et al., 2018), information-seeking was modulated by the expected valence of the outcome (Charpentier et al., 2018). In particular, we had reported that participants were more likely to pay for information when the market was going up rather than down and more likely to pay to avoid information when the market was going down rather than up (Charpentier et al., 2018). This is because people expected to learn about gains when the market was going up and expected to learn about losses when the market was going down (Charpentier et al., 2018). The second factor we had reported to influence information-seeking was the absolute amount of change in the market. Participants were willing to pay more for information when there were big changes in the market. Here, we examine whether dopamine modulates these effects on information-seeking.
 
@@ -58,11 +101,11 @@ The interaction indicates that expected valence differentially effected the desi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/59152/elife-59152-fig3-v1.jpg)
 
-**Figure 3.:** (a) A mixed linear regression predicting Willingness To Pay (WTP) for information revealed an interaction between group (Placebo/L-DOPA) and valence (the amount by which the market went up or down), with no interaction between group and absolute market change. To tease apart the interaction, we ran linear mixed models separately for the L-DOPA and Placebo groups. Plotted are the fixed effects of those models. As observed, this revealed a significant effect of valence on information-seeking in the Placebo group but lack thereof in the L-DOPA group. Absolute change was a significant predictor in both groups. This indicates a reduction in the influence of valence on information-seeking under L-DOPA. (b) To further characterize the effect of valence and drug on information-seeking, we run separate mixed linear models for each group and polarity predicting WTP from market change, trial number and the interaction of the two. Plotted are the fixed effects of market change for each. As can be observed under L-DOPA market change was a significant predictor of information-seeking about potential losses and gains - the greater the expected gain/loss the more participants were willing to pay for information. In contrast, under Placebo market change was a significant predictor of information-seeking about potential gains, but not losses. These results show that L-DOPA selectively alters information-seeking about losses. (c) Plotted is the effect of market change on WTP for information controlling for any effects of trial number. As can be observed the slopes are significantly positive for all groups/conditions except for the Placebo group in the loss domain. Clouds are based on Standard Errors of the fixed effect. Error bars SEM, * p <0.05, ** p < 0.01, *** p < 0.001.Figure 3—source data 1.
+**Figure 3.:** (a) A mixed linear regression predicting Willingness To Pay (WTP) for information revealed an interaction between group (Placebo/L-DOPA) and valence (the amount by which the market went up or down), with no interaction between group and absolute market change. To tease apart the interaction, we ran linear mixed models separately for the L-DOPA and Placebo groups. Plotted are the fixed effects of those models. As observed, this revealed a significant effect of valence on information-seeking in the Placebo group but lack thereof in the L-DOPA group. Absolute change was a significant predictor in both groups. This indicates a reduction in the influence of valence on information-seeking under L-DOPA. (b) To further characterize the effect of valence and drug on information-seeking, we run separate mixed linear models for each group and polarity predicting WTP from market change, trial number and the interaction of the two. Plotted are the fixed effects of market change for each. As can be observed under L-DOPA market change was a significant predictor of information-seeking about potential losses and gains - the greater the expected gain/loss the more participants were willing to pay for information. In contrast, under Placebo market change was a significant predictor of information-seeking about potential gains, but not losses. These results show that L-DOPA selectively alters information-seeking about losses. (c) Plotted is the effect of market change on WTP for information controlling for any effects of trial number. As can be observed the slopes are significantly positive for all groups/conditions except for the Placebo group in the loss domain. Clouds are based on Standard Errors of the fixed effect. Error bars SEM, * p <0.05, ** p < 0.01, *** p < 0.001.
 
 The same results are observed also when using a simpler model with WTP as a dependent measure and only one independent factor - valence - coded in a binary fashion (1 for market up and 0 for market down) as fixed and random variable with fixed and random intercepts. We find a significant effect of valence in the Placebo group (β = 1.85, CI = 0.64/3.05, t (116.88)=3.01, p=0.003) with WTP for information being greater for trials in which the market went up (indicating potential gains) than down (indicating potential losses), and lack thereof in the L-DOPA group (β = 0.35, CI = −0.21/0.91, t(117.58),=1.22 p=0.224). This shows that under Placebo participants desired information more when the market was up vs down, whereas under L-DOPA the desire for information was not altered by valence.
 
-## L-DOPA selectively alters information-seeking about potential losses
+### L-DOPA selectively alters information-seeking about potential losses
 
 Our results indicate that L-DOPA selectively reduces the impact of valence on information-seeking. Next, we ask if this effect is due to L-DOPA altering information-seeking about potential losses, about potential gains, or both. Moreover, we ask whether the effect of L-DOPA emerged over the course of the experiment or whether it was apparent from the very beginning.
 
@@ -72,7 +115,7 @@ To characterize the interaction of interest (between market change and group) in
 
 The results show that under L-DOPA, participants’ desire for information increased as the expected magnitude of the outcome increased - participants were willing to pay more for information as potential gains and losses increased (Figure 3C). In contrast, under Placebo, participants’ desire for information increased as potentials gains increased but remained constant and relatively low for potential losses (Figure 3C).
 
-## The effect of L-DOPA on information-seeking for losses is not explained by changes in expectations
+### The effect of L-DOPA on information-seeking for losses is not explained by changes in expectations
 
 We next ask whether the selective effect of L-DOPA on information-seeking about losses can be explained by a selective effect of L-DOPA on expectations about losses. To test participants’ expectations regarding their outcomes, we asked participants whether they believed their stocks went up or down after observing the global market change. This was done by having participants rate their expectations on a scale ranging from 1 (decreased a lot) to 9 (increased a lot). We then entered these ratings into Linear Mixed Model predicting expectation ratings. The independent factors were: (i) valence (signed market change), (ii) absolute market change, and (iii) group (L-DOPA or Placebo). All three factors were included as fixed and random effects as were the interactions of group with each of the other two factors. Random and fixed intercepts were also included in the model. There was no main effect of group (β = 0.06, CI = −0.05/0.17, t (257.400)=1.01, p=0.310), nor an interaction between group and valence (β = −0.01, CI = −0.03/0.02, t (232.900)=0.63, p=0.529) nor an interaction between group and absolute market change (β = 0.00, CI = −0.01/0.01, t (242.900)=0.266, p=0.790). There was a main effect of absolute market change (β = −0.01, CI = −0.02 /- 0.0001, t (241.000)=2.28, p=0.023) and of valence (β = 0.21, CI = 0.19/0.22, t (233.000)=23.264, p=0.0001). The latter confirms that participants’ expectations about their outcomes were linked to the observed trends in the market.
 
@@ -86,6 +129,176 @@ Our results show that L-DOPA has a selective effect on non-instrumental informat
 
 An intriguing question concerns the mechanism by which L-DOPA alters information-seeking about potential losses. The effect could not be explained by changes to participants’ mood, as there were no differences in participants’ self-reported subjective state under Placebo and L-DOPA (see Table 2). Neither could it be explained by reduced attention and/or engagement, as participants under L-DOPA did not miss more trials than those under Placebo. L-DOPA also did not alter expectations of outcomes. Thus, modulation of outcome expectations (that is how much is expected to be lost/gained) cannot explain the results. Moreover, as the task did not involve learning (past outcomes had no impact on future outcomes, see supplementary results), L-DOPA did not affect learning about potentials outcome gains and losses.
 
+**Table 2.**
+ Subjective State Questionnaire.Subjective State Questionnaire (Joint Formulary Committee, 2009) revealed no differences in subjective state between groups. p-Value relates to independent sample t-test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Subjective State Questionnaire</th>
+      <th colspan="2">Before the task</th>
+      <th></th>
+      <th colspan="2">After the task</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Placebo mean (SD)</th>
+      <th>L-DOPA mean (SD)</th>
+      <th>p-Value</th>
+      <th>Placebo mean (SD)</th>
+      <th>L-DOPA mean (SD)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alert to drowsy</td>
+      <td>2.68 (1.19)</td>
+      <td>2.62 (1.08)</td>
+      <td>0.687</td>
+      <td>3.60 (1.41)</td>
+      <td>3.85 (1.57)</td>
+      <td>0.208</td>
+    </tr>
+    <tr>
+      <td>Calm to excited</td>
+      <td>2.33 (1.11)</td>
+      <td>2.29 (1.03)</td>
+      <td>0.808</td>
+      <td>2.34 (1.09)</td>
+      <td>2.27 (1.22)</td>
+      <td>0.632</td>
+    </tr>
+    <tr>
+      <td>Strong to feeble</td>
+      <td>2.68 (1.01)</td>
+      <td>2.63 (1.01)</td>
+      <td>0.699</td>
+      <td>2.97 (1.13)</td>
+      <td>3.15 (1.35)</td>
+      <td>0.264</td>
+    </tr>
+    <tr>
+      <td>Muzzy to clear headed</td>
+      <td>4.47 (1.26)</td>
+      <td>4.48 (1.11)</td>
+      <td>0.956</td>
+      <td>3.70 (1.23)</td>
+      <td>3.41 (1.39)</td>
+      <td>0.099</td>
+    </tr>
+    <tr>
+      <td>Coordinated to clumsy</td>
+      <td>2.28 (1.14)</td>
+      <td>2.22 (1.06)</td>
+      <td>0.722</td>
+      <td>2.80 (1.16)</td>
+      <td>3.02 (1.31)</td>
+      <td>0.187</td>
+    </tr>
+    <tr>
+      <td>Lethargic to energetic</td>
+      <td>3.89 (1.14)</td>
+      <td>3.94 (1.18)</td>
+      <td>0.736</td>
+      <td>3.20 (1.24)</td>
+      <td>3.00 (1.43)</td>
+      <td>0.263</td>
+    </tr>
+    <tr>
+      <td>Contented to discontented</td>
+      <td>2.18 (1.01)</td>
+      <td>2.12 (0.83)</td>
+      <td>0.620</td>
+      <td>2.58 (1.16)</td>
+      <td>2.65 (1.19)</td>
+      <td>0.644</td>
+    </tr>
+    <tr>
+      <td>Troubled to tranquil</td>
+      <td>4.83 (1.02)</td>
+      <td>4.66 (1.02)</td>
+      <td>0.201</td>
+      <td>4.52 (1.13)</td>
+      <td>4.55 (1.13)</td>
+      <td>0.858</td>
+    </tr>
+    <tr>
+      <td>Slow to quick witted</td>
+      <td>4.32 (1.11)</td>
+      <td>4.28 (1.04)</td>
+      <td>0.761</td>
+      <td>3.63 (1.30)</td>
+      <td>3.31 (1.30)</td>
+      <td>0.069</td>
+    </tr>
+    <tr>
+      <td>Tense to relaxed</td>
+      <td>4.64 (1.11)</td>
+      <td>4.67 (0.98)</td>
+      <td>0.803</td>
+      <td>4.47 (1.14)</td>
+      <td>4.42 (1.23)</td>
+      <td>0.733</td>
+    </tr>
+    <tr>
+      <td>Attentive to dreamy</td>
+      <td>2.78 (1.26)</td>
+      <td>2.73 (1.10)</td>
+      <td>0.740</td>
+      <td>3.47 (1.34)</td>
+      <td>3.42 (1.38)</td>
+      <td>0.804</td>
+    </tr>
+    <tr>
+      <td>Incompetent to proficient</td>
+      <td>4.56 (0.98)</td>
+      <td>4.70 (0.86)</td>
+      <td>0.260</td>
+      <td>4.14 (1.16)</td>
+      <td>4.02 (1.26)</td>
+      <td>0.450</td>
+    </tr>
+    <tr>
+      <td>Happy to sad</td>
+      <td>2.43 (1.06)</td>
+      <td>2.34 (0.84)</td>
+      <td>0.453</td>
+      <td>2.62 (1.12)</td>
+      <td>2.57 (0.95)</td>
+      <td>0.712</td>
+    </tr>
+    <tr>
+      <td>Antagonistic to friendly</td>
+      <td>5.08 (0.97)</td>
+      <td>5.07 (0.81)</td>
+      <td>0.942</td>
+      <td>4.65 (0.95)</td>
+      <td>4.60 (1.04)</td>
+      <td>0.703</td>
+    </tr>
+    <tr>
+      <td>Interested to bored</td>
+      <td>2.35 (1.21)</td>
+      <td>2.28 (1.02)</td>
+      <td>0.639</td>
+      <td>3.52 (1.45)</td>
+      <td>3.63 (1.50)</td>
+      <td>0.587</td>
+    </tr>
+    <tr>
+      <td>Withdrawn to sociable</td>
+      <td>4.34 (1.17)</td>
+      <td>4.36 (1.18)</td>
+      <td>0.868</td>
+      <td>3.90 (1.17)</td>
+      <td>3.83 (1.39)</td>
+      <td>0.672</td>
+    </tr>
+  </tbody>
+</table>
+
 One possibility is that L-DOPA altered expectations not about outcomes per-se, but about the affective impact of negative information. A negative cue (e.g. watching the financial market fall) triggers expectations not only about the material outcome (the amount one has likely lost) but also about how bad it would be to receive information about that loss (Bromberg-Martin and Sharot, 2020). L-DOPA may have triggered less pessimistic expectations regarding the latter, altering the value of information about losses, which could have changed information-seeking in the loss domain. To illustrate this point, imagine two participants who accurately expect to lose £100 when they observe the market falling. One participant predicts that learning about the loss will have little negative impact, whereas the other predicts a large negative impact. Dopamine dips could signal both elements separately when observing the cue. As L-DOPA is thought to interfere with such dips (Ungless et al., 2004; Satoh et al., 2003), it could result in less pessimistic expectations about the value of bad news and thus more information-seeking. This possibility can be investigated in the future by recording participant’s actual and predicted expectations regarding the affective impact of information.
 
 It is important to keep in mind that our task exclusively examined non-instrumental information about gains and losses. As dopamine is known to play an important role in reward-guided learning and decision-making, it is possible that dopamine plays a more general role in information-seeking when information has instrumental value and/or for non-valenced information. Future studies are needed to investigate the role of dopamine in those situations.
@@ -94,13 +307,72 @@ Because information-seeking is integral to decision-making (Kidd and Hayden, 201
 
 ## Materials and methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>SPSS</td>
+      <td>RRID:SCR 002865</td>
+      <td>Version 25</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2020a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R</td>
+      <td>RRID:SCR_001905</td>
+      <td>R-4.0.1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>levodopa</td>
+      <td>Orion Pharma (UK) Limited</td>
+      <td>PubChem CID:6047</td>
+      <td>150 mg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>carbidopa</td>
+      <td>Orion Pharma (UK) Limited</td>
+      <td>PubChem CID: 34359</td>
+      <td>37.5 mg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>entacapone</td>
+      <td>Orion Pharma (UK) Limited</td>
+      <td>PubChem CID: 5281081</td>
+      <td>200 mg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Two hundred and forty-eight subjects were recruited via the University College London psychology online system and assigned randomly to receive Placebo (123) or L-DOPA (125). Sample size was calculated based on our previous studies (Sharot et al., 2009; Sharot et al., 2012) looking at dopamine effects on decision-making. All participants filled in the informed consent and a screening form for significant medical conditions, medications, and illicit drugs. All subjects were paid for their participation. The study was double-blind and approved by the UCL ethics committee (Project ID Number: 8127/001).
 
 Data from five subjects was lost due to technical error, and 11 subjects did not complete the task due to either feeling nausea (five subjects), power outage (one subject) or lack of interest/motivation (five subjects). Thus, we obtained full data sets from 232 participants (Placebo group: n = 116, females = 72, mean age = 24.36, SD = 7.918; L-DOPA group: n = 116, females = 71, mean age = 25.44, SD = 7.926). Education level was measured on a scale from 1 (no formal educatio) to 10 (Doctoral Degree). Income was measured on a scale from 1 (annual household income £10,000 or less), to 9 (annual household income over £100000). There were no significant differences between the groups in terms of age (t(230) = 1.036, p=0.301), income (t(228) = 0.737, p=0.462), gender (X2(1) = 0.018, p=0.893), and education level (t(230) = 1.420, p=0.157).
 
-## Procedure and task
+### Procedure and task
 
 Participants were administered either Placebo or L-DOPA (150 mg of levodopa, 37.5 mg of carbidopa, and 200 mg of entacapone) upon arrival to the lab in a double-blind fashion. They then completed a brief questionnaire - the Subjective State Questionnaire (SSQ) (Joint Formulary Committee, 2009). They began the task 40 min after the administration of L-DOPA/Placebo (L-DOPA half-life is 90 min and peaks at 60 min). The task took about 60 min to complete after which they completed the SSQ (Joint Formulary Committee, 2009) again. There was no differences between the Placebo and L-DOPA groups across SSQ (Joint Formulary Committee, 2009) items either before or after the task (see Table 2).
 
@@ -110,7 +382,7 @@ Participants were then given the chance to discover their portfolio value on tha
 
 At the end of the task, one trial was randomly selected and participants received the value of their portfolio on that trial (e.g, portfolio value of 60 points=£6). If on that trial they decided to pay a certain amount to receive or avoid information and their wish was honored (e.g. they paid 40 p to receive information and they received it), then that amount was deducted from the portfolio value (e.g. £6-£0.40 = £5.60).
 
-## Data analysis
+### Data analysis
 
 First, we investigated the effect of dopamine manipulation on general aspects of information-seeking by comparing the number of trials in which subjects decided to pay to receive information, avoid information, or pay nothing, the average amount they paid to receive information, the average amount they paid to avoid information and number of missed trials between the L-DOPA and the Placebo groups with an independent samples t-test.
 
@@ -122,6 +394,6 @@ As the above analysis revealed a significant effect of valence in the Placebo gr
 
 Finally, we examined whether participants’ expectations are affected by L-DOPA. To this aim, we run a Linear Mixed Model predicting expectations with the following independent factors: (i) valence (signed market change), (ii) absolute market change, and (iii) group (L-DOPA or Placebo). All three factors were included as fixed and random effects as were the interactions of group with each of the other two factors. Random and fixed intercepts were also included in the model. To further examine whether there may be an effect of L-DOPA on expectations that alters over time, we added to the model above trial number as a fixed and random factor as well as all the two- and three-way interactions of trial number with the other factors.
 
-## Data availability
+### Data availability
 
 Anonymized data are available on GitHub (https://github.com/affective-brain-lab/A-Selective-Effect-of-Dopamine-on-Information-Seeking-Valentina-Vellani-; Vellani, 2020 copy archived at swh:1:rev:71ef6f1b6a438236450207810b0630c8738336b8).

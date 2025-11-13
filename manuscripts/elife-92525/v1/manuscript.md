@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/027m9bs27 Division of Infection, Lydia Becker Institute of Immunology and Inflammation, School of Biological Sciences, University of Manchester Manchester United Kingdom
-2. https://ror.org/027m9bs27 Biological Physics, Department of Physics and Astronomy, University of Manchester Manchester United Kingdom
-3. https://ror.org/027m9bs27 Division of Evolution, Infection and Genomics, School of Biological Sciences, Faculty of Biology, Medicine and Health University of Manchester Manchester United Kingdom
+1. Division of Infection, Lydia Becker Institute of Immunology and Inflammation, School of Biological Sciences, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+2. Biological Physics, Department of Physics and Astronomy, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+3. Division of Evolution, Infection and Genomics, School of Biological Sciences, Faculty of Biology, Medicine and Health University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
 
 † Corresponding author
 
@@ -34,51 +34,59 @@ We studied three-dimensional ion-channel-mediated signaling in E. coli biofilms.
 
 ## Results
 
-## Blue light triggers electrical spiking in single E. coli cells
+### Blue light triggers electrical spiking in single E. coli cells
 
 We exposed E. coli (DH5α) to a blue LED (Figure 1A). Single sparse cells are defined as those with no neighboring cells within 10 µm. We monitored the membrane potential dynamics with the cationic fluorescent dye, Thioflavin (ThT; Biancalana and Koide, 2010). ThT is a Nernstian voltage indicator Plásek and Sigler, 1996 which accumulates because bacterial cells have negative potentials (Blee et al., 2020; Stratford et al., 2019; Humphries et al., 2017). We observed a cell-wide rise in the intensity of fluorescence, a period of quiescence followed by a slow increase in intensity which persisted until the end of the 60-min experiments (Figure 1B, Video 1). Applying the blue light for different time periods and over different timescales yielded no change in the number of peaks (Appendix 1—figure 1A). We confirmed that this spike profile existed in other E. coli strains (E. coli BW25113, Appendix 1—figure 1B) and was also detectable when E. coli cells were grown in Minimal (M9) media (Appendix 1—figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig1-v1.jpg)
 
-**Figure 1.:** E. coli exhibit membrane potential dynamics in response to 440 nm blue light stress.(A) Image of a sparse single cell containing ThT imaged in the microfluidic device (Scale bar: 10 µm). (B) Normalized fluorescence intensities of ion-transients for sparse cells (n=206) as a function of time after stimulation. Each curve describes a single cell. The curve depicting the mean membrane potential dynamics is shown in black. (C) Representative image of microclustered cells containing ThT in the microfluidic device. (D) Fluorescent intensity of ion-transients for cells in microclusters as a function of time after stimulation. Each curve describes a single cell. The curve depicting the mean membrane potential dynamics is shown in black. (E) Time to first spike histogram for sparse cells (n=206, Sparse cells in orange) and cells in microclusters (n=272, microclustered cells in blue, cells recovered from 15 clusters). The number of spiking events is shown as a function of time to the first spike. (F) Growth curves (in a semi-log coordinates) for E. coli (measured via OD600) as a function of time in the presence and absence of ThT. All data were from at least three experimental replicates. Light stress was applied for 60 min. The scale bars for all the images are 10 µm.
+**Figure 1.:** (A) Image of a sparse single cell containing ThT imaged in the microfluidic device (Scale bar: 10 µm). (B) Normalized fluorescence intensities of ion-transients for sparse cells (n=206) as a function of time after stimulation. Each curve describes a single cell. The curve depicting the mean membrane potential dynamics is shown in black. (C) Representative image of microclustered cells containing ThT in the microfluidic device. (D) Fluorescent intensity of ion-transients for cells in microclusters as a function of time after stimulation. Each curve describes a single cell. The curve depicting the mean membrane potential dynamics is shown in black. (E) Time to first spike histogram for sparse cells (n=206, Sparse cells in orange) and cells in microclusters (n=272, microclustered cells in blue, cells recovered from 15 clusters). The number of spiking events is shown as a function of time to the first spike. (F) Growth curves (in a semi-log coordinates) for E. coli (measured via OD600) as a function of time in the presence and absence of ThT. All data were from at least three experimental replicates. Light stress was applied for 60 min. The scale bars for all the images are 10 µm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/92525/elife-92525-video1.mp4.jpg)
 
 We observed similar spiking dynamics when we employed the lipophilic cationic cell permeant membrane potential dye, tetramethyl rhodamine methyl ester (TMRM; Appendix 1—figure 1D). We then tested if the observed dynamics is related to the membrane potential or autofluorescence. We used carbonyl cyanide m-chlorophenyl hydrazone (CCCP) which rapidly quenches membrane potential related dynamics in E. coli (Yang et al., 2020; Kralj et al., 2011; Perry et al., 2011). When CCCP was added, we observed a fast efflux of ions in all cells and no spiking dynamics (Appendix 1—figure 1E), confirming that the observed dynamics is membrane potential related.
 
 Two groups have challenged the use of ThT Mancini et al., 2020 and similar voltage sensitive fluorophores (DiSc3) in bacteria (Buttress et al., 2022; Appendix). These authors assume bacteria are unexcitable cells, whereas we provide evidence for excitability, invalidating their claims.
 
-## Membrane potential dynamics depend on the intercellular distance
+### Membrane potential dynamics depend on the intercellular distance
 
 We hypothesized that the time-to-first peak latency of cells in dense microclusters of E. coli could differ from that of sparse single E. coli cells. A microcluster is defined as a cell community in which intercellular distances do not exceed two cellular diameters (Figure 1C). We applied the same light stimuli as before to E. coli DH5α microclusters. We observed a rapid rise in intensity, a decay and subsequently a persisting second peak (Figure 1D, Video 2). The analysis of time-to-first peak latencies in sparse and microclustered cells showed that the average time-to-first peak was 7.34 ± 10.89 ± 4.44 min (mean ± SD ± SE) and 3.24 ± 1.77 ± 0.53 min (mean ± SD ± SE; Figure 1E), respectively. The membrane potential dynamics of single cells showed more variability in spikes and less synchrony in the phases of the first spikes than those in microclusters (Figure 1B and D). This suggests that random electrical signaling in E. coli synchronizes as the cells become clustered. We would expect that mutual shielding from the light at higher cell densities should decrease the irradiance that cells experience which should increase the reaction time of the bacteria, however, in our experiments the opposite is observed. We also confirmed that 10 µM of ThT does not affect the growth of the E. coli strains used in the experiment (Figure 1F).
 
-## Emergence of synchronized global wavefronts in E. coli biofilms
+![Video 2.](https://cdn.elifesciences.org/articles/92525/elife-92525-video2.mp4.jpg)
+
+### Emergence of synchronized global wavefronts in E. coli biofilms
 
 A microfluidic chamber (Appendix 1—figure 2A and B, Microfluidic section in Methods) was used to explore the growth of E. coli from single cells into biofilms (Figure 2A, Appendix 1—figure 3A; Prindle et al., 2015; Blee et al., 2020). We exposed our mature biofilm to blue light. We observed a spontaneous rapid rise in spikes within cells in the center of the biofilm while cells at the periphery remained significantly less bright (Figure 2A and B, Video 3). The ion-channel-mediated wavefronts moved from the center of the biofilm to the edges. At this point, the whole biofilm had an equal level of fluorescence intensity. The wavefronts then rapidly collapsed from the edges to the center of the biofilm. Once the wavefront reached the center, the whole system engaged in a period of quiescence and remained dark even in the presence of the continued external light stimulation. After a few minutes of inactivity, the wavefront reemerged from the center of the biofilm and slowly reached the periphery of the biofilm. After reaching the edges for the second time, the hyperpolarization persisted, and the entire biofilm remained bright and showed no noticeable change in response to the continued presence of the external stimuli. The latency of the first peak was 2.73 ± 0.85 ± 0.15 min (mean ± SD ± SE). This was a much smaller period than that of cells in microclusters and sparse cells (Figure 1B and D, Appendix 1—figure 3B). Furthermore, the variability of the latency (SD) was much lower.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig2-v1.jpg)
 
-**Figure 2.:** E. coli biofilm.(A) Representative fluorescence microscopy image as a function of time (1–62 min). Robust global wavefronts can be seen in an E. coli biofilm with ThT. The scale bars for all the images are 10 µm. (B) Global averaged intensity wavefront trace obtained from a 2D section of a biofilm as a function of time (mean ± SD for 30 biofilms from at least three experiments). (C) Globally averaged ion-channel-mediated dynamics in E. coli biofilms for different sized biofilms (68–277 µm). ThT intensity is shown as a function of time.
+**Figure 2.:** (A) Representative fluorescence microscopy image as a function of time (1–62 min). Robust global wavefronts can be seen in an E. coli biofilm with ThT. The scale bars for all the images are 10 µm. (B) Global averaged intensity wavefront trace obtained from a 2D section of a biofilm as a function of time (mean ± SD for 30 biofilms from at least three experiments). (C) Globally averaged ion-channel-mediated dynamics in E. coli biofilms for different sized biofilms (68–277 µm). ThT intensity is shown as a function of time.
+
+![Video 3.](https://cdn.elifesciences.org/articles/92525/elife-92525-video3.mp4.jpg)
 
 Biofilms of different shapes and sizes were grown and we observed similar intensity profiles for all the biofilms (Figure 2C). The peaks of the spiking profiles in all the biofilms (Figure 2C) show that the amplitude of the action potentials does not depend on biofilm density or areal coverage of the biofilm. Consequently, we focused our analyses on time-related properties of the wavefront profiles. Action potentials in eukaryotic organisms are stereotyped events; therefore, the time-dependent properties of the spikes carry the information about the amplitudes of external stimuli (Buzsáki, 2009). The intensity profile of different biofilms across several experiments shows that the wavefront dynamics is robust once the biofilm has an appreciable size (Figure 2C). These data provide evidence that coordinated signaling directs ion-channel-mediated wavefronts in E. coli biofilms. This data suggests that E. coli biofilms use electrical signaling to coordinate long-range responses to light stress.
 
-## Voltage-gated Kch potassium channels mediate ion-channel electrical oscillations in E. coli
+### Voltage-gated Kch potassium channels mediate ion-channel electrical oscillations in E. coli
 
 We hypothesized that the potassium channel, Kch (Milkman, 1994), mediates the ion-channel membrane potential dynamics in E. coli. This ion channel (Figure 3A) helps E. coli to survive environmental stress (Loukin et al., 2005), but its deletion does not impede the development of E. coli from single cells into biofilms (Loukin et al., 2005; Kuo et al., 2005). Kch had not been previously linked to action potentials and electrical signaling in E. coli biofilms (Kuo et al., 2003; Beagle and Lockless, 2021).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig3-v1.jpg)
 
-**Figure 3.:** E. coli.(A) Schematic diagram showing the deletion of the voltage-gated Kch channel in E. coli. (B) ThT fluorescence shown as a function of time of irradiation. Deletion of Kch inactivates the second peak in single cell E. coli DH5α. Data is a mean from 52 single cells from three experimental replicates per time point for DH5α ∆kch mutant (black) plotted against the wildtype single cell E. coli DH5α (blue). (C) Deletion of kch also inactivates the second peak in E. coli biofilms. Data is shown for global membrane potential dynamics for biofilms grown from E. coli DH5α ∆kch mutant (black) and wildtype DH5α (blue).
+**Figure 3.:** (A) Schematic diagram showing the deletion of the voltage-gated Kch channel in E. coli. (B) ThT fluorescence shown as a function of time of irradiation. Deletion of Kch inactivates the second peak in single cell E. coli DH5α. Data is a mean from 52 single cells from three experimental replicates per time point for DH5α ∆kch mutant (black) plotted against the wildtype single cell E. coli DH5α (blue). (C) Deletion of kch also inactivates the second peak in E. coli biofilms. Data is shown for global membrane potential dynamics for biofilms grown from E. coli DH5α ∆kch mutant (black) and wildtype DH5α (blue).
 
 We applied light stimulation to a ∆kch mutant of strain BW25113 from the Keio collection Baba et al., 2006 and saw a fast burst of membrane hyperpolarization identical to the wild-type, but there was a plateau that remained for the whole duration of the experiment (Appendix 1—figure 3C, Video 4). There was no repolarization or slow rise to the second peak seen in the wildtype (Figure 1B and D). This suggests that the K+ ion channel Kch plays a role in the refractoriness and habituation of the dynamics but does not control the initial hyperpolarization event. Using P1-phage transduction, we moved the kch mutation into strain DH5α and confirmed the phenotype with the first peak but no second peak (Figure 3B and C, Video 4). These data showed that Kch potassium ion channels are important for electrical signaling in E. coli in the presence of blue light stress.
 
+![Video 4.](https://cdn.elifesciences.org/articles/92525/elife-92525-video4.mp4.jpg)
+
 To validate the importance of the Kch channel in the membrane potential dynamics of E. coli, we complemented the kch mutation by introducing a plasmid that carries a cloned functional kch gene into strain ∆kch-DH5α. The kch complemented strain displayed the same membrane potential dynamics (Appendix 1—figure 3D) observed in the wildtype (Figure 1B and D). However, the quiescence period in our kch complemented strain was reduced compared with the wildtype, presumably due to an increased degree of expression of the kch gene on a multi-copy plasmid.
 
-## Blue light influences ion-channel-mediated membrane potential events in E. coli
+### Blue light influences ion-channel-mediated membrane potential events in E. coli
 
 To investigate the effect of irradiance on ion-channel-mediated signaling, biofilms were exposed to blue LED light at different irradiances (Figure 4A). For all the irradiances, we observed a first peak in the ThT fluorescence (Figure 4A). The time to the first peak decreased as the light irradiance was increased (Figure 4B). The fast burst of hyperpolarization and repolarization only occurred above the threshold of 15.99 µW/mm2. For irradiances above this threshold, the dynamics exhibited progressively faster hyperpolarization to the second peak with increased light, which was not observed for irradiances below the threshold.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig4-v1.jpg)
 
-**Figure 4.:** E. coli.(A) ThT intensity as a function of time when irradiated with different powers of 440 nm light. The time to the second excitation peak is dependent on the power. All subsequent experiments were done at the irradiance value of 15.99 µW/mm2. (B) Time to first spike plotted as a function of irradiance. Blue-light irradiance affects the time to the first peak in E. coli biofilm. (C) Measurement of extracellular potassium changes for regions close to biofilms as a function of time using fluorescence microscopy. (D) LiveDead Assay using the accumulation of propidium iodide in cells (1) DH5α (n=1842) (2) DH5α ∆kch mutant (n=1008). (E) Comparison between PI-positive cells for the DH5α and the DH5α ∆kch mutant. Statistical significance was calculated using the Student’s t-test, p≤0.05. (F) ThT fluorescence intensity as a function of time for cells in the presence of a ROS scavenger. E. coli cells employ ion-channel-mediated dynamics to manage ROS-induced stress linked to light irradiation. Data was obtained from not less than three experiments.
+**Figure 4.:** (A) ThT intensity as a function of time when irradiated with different powers of 440 nm light. The time to the second excitation peak is dependent on the power. All subsequent experiments were done at the irradiance value of 15.99 µW/mm2. (B) Time to first spike plotted as a function of irradiance. Blue-light irradiance affects the time to the first peak in E. coli biofilm. (C) Measurement of extracellular potassium changes for regions close to biofilms as a function of time using fluorescence microscopy. (D) LiveDead Assay using the accumulation of propidium iodide in cells (1) DH5α (n=1842) (2) DH5α ∆kch mutant (n=1008). (E) Comparison between PI-positive cells for the DH5α and the DH5α ∆kch mutant. Statistical significance was calculated using the Student’s t-test, p≤0.05. (F) ThT fluorescence intensity as a function of time for cells in the presence of a ROS scavenger. E. coli cells employ ion-channel-mediated dynamics to manage ROS-induced stress linked to light irradiation. Data was obtained from not less than three experiments.
 
 We thereafter examined the extracellular changes in the potassium ion, K+ ions, within regions close to biofilms. We used the yellow-green fluorescent potassium (K+) indicator, ION potassium Green-4 (IPG-4), which can track changes in extracellular concentrations of potassium. We observed a sharp rise, a quiescence period and then a plateau similar to that of the ThT dynamics (Figure 4C). This suggests that K+ ions play a vital role in the observed membrane potential dynamics of the biofilm.
 
@@ -86,7 +94,9 @@ We validated our model with a LiveDead assay on the wildtype E. coli DH5α and a
 
 We used the ROS scavenger, catalase, to accelerate the removal of ROS. After the addition of the catalase, cells only registered the presence of the light (via the first peak), but aborted the process of repolarization, so the second hyperpolarization event does not occur (Figure 4F, Video 5). This demonstrates that the ion-channel-mediated membrane potential dynamics is a light stress relief process.
 
-## Development of a Hodgkin-Huxley model for the observed membrane potential dynamics
+![Video 5.](https://cdn.elifesciences.org/articles/92525/elife-92525-video5.mp4.jpg)
+
+### Development of a Hodgkin-Huxley model for the observed membrane potential dynamics
 
 Our data provide evidence that E. coli manages light stress through well-controlled modulation of its membrane potential dynamics. The light-induced ion-channel-mediated dynamics present at the single cell level become more coordinated at the biofilm level (Videos 1 and 3).
 
@@ -96,47 +106,90 @@ We predicted that the ion-channels activate and deactivate differently under the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig5-v1.jpg)
 
-**Figure 5.:** E. coli, predictions and experimental validation.(A) Schematic diagram of the conductance model and its predictions. The model consists of two ion-channel gates. The first channel (bronze, Q) is unknown. The second channel is the potassium channel, Kch (yellow). At the onset regime 0, both ion channels are closed. Exposure to light stress results in a rapid opening of the Q channel, which has a faster-opening gating variable than the Kch channel (regime I). The Q channel has little contribution to the repolarization event, hence the overlap of regimes I and II. (B) In the Hodgkin Huxley type conductance model the current changes are modulated by the two ion channels (Q and Kch) and the leakage channel (L). (C) The predicted ThT fluorescence intensity as a function of time for the Hodgkin Huxley model. Our Hodgkin Huxley model correctly reproduces the E. coli membrane potential dynamics for the wildtype (blue) and kch-mutants (black). The wildtype has two hyperpolarization events. (D) Fluorescence intensity from our microscopy experiments with ThT as a function of time for the wildtype (blue) and Kch-mutants (black).
+**Figure 5.:** (A) Schematic diagram of the conductance model and its predictions. The model consists of two ion-channel gates. The first channel (bronze, Q) is unknown. The second channel is the potassium channel, Kch (yellow). At the onset regime 0, both ion channels are closed. Exposure to light stress results in a rapid opening of the Q channel, which has a faster-opening gating variable than the Kch channel (regime I). The Q channel has little contribution to the repolarization event, hence the overlap of regimes I and II. (B) In the Hodgkin Huxley type conductance model the current changes are modulated by the two ion channels (Q and Kch) and the leakage channel (L). (C) The predicted ThT fluorescence intensity as a function of time for the Hodgkin Huxley model. Our Hodgkin Huxley model correctly reproduces the E. coli membrane potential dynamics for the wildtype (blue) and kch-mutants (black). The wildtype has two hyperpolarization events. (D) Fluorescence intensity from our microscopy experiments with ThT as a function of time for the wildtype (blue) and Kch-mutants (black).
 
 Our two ion-channel electrophysiological model correctly produced the same profile (Figure 5C) as the experimental data (Figure 5D). This model also predicts that the two spikes perform different roles in E. coli. The first spike registers the presence of light stress in the environment, while the second spike modulates the light stress by keeping the cell dynamics robust to the intensity of the external light stress. This mode of signaling is like a specialized type of electrical signaling in neurons called habituation (Figure 6A and B). Sensory neurons can engage in signal habituation to remain unresponsive to an external unwanted signal in the environment and still engage in control of other stimuli (Herman, 2013; Avery et al., 2021; Wu et al., 2020). The model also predicts that the opening of the ion channels creates an increased concentration level of the extracellular ions which subsequently results in the depolarization of neighboring cells (Yang et al., 2020; Martinez Corral et al., 2019; Liu et al., 2017).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig6-v1.jpg)
 
-**Figure 6.:** E. coli.(A) A generic diagram for the membrane voltage during neuronal habituation to a constant stimulus e.g light stress (Avery et al., 2021; Wu et al., 2020). (B) An illustrative diagram of membrane potential dynamics of our experiment as a function of time which is a mirror image of the ThT dynamics for comparison with (A). (C) Membrane potential dynamics for MS mutants of the wildtype, E. coli strain BW25113. (D) Membrane potential dynamics for MS mutants of the wildtype, E. coli DH5α.
+**Figure 6.:** (A) A generic diagram for the membrane voltage during neuronal habituation to a constant stimulus e.g light stress (Avery et al., 2021; Wu et al., 2020). (B) An illustrative diagram of membrane potential dynamics of our experiment as a function of time which is a mirror image of the ThT dynamics for comparison with (A). (C) Membrane potential dynamics for MS mutants of the wildtype, E. coli strain BW25113. (D) Membrane potential dynamics for MS mutants of the wildtype, E. coli DH5α.
 
 We hypothesized that E. coli not only modulates the light-induced stress but also handles the increase of the ROS by adjusting the profile of the membrane potential dynamics. We therefore varied the ROS stress production coefficient at different levels of light in the model. We observed a noticeable change in the membrane potential dynamics. With reduced ROS, the first spike became sharper and the quiescent time lasted longer than previously, with the second peak occurring at much higher intensities of light. With increased ROS, the first spike lasted less than 30 s and the second spike plateau rose to a much higher fluorescence value. This result agrees with our hypothesis and further authenticates the involvement of two channels in the membrane potential dynamics of E. coli.
 
-## Mechanosensitive ion channels (MS) are vital for the first hyperpolarization event in E. coli
+### Mechanosensitive ion channels (MS) are vital for the first hyperpolarization event in E. coli
 
 We hypothesized that the first hyperpolarization event is linked to the voltage-gated calcium channels (VGGCs), so we introduced the fluorescent calcium sensor, GCAM6f Bruni and Kralj, 2020 on a plasmid into the wildtype DH5α strain. When exposed to light stimulation, the spike events observed were consistent with stress-induced signaling of the VGCCs (Bruni et al., 2017; Bruni and Kralj, 2020). However, the calcium transients imply that the VGGCs (Appendix 1—figure 3E) do not play a role in the first peak of the E. coli strain under light stress (Figures 1B, D, 2B).
 
 The MS ion channels help maintain cell turgidity and are also sensitive to stress-related voltage changes (Li et al., 2002; Booth, 2014; Haswell et al., 2011; Martinac et al., 2008; van den Berg et al., 2016). We tested whether the MS ion channels in E. coli, MscK, MscL and MscS, play a role in the first spike of the membrane potential dynamics (Figures 1B, D, 2B). We exposed the mutant strains, ∆MscK, ∆MscS, and ∆MscL of the wildtype, E. coli BW25113 (Figure 6C), to light stimulation and observed no spike dynamics typically observed with the wildtype cells (Figures 1B, D, 2B). Using P1-phage transduction, we transferred the MS channel mutations into the strain DH5α and confirmed the phenotype (Figure 6D).
 
-## Anomalous ion-channel-mediated wavefronts propagate light stress signals in 3D E. coli biofilms
+### Anomalous ion-channel-mediated wavefronts propagate light stress signals in 3D E. coli biofilms
 
 We developed a 3D agent-based fire-diffuse-fire model (ABFDF) using BSim (Gorochowski et al., 2012). No analytical solutions are known for the FDF model in 3D, so simulations using agent-based models were needed. In our simulated 3D spherical biofilm (Figure 7A), we observed global membrane potential dynamics (Figure 7B, Video 6) that are like our experimental data (Figure 2B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig7-v1.jpg)
 
-**Figure 7.:** E. coli biofilm.(A) 3D spherical biofilm in a fluid-filled environment simulated using BSim. (B) ABFDF global electrical signaling wavefront profile averaged over a three-dimensional biofilm. The ThT intensity is predicted as a function of time. (C) Plot of the square radial distance of the wavefront () against time and fit with a power law, R2. For the first peak’s (1) centrifugal motion: R(t)2=Rc2+btγ and (2) centripetal motion: γ=1.21±0.12 from ABFDF simulation data. (γ=2.26±0.31D) Representative confocal fluorescence image for a sessile 3D biofilm containing ThT (Scale bar =20 µm). (E) Plot of  against time fit with a power law, R2 for the first peak’s (1) centrifugal motion: R(t)2=Rc2+btγ and (2) centripetal motion: γ=1.22±0.15 from the experimental data.γ=2.43±0.08
+**Figure 7.:** (A) 3D spherical biofilm in a fluid-filled environment simulated using BSim. (B) ABFDF global electrical signaling wavefront profile averaged over a three-dimensional biofilm. The ThT intensity is predicted as a function of time. (C) Plot of the square radial distance of the wavefront ($R^{2}$) against time and fit with a power law, $R(t)^{2}=R_{c}^{2}+bt^{\gamma}$. For the first peak’s (1) centrifugal motion: $\gamma=1.21\pm0.12$ and (2) centripetal motion: $\gamma=2.26\pm0.31$ from ABFDF simulation data. (D) Representative confocal fluorescence image for a sessile 3D biofilm containing ThT (Scale bar =20 µm). (E) Plot of $R^{2}$ against time fit with a power law, $R(t)^{2}=R_{c}^{2}+bt^{\gamma}$ for the first peak’s (1) centrifugal motion: $\gamma=1.22\pm0.15$ and (2) centripetal motion: $\gamma=2.43\pm0.08$ from the experimental data.
 
-To understand the nature of the wavefront motion in the two phases of the first peak (outward followed by inward motion), the relationship between the radial distance and the time was determined. Figure 7C shows the square radial displacement versus time. Data were fitted with power laws,(1)R(t)2=Rc2+btγ,
+![Video 6.](https://cdn.elifesciences.org/articles/92525/elife-92525-video6.mp4.jpg)
 
-where R(t)2 is the square radial distance of the wavefront, Rc is the critical biofilm size for wavefront initiation, t is the time, b is a constant and γ is the anomalous exponent. The exponent γ describes whether the wave motion is diffusive (γ=1), subdiffusive (γ<1), superdiffusive subballistic (1<γ<2), ballistic (γ=2) or super-ballistic (γ>2) (Alves et al., 2016; Woringer et al., 2020).
+To understand the nature of the wavefront motion in the two phases of the first peak (outward followed by inward motion), the relationship between the radial distance and the time was determined. Figure 7C shows the square radial displacement versus time. Data were fitted with power laws,
 
-All ABFDF simulations produced superdiffusive subballistic behavior for the wavefront from the core to the periphery (centrifugal wave) (γ=1.21±0.12), whereas the periphery to the core (centripetal wave) was super-ballistic (γ=2.26±0.31) (Figure 7C).
+$$
+R(t)^{2}=R_{c}^{2}+bt^{\gamma},
+$$
+
+where $R(t)^{2}$ is the square radial distance of the wavefront, $R_{c}$ is the critical biofilm size for wavefront initiation, $t$ is the time, $b$ is a constant and $\gamma$ is the anomalous exponent. The exponent $\gamma$ describes whether the wave motion is diffusive $(\gamma=1)$, subdiffusive $(\gamma<1)$, superdiffusive subballistic $(1<\gamma<2)$, ballistic $(\gamma=2)$ or super-ballistic $(\gamma>2)$ (Alves et al., 2016; Woringer et al., 2020).
+
+All ABFDF simulations produced superdiffusive subballistic behavior for the wavefront from the core to the periphery (centrifugal wave) $(\gamma=1.21\pm0.12)$, whereas the periphery to the core (centripetal wave) was super-ballistic $(\gamma=2.26\pm0.31)$ (Figure 7C).
 
 We experimentally tested these simulation findings using confocal microscopy and ThT. We grew a three-dimensional biofilm (126 µm x 172 µm x 31.8 µm) and exposed it to blue light (Figure 7D). A timelapse of the sagittal section of the three-dimensional biofilm (Appendix 1—figure 4A) reveals membrane potential dynamic akin to the 2D sections through the biofilms (Figure 2A). The spatiotemporal membrane potential dynamics of the 3D biofilm (Appendix 1—figure 4B, Video 7) was similar to our simulation results (Figure 6B).
 
-Wavefronts propagating in three-dimensional systems emanating from a point source have a curved geometry (Keener and Sneyd, 2009). We tested if the ion-channel wave propagates along the z-axis, adopting the z-plane analysis scheme (Wussling and Salz, 1996; Lipp and Niggli, 1993; Wier and Blatter, 1991). Our experimental data (Figure 7E) showed that the centrifugal wave is superdiffusive subballistic (γ=1.22±0.15), while the wave motion for the centripetal wave is super-ballistic (γ=2.43±0.08), in reasonable agreement with simulation. Furthermore, the results confirm that curvature affects the motion of the wavefronts (Nagy Ungvarai et al., 1992). Blee and co-workers (Blee et al., 2019) previously observed a superdiffusive wave motion for both the centrifugal (γ=1.42±0.06) and centripetal phases (γ=1.79±0.03) of the potassium wavefront in 2D B. subtilis biofilm. The centripetal wavefronts appear to travel faster than the centrifugal wavefronts.
+![Video 7.](https://cdn.elifesciences.org/articles/92525/elife-92525-video7.mp4.jpg)
 
-Using eqn1 we calculated the critical size for wave initiation in 3D E. coli biofilms from the experiments to be 4.71±0.98 µm. This is reasonably close to the value predicted from our ABFDF model, 6.17±1.84 µm. 3D E. coli biofilms, therefore, need to develop a densely packed biofilm above the critical radius for a robust synchronized ion-channel-mediated wavefront to propagate in the system. This contrasts with 2D B subtilis biofilms which need to grow up to 350 µm for a wavefront to emerge in the system (Prindle et al., 2015; Martinez-Corral et al., 2018; Liu et al., 2015). Therefore, our model predicts the transport properties of the wavefront, the patterns of global excitation and the critical radius for wavefront propagation in biofilms (Table 1).
+Wavefronts propagating in three-dimensional systems emanating from a point source have a curved geometry (Keener and Sneyd, 2009). We tested if the ion-channel wave propagates along the z-axis, adopting the z-plane analysis scheme (Wussling and Salz, 1996; Lipp and Niggli, 1993; Wier and Blatter, 1991). Our experimental data (Figure 7E) showed that the centrifugal wave is superdiffusive subballistic ($\gamma=1.22\pm0.15$), while the wave motion for the centripetal wave is super-ballistic ($\gamma=2.43\pm0.08$), in reasonable agreement with simulation. Furthermore, the results confirm that curvature affects the motion of the wavefronts (Nagy Ungvarai et al., 1992). Blee and co-workers (Blee et al., 2019) previously observed a superdiffusive wave motion for both the centrifugal ($\gamma=1.42\pm0.06$) and centripetal phases ($\gamma=1.79\pm0.03$) of the potassium wavefront in 2D B. subtilis biofilm. The centripetal wavefronts appear to travel faster than the centrifugal wavefronts.
+
+Using $eqn1$ we calculated the critical size for wave initiation in 3D E. coli biofilms from the experiments to be 4.71±0.98 µm. This is reasonably close to the value predicted from our ABFDF model, 6.17±1.84 µm. 3D E. coli biofilms, therefore, need to develop a densely packed biofilm above the critical radius for a robust synchronized ion-channel-mediated wavefront to propagate in the system. This contrasts with 2D B subtilis biofilms which need to grow up to 350 µm for a wavefront to emerge in the system (Prindle et al., 2015; Martinez-Corral et al., 2018; Liu et al., 2015). Therefore, our model predicts the transport properties of the wavefront, the patterns of global excitation and the critical radius for wavefront propagation in biofilms (Table 1).
+
+**Table 1.**
+ Fit constants for Equation 1 to results from the ABFDF and experimental data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Constants</th>
+      <th>Symbol</th>
+      <th>Centrifugal wavefrontModel</th>
+      <th>Centripetal wavefrontModel</th>
+      <th>Centrifugal wavefrontExperiment</th>
+      <th>Centripetal wavefrontExperiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>The anomalous exponent</td>
+      <td>γ</td>
+      <td>1.21 ± 0.12</td>
+      <td>2.26 ± 0.31</td>
+      <td>1.22 ± 0.15</td>
+      <td>2.43 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>The critical biofilm size</td>
+      <td>Rc</td>
+      <td>6.17 ± 1.84 µm</td>
+      <td>–</td>
+      <td>4.71 ± 0.98 µm</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
 
 As expected, we observed a slow decrease of velocity as the wavefront spread from the core towards the periphery that is predicted by the Eikonal approximation. For the velocity of the wavefront that travels back to the core, we observed a decrease and subsequently a sharp increase at distances close to the core of the biofilm (Figure 8A and B). This unexpected behavior may be linked to the heterogeneity of microclusters within the bacterial biofilms. A nonlinear relationship is also observed between the wavefront velocity and curvature for centrifugal and centripetal wavefronts (Appendix 1—figure 5A, B and C).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/92525/elife-92525-fig8-v1.jpg)
 
-**Figure 8.:** E. coli biofilms.(A) Nonlinear relationship between propagation velocity of the wavefront and the time for (1) centrifugal wave and (2) centripetal wave of the first peak. (B) Nonlinear relationship between propagation velocity of the wavefront and the radial distance for (1) centrifugal wave and (2) centripetal wave of the first peak.
+**Figure 8.:** (A) Nonlinear relationship between propagation velocity of the wavefront and the time for (1) centrifugal wave and (2) centripetal wave of the first peak. (B) Nonlinear relationship between propagation velocity of the wavefront and the radial distance for (1) centrifugal wave and (2) centripetal wave of the first peak.
 
 ## Discussion
 
@@ -162,11 +215,11 @@ The electrophysiological properties of bacteria is a rapidly evolving area (Bena
 
 ## Methods
 
-## Bacterial strains
+### Bacterial strains
 
 The bacterial strains and the media recipes used in this study are listed in the Appendix 1—table 4. All experiments were performed with the DH5α and BW25113 strains of E. coli. All other strains were derived from these two and are listed in Table 1, Methods. When genes were moved by transduction into DH5α, the resulting mutations were sequenced to confirm authenticity and that the strains did not have any additional mutations.
 
-## Dyes and concentrations
+### Dyes and concentrations
 
 ThT was used at a final working concentration of 10 µM for both LB and M9 media. This is the concentration that did not inhibit bacterial cell growth or influence the voltage flux in previous experiments (Prindle et al., 2015; Blee et al., 2020; Liu et al., 2017). Fresh ThT was made up on the day of each experiment and added to the media containing the cells.
 
@@ -174,45 +227,45 @@ To measure extracellular potassium, the IPG-4 AM was converted to its membrane i
 
 CCCP and TMRM were used at the final concentrations of 100 µM and 100 nM, respectively. Propidium iodide (PI) was used at a final concentration of 1 µg/ml.
 
-## Microfluidics setup and experimental design
+### Microfluidics setup and experimental design
 
-All microfluidic experiments were performed with IBIDI uncoated glass bottom µ-Slide VI0.5 flow cells (Thistle Scientific, UK) which have dimensions of 17mm×3.8mm×0.54mm for the length, width, and height, respectively (Appendix 1—figure 1A and B). The system yielded successful growth for all E. coli strains and allowed high-resolution microscopy images to be taken. Single cells and microclusters were also cultured in this system. The microfluidic components and software are listed in Appendix 1—table 4.
+All microfluidic experiments were performed with IBIDI uncoated glass bottom µ-Slide VI0.5 flow cells (Thistle Scientific, UK) which have dimensions of $17mm\times3.8mm\times0.54mm$ for the length, width, and height, respectively (Appendix 1—figure 1A and B). The system yielded successful growth for all E. coli strains and allowed high-resolution microscopy images to be taken. Single cells and microclusters were also cultured in this system. The microfluidic components and software are listed in Appendix 1—table 4.
 
-Growth media (LB or M9) contained in a 20 ml syringe (BD Emerald, UK) were delivered to the microfluidic wells by an Aladdin NE-1002 Programmable Syringe Pump (World Precision Instruments, UK). The media was replenished at intervals throughout the experiment. A C-Flex laboratory tubing with I.D. x O.D. 1/32 in. x 3/32 in (Sigma-Aldrich) and Elbow Luer connector male (Thistle Scientific, UK) completed the microfluidic setup. A 0.22 µm filter was installed at the syringe hub before attaching the syringe needle 0.8 × 40 mm to maintain sterility and reduce the number of air bubbles. Exchangeable components of the microfluidic setup were used only once. Experiments were conducted in more than one channel at a time for data replicates. Prior to the start of the experiments, the flow cell chambers were primed with appropriate media to achieve faster cell attachment. The microscope and all the components of the microfluidic setup were confined within the custom-built Perspex microscope chamber which was maintained at 37oC using an Air-THERM ATX (World Precision Instrument Ltd.).
+Growth media (LB or M9) contained in a 20 ml syringe (BD Emerald, UK) were delivered to the microfluidic wells by an Aladdin NE-1002 Programmable Syringe Pump (World Precision Instruments, UK). The media was replenished at intervals throughout the experiment. A C-Flex laboratory tubing with I.D. x O.D. 1/32 in. x 3/32 in (Sigma-Aldrich) and Elbow Luer connector male (Thistle Scientific, UK) completed the microfluidic setup. A 0.22 µm filter was installed at the syringe hub before attaching the syringe needle 0.8 × 40 mm to maintain sterility and reduce the number of air bubbles. Exchangeable components of the microfluidic setup were used only once. Experiments were conducted in more than one channel at a time for data replicates. Prior to the start of the experiments, the flow cell chambers were primed with appropriate media to achieve faster cell attachment. The microscope and all the components of the microfluidic setup were confined within the custom-built Perspex microscope chamber which was maintained at $37^{o}C$ using an Air-THERM ATX (World Precision Instrument Ltd.).
 
-For single cell experiments, cells were left static in the microfluidic chamber for 2 hr for cells to attach to the substrate. The media was then delivered at flow rates of 3 µL/min and subsequently maintained at 5 µL/min to remove unattached cells from the system. After 1 hr of media flow, data were only collected for cells that were attached to the substrate. For biofilms, the system was left static 2–3 hr on the microscope after loading to allow the cells attach. Media flow was initiated at the rate of 5–6 µL/min and maintained for a further ≈ 12 hr (see Time-lapse Microscopy section).
+For single cell experiments, cells were left static in the microfluidic chamber for 2 hr for cells to attach to the substrate. The media was then delivered at flow rates of 3 µL/min and subsequently maintained at 5 µL/min to remove unattached cells from the system. After 1 hr of media flow, data were only collected for cells that were attached to the substrate. For biofilms, the system was left static 2–3 hr on the microscope after loading to allow the cells attach. Media flow was initiated at the rate of 5–6 µL/min and maintained for a further $≈$ 12 hr (see Time-lapse Microscopy section).
 
-## Cell culture and growth conditions
+### Cell culture and growth conditions
 
-## Single cell culture
+#### Single cell culture
 
-Cells were streaked onto an Agar plate from −80oC glycerol stocks a day prior to the experiment and incubated at 37oC overnight. The following day, 10 ml of Luria Broth (LB) in a glass universal was inoculated with one colony of the required E. coli strain. The inoculum was then incubated overnight in a shaking incubator at 200 rpm at 37oC. The next day, 10μl of the inoculum was transferred to a fresh 10 ml LB and incubated in a shaking incubator at 200 rpm at 37oC for 4.5 hours or OD600≈0.8. The optical density of the cells was measured using a spectrometer (JENWAY, Cole-Parmer UK). 10μM ThT was added to the inoculum and left static for 20 min. 200μl of the cell suspensions were then seeded into the required chambers of the microfluidic device. The microfluidic device was mounted on the microscope after attaching the other microfluidic components, such as tubes and tube connectors. The instrument was left static for 2 hr to allow for cell attachment before the media was delivered under flow. To sustain the growth temperature at 37oC, a custom-built Perspex microscope chamber heated using an Air-THERM ATX (World Precision Instrument Ltd.) was employed. The salts for the M9 media are listed in Appendix 1—table 4. Data were collected for both sparse cells and cells existing within microclusters. The single cell experiments were done in Luria Broth (LB) media and replicated in Minimal media M9; Appendix 1—figure 1C to demonstrate independence on the exact media used.
+Cells were streaked onto an Agar plate from $−80^{o}C$ glycerol stocks a day prior to the experiment and incubated at $37^{o}C$ overnight. The following day, 10 ml of Luria Broth (LB) in a glass universal was inoculated with one colony of the required E. coli strain. The inoculum was then incubated overnight in a shaking incubator at 200 rpm at $37^{o}C$. The next day, $10\mul$ of the inoculum was transferred to a fresh 10 ml LB and incubated in a shaking incubator at 200 rpm at $37^{o}C$ for 4.5 hours or $OD_{600}≈0.8$. The optical density of the cells was measured using a spectrometer (JENWAY, Cole-Parmer UK). $10\muM$ ThT was added to the inoculum and left static for 20 min. $200\mul$ of the cell suspensions were then seeded into the required chambers of the microfluidic device. The microfluidic device was mounted on the microscope after attaching the other microfluidic components, such as tubes and tube connectors. The instrument was left static for 2 hr to allow for cell attachment before the media was delivered under flow. To sustain the growth temperature at $37^{o}C$, a custom-built Perspex microscope chamber heated using an Air-THERM ATX (World Precision Instrument Ltd.) was employed. The salts for the M9 media are listed in Appendix 1—table 4. Data were collected for both sparse cells and cells existing within microclusters. The single cell experiments were done in Luria Broth (LB) media and replicated in Minimal media M9; Appendix 1—figure 1C to demonstrate independence on the exact media used.
 
 For the LiveDead Assay, the same protocol was followed. However, before seeding the well with 200 µL of the inoculum, 10 µL (1 µg/mL of the stock solution) of PI was added to the 10 ml universal containing cells and ThT.
 
 For the combined CCCP experiments, the same protocol was also followed. 100 µM of CCCP was pipetted into the universal containing inoculum and ThT. This was left for 50 min, then 200 µL of the suspension was transferred into the wells and cells were exposed to blue light stress.
 
-## Biofilm growth
+#### Biofilm growth
 
-The E. coli DH5α strain was chosen based on its ability to adhere to surfaces and to grow into biofilms (Huang et al., 1994; Soleimani et al., 2013; Jayaraman et al., 1997). Biofilms were grown in one of the chambers of the microfluidic devices (triplicates with control experiments). Single cell E. coli was cultured as described in section (I). 200 µL of bacteria culture suspensions with ThT were added and then loaded in the flow cell to initiate biofilm formation. The setup was left static for 2 hr within the microscope chamber before the media flow was initiated at a rate of 5–6 µL/min for a further 12 hr. Under sterile and constant media flow (explained in the Microfluidic section) to produce optimal growth conditions, mature sessile biofilms were observed. Our protocol was optimized to obtain mature sessile DH5α biofilm after 15 hr. The growth temperature was maintained at 37oC using a custom-built Perspex microscope chamber heated using an Air-THERM ATX (World Precision Instrument Ltd.). Media replacement was done within the microscope chamber to maintain sterility and avoid air bubbles.
+The E. coli DH5α strain was chosen based on its ability to adhere to surfaces and to grow into biofilms (Huang et al., 1994; Soleimani et al., 2013; Jayaraman et al., 1997). Biofilms were grown in one of the chambers of the microfluidic devices (triplicates with control experiments). Single cell E. coli was cultured as described in section (I). 200 µL of bacteria culture suspensions with ThT were added and then loaded in the flow cell to initiate biofilm formation. The setup was left static for 2 hr within the microscope chamber before the media flow was initiated at a rate of 5–6 µL/min for a further 12 hr. Under sterile and constant media flow (explained in the Microfluidic section) to produce optimal growth conditions, mature sessile biofilms were observed. Our protocol was optimized to obtain mature sessile DH5α biofilm after 15 hr. The growth temperature was maintained at $37^{o}C$ using a custom-built Perspex microscope chamber heated using an Air-THERM ATX (World Precision Instrument Ltd.). Media replacement was done within the microscope chamber to maintain sterility and avoid air bubbles.
 
-## Time-lapse microscopy and image acquisition
+### Time-lapse microscopy and image acquisition
 
-Fluorescence microscopy was performed with an Olympus IX83 inverted microscope (Klaus Decon Vision) using Blue Lumencor LED excitation (illumination), a 60 x (NA 1.42 Plan Apo N) oil immersion objective and the CFP filter set (Chroma [89000]). Time-lapse fluorescence images were taken with a Retiga R6 CCD camera [Q-imaging]. ThT fluorescence was measured in the CFP channel using an excitation filter (Ex) 440/20 nm and an emission filter (Em) 482/25. PI fluorescence was measured with the Ex 575/20 nm and Em 641/75 nm. Images were taken every 1 min with an exposure time of 50 ms and camera gain of 3. Prior to setting up the microfluidic apparatus on the microscope, the chamber was maintained at 37oC for at least 3 hr. Image acquisition on the PC was carried out using the MetaMorph software (Molecular devices). This microscope and the settings were used for all observations on single cells and 2D biofilms. The settings were varied for the irradiance experiment (see section on Irradiance measurement below). Images in Appendix 1—figure 1A were obtained at different time scales (every 10 s) for comparison. The pump was turned off before the image acquisition to minimize image drift and vibrations.
+Fluorescence microscopy was performed with an Olympus IX83 inverted microscope (Klaus Decon Vision) using Blue Lumencor LED excitation (illumination), a 60 x (NA 1.42 Plan Apo N) oil immersion objective and the CFP filter set (Chroma [89000]). Time-lapse fluorescence images were taken with a Retiga R6 CCD camera [Q-imaging]. ThT fluorescence was measured in the CFP channel using an excitation filter (Ex) 440/20 nm and an emission filter (Em) 482/25. PI fluorescence was measured with the Ex 575/20 nm and Em 641/75 nm. Images were taken every 1 min with an exposure time of 50 ms and camera gain of 3. Prior to setting up the microfluidic apparatus on the microscope, the chamber was maintained at $37^{o}C$ for at least 3 hr. Image acquisition on the PC was carried out using the MetaMorph software (Molecular devices). This microscope and the settings were used for all observations on single cells and 2D biofilms. The settings were varied for the irradiance experiment (see section on Irradiance measurement below). Images in Appendix 1—figure 1A were obtained at different time scales (every 10 s) for comparison. The pump was turned off before the image acquisition to minimize image drift and vibrations.
 
 Fluorescence confocal 3D image stacks for the 3D biofilm were acquired using a CSU-X1 spinning disc confocal (Yokagowa) on a Zeiss Axio-Observer Z1 microscope with a 63 x/ 1.40 Plan-Apochromat objective, Evolve EMCCD camera (Photometrics) and motorised XYZ stage (ASI). A 445 nm laser line was used for ThT excitation. The 445 nm laser was controlled using an AOTF through the Laserstack (Intelligent Imaging Innovations (3I)) allowing for rapid ‘shuttering’ of the laser and attenuation of the laser power. Slidebook software (3I) was used to capture images every 1 min with 100 ms exposures. Movies were analysed in Slidebook, ImageJ and Imaris (bitplane) software.
 
-## Image and data analyses
+### Image and data analyses
 
 ImageJ (National Institute of Health), MATLAB, BiofilmQ and Imaris (bitplane) software were used for image analysis. Data analyses and plots were done with Python, BiofilmQ and GraphPad (Prism). Python and Scipy package were used for mathematical modeling. Model curve fits were done with Python Scipy package and OriginPro.
 
-## Single cells
+#### Single cells
 
 Single cell image analysis was conducted using ImageJ (National Institute of Health). Background subtraction was done using the ‘ImageJ rolling ball’ background plugin with radii of 8–11 µm. This was influenced by experimental conditions, for example media. An ImageJ custom script was used for drift correction. Data were plotted with standard deviations for the error bars. Data were normalized in python for final plotting.
 
 For LiveDead assay experiments we used the imageJ plugin ‘cell counter’ to identify and count cells. Only cells that are hyperpolarized were counted in the experiment as live and only cells that appeared red after the experimental duration were counted as dead. Time to first peak analysis was done by measuring the individual times for each single cell to experience the first hyperpolarization event.
 
-## Biofilms
+#### Biofilms
 
 To overcome the challenges of diversity in structure and size of the biofilms obtained in our experiments, we conducted image analysis of mature sessile biofilms with BiofilmQ. BiofilmQ is a high-throughput MATLAB-based image processing and analysis software designed for spatiotemporal studies of both 2D and 3D biofilms. A detailed description of BiofilmQ can be found Hartmann et al., 2021. It has been used in a number of recent of recent investigations of biofilm (Wucher et al., 2021; Díaz-Pascual et al., 2019). We were able to accurately obtain membrane potential dynamics of biofilms by tracking ThT traces within the entire biofilm (2D and 3D confocal stacks) using this software.
 
@@ -222,18 +275,22 @@ To verify the accuracy of this software, we also measured the temporal dynamics 
 
 The optical sections for the velocity measurements were obtained with a combination of both the BiofilmQ and IMARIS software. Radial distances of biofilm volumes from the substrate to the core of the biofilm were made with both BiofilmQ and IMARIS. The choice of the appropriate optical sections perpendicular to the z-slices were also made by the combination of both software.
 
-## 440 nm and 445 nm light stimulation
+### 440 nm and 445 nm light stimulation
 
 E. coli cells and biofilms were treated with blue light using an Olympus IX83 440 nm-LED and 445 nm laser line. The cells were exposed to the light every 1 min. Experiments were performed with at least three biological replicates.
 
-## Irradiance measurements
+### Irradiance measurements
 
-Irradiance experiments were conducted with the Olympus IX83 440 nm-LED. Therefore, the irradiance was varied to ascertain the effect of the light stimulation on the membrane potential dynamics of E. coli. A Newport power/energy meter (Newport Corporation Irvine US) was used for the irradiance measurements. The power of the 440 nm light was varied by adjusting the percentage light illumination via the CFP light, for example 175 of the 255CFP that corresponds to 2.43μW as measured with the power meter. Uniform illumination of the sample ROI was always maintained via Köhler illumination.
+Irradiance experiments were conducted with the Olympus IX83 440 nm-LED. Therefore, the irradiance was varied to ascertain the effect of the light stimulation on the membrane potential dynamics of E. coli. A Newport power/energy meter (Newport Corporation Irvine US) was used for the irradiance measurements. The power of the 440 nm light was varied by adjusting the percentage light illumination via the CFP light, for example 175 of the 255CFP that corresponds to $2.43\muW$ as measured with the power meter. Uniform illumination of the sample ROI was always maintained via Köhler illumination.
 
-To determine the irradiance, we first measured the power of the LED light at the sample plane in mW. The diameter of field of the view (FOV) was then calculated by dividing the objective lens field number (FN) by its magnification. For the Klaus 60 x lens, the FN is 26.5mm. The value of the diameter of the FOV was then used to calculate the area of field of view in mm2. Finally, the irradiance I is given by(2)I=PowerArea.
+To determine the irradiance, we first measured the power of the LED light at the sample plane in $mW$. The diameter of field of the view (FOV) was then calculated by dividing the objective lens field number (FN) by its magnification. For the Klaus 60 x lens, the FN is $26.5mm$. The value of the diameter of the FOV was then used to calculate the area of field of view in $mm^{2}$. Finally, the irradiance $I$ is given by
 
-The irradiance value of 15.99μW/mm2 was used for all the other experiments except when the irradiance was specifically varied (Figure 2D).
+$$
+I=\frac{Power}{Area}.
+$$
 
-## Bacterial strain availability
+The irradiance value of $15.99\muW/mm^{2}$ was used for all the other experiments except when the irradiance was specifically varied (Figure 2D).
+
+### Bacterial strain availability
 
 Strains and further information should also be directed to the lead contact, Thomas Waigh (t.a.waigh@manchester.ac.uk).

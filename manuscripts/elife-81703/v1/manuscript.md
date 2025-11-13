@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Molecular, Cellular and Developmental Biology, Yale University New Haven United States
+1. Department of Molecular, Cellular and Developmental Biology, Yale University New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
 ## Abstract
 
-The agricultural pest Drosophila suzukii differs from most other Drosophila species in that it lays eggs in ripe, rather than overripe, fruit. Previously, we showed that changes in bitter taste sensation accompanied this adaptation (Dweck et al., 2021). Here, we show that D. suzukii has also undergone a variety of changes in sweet taste sensation. D. suzukii has a weaker preference than Drosophila melanogaster for laying eggs on substrates containing all three primary fruit sugars: sucrose, fructose, and glucose. Major subsets of D. suzukii taste sensilla have lost electrophysiological responses to sugars. Expression of several key sugar receptor genes is reduced in the taste organs of D. suzukii . By contrast, certain mechanosensory channel genes, including no mechanoreceptor potential C , are expressed at higher levels in the taste organs of D. suzukii , which has a higher preference for stiff substrates. Finally, we find that D. suzukii responds differently from D. melanogaster to combinations of sweet and mechanosensory cues. Thus, the two species differ in sweet sensation, mechanosensation, and their integration, which are all likely to contribute to the differences in their egg-laying preferences in nature.
+The agricultural pest Drosophila suzukii differs from most other Drosophila species in that it lays eggs in ripe, rather than overripe, fruit. Previously, we showed that changes in bitter taste sensation accompanied this adaptation (Dweck et al., 2021). Here, we show that D. suzukii has also undergone a variety of changes in sweet taste sensation. D. suzukii has a weaker preference than Drosophila melanogaster for laying eggs on substrates containing all three primary fruit sugars: sucrose, fructose, and glucose. Major subsets of D. suzukii taste sensilla have lost electrophysiological responses to sugars. Expression of several key sugar receptor genes is reduced in the taste organs of D. suzukii. By contrast, certain mechanosensory channel genes, including no mechanoreceptor potential C, are expressed at higher levels in the taste organs of D. suzukii, which has a higher preference for stiff substrates. Finally, we find that D. suzukii responds differently from D. melanogaster to combinations of sweet and mechanosensory cues. Thus, the two species differ in sweet sensation, mechanosensation, and their integration, which are all likely to contribute to the differences in their egg-laying preferences in nature.
 
 ## Introduction
 
@@ -35,15 +35,31 @@ Here, we investigate the sensation of sugars in D. suzukii and its contribution 
 
 ## Results
 
-## Taste contributes to the difference in egg-laying preference between the two species
+### Taste contributes to the difference in egg-laying preference between the two species
 
 We first wanted to confirm that differences in the taste responses of D. melanogaster and D. suzukii contribute to their differences in egg-laying preference for ripe vs. overripe strawberry. We tested their preferences in a two-choice egg-laying paradigm in which the flies could lay eggs on purées of either ripe or overripe strawberry (Figure 1A). To minimize visual cues, the assay was performed in the dark; to minimize mechanosensory cues, equivalent concentrations of agarose were added to each purée; to minimize olfactory cues, we surgically removed the olfactory organs—the antennae and maxillary palps—from the flies. Deprived of these other cues, D. melanogaster showed a robust preference for the overripe purée, while D. suzukii did not (Figure 1B). The simplest interpretation of this result is that taste contributes to the difference in egg-laying preference between the two species.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig1-v1.jpg)
+
+**Figure 1.:** (A) Two-choice egg-laying paradigm. Female flies (n=4–10 flies per plate) whose olfactory organs had been removed were allowed to lay eggs in the dark. The preference index was calculated as (#eggs in overripe purée - #eggs in ripe purée)/total #eggs. (B) Egg-laying preferences of the two species, without olfactory organs. Each egg-laying preference index was compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test was used to compare the preference indices between species. n=18–20. ns, not significant; *p<0.05; ****p<0.0001. (C) Egg-laying preference of females homozygous mutant for eight sugar receptor genes and of control females heterozygous for the eight mutations. n=18–20. Error bars are SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Given a choice between whole, intact ripe or overripe organic strawberries obtained commercially, D. suzukii and D. melanogaster in cages showed opposite preferences. n=7–9. (B) Given a choice between ripe and overripe strawberry purées made from strawberries grown in a greenhouse, D. suzukii and D. melanogaster in cages showed opposite preferences. n=20. Each egg-laying preference index was compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test was used to compare the preference indices between species. *p<0.05; **p<0.01; ****p<0.0001. Error bars are SEM.
+
 Does the strong preference of D. melanogaster for overripe strawberry depend on sugar sensation? We took advantage of an octuple mutant in which eight of nine Gr sugar receptor genes are mutated (Ahn et al., 2017; Yavuz et al., 2014). After their olfactory organs had been removed, these mutant flies showed a lower preference for overripe strawberry purée than control flies whose olfactory organs had also been removed (Figure 1C). These results suggest that sugar sensation contributes to the preference of D. melanogaster for overripe fruit purée.
 
-## D. suzukii shows a weaker egg-laying preference than D. melanogaster for sweeter substrates
+### D. suzukii shows a weaker egg-laying preference than D. melanogaster for sweeter substrates
 
 To investigate whether D. suzukii and D. melanogaster differ in their response to sugars, we first used a single-fly two-choice egg-laying preference paradigm. Flies can choose to lay eggs on either of two agarose substrates containing different sugar concentrations: one with 100 mM sugar, and the other with either 0 mM, 10 mM, 30 mM, or 60 mM concentrations of the same sugar (Figure 2A). A preference index was calculated based on the number of eggs on each substrate. Sucrose, fructose, and glucose, the main sugars in most fruits, were each tested.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig2-v1.jpg)
+
+**Figure 2.:** (A) The single-fly egg-laying preference paradigm. The preference index is calculated as (#eggs in higher sugar concentration - #eggs in lower sugar concentration)/total #eggs. (B–D) Preference indices for the indicated concentrations of (B) sucrose, (C) fructose, and (D) glucose. Each egg-laying preference index was compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test was used to compare the preference indices between species. n=18–20. ns, not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The egg-laying preference for sucrose vs. sorbitol, a sugar alcohol considered tasteless to the fly. The preferences are the same as between sucrose and plain agarose (taken from Figure 2B). Each egg-laying preference index is compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test is used to compare the preference indices between species. n=18–20. ns, not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM.
 
 Both D. suzukii and D. melanogaster preferred the medium with 100 mM sucrose to that with no sucrose, but the preference of D. suzukii was weaker than that of D. melanogaster (Figure 2B), consistent with a recent study that used higher concentrations (Durkin et al., 2021). When choosing between 100 mM and 10 mM sucrose, D. melanogaster again showed a strong preference for the higher concentration, but D. suzukii showed little if any preference. And when choosing between 100 mM and 30 mM or between 100 mM and 60 mM sucrose, D. suzukii again exhibited a weaker preference than D. melanogaster.
 
@@ -55,11 +71,19 @@ To test the possibility that the preferences of flies for high-sugar concentrati
 
 In conclusion, D. suzukii showed a weaker egg-laying preference for sweeter substrates than D. melanogaster.
 
-## Major subsets of D. suzukii taste sensilla have lost sugar responses
+### Major subsets of D. suzukii taste sensilla have lost sugar responses
 
 As species evolve and adapt to new environments, changes can occur either in sensory neurons or in the circuits that they drive. We wondered if the shifts we have found in the taste behavior of D. suzukii could be explained at least in part by changes in peripheral physiology.
 
 There are 31 taste sensilla in the labellum, the primary taste organ of the D. melanogaster head: 11 small (S) sensilla, 9 large (L) sensilla, and 11 intermediate (I) sensilla (Weiss et al., 2011). The sensillum repertoire of D. suzukii is similar in its spatial organization but has lost two S sensilla and two I sensilla (Figure 3A; Dweck et al., 2021). We examined the electrophysiological responses (Figure 3B–K) of all taste sensilla on the labellum of both species to 100 mM concentrations of sucrose, fructose, and glucose.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig3-v1.jpg)
+
+**Figure 3.:** All sugars were tested at 100 mM concentrations. (A) Taste sensilla of the labellum. Figure 3A is reproduced from Figure 3D by Dweck et al., 2021. (B) Sample traces from the indicated sensilla. (C–K) Responses to the indicated sugar of each sensillum of each morphological class: S=small; L=large; I=intermediate. (L) Taste sensilla on the three distal tarsal segments of the female foreleg; the map is the same for D. suzukii and D. melanogaster. (M–O) Responses to the indicated sugar of each of the indicated tarsal sensilla. n=5-10 for responses≥5 spikes/s; otherwise, n=3-10. Error bars are SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sample traces of the L8 sensillum to the indicated sucrose concentrations in each species. (B) Dose dependence of the firing frequency of the L8 sensillum of each species. ns, not significant. *p<0.05. n=5–10. The Mann-Whitney test is used to compare the spike rates between species. (C) Dose dependence of the firing frequency of the L8 sensillum of each species, taken from panel (B). ns, not significant. *p<0.05; **p<0.01; ***p<0.001. The Mann-Whitney test is used to compare the spike rates between different concentrations. (D) Sample traces from the f5s sensillum to the indicated sucrose concentrations in each species. (E) Dose dependence of the firing frequency of the f5s sensillum of each species. ns, not significant. *p<0.05; **p<0.01. n=6–10. The Mann-Whitney test is used to compare the spike rates between species. (F) Dose-dependence of firing frequency of the f5s sensillum of each species, taken from panel (E). ns, not significant. *p<0.05; ***p<0.001; ****p<0.0001. The Mann-Whitney test is used to compare the spike rates between different concentrations. (G and H) Egg-laying preferences for the indicated sucrose concentrations of D. melanogaster (G) and D. suzukii (H). Each egg-laying preference index is compared to 0 using the Wilcoxon signed-rank test. n=18–20. ns, not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM.
 
 A number of D. suzukii labellar sensilla have lost sugar responses. Sucrose elicited responses from all 11 of the S sensilla in D. melanogaster, but only 3 of the S sensilla in D. suzukii (Figure 3B top traces, Figure 3C). Fructose evoked responses of more than 10 spikes/s from all 9 of the L sensilla in D. melanogaster, but not from any of their D. suzukii counterparts (Figure 3G). We note that in D. melanogaster, the electrophysiological responses to fructose are weaker than those to sucrose. Glucose responses were comparable in the two species (Figure 3I–K).
 
@@ -69,13 +93,21 @@ Among the sensilla that responded strongly to 100 mM sugar concentrations in bot
 
 In summary, we found differences in the physiological responses of the two species to sugars. A major subset of S sensilla have lost response to sucrose in D. suzukii, and L sensilla have lost response to fructose. These losses could contribute to the weaker egg-laying preference of D. suzukii for sweeter substrates.
 
-## Reduced expression of sugar receptor genes in the leg and labellum of D. suzukii
+### Reduced expression of sugar receptor genes in the leg and labellum of D. suzukii
 
 We wondered if the taste organs of D. suzukii and D. melanogaster differed in their expression of sugar receptor genes. We first constructed leg transcriptomes for female forelegs of both species. Rather than use entire legs, we dissected them so as to collect the tibia and tarsal segments, which contain taste sensilla, and to exclude other segments, which contain a large mass of muscle tissue. Four biological replicates were analyzed from each species, with each replicate containing the tibia and tarsi of 600 legs.
 
 By focusing our analysis on leg segments containing taste sensilla, we were able to detect the expression of 13 Gustatory receptor (Gr) genes in the leg of D. melanogaster (Figure 4—figure supplement 1, Supplementary file 1). These included the nine Gr genes previously identified as sugar receptor genes (Gr5a, Gr43a, Gr61a, and Gr64a-f) (Supplementary file 1), most of which have previously been found to be expressed in legs via GAL4 driver expression (Ling et al., 2014; Thoma et al., 2016). Also detected in the leg of D. melanogaster were 13 Ionotropic receptors (IRs), many of which have been detected in legs via GAL4 expression (Koh et al., 2014; Sánchez-Alcañiz et al., 2018), and 30 Odorant binding proteins (Obps) including several previously reported in the leg (Galindo and Smith, 2001; Jeong et al., 2013; Figure 4—figure supplement 1, Supplementary file 1).
 
 We compared the leg transcriptomes of D. melanogaster and D. suzukii with labellar transcriptomes prepared earlier by analogous methods (Dweck et al., 2021). A principal components analysis (PCA) showed clear clustering of transcriptomes by organ and by species (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig4-v1.jpg)
+
+**Figure 4.:** (A) Principal component analysis of the labellar and leg transcriptomes of D. melanogaster and D. suzukii. (B) Integrated genomics viewer (IGV) browser view of the aligned reads of the nine sugar Gr genes from RNAseq of the legs in both species. Y-axis is adjusted based on the number of mapped reads for qualitative comparison between species. (C) Volcano plot of leg transcriptome highlighting differentially expressed sugar Gr genes (|log2FC|≥0.58, adjusted p-value<0.05). All other analyzed genes with −log10 (adjusted p-value) less than 5 and log2 fold-change between –6 and 4 are shown in gray. (D) RT-quantitative PCR (qPCR) analysis of three Gr sugar receptor genes that were differentially expressed in the RNAseq analysis. Multiple unpaired t-tests are used to compare the expression level between species. n=3. *p<0.05; **p<0.01; ****p<0.0001. (E) IGV browser view of the aligned reads of the nine sugar Gr genes from RNAseq of the labellum. Y-axis is adjusted based on the number of mapped reads for qualitative comparison between species. (F) Volcano plot of labellar transcriptome highlighting differentially expressed sugar Gr genes (|log2FC|≥0.58, adjusted p-value<0.05). All other analyzed genes with −log10 (adjusted p-value) less than 25 and log2 fold-change between –6 and 4 are shown in gray. (G) RT-qPCR results of five sugar Gr genes in the labellum. Multiple unpaired t-tests are used to compare the expression level between species. n=3. *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Shown are leg expression levels of Grs (A), Irs (B), and Obps (C) that have average FPKM (fragments per kilobase of feature per million mapped reads) values ≥0.5.
 
 We next performed a pairwise comparison between the leg transcriptomes of D. suzukii and D. melanogaster. The pan-neuronal gene nSyb (neuronal Synaptobrevin) and the IR co-receptor genes Ir25a and Ir76b were expressed at similar levels between the two species. Among the nine sugar receptor genes, expression of three (Gr64a, Gr64d, and Gr64e) was reduced in D. suzukii with an adjusted p-value<0.05 (Figure 4B and C, Supplementary file 3). None of the sugar Grs showed a higher level of expression in D. suzukii than D. melanogaster. Gr64d was not detected at all in D. suzukii (TPM (transcripts per million) = 0, Supplementary file 2). The level of Gr64a was reduced to 41% of that in D. melanogaster (adjusted p-value<0.0001).
 
@@ -87,11 +119,11 @@ One of the Gr genes expressed at lower levels in the D. suzukii labellum than in
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig5-v1.jpg)
 
-**Figure 5.:** D. suzukii.(A) Two-choice egg-laying preferences. n=18–20 plates, each with a single fly. Each egg-laying preference index is compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test is used to compare the preference indices between species. (B) The number of eggs laid on the plates used in (A). n=21 plates for D. melanogaster and n=44 plates for D. suzukii; note that a preference index is calculated only when there are at least 10 eggs on a plate, and thus, the n values in (B) exceed those in (A). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM.
+**Figure 5.:** (A) Two-choice egg-laying preferences. n=18–20 plates, each with a single fly. Each egg-laying preference index is compared to 0 using the Wilcoxon signed-rank test. The Mann-Whitney test is used to compare the preference indices between species. (B) The number of eggs laid on the plates used in (A). n=21 plates for D. melanogaster and n=44 plates for D. suzukii; note that a preference index is calculated only when there are at least 10 eggs on a plate, and thus, the n values in (B) exceed those in (A). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Error bars are SEM.
 
 We noted that in this experiment with trehalose, D. suzukii laid fewer eggs than D. melanogaster (Figure 5B). This finding suggests that trehalose is a less potent egg-laying stimulus for D. suzukii than D. melanogaster, which could also result at least in part from lower expression of Gr5a. Interestingly, trehalose is a sugar present in yeast (Jules et al., 2008; Jules et al., 2004), which populate overripe fruits that are oviposition sites for D. melanogaster but not D. suzukii.
 
-## Certain mechanosensory genes are expressed at higher levels in D. suzukii, which prefers harder substrates
+### Certain mechanosensory genes are expressed at higher levels in D. suzukii, which prefers harder substrates
 
 In addition to changes in sugar content, fruits undergo changes in stiffness as they ripen. Previous studies have found a difference between D. suzukii and D. melanogaster in their egg-laying preference for stiff substrates (Durkin et al., 2021; Guo et al., 2020; Karageorgi et al., 2017). We first confirmed and extended the results of these studies and then investigated the possibility that differences in expression levels of mechanosensory channels in the two species could contribute to them.
 
@@ -99,7 +131,7 @@ We performed a no-choice egg-laying assay using agarose plates of differing stif
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig6-v1.jpg)
 
-**Figure 6.:** D. suzukii prefers harder substrates than D. melanogaster and expresses higher levels of mechanosensory channels in taste organs.(A) Numbers of eggs laid in a no-choice egg-laying paradigm on substrates of the indicated agarose concentrations. n=18–20. One-way ANOVA followed by Tukey’s multiple comparison test. Values indicated with different letters are significantly different (p<0.05). Error bars are SEM. (B) Two-choice egg-laying preference test for the indicated agarose concentrations. n=18–20. The Mann-Whitney test is used to compare the preference indices between species. n=18–20. **p<0.01; ****p<0.0001. Error bars are SEM. (C and D) Volcano plots of leg (C) and labellar (D) transcriptomes highlighting differentially expressed mechanosensory channel genes. The background gray dots were all other analyzed genes with −log10 (adjusted p-value) less than 8 (C) or 120 (D) and log2 fold-change between –4 and 4. (E and F) RT-quantitative PCR (qPCR) results for selected mechanosensory channel genes that were found to differ in expression levels between species by RNAseq analysis in leg (E) and labellum (F). Multiple unpaired t-tests are used to compare the expression level between species. n=3. ns, not significant; **p<0.01; ***p<0.001; ****p<0.0001.
+**Figure 6.:** (A) Numbers of eggs laid in a no-choice egg-laying paradigm on substrates of the indicated agarose concentrations. n=18–20. One-way ANOVA followed by Tukey’s multiple comparison test. Values indicated with different letters are significantly different (p<0.05). Error bars are SEM. (B) Two-choice egg-laying preference test for the indicated agarose concentrations. n=18–20. The Mann-Whitney test is used to compare the preference indices between species. n=18–20. **p<0.01; ****p<0.0001. Error bars are SEM. (C and D) Volcano plots of leg (C) and labellar (D) transcriptomes highlighting differentially expressed mechanosensory channel genes. The background gray dots were all other analyzed genes with −log10 (adjusted p-value) less than 8 (C) or 120 (D) and log2 fold-change between –4 and 4. (E and F) RT-quantitative PCR (qPCR) results for selected mechanosensory channel genes that were found to differ in expression levels between species by RNAseq analysis in leg (E) and labellum (F). Multiple unpaired t-tests are used to compare the expression level between species. n=3. ns, not significant; **p<0.01; ***p<0.001; ****p<0.0001.
 
 Are there molecular differences in the mechanosensory systems of these species? Taking advantage of the transcriptomes of the legs and the labellum—organs that make direct physical contact with egg-laying sites—we found expression of nine mechanosensory channels genes (iav, nompC, pain, Piezo, ppk, ppk26, Tmc, rpk, and tmem63; ≥1 TPM, Supplementary file 2), all of which were expressed in both legs and labellum.
 
@@ -111,7 +143,7 @@ Consistent with these RNAseq results, RT-qPCR analysis revealed higher levels of
 
 In summary, whereas D. suzukii has a lower preference for sweet and lower levels of sugar receptors, it has a higher preference for stiff substrates and higher levels of certain mechanosensory channels in its legs and labellum.
 
-## The two species respond differently to combinations of sweetness and stiffness
+### The two species respond differently to combinations of sweetness and stiffness
 
 The conclusion that D. melanogaster and D. suzukii have different preferences for sweetness, as well as different preferences for stiffness, raises a question: how do the two species compare in their responses to combinations of sweetness and stiffness? Addressing this question is of interest in part because it may help elucidate principles of sensory integration and in part because it reflects the decisions that flies make in their natural environments. In nature, flies encounter potential egg-laying sites that vary in multiple parameters, and the decisions made by flies of distinct species may be influenced to differing extents by different parameters.
 
@@ -121,7 +153,7 @@ When both substrates contained 100 mM sucrose, D. melanogaster showed no prefere
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81703/elife-81703-fig7-v1.jpg)
 
-**Figure 7.:** D. suzukii and D. melanogaster respond differently to combinations of sweetness and stiffness.(A) The egg-laying preferences of D. suzukii and D. melanogaster for substrates with the same sweetness but different stiffness. (B) The egg-laying preferences for substrates with the same stiffness (1% agarose) but different sweetness (taken from Figure 2B). (C) The egg-laying preference for substrates with the same stiffness (0.5% agarose) but different sweetness. (D and E) D. melanogaster and D. suzukii respond differently to different combinations of sweetness and stiffness. In D, the first and fourth columns (D. melanogaster and D. suzukii’s preference for 100 mM sucrose in 1% agarose vs. 30 mM sucrose in 1% agarose) are taken from Figure 2B and Figure 7B. In all panels, n=18–20, error bars indicate SEM, the Mann-Whitney test is used to compare between two conditions, and the egg-laying preference index is compared to 0 by the Wilcoxon signed-rank test. ns, not significant; p>0.05, * p<0.05, ** p<0.01, *** p<0.001, and **** p<0.0001.
+**Figure 7.:** (A) The egg-laying preferences of D. suzukii and D. melanogaster for substrates with the same sweetness but different stiffness. (B) The egg-laying preferences for substrates with the same stiffness (1% agarose) but different sweetness (taken from Figure 2B). (C) The egg-laying preference for substrates with the same stiffness (0.5% agarose) but different sweetness. (D and E) D. melanogaster and D. suzukii respond differently to different combinations of sweetness and stiffness. In D, the first and fourth columns (D. melanogaster and D. suzukii’s preference for 100 mM sucrose in 1% agarose vs. 30 mM sucrose in 1% agarose) are taken from Figure 2B and Figure 7B. In all panels, n=18–20, error bars indicate SEM, the Mann-Whitney test is used to compare between two conditions, and the egg-laying preference index is compared to 0 by the Wilcoxon signed-rank test. ns, not significant; p>0.05, * p<0.05, ** p<0.01, *** p<0.001, and **** p<0.0001.
 
 These results support the notion that high sweetness can mask the preference for softness. Our findings are consistent with results found using a different egg-laying paradigm in D. melanogaster (Wu et al., 2019). The authors of that study speculated that the interaction between taste and mechanosensory input could provide a substrate for evolving different texture selectivity, a notion that can be addressed by testing D. suzukii.
 
@@ -135,7 +167,7 @@ Finally, we aimed to provide a choice between combinations of sweetness and stif
 
 ## Discussion
 
-## Differences in sugar sensation between D. melanogaster and D. suzukii
+### Differences in sugar sensation between D. melanogaster and D. suzukii
 
 We have found a constellation of behavioral, physiological, and molecular differences between sugar sensation in D. suzukii, which lays eggs on ripe fruit, and D. melanogaster, which lays eggs on overripe fruit. These results complement our earlier analysis of bitter sensation in D. suzukii (Dweck et al., 2021) and support the notion that major changes in gustation have accompanied the evolution to egg laying on ripe fruit.
 
@@ -153,7 +185,7 @@ Consistent with the reduced physiological responses, the expression levels of su
 
 Although Gr64d expression was undetectable in the leg, most of the reductions in Gr expression are partial rather than total. However, some Grs may be completely missing from some sensilla, such as those sensilla that show a complete lack of sucrose response in the labellum.
 
-## Differences in mechanosensory gene expression between D. melanogaster and D. suzukii
+### Differences in mechanosensory gene expression between D. melanogaster and D. suzukii
 
 While some sugar receptors show a decrease in expression, some mechanosensory channels show an increase. Particularly, striking was nompC, which was expressed at higher levels in both legs and labellum of D. suzukii. nompC is required for the detection of food texture in D. melanogaster (Sánchez-Alcañiz et al., 2017). Perhaps its greater expression in D. suzukii, which could produce either an increase in the number of cells expressing nompC or the number of channels per cell, either of which could in turn produce greater activation of a circuit that contributes to the preference of this species for greater stiffness. Sensory evaluation of stiffness, however, is complex: a study of oviposition preferences in D. melanogaster showed a role for Tmc in the discrimination of subtle stiffness differences and Piezo in the discrimination of mild stiffness differences (Zhang et al., 2016). Interestingly, both Tmc and Piezo are also upregulated in D. suzukii (Figure 6).
 
@@ -163,7 +195,7 @@ It will be interesting to examine the regulatory architecture of taste and mecha
 
 An important direction for future investigation will be to determine whether the oviposition and mechanosensory preferences of D. suzukii can be altered by increasing the expression of sugar receptors, decreasing the expression of mechanosensory receptors, or by manipulating the activity of the neurons in which they are expressed. We note that in addition to changes in levels and patterns of gene expression, sensory function may also evolve by virtue of changes in the primary sequence of receptors and channels, e.g., Ir75b in Drosophila sechellia (Prieto-Godino et al., 2017).
 
-## Integration of sweet taste and mechanosensation in D. melanogaster and D. suzukii
+### Integration of sweet taste and mechanosensation in D. melanogaster and D. suzukii
 
 Having first examined sweet taste and mechanosensation separately, we then studied them together. We found that D. suzukii responds differently than D. melanogaster to combinations of sweetness and hardness. Among the principal findings were: (i) when sugar concentrations were progressively reduced, a preference for stiffness emerged in D. suzukii, while a preference for softness emerged in D. melanogaster (Figure 7A); (ii) most of the differences in sugar preference that were observed between the two species at high stiffness were lost at lower stiffness (Figure 7B and C); (iii) in a test of sweet preference, D. melanogaster preferred the sweeter substrate unless it was harder, whereas D. suzukii preferred the sweeter substrate only when it was harder (Figure 7D); (iv) D. suzukii showed a dramatically lower preference than D. melanogaster for substrates that are sweeter and softer, a combination chosen to represent the niche in which D. melanogaster, but not D. suzukii, prefers to lay eggs.
 
@@ -181,7 +213,7 @@ While all three of these mechanisms are based on peripheral neurons, there may a
 
 In summary, combinations of sweetness and hardness are evaluated differently by the two species. There are a variety of mechanisms that could contribute to this difference, and further studies will be required to delineate whether particular mechanisms have been modified to promote the exploitation of a new niche by D. suzukii.
 
-## Evolution of the taste system in the oviposition shift of D. suzukii
+### Evolution of the taste system in the oviposition shift of D. suzukii
 
 In a recent study, we found that D. suzukii has lost behavioral response to bitter compounds, has lost 20% of the bitter-responding sensilla from the labellum, and has reduced expression of certain bitter-sensitive Gr receptors (Dweck et al., 2021). A simple interpretation of the loss of bitter response in D. suzukii was that it reduced detection of deterrent bitter compounds in ripe fruit, contributing to a shift toward oviposition on them. In the present study, we have shown that D. suzukii also has a reduced behavioral response to sugars, a loss of physiological responses to sugars, and reduced expression of receptors for sugars, relative to D. melanogaster.
 
@@ -199,11 +231,11 @@ In a larger sense, the oviposition decisions of D. suzukii are likely driven by 
 
 ## Materials and methods
 
-## Drosophila stocks
+### Drosophila stocks
 
 Flies were reared on standard cornmeal-agar medium (Archon Scientific) at 25°C and 60% relative humidity in a 12:12 hr light-dark cycle. D. melanogaster Canton-S (CS) flies were used for electrophysiological recordings and behavioral assays. The D. suzukii stock was collected in Connecticut (Dweck et al., 2021). The D. melanogaster sugar Gr octuple mutant was from H. Amrein (Yavuz et al., 2014).
 
-## Strawberries
+### Strawberries
 
 Intact fresh strawberries, used in Figure 1—figure supplement 1A, were commercially available organic strawberries (Driscoll). Red strawberries with regular shape and uniform color were picked as ripe strawberries. To obtain overripe strawberries, ripe strawberries were kept in a closed plastic bag at 25°C and 60% relative humidity for 48 hr. The overripe strawberries no longer had intact fruit skin, and their pulp was exposed. Whole strawberries were used in this experiment.
 
@@ -211,11 +243,11 @@ Strawberries used to make purées (Figure 1—figure supplement 1B and Figure 1)
 
 Full-sized strawberries were harvested. The developmental stages were classified based on color: bright red for ripe strawberries and dark red for overripe strawberries. Strawberries with regular shapes and uniform colors that could be unambiguously assigned to ripe or overripe stages were collected and stored at –20°C without leaves. Strawberry purées were made from these frozen strawberries and stored as 50% w/v purées at –20°C. When making oviposition plates, 1% agarose substrate containing 10% w/v purée of the desired ripening stage was made from the 50% w/v purée.
 
-## Tastants
+### Tastants
 
 Tastants were obtained at the highest available purity from Sigma-Aldrich. All tastants were dissolved in 30 mM tricholine citrate, an electrolyte that inhibits the water neuron. All tastants were prepared fresh and used for no more than 1 day.
 
-## Egg-laying assays
+### Egg-laying assays
 
 The egg-laying assays shown in Figure 1—figure supplement 1 were performed in cages (24.5 cm × 24.5 cm × 24.5 cm, BugDorm-4E2222, Insect Rearing Cage) that were equipped with two Petri dishes (60 mm × 15 mm, Falcon) containing either a whole ripe strawberry or an overripe strawberry (Figure 1—figure supplement 1A) or 1% w/v agarose with 10% w/v purée of ripe or overripe strawberry (Figure 1—figure supplement 1B). Newly eclosed flies were maintained in a culture vial supplemented with yeast paste for 5–6 days. About 25 flies (15 females + 10 males; Figure 1—figure supplement 1A) or 35 flies (25 females + 10 males; Figure 1—figure supplement 1B) were placed in each cage for 24 hr in the dark. The egg-laying preference index was calculated as (egg # on one Petri dish – egg # on the other Petri dish)/(total egg #).
 
@@ -225,15 +257,15 @@ For preference assays in Figure 1, the antennae and maxillary palps of newly ecl
 
 For no choice assay in Figure 6A, two opposite quadrants contained the same substrates, and the total egg number of every plate was counted.
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological recordings were performed with the tip-recording method (Hodgson et al., 1955), with some modifications; 5–7-day-old mated female flies were used. Flies were immobilized in pipette tips, and the labellum or the female foreleg was placed in a stable position on a glass coverslip. A reference tungsten electrode was inserted into the eye of the fly. The recording electrode consisted of a fine glass pipette (10–15 μm tip diameter) and connected to an amplifier with a silver wire. This pipette performed the dual function of recording electrode and container for the stimulus. Recording started the moment the glass capillary electrode was brought into contact with the tip of the sensillum. Signals were amplified (10×; Syntech Universal AC/DC Probe; http://www.syntech.nl), sampled (10,667 samples/s), and filtered (100–3000 Hz with 50/60 Hz suppression) via a USB-IDAC connection to a computer (Syntech). Action potentials were extracted using Syntech Auto Spike 32 software. Responses were quantified by counting the number of spikes generated over a 500 ms period after contact. Different spike amplitudes were sorted; we did not convolve all neurons into a single value. However, in nearly all recordings in this study, the great majority of the spikes were of uniform amplitude, and those were the spikes whose frequencies we report.
 
-## RNA purification, library preparation, and sequencing
+### RNA purification, library preparation, and sequencing
 
 The tarsus and tibia segments of approximately 600 forelegs were hand-dissected from 5-day-old D. melanogaster and D. suzukii females. Flash frozen segments were ground under liquid nitrogen and resuspended in RLT plus lysis buffer (Qiagen). RNA was extracted using acid phenol and heating at 65°C for 10 min. Residual phenol was removed with chloroform. RNA was then precipitated with isopropanol. Libraries were prepared using KAPA mRNA HyperPrep Kit (Kapa Biosystems) and sequenced on an Illumina HiSeq 2500 or NovaSeq sequencers by the Yale Center for Genome Analysis. Four biological replicates were produced for each species. 30–60 million 75 bp or 100 bp paired-end reads were obtained per sample. Raw reads are accessible at the Genbank SRA database (BioProject accession number PRJNA856346).
 
-## RNA sequencing analysis
+### RNA sequencing analysis
 
 Reads were aligned to the D. melanogaster genome (BDGP6) and the D. suzukii genome (version 1.0) using TopHat (version 2.1.1). D. melanogaster leg transcripts were quantified using Cufflinks (version 2.2.2). IGV, Integrative Genomics Viewer (version 2.5.3), was used to inspect the read coverage of genes of interest.
 
@@ -243,7 +275,7 @@ The PCA plot was generated using the prcomp and ggbiplot packages in R with DESe
 
 The D. suzukii Gr64 locus in the current version of the genome contains three gaps. To further analyze the sugar Gr genes at this locus, reads were mapped to an improved annotation of this locus obtained by amplifying and sequencing genomic fragments (Figure 4B and E).
 
-## RT-qPCR
+### RT-qPCR
 
 cDNA was made from 200 ng of labellar RNA as template from using EpiScript (Lucigen). Two biological replicates were prepared per species. RT-qPCR was carried out with iTaq universal SYBR green Supermix (Bio-Rad) using 10 ng of cDNA. Primers were designed to amplify the corresponding regions of D. melanogaster and D. suzukii cDNAs. In most cases, the same pair of primers was used in both species with two mismatches at most; in all cases, there were no mismatches in the last five bp at the 3’ end. For Gr64d, no such primers were available, and two different pairs of primers amplifying the same region of the two orthologs were used. Primer efficiency was tested using genomic DNA to verify that comparable amplification was obtained in the two species. Only primers that have similar efficacy based on gel images were used in RT-qPCR. Primers that had abnormal melting curves in RT-qPCR were discarded. Ir76b and nSyb were used to normalize the expression level of our genes of interest across samples.
 
@@ -251,6 +283,6 @@ Primers used for the reference genes were the following:
 
 Primers used in Figure 4 were the following:
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical tests were performed in GraphPad Prism (version 6.01). All error bars are SEM. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.

@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.42025.001 A characteristic subset of microglia expressing CD11c appears in response to brain damage. However, the functional role of CD11c + microglia, as well as the mechanism of its induction, are poorly understood. Here we report that the genetic ablation of signal regulatory protein α (SIRPα), a membrane protein, induced the emergence of CD11c + microglia in the brain white matter. Mice lacking CD47, a physiological ligand of SIRPα, and microglia-specific SIRPα-knockout mice exhibited the same phenotype, suggesting that an interaction between microglial SIRPα and CD47 on neighbouring cells suppressed the emergence of CD11c + microglia. A lack of SIRPα did not cause detectable damage to the white matter, but resulted in the increased expression of genes whose expression is characteristic of the repair phase after demyelination. In addition, cuprizone-induced demyelination was alleviated by the microglia-specific ablation of SIRPα. Thus, microglial SIRPα suppresses the induction of CD11c + microglia that have the potential to accelerate the repair of damaged white matter.
+A characteristic subset of microglia expressing CD11c appears in response to brain damage. However, the functional role of CD11c+ microglia, as well as the mechanism of its induction, are poorly understood. Here we report that the genetic ablation of signal regulatory protein α (SIRPα), a membrane protein, induced the emergence of CD11c+ microglia in the brain white matter. Mice lacking CD47, a physiological ligand of SIRPα, and microglia-specific SIRPα-knockout mice exhibited the same phenotype, suggesting that an interaction between microglial SIRPα and CD47 on neighbouring cells suppressed the emergence of CD11c+ microglia. A lack of SIRPα did not cause detectable damage to the white matter, but resulted in the increased expression of genes whose expression is characteristic of the repair phase after demyelination. In addition, cuprizone-induced demyelination was alleviated by the microglia-specific ablation of SIRPα. Thus, microglial SIRPα suppresses the induction of CD11c+ microglia that have the potential to accelerate the repair of damaged white matter.
 
 ## Introduction
 
@@ -54,7 +54,7 @@ SIRPα (CD172a) is a membrane protein that is highly expressed in macrophages 
 
 ## Results
 
-## Emergence of CD11c+microglia in the brain white matter of SIRPα-deficient mice
+### Emergence of CD11c+microglia in the brain white matter of SIRPα-deficient mice
 
 To examine the role of SIRPα in microglial activation, brains of SIRPα knockout (KO) mice were subjected to immunohistochemical analysis using antibodies specific to Iba1, a microglia marker, and to CD68, a marker for phagocytically active microglia (Figure 1A). The numbers of Iba1+cells as well as of Iba1+/CD68+ cells in the white matter, such as the fimbria, were significantly increased in the brains of SIRPα KO mice compared with those of wild-type (WT) control mice, suggesting the activation of microglia in these regions (Figure 1A and B). The activation of microglia in the white matter of SIRPα KO mice was similar to the phenotype reported in aged mice, in which numbers of CD11c+ microglia were reported to be increased (Kaunzner et al., 2012). Next, we examined the effect of the genetic ablation of SIRPα on the expression of CD11c by microglia by using CD11c–EYFP transgenic (Tg) mice (Lindquist et al., 2004), in which the expression of CD11c is detected with the enhanced yellow fluorescent protein reporter gene. The numbers of Iba1+ cells and EYFP+ cells were markedly increased in the white matter (including the corpus callosum, external capsule, fimbria, and internal capsule) of SIRPα KO:CD11c–EYFP Tg mice when compared with that of control SIRPα WT:CD11c-EYFP Tg mice (Figure 1C). Most EYFP+ cells in the white matter of SIRPα KO mice were Iba1 positive, suggesting that they were CD11c+ microglia (Figure 1D lower panels). By contrast, the EYFP signal was barely detected in the grey matter of either genotype (Figure 1D upper panels). The white matter-specific emergence of Iba1+/CD11c+ cells was also confirmed using an antibody that is specific to CD11c in the brain or spinal cord of SIRPα KO mice (Figure 2A and B).
 
@@ -64,17 +64,29 @@ To examine the role of SIRPα in microglial activation, brains of SIRPα knockou
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig2-v1.jpg)
 
-**Figure 2.:** + microglia in the white matter of SIRPα KO mice.(A, B) Coronal sections were prepared from brain (A) and spinal cord (B) of control (WT) or SIRPα null-mutant mice (SIRPα KO) at 18–20 wks of age and stained with specific antibodies for Iba1 (red) and CD11c (green). In panel (A), merged images are shown. Schematic diagrams of brain sections are shown on the left side. The boxed areas in panel (B) are shown at a higher magnification in the lower panels. cc, corpus callosum; ctx, cerebrum cortex; och, optic chiasma. (C, D) Coronal brain sections of control (WT) or SIRPα null-mutant mice (SIRPα KO) at 29–32 (C) or 10–11 (D) wks of age were stained with antibodies to myelin basic protein (MBP) (red) and CD11c (green) (C), or Black-Gold (D). ac, anterior commissure; cc, corpus callosum; fi, fimbria. Data are representative of at least three independent animals. Scale bars: 50 μm (A, B lower panels), 1 mm (B upper panels), 100 μm (C), and 200 μm (D).
+**Figure 2.:** (A, B) Coronal sections were prepared from brain (A) and spinal cord (B) of control (WT) or SIRPα null-mutant mice (SIRPα KO) at 18–20 wks of age and stained with specific antibodies for Iba1 (red) and CD11c (green). In panel (A), merged images are shown. Schematic diagrams of brain sections are shown on the left side. The boxed areas in panel (B) are shown at a higher magnification in the lower panels. cc, corpus callosum; ctx, cerebrum cortex; och, optic chiasma. (C, D) Coronal brain sections of control (WT) or SIRPα null-mutant mice (SIRPα KO) at 29–32 (C) or 10–11 (D) wks of age were stained with antibodies to myelin basic protein (MBP) (red) and CD11c (green) (C), or Black-Gold (D). ac, anterior commissure; cc, corpus callosum; fi, fimbria. Data are representative of at least three independent animals. Scale bars: 50 μm (A, B lower panels), 1 mm (B upper panels), 100 μm (C), and 200 μm (D).
 
 Myeline damage causes microglia activation and an increase in the number of CD11c+ microglia in the white matter of the brain (Remington et al., 2007). Thus, we examined the structural integrity of myelin in SIRPαKO mice. Although a marked increase in the number of CD11c+ cells was observed in the anterior commissure of SIRPαKO mice, no appreciable demyelination was evident after immunostaining for myelin basic protein (MBP) (Figure 2C). Myelination in the corpus callosum and fimbria were also normal in SIRPαKO mice when examined by myelin staining with a gold-phosphate complex (Black-Gold II) (Figure 2D).
 
-## Increased expression of innate immune molecules in CD11c+ microglia in the brain of SIRPα-deficient mice and aged mice
+### Increased expression of innate immune molecules in CD11c+ microglia in the brain of SIRPα-deficient mice and aged mice
 
 We then examined the characteristics of the CD11c+ microglia. Microglia were isolated from the spinal cord of SIRPα KO and control WT mice, and the CD11b+/CD45dim/lo fraction was analysed by flow cytometry (Figure 3A–3C). The yield of microglia from SIRPα KO mice was significantly greater than that from control mice (means ± SEM were 8.02 ± 0.36 and 4.57 ± 0.98 × 104 cells/mouse, respectively; n = 5 for control and 3 for KO animals; p=0.02161 (Welch’s t-test)), indicating an increased number of microglia in the spinal cord of SIRPα KO mice. As expected, the expression of SIRPα was completely abolished in microglia prepared from SIRPα KO mice (Figure 3A). Consistent with the results from immunohistochemical analysis, CD11c+/CD11b+/CD45dim/lo microglia were increased in SIRPα KO mice when compared with control WT mice (Figure 3B). The forward (FSC) and side (SSC) scatter distribution of CD11c+ microglia were similar to those of the CD11c– microglia in the SIRPα KO mice, suggesting that cell size and granularity (complexity) were comparable between the two subsets (Figure 3—figure supplement 1). CD11c+ microglia expressed higher levels of innate immune molecules (including CD14, Dectin-1, and CD68) when compared with CD11c− microglia in SIRPα KO mice (Figure 3C). To compare the CD11c+ microglia in SIRPα KO mice with those in aged WT mice (Bulloch et al., 2008; Kaunzner et al., 2012), microglia isolated from adult (16–18 weeks of age) and aged (69–105 weeks of age) WT mice were analysed in the same manner (Figure 3D–F). The expression levels of SIRPα in microglia were comparable in aged and adult mice (Figure 3D). CD11c+ microglia were increased in aged mice (as in SIRPα KO mice) when compared with adult mice (Figure 3E). In addition, the CD11c+ microglia in the aged mice expressed higher levels of CD14, Dectin-1, and CD68 than the CD11c− microglia of these mice, as was also the case in SIRPα KO mice (Figure 3F).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cells isolated from the spinal cord of control WT or SIRPα KO (KO) mice at 14 wks of age were incubated with a PE-conjugated monoclonal antibody (mAb) to SIRPα, a PerCP–Cy5.5-conjugated mAb to CD45, and an FITC-conjugated mAb to CD11b. The expression of CD11b and CD45 on monocyte cells or of SIRPα on CD11b+/CD45dim/lo microglia was analysed by flow cytometry. The percentage of CD11b+/CD45dim/lo microglia among putative monocytes is indicated in each plot (left plots). The expression profiles for SIRPα on CD11b+/CD45dim/lo microglia are shown in the right panel. (B) Cells prepared as in panel (A) from WT or SIRPα KO mice at 14–21 wks of age were stained with antibodies to CD45, CD11b, and CD11c, and analysed by flow cytometry. The percentage of CD11b+/CD45dim/lo/CD11c+ microglia among total CD11b+/CD45dim/lo microglia is indicated in each plot. Quantitative data are shown in the right panel. Filled and open bars indicate WT and SIRPα KO mice, respectively. (C) Cells prepared from SIRPα KO mice were stained for CD45, CD11b and CD11c, as well as for CD14, Dectin-1, or CD68. Plots were gated on CD11b+/CD45dim/lo cells, and CD14, Dectin-1, or CD68 on CD11c–positive and -negative microglia were analysed. The expression profiles for each molecule in CD11b+/CD45dim/lo microglia are shown. (D) Cells isolated from adult (18 wks of age) or aged (104 wks of age) mice were isolated and analysed as in panel (A). (E) Cells prepared as in panel (D) from adult (16–18 wks of age) or aged (69–105 wks of age) mice were analysed as in (B). Quantitative data are shown in the right panel. Filled and open bars indicate adult and aged mice, respectively. (F) Cells prepared from aged mice were analysed as in panel (C).Data in panels (B) and (E) are the means ± SEM (n = 5 (B) and 3 (E) independent experiments). **p<0.01 (Welch’s t-test). Other data are representative of at least 3–5 independent experiments. Filled and open traces in panels (A), (C, F), and (D) indicate WT and SIRPα KO mice (A), CD11c– and CD11c+ cells (C, F), and adult and aged mice (D), respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** FSC/SSC distribution of WT (upper panels) and SIRPαKO (lower panels) microglia were analysed. CD11c+ and CD11c— microglia in the left panels (events in the solid and dotted rectangles, respectively) are presented on the FSC/SSC plots in the right panels. Scatter plots in the left panels are identical to those shown in Figure 3B. All data used in Figure 3B were analysed in the same way, and representative results are shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Whole brains and spinal cords were dissected from WT or SIRPα KO mice at 13–20 wks of age for the isolation of total RNA. The expressions of the indicated cytokines were then determined by quantitative polymerase chain reaction (PCR) analysis. The amount of each mRNA was normalised to that of glyceraldehyde-3-phosphate dehydrogenase (GAPDH) mRNA and is presented relative to the mean value for control WT mice. Filled and open bars indicate WT and SIRPα KO mice, respectively. Data are the means ± SEM (n = 6 mice for each genotype). *p<0.05 (Welch’s t-test).
+
 To address the effect of the increase of CD11c+ microglia on inflammatory responses, we examined the expression of pro- and anti-inflammatory cytokines in the brain and spinal cord by quantitative PCR analysis. Among the examined cytokines (Tnfa, Il1b, Il6, Il10, and Tgfb), the expression of TNF-α (Tnfa) was increased in SIRPα KO as compared to WT mice (Figure 3—figure supplement 2).
 
-## Induction of CD11c+ microglia in the white matter of CD47-deficient mice
+### Induction of CD11c+ microglia in the white matter of CD47-deficient mice
 
 To address the mechanism involved in the regulation of microglia activation by SIRPα, we examined the effect of the genetic ablation of CD47, a membrane protein and SIRPα ligand (Matozaki et al., 2009). In the brain of CD47 KO mice, CD11c+ microglia were increased in the white matter, as was also the case for SIRPα KO mice (Figure 4A). The number of Iba1+ microglia was increased more than 2.5-fold in the hippocampal fimbria, and about 70% of the Iba1+ microglia expressed CD11c (Figure 4B). As in SIRPα KO mice, the yield of microglia in CD47 KO mice was increased compared to that in WT mice (means ± SEM were 7.65 ± 0.92 and 3.34 ± 0.85 × 104 cells/head, respectively; n = 5 animals; p=0.00874 (Welch’s t-test)). Flow cytometric analysis showed that CD47 was expressed in WT microglia and was completely absent in CD47 KO microglia (Figure 4C). In addition, we found that the expression of SIRPα was markedly increased in CD47 KO microglia (Figure 4C). We also examined the expression of CD47 in SIRPα KO microglia, and found that the expression of CD47 was increased in microglia prepared from SIRPα KO mice (Figure 4D).
 
@@ -82,9 +94,21 @@ To address the mechanism involved in the regulation of microglia activation by S
 
 **Figure 4.:** (A) Immunofluorescence staining of coronal brain sections prepared from control (WT) or CD47 KO mice at 19 wks of age with antibodies to Iba1 (red) and CD11c (green). Merged images are shown. The boxed areas in the upper panels are shown at higher magnification in the lower panels. fi, fimbria. Scale bars: 100 μm (upper panels), 50 μm (lower panels). (B) Quantitative analysis of the number of Iba1+ (left panel) and Iba1+/CD11c+ (right panel) microglia in the fimbria of WT (filled bars) and CD47 KO mice (open bars) at 13–27 wks of age. Data are the means ± SEM (n = 3 images from 3 mice for each genotype). **p<0.01, *p<0.05 (Welch’s t-test). (C, D) Cells were isolated from the spinal cord of WT or CD47 KO mice at 14–16 wks of age (C), or from brain of WT or SIRPα KO female mice at 12 wks of age (D). Expressions of SIRPα and CD47 on CD11b+/CD45dim/lo microglia were analysed by flow cytometry. Filled and open traces indicate WT and CD47 KO (C) or SIRPα KO (D) mice, respectively. Data in (C) are representative of at least three independent experiments. Data in panel (D) are also representative of th independent experiments with brain (n = 2, one male pair and one female pair) and spinal cord (n = 1, one female pair) microglia.
 
-## Increased expression of genes for the repair of damaged myelin in CD47-deficient mice
+### Increased expression of genes for the repair of damaged myelin in CD47-deficient mice
 
 To address the impact of the emergence of activated CD11c+ microglia on the brain environment, we compared gene expression in the white matter (optic nerve and optic tract) of CD47 KO mice and WT control mice by microarray transcriptome analysis. The expression of total of 14,875 genes was detected in both or either of the genotypes. The expression of 594 and 548 genes was markedly (>2 fold) increased and decreased, respectively, in CD47 KO mice when compared with WT mice (Supplementary file 1). Pathway analysis with Database for Annotation, Visualization and Integrated Discovery (DAVID) ver. 6.8 (https://david.ncifcrf.gov/) (Huang et al., 2009a; Huang et al., 2009b) suggested that the genes whose expression increased in the white matter of CD47 KO mice were significantly enriched in pathways such as infectious diseases, phagocytosis, and immune responses, probably reflecting the activation of microglia (Figure 5A). By contrast, genes whose expression was decreased in CD47 KO mice were mostly enriched in pathways for neuronal ligand–receptor interaction, and were also enriched in pathways such as calcium signaling and neuronal synapses (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig5-v1.jpg)
+
+**Figure 5.:** (A,B) The results of Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis with DAVID. Statistically significant (p-value <0.01) KEGG enrichment pathways of up- (A) or downregulated (B) genes in the white matter (optic nerve and optic tract) (upper panels) or in the brain mononuclear cells (lower panels) of CD47 KO mice. Enrichment score is expressed as –Log (p-value). ARVC, Arrhythmogenic right ventricular cardiomyopathy; HCM, Hypertrophic cardiomyopathy. (C) The expression changes of selected genes that are characteristic of microglia or of de- and re-myelination processes. For each probe set on the microarray, the fold-change of gene expression in the CD47 KO mice compared with WT mice was expressed as a log2 ratio. Open and filled bars represent data for white matter and the brain mononuclear cells, respectively. Probe set ID#: Affymetrix probe set ID number for Mouse 430 2.0 Gnome Arrays.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Total RNA samples from the optic chiasm and optic nerve of CD47 KO and WT mice (n = 4 and 6, respectively) were subjected to quantitative PCR analysis to determine the expression levels of the indicated genes. The amount of each mRNA was normalised to that of glyceraldehyde-3-phosphate dehydrogenase (GAPDH) mRNA and presented relative to the mean value for control WT mice. Filled and open bars indicate WT and SIRPα KO mice, respectively. Data are the means ± SEM. **p<0.01 (Welch’s t-test).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The genes whose expression levels are commonly changed more than 2-fold (|Log2 ratio| > 1) from WT levels in both the white matter and the brain mononuclear cells of CD47 KO mice are listed. Probe set ID#, Affymetrix probe set ID number for Mouse 430 2.0 Genome Arrays; gene, gene description; symbol, gene symbol; accession, NCBI accession number; Log2 ratio, fold change expressed as Log2 (KO/WT).
 
 Consistent with the results of immunohistochemical and flow cytometric analyses, the expression of Itgax (CD11c), Clec7a (Dectin-1), Cd68, and Cd14 were markedly increased (>2-fold: Log2 ratio >1) in the white matter of CD47 KO mice compared with that of WT mice (Figure 5C). By contrast, the expression of the microglial markers Aif1 (Iba1) and Itgam (CD11b) was only moderately increased (<2 fold). Thus, the marked increase in the expression of CD11c and the other molecules was probably related to characteristic changes in the mutant microglia (or other cells) in the white matter, rather than to the increased number of microglia. Quantitative PCR analysis of selected genes (Itgax, Igf1, Trem2, Ccl3), which were increased in the microarray analysis, also showed significant induction (Figure 5—figure supplement 1). We noted that several transcripts whose expression was reported to be increased in microglia during the repair of damaged myelin (Holtman et al., 2015; Olah et al., 2012; Poliani et al., 2015; Selvaraju et al., 2004) were markedly increased (>2 fold) in the white matter of CD47 KO mice (Figure 5C). These included Itgax, Lgals3, and Clec7a, markers of primed microglia; Lpl, Apoc1, and Ch25h, encoding molecules for lipid transport; Mmp12, encoding a tissue remodeling factor; Igf1, and Spp1, encoding trophic factors promoting oligodendrocyte differentiation; and Cst7 (Cystatin F), which encodes a cysteine proteinase inhibitor. We also found that several positive regulators of microglia phagocytosis, Trem2, Tyrobp, and Cx3cr1 (Lampron et al., 2015; Poliani et al., 2015), were increased in the white matter of the mutant mice.
 
@@ -92,15 +116,27 @@ We next examined gene expression in the brain mononuclear cells, in which microg
 
 Comparison of array data revealed 32 and 55 genes that were commonly increased and decreased (>2 fold), respectively, in both the white matter and the brain mononuclear cells of CD47 KO mice (Figure 5—figure supplement 2). Shared induced genes included myelin-repair related genes, such as Itgax, Igf1, Lpl, Apoc1, Ch25h, Mmp12, Spp1, and Cst7 (Figure 5C). The expression of Clec7a, Cd68, Trem2, and Cx3cr1, which were markedly increased in the white matter of CD47 KO mice, showed an only moderate (<2 fold) increase in the brain mononuclear cells (Figure 5C). Substantially higher levels of expression of these genes in microglia might mask the increased expression of these genes in the limited CD11c+ subset, which was only ~5% of the total microglia prepared from the whole brain of CD47 ΚO mice (data not shown).
 
-## Induction of CD11c+ microglia in the brain white matter of microglia-specific SIRPα-deficient mice
+### Induction of CD11c+ microglia in the brain white matter of microglia-specific SIRPα-deficient mice
 
 To examine the cell type involved in the suppression of CD11c+ microglia by SIRPα, we analysed microglia-specific SIRPα conditional KO (cKO) mice that were generated by crossing SIRPα-flox (Sirpaflox/flox) mice (Washio et al., 2015) with Cx3cr1-CreERT2 (Cx3cr1tm2.1(cre/ERT2)Jung) mice to achieve microglia-specific gene targeting (Goldmann et al., 2013; Safaiyan et al., 2016; Wolf et al., 2013). The Cx3cr1–CreERT2 transgene induces tamoxifen (TAM)-dependent rearrangement of a floxed gene not only in microglia but also in peripheral myeloid cells (monocytes and dendritic cells) and tissue macrophages (Kupffer cells). However, the peripheral cells are short-lived and are replaced by their progeny without rearranged gene within a few weeks after administraiton of TAM (Goldmann et al., 2013). Indeed, SIRPα was markedly reduced in the white pulp of SIRPα cKO mouse spleen after TAM-treatment, but recovered to the normal level after several weeks (Supplementary file 3). This recovery is probaly due to the replacement of certain types of conventional dendritic cells (cDCs) or macrophages, in which the SIRPα-floxed gene was rearranged, with their progeny in which the gene is not rearranged. By contrast, the rearranged gene remained stable in microglia (Goldmann et al., 2013) because of their long lifespan of around 15 months (Füger et al., 2017). As a result, microglia-specific gene targeting is achieved in Cx3cr1–CreERT2 mice several weeks after TAM treatment (Goldmann et al., 2013). Thus, SIRPα cKO mice were analyzed more than 8 weeks after TAM treatment in our experiments.
 
 Flow-cytometric analysis revealed that more than 98% of microglia were SIRPα-negative in the brain of tamoxifen-treated SIRPα-flox:Cx3cr1–CreERT2 mice (Figure 6A), and that the numbers of Iba1+, Iba1+/CD11c+, and Iba1+/CD68+ microglia were increased in the hippocampal fimbria of these cKO mice (Figure 6B and C). Iba1+/CD11c+ cells were also detected in other white-matter regions of the brain and spinal cord in SIRPα cKO, but not in control SIRPα-flox:— mice, and were barely detected in the grey matter of both genotypes (Figure 6D and E). Flow cytometric analysis in SIRPα cKO mice showed that, when compared with CD11c− microglia, CD11c+ microglia expressed higher levels of CD14, Dectin-1, and CD68 (Figure 6—figure supplement 1). All of these results were very similar to those observed in SIRPα null KO mice, and suggest that a lack of the interaction between SIRPα on microglia and CD47 on neighbouring cells is the primary cause of the induction of CD11c+ microglia in CD47–SIRPα signal-deficient mice.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig6-v1.jpg)
+
+**Figure 6.:** (A) Cells isolated from the brains of control (SIRPα-flox:—) or microglia-specific SIRPα cKO (SIRPα-flox:Cx3cr1–CreERT2) female mice at 11 wks of age were stained as in Figure 3A. The percentage of CD11b+/CD45dim/lo/SIRPα+ or /SIRPα– microglia among total CD11b+/CD45dim/lo microglia is indicated in each plot. Data are representative of four independent experiments with microglia prepared from brain (n = 2) and spinal cord (n = 2). (B) Immunofluorescence staining of coronal brain sections prepared from control and SIRPα cKO mice at 22–30 wks of age with antibodies to Iba1 (red) and CD11c (green in upper panels) or CD68 (green in lower panels). Merged images are shown. (C) Quantitative analysis of the number of Iba1+ (left panel) and Iba1+/CD11c+ (middle panel) and Iba1+/CD68+ (right panel) microglia in the fimbria of control (Ctrl) and SIRPα cKO (cKO) mice at 22–30 wks of age. Filled and open bars indicate control and SIRPα cKO mice, respectively. Data are the means ± SEM (n = 4–13 images from 2–6 mice for each genotype). *p<0.05, **p<0.01 (Welch’s t-test). N.D., not detected. (D, E) Coronal sections were prepared from the brain (D) and spinal cord (E) of control or SIRPα cKO mice at 26–29 wks of age and stained with specific antibodies for Iba1 (red) and CD11c (green). Merged images are shown. The boxed areas in upper half of panel (E) are shown at a higher magnification in the lower half. cc, corpus callosum; ctx, cerebrum cortex; fi, fimbria; och, optic chiasma. Data in panels (B), (D), and (E) are representative of at least four independent animals. Scale bars: 100 μm (B), 50 μm (D, E  bottom images), 1 mm (Etop images).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Cells isolated from the spinal cord of SIRPα cKO mice at 25–28 wks of age were stained for CD45, CD11b and CD11c, as well as for CD14, Dectin-1, or CD68. CD11b+/CD45dim/lo cells were gated, and the expression of CD14, Dectin-1, or CD68 on CD11c-positive and -negative microglia was analysed. Expression profiles for each molecule in CD11b+/CD45dim/lo microglia are shown. Filled and open traces indicate CD11c– and CD11c+ cells, respectively. Similar results were obtained from another independent experiment using female animals.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/42025/elife-42025-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Brain sections prepared from control (SIRPα-flox:—) and CD11c+ cell-specific SIRPα cKO (SIRPα-flox:CD11c-Cre) mice at 25 wks of age were immunostained with antibodies to Iba1 (red) and CD11c (green). Merged images are shown. fi, fimbria. Data are representative of at least three independent animals. Scale bar: 100 μm.
+
 A small subset of resident CD11c+ microglia has been reported in normal mouse brain (Bulloch et al., 2008). Thus, the marked increase in the number of CD11c+ microglia in CD47–SIRPα-deficient mice could be due to the expansion of the small subset of resident CD11c+ microglia. To address this, we examined CD11c+ cell-specific SIRPα cKO mice that were generated by crossing SIRPα-flox mice and CD11c-Cre mice (Washio et al., 2015). In these mice, Cre is expressed under the control of the CD11c promoter, and recombination of the SIRPα-floxed gene is induced in CD11c-expressing cells, such as dendritic cells and monocytes in the immune system. By contrast, CD11c-Cre mice exhibit very low recombination in the majority of microglia that are CD11c negative (Goldmann et al., 2013), and thus, in the brain, genetic ablation of SIRPα was achieved in the small subset of resident CD11c+ microglia but not in the majority of microglia. However, the emergence of CD11c+ microglia was not observed in the CD11c+ cell-specific SIRPα cKO mice (Figure 6—figure supplement 2), suggesting that the expansion of resident CD11c+ microglia was not induced by the lack of SIRPα. It is likely that the ablation of SIRPα in CD11c-negative microglia induced the expression of CD11c in these cells.
 
-## Alleviation of cuprizone-induced demyelination in the brain white matter of microglia-specific SIRPα-deficient mice
+### Alleviation of cuprizone-induced demyelination in the brain white matter of microglia-specific SIRPα-deficient mice
 
 Although myelin damage induces CD11c+ microglia (Remington et al., 2007), demyelination was not observed by light microscopy in SIRPα null KO mice (Figure 2C and D). We examined the myelin structure again in microglia-specific cKO mice using electron microscopy. In the cross-section of the anterior commissure (Figure 7A), the frequency of myelinated axons and the g-ratio (the ratio of the inneraxonal diameter to the total outer diameter) (Figure 7B) were comparable between SIRPα cKO and control mice (frequency of myelinated axons 34.6 ± 4.37% for control (n = 3), 36.6 ± 4.05% for cKO (n = 3), p=0.759, Welch’s t-test; g-ratio 0.63 ± 0.026 for control (n = 3), 0.65 ± 0.009 for cKO (n = 3), p=0.448, Welch’s t-test). A scatter plot of all g-ratio data as a function of axon diameters was also comparable between the two genotypes (Figure 7C). These data suggest that the myelin structure was normal in the mutant mice.
 
@@ -144,46 +180,357 @@ The reduction of demyelination in Cpz-treated SIRPα cKO mice is in contrast to 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Sirpa–/– (SIRPα KO)</td>
+      <td>PMID: 25818708</td>
+      <td>RRID:MGI:5767142</td>
+      <td>Dr. Takashi Matozaki (Kobe University, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Itgax-Venus (CD11c–EYFP)</td>
+      <td>PMID: 15543150</td>
+      <td>RRID:MGI:3835666</td>
+      <td>The Jackson Laboratory (Bar Harbor, ME)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cd47–/– (CD47 KO)</td>
+      <td>PMID: 8864123</td>
+      <td>RRID:MGI:1861955</td>
+      <td>Dr. Pre-Arne Oldenborg (Umeå University, Sweden)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Sirpaflox/flox</td>
+      <td>PMID: 25818708</td>
+      <td>RRID:MGI:5767141</td>
+      <td>Dr. Takashi Matozaki (Kobe University, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cx3cr1tm2.1(cre/ERT2)Jung (Cx3cr1–CreERT2)</td>
+      <td>PMID: 23273845</td>
+      <td>RRID:MGI:5467985</td>
+      <td>Dr. Steffen Jung (Weizmann Institute of Science, Israel)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Itgax-cre (CD11c–Cre)</td>
+      <td>PMID: 17591855</td>
+      <td>RRID:MGI:3763248</td>
+      <td>The Jackson Laboratory (Bar Harbor, ME)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal antibodies (pAbs) to Iba1</td>
+      <td>Wako (Osaka, Japan) (Cat# 019–19741)</td>
+      <td>RRID:AB_839504</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-conjugated Armenian hamster monoclonal antibody (mAb) to mouse CD11c (clone HL3)</td>
+      <td>BD Pharmingen (Cat# 553800)</td>
+      <td>RRID:AB_395059</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat mAbs to CD68 (clone FA-11)</td>
+      <td>BioLegend (Cat# 137001)</td>
+      <td>RRID:AB_2044003</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 conjugated rat mAb to CD45 (30-F11)</td>
+      <td>BD Biosciences (Cat# 550994)</td>
+      <td>RRID:AB_394003</td>
+      <td>FCM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated rat mAb to mouse CD11b (clone M1/70)</td>
+      <td>BD Biosciences (Cat# 553310)</td>
+      <td>RRID:AB_394774</td>
+      <td>FCM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat mAb to mouse CD16/CD32 (clone 2.4G2)</td>
+      <td>BD Biosciences (Cat# 553141)</td>
+      <td>RRID:AB_394656</td>
+      <td>FCM (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin-conjugated allophycocyanin (APC)</td>
+      <td>BD Biosciences (Cat# 554067)</td>
+      <td>RRID:AB_10050396</td>
+      <td>FCM (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated rat mAb to mouse CD172a (SIRPa) (clone P84)</td>
+      <td>eBioscience (Cat# 12-1721-80)</td>
+      <td>RRID:AB_11149864</td>
+      <td>FCM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated rat mAbs to CD68 (clone FA-11)</td>
+      <td>BioLegend (Cat# 137013)</td>
+      <td>RRID:AB_10613469</td>
+      <td>FCM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated rat mAb to mouse CD14 (clone Sa14-2)</td>
+      <td>BioLegend (Cat# 123309)</td>
+      <td>RRID:AB_940582</td>
+      <td>FCM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated recombinant antibody (Ab) to Dectin-1 (REA154)</td>
+      <td>Miltenyi Biotec (Cat# 130-102-987)</td>
+      <td>RRID:AB_2651541</td>
+      <td>FCM (1:5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE conjugated recombinant Ab to CD47 (REA170)</td>
+      <td>Miltenyi Biotec (Cat# 130-103-108)</td>
+      <td>RRID:AB_2659745</td>
+      <td>FCM (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat mAb to myelin basic protein (MBP) (clone 12)</td>
+      <td>Merck (Cat# MAB386)</td>
+      <td>RRID:AB_94975</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit pAb to Olig2</td>
+      <td>Immuno-Biological Laboratories (Gunma, Japan) (Cat# 18953)</td>
+      <td>RRID:AB_1630817</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-rabbit IgG</td>
+      <td>Molecular Probes (Cat# A11034)</td>
+      <td>RRID:AB_2576217</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated AffiniPure Goat anti-rabbit IgG</td>
+      <td>Jackson Immuno Research (Cat# 111-165-144)</td>
+      <td>RRID:AB_2338006</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated AffiniPure Goat anti-rat IgG</td>
+      <td>Jackson Immuno Research (Cat# 112-165-167)</td>
+      <td>RRID:AB_2338251</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-conjugated AffiniPure Goat anti-mouse IgG</td>
+      <td>Jackson Immuno Research (Cat# 115-165-166)</td>
+      <td>RRID:AB_2338692</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin, Alexa Fluor 488 conjugate</td>
+      <td>Molecular Probes (Cat# S11223)</td>
+      <td>RRID:AB_2336881</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Black-Gold II myelin staining kit</td>
+      <td>Merck</td>
+      <td>Cat# AG105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tyramide Signal Amplification (TSA) Biotin System kit</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# NEL700A001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 205313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect SYBR Green PCR kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 204143 or 24163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneChip 3’IVT Express Kit</td>
+      <td>Affymetrix</td>
+      <td>Cat# 901228 or 901229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ovation Pico WTA system V2</td>
+      <td>NuGEN</td>
+      <td>Cat# 3302–12/−60/–A01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Encore Biotin Module</td>
+      <td>NuGEN</td>
+      <td>Cat# 4200–12/−60/–A01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Toronto Research Chemicals Inc.</td>
+      <td>Cat# T006000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4',6-Diamidino-2- phenylindole</td>
+      <td>Nacalai Tesque (Kyoto, Japan)</td>
+      <td>Cat# 11034–56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Percoll</td>
+      <td>GE Healthcare Life Science (Uppsala, Sweden)</td>
+      <td>Cat# 17089102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sepasol RNA I</td>
+      <td>Nacalai Tesque (Kyoto, Japan)</td>
+      <td>Cat# 09379–55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cuprizone</td>
+      <td>Sigma</td>
+      <td>Cat# C9012-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 8.8.4 software</td>
+      <td>Tree Star Inc.</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTEM software</td>
+      <td>Olympus SIS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID: 22930833</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Database for Annotation, Visualization and Integrated Discovery (DAVID) ver. 6.8</td>
+      <td>PMID: 19033363 PMID: 19131956</td>
+      <td>RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Sirpa–/– (SIRPα KO), Cd47–/– (CD47 KO), Sirpaflox/flox (SIRPα-flox), and Cx3cr1tm2.1(cre/ERT2)Jung (Cx3cr1-CreERT2) mice were generated as described previously (Oldenborg et al., 2000; Washio et al., 2015; Yona et al., 2013). Itgax-cre (CD11c-Cre) Tg mice (B6.Cg-Tg(Itgax-cre)1-1Reiz/J, #008068) (Caton et al., 2007) and Itgax-Venus (CD11c-EYFP) Tg mice (B6.Cg-Tg(Itgax-Venus)1Mnz/J, #008829) (Lindquist et al., 2004) were obtained from Jackson Laboratory (Bar Harbor, ME). SIRPα KO mice were crossed with CD11c–EYFP Tg mice to generate Sirpa–/+:CD11c-EYFP Tg mice. These mice were crossed with heterozygous Sirpa–/+ mice, and the resulting homozygous SIRPα WT and KO mice harbouring the CD11c–EYFP transgene were analysed. To obtain SIRPα cKO mice, homozygous SIRPα-flox mice harboring the CD11c–Cre transgene or Cx3cr1–CreERT2 targeted gene were crossed with homozygous SIRPα-flox mice, and the resulting SIRPα cKO (SIRPα-flox:Cx3cr1-CreERT2, SIRPα-flox:CD11c-Cre) mice were analysed. Littermates carrying homozygous SIRPα-flox alleles but lacking Cre recombinase were used as controls. To induce Cre-dependent recombination, Cx3cr1–CreERT2 mice were treated with tamoxifen (TAM) (Toronto Research Chemicals Inc., Ontario, Canada) at 8 wks of age. TAM was dissolved in ethanol and then diluted seven times with corn oil (Wako, Osaka, Japan) to make a 10 mg/ml solution, and 200 μL (2 mg) of this solution was injected subcutaneously once every 48 hr for five consecutive days (a total of 3 times). TAM-treated mice were analysed more than 8 wks after the treatment. All mice were bred and maintained at the Bioresource Center of Gunma University Graduate School of Medicine under specific pathogen–free conditions. Mice were housed in an air-conditioned room with a 12-h-light, 12-h-dark cycle. All animal experiments were approved by the Animal Care and Experimentation Committee of Gunma University (approval no. 18-015).
 
-## Primary antibodies and reagents
+### Primary antibodies and reagents
 
 Rabbit polyclonal antibodies (pAbs) to Iba1 were obtained from Wako (Osaka, Japan). Biotin-conjugated Armenian hamster monoclonal antibody (mAb) to mouse CD11c (clone HL3), PerCP-Cy5.5 conjugated rat mAb to CD45 (30-F11), FITC-conjugated rat mAb to mouse CD11b (clone M1/70), rat mAb to mouse CD16/CD32 (clone 2.4G2), and streptavidin-conjugated allophycocyanin (APC) were from BD Pharmingen (San Diego, CA). PE conjugated rat mAb to mouse CD172a (SIRPα) (clone P84) was from eBioscience (San Diego, CA). PE conjugated and unconjugated rat mAbs to CD68 (clone FA-11) and PE conjugated rat mAb to mouse CD14 (clone Sa14-2) were from BioLegend (San Diego, CA). PE-conjugated recombinant antibody (Ab) to Dectin-1 (REA154) and PE-conjugated recombinant Ab to CD47 (REA170) were from Miltenyi Biotec (Bergisch Gladbach, Germany). 4',6-Diamidino-2-phenylindole (DAPI) was obtained from Nacalai Tesque (Kyoto, Japan). Rat mAb to myelin basic protein (MBP) (clone 12) was from Merck Millipore (Billerica, MA). Rabbit pAb to Olig2 (18953) was from Immuno-Biological Laboratories (Gunma, Japan).
 
-## Histological analysis
+### Histological analysis
 
 For immunohistochemistry, mice were anesthetised by the inhalation of isoflurane (Pfizer, New York, NY), given an intraperitoneal injection of pentobarbital (Nembutal 100 mg/kg; Dynabot, Tokyo, Japan), and then perfused transcardially with fixation buffer (4% paraformaldehyde in 0.1 M phosphate buffer (pH 7.4)). Brain, spinal cord, or spleen was dissected and fixed in the fixation buffer overnight at 4°C, then transferred to 30% sucrose in 0.1 M phosphate buffer (pH 7.4) for cryoprotection, embedded in OCT compound (Sakura Fine Technical, Tokyo, Japan), and rapidly frozen in liquid nitrogen. Frozen sections with a thickness of 10 or 20 μm were prepared with a cryostat, mounted on glass slides, air dried, and washed with phosphate buffered saline (PBS). Otherwise, free-floating sections were washed with PBS. All sections were then incubated for 30 min at room temperature in Tyramide Signal Amplification (TSA) blocking solution (Perkin Elmer, Norwalk, CT) and stained overnight at 8°C with primary antibodies diluted in primary antibody dilution buffer (PBS supplemented with 2.5% BSA and 0.3% Triton X-100). Sections were then washed with PBS and exposed to the corresponding secondary antibodies conjugated with the fluorescent dyes Cy3 (Jackson Immuno Research Laboratories, West Grove, PA) or Alexa Fluor 488 (Invitrogen, Carlsbad, CA) in secondary antibody dilution buffer (PBS supplemented with 1% BSA and 0.3% Triton X-100). Nuclei were also stained with DAPI. The detection of CD11c with biotin-conjugated primary antibody (HL3) was achieved by using a TSA Biotin System kit (Perkin Elmer) and streptavidin-conjugated Alexa Fluor 488 (Invitrogen) according to the manufacturer’s protocol. Free-floating sections were mounted on glass slides after staining. All sections were mounted with mounting media (0.1 M Tris-HCl buffer (pH9) containing 5% 1,4-diazabicylo (2.2.2)-octane (DABCO), 20% polyvinyl alcohol (PVA), 10% glycerol) and covered with a cover glass. Fluorescence images were acquired with a fluorescence microscope BZ-X710 (Keyence, Osaka, Japan) or DM RXA (Leica, Wetzlar, Germany) equipped with a cooled CCD camera (Cool SNAP HQ; Roper Scientific, Trenton, NJ). Acquired digital images were analysed using ImageJ software (Schneider et al., 2012).
 
 For myelin staining, frozen brain sections were mounted on a glass slide first, and then stained with a Black-Gold II myelin staining kit (Merck Millipore) according to the manufacturer’s protocol. Images were acquired with a light microscope DM IRBE (Leica) equipped with a cooled CCD camera (Penguin 600 CL; Pixera Corp., Santa Clara, CA).
 
-## Preparation of microglia and flow cytometry
+### Preparation of microglia and flow cytometry
 
 Mononuclear cells including microglia were isolated by the method described by Sierra et al. (2007) with a minor modification. Briefly, brain or spinal cord was dissected from genotype- and age-matched mice euthanised by cervical dislocation after deep anaesthesia. Male mice were used unless otherwise noted. Spinal cords isolated from 1 to 3 mice were mixed and treated together. Tissues were rinsed in ice-cold Hank’s Balanced Salt Solution (HBSS; Gibco, Grand Island, NY) and then homogenised in HBSS containing collagenase type 2 (37.5 U/ml; Worthington) and DNase I (45 U/ml; Sigma). Homogenates were then incubated at 37°C for 30 min, gently triturated with a Pasteur pipette, and incubated at 37°C for 10 min. Undigested material was removed by filtration through a 70 μm cell strainer (BD Biosciences), and the remaining cells were centrifuged at 1100 × g for 5 min at 18°C. Collected cells were then suspended in 8 ml of 1 × HBSS containing 70% Percoll (GE Healthcare Life Science, Uppsala, Sweden), and then 4–5 ml of each was placed into a 15 ml tube. Cell suspensions were then overlaid consecutively with 4 ml HBSS containing 37% Percoll and 1 ml PBS. The resulting gradient was centrifuged at 200 × g for 40 min at 18°C, after which cells at the interface of the bottom two layers (70%/37%) were collected, washed twice with HBSS, and subjected to flow cytometric analysis.
 
 For flow-cytometry analysis, cells were first incubated with a mAb specific for mouse CD16/CD32 to prevent nonspecific binding of labelled mAbs against FcγR and were then labelled with specific mAbs conjugated with PE, FITC, PerCP-Cy5.5, or biotin. For the staining of CD11c, a biotin-conjugated mAb against mouse CD11c was detected with streptavidin-conjugated APC. Labelled cells were analysed by flow cytometry using a BD FACS Canto II flow cytometer (BD Biosciences, San Jose, CA). Cells were first gated on their forward (FSC) and side (SSC) scatter properties to discriminate putative monocytes from other events, and then were gated on CD45 and CD11b. The CD11b+/CD45dim/lo fraction obtained was analysed as microglia. All data were analysed with FlowJo 8.8.4 software (Tree Star Inc., Ashland, OR).
 
-## Quantitative PCR analysis
+### Quantitative PCR analysis
 
 Total RNA was extracted from the whole brain, spinal cord, or dissected optic nerve and optic tract with the use of Sepasol RNA I (Nacalai Tesque) and an RNeasy Mini kit (Qiagen, Hilden, Germany). First-strand cDNA was synthesised from total RNA with the use of a QuantiTect Reverse Transcription kit (Qiagen), and cDNA fragments of interest were amplified by real-time PCR in 96-well plates (Roche Diagnostics, Mannheim, Germany) with the use of a QuantiTect SYBR Green PCR kit (Qiagen) or a FastStart SYBR Green Master (Roche Diagnostics, Mannheim, Germany) and a LightCycler 480 or 96 Real-Time PCR System (Roche Diagnostics). The amplification results were analysed with the use of LightCycler software and were then normalised on the basis of the Gapdh mRNA level in each sample. Primer sequences (forward and reverse, respectively) were as follows: Tnfa, 5′-CCCTCACACACTCAGATCATCTTCT-3′ and 5′-GCTACGACGTGGGCTACAG-3′; Il1b, 5′-CAACCAACAAGTGATATTCTCCATG-3′ and 5′-GATCCACACTCTCCAGCTGCA-3′; Il6, 5′-TAGTCCTTCCTACCCCAATTTCC-3′ and 5′-TTGGTCCTTAGCCACTCCTTC-3′; Il10, 5′-AGGCGCTGTCATCGATTTCT-3′ and 5′-ATGGCCTTGTAGACACCTTGG-3′; Tgfb, 5′-ACCATGCCAACTTCTGTCTG-3′ and 5′-CGGGTTGTGTTGGTTGTAGA-3′; Itgax, 5′-AGCTGTGTGGACAGTGATGG-3′ and 5′-TGCATGTGAGTCAGGAGGTC-3′; Igf1, 5′-TACTTCAACAAGCCCACAGGC-3′ and 5′-ATAGAGCGGGCTGCTTTTGT-3′; Trem2, 5′-CTTCCTGAAGAAGCGGAATG−3′ and 5′-AGAGTGATGGTGACGGTTCC-3′; Ccl3, 5′-CAGCCAGGTGTCATTTTCCT-3′ and 5′-CTGCCTCCAAGACTCTCAGG−3′; and Gapdh, 5′-TCCCACTCTTCCACCTTCGA-3′ and 5′-GTCCACCACCCTGTTGCTGTA-3′.
 
-## Microarray analysis
+### Microarray analysis
 
 Total RNAs were prepared from the white matter (optic nerve and optic tract) or brain mononuclear cells of WT or CD47 KO mice as described above. For the white matter, RNAs from five WT (13–15 wks of age) and four KO (12–15 wks of age) genotype-matched different male animals were pooled and subjected to the analysis. For the brain mononuclear cells, RNAs from seven WT (10–15 wks of age) and six KO (12–16 wks of age) male animals were pooled and analysed. Microarray analyses were performed by the Dragon Genomics Center of Takara Bio (Otsu, Japan). The quality of the RNA samples was confirmed by an Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, CA). Biotinylated complementary RNA (cRNA) was synthesized using the GeneChip 3IVT Express Kit (Affymetrix, Santa Clara, CA) from 250 ng of total RNA prepared from the white matter, or using the Ovation Pico WTA system V2 (NuGEN, San Carlos, CA) and the Encore Biotin Module (NuGEN) from 20 ng of total RNA prepared from the brain mononuclear cells. Following fragmentation, 10 μg of cRNA was hybridised for 16 hr at 45°C on the GeneChip Mouse Genome 430 2.0 Array (Affymetrix) with the use of a Hybridization, Wash and Stain Kit according to the GeneChip 3′IVT Express Kit User Manual (Affymetrix). GeneChips were then scanned by a GeneChip Scanner 3000 7G (Affymetrix) under the control of Affymetrix GeneChip Command Console Software (Affymetrix). Obtained data were processed using the Expression Console Software (Affymetrix).
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Sample preparation for TEM analysis was carried out as described previously (Wilke et al., 2013) with minor modifications. Mice were anesthetised as described above and were then perfused transcardially with 1.6% PFA and 3% glutaraldehyde in 0.1 M phosphate buffer (pH 7.4). Brain tissues were removed and fixed with 4% PFA in 0.1 M phosphate buffer overnight at 4°C. Brains were coronally sectioned into slices of 100 μm thickness, and these slices were incubated with a fixative containing 2% reduced OsO4 and 1.5% potassium ferrocyanide in 0.1 M sodium cacodylate buffer (pH 7.4) for 1 hr on ice, with 1% thiocarbohydrazide solution for 20 min at room temperature and then with 2% OsO4 solution for 30 min. Sections were incubated in 1% uranyl acetate overnight at 4°C, incubated with Walton’s lead aspartate solution for 75 min at 60°C, dehydrated by sequential treatment for 10 min in each of 50, 70, 80, 90, 95, and 100% ethanol, and then placed in a second solution of 100% ethanol. The sections were incubated with propylene oxide twice, with a 1:1 mixture of propylene oxide/Durcupan resin (Durcupan ACM, Fluka, Buchs, Switzerland) for 10 min and with Durcupan resin twice for 10 min each, and then cured on a slide glass at 60°C for 2 days. The cured resins containing the anterior commissure were trimmed out from the flat resins under a stereo microscope and re-embedded into resin blocks for ultrathin sectioning. Ultrathin sections were prepared at a 50 nm thickness using an ultramicrotome (Ultracut-T, Leica) and collected onto single slot copper grids. The samples were examined at ×2500 magnification by a transmission electron microscope (H-7650, Hitachi, Tokyo, Japan) and digital electron micrographs were captured. The frequency of myelinated axons among all axons in the anterior commissure and the g-ratios of myelinated axons (the ratio of circumference of axon over myelin) were determined by the use of iTEM software (Olympus SIS, Münster, Germany).
 
-## Cuprizone model of demyelination
+### Cuprizone model of demyelination
 
 Control (SIRPα-flox:—) or SIRPα cKO (SIRPα-flox:Cx3cr1CreERT2) mice were fed a 0.2% (w/w) cuprizone (bis(cyclohexanone)oxaldihydrazone, Sigma) (Cpz) diet. Mice were sacrificed and their brains were processed for immunohistochemical analysis after 3 or 5 wks of Cpz treatment. Other groups of mice were returned to a normal diet after 5 wks of Cpz treatment and allowed to recover for 2 wks prior to immunohistochemical analysis. Mice fed a normal diet without Cpz for 7 wks were analysed as controls. Frozen brain coronal sections with a thickness of 20 μm were prepared and stained with specific antibodies for MBP (Myelin Basic Protein), Iba1, CD11c, and Olig2. Coronal slices from each mouse at approximate levels −1.9 to −2.0 mm from the bregma (Paxinos and Franklin, 1997) were analysed by fluorescence microscopy. Area size of the white matter, demyelination area (weak or no MBP-immunoreactive area), Iba1-positive area, and CD11c-positive area, as well as the cell number of Olig2+ cells, were quantified by ImageJ software (Schneider et al., 2012). The white matter area, including corpus callosum and hippocampal alveus, was visually determined on the image. The ratios of the area size of demyelination area, the Iba1-positive area and the CD11c-positive area to that of the white matter region, as well as the cell density of Olig2+ cells in the white matter area, were calculated from the quantified data and expressed as percentages. An example image for the quantification of demyelination size is shown in Supplementary file 5.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as the means ± SEM and were analysed using the Welch’s t-test. A P value <0.05 was considered statistically significant.
 
-## Data availability
+### Data availability
 
 The microarray data have been deposited to the Gene Expression Omnibus database (https://www.ncbi.nlm.nih.gov/geo/) (accession numbers: GSE118804 and GSE118805 for the white matter and the brain mononuclear cells, respectively).

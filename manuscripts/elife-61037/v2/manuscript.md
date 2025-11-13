@@ -36,17 +36,57 @@ As the sister group of animals, choanoflagellates are a potentially informative
 
 ## Results
 
-## Confinement induces an amoeboid phenotype in Salpingoeca rosetta
+### Confinement induces an amoeboid phenotype in Salpingoeca rosetta
 
 We report here on our recent and serendipitous discovery of environmentally relevant conditions under which the choanoflagellate Salpingoeca rosetta transdifferentiates from a flagellated state into an amoeboid state. While growing S. rosetta under conditions in which the cells were physically confined between the growth medium meniscus and the plate surface, we observed that some cells transitioned from a flagellated state to an amoeboid state (Video 1). Although amoeboid cells had not previously been reported in choanoflagellates, physical confinement regulates amoeboid cell differentiation and crawling motility in a wide range of eukaryotic cells, including zebrafish embryonic cells (Ruprecht et al., 2015), mammalian mesenchymal cells (Liu et al., 2015), some chytrid fungi (Fritz-Laylin et al., 2017b), dictyostelid amoebae (Srivastava et al., 2020), and euglenoid algae (Noselli et al., 2019). Moreover, cell confinement is likely of ecological relevance for choanoflagellates, which have been detected in diverse granular microenvironments (including soils [Geisen et al., 2015], marine sediments [McKenzie et al., 1997; Nitsche et al., 2007], sands [Tikhonenkov and Mazei, 2006], and silts [Tikhonenkov and Mazei, 2006]) whose pore sizes range from 1 mm to <1 μm and extend below the range of typical choanoflagellate cell diameters (~2–10 μm) (Leadbeater, 2015). In addiiton, choanoflagellates might also encounter transient cell confinement during attempts at phagocytosis by other microeukaryotic predators, such as ciliates or large amoebae (Kumler et al., 2020).
 
+![Video 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-video1.mp4.jpg)
+
+**Video 1.:** The strain used was SrEpac and the starting cell type was slow swimmer.
+
 To test whether cell deformation can induce the amoeboid phenotype, we used a tunable system for dynamic cell confinement (Le Berre et al., 2014) and imaged live S. rosetta cells before, during, and after confinement (Figure 1A). Single cells of S. rosetta confined in a space of 4 μm or more maintained the canonical flagellate phenotype, consistent with the cell body not being deformed (Figure 1B–D). On the other hand, confinement below 3 μm elicited an active response from the cells, which started dynamically extending and retracting protrusions within a few seconds (Figure 1B–D; Figure 1—video 1). In 2 μm confinement or less, most cells retracted their flagellum within minutes, thus acquiring a fully amoeboid phenotype (Figure 1B–J; Figure 1—figure supplement 1A; Figure 1—video 1). While microvilli initially persisted in amoeboid cells, the microvilli underwent progressive scattering and, eventually, resorption over the following minutes (Figure 1—video 1). Releasing confinement fully reversed the phenotypic switch (Figure 1K–P). Newly unconfined cells retracted their dynamic protrusions, regained a round shape, and regrew a flagellum close to the position of the original, retracted one (Figure 1—figure supplement 1B–D; Figure 1—video 2), suggesting that information on apicobasal cell polarity is conserved in the amoeboid form, though not externally visible.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig1-v2.jpg)
+
+**Figure 1.:** (A) Free-swimming cells (bottom left) were confined (bottom right) at a fixed height using confinement slides with micro-spacers (Liu et al., 2015; Le Berre et al., 2014) (top). (B) Confined S. rosetta cells underwent a rapid phenotypic transition, first from a flagellate form into an amoeboflagellate form, and eventually into an amoeboid form (that initially retains microvilli). Releasing confinement reversed this transition. (C and D) Confinement height correlated with the phenotypic switch. (C) Representative cells at each confinement height tested. (D) The flagellate form dominated at >3 μm confinement and the amoeboid form (defined by the presence of dynamic protrusions) at <3 μm. The number of cells (technical replicates) per batch (biological replicate) was as follows: 14, 6, and 12 cells for 5 μm confinement; 5, 5, and 11 cells for 4 μm confinement; 28, 18, and 6 cells for 3 μm confinement; 11, 5, and 6 cells for 2 μm confinement; and 13, 11, and 21 cells for 1 μm confinement. (E–J) Time series of an S. rosetta cell switching to the amoeboid form at 2 μm confinement. See Figure 1—video 1 for multiple examples. (K–P) Time series of an amoeboid S. rosetta cell reverting to the flagellate form after release from confinement. See Figure 1—video 2 for multiple examples. In all panels, white arrowheads indicate dynamic protrusions, black arrowheads indicate collar microvilli, and black arrows indicate the flagellum. Time stamps in black boxes shown as min:sec.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Most (but not all) S. rosetta cells retracted their flagellum within 500 s of confinement at 2 μm. (B–D) The flagellum regenerated after release from confinement in approximately the same position as the original, retracted flagellum. (B) Time series of an S. rosetta cell retracting its flagellum under confinement and regenerating it after confinement release (Figure 1—video 2). The cell was attached to the glass substrate with poly-d-lysine to minimize cell movements. White arrowheads: dynamic protrusions, black arrowheads: microvilli, black arrow: flagellum. Time stamps in black boxes are min:sec. (Figure 1—video 2). (C) To compare the flagellar position before and after confinement, the flagellar emergence angle was measured relative to an invariant vertical line (parallel to the edge of the field of view). (D) The position of the regenerated flagellum after release from confinement in a population of cells was almost always close to the position of the original, retracted flagellum (as measured by the flagellar emergence angle; Figure 1—video 2). The cells sometimes underwent slight global reorientations under confinement (even though they were attached to the substrate with poly-d-lysine) that likely accounted for small differences in flagellar angle before and after confinement.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic drawing of a rosette colony of S. rosetta (from Brunet and King, 2017). (B–E) Cells within rosettes became amoeboid under 2 μm confinement. (A) An unconfined rosette. (C and D) Time series of a confined rosette, showing dynamic extension and retraction of protrusions. All cells switched to an amoeboid phenotype, but we did not observe any evidence of collective behavior (Figure 1). (E) Quantification of the amoeboid switch in rosettes from two biological replicates. Numbers refer to individual cells. (F) Schematic drawing of a thecate S. rosetta cell (from Brunet and King, 2017). Thecate cells are sessile and attached to the substrate through an extracellular lodge called a ‘theca’. (G–J) Thecate cells become amoeboid under 2 μm confinement. (G) An unconfined thecate cell. (H and I) A confined thecate cell, showing dynamic extension and retraction of protrusions. (J) Quantification of the amoeboid switch in a population of confined thecate cells. In all panels, white arrowheads: dynamic protrusions, black arrowheads: microvilli, black arrow: flagellum. Time stamps in black boxes are min:sec.
 
 In addition to the solitary ‘slow swimmer’ cells used in the experiments above, S. rosetta can also differentiate into other cell types, including multicellular rosettes and sessile ‘thecate’ cells (Dayel et al., 2011). Both these cell types also differentiated into amoeboid cells with dynamic protrusions under confinement, showing that competence to undergo the amoeboid switch is not restricted to a single S. rosetta cell phenotype (Figure 1—figure supplement 2). Finally, S. rosetta responded in the same way to every type of confined environment tested, including the pressure-controlled dynamic cell confiner (Figure 1A,C,D), glass coverslips separated by microbeads, which served as spacers (Video 2), thin liquid films spread under a layer of oxygen-permeant oil (Video 3), and agar gels (Video 4). This suggests that the amoeboid switch is induced by cell deformation itself, independent of the properties of the substrate.
 
-## S. rosetta amoeboid cells produce blebs
+![Video 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-video2.mp4.jpg)
+
+**Video 2.:** The strain used was SrEpac and the starting cell type was slow swimmer.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61037/elife-61037-video3.mp4.jpg)
+
+**Video 3.:** The strain used was SrEpac and the starting cell type was slow swimmer.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61037/elife-61037-video4.mp4.jpg)
+
+**Video 4.:** The strain used was SrEpac and the starting cell type was slow swimmer.
+
+### S. rosetta amoeboid cells produce blebs
 
 To reconstruct the evolutionary history of a given cellular phenotype (such as the amoeboid phenotype), an important pre-requisite is the identification of the cellular and molecular modules that underlie it in a phylogenetically relevant set of species (Fritz-Laylin, 2020; Arendt, 2020; Carvalho-Santos et al., 2011). Eukaryotic cell protrusions similar to those we observed in S. rosetta fall into two different categories, pseudopods and blebs, that differ in their underlying mechanisms (see Introduction and Fritz-Laylin et al., 2017a). Pseudopods contain branched F-actin networks and have been best studied in adhesive animal mesenchymal cells (Svitkina and Borisy, 1999) but have also been identified in chytrid fungi (Fritz-Laylin et al., 2017b). By contrast, blebs are F-actin-free protrusions that form by delamination of the plasma membrane from the cortex under the influence of cortical actomyosin contractility (Paluch and Raz, 2013; Charras and Paluch, 2008; Figure 2A) and have been well documented in migratory primordial germ cells (Kardash et al., 2010). The presence of pseudopods and blebs is not mutually exclusive and multiple cells, including animal mesenchymal cells (Bergert et al., 2012), animal metastatic cells (Sanz-Moreno and Marshall, 2010), and dictyostelid amoebae (Tyson et al., 2014), can produce both.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig2-v2.jpg)
+
+**Figure 2.:** (A) Protrusions in eukaryotic crawling cells can either be F-actin-filled pseudopods that form by polymerization of F-actin (pink) reticulated by the Arp2/3 complex (purple, left) or F-actin-free blebs that form through the action of contractile forces in the actomyosin cortex underlying the plasma membrane (right). The cytosol is green in both panels. Modified from Fritz-Laylin et al., 2017a. (B) Formation of dynamic protrusions required F-actin and myosin II activity, but not Arp2/3-mediated F-actin polymerization. Protrusions were abundant in DMSO-treated control cells (N = 32, 34, and 50 cells in the three respective biological replicates) and in cells treated with the Arp2/3 inhibitor CK666 (100 μM, N = 47, 56, and 59 cells in the three respective biological replicates) but virtually absent in cells treated with the F-actin polymerization inhibitor latrunculin B (at both 2 μM [N = 33, 76, and 11 cells in the three respective biological replicates] and 20 μM [N = 32, 49, and 22 cells in the three respective biological replicates]) or the myosin II inhibitor blebbistatin (17 μM, N = 36, 77, and 17 cells in the three respective biological replicates). This suggests that the dynamic protrusions were blebs. All cells were under 1 μm confinement. (C–K) Dynamic protrusions that form under confinement are blebs, as indicated by live imaging of two S. rosetta amoeboid cells expressing an F-actin marker (LifeAct-mCherry, magenta in C/F/I and black in E/H/K) (Video 5). (C, F, I and E, H, K) We observed that expanding blebs (e; defined as blebs that increased in size during the period of observation currently increasing in size) were cytoplasm-filled, but F-actin-free. We found that F-actin subsequently re-invaded blebs that then initiated retraction (r; defined as blebs that decreased in size during the period of observation). F-actin was also present as a cortical layer (cx), as in animal cells (Chugh and Paluch, 2018), and accumulated in cytoplasmic foci (cf). The cells were under 1 μm confinement. (L–S) S. rosetta cells fixed and stained for F-actin (phalloidin, magenta) and cytoplasm (FM 1–43 FX, which distributes to the cytoplasm of S. rosetta following fixation, green) confirmed that the protrusions of amoeboid cells initially lack F-actin and are therefore blebs. (L to N) A flagellate cell showing collar microvilli (black arrowheads) and F-actin cortex (cx). (O) Linescan of F-actin fluorescent intensity along the line of interest in (N), showing cortical actin as two peaks where the lines intersects the cells cortex. (P–R) An amoeboid cell showing both F-actin-free and F-actin-encased protrusions, respectively, interpreted as expanding (e) and retracting (r) blebs. (S) Linescan of F-actin fluorescent intensity along the line of interest in (R), showing cortical actin in the putative retracting bleb but not the putative expanding bleb. In all panels: white arrowheads: blebs, black arrowheads: microvilli, e: expanding blebs, r: retracting blebs, cf: cytoplasmic foci. Time stamps in black boxes shown as min:sec.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Cellular phenotypes observed after pharmacological inhibitor treatments (as shown) under 1 μm confinement. White arrowheads indicate blebs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A flow-through chamber design was used to maintain confinement during immunostaining of amoeboid cells (see Materials and methods).
 
 To determine the nature of the S. rosetta cell protrusions, we treated cells with small molecule inhibitors of proteins required for pseudopod or bleb formation in animals and other amoeboid lineages. In animals, treatment of cells with latrunculin B inhibits the formation of F-actin networks and thereby prevents the formation of both pseudopods and blebs (Li et al., 2011; Charras et al., 2005). We found that inhibition of actin polymerization with latrunculin B prevented the formation of cell protrusions in S. rosetta (Figure 2B), thus implicating F-actin in their formation. Inhibition of the Arp2/3 complex with CK666 did not prevent formation of S. rosetta cell protrusions, suggesting they might represent blebs rather than pseudopods (Figure 2B). The inference that these protrusions are blebs was independently demonstrated by disruption of actomyosin contractility by treatment with the myosin II inhibitor blebbistatin, which reduced the formation of cell protrusions (Figure 2B; Figure 2—figure supplement 1).
 
@@ -56,25 +96,99 @@ To explore the level of similarity between choanoflagellate and animal cell bleb
 
 **Figure 3.:** Time lapse imaging of a LifeAct-mCherry-expressing live cell (Video 5) by DIC (left column) and fluorescence microscopy (middle column) revealed membrane dynamics and actin localization during bleb formation. Line scans (right column) were used to quantify LifeAct-mCherry fluorescence (indicating relative F-actin levels, middle column) along the outline of the plasma membrane (visualized by DIC microscopy, left column). Bleb initiation (at 01:03) and expansion (from 01:03 to 03:53) correlated with relative reduction of F-actin within the expanding bleb. F-actin re-invaded the bleb to reassemble the cortex (04:58) prior to bleb retraction (06:42–12:22). Timestamps shown as mm:ss. Time points correspond to key events during blebbing and are not evenly spaced. X-axis indicates distance along linescan from left-to-right intersection of cell membrane with the bottom boundary of the image. Y-axis indicates relative intensity in arbitrary units (AU).
 
-## Myosin II relocalizes to the cell cortex under confinement
+![Video 5.](https://cdn.elifesciences.org/articles/61037/elife-61037-video5.mp4.jpg)
+
+**Video 5.:** Blebs first form as cytoplasm-filled, F-actin-free protrusions and are re-invaded by F-actin before retraction.
+
+![Video 6.](https://cdn.elifesciences.org/articles/61037/elife-61037-video6.mp4.jpg)
+
+**Video 6.:** Blebs first form as cytoplasm-filled, F-actin-free protrusions and are re-invaded by F-actin before retraction.
+
+![Video 7.](https://cdn.elifesciences.org/articles/61037/elife-61037-video7.mp4.jpg)
+
+**Video 7.:** Blebs first form as cytoplasm-filled, F-actin-free protrusions and are re-invaded by F-actin before retraction.
+
+### Myosin II relocalizes to the cell cortex under confinement
 
 Bleb formation in animal cells depends upon the contractile activity of myosin II (Paluch and Raz, 2013), which co-localizes with actin in the cell cortex and within retracting blebs (Charras et al., 2006). Because myosin II inhibition disrupted bleb formation (Figure 2B) in S rosetta, we hypothesized that cortical actomyosin might also underlie blebbing choanoflagellates. To investigate the intracellular distribution of myosin II in live flagellate and amoeboid S. rosetta, we generated an S. rosetta transgenic strain expressing a fluorescent myosin II fusion construct, Myosin Regulatory Light Chain-monomeric Teal Fluorescent Protein (MRLC-mTFP). In unconfined flagellate cells, MRLC-mTFP was diffusely distributed in the cytoplasm, while also forming a few cortical patches, most frequently at the basal pole of the cell (Figure 4A). Under 1 μm confinement, MRLC-mTFP redistributed in less than a minute into discrete foci and fibers, both cortical and cytoplasmic (Figure 4B). Quantification of fluorescence showed that this resulted in an increase in the cortical fraction of myosin II in confined cells (Figure 4C; Figure 4D, Figure 4—figure supplement 1A; Figure 4—figure supplement 1B; Figure 4—figure supplement 1C), similar to the confinement-induced redistribution of myosin to the cortex described in Dictyostelium (Srivastava et al., 2020) and vertebrate cells (Lomakin et al., 2020; Venturini et al., 2020). In cells that were trapped at the border of the micropillars used for confinement and were thus only confined over part of their area, myosin II foci and fibers were only observed in the confined fraction of the cell (Figure 4E), suggesting that confinement and cellular deformation are sensed locally within cells (rather than by a central sensor such as the nucleus, as in vertebrate cells [Lomakin et al., 2020; Venturini et al., 2020]). Myosin II foci and fibers of confined cells underwent complex intracellular movements, possibly mediated by contractility of the network (Videos 8 and 9). In blebbing cells, myosin II was absent from expanding blebs, but re-invaded blebs prior to retraction, similar to F-actin (Figure 4F; Video 9 and Figure 4—video 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig4-v2.jpg)
+
+**Figure 4.:** (A) Top: MRLC-mTFP fluorescence in four unconfined flagellate S. rosetta cells from a chain colony (Dayel et al., 2011). The position of the microvilli (black arrowheads) can be inferred from weak autofluorescence of bacteria captured by the collar. Asterisks (*) indicate fluorescent signal from the food vacuole (possibly due to autofluorescence of phagocytosed bacteria and/or to fluorescent protein degradation by autophagy; Wetzel et al., 2018). Most MRLC-mTFP is cytoplasmic but a cortical basal patch (bp) can be observed. Bottom: linescan of MRLC-mTFP fluorescence intensity along the line of interest (A; red dotted line), showing both diffuse cytoplasmic staining and cortical staining at the basal patch. (B) MRLC-mTFP is redistributed in less than a minute in response to confinement, from a diffuse cytoplasm staining into discrete cortical and cytoplasmic foci and fibers. Time-lapse of two MRLC-mTFP-expressing S. rosetta cells before, during and after establishment of 1 μm confinement. (cf): cytoplasmic foci, arrows: cortical foci and fibers, (*): food vacuole signal. (C) Top: confocal images of MRLC-mTFP in representative unconfined, 2 μm-confined and 1 μm-confined S. rosetta. Black arrows: cortical foci. See Figure 4—figure supplement 1 for more cells. Bottom: line scans along the lines of interest in the top panels. Cortical foci of myosin II appear as peaks where the line of interest (red dotted line) intersects the cell cortex. (D) Myosin II is enriched at the cortex of confined cells, as manifested by an increase in the cortical/cytoplasmic ratio in MRLC-mTFP fluorescence. Results are depicted as a SuperPlot (Lord et al., 2020) where large dots are biological replicates (batches of cells) and small dots technical replicates (individual cells). p=2.5 × 10−2 and 1.3 × 10−2 by Dunnett’s test for comparison of multiple treatments to a control, for 2 and 1 μm confinement, respectively. (E) Half-confined cells (partly trapped under a micropillar used for confinement, see Figure 1A) only show condensation of myosin II into foci and fibers (arrows) in the confined part of the cell. (F) Localization of MRLC-mTFP in a blebbing amoeboflagellate cell under 1 μm confinement (Video 9; see also Figure 4—video 1). Myosin II is absent from expanding blebs (e; defined as in Figure 2) but re-invades retracting blebs (r).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** All panels are confocal images of MRLC-mTFP-expressing S. rosetta cells, unconfined (A) or confined with 2 μm (B) or 1 μm (C) microbeads. Cells were imaged as early as possible (less than a minute) after having been confined. Arrows: cortical foci and fibers.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–D) Flagellate S. rosetta cells are characterized by a cage of cortical microtubules that underlie the entire plasma membrane, as previously reported (Karpov and Leadbeater, 1998; Leadbeater, 2015; Sebé-Pedrós et al., 2013a). A representative flagellated cell (previously published in Brunet et al., 2019) fixed and stained for F-actin (rhodamine-phalloidin, red), α-tubulin (YOL3/4 antibody, white), and DNA (Hoechst, blue). (E–H) Amoeboid S. rosetta cells still display a microtubule cage, but it is detached from the plasma membrane and surrounds the nucleus. The cell was confined (1 μm), fixed, and stained for F-actin (rhodamine-phalloidin, red), β-tubulin (E7 antibody, white), and DNA (Hoechst, blue). In all panels, black arrowheads: microvilli, arrows: flagellum.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–D) Representative micrographs of S. rosetta cells under 2 μm confinement under the following conditions: (A) in control conditions (AKSW 0.1% DMSO), (B) after intracellular calcium depletion (with 327 μM of the cell-permeant calcium chelator BAPTA-AM), (C) after extracellular calcium depletion (calcium-free AKSW [CF-AKSW] with 20 mM of the calcium chelator EGTA), and (D) after both extracellular and intracellular calcium depletion (CF-AKSW with EGTA and BAPTA-AM). Blebs (white arrowheads) were frequently observed in all conditions. bd: 2 μm microbeads used as spacers. (E) Quantification of blebbing activity reveals no differences under calcium depletion. Relative blebbing activity of individual cells was quantified by automated cell segmentation and measuring the rate of change of cell shape outline in time (see Materials and methods). Results are depicted as a SuperPlot (Lord et al., 2020) in which small dots are individual cells and large dots are median values per cell population. Each cell population was treated and imaged as an independent biological replicate. Color of small dots reflects the cell population they belong to. p=0.95, 0.91, and 1, respectively, for comparisons of the BAPTA-AM, CF-AKSW, and CF-AKSW+BAPTA-AM conditions to the control (by Dunnett’s test for comparison of multiple samples to a control). Number of biological replicates and number of cells were, respectively, AKSW 1% DMSO control: N = 7 replicates, n = 1252 cells; AKSW BAPTA-AM: N = 6, n = 921; CF-AKSW: N = 7, n = 896; CF-AKSW+BAPTA-AM: N = 9, n = 1439.
+
+![Video 8.](https://cdn.elifesciences.org/articles/61037/elife-61037-video8.mp4.jpg)
+
+**Video 8.:** Note the dynamic intracellular distribution of myosin II foci and fibers. Large fluorescent dots in the mTFP channel are autofluorescent food vacuoles previously described in S. rosetta (Wetzel et al., 2018).
+
+![Video 9.](https://cdn.elifesciences.org/articles/61037/elife-61037-video9.mp4.jpg)
+
+**Video 9.:** Note that expanding blebs are devoid of myosin II and are re-invaded by myosin II before retraction, similar to F-actin.
+
 Most confined S. rosetta cells remained in one place and extended blebs in all directions without net locomotion. However, a few cells did migrate over short distances (about 15 μm; Figure 5A-H; Video 1, Figure 1—video 1 and Video 10) with an initial median speed of 0.3 μm/min under 2 μm confinement, which decreased to 0.1 μm/min after about 10 min under confinement (Figure 5E; Figure 1—video 1). This decrease in speed correlated with a decrease in directional persistence (Figure 5F; Figure 1—video 1). Crawling with similar speed and persistence was also observed under 0.5 and 3.5 μm confinement (Figure 5G–H; Figure 5—video 1).
 
-## Amoeboid cells retain cytoplasmic microtubules
+![Figure 5.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Amoeboid cell crawling after flagellar retraction (Figure 1—video 1). White arrow indicates direction of movement. (E and F) Speed and directional persistence of the cells in Figure 1—video 1 (2 μm confinement). Directional persistence was defined as the ratio of the total path to the Euclidean distance over 2 min. (G and H) Violin plots showing speed and directional persistence measured over 100 min under 0.5 μm (Figure 5—video 1, non-escaping cells under the micropillar – see following panels), 2 μm (Figure 1—video 1), and 3.5 μm (Figure 5—video 1, cells outside the micropillar – see following panels) confinement. (I) mTFP-expressing S. rosetta cells (cyan; confined cells that escaped during the assay indicated with small arrows) distributed within and outside the confinement zone (border indicated with larger arrow) at the beginning of an escape assay (Figure 5—video 1). (J) Schematic of cross-section through escape assay set-up from (I). (K) Time series of an mTFP-expressing cell (arrow) during escape from confinement (top, DIC; middle, mTFP; bottom, segmentation of mTFP fluorescence to reveal cell shape; Figure 5—video 2). Automated detection of the long (blue) and short (red) axes of the cell revealed that the cell elongated during crossing of the confinement border and relaxed into a more rounded shape once escape was complete. (L) Cells crawled directionally during escape. Bullseye diagram showing the distribution of angular differences between crawling and the shortest possible escape path in escaping cells (N = 8). (M) Escaping cells (N = 8) consistently elongated during escape and resumed a rounder shape once in the unconfined area. Escape also corresponded to a decrease in the projected area of the cell. Mean aspect ratio (red line) and projected area (blue line), ribbons: standard deviation. (N) Escaping cells acquired a highly elongated shape. Non-escaping cells did not reach comparable elongation levels, as indicated by the peak aspect ratio. Results are depicted as a SuperPlot (Lord et al., 2020) with biological replicates (time-lapse movies of a cell population) represented as large dots and technical replicates (individual cells within each movie) as small dots. Replicate 1 (blue dots) included 81 cells of which six escaped (p=2.2 × 10−4 by Mann–Whitney’s U test). Replicate 2 (orange dots) included 13 cells of which two escaped (p=3.0 × 10−2 by Mann–Whitney’s U test). (O) Escape required myosin II activity. Control cells (three biological replicates with N = 95, 35, and 12 cells) almost always escaped confinement if they were initially located less than 5 μm away from the border, and some escaped from as far as 15 μm. Seventeen micromolar blebbistatin-treated cells (two biological replicates with N = 110 and 73 cells) virtually never escaped. Time stamps in black boxes shown as min:sec.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Aspect ratio of a representative escaping cell before, during, and after escape (black line). The aspect ratio increased during escape and decreased after escape. Also depicted is the distance between the confinement border and the front or the rear end of the cell (full and dotted blue lines, respectively). The escape phase (in Figure 5K and panels C and D) is defined and automatically recognized as the time after the front end of the cell crossed the confinement boundary and before the rear end of the cell did. Distance from the border is defined as positive inside the confinement zone and negative in the unconfined space. (B) Average aspect ratio of escaping cells as a function of absolute time, aligned by beginning of escape. (C) Distance from the border as a function of time (normalized by duration of the escape phase) in escaping cells. (D) Cell shape circularity decreased during escape, but resumed a high value once escape was complete, reflecting elongation of the cell during escape (A, B, and Figure 5K–L). In (B) and (C), black line is the average value of the metric of interest and gray ribbon is the standard deviation (N = 8 escaping cells for all panels).
+
+![Video 10.](https://cdn.elifesciences.org/articles/61037/elife-61037-video10.mp4.jpg)
+
+**Video 10.:** Note dynamic distribution of F-actin within the leading bleb (Figure 5G–H).
+
+### Amoeboid cells retain cytoplasmic microtubules
 
 Intracellular microtubule distribution regulates actomyosin activity in some animal cells (Kopf et al., 2020; Chapa-y-Lazo et al., 2020) and in Dictyostelium (Sugiyama et al., 2015), with microtubule-free zones experiencing higher local contractility and bleb retraction. In unconfined flagellated S. rosetta cells, we observed that cortical microtubules radiated from the apical basal body to form a cage underneath the entire plasma membrane, as previously reported (Karpov and Leadbeater, 1998; Sebé-Pedrós et al., 2013a; Figure 4—figure supplement 2A–D). In amoeboid cells, this cage remained present – but mostly detached from the plasma membrane and around the nucleus (Figure 4—figure supplement 2E–H). This is consistent with maintenance of the microtubule-organizing center and of apicobasal polarity in amoeboid cells (Figure 1—figure supplement 1). As interphase microtubules of choanoflagellates are resistant to standard inhibitors (e.g. nocodazole and colchicine), it was not possible to test directly whether microtubule dynamics regulates blebbing.
 
-## Calcium is not required for the amoeboid switch in S. rosetta
+### Calcium is not required for the amoeboid switch in S. rosetta
 
 Finally, we investigated whether confinement-induced bleb formation in choanoflagellates requires calcium signaling in choanoflagellates, as it does in animals (Lomakin et al., 2020; Venturini et al., 2020) and slime molds (Srivastava et al., 2020). To this end, we transferred the cells into calcium-free artificial seawater to deplete extracellular calcium and treated cells with BAPTA-AM to deplete intracellular calcium. Even after depletion of both intracellular and extracellular calcium, we observed no reduction in blebbing in response to confinement (Figure 4—figure supplement 3). Thus, despite the mechanistic similarities among choanoflagellates, animal cells, and slime molds in their reliance on actomyosin activity for bleb formation, calcium signaling does not appear to be required for confinement-induced blebbing in S. rosetta.
 
-## The amoeboid switch is conserved across choanoflagellate diversity and allows escape from confined microenvironments
+### The amoeboid switch is conserved across choanoflagellate diversity and allows escape from confined microenvironments
 
 The amoeboid switch (at least as induced through confinement between glass slides) resulted in cells that extended blebs and seemed to probe their local environment, but only rarely migrated. However, we hypothesized that the crawling cell state might enable an escape response in a more complex environment, one resembling natural interstitial media. To test this hypothesis, we tracked the behavior of live cells in a heterogeneous environment containing zones of confinement surrounded by less confined spaces (Figure 5I–J; Figure 5—video 1). A matrix of PDMS pillars defined an environment in which choanoflagellates encountered 0.5 μm deep confinement zones surrounded by 3.5 μm deep spaces in which they could swim freely. Cells that were initially confined less than 15 μm away from a pillar border were capable of escaping to a 3.5 μm deep space (Figure 5K; Figure 5—video 1). Typically, a confined cell would first bleb irregularly and crawl slowly, until part of the cell – generally an expanding bleb – crossed the border of the pillar into the non-confined space. Following this, the cell would change shape and elongate away from the border of the pillar and crawl directionally until it had fully escaped (Figure 5K–L; Figure 5—video 2). Automated cell segmentation followed by morphometric quantification confirmed that escaping cells reliably elongated (Figure 5M; Figure 5—figure supplement 1; Figure 5—video 2), while non-escaping cells (that never detected a border) remained nearly round (Figure 5N), indicating that this escape behavior involves specific cell shape changes. Interestingly, the first blebs that crossed the border were occasionally shed from the cell and reabsorbed during escape (Video 11). Finally, treatment with blebbistatin dramatically reduced the escape behavior (Figure 5O), consistent with this behavior requiring myosin activity. This type of behavior might allow choanoflagellates to escape from tightly packed silts (<3 μm granularity) into the water column or more loosely packed interstitial environments. It might also allow escape during attempts at phagocytosis by predators.
 
+![Video 11.](https://cdn.elifesciences.org/articles/61037/elife-61037-video11.mp4.jpg)
+
+**Video 11.:** One of the blebs is then reabsorbed by the cell during escape from confinement.
+
 Having uncovered an amoeboid switch in S. rosetta, we sought to assess the phylogenetic distribution of the amoeboid switch across choanoflagellate diversity in order to determine whether this phenotype may have been present in the last common ancestor of choanoflagellates. We tested the effect of 2 μm confinement on six additional choanoflagellate species that together represent the main branches of the choanoflagellate phylogenetic tree (Carr et al., 2017). All displayed blebbing activity under confinement (Figure 6A–J) with the exception of Diaphanoeca grandis (Figure 6K and L; Figure 6—video 1) – which could indicate a secondary loss of the ameboid switch in this lineage – or that different conditions are required to induce the phenotype (such as <2 μm confinement). The amoeboid switch in the other five species covers a spectrum of phenotypes. The least pronounced response was seen in Choanoeca flexa (Figure 6G–H), whose sheet colonies (Brunet et al., 2019) dissociate into single cells that bleb and migrate over short distances without retracting their flagella, thus keeping an amoeboflagellate phenotype. Two other species, Monosiga brevicollis (Figure 6E–F; Video 12) and Acanthoeca spectabilis (Figure 6I–J; Video 13), showed a similar response to S. rosetta, including blebs and flagellar retraction. Salpingoeca helianthica generated very large and branched blebs (Figure 6A,B; Video 14), often longer than the rest of the cell body – reminiscent of the ‘lobopods’ described in some protists (Tikhonenkov et al., 2020). Finally, Salpingoeca urceolata (Figure 6C–D; Video 15) differentiated into amoebae capable of sustained migration over long distances (>40 μm).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig6-v2.jpg)
+
+**Figure 6.:** (A–J) Five of six choanoflagellate species tested underwent the amoeboid transition under 2 μm confinement (Videos 12–15). (K–L) In contrast, the loricate choanoflagellate Diaphanoeca grandis was passively flattened under 2 μm confinement, but did not generate blebs (Figure 6—video 1). (M) Phylogenetic distribution of flagellate, amoeboflagellate, and amoeboid cell phenotypes in animals, fungi, amoebozoans, and their relatives. We infer that the last common ancestor of choanoflagellates and animals was able to differentiate into flagellate, amoeboid, and amoeboflagellate forms. Flagellate and amoeboid forms were likely both still present in the last common ancestor of all animals. See Figure 6—figure supplement 1 and Supplementary file 1 for full supporting evidence regarding the distribution of cellular phenotypes in animals. Species silhouettes are from Phylopic (http://phylopic.org). (N–P) Commonalities and differences in the regulation of cellular phenotypic transitions in choanoflagellates, sponges, and vertebrates. (N) Choanoflagellates can rapidly alternate (in a matter of minutes) between flagellate, amoeboflagellate, and amoeboid forms based on degree of external confinement (Figure 1). Inhibition of transcription does not prevent transitions between amoeboid and flagellate forms, suggesting that the transition is post-transcriptionally regulated (Figure 6—figure supplement 2). (O) In sponges, the zygote can give rise to flagellated choanocytes and amoeboid archeocytes. Choanocytes and archeocytes can reversibly interconvert, but this process takes several hours and likely requires transcriptional regulation (Sogabe et al., 2019). (P) In vertebrates, multicellular development from the zygote results in terminal differentiation of ciliated epithelial cells, mesenchymal cells and amoeboid leukocytes, but injury can trigger differentiation of epithelial cells into crawling mesenchymal cells (by epithelial-to-mesenchymal transition or EMT [Lamouille et al., 2014; Dongre and Weinberg, 2019]) that respond to confinement by switching to a stable-bleb form capable of amoeboid migration (Liu et al., 2015; Ruprecht et al., 2015). The switch from epithelial to mesenchymal cells is reversible (by mesenchymal-to-epithelial transition or MET).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Shown is a phylogenetic tree (modified from Brunet and King, 2017) along with information about the presence or absence (see key) of relevant cell types and cell behaviors in diverse animal lineages. Most animal lineages have crawling cells during both embryonic and adult life-history stages. In lineages that lack adult crawling cell types, cell crawling is still often observed in embryonic cells or during wound healing. This phylogenetic distribution suggests that cell crawling was present in the last common animal ancestor – although it might have been restricted to transient developmental or physiological processes (such as primordial germ cell migration or wound healing, respectively), rather than a long-term property of a stable cell type. Cell crawling is seemingly absent from five phyla (Placozoa, Nematomorpha, Gastrotricha, Gnathostomulida, and Rotifera), which might reflect lack of data rather than a genuine absence as embryonic development and wound healing are generally little studied in those groups. Note that amoeboid cell types are thought to be absent in certain lineages within some phyla – such as Calcaronea and possibly Homoscleromorpha within sponges (Adamska, 2016). See Supplementary file 1 for underlying data and references. Species silhouettes are from Phylopic (http://phylopic.org).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/61037/elife-61037-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The fraction of blebbing cells was comparable in DMSO-treated controls (left, N = 42, 60, and 9 cells in three respective biological replicates) and in cells treated with an RNA-polymerase II inhibitor (0.1 mg/mL actinomycin D; N = 12, 15, and 5 cells in three respective biological replicates).
+
+![Video 12.](https://cdn.elifesciences.org/articles/61037/elife-61037-video12.mp4.jpg)
+
+![Video 13.](https://cdn.elifesciences.org/articles/61037/elife-61037-video13.mp4.jpg)
+
+![Video 14.](https://cdn.elifesciences.org/articles/61037/elife-61037-video14.mp4.jpg)
+
+![Video 15.](https://cdn.elifesciences.org/articles/61037/elife-61037-video15.mp4.jpg)
+
+**Video 15.:** The cell crawls over about 40 μm, shedding cellular material at its rear end (possibly similar to the shedding of blebs by S. rosetta; Video 11).
 
 ## Discussion
 
@@ -104,27 +218,100 @@ Finally, future comparative work will benefit from deeper insights into the mech
 
 ## Materials and methods
 
-## Choanoflagellate cultures
+**Key resources table**
 
-## Cultures of S. rosetta
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Salpingoeca rosetta)</td>
+      <td>Regulatory myosin light chain short version (PTSG_00375)</td>
+      <td>NA</td>
+      <td>NCBI XM_004998867.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Salpingoeca rosetta)</td>
+      <td>S. rosetta</td>
+      <td>PMID:24139741</td>
+      <td>ATCC PRA-390; accession number SRX365844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Algoriphagus machipongonensis)</td>
+      <td>A. machipongonensis</td>
+      <td>PMID:22368173</td>
+      <td>ATCC BAA-2233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Echinicola pacifica)</td>
+      <td>E. pacifica</td>
+      <td>PMID:16627637</td>
+      <td>DSM 19836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. rosetta)</td>
+      <td>pEFl5’-Actin3’::pac-P2A-mTFP</td>
+      <td>Wetzel et al., 2018</td>
+      <td>Addgene ID NK676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. rosetta)</td>
+      <td>pEFL5'-Actin3'::pac, pActin5'-EFL3'::mCherry</td>
+      <td>This paper</td>
+      <td>Addgene ID NK802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. rosetta)</td>
+      <td>pEFL5'-Actin3'::pac, pActin5'-EFL3'::LifeAct-mCherry</td>
+      <td>This paper</td>
+      <td>Addgene ID NK803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. rosetta)</td>
+      <td>pEFL5'-Actin3'::pac, pActin5'-EFL3'::MRLC-mTFP</td>
+      <td>This paper</td>
+      <td>Addgene ID NK804</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Choanoflagellate cultures
+
+#### Cultures of S. rosetta
 
 Salpingoeca rosetta in the chain/slow swimmer form (Dayel et al., 2011) was maintained as a co-culture with the prey bacterium Echinicola pacifica (SrEpac) in 5% Sea Water Complete (SWC) culture medium, as previously described (Levin and King, 2013). Thecate S. rosetta were from a thecate SrEpac strain (HD1), which was produced from SrEpac through starvation following a published protocol (Levin and King, 2013). Rosettes were obtained from a co-culture of S. rosetta with the multicellularity-inducing bacterium Algoriphagus machipongonensis (Dayel et al., 2011; Alegado et al., 2012) (strain Px1) in 5% Cereal Grass Medium (CGM3) in Artificial Sea Water (ASW) (King et al., 2009a).
 
-## Cultures of C. flexa, S. helianthica, S. urceolata, D. grandis, M. brevicollis, and A. spectabilis
+#### Cultures of C. flexa, S. helianthica, S. urceolata, D. grandis, M. brevicollis, and A. spectabilis
 
 Cultures of S. urceolata, D. grandis, M. brevicollis, and A. spectabilis were established by thawing frozen stocks stored in liquid nitrogen following a published protocol (King et al., 2009b). Recipes for the culture media were previously published (Richter et al., 2018; King et al., 2009a) and modified as follows: S. urceolata was grown in 1% CGM3 at 25°C, D. grandis was grown in 5% CGM3 at 16°C, and A. spectabilis was grown at 16°C. C. flexa was obtained from a culture founded by a colony isolated from Curaçao in 2018 and continuously passaged since then as previously published (Brunet et al., 2019). Live cultures of S. helianthica were a gift from Mimi Koehl and Michael O’Toole II and were maintained in 25% freshwater CGM3 (FCGM3) following a published protocol (Richter et al., 2018).
 
-## Live imaging
+### Live imaging
 
 Cells were imaged by differential interference contrast (DIC) or epifluorescence microscopy using a 40× (water immersion, C-Apochromat, 1.1 NA), 63× (oil immersion, Plan-Apochromat, 1.4 NA), or 100× (oil immersion, Plan-Apochromat, 1.4 NA) Zeiss objective mounted on a Zeiss Observer Z.1 with a Hamamatsu Orca Flash 4.0 V2 CMOS camera (C11440-22CU).
 
-## Confocal imaging
+### Confocal imaging
 
 Fixed and stained samples were imaged by confocal microscopy using a Zeiss LSM 880 AxioExaminer with Airyscan and a 63×, 1.4 NA C Apo oil immersion objective (Zeiss) and excitation provided by a 405, 488, 568, or 633 nm laser (Zeiss).
 
-## Cell confinement
+### Cell confinement
 
-## Dynamic cell confiner
+#### Dynamic cell confiner
 
 A one-well dynamic cell confiner (Liu et al., 2015; Le Berre et al., 2014) comprising an Elveflow Vacuum/Pressure Generator and an Elveflow AF1 DUAL–Vacuum/Pressure Controller was purchased from 4Dcell (Montreuil, France), together with suction cups and with 1 μm, 2 μm, 3 μm, 4 μm, and 5 μm confinement slides.
 
@@ -134,7 +321,7 @@ Confinement was applied by following provider’s instructions, by gradually dec
 
 Escape assays were realized following the same protocol as confinement assays, but by imaging, the cells trapped under the micropillars of a 3 μm confinement slide.
 
-## Confinement with microbeads
+#### Confinement with microbeads
 
 Some early confinement experiments and pharmacological assays were performed by confining S. rosetta cell suspensions between two coverslips separated by microbeads (acting as spacers) and imaging them on a Zeiss Z.1 observer (see above).
 
@@ -142,11 +329,11 @@ The following types of microbeads were used: non-fluorescent 1 μm sulfate/latex
 
 Prior to confinement, 100 mL of a dense S. rosetta culture (strain SrEpac,~106 cells/mL) was filtered through a 5 μm syringe-top filter (Fisher Scientific SLSV025LS; to remove large biofilm pieces) and Percoll-purified (to remove bacteria) following a published protocol (Levin and King, 2013). The resulting S. rosetta suspension was further concentrated into 100 μL by centrifugation at 5000 g for 5 min on a tabletop microcentrifuge, thus reaching a final density of ~109 cells/mL. The resulting dense cell suspension was placed on ice and immediately mixed 10:1 with a stock suspension of microbeads in ASW. 0.1 μL of the cells/beads mixture was mounted on a rectangular coverslip pre-treated with a Corona surface treater (Electro-Technic Products BD-20AC) to facilitate liquid spreading and surmounted with a second (non-Corona-treated) coverslip.
 
-## Confinement in a thinly spread liquid layer
+#### Confinement in a thinly spread liquid layer
 
 The first confinement experiments (Video 3) were realizing by trapping cells into a thinly spread layer of liquid medium surmounted by oxygen-permeant oil. Five microliters of a dense cell suspension (concentrated down to ~109 cells/mL in ASW complemented with 1% CGM3% and 1% rhodamine-dextran as a fluorescent marker of the aqueous phase [Sigma–Aldrich D6001]) were spread on a FluoroDish pre-treated with a handheld Corona surface treater and surmounted with 120 μL of oxygen-permeant anti-evaporation oil (Ibidi 50051). The thickness of the medium layer was measured by visualizing rhodamine-dextran fluorescence using a confocal microscope. Rhodamine-dextran fluorescence was exclusively observed within the aqueous layer of ASW-based medium (containing the cells) and was excluded from the overlaying oil (consistent with rhodamine-dextran being hydrophilic). Confocal stacks were visualized with Fiji (Schindelin et al., 2012) and the decrease of red fluorescence at the water/oil interface allowed quantification of the thickness of the aqueous phase. Film thickness varied within a given FluoroDish (possibly due to meniscus effects) and ranged from 1 to 8 μm. Cells were observed to be consistently amoeboid if they were trapped in a layer thinner than 3 μm and to be consistently flagellate and free-swimming if the layer was thicker than 5 μm – consistent with observations made with confinement slides and microbeads.
 
-## Transfection
+### Transfection
 
 For F-actin and septin2-mTFP live imaging (Video 10), cells were co-transfected with plasmids encoding LifeAct-mCherry (Addgene ID NK612) and septin2-mTFP (Addgene ID NK641, which distributes within the entire cytoplasm in highly-expressing cells) following a published transfection protocol (Booth et al., 2018) and imaged in epifluorescence microscopy using a Zeiss Z.1 observer.
 
@@ -158,7 +345,7 @@ The NK802 plasmid was then used as a backbone for insertion of LifeAct-mCherry a
 
 Either 5 or 10 μg of NK803 and NK804 was tested in 24 transfection reactions each (resulting in 96 reactions in total) as in Booth et al., 2018 and selection with 80 μg/mL puromycin was performed as in Wetzel et al., 2018. Resistant cells were observed after 7 days in five reactions with 5 μg of NK803 and in 13 reactions with either 5 or 10 μg of NK804. For each construct, three reactions with visible mCherry or mTFP fluorescence were chosen for passaging and diplayed stable fluorescence and puromycin resistance over at least three passages, suggesting either genomic integration of the transfected construct or stable replication as an episomal element. Fluorescence patterns appeared identical in all three strains for each construct.
 
-## Cell segmentation and morphometrics
+### Cell segmentation and morphometrics
 
 For escape response assays (Figure 5), cell shapes were segmented using the DIC channel. Cell segmentations were obtained from the predictions of a StarDist model (Schmidt et al., 2018; Weigert et al., 2020). Ground truth for training the StarDist model was created by cropping out and manually labeling a subset of the cells to be analyzed, at evenly distributed time points throughout the movies. A total of N = 160 square images (width 151px) of individual cells and their associated masks were rearranged into 32 mosaic images containing 5 × 5 cell images, representing the ground truth for network training. The centers of the segmented cells were tracked over time using Trackpy (Allan et al., 2019).
 
@@ -168,21 +355,25 @@ For calcium depletion assays (Figure 4—figure supplement 3), as no strong diff
 
 Blebbing activity was approximated as the rate of cell shape change. First, all movies were resampled to a frame rate of 1 frame per 20 s and only the first 240 s were considered. To compensate for a possible global drift of the field of view, all resulting frames of each movie were first registered to the first frame. For each cell and for each time point, the tracked cell labels were used to extract the difference between the shape of the cell and the shape of the same cell 20 s earlier. The zones over which cell shape differed between both time points matched recognizable blebs (see Video 16 for an example). Blebbing activity for an individual cell was calculated as the mean area of this shape difference, averaged over all time points, and normalized by cell area. Cell tracks shorter than 200 s and those meeting any of the following conditions for any considered time point were excluded from this analysis:
 
+![Video 16.](https://cdn.elifesciences.org/articles/61037/elife-61037-video16.mp4.jpg)
+
+**Video 16.:** Left panel: DIC channel. Middle panel: result of the cell segmentation. Right panel: cell protrusions, classified into expanding blebs (orange) and retracting blebs (blue).
+
 Cell segmentation, tracking, and all downstream analysis were performed in Python (3.7) in combination with software belonging to the SciPy ecosystem (RRID:SCR_008058 [Oliphant, 2007; van der Walt et al., 2011; Hunter, 2007; van der Walt et al., 2014]) and additional software CziFile: https://pypi.org/project/czifile/ and Fiji (RRID:SCR_002285 [Schindelin et al., 2012]). This analysis concluded that blebbing activity did not differ significantly between the four conditions tested (Figure 4—figure supplement 3).
 
-## Pharmacological assays
+### Pharmacological assays
 
 For all pharmacological inhibition assays, cells were pre-treated with small molecule inhibitors for 30 min before imaging. Negative controls were treated for the same time with a concentration of compound vector (most often DMSO) equivalent to that used in the highest inhibitor dosage. Compounds used and their stock and working concentrations are in Supplementary file 2.
 
 Technical replicates were defined as individual cells. Biological replicate were batches of cells, treated, and processed together. There were at least three biological replicates per condition, with at least five cells (technical replicates) per biological replicate. In each experiment, biological replicates were produced by splitting a single batch of cells into groups that were processed identically, except for the experimental variable of interest. Sample sizes can be found in the legend of each relevant figure. No outliers were encountered, and no data were excluded.
 
-## Calcium depletion
+### Calcium depletion
 
 For depletion of external calcium, cells were transferred into calcium-free AK sea water (CF-AKSW). CF-AKSW was prepared following a published AKSW recipe (Booth et al., 2018), omitting only CaCl2, and further adding 20 mM EGTA to chelate any remaining calcium. A suspension of ~108 S. rosetta cells was concentrated into 100 μL (see ‘Cell confinement – Confinement with microbeads’ section) and resuspended in 1 mL CF-ASKW. Cells were then washed three times in 1 mL CF-AKSW in 1.5 mL plastic tubes by centrifugation (2× 5 min and 1× 15 min) at 10,000 g in a tabletop microcentrifuge. Cells were then confined using 2 μm microbeads as spacers as detailed above. Microbeads were similarly resuspended in CF-AKSW before being added to the cells.
 
 For depletion of intracellular calcium, cells were incubated with 327 μM BAPTA-AM (a cell-permeant calcium chelator) for 30 min before confinement and imaging.
 
-## Immunostainings of flagellate and amoeboid cells
+### Immunostainings of flagellate and amoeboid cells
 
 Immunostainings of flagellated S. rosetta cells were performed following a previously published protocol (Booth et al., 2018). Immunostainings of confined cells were performed by mounting cells between a small square coverslip (18 × 18 mm, VWR 470019–002) and a larger rectangular coverslip (24 × 50 mm, VWR 48393–241) using 1 μm or 2 μm microbeads as spacers (see ‘Cell confinement – Confinement with microbeads’). Immediately after confinement, the two lateral sides of the small coverslip (parallel to the long side of the large rectangular coverslip) were glued to those of the large coverslip using a small quantity of Super Glue gently spread with a micropipette tip (Figure 2—figure supplement 2). This maintained close apposition of the two coverslips (and thus cell confinement) during the following steps. The Super Glue was left to dry for 5 min. This defined a flow chamber in which fixation, staining, and washing solutions could be pipetted on top of the large coverslip, close to the non-glued edges of the small coverslip, and then spread in the confined space by capillary action (Figure 2—figure supplement 2).
 

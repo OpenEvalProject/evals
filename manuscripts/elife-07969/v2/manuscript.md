@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.07969.001 The controversy surrounding 'gain-of-function' experiments on high-consequence avian influenza viruses has highlighted the role of ferret transmission experiments in studying the transmission potential of novel influenza strains. However, the mapping between influenza transmission in ferrets and in humans is unsubstantiated. We address this gap by compiling and analyzing 240 estimates of influenza transmission in ferrets and humans. We demonstrate that estimates of ferret secondary attack rate (SAR) explain 66% of the variation in human SAR estimates at the subtype level. Further analysis shows that ferret transmission experiments have potential to identify influenza viruses of concern for epidemic spread in humans, though small sample sizes and biological uncertainties prevent definitive classification of human transmissibility. Thus, ferret transmission experiments provide valid predictions of pandemic potential of novel influenza strains, though results should continue to be corroborated by targeted virological and epidemiological research. DOI: http://dx.doi.org/10.7554/eLife.07969.001
+The controversy surrounding 'gain-of-function' experiments on high-consequence avian influenza viruses has highlighted the role of ferret transmission experiments in studying the transmission potential of novel influenza strains. However, the mapping between influenza transmission in ferrets and in humans is unsubstantiated. We address this gap by compiling and analyzing 240 estimates of influenza transmission in ferrets and humans. We demonstrate that estimates of ferret secondary attack rate (SAR) explain 66% of the variation in human SAR estimates at the subtype level. Further analysis shows that ferret transmission experiments have potential to identify influenza viruses of concern for epidemic spread in humans, though small sample sizes and biological uncertainties prevent definitive classification of human transmissibility. Thus, ferret transmission experiments provide valid predictions of pandemic potential of novel influenza strains, though results should continue to be corroborated by targeted virological and epidemiological research.
 
 ## Introduction
 
@@ -31,59 +31,120 @@ Furthermore, the recent controversy surrounding ‘gain-of-function’ (GOF) exp
 
 ## Results
 
-## Comparing ferret and human secondary attack rates
+### Comparing ferret and human secondary attack rates
 
-To assess the quantitative relationship between influenza transmission in ferrets and in humans, we assembled data from all published ferret transmission studies that met our inclusion criteria, including ferret experiments designed to test transmission in the presence of direct contact (co-housing) or by respiratory droplets (adjacent housing allowing air exchange). For each experiment, we calculated the secondary attack rate (SAR), which is defined as the probability of infection for a susceptible individual following known contact with an infectious individual (
+To assess the quantitative relationship between influenza transmission in ferrets and in humans, we assembled data from all published ferret transmission studies that met our inclusion criteria, including ferret experiments designed to test transmission in the presence of direct contact (co-housing) or by respiratory droplets (adjacent housing allowing air exchange). For each experiment, we calculated the secondary attack rate (SAR), which is defined as the probability of infection for a susceptible individual following known contact with an infectious individual (Halloran, 2005). To match the close contact found in ferret studies, we reviewed estimates of SAR in humans obtained from household contact data (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig1-v2.jpg)
 
-**Figure 1.:** (A) Human SAR, (B) ferret respiratory droplet SAR, and (C) ferret direct contact SAR. Solid, black lines represent the subtype medians. Boxes give the inter-quartile range with whiskers extending out up to 1.5 times this range. Points represent extreme values. The number of estimated SARs for each subtype is given above each box-and-whisker plot (n). Subtypes were ordered according to the mean human SAR value in all panels. Shading depicts the known human transmission pattern of the subtypes (red—supercritical; blue—subcritical).DOI: http://dx.doi.org/10.7554/eLife.07969.00310.7554/eLife.07969.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07969.00410.7554/eLife.07969.005Figure 1—source data 2.DOI: http://dx.doi.org/10.7554/eLife.07969.00510.7554/eLife.07969.006Figure 1—source data 3.DOI: http://dx.doi.org/10.7554/eLife.07969.00610.7554/eLife.07969.007Figure 1—source data 4.DOI: http://dx.doi.org/10.7554/eLife.07969.007
+**Figure 1.:** (A) Human SAR, (B) ferret respiratory droplet SAR, and (C) ferret direct contact SAR. Solid, black lines represent the subtype medians. Boxes give the inter-quartile range with whiskers extending out up to 1.5 times this range. Points represent extreme values. The number of estimated SARs for each subtype is given above each box-and-whisker plot (n). Subtypes were ordered according to the mean human SAR value in all panels. Shading depicts the known human transmission pattern of the subtypes (red—supercritical; blue—subcritical).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Comparison of ferret SAR for wild-type influenza isolates and their counterparts engineered using reverse genetics under (A) respiratory droplet and (B) direct contact transmission. Because experiments were not paired, SAR estimates for a wild-type isolate were plotted against the mean SAR for the reverse genetic derived isolate and vice-versa. Estimates from the same isolate are joined by a line with the isolate name given. Both supercritical (red) and subcritical (blue) isolates are shown. The dashed gray line denotes a one-to-one relationship between the two. Note that some points are jittered for clarity (see Figure 1—source data 2, 3 for full data).DOI: http://dx.doi.org/10.7554/eLife.07969.008
+**Figure 1—figure supplement 1.:** Comparison of ferret SAR for wild-type influenza isolates and their counterparts engineered using reverse genetics under (A) respiratory droplet and (B) direct contact transmission. Because experiments were not paired, SAR estimates for a wild-type isolate were plotted against the mean SAR for the reverse genetic derived isolate and vice-versa. Estimates from the same isolate are joined by a line with the isolate name given. Both supercritical (red) and subcritical (blue) isolates are shown. The dashed gray line denotes a one-to-one relationship between the two. Note that some points are jittered for clarity (see Figure 1—source data 2, 3 for full data).
 
-When comparing estimates of human and ferret SAR across subtypes, we found that, as expected (
+When comparing estimates of human and ferret SAR across subtypes, we found that, as expected (Lakdawala and Subbarao, 2012), ferret SAR estimates from current experimental designs do not quantitatively align with human SAR estimates—ferret SAR estimates are typically higher than the corresponding human estimate. However, ferret and human SAR estimates are correlated. For respiratory droplet experiments, the ordering of subtypes by ferret SAR was similar to that in human SAR (Figure 1A,B), and mean ferret respiratory droplet SAR explained 66% of the variation in mean human SAR estimates across subtypes (p = 0.003, Figure 2A). Direct contact transmission in ferrets was not significantly related to human SAR at the subtype level (p = 0.14, Figure 2A), suggesting that for estimates of human-to-human transmissibility, direct contact experiments may have less value than respiratory droplet experiments.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig2-v2.jpg)
 
-**Figure 2.:** (A) Comparison of human SAR and ferret SAR for ferret respiratory droplet (black squares) and direct contact (red circles). Data points are the mean human SAR by subtype vs the weighted mean ferret SAR by subtype, where weights are determined by the number of ferrets used in each experiment. Lines give the best fit weighted linear regression models with weights given by the number of human SAR estimates. The solid line indicates a significant relationship between ferret respiratory droplet SAR and human SAR described by the given equation (significant terms are bolded; p = 0.003), while the dashed line indicates a non-significant relationship (p = 0.14) for ferret direct contact transmission. (B) The degree of overlap in the distributions of ferret respiratory droplet SAR estimates for each subtype. Dark purple indicates subtypes with complete overlap, while white indicates no overlap.DOI: http://dx.doi.org/10.7554/eLife.07969.009
+**Figure 2.:** (A) Comparison of human SAR and ferret SAR for ferret respiratory droplet (black squares) and direct contact (red circles). Data points are the mean human SAR by subtype vs the weighted mean ferret SAR by subtype, where weights are determined by the number of ferrets used in each experiment. Lines give the best fit weighted linear regression models with weights given by the number of human SAR estimates. The solid line indicates a significant relationship between ferret respiratory droplet SAR and human SAR described by the given equation (significant terms are bolded; p = 0.003), while the dashed line indicates a non-significant relationship (p = 0.14) for ferret direct contact transmission. (B) The degree of overlap in the distributions of ferret respiratory droplet SAR estimates for each subtype. Dark purple indicates subtypes with complete overlap, while white indicates no overlap.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Comparison of human SAR and ferret SAR for ferret respiratory droplet (black squares) and direct contact (red circles). Lines give the best fit weighted linear regression models with weights given by the number of human SAR estimates. The solid line indicates a significant relationship between ferret respiratory droplet SAR and human SAR described by the given equation (significant terms are bolded; p = 0.004), while the dashed line indicates a non-significant relationship (p = 0.18) for ferret direct contact transmission. (B) The degree of overlap in the distributions of ferret respiratory droplet SAR estimates for each subtype. Dark purple indicates subtypes with complete overlap, while white indicates no overlap.DOI: http://dx.doi.org/10.7554/eLife.07969.010
+**Figure 2—figure supplement 1.:** (A) Comparison of human SAR and ferret SAR for ferret respiratory droplet (black squares) and direct contact (red circles). Lines give the best fit weighted linear regression models with weights given by the number of human SAR estimates. The solid line indicates a significant relationship between ferret respiratory droplet SAR and human SAR described by the given equation (significant terms are bolded; p = 0.004), while the dashed line indicates a non-significant relationship (p = 0.18) for ferret direct contact transmission. (B) The degree of overlap in the distributions of ferret respiratory droplet SAR estimates for each subtype. Dark purple indicates subtypes with complete overlap, while white indicates no overlap.
 
 Despite the strong relationship observed between mean ferret and human SAR estimates (Figure 2A), distributions of ferret SAR estimates for each subtype overlapped substantially (Figure 2B). These overlaps prevent the result from any given ferret experiment (e.g., on a novel, uncharacterized strain) from being unambiguously aligned with the transmission potential exhibited by any particular, previously-characterized subtype.
 
-## Using ferret SAR to characterize human pandemic potential
+### Using ferret SAR to characterize human pandemic potential
 
-To improve the power to assess pandemic potential, we specified two clusters of subtypes with distinct transmission patterns in humans: subtypes with sustained human-to-human transmission (i.e. supercritical; H1N1, H3N2, H2N2 and pH1N1) and subtypes without sustained human-to-human transmission (i.e. subcritical; H7N9, H5N1, H7N7, H7N2, H7N3 and H9N2). Using logistic regression, we identified ranges of ferret SAR that characterize supercritical and subcritical influenza viruses (
+To improve the power to assess pandemic potential, we specified two clusters of subtypes with distinct transmission patterns in humans: subtypes with sustained human-to-human transmission (i.e. supercritical; H1N1, H3N2, H2N2 and pH1N1) and subtypes without sustained human-to-human transmission (i.e. subcritical; H7N9, H5N1, H7N7, H7N2, H7N3 and H9N2). Using logistic regression, we identified ranges of ferret SAR that characterize supercritical and subcritical influenza viruses (Figure 3). Ferret respiratory droplet SAR was a significant predictor of the probability that a virus is supercritical or subcritical in humans (p < 0.0001; Figure 3A, Table 1). By accounting for the uncertainty in this relationship, we identified ranges of ferret SAR that indicate a high probability of strains being identified as supercritical or subcritical (Figure 3A). However, a range of intermediate ferret SAR values yielded equivocal results (i.e. the 95% confidence interval for classification included a classification probability of 0.5). Direct contact transmission was also a significant predictor of supercritical or subcritical transmission in humans (p = 0.01; Figure 3B, Table 1). Information theoretic model comparisons showed marginal support for a bivariate model using both respiratory droplet and direct contact transmission data (Table 1). Considering the bivariate distribution of SAR estimates, however, it is clear that respiratory droplet SAR has the potential for greater specificity in predicting supercritical transmission (Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig3-v2.jpg)
 
-**Figure 3.:** (A) Respiratory droplet SAR and (B) direct contact SAR. Solid black line gives the fit of the weighted logistic regression, where model weights are given by the number of ferrets in each experiment. Dashed black lines give the 95% confidence interval on the model predictions. Shading in the prediction interval represents values of SAR for which the 95% confidence intervals for predicted model fit do not overlap a probability of 0.5 (the dashed red line) indicating a high probability of being supercritical (red shading) or subcritical (blue shading). The gray shading represents SAR values where the 95% CI on the prediction overlaps 0.5, providing equivocal classification. Circles show the individual ferret SAR estimates (See Figure 1—source data 2, 3) for supercritical (top in red) and subcritical viruses (bottom in blue).DOI: http://dx.doi.org/10.7554/eLife.07969.011
+**Figure 3.:** (A) Respiratory droplet SAR and (B) direct contact SAR. Solid black line gives the fit of the weighted logistic regression, where model weights are given by the number of ferrets in each experiment. Dashed black lines give the 95% confidence interval on the model predictions. Shading in the prediction interval represents values of SAR for which the 95% confidence intervals for predicted model fit do not overlap a probability of 0.5 (the dashed red line) indicating a high probability of being supercritical (red shading) or subcritical (blue shading). The gray shading represents SAR values where the 95% CI on the prediction overlaps 0.5, providing equivocal classification. Circles show the individual ferret SAR estimates (See Figure 1—source data 2, 3) for supercritical (top in red) and subcritical viruses (bottom in blue).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Each point represents a single set of experiments that tested an isolate for transmission in ferrets under both respiratory droplet and direct contact transmission with other experimental protocols held fixed. Isolates belonging to subcritical subtypes are depicted by blue squares, and supercritical subtypes are depicted by red circles. Note that some points are jittered for clarity (see Figure 1—source data 2, 3 for full data).DOI: http://dx.doi.org/10.7554/eLife.07969.012
+**Figure 3—figure supplement 1.:** Each point represents a single set of experiments that tested an isolate for transmission in ferrets under both respiratory droplet and direct contact transmission with other experimental protocols held fixed. Isolates belonging to subcritical subtypes are depicted by blue squares, and supercritical subtypes are depicted by red circles. Note that some points are jittered for clarity (see Figure 1—source data 2, 3 for full data).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Respiratory droplet SAR and (B) direct contact SAR. To assess the impact of binomial uncertainty in ferret SAR estimates, we simulated 1000 datasets by taking binomial samples from each data point. Here, the binomial probability for each was given by the observed SAR and the number of trials was the number of ferrets used. To introduce binomial uncertainty into those experiments with an SAR of 0 or 1, we set the binomial probability to 0.1 or 0.9, respectively. The solid line is the average model fit to all of the simulated datasets and is nearly identical to that in Figure 3. Dashed lines give the 97.5 and 0.025 percentiles of the upper and lower bounds, respectively, of the 95% confidence intervals on model predictions from each of the simulated datasets. These indicate much more uncertainty in model predictions across datasets that generates a larger equivocal region of ferret SARs than observed in Figure 3. However, values of ferret SAR indicative of subcritical and supercritical strains still exist, indicating that our qualitative results are robust to binomial uncertainty.DOI: http://dx.doi.org/10.7554/eLife.07969.013
+**Figure 3—figure supplement 2.:** (A) Respiratory droplet SAR and (B) direct contact SAR. To assess the impact of binomial uncertainty in ferret SAR estimates, we simulated 1000 datasets by taking binomial samples from each data point. Here, the binomial probability for each was given by the observed SAR and the number of trials was the number of ferrets used. To introduce binomial uncertainty into those experiments with an SAR of 0 or 1, we set the binomial probability to 0.1 or 0.9, respectively. The solid line is the average model fit to all of the simulated datasets and is nearly identical to that in Figure 3. Dashed lines give the 97.5 and 0.025 percentiles of the upper and lower bounds, respectively, of the 95% confidence intervals on model predictions from each of the simulated datasets. These indicate much more uncertainty in model predictions across datasets that generates a larger equivocal region of ferret SARs than observed in Figure 3. However, values of ferret SAR indicative of subcritical and supercritical strains still exist, indicating that our qualitative results are robust to binomial uncertainty.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Receiver operating characteristic (ROC) curves and area under the curve (AUC) using (A) seroconversion and/or viral isolation or (B) viral isolation alone as evidence for transmission in ferrets when classifying influenza isolates as either supercritical or subcritical in humans. Lines indicate ferret respiratory droplet SAR (red) or ferret direct contact SAR (black). Curves were calculated from raw data shown in Figure 3, using a range of SAR classification thresholds from 0 to 1. Numbers indicate the threshold values for which the true positive rate (i.e. the sensitivity) and false positive rate (i.e. the complement of the specificity) changed. Threshold values intermediate to any of those depicted have true positive and false positive rates identical to that of the next lowest value shown. The dashed gray line is the one-to-one line corresponding to random classification. AUC values are shown in the figure legend with higher values corresponding to higher predictive power.DOI: http://dx.doi.org/10.7554/eLife.07969.014
+**Figure 3—figure supplement 3.:** Receiver operating characteristic (ROC) curves and area under the curve (AUC) using (A) seroconversion and/or viral isolation or (B) viral isolation alone as evidence for transmission in ferrets when classifying influenza isolates as either supercritical or subcritical in humans. Lines indicate ferret respiratory droplet SAR (red) or ferret direct contact SAR (black). Curves were calculated from raw data shown in Figure 3, using a range of SAR classification thresholds from 0 to 1. Numbers indicate the threshold values for which the true positive rate (i.e. the sensitivity) and false positive rate (i.e. the complement of the specificity) changed. Threshold values intermediate to any of those depicted have true positive and false positive rates identical to that of the next lowest value shown. The dashed gray line is the one-to-one line corresponding to random classification. AUC values are shown in the figure legend with higher values corresponding to higher predictive power.
 
-The classification thresholds we identified for likely supercritical or subcritical subtypes account for uncertainties arising from the structure of our model, but not for uncertainties arising from the experimental data used to inform the model. Binomial uncertainties in ferret SAR data can be substantial, as ethical and logistic considerations limit sample sizes in these experiments (
+**Table 1.**
+ Parameter estimates for the weighted logistic regression relating human transmission class to ferret SAR
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Model</th>
+      <th>β0</th>
+      <th>βRD</th>
+      <th>βDC</th>
+      <th>ΔAIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full data</td>
+      <td>Direct contact</td>
+      <td>−4.39</td>
+      <td>-</td>
+      <td>6.30</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Respiratory droplet</td>
+      <td>−3.52</td>
+      <td>6.10</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Restricted data</td>
+      <td>Respiratory droplet + direct contact</td>
+      <td>−1.76</td>
+      <td>8.72</td>
+      <td>−3.76</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Respiratory droplet</td>
+      <td>−3.77</td>
+      <td>6.42</td>
+      <td>-</td>
+      <td>3.623</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Direct contact</td>
+      <td>−3.07</td>
+      <td>-</td>
+      <td>3.74</td>
+      <td>57.348</td>
+    </tr>
+  </tbody>
+</table>
+
+_Bolded estimates are significant at the α = 0.05 level. Due to differing data between ferret respiratory droplet and direct contact transmission experiments, no model selection was done on the full data. Instead, model selection was done only for studies where authors performed respiratory droplet and direct contact transmission experiments on the same isolate._
+
+The classification thresholds we identified for likely supercritical or subcritical subtypes account for uncertainties arising from the structure of our model, but not for uncertainties arising from the experimental data used to inform the model. Binomial uncertainties in ferret SAR data can be substantial, as ethical and logistic considerations limit sample sizes in these experiments (Nishiura et al., 2013). By re-fitting our logistic regression model to 1000 simulated datasets generated by binomial re-sampling of each data point, we found that the relationship between ferret SAR and a supercritical classification is quite robust to this uncertainty (Figure 3—figure supplement 2). However, while our analysis was fairly insensitive to binomial uncertainty within the aggregate data, attempts to classify SAR estimates from any individual experiment will be more sensitive to binomial uncertainty. For example, we applied our model to the most transmissible strains from two recent GOF studies on H5N1 avian influenza (Imai et al., 2012; Herfst et al., 2012; Figure 4—source data 1). All three strains had a ferret SAR that fell into the supercritical range, but the confidence intervals for the SAR estimates overlapped with the subcritical and/or equivocal ranges, preventing definitive classification (Figure 4A). Similarly, we found that studies on 1918 pandemic H1N1, a known pandemic strain, had ferret SAR estimates indicative of supercritical transmission, but again wide confidence intervals overlapped the subcritical and equivocal ranges (Figure 4B). SAR estimates for H7N9, known to be subcritical in humans, spanned the supercritical, subcritical, and equivocal ranges (Figure 4C). Even if results across all ferret respiratory droplet trials for H7N9 were aggregated into a single SAR estimate (representing 42 ferrets in all), we found an equivocal classification of human transmission pattern (Figure 4C). Consequently, care must be taken to avoid over-interpreting the results of ferret transmission studies.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig4-v2.jpg)
 
-**Figure 4.:** (A) Gain-of-function experiments with H5N1 avian influenza (Herfst et al., 2012; Imai et al., 2012), (B) the reconstructed 1918 pandemic H1N1 strain (Tumpey et al., 2007; Imai et al., 2012), and (C) H7N9 avian influenza. Solid black curves and shading represent the logistic regression fit and likely transmission pattern, respectively, as depicted in Figure 2. Horizontal lines give the 95% Wilson-score interval for each binomial estimate. In all panels, transmission is defined using seroconversion and viral isolation in nasal washes. In (C), green triangles represent individual experiments, while the green square is the aggregated data across all twelve H7N9 transmission experiments in ferrets. Notice that 6 data points are represented at a SAR of 0.33 and 3 at a SAR of 1. See Figure 1—source data 2 and Figure 4—source data 1 for full data.DOI: http://dx.doi.org/10.7554/eLife.07969.01610.7554/eLife.07969.017Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.07969.017
+**Figure 4.:** (A) Gain-of-function experiments with H5N1 avian influenza (Herfst et al., 2012; Imai et al., 2012), (B) the reconstructed 1918 pandemic H1N1 strain (Tumpey et al., 2007; Imai et al., 2012), and (C) H7N9 avian influenza. Solid black curves and shading represent the logistic regression fit and likely transmission pattern, respectively, as depicted in Figure 2. Horizontal lines give the 95% Wilson-score interval for each binomial estimate. In all panels, transmission is defined using seroconversion and viral isolation in nasal washes. In (C), green triangles represent individual experiments, while the green square is the aggregated data across all twelve H7N9 transmission experiments in ferrets. Notice that 6 data points are represented at a SAR of 0.33 and 3 at a SAR of 1. See Figure 1—source data 2 and Figure 4—source data 1 for full data.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07969/elife-07969-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Sample size estimates to achieve 80% power at a significance level of 0.05 when testing whether a ferret SAR estimate is greater than the lower limit of the identified supercritical window (0.643, Figure 3A). Sample sizes were calculated using a one-sided binomial exact test.DOI: http://dx.doi.org/10.7554/eLife.07969.018
+**Figure 4—figure supplement 1.:** Sample size estimates to achieve 80% power at a significance level of 0.05 when testing whether a ferret SAR estimate is greater than the lower limit of the identified supercritical window (0.643, Figure 3A). Sample sizes were calculated using a one-sided binomial exact test.
 
 ## Discussion
 
@@ -103,19 +164,19 @@ Here we have put forward the first guidelines for translating the results of fer
 
 ## Materials and methods
 
-## Secondary attack rates
+### Secondary attack rates
 
 Most ferret transmission studies report the number of secondary infections amongst a specified number of naïve ferrets that are exposed to single inoculated individuals. This enables calculation of the SAR, which is the probability of infection for a susceptible individual following a known contact with an infectious individual (Halloran, 2005) and establishes a metric of transmissibility in ferrets that is directly comparable to household SAR in humans.
 
 We obtained estimates of SAR in humans from household contact data using two methods. Ad hoc SAR estimates are obtained by taking the ratio of infected household contacts over total household contacts. This method is widely used, but may overestimate SAR, as it assumes each household experiences only one disease introduction (the index case) and ignores the possibility of multiple household exposures to an exogenous reservoir (Longini et al., 1982). Meanwhile, maximum likelihood procedures for SAR estimation use statistical models to simultaneously estimate the probability of secondary transmission within a household (SAR) and the probability of infection from the community (or other source). Thus, these estimates attempt to correct for the possibility of multiple introductions from an exogenous source (Longini and Koopman, 1982; Longini et al., 1982). However, even these estimates can be strongly skewed by the inclusion or exclusion of specific clusters, especially early in an outbreak when data is limited (Aditama et al., 2012). Furthermore, variation in existing, population-level immunity to specific strains, and the use of different case ascertainment methods in specific studies also inevitably skew estimates made using either procedure. Because each method has unique biases and limitations, we used published estimates of SAR based on either method, or calculated an ad hoc SAR estimate ourselves from data on the total and infected number of household contacts in an outbreak. Human SAR estimates are only considered in our initial regression analysis (Figure 2A), so they do not influence our classification model (Figure 3).
 
-## Literature review
+### Literature review
 
 To assess the relationship between human and ferret transmissibility of influenza, we reviewed existing estimates of subtype-specific SAR in humans and ferrets. We searched PubMed and Web Of Science [v5.15] databases using the following queries: (influenza AND household AND transmission AND H#N#) and (influenza AND ‘secondary attack rate’ OR SAR AND human AND H#N#) for human studies and (influenza AND transmission AND ferret* AND H#N#) for ferret studies. We repeated searches for subtypes H1N1, H7N9, H3N2, H7N7, H7N9, H7N2, H9N2, H5N1, H7N3, and H2N2. To ensure comprehensive coverage, additional studies were identified using reference lists from search results and additional spot searches were also conducted. We excluded isolates that represented outliers from identified subtypes (i.e. 1918 pandemic H1N1 (Tumpey et al., 2007) and novel swine-origin H3N2 in 2009–10 (Pearce et al., 2012)). Searches were completed on 20 July 2015.
 
 Although the transmission potential of unique isolates within a subtype may vary, SAR in humans was reported only at the subtype level, preventing us from analyzing isolate-specific transmission potential. Overall, we found data for all three measures (ferret direct contact, ferret respiratory droplet, and human SARs) for ten influenza A subtypes: H7N3, H9N2, H7N7, H7N2, H5N1, H7N9, H2N2, pH1N1 (i.e. influenza A(H1N1)pdm09 virus), H3N2, and seasonal H1N1 (Figure 1).
 
-## Inclusion criteria for ferret studies
+### Inclusion criteria for ferret studies
 
 We excluded ferret transmission studies that included serial passage of human isolates in ferrets prior to transmission experiments. To maintain consistency in transmission mechanisms, we excluded studies that inoculated ferrets by routes other than intranasal with a liquid inoculum (e.g., ocular inoculation or aerosol inhalation) and that inoculated ferrets with a lower viral dose than was typical for ferret transmission studies (<103 50% egg infectious dose [EID50]). We excluded studies where naive ferrets were not exposed to inoculated ferrets at 1 day post-inoculation, as was standard, and studies where the duration of contact was restricted. We also excluded trials in which ferrets were vaccinated or administered antiviral drugs for treatment or prophylaxis. If transmission of more than one subtype and/or isolate was tested in a single study (using different sets of immunologically naive ferrets for each isolate), we treated each subtype/isolate-specific data point separately. However, for some analyses, we grouped data from isolates belonging to the same subtype—the one exception being separation of 2009 pandemic H1N1 isolates (pH1N1) and pre-2009 H1N1 isolates (H1N1).
 
@@ -125,11 +186,11 @@ To promote quality of comparison between ferret and human studies, we only inclu
 
 We also included wild-type isolates from humans generated using reverse genetics techniques. Although viral isolates rescued through reverse genetic techniques are often assumed to have lower transmissibility, analyses with and without these rescued isolates yielded indistinguishable results. Indeed, for the small number of isolates for which we could make direct comparisons, isolates generated using reverse genetics exhibited similar transmissibility to their wild-type counterparts (Figure 1—figure supplement 1). Thus, our data set contained a total of 81 respiratory droplet (Figure 1B; Figure 1—source data 2) and 76 direct contact transmission trials (Figure 1C; Figure 1—source data 3).
 
-## Inclusion criteria for human studies
+### Inclusion criteria for human studies
 
 Because we considered only household SAR, we excluded studies with non-standard household definitions (e.g., dormitories, health care centers, summer camps), and studies where household contacts could not be distinguished from broader community contacts. We also excluded data from studies of zoonotic strains where prior contact with potential livestock or wildlife reservoirs was noted for multiple contacts, thus hindering the distinction between primary and secondary cases. In order to represent a broad range of human SAR estimates, we included both prospective and retrospective household studies that either provided an explicit SAR estimate or reported data sufficient to calculate a SAR. This yielded a total of 83 estimates of human SAR (Figure 1A; Figure 1—source data 1).
 
-## Analysis
+### Analysis
 
 Quantitative comparison of SAR in ferrets and SAR in humans was performed using linear regression (Figure 2A). Because human SAR estimates are not typically made for individual isolates, the comparison was done at the subtype level using the mean value of all estimates belonging to a subtype. For ferret experiments, we used a weighted mean by subtype, where the weights were given by the number of ferrets used in each experiment; for human estimates, we used the simple mean by subtype. The potential uncertainty in subtype mean SAR was large, especially for human SAR, where several emerging subtypes (i.e. H7N3, H9N2, H7N7, and H7N2) only had one or two estimates (Figure 1A). To allow for this uncertainty, we used a weighted linear regression with model weights given by the number of human SAR estimates.
 

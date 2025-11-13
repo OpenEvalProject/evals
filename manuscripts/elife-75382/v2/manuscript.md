@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02c5gc203 Université Paris cité, CNRS, Institut Jacques Monod, F-75013 Paris France
+1. Université Paris cité, CNRS, Institut Jacques Monod, F-75013 Paris France ([ROR:02c5gc203](https://ror.org/02c5gc203))
 
 † Corresponding author
 
@@ -36,9 +36,25 @@ Here, we follow-up on our previous work showing that pronuclear envelopes scissi
 
 ## Results and discussion
 
-## Microtubules dynamics during NEBD in the one-cell C. elegans embryo
+### Microtubules dynamics during NEBD in the one-cell C. elegans embryo
 
 Previous work established that NEBD is spatially regulated in the fertilized one-cell C. elegans zygote (Lee et al., 2000; Hachet et al., 2012; Velez-Aguilera et al., 2020), but the exact timing of each event and the contribution of microtubules to this process had not yet been investigated. To address this point, we simultaneously visualized microtubules and nuclear envelope dynamics with a high temporal resolution during NEBD. We used spinning disk confocal microscopy to film one-cell embryos (one image/2 s), expressing fluorescently labeled tubulin (GFP::TBB-2) with either the lamina (mCherry::LMN-1) (Figure 1A, Figure 1—video 1), or the transmembrane nucleoporin NPP-22NDC1 (mCherry::NPP-22NDC1) to visualize nuclear membranes (Figure 1B, Figure 1—video 2). We also filmed embryos expressing GFP::TBB-2 and mCherry-tagged histone (mCherry::Histone) to monitor the configuration of the chromosomes during the different steps of NEBD (Figure 1C, Figure 1—video 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Spinning disk confocal micrographs of embryos expressing wild-type GFP::TBB-2 (shown alone, and in green in the merged images) and (A) mCherry::LMN-1 (shown alone and in magenta in the merged image), or (B) mCherry::NPP-22 (magenta, in the merged image), or (C) mCherry::Histone (magenta, in the merged image). Timings in seconds are relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 μm. (D) Steps of pronuclear envelopes breakdown: pronuclei permeabilization, lamina disassembly (at the poles, between pronuclei), and pronuclear envelopes scission event (membrane gap) relative to anaphase onset were scored in multiple embryos (n). The timing of pronuclear envelopes scission was scored in embryos expressing mCherry::NPP-22 (blue dots, n=7) while the timing of lamina disassembly was scored in embryos expressing mCherry::LMN-1 (orange dots, n=8). (E) Graph presenting the surface area occupied by the pronuclei starting 200 s before anaphase onset (0 s) in embryos expressing GFP::TBB-2 and mCherry::LMN-1. ( F) Graph presenting the intercentrosomal distance normalized to embryo length starting 80 s before anaphase onset (0 s) in embryos expressing GFP::TBB-2 and mCherry::LMN-1 or mCherry::NPP-22.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) from pronuclei meeting to membrane permeabilization. The timing of paternal and maternal pronuclei permeabilization is indicated by a blue and pink rectangle, respectively. Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::LMN-1 (shown alone and in magenta in the merged image). Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Spinning disk confocal micrographs of embryos expressing GFP::TBB-2 (shown alone, and in green in the merged images) and mCherry::NPP-22 (shown alone and in magenta in the merged image). Time interval every 2 s, relative to anaphase onset (0 s). All panels are at the same magnification. Scale bar, 10 μm.
 
 Before NEBD, 200 s prior to anaphase onset, microtubules were excluded from the pronuclei space, and the pronuclear envelopes appeared flattened along their juxtaposed sides but presented elsewhere a rounded shape, except around centrosomes where the nuclear envelopes were highly curved (90° angle) (Figure 1A and B). Later, 160 s before anaphase onset, signs of nuclear envelope deformation were apparent in the vicinity of the centrosomes (Figure 1A, red arrow). At these sites, the pronuclear envelopes appeared deformed toward the centrosomes, with the appearance of protrusions, suggesting that microtubules, emanating from the centrosomes were pulling on the pronuclear envelopes. Pronuclear envelopes permeabilization, measured by the appearance of soluble tubulin in the pronuclei space, was detected around 160 s before anaphase onset, concomitantly with pronuclear membranes deformation near the centrosomes (Figure 1A–D, Figure 1—source data 1). Nuclear envelope permeabilization was systematically detected first in the male pronucleus (Figure 1—figure supplement 1). Soon after membrane permeabilization, the first microtubules started to invade the pronuclei space. As more microtubules invaded the pronuclei space to capture paternal chromosomes, the overall surface of the pronuclei decreased (Figure 1E, Figure 1—source data 1), and the pronuclei adopted a more triangular shape, possibly dictated by microtubules assembling the mitotic spindle in the space confined by the remnants of the pronuclear envelopes (Figure 1B; Hayashi et al., 2012).
 
@@ -46,33 +62,49 @@ Signs of lamina disappearance from the pronuclear envelopes systematically start
 
 Starting 80 s before anaphase onset, the distance between the centrosomes steadily increased as a result of spindle elongation (Figure 1F, Figure 1—source data 1). The beginning of spindle elongation was concomitant with lamina depolymerization but preceded membrane gap formation. Based on these observations, we hypothesized that by pulling on nuclear envelopes and membranes, and by tearing apart the lamina and by elongating the mitotic spindle, astral microtubule pulling forces might contribute to pronuclear envelopes breakdown, and thus to the unification of the parental chromosomes in the early C. elegans embryo.
 
-## Paired nuclei phenotype upon reduction of cortical microtubule pulling forces and partial lamina stabilization
+### Paired nuclei phenotype upon reduction of cortical microtubule pulling forces and partial lamina stabilization
 
 The paired nuclei phenotype is a visual readout of the failure to properly remove the nuclear envelope between the pronuclei (Audhya et al., 2007; Bahmanyar et al., 2014; Galy et al., 2008; Rahman et al., 2015; Martino et al., 2017; Velez-Aguilera et al., 2020).
 
 To test whether microtubule pulling forces contribute to pronuclear envelopes breakdown, we examined whether experimental reduction of microtubule-dependent cortical pulling forces could modify the penetrance of the paired nuclei phenotype of embryos expressing the gfp::lmn-1 8A allele (Link et al., 2018; Velez-Aguilera et al., 2020). Because this allele partially stabilizes the lamina, 8% of the embryos expressing GFP::LMN-1 8A present double-paired nuclei at the two-cell stage, and another 9% present a single-paired nuclei cell (Figure 2A, Figure 2—source data 1). To reduce the cortical pulling forces, we used RNAi to partially deplete GPR-1/2, which are part of an evolutionarily conserved complex anchoring the dynein motor to the embryo cortex (Colombo et al., 2003; Gotta et al., 2003; Srinivasan et al., 2003; Figure 2B). Mild depletion of GPR-1/2 in gfp::lmn-1 8A embryos greatly enhanced the percentage of embryos presenting a paired nuclei phenotype, with nearly 54% showing double-paired nuclei and 24% a single-paired nuclei (Figure 2A, Figure 2—source data 1). More severe RNAi-mediated gpr-1/2 inactivation (Materials and methods) further increased the percentage of gfp::lmn-1 8A mutant embryos presenting a double-paired nuclei phenotype to 83% (Figure 2A, Figure 2—source data 1). Similar treatments of the embryos expressing a wild-type (WT) GFP::LMN-1 allele had only little effect with 5% of embryos presenting a double-paired nuclei phenotype and 4% presenting a single-paired nuclei phenotype (Figure 2A, Figure 2—source data 1). Thus, reduction of cortical microtubule pulling forces enhances the paired nuclei phenotype of embryos with a partially stabilized lamina network. These observations indicate that microtubule pulling forces facilitate the union of the parental chromosomes in the one-cell embryo.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig2-v2.jpg)
+
+**Figure 2.:** (A) Percentage of lmn-1∆; gfp::lmn-1 and lmn-1∆; gfp::lmn-1 8A embryos presenting 0 (green bars), 1 (orange bars), or 2 (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi) at 20°C. The number of embryos of the indicated phenotype (n) is shown in the graph and was collected from more than three independent experiments. (B) Schematics of a one-cell Caenorhabditis elegans embryo in anaphase. The astral pulling forces mediated by the Gα pathway are schematized in the inset. This pathway, which comprises a complex of Gα (yellow), GPR-1/2 (blue), and LIN-5 (green), anchors dynein (red) to the cell cortex to generate pulling forces when dynein walks toward microtubule minus ends anchored at the spindle poles. Inactivation of GPR-1/2 (red cross) suppresses the astral pulling forces. (C, D) Spinning disk confocal micrographs of early lmn-1∆ mutant embryos expressing (C) wild-type GFP::LMN-1 or (D) GFP::LMN-1 8A (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or gpr-1/2 and klp-7 RNAi in the lower panels. Times are in seconds relative to anaphase onset (0 s). All panels are at the same magnification Scale bar, 10 μm. (E, F) Quantification of (E) GFP::LMN-1 or (F) GFP::LMN-1 8A fluorescence signal intensity over time from central single focal planes above background at the nuclear envelope in embryos of the indicated genotype during mitosis. Times are in seconds relative to anaphase onset (0 s). The average signal intensity of GFP::LMN-1 and GFP::LMN-1 8A at 120 s before anaphase was defined as 1. The data points on the graphs are the normalized average signal intensity per pixel results ± SEM for n embryos of the indicated genotypes. Data were collected from three independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Spinning disk confocal micrographs of early lmn-1∆ mutant embryos expressing GFP::LMN-1 8A (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or mild gpr1/2(RNAi) in the lower panels. Times are in seconds relative to anaphase onset (0 s). All panels are at the same magnification Scale bar, 10 μm.( B) Quantification of GFP::LMN-1 8A fluorescence signal intensity over time from central single focal planes above background at the nuclear envelope in embryos exposed to mock RNAi (ctrl) or mild gpr1/2(RNAi) during mitosis. The average signal intensity of GFP::LMN-1 8A at 120 s before anaphase was defined as 1. The data points on the graphs are the normalized average signal intensity per pixel results ± SEM for n embryos of the indicated genotypes. Data were collected from three independent experiments.
+
 To test if microtubule pulling forces were directly facilitating lamina disassembly, we monitored GFP::LMN-1 WT and 8A levels throughout mitosis in control versus gpr-1/2 (RNAi) embryos, upon partial or severe gpr-1/2 inactivation. gpr-1/2 inactivation had no discernable effect on GFP::LMN-1 WT disassembly (Figure 2C and E, Figure 2—source data 1). Likewise, partial gpr-1/2 inactivation did not significantly stabilize GFP::LMN-1 8A during mitosis (Figure 2—figure supplement 1 and Figure 2—figure supplement 1—source data 1). However, more severe reduction of cortical microtubule pulling forces, using strong RNAi-mediated gpr-1/2 inactivation, did stabilize GFP::LMN-1 8A (Figure 2D and F, Figure 2—source data 1), indicating that microtubule pulling forces contribute to lamina disassembly during mitosis.
 
 To corroborate these observations, we tested whether excessive microtubule pulling forces would facilitate the removal of GFP::LMN-1 8A. To do so, we inactivated the kinesin-13 family member KLP-7, which results in the assembly of an abnormally high number of astral microtubules and thus increases astral cortical pulling forces (Srayko et al., 2005; Gigant et al., 2017). Loss of klp-7 caused a premature disassembly of GFP::LMN-1 8A during mitosis (Figure 2D and F, Figure 2—source data 1), again arguing that astral microtubule pulling forces contribute to the union of the parental chromosomes, at least in part by pulling at the lamina during mitosis. However, our observation that partial inactivation of gpr-1/2 enhanced the percentage of GFP::LMN-1 8A embryos presenting a paired nuclei phenotype (Figure 2A, Figure 2—source data 1) without further stabilizing the lamina (Figure 2—figure supplement 1, Figure 2—source data 1) suggested that cortical microtubule pulling forces might prevent the formation of the paired nuclei phenotype by additional mechanism(s).
 
-## Reducing or increasing cortical microtubule pulling forces affects the timing of membrane scission between the parental pronuclei
+### Reducing or increasing cortical microtubule pulling forces affects the timing of membrane scission between the parental pronuclei
 
 Removal of the membranes between the parental chromosomes begins with a membrane scission event right before anaphase onset and after the beginning of mitotic spindle elongation (Figure 1D and F). We thus reasoned that by pulling on centrosomes and membranes, and by elongating the mitotic spindle, microtubule pulling forces might mechanically facilitate membrane scission between the parental pronuclei. To investigate this possibility, we used spinning disk confocal microscopy to monitor pronuclear membranes scission upon strong gpr-1/2 inactivation in embryos expressing the INM protein GFP::LEM-2 and mCherry::Histone, allowing simultaneous visualization of pronuclear envelopes and chromosomes (Figure 3A). In control embryos, the membrane scission event between the pronuclei was systematically observed around 30 s before anaphase onset, after chromosomes alignment on the metaphase plate (n=32) (Figure 3B, red arrowhead). However, in a vast majority of gpr-1/2(RNAi) embryos, the membrane scission between the pronuclei was never detected. Of the 30 embryos analyzed, only 4 presented a membrane scission event (13%) (Figure 3B and C, Figure 3—source data 1) and these 4 embryos were also the least affected in spindle elongation (Figure 3D, Figure 3—source data 1), suggesting that spindle elongation contributes to pronuclei membrane scission. Notably, all reforming nuclei were severely misshapen in gpr-1/2(RNAi) embryos, but only a fraction of them presented a double-paired nuclei phenotype at the two-cell stage (Figure 3E, Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematics of the approach used to test the effect of a reduction of astral microtubule pulling forces on pronuclear envelopes scission (membrane gap) during mitosis. (B) Spinning disk confocal micrographs of one-cell stage embryos expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or gpr-1/2(RNAi) in the lower panels. Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 μm. The orange arrowheads point to the pronuclear envelopes scission event. (C) Percentage of embryos presenting a pronuclear envelopes scission event upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). (D) Graphs showing the intercentrosomal distance normalized to embryo length in percentage during mitosis upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). Times are in seconds relative to anaphase onset (0 s). (E) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.Figure 3—source data 1.gfp-lem-2 embryos presenting zero-, one-, or two-paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi).
+**Figure 3.:** (A) Schematics of the approach used to test the effect of a reduction of astral microtubule pulling forces on pronuclear envelopes scission (membrane gap) during mitosis. (B) Spinning disk confocal micrographs of one-cell stage embryos expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to mock RNAi (ctrl) in the upper panels or gpr-1/2(RNAi) in the lower panels. Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 μm. The orange arrowheads point to the pronuclear envelopes scission event. (C) Percentage of embryos presenting a pronuclear envelopes scission event upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). (D) Graphs showing the intercentrosomal distance normalized to embryo length in percentage during mitosis upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). Times are in seconds relative to anaphase onset (0 s). (E) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.
 
 If cortical microtubule pulling forces contribute to the formation of the pronuclei membrane scission event by elongating the mitotic spindle, excessive pulling forces might induce a premature membrane scission relative to anaphase onset. To test this hypothesis, we used two complementary approaches to increase astral microtubule pulling forces. We inactivated klp-7 as before, or efa-6 (exchange factor for Arf), which encodes a cortically localized protein that limits the growth of microtubules near the cell cortex of early embryonic cells. Loss of EFA-6 causes excess centrosome separation and displacement toward the cell cortex early in mitosis and subsequently increased rates of spindle elongation (O’Rourke et al., 2010). We inactivated klp-7 or efa-6 in embryos expressing GFP::LEM-2 and mCherry::Histone to monitor pronuclear membranes scission relative to anaphase onset and mitotic spindle length (Figure 4A). While the control embryos underwent membrane scission between the juxtaposed pronuclei 0–30 s before anaphase onset, this event occurred systematically earlier in efa-6 and klp-7(RNAi) embryos. In 50% of these embryos, pronuclear membranes scission occurred between 40 and 120 s before anaphase onset (Figure 4B and C, Figure 4—source data 1). Membrane scission occurred earlier in these embryos as a consequence of premature mitotic spindle elongation (Figure 4D, Figure 4—source data 1). By measuring mitotic spindle length at the time of membrane gap formation, we noticed that membranes scission systematically occurred at a similar mitotic spindle length (Figure 4E, Figure 4—source data 1). Taken together, these observations indicate that microtubule pulling forces, by promoting mitotic spindle elongation, contribute to pronuclear membranes scission, possibly by tearing apart the pronuclear membranes.
 
-## Lamina depolymerization and chromosome alignment are prerequisites for membrane gap formation even in the presence of excessive pulling forces
+![Figure 4.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig4-v2.jpg)
+
+**Figure 4.:** (A ) Schematics of the approach to test the effect of excessive astral microtubule pulling forces on pronuclear membranes scission (membrane gap) (1) and mitotic spindle elongation (2). (B) Percentage of embryos presenting the pronuclear membranes scission event at different time intervals relative to anaphase onset (0 s). The number of embryos (n) analyzed is indicated on the graph and was collected from three independent experiments. (C–) Spinning disk confocal micrographs of early embryos expressing mCherry::Histone, GFP::LEM-2 exposed to mock RNAi (ctrl), efa-6(RNAi), or klp-7(RNAi). Times are in seconds relative to anaphase onset (0 s). The red arrowheads indicate pronuclear membranes scission. All panels are at the same magnification Scale bar, 10 μm. (D) Intercentrosomal distance normalized to embryo length in percentage during mitosis upon exposure to mock RNAi (ctrl), efa-6, or klp-7(RNAi). Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (E) Box and Whisker plots presenting the intercentrosomal distance normalized to embryo length in percentage at the time of pronuclear membranes gap formation in embryos of the indicated genotypes. n=number of embryos analyzed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (C) Representative spinning disk confocal micrographs of one-cell stage embryos expressing GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image) exposed to control, efa-6, or klp-7 RNAi. Embryos presenting pronuclear envelopes scission at each time interval are presented along with the configuration of their chromosomes (misaligned or aligned). n=number of embryos presenting a membrane scission at each time interval over the total number of embryos analyzed (in bold). The fraction of embryos presenting aligned or misaligned chromosomes at the time of pronuclear membranes scission is indicated at the top right of each image. Scale bar, 10 μm.
+
+### Lamina depolymerization and chromosome alignment are prerequisites for membrane gap formation even in the presence of excessive pulling forces
 
 Embryos with a stabilized lamina, expressing the non-phosphorylable LMN-1 8A, are systematically defective in pronuclear envelopes scission (Velez-Aguilera et al., 2020). We reasoned that the lamina when stabilized, in addition to constituting a physical barrier between chromosomes, could oppose the pulling forces exerted by astral microtubules and could thus prevent elongation of the mitotic spindle during anaphase. To test this model, we measured mitotic spindle elongation in WT versus lmn-1 8A mutant embryos by measuring the intercentrosomal distance during mitosis. In contrast to WT, the spindle did not elongate to the same extent in lmn-1 8A mutant embryos (Figure 5A, Figure 5—source data 1), indicating that stabilization of the lamina interferes with mitotic spindle elongation and thus that lamina depolymerization facilitates spindle elongation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig5-v2.jpg)
 
-**Figure 5.:** (A) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in wild-type and lmn-1 8A embryos during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (B) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in lmn-1 8A embryos exposed to mock RNAi (ctrl) or klp-7(RNAi) during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (C) Spinning disk confocal micrographs of one-cell stage embryos of the indicated genotype expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image). Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 μm. The orange arrowheads point to the pronuclear envelopes scission event. (D) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or klp-7(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.Figure 5—source data 1.lmn-1 wt and lmn-1 8A embryos; (B) The intercentrosomal distance normalized to embryo length starting 80s before anaphase onset (0s) in lmn-1 8A embryos upon exposure to mock (control, ctrl) or klp-7(RNAi); (E) Percentage of gfp-lem-2; lmn-1 8A embryos presenting zero-, one-, or two-paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or gpr-1/2(RNAi).
+**Figure 5.:** (A) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in wild-type and lmn-1 8A embryos during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (B) Graphs showing the intercentrosomal distance normalized to embryo length in percentage in lmn-1 8A embryos exposed to mock RNAi (ctrl) or klp-7(RNAi) during mitosis. Times are in seconds relative to anaphase onset (0 s). The graph on the right is a zoom of the first graph focused on the 80 s before anaphase onset (0 s). (C) Spinning disk confocal micrographs of one-cell stage embryos of the indicated genotype expressing the inner nuclear membrane protein GFP::LEM-2 (shown alone, and in green in the merged images) and mCherry::Histone (magenta, in the merged image). Times are in seconds relative to anaphase onset (0 s). The fraction of embryos that showed the presented phenotype is indicated at the bottom right of each image. All panels are at the same magnification Scale bar, 10 μm. The orange arrowheads point to the pronuclear envelopes scission event. (D) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or klp-7(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments.
 
 We then asked whether excessive microtubule pulling forces might rescue pronuclear envelopes scission in embryos defective in lamina depolymerization. To test this hypothesis, we inactivated klp-7 in lmn-1 8A embryos expressing GFP::LEM-2 and mCherry::Histone and monitored the nuclear envelope dynamics and mitotic spindle elongation by spinning disk confocal microscopy. While these treatments rescued mitotic spindle elongation defects of lmn-1 8A embryos (Figure 5B, Figure 5—source data 1), they failed to restore the formation of pronuclear membranes scission and single nucleus embryos at the two-cell stage (Figure 5C and D).
 
@@ -84,7 +116,7 @@ Previous work has shown that a defect in chromosome alignment on the metaphase p
 
 To further investigate this possibility, we examined whether excessive pulling forces can trigger pronuclear envelopes scission between the pronuclei in the total absence of chromosome alignment. To this end, we inactivated klp-7 and the essential kinetochore protein HCP-3CENPA to prevent chromosome congression on the metaphase plate (Oegema et al., 2001). In these embryos, no membrane scission was detected despite the extensive mitotic spindle elongation (Figure 5C). These observations indicate that chromosome localization in the vicinity of the pronuclear membranes is necessary for pronuclear membranes scission and might dictate the site of membranes scission.
 
-## The essential role of PLK-1 in pronuclear envelopes scission is to promote lamina depolymerization
+### The essential role of PLK-1 in pronuclear envelopes scission is to promote lamina depolymerization
 
 PLK-1 is critically required for pronuclear envelopes scission (Rahman et al., 2015; Martino et al., 2017). Accordingly, membranes scission is prevented in plk-1ts embryos. We thus investigated the exact role of PLK-1 in pronuclear envelopes scission. We previously showed that LMN-1 is a key PLK-1 target in this process as the sole expression of the non-phosphorylable lmn-1 8A allele is sufficient to prevent pronuclear envelopes scission (Velez-Aguilera et al., 2020). Whether PLK-1 regulates pronuclear envelopes scission by targeting other substrates is currently unclear. For instance, PLK-1 could regulate membrane scission by activating a factor essential for pronuclear envelopes scission. Recent Focused Ion Beam-Scanning Electron Microscopy (FIB-SEM) analysis has revealed that the four membranes of the pronuclei fuse and become two via a novel membrane structure, the three-way sheet junctions (Rahman et al., 2020). These junctions are absent in plk-1ts embryos (Rahman et al., 2020) raising the possibility that PLK-1 could directly regulate their formation.
 
@@ -92,7 +124,7 @@ To discriminate between these hypotheses, we asked whether partial lmn-1 inactiv
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75382/elife-75382-fig6-v2.jpg)
 
-**Figure 6.:** (A) The schematics present the approach used to test whether partial lmn-1 inactivation in plk-1ts embryos expressing GFP::LEM-2 and mCherry::EMR-1 is sufficient to restore membrane gap formation. (B) Spinning disk confocal micrographs of wild-type or plk-1ts early embryos expressing mCherry::EMR-1 and GFP::LEM-2 exposed mock RNAi (ctrl) or lmn-1(RNAi). All panels are at the same magnification. Scale bar, 10 μm. (C) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or lmn-1(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments. (D) Working model: temporal coordination between lamina depolymerization, chromosome alignment, and mitotic spindle elongation is required for pronuclear envelopes scission and parental genomes unification in the early Caenorhabditis elegans embryo.Figure 6—source data 1.plk-1(or683ts) embryos, expressing GFP::LEM-2, and mCherry::EMR-1 presenting zero-, one-, or two-paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or lmn-1(RNAi).
+**Figure 6.:** (A) The schematics present the approach used to test whether partial lmn-1 inactivation in plk-1ts embryos expressing GFP::LEM-2 and mCherry::EMR-1 is sufficient to restore membrane gap formation. (B) Spinning disk confocal micrographs of wild-type or plk-1ts early embryos expressing mCherry::EMR-1 and GFP::LEM-2 exposed mock RNAi (ctrl) or lmn-1(RNAi). All panels are at the same magnification. Scale bar, 10 μm. (C) Percentage of embryos presenting zero- (green bars), one- (orange bars), or two- (red bars) paired nuclei at the two-cell stage upon exposure to mock RNAi (ctrl) or lmn-1(RNAi). The number of embryos analyzed (n) is indicated on the graph and was collected from three independent experiments. (D) Working model: temporal coordination between lamina depolymerization, chromosome alignment, and mitotic spindle elongation is required for pronuclear envelopes scission and parental genomes unification in the early Caenorhabditis elegans embryo.
 
 To monitor pronuclear envelopes scission in plk-1ts mutant embryos, we constructed a plk-1ts strain co-expressing GFP::LEM-2 and mCherry::EMR-1 (EMERIN), which both localize to the inner nuclear envelope and directly interact with the lamina (Figure 6A). We then used spinning disk confocal microscopy to monitor pronuclear membranes configuration in one-cell embryos. As reported previously, pronuclear envelopes scission between the pronuclei was totally prevented in plk-1ts embryos at restrictive temperature (Rahman et al., 2020; Rahman et al., 2015). However, partial RNAi-mediated lmn-1 inactivation was sufficient to restore pronuclear envelopes scission (Figure 6B). lmn-1 inactivation also suppressed the paired nuclei phenotype of plk-1ts embryos in these conditions (Figure 6C, Figure 6—source data 1), as reported previously (Rahman et al., 2015; Martino et al., 2017). lmn-1 inactivation not only restored membrane scission and the shape of the pronuclei, but also the normal localization of LEM-2 and EMR-1.
 
@@ -106,27 +138,359 @@ Finally, our observations that a defective lamina depolymerization interferes wi
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>C. elegans N2 Bristol</td>
+      <td>Caenorhabditis Genetics Center(CGC)</td>
+      <td>http://www.cgc.cbs.umn.edu/strain.php?id=10570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mCherry::NPP-22npp-22(syb1474)V</td>
+      <td>SunyBiotech</td>
+      <td>PHX1774</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mCherry::LMN-1; GFP::TBB-2:[mCherry::lmn-1] MosSCI: jfSi68[lmn-1(4 kb 5’UTR)::mCherry::lmn-1gDNA exon four recoded::3’UTR lmn-1 cb-unc-119(+)]II; ojIs1[Ppie-1_gfp::tbb-2]; unc-119(ed3)III</td>
+      <td>Pintard labThis study</td>
+      <td>WLP996</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>mCherry::NPP-22; GFP::TBB-2:ojIs1[Ppie-1_gfp::tbb-2, cb-unc-119(+)]; unc-119(ed3)III; mCherry::npp-22(syb1474)V</td>
+      <td>Pintard labThis study</td>
+      <td>WLP993</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>mCherry::HIS-58; GFP::TBB-2:ojIs1[Ppie-1_gfp::tbb-2]; unc-119(ed3)III; ltIs37[pAA64; Ppie1_mCherry::his-58; unc-119 (+)]IV</td>
+      <td>CGC</td>
+      <td>JCC483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>GFP::LMN-1; mCherry::Histone:lmn-1(tm1502)I; jfSi68[Plmn-1::gfp cb-unc-119(+)]II; mCherry::his-58 IV</td>
+      <td>Link et al., 2018</td>
+      <td>UV142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>GFP::LMN-1 8A; mCherry::Histone:lmn-1(tm1502)I;jfSi89[Plmn-1S(21,22,24,32,397,398,403,405)A::gfp cb-unc-119(+)]II; mCherry::his-58 IV</td>
+      <td>Link et al., 2018</td>
+      <td>UV144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>GFP::LEM-2; mCherry::HIS-58:Itls37 [(pAA64) pie-1p::mCherry::his-58 + unc-119(+)]IV qals3507 [pie-1::GFP::LEM-2 + unc-119(+)]</td>
+      <td>CGC</td>
+      <td>OD83</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>lmn-1 8A; GFP::LEM-2; mCherry::HIS-58:lmn-1S8A S(21,22,24,32,397,398,403, 405)A Itls37 [(pAA64) pie-1p::mCherry::his-58 + unc-119(+)]IV qals3507 [pie-1::GFP::LEM-2 + unc-119(+)]</td>
+      <td>Velez-Aguilera et al., 2020</td>
+      <td>WLP833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>GFP::LEM-2; mCherry::EMR-1:bqSi210 [lem-2p::lem-2::GFP + unc-119(+)] II; bqSi226 [emr-1p::emr-1::mCherry + unc-119(+)]IV</td>
+      <td>Morales-Martínez et al., 2015</td>
+      <td>BN228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>plk-1(or683ts); GFP::LEM-2; mCherry::EMR-1:bqSi210 [lem-2p::lem-2::GFP+unc-119(+)] II; plk-1(or683ts)III; bqSi226 [emr-1p::emr-1::mCherry + unc-119(+)] IV</td>
+      <td>Pintard lab This study</td>
+      <td>WLP1041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>CGC</td>
+      <td>http://www.cgc.cbs.umn.edu/strain.php?id=11078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115(DE3)</td>
+      <td>CGC</td>
+      <td>http://www.cgc.cbs.umn.edu/strain.php?id=11078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Euromedex</td>
+      <td>Cat#EU0008-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pfu</td>
+      <td>Promega</td>
+      <td>Cat#M7741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DpnI</td>
+      <td>Biolabs</td>
+      <td>Cat#R0176S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BP Clonase II Enzyme Mix (Gateway cloning)</td>
+      <td>Invitrogen</td>
+      <td>Cat#11789-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LR Clonase II Enzyme Mix (Gateway cloning)</td>
+      <td>Invitrogen</td>
+      <td>Cat#11791-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>L4440 (RNAi Feeding vector)</td>
+      <td>Kamath et al., 2001</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gpr-1/2 cloned into L4440</td>
+      <td>Kamath et al., 2003</td>
+      <td>Arhinger Library</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>klp-7 cloned into L4440</td>
+      <td>Kamath et al., 2003</td>
+      <td>Arhinger Library</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>efa-6 cloned into L4440</td>
+      <td>Kamath et al., 2003</td>
+      <td>Arhinger Library</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hcp-3 cloned into L4440</td>
+      <td>Kamath et al., 2003</td>
+      <td>Arhinger Library</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lmn-1 cloned into L4440</td>
+      <td>Kamath et al., 2003</td>
+      <td>Arhinger Library</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDESTttTi5605[R4-R3] for MOS insertion on Chromosome II</td>
+      <td>Frøkjaer-Jensen et al., 2008</td>
+      <td>pCFJ150Addgene plasmid # 19329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MOS transposase Pglh-2::MosTase::glh-2utr</td>
+      <td>Frøkjaer-Jensen et al., 2008</td>
+      <td>pJL43.1Addgene plasmid # 19332</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Prab-3::mCherry</td>
+      <td>Frøkjaer-Jensen et al., 2008</td>
+      <td>pGH8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pmyo-2::mCherry::unc-54</td>
+      <td>Frøkjaer-Jensen et al., 2008</td>
+      <td>pCFJ90</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plmn-1_gfp::lmn-1_lmn-1 3’UTR in pCFJ150</td>
+      <td>Link et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plmn-1_gfp::lmn-1(S8A) lmn-1 3’UTR in pCFJ150</td>
+      <td>Link et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry::lmn-1 in pCFJ150</td>
+      <td>This study</td>
+      <td>pLP2437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward to amplify 5′ of mCherry</td>
+      <td>This study</td>
+      <td>OLP2570PCR primers</td>
+      <td>CTCTTCAGAAAGCAGCGAGAAAAATGGGAGGTAGGGCCGGCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Reverse to amplify 5′ of mCherry</td>
+      <td>This study</td>
+      <td>OLP2571PCR primers</td>
+      <td>CAGAGCCGGCCCTACCTCCCATTTTTCTCGCTGCTTTCTGAAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Forward to amplify 3′ of mCherry with linker before LMN-1</td>
+      <td>This study</td>
+      <td>OLP2572PCR primers</td>
+      <td>GGTGGCATGGATGAATTGTATAAGGCAAGTTTGTACAAAAAAGCAGGCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oJD580 Amp_For to amplify fragment of PCFJ150</td>
+      <td>This study</td>
+      <td>OLP870PCR primers</td>
+      <td>ATCGTGGTGTCACGCTCGTCGTTTGGTATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>oJD581 Amp_Rev to amplify fragment of PCFJ151</td>
+      <td>This study</td>
+      <td>OLP871PCR primers</td>
+      <td>ATACCAAACGACGAGCGTGACACCACGATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gibson Forward oligo for MosII LMN-1 construction.</td>
+      <td>This study</td>
+      <td>OLP2267</td>
+      <td>CCTTGTCCGAATCCACCACCCATTCCTCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gibson Reverse oligo for MosII LMN-1 construction.</td>
+      <td>This study</td>
+      <td>OLP2266</td>
+      <td>GGAGGAATGGGTGGTGGATTCGGACAAGGAC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/illustrator.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS4</td>
+      <td>Adobe</td>
+      <td>https://www.adobe.com/products/photoshop.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH Schneider et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN</td>
+      <td>Zeiss</td>
+      <td>https://www.zeiss.com/microscopy/int/products/microscope-software/zen.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PRISM</td>
+      <td>Graphpad</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular Devices</td>
+      <td>https://www.metamorph.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>Microscopy Image Analysis Software - Imaris - Oxford Instruments (oxinst.com)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for reagents may be directed to and will be fulfilled by the lead contact author L Pintard: lionel.pintard@ijm.fr.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 C. elegans and bacterial strains used in this study are listed in the Key resources table.
 
-## Method details
+### Method details
 
-## Molecular biology
+#### Molecular biology
 
 The plasmids and oligonucleotides used in this study are listed in the Key resources table. Gateway cloning was performed according to the manufacturer’s instructions (Invitrogen). All the constructs were verified by DNA sequencing (GATC-Biotech).
 
-## Nematode strains and RNAi
+#### Nematode strains and RNAi
 
 C. elegans strains were cultured and maintained using standard procedures (Brenner, 1974). NPP-22 N-terminally tagged with mCherry using CRIPR/Cas9 was generated by SunyBiotech (https://www.sunybiotech.com/). The strain expressing LMN-1 N-terminally tagged with mCherry was constructed by mos1-mediated single-copy insertion (mosSCI) (Frøkjaer-Jensen et al., 2008). The engineered lmn-1 gene contains a reencoded region in exon 4 essentially as described (Penfield et al., 2018).
 
 RNAi was performed by the feeding method using HT115 bacteria essentially as described (Kamath et al., 2001), except that 2 mM of IPTG was added to the NGM plates and in the bacterial culture just prior seeding the bacteria. As a control, animals were exposed to HT115 bacteria harboring the empty feeding vector L4440 (mock RNAi). RNAi clones were obtained from the Arhinger library (Open Source BioScience) or were constructed.
 
-## Feeding RNAi was performed as follows
+#### Feeding RNAi was performed as follows
 
 Mild gpr-1/2(RNAi) was obtained by feeding L4 animals 14–16 hr at 20°C, whereas strong gpr-1/2(RNAi) was obtained by feeding L1 animals for 72 hr at 20°C before filming embryos.
 
@@ -136,19 +500,23 @@ For single hcp-3 and klp-7 inactivation or double hcp-3/klp-7 inactivation, L4 l
 
 plk-1ts animals were fed with bacteria producing lmn-1 dsRNA at 15°C from the L1 stage and briefly shifted at 25°C for 30 min before filming the embryos.
 
-## Microscopy
+#### Microscopy
 
 For the analysis of the paired nuclei phenotype in live specimens by differential interference contrast (DIC) microscopy, embryos were obtained by cutting open young adult hermaphrodites using two 21-gauge needles. Embryos were handled individually and mounted on a coverslip in 3 μl of M9 buffer. The coverslip was placed on a 3% agarose pad. DIC images were acquired by an Axiocam Hamamatsu ICc 1 camera (Hamamatsu Photonics, Bridgewater, NJ) mounted on a Zeiss AxioImager A1 microscope equipped with a Plan Neofluar 100×/1.3 NA objective (Carl Zeiss AG, Jena, Germany), and the acquisition system was controlled by Axiovision software (Carl Zeiss AG, Jena, Germany). Images were acquired at 10 s intervals.
 
 Live imaging was performed at 23°C using a spinning disk confocal head (CSU-X1; Yokogawa Corporation of America) mounted on an Axio Observer.Z1 inverted microscope (Zeiss) equipped with 491 and 561 nm lasers (OXXIUS 488 nm 150 mW, OXXIUS Laser 561 nm 150 mW) and sCMOS PRIME 95 camera (Photometrics). Acquisition parameters were controlled by MetaMorph software (Molecular Devices). In all cases ,a 63× Plan-Apochromat 63×/1.4 Oil (Zeiss) lens was used. Images were acquired at 2 s or 10 s intervals. Captured images were processed using ImageJ and Photoshop.
 
-## Quantification and statistical analysis
+#### Quantification and statistical analysis
 
 The fluorescence intensity of GFP::LMN-1 and GFP::LMN-1 8A over time was measured from a single central focal plane with the ImageJ software in control and RNAi conditions. The same rectangle was used around the area of interest in each time-lapse acquisition, after background subtraction, the ‘multi-measure’ plugin was used to display the average signal intensity per pixel in each frame (10 s interval). Anaphase onset was defined as time 0. To allow direct comparison between control and RNAi conditions, the average signal intensity of GFP::LMN-1 or GFP::LMN-1 8A at the NE 120 s before anaphase was arbitrarily defined as 1. The data points on the graphs are the mean of the normalized GFP intensity measurements in control and RNAi conditions for the same defined region of interest (ROI).
 
 The pronuclei area was measured using ImageJ software by thresholding the ROI defined by mCherry::LMN-1 and measuring the total area at each time point.
 
-The intercentrosomal distances and embryos lengths were measured using the IMARIS software by manual tracking of the position of the centrosomes and the poles of the embryos, over time. Then, we used the following equation to obtain the corresponding intercentrosomal distance and embryo length at each time point:d(x,y)=(x2−x1)2+(y2−y1)2
+The intercentrosomal distances and embryos lengths were measured using the IMARIS software by manual tracking of the position of the centrosomes and the poles of the embryos, over time. Then, we used the following equation to obtain the corresponding intercentrosomal distance and embryo length at each time point:
+
+$$
+d(x,y)=\sqrt{(x_{2}−x_{1})^{2}+(y_{2}−y_{1})^{2}}
+$$
 
 where the first point (first centrosome or embryo pole) is represented by (x1,y1), and the second point (second centrosome or embryo pole) is represented by (x2,y2). The data obtained were used to graph the ratio between intercentrosomal distance and embryo length (%) to monitor mitotic spindle elongation.
 

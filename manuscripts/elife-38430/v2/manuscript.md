@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.38430.001 In historical attempts to treat morning sickness, use of the drug thalidomide led to the birth of thousands of children with severe birth defects. Despite their teratogenicity, thalidomide and related IMiD drugs are now a mainstay of cancer treatment; however, the molecular basis underlying the pleiotropic biology and characteristic birth defects remains unknown. Here we show that IMiDs disrupt a broad transcriptional network through induced degradation of several C 2 H 2 zinc finger transcription factors, including SALL4, a member of the spalt -like family of developmental transcription factors. Strikingly, heterozygous loss of function mutations in SALL4 result in a human developmental condition that phenocopies thalidomide-induced birth defects such as absence of thumbs, phocomelia, defects in ear and eye development, and congenital heart disease. We find that thalidomide induces degradation of SALL4 exclusively in humans, primates, and rabbits, but not in rodents or fish, providing a mechanistic link for the species-specific pathogenesis of thalidomide syndrome.
+In historical attempts to treat morning sickness, use of the drug thalidomide led to the birth of thousands of children with severe birth defects. Despite their teratogenicity, thalidomide and related IMiD drugs are now a mainstay of cancer treatment; however, the molecular basis underlying the pleiotropic biology and characteristic birth defects remains unknown. Here we show that IMiDs disrupt a broad transcriptional network through induced degradation of several C2H2 zinc finger transcription factors, including SALL4, a member of the spalt-like family of developmental transcription factors. Strikingly, heterozygous loss of function mutations in SALL4 result in a human developmental condition that phenocopies thalidomide-induced birth defects such as absence of thumbs, phocomelia, defects in ear and eye development, and congenital heart disease. We find that thalidomide induces degradation of SALL4 exclusively in humans, primates, and rabbits, but not in rodents or fish, providing a mechanistic link for the species-specific pathogenesis of thalidomide syndrome.
 
 ## Introduction
 
@@ -32,31 +32,234 @@ Although a potentially transformative treatment for MM, the molecular mechanisms
 
 ## Results
 
-## IMiDs induce CRL4CRBN-dependent degradation of multiple C2H2 zinc finger transcription factors
+### IMiDs induce CRL4CRBN-dependent degradation of multiple C2H2 zinc finger transcription factors
 
 We established a mass spectrometry-based workflow (Figure 1—figure supplement 1A) to detect IMiD-induced protein degradation in hESC. To identify targets of IMiDs, we treated cells with 10 µM thalidomide, 5 µM lenalidomide, 1 µM of pomalidomide, or a DMSO control (Figure 1—figure supplement 1B). To minimize transcriptional changes and other secondary effects that often result from extended drug exposure (An et al., 2017), cells were treated for 5 h and protein abundance was measured in multiplexed mass spectrometry-based proteomics using tandem mass tag (TMT) isobaric labels (McAlister et al., 2014) (Figure 1—figure supplement 1 and Materials and methods). From ~10,000 proteins quantified in H9 hESC, only the developmental spalt-like transcription factor SALL4 showed statistically significant downregulation across all three drug treatments with a change in protein abundance greater than 1.5-fold, and a p value < 0.001 (Figure 1A–C). In accordance with previous findings, we also observed that treatment with lenalidomide led to degradation of CSNK1A1 (Krönke et al., 2015; Petzold et al., 2016). Pomalidomide induced degradation of additional targets, including the previously characterized zinc finger protein ZFP91 (An et al., 2017) and the largely uncharacterized proteins ZBTB39, FAM83F, WIZ, RAB28, and DTWD1 (Figure 1A–C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Scatter plot depicting identification of IMiD-dependent substrate candidates. H9 human embryonic stem cells (hESC) were treated with 10 µM thalidomide (A), 5 µM lenalidomide (B), 1 µM pomalidomide (C), or DMSO control, and protein abundance was analyzed using TMT quantification mass spectrometry (see Materials and methods for details). Significant changes were assessed by a moderated t-test as implemented in the limma package (Ritchie et al., 2015), with the log2 fold change (log2 FC) shown on the y-axis, and negative log10 p values on the x-axis (two independent biological replicates for each of the IMiDs, or three independent biological replicates for DMSO). (D) Heatmap displaying the mean log2 FC of the identified IMiD-dependent targets comparing treatment with thalidomide, lenalidomide, and pomalidomide. Mean log2 FC values were derived from averaging across proteomics experiments in four different cell lines (hESC, MM1s, Kelly, SK-N-DZ). The heatmap colors are scaled with blue indicating a decrease in protein abundance (−2 log2 FC) and red indicating no change (0 log2 FC) in protein abundance. Targets newly identified in this study are marked with a green dot, ZnF containing targets with a cyan dot, and previously characterized targets with a gray dot. Substrates are grouped according to their apparent IMiD selectivity in the mass spectrometry-based proteomics. It should be noted that this does not refer to absolute selectivity but rather relative selectivity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the mass spectrometry-based proteomics workflow used for IMiD profiling (the raw output of mass spectrometry processing is provided in Figure 1—source data 1–14). (B) Chemical structures of compounds used in this study. (C) Scatter plots depicting identification of treatment-dependent substrate candidates. Kelly cells were treated with 10 µM thalidomide (3× biological replicates), 5 µM lenalidomide (3× biological replicates), 1 µM pomalidomide, or DMSO as a control (3× biological replicates) for 5 h (top row). MM1s cells were treated with 10 µM thalidomide (2× biological replicates), 5 µM lenalidomide (2× biological replicates), 1 µM pomalidomide (2× biological replicates), or DMSO as a control (3× biological replicates) for 5 h (middle row). SK-N-DZ cells were treated with 0.1 µM CC-220, 1 µM dBET57, 1 µM pomalidomide (3× biological replicates), or DMSO as a control (3× biological replicates) for 5 h (bottom row). Protein abundance from each experiment was analyzed using TMT quantification mass spectrometry (see Materials and methods for details). Significant changes were assessed by a moderated t-test as implemented in the limma package (Ritchie et al., 2015), with the log2 fold change shown on the y-axis, and negative log10p values on the x-axis (the number of replicates is indicated above). Hits that met the set significance threshold (fold-change greater 1.5 and log10 p value below 0.001) are displayed with a red point (•).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Heatmap summarizing the protein abundance of IMiD-dependent targets identified from proteomics data across four different cell lines (Kelly, MM1s, hES, and SK-N-DZ cells) and five different compounds (thalidomide, lenalidomide, pomalidomide, CC-220, and dBET57). The color scale displays a 2.5-fold decrease in protein abundance in blue and no change is displayed in white. NA indicates that the protein was not identified/quantified in the experiment. (B) Mass spectrometry scatter plot validation of IMiD-dependent targets. SK-N-DZ cells were treated with 1 µM pomalidomide to induce degradation of IMiD-dependent targets (left), degradation was rescued by co-treatment with 1 µM pomalidomide +5 µM MLN4924 (right), or treated with DMSO as a control for 5 h. Protein abundance from each experiment was analyzed using TMT quantification mass spectrometry (see Materials and methods for details). Significant changes were assessed by a moderated t-test as implemented in the limma package (Ritchie et al., 2015), with the log2 FC shown on the y-axis, and -log10p values on the x-axis (for three biological replicates). Hits that met the significance threshold (fold-change greater 1.5 and log10 p value below 0.001) are displayed with a red point (•). (C) Reporter ion ratios from (B) were normalized and scaled (see Materials and methods) and are depicted as a bar graph for the IMiD-dependent targets. Co-treatment with the neddylation inhibitor MLN4924 abrogated the degradation of all IMiD-dependent targets in accordance with a Cullin-RING ligase-dependent mechanism of degradation. Data are presented as means ± s.d. (n = 3 biological replicates). (D) Western blot validation of MLN4924 rescue experiment: SK-N-DZ or Kelly cells were treated with increasing concentrations of thalidomide or DMSO as a control. Following 24 h incubation, GZF1 (left) and DTWD1 (right) as well as GAPDH protein levels were assessed by western blot analysis (one representative out of three replicates is shown). (E) Multiple sequence alignment of the CxxCG-containing zinc finger domains from each of the IMiD-dependent targets identified by mass spectrometry in this study.
 
 This diverse set of neo-substrates observed in response to treatment with different IMiDs (number of substrates identified: Thal < Len << Pom) prompted us to further expand our exploration of IMiD-dependent neo-substrates by profiling IMiDs in additional cell lines. As degradation is mediated through CRL4CRBN, and because CRBN expression levels are high in the central nervous system (CNS), we assessed the effects of IMiDs in two different neuroblastoma cell lines, Kelly and SK-N-DZ cells, as well as the commonly used multiple myeloma cell line, MM1s, as a control. Comprehensive proteomics studies across multiple independent replicates of hESC, Kelly, SK-N-DZ, and MM1s cells (Figure 1A–D, see Materials and methods and Figure 1—figure supplements 1 and 2 for details), revealed multiple novel substrates for IMiDs (ZNF692, SALL4, RNF166, FAM83F, ZNF827, RAB28, ZBTB39, ZNF653, DTWD1, ZNF98, and GZF1). To validate these novel targets, we carried out a ‘rescue’ proteomics experiment, in which we treated SK-N-DZ cells with 1 µM pomalidomide or with a co-treatment of 1 µM pomalidomide and 5 µM MLN4924 (a specific inhibitor of the NAE1/UBA3 Nedd8 activating enzyme). Inhibition of the Cullin RING ligase (CRL) by MLN4924 fully abrogated IMiD-induced degradation of targets (Figure 1—figure supplement 2B,C), and thereby confirmed the CRL-dependent mechanism. This approach was confirmed by spot-checking IMiD-dependent degradation for novel targets for which antibodies were available by western blot (Figure 1—figure supplement 2D). All targets that were found to be consistently degraded across multiple large-scale proteomics experiments were validated in those independent validation experiments, providing a high confidence target list (Figure 1D).
 
 Eight of the 11 new targets found in the proteomics screen are ZnF proteins (SALL4, ZNF827, ZBTB39, RNF166, ZNF653, ZNF692, ZNF98 and GZF1), and except for RNF166, all contain at least one ZnF domain that has the characteristic features previously described as critical for IMiD-dependent degradation (An et al., 2017) (Figure 1—figure supplement 2E). We also observe a striking difference in substrate specificity among thalidomide, lenalidomide, and pomalidomide (Figure 1D). We find that thalidomide induces robust degradation of the zinc finger transcription factors ZNF692, SALL4, and the ubiquitin ligase RNF166 in cell lines expressing detectable levels of those proteins (Figure 1D and Figure 1—figure supplement 2A). Lenalidomide results in additional degradation of ZNF827, FAM83F, and RAB28 along with the lenalidomide-specific substrate CSNK1A1. Pomalidomide shows the most pronounced expansion of targets, and in addition induces robust degradation of ZBTB39, ZFP91, DTWD1, and ZNF653. It is interesting to note that DTWD1 is, as CSNK1A1 and GSPT1, another non zinc finger target that was found to be robustly degraded by pomalidomide. Although this expansion of substrates is interesting and may contribute to some of the clinical differences between lenalidomide and pomalidomide, a target causative for teratogenicity would need to be consistently degraded across all IMiDs.
 
-## SALL4, a key developmental transcription factor, is a bona fide IMiD-dependent CRL4CRBN target
+### SALL4, a key developmental transcription factor, is a bona fide IMiD-dependent CRL4CRBN target
 
 The robust down-regulation of SALL4, a spalt-like developmental transcription factor important for limb development (Koshiba-Takeuchi et al., 2006), upon treatment with thalidomide, lenalidomide, and pomalidomide prompted us to further investigate SALL4 as an IMiD-dependent target of CRL4CRBN. Strikingly, human genetic research has shown that familial loss of function (LOF) mutations in SALL4 are causatively linked to the clinical syndromes, Duane Radial Ray syndrome (DRRS) also known as Okihiro syndrome, and mutated in some patients with Holt-Oram syndrome (HOS). Remarkably, both DRRS and HOS have large phenotypic overlaps with thalidomide embryopathy (Kohlhase et al., 2003), and this phenotypic resemblance has led to misdiagnosis of patients with SALL4 mutations as cases of thalidomide embryopathy and the hypothesis that the tbx5/sall4 axis might be involved in thalidomide pathogenesis (Knobloch and Rüther, 2008; Kohlhase et al., 2003).
 
 Thalidomide embryopathy is characterized not only by phocomelia, but also various other defects (Table 1), many of which are specifically recapitulated in syndromes known to originate from heterozygous LOF mutations in SALL4 (Kohlhase, 1993). The penetrance of DRRS in individuals with heterozygous SALL4 mutations likely exceeds 90% (Kohlhase, 2004), and thus partial degradation of SALL4 through IMiD exposure will likely result in similar clinical features observed in DRRS. All currently described SALL4 mutations are heterozygous LOF mutations, and the absence of homozygous mutations indicates the essentiality of the gene. Accordingly, homozygous deletion of Sall4 is early embryonic lethal in mice (Sakaki-Yumoto et al., 2006). Mice with heterozygous deletion of Sall4 show a high frequency of miscarriage, while surviving litters show ventricular septal defects and anal stenosis, both phenotypes that are observed in humans with DRRS or thalidomide syndrome (Sakaki-Yumoto et al., 2006). Mice carrying a heterozygous Sall4 genetrap allele show defects in heart and limb development, partially reminiscent of patients with DRRS or HOS (Koshiba-Takeuchi et al., 2006). Another genetic disorder with a related phenotype is Roberts syndrome, caused by mutations in the ESCO2 gene (Afifi et al., 2016). While ESCO2 similarly encodes for a zinc finger protein and is transcriptionally regulated by ZNF143 (Nishihara et al., 2010), ESCO2 (as well as ZNF143, SALL1, SALL2, and SALL3) protein levels were found to be unchanged in all of our mass spectrometry experiments despite robust and ubiquitous expression (Figure 1D, Figure 1—figure supplements 1 and 2 and Figure 1—source data 1–14).
 
+**Table 1.**
+ Common phenotypes in thalidomide syndrome, Duane Radial Ray syndrome, and Holt-Oram syndrome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Thalidomide syndrome</th>
+      <th>Duane Radial Ray syndrome</th>
+      <th>Holt-Oram syndrome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Upper limbs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Thumbs</td>
+      <td>Thumbs</td>
+      <td>Thumbs</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Radius</td>
+      <td>Radius</td>
+      <td>Radius</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Humerus</td>
+      <td>Humerus</td>
+      <td>Humerus</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ulna</td>
+      <td>Ulna</td>
+      <td>Ulna</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fingers</td>
+      <td>Fingers</td>
+      <td>Fingers</td>
+    </tr>
+    <tr>
+      <td>Lower limbs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mostly normal lower limbs</td>
+      <td>Mostly normal lower limbs</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Talipes dislocation</td>
+      <td>Talipes dislocation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hip dislocation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Shortening of long bones</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ears</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Absence or abnormal pinnae</td>
+      <td>Abnormal pinnae</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Deafness</td>
+      <td>Deafness</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Microtia</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eyes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Colobomata</td>
+      <td>Colobomata</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Microphthalmos</td>
+      <td>Microphthalmos</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Abduction of the eye</td>
+      <td>Abduction of the eye</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Duane anomaly</td>
+      <td>Duane anomaly</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stature</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Short stature</td>
+      <td>Postnatal growth retardation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heart</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ventricular septal defects</td>
+      <td>Ventricular septal defects</td>
+      <td>Ventricular septal defects</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Atrial septal defects</td>
+      <td>Atrial septal defects</td>
+      <td>Atrial septal defects</td>
+    </tr>
+  </tbody>
+</table>
+
 The remarkable phenotypic overlap of LOF mutations in SALL4 with thalidomide embryopathy led us to further assess whether thalidomide and related IMiDs directly induce degradation of SALL4 in an IMiD and CRL4CRBN-dependent manner. To extend our mass spectrometry findings, we treated H9 hESC with increasing doses of thalidomide, lenalidomide, pomalidomide, or with DMSO as a control, and assessed protein levels of SALL4 by western blot. We observed a dose-dependent decrease in protein levels with all three drugs (Figure 2A and Figure 2—figure supplement 1), in accordance with IMiD-induced protein degradation. We then used qPCR to confirm that thalidomide treatment does not reduce the level of SALL4 mRNA, but rather upregulates SALL4 mRNA, consistent with the protein-level changes being caused by post-transcriptional effects (Figure 2—figure supplement 1I).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig2-v2.jpg)
+
+**Figure 2.:** (A) H9 hESC were treated with increasing concentrations of thalidomide, lenalidomide, pomalidomide, or DMSO as a control. Following 24 h of incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (B) As in (A), but treatment was done in Kelly cells. (C) Kelly cells were treated with increasing concentrations of thalidomide and co-treated with 5 µM bortezomib, 5 µM MLN4924, 0.5 µM MLN7243, or DMSO as a control. Following 24 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (D) Parental Kelly cells or two independent pools of CRBN-/- Kelly cells were treated with increasing concentrations of thalidomide. Following 24 h incubation, SALL4, CRBN, and GAPDH protein levels were assessed by western blot analysis. (E) Kelly cells were treated with 5 µM pomalidomide or DMSO as a control for 8 h, at which point the compound was washed out. Cells were harvested at 1, 2, 4, 8, 24, and 48 h post-washout and SALL4 and GAPDH protein levels were assessed by western blot analysis. (F) Kelly cells were treated with 5 µM pomalidomide for 1, 2, 4, 8, and 24 h, or with DMSO as a control. Following time course treatment, SALL4 and GAPDH protein levels were assessed by western blot analysis. One representative experiment is shown in this figure, from three replicates for each of the western blots.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) HEK293T cells were treated with increasing concentrations of thalidomide, lenalidomide, pomalidomide, or DMSO as a control. Following 24 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (B) As in (A), but with H661 cells. (C) As in (A), but with SK-N-DZ cells. (D) HEK293T cells were treated with increasing concentrations of thalidomide and co-treated with 5 µM bortezomib, 5 µM MLN4924, 0.5 µM MLN7243, or DMSO as a control. Following 24 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (E) As in (D), but with SK-N-DZ cells. (F) Parental HEK293T cells or two independent pools of CRBN-/- HEK293T cells were treated with increasing concentrations of thalidomide. Following 24 h incubation, SALL4, CRBN, and GAPDH protein levels were assessed by western blot analysis. (G) Kelly cells were treated with 1 µM pomalidomide or DMSO as a control for 8 h, at which point the compound was washed out. Cells were harvested at 1, 2, 4, 8, 24, and 48 h post-washout, and SALL4 and GAPDH protein levels were assessed by western blot analysis. (H) Kelly cells were treated with 1 µM pomalidomide for 1, 2, 4, 8, and 24 h, or with DMSO as a control. Following time course treatment, SALL4 and GAPDH protein levels were assessed by western blot analysis. (I) Thalidomide treatment did not influence the expression of SALL4 mRNA. hES cells treated with 10 µM thalidomide or DMSO as a control for 24 h were subjected to quantitative RT-PCR to assess the levels of total SALL4 mRNA. The mRNA levels were normalized to those of GAPDH (housekeeping gene) mRNA. The SALL4 mRNA level remained stable or increased, which is in contrast to the decrease in protein abundance observed in proteomics and western blot analysis. mRNA fold change was determined from n = 2 with three technical replicates. (J) To validate the specificity of the antibody used, we transfected Kelly or HEK293T cells with a plasmid expressing mCherry, Cas9, and one of three guide RNAs (sgRNA1, sgRNA2, sgRNA3) targeting the SALL4 gene, or a mock control. Following 48 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis and for sgRNA1 and sgRNA2 a loss of the specific bands for SALL4 was observed in accordance with the antibody being specific for SALL4. sgRNA3 had no effect, which is likely to be because of an ineffective sgRNA. (K) To validate the specificity of the antibody used, we transfected Kelly cells with a plasmid overexpressing Flag-mmSALL4, Flag-hsSALL4, or no transfection. Following 48 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. One representative experiment is shown in this figure, from three replicates for each of the western blots.
 
 We next sought to assess the robustness of SALL4 degradation across different lineages by subjecting a panel of cell lines (Kelly, SK-N-DZ, HEK293T, and H661 cells) to increasing concentrations of thalidomide, lenalidomide, pomalidomide, or DMSO as a control and performed western blot analysis (Figure 2B and Figure 2—figure supplement 1A–C). We observed a dose-dependent decrease in SALL4 protein levels with all three IMiD analogs and in all tested cell lines. In accordance with a CRL4CRBN-dependent mechanism, the IMiD-induced degradation was abrogated by co-treatment with the proteasome inhibitor bortezomib, the NEDD8 inhibitor MLN4924, or the ubiquitin E1 (UBA1) inhibitor MLN7243 (which blocks all cellular ubiquitination by inhibiting the initial step of the ubiquitin conjugation cascade) (Figure 2C and Figure 2—figure supplement 1D,E). To further evaluate the CRL4CRBN-dependent mechanism, we generated CRBN-/- Kelly and HEK293T cells using CRISPR/Cas9 technology and treated the resulting CRBN-/- cells and parental cells with increasing concentrations of thalidomide, lenalidomide, or pomalidomide (Figure 2D and Figure 2—figure supplement 1F). In agreement with the CRBN-dependent mechanism, no degradation of SALL4 was observed in CRBN-/- cells. Thalidomide has a plasma half-life (t1/2) of ~6 to 8 h (~3 h for lenalidomide, ~9 h for pomalidomide) and a maximum plasma concentration (Cmax) of ~5–10 µM (~2.5 µM for lenalidomide, 0.05 µM for pomalidomide) upon a typical dose of 200–400 mg, 25 mg, or 2 mg for thalidomide, lenalidomide, or pomalidomide, respectively (Chen et al., 2017; Hoffmann et al., 2013; Teo et al., 2004). To recapitulate these effects in vitro, we treated Kelly cells with 1 or 5 µM pomalidomide for 8 h, followed by washout of the drug and assessment of time-dependent recovery of SALL4 protein levels (Figure 2E and Figure 2—figure supplement 1G). Treatment with pomalidomide induces degradation of SALL4 as early as 4 h post treatment (Figure 2F and Figure 2—figure supplement 1H), which recovered to levels close to pre-treatment level after 48 h post washout (Figure 2E), together suggesting that a single dose of IMiD drugs will be sufficient to deplete SALL4 protein levels for >24 h.
 
-## In vitro binding assays confirm IMiD-dependent binding of SALL4 to CRL4CRBN
+### In vitro binding assays confirm IMiD-dependent binding of SALL4 to CRL4CRBN
 
 Bona fide targets of IMiD-induced degradation typically bind to CRBN (the substrate-recognition domain of the E3 ligase) in vitro in a compound-dependent manner. Thus, we sought to test whether SALL4 binds to CRBN and to map the ZnF domain required for binding using purified recombinant proteins. Based on conserved features among IMiD-sensitive ZnF domains (Figure 3A, C–x(2)-C-G motif within the canonical C2H2 zinc finger motif), the second (SALL4ZnF2) and fourth (SALL4ZnF4) ZnF domains of SALL4 (aa 410–433, and aa 594–616, respectively) were identified as candidate degrons for IMiD-induced binding. We expressed, purified, biotinylated, and subjected these ZnF domains to in vitro CRBN binding assays (An et al., 2017; Petzold et al., 2016). We observed dose-dependent binding between SALL4ZnF2 or SALL4ZnF4 and CRBN similar to that described for IKZF1/3 and ZFP91, albeit with reduced apparent affinity for SALL4ZnF4 (Figure 3B,C) (Petzold et al., 2016). To estimate apparent affinities (KD(app)) we titrated bodipy-FL labelled DDB1∆B-CRBN to biotinylated SALL4ZnF2, or SALL4ZnF4 at 100 nM with saturating concentrations of IMiDs (50 µM) and measured the affinity by TR-FRET (Figure 3D and Figure 3—figure supplement 1A,B), which confirmed the weak affinity of SALL4ZnF4. However, we noticed that a construct spanning ZnF1 and ZnF2 of SALL4 (SALL4ZnF1-2) exhibited even tighter binding to CRBN (Figure 3D and Figure 3—figure supplement 1A,B) and enhanced dose-dependent complex formation in TR-FRET (Figure 3E). These findings suggest that multiple zinc finger domains of SALL4 contribute to binding, and may result in multivalent recruitment to CRBN in vivo. However, the strength of the interaction with ZnF4 is unlikely to be sufficient for degradation in cells, and moreover, the rank order of Pom >Thal >> Len in binding observed with ZnF2 is in accordance with the cellular potency in degradation of SALL4, suggesting that ZnF2 is the critical ZnF domain for SALL4 degradation. We confirmed the specificity of the SALL4ZnF2 interaction by introducing a point mutation to glycine 416 (G416), the residue critical for IMiD-dependent binding to CRBN (Petzold et al., 2016). Mutations to alanine (G416A) rendered SALL4ZnF2 resistant to IMiD-dependent binding to CRBN (Figure 3F and Figure 3—figure supplement 1C,D). Mutating glutamine 595 (Q595) in SALL4ZnF4, another residue previously shown to be critical for IMiD-dependent CRBN binding in the ZnF domains of IKZF1/3, impaired IMiD-dependent binding (Figure 3—figure supplement 1E), confirming the specificity of the interaction despite the weak binding affinity. As we observed increased affinity of the tandem-ZnF construct SALL4ZnF1-2 compared with the single SALL4ZnF2, we sought to test whether ZnF1 was sufficient for binding. We introduced the G416N mutation in ZnF2 or a S388N mutation in ZnF1 into the SALL4ZnF1-2 construct (S388 is the ZnF1 sequence equivalent of ZnF2 G416; ZnF1-2: C-x-x-C-S/G) and performed CRBN binding assays. G416N, but not S388N, fully abrogated IMiD-dependent binding of SALL4ZnF1-2 to CRBN (Figure 3—figure supplement 1F–I), confirming the strict dependence on the ZnF2 interaction with CRBN. To test whether the second zinc finger of SALL4 is critical for IMiD-induced degradation in cells, we introduced G416A and G416N mutations into Flag-tagged full-length SALL4. When expressed in Kelly cells, the parental wild-type Flag-SALL4 was readily degraded by thalidomide treatment (Figure 3G). Similarly, Flag-tagged SALL4 with G600A or G600N mutations in ZnF4 were also shown to be readily degraded with thalidomide treatment, suggesting that SALL4ZnF4 is dispensable for binding and subsequent degradation (Figure 3G). Finally, the two conservative mutations in ZnF2 (G416A or G416N), both known to specifically disrupt binding to CRBN while maintaining the overall zinc finger fold (Petzold et al., 2016), rendered SALL4 stable under these treatment conditions, demonstrating that SALL4ZnF2 is necessary for CRL4CRBN-mediated degradation of SALL4 in cells (Figure 3H). In vitro ubiquitination assays further confirm that SALL4ZnF1-2 is ubiquitinated by CRL4CRBN in an IMiD-dependent fashion (Figure 3I). Together, our cellular and biochemical data establish SALL4 as a bona fide IMiD-dependent target of CRL4CRBN, and demonstrate that the second zinc finger is necessary for IMiD-dependent degradation, while the tandem array of ZnF1-2 further strengthens the interaction in vitro.
 
-## Species-specific teratogenicity is a result of genetic differences in both CRBN and SALL4
+![Figure 3.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig3-v2.jpg)
+
+**Figure 3.:** (A) Multiple sequence alignment of the validated ‘degrons’ from known IMiD-dependent zinc finger substrates, along with the two candidate zinc finger degrons from SALL4. (B) TR-FRET: titration of IMiD (thalidomide, lenalidomide and pomalidomide) to DDB1∆B-CRBNSpy-BodipyFL at 200 nM, hsSALL4ZnF2 at 100 nM, and terbium-streptavidin at 4 nM. (C) As in (B), but with hsSALL4ZnF4 with DDB1∆B-CRBNSpy-BodipyFL at 1 µM. (D) TR-FRET: titration of DDB1∆B-CRBNSpy-BodipyFL to biotinylated hsSALL4ZnF2, hsSALL4ZnF1-2, or hsSALL4ZnF4 at 100 nM and terbium-streptavidin at 4 nM in the presence of 50 µM thalidomide. (E) As in (B), but with hsSALL4ZnF1-2. (F) As in (B), but with hsSALL4ZnF2 and hsSALL4ZnF2G416A mutant as thalidomide titration. (G) Kelly cells transiently transfected with Flag-hsSALL4WT, Flag-hsSALL4G600A, or hsSALL4G600N were treated with increasing concentrations of thalidomide or DMSO as a control. Following 24 h of incubation, SALL4 (α-Flag) and GAPDH protein levels were assessed by western blot analysis (one representative experiment is shown out of three replicates. (H) As in (G), but with Flag-hsSALL4WT, Flag-hsSALL4G416A, or Flag-hsSALL4G416N. (I) In vitro ubiquitination of biotinylated hsSALL4ZnF1-2 by CRL4CRBN in the presence of thalidomide (10 µM), lenalidomide (10 µM), or pomalidomide (0.1, 1 and 10 µM), or DMSO as a control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) TR-FRET: titration of DDB1∆B-CRBNSpy-BodipyFL to biotinylated hsSALL4ZnF2, hsSALL4ZnF1-2, and hsSALL4ZnF4 at 100 nM and terbium-streptavidin at 4 nM in the presence of lenalidomide at 50 µM. (B) As in (A), but in the presence of pomalidomide at 50 µM. (C) TR-FRET: titration of lenalidomide to DDB1∆B-CRBNSpy-BodipyFL at 200 nM, hsSALL4ZnF2WT, hsSALL4 ZnF2G416A at 100 nM, and terbium-streptavidin at 4 nM. (D) As in (C), but titrating with pomalidomide. (E) TR-FRET: titration of thalidomide to DDB1∆B-CRBNSpy-BodipyFL at 1 µM, hsSALL4ZnF4 or hsSALL4ZnF4Q595H mutant at 100 nM, and terbium-streptavidin at 4 nM. (F) TR-FRET: titration of thalidomide to DDB1∆B-CRBNSpy-BodipyFL at 200 nM, hsSALL4ZnF1-2WT, hsSALL4ZnF1-2G416N, and hsSALL4ZnF1-2S388N at 100 nM, and terbium-streptavidin at 4 nM. (G) As in (F), but titrating with lenalidomide. (H) As in (F), but titrating with pomalidomide. (I) TR-FRET: titration of DDB1∆B-CRBNSpy-BodipyFL to biotinylated hsSALL4ZnF1-2WT, hsSALL4ZnF1-2G416N, and hsSALL4ZnF1-2S388N at 100 nM, and terbium-streptavidin at 4 nM in the presence of thalidomide at 50 µM. (J) TR-FRET: titration of DDB1∆B-mmCRBNSpy-BodipyFL to biotinylated hsSALL4ZnF2,hsSALL4ZnF1-2, and IKZF1∆ (Petzold et al., 2016) at 100 nM, and terbium-streptavidin at 4 nM in the presence of thalidomide at 50 µM. (K) TR-FRET: titration of lenalidomide to DDB1∆B-CRBNSpy-BodipyFL at 200 nM, hsSALL4ZnF2, mmSALL4 ZnF2, and drSALL4 ZnF2 at 100 nM, and terbium-streptavidin at 4 nM. (L) As in (K), but titrating pomalidomide. All TR-FRET data in this figure are presented as means ± s.d. (n = 3).
+
+### Species-specific teratogenicity is a result of genetic differences in both CRBN and SALL4
 
 One characteristic feature of IMiD phenotypes is the absence of defining limb deformities following administration to pregnant rodents, which contributed to the initial approval by regulatory agencies in Europe. In contrast, many non-human primates exhibit phenotypes that mimic the human syndrome (Neubert et al., 1988; Smith et al., 1965; Vickers, 1967). These remarkable species-specific phenotypes have historically complicated studies of thalidomide embryopathies, and suggest a genetic difference between these species that would abrogate the detrimental effects of thalidomide. Mouse Crbn harbors a critical polymorphism (Figure 4A,B and Figure 5) that prevents IMiD-dependent degradation of ZnF substrates and CSNK1A1 (Krönke et al., 2015), which could explain the absence of a SALL4-dependent phenotype in mice. Mice and rats (both insensitive to thalidomide embryopathies) harbor an isoleucine at CRBN position 388 (residue 388 refers to the human CRBN sequence). In contrast, sensitive primates have a valine in position 388 that is necessary for CRL4CRBN to bind, ubiquitinate, and subsequently degrade ZnF substrates (Figure 4A,B and Figure 5A). Consistent with this concept, treatment of mouse embryonic stem cells (mESC) with increasing concentrations of thalidomide or pomalidomide does not promote degradation of mmSALL4 (Figure 4C and Figure 4—figure supplement 1A), and introducing a V388I mutation into hsCRBN renders the protein less effective to bind to SALL4 in vitro (Figure 4B). We thus asked whether ectopic expression of hsCRBN in mouse cells would lead to IMiD-induced degradation of mmSALL4, similar to what had been observed for CSNK1A1, and could hence render mice sensitive to IMiD-induced birth defects. Expression of hsCRBN in mouse cells, while sensitizing cells to degradation of IMiD targets such as mmIKZF1/3, mmCSNK1A1 (Krönke et al., 2015), mmZFP91, or mmGZF1 (Figure 4D,E), does not result in degradation of mmSALL4 (Figure 4F). To test whether a fully human CRBN in a human cell background would be sufficient to induce SALL4 degradation, we introduced hsSALL4, or mmSALL4 into human cells (Kelly cells) and found that while ectopically expressed hsSALL4 is readily degraded upon IMiD treatment, mmSALL4 is unaffected even at arbitrarily high doses of IMiDs (Figure 4G and Figure 4—figure supplement 1B,C). Sequence analysis reveals that mice and zebrafish have critical mutations in the ZnF2 domain of SALL4 (Figure 5B), which abrogate binding to hsCRBN in vitro (Figure 4H), and render mmSALL4 and drSALL4 insensitive to IMiD-mediated degradation in cells (Figure 4G,I and Figure 4—figure supplement 1C). In line with these findings, mice harboring a homozygous CRBN I391V knock-in allele, despite exhibiting degradation of mmIKZF1/3, mmZFP91, and mmCSNK1A1 Fink et al., 2018, show increased miscarriage upon IMiD treatment compared with control mice; however, they do not exhibit IMiD-induced embryopathies resembling the human phenotype Fink et al., 2018 . We next sought to test whether exchange of the mmSALL4 ZnF2 domain for the hsSALL4 ZnF2 domain would be sufficient to enable mmSALL4 degradation in a human cell line (Kelly cells). Strikingly, through the five amino acid substitutions required to ‘humanize’ the mmSALL4 ZnF2 domain, we were able to induce thalidomide-mediated mouse SALL4 degradation in a human cell line (Figure 4G).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig4-v2.jpg)
+
+**Figure 4.:** (A) Close-up view of the beta-hairpin loop region of Ck1a (CSNK1A1) interacting with CRBN and lenalidomide (PDB: 5fqd) highlighting the additional bulkiness of the V388I mutation (PDB: 4ci1) present in mouse and rat CRBN. CSNK1A1 and lenalidomide are depicted as stick representations in magenta and yellow, respectively, the Ile391 of mouse CRBN corresponding to human Val388 is depicted as a stick representation in cyan, and CRBN is depicted as a surface representation. (B) TR-FRET: titration of DDB1∆B-hsCRBNSpy-BodipyFL, or DDB1∆B-hsCRBNV388ISpy-BodipyFL to biotinylated hsSALL4ZnF1-2 at 100 nM, and terbium-streptavidin at 4 nM in the presence of 50 µM pomalidomide or DMSO. (C) mES cells were treated with increasing concentrations of thalidomide and pomalidomide or DMSO as a control. Following 24 h of incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (D) mES cells constitutively expressing Flag-hsCRBN were treated with increasing concentrations of thalidomide. Following 24 h of incubation, ZFP91 and GAPDH protein levels were assessed by western blot analysis. (E) As in (C), but measuring GZF1 and GAPDH protein levels. (F) As in (C), but measuring SALL4, hsCRBN (α-Flag), and GAPDH protein levels. (G) Kelly cells were transiently transfected with Flag-hsSALL4, Flag-mmSALL4, or Flag-mmSALL4 containing a humanized ZnF2 (Y415F, P418S, I419V, L430F, Q435H), and treated with increasing concentrations of thalidomide. Following 24 h of incubation, hsSALL4, mmSALL4, humanized mmSALL4 (α-Flag), and GAPDH protein levels were assessed by western blot analysis. (H) TR-FRET: titration of thalidomide to DDB1∆B-CRBNSpy-BodipyFL at 200 nM, hsSALL4ZnF2, mmSALL4ZnF2, or drSALL4ZnF2 all at 100 nM, and terbium-streptavidin at 4 nM. Data are presented as means ± s.d. (n = 3). (I) As in (G), but with Flag-drSALL4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mES cells were treated with increasing doses up to 100 µM of thalidomide. Following 24 h incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (B) Kelly cells were transiently transfected with Flag-hsSALL4 and treated with increasing concentrations of thalidomide. Following 24 h of incubation, SALL4 and GAPDH protein levels were assessed by western blot analysis. (C) As in (B), but with Flag-mmSALL4. (D) Kelly cells were transiently transfected with Flag-mmSALL4 and treated with increasing doses of CC-885, with no transfection as a negative control. Following 24 h incubation, mmSALL4 (α-Flag) protein levels were assessed by western blot analysis. One representative is shown out of three replicates for each western blot. (E) Gene expression profiles for IMiD-dependent substrates were derived from the genotype-tissue expression (GTex) dataset and are presented as a heatmap.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38430/elife-38430-fig5-v2.jpg)
 
@@ -74,23 +277,439 @@ Thalidomide teratogenicity was a severe and widespread public health tragedy, af
 
 ## Materials and methods
 
-## Compounds, enzymes, and antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CRBN</td>
+      <td>Fischer et al. (2014)</td>
+      <td>Gene ID: 51185</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>CRBN</td>
+      <td>Dr. Ben Ebert (Brigham and Womens Hospital, Dana Farber Cancer Institute)</td>
+      <td>Gene ID: 58799</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>SALL4</td>
+      <td>IDT</td>
+      <td>Gene ID: 57167</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>DDB1∆B</td>
+      <td>Petzold et al. (2016)</td>
+      <td>Gene ID: 1642</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>SALL4</td>
+      <td>IDT</td>
+      <td>Gene ID: 99377</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>SALL4</td>
+      <td>IDT</td>
+      <td>Gene ID: 572527</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>H9 hES cells</td>
+      <td>Dr. Wade Harper (Harvard Medical School)</td>
+      <td>RRID:CVCL_9773</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Kelly Cells</td>
+      <td>Dr. Nathanael Gray (Dana Farber Cancer Institute, Harvard Medical School)</td>
+      <td>RRID:CVCL_2092</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SK-N-DZ cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_1701; CRL-2149</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MM1s cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_8792; CRL-2974</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>H661 cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_1577; HTB-183</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063; CRL-3216</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>TC1 mESC cells</td>
+      <td>Dr. Richard Gregory (Boston Childrens Hospital, Harvard Medical School)</td>
+      <td>RRID:CVCL_M350</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (T. ni)</td>
+      <td>High Five insect cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_C190; B85502</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thalidomide</td>
+      <td>MedChemExpress</td>
+      <td>HY-14658</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lenalidomide</td>
+      <td>MedChemExpress</td>
+      <td>HY-A0003</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pomalidomide</td>
+      <td>MedChemExpress</td>
+      <td>HY-10984</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CC-220</td>
+      <td>MedChemExpress</td>
+      <td>HY-101291</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CC-885</td>
+      <td>Cayman chemical</td>
+      <td>19966</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dBET57</td>
+      <td>Nowak et al. (2018)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bortezomib</td>
+      <td>MedChemExpress</td>
+      <td>HY-10227</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MLN4924</td>
+      <td>MedChemExpress</td>
+      <td>HY-70062</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MLN7243</td>
+      <td>Active Biochem</td>
+      <td>A1384</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDH-MSCV (PGK promoter plasmid)</td>
+      <td>Dr. Ben Ebert (Brigham and Womens Hospital, Dana Farber Cancer Institute)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNTM (CMV promoter plasmid)</td>
+      <td>Dr. Nicolas Thomä, FMI, Switzerland</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAC8 (Polyhedrin promoter plasmid)</td>
+      <td>Dr. Nicolas Thomä, FMI, Switzerland</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsHis6-3C-Spy-CRBN</td>
+      <td>Nowak et al. (2018)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsHis6-3C-Spy-CRBN_V388I</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsStrep-BirA-SALL4 (590–618)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsStrep-BirA-SALL4_Q595H (590-618)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsStrep-BirA-SALL4 (378–438)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>hsStrep-BirA-SALL4 (402–436)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mmStrep-BirA-SALL4 (593–627)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>drStrep-BirA-SALL4 (583–617)</td>
+      <td>This study</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SpyCatcher S50C</td>
+      <td>Nowak et al. (2018)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-hsDDB1(1–1140)-His-hsCUL4A (38-759)-His-mmRBX1(12–108) (CRL4-CRBN)</td>
+      <td>Fischer et al. (2011)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ubiquitin</td>
+      <td>Boston Biochem</td>
+      <td>U-100H</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-E1</td>
+      <td>Boston Biochem</td>
+      <td>E-304</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UBE2G1</td>
+      <td>Boston Biochem</td>
+      <td>E2-700</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UbcH5c</td>
+      <td>Boston Biochem</td>
+      <td>E2-627</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-SALL4</td>
+      <td>abcam</td>
+      <td>RRID:AB_2183366; ab57577</td>
+      <td colspan="2">WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SALL4 - chip grade</td>
+      <td>abcam</td>
+      <td>RRID:AB_777810; ab29112</td>
+      <td colspan="2">WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-DTWD1</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_2677903; HPA042214</td>
+      <td colspan="2">WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-FLAG M2</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_262044; F1804</td>
+      <td colspan="2">WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CRBN</td>
+      <td>Novus Biologicals</td>
+      <td>RRID:AB_11037820; NBP1-91810</td>
+      <td colspan="2">WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GZF1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2551727; PA534375</td>
+      <td colspan="2">WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GAPDH</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_1078991; G8795</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye680 Donkey anti-mouse IgG</td>
+      <td>LiCor</td>
+      <td>RRID:AB_10953628; 92668072</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye800 Goat anti-rabbit</td>
+      <td>LiCor</td>
+      <td>RRID:AB_621843; 92632211</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Strep-Tag II</td>
+      <td>abcam</td>
+      <td>RRID:AB_1524455; ab76949</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Strep-Tag II HRP conjugate</td>
+      <td>Millipore</td>
+      <td>RRID:AB_10806716; 71591</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG HRP conjugate</td>
+      <td>Cell Signalling</td>
+      <td>RRID:AB_330924; 7076</td>
+      <td colspan="2">WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Amersham ECL prime western blot reagent</td>
+      <td>GE healthcare</td>
+      <td>RPN2232</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BODIPY-FL-Maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>B10250</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tb streptavidin</td>
+      <td>Invitrogen</td>
+      <td>LSPV3966</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TMT 10-plex labels</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>90406</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
+### Compounds, enzymes, and antibodies
 
 Thalidomide (HY-14658, MedChemExpress), lenalidomide (HY-A0003, MedChemExpress), pomalidomide (HY-10984, MedChemExpress), CC-220 (HY-101291, MedChemExpress), CC-885 (19966, Cayman chemical), dBET57 (Nowak et al., 2018), bortezomib (HY-10227, MedChemExpress), MLN4924 (HY-70062, MedChemExpress), and MLN7243 (A1384, Active Biochem) were purchased from the indicated vendors and subjected to in-house LC-MS for quality control.
 
 HEK293T, SK-N-DZ, MM1s, and H661 were purchased from ATCC and cultured according to ATCC instructions. H9 hESC, mESC, and Kelly cells were kindly provided by the labs of J. Wade Harper (HMS), Richard I. Gregory (TCH/HMS), and Nathanael Gray (DFCI/HMS), respectively. Sequencing grade modified trypsin (V5111) was purchased from Promega (Promega, USA) and mass spectrometry grade lysyl endopeptidase from Wako (Wako Pure Chemicals, Japan). Primary and secondary antibodies used included anti-SALL4 at 1:250 dilution (ab57577, abcam – found reactive for human SALL4), anti-SALL4 chip grade at 1:250 dilution (ab29112, abcam – found reactive for mouse Sall4), anti-DTWD1 1:500 (HPA042214, Sigma), anti-Flag 1:1000 (F1804, Sigma), anti-CRBN 1:500 (NBP1-91810, Novus Biologicals), anti-GZF1 at 1:500 (PA534375, Thermo Fisher Scientific), anti-GAPDH at 1:10,000 dilution (G8795, Sigma), IRDye680 Donkey anti-mouse at 1:10,000 dilution (926–68072, LiCor), IRDye800 Goat anti-rabbit at 1:10,000 dilution (926–32211, LiCor) and rabbit anti-Strep-Tag II antibody at 1:10,000 (ab76949, Abcam), anti-mouse IgG HRP-linked Antibody at 1:10,000 dilution (7076, Cell Signaling), Amersham ECL Prime Western Blotting Detection Reagent (RPN2232, GE).
 
-## Cell culture
+### Cell culture
 
 HEK293T cells were cultured in DMEM supplemented with 10% dialyzed fetal bovine serum (FBS) and 2 mM L-glutamine. SK-N-DZ cells were cultured in DMEM supplemented with 10% dialyzed FBS, 0.1 mM non-essential amino acids (NEAA), and 2 mM L-glutamine. H661, MM1s, and Kelly cells were cultured in RPMI1640 supplemented with 10% dialyzed FBS. H9 hESC cells were cultured in Essential 8 (Gibco) media on Matrigel-coated nunc tissue culture plates. TC1 mouse embryonic stem cells (mESCs) were adapted to gelatin cultures and fed with KO-DMEM (Gibco) supplemented with 15% stem cell-qualified fetal bovine serum (FBS, Gemini), 2 mM L-glutamine (Gibco), 20 mM HEPES (Gibco), 1 mM sodium pyruvate (Gibco), 0.1 mM of each non-essential amino acids (Gibco), 0.1 mM 2-mercaptoethanol (Sigma), 104 U mL−1 penicillin/streptomycin (Gibco), and 103 U mL−1 mLIF (Gemini).
 
 Cell lines were acquired from sources provided in the key resource table. All cell lines are routinely authenticated using ATCC STR service, and are tested for mycoplasma contamination on a monthly basis. All cell lines used for experiments tested negative.
 
-## Western blot
+### Western blot
 
 Cells were treated with compounds as indicated and incubated for 24 h, or as indicated. Samples were run on 4−20%, AnyKD or 10% (in-vitro ubiqutination assay) SDS-PAGE gels (Bio-rad), and transferred to PVDF membranes using the iBlot 2.0 dry blotting system (Thermo Fisher Scientific). Membranes were blocked with LiCor blocking solution (LiCor), and incubated with primary antibodies overnight, followed by three washes in LiCor blocking solution and incubation with secondary antibodies for 1 h in the dark. After three final washes, the membranes were imaged on a LiCor fluorescent imaging station (LiCor). When Anti-mouse IgG, HRP Antibody was used, after three washes, the membranes were incubated with Amersham ECL Prime Western Blotting Detection Reagent for 1 min and subjected to imaging by Amersham Imager 600 (GE).
 
-## Q5 mutagenesis and transient transfection
+### Q5 mutagenesis and transient transfection
 
 hsCRBN, hsSALL4, mmSALL4, and drSALL4 were PCR amplified and cloned into a pNTM-Flag based vector. Mutagenesis was performed using the Q5 site-directed mutagenesis kit (NEB, USA) with primers designed using the BaseChanger web server (http://nebasechanger.neb.com/).
 
@@ -134,37 +753,37 @@ Rev 5’−3’: TGGTGGTGAAGCGGTGACCACAGAcAGaGCACACGaAAGGTCTCTCTCCGGTGTG
 
 For transient transfection, 0.2 million cells were seeded per well in a 12 well plate on day 1. On day 2, cells were transfected with 200–300 ng of plasmid (pNTM-Flag containing gene of interest) using 2 µL of lipofectamine 2000 transfection reagent (Invitrogen). On day 3, the desired concentration of IMiD was added to each well and cells were harvested after 24 h for western blot analysis using the protocol described above.
 
-## Constructs and protein purification
+### Constructs and protein purification
 
 His6DDB1∆B (Petzold et al., 2016), His6-3C-SpyhsCRBN, His6-3C-SpyhsCRBNV388I, Strep-BirAhsSALL4590-618 (ZnF4), Strep-BirAhsSALL4Q595H590-618 (ZnF4), Strep-BirAhsSALL4378-438 (ZnF1-2), Strep-BirAhsSALL4402-436 (ZnF2), Strep-BirAmmSALL4593-627 (ZnF4), Strep-BirAdrSALL4583-617 (ZnF2) were subcloned into pAC-derived vectors or BigBac vector for HishsDDB11-1140-HishsCUL4A38-759-HhismmRBX112-108 (CRL4CRBN). Mutant Strep-BirAhsSALL4378-438 (ZnF1-2) and Strep-BirAhsSALL4402-436 (ZnF2) constructs were derived from these constructs using Q5 mutagenesis (NEB, USA). Recombinant proteins expressed in Trichoplusia ni High Five insect cells (Thermo Fisher Scientific) using the baculovirus expression system (Invitrogen). For purification of DDB1∆B-CRBNSpyBodipyFL or CRL4CRBN, cells were resuspended in buffer containing 50 mM tris(hydroxymethyl)aminomethane hydrochloride (Tris-HCl) pH 8.0, 200 mM NaCl, 1 mM tris(2-carboxyethyl)phosphine (TCEP), 1 mM phenylmethylsulfonyl fluoride (PMSF), 1× protease inhibitor cocktail (Sigma) and lyzed by sonication. Cells expressing variations of Strep-BirASALL4 were lyzed in the presence of 50 mM Tris-HCl pH 8.0, 500 mM NaCl, 1 mM TCEP, 1 mM PMSF, and 1× protease inhibitor cocktail (Sigma). Following ultracentrifugation, the soluble fraction was passed over appropriate affinity resin Ni Sepharose 6 Fast Flow affinity resin (GE Healthcare) or Strep-Tactin Sepharose XT (IBA), and eluted with 50 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM TCEP, 100 mM imidazole (Fischer Chemical) for His6-tagged proteins or 50 mM Tris-HCl pH 8.0, 500 mM NaCl, 1 mM TCEP, 50 mM D-biotin (IBA) for Strep-tagged proteins. Affinity-purified proteins were either further purified via ion exchange chromatography (Poros 50HQ) and subjected to size exclusion chromatography (SEC200 HiLoad 16/60, GE) (His6DDB1∆B-His6-3C-SpyCRBN or CRL4CRBN) or biotinylated overnight, concentrated, and directly loaded on the size exclusion chromatography (ENRich SEC70 10/300, Bio-rad) in 50 mM HEPES pH 7.4, 200 mM NaCl, and 1 mM TCEP. Biotinylation of Strep-BirASALL4 constructs was performed as previously described (Cavadini et al., 2016).
 
 The protein-containing fractions were concentrated using ultrafiltration (Millipore), flash frozen in liquid nitrogen, and stored at −80°C or directly covalently labeled with BODIPY-FL-SpyCatcherS50C as described below.
 
-## Spycatcher S50C mutant
+### Spycatcher S50C mutant
 
 Spycatcher (Zakeri et al., 2012) containing a Ser50Cys mutation was obtained as a synthetic dsDNA fragment from IDT (Integrated DNA technologies) and subcloned as a GST-TEV fusion protein in a pET-Duet-derived vector. Spycatcher S50C was expressed in BL21 DE3 and cells were lyzed in the presence of 50 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM TCEP, and 1 mM PMSF. Following ultracentrifugation, the soluble fraction was passed over glutathione sepharose 4B (GE Healthcare) and eluted with wash buffer (50 mM Tris-HCl pH 8.0, 200 mM NaCl, 1 mM TCEP) supplemented with 10 mM glutathione (Fischer BioReagents). The affinity-purified protein was TEV cleaved, subjected to size exclusion chromatography, concentrated, and flash frozen in liquid nitrogen.
 
-## In vitro ubiquitination assays
+### In vitro ubiquitination assays
 
 In vitro ubiquitination was performed by mixing biotinylated SALL4 ZnF1-2 at 0.6 μM, and CRL4CRBN at 80 nM with a reaction mixture containing IMiDs at indicated concentrations or a DMSO control, E1 (UBA1, Boston Biochem) at 30 nM, E2 (UbcH5c, Boston Biochem and UBE2G1) at 1.0 μM each, ubiquitin (Ubiquitin, Boston Biochem) at 23 μM. Reactions were carried out in 50 mM Tris pH 7.5, 30 mM NaCl, 5 mM MgCl2, 0.2 mM CaCl2, 2.5 mM ATP, 1mM DTT, 0.1% Triton X-100 and 2.0 mg mL−1 BSA, incubated for 60 min at 30°C and analyzed by western blot using rabbit anti-Strep-Tag II antibody at 1:10,000 (ab76949, Abcam) as described above.
 
-## Lentiviral infection of mES cells
+### Lentiviral infection of mES cells
 
 TC1 mES cells were transduced with a pCDH-MSCV-based lentiviral vector expressing hsCRBN, GFP, and the puromycin resistance gene. Infection was performed after 24 h in culture in a six-well 0.2% gelatin-coated plate using standard infection protocol in the presence of 2 µg mL−1 polybrene (hexadimethrine bromide, Sigma). 72 h after transduction the cells were subjected to two rounds of puromycin selection (5 µg mL−1) to form mES cells stably expressing hsCRBN, which were confirmed to be >90% GFP-positive under fluorescent microscope.
 
-## Labeling of Spycatcher with Bodipy-FL-maleimide
+### Labeling of Spycatcher with Bodipy-FL-maleimide
 
 Purified SpycatcherS50C protein was incubated with DTT (8 mM) at 4°C for 1 h. DTT was removed using a ENRich SEC650 10/300 (Bio-rad) size exclusion column in a buffer containing 50 mM Tris pH 7.5 and 150 mM NaCl, 0.1mM TCEP. Bodipy-FL-maleimide (Thermo Fisher Scientific) was dissolved in 100% DMSO and mixed with SpycatcherS50C to achieve 2.5 molar excess of Bodipy-FL-maleimide. SpyCatcherS50C labeling was carried out at room temperature (RT) for 3 h and stored overnight at 4°C. Labeled SpycatcherS50C was purified on an ENRich SEC650 10/300 (Bio-rad) size exclusion column in 50 mM Tris pH 7.5, 150 mM NaCl, 0.25 mM TCEP, and 10% (v/v) glycerol, concentrated by ultrafiltration (Millipore), flash frozen (~40 µM) in liquid nitrogen, and stored at −80°C.
 
-## Bodipy-FL-Spycatcher labeling of CRBN-DDB1∆B
+### Bodipy-FL-Spycatcher labeling of CRBN-DDB1∆B
 
 Purified His6DDB1∆B-His6-3C-SpyCRBN constructs (WT and V388I) were incubated overnight at 4°C with Bodipy-FL-maleimide-labeled SpyCatcherS50C protein at stoichiometric ratio. The protein was concentrated and loaded on the ENrich SEC 650 10/300 (Bio-rad) size exclusion column, and the fluorescence was monitored with absorption at 280 and 490 nm. Protein peak corresponding to the labeled protein was pooled, concentrated by ultrafiltration (Millipore), flash frozen in liquid nitrogen, and stored at −80°C.
 
-## Time-resolved fluorescence resonance energy transfer (TR-FRET)
+### Time-resolved fluorescence resonance energy transfer (TR-FRET)
 
 Compounds in binding assays were dispensed into a 384-well microplate (Corning, 4514) using the D300e Digital Dispenser (HP) normalized to 1% DMSO and containing 100 nM biotinylated strep-avi-SALL4 (WT or mutant, see Figure legends), 1 µM His6-DDB1∆B-His6-CRBNBodipy-Spycatcher, and 4 nM terbium-coupled streptavidin (Invitrogen) in a buffer containing 50 mM Tris pH 7.5, 100 mM NaCl, 1mM TCEP, and 0.1% Pluronic F-68 solution (Sigma). Before TR-FRET measurements were conducted, the reactions were incubated for 15 min at RT. After excitation of terbium fluorescence at 337 nm, emission at 490 nm (terbium) and 520 nm (Bodipy) were recorded with a 70 µs delay over 600 µs to reduce background fluorescence, and the reaction was followed over 30× 200 s cycles of each data point using a PHERAstar FS microplate reader (BMG Labtech). The TR-FRET signal of each data point was extracted by calculating the 520/490 nm ratios. Data from three independent measurements (n=3), each calculated as an average of five technical replicates per well per experiment, was plotted and the half-maximal effective concentrations EC50 values calculated using variable slope equation in GraphPad Prism 7. Apparent affinities were determined by titrating Bodipy-FL-labelled DDB1∆B-CRBN to biotinylated strep-avi-SALL4 (constructs as indicated) at 100 nM, and terbium-streptavidin at 4 nM. The resulting data were fitted as described previously (Petzold et al., 2016).
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 H9 hES cells treated with 10 µM thalidomide or DMSO for 24 h were subjected to gene expression analysis. RNA was isolated using the RNeasy Plus mini kit (Qiagen) and cDNA created by reverse transcription using ProtoScript II reverse transcriptase (NEB) following the manufacturer’s instructions. The following primer sets from IDT were used with SYBR Green Master Mix (Applied Biosystems) to probe both GAPDH and total SALL4 levels:
 
@@ -178,7 +797,7 @@ GAPDH – R: GAAGATGGTGATGGGATTTC
 
 Analysis was performed on a CFX Connect Real-Time PCR System (Bio-Rad) in a white 96-well PCR plate. Relative expression levels were calculated using the ΔΔCT method.
 
-## Sample preparation TMT LC-MS3 mass spectrometry
+### Sample preparation TMT LC-MS3 mass spectrometry
 
 H9 hESC, Kelly, SK-N-DZ, and MM1s cells were treated with DMSO, 1 µM pomalidomide, 5 µM lenalidomid,e or 10 µM thalidomide in biological triplicates (DMSO) or biological duplicates (pomalidomide, lenalidomide, thalidomide) for 5 h, and cells were harvested by centrifugation. Lysis buffer (8 M urea, 50 mM NaCl, 50 mM 4-(2hydroxyethyl)-1-piperazineethanesulfonic acid (EPPS) pH 8.5, 1× Roche protease inhibitor, and 1× Roche PhosphoStop) was added to the cell pellets and cells were homogenized by 20 passes through a 21 gauge (1.25 in. long) needle to achieve a cell lysate with a protein concentration between 0.5 and 4 mg mL−1. The homogenized sample was clarified by centrifugation at 20,000 × g for 10 min at 4°C. A micro-BCA assay (Pierce) was used to determine the final protein concentration in the cell lysate. 200 µg protein for each sample were reduced and alkylated as previously described (An et al., 2017). Proteins were precipitated using methanol/chloroform. In brief, four volumes of methanol were added to the cell lysate, followed by one volume of chloroform, and finally three volumes of water. The mixture was vortexed and centrifuged at 14,000 × g for 5 min to separate the chloroform phase from the aqueous phase. The precipitated protein was washed with three volumes of methanol, centrifuged at 14,000 × g for 5 min, and the resulting washed precipitated protein was allowed to air dry. Precipitated protein was resuspended in 4 M urea, 50 mM HEPES pH 7.4, followed by dilution to 1 M urea with the addition of 200 mM EPPS pH 8 for digestion with LysC (1:50; enzyme:protein) for 12 h at room temperature. The LysC digestion was diluted to 0.5 M urea, 200 mM EPPS pH 8, and then digested with trypsin (1:50; enzyme:protein) for 6 h at 37°C. Tandem mass tag (TMT) reagents (Thermo Fisher Scientific) were dissolved in anhydrous acetonitrile (ACN) according to manufacturer’s instructions. Anhydrous ACN was added to each peptide sample to a final concentration of 30% v/v, and labeling was induced with the addition of TMT reagent to each sample at a ratio of 1:4 peptide:TMT label. The 10-plex labeling reactions were performed for 1.5 h at room temperature and the reaction quenched by the addition of 0.3% hydroxylamine for 15 min at room temperature. The sample channels were combined in a 1:1:1:1:1:1:1:1:1:1 ratio, desalted using C18 solid phase extraction cartridges (Waters) and analyzed by LC-MS for channel ratio comparison. Samples were then combined using the adjusted volumes determined in the channel ratio analysis and dried down in a speed vacuum. The combined sample was then resuspended in 1% formic acid, and acidified (pH 2−3) before being subjected to desalting with C18 SPE (Sep-Pak, Waters). Samples were then offline fractionated into 96 fractions by high pH reverse-phase HPLC (Agilent LC1260) through an aeris peptide xb-c18 column (phenomenex) with mobile phase A containing 5% acetonitrile and 10 mM NH4HCO3 in LC-MS grade H2O, and mobile phase B containing 90% acetonitrile and 10 mM NH4HCO3 in LC-MS grade H2O (both pH 8.0). The 96 resulting fractions were then pooled in a non-continuous manner into 24 fractions or 48 fractions and every fraction was used for subsequent mass spectrometry analysis.
 
@@ -186,11 +805,11 @@ Data were collected using an Orbitrap Fusion Lumos mass spectrometer (Thermo Fis
 
 Each analysis used an MS3-based TMT method as described previously (McAlister et al., 2014). The data were acquired using a mass range of m/z 350–1350, resolution 120,000, AGC target 1 × 106, maximum injection time 100 ms, dynamic exclusion of 90 s for the peptide measurements in the Orbitrap. Data-dependent MS2 spectra were acquired in the ion trap with a normalized collision energy (NCE) set at 35%, AGC target set to 1.8 × 104, and a maximum injection time of 120 ms. MS3 scans were acquired in the Orbitrap with a HCD collision energy set to 55%, AGC target set to 1.5 × 105, maximum injection time of 150 ms, resolution at 50,000, and with a maximum synchronous precursor selection (SPS) precursors set to 10.
 
-## LC-MS data analysis
+### LC-MS data analysis
 
 Proteome Discoverer 2.2 (Thermo Fisher) was used for RAW file processing and controlling peptide and protein level false discovery rates, assembling proteins from peptides, and protein quantification from peptides. MS/MS spectra were searched against a Uniprot human database (September 2016) with both the forward and reverse sequences. Database search criteria are as follows: tryptic with two missed cleavages, a precursor mass tolerance of 20 ppm, fragment ion mass tolerance of 0.6 Da, static alkylation of cysteine (57.02146 Da), static TMT labeling of lysine residues and N-termini of peptides (229.16293 Da), and variable oxidation of methionine (15.99491 Da). TMT reporter ion intensities were measured using a 0.003 Da window around the theoretical m/z for each reporter ion in the MS3 scan. Peptide spectral matches with poor-quality MS3 spectra were excluded from quantitation (summed signal-to-noise across 10 channels > 200 and precursor isolation specificity < 0.5). Reporter ion intensities were normalized and scaled using in-house scripts and the R framework (R Core Team, 2013). Statistical analysis was carried out using the limma package within the R framework (Ritchie et al., 2015).
 
-## CRISPR/Cas9-mediated genome editing
+### CRISPR/Cas9-mediated genome editing
 
 For the generation of HEK293T CRBN-/- and KellyCRBN-/- cells, HEK293T or Kelly cells were transfected with 4 µg of spCas9-sgRNA-mCherry using lipofectamine 2000. 48 h post transfection, pools of mCherry-expressing cells were obtained by fluorescence assisted cell sorting (FACS). Two independent pools were sorted to avoid clonal effects and artifacts specific to a single pool. For SALL4 antibody validation, HEK293T or Kelly cells were transfected with 4 µg of spCas9-sgRNA-mCherry using lipofectamine 2000. Protein levels were assessed by western blot 48 h post-transfection.
 

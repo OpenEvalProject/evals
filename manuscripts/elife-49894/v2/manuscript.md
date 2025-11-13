@@ -44,15 +44,39 @@ Here, an examination of each canonical and a subset of non-canonical HCMV protei
 
 ## Results
 
-## Construction of the HCMV-host interactome
+### Construction of the HCMV-host interactome
 
 To build a global picture of all HCMV virus-host and virus-virus protein interactions, 170 stable cell lines were generated from immortalised primary human fetal foreskin fibroblasts (HFFF-TERTs), each expressing a single, canonical HCMV ORF with a C-terminal V5 tag to facilitate immunoprecipitation (IP). Two non-canonical ORFs, ORFL147C and ORFS343C, were also included on the basis of either high or low expression respectively, relative to all other viral ORFs detected previously by proteomics (Figure 1 – Figure Supplement 1A, Supplementary file 1A) (Fielding et al., 2017; Weekes et al., 2014). Prior to profiling by IP-mass spectrometry (IP-MS), expression of each tagged viral ‘bait’ protein was validated by immunoblotting (IB), MS or RT-qPCR, apart from UL136 which could not be detected by any method (Figure 1 – Figure Supplement 1B, Supplementary file 1B). To examine the full range of virus-virus interactions in addition to virus-host interactions, IP was performed in cells infected with Merlin strain HCMV at multiplicity of infection (MOI) of 2 for 60 hr. Merlin contains a full length genome and expresses all HCMV genes apart from UL128 and RL13. All detectable viral proteins are expressed at 60 hr post-infection (PI) with this strain (Weekes et al., 2014) (Figure 1—figure supplement 1E). A schematic and details of the IP-MS strategy are shown in Figure 1.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig1-v2.jpg)
+
+**Figure 1.:** IP samples were generated and analysed in technical duplicate, using the method originally described in Huttlin et al. (2017); Huttlin et al. (2015) and discussed in detail in the Materials and methods section. For 153 baits with zero or one transmembrane (TM) region predicted by Uniprot, an NP40-based lysis buffer was used; for 18 baits with >1 TM region, a digitonin-based buffer was used, as this has previously been demonstrated to improve identifications of interacting proteins (‘prey’) (Babu et al., 2012) (Supplementary file 1B). Each dataset was scored separately using the CompPASS algorithm (Huttlin et al., 2015; Sowa et al., 2009) to better model detergent-specific variation in IP-MS background. Data reported for each prey protein in every IP include: (a) the number of peptide spectral matches (PSMs), averaged between technical replicates; (b) an entropy score, which compares the number of PSMs between replicates to eliminate proteins that are not detected consistently; (c) a z-score, calculated in comparison to the average and standard deviation of PSMs observed across all IPs; and (d) a normalised WD (NWD) score. The NWD score addresses whether (i) the protein is detected across all IPs, and (ii) whether it is detected reproducibly among replicates. It was calculated as described in Behrends et al. (2010) using the fraction of runs in which a protein was observed, the observed number of PSMs, the average and standard deviation of PSMs observed for that protein across all IPs, and the number of replicates (1 or 2) containing the protein of interest. NWD scores were normalised so that the top 2% earned scores of ≥1.0. Stringent filters were applied to remove inconsistent and low-confidence protein identifications across all IPs and thus minimise both false protein identifications and associations (Huttlin et al., 2015). These included: (a) a minimum PSM score of 1.5 (i.e. ≥3 peptides per protein across both replicates); (b) an entropy score of ≥0.75; and (c) an NWD or z-score in the top 2%. Previous studies have estimated a 5% false discovery rate when employing a similar strategy with a top NWD score cutoff of 2% (Sowa et al., 2009). Interactions passing these criteria are named ‘high confidence interacting proteins’ (HCIPs) (Supplementary file 2B), and were used in all subsequent analyses. For added stringency, the supervised learning algorithm CompPass Plus was employed. This additionally assessed batch variations, overall spectral counts, unique peptide counts and protein detection frequency. Shannon entropy quantified a protein’s consistency of detection across technical duplicate LC-MS analyses, removing inconsistent protein identifications (Huttlin et al., 2017). CompPass plus was developed for interactomes with ≥96 baits and in the present study was only applied to the 153 baits solubilized in NP40. Interactions that passed CompPass filters, had CompPass Plus p(Interactor)>0.75 and in which the prey was identified by ≥2 unique peptides were considered as very high confidence interacting proteins (VHCIPs). These are indicated in green shading in Supplementary file 2B. To facilitate global analysis of all data, and because digitonin-solubilised interactions were not analysed using CompPass plus, HCIPs as opposed to VHCIPs were examined for the remainder of this study. The identification of an interacting protein as a VHCIP nevertheless adds additional confidence that the interaction observed is likely to be genuine.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Abundance of 127 quantified canonical and non-canonical HCMV ORFs. The intensity-based absolute quantification (IBAQ) method was adapted for data from two whole cell analyses of HCMV infection at 24, 48 and 72 hr PI (Fielding et al., 2017; Weekes et al., 2014) as described in the Materials and methods section. Normalised average IBAQ values + /- range are plotted for proteins quantified in both analyses. Data is split across two graphs to improve legibility. For proteins only quantified in one of the two analyses, data are shown in Supplementary file 1A. ORFL147C was the most abundant non-canonical ORF, and ORFS343C.iORF1 (referred to in the manuscript as ORFS343C) was one of the least abundant non-canonical ORFs (shown in red). Both were included as baits in the interactome. (B) Proportion of baits whose expression was verified by IB, MS or RT-qPCR (see also Supplementary file 1B). Experiments were performed in advance of the interactome study, using uninfected lysates to validate bait expression. MS was used if the bait was not detected by IB, and RT-qPCR was used if the bait was not identified by MS. Expression of 78% of baits was further validated in the interactome itself, including 9/18 baits initially only observed by RT-qPCR. These nine baits were included in the ‘detected by MS’ category. For the nine baits whose expression was only ever observed by RT-qPCR, four were small proteins of 47–111 amino acids, with 1–4 theoretically observable peptides. None of these four proteins were previously detected in two systematic proteomic analyses of HCMV infection (Nightingale et al., 2018; Weekes et al., 2014). In the same studies, a further 4/9 viral proteins were only detected by a median of 0–2 peptides, and 2/4 had multiple transmembrane domains, suggesting that detection may have been limited by protein abundance or hydrophobicity. Nevertheless, known protein prey of these nine viral baits were detected in the interactome, for example the interaction between the small capsomere-interacting protein UL48A and major capsid protein UL86, and membrane protein US18 and natural killer cell cytotoxicity receptor 3 ligand 1 (NCR3LG1) (Supplementary file 3, (Fielding et al., 2017). Data for the nine baits that were only validated by RT-qPCR was therefore included in this interactome. Only expression of UL136 could not be validated by any method, despite the use of primers that recognized both a short and full-sized amplicon (Supplementary file 1E) and this bait was excluded from further analysis. (C) Correlation of the number of total, unique and bait peptides from each protein identified in replicates 1 and 2. ‘Unique peptides’ refers to peptides that exist only in one protein from the human or HCMV proteomes. ‘Bait peptides’ refer to peptides derived from the bait protein for each IP (i.e. from US1 in the US1 IP; from UL29 in the UL29 IP etc). All data for this figure are also shown in Figure 1—figure supplement 1—source data 1. (D) Reproducibility of interactome analyses. In this interactome, as previously described (Huttlin et al., 2015), biological replicates were pooled and samples analysed in technical duplicate to solve certain technical issues. Specifically, due to the potential for carry-over of peptides between adjacent injections of different IP samples (even with two washes between each sample), it was necessary to use consistency of detection of prey as a measure of confidence in bait-prey interaction. To electronically filter out carry-over contaminants, an entropy score (described in ‘Data analysis’ in Materials and methods) compared the number of peptide-spectrum matches (PSM) between replicate injections and eliminated prey that were not detected consistently. It was therefore important that replicate injection material was as similar as possible to ensure that this filter was efficacious (see also Materials and methods). The CompPass algorithm (Huttlin et al., 2015; Sowa et al., 2009) was developed based on this specific protocol. To gain a measure of variability between biological replicate samples, six IP-MS experiments were repeated with independent analysis of each biological replicate. In this figure, PSM are shown for HCIPs predicted by the interactome for each of the baits. For example, the interactome predicted four HCIPs for RL1: CUL4A, CUL4B, DDA1 and RL1 itself (Figure 2, Supplementary File 2B). All data for this figure are also shown in Figure 1—figure supplement 1—source data 2. (E) Viral proteins expressed at 60 hr PI. Profiles of typical viral proteins from each of five temporal classes Tp1-Tp5 are shown (adapted from Weekes et al., 2014). At 60 hr PI, peptides from 139/139 quantified canonical HCMV proteins and 14/14 quantified non-canonical ORFs were detected.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Number of HCIPs per bait excluding bait-bait interactions. Four graphs with different x-axis scales illustrate the range of interacting viral or cellular proteins per bait. Gridlines are displayed at each log interval. Full data is shown in Supplementary file 2A. (B) Validation of the interactome data from BioGRID, IntAct, Uniprot, MINT, and Virus Mentha (Calderone et al., 2015; Chatr-Aryamontri et al., 2013; Licata et al., 2012; Orchard et al., 2014). 167 virus-virus and virus-host interactions were identified from these databases. Of these, 127 were identified in unfiltered data from the HCMV interactome, and 59 passed the stringent scoring thresholds employed (see also Supplementary file 3). Full details of all HCIPs are given in Supplementary file 2.
+
 For HCMV UL120 and UL142, no interacting proteins passed the stringent filters employed. For seven further proteins, only the bait itself passed filtering, leaving 162 viral baits with ≥1 HCIP. In total, 3572 interactions were detected across all 162 baits, with a range of 1–174 interactions per bait, reflecting a scale-free degree distribution typical of protein interaction networks. The median number of interactions per bait was 9, similar to previously observed in the Bioplex 2.0 human interactome (Huttlin et al., 2015) (Materials and methods; Supplementary file 2A, Figure 1—figure supplement 2A). Data were validated from previously reported virus-virus and virus-host interactions described in BioGRID, IntAct, Uniprot, MINT and Virus Mentha (Figure 1—figure supplement 2B, Supplementary files 2–3) (Calderone et al., 2015; Chatr-Aryamontri et al., 2013; Licata et al., 2012; Orchard et al., 2014).
 
-## Systematic analysis of viral protein function
+### Systematic analysis of viral protein function
 
 Systematic analysis of protein interactions can improve understanding of viral protein function. To analyse the functions of all viral proteins simultaneously, DAVID software (Huang et al., 2009) was employed to determine which pathways were enriched amongst the 3416 human proteins that interacted with viral baits (Figure 2 centre, Figure 2—figure supplement 1, Supplementary file 4A-B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig2-v2.jpg)
+
+**Figure 2.:** DAVID software with default settings (Huang et al., 2009) was applied to determine which pathways were enriched amongst all HCIPs in the interactome, in comparison to all human proteins as background. Benjamini-Hochberg adjusted p-values are shown as blue surrounds to each pathway enriched at p<0.05. Viral baits are linked to enriched pathways where > 33% of human interacting proteins belonged to a given pathway, and examples are shown around the outside of the figure. These examples are indicated in the central part of the figure by purple shading. For example, 6/9 (67%) human HCIPs for UL43 were part of the 14-3-3 protein family. Viral baits are shown as large turquoise circles, and interacting viral proteins as smaller turquoise circles. Members of enriched pathways are shown in orange or yellow (for NuRD complex and histone deacetylation, protein membership of both pathways is indicated by half-orange, half-yellow circles). Solid lines indicate interactions identified by this interactome, and dashed lines indicated interactions derived from human Bioplex 2.0 and subsequent unpublished data (Huttlin et al., 2017 and http://bioplex.hms.harvard.edu/downloadInteractions.php). Full data are shown in Supplementary file 4. As an alternative approach to highlight cellular functions that predominantly related to individual viral proteins, Figure 2—figure supplement 1 shows pathways with p<0.05 (after Benjamini-Hochberg adjustment) and for which > 33% of the identified cellular protein members of the pathway interacted with a given viral bait.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** For example, all members of the thick filament/muscle myosin complex detected in this interactome interacted with US28 (100%). For the bottom three complexes (UL74, US27 and UL132), each viral bait interacted with a total of 52–107 proteins. For simplicity, only members of the illustrated pathway identified in this interactome are displayed. For example, 14 members of the SNARE complex were enriched in the interactome, of which nine interacted with US27 (64%). Green circles show members of a pathway that were detected in the interactome but did not interact with the bait. Other colouring is shown as described in the legend to Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Functional enrichment of host HCIPs for each temporal class of viral bait. DAVID software with default settings (Huang et al., 2009) was applied to determine which pathways were enriched amongst human HCIPs of each of the Tp1-Tp5 classes of bait, in comparison to all human HCIP as background. Benjamini-Hochberg adjusted p-values are shown on the x-axis. (B) Temporal analysis of viral-viral protein interactions. The contingency table shows 71 viral protein-protein interactions for which both bait and prey had a defined Tp class (from Weekes et al., 2014).
 
 Nucleosome remodeling (NuRD) complex components were significantly enriched among HCMV-interacting proteins. The NuRD complex plays major roles in cellular chromatin remodeling, and is known to be co-opted by HCMV UL29 and UL38 to enhance expression of immediate-early genes (Savaryn et al., 2013; Terhune et al., 2010). The interaction of UL29 and UL38 in a complex with all components of NuRD was confirmed, in addition to p53 (Savaryn et al., 2013). UL29 was also found to interact with multiple human proteins that function in histone deacetylation, which had not been observed previously (Figure 2).
 
@@ -72,11 +96,17 @@ In addition to characterising baits that interacted with multiple members of ind
 
 To gain further insights into temporal regulation of protein-protein interactions, we determined which functions were enriched amongst human HCIPs for each of the five temporal classes of HCMV bait (Weekes et al., 2014). A clear relation to functions required at different stages of the viral life-cycle was observed (Figure 2—figure supplement 2A, Supplementary file 4C). For example, Tp1 and Tp2 protein HCIPs were enriched in NuRD complex members, proteins involved in histone deacetylation and proteins with SANT domains (which function in chromatin remodelling). Tp3 HCIPs were enriched in functions required for viral genomic replication and immune evasion, whilst Tp5 HCIPs were directed at intracellular trafficking and secretion (Figure 2—figure supplement 2A). For viral-viral protein interactions, two patterns emerged – (a) interaction of viral proteins within the same temporal class, or between adjacent classes; (b) interaction of proteins from the largest class (Tp5) with members of each of the five classes (Figure 2—figure supplement 2B, Supplementary file 4D). For example, Tp1 and Tp2 class proteins UL29 and UL38 interacted, as previously reported (Supplementary file 3, Figure 2). Tp1-class tegument proteins US23 and US24 interacted. The majority of Tp5 interactions were with other Tp5 proteins, 15/37 of which were tegument-tegument, capsid-capsid or tegument-capsid protein interactions (Figure 2—figure supplement 2B). Certain interactions between proteins in different temporal classes have also been reported; for example, between the Tp5 DNA polymerase accessory protein UL44 and Tp2 DNA polymerase UL54. Clearly, other novel interactions also exist between quite distinctly expressed proteins, for example between the functionally unknown Tp2-class membrane protein UL14 and two Tp5-class proteins: membrane protein UL121 and envelope glycoprotein UL4.
 
-## Association between functional domains revealed by protein-protein interactions
+### Association between functional domains revealed by protein-protein interactions
 
 Certain domains perform related functions within diverse proteins, often via interactions with complementary structures. The function and interaction(s) of these domains can be predicted by analysing interactions between their parent proteins (Finn et al., 2014; Huttlin et al., 2015). Although domains that co-occur frequently do not necessarily interact directly, these associations can nevertheless provide insights into domain biology.
 
 By mapping Pfam domains to every bait and prey protein in the interactome, it was possible to identify domain pairs that interact with unusual frequency (Figure 4A) (Finn et al., 2014). This correctly predicted that HCMV glycoprotein UL141 interacts with TNFR cysteine-rich domains (TNFR c6), which has been demonstrated for TNFRSF10B and predicted for TNFRSF10A (Nemčovičová et al., 2013). UL141 also interacted with TNFRSF10D as reported (Smith et al., 2013) and was found to interact with TNFRSF1A, suggesting that these interactions may also occur via the TNFR c6 domain (Figure 4A, Supplementary file 5B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig4-v2.jpg)
+
+**Figure 4.:** (A) Table depicting significant associations between domains present in HCMV baits (top) and human or viral prey (side). Pfam domains were mapped onto every bait and prey protein in the interactome (Finn et al., 2014). The numbers of interactions emanating from proteins containing each domain were tallied individually, along with the numbers of interactions linking each observed domain pair. Contingency tables were then populated to relate domain associations. For each pair, Fisher’s exact test determined the likelihood of a non-random association. p values were adjusted for multiple hypothesis testing (Benjamini and Hochberg, 1995). Coloured boxes identify domain pairs that associate at a 1% false discovery rate (FDR). Red boxes indicate domain pairs from this analysis discussed in the text. Domain associations are only shown for domains occurring in at least two viral proteins. Supplementary file 5 shows the full underlying data. (B) All HCIPs for UL25 and a subset of HCIPs for UL26 (full data are shown in Figure 4—figure supplement 1). DAVID analysis identified that members of the C-terminal to LisH (CTLH) complex and COPII vesicle coat proteins were enriched among UL26 HCIPs (Figure 2—figure supplement 1). Domain association analysis suggested that interaction of UL26 with CTLH components may occur via interaction of the viral US22 domain with either cellular CLTH or LisH domains (Supplementary file 5). Dashed lines represent human-human interactions derived either from Bioplex 2.0 as described in Figure 2 or from curated or experimental data in the STRING database. CPSF - Cleavage and polyadenylation specificity factor. (C) Schematic of NCK1 and UL25 protein structures, indicating the position of point mutations or truncation for (D). (D) Co-IP demonstrating that the UL25 proline-rich C-terminal domain associates with the first NCK1 SH3 domain, conducted as described in Figure 3. HEK293T cells were transiently transfected with the indicated plasmids, one expressing the C-terminally V5-tagged viral protein and the other expressing C-terminally HA-tagged NCK1. These proteins were detected with anti-V5 and anti-HA. Mutations or truncations of each gene are indicated in the figure and in (C). GAPDH – loading control. This figure is representative of n = 3 experiments. Expected sizes: NCK1: 43 kDa; UL25: 74 kDa; UL26: 21 kDa; GAPDH: 36 kDa.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig4-figsupp1-v2.jpg)
 
 Domain analysis predicted that certain Herpes pp85 proteins interact with host SH3 domains. Underlying interactome data suggested that the viral tegument pp85 phosphoprotein UL25 interacted with SH3 domain-containing proteins NCK1 (Non-catalytic region of protein tyrosine kinase 1) and NCK2. Additionally, UL25 interacted with two other human proteins and the viral tegument protein UL26. UL26 had more diverse targets, including NCK2 but not NCK1 (Figure 4A–B, Supplementary file 2, Supplementary file 5).
 
@@ -84,19 +114,35 @@ SH3 domains are known to interact with proline-rich regions (Kurochkina and Guha
 
 NCK1 is a multifunctional cytoplasmic adaptor protein with known roles in signal transduction from receptor tyrosine kinases, cytoplasmic remodeling via regulation of actin polymerization, apoptosis and the DNA damage response (Buvall et al., 2013; Keyvani Chahi et al., 2016; Ngoenkam et al., 2014). Interaction of UL25 with NCK1 may thus fulfill a variety of functions. One possibility may include inhibition of immune synapse formation. HCMV UL135 is known to dispel association between F-actin filaments in target cells and the immune synapse (Stanton et al., 2014). UL25 might regulate actin polymerisation in a complementary manner in order to achieve a similar aim.
 
-## Viral proteins that degrade cellular prey
+### Viral proteins that degrade cellular prey
 
 We previously described a multiplexed approach for discovering proteins that have innate immune function on the basis of their active degradation by the proteasome or lysosome during the early phase of HCMV infection. Using three orthogonal proteomic/transcriptomic screens to quantify protein degradation, 133 proteins were shown to be degraded in the proteasome or lysosome during early phase infection, which were enriched in novel antiviral restriction factors (Nightingale et al., 2018). To facilitate the mapping of viral gene functions, a final screen employed a panel of HCMV mutants, each deleted in contiguous gene blocks dispensable for virus replication in vitro. However, this screen did not confidently identify the genetic loci that targeted 121/133 degraded proteins. Furthermore, even for 12/133 confidently identified loci, characterization of which individual viral genes degraded cellular targets often proved arduous. For example, to identify UL145 as the gene within the UL133-UL150 block that targeted HLTF to the proteasome, 19 single viral gene deletion mutants required testing (Nightingale et al., 2018).
 
 Interactome data revealed viral baits for 31/133 degraded prey (Supplementary file 6). The ubiquitin E3 ligase ITCH (Itchy E3 Ubiquitin Protein Ligase) is known to be targeted for degradation by viral UL42 (Koshizuka et al., 2016). In addition to ITCH, UL42 interacted with Neural Precursor Cell Expressed, Developmentally Down-Regulated 4 (NEDD4)- family E3 ligases NEDD4 and NEDD4-like (NEDD4L), which were degraded during early HCMV infection (Figure 5A–B) (Nightingale et al., 2018). These interactions were validated by co-IP using both C- and N-terminally V5 tagged UL42, and UL42 was shown to be sufficient for degradation of NEDD4 (Figure 5D–E, Figure 5—figure supplement 1). UL42 protein has not been detected in any of our previous proteomic studies (Fielding et al., 2017; Nightingale et al., 2018; Weekes et al., 2014), however UL42 transcript was quantified by Stern-Ginossar et al (Stern-Ginossar et al., 2012). Although expression of this transcript peaked at 72 hr of infection, it was nevertheless clearly detectable at early time points, suggesting that UL42 protein is likely to be expressed contemporaneously with degradation of NEDD4 and NEDD4L (Figure 5C). The route of degradation of each of the UL42 targets requires further characterisation. MG132 and leupeptin both inhibited degradation of each protein (Figure 5B), which may correspond to the known effects of MG132 on lysosomal cathepsins in addition to the proteasome (Wiertz et al., 1996), or effects of leupeptin on certain proteasomal proteases in addition to lysosomal proteases.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig5-v2.jpg)
+
+**Figure 5.:** US10 interacts with LRFN3, which is rapidly downregulated from the PM during HCMV infection. (A) High-confidence cellular interactors of UL42. 57% of UL42 interactors exhibited ubiquitin protein transferase activity (Figure 2, counting NEDD4 only once). UL42 interacted with NEDD4, NEDD4 isoform four and NEDD4L, in addition to HECT, C2 and WW Domain Containing E3 Ubiquitin Protein Ligases HECW1 and 2. NEDD4-4: isoform 4 of NEDD4. (B) ITCH, NEDD4 and NEDD4L are degraded during early HCMV infection (data from Nightingale et al., 2018). Protein degradation was measured using three orthogonal tandem mass tag (TMT)-based proteomic screens. The first measured protein abundance throughout early infection in the presence or absence of inhibitors of the proteasome or lysosome. The second compared transcript and protein abundance over time to distinguish between degraded and transcriptionally regulated proteins. The third employed an unbiased global pulse-chase to compare the rates of protein degradation during HCMV infection against mock infection (NEDD4 and NEDD4L were not quantified in this latter screen). Benjamini-Hochberg adjusted Significance A values were used to estimate p-values in the top panels; **p<0.005, ***p<0.0005. Mean and SEM are shown for transcript quantitation (n = 3) in the middle panels. A p-value for the difference between rates of degradation is shown in the bottom panel; ***p<0.0005. All calculations and statistics are described in Nightingale et al. (2018). (C) UL42 transcript is expressed contemporaneously with NEDD4 and NEDD4L degradation. Protein profiles from Figure 5B (red colour, Nightingale et al., 2018) are overlaid with a UL42 transcript profile (blue colour, Stern-Ginossar et al., 2012). UL42 transcript was not detected in our previous RNAseq analysis (Nightingale et al., 2018). (D) Validation of interaction between UL42 and NEDD4 (left panel) and NEDD4L (right panel) by co-IP, conducted as described in Figure 3. HEK293T cells were transiently transfected with the indicated plasmids, one expressing the C-terminally V5-tagged viral protein and the other expressing C-terminally HA-tagged NEDD4 or NEDD4L. These proteins were detected with anti-V5 and anti-HA. This figure is representative of n = 2 experiments (NEDD4); n = 1 experiment (NEDD4L). Expected sizes: NEDD4: 104–149 kDa; NEDD4L: 96–111 kDa; UL42: 14 kDa; UL34: 45 kDa; CANX: 72 kDa. (E) UL42 was sufficient to degrade NEDD4. HFFF-TERTs expressing UL42 or controls were lysed and immunoblotted as indicated. Anti-NEDD4 was used to detect endogenous NEDD4. This figure is representative of n = 1 experiment. Expected sizes: NEDD4: 104–149 kDa; UL42: 14 kDa; UL34: 45 kDa; CANX: 72 kDa. (F) LRFN3 was rapidly downregulated from the PM during HCMV infection, in the presence of upregulated transcript (mean and SEM are shown for transcript quantitation (n = 3); data are from Nightingale et al., 2018). (G) HCIPs of US10, including LRFN3. (H) Validation of the interaction between US10 and LRFN3 by co-IP, conducted as described in Figure 3. Prey were detected using anti-HA. This figure is representative of n = 2 experiments. Expected sizes: LRFN3: 66 kDa; US10: 21 kDa; UL34: 45 kDa; CANX: 72 kDa.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** HEK293T cells were transiently transfected with the indicated plasmids, one expressing N-terminally V5-tagged UL42 and the other expressing C-terminally HA-tagged NEDD4 or NEDD4L. These proteins were detected with anti-V5 and anti-HA. This figure is representative of n = 1 experiments. Expected sizes: NEDD4: 104–149 kDa; NEDD4L: 96–111 kDa; UL42: 14 kDa; CANX: 72 kDa.
+
 To test the sensitivity of the interactome for detecting interactions with weakly-expressed prey, cell surface adhesion molecule Leucine Rich Repeat And Fibronectin Type III Domain Containing 3 (LRFN3) was examined. This protein was previously quantified by a single peptide in samples enriched for plasma membrane (PM) proteins only (Nightingale et al., 2018; Weekes et al., 2014). LRFN3 was rapidly downregulated from the PM, accompanied by upregulation of transcript over the same period, suggesting either degradation or retention within the infected cell (Figure 5F). Only the ER-resident transmembrane glycoprotein US10 interacted with LRFN3, and this was validated by co-IP (Figure 5G–H). US10 may downregulate this cell surface molecule in a manner similar to the reported degradation of HLA-G (Park et al., 2010).
 
-## ORFL147C is a novel viral protein required for viral replication
+### ORFL147C is a novel viral protein required for viral replication
 
 It had hitherto been unclear whether any of the 604 HCMV ORFs identified by ribosome profiling (RP-ORFs) encoded functional polypeptides (Stern-Ginossar et al., 2012). The abundance of the two RP-ORFs examined in this interactome was in the same range as canonical HCMV proteins, with ORFL147C present at ~25 x lower copy number than the most abundant tegument protein UL83 and ~275 x higher copy number than the membrane protein US18. ORFS343C was ~3 x more abundant than US18 (Figure 1—figure supplement 1A). ORFL147C had 80 human HCIPs and ORFS343C 23 human HCIPs (Supplementary file 2).
 
 The coding sequence of ORFL147C is oriented parallel to the 5’ end of UL56 (Figure 6A), which is a canonical gene encoding a subunit of terminase. ORFL147C is expressed with Tp4 kinetics (Figure 6B). Enrichment analysis of ORFL147C HCIPs suggested functions in RNA binding, mRNA splicing or transcription (Figure 6C–D). We validated the interaction of ORFL147C with Muscleblind Like Splicing Regulator 1 (MBNL1) and CUG Triplet Repeat RNA-Binding Protein 1 (CELF1), two proteins with roles in mRNA splicing and RNA binding (Figure 6E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of the ORFL147C coding sequence and relation to neighbouring viral genes. (B) Expression kinetics of ORFL147C, taken from Weekes et al. (2014). Data was taken from experiments WCL2 and WCL3, enabling assessment of 24, 48, 72 and 96 hr time points in biological duplicate. Error bars show range. Mean expression was normalised to a maximum of 1. (C) Enrichment analysis of 80 human HCIPs interacting with ORFL147C. (i) DAVID analysis using all human proteins as background. Benjamini-Hochberg adjusted p-values are shown. (ii) Reactome database analysis (Fabregat et al., 2018) showing results with a minimum of 4 entities per enriched pathway. Full details of interacting proteins are given in Supplementary file 7A-B. (D) A subset of HCIPs for ORFL147C (full data are shown in Figure 6—figure supplement 1). Dashed lines represent human-human interactions derived from Bioplex 2.0 as described in Figure 2, in addition to known interactions that had been experimentally determined or derived from curated data as part of the STRING database. (E) Validation of interaction between ORFL147C and MBNL1 and CELF1 by co-IP, conducted as described in Figure 3. HEK293T cells were transiently transfected with the indicated plasmids, one expressing the C-terminally V5-tagged viral protein and the other expressing C-terminally HA-tagged MBNL1 or CELF1. These proteins were detected with anti-V5 and anti-HA. GAPDH – calnexin loading control. This figure is representative of n = 1 experiment. Expected sizes: MBNL1: 33–42 kDa; CELF1: 50–55 kDa; ORFL147C: 50 kDa; UL25: 74 kDa; GAPDH: 36 kDa. (F) Growth analysis of an ORFL147C-deficient recombinant. The ORFL147C and wild-type viruses were HCMV strain Merlin recombinants in which the enhanced GFP (eGFP) gene was cloned as a 3’-terminal fusion with immediate-early gene UL36, with a self-cleaving P2A peptide releasing the reporter following synthesis. Insertion of GFP does not impede UL36 function in such recombinants (Nightingale et al., 2018). Cells were infected at a MOI of 1, and supernatants harvested and titred every two days. Cells were infected in biological duplicates, and each supernatant was titred in technical duplicates. Mean values are shown, and error bars represent SD. p-values for a difference between wild-type and ORFL147C-deficient virus were estimated using a two-tailed Student’s t-test. ***p<0.001, ****p<0.0001. This figure is representative of n = 2 experiments. All data for this figure are also shown in Figure 6—source data 1. (G) ORFL147C protein is not expressed during infection with the ORFL147C-deficient recombinant (MOI = 2, 48 hr post infection). Viral protein expression was analysed using tandem mass tag-based proteomics as previously described (Nightingale et al., 2018). ORFL147C protein was measured at the same level as during mock infection in cells infected with the ORFL147C-deficient recombinant, attributable to noise. All data for this figure are also shown in Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49894/elife-49894-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Full interaction data for ORFL147C, annotated as described in Figure 4B. (B) Construction of a viral ORFL147C deletion mutant. The three most N-terminal methionines in ORF147C were mutated without affecting the amino acid sequences coded by UL56. The N-terminal protein sequences of ORFL147C and UL56 are shown, in addition to corresponding coding sequences in the region of the mutations.
 
 To test whether ORFL147C plays an important role in viral replication, possibly via a splicing or transcriptional mechanism, an HCMV recombinant was generated in which the three most N-terminal methionine residues in ORF147C were mutated without modifying the coding sequence of UL56. The growth of ΔORFL147C virus was significantly impaired, suggesting that ORFL147C plays an important functional role during viral infection (Figure 6F–G). The large HCIP network for ORFL147C suggests that various mechanisms underlying this observation need to be examined; it is as yet unclear whether splicing or transcriptional effects are important.
 
@@ -124,11 +170,448 @@ Only three drugs are currently available to treat HCMV infection, and all suffer
 
 ## Materials and methods
 
-## Cells and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (HCMV)</td>
+      <td>HCMV Merlin</td>
+      <td>Stanton et al., 2010</td>
+      <td>RCMV1111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HCMV)</td>
+      <td>HCMV Merlin UL36-GFP deltaORFL147C</td>
+      <td>This paper</td>
+      <td>RCMV2697</td>
+      <td>Available from Dr Michael Weekes’ lab, University of Cambridge</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HCMV)</td>
+      <td>HCMV Merlin UL36-GFP</td>
+      <td>Nightingale et al., 2018</td>
+      <td>RCMV2582</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli. (α-Select Silver Competent Cells)</td>
+      <td>Bioline</td>
+      <td>Cat#BIO-85026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HFFF immortalised with human telomerase (HFFF-TERT)</td>
+      <td>McSharry et al., 2001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human Embryonic Kidney 293 T cells</td>
+      <td>Menzies et al., 2018</td>
+      <td>ATCC Cat#CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 Agarose Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A7345; RRID:AB_10062721</td>
+      <td>(30 µl/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GAPDH</td>
+      <td>R and D Systems</td>
+      <td>Cat#MAB5718; RRID:AB_10892505</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Calnexin</td>
+      <td>LifeSpan Biosciences</td>
+      <td>Cat#LS-B6881; RRID:AB_11186721</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-HA (C29F4)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat#3724S; RRID:AB_1549585</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-V5</td>
+      <td>Thermo</td>
+      <td>Cat#R960-25; RRID:AB_2556564</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CNOT2</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NBP2-56034; RRID:AB_2801658</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-CNOT7</td>
+      <td>Abcam</td>
+      <td>Cat#ab195587; RRID:AB_2801659</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NEDD4</td>
+      <td>R and D Systems</td>
+      <td>Cat#MAB6218; RRID:AB_10920762</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD goat anti-mouse IgG</td>
+      <td>LI-COR</td>
+      <td>Cat#925–68070, RRID:AB_2651128</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-rabbit IgG</td>
+      <td>LI-COR</td>
+      <td>Cat#925–32211, RRID:AB_2651127</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD goat anti-rabbit IgG</td>
+      <td>LI-COR</td>
+      <td>Cat#926–68071; RRID:AB_10956166</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-mouse IgG</td>
+      <td>LI-COR</td>
+      <td>Cat#926–32210; RRID:AB_621842</td>
+      <td>(1:10.000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human TruStain FcX</td>
+      <td>BioLegend</td>
+      <td>Cat#422302; RRID:AB_2818986</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE-pSFFV</td>
+      <td>Nightingale et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR223</td>
+      <td>Nightingale et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR221-MBLN1</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00079833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR221-CUGBP1</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00039403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOTB7-CUL4A</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00325140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-SPORT6-NEDD4L</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00337956</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR223-NCK1</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00370605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR223-CNOT2</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00080019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE-CNOT7</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00453329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PHAGE-P-CMVt-N-HA Nedd4 wt</td>
+      <td>Addgene</td>
+      <td>Cat#24124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDONR221-LRFN3</td>
+      <td>Harvard PlasmID</td>
+      <td>Cat#HsCD00041564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M13-F</td>
+      <td>GENEWIZ</td>
+      <td>PCR primers</td>
+      <td>GTAAAACGACGGCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>M13-R</td>
+      <td>GENEWIZ</td>
+      <td>PCR primers</td>
+      <td>CAGGAAACAGCTATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pHAGE-pSFFV-Seq</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGCGCCAGTCCTCCGATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAW-CMVp-F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGACAAGTTTGTACAAAAAAGCAGCTGAAGACACCGGGACCGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>attB2-V5-R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGACCACTTTGTACAAGAAAGCTGGGTTTACGTAGAATCAAGACCTAGGAGC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>V5 Epitope Tag</td>
+      <td>Alpha Diagnostic International</td>
+      <td>Cat#SP-59199–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Trypsin</td>
+      <td>Promega</td>
+      <td>Cat#V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Micro BCA Protein Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#23235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Empore SPE Disks</td>
+      <td>Supelco</td>
+      <td>Cat#66883 U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GoScript Reverse Transcriptase kit</td>
+      <td>Promega</td>
+      <td>Cat#A5001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Power SYBR Green PCR Master Mix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway BP Clonase II Enzyme Mix</td>
+      <td>Invitrogen</td>
+      <td>Cat#56481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase Enzyme Mix</td>
+      <td>Invitrogen</td>
+      <td>Cat#56484</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D4902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-Dithiothreitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#43815–1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘MassPike’, a Sequest-based software pipeline for quantitative proteomics.</td>
+      <td>Professor Steven Gygi’s lab, Harvard Medical School, Boston, USA.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEQUEST</td>
+      <td>Eng et al., 1994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID software</td>
+      <td>https://david.ncifcrf.gov/</td>
+      <td>DAVID, RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Reactome software</td>
+      <td>https://reactome.org/</td>
+      <td>Reactome, RRID:SCR_003485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR</td>
+      <td>Ver. 5.2; Image Studio Lite, RRID:SCR_013715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>The Cytoscape Consortium</td>
+      <td>Ver 3.7.1; Cytoscape, RRID:SCR_003032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DNASTAR Lasergene - SeqBuilder</td>
+      <td>DNASTAR, Inc</td>
+      <td>Ver. 12; DNASTAR: Lasergene Core Suite, RRID:SCR_000291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>Ver. 10; FlowJo, RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CompPass</td>
+      <td>Sowa et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CompPass Plus</td>
+      <td>Huttlin et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orbitrap Fusion Mass Spectrometer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#IQLAAEGAAP FADBMBCX</td>
+      <td>Instrument</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orbitrap Fusion Lumos Mass Spectrometer</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#IQLAAEGAAP FADBMBHQ</td>
+      <td>Instrument</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Raw Mass Spectrometry Data Files</td>
+      <td>This paper</td>
+      <td>ProteomeXchange Consortium via the PRIDE partner repository with dataset identifier PXD014845.</td>
+      <td>Raw data</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and cell culture
 
 Human fetal foreskin fibroblast cells immortalised with human telomerase (HFFF-TERTs, male) and HEK293T cells (female) were grown in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with foetal bovine serum (FBS: 10% v/v), and 100 IU/ml penicillin/0.1 mg/ml streptomycin (DMEM/FBS/PS) at 37°C in 5% v/v CO2. HFFF-TERTs have been tested at regular intervals since isolation to confirm that human leukocyte antigen (HLA) and MHC Class I Polypeptide-Related Sequence A (MICA) genotypes, cell morphology and antibiotic resistance are unchanged. In addition, HCMV strain Merlin grows only in human fibroblast cells (dermal or foreskin in origin), further reducing the possibility that they have been contaminated with another cell type. HEK293T cells were obtained as a gift from Professor Paul Lehner and had been authenticated by Short Tandem Repeat profiling (Menzies et al., 2018). All cells were confirmed to be mycoplasma-negative (Lonza MycoAlert).
 
-## Viruses
+### Viruses
 
 The genome sequence of HCMV strain Merlin is designated the reference for HCMV by the National Center for Biotechnology Information, and was originally sequenced after three passages in human fibroblast cells (Dolan et al., 2004). A recombinant version (RCMV1111) of this strain was derived by transfection of a sequenced BAC clone (Stanton et al., 2010). RCMV1111 contains point mutations in two genes (RL13 and UL128) that enhance replication in fibroblasts (Stanton et al., 2010).
 
@@ -136,7 +619,7 @@ HCMV expressing rGFP from a P2A self-cleaving peptide at the 3’-end of the UL3
 
 Viral stocks were prepared from HFFF-TERTs as described previously (Stanton et al., 2007). When complete cytopathic effect was observed, cell culture supernatants were centrifuged to remove cell debris and then centrifuged at 22,000 × g for 2 hr to pellet cell-free virus. The virus was resuspended in fresh DMEM, and residual debris was removed by centrifugation at 16,000 x g for 1 min. In total, 17 stocks of RCMV1111 were required for this project. To ensure identical infection conditions between every batch of viral infections, each stock was divided into 25 aliquots. For each batch of infections, one aliquot of each stock was thawed, and then all 17 aliquots were combined and mixed prior to infection.
 
-## Plasmid construction
+### Plasmid construction
 
 For the majority of HCMV genes, a library of recombinant adenovirus vectors (RAds) was used to generate lentiviral constructs. Each template expresses a C-terminally V5-tagged gene under the control of the HCMV major immediate early promoter, with a 6 bp linker region between the end of the gene and the tag. Of 169 genes cloned into RAds, expression was confirmed for 160 by a combination of IB (152 genes) and immunofluorescence (155 genes). The codon usage of US14, US17 and UL74 was optimized for expression (Supplementary file 1D) (Seirafian, 2012). To amplify genes from the RAds, primers were designed to recognise the 3’ end of the HCMV promoter (forward ‘GAW-CMVp-F’) and the 3’ end of the V5 tag (reverse ‘attB2-V5-R’). Both primers had flanking Gateway attB sequences (Supplementary file 1E, Key Resources Table).
 
@@ -150,29 +633,29 @@ For HA-tagged human genes (Figures 3–6), primers were designed to recognise th
 
 PCR employed PfuUltra II Fusion HS DNA polymerase (Agilent). Constructs were subsequently cloned into the pDONR223 entry vector, then into the lentiviral destination vector pHAGE-pSFFV using the Gateway system (Thermo Scientific). pHAGE-pSFFV has a spleen focus-forming virus (SFFV) promoter replacing the HCMV promoter in pHAGE-pCMV to prevent promoter inactivation during HCMV infection (Nightingale et al., 2018). For UL48, which is 6.7 kbp long, it was not possible to express the whole construct via lentiviral transduction alone, probably due to inefficient transduction. UL48 contains a predicted α-helix from residues 540–1500, but no predicted secondary structure between residues 1501–1509. The gene was therefore divided into two segments, one of 4.5 kbp (1–1504 aa) terminating in a stop codon, and one of 2.2 kbp (1505–2241 aa), with an additional start codon. Both segments were stably expressed in different cell lines, and HCMV-infected cellular lysates were combined prior to IP. Full sequencing of all genes was conducted in the pDONR223 vector using standard primers and additional internal primers as required (Key Resources Table). All pHAGE-pSFFV vectors underwent sequencing of the first ~700 nucleotides from the 3’ end of the SFFV promoter to verify that the viral construct had recombined correctly.
 
-## Stable cell line production
+### Stable cell line production
 
 Lentiviral particles were generated through transfection of HEK293T cells with the lentiviral transfer vector and four helper plasmids (VSVG, TAT1B, MGPM2, CMV-Rev1B), using TransIT-293 transfection reagent (Mirus) according to the manufacturer's recommendations (Nightingale et al., 2018). Viral supernatant was harvested 48 hr post-transfection and cell debris was removed with a 0.22 μm filter. To facilitate stable, constitutive expression of the viral transgene, target cells were transduced for 48 hr and then subjected to antibiotic selection for two weeks.
 
-## Immunoblotting to confirm viral bait expression
+### Immunoblotting to confirm viral bait expression
 
 Lysates for each HFFF-TERT cell line expressing a viral bait were tested for transgene expression by IB for the V5 tag. Cells were lysed with RIPA buffer (Cell Signaling) containing Complete Protease Inhibitor Cocktail (Roche) and clarified by centrifugation at 16,000 x g for 10 min. Protein concentration was measured by BCA (Pierce) using the manufacturer’s protocol. Lysates were reduced with 6X Protein Loading Dye (375 mM Tris-HCl pH 6.8, 12% w/v sodium dodecyl sulphate (SDS), 30% v/v glycerol, 0.6 M dithiothreitol (DTT), 0.06% w/v bromophenol blue) for 5 min at 95°C. 20 μg of protein for each sample was separated by polyacrylamide gel electrophoresis (PAGE) using 4–15% TGX Precast Protein Gels (Bio-rad), then transferred to polyvinylidene difluoride (PVDF) membranes using Trans-Blot Systems (Bio-rad). The following primary antibodies were used: anti-V5 (MA5-15253, Thermo) and anti-Calnexin (CANX, LS-B6881, LifeSpan BioSciences). Secondary antibodies were IRDye 680RD goat anti-rabbit (926–68071, LI-COR) and IRDye 800CW goat anti-mouse (926–32210, LI-COR). Fluorescent signals were detected using a LI-COR Odyssey, and images were processed using Image Studio Lite (LI-COR).
 
 Where viral baits could not be detected by IB, IP-MS was used with uninfected cellular lysates as described below in ‘IP and protein digestion for proteomic experiments’. Where a bait could not be detected by IP-MS, RT-qPCR was used as described below.
 
-## RT-qPCR to confirm viral bait expression
+### RT-qPCR to confirm viral bait expression
 
 Total RNA from a subset of HFFF-TERT lines expressing viral transgenes was extracted using an RNeasy Mini Kit (Qiagen). cDNA was synthesized using GoScript Reverse Transcriptase (Promega), followed by RT-qPCR using Fast SYBR Green Master Mix (Applied Biosystems) and 7500 Fast and 7500 Real-Time PCR Systems (Applied Biosystems). Primers targeting HCMV genes or GAPDH (as an internal control) are shown in Supplementary file 1E. The PCR program started with activation at 95°C for 2 min, followed by 40 cycles of denaturation at 95°C for 5 s and annealing/extension at 60°C for 30 s. The amplification products were then separated by agarose gel electrophoresis, purified (QIAquick Gel Extraction, Qiagen) and sequenced to confirm viral bait expression. For UL146 and UL148D, this procedure failed to generate sequenceable amplicons, and UL136 failed to generate any PCR product despite the use of primers that recognized both a short and full-sized amplicon (Supplementary file 1E). For UL146 and UL148D, whole gene amplicons (189–363 bp) were generated by PCR with PfuUltra II Fusion HS DNA Polymerase (Agilent), according to the manufacturer’s recommendations. Sequencing of the amplified product confirmed expression of the correct gene in each case.
 
-## Virus infections for IP-MS proteomic experiments
+### Virus infections for IP-MS proteomic experiments
 
 Each batch of viral infections included eight cell lines stably expressing different viral baits in duplicate. For each cell line, 6 × 106 cells were plated in DMEM/FBS/PS in each of two 150 cm2 dishes. After 24 hr, the medium was changed to DMEM lacking FBS but with 4 μg/ml dexamethasone, as this approach has been shown to improve infection efficiency (Tanaka et al., 1984). After 24 hr, the medium was changed to DMEM containing the requisite volume of HCMV strain Merlin stock to achieve MOI 2. Cells were gently rocked for 2 hr, and then the medium was changed to DMEM/FBS/PS and cells were incubated for a further 58 hr.
 
-## IP and protein digestion for IP-MS proteomic experiments
+### IP and protein digestion for IP-MS proteomic experiments
 
 Cells were harvested in one of two lysis buffers in order to best solubilise each bait protein and preserve protein-protein interactions. For soluble and single-pass transmembrane (TM) baits, cells were lysed in 50 mM Tris-HCl pH 7.5, 300 mM NaCl, 0.5% v/v NP40, 1 mM DTT and Roche protease inhibitor cocktail. Baits with two or more TM domains were solubilized in 1% w/v digitonin (Merck Millipore) in TBS (Sigma) and Roche protease inhibitor cocktail. Transmembrane predictions were derived from Uniprot (www.uniprot.org) for canonical HCMV proteins, and generated using TMHMM for the two novel proteins (Krogh et al., 2001). Samples were tumbled for 15 min at 4°C and then centrifuged at 16,100 g for 15 min at 4°C. Lysates were then clarified by filtration through a 0.7 µm filter and incubated for 3 hr with immobilised mouse monoclonal anti-V5 agarose resin (Sigma). Duplicate samples were combined for resin washes. Samples lysed in NP40-containing buffer were washed seven times with lysis buffer, followed by seven PBS pH 7.4 washes. Samples lysed in digitonin-containing buffer were washed once with lysis buffer, twice with 0.2% (w/v) digitonin in TBS and then once with TBS. Subsequently, proteins bound to the anti-V5 resin were eluted twice by adding 200 µl of 250 μg/ml V5 peptide (Alpha Diagnostic International) in PBS at 37°C for 30 min with agitation. Finally, proteins were precipitated with 20% trichloroacetic acid (TCA), washed once with 10% TCA, washed three times with cold acetone and dried to completion using a centrifugal evaporator. Samples were resuspended in digestion buffer (50 mM Tris-HCl pH 8.5, 10% acetonitrile (AcN), 1 mM DTT, 10 ug/ml Trypsin) and incubated overnight at 37°C with agitation. The reaction was quenched with 50% formic acid (FA), subjected to C18 solid-phase extraction, and vacuum-centrifuged to complete dryness. Samples were reconstituted in 4% acetonitrile/5% formic acid and divided into technical duplicates prior to LC-MS/MS on an Orbitrap Lumos. To minimise variability in sample preparation, all samples were lysed with aliquots from the same batch of lysis buffer. Similarly, several batches of the anti-V5 agarose resin used for immunoprecipitation were pooled and this pool was used for all samples. In addition, all V5 peptide used for protein elution was derived from the same manufacturer’s batch, and all protein digests were performed with aliquots from the same stock of digestion buffer.
 
-## LC-MS/MS for IP-MS experiments
+### LC-MS/MS for IP-MS experiments
 
 Peptides for each sample were analysed in technical duplicate, with the run order reversed from one batch of replicate analyses to the next to ensure that any carry-over was different in each case. Two washes were used between each sample to further minimise carry-over (i.e. Run 1: Sample A, wash, wash, Sample B, wash, wash, Sample C…; Run 2: …Sample C, wash, wash, Sample B, wash, wash, Sample A). Individual batches included 16–22 samples. To ensure consistent performance by the mass spectrometer between batches, an identical aliquot of a control IP of uninfected cells stably expressing the viral UL123 gene with a C-terminal V5 tag was included with each batch. The number of peptides in total, from the bait and from known UL123 prey were very similar between batches.
 
@@ -184,7 +667,7 @@ Mass spectrometry data were acquired using an Orbitrap Fusion Lumos. An Ultimate
 
 Loading solvent was 0.1% v/v FA, and the analytical solvents were (A) 0.1% v/v FA and (B) 80% v/v AcN + 0.1% v/v FA. All separations were carried out at 55°C. Samples were loaded at 5 µl/min for 5 min in loading solvent before beginning the analytical gradient. The following gradient was used: 3–7% B over 3 min then 7–37% B over 54 min followed by a 4 min wash in 95% B and equilibration in 3% B for 15 min. The following settings were used: MS1, 350–1500 Thompsons (Th), 120,000 resolution, 2 × 105 automatic gain control (AGC) target, 50 ms maximum injection time. MS2, quadrupole isolation at an isolation width of m/z 0.7, higher-energy collisional dissociation (HCD) fragmentation (normalised collision energy (NCE) 34) with fragment ions scanning in the ion trap from m/z 120, 1 × 104 AGC target, 250 ms maximum injection time, with ions accumulated for all parallelisable times. The method excluded undetermined and very high charge states (≥25+). Dynamic exclusion was set to + /- 10 ppm for 25 s. MS2 fragmentation was trigged on precursors 5 × 103 counts and above. Two 45 min washes were included between every affinity purification-mass spectrometry (AP-MS) analysis, to minimise carry-over between samples. 1 µl transport solution (0.1% v/v trifluoroacetic acid) was injected, over the following gradient: 3–40% B over 29 min followed by a 3 min wash at 95% B and equilibration at 3% B for 10 min.
 
-## Confirmation of ORFL147C deletion in Δorfl147c recombinant virus
+### Confirmation of ORFL147C deletion in Δorfl147c recombinant virus
 
 For Figure 6G, HFFF-TERT cells were infected as otherwise described in ‘Virus infections for IP-MS proteomic experiments’ with the following modifications: 1.5 × 105 cells seeded per well of a 12-well plate for a total of 48 hr infection. A total infection duration of 48 hr was selected as ORFL147C expression peaks at this time (Figure 6B).
 
@@ -194,25 +677,25 @@ Desalted peptides were dissolved in 200 mM HEPES pH 8.5, and peptide concentrati
 
 Mass spectrometry data were acquired using an Orbitrap Lumos as previously described (Nightingale et al., 2018). An Ultimate 3000 RSLC nano UHPLC equipped with a 300 µm internal diameter (ID) x 5 mm Acclaim PepMap µ-Precolumn (Thermo Fisher Scientific) and a 75 µm ID x 50 cm 2.1 µm particle Acclaim PepMap RSLC analytical column was used. Loading solvent was 0.1% FA, analytical solvent A: 0.1% FA and B: 80% AcN + 0.1% FA. All separations were carried out at 55°C. Samples were loaded at 5 µL/minute for 5 min in loading solvent before beginning the analytical gradient. The following gradient was used: 3–7% B over 3 min, 7–37% B over 173 min, followed by a 4 min wash at 95% B and equilibration at 3% B for 15 min. Each analysis used a MultiNotch MS3-based TMT method (McAlister et al., 2014). The following settings were used: MS1: 380–1500 Th, 120,000 Resolution, 2 × 105 automatic gain control (AGC) target, 50 ms maximum injection time. MS2: Quadrupole isolation at an isolation width of m/z 0.7, collision-induced dissociation (CID) fragmentation (normalised collision energy (NCE) 35) with ion trap scanning in turbo mode from m/z 120, 1.5 × 104 AGC target, 120 ms maximum injection time. MS3: In Synchronous Precursor Selection mode the top 6 MS2 ions were selected for higher-energy collisional dissociation (HCD) fragmentation (NCE 65) and scanned in the Orbitrap at 60,000 resolution with an AGC target of 1 × 105 and a maximum accumulation time of 150 ms. Ions were not accumulated for all parallelisable time. The entire MS/MS/MS cycle had a target time of 3 s. Dynamic exclusion was set to + /- 10 ppm for 70 s. MS2 fragmentation was trigged on precursors 5 × 103 counts and above. Data analysis is discussed below.
 
-## Transient transfection
+### Transient transfection
 
 7.5 × 105 HEK293T cells were plated in each well of a 6-well dish 24 hr prior to transfection. A total of 2.5 µg plasmid DNA was transfected using TransIT-293 transfection reagent (Mirus) according to the manufacturer's recommendations. Cell lysates were harvested 48 hr post-transfection as detailed below.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 A method based on PCR overlap extension was used to generate point mutations in the coding sequence of NCK1. Primer sequences spanning the target region were generated incorporating the desired sequence changes in both forward and reverse orientations. These, along with primers that would anneal at the 5' and 3' ends of the full-length NCK1 coding sequence (NCK1F and NCK1R, respectively) were used to amplify two fragments of NCK1, each incorporating the point mutation. Fragments were purified and assembled into a full-length mutant NCK1 coding sequence by a second round of PCR using only NCK1F and NCK1R. The product was then purified and subcloned as described above. A truncation mutant of UL25 was generated by a single round of PCR using an appropriate internal primer.
 
-## Co-IP
+### Co-IP
 
 HEK293T cells were used in all experiments. Cells were harvested and lysed in MCLB (50 mM Tris-HCl pH 7.5, 300 mM NaCl, 0.5% v/v NP40, 1 mM DTT and Roche protease inhibitor cocktail). Samples were tumbled for 15 min at 4°C and then centrifuged at 16,100 g for 15 min at 4°C. Lysates were then clarified by filtration through a 0.7 µm filter and incubated for 3 hr with immobilised mouse monoclonal anti-V5 agarose resin. Samples were washed three times with lysis buffer, followed by two PBS pH 7.4 washes. Subsequently, proteins bound to the anti-V5 resin were eluted once by adding 40 µl of 2.5 mg/ml V5 peptide (Alpha Diagnostic International) in PBS at 37°C for 30 min with agitation. Lysates were reduced with 6X Protein Loading Dye (375 mM Tris-HCl pH 6.8, 12% w/v SDS, 30% v/v glycerol, 0.6 M DTT, 0.06% w/v bromophenol blue) for 5 min at 95°C. 50 μg of protein for each sample was separated by PAGE using 4–15% TGX Precast Protein Gels (Bio-rad), and then transferred to PVDF membranes using Trans-Blot Systems (Bio-rad). The following primary antibodies were used: anti-Calnexin (CANX, LS-B6881, LifeSpan BioSciences), anti-GAPDH (MAB5718, R and D Systems), anti-V5 (MA5-15253, Thermo), anti-HA (C29F4, Cell Signaling), anti-CNOT2 (NBP2-56034, Novus), anti-CNOT7 (ab195587, Abcam), anti-NEDD4 (MAB6218, R and D Systems). Secondary antibodies were IRDye 680RD goat anti-mouse (925–68070, LI-COR), IRDye 680RD goat anti-rabbit (926–68071, LI-COR), IRDye 800CW goat anti-mouse (926–32210, LI-COR) and IRDye 800CW goat anti-rabbit (925–32211, LI-COR). Fluorescent signals were detected using a LI-COR Odyssey, and images were processed using Image Studio Lite (LI-COR).
 
-## Viral growth curve analysis
+### Viral growth curve analysis
 
 For each virus stock, 1 × 106 HFFF TERTs were seeded in duplicate T25 flasks in DMEM/FBS/PS. After 24 hr, the medium was changed to 1 ml DMEM containing the requisite volume of HCMV strain Merlin stock to achieve MOI 1, and the cells were rocked gently. After adsorption for 2 hr at 37°C, unbound virus was removed by washing with DMEM. Cells were then overlaid with 5 ml DMEM/FBS/PS. Every 48 hr, all medium was removed and replaced. 1 ml aliquots of removed media were retained for titration in fibroblasts. Cells in these aliquots that had detached from the monolayer were pelleted by centrifugation at 400 x g for 10 min at 18°C and discarded. Prior to titration, all supernatants were stored at −70°C.
 
 Titrations of cell-free virus were performed simultaneously in fibroblasts by flow cytometry, using UL36-GFP expression as a marker to calculate the percentage of infection at 24 hr PI.
 
-## Data analysis
+### Data analysis
 
 In the following description, the first report in the literature for each relevant algorithm is listed. Mass spectra were processed using MassPike, which is a Sequest-based software pipeline for quantitative proteomics, through a collaborative arrangement with Professor Steven Gygi’s laboratory at Harvard Medical School. MS spectra were converted to mzXML using an extractor built upon Thermo Fisher’s RAW File Reader library (version 4.0.26). This software is a component of the MassPike software platform and is licensed by Harvard Medical School.
 
@@ -224,7 +707,7 @@ For MS3-based TMT, as previously described (Nightingale et al., 2018), TMT tags 
 
 For protein quantitation, reverse and contaminant proteins were removed, then each reporter ion channel was summed across all quantified proteins and normalised assuming equal protein loading across all channels. For further analysis and display in Figure 6G, fractional TMT signals were used (i.e. reporting the fraction of maximal signal observed for each protein in each TMT channel, rather than the absolute normalised signal intensity). This effectively corrected for differences in the numbers of peptides observed per protein.
 
-## Interactor identification with CompPASS
+### Interactor identification with CompPASS
 
 To identify HCIPs for each bait, replicate pairs were combined to attain a summary of proteins identified in both runs. Peptides within replicates were reassembled into proteins following the principles of parsimony (Huttlin et al., 2010). Where all PSMs from a given HCMV protein could be explained either by a canonical gene or a non-canonical ORF, the canonical gene was picked in preference. In four cases (UL24/ORFL71C_(UL24), UL31/ORFL87W_(UL31), UL150A/ORFL321W, UL44/ORFL112C_(UL44)), PSMs assigned to a non-canonical ORF were a mixture of peptides from the canonical protein and the ORF. This occurred where the ORF was a 5’-terminal extension of the canonical protein (thus meaning that the smallest set of proteins necessary to account for all observed peptides included the ORFs alone). In these cases, the peptides corresponding to the canonical protein were separated from those unique to the ORF, generating two separate entries.
 
@@ -236,7 +719,7 @@ Following CompPASS analysis, a series of filters were applied to remove inconsis
 
 For added stringency with baits solubilised in NP40, the supervised learning algorithm CompPass Plus was employed. This identifies HCIPs whilst minimising both false positive protein IDs and background proteins as described previously (Huttlin et al., 2017). The CompPass Plus model was trained using known HCMV protein interactions drawn from BioGRID, IntAct, Uniprot, MINT, and Virus Mentha; incorrect protein IDs were modeled using the target-decoy method. Results reported from this algorithm include p(Interactor), the probability that a given prey is a specific interactor. We considered interactions that passed CompPass filters, had p(Interactor) values of >0.75 from CompPass Plus and in which the prey was identified by at least two unique peptides as a VHCIP. These are also indicated in Supplementary file 2B. Cytoscape ver 3.7.1 was employed to display protein-protein interactions (Shannon et al., 2003).
 
-## IBAQ analysis
+### IBAQ analysis
 
 The IBAQ method was adapted from the original description (Schwanhäusser et al., 2011) for two independent whole cell analyses of wild-type (WT) HCMV strain Merlin infection at 24, 48 and 72 hr PI. These included: (a) WCL3 from Weekes et al. (2014) (conditions examined were 0, 24, 48, 72, 96 hr PI with WT Merlin with or without the viral DNA synthesis inhibitor phosphonoformate); (b) proteomic series three from Fielding et al. (2017) (0, 24, 48, 72 hr PI with WT Merlin with or without the lysosomal inhibitor leupeptin, or with an HCMV recombinant having a block deletion in the US12-US21 region). The maximum MS1 precursor intensity for each quantified peptide was determined for each experiment, and a summed MS1 precursor intensity for each protein across all matching peptides was calculated. To determine the proportion of the summed intensity that arose at 24, 48 and 72 hr PI, the summed intensity was adjusted in proportion to normalised TMT values: (24 hr + 48 hr + 72 hr PI) / ∑(all quantified times or conditions). Adjusted intensities were divided by the number of theoretical tryptic peptides from each protein between 7 and 30 amino acid residues in length to give an estimated IBAQ value. The same calculation was used to estimate IBAQ abundances for viral proteins (Supplementary file 1A, columns C-E) and human proteins (Supplementary file 1C columns E-G). Viral and human IBAQ values in these columns can be directly compared to examine the relative abundances of HCMV and host proteins.
 
@@ -244,15 +727,15 @@ Where PSMs had been assigned to a non-canonical viral ORF but were redundant to 
 
 Values were separately normalised for HCMV and human proteins by the sum of all IBAQ values within each experiment, and average and range of the normalised values calculated and plotted (Figure 1—figure supplement 1A, Supplementary file 1A columns F-I, Supplementary file 1C columns H-K).
 
-## Interaction database comparisons
+### Interaction database comparisons
 
 For purposes of comparison, lists of physical interactions between viral proteins and human proteins were downloaded in October 2018 from: BioGRID (Chatr-Aryamontri et al., 2013), IntAct (Orchard et al., 2014), Uniprot (www.uniprot.org), MINT (Licata et al., 2012), and Virus Mentha (Calderone et al., 2015).
 
-## Domain association analysis
+### Domain association analysis
 
 Domain enrichments were calculated by mapping Pfam domains drawn from Uniprot onto human and HCMV amino acid sequences. The total number of interactions that included each domain, and the number of interactions involving pairs of domains whose parent proteins associate, were counted. The significance of the association among co-occurring domains was calculated using Fisher’s Exact Test as described previously (Huttlin et al., 2015). p-values were corrected for multiple hypothesis testing (Benjamini and Hochberg, 1995). Domains were considered significantly associated if their adjusted p-value was <0.01. Overall 96 domains have been identified in HCMV proteins by Pfam, but only 10 domains were identified in two or more baits. Only this subset was examined in Figure 4A and Supplementary file 5 to increase confidence in domain association predictions.
 
-## Statistical analysis
+### Statistical analysis
 
 Figure 2, Figure 2—figure supplement 1 Benjamini-Hochberg adjusted p-values for enrichment are shown as blue surrounds to each pathway where p<0.05. More significantly enriched pathways are shown in darker blue as detailed in the figures.
 
@@ -266,12 +749,12 @@ Figure 7 Benjamini-Hochberg adjusted p-values are shown for each enriched pathwa
 
 Figure 1—figure supplement 1 Average IBAQ values + /- range are plotted for proteins quantified in both analyses (n = 2).
 
-## Pathway analysis
+### Pathway analysis
 
 The Database for Annotation, Visualisation and Integrated Discovery (DAVID) version 6.8 was used to determine pathway enrichment for Figure 2 and Figure 2—figure supplements 1 and 2A (Huang et al., 2009), in which all human HCIPs for all viral baits were searched against a background of all human proteins, using default settings. For Figure 6C and Figure 4—figure supplement 1, DAVID and Reactome software (Fabregat et al., 2018) were used to analyse 80 human HCIPs interacting with ORFL147C compared to all human proteins as background.
 
 To identify type I interferon-stimulated genes (ISG) for Figure 3D, gene symbols were searched in ‘Interferome 2.0’ (http://interferome.org/interferome/home.jspx) (Rusinova et al., 2013). A gene was considered to be an ISG if it was upregulated at least 2-fold by type I interferon in at least two independent experiments in human cells.
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (http://www.proteomexchange.org/) via the PRIDE (Vizcaíno et al., 2016) partner repository with the dataset identifier PXD014845.

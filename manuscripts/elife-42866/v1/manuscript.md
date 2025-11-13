@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.42866.001 Microbes are nature’s chemists, capable of producing and metabolizing a diverse array of compounds. In the human gut, microbial biochemistry can be beneficial, for example vitamin production and complex carbohydrate breakdown; or detrimental, such as the reactivation of an inactive drug metabolite leading to patient toxicity. Identifying clinically relevant microbiome metabolism requires linking microbial biochemistry and ecology with patient outcomes. Here we present MicrobeFDT, a resource which clusters chemically similar drug and food compounds and links these compounds to microbial enzymes and known toxicities. We demonstrate that compound structural similarity can serve as a proxy for toxicity, enzyme sharing, and coarse-grained functional similarity. MicrobeFDT allows users to flexibly interrogate microbial metabolism, compounds of interest, and toxicity profiles to generate novel hypotheses of microbe-diet-drug-phenotype interactions that influence patient outcomes. We validate one such hypothesis experimentally, using MicrobeFDT to reveal unrecognized gut microbiome metabolism of the ovarian cancer drug altretamine.
+Microbes are nature’s chemists, capable of producing and metabolizing a diverse array of compounds. In the human gut, microbial biochemistry can be beneficial, for example vitamin production and complex carbohydrate breakdown; or detrimental, such as the reactivation of an inactive drug metabolite leading to patient toxicity. Identifying clinically relevant microbiome metabolism requires linking microbial biochemistry and ecology with patient outcomes. Here we present MicrobeFDT, a resource which clusters chemically similar drug and food compounds and links these compounds to microbial enzymes and known toxicities. We demonstrate that compound structural similarity can serve as a proxy for toxicity, enzyme sharing, and coarse-grained functional similarity. MicrobeFDT allows users to flexibly interrogate microbial metabolism, compounds of interest, and toxicity profiles to generate novel hypotheses of microbe-diet-drug-phenotype interactions that influence patient outcomes. We validate one such hypothesis experimentally, using MicrobeFDT to reveal unrecognized gut microbiome metabolism of the ovarian cancer drug altretamine.
 
 ## Introduction
 
@@ -35,7 +35,7 @@ Here, we develop MicrobeFDT, a resource encompassing this 3-step framework that 
 
 ## Results
 
-## Structural similarity as a metric to organize enzyme/taxonomy/toxicity links between compounds
+### Structural similarity as a metric to organize enzyme/taxonomy/toxicity links between compounds
 
 The foundation of the MicrobeFDT resource is a chemical similarity network linking 10,822 food, drug, and endogenous compounds with PubChem compound identifier (CIDs) (Kim et al., 2016). In the network, nodes designate compounds and edges are weighted by pairwise chemical substructure similarity quantified by comparing PubChem fingerprints (Kim et al., 2016) using the Tanimoto score (Bajusz et al., 2015) (Figure 1). The Tanimoto score prioritizes overlap between compounds that share substructures over compounds with shared co-absences (Bajusz et al., 2015). We hypothesized that compounds with overlapping substructure and physiochemical properties, in which one compound is a known substrate of an enzyme, will be more likely to serve as substrates for the same enzyme. Recent in silico approaches to predict enzymatic reactions of drugs in the context of human enzyme catalyzed reactions also employ this hypothesis (Niu et al., 2013; Yu et al., 2018). Substructure-based clustering thus serves as a first step towards synthesizing publicly available information on gut compound chemical diversity and gut microbiome biochemistry.
 
@@ -67,11 +67,17 @@ Finally, we evaluated how well our compound clustering recapitulates structure-b
 
 **Figure 5.:** Ratio of compound-pairs substructure similarity with matched and unmatched superclass annotation for all compound pairs represented in MicrobeFDT. Within the hierarchical ClassyFire classification schema, the superclass level annotation represents the second level and includes 31 different structure-based categories (Djoumbou Feunang et al., 2016).
 
-## Overlapping structural diversity of food, drug, and endogenous compounds
+### Overlapping structural diversity of food, drug, and endogenous compounds
 
 In the network, therapeutic drug structural diversity is embedded within food-derived chemical diversity. For example, drugs share structural similarity with food-derived compounds from a diverse range of classes including benzenoids, lipids, nucleosides and phenylpropanoids (Figure 6). Food derived compounds also contributed significantly greater molecular structure diversity (Figure 6—figure supplement 1) and higher self-similarity than therapeutic drug compounds (two-sample K-S test 0.49, p value=4.7395e-06).
 
-## Assessing the distribution of enzymatic functions across taxonomic groups
+![Figure 6.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig6-v1.jpg)
+
+**Figure 6.:** (a) Chemical similarity network of food-derived or endogenous compounds (gray circles, "Other") and therapeutic drugs (black diamonds, "Drug"). Tan edges are weighted by substructure similarity where thicker edges indicate higher substructure similarity. The distribution of compounds in chemical similarity space illuminates regions of low and high chemical substructure overlap between drugs and other compounds. (b) Compounds from selected regions of the network are colored by their superclass level taxonomy based on the FooDB chemical structure classification (Wishart, 2012). Food-derived or endogenously produced compounds are identified with blue circles, therapeutic drugs with red diamonds. Within high-drug density, highlighted regions 1 and 2, drugs share substructure similarity with food-derived benzenoids, lipids, phenylpropanoids and polyketides. In the low-drug density highlighted region 3, drugs overlap with organonitrogen compounds and nucleosides. Region 4 includes organonitrogen compounds and nucleosides in addition to lipid-like molecules which have minimal overlap with therapeutic drugs.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig6-figsupp1-v1.jpg)
+
+### Assessing the distribution of enzymatic functions across taxonomic groups
 
 Metabolic functions are not necessarily equally distributed across microbes in the microbiome. For example, as described above, inactivation of digoxin, a cardiac glycoside inhibitor, is linked to cgr operon expression levels in a single species, E. lenta (Haiser et al., 2013; Koppel et al., 2018). In contrast, the deconjugation and resulting reactivation of SN-38, the active metabolite of the chemotherapeutic colorectal cancer drug irinotecan, is linked to a phylogenetically diverse guild of microbial β-glucuronidase carrying microbes (Guthrie et al., 2017; Pollet et al., 2017; Wallace et al., 2015).
 
@@ -85,19 +91,43 @@ To validate ECsD scores we first identified biochemical pathways containing enzy
 
 **Figure 7.:** The Simpson index was adapted to describe enzyme-specific taxonomic dominance and diversity based on enzyme abundance in taxonomy-linked gene counts across healthy individuals in the Integrative Human Microbiome Project (Proctor et al., 2014). We define a microbial enzyme as high dominance and low taxonomic diversity if its Simpson index value falls below 0.46 (red dotted line), the mean value across all enzymes. Dominance-diversity values for gut microbiota functions that fall above or below the mean are highlighted by gray dashed lines and include the following enzymes and pathways: phosphatidate phosphatase (0.007353), cobalt-precorrin-2 C(20)-methyltransferase (0.305502) from the Vitamin B12 synthesis pathway, β-glucuronidase (0.691618), Acetyl-CoA synthase (0.718163) which is involved in the production of propionate from complex carbohydrates, riboflavin synthase (0.794781) from the riboflavin synthesis pathway and acetate kinase (0.931892) which is involved in acetate production. The shaded regions indicate the range of EDsD values that are one standard deviation above and below the mean and reflect the most broadly distributed functions and most specialized functions.
 
-## Combining chemical and toxicity similarity to predict microbial N-demethylase contribution to drug metabolism and toxicity
+### Combining chemical and toxicity similarity to predict microbial N-demethylase contribution to drug metabolism and toxicity
 
 To provide a practical example of using multiple features of MicrobeFDT to identify uninvestigated microbiota-driven drug toxicity, we searched the network for compounds with high structural and toxicity similarity. Among these compounds were the ovarian cancer drug altretamine (Lee and Faulds, 1995) and the environmental contaminant melamine (Figure 8). Both melamine and altretamine have toxicity profiles that include diarrhea and renal toxicity (Rose et al., 1996; Zheng et al., 2013). Melamine, an industrial compound, has experimentally validated microbiome-mediated toxicity (Zheng et al., 2013). Altretamine toxicity, however, has not previously been linked to an individual’s gut microbiota. Approximately half of patients taking altretamine orally experience various forms of gastrointestinal toxicity including diarrhea, nausea and/or vomiting (Keldsen et al., 2003).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig8-v1.jpg)
+
+**Figure 8.:** (a) Substructure overlap between altretamine and its nearest neighbors in MicrobeFDT. A Z-score based threshold of significant overlap indicates that altretamine has both high substructure and (b) toxicity overlap with melamine. (c) The two compounds are distinguishable by the presence of N-methyl groups.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Phylogenetic distribution and abundance of N-demethylase enzymes in healthy individuals from the HMP (Human et al., 2012). Phylum-level taxonomy is indicated by branch color. Colored bars specify the type of N-demethylase based on protein sequence similarity between represented proteins and purified and structurally characterized N-demethylases. The adjoining bar plot displays the relative abundance of N-demethylase sequences represented in the tree with values normalized on a scale from 0, being least abundant to 1, being most abundant.
 
 Within the network altretamine is linked to microbial N-demethylase enzymes which may remove methyl groups from this compound, potentially leading to similar toxic effects as seen with melamine. We found no published experimental evidence of gut microbiota mediated conversion of altretamine. However, N-demethylases in Pseudomonas putida CBB5 enable this microbe to grow on caffeine and other purine alkaloids as the sole carbon and nitrogen source; thus annotated N-demethylases in P. putida CBB5 can act on compounds that are structurally similar to altretamine (Summers et al., 2012). Furthermore, we identify hypothetical proteins homologous to Pseudomonas putida CBB5 N-demethylases in a subset of healthy human guts (Figure 9—figure supplement 1). We hypothesized that gut microbial N-demethylases may partially or completely N-demethylate altretamine, converting it into metabolites that contribute to patient toxicity.
 
 A first step in validating this hypothesis is to demonstrate that the gut microbiome can demethylate altretamine. We incubated altretamine in a pooled fecal slurry generated from three healthy individuals and monitored altretamine and potential metabolites using LC-MS. We controlled for the formation of spontaneous N-demethylation of altretamine, which has been reported in the literature (Damia and D'Incalci, 1995), and found that a metabolite that is structurally identical to pentamethylmelamine, a demethylated altretamine metabolite, increases in active fecal microcosms over 48 hr (Figure 9). In active fecal biotic conditions the metabolite continually increased between time 0 and 48 hr. Killed controls demonstrated an increase in metabolite between 0 and 24 hr, though to a lesser extent than in active fecal microcosms. Notably there was little metabolite formation after 24 hr, indicating that in addition to abiotic N-demethylation, active gut microbes demethylate altretamine to the putative metabolite pentamethylmelamine.
 
-## Food derived compounds and non-antibiotic therapeutic drugs with potential antimicrobial properties
+![Figure 9.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig9-v1.jpg)
+
+**Figure 9.:** Liquid chromatography with tandem mass spectrometry (LC-MS) was used to quantify the formation of (a) pentamethylmelamine, an N-demethylated metabolite of altretamine identified in the pooled fecal microbiomes of three healthy unrelated individuals. (b) The formation of metabolite 1 at 24 and 48 hr was significantly increased under the experimental condition in comparison to the contribution of spontaneous N-demethylation by an unpaired two-sample Wilcoxon test (*=P < 0.05).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** No altretamine or metabolite were detected in background fecal slurry control.
+
+### Food derived compounds and non-antibiotic therapeutic drugs with potential antimicrobial properties
 
 MicrobeFDT suggests an unrecognized role for bile acid-like foods and drugs in altering the composition of the human gut. Conjugated primary bile acids (BA) function as potent detergents and antimicrobial agents capable of dissolving microbial membranes and causing intracellular acidification; bile acid function is linked to specific structural features of these compounds (Jones et al., 2008; Begley et al., 2006). Taurochenodeoxycholic acid (TCDCA) is a taurine conjugated primary bile acid with a diet-tunable concentration in the gut (Ridlon et al., 2016). Energy drinks, animal protein and fish are rich sources of taurine while vegetarian and vegan diets dominated by fruits, vegetables, legumes and soy are poor sources (Ridlon et al., 2016). Taurine conjugated bile acids are hypothesized to contribute to the etiology of colorectal cancer by generating hydrogen sulfide during microbial mediated de-conjugation of taurine conjugates (Ridlon et al., 2016). Conjugated primary bile acids have demonstrated in vitro activity as antimicrobial compounds, for example glycocholic and taurocholic conjugated bile acids are bacteriostatic, inhibiting S. aureus growth by decreasing intracellular pH and disrupting the proton motor force (Sannasiddappa et al., 2017).
 
 Using MicrobeFDT, we identified therapeutic drug and food compounds that are structurally similar to TCDCA; we propose these compounds might have similar antimicrobial effects on the microbiome and we discuss studies from other groups that support this hypothesis (Figure 10a).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig10-v1.jpg)
+
+**Figure 10.:** (a) Chemical structure of taurochenodeoxycholic acid (TCDCA). (b) TCDCA-like therapeutic drugs that are susceptible to bile salt hydrolases include finasteride and saxagliptin. (c) Non-susceptible TCDCA-like therapeutic drugs include betamethasone, dexamethasone and cortisone. (d) TCDCA-like food derived compounds include steviol, lanosterol and tomatidine.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/42866/elife-42866-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Phylogenetic distribution and abundance of bile salt hydrolase enzymes in healthy individuals from the HMP (Human et al., 2012). Phylum-level taxonomy is indicated by branch color. Colored bars specify whether bile salt hydrolase activity has been determined in the literature for a specific protein. The adjoining bar plot displays the relative abundance of bile salt hydrolase sequences represented in the tree with values normalized on a scale from 0, being least abundant to 1, being most abundant.
 
 Bile salt hydrolase (BSH) mediated bile salt deconjugation is one mechanism that gut microbes use to detoxify conjugated primary bile acids (Begley et al., 2006); thus BSH activity may support gut bacterial persistence in face of frequent contact with primary BAs. We first subdivided TCDCA-like antimicrobial compounds based on BSH enzyme susceptibility. BSH enzymes are phylogenetically diverse and abundant across healthy human fecal metagenomes (Figure 10—figure supplement 1). Among the BSH-susceptible therapeutic drug compounds, we identified known antibiotics such as clindamycin and lincomycin, as well as non-antibiotic prescribed therapeutics such as finasteride, which is used for the treatment of androgenetic alopecia (Manabe et al., 2018) and benign prostatic hyperplasia (Chau et al., 2015), and the oral antidiabetic drug saxagliptin (Men et al., 2018) (Figure 10b). Notably, in a Wistar rat model of chronic bacterial prostatitis (CBP), finasteride reduces bacterial infection as a single agent and has a synergistic effect with ciprofloxacin through an unknown mechanism (Lee et al., 2011). Through in vitro studies, Chavex-Dozal and colleagues propose a role for finasteride in the prevention of Candida albicans biofilm formation and filamentation (Chavez-Dozal et al., 2014). These experimental results support the hypothesis that finasteride may have unrecognized off-target antibiotic effects.
 
@@ -105,7 +135,7 @@ Most TCDCA-like compounds in MicrobeFDT are non-BSH susceptible food-derived com
 
 Food-derived TCDCA-like compounds include steviol, lanosterol and tomatidine. Steviol is a component of stevia which has antimicrobial properties against Borrelia burgdorferi in vitro (Theophilus et al., 2015), and lanosterol derivatives have antifungal activities (Shingate, 2013). Tomatidine was recently identified as an antibiotic molecule that inhibits ATP synthesis against Staphylococcus aureus (Lamontagne Boulet et al., 2018); we hypothesize that the antimicrobial activity of this compound may include intracellular acidification given its structural overlap with TCDCA (Figure 10d). The network thus identifies compounds with known anti-microbial properties in addition to proposing additional, structurally related compounds with uncharacterized effects. We propose that in addition to modulating immune responses, bile salt-like compounds may selectively alter human microbiomes, again, with unknown consequences for treatment outcomes and health.
 
-## MicrobeFDT identifies the diet-derived substrate pool for microbial BGs and candidates for nutritional competition with SN-38G
+### MicrobeFDT identifies the diet-derived substrate pool for microbial BGs and candidates for nutritional competition with SN-38G
 
 We next applied MicrobeFDT to identify diet-derived substrates of a gut carbohydrate active enzyme, β-glucuronidase. β-glucuronidases play a major role in the toxicity of the colorectal cancer chemotherapeutic prodrug irinotecan (CPT-11), whose active form, SN-38, is inactivated by hepatic glucuronidation and excreted into the gut as the inactive metabolite SN-38 glucuronide (SN-38G) (Wallace et al., 2010; Sparreboom et al., 1998). Microbial β-glucuronidases hydrolyze the glucuronide group, releasing the aglycone SN-38 into the intestinal environment (Figure 11a). Deconjugation promotes epithelial damage and severe diarrhea in some patients and in mouse models (Wallace et al., 2010; Sparreboom et al., 1998; Slatter et al., 2000).
 
@@ -139,70 +169,132 @@ It must be noted that the set of diet-derived and xenobiotic compounds that form
 
 ## Materials and methods
 
-## MicrobeFDT pipeline
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (community microbiota, feces)</td>
+      <td>fecal sample</td>
+      <td>other</td>
+      <td></td>
+      <td>fecal sample obtained from three healthy adults</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug (altretamine)</td>
+      <td>altretamine</td>
+      <td>Sigma</td>
+      <td>Pubchem_ID:329748966; CAS_No:645-05-6</td>
+      <td>prepared in DMSO, 0.1 mM final concentration in fecal slurry</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Brain Heart Infusion broth</td>
+      <td>Himedia</td>
+      <td>Himedia:M210I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound (Dimethyl sulfodixe)</td>
+      <td>DMSO</td>
+      <td>MP Biomedicals</td>
+      <td>MP:191418; CAS_No:67-68-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound (Melamine-triamine-(15N3))</td>
+      <td>Melamine-triamine-(15N3)</td>
+      <td>Sigma</td>
+      <td>Pubchem:329758619; CAS_No:287476-11-3</td>
+      <td>prepared in DMSO, 400 nM final concentration in analytical sample</td>
+    </tr>
+  </tbody>
+</table>
+
+### MicrobeFDT pipeline
 
 The MicrobeFDT graph database encodes heterogeneous information on the interactions between compounds and microbial enzymes in the gut chemical landscape, highlighting the following four relationships across 13,440 nodes (10,822 xenobiotic, diet-derived and human gut endogenous compounds, 2062 microbial enzymes and 525 therapeutic drug use labels) defined from publicly available data directly or computed: (1) compound-compound substructure similarity; (2) compound-compound toxicity similarity; (3) microbial enzyme-compound interactions; and (4) drug-indication associations. The database is implemented in Neo4j (https://neo4j.com/) and can be queried through the Cypher Query Language. Through graph-based searches users can query the network based on node or relationship features. MicrobeFDT can be accessed here (Guthrie, 2019).
 
-## Publicly available datasets and resources used as inputs for the network
+### Publicly available datasets and resources used as inputs for the network
 
 The SIDER 4.1 side effect resource is a database of approved medicines and their known adverse reactions (Kuhn et al., 2016). Drugs from this database with pharmacokinetic profiles that involve entry into the gastrointestinal tract were identified through literature mining and manual curation and indexed by their PubChem CID identifier (Kim et al., 2016). Drug use annotations were based on the WHO Anatomical Classification System (Skrbo et al., 2004). FooDB (http://foodb.ca/) (Wishart, 2018), a database containing raw food component structures, biological interactions and chemical properties was the source of food components linked to PubChem CID identifiers. ClassyFire was used to annotate all xenobiotic and food derived compounds with a shared chemical taxonomy (Djoumbou Feunang et al., 2016).
 
 To link microbial enzymes to the set of compounds they metabolize we used KEGGREST (v1.14.1) to retrieve KEGG compound identifiers with links to Enzyme Commission numbers, metabolic modules and pathways, and presence in either organisms listed as microbial or Homo sapiens (Tenenbaum, 2019). Enzyme abundance data across human metagenomes were determined based on the total abundance of each enzyme in the healthy participants of the Human Microbiome Project. This data was extracted from the Integrated Microbial Genomes database (Markowitz et al., 2012). Enzyme specific dominance scores (ECsD), which is a measure of the number of different species that carry a specific enzyme, were computed based on species-specific enzyme abundance data from healthy individuals from the Integrative Human Microbiome Project (Proctor et al., 2014).
 
-## Construction and assessment of the drug-food chemical similarity network
+### Construction and assessment of the drug-food chemical similarity network
 
-## Chemical similarity calculation
+#### Chemical similarity calculation
 
 To determine the pairwise chemical substructure similarity between all compounds we used the PubChem 2D molecular fingerprint (Kim et al., 2016). The fingerprint is an 881 dimension binary vector in which each bit represents a specific element, functional group, ring system or other discrete chemical entity (Kim et al., 2016). Similarity was defined by the Tanimoto coefficient of the molecular fingerprint representations present between two compounds (Bajusz et al., 2015).
 
-## Network construction
+#### Network construction
 
 Similarity scores are percentages of substructure overlap between pairs of compounds and have values between 0 to 1. Similarity scores are filtered such that compound pairs with less than 0.3 substructure similarity were removed. These pairwise similarity scores formed the basis of the undirected chemical similarity network, where nodes represent compounds and edges represent substructure similarity score.
 
-## Network filtering
+#### Network filtering
 
 To cluster compounds in the network based on substructure similarity we used the Walktrap community detection method (Pons and Latapy, 2006) implemented in R/igraph v.1.1.1 (R Development Core Team, 2016). Within a community, significant similarity scores were defined as those with Z-scores of 1 standard deviation or greater away from the mean (Baldi and Nasr, 2010).
 
-## Assessment of compound substructure-based clustering recapitulation of chemical ontology
+#### Assessment of compound substructure-based clustering recapitulation of chemical ontology
 
 The MicrobeFDT substructure similarity network is defined by the Tanimoto coefficient of the PubChem 2D molecular fingerprint representations between two compounds (Kim et al., 2016; Bajusz et al., 2015). To assess how well compound substructure-based clustering recapitulates chemical ontology we compared network features between the MicrobeFDT substructure similarity network and randomized network with the same number of nodes, edges and labels. Each compound label includes a ClassyFire (Djoumbou Feunang et al., 2016) schema derived hierarchical set of chemical descriptors. The chemical similarity network was rendered in Cytoscape using NetworkRandomizer (Martens et al., 2014). Using the Wilcoxon rank-sum test we compared superclass level chemical descriptors across connected compounds between the real and random network. For the MicrobeFDT network, we also computed the ratio of compounds pairs with matched Superclass annotation to unmatched annotations for all pairs with the same substructure score to assess the relationship between substructure similarity and shared chemical ontology.
 
-## Predicting the probability of association of compound pairs both serving as substrates for an enzyme based on substructure and physiochemical parameters
+#### Predicting the probability of association of compound pairs both serving as substrates for an enzyme based on substructure and physiochemical parameters
 
 Each compound pair was assigned one of two labels, associate or non-associated, based on whether both compounds are substrates for the same enzyme (associated) or not (non-associated), given compound-enzyme relationships in the KEGG database (Kanehisa and Goto, 2000). The DataWarrior program (Sander et al., 2015) was used to identify the following parameter categories for each compound: geometry, functional groups, aromaticity, amino acid composition, polarity and hydrophobicity. In order to translate compound pair substructure and physiochemical parameters into a probability of overlapping metabolism we used a machine learning approach for generating probability estimates for multi-class classification problems (Zhang et al., 2013; Wu et al., 2004). Briefly, this approach builds a multi-class prediction model by using pair-wise coupling. We then implemented the prediction model using the probsvm package in R using a one-vs-one decomposition scheme (Zhang et al., 2013).
 
-## Assessing toxicity similarity
+#### Assessing toxicity similarity
 
 Toxicity similarity was computed as described by Campillos and colleagues (Campillos et al., 2008) with three key steps: (1) extraction and standardization of side effect concepts across drugs of interest; (2) weighting of unique side effect concepts based on frequency of occurrence and correlation with other side effects; and (3) computation of pair-wise toxicity similarity between drugs based on weighted side-effect concept values. Briefly, Campillos et al. curated a dictionary of side-effects based on the Concepts of the Coding Symbols for Thesaurus of Adverse Reaction Terms (COSTART) ontology (US Food and Drug Administration, 1995). Side-effect information on therapeutic drug package labels was identified from publicly available sources and searched against this dictionary such that all unique side effect concepts per drug were based on COSTART ontology. For our analysis we used the side effect labels for therapeutic drugs of interest that were extracted from the Medical Dictionary for Regulatory Activities (Brown et al., 1999), which is an updated replacement of COSTART, and made publicly available at the download page for SIDER 4.1 which can be found here.
 
 In Campillos et al., each side effect concept was given a rarity score which is the frequency at which it is found across all drug side effect lists. To account for co-dependence between side effects Campillos and colleagues also determined the correlation between all side effects based, using the Tanimoto score between pairs of side effects. This measure is based on how many drugs share a given side effect relative to the number of drugs that have either. The resulting matrix was used as input for the Gerstein-Sonnhammer-Chothia Algorithm (Gerstein et al., 1994), to output a score for each concept that down weights concepts that are redundant. We used a publicly available implementation of this algorithm in R available here. Pair-wise toxicity similarity between drugs was computed based on summing the products of weights over all shared side effect concepts between drug pairs. We fit a linear regression to determine whether there is a linear relationship between compound pair substructure similarity and toxicity similarity.
 
-## Taxonomic signatures of microbial enzymes
+### Taxonomic signatures of microbial enzymes
 
-For each enzyme, we computed an enzyme commission number-specific dominance (ECsD) score. This score is an application of the Simpson’s index, which is particularly sensitive to sample evenness (DeJong, 1975), and describes the dominance and diversity profile of species carrying the enzyme (Ofaim et al., 2017). The taxa-specific enzyme abundance information is based on data collected as a part of the integrative Human Microbiome Project (iHMP) (PRJNA306874) (Proctor et al., 2014). ECsD scores are reported as Simpson index measure (Simpson, 1949) subtracted from one, as implemented in the phyloseq R package (McMurdie and Holmes, 2013). In this implementation, the Simpson dominance index per enzyme defined by its enzyme commission number (D(EC)) is computed such that n is number of individuals of each species that carry the enzyme and N is the total number of individuals of all species that carry the enzyme (1). For better interpretability, the dominance scores are subtracted from 1 (2).(1)D(EC)= Σ n(n-1)N(N-1)(2)ECSD=1−D(EC)
+For each enzyme, we computed an enzyme commission number-specific dominance (ECsD) score. This score is an application of the Simpson’s index, which is particularly sensitive to sample evenness (DeJong, 1975), and describes the dominance and diversity profile of species carrying the enzyme (Ofaim et al., 2017). The taxa-specific enzyme abundance information is based on data collected as a part of the integrative Human Microbiome Project (iHMP) (PRJNA306874) (Proctor et al., 2014). ECsD scores are reported as Simpson index measure (Simpson, 1949) subtracted from one, as implemented in the phyloseq R package (McMurdie and Holmes, 2013). In this implementation, the Simpson dominance index per enzyme defined by its enzyme commission number (D(EC)) is computed such that n is number of individuals of each species that carry the enzyme and N is the total number of individuals of all species that carry the enzyme (1). For better interpretability, the dominance scores are subtracted from 1 (2).
+
+$$
+D(EC)=\frac{Σn(n-1)}{N(N-1)}
+$$
+
+
+
+$$
+EC_{SD}=1−D(EC)
+$$
 
 Thus, enzyme functions carried out by small numbers of microbes have values closer to 0 while functions carried out by taxonomically diverse groups have functions closer to 1.
 
-## Altretamine microbiome turnover validation
+### Altretamine microbiome turnover validation
 
-## Collection and preparation of fecal samples
+#### Collection and preparation of fecal samples
 
 Fresh fecal samples were provided by three healthy adult men aged 23–30 with no history of antibiotics for 6 months prior to the study. The study was approved by the Albert Einstein College of Medicine Institutional Review Board. Samples were deposited, immediately stored on ice, and processed within 1 hr. One gram stool from each donor was added to 300 mL BHI supplemented with 0.5% glucose (weight/volume) and homogenized. The final fecal slurry was thus comprised of the pooled feces of the three donors at 1% w/v.
 
-## Altretamine metabolism
+#### Altretamine metabolism
 
 Fecal slurry cultures were incubated at 37°C in the dark under aerobic conditions. Altretamine stock was prepared in DMSO. Experimental cultures received a final concentration of 100 µM altretamine in DMSO and were prepared in triplicate. Triplicate heat-killed and denatured cultures were autoclaved three times on successive days and also received 100 µM altretamine in DMSO after the third autoclave. Background cultures received fecal slurry and DMSO but no altretamine. To determine matrix effects of altretamine in the media, a sterile media control was amended with 100 µM altretamine in DMSO. Cultures were sampled, immediately snap-frozen in liquid N2 every 24 hr, and stored at −80°C until analysis.
 
-## Altretamine and metabolite quantification
+#### Altretamine and metabolite quantification
 
 Samples were thawed, centrifuged, and 100 µL aliquots were added to 900 µL 80% methanol. Melamine-triamine-(15N3) was used as internal standard. Altretamine and metabolites were identified using LC/MS (Waters Acquity LC system and Waters Xevo TQ MS). Liquid samples were diluted 1:50 in 80% methanol with melamine-triamine-(15N3) as internal standard. Each sample was injected 3 times at 5 mL/injection. Separation was performed on an ACE2 C18 column set to 45°C with 0.1% formic acid in 5% methanol (A) and 0.1% formic acid in methanol (B). Elution occurred at 0.35 ml/min with 100% A for 1 min, followed by a 1.5 min linear gradient from 100% A to 95% B, and finally 100% B for 1 min. The voltage was set to 0.044 kV.
 
-## Phylogenetic trees
+### Phylogenetic trees
 
-## N-demethylase phylogenetic tree
+#### N-demethylase phylogenetic tree
 
 N-demethylases from Pseudomonas putida CBB5 (ndmABCD) (Summers et al., 2012) and Sphingobium sp. strain YBL2 (pdmAB) (Gu et al., 2013), both containing a Rieske non-heme iron oxygenase component, catalyze the N-demethylation of phenylurea herbicides and purine alkaloids, respectively; and range in size from 318 to 364 amino acids (Summers et al., 2012; Gu et al., 2013; Sharma et al., 2018). We clustered bacterial N-demethylase sequences described by Summers et al., and Tao et al., as well as protein sequences of >= 200 amino acids in length pulled based on text annotation from the RefSeq database (Pruitt et al., 2005) at 95% identity using the UCLUST algorithm (Edgar, 2010). The resulting 84 N-demethylase protein sequences served as a protein database which was mapped against the protein calls of healthy adult participants from the Human Microbiome Project (HMP) (PRJNA43021) using the UBLAST algorithm (Edgar, 2010) and e-value cutoff of e-40. N-demethylase hits of 200 amino acids or greater formed the basis of a phylogenetic tree which was constructed by aligning the protein sequences using MUSCLE with default parameters (Edgar, 2004). Aligned sequences were trimmed at 70% identity and phylogenetic trees were built with PhyML (Guindon et al., 2010) with 100 bootstrap replicates, a JTT model of substitution, and otherwise default parameters. The trees were visualized using the packages ggpplot2 (Wickham, 2016) and phyloseq (McMurdie and Holmes, 2013) in R (R Development Core Team, 2016). Each branch was colored based on the phylum level classification of the protein, marked by similarity to the experimentally characterized N-demethylase genes ndmABCD and pdmAB and by the normalized number of total hits found across individuals in the HMP. Black circles indicate bootstrap values of 80/100 or better.
 
-## Bile salt hydrolase phylogenetic tree
+#### Bile salt hydrolase phylogenetic tree
 
 We identified bile salt hydrolase protein sequences based on text annotation from the RefSeq database (Pruitt et al., 2005) and developed a curated database of protein sequences that were clustered at 95% identity using the UCLUST algorithm (Edgar, 2010) resulting in 300 bile salt hydrolase protein sequences with a minimum amino acid length cutoff of 300. Bile salt hydrolase subunits can range in length up to 518 amino acids in the literature (Breton et al., 2002; Bron et al., 2006; Schmid and Roth, 1987). Sequence mapping against the HMP (Human et al., 2012), alignment and tree construction were carried out as described for the N-demethylases with the following exception: each branch representing a unique bile salt hydrolase sequence was marked by the presence or absence of reported activity in the literature.

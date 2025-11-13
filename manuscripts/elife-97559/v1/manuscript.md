@@ -17,20 +17,20 @@
 
 ### Affiliations
 
-1. https://ror.org/055s37c97 Leibniz Institute for Natural Product Research and Infection Biology – Hans Knöll Institute, Junior Research Group Synthetic Microbiology Jena Germany
-2. https://ror.org/0234wmv40 University of Bayreuth, Chair of Biochemistry of Microorganisms Kulmbach Germany
-3. https://ror.org/055s37c97 Leibniz Institute for Natural Product Research and Infection Biology– Hans Knöll Institute, Department of Infection Biology Jena Germany
-4. https://ror.org/03d0p2685 Respiratory Infection Dynamics, Helmholtz Centre for Infection Research - HZI Braunschweig Braunschweig Germany
-5. https://ror.org/00f2yqf98 Department of Respiratory Medicine and Infectious Diseases, Hannover Medical School, German Center for Lung Research (DZL), BREATH Hannover Germany
-6. https://ror.org/05qpz1x62 Friedrich Schiller University Jena, Institute of Microbiology Jena Germany
-7. https://ror.org/05qpz1x62 Microverse Cluster, Friedrich Schiller University Jena Jena Germany
-8. https://ror.org/05qpz1x62 Friedrich Schiller University Jena, Institute of Organic Chemistry and Macromolecular Chemistry Jena Germany
+1. Leibniz Institute for Natural Product Research and Infection Biology – Hans Knöll Institute, Junior Research Group Synthetic Microbiology Jena Germany ([ROR:055s37c97](https://ror.org/055s37c97))
+2. University of Bayreuth, Chair of Biochemistry of Microorganisms Kulmbach Germany ([ROR:0234wmv40](https://ror.org/0234wmv40))
+3. Leibniz Institute for Natural Product Research and Infection Biology– Hans Knöll Institute, Department of Infection Biology Jena Germany ([ROR:055s37c97](https://ror.org/055s37c97))
+4. Respiratory Infection Dynamics, Helmholtz Centre for Infection Research - HZI Braunschweig Braunschweig Germany ([ROR:03d0p2685](https://ror.org/03d0p2685))
+5. Department of Respiratory Medicine and Infectious Diseases, Hannover Medical School, German Center for Lung Research (DZL), BREATH Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))
+6. Friedrich Schiller University Jena, Institute of Microbiology Jena Germany ([ROR:05qpz1x62](https://ror.org/05qpz1x62))
+7. Microverse Cluster, Friedrich Schiller University Jena Jena Germany ([ROR:05qpz1x62](https://ror.org/05qpz1x62))
+8. Friedrich Schiller University Jena, Institute of Organic Chemistry and Macromolecular Chemistry Jena Germany ([ROR:05qpz1x62](https://ror.org/05qpz1x62))
 
 † Corresponding author
 
 ## Abstract
 
-Mycofactocin is a redox cofactor essential for the alcohol metabolism of mycobacteria. While the biosynthesis of mycofactocin is well established, the gene mftG , which encodes an oxidoreductase of the glucose-methanol-choline superfamily, remained functionally uncharacterized. Here, we show that MftG enzymes are almost exclusively found in genomes containing mycofactocin biosynthetic genes and are present in 75% of organisms harboring these genes. Gene deletion experiments in Mycolicibacterium smegmatis demonstrated a growth defect of the ∆ mftG mutant on ethanol as a carbon source, accompanied by an arrest of cell division reminiscent of mild starvation. Investigation of carbon and cofactor metabolism implied a defect in mycofactocin reoxidation. Cell-free enzyme assays and respirometry using isolated cell membranes indicated that MftG acts as a mycofactocin dehydrogenase shuttling electrons toward the respiratory chain. Transcriptomics studies also indicated remodeling of redox metabolism to compensate for a shortage of redox equivalents. In conclusion, this work closes an important knowledge gap concerning the mycofactocin system and adds a new pathway to the intricate web of redox reactions governing the metabolism of mycobacteria.
+Mycofactocin is a redox cofactor essential for the alcohol metabolism of mycobacteria. While the biosynthesis of mycofactocin is well established, the gene mftG, which encodes an oxidoreductase of the glucose-methanol-choline superfamily, remained functionally uncharacterized. Here, we show that MftG enzymes are almost exclusively found in genomes containing mycofactocin biosynthetic genes and are present in 75% of organisms harboring these genes. Gene deletion experiments in Mycolicibacterium smegmatis demonstrated a growth defect of the ∆mftG mutant on ethanol as a carbon source, accompanied by an arrest of cell division reminiscent of mild starvation. Investigation of carbon and cofactor metabolism implied a defect in mycofactocin reoxidation. Cell-free enzyme assays and respirometry using isolated cell membranes indicated that MftG acts as a mycofactocin dehydrogenase shuttling electrons toward the respiratory chain. Transcriptomics studies also indicated remodeling of redox metabolism to compensate for a shortage of redox equivalents. In conclusion, this work closes an important knowledge gap concerning the mycofactocin system and adds a new pathway to the intricate web of redox reactions governing the metabolism of mycobacteria.
 
 ## Introduction
 
@@ -48,19 +48,37 @@ The reduction of M/MFT-n to M/MFT-nH2 during growth on ethanol is likely to be c
 
 ## Results
 
-## Phylogeny and co-occurrence of mftG and mycofactocin
+### Phylogeny and co-occurrence of mftG and mycofactocin
 
 Primary sequence alignments with known members of the GMC family and AlphaFold (Varadi et al., 2022; Jumper et al., 2021) prediction of the tertiary structure of MftG (WP_014877070.1) from M. smegmatis MC2 155 (Figure 2A) confirmed that MftG is a protein of the GMC superfamily with an intact FAD binding pocket and a conserved active site histidine (Aleksenko et al., 2020). While these properties are general characteristics of the GMC superfamily, a hallmark of the MftG subfamily of GMC oxidoreductases is their tight genetic linkage to the mycofactocin biosynthetic gene cluster mftA-F (Haft, 2011). These MFT-associated GMC homologs are defined by three protein families. The first, TIGR03970.1 (dehydrogenase, Rv0697 family) describes proteins from various actinobacteria and includes the M. smegmatis homolog. The other two families are TIGR04542 (GMC_mycofac_2) and NF038210.1 (GMC_mycofac_3). TIGR04542 is specific to the Gordonia genus, while NF038210.1 is exclusive to the Dietzia genus (Haft, 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig2-v1.jpg)
+
+**Figure 2.:** (A) Structural model of MftG from M. smegmatis retrieved from the Alphafold database (Gao et al., 2021) with the FAD prosthetic group (yellow) modeled into the structure. Green: Rossman fold motif (GxGxxG), red: active site histidine (His411). (B) Collapsed phylogenetic tree (maximum likelihood) of GMC enzymes showing major MftG subfamilies. FastTree support values are shown on branches. The full tree is provided as Figure 2—figure supplement 1 (C) Venn diagram representing the frequency of co-occurrence of mftC (left-medium blue) and mftG (right-dark blue) genes in 312 organisms that encode the MFT gene locus or MftG-like proteins.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig2-figsupp1-v1.jpg)
+
 To further investigate the co-occurrence of mftG with the mft gene cluster we retrieved a set of genomes encoding MftG or MftC homologs, the latter serving as a proxy for the mft biosynthetic gene cluster (Supplementary file 2, table S1). To refine the annotation of MftGs, we first performed a phylogenetic analysis. To the MftG candidates, we added further GMC-superfamily enzymes from the same genome set as well as sixteen experimentally characterized GMC enzymes used in a previous study (Aleksenko et al., 2020). Maximum Likelihood analysis (Figure 2B, Figure 2—figure supplement 1) clustered the MftG candidates described by TIGR03970 into a well-supported clade, which comprised MftG proteins from Rhodococcus, other Nocardiaceae and Mycobacteriaceae. The Gordonia and Dietzia MftG candidates were also phylogenetically related to the main MftG clade. We therefore defined all sequences belonging to this clade as MftG. Two sequences previously annotated as MftG, however, were placed outside of the proposed MftG clade. Their corresponding genomes (Nocardia terpenica and Peterkaempfera bronchialis) did not contain any MftC candidate and the MftG candidates were therefore treated as misannotations. We conclude that all MftG candidates are monophyletic. To further improve the annotations, the gene neighborhood of the mftG candidates was investigated, confirming that mftG candidates are frequently located within a 5 kb distance from mft genes (Supplementary file 2, table S1). After refinement of the MftG annotation, we proceeded with co-occurrence analysis of mftC and mftG in our microbial genome set. In a total of 312 genomes that contained either mftC or mftG, 311 harbored an mftC homolog, and 235 a putative mftG homolog. In 234 genomes the two genes co-occurred (Figure 2C). Only one genome (Herbiconiux sp. L3-i23) encoding a bona fide mftG did not harbor any mftC homolog. However, close inspection revealed the presence of mftD, mftF, and a potential mftA gene but a loss of mftB, C and E in this organism. This result reinforced the hypothesis that MftG enzymes strictly require mycofactocin. On the other hand, about 25% of the genomes encoding MftC lack an MftG enzyme. It remains an open question for future investigations, whether other enzymes can complement the function of MftG or whether the function of MftG is dispensable in these organisms.
 
-## The role of MftG in growth and metabolism of mycobacteria
+### The role of MftG in growth and metabolism of mycobacteria
 
 To investigate the physiological role of MftG, a mftG deletion mutant (ΔmftG) was generated in M. smegmatis MC2 155. Since mft mutant strains typically display defects in ethanol utilization (Krishnamoorthy et al., 2019), we compared the growth of M. smegmatis MC2 155 ΔmftG with the WT (wild-type) strain on media containing 10 g L–1 of ethanol as the sole carbon source (Figure 3A). Indeed, almost no growth of ΔmftG was detected on ethanol (Figure 3A), whereas the growth curve of the ∆mftG mutant on glucose-containing media was indistinguishable from the isogenic WT strain (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig3-v1.jpg)
+
+**Figure 3.:** (A) Growth curve of M. smegmatis WT, ∆mftG, ∆mftG-mftG, and WT-mftG growing in HdB-Tyl with 10 g L–1 ethanol as the sole carbon source. (B) Growth curve of WT and ∆mftG growing on 10 g L–1 glucose (C, E). Ethanol and acetic acid quantification over time in M. smegmatis WT, ∆mftG, ∆mftG-mftG, and WT-mftG cultures in HdB-Tyl with 10 g L–1 of ethanol and in uninoculated media as control. (D) Growth curve of WT and ∆mftG on 10 g L–1 glucose and 10 g L–1 ethanol combined. (F) Acetaldehyde quantification in culture supernatants of the WT and ∆mftG strains grown with 10 g L–1 glucose and/or 10 g L–1 ethanol. (●) M. smegmatis WT; (■) M. smegmatis ∆mftG mutant; (♦-dashed) M. smegmatis ∆mftG mutant grown with starting OD600 1; (▼) M. smegmatis ∆mftG-mftG complementation mutant; (♦) M. smegmatis double presence of the mftG gene; (▲) Medium with 10 g L–1 of ethanol without bacterial inoculation. Measurements were performed in biological replicates, (growth curves: n≥3, ethanol and acetate quantification: n=3). Error bars represent standard deviations. Statistical analysis was performed with ordinary one-way ANOVA with Tukey’s multiple comparison test, p-values depicted in the figure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Growth curve of M. smegmatis WT and ∆mftG growing on HdB-Tyl supplemented with 5 g L–1 acetate, 10 g L–1 glycerol, 10 g L–1 1-propanol, 5 g L–1 1-butanol, 5 g L–1 propane-1,2-diol and 5 g L–1 propane-1,3-diol. Measurements were performed in at least biological duplicates (n≥2). Error bars represent standard deviations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Shown are selected compounds from Biolog PM10-20 that modulated the growth behavior. The x-axis represents the concentrations of compounds as multiples of their initial concentration (1 x, 2 x, 3 x, and 4 x). The Y-axis shows the relative survival of each strain compared to the starting condition.
+
 We also investigated the growth of the WT and the ΔmftG strain on several related carbon sources and recorded growth curves (Figure 3—figure supplement 1). The growth of WT and mutant strains was not supported by 10 g L–1 methanol, 5 g L–1 hexanol, 0.01 g L–1 acetaldehyde as sole carbon sources as previously reported (Krishnamoorthy et al., 2019). Notably, WT and ∆mftG cells displayed significant growth with 5 g L–1 acetate or 10 g L–1 glycerol. However, evaluation of the growth using other alcohols showed differential behavior. A prolonged lag phase of the ΔmftG strain was detected on 1-propanol (29 h), 1-butanol (18 h), and 1,3-propanediol (20 h) compared to the WT strain. Interestingly, a putative 1,3-propanediol dehydrogenase (MSMEG_6239) is present in the same operon as MSMEG_6242, indicating that 1,3-propanediol degradation might be also MFT-dependent (Dubey and Jain, 2019b). We further assessed the growth of ΔmftG using a panel of phenotype microarrays. While no further defect regarding carbon source utilization was detected, the ΔmftG mutant showed the ability to grow to a small extent on formic acid in contrast to the WT. Besides the different usage of carbon sources, only minor differences in bacterial growth were found in some of the sensitivity plates (Figure 3—figure supplement 2) demonstrating that the lack of the mftG gene did not induce relevant sensitivity towards antibiotics and stressors compared to WT when grown on glucose alone.
 
-## The role of ΔmftG in ethanol metabolism of mycobacteria
+### The role of ΔmftG in ethanol metabolism of mycobacteria
 
 Since the utilization of ethanol was the process that was most strikingly impacted by mftG inactivation, it was investigated further. First, the complementation of the ΔmftG deletion using an integrative vector carrying the mftG gene (ΔmftG attB::pMCpAINT-mftG, here named ΔmftG-mftG) was performed and resulted in the restoration of growth on 10 g L–1 ethanol. Intriguingly, the growth curve of the complemented strain, which could be dysregulated in mftG expression, displayed a shorter lag phase, a faster second exponential growth phase, and a higher final biomass yield compared to the WT (Figure 3A). Altered growth kinetics of complement mutants on ethanol are a known phenomenon, albeit not always well understood (Kpebe et al., 2023). However, duplication of the mftG gene using the same vector in the WT strain (WT attB::pMCpAINT-mftG, here named WT-mftG) also showed enhanced growth. These results indicate that MftG might catalyze a rate-limiting step during ethanol utilization.
 
@@ -70,7 +88,7 @@ Typically, ethanol is oxidized to acetaldehyde first, which is further oxidized 
 
 When investigating the carbon metabolism of the ΔmftG-mftG (complement) and WT-mftG (overexpression) strains, an inverted phenotype became visible. Parallel to the accelerated and enhanced growth described above (Figure 3A), the overexpression strains displayed higher rates of ethanol consumption as well as an earlier onset of acetate overflow metabolism and acetate consumption (Figure 3E). These results indicate that MftG activity is, at least indirectly, related to ethanol oxidation. Notably, the accelerated turnover of the volatile substrate ethanol, which is subject to substantial evaporation during the cultivation process, to acetate, which is less volatile, could explain the enhanced final growth yield of the complement and overexpression strains.
 
-## The impact of ethanol on survival and cell division of ΔmftG mutants
+### The impact of ethanol on survival and cell division of ΔmftG mutants
 
 To investigate whether the reduced growth of ∆mftG mutants on ethanol is due to limited carbon and energy supply or rather a consequence of insufficient ethanol detoxification, we cultivated bacteria on combinations of glucose and ethanol and recorded growth curves. Surprisingly, simultaneous feeding with 10 g L–1 glucose and 10 g L–1 ethanol even promoted the growth of the ∆mftG mutant. In addition, we determined the percentage of dead cells upon cultivation with different carbon sources using propidium iodide staining followed by flow cytometry quantification (Figure 4A). Regardless of the genotype, the bacterial cultures grown on glucose or ethanol as the sole carbon source and under starvation displayed a similar percentage of dead cells after a cultivation period of 72 h. We, therefore, conclude that the inability of ∆mftG cells to grow on ethanol alone is not due to ethanol toxicity. This conclusion was further supported by measurements of the transmembrane potential that did not reveal any disturbance of the proton motif force (PMF) in the mutant (Figure 4B). Previous studies of the transmembrane potential of M. smegmatis ∆mftC cells, another mutant unable to grow on ethanol as a carbon source, showed the same pattern with no differences compared to WT (Krishnamoorthy et al., 2019). However, unexpectedly, an elevated proportion of dead cells was detected when ∆mftG was cultivated on combined carbon sources, while the WT tolerated this condition well. This finding emphasizes the role of the mycofactocin system in enhancing the metabolic adaptability of mycobacterial cells under increasingly complex environmental conditions.
 
@@ -82,33 +100,41 @@ To reveal potential morphological changes induced by ethanol treatment, we furth
 
 Mycobacteria grown on glucose and ethanol showed a regular dispersion profile of both dyes, with polar RADA, non-polar NADA, and occasional mid-cell septum formation with no obvious differences between the three genotypes. In contrast, cultivation on 10 g L–1 ethanol alone as well as under starvation condition (no carbon source) had a strong influence on peptidoglycan synthesis as the dyes show decreased incorporation into the cell wall. The simultaneous incorporation of both dyes in WT and ∆mftG-mftG cells grown on ethanol as the sole carbon source reflected the reduced growth rate, as shown by the growth curves (Figure 3A and B) compared to the glucose condition. Interestingly, ∆mftG mutant cells struggled to divide on ethanol displaying multiple septa and extreme elongation compared to WT on ethanol, leading to a higher ratio of foci per cell compared to WT grown on the same condition (Figure 4D and E). Independent of the genotype, the cultivation in the presence of ethanol significantly decreased cell size. A similar phenotype was previously observed in Mycobacterium vaccae cells exposed to ethanol (Pacífico et al., 2018). Starving cells were also significantly reduced in size in WT and ∆mftG strains compared to growth on glucose alone (Figure 4C and E), reflecting the limitation of resources available for propagation and elongation. Especially under starvation conditions, the cells appeared predominantly yellow, suggestive of growth arrest. A previous study on the effect of starvation on mycobacteria also showed the formation of large cells with multiple septa as a hallmark of starvation, from which after 14 days, mildly starved cells (with traces of carbon source available) remodeled into small resting cells (Wu et al., 2016). Our results indicated that the major phenotype of ∆mftG on ethanol as a sole source of carbon is a growth defect comparable to a starvation effect. When incubated solely with this carbon source, ∆mftG cells are almost unable to divide, but remain alive and in a metabolically active state, most likely consuming ethanol in trace amounts.
 
-## Impact of mftG on mycobacterial cofactor metabolism
+### Impact of mftG on mycobacterial cofactor metabolism
 
 Based on the results above, we concluded that MftG is crucial for proper ethanol metabolism in mycobacteria. However, deletion of its corresponding gene still allowed for basal metabolic activity and ethanol oxidation. One way to explain these findings is that MftG is involved in cofactor regeneration during growth on ethanol as a carbon source. The genetic linkage of mftG with mycofactocin biosynthesis supported the hypothesis that MftG might be responsible for mycofactocin regeneration. However, before directly addressing mycofactocin metabolism, we decided to monitor the central respiratory redox cofactor NAD. We therefore determined the NADH/NAD+ ratios of WT and knockout during the exponential phase when bacteria were grown on glucose or ethanol as the sole carbon sources. However, the presence or absence of mftG did not significantly influence the NADH/NAD+ ratio of bacteria grown on either carbon source (Figure 5A). This finding indicated that NAD homeostasis remained intact in the ∆mftG mutant. Notably, when looking at absolute NAD+ levels, (Figure 5B) an increase of the NAD pool in cells growing on ethanol was detected, however, independent of the genotype. Along with central redox (NAD+) metabolism, we also monitored the central energy metabolism of the cells by determining ADP/ATP ratios. These clearly supported the hypothesis that ∆mftG cells suffered from starvation. The mutant strain exhibited a significant energy deficit at all three sampled time points, with the energy depletion progressively worsening between 24 and 48 h of incubation (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig5-v1.jpg)
 
-**Figure 5.:** M. smegmatis strains.(A) NADH/NAD+ ratio of M. smegmatis WT and ∆mftG grown on HdB-Tyl with either 10 g L–1 glucose or 10 g L–1 ethanol at exponential phase. (B) NADH and NAD+ quantification of M. smegmatis WT and ∆mftG grown on HdB-Tyl with either 10 g L–1 glucose or 10 g L–1 ethanol at exponential phase. (C) ADP/ATP ratio of M. smegmatis WT and ∆mftG grown on HdB-Tyl with 10 g L–1 ethanol at 24 hr, 48 h and 72 h. (D, E, F) Targeted comparative metabolomics of M. smegmatis WT, ∆mftG, ∆mftG-mftG, and WT-mftG strains. The most representative MFT species, methylmycofactocinone with 8 glucose moieties (MMFT-8H2, sum formula: C62H99NO43, RT: 6.82 min, m/z 1546.5665 [M+H]+) and methylmycofactocinol with 8 glucose moieties (MMFT-8, sum formula: C62H97NO43, RT: 7.18 min, m/z 1544.5507 [M+H]+), was used to reflect MFT obtained from M. smegmatis strains. The bacteria were grown in HdB-Tyl with either (D) 10 g L–1 glucose, (E) 10 g L–1 ethanol, or (F) 10 g L–1 glucose combined with 20 g L–1 ethanol. Samples of the different growth phases are represented in the chart. A sampling at 60 h of ∆mftG was chosen to sample the residual growth of the strain on ethanol as the sole carbon source. Statistical analysis was performed with one- or two-way ANOVA with Dunnett’s multiple comparison test for NADH/NAD+ ratio and, Tukey’s test for the rest, with most relevant p-values depicted on the figure. Measurements were performed in biological replicates (n=3), error bars represent standard deviations.
+**Figure 5.:** (A) NADH/NAD+ ratio of M. smegmatis WT and ∆mftG grown on HdB-Tyl with either 10 g L–1 glucose or 10 g L–1 ethanol at exponential phase. (B) NADH and NAD+ quantification of M. smegmatis WT and ∆mftG grown on HdB-Tyl with either 10 g L–1 glucose or 10 g L–1 ethanol at exponential phase. (C) ADP/ATP ratio of M. smegmatis WT and ∆mftG grown on HdB-Tyl with 10 g L–1 ethanol at 24 hr, 48 h and 72 h. (D, E, F) Targeted comparative metabolomics of M. smegmatis WT, ∆mftG, ∆mftG-mftG, and WT-mftG strains. The most representative MFT species, methylmycofactocinone with 8 glucose moieties (MMFT-8H2, sum formula: C62H99NO43, RT: 6.82 min, m/z 1546.5665 [M+H]+) and methylmycofactocinol with 8 glucose moieties (MMFT-8, sum formula: C62H97NO43, RT: 7.18 min, m/z 1544.5507 [M+H]+), was used to reflect MFT obtained from M. smegmatis strains. The bacteria were grown in HdB-Tyl with either (D) 10 g L–1 glucose, (E) 10 g L–1 ethanol, or (F) 10 g L–1 glucose combined with 20 g L–1 ethanol. Samples of the different growth phases are represented in the chart. A sampling at 60 h of ∆mftG was chosen to sample the residual growth of the strain on ethanol as the sole carbon source. Statistical analysis was performed with one- or two-way ANOVA with Dunnett’s multiple comparison test for NADH/NAD+ ratio and, Tukey’s test for the rest, with most relevant p-values depicted on the figure. Measurements were performed in biological replicates (n=3), error bars represent standard deviations.
 
 Previous studies of M. smegmatis under starvation also showed a reduction of ATP levels as a result of hampered energy metabolism (Wu et al., 2016). It should be mentioned that ATP synthesis strictly depends on respiration in M. smegmatis. Mycobacteria typically cannot sustain growth, even on fermentable substrates, via substrate-level phosphorylation alone (Tran and Cook, 2005).
 
 After confirming energy shortage but intact NAD homeostasis in ∆mftG cells, we decided to test whether MftG is involved in mycofactocin regeneration. To this end, we directly analyzed the MFT pool using targeted liquid chromatography-high resolution mass spectrometry (LC-MS). We have previously shown that the total pool size of MFT species is highly expanded when M. smegmatis uses ethanol as a sole carbon source and that both reduced (M/MFT-nH2) as well as oxidized species (M/MFT-n) are stable when extracted and can thus be detected by LC-MS (Peña-Ortiz et al., 2020a). Here, we performed a comparative analysis of the metabolome of M. smegmatis WT and ∆mftG grown in HdB-Tyl supplemented with either 10 g L–1 glucose, 10 g L–1 ethanol, or both carbon sources combined (10 g L–1 glucose and 20 g L–1 ethanol). Metabolites were extracted during the exponential or stationary growth phase. Additionally, metabolome extracts from complemented ∆mftG-mftG and WT-mftG strains grown on HdB-Tyl with 10 g L–1 ethanol sampled only at the stationary phase were analyzed. Strikingly, this analysis revealed significantly elevated levels of MMFT-8H2 in ∆mftG compared to the other strains tested (Figure 5D–F). MMFT-8H2 is the major representative of reduced mycofactocins (mycofactocinols) in M. smegmatis. Interestingly, ∆mftG strains contained almost none of the corresponding oxidized mycofactocinone (MMFT-8) in any of the conditions tested. These results strongly supported the hypothesis that MFT regeneration was hampered in the ∆mftG mutant while MFT reduction was still taking place, thus resulting in a near-total conversion of mycofactocinones to mycofactocinoles. This phenotype was also observed when ∆mftG cells were cultivated on glucose and ethanol combined (Figure 5E) and even on glucose alone (Figure 5D). Complementation of the ∆mftG mutant (∆mftG-mftG) reverted the MMFTH2 to MMFT ratio back to WT levels. In contrast, the overexpression strain WT-mftG grown in ethanol contained significantly more MMFT-8 (oxidized) compared to other strains in the same condition (Figure 5F), thus providing further evidence that MftG is involved in reoxidation of mycofactocin and re-enforcing that this step might even represent a rate-limiting step during ethanol utilization.
 
-## MFT dehydrogenase assay with recombinant MftG
+### MFT dehydrogenase assay with recombinant MftG
 
 To further support the hypothesis that MftG is responsible for MFT reoxidation, purification of MftG as a recombinant fusion protein with hexahistidine tag followed by in-vitro enzyme assays was attempted. For homologous production of recombinant, hexahistidine-tagged MftG, M. smegmatis ∆mftG was chosen as an expression host (resulting genotype: ∆mftG-mftGHis6). The restoration of the growth on ethanol of the ∆mftG-mftGHis6 expression strain indicated that the recombinant protein was produced in an active form. Semi-purified cell-free extracts of ∆mftG-mftGHis6 incubated with metabolome extract from M. smegmatis ∆mftG as substrate showed that the mftG-mftGHis6 lysate significantly increased the amount of MMFT-8 and decreased the amount of the MMFT-8H2 while the ∆mftG lysate did not affect the ratio of the two compounds (Figure 6A). Inspired by these results we conducted assays with semi-purified cell-free extracts from M. smegmatis ∆mftG-mftGHis6 with higher amounts of purified cofactors as substrates. We added synthetic PMFTH2 and purified MMFT-2H2 as substrates as well as synthetic PMFT as a negative control. The negative control using PMFT contained trace amounts of PMFTH2 from the start and no clear trend was observed over the time course of the reaction (Figure 6B). In contrast to this, we observed conversion of both reduced substrates PMFTH2 (Figure 6C) and MMFTH-2H2 (Figure 6D) to the corresponding oxidized species PMFT and MMFT-2, respectively. However, the reaction proceeded only with partial conversion of the substrate. Additionally, since some enzymes of the GMC family can utilize oxygen as electron acceptors, the role of oxygen in MftG activity was accessed. To this end, the assays were performed under a nitrogen atmosphere at <0.1% oxygen. Under these conditions, the MftG activity remained unchanged (Figure 6C and D), thus ruling out that MftG acts as a mycofactocin oxidase using O2 as an electron acceptor.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig6-v1.jpg)
+
+**Figure 6.:** (A) Mycofactocinol oxidation assay with semi-purified cell-free extract of M. smegmatis ∆mftG or ∆mftG-mftGHis6 using ∆mftG metabolome extract as substrate (naturally enriched in reduced MFT as described in Figure 5F). Result showing the oxidation of MMFT-8H2 to MMFT-8 after overnight incubation (ON) when semi-purified cell-free extract from ∆mftG-mftGHis6 is used. t0 – start of the assay. (B) Assay with semi-purified cell-free extract of ∆mftG-mftGHis6 using synthetic PMFT as a control substrate showed no relevant reaction. (C) Successful oxidation of PMFTH2 when synthetic PMFTH2 was used as substrate (C13H17NO3, RT: 7.84 min, m/z 236.1281 [M+H]+) to PMFT (C13H15NO3, RT: 8.40 min, m/z 234.1125 [M+H]+). Black and grey lines depict reactions performed in an anaerobic chamber. (D) Successful oxidation of MMFT-2H2 (C26H39NO13, RT: 7.10 min, m/z: 574.2494 [M+H]+) to MMFT-2 (C26H37NO13, RT: 7.47 min, m/z 572.2338 [M+H]+). Black and grey lines depict assays performed in the anaerobic chamber (E) Mycofactocinol (MMFT-2H2) oxidation using MftG heterologously produced in E. coli and DCPIP, NAD+, NDMA, and PMS as potential electron acceptors. Control – no MftG added; Enzyme – MftG added. (F) Dose-dependent effect of heterologously expressed MftG on the oxidation of MMFT-2H2 to MMFT-2 was observed after a 24 h incubation period. Sample size of all experiments n=3. Error bars represent standard deviations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Experimental conditions were similar to assays shown in Figure 6E of the manuscript, except that metabolome extract from M. smegmatis containing MMFT-8H2 and MMMT-8 was used as a substrate. MftG: enzyme preparation from E. coli expressing mftG. Empty vector: enzyme preparation obtained from E. coli with empty expression vector. Inactivated MftG: enzyme preparation of E. coli expressing mftG, heat-treated at 99 °C for 10 min. Oxidation of MMFT-8H2 to MMFT-8 was associated with the presence of active MftG.
 
 In order to confirm that the activity detected in cell-free lysates was not due to background effects, the heterologous production of MftG in Escherichia coli followed by activity assays was attempted. Despite poor production and solubility of MftG in E. coli, we detected MftG activity in semi-purified fractions of E. coli producing MftG tagged with maltose-binding-protein (pPG36). While mycofactocin dehydrogenase activity was clearly linked to the overexpression of MftG (Figure 6—figure supplement 1), only partial turnover of substrate was still observed suggesting the absence of an appropriate electron acceptor. A screening for several potential electron acceptors was performed using MMFT-2H2 as substrate. However, none of the potential acceptors tested, DCPIP, NAD+, NDMA, and PMS, were able to increase substrate turnover (Figure 6E). Assays with increasing concentrations of protein suggested that the observed activity was possibly due to single-turnover reactions, most likely using the FAD cofactor in the active site as an electron acceptor (Figure 6F).
 
 We, therefore, concluded that MftG can indeed interact with mycofactocins as electron donors but might require complex electron acceptors, for instance, proteins present in the respiratory chain.
 
-## Influence of MftG and MFT in mycobacterial respiration
+### Influence of MftG and MFT in mycobacterial respiration
 
 The phenotypes observed for cell growth and division together with an increased ratio of ADP/ATP in the ∆mftG strain suggested a potential involvement of MftG in mycobacterial respiration. To further test this hypothesis, the consumption of O2 from whole cells of M. smegmatis WT and ∆mftG grown on HdB-Tyl with 10 g L–1 of ethanol was measured in a respirometer equipped with a Clark-type electrode. This experiment revealed that the respiration rate of ∆mftG reached only about 45% of the WT level (Figure 7). Notably, the M. smegmatis carrying a duplicated mftG gene, WT-mftG, showed accelerated oxygen consumption, supporting the idea that MftG is a limiting factor in the respiration of mycobacteria grown on ethanol.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig7-v1.jpg)
 
-**Figure 7.:** M. smegmatis WT and ΔmftG mutants.(A) Respiration of intact cells. Average of n=3 (B) Respiration of WT isolated cell membranes and addition of electron donors as indicated in the figure. (C) Respiration of ΔmftG isolated cell membranes and addition of electron donors as indicated in the figure. NADH and succinate served as positive controls, and water as a negative control. KCN treatment served as inhibitor control. MMFT-2H2 and PMFTH2 were added to confirm MFT’s role as an electron donor. (D) Oxidation of PMFTH2 to PMFT in WT isolated membranes (combined LC-MS profiles). (E) Oxidation of PMFTH2 to PMFT of the ΔmftG isolated membranes (combined LC-MS profiles). Each inset depicts the profile after KCN treatment. Representative data was selected from independent experiments n≥3.
+**Figure 7.:** (A) Respiration of intact cells. Average of n=3 (B) Respiration of WT isolated cell membranes and addition of electron donors as indicated in the figure. (C) Respiration of ΔmftG isolated cell membranes and addition of electron donors as indicated in the figure. NADH and succinate served as positive controls, and water as a negative control. KCN treatment served as inhibitor control. MMFT-2H2 and PMFTH2 were added to confirm MFT’s role as an electron donor. (D) Oxidation of PMFTH2 to PMFT in WT isolated membranes (combined LC-MS profiles). (E) Oxidation of PMFTH2 to PMFT of the ΔmftG isolated membranes (combined LC-MS profiles). Each inset depicts the profile after KCN treatment. Representative data was selected from independent experiments n≥3.
 
 To test whether MftG might interact with components of the respiratory chain, we investigated mycobacterial membrane preparations for respiratory activities. The influence of mycofactocin on mycobacterial respiration was tested using isolated membranes from M. smegmatis WT supplemented with either NADH, succinate, synthetic PMFTH2, or purified MMFT-2H2. In these respiration assays, the consumption of oxygen after supplementation with NADH or succinate was highly increased showing the expected respiratory activity of the isolated membranes via NADH or succinate dehydrogenases (Figure 7). The addition of PMFTH2 or MMFT-2H2 stimulated oxygen consumption to a rate that was comparable to succinate-induced respiration of the WT strain. In M. smegmatis, cyanide is a known inhibitor of the cytochrome bc1-aa3 but not of cytochrome bd (Kana et al., 2001). Therefore, the decrease of oxygen consumption in the presence of KCN (Figure 7) revealed that MFT-induced oxygen consumption is indeed linked to mycobacterial respiration.
 
@@ -116,7 +142,7 @@ The membrane fraction of the ∆mftG strain showed a decreased consumption of ox
 
 From the respirometry experiments, we conclude that MftG catalyzes the electron transfer from mycofactocinol to membrane-bound components of the respiratory chain. These could be the quinone pool as known from succinate dehydrogenase complex, or cytochromes. For example, MftG in mycobacteria might play a similar role as the subunit II of the pyrroquinoline quinone-dependent alcohol dehydrogenase (PQQ-ADH) complex from acetic acid bacteria. The subunit II transfers electrons from the alcohol dehydrogenase (subunit I/III) to the ubiquinone pool, from which further electron transfer to oxygen occurs (Yakushi and Matsushita, 2010).
 
-## Transcriptomic analysis of M. smegmatis ∆mftG cells
+### Transcriptomic analysis of M. smegmatis ∆mftG cells
 
 To monitor genome-wide regulatory adaptation caused by mftG deletion, we employed high-throughput sequencing to record transcriptomic changes in WT and ∆mftG cells when grown to exponential phase (60 h of incubation for ∆mftG on ethanol) on glucose or ethanol. In the glucose condition, only nine out of 6506 annotated genes were classified as significantly upregulated in ∆mftG when compared to the WT (adjusted p-value <0.05 and log2FoldChange >2). Since these genes showed neither functional nor spatial clustering, we conclude that no meaningful differences in the mycobacterial transcriptome between WT and mutant grown on glucose were observed (Supplementary file 3, Table S2).
 
@@ -124,7 +150,7 @@ On the contrary, transcriptomics analysis of ∆mftG and WT grown on ethanol det
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/97559/elife-97559-fig8-v1.jpg)
 
-**Figure 8.:** mftG deletion in M. smegmatis grown on 10 g L–1 ethanol as the sole carbon source compared to WT.(A,B) Functional annotation chart (Gene ontology enrichment analysis) of the (A) up- and (B) down-regulated processes. Gene ratio denotes the ratio of the involved genes (count) to the quantity of the genes making up the enriched terms. (C) Impact on the respiration of the mutant strain ∆mftG grown on 10 g L–1 ethanol compared to WT strain. Blue represents genes downregulated p<0.05 and log2FC< –2. Red represents genes upregulated p<0.05 and log2FC >2. Protein figures retrieved from public databases NADH-II: A0QYD6, NADH-I: 8E9G, Cyt bd: 7D5I, Cyt bc1-aa3: 7RH5, SDH-II: 6LUM, Sdh-I: 7D6X, ATP synthase: 7NJK.
+**Figure 8.:** (A,B) Functional annotation chart (Gene ontology enrichment analysis) of the (A) up- and (B) down-regulated processes. Gene ratio denotes the ratio of the involved genes (count) to the quantity of the genes making up the enriched terms. (C) Impact on the respiration of the mutant strain ∆mftG grown on 10 g L–1 ethanol compared to WT strain. Blue represents genes downregulated p<0.05 and log2FC< –2. Red represents genes upregulated p<0.05 and log2FC >2. Protein figures retrieved from public databases NADH-II: A0QYD6, NADH-I: 8E9G, Cyt bd: 7D5I, Cyt bc1-aa3: 7RH5, SDH-II: 6LUM, Sdh-I: 7D6X, ATP synthase: 7NJK.
 
 Reflecting the division arrest phenotype observed by super-resolution microscopy, peptidoglycan biosynthesis, represented by the genes murABCDEFG (e.g. MSMEG_1661, MSMEG_6276, MSMEG_2396, MSMEG_4194) was found to be downregulated. DNA replication was also affected in ∆mftG grown on ethanol by the downregulation of RNaseH (MSMEG_4306), DNA polymerase (MSMEG_3839), helicase (MSMEG_6892), and all the modules of the DNA polymerase III holoenzyme (MSMEG_4259, MSMEG_3178, MSMEG_6285, MSMEG_6153, MSMEG_4572 and dnaN).
 
@@ -146,11 +172,11 @@ Taken together, we close an important knowledge gap by showing that the flavopro
 
 ## Materials and methods
 
-## Bacterial strains and culture media
+### Bacterial strains and culture media
 
 The Mycolicibacterium smegmatis MC2 155 strain was used in this study. All generated mycobacterial strains were maintained at 37 °C in lysogeny broth (LB) supplemented with 0.5 g L–1 Tween 80 (LBT). Escherichia coli TOP10 (Thermo Fischer Scientific) was used to propagate plasmids on LB medium supplemented with either 100 μg mL–1 hygromycin B (Carl Roth) or 50 μg mL–1 kanamycin (Carl Roth). E. coli NiCo21(DE3) (New England Biolabs) was used to express recombinant proteins. Genomic manipulation of M. smegmatis was performed in LBT supplemented with 60 μg mL–1 hygromycin B and 10 g L−1 sucrose for double crossover event or 50 μg mL–1 kanamycin for gfp-hyg cassette removal and complementation/overexpression strain generation. Studies for comparison between WT and mutants were performed with adapted Hartmans de Bont medium (Ellerhorst et al., 2022) (HdB-Tyl) containing (NH4)2SO4 2 g L−1, MgCl2·6H2O 0.1 g L−1, Na2HPO4 anhydrous 3 g L−1, and KH2PO4 anhydrous 1.07 g L−1 supplemented with 0.1% [v/v] 1000× trace element solution (ethylenediaminetetraacetic acid 10.0 g L−1, CaCl2·2H2O 1.0 g L−1, Na2MoO4·2H2O 0.2 g L−1, CoCl2·6H2O 0.4 g L−1, MnCl2·2H2O 1.0 g L−1, ZnSO4·7H2O 2.0 g L−1, FeSO4·7H2O 5.0 g L−1, and CuSO4·5H2O 0.2 g L−1) and 0.5 g L–1 tyloxapol (Sigma Aldrich) and supplemented with the appropriate carbon source: 10 g L–1 absolute ethanol (TH.Geyer), 10 g L–1 glucose (Carl Roth), 1% [v/v] glycerol (Carl Roth), 5 g L–1 acetate (Carl Roth), 10 g L–1 methanol (Carl Roth), 10 g L–1 1-propanol (Sigma-Aldrich), 5 g L–1 1-butanol (Sigma-Aldrich), 5 g L–1 hexanol (Sigma-Aldrich), 0.010 g L–1 acetaldehyde, 10 g L–1 propane-1,2-diol (Sigma-Aldrich) and 10 g L–1 propane-1,3-diol (Sigma-Aldrich).
 
-## Bioinformatics analysis of MftG, co-occurrence and phylogenetic analysis
+### Bioinformatics analysis of MftG, co-occurrence and phylogenetic analysis
 
 The AlphaFold (Jumper et al., 2021) structure prediction of MftG from M. smegmatis MC2 155 (model AF-I7F8I2-F1) was retrieved from the AlphaFold Protein Structure Database (Varadi et al., 2022). In order to investigate the FAD binding pocket, the closest homolog of MftG with a solved crystal structure, HMFO oxidase (PDB: 4UDP; Dijkman et al., 2015) was retrieved from the Protein Data Bank (PDB). The structure of HMFO oxidase was superimposed with the AlphaFold model of MftG using the matchmaker feature in ChimeraX version 1.2.5 (Goddard et al., 2018). The FAD molecule present in the HMFO oxidase crystal structure was used to complement the MftG model. The characteristic Rossman fold (GXGXXG) and histidine active site were identified through the alignment feature (MUSCLE) in Geneious Prime version 2022.2.2. comparing the aforementioned M. smegmatis protein sequence with examples of different activity GMCs previously described (Aleksenko et al., 2020). The regions were highlighted in the predicted structure.
 
@@ -158,90 +184,268 @@ The co-occurrence of mftG and mftC was analyzed similarly as described before (E
 
 The search for other GMC proteins that could be present in the genomes of strains that contain the mycofactocin cluster (but no MftG) was performed by collecting a list of putative homologs of M. smegmatis MC2 155 Uniprot accession number A0QSC2 through BLASTP search of the non-redundant protein database from NCBI with the NCBI tool search with the following settings: max target sequences 5000, expect threshold 0.0002, word size 6, BLOSUM62, gap cost exist 11, gap cost extend 1, conditional compositional score matrix adjustment and filter low complexity regions (Altschul et al., 1990). Partial sequences were not included in the analysis. The protein sequences of all GMC proteins obtained, as well as 16 previously published reference GMC enzymes, were used for phylogenetic analysis and are listed in Supplementary file 2, Table S1. The sequences were aligned using MAFFT (Katoh et al., 2002) and the phylogenetic tree was built using the maximum likelihood methods implemented in FastTree 2.1.11 (Price et al., 2010) with WAG substitution model (both programs implemented as Geneious plugins). The tree was further edited using TreeViewer Version 2.1 (Bianchini and Sánchez-Baracaldo, 2023) to condense phylogenetic clades and full tree was colored using FigTree v1.4.4.
 
-## Plasmids and M. smegmatis genetic manipulation
+### Plasmids and M. smegmatis genetic manipulation
 
 The M. smegmatis MC2 155 mutants were produced using the pML2424/pML2714 (Ofer et al., 2012) system combined with the pMCpAINT complementation vector (Krishnamoorthy et al., 2019). The plasmid for mftG removal (pPG17) resulted from the combination of the vector pML2424 with SpeI/SwaI and PacI/NsiI ligation with the amplified upstream and downstream regions of mftG using primers described in Table 1, flanking the gfp-hyg cassette. Preparation of mycobacterial competent cells and transformation was conducted as previously described (Ellerhorst et al., 2022). The confirmation of the mutant (∆mftG) was achieved with PCR amplification of external and internal primers (Table 1) after the removal of the selection cassette using Cre recombinase from pML2714. The ∆mftG was made competent for complementation (∆mftG-mftG) and overexpression (WT-mftG) of mftG by genome integration using plasmid pPG29, which originated from pMCpAINT as a backbone by the addition of a NdeI restriction site using the primers listed in Table 1. The linearized plasmid was cut with NdeI and BamHI for the introduction of the native M. smegmatis MC2 155 mftG gene (synthesized by BioCat). To obtain the overexpression strain (WT-mftG), the WT strain was transformed with pPG29. The plasmid pPG32 was obtained by PCR using pPG29 as a template and appropriate primers to add the hexa-histidine tag at the C-terminus (Table 1). It was subsequently used to transform the ∆mftG strain and used for mftGhis6 expression (∆mftG-mftGHis6). The plasmid pPG23 was constructed using pPG20 as a backbone, introducing at the NcoI/HindIII cutting sites the PCR-amplified mycofactocin operon mftA-F (primers listed in Table 1) and used to generate the strain WT-mftABCDEF with the integration of the plasmid in the WT strain. The PCR amplifications were performed using Q5 High-Fidelity DNA Polymerase (New England Biolabs) with supplementation with High GC-enhancer to the reaction following the manufacturer’s instructions and primers synthesized by Eurofins Genomics. The plasmids were constructed using T4 DNA ligase (New England Biolabs) with a molar ratio of 3:1 of insert to backbone. All the molecular Biology work was planned using Geneious Prime version 2022.2.2. (https://www.geneious.com/). All plasmids and strains are listed in Table 1, plasmid sequences are available in the Supplementary Information Text 1.
 
-## Growth curves of M. smegmatis
+**Table 1.**
+ List of M. smegmatis and E. coli strains, vectors, plasmids and primers used and generated on the course of this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Description</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>Mycolicibacterium smegmatis MC2 155</td>
+      <td>Krishnamoorthy et al., 2019</td>
+    </tr>
+    <tr>
+      <td>∆mftG</td>
+      <td>derivate of WT without mftG replaced with loxP site</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>∆mftG-mftG</td>
+      <td>derivate of ∆mftG integrated with pPG29 at the attB site</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>WT-mftG</td>
+      <td>derivate of WT integrated with pPG29 at the attB site</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>∆mftG- mftGHis6</td>
+      <td>derivate of ∆mftG integrated with pPG32 at the attB site</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>WT-mftABCDEF</td>
+      <td>derivate of WT integrated with pPG23 at the attB site</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>NiCo21(DE3) Competent E. coli</td>
+      <td>derived from E. coli BL21 (DE3)</td>
+      <td>New England Biolabs</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli TOP10</td>
+      <td>F–mcrA Δ(mrr-hsdRMS-mcrBC) φ80lacZΔM15 ΔlacX74 recA1 araD139 Δ(ara-leu)7697 galU galK λ–rpsL(StrR) endA1 nupG</td>
+      <td>Thermo Fischer</td>
+    </tr>
+    <tr>
+      <td>Plasmid name</td>
+      <td>Backbone</td>
+      <td>Reference</td>
+    </tr>
+    <tr>
+      <td>pML2424</td>
+      <td>vector for double crossover event with tdTomato, gfp-hyg cassette, and PAL5000ts</td>
+      <td>Ofer et al., 2012</td>
+    </tr>
+    <tr>
+      <td>pML2714</td>
+      <td>vector with kanamycin resistance for Cre recombinase expression and gfp-hyg cassette removal</td>
+      <td>Ofer et al., 2012</td>
+    </tr>
+    <tr>
+      <td>pPG20</td>
+      <td>pMCpAINT derivate with kanamycin resistance, potential mycofactocin promotor, and mftF</td>
+      <td>Peña-Ortiz et al., 2020a</td>
+    </tr>
+    <tr>
+      <td>pPG17</td>
+      <td>pML2424 with up and downstream regions of mftG</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>pPG23</td>
+      <td>pMCpAINT derivate with kanamycin resistance, potential mycofactocin promotor, and mftABCDEF</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>pPG29</td>
+      <td>pPG20 with mftF replaced with mftG</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>pPG32</td>
+      <td>pPG29 with mftG replaced with mftGHis6</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>pPG36</td>
+      <td>pMAL-C4X with malE fused with mftG codon optimized for E. coli expression</td>
+      <td>this study</td>
+    </tr>
+    <tr>
+      <td>Primer name</td>
+      <td>Primer sequence 5’–3’</td>
+      <td>Amplicon</td>
+    </tr>
+    <tr>
+      <td>GMC_up_F1</td>
+      <td>GCTACACTAGTCGGTGTCGTATGTGCCGAG</td>
+      <td rowspan="2">upstream region of mftG</td>
+    </tr>
+    <tr>
+      <td>GMC_up_R1</td>
+      <td>GCTACATTTAAATTCAAAGTCGGCGGCTAACTC</td>
+    </tr>
+    <tr>
+      <td>GMC_dn_F1</td>
+      <td>GCTACTTAATTAATCGACGGCTCGATCATGC</td>
+      <td rowspan="2">downstream region of mftG</td>
+    </tr>
+    <tr>
+      <td>GMC_dn_R1</td>
+      <td>GCTACATGCATGTTGTCGAGGCTCCGGTG</td>
+    </tr>
+    <tr>
+      <td>INT_GMC_F1</td>
+      <td>CACTATGGGTCGACGCTGAC</td>
+      <td rowspan="2">internal region of mftG</td>
+    </tr>
+    <tr>
+      <td>INT_GMC_R1</td>
+      <td>GCGTGACTTACCAATTCGCG</td>
+    </tr>
+    <tr>
+      <td>EXT_GMC_F1</td>
+      <td>AACATCGTGGCCCGGTAC</td>
+      <td rowspan="2">external region of mftG</td>
+    </tr>
+    <tr>
+      <td>EXT_GMC_R1</td>
+      <td>CTCCTCACGCGACGACTC</td>
+    </tr>
+    <tr>
+      <td>pMCpAINT_FC_F</td>
+      <td>GCTACAAGCTTATCGATGTCGACGTAGTTAAC</td>
+      <td rowspan="2">backbone pMCpAINT introducing NdeI</td>
+    </tr>
+    <tr>
+      <td>pPG20_NdeI_R</td>
+      <td>GCTACCCATATGCGTATGGTCTCGACAGTTGT</td>
+    </tr>
+    <tr>
+      <td>GMC_COMP_F1</td>
+      <td>GCTACCCATATGGAGTTAGCCGCCGACTTT</td>
+      <td rowspan="2">insertion of 6 histidines C-terminally</td>
+    </tr>
+    <tr>
+      <td>GMC_Hist_R3</td>
+      <td>GCTACAAGCTTACTATTAGTGGTGGTGGTGGTGGTGGGTCGCGATG AACTCGGC</td>
+    </tr>
+    <tr>
+      <td>pMCpAINT_conf_2_F</td>
+      <td>CTGATACCGCTCGCCGCA</td>
+      <td rowspan="2">sequencing confirmation</td>
+    </tr>
+    <tr>
+      <td>pMCpAINT_conf_2_R</td>
+      <td>CTTTCGACTGAGCCTTTCGT</td>
+    </tr>
+    <tr>
+      <td>MFTKIMS_FC_KI_CLUSTER_F2</td>
+      <td>GCTACCCATGGTCGGACATCTCTCACACCCC</td>
+      <td rowspan="2">region from hypothetical mycofactocin precursor until end of mftF</td>
+    </tr>
+    <tr>
+      <td>MS_FC_KI_CLUSTER_R1</td>
+      <td>GTTAACTACGTCGACATCGATAAGCTTTCAAAGTCGGCGGCTAACTC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth curves of M. smegmatis
 
 Growth curves of M. smegmatis WT, ∆mftG, ∆mftG-mftG, and WT-mftG using HdB-Tyl supplemented with 10 g L–1 ethanol or 10 g L–1 glucose as the sole carbon source at 37 °C and 210 rpm were performed three times in biological triplicates. Evaluation of growth on 1% [v/v] glycerol, 5 g L–1 acetate, 10 g L–1 methanol, 10 g L–1 1-propanol, 5 g L–1 1-butanol, 0.5% hexanol [v/v], 0.010 g L–1 acetaldehyde, 10 g L–1 propane-1,2-diol, 10 g L–1 propane-1,3-diol were performed in at least duplicates. Culture of the strains grown on HdB-Tyl supplemented with 10 g L–1 glucose at 37 °C and 210 rpm for 24 h was used as pre-inoculum. Cultures were centrifuged at 4000×g for 5 min and the supernatant was removed. The pellet was resuspended with base HdB-Tyl and used as inoculum for new cultures in a total volume of 40 mL in 250 mL Erlenmeyer flasks (50 mm Ø) with starting OD600 of 0.1 and closed with breathable rayon film (VWR). The cultures were monitored using the Cell Growth Quantifier (Aquila Biolabs) with readings every 60 s and incubated at 37 °C and 210 rpm until the late stationary phase was reached. Recorded data were further processed using CGQquant (Aquila Biolabs) for merging the replicates. The resulting average and standard deviation data were plotted in GraphPad Prism 9.
 
-## Ethanol, acetaldehyde, and acetate quantification
+### Ethanol, acetaldehyde, and acetate quantification
 
 Cultures of the WT, ∆mftG, ∆mftG-mftG, and WT-mftG were grown (starting OD600 of 0.1, 37 °C, 210 rpm) in triplicates in HdB-Tyl supplemented with 10 g L–1 ethanol for 24 h, 32 h, 48 h, and 72 h and quantified for ethanol, acetaldehyde, and acetate concentration. The culture of ∆mftG starting at OD600=1 and medium without inoculum were also analyzed. The samples were centrifuged at 17,000×g for 20 min and supernatants were sterilized using 0.2 µm cellulose acetate membrane filters (VWR) and kept at –20 °C until further analysis. The samples were diluted 1:10 with 0.005 mol L–1 H2SO4 and 50 µL injected in an HPLC X-LC (JASCO International Co) using a pre-column Kromasil 100 C18, 40 mm x 4 mm, 5 µm (Dr. Maisch GmbH, Ammerbuch-Entringen) combined with the column Aminex HPX-87H Ion Exclusion Column, 300 mm x 7.8 mm, 9 µm (Bio-Rad) with isocratic mobile phase 0.005 mol L–1 H2SO4, flow 0.5 mL min–1, heated to 50 °C. Detection was performed via refractive index (RI) and UV (210 nm) and compared with standards of ethanol (Uvasol for spectroscopy, Merck), acetaldehyde (Reagent plus, Sigma-Aldrich), and acetic acid (100%, water-free, p.a., Merck). Acetaldehyde content was further quantified using the supernatant of WT and ∆mftG grown in HdB-Tyl supplemented with 10 g L–1 ethanol alone and 10 g L–1 glucose combined with 10 g L–1 ethanol for 48 h as described in the Acetaldehyde Assay Kit (Sigma-Aldrich) by the manufacturers.
 
-## Flow cytometry measurements
+### Flow cytometry measurements
 
 The cultures of WT, ∆mftG, ∆mftG-mftG, and WT-mftG grown in HdB-Tyl supplemented with 10 g L–1 glucose, 10 g L–1 ethanol, 10 g L–1 glucose and 10 g L–1 ethanol combined or no carbon source (starvation) incubated at 37 °C and 210 rpm were sampled at 24 hr, 48 hr, and 72 hr, centrifuged at 4000×g for 5 min and the supernatant removed. Samples were re-suspended in 500 µL HdB-Tyl with no carbon source with OD600 adjusted to 0.2. To samples of each condition were added either 2.5 µL of 750 µM of propidium iodide; 3 µL of 3 mM 3,3'-diethyloxacarbocyanine iodide [DIOC2(3)]; 20 µL of 500 mM of the protonophore (uncoupler) carbonyl cyanide 3-chlorophenylhydrazone (CCCP, Sigma-Aldrich) followed by 3 µL of 3 mM DIOC2(3) combined. Samples were incubated for 15 min and briefly vortexed. All the samples were injected on a FACS AriaFusion (BD Biosciences) and for each sample, FSC and SSC were detected using the blue laser (488 nm) and a threshold set to 400. The propidium iodide is excited by 488 nm and has an emission of 630 nm and emission was detected with the help of a 600 nm long-pass filter and a 610/20 nm bandpass filter. DiOC2(3) has the excitation maximum at 488 nm and the cells with a low level of transmembrane potential (or the cells treated with uncoupler CCCP) have a maximum emission at 530 nm (green color), the cells with a higher level of electric potential energy accumulate more concentration of this lipophilic dye, which results in its accumulation within the cells and these aggregates of dye have a maximum of emission at 600 nm (red fluorescence; Novo et al., 1999; Nikitushkin et al., 2020). The emission of DIOC2(3) was detected with the help of a 502 nm long-pass filter and a 530/30 nm bandpass filter and 600 nm long-pass filter and a 610/20 nm bandpass. PMT voltages were adjusted to values of 600 V for the red channel and 350 V for the blue channel. The propidium iodide data were analyzed in a batch using flowCore (Hahne et al., 2009) and ggcyto (Van et al., 2018) R packages in R (version 4.1.0). Single cells were gated using FSC.A vs. FSC.H (intensities below 0.5e3 and above 1e5 have been discarded) and in the following step the highly fluorescent single cells were gated using YG610.A vs. FSC.A. The transmembrane potential data (DIOC2(3) and CCCP) were directly gated using FlowJo v10.8 Software (BD Life Sciences) in coordinates B530.A~Y610.A (Nikitushkin et al., 2020).
 
-## Phenotype microarrays
+### Phenotype microarrays
 
 The full panel of phenotype microarrays (PMs) on BioLog plates was used to detect additional phenotypes. The initial cultures of M. smegmatis WT and ∆mftG were grown in LB overnight at 37 °C and 210 rpm, after 24 h the cultures were upscaled to 50 mL in HdB-Tyl supplemented with 10 g L–1 glucose. Preparation of M. smegmatis cells for PMs was performed with minor changes compared to the one previously described (Karlikowska et al., 2021). After 24 hr, the cultures were centrifuged at 4000×g for 5 min and the supernatant was removed. The cells were resuspended in base HdB-Tyl and stored for 22 h at room temperature for starvation. The cultures were once again centrifuged at 4000×g for 5 min, the supernatant discarded and the cells resuspended in GN/IF-0 to an OD600 of 0.68. The culture was then supplemented with a PM mixture. The culture mixture of the WT and ∆mftG was inoculated with 100 µL in each well of the 20 plates and incubated at 37 °C for 48 hr. The OD595 was measured in a CLARIOStar microplate reader (BMG Labtech) after 48 h and 72 h. The sensitivity plates data was analyzed towards differences of growth compared to control growth of each strain and between ∆mftG and WT. Only differences in growth percentages comparing WT and ∆mftG [(%∆mftG *100)/ % WT] above 150% or under 50% were considered for discussion and results were plotted using GraphPad Prism 9.
 
-## Fluorescent d-amino acid (FDAA) labeling
+### Fluorescent d-amino acid (FDAA) labeling
 
 To target peptidoglycan biosynthesis, fluorescently labeled D-amino acids were incorporated into the nascent peptidoglycan as previously reported (Kuru et al., 2019). Briefly, WT, ∆mftG, and ∆mftG-mftG cells were grown in HdB-Tyl supplemented with either 10 g L–1 glucose, 10 g L–1 ethanol, or 10 g L–1 glucose combined with 10 g L–1 ethanol. The starvation condition was accomplished with the incubation of bacteria in a plain HdB-Tyl medium with no carbon source added. The cultures were incubated at 37 °C and 210 rpm until the mid-logarithmic growth phase. For FDAA incorporation, the green NADA was added to a final concentration of 250 µM, and cells were left to grow for 2.5 hr. To stop incorporation, cells were placed on ice for 2 min followed by one washing step with ice-cold PBS. The red RADA was added to the same final concentration for 2.5 hr. After the final washing step with PBS, bacterial cells were fixed with 4% (v/v) paraformaldehyde (PFA) solution for 20 min at 4 °C.
 
-## Super-resolved structured illumination microscopy (SR-SIM)
+### Super-resolved structured illumination microscopy (SR-SIM)
 
 For the SR-SIM imaging, 10 μL of the sample was spotted on 10 g L–1 agarose pads. The agarose pads were covered with 1.5 H coverslips (Roth) and stored at 4 °C for further imaging. The SR-SIM data were acquired on an Elyra 7 system (Zeiss) equipped with a 63×/1.4 NA Plan-Apochromat oil-immersion DIC M27 objective lens (Zeiss), a Piezo stage, and a PCO edge sCMOS camera with 82% QE and a liquid cooling system with 16-bit dynamic range. Using Lattice SIM mode, images were acquired with 13 phases. NADA was detected with a 488 nm laser and a BP 495–590 emission filter; RADA was detected with a 561 laser and an LP 570 emission filter. Super-resolution images were computationally reconstructed from the raw data sets using default settings on ZenBlack software (Zeiss). Images were analyzed using the Fiji ImageJ software (Schindelin et al., 2012).
 
-## NADH/NAD+ and ADP/ATP ratio measurement
+### NADH/NAD+ and ADP/ATP ratio measurement
 
 The M. smegmatis WT and ∆mftG strains were grown in triplicates on HdB-Tyl supplemented with 10 g L–1 ethanol as the sole carbon source and incubated at 37 °C and 210 rpm with starting OD600=0.1 for WT and OD600=1 for ∆mftG for a period of 48 hr. Samples of culture were adjusted to OD600 0.5 mL–1 and processed according to the manufacturer’s instruction ADP/ATP Ratio Assay Kit (Sigma-Aldrich). For NADH/NAD+ quantification samples from WT and ∆mftG grown in triplicates on HdB-Tyl supplemented with 10 g L–1 glucose for 24 h were also quantified. Different cell concentrations were tested with the best result OD600 of 0.1. Bacterial suspensions were diluted in ice-cold PBS (8 g L–1 NaCl, 0.2 g L–1 KH2PO4, 1.15 g L–1 Na2HPO4, 0.2 g L–1 KCl, at pH 7.4), samples were centrifuged at 10,000 x g, 4 °C, for 5 min, and the resulting pellets were extracted with 100 µL of extraction buffer either for NAD +or NADH extraction. The resulting extracts were treated and measured according to the NAD+/NADH Assay Kit manufactures’ protocol (MAK460, Sigma-Aldrich). The readings of each plate were acquired using a CLARIOStar microplate reader (BMG Labtech) and data were further plotted and statistical analysis performed in GraphPad Prism9.
 
-## MFT profiling
+### MFT profiling
 
 The workflow for metabolome extraction was based on our previously described protocol with small changes (Ellerhorst et al., 2022). The M. smegmatis WT and ∆mftG, cultures were incubated in HdB-Tyl with either 10 g L–1 glucose or 10 g L–1 ethanol at 37 °C and 210 rpm in triplicates. Cultures were quenched at the exponential phase, for WT and ∆mftG strain at 30 h in glucose and WT strain at 35 h in ethanol. The ∆mftG strain grown in ethanol was quenched at 60 h when it presented a small growth. Cultures were also sampled at stationary phases, for WT and ∆mftG strains at 45 h in glucose and WT strain at 60 h in ethanol. The M. smegmatis ∆mftG-mftG and WT-mftG strains were grown in HdB-Tyl with 10 g L–1 ethanol at 37 °C and 210 rpm in triplicates and quenched only at the stationary phase (60 hr). The samples were normalized upon sampling to 10 mL of 1 unit of OD600, quenched in 20 mL of cold extraction mix (acetonitrile:methanol:water: FA; 60:20:19:1, v/v), and extracted as described previously (Peña-Ortiz et al., 2020a). The lyophilized samples were dissolved with 450 µL LC-MS grade water (VWR) twice, combined, and the extracts were centrifuged at 17,000×g for 20 min twice to remove debris and kept at –20 °C until analysis. The metabolomes were analyzed using 10 µL injection in LC-MS/MS, Dionex UltiMate 3000 UHPLC connected to a Q Exactive Plus mass spectrometer (Thermo Fisher Scientific), using the previously described method (Peña-Ortiz et al., 2020a).
 
 LC-MS/MS raw files were loaded into MZmine version 2.53 (Pluskal et al., 2010) and processed via the following pipeline for targeted peak analysis. Mass lists were created on MS1 and MS2 levels using the mass detector module set to centroid with a noise level of 0. Mass detection was followed by targeted peak integration using the targeted feature detection module set to MS level: 1, intensity tolerance: 50%, noise level: 0, m/z tolerance: 0 m/z or 5 ppm, retention time tolerance: 0.2 min, and a target list comprising expected protonated ions of the most abundant mycofactocin congener found in vivo: Methylmycofactocinol-8 (MMFT-8H2, sum formula: C62H99NO43, expected retention time: 6.81 min, expected m/z 1546.5663 [M+H]+) and the corresponding oxidized form Methylmycofactocinone-8 (MMFT-8, sum formula: C62H97NO43, expected retention time: 7.18 min, expected m/z 1544.5507 [M+H]+). Theoretical mass-to-charge ratios were calculated using the respective sum formulae and the enviPat web interface (Loos et al., 2015). Resulting feature lists were filtered for the presence of at least one entry to remove empty rows and aligned using the RANSAC aligner module with the following settings: m/z tolerance: 0 m/z or 5 ppm, retention time tolerance: 0.2 min before and after correction, RANSAC iterations: 104, the minimum number of points: 20%, threshold value: 1, linear model: false, require same charge state: false. The resulting aligned feature list was manually inspected for misidentifications and exported as a comma-separated value table. Statistical analysis and plotting were performed with GraphPad Prism 9. Ratios between oxidized and reduced forms were calculated using MMFT-8H2/MMFT-8.
 
-## Purification of methylmycofactocinol-2 (MMFT-2H2) from WT-mftABCDEF
+### Purification of methylmycofactocinol-2 (MMFT-2H2) from WT-mftABCDEF
 
 To isolate MMFT-2H2 from M. smegmatis, the mycofactocin gene cluster duplication strain WT-mftABCDEF was built by integration of the plasmid pPG23 in the WT strain. A first preculture was prepared through inoculation of 3 mL LBT with the strain and incubation for 24 hr. The first preculture was used to inoculate a second preculture of 50 mL HdB-Tyl supplemented with 10 g L–1 glucose in a 250 mL shake flask and cultivated for 48 hr. From the second preculture 1:100 [v/v] was used to inoculate the 5 L main culture of 2 x HdB, that is all components except tyloxapol were concentrated twice compared to standard HdB-Tyl, supplemented with 3% [v/v] ethanol. The main culture was cultivated as 10x500 mL cultures in 2 L shake flasks sealed with breathable rayon film (VWR) for reproducible aeration for 72 hr. All cultivation steps were performed at 37 °C and 210 rpm in a shaker with a 25 mm throw. The culture was harvested through centrifugation at 8,000×g and 18 °C for 3 min. The cell pellet of the harvested culture was washed with 500 mL ultrapure water once followed by centrifugation at 8000×g and 18 °C for 5 min and resuspension in 500 mL of 50 mM citrate phosphate buffer (Na2HPO4 anhydrous 7.1 g L–1, citric acid 9.6 g L–1, pH 5.2). The cell suspension was autoclaved at 134 °C for 30 min to disrupt the cells followed by treatment with 20 µg mL–1 of cellulase mix from Trichoderma reesei (Sigma Aldrich) at 37 °C for 18 h, which was subsequently heat-inactivated at 95 °C for 15 min to condense the pool of different long-chain mycofactocinols present in vivo to MMFT-2H2 and PMFTH2. The treated crude extract was cleared through centrifugation at 15,000×g and 18 °C for 20 min. To avoid column overloading, the extract was split into two 250 mL parts before fractionation on 70 mL/10 g octadecyl modified silica solid phase extraction columns (Chromabond SPE, Machery-Nagel). Before fractionation, the SPE column was washed with three column volumes of methanol (CV, 1 CV = 40 mL) followed by equilibration with three CVs of 50 mM citrate phosphate buffer. After application of the crude extract, bound molecules were washed with 1 CV water and step-wise eluted with 4 CV 80:20 [v/v] water:methanol, 3 CV 70:30 [v/v] water:methanol, and 1 CV 50:50 [v/v] water:methanol. Samples of each fraction were tested for the presence of MMFT-2H2 via LC-MS as described above. The 70:30 fraction showed the highest concentration of MMFT-2H2 and thus was subjected to further purification. The fraction was lyophilized at 1 mbar and –90 °C until all solvent was removed. The lyophilizate was resuspended in 500 µL water and subjected to a final purification via size-exclusion chromatography (SEC) using a Superdex 30 Increase 10/300 GL (Cytiva) equilibrated with 50 mL water operated at 500 µL min–1 on an NGC medium-pressure chromatography system (Bio-Rad). Per chromatography, 250 µL resuspended enriched fractions were separated. Each of the SEC fractions was tested for the presence of MMFT-2H2 via LC-MS/MS as described above and the fractions with the highest concentrations of MMFT-2H2 and lowest amounts of LC-MS/MS detectable impurities were combined and lyophilized at 0.01 mbar and –90 °C until complete dryness.
 
-## Synthesis of PMFT and PMFTH2
+### Synthesis of PMFT and PMFTH2
 
 Premycofactocinone (PMFT) and premycofactocinol (PMFTH2) were synthesized as reported previously (Ellerhorst et al., 2022).
 
-## Homologous MftG expression and assay
+### Homologous MftG expression and assay
 
 The strain ∆mftG-mftGHis6 was designed for the homologous expression of a hexahistidine-tagged MftG protein. In order to confirm the correct expression and activity of the induced protein the ∆mftG- mftGHis6 was grown in HdB-Tyl supplemented with 10 g L–1 ethanol to confirm recovery from the phenotype. The strains ∆mftG and ∆mftG- mftGHis6 were inoculated in 200 ml HdB-Tyl supplemented with 5 g L–1 glucose and 20 g L–1 ethanol in 1 L flasks covered with breathable membrane and starting OD600 of 0.1. The cultures were incubated for 48 h at 37 °C and 210 rpm and the cell pellet were retrieved after centrifugation at 8000 rpm for 20 min at 4 °C and stored at –20 °C. The cell pellet of both strains was resuspended in 8 mL PBS buffer with 5 mM imidazole, 300 mM NaCl, 50 µL protease inhibitor (1/100 solution), and 10 µM flavin adenine dinucleotide (FAD). The lysates were retrieved by sonicating (Bandelin Sonoplus UW 2070 homogenizer) the cells for 7.5 min (30 s on/off) at 70% cycle time and 70% amplitude in cold conditions and collection of supernatants after centrifugation at 15,000 rpm for 30 min at 4 °C. Lysates were incubated for 1 h 30 min with 2 mL Ni-NTA beads on ice under constant shaking. The beads and lysate were transferred to an empty column and flow-through discarded, the column was washed with 5 mM (2 CV) and 20 mM (2 CV) imidazole by gravity flow. The partially purified fraction was eluted using 100 mM imidazole and the buffer was changed to 0.1 M sodium phosphate at pH 7 using a PD-10 column. The proteins were concentrated using a Vivaspin6 10 kDa filter unit (Sartorius). The protein concentration was measured via absorption at 280 nm using a Nanodrop spectrophotometer (ThermoFisher) and adjusted to 0.500 mg mL–1.
 
 From each extract, 20 µL were assayed with 20 µL of ∆mftG metabolite extract and incubated at 37 °C, an initial sample was quenched with acetonitrile (1:1) directly after the mixture and final samples were quenched after 18 h of incubation. Pure substrates at 2 µM of MMFT-2H2, synthetic PMFTH2, and PMFT (Ellerhorst et al., 2022) were also used in the enzymatic assays, and samples every 20 min for a total of 2 h were retrieved and quenched as before. Heat-inactivated cell-free extract was used to confirm enzyme-dependent activity. All variables were performed in triplicates. The extracts were centrifuged at 17,000×g for 20 min and the supernatant was retrieved and centrifuged a second time in the same conditions to remove debris. From each assay, 10 µL were injected in LC-MS/MS and analyzed as described above. Differences of MMFT-8H2 and MMFT-8, MMFT-2H2 and MMFT-2, PMFTH2 and PMFT amounts between initial and different incubation points were retrieved with targeted analysis to the later compounds using MZmine version 2.53 (Pluskal et al., 2010).
 
-## Heterologous MftG expression and activity
+### Heterologous MftG expression and activity
 
 Escherichia coli NiCo21(DE3) was transformed with pPG36 as described. The pMAL-c4x-based plasmid harbored a gene for the expression of a maltose-binding protein fused N-terminally to MftG from M. smegmatis (WP_014877070.1) codon-optimized for the expression in E. coli obtained from BioCat. A single colony of E. coli NiCo21(DE3)/pPG36 was used to inoculate a preculture on 5 mL LB which was incubated at 37 °C and 210 rpm for 18 hr. Three mL of the preculture were used to inoculate 300 mL of LB in a 1 L shake flask. The expression culture was cultivated at 37 °C and 210 rpm until an OD600 of 0.6, when gene expression was induced through the addition of isopropyl β-D-1-thiogalactopyranoside (IPTG) at a final concentration of 1 mM. The induced expression culture was incubated at 18 °C and 210 rpm for 20 h. Media were supplemented with 100 µg mL–1 of ampicillin and cultivation was performed using an incubator with a throw of 25 mm. Cells were harvested through centrifugation at 8000 x g and 4 °C for 3 min. The cell pellet was resuspended in 12 mL lysis buffer (20 mM Tris, 200 mM NaCl, 1 mM EDTA, pH 7.4) and disrupted through sonication using a Bandelin Sonoplus UW 2070 homogenizer equipped with an MS 73 microtip operated at 70% cycle time and 70% amplitude for a total on-time of 7 min with cycles of 1 min sonication followed by 30 s pause to cool the lysate. Sonication was performed on ice. The lysate was cleared through centrifugation at 20,000 x g and 4 °C for 30 min followed by filtration through a 0.22 µm cellulose-acetate filter. The cleared lysate was subjected to affinity chromatography using a 1 mL MBPTrap HP maltose-binding protein affinity chromatography column (Cytiva) equilibrated with 10 mL lysis buffer. Bound proteins were washed with 20 mL of lysis buffer and eluted using 10 mL of elution buffer (20 mM Tris, 200 mM NaCl, 1 mM EDTA, 10 mM Maltose, pH 7.4). Chromatography was performed with cooled buffers and at a flowrate of 1 mL min–1. Target protein-containing fractions were combined and concentrated using an Amicon Ultra-4 50 kDa filter (Merck) operated at 7500 x g and 4 °C. Protein concentrations were determined using the A280 nm method of a NanoDrop (Thermo Fisher Scientific) with the calculation setting of 1 ABS = 1 mg mL–1. Mycofactocinol oxidation assays were performed in a total reaction volume of 30 µL in lysis buffer including 2 µM MMFT-2H2, 100 µM FAD, and either one of the tested potential electron acceptors: 2,6-dichlorophenolindophenol (DCPIP), nicotinamide adenine dinucleotide (NAD), N,N-dimethyl-4-nitrosoaniline (NDMA), phenazine methosulfate (PMS), at a concentration of 100 µM and 87 µg protein, or no artificial electron acceptor and at different protein concentrations as indicated (Figure 6E). The reactions were incubated at 37 °C for 24 h and quenched through heat-inactivation of the enzyme at 100 °C for 10 min. The quenched reactions were centrifuged at 17,000 x g and 18 °C for 20 min and 10 µL of the supernatant were subjected to LC-MS/MS analysis with subsequent targeted data analysis as described. The target features for data analysis were the mycofactocin substrate and expected product of the assay, namely methylmycofactocinol-2 (MMFT-2H2, sum formula: C26H39NO13, expected retention time: 7.10 min, expected m/z 574.2494 [M+H]+) and methylmycofactocinone-2 (MMFT-2, sum formula: C26H37NO13, expected retention time: 7.47 min, expected m/z 572.2338 [M+H]+). All experiments were performed in triplicates and controls were set up with lysis buffer replacing the enzyme. All tested potential electron acceptors were purchased from Sigma-Aldrich.
 
-## Whole-cell respiration assay
+### Whole-cell respiration assay
 
 The WT and ∆mftG cells were incubated on HdB-Tyl supplemented with 10 g L–1 ethanol for 48 h at starting OD600 of 0.1 for WT and 0.7 for ∆mftG at 37 °C and 210 rpm. For the starvation experiment, WT was cultivated for 24 h in the same conditions as the latter in HdB-Tyl without carbon sources and starting OD600 of 0.7. After this period, the cells were collected by centrifugation at 5000×g for 10 min and pellets were resuspended in fresh HdB supplemented with 0.25 g L–1 Tyloxapol without carbon sources and normalized to OD600 of 0.7.
 
 Aliquots of 200 µL of bacterial samples were placed in the electrochemical chamber supplied with a Clark-type polarographic sensor (Oxytherm+, Hansatech Instruments). Before experiments, the chamber was calibrated according to the manufacturer’s manual (‘liquid phase calibration’) and set to 37 °C and 50 rpm stirring. The oxygen consumption was monitored over 10 min. The retrieved data was further plotted using R version 2023.03.0+.
 
-## Isolation of mycobacterial membranes
+### Isolation of mycobacterial membranes
 
 M. smegmatis WT and ∆mftG strains were grown in 320 mL HdB-Tyl medium supplemented with 1 g L–1 ethanol as the sole carbon source in 2 L flasks covered by breathable rayon film (VWR) in triplicates and incubated at 37 °C and 210 rpm with a starting OD600 of 0.1 for WT and 2.0 for ∆mftG for a period of 48 hr.
 
 The cells were concentrated by centrifugation at 7000×g for 10 min and the resulting pellets were resuspended in buffer (38 mL) of the following composition: 50 mM Tris-HCl, 300 mM sucrose, 5 mM EDTA, 50 mM MgCl2 at pH 6.7. Pellets were disrupted with 0.1 mm ZrO2 beads (Carl Roth, GmbH) in 15 mL plastic tubes using a bead beater (MP Biomedicals, FastPrep-24 5 G). A total of 6 cycles of beating were applied (3 times of application of the pre-installed program for M. tuberculosis cells from the manufacturer). After each step of beating, tubes were cooled down on ice for at least one minute. To get rid of the beads and undisrupted cells the resulting material was centrifuged twice at 4 °C and 6000×g for 15 min. The obtained lysate was further ultra-centrifuged (Thermo Scientific Sorvall LYNX 6000 Superspeed Centrifuge) at 4 °C, 100,000×g for 2 h to obtain the sedimentation of the mycobacterial membrane fraction and clarified soluble fraction (cytoplasm and disrupted periplasm). The isolated membranes were stored on ice for no longer than 12 hr.
 
-## Analysis of MMFT-2H2 and PMFTH2 oxidation in respiration assay
+### Analysis of MMFT-2H2 and PMFTH2 oxidation in respiration assay
 
 Oxygen consumption was measured using Oxytherm+ (Hansatech Instruments) advanced oxygen electrode system at 37 °C and stirred at 50 rpm. For homogenization of mycobacterial membranes, the assay buffer of the following composition was used: 50 mM sucrose, 5 mM MgCl2, 5 mM KF, 2 mM AMP, 4 mM K2HPO4, 50 mM Tris at pH 6.7. All experiments were performed with 250 µL of membrane homogenates. The respiration stimulation started after circa 100 s from the beginning of the oxygen measurement experiments by the addition of 1 mM of the substrates: MMFT-2H2, PMFTH2, NADH (Carl Roth), or sodium succinate (Sigma-Aldrich). Inhibition of the reaction was tested by the addition of a final concentration of 2.5 mM KCN (Sigma-Aldrich) to the solution. To exclude non-enzymatic oxidation, controls such as reaction mixtures without substrates, as well as microwave-inactivated membrane fractions were included. Total protein concentration was quantified using Roti-Nanoquant 5 x Concentrate (Carl Roth) and normalization on the total protein concentration of the fractions was used to make the results comparable. The respirometry curves were plotted using R version 2023.03.0+.
 
 For the analysis of PMFTH2 conversion into PMFT, 200 µL of the sample from the respirometry analysis was quenched by 200 µL of acetonitrile followed by two centrifugations at 17,000×g for 15 min to remove debris. To assess if PMFTH2 conversion was membrane-bound, an assay was carried out with soluble fractions and further quenched as previously described. The LC-MS/MS profiling and the obtained chromatograms were analyzed as described above in this study. Generated csv tables were further plotted and analyzed in R version 2023.03.0+.
 
-## RNA extraction, library preparation and analysis of M. smegmatis MC2 155 WT and ∆mftG
+### RNA extraction, library preparation and analysis of M. smegmatis MC2 155 WT and ∆mftG
 
 M. smegmatis MC2 155 WT and ∆mftG were grown on HdB-Tyl with 10 g L–1 for 24 hr. Cultures were centrifuged, supernatant removed and resuspended on HdB-Tyl plain medium and used as inoculum for triplicate cultures on HdB-Tyl with 10 g L –1 of ethanol at a starting OD600 concentration of 0.1. Samples of 4 mL of WT at exponential phase and 8 ml of ∆mftG after 60 h of incubation were retrieved and further processed for RNA extraction following the manufacturer’s instructions (InnuPREP RNA Mini kit 2.0 – Analytik Jena). An additional DNase step was included to remove traces of gDNA. RNA samples were then subjected to RNA-Seq library preparation following the Stranded Total RNA Prep, Ligation with Ribo-Zero Plus kit (Illumina). After depletion of the rRNA by hybridization with directed probes, the RNA samples were normalized to 500 ng/sample. The RNA samples were then subjected to fragmentation and denaturation, followed by reverse transcription through first-strand (and subsequently second-strand) cDNA synthesis. After 3´end adenylation, anchors and indexes were ligated. Barcoding was accomplished using the IDT for Illumina RNA UD Indexes Set A, Ligation (Ref# 20040553, Illumina, Berlin, Germany). Standard AMPURE XP Beads protocols (Ref# A63881; Beckman, Krefeld, Germany) were employed to purify the final library fragments, and their size and molarity were verified using a Tape Station 2200 (Agilent, Waldbronn, Germany). The equimolarly pooled libraries were subsequently subjected to a 100-cycle run on a NovaSeq 6000 apparatus (Illumina, Berlin, Germany) using an SP flowcell v. 1.5 (Ref# 20028401; Agilent, Waldbronn, Germany).
 
 Raw reads were checked for quality using fastP (Chen et al., 2018), and polyX tails (-x 10), low quality ends (−3,–5, -M 25) were removed, and resulting sequences shorter than 25 were discarded (-l 25). The remaining reads were mapped to the reference genome (RefSeq accession GCF_000015005.1) using bwa-mem2 (Vasimuddin et al., 2019) with default parameters for the affine gap scoring model. For each sample and every gene annotation, all overlapping reads were counted and a counts table was generated for every experiment condition using custom scripts. The counts' tables were used as an input to the R package DESeq2 (Love et al., 2014) to compute fold changes and false discovery rates of differentially expressed genes between the control condition and each experiment condition.
 
-## Statistical analysis
+### Statistical analysis
 
 The data retrieved in this study were further plotted and analyzed statistically using GraphPad Prism 9. Significance was calculated using either two-way ANOVA with Tukey’s multiple comparisons test once interaction index was not significant, or one-way ANOVA for multiple comparisons. Significance values were plotted directly on the graphs and only more relevant comparisons are shown.
 
-## Materials availability statement
+### Materials availability statement
 
 Materials are available from the authors upon request.

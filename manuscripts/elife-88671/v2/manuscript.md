@@ -9,18 +9,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular & Cell Biology, University of California at Berkeley Berkeley United States
-2. https://ror.org/01an7q238 Biophysics Graduate Group, University of California at Berkeley Berkeley United States
-3. https://ror.org/01an7q238 Department of Physics, University of California at Berkeley Berkeley United States
-4. https://ror.org/01an7q238 California Institute for Quantitative Biosciences (QB3), University of California at Berkeley Berkeley United States
-5. https://ror.org/00knt4f32 Chan Zuckerberg Biohub–San Francisco San Francisco United States
-6. https://ror.org/01an7q238 Howard Hughes Medical Institute, University of California at Berkeley Berkeley United States
+1. Department of Molecular & Cell Biology, University of California at Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Biophysics Graduate Group, University of California at Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Department of Physics, University of California at Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. California Institute for Quantitative Biosciences (QB3), University of California at Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. Chan Zuckerberg Biohub–San Francisco San Francisco United States ([ROR:00knt4f32](https://ror.org/00knt4f32))
+6. Howard Hughes Medical Institute, University of California at Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 
 † Corresponding author
 
 ## Abstract
 
-Transcription often occurs in bursts as gene promoters switch stochastically between active and inactive states. Enhancers can dictate transcriptional activity in animal development through the modulation of burst frequency, duration, or amplitude. Previous studies observed that different enhancers can achieve a wide range of transcriptional outputs through the same strategies of bursting control. For example, in Berrocal et al., 2020, we showed that despite responding to different transcription factors, all even-skipped enhancers increase transcription by upregulating burst frequency and amplitude while burst duration remains largely constant. These shared bursting strategies suggest that a unified molecular mechanism constraints how enhancers modulate transcriptional output. Alternatively, different enhancers could have converged on the same bursting control strategy because of natural selection favoring one of these particular strategies. To distinguish between these two scenarios, we compared transcriptional bursting between endogenous and ectopic gene expression patterns. Because enhancers act under different regulatory inputs in ectopic patterns, dissimilar bursting control strategies between endogenous and ectopic patterns would suggest that enhancers adapted their bursting strategies to their trans -regulatory environment. Here, we generated ectopic even-skipped transcription patterns in fruit fly embryos and discovered that bursting strategies remain consistent in endogenous and ectopic even-skipped expression. These results provide evidence for a unified molecular mechanism shaping even-skipped bursting strategies and serve as a starting point to uncover the realm of strategies employed by other enhancers.
+Transcription often occurs in bursts as gene promoters switch stochastically between active and inactive states. Enhancers can dictate transcriptional activity in animal development through the modulation of burst frequency, duration, or amplitude. Previous studies observed that different enhancers can achieve a wide range of transcriptional outputs through the same strategies of bursting control. For example, in Berrocal et al., 2020, we showed that despite responding to different transcription factors, all even-skipped enhancers increase transcription by upregulating burst frequency and amplitude while burst duration remains largely constant. These shared bursting strategies suggest that a unified molecular mechanism constraints how enhancers modulate transcriptional output. Alternatively, different enhancers could have converged on the same bursting control strategy because of natural selection favoring one of these particular strategies. To distinguish between these two scenarios, we compared transcriptional bursting between endogenous and ectopic gene expression patterns. Because enhancers act under different regulatory inputs in ectopic patterns, dissimilar bursting control strategies between endogenous and ectopic patterns would suggest that enhancers adapted their bursting strategies to their trans-regulatory environment. Here, we generated ectopic even-skipped transcription patterns in fruit fly embryos and discovered that bursting strategies remain consistent in endogenous and ectopic even-skipped expression. These results provide evidence for a unified molecular mechanism shaping even-skipped bursting strategies and serve as a starting point to uncover the realm of strategies employed by other enhancers.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Transcriptional bursting can be described by the two-state model of promoter act
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig1-v2.jpg)
 
-**Figure 1.:** eve expression.(A) According to the two-state model of promoter activity a gene promoter switches from the OFF (inactive) state to the ON (active) state at a rate k. When ON, the promoter loads RNA Pol II molecules and synthesizes mRNA at a rate onr. The promoter stochastically switches back to the OFF state at a rate k. (offB) The k, onk, and offr parameters define the average interval between bursts, average burst duration, and average burst amplitude, respectively. (C) eve stripes result from the interplay of various activators and repressors, for instance, wild-type eve stripe 2 is expressed through the interplay of the activators Bicoid and Hunchback with the repressors Giant and Krüppel. The latter define the anterior and posterior boundaries of eve stripe 2, respectively. (D) Here, we coupled the disruption of the eve stripe 1 enhancer with the disruption of the anterior repression of eve stripe 2 exerted by the gap repressor Giant to drive ectopic eve expression anteriorly and compare bursting parameters between endogenous and ectopic expression patterns. (C and D) are based on Levine, 2013 and Peel et al., 2005.
+**Figure 1.:** (A) According to the two-state model of promoter activity a gene promoter switches from the OFF (inactive) state to the ON (active) state at a rate kon. When ON, the promoter loads RNA Pol II molecules and synthesizes mRNA at a rate r. The promoter stochastically switches back to the OFF state at a rate koff. (B) The kon, koff, and r parameters define the average interval between bursts, average burst duration, and average burst amplitude, respectively. (C) eve stripes result from the interplay of various activators and repressors, for instance, wild-type eve stripe 2 is expressed through the interplay of the activators Bicoid and Hunchback with the repressors Giant and Krüppel. The latter define the anterior and posterior boundaries of eve stripe 2, respectively. (D) Here, we coupled the disruption of the eve stripe 1 enhancer with the disruption of the anterior repression of eve stripe 2 exerted by the gap repressor Giant to drive ectopic eve expression anteriorly and compare bursting parameters between endogenous and ectopic expression patterns. (C and D) are based on Levine, 2013 and Peel et al., 2005.
 
 Apparent regulatory unity between various enhancers could be the result of evolutionary adaptation of enhancers to the trans-regulatory inputs that they experience in their endogenous regions of activity. Under this model, we would expect to observe unified bursting strategies at endogenous regions of enhancer activity, while enhancers exposed to non-endogenous regulatory inputs could exhibit different bursting strategies than those observed within their canonical domains of activity. Alternatively, unified strategies of bursting control could result from constraints determined by the biochemistry of the transcriptional processes at enhancers and promoters. In this model, enhancers would control the same set of bursting parameters regardless of the identity and concentration of the input transcription factors at concentrations that enhancers have not encountered during their evolution.
 
@@ -38,11 +38,19 @@ To probe these two models in the context of D. melanogaster development, we used
 
 ## Results
 
-## Mutating eve enhancers to generate ectopic expression patterns
+### Mutating eve enhancers to generate ectopic expression patterns
 
 We sought to determine whether eve enhancers regulate transcription by modulating the same set of bursting parameters in endogenous and ectopic eve expression regions. Specifically, we aimed to compare how eve enhancers drive transcriptional bursting in and out of the well-known seven endogenous eve stripes (Frasch and Levine, 1987; Hare et al., 2008).
 
 As our starting point, we took a previously established BAC-based eve-MS2 reporter system (Berrocal et al., 2020) that carries an ~20 kb DNA fragment around the D. melanogaster eve coding region containing the five eve enhancers responsible for regulating the expression of the seven eve stripes, other cis-regulatory elements such as neuronal and muscular regulatory elements (Fujioka et al., 1999; Fujioka et al., 2013) that might influence eve stripe expression in early development (Fujioka et al., 1999; Fujioka et al., 2013), and the late element (LE) that upregulates eve expression in all stripes in response to the EVE protein (Fujioka et al., 1996; Jiang et al., 1991; Figure 2A). We will refer to this construct as eveMS2-BAC (see SI section: DNA constructs and fly lines in Materials and methods). The MS2 reporter system fluorescently labels nascent mRNA molecules resulting in sites of nascent transcription appearing as puncta whose fluorescence is proportional to the number of active RNA Pol II molecules. As a result, the system allows for the visualization of transcriptional bursting at single locus resolution, in real-time, in living embryos (Chubb et al., 2006; Ferguson and Larson, 2013; Garcia et al., 2013; Golding et al., 2005; Golding and Cox, 2004). When inserted into the D. melanogaster genome, eveMS2-BAC expresses in seven stripes that recapitulate the wild-type expression of eve (Figure 2B; Berrocal et al., 2020) as observed by FISH and live-imaging experiments (Lammers et al., 2020; Lim et al., 2018; Luengo Hendriks et al., 2006).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig2-v2.jpg)
+
+**Figure 2.:** (A) eveMS2 reporter construct variants used in this work. Boxes represent enhancers (e.g. eve stripe 2 enhancer is labeled as 2). LE is the eve late element. eveMS2-BAC is a reporter of wild-type eve expression. The eveS1wt-eveS2Gt- carries a deletion of three Giant binding sites within the eve stripe 2 minimal regulatory element (eveS2-MRE; Small et al., 1992), as indicated by the three red crosses over the eve stripe 2 enhancer, and as shown in the detail of eveS2-MRE; where triangles represent transcription factor-binding sites. The eveS1∆-eveS2wt carries a deletion of the eve stripe 1 enhancer. Finally, eveS1∆-eveS2Gt- combines the Giant binding site deletions from eveS1wt-eveS2Gt- with the eve stripe 1 enhancer deletion of eveS1∆-eveS2wt. (B) Left. Stills from a representative wild-type embryo at ~25 min and ~45 min into nuclear cycle 14 (nc14). Nuclei are labeled in red and transcription sites are labeled in green. Right. Kymograph of eve expression averaged over 5 eveMS2-BAC (wild-type) embryos. Time resolution along the y-axis is 20 seconds. The position of nuclei along the x-axis was calculated from various datasets, based on the inferred position of stripe centers, as described in the SI section: Generation of heatmaps in Figure 2 and Figure 2—figure supplement 1 in Materials and methods. MS2 fluorescence in arbitrary units (AU) along the x-axis was averaged from nuclei located within bins of 0.5% embryo length. (C) Left. eveS1wt-eveS2Gt- embryo at ~25 min and ~45 min into nc14. Right. Average eve-MS2 fluorescence from 6 eveS1wt-eveS2Gt- embryos. At ~25 min, some transcriptionally active nuclei in the inter-stripe region between eve stripe 1 and eve stripe 2 can still be detected (white arrows), while, in wild-type embryos, eve stripe 1 and 2 are completely separated by ~20 min into nc14. (D) Left. eveS1∆-eveS2wt embryo at ~25 min and ~45 min into nc14. Right. Average eve-MS2 fluorescence from 5 eveS1∆-eveS2wt embryos. eve stripe 1 is almost absent at ~25 min, but appears later, probably driven by activity of the eve late element. A dim eve stripe 0 is apparent (white arrows). (E) Left. eveS1∆-eveS2Gt- embryo at ~25 min and ~45 min into nc14. Right. Average eve-MS2 fluorescence from 6 eveS1∆-eveS2Gt- embryos. At ~25 min, there is a strong ectopic expression in the inter-stripe region between eve stripe 1 and eve stripe 2 (white arrow). At ~45 min, this ectopic inter-stripe expression has dimmed (white arrows), while eve stripe 0 becomes apparent.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Heatmaps in Figure 2(B, C, D and E) rescaled to logarithmic values. (A) Kymograph of average eve-MS2 fluorescence drawn from 5 eveMS2-BAC (wild-type) embryos. (B) Average eve-MS2 fluorescence from 6 eveS1wt-eveS2Gt- embryos. Inter-stripe transcription between eve stripe 1 and eve stripe 2 lasts for longer than in wild-type embryos. (C) Average eve-MS2 fluorescence from 5 eveS1∆-eveS2wt embryos. Mild expression of eve stripe 1 (0.3 fraction of embryo length) and eve stripe 0 (0.2 fraction of embryo length) is more apparent on this logarithmic scale. (D) Average eve-MS2 fluorescence from 6 eveS1∆-eveS2Gt- embryos. An almost continuous area of eve expression expands from eve stripe 2 (0.4 fraction of embryo length) to eve stripe 0 (0.2 fraction of embryo length).
 
 To establish an ectopic eve expression pattern, we modified the eve reporter locus (Figure 2A; Berrocal et al., 2020). Specifically, we aimed to create an anterior expansion of eve stripe 2 beyond its endogenous expression domain and into ectopic regions where we could study transcriptional bursting under inputs foreign to an eve enhancer, for example higher levels of the activator Bicoid and the repressor Giant (Gt) (Figure 1D). To make this possible, we leveraged the fact that the anterior boundary of eve stripe 2 is established through repression by Giant (Small et al., 1992). Classic work by Small et al. identified a minimal regulatory element of the eve stripe 2 enhancer (eveS2-MRE; Figure 2A) and found that deleting three Giant binding sites within this minimal enhancer produced a strong anterior expansion of eve stripe 2 in the context of a reporter driven by eveS2-MRE (Small et al., 1992).
 
@@ -54,11 +62,27 @@ Finally, we coupled the three deletions of Gt-binding sites in the eve stripe 2 
 
 Taken together, our results suggest that the eve stripe 1 enhancer plays a repressing role in the anterior half of fruit fly embryos which synergizes with the Giant repressor and likely with other transcriptional regulators bound to Gt binding sites or their vicinity in the eve stripe 2 enhancer. This argues in favor of cross-activity between the eve stripe 1 and 2 enhancers that impacts eve expression in the anterior half of the embryo. eve stripe 1 enhancer might be also playing a role in the regulation of eve stripe 2, as Giant-binding site deletions in the eve stripe 2 enhancer alone do not result in the stronger-than-wild-type eve stripe 2 observed in eveS1∆-eveS2Gt- embryos. In summary, coupling the disruption of Giant-binding sites in the eve stripe 2 enhancer with the deletion of the eve stripe 1 enhancer produces different mutant patterns than the sum of the individual mutants. Finally, regardless of the complex regulatory interactions uncovered by our enhancer mutants, our results indicate that the ectopic gene expression patterns driven by our eveS1∆-eveS2Gt- reporter provide an ideal scaffold for our investigations of the regulation of transcriptional bursting outside of endogenous embryo regions.
 
-## Bursting strategies are uniform across endogenous and ectopic eve-active nuclei
+### Bursting strategies are uniform across endogenous and ectopic eve-active nuclei
 
 We determined the position of nuclei displaying active eve transcription and labeled them as endogenous if they were positioned within the boundaries of wild-type eve stripes (eve stripe 1, eve stripe 2, eve stripe 3, eve stripe 4); or as ectopic if they were located in the inter-stripe region between eve stripe 1 and eve stripe 2 (eve stripe 1–2) or in eve stripe 0 (in the far anterior; Figure 3A) as described in Materials and methods. eve stripe 1 expression in embryos with disrupted eve stripe 1 enhancer was considered endogenous, as we believe that this expression results from activity of the late element. All active nuclei in wild-type embryos were labeled as endogenous. Overall, ectopic regions show lower levels of mean MS2 fluorescence than endogenous regions, as is evident by comparing eve the interstripe 1–2 and eve stripe 0 against eve stripe 1, eve stripe 2, and eve stripe 3 in eveS1∆-eveS2Gt- embryos (Figure 2E, Right). This is perhaps due to the unavailability of optimal concentrations of transcription factors; for example a lack of activators or an excess of repressors with respect to the concentrations found in endogenous regions (Figure 1C and D).
 
-To uncover which bursting parameters are modulated to create each endogenous and ectopic stripes and interstripe regions, we need to extract the bursting parameters in each region. We computed bursting parameters for nuclei grouped by stripe and binned by transcriptional output (Figure 3—figure supplement 1) in our four fly lines, with the following rationale. In the bursting model, the average rate of transcription initiation is described by the formula rkonkon+koff, where konkon+koff indicates the fraction of time the promoter spends in the ON state (Lammers et al., 2020). As enhancers and their inputs (e.g. transcription factors, chromatin state) define bursting parameters (kon, koff, r), nuclei of similar average transcriptional output within the same stripe should be driven by similar inputs acting over the same enhancer. Thus, these nuclei should show similar values of the bursting parameters kon, koff and r that satisfy the equation above. On the other hand, our model predicts that nuclei with different fluorescence must differ in at least one of their bursting parameter values (kon, koff and/or r).
+![Figure 3.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig3-v2.jpg)
+
+**Figure 3.:** kon (left panels), koff,(middle panels) and r (right panels) trends across stripes, estimated from nuclei binned by their mean MS2 fluorescence. (A) Position and color code of endogenous and ectopic stripes in the fruit fly embryo. Only eve stripe 0, 1, 1–2, and 2 are shown for clarity. Figure 3—figure supplement 2 includes eve stripe 3, and 4. (B) MS2 fluorescent traces (green) from embryos of different genotypes and cpHMM fit (black). Transcription in Drosophila embryos occurs after DNA replication. Since replicated sister chromatids remain paired, each eve locus contains two promoters, and every one of them can be ON or OFF. Purple bars show cpHMM-inferred promoter state corresponding to the two sister chromatids within a transcription spot (Lammers et al., 2020). Absence of bars represents both sister promoters OFF; shorter bars represent 1 sister promoter ON; longer bars represent 2 sister promoters ON. We aggregated the active state of 1 and 2 sister promoters into a single ON state, which leads to an effective two-state model of promoter activity (see SI section: Inference of Bursting Parameters in Materials and methods). Each point in the plots below was computed from ~40 fluorescent traces. (C) As previously observed in eve-MS2 wild-type embryos (Berrocal et al., 2020), nuclei in all stripes follow the same trends in bursting parameters. kon, the average rate at which the promoter switches from OFF to ON increases with increasing transcriptional initiation as reported by MS2 fluorescence. koff, the average rate at which a promoter switches from ON to OFF remains largely constant, and has a slight decrease in nuclei with the highest MS2 fluorescence values. r, the average rate at which active promoters increase their fluorescence, is higher in brighter nuclei. All stripes from (D) eveS1wt-eveS2Gt- and (E) eveS1∆-eveS2wt share the same bursting strategy. (F) The same trends occur in endogenous (eveS1 and eveS2; solid lines) and ectopic stripes (eveS0 and eveS1-2; dotted lines) of eveS1∆-eveS2Gt- embryos.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Nuclei in embryos of the same genotype were assigned to a stripe as described in the main text. Here, as an illustrative example, we will follow the analysis of inter stripe 1–2 (vermillion) and eve stripe 2 (yellow) in eveS1∆-eveS2Gt- embryos. (B) Nuclei in eve interstripe 1–2 were sorted in three bins of 46–50 nuclei and ~2,800 data points according to their mean MS2 fluorescence (4.05, 9.68, and 16.22 AU). Nuclei in eve stripe 2 were sorted in six bins of 39–58 nuclei and ~2,700 data points according to their mean MS2 fluorescence (5.01, 9.97, 14.62, 17.95, 21.67, and 26.11 AU). Bursting parameters (kon, koff, and r) were calculated for each bin using the cpHMM by Lammers et al., 2020. This analysis was performed with data from six eveS1∆-eveS2Gt- embryos. (C) Our analysis makes it possible to plot bursting parameters (y-axis) against the mean MS2 fluorescence (x-axis) of each bin.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** We followed the analysis pipeline described in Figure 3—figure supplement 1. kon (left panels), koff (middle panels), and r (right panels) trends are similar in all endogenous and ectopic stripes in our dataset. (A) Position and color code of endogenous and ectopic stripes on a fruit fly embryo. (B) As previously observed in eve-MS2 wild-type embryos (Berrocal et al., 2020), nuclei in all stripes follow the same trends in bursting parameters. All stripes in wild-type embryos are endogenous and are controlled by wild-type enhancers. (C) The same trend is observed in all endogenous stripes from eveS1wt-eveS2Gt-, regardless of whether they are controlled by wild-type enhancers (eveS1, eveS3, eveS4); or by mutant enhancers (eveS2). (D) Endogenous stripes from eveS1∆-eveS2wt embryos controlled by wild-type (eveS2, eveS3, eveS4) and mutant (eveS1) enhancers display the same trend. (E) All endogenous stripes controlled by wild-type (eveS3, eveS4) and mutant (eveS1, eveS2) enhancers, and ectopic stripes (eveS0, eveS1-2) from eveS1∆-eveS2Gt- embryos share the same bursting strategy.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/88671/elife-88671-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** We followed the cpHMM-based analysis pipeline (as described in Figure 3—figure supplement 1) on nuclei grouped in two categories: endogenous (eveS1, eveS2, eveS3, and eveS4) and ectopic (eveS0 and eveS1-2); instead of grouping nuclei by stripes. kon, koff, and r parameters of ectopic (red) and endogenous (black) regions, estimated from nuclei binned by their mean MS2 fluorescence. Ectopic regions (red solid line) from eveS1∆-eveS2Gt- embryos follow the same bursting strategies as the endogenous regions from all other genotypes: wild-type (black dash-dot line), eveS1∆-eveS2Gt- (black solid line), eveS1wt-eveS2Gt- (black dashed line), eveS1∆-eveS2wt (black dotted line). (A) Regions where data points were analyzed together under the category endogenous (black) or ectopic (red). (B) Average kon values increase in brighter eve-active nuclei. (C) Average koff values remain constant and have a slight decrease in highly eve-active nuclei. (D) Average r values increase in brighter eve-active nuclei.
+
+To uncover which bursting parameters are modulated to create each endogenous and ectopic stripes and interstripe regions, we need to extract the bursting parameters in each region. We computed bursting parameters for nuclei grouped by stripe and binned by transcriptional output (Figure 3—figure supplement 1) in our four fly lines, with the following rationale. In the bursting model, the average rate of transcription initiation is described by the formula $r\frac{kon}{kon+koff}$, where $\frac{kon}{kon+koff}$ indicates the fraction of time the promoter spends in the ON state (Lammers et al., 2020). As enhancers and their inputs (e.g. transcription factors, chromatin state) define bursting parameters (kon, koff, r), nuclei of similar average transcriptional output within the same stripe should be driven by similar inputs acting over the same enhancer. Thus, these nuclei should show similar values of the bursting parameters kon, koff and r that satisfy the equation above. On the other hand, our model predicts that nuclei with different fluorescence must differ in at least one of their bursting parameter values (kon, koff and/or r).
 
 The average MS2 fluorescence is a direct reporter of the average rate of transcriptional initiation. Single-cell MS2 fluorescence measurements reflect the transcriptional dynamics of individual promoters as they undergo transcriptional bursting (Figure 3B). However, the actual promoter states, or bursting parameters, underlying the transcriptional bursting remain ‘hidden’, as RNA Pol II molecules engage in elongation for several minutes (~140 s for the MS2::yellow transcriptional unit in our reporter system) (Berrocal et al., 2020). As a result, MS2 fluorescence is observable even after the promoter switches to the OFF state, convolving the promoter switching dynamics with those of transcriptional elongation. Thus, we can only compute promoter states by inferring them from MS2 fluorescence over time. To infer hidden promoter states, we used a compound-state Hidden Markov Model (cpHMM) developed by Lammers et al., 2020. By inferring the succession of activity states, cpHMM estimates rates of transitioning between the OFF and ON states (kon and koff) and the rate at which ON promoters load active RNA Pol II molecules (r).
 
@@ -88,62 +112,347 @@ An ectopic pattern of particular interest is the novel eve stripe 0 brought by t
 
 ## Materials and methods
 
-## DNA constructs and fly lines
+### DNA constructs and fly lines
 
 We generated four reporter constructs based on a previously established Bacterial Artificial Chromosome (BAC) carrying the ~20 Kb DNA sequence around eve (Venken et al., 2006; Venken et al., 2009), and whose eve coding sequence has been replaced by an MS2::yellow transcriptional unit (Berrocal et al., 2020). We used wild-type eveMS2-BAC from Berrocal et al., 2020. The other three BAC constructs were derived from wild-type eveMS2-BAC. These constructs carried mutant versions of eve stripe 1 and eve stripe 2 enhancers. Vector Builder (https://en.vectorbuilder.com/) generated the mutant versions through ccdB-amp cassette mediated recombineering. These mutant BACs are available on Vector Builder’s website. SnapGene (.dna) files with eveMS2 BAC sequences are in the repository https://github.com/aberrocal/BurstingStrategies-eve, folder BurstingStrategies-eve/_DataSubmission/BACSequences/.
 
-## eveS1wt-eveS2Gt-
+#### eveS1wt-eveS2Gt-
 
 BAC construct (Vector Builder-Service Proposal: P180328-1009dgs) contains a wild-type eve stripe 1 and a mutant version of eve stripe 2 enhancer with three Giant-binding sites deleted, as shown in Table 1 of Small et al., 1992. We chose to disrupt the three Gt-binding sites within the eve stripe 2 enhancer (Figure 2B) that had previously been tied to ectopic anterior expansion of eve stripe 2 expression when deleted in the context of the Minimal Regulatory Element of the eveS2 enhancer (eveS2-MRE; Small et al., 1992). eveS2-MRE is a 480 bp regulatory sequence within the eve stripe 2 enhancer (~2 kb total length) sufficient to drive the expression of eve stripe 2.
 
-## eveS1∆-eveS2Gt-
+#### eveS1∆-eveS2Gt-
 
 BAC construct (Vector Builder-Service Proposal: P180614-1002pzr) has the eve stripe 1 enhancer, as defined by ChIP-seq data of the enhancer-associated protein Zelda (Harrison et al., 2011), replaced by a ccdB-amp cassette and eve stripe 2 enhancer replaced by a mutant version with three Giant binding sites deleted as described above.
 
-## eveS1∆-eveS2wt
+#### eveS1∆-eveS2wt
 
 BAC construct (Vector Builder-Service Proposal: P190605-1001zkt) has eve stripe 1 enhancer replaced with a ccdB-amp cassette and a wild-type eve stripe 2. To sum up, we used the fly line carrying wild-type eveMS2-BAC from Berrocal et al., 2020 and we generated three new fly lines carrying genome integrations of the aforementioned constructs. The mutant versions of eveMS2-BAC used in this work were inserted in the genome via ϕC31 integrase-mediated recombination. Mutant constructs were either sent to BestGene Inc (eveS1wt-eveS2Gt-, eveS1∆-eveS2wt) for germline injection or injected in our laboratory (eveS1∆-eveS2Gt-). All constructs integrated into a ϕC31 AttP insertion site in chromosome 3 L (Bloomington stock #24871; landing site VK00033; cytological location 65B2).
 
-## Imaging
+### Imaging
 
 We crossed male flies from lines carrying eveMS2-BAC constructs (w-; +; MS2::yellow) and female flies carrying His::RFP and MCP::GFP fusion proteins (yw; His::RFP; MCP::GFP; Garcia et al., 2013). His::RFP allows for visualization of nuclei, MCP::GFP binds MS2 nascent transcripts to form fluorescent puncta at sites of nascent MS2 transcription. We set embryo-collection cages with ~30 male and ~100 female fruit flies, and collected offspring embryos after 1 hr 30 min. All movies in the same dataset were recorded within ~1 week. We mounted embryos on a slide for confocal imaging, as described in Berrocal et al., 2020; Bothma et al., 2014. Aging embryos for 1 hr 30 min allows us to capture the entire interval between the 14th synchronous cell cleavage and the beginning of gastrulation. We recorded a total of 22 live embryos as shown in Table 1. All imaging was done in a Zeiss-800 scanning-laser confocal microscope. Movies of embryonic development were captured under a 63 x oil objective, in windows of 202.8 µm x 50.7 µm, at pixel size of 0.2 µm, zoom 0.5 x. Movies were recorded in two channels, EGFP for MS2 signal, and TagRFP for His::RFP signal. Imaging parameters were 16 bits per pixel, scan mode frame, bidirectional scanning, scan speed 7, pixel dwelling 1.03 µs, laser scanning averaging 2, averaging method mean, averaging mode line, laser power EGFP 30 µW and TagRFP 7.5 µW, master gain in EGFP channel 550 V and in TagRFP channel 650 V, digital offset in both channels 0, digital gain in both channels 1, pinhole size 44 µm (1 Airy unit - 0.7 µm/section) at 63 x objective, laser filters EGFP:SP545 and TagRFP:LBF640. Data points consist of Z-stacks of 21 slices separated by intervals of 0.5 µm, to span a range of 10 µm across the Z axis. Z-stack mode full stack. Whole Z-stacks were recorded every 16.8 s (wild-type, eveS1wt-eveS2Gt-, eveS1∆-eveS2Gt-) and 19.5 s (eveS1∆-eveS2wt). The difference in time resolution between datasets does not impact our analysis, as the cpHMM analyzes interpolated data points at 20 s intervals. These parameters are based on the imaging protocol and settings in Berrocal et al., 2020. We stopped live imaging of individual embryos after 50 min into nuclear cycle 14, before the cell rearrangements of gastrulation, and took mid-sagittal and surface images of the whole embryo to localize our 202.8 µm x 50.7 µm window along the embryonic anterior-posterior axis. Raw data from confocal microscope imaging is publicly available in Zenodo (https://zenodo.org/, https://doi.org/10.5281/zenodo.7204096; see SI section: Data and Code) (Table 1).
 
-## Segmentation and quantification of movies
+**Table 1.**
+ Datasets and stripes.We recorded 5 wild-type eveMS2-BAC (eveS1wt-eveS2wt) datasets, 6 eveS1wt-eveS2Gt- (eveS1wt_eveS2Gt), 5 eveS1∆-eveS2wt (eveS1Null_eveS2wt), and 6 eveS1∆-eveS2Gt- (eveS1Null_eveS2Gt) for a total of 22 datasets. Movies in every dataset capture between 3 and 6 stripes. Table 1 shows stripes captured in each dataset. Stripes in parentheses had few active nuclei (eveS0) or were not captured in their entirety (eveS4) and (eveS5). Asterisks indicate datasets used for stills in Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Wild-type datasets</th>
+      <th>Stripes Recorded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eveS1wt_eveS2wt_1</td>
+      <td>eveS1, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2wt_2</td>
+      <td>eveS1, eveS2, eveS3, (eveS4)</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2wt_3*</td>
+      <td>eveS1, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2wt_4</td>
+      <td>eveS1, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2wt_5</td>
+      <td>eveS1, eveS2, eveS3, eveS4, (eveS5)</td>
+    </tr>
+    <tr>
+      <td>eveS1wt-eveS2Gt- datasets</td>
+      <td>Stripes Recorded</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_1</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_2</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3, (eveS4)</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_3</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_4</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_5*</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1wt_eveS2Gt_6</td>
+      <td>eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2wt datasets</td>
+      <td>Stripes Recorded</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2wt_1</td>
+      <td>(eveS0), eveS1, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2wt_2*</td>
+      <td>eveS0, eveS1, eveS2, eveS3</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2wt_3</td>
+      <td>eveS0, eveS1, eveS2, eveS3, (eveS4)</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2wt_4</td>
+      <td>(eveS0), eveS1, eveS2, eveS3, (eveS4)</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2wt_5</td>
+      <td>eveS0, eveS1, eveS2, eveS3</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2Gt- datasets</td>
+      <td>Stripes Recorded</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_1</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_2</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_3</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_4</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3, eveS4</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_5*</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3</td>
+    </tr>
+    <tr>
+      <td>eveS1Null_eveS2Gt_6</td>
+      <td>eveS0, eveS1, eveS1-2, eveS2, eveS3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Segmentation and quantification of movies
 
 We tracked MS2 foci from movies and segmented them using the MATLAB based analysis pipeline developed by Berrocal et al., 2020; Garcia et al., 2013; Lammers et al., 2020. Specifically, for segmentation of MS2/MCP::GFP foci across stacks on the Z-axis, we combined the MATLAB pipeline mentioned above with Fiji-Weka Segmentation 3D software, as described in Berrocal et al., 2020. The MATLAB/Fiji-Weka pipeline extracts the position of nuclei and the fluorescence intensity and position of individual MS2 foci over time. The final result of the MATLAB based analysis pipeline are CompiledParticles.mat files that contain the position of nuclei, as well as their MS2 fluorescence intensity over time (see Data and Code).
 
-## Assignment of eve-active nuclei to stripes
+### Assignment of eve-active nuclei to stripes
 
 We manually segmented nuclei from eveS1∆-eveS2Gt- and eveS1wt-eveS2Gt- fly lines, as their stripes were not always clearly discernible. For these embryos, we assigned nuclei to individual stripes based on the position of stripes at 45 min into nc14, when they became separated from the background. The boundary between eve stripe 1–2 and eve stripe 2 in eveS1∆-eveS2Gt- embryos was set at 36% of embryo length, according to the kymograph of MS2 fluorescence over time. On the other hand, eveS1∆-eveS2wt and wild-type embryos showed defined stripes after 25 min into nc14. Thus, we used a MATLAB k-means clustering algorithm to dynamically assign eve-active nuclei to individual stripes, tracking nuclei by the accumulation of MS2 fluorescent output in windows of five-minutes. Nuclei active between 0 and 25 min into nc14 were assigned to stripes based on their position at 25 min into nc14. We generated movies of segmented MS2 spots assigned to individual stripes in windows of ~5 minutes. MATLAB scripts for manual and k-means-automated segmentation of stripes, as well as scripts to generate movies of segmented stripes are available in github (see Data and Code).
 
-## Generation of heatmaps in Figure 2 and Figure 2-Figure Supplement 1
+### Generation of heatmaps in Figure 2 and Figure 2-Figure Supplement 1
 
 We used traces of MS2 fluorescence intensity over time, which reflect transcriptional activity, to generate heatmap/kymographs of MS2 transcription datasets. We generated heatmaps (Figure 2, Figure 2—figure supplement 1) by collapsing data points from all embryos of the same genotype into a single kymograph plot. We started by adjusting the position of nuclei in each embryo relative to nuclei in other embryos of the same genotype. As we had assigned MS2 active nuclei to individual stripes, we measured the distance along the anterior-posterior axis from each MS2 focus to the center of its corresponding stripe. We inferred the position of pseudo-stripes formed by the combined data from all embryos of the same genotype. We calculated the position of pseudo-stripes along the anterior-posterior embryo axis by averaging the position of the center of stripes along the anterior-posterior axis in individual embryos of the same genotype. Finally, we assigned a position to all nuclei of the same genotype relative to pseudo-stripes by positioning them at the same distance from the center of pseudo-stripes as they were from the center of the stripe where they originated. We followed the same procedure to locate the position of inactive nuclei.
 
-## Labeling eve patterns as endogenous or ectopic
+### Labeling eve patterns as endogenous or ectopic
 
 To compare the bursting parameters between endogenous and ectopic regions of eve activity, we segmented MS2-active nuclei and assigned them to individual regions that were deemed to be either endogenous or ectopic. We labeled regions as endogenous if their position overlapped within the boundaries of wild-type eve stripes (eve stripe 1, eve stripe 2, eve stripe 3, eve stripe 4); or as ectopic if their position overlapped with the inter-stripe region between eve stripe 1 and eve stripe 2 (eve stripe 1–2) or with the novel eve stripe 0 (~20% embryo length). All stripes in wild-type embryos were labeled as endogenous.
 
-## Selection of a three-state model of promoter activity and a compound Hidden Markov Model for inference of promoter states from MS2 fluorescent signal
+### Selection of a three-state model of promoter activity and a compound Hidden Markov Model for inference of promoter states from MS2 fluorescent signal
 
-We selected a three-state model of promoter activity (OFF, ON1, ON2) based on the following argument. Transcription in pre-gastrulating Drosophila embryos occurs after DNA replication, and sister chromatids remain paired. However, most of the time, paired MS2-tagged sister loci cannot be resolved independently using diffraction-limited microscopy (Lammers et al., 2020). Therefore, each fluorescent spot in our data results from the combined activity of two promoters, each of which, in the simplest possible model of transcriptional bursting, may be ON or OFF (Lammers et al., 2020). To account for this, the cpHMM infers three states from the observed MS2 data: OFF (both sister promoters inactive), ON1 (one sister promoter active), and ON2 (two sister promoters active). For ease of presentation, we aggregated ON1 and ON2 states into a single effective ON state, as we did in our previous work (Berrocal et al., 2020). This leads to an effective two-state model with one OFF and one ON state and three burst parameters: koff–1 (the burst duration), kon (the burst frequency), and r (the burst amplitude). kon is defined as the sum of the transition rates from OFF to any of the two active states described above: OFF → ON1 and OFF → ON2. koff is defined as the rate at which the system returns to the OFF state upon leaving it, which is described by the formula koff–1 = (1poff - 1) kon–1, where poff is the fraction of time the system spends in the OFF state. koff is the inverse of mean burst duration. r is defined by the average of the rates of transcription initiation in the two ON states (r1 and r2) weighted by the fraction of the time that the system spends on each state (p1 and p2) as described by the formula r = p1r1+p2r2p1+p2 (Lammers et al., 2020). The outputs of the three state model of promoter activity (kon, koff, and r) were used for downstream analyses.
+We selected a three-state model of promoter activity (OFF, ON1, ON2) based on the following argument. Transcription in pre-gastrulating Drosophila embryos occurs after DNA replication, and sister chromatids remain paired. However, most of the time, paired MS2-tagged sister loci cannot be resolved independently using diffraction-limited microscopy (Lammers et al., 2020). Therefore, each fluorescent spot in our data results from the combined activity of two promoters, each of which, in the simplest possible model of transcriptional bursting, may be ON or OFF (Lammers et al., 2020). To account for this, the cpHMM infers three states from the observed MS2 data: OFF (both sister promoters inactive), ON1 (one sister promoter active), and ON2 (two sister promoters active). For ease of presentation, we aggregated ON1 and ON2 states into a single effective ON state, as we did in our previous work (Berrocal et al., 2020). This leads to an effective two-state model with one OFF and one ON state and three burst parameters: koff–1 (the burst duration), kon (the burst frequency), and r (the burst amplitude). kon is defined as the sum of the transition rates from OFF to any of the two active states described above: OFF → ON1 and OFF → ON2. koff is defined as the rate at which the system returns to the OFF state upon leaving it, which is described by the formula koff–1 = ($\frac{1}{p_{off}}$ - 1) kon–1, where $p_{off}$ is the fraction of time the system spends in the OFF state. koff is the inverse of mean burst duration. r is defined by the average of the rates of transcription initiation in the two ON states (r1 and r2) weighted by the fraction of the time that the system spends on each state (p1 and p2) as described by the formula r = $\frac{p_{1}r_{1}+p_{2}r_{2}}{p_{1}+p_{2}}$ (Lammers et al., 2020). The outputs of the three state model of promoter activity (kon, koff, and r) were used for downstream analyses.
 
 The three-state model of promoter activity is the simplest model compatible with our current understanding of transcription at the eve locus in early fruit fly embryos. However, we do not dismiss the possibility that more complex processes, not captured by our model, define eve transcription. Promoters, for instance, may exhibit more than two states of activity, beyond a simple ON and OFF mechanism. Nevertheless, as pointed out by Lammers et al., 2020 - SI Section: G. the cross-validation of cpHMM inference sensitivities between different model schemes (two, three, or multiple state Hidden Markov Models) do not yield consistent results regarding on which one is more accurate; and for the time being, there is no alternative to a HMM for inference of promoter states from MS2/PP7 fluorescence signals obtained using laser-scanning confocal microscopy (Lammers et al., 2020; Syed et al., 2023; although other approaches exist using state-of-the-art microscopy and deconvolution algorithms to improve signal-to-noise ratio). Furthermore, orthogonal approaches to quantify transcription that rely on static methods, such as smFISH, have a limited ability to capture temporal dynamics. Due to these considerations, we selected a HMM based on an effective two-state model (derived from a three-state model) of promoter activity to describe our live MS2 imaging data.
 
-## Inference of bursting parameters
+### Inference of bursting parameters
 
 We used a cpHMM approach (Lammers et al., 2020) to extract average bursting parameters (kon, koff, r) from different sets of MS2-active nuclei. We input MS2 fluorescent traces over time from these sets into the cpHMM. Specifically, we combined nuclei from same-genotype embryos, sorted them by stripe and distributed them across bins of varying fluorescence. To ensure reliable inference, we enforced each bin to contain ~40 nuclei, equivalent to ~2500 time points at a 20 s resolution (Lammers et al., 2020). The number of bins was determined by the amount of data available (Table 2).
+
+**Table 2.**
+ Binning by stripe.We pooled together nuclei from all embryos per dataset, sorted them by the stripe where they were located and distributed them in bins of varying fluorescence. Each bin contains ~40 nuclei (~2,500 time points). E.g., all nuclei in eve stripe 1 (eveS1) from the five eve wild-type embryos in our dataset were assigned to 3 bins according to their mean MS2 fluorescence, as each bin must contain ~40 nuclei, or ~2,500 data points, for input into the cpHMM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Wild-type - Stripes</th>
+      <th>Number of bins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eveS1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>eveS3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>eveS1wt-eveS2Gt- - Stripes</td>
+      <td>Number of bins</td>
+    </tr>
+    <tr>
+      <td>eveS1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>eveS1-2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>eveS2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>eveS3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>eveS4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2wt - Stripes</td>
+      <td>Number of bins</td>
+    </tr>
+    <tr>
+      <td>eveS0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>eveS1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>eveS2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>eveS3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2Gt- - Stripes</td>
+      <td>Number of bins</td>
+    </tr>
+    <tr>
+      <td>eveS0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>eveS1-2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>eveS2</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>eveS3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>eveS4</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 Wild-type embryos yielded sufficient nuclei to support the cpHMM inference of bursting parameters for various endogenous stripes (eve stripe 1, 2, 3, 4). eveS1wt-eveS2Gt- and eveS1∆-eveS2wt did not yield enough ectopically active nuclei for cpHMM analysis (eve stripe 1–2 in eveS1wt-eveS2Gt-; eve stripe 0 in eveS1∆-eveS2wt). These fly lines did exhibit endogenous eve stripes with enough active-nuclei for further analysis on the cpHMM (eve stripe 1, 2, 3, and 4 in eveS1wt-eveS2Gt-; eve stripe 1, 2, and 3 in eveS1∆-eveS2wt). eveS1∆-eveS2Gt- embryos did yield sufficient eve-active nuclei (297 nuclei) to support cpHMM inference of the bursting parameters of ectopic eve stripe 1–2 and eve stripe 0. It also resulted in enough active nuclei for the cpHMM inference of bursting parameters of endogenous stripes (eve stripe 1, 2, 3, and 4).
 
 The output of the effective two-state cpHMM described above are the bursting parameters (kon, koff, r) for each set of nuclei input into the model. Thus, Figure 3, Figure 3—figure supplement 2 are plots of mean kon, koff, r, and their standard deviations σkon, σkoff, σr, computed from sets of nuclei binned by stripe. For Figure 3—figure supplement 3, we followed a similar approach, but grouping active nuclei by their endogenous or ectopic location. Nuclei grouped in endogenous and ectopic categories were distributed across 6–13 bins of increasing fluorescence (Table 3). Their mean kon, koff, r, and standard deviations, σkon, σkoff, σr were plotted in Figure 3—figure supplement 3.
 
-## Data and code
+**Table 3.**
+ Binning by endogenous/ectopic.We pooled together nuclei from all embryos per dataset, sorted them by endogenous or ectopic, according to whether the stripe where they were located was deemed endogenous or ectopic, and distributed them in bins of varying fluorescence. Each bin contains ~40 nuclei (~2500 time points). E.g. All endogenous nuclei in the 5 eve wild-type embryos were distributed among 11 bins of increasing MS2 fluorescence. Some datasets have their ectopic bin empty, as they had less than ~40 active nuclei in their ectopic regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Wild-type</th>
+      <th>Number of Bins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ectopic</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Endogenous</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>eveS1wt-eveS2Gt-</td>
+      <td>Number of Bins</td>
+    </tr>
+    <tr>
+      <td>Ectopic</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Endogenous</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2wt</td>
+      <td>Number of Bins</td>
+    </tr>
+    <tr>
+      <td>Ectopic</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Endogenous</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>eveS1∆-eveS2Gt-</td>
+      <td>Number of Bins</td>
+    </tr>
+    <tr>
+      <td>Ectopic</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Endogenous</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data and code
 
 Raw data, Movies, and CompiledParticles files are stored in the Zenodo dataset ‘Unified bursting strategies in ectopic and endogenous even-skipped expression patterns - Supplemental Data’ (https://doi.org/10.5281/zenodo.7204096; Berrocal et al., 2023). Specific paths in this dataset are listed below. Raw confocal-imaging data from embryos of each of the genotypes used in this work are located in [Genotype]_rawData/[Date]/[Dataset] as czi files (Zeiss file format) of sequential Z-stacks recorded over two channels, and whole embryo stills, as described above. Maximum Z-projection movies of all recorded embryos are in Movies/[Genotype]/Composite. Movies of MS2-foci assigned to stripes are in Movies/[Genotype]/Segmentation. The outcome of Garcia et al., 2013 MATLAB pipeline to analyze MS2 data from each embryo are mat files named CompiledParticles, they are stored in the folder CompiledParticles/[Genotype].
 
 MATLAB scripts and data for this analysis are stored in the github repository https://github.com/aberrocal/BurstingStrategies-eve. The code for the segmentation of our live imaging data of eve transcription in embryonic development is in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/StripeSegmentation/. We generated csv files containing the position of active and inactive nuclei over time for each of four genotypes (see BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/Heatmaps/singleTraceFits_Heatmaps/). In these files, active nuclei have fluorescence values associated with each time point. These datasets also contain the promoter state of active nuclei at each time point. We considered three promoter states: 1=OFF, 2=one sister promoter ON (ON1), and 3=two sister promoters ON (ON2); see SI section: Inference of bursting parameters in Materials and methods. The heatmaps in this work (Figure 2, Figure 2—figure supplement 1) were generated with MATLAB scripts and datasets in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/Heatmaps/. We generated mat files (compiledResults_[Stripe/ectopicFlag].mat) that contain mean values of kon (frequency), koff–1 (duration), r (amplitude), their standard deviations, and mean fluorescence bin values. compiledResults_Stripe.mat files and scripts to generate Figure 3, Figure 3—figure supplement 2 are sorted by genotype in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/KineticsPlotStripes_Color/. compiledResults_ectopicFlag.mat and scripts to generate Figure 3—figure supplement 3 are sorted by genotype in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/KineticsPlotsEndogenousEctopic/. Data to generate Tables 2 and 3 is located in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/BinStats/particle_counts/. Data sheets with detailed features of individual data points (identity and position of nuclei and MS2 foci; MS2 fluorescence; cpHMM-inference of fluorescence; cpHMM-inferred promoter state) are located in BurstingStrategies-eve/_DataSubmission/DataSheetsAndCode/BinStats/singleTraceFits/. Adobe Illustrator ai, eps, and png files for all figures are stored in BurstingStrategies-eve/_DataSubmission/Figures/.
 
-## Materials availability statement
+### Materials availability statement
 
 Fly line expressing wild-type eveMS2-BAC is available at Bloomington Drosophila Stock center (stock #92368). Wild-type and mutant eveMS2-BAC constructs can be obtained through Vector Builder, as described in ‘DNA constructs and fly lines’, or by requesting them from the corresponding authors. For ChIP-seq data of enhancer associated-Zelda refer to ‘Data Availability’ section of Harrison et al., 2011. Details on sample preparation for confocal imaging are provided in the ‘Embryo collection and mounting’ section of Berrocal et al., 2020. Raw confocal imaging data, movies, and compiled particles files are stored in Zenodo, as described in ‘Data and Code’. MATLAB code to segment MS2 signals in fruit fly embryos and generate compiled particles files, as described in ‘Segmentation and quantification of movies’, is publicly available in https://github.com/GarciaLab/mRNADynamics (Reimer and Garcia, 2022). For details on cpHMM scripts and methods refer to ‘Data Availability’ section in Lammers et al., 2020. DNA sequences, figures, and MATLAB code for data analysis are stored in https://github.com/aberrocal/BurstingStrategies-eve, as described in ‘Data and Code’.

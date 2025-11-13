@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00dcv1019 Allen Institute for Brain Science Seattle United States
-2. https://ror.org/042nb2s44 McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States
-3. https://ror.org/05a0ya142 Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Broad Institute of MIT and Harvard Cambridge United States
-4. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
+1. Allen Institute for Brain Science Seattle United States ([ROR:00dcv1019](https://ror.org/00dcv1019))
+2. McGovern Institute for Brain Research, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+3. Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+4. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
 
 † Corresponding author
 
@@ -51,17 +51,104 @@ Here we adapt single-cell RNA-seq and an in situ sequencing approach based on Ba
 
 ## Results
 
-## Identifying transcriptomic types of retrogradely labeled neurons by barcoded rabies virus
+### Identifying transcriptomic types of retrogradely labeled neurons by barcoded rabies virus
 
 To assess whether we can robustly identify transcriptomically defined neuronal types in a multiplexed retrograde labeling experiment, we performed two-plex retrograde labeling using two libraries of barcoded rabies virus coated with the native rabies glycoprotein (Figure 2A; Materials and methods M4). In addition to encoding the red fluorescent protein mCherry (Shaner et al., 2004), the two viral libraries contained 20-nt barcode cassettes located in the 3’UTR of the rabies nucleoprotein mRNA, which allowed high-level expression of the barcodes (Conzelmann, 1998). In addition, one of the libraries contained a 22-nt exogenous sequence (the 10 x Genomics ‘Chromium capture sequence 2’, referred to below as CCS) next to the barcode cassette. We sequenced the two barcoded libraries using Illumina next-generation sequencing and identified at least 8552 and 13,211 barcodes, respectively (see Materials and methods M8 and Materials and methods M9; Figure 2B). We did not find barcodes that were present in both libraries. Thus, the two libraries could be distinguished both by their barcode sequences and the presence or absence of the CCS.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig2-v2.jpg)
+
+**Figure 2.:** (A) Illustration of the design of barcoded rabies virus libraries. (B) Barcode distribution in the CCS and non-CCS libraries. The y axis indicates the count of barcodes, which are sorted in descending order. The rank of the barcode is shown on the x axis. (C) An outline of the experiments. The two libraries are injected into VISal and LGd. After a week, VISp is dissected, and the mCherry-expressing cells are FACS-enriched and processed for single-cell RNA-seq. (D) Histogram showing the cluster mapping confidence of rabies-labeled cells from this study and AAV-labeled cells from Graybuck et al., 2021. (E) The expression of select marker gene in non-infected cells from Tasic et al., 2018 and in rabies-infected cells of matching cell types. Dot size indicates the proportion of cells with non-zero marker expression, and colors indicate relative gene expression levels scaled per row. (F) UMAP plot of gene expression patterns of cells infected with rabies virus (black) overlaid on non-infected cells from Tasic et al., 2018. The non-infected cells are color-coded by cluster identities and cluster names are indicated. (G) The expression of rabies-encoded genes in the sequenced cells. Columns indicate cells and rows indicate genes. Colors indicate the log transformed count for each rabies-encoded gene after scaling by the sum of all reads that mapped to viral constructs multiplied by 10,000. The bar on top indicates donor animals. (H) Example barcode sequences in three sequenced cells. Letter heights indicate probabilities at each position. Gray boxes indicate the barcode region. (I) Distribution of cell types of retrogradely labeled cells. Colors indicate cell types and match those in (F), and dot size indicates the number of cells. VISp, primary visual cortex; VISal, anterolateral visual cortex; LGd, dorsal lateral geniculate nucleus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quality control plots of scRNA-seq for two animals used in multiplexed retrograde labeling experiments (591123 and 620569) and four animals used in barcoded transsynaptic labeling experiments (591121, 618308, 618309, and 620588). (B) Cluster mapping confidence (top) and correlation to mapped cluster (bottom, see Materials and methods M7 for definitions) for rabies barcoded neurons. In both (A) and (B), boxes indicate quartiles and medians, and whiskers indicate range of data excluding outliers. Outliers are shown as individual dots.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Volcano plots showing differential expression of genes in clusters with more than 10 rabies infected cells across all six animals. X axes indicate and y axes indicate . Red/blue dots indicate genes that were up-regulated or down-regulated, respectively. (B) The expression of immune response related genes in uninfected cells from Tasic et al., 2018, AAV-infected cells from Graybuck et al., 2021, and rabies infected cells of matching cell types from this study. Top 10 genes that were upregulated in rabies infected cells were plotted. Dot size indicates the proportion of cells with nonzero expression, and colors indicate mean gene expression levels.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Dot size indicates the proportion of cells with nonzero marker expression, and colors indicate relative gene expression levels scaled per row.
 
 We injected the two libraries into the dorsal lateral geniculate nucleus (LGd) and anterolateral visual cortex (VISal), respectively, in two animals (Figure 2C). After 7 days, we dissected out the primary visual cortex (VISp), dissociated the neurons, and FACS-isolated 48 mCherry-expressing neurons from each animal for scRNA-seq using SMART-seq v4 (see Materials and methods M6). scRNA-seq data from rabies virus-infected cells had comparable quality to non-infected cells (Figure 2—figure supplement 1A). Of 96 mCherry-expressing cells sequenced, 75 neurons were of high quality (with >100,000 total reads,>1,000 detected genes, and odds ratios of GC dinucleotides <0.5; see Materials and methods M7 for details).
 
 We then mapped each neuron to reference scRNA-seq data (Tasic et al., 2018) by comparing a cell’s marker gene expression with the marker gene expression of the reference cell types (Gouwens et al., 2020; Graybuck et al., 2021) (Materials and methods M7). Briefly, we first selected marker genes that distinguished each cluster in the reference taxonomy tree, and then performed 100 rounds of correlation analysis between a given single cell transcriptome to be mapped and the reference taxonomy tree using 80% of the marker panel selected at random in each round. Cells that were assigned to the same cluster in ≥70 of 100 rounds (mapping confidence >0.7) and with a mapping correlation >0.6 were considered to be mapped to the cluster with high quality. A total of 54 cells were mapped to the reference taxonomy tree with high quality [mapping confidence >0.7 (5 cells removed) and mapping correlation >0.6 (an additional 16 cells removed); Figure 2D; Figure 2—figure supplement 1B; Table 1; Materials and methods M7]; these cells were used for downstream analysis. Most cells that were removed by the mapping correlation thresholds were either ‘Microglia Siglech’ or ‘PVM Mrc1’, which tend to have lower gene counts compared to neurons (Tasic et al., 2018). Consistent with previous studies (Prosniak et al., 2001; Zhao et al., 2011; Huang and Sabatini, 2020; Patiño et al., 2022), some immune response-related genes were up-regulated in rabies virus-infected cells compared to non-infected cells (Figure 2—figure supplement 2A, B). We also noticed that some inhibitory cell types showed higher expression of activity-related genes, such as Baz1, Fosl2, and Jun compared to non-infected cells (Figure 2—figure supplement 3). Nonetheless, the expression patterns of cell type markers were comparable to the reference scRNA-seq dataset (Figure 2E and F). Thus, transcriptomic types of rabies infected neurons can be robustly read out using scRNA-seq.
 
+**Table 1.**
+ Number of cells in the scRNA-seq-based transsynaptic tracing and retrograde tracing experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Animal ID</th>
+      <th>N cells</th>
+      <th>After QC (total reads, genes detected, and GC content)</th>
+      <th>Mapping confidence &gt; 0.7</th>
+      <th>Mapping correlation &gt; 0.6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Transsynaptic tracing</td>
+      <td>591121</td>
+      <td>94</td>
+      <td>80</td>
+      <td>77</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>618308</td>
+      <td>80</td>
+      <td>71</td>
+      <td>69</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>618309</td>
+      <td>60</td>
+      <td>46</td>
+      <td>45</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>620588</td>
+      <td>61</td>
+      <td>55</td>
+      <td>53</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Retrograde tracing</td>
+      <td>591123</td>
+      <td>48</td>
+      <td>34</td>
+      <td>30</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>620569</td>
+      <td>48</td>
+      <td>41</td>
+      <td>40</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td>443</td>
+      <td>371</td>
+      <td>354</td>
+      <td>295</td>
+    </tr>
+  </tbody>
+</table>
+
 Rabies transcripts were detected in all FACS-collected cells, including the 54 mapped cells (Figure 2G). Consistent with their known expression levels (Conzelmann, 1998), transcripts for the rabies nucleoprotein, phosphoprotein, and matrix proteins were more abundant than the transcripts for mCherry (which replaced the rabies glycoprotein) and the large protein. Consistent with the robust detection of rabies transcripts, 50 out of 54 neurons had sequencing reads covering the barcode region of the nucleoprotein transcript (Figure 2H; Table 1). Among the 50 neurons, 48 neurons carried one unique barcode each, and two cells shared a barcode. Of these 49 barcodes, 18 had the CCS sequence at the 3’ flanking region. The barcode sequences were consistent with known barcodes in the corresponding barcode libraries: all 18 CCS-containing barcodes matched known barcodes in the CCS library and all 31 barcodes that did not contain a CCS sequence matched known barcodes in the non-CCS library. In the cortex, L6 corticothalamic (CT) neurons and L5 extra-telencephalic neurons (L5 ET, also known as L5 pyramidal tract/PT neurons) mainly project to the thalamus, but not the cortex, whereas intra-telencephalic (IT) neurons mainly project to the cortex and the striatum, but not the thalamus (Harris and Shepherd, 2015; Harris et al., 2019; Peng et al., 2021). Consistent with the known connectivity of cortical cell types (Harris and Shepherd, 2015; Tasic et al., 2018), 14 L6 CT neurons, 3 L6b neurons, and 1 L5 ET neurons projected to the LGd, and not VISal; in contrast, 24 IT neurons and 1 near-projecting (NP) neuron projected to VISal, but not LGd (Figure 2I). We also observed a small number of inhibitory neurons labeled by the VISal injection, but not the LGd injection (Figure 2I). This labeling was expected, because inhibitory neurons at the border of VISp and VISal could potentially be labeled by the VISal injection and subsequently dissected for single-cell RNA-seq. Based on these results, we estimate that the false positive rate in distinguishing the transcriptomic types of retrogradely labeled neurons is between 0 and 3.1% (see Materials and methods M13). Thus, multiplexed retrograde tracing using barcoded rabies virus recapitulated known projection patterns of cortical neuronal types.
 
-## In situ sequencing identifies transcriptomic types of rabies-barcoded neurons
+### In situ sequencing identifies transcriptomic types of rabies-barcoded neurons
 
 scRNA-seq provides a detailed view of the transcriptomic landscape of rabies-labeled neurons, but this approach has several limitations. First, a large fraction of neurons is lost during single-cell dissociation prior to sequencing. Because neuronal types differ in their survival rates during dissociation, this procedure introduces biases in the composition of neurons that are sequenced (Tasic et al., 2016; Tasic et al., 2018). Second, a consequence of tissue dissociation is that the precise locations of neurons are lost, which can obscure potential spatial organization of neuronal connectivity. Finally, the low throughput and high cost of scRNA-seq limit the scale at which the retrogradely labeled neurons can be interrogated. To overcome these limitations, we next used in situ sequencing to resolve both gene expression and rabies barcodes in retrogradely labeled neurons.
 
@@ -75,7 +162,7 @@ We next applied this approach to examine the distribution of neurons with projec
 
 To assign barcodes to cells, we considered a barcode to be associated with a cell if we found at least six molecules of that barcode in a cell (Materials and methods M13). Of 4130 barcoded cells we identified, all but 204 (4.9%) cells contained a single barcode that was above this threshold (>6 counts per cell; Figure 3G and H). In most cells, the primary barcode, that is the barcode with the most abundant counts in each cell, accounted for 82% ± 19% (mean ± standard deviation) of barcodes within each cell; in 3850 out of 4130 (93.2%) barcoded cells, the read counts of the primary barcode accounted for at least half of all barcode reads in a cell before thresholding (i.e. including barcodes with six or fewer reads in a cell; Figure 3I and J). Consistent with the scRNA-seq experiment described above (Figure 2F), barcoded cells co-mingled with non-barcoded cells in a UMAP plot (Figure 3K) and had similar read counts and gene counts per cell compared to non-barcoded cells (Figure 3L and M), suggesting that labeling by rabies virus did not significantly alter the expression of the genes that we targeted. The barcoded cells included excitatory neurons in the cortex, and inhibitory neurons in the cortex and in the midbrain regions; these inhibitory neurons likely picked up barcodes through their local axons, because the injection sites were either adjacent to or in the same cortical and subcortical areas that were sequenced in situ. Thus, consistent with the results of the scRNA-seq-based approach (Figure 2), in situ sequencing resolved the transcriptomic identities of rabies infected cells and determined their rabies barcodes.
 
-## In situ sequencing-based retrograde tracing reveals projections of transcriptomic types of neurons across cortical areas
+### In situ sequencing-based retrograde tracing reveals projections of transcriptomic types of neurons across cortical areas
 
 From all barcoded cells, we identified 1415 unique barcodes and matched them to the two barcoded libraries (containing at least 8552 and 13,211 barcodes, respectively; see Materials and methods M9). Because we sequenced 15 out of 20 bases in the rabies barcodes, we first assessed whether the shorter reads were sufficient to unambiguously assign barcodes to the two libraries. We calculated the minimum Hamming distance of each barcode found in cells to the known barcodes in the two libraries and a third mock library with similar numbers of random barcodes (Figure 4A). Many barcodes had zero to one mismatch to the two barcode libraries, but not a library with similar numbers of random barcodes. This peak was distinct from a second peak that was centered at four to five mismatches and included barcodes that were absent from the barcode libraries. No barcode (out of 1415 unique barcodes in this dataset) was within one mismatch to any barcode in the random barcode library. These results indicate that sequencing 15 bases of the barcodes was sufficient to correct mismatches that could have potentially resulted from errors in sequencing and/or mutation in rabies virus. We thus allowed one mismatch when matching barcodes to the two libraries and found 1169 VISal-projecting cells and 2483 SC/RSP-projecting cells, including five cells that projected to both areas (Figure 4B). Of the barcodes that matched the two libraries, the number of cells that carried a barcode correlated with the frequency of that barcode in the library (Figure 4C; Pearson correlation 0.41). An additional 496 barcodes from 483 cells did not match either barcode library, likely because the two virus libraries were not sequenced completely to fully recover all barcodes they contained (see Materials and methods M9 for discussions on the unmatched barcodes).
 
@@ -87,19 +174,89 @@ VISal-projecting cells and SC/RSP-projecting neurons were differentially distrib
 
 Because neurons of different transcriptomic types within a subclass are differentially enriched across cortical areas (Yao et al., 2021; Chen et al., 2023), we wondered if the differences in projections of the same subclass of neurons across cortical areas can be explained solely by variations in the composition of cell types within subclasses. We first focused on the L4/5 IT neurons, which project to either VISal or RSP from the lateral or medial cortical areas, respectively. Consistent with our previous observations (Chen et al., 2023), the transcriptomic types of L4/5 IT neurons were differentially enriched across cortical areas along the mediolateral axis (Figure 4H). For example, L4/5_IT_1 and L4/5_IT_3 neurons were enriched in lateral areas, such as VISl, TEa, and ECT, whereas L4/5_IT_4 to L4/5_IT_6 were enriched in VISp, VISpm, and RSPd. The enrichment of cell types across cortical areas, however, cannot account for the differences in projections of L4/5 IT neurons from different cortical areas (Figure 4I and J). For example, L4/5_IT_2 in VISpm and RSPd mainly projected to RSP, but not VISal, whereas those in TEa and VISl projected to VISal, not RSP. To quantify how much source areas and cell types contribute to the diversity in projections, we discretized the cortex into ‘cubelets’. Each cubelet spanned all cortical layers, was 20 µm thick along the anteroposterior axis (i.e. the thickness of a section), and was about 110 µm in width along the mediolateral axis (Materials and methods M13). In each cubelet, we calculated the fraction of neurons that projected to VISal for each cell type (we did not perform this analysis for RSP-projecting cells because of insufficient sample size). We then used one-way ANOVA to estimate the variance in the fraction of neurons with projections that can be explained by source area labels, cell type labels, or both (Material and methods M13). If projections are determined solely by cell types and the differences in projection probabilities across cortical areas are only due to different compositions of cell types, then the variance in the fraction of neurons with projections explained by cell types and source areas together should be similar to the variance explained by cell types and shuffled source area labels. Within the L4/5 IT subclass, cell type and source area each explained a modest fraction of variance (cell type: 5.9 ± 3.7%; source area: 6.3 ± 6.5%, mean ±std; Figure 4K). In contrast, combining cell type and source area explained more variance (31.8 ± 25.7%, mean ±std; Figure 4K;) compared to cell types and shuffled source area labels (p=6 × 10–58 using one-sample two-tailed t-test comparing to 100 iterations of controls with shuffled areas). Similar results were observed across all subclasses of cortical excitatory neurons (Figure 4L; p=6 × 10–37 using one-sample two-tailed t-test comparing types with areas to 100 iterations of types with shuffled areas). In particular, the additional variance explained by areas is similar in combination with types compared to in combination with subclasses (Figure 4L). These results indicate that projections of cortical neurons are determined by both the transcriptomic identities of the neurons at the resolution we observed and their anatomical location.
 
-## Interpreting barcoded transsynaptic tracing requires distinguishing barcode-sharing networks
+### Interpreting barcoded transsynaptic tracing requires distinguishing barcode-sharing networks
 
 Because we can identify transcriptomic identities of neurons labeled with rabies barcode, similar approaches can also be used in a transsynaptic labeling experiment to interrogate synaptic connectivity. In a barcoded transsynaptic labeling experiment, networks of neurons can share the same barcode because of either connectivity between presynaptic cells and source cells or technical and biological artifacts. Distinguishing different types of barcode-sharing networks is thus crucial for resolving single-cell connectivity. In the following, we first lay out how different types of barcode-sharing networks affect connectivity mapping and how they can be distinguished from each other. We then use in situ sequencing to resolve these networks in a barcoded transsynaptic labeling experiment.
 
-Ideally, each source cell should express a unique barcode, which is also shared with its presynaptic cells. By matching barcodes in the presynaptic cells to those in the source cells, we can then infer connectivity between the presynaptic cells to individual source cells (single-source networks; Figure 5Aa). In practice, however, multiple source cells may express the same barcode. This barcode sharing could be caused by two viral particles with the same barcodes that independently infected two source cells (double-labeled networks; Figure 5Ab). For a given barcode, the probability that the same barcode is found in a second source cell because of double labeling scales with the frequency of that barcode in the library and the total number of source cells that are directly labeled in an experiment. Thus, for a given experiment with known number of source cells, barcodes that are more abundant in a library are more likely to result in double-labeled networks. This type of barcode sharing can be minimized by employing sufficiently diverse and uniformly distributed barcodes (Kebschull et al., 2016). However, this is typically challenging to achieve with rabies virus, because the recombinant rabies virus production process usually leads to uneven amplification of barcodes, resulting in their highly skewed distribution (Clark et al., 2021; Saunders et al., 2022). Alternatively, two cells expressing the rabies glycoprotein can be interconnected. In this case, the source cell may pass the barcode to the other cell, thus obscuring the identity of the original source cell (connected-source networks; Figure 5Ac). Because the probability of connected-source networks scales with both the number of source cells and their local connection probability, limiting the number of source cells or restricting source cells to sparsely connected subpopulations of neurons will reduce this type of network. Finally, it is possible to find barcodes that occur only in cells without glycoprotein expression, but not in corresponding source cells. This can happen when the rabies virus directly infects cells that do not express the glycoprotein (no-source networks; Figure 5Ad). This may happen because the virus library contains trace amount of non-pseudotyped rabies virus, or because the infected cells express TVA but not the glycoprotein (these are expressed from separate helper AAVs in our system). In this scenario, each barcode should be found in only one or a few cells, because the probability of generating a large no-source network is exponentially smaller: For a barcode with frequency f in the library and total N infection events, the probability of having M independent infection events with that barcode is CMN×fN×(1-f)M-N . As an example, in an experiment with 1000 infection events, the probability for a barcode with f=0.001 to appear in a no-source networks with at least 2 cells is as high as 0.26, but the probability for the same barcode to appear in a no-source network with at least 7 cells is 8×10–5. Alternatively, source cells may be dead due to cytotoxicity or missed by sequencing (lost-source networks; Figure 5Ae). If a source cell died, it may spread the barcode to presynaptic neurons and/or to neighboring cells through the release of viral particles during necrosis. In either case, we speculate that these networks are likely to contain more neurons than no-source networks in an experiment with a reasonable number of total infections. Furthermore, the presence of lost-source networks in an experiment could cause some double-labeled networks or connected-source networks to be misidentified as single-source networks because some source cells in these networks may have been lost.
+Ideally, each source cell should express a unique barcode, which is also shared with its presynaptic cells. By matching barcodes in the presynaptic cells to those in the source cells, we can then infer connectivity between the presynaptic cells to individual source cells (single-source networks; Figure 5Aa). In practice, however, multiple source cells may express the same barcode. This barcode sharing could be caused by two viral particles with the same barcodes that independently infected two source cells (double-labeled networks; Figure 5Ab). For a given barcode, the probability that the same barcode is found in a second source cell because of double labeling scales with the frequency of that barcode in the library and the total number of source cells that are directly labeled in an experiment. Thus, for a given experiment with known number of source cells, barcodes that are more abundant in a library are more likely to result in double-labeled networks. This type of barcode sharing can be minimized by employing sufficiently diverse and uniformly distributed barcodes (Kebschull et al., 2016). However, this is typically challenging to achieve with rabies virus, because the recombinant rabies virus production process usually leads to uneven amplification of barcodes, resulting in their highly skewed distribution (Clark et al., 2021; Saunders et al., 2022). Alternatively, two cells expressing the rabies glycoprotein can be interconnected. In this case, the source cell may pass the barcode to the other cell, thus obscuring the identity of the original source cell (connected-source networks; Figure 5Ac). Because the probability of connected-source networks scales with both the number of source cells and their local connection probability, limiting the number of source cells or restricting source cells to sparsely connected subpopulations of neurons will reduce this type of network. Finally, it is possible to find barcodes that occur only in cells without glycoprotein expression, but not in corresponding source cells. This can happen when the rabies virus directly infects cells that do not express the glycoprotein (no-source networks; Figure 5Ad). This may happen because the virus library contains trace amount of non-pseudotyped rabies virus, or because the infected cells express TVA but not the glycoprotein (these are expressed from separate helper AAVs in our system). In this scenario, each barcode should be found in only one or a few cells, because the probability of generating a large no-source network is exponentially smaller: For a barcode with frequency $f$ in the library and total $N$ infection events, the probability of having $M$ independent infection events with that barcode is $CM_{N}\timesf^{N}\times(1-f)^{M-N}$ . As an example, in an experiment with 1000 infection events, the probability for a barcode with $f=0.001$ to appear in a no-source networks with at least 2 cells is as high as 0.26, but the probability for the same barcode to appear in a no-source network with at least 7 cells is 8×10–5. Alternatively, source cells may be dead due to cytotoxicity or missed by sequencing (lost-source networks; Figure 5Ae). If a source cell died, it may spread the barcode to presynaptic neurons and/or to neighboring cells through the release of viral particles during necrosis. In either case, we speculate that these networks are likely to contain more neurons than no-source networks in an experiment with a reasonable number of total infections. Furthermore, the presence of lost-source networks in an experiment could cause some double-labeled networks or connected-source networks to be misidentified as single-source networks because some source cells in these networks may have been lost.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig5-v2.jpg)
+
+**Figure 5.:** (A) Five possible types of barcode-sharing networks in a barcoded transsynaptic tracing experiment using rabies virus. Whether each network is compatible with monosynaptic tracing and/or mapping synaptic convergence is indicated below. *see text for considerations regarding connected-source networks. (B) Summary of the transsynaptic labeling experiment using barcoded rabies virus and in situ sequencing. (C) The image of a representative coronal section during sequencing. Images of the first gene sequencing cycle, the hybridization cycle, and the first barcode sequencing cycle of the boxed area are shown on the right. Scale bars=50 µm. (D) First nine barcode sequencing images of example neurons that were bisected onto two adjacent sections. Scale bars = 10 µm. (E-F) The distribution of endogenous mRNA reads per cell (E) and unique gene counts per cell (F) in non-barcoded cells (gray), barcoded cells (blue), and source cells (red). Dashed lines indicate quality control thresholds for gene expression. (G-H) UMAP plots of the gene expression patterns of all barcoded cells color-coded by the cluster label at the subclass level (G) or by whether the cell is a potential source cell or presynaptic cell (H). (I) Locations and cell types of two source cells (red cross) and presynaptic cells (dots) that shared the same barcodes. Colors of dots indicate transcriptomic types of presynaptic neurons. Transcriptomic types of source cells are indicated below each plot. All other cells from the coronal sections that the source cells were on were plotted in gray. (J) Estimated numbers of barcode/source cell combinations that belonged to each of the three networks with source cells. (K) The probability (y axis) of the number of independent infection events (x axis) to generate the same number of barcodes found in the source cells in the experiment. (L) Histogram showing the number of cells that shared each barcode that was not found in a source cell. (M) Histogram showing the distribution of the maximum barcode frequency in the virus library that ensures single infection for 95% of barcodes across 10,000 simulations. (N) The ratios between the observed number of converging outputs and the expected number from random connectivity between cortical subclasses of neurons. Colors correspond to log10 of ratios, and the ratios are indicated in the plot. Only values with false positive rate (FPR) < 0.05 are shown (see Materials and methods M14). As seen from the blue squares associated with L6 IT cells, these neurons were less likely to synapse onto the same post-synaptic neurons with other neuronal types (in particular L6 CT neurons, with only 50% of converging connections compared to those expected from random connectivity).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Outline of the trans-synaptic labeling experiment using scRNA-seq. In Cre-expressing animals, we sequentially injected AV helpers (day 1) and barcoded rabies virus (day 14), then dissected VISp on day 21, FACS-enriched mCherry and/or mTagBFP expressing cells, then performed scRNA-seq. (B) The expression of rabies encoded genes (top) and AAV-encoded genes (bottom) in sequenced cells. Columns indicate cells and rows indicate genes. Colors indicate the natural log of counts scaled by the sum of all viral reads multiplied by 10,000. The bars on the top indicate whether a cell is considered to have AAV or not and the donor animal. (C) The number of source cells (left) and presynaptic cells (right) of each cell type (rows) from each animal (columns). Colors indicate cluster identity and dot size indicates the number of cells. (D) Histogram showing the distribution of the minimum Hamming distance between each barcode and all other barcodes in the pool of sequenced barcodes (solid line) or random barcodes (dashed line). (E) Histogram showing the distribution of barcodes (y axis) that found in cells across the indicated number of animals (x axis). (F) Box plots showing the library frequency of barcodes found in one or four animals. All barcodes are indicated by dots. The boxes show medians and quartiles, and the whiskers indicate range. BC, Barcode; VISp, primary visual cortex.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) For barcoded cells with the indicated barcode complexity (x axis, left) or barcode counts per cell (x axis, right), two proofreaders manually determined whether each cell is a real barcoded cell based on sequencing images. The fraction of manually curated barcoded cells (y axis) are shown. Dashed lines indicate quality control thresholds for barcodes, which was determined based on these proofreading results. (B) The number of cells of each type with at least the indicated number of reads on the rabies glycoprotein. (C) Locations of source cells (red dots) relative to cortical layers, which are color coded as indicated. (D) Images of example slices showing mCherry expression from the rabies genome (magenta), BFP co-expressed with the glycoprotein (cyan), and DAPI (also cyan). Dashed lines indicate the locations of the cortex. The approximate coronal levels are indicated on each slice. Inset shows an amplified view of the boxed area in the thalamus. Scale bars=1 mm on the left, and 200 µm in the inset on the right. (E) Amplified views of the injection site area of the slice shown in (D). Note that cyan images show both DAPI and BFP, but BFP-expressing cells can be distinguished from DAPI staining by the shape of the cell bodies. Scale bars = 200 µm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87866/elife-87866-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** In each plot, a source cell (red cross) and presynaptic cells (dots) that shared the same barcodes were plotted. Colors of dots indicate transcriptomic types of presynaptic neurons. Transcriptomic types of source cells are indicated below each plot. All other cells from the coronal sections that the source cells were on were plotted in gray.
 
 Because only true single-source networks can unambiguously resolve synaptic connectivity between individual source cells and presynaptic cells, mapping connectivity between source cells and presynaptic cells requires an experiment in which all source cells are sequenced and few source cells are lost. In contrast, single-source networks and lost-source networks can all be used to infer synaptic convergence, that is the degree to which two neuronal types synapse onto the same cells, regardless of the identity of the source cell. Because the probability of generating no-source networks and double-labeled networks for a barcode can both be estimated given the total number of barcodes seen in an experiment and the frequency of barcodes in the library, these networks can be identified and filtered out if most barcodes are sequenced in an experiment. Connected-source networks may in principle obscure synaptic convergence if a source cell that is transsynaptically labeled further pass the barcode to its presynaptic cells. However, because these tertiary infections (presynaptic cells of the transsynaptically labeled source cell) occur after the secondary infections (presynaptic cells of the original source cell), the number of barcoded cells that are presynaptic to the transsynaptically labeled source cell is likely smaller compared to those that are presynaptic to the original source cell. We thus speculate that connected-source networks are dominated by presynaptic cells of the original source cells and can also be used in the analysis of synaptic convergence. Therefore, inferring synaptic convergence neither requires sequencing all source cells nor is constrained by the presence of lost source cells.
 
-## In situ sequencing of barcoded rabies virus reveals cell type preferences in synaptic convergence
+### In situ sequencing of barcoded rabies virus reveals cell type preferences in synaptic convergence
 
 Having established how barcode-sharing networks can be analyzed in theory, we next applied this approach to a barcoded trans-synaptic rabies tracing experiment. We first tried using SMART-seq v4 scRNA-seq to read out the connectivity and transcriptomic identity of transsynaptically labeled neurons from four animals (Figure 2—figure supplement 1). However, because scRNA-seq can only interrogate a fraction of all barcoded cells, we were unable to confidently infer connectivity from the rabies barcodes (see Appendix 1 for details; Figure 5—figure supplement 1). To sequence more barcoded cells, we then investigated whether in situ sequencing could be used in a multiplexed transsynaptic labeling experiment (Figure 5B). We injected AAV2-retro-syn-mCre (Jin et al., 2023a) into the dorsal striatum, and two helper viruses, AAV1-syn-FLEX-splitTVA-EGFP-tTA and AAV1-TREtight-mTagBFP2-B19G (Liu et al., 2017), into the somatosensory cortex. This combination allows expression of TVA and the rabies glycoprotein in corticostriatal neurons (Jin et al., 2023a). After seven days, we injected a barcoded EnvA-pseudotyped ΔG rabies virus library into the somatosensory cortex. This library contained the same barcodes as the CCS-containing library used for retrograde labeling, with at least 13,211 barcodes. After another seven days, we collected 20 µm coronal sections and sequenced both endogenous genes and the rabies barcodes in 32 consecutive sections in situ (Figure 5C). These sections, which spanned 640 µm along the AP axis, largely covered the whole injection site. Because in situ sequencing did not require dissociation and was able to capture even both halves of barcoded cells that were split between two sections (Figure 5D), sequencing consecutive sections that spanned the whole injection site should allow us to interrogate most source cells. We interrogated the same gene panel as in the retrograde labeling experiment, except that we substituted probes for Slc30a3 with probes for the rabies glycoprotein gene. Barcode rolonies were basecalled individually within cells, which allowed us to read out multiple barcodes from the same cell (Figure 5C).
 
 We sequenced 3,107,645 cells, including 2914 barcoded cells (summarized in Table 2). Barcoded cells were defined as cells with at least eight counts of the same barcode, with the barcode being sufficiently complex (linguistic sequence complexity >10-0.9; see Materials and methods M14 for definition). These quality control thresholds were determined by manually proofreading a subset of barcoded cells: two proofreaders examined barcoded cells with different barcode counts or barcode complexity and determined whether each cell was indeed barcoded; based on the manual inspections, we then determined the best threshold that allowed us to distinguish cells from background fluorescence and from barcodes in passing axons/dendrites (Figure 5—figure supplement 2A). We next defined potential source cells and potential presynaptic cells based on rabies glycoprotein expression. In conventional trans-synaptic tracing experiments, potential source cells are usually determined by the expression of fluorescent proteins. Because the in situ sequencing approach we used did not preserve fluorescent labeling, we used the copy numbers of the rabies glycoprotein transcript to distinguish source cells from presynaptic cells. We estimated a threshold for the glycoprotein transcript, so that the transcriptomic types of cells with glycoprotein reads above this threshold were consistent with corticostriatal projection neurons (see Appendix 2 and Figure 5—figure supplement 2 for details). We found that cells expressing at least 12 counts of the glycoprotein transcript likely correspond to BFP + cells in a conventional tracing experiment. However, we also observed many cells with lower numbers of glycoprotein transcripts (see Discussion about the potential sources of this low-level expression). Although these cells were unlikely to be considered source cells in a conventional tracing experiment, the glycoprotein expressed in them could potentially allow barcodes to be passed onto presynaptic neurons. Thus, excluding them from potential source cells may cause double-labeled networks and connected-source networks to be mistaken as single-source networks (see Appendix 2 and Figure 5—figure supplement 2 for a detailed analysis). To minimize potential false-positive identification of synaptic connections, we used a conservative threshold of two transcripts per cell to define potential source cells. Of the 2914 barcoded cells, 138 cells had at least two counts of the rabies glycoprotein and were considered potential source cells; 2590 barcoded cells had no glycoprotein expression and were considered potential presynaptic cells; the remaining 186 barcoded cells had a single read of glycoprotein and were removed from further analyses. Consistent with the retrograde labeling experiment, the barcoded cells had similar numbers of endogenous gene reads as non-barcoded cells (Figure 5E and F) and clustered together with non-barcoded cells (Figure 5G and H).
+
+**Table 2.**
+ The numbers of barcoded cells that belonged to each type of network in the in situ sequencing-based trans-synaptic tracing experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total</th>
+      <th>Single-source</th>
+      <th>Double-labeled</th>
+      <th>Connected-source</th>
+      <th>No-source</th>
+      <th>Lost-source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Source cells and barcodes</td>
+      <td>120 cells, 59 barcodes, 126 cell-barcode pairs</td>
+      <td>42 cells, 43 barcodes, 43 cell-barcode pairs</td>
+      <td>Est. 33 cell-barcode pairs</td>
+      <td>Est. 50 cell-barcode pairs</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>presynaptic cells</td>
+      <td>2590 cells(=381 + 979–6+677 + 566–7)</td>
+      <td>381 cells</td>
+      <td colspan="2">979 cells (6 cells also contained a single-source barcode)</td>
+      <td>677 cells (7 cells also had a lost-source barcode)</td>
+      <td>566 cells (7 cells also had a no-source barcode)</td>
+    </tr>
+    <tr>
+      <td>Barcodes in presynaptic cells</td>
+      <td>535 barcodes(=31 + 16+427 + 61)</td>
+      <td>31 barcodes</td>
+      <td colspan="2">16 barcodes</td>
+      <td>427</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Filtered out cells</td>
+      <td>204 cells (with one G transcript and/or low-quality source cells)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
 
 Because distinguishing different types of barcode-sharing networks requires sequencing most source cells, we first estimated what fraction of the source cells that were present in the tissue was sequenced. The number of cells that shared a barcode varied widely from 1 cell/barcode to 359 cells/barcode. Since previous studies showed that each source cell can label dozens to hundreds of presynaptic neurons (Liu et al., 2013; Wertz et al., 2015) when infected at relatively high viral titer (as we have done in this experiment), we reasoned that barcodes that were found only in a small number of cells may indicate either no-source networks or lost-source networks due to dead source cells. We thus focused on 23 barcodes that were present in at least 12 cells per barcode, and calculated the fraction of barcodes that were also found in source cells with read counts above a certain threshold. We varied this threshold to generate a range of estimates that likely over-estimated and under-estimated the number of source cells at the extreme ends, respectively, and found that 80–93% barcodes were found in source cells (see Materials and methods M14 for details; Figure 5—figure supplement 2B). We further filtered the 138 potential source cells to remove those that had wrong segmentations or included barcodes from nearby cells based on manual examination of the sequencing images, resulting in 120 high-quality source cells with 59 unique barcodes.
 
@@ -117,19 +274,19 @@ For all potential presynaptic neurons that shared a barcode, we counted each pai
 
 Here, we combined scRNA-seq and in situ sequencing with barcoded rabies virus to relate connectivity and transcriptomic identities of neurons in both multiplexed retrograde labeling and transsynaptic labeling. As a proof of principle, we applied these approaches to interrogate projections and synaptic connectivity of cortical neuronal types. Our experiments recapitulated the diverging dorsal and ventral streams in the visual cortex and revealed differences in projections of neurons across cortical areas and transcriptomic types. Furthermore, we laid out the requirements for achieving and assessing barcoded transsynaptic labeling and revealed converging and diverging synaptic connectivity among cortical neuronal types. Our study provides a proof of principle for applying barcoded rabies virus-based neuroanatomy in the mouse brain in vivo and lays the foundation for achieving multiplexed monosynaptic tracing using barcoded rabies virus.
 
-## In situ sequencing of barcoded rabies virus achieves multiplexed retrograde labeling
+### In situ sequencing of barcoded rabies virus achieves multiplexed retrograde labeling
 
 In barcoding-based multiplexed retrograde tracing, different barcodes are used to distinguish projections to different injection sites. Unlike conventional fluorescence-based multiplexed retrograde tracing techniques, a barcoding-based approach is not limited by the number of distinguishable colors of fluorescence. Because the maximal barcode diversity that can be theoretically achieved increases exponentially with the length of the barcode (4 N in which N is the length of the barcode), possible barcode diversity is virtually unlimited. Thus, in a barcoded retrograde tracing experiment, the number of targets that can be investigated by retrograde labeling in a single experiment is likely limited by the number of injections. In our experiments, we only performed retrograde labeling from two sites as a proof of principle, but this approach can be applied to retrograde tracing from dozens of sites to reveal multiple projections from individual cells in future experiments.
 
 Barcoded retrograde and anterograde projection mapping approaches obtain complementary information. Barcoded anterograde labeling approaches, such as MAPseq and BARseq, can barcode many neuronal somata in a local region in a single injection, and thus can reveal the diversity of projections of densely labeled neurons within a region. In contrast, retrograde labeling approaches can reveal the distribution of neurons with the same projections over large brain regions. In this study, we interrogated the distribution of neurons across seven adjacent cortical areas and found that both source areas and the transcriptomic identities of cortical neurons contribute to their projection patterns. To perform the equivalent experiment using an anterograde tracing approach would require multiple injections at precise locations to achieve uniform labeling across a large region of the cortex. The sensitivity of the two approaches is also constrained by different factors: the sensitivity of MAPseq/BARseq relies on detecting individual barcode molecules in the axons; in contrast, because rabies genome is highly amplified in each infected cell, the sensitivity of barcoded rabies-based retrograde labeling is not limited by barcode detection but determined by viral transduction. Any future improvement in rabies virus-based retrograde tracing in general would also benefit barcoded approaches. Therefore, the combination of barcoding-based retrograde and anterograde projection mapping techniques provides a versatile set of tools for understanding the organization of long-range circuits.
 
-## In situ sequencing resolves barcode-sharing networks in transsynaptic labeling
+### In situ sequencing resolves barcode-sharing networks in transsynaptic labeling
 
 Transsynaptic labeling using barcoded rabies virus has the potential to map synaptic connectivity of individual neurons with unparalleled throughput and to resolve the transcriptomic identities of connected neurons at high resolution. In a barcoded transsynaptic labeling experiment, accurately inferring synaptic relationships among neurons requires distinguishing different types of barcode-sharing networks (Figure 5A) and filtering out networks that can obscure connectivity analysis. Accurately identifying the network that each neuron belongs to requires sequencing all source cells. This requirement is difficult to achieve using single-cell RNA-seq-based approaches (Clark et al., 2021; Saunders et al., 2022). Because conventional single-cell approaches require tissue dissociation, some source cells are inevitably lost. In situ sequencing, in contrast, bypasses the need for tissue dissociation and has the potential to sequence all source cells. Accidental loss of sections during cryo-sectioning can be further minimized using a tape-transfer system (Pinskiy et al., 2015), which is also compatible with BARseq-style in situ sequencing (Chen et al., 2019). In situ sequencing thus provides a path to accurately resolve synaptic connectivity in a barcoded rabies-based transsynaptic labeling experiment.
 
 In our experiment, we found that many source cells likely died in the experiment, which prevented us from unambiguously determining the connectivity between source cells and presynaptic neurons. Nonetheless, we could infer which neuronal types were more likely to synapse together onto the same source cell, regardless of the identity of the source cell. This analysis goes beyond previous barcoded rabies-based approaches (Clark et al., 2021; Saunders et al., 2022), and represents a first proof-of-principle of inferring the statistics of synaptic connectivity of neuronal types using a barcoding-based approach. Further optimizing the technique to unambiguously determine connectivity between source cells and presynaptic neurons will not only generate insights into the connectivity of neuronal types, but also allow comparison to connectivity inferred from electron microscopy data (Bae et al., 2021) and patch-seq data (Campagnola et al., 2022) to validate the specificity of rabies monosynaptic tracing.
 
-## Optimizing viral strategies to achieve highly multiplexed mapping of synaptic connectivity
+### Optimizing viral strategies to achieve highly multiplexed mapping of synaptic connectivity
 
 Our analyses based on the in situ sequencing data identified several factors that can be optimized in future experiments to achieve barcoded monosynaptic tracing at single-cell resolution. Most importantly, reducing source cell death would allow more precise matching between pre-synaptic neurons and source cells. Losing source cells not only obscures the various types of barcode-sharing networks but may also produce neurons that share the same barcode not through synaptic connectivity, but through necrosis of the source cell. Cytotoxicity in source cells can be ameliorated by titrating concentrations of AAV and rabies virus (Lavin et al., 2020), optimizing the incubation period after injecting rabies virus, using alternative strains of rabies virus with less cytotoxicity (Reardon et al., 2016), and/or using engineered glycoprotein (Kim et al., 2016). Because barcode sequencing in situ was sufficiently sensitive, our approach can also be adapted to new generations of deletion mutant vectors with reduced viral replication (Chatterjee et al., 2018; Jin et al., 2022).
 
@@ -139,7 +296,7 @@ Second, reducing the number of source cells that share barcodes can improve the 
 
 Finally, trans-synaptic transmission efficiency can be improved in future experiments. In our experiment, many potential source cells with low numbers of glycoprotein transcripts had only small numbers of corresponding presynaptic cells, suggesting that this low-level expression only allowed transmission of the rabies virus with low efficiency. We speculate that this broad but low-level expression of rabies glycoprotein may have been driven by the TREtight promoter in the absence of Cre-dependent tTA expression (Loew et al., 2010). Thus, placing the glycoprotein under the direct control of Cre could reduce its broad but low-level expression and constrain potential source cells to a sparser population. These modifications, combined with control experiments that assess the extent of connected source cells, double labeling, and dead source cells experimentally, could help achieve efficient barcoded monosynaptic tracing in future experiments.
 
-## Building a comprehensive barcoded connectomics toolbox based on in situ sequencing
+### Building a comprehensive barcoded connectomics toolbox based on in situ sequencing
 
 Barcoding-based monosynaptic tracing has unique advantages compared to other connectivity mapping techniques. Paired recordings combined with patch-seq can determine the functional connectivity of a small number of neurons and their transcriptomic types (Campagnola et al., 2022), but it is restricted to mapping connectivity over a short distance, since both connection probability and the probability of preserving those connections in slice culture drops considerably as the patched neurons become more distant. CRACM (channelrhodopsin-assisted circuit mapping) (Petreanu et al., 2007) can map long-range synaptic connectivity, but it can only map inputs from a population of genetically labeled neurons and cannot resolve differences within this population. Electron microscopy (Bae et al., 2021; Shapson-Coe et al., 2021) remains the gold standard for identifying synapses, but it is challenging to associate connectivity with the transcriptomic identities of neurons and to interrogate long-range connectivity across brain regions. In comparison, barcoding-based monosynaptic tracing is compatible with interrogation of transcriptomic identities of neurons. Furthermore, because the connectivity is read out by sequencing instead of tracing, the error in connectivity mapping does not scale with the distance between the connected neurons. These characteristics are not restricted to rabies virus-based monosynaptic tracing, but also apply to potential future techniques based on other trans-synaptic viruses (Martin and Dolivo, 1983; Ugolini et al., 1989; Beier et al., 2013; Li et al., 2021; Xiong et al., 2022; Fischer et al., 2023) Thus, barcoding-based monosynaptic tracing is ideally suited for mapping the long-range synaptic connectivity of neuronal types and complements existing synaptic connectivity mapping tools.
 
@@ -147,33 +304,281 @@ In situ sequencing is ideally suited for barcoding-based neuroanatomical techniq
 
 ## Materials and methods
 
-## M1. Animals and surgery
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6 J (See Supplementary file 1 for details)</td>
+      <td>Jackson Laboratory</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRVdG-4mCherry (plasmid)</td>
+      <td>Weible et al., 2010</td>
+      <td>Addgene_52488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RabV CVS-N2c(deltaG)-mCherry (plasmid)</td>
+      <td>Reardon et al., 2016</td>
+      <td>Addgene_73464</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-B19N (plasmid)</td>
+      <td>Chatterjee et al., 2018</td>
+      <td>Addgene_59924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-B19P (plasmid)</td>
+      <td>Chatterjee et al., 2018</td>
+      <td>Addgene_59925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-B19G (plasmid)</td>
+      <td>Chatterjee et al., 2018</td>
+      <td>Addgene_59921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-B19L (plasmid)</td>
+      <td>Chatterjee et al., 2018</td>
+      <td>Addgene_59922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-T7pol (plasmid)</td>
+      <td>Chatterjee et al., 2018</td>
+      <td>Addgene_59926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-N2cN (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene_100801</td>
+      <td>Used in rabies virus rescue (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG N2cP (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene_100808</td>
+      <td>Used in rabies virus rescue (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-N2cG (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene_100811</td>
+      <td>Used in rabies virus rescue (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-N2cL (plasmid)</td>
+      <td>This paper</td>
+      <td>Addgene_100812</td>
+      <td>Used in rabies virus rescue (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See Supplementary file 3 for details</td>
+      <td>Integrated DNA Technologies</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MiSeq Reagent Nano Kit v2 (300-cycles)</td>
+      <td>Illumina</td>
+      <td>MS-103–1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RevertAid Reverse Transcriptase</td>
+      <td>Thermo Fisher</td>
+      <td>EP0442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboLock RNase Inhibitor</td>
+      <td>Thermo Fisher</td>
+      <td>EO0384</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion High-Fidelity DNA Polymerase</td>
+      <td>Thermo Fisher</td>
+      <td>F530L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ampligase Thermostable DNA Ligase</td>
+      <td>Biosearch Technologies</td>
+      <td>A0110K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase H</td>
+      <td>Qiagen</td>
+      <td>Y9220L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phi29 dna polymerase</td>
+      <td>Thermo Fisher</td>
+      <td>EP0094</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide, No-Weigh</td>
+      <td>Thermo Fisher</td>
+      <td>A39271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bis-PEG9-NHS ester</td>
+      <td>BroadPharm</td>
+      <td>BP-21504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID: SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID: SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom scripts for data analysis/processing</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See M15. Data and Code availability for links</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV2-retro-syn-mCre (virus)</td>
+      <td>Jin et al., 2023b</td>
+      <td>Addgene_178515 (genome plasmid)</td>
+      <td>Helper virus for barcoded rabies virus (see Figure 5B)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-syn-FLEX-splitTVA-EGFP-tTA (virus)</td>
+      <td>Liu et al., 2017</td>
+      <td>Addgene_100798 (genome plasmid)</td>
+      <td>Helper virus for barcoded rabies virus (see Figure 5B)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-TREtight-mTagBFP2-B19G (virus)</td>
+      <td>Liu et al., 2017</td>
+      <td>Addgene_100799 (genome plasmid)</td>
+      <td>Helper virus for barcoded rabies virus (see Figure 5B)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV1-TREtight-mTagBFP2-N2cG (virus)</td>
+      <td>This paper</td>
+      <td>Addgene_192838 (genome plasmid)</td>
+      <td>Helper virus for CVS-N2c strain of rabies virus (see Figure 5—figure supplement 1)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N2c∆G-4mCherry_CCS2_20nt_HM(EnvA) (virus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Barcoded rabies virus library used for monosynaptic tracing with scRNA-seq (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RV∆G-4mCherry_CCS2_20nt_HM(EnvA) (virus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Barcoded rabies virus library used for monosynaptic tracing with BARseq (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RV∆G-4mCherry_CCS2_20nt_HM(B19G) (virus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Barcoded rabies virus library used for retrograde labeling (see Materials and methods M5)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RV∆G-4mCherry_20-mer barcode(B19G) (virus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Barcoded rabies virus library used for retrograde labeling (see Materials and methods M5)</td>
+    </tr>
+  </tbody>
+</table>
+
+### M1. Animals and surgery
 
 Animal handling and surgery were conducted according to protocols approved by the Institutional Animal Care and Use Committee (IACUC) of the Allen Institute for Brain Science (protocol number 2106 and 2201) and protocol approved by the MIT Committee on Animal Care (protocol number 2303000498). Animals were housed 3–5 per cage and were on a 12/12 light/dark cycle in an environmentally controlled room (humidity 40%, temperature 21 °C). A full list of animals used are provided in Supplementary file 1.
 
 For retrograde tracing, barcoded G-deleted rabies viruses enveloped in native rabies glycoprotein were stereotaxically injected into target brain areas of mice using coordinates obtained from the Paxinos adult mouse brain atlas (Paxinos and Franklin, 2019). For retrograde transsynaptic tracing, AAV helper viruses were stereotaxically injected into VISp for the scRNA-seq experiments and SSp/dorsal striatum for the in situ sequencing experiments, followed by the injection of EnvA-pseudotyped barcoded G-deleted rabies virus into the same area two weeks later. Details for all injections are provided in Supplementary file 1. Brains were dissected 1 week (7+/−1 days) after rabies virus injection.
 
-## M2. Viruses and constructs
+### M2. Viruses and constructs
 
 Viruses used are provided in Supplementary file 2. For plasmids and vectors used for making barcoded rabies virus, see below (Constructing barcoded plasmids for rabies virus).
 
-## M3. In situ sequencing oligos
+### M3. In situ sequencing oligos
 
 RT primers, sequencing primers, and padlock probes for both endogenous genes and rabies transcripts are designed as previously described (Sun et al., 2021; Chen et al., 2023). A list of oligos used in in situ sequencing are provided in Supplementary file 3.
 
-## M4. Constructing barcoded plasmids for rabies virus
+### M4. Constructing barcoded plasmids for rabies virus
 
 In order to maximize the copy number of barcode transcripts in rabies virus infected neurons, we inserted a barcode sequence consisting of 20 random nucleotides in the 3’ untranslated region of the nucleoprotein gene in pRV∆G-4mCherry (Addgene #52488) (SAD B19 strain) (Weible et al., 2010) and RabV CVS-N2c(deltaG)-mCherry (Addgene #73464) (CVS-N2c strain) (Reardon et al., 2016) using NEBuilder HiFi DNA Assembly for constructing the barcoded rabies plasmid libraries. The 10 x Genomics ‘Chromium Capture Sequence 2’ (GCTCACCTATTAGCGGCTAAGG) was included following the barcode in one version of the libraries of each strain.
 
 Cloning steps were as follows:
 
-## Step 1: Construction of pRV∆G-4mCherry library template
+#### Step 1: Construction of pRV∆G-4mCherry library template
 
 In order to reduce contamination of the library by the original plasmids, a jGCaMP7s fragment flanked by PacI and PmeI was inserted in the 3’ UTR of the N gene in RabV CVS-N2c(deltaG)-mCherry and pRV∆G-4mCherry.
 
 Here, we used two approaches to minimize contamination: (1) (2) after long-range PCR with Q5 High-Fidelity 2 X Master Mix, the PCR amplicons were run on a low melting agarose gel for 2 hr in order to separate PCR amplicons from pRV∆G-4mCherry template plasmid in case double digestion from (1) was not sufficient.
 
-## Step 2: Whole RV plasmid PCR
+#### Step 2: Whole RV plasmid PCR
 
 To generate large amounts of linearized rabies vector for barcoded plasmids in the next step, we performed long-range PCR using pRV∆G-4mCherry library template from step 1, linearized with PacI and PmeI, as a DNA template. We then ran the PCR mix on a 0.7% low melting point agarose gel (16520–100, Invitrogen) and the target bands at 14,438 bp were cut and purified with NucleoSpin Gel and PCR Clean-Up kit (740609.250, Takara). The target amplicons were re-concentrated to >300 ng/ µL with GlycoBlue Coprecipitant (AM9515, Invitrogen). The long-range PCR primers are listed below:
 
@@ -183,7 +588,7 @@ Q5 Hot Start High-Fidelity 2 X Master Mix (M0494S, NEB): 12.5 µL; N_Barcode_160
 
 Cycle conditions: (1) 98 °C, 30 s; (2) 98 °C, 5 seconds; (3) 67 °C, 10 s; (4) 72 °C, 5 min; (5) go to step 2–4, 30 times; (6) 72 °C, 2 min.
 
-## Step 3: Barcoding RV vector using NEBuilder HiFi DNA assembly method
+#### Step 3: Barcoding RV vector using NEBuilder HiFi DNA assembly method
 
 A 160 bp Ultramer DNA Oligonucleotides with 20 random nucleotide barcodes sequence (see below) was generated by IDT (Integrated DNA Technologies, Inc, USA). They were inserted into the linearized vector of pRV∆G-4mCherry from step 2 described above using HiFi DNA Assembly (NEB, USA). The HiFi reaction was mixed as described below:
 
@@ -191,37 +596,37 @@ Re-concentrated pRV∆G-4mCherry PCR amplicons (>300 ng/µL): 1 µL; 160 bp Ultr
 
 This reaction mix was incubated at 50 °C for 1 hr. After the incubation, we concentrated the mix to >130 ng/µL with GlycoBlue Coprecipitant. After electroporation transformation with Endura Electrocompetent Cells (60242–1, Biosearch Technologies, USA), the cells were plated into Nunc Square BioAssay Dishes (Catalog number: 240835, Thermo Fisher Scientific, USA). After growing for 14 hr at 37 °C, the bacterial colonies were scraped using bacti cell spreaders (60828–688, VWR, USA) for plasmid library purification with NucleoBond Xtra Midi EF kit (740420.10, Takara).
 
-## M5. Rabies virus production
+### M5. Rabies virus production
 
 Barcoded rabies viruses were produced and titered largely as described previously (Wickersham et al., 2010; Wickersham and Sullivan, 2015), using the barcoded vector genome plasmid libraries described above. For SAD B19 viruses, HEK-293T cells were transfected with the respective genome library along with helper plasmids pCAG-B19N (Addgene cat. # 59924), pCAG-B19P (Addgene cat. # 59925), pCAG-B19G (Addgene cat. # 59921), pCAG-B19L (Addgene cat. # 59922), and pCAG-T7pol (Addgene cat. # 59926), were used for rescue transfections, using Lipofectamine 2000 (Thermo Fisher). For CVS-N2c virus, Neuro2a cells stably expressing the CVS-N2c glycoprotein (N2A-N2cG_02 cells) were transfected with the barcoded N2c library along with helper plasmids pCAG-N2cN (Addgene cat. # 100801), pCAG N2cP (Addgene cat. # 100808), pCAG-N2cG (Addgene cat. # 100811), pCAG-N2cL (Addgene cat. # 100812), and pCAG-T7pol. Details for individual preparations are as follows:
 
-## RV∆G-4mCherry_20-mer barcode(B19G) (used for retrograde labeling)
+#### RV∆G-4mCherry_20-mer barcode(B19G) (used for retrograde labeling)
 
 Supernatants were collected beginning 3 days after transfection and continuing for a total of five days, with supernatants replaced with 13 ml fresh medium until the last collection; each supernatant was filtered and refrigerated until all supernatants were titered together on HEK-293T cells as described (Wickersham et al., 2010). BHK cells stably expressing SAD B19 glycoprotein were infected with rescue supernatant at a multiplicity of infection (MOI) of 0.1. 24 hr after infection, medium was replaced with 14 ml fresh medium. Supernatants were collected beginning 24 hr later and continuing every 24 hr for a total of three days, clarified by low-speed centrifugation and filtered as described previously (Wickersham et al., 2010) and replaced with 14 ml fresh medium until the final collection. Following titering, 25 ml of supernatant III was ultracentrifugated through 25% sucrose as described (Wickersham et al., 2010) and resuspended overnight in 20 µl DPBS, aliquoted and frozen, with a final titer of 4.21e11 iu/mL.
 
-## RV∆G-4mCherry_CCS2_20nt_HM(B19G) (used for retrograde labeling)
+#### RV∆G-4mCherry_CCS2_20nt_HM(B19G) (used for retrograde labeling)
 
 Production of this virus was similar to that of the above but using the CCS2-containing SAD B19 plasmid library. The final titer of the concentrated virus was 5.97e11 iu/mL.
 
-## RV∆G-4mCherry_CCS2_20nt_HM(EnvA) (used for monosynaptic tracing with BARseq)
+#### RV∆G-4mCherry_CCS2_20nt_HM(EnvA) (used for monosynaptic tracing with BARseq)
 
 Supernatant I of the passage of RV∆G-4mCherry_CCS2_20nt_HM(B19G) described above was used to infect BHK cell stably expressing a fusion protein of the EnvA envelope protein with the cytoplasmic domain of the SAD B19 glycoprotein at an MOI of 2, as described. 24 hr after infection, cells were washed twice with DPBS, and the medium was replaced with 13 ml fresh medium per plate. 24 hr later, cells were again washed once with DPBS, and medium was again replaced. 24 hr later, supernatants were collected, replaced with fresh medium, clarified and filtered, incubated with 30 U/mL Benzonase for 30 min at 37 °C, then ultracentrifugated through sucrose. 24 hr later, a second supernatant was collected and processed the same way. Both concentrated supernatants were then pooled, mixed, and aliquoted as 5 µl aliquots, then stored at –80 °C before being titered on TVA-expressing cells as described previously (Wickersham et al., 2010). The final titer of the concentrated stock was 7.16e10 iu/mL.
 
-## N2cdG-4mCherry_CCS2_20nt_HM(EnvA) (used for monosynaptic tracing with scRNA-seq)
+#### N2cdG-4mCherry_CCS2_20nt_HM(EnvA) (used for monosynaptic tracing with scRNA-seq)
 
 Following transfection, medium was changed regularly with 25 ml fresh medium until 10 days post-transfection, when supernatant collection was begun. Supernatants were collected each Monday, Wednesday, and Friday, replaced with 25 ml fresh medium except for the final collection, clarified, filtered, and stored in 4 °C, for a total of nine collections. Supernatants were titered on HEK 293T cells as described previously. N2A-EnvA_cytG cells (Reardon et al., 2016) were infected with rescue supernatants IV and V at an MOI of 2. 24 hr after infection, supernatants were aspirated, cells were washed twice with DPBS and given 12 ml fresh medium per plate. 24 hr later, cells were again washed once with DPBS and given 12 ml fresh medium per plate. 24 hr later, supernatants were collected, replaced with fresh medium, clarified and filtered, incubated with 30 U/mL Benzonase for 30 min at 37 °C, then ultracentrifugated through sucrose. 24 hr later, a second supernatant was collected and processed the same way. The two concentrated supernatants were pooled, aliquoted, and stored at –80 °C. The final titer of the concentrated stock was 2.82e10 iu/mL.
 
-## M6. Tissue processing and scRNA-seq
+### M6. Tissue processing and scRNA-seq
 
 scRNA-seq was performed using the SMART-Seq v4 kit (Takara Cat#634894) as described previously (Tasic et al., 2018). Mice were anaesthetized with isoflurane and perfused with cold carbogen-bubbled artificial cerebrospinal fluid (ACSF). The brain was dissected and sliced into 250 µm coronal sections on a compresstome (Precisionary). Regions of interest were micro-dissected, followed by enzymatic digestion, trituration into single cell suspension, and FACS analysis. For retrograde tracing, 48–52 mCherry-positive cells from each mouse were sorted into eight-well strips containing SMART-Seq lysis buffer with RNase inhibitor (0.17 U/µL; Takara Cat#ST0764). For retrograde transsynaptic tracing, 48 mCherry-positive cells from each mouse were first sorted into eight-well strips, followed by the sorting of mCherry-/mTagBFP2-double positive cells. Sorted cells were immediately frozen on dry ice for storage at −80 °C. Reverse transcription, cDNA amplification, and library construction were conducted as described previously (Tasic et al., 2018). Full documentation for the scRNA-seq procedure is available in the ‘Documentation’ section of the Allen Institute data portal at http://celltypes.brain-map.org/.
 
-## M7. RNA-seq data processing
+### M7. RNA-seq data processing
 
 Reads were aligned to GRCm38 (mm10) using STAR v2.5.3 in twopassMode as described previously (Tasic et al., 2018), and all non-genome-mapped reads were aligned to sequences encoded by the rabies and AAV helper viruses. PCR duplicates were masked and removed using STAR option ‘bamRemoveDuplicates’. Only uniquely aligned reads were used for gene quantification. Exonic read counts were quantified using the GenomicRanges package for R. To determine the corresponding cell type for each scRNA-seq dataset, we utilized the scrattch.hicat package for R (Tasic et al., 2018). The mapping method was based on comparing a cell’s marker gene expression with the marker gene expression of the reference cell types. Selected marker genes that distinguished each cluster were used in a bootstrapped centroid classifier, which performed 100 rounds of correlation using 80% of the marker panel selected at random in each round. Cells meeting any of the following criteria were removed:<100,000 total reads, <1000 detected genes (with CPM >0), CG dinucleotide odds ratio >0.5, mapping confidence <0.7, and mapping correlation <0.6. One animal in which 31 out of the 40 mapped cells were microglia was excluded from analysis.
 
 To extract CCS sequences, non-genome-mapped reads were aligned to the CCS sequence encoded in the rabies genomic sequence, and to extract barcode sequences, non-genome-mapped reads were aligned to the region in the rabies genomic sequence with extra six nucleotides flanking the barcode sequence. genomic sequence. For each sample, nucleotide frequencies of the reads over the specified regions were calculated using the alphabetFrequencyFromBam function of the GenomicAlignments package for R. Position weight matrix (PWM) was constructed from the nucleotide frequency matrix using the makePWM function of the SeqLogo R package, and consensus sequences were derived from PWM objects to represent CCS and barcode sequences.
 
-## M8. Sequencing of barcoded rabies virus libraries
+### M8. Sequencing of barcoded rabies virus libraries
 
 For the SAD B19 viruses, rabies genomes were exacted by NucleoSpin RNA Virus (740956.50, Takara), RT-PCR was performed with AccuScript PfuUltra II RT-PCR Kit (600184, Agilent) and a customized RT-primer including unique molecular identifier (UMI) sequence, named Adaptor_UMI_N15. The UMI-based counting was used for analyzing rabies barcode diversity.
 
@@ -231,7 +636,7 @@ After running the product on a 3% low melting agarose gel and the target bands (
 
 N2c viruses were sequenced following the same procedures, using the following primers:
 
-## M9. Sequencing depth of rabies virus libraries
+### M9. Sequencing depth of rabies virus libraries
 
 We found 13,212 and 8,553 barcodes, respectively, from the RV∆G-4mCherry_20-mer barcode(B19G) and RV∆G-4mCherry_CCS2_20nt_HM(EnvA) libraries. The RV∆G-4mCherry_CCS2_20nt_HM(B19G) library was used to prepare the RV∆G-4mCherry_CCS2_20nt_HM(EnvA) library, so we did not separately sequence the barcodes in the B19G coated library.
 
@@ -239,15 +644,161 @@ In the retrograde labeling experiment, 12% of barcodes (496 out of 4,130 barcode
 
 The RV∆G-4mCherry_CCS2_20nt_HM(B19G) library was used to prepare the RV∆G-4mCherry_CCS2_20nt_HM(EnvA) library, so we did not separately sequence the barcodes in the B19G coated library.
 
-## M10. In situ sequencing – library preparation
+### M10. In situ sequencing – library preparation
 
 In situ sequencing was performed as previously described for BARseq (Sun et al., 2021; Chen et al., 2023) and a detailed step-by-step protocol is provided at protocols.io (dx.doi.org/10.17504/protocols.io.n2bvj82q5gk5/v1). Briefly, brain sections were fixed in 4% paraformaldehyde in PBS for 1 hr, dehydrated through 70%, 85%, and 100% ethanol, and incubated in 100% ethanol for 1.5 hr at 4 °C. After rehydration in PBST (PBS and 0.5% Tween-20), we incubate in the reverse transcription mix (RT primers, 20 U/μL RevertAid H Minus M-MuLV reverse transcriptase, 500 μM dNTP, 0.2 μg/μL BSA, 1 U/μL RiboLock RNase Inhibitor, 1×RevertAid RT buffer) at 37 °C overnight. On the second day, we crosslink cDNA using BS(PEG)9 (40 μL in 160 μL PBST) for 1 hr, neutralize the remaining crosslinker with 1 M Tris pH 8.0 for 30 min, and wash with PBST. We then incubate in non-gap-filling ligation mix (1×Ampligase buffer, padlock probe mix for endogenous genes, 0.5 U/μL Ampligase, 0.4 U/μL RNase H, 1 U/μL RiboLock RNase Inhibitor, additional 50 mM KCl, 20% formamide) for 30 min at 37 °C and 45 min at 45 °C, followed by incubating in the gap-filling ligation mix (same as the non-gap-filling mix with the rabies barcode padlock probe [XCAI5] as the only padlock probe, and with 50 μM dNTP, 0.2 U/μL Phusion DNA polymerase, and 5% glycerol) for 5 min at 37 °C and 45 min at 45 °C. After incubation, we wash the sample with PBST, hybridize with 1 μM RCA primer (XC1417) for 10 mins in 2×SSC with10% formamide, wash twice in 2×SSC with10% formamide and twice in PBST, then incubate in the RCA mix (1 U/μL phi29 DNA polymerase, 1 x phi29 polymerase buffer, 0.25 mM dNTP, 0.2 μg/μL BSA, 5% glycerol (extra of those from the enzymes), 125 μM aminoallyl dUTP) overnight at room temperature. On the third day we crosslink and neutralize additional crosslinkers as performed on the second day.
 
 In the reverse transcription mix, the RT primers included 50 μM (final concentration) random primer (XC2757) and 2 μM each of primers against the rabies barcode flanking regions (XCAI6 and XCAI7). For the monosynaptic tracing experiments, the RT primers additionally included 2 μM of primers for the rabies glycoprotein (XCAI63 – XCAI76). All RT primers contain amine groups at the 5’ end, which allow crosslinking on the second day. In the retrograde tracing experiments, the non-gap-filling padlock probe mix included all padlock probes for endogenous genes. In the monosynaptic tracing experiments, the non-gap-filling padlock probe mix included all padlock probes for endogenous genes except Slc30a3, and additionally included padlocks for the rabies glycoprotein (XCAI77 – XCAI90).
 
-## M11. In situ sequencing – sequencing and imaging
+### M11. In situ sequencing – sequencing and imaging
 
 Sequencing was performed using Illumina MiSeq Reagent Nano Kit v2 (300-cycles) and imaged on a Nikon Ti2-E microscope with Crest xlight v3 spinning disk confocal, photometrics Kinetix camera, and Lumencor Celesta laser. All images were taken with a Nikon CFI S Plan Fluor LWD 20XC objective. For each sample, we first sequence seven sequencing cycles for genes, followed by one hybridization cycle, followed by 15 sequencing cycles for barcodes. In each imaging round, we took a z-stack of 21 images centered around the tissue with 1.5 µm step size at each field of view (FOV). Adjacent FOVs had an overlap of 24%. Detailed list of filters and lasers used for each imaging channel are listed in Table 3.
+
+**Table 3.**
+ List of filters and lasers used for in situ sequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Filters</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Main dichroic</td>
+      <td>Filter names</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D1</td>
+      <td>FF421/491/567/659/776-Di01 (Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>ZT405/514/635rpc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D3</td>
+      <td>FF421/491/572-Di01−25x36(Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Emission filters</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1</td>
+      <td>FF01-441/511/593/684/817(Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E2</td>
+      <td>FF01-565/24(Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E4</td>
+      <td>FF01-676/29(Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E5</td>
+      <td>FF01-775/140(Semrock)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E7</td>
+      <td>69,401 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E8</td>
+      <td>ZET532/640 m</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Imaging settings</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequencing cycles</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Channel</td>
+      <td>Filter combinations</td>
+      <td>laser</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>D2/E2</td>
+      <td>520</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>D1/E1</td>
+      <td>546</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>D2/E4</td>
+      <td>638</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>D2/E5</td>
+      <td>638</td>
+    </tr>
+    <tr>
+      <td>DIC</td>
+      <td>D2/E5</td>
+      <td>DIA</td>
+    </tr>
+    <tr>
+      <td>Hybridization cycle</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>D3/E7</td>
+      <td>477</td>
+    </tr>
+    <tr>
+      <td>YFP</td>
+      <td>D2/E2</td>
+      <td>520</td>
+    </tr>
+    <tr>
+      <td>TxRed</td>
+      <td>D3/E7</td>
+      <td>546</td>
+    </tr>
+    <tr>
+      <td>Cy5</td>
+      <td>D2/E8</td>
+      <td>638</td>
+    </tr>
+    <tr>
+      <td>DAPI</td>
+      <td>D1/E7</td>
+      <td>405</td>
+    </tr>
+    <tr>
+      <td>DIC</td>
+      <td>D3/E7</td>
+      <td>DIA</td>
+    </tr>
+  </tbody>
+</table>
 
 Detailed sequencing protocols are available at protocols.io (https://www.protocols.io/view/barseq-barcoded-rabies-cmppu5mn), and a brief description is provided here.
 
@@ -261,35 +812,69 @@ For hybridization cycles, we strip the sequenced products with three 10 min incu
 
 The control brain was sectioned to 50 µm and imaged using the DAPI channel, the T channel, and DIC channel settings.
 
-## M12. In situ sequencing – data processing
+### M12. In situ sequencing – data processing
 
 In situ sequencing data was processed in MATLAB using custom scripts (see Data and Code Availability; Chen et al., 2023). In general, we processed each FOV separately, and only combined data from FOV after extracting rolony-level and cell-level data. We denoised the max projection images from each imaging stack using noise2void (Krull et al., 2018), fixed x-y shifts between channels, and corrected channel bleed through. We then registered all gene sequencing cycles to the first gene sequencing cycle using the sum of the signals from all four sequencing channels; we registered the hybridization cycle to the first gene sequencing cycle using the TxRed channel, which visualized all the sequenced gene rolonies; we registered all barcode sequencing cycles to the first barcode sequencing cycle using the sum of sequencing signals; and we registered the first barcode sequencing cycle to the first gene sequencing cycle using the brightfield image. We then performed cell segmentation with Cellpose (Stringer et al., 2021), using the sum of all four hybridization channels, which visualize all gene rolonies, as cytoplasmic signals and the DAPI channel in hybridization cycle as nuclear signals. Gene rolonies are decoded using Bardensr (Chen et al., 2021). Barcode rolonies were first identified by picking peaks in the first barcode cycle using both prominence and intensity thresholds. We then called the nucleotide at each cycle as the channel with the strongest signal of the four sequencing channels. Within each cell, barcodes within two mismatches away from other barcodes are error-corrected to the most abundant barcodes within the same cell. All FOVs were stitched using ImageJ to find the transformation matrix from each FOV to each slice. These transformation matrices were then applied to the position of cells and rolonies to find their positions in each slice. Cells that were imaged multiple times in the overlapping regions between neighboring FOVS were removed using an approach based on AABB collision detection (Baraff and Witkin, 1992).
 
 We filtered out neurons with fewer than 20 counts/cell and 5 genes/cell, then clustered the cells in an iterative approach using Louvain clustering as described previously (Chen et al., 2023). Clusters were mapped to reference scRNA-seq data (Tasic et al., 2018) using SingleR (Aran et al., 2019). We registered slices to the Allen CCF v3 using a manual procedure described previously (Chen et al., 2023) based on QuickNII and Visualign (Puchades et al., 2019).
 
-## M13. Multiplexed retrograde tracing analysis
+### M13. Multiplexed retrograde tracing analysis
 
-To estimate an upper bound of the false positive rate for the retrograde tracing experiment using scRNA-seq, we used the definition of false positive rate: FPR=FP/(FP+TN) , where FP is the number of false positive detections and TN is the number of true negative detections. Because L5 ET and L6 CT neurons are the main neuronal types that project to the LGd (Harris and Shepherd, 2015; Tasic et al., 2018), we defined TN as all sequenced inhibitory neurons, IT neurons and L5 NP neurons that did not project to the LGd (24 IT neurons, 1 L5 NP neurons, and 7 inhibitory neurons; total 32 neurons), and FP as those that did project to the LGd (0 neurons). We did not include L6b neurons, because some L6b neurons form a continuum with L6 CT neurons in transcriptomics and morphology. It is thus unclear whether L6b neurons could project to the thalamus. Since no FP was identified in this dataset, the true FP likely lies between 0 and 1. We thus estimate that the upper bound of FPR as (1+FP)/(FP+TN)=1/32, or 3.1%.
+To estimate an upper bound of the false positive rate for the retrograde tracing experiment using scRNA-seq, we used the definition of false positive rate: $FPR=FP/(FP+TN)$ , where FP is the number of false positive detections and TN is the number of true negative detections. Because L5 ET and L6 CT neurons are the main neuronal types that project to the LGd (Harris and Shepherd, 2015; Tasic et al., 2018), we defined TN as all sequenced inhibitory neurons, IT neurons and L5 NP neurons that did not project to the LGd (24 IT neurons, 1 L5 NP neurons, and 7 inhibitory neurons; total 32 neurons), and FP as those that did project to the LGd (0 neurons). We did not include L6b neurons, because some L6b neurons form a continuum with L6 CT neurons in transcriptomics and morphology. It is thus unclear whether L6b neurons could project to the thalamus. Since no FP was identified in this dataset, the true FP likely lies between 0 and 1. We thus estimate that the upper bound of FPR as $(1+FP)/(FP+TN)=1/32$, or 3.1%.
 
-The analysis of the in situ sequencing experiment was performed in MATLAB. Cells were considered barcoded if it contained at least six reads of the same barcode, and the barcodes were matched to the two sequencing libraries allowing one mismatch. To analyze the spatial patterns of the somas of projection neurons, we first divided the cortex into 267 ‘cubelets’. On each slice, the cubelets were drawn so that they spanned all layers of the cortex and had roughly similar width (~100 µm) along the outer surface of the cortex along the mediolateral axis. These cubelets largely covered cortical areas VISp, VISl, ECT, and TEa. We did not draw over RSP because the curvature of the cortex at RSP makes it difficult to define cubelets in this area. In each cubelet c, we denoted the projection probability for each cell type t as Pct . Let M=meanc∈cubelets,t∈types(Pct) be the mean projection probability across all cell types and cubelets, and TV=∑c∈cubelets,t∈types(Pct−M)2 be the total variance. We then computed the variance explained by areas, subclasses, types, and types with areas as follows:VEarea=∑a∈area(meanc∈a,t∈types(Pct)−M)2/TVVEsubclass=∑h∈subclass(meanc∈cubelets,t∈h(Pct)−M)2/TVVEtype=∑t∈type(meanc∈cubelets(Pct)−M)2/TVVEtype,area=∑t∈type,a∈area(meanc∈a(Pct)−M)2/TV
+The analysis of the in situ sequencing experiment was performed in MATLAB. Cells were considered barcoded if it contained at least six reads of the same barcode, and the barcodes were matched to the two sequencing libraries allowing one mismatch. To analyze the spatial patterns of the somas of projection neurons, we first divided the cortex into 267 ‘cubelets’. On each slice, the cubelets were drawn so that they spanned all layers of the cortex and had roughly similar width (~100 µm) along the outer surface of the cortex along the mediolateral axis. These cubelets largely covered cortical areas VISp, VISl, ECT, and TEa. We did not draw over RSP because the curvature of the cortex at RSP makes it difficult to define cubelets in this area. In each cubelet c, we denoted the projection probability for each cell type t as $P_{ct}$ . Let $M=mean_{c\incubelets,t\intypes}(P_{ct})$ be the mean projection probability across all cell types and cubelets, and $TV=\sumc\incubelets,t\intypes(P_{ct}−M)^{2}$ be the total variance. We then computed the variance explained by areas, subclasses, types, and types with areas as follows:
 
-To calculate the variance explained by types and shuffled areas, we first shuffled the area labels of all 267 cubelets, then followed the equations about for VEtype,area .
+$$
+VE_{area}=\suma\inarea(mean_{c\ina,t\intypes}(P_{ct})−M)^{2}/TV
+$$
 
-## M14. Barcoded transsynaptic labeling analysis
+
+
+$$
+VE_{subclass}=\sumh\insubclass(mean_{c\incubelets,t\inh}(P_{ct})−M)^{2}/TV
+$$
+
+
+
+$$
+VE_{type}=\sumt\intype(mean_{c\incubelets}(P_{ct})−M)^{2}/TV
+$$
+
+
+
+$$
+VE_{type,area}=\sumt\intype,a\inarea(mean_{c\ina}(P_{ct})−M)^{2}/TV
+$$
+
+To calculate the variance explained by types and shuffled areas, we first shuffled the area labels of all 267 cubelets, then followed the equations about for $VE_{type,area}$ .
+
+### M14. Barcoded transsynaptic labeling analysis
 
 For the scRNA-seq based transsynaptic labeling experiment, barcode-level analyses, including Hamming distance and matching to barcode library, were performed in MATLAB.
 
-For the in situ sequencing experiments, we filtered barcodes based on linguistic sequence complexity (Trifonov, 1990) and barcode counts per cell. For a barcode with length M, the linguistic sequence complexity C is defined as the product of the vocabulary-usage measures of n-grams, Un, for all possible ns:C=∏n=1MUn
+For the in situ sequencing experiments, we filtered barcodes based on linguistic sequence complexity (Trifonov, 1990) and barcode counts per cell. For a barcode with length M, the linguistic sequence complexity C is defined as the product of the vocabulary-usage measures of n-grams, Un, for all possible ns:
+
+$$
+C=\prod_{n=1}^{M}U_{n}
+$$
 
 where Un is defined as the ratio between the number of unique n-grams that was observed and the minimum between all possible n-grams and the total number of n-grams in that sequence. We first curated barcoded cells manually to determine appropriate thresholds. We generated 100×100 pixels crops of images of all barcode sequencing cycles, the first gene sequencing cycle, the hybridization cycle channels, and cell segmentation mask for 262 cells with varying barcode counts per cell and barcode complexity. The images were visually inspected to determine whether a barcode with the called barcode is present in the cell to determine the thresholds for complexity and barcode counts that removed wrong barcodes. These barcodes were dominated by incomplete cells at the borders of an FOV (low complexity), autofluorescence background (low complexity), and wrong basecalls due to overlapping barcode rolonies (low counts). To determine the source cells, we additionally required cells to have at least two read counts of the rabies glycoprotein. This threshold was chosen so that most glycoprotein positive cells were around the injection sites and were concentrated in layer 5, which are enriched in corticostriatal projection neurons.
 
 To estimate the fraction of barcodes that were observed in source cells, we only focused on barcodes that had sufficient reads per cell (≥10 reads per cell) and were in networks that were large enough to exclude most no-source networks and lost-source networks (≥12 cells per barcode). We then asked what fraction of those barcodes were found in source cells, which were defined by having a barcode with at least X reads per cell. Because we knew based on manual inspection that all barcodes with at least ten reads per cell were real, but only some barcodes with between three to ten reads per cell were real, we reasoned that thresholding at X=10 would likely underestimate the number of barcodes that were found in source cells, whereas thresholding at X=3 would overestimate the number of barcodes that were found in source cells. Estimates using these two thresholds thus provided the upper and lower bound of the true rate at which barcodes were observed in source cells.
 
-To estimate the number of independent infection events that achieved the number of barcodes in source cells observed in the experiment, we calculated the posterior probability, P(N/M), of using N independent infection events to achieve M=59 unique barcodes using Bayes’ theorem:PNM=PMN×P(N)P(M)
+To estimate the number of independent infection events that achieved the number of barcodes in source cells observed in the experiment, we calculated the posterior probability, P(N/M), of using N independent infection events to achieve $M=59$ unique barcodes using Bayes’ theorem:
 
-where P(N/M) is the probability of drawing M unique barcodes after N infections based on the barcode frequency in the virus library, P(N) is the probability of having N infections (uniform distribution), and P(M) is the probability of drawing M unique barcodes overall:P(M)=∑N=MCP(M|N)×P(N)
+$$
+PNM=\frac{PMN\timesP(N)}{P(M)}
+$$
 
-where C=126 is the number of unique barcode-source cell combinations that was observed.
+where P(N/M) is the probability of drawing M unique barcodes after N infections based on the barcode frequency in the virus library, P(N) is the probability of having N infections (uniform distribution), and P(M) is the probability of drawing M unique barcodes overall:
+
+$$
+P(M)=\sumN=MCP(M|N)\timesP(N)
+$$
+
+where $C=126$ is the number of unique barcode-source cell combinations that was observed.
 
 To find biases in converging outputs between cell types, we first removed all barcodes with fewer than five cells, which resulted in 153 barcodes. This lower boundary allowed us to filter out most no-source networks. We then estimated the number of independent infection events and the maximum barcode frequency to achieve 95% single infection. We randomly drew barcodes from the barcode library based on their frequencies until we obtained the same number of barcodes as in the in situ dataset. Because the library was sequenced only to 82%, we considered the remaining 18% of barcodes to be all non-repetitive for the purpose of this analysis. We repeated this process 10,000 times and used the median numbers as estimate for the total number of infection events and the barcode frequency threshold for the subsequent analysis. For each barcode, we considered all pair-wise combinations of cells that share that barcode to have converging outputs and accumulated the number of converging outputs across all barcodes for each combination of cortical subclasses. To estimate the biases compared to the expected number of converging outputs, we calculated the expected number of converging outputs as the square of cell counts for each cortical subclass, normalized so that the total number of connections is the same as the data. To estimate p values, we shuffled the identity of connected cells and recalculated the number of converging outputs for each pair of cortical subclasses. We repeated this process 10,000 times and used two times the fraction of iterations with more extreme values of converging outputs as the p values.
 
@@ -297,6 +882,6 @@ Estimating the barcode frequency threshold required knowing the distribution of 
 
 Detailed analysis scripts are provided on Mendeley Data (see Data and code availability).
 
-## Materials availability statement
+### Materials availability statement
 
 Samples of novel plasmids, including the barcoded rabies virus genome plasmids, are available from the authors on request.

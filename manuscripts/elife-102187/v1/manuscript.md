@@ -6,9 +6,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Grossman Center for the Statistics of Mind, Columbia University in the City of New York New York United States
-2. https://ror.org/00hj8s172 Kavli Institute for Brain Science, Columbia University in the City of New York New York United States
-3. https://ror.org/00hj8s172 Department of Neuroscience, Columbia University in the City of New York New York United States
+1. Grossman Center for the Statistics of Mind, Columbia University in the City of New York New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Kavli Institute for Brain Science, Columbia University in the City of New York New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Department of Neuroscience, Columbia University in the City of New York New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 

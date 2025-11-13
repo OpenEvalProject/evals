@@ -44,7 +44,7 @@ Here, we aimed to build an in vitro model that would allow us to study the inter
 
 ## Results
 
-## ACTIVIN-A, WNT, and JAK/STAT pathway activation induces an endodermal fate in hPSCs
+### ACTIVIN-A, WNT, and JAK/STAT pathway activation induces an endodermal fate in hPSCs
 
 To model epiblast-yolk sac crosstalk, we sought in vitro counterparts of each of these tissues. Conventionally, hESCs have been used as a reliable model of the human epiblast, harbouring a post-implantation, ‘primed’ pluripotent state (Nakamura et al., 2016; Shao et al., 2017a; Simunovic et al., 2019; Warmflash et al., 2014; Zheng et al., 2019). To derive a YSLC, we intended to use a starting cell line with extra-embryonic competency. We hypothesised that human extended pluripotent stem cells (hEPSCs) were an appropriate candidate as they were shown to have extra-embryonic potential when incorporated into mouse embryos (Yang et al., 2017).
 
@@ -52,11 +52,35 @@ We first conducted a screen by adding pairs of signalling pathway activators tha
 
 To further assess the effect of ACL treatment on hEPSCs after 6 days of culture, we analysed the expression levels of SOX17 and SOX2 using reporter fluorescence at the single cell level. This revealed a strong shift from an originally SOX2 high, SOX17 low population of cells, to the converse (Figure 1A–C). Furthermore, gene expression analysis showed that pan-endodermal markers SOX17, GATA6, and EOMES were all upregulated following ACL treatment (Figure 1D, and Figure 1—figure supplement 2A). Despite observed downregulation of SOX2 expression, the expression of OCT4 and NANOG increased (Figure 1D and Figure 1—figure supplement 2A), which has previously been observed in hESCs overexpressing SOX17 (Séguin et al., 2008). The inability of ACL to fully downregulate pluripotency markers in hPSCs may indicate that cells may still preserve some features of pluripotent cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-v1.jpg)
+
+**Figure 1.:** (A, E, and H) Immunofluorescence images of SOX2 (green) and SOX17 (red) in human extended pluripotent stem cells (hEPSCs), Rset human pluripotent stem cells (hPSCs), and human embryonic stem cells (hESCs) after 6 days (6D) of ACL treatment (scale bar = 50 μm). (B, F, and I) Bar chart of elative fluorescence intensity (RFI arbitrary units [a.u.]) of SOX17 and SOX2 (± SEM) before and after 6D of ACL treatment in hPSCs as measured via reporter protein immunostaining. Mann–Whitney U-test; ****p < 0.0001 (number of cells analysed: hEPSC control n=2736, hEPSC + 6D ACL n=2270, Rset control n=2749, Rset + 6D ACL n=3146, hESC control n=1939, hESC + 6D ACL n=2538, three independent experiments each with one sample). (C, G, and J) Quantification of SOX2 and SOX17 protein levels at the single cell level in hEPSC, Rset hPSC, and hESC 6D ACL-treated cells based on relative reporter fluorescence intensity. Each dot represents an individual cell. (D) Relative expression levels (REL) (± SEM) of GATA6, SOX17, NANOG (n=6 samples, three independent experiments) and SOX2 (n=4 samples, two independent experiments) in hEPSC before and after 6D ACL treatment, normalised to their respective control. Mann–Whitney U-test *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (K) Relative expression levels (REL) (± SEM) of GATA6, SOX17, SOX2, and NANOG in Rset hPSCs (n=6 samples, three independent experiments), or hESCs (n=4 samples, two independent experiments) after 6D ACL treatment, normalised to their respective control . Mann–Whitney U-test *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (L) Transcriptomic-signature score (gene set variation analysis ([GSVA]) positive marker score) when comparing ACL-treated cells to either the human hypoblast, trophoblast, or epiblast within the human embryo (E6–14), or to human definitive endoderm using sc-RNA-seq expression data (embryo and definitive endoderm) and bulk RNA-seq expression data (cell lines). The higher the value (orange), the more relatively similar to each lineage.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram outlining the screen procedure. At the beginning of the screen human extended pluripotent stem cells (hEPSCs) harbour a predominantly SOX2+ population. After 6 days (6D), average levels of SOX17 and SOX2 were determined. Endoderm differentiation is indicated by a concomitant increase in SOX17 and decrease in SOX2 levels. (B) Table of conditions used within the screen. (C) Bar chart depicting the average fluorescence intensity (± SEM) of SOX2 and SOX17 as measured by SOX2::mCitrine and SOX17::H2B-tdTomato+ levels via fluorescent intensity arbitrary units (a.u.). hEPSC medium (LCDM) was supplemented with pairs of pathway activators, each combination annotated with a number (n=1 independent experiment with one sample). Table in panel B should be used as a key for each medium condition on the x-axis. (D) Table of conditions used in the second screen used to optimise basal media and chemokine concentration. (E) Bar chart depicting the average fluorescence intensity (± SEM) of SOX2 and SOX17 as measured by SOX2::mCitrine and SOX17::H2B-tdTomato+ levels via fluorescent intensity a.u. (n=1 independent experiment with one sample). Table in panel D should be used as a key for each medium condition on the x-axis. (F) Line graph depicting relative increase in cell numbers of hEPSC, Rset hPSC, or human embryonic stem cell (hESC) cultured in ACTIVIN-A, Chiron, and LIF (ACL), or hEPSC, Rset hPSC, or hESC cultured in ACTIVIN-A, Chiron, and JAK inhibitor (ACi) over 6 days of conversion (± SEM). Cell numbers were calculated every 24 hr and normalised to the first day of conversion. Tukey’s multiple comparisons test result for the comparison between day 6 experimental condition (ACi) and control (ACL) for hEPSC, Rset, and hESC; ****p < 0.0001 (n=3 independent experiments each with one sample).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Relative expression levels (REL) (± SEM) of EOMES and POU5F1 in RUES2 human extended pluripotent stem cell (hEPSC), Rset hPSCs (n=6 samples, three independent experiments) or hESCs (n=4 samples, two independent experiments) before and after 6 days (6D) ACL treatment, normalised to their respective control. Mann–Whitney U-test *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (B, E, and H) Immunofluorescence images of SOX2 (green) and GATA6 (red) in H9 hEPSCs, human embryonic stem cells (hESCs), and Rset hPSCs after 6D of ACL treatment (scale bar = 50 μm). (C, F, and I) Bar chart of relative fluorescence intensity (RFI) of GATA6 and SOX2 (± SEM) in H9 hEPSCs, Rset, and hESCs before and after 6D of ACL treatment as measured via protein immunostaining. Mann–Whitney U-test (number of cells analysed: hEPSC control n=2375, hEPSC + 6D ACL n=2139, Rset control n=2472, Rset + 6D ACL n=1739, hESC n=3227, hESC + 6D ACL n=3661 n = 3 independent experiments each with one sample). (D, G, and J) Quantification of SOX2 and GATA6 protein levels at the single cell level in H9 hEPSC, Rset hPSC, and hESC 6D ACL-treated cells measured by protein immunostaining. Each dot represents an individual cell. (K) REL (± SEM) of GATA6, SOX17, SOX2, EOMES, NANOG, and POU5F1 in H9 hEPSC, hESCs, or Rset hPSCs after 6D ACL treatment, normalised to their respective control (n=4 samples, two independent experiments). Mann–Whitney U-test *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Immunofluorescence images of SOX2 (green) and SOX17 (red) in RUES2 Rset human pluripotent stem cells (hPSCs) on D0, D14, and D30 of culture in ACL (scale bar = 50 μm). (B) Bar chart of relative fluorescence intensity (RFI arbitrary units [a.u.]) of SOX17 and SOX2 (± SEM) in Rset hPSCs on D0, D14, and D30 of culture in ACL as measured via reporter protein immunostaining. Kruskal-Wallis test with Dunn's multiple comparisons test; ****p < 0.0001 (number of cells analysed: D0 n=5580, D14 n=1846, D30 n=3003, three independent experiments each with one sample). (C) Relative expression levels (REL) (± SEM) of SOX17, GATA6, EOMES, SOX2, POU5F1, and NANOG (n=4 samples, two independent experiments) after 30 days of culture in ACL normalised to D0 control. Mann–Whitney U-test; NS = not significant, *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A, D, and G) Immunofluorescence images of SOX2 (green) and GATA6 (red) in human extended pluripotent stem cells (hEPSCs), Rset hPSCs, and human embryonic stem cells (hESCs) after 6 days (6D) of ACL treatment (scale bar = 50 μm). (B, E, and H) Bar chart of relative fluorescence intensity (RFI arbitrary units [a.u.]) of GATA6 and SOX2 (± SEM) before and after 6D of ACL treatment in hPSCs as measured via protein immunostaining. Mann–Whitney U-test; ****p < 0.0001 (number of cells analysed: hEPSC control n=3865, hEPSC + 6D ACL n=2454, Rset control n=4125, Rset + 6D ACL n=3274, hESC control n=7020, hESC + 6D ACL n=2986, three independent experiments each with one sample). (C, F, and I) Quantification of SOX2 and GATA6 protein levels at the single cell level in hEPSC, Rset hPSC, and hESC 6D ACL-treated cells based on protein immunostaining. Each dot represents an individual cell. (J) Relative expression levels (REL) (± SEM) of GATA6, SOX17, NANOG, SOX2, EOMES, and POU5F1 in hEPSCs, Rset hPSCs, and hESCs before and after 6D ACL treatment, normalised to their respective control (n=4 samples, two independent experiments) Mann–Whitney U-test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Gating strategy for separating debris from cell population. (B) Gating strategy for isolating single cells from doublets. (C) Gating strategy to separate SOX17::tdTomato+ from SOX17::tdTomato- population of hEPSC-ACL and Rset-ACL and hESC-ACL populations. The percentage of the population which was SOX17::tdTomato+ is shown on the graphs.
+
 To determine whether ACL could also induce endodermal fate in other hPSCs, we treated both RUES2-GLR Rset hPSCs, which harbour a pluripotent state that is intermediate between pre-implantation ‘ground-state’ naïve pluripotency and post-implantation lineage-biased primed pluripotency (Gafni et al., 2013; Kilens et al., 2018), and conventional primed RUES2-GLR hESCs, that are similar to the post-implantation human epiblast (Molè et al., 2021; Nakamura et al., 2016). After 6 days of treatment, endodermal markers were upregulated and SOX2 was downregulated in both Rset hPSCs and hESCs (Figure 1E–K). This expression pattern was also observed after 1 month of culture (Figure 1—figure supplement 3). We also observed the requirement of LIF for continued proliferation for both of these treated hPSC populations (Figure 1—figure supplement 1F). To evaluate whether these results were cell line specific, we repeated ACL treatment using H9-derived and SHEF6-derived hEPSCs, Rset hPSCs, and hESCs. This revealed a similar result, in that SOX17, GATA6, and EOMES were upregulated after 6 days in all three populations for all cell lines at the protein and RNA level (Figure 1—figure supplement 2B–K and Figure 1—figure supplement 4). SOX2 protein levels were also downregulated upon ACL treatment in all three hPSCs for all cell lines (Figure 1—figure supplement 2B–J and Figure 1—figure supplement 4). However, SOX2 was upregulated at the mRNA level in treated H9 hEPSC cells (Figure 1—figure supplement 2K). Single-cell fluorescence intensity analysis revealed this was likely due to a subpopulation of cells that were GATA6 low but expressed high SOX2 levels (Figure 1—figure supplement 2D), rather than GATA6 high cells co-expressing high levels of SOX2. This suggests that there is a heterogeneous response to ACL treatment within H9 hEPSCs.
 
 Given that all three hPSC ACL-treated populations upregulated expression of selected endodermal markers, we sought to determine whether ACL treatment led to global gene expression shifts from an epiblast to an endodermal fate – either towards the human hypoblast or the embryonic endoderm lineage, the definitive endoderm. Accordingly, we compared the transcriptome of sorted SOX17::H2B-tdTomato+ converted populations (Figure 1—figure supplement 5), along with Rset hPSCs, primed hESCs (Linneberg-Agerholm et al., 2019), and hEPSCs (Yang et al., 2017), to the lineages of the early human embryo and to human definitive endoderm. To do this, we first identified genes that were differentially expressed between epiblast, trophoblast, and hypoblast throughout pre- or early post-implantation development (E6–14), and in vitro-derived definitive endoderm (Supplementary file 1; Cuomo et al., 2020; Molè et al., 2021; Xiang et al., 2020; Zhou et al., 2019). Markers were identified in a pairwise manner, where lineages were individually compared, and gene signatures for each lineage were defined as those positive markers which were common across all pairwise comparisons. These gene signatures were then incorporated into a gene set-enrichment-based gene set variation analysis (GSVA) that is particularly robust in extrapolating cell type labels from single-cell datasets to bulk RNA-seq datasets (Diaz-Mejia et al., 2019; Hänzelmann et al., 2013). Coefficients were calculated across each lineage and normalized to 1. Importantly, given that different gene sets are used for each lineage within this analysis, comparisons in coefficients are only made across cell lines. This analysis revealed that all three cell populations bore a greater similarity to the hypoblast following ACL treatment, while their similarity to the epiblast decreased, suggesting a shift towards an endodermal fate (Figure 1L). Interestingly, Rset-ACL bore the greatest similarity of the three ACL-treated cell lines with the human hypoblast, while hESC-ACL was the most similar of the three to the definitive endoderm (Figure 1L).
 
-## Pluripotent state determines the endodermal fate specified in hPSCs in response to ACL
+### Pluripotent state determines the endodermal fate specified in hPSCs in response to ACL
 
 EOMES, GATA6, and SOX17 are pan-endodermal markers, which are expressed in both extra-embryonic endoderm and embryonic definitive endoderm across mammalian models (Stern and Downs, 2012). To date, no putative markers for in vivo human extra-embryonic endoderm vs. definitive endoderm have been designated. We, therefore, sought to identify reliable human extra-embryonic endoderm markers that would allow the specific endodermal identity of the ACL-treated hPSCs to be determined. Previous studies have proposed markers for both human definitive and extra-embryonic endoderm based on the differentiation of hPSC towards extra-endodermal lineages (Linneberg-Agerholm et al., 2019) or have relied on putative mouse markers (Murakami et al., 2004; Wang et al., 2012). Contrastingly, we determined all of the differentially expressed genes between human extra-embryonic and definitive endoderm using published datasets of human embryos cultured in vitro (Xiang et al., 2020; Zhou et al., 2019; Molè et al., 2021) and hESC-derived definitive endoderm (Cuomo et al., 2020). This revealed that 24,894 of the 26,510 genes analysed were shared by both endodermal lineages, demonstrating considerable similarity between embryonic and extra-embryonic endoderm (Figure 2A). Nonetheless, 366 and 1250 genes were found to be differentially upregulated in the definitive endoderm and extra-embryonic endoderm, respectively (Figure 2A and Supplementary file 2). Extra-embryonic endoderm markers included APOA1, APOA2, APOE, and APOC1 (Figure 2B and Supplementary file 2) in agreement with the function of the yolk sac as the primary site of apolipoprotein synthesis during early primate, chick and mouse development (Baardman et al., 2013; Cindrova-Davies et al., 2017). Similarly, PDGFRα, NID2, FN1, HNF1β, HNF4a, COL4A1, PITX2, and PODXL were also identified as human extra-embryonic endoderm markers (Figure 2B and Supplementary file 2), in line with the mouse extra-embryonic endoderm expression profile at various stages of development (Ghatpande et al., 2002; Johansson et al., 1997; Kwon et al., 2008; Rodriguez et al., 2005; Shahbazi et al., 2017).
 
@@ -68,15 +92,31 @@ Using the makers identified above, we subjected ACL-treated hEPSC, Rset, and hES
 
 Collectively, this transcriptional profiling of ACL-treated hPSCs indicates that the initial pluripotent state determines the endodermal fate that ACL treatment induces in hPSC populations. The fact that primed hESCs give rise to the most definitive endoderm-like population of the three is in line with previous findings (Linneberg-Agerholm et al., 2019). Although hEPSC-ACL are more similar to the definitive endoderm relative to extra-embryonic endoderm, they are not as similar to the definitive endoderm as hESC-ACL are, perhaps due to hEPSC-ACL representing a highly heterogenous population of cells. Rset-ACL were the most similar to the extra-embryonic endoderm, making them a potential candidate for modelling the human yolk sac.
 
-## Developmental characterisation of ACL-treated hPSCs
+### Developmental characterisation of ACL-treated hPSCs
 
 We next wished to determine the dynamics of conversion from a pluripotent to an endoderm fate. Commitment to a definitive endoderm fate follows an initial intermediate mesendoderm fate (Kimelman and Griffin, 2000), whereas extra-embryonic endoderm derives directly from the ICM without this intermediate state (Niakan et al., 2012). To determine whether a mesendoderm fate is induced during ACL treatment in hEPSCs, Rset hPSCs, or hESCs, we monitored the dynamics of SOX2, SOX17, and BRACHYURY during the 6 days of ACL treatment (Figure 3A & B). This revealed a trend of increase in BRACHYURY expression in hESC-ACL and hEPSC-ACL populations around day 2 of treatment, which then diminished by day 4 in both cases. However, in Rset hPSCs, this trend of BRACHYURY levels was not observed. This shows that of the three cell types, the specification dynamics of Rset hPSCs in response to ACL was the most similar to that expected of extra-embryonic endoderm specification.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig3-v1.jpg)
+
+**Figure 3.:** (A) Line graph (± SEM) plotting the relative fluorescence intensity (RFI arbitrary units [a.u.]) of SOX2, SOX17, and BRACHYURY in ACL-treated population. Kruskal–Wallis test, ****p < 0.0001 (number of cells analysed SOX17: human extended pluripotent stem cell (hEPSC): D0 n=2774, D1 n=3258, D2 n = 2932, D3 n=3292, D4 n=2459, D5 n=2293, D6 n=1883, Rset: D0 n=2108, D1 n=3580, D2 n=2738, D3 n=2586, D4 n=2149, D5 n=2698, D6 n = 2441, human embryonic stem cell (hESC): D0 n=1426, D1 n=1924, D2 n=1943, D3 n=2817, D4 n=2248, D5 n=1148, D6 n=1957 (n=2 independent experiments); SOX2: hEPSC: D0 n = 2774, D1 n=3258, D2 n=2932, D3 n=3292, D4 n=2459, D5 n=2293, D6 n=1883, Rset: D0 n=2342, D1 n=3634, D2 n=2794, D3 n=2671, D4 n=2068, D5 n=2293, D6 n=2918, hESC: D0 n=2353, D1 n=3082, D2 n=3129, D3 n=4174, D4 n=2989, D5 n=1787, D6 n=3114; BRACHYURY: hEPSC: D0 n = 3452, D1 n=4090, D2 n=3435, D3 n=4223, D4 n=2881, D5 n=2837, D6 n=2218, Rset: D0 n=2317, D1 n = 3739, D2 n=3141, D3 n=2881, D4 n=2467, D5 n=2951, D6 n=4400, hESC: D0 n=2685, D1 n=3433, D2 n=3997, D3 n=5325, D4 n=3490, D5 n=2155, D6 n = 3258. n = 3 independent experiments). (B) Immunofluorescence images of SOX2 (green), SOX17 (red), and BRACHYURY (grey) in hEPSCs, Rset hPSCs, and hESCs during 6 days of ACL treatment (scale bar = 50 μm). (C) Schematic of human-mouse chimera protocol using ACL-treated cells. Clumps of three to six SOX-17::H2B-tdTomato+ treated cells were aggregated with E2.5 mouse embryos and cultured for 24 hr in ACL. After this, embryos were moved into KSOM and cultured for another 24 hr. (D) Immunofluorescence images of SOX17::H2B-tdTomato (red), GATA6 (grey), and DAPI (blue) in E4.5 mouse blastocysts. hEPSC-ACL cells contribution denoted by SOX17::H2B-tdTomato+ (red) cells (white arrowheads) (scale bar = 50 μm). (E) Immunofluorescence images of SOX17::H2B-tdTomato (red), GATA6 (grey), and DAPI (blue) in E4.5 mouse blastocysts. Rset-ACL cells contribution denoted by SOX17::H2B-tdTomato+ (red) cells (white arrowheads). (F) Pie charts showing percentage of human cell contribution to the primitive endoderm, epiblast, or both. Rset (N = 67 embryos, n=3 independent experiments), hEPSC (N = 39 embryos, n=3 independent experiments).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Characterisation of lineage allocation in E4.5 mouse blastocysts cultured in either KSOM or ACL-KSOM. Bar chart (± SEM) depicting the relative number of cells that were NANOG+, SOX17+, NANOG+/SOX17+, and the relative number of total cells within the inner cell mass (ICM). Unpaired Student’s t-test, NS = p>0.05. (B) Bar chart depicting the proportion of the total ICM that consisted of NANOG+/SOX17+ cells (± SEM). Unpaired Student’s t-test, NS = p>0.05. (C) Bar chart depicting the ratio between SOX17+ cells and NANOG+ cells within the ICM (± SEM). Unpaired Student’s t-test, NS = p>0.05. For A-C: KSOM: n = 16 embryos, ACL-KSOM: n = 14 embryos, n=2 independent experiment. (D) Viability of E4.5 blastocysts within either KSOM (n = 14 embryos) or ACL-KSOM (n = 28 embryos) (n=1 independent experiment). Chi-squared test. NS p > 0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunofluorescence images of human nuclear antigen (HuNu) (red), SOX2 (green), GATA6 (grey) and DAPI (blue) in E4.5 human-mouse chimeric blastocysts demonstrating contribution of hEPSCs (scale bar = 50 μm). (B) Pie charts showing percentage of hEPSC contribution to the primitive endoderm, epiblast, or both (N=18 embryos, n=2 independent experiments). (C) Immunofluorescence images of HuNu (red), SOX2 (green), GATA6 (grey) and DAPI (blue) in E4.5 human-mouse chimeric blastocysts demonstrating contribution of Rset hPSCs (scale bar = 50 μm). (D) Pie charts showing percentage of Rset hPSC contribution to the primitive endoderm, epiblast, or both (N=26 embryos, n=2 independent experiments).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Brightfield image of E4.5 mouse blastocysts after aggregation with SOX17::H2B-tdTomato+ ACL-treated hESCs (scale bar = 100 μm). (B) Pie charts showing percentage contribution to the primitive endoderm, epiblast, or both by SOX17::H2B-tdTomato+ ACL-treated hESCs (n = 48 embryos, n=3 independent experiments).
 
 To further profile ACL-treated cells, we generated human-mouse embryo chimeras. We aggregated eight-cell stage mouse embryos with small groups (three to six cells) of SOX17::H2B-tdTomato+ ACL-treated hEPSCs, Rset hPSCs, or hESCs. To ensure viability of ACL-treated cells throughout the chimeric process, embryos were cultured in ACL for 24 hr, before being transferred to mouse embryo medium (KSOM) for the remaining 24 hr until late blastocyst stage (Figure 3C). As a control we cultured eight-cell stage mouse embryos in ACL for 24 hr, before transferring them into KSOM and confirmed this had no effect on lineage specification and blastocyst formation (Figure 3—figure supplement 1). We observed that both hEPSC-ACL and Rset-ACL were able to contribute to the primitive endoderm of mouse embryos (Figure 3D–F). This was confirmed by the presence of reporter fluorescence within the ICM, and also by the co-expression of GATA6 with SOX17::H2B-tdTomato. hEPSC-ACLs and Rset-ACLs contributed to the mouse primitive endoderm in 18% and 12% of chimeras, respectively, with hEPSC-ACL contributing to both the epiblast and the primitive endoderm 3% of the time, suggesting a degree of fate plasticity (Figure 3F). This contribution profile of hEPSC-ACL and Rset-ACL contrasts that of hEPSCs and Rset hPSCs which both almost solely contribute to the epiblast compartment within human-mouse chimeric blastocysts: hEPSCs and Rset hPSCs contribute to the epiblast in 44% and 81% of embryos, and to both the epiblast and primitive endoderm 6% and 4% of the time, respectively (Figure 3—figure supplement 2). Primed hESCs treated with ACL could not contribute to mouse primitive endoderm (Figure 3—figure supplement 3).
 
 Collectively, based on the transcriptional and functional evidence, we concluded that Rset-ACL are the most similar to human extra-embryonic endoderm relative to the other two cell lines. Despite hEPSC-ACL being able to contribute to the murine primitive endoderm, and thereby sharing some functional properties with the extra-embryonic endoderm, they also share significant similarities to the definitive endoderm, both in terms of their developmental pathway and transcriptional profile. This is likely due to the high degree of heterogeneity present in hEPSC-ACL cultures. hESC-ACL are more similar to definitive endoderm, functionally, transcriptionally, and in terms of their developmental trajectory. Based on these findings we concluded that Rset-ACL were the most promising candidate for modelling the human yolk sac.
 
-## Pluripotent state determines the developmental state of extra-embryonic endoderm specified in hPSCs in response to ACL
+### Pluripotent state determines the developmental state of extra-embryonic endoderm specified in hPSCs in response to ACL
 
 To model the yolk sac-epiblast crosstalk, we sought to use an extra-embryonic endoderm cell type that resembles the post-implantation hypoblast-derived yolk sac. Therefore, we next ascertained whether Rset-ACL were more similar to pre- or post-implantation extra-embryonic endoderm. However, to date no markers have been defined that distinguish the two human extra-embryonic endoderm states. Following comparison between the transcriptional profile of pre-implantation extra-embryonic endoderm (primitive endoderm) (E6–7) (Xiang et al., 2020; Zhou et al., 2019) and post-implantation extra-embryonic endoderm (yolk sac) (E10–14) (Molè et al., 2021; Xiang et al., 2020; Zhou et al., 2019), we identified differentially expressed genes between the two states. Of the 26,510 genes examined, 25,496 were shared, with 397 and 617 genes being differentially upregulated in the pre- or post-implantation state, respectively (Figure 4A) (Supplementary file 3). Interestingly, AXL, a visceral endoderm marker in the mouse (McDonald et al., 2014), was among the identified markers of post-implantation yolk sac (Figure 4B and Supplementary file 3). The presence of APOA2 and APOB in the top differentially expressed post-implantation genes once again alludes to the yolk sac as the primary site of apolipoprotein synthesis in the early embryo.
 
@@ -88,9 +128,17 @@ We then analysed the expression of the pre- and post-implantation markers in Rse
 
 Similar to the process described above, we performed a differential gene expression analysis between the pre-implantation (E6–7) (Xiang et al., 2020; Zhou et al., 2019) and post-implantation (E10–14) (Molè et al., 2021; Xiang et al., 2020; Zhou et al., 2019) extra-embryonic markers on the two cell lines to determine which was more similar to the post-implantation yolk sac. Given that these marker sets are related – the negative markers for the post-implantation extra-embryonic are the positive markers for the pre-implantation extra-embryonic endoderm – we then subtracted the GSVA marker score for the pre-implantation markers from the GSVSA marker score for post-implantation markers and normalised the highest score to 1. This analysis revealed Rset-ACL to be the most similar to the post-implantation extra-embryonic endoderm, while T2iLGö-PrE were more similar to the pre-implantation extra-embryonic endoderm (Figure 4C). These results indicate that Rset-ACL is the best candidate for modelling yolk sac-epiblast interactions. Accordingly, these cells will be referred to as YSLCs.
 
-## YSLCs antagonise WNT and BMP signalling in hESCs
+### YSLCs antagonise WNT and BMP signalling in hESCs
 
 The yolk sac of the mouse embryo harbours an asymmetrically localised subpopulation of cells called the AVE. These cells secrete inhibitors of BMP, WNT, and NODAL signalling, thereby creating a signalling gradient across the post-implantation epiblast. This gradient in turn determines the positioning of the primitive streak and, therefore, the anterior-posterior axis of the embryo (Arnold and Robertson, 2009). The post-implantation hypoblast of both the cynomolgus monkey and human embryo also expresses DKK1, CER1, and NOG (Molè et al., 2021; Nakamura et al., 2016; Sasaki et al., 2016) and studies of human embryos cultured to post-implantation stages in vitro have suggested that an anterior subpopulation of cells within the human hypoblast may influence BMP signalling within the adjacent epiblast (Molè et al., 2021). This implies that the human yolk sac may harbour AVE-like cells. We, therefore, analysed the expression of these pathway inhibitors within the hypoblast of the pre- and post-implantation human embryo using published datasets (Molè et al., 2021; Xiang et al., 2020; Zhou et al., 2019) and found that DKK1, CER1, LEFTY2, and SFRP1 are expressed at greater levels in post-implantation relative to pre-implantation hypoblast, while NOG is expressed at higher levels in the pre-implantation hypoblast (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig5-v1.jpg)
+
+**Figure 5.:** (A) Bar chart plotting average expression levels of WNT, NODAL, and BMP inhibitors in pre-implantation (Pre, E6–7) and post-implantation human hypoblast (Post, E10–14) denoted as relative counts per million (RCPM) using published sc-RNA-seq data. (B) Bar chart (± SEM) plotting expression levels of BMP, NODAL, and WNT inhibitors in Rset hPSCs and YSLCs denoted as transcripts per million (TPM) using bulk RNA-seq data (YSLCs: n=3 technical replicates, Rset: n=2 technical replicates [from published dataset]). (C) Immunofluorescence images of SOX2 (green) and ACTIN (grey) in hESCs cultured in 3D Geltrex in either mTeSR (hESC) or mTeSR conditioned on YSLCs (+YSLC CM) (scale bar = 50 μm). (D) Percentage of structures that are columnar, squamous, or disorganised based on cell aspect ratio calculations in cells from panel C using ACTIN stainings. Chi-squared test. ****p < 0.0001 (number of structures analysed: control n=33, +YSLC CM n=30, n=3 independent experiments each with one sample). (E) Bar chart (± SEM) depicting SOX2 levels as inferred from relative fluorescence intensity (RFI arbitrary units [a.u.]) in cells from panel C. Mann–Whitney U-test; ****p < 0.0001 (number of cells analysed: SOX2: hESC n=2346, +YSLC CM n=596, n=3 independent experiments each with one sample). (F) Immunofluorescence of pSMAD1/5 (grey) in hESCs cultured in mTeSR (hESC) or mTeSR conditioned on YSLCs (+YSLC CM) in 3D Geltrex (scale bar = 50 μm). (G) Immunofluorescence of LEF1 (grey) in hESCs cultured in mTeSR (hESC) or mTeSR conditioned on YSLCs (+YSLC CM) in 3D Geltrex (scale bar = 50 μm). (H) Bar chart (± SEM) depicting the levels of pSMAD1/5 (nuclear) and LEF1 in hESCs cultured in mTeSR (hESC) or mTeSR conditioned on YSLCs (+YSLC CM) as inferred from RFI in cells from panels F and G, respectively. Mann–Whitney U-test, ****p <0.0001 (number of cells analysed: pSMAD1/5: hESC n=2563, +YSLC CM n=1660; LEF1: hESC n=1984, +YSLC CM n=1041. n=3 independent experiments each with one sample). (I) Immunofluorescence of SOX2 (green) and pSMAD1/5 (grey) in hESCs cultured in mTeSR (hESC), treated with BMP4 (+BMP4) or treated with BMP4 and YSLC conditioned media (+BMP4+YSLC CM) (scale bar = 50 μm). (J) Bar charts (± SEM) depicting the levels of SOX2 and pSMAD1/5 RFI in samples from panel I. Kruskal–Wallis test with Dunn’s multiple comparisons test, ****p<0.0001 (number of cells analysed: hESC n=1549, +BMP4 n = 1063, +BMP4+YSLC CM n=1544, n=3 independent experiments each with one sample). (K) Immunofluorescence of SOX2 (green) and LEF1 (grey) in hESCs cultured in mTeSR (hESC), treated with WNT3a (+WNT3a) or treated with WNT3a and YSLC conditioned media (+WNT3a+YSLC CM) (scale bar = 50 μm). (L) Bar chart (± SEM) depicting the levels of SOX2 and LEF1 RFI in samples from panel K. Kruskal–Wallis test with Dunn’s multiple comparisons test, ****p<0.0001 (number of cells analysed: hESC n=1604, +WNT3a n=1682, +WNT3a+YSLC CM n=1376, n=3 independent experiments each with one sample).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunofluorescence of SOX2 (green), SOX17 (red), and DKK1 (grey) in Rset and YSLCs (after 6D ACL treatment) (scale bar = 50 μm). (B) Immunofluorescence of SOX2 (green), SOX17 (red), and CER1 (grey) in Rset and YSLCs (after 6D ACL treatment) (scale bar = 50 μm) (C) Immunofluorescence of SOX2 (green) and ACTIN (grey) within human embryonic stem cells (hESCs) cultured in 3D Geltrex for 72 hr (scale bar = 50 μm). (D) Bar chart (± SEM) depicting relative fluorescence intensity (RFI arbitrary units [a.u]) of SOX2 as studied via protein immunostaining in hESCs cultured in 3D Geltrex alone or in the presence of the WNT inhibitors XAV (+XAV) or IWR1 (+IWR1). Kruskal–Wallis test with Dunn’s multiple comparisons test. NS: p > 0.05, ****p < 0.0001 (number of cells analysed: control n=3273, +XAV n=2220, +IWR1 n=2234, n = 3 independent experiments each with one sample). (E) Immunofluorescence images of SOX2 (green), GATA6 (red), and ACTIN (grey) in hESCs and hESC-YSLC co-cultures after 72 hr in 3D Geltrex (scale bar = 50 μm). (F) Bar chart (± SEM) depicting SOX2 levels as calculated using relative fluorescence intensity (RFI a.u.) in cells from panel E. Mann–Whitney U-test. ****p < 0.0001 (number of cells analysed: control n=773, hESC+YSLC=1198, n=3 independent experiments each with one sample). (G) Percentage of structures that are columnar, squamous, or disorganised based on cell aspect ratio calculations in cells from panel E using ACTIN stainings. Chi-squared test; NS p >0.05 (number of structures analysed: hESC n = 34, hESC+YSLC n=28. n=3 independent experiments each with one sample). (H) Immunofluorescence of SOX2 (green) and NANOG (grey) in hESCs, hESCs treated with BMP4 (+BMP4) or treated with BMP4 and YSLC conditioned media (CM) (+BMP4+YSLC CM) (scale bar = 50 μm). (I) Bar charts (± SEM) depicting the levels of NANOG RFI in samples from panel H. Kruskal–Wallis test with Dunn’s multiple comparisons test, ****p<0.0001 (number of cells analysed: hESC n=6736, +BMP4 n=8659, +BMP4+YSLC CM n=7255, n=3 independent experiments each with one sample). (J) Immunofluorescence of SOX2 (green) and NANOG (grey) in hESCs, hESCs treated with WNT3a (+WNT3a) or treated with WNT3a and YSLC CM (+WNT3a+YSLC CM) (scale bar = 50 μm). (K) Bar chart (± SEM) depicting the levels of NANOG RFI in samples from panel J. Kruskal–Wallis test with Dunn’s multiple comparisons test. ****p<0.0001, *p < 0.05 (number of cells analysed: hESC n=3225, +WNT3a n=2702, +WNT3a+YSLC CM n=3723, n=3 independent experiments each with one sample).
 
 Given that YSLCs share transcriptional similarity to the post-implantation extra-embryonic endoderm, we examined the expression of WNT and BMP inhibitors in YSLCs and observed that all of the analysed inhibitors were upregulated in YSLCs (Figure 5B and Figure 5—figure supplement 1A and B). In human stem cell models, DKK1 and NOG act as WNT and BMP inhibitors, respectively (Martyn et al., 2019; Simunovic et al., 2019), whereas CER1 antagonises both NODAL and BMP signalling in other systems (Aykul and Martinez-Hackert, 2016). We, therefore, postulated that YSLCs may share functional characteristics with the mouse AVE and the human anterior hypoblast in their ability to govern cell fate via BMP and WNT inhibition.
 
@@ -102,17 +150,25 @@ To understand whether YSLC conditioned medium was inhibiting BMP and WNT signall
 
 To more precisely control the signalling pathways inducing SOX2 loss in hESCs, we added either BMP4 or WNT3a to hESCs cultured in 2D. Addition of 1 ng ml−1 of BMP4 to mTeSR1 PLUS led to a marked decrease in SOX2 expression concomitant with an increase in the levels of nuclear pSMAD1/5 (Figure 5I,J). Strikingly, when hESCs were exposed to BMP4 in the presence of YSLC conditioned medium, SOX2 expression did not significantly decrease and levels of nuclear pSMAD1/5 remained low (Figure 5I,J). Similarly, when hESCs were cultured in the presence of 1 μg ml−1 WNT3A they lost SOX2 expression and upregulated LEF1 (Figure 5K,L). However, when hESCs were cultured in the presence of 1 μg ml−1 WNT3a and YSLC conditioned medium, the downregulation of SOX2 and upregulation of LEF1 was significantly counteracted (Figure 5K–L). A similar trend was observed for NANOG levels in hESCs that were exposed to either BMP4 or WNT3a in the presence of YSLC conditioned medium (Figure 5—figure supplement 1H–K). Together, our results demonstrate that YSLCs block loss of pluripotent gene expression by antagonising WNT and BMP signalling via secreted factors and can thereby influence hESC fate.
 
-## YSLCs inhibit posterior epiblast fate specification in hESCs
+### YSLCs inhibit posterior epiblast fate specification in hESCs
 
 Within the mouse embryo, the AVE acts to induce anterior fate and repress the formation of the primitive streak in the epiblast cells adjacent to it (Rivera-Pérez and Hadjantonakis, 2015). A similar function has been recently proposed for the human anterior hypoblast (Molè et al., 2021). Given the ability of YSLCs to influence hESC fate via WNT and BMP inhibition, we hypothesised that YSLCs may bear similarity to both the mouse AVE and the human anterior hypoblast, and may, therefore, be able to prevent hESCs from differentiating into posterior epiblast fates. Consequently, we analysed the expression of the posterior markers BRACHYURY and GATA6 in hESCs cultured in 3D Geltrex. In control conditions, BRACHYURY was not induced, while GATA6 was upregulated, and this upregulation was blocked in the presence of YSLC conditioned medium (Figure 6A–C). Next, to test whether YSLCs can block mesoderm specification, we employed a 2D mesoderm induction protocol involving the supplementation of 10 ng µl−1 BMP4 to hESCs for 3 days (Richter et al., 2014). Strikingly, immunofluorescence analyses revealed that YSLC conditioned medium suppressed the upregulation of BRACHYURY while also preventing the loss of SOX2 in hESCs cultured in mesoderm induction medium (Figure 6D–F). GATA6 was also upregulated in hESCs after BMP4 treatment and this was also countered by YSLC conditioned medium. Similarly, YSLC conditioned medium suppressed the upregulation of the posterior markers EOMES, SOX17, MIXL1, FOXA2, and GSC at the RNA level (Figure 6G). These results, therefore, demonstrate that YSLCs are able to inhibit posterior epiblast marker expression in hESCs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig6-v1.jpg)
 
-**Figure 6.:** (A) Immunofluorescence of pSMAD1/5 (green) and GATA6 (grey), and a merge of the two, in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) (scale bar = 50 μm). (B) Immunofluorescence of LEF1 (green) and BRACHYURY (grey), and a merge of the two, in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) (scale bar = 50 μm). (C) Bar charts (± SEM) depicting the levels of GATA6 and BRACHYURY in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) as inferred from relative fluorescence intensity (RFI) arbitrary units [a.u.] in cells from panels A and B, respectively (number of cells analysed: GATA6: hESC n=2336, YSLC CM n=1074, BRACHURY: hESC n=2112, YSLC CM n=1261, n=3 independent experiments each with one sample) Mann–Whitney U-test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (D) Immunofluorescence of SOX2 (green) and GATA6 (grey), and a merge of the two in hESCs, hESCs in MesoI (mesoderm induction medium), or MesoI + YSLC CM (scale bar = 50 μm). (E) Immunofluorescence of SOX2 (green) and BRACHYURY (grey), and a merge of the two, in hESCs, hESCs in mesoderm induction medium (MesoI), or MesoI conditioned on YSLCs (MesoI + YSLC CM) (scale bar = 50 μm). (F) Bar chart (± SEM) depicting the levels of GATA6, BRACHYURY and SOX2 in hESCs cultured in basal medium (hESC), hESCs in mesoderm induction medium (MesoI), or MesoI + YSLC CM as measured by RFI. Kruskal–Wallis test with Dunn’s multiple comparisons test. ****p <0.0001 (number of cells analysed: GATA6: hESC n = 5583, +MesoI n=2554, +MesoI+YSLC CM n=2383, BRACHYURY: hESC n = 6859, +MesoI n=6741, +MesoI+YSLC CM n=2072; SOX2: hESC n=6859, +MesoI n=6741, +MesoI+ YSLC CM n=2072. n=3 independent experiments each with one sample). (G) Relative expression levels (REL) (± SEM) of EOMES, SOX17, MIXL1, FOXA2, and GSC in hESCs cultured in basal medium (hESC), hESCs in mesoderm induction medium (MesoI), or MesoI + YSLC CM as measured by RFI, normalised to their hESC control (n=4 samples, two independent experiments). Kruskal–Wallis test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.Figure 6—source data 1.
+**Figure 6.:** (A) Immunofluorescence of pSMAD1/5 (green) and GATA6 (grey), and a merge of the two, in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) (scale bar = 50 μm). (B) Immunofluorescence of LEF1 (green) and BRACHYURY (grey), and a merge of the two, in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) (scale bar = 50 μm). (C) Bar charts (± SEM) depicting the levels of GATA6 and BRACHYURY in hESCs cultured in 3D Geltrex in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) as inferred from relative fluorescence intensity (RFI) arbitrary units [a.u.] in cells from panels A and B, respectively (number of cells analysed: GATA6: hESC n=2336, YSLC CM n=1074, BRACHURY: hESC n=2112, YSLC CM n=1261, n=3 independent experiments each with one sample) Mann–Whitney U-test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (D) Immunofluorescence of SOX2 (green) and GATA6 (grey), and a merge of the two in hESCs, hESCs in MesoI (mesoderm induction medium), or MesoI + YSLC CM (scale bar = 50 μm). (E) Immunofluorescence of SOX2 (green) and BRACHYURY (grey), and a merge of the two, in hESCs, hESCs in mesoderm induction medium (MesoI), or MesoI conditioned on YSLCs (MesoI + YSLC CM) (scale bar = 50 μm). (F) Bar chart (± SEM) depicting the levels of GATA6, BRACHYURY and SOX2 in hESCs cultured in basal medium (hESC), hESCs in mesoderm induction medium (MesoI), or MesoI + YSLC CM as measured by RFI. Kruskal–Wallis test with Dunn’s multiple comparisons test. ****p <0.0001 (number of cells analysed: GATA6: hESC n = 5583, +MesoI n=2554, +MesoI+YSLC CM n=2383, BRACHYURY: hESC n = 6859, +MesoI n=6741, +MesoI+YSLC CM n=2072; SOX2: hESC n=6859, +MesoI n=6741, +MesoI+ YSLC CM n=2072. n=3 independent experiments each with one sample). (G) Relative expression levels (REL) (± SEM) of EOMES, SOX17, MIXL1, FOXA2, and GSC in hESCs cultured in basal medium (hESC), hESCs in mesoderm induction medium (MesoI), or MesoI + YSLC CM as measured by RFI, normalised to their hESC control (n=4 samples, two independent experiments). Kruskal–Wallis test; *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
 
-## YSLCs upregulate pluripotency and anterior ectoderm markers in hESCs
+### YSLCs upregulate pluripotency and anterior ectoderm markers in hESCs
 
 SOX2 is a pluripotency marker but is also expressed in the anterior ectoderm. Given that YSLCs are able to prevent SOX2 downregulation in 3D Geltrex, we investigated the levels of the pluripotency markers OCT4 and NANOG, and the anterior ectoderm markers SOX1 and OTX2 in hESC cultured in YSLC conditioned medium in 3D Geltrex over a 5-day period. This revealed that expression of both OCT4 and NANOG was higher in hESCs cultured in YSLC conditioned medium at all timepoints relative to control mTeSR conditions, while SOX2 levels were significantly different from day 3 of culture (Figure 7A and B). SOX1 levels steadily increased relative to controls over the 5-day culture period but were downregulated after 7 days (Figure 7C and D, Figure 7—figure supplement 1A and B). Conversely, OTX2 expression did not increase until day 3, and peaked at day 4, before decreasing again (Figure 7C and D). Interestingly, in the presence of conditioned medium, pluripotency markers and anterior ectoderm markers were co-expressed (Figure 7—figure supplement 1C). Overall, these results demonstrate that YSLCs can upregulate pluripotency and anterior ectoderm markers in hESCs in 3D.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunofluorescence of SOX2 (green), NANOG (grey), and OCT4 (red) in hESCs after 1, 3, 4, or 5 days cultured in mTeSR (hESC) or in YSLC conditioned media (+YSLC CM) in 3D Geltrex (scale bar = 50 μm). (B) Bar charts (± SEM) depicting relative fluorescence intensity (RFI arbitrary units [a.u.]) of SOX2, NANOG, and OCT4 in hESCs cultured in YSLC CM (+YSLC CM) relative to hESCs cultured in mTeSR (hESCs) in 3D Geltrex for 1, 3, 4, and 5 days. Two-way ANOVA with Sidak’s multiple comparisons test comparing hESC vs. +YSLC CM for each day. ****p<0.0001, ** <0.01, NS p>0.05 (number of cells analysed: SOX2: day 1: hESC n=567, +YSLC CM n=662, day 3: hESC n=2318, +YSLC CM n=1870, day 4: hESC n=3755, +YSLC CM n=1249, day 5: hESC n=4946, +YSLC CM n=1897, OCT4: day 1: hESC n=450, +YSLC CM n=601, day 3: hESC=1929, +YSLC CM n=1902, day 4: hESC=3472, +YSLC CM n=1314, day 5: hESC n=4946, +YSLC CM n=1897, NANOG: day 1: hESC n=450, +YSLC CM n=601, day 3: hESC n=1929, +YSLC CM n=1902, day 4: hESC n=3472, +YSLC CM n=1314, day 5: hESC n=4946, +YSLC CM n=1897, n = 3 independent experiments each with one sample). (C) Immunofluorescence of OTX2 (green) and SOX1 (grey) in hESCs after 1, 3, 4, or 5 days cultured in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) in 3D Geltrex (scale bar = 50 μm). (D) Bar charts (± SEM) depicting RFI of OTX2 and SOX1 in hESCs cultured in YSLC CM (+YSLC CM) relative to hESCs cultured in mTeSR (hESC) in 3D Geltrex for 1, 3, 4, and 5 days. Two-way ANOVA with Sidak’s multiple comparisons test comparing hESC vs. +YSLC CM for each day. ****p<0.0001 NS, p>0.05 (number of cells analysed: OTX2: day 1: hESC n=456, YSLC CM n=914, day 3: hESC n=4278, +YSLC CM n=2036, day 4: hESC n=2432, +YSLC CM n=1123, day 5: hESC n=3858, +YSLC CM n=3243, SOX1: day 1: hESC n=503, +YSLC CM n=735, day 3: hESC n=2933, +YSLC CM n=3023, day 4: hESC n=3426, +YSLC CM n=2507, day 5: hESC n=3764, +YSLC CM n=2620, n = 3 independent experiments each with one sample). (E) Diagram depicting the modified neural specification protocol in which YSLC conditioned media is used to replace the SB431542+NOGGIN treatment in the conventional protocol for 11 days, before culturing hESCs in the presence of just FGF2 for 4 days. (F) Immunofluorescence of SOX2 (green), SOX1 (grey), and a merge of both in hESCs cultured in mTeSR (hESC) and hESCs cultured in YSLC conditioned media (+YSLC CM) for the first 11 days of the neural protocol before being placed in FGF2 as outlined in panel E (scale bar = 50 μm). (G) Bar charts (± SEM) depicting RFI of SOX1 and SOX2 in cells from panel F. Mann–Whitney U-test; *p<0.05, ****p<0.0001 (number of cells analysed: SOX1: hESC n = 4949, +YSLC CM n=4736, SOX2: hESC n = 4947, +YSLC CM n=4736, n=3 independent experiments). (H) Relative expression levels (REL) (± SEM) of PAX6, NESTIN, and NOTCH1 in hESCs cultured as outlined in panel E normalised to hESC control. Mann-Whitney U-test ; *p < 0.05 (n=4 samples, two independent experiments).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63930/elife-63930-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunofluorescence of SOX1 (grey) in hESCs after 6 and 7 days cultured in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) in 3D Geltrex (scale bar = 50 μm). (B) Bar charts (± SEM) depicting relative fluorescence intensity (RFI arbitrary units [a.u.]) of SOX1 in hESCs after 6 and 7 days cultured in YSLC conditioned media (+YSLC CM) relative to hESCs cultured in mTeSR (hESC) in 3D Geltrex. Two-way ANOVA with Sidak’s multiple comparisons test comparing hESC VS +YSLC CM for each day. ****p<0.0001 (number of cells analysed day 6: hESC n=3338, + YSLC CM n=2205, day 7: hESC n=2745, + YSLC CM n = 4390, n=3 independent experiments). (C) Quantification of OTX2 or SOX1 vs. OCT4 or SOX2 at the single cell level in hESCs cultured in mTeSR (hESC) or YSLC conditioned media (+YSLC CM) in 3D Geltrex for 5 days based on protein immunostaining. Each dot represents an individual cell (numbers of cells depicted: SOX1vsOCT4: day 5 hESC n=1184, day 5 +YSLC CM n=478, OTX2vsOCT4: day 5 hESC n=1364, day 5 +YSLC CM n=748, SOX1vsSOX2: day 5 hESC n=1184, day 5+YSLC CM n=478, OTX2vsSOX2: day 5 hESC n=1364, day 5 +YSLC CM n=748). (D) Relative expression levels (REL) (± SEM) of PAX6, NOTCH1, NESTIN, OCT4, and NANOG in hESCs cultured as outlined in Figure 7E or in a dual SMAD inhibition neural protocol where SB431542 and NOGGIN (SBN) replace YSLC CM for the first 11 days of culture. Samples were normalised to hESC control. Two-way ANOVA with statistical result representing the p-value calculated when comparing columns for all genes (hESC vs. SBN vs. YSLC CM values); **p < 0.001 (n=4 samples, two independent experiments).
 
 To further assess the ability of YSLCs to induce anterior ectoderm markers in hESCs, we determined whether YSLC conditioned medium could upregulate neural markers in 2D. In neural progenitor differentiation protocols, dual small molecule targeting of SMAD signalling is widely used (Chambers et al., 2009; Shi et al., 2012). Given that YSLC conditioned medium was able to inhibit SMAD activity in hESCs in 2D and 3D, we analysed the ability of YSLC conditioned medium to replace small molecule SMAD inhibitors within a 2D neural differentiation protocol. Accordingly, hESCs were cultured in YSLC conditioned medium, rather than SB431542 and NOGGIN, for 11 days, before being cultured in FGF2 for 4 days (Shi et al., 2012; Figure 7E). After the completion of the 15-day protocol, the anterior ectoderm markers SOX1, PAX6, NESTIN, and NOTCH1 were all significantly upregulated in hESCs (Figure 7F–H). SOX2 was downregulated relative from controls, but was still present, as has been observed during the early stages of neural specification (Zhang et al., 2018). Interestingly, YSLC conditioned medium induced the upregulation of anterior ectoderm markers to intermediate levels relative to hESCs cultured in dual SMAD conditions and control hESCs (Figure 7—figure supplement 1D). This was also the case for levels of pluripotency markers (Figure 7—figure supplement 1D). Overall these results demonstrate that YSLCs support anterior ectoderm marker expression in combination with pluripotency markers and, therefore, share functional similarities with the mammalian AVE.
 
@@ -140,7 +196,178 @@ In summary, our results implicate the human yolk sac in early human embryo morph
 
 ## Materials and methods
 
-## Human embryonic stem cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>RUES2-GLR</td>
+      <td>Brivanlou Lab (Rockefeller Institute, New York City, NY)</td>
+      <td></td>
+      <td>Human embryonic stem cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>H9</td>
+      <td>Vallier Lab (Stem Cell Institute, Cambridge, UK) under agreement with WiCell</td>
+      <td>(RRID:CVCL_1240)</td>
+      <td>Human embryonic stem cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SHEF6</td>
+      <td>Shef-6 (UK Stem Cell Bank, NIBSC)</td>
+      <td></td>
+      <td>Human embryonic stem cell line</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human ACTIVIN-A</td>
+      <td>Stem Cell Institute, Cambridge, UK</td>
+      <td></td>
+      <td>100 ng ml−1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human LIF</td>
+      <td>Stem Cell Institute, Cambridge, UK</td>
+      <td></td>
+      <td>10 ng ml−1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human WNT3a</td>
+      <td>R and D Systems</td>
+      <td>5036-WN-010</td>
+      <td>1 μg ml−1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human BMP4</td>
+      <td>Peprotech</td>
+      <td>120–05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Stem Cell Institute, Cambridge, UK</td>
+      <td></td>
+      <td>3 μM</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NANOG (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF1997 (RRID:AB_355097)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX1 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF3369-SP (RRID:AB_2239879)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SOX2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab59776 (RRID:AB_945584)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>T (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF2085 (RRID:AB_2200235)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GATA6 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>AF1700 (RRID:AB_2108901)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LEF1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2230S (RRID:AB_823558)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pSMAD1/5/9 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>13820S (RRID:AB_2493181)</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>8-well µ-plates ibiTreat</td>
+      <td>Ibidi</td>
+      <td>80826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rset (2-component)</td>
+      <td>StemCell Technologies</td>
+      <td>05978</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mTeSR1 PLUS</td>
+      <td>StemCell Technologies</td>
+      <td>05825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Geltrex LDEV-free growth factor reduced</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A1413302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Matrigel</td>
+      <td>BD Biosciences</td>
+      <td>356230</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human embryonic stem cell culture
 
 The UK Stem Cell Bank Steering Committee approved all hESC experiments. All experiments comply with the UK Code of Practice for the Use of Human Stem Cell Lines. The following hESC lines were used: RUES2-GLR (kindly provided by Ali Brivanlou, The Rockefeller University, New York City, NY), H9 (kindly provided by Ludovic Vallier, Stem Cell Institute, UK, under agreement with WiCell), and SHEF6 (kindly provided by the UK Stem Cell Bank, National Institute for Biological Standards and Control (NIBSC)). All hESC lines were maintained in a humidified incubator set at 37°C, 21% O2, 5% CO2. H9, SHEF6, and RUES2-GLR cell lines have been authenticated by STR profiling. All cell lines were tested for mycoplasma every 2 weeks and were all negative.
 
@@ -152,7 +379,7 @@ To convert to Rset hPSCs (05978, StemCell Technologies), hESCs were cultured in
 
 All cell lines were passaged using StemPro Accutase (A1110501, ThermoFisher Scientific), which was added for 3 min at 37°C, before being diluted in DMEM/F12 and centrifuged. Cells were then plated in their appropriate medium supplemented with 10 μM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). ROCK inhibitor was removed after 24 hr.
 
-## Screen procedure and ACL conversion protocol
+### Screen procedure and ACL conversion protocol
 
 The initial chemical screen was carried out using RUES2-GLR hESCs. Inactivated MEFs were plated onto 96-well µ-plates ibiTreat (89626, Ibidi). The following day hEPSCs were plated in LCDM medium. After 24 hr, medium was replaced with LCDM medium supplemented with each of the variations of pathway activators listed in Figure 1—figure supplement 1B. Retinoic acid (R2625, Sigma-Aldrich) was used at varying concentrations (0.1, 1, 10 μM) along with the following concentrations for the other cytokines: 100 ng ml−1 PDGF-AB (78096, StemCell Technologies), 20 ng ml−1 human ACTIVIN-A (Stem Cell Institute, Cambridge, UK), 1 μM CHIR 99021 (Stem Cell Institute, Cambridge, UK), and 12 ng ml−1 bFGF2 (Stem Cell Institute, Cambridge, UK). Medium was changed every 24 hr. After 6 days, each well was fixed in 4% paraformaldehyde (11586711, Electron Microscopy Sciences) at RT for 20 min and subsequently washed twice with 0.1% Tween-PBS in preparation for immunostaining. As a control, hEPSCs were cultured for 6 days in LCDM medium.
 
@@ -162,13 +389,13 @@ For proliferation experiments, hPSCs (Rset hPSCs, hESPCs, or hESCs) were plated
 
 For hPSC ACL treatment, 250,000 of the respective cell lines were plated onto MEFs in 12 multi-well dishes (Corning, 353046) in their respective pluripotency medium. After 24 hr, medium was replaced with ACL. ACL consists of N2B27 basal medium supplemented with 100 ng ml−1 human ACTIVIN-A (Stem Cell Institute, Cambridge, UK), 10 ng ml−1 recombinant human LIF (Stem Cell Institute, Cambridge, UK), and 3 μM CHIR99021 (Stem Cell Institute, Cambridge, UK). Cells were passaged using Dispase (07923, StemCell Technologies) at a ratio of approximately 1:2–1:3 every 3–5 days.
 
-## 3D cultures of hESCs and YSLCs
+### 3D cultures of hESCs and YSLCs
 
 Geltrex LDEV-free growth factor reduced (A1413302, Thermo Fisher Scientific) and growth factor reduced Matrigel (356230, BD Biosciences) were thawed on ice and dispensed using ice-cold tips.
 
 For co-cultures, 80 μl of Geltrex was added to 8-well µ-plates ibiTreat (80826, Ibidi) and incubated at 37°C for 4 min. Having been passaged using StemPro Accutase, 30,000 YSLCs and 30,000 hESCs were mixed in DMEM/F12 and plated on top of the Geltrex bed for 12 min at 37°C to allow the cells to attach to the matrix. Proceeding this, the DMEM/F12 was replaced with mTeSR1 supplemented with 5% Geltrex. Medium was changed every 24 hr with just mTeSR1. As a control 60,000 hESCs were plated in 3D Geltrex in mTeSR1, with medium changed daily. After 72 hr, the wells were fixed as outlined above.
 
-## mTeSR conditioned medium experiments
+### mTeSR conditioned medium experiments
 
 To prepare YSLC conditioned medium , YSLCs were cultured until confluent in ACL. Medium was then changed to mTeSR1 PLUS (05825, StemCell Technologies) for 24 hr before being collected and filtered using syringe filters with a pore size of 0.45 μm (10109180, Thermo Fischer Scientific) and stored at 4°C for a maximum of a week. YSLC conditioned medium was used in two different sets of experiments:
 
@@ -178,7 +405,7 @@ Neural differentiation conditioned medium experiments: hESCs were cultured in N2
 
 The neural differentiation protocol outlined in Shi et al., 2012 was carried out as a positive control. Briefly, hESCs were cultured in N2B27 supplemented with 10 μM SB431542 (72232, Stem Cell Technologies) and 500 ng ml−1 of NOGGIN (1967-NG, R&D Systems) on Matrigel-coated 8-well µ-plates ibiTreat (see section ‘Human embryonic stem cell culture’) for 11 days, before being passaged 1:2 and maintained in N2B27 supplemented with 20 ng ml−1 bFGF2 (Stem Cell Institute, Cambridge, UK) for 4 days.
 
-## Chimera experiments
+### Chimera experiments
 
 All national and international guidelines were followed for mouse upkeep. Experiments were approved by the home office,reviewed by the University of Cambridge Animal Welfare and Ethical Review Body (AWERB), and were regulated by the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012. Animals were inspected daily and those that showed health concerns were culled by cervical dislocation. F1 (C57BI6xCBA) females were superovulated by injection of 5 IU of pregnant mares’ serum gonadotropin (PMSG, Intervet), followed by injection of 5 IU of human chorionic gonadotropin (hCG, Intervet) and mating with F1 males. Animals were culled by cervical dislocation.
 
@@ -186,48 +413,48 @@ For human cell-mouse embryo chimera experiments, eight-cell stage mouse embryos 
 
 For all mouse embryo experiments, sample size was based on our own previous experience and relevant publications.
 
-## Cell sorting
+### Cell sorting
 
 To isolate successfully converted hPSC-ACL cell populations for RNA-seq analysis, hESCs, Rset hPSCs, and hEPSCs were treated with ACL for 6 days. Cells were then dissociated using Accutase and filtered using syringe filters with a pore size of 0.45 μm before being resuspended in PBS supplemented with 5% fetal bovine serum (Stem Cell Institute, Cambridge, UK). The tdTomato+ population was then selected for by carrying out cell sorting using an AriaIII instrument, before being pelleted for RNA extraction.
 
-## Library preparation/RNA-seq
+### Library preparation/RNA-seq
 
 The sequencing was performed on the Illumina HiSeq 4000 platform. Reads were aligned using the STAR algorithm (Dobin et al., 2013) and read counts of genes were quantified using the HTSeq algorithm (Anders et al., 2015) to calculate transcripts per million (TPM).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Data from single-cell human hypoblast were obtained from Zhou et al., 2019, Molè et al., 2021 and Xiang et al., 2020. Stem cell-derived definitive endoderm single-cell data was obtained from day 3 converted cells from Cuomo et al., 2020. Read one raw data from Zhou et al., 2019 was trimmed using cutadapt and the adapter sequence was specified using ‘-g TGGTATCAACGCAGAGTACATGGG’. Raw data from Cuomo et al. were trimmed using TrimGalore! with default settings. Raw data from Xiang et al. was not trimmed. Reads were then aligned to the GRCh38 human reference transcriptome using kallisto in batch mode for smart-seq2 data (Xiang et al., 2020; Cuomo et al., 2020), and for Zhou et al., 2019 kb-python was used with a custom whitelist for each set of fastq files and with custom technology specified as ‘-x 1,0,8:1,8,16,0,0,0’. Smart-seq2 transcript level counts were then collapsed into gene level counts as described elsewhere (Booeshaghi et al., 2020). Count tables were then filtered to include cells used in their respective publications. T2iLGö-PrE was obtained from Linneberg-Agerholm et al., 2019 and processed to TPM. Data from (Molé et al., 2021) was processed an analysed as previously described.
 
 Single-cell datasets were intersected based on common features. They were then integrated using Seurat v3 (Stuart et al., 2019) based on 10,000 variable features in 30 dimensions using 50,000 anchors to generate a merged Seurat object with batch-corrected counts in the ‘integrated’ assay. Cell identities were assigned based on single-cell metadata files provided by respective publications. The Seurat object was then subset based on identities of interest (epiblast vs. hypoblast vs. trophoblast vs. definitive endoderm; hypoblast vs. definitive endoderm-like cells, pre-implantation vs. post-implantation hypoblast). Markers to distinguish the identities were identified using the FindMarkers function on the subset objects, using a Wilcoxon ranked test on integrated counts with a log fold change minimum of 0.25 and a minimum of 10% of cells in a given identity expressing each positive marker. Genes with a p-value<0.05 were used for downstream analysis as transcriptome signatures. Using the average TPM of bulk RNA-seq cell-line data, GSVA was used to determine cell type similarity using marker gene sets (Hänzelmann et al., 2013). MA plots were created using ggplot2.
 
-## RNA extraction
+### RNA extraction
 
 RNA was extracted with TRIzol reagent (15596010, Thermo Fisher Scientific). Briefly, snap-frozen cell pellets were suspended in 500 μL TRIzol, followed by a 5 min incubation at RT and addition of 0.1 mL chloroform. The samples were vortexed for 15 s, or until homogeneity in colour. After a 3 min incubation at RT, samples were centrifuged at 14,000 rpm for 15 min at 4°C to allow phase separation. The top aqueous RNA-containing layer was transferred to fresh tubes; 1 μL RNAse-free glycogen (AM9510, Thermo Fisher Scientific) and 250 μL isopropanol (I91516, Sigma) were added. Samples were mixed by inverting three to four times and incubated for 10 min at RT. A 30 min centrifugation at 14,000 rpm at 4°C was performed to pellet the RNA, which was subsequently washed with 250 μL of 75% ethanol. The supernatant was removed, and the pellet air-dried before suspending in 50 μL nuclease-free water. The samples were vortexed for 15 s and then incubated at 55°C for 10 min to completely dissolve the RNA. The samples were stored at −80°C.
 
-## Retrotranscription and RT-PCR analysis
+### Retrotranscription and RT-PCR analysis
 
 To make sample cDNA, 1 μg of RNA was used to perform a reverse transcriptase reaction in the presence of random primers (C1181, Promega), dNTPs (N0447S, New England BioLabs), RNase inhibitor (M0314L, New England BioLabs), and M-MuLV reverse transcriptase (M0253L, New England BioLabs).
 
 RT-PCR reactions were carried out using Power SYBR Green PCR Master Mix (4368708, Thermo Fisher Scientific) on a Step One Plus Real-Time PCR machine (Applied Biosystems). The following programme was used: 10 min at 95°C and 40 cycles of 15 s at 95°C and 1 min at 60°C. qPCR data was normalised against expression levels of hypoxanthine guanine phosphoribosyltransferase (HPRT), which should be consistent across samples. Error bars represent variability (SEM) across multiple independent experiments. A complete list of primers used is shown in Table S4.
 
-## Immunostaining and imaging
+### Immunostaining and imaging
 
 Permeabilisation was performed using PBS with 0.1 M glycine, 0.3% Triton X-100 for 30 min at RT. Primary antibodies were incubated overnight at 4°C. All primary antibodies were diluted in blocking buffer (1% BSA, 0.1% Tween in PBS) at 1:200. Cells were then washed three times with 0.1% Tween-PBS before being incubated with fluorescently conjugated Alexa Fluor secondary antibodies diluted 1:500 in 0.1% Tween-PBS for 2 hr at room temperature. Where indicated Alexa Fluor 647 Phalloidin (1:100; A22287, Thermo Fisher Scientific) and DAPI (1:1000; D3571 Thermo Fisher Scientific) were added concomitantly with the secondary antibodies. Primary and secondary antibody lists can be found in Supplementary file 4.
 
 Imaging took place on an inverted SP5 confocal microscope (Leica Microsystems) using a Leica HC PL FLUOTAR 0.5 NA 20.0× dry objective and a Leica HC PL APO 1.4 NA 63× oil objective, or on an inverted SP8 confocal microscope (Leica Microsystems) with a Leica HC PL APO CS2 1.4 NA 63× oil objective and a Leica Fluotar VISIR 0.95 NA 25× water objective. Within each independent experiment, laser power and detector gain were maintained constant.
 
-## Image analysis
+### Image analysis
 
 All microscopy analysis was carried out using FIJI software (http://fiji.sc) (Schindelin et al., 2012). For all quantifications, laser power and detector gain were maintained constant to quantitatively compare different experimental conditions within a single experiment. A single representative Z-plane was chosen for all quantifications. When calculating protein levels within a cell population, 10 microscopic fields of view were randomly captured for each independent experiment to obtain representative coverage of the cell population within each experiment.
 
-## Quantification of nuclear fluorescence intensity
+#### Quantification of nuclear fluorescence intensity
 
 Nuclear shape was conferred from DAPI staining, images of which were binarised to produce a mask to segment the nuclei in 2D. The watershed function on FIJI was then used to separate nuclei that were closely positioned. Each nuclear outline was then saved as a region of interest (ROI) and the fluorescence intensity within each ROI was then analysed. Within each experiment, the experimental fluorescence intensity values were normalised to the control expression level for each protein being analysed.
 
-## Classification of spheroid morphology
+#### Classification of spheroid morphology
 
 Within co-culture and conditioned medium experiments, each structure was classified as disorganised, squamous epithelial or columnar epithelial. ‘Disorganised structures’ were those which contain no discernible epithelial structures and were mostly a 2D ‘carpet’ of cells. Squamous epithelial spheroids were mainly composed of cells with an aspect ratio (height/width) of <1. Columnar epithelial spheroids were mainly composed of cells with an aspect ratio >1.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analysis other than that involved in sequencing data analysis was carried out using GraphPad Prism software. Qualitative data are presented as a contingency table and were analysed with a χ2 test. Quantitative data are presented as mean ± SEM. Data with a Gaussian distribution were analysed using a two-tailed unpaired Student’s t-test when comparing two groups or ANOVA with a Tukey’s or Sidak's multiple comparison test when comparing multiple. If there were significant differences in the variance, a Welch’s correction was used. If the data did not have a Gaussian distribution, a Mann–Whitney U-test was used when comparing two groups or a Kruskal–Wallis test with a Dunn’s multiple comparison test was used when comparing multiple groups. Independent experiments are defined as biological replicates. Technical replicates were undertaken simultaneously.

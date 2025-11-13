@@ -44,49 +44,101 @@ Despite the growing interest in lipid profiling in health and disease, the study
 
 ## Results
 
-## Maternal obesity affects mouse offspring heart morphology
+### Maternal obesity affects mouse offspring heart morphology
 
 A well-established diet-induced maternal obesity model in which the female mouse develops obesity and gestational diabetes was used to investigate the effects of maternal obesity on the offspring heart. At gestational day 18.5, male and female fetuses from obese dams were smaller than controls (Figure 1A), and although their heart weights were not significantly different from control hearts in either absolute or relative terms (Figure 1B and C), obese fetuses showed smaller left, but not right, ventricular wall volume (Figure 1D, E and F). The change in left ventricular wall volume was not significant when expressed as relative to fetal body mass, indicating symmetric growth restriction in the fetuses from obese pregnancies (Figure 1G and H). The observed reduction in ventricular size was not accompanied by changes in cardiomyocyte cell size (Figure 1I) or proliferation (Figure 1J) at this stage of development.
 
-## Maternal obesity drives changes to the lipid composition of maternal and fetal serum
+![Figure 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig1-v3.jpg)
+
+**Figure 1.:** (A) Body weight of male and female fetuses from healthy control (CTL) and obese (OB) mouse dams at gestational day 18.5. Male CTL n = 6, male OB n = 6, female CTL n = 7, female OB n = 6. (B–C) Heart weight and heart weight/litter average body weight ratio of male and female fetuses from CTL and OB dams at gestational day 18.5. Male CTL n = 10, male OB n = 10, female CTL n = 12, female OB n = 12. (D) Histological sections stained with eosin of male and female fetuses from CTL and OB dams at gestational day 18.5 used in cardiac stereology (see also Figure 1—figure supplement 1). Scale bar indicates 500 µm. (E–H) Left and right ventricular wall volume and ventricular wall volume/body weight ratio of male and female fetuses from healthy control (CTL) and obese (OB) mouse dams at gestational day 18.5. Male CTL n = 4, male OB n = 6, female CTL n = 4, female OB n = 5. (I) Boxplot showing median and quartiles of cardiomyocyte area distribution in male and female fetuses from CTL and OB dams at gestational day 18.5. Under the boxplot a beeswarm plot shows individual area of each cardiomyocyte analysed. Male CTL n = 6, male OB n = 7, female CTL n = 6, female OB n = 6 (see Figure 1—figure supplement 2 for a representative image of stained cardiomyocytes). (J) Nuclear PCNA-positive cells percentage in hearts of male and female fetuses from CTL and OB dams at gestational day 18.5. Male CTL n = 6, male OB n = 5, female CTL n = 3, female OB n = 5. In panels A-H and J, p-values were calculated by Student t-test. In panel I, p-values were calculated using linear mixed-effects model followed by Tukey’s post-hoc test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Representative images of fetal torso prior (A) and after (B) blinded identification of cardiac structures by a trained histologist.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig1-figsupp2-v3.jpg)
+
+### Maternal obesity drives changes to the lipid composition of maternal and fetal serum
 
 Maternal and fetal serum lipidomes were obtained by direct infusion high-resolution mass spectrometry, a rapid method used to profile the lipids in an organic extract. Full data and annotation of isobaric signals are available in the supplementary information (Supplementary file 1, Figure 2—source data 3). We used Principal Component Analysis (PCA) to identify orthogonal distance and relatedness amongst individual fetal and maternal serum lipidomes. This multivariate analysis demonstrated that there was a clear distinction between maternal and fetal serum lipid profiles, regardless of the maternal nutritional status or offspring sex (Figure 2—figure supplement 1A). In order to test the hypothesis that the lipid composition in the serum of the dams and her fetuses differed between control and obese mothers, PCAs of just these pairs of groups were performed. These suggested that there was clear segregation in each case driven by maternal dietary status (Figure 2—figure supplement 1B and C).
 
 In order to identify the lipid pathways altered, we summed the abundance of the lipid variables in each lipid class (head group, assuming even chain length for the fatty acid, see Supplementary files 1 and 2 for lipid signals used for each class) and calculated which classes differed in abundance according to maternal status. This showed that cholesteryl esters (CE), ceramides (Cer), and sphingomyelins (SM) were more abundant in serum from obese dams than in serum from controls (Figure 2A). Amongst fetal serum, changes to the abundance of lipid classes were generally similar between males and females. Serum levels of phosphatidylcholines/phosphatidylethanolamines and ceramides were significantly reduced, and phosphatidylglycerols, phosphatidic acids, triglycerides and the ratio of triglycerides to phospholipids were significantly increased in response to maternal obesity (Figure 2B). We then used factorial analysis to establish any sex differences. This revealed sex differences in cholesteryl esters (Figure 2C), with males showing higher relative abundance compared to females (Figure 2—figure supplement 2A).
 
-## Specific lipid profiles differ between maternal and fetal serum
+![Figure 2.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig2-v3.jpg)
+
+**Figure 2.:** (A–B) Relative changes in serum lipid classes abundance in obese dams (A) and in obese fetuses (B). Values are mean + SE. *p < 0.05 calculated by Student t-test or Mann-Whitney test. (C) Influence of maternal diet and sex on fetal serum lipid classes abundance as calculated by factorial ANOVA. (D) Regulation of maternal and fetal serum lipid species ranked according to their abundance. Coloured dots represent statistically regulated species as calculated by univariate Student t-test (p < 0.05) and PLS-DA VIP (vip score >1) in maternal or fetal OB serum compared to CTL. (E–G) Serum levels of regulated lipids from obese dams (E) and from male (F) and female (G) fetuses of obese dams at gestational day 18.5. Each dot represents a result from one obese fetus' serum relative to the average of results for individual lipids in the control group (straight line). Dam CTL n = 9, dam OB n = 6, male fetuses CTL n = 10, male fetuses OB n = 8, female fetuses CTL n = 10, female fetuses OB n = 7; * p < 0.05, ** p < 0.01, *** p < 0.001 calculated by Student t-test. In figures A-C: PE, phosphatidylethanolamines/odd chain phosphatidylcholines; PC, phosphatidylcholines/odd-chain phosphatidylethanolamines; PG, phosphatidylglycerols; PS, phosphatidylserines; PA, phosphatidic acids; PI, phosphatidylinositols; TG, monoglycerides, diglycerides and triglycerides; SM, sphingomyelins; CE, cholesteryl esters; Cer, ceramides; PL, phospholipids. In figures D-G, other isobaric lipids can contribute to these signals (Supplementary file 1). See also Figure 2—figure supplement 1 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PCA plots showing the PC1 and PC2 scores for individual dam and fetal serum lipidomes at gestational day 18.5. (B–C) PCA plots showing the PC1 and PC2 scores for individual dam (B) or fetal (C) serum lipidomes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Heatmap showing lipid classes serum levels in male and female E18.5 fetuses. (B–C) Pearson’s correlation between individual lipid species in maternal serum and male (B) and female (C) fetal serum at gestational day 18.5. Blue dots represent positively correlated lipid species between maternal and fetal serum deemed statistically significant (p < 0.05). Red dots represent negatively correlated lipid species between maternal and fetal serum deemed statistically significant (p < 0.05). (D) Relative abundance of different lipid classes in maternal and fetal control serum.
+
+### Specific lipid profiles differ between maternal and fetal serum
 
 Lipid classes consist of several lipid isoforms that comprise different fatty acid residues. To assess the differences in lipids at the individual level, we used both univariate and multivariate models to identify differences between serum from obese and control dams and their fetuses. Although ceramides were more abundant at the class level in obese dam serum, no individual ceramide isoform was statistically significantly different between groups (Figure 2D and E). At the individual isoform level, campesterol (ST 28:1;O) and many unsaturated triglycerides were less abundant in sera of obese dams. Similar to changes observed at the class level, the abundance of two isoforms of sphingomyelin and two individual cholesteryl esters was also increased in the sera of obese mothers. Some phosphatidylcholines/odd chain phosphatidylethanolamines were more abundant, although two – PC 40:5/PE 43:5 and PC 38:5/PE 41:5 – and lyso-phosphatidylcholine (LPC) 22:5 were less abundant in obese dam sera.
 
 We then assessed the correlation between maternal and fetal lipid composition and abundance using linear regression. We showed that only a few maternal phospholipids and lyso-phospholipids species – comprising LPC 18:2, 20:4, 22:5 and 22:6 – and campesterol were significantly correlated with the same species in both male and female fetal serum (Figure 2—figure supplement 2B and C). Contrasting to the signature observed in dam serum, naturally highly abundant triglyceride isoforms had increased abundance in both male and female fetuses with only a handful of exceptions (e.g. TG 54:2 and TG 48:5 in males – Figure 2F). Phosphatidylethanolamine/odd chain phosphatidylcholines isoforms were also more abundant in serum of both male and female fetuses of obese dams, with females showing increased abundance of the greatest number of species, and PE 34:0/PC 31:0 being regulated in a sex-independent manner (Figure 2D, F and G). Odd chain fatty acid containing phosphatidylcholines are isobaric with phosphatidylethanolamines (see Supplementary file 2); however, no other evidence from other lipid classes suggested a change in odd chain fatty acid metabolism. Consistent with the dam serum data, several phosphatidylcholine/odd chain phosphatidylethanolamines isoforms were less abundant in serum of male and female fetuses of obese dams.
 
-## Maternal obesity is associated with changes in the fatty acid composition of phospholipids in maternal and fetal serum
+### Maternal obesity is associated with changes in the fatty acid composition of phospholipids in maternal and fetal serum
 
 The bulk of serum lipid species detected were glycerides, phospholipids and cholesterol (Figure 2—figure supplement 2D), with glycerides, phospholipids and lyso-phospholipids comprising three and two fatty acids respectively, that are covalently bonded to glycerol. As we observed differences in the abundance of individual lipid isoforms in maternal and fetal serum, we sought to elucidate whether the changes observed in fetuses from obese dams would also translate into an imbalance in the distribution of fatty acid residues in phospholipids. When clustered according to the number of double bonds as either saturated, monounsaturated or polyunsaturated residues, we observed that although the relative abundances of these were not significantly affected by maternal diet in fetal serum, feeding of the obesogenic diet during pregnancy was associated with increased relative monounsaturated fatty acids abundances in the maternal serum (Figure 3A), consistent with increased oleate observed in the dams (Figure 3B). We also made the observation that fatty acids from phospholipids with a chain length shorter than 18 carbons were generally more abundant in obese dam and fetal serum, whereas the abundance of longer molecules tended to be lower (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig3-v3.jpg)
+
+**Figure 3.:** (A) Grouped saturated, monounsaturated and polyunsaturated fatty acids content in maternal, male and female fetal serum at gestational day 18.5. Values are mean + SE. (B) Regulation of maternal and fetal serum fatty acids. Coloured dots represent statistically regulated fatty acids as calculated by univariate Student t-test or Mann-Whitney test (p < 0.05) in maternal or fetal OB serum compared to CTL. (C) Pearson’s correlation between maternal serum fatty acids and the same fatty acids detected in the fetal serum. Blue and red dots represent species with significant positive and negative association (p < 0.05). Dam CTL n = 8, dam OB n = 6, male fetuses CTL n = 10, male fetuses OB n = 8, female fetuses CTL n = 8, female fetuses OB n = 6. See also Figure 3—figure supplement 1 and Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Gray-shaded area indicates negative changes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Fatty acids grouped following Euclidian clusterisation.
 
 At the individual level, we again identified a distinction between maternal and fetal serum profiles, with phospholipid fatty acid residues being differentially regulated (Figure 3B, see also Figure 3—figure supplement 1).
 
 In line with the lower polyunsaturated phospholipid levels, those containing n-3 docosapentaenoic acid (DPA) (22:5) were less abundant, and those with saturated fatty acids myristic (14:0) and margaric (17:0), and monounsaturated myristoleic acid (14:1) were more abundant in the fetal sera of both sexes in response to maternal obesity. In contrast, oleic acid (18:1) from phospholipids was more abundant in the serum of obese dams only. Despite the differences observed, the fetal levels of a few residues were significantly correlated with the maternal ones, and an overall trend for positive correlation between fatty acids levels in maternal and fetal sera was observed (Figure 3C). By generating correlation matrices with group independent variables using Euclidian clustering, we also observed that several saturated and monounsaturated fatty acid residues were positively correlated and tended to cluster together (Figure 3—figure supplement 2). Similarly, polyunsaturated fatty acids established clusters and were positively correlated. Several saturated and monounsaturated fatty acids were negatively correlated to polyunsaturated species.
 
-## Maternal obesity sex-specifically affects the fetal heart lipidome
+### Maternal obesity sex-specifically affects the fetal heart lipidome
 
 We next sought to determine whether the lipid composition of fetal hearts was influenced by maternal obesity and whether its signature would follow a similar pattern to that observed in the fetal serum. Full cardiac lipidome data and annotation of isobaric signals are available in the supplementary information (Supplementary file 2, Figure 4—source data 2 and Figure 4—source data 4). We observed that total cholesteryl esters were less abundant in both male and female fetal hearts from obese pregnancies (Figure 4A and B). Total sphingomyelins were more abundant in both males and females, but the difference was only statistically significant in female hearts (Figure 4B). The observation that fewer lipid classes were perturbed in males than in females in response to maternal obesity was reproduced at the individual species level. Through sex specific PCAs, we observed a weaker degree of separation between control and obese individual lipidomes in males (Figure 4C) when compared to females (Figure 4D). In contrast, female heart lipidomes showed clear distinction between control and obese hearts, with more lipid species being significantly different between groups (42 compared to 18 in males) (Figure 4E, F and G).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig4-v3.jpg)
+
+**Figure 4.:** (A–B) Relative changes in cardiac lipid classes in male (A) and female (B) fetuses from obese dams. Values are mean + SE. *p < 0.05 calculated by Student t-test or Mann-Whitney test. (C–D) PCA plots showing the PC1 and PC2 scores for individual male (C) and female (D) cardiac lipidomes. (E) Regulation of fetal cardiac lipid species ranked according to their abundance. Coloured dots represent statistically regulated species as calculated by univariate Student t-test (p < 0.05) and PLS-DA VIP (vip score >1) in fetal OB hearts compared to CTL. (F–G) Cardiac levels of regulated lipids from male (F) and female (G) fetuses of obese dams at gestational day 18.5. Each dot represents a result from one obese heart, relative to the average of results for individual lipids in the control group (straight line). Male fetuses CTL n = 6, male fetuses OB n = 7, female fetuses CTL n = 7, female fetuses OB n = 6. * p < 0.05, ** p < 0.01, *** p < 0.001 calculated by Student t-test. (H) Cumulative frequency of cardiac lipid species according to the log2 of the fold change in abundance between male and female fetuses from obese and control dams. (I) Grouped saturated, monounsaturated and polyunsaturated fatty acids content in male and female fetal hearts at gestational day 18.5. (J) Regulation of maternal and fetal serum fatty acids. Coloured dots represent statistically regulated fatty acids as calculated by univariate Student t-test or Mann-Whitney test (p < 0.05) in fetal OB hearts compared to CTL. Male fetuses CTL n = 8, male fetuses OB n = 6, female fetuses CTL n = 7, female fetuses OB n = 7. In figures A-B: PE, phosphatidylethanolamines/odd chain phosphatidylcholines; PC, phosphatidylcholines/odd-chain phosphatidylethanolamines; PC, phosphatidylcholines; PG, phosphatidylglycerols; PS, phosphatidylserines; PA, phosphatidic acids; PI, phosphatidylinositols; TG, monoglycerides, diglycerides and triglycerides; SM, sphingomyelins; CE, cholesteryl esters; Cer, ceramides; PL, phospholipids. In figures E-G, other isobaric lipids can contribute to these signals (Supplementary file 2). See also Figure 4—figure supplement 1 and Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Grey-shaded area indicates negative regulation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig4-figsupp2-v3.jpg)
 
 Looking at the most abundant cardiac lipids, we observed that female hearts were more sensitive to change as a consequence of maternal obesity, with most lipids having greater fold change compared to male hearts (Figure 4H, see also Figure 3—figure supplement 1 and Figure 4—figure supplement 1).
 
 Lipid ontology analysis of the fetal heart lipidome using LION (Molenaar et al., 2019) also identified more biological features significantly enriched in female hearts compared to males (Figure 4—figure supplement 2). This analysis also revealed an overall decrease in phospholipids and lyso-lipids and, although not quantitatively significant, an increase in triglycerides in both males and females. Consistently, most modelled triglycerides were more abundant, and most phosphatidylcholines/odd chain phosphatidylethanolamines were less abundant in both male and female hearts exposed to in utero obesity (Figure 4F and G). Phosphatidylethanolamines/odd chain phosphatidylcholines were also regulated in both male and female hearts, and sphingomyelins were regulated in females only. Regarding the fatty acid composition of phospholipids, we did not observe changes in the overall content of fatty acid groups (Figure 4I). However, at the individual level, we observed lower abundance of DPA in both male and female hearts exposed to in utero obesity (Figure 4J). Male offspring also exhibited lower cardiac levels of m/z 423.421, tentatively identified as the very long-chain saturated octacosanoic acid (28:0), although other metabolites can contribute to this signal. In females, we observed increased abundance of the highly abundant docosahexaenoic acid, FA 22:6, and lower abundance of palmitoleic, FA 16:1, and fatty acids FA 22:3 and FA 20:3.
 
-## Maternal obesity induces changes in the fetal heart transcriptome to promote lipid metabolism
+### Maternal obesity induces changes in the fetal heart transcriptome to promote lipid metabolism
 
 Changes in the abundance of individual lipid isoforms and the fatty acid composition of lipid classes in cardiac cells could indicate lipid metabolism and cell morphology remodelling in cardiomyocytes. This led us to the hypothesis that maternal obesity caused changes in fetal heart lipid metabolism and biosynthesis. To identify the main gene pathways affected, we conducted RNA-Seq of male fetal hearts, followed by deep pathway enrichment analysis. We found 345 downregulated and 440 upregulated genes in the heart of the obese offspring (p < 0.05) (Figure 5A). Ingenuity Pathway Analysis (IPA) revealed that a set of confidently top-regulated genes (p < 0.01) were associated with sterol, fatty acid and carnitine metabolism (Figure 5B), in a scenario where PPAR-alpha and HIF1A were the main activated upstream transcriptional regulators, with signalling by lyso-phosphatidylcholine (LPC) abundance reduced and SREBP activity is downregulated (Figure 5C). Lists containing data of all regulated IPA canonical pathways and IPA upstream regulators are available in Figure 5—source data 2 and Figure 5—source data 3. Figure 5D shows expression of genes regulated by PPAR-alpha transcriptional activity, and expression of genes mapped to the main predicted IPA pathways. We later validated the expression of key genes associated with lipid metabolism in the hearts of both male and female offspring from a completely independent cohort using qPCR (Figure 5E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig5-v3.jpg)
 
-**Figure 5.:** (A) Volcano plot showing up and downregulated genes in the heart of obese fetuses. p < 0.05 and FDR < 0.1 by generalised linear models with quasi-likelihood tests. Full statistical data is available in Figure 5—source data 1. (B) Top five regulated Ingenuity Canonical Pathways predicted by analysis of cardiac transcriptome from male fetuses from obese dams compared to fetuses from control dams. A p-value cut-off of 0.01 calculated by likelihood-ratio test was used to select regulated genes included in the IPA analysis. Bars represent activation z-score per pathway; points represent p-value of enriched pathways estimated by IPA algorithm. (C) Activation z-score of top Ingenuity Upstream Regulators predicted by analysis of cardiac transcriptome from male fetuses from obese dams compared to fetuses from control dams. The complete lists of regulated IPA canonical pathways and IPA upstream regulators are available in Figure 5—source data 2 and Figure 5—source data 3, respectively (D) Heatmap showing mRNA levels of genes regulated by PPAR-alpha activity (red bar), and genes mapped to ‘Superpathway of Cholesterol Biosynthesis’ (green bar), ‘Oleate Biosynthesis II’ (blue bar), ‘Superpathway of Geranylgeranyldiphosphate Biosynthesis I’ (yellow bar), ‘Cholecystokinin/Gastrin-mediated Signalling’ (pink bar) and ‘IGF-1 Signalling’ (light blue bar) Ingenuity Canonical Pathways in male E18.5 hearts as analysed by RNA Seq. CTL n = 4 and OB n = 4. (E) mRNA levels of selected markers of lipid metabolism in male and female fetal heats. Male CTL n = 8, male OB n = 8, female CTL n = 6, female OB n = 11. *p < 0.05, **p < 0.01, ***p < 0.001 by Student t-test. Diet ***p < 0.001 by factorial ANOVA. Primer sequences are available in Table 1.Figure 5—source data 1.Figure 5A).Figure 5—source data 2.Figure 5B).Figure 5—source data 3.Figure 5C).Figure 5—source data 4.Figure 5D).Figure 5—source data 5.Figure 5E).
+**Figure 5.:** (A) Volcano plot showing up and downregulated genes in the heart of obese fetuses. p < 0.05 and FDR < 0.1 by generalised linear models with quasi-likelihood tests. Full statistical data is available in Figure 5—source data 1. (B) Top five regulated Ingenuity Canonical Pathways predicted by analysis of cardiac transcriptome from male fetuses from obese dams compared to fetuses from control dams. A p-value cut-off of 0.01 calculated by likelihood-ratio test was used to select regulated genes included in the IPA analysis. Bars represent activation z-score per pathway; points represent p-value of enriched pathways estimated by IPA algorithm. (C) Activation z-score of top Ingenuity Upstream Regulators predicted by analysis of cardiac transcriptome from male fetuses from obese dams compared to fetuses from control dams. The complete lists of regulated IPA canonical pathways and IPA upstream regulators are available in Figure 5—source data 2 and Figure 5—source data 3, respectively (D) Heatmap showing mRNA levels of genes regulated by PPAR-alpha activity (red bar), and genes mapped to ‘Superpathway of Cholesterol Biosynthesis’ (green bar), ‘Oleate Biosynthesis II’ (blue bar), ‘Superpathway of Geranylgeranyldiphosphate Biosynthesis I’ (yellow bar), ‘Cholecystokinin/Gastrin-mediated Signalling’ (pink bar) and ‘IGF-1 Signalling’ (light blue bar) Ingenuity Canonical Pathways in male E18.5 hearts as analysed by RNA Seq. CTL n = 4 and OB n = 4. (E) mRNA levels of selected markers of lipid metabolism in male and female fetal heats. Male CTL n = 8, male OB n = 8, female CTL n = 6, female OB n = 11. *p < 0.05, **p < 0.01, ***p < 0.001 by Student t-test. Diet ***p < 0.001 by factorial ANOVA. Primer sequences are available in Table 1.
 
-## The abundance of acyl-carnitines in fetal hearts is associated with maternal obesity
+### The abundance of acyl-carnitines in fetal hearts is associated with maternal obesity
 
 Having observed changes in transcriptional activity indicating increased lipid metabolism in fetal hearts in response to maternal obesity, we conducted a final experiment to investigate whether acyl-carnitine species were also affected by maternal obesity. These comprise fatty acid residues produced during beta-oxidation and are markers of mitochondrial and peroxisomal lipid metabolism. Regardless of the lack of significant differences between sex-matched obese and control offspring (Figure 6A), we observed increased levels of total hydroxylated acyl-carnitines in response to maternal obesity (Figure 6B). At the individual level, we found the hydroxylated acyl-carnitine C05-OH to be more abundant in both males and females (Figure 6C, D and E), and C16-OH to be less abundant in females only (Figure 6E). C12:0 and C12:1 were also more abundant, whereas C20:0 and C22:5 were less abundant in obese female hearts (Figure 6E). In males, C3:0 was less abundant, and C11:0 and C15:0 were both more abundant (Figure 6D). In addition to the increased hydroxylated acyl-carnitine levels, a parallel experiment showed that maternal obesity caused cardiomyocytes isolated from female fetuses to oxidise more oleic acid in vitro than cardiomyocytes from control female fetuses (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig6-v3.jpg)
+
+**Figure 6.:** (A) Relative changes in cardiac carnitine classes levels in male and female fetuses from obese dams. (B) Influence of maternal diet and sex on fetal cardiac carnitine classes levels as calculated by factorial ANOVA. (C) Relative fold change of individual acyl-carnitine levels in the heart of E18.5 fetuses from obese dams according to their abundance. Larger figures are acyl-carnitine species deemed as regulated with p < 0.05 by Student t-test or Mann-Whitney test. SCAC: small-chain acyl-carnitine; MCAC: medium-chain acyl-carnitine; LCAC: long-chain acyl-carnitine; S.MCAM.OH: small- and medium-chain hydroxy acyl-carnitine, LCAC.OH: Long-chain hydroxy acyl-carnitine; Odd Chain: acyl-carnitines with an odd chain number; DCAC: dicarboxylic acyl-carnitines. (D–E) Individual acyl-carnitine species levels in male (D) and female (E) fetal hearts at 18.5 days of pregnancy. See Supplementary file 3 for list of full names. *p < 0.05 by Student t-test or Mann-Whitney test. Male fetuses CTL n = 7, male fetuses OB n = 7, female fetuses CTL n = 7, female fetuses OB n = 6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69078/elife-69078-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Male CTL n = 3, male OB n = 6, female CTL n = 2, female OB n = 5.
 
 ## Discussion
 
@@ -112,43 +164,430 @@ In conclusion, we have carried out a comprehensive study of how obesity during p
 
 ## Materials and methods
 
-## Lead contact
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Murine cardiac ventricles</td>
+      <td>UBS, Cambridge, UK</td>
+      <td></td>
+      <td>Excised and frozen from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Whole murine cardiac torsos</td>
+      <td>UBS, Cambridge, UK</td>
+      <td></td>
+      <td>Fixed Mus musculus torsos after culling</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Primary murine cardiomyocytes</td>
+      <td>UBS, Cambridge, UK</td>
+      <td></td>
+      <td>Freshly isolated from Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cardiac Troponin I(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab8295</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (FITC)(goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6785</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab29</td>
+      <td>IHC(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Primary Cardiomyocyte Isolation Kit</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat# 88,281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HRP/DAB (AMB) detection IHC kit</td>
+      <td>Abcam</td>
+      <td>ab64264</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>217,004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Preparation kit v2</td>
+      <td>Illumina</td>
+      <td>RS-122–2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Thermo-Fisher</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Bowtie</td>
+      <td>RRID:SCR_005476</td>
+      <td>V 1.2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathways Analysis (IPA)</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_008653</td>
+      <td>V 42012434</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>Bioconductor (R)</td>
+      <td>RRID:SCR_012802</td>
+      <td>V 3.36.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>V 1.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>V 9.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuPath</td>
+      <td>QuPath</td>
+      <td>RRID:SCR_018257</td>
+      <td>V 0.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur</td>
+      <td>Thermo</td>
+      <td>RRID:SCR_014593</td>
+      <td>V 4.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inkscape</td>
+      <td>Inkscape</td>
+      <td>RRID:SCR_014479</td>
+      <td>V 1.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Harmony</td>
+      <td>PerkinElmer</td>
+      <td>RRID:SCR_018809</td>
+      <td>V 5.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>V 1.53 n</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XCMS</td>
+      <td>Bioconductor (R)</td>
+      <td>RRID:SCR_015538</td>
+      <td>V 3.16.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Peakpicker</td>
+      <td>R</td>
+      <td>Harshfield et al., 2019</td>
+      <td>V 2.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Horse Serum, heat inactivated</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat# 26050070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum (FBS) for standard applications</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat#26,140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraformaldehyde Solution, 4% in PBS</td>
+      <td>Thermo-Fisher</td>
+      <td>Cat# 15670799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Animal-free blocking buffer</td>
+      <td>Vector laboratories</td>
+      <td>Cat# SP-5030–250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Formalin solution, neutral buffered, 10%</td>
+      <td>Merck</td>
+      <td>HT501128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Haematoxylin QS Counterstain</td>
+      <td>Vector laboratories</td>
+      <td>H-3404–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hepes</td>
+      <td>Merck</td>
+      <td>Cat# H3375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI solution</td>
+      <td>Merck</td>
+      <td>10236276001</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Guanidine</td>
+      <td>Merck</td>
+      <td>CAS 50-01-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Thiourea</td>
+      <td>Merck</td>
+      <td>CAS 62-56-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dichloromethane</td>
+      <td>Merck</td>
+      <td>CAS 75-09-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Methanol</td>
+      <td>Merck</td>
+      <td>CAS 67-56-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Triethylammonium chloride</td>
+      <td>Merck</td>
+      <td>CAS 554-68-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ammonium Acetate</td>
+      <td>Merck</td>
+      <td>CAS 631-61-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chloroform</td>
+      <td>Merck</td>
+      <td>34854–2.5 L-M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Butyryl-d7-L-carnitine</td>
+      <td>QMX laboratory</td>
+      <td>D-7761/0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hexadecanoyl-L-carnitine-d3</td>
+      <td>QMX laboratory</td>
+      <td>D-6646/0.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acetone</td>
+      <td>Merck</td>
+      <td>A/0560/17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acetonitrile</td>
+      <td>Merck</td>
+      <td>2856–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Power SYBR Green PCR Master Mix</td>
+      <td>Thermo-Fisher</td>
+      <td>4367659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fatty acid-free bovine serum albumin (BSA)</td>
+      <td>Merck</td>
+      <td>A9205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM – low glucose</td>
+      <td>Merck</td>
+      <td>D6046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Carnitine</td>
+      <td>Merck</td>
+      <td>CAS 541-15-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oleic Acid, [1–14 C]-, 50 µCi</td>
+      <td>PerkinElmer</td>
+      <td>NEC317050UC</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Lucas Carminatti Pantaleão (lp435@medschl.cam.ac.uk).
 
-## Data and code availability
+### Data and code availability
 
 The transcriptomics and lipidomics datasets generated during this study are available at GEO [GSE162185] and as supplemental material (Figure 2—source data 3, Figure 3—source data 2, Figure 4—source data 2, Figure 4—source data 4 and Figure 6—source data 2), respectively.
 
-## Animal handling
+### Animal handling
 
 This research was regulated under the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012 following ethical review by the University of Cambridge Animal Welfare and Ethical Review Body (AWERB). Female C57BL/6 J mice were randomly allocated to receive either commercial standard (RM1) or a high fat diet [20% lipids (Special Dietary Services)] plus sweetened condensed milk [55% simple carbohydrates/8% lipids (Nestle, UK)] from weaning. After around 6 weeks on their respective diets, mice were mated with male counterparts and went through a first pregnancy and lactation to ensure their breeding competence. Mice were mated a second time, and first day of pregnancy was marked by the detection of a vaginal plug. On day 18.5 of gestation, pregnant mice were culled by rising CO2 concentrations or cervical dislocation. Fetuses were surgically removed and immediately euthanised by laying in cold buffer. Fetal heart ventricles (comprising both left and right sides) were dissected, weighed, snap frozen and stored at −80 °C or whole fetal torsos were fixed in 10% neutral buffered formalin. Maternal blood was collected by cardiac puncture and fetal trunk blood was collected following post-mortem head removal. All blood samples were processed for serum separation following standard protocol.
 
-## Cell size assessment
+### Cell size assessment
 
 Fetal hearts were excised, immediately transferred to a new clean tube containing ice cold HBSS (no Mg2+ no Ca2+), minced into 1 mm pieces and washed twice. An enzyme cocktail from Pierce Primary Cardiomyocyte Isolation Kit containing thermolysin and papain (Thermo-Fisher, Waltham, MA, USA) was added to the minced tissue and incubated for 30 min at 37 °C. Cells were dispersed into dispersion buffer [10% horse serum [(heat inactivated) Thermo-Fisher], 5% FBS (Thermo-Fisher), 10 mM Hepes (Sigma-Aldrich, Dorset, UK) in HBSS] and strained using 70 µm strainer. An equal volume of 4% PFA (Thermo-Fisher) solution in PBS was added to the dispersion buffer (final PFA concentration: 2%) and incubated for 18 min at room temperature. Fixed cells were then centrifuged for 2 min at 700 g and the fixative was removed. Cells were washed twice with cold PBS and stored at 4 °C. Fifty thousand cells per extract were incubated with animal-free blocking buffer (Vector Laboratories, Burlingame, CA, USA) for 45 min, and with fresh blocking buffer containing 1:50 mAb to Cardiac Troponin I [ab8295 (Abcam, Cambridge, UK)] and 1:1000 pAb to Ms IgG (FITC) [ab6785 (Abcam)] for 1 hr each. Later, cells were also incubated with DAPI solution, resuspended in fresh deionised water, plated onto poly-L-lysine coated wells of a 96-well plate and observed in Opera Phenix High Content Screening System (PerkinElmer, Waltham, MA, USA).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 E18.5 male and female whole fetal torsos were immersion fixed in 10% neutral formalin buffer. Fetal hearts were dissected from the fixed torsos, embedded into paraffin and sectioned in the transverse plane at 3 µm using a microtome (Leica Microsystems, Wetzlar, Germany).
 
 Slides containing mid-cardiac sections were deparaffinised, subjected to target/antigen retrieval for 20 min at 90 °C in citrate buffer (pH 6), cooled to room temperature (20 min), rinsed with wash buffer and blocked for 10 min [(ab64264), Abcam]. Sections were then incubated with 1:10,000 mAb to PCNA [(ab29), Abcam] for 1 hr. HRP/DAB detection was then performed using a mouse specific HRP/DAB (AMB) detection IHC kit [(ab64264), Abcam] according to the manufacturer’s instructions. Sections were counterstained with Haematoxylin QS (Vector), washed and mounted using a synthetic mountant. Sections were imaged using a Slide Scanner Axioscan Z1 (Zeiss, Oberkochen, Germany). DAB positive nuclei staining analyses were performed blinded using QuPath v0.2.0 (Bankhead et al., 2017).
 
-## Cardiac stereology
+### Cardiac stereology
 
 E18.5 male and female fetal torsos were immersion fixed in 10% neutral formalin buffer. Fetal hearts were dissected from the fixed torsos, embedded into paraffin and exhaustively serial sectioned in the transverse plane at 5 µm using a microtome (Leica Microsystems, Wetzlar, Germany). 10 evenly spaced sections per heart were stained with haematoxylin and eosin, mounted using a synthetic mountant and imaged using a Slide Scanner Axioscan Z1 (Zeiss, Oberkochen, Germany). Stereological analysis was performed using ImageJ v1.53. In brief, a points grid was superimposed on images with a points area of 9000 µm2 and the number of points landing on each cardiac region counted by manual analysis (Figure 1—figure supplement 1). The total points landing on each region was used to calculate cardiac areas for each section and, using the known distance between sections, Cavalieri’s principle was applied to calculate cardiac volumes.
 
-## qPCR and RNA sequencing
+### qPCR and RNA sequencing
 
 Cardiac RNA from male fetuses was extracted using a Qiazol/miRNeasy mini kit protocol (Qiagen, Hilden, Germany). Library preparation for mRNA sequencing followed manufacturer protocol of TruSeq RNA Library Preparation kit (Illumina, Cambridge, UK). Libraries were sequenced using a HiSeq 4,000 platform and raw reads were mapped to mouse genome through bowtie v1.2.3. For RT-qPCR, RNA was reverse-transcribed using a High-Capacity cDNA Reverse Transcription Kit (Thermo-Fisher). QPCR reactions were prepared using SYBR Green Master Mix (Thermo-Fisher) and specific primers. Fold changes were calculated by the 2−ΔΔCT method using Hprt and Sdha as housekeeping genes. Primers and oligonucleotides used in this study are listed in Table 1.
 
-## Untargeted lipidomics – preparation of samples
+**Table 1.**
+ Sequence-specific primers for qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer (5’ to 3’)</th>
+      <th>Reverse primer (5’ to 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acot2</td>
+      <td>GCCACCCCGAGGTAAAAGGA</td>
+      <td>CCACGACATCCAAGAGACCAT</td>
+    </tr>
+    <tr>
+      <td>Cpt1</td>
+      <td>TCCGCTCGCTCATTCCGC</td>
+      <td>TGCCATTCTTGAATCGGATGAACT</td>
+    </tr>
+    <tr>
+      <td>Cpt2</td>
+      <td>TCGTACCCACCATGCACTAC</td>
+      <td>GTTTAGGGATAGGCAGCCTGG</td>
+    </tr>
+    <tr>
+      <td>Mvk</td>
+      <td>CGGGGCAGAAGTCTCAGAAG</td>
+      <td>TTCTCAAGTTCAAGGCCGCT</td>
+    </tr>
+    <tr>
+      <td>Ppara</td>
+      <td>TGCAGCCTCAGCCAAGTTGAA</td>
+      <td>CCCGAACTTGACCAGCCACA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Untargeted lipidomics – preparation of samples
 
 Solvents were purchased from Sigma-Aldrich Ltd (Dorset, UK) of at least HPLC grade and were not purified further. Lipid standards were purchased from Avanti Polar lipids (Alabaster, AL; via Instruchemie, Delfzijl, NL) and C/D/N/ isotopes (Quebec, Canada; via Qmx Laboratories, Thaxted, UK) and used without purification. Consumables were purchased from Sarstedt AG & Co (Leicester, UK) or Wolf Labs (Wolverhampton, UK).
 
 The methods for preparing samples and extracting lipids used was described recently (Furse et al., 2020). Briefly, frozen whole fetal hearts were homogenised in a stock solution of guanidine and thiourea (6 M/1·5 M; 20× w/v) using mechanical agitation. The dispersions were freeze-thawed once before being centrifuged (12,000× g, 10 min). The supernatant was collected and frozen (–80 °C) immediately. The thawed dispersion (60 µL) and serum aliquots (20 µL) were injected into wells (96 w plate, Esslab Plate+, 2·4 mL/well, glass-coated) followed by internal standards (150 µL, mixture of Internal Standards in methanol), water (500 µL) and DMT (500 µL, dichloromethane, methanol and triethylammonium chloride, 3:1:0·005). The mixture was agitated (96-channel pipette) before being centrifuged (3·2× g, 2 min). A portion of the organic solution (20 µL) was transferred to an analytical plate (96 w, glass coated, Esslab Plate+) before being dried under Nitrogen gas. The dried films were re-dissolved (TBME, 30 µL/well) and diluted with a stock mixture of alcohols and ammonium acetate (100 µL/well; propan-2-ol: methanol, 2:1; CH3COO.NH4, 7·5 mM). The analytical plate was heat-sealed and run immediately.
 
-## Untargeted lipidomics – direct infusion mass spectrometry
+### Untargeted lipidomics – direct infusion mass spectrometry
 
 Samples were directly infused into an Exactive Orbitrap (Thermo, Hemel Hampstead, UK), using a TriVersa NanoMate (Advion, Ithaca, US) for Direct Infusion Mass Spectrometry (Harshfield et al., 2019; Furse et al., 2020). A three-part analytical method was used (Furse et al., 2020; Furse and Koulman, 2019) in which samples were ionised in positive, negative, and then negative-with collision-induced-ionisation modes. The NanoMate infusion mandrel was used to pierce the seal of each well before an aliquot of the solution (15 μL) was collected with an air gap (1·5 μL). The tip was pressed against a fresh nozzle and the sample was dispensed using 0·2 psi (N2 (g)). Ionisation was achieved at a 1·2 kV. The Exactive was set to start acquiring data 20 s after sample aspiration began. The data were collected with a scan rate of 1 Hz (resulting in a mass resolution of 65,000 full width at half-maximum (fwhm) at 400 m/z). After 72 s of acquisition in positive mode the NanoMate and the Exactive switched to negative mode, decreasing the voltage to −1·5 kV. The spray was maintained for another 66 s, after which Collision-Induced Dissociation (CID) commenced, with a mass window of 50–1000 Da, and was stopped after another 66 s. The analysis was then stopped, and the tip discarded before the analysis of the next sample began. The sample plate was kept at 10 °C throughout the data acquisition. Samples were run in row order.
 
@@ -156,34 +595,34 @@ Raw high-resolution mass-spectrometry data were processed using XCMS (https://ww
 
 For the detection of fatty acids of phospholipids only, a deviations threshold of 12·5ppm was used for processing of the negative mode with CID, on a list of fatty acids of chain length 14–36 with up to six double bonds and/or one hydroxyl group. All signals greater than noise were carried forward. In this method the lipidome is not separated chromatographically but measured only by mass-to-charge ratio and therefore cannot distinguish lipids that are isobaric (identical molecular mass) in a given ionisation mode. In this study, the identification of the lipids was based on their accurate mass in positive ionisation mode according to Lipid Maps structure database (Sud et al., 2007). In case of multiple isobars per lipid signal, the likely identification was predicted according to the biological likelihood, full list of possible annotations can be found in the supplementary information (Supplementary files 1 and 2). Signals consistent with fatty acids were found in 3/3 samples checked manually. Relative abundance was calculated by dividing each signal by the sum of signals for that sample, expressed per mille (‰). Zero values were interpreted as not measured and for the remaining non-assigned values, we used a known single component projection based on nonlinear iterative partial least squares algorithm (Nelson et al., 1996) to impute values and populate the dataset. Data was normalised using quantile Cyclic Loess method and statistical calculations were done on these finalised values.
 
-## Acyl-carnitine analysis – preparation of samples
+### Acyl-carnitine analysis – preparation of samples
 
 All solvents and additives were of HPLC grade or higher and purchased from Sigma Aldrich unless otherwise stated.
 
 The protein precipitation liquid extraction protocol was as follows: the tissue samples were weighed (between 1.4–11.0 mg) and transferred into a 2 mL screw cap Eppendorf plastic tubes (Eppendorf, Stevenage, UK) along with a single 5 mm stainless steel ball bearing. Immediately, 400 µL of chloroform and methanol (2:1, respectively) solution was added to each sample, followed by thorough mixing. The samples were then homogenised in the chloroform and methanol (2:1, respectively) using a Bioprep 24–1004 homogenizer (Allsheng, Hangzhou City, China) run at speed; 4.5 m/s, time; 30 seconds for two cycles. Then, 400 µL of chloroform, 100 µL of methanol, and 100 µL of the stable isotope labelled acyl-carnitine internal standard; containing butyryl-d7-L-carnitine (order number: D-7761, QMX Laboratories Ltd. (QMX Laboratories Ltd, Essex, United Kingdom)) and hexadecanoylLcarnitine-d3 (order number: D-6646, QMX Laboratories Ltd.) at 5 µM in methanol was added to each sample. The samples were homogenised again using a Bioprep 24–1004 homogenizer run at speed; 4.5 m/s, time; 30 seconds for two cycles. To ensure fibrous material was diminished, the samples were sonicated for 30 minutes in a water bath sonicator at room temperature (Advantage-Lab, Menen, Belgium). Then, 400 µL of acetone was added to each sample. The samples were thoroughly mixed and centrifuged for 10 minutes at ~20,000 g to pellet any insoluble material at the bottom of the vial. The single-layer supernatant was pipetted into separate 2-mL screw cap amber-glass autosampler vials (Agilent Technologies, Cheadle, United Kingdom); being careful not to break up the solid pellet at the bottom of the tube. The organic extracts (chloroform, methanol, acetone composition; ~ 7:3:4, ~ 1.4 mL) were dried down to dryness using a Concentrator Plus system (Eppendorf, Stevenage, UK) run for 60 min at 60°C. The samples were reconstituted in 100 µL of water and acetonitrile (95:5, respectively) then thoroughly mixed. The reconstituted sample was transferred into a 250 μL low-volume vial insert inside a 2-mL amber glass auto-sample vial ready for liquid chromatography with mass spectrometry detection (LC-MS) analysis.
 
-## Acyl-carnitine analysis – liquid chromatography mass spectrometry
+### Acyl-carnitine analysis – liquid chromatography mass spectrometry
 
 Full chromatographic separation of acyl-carnitines was achieved using Shimadzu HPLC System (Shimadzu UK Ltd., Milton Keynes, United Kingdom) with the injection of 10 µL onto a Hichrom ACE Excel 2 C18-PFP column (Hichrom Ltd., Berkshire, United Kingdom); 2.0 µm, I.D. 2.1 mm X 150 mm, maintained at 55 °C. Mobile phase A was water with 0.1% formic acid. Mobile phase B was acetonitrile with 0.1% formic acid. The flow was maintained at 500 µL/min through the following gradient: 0 minutes_5% mobile phase B, at 0.5 minutes_100% mobile phase B, at 5.5 minutes_100% mobile phase B, at 5.51 minutes_5% mobiles phase B, at 7 minutes_5% mobile phase B. The sample injection needle was washed using acetonitrile and water mix (1:1, respectively). The mass spectrometer used was the Thermo Scientific Exactive Orbitrap with a heated electrospray ionisation source (Thermo Fisher Scientific, Hemel Hempstead, UK). The mass spectrometer was calibrated immediately before sample analysis using positive and negative ionisation calibration solution (recommended by Thermo Scientific). Additionally, the heated electrospray ionisation source was optimised to ensure the best sensitivity and spray stability capillary temperature; 300°C, source heater temperature; 420°C, sheath gas flow; 40 (arbitrary), auxiliary gas flow; 15 (arbitrary), spare gas; 3 (arbitrary), source voltage; 4 kV. The mass spectrometer scan rate set at 2 Hz, giving a resolution of 50,000 (at 200 m/z) with a full-scan range of m/z 150–800 in positive mode.
 
 Thermo Xcalibur Quan Browser data processing involved the integration of the internal standard extracted ion chromatogram (EIC) peaks at the expected retention times: butyryl-d7-L-carnitine ([M + H]+, m/z 239.19827 at 1.20 min) and hexadecanoyl-L-carnitine-d3 ([M + H]+, m/z 403.36097 at 4.20 min). The data processing also involved the integration of the targeted individual acyl-carnitine species (m/z was [M + H]+) at their expected retention time allowing for a maximum of ±0.1 min of retention time drift: any retention time drift greater than ±0.1 min resulted in the exclusion of the analyte leading to a ‘Not Found’ result (i.e. zero concentration). Through the Thermo Xcalibur Quan Browser software the responses of the analytes were normalised to the relevant internal standard response (producing area ratios), these area ratios corrected the intensity for any extraction and instrument variations. The area ratios were then blank corrected where intensities less than three times the blank samples were set to a ‘Not Found’ result (i.e. zero concentration). The accepted area ratios were then multiplied by the concentration of the internal standard (5 µM) to give the analyte concentrations. For tissue samples, the calculated concentrations (µM) of the analytes were then divided by the amount of tissue (in mg) used in the extraction protocol to give the final results in µM per mg of tissue extracted (µM/mg).
 
-## Fatty acid oxidation assay
+### Fatty acid oxidation assay
 
 A fatty acid oxidation assay was adapted from Huynh et al., 2014. Briefly, cardiomyocytes isolated from fetal hearts were dispersed in primary cardiomyocyte medium and pre-incubated in standard culturing conditions. After 24 hr, filter paper saturated with 1 M NaOH was placed inside sealed wells containing the primary cultures and cells were incubated in 12.5 mM HEPES, 0.3% fatty acid-free BSA, 1 mM L-carnitine, 100 µM oleic acid medium containing 0.4 μCi/ml 14C-oleate (PerkinElmer) for 3 hr at 37 °C. Hydrochloric acid was injected into wells and the solution was incubated for an extra hour at room temperature. Disintegrations per minute from CO2 were measured in the filter paper to determine oleate oxidation using a TRI-CARB 5110TR Liquid Scintillation Counter system (PerkinElmer).
 
-## Sample-size estimation
+### Sample-size estimation
 
 Due to the untargeted high-throughput aspect of this study and to the scarcity of available data into fetal lipidomics, the use of a power analysis accounting for changes in fetal cardiac lipids to predict sample size was challenging. The number of animals used in the present study was therefore predicted using previously obtained data on histological assessment of the ratio left ventricle:lumen in the male fetal heart, and on the extensive track record of published studies from our research group using the same maternal obesity model employed in the current study. According to an a priori unpaired t-test power calculation, an n equal or greater than five would be required to achieve significance set at α < 0.05, 80% power. Also, according to the resource equation, an n equal to or greater than six results in more than 10 degrees of freedom, and is therefore adequate. We then concluded that a sample size greater than six would be necessary to show any significant changes in our study.
 
-## Biometric markers, fatty acid oxidation, and qPCR – statistical analysis
+### Biometric markers, fatty acid oxidation, and qPCR – statistical analysis
 
 Details of statistical analysis (statistical tests used, number of animals, identification of outliers and precision measures) can be found in the figure legends and in the figure source data. Simple Student t-test was employed to identify statistically significant differences in biometric, stereological, fatty acid oxidation and qPCR analyses, comparing control and obese groups in a sex-dependent manner. Cell size statistical analysis was conducted using linear mixed-effects model followed by Tukey’s post-hoc test. Factorial ANOVA was employed to test offspring sex and maternal status influence on individual mRNA levels.
 
-## RNASeq – statistical analysis
+### RNASeq – statistical analysis
 
 Reads per Kilobase of transcript per Million mapped reads (RPKM) were produced from RNA Sequencing raw output and statistically analysed through likelihood ratio test using edgeR version 3.36.0. Core analysis in Ingenuity Pathway Analysis application (IPA – Qiagen) was used in data interpretation and pathway enrichment. A p-value cut-off of 0.01 was used to determine genes to be mapped to IPA networks.
 
-## Untargeted and targeted lipidomics – statistical analysis
+### Untargeted and targeted lipidomics – statistical analysis
 
 Uni- and multivariate statistical models were created using R version 3.6.3. Multiple Shapiro-Wilk tests were carried out to identify if individual variables were normally distributed. Multiple t-tests were used to identify significant regulation of individual lipid species, and multiple t-tests or Mann-Whitney tests were used to identify individual lipid classes differences between groups when individual variables were normally or non-normally distributed. A multivariate partial-least square discriminatory analysis (PLS-DA) was also employed to identify Variable Importance in the Projection (VIP) and determine individual lipids that maximise the model classification ability. For individual lipid species, variables were deemed significantly regulated and relevant when p-value < 0.05 and vip score >1. Individual lipid classes, acyl-carnitines and fatty acids were significantly regulated when p< 0.05. Factorial ANOVA was also used to test offspring sex and maternal status influence over individual lipid classes, and pools of fatty acids and acyl-carnitines. Prior to statistical analysis, outlier samples were identified through a combination of frequency distribution analysis, lipid classes frequency investigation, PCA and hierarchical clustering analysis. Samples with lower than 66.7% of lipid signals detected or deemed as outliers in all the aforementioned analyses failed the quality control for mass spectrometry and were excluded from the datasets and from further statistical tests. Lipid ontology enrichment analysis was carried out using LION (Molenaar et al., 2019). Lipid traffic analysis was conducted following previously described methods (Furse et al., 2021).

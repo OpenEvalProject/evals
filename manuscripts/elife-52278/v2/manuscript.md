@@ -22,6 +22,18 @@ In order to represent complex stimuli, principle neurons of associative learning
 
 The environmental stimuli animals encounter on a day-to-day basis are extraordinarily numerous. Olfactory systems have evolved to cope with this diversity by maximizing the chemicals that can be detected, through the amplification of chemosensory receptor gene families, and through combinatorial coding, which expands representation capacity from the number of receptors in the genome to the number of combinations among them. The arthropod mushroom body is a cerebellum-like associative learning structure with a well-understood role in representing sensory stimuli and associating sensory and contextual cues (Farris, 2011; Hige, 2018; Kennedy, 2015). While mushroom bodies of different insect species process information from a variety of sensory modalities, 90% of Kenyon cell inputs in Drosophila melanogaster are olfactory (Zheng et al., 2018). The mushroom body of each hemisphere has ~2000 Kenyon cells (KCs), which are two synapses from the sensory periphery. Each olfactory receptor neuron in the antennae of adult flies expresses one or two of 75 olfactory receptor genes encoded in the genome. The axons of neurons expressing the same receptor converge on one of 54 glomeruli in the antennal lobe. ~150 uniglomerular projection neurons (PNs) have dendrites in one of the 54 glomeruli and carry signals about distinct receptor channels to two regions of the protocerebrum, the lateral horn and the mushroom body calyx (Figure 1A). PN inputs to the lateral horn are thought to underlie innate behaviors, while inputs to the mushroom body allow flexible learned association of odor stimuli with behavioral context (Chin et al., 2018; de Belle and Heisenberg, 1994; Fişek and Wilson, 2014; Jefferis et al., 2007; Ruta et al., 2010).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig1-v2.jpg)
+
+**Figure 1.:** (A) Image (left) and models (right) of olfactory PNs and KCs in the adult fly brain. PNs (red) receive input from olfactory sensory neurons in the antennal lobe (AL) and project to the mushroom body calyx and the lateral horn (LH). In the calyx, PNs synapse with KCs (green) in microglomeruli. Dashed box at left indicates region shown in B. (B) Maximum intensity projections of confocal stacks of the brains of adult flies subjected to HU treatment or sham treatment just after larval hatching. PNs labeled red using GH146-Gal4, KCs green using MB247-LexA. White outlines indicate the extent of the MB calyx in each sample; dashed boxes are regions shown magnified below. (C, D) Relationship between number of KCs and calyx (C) or lateral horn (D) maximum cross-sectional area in HU treated (blue, red dots) and sham treated (gray dots) MBs. Treated samples are separated by presence (red) or absence (blue) of lNB/BAlc progeny. Here and throughout, each dot is one hemisphere. Purple trend line in (C) combines all HU-treated samples. (E) Relationship between KC number and GH146+ bouton number in brains of HU- and sham-treated animals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Correlation between KC number and calyx volume for the samples shown in Figure 1B and Figure 1—video 1. (B) Correlation between calyx maximum cross-sectional area and calyx volume for samples shown in Figure 1B and Figure 1—video 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** High-resolution images of calyx boutons (A) and example of bouton counting for a single confocal plane (B). Each yellow dot was scored as a bouton.
+
 In the mushroom body calyx, the presynaptic sites of individual olfactory PNs cluster into multi-synaptic boutons, with PNs of different types (innervating different glomeruli) producing consistent, characteristic bouton numbers (Caron et al., 2013; Zheng et al., 2018). Each PN makes 1–20 boutons, and each bouton is wrapped by claws of ~10 KCs, such that each PN sends output to between 10 and 200 of the 2000 KCs (Leiss et al., 2009). KCs in turn have 3–10 (average of five) claws, which innervate boutons of various PNs (Caron et al., 2013; Gruntman and Turner, 2013; Zheng et al., 2018). Each KC therefore receives innervation from only a minority of the 54 incoming sensory channels, and different individual KCs receive different and relatively unstructured combinations of inputs (Caron et al., 2013; Eichler et al., 2017; Honegger et al., 2011; Murthy et al., 2008; Zheng et al., 2018). The sets of inputs to individual cells vary across hemispheres and likely across individuals (Caron et al., 2013; Eichler et al., 2017; Honegger et al., 2011; Murthy et al., 2008). Associative learning mechanisms operate at KC output synapses, in the mushroom body axonal lobes, to re-weight KC outputs depending on experience and shift animal behavior (Cohn et al., 2015; Handler et al., 2019; Hige et al., 2015; Owald and Waddell, 2015).
 
 The mushroom body is a simplified and experimentally tractable example of an expansion layer, in which a set of sensory inputs is mapped combinatorially onto a much larger set of postsynaptic cells, increasing the dimensionality of sensory representations. Like the diversification of antibodies by V(D)J recombination, the diversification of sensory input combinations across KCs is thought to allow them to represent arbitrary odors, regardless of evolutionary experience. Neurons of many other expansion layers receive similarly few, or sparse, sensory inputs. These include the cerebellum proper, the electric organ of mormyrid fish, the dorsal cochlear nucleus, and the hippocampus (Bell et al., 2008; Keene and Waddell, 2007; Mugnaini et al., 1980). Cerebellar granule cells have an average of four large, claw-shaped dendrites that are innervated by clustered mossy fiber presynaptic sites in mossy fiber rosettes. The similar convergence ratios in the cerebellum and mushroom body (4 or 5 sensory inputs, respectively, per expansion layer cell) are thought to maximize dimensionality of sensory representations by optimizing the tradeoff between stimulus representation, which is maximized when expansion layer neurons receive large combinations of inputs, and stimulus separation, which is maximized when expansion layer neurons receive few inputs (Albus, 1971; Cayco-Gajic et al., 2017; Litwin-Kumar et al., 2017; Marr, 1969). The number of sensory inputs received by expansion layer neurons is thus a crucial parameter in sensory coding. How the density of inputs to expansion layer neurons is developmentally programmed is not understood in any system.
@@ -34,7 +46,7 @@ We sought to ask how convergence ratio is set in the mushroom body calyx. By bid
 
 In order to ask whether presynaptic olfactory PNs or postsynaptic KCs (or both) dictate sparse wiring density in the mushroom body calyx, we used a variety of methods to manipulate the ratio between pre- and post-synaptic cells during embryonic or larval stages, well before adult connections form in the pupa. Through a combination of genetic and pharmacological interventions, we were able to vary both cell populations up and down. In these four conditions, we then examined gross calyx anatomy in adult animals and, when possible, the processes of individual PNs and KCs. These experiments allowed us to ask which population of neurons would adjust its production of processes in response to the perturbation. As we will describe, in all four cases, PNs adjusted their repertoire of presynaptic sites while KC claw number remained similar to that of unmanipulated animals.
 
-## Projection neurons reduce bouton number when Kenyon cell number is reduced
+### Projection neurons reduce bouton number when Kenyon cell number is reduced
 
 First, we sought to reduce the KC population, to ask whether remaining cells would increase their claw number to fully innervate incoming PN boutons, or whether PNs would scale down their boutons to the KC repertoire. To do this, we took advantage of existing pharmacological techniques for KC neuroblast ablation (de Belle and Heisenberg, 1994; Sweeney et al., 2012). In the fly, four KC neuroblasts in each hemisphere produce ~500 KCs each (Ito et al., 1997). While most neuroblasts pause their divisions for the first 8 hr after larval hatching (ALH), the KC neuroblasts continue to divide; if larvae are fed the mitotic poison hydroxyurea (HU) during this time, KC neuroblasts can be specifically ablated (de Belle and Heisenberg, 1994). In these animals, lacking all KCs that receive olfactory inputs, olfactory learning is abrogated while innate olfactory behaviors are spared (de Belle and Heisenberg, 1994). The uniglomerular, excitatory olfactory PNs that innervate the MB calyx are produced by two neuroblasts, called lNB/BAlc and adNB/BAmv3 . Besides the KC neuroblasts, lNB/BAlc is the only other neuroblast in the fly central nervous system dividing from 0 to 8 hr ALH and is thus also susceptible to HU ablation (Das et al., 2013; Ito and Hotta, 1992; Lovick et al., 2016; Lovick and Hartenstein, 2015; Stocker et al., 1997; Sweeney et al., 2012).
 
@@ -48,13 +60,29 @@ We then examined calyx anatomy in animals with intermediate populations of KCs, 
 
 To score KC clones directly, we developed a strategy to label only the latest-born, ‘αβ core’ KCs. The somata and principle neurites of these late-born cells remain clustered in the adult, allowing us to count KC clones by counting groups of labeled soma or axon tracts as they leave the calyx (Figure 2A,B). Again, we found that calyx size tracked KC clone number, and that the presence or absence of the PN progeny of lNB/BAlc did not predict calyx size (Figure 2C). KC loss could reduce PN bouton number because PNs die or fail to be born when lacking KC contacts or trophic support. We thus counted the number of anterodorsal PNs (derived from adNB/BAmv3) and ventrolateral PNs (derived from lNB/BAlc) in this cohort. The number of anterodorsal PNs was not reduced in animals with some or all KC neuroblasts ablated, and the number of ventrolateral PNs was binary rather than graded, suggesting that vlPN number is determined by whether lNB/BAlc succumbed to HU, rather than by the KC complement (Figure 2D,E). These results suggest that PN neurogenesis and survival do not require KC signals. Like γd KCs, a few PNs derived from lNB/BAlc remained in adults; these likely represent PNs born embryonically from lNB/BAlc.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig2-v2.jpg)
+
+**Figure 2.:** (A) Maximum intensity projections of confocal stacks of the anterior (left) and posterior (right) of HU and sham-treated animals. GH146 labels PNs (red). 58F02 labels late-born αβ ‘core’ KCs (green). Cholinergic neurons labeled with ChAT immunostaining (blue). Numbers indicate PN and KC clones. Anterior and posterior images are of the same brains. (B) Confocal slices of the mushroom body calyx in sham-treated (right) and various HU treated (left) hemispheres. ChAT signal highlights bouton structures, while 58F02 signal allows scoring of the number of KC clones. Numbered neurite bundles innervate the pedunculus when traced through the stack, while green signals not numbered derive from non-KC cell types labeled by 58F02. (C–E) Relationship between KC clone number and maximum calyx cross-sectional area (C), and number of anterodorsal (D) and ventrolateral (E) PNs. (F–H) Example images (F) and quantification (G, H) of MB calyx boutons on the VM6 PN, labeled by 71D09 (red). KCs labeled by MB247 (green). Numbers in (F) indicate counted boutons, and these two calyces are displayed at the same scale. Dashed vertical lines in (G) indicate cutoff between HU-treated calyces similar to controls and those affected by the manipulation. Significance, one-way ANOVA with correction for multiple comparisons. Here and throughout, letters above scatterplots indicate statistically distinguishable versus undistinguishable groups by ANOVA. Black horizontal bars represent medians. (I–K) Example images (I) and quantification (J, K) of GFP photoactivation of individual KCs in HU treated or sham brains. PNs labeled by 60A10 and αβ ‘core’ KCs by 58F02. Examples in (I) show two hemispheres of the same HU treated brain. Note that calyx area is larger in brains imaged ex vivo by two photon (as in I-K) versus fixed, stained, and imaged by confocal (as in F-H). Quantification in (J, K) includes αβ KCs labeled as shown in (I) and those labeled as shown in Figure 2—figure supplement 3; quantification of γ KCs labeled by both methods is shown in Figure 2—figure supplement 3. lNB/BAlc status was scored by examining PN somata near the antennal lobe, as in (A). (L) Model of the effect of KC loss on calyx development. Remaining KCs exhibit wild-type numbers of claws, while PNs reduce their bouton repertoire, reducing the size of the calyx.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distribution of HU effects for one batch of treated animals. Genotype as in Figure 2A. (B) Relationship of KC neuroblast state across hemispheres. Jitter was added to make each sample apparent.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Example maximum intensity projections of two photon images (A, B) and quantification (C, D) of PNs labeled by 42D01-Gal4 and highlighted by GFP photoactivation. Each panel shows posterior (A) and anterior (B) images of the same brain, where anterior images show single photoactivated PN somata and glomerular innervation in the antennal lobe, as well as mushroom body lobes, and posterior images show boutons of the same PN in the mushroom body calyx. Speckles are autofluorescence, large yellow blobs are photodamage incurred during imaging. Black horizontal bars in (C,D) represent medians.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Example maximum intensity projections of two photon images of KCs labeled by MB247-LexA and highlighted by GFP photoactivation. Each panel shows posterior (A) and anterior (B) images of a single brain, where anterior images show KC innervation of the mushroom body axonal lobes, as well as the antennal lobe, and posterior images show claws of the same KC in the mushroom body calyx, as well as PN boutons. Axonal lobe innervation allowed us to assign KC type, as noted. Speckles are autofluorescence, large yellow blobs are photodamage incurred during imaging. The left hemisphere of the HU-treated sample is fully ablated and lacks lNB/BAlc progeny, while the right hemisphere is partially ablated and retains lNB/BAlc. (C, D) Quantification of claws of γ KCs labeled using the strategy shown here or through expression of PA-GFP only in γ KCs, driven by 89B01-Gal4. lNB/BAlc status scored by examining GH146-Gal4 or 60A10-LexA, as shown in Figure 2A. Black horizontal bars represent medians.
+
 Reduction in the number of PN boutons in the calyx could occur because individual PNs quantitatively reduce their bouton production. To ask whether individual PNs alter their production of presynaptic boutons as the KC repertoire changes, we identified two methods to label single PNs. We focused on anterodorsal PNs, as these are not susceptible to ablation of lNB/BAlc. First, we used 71D09-Gal4 to label the anterodorsal VM6 PN (Ward et al., 2015) and then subjected labeled animals to HU ablation. Because we found a linear relationship between KC number and calyx area (Figures 1C, 2C), we used calyx area as a proxy for KC number. While VM6 usually produces ~10 boutons, we found only ~5 boutons in animals with reduced calyx size, and 0–1 bouton in animals with severe calyx reductions, likely lacking all olfactory KCs (Figure 2F–H). These results suggest that individual PNs do reduce their bouton production as the KC complement is reduced, and that this reduction is graded rather than binary (i.e. in animals with some but not all KC neuroblasts ablated, bouton number is in between 0 and the wild type number). To characterize additional PNs, we expressed photoactivatable GFP under control of R42D01-Gal4, which labels ~10 anterodorsal PNs innervating the VM3 and VM4 glomeruli. We photoconverted individual somata using two photon microscopy (Figure 2—figure supplement 2). Though bouton counts were somewhat more variable than for VM6 as this strategy labels different types of PNs with different characteristic bouton numbers, we again found a correlation between KC loss and bouton reduction (Figure 2—figure supplement 2).
 
 The graded reductions in bouton number we observed for different PN types would preserve the relative representation of these odor channels in the calyx. We also note that the range of bouton numbers we observed are consistent with adjustments to compensate for the presence or absence of ventrolateral PNs. For example, most VM6 neurons innervating a calyx derived from 1 KC neuroblast produced between 3 and 7 boutons, as compared to the median of 10 in unperturbed animals. If KCs are reduced by ¾ without loss of lNB/BAlc, perfect compensation by PNs would reduce boutons from 10 to 2.5. If lNB/BAlc was also lost, perfect compensation would reduce boutons from 10 to 5. These predicted values are similar to the bouton range we observed experimentally.
 
 Finally, we sought to ask if KC claw number changes as KC number changes. We used GFP photoactivation to label individual KCs in animals subjected to HU ablation. The different KC classes have different median claw numbers: γ KCs have ~7 claws, αβ cells have ~5 claws, and α’β’ KCs have ~3 claws (Caron et al., 2013); we therefore used two different strategies to label individual KCs in animals subjected to HU ablation, both of which allow us to assign KC type. First, we expressed PA-GFP broadly in Kenyon cells using MB247-Gal4, and assigned KC type by imaging the axonal lobe innervation of photoactivated cells (Figure 2—figure supplement 3). Second, we expressed PA-GFP only in αβ or γ KCs using 58F02-Gal4 (Figure 2I) and 89B01-Gal4, respectively. Combining data from these two methods, we found no change in claw number on individual αβ KCs (Figure 2J–K) or γ KCs (Figure 2—figure supplement 3) as the KC population was reduced. From these experiments, we conclude that PNs reduce their bouton production on a cell-by-cell basis as the KC population shrinks, while KC claw number is unaffected by the size of the KC population (model, Figure 2L).
 
-## Olfactory projection neurons increase bouton repertoire as Kenyon cell number increases
+### Olfactory projection neurons increase bouton repertoire as Kenyon cell number increases
 
 In order to assess whether PNs can vary their presynaptic bouton number bidirectionally, we next created a method to specifically amplify the KC population. Recent work has suggested that ectopic or supernumerary populations of neurons can integrate into a variety of fruit fly neural circuits (Meng et al., 2019; Pop et al., 2019; Prieto-Godino et al., 2019; Seroka and Doe, 2019; Shaw et al., 2018), and previous studies identified a mutant, called mushroom body defect (mud) in which the mushroom body and other brain areas are dramatically expanded (Guan et al., 2000; Prokop and Technau, 1994). Mud/NuMA is a spindle orientation protein that ensures neuroblasts divide asymmetrically to produce one neuroblast and one differentiating neuron or neural progenitor (Siller et al., 2006). In mud mutants, neuroblasts occasionally divide symmetrically to produce two neuroblasts, amplifying the progeny of that neuroblast. To restrict amplification to KCs, we drove UAS-mud-RNAi (BL 35044) using OK107-Gal4, which is expressed in KC neuroblasts as well as in KCs (Liu et al., 2015). Importantly, in our RNAseq data from 45 hr APF and adult animals, we observe no expression of mud in PNs, KCs, or other brain cells, suggesting mud is not expressed in differentiating neurons (EJ Clowney, unpublished).
 
@@ -62,19 +90,47 @@ As OK107 labels mature KCs as well as KC neuroblasts, we included UAS-CD8GFP in 
 
 To test whether PNs increased boutons on a cell-by-cell basis in these animals, we labeled VM6 using 71D09-LexA, and PNs innervating DA1, VA1d, and DC3 using MZ19-QF. First, we observed no change in VM6 or MZ19+ cell numbers in brains with KC expansions (Figure 3E,H), suggesting that PN numbers do not increase as KC number increases. We observed no change in VM6 bouton numbers, perhaps because the VM6 PN already has a relatively large number of boutons (Figure 3H). In contrast, MZ19 cells increased their number of presynaptic boutons as the KC population expanded, from an average of 3.5 boutons per cells in the control genotype to an average of 4.75 boutons per cell in the KC-expansion genotype. In brains with measurably enlarged calyces, indicative of KC population expansion, MZ19+ boutons doubled (Figure 3D,F,G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig3-v2.jpg)
+
+**Figure 3.:** (A) Confocal slice of control calyx and calyx subjected to KC expansion by expression of mud-RNAi in KC neuroblasts via OK107-Gal4. GH146 labels PNs (red) and OK107 labels KCs (green). (B, C) Relationship between number of KCs and maximum calyx cross-sectional area (B) and PN bouton number (C) in control (gray) and KC neuroblast>mud RNAi hemispheres (red). (D) Maximum intensity projection of confocal stack of calyx bouton production by ~16 MZ19+ PNs (red) in control and KC neuroblast>mud RNAi. ChAT immunostaining (blue) highlights calyx extent. (E) Quantification of MZ19 cells in the two genotypes. Significance: unpaired t-test. Throughout this figure, black horizontal bars represent medians. (F, G) Relationship between maximum calyx cross-sectional area and MZ19 bouton production. Vertical dashed line indicates calyces larger than 2000 μm2,observed only in the experimental genotype. Significance: one-way ANOVA. (H) Boutons of the VM6 PN, labeled by 71D09-LexA, in control (gray) or brains subjected to KC expansion via OK107>mudRNAi (red). Every hemisphere contained one VM6 neuron in both genotypes except the three circled datapoints, which had two VM6 PNs. Significance: unpaired t-test. (I) Maximum intensity projection of two-photon stack of single KCs highlighted by GFP photoactivation (C3PA driven by OK107) in control or OK107>mudRNAi calyces. Position of out-of-plane somata in control image indicated by white circle. Red arrowheads indicate scored claws. (J, K) Quantification of claws of KCs labeled as in (I). Y axis is average number of claws per KC as multiple KCs were photoactivated in some samples. Significance: unpaired t-test; here and throughout, *: p<0.05, **: p<0.01, ***: p<0.001, ****: p<0.0001. (L) Model of the effect of KC expansion on calyx development. KCs retain normal claw numbers while PNs increase their bouton numbers, increasing calyx size.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** KC claw number in PA-GFP-labeled α’β’ KCs in control or KC-expansion genotype. Significance: unpaired t-test. Black horizonal bars represent medians.
+
 To rule out reductions in the number of claws per KC as the KC population expands, we expressed photoactivatable GFP under the control of OK107 in animals with UAS-mud-RNAi or control and subjected individual or small groups of KCs to photoactivation. We scored the number of claws per labeled KC in each calyx. As above, calyx size predicted KC number in these animals, so we used calyx size as a proxy for KC number. Rather than a decrease in claw number per KC in animals with expanded KC complements, we found a slight increase in claw number, from a median of 5 to a median of 6 claws. As different types of KCs produce different characteristic numbers of claws, this could represent a change in claw production, a change in the distribution of KC types in these animals, or bias in which KC types we labeled in expanded versus control brains. While we were unable to identify LexA lines to specifically label αβ or γ KCs in OK107>mudRNAi brains, we found a LexA line, R41C07, that labeled α’β’ KCs, and targeted these specifically for photoactivation (Figure 3—figure supplement 1). In these KCs of matched type, we found no change in KC claw number per cell, though we cannot rule out subtle differences. Together, these experiments suggest that in animals with an amplified KC complement, PNs dramatically increase their bouton production to match the KC population, while KCs may moderately increase, and do not reduce, their individual claw production.
 
-## Individual projection neurons decrease bouton number as the projection neuron population expands
+### Individual projection neurons decrease bouton number as the projection neuron population expands
 
 We have shown that olfactory PNs bidirectionally vary their presynaptic boutons to suit populations of KCs derived from 0 to 8 KC neuroblasts. To ask whether PNs can also vary their bouton production in response to changes in their own numbers, or in response to changes in the ratio between PNs and KCs that do not affect KC clone number, we identified methods to vary the PN population. We found that just as we could expand the KC population by knocking down mud in KC neuroblasts, we could expand the PN population by knocking down mud in PN neuroblasts. This strategy produced GH146-labeled PN complements of up to 600 cells, as compared to ~120 GH146-labeled PNs we counted in controls. While the PN neuroblast Gal4 we used, 44F03, can label both lNB/BAlc and adNB/BAmv3 progeny (Awasaki et al., 2014), we found that ventrolateral PNs were much more susceptible to expansion than anterodorsal PNs.
 
 Supernumerary PNs innervated the antennal lobe, causing a massive expansion of antennal lobe area (Figure 4A,C). The normal glomerular map in the AL appeared distorted, but glomerular divisions were still present. These PNs also projected to the calyx, observed by thickening of the PN axon tract crossing the calyx (red, Figure 4D), and increased the density of PN innervation of the lateral horn (Figure 4D), though not lateral horn area (Figure 4—figure supplement 1). However, there was no change in calyx area or total bouton number in these animals compared to wild type (Figure 4E–H). At a population level, the average number of boutons per PN was half that in controls (Figure 4I).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig4-v2.jpg)
+
+**Figure 4.:** (A) Maximum intensity projection of confocal stack of anterior of the brain of control or animal subjected to PN expansion by expression of mud-RNAi in PN neuroblasts via 44F03-Gal4. GH146 labels PNs (red) and ChAT staining highlights cholinergic neurons. (B, C) Relationship between PN number (measured by counting GH146+ cells, about 60% of the total PNs) and antennal lobe maximum cross-sectional area in control (gray) or PN neuroblast>mudRNAi hemispheres (red). Significance: unpaired t-test. Throughout this figure, black horizontal bars represent medians. (D) Maximum intensity projection of confocal stacks of the posteriors of the same brains shown in A. Excess PNs can be seen to project to the calyx, due to thickening of the axonal tract passing on top of the calyx (red), and produce increased innervation density in the lateral horn. (E–I) Relationship between PN number and maximum cross-sectional area of the calyx (E, F), PN bouton number (G, H), and ratio of ChAT+ boutons to GH146+ PNs (I) in control and PN neuroblast>mudRNAi brains. Significance: unpaired t-test. (J) Maximum-intensity projections of confocal stacks of antennal lobes (top) and calyces (bottom) of control and PN neuroblast>mudRNAi brains. MZ19+ PNs labeled red. Dashed outlines on anterior show antennal lobe extent; solid outline on anterior, groups of PN somata; solid outlines on posterior, calyx extent. (K–M) Quantification of MZ19+ boutons in control and PN neuroblast>mudRNAi brains. Dashed vertical line indicates 25 MZ19+ PNs, as controls seldom exceed this number. Significance: one-way ANOVA. (N) Model of the effect of increasing PN numbers on calyx development. As PNs increase, PNs reduce bouton production so that the overall number of boutons, and calyx size, stays similar to wild type.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Relationship between lateral horn maximum cross-sectional area and PN number in control (gray) and PN neuroblast>mudRNAi (red) brains. Significance: unpaired t-test. Throughout this figure, black horizontal bars represent medians. (C–E) Relationship between antennal lobe maximum cross-sectional area (proxy for PN number) and production of calyx boutons by the VM6 PN, labeled by 71D09. Dashed line indicates 8500 μm2, as antennal lobes larger than this were observed rarely in the control genotype. Significance: one-way ANOVA. In two experimental hemispheres, we observed no VM6 PN. In one hemisphere, we observed one VM6 PN with no boutons in the calyx. (F) VM6 boutons in calyces of brains containing different numbers of VM6 PNs. We observed more than one VM6 PN in 4/50 control and 9/50 PN neuroblast>mudRNAi hemispheres.
+
 To ask how small groups of PNs adjusted to PN expansion, we again used MZ19-QF, which labels 15–20 PNs in controls (Figure 4J,K). We counted MZ19+ cells and boutons in control versus animals of the expansion genotype (Figure 4K). As the expansion was highly variable and we rarely observed more than 25 MZ19+ cells in controls, we divided the expanded genotype into hemispheres with <25 PNs or ≥25 PNs. There was a modest but insignificant increase in MZ19+ boutons in the ≥25 PNs groups (Figure 4L), attributable to a strong and significant reduction of average number of boutons per PN (Figure 4M). Thus PNs scale down their individual bouton repertoire to compensate for increases in the size of the PN population. Like MZ19 PNs, the VM6 PN also maintained a stable number of total boutons as the PN population expanded (Figure 4—figure supplement 1). This was possible because the VM6 cell(s) had similar numbers of total boutons as the VM6 population expanded.
 
-## Projection neuron bouton expansion partially compensates for severe reductions in the projection neuron population
+### Projection neuron bouton expansion partially compensates for severe reductions in the projection neuron population
 
 In order to reduce the PN repertoire independent of KC number, we identified two Gal4 lines, VT033006 and VT033008, that label large complements of uniglomerular PNs in the adult (Figure 5A). We drove diphtheria toxin A (Berdnik et al., 2006) and fluorescent reporters under control of these lines in animals where additional PNs were labeled by GH146-LexA (Figure 5B,G). In each case, DTA eliminated all Gal4+ cells as well as additional GH146+ PNs, suggesting that these lines drive DTA expression in broader PN populations at earlier stages of development. Driving DTA under control of VT033008 reduced the total PNs labeled by VT033008 and/or GH146 by nearly half (Figure 5C), while VT033006>DTA reduced PNs labeled by VT03006 and/or GH146 by >90% (Figure 5H). PN labeling by VT033006 and VT033008, and cell loss when used to drive DTA, were already evident in third instar larvae, suggesting PNs are lost well before pupal calyx wiring (Figure 5—figure supplement 1). While PN dendrites have been shown to occupy glomerular territories in pupal stages before OSNs innervate the antennal lobe (Jefferis et al., 2004), we found that antennal lobes lacking the vast majority of uniglomerular PNs retained glomerular divisions. This suggests that these PNs may not be required for the formation of glomerular divisions in the adult antennal lobe.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig5-v2.jpg)
+
+**Figure 5.:** (A) Maximum-intensity projections of two-photon stacks of brains with VT033006 (left) and VT033008 (right) driving GFP. (B) Maximum intensity projection of confocal stack of antennal lobes of control (left) and VT033008>DTA (right) brains. VT033008+ cells shown in green, GH146+ PNs, which partially overlap with VT033008+ PNs, shown in red. (C) Quantitation of PNs positive for GH146, VT033008, or both in control and VT033008>DTA brains. All VT033008+ cells are ablated in this genotype. Significance: unpaired t-test. Throughout this figure, red horizonal bars represent medians. (D) Single confocal slice of control or VT033008>DTA calyx. Phalloidin signal shown in blue and ChAT+ boutons shown in red. (E, F) Quantification of calyx maximum cross-sectional area and bouton number in control and VT033008>DTA animals. Significance: unpaired t-test. (G) Maximum intensity projection of confocal stack of antennal lobes of control (left) and VT033006>DTA (right) brains. VT033006+ cells shown in green, GH146+ PNs, which partially overlap with VT033006+ PNs, shown in red. Green signals outside the antennal lobe in both conditions are autofluorescence. (H) Quantitation of PNs positive for GH146, VT033006, or both in control and VT033006>DTA brains. All VT033006+ cells are ablated in this genotype as well as most GH146+ PNs, even those that are not VT033006+ in the adult. Examination of ChAT+ neurites entering the calyx in VT033006>DTA brains suggests that up to 10 PNs may be labeled by neither VT033006 nor GH146, and that some of these may survive ablation. Significance: unpaired t-test. (I) Single confocal slice of control (left) or VT033006>DTA (right) calyx. KCs labeled using MB247-dsRed (shown green for continuity), ChAT+ boutons shown in red. (J–L) Quantification of the number of MB247+ KCs (J), calyx area (K), and ChAT+ boutons (L) in control or VT033006>DTA brains. Significance: unpaired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Maximum intensity projections of two photon stacks showing expression of VT033008-Gal4 (A) and VT033006-Gal4 (B) in third instar wandering larvae. Labeled cells are lost when these drivers are used to express DTA. The two samples in (A) were imaged and displayed using the same settings as one another, and the two samples in (B) were imaged and displayed using the same settings as one another. Red speckles in (B) are autofluorescence; GH146 signal is weak but detectable in nuclei of VT033006+ PNs in control but is lost in DTA samples. n = 3–5 per genotype.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Number of KCs (MB247-dsRed, RFP+) detected in three pooled control or three pooled VT033006>DTA brains dissociated and subjected to flow cytometry. Plots depict cells already gated as singlets positive for a DNA dye, dyeCycle Violet. Representative of two experiments.
 
 We measured maximum calyx cross-sectional area and bouton number across these conditions and found that in each case, the effect on the calyx was measurable but much less severe than the reduction in PN number. For VT033008>DTA, loss of nearly half the PNs yielded no change in calyx area and a 20% reduction in overall bouton number (Figure 5D–F). Remarkably, while we estimate that only ~10 PNs remain in VT033006>DTA animals (~7% the normal complement, Figure 5H), the number of boutons in the calyx was reduced by only half (Figure 5H,L). This suggests that individual PNs could have expanded their bouton production by as much as 6-fold. While remaining PNs sometimes appeared to make exuberant collections of boutons (e.g. Figure 6D), distortion of the antennal lobes in these animals prevented us from assigning identities to these spared PNs and comparing bouton numbers to matched individual PNs in controls.
 
@@ -84,7 +140,7 @@ We measured maximum calyx cross-sectional area and bouton number across these co
 
 This severe loss of inputs could lead to KC death. We therefore labeled and counted KCs in VT033006>DTA animals with severe PN loss. While we cannot rule out a small reduction in KC complement, at least 80% of KCs remained in these brains. We also subjected control and VT033006>DTA brains to flow cytometry and found that PN ablation brains had at least 85% as many KCs as did control brains (Figure 5—figure supplement 2).
 
-## Projection neuron insufficiency has little effect on Kenyon cell claw number
+### Projection neuron insufficiency has little effect on Kenyon cell claw number
 
 We expected that while KC claw number was largely invariant in the face of increases and decreases of the KC population, KCs would be forced to reduce their claw number when PN bouton production was reduced by 50%, as in VT033006>DTA animals. We therefore compared individual KCs in these animals versus controls. As different KC types produce different numbers of claws in wild type, we sought to simplify the analysis by labeling only a single KC type. To do this, we targeted Texas red dextran dye electroporation to the tips of the mushroom body α lobes, which are innervated by αβ KCs (Figure 6A). This allowed us to label 1–12 KCs per calyx. We could discern discrete dye-labeled claws and somata in animals with eight or fewer KCs labeled, and restricted our analyses to these samples (Figure 6B–D). For each hemisphere we counted labeled somata and claws, generating one average value, claws per labeled KC, per separable group of cells (Figure 6F). Surprisingly, despite 90% reduction in the number of PNs and 50% reduction in their boutons, we observed no reduction in claw number per KC.
 
@@ -92,11 +148,19 @@ Do these enduring claws receive inputs? While labeled KCs in VT033006>DTA brains
 
 A recent study in the Drosophila larval body wall found that neurons manipulated to produce excess dendrites can obtain input from atypical presynaptic partners (Tenedini et al., 2019). In wild type animals, 10% of bouton inputs to Kenyon cells in the main (olfactory) calyx are from gustatory or thermal modalities (Caron et al., 2013; Eichler et al., 2017; Frank et al., 2015; Kirkhart and Scott, 2015; Zheng et al., 2018). It is possible that thermal or gustatory neurons projecting to the calyx could have also expanded their production of boutons to make up for the losses of olfactory PNs. We cannot yet determine whether the excess KC claws observed in this condition get inputs from PN boutons, from APL, or from some other source. Nevertheless, these data suggest that KCs are inflexible in their production of claws, even in the face of severe reduction of their typical, favored presynaptic partners.
 
-## Developmental plasticity preserves sparse odor coding despite perturbations to cell populations
+### Developmental plasticity preserves sparse odor coding despite perturbations to cell populations
 
 The disparate and numerous strategies we used above to vary the ratio between PNs and KCs all produced the same result, that PNs adjusted to changes in PN::KC ratio by altering their presynaptic boutons, while the distribution of KC claw numbers changed little even when perturbations to PNs were so severe as to prevent production of the normal bouton complement. This finding suggests that developmental mechanisms prioritize the sparseness of olfactory inputs to KCs, and might therefore preserve sparse odor coding and high-dimensional odor representations despite stark changes to the underlying circuit constituents. We therefore sought to ask how KC odor responses were affected by perturbations to the PN::KC ratio.
 
 We used OK107 to drive GCaMP6s expression in all KCs, and subjected animals to HU just after larval hatching. We then imaged KC somatic odor responses in vivo in 24 adult HU-treated and 14 adult sham-treated animals. We observed robust odor responses in both conditions, with 8/28 sham-treated and 4/46 HU-treated calyces completely unresponsive. To identify HU-treated hemispheres with reduced KC complement, following functional imaging we imaged the anatomy of the calyx by two-photon or by immunostaining and confocal. Among ablated animals, we identified 14 of 46 imaged hemispheres in which calyces were clearly still present but of reduced size, which we designate as ‘reduced-KC’ calyces. We subjected these datasets and 17 responsive controls to motion correction using Suite2p (Pachitariu et al., 2017). After motion correction, seven sham and seven reduced KC calyces were sufficiently still to allow us to define ROIs for individual somata. For each cell, we calculated peak change in fluorescence following odor stimulus (Figure 7—source data 1). Example responses for sham-treated and reduced-KC calyces are shown in Figure 7A, C, Figure 7—figure supplement 1, and in Figure 7—video 1, 2.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example KC somatic odor responses in sham-treated hemisphere and HU-treated hemisphere with reduced KCs. (B) Post-imaging immunostaining showing calyces and KC somata of samples shown in (A). (C) Peak post-odor responses of individual KCs from samples shown in (A). Only cells that remained stable in their ROI for the whole stimulus panel are shown. Data was clustered by row such that cells with more similar odor responses are closer to one another. MO: Mineral oil (mechanosensory control), EA: Ethyl Acetate, IBA: Isobutyl Acetate, BZH: Benzaldehyde, MCH: Methylcyclohexanol. (D) Peak odor responses of all cells, aggregated from all analyzed samples. Dashed line indicates 20% Δf/f threshold. Significance: Mann-Whitney test. (E) Fraction of cells in each sample responding to each odor at 20% Δf/f threshold. Significance: unpaired t-test. (F) For samples in which the same cells could be tracked across all odor presentations, fraction of cells responding to 0, 1, or multiple odors is shown. Bar plots in (E, F) show medians.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52278/elife-52278-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** x axes show seconds, y axes Δf/f. Black bars indicate odor delivery. Each black line is one cell, with graphs at right showing responses averaged across all cells of the sample. Each cell was normalized to average fluorescence in the 3 s period before stimulus onset. MO: Mineral oil (mechanosensory control), BZH: Benzaldehyde, EA: Ethyl Acetate, IBA: Isobutyl Acetate, MCH: Methylcyclohexanol. An example of a motion artifact can be seen in ‘MCH sham,’ around 12 s.
 
 In order to compare response magnitudes across conditions, we first pooled all cells from each condition and compared overall Δf/f in response to each odor (Figure 7D). The distributions were statistically indistinguishable between conditions for mineral oil (mechanosensory control), ethyl acetate, and isobutyl acetate, and significantly different for benzaldehyde and methylcyclohexanol. Using these aggregate responses, we set a threshold for ‘responsive’ cells of 20% increase in fluorescence over baseline, as we observed bifurcation of the cellwise response distribution at this cutoff. Using these criteria, a median of ~50% of cells from sham calyces responded to ethyl acetate and isobutyl acetate, and ~20–30% of cells to benzaldehyde and methylcyclohexanol (Figure 7E). These response rates are higher than has been reported with GCaMP3 and GCaMP1 (Honegger et al., 2011; Wang et al., 2004), but correspond with spiking response rates observed electrophysiologically (Murthy et al., 2008). We observed variation in odor responses in both control and reduced-KC calyces; interindividual variation is expected given the stochastic innervation of KCs by PNs.
 
@@ -106,23 +170,23 @@ We next compared the proportions of KCs per calyx responding to each odor betwee
 
 Cerebellum-like architectures are found repeatedly in phylogenetically distinct organisms, suggesting that they have broad evolutionary utility. Yet the developmental production of sparseness, a key wiring feature allowing high-dimensional sensory representations, is not understood. Here, we have begun to investigate the development of sparse connectivity in the cerebellum-like associative learning center of insects, the mushroom body. By varying the ratio between presynaptic olfactory PNs and postsynaptic KCs, we find that connectivity density is set by KCs: KC claw number changes little across a wide range of PN::KC ratios, KC number predicts PN bouton number, and PNs exhibit wide variety in bouton number to satisfy KC demands. As described below, we expect that this strategy for generating connectivity density would preserve sparseness in KC inputs across developmental time and upon evolutionary changes in cell repertoires and thus maintain the olfactory coding function of the mushroom body over a range of conditions.
 
-## Implications for development: Different projection neuron to Kenyon cell ratios across developmental stages
+### Implications for development: Different projection neuron to Kenyon cell ratios across developmental stages
 
 For many animals, brain development continues while juveniles are already living freely--searching for food, navigating, and learning about the environment. Developmental transitions in brain structure are particularly stark in holometabolous insects, who build the brain twice. In D. mel, neurons generated during embryonic and early larval stages wire the larval nervous system. These circuits support larval behaviors, while neural stem cells continue to generate additional neurons that will be used to build the adult circuit. In keeping with this, the ratio between PNs and KCs in the larval olfactory circuit is starkly different from the adult: 21 embryonically-born PNs wire to early-born KCs to construct the larval mushroom body (Eichler et al., 2017; Masuda-Nakagawa et al., 2005; Ramaekers et al., 2005). Connections among these populations dissolve in early pupae, and are then re-wired during pupal development (Lee et al., 1999; Marin et al., 2005), joined by ~100 more larvally-born PNs, and >1000 more KCs per hemisphere that continue to be born until immediately before adult eclosion.
 
 The 21 PNs in the early larva connect to ~75 KCs, a 1:3 ratio, while in the adult, ~150 PNs connect to ~2000 KCs, a 1:10 ratio. (Eichler et al., 2017; Zheng et al., 2018). We found that unlike cells in many other systems, including the vertebrate cerebellum, PNs and KCs did not rely on each other for survival signals (Fan et al., 2001). This may be due to the constantly changing ratio between these cell types across developmental time. Instead, setting connectivity density cell-autonomously in KCs could allow KCs to obtain the appropriate number of inputs at the different life stages of the animal, when cellular constituents are very different from one another. Similarly, while PN neurogenesis ceases well before PNs and KCs begin to contact one another in the pupa, we estimate that ~10% of KCs are born after PN:KC synapsis has already initiated (Muthukumar et al., 2014). Strict, cell-autonomous dendrite structuring and flexible PN bouton production could together ensure that late-born KCs obtain the inputs appropriate to support coding.
 
-## Implications for coding: Balancing projection neuron representations across the calyx
+### Implications for coding: Balancing projection neuron representations across the calyx
 
 Olfactory PNs of different types are specified in a predictable temporal order, have characteristic numbers of boutons, and overlap in their innervation of the calyx (Lai et al., 2008; Yu et al., 2010; Zheng et al., 2018). Differences in bouton number across different PNs allow different odor channels to be differentially represented in the calyx and in KC odor responses (Caron et al., 2013; Honegger et al., 2011; Murthy et al., 2008). Several classes of PNs also differ in number between the sexes (Grabe et al., 2016). While PNs changed their individual bouton repertoires in response to changes in cell repertoires, we found that to some extent, the representation level of different PNs in the calyx was preserved. For example, in Figure 2F and Figure 2—figure supplement 2, we show the effect of reducing KC number on bouton production by the VM6 PN and 42D01 PNs. While each population of PNs reduced individual bouton number in this condition, they retained their typical relative representation. The VM6 PN reduced its boutons from 10 to 5, while the 42D01 PNs decreased their boutons from 4 to 2. Similarly, in Figure 4, we expanded the PN population by inducing ectopic PN neuroblast duplication. In these experiments, we mainly observed amplification of the ventrolateral clone. We found that individual anterodorsal VM6 cells did not scale down their boutons when the ventrolateral PN clone expanded, but only when VM6 itself was duplicated. Again, this could maintain the relative wild type representations of different odor channels in the calyx. A recent analysis suggests that the spontaneous activity of different ORs correlates with number of boutons representing that odor channel in the calyx (Kennedy, 2019). One possible model for how PNs scale to KC numbers while maintaining their relative representations in the calyx is thus that KC number limits total bouton number across all PNs, while allocation of these boutons to individual PNs is determined by activity-based competition among PN types.
 
-## Implications for coding: Maximizing dimensionality of odor representations
+### Implications for coding: Maximizing dimensionality of odor representations
 
 Qualitative aspects of sparse coding in the mushroom body appear robust to severe perturbations to the circuit. Alternative developmental compensatory mechanisms would be much less likely to preserve sparse coding. For example, we increased the ratio of PNs to KCs in two ways, by increasing the number of PNs and by decreasing the number of KCs. In both cases, PNs dialed down their bouton number, making 25–50% of the boutons they make in wild type. This allowed the KCs to receive their typical number of inputs. If in contrast bouton number was rigid and claw number flexible, in these cases KCs would have expanded their claw production 2–4 fold to innervate all the incoming PN boutons. Individual KCs with for example 20 instead of 5 claws would receive input from ~40% of glomeruli, increasing the overlap in tuning across different KCs and degrading the ability of the network to distinguish different stimuli from one another (Litwin-Kumar et al., 2017).
 
 In two other cases, we increased the ratio of KCs to PNs, by increasing the number of KCs and by decreasing the number of PNs. Again, KCs retained their typical claw number. If instead PNs had maintained a static production of boutons while KCs had adjusted their claw production, KCs would receive very few inputs. While increasing the number of inputs per KC is theorized to reduce dimensionality of odor responses by making different KCs more similar to one another, decreasing the number of inputs per KC is theorized to reduce dimensionality by reducing the number of different possible KC input combinations (Litwin-Kumar et al., 2017). That this sweet spot maximizing dimensionality, ~5 inputs per cell, is programmed into KC identity testifies to the evolutionary importance of maintaining connectivity density in associative brain centers that rely on combinatorial coding.
 
-## Implications for evolution: The potential for mushroom body function despite perturbations
+### Implications for evolution: The potential for mushroom body function despite perturbations
 
 The olfactory receptors are the largest insect gene family and have been subject to frequent and extreme gains and losses in many clades. Similarly, brain centers devoted to learning are radically different across species, as exemplified by the diversity in KC repertoire across arthropods (Strausfeld et al., 2009). In order to acquire a novel olfactory circuit, many different evolutionary changes are required: A new receptor must evolve, an OSN type that uniquely expresses the receptor needs to arise, that OSN needs to synapse onto PNs, and a new PN type and new glomerulus must arise. For these events to accrue over time, each individual change must be compatible with continued circuit function and olfactory behavior. While development of a dedicated circuit that assigns an innate meaning to a newly-detectable odor would require many further changes, the signal could add to fitness immediately through representation in the mushroom body.
 
@@ -130,15 +194,690 @@ We have described two mechanisms of developmental robustness that maintain coher
 
 ## Materials and methods
 
-## Flies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>mud</td>
+      <td></td>
+      <td>FLYB: FBgn0002873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GH146Gal4 (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 30026</td>
+      <td>(Stocker et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>10XUAS-IVS-myr::tdTomato (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BCSC 32222</td>
+      <td>(Pfeiffer et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>MB247-LexAVP16 (III)</td>
+      <td>Scott Waddell, University of Oxford</td>
+      <td></td>
+      <td>(Pitman et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>LexAop-CD2-GFP (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 66544</td>
+      <td>(Lai and Lee, 2006)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GH146LexA (II)</td>
+      <td>Tzumin Lee, Janelia Farms Research Campus</td>
+      <td></td>
+      <td>(Lai et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>lexAop-mRFP-nls (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 29956</td>
+      <td>Gunter Merdes</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>58F02-Gal4 (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 39186</td>
+      <td>(Jenett et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GCaMP6s (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 42746</td>
+      <td>(Akerboom et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-GCaMP6s (VK0005)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 42749</td>
+      <td>(Akerboom et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>MB247-DsRed (II)</td>
+      <td>André Fiala</td>
+      <td></td>
+      <td>(Riemensperger et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>71D09-Gal4 (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 39584</td>
+      <td>(Jenett et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-CD8GFP (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 5130</td>
+      <td>(Lee and Luo, 1999)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>42D01-Gal4 (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 50152</td>
+      <td>(Jenett et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-C3PA (II)</td>
+      <td>Vanessa Ruta, Rockefeller University</td>
+      <td></td>
+      <td>(Ruta et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-C3PA (III)</td>
+      <td>Vanessa Ruta, Rockefeller University</td>
+      <td></td>
+      <td>(Ruta et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>60A10-LexA (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 52821</td>
+      <td>Pfeiffer, Rubin LexA Collection</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>LexAop-tdTomato.Myr (su(Hw)attp5)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 56142</td>
+      <td>(Chen et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>89B01-Gal4 (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 40541</td>
+      <td>(Jenett et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>13XLexAop2-IVS-Syn21-mC3PA-GFP-p10 (attp2)</td>
+      <td>Gerry Rubin, Janelia Farms Research Campus</td>
+      <td></td>
+      <td>(Pfeiffer et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GH146QF, QUAS-mtdTomato-3xHA (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 30037</td>
+      <td>(Potter et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mud-RNAi (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 35044</td>
+      <td>(Perkins et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>OK107Gal4 (IV)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 854</td>
+      <td>(Connolly et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P(caryP) (attp2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 36303</td>
+      <td>(Perkins et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P(caryP) (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 36304</td>
+      <td>(Perkins et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>MZ19QF (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 41573</td>
+      <td>(Hong et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>QUAS-mtdTomato-3xHA (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 30004</td>
+      <td>(Potter et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>41C07-LexA (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 54791</td>
+      <td>Pfeiffer, Rubin LexA Collection</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>89B01-LexA (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 54380</td>
+      <td>Pfeiffer, Rubin LexA Collection</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>71D09-LexA (attp40)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 54931</td>
+      <td>Pfeiffer, Rubin LexA Collection</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>LexAop-SPA-T2A-SPA (II)</td>
+      <td>n/a</td>
+      <td></td>
+      <td>(Clowney et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>44F03-Gal4 (attp2)</td>
+      <td>Tzumin Lee, Janelia Farms Research Campus</td>
+      <td></td>
+      <td>(Awasaki et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>VT033006-Gal4 (attp2)</td>
+      <td>Yoshi Aso, Janelia Farms Research Campus</td>
+      <td></td>
+      <td>(Kvon et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>VT033008-Gal4 (attp2)</td>
+      <td>Yoshi Aso, Janelia Farms Research Campus</td>
+      <td></td>
+      <td>(Kvon et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-DTA (UAS-Cbbeta\DT-A.I)[18] (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC 25039</td>
+      <td>(Han et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ChAT (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>9E10</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DsRed (rabbit polyclonal)</td>
+      <td>Clontech</td>
+      <td>632496</td>
+      <td>(1:500-1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (sheep polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>4745–1051</td>
+      <td>(1:250-1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (chicken polyclonal)</td>
+      <td>Gift from Dawen Cai</td>
+      <td>n/a</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 anti-mouse (goat polyclonal)</td>
+      <td>Fisher</td>
+      <td>A11029</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 647 anti-mouse (goat polyclonal)</td>
+      <td>Fisher</td>
+      <td>A21236</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 anti-sheep (donkey polyclonal)</td>
+      <td>Fisher</td>
+      <td>A11015</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 anti-chicken (goat polyclonal)</td>
+      <td>Fisher</td>
+      <td>A11039</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 568 anti-rabbit (goat polyclonal)</td>
+      <td>Fisher</td>
+      <td>A11036</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Texas Red Dextran</td>
+      <td>Fisher</td>
+      <td>D3328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa 568 Phalloidin</td>
+      <td>Fisher</td>
+      <td>A12380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Schneider’s medium</td>
+      <td>Sigma</td>
+      <td>S0146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>EMS</td>
+      <td>15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma</td>
+      <td>H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzaldehyde</td>
+      <td>Sigma</td>
+      <td>418099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isobutyl acetate</td>
+      <td>Sigma</td>
+      <td>537470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl acetate</td>
+      <td>Sigma</td>
+      <td>270989</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylcyclohexanol</td>
+      <td>Sigma</td>
+      <td>153095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase</td>
+      <td>Sigma</td>
+      <td>C0130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Suite2p</td>
+      <td>(Pachitariu et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Duck EZ Start Packaging tape</td>
+      <td>Office Depot</td>
+      <td>511879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UV Glue</td>
+      <td>Loctite</td>
+      <td>3106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>JAXMAN 365 nm Flashlight</td>
+      <td>Amazon</td>
+      <td>B077GPXBK1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electra Waxer</td>
+      <td>Almore</td>
+      <td>66000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gulfwax Paraffin</td>
+      <td>Grocery store</td>
+      <td>C0130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>hair</td>
+      <td>self</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Flies
 
 Flies were maintained on cornmeal-molasses (‘R’) food (Lab Express, Ann Arbor, MI) in a humidified incubator at 25C on a 12:12 light:dark cycle.
 
 Genotypes were as follows:
 
-Figure 1, and Figure 1—video 1Figure 1—figure supplement 1GH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, lexAop-CD2-GFP/TM2Figure 1—figure supplement 2GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033006-Gal4, UAS-CD8GFP/+Figure 2A–EGH146LexA, lexAop-mRFP-nls/CyO; 58F02-Gal4, UAS-GCaMP6s/TM2Figure 2F–HMB247-DsRed/CyO; 71D09-Gal4, UAS-CD8GFP/"Figure 2I60A10-LexA, LexAop-tdTomato.Myr/CyO; 58F02-Gal4, UAS-C3PA/"Figure 2J,KGH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"60A10-LexA, LexAop-tdTomato.Myr/CyO; 58F02-Gal4, UAS-C3PA/"Figure 2—figure supplement 1GH146LexA, lexAop-mRFP-nls/CyO; 58F02-Gal4, UAS-GCaMP6s/TM2Figure 2—figure supplement 2MB247-DsRed/CyO; 42D01-Gal4, UAS-C3PA/"Figure 2—figure supplement 3A,BGH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"Figure 2—figure supplement 3C,DGH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"60A10-LexA, LexAop-tdTomato.Myr/CyO; 89B01-Gal4, UAS-C3PA/"Figure 3A–CGH146QF, QUAS-mtdTomato-3xHA /+; UAS-CD8GFP/UAS-mud-RNAi; OK107Gal4/+GH146QF, QUAS-mtdTomato-3xHA /+; UAS-CD8GFP/P(caryP)attp2; OK107Gal4/+Figure 3D–GMZ19QF, QUAS-mtdTomato-3xHA/Bl; UAS-mud-RNAi/TM2 or TM6B; OK107Gal4/+MZ19QF, QUAS-mtdTomato-3xHA/Bl; P(caryP)attp2/TM2 or TM6B; OK107/+Figure 3H71D09-LexA, LexAop-tdTomato.Myr/Bl; UAS-mud-RNAi/TM2; OK107 Gal4/+71D09-LexA, LexAop-tdTomato.Myr/Bl; P(caryP)attp2/TM2; OK107 Gal4/+Figure 3IUAS-C3PA/+; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+UAS-C3PA/+; UAS-C3PA/P(caryP)attp2; OK107Gal4/+Figure 3J,KUAS-C3PA/+; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+UAS-C3PA/+; UAS-C3PA/P(caryP)attp2; OK107Gal4/+UAS-C3PA/41C07-LexA, LexAop-tdTomato.Myr; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+UAS-C3PA/41C07-LexA, LexAop-tdTomato.Myr; UAS-C3PA/P(caryP)attp2; OK107 Gal4/+UAS-C3PA/89B01-LexA, LexAop-tdTomato.Myr; UAS-C3PA/UAS-mud-RNAi; OK107 Gal4/+UAS-C3PA/89B01-LexA, LexAop-tdTomato.Myr; UAS-C3PA/P(caryP)attp2; OK107 Gal4/+Figure 3—figure supplement 141C07-LexA, LexAop-tdTomato.Myr/UAS-C3PA; UAS-mud-RNAi 35044/UAS-C3PA; OK107 Gal4/+41C07-LexA, LexAop-tdTomato.Myr/UAS-C3PA; P(caryP)attp2/UAS-C3PA; OK107 Gal4/+Figure 4A–IGH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/UAS-mud-RNAiGH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/P(caryP)attp2Figure 4J–MGH146LexA, LexAop-SPA-T2A-SPA/MZ19QF, QUAS-mtdTomato-3xHA; 44F03-Gal4/UAS-mud-RNAiGH146LexA, LexAop-SPA-T2A-SPA/MZ19QF, QUAS-mtdTomato-3xHA; 44F03-Gal4/P(caryP)attp2MZ19QF, QUAS-mtdTomato-3xHA/+; 44F03-Gal4/UAS-mud-RNAiMZ19QF, QUAS-mtdTomato-3xHA/+; 44F03-Gal4/P(caryP)attp2Figure 4—figure supplement 1A,BGH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/UAS mud-RNAiGH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/P(caryP)attp2Figure 4—figure supplement 1C–F71D09-LexA, LexAop-tdTomato.Myr/+; 44F03-Gal4/UAS-mud-RNAi71D09-LexA, LexAop-tdTomato.Myr/+; 44F03-Gal4/P(caryP)attp2Figure 5ACyO/+; VT033006-Gal4/UAS-CD8GFPCyO/+; VT033008-Gal4/UAS-CD8GFPFigure 5B,CGH146LexA, lexAop-mRFP-nls/UAS DTA; VT033008-Gal4, UAS-CD8GFP/+GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033008-Gal4, UAS-CD8GFP/+Figure 5D–FUAS-DTA/+; VT033008-Gal4/TM6BUAS-DTA/+; P(caryP)attp2/TM6BFigure 5G–HGH146LexA, lexAop-mRFP-nls/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033006-Gal4, UAS-CD8GFP/+Figure 5I–LMB247-DsRed/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+MB247-DsRed/+; VT033006-Gal4, UAS-CD8GFP/+Figure 5—figure supplement 1AGH146LexA, lexAop-mRFP-nls/UAS DTA; VT033008-Gal4, UAS-CD8GFP/+GH146LexA, lexAop-mRFP-nls/CyO; VT033008-Gal4, UAS-CD8GFP/+Figure 5—figure supplement 1BGH146LexA, lexAop-mRFP-nls/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+GH146LexA, lexAop-mRFP-nls/CyO; VT033006-Gal4, UAS-CD8GFP/+Figure 5—figure supplement 2MB247-DsRed/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+MB247-DsRed/+; VT033006-Gal4, UAS-CD8GFP/+Figure 6GH146LexA, LexAop-SPA-T2A-SPA/UAS DTA; VT033006-Gal4/+GH146LexA, LexAop-SPA-T2A-SPA/P(caryP)attp40; VT033006-Gal4/+Figure 7, Figure 7—figure supplement 1, Figure 7-videos 1, 2UAS-GCaMP6s/UAS-GCaMP6s; UAS-GCaMP6s/UAS-GCaMP6s; OK107Gal4/ OK107Gal4 or +
+<table>
+  <tbody>
+    <tr>
+      <td>Figure 1, and Figure 1—video 1Figure 1—figure supplement 1</td>
+      <td>GH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, lexAop-CD2-GFP/TM2</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2A–E</td>
+      <td>GH146LexA, lexAop-mRFP-nls/CyO; 58F02-Gal4, UAS-GCaMP6s/TM2</td>
+    </tr>
+    <tr>
+      <td>Figure 2F–H</td>
+      <td>MB247-DsRed/CyO; 71D09-Gal4, UAS-CD8GFP/"</td>
+    </tr>
+    <tr>
+      <td>Figure 2I</td>
+      <td>60A10-LexA, LexAop-tdTomato.Myr/CyO; 58F02-Gal4, UAS-C3PA/"</td>
+    </tr>
+    <tr>
+      <td>Figure 2J,K</td>
+      <td>GH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>60A10-LexA, LexAop-tdTomato.Myr/CyO; 58F02-Gal4, UAS-C3PA/"</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 1</td>
+      <td>GH146LexA, lexAop-mRFP-nls/CyO; 58F02-Gal4, UAS-GCaMP6s/TM2</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 2</td>
+      <td>MB247-DsRed/CyO; 42D01-Gal4, UAS-C3PA/"</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3A,B</td>
+      <td>GH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3C,D</td>
+      <td>GH146Gal4, 10XUAS-IVS-myr::tdTomato/CyO; MB247-lexA, 13XLexAop2-IVS-Syn21-mC3PA-GFP-p10/"</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>60A10-LexA, LexAop-tdTomato.Myr/CyO; 89B01-Gal4, UAS-C3PA/"</td>
+    </tr>
+    <tr>
+      <td>Figure 3A–C</td>
+      <td>GH146QF, QUAS-mtdTomato-3xHA /+; UAS-CD8GFP/UAS-mud-RNAi; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146QF, QUAS-mtdTomato-3xHA /+; UAS-CD8GFP/P(caryP)attp2; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3D–G</td>
+      <td>MZ19QF, QUAS-mtdTomato-3xHA/Bl; UAS-mud-RNAi/TM2 or TM6B; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MZ19QF, QUAS-mtdTomato-3xHA/Bl; P(caryP)attp2/TM2 or TM6B; OK107/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3H</td>
+      <td>71D09-LexA, LexAop-tdTomato.Myr/Bl; UAS-mud-RNAi/TM2; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>71D09-LexA, LexAop-tdTomato.Myr/Bl; P(caryP)attp2/TM2; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3I</td>
+      <td>UAS-C3PA/+; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/+; UAS-C3PA/P(caryP)attp2; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3J,K</td>
+      <td>UAS-C3PA/+; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/+; UAS-C3PA/P(caryP)attp2; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/41C07-LexA, LexAop-tdTomato.Myr; UAS-C3PA/UAS-mud-RNAi; OK107Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/41C07-LexA, LexAop-tdTomato.Myr; UAS-C3PA/P(caryP)attp2; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/89B01-LexA, LexAop-tdTomato.Myr; UAS-C3PA/UAS-mud-RNAi; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-C3PA/89B01-LexA, LexAop-tdTomato.Myr; UAS-C3PA/P(caryP)attp2; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>41C07-LexA, LexAop-tdTomato.Myr/UAS-C3PA; UAS-mud-RNAi 35044/UAS-C3PA; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>41C07-LexA, LexAop-tdTomato.Myr/UAS-C3PA; P(caryP)attp2/UAS-C3PA; OK107 Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4A–I</td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/UAS-mud-RNAi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/P(caryP)attp2</td>
+    </tr>
+    <tr>
+      <td>Figure 4J–M</td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/MZ19QF, QUAS-mtdTomato-3xHA; 44F03-Gal4/UAS-mud-RNAi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/MZ19QF, QUAS-mtdTomato-3xHA; 44F03-Gal4/P(caryP)attp2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MZ19QF, QUAS-mtdTomato-3xHA/+; 44F03-Gal4/UAS-mud-RNAi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MZ19QF, QUAS-mtdTomato-3xHA/+; 44F03-Gal4/P(caryP)attp2</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1A,B</td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/UAS mud-RNAi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/+; 44F03-Gal4/P(caryP)attp2</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1C–F</td>
+      <td>71D09-LexA, LexAop-tdTomato.Myr/+; 44F03-Gal4/UAS-mud-RNAi</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>71D09-LexA, LexAop-tdTomato.Myr/+; 44F03-Gal4/P(caryP)attp2</td>
+    </tr>
+    <tr>
+      <td>Figure 5A</td>
+      <td>CyO/+; VT033006-Gal4/UAS-CD8GFP</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CyO/+; VT033008-Gal4/UAS-CD8GFP</td>
+    </tr>
+    <tr>
+      <td>Figure 5B,C</td>
+      <td>GH146LexA, lexAop-mRFP-nls/UAS DTA; VT033008-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033008-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5D–F</td>
+      <td>UAS-DTA/+; VT033008-Gal4/TM6B</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>UAS-DTA/+; P(caryP)attp2/TM6B</td>
+    </tr>
+    <tr>
+      <td>Figure 5G–H</td>
+      <td>GH146LexA, lexAop-mRFP-nls/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, lexAop-mRFP-nls/P(caryP)attp40; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5I–L</td>
+      <td>MB247-DsRed/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MB247-DsRed/+; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1A</td>
+      <td>GH146LexA, lexAop-mRFP-nls/UAS DTA; VT033008-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, lexAop-mRFP-nls/CyO; VT033008-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1B</td>
+      <td>GH146LexA, lexAop-mRFP-nls/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, lexAop-mRFP-nls/CyO; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 2</td>
+      <td>MB247-DsRed/UAS DTA; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MB247-DsRed/+; VT033006-Gal4, UAS-CD8GFP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/UAS DTA; VT033006-Gal4/+</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>GH146LexA, LexAop-SPA-T2A-SPA/P(caryP)attp40; VT033006-Gal4/+</td>
+    </tr>
+    <tr>
+      <td>Figure 7, Figure 7—figure supplement 1, Figure 7-videos 1, 2</td>
+      <td>UAS-GCaMP6s/UAS-GCaMP6s; UAS-GCaMP6s/UAS-GCaMP6s; OK107Gal4/ OK107Gal4 or +</td>
+    </tr>
+  </tbody>
+</table>
 
-## HU ablation
+### HU ablation
 
 Protocol was adapted from Sweeney et al. (2012). Briefly, we set up large populations of flies in cages two days prior to ablation and placed a 35 or 60 mm grape juice agar plate (Lab Express, Ann Arbor, MI) in the cage with a dollop of goopy yeast. One day prior to the ablation, we replaced the grape juice/yeast plate with a new grape juice/yeast plate. On the morning of the ablation, we removed the plate from the cage and discarded the yeast puck and any hatched larvae on the agar. We then monitored the plate for up to four hours, until many larvae had hatched. Larvae were washed off the plate using a sucrose solution, and eggs were discarded. Larvae were then strained in coffee filters, and submerged in hydroxyurea (Sigma, H8627) in a yeast:AHL mixture, or sham mixture without HU. Ablation conditions were as follows:
 
@@ -146,13 +885,13 @@ Larvae were then strained through coffee filters again, rinsed, and placed in a 
 
 Applying HU for four hours produced a somewhat U-shaped distribution, with many samples unaffected and many with all four KC neuroblasts lost. Shifting from 3, to 5, to 10 mg over this long time scale shifted how many brains were completely ablated versus unaffected, but did little to increase the proportion of brains with intermediate phenotypes. Applying the stronger concentration, 10 mg, for a shorter time produced more sporadic effects, with more brains showing 1, 2, or 3 KC neuroblasts remaining. lNB/BAlc was more affected by HU concentration than time of application, with stronger effects seen applying 10 mg/mL for one hour than applying 3 or 5 mg/mL for four hours. Overall, combining these different protocols allowed us to observe a broad range of mushroom body states.
 
-## Immunostainings
+### Immunostainings
 
 Brains were dissected for up to 20 min in external saline (108 mM NaCl, 5 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES pH7.5, osmolarity adjusted to 265 mOsm), before being transferred to 1% paraformaldehyde in PBS, on ice. All steps were performed in cell strainer baskets (caps of FACS tubes) in 24 well plates, with the brains in the baskets lifted from well to well to change solutions. Brains were fixed overnight at 4C in 1% PFA in PBS. On day 2, brains were washed 3 × 10’ in PBS supplemented with 0.1% triton-x-100 on a shaker at room temperature, blocked 1 hr in PBS, 0.1% triton, 4% Normal Goat Serum, and then incubated for at least two overnights in primary antibody solution, diluted in PBS, 0.1% triton, 4% Normal Goat Serum. Primary antibody was washed 3 × 10’ in PBS supplemented with 0.1% triton-x-100 on a shaker at room temperature, then brains were incubated in secondary antibodies for at least two overnights, diluted in PBS, 0.1% triton, 4% Normal Goat Serum. When used, Alexa 568-conjugated phalloidin (1:80) and/or DAPI (one microgram/mL) were included in secondary antibody mixes. Primary antibodies used were mouse anti-ChAT 9E10 (DSHB, 1:200), Rabbit anti-dsRed (Clontech, 1:500-1:1000), Sheep anti-GFP (Bio-Rad, 4745–1051, 1:250-1:1000), Chicken anti-GFP (1:5000, gift from Dawen Cai). Secondary antibodies were Alexa 488, 568, and 647 conjugates (1:500, Invitrogen).
 
 Brains were mounted in 1x PBS, 90% glycerol supplemented with propyl gallate in binder reinforcement stickers sandwiched between two coverslips. Samples were stored at 4C in the dark prior to imaging. The coverslip sandwiches were taped to slides, allowing us to perform confocal imaging on one side of the brain and then flip over the sandwich to allow a clear view of the other side of the brain. This allowed us to score features on the anterior and posterior sides of each sample. Scanning confocal stacks were collected along the anterior-posterior axis on a Zeiss 880 or Leica SP8 with one micrometer spacing in Z and ~200 nm axial resolution.
 
-## Statistical considerations
+### Statistical considerations
 
 Determination of sample size: Brains were prepared for imaging in batches of 5–10. In initial batches, we assessed the variability of the manipulation, for example if we were trying to change Kenyon cell number, we looked at how variable the size of the Kenyon cell population was following the manipulation. We used this variability to determine how many batches to analyze so as to obtain enough informative samples. To avoid introducing statistical bias, we did not analyze the effect of the manipulation on the other cell type until after completing all batches; for example if the manipulation was intended to alter Kenyon cell numbers, we did not assess projection neuron bouton phenotypes until completing all samples. Genotypes or conditions being compared with one another were always prepared for staining together and imaged interspersed with one another to equalize batch effects, and we used at least two batches for each type of experiment.
 
@@ -160,7 +899,7 @@ Criteria for exclusion, treatment of outliers: In Figures 1–6, we only exclude
 
 Recent discussions among experts have suggested that biological studies over-rely on statistical tests, report p values when statistical differences are self-evident, and emphasize statistical significance rather than effect size (Goedhart, 2018a; Goedhart, 2018b; Ho et al., 2019). These choices can cloud findings instead of clarifying them. In order to communicate our findings in the simplest and most complete way, we have displayed each data point for each sample to allow readers to assess effect size and significance directly.
 
-## Image analysis
+### Image analysis
 
 In general, we analyzed mixed-sex populations, where sex ratios were carefully balanced across experimental conditions. Because MZ19 labels the sexually dimorphic DA1 PNs, in MZ19 experiments we analyzed the two sexes independently in pilot experiments. As we observed no correlation with sex (not shown), in subsequent MZ19 experiments we used mixed sexes.
 
@@ -182,24 +921,65 @@ For Figure 2J,K and Figure 2—figure supplement 3C,D, we combined data from two
 
 GFP photoactivation and Texas red dextran dye labeling were performed as previously described (Clowney et al., 2015; Ruta et al., 2010), using a Bruker Investigator microscope and Spectra-Physics MaiTai laser with DeepSee module. Dye filling electrodes were pulled using a Brown/Flaming puller (Sutter Instruments) and were guided to the mushroom body α lobes using visible light illumination and/or two photon autofluorescence.
 
-## Identification of driver lines for relevant cell populations
+### Identification of driver lines for relevant cell populations
 
 To identify Gal4 and/or LexA lines labeling PN populations, we screened the Janelia FlyLight collection online database and then crossed lines with potential to fluorescent reporters. While 42D01 (~10 PNs) and 60A10 (60 PNs) were the most useful PN lines for us here, we also identified other lines, 33C10 and 37H08, that each label small groups of PNs and may be of use to others. To identify Gal4 lines labeling individual KC types, we screened expression of ‘regular’ FlyLight Gal4 constructs made using the same regulatory fragments incorporated in KC-type-specific split Gal4s (Aso et al., 2014). We found 58F02 useful for labeling α/β core KCs, 89B01 for γ KCs (labels both γmain and γd), and 41C07 for α’/β’ KCs. 89B01 and 58F02 LexA did not recapitulate Gal4 expression patterns driven by the same fragments.
 
-## Flow Cytometry
+### Flow Cytometry
 
 Brains were dissected in Schneider’s medium (Sigma S0146) supplemented with 1% BSA and placed on ice. After all dissections were completed, collagenase (Sigma C0130) was added to a final concentration of 2 mg/mL and samples were incubated at 37C for 20 min. Samples were dissociated by trituration and spun down at 300g, 4C, for 5 min. Collagenase solution was removed and replaced with PBS+0.1% BSA supplemented with 1:1000 DyeCycle Violet. Cells were incubated with dye for 30 min on ice and passed through a cell strainer cap, before being subjected to flow cytometry on an Attune Flow Cytometer. Forward scatter and side scatter measurements were used to gate single cells, and DyeCycle Violet signal was used to gate cell bodies from membrane debris.
 
-## In vivo functional imaging
+### In vivo functional imaging
 
 We prepared 2–7 day old adult flies subjected to HU or sham treatment just after larval hatching for in vivo two photon calcium imaging on a Bruker Investigator essentially as described previously (Ruta et al., 2010), affixing the fly to packaging tape (Duck EZ Start) with human hair and UV glue (Loctite 3106). The fly was tilted to allow optical access to KC somata, at the dorsal posterior surface of the brain. In some experiments, we waxed the proboscis in an extended position to reduce motion. Imaging was performed in external saline. For odor delivery, half of a 1200 mL/min airstream, or 600 mL/min, was directed toward the antennae through a Pasteur pipette mounted on a micromanipulator. At a trigger, 25% of the total air stream was re-directed from a 10 mL glass vial containing mineral oil to a vial containing odorants diluted 1:10 in mineral oil, or a second vial of mineral oil (mechanosensory control). Final odor dilution was therefore 1:40. Filter paper ‘wicks’ were inserted into each vial to allow odor to saturate the vial headspace. Odors were delivered for two seconds, with 30–60 s in between stimulations. We used a simplified olfactometer capable of delivering five different odorants in which overall airflow was metered by analogue flowmeters (Brooks Instruments) and valve switching controlled by an Arduino. Odor delivery was initially optimized using a mini-PID placed in the half of the air stream not directed at the fly (Aurora Biosciences). Images were collected at 1.5–5 Hertz, and we imaged a single plane for each sample.
 
-## Analysis of KC somatic odor responses
+### Analysis of KC somatic odor responses
 
 We collected data from a total of 14 sham-treated animals (28 hemispheres imaged) and 24 HU-treated animals (46 hemispheres imaged). The two hemispheres were imaged separately. Occasionally, only one hemisphere was imaged due to the preparation and a few hemispheres were excluded from analysis because of poor image quality. Mineral oil was delivered first, and then each of four odors was delivered twice, in sequence. Following mineral oil, odor order varied. Because experiments in locust found that the first presentation of certain odors can cause distinct KC responses to all subsequent presentations of that same odor, we analyzed the second presentation of each odor, according to convention (Murthy et al., 2008; Stopfer and Laurent, 1999). We also observed that in some animals, enduring increases in fluorescence followed the first presentation of isobutyl acetate.
 
 Following functional imaging, we either collected a Z-stack of the mushroom body on the two-photon, or dissected out the brain and subjected it to immunostatining and confocal imaging. We used these images to categorize the extent of KC reduction. All samples are accounted for here:
 
-Total hemPoor imageDamaged/not responsiveUnknownFull ablationCan’t tell if ablatedDoesn’t look ablatedToo much motionAnalyzedSham28281N/AN/AN/A107: four fem, three maleHU46401351077: four male, three fem
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Total hem</th>
+      <th>Poor image</th>
+      <th>Damaged/not responsive</th>
+      <th>Unknown</th>
+      <th>Full ablation</th>
+      <th>Can’t tell if ablated</th>
+      <th>Doesn’t look ablated</th>
+      <th>Too much motion</th>
+      <th>Analyzed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sham</td>
+      <td>28</td>
+      <td>2</td>
+      <td>8</td>
+      <td>1</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>10</td>
+      <td>7: four fem, three male</td>
+    </tr>
+    <tr>
+      <td>HU</td>
+      <td>46</td>
+      <td></td>
+      <td>4</td>
+      <td>0</td>
+      <td>13</td>
+      <td>5</td>
+      <td>10</td>
+      <td>7</td>
+      <td>7: four male, three fem</td>
+    </tr>
+  </tbody>
+</table>
 
 We excluded 11 hemispheres from the control dataset due to damage or poor image quality. We also excluded 34 hemispheres from the ablation dataset because of any of the following: the samples were fully ablated, unaffected by ablation, ablation status was ambiguous, or the mushroom body calyx appeared damaged. The remaining samples were motion-corrected using Suite2p (Pachitariu et al., 2017). Using FIJI, we blinded ourselves to the remaining datasets and excluded datasets if there was too much motion to be able to follow the same cell over time. After this gate, there were seven sham and seven reduced-KC hemispheres for the analysis. ROIs were chosen in each of the fourteen samples and we measured Δf/f (i.e. (f-f0)/f0), comparing stimulus frames with pre-stimulus frames. ROIs were manually chosen and we were careful about ensuring that the cell remained within its ROI for all frames. For two of the ablated samples, we had to choose different ROIs for two of the odor deliveries due to motion. These samples were only used to calculate the proportion of cells that were responsive to each odor, and not in calculating the number of odors each cell responded to. The baseline was determined for each odor delivery by taking the average of the frames within the three seconds before the trigger. The stimulus frame was determined by taking the peak response between 0–4.5 s after stimulus onset, to account for the valve opening and the two second odor delivery. To define ‘responsive’ cells, we chose to use the same cutoff, Δf/f > 0.2 (20% increase in fluorescence over baseline) across samples. This was in order to avoid obscuring overall differences in responsiveness across ablated and sham-treated calyces. For visualization, we used the Pretty Heatmap package in R to cluster cells with similar odor responses and display them.

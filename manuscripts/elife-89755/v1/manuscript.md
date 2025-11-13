@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01bp81r18 Laboratory of Membrane Protein Biology, National Centre for Cell Science Pune India
-2. https://ror.org/05shq4n12 Laboratory of Membrane Protein Biology, CSIR-Centre for Cellular and Molecular Biology Hyderabad India
+1. Laboratory of Membrane Protein Biology, National Centre for Cell Science Pune India ([ROR:01bp81r18](https://ror.org/01bp81r18))
+2. Laboratory of Membrane Protein Biology, CSIR-Centre for Cellular and Molecular Biology Hyderabad India ([ROR:05shq4n12](https://ror.org/05shq4n12))
 
 † Corresponding author
 
@@ -30,21 +30,385 @@ Therefore, we conducted structure-function studies to understand the mechanisms 
 
 ## Results
 
-## Spatiotemporal expression pattern of GluK1-1 in the brain
+### Spatiotemporal expression pattern of GluK1-1 in the brain
 
 Kainate receptor subunits are differentially and spatially regulated in vertebrates. We analyzed publicly available human transcriptomics data to determine whether the exon encoding the GluK1 ATD splice (exon 9) was differentially expressed in the human brain. RNASeq data analysis of GRIK1 (Ensembl ID: ENSG00000171189) collected from the BrainSpan ATLAS indicated that exon 9 is present in multiple brain areas that also show prominent GluK1 expression. GRIK1 exon 9 expression varies significantly across brain regions and developmental stages, with dynamic patterns indicating its crucial role in brain development. High expression is noted during critical periods such as early embryonic, postnatal, and childhood stages, particularly in regions like the cortical plate (CP), hippocampus (HIP), amygdala (AMY) and striatum (STR) (Figure 1; Figure 1—figure supplement 1). These patterns suggest GRIK1 exon 9’s importance in the functional maturation of these brain regions. For example, in the cerebellar cortex, GRIK1 exon 9 expression peaks during early development and childhood and stabilizes into adulthood, underscoring its role in cortical development and function. (Figure 1—figure supplement 1). The significant variability in exon 9 expression across different brain regions, along with its potential role in brain development and functional maturation, motivated us to investigate the underlying molecular mechanisms. This prompted us to perform a detailed structure-function analysis of the GluK1-1a splice variant.
 
-## The ATD splice imparts functional diversity to GluK1 receptors
+![Figure 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig1-v1.jpg)
+
+**Figure 1.:** The heat map shows the presence of exon 9 (45 bp; ENSE00001313812) that codes for GluK1 amino-terminal domain (ATD) splice in different brain regions from the embryonic to adult stage. Exon 9 expression coincides with well-studied areas for the GRIK1 gene like the cerebellar cortex, visual cortex, etc. Various regions of the brain and the donor age are represented on the x-axis and y-axis, respectively. The donor age has been abbreviated as pcw (post-conception weeks), mos (months), and yrs (years). The regions of the human brain are abbreviated as: DFC (dorsolateral prefrontal cortex), VFC (ventrolateral prefrontal cortex), MFC (anterior [rostral] cingulate [medial prefrontal] cortex), OFC (orbital frontal cortex), M1C (primary motor cortex area M1, area 4), M1C.S1C (primary motor-sensory cortex [samples]), PCx (parietal neocortex), S1C primary somatosensory cortex (area S1, areas 3,1,2), IPC (posteroventral [inferior] parietal cortex), A1C (primary auditory cortex core), A1C (primary auditory cortex [core]), TCx (temporal neocortex), STC (posterior [caudal] superior temporal cortex, area 22 c), ITC (inferolateral temporal cortex) (area TEv, area 20), OCx (occipital neocortex), V1C primary visual cortex (striate cortex, area V1/17), HIP (hippocampus), AMY (amygdaloid complex), LGE (lateral ganglionic eminence), MGE (medial ganglionic eminence), CGE (caudal ganglionic eminence), STR (striatum), DTH (dorsal thalamus), MD (mediodorsal nucleus of thalamus), URL (upper [rostral] rhombic lip), CB (cerebellum), and CBC (cerebellar cortex). Blue and red color indicates zero and maximum expression, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** To delve deeper into the high expression areas from Figure 1, the cerebellar cortex was chosen as an example to understand the expression pattern of Exon 9 with respect to other GluK1 exons. The heat map displays the abundance of the GluK1 exons at different stages of human life. Exon 9 (Exon start position: 30968845; marked by a red box) expression coincides with reported high expression of GluK1 kainate receptors in the early developmental stages of humans. Blue and red color indicates zero and maximum expression, respectively.
+
+### The ATD splice imparts functional diversity to GluK1 receptors
 
 Previous studies on functional analysis of GluK1 receptors have primarily focused on GluK1-2 isoform that lacks the ATD splice insert. Therefore, we conducted an extensive electrophysiological investigation to assay the functional differences between GluK1-1a and GluK1-2a. The only difference between these two variants is the presence of 15 amino acids (KASGEVSKHLYKVWK) insertion in the R2 subdomain (lower lobe) of the GluK1-1a ATD. We evaluated multiple gating properties of the two variants by whole-cell patch-clamp electrophysiology. Interestingly, we observed that GluK1-1a receptors desensitize significantly slowly when compared to GluK1-2a (ƮDes, GluK1-1a: 5.21±0.50 ms; GluK1-2a: 3.55±0.23 ms **p=0.0092) on prolonged treatment with 10 mM glutamate (Figure 2A; Table 1). We also tested receptor desensitization by applying saturating concentrations of kainate (1 mM). Since the receptors displayed prolonged desensitizing kainate currents, instead of the rate (ƮDes), we calculated the % desensitization values at 1 s for comparison. We observed that the % desensitization with kainate was distinct for both ATD splice variants with significantly slower desensitization in the variant with the splice insert (GluK1-1a: 72.06±2.33%, GluK1-2a: 93.2±0.55 ***p=0.0006) consistent with the glutamate evoked currents (Figure 2B; Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig2-v1.jpg)
+
+**Figure 2.:** (A) Displays mean-weighted Tau (τDes) values for GluK1-1a wild-type (red) and GluK1-2a wild-type (green) in the presence of glutamate. The inset shows representative normalized traces for GluK1-1a and GluK1-2a with 10 mM glutamate. (B) Displays the percent desensitization values calculated at 1 s for GluK1-1a wild-type (red) and GluK1-2a wild-type (green) in the presence of kainate. Representative normalized traces for GluK1-1a and GluK1-2a with 1 mM kainate are shown. (C) Demonstrates glutamate dose-response curves for GluK1-1a and GluK1-2a. Representative aligned traces for both receptors at various glutamate concentrations are shown. The kainate dose responses for the splice variants are shown in Figure 2—figure supplement 1. (D) The ratio of currents evoked by kainate and glutamate is plotted for GluK1-1a and GluK1-2a. (E) The ratio of currents evoked by the application of 10 mM glutamate at +90 mV and –90 mV for the GluK1-1a and GluK1-2a receptors is shown. Representative IV plots are depicted for GluK1-1a and GluK1-2a for the entire voltage ramp (–90 to +90 mV). Error bars indicate mean ± SEM, N in each bar represents the number of cells used for analysis, and * indicates the significance at a 95% confidence interval.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The figure demonstrates the normalized kainate dose-response curves for GluK1-1a and GluK1-2a along with their representative traces.
+
+**Table 1.**
+ Whole-cell patch clamp recordings of GluK1-1a, GluK1-1aEM, GluK1-2a, and GluK1-1a mutants in the absence or presence of Neto1 (green) or Neto2 (peach).Errors are reported as SEM. Statistical significance is reported at 95 % CI. p<0.05 (*), p<0.01 (**), p<0.001 (***), p<0.0001 (****) for comparisons between wild-type GluK1-1a receptor with EM construct, GluK1-2a, or various mutants in presence or absence of Neto proteins.‘a’ denotes the lack of rectification index value due to no conductance observed at positive potentials in the K368-E mutant alone.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>S. No.</th>
+      <th>Name of the construct</th>
+      <th colspan="2">Desensitization</th>
+      <th colspan="3"></th>
+      <th>Total No. of cells tested</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>10 mM G (ƮDes in ms)</th>
+      <th>1 mM K (%)</th>
+      <th>IK/IG</th>
+      <th>Recovery (ƮRec in s)</th>
+      <th>Rectification (+90 mV/–90 mV)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>GluK1-1aEM</td>
+      <td>1.94+0.13 N=8 (****p&lt;0.0001)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2.63±0.04 N=3 (p=0.3501)</td>
+      <td>-</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GluK1-1a</td>
+      <td>5.21±0.50 N=11</td>
+      <td>72.06±2.33 N=5</td>
+      <td>1.51±0.13 N=8</td>
+      <td>3.53±0.81 N=4</td>
+      <td>0.96±0.11 N=7</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>3.56±0.22 N=9 (**p=0.0090)</td>
+      <td>49.61±5.23 N=7 (**p=0.0075)</td>
+      <td>1.25±0.04 N=8 (p=0.1500)</td>
+      <td>0.68±0.07 N=8 (*p=0.0390)</td>
+      <td>1.16±0.09 N=7 (p=0.1880)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>69.62±9.98 N=6 (**p=0.0024)</td>
+      <td>68.96±4.36 N=9 (p=0.7459)</td>
+      <td>1.00±0.07 N=13 (**p=0.0096)</td>
+      <td>8.32±0.81 N=5 (**p=0.0044)</td>
+      <td>0.80±0.05 N=4 (p=0.2401)</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GluK1-2a</td>
+      <td>3.55±0.23 N=12 (**p=0.0092)</td>
+      <td>93.20±0.55 N=8 (***p=0.0006)</td>
+      <td>0.56±0.04 N=15 (****p&lt;0.0001)</td>
+      <td>5.31±0.50 N=7 (p=0.1191)</td>
+      <td>0.61±0.10 N=7 (*p=0.0385)</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>4.32±0.34 N=8 (p=0.1495)</td>
+      <td>76.99±3.41 N=6 (**p=0.0085)</td>
+      <td>1.37±0.12 N=10 (****p&lt;0.0001)</td>
+      <td>1.15±0.12 N=5 (***p=0.0002)</td>
+      <td>1.14±0.14 N=3 (*p=0.0338)</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>21.68±2.64 N=6 (**p=0.0017)</td>
+      <td>65.98±2.41 N=7 (****p&lt;0.0001)</td>
+      <td>1.16±0.04 N=8 (****p&lt;0.0001)</td>
+      <td>7.91±0.71 N=4 (*p=0.0430)</td>
+      <td>1.37±0.10 N=3 (**p=0.0022)</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>K375H376-A</td>
+      <td>3.80±0.33 N=5 (*p=0.0332)</td>
+      <td>71.07±5.27 N=5 (p=0.9998)</td>
+      <td>1.43±0.07 N=5 (p=0.6195)</td>
+      <td>1.10±0.22 N=4 (**p=0.0095)</td>
+      <td>0.78±0.05 N=4 (p&gt;0.9999)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>3.38±0.14 N=8 (p=0.4947)</td>
+      <td>54.64±5.18 N=6 (p=0.5086)</td>
+      <td>1.76±0.14 N=8 (**p=0.0070)</td>
+      <td>1.15±0.11 N=9 (**p=0.0026)</td>
+      <td>0.64±0.04 N=4 (***p=0.0008)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>42.57±11.96 N=4 (p=0.1280)</td>
+      <td>61.03±5.12 N=5 (p=0.6416)</td>
+      <td>1.02±0.02 N=5 (Pp0.7791)</td>
+      <td>9.32±0.15 N=3 (p=0.6286)</td>
+      <td>0.60±0.06 N=5 (p=0.1138)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>K375/379/382 A</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>2.82±0.18 N=6</td>
+      <td>64.13±5.26 N=5</td>
+      <td>1.42±0.08 N=6</td>
+      <td>0.74±0.08 N=6</td>
+      <td>1.28±0.10 N=6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Y378V380W381-A</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>3.31±0.16 N=9</td>
+      <td>71.48±4.66 N=5</td>
+      <td>1.76±0.21 N=7</td>
+      <td>1.02±0.07 N=7</td>
+      <td>0.77±0.14 N=5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>45.79±17.32 N=3</td>
+      <td>51.82±4.88 N=3</td>
+      <td>1.19±0.11 N=3</td>
+      <td>9.45±1.21 N=3</td>
+      <td>1.03±0.44 N=4</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>K375-K382-8A</td>
+      <td>Non-functional N=15</td>
+      <td>Non-functional N=5</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Non-functional N=5</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>Non-functional N=11</td>
+      <td>Non-functional N=4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Non-functional N=5</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>Non-functional N=11</td>
+      <td>Non-functional N=5</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Non-functional N=6</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>K375H376-E</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>3.59±0.29 N=4</td>
+      <td>13.78±3.16 N=5</td>
+      <td>0.70±0.19 N=4</td>
+      <td>0.63±0.10 N=3</td>
+      <td>0.68±0.19 N=3</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>H376-E</td>
+      <td>5.07±0.42 N=7 (p=0.8408)</td>
+      <td>29.80±13.21 N=4 (*p=0.0471)</td>
+      <td>0.88±0.05 N=3 (*P=0.0272)</td>
+      <td>1.48±0.18 N=8 (*p=0.0112)</td>
+      <td>0.44±0.07 N=6 (**p=0.0023)</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>2.69±0.15 N=5 (**p=0.0065)</td>
+      <td>59.24±8.62 N=4 (p=0.3813)</td>
+      <td>2.36±0.30 N=4 (*P=0.0328)</td>
+      <td>0.66±0.05 N=5 (p=0.7939)</td>
+      <td>0.80±0.19 N=4 (p=0.3625)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>50.88±6.49 N=4</td>
+      <td>28.82±6.43 N=5 (**p=0.0034)</td>
+      <td>1.43±0.13 N=4 (*P=0.0347)</td>
+      <td>4.98±0.81 N=3 (*p=0.0237)</td>
+      <td>0.42±0.08 N=8 (**p=0.0056)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>K375/379/382H376-E</td>
+      <td>9.62±1.47 N=6 (*p=0.0290)</td>
+      <td>54.25±8.28 N=3 (*p=0.0396)</td>
+      <td>1.17±0.28 N=3 (P=0.3733)</td>
+      <td>4.83±0.31 N=3 (p=0.2774)</td>
+      <td>0.62±0.14 N=7 (*p=0.0499)</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>3.74±0.20 N=8 (p=0.5390)</td>
+      <td>57.72±12.65 N=3 (p=0.5996)</td>
+      <td>1.69±0.15 N=6 (*p=0.0326)</td>
+      <td>0.66±0.08 N=8 (p=0.8702)</td>
+      <td>1.23±0.07 N=6 (p=0.5351)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>65.57±17.04 N=8 (p=0.8412)</td>
+      <td>26.66±2.05 N=4 (****p&lt;0.0001)</td>
+      <td>0.86±0.08 N=4 (p=0.2045)</td>
+      <td>6.57±0.61 N=3 (p=0.3588)</td>
+      <td>0.72±0.09 N=4 (p=0.6677)</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>K368/375/379/382H376-E</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>4.86±0.67 N=5 (p=0.1242)</td>
+      <td>10.39±.3.53 N=5</td>
+      <td>1.15±0.20 N=4 (p=0.6495)</td>
+      <td>0.21±0.12 N=3</td>
+      <td>0.59±0.13 N=5 (**p=0.0081)</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td colspan="5">Low peak amplitudes (≤40 pA)</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>K368-E</td>
+      <td>7.89±1.14 N=3 (*p=0.0334)</td>
+      <td>46.66±5.88 N=5 (**p=0.0093)</td>
+      <td>0.81±0.13 N=5 (**p=0.0037)</td>
+      <td>5.61±0.95 N=3 (*p=0.0417)</td>
+      <td>a N=7 (****p&lt;0.0001)</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto1</td>
+      <td>4.37±0.25 N=4 (*p=0.0393)</td>
+      <td>59.68±8.72 N=3 (p=0.3851)</td>
+      <td>6.99±0.47 N=5 (***p=0.0002)</td>
+      <td>0.43±0.05 N=6 (*p=0.0118)</td>
+      <td>2.84±0.16 N=3 (**p=0.0021)</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>+Neto2</td>
+      <td>79.40±4.44 N=5 (p=0.4012)</td>
+      <td>33.47±8.98 N=5 (*p=0.0388)</td>
+      <td>2.13±0.13 N=4 (***p=0.0007)</td>
+      <td>7.66±0.83 N=3 (p=0.9473)</td>
+      <td>0.76±0.26 N=8 (p=0.9860)</td>
+      <td>43</td>
+    </tr>
+  </tbody>
+</table>
 
 Next, we evaluated glutamate sensitivity for the two variants. Dose-response experiments (glutamate, GluK1-1a: 0.1–2 mM, and GluK1-2a: 0.01–3 mM) showed a significantly lower potency of glutamate for GluK1-1a variant compared to the non-spliced form (EC50 glutamate), GluK1-1a: 379.3±52 µM, GluK1-2a: 187.7±33 µM *p=0.0129 (Figure 2C; Table 1). However, for high-affinity agonist kainate, the dose-response curves for both variants were similar, likely indicating differences in the stability of glutamate versus the kainate-bound states in GluK1-1a and GluK1-2a (Figure 2D; Figure 2—figure supplement 1). Thus, the potency of kainate (1 mM) versus glutamate (10 mM) (IK/IG ratio) is significantly higher for GluK1-1a compared to GluK1-2a (GluK1-1a: 1.51±0.13, GluK1-2a: 0.56±0.4 ****p<0.0001) (Figure 2D; Table 1).
 
 Furthermore, we investigated the voltage-dependent endogenous polyamine block and found significant differences between the two variants. The presence of splice residues seemed to enhance outward currents at positive potentials in GluK1-1a compared to GluK1-2a (rectification index,+90 mV/–90 mV; GluK1-1a=0.96 ± 0.11; GluK1-2a=0.61 ± 0.10 *p=0.0385) without affecting the reversal potential (Figure 2E; Table 1). How splice residues situated ~92 Å away from the TM domain (distance between atoms W381 CA in the ATD and L636 CA in the TM3) affect the pore properties is unclear. Earlier reports suggest that rectification in KARs is mainly affected by the TM2 region (Bowie and Mayer, 1995). However, a recent report in which the ATD of GluK2 was deleted also showed enhanced rectification (Li et al., 2019). Splice residues likely alter pore structure by allosteric mechanisms that have (are) yet to be identified, thereby affecting rectification (Perrais et al., 2009). We also performed outside-out patch recordings to examine GluK1-1a receptors. However, we observed extremely weak electrical currents with low amplitudes when GluK1-1a was expressed in isolation. Consequently, the data we obtained from these recordings did not provide reliable results for curve fitting or thorough analysis.
 
-## ATD splice insert impacts GluK1 receptor modulation by Neto proteins
+### ATD splice insert impacts GluK1 receptor modulation by Neto proteins
 
 Neto 1 and Neto 2 proteins significantly influence the surface expression, synaptic localization, and functional properties of the GluK1-2a receptors (Copits et al., 2011; Palacios-Filardo et al., 2016; Sheng et al., 2015). It has been demonstrated that desensitization of GluK1-2a is accelerated by Neto1 but delayed by Neto2 (Sheng et al., 2015; Copits et al., 2011; Palacios-Filardo et al., 2016). Hence, to understand the influence of these KAR auxiliary proteins on GluK1-1a, we performed an electrophysiological analysis of GluK1-1a and GluK1-2a receptors co-expressed with either Neto1 or Neto2. Co-expression of Neto1 hastened desensitization of GluK1-1a significantly but not of GluK1-2a at saturating glutamate concentrations (ƮDes, GluK1-1a +Neto1: 3.56±0.22 ms **p=0.0090; GluK1-2a + Neto1: 4.32±0.34 p=0.1495). On the other hand, Neto2 led to a ~13.4 fold decrease in the desensitization rate of GluK1-1a (ƮDes, GluK1-1a: 5.21±0.50 ms, +Neto2: 69.62±9.98 ms **p=0.0024) while the desensitization rate of GluK1-2a was decreased only by ~6.1 fold (ƮDes, GluK1-2a: 3.55±0.23 ms, +Neto2: 21.68±2.64 ms **p=0.0017). Thus, while Neto1 accelerated the desensitization of GluK1-1a, Neto2 significantly slowed it at saturating glutamate concentrations. The rate of desensitization for GluK1-1a was approximately 3.2 times slower compared to GluK1-2a (***p=0.0009) when coexpressed with Neto2 (Figure 3A; Table 1). Thus, the presence of splice insert leads to differential modulation of GluK1 desensitization by Neto proteins.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig3-v1.jpg)
+
+**Figure 3.:** (A) Shows mean-weighted Tau (τDes) values calculated at 100 ms for GluK1-1a (red) and GluK1-2a (green), respectively, with full-length Neto1 (blue/light blue) or Neto2 (black/gray), in the presence of glutamate. Representative normalized traces are shown for 100 ms application of 10 mM glutamate for HEK293 cells co-expressing GluK1-1a or GluK1-2a with Neto1 and Neto2. (B) Shows Tau (τRecovery) values plotted for GluK1-1a and GluK-2a, respectively, with full-length Neto1 or Neto2. Relative amplitude graphs for each receptor in the absence or presence of Neto proteins are also depicted. (C) Demonstrates the glutamate dose-response curves for GluK1-1a with Neto proteins. (D) Indicates the ratio of peak amplitudes evoked in the presence of 1 mM kainate and 10 mM glutamate for GluK1-1a or GluK1-2a with or without Neto proteins. (E) The ratio of currents evoked by the application of 10 mM glutamate at +90 mV and –90 mV for the receptors in the absence or presence of Neto proteins is shown. (F) Shows representative IV plots for GluK1-1a and GluK1-2a for the receptor alone versus with Neto proteins, respectively. Panels (G) and (H) show data recorded from outside-out pulled patches. (G) Displays desensitization kinetics for GluK1-1a (red) and GluK1-2a (green) with or without Neto proteins, respectively. (H) Shows deactivation kinetics at 1 ms for GluK1-1a (red) and GluK1-2a (green) with or without Neto proteins. Error bars indicate mean ± SEM, N in each bar represents the number of cells used for analysis, and * indicates the significance at a 95% confidence interval.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Displays representative traces for GluK1-1a in the presence of Neto1 (blue) or Neto2 (black) with varying concentrations of glutamate (3 µM, 30 µM, 100 µM, and 1000 µM). Ligand application for receptors with Neto1 and Neto2 was 100 ms, and 1000 ms, respectively. (B) Representative 100ms traces for currents evoked in the presence of glutamate vs. kainate in the absence and presence of Neto proteins.
 
 Moreover, Neto1 also enhanced the recovery from desensitization for both the variants (ƮRecovery, GluK1-1a: 3.53±0.81 s, +Neto1: 0.68±0.07 s *p=0.0390; GluK1-2a: 5.31±0.50 s +Neto1: 1.15±0.12 s ***p=0.0002). GluK1-1a recovers ~1.7 times faster than GluK1-2a (*p=0.0125) when co-expressed with Neto1. Neto 2, on the other hand, slowed recovery for both variants to a similar extent (ƮRecovery, GluK1-1a: 3.53±0.81 s, +Neto2: 8.32±0.81 s **p=0.0044; GluK1-2a: 5.31±0.50 s, +Neto2: 7.91±0.71 s *p=0.0430) and did not show differential modulation (Figure 3B; Table 1). In addition, both Neto1 and Neto2 increased the potency of glutamate for GluK1-1a by 9.7-fold (39±10 µM) and 11.2-fold (34±8 µM), respectively (Figure 3C; Figure 3—figure supplement 1A). This is similar to the effect observed in GluK1-2a receptors whereby the glutamate EC50 was shown to increase by Neto proteins Neto1: 34-fold and Neto2: 7.5-fold (Palacios-Filardo et al., 2016) and Neto1/2: 30–10 X (Fisher, 2015).
 
@@ -54,19 +418,106 @@ Next, we investigated the effects of Neto1 and Neto2 on the voltage-dependent en
 
 We also calculated desensitization and deactivation kinetics in excised outside-out patches. However, GluK1-1a receptors, when expressed alone, exhibited low peak amplitudes in outside-out recordings that prevented reliable calculation of gating kinetics. Hence, we only compared the properties of receptors co-expressed with Neto proteins, and the results were consistent with those obtained from whole-cell recordings (Figure 3G-H, Table 2). Neto 2 slowed down desensitization of GluK1-1a by ~1.5 times compared to GluK1-2a (ƮDes, GluK1-1a +Neto2: 31.89±4.08 ms; GluK1-2a +Neto2: 20.91±2.11; p=0.0665) (Figure 3G, Table 2). The desensitization rates for GluK1-1a and GluK1-2a receptors co-expressed with Neto1 was also significantly altered (ƮDes, GluK1-1a +Neto1: 4.83±0.46 ms; GluK1-2a +Neto2: 2.84±0.35; *p=0.0310) (Figure 3G, Table 2). Faster solution exchange times in excised patch recordings also allowed us to measure deactivation kinetics using a 1ms application of 10 mM glutamate. Surprisingly, unlike desensitization, for receptors coexpressed with Neto2, the deactivation rate of GluK1-1a is significantly faster compared to that of GluK1-2a (ƮDea, GluK1-1a +Neto2: 5.18±0.65 ms; GluK1-2a +Neto2: 10.74±1.48; **p=0.0077). In contrast, Neto1 did not significantly alter deactivation kinetics of both GluK1 variant receptors (ƮDea, GluK1-1a +Neto1: 2.83±0.20 ms; GluK1-2a +Neto1: 2.14±0.37; p=0.2086) (Figure 3H, Table 2). Thus, both whole-cell and excised patch recordings confirm the unique functional properties and differential modulation by Neto proteins due to the presence of fifteen amino acid inserts in GluK1-1a receptors.
 
-## Mutations in GluK1-1a splice insert alter channel properties
+**Table 2.**
+ Excised patch outside-out electrophysiology of GluK1-1a and GluK1-2a in the absence or presence of Neto1 (green) or Neto2 (peach).Errors are reported as SEM. Statistical-significance is reported at 95% CI. p<0.05 (*), p<0.01 (**), p<0.001 (***), p<0.0001 (****) for comparisons between GluK1-1a and GluK1-2a receptors in presence of Neto proteins. Red p-values are statistical significance at 95% for comparison between GluK1-1a and GluK1-2a with either of the Neto proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name of the construct</th>
+      <th>Deactivation</th>
+      <th></th>
+      <th>Desensitization</th>
+      <th></th>
+      <th>Total No. of cells tested</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>ƮDeact (ms)</th>
+      <th>Rise Time (ms)</th>
+      <th>ƮDes (ms)</th>
+      <th>Rise Time (ms)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GluK1-1a</td>
+      <td>Low peak amplitude</td>
+      <td>0.68±0.19 (N=3)</td>
+      <td>Low peak amplitude</td>
+      <td>0.48±0.1 (N=3)</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>+Neto1</td>
+      <td>2.83±0.2 (N=9)</td>
+      <td>0.75±0.04 (N=9) (p=0.7615)</td>
+      <td>4.83±0.46 (N=9)</td>
+      <td>0.71±0.04 (N=9)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>+Neto2</td>
+      <td>5.18±0.65 (N=3)</td>
+      <td>1.5±0.24 (N=3) (p=0.0627)</td>
+      <td>31.89±4.08 (N=4)</td>
+      <td>1.87±0.06 (N=4)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>GluK1-2a</td>
+      <td>1.51±0.28 (N=4)</td>
+      <td>0.58±0.06 (N=4)</td>
+      <td>2.34±0.35 (N=5)</td>
+      <td>0.72±0.07 (N=5)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>+Neto1</td>
+      <td>2.14±0.37 (N=10) (p=0.2086)</td>
+      <td>0.75±0.06 (N=10) (p=0.0731)</td>
+      <td>2.84±0.69 (N=9) (p=0.5312 / *p=0.0310)</td>
+      <td>0.69±0.07 (N=9)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>+Neto2</td>
+      <td>10.74±1.48 (N=8) (***p=0.0004 / **p=0.0077)</td>
+      <td>1.47±0.23 (N=8) (p=0062)</td>
+      <td>20.91±2.11 (N=9) (***p=0.0003 / p=0.0665)</td>
+      <td>1.42±0.25 (N=9)</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mutations in GluK1-1a splice insert alter channel properties
 
 Since our electrophysiological analysis showed functional differences between the two splice variants and their modulation by Neto proteins, we created receptors with mutated splice residues and conducted functional assays to identify the key residues. The splice insert (KASGEVSKHLYKVWK) is dominated by positively charged residues and contains four lysines and one histidine. We hypothesized that these charged residues might affect the interactions at the ATD-LBD interface and influence receptor functions. To investigate this, we prepared charge-reversal (K/H to E) and charge-neutral (K/H to A) mutants and carried out functional assays (Figure 4—source data 2). Our cell surface biotinylation assay showed that all mutants (glutamate or alanine) reached the cell surface efficiently (data not shown). However, the charge-neutral mutants (K/H to A) gave either very low peak amplitudes (<40 pA) or were not functional and hence, were not included in the study. The charge reversal mutants K368-E and K375/379/382H376-E revealed fascinating insights into the role of splice residues in altering GluK1 receptor properties (Figure 4A). Interestingly, both mutants, K368-E and K375/379/382H376-E exhibited a significantly slower rate of glutamate-evoked desensitization compared to wild-type GluK1-1a (ƮDes, GluK1-1a: 5.21±0.50 ms; K368-E: 7.89±1.14 ms *p=0.0334; K375/379/382H376-E: 9.62±1.47 *p=0.0290) (Figure 4B; Table 1). We also observed a significant delay in the recovery from the desensitized state for K368-E mutant (K368-E: 5.61±0.95 s *p=0.0417) compared to wild-type GluK1-1a. In addition, the K375/379/382H376-E mutant also exhibited a slowdown in the recovery, though not significant. (K375/379/382H376-E: 4.83±0.31 s p=0.2774) (Figure 4C; Table 1). Our investigations of glutamate- and kainate-evoked responses for wild-type and mutant receptors considering their peak amplitudes (IK/IG) revealed a significant decrease for the K368-E mutant (GluK1-1a: 1.51±0.13; K368-E: 0.81±0.13 **p=0.0037) and a reduction was observed for K375/379/382H376-E receptors (1.17±0.28 p=0.3733) compared to wild-type although the differences do not reach statistical significance (Figure 4D; Table 1). These observations are reciprocal to the effect of splice insert compared to the non-spliced form, indicating the importance of these residues in influencing receptor desensitization and recovery. A similar trend reversal was also observed for the measurements of the rectification index for these mutants at positive and negative potentials (+90 mV and –90 mV). The rectification index was significantly reduced in the case of mutant K375/379/382H376-E (K375/379/382H376-E: 0.62±0.14 *p=0.0499). Surprisingly, no outward rectification was observed for the K368-E mutant, and further investigation is needed to fully understand the reasons for the same (Figure 4E; Figure 5—figure supplement 2C; Table 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig4-v1.jpg)
 
-**Figure 4.:** Bar graphs (mean ± SEM) show a comparison between wild-type and mutant receptors for different kinetic properties. (A) Schematic representation of 15 residues amino-terminal domain (ATD) splice (K368ASGEVSKHLYKVWK382) in wild-type and mutant receptors under study (B) Mean-weighted Tau (τDes) values for GluK1-1a wild-type and mutant receptors in the presence of 10 mM glutamate. (C) Tau (τRecovery) recovery values for GluK1-1a and mutants. (D) The ratio of the peak amplitudes evoked in the presence of 1 mM kainate and 10 mM glutamate is shown for GluK1-1a mutants.(E) The rectification index represented by the ratio of currents evoked by 10 mM glutamate application at +90 mV and –90 mV for the wild-type and mutant receptors is shown. The wild-type GluK1 splice variant data is the same as from Figure 2A and is replotted here for comparison. Error bars indicate mean ± SEM, N in each bar represents the number of cells used for analysis, and * indicates the significance at a 95% confidence interval.Figure 4—source data 1.Figure 4—source data 2.The various mutants used in the study and the primer sequences to make charge-neutral and charge-reversal mutants in GluK1-1a are tabulated.
+**Figure 4.:** Bar graphs (mean ± SEM) show a comparison between wild-type and mutant receptors for different kinetic properties. (A) Schematic representation of 15 residues amino-terminal domain (ATD) splice (K368ASGEVSKHLYKVWK382) in wild-type and mutant receptors under study (B) Mean-weighted Tau (τDes) values for GluK1-1a wild-type and mutant receptors in the presence of 10 mM glutamate. (C) Tau (τRecovery) recovery values for GluK1-1a and mutants. (D) The ratio of the peak amplitudes evoked in the presence of 1 mM kainate and 10 mM glutamate is shown for GluK1-1a mutants.(E) The rectification index represented by the ratio of currents evoked by 10 mM glutamate application at +90 mV and –90 mV for the wild-type and mutant receptors is shown. The wild-type GluK1 splice variant data is the same as from Figure 2A and is replotted here for comparison. Error bars indicate mean ± SEM, N in each bar represents the number of cells used for analysis, and * indicates the significance at a 95% confidence interval.
 
-## GluK1-1a splice residues K368, K375, H376, K379, and K382 influence receptor modulation by Neto proteins
+### GluK1-1a splice residues K368, K375, H376, K379, and K382 influence receptor modulation by Neto proteins
 
 Next, we investigated the effects of splice mutants on receptor modulation by Neto proteins. To test whether mutations in splice residues could disrupt interactions with Neto proteins, we performed receptor pull-downs using an antibody against the His-tag of the receptor. Our results showed that the mutant receptors could efficiently pull down Neto1 (detected using the Neto1 antibody) and Neto2-EGFP (detected using the GFP antibody) (Figure 5—figure supplement 1), suggesting that mutants don’t altogether abolish GluK1-1a and Neto interactions.
 
 Furthermore, we conducted electrophysiology experiments to investigate whether coexpression of Neto proteins can restore functionality and influence the functions of splice mutants. We observed that mutant K368-E desensitizes significantly slower in the presence of Neto1 while the mutants K375/379/382H376-E and K368/375/379/382H376-E do not exhibit any significant deviation (ƮDes, GluK1-1a +Neto1: 3.56±0.22 ms; K368-E +Neto1: 4.37±0.25 ms *p=0.0393; K375/379/382H376-E +Neto1: 3.74±0.20 ms p=0.5390; K368/375/379/382H376-E +Neto1: 4.86±0.67 ms p=0.1242) (Figure 5A; Figure 5—figure supplement 2A; Table 1). This observation suggests that some splice residues influence GluK1-1a modulation by Neto1, and more mutational, functional, and structural studies on this interaction are necessary. On the other hand, Neto2 does not significantly affect the desensitization of these mutant receptors compared to wild-type-Neto2 (Figure 5A; Figure 5—figure supplement 2A; Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig5-v1.jpg)
+
+**Figure 5.:** Bar graphs (mean ± SEM) show a comparison between wild-type and mutant receptors with Neto proteins for different kinetic properties. (A) Mean-weighted Tau (τDes) values for GluK1-1a wild-type and mutant receptors in the presence of 10 mM glutamate and expressed with Neto1/2. (B) Tau (τRecovery) recovery values for GluK1-1a and mutants with Neto1/2. (C) The ratio of the peak amplitudes evoked in the presence of 1 mM kainate and 10 mM glutamate for GluK1-1a mutants co-expressed with Neto1/2 is shown. (D) The rectification index represented by the ratio of currents evoked by 10 mM glutamate application at +90 mV and –90 mV for the wild-type and mutant receptors with Neto proteins is shown. The wild-type GluK1 splice variants’ data is the same as in Figure 2 and is replotted here for comparison. Error bars indicate mean ± SEM, N in each bar represents the number of cells used for analysis, and * indicates the significance at a 95% confidence interval.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) represent the raw western blots for receptor pull-down experiments using His-antibody (CST). The left and right panels show the inputs and eluates for the co-IP. Actin was used as an internal control. The antibodies used to detect receptor or Neto proteins have been indicated. Rabbit IgG controls were set up using WT receptor with Neto1 or Neto2 and negative control along with the test samples to check for non-specific interactions. All the experiments were done in triplicates. Charge-neutral (Ala) mutants are labeled in gray, charge reversal (Glu) mutants in cyan and marker, and controls in black. Red asterisks are mutants not used for further studies. The molecular weight of markers and the expected proteins have been indicated. Green boxes display that the mutant receptors shown in the functional analysis were able to interact with both Neto proteins efficiently when co-transfected with Neto1 or Neto2. The western blots are raw images without any editing, they are assembled as they were cut from the same blot for probing with respective primary and secondary antibodies as mentioned in the panels A and B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Demonstrates the normalized traces for wild-type and mutant receptors with Neto1/2 for glutamate-evoked desensitization. (B) Displays representative traces for glutamate vs. kainate evoked responses in the presence of Neto1 or Neto2. (C) Representative 100 ms traces for currents evoked at positive (+90 mV) and negative (–90 mV) potentials in the absence and presence of Neto proteins.
 
 Similarly, K368-E and K368/375/379/382H376-E mutants recover significantly faster from the desensitized state when coexpressed with Neto1. On the other hand, the recovery from the desensitized state for mutant receptors is not significantly affected by Neto2. Thus, while Neto1 seems to affect the mutant receptor recovery from the desensitized state, Neto 2 doesn’t show significant differences compared to wild-type receptors, again highlighting the differential modulation of GluK1-1a receptors by Neto proteins (Figure 5B; Table 1).
 
@@ -76,11 +527,255 @@ Consistent with the observation above, our examination of the rectification inde
 
 Thus, our analysis of the gating properties of GluK1-1a mutants co-expressed with Neto proteins suggests that positively charged residues at positions 368, 375, 376, 379, and 382 in the splice insert influence receptor modulation by Neto proteins. Neto1 appears to have more pronounced effects on the mutant receptors compared to Neto2. Specifically, Neto1 significantly slowed desensitization for the K368-E mutant, accelerated recovery from desensitization for K368-E and K368/375/379/382H376-E mutants, increased agonist efficacy for K368-E and K375/379/382H376-E mutants, and altered rectification properties for K368-E and K368/375/379/382H376-E mutants. In contrast, Neto2 had fewer significant effects on the mutant receptors, with the main impact being an increase in agonist efficacy for the K368-E mutant. Notably, Neto2 did not significantly affect desensitization, recovery from desensitization, or rectification properties of the mutant receptors when compared with wild-type GluK1-1a coexpressed with Neto2. These findings suggest that the splice residues in GluK1-1a differentially influence receptor modulation by Neto1 and Neto2, with Neto1 showing more extensive modulation of the mutant receptors' functional properties.
 
-## The structure of GluK1-1aEM shows an overall conserved architecture of the desensitized state in kainate receptors
+### The structure of GluK1-1aEM shows an overall conserved architecture of the desensitized state in kainate receptors
 
 To evaluate the effects of splice residues on domain organization and structure of GluK1-1a receptors, we pursued its structure determination via single particle cryo-EM. Construct optimization was carried out to improve the expression and stability of purified protein. Briefly, the free cysteines in the TM1 region were mutated (C552Y, C557V) based on the sequence analysis with kainate and AMPA receptors, and this construct was named GluK1-1aEM(Figure 6, Figure 6—figure supplements 1 and 2). The whole-cell patch clamp showed that GluK1-1aEM was functional (Figure 6—figure supplement 3).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-v1.jpg)
+
+**Figure 6.:** (A) Shows the segmented density map colored according to unique chains of the receptor tetramer (A- blue, B-pink, C-green, and D-gold) at 5.23 Å in side view and 90° rotated orientations. (B) Shows the final model fitted in the EM map. (C and D) Top views of amino-terminal domain (ATD) and ligand binding domain (LBD) layers. (E & F) Display the segmented map fitted with the corresponding distal (A & C) and proximal (B & D) chains. Receptor sub-domains, the position of splice insertion, and linkers are indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The EM construct was aligned with mature polypeptide sequences of wild-type (WT) rat GluK1-1a, GluK1-2a, GluK2, GluK3, and GluA2. The color scheme grouping was based on the similarity of residues, with gray (G, A, V, L, I), orange (F, Y, W), yellow (C, M), green (S, T), red (K, R, H), blue (D, E), brown (N, Q), and pink (P). The approximate domain boundaries and the residue numbers have been marked with blue inverted triangles and written in parenthesis. Green boxes mark predicted N-linked glycosylation sites (NXT). Purple arrows show cysteine mutations in the EM construct. The predicted secondary structure is shown above the sequence, with red cylinders for the α-helix and green arrows for the β-strand.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic representation of GluK1 splice variants present in the human brain along with a schematic for the GluK1-1aEM construct is shown. The N-terminal Signal Peptide (NSP; 1–34 residues), 15 amino acid splice insert in the amino-terminal domain (ATD), S1/S2 (ligand binding domain, LBD), M1-M4 (trans-membrane domain, TMD) and C-terminal thrombin site followed by EGFP and (His)8 tags. The star in the M1 region denotes the point mutation of free cysteines at positions 552 and 557; the numbering of residues is based on the mature polypeptide. (B) Superose 6 size exclusion chromatography profiles for the purified protein in detergent micelles and nanodisc, respectively, are shown, and the position corresponding to void, receptor tetramer, and empty nanodisc are indicated. SDS-PAGE gel images inset shows the undigested and thrombin-digested protein for GluK1-1aEM in detergent and MSP1E3D1 (green box) co-eluting with GluK1-1aEM (red box), revealing a stable protein-nanodisc complex, respectively. ND indicates receptors in lipid nanodiscs.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The optimized constructs were verified for expression. Here, three free cysteines mutations in the TM1 are represented as C576S (1 x Cys), C552Y, C557V (2 x Cys), and C552Y, C557V, C576S (3 x Cys). 2 x Cys (C552Y, C557V) mutant was used as GluK1-1aEM for structural studies. (A) Western blot probed with anti-His antibody (Cell Signaling Technology, USA) shows the expression of all the mutants with respect to the wild-type (WT) construct; the Expected size of the polypeptide is indicated (MW:~135 kDa). (B) Representative traces for whole-cell patch clamp recordings (36–48 hr post-infection) of HEK293 cells infected with GluK1-1aEM baculovirus is shown. The receptors showed activation by 10 mM Glutamate, blocked in the presence of the inhibitor 10 µM UBP301. Post-washing the reversible inhibitor, the receptor could undergo a similar activation and desensitization cycle in the presence of 2 mM SYM and 10 mM Glutamate. (C) Shows the graphical representation of the percentage of relative current in the presence of 10 µM UBP301, 2 mM SYM, and 10 mM glutamate. (D) Electrophysiology profiles confirm that the GluK1-1aEM construct behaves similarly to the wild-type GluK1-1a in terms of recovery from desensitization. Error bars indicate mean ± SEM, and N in each bar represents the number of cells used for analysis.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) For the GluK1-1aEM ND dataset, 79,084 particles from the final 2D classification were used for initial 3D reconstruction into two classes to remove junk particles. Furthermore, the good 50,816 particles were polished using local motion correction, and the initial 3D map was heterogeneously refined into three classes. The best map (24531 particles, highlighted in red box) was subsequently refined using non-uniform refinement followed by local refinement using the ECD-TMD3 mask to attain the final density map (GluK1-1aEM ND) resolution of 5.23 Å at 0.143 FSC. (B) 6539 particles from the final 2D classification were used to determine ab initio 3D reconstruction of GluK1-1aEM DDM in 2 classes to remove broken particles. The 3D map was refined using good particles (5372, highlighted in red box) with homogenous refinement to obtain a resolution of 9.2 Å. Further, non-uniform refinement followed by local refinement was performed using full-length and extracellular domain (ECD = ATD + LBD) masks to get final resolutions of 8.2 Å (GluK1-1aEM DDM FL) and 8 Å (GluK1-1aEM DDM ECD), respectively.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A, D, and G) Show Fourier Shell Correlation curves at 0.143 and 0.5 cut-offs for GluK1-1aEM ND, GluK1-1aEM DDM ECD, and GluK1-1aEM DDM FL reconstructions, respectively, for unmasked (black) and masked (blue) maps estimated in cryoSPARCv3.1. (B, E, and H) Show the angular distribution of particles for GluK1-1aEM ND, GluK1-1aEM DDM ECD, and GluK1-1aEM DDM FL maps, respectively, as produced by cryoSPARCv3.1. (C, F, and I) Show the local resolution estimates for GluK1-1aEM ND (4–12.5 Å), GluK1-1aEM DDM ECD (5–15 Å), and GluK1-1aEM DDM FL (5–16 Å) maps, respectively.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** Polypeptide chains modeled in the EM maps vs. the full GluK1-1aEM construct are shown. The beginning and ending residues of each modeled domain are indicated by blue triangles for GluK1-1aEM ND, GluK1-1aEM DDM ECD, and FL models. Missing residues are shown as dashed lines that could not be built due to resolution limitations.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp7-v1.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Shows the front and side views of the segmented density map for the DDM solubilized GluK1-1a colored uniquely according to different chains. (B) Shows the atomic model fitted in the EM map. (C, D, and E) Show the top views of amino-terminal domain (ATD), ligand binding domain (LBD), and TMD layers. (F, G) Show the segmented map with fitted chains for each subunit, respectively. Sub-domains and helices of the TMD region are labelled.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp8-v1.jpg)
+
+**Figure 6—figure supplement 8.:** (A) Shows GluK1-1aEM ND with a fitted model in EM density. Chain A is emphasized in blue, and the residual N-linked glycan densities are shown in green color with respective Asn residues labeled from 1 to 9. (B) Shows zoomed view of individual Asn residues with side chain shown as a stick model and the corresponding glycan density in mesh form. For N34, N242, N345, and N394 residues, glycan density (NAG) observed in the GluK1-1a ATD crystal structure has been depicted with a conventional color scheme (C- gray, O- red, N- blue, H- white).
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/89755/elife-89755-fig6-figsupp9-v1.jpg)
+
+**Figure 6—figure supplement 9.:** Each panel (A–F) illustrates a pairwise comparison with superimposed structures, where the root-mean-square deviation (RMSD) values, measured in Å, are indicated adjacent to each comparison. The structural comparison was carried out in ChimeraX and indicates significant structural similarities between all the protein models. The superimposition does not show significant differences in the arrangement at both amino-terminal domain (ATD) and ligand binding domain (LBD) layers of GluK1-1a with respect to GluK1-2a.
+
 The structures of GluK1-1aEM were determined using single-particle cryo-EM. The receptors were either DDM solubilized or reconstituted in lipid nanodiscs and trapped in a desensitized state using 2 mM of high-affinity agonist 2 S, 4R-4-methyl glutamate (SYM2081) (Figure 6—figure supplement 4). A resolution of ~5.2 Å was achieved for the receptors in lipid nanodiscs, but the transmembrane region was not resolved due to an orientation bias (Figure 6; Figure 6—figure supplement 5; Table 3). The full-length receptor in detergent micelles had a resolution of 8.2 Å, including the transmembrane region, which was ~8 Å for the extracellular domain (Figure 6—figure supplement 5; Table 3).
+
+**Table 3.**
+ Cryo-EM data collection, refinement, and validation for GluK1-1aEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">GluK1-1a- 2 S,4R-4-methyl glutamate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>GluK1-1aEM ND</td>
+      <td>GluK1-1aEM DDM ECD</td>
+      <td>GluK1-1aEM DDM FL</td>
+    </tr>
+    <tr>
+      <td colspan="4">Data Collection and Processing</td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>Titan Krios</td>
+      <td colspan="2">Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Voltage (keV)</td>
+      <td>300</td>
+      <td colspan="2">300</td>
+    </tr>
+    <tr>
+      <td>Number of micrographs</td>
+      <td>1535</td>
+      <td colspan="2">1100</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>K2</td>
+      <td colspan="2">Falcon3</td>
+    </tr>
+    <tr>
+      <td>Mode of recording</td>
+      <td>Super resolution with energy filter (20 eV slit)</td>
+      <td colspan="2">Counting</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>12</td>
+      <td colspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Total dose (e-/Å2)</td>
+      <td>40.8</td>
+      <td colspan="2">19.5</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>1.8–3.2</td>
+      <td colspan="2">2.0–3.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.41</td>
+      <td colspan="2">1.38</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>C1</td>
+      <td colspan="2">C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle number</td>
+      <td>1,97,908</td>
+      <td colspan="2">13,750</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>24531</td>
+      <td colspan="2">5372</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>5.23</td>
+      <td>8.01</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Refinement (Phenix)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>(ATD), 3 C32 (LBD), 5KUF(TM3)</td>
+      <td>(ATD), 3 C32 (LBD)</td>
+      <td>(ATD), 3 C32 (LBD), 5KUF (TMD)</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>5.1/7.3</td>
+      <td>7.2/9.0</td>
+      <td>7.8/9.1</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143/0.5</td>
+      <td>0.143/0.5</td>
+      <td>0.143/0.5</td>
+    </tr>
+    <tr>
+      <td>Map-to model fit, CC_mask</td>
+      <td>0.71</td>
+      <td>0.69</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td colspan="4">Model composition</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>21556</td>
+      <td>20880</td>
+      <td>23616</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2684</td>
+      <td>2596</td>
+      <td>2948</td>
+    </tr>
+    <tr>
+      <td colspan="4">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.004</td>
+      <td>0.003</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.861</td>
+      <td>0.796</td>
+      <td>0.805</td>
+    </tr>
+    <tr>
+      <td colspan="4">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.92</td>
+      <td>2.03</td>
+      <td>2.12</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>15.03</td>
+      <td>19.06</td>
+      <td>20.96</td>
+    </tr>
+    <tr>
+      <td colspan="4">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>96.39</td>
+      <td>96.27</td>
+      <td>95.59</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>3.53</td>
+      <td>3.65</td>
+      <td>4.38</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.08</td>
+      <td>0.08</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.3</td>
+      <td>0.17</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Cß outliers (%)</td>
+      <td>0.04</td>
+      <td>0</td>
+      <td>0.04</td>
+    </tr>
+  </tbody>
+</table>
 
 A tetrameric receptor model was built based on the crystal structures of GluK1-1a ATD, GluK1 LBD (kainate-bound state; PDB:3C32), and the TM domain based on a highly identical GluK2EM (PDB:5KUF). Our cryo-EM map represented ATD residues-1–398, but the density corresponding to the ATD splice (368-382) was poorly resolved. The ATD-LBD linkers were resolved for all subunits (A to D) in both structures, the S1 and S2 domains were built entirely, and the TMD (TM1, TM3, and TM4) was built only for detergent-solubilized receptors (Figure 6; Figure 6—figure supplements 6 and 7). For receptors reconstituted in lipid nanodiscs, we observed only the TM3 bundle. TM2 was not resolved in either dataset (Figure 6; Figure 6—figure supplement 7). Extra densities were observed in the ECD layer of the GluK1-1aEM ND map, which coincided with potential N-linked glycosylation sites (Figure 6—figure supplement 8). GluK1-1aEM maps showed general conservation of the architecture of kainate receptors captured in the desensitized state (Khanra et al., 2021; Kumari et al., 2019; Meyerson et al., 2016; Selvakumar et al., 2021). Consistent with earlier studies on homomeric and heteromeric KARs in the desensitized state, GluK1-1a exhibited a modular organization with three layers, namely, the twofold symmetric ATD, quasi-fourfold symmetric LBD and fourfold symmetric TMD. The presence of the ATD splice insert in GluK1-1a did not affect the arrangement of the receptor domains in the desensitized state (Figure 6; Figure 6—figure supplement 7). A superimposition of GluK1-1aEM (detergent-solubilized or reconstituted in nanodiscs) and GluK1-2a (PDB:7LVT) showed an overall conservation of the structures in the desensitized state. No significant movements were observed at both the ATD and LBD layers of GluK1-1a with respect to GluK1-2a (Figure 6; Figure 6—figure supplement 9).
 
@@ -102,13 +797,254 @@ Our research, which encompasses structural, biochemical, biophysical, and functi
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>GRIK1-1a, GRIK1-2a, Neto1, Neto2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GRIK1 was used with mutations in the TM1 region to improve protein expression and stability</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 GnTI- suspension-adapted cells</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td>Used for expression of GluK1-1aEM for large-scale purification</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 WT cells</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td>Used for whole-cell patch-clamp electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-T/17 cells</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td>Used for outside-out patch-clamp electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit monoclonal)</td>
+      <td>Anti-His monoclonal antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 12698</td>
+      <td>Used for co-immunoprecipitation/Western Blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody (Rabbit polyclonal)</td>
+      <td>Anti-Neto1 polyclonal antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>SAB3500679</td>
+      <td>Used for co-immunoprecipitation/Western Blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody (Mouse Monoclonal)</td>
+      <td>Anti-GFP</td>
+      <td>Sigma-Aldrich</td>
+      <td>G1546</td>
+      <td>Used for co-immunoprecipitation/Western Blotting</td>
+    </tr>
+    <tr>
+      <td>Antibody (Mouse Monoclonal)</td>
+      <td>Anti-Actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A3853</td>
+      <td>Used for co-immunoprecipitation/Western Blotting</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SYM2081 (2 S, 4R-4-methyl glutamate)</td>
+      <td>Tocris Bioscience</td>
+      <td>31137-74-3</td>
+      <td>Used to stabilize the receptor and electrophysiology experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>UBP301</td>
+      <td>Tocris Bioscience</td>
+      <td>569371-10-4</td>
+      <td>Used to stabilize the receptor and electrophysiology experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Kainic acid</td>
+      <td>Tocris Bioscience</td>
+      <td>487-79-6</td>
+      <td>Used to stabilize the receptor and electrophysiology experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-Glutamic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>49449</td>
+      <td>Used to stabilize the receptor and electrophysiology experiments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>8.17500</td>
+      <td>Added to boost protein production</td>
+    </tr>
+    <tr>
+      <td>Commercial assay kit</td>
+      <td>Bio-Beads SM-2</td>
+      <td>Bio-Rad</td>
+      <td>1523920</td>
+      <td>Used for detergent removal during nanodisc reconstitution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGBacMam vector</td>
+      <td>Eric Gouaux's lab (shared)</td>
+      <td></td>
+      <td>Used for protein expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GluK1-1a and GluK1-2a in pRK7 vector</td>
+      <td>Mark Mayer’s lab (shared)</td>
+      <td></td>
+      <td>Used for electrophysiology experiments</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>cryoSPARCv3</td>
+      <td>Nature Methods Punjani et al., 2017</td>
+      <td>DOI:10.1038/nmeth.4169</td>
+      <td>Used for single-particle data processing</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>UCSF Motioncor2</td>
+      <td>Nature Methods Zheng et al., 2017</td>
+      <td>DOI 10.1038/nmeth.4193</td>
+      <td>Used for motion correction of cryo-EM data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>Goddard et al., 2018</td>
+      <td>RRID:SCR_015872</td>
+      <td>Molecular</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td>Molecular</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>RRID:SCR_014222</td>
+      <td>Protein Model</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>Adams et al., 2010</td>
+      <td>RRID:SCR_014224</td>
+      <td>Protein Model</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Molecular Devices</td>
+      <td>11.2</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fitmaster</td>
+      <td>HEKA Elektronik</td>
+      <td>v2x90.4</td>
+      <td>Electrophysiology data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dotmatics</td>
+      <td>GraphPad Prism</td>
+      <td>version 8.0.1</td>
+      <td>Used for statistical analysis and graphs/plots</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Sequences given in Figure 4—source data 2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Soybean polar lipids</td>
+      <td>Avanti Polar Lipids</td>
+      <td>541602 P</td>
+      <td>Used for the reconstitution of GluK1-1aEM in nanodiscs</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dodecyl-β-maltoside (DDM)</td>
+      <td>Anatrace</td>
+      <td>D310LA</td>
+      <td>Used for solubilization of membrane fractions</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALON Cobalt Resin</td>
+      <td>Clontech Takara</td>
+      <td>635653</td>
+      <td>Used for IMAC purification</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein A Agarose Beads</td>
+      <td>Thermo Scientific</td>
+      <td>20334</td>
+      <td>Used for pull-down assays</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete Protease Inhibitor Cocktail</td>
+      <td>Roche (Merck)</td>
+      <td>11697498001</td>
+      <td>Added to buffers used for protein purification</td>
+    </tr>
+  </tbody>
+</table>
+
 HEK293 WT, HEK293 GnTI-S, and HEK293-T/17 cells were procured from the American Type Culture Collection (ATCC, USA), accompanied by an authentication certificate and a mycoplasma-free certificate to ensure their quality and integrity.
 
-## Whole-cell patch-clamp electrophysiology
+### Whole-cell patch-clamp electrophysiology
 
 A whole-cell patch-clamp analysis was performed to understand the functional differences between GluK1-1a and GluK1-2a, as well as their modulation by Neto proteins. HEK293 WT mammalian cells were seeded on siliconized glass coverslips in 35 mm dishes using Dulbecco’s Modification of Eagle’s Medium (DMEM) containing 10% fetal bovine serum (FBS), 2 mM glutamine, and 10 units/mL Penicillin-Streptomycin 24 hr before transection. Cells were transfected with rat (Rattus norvegicus) GRIK1-1a or GRIK1-2a cloned in pRK7 (in the presence or absence of rNeto1/rNeto2 cloned in IE-pRK8 as indicated) with EGFP expressing plasmid using Xfect (Clontech) according to manufacturer’s instructions (receptor: Neto in 1: 3 and Receptor: EGFP in 1:1 DNA concentration). Similar protocols were followed to test the functionality of the GRIK1-1aEM and GRIK1-1a splice mutant constructs. The whole-cell patch-clamp recording was performed with an EPC 10 USB amplifier (HEKA) 24–48 hr post-transfection. Cells were lifted using 1.5 mm diameter thin wall glass capillary tubes (30–0066 Harvard Apparatus), pulled to a fine tip with a Sutter P-1000 micropipette puller (Sutter Instruments, Novato, CA) containing internal solution (10 mM HEPES pH 7.4, 100 mM CsF, 30 mM CsCl, 4 mM NaCl, 0.5 mM CaCl2, 5 mM EGTA and 300 mOsm). Cells were continuously perfused with external/bath solution (10 mM HEPES pH 7.4, 150 mM NaCl, 2.8 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, and 300 mOsm) through a peristaltic perfusion system (Multichannel systems). Current was measured by holding the membrane at –60 mV, using a 2 kHz low-pass filter. Ligands (10 mM glutamate, 1 mM kainate, 2 mM SYM2081, or 10 µM UBP301) were applied through a double-barrelled theta pipette connected with an ultra-fast piezo-based perfusion system (Multichannel systems) via v8 Perfusion Fast-Step System (VC-77SP). Recordings were controlled and measured using Patchmaster-v2x90.2 (Heka Elektronik). The raw files were analyzed using Clampfit 11.2 (Molecular Devices) and Fitmaster-v2x90.4 (HEKA Elektronik). The data was fitted to logistic curves in GraphPad Prism (GraphPad Software Inc). All traces were normalized before being used for calculations. The single exponential two-term fitting (Levenberg-Marquardt) was used to estimate the rate of desensitization (ƮDes) for 100ms glutamate application, measured as the decline of the current from 80% of its peak amplitude. Mean-weighted Tau (τDes) values were determined using the formula [(τ1×amplitude1) + (τ2×amplitude2)]/[amplitude1 +amplitude2] where the tau values are the time constants from the exponential fit and the amplitudes are the assessed contributions of each component to the total peak current amplitude. To compute the recovery from desensitization, a series of paired-pulse experiments were performed with varying time pulses, where the amplitudes of the test pulse were normalized to that of the desensitizing pulse (calculated as relative amplitude) and plotted in comparison to the time (in seconds) between these two pulses. The recovery rate (ƮRecovery) was obtained by fitting the one‐phase association with an exponential function. Dose-response experiments were performed for GluK1-1a (co-expressed with or without Neto proteins) and GluK1-2a with different concentrations of glutamate or kainate in the range of 1 µM to 3 mM or 0.5 µM to 600 µM, respectively. Dose-response values were calculated as the percentage of maximum response against log[agonist] concentrations and fitted using variable slope (Hill’s equation) in GraphPad Prism 8.0.1. For calculating kainate efficacy (IK/IG), the ratio of peak amplitudes obtained from the same cell evoked first by glutamate followed by kainate were employed. A ratio of peak amplitudes obtained at +90/–90 mV was utilized to calculate the rectification index. We investigated the voltage-dependent endogenous polyamine block by measuring current-voltage relationships for the wild-type GluK1 receptors in the absence or presence of Neto proteins. Current-voltage (IV) plots were prepared using the voltage ramp from –90 to +90 mV with a 10 mV increment step only after complete recovery of the receptor, and the current amplitude was normalized to that obtained at –90 mV. For the mutant receptors, current values were obtained only for 3 voltage steps, –90, 0, and +90 mV. For kainate-evoked currents, the percentage desensitization was calculated. The steady-state current measured at the end of 1 s kainate application was divided by peak current. This ratio was then subtracted from 1 and multiplied by 100 to give percentage (%) desensitization (Fisher and Fisher, 2014).
 
-## Outside-out patch electrophysiology
+### Outside-out patch electrophysiology
 
 HEK 293 T/17 cells were used for outside-out patch experiments 48–96 hr post transfection. Cells were transfected with GRIK1-1a or GRIK1-2a cloned in pRK7 (in the presence or absence of rat (Rattus norvegicus) rNeto1/rNeto2 cloned in IE-pRK8 as indicated) with EGFP expressing plasmid at DNA ratios of 3:0.5 for receptor alone and 2:8:0.5 with Neto proteins, respectively, using TransIT-LT1 Transfection Reagent according to manufacturer’s instructions.
 
@@ -116,27 +1052,27 @@ The extracellular solution used for the experiment contained 10 mM HEPES pH 7.3,
 
 Patch micropipettes were pulled using a P-97 Sutter puller, and the resistance was maintained at 2.3–2.6 megaohms. After forming the whole-cell configuration, the patch was pulled away from the cell to facilitate an outside-out patch. The cells were voltage-clamped at –70 mV, and a saturated concentration of glutamate (10 mM) was rapidly applied using a three-barrelled theta glass attached to a Siskiyou MXPZT-300 solution switcher. Glutamate applications of 1ms were used to determine deactivation, while 100 or 1000 ms applications were used to assess desensitization.
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons between wild-type receptors, EM, or mutant constructs were obtained using an unpaired t-test (two-tailed, with or without the Welch test) or Brown-Forsythe and Welch ANOVA, followed by Dunnett’s multiple comparisons. Statistical analysis was carried out in GraphPad Prism, version 8.0.1. p-values <0.05 were considered statistically significant and are reported (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001).
 
-## Site-directed mutagenesis (SDM)
+### Site-directed mutagenesis (SDM)
 
 Based on our electrophysiology analysis of the wild-type GluK1-1a/GluK1-2a receptors, structural analysis of GluK1-1aEM, and recent reports that suggest that the presence of the positive patches in GluK2 ATD affects the interaction with Neto proteins (Li et al., 2019; He et al., 2021; Vinnakota et al., 2021), we performed SDM to understand the role of splice residues in the receptor kinetics. All splice mutations were introduced in the wild-type (species)GRIK1-1a pRK7 construct for electrophysiology, as well as the GRIK1-1aEM-EGFP-His8-pEGBacMam construct for surface expression and pull-downs using the (overlap PCR) ligation-free cloning approach (Zhang et al., 2017). In brief, we performed the two sets of PCR using standard cloning primers (~300 bp upstream and downstream of the mutation) and the mutant primers as listed in Figure 4—source data 2 to obtain the fragment containing our mutation of interest and flanking regions corresponding to the wild-type GluK1-1a. Next, the obtained fragment was used as a megaprimer to amplify the complete GluK1-1a vector backbone that would now contain the mutation. This PCR product was DpnI digested for 1 hr at 37 °C to remove parental DNA and was transformed into DH5α strain of E. coli. Clones were confirmed by sequencing. Initially, the positively charged and other residues of the splice were substituted with alanine. Later, charge reversal mutants (K and/or H to E) were also prepared to understand their role in the receptor kinetics as well as interaction with Neto proteins. The mutants prepared are summarized in Figure 4—source data 2.
 
-## Co-immunoprecipitation (in vitro)
+### Co-immunoprecipitation (in vitro)
 
 To understand the effect of mutations on GluK1-1a and Neto1/2 interaction, co-immunoprecipitation was carried out using an anti-His monoclonal antibody against the receptor. Similar constructs and transfection protocols were followed for surface expression analysis. Cells were pelleted 65–70 h post-transfection and washed with TBS (20 mM Tris pH 8, 150 mM NaCl). These cells were sonicated and solubilized in 500 uL lysis buffer (20 mM Tris pH 8, 150 mM NaCl, 1% glycerol, protease inhibitor cocktail, 30 mM DDM). Post solubilization, debris was removed by centrifuging at 17,000 × g for 45 min at 4 °C. The supernatant was incubated for pre-clearing with 20 µL of pre-equilibrated Protein A agarose beads (Thermo Scientific) for 1 hr on a rotator at 4 °C. Post-pre-clearing, ~10% sample was saved as input, and the rest was used for pull-downs. Simultaneously, 2 ug of anti-His antibody (host: rabbit, Cat. No.-12698, Cell Signaling Technology) was added to 40 µL pre-equilibrated Protein A agarose (Thermo Scientific) and incubated for 1 hr at 4 °C, followed by the addition of pre-cleared lysate. It was further incubated at 4 °C overnight (14–16 hr). The unbound fraction was removed and washed four times with 500 µL wash buffer (20 mM Tris pH 8, 150 mM NaCl, 1% glycerol, 0.75 mM DDM) to remove non-specific interactions. Protein was eluted in 30 µL elution buffer (100 mM Tris pH 6.8, 12% glycerol, 4% SDS, 10 mM DTT, 2% β- mercaptoethanol) by heating at 95 °C for 10 min. Rabbit IgG controls were set up to confirm the validity of the experiment. To analyze the pull-down, 8% SDS-PAGE was used, followed by a western transfer. To detect the internal control (actin), the receptor, and the co-immunoprecipitated Neto proteins, the immunoblots were probed using anti-actin (mouse, A3853, Sigma), anti-His (rabbit, 12698, Cell Signaling Technology), and anti-Neto1 (rabbit, SAB3500679, Sigma) or anti-GFP (mouse, G1546, Sigma) antibodies.
 
-## Construct design for expression and purification of rat GluK1-1aEM
+### Construct design for expression and purification of rat GluK1-1aEM
 
 To obtain functional GluK1 receptors, rat (Rattus norvegicus) GRIK1 with ATD splice insert and the shortest C-terminal domain, GRIK1-1a (1–871 amino acid residues), was cloned in the pEGBacMam vector. The receptor was cloned in-frame with a thrombin recognition site (LVPRGSAAAA), EGFP (A207K; non-dimerizing mutant), and His8 at the C-terminus. The wild-type protein generated very low amounts of the tetramer, as observed in fluorescence-assisted size-exclusion chromatography (FSEC). Therefore, based on the alignments of the sequence with GluK2EM, GluK3EM and GluA2, we mutated free cysteines in the TM1 region to residues corresponding to those of GluK2EM or GluA2 [1 x Cys (C576S), 2 x Cys (C552Y, C557V) and 3 x Cys (C552Y, C557V, C576S)] to obtain good yields of the tetrameric receptor. All clones were confirmed by restriction digestion and sequencing. The expression of all the mutants was confirmed by immunoblotting against His-tag and FSEC. GluK1-1a with 2 x Cys mutations (C552Y, C557V) gave us the best receptor quality as observed in FSEC and, therefore, was used as GluK1-1aEM for large-scale purification for structural studies.
 
-## GluK1-1aEM expression and purification
+### GluK1-1aEM expression and purification
 
 Three liters of Human embryonic kidney (HEK) 293 GnTI- suspension-adapted cultures (~1.5–2.0 × 106 cells/mL) were transfected (or infected with virus) with rat GRIK1-1aEM plasmid at 0.5 µg/mL or baculovirus, prepared in DH10Bac as per established protocol (Goehring et al., 2014) using polyethyleneimine (PEI-MAX, Polysciences; 1 DNA: 3 PEI w/w) as the transfection agent (or, infected at a multiplicity of infection of ~2). To boost the protein production, 10 mM sodium butyrate (Sigma) was added 16 hr post-transfection/infection, and cultures were incubated at 30 °C for protein expression. Cells were harvested 65–70 h after transfection/infection, washed with buffer containing 20 mM Tris pH 8 and 150 mM NaCl, and stored at –80 °C until further processing. The cell pellet was resuspended (20 mL/L culture volume) in lysis buffer (20 mM Tris pH 8, 150 mM NaCl, and protease inhibitor cocktail, Roche). These resuspended cells were disrupted using sonication (QSonica sonicator, three cycles of 90 s; 10 s ON/20 s OFF; temperature cut-off: 15 °C). The lysate was clarified using low-speed spin (4307 × g for 20 min at 4 °C). The membranes were pelleted using ultracentrifugation (118,991 × g for 1 hr at 4 °C). Solubilization of membrane fraction was done in buffer containing 20 mM Tris pH 8, 150 mM NaCl, 30 mM DDM (Anatrace, D310LA), 5% glycerol, 10 mM imidazole, and protease inhibitor cocktail for 1 hr on rotator at 4 °C. The non-solubilized fraction was separated by centrifugation at 47,850 × g for 1 hr at 4 °C and 4 mL of cobalt-charged TALON resin (Clontech, Takara) was added to the solubilized fraction for batch binding (3 hr at 4 °C). Beads were harvested. The column was packed and washed with wash buffer (20 mM Tris pH 8, 150 mM NaCl, 1 mM DDM, 1% glycerol, 40 mM imidazole) until OD280 reached zero. The bound receptor was eluted with elution buffer (20 mM Tris pH 8, 150 mM NaCl, 1 mM DDM, 1% glycerol, 250 mM imidazole). The peak fractions were pooled, concentrated at 1.3 mg/mL, and digested overnight at 4 °C with thrombin (1:100 w/w). Simultaneously, purified GluK1-1aEM was also reconstituted in MSP1E3D1 nanodiscs with soybean polar lipids (Avanti Polar Lipids, 541602 P) in a 1:2:140 ratio (GluK1-1a:MSP:lipids) following already established protocols (Chen et al., 2017; Gao et al., 2016; Ritchie et al., 2009). In brief, the purified GluK1-1aEM in DDM was incubated with lipids, MSP1E3D1, 14 mM sodium cholate, and 1 mM PMSF for 30 min at 4 °C. The reconstitution of protein in nanodisc was initiated by removing detergent using equilibrated Bio-Beads SM-2 (biorad, 150 mg/mL) for 4–6 hr at 4 °C on an end-to-end rotator. The thrombin-digested GluK1-1aEM receptors in DDM, or nanodisc-reconstituted receptors, were further purified via gel filtration (Superose 6 10/300, GE) in buffer containing 20 mM Tris pH 8, 150 mM NaCl, 0.5% glycerol, and 0.75 mM DDM (no detergent for nanodisc protein). The peak fractions were pooled and concentrated to ~0.6 mg/mL (final DDM concentration,~7.5 mM) or ~0.9 mg/mL GluK1-1aEM in nanodisc. All the affinity elution fractions and final purified protein were confirmed for purity and homogeneity using SDS-PAGE and FSEC, respectively. In the subsequent sections, purified GluK1-1aEM in detergent and nanodisc will be called GluK1-1aEM DDM and GluK1-1aEM ND, respectively.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 Before grid preparation, the purified protein was incubated with 2 mM 2 S, 4R-4-methyl glutamate (SYM2081) to capture the receptor in the desensitized state. The concentration of SYM2081 was confirmed by electrophysiology, and the stability of the receptor-SYM2081 complex was tested using FSEC.
 
@@ -144,18 +1080,18 @@ GluK1-1aEM DDM: Double application of 3 μL protein (~0.6 mg/mL) SYM2081 complex
 
 GluK1-1aEM ND: Double application of 2 μL protein (~0.9 mg/mL) SYM2081 complex was carried out on glow-discharged gold grids (1.2/1.3, 200 mesh, Quantifoil). Grids were blotted for 3 s and 10 s, respectively, followed by vitrification. The clipped grids were loaded into a 300 keV Titan Krios microscope equipped with a K2 direct-detector camera (Gatan). The movies were recorded in super-resolution mode with an energy filter (20 eV slit) and a pixel size of 1.41 Å. Each movie was composed of 30 frames with a total exposure of 12 s. A dose rate of 1.36 e-/frame was applied, with a total dose of 40.8 e-/Å2.
 
-## Single-particle analysis
+### Single-particle analysis
 
 All movies (GluK1-1aEM DDM-SYM: 1100, GluK1-1aEM ND-SYM: 1535) were motion-corrected using UCSF Motioncor2 (Zheng et al., 2017). Bad micrographs were removed manually post-contrast transfer function (CTF) estimation using CTFFIND4 (Rohou and Grigorieff, 2015). Manually picked particles (~1000) were 2D classified and used as templates for auto picking in RELION or cryoSPARCv 3. For GluK1-1aEM DDM-SYM and GluK1-1aEM ND-SYM, the auto picked particles in cryoSPARCv3 were cleaned up with multiple rounds of 2D classification. Particles in the best classes were used for training TOPAZ for automated particle picking. For GluK1-1aEM DDM-SYM, initially, 13,750 particles were picked; post iterative rounds of 2D and 3D classification, 5372 particles were used for final 3D reconstruction. In the case of GluK1-1aEM ND-SYM, initially, 1,97,908 particles were picked and subjected to multiple rounds of clean-up using 2D and 3D classification. Finally, 24,531 particles were used for the final 3D reconstruction.
 
 The final particles were corrected for local motion in cryoSPARCv3, followed by refinement using C1 symmetry for both GluK1-1aEM DDM-SYM and GluK1-1aEM ND-SYM. Since we had less information on TMD in both the detergent and nanodisc forms, as observed in 2D classes, we performed local refinement for ATD and LBD using an ECD mask for GluK1-1aEM DDM-SYM and GluK1-1aEM ND-SYM, which improved map resolution to 8.01 Å and 5.2 Å (0.143 FSC), respectively. For GluK1-1aEM DDM-SYM, local refinement using a mask for full-length structure yielded a resolution of 8.2 Å. The 3D maps were sharpened via cryoSPARCv3 (Punjani et al., 2017) or DeepEMhancer (Sanchez-Garcia et al., 2021) using a mask from the cryoSPARCv3 refinement output. Local Resolution was estimated using BlocRes (Cardone et al., 2013) in cryoSPARCv3 or Phenix1.19.2 (Afonine et al., 2018a).
 
-## Model building
+### Model building
 
 Tetrameric assembly for the GluK1-1aEM ND-SYM model was built using crystal structures of individual domains (ATD, not yet published, and LBD, PDB: 3C32, GluK1 LBD crystal structure with kainate) fitted into the EM map (5.2 Å) in UCSF Chimera (Pettersen et al., 2004). Furthermore, for building GluK1-1aEM ND transmembrane domain 3 and GluK1-1aEM DDM trans-membrane domain, GluK2 TMD (PDB:5KUF) was used due to high identity (~95%) for fitting into EM density. Phenix1.19.2 (Afonine et al., 2018b) and Namdinator (Kidmose et al., 2019) were used to improve the model via the rigid body and Molecular Dynamics based flexible fitting, respectively. The final models fit well into the EM map of GluK1-1aEM ND-SYM, GluK1-1aEM DDM-SYM ECD, and FL, respectively, with a definite density for ATD, LBD, and TMD (pre-M1, M1, M3, and M4). Coot 0.9.4 (Emsley and Cowtan, 2004) was used to analyze the final models, and chimera/chimeraX (Pettersen et al., 2021; Pettersen et al., 2004) was used for figure preparation.
 
-## Supplementary methods
+### Supplementary methods
 
-## Spatiotemporal distribution of exon 9 of GluK1 using transcriptomics data analysis
+#### Spatiotemporal distribution of exon 9 of GluK1 using transcriptomics data analysis
 
 To understand the abundance of GRIK1-1 splice in the human brain, we resorted to RNA-seq data from the BrainSpan atlas that constitutes various databases to study transcriptional mechanisms in human brain development. The RNA-seq data were downloaded for GRIK1 (https://www.brainspan.org/rnaseq/gene/1099967), plotted in Excel (x-axis: regions of the brain; y-axes: log2 transformed normalized expression intensity values in Reads Per Kilobase of exon model per Million mapped reads, RPKM and age of donor). The heat maps were generated using the Excel file (CSV format) and RStudio (https://www.rstudio.com/) to determine the presence of GluK1 in various regions of the brain at different developmental stages, as shown in Figure 1. Furthermore, we narrowed it down to the GRIK1-1 splice (exon 9; start position 30968845, 45 nucleotides in length) and tried to understand how it overlaps with the entire GRIK1 gene expression. These data explored the presence of the ATD splice irrespective of which C-terminal splice variant is present.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.33934.001 Understanding how cellular identity naturally interconverts with high efficiency and temporospatial precision is crucial for regenerative medicine. Here, we revealed a natural midgut-to-renal lineage conversion event during Drosophila metamorphosis and identified the evolutionarily-conserved homeodomain protein Cut as a master switch in this process. A steep Wnt/Wingless morphogen gradient intersects with a pulse of steroid hormone ecdysone to induce cut expression in a subset of midgut progenitors and reprogram them into renal progenitors. Molecularly, ecdysone-induced temporal factor Broad physically interacts with cut enhancer-bound Wnt pathway effector TCF/β-catenin and likely bridges the distant enhancer and promoter region of cut through its self-association. Such long-range enhancer-promoter looping could subsequently trigger timely cut transcription. Our results therefore led us to propose an unexpected poising-and-bridging mechanism whereby spatial and temporal cues intersect, likely via chromatin looping, to turn on a master transcription factor and dictate efficient and precise lineage reprogramming.
+Understanding how cellular identity naturally interconverts with high efficiency and temporospatial precision is crucial for regenerative medicine. Here, we revealed a natural midgut-to-renal lineage conversion event during Drosophila metamorphosis and identified the evolutionarily-conserved homeodomain protein Cut as a master switch in this process. A steep Wnt/Wingless morphogen gradient intersects with a pulse of steroid hormone ecdysone to induce cut expression in a subset of midgut progenitors and reprogram them into renal progenitors. Molecularly, ecdysone-induced temporal factor Broad physically interacts with cut enhancer-bound Wnt pathway effector TCF/β-catenin and likely bridges the distant enhancer and promoter region of cut through its self-association. Such long-range enhancer-promoter looping could subsequently trigger timely cut transcription. Our results therefore led us to propose an unexpected poising-and-bridging mechanism whereby spatial and temporal cues intersect, likely via chromatin looping, to turn on a master transcription factor and dictate efficient and precise lineage reprogramming.
 
 ## Introduction
 
@@ -25,27 +25,55 @@ Classical regenerative strategies are facing challenges, including difficulties 
 
 Here, we revealed a unique naturally-occurring midgut-to-renal lineage reprogramming event at the onset of Drosophila metamorphosis. Drosophila excretory system, so-called Malpighian tubules, are two pairs of tubules converge through common ureters onto midgut-hindgut junction (Figure 1—figure supplement 1A) (Denholm and Skaer, 2009; Dow, 2009; Singh et al., 2007). Each pair of renal tubules can be mainly divided into three segments: ureter, lower tubule and upper tubule (Figure 1A,B and Figure 1—figure supplement 1A) (Singh et al., 2007; Sözen et al., 1997). The ureter can be further divided into lower and upper regions (Figure 1B). Renal stem cells (RSCs) were found to be dispersed in the adult ureter and lower tubule regions (Figure 1B) (Singh et al., 2007) but not in the larval renal tubules, raising the question of how the adult RSCs emerge in development. Earlier work (Takashima et al., 2013) and our independent observations found that adult RSCs are likely to be derived from progenitors within the midgut region. Midgut progenitors (MPs) and renal progenitors (RPs), although both express Snail-type transcription factor Escargot (Esg), are distinct populations of precursor cells in terms of lineage composition and functionality: midgut progenitors/stem cells undergo asymmetric cell divisions to self-renew and meanwhile differentiate into hormone/peptide-secreting enteroendocrine (EE) cells and nutrient-absorbing enterocytes (ECs) (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006); in contrast, renal progenitors undergo asymmetric, self-renewing divisions to give rise to principal cells that mediate organic cation and solute transport (Singh et al., 2007). Intriguingly, we observed that, during metamorphosis, a small subset of Esg+ progenitors appeared to migrate away from the midgut and onto the renal tubules (Figure 1C–E), where they terminally differentiated into new Cut+principal cells (arrowheads in Figure 1D), replacing the old Cut- principal cells in the lower ureter region (arrowheads in Figure 1C) (Takashima et al., 2013). However, it remains enigmatic when, where and how the pool of Esg+ midgut progenitors is selected and converted into renal identity during metamorphosis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig1-v2.jpg)
+
+**Figure 1.:** (A) A schematic diagram of two pairs of renal tubules (red) that converge at ureters and connect to the digestive tract at the midgut (green)-hindgut (grey) boundary of an adult fly (A). The area encircled by dashed line in (A) is magnified and shown in (B). (B) Close-up schematics of larval (left) and adult (right) intestine and renal tubules. Note that each pair of renal tubules merges together at the ureter that is further divided into lower and upper regions. Adult renal stem cells (RSC; yellow) are present in adult but not larval renal tubules. The large principal cells (PC) in lower ureter (blue) during larval stage are replaced with intermediate sized new principal cells (red) during adult stage. (C) Progenitors marked by esgts>CD8-GFP (green) reside in the third instar larval (L3) midgut. White bracket indicates the lower ureter region containing Cut- principal cells (blue). (D–E) During adult stage, Esg+ stem cells are present in both midgut and renal tubules. White bracket indicates lower ureter containing Cut+ Esg- principal cells (D). Arrows indicate furthest detectable RSCs on renal tubules (E). (F–G’) Cut is expressed in adult renal stem cells (arrowheads in F, F’) but not intestinal stem cells (ISC; arrowheads in G, G’). (F’,G’) show single-channel images for Cut immunostaining. (H) MARCM clones induced at early larval stages and examined at early adult stage. Clones containing multiple cells appeared only at lower ureter (bracket), whereas single-cell clones containing Cut+ progenitors (arrowheads) appeared beyond that region. (I, I’) MARCM clones induced at lower ureter contain Cut+ small diploid RSCs (white arrowhead) and Cut+ large polyploid principal cells (yellow arrowhead). The inset shows single-channel image for Cut immunostaining (I’). Neither ISCs (cyan arrowhead) nor polyploid enterocytes (ECs; pink arrowhead) expressed Cut (I’). (J, K) Distinct composition of ISC (J) and RSC (K) lineages. EE: enteroendocrine. Scale bar: 50 μm (C–E); 25 μm (F–I’).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) schematic drawing adapted from Wessing and Eichelberg (1978) of Drosophila midgut (green), hindgut (grey), ureter (dark pink) and renal tubules (pink). Note that cyan arrowhead indicates the boundary between lower and upper tubules. (B) Genome-wide RNAi-based screen identified Cut as a candidate mediating the MP-to-RP identity switch. Compared with wild type control, specific knockdown of cut in midgut progenitors, by esg-Gal4, resulted in the lack of lower ureter region (bracket) and ectopic appearance of Esg- diploid cells along renal tubules (arrowheads). (C) Cut expression levels in adult renal stem cells (arrowheads) are sharply reduced upon cut knockdown and elevated upon Cut overexpression. Scale bar, 25 μm.
+
 To ascertain this midgut-to-renal lineage conversion event and, more importantly, to probe its underlying regulatory mechanisms and molecules, we carried out a genome-wide unbiased RNAi-based genetic screen (Xu et al., unpublished) and identified the homeodomain protein Cut as a master switch dictating this lineage reprogramming event. Cut is an evolutionarily-conserved homeodomain-containing transcription factor that has been shown to regulate various developmental events in Drosophila and mammals, including sensory organ identity specification and dendritic morphogenesis in peripheral nervous system, dorsal-ventral boundary formation in the fly wings, projection neuron dendritic targeting, as well as patterning and growth during fly airway remodeling (Becam et al., 2011; Blochlinger et al., 1988; Bodmer et al., 1987; Cubelos et al., 2010; Grueber et al., 2003; Komiyama and Luo, 2007; Ludlow et al., 1996; Pitsouli and Perrimon, 2013; Rodríguez-Tornos et al., 2016).
 
 Here, we show that a steep Wnt/Wingless (Wg) morphogen gradient (Clevers and Nusse, 2012; Loh et al., 2016) at the midgut-hindgut boundary intersects with a pulse of the steroid hormone ecdysone at the onset of metamorphosis (Yamanaka et al., 2013) to induce cut expression in a subset of midgut progenitors and reprogram them into renal progenitors. Mechanistically, the Wg morphogen gradient, through its pathway effector TCF/β-catenin, determines the pool of future renal progenitors, presumably by poising a distal cut enhancer for timely activation. On the other hand, the hormone ecdysone-induced BTB-Zinc finger protein Broad determines the timing of lineage conversion by physically interacting with enhancer-bound TCF/β-catenin complex and likely bridging the distal enhancer and promoter region of cut through its self-association. Such long-range enhancer-promoter looping could subsequently trigger timely cut transcription. Thus, integration of spatial and temporal cues by a master cell identity switch, likely through a chromatin looping mechanism, orchestrates natural lineage reprogramming with temporal and spatial precision.
 
 ## Results
 
-## Adult renal stem cells specifically express homeodomain protein Cut
+### Adult renal stem cells specifically express homeodomain protein Cut
 
 To identify key regulators governing midgut-to-renal lineage conversion, we carried out a genome-wide RNAi-based screen. We used temperature-sensitive, midgut and renal progenitor-specific esg-Gal4, UAS-CD8-GFP, tub-Gal80ts system to drive RNAi expression, transferred animals from permissive temperature (18°C) to restrictive temperature (29°C) at mid third instar larval stage, approximately 48 hr before the lineage reprogramming event occurs, and analyzed the renal phenotypes at early adult stages. Intriguingly, we found that midgut progenitor-specific knockdown of the transcription factor Cut resulted in lack of the entire lower ureter region (brackets in Figure 1—figure supplement 1B) and appearance of extra Esg- diploid cells along the renal tubules (arrowheads in Figure 1—figure supplement 1B).
 
 Such striking renal tubule phenotypes of cut-RNAi prompted us to carefully investigate the expression pattern of Cut in adult intestine and renal tubules. Cut has previously been found to be highly expressed in two types of post-mitotic, polyploid cells in the Drosophila digestive-excretive system: the acid-secreting copper cells in the middle midgut region (Strand and Micchelli, 2011) and the fluid-balancing principal cells within renal tubules (Singh et al., 2007; Singh et al., 2011). Surprisingly, we detected moderate Cut expression in Esg+ diploid cells along adult renal tubules (arrowheads in Figure 1F,F’). Knockdown or overexpression of Cut within adult renal stem cells, by esg-Gal4, diminished or elevated the Cut expression levels respectively (Figure 1—figure supplement 1C), indicating that such Cut expression is specific. In contrast, Cut was not detectable in adult intestinal stem cells or enteroblasts (EBs) in midgut (arrowheads in Figure 1G,G’). To further confirm the specific expression of Cut in renal stem cell lineages, we induced wild-type MARCM (mosaic analysis with repressible cell marker) clones (Lee and Luo, 2001) at larval stages and analyzed Cut expression pattern of clones at early adult stage. Using the MARCM system, the homozygous clones are produced upon mitotic recombination and are positively labeled by GFP. MARCM clones induced at the lower ureter region (bracket in Figure 1H) contained both diploid cells expressing moderate levels of Cut (white arrowheads in Figure 1I,I’) and polyploid cells expressing high levels of Cut (yellow arrowheads in Figure 1I,I’), indicating that new Cut+ principal cells are derived from Cut+ renal progenitors (Figure 1B,D,I). By contrast, MARCM clones in the midgut region, composed of diploid ISCs (cyan arrowheads in Figure 1I), EBs, EEs and polyploid ECs (pink arrowheads in Figure 1I), did not exhibit Cut expression. Therefore, distinct from Cut- intestinal stem cells (ISCs) that differentiate into Cut- EEs and ECs in the midgut (Figure 1J), Cut+ renal stem cells (RSCs) differentiate into Cut+ principal cells (PCs) on the renal tubules (Figure 1K). Taken together, we identified Cut as a specific marker that distinguishes adult RSCs from ISCs.
 
-## Adult RSCs are originated from Cut+ progenitors within midgut
+### Adult RSCs are originated from Cut+ progenitors within midgut
 
 Utilizing Cut as a cell identity marker, we studied the emergence, proliferation, migration and differentiation of RPs during metamorphosis. Cut was undetectable in any Esg+ progenitors in third instar larval (L3) midguts (Figure 2A). At the onset of metamorphosis (0 hr after puparium formation (APF)), a few clusters of Esg+ progenitors in closest proximity to the midgut-hindgut boundary started to exhibit Cut expression (white arrowheads in Figure 2B). At 0.5 hr APF, 20–30 Esg+ progenitors in 5–6 clusters specifically expressed Cut (yellow bracket in Figure 2C). By 1 hr APF, midgut progenitor islands merged together and the Cut+ progenitors aligned along the midgut-hindgut border in 1–3 rows (yellow bracket in Figure 2D). Starting at 3 hr APF, Esg+ Cut+ progenitors migrated across the midgut border and entered the renal tubules (yellow bracket in Figure 2E). Cut- principal cells in the lower ureter region were engulfed and expelled into the pupal midgut (pink arrowheads in Figure 2E) (González-Morales et al., 2015). Cut+ progenitors in turn occupied the lower ureter region (Figure 2F) and differentiated into Esg- Cut+ new principal cells (cyan arrowheads in Figure 2G). The dynamic changes in the number of Cut+ progenitors and the emergence, proliferation, migration and differentiation of RPs during metamorphosis are schematically presented in Figure 2H and I respectively.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig2-v2.jpg)
+
+**Figure 2.:** (A–G) Midgut-hindgut boundary and lower ureter region at the stages of (A) third instar larvae (L3), (B) 0 hr, (C) 0.5 hr, (D) 1 hr, (E) 3 hr, (F) 9 hr or (G) 10 hr after puparium formation (APF) stained with Cut (red). Note that Cut+ progenitors are marked with white arrowheads (B) or yellow brackets (C–G). Also note that Cut- principal cells in the lower ureter (pink arrowheads in A–D) are engulfed and deposited to the intestinal lumen at 3 hr APF (pink arrowheads in E). Upon differentiation into Cut+ principal cells (cyan arrowheads in F and G), Esg+ progenitors exhibit reduced levels of Cut expression (white arrowheads in G). (H) Quantification of the number of Cut+ progenitors per intestine-renal tubule (I-R) sample at different developmental stages (n = 7–13). (I) Schematic representations of emergence, migration and differentiation of Esg+ Cut+ RPs. Scale bar, 25 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Cut staining (green) of midgut-hindgut area of Dl-Gal4 >CD8 RFP flies at the stages of (A) 0 hr, (B) 1 hr, (C) 3 hr or (D) 9 hr after puparium formation (APF). Scale bar, 25 μm.
+
 At the onset of metamorphosis, Cut+ progenitors expressed midgut progenitor marker Delta (Dl) (arrowheads in Figure 2—figure supplement 1A,B), indicating that Cut+ progenitors were transited from MP to RP characteristics. Interestingly, immediately after the Cut+ progenitors migrated onto renal tubules, they started to turn off Dl expression (arrowheads in Figure 2—figure supplement 1C). By 9 hr APF, Cut+ progenitors along the renal tubules completely shut down Dl expression (arrowheads in Figure 2—figure supplement 1D). Therefore, Cut+ progenitors are progressively reprogrammed from MPs to RPs.
 
-## RPs displayed MP characteristics upon Cut depletion
+### RPs displayed MP characteristics upon Cut depletion
 
 The highly specific and restrictive induction of Cut expression in RPs right before their migration onto renal tubules prompted us to investigate whether Cut plays a critical role in the identity switch and/or migration of future RPs. Upon cut knockdown by esg-Gal4, the migration of the small subset of Esg+ progenitors onto renal tubules remained relatively normal (Figure 3A–D’), indicating that Cut is dispensable for progenitor mobility. To investigate whether Cut is important for the identity switch of Esg+ progenitors, we performed lineage-tracing experiments based on the G-TRACE (the Gal4 Technique for Real-time and Clonal Expression) system (Evans et al., 2009). We used temperature-sensitive esg-Gal4, UAS-CD8-GFP, tub-Gal80ts system to drive FLP (flippase) expression, transferred animals from permissive temperature (18°C) to restrictive temperature (29°C) at late third instar larval stage and analyzed the renal phenotypes at early adult stages (Figure 3A,B). Upon esg-Gal4-driven expression of FLP recombinase, a transcriptional stop cassette flanked by FRT sites is excised, resulting in lacZ expression in Esg+ progenitors and all their subsequent daughter cells (lineage expression; Figure 3A). Meanwhile, GFP reveals the real-time expression of esg-Gal4 (Figure 3A). In wild type renal tubules, Esg- lacZ+ cells derived from Esg+ lacZ+ RPs (white arrowheads in Figure 3C,C’) were found in the lower ureter region (brackets in Figure 3C,C’). These Esg- lacZ+ cells were polyploid, new Cut+ principal cells (white arrowheads in Figure 3C,C’), in accordance with our earlier notion that Cut- principal cells are replaced with RP-derived new Cut+ principal cells during metamorphosis. cut knockdown by esg-GAL4 caused the majority of flies to die at late pupal or early adult stages (90.3%, n = 567). The adult escaper flies lacked the whole lower ureter region (Figure 3D,D’), hinting that maldevelopment of the renal tubules contributed to the lethality of the animals. In contrast to the wild type control (Figure 3C,E), Esg- lacZ+ cells derived from cut-RNAi RPs were dispersed throughout the ureter and lower tubule regions (white arrowheads in Figure 3D’). Strikingly, these Esg- lacZ+ cells were diploid, Cut- (Figure 3D,D’), and expressed Prospero (Pros) (Figure 3F,F’), a typical marker for EE cells. These results strongly suggested that, upon cut depletion, Esg+ progenitors migrate normally onto the renal tubules, yet fail to switch into renal identity and differentiate into midgut cells along renal tubules.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Genetic schema (A) and experimental timeline (B) of the lineage-tracing experiment. (C–F’) Lineage-tracing analysis of Esg+ progenitors in ureter and lower tubule regions. Wild type RPs in lower ureter (white brackets in C, C’) differentiate into Cut+ polyploid principal cells (white arrowheads in C, C’). Upon cut depletion, Esg+ progenitors in ureter and lower tubule regions give rise to Cut- Pros+ diploid cells (white arrowheads in D’, F, F’). Note that the cut-RNAi renal tubules lack the entire lower ureter region (D, D’). (G–J) Wild type control MARCM clones residing in the midgut but not ureter region (pink arrowheads in G and I) contain Pros+ EE cells (white arrowhead in G) and Pdm1+ ECs (white arrowhead in I). In sharp contrast, cut mutant clones at ureter region contain Pros+ EEs (yellow arrowheads in H) or Pdm1+ ECs (yellow arrowheads in J). (K–L) Quantification of the length of ureter (K; **p<0.001 (n = 11)) and the total number of principal cells (L; **p<0.0001 (n = 7–9)) in wild type or esgts >cut-IR adult animals. (M) Control or Cut-overexpressing (Cut-OE) MARCM clones were induced at third instar larval stages, dissected at late-pupal stage and stained with Pdm1 (red) and Cut (gray). Note that 100% polyploid cells in WT control clones are Pdm1+ Cut- (n = 69). By contrast, 91% polyploid cells in Cut-OE clones are Pdm1- Cut+, with the rest 9% expressing low levels of Pdm1 and Cut (n = 66). (N) Schematic depiction of Cut as a MP-to-RP identity switch. Scale bars, 50 μm (C–D’), 25 μm (E–F’, I, J) and 10 μm (G, H, M).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Time-course analysis of EE production in renal tubules of esgts > cut RNAi flies. (A) At 45 hr APF, Pros+ EEs (white arrowheads) start to appear in wild type control midgut but not renal tubules. Pros+ EEs (yellow arrowheads) also start to emerge in esgts > cut RNAi renal tubules. (B) At 60 hr APF, around half of Esg+ cells in wild type control midgut (white arrowheads) or esgts > cut RNAi renal tubules (yellow arrowheads) are Pros+ EEs. (C–E) Nc82+ (arrowheads in C), AstA+ (arrowheads in D) or Rab3-GFP+ Pros+ (arrowheads in E) EEs form in esgts > cut RNAi but not in WT control renal tubules. Note that Nc82 is the antigen of EE marker Brp. Scale bars, 20 μm (A,B) and 25 μm (C–E).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) At 60 hr APF, Notch signaling reporter NRE-GFP is present in Esg+ Pros- MPs (white open arrowhead, inset in A) but not RPs (cyan arrowhead, inset in B) of wild type control animals. By contrast, upon cut depletion, Esg+ Pros- progenitors on renal tubules (yellow open arrowhead, inset in D) also express NRE-GFP, adjacent to sibling Pros+ EEs (yellow closed arrowhead, inset in D). (E) Pros is asymmetrically localized to the basal side of dividing wild type midgut progenitors or esgts > cut-RNAi progenitors on renal tubules. (F,G) Notch knockdown driven by esg-Gal4 leads to a sharp reduction in number of GFP+ progenitors and a two-fold increase in number of Pros+ EEs in both midgut and renal tubule regions. Quantification of the relative number of EEs in midgut or renal tubules of indicated genotypes is shown in (F). **p<0.0001 (n = 6–8). (H) Notch overexpression driven by esg-Gal4 leads to a sharp reduction in number of GFP+ progenitors, whereas coexpression of cut-RNAi with Notch leads to differentiation of progenitors into Pdm1+ ECs (arrowheads) along renal tubules. Scale bars, 20 μm (A–D,H), 5 μm (E) and 25 μm (G).
 
 Importantly, upon cut depletion, Esg+ progenitors along renal tubules behaved essentially the same as MPs at pupal stages (Guo and Ohlstein, 2015): (1) they produced ectopic Pros+ diploid cells along renal tubules at the same developmental stages as wild type MPs giving rise to EEs in midgut (arrowheads in Figure 3—figure supplement 1A,B); (2) The ectopic Pros+ cells derived from them expressed additional EE markers such as exocytosis regulator Rab3 (Dutta et al., 2015; Patel et al., 2015), synaptic protein Bruchpilot (Brp) (Zeng et al., 2013), and secretory neuropeptide hormone Allatostatin A (Ast A) (Beehler-Evans and Micchelli, 2015) (yellow arrowheads in Figure 3—figure supplement 1C–E), indicating that they are bona fide EE cells; (3) they underwent asymmetric cell divisions, resulting in unidirectional Notch activation in progenitors (open arrowheads in Figure 3—figure supplement 2A–D) and asymmetric localization of Pros to the basal context (Figure 3—figure supplement 2E); and (4) their cell fate decisions were tightly regulated by the strength of Notch signaling (Figure 3—figure supplement 2F–H).
 
@@ -53,9 +81,17 @@ To further confirm the notion as proposed above, we carried out MARCM clonal ana
 
 To test whether Cut is sufficient in dictating midgut-to-renal lineage conversion, we overexpressed Cut in MPs and analyzed their lineage progression using MARCM clonal analysis. In wild type MARCM clones derived from single MPs, GFP+ polyploid cells were Pdm1+ ECs (white arrowheads in Figure 3M). In contrast, MARCM clones derived from Cut-overexpressing MPs mainly contained Pdm1- Cut+ polyploid cells (yellow arrowheads in Figure 3M), strongly suggesting that MPs were converted into RPs that in turn differentiated into principal cells in midgut region. Collectively, our observations reinforced the idea that Cut acts as a master switch in dictating natural midgut-to-renal progenitor identity conversion (Figure 3N).
 
-## Wnt/Wg morphogen acts as a spatial cue in inducing Cut expression in MPs
+### Wnt/Wg morphogen acts as a spatial cue in inducing Cut expression in MPs
 
 We next sought to identify the signaling cues that induced Cut expression in the specific subsets of MPs. The spatially restricted distribution of Cut+ MPs hinted that Cut expression might be induced by a morphogen gradient emanating from proximal cells. After examining the distribution pattern of various signaling molecules or receptors at the onset of metamorphosis, we found that, in accordance with previous observations (Fox and Spradling, 2009; Takashima et al., 2008; Tian et al., 2016), the Wnt/Wingless (Wg) ligand (Clevers and Nusse, 2012; Loh et al., 2016) was expressed in a narrow zone of 2–3 rows of cells right at the midgut-hindgut boundary, starting from early larval stages (Figure 4A,B and Figure 4—figure supplement 1A,B). At the onset of metamorphosis, 2–3 clusters of progenitors in closest proximity to the stripe of Wg-producing cells started to turn on Cut expression (arrowheads in Figure 4C and Figure 4—figure supplement 1C). Around 0.5 hr APF, Cut was expressed in 5–6 progenitor islands adjacent to the Wg-secreting cells (arrowheads in Figure 4D). Some Cut+ progenitor islands were not in direct contact with the Wg-producing band (arrowheads in Figure 4D), suggesting the existence of Wg morphogen gradient. At 1 hr APF, peripheral cells surrounding progenitor islands (Mathur et al., 2010) partially opened up, allowing Cut+ progenitor islands to merge with each other (Figure 4E). A clear boundary between Cut+ and Cut- progenitors could be delineated (dashed lines in Figure 4E and Figure 4—figure supplement 1D), suggesting the spatial precision of the inductive cue. Wg signaling activity, as faithfully reflected by the Fz3-GFP reporter (Sivasankaran et al., 2000; Tian et al., 2016), was only detectable in a few rows of MPs proximal to Wg-secreting cells (closed arrowheads in Figure 4F), further supporting Wg signaling as a spatial cue in selecting future RPs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig4-v2.jpg)
+
+**Figure 4.:** (A–E) Wg ligand expression, as labeled by wg-Gal4 >CD8-RFP, is highly restricted to a narrow band of cells proximal to the midgut-hindgut boundary at the stages of second instar (A) or third instar larva (B), or 0 hr (C), 0.5 hr (D) or 1 hr (E) APF. NRE-GFP marks peripheral cells encasing midgut progenitor islands. Note that Cut+ progenitors (red, nuclear signal; indicated by arrowheads) are in close proximity to the Wg-producing band. Cyto: cytoplasmic; nuc: nuclear. (F) Expression pattern of Wg signaling reporter Fz3-GFP at different developmental stages. Closed and open arrowheads indicate Fz3-GFP+ and Fz3-GFP- progenitors respectively. (G,H) wg-Gal4>white-RNAi or wg-Gal4>wg-RNAi midgut-hindgut boundary region stained with Cut (nuclear signal; arrowheads in G). Note that white-RNAi serves here as a negative control. (I) Upon overexpression of Sgg-CA or TCF-DN, Esg+ progenitors in closest proximity to the band of wg-producing cells (brackets) fail to express Cut. (J) Upon overexpression of Wg or Arm-S10, Esg+ progenitors far away from the midgut-hindgut boundary ectopically turn on Cut expression (arrowheads). (K) Schematic drawings of the progressive MP (green)-RP (yellow) identity switch in the range of Wg morphogen gradient (purple) along the developmental axis. Scale bars, 25 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Time-course analysis of Wg expression, as indicated by wg-lacZ, at the stages of second instar larvae (A), third instar larvae (B), 0 hr APF (C) or 1 hr APF (D). (E) MARCM clonal analysis of WT control or dsh mutant progenitors. Midgut progenitors produce Pros+ EEs (yellow arrowheads) in the present or absent of Dsh. By contrast, Pros+ EEs (yellow arrowheads) are produced at renal tubules only upon Dsh inactivation. (F,G) Compared with WT control, a significantly increased number of Esg+ Cut+ renal progenitors migrate onto renal tubules upon Wg overexpression. Quantification of the number of Esg+ Cut+ renal progenitors in the ureter region of genotypes as indicated is shown in (G). **p<0.0001 (n = 5–8).(H) Cut expression (yellow brackets) is detected in control but not wg(KO; NRT-Wg) homozygous progenitors in proximal to the midgut-hindgut boundary at metamorphosis. Scale bars, 25 μm.
 
 If Wg signaling provides an inductive cue, we reasoned that downregulation of Wg signaling in future RPs should abolish Cut expression. Indeed, specific knockdown of Wg within Wg-producing cells at midgut-hindgut boundary, by wg-Gal4 (Alexandre et al., 2014), resulted in diminished Cut expression in Esg+ progenitors (arrowheads in Figure 4G,H). Furthermore, inhibition of Wg signaling through overexpression of either a dominant-negative form of the Wnt pathway effector TCF (ΔN-TCF) (van de Wetering et al., 1997) or a constitutively-active form of the Wnt pathway inhibitor GSK3β/Shaggy (Sgg-CA) (Bourouis, 2002) in Esg+ progenitors completely abolished Cut induction (brackets in Figure 4I). Consistently, MARCM clonal analysis revealed that, upon depletion of the Wnt/Wg pathway positive component Disheveled (Dsh), ectopic Pros+ EEs appeared in renal tubes (yellow arrowheads in Figure 4—figure supplement 1E). Therefore, Wg signaling is essential for the MP-to-RP identity switch.
 
@@ -63,19 +99,35 @@ We next investigated why Cut was expressed in only a small subset of Esg+ progen
 
 To find out to what extent the spread of Wg is required for Cut induction, we employed a membrane-tethered form of Wg, wg(KO; NRT-Wg) (Alexandre et al., 2014). While membrane-tethered Wg sufficed to control fly patterning and growth (Alexandre et al., 2014), it failed to induce Cut expression in future RPs (Figure 4—figure supplement 1H), indicating that the spread of Wg is necessary for activating Wg signaling in these progenitors.
 
-## Ecdysone hormone as a temporal cue in midgut-to-renal lineage conversion
+### Ecdysone hormone as a temporal cue in midgut-to-renal lineage conversion
 
 The subset of MPs in close proximity to Wg-producing cells do not turn on Cut expression until the onset of metamorphosis, raising the question of how Cut induction is temporally controlled. Since the expression levels of wg-Gal4, wg-lacZ or Wg signaling reporter Fz3-GFP at the midgut-hindgut boundary remained relatively constant from second instar larval to early pupal stages (Figure 4A–F and Figure 4—figure supplement 1A–D), temporal cue(s) other than Wg ligand triggers Cut expression in future RPs at the onset of metamorphosis.
 
 The induction of Cut coincided with the pulse of the steroid hormone ecdysone released from the ring glands (Ou and King-Jones, 2013; Yamanaka et al., 2013), hinting that the ecdysone hormone may serve as a temporal cue (Praggastis and Thummel, 2017; Uyehara et al., 2017). Indeed, Cut induction was abolished upon Esg+ progenitor-specific expression of a dominant-negative form of the Ecdysone receptor (EcR-DN) (Brown et al., 2006) (Figure 5A). Since EcR was widely expressed in all cell types in the midgut at different developmental stages (Figure 5—figure supplement 1A,B), we considered the possibility that the strong pulse of ecdysone at metamorphosis was translated into a temporal patterning of early response genes downstream of EcR. Supporting this notion, Esg+ progenitor-specific depletion of the Broad complex (Br-C) (Figure 5A), a crucial early response gene of the ecdysone signaling (Fletcher and Thummel, 1995; Karim et al., 1993), phenocopied the effects of EcR-DN. In comparison, Cut expression was normally turned on in future RPs upon downregulation of E74 and E75, the other two well-characterized ecdysone early response genes (Figure 5—figure supplement 1C). These observations indicated that the steroid hormone ecdysone executed its control on Esg+ progenitor identity through specific downstream effector Br-C. Strongly supporting this idea, the temporally dynamic expression pattern of Br-C coincides with the strong pulse of ecdysone during metamorphosis: Br-C protein expression was barely detectable in early third instar larvae, progressively increased starting mid third instar larval stage and peaked at the onset of metamorphosis, followed by a gradual decline (Figure 5B and Figure 5—figure supplement 1D–H). Together, our results revealed an ecdysone-EcR-Br regulatory axis, which induces Cut expression and dictates progenitor identity switch with temporal precision.
 
-## Cut induction in RPs requires a gene-specific integration of spatial and temporal cues
+![Figure 5.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cut expression in Esg+ progenitors (yellow brackets) is diminished upon expression of EcR-DN or br-RNAi. (B) Quantification of the relative Br-C fluorescent intensity (FI) in Esg+ progenitors at different developmental stages. *p<0.0001 (n = 14–16). Note that the Br-C expression levels here are assessed with Br-core antibody that detects all Br isoforms. (C) Wg overexpression-induced ectopic expression of Cut in Esg+ MPs (arrowheads) is completely abolished upon br knockdown. (D) Expression pattern of Wg signaling reporter Fz3-GFP of indicated genotypes at 0 hr APF. Note that Fz3-GFP expression in Esg+ progenitors is diminished upon TCF-DN but not br-RNAi expression. (E) Wg and ecdysone signaling pathways converge on cut induction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) EcR is expressed in essentially all cell types in the midgut, including polyploid ECs (open arrowheads) and Esg+ progenitors (closed arrowheads), at similar levels at different developmental stages (A). Quantification of relative EcR fluorescence intensity in Esg+ progenitors is shown in (B). NS, not significant (n = 10). (C) Depletion of ecdysone early response genes Eip74EF or Eip75B in Esg+ progenitors showed no effect on cut induction in future RPs (arrowheads). (D–H) Time-course analysis of dynamic Br-C expression in Esg+ progenitors (arrowheads) at the stages of mid (B) or late (C) third instar larvae, 0 hr (D), 0.5 hr (E) or 1 hr (F) APF. Note that Br-C expression levels in Esg+ progenitors gradually increase (B–D) and reach its peak at around 0.5 hr APF (E), followed by a gradual decline (F). Note that quantification of Br-C expression at different stages is shown in Figure 5B. (I) Ectopic expression of Cut in midgut progenitors (arrowheads), induced by Arm-S10 overexpression, is completely abolished by coexpression of broad-RNAi. Scale bars, 25 μm.
+
+### Cut induction in RPs requires a gene-specific integration of spatial and temporal cues
 
 The above findings identified the Wnt/Wg ligand and the steroid hormone ecdysone as spatial and temporal cues respectively in turning on the master identity switch Cut. This leaves us with the important question of how the spatial and temporal signaling is integrated at molecular level. To address this question, we first carried out epistatic analysis. Depletion of Br-C abolished ectopic Cut expression induced by Wg or Arm-S10 overexpression in MPs (Figure 5C and Figure 5—figure supplement 1I), demonstrating that Br-C acts downstream of or in parallel with the Wg pathway transcription activation complex TCF/Arm in cut induction. Furthermore, Wg pathway activity, as indicated by the Fz3-GFP reporter, was highly responsive to a reduction in Wg signaling, but remained unaltered upon downregulation of ecdysone signaling (Figure 5D). This rules out the possibility of a general modulation of the Wg signaling output by the ecdysone pathway. Therefore, it is likely that Wg and ecdysone signaling converge on the control of cut expression in a gene-specific manner (Figure 5E).
 
-## Broad forms a transcription activation complex with TCF/Arm in cut induction
+### Broad forms a transcription activation complex with TCF/Arm in cut induction
 
 Given that Br itself is a BTB-ZF transcription factor, it may physically associate with TCF/Arm to form a transcription activation complex and synergistically trigger cut transcription. To test this idea, we first carried out coimmunoprecipitation (coIP) assays. The Br-C gene locus encodes four distinct splicing isoforms, Br-Z1, Br-Z2, Br-Z3 and Br-Z4, which share a common N-terminal core domain but have distinct C-terminal zinc-finger domains (Figure 6A) (Mugat et al., 2000). Indeed, we found that Arm could be specifically coimmunoprecipitated with Br-C isoforms from HEK293T cell extracts and exhibited relatively strong binding affinity to Br-TNT-Z1, Br-Z2 and Br-Z4 (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic drawings of Br isoforms. Note that BTB and ZF indicate BTB (Broad-Complex, Tramtrack and Bric a brac) domain and Zinc Finger domain respectively. (B) Coimmunoprecipitation (CoIP) of Br isoforms and Arm in HEK293T cell extracts. In these and subsequent panels, GFP served as a negative control. (C) Cut expression pattern in Esg+ progenitors of indicated genotypes at 9–10 hr before puparium formation (BPF). (D) Expression pattern of Br-Z1 and Br-Z2 at midgut-hindgut boundary region at 0 hr APF. (E) Quantification of relative Br-Z2 fluorescent intensity (FI) in Esg+ progenitors at different developmental stages. *p<0.0001 (n = 11–16). (F) Schematic drawings of Br-Z2 domains and truncated constructs. (G) CoIP of FLAG-tagged Br-Z2, HA-tagged Arm and Myc-tagged TCF in HEK293T cell extracts. (H–J) Specific Arm and Br-Z2 interaction detected by in situ PLA (proximity ligation assay) in the nuclei of Drosophila S2 cells. (H) Schematic diagram showing the principles of PLA. (I) S2 cells transfected with the indicated plasmids were detected for PLA signal (red). Note that the bottom panel shows single-channel images for PLA signal. Also note that ELL is a subunit of the Super Elongation Complex (SEC) that regulates gene transcription. Myc-tagged ELL serves here as a negative control. Quantification of the percentage of PLA foci number per transfected cell is shown in (J; n = 20–44). (K) CoIP of full-length (FL) or truncated FLAG-Br-Z2 and Myc-TCF. Scale bars, 25 μm (C, D) and 5 μm (I).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Antibody raised against Br-Z2 is highly specific. Specific expression of Br-Z2 in Esg+ progenitors (white arrowheads) but not polyploid ECs (cyan arrowhead) at 0.5 hr APF, detected with a newly-raised antibody, is drastically reduced upon Esg+ progenitor-specific knockdown of Br. (B) Br-Z1 is not expressed in midgut or renal tubule region until 5 hr APF. Note that at 9 hr APF, Br-Z1 is ubiquitously expressed in essentially all cell types (arrowheads). Scale bar, 25 μm.
 
 The results described above prompted us to probe the functional significance of the physical interaction between Br-C and TCF/Arm. While overexpression of Br-Z1, Br-Z2 or TCF alone was barely able to precociously induce cut transcription at 9 hr before puparium formation (BPF) (induction rate of 0, 36 and 0% respectively; n = 11–12; arrowheads in Figure 6C), coexpression of Br-Z1 or Br-Z2 with TCF dramatically enhanced Br activity in premature induction of cut expression (induction rate of 70 and 100% respectively; n = 9–17; arrowheads in Figure 6C), providing compelling evidence for a combinatorial regulation of cut transcription by Br and Arm/TCF. Simultaneous overexpression of TCF and either Br-Z3 or Br-Z4 failed to induce premature cut expression, highlighting the importance of the isoform-specific C-terminal domain for Br functionality.
 
@@ -83,11 +135,23 @@ We next examined the temporal expression pattern of Br-Z1 and Br-Z2. While Br-Z2
 
 We next sought to investigate how Br-Z2 synergized with TCF/Arm to induce precocious cut expression. We first carried out coimmunoprecipitation assay and found that both TCF and Arm were specifically coimmunoprecipitated with Br-Z2 from 293 T cell extracts (Figure 6F,G). To confirm the physical interaction between Arm and Br-Z2 in the nucleus, we next performed proximity ligation assay (PLA), which detects protein-protein interaction in situ with high specificity (Söderberg et al., 2006) (Figure 6H). Strong PLA signal was detected in the nuclei of S2 cells coexpressing Br-Z2 and Myc-tagged Arm (Arm-Myc) (Figure 6I,J). By contrast, PLA signal was barely detectable in S2 cells expressing Br-Z2 or Arm-Myc alone or coexpressing Br-Z2 and Myc-tagged ELL, a subunit of the transcription regulatory complex SEC (Super Elongation Complex) (Figure 6I,J) (Liu et al., 2017). These results clearly demonstrated that Arm and Br-Z2 physically interact within the nucleus. Furthermore, our detailed domain-mapping analysis revealed that the C-terminal domain but neither the ZF nor the BTB domain was crucial for Br-Z2 to physically interact with TCF (Figure 6F,K). Together, our results strongly suggested that Br-Z2 forms a transcription activation complex with TCF/Arm in inducing cut expression in future RPs.
 
-## Identification of a distal intronic enhancer for the temporospatial induction of cut
+### Identification of a distal intronic enhancer for the temporospatial induction of cut
 
 We next sought to identify cis-regulatory elements of cut that confer its response to Wg and ecdysone signaling in future RPs. Since a cut-lacZ reporter harboring a well-characterized enhancer upstream of cut promoter (Jack et al., 1991; Jia et al., 2016) did not exhibit expression in RPs during metamorphosis, we systematically screened a series of cut enhancers. Out of 22 cut enhancer-Gal4 driver lines from the Janelia Gal4 collection, in which Gal4 is expressed under the control of cut enhancer fragments (Pfeiffer et al., 2008) (Figure 7—figure supplement 1A), we identified one line, R35B08-Gal4, which drove UAS-CD8-RFP expression specifically in future RPs at metamorphosis (Figure 7—figure supplement 1B). R35B08 is a previously-uncharacterized 3.2 kilobases (kb) enhancer fragment in the second intron of cut, approximately 50 kb downstream of cut promoter (cut-intron2-enhancer in Figure 7A). The temporal and spatial expression pattern of cut-intron2-enhancer-GFP, a GFP reporter that we generated for this intronic enhancer, was essentially identical to that of endogenous Cut protein (Figure 7B), indicating that the temporospatial induction of cut in future RPs is regulated at transcriptional level and primarily, if not solely, through this distal enhancer. Consistent with this idea, cut-intron2-enhancer-GFP expression in future RPs was highly responsive to alterations in Wg or ecdysone signaling (Figure 7C,D).
 
-## TCF/Arm/Br-Z2 complex induces cut transcription likely via enhancer-promoter looping
+![Figure 7.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of the cut genomic locus. Exons, introns/non-coding regions and flanking genomic regions are represented as black bars, black lines and gray lines respectively. Purple bar indicates intron2-enhancer. (B) cut-intron2-enhancer-GFP, a reporter for the intron2 enhancer of cut, specifically colocalizes with endogenous Cut in future RPs. (C) The expression of cut-intron2-enhancer-GFP is abolished upon expression of TCF-DN or br-RNAi in Esg+ progenitors. (D) cut-intron2-enhancer-GFP is ectopically induced in MPs far away from the midgut-hindgut boundary upon Wg overexpression. (E) Schematic drawing of a portion of the cut locus spanning approximately 60 kb. Putative TCF-binding sites and Br-Z2-binding sites are represented by green and blue dots respectively. Purple line indicates intron2-enhancer. (F) EMSA demonstrating the interaction of TCF or Br-Z2 DNA-binding domains with biotin-labelled probes bearing wild type (WT) or mutant (mut) sequence of putative TCF- or Br-Z2-binding sites. E: enhancer; P: promoter. Note that green or blue arrowheads indicate the DNA-protein complexes, whereas white arrowheads indicate free probes. (G) CoIP between full-length (FL) or truncated FLAG-tagged Br-Z2 and Myc-tagged Br-Z2 in 293T cells. Note that dimerization of Br-Z2 depends on its BTB but not ZF domain. (H) Schematic drawings of Br-Z2-Δ5AA construct, a small deletion in the BTB domain. (I) CoIP between Flag-Br-Z2-Δ5AA and Myc-Br-Z2 in 293T cells. (J) Coexpression of TCF with Br-Z2-ΔBTB, Br-Z2-Δ5AA or Br-Z2-ΔZF failed to precociously induce Cut expression at 9 hr BPF. Scale bars, 25 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The gene map of cut locus showing the 22 genomic regions screened for enhancer(s) conferring cut expression in future RPs. Cut-intron2-enhancer (35B08) is represented as a purple bar, whereas the rest of the putative enhancers are represented as yellow bars. (B) R35B08-Gal4 drove specific expression of UAS-CD8-RFP in future RPs, colocalizing with endogenous Cut. Scale bar, 25 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/33934/elife-33934-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The sequence of the EMSA probes containing wild type (WT) or mutant (mut) form of TCF or Br-Z2-binding sites (bold) in cut enhancer or promoter region. E: enhancer; P: promoter. The consensus sequences of TCF-binding site, helper site and Br-Z2-binding site are CCTTTG(A/T); GCCGCC and TTT(A/T)(A/T)CTATTT respectively (Archbold et al., 2014; Chang et al., 2008; von Kalm et al., 1994). (B) EMSA demonstrating the interaction of the Br-Z2 DNA-binding domain with DNA probes bearing WT or mutant sequence of a putative Br-Z2-binding site in cut enhancer region (E2). Note that the blue arrowhead indicates the DNA-protein complexes, whereas the white arrowhead indicates free probes.
+
+### TCF/Arm/Br-Z2 complex induces cut transcription likely via enhancer-promoter looping
 
 The long distance between the intron2-enhancer and the promoter of cut suggested that chromatin looping might juxtapose the distal enhancer with cut promoter, crucial for cut induction. We therefore considered the tantalizing scenario whereby Br-Z2 self-association promotes the enhancer-promoter communication and cut transcription, based on the following observations: (1) cut intron2-enhancer contains closely-spaced putative TCF- and Br-Z2-binding sites (Figure 7E) (Archbold et al., 2014; Chang et al., 2008; von Kalm et al., 1994); (2) cut promoter region harbors putative Br-Z2-binding site but not TCF-binding site (Figure 7E); and (3) Br-Z2 contains BTB domain at its N-terminus (Figure 6D), which is likely to mediate protein dimerization or oligomerization (Perez-Torrado et al., 2006). To test this looping hypothesis, we first investigated whether TCF and Br-Z2 binds to their putative bindings site in the cut locus. Indeed, our electromobility shift assay (EMSA) results demonstrated a direct and sequence-specific binding of TCF and Br-Z2 to their putative binding sites in the cut promoter or intron2-enhancer region (Figure 7F). Next, we assessed whether Br-Z2 can self-associate. Our coIP data clearly showed that Br-Z2 formed protein dimer in a BTB domain-dependent manner (Figure 7G). Furthermore, deletion of only five amino acids (5AA; aa 46–50) in the BTB domain was sufficient to completely abolish the ability of Br-Z2 to self-associate (Figure 7H,I). Finally, we assayed the functional significance of Br-Z2 protein dimerization. Deletion of the whole BTB domain or only five amino acids in this domain (aa 46–50) abolished the activity of Br-Z2 to precociously induce cut expression within future RPs (Figure 7J), indicating that the ability to form protein dimer per se is crucial for Br-Z2 to control cut transcription. ZF domain-deleted form of Br-Z2 also failed to prematurely induce cut expression (Figure 7J), demonstrating that the sequence-specific DNA-binding ability is equally important for Br-Z2 to dictate cut transcription.
 
@@ -101,7 +165,7 @@ One important predication of this model is that cohesin (Dorsett, 2011; Dorsett 
 
 ## Discussion
 
-## Homeobox protein Cut dictates a unique and natural lineage conversion event
+### Homeobox protein Cut dictates a unique and natural lineage conversion event
 
 Here we revealed a naturally-occurring midgut-to-renal lineage conversion event at the onset of Drosophila metamorphosis. Compared with experimentally induced reprogramming, natural reprogramming events in physiological settings are relatively rare, yet much more efficient, predictable and robust (Gettings et al., 2010; Jarriault et al., 2008; Red-Horse et al., 2010; Schaub et al., 2015). The lineage reprogramming process unveiled in our studies represents a unique natural lineage conversion event in that (1) The cell identity switch occurs between organ-specific progenitors, not fully-differentiated cells; (2) the reprogramming event takes place at postembryonic stages, when cells are much less plastic; and (3) the cell identity fully converts from one organ-specific characteristics to another. Thus, this midgut-to-renal lineage conversion event provides a previously unexplored physiological context for elucidating the detailed molecular mechanisms underlying cell plasticity.
 
@@ -109,7 +173,7 @@ Our results further show that the homeodomain protein Cut is a master cell ident
 
 We reason that Cut might be particularly suitable for being a master cell identity switch in diverse biological contexts. Firstly, cut is an unusually large gene harboring a long and complex enhancer region spanning more than 150 kb. Such a long enhancer region can be subdivided into small segments responsive to different stimuli or signals in diverse tissues or organs at distinct developmental stages. Therefore, akin to neurons with extensive and complex arbors, the extra-long and segmented enhancer region of cut receives and integrates diverse input signals, and drives Cut expression with high temporospatial precision. Secondly, Cut, as a homeobox transcription factor, may intrinsically possess the ability to specify and confer organ or tissue identities, analogous to the classic homeotic genes such as Antennapedia, by simultaneously erasing old cell identities and writing new ones.
 
-## Precise induction of master identity switch by a ‘poising-and-bridging’ mechanism
+### Precise induction of master identity switch by a ‘poising-and-bridging’ mechanism
 
 Acquisition and switch of distinct cell identities are precisely and tightly controlled in both space and time (Erclik et al., 2017; Red-Horse et al., 2010; Schaub et al., 2015). Yet the molecular basis underlying the integration of spatial and temporal signals remain poorly understood. We posit that two molecular mechanisms may underlie the intersection of temporal and spatial cues: (1) the spatial cues restrict the expression/activity of the temporal pathway component(s), or vice versa. This strategy has been well exemplified in spatiotemporal control of border cell migration in the Drosophila ovary (Jang et al., 2009) and spatial restriction of neural competence (Huang et al., 2014); and (2) the temporal and spatial pathways converge to induce the expression of a specific set of target genes. The molecular basis of the latter scenario remains enigmatic.
 
@@ -119,13 +183,387 @@ Although long-range chromatin looping has been found at numerous gene loci (Ghav
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Add. info.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cut</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_36496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT19A, cutC145</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_36496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>FRT19A, dsh3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_6331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Wg-HA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_5918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Arm-S10</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_4782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>esg-Gal4, tubP-Gal80ts, UAS-GFP</td>
+      <td>Gift from Dr. H Jasper (Biteau et al., 2008) and Dr. C Micchelli (Micchelli and Perrimon, 2006)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wg-Gal4</td>
+      <td>Gift from Dr. JP Vincent (Alexandre et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wg(KO; NRT–Wg)</td>
+      <td>Gift from Dr. JP Vincent (Alexandre et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TCF-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_4785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>wg-lacZ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_1672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Rab3-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_62541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CD8-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_27392</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>cut-intron2-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_49818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NRE-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_30727</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Sgg.S9A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_5255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-EcR-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_6872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Br-Z1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_51190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Br-Z3</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_51192</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Br-Z4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_51193</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TCF</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_4838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-cut-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-br-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_27272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nipped-b-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_32406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-SA-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-wg-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Eip74EF-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_29353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Eip75B -IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_26717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-white-IR</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag M2 affinity gels</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Broad-core (25E9.D7)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Broad-Z1 (Z1.3C11.OA1)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Cut (2B10)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Prospero (MR1A)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Bruchpilot (nc82)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_2314866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Allatostatin (Ast7, 5F10)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_528076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Pdm1</td>
+      <td>Gift from Dr. X. Yang</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody</td>
+      <td>abcam</td>
+      <td>Cat#: ab13970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP antibody - ChIP Grade</td>
+      <td>abcam</td>
+      <td>Cat#: ab290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-beta-galactosidase (40-1a)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID: AB_2314509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RFP antibody</td>
+      <td>abcam</td>
+      <td>Cat#: ab62341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Histone H3 (Ser10) Antibody</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 9701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Myc</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ Red Starter Kit Mouse/Rabbit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E.coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>TransGen Biotech</td>
+      <td>Cat#: CD601-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CS5</td>
+      <td>Adobe</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>The Leica Application Suite 2.6.3</td>
+      <td>Leica</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>DGRC</td>
+      <td>Cat#: S2-DGRC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1</td>
+      <td>Invitrogen</td>
+      <td>Cat#: V79020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAc5.1</td>
+      <td>Invitrogen</td>
+      <td>Cat#: V4110-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: 28-9546-48</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 Fly culcture and crosses were performed according to standard procedures. Drosophila stocks used in this study include: UAS-Cut (#36496; Bloomington stock center (BDSC)); FRT19A, cutC145 (#36496; BDSC); UAS-Wg-HA (#5918; BDSC); UAS-Arm-S10 (#4782; BDSC); UAS-cut-RNAi (#33967; BDSC); UAS-br-RNAi (#27272; BDSC); esg-Gal4, tubP-Gal80ts, UAS-GFP (Biteau et al., 2008; Micchelli and Perrimon, 2006); wg-Gal4 (Alexandre et al., 2014); wg(KO; NRT–Wg) (Alexandre et al., 2014); UAS-TCF-ΔN (#4785; BDSC); wg-lacZ (#1672; BDSC); Rab3-GFP (#62541; BDSC); UAS-CD8-RFP (#27392, BDSC); cut-intron2-Gal4 (#49818, BDSC); NRE-GFP (#30727; BDSC); UAS-Sgg.S9A (#5255; BDSC); UAS-EcR-DN (#6872; BDSC); UAS-wg-RNAi (#33902; BDSC); UAS-Br-Z1 (#51190; BDSC); UAS-Br-Z3 (#51192; BDSC); UAS-Br-Z4 (#51193; BDSC); FRT19A, dsh3 (#6331; BDSC); UAS-TCF (#4838; BDSC); UAS-Nipped-B-RNAi (#32406; BDSC); UAS-SA-RNAi (#33395; BDSC); UAS-Eip74EF-RNAi (#29353; BDSC); UAS-Eip75B (#26717; BDSC); UAS-white-RNAi (#33623; BDSC); Act5C-FRT>stop>FRT-lacZ.nls (#6355; BDSC).
 
 wg-Gal4 transgenic flies were generated by integrating the Gal4 containing plasmid RIVGal4 (Baena-Lopez et al., 2013) into the attP site of wg flies (Alexandre et al., 2014).
 
-## Molecular biology
+### Molecular biology
 
 To generate Fz3-pH-Stinger and cut-intron2-enhancer-pH-Stinger constructs, a 2,318 bp genomic DNA fragment (−2324 to −7) from frizzled3 gene region and a 3,157 bp genomic DNA fragment from cut gene region were PCR amplified and inserted into the pH-Stinger vector respectively. Transgenic lines of these reporters were generated by site-specific integration into the attP2 landing site on the third chromosome using standard phiC31 transformation methods. All transgenic plasmids were verified by DNA sequencing before germline transformation.
 
@@ -135,7 +573,7 @@ To generate UAS-FLAG-Br-Z2-FL; UAS-FLAG-Br-Z2-ΔBTB; UAS-FLAG-Br-Z2-Δ5AA or UAS
 
 For Coimmunoprecipitation experiments, Arm-HA in pcDNA3.1 (Invitrogen) was made by cloning Arm-S10 from genome DNA extracted from UAS-Arm-S10 transgenic fly line (#4782; BDSC), followed by replacing Myc tag with HA tag (YPYDVPDYA). FLAG-tagged Br isoforms in pcDNA3.1 were constructed by cloning cDNA of each isoform from corresponding br isoform-specific transgenic lines using genomic DNA PCR. aa 191–514; aa 1–190; aa 32–97, aa 439–492 and aa 46–50 of Br-Z2 were deleted to make Br-Z2-N, Br-Z2-C, Br-Z2-ΔBTB, Br-Z2-ΔZF and Br-Z2-Δ5AA respectively. pCMV-Myc-TCF is a generous gift from Dr. Esther M Verheyen.
 
-## MARCM clonal analysis
+### MARCM clonal analysis
 
 To generate MARCM clones shown in Figure 1H–I’, Figure 3I,J or Figure 4—figure supplement 1E, larvae were heat-shocked at 37°C for 6 times for 40 min each time successively at 24, 28, 48, 52, 72, 76 hr after-larvae-hatching (ALH) and further aged at 25°C before dissection at early adult stage (2–3 days after eclosion).
 
@@ -143,17 +581,17 @@ To generate MARCM clones shown in Figure 3G,H, larvae were heat-shocked at 37°C
 
 To generate MARCM clones shown in Figure 3M, third instar larvae were heat-shocked at 37°C for 40 min and farther aged at 25°C before dissection at 96 hr APF.
 
-## Lineage-tracing
+### Lineage-tracing
 
 The lineage tracing experiments as shown in Figure 3A–F’ were performed by crossing the esg-Gal4, Gal80ts, UAS-CD8-GFP; UAS-w-RNAi or esg-Gal4, Gal80ts, UAS-CD8-GFP; UAS-cut-RNAi flies with UAS-FLP; Act5C-FRT>stop>FRT-lacZ.nls flies. Embryos were collected and kept at 18°C. Late third instar larvae were shifted to 29°C until dissection at early adult stage (2–3 days after eclosion).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For intestine-renal tubule immunostaining, samples were dissected in Schneider’s insect medium (Sigma-Aldrich) and proceeded as previously described (Lin et al., 2008) with modifications. Briefly, samples were fixed in 4% formaldehyde/1xPBS/n-heptane (v/v/v = 1:1:2) for 15 min at room temperature, washed with 100% methanol and gradually rehydrated in 75, 50 and 25% PBST (1xPBS plus 0.1% Triton X-100)/methanol mix. Samples were washed several times with PBST, blocked in blocking solution (1% BSA in PBST) for 1 hr, followed by incubating with appropriate primary antibody overnight at 4°C. After incubation with secondary antibodies according to standard procedures, samples were mounted in Vectashield (Vector Laboratories). For DNA staining, Hoechst (Life Technologies) was added in the wash step with a dilution of 1:3000. Images were obtained on a Leica TCS SP8 AOBS confocal microscope and were processed with Adobe Photoshop.
 
 Primary antibodies used in this study were chicken anti-GFP (1:2000, Abcam), mouse anti-Pros (1:100, Developmental Studies Hybridoma Bank [DSHB]), mouse anti-Cut (2B10) (1:100, DSHB), mouse anti-Broad-core (25E9) (1:200, DSHB), mouse anti-Nc82 (1:100, DSHB), mouse anti-AstA (1:100, DSHB), rabbit anti-Pdm1 (1:1000, a generous gift from Dr. Xiaohang Yang), mouse anti-β-galactosidase (1:100, DSHB), rabbit anti-β-galactosidase (1:1000, Cappel), rabbit anti-phospho-Histone H3 (1:1000, Upstate).
 
-## Cell lines and transfection
+### Cell lines and transfection
 
 Human embryonic kidney HEK293T cells (ATCC, RRID: CRL-3216 obtained from Dr. Hong Wu’s laboratory, Peking University, and authenticated by ATCC) were maintained in DMEM medium (Invitrogen) supplemented with 10% FBS at 37 ˚C and 5% CO2. DNA transfection was performed using a standard polyethylenimine (PEI) protocol.
 
@@ -161,26 +599,26 @@ Drosophila S2 (Schneider 2) cells (DGRC, Cat#: S2-DGRC; obtained from Dr. Alan J
 
 Both cell lines used in this study have been tested for and confirmed to be negative for mycoplasma contamination, using short tandem repeat (STR) profiling technique.
 
-## Coimmunoprecipitation
+### Coimmunoprecipitation
 
 Coimmunoprecipitation assays in HEK293T cell extracts were performed as previously described (Liu et al., 2017). Briefly, 48 hr after transfection, HEK293T cells were harvested, washed and resuspended in lysis buffer [50 mM Tris-HCl (pH 8.0); 120 mM NaCl; 5 mM EDTA; 1% NP-40; 10% glycerol; protease inhibitor cocktail (Sigma-Aldrich); 2 mM Na3VO4] and kept on ice for 20 min. Cell extracts were sonicated with Bioruptor Plus (Biosense) at 4°C with low power for 5 cycles of 10 s on/10 s off. The cell extracts were clarified by centrifugation, and proteins immobilized by binding to anti-FLAG M2 (Sigma-Aldrich) affinity gel for 4 hr at 4°C. Beads were washed and proteins recovered directly in SDS-PAGE sample buffer. Rabbit anti-Flag (Cell Signaling Technology), Rabbit anti-c-myc (Cell Signaling Technology) or rabbit anti-HA (Santa Cruz Biotechnologies) were used for western blot analysis.
 
-## Br-Z2 antibody
+### Br-Z2 antibody
 
 Isoform-specific rabbit anti-Br-Z2 antibody was generated in this study [GST fusion of Br-Z2 aa 432–514, affinity purified (Abclonal Biotech.)] and used at 1:40 for immunostaining.
 
-## Protein purification
+### Protein purification
 
 The DNA-binding domains (DBD) of TCF (aa 271–408) and Br-Z2 (aa 432–514) were cloned into pGEX-6P-1. GST-tagged protein was purified by ProteinIso GST resin (Transgen Biotech) through column buffer (25 mM HEPES (pH 7.6), 150 mM NaCl, 10% glycerol, 1 mM EDTA, 10 mM β-mercaptoethanol, 2 mM PMSF). After washing, protein was eluted with 100 mM glutathione in column buffer. Protein concentrations were measured by Coomassie stained gels. Known concentrations of BSA (bovine serum albumin) were used as a standard.
 
-## Electromobility shift assays
+### Electromobility shift assays
 
 Increasing concentration of purified GST-tagged protein and 10 fmol biotin-labelled double-stranded DNA substrate were incubated at 25°C in 20 μl reaction buffer (20 mM HEPES (pH 7.9), 50 mM KCl, 0.1 mM EDTA, 2 mM DTT, 6 mM MgCl2, 0.1 mg/ml BSA, 50 ug/ml poly(dI-dC), 5% glycerol) for 45 min. The reaction mixture was loaded and resolved in 8% TBE gel. Amounts of recombinant protein used per reaction were as follows: 1.2–7.2 ug GST-TCF-DBD (E probe); 0.01–0.2 ug GST-Br-Z2-DBD (P probe) and 0.2–1 ug GST-Br-Z2-DBD (E1 probe).
 
-## Proximity ligation assay (PLA)
+### Proximity ligation assay (PLA)
 
 Duolink in situ PLA was performed with Drosophila S2 cells according to manufacturer’s instructions (DUO92101; Sigma-Aldrich). Briefly, after transfection and fixation, S2 cells were incubated with primary antibodies at RT for 3 hr, followed by incubation with Duolink PLA probes (1:12) at 37°C for 1 hr, ligation at 37°C for 1 hr and amplification at 37°C for 2 hr. Primary antibodies used were rabbit anti-Myc (1:200) and mouse-anti-Br-core (1:150).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Length of ureter was measured with Leica Application Suite 2.6.3 from Leica Microsystems. For quantification of the intensity of antibody staining, images were taken with the same confocal settings and the mean fluorescence intensity was measured with Histogram function of Adobe Photoshop. Unpaired Student’s t-tests were used for statistical analysis between two groups.

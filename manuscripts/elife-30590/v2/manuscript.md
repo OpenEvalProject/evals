@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.30590.001 The N-end rule pathway is an evolutionarily conserved proteolytic system that degrades proteins containing N-terminal degradation signals called N-degrons, and has emerged as a key regulator of various processes. Viruses manipulate diverse host pathways to facilitate viral replication and evade antiviral defenses. However, it remains unclear if viral infection has any impact on the N-end rule pathway. Here, using a picorna-like virus as a model, we found that viral infection promoted the accumulation of caspase-cleaved Drosophila inhibitor of apoptosis 1 (DIAP1) by inducing the degradation of N-terminal amidohydrolase 1 (NTAN1), a key N-end rule component that identifies N-degron to initiate the process. The virus-induced NTAN1 degradation is independent of polyubiquitylation but dependent on proteasome. Furthermore, the virus-induced N-end rule pathway suppression inhibits apoptosis and benefits viral replication. Thus, our findings demonstrate that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis.
+The N-end rule pathway is an evolutionarily conserved proteolytic system that degrades proteins containing N-terminal degradation signals called N-degrons, and has emerged as a key regulator of various processes. Viruses manipulate diverse host pathways to facilitate viral replication and evade antiviral defenses. However, it remains unclear if viral infection has any impact on the N-end rule pathway. Here, using a picorna-like virus as a model, we found that viral infection promoted the accumulation of caspase-cleaved Drosophila inhibitor of apoptosis 1 (DIAP1) by inducing the degradation of N-terminal amidohydrolase 1 (NTAN1), a key N-end rule component that identifies N-degron to initiate the process. The virus-induced NTAN1 degradation is independent of polyubiquitylation but dependent on proteasome. Furthermore, the virus-induced N-end rule pathway suppression inhibits apoptosis and benefits viral replication. Thus, our findings demonstrate that a virus can suppress the N-end rule pathway, and uncover a new mechanism for virus to evade apoptosis.
 
 ## Introduction
 
@@ -40,27 +40,39 @@ Here, we report that the infection by a picorna-like virus can induce apoptosis 
 
 ## Results
 
-## Viral infection induces apoptosis in Drosophila
+### Viral infection induces apoptosis in Drosophila
 
 Previous studies showed that various viruses, including Autographa californica nucleopolyhedrovirus (AcMNPV), Flock House Virus (FHV), and Drosophila C virus (DCV), can induce apoptosis in Drosophila cells or adult flies (Lamiable et al., 2016; Lannan et al., 2007; Liu et al., 2013; Nainu et al., 2015; Settles and Friesen, 2008). Among these viruses, DCV, which is a picorna-like virus assigned to the family Dicistroviridae of the order Picornavirales, is a natural pathogen of Drosophila and a classic model virus (Johnson and Christian, 1998). To confirm whether DCV infection can also induce apoptosis in our system, we performed a flow cytometry assay using Annexin V-allophycocyanin (APC)/propidium iodide (PI) double staining in cultured Drosophila S2 cells. Annexin V staining can detect the surface exposure of phosphatidylserine, a hallmark of apoptosis, while PI staining can identify dead cells. Consistent with previous study (Lamiable et al., 2016), DCV-infected cells showed increased Annexin V and PI staining as infection progressed when comparing with mock infected cells (Figure 1A and B). Moreover, we used terminal deoxynucleotide transferase-mediated dUTP nick-end labeling (TUNEL) staining to detect apoptotic cells. In this assay, DCV-infected cells also showed an increase in apoptotic cell death comparing with mock infected cells (Figure 1C). In addition, previous study has reported that the transcriptions of RHG genes were up-regulated by the AcMNPV or FHV infection in adult flies (Liu et al., 2013). Our data showed that DCV infection induced RHG gene transcription in Drosophila S2 cells (Figure 1D). The level of reaper mRNA was significantly induced at 6 hr post infection (h.p.i) of DCV, while a significant induction of hid or grim mRNA can be detected at 12 h.p.i (Figure 1D). Altogether, DCV infection is able to induce the transcription of RHG genes and apoptosis in cultured Drosophila cells.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig1-v2.jpg)
 
-**Figure 1.:** Drosophila S2 cells.(A) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. Annexin-V-APC/PI double staining and flow cytometry assay was performed to quantify viable (Annexin-V-APC-/PI-), early apoptotic (Annexin-V-APC+/PI-) and late apoptotic cells (Annexin-V-APC+/PI+). (B) The percentage of early apoptotic cells and late apoptotic cells after mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time (n = 3; error bars, s.d.). (C) S2 cells were mock infected or infected with DCV (MOI = 5) for 18 hr and analyzed by a TUNEL assay. Detection of DNA using DAPI staining was performed in the same experiment. TUNEL+ signals are green and DAPI+ signals are blue. (D) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. After that, total RNA extracts were prepared for qRT-PCR assay of hid, reaper or grim mRNA (normalized to Rp49; n = 3; error bars, s.d.). mi, mock infection. 10.7554/eLife.30590.003Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. Annexin-V-APC/PI double staining and flow cytometry assay was performed to quantify viable (Annexin-V-APC-/PI-), early apoptotic (Annexin-V-APC+/PI-) and late apoptotic cells (Annexin-V-APC+/PI+). (B) The percentage of early apoptotic cells and late apoptotic cells after mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time (n = 3; error bars, s.d.). (C) S2 cells were mock infected or infected with DCV (MOI = 5) for 18 hr and analyzed by a TUNEL assay. Detection of DNA using DAPI staining was performed in the same experiment. TUNEL+ signals are green and DAPI+ signals are blue. (D) Cultured S2 cells were mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. After that, total RNA extracts were prepared for qRT-PCR assay of hid, reaper or grim mRNA (normalized to Rp49; n = 3; error bars, s.d.). mi, mock infection.
 
-## Inhibition of apoptosis enhances viral replication in cells and adult flies
+### Inhibition of apoptosis enhances viral replication in cells and adult flies
 
 After determining that DCV infection induces apoptosis, we further examined whether apoptosis has any antiviral role. To this end, we ectopically expressed DIAP1 in cultured S2 cells to inhibit apoptosis. Our results showed that the ectopic expression of DIAP1 effectively inhibited apoptosis (Figure 2A) and caused about two-fold increase of DCV genomic RNA (Figure 2B). Moreover, when we knocked down both of the effector caspases DrICE and DCP1, the virus-induced apoptosis was also dramatically inhibited (Figure 2D), resulting in a significant increase of DCV genomic RNA in infected cells (Figure 2E). In addition, the inhibition of apoptosis by either DIAP1 overexpression or effector caspases knockdown similarly increased DCV genomic RNA levels in cultured fluids (Figure 2C and F), excluding the possibility that the increase of DCV genomic RNA levels in cells is caused by promoting virus entry or inhibiting virus release.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig2-v2.jpg)
 
-**Figure 2.:** (A) Cultured S2 cells were transfected with empty vector or the plasmid expressing DIAP1 as indicated, and then infected with DCV (MOI = 5) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 3; error bars, s.d.). (B–C) Cultured S2 cells were transfected and infected as described in (A). After that, total RNAs in cells (B) and in 5% of cultured fluids (C) were extracted, followed by qRT-PCR assay of viral genomic RNA (n = 3; *, p<0.05 by two-tailed Student's t test; error bars, s.d.). For (B), viral genomic RNAs were normalized to Rp49. (D) Cultured S2 cells were transfected with dsRNAs against indicated genes and then infected with DCV (MOI = 5) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 3; error bars, s.d.). (E–F) Cultured S2 cells were transfected and infected as described in (D). After that, total RNAs in cells (E) and in 5% of cultured fluids (F) were extracted, followed by qRT-PCR assay of viral genomic RNA (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). For (E), viral genomic RNAs were normalized to Rp49. (G) Survival of adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection or mock infection (n = 3; each group contains 15 female flies and 15 male flies; error bars, s.d.). (H) Total RNA extracts from adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection for 3 days were prepared for qRT-PCR assay of viral genomic RNA (normalized to Rp49, n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). 10.7554/eLife.30590.005Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Cultured S2 cells were transfected with empty vector or the plasmid expressing DIAP1 as indicated, and then infected with DCV (MOI = 5) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 3; error bars, s.d.). (B–C) Cultured S2 cells were transfected and infected as described in (A). After that, total RNAs in cells (B) and in 5% of cultured fluids (C) were extracted, followed by qRT-PCR assay of viral genomic RNA (n = 3; *, p<0.05 by two-tailed Student's t test; error bars, s.d.). For (B), viral genomic RNAs were normalized to Rp49. (D) Cultured S2 cells were transfected with dsRNAs against indicated genes and then infected with DCV (MOI = 5) for 24 hr. The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 3; error bars, s.d.). (E–F) Cultured S2 cells were transfected and infected as described in (D). After that, total RNAs in cells (E) and in 5% of cultured fluids (F) were extracted, followed by qRT-PCR assay of viral genomic RNA (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). For (E), viral genomic RNAs were normalized to Rp49. (G) Survival of adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection or mock infection (n = 3; each group contains 15 female flies and 15 male flies; error bars, s.d.). (H) Total RNA extracts from adult flies with indicated genotypes after DCV (1011.5 TCID50/ml) oral infection for 3 days were prepared for qRT-PCR assay of viral genomic RNA (normalized to Rp49, n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.).
 
 To assess whether apoptosis contributes to inhibit viral replication in adult flies, we performed a DCV oral infection assay using p53 loss-of-function fly allele 5A-1–4 (p53−/−). This fly allele has a reduced level of stress-induced apoptosis, but is otherwise viable and has no obvious phenotype (Liu et al., 2013; Rong et al., 2002). 7 days after the DCV oral infection, almost all p53−/− flies were dead, while about 40% control flies survived in the viral challenge (Figure 2G). These data indicate that the loss of p53 function made adult flies more susceptible to viral infection. We further tested the DCV genomic RNA level at 3 days post DCV oral infection, and observed approximately 5-fold increase of DCV genomic RNA in p53−/− flies, when comparing with control flies (Figure 2H). Taken together, our data show that apoptosis plays an antiviral role in cultured Drosophila S2 cells and adult flies.
 
-## Viral infection promotes the accumulation of cleaved DIAP1 in cells
+### Viral infection promotes the accumulation of cleaved DIAP1 in cells
 
 As one of the most important cell death regulators, DIAP1 has been reported to be depleted during the course of FHV infection (Settles and Friesen, 2008). To study whether DCV infection has any effect on DIAP1, we determined the levels of endogenous DIAP1 using western blot in DCV-infected Drosophila S2 cells. DIAP1 has been gradually depleted during the course of DCV infection (Figure 3A). To examine whether DCV infection promotes DIAP1 degradation, cycloheximide (CHX) degradation assays have been conducted. Because CHX treatment can efficiently block viral protein synthesis and viral replication, we infected cells using DCV immediately after or 8 hr before adding CHX. Although viral infection immediately after CHX addition did not accelerate DIAP1 depletion (Figure 3—figure supplement 1A, lanes 1 and 2 vs. 3 and 4), viral infection before CHX addition did promote DIAP1 degradation (Figure 3—figure supplement 1A, lanes 5 and 6, 1B, 1C, and 1D). These results show that DCV infection promotes the degradation of DIAP1, and this process relies on viral protein synthesis and/or viral replication, but not the input viral components, as blocking viral protein synthesis eliminated this effect.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cultured S2 cells were mock infected for 36 hr or infected with DCV (MOI = 5) for indicated time. Cell lysates were subjected to SDS-PAGE, followed by western blots using the indicated antibodies or Coomassie Blue staining. (B) Schematic diagram of two distinct mechanisms to produce a smaller form of DIAP1. (C) Cultured S2 cells were treated with DMSO or z-VAD-FMK as indicated, and then mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. (D) Cultured S2 cells were transfected with dsRNAs against the indicated genes, and then mock infected for 6 hr or infected with DCV (MOI = 5) for indicated time. (E) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, and then mock infected for 36 hr or infected with DCV (MOI = 5) for indicated time. (F) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, and then treated with DMSO or z-VAD-FMK as indicated. After that cells were mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. (G–H) Cultured S2 cells were transfected with plasmid expressing myc-DIAP1-HA, myc-DIAP1D20A-HA (G) or myc-DIAP1M38A-HA (H) as indicated, and then mock infected for 24 hr or infected with DCV (MOI = 5) for indicated time. (C–H) Cell lysates were subjected to western blots using the indicated antibodies. (I) Cultured S2 cells were transfected with empty vector or plasmid expressing myc-DIAP1-HA or myc-DIAP1ΔN20-HA as indicated, and then mock infected or infected with DCV (MOI = 5) for indicated time. The relative caspase activity was measured, and normalized to cell viability (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cultured S2 cells were treated with 50 μg/ml CHX for 0 (lanes 1, 3, and 5) or 50 min (lanes 2, 4, and 6). Cells were infected with DCV immediately after CHX addition (lanes 3 and 4) or 8 hr before CHX addition (lanes 5 and 6). Cell lysates were then prepared and subjected to western blots using the indicated antibodies. (B–C) Cultured S2 cells were mock infected (B) or infected with DCV (MOI = 5) for 8 hr (C) and then treated with 50 μg/ml CHX for the indicated periods. Cell lysates were prepared and subjected to western blots using the indicated antibodies. For (A–C), the values listed below the blots indicate the relative total DIAP1 protein levels following ɑ-tubulin normalization using Quantity One software. The DIAP1 level at 0 min CHX treatment (lanes 1) was defined as 100% (or 1). (D) The relative levels of total DIAP1 protein shown in (B) and (C) were plotted. All data represent means and SD of three independent experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Cultured S2 cells were cultured in a 100 mm plate and were firstly transfected with plasmid expressing myc-DIAP1-HA. After 24 hr, the transfected cells were divided into a six-well plate, and cultured for six more hrs to reach 80% confluence (about 3 × 106 cells per well). After that, total RNAs in cells were extracted, followed by qRT-PCR assay of DIAP1 mRNA (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). Of note, endogenous DIAP1 mRNA was ignored here.
 
 Intriguingly, a slightly smaller, faster-migrating form of endogenous DIAP1 can be detected (Figure 3A), leading us to ask how this smaller form of DIAP1 was generated. As illustrated in Figure 3B, a smaller form of DIAP1 can be either produced by caspase cleavage at Asp20 or by internal initiation at an in-frame second ATG (Ditzel et al., 2003; Vandergaast et al., 2015; Vandergaast et al., 2011). To distinguish between these two mechanisms, we first used the pancaspase inhibitor z-VAD-FMK to block the caspase activity. Our result showed that the presence of z-VAD-FMK could effectively block the production of the smaller DIAP1 (Figure 3C). Additionally, we also knocked down DrICE or DCP-1 by RNA interference (RNAi). Consistent with the results in Figure 3C, the knockdown of either effector caspase DrICE or DCP-1 mostly blocked the appearance of the smaller DIAP1 (Figure 3D).
 
@@ -72,7 +84,7 @@ It would be interesting to ask whether the cleaved, smaller form of DIAP1 is act
 
 In conclusion, our data show that viral infection caused the accumulation of a caspase-cleaved, smaller form of DIAP1, which is potent in apoptosis blockage, in cultured Drosophila cells.
 
-## Virus-induced accumulation of cleaved DIAP1 is mediated by the N-end rule pathway
+### Virus-induced accumulation of cleaved DIAP1 is mediated by the N-end rule pathway
 
 The accumulation of the caspase-cleaved, smaller form of DIAP1 during viral infection could be due to the enhancement in either caspase-mediated cleavage or protein stability. To distinguish between these two possibilities, we first determined the caspase activities during the course of viral infection. Interestingly, we observed that the caspase activity was enhanced after 12 h.p.i. (Figure 4A), while the apparent accumulation of the smaller DIAP1 was readily detectable at 6 h.p.i. (Figure 3A). Of note, the experiments in Figures 3A and 4A were conducted using the same set of samples, excluding the possible variations of different samples. Thus, at least at early stage of viral infection, the accumulation of smaller DIAP1 is not due to enhanced caspase activity.
 
@@ -86,9 +98,17 @@ Moreover, we ectopically expressed either WT or N21A mutant DIAP1 in cells, as t
 
 Because the N-end rule pathway involves multiple steps, including deamidation by NTAN1, arginylation by ATE1, and proteolysis. We aim to investigate which step is affected by viral infection. To this end, we made the N21D mutation of DIAP1, which skips the N-terminal Asn deamidation step. Interestingly, viral infection did not increase the accumulation of the cleaved, smaller form of DIAP1N21D (Figure 4F), indicating that the inhibition of the deamidation step of the N-end rule pathway is required for the virus-induced accumulation of cleaved DIAP1.
 
-## Viral infection promotes the depletion of NTAN1 in the early stage of infection
+### Viral infection promotes the depletion of NTAN1 in the early stage of infection
 
 In the N-end rule pathway, the N-terminal Asn deamidation is catalyzed by NTAN1, while the arginylation of the deamidated protein is mediated by ATE1 (Ditzel et al., 2003). Consistent with our previous observation that the cleaved DIAP1 accumulation is dependent on the inhibition of NTAN1-mediated deamidation step (Figure 4F), our data show that viral infection induced the gradual decrease of the protein level of NTAN1 but not ATE1 (Figure 5A). Interestingly, the mRNA levels of NTAN1 and ATE1 are both up-regulated during the same time course of viral infection (Figure 5B). In addition, we examined the effect of viral infection to exogenously expressed NTAN1 in cultured cells, and found that the exogenously expressed NTAN1 was also down-regulated during the course of viral infection (Figure 5C). On the other hand, the level of exogenously expressed EGFP was not affected by viral infection (Figure 5D), confirming that the protein expression using the same expression vector was not affected by viral infection. Together, these data indicate that viral infection induced the decrease of NTAN1 protein level in a post-transcriptional manner.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cultured S2 cells were mock infected for 8 hr or infected with DCV (MOI = 5) for indicated time. Cell lysates were subjected to western blots using the indicated antibodies. (B) Cultured S2 cells were infected as described in (A). Total RNA extracts were prepared for qRT-PCR assay of indicated mRNA (normalized to Rp49; n = 3; error bars, s.d.). (C–D) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1 (C) or EGFP (D) as indicated, and then mock infected for 12 hr or infected with DCV (MOI = 5) for indicated time. Cell lysates were subjected to Western blots using the indicated antibodies. (E) Cultured S2 cells were treated with 50 μg/ml CHX for 0 (lanes 1, 3 and 5) or 150 min (lanes 2, 4 and 6). Cells were infected with DCV immediately after CHX addition (lanes 3 and 4) or 6 hr before CHX addition (lanes 5 and 6). Cell lysates were then prepared and subjected to western blots using the indicated antibodies. (F–G) Cultured S2 cells were mock infected (F) or infected with DCV (MOI = 5) (G) for 6 hr and then treated with 50 μg/ml CHX for the indicated periods. Cell lysates were prepared and subjected to western blots using the indicated antibodies. For (A, C–G), the values listed below the blots indicate the relative NTAN1 or EGFP protein levels following ɑ-Tubulin normalization using Quantity One software. The protein level shown in lanes 1 was defined as 100% (or 1). (H) The relative levels of NTAN1 protein shown in (F) and (G) were plotted. All data represent means and SD of three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Cultured S2 cells were mock infected for 18 hr or infected with DCV (MOI = 5) for indicated time. Cell lysates were examined by western blots using the indicated antibodies.
 
 To further assess whether the decrease of NTAN1 protein level during the course of viral infection is due to protein degradation, CHX degradation assays have been conducted. Similar with that of DIAP1, while viral infection immediately after CHX addition did not accelerate NTAN1 depletion (Figure 5E, lanes 1–2 vs. 3–4), viral infection before CHX addition significantly promoted NTAN1 degradation rate when compared with that in non-infected cells (Figure 5E, lanes 1–2 vs. 5–6, Figure 5F,G and H).
 
@@ -96,9 +116,21 @@ Interestingly, viral infection promoted the accumulation of NTAN1 after 12 h.p.i
 
 In conclusion, our data showed that virus induced the degradation of NTAN1 protein in the early stage of infection, which could lead to the accumulation of caspase cleaved, smaller form of DIAP1.
 
-## Viral infection promotes the degradation of NTAN1 via the proteasome pathway
+### Viral infection promotes the degradation of NTAN1 via the proteasome pathway
 
 As we have found that viral infection promoted the degradation of NTAN1, we ought to investigate which protein degradation pathway(s) are involved in this process. Because the proteasome pathway is one of the major protein degradation pathways, we treated Drosophila S2 cells with proteasome inhibitor MG-132 or lactacystin. The results show that, during viral infection, the NTAN1 protein levels could be restored by either MG-132 or lactacystin treatment (Figure 6A and B), suggesting that the proteasome pathway is involved in virus-induced degradation of NTAN1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1, and then treated with DMSO, MG132 (A) or lactacystin (B) as indicated. After that, cells were mock infected for 12 hr or infected with DCV (MOI = 5) for indicated time. (C) Cultured S2 cells were transfected with plasmid expressing HA-NTAN14KA, and then treated with DMSO or MG132 as indicated. After that, cells were mock infected for 12 hr or infected with DCV (MOI = 5) for indicated time. (D–G) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1 (D and E) or HA-NTAN14KA (F and G) and then mock infected (D and F) or infected with DCV (MOI = 5) (E and G) for 6 hr. After that, cells were treated with 50 μg/ml CHX for the indicated periods. (A–G) Cell lysates were subjected to western blots using the indicated antibodies. The values listed below the blots indicate the relative NTAN1 protein levels compared to lane 1 following ɑ-tubulin normalization using Quantity One software. (H) The relative levels of NTAN1 protein shown in (D), (E), (F) and (G) were plotted. All data represent means and SD of three independent experiments. (I) Proposed model of NTAN1 degradation strategies.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The amino acid sequence of Drosophila melanogaster NTAN1 is compared with those of indicated NTAN1s. Lysine residues are marked with asterisk.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Cultured S2 cells were transfected with empty vector or plasmid expressing HA-NTAN1 or NTAN14KA as indicated, and treated with MG-132. After that, cells were mock infected (lanes 1, 2 and 4) or infected with DCV (MOI = 5) (lane 3) for 12 hr. The cells were lysed and subjected to immunoprecipitation using an anti-HA antibody. Cell lysates and immunoprecipitates were subjected to western blots using the indicated antibodies. (B–E) Cultured S2 cells were transfected with plasmid expressing HA-NTAN1K40A (B), HA-NTAN1K63A (C), HA-NTAN1K134A (D) or HA-NTAN1K186A (E). After that, cells were treated with DMSO or MG132 as indicated, and then mock infected for 12 hr or infected with DCV (MOI = 5) for indicated time. Cell lysates were examined by western blots using the indicated antibodies.
 
 Because the proteasome degradation pathway is usually dependent on polyubiquitylation, we next asked whether viral infection induces the polyubiquitylation of NTAN1. NTAN1 contains four lysine residues (i.e. K40, K63, K134 and K186). Among them, K186 is conserved in Diptera and vertebrate, K40 and K63 are conserved in Diptera but not vertebrate, while K134 is not conserved in Diptera (Figure 6—figure supplement 1). To investigate whether these residues are involved in the virus-induced NTAN1 degradation, we replaced all of the four lysine residues with alanine (NTAN14KA). However, when NTAN14KA was exogenously expressed in Drosophila S2 cells, viral infection was still able to induce the decrease of NTAN14KA protein level (Figure 6C). Furthermore, we conducted CHX degradation assay, and observed that in the absence of viral infection, NTAN14KA is significantly more stable than NTAN1WT, while viral infection similarly promoted the degradation of both NTAN14KA and NTAN1WT (Figure 6D–H). These results show that the virus-induced NTAN1 degradation is independent of ubiquitylation.
 
@@ -108,9 +140,17 @@ Next, we constructed four mutants of NTAN1, that is K40A, K63A, K134A and K186A
 
 Altogether, our data showed that NTAN1 can be polyubiquitylated, and degraded by both ubiquitylation-dependent and -independent degradation pathways. While both NTAN1 degradation pathways are dependent on proteasome, the virus-induced NTAN1 degradation is independent of ubiquitylation (as illustrated in Figure 6I).
 
-## Virus-induced NTAN1 degradation inhibits apoptosis and benefits viral replication
+### Virus-induced NTAN1 degradation inhibits apoptosis and benefits viral replication
 
 We ought to investigate the role of virus-induced NTAN1 degradation on apoptosis and viral replication. Our previous data have shown that the loss of NTAN1 can prevent the degradation of cleaved DIAP1 (Figure 4C). Here, we ectopically expressed HA-tagged NTAN1 in virally infected cells. Our results showed that the ectopic expression of HA-NTAN1 partially restored the expression of NTAN1, resulting in the almost elimination of both full-length and caspase-cleaved forms of DIAP1 at 15 and 18 h.p.i. (Figure 7A). Consequently, in the context of viral infection, the partial restoration of NTAN1 expression significantly promoted apoptosis (Figure 7B) and the relative caspase activity in cells (Figure 7C). Furthermore, the partial restoration of NTAN1 expression also significantly restricted viral RNA replication at 18 h.p.i. (Figure 7D). Moreover, the knockdown of NTAN1 inhibited virus-induced apoptosis and enhanced DCV replication (Figure 7—figure supplement 1A and B). Altogether, these data indicate that virus-induced NTAN1 degradation can inhibit apoptosis and benefit viral replication.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig7-v2.jpg)
+
+**Figure 7.:** (A–D) Cultured S2 cells were transfected with empty vector or plasmid expressing HA-NTAN1 as indicated, and then mock infected for 18 hr or infected with DCV (MOI = 5) for indicated time. (A) Cell lysates were prepared and subjected to western blots using the indicated antibodies. (B) The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 6; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (C) The relative caspase activity was measured, and normalized to cell viability (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (D) Total RNAs were extracted and then subjected to qRT-PCR assay of viral genomic RNA (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/30590/elife-30590-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Cultured S2 cells were transfected with dsRNAs against indicated genes, and then infected with DCV (MOI = 5) for 15 hr. (A) The percentages of early apoptotic and late apoptotic cells were measured by Annexin-V-APC/PI double staining and flow cytometry assay (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). (B) Total RNAs were extracted and then subjected to qRT-PCR assay of viral genomic RNA (n = 3; *p<0.05 by two-tailed Student's t test; error bars, s.d.). Viral genomic RNAs were normalized to Rp49.
 
 ## Discussion
 
@@ -132,33 +172,162 @@ In summary, our findings demonstrate for the first time that a virus can suppres
 
 ## Materials and methods
 
-## Fly stocks and DCV oral infection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Drosophila melanogaster)</td>
+      <td>S2</td>
+      <td>ATCC</td>
+      <td>ATCC, Cat# CRL-1963; RRID: CVCL_Z232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Flag M2 (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Sigma,Cat# F1804; RRID: AB_262044</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-myc (mouse monoclonal)</td>
+      <td>MBL</td>
+      <td>MBL, Cat# M192-3; RRID: AB_11160947</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA (mouse monoclonal)</td>
+      <td>ProteinTech</td>
+      <td>ProteinTech, Cat# 66006–1-Ig</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-α-Tubulin (mouse monoclonal)</td>
+      <td>ProteinTech</td>
+      <td>ProteinTech, Cat# 66031–1-Ig; RRID: AB_11042766</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-DIAP1 (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology, Cat# sc-32414; RRID: AB_639332</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>HRP-conjugated anti-GFP</td>
+      <td>ProteinTech</td>
+      <td>ProteinTech, Cat# HRP-66002</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-ubiquitin (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology, Cat# 3936; RRID:AB_331292</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Annexin-V-APC/PI double staining kit</td>
+      <td>BioLegend</td>
+      <td>BioLegend, Cat# 640932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>TUNEL staining kit</td>
+      <td>Roche</td>
+      <td>Roche, Cat# 11684817910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>CellTiter-Blue Cell Viability kit</td>
+      <td>Promega</td>
+      <td>Promega, Cat# G8080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Caspase-Glo 3/7 kit</td>
+      <td>Promega</td>
+      <td>Promega, Cat# G8090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>z-VAD-FMK</td>
+      <td>MedChem Express</td>
+      <td>MedChem Express, Cat# HY-16658</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>CHX</td>
+      <td>Sigma</td>
+      <td>Sigma, Cat# C7698</td>
+      <td>50 μg/ml</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>MG-132</td>
+      <td>Sigma</td>
+      <td>Sigma, Cat# C2211</td>
+      <td>50 μM</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>lactacystin</td>
+      <td>Merck</td>
+      <td>Merck, Cat# 426100</td>
+      <td>10 μM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and DCV oral infection
 
 All flies used were 3- to 5-day-old adults reared at 25°C on a standard cornmeal/yeast diet. For each group, adult flies were randomly allocated and the sample size was chosen according to previous study (Wang et al., 2015). The p53 loss-of-function allele 5A-1–4 was obtained from the Bloomington stock center. The w1118 fly line used for control was obtained from Institute of Genetics and Developmental Biology, Chinese Academy of Sciences (Beijing, China).
 
 DCV oral infections were performed on 3–6 days-old flies. Flies were randomly allocated into mock infection and DCV infection groups. For DCV oral infection, 2 ml of a mix of 25% virus extract (1011.5 TCID50/ml), 25% of yeast and 50% of standard cornmeal/yeast diet were loaded on a 1 × 5 cm filter paper. Each treated filter paper was placed in the bottom of an empty plastic vial. For the first 3 days, 30 flies per vial were placed and fed for 24 hr at 25°C, and then moved to a new vial containing filter paper treated as above. After that, we transferred the flies to new vials containing standard cornmeal/yeast diet. For mock oral infections flies, we used PBS instead of DCV extract to load the filter paper.
 
-## Plasmid and in vitro transcription of RNA or dsRNA
+### Plasmid and in vitro transcription of RNA or dsRNA
 
 The Drosophila inducible expression system vector, pAc5.1/V5-His B (Invitrogen, Carlsbad, CA), was used to construct plasmid that express protein in Drosophila S2 cells. The diap1 or ntan1 ORF was amplified from fly cDNAs, kindly provided by Dr. Jianquan Ni (Tsinghua University, Beijing, China), by polymerase chain reaction (PCR). The diap1 ORF or its mutant carrying a myc tag at its 5’-end and a HA tag at its 3’-end was cloned into the EcoR І-Xho І site of the pAc5.1/V5-His B vector downstream of the Drosophila actin 5C promoter. The ntan1 ORF or its mutant carrying a HA tag at its 5’-end was cloned into the EcoR І-Xho І site of the pAc5.1/V5-His B vector downstream of the Drosophila actin 5C promoter.
 
 The dsRNAs used for RNAi were transcribed in vitro from the PCR products using T7 RNA polymerase (Promega) for 4 hr. The complete ORF of drice and dronc, nucleotides 1–400 of egfp ORF, nucleotides 1–422 of ntan1 ORF and nucleotides 1–415 of ate1 ORF were designed for generation of dsRNAs.
 
-## Cell line
+### Cell line
 
 S2-ATCC cells (RRID: CVCL_Z232) was obtained from American Type Culture Collection (ATCC). Its identity was confirmed by visual inspection of the cell morphology and its growth kinetics in Schneider's insect medium (Sigma)/10% fetal bovine serum (FBS). A mycoplasma test is usually not done for S2 cells (Berndt et al., 2017).
 
 The cell numbers were counted by using Luna automated cell counter (Logos Biosystems, Anyang-si, South Korea), according to the manufacturer’s instruction.
 
-## Transfection
+### Transfection
 
 The DNA or dsRNA transfection was performed as previously described (Qiu et al., 2011). In brief, Drosophila S2 cells were plated in six-well plates and grown overnight to reach 80% confluence (about 3 × 106 cells per well). After that, DNA plasmid or dsRNA was transfected into the cells using FuGene HD transfection reagent (Roche), according to the manufacturer’s protocol. In addition, for transfecting same plasmid in multiple wells, to ensure the equal transfection, cells cultured in a 100 mm plate were firstly transfected. After 24–36 hr, the transfected cells were randomly divided into six or eight wells of six-well plate, and cultured for ~6 more hrs to reach 80% confluence (about 3 × 106 cells per well). The cells were then subjected to viral infection or other treatments according to experimental requirements.
 
-## Inhibitors
+### Inhibitors
 
 The pancaspase inhibitor z-VAD-FMK (MedChemExpress, NJ, USA) was supplemented at 20 μM. The protein synthesis inhibitor CHX (Sigma) was supplemented at 50 μg/ml. The proteasome inhibitor MG-132 (Sigma) was used at 50 μM. The proteasome inhibitor lactacystin (Merck) was supplemented at 10 μM.
 
-## Western blots, immunoprecipitation (IP) and antibodies
+### Western blots, immunoprecipitation (IP) and antibodies
 
 Cultured S2 cells were harvested, and then lysed in radio-immunoprecipitation assay (RIPA) buffer. The cell lysates were then subjected to 10% SDS-PAGE, followed by western blots according to our standard procedures (Wang et al., 2013). All western blots experiments have been independently repeated at least three times. The quantification of western blots was done via densitometry by using Bio-Rad Quantity One software. Total protein loads were determined by using Coomassie Brilliant Blue R250 staining (Thermo Fisher).
 
@@ -166,20 +335,20 @@ The anti-Flag M2 mouse monoclonal antibody (Sigma, F1804) and anti-myc mouse mon
 
 IP assays were conducted according to our standard protocol (Qi et al., 2011). Proteins were extracted from the precipitates and then subjected to 10% SDS-PAGE and western blots.
 
-## Quantitative reverse transcription-PCR (qRT-PCR)
+### Quantitative reverse transcription-PCR (qRT-PCR)
 
 Total RNA was extracted from 3 × 106 cells by using TRIzol reagent (TaKaRa Bio) and treated by RQ1 RNase-free DNase I (Promega) to remove DNAs as previously described (Wang et al., 2013). qRT-PCR were performed using SuperReal PreMix Plus kit (TIANGEN), according to the manufacturer’s protocol. Gene-specific primers used for PCR amplification or qRT-PCR were listed below.
 
 Hid For CTAAAACGCTTGGCGAACTT; Hid Rev CCCAAAAATCGCATTGATCT; Reaper For ACGGGGAAAACCAATAGTCC; Reaper Rev TGGCTCTGTGTCCTTGACTG; Grim For CAATATTTCCGTGCCGCTGG; Grim Rev CGTAGCAGAAGATCTGGGCC; DIAP1 For CCCCAGTATCCCGAATACGC; DIAP1 Rev TCTGTTTCAGGTTCCTCGGC; ATE1 For GCATACTTCGCCGCATAAATCG; ATE1 Rev CTATGGCGTAATCGGCATCGG; NTAN1 For GTGCTCGTGCTGAATGGTG; NTAN1 Rev CGTAGTCTCTGTAGACGGGATG; DCV For TCATCGGTATGCACATTGCT; DCV Rev CGCATAACCATGCTCTTCTG; Rp49 For AAGAAGCGCACCAAGCACTTCATC; Rp49 Rev TCTGTTGTCGATACCCTTGGGCTT.
 
-## Flow cytometry
+### Flow cytometry
 
 Cell death was assessed by Annexin-V-APC/PI double staining (BioLegend) following manufacturer’s instructions. After acquisition by flow cytometry (Beckman Coulter), data were analyzed and imaged with FCS Express 5 Plus (De Novo Software) with adapted settings.
 
-## TUNEL assay
+### TUNEL assay
 
 Detection of apoptotic cells using TUNEL staining (Roche) was performed following manufacturer’s instructions. In the same experiment, detection of DNA using DAPI staining (Sigma) was performed following manufacturer’s instructions.
 
-## Caspase activity assay
+### Caspase activity assay
 
 Caspase activity was measured using Caspase-Glo 3/7 kit (Promega) following manufacturer’s instructions. In the same experiment, cell viability was measured using CellTiter-Blue Cell Viability kit (Promega) following manufacturer’s instructions.

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.28560.001 In bacteria, mRNA transcription and translation are coupled to coordinate optimal gene expression and maintain genome stability. Coupling is thought to involve direct interactions between RNA polymerase (RNAP) and the translational machinery. We present cryo-EM structures of E. coli RNAP core bound to the small ribosomal 30S subunit. The complex is stable under cell-like ionic conditions, consistent with functional interaction between RNAP and the 30S subunit. The RNA exit tunnel of RNAP aligns with the Shine-Dalgarno-binding site of the 30S subunit. Ribosomal protein S1 forms a wall of the tunnel between RNAP and the 30S subunit, consistent with its role in directing mRNAs onto the ribosome. The nucleic-acid-binding cleft of RNAP samples distinct conformations, suggesting different functional states during transcription-translation coupling. The architecture of the 30S•RNAP complex provides a structural basis for co-localization of the transcriptional and translational machineries, and inform future mechanistic studies of coupled transcription and translation.
+In bacteria, mRNA transcription and translation are coupled to coordinate optimal gene expression and maintain genome stability. Coupling is thought to involve direct interactions between RNA polymerase (RNAP) and the translational machinery. We present cryo-EM structures of E. coli RNAP core bound to the small ribosomal 30S subunit. The complex is stable under cell-like ionic conditions, consistent with functional interaction between RNAP and the 30S subunit. The RNA exit tunnel of RNAP aligns with the Shine-Dalgarno-binding site of the 30S subunit. Ribosomal protein S1 forms a wall of the tunnel between RNAP and the 30S subunit, consistent with its role in directing mRNAs onto the ribosome. The nucleic-acid-binding cleft of RNAP samples distinct conformations, suggesting different functional states during transcription-translation coupling. The architecture of the 30S•RNAP complex provides a structural basis for co-localization of the transcriptional and translational machineries, and inform future mechanistic studies of coupled transcription and translation.
 
 ## Introduction
 
@@ -35,21 +35,196 @@ Early genetic studies suggested interactions between RNAP and the 30S subunit in
 
 ## Results
 
-## RNAP binds the 30S subunit
+### RNAP binds the 30S subunit
 
 To investigate whether RNAP directly interacts with the translational machinery, we tested whether the functional E. coli RNAP core complex binds the E. coli 30S or 50S ribosomal subunits or the 70S ribosome. Using sucrose gradient fractionation and dot-blot assays, we found that RNAP binds stably to the 30S subunit, less to the 50S subunit, and little RNAP binds to the 70S ribosome (Figure 1—figure supplement 1). The 30S•RNAP complex is stable under a wide range of conditions, including those that mimic ionic conditions in living cells and optimally couple transcription and transcription in vitro (Figure 1—figure supplement 2) (Jewett and Swartz, 2004). The binding affinity (Kd) of ≤50 nM under cell-like ionic conditions (see Figure 1—figure supplement 3, and Materials and methods) indicates high stability of the complex at cellular concentrations of free RNAP (~1 × 10−6 M) (Klumpp and Hwa, 2008) and ribosomes/subunits (50–100 × 10−6 M) (Bakshi et al., 2012). Bis-(sulfosuccinimidyl)-suberate cross-linking mapped by mass spectrometry revealed that RNAP β- and β′- subunits are in close proximity to 30S ribosomal proteins S1, S2, S18, and S21 (Table 1), which enclose the mRNA-binding region of the 30S subunit, near the 3′ end of 16S rRNA. Our findings therefore indicate that RNAP forms specific interactions with the 30S subunit.
 
-## Cryo-EM structures of the 30S•RNAP complex
+**Table 1.**
+ In vitro BS3 X-links between subunits of E. coli RNA polymerase and 30S ribosome subunit.Positions of X-linked residues are numbered according to full polypeptide sequences of corresponding proteins (column A) or sequences of X-linked peptides (1 being the N-terminal residue of the each peptide) (column C). Lower e-value indicates higher confidence of computational discovery of a given X-link (column B). In cases where several precursors for a given X-link were discovered (column F) the sequence of the X-linked peptide (column C), theoretical mass (column D), and experimental deviation from the theoretical mass (column E) are shown for the precursor with the lowest e-value (column B).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>X-link</th>
+      <th>Lowest e-value</th>
+      <th>Sequence of X-linked peptides and location of X-linked residues</th>
+      <th>Theoretical precursor mass (Da)</th>
+      <th>Deviation from theoretical mass (Da)</th>
+      <th>Number of precursors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RpoB(900) RS1(450)</td>
+      <td>4.65E-010</td>
+      <td>GETQLTPEEKLLR(10)-KGAIVTGK(1)</td>
+      <td>2423.363414</td>
+      <td>0.99628</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoC(87) RS1(450)</td>
+      <td>2.85E-007</td>
+      <td>GVICEKCGVEVTQTK(6)-KGAIVTGK(1)</td>
+      <td>2617.381784</td>
+      <td>2.99751</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoC(13) RS2(11)</td>
+      <td>6.73E-007</td>
+      <td>AQTKTEEFDAIK(4)-DMLKAGVHFGHQTR(4)</td>
+      <td>3113.560294</td>
+      <td>3.00782</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoB(900) RS18(30)</td>
+      <td>9.38E-005</td>
+      <td>GETQLTPEEKLLR(10)-DIATLKNYITESGK(6)</td>
+      <td>3202.697164</td>
+      <td>2.00093</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoB(900) RS21(5)</td>
+      <td>2.75E-004</td>
+      <td>GETQLTPEEKLLR(10)-PVIKVR(4)</td>
+      <td>2361.363024</td>
+      <td>−0.00541</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>RpoC(87) RS4(185)</td>
+      <td>1.09E-003</td>
+      <td>GVICEKCGVEVTQTK(6)-RKPER(2)</td>
+      <td>2529.304204</td>
+      <td>2.00309</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoB(265) RS19(29)</td>
+      <td>3.12E-003</td>
+      <td>VYVEKGRR(5)-KPLR(1)</td>
+      <td>1655.983404</td>
+      <td>−0.01571</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>RpoB(476) RS1(272)</td>
+      <td>6.47E-003</td>
+      <td>AVKER(3)-QLGEDPWVAIAKR(12)</td>
+      <td>2221.221774</td>
+      <td>−0.00039</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoC(87) RS4(185)</td>
+      <td>7.47E-003</td>
+      <td>GVICEKCGVEVTQTK(6)-RKPER(2)</td>
+      <td>2529.304204</td>
+      <td>2.00389</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>RpoC(50) RS21(25)</td>
+      <td>1.36E-002</td>
+      <td>TFKPER(3)-SCEKAGVLAEVR(4)</td>
+      <td>2232.157124</td>
+      <td>0.99497</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoB(265) RS19(29)</td>
+      <td>1.50E-002</td>
+      <td>VYVEKGRR(5)-KPLR(1)</td>
+      <td>1655.983404</td>
+      <td>−0.01581</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoB(909) RS21(25)</td>
+      <td>2.25E-002</td>
+      <td>AIFGEKASDVK(6)-SCEKAGVLAEVR(4)</td>
+      <td>2619.357654</td>
+      <td>1.00524</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoC(50) RS1(434)</td>
+      <td>8.29E-002</td>
+      <td>TFKPER(3)-ISLGVKQLAEDPFNNWVALNK(6)</td>
+      <td>3269.744714</td>
+      <td>4.00858</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>RpoC(1192) RS16(80)</td>
+      <td>8.79E-002</td>
+      <td>LVITPVDGSDPYEEMIPKWR(18)-VAALIKEVNKAA(10)</td>
+      <td>3707.984664</td>
+      <td>2.00023</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cryo-EM structures of the 30S•RNAP complex
 
 We next visualized the 30S•RNAP complex using single-particle electron cryo-microscopy (cryo-EM) at ~7 Å resolution. Strong density shows RNAP docked near the mRNA-binding site of the 30S subunit between the head and platform domains (Figure 1; Figure 1—figure supplements 4 and 5). We also observe weak density next to RNAP consistent with a second sub-stoichiometric or mobile monomer of RNAP (Figure 1—figure supplement 5A–B). The position of the second RNAP monomer coincides with that in RNAP dimers seen in previous studies (Zhang et al., 1999; Kansara and Sukhodolets, 2011), placing the second RNAP monomer more than 50 Å from the binding site between the primary RNAP monomer and the 30S subunit.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-v2.jpg)
+
+**Figure 1.:** (A). The 30S•RNAP structure. The 30S subunit is in yellow (ribosomal protein S1 is in orange) with domains labeled. RNAP domains are colored in green (α-subunits), blue (β-subunit), cyan (β’-subunit) and violet (ω-subunit). (B) Cryo-EM density (gray mesh) for RNAP (shown at σ = 5). The view shows the top of RNAP,~90° relative to that shown in the left panel (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Sucrose gradients (upper graph) and dot blot assays detecting RNAP in 30S, 50S, 70S or 30SΔS1 complexes. Three fractions (before the peak, at the peak and after the peak) were used for dot blot to detect unbound RNAP (lighter fraction before the peak) and bound RNAP (at the peak) (see Materials and methods). (E) SDS PAGE gel showing the absence of S1 in the 30SΔS1 subunit.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dot blots detecting RNAP in 30S•RNAP mixtures fractionated by sucrose gradient, in the buffers with varying potassium glutamate concentrations. (B) Dot blots detecting RNAP in 30S•RNAP mixtures fractionated by sucrose gradient, in the buffers with varying magnesium acetate concentrations. In panels A and B, unbound RNAP is in the lighter fraction (pre-30S) and 30S-bound RNAP is at the 30S peak, as described in Figure 1—figure supplement 1 (see Materials and methods).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Dot blot assay detecting RNAP in sucrose gradient samples (shown as in Figure 1—figure supplement 1 and Figure 1—figure supplement 2). Controls included free 30S and free RNAP (A) and were used for quantification of bound RNAP (B). The 30S•RNAP complex was analyzed in triplicates (tubes 1–3) (see Materials and methods).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** All particles were initially aligned to a single model using a 4x binned stack. 3D classification (8 classes) using the 2x binned stack (with a 3D mask, green) was used to identify the particles with RNAP at ~5–6 Å resolution (blue). Subsequent 3D classification using a 3D mask around RNAP and S1 yielded two classes with well-defined structural features (blue).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Density of the 30S•RNAP complex (non-rotated RNAP) shown at σ = 3. (B) Density of the 30S•RNAP complex (rotated RNAP) shown at σ = 3. The maps were sharpened by applying the B-factor of −200 Å2. (C) Density of the 30SΔS1•RNAP complex shown at σ = 2.5. The map was sharpened by applying the B-factor of −200 Å2. (D) Density corresponding to two OB domains of S1 (non-rotated RNAP is shown). Putative placement of two OB domain structures is shown in orange in panels (A), (B) and (D). (E) Absence of density for the OB domains of S1 in the 30SΔS1•RNAP complex. (F) Close-up view of the N-terminal helix of S1 bound to S2 (non-rotated RNAP is shown). (G) Absence of density for the N-terminal helix of S1 in the 30SΔS1•RNAP complex. The maps in (D–G) were sharpened by applying the B-factor of −250 Å2 (H) Fourier shell correlation as a function of resolution for 30S•RNAP complexes. (I) Fourier shell correlation as a function of resolution for the 30SΔS1•RNAP complex.
+
 Consistent with our cross-linking results, the β′- and β-subunits of RNAP form two primary contacts with the 30S subunit (Figure 2A–C; Figure 2—figure supplement 1). The N-terminal Zn-finger domain of the β′ subunit (Figure 2B) interacts extensively with ribosomal proteins S2 and S21 and with hairpin-loop 40 (h40) of 16S rRNA. The positively-charged tip of the Zn-finger motif (aa 75–85) binds between a β-sheet and α-helices of S2, which exposes conserved Asp188, Asp204, and Asp205. Hydrophobic side chains of Leu78 and Ile84 from the β′ subunit pack near Phe16 and Ile207 of S2, respectively. The Zn-bound surface is placed near the C-terminus of S21 and the tip of h40 at U1168. An α-helix (aa 264–284) of the β′ subunit near the Zn-binding motif is tilted so that Asp284 contacts the ribose of A1163 of 16S rRNA at h40. The second binding site between RNAP and 30S is formed by hydrophobic packing of the β-subunit flap helix (β-flap) residues Leu901, Leu902, Ile905, and Phe906 onto S18 residues Phe10, Phe13, Val40, and Ile44 (Figure 2C). The area of contact between RNAP and the 30S subunit is ~1750 Å2, indicating that RNAP and 30S form a stable functional complex (Jones and Thornton, 1996; Bogan and Thorn, 1998; Day et al., 2012).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig2-v2.jpg)
+
+**Figure 2.:** (A). Two binding sites of RNAP (boxed). (B) Close-up view of the Zn-finger interactions with S2. (C) Close-up view of the β−flap helix packing on S18. Molecular surface, secondary structure and sticks are shown in panels (B) and (C). (D) Position of two OB domains of S1 (orange) near the 3′ end of 16S rRNA (red). (E) Comparison of segmented maps of the 30S•RNAP complex formed with and without S1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Crosslinks with e-value <1.0 × 10−3 and S1(K272)-β(K476) with e-value = 6.47 × 10−3 are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Rotation of RNAP is shown relative to the 30S subunit (30S subunits were aligned). (B) A shift of the β′ subunit relative to the β-subunit (β-subunits were aligned).
 
 Maximum likelihood classification reveals conformational rearrangements of RNAP adopting two conformations on the 30S subunit (Figure 1—figure supplement 5). The two states are related to each other by ~7° rotation around an axis positioned near the Zn-finger motif (Figure 2—figure supplement 2A). The rotation widens the nucleic-acid-binding cleft of RNAP, as the β and β’ subunits move apart by at least 3 Å (Figure 2—figure supplement 2B). Both conformations are intermediate between the open free E. coli RNAP core (Darst et al., 2002) and the closed holoenzyme (bound with σ-factor) (Finn et al., 2000; Murakami et al., 2002; Vassylyev et al., 2002; Murakami, 2013) or closed elongating RNAP (i.e., bound with DNA and RNA) (Vassylyev et al., 2007b, 2007a; Liu et al., 2015; Kang et al., 2017).
 
 Opening of RNAP is implicated in transcriptional elongation and pausing (Hein et al., 2014). To determine if the RNAP conformation in our structure is compatible with elongating or paused RNAP, we superimposed the crystal structure of T. thermophilus RNAP elongation complex (Vassylyev et al., 2007a) onto our 30S•RNAP structure (Figure 3 and Figure 3—figure supplement 1A). The alignment shows no pronounced clashes between the domains of RNAP and 30S subunit. The flexible β-flap helix overlaps with the tip of h26, suggesting that a local rearrangement may be required. Thus, elongating RNAP can in principle interact with the 30S subunit.
 
-## S1 is aligned with RNA paths of RNAP and 30S
+![Figure 3.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig3-v2.jpg)
+
+**Figure 3.:** (A) Positions of DNA and RNA (gray and black), inferred from the elongation complex (Vassylyev et al., 2007a) (PDB 2O5I), relative to the 30S subunit. G530, A790 and G693 of 16S rRNA (black) denote the A, P and E sites on the 30S subunit. (B) The opening between S7 (head) and S11 (platform) of the 30S subunit. Cryo-EM density around S7 and S11 is shown (gray surface, shown at σ = 5). (C) RNA exit of RNAP is near the 3′-end of 16S rRNA. RNA bound to RNAP elongation complex is shown in black.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Superposition with the crystal structure of T. thermophilus elongation complex (shown in gray) bound with RNA and DNA (PDB 2O5I) (Vassylyev et al., 2007b) suggests rearrangement of the flexible β-flap helix. (B) Superposition with the crystal structure of E. coli RNAP holoenzyme (PDB 4YG2) (Murakami, 2013) (shown in gray) shows prominent clash of σ70 (pink) with S1 and the 30S head. RNAP from the non-rotated 30S•RNAP structure is shown in both panels. Superposition was achieved by structural alignment of Zn-finger domain of β′-subunits.
+
+### S1 is aligned with RNA paths of RNAP and 30S
 
 Elongated density connects the β′ subunit of RNAP to the Shine-Dalgarno binding site at the 3′ tail of 16S rRNA (Figure 2D–E, and Figure 1—figure supplement 5A–E). The Shine-Dalgarno binding site lies between the head and platform of the 30S subunit, where protein S1 is thought to bind and facilitate recruitment of mRNA during translation initiation (Sengupta et al., 2001; Lauber et al., 2012; Duval et al., 2013; Park et al., 2014; Byrgazov et al., 2015). We were able to model oligonucleotide-binding (OB) domains 2 and 3 of S1 into this density (Figure 2D, and Figure 1—figure supplement 5D), consistent with studies showing that S1 domain 2 interacts with the 30S subunit (Giorginis and Subramanian, 1980; Lauber et al., 2012) and with our crosslinking experiments showing that aa 272 of S1 domain 3 is in close proximity to aa 420 of RNAP β-subunit (Figure 2—figure supplement 1 and Table 1). Because the six OB domains of S1 are structurally similar and the resolution of our maps does not allow unambiguous domain interpretation, other OB domains of S1 could occupy this density. The globular region of OB domain 1 is not resolved in our density, but the N-terminal helix of domain 1 packs on α-helices of S2 (Figure 1—figure supplement 5F), as proposed previously (Lauber et al., 2012; Byrgazov et al., 2015).
 
@@ -73,7 +248,7 @@ The affinity of RNAP to the 70S ribosome is lower than to the 30S subunit (Figur
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28560/elife-28560-fig5-v2.jpg)
 
-**Figure 5.:** Kohler et al., 2017]; panel B).The views show similar orientations of the 30S subunit. The 50S subunit for the mRNA-tethered 70S•RNAP structure (PDB 5MYI) (Kohler et al., 2017) is shown in gray and was adapted from a high-resolution 70S structure (PDB 5U9F) (Demo et al., 2017). RNAP domains are colored in green (α-subunits), blue (β-subunit) and cyan (β’-subunit). Protein S10 is shown in pink.
+**Figure 5.:** The views show similar orientations of the 30S subunit. The 50S subunit for the mRNA-tethered 70S•RNAP structure (PDB 5MYI) (Kohler et al., 2017) is shown in gray and was adapted from a high-resolution 70S structure (PDB 5U9F) (Demo et al., 2017). RNAP domains are colored in green (α-subunits), blue (β-subunit) and cyan (β’-subunit). Protein S10 is shown in pink.
 
 The likely mechanism for RNAP relocation involves dissociation of RNAP from the 30S subunit upon formation of either the Shine-Dalgarno helix or the 30S initiation complex with fMet-tRNAfMet. Formation of the initiation complex induces a closed 30S conformation (i.e., S7 moves toward S11) (Julián et al., 2011) (Figure 3B). This rearrangement of 30S would re-structure the 30S•RNAP binding site causing RNAP to dissociate (Figure 4D) and ultimately dock at the mRNA tunnel entry upon mRNA accommodation in the 70S ribosome (Figure 4E).
 
@@ -83,21 +258,21 @@ This study reveals specific interactions of RNAP and 30S subunit, and adds to ou
 
 ## Materials and methods
 
-## Preparation of E. coli 30S•RNAP complex
+### Preparation of E. coli 30S•RNAP complex
 
 70S ribosomes were prepared from E. coli (MRE600) as described (Moazed and Noller, 1986; 1989). Ribosomal 30S and 30SΔS1 subunits were purified using sucrose gradient (10%–35%) fractionation in the ribosome dissociation buffer (20 mM Tris-HCl, pH 7.0; 300 mM NH4Cl; 1.5 mM MgCl2; 0.5 mM EDTA; 6 mM β-mercaptoethanol) and 30S-S1 dissociation buffer (20 mM Tris-HCl, pH 7.0; 1.5 M NH4Cl; 10 mM MgCl2; 0.5 mM EDTA; 6 mM β-mercaptoethanol), respectively. The fraction containing 30S or 30SΔS1 was concentrated and stored in ribosome-storage buffer (20 mM Tris-HCl, pH 7.0; 100 mM NH4Cl; 10 mM MgCl2; 0.5 mM EDTA; 6 mM β-mercaptoethanol) at –80°C. E. coli RNAP core with C-terminally 6 × His tagged βʹ-subunit was purified as described (Nudler et al., 2003), and stored at –80°C.
 
 The 30S•RNAP complex was prepared for cryo-EM as follows: 30S subunit (1 µM final) was pre-activated at 42°C for 5 min in ribosome-storage buffer. Core RNAP (3 µM final) was added to the 30S solution and incubated for 30 min at 37°C. The same approach was used for the 30SΔS1•RNAP complex.
 
-## RNAP binding assay
+### RNAP binding assay
 
 To analyze binding of RNAP core to 30S or 50S subunits or to 70S ribosome, 1 µM RNAP was mixed with purified 1 µM 30S subunit, 1 µM 50S subunit or 1 µM 70S ribosome (prepared by association of purified subunits) in ribosome-storage buffer (Figure 1—figure supplement 1) or in buffers with cell-like composition including glutamate and acetate anions (20 mM Tris-HCl, pH 7.0; 100 to 200 mM potassium glutamate; 10 mM ammonium acetate; 5 to 15 mM magnesium acetate; 2 mM spermidine) (Jewett and Swartz, 2004) (Figure 1—figure supplement 2). Each mixture was incubated for 30 min at 37°C, and 30 μl was layered over 10–30% linear sucrose gradients prepared in the corresponding buffer, in duplicate SW41 tubes (Beckman). Following centrifugation for 2 hr at 40,000 rpm, 4°C, three fractions were collected from each tube: a lighter fraction, peak fraction (30S or 50S or 70S), and heavier fraction (Figure 1—figure supplements 1–3). The presence of RNAP in each fraction was measured by dot-immunoblot assay (dot blot) using an HRP-conjugated anti-His antibody (GE Healthcare Life Sciences). 2 μl of each fraction was spotted onto nitrocellulose membrane in 0.5 μl steps. The membrane was dried at room temperature for 30 min, and blocked for 12 hr at 4°C in 20 ml PBS-T [phosphate-buffered saline, pH 7.0, containing 0.05% (v/v) Tween 20 (VWR, Inc.)] and 10% (w/v) dried non-fat milk (Labscientific, Inc.). The membrane was washed quickly in 20 ml of PBS-T, and then probed with HRP-linked anti-His antibody (1:4000 in 20 ml PBS-T) for 1 hr at room temperature. The membrane was washed 3 times with 20 ml PBS-T. 700 μl of freshly mixed Amersham ECL Prime Western Blotting Detection Reagent (GE Healthcare Life Sciences) was applied to the nitrocellulose membrane for 30 s. The membrane was dried and imaged using a Chemi Doc XRS + imaging system (BioRAD, Inc.) in chemi-resolution mode for 30 s.
 
 To estimate the Kd of the 30S•RNAP complex by the sucrose-gradient band sedimentation method (Draper and von Hippel, 1979), 50 nM RNAP was mixed with 2.5 µM 30S subunit in 20 mM Tris-HCl (pH 7.0), 150 mM potassium glutamate, 10 mM ammonium acetate, 5 mM magnesium acetate, 2 mM spermidine. 30 μl of the mixture was layered over 10–30% linear sucrose gradient prepared using the same buffer, in triplicate SW41 tubes (Beckman). Fractions were collected as described above (the 30S peak centered at 1.1 ± 0.05 cm), and 15 μl of each fraction was spotted onto nitrocellulose membrane and imaged as described above. The unbound and bound fractions of RNAP—that is, before the 30S subunit peak and at the 30S subunit peak, respectively—were quantified by subtracting the background of the buffer or the 30S subunit (Controls in Figure 1—figure supplement 3) from the signal (30S•RNAP data in Figure 1—figure supplement 3), using Image Lab software (version 5.2, BioRAD, Inc.). The Kd estimated from the triplicate experiments is 2.1 × 10−8 M ± 6.3 × 10−9 M.
 
-## Analysis of 30S•RNAP interactions by crosslinking and mass-spectroscopy
+### Analysis of 30S•RNAP interactions by crosslinking and mass-spectroscopy
 
-## Crosslinking of 30S•RNAP complex with bis-sulfosuccinimidyl suberate (BS3)
+#### Crosslinking of 30S•RNAP complex with bis-sulfosuccinimidyl suberate (BS3)
 
 Purified 30S subunit (3 µM) was combined with RNAP core (9 μM), and incubated for 10 min at room temperature. The complex was purified on 1 × 30 cm Superose 6 Increase column (GE LifeSciences) equilibrated in amine-free buffer: 20 mM HEPES-KOH, pH 7.5; 150 mM KCl; 10 mM MgCl2; 0.05% β-mercaptoethanol. Peak fractions corresponding to 30S•RNAP complex were pooled, concentrated to ~10 μM 30S ribosomal subunit, and stored at 4°C.
 
@@ -105,7 +280,7 @@ Crosslinking was performed in 50 μl reactions containing 1 μM 30S•RNAP compl
 
 BS3-treated samples were mixed with LDS buffer (ThermoFisher), incubated at 75°C for 10 min, and fractionated on 4–12% NuPAGE gels using MES running buffer (ThermoFisher) at 200 V for 20 min. Gels were stained with Coomassie G-250 (SimpleBlue SafeStain, ThermoFisher), and bands that migrated slower than RNAP ββʹ were excised from gel and analyzed by mass-spectroscopy to identify crosslinked peptides.
 
-## LC-MS/MS and X-link mapping
+#### LC-MS/MS and X-link mapping
 
 Samples were reduced with 50 mM TCEP (all reagents were ThermoFisher Scientific LC-MS grade, unless indicated otherwise) for 10 min at 60°C, and alkylated with 50 mM iodoacetamide in the dark for 60 min at room temperature. In-gel digestion was performed at 37°C overnight with 0.5 μg sequencing-grade modified trypsin (Promega) and 100 mM ammonium bicarbonate. Resulting peptides were captured on C18 Spin Tips (Thermo Scientific) and eluted with 40 μl of 80% acetonitrile (ACN) in 0.1% trifluoroacetic acid. Eluted peptides were dehydrated in vacuum and suspended in 20 μl 0.1% formic acid for MS analysis.
 
@@ -113,7 +288,7 @@ Peptides were analyzed in the Orbitrap Fusion Lumos mass spectrometer (Thermo Sc
 
 Raw LC-MS/MS data files were converted into mgf format and searched using pLink with default FDR < 5%, e-value set at <1, trypsin digest with up to three missed cleavages, constant modification at 1 = carbamidomethyl[C], variable at 1 = oxydation[M]. Cross-linker was set to BS3 ([K [K 138.068 138.068 156.079 156.079). Mass tolerances were left unaltered (default). mgf files were searched against database comprising all the fasta sequences of E. coli RNA polymerase core and 30S ribosome subunits.
 
-## Cryo-EM and image processing
+### Cryo-EM and image processing
 
 Holey-carbon grids (C-flat 1.2/1.3) were coated with a thin layer of carbon and glow discharged at 25 mA with a negative polarity setting for 45 s in an EMITECH K100X unit. Before application to the grids, the 30S•RNAP complex was diluted in ribosome-storage buffer to the following final concentrations: 50 nM 30S and 150 nM RNAP. 2.5 μl of the diluted sample was applied to the grids. After a 30 s incubation, grids were blotted for 5 s at blotting power 8, 10°C and ~95% humidity, and then plunged into liquid ethane using an FEI Vitrobot MK4. The grids were stored in liquid nitrogen. The same procedure was performed to prepare the 30SΔS1•RNAP sample grids.
 
@@ -131,10 +306,219 @@ Classification of 30SΔS1•RNAP data into ten classes yielded two classes with 
 
 The maps used for structure refinements were sharpened using B-factors of −200 Å2 to −250 Å2 using bfactor.exe (included with the FREALIGN distribution) (Grigorieff, 2016). FSC curves were calculated by FREALIGN for even and odd particle half-sets.
 
-## Model building and refinement
+### Model building and refinement
 
 The 30S subunit from the 3.2 Å cryo-EM structure of E. coli 70S ribosome (PDB 5U9G) (Demo et al., 2017) and RNAP core subunits from high-resolution RNAP crystal structures (PDB 5UI8 and 5UAC) (Campbell et al., 2017; Molodtsov et al., 2017) were used as a starting model for structure refinement. Ribosomal protein S2 and the N-terminal helix of S1 (aa 1–20) were built using the S1-S2 crystal structure (PDB 4TOI) (Byrgazov et al., 2015). The structures of domains 2 and 3 of S1 were built using PDB 2MFL (Giraud et al., 2015) and PDB 2KHI (Salah et al., 2009) by I-TASSER (RRID:SCR_014627) (Yang et al., 2015), and modeled as poly-alanine chains. Initial protein and ribosome domain fitting into cryo-EM maps was performed using Chimera (RRID:SCR_004097) (Pettersen et al., 2004), followed by manual modeling using Pymol (RRID:SCR_000305) (DeLano, 2002). The structural elements that were not defined by the cryo-EM maps were excluded from structural models.
 
 Structural models were conservatively refined by real-space torsion-angle refinement using atomic electron scattering factors in RSRef (Chapman, 1995; Korostelev et al., 2002), essentially as described (Svidritskiy et al., 2014). Secondary-structure restraints, comprising hydrogen-bonding restraints for ribosomal proteins and base-pairing restraints for 16S rRNA, were employed as described (Korostelev et al., 2008). Refinement parameters, such as the relative weighting of stereochemical restraints and experimental energy term, were optimized to produce the stereochemically optimal models that closely agree with the corresponding maps. In the final stage, the structures were refined using phenix.real_space_refine (RRID:SCR_014224) (Adams et al., 2011), followed by a round of refinement in RSRef applying harmonic restraints to preserve protein backbone geometry and B-factor refinement in phenix.real_space_refine. The refined structural models have low real-space R-factors of 0.250, 0.251 and 0.257 for the non-rotated 30S•RNAP, rotated 30S•RNAP and 30SΔS1•RNAP structures, respectively. The resulting models have low deviation from ideal bond lengths and angles, low number of protein-backbone outliers and other robust structure-quality statistics, as shown in Table 2. Structure quality was validated using MolProbity (RRID:SCR_014226) (Chen et al., 2010).
+
+**Table 2.**
+ Cryo-EM data collection and refinement statistics for 30S•RNAP structures
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>non-rotated</th>
+      <th>rotated</th>
+      <th>ΔS1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB code</td>
+      <td>6AWB</td>
+      <td>6AWC</td>
+      <td>6AWD</td>
+    </tr>
+    <tr>
+      <td>EMDB code</td>
+      <td>EMD-7014</td>
+      <td>EMD-7015</td>
+      <td>EMD-7016</td>
+    </tr>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>EM equipment</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Talos Arctica</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>K-2</td>
+      <td>K-2</td>
+      <td>K-2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.82</td>
+      <td>0.82</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Electron dose (e-/Å2)</td>
+      <td>40</td>
+      <td>40</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−0.8 to −3.0</td>
+      <td>−0.8 to −3.0</td>
+      <td>−0.8 to −3.0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Frealign v9.11</td>
+      <td>Frealign v9.11</td>
+      <td>Frealign v9.11</td>
+    </tr>
+    <tr>
+      <td>Number of particles used</td>
+      <td>15,012</td>
+      <td>10,090</td>
+      <td>21123</td>
+    </tr>
+    <tr>
+      <td>Final resolution (Å)</td>
+      <td>6.7</td>
+      <td>7.9</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>Map-sharpening B factor (Å2)</td>
+      <td>−198</td>
+      <td>−205</td>
+      <td>−200</td>
+    </tr>
+    <tr>
+      <td colspan="4">Model composition</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>75316</td>
+      <td>75169</td>
+      <td>76452</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>5743</td>
+      <td>5726</td>
+      <td>5573</td>
+    </tr>
+    <tr>
+      <td>RNA bases</td>
+      <td>1443</td>
+      <td>1443</td>
+      <td>1539</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RSRef and Phenix</td>
+      <td>RSRef and Phenix</td>
+      <td>RSRef and Phenix</td>
+    </tr>
+    <tr>
+      <td>Correlation Coeff (%; Phenix)</td>
+      <td>75.9</td>
+      <td>76.7</td>
+      <td>78.3</td>
+    </tr>
+    <tr>
+      <td>R-factor (RSRef)</td>
+      <td>0.250</td>
+      <td>0.251</td>
+      <td>0.257</td>
+    </tr>
+    <tr>
+      <td colspan="4">Validation (proteins)</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>2.70</td>
+      <td>2.60</td>
+      <td>2.67</td>
+    </tr>
+    <tr>
+      <td>Clash score, all atoms</td>
+      <td>20.25</td>
+      <td>18.90</td>
+      <td>20.47</td>
+    </tr>
+    <tr>
+      <td>Ramachandran-plot statistics (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (overall)</td>
+      <td>80.0</td>
+      <td>81.9</td>
+      <td>79.6</td>
+    </tr>
+    <tr>
+      <td>Allowed (overall)</td>
+      <td>16.2</td>
+      <td>14.6</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td>Outlier (overall)</td>
+      <td>3.8</td>
+      <td>3.5</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.005</td>
+      <td>0.004</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Bond angle (˚)</td>
+      <td>1.097</td>
+      <td>1.111</td>
+      <td>1.027</td>
+    </tr>
+    <tr>
+      <td colspan="4">Validation (RNA)</td>
+    </tr>
+    <tr>
+      <td>Correct sugar puckers (%)</td>
+      <td>99.9</td>
+      <td>99.9</td>
+      <td>99.9</td>
+    </tr>
+    <tr>
+      <td>Good backbone conformation (%)</td>
+      <td>88.2</td>
+      <td>88.6</td>
+      <td>88.2</td>
+    </tr>
+  </tbody>
+</table>
 
 The area of contact between RNAP and the 30S subunit was analyzed and calculated by the software PISA (CCP4 package) (Krissinel and Henrick, 2007; Winn et al., 2011). Structure superpositions and distance calculations were performed in Pymol. The cryo-EM maps for non-rotated (EMD-7014), rotated 30S•RNAP (EMD-7015) and 30SΔS1•RNAP (EMD-7016) structures were deposited in the EMDB (RRID:SCR_006506). PDB coordinates for non-rotated (PDB 6AWB), rotated (PDB 6AWC) 30S•RNAP and 30SΔS1•RNAP (PDB 6AWD) structures were deposited in the RCSB (RRID:SCR_012820). Figures were prepared in Pymol and Chimera (DeLano, 2002; Pettersen et al., 2004).

@@ -34,17 +34,178 @@ IQGAPs are an evolutionally conserved family of proteins that bind to a diverse 
 
 ## Results
 
-## ARL4C is expressed in human pancreatic cancer
+### ARL4C is expressed in human pancreatic cancer
 
 Whether ARL4C is expressed in pancreatic cancer patients was examined using immunohistochemistry. Fifty-seven pancreatic ductal adenocarcinoma (PDAC) patients, who did not receive preoperative chemotherapy, were used in this study (Supplementary file 1 table 1; Source data 1). ARL4C staining in the tumor lesions was calculated as a continuous variable, and the patients were classified into two groups (high and low), depending on ARL4C expression levels (Figure 1A). ARL4C expression was considered high when the total area of the tumor stained with anti-ARL4C antibody exceeded 5 %. High expression of ARL4C was observed in 47 cases (82%), but minimally detected in non-tumor regions of pancreatic ducts (Figure 1A). Anti-ARL4C antibody used in this study was validated in western blotting and immunohistochemical assay (IHC) (Figure 1—figure supplement 1A and B). A significant difference was observed between low and high ARL4C expression based on perineural invasion (Supplementary file 1 table 1). Because the perineural invasion is considered as one of the causes of the recurrence and metastasis after pancreatic resection (Liang et al., 2016), ARL4C expression may be correlated with the ability of cancer cell invasion. Consistently, ARL4C expression was correlated with decreased overall survival (Figure 1B). Analysis of TCGA and GTEx datasets revealed that ARL4C is highly expressed in tumor tissue than in non-diseased tissue (Figure 1C). In addition, when ARL4C high and low expression groups were separated based on the top 75 % of mRNA values of ARL4C in TCGA dataset, high expression of ARL4C indicated a poor prognosis (Figure 1D). Univariate and multivariate analysis revealed that higher ARL4C expression is an independent prognostic factor (Table 1). Taken together, these results indicate that high expression of ARL4C is correlated with the aggressiveness and poor prognosis of pancreatic cancer.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig1-v2.jpg)
+
+**Figure 1.:** (A) PDAC tissues (n = 57) were stained with anti-ARL4C antibody and hematoxylin. The percentages of ARL4C expression cases in the non-tumor regions and tumor lesions are shown. (B) The relationship between overall survival and ARL4C expression in patients with PDAC. (C) ARL4C mRNA levels in pancreatic adenocarcinoma and normal pancreatic tissues were analyzed using TCGA and GTEx datasets. The results shown are scatter plots with the mean ± s.e.m. p Values were calculated using a two-tailed Student’s t-test. (D) TCGA RNA sequencing and clinical outcome data for pancreatic cancer were analyzed. (E) Lysates of the indicated pancreatic cancer cells were probed with the indicated antibodies. (F) S2-CP8 and PANC-1 cells were treated with 10 μM PD184161 or 10 μM U0126, and ARL4C mRNA levels were measured by quantitative real-time PCR. Relative ARL4C mRNA levels were normalized to those of GAPDH and expressed as fold changes compared with the levels in control cells. Lysates were probed with the indicated antibodies. (G–I) S2-CP8 cells and PANC-1 cells were transfected with the indicated siRNAs, and ARL4C mRNA levels were measured by quantitative real-time PCR. Relative ARL4C mRNA levels were normalized to those of Β2Μ and expressed as fold changes compared with the levels in control cells. Lysates were probed with the indicated antibodies. EGR1 was used as an established transcription target gene of RAS signaling. (B,D) Data were analyzed using Kaplan–Meier survival curves, and a log-rank test was used for statistical analysis. (F–I) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (G) or one-way ANOVA followed by Bonferroni post hoc test (F,H,I). Scale bars in (A) 50 μm. **, p < 0.01. See Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lysates were prepared from S2-CP8 WT or ARL4C KO cells and probed with the indicated antibodies. (B) PDAC tissues were stained with or without anti-ARL4C antibody as the primary antibody and hematoxylin. (C) PanIN lesion in PDAC case were stained with anti-ARL4C antibody and hematoxylin. Scale bars in (B) 50 μm; (C) 100 μm. KO, knockout.
+
+**Table 1.**
+ Univariate analysis and multivariate analysis of overall survival by Cox’s Proportional Hazard model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Univariate analysis</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Parameters</td>
+      <td>Hazard ratio</td>
+      <td colspan="2">95% CI</td>
+      <td>P value</td>
+    </tr>
+    <tr>
+      <td>ARL4C(low/high)</td>
+      <td>3.51</td>
+      <td>1.06</td>
+      <td>11.70</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Sex(Male/Female)</td>
+      <td>1.10</td>
+      <td>0.54</td>
+      <td>2.24</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Age( &lt; 65/≧65)</td>
+      <td>1.05</td>
+      <td>0.47</td>
+      <td>2.35</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Tumor Location(Head/Body or Tail)</td>
+      <td>0.41</td>
+      <td>0.18</td>
+      <td>0.94</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>pStage(IA-IIA/IIB-III)</td>
+      <td>2.51</td>
+      <td>1.17</td>
+      <td>5.41</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>pT(1-2/3)</td>
+      <td>5.29</td>
+      <td>1.23</td>
+      <td>22.70</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>pN(0/1)</td>
+      <td>2.51</td>
+      <td>1.17</td>
+      <td>5.41</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>ly(0/1–3)</td>
+      <td>2.74</td>
+      <td>1.17</td>
+      <td>6.46</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>v(0/1–3)</td>
+      <td>2.05</td>
+      <td>1.00</td>
+      <td>4.20</td>
+      <td>0.049</td>
+    </tr>
+    <tr>
+      <td>ne(0/1–3)</td>
+      <td>28,258</td>
+      <td>5.25E-36</td>
+      <td>1.52E + 44</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Multivariate analysis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Parameters</td>
+      <td>Hazard ratio</td>
+      <td colspan="2">95% CI</td>
+      <td>P value</td>
+    </tr>
+    <tr>
+      <td>pT(1-2/3)</td>
+      <td>3.72</td>
+      <td>0.78</td>
+      <td>17.7</td>
+      <td>0.099</td>
+    </tr>
+    <tr>
+      <td>pN(0/1)</td>
+      <td>1.80</td>
+      <td>0.79</td>
+      <td>4.10</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>ARL4C(low/high)</td>
+      <td>3.56</td>
+      <td>1.03</td>
+      <td>12.3</td>
+      <td>0.044</td>
+    </tr>
+  </tbody>
+</table>
+
+_Hazard ratios with 95 % confidence intervals (CIs) were calculated using a Cox regression model and P values were calculated using a log-rank test. CI, confidence interval; pT, primary tumor; pN, regional lymph node; ly, lymphatic invasion; v, venous invasion; ne, perineural invasion._
 
 Pancreatic intraepithelial neoplasia (PanIN) lesions were observed in 26 specimens. ARL4C was expressed in 20 of 26 cases (77%) of PanIN, suggesting that ARL4C is expressed in early stages of PDAC (Figure 1—figure supplement 1C). The results are consistent with our recent observations that ARL4C is frequently expressed in atypical adenomatous hyperplasia, which is the possible precursor lesions and develops to lung adenocarcinoma (Kimura et al., 2020).
 
 In cultured pancreatic cancer cell lines, ARL4C was highly expressed in PANC-1 and S2-CP8 cells and it was barely detected in BxPC-3 cells (Figure 1E). Consistent with the previous results with IEC6 rat intestinal epithelial cells and colorectal and lung cancer cells (Fujii et al., 2015; Matsumoto et al., 2014), the MEK inhibitors PD184161 and U0126 and siRNAs for β-catenin and KRAS decreased ARL4C expression in S2-CP8 and PANC-1 cells (Figure 1F–H). In addition, simultaneous knockdown of KRAS and β-catenin further suppressed ARL4C expression (Figure 1I). Taken together, these results suggest that ARL4C is expressed in pancreatic cancer cells through activated RAS–MAP kinase and Wnt–β-catenin pathways.
 
-## ARL4C expression is involved in the invasion of pancreatic cancer cells
+### ARL4C expression is involved in the invasion of pancreatic cancer cells
 
 ARL4C ASO-1316 has been shown to inhibit growth of xenograft tumors induced by colon and lung cancer cells (Harada et al., 2019; Kimura et al., 2020). However, ARL4C ASO-1316 had little effect on sphere formation of pancreatic cancer cell (Figure 2—figure supplement 1A and B and B) and did not induce cell death, which is assessed by propidium iodide (PI) staining (Figure 2—figure supplement 1C). Since the clinicopathological analysis of human pancreatic cancer specimens indicates that ARL4C expression may be correlated with invasive ability, migratory and invasive abilities of S2-CP8 and PANC-1 cells were studied in Boyden chamber assays. ARL4C ASO-1316 inhibited the migratory and invasive abilities with dominant effects on invasion (Figure 2A and B; Figure 2—figure supplement 1D). Inhibition of migratory and invasive abilities by ARL4C ASO, targeting the non-coding region of ARL4C mRNA, was not observed in the cells expressing ARL4C-GFP ectopically (Figure 2C and D; Figure 2—figure supplement 1E). Thus, ARL4C could be involved in migration and invasion of pancreatic cancer cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig2-v2.jpg)
+
+**Figure 2.:** (A-D) S2-CP8 cells (A,B) or S2-CP8 cells expressing GFP or ARL4C-GFP (C,D) were transfected with control or ARL4C ASO-1316 and subjected to migration (A,C) and invasion (B,D) assays. Migratory and invasive abilities are expressed as the percentage of the same cells transfected with control ASO. (E) A schematic illustration of 3D invasion into collagen I gel using a 3D cell culture chip is shown. There is a chemical concentration gradient across the gel channel and cells can invade into the gel. The right panel shows a fluorescent confocal image (top) and a 3D reconstructed image (bottom). (F) S2-CP8 cells were transfected with control or ARL4C ASO-1316 and subjected to a 3D collagen I gel (2 mg/mL) invasion assay. The distances from the edge of the gel interface of all cells invading into the collagen gel were measured. (G) The same assay as in (F) was performed in the presence of different concentrations of collagen I. (H) S2-CP8 cells stably expressing ARL4C-tdTomato were observed with time-lapse imaging. Arrowheads indicate the tips of invasive pseudopods and yellow circles indicate the cytoplasm (20 μm away from the tip of pseudopods). The region in the yellow dashed squares is shown enlarged in the bottom image. Fluorescence intensities of the cytoplasm and invasive pseudopods were measured and plotted as a function of time. (I) S2-CP8 cells were subjected to a 3D collagen I gel invasion assay and stained with phalloidin and Hoechst 33342. The angle of pseudopods to the direction of cell invasion toward FBS was calculated (n = 105). The results were plotted to a polar histogram. (J) S2-CP8 cells expressing ARL4C-tdTomato were subjected to a 3D collagen I gel invasion assay with DQcollagen I, and stained with phalloidin and Hoechst 33342. The regions in the yellow dashed squares (a, pseudopod; b, cell body) are enlarged. (K) S2-CP8 cells transfected with control ASO or ARL4C ASO-1316 were subjected to a 3D collagen I gel invasion assay with DQcollagen I. The percentages of cells with DQcollagen I-positive pseudopods compared with the total number of cells were calculated. (A–D,F,G,K) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test. Scale bars in (F,G) 100 μm; (H) 20 µm; (J) 10 µm; (K) 5 µm. n.s. not significant. *, p < 0.05; **, p < 0.01. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) S2-CP8 cells transfected with control or ARL4C ASO-1316 were cultured for 6 days in 2.5D Matrigel. The cells were then fixed and stained with phalloidin and Hoechst 33342 and sphere areas were calculated. When more than 10 cells formed a spherical structure, it was counted as one sphere. Data are shown as a box and whiskers plot. Center lines show the medians; box limits indicate the 25th and 75th percentiles; whiskers indicate the smallest and largest values; dots show all of the individual values. More than 65 spheres were analyzed per group. p Values were calculated using a two-tailed Student’s t-test. (B) Lysates were prepared from S2-CP8 cells transfected with control or ARL4C ASO-1316 and probed with the indicated antibodies. (C) S2-CP8 cells treated with control ASO, ARL4C ASO-1316, or staurosporine were cultured for 3.5 days and subjected to cytotoxic assay. Staurosporine was treated 15 hr before the assay. Cells were incubated with propidium iodide (PI) and Hoechst 33342. PI-positive cells are expressed as the percentage of positively stained cells compared with total Hoechst 33342 stained cells per field. (D) PANC-1 cells transfected with control or ARL4C ASOs were subjected to migration and invasion assays. Migratory and invasive abilities are expressed as the percentage of control cells. (E) S2-CP8 cells stably expressing GFP or ARL4C-GFP were transfected with control or ARL4C ASO-1316. Lysates were probed with the indicated antibodies. (F) S2-CP8 cells stably expressing ARL4C-tdTomato were stained with the indicated antibodies. The regions in the yellow dashed squares are shown enlarged in the bottom images. (G) S2-CP8 cells were transfected with the indicated ARL4C-GFP mutants and stained with phalloidin. The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. The percentages of cells with ARL4C-GFP mutant accumulated at invasive pseudopods compared with the total number of cells were calculated. False color representations were color-coded on the spectrum. (C,D,G) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (D) or one-way ANOVA followed by Bonferroni post hoc test (C,G). Scale bars in (A) 50 μm; (C) 100 μm; (F,G) 10 μm. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) S2-CP8, PANC-1, and BxPC-3 cells were subjected to an invadopodia assay and then stained with phalloidin. (B) S2-CP8 cells were stained with the indicated antibodies. (C,D) S2-CP8 cells treated with control ASO or ARL4C ASO-1316, and S2-CP8 WT or ARL4C KO cells were stained with anti-cortactin antibody and phalloidin. The percentages of cells with invasive pseudopods compared with the total number of cells were calculated (C). Cells were classified according to the number of pseudopods as indicated (D). (E) S2-CP8 cells were transfected with control or ARPC2 siRNAs, and ARPC2 mRNA levels were measured by quantitative real-time PCR. Relative ARPC2 mRNA levels were normalized to those of GAPDH and expressed as fold changes compared with the level in control cell. (F,G) The same assays as in (C) and (D) were performed for S2-CP8 cells transfected with control or ARPC2 siRNAs. (H,I) S2-CP8 WT or ARL4C KO cells were stained with cortactin or ARPC2. Circles of 2 μm diameter were placed at the edge of pseudopods and mean intensity of each circle was measured. The distribution of the data was depicted as a violin plot and the center lines show the medians. More than 100 pseudopods were calculated for each condition. p Values were calculated using a two-tailed Student’s t-test. (B,H) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. False color representations were color-coded on the spectrum. (C,E,F) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (C) or one-way ANOVA followed by Bonferroni post hoc test (E,F). Scale bars in (A,B,H) 10 μm. au, arbitrary units. KO, knockout. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) S2-CP8 cells were subjected to a 3D collagen I gel invasion assay and the image shows cells, indicated by black dashed square, placed at the starting position of this assay at 0 time. (B) S2-CP8 WT or ARL4C KO cells were subjected to a 3D collagen I gel (2 mg/mL) invasion assay. The distances from the edge of the gel interface of all cells invading into the collagen gel were measured. Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test. Scale bar in (B) 100 μm. KO, knockout. **, p < 0.01. See Figure 2—figure supplement 3—source data 1.
 
 ARL4C has been shown to be localized to membrane protrusions of non-tumor cells, such as IEC6 and Madin-Darby canine kidney (MDCK) cells (Matsumoto et al., 2014). ARL4C-tdTomato was localized to protrusive structures extending from S2-CP8 cells under Matrigel-coated 2D culture conditions (Figure 2—figure supplement 1F). At the structures, focal adhesion proteins such as paxillin, phosphorylated paxillin, FAK, and phosphorylated FAK were localized with ARL4C-tdTomato, also with F-actin (Figure 2—figure supplement 1F). Therefore, we defined the membrane protrusions as actin-based structures that contain the adhesion sites, of which length is longer than 10 μm and diameter is shorter than 10 μm. ARL4C is unique in that it is locked to the GTP-bound active form, and ARL4CQ72L-GFP, in which the amino acid at the same position in a constitutively active RAS mutant was mutated, showed a similar distribution to ARL4C-GFP. However, ARL4CT27N-GFP, which is an inactive form (Hofmann et al., 2007), was not present in the protrusions (Figure 2—figure supplement 1G). These results suggest that ARL4C is present in the tips of membrane protrusions where it is expressed as wild type.
 
@@ -56,43 +217,87 @@ For visualization of cancer cells invading through the ECM (Poincloux et al., 20
 
 To visualize the relationship between the localization of ARL4C and matrix degradation, the steady-state activity of cell-derived protease was measured as the dequenched signal emitted from collagen I fibers with dye-quenched (DQ) FITC (DQcollagen I) (Wolf et al., 2007) in the 3D gel invasion assay. Protease-induced fluorescence dequenching was detected in the collagen fibers crossing the tips of the pseudopods but not in the cell body (Figure 2J). Protease activity was decreased when ARL4C was depleted (Figure 2K), suggesting that ARL4C is involved in degradation of the ECM through its localization to the tips of invasive pseudopods and plays an important role in the invasion of pancreatic cancer cells.
 
-## IQGAP1 is an ARL4C-interacting protein
+### IQGAP1 is an ARL4C-interacting protein
 
 ARL4C recruits cytohesin2 to the plasma membrane through their direct interaction in HeLa cells (Hofmann et al., 2007). In S2-CP8 cells, ARL4C did not bind to cytohesin2 (Figure 3—figure supplement 1A), and knockdown of cytohesin2 had no effect on the migratory or invasive ability (Figure 3—figure supplement 1B). Furthermore, cytohesin2 was distributed throughout the cytosol in S2-CP8 cells, whereas it was localized to the cell periphery of HeLaS3 cells (Figure 3—figure supplement 1C). Whereas ARL4C ASO inhibited RAC1 activity in A549 cells (Fujii et al., 2015), the ASO did not affect RAC1 activity in S2-CP8 cells (Figure 3—figure supplement 1D). Although ARL4C induces the nuclear import of YAP/TAZ in HCT116 cells (Harada et al., 2019), ARL4C knockdown did not inhibit it in pancreatic cancer cells (Figure 3—figure supplement 1E). These results suggest that cytohesin2 neither functions downstream of ARL4C nor is involved in migration or invasion of pancreatic cancer cells and prompted us to explore an uncharacterized effector protein of ARL4C.
 
 ARL4C-FLAG-HA–binding proteins were precipitated and the precipitates were analyzed by mass spectrometry (Figure 3A). Among the possible interacting proteins, IQGAP1 was further studied (Figure 3A; Supplementary file 1 table 2; Source data 2) because its expression is associated with the aggressiveness of various types of cancer (Johnson et al., 2009). Ectopically expressed and endogenous ARL4C were associated with endogenous IQGAP1 in S2-CP8 cells (Figure 3B and C). ARL4C-FLAG-HA and ARL4CQ72L-FLAG-HA formed a complex with GFP-IQGAP1 to the similar levels, but ARL4CT27N-FLAG-HA showed diminished binding to GFP-IQGAP1 in X293T cells (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig3-v2.jpg)
+
+**Figure 3.:** (A) The ARL4C-interacting proteins in X293T cells were analyzed by mass spectrometry. The results are listed in Supplementary file 1 table 2 and Source data 2. Arrowheads indicate the identified proteins, including IQGAP1 (red). (B,C) Lysates of S2-CP8 cells expressing ARL4C-GFP (B) or S2-CP8 WT cells (C) were immunoprecipitated with anti-GFP antibody (B) or anti-ARL4C antibody (C), and the immunoprecipitates were probed with the indicated antibodies. (D) Lysates of X293T cells expressing the indicated proteins were immunoprecipitated with anti-GFP antibody, and the immunoprecipitates were probed with the indicated antibodies. (E) S2-CP8 cells were stained with the indicated antibodies. Images of ARL4C and IQGAP1 were merged. (F) S2-CP8 cells expressing ARL4C-tdTomato were subjected to a 3D collagen I gel invasion assay and were stained with the indicated antibodies. Images of ARL4C and IQGAP1 were merged. (G,H) S2-CP8 cells expressing GFP or GFP-IQGAP1 were transfected with the indicated siRNAs and subjected to migration (G) and invasion (H) assays. Migratory and invasive abilities are expressed as the percentage of the same cells transfected with control siRNA. (I) S2-CP8 cells depleted of the indicated proteins were subjected to an invasion assay. Invasive activities are expressed as the percentage of control cells. (J) PDAC tissues were stained with anti-IQGAP1 antibody and hematoxylin. (K) The relationship between overall survival and IQGAP1 expression in PDAC patients was analyzed. (L) Scatter plot showing the correlation between the mRNA expression levels of ARL4C (X-axis) and IQGAP1 (Y-axis) in pancreatic cancer patients obtained from TCGA datasets using the R2: Genomics Analysis and Visualization Platform. r indicates the Pearson’s correlation coefficient. (G-I) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (G,H) or one-way ANOVA followed by Bonferroni post hoc test (I). (K) The data were analyzed by Kaplan–Meier survival curves, and a log-rank test was used for statistical analysis. (E,F) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown with a false color representation of fluorescence intensity. More than 50 cells were imaged and the representative image is shown. False color representations were color-coded on the spectrum. Scale bars in (E) 10 μm; (F) 20 μm; (J) 50 µm. KD, knockdown. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) FLAG-cytohesin2 was expressed in S2-CP8 cells expressing GFP or ARL4C-GFP. Lysates were immunoprecipitated with anti-GFP antibody, and the immunoprecipitates were probed with the indicated antibodies. (B) S2-CP8 cells transfected with control or two independent CYTH2 (a gene of cytohesin2) siRNAs were subjected to migration and invasion assays. Migratory and invasive abilities are expressed as the percentage of control cells. (C) HeLaS3 and S2-CP8 cells were stained with anti-cytohesin2 antibody, phalloidin, and Hoechst 33342. Enlarged images (right top) of the regions in the yellow dashed squares are shown in a false color representation of fluorescence intensity (right bottom). False color representations were color-coded on the spectrum. (D) A549 and S2-CP8 cells transfected with the indicated ASOs were subjected to assay for RAC1 activity. (E) S2-CP8 and PANC-1 cells transfected with the indicated ASOs were cultured for 2.5 hr under 2.5D Matrigel conditions and stained with anti-YAP/TAZ antibody and Hoechst 33342. Cells with nuclear YAP/TAZ were counted, and the data are shown as the percentage of positively stained cells compared with the total number of Hoechst-stained cells. (B,E) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (E) or one-way ANOVA followed by Bonferroni post hoc test (B). Scale bars in (C,E) 10 μm. OE, overexpression. RFI, relative fluorescence intensity. n.s., not significant. See Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Lysates from S2-CP8 WT or ARL4C KO cells were probed with the indicated antibodies. (B) S2-CP8 WT or ARL4C KO cells were stained with anti-ARL4C antibody and phalloidin. (C) PANC-1 cells were stained with the indicated antibodies. Images of ARL4C and IQGAP1 were merged. Enlarged images of the regions in the yellow dashed squares are shown in a false color representation of fluorescence intensity on the bottom right. False color representations were color-coded on the spectrum. (D) PANC-1 cells transfected with control or IQGAP1 siRNAs were subjected to migration and invasion assays. Migratory and invasive abilities are expressed as the percentage of control cells. Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using one-way ANOVA followed by Bonferroni post hoc test. (E) Lysates were prepared from S2-CP8 cells transfected with control or IQGAP1 siRNA, and S2-CP8 WT or IQGAP1 KO cells. Lysates were probed with the indicated antibodies. (F) S2-CP8 WT or IQGAP1 KO cells were stained with anti-IQGAP1 antibody and phalloidin. (G) PDAC tissues were stained with or without anti-IQGAP1 antibody as the primary antibody and hematoxylin. (H) IQGAP1 mRNA levels in pancreatic adenocarcinoma and normal tissues of the pancreas were analyzed using TCGA and GTEx datasets. The results are shown as scatter plots with the mean ± s.e.m. p Values were calculated using a two-tailed Student’s t-test. (I) TCGA RNA sequencing and clinical outcome data for pancreatic cancer were analyzed. (J), The relationship between overall survival and IQGAP1 expression in PDAC patients with high ARL4C expression was analyzed. (K) The relationship between ARL4C and IQGAP1 expression on patient survival using TCGA dataset was analyzed. (I–K) The data were analyzed by Kaplan–Meier survival curves, and a log-rank test (I,J) or log-rank trend test (K). Scale bars in (B,C,F) 10 μm; (G) 50 μm. KO, knockout. RFI, relative fluorescence intensity. *, p < 0.05; **, p < 0.01. See Figure 3—figure supplement 2—source data 1.
+
 Using another anti-ARL4C antibody for the immunocytochemical study (Figure 3—figure supplement 2A and B), ARL4C and IQGAP1 were shown to accumulate to invasive pseudopods at endogenous level in S2-CP8 and PANC-1 cells under Matrigel-coated 2D culture conditions (Figure 3E; Figure 3—figure supplement 2C). Colocalization of ARL4C and IQGAP1 at invasive pseudopods was observed in 94 % of cells with ARL4C accumulation to the pseudopods. In 3D culture conditions, IQGAP1 was found at the tips of invasive pseudopods, similar to ARL4C-tdTomato (Figure 3F). IQGAP1 siRNA inhibited the migratory and invasive abilities in S2-CP8 and PANC-1 cells, and the cells expressing GFP-IQGAP1 were resistant to IQGAP1 siRNA (Figure 3G and H; Figure 3—figure supplement 2D and E). Simultaneous knockdown of ARL4C and IQGAP1 decreased the invasive ability, but the inhibitory degree was similar to that induced by knockdown of either ARL4C or IQGAP1 (Figure 3I). Thus, IQGAP1 and ARL4C regulate invasion in identical signaling pathways.
 
 IQGAP1 was highly expressed in 31 of 57 PDAC patients (54%) (Figure 3J). The anti-IQGAP1 antibody was validated by Western blotting and immunocytochemical and immunohistochemical analyses (Figure 3—figure supplement 2E-G). Although higher expression of IQGAP1 was not associated with clinical parameters (Supplementary file 1 table 3), IQGAP1 expression correlated with decreased overall survival (Figure 3K). Similar results were obtained from the analysis of TCGA and GTEx datasets (Figure 3—figure supplement 2H and I). TCGA dataset revealed that expression of ARL4C mRNA in pancreatic cancer patients is positively correlated with that of IQGAP1 mRNA (Figure 3L). Of 47 PDAC patients with high ARL4C expression, IQGAP1 was highly expressed in 27 patients (Supplementary file 1 table 4). Higher expression of ARL4C in the patients positive for IQGAP1 was associated with perineural invasion (Supplementary file 1 table 4). The overall survival of the patients who were double positive for ARL4C and IQGAP1 tended to be worse although it is not statistically significant (Figure 3—figure supplement 2J). Therefore, the relationship between ARL4C and IQGAP1 expression on patient survival using public datasets was analyzed. Overall survival was significantly decreased in the order of low ARL4C/low IQGAP1, high ARL4C/low IQGAP1, and high ARL4C/high IQGAP1, although the result of low ARL4C/high IQGAP1 could not conclude because of the small case numbers (n = 2) (Figure 3—figure supplement 2K). Thus, simultaneous expression of ARL4C and IQGAP1 would be correlated with aggressiveness of pancreatic cancer.
 
-## The polybasic region of ARL4C is required for its binding to IQGAP1
+### The polybasic region of ARL4C is required for its binding to IQGAP1
 
 ARL4C is modified by myristate at the N terminus and has a polybasic region (PBR), comprising nine Lys or Arg residues, at the C terminus (Donaldson and Jackson, 2011). ARL4CG2A, whose N-terminal myristoylation site (Gly2) is mutated to Ala, and ARL4CΔPBR were expressed in S2-CP8 cells. In contrast to ARL4C-GFP, ARL4CG2A-GFP and ARL4CΔPBR-GFP were not accumulated at invasive pseudopods where cortactin was present, but distributed throughout the cytosol (Figure 4A and B; Figure 4—figure supplement 1A-C), and both mutants severely decreased the binding activity to GFP-IQGAP1 (Figure 4C). The C-terminal region of KRAS includes the PBR and the CAAX motif, which is farnesylated, and fusion of the KRAS C-terminal region triggers the localization of the proteins to the cell surface membrane (Hancock et al., 1990). The KRAS C-terminal region was fused to the ARL4C mutants, which were referred to as ARL4C-GFP-Cterm. Both ARL4CG2A-GFP-Cterm and ARL4CΔPBR-GFP-Cterm were localized to invasive pseudopods where cortactin was present (Figure 4B; Figure 4—figure supplement 1A). However, although ARL4CG2A-FLAG-HA-Cterm formed a complex with GFP-IQGAP1, ARL4CΔPBR-FLAG-HA-Cterm did not (Figure 4D), suggesting that membrane localization of ARL4C is not sufficient for its binding to IQGAP1. Taken together, the PBR is necessary for ARL4C to associate with IQGAP1, as well as for recruiting ARL4C to invasive pseudopods.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig4-v2.jpg)
+
+**Figure 4.:** (A) A schematic representation of four ARL4C-GFP mutants is shown. (B) S2-CP8 cells were transfected with the indicated mutants of ARL4C-GFP. The percentages of cells with ARL4C-GFP mutant accumulated at invasive pseudopods compared with the total number of cells were calculated. (C,D) Lysates of X293T cells expressing the indicated proteins were immunoprecipitated with anti-GFP antibody and the immunoprecipitates were probed with anti-HA and anti-GFP antibodies. (E) S2-CP8 WT or ARL4C KO cells transfected with control or the indicated mutants of ARL4C-GFP were stained with anti-IQGAP1 antibody and phalloidin. The percentages of cells with IQGAP1 accumulated at invasive pseudopods compared with the total number of cells were calculated. (F) S2-CP8 WT or IQGAP1 KO cells were transfected with ARL4C-GFP. The percentages of cells with ARL4C-GFP accumulated at invasive pseudopods compared with the total number of cells were calculated. (G) S2-CP8 cells stably expressing GFP or the indicated mutants of ARL4C-GFP were transfected with control or ARL4C ASO and subjected to invasion assays. Invasive ability is expressed as the percentage of the same cells transfected with control ASO. (B,E–G) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (F,G) or one-way ANOVA followed by Bonferroni post hoc test (B,E). (B,E,F) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. False color representations were color-coded on the spectrum. Scale bars in (B,E,F) 10 μm. KO, knockout. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-C) S2-CP8 cells were transfected with the indicated mutants of ARL4C-GFP and stained with the indicated antibodies. The percentages of cells with invasive pseudopods compared with the total number of cells were calculated (B). Cells were classified according to the number of pseudopods as indicated (C). (D) S2-CP8 WT or ARL4C KO cells were stained with anti-IQGAP1 antibody and phalloidin. Circles of 2 μm diameter were placed at the edge of pseudopods and mean intensity of each circle was measured. The distribution of the data was depicted as a violin plot and the center lines show the medians. More than 100 pseudopods were calculated for each condition. p Values were calculated using a two-tailed Student’s t-test. (E-G) S2-CP8 WT or IQGAP1 KO cells were stained with the indicated antibodies and the same assays as in (B) and (C) were performed for (F) and (G), respectively. (H) S2-CP8 WT cells transfected with control ASO or ARL4C ASO-1316 were stained with anti-IQGAP1 antibody and phalloidin. The percentages of cells with IQGAP1 accumulated at invasive pseudopods compared with the total number of cells were calculated. (I) S2-CP8 cells expressing GFP or the indicated mutants of ARL4C-GFP were transfected with control or ARL4C ASO-1316. Lysates were probed with the indicated antibodies. (A,D,E,H) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. False color representations were color-coded on the spectrum. (B,F,H) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (F,H) or one-way ANOVA followed by Bonferroni post hoc test (B). Scale bars in (A,D,E,H) 10 μm. KO, knockout. RFI, relative fluorescence intensity. n.s., not significant. **, p < 0.01. See Figure 4—figure supplement 1—source data 1.
+
 The localization of IQGAP1 to invasive pseudopods was lost in ARL4C KO cells, but not vice versa (Figure 4E and F; Figure 2—figure supplement 2C and D; Figure 4—figure supplement 1D-G). The similar results were obtained in ARL4C knockdown cells (Figure 4—figure supplement 1H). In ARL4C KO cells, ARL4C-GFP and ARL4CG2A-GFP-Cterm rescued the recruitment of IQGAP1 to the plasma membrane, unlike ARL4CG2A-GFP, ARL4CΔPBR-GFP, and ARL4CΔPBR-GFP-Cterm (Figure 4E). Therefore, for IQGAP1 to be recruited to invasive pseudopods, the localization of ARL4C to the plasma membrane and the binding to IQGAP1 through the PBR might be necessary. In addition, inhibition of invasive ability by ARL4C ASO-1316 was cancelled by expression of ARL4CG2A-GFP-Cterm but not by that of ARL4CG2A-GFP, ARL4CΔPBR-GFP, or ARL4CΔPBR-GFP-Cterm (Figure 4G; Figure 4—figure supplement 1I). Thus, the binding of ARL4C and IQGAP1 in invasive pseudopods could be essential for the invasive ability.
 
-## ARL4C recruits IQGAP1 to invasive pseudopods in a PI(3,4,5)P3-dependent manner
+### ARL4C recruits IQGAP1 to invasive pseudopods in a PI(3,4,5)P3-dependent manner
 
 PI(4,5)P2 (PIP2) and PI(3,4,5)P3 (PIP3) are required for ARL4C membrane targeting (Heo et al., 2006). The pleckstrin homology (PH) domain functions as a protein- and phospholipid-binding structural protein module (Maffucci and Falasca, 2001). The PH domains of PLCδ and GRP1 prefer to bind to PIP2 and PIP3, respectively (Lemmon, 2008). GFP-PLCδPH was detected throughout the cell surface membrane, whereas GFP-GRP1PH was accumulated in invasive pseudopods (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig5-v2.jpg)
+
+**Figure 5.:** (A) S2-CP8 cells were transfected with GFP-PLCδPH or GFP-GRP1PH. The percentages of cells with GFP-PLCδPH or GFP-GRP1PH accumulated at invasive pseudopods compared with the total number of cells were calculated. (B) S2-CP8 cells expressing FRB-CFP, mRFP-FKBP-5-ptase domain, and ARL4C-FLAG-HA were treated with or without rapamycin or LY294002 and stained with anti-HA and anti-IQGAP1 antibodies. The percentages of cells with IQGAP1 or ARL4C-FLAG-HA accumulated at invasive pseudopods compared with the total number of cells were calculated. (C) S2-CP8 cells expressing FRB-CFP and mRFP-FKBP-5-ptase domain were treated with or without rapamycin or LY294002 and subjected to an invasion assay. Invasive abilities are expressed as the percentage of control cells. (D) S2-CP8 cells expressing ARL4C-mCherry and GFP-GRP1PH were stained with anti-IQGAP1 antibody. Images of GFP-GRP1PH, ARL4C-mCherry, and IQGAP1 were merged. (E) A schematic representation of ARL4C-GFP mutants is shown. (F) S2-CP8 cells were transfected with the indicated mutants of ARL4C-GFP. The percentages of cells with ARL4C-GFP mutant accumulated at invasive pseudopods compared with the total number of cells were calculated. (G) ARL4C KO cells expressing control or the indicated mutants of ARL4C-GFP were stained with anti-IQGAP1 antibody. Quantification was performed as in (B). (H) S2-CP8 cells stably expressing GFP or the indicated mutants of ARL4C-GFP were transfected with control or ARL4C ASO and subjected to an invasion assay. Invasive abilities are expressed as the percentage of the same cells transfected with control ASO. (A,F) Enlarged images of the regions in the yellow dashed squares and a false color representation of fluorescence intensity are shown on the right. (a) and (c) show the pseudopods, and (b) and (d) show the cell body. (B,D,G) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. (A–C,F–H) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (A,H) or one-way ANOVA followed by Bonferroni post hoc test (B,C,F,G). (A,B,D,F,G) False color representations were color-coded on the spectrum. Scale bars in (A,B,D,F,G) 10 μm. KO, knockout. RFI, relative fluorescence intensity. n.s., not significant. **, p < 0.01. See Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Lysates of X293T cells expressing the indicated mutants of ARL4C-FLAG-HA and GFP or GFP-IQGAP1 proteins were immunoprecipitated with anti-GFP antibody, and the immunoprecipitates were probed with the indicated antibodies. (B) S2-CP8 cells expressing GFP or the indicated mutants of ARL4C-GFP were transfected with control or ARL4C ASO-1316. Lysates were probed with the indicated antibodies.
 
 The levels of PIP2 and PIP3 in the plasma membrane were decreased by a rapamycin-inducible PIP2-specific phosphatase (Inp54p) (Suh et al., 2006) and a PI3 kinase inhibitor LY294002 (Petrie et al., 2012), respectively. S2-CP8 cells were treated with rapamycin and LY294002 for 30 min to examine the localization of ARL4C and IQGAP1, and for 24 hr to test invasive ability. PIP3 depletion decreased the membrane targeting of ARL4C and IQGAP1 and reduced the invasive ability, but PIP2 depletion did not (Figure 5B and C). IQGAP1 and ARL4C-mCherry colocalized with GRP1PH in invasive pseudopods (Figure 5D), suggesting that both proteins accumulate in the cell peripheral regions containing PIP3 and promote invasion.
 
 To reveal the importance of PIP3 for the localization area of ARL4C and IQGAP1, PLCδPH or GRP1PH was fused to the C terminus of ARL4CG2A-GFP (Figure 5E). While both ARL4CG2A-GFP-GRP1PH and ARL4CG2A-GFP-PLCδPH formed a complex with GFP-IQGAP1, the former construct was localized to invasive pseudopods, but the latter construct was present throughout the cell surface membrane (Figure 5F; Figure 5—figure supplement 1A). Consistently, in ARL4C KO cells extending invasive pseudopods, the localization of IQGAP1 to invasive pseudopods was rescued by ARL4CG2A-GFP-GRP1PH but not by ARL4CG2A-GFP-PLCδPH (Figure 5G). Furthermore, ARL4C ASO-1316 inhibited the invasive ability of S2-CP8 cells expressing ARL4CG2A-GFP-PLCδPH but not those expressing ARL4CG2A-GFP-GRP1PH (Figure 5H; Figure 5—figure supplement 1B). Taken together, these results suggest that PIP3-dependent membrane targeting of ARL4C recruits IQGAP1 to invasive pseudopods and promotes invasion.
 
-## ARL4C is involved in the focal delivery of MMP14 to invasive pseudopods through IQGAP1
+### ARL4C is involved in the focal delivery of MMP14 to invasive pseudopods through IQGAP1
 
 IQGAP1 is involved in the trafficking of MMP14-containing vesicles to the leading structures of cancer cells (Sakurai-Yageta et al., 2008). TCGA dataset showed that expression of MMP14 mRNA in pancreatic cancer patients is positively correlated with that of both ARL4C and IQGAP1 mRNA (Figure 6—figure supplement 1A). In addition, MMP14 expression was associated with poor prognosis (Figure 6—figure supplement 1B).
 
 Cell surface MMP14-GFP accumulated in invasive pseudopods containing IQGAP1 and ARL4C-FLAG-HA (Figure 6A). MMP14-GFP extremely disappeared from invasive pseudopods of ARL4C knockdown and KO cells and the phenotype was rescued by expression of ARL4C-FLAG-HA (Figure 6B; Figure 6—figure supplement 1C and D). IQGAP1 KO caused the loss of MMP14-GFP from the pseudopods, and FLAG-HA-IQGAP1 expression rescued this phenotype (Figure 6C). The failure of MMP14 membrane targeting in ARL4C KO cells was rescued by expression of ARL4CG2A-FLAG-HA-Cterm but not by that of ARL4CG2A-FLAG-HA, ARL4CΔPBR-FLAG-HA, or ARL4CΔPBR-FLAG-HA-Cterm (Figure 6B). In addition, PIP3 depletion, but not PIP2 depletion, suppressed the membrane localization of MMP14 (Figure 6D). Therefore, in co-operation with ARL4C and IQGAP1, MMP14 is likely to be trafficked to invasive pseudopods with PIP3 accumulation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig6-v2.jpg)
+
+**Figure 6.:** (A) S2-CP8 cells expressing MMP14-GFP and ARL4C-FLAG-HA were stained with anti-MMP14 without permeabilization, followed by permeabilization and staining with anti-HA and anti-IQGAP1 antibodies. (B) S2-CP8 WT or ARL4C KO cells expressing MMP14-GFP and the indicated mutants of ARL4C-FLAG-HA were stained with anti-MMP14 without permeabilization. The percentages of cells with MMP14 accumulated at invasive pseudopods compared with the total number of cells were calculated. (C) The same assay as in (B) was performed except with S2-CP8 WT or IQGAP1 KO cells expressing MMP14-GFP and FLAG-HA-IQGAP1. (D) S2-CP8 cells expressing MMP14-GFP, FRB-CFP, and mRFP-FKBP-5-ptase domain were treated with 100 nM rapamycin or 50 µM LY294002 for 30 min. Staining and quantification were performed as in (B). (E) S2-CP8 cells depleted of the indicated proteins were subjected to an invasion assay. Invasive activities are expressed as the percentage of control cells. (F–H) S2-CP8 cells (F,G) or S2-CP8 cells expressing MMP14-mCherry or MMP14ΔC-mCherry (H) depleted of the indicated proteins were subjected to a 3D collagen I gel invasion assay with DQcollagen I. The distances from the edge of the gel interface of all cells that invaded into the gel were measured (F,H). The percentages of cells with DQcollagen I-positive pseudopods compared with the total number of cells were calculated (G). (I) PDAC tissues were stained with the indicated antibodies and hematoxylin. The regions in the black dashed squares are shown enlarged in the solid squares. Nine patient samples were imaged and the representative images are shown. (A–D) The regions in the yellow dashed squares are shown enlarged in left bottom and a false color representation of fluorescence intensity is shown in right bottom. False color representations were color-coded on the spectrum. (B–H) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (H) or one-way ANOVA followed by Bonferroni post hoc test (B–G). Scale bars in (A–D) 10 μm; (F,H) 100 µm; (G) 5 µm; (I) 100 µm. KO, knockout; KD, knockdown. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Scatter plot showing the correlation between the mRNA expression levels of ARL4C or IQGAP1 (X-axis) and MMP14 (Y-axis) in pancreatic cancer patients obtained from TCGA datasets using the R2: Genomics Analysis and Visualization Platform. r indicates the Pearson’s correlation coefficient. (B) TCGA RNA sequencing and clinical outcome data for pancreatic cancer were analyzed. The data were analyzed by Kaplan–Meier survival curves, and a log-rank test was used for statistical analysis. (C) S2-CP8 WT or ARL4C KO cells expressing MMP14-GFP were stained with anti-MMP14 antibody without permeabilization and then labeled with phalloidin. (D) S2-CP8 WT cells expressing MMP14-GFP were transfected with control ASO or ARL4C ASO-1316. Cells were stained with anti-MMP14 antibody without permeabilization and then labeled with phalloidin. The percentages of cells with MMP14 accumulated at invasive pseudopods compared with the total number of cells were calculated. (E) Lysates of S2-CP8 cells transfected with control or MMP14 siRNA were probed with anti-MMP14 and anti-Clathrin antibodies. (F) S2-CP8 cells transfected with control or MMP14 siRNAs were subjected to invasion assay. Invasive abilities are expressed as the percentage of control cells. (G) S2-CP8 cells or ARL4C KO S2-CP8 cells expressing MMP14-mCherry or MMP14ΔC-mCherry were stained with anti-MMP14 antibody without permeabilization. The percentages of cells with MMP14 accumulated at invasive pseudopods compared with the total number of cells were calculated. (H) S2-CP8 cells stably expressing MMP14-mCherry and MMP14ΔC-mCherry were transfected with control or ARL4C ASO-1316 and were then subjected to a 3D collagen I gel invasion assay with DQcollagen I. The cells were stained with phalloidin. Three representative images for each condition are shown. Percentages of cells with DQcollagen I-positive pseudopods compared with the total number of cells were calculated. (I) S2-CP8 cells stably expressing MMP14-mCherry and MMP14ΔC-mCherry were transfected with control or ARL4C ASO-1316. Lysates were probed with the indicated antibodies. (J) PDAC tissues were stained with the indicated antibodies. The regions in the yellow dashed squares are shown enlarged in the bottom. Images of ARL4C, IQGAP1, and MMP14 were merged as the right bottom panel shows. Nine patient samples were imaged and the representative images are shown. (D,F-H) Data are shown as the mean ± s.d. of three biological replicates. p Values were calculated using a two-tailed Student’s t-test (D,H) or one-way ANOVA followed by Bonferroni post hoc test (F,G). (C,D,G) The regions in the yellow dashed squares are shown enlarged in the left bottom images. The right bottom images are shown in a false color representation of fluorescence intensity. False color representations were color-coded on the spectrum. Scale bars in (C,D,G,H) 10 μm; (J) 20 μm. KO, knockout. RFI, relative fluorescence intensity. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 6—figure supplement 1—source data 1.
+
 Consistent with these results, the inhibited invasive ability after double knockdown of ARL4C and MMP14 or IQGAP1 and MMP14 was similar to that seen after single knockdown of ARL4C, IQGAP1, or MMP14 (Figure 6E; Figure 6—figure supplement 1E and F). Knockdown of ARL4C, IQGAP1, or MMP14 decreased invasive ability in 3D microfluidic cell culture (Figure 6F) and the protease activity was also reduced (Figure 6G). Previous work has shown that MMP14ΔC(Δ563–582) lacking the cytoplasmic region fails to be endocytosed (Jiang et al., 2001). Here, MMP14ΔC was retained in invasive pseudopods of ARL4C-KO cells (Figure 6—figure supplement 1G), and the ARL4C knockdown-mediated decreases in cell invasion and collagen degradation were rescued by MMP14ΔC (Figure 6H; Figure 6—figure supplement 1H and I). Thus, ARL4C-dependent recruitment of MMP14 to invasive pseudopods is required for cell invasion.
 
 Pancreatic cancer tissues were stained with anti-ARL4C, anti-IQGAP1, and anti-MMP14 antibodies in the serial section. Notably, ARL4C and MMP14 were expressed more highly in invasive cancer cells rather than in PanIN lesions, although IQGAP1 was thoroughly expressed in tumor lesions including PanIN area (Figure 6I). Using triple immunofluorescence imaging assay, it was confirmed that three proteins are simultaneously expressed in PDAC cells invading the surrounding interstitial tissues (Figure 6—figure supplement 1J). Taken together, these results support the idea that the ARL4C–IQGAP1–MMP14 signaling axis participates in pancreatic cancer cell invasion.
 
-## ARL4C ASO inhibits pancreatic tumor metastasis in vivo
+### ARL4C ASO inhibits pancreatic tumor metastasis in vivo
 
 To show that ARL4C is indeed involved in cancer cell invasion in vivo, the effects of subcutaneous injection of ARL4C ASO-1316 on an orthotopic transplantation model were tested. S2-CP8 cells expressing luciferase were injected into the pancreas of nude mice, and control ASO or ARL4C ASO-1316 was subcutaneously injected from day 3 (Figure 7A). After 2 and 3 weeks, ARL4C ASO-1316 suppressed the luminescence signal compared with control ASO (Figure 7B), and ARL4C expression was decreased immunohistochemically (Figure 7C). Whereas ARL4C ASO-1316 did not reduce the size of the primary tumor in the pancreas, the ASO decreased the numbers of lymph node metastases and tended to improve the survival (Figure 7D and E; Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig7-v2.jpg)
+
+**Figure 7.:** (A) S2-CP8/Luciferase cells were implanted into the pancreas of nude mice, and control ASO (n = 6) or ARL4C ASO-1316 (n = 7) was subcutaneously administered. (B) Bioluminescence images of the intraperitoneal tumors are presented (left) and quantification of the tumor burden is shown (right). The data are presented as the mean ± s.e.m. of the fold change in luminescent intensity relative to that of week 1 treated with control ASO. (C) Sections from the pancreatic tumors from control ASO- or ARL4C ASO-1316-treated tumor-bearing mice were stained with anti-ARL4C antibody and hematoxylin. (D) Representative images of the tumors in the pancreas (left bottom) and metastatic mesenteric lymph nodes (top and right bottom) are shown. (E) Primary tumor weight (left) and metastatic mesenteric lymph node number are presented (right). Data are shown as the mean ± s.e.m. (F,G) Four hr after subcutaneous injection of 6-FAM-ARL4C ASO-1316 into tumor-bearing mice, the fluorescence intensities of various organs were measured (F), and the sections prepared from the pancreas were stained with the indicated antibodies (G). Area indicated by yellow dashed square is enlarged on the right panel (F). (H) Total RNA was extracted from tumors of control ASO- or ARL4C ASO-1316-treated tumor-bearing mice. Tumor block was cut into three pieces from each tumor of 2 mice per group. ARL4C mRNA levels were measured by quantitative real-time PCR. Relative ARL4C mRNA levels were normalized to those of B2M and expressed as fold changes compared with the levels in one of the control samples. (I) Sections from the pancreatic tumors were stained with anti-IQGAP1 antibody and hematoxylin. The two panels on the right show enlarged images of the yellow dashed squares. Positive staining of IQGAP1 is color-coded as yellow (weakly positive) or red (strongly positive). The percentage of the strongly positive IQGAP1 area was calculated. Data are shown as the mean ± s.e.m. Twenty fields were analyzed from 3 mice per group. (J) Sections from the pancreatic tumor were stained with the indicated antibodies. The numbers of tumor cells in the lymphatic vessels (indicated with yellow arrowheads) were counted. Data are shown as the mean ± s.e.m. Thirty lymphatic vessels were analyzed from 3 mice per group. (K,L) RNA sequencing was performed for S2-CP8-derived primary tumors, and the results of principal component analysis (K) and hierarchical clustering (L) are shown. (M) Differentially expressed genes were subjected to Ingenuity Pathway Analysis (IPA). The top five disease or function annotations of the positive and negative Z-score groups are shown. Bars indicate the -log10 (p value). Inhibited pathways are represented by blue-colored bars while activated pathways are shown by red-colored bars. (B,E,H-J) p Values were calculated using a two-tailed Student’s t-test. Scale bars in (D) 5 mm; (C,G,I) 50 µm; (J) 20 µm. n.s., not significant. *, p < 0.05; **, p < 0.01. See Figure 7—source data 1 and Figure 7—source data 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66721/elife-66721-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) S2-CP8/Luciferase cells were implanted into the pancreas of nude mice, and control ASO (n = 9) or ARL4C ASO-1316 (n = 10) were administered subcutaneously twice a week. The Kaplan–Meier survival curve for the mice is shown. Statistical significance was determined by a log-rank test. (B) Lysates from tumors of mice injected with control ASO or ARL4C ASO-1316 were probed with the indicated antibodies. The intensity of the bands was quantified and the ratios of each sample to Cont-1 sample were shown below the bands. (C) Sections from the pancreatic tumor were stained with the indicated antibodies. Panels on the right show enlarged images of the yellow dashed squares. Scale bar in (C) 50 μm. See Figure 7—figure supplement 1—source data 1.
 
 When 6-FAM–labeled ARL4C ASO-1316 was subcutaneously injected into tumor-bearing mice, the fluorescence was extremely detected in the pancreas and slightly observed in the kidney which is due to renal excretion (Figure 7F). 6-FAM–labeled ARL4C ASO-1316 was highly accumulated in tumor lesions but not in the neighboring normal tissues (Figure 7G), indicating that ASO was incorporated into tumor lesions after systemic injection. In primary pancreatic tumors, ARL4C ASO-1316 reduced ARL4C expression at protein and mRNA levels (Figure 7H; Figure 7—figure supplement 1B) and decreased the localization of IQGAP1 to the cell surface area (Figure 7I; Figure 7—figure supplement 1C). Tumor cells were observed in lymphatic vessels of peritumoral areas of control ASO-treated mice but not in those of ARL4C ASO-treated mice (Figure 7J). In addition, tumor cells surrounding peritumoral lymphatic vessels were also decreased, which is consistent with our hypothesis that ARL4C is required for cell invasive activity.
 
@@ -110,7 +315,934 @@ In conclusion, this study clarified that invasion of pancreatic cancer cells is 
 
 ## Materials and methods
 
-## Materials and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>BALB/cAJcl-nu/nu</td>
+      <td>CLEA</td>
+      <td></td>
+      <td>Ten-week-old</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lenti-X 293T</td>
+      <td>Takara Bio Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLaS3</td>
+      <td>K.Matsumoto (Nagoya University, Aichi, Japan)</td>
+      <td></td>
+      <td>RRID:CVCL_0058</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>S2-CP8</td>
+      <td>Cell Resource Center for Biomedical Research, Institute of Development, Aging and Cancer, Tohoku University</td>
+      <td></td>
+      <td>RRID:CVCL_F971</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PANC-1</td>
+      <td>RIKEN Bioresource Center Cell Bank</td>
+      <td></td>
+      <td>RRID:CVCL_0480</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BxPC-3</td>
+      <td>American Type Culture Collection</td>
+      <td></td>
+      <td>RRID:CVCL_0186</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HPAF-II</td>
+      <td>American Type Culture Collection</td>
+      <td></td>
+      <td>RRID:CVCL_0313</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4C-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CG2A-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CT27N-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CQ72L-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CΔPBR-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CG2A-EGFP-Cterm</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CΔPBR-EGFP-Cterm</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CG2A-EGFP-GRP1PH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4CG2A-EGFP-PLCδPH</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4C-mCherry</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4C-tdTomato</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>ARL4C-FLAG-HA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Various mutants of ARL4C</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Resected specimens of 57 patients with PDAC</td>
+      <td>Osaka University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ARL4C (rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>#HPA028927</td>
+      <td>(WB 1:1000, IHC 1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Clathrin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,500</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EGR1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4,153 S</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-catenin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,154</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ras (G12D) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#14,429 S</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hsp90 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,419</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>#901,502</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (rat monoclonal)</td>
+      <td>Roche</td>
+      <td>#1867423001</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (rabbit polyclonal)</td>
+      <td>Life Technologies/Thermo Fisher Scientiﬁc</td>
+      <td>#A6455</td>
+      <td>(WB 1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (mouse monoclonal)</td>
+      <td>Santa Cruz Santa Cruz Biotechnology</td>
+      <td>#sc-9996</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (mouse monoclonal)</td>
+      <td>WAKO</td>
+      <td>#014–22,383</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IQGAP1 (mouse monoclonal)</td>
+      <td>Santa Cruz Santa Cruz Biotechnology</td>
+      <td>#sc-376021</td>
+      <td>(WB 1:1000, IHC 1:800, ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MMP14 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>#ab51074</td>
+      <td>(WB 1:1000, IHC 1:200, ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytohesin2 (rabbit polyclonal)</td>
+      <td>Proteintech Group, Inc</td>
+      <td>#67185–1-Ig</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rac1 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,651</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cdc42 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2,466 S</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CK19 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>#ab52625</td>
+      <td>(IHC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mitochondria (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>#MAB1273</td>
+      <td>(IHC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LYVE-1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab14917</td>
+      <td>(IHC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP/TAZ (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#8,418 S</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Paxillin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,052</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FAK(mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>#610,087</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-Paxillin (Y118)(rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2,541 S</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P-FAK (Y397)(rabbit monoclonal)</td>
+      <td>Life Technologies/Thermo Fisher Scientiﬁc</td>
+      <td>#44,625 G</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cortactin(mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>#05–180</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ARL4C (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>SAJ5550275</td>
+      <td>(ICC 1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFPC2-IQGAP1 (plasmid)</td>
+      <td>K.Kaibuchi (Nagoya University, Japan)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-mCyth2 (plasmid)</td>
+      <td>J.Yamauchi (Tokyo University of Pharmacy and Life Science, Japan),</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAcGFP-mPlcd1PH (plasmid)</td>
+      <td>M.Matsuda (Kyoto University, Kyoto, Japan)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CSII-CMV-MCS-IRES2-Bsd (plasmid)</td>
+      <td>H.Miyoshi (RIKEN Bioresource Center, Ibaraki, Japan)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFPN3-hARL4C (plasmid)</td>
+      <td>A.Kikuchi (Osaka University, Osaka, Japan)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFPN3-hGRP1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full length cDNAs of GRP1 ORF were reversely transcribed from mRNA extracted from MCF-7 cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFPN3-hMMP14 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Full length cDNAs of MMP14 ORF were reversely transcribed from mRNA extracted from U2OS cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mRFP-FKBP-5-ptase-dom</td>
+      <td>Addgene</td>
+      <td>67,516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PM-FRB-CFP</td>
+      <td>Addgene</td>
+      <td>67,517</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: randomized control</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-CAGTCGCGTTTGCGACTGG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human IQGAP1#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCTGCACATAGTTGCCTTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human IQGAP1#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-CCCTAATGTAGAATGTCAT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human CYTH2#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GGATGGAGCTGGAGAACAT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human CYTH2#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCAGTTTCTATGGAGCTTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human ARPC2#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCCTATATTCACACACGTA-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human ARPC2#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-CCTATATTCACACACGTAT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human MMP14#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCAGCCTCTCACTACTCTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human MMP14#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-CCGACATCATGATCTTCTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human KRAS#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCATCATGTCCTATAGTTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human KRAS#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GTTGGAGCTGATGGCGTAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human CTNNB1#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-CCCACTAATGTCCAGCGTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: human CTNNB1#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>5'-GCATAACCTTTCCCATCAT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Antisense oligonucleotide: randomized control</td>
+      <td>This paper</td>
+      <td></td>
+      <td>T(Y)^a^g^A(Y)^g^a^G(Y)^t^a^5(Y)^c^c^A(Y)^t^c (Lower case = DNA; N(Y) = AmNA; 5(Y) = AmNA_mC; ^ = Phosphorothioated)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Antisense oligonucleotide: ARL4C-1316</td>
+      <td>This paper</td>
+      <td></td>
+      <td>G(Y)^5(Y)^A(Y)^t^a^c^c^t^c^a^g^g^T(Y)^A(Y)^a (Lower case = DNA; N(Y) = AmNA; 5(Y) = AmNA_mC; ^ = Phosphorothioated)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human GAPDH_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-TCCTGCACCACCAACTGCTT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human GAPDH_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-TGGCAGTGATGGCATGGAC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human B2M_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-TGCTGTCTCCATGTTTGATGTATC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human B2M_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-TCTCTGCTCCCCACCTCTAAG-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human ARL4C_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-AGGGGCTGTGAAGCTGAGTA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human ARL4C_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-TTCCAGGCTGAAAAGCAGTT –3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human ARPC2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-AGATTTCGATGGGGTCCTCT-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>human ARPC2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'-CCGGAAGATTTTCAAGGTCA-3'</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>FLAG peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine2000 transfection reagent</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine LTX reagent</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>15338100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAiMAX</td>
+      <td>Life Technologies/Thermo Fisher Scientific</td>
+      <td>13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ViaFect</td>
+      <td>Promega Corp.</td>
+      <td>E4981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TrypLE Express Enzyme</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12604013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeSTAR Max DNA Polymerase</td>
+      <td>Takara Bio Inc</td>
+      <td>R045A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Clontech</td>
+      <td>639,649</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DakoReal EnVision Detection System</td>
+      <td>Dako</td>
+      <td>K500711-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Peroxidase-Blocking Solution</td>
+      <td>Dako</td>
+      <td>S202386-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>G-Block</td>
+      <td>GenoStaff</td>
+      <td>GB-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Blocking One Histo</td>
+      <td>nacalai tesque</td>
+      <td>06349–64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>rat tail type I collagen</td>
+      <td>Corning Inc</td>
+      <td>354,236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DQ-collagen type I</td>
+      <td>Invitrogen</td>
+      <td>D12060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>3D microfluidic cell culture chip</td>
+      <td>AIM Biotech</td>
+      <td>DAX-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QCM Gelatin Invadopodia Assay (Red)</td>
+      <td>Merck Millipore</td>
+      <td>ECM671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>poly-D-lysine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Matrigel Growth Factor Reduced</td>
+      <td>Corning Inc</td>
+      <td>354,230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>6.5 mm Transwell with 8.0 µm Pore Polycarbonate Membrane Insert</td>
+      <td>Corning Inc</td>
+      <td>3,422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BioCoat Matrigel Invasion Chambers with 8.0 µm PET Membrane</td>
+      <td>Corning Inc</td>
+      <td>354,480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Annexin V-FITC Apoptosis Detection Kit</td>
+      <td>nacalai tesque</td>
+      <td>15342–54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>protein A Sepharose beads</td>
+      <td>GE Healthcare</td>
+      <td>17078001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>DB10003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Silver Stain for Mass Spectrometry</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>24,600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>O.C.T. Compound</td>
+      <td>Sakura Finetek</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA</td>
+      <td>MACHEREY-NAGEL GmbH &amp; Co. KG</td>
+      <td>740,955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ReverTra Ace qPCR RT Master Mix</td>
+      <td>TOYOBO</td>
+      <td>FSQ-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23,227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD184161</td>
+      <td>Sigma-Aldrich</td>
+      <td>PZ0112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U0126</td>
+      <td>Promega Corp.</td>
+      <td>V1121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Cell Signaling Technology</td>
+      <td>9,904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY294002</td>
+      <td>Cell Signaling Technology</td>
+      <td>9,901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VivoGlo luciferin</td>
+      <td>Promega Corp.</td>
+      <td>P1043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HALO</td>
+      <td>Indica Labs</td>
+      <td></td>
+      <td>RRID:SCR_018350</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NanoZoomer-SQ</td>
+      <td>Hamamatsu Photonics K.K.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSC Xena browser</td>
+      <td>http://xena.ucsc.edu</td>
+      <td></td>
+      <td>RRID:SCR_018938</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kaplan–Meier plotter</td>
+      <td>http://www.kmplot.com</td>
+      <td></td>
+      <td>RID:SCR_018753</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software.</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel Toukei</td>
+      <td>ESUMI Co., Ltd.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td></td>
+      <td>RRID:SCR_007370</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Living Image 4.3.1 Software</td>
+      <td>Caliper Life Sciences</td>
+      <td></td>
+      <td>RRID:SCR_014247</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ikra v1.2.2</td>
+      <td>https://zenodo.org/record/3606888 (Yu et al., 2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iDEP.90</td>
+      <td>http://bioinformatics.sdstate.edu/idep90/ (Ge et al., 2020)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>IPA; Qiagen</td>
+      <td></td>
+      <td>RRID:SCR_008653</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM880 laser scanning microscope</td>
+      <td>Carl Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BZ-9000</td>
+      <td>Keyence</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IVIS imaging system</td>
+      <td>Xenogen Corp.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst33342</td>
+      <td>Invitrogen</td>
+      <td>H1399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 546 Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A22283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A22287</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials and chemicals
 
 HeLaS3 cells were kindly provided by Dr. K. Matsumoto (Nagoya University, Aichi, Japan) in May 2002. S2-CP8 pancreatic cancer cells were purchased from Cell Resource Center for Biomedical Research, Institute of Development, Aging and Cancer, Tohoku University, in April 2014. Lenti-X 293T (X293T) cells were purchased from Takara Bio Inc (Shiga, Japan) in October 2011. PANC-1 cells were purchased from RIKEN Bioresource Center Cell Bank (RIKEN BRC, Tsukuba, Japan) in October 2014. BxPC-3 cells were purchased from American Type Culture Collection (ATCC, Manassas, VA, USA) in May 2018. HPAF-II cells were purchased from ATCC in July 2017. S2-CP8, X293T, HeLaS3, and HPAF-II cells were grown in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% fetal bovine serum (FBS). PANC-1 and BxPC-3 cells were grown in RPMI-1640 supplemented with 10 % FBS. All cell lines were authenticated using short tandem repeat profiling by BEX CO., LTD (Tokyo, Japan) and tested negative for Mycoplasma using e-Myco Mycoplasma PCR Detection Kit (iNtRON Biotechnology, Inc, Gyeonggi-do, Korea).
 
@@ -132,78 +1264,78 @@ pEGFPN3-ARL4C was constructed as previously described (Matsumoto et al., 2014). 
 
 Standard recombinant DNA techniques mentioned above were used to construct the following plasmids: pEGFPN3-ARL4C, pEGFPN3-ARL4CG2A, pEGFPN3-ARL4CT27N, pEGFPN3-ARL4CQ72L, pEGFPN3-ARL4CΔPBR, pEGFPN3-ARL4CG2A-EGFP-PLCδPH, pEGFPN3-ARL4CG2A-EGFP-GRP1PH, pEGFPN3-ARL4CG2A-EGFP-Cterm, pEGFPN3-ARL4CΔPBR-EGFP-Cterm, pEGFPC1-CHD, pEGFPC1-IQ, pEGFPC1-WW, pEGFPC1-IR, pEGFPC1-GRD, pEGFPC1-RGCT, pcDNA3-ARL4C-FLAG-HA, pcDNA3-ARL4CG2A-FLAG-HA, pcDNA3-ARL4CΔPBR-FLAG-HA, pcDNA3-ARL4CG2A-FLAG-HA-Cterm, pcDNA3-ARL4CΔPBR-FLAG-HA-Cterm, pcDNA3-FLAG-HA-IQGAP1, pmCherryN1-ARL4C, pmCherryN1-MMP14, pmCherryN1-MMP14ΔC(Δ563–582), pCAG-ARL4C-tdTomato. To construct lentiviral vectors harboring EGFP, ARL4C-EGFP, ARL4CG2A-EGFP, ARL4CT27N-EGFP, ARL4CQ72L-EGFP, ARL4CΔPBR-EGFP, ARL4CG2A-EGFP-Cterm, ARL4CΔPBR-EGFP-Cterm, ARL4CG2A-EGFP-PLCδPH, ARL4CG2A-EGFP-GRP1PH, EGFP-IQGAP1, ARLC-mCherry, MMP14-mCherry, MMP14ΔC-mCherry, ARL4C-tdTomato were cloned into CSII-CMV-MCS-IRES2-Bsd provided by Dr. H. Miyoshi (RIKEN Bioresource Center, Ibaraki, Japan).
 
-## Patients and cancer tissues
+### Patients and cancer tissues
 
 The present study involved 57 presurgical untreated patients with PDAC and ages ranging from 47 to 87 years (median, 70 years) who underwent surgical resection at Osaka University between April 2001 and April 2015. Tumors were staged according to the Union for International Cancer Control (UICC) TNM staging system. Resected specimens were fixed in 10 % (vol/vol) formalin, processed for paraffin embedding, and were sectioned at 5 μm thickness and stained with hematoxylin and eosin (H&E) or immunoperoxidase for independent evaluations. The protocol for this study was approved by the ethical review board of the Graduate School of Medicine, Osaka University, Japan (No. 13455), under the Declaration of Helsinki, and written informed consent was obtained from all patients. The study was performed in accordance with Committee guidelines and regulations.
 
-## Immunohistochemical studies
+### Immunohistochemical studies
 
 Immunohistochemical studies were performed as previously described (Fujii et al., 2015) with modiﬁcation. Briefly, all tissue sections were stained using a DakoReal EnVision Detection System (Dako, Carpentaria, CA, USA) in accordance with the manufacturer’s recommendations. Formalin-fixed, paraffin-embedded tissue specimens for examination were sectioned at 5 μm thickness. Heat-induced epitope retrieval was performed using Decloaking Chamber NxGen (Biocare Medical, Walnut Creek, CA, USA). Tissue peroxidase activity was blocked with Peroxidase-Blocking Solution (Dako) for 30 min, and the sections were then incubated with G-Block (GenoStaff, Tokyo, Japan) or Blocking One Histo (nacalai tesque, Kyoto, Japan) for 30 min or 10 min, respectively, to block nonspecific antibody binding sites. Tissue specimens were treated with anti-ARL4C (1:100), anti-IQGAP1 (1:800), or anti-MMP14 (1:100) antibody for 3 hr at room temperature. Then, the specimens were detected by incubating with goat anti-rabbit or anti-rabbit/mouse IgG-HRP for 1 h and subsequently with DAB (Dako). The tissue sections were then counterstained with 0.1 % (wt/vol) hematoxylin. ARL4C expression was considered high when the total area of the tumor stained with anti-ARL4C antibody exceeded 5 %. IQGAP1 expression was considered high when the total area of the tumor stained with anti-IQGAP1 antibody exceeded 40 %.
 
 IQGAP1 staining positivity in PDAC patients was measured using HALO (Indica Labs, Corrales, NM, USA). The threshold for positive or negative staining was based on the optical density of the staining: regions above the positivity threshold were scored according to the optical density threshold set in the module; weakly positive is shown in yellow and strongly positive in red. The samples were viewed and analyzed using NanoZoomer-SQ (Hamamatsu Photonics K.K., Shizuoka, Japan).
 
-## Clinical data analyses using open sources
+### Clinical data analyses using open sources
 
 The data on ARL4C and IQGAP1 mRNA expression in pancreatic adenocarcinoma were obtained from the UCSC Xena browser (http://xena.ucsc.edu). Tumors and normal samples in the UCSC Xena browser were derived from The Cancer Genome Atlas (TCGA) and Genotype-Tissue Expression (GTEx) projects. Differential analysis was performed using a two-tailed Student’s t-test. The correlations of overall survival rates with ARL4C, IQGAP1, and MMP14 expression in pancreatic cancer in TCGA datasets were analyzed using a Kaplan–Meier plotter (http://www.kmplot.com) and visualized using GraphPad Prism 8 (GraphPad Software. San Diego, CA, USA). High and low expression groups were classified by auto select best cutoff. p Values and r values were calculated using GraphPad Prism.
 
-## 3D gel invasion assay using a 3D microfluidic cell culture chip
+### 3D gel invasion assay using a 3D microfluidic cell culture chip
 
 Collagen gels were made by diluting and neutralizing rat tail type I collagen (Corning Inc, Corning, NY, USA) in PBS and 12.1 mM NaOH, and were adjusted to 2 mg/mL. DQ-collagen type I (Life Technologies/Thermo Fisher Scientific, Carlsbad, CA, USA) was mixed with collagen gels at a final concentration of 25 μg/mL. The gel channel of 3D microfluidic cell culture chip (AIM Biotech, Biopolis Rd, Singapore) was filled with collagen solution and incubated at 37 °C for at least 1 hr to polymerize collagen. After hydration of medium channels, a cell suspension (1 × 104 cells) in serum-free cell culture medium with 0.2 % BSA was injected into one of the ports at the medium channel. The opposite medium channel was filled with cell culture medium containing 10 % FBS to create a chemoattractant gradient across the collagen gel. The cells were then incubated for 3 days and fixed for 15 min at room temperature in PBS containing 4 % (w/v) paraformaldehyde. Then, the cells were permeabilized and blocked in PBS containing 0.5 % (w/v) Triton X-100 and 40 mg/mL BSA for 30 min and stained with the indicated antibodies. The samples were viewed and analyzed under an LSM880 laser scanning microscope (Carl Zeiss, Jana, Germany). Reconstruction of confocal z-stack images into 3D animations and analysis of 4D images were performed using Imaris (Bitplane, Belfast, UK).
 
-## Invadopodia assay
+### Invadopodia assay
 
 QCM Gelatin Invadopodia Assay (Red) (Merck Millipore, Burlington, MA, USA) was used in accordance with the manufacturer’s protocol. Briefly, poly-L-lysine–coated coverslips were treated with glutaraldehyde. The coverslips were then incubated with Cy3-labeled gelatin, followed by culture medium quenching of free aldehydes. Cells (6 × 104 cells) were seeded onto the gelatin-coated coverslips and incubated for 4 hr. After incubation, the cells were fixed for 20 min at room temperature in phosphate-buffered saline (PBS) containing 4 % (w/v) paraformaldehyde and permeabilized in PBS containing 0.2 % (w/v) Triton X-100 for 10 min. After being blocked in PBS containing 0.2 % (w/v) BSA for 30 min, the cells were immunohistochemically stained. The samples were viewed and analyzed under an LSM880 laser scanning microscope (Carl Zeiss, Jana, Germany).
 
-## 2D culture on poly-D-lysine– or matrigel-coated dishes
+### 2D culture on poly-D-lysine– or matrigel-coated dishes
 
 Cells grown on glass coverslips coated with poly-D-lysine (Sigma-Aldrich) or Matrigel Growth Factor Reduced (Corning) were fixed for 10 min at room temperature in PBS containing 4 % (w/v) paraformaldehyde and permeabilized in PBS containing 0.1 % (w/v) saponin (Sigma-Aldrich) or 0.2 % (w/v) Triton X-100 for 10 min. The cells were then blocked in PBS containing 0.2 % (w/v) BSA for 30 min. They were then incubated with primary antibodies for 3 hr at room temperature and with secondary antibodies in accordance with the manufacturer’s protocol (Life Technologies/Thermo Fisher Scientific). For cell surface MMP14 staining, samples were incubated with anti-MMP14 antibody for 3 hr at room temperature without permeabilization. The samples were viewed and analyzed under an LSM880 laser scanning microscope (Carl Zeiss).
 
-## Migration and invasion assays
+### Migration and invasion assays
 
 Migration and invasion assays were performed using a modiﬁed Boyden chamber (6.5 mm Transwell with 8.0 µm Pore Polycarbonate Membrane Insert; Corning) and a Matrigel-coated modiﬁed Boyden chamber (BioCoat Matrigel Invasion Chambers with 8.0 µm PET Membrane; Corning), respectively as described previously (Kurayoshi et al., 2006; Matsumoto et al., 2014). In the standard conditions, S2-CP8 cells (2.5 × 104 cells) were seeded in the upper side of Boyden Chamber. In GFP-expressing S2-CP8 cells, after 4 h (migration assay) or 24 hr (invasion assay, except for Figure 6E) incubation with control ASO, 122 cells (average) and 126 cells (average), respectively, were observed in the lower side chamber in the one field of view under fluorescence microscope (BZ-9000, Keyence, Osaka, Japan) using a 10 x air objective. In Figure 6E, cells were observed after 20 hr incubation with ASO. Migration and invasion rates of cells expressing ARL4C, IQGAP1, and MMP14 mutants were calculated as the percentages of the same cells transfected with control ASO or siRNA.
 
-## 3D type I collagen gel culture
+### 3D type I collagen gel culture
 
 Collagen gels were made by diluting and neutralizing rat tail type I collagen (Corning) in PBS and 12.1 mM NaOH, and were adjusted to 2 mg/mL. Then, 140 µL of cell-embedded collagen gels (1 × 106 cells/mL) were overlaid onto glass coverslips in a 24-well plate and allowed to polymerize for at least 1 hr at 37 °C and 5 % CO2. After polymerization, growth medium was added on top of the collagen gel. The cells were then incubated for 3 days and fixed for 15 min at room temperature in PBS containing 4 % (w/v) paraformaldehyde. Then, the cells were permeabilized and blocked in PBS containing 0.5 % (w/v) Triton X-100 and 40 mg/mL BSA for 30 min and incubated with primary antibodies for 3 h at room temperature and secondary antibodies in accordance with the manufacturer’s protocol (Life Technologies/Thermo Fisher Scientific). The samples were viewed and analyzed under an LSM880 laser scanning microscope using a 20 x air objective (Carl Zeiss). In the standard conditions (for Figure 3L) with BxPC-3/ARL4C-GFP cells treated with control ASO, the number of cells with pseudopods and the total number of cells were 15 (average) and 76 (average), respectively, in the one field of view under an LSM880 laser scanning microscope (Carl-Zeiss) using a 20 x air objective. The percentages of cells with pseudopods compared with the total number of cells in the presence of control siRNA or IQGAP1 siRNA were calculated.
 
 Inducible recruitment of phospholipid phosphatases mRFP-FKBP-5-ptase-dom and PM-FRB-CFP plasmids were obtained from Addgene (deposited by the laboratory of T. Balla). S2-CP8 cells were then transiently transfected with both mRFP-FKBP-5-ptase-dom and PM-FRB-CFP (0.5 μg/well of a six-well plate for each vector) with ViaFect (Promega Corp.). After 24 hr culture, the cells were treated with 100 nM rapamycin or 50 μM LY294002 for 30 min before fixation.
 
-## Cytotoxic assay
+### Cytotoxic assay
 
 Cells transfected with control ASO or ARL4C ASO-1316 were cultured on Matrigel coated dish for 3.5 days, and dissociated using TrypLE Express (Thermo Fisher Scientific). Suspension of cells was stained with Hoechst 33342 or propidium iodide (PI) using Annexin V-FITC Apoptosis Detection Kit (nacalai tesque). The samples were viewed and analyzed under an LSM880 laser scanning microscope (Carl Zeiss), and the number of PI-positive cells was divided by the total number of nuclei stained with Hoechst 33342.
 
-## Isolation of ARL4C-interacting protein
+### Isolation of ARL4C-interacting protein
 
 Confluent X293T cells transiently transfected with ARL4C-FLAG-HA in two 10 cm culture dishes were harvested and lysed in 800 μL of lysis buffer (25 mM Tris-HCl [pH7.5], 50 mM NaCl, 0.5 % TritonX-100) with protease inhibitors (nacalai tesque). After 10 min of centrifugation, lysates were incubated with 40 μL of 50 % slurry of anti-FLAG Affinity Gel (Sigma-Aldrich) for 30 min, and then add another 40 μL and incubated for 30 min. Beads were washed three times with 1 mL of lysis buffer. Recovered beads were incubated once with FLAG peptide (0.5 mg/mL) to elute proteins in 80 μL of PBS for 30 min at 4 °C. Then, the supernatant was precleaned with 40 μL of 50 % slurry of protein A Sepharose beads (GE Healthcare, Chicago, IL, USA) for 30 min at 4 °C. The precleaned lysates were incubated with 2 μg of anti-HA antibody (Santa Cruz, Dallas, TX, USA) and 50 μL of 50 % slurry of protein A Sepharose beads for 1 hr at 4 °C. Beads were washed three times with 1 mL of lysis buffer, and bound complexes were dissolved in 50 μL of Laemmli’s sample buffer. The ARL4C-FLAG-HA-interacting proteins were detected by Pierce Silver Stain for Mass Spectrometry (Life Technologies/Thermo Fisher Scientific). Six bands (arrowheads in Figure 3A) were cut from the gel and analyzed by mass spectrometry.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Immunoprecipitation was performed as described previously with modification (Matsumoto et al., 2014). For Figure 3C S2-CP8 cells (60 mm diameter dish) were lysed in 300 µL of lysis buffer (25 mM Tris–HCl pH 7.5, 50 mM NaCl, 0.5 % Triton-X100) with protease inhibitors (nacalai tesque) for 10 min on ice. After centrifugation, the supernatant was collected and pre-cleaned using 30 µL of Dynabeads Protein G (Thermo Fisher Scientific). After pre-cleaning, lysates were rotated with complex of Dynabeads (50 μL) and antibody (3.6 μg) for 10 min at room temperature. The beads were then washed with lysis buffer three times, and finally suspended in Laemmli’s sample buffer.
 
-## The RAC1 activity assay
+### The RAC1 activity assay
 
 The RAC1 activity assay was performed as described (Matsumoto et al., 2014). Briefly, cells were lysed in 400 μL of RAC1 assay buffer (20 mM Tris–HCl [pH 7.5], 150 mM NaCl, 1 mM dithiothreitol, 10 mM MgCl2, 1 % Triton-X100) with protease inhibitors (nacalai tesque) containing 20 μg of glutathione-S-transferase (GST)-CRIB. After the lysates were centrifuged at 20,000 g for 10 min, the supernatants were incubated with glutathione-Sepharose (20 μl each) for 2 h at 4 °C. The beads were then washed with RAC1 assay buffer three times, and finally suspended in Laemmli’s sample buffer. The precipitates were probed with the anti-RAC1 antibody.
 
-## Imaging of ASO accumulation in tumor-bearing mice
+### Imaging of ASO accumulation in tumor-bearing mice
 
 Orthotopic transplantation was performed as described previously (Kim et al., 2009). Ten days after the transplantation, 150 μg/animal (approximately 7.5 mg/kg) of 6-FAM-ARL4C ASO-1316 was subcutaneously administered. Four h after the injection, the fluorescence intensities of various organs were measured ex vivo using the IVIS imaging system (Xenogen Corp.). After ex vivo imaging, unfixed mouse pancreas tissues were frozen in an O.C.T. Compound (Sakura Finetek, Tokyo, Japan)/sucrose mixture [1:1 (v/v) OCT and 1 x PBS containing 30 % sucrose]. Freshly frozen tissues were sectioned at 10 μm and fixed for 30 min at room temperature in PBS containing 4 % (w/v) paraformaldehyde. The cells were then permeabilized and blocked in PBS containing 0.5 % (w/v) Triton X-100 and 40 mg/mL BSA for 30 min and stained with the indicated antibodies. The samples were viewed and analyzed under an LSM880 laser scanning microscope (Carl Zeiss).
 
-## Orthotopic xenograft tumor assay
+### Orthotopic xenograft tumor assay
 
 An orthotopic transplantation assay was performed as described previously (Kim et al., 2009) with modification. Ten-week-old male BALB/cAJcl-nu/nu mice (nude mice; CLEA, Tokyo, Japan) were anesthetized and received an orthotopic injection of S2-CP8 cells into the mid-body of the pancreas using a 27 G needle (5 × 105 cells suspended in 100 μL of HBSS with 50 % Matrigel). ASOs (50 μg/mouse, approximately 2.5 mg/kg) were administered subcutaneously twice a week from day 3. To evaluate the knockdown efficiency of ARL4C ASO-1316, tumor tissues were harvested from tumor-bearing mice 8 days after transplantation. Total RNAs were isolated using NucleoSpin RNA (MACHEREY-NAGEL GmbH & Co. KG, Dueren, Germany), and complementary DNAs were synthesized using ReverTra Ace qPCR RT Master Mix (TOYOBO, Osaka, Japan). For extraction of tissue proteins, tumor samples were lysed in 150 μL of lysis buffer (20 mM Tris–HCl [pH 8.0], 137 mM NaCl, 10 % glycerol, 1% NP40) and homogenized using Biomasher II (KANTO CHEMICAL CO.,Inc, Tokyo, Japan). Debris was removed by centrifugation and finally suspended in Lammli’s buffer. Protein concentration was determined with Pierce BCA Protein Assay Kit (Thermo Fisher Scientific). The band intensities of western blotting were calculated using Image J (National Institutes of Health, USA). To assess the effect of ARL4C ASO-1316 on tumor progression, tumor burden was measured once a week using the IVIS imaging system (Xenogen Corp., Alameda, CA, USA). For the in vivo imaging, 100 μL of VivoGlo luciferin (30 mg/mL) was intraperitoneally administered and the bioluminescence imaging was performed 8 min later. The region of interest (ROI) was selected and the radiance values were measured with Living Image 4.3.1 Software (Caliper Life Sciences, Hopkinton, MA, USA). The mice were euthanized 28 days after transplantation. Tumor weights and numbers of mesenteric lymph nodes (diameter of lymph nodes > 1 mm) were measured. All protocols used for the animal experiments in this study were approved by the Animal Research Committee of Osaka University, Japan (No. 26-032-048).
 
-## RNA sequencing
+### RNA sequencing
 
 Sequenced reads were preprocessed by Trim Galore! v0.6.3 and quantified by Salmon v0.14.0 with the flags gcBias and validateMappings. GENCODE vM21 annotation was used as the transcript reference. The quantified transcript-level scaled TPM was summarized into a gene-level scaled TPM by using the R package tximport v1.6.0. All procedures were implemented using the RNAseq pipeline ikra v1.2.2 [https://zenodo.org/record/3606888 (Yu et al., 2019)] with the default parameters. Downstream analysis was conducted with an integrative RNAseq analysis platform, iDEP.90. After normalization with VST, principal component analysis was conducted. Hierarchical clustering was performed on the top 1,000 genes in terms of their standard deviation. Finally, DEGs were selected with a log2 fold change >1 and false discovery rate <0.1.
 
-## Ingenuity pathway analysis (IPA)
+### Ingenuity pathway analysis (IPA)
 
 DEGs identified from RNA sequence data were subjected to Ingenuity Pathway Analysis (IPA; Qiagen, Hilden, Germany). This analysis examines DEGs that are known to affect each biological function and compares their direction of change to what is expected from the literature. To infer the activation states of implicated biological functions, two statistical quantities, Z-score and p value, were used. A positive or negative Z-score value indicates that biological functions are predicted to be activated or inhibited in the ARL4C ASO-1316–treated group relative to the control ASO-treated group. A negative Z-score means that the indicated biological functions are inhibited by ARL4C ASO-1316. The p value, calculated with the Fisher’s exact test, reflects the enrichment of the DEGs on each pathway. For stringent analysis, only biological functions with a |Z-score| > 2 were considered significant.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Biological replicates are replicates on independent biological samples versus technical replicates that use the same starting samples. All experiments in this study were repeated using biological replicates. A minimum of three biological replicates were analyzed for all samples, and the results are presented as the mean ± s.d. or s.e.m. The cumulative probabilities of overall survival were determined using the Kaplan–Meier method; a log-rank test was used to assess statistical significance. The Student’s t-test or Mann–Whitney test was used to determine if there was a significant difference between the means of two groups. One-way analysis of variance (ANOVA) with Bonferroni tests was used to compare three or more group means. Statistical analysis was performed using Excel Toukei (ESUMI Co., Ltd., Tokyo, Japan) and GraphPad Prism 8 (GraphPad Software, La Jolla, CA, USA); p < 0.05 was considered statistically significant. In box and whiskers plots, the top and bottom horizontal lines represent the 75th and the 25th percentiles, respectively, and the middle horizontal line represents the median. The size of the box represents the interquartile range and the top and bottom whiskers represent the maximum and the minimum values, respectively.
 
-## Others
+### Others
 
 The siRNAs and primers used in these experiments are listed in Supplementary file 1 tables 7 and 8, respectively. 2.5D Matrigel growth assay and quantitative PCR were performed as described previously (Matsumoto et al., 2019; Sato et al., 2010).

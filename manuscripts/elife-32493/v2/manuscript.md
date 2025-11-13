@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.32493.001 COPI-coated vesicles mediate trafficking within the Golgi apparatus and from the Golgi to the endoplasmic reticulum. The structures of membrane protein coats, including COPI, have been extensively studied with in vitro reconstitution systems using purified components. Previously we have determined a complete structural model of the in vitro reconstituted COPI coat (Dodonova et al., 2017). Here, we applied cryo-focused ion beam milling, cryo-electron tomography and subtomogram averaging to determine the native structure of the COPI coat within vitrified Chlamydomonas reinhardtii cells. The native algal structure resembles the in vitro mammalian structure, but additionally reveals cargo bound beneath β’–COP. We find that all coat components disassemble simultaneously and relatively rapidly after budding. Structural analysis in situ , maintaining Golgi topology, shows that vesicles change their size, membrane thickness, and cargo content as they progress from cis to trans , but the structure of the coat machinery remains constant.
+COPI-coated vesicles mediate trafficking within the Golgi apparatus and from the Golgi to the endoplasmic reticulum. The structures of membrane protein coats, including COPI, have been extensively studied with in vitro reconstitution systems using purified components. Previously we have determined a complete structural model of the in vitro reconstituted COPI coat (Dodonova et al., 2017). Here, we applied cryo-focused ion beam milling, cryo-electron tomography and subtomogram averaging to determine the native structure of the COPI coat within vitrified Chlamydomonas reinhardtii cells. The native algal structure resembles the in vitro mammalian structure, but additionally reveals cargo bound beneath β’–COP. We find that all coat components disassemble simultaneously and relatively rapidly after budding. Structural analysis in situ, maintaining Golgi topology, shows that vesicles change their size, membrane thickness, and cargo content as they progress from cis to trans, but the structure of the coat machinery remains constant.
 
 ## Introduction
 
@@ -41,13 +41,37 @@ We collected a dataset of 29 cryo-electron tomograms, each containing a clearly-
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig1-v2.jpg)
 
-**Figure 1.:** Chlamydomonas Golgi apparatus and transport vesicles revealed by in situ cryo-ET.(A) A slice through a cellular tomogram containing a representative Golgi stack and (B) corresponding 3D segmentation, showing the native morphology of the ER (yellow), four cis cisternae (green), cis vesicles (light green), four medial cisternae (magenta), medial vesicles (light pink), the trans cisterna (blue), trans vesicles (light blue) and the TGN (purple). Other membranes, the nuclear envelope, nuclear pore complexes and ribosomes are shown in grey. (C–E) Slices through (C, C’) clathrin, (D, D’) COPII and (E, E’) COPI coated transport vesicles found within the tomograms. Panels C, D and E are slices through the centers of the vesicles. Panels C’, D’ and E’ are top slices through the coats of the same vesicles, showing characteristic structures of (C’) clathrin triskelions, (D’) the triangular Sec13/31 COPII lattice, and (E’) the dense COPI coat. (F–H) Slices through three COPI buds in different stages of maturation. Yellow arrowheads: cytoplasmic boundary of the coat, blue arrowheads: vesicle or bud membrane. Scale bars: 200 nm in A-B, 50 nm in C-H.
+**Figure 1.:** (A) A slice through a cellular tomogram containing a representative Golgi stack and (B) corresponding 3D segmentation, showing the native morphology of the ER (yellow), four cis cisternae (green), cis vesicles (light green), four medial cisternae (magenta), medial vesicles (light pink), the trans cisterna (blue), trans vesicles (light blue) and the TGN (purple). Other membranes, the nuclear envelope, nuclear pore complexes and ribosomes are shown in grey. (C–E) Slices through (C, C’) clathrin, (D, D’) COPII and (E, E’) COPI coated transport vesicles found within the tomograms. Panels C, D and E are slices through the centers of the vesicles. Panels C’, D’ and E’ are top slices through the coats of the same vesicles, showing characteristic structures of (C’) clathrin triskelions, (D’) the triangular Sec13/31 COPII lattice, and (E’) the dense COPI coat. (F–H) Slices through three COPI buds in different stages of maturation. Yellow arrowheads: cytoplasmic boundary of the coat, blue arrowheads: vesicle or bud membrane. Scale bars: 200 nm in A-B, 50 nm in C-H.
+
+![Video 1.](https://cdn.elifesciences.org/articles/32493/elife-32493-video1.mp4.jpg)
+
+**Video 1.:** The movie slices back and forth in Z through the tomographic volume, then reveals the 3D segmentation, colored as in Figure 1B. The ER is yellow, four cis cisternae are green, cis vesicles are light green, four medial cisternae are magenta, medial vesicles are light pink, the trans cisterna is blue, trans vesicles are light blue and the TGN is purple. Other membranes, the nuclear envelope, nuclear pore complexes and ribosomes are shown in grey.
 
 All three archetypal protein coats could be visually identified in the tomograms without any ambiguity: clathrin-coated vesicles were found in the vicinity of the TGN and were distinguished by their characteristic triskelion-based cage (Figure 1C,C’), while ER exit sites with COPII buds and vesicles were distinguished by their two-layered coat (Figure 1D,D’). Multiple COPI-coated vesicles and buds were found around the periphery of the Golgi cisternae and were discriminated from clathrin and COPII-coated membranes by the presence of a dense uniform coat (Figure 1E–H).
 
 We extracted 267 buds and vesicles showing extensive COPI coats. We applied a reference-free subtomogram averaging workflow, as previously described (Faini et al., 2012), to determine the structure of the COPI coat ab initio, without making use of structures previously determined in vitro. We divided the buds and vesicles into two half-datasets, which were processed independently (Figure 2—figure supplement 1A). The two resulting structures were compared by Fourier shell correlation and averaged together to generate a final structure from 3579 subtomograms (10,737 asymmetric units) with a resolution of 20 Å (Figure 2—figure supplement 1B). The features of the map are consistent with the measured resolution (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Isosurface view of the triad density map determined within the cell. (A) View from the cytoplasmic side, dashed rectangle indicates the position of the cross-section shown in panel C. (B) View from the vesicle lumen side, displaying three cargo density protrusions. (C) Cross-section view, showing the position of the cargo density (black arrowhead) relative to the positions of the N-terminal β–propellers of α–COP (dark blue arrowhead) and β’-COP (light blue arrowhead). (D) Examples of coat arrangement on vesicles and buds. In each row, left: tomographic slice; middle: tomographic slice overlaid with triangles at the positions and orientations of each triad (correspondence between triangle and structure is illustrated below), colored by similarity to the structure in panels A-C (green to red = high to low correlation); right: view of the triad arrangement rotated to orient the budding scar towards the viewer. The vesicle in the bottom row has an incomplete coat and is likely undergoing uncoating. Scale bar: 50 nm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Convergence of reference-free COPI reconstructions from two independent subsets of in situ data. Iteration number of the alignment is marked for each reference. After appearance of the triad structures (blue dashed lines), the triads were centered and aligned further applying three-fold symmetry to produce the structures on the right. (B) Fourier shell correlation curve for the final in situ COPI structure. The FSC between the two independent half-datasets is shown, indicating a resolution of 20 Å at the 0.143 criterion.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Isosurface views of COPI structures obtained in vitro and in situ. (A) The map from this work and EMDB maps (B) EMD-2985 (Dodonova et al., 2015) and (C) EMD-2084 (Faini et al., 2012). All structures are fit with PDB model 5A1U (Dodonova et al., 2015) as a rigid body (which at this resolution is essentially identical to PDB model 5NZR, derived from EMD-3720 (Dodonova et al., 2017)). (D, E) Comparison of orthographic slices through (D) the in situ map and (E) EMD-2985, both overlaid with PDB 5A1U. Luminal cargo density is highlighted in the in situ map (blue arrowhead).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Densities are displayed as isosurfaces. Insets show example vesicles from the dataset with the pattern of triads contributing to each linkage highlighted in pink. The linkage I structure is fit with PDB 5NZT, the linkage II structure is fit with PDB 5NZU, linkage III is rare and no structure was determined, the linkage IV structure is fit with PDB 5NZV (Dodonova et al., 2017). Note that linkage I is an asymmetric structure, and the three copies of the complex between ε-COP and the C-terminal domain of α–COP may not all be in equivalent positions (Dodonova et al., 2015). The asymmetry could not be resolved at this resolution. The central density of linkage II, corresponding to the µ-homology domain of δ-COP, is rather weak, which could indicate flexibility and/or asymmetry in the position of this domain in vivo. ε-COP and the µ-homology domain of δ-COP are both dispensable for COPI function (Arakel et al., 2016). We observed no additional density in the linkages that might correspond to bound cargo apart from the one found below the β’-COP subunit.
+
 The native in situ structure of COPI from C. reinhardtii is strikingly similar to structures previously determined from in vitro reconstituted COPI budding reactions using mouse proteins (Figure 2—figure supplement 2) (Faini et al., 2012; Dodonova et al., 2015, Dodonova et al., 2017). The pseudoatomic model based on the in vitro structure fits into our in situ structure as a rigid body (Figure 2A, Video 2). This shows that the architecture of the COPI coat described in vitro, in which the adaptor-like and coat-like subcomplexes do not form two layers but rather form an intertwined trimeric assembly, is the architecture present within cells, and that this architecture is highly conserved between two distantly-related species.
+
+![Video 2.](https://cdn.elifesciences.org/articles/32493/elife-32493-video2.mp4.jpg)
+
+**Video 2.:** The movie shows an isosurface view of the native COPI triad structure. The PBD model 5A1U, derived from a structure of COPI determined in vitro (Dodonova et al., 2015), is fit into the structure as a rigid body. The isosurface is initially shown from the cytoplasmic side, before it is rotated 90° and sliced perpendicular to the membrane to show cargo density residing beneath the N-terminal β-propeller of β’-COPI but not beneath the analogous domain of α-COP. The isosurface is then rotated a further 90° and viewed from the vesicle lumen side to show three symmetric cargo densities.
 
 A closer comparison of the in vitro and in situ structures reveals that the in situ map has an additional density positioned on the luminal side of the membrane below the N-terminal β–propeller of the β’–COP subunit (Figure 2B,C; Figure 2—figure supplement 2D,E). The position of this density, on the luminal side of the membrane directly below the dilysine cargo-binding site in β’–COP, and its absence in the in vitro system where there is no cargo, suggests that it corresponds to bound cargo or cargo receptor transported by vesicles. We found no additional density below the equivalent cargo-binding site in the homologous N-terminal β–propeller of α–COP, indicating that α-COP binds fewer, smaller, or more flexible cargos than β’–COP.
 
@@ -57,9 +81,53 @@ We visualized the coatomer organization by placing a triangle at the position an
 
 We observed vesicles with varying degrees of coat completeness, but no fully complete coats; as previously described in vitro, each vesicle contained a gap in the coat at the site of scission (the ‘budding scar’) (Figure 2D). A large population of uncoated vesicles was present in the ribosome exclusion zone immediately surrounding the Golgi. The luminal density and diameter distribution of these vesicles were the same as that of COPI-coated vesicles (Figure 3—figure supplements 1 and 2). Thus, the combination of location, size and density strongly suggests that the majority of them are uncoated COPI vesicles. We estimated coat completeness in XY slices through the centers of the vesicles in five selected Golgi tomograms (Figure 3, Figure 3—figure supplement 1). Since our data represent a random sampling of the COPI vesicle population in the proximity of the Golgi, the relative dynamics of vesicle uncoating can be inferred from the distribution of coat completeness. Coat disassembly begins after budding, and is fairly rapid but not catastrophic, since a significant number of vesicles at intermediate uncoating stages were observed. The percentage of uncoated vesicles indicates that uncoating is completed after approximately one third of the average vesicle lifetime (Figure 3). We could not determine whether individual coatomer complexes remain associated with the naked vesicles, or whether the uncoating process starts at the budding scar or at random coat positions.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig3-v2.jpg)
+
+**Figure 3.:** (A) Central slices through COPI vesicles at different stages of uncoating (from left to right). (B) Vesicles were sorted according to the angular completeness of the coat, as measured from central slices (see Materials and methods). Scale bar: 50 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) 42 vesicles with COPI coats of varying degrees of completeness. (B) 103 uncoated vesicles found within the ribosome exclusion zone surrounding the Golgi stack. Each image is an average of 13 consecutive tomographic slices (spacing 1.37 nm) at the vesicle center. Scale bars: 50 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Diameter distribution for COPI-coated late buds and vesicles, measured from membrane to membrane (excluding coats), (B) Diameter distribution of naked vesicles from Figure 3—figure supplement 1B. The size distribution is similar to that of the coated vesicles.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–C) First row: buds, second row: vesicles. (A) Isosurface overviews of the triads viewed from the cytoplasmic side. (B) Isosurface views sliced perpendicular to the membrane. (C) Orthoslice views as in panel B. (D) Isosurface views indicating the ‘outer’ Arf1 (red arrow). It could be hypothesized that this copy of Arf1 dissociates before other coat components, but we find that the Arf1 density is present in both buds (left) and released vesicles (right). Model color code is indicated in Figure 2 and Figure 2—figure supplement 2. Maps are shown at the same isosurface threshold. PDB 5A1U is fit as a rigid body. We note a slight difference in density between the Arf1 molecule bound to β–COP and the neighboring N-terminal β–propeller of α–COP. This is likely the result of the vesicle dataset containing a larger fraction of triads that are at the edge of the lattice. This is the position of a flexible loop region in α–COP and shows similar variability in previously described structures of different triad linkages (Dodonova et al., 2017).
+
 Knowing the positions of individual COPI complexes in the cell enabled us to sort the complexes into discrete subpopulations based on their cellular location. To assess whether structural changes occur in the COPI coat during budding or initial uncoating, we calculated separate averages for buds and vesicles, for both triads and linkages. We did not detect any substantial differences in the structures (Figure 3—figure supplement 3). These observations suggest that the stoichiometry of coatomer subunits and Arf1 are the same during assembly and disassembly. This would not be the case if GTP hydrolysis led to loss of Arf1 from the coat either during or shortly after budding, as has been proposed (Yang et al., 2002; Liu et al., 2005), or if there were changes in the position or presence of any coatomer subunits during or after budding. Thus, we conclude that loss of Arf1 and coatomer disassembly occur simultaneously. The lack of any extra densities in the averages from buds and vesicles further indicates that additional factors such as ArfGAPs bind only transiently or at low stoichiometry.
 
 COPI-coated vesicles changed their appearance during progression through the Golgi stack. We observed a gradual transition from lighter to darker vesicle luminal density through the stack that generally matched that of the donor cisternae, followed by an abrupt change to a translucent lumen in some vesicles found near the trans Golgi (Figure 1A, Figure 4A,B). Interestingly, COPI coated buds were also found on the translucent TGN compartments (Figure 4—figure supplement 1). We consider it likely that these buds mediate retrograde transport towards the trans Golgi, but cannot rule out that they yield anterograde secretory vesicles such as those previously suggested to exist in algae (Donohoe et al., 2007). While translucent buds were found on the TGN and some regions of the trans Golgi, most buds emerging from the translucent trans cisterna had darker luminal density that was similar to medial Golgi vesicles (Figure 4—figure supplement 1), indicating enrichment of cargo in the trans buds. The change in observed luminal density (which correlates directly with density observed in cryo-EM) through the Golgi stack indicates a progressive increase and then decrease in the amount of material being transported, consistent with the predominant vesicle cargo being resident Golgi proteins (Donohoe et al., 2013).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the C. reinhardtii Golgi showing cisternae with cis (−8 to −6), intermediate (−5), medial (−4 to −1), and trans morphology (+1) and the TGN (+2). Cisternae are numbered relative to the transition from dark to translucent lumen (between −1 and +1). (B) Examples of buds and vesicles from three groups defined by position and luminal density (see Materials and methods). Top row: ‘cis’, middle row: ‘medial/trans’, bottom row: ‘trans/TGN’. (C–E) ~24 Å structures of the coat determined from the three groups. (C) Orthographic slices and (D) cross-section isosurface views through the averages. Arrowheads: cargo. (E) Isosurface views from inside the vesicle. While the coatomer structure remains constant, the ‘trans/TGN’ structure lacks bound cargo. (F) Density profiles through the three COPI structures. Top left inset: example orthographic slice through a straightened structure, dashed yellow rectangle and arrow: averaged region and direction of the profile. Bottom inset: bootstrapped mean bilayer leaflet separation measured for the ‘cis’ {C}, ‘medial/trans’ {M} and ‘trans/TGN’ {T} averages, error bars: bootstrapped SD. (G–H) Membrane bilayer thickness in (G) COPI buds and (H) non-coated membrane regions from individual medial and trans Golgi cisternae. In G, mean and error bars (SD) were bootstrapped (see Materials and methods). In H, grey crosses: individual cisternae, blue circles: means, TGN measurements were not obtained. Scale bar: 50 nm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the Golgi complex, see Figure 4A for explanation. (B–D) Examples of buds from the medial and trans Golgi, and the TGN. (B) On the last medial cisterna, the buds have dark luminal density similar to the donor cisternae. (C) On the trans cisterna, the buds typically have a darker lumen than the translucent donor cisternae. (D) On the swollen TGN, the buds have a translucent lumen similar to the donor compartment. Scale bar: 50 nm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The diameter of vesicles and late buds, measured membrane to membrane, is plotted against position in the stack based on cisternae number counting from the cis face.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Fourier shell correlation curves for the averages from the different Golgi regions depicted in Figure 4C–E indicate comparable resolutions of the structures. Resolutions are given in the legend. (B) Cross correlation coefficients of individual subtomograms from different Golgi regions to the common reference. The bottom and top of the boxes show 25 and 75 percentiles, the central red line shows 50 percentile. Whiskers show full data ranges, excluding outliers (red crosses). Outliers (red crosses) were calculated with default settings of the Matlab boxplot function. The number of subtomograms (N) for each group is displayed above the figure.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Donor cisternae morphology was defined according to the schematic on the left (numbered relative to the first translucent compartment). These profiles were used to measure the bilayer separations depicted in Figure 4G.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) The eight Golgi stacks used for measurements. Cisternae were assigned numbers relative to the first translucent compartment, as diagrammed in Figure 4A; these numbers are indicated for each cisternae on each stack. (B) Close up view of the non-coated membranes from the central cisterna regions of Golgi 10, showing how the particles were extracted to obtain the bilayer 2D averages displayed on the right. Scale bars are 100 nm in panel (A) and 50 nm in panel (B).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/32493/elife-32493-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** All measured density profiles and membrane bilayer separation distances for individual Golgi stacks. Each plot to the right of the profile summarizes the distance between the density peaks of each cisterna. An aggregate plot summarizing the dependence of bilayer thickness on cisterna number is shown in Figure 4H.
 
 There was a gradual increase in the diameter of buds and vesicles from the cis through the medial and trans Golgi (Figure 4—figure supplement 2). The vesicles with a translucent lumen had a more variable diameter distribution. The increasing vesicle diameter may result from the swelling of the medial and trans cisterna edges, causing the curvature of the donor membrane to decrease. Similarly, the variable donor membrane curvature in the TGN likely yields a variety of translucent vesicle sizes.
 
@@ -73,15 +141,102 @@ This study shows that it is possible to determine the native structure of the CO
 
 ## Materials and methods
 
-## Cell culture and sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Chlamydomonas reinhardtii)</td>
+      <td>mat3-4 mt+</td>
+      <td>PMID: 11445540, DOI: 10.1101/gad.892101</td>
+      <td>CC-3994, Chlamydomonas Resource Center</td>
+      <td>small cells improve vitrification</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID: 16182563, DOI: 10.1016/j.jsb.2005.07.007</td>
+      <td></td>
+      <td>cryo-ET tilt-series acquisition</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID: 28250466, DOI: 10.1038/nmeth.4193</td>
+      <td></td>
+      <td>frame alignment</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>IMOD</td>
+      <td>PMID: 8742726, DOI: 10.1006/jsbi.1996.0013</td>
+      <td></td>
+      <td>tomogram alignment, reconstruction</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Amira</td>
+      <td>FEI/Thermo Fisher Sceintific</td>
+      <td></td>
+      <td>3D segmentation of tomogram volumes</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td></td>
+      <td>subtomogram averaging, data analysis</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>TOM package for Matlab</td>
+      <td>PMID: 15721576, DOI:10.1016/j.jsb.2004.10.006</td>
+      <td></td>
+      <td>subtomogram averaging</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Av3 package for Matlab</td>
+      <td>PMID: 15774580, DOI: 10.1073/pnas.0409178102</td>
+      <td></td>
+      <td>subtomogram averaging</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>RELION with helical processing</td>
+      <td>PMID: 28193500, DOI: 10.1101/095034</td>
+      <td></td>
+      <td>averaging of 2D membrane profiles</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>USCF Chimera</td>
+      <td>PMID: 15264254, DOI: 10.1002/jcc.20084</td>
+      <td></td>
+      <td>visualization</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and sample preparation
 
 Cell culture and sample preparation were performed as previously described (Engel et al., 2015). Chlamydomonas reinhardtii strain mat3-4 (Umen and Goodenough, 2001), characterized by a smaller cell size that aids vitrification, was acquired from the Chlamydomonas Resource Center (University of Minnesota) and grown with constant light (~90 μmol photons m−2 s−1) and normal atmosphere aeration in Tris-acetate-phosphate (TAP) medium. Plunge-freezing and cryo-focused ion beam milling were performed as previously described (Schaffer et al., 2017). Cells were blotted onto carbon-coated 200-mesh copper grids (Quantifoil Micro Tools), which were plunged into a liquid ethane-propane mixture using a Vitrobot Mark 4 (FEI). Frozen grids were mounted into modified Autogrids (FEI) and loaded into either a Scios (FEI) or a Quanta 3D FEG (FEI) FIB/SEM microscope. Samples were coated with thin layer of organometallic platinum using the in situ gas injection system (GIS, FEI). Thin lamellae containing the cellular interior were milled using the Ga+ beam at 30 kV and a shallow angle of 8°−12°.
 
-## Cryo-electron tomography
+### Cryo-electron tomography
 
 Tomograms were collected with SerialEM software (Mastronarde, 2005) on a 300 kV Titan Krios (FEI) equipped with a postcolumn energy filter (968 Quantum, Gatan) and a K2 Summit direct electron detector (Gatan) operated in movie mode at 12 frames per second. Tilt series were acquired over an angular range of approximately −60° to +60°, using a bi-directional tilt scheme with a 2° increment. Cumulative electron dose was kept under ~100 e-/Å2, the object pixel size was 3.42 Å, and defocus ranged from −4 to −6 um. Each tomogram was acquired from a separate cell, and thus each is a biological replicate. Around five different cell cultures were used in total. During 16 microscopy sessions, a total of 60 tomograms were acquired that contained Golgi or coated vesicle structures. These tomograms were then sorted by image quality and tilt-series alignment precision, yielding 29 tomograms that were used for analysis, including nine described in a previously published study of Golgi intracisternal arrays (Engel et al., 2015).
 
-## Subtomogram averaging
+### Subtomogram averaging
 
 K2 image frames were aligned with MotionCor2 (Zheng et al., 2017) to correct for beam-induced motion. Cumulative electron dose-dependent low-pass filters were calculated as previously determined, assuming a uniformly distributed total dose of 60 e-/Å2 (Grant and Grigorieff, 2015), and were applied to the tilt series before processing. Contrast transfer-function (CTF) correction of individual tilt images was performed using ctfphaseflip implemented in IMOD (Xiong et al., 2009). Tilt series were aligned in IMOD using patch-tracking and reconstructed using weighted backprojection (Kremer et al., 1996).
 
@@ -91,7 +246,7 @@ To generate the initial reference, we selected 64 vesicles and late buds that we
 
 The remaining vesicles and buds were divided between the two half-datasets. Subtomograms were extracted as described above and aligned to the starting references. After alignment, we removed subtomograms with low cross-correlation coefficients to the reference. Overlapping subtomograms were removed based on the distance threshold of 17.7 nm (13 pixels). The final datasets had 1713 and 1866 subtomograms (5139 and 5598 asymmetric units). The structures were further refined by processing subtomograms extracted from once-binned (pixel size 6.84 Å) and unbinned (pixel size 3.42 Å) volumes. Prior to the resolution measurement, each reference was masked with a soft-edged cylindrical mask that excluded the membrane. Resolution was measured using mask-corrected phase-randomized Fourier shell correlation (FSC) (Figure 2—figure supplement 1B) (Chen et al., 2013). The final density map was obtained by averaging the structures from the two half-datasets together. The final structure was low-pass filtered to the determined resolution, reweighted by dividing by the sum of its CTFs, and sharpened with a B-factor of −2000 (Rosenthal and Henderson, 2003). Map visualization and fitting of PDB structures were performed using Chimera software (Pettersen et al., 2004). The in vitro pseudoatomic model 5A1U was fit into our in situ structure as rigid body.
 
-## Lattice map and linkage structure analysis
+### Lattice map and linkage structure analysis
 
 Triad positions and orientations were visualized using a custom chimera plugin. No completely coated vesicles were found. Some of the vesicles were not completely contained within the FIB lamella and, in other cases, some triads may not have been successfully identified during the alignment procedure. For the remaining COPI-coated cellular vesicles, we could determine that the coat is incomplete, either because areas of uncoated membrane are clearly visible in the tomogram, or because the arrangement of triads would not allow the vesicle to be closed by the addition of more triads (Figure 2D). The absence of any complete vesicle coats could reflect rapid partial uncoating after budding, or result from a budding scar, where the coat is never completed at the bud neck. The absence of complete vesicles in in vitro reconstitution reactions (Faini et al., 2012), which are performed in the presence of non-hydrolysable GTP analogues, suggests that the gap in the coat represents a budding scar.
 
@@ -101,11 +256,11 @@ To determine the structures of linkages I, II and IV, subtomograms were extracte
 
 Resolution was measured as described above and was determined to be 32–33 Å for all linkages. PDB pseudoatomic models 5NZT, 5NZU, and 5NZV from the in vitro study were used for fitting. We previously found that linkage I appears approximately three-fold symmetric at low resolution (Faini et al., 2012), but is asymmetric at higher resolution (Dodonova et al., 2015). For the in situ linkage I average, we were unable to resolve the asymmetry, and the structure was similar to that previously determined at low resolution. The structure of linkage II was also similar to that observed at low resolution. The density from the µ-homology domains of δ-COP located at the center of the pattern were not well resolved, suggesting that these domains are flexible in their position.
 
-## Measurement of vesicle coat completeness
+### Measurement of vesicle coat completeness
 
 To measure the distribution of vesicle coat completeness, we identified 42 coated vesicles and 103 uncoated vesicles in five selected Golgi stacks (Figure 3—figure supplement 1). 13 tomographic slices around the vesicle center were averaged, and the resulting image was overlaid with a mask dividing it into eight sectors. The number of sectors containing coated membrane was recorded for each vesicle and used to calculate the angular completeness (Figure 3). While there are no complete vesicles in the dataset, mostly-complete vesicles may appear to be complete in a central slice. Thus, the measurements can systematically overestimate the completeness of mostly-complete vesicles, and underestimate the completeness of mostly-incomplete vesicles. The ratio of vesicles with coat to uncoated vesicles was ~1:2. We estimated the lifetime of coated vesicles as 1/3 of the total vesicle lifetime.
 
-## Morphological annotation and structure variation analysis
+### Morphological annotation and structure variation analysis
 
 The dataset of 267 vesicles and buds was visually annotated. Each vesicle or bud was assessed for budding stage (early bud, late bud with neck, vesicle), luminal density and position within the Golgi stack. Cisternal morphology was defined according to the scheme shown in Figure 4A. Only vesicles and buds whose positions could be confidently defined were used for generating separate averages from the cis, medial/trans and trans/TGN regions.
 
@@ -113,11 +268,11 @@ For structural analysis across the Golgi stack, we aimed to separate vesicles an
 
 To measure membrane thickness in buds from individual cisternae, we defined the cisterna number relative to the first compartment with a translucent lumen, as diagrammed in Figure 4A. This compartment, which normally corresponded to the trans cisterna but occasionally the TGN (Figure 4—figure supplement 5), was numbered +1. Preceding cisterna were labeled according to their position as −1, –2, −3, –4, −5. Translucent compartments that followed +1, corresponding to swollen and heterogeneously shaped TGN, were labeled +2.
 
-## Measurement of membrane thickness in vesicles and buds
+### Measurement of membrane thickness in vesicles and buds
 
 Comparison of orthographic slices through the cis, medial/trans and trans/TGN structures suggested that there are differences in membrane bilayer thickness and curvature through the Golgi. We analyzed the membrane thickness change in more detail by generating a density profile through ‘straightened’ references. The membrane thickness was measured from straightened subtomogram averages of the vesicle/bud groups defined above: cis, medial/trans and trans/TGN (Figure 4F), as well as averages of buds from individual cisternae of the medial and trans Golgi (Figure 4G, Figure 4—figure supplement 4). The averages were low-pass filtered to 25 Å and sharpened with a B-factor of −2000. Volumes were straightened using radial orthographic projection as previously described (de Marco et al., 2010), and the average density profile was determined along the perpendicular vector to the straightened reference’s membrane (Figure 4F, top left inset). The distance between the two peaks of the membrane bilayer was measured. For each subset, we then applied a bootstrap approach in which we repeated the procedure described above (from averaging to measurement) 750 times on sets of subtomograms equal in size to the original subset but randomly sampled from it with replacements. From these 750 profiles, we determined the mean and standard deviation of the membrane thickness. Data analysis was performed in Matlab (Mathworks).
 
-## Measurement of membrane thickness in Golgi cisternae
+### Measurement of membrane thickness in Golgi cisternae
 
 To measure the membrane thickness in stacked, non-coated Golgi cisternae, we selected eight Golgi stacks in which the bilayers could be clearly observed and the cisternae were perpendicular to the imaging plane throughout the tomographic volume (Figure 4—figure supplement 5A). We extracted XY slices from the tomogram, then extracted 20 × 20 boxes along a bilayer, which were aligned and averaged using elements of the RELION helical reconstruction workflow (He and Scheres, 2017) to obtain a well-resolved 2D bilayer average (Figure 4—figure supplement 5B) for each cisterna. The number of particles for each average ranged from 100 to 300. The membrane density profile along the perpendicular vector to the bilayer was extracted using Fiji (Schindelin et al., 2012) and the peak-peak distance was measured (Figure 4—figure supplement 6).
 

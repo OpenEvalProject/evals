@@ -30,7 +30,27 @@ We analysed 24,873,372 titles and 18,249,091 abstracts published between 1950 an
 
 We found that the proportion of acronyms in titles increased from 0.7 per 100 words in 1950 to 2.4 per 100 words in 2019 (Figure 1); the proportion of acronyms in abstracts also increased, from 0.4 per 100 words in 1956 to 4.1 per 100 words in 2019. There was at least one acronym in 19% of titles and 73% of abstracts. Three letter acronyms (jokingly called TLAs) were also more popular than acronyms of two and four letters.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60080/elife-60080-fig1-v1.jpg)
+
+**Figure 1.:** The proportion of acronyms (purple line) has risen steadily over time in abstracts both for acronyms that are letters and/or numbers (top left) or just letters (top right). Acronyms are generally less common in titles than abstracts, and the proportion in titles has been relatively stable since 2000, but there was an increase from 1960 to 2000 (bottom left and right). Three-character acronyms (blue lines) are more common than two-character acronyms (brown-orange lines) and four-character acronyms (olive green lines) in both titles and abstracts. A sufficient number of abstracts only became available from 1956. The spikes in titles for acronyms of length 2+ in 1952 and 1964 are because of the relatively small number of papers in those years, with over 78,000 papers being excluded in 1964 because the title was in capitals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60080/elife-60080-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each line shows the trend after excluding up to the n most popular acronyms (n = 1, ..., 100). The darkest line is for n = 1, and the lightest line is for n = 100. The number of titles and journals in the early 1950s is much smaller, hence the more erratic trend for titles in that decade.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60080/elife-60080-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Data for six article types (journal article, clinical trial, case report, comment, editorial, and other). The high proportion of acronyms in the 1950s and 1960s for ‘other’ is driven by a relatively large number of obituaries that include qualifications, such as FRCP (Fellow of the Royal College of Physicians) or DSO (Distinguished Service Order). The drop in the proportion of acronyms in 2019 for ‘clinical trials’ and ‘other’ may be due to a delay in papers from some journals appearing in PubMed.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60080/elife-60080-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Using a truncated y−axis more clearly shows the upward trend in the use of acronyms in titles for all article types over time (by reducing the influence of ‘other’ in the 1950s and 1960s; see Figure 1—figure supplement 2).
+
 The proportion of acronyms in titles has flattened since around the year 2000, whereas the proportion in abstracts continued to increase. Moreover, when the 100 most popular acronyms were removed, there was still a clear increase in acronym use over time (Figure 1—figure supplement 1). Furthermore, the increase was visible in all the article types we studied (including articles, clinical trials, case reports, comments and editorials: Figure 1—figure supplement 2; Figure 1—figure supplement 3). Video 1 shows the top ten acronyms in titles for every year from 1950 to 2019, and Video 2 shows the top ten acronyms in abstracts over the same period.
+
+![Video 1.](https://cdn.elifesciences.org/articles/60080/elife-60080-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/60080/elife-60080-video2.mp4.jpg)
 
 There are 17,576 possible three-letter acronyms using the upper case letters of the alphabet. We found that 94% of these combinations had been used at least once. Strikingly, out of the 1.1 million acronyms analysed, we found that the majority were rarely used, with 30% occurring only once, and 49% occurring between two and ten time times. Only 0.2% of acronyms (just over 2,000) occurred more than 10,000 times. One year after their first use, only 11% of acronyms had been re-used in a different paper in the same journal. Longer acronyms were less likely to be re-used, with a 17% re-use for two-character acronyms, compared with just 8% for acronyms of five characters or longer. The time taken for acronyms to be re-used has also increased over time (Figure 2), indicating that acronyms created today are less likely to be re-used than previously created acronyms.
 
@@ -39,6 +59,143 @@ There are 17,576 possible three-letter acronyms using the upper case letters of 
 **Figure 2.:** The solid line is the estimated time in years for 10% of newly coined acronyms to be re-used in the same journal. 10% was chosen based on the overall percentage of acronyms being re-used within a year. Newly coined acronyms are grouped by year. The dotted lines show the 95% confidence interval for the time to re-use, which narrows over time as the sample size increases. The general trend is of an increasing time to re-use from 1965 onwards, which indicates that acronyms are being re-used less often. The relatively slow times to re-use in the 1950s and early 1960s are likely due to the very different mix of journals in that time.
 
 DNA is by far the most common acronym and is universally recognised by scientists and the public (Table 1). However, not all the top 20 may be so widely recognised, and it is an interesting individual exercise to test whether you, the reader, recognise them all. Six of the top 20 acronyms also have multiple common meanings in the health and medical literature, such as US and HR‚ although the meaning can usually be inferred from the sentence.
+
+**Table 1.**
+ Top 20 acronyms found in over 24 million titles and over 18 million abstracts.How many do you recognise?
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Acronym</th>
+      <th>Common meaning(s)</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>DNA</td>
+      <td>Deoxyribonucleic acid</td>
+      <td>2,443,760</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CI</td>
+      <td>Confidence interval</td>
+      <td>1,807,878</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>IL</td>
+      <td>Interleukin/Independent living</td>
+      <td>1,418,402</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>HIV</td>
+      <td>Human immunodeficiency virus</td>
+      <td>1,172,516</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>mRNA</td>
+      <td>Messenger ribonucleic acid</td>
+      <td>1,107,547</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>RNA</td>
+      <td>Ribonucleic acid</td>
+      <td>1,060,355</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>OR</td>
+      <td>Odds ratio/Operating room</td>
+      <td>788,522</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>PCR</td>
+      <td>Polymerase chain reaction</td>
+      <td>745,522</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>CT</td>
+      <td>Computed tomography</td>
+      <td>743,794</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>ATP</td>
+      <td>Adenosine triphosphate</td>
+      <td>582,838</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>MS</td>
+      <td>Multiple sclerosis/Mass spectrometry</td>
+      <td>567,523</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>MRI</td>
+      <td>Magnetic resonance imaging</td>
+      <td>504,823</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>TNF</td>
+      <td>Tumour necrosis factor</td>
+      <td>454,486</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>US</td>
+      <td>United States/Ultrasound/Urinary system</td>
+      <td>436,328</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>SD</td>
+      <td>Standard deviation</td>
+      <td>411,997</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>NO</td>
+      <td>Nitric oxide</td>
+      <td>394,777</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>PD</td>
+      <td>Parkinson's disease/Peritoneal dialysis</td>
+      <td>389,566</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>HR</td>
+      <td>Heart rate/Hazard ratio</td>
+      <td>383,027</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>IFN</td>
+      <td>Interferon</td>
+      <td>383,011</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>CD4</td>
+      <td>Cluster of differentiation antigen 4</td>
+      <td>363,502</td>
+    </tr>
+  </tbody>
+</table>
 
 In parallel with increasing acronym use, the average number of words in titles and abstracts has increased over time, with a steady and predominantly linear increase for titles, and a more nonlinear increase for abstracts (Figure 3). The average title length increased from 9.0 words in 1950 to 14.6 words in 2019, and shows no sign of flattening. The average abstract length has also increased, from 128 words in 1962 to 220 words in 2019, and again this trend shows no sign of flattening. It is worth pointing out that these increases have happened despite the word and character limits that many journals place on the length of titles and abstracts.
 
@@ -66,21 +223,139 @@ We defined an acronym as a word in which half or more of the characters are uppe
 
 We included common acronyms (such as AIDS) because it is difficult to make a simple ruling about what is common and hence well accepted. We instead used a sensitivity analysis that excluded the most common acronyms. We did not include acronyms that have become common words and are generally now not written in upper case letters (such as laser).
 
-## Data extraction
+### Data extraction
 
 The data were extracted from the PubMed repository of health and medical journals provided by the National Library of Medicine. Data were downloaded between 14 and 22 April 2020. Although the PubMed repository includes papers going back to the year 1781, we used 1950 as the first year. This is because although acronyms have been around for 5,000 years, their use greatly increased after the Second World War (Cannon, 1989) and there were a relatively small number of papers in PubMed prior to 1950. The details of the algorithm to extract acronyms are in Appendix 1.
 
-## Random checks of the algorithm
+### Random checks of the algorithm
 
 One researcher (AB) randomly checked 300 of each of the following by hand to verify our acronym-finding algorithm:
 
 The numbers in Table 2 are the count of errors and estimated upper bound for the error percentage using a Bayesian calculation based on the 95th percentile of a beta distribution using the observed number of papers with and without errors. The average error rates were between 0.3% and 6.3%. Zero error rates are unlikely given the great variety of styles across journals and authors. Examples of acronyms missed by our algorithm include those with a relatively large number of lower case letters, numbers, symbols or punctuation (such as circRNA). Examples of acronyms wrongly included by our algorithm include words written in capitals for emphasis and the initials of someone's name appearing in the title as part of a Festschrift.
 
-## Exclusion reasons and numbers
+**Table 2.**
+ Errors made by the algorithm in random samples of titles and abstracts, the number of times that error was made, the average error percentage, and the estimated upper limit.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Error</th>
+      <th>Count</th>
+      <th>Average error (%)</th>
+      <th>Upper limit on error (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wrongly excluded whole title</td>
+      <td>1</td>
+      <td>0.3</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Missed valid acronym from title</td>
+      <td>7</td>
+      <td>1.2</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>Wrongly included acronym from title</td>
+      <td>5</td>
+      <td>0.8</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Missed valid acronym from abstract</td>
+      <td>19</td>
+      <td>6.3</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>Wrongly included acronym from abstract</td>
+      <td>2</td>
+      <td>0.7</td>
+      <td>2.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Exclusion reasons and numbers
 
 Table 3 lists the most common reasons why papers were excluded from our analysis. Papers were excluded if they were not written in English, and this was the main exclusion reason for titles. Over 7 million papers had no abstract and around 10,000 had an abstract that was empty or just one word long. Over 298,000 titles and 112,000 abstracts had 60% or more of words in capital letters, making it difficult to distinguish acronyms. This 60% threshold for exclusion was found using trial and error.
 
-## Statistical analysis
+**Table 3.**
+ Reasons for excluding titles and abstracts, along with the numbers excluded for each reason.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reason</th>
+      <th>Titles</th>
+      <th>Abstract</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No abstract</td>
+      <td>n/a</td>
+      <td>7,253,053</td>
+    </tr>
+    <tr>
+      <td>Non-English</td>
+      <td>4,783,569</td>
+      <td>4,783,569</td>
+    </tr>
+    <tr>
+      <td>Pre-1950</td>
+      <td>384,436</td>
+      <td>7,973</td>
+    </tr>
+    <tr>
+      <td>Title/abstract largely in capitals</td>
+      <td>298,284</td>
+      <td>112,369</td>
+    </tr>
+    <tr>
+      <td>One word title/abstract</td>
+      <td>76,303</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <td>Empty title/abstract</td>
+      <td>149</td>
+      <td>9,887</td>
+    </tr>
+    <tr>
+      <td>Missing PubMed date</td>
+      <td>1,510</td>
+      <td>1,510</td>
+    </tr>
+    <tr>
+      <td>Duplicate PubMed ID</td>
+      <td>1,344</td>
+      <td>1,328</td>
+    </tr>
+    <tr>
+      <td>No article type</td>
+      <td>109</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total excluded</td>
+      <td>5,545,704</td>
+      <td>12,169,890</td>
+    </tr>
+    <tr>
+      <td>Total included</td>
+      <td>24,873,372</td>
+      <td>18,249,091</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 We examined trends over time by plotting annual averages. The trends were the average number of words in the title and abstract, and the proportion of acronyms in abstracts and titles using word count as the denominator. To examine varied types of acronyms, we split the trends according to acronyms that were letters only compared with those using letters and numbers. We also examined trends according to the length of the acronym. We calculated 95% confidence intervals for the annual means, but in general these were very close to the mean because of the enormous sample size, and hence we do not present them.
 
@@ -88,10 +363,10 @@ We examined the re-use of acronyms after their first use by calculating the numb
 
 All data management and analyses were made using R version 3.6.1 (R Core Team, 2020).
 
-## Data and code availability
+### Data and code availability
 
 The analysis code and data to replicate all parts of the analyses and generate the figures and tables are available from GitHub: https://github.com/agbarnett/acronyms (Barnett, 2020; copy archived at https://github.com/elifesciences-publications/acronyms). We welcome re-use and the repository is licensed under the terms of the MIT license.
 
-## Limitations
+### Limitations
 
 Our algorithm missed a relatively large number of acronyms that included symbols, punctuation and lower case letters. This means our estimates likely underestimate the total number of acronyms. We assumed this error is balanced over time, meaning our trends reflect a real increase in acronym use. We only examined abstracts and titles, not the main text. This is because we used an automated procedure to extract the data, and large numbers of main texts are only available for open access journals and only for recent years, making these data unsuitable for examining broad trends across the scientific literature. We took a broad look at overall trends and did not examine trends within journals or fields. However, our code and data are freely available, and hence other trends and patterns could be examined.

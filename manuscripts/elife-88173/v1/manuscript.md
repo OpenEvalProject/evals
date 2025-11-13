@@ -19,18 +19,18 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 University Division of Anaesthesia, School of Clinical Medicine, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
-4. https://ror.org/041kmwe10 Center for Psychedelic Research, Department of Brain Science, Imperial College London London United Kingdom
-5. https://ror.org/041kmwe10 Center for Complexity Science, Imperial College London London United Kingdom
-6. https://ror.org/041kmwe10 Data Science Institute, Imperial College London London United Kingdom
-7. https://ror.org/055vbxf86 Department of Neurosciences, Cambridge University Hospitals NHS Foundation, Addenbrooke's Hospital Cambridge United Kingdom
-8. https://ror.org/013meh722 Wolfson Brain Imaging Centre, University of Cambridge Cambridge United Kingdom
-9. https://ror.org/055vbxf86 Division of Neurosurgery, School of Clinical Medicine, University of Cambridge, Addenbrooke's Hospital Cambridge United Kingdom
-10. https://ror.org/043mz5j54 Psychedelics Division - Neuroscape, Department of Neurology, University of California San Francisco United States
-11. https://ror.org/02grkyz14 Department of Psychology and Department of Physiology and Pharmacology, The Brain and Mind Institute, University of Western Ontario London Canada
-12. https://ror.org/02tyrky19 Trinity College Institute of Neuroscience, School of Psychology, Lloyd Building, Trinity College Dublin Ireland
+1. Department of Clinical Neurosciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. University Division of Anaesthesia, School of Clinical Medicine, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Center for Psychedelic Research, Department of Brain Science, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+5. Center for Complexity Science, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+6. Data Science Institute, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+7. Department of Neurosciences, Cambridge University Hospitals NHS Foundation, Addenbrooke's Hospital Cambridge United Kingdom ([ROR:055vbxf86](https://ror.org/055vbxf86))
+8. Wolfson Brain Imaging Centre, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+9. Division of Neurosurgery, School of Clinical Medicine, University of Cambridge, Addenbrooke's Hospital Cambridge United Kingdom ([ROR:055vbxf86](https://ror.org/055vbxf86))
+10. Psychedelics Division - Neuroscape, Department of Neurology, University of California San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+11. Department of Psychology and Department of Physiology and Pharmacology, The Brain and Mind Institute, University of Western Ontario London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+12. Trinity College Institute of Neuroscience, School of Psychology, Lloyd Building, Trinity College Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
 
 † Corresponding author
 
@@ -82,7 +82,23 @@ We then subdivided the brain into the well-established resting-state networks id
 
 Intriguingly, our results reveal that gateways reside primarily in the brain’s default mode network (Figure 2B, violet). In contrast, broadcasters are mainly located in the executive control network, especially lateral prefrontal cortex (Figure 2B, orange). Remarkably, the latter results are in line with Global Neuronal Workspace Theory, which consistently identifies lateral prefrontal cortex as a major broadcaster of information (Mashour et al., 2020; Bor and Seth, 2012).
 
-## Information decomposition identifies a synergistic core supporting human consciousness
+![Figure 2.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig2-v1.jpg)
+
+**Figure 2.:** (A) Group-average matrix of synergistic interactions between regions of the 454-ROI augmented Schaefer atlas. (B) Group-average matrix of redundant interactions. For ease of visualization, the colorscale in (B) pertains to log-transformed values. We highlighted modular allegiance to the canonical resting-state networks by using the colour scheme shown in between A and B. (C) Regions are identified as gateways (violet) or broadcasters (orange) based on the difference between rank of participation coefficient for synergy and redundancy, (only shown for brain regions identified as belonging to the synergistic global workspace, as per Luppi et al., 2022b). Violet indicates synergy rank >redundancy rank, corresponding to workspace regions that combine information of many brain modules (gateways); orange indicates the opposite, identifying workspace regions that broadcast information to many modules. Inset: illustration of the synergistic workspace. Legend: DMN, default mode network. Som, somatomotor network. Vis, visual network. VAN, ventral attention network. DAN, dorsal attention network. FPN, fronto-parietal control network. Lim, limbic network. Sub, subcortical network (comprised of 54 regions of the atlas of Tian et al., 2020). These results were also replicated using an alternative parcellation with 232 cortical and subcortical nodes (Figure 2—figure supplement 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Following Luppi et al., 2022b, regions of the synergistic workspace (red) are identified as those regions whose rank, in terms of strength of synergy with the rest of the brain (A), is greater than the corresponding strength rank for redundancy (B).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Group-average matrix of synergistic interactions between regions of the 232-ROI augmented Schaefer atlas. (B) Group-average matrix of redundant interactions in the Schaefer-232 atlas. (C) Regions of the 232-ROI augmented Schaefer atlas are identified as gateways (violet) or broadcasters (orange) based on the difference between rank of participation coefficient for synergy and redundancy, (only shown for brain regions identified as belonging to the synergistic global workspace, as per Luppi et al., 2022b). Violet indicates synergy rank >redundancy rank, corresponding to workspace regions that combine information of many brain modules (gateways); orange indicates the opposite, identifying workspace regions that broadcast information to many modules.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Significance is assessed against a null distribution of 10,000 autocorrelation-preserving maps.
+
+### Information decomposition identifies a synergistic core supporting human consciousness
 
 Having introduced a taxonomy within the synergistic global workspace based on the distinct informational roles of different brain regions, we then sought to investigate their role in supporting human consciousness. Given the importance attributed to integration of information by both GNWT and IIT, we expected to observe reductions in integrated information within the areas of the synergistic workspace associated with loss of consciousness. Furthermore, we also reasoned that any brain regions that are specifically involved in supporting consciousness should ‘track’ the presence of consciousness: the reductions should occur regardless of how loss of consciousness came about, and they should be restored when consciousness is regained.
 
@@ -96,6 +112,18 @@ For each subject, we computed the integrated information between each pair of BO
 
 Analysis based on ΦR revealed a widespread reorganisation of integrated information throughout the brain when comparing awake volunteers against DOC patients, with both increases and decreases being observed (p<0.001; Figure 4A). Likewise, propofol anaesthesia was also characterised by significant changes in integrated information between brain regions, both when compared with pre-anaesthetic wakefulness (p<0.001; Figure 4B) and post-anaesthetic recovery (p<0.001; Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig4-v1.jpg)
+
+**Figure 4.:** Top: Brain regions exhibiting overall NBS-corrected increases (red) and decreases (blue) in integrated information exchange when consciousness is lost. (A) DOC patients minus awake healthy volunteers; (B), propofol anaesthesia minus pre-induction wakefulness; (C) propofol-anaesthesia minus post-anaesthetic recovery. (D) Overlaps between the three contrasts in (A–C), showing increases and decreases that are common across anaesthesia and disorders of consciousness.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Distribution of F-scores for brain connections that are consistently and significantly increased (positive) or decreased (negative) during unconsciousness.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Brain regions exhibiting overall increases (red) and decreases (blue) in integrated information exchange, when comparing patients with disorders of consciousness with awake healthy volunteers, propofol anaesthesia with pre-induction wakefulness, and propofol-anaesthesia with post-anaesthetic recovery. (A) When the original formulation of whole-minus-sum Φ (Balduzzi and Tononi, 2008) is used, no consistent reductions are observed: only increases. (B) Results with revised Φ are robust to the use of an alternative parcellation scheme (Schaefer-200 cortical ROIs plus Tian-32 subcortical ROIs). (C) Results with revised Φ are robust to the use of a more stringent threshold value (F>12). (D) Results with revised Φ are robust to the use of alternative threshold definition (extent vs intensity).
+
 Our analysis identified a number of the ΦR connections that were reduced when consciousness was lost due to both anaesthesia and brain injury, and were restored during post-anaesthetic recovery – as we had hypothesised (Figure 4D). Remarkably, almost all regions showing consistent decreases in ΦR when consciousness was lost were members of the global synergistic workspace, and specifically located in the default mode network (bilateral precuneus and medial prefrontal cortex) – and bilateral inferior parietal cortex – although left temporal cortices were also involved (Figure 4D). Additionally, some connections exhibited increases in ΦR during loss of consciousness, and were restored upon recovery (Figure 4D), including areas in frontal cortex – especially lateral prefrontal cortex. Nevertheless, the overall balance was in favour of reduced integrated information: sum of F-scores associated with significant edges = –25.37 (Figure 4—figure supplement 1).
 
 These results were in contrast with the analysis based on the original formulation of Φ introduced by Balduzzi and Tononi, 2008, which did not identify any reductions in integrated information that were common across anaesthesia and disorders of consciousness, instead only identifying common increases (Figure 4—figure supplement 2).
@@ -106,15 +134,15 @@ Remarkably, our whole-brain results show that ΦR disconnections induced by loss
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88173/elife-88173-fig5-v1.jpg)
 
-**Figure 5.:** (A) Surface representations of medial and lateral views of the brain (L indicates left, R indicates right). Colours indicate brain regions that belong to the synergistic workspace, as identified from HCP data. Orange indicates broadcasters, and violet indicates gateways. Blue indicates regions that exhibit an overall significant reduction in integrated information across anaesthesia and disorders of consciousness. All blue regions overlap with violet ones. The network representation indicates edges with significantly reduced integrated information (ΦR) during both propofol anaesthesia and disorders of consciousness. The color of the nodes (violet or orange) indicates whether the corresponding regions are workspace gateways (violet) or broadcasters (orange); all regions are gateways (violet). (B) Circular graph representation of significant reductions in integrated information (ΦR) between brain regions, observed in all three contrasts, indicating membership of canonical resting-state networks. Connections indicate pairs of regions with a significant decrease of integrated information. Colour of the circle border indicates the RSN affiliation of the corresponding regions. Legend: DMN, default mode network. Som, somatomotor network. Vis, visual network. VAN, ventral attention network. DAN, dorsal attention network. FPN, fronto-parietal control network. Lim, limbic network. Sub, subcortical network (comprised of 54 regions of the Tian et al., 2020 atlas).Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Surface representations of medial and lateral views of the brain (L indicates left, R indicates right). Colours indicate brain regions that belong to the synergistic workspace, as identified from HCP data. Orange indicates broadcasters, and violet indicates gateways. Blue indicates regions that exhibit an overall significant reduction in integrated information across anaesthesia and disorders of consciousness. All blue regions overlap with violet ones. The network representation indicates edges with significantly reduced integrated information (ΦR) during both propofol anaesthesia and disorders of consciousness. The color of the nodes (violet or orange) indicates whether the corresponding regions are workspace gateways (violet) or broadcasters (orange); all regions are gateways (violet). (B) Circular graph representation of significant reductions in integrated information (ΦR) between brain regions, observed in all three contrasts, indicating membership of canonical resting-state networks. Connections indicate pairs of regions with a significant decrease of integrated information. Colour of the circle border indicates the RSN affiliation of the corresponding regions. Legend: DMN, default mode network. Som, somatomotor network. Vis, visual network. VAN, ventral attention network. DAN, dorsal attention network. FPN, fronto-parietal control network. Lim, limbic network. Sub, subcortical network (comprised of 54 regions of the Tian et al., 2020 atlas).
 
-## Robustness and sensitivity analysis
+### Robustness and sensitivity analysis
 
 To ensure the robustness of our results to analytic choices, we also replicated them using an alternative cortical parcellation of lower dimensionality: we used the Schaefer scale-200 cortical parcellation (Schaefer et al., 2018) complemented with the scale-32 subcortical ROIs from the Tian subcortical atlas (Tian et al., 2020Figure 4—figure supplement 2). Additionally, we also show that our results are not dependent on the choice of parameters in the NBS analysis, and are replicated using an alternative threshold definition for the connected component (extent rather than intensity) or a more stringent value for the cluster threshold (F>12; Figure 4—figure supplement 2). Importantly, whereas the increases in ΦR are not the same across different analytic approaches, reductions of ΦR in medial prefrontal and posterior cingulate/precuneus are reliably observed, attesting to their robustness.
 
 ## Discussion
 
-## Architecture of the synergistic global workspace
+### Architecture of the synergistic global workspace
 
 This paper proposes an informational perspective on the brain’s functional architecture at the macroscale, which leverages insights from network science and a refined understanding of neural information exchange. The synergy-Φ-redundancy (SAPHIRE) architecture posits the existence of a ‘synergistic workspace’ of brain regions characterised by highly synergistic global interactions, which we previously showed to be composed by prefrontal and parietal cortices that are critical for higher cognitive functions (Luppi et al., 2022b). This workspace is further functionally decomposed by distinguishing gateways, which bring information from localised modules into the workspace, and broadcasters, which disseminate multiple copies of workspace information back to low-level regions.
 
@@ -126,7 +154,7 @@ On the other hand, the default mode network comprises posterior cingulate and pr
 
 It is worth noting that the role of the FPN-DMN tandem in supporting consciousness has been suggested by Shanahan’s hypothesis of a ‘connective core’ along the brain’s medial axis (Shanahan, 2010). While Shanahan’s hypotheses were primarily based on structure, in this work we combine novel information-theoretic tools to confirm and expand the connective core hypothesis from a functional, information-centric perspective, in a way that differentiates the multiple roles played by the different regions that together comprise this connective core (Figures 2 and 5).
 
-## Integrated information decomposition of human consciousness
+### Integrated information decomposition of human consciousness
 
 After identifying the neuroanatomical-functional mapping of the synergistic workspace in terms of gateways and broadcasters, we sought to identify their role in supporting human consciousness. Considering integrated information as a marker of consciousness (without necessarily assuming the two to be identical), we focused on identifying regions where information integration is reduced when consciousness is lost (regardless of its cause, be it propofol anaesthesia or severe brain injury), and restored upon its recovery. Our results indicate that brain regions exhibiting consciousness-specific reductions in integrated information coincide with major nodes of the synergistic global workspace.
 
@@ -136,7 +164,7 @@ This notion is further supported by focusing on reductions of integrated informa
 
 These results testify to the power of the Integrated Information Decomposition framework: by identifying the information-theoretic components of integrated information, we have been able to obtain insights about human consciousness that remained elusive with alternative formulations, and could not be captured via standard functional connectivity or related methods. Thus, our findings are consistent with the notion that the global workspace is relevant for supporting consciousness in the human brain, in line with the proposal that ‘[...] unconsciousness is not necessarily a complete suppression of information processing but rather a network dysfunction that could create inhospitable conditions for global information exchange and broadcasting’ (Mashour et al., 2020). GNWT postulates a key role for the global workspace in supporting consciousness: consistent with this theory, we find that several nodes of the synergistic global workspace become disconnected from each other in terms of integrated information when consciousness is lost, especially between anterior and posterior regions (Figure 4, brain networks). Thus, these are brain regions that (i) belong to the synergistic global workspace; (ii) exhibit overall reductions of integrated information when consciousness is lost; and (iii) are disconnected from other regions of the synergistic workspace when consciousness is lost. The brain regions satisfying these three conditions therefore meet the criteria for constituting an interconnected ‘synergistic core’ of workspace regions supporting human consciousness.
 
-## Limitations and future directions
+### Limitations and future directions
 
 In order to obtain high spatial resolution for our identification of workspace regions, here we relied on the BOLD signal from functional MRI, which is an indirect proxy of underlying neuronal activity, with limited temporal resolution. However, we sought to alleviate potential confounds by deconvolving the hemodynamic response function from our data with a dedicated toolbox (Wu et al., 2013; Materials and methods), which has been previously applied both in the context of information decomposition (Luppi et al., 2022b), as well as anaesthetic-induced loss of consciousness (Wu et al., 2019), and disorders of consciousness (Luppi et al., 2023a). Additionally, the present results of an overall ΦR reduction are also broadly in line with those of a previous study (Faes et al., 2022), whose measure of synergy-redundancy balance showed, in ECoG recordings of non-human primates, a broadband shift away from synergy during anaesthesia.
 
@@ -156,19 +184,78 @@ Additionally, the reliance here on ‘resting-state’ data without external sti
 
 Looking forward, growing evidence indicates an important role for brain dynamics and time-resolved brain states in supporting cognition (Shine et al., 2019; Deco et al., 2021a; Shine et al., 2016; Zamani Esfahlani et al., 2020; Faskowitz et al., 2020; Lurie et al., 2020; Cabral et al., 2023; Raut et al., 2021; Vidaurre et al., 2017; Atasoy et al., 2018) and consciousness (Luppi et al., 2019; Huang et al., 2020; Demertzi et al., 2019; Gutierrez-Barragan et al., 2022; Luppi et al., 2021a; Luppi et al., 2021b; Lord et al., 2019; Barttfeld et al., 2015; Uhrig et al., 2018; Stevner et al., 2019). Therefore, time-resolved extensions of our framework, such as developed by Varley, 2023, may shed further light on the dynamics of the synergistic workspace, especially if combined with neuroimaging modalities offering higher temporal resolution, such as magneto- or electroencephalography. More broadly, a key strength of our proposed cognitive architecture is its generality: being entirely grounded in the combination of information theory and network science, it could be applied to shed light on cognition in humans and other organisms (Bayne et al., 2020), but also to inspire further development of artificial cognitive systems (Luppi et al., 2024a; Connor and Shanahan, 2007; Shanahan, 2006; Langdon et al., 2022; VanRullen and Kanai, 2021; Proca et al., 2024).
 
-## Conclusion
+### Conclusion
 
 Overall, we have shown that powerful insights about human consciousness and neurocognitive architecture can be obtained through the information-resolved approach, afforded by the framework of Integrated Information Decomposition. Importantly, the proposed criteria to identify gateways, broadcasters, and the synergistic workspace itself, are based on practical network and information-theoretic tools, which are applicable to a broad range of neuroimaging datasets and neuroscientific questions. These findings bring us closer to a unified theoretical understanding of consciousness and its neuronal underpinnings - how mind arises from matter.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Java Information Dynamics Toolbox</td>
+      <td>Lizier, 2014</td>
+      <td>https://github.com/jlizier/jidt</td>
+      <td>v1.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CONN toolbox</td>
+      <td>Whitfield-Gabrieli and Nieto-Castanon, 2012</td>
+      <td>http://www.nitrc.org/projects/conn</td>
+      <td>version 17 f</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Brain Connectivity Toolbox</td>
+      <td>Rubinov and Sporns, 2010</td>
+      <td>https://sites.google.com/site/bctnet/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HRF deconvolution toolbox</td>
+      <td>Wu et al., 2013</td>
+      <td>https://www.nitrc.org/projects/rshrf</td>
+      <td>v2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spin-test</td>
+      <td>Alexander-Bloch et al., 2018</td>
+      <td>https://github.com/frantisekvasa/rotate_parcellation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrated Information Decomposition code</td>
+      <td>Luppi et al., 2024a</td>
+      <td>https://github.com/Imperial-MIND-lab/integrated-info-decomp</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The propofol and DOC patient functional data employed in this study have been published before (Luppi et al., 2019; Varley et al., 2020b; Luppi et al., 2023c; Luppi et al., 2022a; Naci et al., 2018; Kandeepan et al., 2020; Varley et al., 2020a). For clarity and consistency of reporting, where applicable we use the same wording as our previous work (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a).
 
-## Anaesthesia data: Recruitment
+### Anaesthesia data: Recruitment
 
 The propofol data were collected between May and November 2014 at the Robarts Research Institute in London, Ontario (Canada); (Luppi et al., 2019). The study received ethical approval from the Health Sciences Research Ethics Board and Psychology Research Ethics Board of Western University (Ontario, Canada). Healthy volunteers (n=19) were recruited (18–40 years; 13 males). Volunteers were right-handed, native English speakers, and had no history of neurological disorders. In accordance with relevant ethical guidelines, each volunteer provided written informed consent, and received monetary compensation for their time. Due to equipment malfunction or physiological impediments to anaesthesia in the scanner, data from n=3 participants (1 male) were excluded from analyses, leaving a total n=16 for analysis (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a).
 
-## Anaesthesia data: Procedure
+### Anaesthesia data: Procedure
 
 Resting-state fMRI data were acquired at different propofol levels: no sedation (Awake), and Deep anaesthesia (corresponding to Ramsay score of 5). As previously reported (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a), for each condition fMRI acquisition began after two anaesthesiologists and one anaesthesia nurse independently assessed Ramsay level in the scanning room. The anaesthesiologists and the anaesthesia nurse could not be blinded to experimental condition, since part of their role involved determining the participants' level of anaesthesia. Note that the Ramsay score is designed for critical care patients, and therefore participants did not receive a score during the Awake condition before propofol administration: rather, they were required to be fully awake, alert and communicating appropriately. To provide a further, independent evaluation of participants’ level of responsiveness, they were asked to perform two tasks: a test of verbal memory recall, and a computer-based auditory target-detection task. Wakefulness was also monitored using an infrared camera placed inside the scanner.
 
@@ -176,25 +263,25 @@ Propofol was administered intravenously using an AS50 auto syringe infusion pump
 
 At Ramsay 5 level, participants remained capable of spontaneous cardiovascular function and ventilation. However, the sedation procedure did not take place in a hospital setting; therefore, intubation during scanning could not be used to ensure airway security during scanning. Consequently, although two anaesthesiologists closely monitored each participant, scanner time was minimised to ensure return to normal breathing following deep sedation. No state changes or movement were noted during the deep sedation scanning for any of the participants included in the study (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a). Propofol was discontinued following the deep anaesthesia scan, and participants reached level 2 of the Ramsey scale approximately 11 min afterwards, as indicated by clear and rapid responses to verbal commands. This corresponds to the ‘recovery’ period (Naci et al., 2018).
 
-## Anaesthesia data: Design
+### Anaesthesia data: Design
 
 As previously reported (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a), once in the scanner participants were instructed to relax with closed eyes, without falling asleep. Resting-state functional MRI in the absence of any tasks was acquired for 8 min for each participant, in each condition. A further scan was also acquired during auditory presentation of a plot-driven story through headphones (5 min long). Participants were instructed to listen while keeping their eyes closed. The present analysis focuses on the resting-state data only; the story scan data have been published separately, and will not be discussed further here.
 
-## Anaesthesia data: FMRI data acquisition
+### Anaesthesia data: FMRI data acquisition
 
 As previously reported (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a), MRI scanning was performed using a 3-Tesla Siemens Tim Trio scanner (32-channel coil), and 256 functional volumes (echo-planar images, EPI) were collected from each participant, with the following parameters: slices = 33, with 25% inter-slice gap; resolution = 3 mm isotropic; TR = 2000ms; TE = 30ms; flip angle = 75 degrees; matrix size = 64×64. The order of acquisition was interleaved, bottom-up. Anatomical scanning was also performed, acquiring a high-resolution T1- weighted volume (32-channel coil, 1 mm isotropic voxel size) with a 3D MPRAGE sequence, using the following parameters: TA = 5 min, TE = 4.25ms, 240x256 matrix size, 9 degrees flip angle (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a).
 
-## Disorders of consciousness patient data: Recruitment
+### Disorders of consciousness patient data: Recruitment
 
 A total of 71 DOC patients were recruited from specialised long-term care centres from January 2010 to December 2015 (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a). Ethical approval for this study was provided by the National Research Ethics Service (National Health Service, UK; LREC reference 99/391). Patients were eligible to be recruited in the study if they had a diagnosis of chronic disorder of consciousness, provided that written informed consent to participation was provided by their legal representative, and provided that the patients could be transported to Addenbrooke’s Hospital (Cambridge, UK). The exclusion criteria included any medical condition that made it unsafe for the patient to participate, according to clinical personnel blinded to the specific aims of the study; or any reason that made a patient unsuitable to enter the MRI scanner environment (e.g. non-MRI-safe implants). Patients were also excluded based on substantial pre-existing mental health problems, or insufficient fluency in the English language prior to their injury. After admission to Addenbrooke’s Hospital, each patient underwent clinical and neuroimaging testing, spending a total of five days in the hospital (including arrival and departure days). Neuroimaging scanning took place at the Wolfson Brain Imaging Centre (Addenbrooke’s Hospital, Cambridge, UK), and medication prescribed to each patient was maintained during scanning.
 
 For each day of admission, Coma Recovery Scale-Revised (CRS-R) assessments were recorded at least daily. Patients whose behavioural responses were not indicative of awareness at any time, were classified as UWS. In contrast, patients were classified as being in a minimally conscious state (MCS) if they provided behavioural evidence of simple automatic motor reactions (e.g. scratching, pulling the bed sheet), visual fixation and pursuit, or localisation to noxious stimulation. Since this study focused on whole-brain properties, coverage of most of the brain was required, and we followed the same criteria as in our previous studies (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a); before analysis took place, patients were systematically excluded if an expert neuroanatomist blinded to diagnosis judged that they displayed excessive focal brain damage (over one third of one hemisphere), or if brain damage led to suboptimal segmentation and normalisation, or due to excessive head motion in the MRI scanner (exceeding 3 mm translation or 3 degrees rotation). Of the initial sample of 71 patients who had been recruited, a total of 22 adults (14 males; 17–70 years; mean time post injury: 13 months) meeting diagnostic criteria for Unresponsive Wakefulness Syndrome/Vegetative State or Minimally Conscious State due to brain injury were included in this study. In addition to the researcher and radiographer, a research nurse was also present during scanning. Since the patients' status as DOC patients was evident, no researcher blinding was possible.
 
-## Disorders of consciousness patient data: FMRI data acquisition
+### Disorders of consciousness patient data: FMRI data acquisition
 
 As previously reported (Luppi et al., 2019; Luppi et al., 2023c; Luppi et al., 2022a), resting-state fMRI was acquired for 10 min (300 volumes, TR = 2000ms) using a Siemens Trio 3T scanner (Erlangen, Germany). Functional images (32 slices) were acquired using an echo planar sequence, with the following parameters: 3x3 x 3.75mm resolution, TR = 2000ms, TE = 30ms, 78 degrees FA. Anatomical scanning was also performed, acquiring high-resolution T1-weighted images with an MPRAGE sequence, using the following parameters: TR = 2300ms, TE = 2.47ms, 150 slices, resolution 1x1x1mm.
 
-## Functional MRI preprocessing and denoising
+### Functional MRI preprocessing and denoising
 
 The functional imaging data were preprocessed using a standard pipeline, implemented within the SPM12-based (http://www.fil.ion.ucl.ac.uk/spm) toolbox CONN (http://www.nitrc.org/projects/conn), version 17 f (Whitfield-Gabrieli and Nieto-Castanon, 2012). The pipeline comprised the following steps: removal of the first five scans, to allow magnetisation to reach steady state; functional realignment and motion correction; slice-timing correction to account for differences in time of acquisition between slices; identification of outlier scans for subsequent regression by means of the quality assurance/artifact rejection software art (http://www.nitrc.org/projects/artifact_detect); structure-function coregistration using each volunteer’s high-resolution T1-weighted image; spatial normalisation to Montreal Neurological Institute (MNI-152) standard space with 2 mm isotropic resampling resolution, using the segmented grey matter image, together with an a priori grey matter template.
 
@@ -204,25 +291,33 @@ The step of global signal regression (GSR) has received substantial attention in
 
 Due to the presence of deformations caused by brain injury, rather than relying on automated pipelines, DOC patients’ brains were individually preprocessed using SPM12, with visual inspections after each step. Additionally, to further reduce potential movement artefacts, data underwent despiking with a hyperbolic tangent squashing function, also implemented from the CONN toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). The remaining preprocessing and denoising steps were the same as described above.
 
-## Brain parcellation
+### Brain parcellation
 
 Brains were parcellated into 454 cortical and subcortical regions of interest (ROIs). The 400 cortical ROIs were obtained from the scale-400 version of the recent Schaefer local-global functional parcellation (Schaefer et al., 2018). Since this parcellation only includes cortical regions, it was augmented with 54 subcortical ROIs from the highest resolution of the recent Tian parcellation (Tian et al., 2020). We refer to this 454-ROI parcellation as the ‘augmented Schaefer’ (Luppi and Stamatakis, 2021). To ensure the robustness of our results to the choice of atlas, we also replicated them using an alternative cortical parcellation of different dimensionality: we used the Schaefer scale-200 cortical parcellation, complemented with the scale-32 subcortical ROIs from the Tian subcortical atlas (Luppi and Stamatakis, 2021). The timecourses of denoised BOLD signals were averaged between all voxels belonging to a given atlas-derived ROI, using the CONN toolbox. The resulting region-specific timecourses of each subject were then extracted for further analysis in MATLAB.
 
-## HRF deconvolution
+### HRF deconvolution
 
 In accordance with our previous work (Luppi et al., 2022b; Luppi et al., 2023a) and previous studies using of information-theoretic measures in the context of functional MRI data, we used a dedicated toolbox (Wu et al., 2013) to deconvolve the hemodynamic response function from our regional BOLD signal timeseries prior to analysis.
 
-## Measuring integrated information
+### Measuring integrated information
 
 The framework of integrated information decomposition (ΦID) unifies integrated information theory (IIT) and partial information decomposition (PID) to decompose information flow into interpretable, disjoint parts. In this section we provide a brief description of ΦID and formulae required to compute the results. For further details, see Mediano et al., 2021; Luppi et al., 2022b.
 
-## Partial information decomposition
+### Partial information decomposition
 
-We begin with Shannon’s Mutual information (MI), which quantifies the interdependence between two random variables X and Y. It is calculated as,(1)I(X;Y)=H(X)−H(X|Y)=H(X)+H(Y)−H(X,Y)
+We begin with Shannon’s Mutual information (MI), which quantifies the interdependence between two random variables X and Y. It is calculated as,
+
+$$
+I(X;Y)=H(X)−H(X|Y)=H(X)+H(Y)−H(X,Y)
+$$
 
 where H(X) stands for the Shannon entropy of a variable X. Above, the first equality states that the mutual information is equal to the reduction in entropy (i.e. uncertainty) about X after Y is known. Put simply, the mutual information quantifies the information that one variable provides about another (Cover and Thomas, 2005).
 
-Crucially, Williams and Beer, 2010 observed that the information that two source variables X and Y give about a third target variable Z, I(X,Y; Z), should be decomposable in terms of different types of information: information provided by one source but not the other (unique information), by both sources separately (redundant information), or jointly by their combination (synergistic information). Following this intuition, they developed the Partial Information Decomposition (PID; Williams and Beer, 2010) framework, which leads to the following fundamental decomposition:(2)I(X,Y;Z)=Red(X,Y;Z)+Un(X;Z∖Y)+Un(Y;Z∖X)+Syn(X,Y;Z)
+Crucially, Williams and Beer, 2010 observed that the information that two source variables X and Y give about a third target variable Z, I(X,Y; Z), should be decomposable in terms of different types of information: information provided by one source but not the other (unique information), by both sources separately (redundant information), or jointly by their combination (synergistic information). Following this intuition, they developed the Partial Information Decomposition (PID; Williams and Beer, 2010) framework, which leads to the following fundamental decomposition:
+
+$$
+I(X,Y;Z)=Red(X,Y;Z)+Un(X;Z∖Y)+Un(Y;Z∖X)+Syn(X,Y;Z)
+$$
 
 Above, Un corresponds to the unique information that one source provides but the other doesn’t, Red is the redundancy between both sources, and Syn is their synergy: information that neither X nor Y alone can provide, but that can be obtained by considering X and Y together.
 
@@ -232,39 +327,65 @@ As another example for the case of Gaussian variables (as employed here), consid
 
 Recently, Mediano et al., 2021 formulated an extension of PID able to decompose the information that multiple source variables have about multiple target variables. This makes PID applicable to the dynamical systems setting, and yields a decomposition with redundant, unique, and synergistic components in the past and future that can be used as a principled method to analyse information flow in neural activity (Figure 3).
 
-## Synergy and redundancy calculation
+### Synergy and redundancy calculation
 
 While there is ongoing research on the advantages of different information decompositions for discrete data, most decompositions converge into the same simple form for the case of continuous Gaussian variables (Barrett, 2015). Known as minimum mutual information PID (MMI-PID), this decomposition quantifies redundancy in terms of the minimum mutual information of each individual source with the target; synergy, then, becomes identified with the additional information provided by the weaker source once the stronger source is known. Since linear-Gaussian models are sufficiently good descriptors of functional MRI timeseries and more complex, non-linear models offer no advantage (Schulz et al., 2020; Nozari et al., 2024), here we adopt the MMI-PID decomposition, following our own and others’ previous applications of PID to neuroscientific data (Luppi et al., 2022b).
 
-In a dynamical system such as the brain, one can calculate the amount of information flowing from the system’s past to its future, known as time-delayed mutual information (TDMI). Specifically, by denoting the past of variables as Xt-τ and Yt-τ and treating them as sources, and their joint future state (Xt, Yt), as target, one can apply the PID framework and decompose the information flowing from past to future as(3)I(Xt−τ,Yt−τ;Xt,Yt)=Red(Xt−τ,Yt−τ;Xt,Yt)+Un(Xt−τ;Xt,Yt|Yt−τ)+Un(Yt−τ;Xt,Yt∖Xt−τ)+Syn(Xt−τ,Yt−τ;Xt,Yt)
+In a dynamical system such as the brain, one can calculate the amount of information flowing from the system’s past to its future, known as time-delayed mutual information (TDMI). Specifically, by denoting the past of variables as Xt-τ and Yt-τ and treating them as sources, and their joint future state (Xt, Yt), as target, one can apply the PID framework and decompose the information flowing from past to future as
 
-Applying ΦID to this quantity allows us to distinguish between redundant, unique, and synergistic information shared with respect to the future variables Xt, Yt (Mediano et al., 2021; Luppi et al., 2022b). Importantly, this framework, has identified Syn(Xt−τ,Yt−τ;Xt,Yt) with the capacity of the system to exhibit emergent behaviour (Mediano et al., 2022) as well as a stronger notion of redundancy, in which information is shared by X and Y in both past and future. Accordingly, using the MMI-ΦID decomposition for Gaussian variables, we use(4)Red(X,Y)=min{I(Xt−τ;Xt),I(Xt−τ;Yt),I(Yt−τ;Xt),I(Yt−τ;Yt)}(5)syn(X,Y)=I(Xt−τ,Yt−τ;Xt,Yt)−max{I(Xt−τ;Xt,Yt),I(Yt−τ;Xt,Yt)}
+$$
+I(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})=Red(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})+Un(X_{t−\tau};X_{t},Y_{t}|Y_{t−\tau})+Un(Y_{t−\tau};X_{t},Y_{t}∖X_{t−\tau})+Syn(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})
+$$
+
+Applying ΦID to this quantity allows us to distinguish between redundant, unique, and synergistic information shared with respect to the future variables Xt, Yt (Mediano et al., 2021; Luppi et al., 2022b). Importantly, this framework, has identified $Syn(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})$ with the capacity of the system to exhibit emergent behaviour (Mediano et al., 2022) as well as a stronger notion of redundancy, in which information is shared by X and Y in both past and future. Accordingly, using the MMI-ΦID decomposition for Gaussian variables, we use
+
+$$
+Red(X,Y)=min{I(X_{t−\tau};X_{t}),I(X_{t−\tau};Y_{t}),I(Y_{t−\tau};X_{t}),I(Y_{t−\tau};Y_{t})}
+$$
+
+
+
+$$
+syn(X,Y)=I(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})−max{I(X_{t−\tau};X_{t},Y_{t}),I(Y_{t−\tau};X_{t},Y_{t})}
+$$
 
 Here, we used the Gaussian solver implemented in the JIDT toolbox (Lizier, 2014) to obtain TDMI, synergy and redundancy between each pair of brain regions, based on their HRF-deconvolved BOLD signal timeseries (Mediano et al., 2021; Luppi et al., 2022b).
 
-## Revised measure of integrated information from Integrated Information Decomposition
+### Revised measure of integrated information from Integrated Information Decomposition
 
-Through the framework of Integrated Information Decomposition, we can decompose the constituent elements of Φ, the formal measure of integrated information proposed by Integrated Information Theory to quantify consciousness (Balduzzi and Tononi, 2008). Note that several variants of Φ have been proposed over the years, including the original formulation of Tononi, 2004, other formulations based on causal perturbation (Oizumi et al., 2014; Albantakis, 2022) and others (see Mediano et al., 2018; Tegmark, 2016 for comparative reviews). Here, we focus on the ‘empirical Φ’ measure of Seth and Barrett (Barrett and Seth, 2011), based on the measures by Balduzzi and Tononi, 2008 and adapted to applications to experimental data. It is computed as(6)Φ=I(Xt−τ,Yt−τ;Xt,Yt)−I(Xt−τ;Xt)−I(Yt−τ;Yt)
+Through the framework of Integrated Information Decomposition, we can decompose the constituent elements of Φ, the formal measure of integrated information proposed by Integrated Information Theory to quantify consciousness (Balduzzi and Tononi, 2008). Note that several variants of Φ have been proposed over the years, including the original formulation of Tononi, 2004, other formulations based on causal perturbation (Oizumi et al., 2014; Albantakis, 2022) and others (see Mediano et al., 2018; Tegmark, 2016 for comparative reviews). Here, we focus on the ‘empirical Φ’ measure of Seth and Barrett (Barrett and Seth, 2011), based on the measures by Balduzzi and Tononi, 2008 and adapted to applications to experimental data. It is computed as
+
+$$
+Φ=I(X_{t−\tau},Y_{t−\tau};X_{t},Y_{t})−I(X_{t−\tau};X_{t})−I(Y_{t−\tau};Y_{t})
+$$
 
 and it quantifies how much temporal information is contained in the system over and above the information in its past. This measure is easy to compute (compared with other Φ measures) (Oizumi et al., 2016) and represents a noteworthy attempt to formalise the powerful intuitions underlying IIT. However, once the original formulation from Balduzzi and Tononi is rendered suitable for practical empirical application (Barrett and Seth, 2011; Barrett and Mediano, 2019) the resulting mathematical formulation has known shortcomings, including the fact that it can yield negative values in some cases – which are hard to interpret and seemingly paradoxical, as it does not seem plausible for a system to be ‘negatively integrated’ or an organism to have negative consciousness (Barrett and Seth, 2011; Barrett and Mediano, 2019).
 
 Interestingly, with ΦID it can be formally demonstrated (Mediano et al., 2021) that Φ is composed of different information atoms: it contains all the synergistic information in the system, the unique information transferred from X to Y and vice versa, and, importantly, the subtraction of redundancy – which explains why Φ can be negative in redundancy-dominated systems.
 
-To address this fundamental shortcoming, Mediano et al., 2021 introduced a revised measure of integrated information, ΦR, which consists of the original Φ with the redundancy added back in:(7)ΦR=Φ+Red(X,Y)
+To address this fundamental shortcoming, Mediano et al., 2021 introduced a revised measure of integrated information, ΦR, which consists of the original Φ with the redundancy added back in:
+
+$$
+Φ_{R}=Φ+Red(X,Y)
+$$
 
 where Red(X, Y) is defined in Equation (4). This measure is computationally tractable and preserves the original intuition of integrated information as measuring the extent to which ‘the whole is greater than the sum of its parts’, since it captures only synergistic and transferred information. Crucially, thanks to Integrated Information Decomposition, it can be proved that the improved formulation of integrated information that we adopt here is guaranteed to be non-negative (Mediano et al., 2021) – thereby avoiding a major conceptual limitation of the original formulation of Φ.
 
 Note that the formula for ΦWMS above stems from what is known as IIT 2.0, but TDMI is by no means the only way of quantifying the dynamical structure of a system: indeed, subsequent developments in IIT 3.0 used alternative metrics with a more explicit focus on causal interpretations (Oizumi et al., 2014), which were in turn replaced in the latest iteration known as IIT 4.0 (Albantakis, 2022; Barbosa et al., 2021). We do not consider the alternative measure of integrated information proposed in IIT 3.0 because it is computationally intractable for systems bigger than a small set of logic gates, and it is not universally well-defined (Barrett and Mediano, 2019).
 
-## Gradient of redundancy-to-synergy relative importance to identify the synergistic workspace
+### Gradient of redundancy-to-synergy relative importance to identify the synergistic workspace
 
 After building networks of synergistic and redundant interactions between each pair of regions of interest (ROIs), we determined the role of each ROI in terms of its relative engagement in synergistic or redundant interactions. Following the procedure previously described (Luppi et al., 2022b), we first calculated the nodal strength of each brain region as the sum of all its interactions in the group-averaged matrix (Figure 2—figure supplement 1). Then, we ranked all 454 regions based on their nodal strength (with higher strength regions having higher ranks). This procedure was done separately for networks of synergy and redundancy. Subtracting each region’s redundancy rank from its synergy rank yielded a gradient from negative (i.e. ranking higher in terms of redundancy than synergy) to positive (i.e. having a synergy rank higher than the corresponding redundancy rank; note that the sign is arbitrary).
 
 It is important to note that the gradient is based on relative – rather than absolute – differences between regional synergy and redundancy; consequently, a positive rank difference does not necessarily mean that the region’s synergy is greater than its redundancy; rather, it indicates that the balance between its synergy and redundancy relative to the rest of the brain is in favour of synergy – and vice versa for a negative gradient.
 
-## Subdivision of workspace nodes into gateways and broadcasters
+### Subdivision of workspace nodes into gateways and broadcasters
 
-To identify which regions within the workspace play the role of gateways or broadcasters postulated in our proposed architecture, we followed a procedure analogous to the one adopted to identify the gradient of redundancy-synergy relative importance, but replacing the node strength with the node participation coefficient. The participation coefficient Pi quantifies the degree of connection that a node entertains with nodes belonging to other modules: the more of a node’s connections are towards other modules, the higher its participation coefficient will be (Rubinov and Sporns, 2010; Rubinov and Sporns, 2011). Conversely, the participation coefficient of a node will be zero if its connections are all with nodes belonging to its own module.(8)Pi=1−∑s=1M(κiski)2
+To identify which regions within the workspace play the role of gateways or broadcasters postulated in our proposed architecture, we followed a procedure analogous to the one adopted to identify the gradient of redundancy-synergy relative importance, but replacing the node strength with the node participation coefficient. The participation coefficient Pi quantifies the degree of connection that a node entertains with nodes belonging to other modules: the more of a node’s connections are towards other modules, the higher its participation coefficient will be (Rubinov and Sporns, 2010; Rubinov and Sporns, 2011). Conversely, the participation coefficient of a node will be zero if its connections are all with nodes belonging to its own module.
+
+$$
+P_{i}=1−\sums=1M(\frac{κ_{is}}{k_{i}})^{2}
+$$
 
 Here, κis is the strength of positive connections between node i and other nodes in module s, ki is the strength of all its positive connections, and M is the number of modules in the network. The participation coefficient ranges between zero (no connections with other modules) and one (equal connections to all other modules; Rubinov and Sporns, 2010; Rubinov and Sporns, 2011).
 
@@ -274,20 +395,20 @@ Separately for connectivity matrices of synergy and redundancy, the participatio
 
 This procedure yielded a gradient over workspace regions, from negative (i.e. having a more highly ranked participation coefficient based on redundancy than synergy) to positive (i.e. having a more highly ranked participation coefficient based on synergy than redundancy). Note that as before, the sign of this gradient is arbitrary, and it is based on relative rather than absolute difference. Workspace regions with a positive gradient value were classified as ‘gateways’, since they have synergistic interactions with many brain modules. In contrast, workspace regions with a negative value of the gradient – that is those whose redundancy rank is higher than their synergy rank, in terms of participation coefficient – were labelled as workspace ‘broadcasters’, since they possess information that is duplicated across multiple modules in the brain.
 
-## Statistical Analysis
+### Statistical Analysis
 
-## Network-based statistic
+#### Network-based statistic
 
 The network-based statistic approach (Zalesky et al., 2010) was used to investigate the statistical significance of propofol-induced or DOC-induced alterations. This nonparametric statistical method is designed to control the family-wise error due to multiple comparisons, for application to graph data. Connected components of the graph are identified from edges that survive an a-priori statistical threshold (F-contrast; here we set the threshold to an F-value of 9, two-sided, with an alpha level of 0.05). In turn, the statistical significance of such connected components is estimated by comparing their topology against a null distribution of the size of connected components obtained from non-parametric permutation testing. This approach rejects the null hypothesis on a component-by-component level, and therefore achieves superior power compared to mass-univariate approaches (Zalesky et al., 2010).
 
-## Testing for shared effects across datasets
+#### Testing for shared effects across datasets
 
 We sought to detect changes that are common across datasets, to rule out possible propofol- or DOC-specific effects that are not related to consciousness per se (Luppi et al., 2019). To this end, we employed a null hypothesis significance test under the composite null hypothesis that at least one dataset among those considered here has no effect. In other words, for the null hypothesis to be rejected we demand that all comparisons exhibit non-zero effects. As usual, the test proceeds by comparing an observed test statistic with a null distribution. The test statistic is the minimum of the three F-scores obtained in the comparisons of interest (DOC vs awake; anaesthesia vs awake; and anaesthesia vs recovery), and the null distribution is sampled by randomly reshuffling exactly one dataset (picked at random) at a time and recalculating the F-scores. By shuffling exactly one dataset (instead of all of them), we are comparing the observed data against the ‘least altered’ version of the data that is still compatible with the null hypothesis. This is a type of least favourable configuration test (Lehmann and Romano, 2005), which is guaranteed to control the false positive rate below a set threshold (here, 0.05). The details of this test will be described in a future publication. Common changes across the three states of consciousness were then identified as edges (defined in terms of ΦR) that were either (i) increased in DOC compared with control; (ii) increased during anaesthesia compared with wakefulness; and (iii) increased during anaesthesia compared with post-anaesthetic recovery; or (i) decreased in DOC compared with control; (ii) decreased during anaesthesia compared with wakefulness; and (iii) decreased during anaesthesia compared with post-anaesthetic recovery.
 
-## Spatial autocorrelation-preserving null model for correlation
+#### Spatial autocorrelation-preserving null model for correlation
 
 The significance of correlation between nodes’ participation coefficient based on different definitions of modules (a-priori as resting-state networks or in a data-driven fashion from Louvain community detection) was assessed using a spatial permutation test which generates a null distribution of 10,000 randomly rotated brain maps with preserved spatial covariance (‘spin test’), to ensure robustness to the potential confounding effects of spatial autocorrelation (Markello and Misic, 2021; Váša and Mišić, 2022; Alexander-Bloch et al., 2018).
 
-## Code availability
+### Code availability
 
 The Java Information Dynamics Toolbox v1.5 is freely available online: (https://github.com/jlizier/jidt; Lizier et al., 2018). The CONN toolbox version 17 f is freely available online (http://www.nitrc.org/projects/conn). The Brain Connectivity Toolbox code used for graph-theoretical analyses is freely available online (https://sites.google.com/site/bctnet/). The HRF deconvolution toolbox v2.2 is freely available online: (https://www.nitrc.org/projects/rshrf). The code for spin-based permutation testing of cortical correlations is freely available at https://github.com/frantisekvasa/rotate_parcellation (Váša, 2023). We have made freely available MATLAB/Octave and Python code to compute measures of Integrated Information Decomposition of timeseries with the Gaussian MMI solver, at https://github.com/Imperial-MIND-lab/integrated-info-decomp (Liu and Luppi, 2023).

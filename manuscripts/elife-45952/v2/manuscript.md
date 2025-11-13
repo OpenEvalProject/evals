@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45952.001 The fitness effects of synonymous mutations, nucleotide changes that do not alter the encoded amino acid, have often been assumed to be neutral, but a growing body of evidence suggests otherwise. We used site-directed mutagenesis coupled with direct measures of competitive fitness to estimate the distribution of fitness effects among synonymous mutations for a gene under directional selection and capable of adapting via synonymous nucleotide changes. Synonymous mutations had highly variable fitness effects, both deleterious and beneficial, resembling those of nonsynonymous mutations in the same gene. This variation in fitness was underlain by changes in transcription linked to the creation of internal promoter sites. A positive correlation between fitness and the presence of synonymous substitutions across a phylogeny of related Pseudomonads suggests these mutations may be common in nature. Taken together, our results provide the most compelling evidence to date that synonymous mutations with non-neutral fitness effects may in fact be commonplace.
+The fitness effects of synonymous mutations, nucleotide changes that do not alter the encoded amino acid, have often been assumed to be neutral, but a growing body of evidence suggests otherwise. We used site-directed mutagenesis coupled with direct measures of competitive fitness to estimate the distribution of fitness effects among synonymous mutations for a gene under directional selection and capable of adapting via synonymous nucleotide changes. Synonymous mutations had highly variable fitness effects, both deleterious and beneficial, resembling those of nonsynonymous mutations in the same gene. This variation in fitness was underlain by changes in transcription linked to the creation of internal promoter sites. A positive correlation between fitness and the presence of synonymous substitutions across a phylogeny of related Pseudomonads suggests these mutations may be common in nature. Taken together, our results provide the most compelling evidence to date that synonymous mutations with non-neutral fitness effects may in fact be commonplace.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ As a first step towards understanding the evolutionary effects of synonymous mut
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig1-v2.jpg)
 
-**Figure 1.:** gtsB point mutations in low glucose media.(A) Counts of nonsynonymous (blue; n = 71) and synonymous (red; n = 39) mutations display a wide range of fitness effects, with ticks under the bars indicating the relative fitness values of nonsense mutations. Dashed and dotted lines show the mean relative fitness of the wild type (WT) competed against the marked competitor. (B) The DFE of beneficial-effect mutations (proportions; pooled synonymous and nonsynonymous samples, n = 55) is fit by a κ value of −0.35, which corresponds to the Weibull domain of attraction of the Generalised Pareto Distribution. On this normalised histogram (total area = 1), relative fitness values are shifted to the smallest observed value and expressed as selection coefficients. See Figure 1—source data 1.10.7554/eLife.45952.003Figure 1—source data 1.The experimental fitness data found in this file were also used to create Figure 4.10.7554/eLife.45952.015Figure 1—source code 1.
+**Figure 1.:** (A) Counts of nonsynonymous (blue; n = 71) and synonymous (red; n = 39) mutations display a wide range of fitness effects, with ticks under the bars indicating the relative fitness values of nonsense mutations. Dashed and dotted lines show the mean relative fitness of the wild type (WT) competed against the marked competitor. (B) The DFE of beneficial-effect mutations (proportions; pooled synonymous and nonsynonymous samples, n = 55) is fit by a κ value of −0.35, which corresponds to the Weibull domain of attraction of the Generalised Pareto Distribution. On this normalised histogram (total area = 1), relative fitness values are shifted to the smallest observed value and expressed as selection coefficients. See Figure 1—source data 1.
 
 Remarkably, the DFEs for beneficial nonsynonymous and synonymous mutations are indistinguishable (bootstrapped K-S test, p=0.59), suggesting that both kinds of mutation could contribute to adaptation. The combined DFE for both kinds of beneficial mutations is approximately L-shaped, with many mutations of small effect and a few of large effect (Figure 1B), as expected from theory (Gillespie, 1984; Orr, 2003; Martin and Lenormand, 2008). More formally, the DFE among beneficial mutations is significantly different from an exponential distribution (likelihood ratio test, p=0.0077) and falls within the Weibull domain of the Generalised Pareto Distribution (K = −0.37), suggesting the existence of a local fitness optimum similar to what has been seen previously for nonsynonymous mutations (Rokyta et al., 2008; Schoustra et al., 2009).
 
@@ -41,9 +41,23 @@ It has also been suggested that synonymous mutations could impact fitness throug
 
 The absence of any relationship between synonymous mutation fitness and codon usage bias or mRNA stability, both measures affecting translation, suggests that fitness effects stem from changes in transcription. Testing this hypothesis requires comparing estimates of transcript and protein abundance, the difference being a measure of the effect of translation. We evaluated mRNA and GtsB protein levels by proxy via the insertion of a yellow fluorescent protein (YFP) bioreporter into the WT or mutant gtsB background just before or just after the stop codon. The former construct (a translational fusion) produces a single reading frame where gtsB and YFP are translated together; the latter, with YFP inserted after the gtsB stop codon (a transcriptional fusion), results in gtsB and YFP being translated separately (Figure 2A). A mutation upstream of these fusions that leads to increased translation, but not transcription, is expected to generate a higher YFP expression level in the translational fusion compared to the transcriptional fusion. The expression levels of these different constructs relative to the WT are shown in Figure 2A for the two synonymous mutations (A15A, G38G) and a third, independently evolved non-synonymous mutation (A10T) recovered from the original experiment by Bailey et al. (2014). Transcription is elevated in all three mutants relative to the WT but we could not detect any additional effect of translation in the two synonymous mutations, although there is a modest increase in expression associated with translation for the nonsynonymous mutation. These results suggest that these synonymous mutations primarily affect levels of transcription rather than translation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig2-v2.jpg)
+
+**Figure 2.:** (A) The schematic shows the sites of YFP insertion for transcriptional and translational fusions. The plot compares maximum YFP expression (± SEM) from transcriptional and translational YFP fusions at the Tn7 site for the WT (n = 14 replicates) and evolved mutants (n = 7, 7, and six technical replicates, respectively). Significance with respect to transcriptional fusion: ***p<0.001. See Figure 2—source data 1. (B) Linear regression of fluorescent signal of YFP transcriptional fusions as a proxy for transcript levels and relative fitness measures for a subset of synonymous mutations (n = 27). Grey shading indicates the 95% confidence interval for the regression (adjusted R2 = 0.69, p<0.001). See Figure 2—source data 2. (C) Expression of transcriptional YFP fusions inserted across the gts operon of evolved mutants. Maximum fluorescence (± SEM) of the YFP transcriptional fusions at different loci in the gts operon relative to SBW25. See Figure 2—source data 3; YFP fusion positions are depicted in Figure 2—figure supplement 1. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig2-figsupp1-v2.jpg)
+
 Two additional lines of evidence point to changes in transcription levels as the likely proximate cause of variation in fitness among our synonymous mutations. First, there is a strong positive relationship between transcript abundance and relative fitness for 27 synonymous mutations (including the A15A and G38G mutations examined above) (Figure 2B; R2 = 0.691, p=1.46×10−8). Notably, the range of the regression includes mutants with both negative and positive fitness effects, suggesting that the link between transcript abundance and fitness is not limited to beneficial synonymous mutations alone. Second, Figure 2C shows that the increased transcription caused by A15A, G38G, and A10T extends downstream to gtsC (p<5.0×10−5) but not upstream to gtsA, which remains largely unaffected (p>0.60). These synonymous mutations thus have polar effects on transcription that extend beyond the gene in which they occur. Taken together with our previous observation that overexpression of WT gtsB increases fitness only when the rest of the gts operon is also overexpressed (Bailey et al., 2014), these results suggest that co-expression of downstream genes is necessary for increased fitness in this system.
 
 What mechanism accounts for the observed changes in transcription and fitness among the synonymous mutations? Previous work has shown that synonymous mutations can generate beneficial effects by creating novel promoters in regions upstream of a gene under selection (Ando et al., 2014; Kershner et al., 2016). At face value, this mechanism cannot explain our results since we observe a range of fitness effects for synonymous mutations along the entire length of gtsB. However, the existence of polar effects on transcription suggests that some synonymous mutations in gtsB might be playing a similar role by creating internal promoters causing changes in expression of the downstream genes gtsC or gtsD. To evaluate this idea, we used Softberry BPROM online software to search the entire gts operon for internal sigma 70 bacterial promoter sequences in the ancestral sequence and mutant sequences. We find relatively few hits in our collection, perhaps because BPROM searches for promoters using Escherichia coli rather than P. fluorescens consensus sequences; however, among the top five hits is a predicted promoter sequence spanning codons 30–42 that includes G38G and 39–3T, the latter being the synonymous mutation with highest fitness in our collection. Both mutations, and an additional beneficial synonymous mutation at 232–3T, result in predicted −10 promoter sequences that are more closely aligned to the −10 consensus sequence for P. aeruginosa (TATAAT) than the WT. Notably, there is a tendency for promoter strength to vary positively with both transcription and fitness (Figure 3A), although this effect is based on just six mutations and is not significant (permutation of residuals, p=0.17 and 0.11, respectively). These results suggest that fitness changes associated with these synonymous mutations could be caused by the ability of transcription factors to bind to promoter-like sequences in gtsB and alter transcription of downstream genes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bars represent the mean of each variable in units relative to the WT. Experimental relative fitness and transcriptional expression of YFP measures include standard error. See Figure 3—source data 1. (B) Locations of potential transcriptional start sites in the gts operon are represented by vertical arrows. 5’ ends were identified by 5’ RACE analysis of RNA isolated from cultures of the wild type (SBW25) and four gtsB mutants. The location of each gtsB mutation is indicated by a red line, and the nucleotide distance from each 5’ end to the nearest start codon is given. See Figure 3—source data 2; sequence information for the 5’ RACE analysis is found in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The precise nucleotide positions of the 5’ ends are highlighted yellow within the intergenic (pink) and coding sequences of gtsA (green), gtsB (blue), and gtsC (brown). Positions of gtsB mutations (A10T, A15A, G38G, and 232–3T) are in red text and underlined. Predicted promoter sites using Softberry’s BPROM prediction software are highlighted grey.
 
 Further support for this interpretation comes from mapping transcriptional start sites for the gts operon using a 5’ RACE kit for the WT and four additional mutants: G38G and 232–3T (an introduced C → T mutation at the third site of codon 232), the sites identified as being among the top predicted promoters, as well as A10T and A15A which, along with G38G, were recovered from the original experiment in Bailey et al. (2014). The results are summarised in Figure 3B and Figure 3—figure supplement 1. As expected, we found a transcriptional start site mapping 30 base pairs upstream of the gtsA start codon, 25 base pairs downstream of the predicted −10 box. Importantly, and consistent with the hypothesis that mutations in the coding region of gtsB can improve promoter binding for the RNA polymerase complex, we mapped transcription start sites 7 and 15 base pairs downstream of the predicted −10 box of the G38G internal promoter, four base pairs downstream of the A15A mutation, and 21 base pairs downstream of the A10T mutation. These results, taken together with an additional transcriptional start site 70 nucleotides upstream of 232–3T, suggest that synonymous mutations in gtsB may be strengthening weak internal promoters that were not detected by the available online prediction software. Note that the observation of transcriptional start sites at nucleotide positions near the start of gtsB in the WT likely reflects varying degrees of promoter binding strength for the sequences in this region and so is not incompatible with our hypothesis. We also identified transcriptional start sites mapping 19 and 57 base pairs upstream of the gtsB start codon within the intergenic space following gtsA, implying that gtsB may be under independent transcriptional control from gtsA.
 
@@ -51,7 +65,7 @@ How often do these synonymous mutations contribute to adaptation in more natural
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45952/elife-45952-fig4-v2.jpg)
 
-**Figure 4.:** There was a significant logarithmic relationship between the probability of observing a given mutation as a binary variable (present/absent) and relative fitness (p=0.0121).10.7554/eLife.45952.018Figure 4—source code 1.
+**Figure 4.:** There was a significant logarithmic relationship between the probability of observing a given mutation as a binary variable (present/absent) and relative fitness (p=0.0121).
 
 ## Discussion
 
@@ -61,68 +75,243 @@ The cause of the fitness variation among synonymous mutations observed here stem
 
 ## Materials and methods
 
-## Culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Pseudomonas fluorescens)</td>
+      <td>SBW25; wild type</td>
+      <td>PMID: 8564013</td>
+      <td></td>
+      <td>Ancestral strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas fluorescens)</td>
+      <td>SBW25-lacZ</td>
+      <td>PMID: 17669526</td>
+      <td></td>
+      <td>SBW25 with neutral chromosomal lacZ insertion</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α λpir</td>
+      <td>PMID: 11207743</td>
+      <td></td>
+      <td>E. coli cloning strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAH79 (plasmid)</td>
+      <td>PMID: 24912567</td>
+      <td></td>
+      <td>P. fluorescens allelic exchange vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gtsB mutagenesis vector (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pAH79 modified for Golden Gate Assembly of mutant gtsB alleles</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pseudomonas fluorescens)</td>
+      <td>gtsB site-directed mutagenesis library</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Collection of gtsB single nucleotide mutants in SBW25 background</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC18T-mini-Tn7T-Gm (plasmid)</td>
+      <td>PMID: 15908923</td>
+      <td>GenBank: AY599232.2</td>
+      <td>Source of mini-Tn7T-Gm transposon</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC18T-mini-Tn7T-Gm-eYFP (plasmid)</td>
+      <td>PMID: 17406227</td>
+      <td>GenBank: DQ493879.2</td>
+      <td>Source of YFP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pseudomonas fluorescens)</td>
+      <td>Mini-Tn7 gtsB-YFP transcriptional fusions</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transcriptional YFP fusions at SBW25 Tn7 site (see Figure 2A and B)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pseudomonas fluorescens)</td>
+      <td>Mini-Tn7 gtsB-YFP translational fusions</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Translational YFP fusions at SBW25 Tn7 site (see Figure 2A)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Pseudomonas fluorescens)</td>
+      <td>gts operon YFP transcriptional fusions</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transcriptional YFP fusions at sites within gts operon (see Figure 2C and Figure 2C—figure supplement 1)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Culture conditions
 
 E. coli was grown on Luria-Bertani (LB), X-gal sucrose, or tetracycline media. Pseudomonas fluorescens SBW25, which was used as the ancestral strain, was grown on LB or X-gal minimal salts media (48 mM Na2HPO4, 22 mM KH2PO4, 9 mM NaCl, 19 mM NH4Cl, 2 mM MgSO4, 0.1 mM CaCl2) with glucose (53 μM), succinate (80 μM) or mannitol (53 μM) as indicated. Media were supplemented with 5-bromo-4-chloro-3-indolyl-b-D-galactopyranoside (X-gal) at 40 mg/ml. Antibiotics were used at the following concentrations: 100 μg/ml nitrofurantoin (Nf), 100 μg/ml ampicillin (Ap), 10 μg/ml tetracycline (Tc).
 
-## Molecular cloning
+### Molecular cloning
 
 Polymerase chain reactions (PCR) were performed with Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific) using custom oligonucleotide primers (Invitrogen) and SBW25 genomic templates (Promega Wizard DNA Extraction Kit). PCR products were purified with the Wizard SV Gel and PCR Cleanup System (Promega). Plasmid DNA was isolated from E. coli cultures using the QIAprep Spin Miniprep Kit (Qiagen). Restriction endonucleases and T4 DNA ligase were purchased from New England Biolabs.
 
 Golden Gate assembly reactions (Engler et al., 2008) contained approximately equimolar amounts (~20–40 fmol) of destination vector and purified PCR products, 1 μl of 10X T4 ligase buffer, 0.5 μl (200 units) of T4 ligase, and 0.5 μl (10 units) of BsaI enzyme in 10 μl reactions, with incubation for 2 hr at 37°C, 5 min at 50°C, and 5 min at 80°C. Traditional restriction enzyme cloning was performed according to standard protocols, with separate digestion of vector and insert DNA (2 hr at 37°C) followed by spin column purification and overnight ligation at 16°C. Ligation reactions were transformed into chemically-competent E. coli DH5α λpir by the Inoue method (Sambrook et al., 1989).
 
-## Construction of gtsB mutagenesis vector
+### Construction of gtsB mutagenesis vector
 
 The P. fluorescens allelic exchange vector pAH79 (Bailey et al., 2014) was modified for rapid generation of mutant gtsB alleles by Golden Gate assembly (GGA) of polymerase chain reaction (PCR) amplicons. A three-part ligation between a digested pAH79 derivative (BglII and SpeI), lacZα amplicon (BglII and MfeI), and SBW25 amplicon spanning 114 to 865 bp downstream of the gtsB stop codon (MfeI and XbaI) yielded the final gtsB mutagenesis vector. The vector includes two BsaI cloning sites compatible for Golden Gate assembly of PCR products amplified with primers F2-gtsB-F and R3-gtsB-R (Table 1) in combination with mutagenic primers (Tables S1 and S2 in Supplementary file 1).
 
-## Site-directed mutagenesis of gtsB
+**Table 1.**
+ Oligonucleotides used in this study.Restriction enzyme recognition sequences are capitalised. BsaI overhangs are underlined. Introduced mutations are in bolded capital letters. Additional oligonucleotides used for site-directed mutagenesis are listed in Tables S1 and S2 of Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence (5’ to 3’)</th>
+      <th>Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F2-pUC19-BsaI</td>
+      <td>gcgAGATCTgtcgtGAGACCggtgatgacggtgaaaacct</td>
+      <td>gtsB mutagenesis vector construction</td>
+    </tr>
+    <tr>
+      <td>R3-pUC19-MfeI-SpeI</td>
+      <td>actgcgACTAGTCAATTGattaatgcagctggcacgac</td>
+      <td>gtsB mutagenesis vector construction</td>
+    </tr>
+    <tr>
+      <td>F-800Right</td>
+      <td>actgcgCAATTGagaccccggaagacatcag</td>
+      <td>gtsB mutagenesis vector construction</td>
+    </tr>
+    <tr>
+      <td>R-800Right</td>
+      <td>actgcgTCTAGAcattgcgaagttcaagcgta</td>
+      <td>gtsB mutagenesis vector construction</td>
+    </tr>
+    <tr>
+      <td>F2-gtsB-F</td>
+      <td>actgcgGGTCTCagtcgaaaagtcgcgacctacatgg</td>
+      <td>Conserved gtsB forward primer</td>
+    </tr>
+    <tr>
+      <td>R3-gtsB-R</td>
+      <td>actgcgGGTCTCctgccggaCaccacggtcggccagctc</td>
+      <td>Conserved gtsB reverse primer</td>
+    </tr>
+    <tr>
+      <td>4845-M13F</td>
+      <td>GTAAAACGACGGCCAGTTCCGACAGGCTGTAGTCCTT</td>
+      <td>gtsB sequencing primer</td>
+    </tr>
+    <tr>
+      <td>R2-M13R-gtsB</td>
+      <td>GGAAACAGCTATGACCATGTGGTCCTCAGCTCGGAATA</td>
+      <td>gtsB sequencing primer</td>
+    </tr>
+    <tr>
+      <td>SP1</td>
+      <td>ACCACACCGAACAGGAAGTC</td>
+      <td>5’ RACE cDNA synthesis</td>
+    </tr>
+    <tr>
+      <td>B-SP2</td>
+      <td>ACTGCGTCTAGAGACCAAGGTGATACCGATAAACA</td>
+      <td>5’ RACE gtsB amplification</td>
+    </tr>
+    <tr>
+      <td>B-SP3</td>
+      <td>ACTGCGTCTAGACGAACAAGGCCAGGTTTTT</td>
+      <td>5’ RACE gtsB amplification</td>
+    </tr>
+    <tr>
+      <td>A-SP2</td>
+      <td>ACTGCGTCTAGATTTCTTGTCGAGCAGGGAGT</td>
+      <td>5’ RACE gtsA amplification</td>
+    </tr>
+    <tr>
+      <td>A-SP3</td>
+      <td>ACTGCGTCTAGATTCTTCTTTGGCGACGTCTT</td>
+      <td>5’ RACE gtsA amplification</td>
+    </tr>
+  </tbody>
+</table>
+
+### Site-directed mutagenesis of gtsB
 
 Site-directed mutagenesis of gtsB (PFLU4845) was accomplished by cloning gtsB alleles with a single mutation into the mutagenesis vector described above, generating an E. coli library, followed by allelic replacements in SBW25. Primers (Supplementary file 1) were designed to introduce mutations at 112 sites spanning the gtsB gene, at every tenth codon along the gene and saturating the sites neighbouring three previously identified beneficial mutations. Sequences from 715 base pairs upstream to 173 base pairs downstream of gtsB were amplified as two PCR fragments, one of which contained a threefold degenerate polymorphism introduced by a mutagenic primer. BsaI recognition sequences were included in each primer to enable seamless ligation between the PCR products and mutagenesis vectors using GGA (Engler et al., 2008). Cloning reactions were transformed into E. coli DH5α λpir with selection on ampicillin.
 
 Transformations yielded libraries of E. coli strains for introduction of mutations into SBW25. Recombination of each mutant gtsB allele into the chromosome was selected for in two steps: selection for TcR followed by selection for sucrose resistance as previously described (Bailey et al., 2014). We used an SBW25 recipient strain in which the native gtsB was replaced by lacZ, allowing us to use blue-white screening on LB 5% sucrose X-gal agar to identity recombinants in which lacZ was replaced by the vector-encoded mutant gtsB. The sucrose-resistant white colonies were used as PCR templates for amplification of the gtsB locus using an M13F-tagged primer (Table 1), for sequencing by the McGill University and Genome Quebec Innovation Centre.
 
-## DNA extraction and whole genome sequencing
+### DNA extraction and whole genome sequencing
 
 Strains were grown in LB liquid media overnight; genomic DNA was extracted using the QIAGEN DNeasy Blood and Tissue Kit. Sequence data were generated on the Illumina MiSeq platform with paired-end reads using the Nextera XT kit. Reads generated were approximately 300 bp in length.
 
-## Reference-based mapping and variant calling
+### Reference-based mapping and variant calling
 
 The genome of P. fluorescens SBW25 is publicly available from NCBI (PRJEA31229). A modified version of the bioinformatics pipeline described in Dettman et al. (2012) was used to analyse the reads. Briefly, reads were trimmed using Popoolation (ver. 1.2.2; Kofler et al., 2011) with a Phred quality threshold of 20 and a minimum retention length of 75% of original read length. Trimmed reads were then mapped to the SBW25 reference genome using Novoalign (ver. 3.02.08, www.novocraft.com). Single nucleotide polymorphisms and indels were annotated using Samtools (ver. 1.9; Li et al., 2009), BCFtools (ver. 1.9), VarScan (ver. 2.3.7; Koboldt et al., 2012), and snpEff (ver. 4.0; Cingolani et al., 2012). Read and alignment quality were assessed using FastQC (ver. 0.11.7 www.bioinformatics.babraham.ac.uk/projects/fastqc/). Sequence data are available from the NCBI Short Read Archive under BioProject PRJNA515918: Pseudomonas fluorescens SBW25 gtsB mutants.
 
-## Competitions
+### Competitions
 
 Competitions were performed as outlined in Lenski et al. (1991) on four to six replicates (genetically identical clones) of 110 mutant strains. This method encompasses all growth phases of bacterial culture, including lag and exponential growth. These replicates provide a measure of the variability inherent in our experimental procedure, and are thus considered technical replicates. All strains, including SBW25-lacZ, were removed from storage at −80°C and grown overnight at 28°C on LB agar. Single colonies were inoculated into 2 mL LB broth for overnight incubation at 28°C under shaking conditions. Each mutant strain was transferred into minimal glucose media for a 24 hr acclimation period at 28°C, then mixed in a 1:1 volumetric ratio with SBW25-lacZ and inoculated into 2 mL of minimal media with glucose. Initial and final aliquots from mixed cultures were frozen in 20% glycerol after 1 and 24 hr’ growth and plated on minimal agar with glucose. Only plates containing 30 or more colonies of each strain were included. Relative fitness was calculated using w = (ffinal/finitial)^(1/doublings), where ffinal and finitial are ratios of the frequency of mutant to the frequency of SBW25-lacZ strain after and before the competition. The number of doublings was estimated from the dilution factor and corresponded to ~6.7 or 13.2 generations depending on the dilution factor. The effect of the lacZ marker was tested by competing SBW25-lacZ against the WT with each batch of competitions. The mean relative fitness of SBW25-lacZ was 1.005 ± 0.0007 SEM.
 
-## Estimating codon preference and mRNA stability
+### Estimating codon preference and mRNA stability
 
 In order to estimate the change in codon bias attributable to each synonymous mutation, we compared the CAI value of the mutant to the WT using SBW25 ribosomal protein genes as a reference (Sharp and Li, 1987). The ‘cai’ function in the ‘seqinr’ package in R (Charif and Lobry, 2007) was used to calculate change in CAI at each site. tAI values were calculated by inputting tRNA gene copy number, a proxy for tRNA expression (Tuller et al., 2010), in the stAIcalc interface (Sabi et al., 2017). As per previous work (Kudla et al., 2009), we predicted the most likely folding energy of 42-nucleotide windows centred on each mutation using the ‘mfold’ server (Zuker, 2003).
 
-## Comparison and characterisation of DFEs
+### Comparison and characterisation of DFEs
 
 All statistical analyses were conducted in R Studio (version 1.0.136; www.rstudio.com). Six nonsense mutations were omitted from our analysis, since they likely do not result in a complete protein. We compared synonymous and nonsynonymous DFEs for all mutations and for the subset of beneficial mutations by bootstrapping the Kolmogorov-Smirnov (K-S) statistic. We found no significant difference between K-S values for nonsynonymous and synonymous beneficial mutations, so we pooled the data to infer the properties of the tail distribution following the method outlined in Beisel et al. (2007). Relative fitness values were transformed to selection coefficients by subtracting 1; we shifted the threshold to the smallest observed selection coefficient, as suggested by Beisel et al. (2007). Using the ‘GenSA’ package in R, we estimated the optimal value of the scale parameter 𝜏, which characterises the stretch of the distribution, with κ (the tail parameter) set to 0, corresponding to an exponential distribution; in the alternative model, optimal 𝜏 and κ values were calculated without restricting κ. A likelihood ratio test was used to determine whether the model with the unconstrained κ value was a better fit than the exponential distribution.
 
-## Statistical analysis
+### Statistical analysis
 
 Permutation of residuals was used as per Still and White (1981) to test for significant relationships between explanatory variables and fitness. We tested for significant differences in YFP expression between mutant and WT alleles using a two-tailed T-test assuming equal variance. Threshold for significance was α = 0.05.
 
-## Transcriptional and translational fusion of YFP at Tn7 site
+### Transcriptional and translational fusion of YFP at Tn7 site
 
 Transcriptional and translational fusion constructs were generated using GGA (Engler et al., 2008) and the use of site-specific mini-Tn7 transposon and yellow fluorescent protein (YFP) sequences (Choi et al., 2005; Choi and Schweizer, 2006). A 2.6 kb PCR product was amplified from genomic template DNA containing the target locus, and included the 346 bp promoter region of gtsA, the open reading frame of gtsA and the open reading frame of gtsB. This PCR product and the downstream YFP fusion PCR product were seamlessly ligated together into a derivative of the Tn7 vector pUC18T-mini-Tn7T-Gm through GGA.
 
 The YFP transcriptional fusion after gtsB required additional modifications due to the eight nucleotide overlap between the stop codon of gtsB and start codon of gtsC. To preserve the gtsB sequence and predicted gtsC ribosomal binding site, the start codon of the YFP transcriptional fusion was inserted in-frame after the first four codons gtsC. Translational YFP fusions had a 6-glycine ((GGC)6) linker sequence (Chen et al., 2013) between the second-last codon (302) of gtsB and the second codon of YFP, which removed both the stop codon of gtsB and start codon of YFP to create a single peptide. The 3’ UTR of both the transcriptional and translational YFP fusions includes an intrinsic transcriptional terminator. Tn7 vectors were transformed into E. coli DH5α λpir following the Inoue method, then incorporated into SBW25 and verified as described in Bailey et al. (2014).
 
-## YFP transcriptional fusions at the native gts operon
+### YFP transcriptional fusions at the native gts operon
 
 YFP transcriptional fusions across the gts operon were constructed using an allelic replacement strategy similar to the site-directed mutagenesis method described above. YFP sequences were PCR amplified from a YFP storage vector, and sequences upstream and downstream of the desired YFP insertion locus were amplified from SBW25 template DNA as two PCR products ranging from 400 to 900 base pairs in length. Upstream PCR products included predicted native ribosomal binding sites to enable YFP translation. Forward and reverse primers for all PCR products were engineered with BsaI recognition sites to allow for 4-part seamless ligation by GGA (Engler et al., 2008) of the YFP PCR product and upstream and downstream flanking PCR products to an GGA allelic replacement vector derived from pAH79 (Bailey et al., 2014). YFP fusions were transformed into E. coli DH5α λpir and recombined into P. fluorescens SBW25 by two-step allelic replacement as previously described (Bailey et al., 2014). Fusion junctions and gtsB mutations were confirmed through diagnostic PCR and Sanger sequencing.
 
-## Glucose induction assays
+### Glucose induction assays
 
 Cultures were inoculated from individual colonies (biological replicate) and grown shaking at 28°C in 200 μL minimal (M9) media supplemented with 25.6 mM of succinate as the sole carbon source. After 24 hr of growth, 20 µL of culture was transferred to 180 µL of minimal (M9) media supplemented with 212 μM glucose in a transparent 96 well plate. The 96 well plate was incubated for 10 hr static at 28°C in a Tecan Infinite M200 Pro fluorescent plate reader where optical density (OD) and fluorescence measurements were taken every 10 min. OD was measure by absorbance at 595 nm wavelength and fluorescence was measured with 500 nm excitation and 535 nm emission wavelengths. The maximum fluorescence was calculated as the maximum YFP signal (~7 hr), subtracted by the background fluorescence of unmarked SBW25 and then standardised by dividing by the blank corrected OD. Maximum fluorescence values were then divided by the ancestral SBW25 values to determine relative effect sizes.
 
-## RNA isolation and identification of transcriptional start sites
+### RNA isolation and identification of transcriptional start sites
 
 Isolated colonies were cultured in 1.7 mL of M9 media supplemented with 25.6 mM succinate and incubated overnight at 28°C shaking. Vials with 7.2 mL of M9 media supplemented with 212 μM glucose were inoculated with 800 μL of culture and incubated at 28°C shaking. OD600 was measured every 15 min and cells were harvested at mid-log phase (2 hr) by centrifugation at 6770 x g for 10 min at 4°C. Pellets were resuspended in 500 μL M9 media and treated with RNAprotect Bacteria Reagent (Qiagen). RNA was isolated using RNeasy Mini Kit (Qiagen) with additional DNase treatment with RNase-free DNase Set (Qiagen). RNA concentration was quantified using NanoDrop 2000 Spectrophotometer (Thermo Scientific). cDNA synthesis, cDNA purification and poly(A) tailing were completed using 5’/3’ Random Amplification of cDNA ends (RACE) kit, 2nd generation (Roche) and Wizard SV Gel and PCR Clean-Up System (Promega). First strand gts operon cDNA was generated using primer SP1 and cDNA was amplified using Phusion High-Fidelity DNA Polymerase (Thermo Fisher Scientific). First and second rounds of amplification of dA-tailed cDNA used primers B-SP2 and B-SP3 for gtsB an A-SP2 and A-SP3 for gtsA respectively (see Table 1 for primer sequences). 2nd round amplification products were run on 2% agarose gel and expected bands (150–400 base pairs) were excised and purified using Qiaquick Gel Extraction Kit (Qiagen). DNA fragments were digested with SalI-HF and XbaI and cloned into a pUC19 vector using T4 DNA Ligase (NEB). Inserted DNA fragments were sequenced using Sanger sequencing to identify possible transcriptional start sites in gtsA and gtsB. Sequences were aligned to the gts operon using CodonCode Aligner.
 
-## Phylogeny construction
+### Phylogeny construction
 
 A phylogeny was constructed using full DNA sequences of rpoB, rpoD, and gyrB for 77 closely related Pseudomonas strains obtained from NCBI, as per Gomila et al. (2015). The concatenated sequences were aligned using NCBI’s BLAST. MEGA7 (Kumar et al., 2016) was used to build the tree based on the aligned concatenated sequences using maximum likelihood to generate a bootstrapped consensus tree (n = 500). For each site in the gtsB alignment, maximum parsimony was used to estimate the ancestral state at all internal nodes in the phylogeny with the function ‘ancestral.pars’ from the phangorn package in R (Schliep, 2011). As our phylogeny had polytomies, the ancestral states were estimated for 100 randomly resolved bifurcating phylogenies and the frequency of the inferred ancestral state at each internal node was calculated. For each site in gtsB, the number of evolutionary events was calculated by comparing the inferred state at the beginning and end of each branch and counting the number of transitions. A binary model was fit expressing whether mutations of interest were observed in the phylogeny.

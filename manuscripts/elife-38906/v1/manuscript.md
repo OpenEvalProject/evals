@@ -15,13 +15,37 @@
 
 ## Abstract
 
-10.7554/eLife.38906.001 Apart from glucose, fatty acid-derived ketone bodies provide metabolic energy for the brain during fasting and neonatal development. We investigated the evolution of HMGCS2 , the key enzyme required for ketone body biosynthesis (ketogenesis). Unexpectedly, we found that three mammalian lineages, comprising cetaceans (dolphins and whales), elephants and mastodons, and Old World fruit bats have lost this gene. Remarkably, many of these species have exceptionally large brains and signs of intelligent behavior. While fruit bats are sensitive to starvation, cetaceans and elephants can still withstand periods of fasting. This suggests that alternative strategies to fuel large brains during fasting evolved repeatedly and reveals flexibility in mammalian energy metabolism. Furthermore, we show that HMGCS2 loss preceded brain size expansion in toothed whales and elephants. Thus, while ketogenesis was likely important for brain size expansion in modern humans, ketogenesis is not a universal precondition for the evolution of large mammalian brains.
+Apart from glucose, fatty acid-derived ketone bodies provide metabolic energy for the brain during fasting and neonatal development. We investigated the evolution of HMGCS2, the key enzyme required for ketone body biosynthesis (ketogenesis). Unexpectedly, we found that three mammalian lineages, comprising cetaceans (dolphins and whales), elephants and mastodons, and Old World fruit bats have lost this gene. Remarkably, many of these species have exceptionally large brains and signs of intelligent behavior. While fruit bats are sensitive to starvation, cetaceans and elephants can still withstand periods of fasting. This suggests that alternative strategies to fuel large brains during fasting evolved repeatedly and reveals flexibility in mammalian energy metabolism. Furthermore, we show that HMGCS2 loss preceded brain size expansion in toothed whales and elephants. Thus, while ketogenesis was likely important for brain size expansion in modern humans, ketogenesis is not a universal precondition for the evolution of large mammalian brains.
 
 ## Introduction
 
 Periods of fasting are a common event for many animals (Secor and Carey, 2016). Fasting occurs due to natural food scarcity or as part of the life history strategy, for example during hibernation or migration. During fasting, the organism relies on stored sources of energy such as glucose in the form of glycogen and fatty acids (Secor and Carey, 2016). In addition, ketone bodies become an alternative fuel source that is important for many mammals to survive episodes of fasting or starvation (Baird et al., 1972; Bouchat et al., 1981; Sicart et al., 1978). For example, ketone bodies are used as an energy source in hibernating ground squirrels or elephant seal pups during their post-weaning fasting period (Krilowicz, 1985; Castellini and Costa, 1990). Notably, while the brain cannot metabolize fatty acids, ketone bodies can cross the blood-brain barrier and provide fuel under conditions of low blood glucose levels. For example, after starving for 3 days, the human brain takes 25% of its energy from ketone bodies and if fasting continues, ketone bodies replace glucose as the predominant fuel for brain metabolism (Owen et al., 1967; Hasselbalch et al., 1994). During the neonatal period, the developing human brain has high energy requirements and also relies on ketone bodies as a major fuel (Cunnane and Crawford, 2003; Cahill, 2006). Given their importance in fueling large, energetically expensive brains, it has been posited that ketone bodies do not only have an important role during fasting, but have also been crucial for brain expansion during human evolution (Cunnane and Crawford, 2003; Wang et al., 2014).
 
 Ketone bodies comprise acetoacetate, acetone, and d-β-hydroxybutyrate (Figure 1A) and are mainly produced in the liver by ketogenesis. This metabolic process occurs in the mitochondria and uses fatty acid-derived acetyl-CoA to generate the water-soluble, acidic ketone bodies, which are secreted into the blood. The rate limiting step of ketogenesis is the production of 3-hydroxy-3-methylglutaryl-CoA (HMG-CoA) by HMG-CoA synthase (Hegardt, 1999). Mammals possess two HMG-CoA synthases that originated by gene duplication. While the cytosolic enzyme, encoded by HMGCS1, is broadly expressed and is necessary to produce cholesterol (Hegardt, 1999), the mitochondrial HMG-CoA synthase, encoded by HMGCS2, is primarily expressed in the liver and is only used for ketone body production. HMGCS2 is required for ketogenesis, as mutations in the human gene and mouse gene-knockdown experiments abolish or greatly reduce ketogenesis (Bouchard et al., 2001; Ramos et al., 2013; Thompson et al., 1997; Wolf et al., 2003; Pitt et al., 2015; Cotter et al., 2014). HMG-CoA synthase-2 deficiency in human can lead to coma after fasting for more than 22 hours due to low glucose levels (Thompson et al., 1997; Morris et al., 1998). Human individuals with HMGCS2 mutations therefore require regular carbohydrate intake but show no other symptoms, suggesting that this deficiency is probably underdiagnosed.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-v1.jpg)
+
+**Figure 1.:** (A) Biosynthesis of ketone bodies (blue font). With the exception of the mitochondrial HMG-CoA synthase (HMGCS2, red font), the other two enzymes required for acetoacetate production also have roles in amino acid metabolism and are thus pleiotropic. BDH1 is only required for converting acetoacetate into d-β-hydroxybutyrate. (B) Recurrent loss of HMGCS2 in three independent lineages (red font). All species in black font have an intact HMGCS2 reading frame. Boxes are coding exons proportional to their size, introns are shown as horizontal lines. Red boxes are exon deletions. In-frame stop codon, frameshifting insertion/deletion and splice site-disrupting mutations are indicated. With the exception of the heterozygous 1 bp deletion in the black flying fox that has a read support of ~50:50 for the derived and ancestral allele and reveals two distinct haplotypes (inset), all shown mutations are supported by at least 30 reads with no support for the ancestral allele (Supplementary file 1). Insets exemplify the validation of inactivating mutations by showing the local genomic context and four reads.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The figure shows the 2.5 kb genomic region around HMGCS2 exon 1 in the UCSC human (hg38 assembly) genome browser (Casper et al., 2018). The 1 kb region upstream of the transcription start site, highlighted in blue background, is deleted in the sperm whale and also lost in fruit bats and elephant, as shown by the co-linear pairwise alignment chains (blocks are aligning regions, a single line represents the shared deletion, double lines represent regions that do not align between the human and the query genome).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Screenshot of the human UCSC genome browser shows the locus of the NOTCH2, ADAM30, REG4, HMGCS2 and PHGDH genes. Co-linear pairwise alignment chains to the African savanna elephant (loxAfr3 assembly) and the manatee (presumably its closest sister species [Poulakakis and Stamatakis, 2010]) show that several rearrangements, including probably two nested inversions, happened in this locus. Importantly, while NOTCH2, ADAM30 and PHGDH align to both species, the elephant exhibits a large deletion that includes REG4 and most of HMGCS2 (yellow background, see Figure 1B). Alignment chains to the African savanna elephant loxAfr4 assembly are virtually identical and confirm the partial HMGCS2 deletion. The grey elephant chain (arrow) that only aligns exons but not introns of HMGCS2 is the elephant HMGCS1 gene. As described in the main text, searching unassembled reads of 2 individuals of the African savanna elephant (whose genome has been sequenced) and read data of the African forest elephant, the Asian elephant and the mastodon did not reveal any evidence for the presence of the deleted HMGCS2 exons or the REG4 gene, suggesting that this genomic region was already deleted in ancestor of elephants and mastodons.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The figure shows exon one in the UCSC human (hg38 assembly) genome browser. This exon is deleted in all cetaceans (yellow background) and has the same breakpoints, as shown by the co-linear pairwise alignment chains (blocks are aligning regions, a single line represents the shared deletion). This region was subsequently removed by another large deletion in the sperm whale lineage. The phylogenetic relationships of the four species are indicated on the left side.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Screenshot of the human UCSC genome browser shows the HMGCS2 locus with its flanking genes and co-linear pairwise alignment chains to three pteropodid bats. Chains that align the paralog HMGCS1 or a processed HMGCS1 pseudogene in flying foxes are labeled. Please note that we show in this figure the transcript ENST00000369406, which includes an alternative exon three that is skipped in the transcript shown in Figure 1B (ENST00000544913). Yellow background highlights the deletion of exon 1, a separate deletion that removed exon 2 (shown in detail in the inset in Figure 1B) and a deletion that removed four consecutive exons downstream. At least the second deletion exhibits shared breakpoints between both flying foxes, showing that loss of HMGCS2 already occurred in the ancestor of both species. The phylogenetic relationships of the three species are indicated on the left side. (B) To validate the deletion of HMGCS2 in the Egyptian fruit bat, we used an independent PacBio assembly. The locus around the neighboring PHGDH and REG4 gene is covered by several large PacBio reads. Blastx results only reveal the presence of PHGDH and REG4 but no evidence of HMGCS2. Consistent with HMGCS2 deletion, the PHGDH and REG4 are separated by ~ 50 kb in human but only ~ 6 kb in the Egyptian fruit bat.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** BDH1 converts the ketone body acetoacetate into the ketone body d-β-hydroxybutyrate (Figure 1A). BDH1 is a non-essential gene as a knockout in mouse results in the absence of d-β-hydroxybutyrate and a compensating increase in acetoacetate without major problems (Otsuka et al., 2017). Furthermore, Bdh1 knockout mice survive a 48 hr fast. We found that pteropodids and cetaceans but not the elephant exhibit several gene-inactivating mutations in this gene (visualization as in Figure 1B). RELAX analysis shows that BDH1 also evolved under relaxed selection in pteropodids and cetaceans (Supplementary file 2). In addition, we found that this gene has several inactivating mutations and a large deletion in the shrew. Importantly, ACAT1, HMGCS2 and HMGCL are intact in the shrew, suggesting that acetoacetate and acetone are the primary ketone bodies in this species. None of the other analyzed placental mammals had inactivating mutations in BDH1.
 
 Here we investigated the evolution of HMGCS2 in mammals. Unexpectedly, we identified three independent losses of this gene in cetaceans (dolphins and whales), pteropodids (Old World fruit-eating bats) and Elephantimorpha (elephants and mastodons). Remarkably, these species have relatively large brains, suggesting that, unlike in humans, ketone bodies are not strictly required for fueling complex brains. Furthermore, we show that in the cetacean and Elephantimorpha clades HMGCS2 was lost before brain size expansion happened, suggesting that the lack of ketogenesis did not prohibit the evolution of large brains in these lineages. While strong conservation of HMGCS2 in other mammals indicates that ketogenesis is a crucial metabolic process, the recurrent loss of this gene highlights an unexpected flexibility in mammalian energy metabolism.
 
@@ -47,7 +71,7 @@ The observation that HMGCS2 is well-conserved in the majority of mammals is cons
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38906/elife-38906-fig2-v1.jpg)
 
-**Figure 2.:** HMGCS2 loss and brain size evolution.(A) In pteropodids, molecular dating estimates that the loss of HMGCS2 happened 29–18 Mya and thus may overlap the split of the flying foxes and the Egyptian fruit bat. It is not possible to resolve whether gene loss happened before or after the split as HMGCS2 is completely deleted in the Egyptian fruit bat. While horseshoe bats and other insectivorous bat lineages have brains not larger than expected for their body size (encephalization quotient (EQ) <1), brain size has increased in the lineage leading to the fruit bats that have EQ values > 1 (Stephan et al., 1981). Thus, brain size expansion presumably predates the loss of ketogenesis. (B) HMGCS2 was already lost in the cetacean ancestor before the split of toothed and baleen whales ~ 36 Mya, as inferred from shared inactivating mutations in exons 1, 2 and 8. Molecular dating further estimates that the loss of this gene happened early on the cetacean branch 50–47 Mya. The cetacean ancestor had a brain slightly larger than expected for its body size with an EQ of 1.4. While EQ values increased and decreased in several cetacean lineages, brain size has greatly expanded in dolphins, reaching an EQ of 3.7 (Montgomery et al., 2013). Thus, brain size expansion in dolphins occurred after the loss of ketogenesis. (C) Early proboscids such as Moeritherium, an extinct lineage that split from other proboscids ~ 43 Mya, had brains about 20% of the size expected for a mammal of the same body size, and thus an EQ of 0.2 (Shoshani et al., 2006). Exact EQ values of Palaeomastodons are not known; however, fossils have a small braincase, which indicates a low EQ (Sanders et al., 2010; Benoit, 2015). In contrast, mastodons that diverged from elephants ~ 27 Mya had brains about twice as large as expected from their body size (EQ 2.2), similar to extant elephants (Shoshani et al., 2006). This suggests that brain size expansion happened in a period between 37 and 27 Mya. Molecular dating indicates that HMGCS2 loss happened between 45 and 42 Mya, suggesting that the loss of ketogenesis precedes brain size expansion in the elephant lineage. Divergence times of extinct proboscid lineages were taken from (Shoshani and Tassy, 2013) and (Rohland et al., 2007). Supporting Information.10.7554/eLife.38906.010Figure 2—source data 1.This file contains the HMGCS2 sequence alignment (fasta format) including the sequences of the African forest elephant, the Asian elephant and the American mastodon. This alignment was used to date the loss of HMGCS2.
+**Figure 2.:** (A) In pteropodids, molecular dating estimates that the loss of HMGCS2 happened 29–18 Mya and thus may overlap the split of the flying foxes and the Egyptian fruit bat. It is not possible to resolve whether gene loss happened before or after the split as HMGCS2 is completely deleted in the Egyptian fruit bat. While horseshoe bats and other insectivorous bat lineages have brains not larger than expected for their body size (encephalization quotient (EQ) <1), brain size has increased in the lineage leading to the fruit bats that have EQ values > 1 (Stephan et al., 1981). Thus, brain size expansion presumably predates the loss of ketogenesis. (B) HMGCS2 was already lost in the cetacean ancestor before the split of toothed and baleen whales ~ 36 Mya, as inferred from shared inactivating mutations in exons 1, 2 and 8. Molecular dating further estimates that the loss of this gene happened early on the cetacean branch 50–47 Mya. The cetacean ancestor had a brain slightly larger than expected for its body size with an EQ of 1.4. While EQ values increased and decreased in several cetacean lineages, brain size has greatly expanded in dolphins, reaching an EQ of 3.7 (Montgomery et al., 2013). Thus, brain size expansion in dolphins occurred after the loss of ketogenesis. (C) Early proboscids such as Moeritherium, an extinct lineage that split from other proboscids ~ 43 Mya, had brains about 20% of the size expected for a mammal of the same body size, and thus an EQ of 0.2 (Shoshani et al., 2006). Exact EQ values of Palaeomastodons are not known; however, fossils have a small braincase, which indicates a low EQ (Sanders et al., 2010; Benoit, 2015). In contrast, mastodons that diverged from elephants ~ 27 Mya had brains about twice as large as expected from their body size (EQ 2.2), similar to extant elephants (Shoshani et al., 2006). This suggests that brain size expansion happened in a period between 37 and 27 Mya. Molecular dating indicates that HMGCS2 loss happened between 45 and 42 Mya, suggesting that the loss of ketogenesis precedes brain size expansion in the elephant lineage. Divergence times of extinct proboscid lineages were taken from (Shoshani and Tassy, 2013) and (Rohland et al., 2007). Supporting Information.
 
 Given the importance of ketogenesis to provide energy to the brain during starvation, it is noteworthy that species in all three HMGCS2-loss lineages generally have large relative brain sizes (Stephan et al., 1981; Boddy et al., 2012). For example, the encephalization quotient (EQ), measuring the ratio between the observed brain size and the size expected for a mammal of the same body weight, is 3.7 for the bottlenose dolphin (Montgomery et al., 2013). Compared to human, dolphins and elephants are also among the few mammals that have a higher degree of neocortex folding, a measure that positively correlates with neuron number (Manger et al., 2012; Lewitus et al., 2014). Furthermore, while powered flight imposes a constraint on body and brain size in bats, pteropodid fruit bats exhibit a well-developed visual brain system and have brains nearly twice as large as that of insectivorous vesper bats of equal body weight (Stephan et al., 1981). Species in all three lineages also exhibit cognitive behaviors that are regarded as a sign of intelligence, exemplified by vocal learning and, in dolphins and elephants, by complex social structures, tool use and self-recognition (Krützen et al., 2005; Foerder et al., 2011; Poole et al., 2005; Prat et al., 2015; Plotnik et al., 2006). Thus, the loss of HMGCS2 in independent large-brained species suggests that ketone bodies are not strictly required to fuel large mammalian brains during fasting.
 
@@ -57,32 +81,126 @@ In conclusion, we have identified three independent losses of HMGCS2 in placenta
 
 ## Materials and methods
 
-## Investigating the HMGCS2 reading frame
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CESAR</td>
+      <td>https://github.com/hillerlab/CESAR2.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lastz (1.03.54)</td>
+      <td>http://www.bx.psu.edu/~rsharris/lastz/newer/lastz-1.03.54.tar.gz</td>
+      <td></td>
+      <td>K = 2400 L = 3000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>axtChain</td>
+      <td>https://github.com/ucscGenomeBrowser/kent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>chainNet</td>
+      <td>https://github.com/ucscGenomeBrowser/kent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLAST (2.6.0+)</td>
+      <td>ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-x64-linux.tar.gz</td>
+      <td>RRID:SCR_004870</td>
+      <td>word_size = 7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACSE (2.01)</td>
+      <td>https://bioweb.supagro.inra.fr/macse/</td>
+      <td></td>
+      <td>-prog enrichAlignment -prog refineAlignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELAX (HYPHY 2.3.11)</td>
+      <td>https://github.com/veg/hyphy</td>
+      <td>RRID:SCR_016162</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAML (4.0)</td>
+      <td>http://abacus.gene.ucl.ac.uk/software/paml.html</td>
+      <td>RRID:SCR_014932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TargetP (1.1)</td>
+      <td>http://www.cbs.dtu.dk/services/TargetP/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2 (2.0.0)</td>
+      <td>https://ccb.jhu.edu/software/hisat2/index.shtml</td>
+      <td>RRID:SCR_015530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools (1.1)</td>
+      <td>https://github.com/samtools/samtools</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Investigating the HMGCS2 reading frame
 
 To investigate the HMGCS2 sequence across mammals, we used a whole genome alignment between the human reference genome (hg38 assembly) and 69 other placental mammal genomes (Sharma and Hiller, 2017). In addition to these assemblies, we downloaded the genome assembly of the Hippopotamus (Árnason et al., 2018) (NCBI GCA_002995585.1) and updated genome assemblies of the Large flying fox (NCBI GCF_000151845.1), the Egyptian fruit bat (NCBI GCF_001466805.2) and the African savanna elephant (ftp://ftp.broadinstitute.org/distribution/assemblies/mammals/elephant/loxAfr4/). For these four assemblies, we computed pairwise alignment chains to the human hg38 genome by applying lastz (Harris, 2007) with parameters K = 2400, L = 3000 and the default scoring matrix, axtChain (Kent et al., 2003) and chainCleaner (Suarez et al., 2017) (both with default parameters). Collinear alignment chains were visualized in the UCSC genome browser (Casper et al., 2018) and inspected for conserved synteny with adjacent genes. All analyzed genome assemblies are listed in Supplementary file 4.
 
 We used the gene loss detection approach (Sharma et al., 2018a) to search across all mammals for mutations that could inactivate HMGCS2. This approach considers large deletions that cover exons, frameshifting insertions and deletions, mutations that disrupt donor (GT/GC) or acceptor (AG) splice site dinucleotides, and nonsense mutations. To exclude false inactivating mutations caused by alignment ambiguities, this method only considers those putative inactivating mutations that were confirmed by CESAR (Sharma et al., 2016; Sharma et al., 2017), a method trained to output an intact exon alignment whenever possible. Furthermore, exon deletions or exonic regions that do not align between human and another species were only considered if the respective locus did not overlap an assembly gap in the other genome (Hiller et al., 2012). For the proboscis monkey and lesser Egyptian jerboa, greater than 20% of the HMGCS2 protein-coding region was ambiguous bases due to assembly gaps. These species were classified as ‘missing’, as it is not possible to unambiguously determine presence or absence of HMGCS2.
 
-## Validation of gene-inactivating mutations
+### Validation of gene-inactivating mutations
 
 Exon losses and inactivating mutations identified were manually validated using unassembled sequencing read data from the TRACE and Sequence Read Archives. To validate exon losses, we used sensitive blastn runs (word size = 7) to search read data of HMGCS2 loss species. As queries, we used HMGSC1 and HMGCS2 exon sequences from a closely related species with an intact HMGCS2 gene. Specifically, we used the cow sequence to search cetacean read data, and the sequence of David’s myotis bat to search pteropodid read data. Read data from elephants and mastodon was searched using the manatee HMGSC1, HMGCS2 and REG4 exonic sequence. To validate smaller inactivating mutations (stop codon, frameshift and splice site mutations) and exon deletions, we extracted the genomic context 50 bp up- and downstream of each inactivating mutation in an HMGCS2 loss species and determined the number of sequencing reads that support the derived (inactivating) and ancestral (non-inactivating) allele, as described in (Hecker et al., 2017). SRA accessions are provided in Supplementary file 5.
 
-## Relaxed selection analysis
+### Relaxed selection analysis
 
 We generated a multiple sequence alignment of the HMGCS2 coding sequence from the CESAR alignments and replaced in-frame stop codons with ‘NNN’. Using MACSE v2 (Ranwez et al., 2018), we added to this alignment the Chinese Horseshoe bat (Rhinolophus sinicus, XM_019730577) and the Hippopotamus amphibius HMGCS2 coding sequence as well as the inferred exonic sequences of the Asian elephant, the African forest elephant and the mastodon. The alignment was then refined using MACSE v2 prior to visual inspection and further refinement. RELAX (Wertheim et al., 2015) was applied to test for relaxation of selection. First, we designated all branches within the cetacean, pteropodid and elephant/mastodon subtrees as foreground and designated all other branches as background. Second, we tested each subtree separately against the background branches, removing the other two HMGCS2 loss lineages. We also tested the elephant lineage including only the African savanna elephant.
 
-## Molecular dating of HMGCS2 loss in the elephant lineage
+### Molecular dating of HMGCS2 loss in the elephant lineage
 
 To date the loss of HMGCS2 along the putative loss branches in the phylogenetic tree, we used the method described in (Meredith et al., 2009; Gaudry et al., 2017), which estimates the portion of the loss branch where the gene evolved under selection and the portion where it evolved neutrally. Since synonymous positions do not entirely evolve neutrally due to constraints on splicing and translation, this approach assumes that the synonymous mutation rate of a functional gene is 70% of the fully-neutral synonymous mutation rate of an inactivated gene. Upper and lower bounds of species divergence times, the estimated length of the loss branch and respective sources are given in Supplementary file 3. The branch model in PAML (Yang, 2007) was fit, with five dN/dS classes, one for each of the three loss branches, one for the subsequent pseudogene branches and a final class for all functional branches. Pseudogene branches were assumed to evolve with a dN/dS of 1 for the dating calculations. We also fit models for each loss lineage individually and further tested the elephant lineage including only the African savanna elephant.
 
-## Investigating the possibility of co-option of HMGCS1
+### Investigating the possibility of co-option of HMGCS1
 
 We tested the amino acid sequences of the annotated or CESAR-inferred HMGCS1 protein from all HMGCS2-loss species for the presence of a potential mitochondrial target peptide (mTP) using TargetP (Emanuelsson et al., 2007). This revealed no evidence for the presence of an mTP in any species. To investigate the possibility that an mTP is provided by a novel or alternative first coding exon, we inspected gene predictions from Augustus that were available for all species. Those predicted gene models that contained an alternative first exon were found to not have an mTP. Furthermore, we used RNA-seq data from liver, the primary site of ketogenesis in other species, which was available for the Egyptian fruit bat (SRA SRR2914059, SRR2914369) and the minke whale (SRR919296). RNA-seq reads were mapped to the genome using HISAT2 (Kim et al., 2015), SAM files were sorted and converted to BAM files using SAMtools (Li et al., 2009) prior to visualization in the UCSC genome browser. For both species, we found no evidence of alternative or novel exons that could result in a different HMGCS1 N-terminus.
 
-## Investigating the loss of other ketogenesis enzymes
+### Investigating the loss of other ketogenesis enzymes
 
 Three other genes, ACAT1, HMGCL and BDH1, which encode components of the ketogenesis pathway were investigated for potential inactivating mutations using the same gene loss pipeline and mutation validation strategy described above. These genes were also tested for signs of relaxed selection in the three HMGCS2-loss lineages using RELAX (Supplementary file 2).
 
-## Data availability
+### Data availability
 
 All data analyzed during this study is publicly available on NCBI, SRA and the Trace Archive. The multiple sequence alignment of the mammalian HMGCS2 coding sequences is provided as Figure 2—source data 1.

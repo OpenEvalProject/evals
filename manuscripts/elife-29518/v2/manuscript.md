@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.29518.001 Derivation of human naïve cells in the ground state of pluripotency provides promising avenues for developmental biology studies and therapeutic manipulations. However, the molecular mechanisms involved in the establishment and maintenance of human naïve pluripotency remain poorly understood. Using the human inducible reprogramming system together with the 5iLAF naïve induction strategy, integrative analysis of transcriptional and epigenetic dynamics across the transition from human fibroblasts to naïve iPSCs revealed ordered waves of gene network activation sharing signatures with those found during embryonic development from late embryogenesis to pre-implantation stages. More importantly, Transcriptional analysis showed a significant transient reactivation of transcripts with 8-cell-stage-like characteristics in the late stage of reprogramming, suggesting transient activation of gene network with human zygotic genome activation (ZGA)-like signatures during the establishment of naïve pluripotency. Together, Dissecting the naïve reprogramming dynamics by integrative analysis improves the understanding of the molecular features involved in the generation of naïve pluripotency directly from somatic cells.
+Derivation of human naïve cells in the ground state of pluripotency provides promising avenues for developmental biology studies and therapeutic manipulations. However, the molecular mechanisms involved in the establishment and maintenance of human naïve pluripotency remain poorly understood. Using the human inducible reprogramming system together with the 5iLAF naïve induction strategy, integrative analysis of transcriptional and epigenetic dynamics across the transition from human fibroblasts to naïve iPSCs revealed ordered waves of gene network activation sharing signatures with those found during embryonic development from late embryogenesis to pre-implantation stages. More importantly, Transcriptional analysis showed a significant transient reactivation of transcripts with 8-cell-stage-like characteristics in the late stage of reprogramming, suggesting transient activation of gene network with human zygotic genome activation (ZGA)-like signatures during the establishment of naïve pluripotency. Together, Dissecting the naïve reprogramming dynamics by integrative analysis improves the understanding of the molecular features involved in the generation of naïve pluripotency directly from somatic cells.
 
 ## Introduction
 
@@ -31,21 +31,53 @@ In this study, we utilized the human secondary reprogramming system together wit
 
 ## Results
 
-## Establishment of inducible naïve reprogramming system in human
+### Establishment of inducible naïve reprogramming system in human
 
 To establish the secondary naïve iPSCs induction system in human, we first reprogrammed primary human embryonic fibroblasts (1° hEF) to primary primed iPSCs (1° piPSCs) by using the doxycycline (dox)-inducible polycistronic human OSKM cassette, as previously reported (Park et al., 2008). After the differentiation of clonal 1° piPSCs, the resultant secondary human inducible fibroblast-like cells (2° hiF) were reprogrammed into iPSCs at naïve pluripotent state by 5iLAF with dox treatment (Figure 1—figure supplement 1A). Consistent with previous observations (Cacchiarelli et al., 2015), the 2° hiFs showed significantly decreased proliferation ability and naïve reprogramming efficiency, as well as increased senescence-associated beta-galactosidase activity with long-term culturing and passaging (Figure 1—figure supplement 1B–D); these effects were rescued by immortalizing the 2° hiF cell lines (2° hiF-T) with constitutive human TERT expression (Figure 1—figure supplement 1B–D).
 
 Upon dox treatment, morphological changes occurred in hiF-T cells at approximately day 2, and small cell aggregates were observed as early as day 6 (Figure 1A). Dome-shaped colonies emerged and expanded after the culture conditions were changed from conventional hESC medium (hESM) to 5iLAF medium on day 6 (Figure 1A). After 20 days of induction, the cells were further cultured under dox-withdrawal conditions for 4 days before clonal expansion, to establish the secondary naïve iPSC lines (niPSC-Ts) (Figure 1A; Figure 1—figure supplement 1A). We also used the OCT4-ΔPE-GFP reporter system to monitor the activation of the OCT4 distal enhancer (DE), the molecular signature of ground state pluripotency, during human naïve reprogramming. GFP+ colonies were observed at day 20 of induction (Figure 1B) and were increased during the reprogramming process (Figure 1B), reaching ~91.4% in clonally derived niPSC-Ts, as detected by FACS analysis (Figure 1C). Immunostaining results of the derived niPSC-Ts exhibited robust expression of core pluripotency markers (OCT4, SOX2, NANOG and TRA-1–60) and naïve pluripotency markers (DPPA3 and UTF1) (Figure 1D). In agreement with recent reports (Pastor et al., 2016), almost all niPSC-Ts were negative for SSEA-3 and SSEA-4 expression (Figure 1D). Thus, using the dox-inducible system and 5iLAF naïve reprogramming strategy, we established a stable and reliable system for the integrative study of the transcriptional and epigenetic roadmap to human naïve pluripotency.
 
-## Transcriptional profiling of naïve reprogramming cells
+![Figure 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative bright field images of hiF-Ts, niPSC-Ts and reprogramming cells at the indicated time points during reprogramming. Scale bar, 100 μm. (B) Phase and OCT4-ΔPE-GFP images of niPSC-Ts and reprogramming cells at the indicated time points during reprogramming. Scale bar, 100 μm. (C) Flow cytometry analysis of the proportion of GFP+ cells in OCT4-ΔPE-GFP niPSC-Ts. (D) Immunostaining images of pluripotency-related marker expression in niPSC-Ts. Scale bar, 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic overview of secondary naïve reprogramming strategy to generate human naïve iPSCs. 1° HEF, primary human embryonic fibroblasts; 1° piPSCs, primary primed iPSCs; 2° hiF, inducible fibroblasts; 2° hiF-T, immortalized inducible fibroblasts; 2° niPSCs, secondary naïve iPSCs. (B) Growth curves of hiF and hiF-T cells at different passages. (C) Alkaline phosphatase (AP) staining representing the naïve reprogramming efficiencies of HEFs, hiFs and hiF-Ts at different passages. (D) Representative images showing the senescent cells in hiFs and hiF-Ts at different passages by senescence-associated-beta-galactosidase (SA-β-GAL) assay. Scale bar, 50 μm. Senescent cells are stained in blue and indicated with red arrowheads.
+
+### Transcriptional profiling of naïve reprogramming cells
 
 Next, we collected the mRNAs of cells at different time points throughout the naïve reprogramming process and performed RNA-seq analysis (Figure 2A). The Pearson correlation distance analysis of mRNAs segregated the cell samples into three distinct categories including hiF-T/0d/2d/6d, 8d/12d and 14d/20d/24d+dox/24d-dox/niPSC-T (Figure 2—figure supplement 1A). On the basis of the dynamics of the differentially expressed (DE) genes during naïve reprogramming (Figure 2—figure supplement 1B), multi-dimensional scaling (MDS) analysis exhibited a continuous trajectory of transcriptional dynamics from hiF-Ts to established niPSC-Ts (Figure 2B). However, distinct from the results for the primed reprogramming system (Cacchiarelli et al., 2015), the cellular states at days 20–24 during naïve reprogramming were similar, and dox withdrawal did not result in dramatic transcriptional changes in the cells on day 24 (Figure 2B), thus further suggesting the intrinsic differences between naïve and primed pluripotency. Compared with those in the primed reprogramming system, the epiblast-specific markers representing naïve pluripotency were gradually up-regulated (one-tailed t-test p-value=5.99e-22), whereas the primed-specific genes were gradually down-regulated (one-tailed t-test p-value=1.67e-3) during the naïve pluripotency induction process (Figure 2—figure supplement 1C). We also observed transient up-regulation followed by marked down-regulation of transcriptional factors OTX2 and ZIC2 during naïve reprogramming, which were known to direct OCT4 to primed state-specific enhancer sites (Buecker et al., 2014) and exhibited robust activation during primed reprogramming (Figure 2—figure supplement 1D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of reprogramming intermediate collection at different time points, as indicated. hiF-T cells were first cultured in conventional hESM with dox for 6 days and then switched to 5iLAF culture medium supplemented with dox until day 20. Cells with or without dox treatment for four additional days were collected. (B) MDS analysis of RNA-seq data during the naïve reprogramming process. (C) Line plots showing transcriptional dynamics of differentially expressed genes during the naïve reprograming process. Genes were grouped by k-means clustering. Gray shades represent a 95% bootstrap confidence interval around the mean value. (D) Heatmaps showing the expression patterns of genes with pre-implantation signatures in both the naïve and primed reprogramming process. (E) Correlation analysis of transcriptional profiles between naïve reprogramming and the embryonic development process, with the Pearson correlation coefficient of each pair shown on each cell of the heatmap. (F) Immunostaining images of pluripotency-related marker expression in the reprogramming cells at indicated time points during naïve and primed reprogramming. Scale bar, 50 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Correlation analysis (left panel) ad cell clustering analysis (right panel) of transcriptional profiles at different time points during naïve reprograming. (B) Bar plot showing dynamic changes in differentially expressed (DE) gene numbers of two adjacent time points during naïve reprogramming. (C) Expression dynamics of epiblast-specific genes and primed-specific genes during naïve reprogramming relative to those in the primed reprogramming process. (D) Bar plot showing the absolute expression values of OTX2 and ZIC2 genes in the naïve and primed reprogramming processes. Error bars represent a 95% confidence interval around the mean value.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Detailed description of Figure 2D gene clusters with specific expression patterns. Line plot and heatmap (left panels) showing expression patterns of each cluster during naïve reprograming. Grey shades represent a 95% confidence interval around the mean value; Bar plot (middle panels) showing enrichment of p-value of representative GO term of each cluster; Bar plot (right panels) showing expression dynamics of selected genes across naïve reprogramming time course.
+
 Next, we characterized the transcriptome dynamics during naïve reprogramming in detail. On the basis of the DE genes between two adjacent time points of RNA-seq data (Figure 2—figure supplement 1B), we identified several dynamic expression clusters and focused on seven major patterns in three categories (down-regulated, up-regulated and transiently up-regulated), which were defined according to gene ontology (GO) enrichment analysis, developmental cell identity, and expression pattern of marker genes (Figure 2C; Figure 2—figure supplement 2) (Edgar et al., 2013). The activation of OSKM down-regulated genes involved in cell junction and extracellular matrix (ECM) organization occurred in two waves, at day 12 and day 20 of naïve reprogramming (Figure 2C; Figure 2—figure supplement 2). More importantly, pluripotency-associated gene networks were also activated in two waves; the earlier one consisted of genes with an early embryogenesis signature such as gradual up-regulation of CDH1 and NANOG from day 2, whereas the later one comprised genes with pre-implantation characteristics, such as DPPA3 and TFCP2L1 (Figure 2C; Figure 2—figure supplement 2). For the transiently up-regulated genes during naïve reprogramming, the first transient wave peaked at day eight and was enriched in genes characteristic of late embryogenesis and pattern specification, such as LHX9 and the HOX cluster genes (Figure 2C; Figure 2—figure supplement 2). The second wave peaked around day 12–14 and included metabolism-associated genes, such as IGF2 and AFP (Figure 2C; Figure 2—figure supplement 2). The third wave, which peaked during the late reprogramming process at approximately day 24, was enriched in genes important for gamete generation (Fisher’s exact test p-value=1.934e-3) and sexual reproduction (Fisher’s exact test p-value=3.517e-3), such as OVOL1 and CGB5 (Figure 2C; Figure 2—figure supplement 2). Notably, the gene expression program with pre-implantation-like signatures exhibited significantly different dynamics in naïve compared with primed reprogramming systems, which exhibited robust up-regulation along the naïve reprogramming process, peaking in niPSC-Ts (Figure 2C, D). However, such expression was lost upon dox withdrawal and iPSC-T derivation during primed reprogramming (Figure 2D) (Cacchiarelli et al., 2015), results consistent with the MDS analysis results in both reprogramming systems, respectively (Figure 2B) (Cacchiarelli et al., 2015). In addition, in comparing the transcriptional profiles between the naïve reprogramming process of hiF-Ts to niPSC-Ts and human early embryo development (Yan et al., 2013), we found that the reprogramming cells at day 20 and 24 and niPSC-Ts most closely resembled human embryos at the late blastocyst stage (Figure 2E). Immunostaining of the pre-implantation marker DPPA3 and early embryogenesis marker UTF1 in the reprogramming cells at day 20 and day 24 in both induction systems also confirmed our observations in the transcriptional profiles (Figure 2F). Therefore, in contrast to the primed reprogramming system, in which the transcriptional profile finally dropped to the post-implantation-like stage (Cacchiarelli et al., 2015), the derivation of naïve iPSCs was accompanied by ordered waves of gene network activation, with the gene program finally stabilizing at the pre-implantation-like stage.
 
-## Gene network activation with 8-cell-stage-like characteristics during naïve reprogramming
+### Gene network activation with 8-cell-stage-like characteristics during naïve reprogramming
 
 During human embryo development, the major wave of embryonic genome activation (EGA) occurs at approximately day three at ~8 cell (8C) stage (Niakan et al., 2012; Vassena et al., 2011), times corresponding to the major wave of zygotic genome activation (ZGA) at the 2 cell stage in mice, which is a key transcriptional feature of totipotency (Latham and Schultz, 2001; Macfarlan et al., 2012; Schultz, 2002). By analyzing single cell RNA-seq datasets of human early embryos (Yan et al., 2013), we identified 538 genes with expression levels peaking at the 8C stage during human embryonic development (Figure 3A), including the previously reported EGA regulators with PRD-like homeodomains such as DUXA, OTX2 and LEUTX (Töhönen et al., 2015). Further investigation revealed that these 8C-genes were significantly enriched in the cluster including genes important for gamete generation (Fisher’s exact test p-value=3.784322e-08) (Figure 3A; Figure 3—figure supplement 1A, Figure 2—figure supplement 2) and exhibited similar transiently up-regulated expression patterns during the late stages of naïve reprogramming (Figure 3B). In addition to ZSCAN4 (Figure 3C; Figure 3—figure supplement 1B), whose mouse homologs are 2C-stage restricted and are important for telomere stability in mouse ESCs and iPSCs (Ko, 2016; Zalzman et al., 2010); we also identified KLF17, TBX20 and some PRAMEF family genes including PRAMEF15, PRAMEF5 etc. in the 8C-stage category with transiently enhanced transcription activity during late stages of naïve reprogramming but not in the primed reprogramming system (Figure 3—figure supplement 1C). More importantly, we identified MBD3L2/3/4/5 genes as 8C-genes during human embryo development (Figure 3—figure supplement 1B); these genes are the homologs of the mouse Mbd3l2 gene, which is specifically expressed at the 2C stage during mouse development (Jiang et al., 2002). Similar to the genes listed above, the transcriptional dynamics of MBD3L2/3/4/5 also showed dramatically increased expression during the late stages of naïve reprogramming from day 20 to 24 even after dox withdrawal, then decreased sharply after niPSC-T derivation (Figure 3C, D; Figure 3—figure supplement 1C, D). However, during the primed reprogramming, we observed only a small transient wave of ZSCAN4 expression during the late stages from day 20 to day 24 (Figure 3C), and only marginal MBD3L2/3/4/5 expression throughout the induction process (Figure 3D). Interestingly, the MBD3L2/3/4/5 genes are loci-clustered in the human genome and are far from MBD3L1. Although these genes exhibited differential mRNA expression levels, the amino acid sequences of each gene in the cluster are identical, thus suggesting that the gene cluster might have evolved from mouse Mbd3l2 via the copy-paste mode, similar to the situation observed in mouse Zscan4 retrotransposons and ERV repeats. Using specific human ZSCAN4 and MBD3L2-5 antibodies, we performed immunostaining in cells during reprogramming. While only weak expression of ZSCAN4 as well as no expression of MBD3L2-5 could be detected around day 14, we could observe robust expression of ZSCAN4 and MBD3L2-5 around day 24 during naïve reprogramming (Figure 3E). During primed reprogramming, we could observe weak expression of ZSCAN4 and DPPA3 at 24d + dox, which diminished after dox withdrawal (Figure 3—figure supplement 1E). However, the expression of MBD3L2-5 could not be detected during primed reprogramming process (Figure 3—figure supplement 1E). Western blot analysis of MBD3L2-5 also confirmed our observations in both immunostaining and transcriptional profiles (Figure 3F). Although the transcriptional profiles of MBD3L cluster genes exhibited sharply decreased mRNA expression in the derived niPSC-T lines, we could still observe MBD3L2-5+ cells in naïve iPSC clones compared to their absence in primed iPSCs by immunostaining (Figure 3—figure supplement 1F), suggesting the expression of MBD3L2/3/4/5 as an indicator for naïve pluripotency. In summary, the transient expression of 8C-genes, which occurs specifically during the late stages of naïve reprogramming, suggests the emergence of gene network activation with 8C-stage-like characteristics. Compared with the primed reprogramming that finally stabilized at the post-implantation-like state (Cacchiarelli et al., 2015), naïve reprogramming not only reached the pre-implantation-like status but more importantly, underwent reactivation of gene programs with human EGA-like characteristics.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig3-v2.jpg)
+
+**Figure 3.:** (A) Line plot showing expression dynamics of 8C-stage-specific genes during human embryonic development. Gray shades represent a 95% confidence interval around the mean value. (B) Line plot showing transcriptional dynamics of 8C-specific genes across naïve and primed reprogramming. (C–D) Bar plot showing the absolute expression values of ZSCAN4 (C) and MBD3L2 genes (D) in the naïve and primed reprogramming processes. Error bars represent a 95% confidence interval around the mean value. (E) Immunostaining images of ZSCAN4, MBD3L2-5 and DPPA3 expression in cells during naïve reprogramming. Scale bar, 50 μm. (F) Western blot results of MBD3L2-5 expression in naïve and primed reprogramming cells, niPSC-Ts and piPSC-Ts. β-ACTIN was used as endogenous control. (G) Line plot showing the expression patterns of 8C-specific TEs during human embryonic development. Gray shades represent a 95% confidence interval around the mean value. (H) Line plot showing expression dynamics of 8C-specific TEs during naïve reprogramming. (I–J) Heatmap of expression patterns of 8C-specific HERVK integrants across naïve reprogramming (I) and pre-implantation development (J). (K) Heatmaps showing different expression patterns of KRAB-ZNF genes in the naïve reprogramming process. K-means clustering was performed on KRAB-ZNF genes with k = 8 using R library ‘amap’. Distance between genes was measured based on their correlation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bar plot showing the p-value of 8C-gene enrichments in each cluster measuring with Fisher’ exact test. (B) Line plot showing expression patterns of selected genes during human pre-implantation development. (C) Bar plot showing the absolute expression values of several 8C-genes in the naïve and primed reprogramming processes. Error bars represent a 95% confidence interval around the mean value. (D) Bar plot showing the absolute expression values of MBD3L3/4/5 genes in the naïve and primed reprogramming processes. Error bars represent a 95% confidence interval around the mean value. (E) Immunostaining images of ZSCAN4, MBD3L2-5 and DPPA3 expression in cells during primed reprogramming. Scale bar, 50 μm. (F) Immunostaining for OCT4, ZSCAN4 and MBD3L2-5 in niPSC-Ts and piPSCTs respectively. Scale bar, 20 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Pie charts of genomic distribution of top 100 8C-TEs distribution (upper panel) and all TEs (lower panel), showing significant enrichment (Fisher’s exact test p-value=0.00408) in LTRs. (B) Heatmaps of expression patterns of SVA integrants during naïve reprogramming (upper panel) and embryonic development (lower panel). (C) Expression dynamics of LTR7-HERVH during embryonic development. (D) Bar plot showing expression dynamics of LTR7-HERVH during naïve and primed reprogramming. (E) Transcriptional dynamics of ZNF534 in naïve and primed reprogramming. Error bars represent a 95% confidence interval around the mean value.
 
 Several lines of evidence in mouse pre-implantation development revealed activation of many retrotransposons, including ERVs, LINE-1 elements and SINE elements during ZGA at the 2C stage (Peaston et al., 2004). According to our observation of the 8C-gene network wave during naïve reprogramming, we next assessed the dynamics of transposon elements (TEs) during this process. We identified TEs that were specifically and highly expressed at the 8C stage (8C-TEs) during human embryo development (Figure 3G); these TEs also showed transient reactivation during the late stages of naïve reprogramming (Figure 3H). Further investigation of these 8C-TEs showed a significant enrichment (Fisher’s exact test p-value=0.00408) in LTR (Figure 3—figure supplement 2A). Notably, integrants of the HERVK-family that were activated upon EGA during development (Grow et al., 2015), especially MER9a3-HERVK9, were significantly up-regulated at day 12 of naïve reprogramming and down-regulated upon niPSC-T derivation (Figure 3I; J). These results, together with the recent observations of the transient activation of 2C-specific MERVL/ZSCAN4 transcriptional network in the intermediate-late stages of mouse iPSC reprogramming (Eckersley-Maslin et al., 2016), suggest that the transient wave of 8C-transcripts is an important feature of human naïve reprogramming and that the reactivation of a gene network with the human EGA-like signature occurs during this process.
 
@@ -53,9 +85,17 @@ Recent studies in naïve pluripotency evaluation have indicated that naïve huma
 
 We also assessed the transcriptional profiles of KRAB-ZNF genes during reprogramming, which have been reported to play central roles in repressing TEs during early embryogenesis (Huntley et al., 2006; Quenneville et al., 2011). Transcriptional dynamics analyses divided the KRAB-ZNFs in to eight distinct clusters, among which the expression pattern of genes in cluster v was remarkably up-regulated in the naïve reprogramming system with robust expression in niPSC-Ts (Figure 3K). These genes included ZNF534, the repressor of LTR7-HERVH (Figure 3—figure supplement 2E). These results suggested that the naïve-specific KRAB-ZNF genes were activated to repress the TE network with a post-implantation-like signature, accompanied by the reactivation of TEs with characteristics reminiscent of morula-stage embryos during reprogramming to the naïve pluripotent state.
 
-## Dynamic changes in epigenetic modifications in the naïve reprogramming system
+### Dynamic changes in epigenetic modifications in the naïve reprogramming system
 
 Transcriptional profiling across the naïve reprogramming process revealed an ordered reactivation of diverse developmental pathways from late embryogenesis to the pre-implantation stages. Next we examined the dynamics of epigenetic modifications during this process. In contrast to the continuous hypermethylation during primed reprogramming, a significant decrease in global DNA methylation was observed throughout the naïve pluripotency induction process (Figure 4A; Figure 4—figure supplement 1A), including an average methylation level resembling that in ICM by the end of reprogramming in niPSC-Ts, as previously demonstrated (Figure 4A) (Leitch et al., 2013; Okae et al., 2014; Pastor et al., 2016; Smith et al., 2014; Theunissen et al., 2016). Quantitative analysis via HPLC-MS also revealed a dramatic decrease in 5mC levels throughout naïve reprogramming but not the primed reprogramming process (Figure 4—figure supplement 1B). Dynamic changes in differentially methylated C sites (DMCs) throughout naïve reprogramming also showed an increasing trend of hypomethylated C site ratios (Figure 4—figure supplement 1C), a result consistent with the global demethylation trend (Figure 4A; Figure 4—figure supplement 1A, B). For detailed analysis, we characterized naïve-specific differentially methylated Regions (DMRs) by comparing the DMRs of niPSC-Ts with those of hiF-Ts and piPSC-Ts (Figure 4—figure supplement 1D); the results showed a dramatic trend of down-regulation in the average methylation ratios during naïve reprogramming, but no significant changes during primed reprogramming (Figure 4B). We also found that the identified naïve-specific DMRs were enriched in genes related to naïve pluripotency, which exhibited significant DNA de-methylation at the promoter regions on approximately day 24 during reprogramming (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig4-v2.jpg)
+
+**Figure 4.:** (A) Bar plot showing changes in average DNA methylation ratios of all covered C sites during naïve and primed reprogramming. Error bars represent a 95% confidence interval around the mean value. (B) Box plot showing DNA methylation ratio dynamics of naïve specific DMRs during naïve and primed reprogramming. The middle lines of the boxes indicate the median, the outer edges represent the first and the third quartiles, and the whiskers indicate the 1.5 × interquartile range below the lower quartile and above the upper quartile. (C) Dynamics in the DNA methylation levels of naïve-specific DMR-related genes during naïve reprogramming. (D) DNA methylation over stable primary imprints during naïve and primed reprogramming. The middle lines of the boxes indicate the median, the outer edges represent the first and the third quartiles, and the whiskers indicate the 1.5 × interquartile range below the lower quartile and above the upper quartile.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Histograms showing the distribution of methylation levels (%) across all CpGs at indicated time points during naïve reprogramming. a, average methylation level. (B) 5mC dynamics across naïve and primed reprogramming by HPLC-MS analysis. (C) Bar plot showing DMC dynamics during naïve reprograming. The ratio of hyper-DMCs divided by the number of all C sites (red bars) and the ratio of hypo-DMCs divided by the number of all C sites (blue bars) were plotted separately. (D) Heatmap showing dynamics of DNA methylation on hiF-T with niPSC-T and piPSC-T. Each line is a DMR called using mcomp from MOABS. Naïve specific DMRs were defined as those only detected in niPSC-Ts compared with hiF-Ts and piPSC-Ts. (E) Line plot showing the expression dynamics of selected genes related to DNA methylation (upper panel) and TET family genes (lower panel) in naïve reprogramming (solid line) and primed reprogramming (dash line) process.
 
 Growing evidence indicates that naïve PSCs lose DNA methylation at primary imprints, which are retained throughout pre-implantation development (Pastor et al., 2016). We examined DNA methylation dynamics in 31 stable primary imprints in both the naïve and primed reprogramming processes. The DNA methylation ratios markedly decreased during naïve reprogramming, and methylation was nearly completely lost in niPSC-Ts (Figure 4D), results similar to previous observations (Pastor et al., 2016). However, in primed reprogramming, the decrease was more moderate, and the DNA methylation ratio finally stabilized at ~50% in piPSC-Ts, as previously reported (Figure 4D) (Pastor et al., 2016). The failure to reactivate DNMT3A and DNMT3B, as well as the over-activation of TET2 (Figure 4—figure supplement 1E), might be causative of the genome-wide hypomethylation and loss of imprinting observed in the naïve pluripotency induction process.
 
@@ -63,13 +103,29 @@ To assess the genome-wide landscape of histone modifications, we mapped two acti
 
 Next, we focused on H3K4me3 and H3K27me3 dynamics during reprogramming. We observed increasing numbers of bivalent genes during the reprogramming process (Figure 5A,B), however, the up-regulation of bivalent signals was much slower with less gene numbers in niPSC-Ts during naïve reprogramming compared to primed reprogramming (Figure 5A,B). For further comparison, we clustered the genes with similar patterns of bivalency on their promoters in both naïve and primed reprogramming process, and found that there were two clusters of genes highly related to embryonic development showing increasing bivalent signals on their promoter regions during primed reprogramming, while exhibiting almost no H3K4me3/H3K27me3 signals during the whole reprogramming process to naïve pluripotency (Figure 5C; Figure 5—figure supplement 1B), results consistent with the previous report (Pastor et al., 2016; Theunissen et al., 2014; Yang et al., 2016).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig5-v2.jpg)
+
+**Figure 5.:** (A) Alluvial plots showing the global dynamics of genes covered by different chromatin states during naïve reprogramming. Each line represents a gene. Red bar represents genes with promoter that covered only by H3K4me3. Yellow bar represents genes with promoter that covered only by H3K27me3. Blue bar represents genes with promoter that covered by both H3K4me3 and H3K27me3. Grey bar represents genes with promoter that covered by neither H3K4me3 nor H3K27me3. (B) Line plot showing dynamics of different histone modification signals across naïve and primed reprogramming. (C) Heatmap showing clusters of genes with different bivalency patterns across naïve and primed reprogramming. (D) Average profiles of H3K4me3 and H3K27me3 signals surrounding the TSS of genes characteristic for early embryogenesis and pre-implantation during naïve reprogramming. (E) Heatmap showing six clusters of H3K9me3 peaks with different patterns (left panel) and average H3K9me3 profiles around integrants of SVA family in cluster vi of the heatmap (right panel) during naïve reprogramming. (F) Average H3K9me3 profiling around MER9a3-HERVK-9 TE during naïve reprogramming.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Alluvial plots showing the global dynamics of genes covered by different chromatin states during naïve reprogramming. Each line represents a gene. Red bar represents genes with promoter that covered only by H3K4me2. Yellow bar represents genes with promoter that covered only by H3K4me3. Blue bar represents genes with promoter that covered by both H3K4me2 and H3K4me3. Grey bar represents genes with promoter that covered by neither H3K4me2 nor H3K4me3. (B) Enrichment of p-value of representative GO term of the selected clusters in Figure 5C. (C) Average H3K9me3 profiles around integrants of SVA family during naïve reprogramming.
+
 To address the effect of histone modification on transcriptional activity, we also examined the H3K4me3 and H3K27me3 modification dynamics around the transcription start sites (TSSs) of gene clusters with different expression patterns. The average H3K4me3 signals were highly correlated with the transcriptional dynamics and increased around the TSSs of genes with pre-implantation and early embryogenesis signatures, while the average H3K27me3 signals decreased around the TSSs of these genes during reprogramming (Figure 5D).
 
 We also checked the dynamics of H3K9me3 modification and found a decreasing pattern of H3K9me3 signals during naïve reprogramming, including integrants of SVA family, the naïve specific TEs (Figure 5E; Figure 5—figure supplement 1C). Moreover, the H3K9me3 signals around the 8C-TEs, especially MER9a3-HERVK9, exhibited a transiently decreased pattern at day 14, strongly correlated with the transiently increasing transcriptional activity of these 8C-TEs during naïve reprogramming (Figure 5F).
 
-## Integrative analysis of the naïve iPSC reprogramming system
+### Integrative analysis of the naïve iPSC reprogramming system
 
 Next, we focused on the down- and up-regulated patterns of genes with early/late somatic, early embryogenesis- and pre-implantation-like signatures (Figure 2C; Figure 2—figure supplement 2) and analyzed the relationships among the gene expression patterns, DNA methylation status and histone modifications. Despite their distinct expression dynamics, the transcriptional levels of these genes were closely correlated with the changes in epigenetic modifications at the promoter regions during naïve reprogramming, regulated by DNA methylation, histone modifications, or both (Figure 6A). Deep investigations at the base level also confirmed our observations above (Figure 6—figure supplement 1A). For detailed analysis, we divided the up-regulated genes during reprogramming into three groups: high-CpG-density promoters (HCPs), intermediate-CpG-density promoters (ICPs) and low-CpG-density promoters (LCPs) on the basis of the CpG ratios and the GC contents of their promoters (Figure 6—figure supplement 1B). We observed that, the two clusters with up-regulation trend showed different CpG-density patterns on these promoters (Figure 6A). Furthermore, compared with the genes with lower CpG-densities in their promoters, genes with higher CpG-densities tended to undergo more rapid DNA demethylation and re-establishment of active histone modifications (H3K4me2/3), as well as earlier up-regulation in transcription during naïve reprogramming (Figure 6B; Figure 6—figure supplement 1B). We examined the genes classified by different CpG-densities at promoter regions and found that the genes associated with core naïve pluripotency were enriched primarily in the LCP and ICP groups (Figure 6—figure supplement 1C). Together, these results indicated that the transcriptional dynamics strongly correlated with epigenetic changes during naïve reprogramming, which may be affected by the CpG density at gene promoter regions.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig6-v2.jpg)
+
+**Figure 6.:** (A) Transcriptional dynamics of genes with different patterns are closely correlated with epigenetic modifications at promoter regions during naïve reprogramming. Black lines in the heatmaps separate genes regulated by histone modifications (upper panel, left part), DNA methylation (upper panel, right part) or both (upper panel, middle part). Line plots (lower panels) show the representative genes in each category that are regulated by H3K4me3 modification or DNA methylation. (B) Up-regulated genes with different CG ratios in their promoters exhibit different kinetics with regard to transcription, DNA methylation and H3K4me2/H3K4me3/H3K27me3 coverage during naïve reprogramming.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29518/elife-29518-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Base-level visualization of DNA methylation and histone modifications in the promoter regions of representative genes. (B) Classification of genes by the CG ratio in their promoter. (C) Enrichment of p-value of representative GO term of clusters based on different CG ratios in promoters as shown in Figure 6B.
 
 ## Discussion
 
@@ -81,7 +137,122 @@ Taken together, dissecting and analyzing the dynamics of naïve induction proces
 
 ## Materials and methods
 
-## Human skin tissue acquisition, cell culture and reprogramming
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene ()</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background ()</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent ()</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line ()</td>
+      <td>Human embryonic fibroblasts (HEFs); Primary primed iPSC lines; hiF-T cell lines; Secondary primed iPSC lines; Secondary naïve iPSC lines</td>
+      <td>This paper; Cacchiarelli, D., Trapnell, C., Ziller, M.J., Soumillon, M., Cesana, M., Karnik, R., Donaghey, J., Smith, Z.D., Ratanasirintrawoot, S., Zhang, X., et al. (2015). Cell. 2015 Jul 16;162(2):412–424. doi: 10.1016/j.cell.2015.06.016. Yan, L., Yang, M., Guo, H., Yang, L., Wu, J., Li, R., Liu, P., Lian, Y., Zheng, X., Yan, J., et al. (2013). Nat Struct Mol Biol. 2013 Sep;20(9):1131–9. doi: 10.1038/nsmb.2660. Epub 2013 Aug 11.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct ()</td>
+      <td>dox-inducible, polycistronic OKMS lentiviral vector</td>
+      <td>Addgene 51543. Cacchiarelli, D., Trapnell, C., Ziller, M.J., Soumillon, M., Cesana, M., Karnik, R., Donaghey, J., Smith, Z.D., Ratanasirintrawoot, S., Zhang, X., et al. (2015).Cell. 2015 Jul 16;162(2):412–424. doi: 10.1016/j.cell.2015.06.016.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample ()</td>
+      <td>hiF-T/0d/2d/6d/8d/12d/14d/20d/ 24d+dox/24d-dox/niPSC-T; Oocyte/Zygote/2 cell/4 cell/8 cell/ Morula/MTE/PTE/EPI/PE/hESC0/hESC10; hiF-T/2d/6d/8d/14d/20d/24d+ dox/24d-dox/piPSC-T;</td>
+      <td>this paper;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SSEA3, SSEA4, TRA-1–60, UTF1, DPPA3, ZSCNA4, MBD3L2</td>
+      <td>Millipore MAB4304, Millipore MAB4360, Abcam ab24273, Santa Cruz sc- 67249, Millipore AB4340, Abcam ab174802</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>KAPA Stranded mRNA-Seq Kit; KAPA DNA Library Preparation Kits</td>
+      <td>KAPA KK8401; KAPA KK8234</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>human LIF recombinant protein; bFGF recombinant protein</td>
+      <td>Peprotech 300–05; Peprotech 450–33</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>bowtie; TopHat; Cufflinks; edgeR; MACS2;</td>
+      <td>KAPA KK8401; KAPA KK8234</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Activin A; PD0325901; IM-12; SB590885; WH-4–023; Y-27632;</td>
+      <td>Peprotech 120–14; Stemgent 04–0012; Enzo BML-WN102; R and D systems 2650; A Chemtek 0104–002013; Stemgent 04–0012;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>bowtie; TopHat; Cufflinks; edgeR; MACS2;</td>
+      <td>PMID: 22388286; PMID: 19289445; PMID: 22383036; PMID: 24743990; PMID: 18798982;</td>
+      <td>RRID:SCR_005476; RRID:SCR_013035; RRID:SCR_014597; RRID:SCR_012802; RRID:SCR_013291</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human skin tissue acquisition, cell culture and reprogramming
 
 Human skin specimens from abortive fetus were obtained from the Clinical and Translational Research Center of Shanghai First Maternity and Infant Hospital, Tongji University to make human embryonic fibroblasts (HEFs). The identity of HEFs has been authenticated by STR profiling and the cells are cultured with no mycoplasma contamination.
 
@@ -91,61 +262,61 @@ For reprogramming, hEFs were infected with the dox-inducible, polycistronic OKMS
 
 For differentiation from naïve to primed state, niPSC-T cells were first digested into single cells and plated onto irradiated feeder cells, which were then cultured in conventional hESM supplemented with Y-27632 (Stemgent, 10 μM) for 8–10 days.
 
-## Detection of cells growth rate
+### Detection of cells growth rate
 
 5 × 104 cells (early hiF, late hiF, early hiF-T and late hiF-T) were passaged onto 12-well plate in three replicates. Calculation of cell growth rate was performed by counting of cell numbers at 24 hr, 48 hr, 72 hr and 96 hr respectively.
 
-## Antibodies
+### Antibodies
 
 For immunostaining, the primary antibodies used included those against OCT3/4 (1:500, Santa Cruz), SOX2 (1:500, Santa Cruz), NANOG (1:500, Abcam), SSEA3 (1:50, Millipore), SSEA4 (1:50, Millipore), TRA-1–60 (1:50, Millipore), UTF1 (1: 200, Abcam), DPPA3 (1:50, Santa Cruz), ZSCAN4 (1:100, Millipore) and MBD3L2 (1:100, Abcam). The following secondary antibodies were used: Alexa Fluor 594-conjugated donkey anti-mouse IgG (1:500; Invitrogen), fluorescein isothiocyanate (FITC) 488-conjugated donkey anti-rabbit IgG (1:500; Invitrogen), and FITC 488-conjugated donkey anti-goat IgG (1:500; Invitrogen). Anti-H3K4me2 (Millipore), Anti-H3K4me3 (Millipore), Anti-H3K27me3 (Abcam) and Anti-H3K9me3 (Millipore) antibodies were used for ChIP experiments.
 
-## Flow cytometry and immunofluroresence staining
+### Flow cytometry and immunofluroresence staining
 
 For flow cytometry, OCT4-ΔPE-niPSC-Ts were collected, washed and re-suspended in FACS buffer containing PBS (Invitrogen) supplemented with 2% FBS (Invitrogen). All analyses were performed on a MoFloXDP cell sorter (Beckman Coulter). Flow cytometry data were processed using Flow Jo software.
 
 Immunostaining was performed according to standard protocols. In brief, cells were fixed with PBS containing 4% paraformaldehyde (Sigma-Aldrich) overnight at 4°C and permeabilized for 15 min in PBS containing 0.5% Triton X-100. After incubation with blocking buffer (PBS containing 4% BSA) for 30 min at room temperature, cells were incubated with primary antibodies followed by secondary antibodies. Nuclei were stained with 4’,6-diamidino-2-phenylindole (1:10,000; Sigma-Aldrich). Images were taken using A1 Nikon confocal microscope.
 
-## RNA-seq library generation and sequencing
+### RNA-seq library generation and sequencing
 
 Total RNAs were isolated from naïve iPSCs and reprogramming cells using TRizol (Invitrogen). To generate RNA sequencing libraries, KAPA Stranded mRNA-Seq Kit (KAPA) was used following the manufacturer’s instructions. Adapters were offered by TruSeq Library Prep Pooling kit (Illumina). Single-end 50 bp sequencing was further performed on a HiSeq 2500 or 2000 (Illumina) at Berry Genomics Corporation.
 
-## RNA-seq data processing
+### RNA-seq data processing
 
 Gene expression Analysis
 
 All RNA-seq reads were aligned to the human genome (hg19) using TopHat (v2.0.12) with default parameters (Trapnell et al., 2009). Gene expression level was measured as FPKM using Cufflinks(v2.2.1) to eliminate the effects of sequencing depth and transcript length (Trapnell et al., 2010). MDS clustering analysis was based on expression profile of all genes using R function ‘cmdscale’. For each comparison, differential expressed (DE) genes were founded using GFOLD(v1.1.3) with the GFOLD value >0.58 (fold change >1.5)(Feng et al., 2012). For following analysis, FPKM were log2 transformed after adding a pseudo-count of 1. K-means clustering was performed on combined DE genes of each nearby time points with k = 14 using R library ‘amap’. Distance between genes was measured based on their correlation. Batch effects of samples from different systems are removed using removeBatchEffect function of the R library ‘edgeR’. The negative values in the normalized data are considered as zero. Pearson correlation coefficient was calculated between each two samples on common genes using R function cor().
 
-## Retrotransposon expression analysis
+### Retrotransposon expression analysis
 
 All RNA-seq reads were aligned to the human genome (hg19) using bowtie2(v 2.2.3) with default parameters. Then FPKM of repeat classes were calculated as the sum of the number of reads that align to each class divided by the genome coverage of the class in kilobases. FPKM of each repeat elements were calculated same as repeat classes. Repeats that expressed in specific stages were identified by comparing the repeat expression in the specific stage with the average expression. The repeats with average expression lower than 0.0001 were discarded.
 
 A time-point specific expressed score was calculated as the expression of given time point divided by the average expression for each candidate gene, which should have a max expressed value in the given stage. The top 100 8C-TEs are the top 100 TE ranked by the time-point specific expressed score.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 Functional annotation was performed using the Database for Annotation, Visualization and Integrated Discovery (DAVID) Bioinformatics Resource (Huang et al., 2009). Gene ontology terms for each function cluster were summarized to a representative term and P-values were plotted to show the significance. The genes are classified according to expression pattern of marker genes and developmental cell identity using LifeMap Discovery (Edgar et al., 2013).
 
-## ChIP-seq library generation and sequencing
+### ChIP-seq library generation and sequencing
 
 Reprogramming cells and iPSCs were cross-linked and lysed to release chromatin, which were then sonicated by SonicsVibraCell Sonicator (Covaris) and immunoprecipitated with pretreated antibody-coupled ProteinG Dynabeads (Invitrogen) at 4°C for 8–12 hr. The ChIPed DNA was reverse-crosslinked, eluted, purified and quantified by Qubit dsDNA HS assay kit (Life Technologies). For ChIP sequencing, ChIP-seq libraries were prepared according to the protocols described in the KAPA DNA Library Preparation Kits (KAPA). Paired-end 125 bp sequencing was further performed on a HiSeq 2500 or 2000 (Illumina) at Berry Genomics Corporation.
 
-## ChIP-seq data processing
+### ChIP-seq data processing
 
 All ChIP-seq reads were aligned to the human genome (hg19) using bowtie2(v 2.2.3) with default parameters. Then reads signal for each sample were generated using the MACS2 (v2.1.0.20140616) pileup function and were normalized to 1 million reads for visualization. Chromatin states were identified and characterized using ChromHMM (v1.11) (Ernst and Kellis, 2012). The reads alignment files of H3K4me2, H3K4me3 and H3K27me3 modifications across 4-time stages during reprogramming path were binned into 200 bp bins using the Binarize Bam command. Next, a model was trained using the Learn Model command with 200 bp resolution and default parameters. Finally, for active marker, the whole genome was classified into four states: H3K4me2-only (without H3K4me3) region, H3K4me3-only (without H3K4me2) region, H3K4me2 and H3K4me3 region and non-marked region at each stage. For bivalency analysis, the whole genome was then classified into four states: H3K4me3-only (without H3K27me3) region, H3K27me3-only (without H3K4me3) region, H3K4me3 and H3K27me3 region and non-marked region at each stage. Genes were classified based on their promoters overlapping with ChromHMM segments in each stage. Promoters were defined as ±2 kb around the TSS. Genes overlapped with multiply segments in one stage were discarded in following analysis.
 
 Alluvial diagrams of reprogramming lineages were plotted using the alluvial function in R to show the transitions of different histone mark covered gene number. The gene number was the counter of genes in each state and the percentages of the specified intervals in each stage were plotted to show the global trend of that specific chromatin state. The alluvial diagrams showed the percentage changes of different chromatin states covered gene during each transition; the lines from the present stage to next stage cannot be traced, as they represent different genes.
 
-## RRBS and data processing
+### RRBS and data processing
 
 For Reduced Representation Bisulfite Sequencing (RRBS), genomic DNAs were extracted from reprogramming cells and iPSCs using DNeasy Blood and Tissue Kits (QIAGEN), digested by (NEB) and inactivated by heating. The sequencing libraries were constructed as previously described (Gu et al., 2011). Paired-end 125 bp sequencing was further performed on a HiSeq 2500 or 2000 (Illumina) at Berry Genomics Corporation. All Reduced Representation Bisulfite Sequencing (RRBS) reads were aligned to human genome (hg19).
 
 The correlation between DNA methylation ratio and gene expression was calculated using function cor() in R on each gene.
 
-## CpG ratio calculation and promoter classification
+### CpG ratio calculation and promoter classification
 
 Local CpG ratio was calculated for 500 bp bins with 50 bp steps, as previously defined (Weber et al., 2007). The CpG ratio for each transcript was calculated as the max local CpG ratio around ±2 kb of the TSS. The transcripts were then separated into high-CpG-density promoters (HCPs), intermediate-CpG-density promoters (ICPs) and low-CpG-density promoters (LCPs) based on the CpG ratio and the GC content cut-off previously defined (Weber et al., 2007).
 
-## Accession number
+### Accession number
 
 The accession number for all the sequencing-derived data in this paper is GEO: GSE89072.
 

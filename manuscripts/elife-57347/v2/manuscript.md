@@ -60,9 +60,29 @@ Where not otherwise indicated, throughout our main results we focus on non-trans
 
 To avoid pseudoreplication caused by phylogenetic confounding, we take the average of each protein property across all homologs of a pfam, and then treat each homologous set as a single data point in subsequent analysis (see Materials and methods). Phylostratigraphy assigns each such set of homologous pfams to an age class, dated using timetree. We then use linear regression to obtain slope, which provides our estimate of the effect size of the relationship between sequence properties and age. In order to compare our results with those of previous studies, we also conducted our analyses on full genes.
 
-## Trends in ISD
+### Trends in ISD
 
 Young genes (Willis and Masel, 2018; Wilson et al., 2017; Foy et al., 2019; Mukherjee et al., 2015) and domains (Bornberg-Bauer and Albà, 2013; Buljan and Bateman, 2009; Ekman and Elofsson, 2010; Moore and Bornberg-Bauer, 2012) have been reported to have high ISD, although some have claimed this depends on taxon (Vakirlis et al., 2018). We use IUPred to estimate ISD from amino acid sequence alone, allowing estimation across large-scale genomic data sets that contain many sequences of undetermined structure (Mészáros et al., 2018). We confirm that across our entire data set, ISD is higher in young pfams (Figure 1, linear model: R2 = 0.13, p = 3 × 10−245) and genes (Figure 1—figure supplement 2A, linear model for all genes: R2 = 0.057, p = 1 × 10−229).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig1-v2.jpg)
+
+**Figure 1.:** Results are for non-transmembrane pfams. (A) The brown linear regression was calculated for recent animal pfams (slope = −0.062, R2 = 0.0097, p = 6 × 10−7, n (number of pfams) = 2456), green for recent plant pfams (slope = 0.056, p = 0.1, n = 183), and black line over ancient pfams in all lineages (slope = −4.2 × 10−4, p = 0.9, n = 3102). Data underlying animal and plant curves is visualized separately in Figure 1—figure supplement 3. Slopes represent the decrease in average IUPred2 score, that is, the predicted propensity of the average amino acid to be disordered, per billion years. Each data point consists of the average across all instances of homologous pfams, across all species in which it occurs. Phylostratigraphy assigns these to age classes, dated using timetree. To help visualize the data, every age class is represented in the figure by a weighted box plot, where the width of the plot indicates the number of pfams in that age class. The median is shown in red, with the boxes representing upper and lower quartiles (the 75th and 25th percentile), and the whiskers indicating 9 and 91 quantiles. For age classes with only a single pfam, values are presented as small red dots. For clarity of presentation our plots do not show outliers, although we note that these are included in our linear regression models. (B) Phylostratigraphy slopes for pfams calculated over different subsets of the data are plotted with their 95% confidence intervals. The point colors correspond to the regression slopes in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Lineages have been color coded as follows: black, protists; green, plants; blue, fungi; brown; animals. Labels omitted for clarity, full species list and phylogenetic tree available at https://github.com/MaselLab/ProteinEvolution and https://doi.org/10.6084/m9.figshare.12037281. Tree visualization generated using iTOL (Letunic and Bork, 2006).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Each data point consists of the average across all instances of a homologous gene family (see Materials and methods) across all species (A) or just in mouse (B), dated according to the oldest pfam the gene contains. Each age class is represented by a weighted box plot, where the width of the plot indicates the number of gene families in that age class. The median is shown in red, with the boxes representing upper and lower quartiles (the 75th and 25th percentile), and the whiskers indicating 9 and 91 quantiles. For age classes with only a single gene family, values are presented as small red dots. For clarity of presentation our plots do not show outliers, although we note that these are included in our linear regression models. (A) Blue slope = −0.032, R2 = 0.057, p = 1 × 10−229. (B) Blue slope = −0.050, R2 = 0.091, p = 3 × 10−85. Slope represents the decrease in average IUPred2 score, that is, the predicted propensity of the average amino acid to be disordered, per billion years. Yellow points show the average ISD scores and phylostratum assignments taken from Foy et al., 2019 and assigned dates using our scheme, with corresponding yellow linear regression with age (slope = −0.028, R2 = 0.042, p = 3 × 10−136). Our improved gene age assignments thus increased the strength of the relationship for mouse genes, where the relationship is stronger than for genes across all taxa.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Linear regressions are calculated over recent animal (A, brown line) or recent plant domains (B, green line), and over ancient pfams (black lines), specific to occurrences in either animals (A) or plants (B). Gray areas indicate 95% confidence intervals on the linear regression slopes, which are so small for the ancient slope as to be difficult to see. Y-axes are cropped for easier comparison of slopes. Other details are as in Figure 1A.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Details are as in Figure 1. Regression calculated for recent animal pfams (brown slope = −0.073, R2 = 0.014, p = 3 × 10−9), recent plant pfams (green slope = 0.013, p = 0.7), and ancient pfams in all lineages (black slope = −0.016, R2 = 0.0016, p = 0.014).
 
 Our improved methodology increased the steepness (i.e. effect size) of the relationship between gene ISD and gene age in mouse genes above that previously estimated by Foy et al., 2019 (Figure 1—figure supplement 2B), from −0.028 to −0.050; note that mouse genes have a steeper slope than our results across all taxa. However, we note that age explains a relatively small proportion of the variance in ISD, with the remainder presumably driven by a combination of function, random biological variation, and measurement error (IUPred being an imperfect proxy for ISD or whatever other correlated biophysical property truly underlies the trend).
 
@@ -76,11 +96,19 @@ There is also no change in ISD with age over recent plant pfams (i.e. all pfams 
 
 Recent animal pfams have higher mean disorder (0.36) than recent plant pfams (0.26) (Welch’s t-test p = 4 × 10−5, figure 1a shows how this result depends on age within the recent pfam categories), with the latter still higher than ancient pfams (0.21). The difference between animals and plants does not reflect differences in the birth process alone; even in ancient pfams that are shared by plants and animals, mean ISD is 0.27 in animals vs. 0.24 in plants, a smaller but still significant difference (Wilcoxon signed rank test [a paired, non-parametric test] on difference p = 0.005). These results are compatible with animal domains experiencing more selection for high ISD than plants; plant domains have consistently less disorder with the difference being more pronounced in young, lineage-specific domains. This may be because plants produce aggregation inhibiting molecules (Velander et al., 2017), thus reducing the risk that protein aggregation poses to plant cells (see Discussion).
 
-## Trends in amino acid frequencies
+### Trends in amino acid frequencies
 
 IUPred scoring of ISD primarily reflects amino acid composition, with hydrophilicity being a major determinant of disorder (Dosztányi et al., 2005b; Wilson et al., 2017). Our larger data set has sufficient power to investigate age trends in the frequencies of each of the 20 amino acids individually, rather than just trends in the single IUPred summary statistic. This can reveal which amino acids drive our ISD results, as well as other potentially interesting patterns in amino acid occurrence.
 
 Trends in amino acid frequencies with age among ancient pfams are essentially identical whether they are assessed using only plant data or only animal data (Figure 2A, Spearman’s ρ = 0.94, p = 6 × 10−6, unweighted Pearson’s R = 0.98, p = 8 × 10−14). In subsequent analyses beyond Figure 2, we therefore pool data across all species in our data set to calculate the phylostratigraphy slopes among ancient pfams with higher resolution.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig2-v2.jpg)
+
+**Figure 2.:** Results are shown for non-transmembrane pfams. Phylostratigraphy slopes are in units of the change in percentage points of an amino acid per billion years. ‘Ancient’ refers to pfams older than 2101 MY, assessed in only plant or only animal instances, whereas ‘plant’ and ‘animal’ slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, again assessed in only plant or only animal instances. Lines indicate the standard errors on the slopes. Points are color-coded by their hydrophobicity, as measured by 1-mean relative solvent accessibility (RSA) (Tien et al., 2013), such that buried, hydrophobic amino acids are dark purple, and exposed, hydrophilic amino acids are yellow. RSA scores are based on the water-accessible surface area of amino acids in a training set of proteins of known structure. Amino acid shapes indicate whether they are essential in animals. In (A), y=x is shown as a dashed line, in all other plots dashed lines for x=0 and y=0 are shown for clarity. In (A), Spearman’s ρ = 0.94, p = 6 × 10−6. Spearman correlations for (B), (C), and (D) are not significant (p = 0.8, 0.8, and 0.2, respectively).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Phylostratigraphy slopes are in units of percentage points of composition per billion years. Lines indicate the standard errors on the slopes. ‘Ancient’ refers to pfams older than 2101 MY (nontransmembrane and transmembrane, Spearman’s p = 0.7 and 0.5), calculated over all lineages, whereas ‘animal’ (nontransmembrane and transmembrane, Spearman’s p = 0.8 and 0.6) and ‘plant’ (nontransmembrane and transmembrane, Spearman’s p = 0.9 and 0.05) slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, assessed in only animal or only plant instances.
 
 In contrast, recent animal pfams and recent plant pfams show different trends in amino acid frequencies with age, with slopes of similar magnitude (Welch’s t-test on absolute slope values p = 0.3), but no correlation in value (Figure 2B, p = 0.8). Recent frequency trends are mostly unrelated to ancient trends, with no relationship for animals (Figure 2C, p = 0.8), and a weak correlation for plants that is not significant (Figure 2D, p = 0.2) and is entirely driven by cysteine.
 
@@ -96,6 +124,18 @@ To assess whether animal-specific trends also reflect amino acid availability, w
 
 Instead, the ISD score returned by IUPred seems to best summarize animal-specific trends in overall sequence hydrophobicity. We do not find differences among amino acids in hydrophobicity scores such as relative solvent accessibility (RSA) (Tien et al., 2013). While we do see a tendency for hydrophobic amino acids to have positive phylostratigraphy slopes among animal pfams and negative slopes among plant pfams (amino acids are colored by RSA in Figures 2 and 3), this correlation between RSA and phylostratigraphy slope is not significant for any of the lineage- or phylostrata-specific subsets of the data set shown in Figure 2 (see Figure 2—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig3-v2.jpg)
+
+**Figure 3.:** Phylostratigraphy slopes are in units of percentage point change in composition per billion years. Taxonomic and temporal sub sets of the data are as the same as in Figure 2. Lines indicate the standard errors on the slopes. Points are color-coded by their hydrophobicity, as measured by 1-relative solvent accessibility (RSA) (Tien et al., 2013), such that buried, hydrophobic amino acids are dark blue, and exposed, hydrophilic amino acids are yellow. In all plots, y=x is shown as a dashed line. Congruence is strong for ancient pfams in (A) (Spearman’s ρ = 0.83, p = 5 × 10−6), weakly significant for animal-specific pfams in (B) (p = 0.06) where transmembrane trends tend to be weaker and leucine is an outlier, and not detectable in our weakly powered plant-specific data set in (C) (p = 0.3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Changeability scores are relative to the least changeable amino acid, tryptophan (W), which (Tourasse and Li, 2000) assigned a value of 1 in both the transmembrane and the non-transmembrane cases. Larger absolute changeability scores for transmembrane residues may therefore reflect low changeability of tryptophan, rather than higher changeability across the board. Phylostratigraphy slopes are in units of percentage points of composition per billion years. Insofar as changeability predicts phylostratigraphy slopes, especially for ancient trends, the relationship goes in the opposite direction to that predicted by homology detection bias. Lines indicate the standard errors on the slopes. ‘Ancient’ refers to pfams older than 2101 MY (nontransmembrane Spearman’s ρ = 0.50, p = 0.02; transmembrane ρ = 0.40, p = 0.08), calculated over all lineages, whereas ‘animal’ (nontransmembrane and transmembrane Spearman’s p = 0.53 and 0.9) and ‘plant’ (nontransmembrane and transmembrane Spearman’s p = 1.0 and 0.8) slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, assessed in only animal or only plant instances.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Phylostratigraphy slopes are in units of percentage points of composition per billion years. Lines indicate the standard errors on the slopes. ‘Ancient’ refers to pfams older than 2101 MY (nontransmembrane and transmembrane, Spearman’s p = 1.0 and 0.7), calculated over all lineages, whereas ‘animal’ (nontransmembrane and transmembrane, Spearman’s p = 0.7 and 0.6) and ‘plant’ (nontransmembrane and transmembrane, Spearman’s p = 0.9 and 0.2) slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, assessed in only animal or only plant instances.
+
 What is more, if hydrophobicity was the main determinant of phylostratigraphy slopes, we would expect amino acid composition to evolve differently in a hydrophobic membrane environment than in the cytosol. However, amino acid slopes are highly correlated between transmembrane and non-transmembrane ancient pfams (Figure 3A). Clearly, trends among ancient domains are not primarily driven by hydrophobicity. Amino acid slopes are also weakly, albeit not significantly, correlated between transmembrane and non-transmembrane pfams in animals (Figure 3B). Breaking this animal correlation is leucine, a clear outlier in that it is enriched in young transmembrane pfams but depleted in young non-transmembrane pfams. Leucine also shows the same pattern to some degree among ancient pfams. There is very little power to detect a correlation in plants, should it exist (Figure 3C).
 
 There has been concern that phylostratigraphy slopes could be driven by homology detection bias (Moyers and Zhang, 2015, Moyers and Zhang, 2016; Wilson et al., 2017). In this case, amino acids that are more changeable, as assessed by the changeability scores of Tourasse and Li, 2000, making homology more difficult to detect, should be over-represented in young genes. However, we find if anything the opposite: more changeable amino acids are (slightly) enriched rather than depleted among the oldest of ancient pfams (Figure 3—figure supplement 1, Spearman’s ρ = 0.50, p = 0.02 for nontransmembrane pfams, and ρ = 0.40, p = 0.08 for transmembrane ancient pfams). Our results are therefore not driven by homology detection bias even at extremely long timescales. There is no correlation between recent animal (p = 0.57) or recent plant (p = 0.7) phylostratigraphy slopes and amino acid changeability, and therefore no evidence that these results are affected by homology detection bias either. Furthermore, we note that homology detection bias is expected to create similar patterns for all taxa. The fact that the strength and even direction of amino acid trends can be different for different taxa is itself also evidence against a strong role for homology detection bias.
@@ -106,15 +146,39 @@ Our amino acid phylostratigraphy slopes do not correlate with the flux values of
 
 The order of recruitment ranking is taken from Trifonov, 2000, who estimated a possible consensus chronology from the expectations of 40 amino acid ranking criteria, including such diverse factors as results from experiments into primordial conditions, amino acid complexity, and thermostability. However, 3 of the 40 criteria were based on the amino acid compositions of protein assemblages. Therefore, to ensure non-circularity, we recalculated the consensus order, excluding these criteria and calculating the mean rank, as in Trifonov, 2000 prior to their proposed second step of smoothing by a filtering procedure. This recalculation had very little effect on the order of amino acids, and our correlation in ancient nontransmembrane pfams remains significant (Figure 4A, Spearman’s ρ = −0.58, p = 0.008), although the correlation for ancient transmembrane pfams is no longer on its own robust to multiple testing (Figure 4B, Spearman’s ρ = −0.47, p = 0.04).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig4-v2.jpg)
+
+**Figure 4.:** Phylostratigraphy slopes for non-transmembrane (A) and transmembrane (B) pfams are in units of percentage points of composition per billion years, with lines indicating the standard errors on the slopes. Phylostratigraphy slopes for ancient pfams are calculated over all lineages, and include all pfams over 2101 MY. Consensus order is modified from Trifonov, 2000 (see description in Results) and is given as rank data, such that the first amino acid to be recruited is given a rank of 1. Regression slopes are shown as dashed lines. Late-recruited amino acids are rare in the most ancient non-transmembrane pfams (A) (Spearman’s ρ = −0.58, p = 0.008) and transmembrane pfams (B) (Spearman’s ρ = −0.47, p = 0.04). Points are color-coded by their metabolic costliness to produce (measured as the number of high energy phosphate bonds required for synthesis, plus the energy lost due to the precursors used in the synthesis), as estimated for aerobic conditions in yeast (Raiford et al., 2008), such that the most costly amino acids are blue, and the least costly are yellow. (C) The correlation (Spearman’s ρ) between amino acid phylostratigraphy slope and order of recruitment over different subsets of our data set. X-axis labels indicate the minimum age of pfams included, in billion years. Lines are the standard errors of the Spearman’s ρ values, calculated using the Fisher transformation (Fisher, 1915).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phylostratigraphy slopes are in units of percentage points of composition per billion years. Lines indicate the standard errors on the slopes. ‘Animal’ (nontransmembrane and transmembrane Spearman’s p = 0.6 and 0.07) and ‘plant’ (nontransmembrane and transmembrane Spearman’s ρ = 0.5 and 0.5) slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, assessed in only animal or only plant instances.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Phylostratigraphy slopes are in units of percentage points of composition per billion years, with lines indicating the standard errors on the slopes. ‘Ancient’ refers to pfams older than 2101 MY (nontransmembrane and transmembrane, Spearman’s p = 0.6 and 0.3), calculated over all lineages, whereas ‘animal’ (nontransmembrane and transmembrane, Spearman’s p = 0.2 and 0.03) and ‘plant’ (nontransmembrane and transmembrane, Spearman’s p = 0.5 and 0.7) slopes are calculated over pfams appearing after the divergence between the animal/fungi and plant lineages, 1496 MY, assessed in only animal or only plant instances.
+
 The order of recruitment ranking is highly speculative, and correlations with it could be driven by a single correlated amino acid physiochemical property. Specifically, amino acids with very simple structures (A, G, and V) have steeper positive phylostratigraphy slopes than any other amino acids, and this alone may drive our observed correlation between phylostratigraphy slopes and order of recruitment. We note that order of recruitment is not significantly correlated with phylostratigraphy slopes in more recent lineages (Figure 4—figure supplement 1). This is in agreement with the broader hypothesis of Jordan et al., 2005 that the order of recruitment shaped early amino acid availabilities and hence protein compositions, but is hard to reconcile with alternative explanations in which amino acid simplicity is directly causally responsible.
 
 Our interpretation of these results is that amino acids that were introduced late into the genetic code remained relatively rare for a prolonged period of time, well after the genetic code was complete. To determine for how long, we ask when the correlation between phylostratigraphy slope and order of recruitment is strongest (Figure 4C). The strongest correlation is with slope over the three oldest phylostrata in our data set. These span the pfams found in last universal common ancestor (LUCA), through to pfams present in all extant eukaryotic but no prokaryotic lineages. The strength and significance of the correlation between order of recruitment and phylostratigraphy slope decrease if younger phylostrata are included, suggesting that from the LECA onward, the order of recruitment into the genetic code no longer shaped amino acid availability.
 
 We do not believe our order of recruitment results to be a byproduct of a correlation with amino acid costliness. This is because there is no more than marginal significance for correlations between phylostratigraphy slope and the metabolic cost of amino acid production in yeast (Figure 4—figure supplement 2; amino acids are color-coded by costliness in Figure 4; Raiford et al., 2008).
 
-## Trends in clustering
+### Trends in clustering
 
 Finally, we consider whether there are any trends in amino acid order. Specifically, a temporal trend in the value of a ‘clustering’ metric has previously been reported for mouse gene families (Foy et al., 2019). This clustering metric calculates the degree to which hydrophobic amino acids tend to lie close together along the primary sequence, normalized to ensure that values do not depend on length or amino acid frequencies (Irbäck et al., 1996) (see Materials and methods for a full technical description). Not only is there no causal link by which amino acid composition affects clustering, there is also no significant correlation (Pearson’s p = 0.06 across non-transmembrane pfams) We confirm, using our considerably larger data set, that young pfams (Figure 5A, slope = −0.037, R2 = 0.028, p = 1 × 10−50), and young proteins (Figure 5—figure supplement 1A; slope = −0.031, R2 = 0.033, p = 5 × 10−132) have more clustering of their hydrophobic amino acids. In Figure 5—figure supplement 1B, we show that our improved methods for assigning gene age result in a steeper slope, that is, a larger effect size, for mouse genes than that reported by Foy et al., 2019: −0.056 instead of −0.045. We note that while the proportion of variance in clustering that is explained by age is small, this is driven at least in part by large denominator variance due by domain function or random variation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig5-v2.jpg)
+
+**Figure 5.:** n (number of pfams) = 8002, 3100, 2456, and 183 for all, ancient, animal, and plant groups, respectively. Clustering has an expected value of 1 for randomly distributed amino acids. Results are shown for non-transmembrane pfams. (A) Each data point consists of the average across all homologous instances of a pfam, across all species in which the pfam occurs. Phylostratigraphy assigns these to age classes, dated using timetree. To visualize our results, every age class is represented by a weighted box plot, where the width of the plot indicates the number of pfams in that age class. The median is shown in red, with the boxes representing upper and lower quartiles (the 75th and 25th percentile), and the whiskers indicating 9 and 91 quantiles. For age classes with only a single pfam, values are presented as red dots. For clarity of presentation our plots do not show outliers, although these are included in our linear regression models. The blue line is the linear regression slope calculated over all lineages. Slope = −0.039, R2 = 0.030, p = 3 × 10−54. Slope represents the average decrease in clustering score per billion years. (B) Phylostratigraphy slopes (in units of change in clustering per billion years) for pfams are calculated over different phylostrata subsets of the data (Figure 5—figure supplement 2), and shown with their 95% confidence intervals. The left-most point corresponds to the regression slope in (A).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Clustering has an expected value of 1 for randomly distributed amino acids. Each data point consists of the average across all instances of homologous pfams, across all species in which it occurs. Phylostratigraphy assigns these to age classes, dated using timetree. Each age class is represented by a weighted box plot, where the width of the plot indicates the number of pfams in that age class. The median is shown in red, with the boxes representing upper and lower quartiles (the 75th and 25th percentile), and the whiskers indicating 9 and 91 quantiles. For age classes with only a single pfam, values are presented as small red dots. For clarity of presentation our plots do not show outliers, although we note that these are included in our linear regression models. The relationship is a little weaker for all genes (A; blue linear regression slope = −0.031, R2 = 0.033, p = 5 × 10−132) than it is for genes found in mouse (B; blue linear regression slope = −0.056, R2 = 0.060, p = 4 × 10−56). In both plots, yellow points show the average clustering scores taken from Foy et al., 2019 mouse gene analysis, with corresponding yellow linear regression, slope = −0.045, R2 = 0.067, p = 8 × 10−221. Our improved gene age assignments thus increased the strength of the relationship for mouse genes, where the relationship is stronger than for genes across all taxa.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/57347/elife-57347-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** There is limited power to see trends among young plant domains. Linear regressions are calculated over recent animal (A, brown line) or recent plant domains (B, green line), and over ancient pfams (black lines), specific to occurrences in either animals (A) or plants (B). Gray areas indicate 95% confidence intervals on the linear regression slopes, which are so small for the ancient slope as to be difficult to see. Y-axes are cropped for easier comparison of slopes. Other details are as in Figure 5A.
 
 Unlike the trend in ISD, the trend in clustering with age is remarkably consistent across age categories (Figure 5—figure supplement 2, Figure 5B: slope = −0.067, p = 0.0005 for animal-specific domains and slope = −0.025, p = 0.008 for ancient domains). While the confidence intervals increase for subsets that contain less data (such as the set of young plant pfams, for which we have little power), they always overlap the clustering slope calculated over all lineages and all phylostrata. This suggests that trends in clustering may be universal. If new sequences were born with similar clustering values, this would imply that the dispersion of hydrophobic amino acids change at an approximately constant rate over the whole of evolutionary time, with the observed trend resulting from the fact that the change has had more time to take place in older sequences. Under this interpretation, the data is also compatible with a slower contemporary rate of change of clustering in ancient pfams.
 
@@ -150,7 +214,7 @@ In conclusion, trends in the evolution of amino acid composition show surprising
 
 ## Materials and methods
 
-## Data compilation
+### Data compilation
 
 We compiled a data set of whole-genome sequences with a sequencing status of ‘complete’ from the GOLD database (Mukherjee et al., 2019, accessed August 7, 2018), resulting in a list of 1138 unique species. We then downloaded species from the Ensembl Biomart interface databases (Kinsella et al., 2011; Zerbino et al., 2018, fungi V40, plant V40, metazoan V40, protest v40, and main V93, accessed between July 31, 2018 and September 12, 2018). Of the resulting 306 species, 19 were not found in the GOLD species list and thus were excluded. We next searched the NCBI RefSeq repository (O'Leary et al., 2016, accessed between September 27, 2018 and October 26, 2018) for the remaining GOLD species, excluding archaeal, bacterial, and viral genomes due to lack of phylogenetic resolution. Of the resulting 948 species, 344 had been annotated, were in the GOLD species list, and were not also in Ensembl Biomart.
 
@@ -160,11 +224,11 @@ Protist genomes were retained, but used only as outgroups for dating (for a revi
 
 Finally, genes often have multiple annotated transcripts/proteins, resulting in non-independent datapoints. We chose a single transcript to represent each gene, specifically the closest homolog to the most closely related sister species in our data set, identified using reciprocal Blastp (Altschul et al., 1990). If a gene failed to produce any hits below an e-value cutoff of 10−3, the longest gene transcript was chosen instead.
 
-## Domain annotation
+### Domain annotation
 
 Ensembl provided Pfam annotations for all protein transcripts, which are based on InterProScan with default parameters. These annotations were manually downloaded from the BioMart web interface and paired with their corresponding protein using Ensembl’s unique transcript identifiers. To make our data set internally consistent, we replicated Ensembl’s annotation methodology by processing all NCBI sequences with InterProScan (Jones et al., 2014, v.5.20–69.0 downloaded June 20, 2018) using default parameters. All sequences without an associated Pfam were discarded from our analyses.
 
-## Domain filtering
+### Domain filtering
 
 Because a well-resolved tree is crucial for correct age assignment, we focus on eukaryotic genes. Contamination is a major problem in gene annotation (Kryukov and Imanishi, 2016; Merchant et al., 2014; Salzberg, 2017), so we filtered our data set for likely contaminants, in addition to horizontally transferred genes. While horizontally transferred genes are not contaminants, their unusual form of inheritance means is likely to produce incorrect estimates of gene ages. The same applies to the unique evolutionary history of organelles.
 
@@ -180,19 +244,19 @@ The phylogenetic distribution of some remaining pfams appeared indistinguishable
 
 We also remove all genes that contain a pfam excluded as described above.
 
-## Age assignment
+### Age assignment
 
-## Pfams
+#### Pfams
 
 Pfam domains were assigned a date of evolutionary origin using TimeTree, using the ‘build a timetree’ option. This option returns the mean divergence times calculated over all published molecular time estimates. We assumed each pfam originated halfway between the node of the most recent common ancestor of all species in which the pfam originated, and the node prior to that. To add additional temporal resolution to the oldest domains, we identified any Pfams in our data set likely to have been present in the first eukaryotic common ancestor, defined as those pfams present both in non-protist eukaryotes and in the protist group ‘Excavata’ (species included in our data set are: Naegleria gruberi, Giardia intestinalis, Giardia lamblia, Spironucleus salmonicida, Angomonas deanei, Bodo saltans, Leishmania braziliensis, Leishmania donovani, Leishmania infantum, Leishmania major, Leishmania mexicana, Leishmania panamensis, Leptomonas pyrrhocoris, Leptomonas seymouri, Perkinsela sp., Strigomonas culicis, Trypanosoma brucei, Trypanosoma cruzi, Trypanosoma rangeli, Trichomonas vaginalis), which is considered a possible outgroup to the other eukaryotes, and with an estimated date of 2230 MYA (Hedges et al., 2001; Hedges et al., 2006; Parfrey et al., 2011).
 
 Beyond TimeTree, pfams inferred to have been present in the LUCA (Weiss et al., 2016) were dated as 4090 MY old. For those pfams that are found in eukaryotes and bacteria, but not archaea, and also those pfams that are found in eukaryotes and archaea, but not bacteria, that is, for those that emerged after LUCA but prior to the emergence of eukaryotes, we assigned them the age of 3145 MY, as the halfway point between the emergence of eukaryotes and LUCA. Dates of these ancient events are imprecise. Recent work has also highlighted the difficulty in identifying domains present in LUCA (Berkemer and McGlynn, 2020).
 
-## Full genes
+### Full genes
 
 We dated each gene according to the age of its oldest Pfam. Pfams represent highly conserved sequences, so it is unlikely that genes would be categorized as older based on non-Pfam sequences. Note that while different parts of a gene have different ages, here we classify a protein’s age based on the age of its oldest pfam. We excluded genes without any annotated pfams from this analysis, which helps to remove sequences that are not truly genic, but may result in an underestimate of disorder in our data set as a whole if it is the youngest, most disordered genes that are least likely to have annotated domains.
 
-## Homology groups
+### Homology groups
 
 Homologous sequences share a common evolutionary origin, and therefore treating them as independent datapoints is a form of pseudoreplication (Wilson et al., 2017). To correct for this, an average taken across each Pfam was treated as a single datapoint in our domain analyses.
 
@@ -200,36 +264,54 @@ For genes, this was achieved by grouping according to their oldest Pfam. For gen
 
 The homology group files used in our analyses are available at https://doi.org/10.6084/m9.figshare.12037281.
 
-## Metrics
+### Metrics
 
-## Transmembrane status
+#### Transmembrane status
 
 Genes and pfams were assigned as either transmembrane or non-transmembrane using the program tmhmm (Krogh et al., 2001), which predicts the number and position of transmembrane helices within a protein sequence. A gene was designated as transmembrane if it contained over 18 amino acids that are predicted to be in a transmembrane helix (Krogh et al., 2001). A pfam was designated as transmembrane if it overlapped with a predicted transmembrane helix by a minimum of 50% of the pfam length, or if a transmembrane helix overlapped with a pfam by a minimum of 50% of the helix length; 50% was chosen as an arbitrary albeit reasonable cutoff for the designation of transmembrane status.
 
-## Disorder
+### Disorder
 
 Disorder predictions were made for each sequence using IUPred 2 (Dosztányi et al., 2005a; Mészáros et al., 2018), which assigns a score between 0 and 1 to each amino acid. Each protein’s ISD score was calculated by averaging over the values of all amino acids. To determine the disorder of each Pfam, we averaged over only the relevant subset. In order to obtain results with interpretable units, we show untransformed results; however, results are qualitatively similar if data is transformed (using a Box-Cox transform with the optimal value of lambda to achieve normality) prior to analysis. We also recalculated IUPred scores after first removing cysteine residues from protein sequences.
 
-## Amino acid composition
+### Amino acid composition
 
 The fractional amino acid composition was found by counting the occurrences of each of the 20 amino acids in each protein or pfam and dividing by the length of the sequence. In order to obtain results with easily interpretable units, we show results for the untransformed proportions. Our qualitative results do not change if amino acid fractions are arcsine transformed (the most appropriate transform for proportions [Sokal and Rohlf, 1995]) prior to analysis (results not shown).
 
-## Clustering
+### Clustering
 
 To determine clustering scores, we followed Foy et al., 2019 and compared the variance of the hydrophobicity among blocks of s = 6 consecutive amino acids to the mean hydrophobicity, to produce a normalized index of dispersion. If the length L of a protein was not a multiple of 6, we took the average of all possible p = (L modulo 6) frames, truncating the ends appropriately. The six most hydrophobic amino acids Leu, Ile, Val, Phe, Met, and Trp were scored as +1, and the remaining standard amino acids to −1, as in Irbäck et al., 1996 and Foy et al., 2019. Non-standard amino acid residue abbreviations were also scored as +1 or −1, interpreted as follows: B as corresponding to D or N and hence −1; J as corresponding to either I or L and hence +1; Z as corresponding to either E or Q and hence −1; U as selenocysteine and O as pyrrolysine, both scored as −1.
 
-For a sequence of length N = ⌊L/s⌋ in frame 1≤ f≤p, the scores for each block k = 1,..., N/s of six amino acids were summed to σk,f, with the full truncated sequence summing in total toMf= ∑k=1Nsσk,f.
+For a sequence of length N = ⌊L/s⌋ in frame 1≤ f≤p, the scores for each block k = 1,..., N/s of six amino acids were summed to σk,f, with the full truncated sequence summing in total to
 
-The normalized index of dispersion for a particular frame was then calculated asψf= sN∑k=1N/s1K (σk,f-sMf/N)2 with the normalization factorK=sN2-Mf2N2-N 1- sN.
+$$
+M_{f}= \sumk=1\frac{N}{s}\sigma_{k,f}.
+$$
 
-The total normalized index of dispersion was then calculated by taking the average over all possible framesψ = 1p∑f=1pψf.
+The normalized index of dispersion for a particular frame was then calculated as
+
+$$
+ψ_{f}=\frac{s}{N}\sumk=1N/s\frac{1}{K}(\sigma_{k,f}-sM_{f}/N)^{2}
+$$
+
+with the normalization factor
+
+$$
+K=s\frac{N^{2}-M_{f}^{2}}{N^{2}-N}1-\frac{s}{N}.
+$$
+
+The total normalized index of dispersion was then calculated by taking the average over all possible frames
+
+$$
+ψ = \frac{1}{p}\sumf=1pψ_{f}.
+$$
 
 Clustering scores were again analyzed as raw scores for ease of interpretation of slope units; however, results are qualitatively similar if the data are Box-Cox transformed prior to analysis, as for disorder.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical work in this research was performed using R. Our major results throughout the manuscript are based on ‘phylostratigraphy slopes’, which come from simple linear models of the effect of age on the particular protein metric of interest (i.e. ISD, percent amino acid composition, or clustering). Linear models include all homology groups. The function tidy from the broom package was used to convert model outputs to data frames for analysis and plotting, and to calculate 95% confidence intervals for regression slopes (Robinson, 2014). We used the base function lm to perform basic linear models. The lm function was also used to perform weighted least squares regression on variances. Plots were generated in R, using packages ggplot2 and gridExtra. The parametric boxplots were drawn using the quantile function in base R.
 
-## Data availability
+### Data availability
 
 All scripts used in this work can be accessed at: https://github.com/MaselLab/ProteinEvolution copy archived at swh:1:rev:1c3b5dcc3dbce35acc1bbbfaafa29fc6398ecee8. Our raw data and homology files used in our analyses are available at https://doi.org/10.6084/m9.figshare.12037281.

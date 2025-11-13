@@ -15,11 +15,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01pxwe438 Montreal Neurological Institute and Hospital, McGill University Montreal Canada
-2. https://ror.org/00sekdz59 Flatiron Institute, Center for Computational Neuroscience New York United States
-3. https://ror.org/05c22rx21 MILA – Quebec IA Institute Montreal Canada
-4. https://ror.org/05cf8a891 Departments of Psychiatry and Neuroscience, Albert Einstein College of Medicine Bronx United States
-5. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Netherlands
+1. Montreal Neurological Institute and Hospital, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+2. Flatiron Institute, Center for Computational Neuroscience New York United States ([ROR:00sekdz59](https://ror.org/00sekdz59))
+3. MILA – Quebec IA Institute Montreal Canada ([ROR:05c22rx21](https://ror.org/05c22rx21))
+4. Departments of Psychiatry and Neuroscience, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+5. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
@@ -45,7 +45,7 @@ In this paper we introduce the Python Neural Analysis Package (Pynapple), design
 
 ## Results
 
-## Core features of Pynapple
+### Core features of Pynapple
 
 At its core, Pynapple is object-oriented. Because objects are designed to be self-contained and interact with each other through well-defined methods, users are less likely to make errors when using them. This is because objects can enforce their own internal consistency, reducing the chances of data inconsistencies or unexpected behavior. Overall, object-oriented programming is a powerful tool for managing complexity and reducing errors in scientific programming. Pynapple is built around only five objects that are divided into three categories: two objects represent event timestamps (one or several), two represent time-varying data (one or several time series at the same sampling times), and one represents time epochs. Raw or preprocessed data are loaded into these objects in the coding environment (Figure 1). The data loaders ensure that all loaded objects have the same time base. Hence, once objects are constructed, the user does not have to remember properties of the data such as the sampling frequency or alignment of data indices to clock time. Then, these objects can be manipulated with their own methods (i.e., object-specific functions). A large majority of data manipulations needed for most users can be achieved with a small number of methods. From there, Pynapple offer some foundational analyses, such as cross-correlation of event times. On top of this, the user may write analytical code that is project specific.
 
@@ -73,7 +73,7 @@ In addition to the ability to apply any methods of the Ts object to its members,
 
 While there are relatively few objects, and while each object has relatively few methods, they are the foundation of almost any analysis in systems neuroscience. However, if not implemented efficiently, they can be computationally intensive and if not implemented accurately, they are highly susceptible to user error. The implementation of core features in Pynapple addresses the concerns of efficiency and accuracy. Crucially, all units are indexed by seconds across the entire package, which limits the need for users to account for indexing and alignment between different streams of data at different sampling rates. For example, a user can simply use spikes.value_from(position) to get the animal’s position at each spike time, rather than costly and error-prone routines in which a user needs to identify matching indices for the corresponding timestamps across arrays containing spikes and behavioral information. Another common issue in data analysis is to analyze two time series that are not recorded at the same sampling rate. Once data are loaded in the same time base (i.e., the same time 0), they can keep their original sampling times. Using the function value_from from one object with the other object as argument will provide two time series with the same number of samples and the same sampling times, which will simplify further analyses. However, this means it is essential that all objects are loaded in the same time base for these methods to function correctly. Pynapple anticipates this by providing a customizable data loader, ensuring time bases are always loaded correctly.
 
-## Importing data from common and custom pipelines
+#### Importing data from common and custom pipelines
 
 The proliferation of experimental methods has come with a proliferation of data formats, as well as the need to rapidly develop new formats that meet new experimental needs. Usually, these data formats are dependent on the software that was used to preprocess the raw data, making them difficult to load for further analysis. Additionally, an experimental setup can generate multiple streams of data that are saved within multiple files of various types. Thus, a universal toolbox should be able to load popular data formats into a common framework and offer the user the ability to write functions to load their own data types.
 
@@ -95,7 +95,7 @@ To avoid repeating the process of inputting session information and synchronizat
 
 Many other preprocessing pipelines exist and can often be unique to a lab or even to an individual project. To accommodate present and future needs for these specific pipelines, the documentation of Pynapple provides an easy-to-follow recipe for creating a custom I/O class that inherits the BaseLoader and can interact with a pre-existing NWB file. There are multiple benefits of the inheritance approach of data loading classes within the I/O layer of Pynapple. First, future development of new I/O classes will not affect the core and processing layers of Pynapple. This ensures long-term stability of the package. Second, users can develop their own custom I/O using available template classes. Pynapple already includes several of such templates and we expect this collection to grow in the future. Third, users can still use Pynapple without using the I/O layer of Pynapple. Last, in order to apply previous analyses, or analyses developed in another lab, to new data or data types a user only needs to develop a new I/O class for their data. This will import the data to the common Pynapple core from which the same analysis pipeline can be used.
 
-## Foundational data processing
+#### Foundational data processing
 
 The basic methods that manipulate the core objects in Pynapple allow users to perform common, but powerful, neuroscience analyses (Figure 2). These analyses are easy to use because they describe the relationships between time series objects, while requiring the fewest number of parameters to be set by the user. This minimizes complexity, while maximizing generalizability. The operations in Pynapple can recreate neuroscience analyses from a broad number of subdisciplines. These analyses form the foundation of neuroscience data analysis in Pynapple. To illustrate the versatility of Pynapple and how it can be used, we reanalyzed five openly available datasets.
 
@@ -117,7 +117,7 @@ Some of the analyses presented so far are designed for spikes (and discrete even
 
 The examples shown in Figures 4 and 5 show how these core analyses are useful for rapid data screening with just a few lines of code in a Jupyter notebook, for example. Overall, these foundational functions form the building blocks of most other analyses in systems neuroscience. Importantly, they are for the most part built-in and only depend on a few widely used external packages. This ensures that the package can be used in a near stand-alone fashion, without relying on packages that are at risk of not being maintained or of not being compatible in the near future. All other developments of analysis pipelines take place outside Pynapple, ensuring the core package is only updated rarely and remains lightweight.
 
-## Pynacollada: a collaborative library for specialized and continuously updated data analyses
+#### Pynacollada: a collaborative library for specialized and continuously updated data analyses
 
 Pynapple is designed to be stable in the foreseeable future and its core functionality is not meant to be modified. However, actual data analysis usually requires more than the available core functions. This type of data analysis is ‘fluid’, constantly updated by new software developments and theoretical work. Furthermore, this kind of development is collaborative in nature and the supervision of such projects is less sensitive than that of a stable package. To balance the needs for stability and flexibility, high-level functions were separated from Pynapple and included instead in Pynacollada: the Pynapple Collaborative repository hosted on GitHub.
 

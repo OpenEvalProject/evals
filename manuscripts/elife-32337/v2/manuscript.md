@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.32337.001 Eye opening, a natural and timed event during animal development, influences cortical circuit assembly and maturation; yet, little is known about its precise effect on inhibitory synaptic connections. Here, we show that coinciding with eye opening, the strength of unitary inhibitory postsynaptic currents (uIPSCs) from somatostatin-expressing interneurons (Sst-INs) to nearby excitatory neurons, but not interneurons, sharply decreases in layer 2/3 of the mouse visual cortex. In contrast, the strength of uIPSCs from fast-spiking interneurons (FS-INs) to excitatory neurons significantly increases during eye opening. More importantly, these developmental changes can be prevented by dark rearing or binocular lid suture, and reproduced by the artificial opening of sutured lids. Mechanistically, this differential maturation of synaptic transmission is accompanied by a significant change in the postsynaptic quantal size. Together, our study reveals a differential regulation in GABAergic circuits in the cortex driven by eye opening may be crucial for cortical maturation and function.
+Eye opening, a natural and timed event during animal development, influences cortical circuit assembly and maturation; yet, little is known about its precise effect on inhibitory synaptic connections. Here, we show that coinciding with eye opening, the strength of unitary inhibitory postsynaptic currents (uIPSCs) from somatostatin-expressing interneurons (Sst-INs) to nearby excitatory neurons, but not interneurons, sharply decreases in layer 2/3 of the mouse visual cortex. In contrast, the strength of uIPSCs from fast-spiking interneurons (FS-INs) to excitatory neurons significantly increases during eye opening. More importantly, these developmental changes can be prevented by dark rearing or binocular lid suture, and reproduced by the artificial opening of sutured lids. Mechanistically, this differential maturation of synaptic transmission is accompanied by a significant change in the postsynaptic quantal size. Together, our study reveals a differential regulation in GABAergic circuits in the cortex driven by eye opening may be crucial for cortical maturation and function.
 
 ## Introduction
 
@@ -29,27 +29,164 @@ In this study, we demonstrate that eye opening rapidly weakens the inhibitory sy
 
 ## Results
 
-## Rapid weakening of synaptic transmission from Sst-INs onto PCs coincides with eye opening
+### Rapid weakening of synaptic transmission from Sst-INs onto PCs coincides with eye opening
 
 To explicitly identify Sst-INs in the neocortex, we crossed the Sst-IRES-Cre mice with the loxP-flanked Rosa26reporter-tdTomato mice. Sst-INs in the resulting progeny expressed red fluorescent protein tdTomato in the brain, and this facilitated electrophysiological recordings of Sst-INs (Taniguchi et al., 2011). We focused on layer 2/3 of the primary visual cortex. Consistent with previous reports (Hu et al., 2013; Pfeffer et al., 2013), we observed that ~5.2% of tdTomato+ neurons expressed PV (5.2 ± 0.3%, nine slices from three mice, Figure 1—figure supplement 1B). Meanwhile, ~17.2% of tdTomato+ neurons showed the FS properties (36 out of 209, Figure 1—figure supplement 1C) (Hu et al., 2013; Jiang et al., 2015). Furthermore, FS tdTomato+ cells exhibited the distinctive basket cell morphology (4 out of 4, Figure 1—figure supplement 1C). These cells were omitted from further analysis. Non-FS tdTomato+ cells were further characterized by morphological properties, including ascending axonal arborizations with extensive branching in layer one and horizontal collaterals (19 out of 20, Figure 1—figure supplement 1A), consistent with those of Martinotti cells as previously described (Fino and Yuste, 2011).
 
 To study synaptic transmission from Sst-INs to PCs, we performed triple or quadruple whole-cell patch-clamp recordings to record three or four cells in layer 2/3 simultaneously: a tdTomato+ Sst-IN and two or three nearby PCs whose cell bodies were within ~100 µm apart (Figure 1A and B). The PCs were identified by morphological characteristics (i.e., a large pyramidal shaped soma, basal and apical dendrites decorated with spines) and firing properties (Figure 1—figure supplement 3A and Table 1) (Lazarus and Huang, 2011; Schubert et al., 2001). Once all recordings were established, serial action potentials (at least 20 trials) were triggered in tdTomato+ Sst-IN, and the inward unitary inhibitory postsynaptic currents (uIPSCs) were measured in PCs (Figure 1C and D). To systematically study the development of synaptic transmission from Sst-INs to PCs (Sst-INs→PCs), we examined 391 Sst-IN→PC pairs at different developmental stages. We found that Sst-IN→PC connections emerged at postnatal day 7–8 (P7–8). The connection probability increased significantly from P7–8 to P9–11 (χ2 test, p=0.0046; Figure 1E) and remained largely comparable from P9 to P20 (χ2 test, p=0.149; Figure 1E). Interestingly, we observed a ~65% reduction in the peak amplitude of uIPSCs from P12–13 to P14–15 (P7–8, 17.9 ± 2.9 pA; P9–11, 28.3 ± 5.4 pA; P12–13, 34.3 ± 4.8 pA; P14–15, 11.6 ± 1.8 pA; P16–17, 10.0 ± 1.4 pA; P18–20, 6.0 ± 1.9 pA; one-way ANOVA, F(5,185) = 8.788, p=1.7 × 10−7; Figure 1F). Notably, this dramatic change coincided with the natural eye opening of mice under standard living conditions (Figure 1—figure supplement 2), suggesting that the weakening of Sst-IN→PC uIPSCs may result from eye opening. Although the 10–90% rise time of uIPSCs at P18–20 was significantly longer than that at P7–8 and P12–13, the 10–90% rise time of uIPSCs did not significantly change at P9–17 (Figure 1G). Furthermore, the half-width of uIPSCs did not show any obvious change at P7–20 (Figure 1H). In addition, the total length and complexity of both apical and basal dendrites of PCs exhibited no significant difference between P12–13 and P14–15 mice (Figure 1—figure supplement 3B–I), suggesting that dendritic morphology of PCs remains unchanged during eye opening. Of note, the connection probability and strength of Sst-IN→PC synaptic transmission exhibited similar development properties when we used cesium-based and high Cl- internal solution to record the postsynaptic currents (Figure 1—figure supplement 4).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schema of a quadruple whole-cell recording from an Sst-IN (red) and three PCs (blue) in layer 2/3. (B) Representative fluorescent (tdTomato, Sst-INs; Alexa 488, recorded neurons), IR-DIC, and merged images of a quadruple recording of an Sst-IN and three PCs. The dashed lines indicate the border between layer 1 and layer 2/3. Scale bar, 20 μm. (C) Left, representative traces showing synaptic transmission from an Sst-IN to two PCs recorded at P11. The red and blue lines indicate the averaged traces. Scale bars: 50 mV (vertical, red), 25 pA (vertical, blue), and 20 ms (horizontal). Right, morphological reconstruction of the Sst-IN. Scale bar: 80 µm. (D) Left, representative traces showing synaptic transmission from an Sst-IN to two PCs recorded at P15. Scale bars: 50 mV (vertical, red), 25 pA (vertical, blue), and 20 ms (horizontal). Right, morphological reconstruction of the Sst-IN. Scale bar: 80 µm. (E) The probability of synaptic connection from Sst-INs to PCs at P5–20. Data label indicates the number of pairs in each group. A total of 391 pairs were recorded from 82 mice. (F) Quantification of the peak amplitude of uIPSCs from Sst-INs to PCs at different postnatal ages. (G–H) Quantification of the 10–90% rise time (G) and half-width (H) of uIPSCs at P7–20. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 1—source data 1. Error bars indicate mean ±SEM. *p<0.05; **p<0.01; ***p<0.001; n.s., p>0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top panel, the morphologies of reconstructed non-FS tdTomato+ neurons in layer 2/3 of visual cortex. Bottom panel, corresponding traces of voltage responses to 500 ms current pulse step injections recorded in the current-clamp mode. (B) Some tdTomato+ cells in Sst-tdTomato line expressed PV. Arrowheads indicated PV+/tdTomato+ cells. (C) Top panel, the morphologies of reconstructed fast-spiking tdTomato+ cells. These cells are basket-like interneurons, with dense axonal arborization in layer 2/3. Bottom panel, corresponding membrane voltage responses of cells to current injections.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Quantification of mice undergoing eye opening in each litter (n = 10) from P13 to P15. There were no mice with opened eyes at P13. At P14, 77.9% ± 7.4% of mice had opened eyes; at P15, 100% of mice had opened eyes.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The morphological identity of recorded PCs. Top panel, the morphologies of reconstructed PCs. Bottom panel, corresponding membrane responses of PCs to current injections. (B–G) Quantiﬁcation of the end number of apical dendrites (B), the end number of basal dendrites (C), the node number of apical dendrites (D), the node number of basal dendrites (E), the total length of apical dendrites (F), and the total length of basal dendrites (G) between P12–13 (before eye opening) and P14–15 (after eye opening). (H–I) Sholl analysis of dendritic length per 40 μm radial unit distance from the soma. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 1—source data 1. n.s., p>0.05.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative traces showing synaptic transmission from Sst-INs to PCs recorded at P12 and P15, respectively. Postsynaptic responses were recorded with a cesium-based intracellular solution containing 60 mM Cl-. (B) Summary of connection probability. (C) Quantification of the peak amplitude of Sst-IN→PC uIPSCs. Detailed statistical analysis, detailed data and exact sample numbers are presented in Figure 1—source data 1. *p<0.05; **p<0.01; ***p<0.001; n.s., p>0.05.
+
+**Table 1.**
+ Intrinsic electrophysiological properties of Sst-INs, FS-INs, and PCs in visual cortex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Postnatal day</th>
+      <th>Rin (MΩ)</th>
+      <th>Threshold (mV)</th>
+      <th>Amplitude (mV)</th>
+      <th>Half-width (ms)</th>
+      <th>AHP (mV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Sst-IN</td>
+      <td>P12-13 (n = 46)</td>
+      <td>430.2 ± 33.3</td>
+      <td>−51.7 ± 1.0</td>
+      <td>60.6 ± 0.9</td>
+      <td>2.46 ± 0.10</td>
+      <td>10.6 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>P14-15 (n = 27)</td>
+      <td>332.6 ± 26.6</td>
+      <td>−52.6 ± 1.3</td>
+      <td>61.0 ± 1.1</td>
+      <td>1.76 ± 0.16***</td>
+      <td>11.1 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>P17-20 (n = 30)</td>
+      <td>367.9 ± 27.9</td>
+      <td>−53.7 ± 1.4</td>
+      <td>60.0 ± 0.9</td>
+      <td>1.52 ± 0.07***</td>
+      <td>10.6 ± 0.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FS-IN</td>
+      <td>P12-13 (n = 45)</td>
+      <td>201.8 ± 11.9</td>
+      <td>−44.0 ± 0.8</td>
+      <td>48.1 ± 0.8</td>
+      <td>1.45 ± 0.05</td>
+      <td>19.0 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>P14-15 (n = 18)</td>
+      <td>113.0 ± 8.7***</td>
+      <td>−45.0 ± 1.4</td>
+      <td>47.0 ± 1.1</td>
+      <td>1.03 ± 0.04***</td>
+      <td>18.4 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>P17-20 (n = 29)</td>
+      <td>126.9 ± 8.5***</td>
+      <td>−43.9 ± 1.0</td>
+      <td>49.4 ± 0.8</td>
+      <td>0.86 ± 0.04***</td>
+      <td>19.8 ± 0.4</td>
+    </tr>
+    <tr>
+      <td rowspan="3">PC</td>
+      <td>P12-13 (n = 32)</td>
+      <td>326.6 ± 20.6</td>
+      <td>−46.1 ± 1.3</td>
+      <td>63.8 ± 0.8</td>
+      <td>4.08 ± 0.13</td>
+      <td>11.4 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>P14-15 (n = 15)</td>
+      <td>214.0 ± 12.2***</td>
+      <td>−47.8 ± 1.8</td>
+      <td>65.6 ± 0.9</td>
+      <td>3.86 ± 0.30</td>
+      <td>11.5 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>P17-20 (n = 29)</td>
+      <td>212.4 ± 13.6***</td>
+      <td>−48.0 ± 1.2</td>
+      <td>68.8 ± 1.0***</td>
+      <td>3.45 ± 0.20**</td>
+      <td>12.1 ± 0.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_**p<0.01; ***p<0.001. P14-15 and P17-20 groups were compared with the P12-13 group._
+
 To assess whether other cortical areas undergo similar developmental changes, we measured the connection probability and strength of uIPSCs from Sst-INs to PCs in layer 2/3 of the prefrontal cingulate cortex area 1/2 (Cg1/2) during P9–20 (Figure 2). The connection probability remained comparable from P9 to P20 (χ2 test, p=0.857; Figure 2B). Consistent with the result observed in the visual cortex, the peak amplitude of Sst-IN→PC uIPSCs at P14–15 was significantly smaller than that at P12–13 in Cg1/2 (P9–11, 31.6 ± 6.6 pA; P12–13, 31.0 ± 4.7 pA; P14–15, 11.0 ± 3.1 pA; P16–17, 5.0 ± 1.9 pA; P18–20, 5.7 ± 1.0 pA; one-way ANOVA, F(4,46) = 5.51, p=6.0 × 10−4; Figure 2C). These results suggest that the weakening of Sst-IN→PC synaptic transmission during eye opening exists not only in the visual cortex but also in Cg1/2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig2-v2.jpg)
 
-**Figure 2.:** (A) Representative traces of synaptic transmission from an Sst-IN to a PC in layer 2/3 in the prefrontal Cg1/2 area at P13 and P14. Inset schema indicates paired patch recording of an Sst-IN and a PC. Scale bars: 50 mV (vertical, red), 20 pA (vertical, blue), and 20 ms (horizontal). (B) Histogram of the connection probability from P9 to P20. Data label indicates the number of pairs in each group. (C) Summary of the peak amplitude of uIPSCs from P9 to P20. Detailed statistical analysis, detailed data, and number of experiments are presented in Figure 2—source data 1. *p<0.05; **p<0.01; ***p<0.001; n.s., p>0.05.10.7554/eLife.32337.010Figure 2—source data 1.p values in Figure 2.
+**Figure 2.:** (A) Representative traces of synaptic transmission from an Sst-IN to a PC in layer 2/3 in the prefrontal Cg1/2 area at P13 and P14. Inset schema indicates paired patch recording of an Sst-IN and a PC. Scale bars: 50 mV (vertical, red), 20 pA (vertical, blue), and 20 ms (horizontal). (B) Histogram of the connection probability from P9 to P20. Data label indicates the number of pairs in each group. (C) Summary of the peak amplitude of uIPSCs from P9 to P20. Detailed statistical analysis, detailed data, and number of experiments are presented in Figure 2—source data 1. *p<0.05; **p<0.01; ***p<0.001; n.s., p>0.05.
 
 Together, these results demonstrate that coinciding with eye opening, Sst-IN→PC synaptic transmission dramatically weakens in cortical layer 2/3.
 
-## FS-IN→PC synaptic transmission increases during eye opening
+### FS-IN→PC synaptic transmission increases during eye opening
 
 We further examined whether the strength of synaptic transmission from fast-spiking PV interneurons (FS-INs) to PCs (FS-INs→PCs) could change during eye opening. We took advantage of Lhx6-EGFP transgenic mice, in which the majority of MGE-derived INs were labeled by EGFP. We bred this line onto Sst-tdTomato line (Sst-tdTomato::Lhx6-EGFP line) to distinguish Sst-INs (tdTomato+) from other types of INs (EGFP+/tdTomato-) (Figure 3A) (Tuncdemir et al., 2016). EGFP+/tdTomato- FS-INs were further determined with the fast-spiking properties (Figure 3C, Figure 3—figure supplement 1 and Table 1). We found that 78.4% of recorded EGFP+/tdTomato- cells were FS-INs at P12–18 (87 out of 111, Figure 3—figure supplement 1), and these FS-INs showed basket cell morphology (15 out of 15, Figure 3—figure supplement 1). To examine FS-IN→PC synaptic transmission, an EGFP+/tdTomato- FS-IN and nearby tdTomato-/EGFP- PCs were simultaneously recorded in layer 2/3 of the primary visual cortex (Figure 3B and C). The connection probability did not significantly change from P12 to P18 (χ2 test, p=0.949; Figure 3D). Interestingly, unlike Sst-IN→PC synaptic transmission, the strength of FS-IN→PC uIPSCs at P14–15 and P16–18 was significantly stronger than that at P12–13 (P12–13, 91 ± 14 pA; P14–15, 217 ± 37 pA; P16–18, 279 ± 57 pA; one-way ANOVA, F(2,63) = 8.71, p=4.6 × 10−4; Figure 3E), suggesting that eye opening may increase the FS-IN→PC synaptic transmission. Moreover, the 10–90% rise time and half-width of uIPSCs did not exhibit obvious change between P12–13 and P14–15, while the rise time was significantly shorter at P16–18 than at P12–13 (Figure 3F and G). In Cg1/2 area, we also observed a significantly larger peak amplitude of FS-IN→PC uIPSCs at P14–15 and P17–20 than that at P12–13 (Figure 3—figure supplement 2), while the connection probability was comparable among the three groups (Figure 3—figure supplement 2). Overall, these results demonstrate that FS-IN→PC synaptic transmission increases during eye opening.
 
-## Synaptic transmission from Sst-INs to other types of INs does not change during eye opening
+![Figure 3.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig3-v2.jpg)
+
+**Figure 3.:** (A) Fluorescent image of a visual coronal section from Sst-tdTomato::Lhx6-EGFP line. TdTomato, Sst-INs; EGFP, Lhx6-EGFP cells. Arrowheads indicate EGFP+/tdTomato- cells. Scale bar, 100 μm. (B) Schema of a quadruple whole-cell recording from an FS-IN (EGFP+/tdTomato-) and three PCs in layer 2/3. (C) Two examples of connection from an FS-IN to a PC at P13 and P15. Left panels, membrane potential responses of recorded FS-INs and PCs to current injections. Middle panels, synaptic transmission from FS-INs to PCs. Right panels, the reconstructed morphology of recorded FS-INs. (D) The connection probability from FS-INs to PCs did not change from P12 to P18. Data label indicates the number of pairs in each group. (E) The peak amplitude of FS-IN→PC uIPSCs at P14–15 and P16–18 was significantly larger than that at P12–13. (F–G) Quantification of the 10–90% rise time (F) and half-width (G) of uIPSCs at P12–18. Detailed statistical analysis, detailed data and number of experiments are presented in Figure 3—source data 1. *p<0.05; **p<0.01; n.s., p>0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Top panel, the morphologic reconstructions of FS-INs. Bottom panel, the membrane responses of FS-INs to current injections.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Two examples of connection from an FS-IN onto a PC at P13 and P15 in Cg1/2 area. (B) Summary of the connection probability from FS-INs onto PCs. (C) The peak amplitude of FS-IN→PC uIPSCs significantly increased during eye opening. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 3—source data 1. *p<0.05; **p<0.01.
+
+### Synaptic transmission from Sst-INs to other types of INs does not change during eye opening
 
 Sst-INs not only frequently innervate pyramidal neurons, but also strongly inhibit other types of INs (Pfeffer et al., 2013). We first examined the development of GABAergic synaptic transmission from Sst-INs to FS-INs (Sst-INs→FS-INs) in Sst-tdTomato::Lhx6-EGFP line during eye opening. To study Sst-IN→FS-IN synaptic transmission, we simultaneously recorded a tdTomato+ Sst-IN and a nearby EGFP+/tdTomato- FS-IN from layer 2/3 (Figure 4A). We compared the connection probability and strength of Sst-IN→FS-IN uIPSCs at P12–13, P14–15, and P16–18 (Figure 4B and C). Our data showed that the Sst-IN→FS-IN connection probability did not change from P12 to P18 (χ2 test, p=0.855; Figure 4B). Notably, the strength of Sst-IN→FS-IN uIPSCs did not exhibit any obvious change (P12–13, 62.0 ± 12.7 pA; P14–15, 72.1 ± 18.7 pA; P16–18, 56.6 ± 13.0 pA; one-way ANOVA, F(2,24) = 0.268, p=0.767, Figure 4C). These results suggest that the strength of Sst-IN→FS-IN synaptic transmission does not change during eye opening.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative evoked responses from an Sst-IN to an FS-IN in layer 2/3 at P13 and P14, respectively. Inset panel, schematic of a paired recording from an Sst-IN and an FS-IN. Scale bars: 50 mV (vertical, red), 25 pA (vertical, green), and 20 ms (horizontal). (B) Summary of connection probability from Sst-INs to FS-INs at different postnatal ages. A total of 68 pairs were recorded from 11 mice. Data label indicates the number of pairs in each group. (C) The peak amplitude of uIPSCs from Sst-INs to FS-INs was unchanged from P12 to P18. (D) Fluorescent image of a visual coronal section from Sst-tdTomato::Htr3a-EGFP line. TdTomato, Sst-INs; EGFP, Htr3a-INs. Scale bar, 50 μm. (E) Schematic of a paired recording from an Sst-IN (red) and an Htr3a-IN (gray) in layer 2/3. (F) Traces showing representative synaptic transmission from an Sst-IN and Htr3a-IN at P11 and P15. Scale bars: 40 mV (vertical, red), 20 pA (vertical, black), and 20 ms (horizontal). (G) Summary of connection probability from Sst-INs to Htr3a-INs at different postnatal ages. A total of 126 pairs were recorded from 17 mice. Data label indicates the number of pairs in each group. (H) The peak amplitude of uIPSCs from Sst-INs to Htr3a-INs did not significantly change from P9 to P17. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 4—source data 1. Error bars indicate mean ±SEM. n.s., p>0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative traces of FS-IN→FS-IN uIPSCs at P13 and P15. (B) The probability of chemical connections between FS-INs at different postnatal ages. (C) Summarized results of the peak amplitude of FS-IN→FS-IN uIPSCs. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 4—source data 1. n.s., p>0.05.
 
 We next explored the development of synaptic transmission from Sst-INs to Htr3a-positive interneurons (Htr3a-INs) in layer 2/3. Htr3a-INs are the predominant type of INs in the superficial visual layers, comprising ~50% of layer 2/3 INs (Lee et al., 2010). To simultaneously label Sst-INs and Htr3a-INs, we crossed heterozygous Sst-tdTomato mice with Htr3a-EGFP mice (Sst-tdTomato::Htr3a-EGFP line). Previous studies have demonstrated that 5HT3a receptors (encoded by Htr3a) in the neocortex are present exclusively in GABAergic INs (Lee et al., 2010). In Sst-tdTomato::Htr3a-EGFP mice, Sst-INs expressed tdTomato, while Htr3a-INs expressed EGFP (Figure 4D). Only ~1% of tdTomato+ Sst-INs expressed EGFP (1.1 ± 0.7%, six slices from three mice), suggesting that Sst-INs and Htr3a-INs are two different types of INs as previously reported (Chittajallu et al., 2013; Lee et al., 2010). To assess Sst-IN→Htr3a-IN synaptic transmission, we performed simultaneous recordings on pairs of tdTomato+ Sst-INs and EGFP+ Htr3a-INs in layer 2/3 of the primary visual cortex (Figure 4E and F). Sst-IN→Htr3a-IN connections emerged at P9–11, and the probability of connections did not change significantly from P9 to P17 (χ2 test, p=0.169; Figure 4G). Similar to Sst-IN→FS-IN uIPSCs, there was no obvious difference in the strength of Sst-IN→Htr3a-IN uIPSCs between P12–13 (before eye opening) and P14–15 (after eye opening) mice (P9–11, 19.1 ± 6.8 pA; P12–13, 21.9 ± 7.4 pA; P14–15, 25.6 ± 8.5 pA; P16–17, 28.6 ± 9.9 pA; one-way ANOVA, F(3,37) = 0.183, p=0.907; Figure 4H). These results suggest that the strength of Sst-IN→Htr3a-IN synaptic transmission does not change during eye opening. Moreover, we found that the connection probability and strength of FS-IN→FS-IN uIPSCs exhibited no significant difference among P12–13, P14–15, and P16–19 groups (Figure 4—figure supplement 1).
 
@@ -57,13 +194,33 @@ These results show that the strength of synaptic transmission from Sst-INs to PC
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic of a triple recording from an Sst-IN, a PC, and an FS-IN. (B) Representative evoked responses from an Sst-IN simultaneously onto a PC and an FS-IN at P13 and P15. Scale bars: 50 mV (vertical, red), 50 pA (vertical, black), and 5 ms (horizontal). (C) uIPSC amplitude evoked by Sst-INs was not significantly different between PCs and FS-INs at P12–13. (D) uIPSC amplitude evoked by Sst-INs was significantly smaller in PCs than in FS-INs at P14–15. (E) The logarithm of the ratio between uIPSC amplitude in FS-INs and PCs at P12–13 and P14–15. (F) Schematic of a triple recording from an Sst-IN a PC and an Htr3a-IN. (G) uIPSC amplitude evoked by Sst-INs was not significantly different between PCs and Htr3a-INs at P12–13. (H) uIPSC amplitude evoked by Sst-INs was significantly smaller in PCs than in Htr3a-INs at P14–15. (I) The logarithm of the ratio between uIPSC amplitude in Htr3a-INs and PCs at P12–13 and P14–15. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 5—source data 1. Error bars indicate mean ±SEM. *p<0.05; n.s., p>0.05.10.7554/eLife.32337.019Figure 5—source data 1.p values in Figure 5.
+**Figure 5.:** (A) Schematic of a triple recording from an Sst-IN, a PC, and an FS-IN. (B) Representative evoked responses from an Sst-IN simultaneously onto a PC and an FS-IN at P13 and P15. Scale bars: 50 mV (vertical, red), 50 pA (vertical, black), and 5 ms (horizontal). (C) uIPSC amplitude evoked by Sst-INs was not significantly different between PCs and FS-INs at P12–13. (D) uIPSC amplitude evoked by Sst-INs was significantly smaller in PCs than in FS-INs at P14–15. (E) The logarithm of the ratio between uIPSC amplitude in FS-INs and PCs at P12–13 and P14–15. (F) Schematic of a triple recording from an Sst-IN a PC and an Htr3a-IN. (G) uIPSC amplitude evoked by Sst-INs was not significantly different between PCs and Htr3a-INs at P12–13. (H) uIPSC amplitude evoked by Sst-INs was significantly smaller in PCs than in Htr3a-INs at P14–15. (I) The logarithm of the ratio between uIPSC amplitude in Htr3a-INs and PCs at P12–13 and P14–15. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 5—source data 1. Error bars indicate mean ±SEM. *p<0.05; n.s., p>0.05.
 
-## Eye opening modulates the Sst-IN→PC and FS-IN→PC synaptic transmission
+### Eye opening modulates the Sst-IN→PC and FS-IN→PC synaptic transmission
 
 Although the weakening of synaptic transmission from Sst-INs to PCs was observed at the time of eye opening, it could be induced by intrinsic developmental programs or other mechanisms with coincidental timing rather than by eye opening per se. To determine which factor is responsible for this regulation of synaptic transmission, we first deprived the visual inputs by dark rearing. We dark-reared Sst-tdTomato mice from P3 and recorded the synaptic transmission from Sst-INs to PCs in layer 2/3 of the primary visual cortex at P12–15 (Figure 6—figure supplement 1A). Under dark rearing condition, no significant changes were observed in connection probability (χ2 test, p=0.066; Figure 6—figure supplement 1C) nor unitary strength of Sst-IN→PC synaptic transmission between P12–13 and P14–15 (P12–13, 19.6 ± 4.1 pA, n = 13; P14–15, 21.7 ± 3.6 pA, n = 16; two-tailed unpaired t-test, p=0.702; Figure 6—figure supplement 1B and D). These results suggest that visual deprivation prevents the weakening of Sst-IN→PC synaptic transmission at the time of eye opening.
 
 Visual deprivation achieved by dark rearing not only blocks eye opening-induced visual inputs but also eliminates the natural diffuse dark/light stimulation presented through the eyelids before eye opening. Therefore, it is difficult to determine whether the elimination of the weakening of Sst-IN→PC synaptic transmission is induced by eye opening deprivation or by visual deprivation. To address this question, we performed binocular lid suture from P8 to block eye opening and manipulated the time of eye opening by artificially opening the lids in the binocular lid-sutured mice at P16 (two days after natural eye opening) (Figure 6A). The connection probability and strength of Sst-IN→PC and FS-IN→PC synaptic transmission were further compared in continuously sutured mice at P12–13, P14–15, P17–20 and those with eyelids artificially opened at P17–20 (i.e., different groups) (Figure 6 and Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic schedule of eyelid suturing, eyelid reopening, and recording of synaptic connection. (B) Summary of Sst-IN→PC connection probability in visual cortex (VC). (C) Quantification of the peak amplitude of Sst-IN→PC uIPSCs in VC. (D) Summary of Sst-IN→PC connection probability in Cg1/2. (E) Quantification of the peak amplitude of Sst-IN→PC uIPSCs in Cg1/2. (F) Summary of FS-IN→PC connection probability in VC. (G) Quantification of the peak amplitude of FS-IN→PC uIPSCs in VC. (H) Connection probability from FS-INs to PCs in the Cg1/2 area from continuously sutured mice and reopened mice. (I) Summary of the peak amplitude of FS-IN→PC uIPSCs in Cg1/2. Data label indicates the number of pairs in each group. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 6—source data 1. Error bars indicate mean ±SEM. *p<0.05; **p<0.01; n.s., p>0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic schedule of dark rearing and electrophysiological recording. (B) Representative evoked responses from an Sst-IN to a PC at P12 and P15 in dark-reared mice. Insert, schematic of paired recording of an Sst-IN (red) and a PC (blue). (C) The occurrence of connection from Sst-INs to PCs in dark-reared mice was not significantly different between P12–13 and P14–15. (D) The peak amplitude of uIPSCs did not change significantly from P12–13 to P14–15 in dark-reared mice. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 6—source data 1. n.s., p>0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Top panels indicate the direction of synaptic transmission.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schema of a paired recording from an Sst-IN to an FS-IN in continuously sutured mice at P12–15. (B) Representative traces of synaptic transmission from an Sst-IN to an FS-IN at P13 and P15 in continuously sutured mice. (C) Quantification of the connection probability. (D) Quantification of the uIPSC peak amplitude. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 6—source data 1. n.s., p>0.05.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Schematic of paired recording of two FS-INs from sutured mice. (B) Representative traces of synaptic connections between two FS-INs at P13 and P15. (C) The connection probability between FS-INs at P12-13 and P14-15 from sutured mice. (D) Summarized results of averaged amplitude of FS-IN→FS-IN uIPSCs from sutured mice. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 6—source data 1. n.s., p>0.05.
 
 For Sst-IN→PC synaptic transmission within the visual cortex (VC), the connection probability was not significantly different among the different groups (χ2 test, p=0.958; Figure 6B). Consistent with dark rearing, there was no significant change in the peak amplitude of uIPSCs in continuously sutured mice between P12–13 and P14–15 (Figure 6C). Moreover, in continuously sutured mice, the strength of Sst-IN→PC uIPSCs at P17–20 was comparable to that at P12–13 or P14–15 (P12–13, 30.1 ± 5.9 pA; P14–15, 25.2 ± 4.1 pA; P17–20, 17.5 ± 10.6 pA; Figure 6C). These results suggest that eye opening deprivation prevents the weakening of Sst-IN→PC synaptic transmission. Interestingly, the strength of Sst-IN→PC uIPSCs at P17–20 in mice with eyelids artificially opened was significantly lower than that in continuously sutured mice at P12–13, P14–15, and P17–20 (one-way ANOVA, F(3,68) = 4.231, p=0.008; Figure 6C). These results suggest that artificial eye opening can induce the weakening of Sst-IN→PC synaptic transmission and that this change associated with eye opening is unlikely due to an intrinsic developmental program. Notably, similar findings were observed in the prefrontal Cg1/2 area. In Cg1/2, the probability of Sst-IN→PC connections was not significantly changed among different groups (χ2 test, p=0.987; Figure 6D). The strength of Sst-IN→PC uIPSCs remained unchanged in continuously sutured mice at P12–13, P14–15, and P17–20 (Figure 6E). Furthermore, the strength of Sst-IN→PC uIPSCs at P17–20 in mice with eyelids artificially opened was significantly smaller than that in continuously sutured mice at P12–13, P14–15, and P17–20 (artificially eye-opened mice: P17–20, 13.6 ± 2.6 pA versus continuously sutured mice: P12–13, 37.3 ± 5.7 pA; P14–15, 54.6 ± 14.7 pA; and P17–20, 39.9 ± 8.3 pA; one-way ANOVA, F(3,39) = 5.607, p=0.003; Figure 6E). In addition, both the connection probability and strength of Sst-IN→FS-IN synaptic transmission were comparable at P12–13 and P14–15 in continuously sutured mice (Figure 6—figure supplement 3).
 
@@ -71,13 +228,13 @@ For FS-IN→PC synaptic transmission in VC, similar to Sst-IN→PC synaptic tran
 
 Together, these results strongly suggest that eye opening differentially modulates the strength of Sst-IN→PC and FS-IN→PC synaptic transmission.
 
-## Eye opening alters postsynaptic quantal size
+### Eye opening alters postsynaptic quantal size
 
 We next examined presynaptic or postsynaptic mechanisms underlying the differential changes of Sst-IN→PC and FS-IN→PC synaptic transmission during eye opening. We assessed the presynaptic release probability by analysis of paired-pulse ratio (PPR), the coefficient of variation (C.V.), and failure rate (Miao et al., 2016; Pouzat and Hestrin, 1997). In Sst-IN→PC synaptic transmission, there were no significant differences in PPR (two-way ANOVA, F(2,132) = 0.172, p=0.842; Figure 7A and Figure 7B), C.V. (P12–13, 0.494 ± 0.052, n = 20; P14–15, 0.472 ± 0.052, n = 23; two-tailed unpaired t-test, p=0.775; Figure 7C), or failure rate (P12–13, 4.8 ± 2.2%, n = 20; P14–15, 5.3 ± 2.8%, n = 23; two-tailed unpaired t-test, p=0.897; Figure 7D) before and after eye opening at P12–13 and at P14–15. These results suggest that eye opening does not affect the presynaptic release probability in Sst-IN→PC synaptic transmission. The number of the presynaptic release sites (N) and the postsynaptic quantal size (Q) were estimated by the variance-mean (V-M) analysis (Mitra et al., 2011; Scheuss and Neher, 2001). To estimate N and Q, we used the theoretically expected parabolic relationship between the variance and mean of synaptic responses under multiple-pulse stimulation and different external Ca2+/Mg2+ concentrations (1 mM Ca2+/3 mM Mg2+, 2 mM Ca2+/2 mM Mg2+, or 3.7 mM Ca2+/0.3 mM Mg2+) (Mitra et al., 2011). A train of three action potentials (20 Hz, 30–40 trials) was elicited in presynaptic Sst-IN, and postsynaptic responses were recorded in PCs (Figure 7E). We used a Cs-based intracellular solution containing a high concentration of Cl- (60 mM) to record the postsynaptic currents. The relationship between mean and variance under different external Ca2+/Mg2+ concentrations was fit into a parabola plot (see Materials and methods, Figure 7F). We found that N in presynaptic terminals at P12–13 was similar to that at P14–15 (P12–13, 12.3 ± 1.5, n = 12; P14–15, 14.3 ± 1.9, n = 8; two-tailed unpaired t-test, p=0.419, Figure 7G). However, Q at P14–15 was significantly lower than that at P12–13 (P12–13, 20.2 ± 2.2 pA, n = 12; P14–15, 8.7 ± 0.9 pA, n = 8; Mann Whitney U test, p=2.9 × 10−4; Figure 7H), suggesting that postsynaptic mechanisms contribute to the developmental weakening of Sst-IN→PC synaptic strength.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/32337/elife-32337-fig7-v2.jpg)
 
-**Figure 7.:** (A) Amplitude-scaled overlay of paired-pulse ratio (PPR) responses in Sst-IN→PC connections at P13 and P15. Red, P13; blue, P15. Scale bars: 20 pA (vertical red), 10 pA (vertical, blue), 50 mV (vertical, black), and 20 ms (horizontal). Four presynaptic action potentials were evoked at 20 Hz. (B) The normalized peak amplitude of Sst-IN→PC uIPSCs showed short-term depression, and no significant difference in PPR was found between P12–13 (red) and P14–15 (blue) mice. (C) The coefficient of variation (C.V.) in Sst-IN→PC connections did not change from P12–13 to P14–15. (D) The failure rate in Sst-IN→PC connections did not change from P12–13 to P14–15. (E) Representative uIPSC responses from an Sst-IN to a PC evoked by a train of 3 presynaptic action potentials at 20 Hz under three different external Ca2+/Mg2+ concentrations. The postsynaptic cells were recorded with Cs-based and high Cl- intracellular solution. Scale bars: 100 pA (vertical) and 20 ms (horizontal). (F) The parabola plot of the variance and mean of the peak amplitude of Sst-IN→PC uIPSCs in (E) under three different external Ca2+/Mg2+ concentrations. Red dots, 1 mM Ca2+/3 mM Mg2+; green dots, 2 mM Ca2+/2 mM Mg2+; blue dots, 3.7 mM Ca2+/0.3 mM Mg2+. (G) The number of release sites in Sst-IN→PC connections did not change from P12–13 to P14–15. (H) The quantal size in Sst-IN→PC connections significantly decreased from P12–13 to P14–15. (I) Amplitude-scaled overlay of paired-pulse ratio (PPR) responses in FS-IN→PC connections at P13 and P15. Red, P13; blue, P15. Scale bars: 100 pA (vertical red and blue), 50 mV (vertical, black), and 20 ms (horizontal). (J) PPR in FS-IN→PC connections was similar between P12–13 (red) and P14–15 (blue) mice. (K) The coefficient of variation (C.V.) in FS-IN→PC connections was unchanged from P12–13 to P14–15. (L) The failure rate in FS-IN→PC connections did not change from P12–13 to P14–15. (M) Representative uIPSC responses from an FS-IN to a PC evoked by a train of 3 presynaptic action potentials at 20 Hz in different external Ca2+/Mg2+ concentrations. Scale bars: 200 pA (vertical) and 20 ms (horizontal). (N) The parabola plot of the variance and mean of uIPSC amplitude in (M) at different external Ca2+/Mg2+ concentrations. Red dots, 1 mM Ca2+/3 mM Mg2+; green dots, 2 mM Ca2+/2 mM Mg2+; blue dots, 3.7 mM Ca2+/0.3 mM Mg2+. (O) The number of release sites in FS-IN→PC connections did not change from P12–13 to P14–15. (P) The quantal size in FS-IN→PC connections significantly increased from P12–13 to P14–15. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 7—source data 1. Error bars indicate mean ±SEM. *p<0.05; ***p<0.001; n.s., p>0.05.10.7554/eLife.32337.027Figure 7—source data 1.p values in Figure 7.
+**Figure 7.:** (A) Amplitude-scaled overlay of paired-pulse ratio (PPR) responses in Sst-IN→PC connections at P13 and P15. Red, P13; blue, P15. Scale bars: 20 pA (vertical red), 10 pA (vertical, blue), 50 mV (vertical, black), and 20 ms (horizontal). Four presynaptic action potentials were evoked at 20 Hz. (B) The normalized peak amplitude of Sst-IN→PC uIPSCs showed short-term depression, and no significant difference in PPR was found between P12–13 (red) and P14–15 (blue) mice. (C) The coefficient of variation (C.V.) in Sst-IN→PC connections did not change from P12–13 to P14–15. (D) The failure rate in Sst-IN→PC connections did not change from P12–13 to P14–15. (E) Representative uIPSC responses from an Sst-IN to a PC evoked by a train of 3 presynaptic action potentials at 20 Hz under three different external Ca2+/Mg2+ concentrations. The postsynaptic cells were recorded with Cs-based and high Cl- intracellular solution. Scale bars: 100 pA (vertical) and 20 ms (horizontal). (F) The parabola plot of the variance and mean of the peak amplitude of Sst-IN→PC uIPSCs in (E) under three different external Ca2+/Mg2+ concentrations. Red dots, 1 mM Ca2+/3 mM Mg2+; green dots, 2 mM Ca2+/2 mM Mg2+; blue dots, 3.7 mM Ca2+/0.3 mM Mg2+. (G) The number of release sites in Sst-IN→PC connections did not change from P12–13 to P14–15. (H) The quantal size in Sst-IN→PC connections significantly decreased from P12–13 to P14–15. (I) Amplitude-scaled overlay of paired-pulse ratio (PPR) responses in FS-IN→PC connections at P13 and P15. Red, P13; blue, P15. Scale bars: 100 pA (vertical red and blue), 50 mV (vertical, black), and 20 ms (horizontal). (J) PPR in FS-IN→PC connections was similar between P12–13 (red) and P14–15 (blue) mice. (K) The coefficient of variation (C.V.) in FS-IN→PC connections was unchanged from P12–13 to P14–15. (L) The failure rate in FS-IN→PC connections did not change from P12–13 to P14–15. (M) Representative uIPSC responses from an FS-IN to a PC evoked by a train of 3 presynaptic action potentials at 20 Hz in different external Ca2+/Mg2+ concentrations. Scale bars: 200 pA (vertical) and 20 ms (horizontal). (N) The parabola plot of the variance and mean of uIPSC amplitude in (M) at different external Ca2+/Mg2+ concentrations. Red dots, 1 mM Ca2+/3 mM Mg2+; green dots, 2 mM Ca2+/2 mM Mg2+; blue dots, 3.7 mM Ca2+/0.3 mM Mg2+. (O) The number of release sites in FS-IN→PC connections did not change from P12–13 to P14–15. (P) The quantal size in FS-IN→PC connections significantly increased from P12–13 to P14–15. Detailed statistical analysis, detailed data, and exact sample numbers are presented in Figure 7—source data 1. Error bars indicate mean ±SEM. *p<0.05; ***p<0.001; n.s., p>0.05.
 
 Similarly, in FS-IN→PC synaptic transmission, there were no significant differences in PPR, C.V., or failure rate between P12–13 and P14–15 mice (Figures 7I, J, K and L). Moreover, the average values of N at P12–13 and P14–15 were not significantly different (P12–13, 12.9 ± 3.1, n = 8; P14–15, 15.8 ± 1.9, n = 8; two-tailed unpaired t-test, p=0.439, Figure 7O). Unlike Sst-IN→PC connections, Q of FS-IN→PC connections at P14–15 was significantly larger than that at P12–13 (P12–13, 11.5 ± 1.9 pA, n = 8; P14–15, 27.5 ± 6.2 pA, n = 8; two-tailed unpaired t-test, p=0.026, Figure 7P).
 
@@ -107,19 +264,113 @@ The physiological roles for the differential alterations of inhibitory synaptic 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sst-IRES-Cre</td>
+      <td>PMID: 21943598</td>
+      <td>RRID: IMSR_JAX:013044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Htr3a-EGFP</td>
+      <td>PMID: 14586460</td>
+      <td>RRID: MMRRC_000273-UNC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Lhx6-EGFP</td>
+      <td>PMID: 14586460</td>
+      <td>RRID: MMRRC_000246-MU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa-tdTomato</td>
+      <td>PMID: 20023653</td>
+      <td>RRID: IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Red Fluorescent Protein</td>
+      <td>Rockland, USA</td>
+      <td>RRID: AB_2611063</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Green Fluorescent Protein</td>
+      <td>Aves, USA</td>
+      <td>RRID: AB_10000240</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-parvalbumin</td>
+      <td>Abcam, USA</td>
+      <td>RRID: AB_298032</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse, Alexa Fluor 555 conjugated</td>
+      <td>Invitrogen, USA</td>
+      <td>RRID: AB_2536180</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-chicken, DyLight 488 conjugated</td>
+      <td>Jackson ImmunoResearch, USA</td>
+      <td>RRID: AB_2340376</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit, Alexa Fluor 488 conjugated</td>
+      <td>Life Technology, USA</td>
+      <td>RRID: AB_141708</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5-Streptavidin</td>
+      <td>Jackson ImmunoResearch, USA</td>
+      <td>RRID: AB_2337245</td>
+      <td>1:500</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Four transgenic mouse lines, including Sst-IRES-Cre (RRID: IMSR_JAX:013044), Htr3a-EGFP (RRID: MMRRC_000273-UNC), Lhx6-EGFP (RRID: MMRRC_000246-MU), and tdTomato reporter Ai14 (RRID: IMSR_JAX:007914) were used in this study. The Sst-IRES-Cre mice were crossed to Ai14 mice to generate Sst-tdTomato alleles. The Htr3a-EGFP and Lhx6-EGFP mice were crossed to Sst-tdTomato mice to generate Sst-tdTomato::Htr3a-EGFP and Sst-tdTomato::Lhx6-EGFP alleles. All pups were reared under a normal 12 hr light/dark cycle unless otherwise stated. The day of parturition was defined as postnatal day 1 (P1). Pups were examined daily to monitor the postnatal day of eye opening. All experiments followed the guidelines for the care and use of laboratory animals at Fudan University.
 
-## Dark rearing and eyelid suture
+### Dark rearing and eyelid suture
 
 For dark rearing, pups were raised in dark cages after P3 until sacrificed for in vitro recordings. For eyelid suture, P8 mice were first carefully anesthetized with isoflurane and disinfected with ethanol. The binocular eyelids were sutured with small sterile ophthalmic needles. For artificial eye opening, sutured mice were anesthetized with isoflurane, and the eyelids were carefully opened at P16. After eyelid suture or artificial eye opening, the eyelids were covered with tetracycline ointment, and the pups were kept on warm blankets until fully recovered. If the eyelids of sutured mice were unexpectedly open before recording, the pups were discarded and not included in the recording experiment.
 
-## Brain slice preparation
+### Brain slice preparation
 
 P5–20 mice were anesthetized with 1% isoflurane and 0.5–1.0 L/min oxygen. Brains from P5 to P8 mice were cut coronally at a thickness of 300 μm with a Compresstome VF-300 (Precisionary Instruments, USA) in a chilled solution containing (in mM) 120 choline chloride, 2.6 KCl, 26 NaHCO3, 1.25 NaH2PO4, 15 glucose, 1.3 ascorbic acid, 0.5 CaCl2, and 7 MgCl2 (pH 7.3–7.4, 300–305 mOsm). Brain slides were then incubated in artificial cerebrospinal fluid (ACSF) containing (in mM) 126 NaCl, 3 KCl, 1.25 KH2PO4, 1.3 MgSO4, 3.2 CaCl2, 26 NaHCO3, and 10 glucose (pH 7.3–7.4, 300–305 mOsm), bubbled with 95% O2/5% CO2. P9 to P20 brain slices were prepared by using a protective slicing and recovery method reported previously (Zhao et al., 2011). Briefly, anaesthetized mice were perfused intracardially with ice-cold oxygenated (95% O2, 5% CO2) NMDG-based cutting solution containing (in mM) 93 NMDG, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, five sodium ascorbate, two thiourea, three sodium pyruvate, 10 MgSO4, 0.5 CaCl2, and 12 NAC (pH 7.3–7.4, 300–305 mOsm). Brains were carefully removed from the skull and cut coronally at a thickness of 300 μm with a Compresstome VF-300 in chilled oxygenated (95% O2, 5% CO2) NMDG-based cutting solution. Slices were initially recovered in NMDG-based cutting solution at 32°C for 10 mins. Slices were then incubated in oxygenated (95% O2, 5% CO2) HEPES-modified solution containing (in mM) 94 NaCl, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 glucose, five sodium ascorbate, two thiourea, three sodium pyruvate, 2 MgSO4, 2 CaCl2, and 6 NAC (pH 7.3–7.4, 300–305 mOsm) at room temperature for 40 mins. Finally, slices were incubated in oxygenated (95% O2, 5% CO2) normal ACSF at room temperature for at least 1 hr before recording.
 
-## Electrophysiological recording and analysis
+### Electrophysiological recording and analysis
 
 Slices were transferred to a recording chamber, which was constantly perfused with fresh normal ACSF at 32–34°C, bubbled with 95% O2/5% CO2. Cells were visualized with water immersion objective (x20 and x60) and a BX51XI infrared-DIC microscope (Olympus, Japan) equipped with epifluorescence illumination. Glass recording electrodes (6–10 MΩ resistance) were filled with an intracellular solution consisting of (in mM) 93 K-gluconate, 16 KCl, 2 MgCl2, 0.2 EGTA, 10 HEPES, 2.5 MgATP, 0.5 Na3GTP, 10 Na-phosphocreatine, 0.4% neurobiotin (Invitrogen, USA), and 0.25% Alexa 568 or Alexa 488 (Invitrogen, USA) (adjusted to pH 7.25 and 295 mOsm). Cs-based intracellular solution contained (in mM) 65 cesium methanesulfonate, 60 cesium chloride, 10 HEPES, 4 MgATP, 0.3 Na3GTP, 0.5 EGTA, 10 Na-phosphocreatine, 0.4% neurobiotin, and 0.25% Alexa 488 (adjusted to pH 7.25 and 295 mOsm). Whole-cell recordings were obtained and analyzed by using two Axon Multiclamp 700B amplifiers, Digidata 1440A (Molecular Devices, USA), and pCLAMP10 software (Molecular Devices, USA). Signals were sampled at 5 kHz with a 2 kHz low-pass filter. Images were captured with an ORCA-R2 digital CCD camera (Hamamatsu, Japan). To test synaptic connections, we performed quadruple or triple whole-cell recordings. To test unitary transmission, we elicited a presynaptic action potential by injecting a brief suprathreshold current pulse (4–6 ms, 400–600 pA) intracellularly to the presynaptic cell. Postsynaptic cells were held at around −85 mV. Postsynaptic unitary responses were recorded 20–30 repeated sweeps at time intervals of 10 or 20 s. After that, a train of 4 or 10 current pulses (20 Hz) was injected into the presynaptic cell to assay the efficacy of synaptic transmission. After recording, slices were fixed in 4% paraformaldehyde (PFA) in PBS overnight at 4°C.
 
@@ -127,10 +378,10 @@ Recordings with Rs >30 MΩ were excluded from statistical analysis. Rs was com
 
 The variance-mean analysis was performed as previously reported (Mitra et al., 2011; Scheuss and Neher, 2001). Recordings were first carried out in ACSF containing 2 mM Ca2+/2 mM Mg2+, and then the chamber solution was changed to ACSF containing 3.7 mM Ca2+/0.3 mM Mg2+ and 1 mM Ca2+/3 mM Mg2+. Trains of 3 action potentials at 20 Hz were elicited, and 30–40 repeated sweeps were recorded, with 10–20 s sweep-to-sweep interval. Recordings with stable baseline were used for analysis. The mean (M) and variance (V) of uIPSC amplitude were calculated for each pulse. The relationship between M and V was fitted to the parabola V = QM − M2/N (Q, quantal size; N, number of release sites). Quadratic regression was performed with GraphPad Prism five software (GraphPad Software). Only recordings with R2 >0.45 (R, regression index) were included for analysis.
 
-## Immunohistochemistry and morphological reconstruction
+### Immunohistochemistry and morphological reconstruction
 
 Anesthetized Sst-tdTomato::Htr3a-EGFP and Sst-tdTomato::Lhx6-EGFP mice (P30) were transcardially perfused with cold phosphate buffered saline (PBS), followed by 4% paraformaldehyde (PFA) in PBS. Brains were carefully removed from the skull, post-fixed overnight at 4°C. The brains were rinsed in PBS and sectioned into 60 μm thick coronal slices with a VT1000S vibratome (Leica, Germany). After that, free-floating slices were incubated with primary antibodies in blocking solution (1% bovine serum albumin, 0.5% Triton X-100, and 0.05% sodium azide in PBS) for 48 hr at 4°C. Slices were then washed with PBST (0.1% Triton X-100 in PBS) five times (10 min each) and incubated in blocking solution containing secondary antibodies at 4°C for 24 hr. The primary antibodies included mouse anti-RFP (1:500, #200301379, Rockland, USA; RRID: AB_2611063), chicken anti-GFP (1:1000, #1020, Aves, USA; RRID: AB_10000240) and rabbit anti-parvalbumin (1:500, ab11427, Abcam, USA; RRID: AB_298032). The secondary antibodies were donkey anti-mouse (1:200, Alexa Fluor 555, A31570, Invitrogen, USA; RRID: AB_2536180), donkey anti-chicken (1:200, DyLight 488, #703-546-155, Jackson ImmunoResearch, USA; RRID: AB_2340376), and donkey anti-rabbit (1:200, Alexa Fluor 488, A21206, Life Technology, USA; RRID: AB_141708). For biocytin histochemistry, the fixed acute brain slices after electrophysiological recording were washed with PBS, incubated in blocking solution before incubation with Cy5-Streptavidin (1:500, #016-170-084, Jackson ImmunoResearch, USA; RRID: AB_2337245) for 48 hr. Finally, sections were washed in PBS five times (10 min each), mounted and cover-slipped. Confocal images were taken using an FV1000 confocal microscope (Olympus, Japan) with 20x objective and 1 μm z-step size. Neurons were then reconstructed with Neurolucida Software (MicroBrightField, USA).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were analyzed with SPSS 22 software (IBM) and GraphPad Prism five software (GraphPad Software). Statistical significance between groups was tested by two-tailed one-sample t-test, two-tailed unpaired t-test, paired t-test, Mann-Whitney U test, Fisher’s exact test, χ2 test, one-way ANOVA and two-way ANOVA. All the detailed test methods, the number of experiments and p values are listed in the source data. All data are presented as mean ±SEM, and the difference was recognized as significant when p<0.05.

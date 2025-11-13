@@ -36,29 +36,81 @@ Here we set out to investigate the causes of germination time variability among 
 
 ## Results
 
-## Variability in seed germination time shows genetic variation in Arabidopsis
+### Variability in seed germination time shows genetic variation in Arabidopsis
 
 We first determined whether Arabidopsis exhibits natural variation in the variability of seed germination time. To do this, we quantified germination time distributions for 19 natural accessions and the MAGIC multiparent recombinant inbred line population, derived from those accessions (Kover et al., 2009). We also included 10 lines that we selected from a set of Spanish accessions as being likely to have low or high variability in germination time based on their germination time distributions over the first six days after sowing (Vidigal et al., 2016). We grew plants in controlled conditions for seed harvesting and collected all the seeds from three plants of each line. After a fixed period of dry storage (~30 days), we sowed a sample of each of these replicate batches of seeds in Petri dishes in controlled conditions and scored germination every day until there had been no further germination for a period of 2 weeks (see Materials and methods for further details). In these conditions, the MAGIC lines had low levels of seed dormancy (with 30 days of dry storage, 82% of lines had ≥ 50% germination), allowing us to quantify germination time distributions and estimate its variability. We used the coefficient of variation (CV = standard deviation/mean) of the germination time distribution as a measure of variability. We confirmed that CVs for the MAGIC parental lines remained similar over a range of lengths of dry storage period (30–60 days of dry storage), demonstrating that our results are not specific to one condition (Figure 1—figure supplement 1A, B).
 
 The accessions showed a range of variabilities (Figure 1A). Some low CV accessions consistently germinated within 4 days, whilst higher CV lines germinated over a period of 19 days (Figure 1A). The MAGIC lines exhibited transgressive segregation, with greater variation in CV than the parental accessions (Figure 1A, compare orange and blue distributions, Figure 1B). The range of CVs observed in the Spanish accessions was within the range observed across all MAGIC lines (Figure 1B). A small number of MAGIC lines (8 out of 341 characterised) had very high CVs of germination time (>0.6) compared to the rest (Figure 1B), which was due to a fraction of seeds germinating very late, giving rise to bimodal distributions (e.g. M178 and M182 in Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig1-v1.jpg)
+
+**Figure 1.:** (A) Examples of distributions of germination time for natural accessions and MAGIC lines. Each row shows the germination time distribution of a seed batch from a different parent plant of a particular line, and colours represent whether the line is a Spanish accession (purple), MAGIC parental accession (yellow) or MAGIC line (blue). The size of the circles is proportional to the percentage of seeds sown that germinated on a given day. For the two groups of accessions (Spanish accessions and MAGIC parents), examples of the lowest and highest variability lines are shown. For MAGIC lines, examples are shown of low variability (top two lines); high variability, long-tailed (middle two lines) and very high variability bimodal (bottom two lines) lines. (B) Frequency distribution of coefficient of variation (CV) of germination times for 10 Spanish accessions (purple), the 19 parental natural accessions that were used to generate the MAGIC lines (orange) and 341 MAGIC lines (blue). In the majority of cases, the CV of a given MAGIC line is the mean of the CVs of three batches of seeds collected from separate parent plants. (C) CV of germination times for a subset of 32 MAGIC lines in two separate experiments. The batches of seeds for the two experiments were derived from different independently sown mother plants. The line shows y = x and is for visualisation purposes only (i.e., it does not represent a trend line). Figure 1—figure supplement 1 shows the level of reproducibility of germination time distributions across replicates, lengths of period of dry storage and sowing conditions. Figure 1—source data 1 contains source data for (A). Figure 1—source data 2 contains source data for (B). Figure 1—source data 3 contains source data for (C).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Coefficient of variations (CVs) of germination time for MAGIC parental accession seeds stored in dry conditions for different lengths of time following harvest (x and y axes labels indicate time of storage). Each point represents a different MAGIC parental accession and is the mean CV across three replicate batches of seeds, each collected from a different parent plant. The black lines show y = x to aid data visualisation (they do not represent models fitted to the data). The experimental comparisons are for 16 (A) and 12 (B) of the MAGIC parental accessions. For (A), Pearson’s r = 0.77 (95% CI [0.44, 0.91]). For (B), Pearson’s r = 0.76 (95% CI [0.32, 0.93]). (C–F) Germination time distributions of the very high variability MAGIC lines shown in Figure 1C. Each row shows the germination time distribution of a seed batch from a different parent plant. Each colour represents seeds collected and sown in a single experiment, with different colours representing different replicate experiments from different parental sowings. The size of the circles is proportional to the percentage of seeds that germinated on a given day. M101 and M174 showed a very late germinating fraction of seeds in some experiments but not others, whilst bimodal distributions were more consistently detected for M182 and M178. (G) Distributions of germination times on soil for genotypes that were either high or low variability when sown on Petri dishes. Within an experiment, lines that were more variable on plates were also more variable on soil, with the exception of M311. Figure 1—figure supplement 1—source data 1 contains source data for (A) and (B). Figure 1—figure supplement 1—source data 2 contains source data for (C–F). Figure 1—figure supplement 1—source data 3 contains source data for (G).
+
 The CV of most MAGIC lines tested was similar between repeat experiments involving independent seed harvests and sowing (Figure 1C) (Pearson’s r = 0.88, 95% CI [0.76, 0.94] for all lines for which repeats were done). In some of the very high variability lines, the presence of very late germinating seeds was reproducible between experiments (e.g. Figure 1C, Figure 1—figure supplement 1C, D, M182 and M178). In other lines, very late germinating seeds were not detected in all experiments, and thus the CV was higher in some experiments than others (e.g. Figure 1C, Figure 1—figure supplement 1E, F, M101 and M174). Thus, although the variability in seed germination time is reproducible for most lines, for some it is possible that their CVs may have been underestimated due to a failure to detect very late germinating seeds. To check whether the level of variability in seed germination time that we obtained for a given line was related to the specific sowing conditions, we sowed selected high and low variability lines on soil and found that although the exact distributions differed slightly between Petri dishes and soil, those lines with higher variability on Petri dishes also had higher variability on soil (Figure 1—figure supplement 1G). Overall, our results reveal variation in germination time variability in Arabidopsis, with CVs ranging from 0.09 to 1.7 across the MAGIC lines, giving a good basis for testing the genetic mechanisms underlying this trait. The broad-sense heritability (defined as the ratio of total genetic variance to total phenotypic variance) for CV was estimated to be ~40%, which is at the upper limit of heritabilities previously measured for variability in a number of post-germination plant traits (Hall et al., 2007).
 
-## Variability in germination times is observed within single siliques
+### Variability in germination times is observed within single siliques
 
 Because germination was characterised for seed samples taken from whole plants, it is possible that the high variability observed in some lines is due to different siliques (fruits) having different germination behaviours. This could arise due to differences in the ages of siliques at the time of seed harvest or due to positional effects on the parent plant. To address whether the variability in germination time that we have observed can arise independently of between-silique differences, we collected seed from samples of individual siliques from four high or very high variability lines and characterised their germination time distributions. For these lines, the full range of germination times observed in whole-plant samples was also present in seed from individual siliques (Figure 2A, B, Figure 2—figure supplement 1). This suggests that variability in seed germination time can arise independently of position or age differences between siliques.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig2-v1.jpg)
+
+**Figure 2.:** (A) Germination time distributions for a very high variability line, M178. Each row is the distribution obtained using a sample of pooled seeds from one plant, with different rows showing data from different mother plants. (B) As for (A) but each row represents the distribution obtained using seeds from a single silique. Single siliques were randomly sampled from parent plants, and single siliques sampled from seven parent plants are represented. (C) Individual siliques were cut in half, and seeds from the top and bottom halves (distal and proximal, furthest and closest to the mother plants’ inflorescence stems, respectively) were sown separately. Each row is the bottom and top half of a particular silique. Half siliques sampled from two parent plants are represented. Seeds from whole plants, single siliques and half siliques were obtained and sown in different experiments. The size of the circles is proportional to the percentage of seeds that were sown that germinated on a given day. Figure 2—figure supplement 1 shows examples for other MAGIC lines plus an experimental repeat and statistical analysis. Figure 2—source data 1 contains source data for (A). Figure 2—source data 2 contains source data for (B). Figure 2—source data 3 contains source data for (C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Germination time distributions for M182 (A) and M53 (B) for samples of seeds pooled from whole plants and for single siliques separated into top and bottom halves. Seeds from whole plants and half siliques were obtained and sown in different experiments. The siliques were randomly sampled from parent plants, and halved siliques from multiple plants are represented (three parent plants for M182 and ten for M53). For whole plants, each row is the distribution obtained using a sample of pooled seeds from one plant. For half siliques, each row is the bottom and top half of a particular silique (top half is that furthest from the mother plant's inflorescence stem). The size of the circles is proportional to the percentage of seeds that were sown that germinated on a given day. (C) As for (A) and (B) but for M4, showing whole siliques in the right-hand panel. Single siliques sampled from eight parent plants are represented. (D) Comparison of seed germination times between top and bottom halves of individual siliques for M182 and M178 MAGIC lines, collected and sown in two independent experiments (exp1 and exp2). Panels show the CV (panel i) and fraction of late germinating seeds (after day 20, panel ii) from the two halves of each assayed silique. Brown lines indicate significant differences from the null hypothesis (<5% false discovery rate). This was determined from bootstrap-based tests that accounted for the unequal number of seeds sown for each silique’s half. Note that even when there is a significant difference between the two silique halves, it is not consistently in the same direction. Figure 2—figure supplement 1—source data 1 contains source data for whole plant germination distributions in (A–C). Figure 2—figure supplement 1—source data 2 contains source data for M182 and M53 half silique germination distributions in (A) and (B). Figure 2—figure supplement 1—source data 3 contains source data for M4 single silique germination distributions in (C). Figure 2—figure supplement 1—source data 4 contains source data for (D).
+
 We next hypothesised that germination time might be related to the position of the seed along the longitudinal axis of the silique. To test this, we cut siliques into halves and sowed seeds from the top halves (i.e. distal halves, furthest from the mother plant’s inflorescence stem) and bottom halves separately. For the lines tested, late and early germinating seeds were produced by both halves of the siliques, with no consistent differences between the top and bottom halves of siliques in the fraction of seeds that germinated late (Figure 2C, Figure 2—figure supplement 1A,B,D). Thus, variability in germination time in the lines tested can arise independently of positional or maturation gradients within the whole plant or individual siliques. This suggests that a mechanism exists to generate differences in germination behaviour of equivalent seeds from the same silique, which is not dependent on gradients of regulatory molecules along the fruit.
 
-## Variability is weakly coupled to modal germination time and percentage germination
+### Variability is weakly coupled to modal germination time and percentage germination
 
 To investigate which types of mechanism might underlie variability in germination time in the MAGIC population, we looked at the extent to which variability is correlated with the modal time taken to germinate and the percentage germination within the experiment. For each line, the experiment was defined as complete 2 weeks after no further seed germinated. If high CV correlates with late germination, or with low percentage germination, this would suggest that increased variability in germination times arises as a result of differences in the general regulation of germination or seed dormancy between MAGIC lines. If high CV occurs without high time to germination or low percentage germination, this would suggest that variability can be regulated somewhat independently from overall levels of seed dormancy.
 
 We found weak correlations between CV and mode or percentage germination, with lower variability lines (low CV) tending to have a lower mode days to germination and higher percentage germination (Figure 3A, Figure 3—figure supplement 1A). Thus, some high variability lines had overall later germination and lower percentage germination than low variability lines, suggesting that they were generally more dormant (Figure 3A, D, E, Figure 3—figure supplement 1A). However, there were lines that had the same mode days to germination, with very different CVs (Figure 3A, B, C) and vice versa, lines with the same CV showed a range of modes (Figure 3A). There were also lines that were very similar with respect to both percentage germination and mode days to germination, but that had very different CVs (Figure 3—figure supplement 1). Thus, within the MAGIC population, variability is correlated with percentage germination and modal germination time, but can be uncoupled from these traits. The same trends were observed in the natural accessions, where CV was weakly correlated with mode and percentage germination but accessions could be found with similar mode and percentage germination and different CVs (Figure 3—figure supplement 2).
 
-## QTL mapping in MAGIC lines reveals two QTL underlying variability in germination time
+![Figure 3.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig3-v1.jpg)
+
+**Figure 3.:** (A) Scatter plots of coefficient of variation (CV) of germination time versus mode days to germination for 341 MAGIC lines. Each point is a specific MAGIC line, and in the majority of cases, the CV and mode are mean values obtained from sowing one batch of seeds from each of three separate parent plants. Each point is shaded according to the percentage germination of the line (see scale bar). Coloured circles and labels indicate lines for which examples are shown in (B–E). (ii) is a zoom in of (i) including only lines with CV < 0.6. Spearman’s correlation for the full set of 341 MAGIC lines is indicated in (i). (B–E) Distributions of germination times for pairs of MAGIC lines. The colour of the box matches the coloured circles in (A). Lower CV lines are shown on top. Grey-coloured bars show the germination time distribution of seed batches from replicate mother plants. (B, C) Exemplar lines with the same mode days to germination but different CVs of germination time. (D, E) Lines that have different CVs and different mode days to germination. For each line, the mode days to germination, final percentage germination and CV of germination time are shown. Note that the x-axis scale differs between plots. Figure 3—figure supplement 1 shows the relationship between CV and percentage germination for MAGIC lines. Figure 3—figure supplement 2 shows relationships between CV, mode and percentage germination for natural accessions. Figure 3—source data 1 contains source data for (A). Figure 3—source data 2 contains source data for (B–E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Scatter plots of coefficient of variation (CV) of germination time versus percentage germination for 341 MAGIC lines. Each point is a specific MAGIC line, and in the majority of cases, the CV and percentage are mean values for three batches of seeds from separate parent plants. Coloured circles and labels indicate lines for which examples are shown in (B, C). (ii) is a zoom in of (i), including only lines with CV < 0.6. Spearman’s correlation for the full set of 341 MAGIC lines is indicated in (i). (B, C) Distributions of germination times for exemplar MAGIC lines that have similar final percentage germination and mode days to germination but different CVs. The colour of the box matches the lines to the coloured circles in (A). Lower CV lines are shown on top. Grey-coloured bars show the distribution of germination time for seed batches from replicate mother plants. Note that the x-axis scale differs between (B) and (C). Figure 3—source data 1 contains source data for (A). Figure 3—source data 2 contains source data for (B) and (C).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scatter plot of CV of germination time versus mode days to germination for the 19 parental accessions of the MAGIC lines and 10 Spanish accessions. Each point is a specific accession, and the CV and mode are means for one batch of seed from each of at least three separate parent plants. Each point is shaded according to the percentage germination of the line (see scale bar). Orange circles indicate lines for which examples are shown in (C). Spearman’s correlation for the 29 accessions is indicated. (B) As for (A), but showing CV versus percentage germination. (C) Distribution of germination times for exemplar accessions, with similar mode and percentage germination but different CVs (accessions indicated in A). Grey-coloured bars show the distributions of germination for seed batches from replicate mother plants. Figure 3—figure supplement 2—source data 1 contains the source data for (A) and (B). Figure 3—figure supplement 2—source data 2 contains the source data for (C).
+
+### QTL mapping in MAGIC lines reveals two QTL underlying variability in germination time
 
 We next performed QTL mapping on the germination data for the MAGIC lines (Kover et al., 2009) to investigate the genetics of germination time variability. The full set of MAGIC lines phenotyped includes lines with different types of germination time distributions. All low variability lines and most high variability lines have unimodal distributions of germination time (e.g. Figure 1A, M108, M203, M393 and M285). However, there are eight lines that tend to have bimodal distributions when sown on agar (e.g. Figure 1A, M182 and M178). As such, these lines lie at the extreme tail of the distribution of CVs, with much higher values than the other lines (Figure 1B). Therefore, we ran our QTL scans both with and without the bimodal lines as their extreme values may affect the QTL results disproportionately (Figure 4A, B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Manhattan plots showing the QTL association results for each single nucleotide polymorphism (SNP) marker individually (black line) and for each marker when the Chr3 QTL SNP marker was added as a covariate (i.e. an additional variable) in the model (orange line). The orange line shows the variation in CV that is accounted for by each SNP across the genome when the variation that is explained by the Chr3 QTL SNP marker (orange point) is accounted for by adding it to the model as a covariate. The y-axis shows the p-values for the 1254 markers used, on a negative log10 scale, such that higher peaks indicate a stronger association between the region of the genome and CV. The numbered panels represent the five chromosomes of Arabidopsis. The horizontal dashed line shows a 5% genome-wide threshold corrected for multiple testing (based on simulations in Kover et al., 2009). The vertical dashed line indicates the DOG1 gene. (A) is for the full set of 341 MAGIC lines that was phenotyped and (B) excludes the eight bimodal lines with very high CV. Figure 4—figure supplement 1 shows QTL mapping for mean and mode days to germination and percentage germination. Figure 4—figure supplement 2 shows estimated effects of accession haplotypes on CV, mode and percentage germination. (C) Mapping QTL by bulk-segregant analysis using whole-genome pooled sequencing of F2 pools from a Col-0 × No-0 cross. One early and two late germinating F2 pools were sequenced. The plot shows the No-0 allele frequency differences between pairs of pools indicated in the legend (Figure 4—figure supplement 3 shows details of pool selections; E1, "early pool"; L1, "late one pool"; L2, "late two pool"). The horizontal dashed lines indicate the 95% thresholds based on simulating the null hypothesis of random allele segregation, taking into account the size of the sampled pools and the sequencing depth at each site (Magwene et al., 2011; Takagi et al., 2013). Positive values above the top line indicate enrichment for No-0 alleles, while negative values below the bottom line indicate enrichment for Col-0 alleles. As predicted, late germinating pools were enriched for the No-0 haplotype in the region of the Chr5 QTL. Here, the peak of association overlaps with the DOG1 gene (dashed vertical line). Figure 4—figure supplement 4 shows germination phenotypes of F3 seeds from Col-0 x No-0 F2 plants that themselves germinated early or late.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) is for all 341 MAGIC lines that were phenotyped, and (B) is for 333 of these lines (the full set minus the eight bimodal lines with very high coefficient of variation [CV]). The y-axis shows the p-values for the 1254 markers used, on a negative log10 scale. The numbered panels represent the five chromosomes of Arabidopsis, and the scan was performed for four germination traits: CV of germination time, mean germination time, mode germination time and percentage germination. The horizontal dashed line shows a 5% genome-wide threshold corrected for multiple testing (based on simulations in Kover et al., 2009).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Predicted accession effects at the two putative QTL on Chr3 and Chr5 (Figure 4). The effects of the 19 parental accession haplotypes were estimated by calculating the mean CV of MAGIC lines inferred to carry each particular haplotype. (B) Correlation between predicted QTL effects on percentage germination and CV. (C) Correlation between predicted QTL effects on mode days to germination and CV. In all panels, the mean effect of each parental accession’s QTL allele was estimated from the probabilistic assignment of each MAGIC line to that founder parent (Kover et al., 2009). Error bars in (A) show the 95% confidence intervals of these estimates (these were omitted from the other panels for clarity). All trait values were standardised, so that axis units represent the number of standard deviations away from the respective mean, with the horizontal and vertical dashed lines at zero highlighting the mean of the respective trait in the population. Pearson’s correlation, r, is indicated in each panel in B and C, with the 95% confidence interval in brackets.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Eight batches of Col-0 × No-0 F2 seeds, each containing ~1100 seeds and collected from a different F1 parent plant, were sown on soil. Seeds from parental accessions Col-0 and No-0 were also included in the experiment, and, for these, batches of ~1100 seeds pooled from three parent plants were sown for each accession. The different F2 batches behaved similarly, so here we present an averaged (mean) distribution based on bulked data. The percentage germination each day is a percentage of all seeds that germinated (rather than of all seeds that were sown). (A) shows the full germination time distribution with pools used for DNA sequencing highlighted, and (B) shows days 10–60, with a different y-axis scale to show the late germinating seeds. The 'early pool' used for sequencing was composed of 152 individuals that germinated on day 4; the ‘late 1’ pool was composed of 321 individuals that germinated between days 31 and 39, and the ‘late 2’ pool was composed of 213 individuals that germinated between days 43 and 60. We reasoned that, since late germination is predominantly restricted to the more variable parent (No-0), late germinating F2 plants should be enriched for the No-0 accession at loci promoting high variability (including the Chr5 locus at ~20 Mb, where the No-0 haplotype is predicted to promote high CV). Figure 4—figure supplement 3—source data 1 contains the source data for (A) and (B).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Coefficient of variation (CV) (i), mean (ii), mode (iii) and percentage germination (iv) for F3 seed batches collected from F2 plants that themselves germinated at different times (x-axis). Batches of seeds from F2 plants that germinated late (between days 30 and 60) had, on average, a significantly higher CV than seeds from plants that germinated early (on day 4) (the mean CVs of the two groups were 0.19 in the early group versus 0.27 in the late group, Wilcoxon rank-sum test W = 199, p-value=1.163e-05, n = 23 seed batches from early germinators, n = 47 seed batches from late germinators). Seeds of late germinating plants did not tend to have higher mean or mode germination times (the mean of mean germination times was 3.05 days in the early group versus 3 days in the late group; the mean of mode germination times was 3.00 in the early group versus 2.78 in the late group). Percentage germination shows a small but significant difference between the two groups of F3 seeds (mean percentage germination: 95.3 in the early group versus 87.67 in late group, Wilcoxon rank-sum test W = 754, p-value=0.00419, n = 23 seed batches from early germinators, n = 47 seed batches from late germinators). Each seed batch is from a separate F2 plant. Figure 4—figure supplement 4—source data 1 contains the source data for all panels.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A, B) dog1-3 mutant in the Col-0 background, for seeds that were 5 days after harvest (DAH) (left panels) or 30 DAH (right panels). Histograms show germination time distributions for replicate seed batches from separate parent plants (shades of grey) of each genotype. The mean of the coefficient of variation of germination time for the different seed batches is displayed on the panels (along with the mean across batches of percentage germination, mode days to germination and mean days to germination). (B) shows an ABA dose response for the wild type and mutant, with three replicate seed batches (dots) for each genotype. The lines join the mean percentages of germination for each treatment for a particular line. (C, D) As for (A, B), but for a dog1 T-DNA mutant in the No-0 background. Here the No-0 control represents wild-type plants obtained from the segregating T-DNA population (see Materials and methods for details). The number of days of seed storage before sowing is shown above each panel. (E, F) As for (A, B), but for the ahg1-5 mutant in the Col-0 background. (G, H) As for (A, B), but for the anac060 mutant in the Col-0 background. In all experiments at least three separate replicate seed batches from separate parent plants were sown for each genotype, except in C, for 24 DAH, where only 2 replicates were used. In the histograms shown in (A) for 5 DAH and in (G) for 3 DAH, five and four separate experiments, respectively, were performed (each with three seed batches). In these cases, each shade of grey is the germination time distribution from a single experiment, with the behaviours of its three separate seed batches pooled together for plotting, treated as one sample. For all other histograms, one experiment was performed and shades of grey are separate replicate seed batches harvested and sown in that single experiment. Source data is provided in Figure 4—figure supplement 5—source data 1.
 
 QTL mapping for both the full set of lines and the set excluding bimodal lines revealed a region of chromosome 3 (i.e. Chr3) that accounted for ~14% of the variance in CV of germination time in the MAGIC lines used (Figure 4A, B). The region of significant association was broad and spanned the centromere. The tip of the peak co-located with the previously identified DELAY OF GERMINATION 6 (DOG6) QTL, at 15.9 Mb (Bentsink et al., 2010; Hanzi, 2014). This Chr3 QTL was also associated with mean days to germination, mode days to germination and percentage germination, suggesting that this locus is a general regulator of germination time, rather than specifically affecting variability (Figure 4—figure supplement 1).
 
@@ -72,7 +124,7 @@ In summary, we have shown that at least two loci contribute to variability in se
 
 The Chr5 peak obtained in the bulk segregant mapping overlaps with the DOG1 gene known to play a role in seed dormancy level. The peak obtained in the QTL mapping is slightly shifted and lies equidistant between DOG1 and the nearby SET1 locus (at ~21 Mb) which affects dormancy levels in the field in response to environmental conditions. Consistent with a role for this region of Chr5 in seed dormancy in the MAGIC lines, its haplotypic effects on CV and on percentage germination were negatively correlated (Figure 4—figure supplement 2B, Chr5 panel). Additionally, our Col-0 × No-0 F2 and F3 analysis suggested that seeds from plants enriched for the No-0 haplotype at this locus (which is associated with high CV) had a lower percentage germination than seeds from plants enriched for the low CV Col-0 haplotype (Figure 4—figure supplement 4). However, perhaps surprisingly, this locus was not significantly associated with percentage germination in the QTL mapping (Figure 4A, B). This may be because, unlike the Cvi accession that was used originally to map both DOG1 and SET1 loci (Alonso-Blanco et al., 2003; Footitt et al., 2020), the accessions used to generate the MAGIC lines have relatively weak dormancy and may not carry alleles in this region that promote dormancy sufficiently strongly to be detected for percentage germination in the QTL mapping.
 
-## Effects of QTL candidate genes on seed germination time variability
+### Effects of QTL candidate genes on seed germination time variability
 
 There is evidence to suggest that the best candidate genes underlying our identified loci influence ABA sensitivity. The effect of the DOG6 locus overlapping our Chr3 QTL is proposed to be caused by the ANAC060 gene (Hanzi, 2014), which influences ABA sensitivity in seedlings, directly binds to the promoter of the ABA-responsive transcription factor, ABA INSENSITIVE 5 (ABI5), and can downregulate expression of both ABI4 and ABI5 (Li et al., 2014; Yu et al., 2020). Coincidently, the two candidate genes for the Chr5 locus are closely related in function. The SET1 locus in this region is hypothesised to be caused by the ABA-HYPERSENSITIVE GERMINATION 1 (AHG1) gene (Footitt et al., 2020). AHG1 is a type 2C protein phosphatase (PP2C) that inhibits ABA signalling via dephosphorylating class II SNF1-related protein kinase 2 (SnRK2), which promote seed dormancy by activating ABA-responsive transcriptional changes (Liu and Hou, 2018; Née et al., 2017a; Nishimura et al., 2007, Nishimura et al., 2018). DOG1 has been shown to directly bind to AHG1, independently from ABA, and inhibit its function, thus allowing DOG1 to inhibit germination via the ABA pathway (Carrillo-Barral et al., 2020; Née et al., 2017a; Nishimura et al., 2018). Mutants of all three candidate genes have altered ABA sensitivity: anac060 mutant seedlings and ahg1 mutant seeds have increased ABA sensitivity (Yu et al., 2020; Li et al., 2014; Nishimura et al., 2007), while dog1 mutant seeds have decreased ABA sensitivity (Née et al., 2017a).
 
@@ -82,9 +134,33 @@ For the anac060 mutant in the Col-0 background (Li et al., 2014), we observed a 
 
 Overall, our results support the hypothesis that the candidate genes underlying the Chr5 QTL peak could influence variability through an effect on ABA sensitivity and suggest that this could also be the case for the ANAC060 candidate gene for the Chr3 QTL peak.
 
-## A stochastic model of the ABA-GA bistable switch can account for the observed genetic variation in germination time distributions
+### A stochastic model of the ABA-GA bistable switch can account for the observed genetic variation in germination time distributions
 
 The hypothesis that natural variation in germination time distributions is caused by differences in ABA sensitivity raises the question of how differences in ABA sensitivity between lines could affect their levels of variability in germination time. To answer this, we built a simplified mathematical model of the core ABA-GA network that governs germination time (Liu and Hou, 2018; Figure 5A). We reasoned that it was necessary to include both ABA and GA in the model since the decision to germinate is governed by the relative levels of the two hormones (Née et al., 2017b; Shu et al., 2016b), and both converge to regulate the expression of a common set of transcription factors that control seed dormancy and germination (Liu and Hou, 2018; Piskurewicz et al., 2008; Shu et al., 2016a). A previous modelling study that solely considered ABA regulation has proposed that stochastic fluctuations in the regulation of ABA can generate variability in germination times (Johnston and Bassel, 2018) and the ABA-GA network has been modelled previously to account for germination decisions (Topham et al., 2017). However, the ability of the ABA-GA network to generate variability in germination time has not been explored.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-v1.jpg)
+
+**Figure 5.:** (A) Model scheme of the ABA-GA network. Normal arrows represent effective promotion and blunt arrows represent effective inhibition. We represent the inhibitors of germination – DELLAs, ABI4 and ABI5 – as one factor, called Integrator, which we assume must drop below a threshold for germination to occur. We assume that ABA promotes the production of Integrator and that GA promotes its degradation. Integrator is assumed to promote ABA production and inhibit GA production. A factor, Z, increases upon sowing and promotes GA production. Figure 5—figure supplement 1 provides information on the dynamics of the model. (B) Effects on coefficient of variation (CV), mode and percentage germination of simulated germination time distributions as the ABA threshold for Integrator (I) production parameter values are changed. This parameter is inversely correlated with sensitivity of Integrator to ABA. Each panel shows the results of three different runs of stochastic simulations on 4000 seeds. (C) Simulated germination time distributions for six values of the ABA threshold for Integrator production parameter, showing positively correlated changes in CV and mode. The arrow indicates increasing sensitivity of Integrator production to ABA towards the top left. (D) CV, mode and percentage germination in bistable and monostable regions of the model parameter space after the rise in GA production (see Figure 5—figure supplement 1 for details of monostable and bistable regimes). See Materials and methods for regions of the parameter space that we exclude from these plots because they are considered less biologically relevant. Colours in (B) and (D) represent different runs of stochastic simulations. See Materials and methods for further details on parameters and numerical simulations.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Modelling results showing representative behaviour of the model when it is in the monostable (A–G) and two bistable scenarios (H–U) after the rise of GA production (referred to as monostable and bistable scenarios for simplicity). (H–N) show a bistable scenario where the non-germination steady state is less stable than the second bistable scenario shown in (O–U). The three scenarios differ in the ABA threshold for integrator production, which modulates ABA sensitivity: the monostable scenario in (A–G) has the highest value of this parameter (θI,ABA = 10), and therefore lowest ABA sensitivity, the first bistable scenario in (H–N) has an intermediate ABA sensitivity (θI,ABA = 5.6) and the second bistable scenario in (O–U) has the highest ABA sensitivity (θI,ABA = 4.87). The bistable scenarios correspond to the grey region in the phase diagrams shown in Figure 5—figure supplement 4, and the monostable scenario corresponds to the white regions. (A, H, O) Results from nullcline analysis for the Integrator variable showing the steady states of the dynamics before (i) and after (ii) the GA production increase (see Materials and methods). In each panel, steady-state solutions are shown by the intersections between the dark grey line and the light grey line. Filled dots and diamonds represent the Integrator stable steady states before and after the GA production increase, respectively. Empty dots and diamonds represent unstable steady states. The dashed-dotted blue line illustrates the Integrator threshold below which germination happens. Before the increase of GA production, the modelled network exhibits a high Integrator stable steady state above the threshold (higher filled dot), representing a non-germinating state before sowing. We set this state as the initial condition of the simulation. For these parameter values, a lower Integrator stable solution below the germination threshold exists (lower filled dot), therefore representing a germination state, as well as an intermediate unstable Integrator solution (empty dot). Hence, bistability occurs for the Integrator variable before the increase of GA production. With the provided noise intensity for these simulations, none of the seeds is able to switch from the non-germination state to the germination state before the rise of GA production in the three scenarios (A), (H) and (O) (see Materials and methods). (Aii) In the monostable scenario after the rise in GA production, the increase in GA production leads to the disappearance of the non-germination state and the unstable steady state through a saddle node bifurcation; this makes the germination state the only possible stable state. (Hii, Oii) In the bistable scenarios after the rise in GA production, the non-germination state (high Integrator, high ABA and low GA) approaches the unstable steady state (empty dot), becoming less stable. In these cases, stochastic fluctuations enable the simulated seeds to cross the unstable steady state, reaching the germination state (low Integrator, low ABA and high GA), which becomes a more stable solution. (B, I, P) Nullclines analyses shown in (A), (H) and (O) subpanels, with the scenarios before and after the rise in GA production represented together. For each panel, the light grey solid line and dots show the case before the rise in GA production, and the light grey dashed line and diamonds show the case after the rise in GA production. (C–F, J–M, Q–T) Time courses for the components of the model in example simulations. Different coloured lines represent different seeds. (C, J, Q) Time courses of the concentration of the factor Z, which increases rapidly upon sowing and promotes GA production. (D, K, R) Time courses of Integrator concentrations. Dashed-dotted blue lines show the threshold below which Integrator must drop for germination to occur. (E, L, S) Time courses of ABA concentrations. (F, M, T) Time courses of GA concentrations. (G, N, U) Histograms of germination times, with values for coefficient of variation, mode and percentage germination of the distribution. Note that the x-axis range for the time courses and histograms is larger for (Q–U) due to the highly variable germination times in this scenario. The simulations representing the bistable scenarios show a transient in which the seeds can remain in a high Integrator state until the stochastic fluctuations cause them to switch to the low Integrator state. Conversely, in the monostable scenario, the seeds achieve the low Integrator state in a more direct manner. See Materials and methods for further details on parameters and numerical simulations.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–D) show the effects on coefficient of variation (CV), mode and percentage germination of simulated germination time distributions as single parameter values are changed. Each panel shows the results of three different runs of stochastic simulations on 400 seeds, represented in different colours. (A) Varying the rate of abscisic acid (ABA) production as an example of a parameter that, when changed, tends to have positively correlated effects on CV and mode of germination time. (B) Varying the threshold of gibberellic acid (GA) for degradation of Integrator (this parameter is inversely correlated with sensitivity of Integrator to GA). For some points in parameter space, varying this parameter has anti-correlated effects on CV and mode. (C) As for (B), but in a different region in parameter space (see below for parameter details), in which increasing the threshold of GA for degradation of Integrator causes an increase in mode with relatively constant CV which indicates decoupled effects on CV and mode. (D) Varying the effective system volume parameter, V, which controls the level of noise in the system (we define noise intensity as being proportional to 1/V), also causing decoupled effects on CV and mode. For some areas of parameter space, an increase in V, and therefore a decrease in noise, causes the CV to decrease but leaves mode and percentage germination relatively unchanged. Parameter values are provided in the Materials and methods (Table 2) and were the same across simulations with the exception of the parameters varied on x-axes and differences in vABA in (A), V in (B) , θI,ABA in (C) and in (D). See Materials and methods for regions of the parameter space that we exclude from these plots because they are considered less biologically relevant. Figure 5—figure supplement 3 shows simulated germination time distributions corresponding to the parameter explorations in (A–D). Figure 5—figure supplement 4 shows the full results of the 2D parameter screen in terms of the effects of parameter pairs on CV, mode and percentage germination.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Histograms in (A), (B), (C) and (D) correspond to points in the plots in Figure 5—figure supplement 2 from (A), (B), (C) and (D), respectively. (A) Simulated germination time distributions for three values of abscisic acid (ABA) basal production, showing positively correlated changes in coefficient of variation (CV) and mode. (B) As for (A), but varying the gibberellic acid (GA) threshold for Integrator degradation (which is inversely proportional to Integrator sensitivity to GA), illustrating anti-correlated changes in mode and CV. (C) As for (B) but varying the GA threshold for Integrator degradation in an area of parameter space where the mode increases while the CV remains relatively constant. (D) As for (A) but varying the parameter V which governs the level of noise in the system, illustrating a change in CV while the mode remains relatively constant.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Each panel shows a result from a 2D parameter exploration for a pair of parameters, such that each parameter is varied for a range of values of a second parameter. (A) Effect of abscisic acid (ABA) basal production and ABA basal degradation parameters on CV (i), mode (ii) and percentage germination(%) (iii) of simulated germination distributions. CVs below 0.01 and above 1 are represented as being 0.01 and 1, respectively. CV and mode of the simulations were represented when there were more than nine seeds germinating out of 1000. (iv) Phase diagram showing theoretically predicted regions from nullcline analysis of the deterministic system: bistability (grey, see Figure 5—figure supplement 1B for information on this region) and tristability (green) regions in which we can expect the full range of behaviours in terms of germination percentage, region where we expect to have all seeds germinated instantaneously (pink hatched), and region where no seeds are expected to germinate in the deterministic limit (i.e. when there is no noise) (blue). The remaining white region is monostable, and we expect all seeds (non-instantaneously) to germinate (see Figure 5—figure supplement 1A, B for information on this region). We expect that just the bistable and tristable scenarios will allow a percentage of seeds to germinate that differs from 0% and 100%. The colour bars above (A) apply to all rows. All rows are as for (A), but exploring the following parameter pairs: (B) Gibberellic acid (GA) basal degradation versus GA basal production; (C) Integrator basal degradation versus Integrator basal production; (D) GA-dependent degradation of Integrator versus Integrator basal production; (E) threshold of Integrator for the inhibition of GA production (which is inversely correlated with sensitivity of GA to Integrator) versus threshold of Integrator for the promotion of ABA production (which is inversely correlated with sensitivity of ABA to Integrator); (F) threshold of GA for the GA-mediated degradation of Integrator (which is inversely correlated with sensitivity of Integrator to GA) versus threshold of ABA for the promotion of Integrator production (which is inversely correlated with sensitivity of Integrator to ABA); (G) effective volume of the system, V (which is inversely proportional to the noise in the system, see Materials and methods), versus threshold of ABA for the promotion of Integrator production; (H) effective volume of the system, V, versus threshold of GA for the degradation of Integrator. The theoretically predicted areas from nullclines (right panels) are closely predictive of the stochastic simulation outcomes (see Materials and methods). Figure 5—figure supplement 5 shows an analysis of the CV, mode of germination times and percentage germination in monostable and bistable regions of these parameter spaces. See Materials and methods for further details of the simulations and theoretical predictions and see Table 2 for full parameter values for each simulation.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Simulation results across the different 2D parameter explorations shown in Figure 5—figure supplement 4A—G. In panels (A)-(G), points represent simulation results for different combinations of parameter values for the parameter pair indicated on the right. Panels show: i) CV, ii) mode and iii) percentage germination of simulated germination time distributions. Colours represent different runs of stochastic simulations. This analysis focuses on biologically relevant points falling within the monostable and bistable regions (see Materials and methods regarding the excluded, less biologically relevant points). We obtained a similar result in relation to simulations shown in Figure 5—figure supplement 4H but have ommited this here for simplicity.
 
 Our mathematical model captures the relationships between the hormones ABA and GA and the key transcriptional regulators that act as inhibitors of germination, such as DELLAs, ABI4 and ABI5 (Ariizumi et al., 2008; Liu et al., 2016; Piskurewicz et al., 2008; Shu et al., 2016a; Tyler et al., 2004). We represent these germination inhibitors as one factor, called Integrator. We model the net effects of ABA and GA on the germination inhibitors by assuming that the production of Integrator is promoted by ABA, and that its degradation is promoted by GA (Figure 5A; Ariizumi et al., 2008; Liu et al., 2016; Piskurewicz et al., 2008; Shu et al., 2016a; Tyler et al., 2004). The germination inhibitors are known to feed-back to influence GA and ABA levels through effects on their biosynthesis or catabolism (Ko et al., 2006; Oh et al., 2007; Piskurewicz et al., 2008; Shu et al., 2016a, Shu et al., 2013). This feedback is represented in the model by assuming that Integrator promotes the production of ABA (Ko et al., 2006; Zentella et al., 2007) and inhibits the production of GA (Shu et al., 2013; Oh et al., 2007). To capture the inhibitory effect of the DELLAs, ABI4 and ABI5 on germination, we assume that in each seed the Integrator level must drop below a threshold for germination to occur. Finally, we include a factor, Z, to simulate a light-induced increase in GA production rate upon sowing (Derkx and Karssen, 1993; Oh et al., 2007, Oh et al., 2006). Full details and justifications of the model assumptions are provided in the Materials and methods section.
 
@@ -106,7 +182,7 @@ Dependent on the area of the parameter space, specific parameters could show di
 
 To understand further how differences in CV and mode of germination time distributions are generated by the model, we looked across all the parameter screen results to see how CV and mode varied as the model switched between the situation where the model is monostable after the rise in GA production (e.g. Figure 5—figure supplement 1A–G) and the situation where it is bistable following this rise in GA production (e.g. Figure 5—figure supplement 1H–U). We found that across a range of parameter sets, both modes and CVs of germination times tend to be higher when bistability rather than monostability occurs after the sowing-induced rise in GA production (Figure 5—figure supplement 5). Thus, in general, the model predicts that high variability in germination time is associated with the ABA-GA network operating in the bistable regime.
 
-## Exogenous ABA and GA addition validates the model predictions
+### Exogenous ABA and GA addition validates the model predictions
 
 To generate testable predictions, we next sought to understand how the model behaves when the levels of ABA and GA are varied through exogenous addition. To simulate ABA and GA addition to high and low variability MAGIC lines, we represent these two different classes of lines with a difference in the parameter controlling the sensitivity of Integrator production to ABA. The low variability lines are represented by low ABA sensitivity, with the model operating in the monostable regime with a more peaked germination time distribution. The high variability lines are represented by high ABA sensitivity, with the model operating in the bistable regime and having a longer tailed germination time distribution.
 
@@ -114,7 +190,155 @@ Although here we chose to model low variability lines as being in the monostable
 
 The model predicts that starting from germination time distributions with low or high variability, increasing concentrations of exogenous ABA will initially increase the CVs of the germination time distributions (Figure 6Ai), causing long-tailed distributions to emerge (Figure 6—figure supplement 2A). This is because the addition of exogenous ABA stabilises the high Integrator, high ABA, low GA non-germination state, requiring stronger fluctuations to allow germination (Figure 6—figure supplement 3A). At higher concentrations of exogenous ABA, the germination time distribution becomes flattened into a seemingly uniform distribution with a high mean and therefore lower CV (Figure 6Ai, ii, Figure 6—figure supplement 2A, [ABA]exo = 2.5). In this situation, the mode shows an increase with some noticeable fluctuations due to the flattened germination time distribution, where mode is less well defined (Figure 6Aiii). At high enough levels of exogenous ABA, the time to achieve the low integrator state can become larger than our chosen final simulation time; seeds exhibiting this behaviour are not considered as germinated, emulating the finite time window during which the germination scoring is performed in this experiment (see Materials and methods). Hence, the increase of exogenous ABA also reduces the percentage of germinated seeds (Figure 6Aiv). The high exogenous ABA can make the system become monostable, causing the non-germination solution to be the only one.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig6-v1.jpg)
+
+**Figure 6.:** (A) Simulations of addition of increasing doses of exogenous ABA (x-axes), starting from a point in the parameter space that shows higher seed germination time variability (left) and lower variability (right) when no exogenous ABA is added. High variability in seed germination time is simulated with a lower value of the ABA threshold for I production (θI,ABA ) (i.e. higher ABA sensitivity) than low variability in seed germination time. Plots show the effects on the coefficient of variation (CV) (i), mean (ii), mode (iii) and percentage of seeds that germinated (iv) for the resulting germination time distributions. Each panel shows the result of five stochastic simulations for 4000 seeds, each plotted in a different colour. Parameter values for the high and low variability lines simulations are the same with the exception of the ABA threshold for I production (θI,ABA = 7 for the low variability lines and θI,ABA = 5.8 for the high variability lines). See Materials and methods for further simulation details and parameter values. (B) Experimental ABA dose response for six high variability MAGIC lines (left) and six low variability lines (five MAGIC lines plus Col-0) (right). (B) (i) shows mean CVs of individual lines for different exogenous ABA concentrations (means are of at least two independent experiments), (ii) as for (i) but for mean days to germination, (iii) mode days to germination and (iv) percentage germination. Treatments with ‘0’ μM are vehicle control treatments. Figure 6—figure supplement 1 shows exogenous addition of gibberellic acid (GA) in the model and experimentally to the high and low variability lines. Figure 6—figure supplement 2 shows simulated germination time distributions for selected concentrations of exogenous ABA and GA. Figure 6—figure supplement 3 shows the results of nullcline analysis in the presence of exogenous ABA and GA. Figure 6—figure supplement 4 shows the effects of exogenous ABA and GA on germination time distributions for example high and low variability lines. Figure 6—source data 1 contains source data for (B).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Simulations of addition of increasing doses of exogenous GA (x-axes), starting from a point in the parameter space that shows higher seed germination time variability (left) and lower variability (right) when no exogenous GA is added. As in Figure 6, high variability in seed germination time is simulated with a lower value of the abscisic acid (ABA) threshold for I production (θI,ABA) (i.e. high ABA sensitivity) than low variability in seed germination. Plots show the effects on the coefficient of variation (CV) (i), mean (ii), mode (iii) and percentage of seeds that germinated (iv) for the resulting germination time distributions. Each panel shows the result of five stochastic simulations for 4000 seeds, each plotted in a different colour. Parameter values for the high and low variability lines simulations are the same with the exception of the ABA threshold for I production (θI,ABA = 7 for the low variability lines and θI,ABA = 5.8 for the high variability lines). See Materials and methods for further simulation details and parameter values. (B) GA dose response for six high variability MAGIC lines (left) and six low variability lines (five MAGIC lines plus Col-0) (right). (Bi) shows mean CVs of individual lines for different GA concentrations (means are of at least two independent experiments, except for MAGIC lines 467 and 151 which have only one experiment), (ii) mean days to germination, (iii) mode days to germination and (iv) percentage germination. Treatments with ‘0’ μM are vehicle control treatments. Figure 6—figure supplement 2B shows simulated germination time distributions for selected concentrations of exogenous GA. Figure 6—figure supplement 3B shows the results of nullcline analysis in the presence of exogenous GA. Figure 6—figure supplement 4B shows the effects of GA on germination time distributions for example high and low variability lines. Figure 6—source data 1 contains source data for (B).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Simulation results of adding increasing concentrations of exogenous ABA (A) or GA (B), showing germination time distributions and the coefficient of variation (CV), mode and percentage germination for those distributions. Simulations were performed starting from a point in the parameter space that shows higher germination time variability (left) and lower germination time variability (right) when no exogenous ABA or GA is added. Results correspond to a subset of the same simulations from those presented in Figure 6 and Figure 6—figure supplement 1. See corresponding nullcline analyses for some of these panels in Figure 6—figure supplement 3.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Plots are for example cases from Figure 6 and Figure 6—figure supplement 1. (A) Examples of nullcline analyses for two doses of exogenous ABA. Left-hand panels (i and iii) show the cases at the beginning of the simulations prior to the rise in basal GA production. Right-hand panels (ii and iv) show plots for after the rise in basal GA production. Light grey solid (i and iii) and dashed (ii and iv) lines show the control simulations without exogenous addition of ABA and red solid (i and iii) and dashed (ii and iv) lines show the simulations with addition of exogenous ABA (the level added is indicated on the right). Steady-state solutions are shown by the intersections of the dark grey solid line with the light grey or red lines. Dashed blue line is the threshold below which Integrator must drop for germination to occur. Exogenous application of ABA can enhance the stability of the non-germination state (see Materials and methods), making it more difficult to switch to the germination state, driving a very long-tailed or flat distribution of germination times (Figure 6—figure supplement 2A). Exogenous ABA also shifts the low Integrator germination steady state higher, closer to the threshold for germination (compare the intersections of dashed red and dashed grey lines with the solid grey line). (B) As for (A), but for the addition of exogenous GA. Exogenous application of GA can destroy bistability before and after the rise of GA production, making the germination steady state the only possible steady state. This allows seeds to germinate earlier, with less variability (Figure 6—figure supplement 2B).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Effect of increasing exogenous ABA concentration on the distribution of germination times for the high variability MAGIC line, M182 (left panels), and the low variability accession, Col-0 (right panels). Plots show the percentage of all seeds that were sown, which germinated on a given day. Horizontal rows of panels show increasing concentrations of ABA (see labels on the right). Shades of grey indicate experimental replicates (at least two for each genotype). (B) As for (A), but for exogenous GA. Figure 6—figure supplement 4—source data 1 contains source data for (A) and (B).
+
 We next sought to experimentally test the model prediction that increasing exogenous ABA tends to increase variability in germination time. To do this we treated a number of high or low variability lines with a range of exogenous ABA doses and quantified germination at 1-day intervals. The low variability lines behaved similarly to each other under the addition of ABA (Figure 6B) and GA (Figure 6—figure supplement 1B), as did the high variability lines, irrespective of their specific QTL haplotypes on Chr3 and Chr5 (Table 1). This supports our use of ABA sensitivity as a general parameter for modulating germination time distribution in the model, rather than modelling specific lines and QTL haplotypes with different parameter sets. Consistent with the hypothesis that high and low variability lines differ in their ABA sensitivity, the percentage germination of high variability lines tended to be more sensitive to exogenous ABA compared to low variability lines (Figure 6Biv).
+
+**Table 1.**
+ High and low variability lines used for abscisic acid (ABA) and gibberellic acid (GA) dose responses and their haplotypes at the Chr3 and Chr5 quantitative trait loci .Haplotypes were classified according to their estimated effect on coefficient of variation (CV), as shown in Figure 4—figure supplement 2. Haplotype effect is classified as low/high when its average predicted effect is less than/higher than the mean haplotype effect, and the 95% confidence interval of the haplotype's effect does not overlap with mean haplotype effect. Haplotype effect is classified as medium when its 95% confidence interval overlaps with mean haplotype effect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Line</th>
+      <th>H/L variability</th>
+      <th></th>
+      <th>Chr3 haplotype</th>
+      <th>Chr3 haplotype effect on CV</th>
+      <th>Chr5 haplotype</th>
+      <th>Chr5 haplotype effect on CV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>143</td>
+      <td>High</td>
+      <td></td>
+      <td>Can</td>
+      <td>Medium</td>
+      <td>Zu</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>178</td>
+      <td>High</td>
+      <td></td>
+      <td>Wu</td>
+      <td>High</td>
+      <td>Rsch</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>182</td>
+      <td>High</td>
+      <td></td>
+      <td>Edi</td>
+      <td>Medium</td>
+      <td>Hi</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>285</td>
+      <td>High</td>
+      <td></td>
+      <td>Ler</td>
+      <td>High</td>
+      <td>Zu</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>393</td>
+      <td>High</td>
+      <td></td>
+      <td>Ler</td>
+      <td>High</td>
+      <td>Kn</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>High</td>
+      <td></td>
+      <td>Sf</td>
+      <td>High</td>
+      <td>Rsch</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>108</td>
+      <td>Low</td>
+      <td></td>
+      <td>Tsu</td>
+      <td>Low</td>
+      <td>Rsch</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>123</td>
+      <td>Low</td>
+      <td></td>
+      <td>Bur</td>
+      <td>Medium</td>
+      <td>Wu</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>151</td>
+      <td>Low</td>
+      <td></td>
+      <td>Bur</td>
+      <td>Medium</td>
+      <td>Wu</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>Low</td>
+      <td></td>
+      <td>Wil</td>
+      <td>Low</td>
+      <td>Can</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>467</td>
+      <td>Low</td>
+      <td></td>
+      <td>Wil</td>
+      <td>Low</td>
+      <td>Edi</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>Col-0</td>
+      <td>Low</td>
+      <td></td>
+      <td>Col-0</td>
+      <td>Low</td>
+      <td>Col-0</td>
+      <td>Medium</td>
+    </tr>
+  </tbody>
+</table>
 
 ABA treatments tended to increase the spread of germination time distributions, particularly for low variability lines. In the low variability lines, high ABA concentrations of 5 and 10 μM caused large increases in the CV of germination time, such that the distributions of germination times for low variability lines treated with ABA were similar to those of high variability lines in control conditions (Figure 6Bi, Figure 6—figure supplement 4A, compare Col-0, 5 and 10 μM [ABA]exo with M182, 0 μM [ABA]exo). This was consistent with the prediction from the model that an initial increase in exogenous ABA concentration causes an increase in CV (Figure 6Ai, Figure 6—figure supplement 2A). Changes in mode were modest for low variability lines (Figure 6Biii), with a more obvious effect on percentage germination, which decreased at 10 μm (Figure 6Biv). These observations are compatible with the model (Figure 6A). The experimental observation that the moderate ABA dose of 5 μM caused larger increases in CV compared with the changes in the mode was also consistent with the model (Figure 6Ai, iii, Figure 6—figure supplement 2A, [ABA]exo = 0 compared to [ABA]exo = 1.5). For high variability lines, increasing concentrations of ABA increased mean and mode germination times, but had relatively little effect on CV (Figure 6Bi-iii, Figure 6—figure supplement 4A, M182). Some high variability lines show an increase in CV followed by a decrease, which is consistent with the model, and some lines show a slight decrease (Figure 6Bi). It is possible that these lines occupy different positions in parameter space due to variation at loci (and therefore components of the ABA-GA network) that are not accounted for in our simulations of these lines. Consistent with a less striking effect of exogenous ABA on the CV of high variability lines compared to low variability lines, in the model, the fold changes in CV upon ABA addition for high variability lines were smaller than those predicted for low variability lines (Figure 6Ai).
 
@@ -126,7 +350,7 @@ We also sought to investigate the effects of altered levels of ABA or GA on germ
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59485/elife-59485-fig7-v1.jpg)
 
-**Figure 7.:** Distributions of germination times for indicated genotypes. cyp707a1-1 and cyp707a1-1 cyp707a2-1 mutants lack enzymes involved in ABA catabolism, while ga3ox-3 and ga3ox1-3 ga3ox2-1 mutants lack enzymes involved in GA biosynthesis. Plots show the percentage of all seeds that were sown, that germinated on a given day. Grey-coloured bars show the germination time distribution of seed batches from replicate mother plants. For Col-0 and each mutant, the mean coefficient of variation of germination times, mode days to germination and final percentage germination is shown (averaged across the replicate batches [n = 3]). Data are representative of at least two independent experiments for each genotype. Source data is provided in Figure 7—source data 1.Figure 7—source data 1.
+**Figure 7.:** Distributions of germination times for indicated genotypes. cyp707a1-1 and cyp707a1-1 cyp707a2-1 mutants lack enzymes involved in ABA catabolism, while ga3ox-3 and ga3ox1-3 ga3ox2-1 mutants lack enzymes involved in GA biosynthesis. Plots show the percentage of all seeds that were sown, that germinated on a given day. Grey-coloured bars show the germination time distribution of seed batches from replicate mother plants. For Col-0 and each mutant, the mean coefficient of variation of germination times, mode days to germination and final percentage germination is shown (averaged across the replicate batches [n = 3]). Data are representative of at least two independent experiments for each genotype. Source data is provided in Figure 7—source data 1.
 
 To test genetically the effect of decreasing the GA concentration on the germination time distribution of Col-0, we used the ga3ox1-3 ga3ox2-1 mutant, which lacks two enzymes involved in GA biosynthesis (Mitchum et al., 2006). This double mutant, which has reduced GA levels (Mitchum et al., 2006), showed an increased CV and, similar to the cyp707a1-1 cyp707a2-1 mutant, had increased mode and decreased percentage germination (Figure 7). Together with the GA and ABA dose–response experiments, these findings support the model predictions regarding the effects of altering ABA and GA levels on CV, mode and percentage germination.
 
@@ -162,7 +386,220 @@ Multiple other aspects of Arabidopsis development have been shown to display phe
 
 ## Materials and methods
 
-## Plant materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological samples (Arabidopsis thaliana)</td>
+      <td>MAGIC lines</td>
+      <td>NASC</td>
+      <td>NASC ID: N782242</td>
+      <td>PMID:19593375</td>
+    </tr>
+    <tr>
+      <td>Biological samples (Arabidopsis thaliana)</td>
+      <td>MAGIC parental accessions</td>
+      <td>NASC</td>
+      <td>IDs of individual parental accessions: http://arabidopsis.info/CollectionInfo?id=112</td>
+      <td>PMID:19593375</td>
+    </tr>
+    <tr>
+      <td>Biological samples (Arabidopsis thaliana)</td>
+      <td>Spanish accessions</td>
+      <td>NASC</td>
+      <td></td>
+      <td>PMID:26991665</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>cyp707a1-1</td>
+      <td>PMID:16543410</td>
+      <td></td>
+      <td>Eiji Nambara, University of Toronto</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>cyp707a1-1 cyp707a2-1</td>
+      <td>PMID:16543410</td>
+      <td></td>
+      <td>Eiji Nambara, University of Toronto</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>ga3ox1-3</td>
+      <td>NASC</td>
+      <td>NASC ID: N6943</td>
+      <td>PMID:16460513</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>ga3ox1-3 ga3ox2-1</td>
+      <td>NASC</td>
+      <td>NASC ID: N6944</td>
+      <td>PMID:16460513</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>dog1-3 (Col-0) (SALK 000867)</td>
+      <td>NASC</td>
+      <td>NASC ID: N500867</td>
+      <td>PMID:17065317</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>anac060 (SALK 012554C)</td>
+      <td>NASC</td>
+      <td>NASC ID: N665285</td>
+      <td>PMID:24625790</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>ahg1-5</td>
+      <td>PMID:28706187</td>
+      <td></td>
+      <td>Guillaume Née, University of Münster</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Arabidopsis thaliana)</td>
+      <td>dog1 (No-0) (dog1 mutant in No-0 background)</td>
+      <td>RIKEN</td>
+      <td>BRC number: pst21966 Line number: 15-3980-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DOG1N_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAATCCGCTCCTTGTACCG See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DOG1N_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCATCCCTGAGCTCAAACAA See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ds5-2a</td>
+      <td>PMID:14996221</td>
+      <td>PCR primers</td>
+      <td>TCCGTTCCGTTTTCGTTTTTTAC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DOG1-3 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCCAGGAACGTTGTCGTATC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DOG1-3 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGTTTGTGACCCACACAAAGC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LBb1.3</td>
+      <td>http://signal.salk.edu/tdnaprimers.2.html</td>
+      <td>PCR primers</td>
+      <td>ATTTTGCCGATTTCGAAC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANAC060 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGACTCTGTTTGAAGCCTTG See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANAC060 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TATGCCTGTCCTGATTTGCTC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AHG1 LP</td>
+      <td>PMID:28706187</td>
+      <td>PCR primers</td>
+      <td>ACCGACACGTGTTCTGTCTTC See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AHG1 RP</td>
+      <td>PMID:28706187</td>
+      <td>PCR primers</td>
+      <td>CTAAAACTCGACCACCAGCTG See Supplementary file 4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibberellin A4</td>
+      <td>Sigma Aldrich</td>
+      <td>G7276</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Abscisic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>A1049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEB Next Ultra DNA Library Prep Kit</td>
+      <td>New England BioLabs</td>
+      <td>E7370L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Organism</td>
+      <td>PMID:15961462</td>
+      <td></td>
+      <td>https://gitlab.com/slcu/teamHJ/Organism</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td></td>
+      <td>https://www.R-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>Python Software Foundation</td>
+      <td></td>
+      <td>Version: Python 2.7 https://www.python.org/download/releases/2.7/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Data analysis and modelling scripts</td>
+      <td>This paper</td>
+      <td></td>
+      <td>https://gitlab.com/slcu/teamJL/abley_formosa_etal_2020 ; Abley et al., 2021 copy archived at swh:1:rev:0a97b841e58b128c174d93fc759b28f1df2966a2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant materials
 
 MAGIC lines (Kover et al., 2009) and accessions (Vidigal et al., 2016) were obtained from the Nottingham Arabidopsis Stock Centre (NASC). The cyp707a1-1 and cyp707a1-1 cyp707a2-1 mutants are as described in Okamoto et al., 2006 and were kindly provided by Eiji Nambara. ga3ox1-3 and the ga3ox1-3 ga3ox2-1 mutants are as described in Mitchum et al., 2006 and were obtained from NASC. The dog1-3 mutant in the Col-0 background is SALK 000867 (as described in Bentsink et al., 2006), and the anac060 mutant is SALK 012554C (as described in Li et al., 2014). The ahg1-5 mutant is as described in Née et al., 2017a and was kindly provided by Guillaume Née. dog1-3, anac060 and ahg1-5 were all confirmed to be homozygous by PCR based genotyping, with primers detailed in Supplementary file 4. The dog1 mutant in the No-0 background was obtained as a segregating Ds transposon tagged line from RIKEN, BRC number: pst21966, line number: 15-3980-1 (Kuromori et al., 2004). We obtained homozygous mutants by PCR-based genotyping with primers detailed in Supplementary file 4. We also obtained homozygous wild-type lines from the pst21966 segregating population and used them as controls in the germination assay (labelled as No-0 in Figure 4—figure supplement 5).
 
@@ -180,13 +617,13 @@ After sterilising, seeds were suspended into 0.1% agar and pipetted on to an emp
 
 For 32 MAGIC lines, the whole experiment was repeated, with parental plants for seed harvest from a new independent sowing. The germination time distributions of MAGIC lines and natural accessions were all determined on agar plates as described above. The Col-0 × No-0 F2 experiment was phenotyped on soil in the same conditions as those described above for growing plants for seed harvest. Transparent lids were kept on the trays of soil, and newly germinated seedlings were removed and counted every day. A seed was considered to have germinated when its cotyledons had visibly emerged.
 
-## QTL mapping by bulked-segregant analysis
+### QTL mapping by bulked-segregant analysis
 
 Col-0 × No-0 F2 seeds were sown on soil as described above. Seedlings that germinated early (day 4, early pool, E1) or in two late pools (late one pool, L1: days 31–39 and late two pool, L2: days 43–60) were moved into separate P40 trays and grown until flowering. The primary apices of 152 plants from E1, 321 from L1 and 213 plants from L2 were collected onto dry ice shortly after bolting and stored at −80°C. The apices from each pool were combined and ground together in liquid nitrogen, and then genomic DNA was extracted using a CTAB method (Glazebrook and Weigel, 2002). Genomic DNA library preparation and sequencing was carried out by Novogene (UK) Company Limited using NEB Next Ultra DNA Library Prep Kit (cat no. E7370L). The libraries were sequenced on an Illumina NovaSeq 6000 machine with 300 cycles (150 bp paired-end reads).
 
 All of the bioinformatics processing steps and options used are detailed in the scripts provided with this paper (see data availability), so we only provide a brief summary here. We used FastQC v0.11.3 (Andrews, 2020) for checking read quality. Quality filtering was performed using cutadapt 1.16 (Martin, 2011) to remove Illumina adapters from the reads, remove reads with ambiguous base calls and trim reads if the base quality dropped below a phred score of 20, keeping only those reads with at least 50 bp after trimming. Over 99% of bases were retained after filtering. The filtered reads were aligned to the Arabidopsis reference genome (TAIR10 version) using bwa mem 0.7.12 (Li and Durbin, 2009) with default options, except we used the `-M` option to mark short split alignments as secondary. Potential PCR duplicates were removed using Picard MarkDuplicates 2.18.1 (~20% of the reads were marked as duplicates). We performed realignment around indels using the `RealignerTargetCreator` tool from GATK 3.4–46 (McKenna et al., 2010). Finally, we obtained allele counts at variant sites using freebayes v1.2.0 (Garrison and Marth, 2012) using the `--pooled-continuous` mode, and restricting calls to sites with a depth of coverage between 10 and 400 including a minimum Phred base quality score and read mapping quality score of 20, and a minimum count of 2 and minimum frequency of 1% for the non-reference allele. We did not include indels in the analysis. To assess the presence of a QTL from these data, we used both the G’ statistic of Magwene et al., 2011 and the simulation-based approach of Takagi et al., 2013 to compare the three pools with each other. Both of these methods are implemented in the R/QTLseqr v0.7.5.2 package (Mansfeld and Grumet, 2018) and gave similar results, so we report only the latter.
 
-## QTL mapping in MAGIC lines
+### QTL mapping in MAGIC lines
 
 QTL mapping in the MAGIC lines was performed using the happy.hbrem R package (Kover et al., 2009) and our custom package MagicHelpR v0.1 (available at https://github.com/tavareshugo/MagicHelpR). In summary, for each of the 1254 available markers, the probability of ancestry of an individual’s genotype at that marker was inferred using the function `happy` from the R/happy.hbrem package (Mott, 2015). For each marker, an N × 19 matrix is obtained with the probabilities that the N individuals inherited that piece of genome from each of the 19 founder accessions of the MAGIC population. This matrix was then used to fit a linear model, regressing the trait of interest onto this probability matrix. This type of model was used for each trait analysed. In all cases, significance was assessed using an F-test to compare the full model to a reduced model that excluded the genotype matrix, and we report the −log10(p-value) of this test. We used a genome-wide significance threshold of −log10(p-value) = 3.5, which is an approximate threshold at α = 0.05 based on simulations (Kover et al., 2009). Significance of candidate QTL was also confirmed from a permutation-based empirical p-value based on 1000 phenotype permutations. The variance explained by candidate QTL markers was obtained from the coefficient of determination (R2) of the linear model.
 
@@ -194,7 +631,7 @@ The founder accession’s effect at each candidate QTL was estimated using the m
 
 All trait data were rank-transformed to achieve normality and constant variance of the residuals in the QTL model. However, our results were robust to data transformation.
 
-## ABA and GA dose–response experiments
+### ABA and GA dose–response experiments
 
 For Figure 6 and Figure 6—figure supplement 1, dose–response experiments were performed on six high variability MAGIC lines (M143, M393, M285, M178, M182, M53) and five low variability MAGIC lines (M151, M108, M123, M213, M467), plus Col-0. Seed batches were pools of seed from three parent plants of each genotype. Dose responses were performed at least twice using independently collected seed batches for each MAGIC line used, except for MAGIC lines 467 and 151, which have one replicate in the GA dose response experiment.
 
@@ -202,7 +639,7 @@ Seeds were obtained, sowed and grown as described above for phenotyping, except 
 
 The ABA dose responses on candidate gene mutants in Figure 4—figure supplement 5 were performed as described above, and germination was scored until 19 days after sowing. For dog1-3 and Col-0 seeds sown 5 DAH in the absence of ABA, five independent experiments were performed, each with three separate seed batches from different parent plants. For anac060 and Col-0 seeds sown 3 DAH in the absence of ABA, four independent experiments were performed, each with three separate seed batches from different parent plants. For all other mutant versus wild-type comparisons and the ABA dose responses, one experiment was performed with three separate seed batches from different parent plants.
 
-## Minimal mathematical model for seed germination
+### Minimal mathematical model for seed germination
 
 We developed a model to capture the relationships between the hormones ABA and GA and key transcriptional regulators that act as inhibitors of germination. ABA and GA are known to have opposing effects on the transcription, protein levels or protein activity of the transcriptional regulators DELLAs, ABI4 and ABI5 (Ariizumi et al., 2008; Liu et al., 2016; Piskurewicz et al., 2008; Shu et al., 2016a; Tyler et al., 2004). Here we represent these germinator inhibitors as one factor, called Integrator, the production of which is promoted by ABA and the degradation of which is promoted by GA.
 
@@ -210,29 +647,300 @@ The germination inhibitors are known to feedback to influence GA and ABA levels 
 
 With regards to the feedback between the germination inhibitors (represented by the Integrator) and GA, the literature is less clear about the nature of the interaction. ABI4 appears to negatively regulate GA levels (Shu et al., 2013), supporting a double-negative (i.e. positive) feedback loop between GA levels and Integrator. However, there are mixed reports about the relationship between DELLAs and GA during germination, with studies suggesting both inhibition (Oh et al., 2007) and promotion (Topham et al., 2017; Zentella et al., 2007). As has previously been suggested (Yamaguchi and Kamiya, 2000), we assume that, on balance, the net relationship between the germination inhibitors and GA is negative during germination, creating a mutual inhibition between the inhibitors and GA levels. This may contribute to the large increases in GA levels that occur following sowing. With this set of interactions, since ABA increases the levels of Integrator, it effectively inhibits GA. Thus, the model captures the mutual inhibition between ABA and GA. Overall, the model exhibits a mutual inhibition and mutual activation circuit coupled by Integrator (see Figure 5A), constituting a double-positive feedback.
 
-The deterministic model for ABA ([ABA]), GA ([GA]) and the Integrator ([I]) is described by the following equations:(1)d[ABA]dt=βABA+fABA([I])−vABA[ABA](2)d[GA]dt=βGA+βGA,Z[Z]+gGA([I])−vGA[GA](3)d[I]dt=βI+fI([ABA])−(vI+fI([GA]))[I],where βX and vX are constitutive production and degradation rates for each X variable, respectively, and βGA,Z is a coefficient for another production term for GA, coming from a first-order reaction to simulate the sowing-induced increase in GA production (see below). fX(y) and gX(y) correspond to Hill increasing and decreasing regulatory functions acting on variable X, defined as fX(y)=CX,YyhθX,Yh+yh and gX(y)=CX,Y1+yhθX,Yh, respectively, where CX,Y and θX,Y are parameters in the function dependent on variable Y acting on variable X , and h is the exponent in these functions. For simplicity, we set all exponents to the same value. We refer to θX,Y parameters as regulatory thresholds, representing the Y concentration value at which the regulatory function is half of its maximal value. Note that the inverse of θX,Y parameters can be understood as sensitivities to Y acting on X; high θX,Y values will generally require high Y quantities to affect X dynamics through the regulatory function, meaning low sensitivity of X to Y.
+The deterministic model for ABA ([ABA]), GA ([GA]) and the Integrator ([I]) is described by the following equations:
 
-We simulate a sowing-induced increase in GA production rates by adding an extra factor, [Z], which follows the dynamics governed by Equation 4 and feeds into Equation 2:(4)d[Z]dt=βZ−vZ[Z].
+$$
+\frac{d[ABA]}{dt}=\beta_{ABA}+f_{ABA}([I])−v_{ABA}[ABA]
+$$
+
+
+
+$$
+\frac{d[GA]}{dt}=\beta_{GA}+\beta_{GA,Z}[Z]+g_{GA}([I])−v_{GA}[GA]
+$$
+
+
+
+$$
+\frac{d[I]}{dt}=\beta_{I}+f_{I}([ABA])−(v_{I}+f_{I}([GA]))[I],
+$$
+
+where βX and vX are constitutive production and degradation rates for each X variable, respectively, and βGA,Z is a coefficient for another production term for GA, coming from a first-order reaction to simulate the sowing-induced increase in GA production (see below). $f_{X}(y)$ and $g_{X}(y)$ correspond to Hill increasing and decreasing regulatory functions acting on variable X, defined as $f_{X}(y)=\frac{C_{X,Y}y^{h}}{\theta_{X,Y}^{h}+y^{h}}$ and $g_{X}(y)=\frac{C_{X,Y}}{1+\frac{y^{h}}{\theta_{X,Y}^{h}}}$, respectively, where CX,Y and θX,Y are parameters in the function dependent on variable Y acting on variable X , and h is the exponent in these functions. For simplicity, we set all exponents to the same value. We refer to θX,Y parameters as regulatory thresholds, representing the Y concentration value at which the regulatory function is half of its maximal value. Note that the inverse of θX,Y parameters can be understood as sensitivities to Y acting on X; high θX,Y values will generally require high Y quantities to affect X dynamics through the regulatory function, meaning low sensitivity of X to Y.
+
+We simulate a sowing-induced increase in GA production rates by adding an extra factor, [Z], which follows the dynamics governed by Equation 4 and feeds into Equation 2:
+
+$$
+\frac{d[Z]}{dt}=\beta_{Z}−v_{Z}[Z].
+$$
 
 We focus on those parameters leading to either monostability or bistability, typically showing a low GA – high ABA – high Integrator stable state and a high GA – low ABA – low Integrator stable state. To capture the inhibitory effect of the DELLAs, ABI4 and ABI5 (represented by Integrator) on germination, we assume that in each seed the Integrator level must drop below a threshold for germination to occur. If the system switches to the low GA – high ABA – low Integrator state, and this Integrator state is below a certain threshold, then germination occurs.
 
 Our model can be understood as a time-dependent switch (Verd et al., 2014) with stochastic fluctuations, and variability in timing – in this case, germination time – is captured when crossing a concentration threshold (Ghusinga et al., 2017). Note that this circuit can also lead to tristability, but, for simplicity, we do not explore this model feature in detail.
 
-In simulations of exogenous ABA or GA application, the Integrator equation follows the dynamics(5)d[I]dt=βI+fI([ABA]+[ABA]exo)−(vI+fI([GA]+[GA]exo))[I],where [ABA]exo and [GA]exo are constant variables representing the concentrations of exogenous ABA and GA.
+In simulations of exogenous ABA or GA application, the Integrator equation follows the dynamics
 
-To take into account the intrinsic fluctuations of the network, we simulated the stochastic chemical Langevin equations (Gillespie, 2000; Adalsteinsson et al., 2004) of the model Equations 1–4 , which read(6)d[ABA]dt=βABA+fABA([I])−vABA[ABA]+12V(βABA+fABA([I])+vABA[ABA])ηABA(t)(7)d[GA]dt=βGA+βGA,Z[Z]+gGA([I])−vGA[GA]+12V(βGA+βGA,Z[Z]+gGA([I])+vGA[GA])ηGA(t)(8)d[I]dt=βI+fI([ABA])−(vI+fI([GA]))[I]+12V(βI+fI([ABA])+(vI+gI([GA]))[I])ηI(t)(9)d[Z]dt=βZ−vZ[Z]+12V(βZ+vZ[Z])ηZ(t),where V is an effective volume of the modelled system, which determines the strength of the stochastic term; ηX is a Gaussian random number with zero mean that fulfils <ηX(t)ηY(t′)>=δ(t−t′)δX,Y;δX,Y is the Kronecker delta, where X and Y refer to concentration variables and δ(t-t’) is the Dirac delta, where t and t’ are two arbitrary time points. We will refer to noise intensity as the inverse of the V parameter, given that the stochastic terms diminish with the increase of V. Note that all stochastic equations recover the deterministic limit when V parameter goes to infinity, as expected for the standard chemical Langevin equation (Gillespie, 2000).
+$$
+\frac{d[I]}{dt}=\beta_{I}+f_{I}([ABA]+[ABA]_{exo})−(v_{I}+f_{I}([GA]+[GA]_{exo}))[I],
+$$
 
-The stochastic version for Equation 5 for modelling the application of exogenous ABA and GA reads(10)d[I]dt=βI+fI([ABA]+[ABA]exo)−(vI+fI([GA]+[GA]exo))[I]+12V(βI+fI([ABA]+[ABA]exo)+(vI+fI([GA]+[GA]exo))[I])ηI(t).
+where [ABA]exo and [GA]exo are constant variables representing the concentrations of exogenous ABA and GA.
+
+To take into account the intrinsic fluctuations of the network, we simulated the stochastic chemical Langevin equations (Gillespie, 2000; Adalsteinsson et al., 2004) of the model Equations 1–4 , which read
+
+$$
+\frac{d[ABA]}{dt}=\beta_{ABA}+f_{ABA}([I])−v_{ABA}[ABA]+\sqrt{\frac{1}{2V}(\beta_{ABA}+f_{ABA}([I])+v_{ABA}[ABA])η_{ABA}}(t)
+$$
+
+
+
+$$
+\frac{d[GA]}{dt}=\beta_{GA}+\beta_{GA,Z}[Z]+g_{GA}([I])−v_{GA}[GA]+\sqrt{\frac{1}{2V}(\beta_{GA}+\beta_{GA,Z}[Z]+g_{GA}([I])+v_{GA}[GA])}η_{GA}(t)
+$$
+
+
+
+$$
+\frac{d[I]}{dt}=\beta_{I}+f_{I}([ABA])−(v_{I}+f_{I}([GA]))[I]+\sqrt{\frac{1}{2V}(\beta_{I}+f_{I}([ABA])+(v_{I}+g_{I}([GA]))[I])}η_{I}(t)
+$$
+
+
+
+$$
+\frac{d[Z]}{dt}=\beta_{Z}−v_{Z}[Z]+\sqrt{\frac{1}{2V}(\beta_{Z}+v_{Z}[Z])}η_{Z}(t),
+$$
+
+where V is an effective volume of the modelled system, which determines the strength of the stochastic term; $η_{X}$ is a Gaussian random number with zero mean that fulfils $<η_{X}(t)η_{Y}(t^{′})>=\delta(t−t^{′})\delta_{X,Y};\delta_{X,Y}$ is the Kronecker delta, where X and Y refer to concentration variables and δ(t-t’) is the Dirac delta, where t and t’ are two arbitrary time points. We will refer to noise intensity as the inverse of the V parameter, given that the stochastic terms diminish with the increase of V. Note that all stochastic equations recover the deterministic limit when V parameter goes to infinity, as expected for the standard chemical Langevin equation (Gillespie, 2000).
+
+The stochastic version for Equation 5 for modelling the application of exogenous ABA and GA reads
+
+$$
+\frac{d[I]}{dt}=\beta_{I}+f_{I}([ABA]+[ABA]_{exo})−(v_{I}+f_{I}([GA]+[GA]_{exo}))[I]+\sqrt{\frac{1}{2V}(\beta_{I}+f_{I}([ABA]+[ABA]_{exo})+(v_{I}+f_{I}([GA]+[GA]_{exo}))[I])}η_{I}(t).
+$$
 
 This bistable switch model is reminiscent of the bistable switch model proposed by Topham et al., 2017, although the mutual inhibition has been implemented differently, and we considered stochastic fluctuations.
 
 Initial conditions were set at the fixed point of the deterministic model that exhibited the highest Integrator value before the sowing-induced increase in GA production (i.e. the highest root solution for the Integrator when βGA,Z=0). When exogenous ABA or GA were applied, we assumed that seeds were in the same initial state as they would have been in the absence of exogenous hormone treatments. Numerical integration of the chemical Langevin equations with the îto interpretation was performed with the Heun algorithm (Carrillo et al., 2003) with an absorptive barrier at 0 to prevent negative concentration values. After each integration step, seeds were tagged as germinated if their Integrator concentration was below the germination threshold. The integration time step was set at dt = 0.1. All simulations were stopped at time 1000.
 
-Fixed points of the deterministic dynamics were computed by finding the solutions to the nullclines for the deterministic model Equations 1–4, that is, d[ABA]/dt=d[GA]/dt=d[I]/dt=d[Z]/dt = 0, and then by substituting all the variables into the Integrator equation. The algebraic equation to solve reads(11)[I]0=βI+fI([ABA]0)vI+fI([GA]0),with(12)[ABA]0=βABA+fABA([I]0)vABA(13)[GA]0=βGA+βGA,Z[Z]0+gGA([I]0)vGA(14)[Z]0=βZvZ,where [ABA]0, [GA]0, [I]0 and [Z]0 are the steady state solutions of the different variables. For finding the fixed points in the cases of exogenous application of GA and ABA, an equivalent procedure was performed with Equations 1, 2, 4 and 5.
+Fixed points of the deterministic dynamics were computed by finding the solutions to the nullclines for the deterministic model Equations 1–4, that is, d[ABA]/dt=d[GA]/dt=d[I]/dt=d[Z]/dt = 0, and then by substituting all the variables into the Integrator equation. The algebraic equation to solve reads
+
+$$
+[I]_{0}=\frac{\beta_{I}+f_{I}([ABA]_{0})}{v_{I}+f_{I}([GA]_{0})},
+$$
+
+with
+
+$$
+[ABA]_{0}=\frac{\beta_{ABA}+f_{ABA}([I]_{0})}{v_{ABA}}
+$$
+
+
+
+$$
+[GA]_{0}=\frac{\beta_{GA}+\beta_{GA,Z}[Z]_{0}+g_{GA}([I]_{0})}{v_{GA}}
+$$
+
+
+
+$$
+[Z]_{0}=\frac{\beta_{Z}}{v_{Z}},
+$$
+
+where [ABA]0, [GA]0, [I]0 and [Z]0 are the steady state solutions of the different variables. For finding the fixed points in the cases of exogenous application of GA and ABA, an equivalent procedure was performed with Equations 1, 2, 4 and 5.
 
 To find all the solutions at each particular parameter set, we first used the bisection method throughout logarithmically spaced intervals for the Integrator variable to find approximate solutions, and then used the opt.brentq scipy function in Python to find the exact solutions. We also represented the left- and right-hand side of Equation 11 or an equivalent equation for the exogenous application of GA and ABA to graphically see the solutions of the system (see Figure 5—figure supplement 1 and Figure 6—figure supplement 3). In these plots, we represented the deterministic stability by analysing the sign of dI/dt at the vicinity of the solutions (Strogatz, 2015). Upon the variation of a certain parameter value or the application of exogenous ABA or GA, a given stable fixed point will approach to (or get further from) the separatrix, i.e. the hyperplane in the solution space separating the basins of attraction of the stable fixed points (Strogatz, 2015), which contains an unstable fixed point in our case. When studying the stochastic system, we will assume that a stable fixed point will lose stability when it approaches the unstable fixed point, given that this most likely will facilitate the stochastic switching to the other stable fixed point; conversely, a stable fixed point will gain stability when it gets further from the unstable fixed point. This assumption is consistent with the outcome of our simulations (Figure 5—figure supplement 1H–U, Figure 6—figure supplement 2A, Figure 6—figure supplement 3A).
 
 Parameter values for the simulations and the theoretical plots were set as described in Table 2.
+
+**Table 2.**
+ Default values for each parameter in our mathematical model and varying parameters used in figures showing 1D parameter scans.βX: production rate for X; vX: degradation rate for X; θX,Y: threshold above which Y has an effect on X; CX,Y: coefficient for regulatory functions of Y acting on X; h: exponent of regulatory functions; V: effective system volume (modulates noise). All parameter units are arbitrary.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Default</th>
+      <th>Figure 5B–D</th>
+      <th>Figure 5—figure supplement 2A</th>
+      <th>Figure 5—figure supplement 2B</th>
+      <th>Figure 5—figure supplement 2C</th>
+      <th>Figure 5—figure supplement 2D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>βABA</td>
+      <td>1</td>
+      <td></td>
+      <td>Varying</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>βGA</td>
+      <td>0.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>βGA,Z</td>
+      <td>0.01</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>βZ</td>
+      <td>39</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>βI</td>
+      <td>0.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vABA</td>
+      <td>1</td>
+      <td></td>
+      <td>1.58</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vGA</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vZ</td>
+      <td>0.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>vI</td>
+      <td>0.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>θABA,I</td>
+      <td>3.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>θGA,I</td>
+      <td>1.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>θI,ABA</td>
+      <td>6.5</td>
+      <td>Varying</td>
+      <td></td>
+      <td></td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>θI,GA</td>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td>Varying</td>
+      <td>Varying</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CABA,I</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CGA,I</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CI,ABA</td>
+      <td>10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CI,GA</td>
+      <td>6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>30</td>
+      <td></td>
+      <td></td>
+      <td>100</td>
+      <td></td>
+      <td>Varying</td>
+    </tr>
+  </tbody>
+</table>
 
 To better understand the dynamics across several parameter ranges, we performed simulations varying two parameters at the same time. The resolution of the parameter exploration was of 4–5 parameter values per order of magnitude, logarithmically spaced. In this parameter space exploration, we also studied the different regions of the parameter space that could be predicted from nullcline analysis. This allowed us to find the bistable and tristable regions of the parameter space, the regions where no germination is expected in the deterministic limit and the regions where germination would instantaneously occur. The remaining regions in the parameter space were monostable. Note that monostable, bistable and tristable regions were computed by counting the number of steady states after the rise of GA production. Regions where no germination would occur in the deterministic limit were those where the lowest fixed point for the integrator was higher than the germination threshold. Regions where germination would instantaneously occur were those regions having the highest Integrator fixed point below the germination threshold before the sowing-induced increase of GA production. CV and mode of the simulations were represented when there were more than nine seeds germinating out of 1000, so the percentage of germination was equal to or higher than 1%.
 
@@ -248,6 +956,6 @@ In most of the presented simulated results we have excluded those simulation poi
 
 Numerical simulations were performed with the Organism simulator (https://gitlab.com/slcu/teamHJ/Organism; Jonsson et al., 2005). Modelling figures were produced with the Matplotlib Python library (Hunter, 2007).
 
-## Data availability statement
+### Data availability statement
 
 Whole-genome sequence data was deposited to NCBI's Short Read Archive (BioProject accession PRJNA486286). All data analysis and modelling scripts can be found at https://gitlab.com/slcu/teamJL/abley_formosa_etal_2020. Both the raw and processed experimental data for use with the analysis scripts are available from the Cambridge Apollo Repository (https://doi.org/10.17863/CAM.66984).

@@ -25,18 +25,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 CCR, NCI, NIH Bethesda United States
-2. https://ror.org/01cwqze88 DCEG, NCI, NIH Rockville United States
-3. https://ror.org/012cvds63 Leidos Biomedical Research Inc Frederick United States
-4. https://ror.org/017zqws13 Department of Medicine, Nephrology Division, Hennepin Healthcare System, University of Minnesota Minneapolis United States
-5. https://ror.org/03tzaeb71 Cancer Center, University of Hawaii Honolulu United States
-6. https://ror.org/02k3smh20 The Kentucky Cancer Registry, University of Kentucky Lexington United States
-7. https://ror.org/043mz5j54 Department of Epidemiology and Biostatistics,and Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco Fremont United States
-8. https://ror.org/03cqd3e64 Connecticut Tumor Registry, Connecticut Department of Public Health Hartford United States
-9. https://ror.org/05rrcem69 California Cancer Reporting and Epidemiologic Surveillance Program, University of California, Davis Davis United States
-10. https://ror.org/02pammg90 Cedars-Sinai Cancer and Department of Medicine, Cedars-Sinai Medical Center Los Angeles United States
-11. https://ror.org/036jqmy94 The Iowa Cancer Registry, University of Iowa Iowa City United States
-12. https://ror.org/017zqws13 Howard Hughes Medical Institute, University of Minnesota Minneapolis United States
+1. CCR, NCI, NIH Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. DCEG, NCI, NIH Rockville United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Leidos Biomedical Research Inc Frederick United States ([ROR:012cvds63](https://ror.org/012cvds63))
+4. Department of Medicine, Nephrology Division, Hennepin Healthcare System, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+5. Cancer Center, University of Hawaii Honolulu United States ([ROR:03tzaeb71](https://ror.org/03tzaeb71))
+6. The Kentucky Cancer Registry, University of Kentucky Lexington United States ([ROR:02k3smh20](https://ror.org/02k3smh20))
+7. Department of Epidemiology and Biostatistics,and Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco Fremont United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+8. Connecticut Tumor Registry, Connecticut Department of Public Health Hartford United States ([ROR:03cqd3e64](https://ror.org/03cqd3e64))
+9. California Cancer Reporting and Epidemiologic Surveillance Program, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+10. Cedars-Sinai Cancer and Department of Medicine, Cedars-Sinai Medical Center Los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
+11. The Iowa Cancer Registry, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
+12. Howard Hughes Medical Institute, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
@@ -60,19 +60,177 @@ To characterize the mutational, transcriptomic, and viral landscapes of bladder 
 
 ## Results
 
-## Bladder cancers from transplant recipients
+### Bladder cancers from transplant recipients
 
 The study population was comprised of 43 U.S. cases from patients who developed bladder cancer after receiving solid organ transplantation (Table 1 and Supplementary file 1a). Seventy percent were male and 70% were non-Hispanic white. The median age at cancer diagnosis was 65 years (range: 27–82). The most commonly transplanted organ was the kidney (56%), followed by the heart and/or lung (33%) and liver (9%). Primary tumors were roughly an equal mixture of high- and low-grade carcinomas diagnosed with a median of 5.7 years after transplantation. Twelve cases were categorized as in situ as defined by the Surveillance, Epidemiology, and End Results (SEER) Program, with two of those cases being transitional cell carcinomas in situ and ten cases being noninvasive papillary transitional cell carcinomas. Invasive cases were mostly categorized into the localized stage (n=20, 46%), which includes tumors that have invaded into the mucosa, submucosa, muscle, or subserosa. The 11 remaining cases either had regional or distant invasion or metastasis. We successfully generated WGS data for 38 primary tumors, three metastases, and 10 normal (histologically non-malignant) tissues, with a median of 31 x coverage across the human genome (range: 14–55 x) (Supplementary file 1a). We generated total RNA sequencing data for 43 primary tumors, five metastases, and 14 normal tissues, with a median of 30 million reads per sample (range: 4–65.5 million).
 
-## Detection of viruses in bladder cancers from transplant recipients
+**Table 1.**
+ Characteristics of post-transplant bladder cancer cases (N=43).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th colspan="2">Statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Median</td>
+      <td>IQR</td>
+    </tr>
+    <tr>
+      <td>Age in years at diagnosis</td>
+      <td>65</td>
+      <td>60, 71</td>
+    </tr>
+    <tr>
+      <td>Years from transplant to diagnosis</td>
+      <td>5.8</td>
+      <td>3, 7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>13</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>30</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Transplanted organ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>24</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Heart and/or lung</td>
+      <td>14</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Pancreas</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Race</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-Hispanic White</td>
+      <td>30</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Asian/Pacific Islander</td>
+      <td>8</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>5</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Summary stage</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>In situ</td>
+      <td>12</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Localized</td>
+      <td>19</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Regional</td>
+      <td>7</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Distant</td>
+      <td>5</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Grade</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>20</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>22</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>Papillary urothelial neoplasm of low malignant potential</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_IQR: interquartile range._
+
+### Detection of viruses in bladder cancers from transplant recipients
 
 Analysis of WGS data for 38 primary tumors identified one or more virus species in 17 specimens (45%) (Figure 1A and Supplementary file 1a). RNA sequencing on tumor samples for which WGS data could not be obtained revealed three additional cases containing viral sequences (45% of samples overall). Among the 20 virus-positive primary tumors, the majority harbored BKPyV (n=9) or JCPyV (n=7). High-risk HPV genotypes 16 and 51 were detected in one and two tumors, respectively. A low-risk papillomavirus, HPV28, was observed in TBC33. One BKPyV-containing tumor (case TBC05) also harbored relatively abundant amounts of HPV20. Only two reads mapped to HPV20 in the RNA dataset for case TBC05. Sequencing of metastases confirmed the presence of BKPyV in TBC06, JCPyV in TBC34, and HPV16 in TBC10. Additionally, sequencing of two separate tumor sections for TBC03 and TBC09 confirmed the presence of BKPyV in both (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig1-v2.jpg)
+
+**Figure 1.:** (A) Primary tumors. (B) Metastatic tumors. (C) Normal tissues. Viral species are shown on the rows, and each case in the cohort (represented with a TBC number) is a column. TBC numbers represent a single case and are consistent across primary, metastatic, and normal tissues. Circle size represents the breadth or fraction of the viral genome covered, and color represents the average depth of coverage of the viral k-mers with all coverages over 100 binned together. Specimens without sequencing data have a gray background.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Coverage plots for BKPyV DNA (gray) and RNA (red) in BKPyV-positive tumors.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Coverage plots for JCPyV DNA (gray) and RNA (red) in JCPyV-positive tumors.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A-D) Coverage plots for HPV DNA (gray) and RNA (red) in HPV16 (A), HPV20 (B), HPV28 (C), and HPV51 (D) -positive tumors. Diagrams of open reading frames for each respective type are below the coverage plots. (E) Annotated assembly graph of TBC11 HPV51. (F) Details of the top human BLASTn hits from the assembly in (E). (G) 1 kb upstream and downstream of TBC11 HPV51 predicted human integration junctions with genes and repeats annotated.
 
 WGS from TBC16, TBC17, TBC18, TBC19, TBC20, TBC21, TBC22, TBC23, TBC24, TBC27 had low numbers of reads mapping to the BKPyV genome that was judged to be attributable to low levels of index-hopping from TBC01, a papillary urothelial neoplasm of low malignant potential (PUNLMP) that had extremely high BKPyV coverage and was sequenced in the same run. Considering this, along with the absence of RNA reads supporting the presence of BKPyV, we scored these tumors virus-negative.
 
 A separate set of searches aimed at identifying divergent members of other virus groups revealed that several tumors (TBC08, TBC14, TBC25, TBC28, and TBC35) and normal tissues (TBC35, TBC28, TBC39) harbored torque teno virus (TTV) sequences from either WGS or RNA sequencing (Supplementary file 1c). Epstein-Barr virus was most strongly detected in one normal lymph node (TBC23) and, at low levels, in tumors TBC07 and TBC08. Considering the stronger epidemiological evidence for BKPyV and bladder cancer and its abundance in these specimens, we focused the majority of our analysis on characterizing these tumors.
 
-## Features of BKPyV-positive tumors
+### Features of BKPyV-positive tumors
 
 BKPyV sequences detected in this study came from every genotype except IV (Figure 2A). One patient with a BKPyV-positive tumor had a documented history of BKVN. BKPyV-positive tumors were found in two heart, two lung, one heart and lung, and four kidney transplant recipients. We identified unambiguous BKPyV integration sites in five of the nine BKPyV-positive tumors and in one normal tissue (Figure 2B & Table 2). For three tumors a single integration junction was identified, and in TBC02 three junctions were identified. In the case TBC03, two separate sections from separate blocks of the primary tumor were sequenced. In 1 of the 2 sections, 11 integration junctions were identified across seven chromosomes. Only three of the junctions could be identified in the second section of the tumor, suggesting either that these junctions were not present throughout the tumor or there was insufficient tumor purity/sequencing depth to detect them.
 
@@ -80,15 +238,406 @@ BKPyV sequences detected in this study came from every genotype except IV (Figur
 
 **Figure 2.:** (A) Phylogenetic tree of BK polyomavirus (BKPyV) large T antigen (LTag) sequences detected in tumors (red) and reference genotypes with representative strain names. (B) Sites of BKPyV integration into host chromosomes are indicated with case numbers. Two separate sections from separate formal-fixed paraffin-embedded (FFPE) blocks of the primary tumor were sequenced for case TBC03 (samples TBC03.1 and TBC03.2). Two separate sections were also sequenced for case TBC09, but an integration site was only detected in sample TBC09.1. Integration sites were also detected in normal tissue sample TBC09N. Black and gray bars indicate cytogenetic bands; red bars indicate centromeres. (C) Coverage plot of focal amplifications adjacent to BKPyV integration sites in cases TBC03.1, TBC03.2, TBC04, and TBC08. BKPyV integration junctions are indicated by a black arrow. Colored numbers in the body of the graph indicate coverage depth.
 
+**Table 2.**
+ BK polyomavirus (BKPyV) integrations sites and microhomology.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Human sequence match</th>
+      <th>Virus sequence match</th>
+      <th>Maximum MH length</th>
+      <th>MH sequence</th>
+      <th>Chromosome</th>
+      <th>Position</th>
+      <th>Nearest gene (Symbol)</th>
+      <th>Nearest gene (Ensembl ID)</th>
+      <th>Distance to Nearest Gene</th>
+      <th>Nearest RE</th>
+      <th>Distance to nearest RE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TBC02</td>
+      <td>CATCATGATGATGGG</td>
+      <td>GATGGGCAGCCTA</td>
+      <td>5</td>
+      <td>ATGGG</td>
+      <td>chr2</td>
+      <td>120378301</td>
+      <td>INHBB</td>
+      <td>ENSG00000163083</td>
+      <td>–26499</td>
+      <td>MIRb</td>
+      <td>–45</td>
+    </tr>
+    <tr>
+      <td>TBC02</td>
+      <td>CTCCTGCTCATGAA</td>
+      <td>CATGAAGGTTAAGCATGCTA</td>
+      <td>5</td>
+      <td>ATGAA</td>
+      <td>chr4</td>
+      <td>145732354</td>
+      <td>C4orf51</td>
+      <td>ENSG00000237136</td>
+      <td>0</td>
+      <td>AluSq2</td>
+      <td>–474</td>
+    </tr>
+    <tr>
+      <td>TBC02</td>
+      <td>ACCATTTAATTCCCAA</td>
+      <td>AGTGGAAATTAC</td>
+      <td>2</td>
+      <td>AC</td>
+      <td>chr4</td>
+      <td>145732375</td>
+      <td>C4orf51</td>
+      <td>ENSG00000237136</td>
+      <td>0</td>
+      <td>AluSq2</td>
+      <td>–495</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>GCCTTTCTTGTGGACTGGGT</td>
+      <td>ATTTTCATTTCTACTGGGGTCAGGA</td>
+      <td>0</td>
+      <td>No overlap</td>
+      <td>chr1</td>
+      <td>93693546</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>377</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>TCTGTTTCTTATTTCAGAA</td>
+      <td>GGGTTCTCCTGTTTATAAGGTC</td>
+      <td>2</td>
+      <td>TC</td>
+      <td>chr1</td>
+      <td>93693570</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>AGAGCCTTGGTGGTGG</td>
+      <td>GGTGGCAAACAGTGCAG</td>
+      <td>5</td>
+      <td>GGTGG</td>
+      <td>chr1</td>
+      <td>93693890</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>GATACTTTTTAGACATGC</td>
+      <td>AACCATGACCTCAGGAAGGA</td>
+      <td>4</td>
+      <td>CATG</td>
+      <td>chr1</td>
+      <td>93694075</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>CCTCAAAGCCACCCACTCC</td>
+      <td>TTTCCATGAGCCCCAAA</td>
+      <td>5</td>
+      <td>CCAAA</td>
+      <td>chr1</td>
+      <td>93694843</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MER5A</td>
+      <td>–92</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>CAATTTTTTTTTTTT</td>
+      <td>TTTTTTTATTTGTAAGGGTG</td>
+      <td>7</td>
+      <td>TTTTTTT</td>
+      <td>chr12</td>
+      <td>50449935</td>
+      <td>LARP4</td>
+      <td>ENSG00000161813</td>
+      <td>0</td>
+      <td>AluSc</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>TGCAAGGTGCTTCATGTAT</td>
+      <td>AGGGGGCTTAAAGGATGCA</td>
+      <td>4</td>
+      <td>TGCA</td>
+      <td>chr14</td>
+      <td>95764390</td>
+      <td></td>
+      <td>ENSG00000257275</td>
+      <td>–6735</td>
+      <td>MIRb</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>TAGCCAAAAAAAAAAAGG</td>
+      <td>AAAAAAAAAGGCCACAG</td>
+      <td>11</td>
+      <td>AAAAAAAAAGG</td>
+      <td>chr20</td>
+      <td>8525269</td>
+      <td>PLCB1</td>
+      <td>ENSG00000182621</td>
+      <td>0</td>
+      <td>MamSINE1</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>CAATTTGGAAAACAAT</td>
+      <td>ATGCAAGGGCAGTGCACA</td>
+      <td>2</td>
+      <td>AT</td>
+      <td>chr3</td>
+      <td>73059264</td>
+      <td>PPP4R2</td>
+      <td>ENSG00000163605</td>
+      <td>0</td>
+      <td>MER103C</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>TAAAAAGTGTCA</td>
+      <td>AAGTGTCAATAGAGAAAAA</td>
+      <td>8</td>
+      <td>AAGTGTCA</td>
+      <td>chr4</td>
+      <td>142307350</td>
+      <td>INPP4B</td>
+      <td>ENSG00000109452</td>
+      <td>0</td>
+      <td>L2a</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC03.1</td>
+      <td>TCACACAATTT-TACTCCTCT</td>
+      <td>ACACTTTTTACACTCCTCTA</td>
+      <td>8</td>
+      <td>ACTCCTCT</td>
+      <td>chr8</td>
+      <td>140923993</td>
+      <td>PTK2</td>
+      <td>ENSG00000169398</td>
+      <td>0</td>
+      <td>L2a</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC03.2</td>
+      <td>GTTGAGTTGGAGCA</td>
+      <td>CATCTAAATAATCTCTCAAACT</td>
+      <td>2</td>
+      <td>CA</td>
+      <td>chr1</td>
+      <td>93693160</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MER5A1</td>
+      <td>–10</td>
+    </tr>
+    <tr>
+      <td>TBC03.2</td>
+      <td>ACCCAGTCCACAAGAAAGGC</td>
+      <td>CCAGTAGAAATGAAAAT</td>
+      <td>0</td>
+      <td>No overlap</td>
+      <td>chr1</td>
+      <td>93693546</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>377</td>
+    </tr>
+    <tr>
+      <td>TBC03.2</td>
+      <td>TCTGTTTCTTATTTCAG</td>
+      <td>GTTCTCCTGTTTATAAGGTC</td>
+      <td>2</td>
+      <td>TC</td>
+      <td>chr1</td>
+      <td>93693570</td>
+      <td>BCAR3</td>
+      <td>ENSG00000137936</td>
+      <td>0</td>
+      <td>MIRb</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>TBC04</td>
+      <td>GAGTGAGTTCATAG</td>
+      <td>CAACACTGTGGTGAG-TGAGTT</td>
+      <td>4</td>
+      <td>GAGT</td>
+      <td>chr3</td>
+      <td>5202593</td>
+      <td>EDEM1</td>
+      <td>ENSG00000134109</td>
+      <td>0</td>
+      <td>L2b</td>
+      <td>–466</td>
+    </tr>
+    <tr>
+      <td>TBC06</td>
+      <td>CAGACATT-AGGA</td>
+      <td>TGAGGACCTAACCTGT</td>
+      <td>4</td>
+      <td>AGGA</td>
+      <td>chr2</td>
+      <td>201676427</td>
+      <td>MPP4</td>
+      <td>ENSG00000082126</td>
+      <td>0</td>
+      <td>MIR1_Amn</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC08</td>
+      <td>TCCACTTTCAGTACTT</td>
+      <td>TGCAAAAAATCAAAT</td>
+      <td>1</td>
+      <td>T</td>
+      <td>chr6</td>
+      <td>148535326</td>
+      <td>SASH1</td>
+      <td>ENSG00000111961</td>
+      <td>0</td>
+      <td>AluSq</td>
+      <td>995</td>
+    </tr>
+    <tr>
+      <td>TBC09.1</td>
+      <td>GGGGCGGTAACTAGAAG</td>
+      <td>ACTAGAAGCTTGTCGT</td>
+      <td>8</td>
+      <td>ACTAGAAG</td>
+      <td>chr17</td>
+      <td>61340185</td>
+      <td>BCAS3</td>
+      <td>ENSG00000141376</td>
+      <td>0</td>
+      <td>L2-3_Crp</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC09N</td>
+      <td>GAGAAAATAGGACTCGG</td>
+      <td>AAGATTCGCCTGAGAAAA</td>
+      <td>7</td>
+      <td>GAGAAAA</td>
+      <td>chr18</td>
+      <td>8169205</td>
+      <td>PTPRM</td>
+      <td>ENSG00000173482</td>
+      <td>0</td>
+      <td>MER127</td>
+      <td>–648</td>
+    </tr>
+    <tr>
+      <td>TBC09N</td>
+      <td>TCCATCCTCCTCTAC</td>
+      <td>CTCCTCTACATTGT</td>
+      <td>9</td>
+      <td>CTCCTCTAC</td>
+      <td>chr3</td>
+      <td>34028749</td>
+      <td>LINC01811</td>
+      <td>ENSG00000226320</td>
+      <td>130585</td>
+      <td>L2b</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>TBC09N</td>
+      <td>ATGTAATATAAAACT</td>
+      <td>CATGATTTTAACCCAG</td>
+      <td>0</td>
+      <td>No overlap</td>
+      <td>chr3</td>
+      <td>117678477</td>
+      <td></td>
+      <td>ENSG00000239268</td>
+      <td>0</td>
+      <td>L2c</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_MH: microhomology; RE: Repeat element._
+
 Integration appeared consistent with a microhomology-mediated end-joining (MMEJ) model for integration, as 20 of 25 junctions (80%) had microhomology greater than or equal to 2 bp. In this model, which has previously been proposed for both HPV- and MCPyV-associated tumors (Starrett et al., 2020; Starrett et al., 2017; Akagi et al., 2014), microhomologies between the virus and host genomes initiate DNA repair processes that can, in some cases, lead to tandem head-to-tail concatemeric repeats of the viral genome as well as focal amplifications of the flanking host chromosome. Consistent with this model, focal amplifications adjacent to BKPyV integration sites were identified in three patient tumors. In TBC03, amplification of a 17 kb region of chromosome 1 flanking a multi-copy BKPyV integrant was observed in two tumor sections (Figure 2C). In TBC04, a 15 kb single-copy amplification of chromosome 3 was identified. Lastly, a 195 kb region of chromosome 6 was amplified next to the BKPyV integration junction in TBC08. Twenty-two of the identified 25 junctions (88%) intersected protein-coding genes and thus might conceivably affect gene expression or function.
 
 BKPyV RNA and DNA abundance by sequencing generally did not correspond to specimen tumor purity or the percentage of LTag + cells (Figure 3A and B). Gene-level analysis of the RNA sequencing data revealed that 7 of the 9 polyomavirus-positive tumors predominantly expressed the T antigens, with little to no expression of the late genes VP1 and VP2 (encoding the major and minor capsid proteins, respectively) (Figure 3A and C, Figure 3—figure supplement 1). The LTag open reading frames (ORFs) in these cases were truncated before the helicase domain through deletions, frameshifts, or point mutations. The exception was the BKPyV-positive PUNLMP case TBC01, which showed a balanced expression of both early and late regions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig3-v2.jpg)
+
+**Figure 3.:** (A) Barplots showing the abundance of BKPyV DNA and RNA reads standardized to human reads (B) Barplots of histologically estimated percent tumor purity and Immunohistochemistry (IHC)-positivity for polyomavirus LTag expression. N.D. indicates no IHC image data were generated. (C) Representative coverage plots for BKPyV DNA (gray) and RNA (red) in BKPyV-positive tumors. Relative copy numbers are indicated by colored boxes and highlight the borders of duplications and deletions in the viral genome. (D) Selected images for LTag IHC highlighting positive staining for BKPyV-positive tumors with scale bars representing 500 microns.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmap of normalized expression (transcripts per million, TPM) of BKPyV genes per tumor.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** P=primary tumor, M=metastatic tumor.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Selected images for T antigen IHC highlighting positive staining for BKPyV-positive tumors with a scale bar representing 500 microns.
 
 BKPyV isolates found in cases of polyomavirus nephropathy typically have rearrangements in the regulatory region that enhance viral replication in cell culture. However, in this study, TBC01 was the only polyomavirus-positive tumor showing evidence of regulatory region rearrangements (Figure 3—figure supplement 2).
 
 Immunohistochemistry (IHC) for polyomavirus LTag was performed on 18 specimens suspected to contain polyomaviruses and two negative control specimens determined to be free of detectable viral sequences. Control sections were negative for Tag staining, whereas 11 of the 18 specimens that contained polyomavirus sequences showed at least some evidence for Tag positivity (Figure 3B and Figure 3—figure supplement 3). Three tumors scored as BKPyV sequence-positive had strong to moderate LTag staining in greater than 80% of tumor cells, but the other BKPyV-positive tumors had more variable staining. Moderate to weak staining was visible in less than 0.5% of cells in the primary tumor for TBC06 (Figure 3D), but strong staining was observed in about 25% of cells in the metastasis. For TBC09, one sample of the tumor was >90% positive for LTag staining and another sample was less than 25% positive (Figure 3—figure supplement 3). The normal tissue for TBC09 showed BKPyV RNA and DNA coverage along a small portion of the regulatory region and small T antigen, but no staining for LTag. Although TBC01 had very high levels of BKPyV DNA and RNA reads, it had the lowest observed proportion of LTag-positive cells (<1% in a section that was >95% tumor as determined by cell morphology). LTag-positive cells in the TBC01 sample were almost entirely localized to the luminal margin of the tumor (Figure 3D).
 
 Differential gene expression analysis for BKPyV-positive tumors versus virus-negative tumors revealed 1062 genes that were significantly differentially regulated in tumors harboring BKPyV (Figure 4A, Supplementary file 1e). Clustering all primary and metastatic tumors by genes with a greater than threefold difference of expression in the above comparison, we identified three major groups that loosely correspond to the amount of BKPyV DNA and RNA in a tumor (Figure 4C). A notable exception is the BKPyV-positive tumor TBC01, which falls into the cluster mostly containing virus-negative tumors.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig4-v2.jpg)
+
+**Figure 4.:** (A) Volcano plot of differential gene expression between BKPyV-positive and virus-negative tumors. Significantly differentially expressed genes (q-value <0.05, DESeq2) with a fold change greater than two are in red, and genes with a fold change less than two are in pink. Non-significant genes are in gray. (B) Variance stabilized counts for APOBEC3B expression from DESeq2 grouped by normal tissues, virus-negative tumors, and BKPyV-positive tumors showing significantly increased expression in BKPyV-positive tumors (Mann-Whitney U test). TBC01 is indicated by a red dot. (C) Heatmap of Z-scores of significantly differentially expressed genes and genes relevant to bladder cancer grouped by gene ontology. High expression is red, low expression is blue. Tumors names are colored by likely etiology: BKPyV-positive, red; JC polyomavirus (JCPyV)-positive, goldenrod; HR-HPV-positive, blue; torque teno virus (TTV)-positive, green; aristolochic acid, purple; undetermined, black; multiple colors reflect multiple detected viruses or etiologies. Tumors with evidence of integration are in italics. BKPyV LTag expression is shown as log10(transcripts per million [TPM]).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Stabilized counts of APOBEC3B expression divided by tissue type (primary tumor, normal tissue), BKPyV status (BK), and germline variant rs1014971 status.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Coverage plots of DNA (gray) and RNA (red) from TBC03.1 and TBC03.2 on chromosome 1 at the BCAR3 locus.
 
 The cluster exclusively containing tumors harboring integrated BKPyV is defined by high expression of genes involved in DNA damage responses, cell cycle progression, angiogenesis, chromatin organization, mitotic spindle assembly, and chromosome condensation/separation as well as some genes associated with neuronal differentiation. Overall, these tumors have relatively low expression of keratins and genes associated with cell adhesion. Genes previously shown to be associated with cell proliferation in bladder cancer, such as FGFR3, had significantly lower expression in BKPyV-positive tumors relative to virus-negative tumors. Notably, tumors harboring BKPyV had significantly higher average APOBEC3B expression compared to both normal tissues and tumors not containing any virus (Figure 4B). This observation is maintained after stratifying the cases by the germline variant, rs1014971, known to associate with increased APOBEC3B expression and bladder cancer risk with the highest average APOBEC3B expression observed in tumors with both BKPyV and two copies of rs1014971 (Figure 4—figure supplement 1).
 
@@ -100,7 +649,7 @@ Aside from integration-related copy number variants (CNVs), large-scale CNVs ove
 
 **Figure 5.:** Frequency plots for large copy number variants in BK polyomavirus (BKPyV)-positive tumors (panel A) and virus-negative tumors (panel C). Frequency of gains/amplifications is shown in red; losses/deletions are shown in blue. Sample level copy number variant spectra for BKPyV-positive tumors (panel B), virus-negative tumors (panel D), and all other tumors (panel E). Complete deletions are in dark blue and high copy amplifications are in red.
 
-## Features of other virus-positive tumors
+### Features of other virus-positive tumors
 
 In the cases that were positive for JCPyV, DNA, and RNA coverage depth was much lower than observed for BKPyV-positive tumors, and in several DNA-positive cases, JCPyV transcription was not detected (Figure 1). JCPyV reads were detected in three samples from case TBC12 including the primary tumor, tumor-positive lymph node, and adjacent normal bladder wall (Figure 1—figure supplement 2). IHC detected sparse LTag staining in JCPyV-positive case TBC13, but not in any tissue samples for TBC12.
 
@@ -108,13 +657,21 @@ For 2 of 3 cases harboring HPV types known to cause cervical cancer (HPV16 and H
 
 For the five TTV-positive tumors, the WGS analyses did not show evidence of integration. However, we were unable to assemble complete circular genomes for any of the TTVs. The missing segments all overlapped the GC-rich origin of replication that forms stable hairpins and is, therefore, relatively resistant to sequencing with standard Illumina technology (Tisza et al., 2020). All observed TTV ORF1 sequences belonged to the Alphatorquevirus genus and had 51–100% amino acid identity to previously reported TTV strains (Supplementary file 1d).
 
-## Mutation signature analysis
+### Mutation signature analysis
 
 The overall tumor mutation burden, as measured by non-synonymous mutations per million bases, did not show a clear correlation with the presence of viral sequences (Figure 6A). We analyzed likely somatic point mutations from all tumors and deconvoluted mutation signatures (Figure 6B and C, Figure 6—figure supplement 1). As expected for bladder cancer, we commonly observed single-base substitution 2 (SBS2) and SBS13 (both characteristic of APOBEC3 mutagenesis, N=13 cases) and SBS5 (associated with smoking history and ERCC2 mutations, N=11 cases).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig6-v2.jpg)
+
+**Figure 6.:** (A) Tumor mutation burden (TMB, non-synonymous mutations per million bases) for each tumor in this study. Bars are colored by viral positivity (red, BK polyomavirus (BKPyV); green, TTV; blue, HR-HPV; goldenrod, JC polyomavirus (JCPyV)) or etiologic agent (aristolochic acid, purple; black, undetermined). Multiple colors reflect multiple detected viruses or etiologies. (B) Barplots of the contribution of each trinucleotide substitution for the four deconvoluted signatures with the likely mutation process indicated. (C) Proportion of each deconvoluted signature that contributes to each sample with virus status indicated by colored circles (red, BKPyV; green, TTV; blue, HR-HPV; goldenrod, JCPyV). (D) Number of unique and common trunk mutations in primary-metastatic tumor pairs and tumors with multi-region sequencing. For TBC03, TBC09, and TBC28, branches one and two refer to two separate areas of the same tumor. For TBC06 and TBC34, branches P and M refer to the primary tumor and metastasis, respectively. (E) Oncoprint for the top mutated genes in bladder cancers of transplant patients. Tumors IDs are colored by likely etiology: BKPyV-positive, red; JCPyV-positive, goldenrod; HR-HPV-positive, blue; TTV-positive, green; aristolochic acid, purple; undetermined, black. The percent of modified tumors is shown on the left and the count of the variants in each gene is represented by the barplot on the right.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82690/elife-82690-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Residual sum of squares and explained variance for 2–10 signatures deconvoluted by SomaticSignatures. (B) Barplot of base substitution contributions to each of the four deconvoluted signatures from SomaticSignatures. (C) Heatmap of cosine similarities of four signatures deconvoluted by Somatic Signatures versus known Single Base Substitution Signatures (SBS). (D) NMF rank survey results for 2–10 signature deconvolution by MutationalPatterns. (E) Barplot of base substitution contributions to each of the four deconvoluted signatures from MutationalPatterns. (F) Heatmap of cosine similarities of four signatures deconvoluted by MutationalPatterns versus known SBS with closest matches highlighted in red.
+
 Four tumors (TBC16, TBC28, TBC31, TBC33) carried a predominant SBS22 signature, which is caused by the chemical aristolochic acid found in the birthwort family of plants. Cases with this signature showed a very high mutational burden (Figure 6A). In support of the idea that cases with strong SBS22 signatures arose through environmental exposure, one such case, a kidney recipient, was previously diagnosed with Chinese herbal medicine nephropathy. The final deconvoluted signature closely matched the mutation spectrum caused by the deoxy-guanosine analog ganciclovir, which was recently identified in hematopoietic stem cell transplant recipients (Figure 6B; de Kanter et al., 2021).
 
-## Recurrent somatic mutations
+### Recurrent somatic mutations
 
 First, to address the reproducibility of mutation calls in deep sequencing of FFPE samples, we analyzed the sequences from two independent sections from separate blocks for three tumors (Figure 6D). Comparing the variants called in these tumors, 77–82% of inferred somatic mutations were common to both sections. Furthermore, a similar comparison showed a large percentage of variants in common between primary tumors and their metastases (Figure 6D). In TBC06, 84% of the likely somatic mutations in the metastasis were found in the primary tumor, whereas only 28% of the likely somatic variants in the primary tumor were found in the metastasis. In an additional primary-metastatic pair (TBC34), we identified a similar proportion of shared ‘trunk’ mutations but the metastasis had more unique, likely somatic variants.
 
@@ -152,13 +709,13 @@ We identified four bladder cancers in kidney transplant recipients that exhibite
 
 ## Materials and methods
 
-## Sample acquisition and ethics
+### Sample acquisition and ethics
 
 The Transplant Cancer Match (TCM) Study is a linkage of the US national solid organ transplant registry with multiple central cancer registries (https://transplantmatch.cancer.gov/). We used data from this linkage to identify cases of in situ or invasive bladder cancer diagnosed among transplant recipients. Staff at five participating cancer registries (California, Connecticut, Hawaii, Iowa, Kentucky) worked with hospitals in their catchment areas to retrieve archived pathology materials for selected cases.
 
 We obtained twenty 10 micron sections from formal-fixed paraffin-embedded (FFPE) blocks for each specimen with available material. At each originating institution, the microtome blade was cleaned with nuclease-free water and ethanol between samples. Single 5 micron sections leading and trailing the twenty sections used for nucleic acid isolation were saved for histochemistry and one additional section was used for immunohistochemistry. Hematoxylin and eosin-stained sections were reviewed by a trained pathologist and tumor purity was determined by cellular morphology.
 
-## Nucleic acid isolation
+### Nucleic acid isolation
 
 Samples were simultaneously deparaffinized and digested using 400 µL molecular-grade mineral oil (Millipore-Sigma) and 255 µL Buffer ATL (Qiagen) supplemented with 45 µL of proteinase K (Qiagen). Samples were incubated overnight at 65 °C in a shaking heat block. Samples were spun at 16,000 × g in a tabletop microcentrifuge for one minute to separate the organic and aqueous phases. Depending on the presence of visible remaining tissue, some samples were subjected to one or two additional 2 hr long digests by the addition of 25 µL of fresh proteinase K buffer. Lysates were stored at 4 °C until RNA or DNA isolation and processed within one month.
 
@@ -166,38 +723,38 @@ Lysates were spun at 16,000 × g in a tabletop microcentrifuge for one minute. F
 
 For RNA isolation, 150 µL of the remaining clarified lysate was moved to a new tube. 250 µL of buffer PKD (Qiagen) was added and vortexed to mix. The remainder of the RNA extraction process was carried out using an RNeasy FFPE Kit (Qiagen) according to the manufacturer’s protocol. RNA quantity and quality were assessed by spectrophotometry (DeNovix) and TapeStation (Agilent).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 FFPE 5 µm thick tissue sections mounted on charged glass slides were stained with antibody against Large T Antigen, clone PAb416 (Sigma Millipore, cat. DP02), which detects LTag from multiple polyomaviruses, including SV40, BKPyV, JCPyV, WU, KI, 6, 7, 10, and 11 (Toptan et al., 2016). Slides were baked in a laboratory oven at 60 °C for 1 hr prior to immunostaining on Ventana Discovery Ultra automated IHC stainer upon following conditions: CC2 (pH9) antigen retrieval for 64 min at 96 °C, antibody at concentration 0.5 µg/ml in Agilent antibody diluent (cat. S3022) for 32 min at 36 °C, Anti-Mouse HQ-Anti HQ HRP detection system for 12 min with DAB for 4 min and Hematoxylin II counterstain for 8 min. After washing per manufacturer’s instructions, slides were incubated in tap water for 10 min, dehydrated in ethanol, cleared in xylene, coverslipped with Micromount media (Leica Biosystems), and scanned on AT2 slide scanner (Leica Biosystems) for pathology review. FFPE sections of cell pellets transfected with LTag and commercial slides of SV40 infected tissue (Sigma, cat. 351 S) were used as positive controls.
 
-## Library preparation and sequencing
+### Library preparation and sequencing
 
 50–250 ng of isolated DNA was fragmented in microtube-50 using a Covaris sonicator with the following settings: peak power: 100, duty factor: 30, cycles/burst: 1000, time: 108 s. End-repair and A-tailing were performed on fragmented DNA using the KAPA HyperPrep Kit (Roche). NEB/Illumina adaptors were ligated onto fragments with KAPA T4 DNA Ligase for 2 hr at 20 °C then treated with 4 µL USER enzyme (NEB) for 15 min at 37 °C to digest uracil-containing fragments. Ligation reactions were cleaned up using 0.8 x AMPure XP beads using the KAPA protocol. NEB dual-index oligos were added to the adaptor-ligated fragments and amplified for 6–8 cycles (depending on the amount of input fragmented DNA) using KAPA HiFi HotStart ReadyMix (Roche). Final amplified libraries were cleaned using 1 x AMPure beads with the recommended KAPA protocol. Ribosomal sequence-depleted cDNA libraries were prepared using 50 ng of total RNA with the SMARTer Stranded Total RNA-Seq Kit v2 – Pico Input Mammalian (Takara) following the manufacturer’s instructions for FFPE tissues. Final RNA and DNA libraries were assessed for size and quantity by Agilent TapeStation. Only samples that yielded libraries greater than 5 nM were sequenced.
 
 DNA libraries were sequenced on the Illumina NovaSeq 6000 at the Center for Cancer Research (CCR) Sequencing Facility. RNA libraries were sequenced on the Illumina NovaSeq 6000 and NextSeq 550 in high output mode at the CCR Genomics Core. Sequencing metrics are reported in Supplementary file 1b.
 
-## Sequence alignments
+### Sequence alignments
 
 Reads were trimmed using Trim Galore 0.6.0 with default settings. RNA reads was initially aligned using STAR aligner 2.5.3ab (Dobin et al., 2013) against a fusion reference human genome containing hg38, all human viruses represented in RefSeq as of December 2018 (Supplementary file 1c), and all papillomavirus genomes from PaVE https://pave.niaid.nih.gov (Van Doorslaer et al., 2017). Default parameters were used with the following exceptions: chimSegmentMin = 50, outFilterMultimapNmax = 1200, outFilterMismatchNmax = 30, outFilterMismatchNoverLmax = 1. Any reads that had less than 30 bp of perfect identity were excluded. Trimmed DNA reads were aligned with Bowtie2 (2.3.4.3) using the --very-sensitive setting to the same reference genome as mentioned above excluding RNA viruses (Langmead and Salzberg, 2012). Alignments were sorted and duplicate sequences were flagged using Picard 2.20.5. Indel realignments and base quality recalculations were conducted using GATK.
 
-## Virus detection and integration analysis
+### Virus detection and integration analysis
 
 All WGS reads not mapping to the human genome were de novo assembled using MEGAHIT (1.1.4) with default parameters (Li et al., 2015). All trimmed RNA reads were assembled using RNASPAdes (Bushmanova et al., 2019). Assembled contigs were annotated using BLASTn and BLASTx against the NCBI nt database (October 2021) for closely related species, and CenoteTaker2 version 2.1.2 (https://github.com/mtisza1/Cenote-Taker2; Tisza, 2021) was used to identify more divergent species in contigs ≥1000 bp (Tisza et al., 2021). Depth and breadth of coverage of viral species were normalized by the total number of human reads and length of the viral genome. Only species with ≥10% genome coverage and a normalized depth ≥10 for a viral genome in a given sample were considered as hits. Viral read k-mers were cross-compared against samples for uniqueness to identify index hopping or potential contamination between samples. Rearrangements in the BKPyV regulatory region were analyzed and annotated using BKTyper (Martí-Carreras et al., 2020).
 
 Bam alignments were input into Oncovirus Tools (https://github.com/gstarrett/oncovirus_tools) to call integration sites (Starrett et al., 2020; Starrett, 2020). It starts by extracting discordant read pairs (where one read aligns to a sequence of interest, i.e., virus, and the mated read aligns to the human genome) and any remaining reads aligned to the human genome that contain at least one 25 bp k-mer from the input sequences of interest as determined by a Bloom filter. It uses the human genomic coordinates from the above reads to identify putative integration regions by merging their stranded mapping positions to find overlaps, counting the number of reads per stranded region. Oncovirus Tools then assembles the extracted reads, together with all unaligned reads, using Spades (Bankevich et al., 2012). The resulting assembly graphs are annotated with the human and viral genomes using BLASTn and the annotated assembly graphs are plotted using the R package ggraph. The output is then screened for contigs containing both human and viral hits with BLASTn e-values below 1e-10. Based on these hits, integration junctions are called and overlaps in host-virus hit on the contigs are then screened for microhomology. All putative integration sites from Oncovirus Tools were manually validated by returning to the original alignment file.
 
-## Transcriptome clustering and differential gene expression analysis
+### Transcriptome clustering and differential gene expression analysis
 
 Counts from STAR were input into R and normalized using the DESeq2 vst function (Love et al., 2014). The DESeq2 model was built using the following factor: tissue type (normal, primary, metastasis), grade, stage, and virus status to evaluate their effects on gene expression. Since the RNA seq libraries were prepared in different batches on different days and in different sequencing runs, batch effects were removed using the R package limma and the function RemoveBatchEffects. These normalized counts were input into the R package ConsensusClusterPlus. Pathway analysis was conducted using Enrichr (https://amp.pharm.mssm.edu/Enrichr) (Kuleshov et al., 2016; Chen et al., 2013).
 
-## Somatic point mutation, structural variant, and copy number variant calling
+### Somatic point mutation, structural variant, and copy number variant calling
 
 Point mutations were called using Mutect2, VarScan2, and lofreq with default parameters (Koboldt et al., 2012; Wilm et al., 2012). Consensus calls between these variant callers were performed using SomaticSeq (3.3.0) (Fang et al., 2015). Likely germline variants were annotated and removed using SnpSift and dbSNP v152. Likely somatic point mutations were further filtered by the following criteria: SomatiqSeq PASS filter, ≥10% allele frequency, ≥4 reads supporting the variant allele, and ≥8 reads of total coverage of that position. Common mutations in cancer were annotated using SnpSift and COSMIC. Somatic mutations enrichment by gene was determined using the R package dNdScv. Copy number variants in tumor WGS datasets were called using GATK4 CNV to compare them to a panel comprised of the normal-tissue WGS datasets generated in this study. Recurrent copy number variants within polyomavirus-containing tumors or tumors with no virus were determined using GISTIC2 with default parameters. Visualization and variant calling for BKPyV were performed on alignments against a BKPyV genotype Ib-2 isolate (accession number: AB369087.1).
 
-## Mutation signature analysis
+### Mutation signature analysis
 
 Mutation signature analysis was conducted using the likely somatic variants passing all the above criteria. Mutational Patterns and Somatic Signatures R packages were used for de novo somatic mutations signature analysis.
 
-## Data visualization
+### Data visualization
 
 All graphs were made in the R statistical environment (4.0.3) using the package ggplot2 or using GraphPad Prism.

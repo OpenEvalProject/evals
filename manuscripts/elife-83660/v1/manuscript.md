@@ -16,20 +16,20 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-2. https://ror.org/03s7gtk40 Clinic for Cognitive Neurology, University of Leipzig Medical Center Leipzig Germany
-3. https://ror.org/03s7gtk40 CRC Obesity Mechanisms, Subproject A1, University of Leipzig Leipzig Germany
-4. https://ror.org/03s7gtk40 Institute of Social Medicine, Occupational Health and Public Health, University of Leipzig, Faculty of Medicine Leipzig Germany
-5. https://ror.org/03s7gtk40 Department of Psychiatry and Psychotherapy, University of Leipzig Medical Centre Leipzig Germany
-6. https://ror.org/03s7gtk40 Leipzig Research Center for Civilization Diseases (LIFE), University of Leipzig Leipzig Germany
-7. https://ror.org/03s7gtk40 Institute for Medical Informatics, Statistics and Epidemiology (IMISE), University of Leipzig Leipzig Germany
-8. https://ror.org/01hcx6992 Berlin School of Mind and Brain, Humboldt University of Berlin Berlin Germany
+1. Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+2. Clinic for Cognitive Neurology, University of Leipzig Medical Center Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+3. CRC Obesity Mechanisms, Subproject A1, University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+4. Institute of Social Medicine, Occupational Health and Public Health, University of Leipzig, Faculty of Medicine Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+5. Department of Psychiatry and Psychotherapy, University of Leipzig Medical Centre Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+6. Leipzig Research Center for Civilization Diseases (LIFE), University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+7. Institute for Medical Informatics, Statistics and Epidemiology (IMISE), University of Leipzig Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+8. Berlin School of Mind and Brain, Humboldt University of Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
 
 † Corresponding author
 
 ## Abstract
 
-Social isolation has been suggested to increase the risk to develop cognitive decline. However, our knowledge on causality and neurobiological underpinnings is still limited. In this preregistered analysis, we tested the impact of social isolation on central features of brain and cognitive ageing using a longitudinal population-based magnetic resonance imaging (MRI) study. We assayed 1992 cognitively healthy participants (50–82years old, 921women) at baseline and 1409 participants after~6y follow-up. We found baseline social isolation and change in social isolation to be associated with smaller volumes of the hippocampus and clusters of reduced cortical thickness. Furthermore, poorer cognitive functions (memory, processing speed, executive functions) were linked to greater social isolation, too. Combining advanced neuroimaging outcomes with prevalent lifestyle characteristics from a well-characterized population of middle- to older aged adults, we provide evidence that social isolation contributes to human brain atrophy and cognitive decline. Within-subject effects of social isolation were similar to between-subject effects, indicating an opportunity to reduce dementia risk by promoting social networks. European Union, European Regional Development Fund, Free State of Saxony, LIFE-Leipzig Research Center for Civilization Diseases, University of Leipzig, German Research Foundation.
+Background:Social isolation has been suggested to increase the risk to develop cognitive decline. However, our knowledge on causality and neurobiological underpinnings is still limited.Methods:In this preregistered analysis, we tested the impact of social isolation on central features of brain and cognitive ageing using a longitudinal population-based magnetic resonance imaging (MRI) study. We assayed 1992 cognitively healthy participants (50–82years old, 921women) at baseline and 1409 participants after~6y follow-up.Results:We found baseline social isolation and change in social isolation to be associated with smaller volumes of the hippocampus and clusters of reduced cortical thickness. Furthermore, poorer cognitive functions (memory, processing speed, executive functions) were linked to greater social isolation, too.Conclusions:Combining advanced neuroimaging outcomes with prevalent lifestyle characteristics from a well-characterized population of middle- to older aged adults, we provide evidence that social isolation contributes to human brain atrophy and cognitive decline. Within-subject effects of social isolation were similar to between-subject effects, indicating an opportunity to reduce dementia risk by promoting social networks.Funding:European Union, European Regional Development Fund, Free State of Saxony, LIFE-Leipzig Research Center for Civilization Diseases, University of Leipzig, German Research Foundation.
 
 ## Introduction
 
@@ -55,6 +55,104 @@ We hypothesized that both baseline and change in social isolation would correlat
 
 We included all individuals equal to or over the age of 50 with available neuroimaging of LIFE (Engel et al., 2023) due to the accelerated volume shrinkage starting at about 50 y of age in the hippocampus (Fjell et al., 2013). To avoid reverse causation, we further excluded cognitive impairment or prior brain pathology such as history of stroke, neurodegenerative disease, or brain tumours. In total, we analysed 1335 participants at baseline and 912 participants at follow-up with a mean age of 67 and 73 y, respectively, thereof 51% women and an ~6 y mean change in age at follow-up. For various sensitivity analyses, we reincluded participants that did not meet our preregistered inclusion criteria from the entire sample of 1992 participants at baseline and 1409 at follow-up. The sample displayed a high prevalence of cardiovascular risk factors, with 60% hypertension and <20% diabetes, and 11–13% had no tertiary education (Table 1).
 
+**Table 1.**
+ Descriptive statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>BL, N = 1992</th>
+      <th>FU, N = 1409</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender (female)</td>
+      <td>921 (46%)</td>
+      <td>656 (47%)</td>
+    </tr>
+    <tr>
+      <td>Baseline age (years)</td>
+      <td>67 (7) | 50 | 82 | 0</td>
+      <td>68 (7) | 50 | 84 | 0</td>
+    </tr>
+    <tr>
+      <td>Change in age (years)</td>
+      <td>0.00 (0.00) | 0.00 | 0.00 | 0</td>
+      <td>5.89 (1.97) | 0.00 | 9.40 | 15</td>
+    </tr>
+    <tr>
+      <td>Baseline LSNS</td>
+      <td>14.1 (5.2) | 0.0 | 30.0 | 181</td>
+      <td>13.7 (5.1) | 0.0 | 30.0 | 20</td>
+    </tr>
+    <tr>
+      <td>Change in LSNS</td>
+      <td>0.00 (0.00) | 0.00 | 0.00 | 0</td>
+      <td>0.39 (4.38) | –21.00 | 18.00 | 115</td>
+    </tr>
+    <tr>
+      <td>HCV (mm³)</td>
+      <td>3671 (411) | 2022 | 4871 | 83</td>
+      <td>3487 (430) | 1,913 | 4579 | 665</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m²)</td>
+      <td>27.9 (4.2) | 16.8 | 46.8 | 0</td>
+      <td>27.8 (3.7) | 18.1 | 46.5 | 0</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>1219 (61%)</td>
+      <td>830 (59%)</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>367 (18%)</td>
+      <td>239 (17%)</td>
+    </tr>
+    <tr>
+      <td>education</td>
+      <td>255 (13%)</td>
+      <td>153 (11%)</td>
+    </tr>
+    <tr>
+      <td>CESD</td>
+      <td>10 (6) | 0 | 48 | 104</td>
+      <td>10 (6) | 0 | 48 | 62</td>
+    </tr>
+    <tr>
+      <td>Memory (SD)</td>
+      <td>0.03 (0.97) | –8.79 | 1.70 | 84</td>
+      <td>–0.06 (1.04) | –5.84 | 1.64 | 314</td>
+    </tr>
+    <tr>
+      <td>Processing speed (SD)</td>
+      <td>0.09 (0.92) | –7.80 | 1.73 | 12</td>
+      <td>–0.14 (1.10) | –7.80 | 1.61 | 214</td>
+    </tr>
+    <tr>
+      <td>Executive functions (SD)</td>
+      <td>0.12 (0.95) | –4.59 | 3.26 | 11</td>
+      <td>–0.21 (1.04) | –4.43 | 3.29 | 210</td>
+    </tr>
+    <tr>
+      <td>TICS</td>
+      <td>58 (27) | 0 | 166 | 1480</td>
+      <td>57 (27) | 0 | 146 | 938</td>
+    </tr>
+    <tr>
+      <td>Pandemic</td>
+      <td>0 (0%)</td>
+      <td>412 (31%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values for categorical variables: n (%) yes; values for continuous variables: mean (SD) | minimum | maximum | n missing.HCV, right-left average hippocampal volume; BMI, body mass index; LSNS, Lubben Social Network Scale, calculated as 30 – LSNS to make larger values indicate greater social isolation; TICS, Trierer Inventar zum chroischen Stress; CESD, Center for Epidemiological Studies Depression Scale; SD, standard deviation; education, no tertiary education._
+
 Individuals exhibited LSNS scores ranging across the whole spectrum, with an average score of 16 and 19.7% scoring below the accepted threshold of 12, indicating elevated risk of social isolation, similar to other populations (Lubben et al., 2006). Individual trends in social isolation are depicted in Appendix 1—figure 1. Note that for further analyses, LSNS values were calculated as 30 – LSNS to make larger values indicate greater social isolation and coefficients should thus be interpreted accordingly. Hippocampus volumes derived from T1-weighted high-resolution anatomical MRI scans at 3T (Reuter et al., 2012) showed shrinkage with higher age of about –0.75% per year (Figure 1, left panel), similar to previous estimates (Fjell et al., 2013). To test the effects of social isolation on hippocampal volume, we conducted hierarchical linear mixed effects models adjusting for confounding effects of age, gender, and random effects of the individual in a first model (model 1), and additionally for cardiovascular risk factors in a second model (model 2). We differentiated within- and between-subject effects (van de Pol and Wright, 2009) of social isolation and investigated the interaction effect of baseline LSNS and change in age to test whether participants that are socially more isolated at baseline experienced more pronounced age-related changes. Please see osf.io/8h5v3/and ‘Methods’ for details.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83660/elife-83660-fig1-v1.jpg)
@@ -63,9 +161,105 @@ Individuals exhibited LSNS scores ranging across the whole spectrum, with an ave
 
 In our sample, social isolation was positively correlated with not living alone, being married, the number of persons living in the participants’ dwelling, being gainfully employed, younger baseline age, and less change in age but no to gender or having a migration background. See Appendix 1—tables 1 and 2 for descriptive statistics and details of the associations. To contextualize the observed link to SES, a comparison of SES category frequencies in LIFE-Adult and a fully representative sample (Lampert et al., 2013b) is provided in Appendix 1—table 3.
 
-## Social isolation and hippocampal volume
+### Social isolation and hippocampal volume
 
 We found that both stronger baseline social isolation (values for models 1/2: β = −5.6/–5.7 mm3/point on the LSNS (pt), FDR-corrected q-value (q) = 0.0034/0.0078) and increases in social isolation (β = −4.7/–4.5 mm3/pt, q = 0.0035/0.0066) significantly predict smaller hippocampal volumes independent of confounders (Table 2, Figures 1—3). Significance of these findings is further underlined by Bayes factors of 15–19 for baseline social isolation and of 2–3 for change in social isolation. The effect size of one point on the LSNS is equivalent to a 2.5-month difference in baseline age.
+
+**Table 2.**
+ Adjusted regression coefficients and measures of significance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>dv</th>
+      <th>Model</th>
+      <th>Predictor</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>p-value</th>
+      <th>FDR</th>
+      <th>BF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Hippocampal volume</td>
+      <td rowspan="4">1</td>
+      <td>LSNS_base</td>
+      <td>–5.6</td>
+      <td>−9.3,–2</td>
+      <td>0.0013**</td>
+      <td>0.0034**</td>
+      <td>18.95**</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–4.7</td>
+      <td>−8,–1.3</td>
+      <td>0.0035**</td>
+      <td>0.0069**</td>
+      <td>2.36</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>-26.1</td>
+      <td>-28.9, -23.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>–26.8</td>
+      <td>−29,–24.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">2</td>
+      <td>LSNS_base</td>
+      <td>–5.7</td>
+      <td>−9.6,–1.8</td>
+      <td>0.0019**</td>
+      <td>0.0078**</td>
+      <td>14.93**</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–4.5</td>
+      <td>−8.1,–1</td>
+      <td>0.0066**</td>
+      <td>0.0158*</td>
+      <td>2.47</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–24.2</td>
+      <td>−27.3,–21.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>–26.8</td>
+      <td>−29.2,–24.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">* p&lt;0.05, BF &gt;3</td>
+      <td colspan="2">** p&lt;0.01, BF &gt;10</td>
+      <td colspan="2">*** p&lt;0.001, BF &gt;30</td>
+      <td colspan="2">**** p&lt;0.0001, BF &gt;100</td>
+    </tr>
+  </tbody>
+</table>
+
+_The unit of effect sizes is mm³/point on the LSNS.full model1: dv~LSNS_base + LSNS_change + age_base + age_change + gender.full model 2: model 1 + hypertension + diabetes + education + BMI + CESD.dv, dependent variable; CI, confidence interval; FDR, q-values after FDR-correction; BF, Bayes factor in favour of alternative hypothesis; LSNS_base, baseline Lubben Social Network Score; LSNS_change, change in Lubben Social Network Score; CESD, Center for Epidemiological Studies-Depression._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83660/elife-83660-fig2-v1.jpg)
 
@@ -75,13 +269,243 @@ We found that both stronger baseline social isolation (values for models 1/2: β
 
 **Figure 3.:** For the gender variable and the education variable being women and having at least a tertiary degree were coded as 0, respectively. Betas were standardized by the standard deviations of the dependent and independent variable. LSNS_base, baseline Lubben Social Network Scale; age_base, baseline age; LSNS_change, change in Lubben Social Network Scale; age_change, change in age.
 
-## Social isolation and cognitive functions
+### Social isolation and cognitive functions
 
 In analogous linear mixed effects models, we tested the effects of social isolation on cognition, measured using domain-specific composite scores based on z-scored results of the trail-making test (TMT A and B) and the CERAD-plus test battery (CERAD – Consortium to Establish a Registry for Alzheimer’s Disease, RRID:SCR_003016) assessed under standardized conditions (Beyer et al., 2017). Overall, stronger baseline social isolation and to a lesser extent increases in social isolation were linked to worse cognitive performance (Table 3, Figure 1). Specifically, stronger social isolation at baseline significantly predicted lower executive functions (β = −0.028/–0.017 SD/pt, q = 9.6e-09/0.0014) and lower processing speed (β = −0.018/–0.017 SD/pt, q = 1.2e-05/3e-04). The link to lower memory (β = −0.014/–0.008 SD/pt, q = 0.0016/0.0914) was strong in model 1 but did not survive FDR-correction when controlling for additional covariates. Increases in social isolation over time significantly predicted lower memory in models 1 and 2 (β = −0.019/–0.0018 SD/pt, q = 0.0034/0.0142) but not processing speed (β = −0.007/–0.008 SD/pt, q = 0.238/0.198) and executive functions (β = –0.003/0.001 SD/pt, q = 0.41/0.69). Very high Bayes factors corroborate and substantiate the evidence for the negative effect of baseline social isolation on cognitive functions. Figures 2 and 3 allow comparisons of these effects with other predictors for the different dependent variables.
 
+**Table 3.**
+ Adjusted regression coefficients and measures of significance.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>dv</th>
+      <th>Model</th>
+      <th>Predictor</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+      <th>p-value</th>
+      <th>FDR</th>
+      <th>BF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Executive functions</td>
+      <td rowspan="4">1</td>
+      <td>LSNS_base</td>
+      <td>-0.028</td>
+      <td>−0.037,–0.019</td>
+      <td>8.0e-10****</td>
+      <td>9.6e-09****</td>
+      <td>1.4e+07****</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–0.003</td>
+      <td>–0.017, 0.011</td>
+      <td>0.342</td>
+      <td>0.4104</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.019</td>
+      <td>−0.026,–0.012</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>–0.050</td>
+      <td>−0.061,–0.04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">2</td>
+      <td>LSNS_base</td>
+      <td>–0.017</td>
+      <td>−0.026,–0.007</td>
+      <td>2e-04****</td>
+      <td>0.0014**</td>
+      <td>128.4****</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>0.001</td>
+      <td>-0.013, 0.016</td>
+      <td>0.5762</td>
+      <td>0.6914</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.014</td>
+      <td>−0.021,–0.007</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>-0.051</td>
+      <td>−0.061,–0.04</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Memory</td>
+      <td rowspan="4">1</td>
+      <td>LSNS_base</td>
+      <td>-0.014</td>
+      <td>−0.022,–0.006</td>
+      <td>4e-04****</td>
+      <td>0.0016**</td>
+      <td>58.91***</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>-0.019</td>
+      <td>−0.032,–0.007</td>
+      <td>0.0014**</td>
+      <td>0.0034**</td>
+      <td>14.68**</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.035</td>
+      <td>−0.042,–0.029</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>-0.018</td>
+      <td>-0.026, -0.009</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">2</td>
+      <td>LSNS_base</td>
+      <td>–0.008</td>
+      <td>-0.016, 0.001</td>
+      <td>0.0457*</td>
+      <td>0.0914</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–0.018</td>
+      <td>−0.031,–0.004</td>
+      <td>0.0047**</td>
+      <td>0.0142*</td>
+      <td>6.67*</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.033</td>
+      <td>−0.04,–0.026</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>-0.018</td>
+      <td>-0.028, -0.009</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Processing speed</td>
+      <td rowspan="4">1</td>
+      <td>LSNS_base</td>
+      <td>–0.018</td>
+      <td>−0.026,–0.01</td>
+      <td>1.9e-06****</td>
+      <td>1.2e-05****</td>
+      <td>8.2e+03****</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–0.007</td>
+      <td>–0.019, 0.006</td>
+      <td>0.1585</td>
+      <td>0.2378</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.038</td>
+      <td>−0.044,–0.032</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>-0.038</td>
+      <td>−0.047,–0.028</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">2</td>
+      <td>LSNS_base</td>
+      <td>–0.017</td>
+      <td>−0.025,–0.009</td>
+      <td>2.1e-05****</td>
+      <td>3e-04****</td>
+      <td>1.0e+03****</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>–0.008</td>
+      <td>–0.021, 0.005</td>
+      <td>0.1253</td>
+      <td>0.1981</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>age_base</td>
+      <td>–0.036</td>
+      <td>−0.042,–0.029</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age_change</td>
+      <td>-0.033</td>
+      <td>−0.043,–0.024</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">* p&lt;0.05, BF &gt;3</td>
+      <td colspan="2">** p&lt;0.01, BF &gt;10</td>
+      <td colspan="2">*** p&lt;0.001, BF &gt;30</td>
+      <td colspan="2">**** p&lt;0.0001, BF &gt;100</td>
+    </tr>
+  </tbody>
+</table>
+
+_The unit of effect sizes is standard deviation/point on the LSNS.full model 1: dv~LSNS_base + LSNS_change + age_base + age_change + gender.full model 2: model 1 + hypertension + diabetes + education + BMI + CESD.dv, dependent variable; CI, confidence interval; FDR, q-values after FDR-correction; BF, Bayes factor in favour of alternative hypothesis; LSNS_base, baseline Lubben Social Network Score; LSNS_change, change in Lubben Social Network Score; CESD, Center for Epidemiological Studies-Depression._
+
 We did not observe interaction effects of social isolation on hippocampal volume or cognitive performance with age. Appendix 1—tables 4–6 provide a comprehensive summary of all LMEs and predictors including covariates.
 
-## Social isolation and cortical thickness
+### Social isolation and cortical thickness
 
 To explore whether social isolation affects regional cortical thickness, we conducted whole-brain vertex-wise linear mixed effects analyses on FreeSurfer-derived 3D cortical maps (Reuter et al., 2012). In model 1, we found a total of eight clusters of significantly decreased cortical thickness associated with stronger baseline social isolation after FDR-correction with an α-level of 5% (Figure 4). The clusters were located in the left precuneus, cuneus, precentral gyrus and posterior cingulate gyrus, and right supramarginal gyrus and cuneus. Increases in social isolation over time were linked to decreased cortical thickness in one cluster in the right superior frontal gyrus (Figure 5). When additionally controlling for cardiovascular covariates (model 2), no significant clusters were detected. Table 4 lists these clusters, their locations, and sizes.
 
@@ -93,13 +517,106 @@ To explore whether social isolation affects regional cortical thickness, we cond
 
 **Figure 5.:** Unstandardized betas are the vertex-wise effect sizes of change in social isolation in mm/point on the Lubben Social Network Scale corrected for baseline age, change in age, and baseline social isolation and gender. The first row shows the left hemisphere. Areas in which stronger isolation links to reduced thickness are marked in blue, the inverse in red. The right hemisphere is shown below. First and second columns show the lateral and medial views, respectively. The box on the right shows a cluster of lower cortical thickness associated with social isolation in the right middle frontal gyrus that was significant after FDR-correction and the F-value of each significant vertex.
 
-## Mediation analyses
+**Table 4.**
+ FDR-corrected clusters of reduced cortical thickness significantly associated with social isolation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>POI</th>
+      <th>Hemisphere</th>
+      <th>Cortical region</th>
+      <th>Maximum p-value</th>
+      <th>Size (mm²)</th>
+      <th>NVtxs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LSNS_base</td>
+      <td>rh</td>
+      <td>Supramarginal</td>
+      <td>1.3e-05</td>
+      <td>43.12</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>rh</td>
+      <td>Cuneus</td>
+      <td>2.8e-05</td>
+      <td>28.04</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>LSNS_change</td>
+      <td>rh</td>
+      <td>Superior frontal</td>
+      <td>1.4e-06</td>
+      <td>43.84</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Precuneus</td>
+      <td>1.1e-06</td>
+      <td>224.34</td>
+      <td>504</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Precuneus</td>
+      <td>1.2e-05</td>
+      <td>41.71</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Cuneus</td>
+      <td>9.8e-05</td>
+      <td>10.21</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Precuneus</td>
+      <td>1.1e-04</td>
+      <td>2.74</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Precentral</td>
+      <td>1.1e-04</td>
+      <td>2.32</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>LSNS_base</td>
+      <td>lh</td>
+      <td>Posterior cingulate</td>
+      <td>1.2e-04</td>
+      <td>0.66</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_full model 1: cortical thickness ~ LSNS_base +LSNS_change +age_base +age_change +sex.POI, predictor of interest; NVtxs, Number of vertices constituting the cluster; LSNS_base, baseline social isolation; LSNS_change, change in social isolation; rh, right hemisphere; lh, left hemisphere._
+
+### Mediation analyses
 
 Turning to the stress-buffering hypothesis, we investigated whether perceived stress, measured using the Trierer Inventar zum chronischen Stress (TICS) (Schulz and Schlotz, 1999), mediated the relationship of social isolation and hippocampal volume. Moreover, we investigated whether hippocampal volume mediated the association between social isolation and cognitive functions. Specifically, we investigated the indirect path resulting from the regressions of follow-up mediator on baseline LSNS and follow-up dependent variable on baseline mediator.
 
 Neither the mediation analyses with chronic stress as a mediator (n = 51 complete observations) nor the mediation analyses with hippocampal volume as a mediator (n = 341–360) yielded significant results. Due to the requirements of the model design and over 50% missingness in the stress questionnaire, the sample sizes of the mediation analyses were gravely diminished. Details on the mediation analyses are provided in Appendix 1—table 7.
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 In addition to these pre-registered analyses, we conducted sensitivity analyses to test the robustness of our results on hippocampal volume and cognitive functions. These included possible effects of the Covid-19 pandemic, effects related to the definition of exclusion criteria or confounder specificities. Analyses accounting for (a) potential effects of measurements before compared to during the Covid-19 pandemic, (b) reducing the exclusion criteria (i.e. not excluding cognitively impaired participants, participants taking centrally active medication, and participants with recent cancer treatment), (c) only including participants with two timepoints and using mean and within scores, (d) using a hypertension cut-off of 140 mmHg, (e) using an MMSE cut-off of <27, (f) additionally controlling for physical activity, (g) additionally controlling for sleep quality, and (h) standardizing cognitive functions using the baseline mean rather than the grand mean confirmed the regression coefficients of our models in terms of direction and size (Appendix 1—tables 8–15).
 
@@ -113,7 +630,7 @@ In order to further investigate the nature of the correlations, we calculated bi
 
 In this pre-registered study, we investigated the associations of social isolation with brain structure and cognition in a large cognitively healthy mid- to late-life longitudinal sample. In line with our pre-specified hypotheses, we showed a significant link between stronger baseline social isolation and increases in social isolation over the course of ~6 y and smaller hippocampal volumes. Both predictors had an effect size per point on the LSNS comparable to a 2.5 months difference in baseline age in this age range. Simply put, assuming that if everything else remained stable, the difference between having 1 or 3–4 close and supportive friends is comparable to a 1-year difference in hippocampal ageing. Furthermore, we found significant associations of stronger baseline social isolation with lower executive functions, memory, and processing speed. The link to executive functions was particularly strong with an effect size larger than a 1-year difference in baseline age. For increases in social isolation, confidence intervals were wider but effect sizes, except for executive functions, were similar in magnitude to that of baseline social isolation. In multiple sensitivity analyses, we showed the robustness of these findings. Neither applying less exclusion criteria, only including participants with two timepoints, nor controlling for the impact of the ongoing pandemic changed our results substantially. Moreover, we found clusters of decreased cortical thickness in the cuneus, precuneus, precentral, posterior cingulate, supramarginal, and middle frontal gyrus associated with social isolation cross-sectionally or longitudinally. Mediation analysis in smaller sample sizes testing potential effects of social isolation through lowering adverse effects of stress revealed no significant effects.
 
-## Hippocampal volume
+### Hippocampal volume
 
 Our findings indicate that social isolation contributes to grey matter loss in the hippocampus, a focal point of atrophy in mild cognitive impairment (Devanand et al., 2007), and Alzheimer’s dementia (Fox et al., 1996).
 
@@ -121,23 +638,23 @@ Notably, not only baseline social isolation (a between-subject effect) but also 
 
 However, this assumes a causal effect of social isolation. As associations with social isolation could also have resulted from reverse causation through health selection, that is, that participants with accelerated brain ageing are more likely to become socially isolated, this assumption needs careful consideration. Bayes factors imply the absence of an interaction effect of baseline social isolation with change in age and the bivariate latent change score models did not provide evidence in favour of causality in the hypothesized direction either. However, neither did they provide evidence for reverse causality. This inconclusiveness might result from our reduced follow-up sample size and thus related lower power, especially in the latent score models. For example, data from the English Longitudinal Study of Aging from >6000 older adults measured at up to 6 two-year intervals supports the assumed causality of social isolation with regards to memory performance (Read et al., 2020). In our study, presence of considerable effect sizes and the high statistical confidence in these estimates on multiple outcomes in our healthy sample without cognitive impairment speaks against the competing hypothesis of reverse causality through health selection and in favour of a causal role of social isolation. Furthermore, the lack of any strong increase in effect size when including health-impaired participants or decrease when applying more stringent exclusion criteria for cognitive health corroborate this interpretation. Still, overall these results only add a modicum of corroboration to the case for a causal role of social isolation.
 
-## Cognitive functions
+### Cognitive functions
 
 Baseline social isolation, and to a lesser extent, change in social isolation, were significantly associated with cognitive performance, that is, executive functions, processing speed, and memory, all of which undergo decline in (pathological) ageing (Blazer et al., 2015). Again, our results thus imply a detrimental role of social isolation on cognitive functions. We could however not observe that social isolation lowered memory performance through reductions in hippocampal volume, a hypothesis raised by considerations of the central role of the hippocampus in memory (Buzsáki and Moser, 2013). Similarly, we could not find evidence that social isolation affected hippocampal volume through higher chronic stress measured with questionnaires, a hypothesis put forward by the stress buffering theory (Kawachi and Berkman, 2001). These latter analyses suffered from small sample sizes and a limited number of timepoints. Nonetheless, the lack of any significant link between chronic stress and social isolation (see Appendix 1—table 2) is hard to align with the stress-buffering hypothesis in spite of the missingness in the TICS.
 
-## Cortical thickness
+### Cortical thickness
 
 Overall, comparing our brain morphometric results with those of existing cross-sectional studies on social isolation, detected brain regions coincide. A rather small-sampled study did not find a link between social isolation and grey matter volumes (Lin et al., 2020) but James et al., 2012 (occipital lobe), Blumen and Verghese, 2019 (hippocampus, precuneus, medial frontal gyrus) and Shen et al., 2022 (hippocampus, right supramarginal gyrus) found decreased volumes in regions we detected, too.
 
 Several of the cortical regions identified in our study (precuneus) belong to the pattern of exacerbated regional atrophy found in Alzheimer’s disease. Furthermore, we detected regions known for increased cortical thinning in the healthy process of ageing (cuneus) and both in healthy and pathological ageing (supramarginal gyrus) (Bakkour et al., 2013; Pini et al., 2016). This indicates an aggravating role of social isolation in cortical thinning that may contribute to normal and accelerated brain ageing processes. However, the findings of lower cortical thickness must be interpreted cautiously due to the limited consistency between cross-sectional and longitudinal effects and the exploratory approach of whole-brain analyses.
 
-## Limitations
+### Limitations
 
 A limitation of this study is its uncertain generalizability to the general population because the sample was probably affected by selection and attrition bias common to longitudinal studies (Chatfield et al., 2005). Attrition bias might have mostly affected the mediation and BLCS models that thus offered reduced interpretability, despite the comparatively large neuroimaging cohort. However, the LMEs were mostly unscathed by this problem due to their ability to make use of datapoints of participants with only one full observation. In addition, our population represents a WEIRD sample (i.e. western, educated, industrialized, rich, democratic) which might skew our understanding of how social isolation affects brain health (Laird, 2021). As we found higher SES to be associated with lower LSNS scores, this relatively high SES sample might have led to underestimation of the detrimental effects of social isolation and increases in social isolation in the ageing process. Considering hippocampus segmentations, it has been argued that FreeSurfer systematically overestimates volumes compared to manual volumetry; however, this difference did barely emerge in participants over the age of 50 (Wenger et al., 2014). A further limitation are ceiling effects in the CERAD word list memory task in healthy adults, potentially limiting the sensitivity to detect subtle differences. In addition, time of day during testing might have affected cognitive performance (Schmidt et al., 2007), yet we did not control for this. Almost all cognitive tests were performed between 9 a.m. and 1 p.m., though. Covariance of social isolation with other variables such as hypertension or diabetes could have influenced the results. However, note that all variance inflation factors (VIFs) were acceptable, indicating low reason for concern regarding multicollinearity. Lastly, inferences from our results regarding dementia aetiology must be made with caution as we did not investigate clinically diagnosed dementia patients.
 
 In quantitative studies, despite its importance in shaping the research process and conclusions, for example, in functional MRI analysis (Botvinik-Nezer et al., 2020), researchers’ influence is often disregarded. In the supplementary text, we offer a brief reflexivity section to make relevant influences on this study transparent and to shortly discuss the value of reflexivity for quantitative science.
 
-## Implications for public health and future work
+### Implications for public health and future work
 
 This pre-registered large-scale population neuroimaging analysis adds robust support to the view that social isolation is associated with accelerated brain ageing and cognitive decline in non-demented adults in mid- to late-life. Our findings further imply that social contact protects from detrimental processes and thereby preserves brain structure and function. Henceforth, targeting social isolation through tailored strategies might contribute to maintaining brain health into old age.
 
@@ -155,13 +672,13 @@ In light of the relevance of social isolation for cognitive and general health a
 
 ## Materials and methods
 
-## Study design and preregistration
+### Study design and preregistration
 
 We followed the Strengthening the Reporting of Observational Studies in Epidemiology (STROBE) and Committee on Best Practices in Data Analysis and Sharing (COBIDAS) on MRI guidelines in our reporting wherever appropriately applicable.
 
 The study’s preregistration can be found at https://osf.io/8h5v3/. Please refer to it for information on the authors’ previous knowledge of the data and a comprehensive overview of our pre-specified hypotheses and models.
 
-## Study population
+### Study population
 
 We used longitudinal data from the ‘Health Study of the Leipzig Research Centre for Civilization Diseases’ (LIFE). The study was approved by the institutional ethics board of the Medical Faculty of the University of Leipzig and conducted according to the Declaration of Helsinki. The LIFE-Adult-Study is a population-based panel study of around 10,000 randomly selected participants from Leipzig, a major city with 550,000 inhabitants in Germany. A subgroup of around 2600 participants underwent MRI testing at baseline. The baseline examination was conducted from August 2011 to November 2014. Follow-up assessments were performed around 6–7 y after the respective first examinations (Engel et al., 2023). Around 1000 participants of the MRI-subsample returned for follow-up testing.
 
@@ -169,15 +686,15 @@ We included all participants over 50 with MRI data that did not fulfil any of th
 
 If no MMSE data were available, the participants were excluded if their overall performance in cognitive tests negatively deviated from the wave’s mean by 2 standard deviations (SDs) which is a stricter criterion excluding ~2.6% of the sample compared to ~0.8% excluded based on the MMSE. The exclusion criteria were chosen to reduce the potential of reverse causality, that is, dementia symptoms leading to a loss of social connections, as correlations observed in this cognitively intact sample should not stem from dementia symptoms.
 
-## MRI data acquisition, processing, and quality control
+### MRI data acquisition, processing, and quality control
 
 We obtained T1-weighted images on a 3 Tesla Siemens Verio MRI scanner (Siemens Healthcare, Erlangen, Germany) with a 3D MPRAGE protocol and the following parameters: inversion time, 900 ms; repetition time, 2300 ms; echo time, 2.98 ms; flip angle, 9°; field of view, 256 × 240 × 176 mm3; voxel size, 1 × 1 × 1 mm3, shimming: tune-up shim, no fat suppression, whole-brain coverage. We processed the scans with FreeSurfer (FreeSurfer, V5.3.0, RRID:SCR_001847) and the standard cross-sectional pipeline recon-all. FreeSurfer automatically measures hippocampal volume, vertex-wise cortical thickness, and intracranial volume. To ensure high within-subject reliability, we employed FreeSurfer’s longitudinal pipeline on all scans, including those of participants without a follow-up scan. Please see Reuter et al., 2012 for details. Moreover, we smoothed the cortical thickness surfaces with a 10 mm kernel to improve reliability and power (Liem et al., 2015). Different Linux kernels and Ubuntu versions constituted the computational infrastructure during the data acquisition and processing.
 
 Visual quality control was based on the recommendations of Klapwijk et al., 2019. After the baseline data were acquired, our team visually controlled all results of the cross-sectional recon-all pipeline. Additionally, we controlled the outputs of the longitudinal stream of all participants with follow-up data and those whose cross-sectional runs required editing. If we detected errors in the processed scans, we manually edited them (N = 262). We excluded participants from analyses using MRI measures if we deemed the processed scans to be unusable (n = 98).
 
-## Variable construction
+### Variable construction
 
-## Social isolation
+#### Social isolation
 
 We used the standard Lubben Social Network Scale (LSNS) –6 (Lubben et al., 2006) to measure the participants’ social isolation. The questionnaire is a suitable tool to measure social isolation (Valtorta et al., 2016) has a high internal consistency (Cronbach’s α = 0.83), a stable factor structure of the family and non-kin subscale (rotated factor loading comparisons = 0.99) and good convergent validity (correlations with caregiver /emotional support availability and group activity all 0.2–0.46 across multiple sites) (Lubben et al., 2006). In order to make larger scores imply more isolation, we subtracted the actual score from the maximum score of 30.
 
@@ -185,15 +702,19 @@ To quantify changes in social isolation, we subtracted the baseline from the fol
 
 In exploratory analyses testing the standard threshold of 12 points, we converted the continuous scores into a dichotomous categorical variable. Change in LSNS scores for these analyses corresponds to positive or negative category shifts.
 
-## Grey matter measures
+#### Grey matter measures
 
-We used the hippocampal volume derived from FreeSurfer’s segmentation and averaged it over both hemispheres. Furthermore, we adjusted it for intracranial volume according to the following formula:HCVadjusted,i=HCVraw,i−β∗(ICVraw,i−ICVmean)
+We used the hippocampal volume derived from FreeSurfer’s segmentation and averaged it over both hemispheres. Furthermore, we adjusted it for intracranial volume according to the following formula:
+
+$$
+HCV_{adjusted},_{i}=HCV_{raw},_{i}−\beta∗(ICV_{raw},_{i}−ICV_{mean})
+$$
 
 where β is the unstandardized regression coefficient of hippocampal volume (HCV) on intracranial volume (ICV) from a linear mixed-effects model (LME) (Jack et al., 1998).
 
 For whole-brain analyses we used the FreeSurfer fsaverage template and cortical thickness as a vertex-wise outcome.
 
-## Cognitive functions
+#### Cognitive functions
 
 We calculated domain-specific composite scores and calculated them as follows (Beyer et al., 2017):
 
@@ -207,11 +728,11 @@ Sum-score = z_phonemic fluency + z_semantic fluency + z_sum_learning + z_recall 
 
 Most participants were cognitively tested between 9 a.m. and 1 p.m.
 
-## Stress
+#### Stress
 
 Trierer Inventar zum chronischen Stress (TICS) is a German questionnaire assessing perceived stress (57 items, six sub-scales, 0–4 points per item). Its sum score is our measure of participants’ chronic stress. The subscales have acceptable to excellent internal consistency (Cronbach’s α = 0.76–0.091) and criterion validity of the work overload sub-scale has been shown by demonstrating a significant correlation with cortisol levels over the course of a work days and its ability to differentiate tinnitus patients from healthy controls (Schulz and Schlotz, 1999).
 
-## Control and further variables of interest
+#### Control and further variables of interest
 
 Month and year of birth of the participants and the date of the MRIs were recorded and used to calculate the age to one decimal point. Age = YOM.MOM – YOB.MOB (YOM/MOM = year/month of MRI, YOB/MOB = year/month of birth). If no MRI was available, we used the date of the LSNS.
 
@@ -237,7 +758,7 @@ To explore general participant characteristics of potential relevance to social 
 
 To improve the interpretability of our results, we z-transformed the variables BMI, CESD, TICS, executive function, memory performance, and processing speed by the grand mean and centred the variable baseline age. Additionally, we also centred cognitive performance scores by the baseline mean for a sensitivity analysis.
 
-## Outliers and Imputation
+### Outliers and Imputation
 
 We excluded outliers for our core variables based on a cut-off of 3 SDs (LSNS-score, adjusted hippocampal volume, cognitive functions). Please see Figure 6 (flowchart) for the limited effect of outlier exclusion on sample sizes of the different models. For further details on outlier detection and handling regarding covariates, please see the supplementary text.
 
@@ -249,13 +770,13 @@ To avoid an excessive reduction in sample size due to missing data, we performed
 
 Furthermore, we used FIML for analyses using structural equation modelling.
 
-## Statistical analyses
+### Statistical analyses
 
 All code can be found at https://github.com/LaurenzLammer/socialisolation, (copy archived at Lammer, 2023). Please see the supplementary text for information on the software used for the analyses.
 
-## Statistical modelling
+### Statistical modelling
 
-## Linear mixed effects models
+#### Linear mixed effects models
 
 To investigate the link between social isolation and our outcomes of interest, we employed LMEs with individual as a random effect.
 
@@ -265,23 +786,23 @@ Dependent variable ~baseline LSNS + change in LSNS + baseline age + change in ag
 
 Please see the supplementary text for explicit formulations of all models. We calculated two models for each hypothesis. In model 1, we included age and gender as control variables. Model 2 additionally included education, hypertension, diabetes, depressive symptoms, and BMI. In model 1, the other risk factors are assumed to mediate the effect of social isolation. In model 2, they are assumed to be confounders (see Appendix 1—figure 3 for a visualization). To measure the effect of ageing, we controlled for baseline age and change in age. Analogously, we differentiated within- and between-subject effects (van de Pol and Wright, 2009) of social isolation. Likewise, we calculated the interaction effect of baseline LSNS and change in LSNS. With this methodology we regressed hippocampal volume, the three cognitive functions, and cortical thickness on baseline LSNS, change in LSNS, and the interaction terms. To measure the overall effect of our predictors of interest, we performed a full-null-model comparison (Bolker et al., 2009). In addition to standard p-values, we calculated Bayes factors (BFs). The relative evidence was measured by dividing the BF for the full model by the BF of the null model (Rouder et al., 2016). This allows us to evaluate the evidence in favour of the full hypothesis compared to the null hypothesis and thus also provide evidence for the absence of an effect (Keysers et al., 2020). We report both measures of significance to offer our readers a comprehensive insight into the data, combining the familiarity of classical frequentist inference with the additional implications of BFs (Keysers et al., 2020).
 
-## Sensitivity analyses
+#### Sensitivity analyses
 
 For the first analysis we added whether participants were tested after the start of lockdown measures to all LMEs. In the second analysis we did not exclude participants due to the intake of centrally active or cancer medication and cognitive impairment. To probe the reliability of the coefficients for LSNS_change, we ran an analysis excluding all participants with only one timepoint and used standard mean and within score calculation. Furthermore, we ran two sensitivity analysis testing whether using a hypertension cut-off of 140 mmHg or an MMSE cut-off of <27 as an exclusion criterion would affect our results. Additionally, we checked whether results would differ if cognitive test scores were standardized by the baseline rather than grand mean and whether the inclusion of physical activity or sleep quality as an additional control variable would affect the results. Furthermore, to test for potential differences in the effect of social isolation between women and men, we divided our dataset by gender and recalculated the frequentist LMEs with both resulting datasets. Moreover, we investigated whether the standard LSNS cut-off would be a sensitive measurement to indicate adverse effects of social isolation on our outcomes and thus be helpful for clinical practice. To this end, we ran our models treating social isolation as a dichotomous categorical variable. Additionally, we ran them with an interaction term of the usual variables with a social isolation category variable to explore if we would find evidence for stronger adverse effects of less social contact amongst the participants deemed socially isolated by the standard cut-off.
 
 To explore links of social isolation to general participant characteristics, we ran LMEs with random intercepts and LSNS sum score as dependent variable. We calculated separate models with socioeconomic status, living alone, number of persons sharing the participant’s dwelling, age (differentiated into the two variables baseline age and change in age in one model), employment, gender, chronic stress, migration background, and marital status as independent variables in the full dataset.
 
-## Statistical inference
+#### Statistical inference
 
 We report one-sided p-values based on the direction of the predictor/path of interest’s regression coefficient and the direction of our pre-defined hypotheses. To obtain one-sided BFs we sampled 10,000 times from the posterior distribution of our predictor of interest’s effect. Then we multiplied the BF by 2 and the percentage of sampled effects in the direction of our pre-defined hypotheses.
 
-## Multiplicity control
+### Multiplicity control
 
 Our threshold for significance for all tests was p<0.05. To control for multiple hypothesis testing we FDR-corrected families of tests and each individual whole-brain analysis (see the supplementary text for definition of families).
 
 BFs of 3–10 and BFs of 10–30 are commonly considered to be moderate or strong evidence in favour of a hypothesis. To evaluate these thresholds in light of multiplicity, we conducted two simulation studies described in the supplementary text that revealed that using a BF threshold of 10.75 rather than 3 would keep α below 5% and that this would not substantially decrease power.
 
-## Model assumptions
+### Model assumptions
 
 To ensure that our continuous predictors are normally distributed, we plotted their histograms. We had to log-transform the CES-D, IPAQ, and PSQI scores to obtain a normal distribution.
 

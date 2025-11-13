@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.37373.001 The ubiquitous P-loop fold nucleoside triphosphatases (NTPases) are typically activated by an arginine or lysine ‘finger’. Some of the apparently ancestral NTPases are, instead, activated by potassium ions. To clarify the activation mechanism, we combined comparative structure analysis with molecular dynamics (MD) simulations of Mg-ATP and Mg-GTP complexes in water and in the presence of potassium, sodium, or ammonium ions. In all analyzed structures of diverse P-loop NTPases, the conserved P-loop motif keeps the triphosphate chain of bound NTPs (or their analogs) in an extended, catalytically prone conformation, similar to that imposed on NTPs in water by potassium or ammonium ions. MD simulations of potassium-dependent GTPase MnmE showed that linking of alpha- and gamma phosphates by the activating potassium ion led to the rotation of the gamma-phosphate group yielding an almost eclipsed, catalytically productive conformation of the triphosphate chain, which could represent the basic mechanism of hydrolysis by P-loop NTPases.
+The ubiquitous P-loop fold nucleoside triphosphatases (NTPases) are typically activated by an arginine or lysine ‘finger’. Some of the apparently ancestral NTPases are, instead, activated by potassium ions. To clarify the activation mechanism, we combined comparative structure analysis with molecular dynamics (MD) simulations of Mg-ATP and Mg-GTP complexes in water and in the presence of potassium, sodium, or ammonium ions. In all analyzed structures of diverse P-loop NTPases, the conserved P-loop motif keeps the triphosphate chain of bound NTPs (or their analogs) in an extended, catalytically prone conformation, similar to that imposed on NTPs in water by potassium or ammonium ions. MD simulations of potassium-dependent GTPase MnmE showed that linking of alpha- and gamma phosphates by the activating potassium ion led to the rotation of the gamma-phosphate group yielding an almost eclipsed, catalytically productive conformation of the triphosphate chain, which could represent the basic mechanism of hydrolysis by P-loop NTPases.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ The P-loop fold, a variation of the Rossmann fold, is a 3-layer αβα sandwich,
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig1-v2.jpg)
 
-**Figure 1.:** Phosphate chains of NTP molecules and their analogs are colored by atoms: oxygen atoms in red, phosphorus in orange. The K+ ion is shown as a purple sphere, Na+ ion is shown as a blue sphere, Mg2+ ions are shown as green spheres. Phosphate chain is shown in stick representation with oxygens in red and phosphorus atoms in orange; γ-phosphate mimicking groups (AlF4- and MgF3) are shown in black, coordination and hydrogen bonds are shown as black dashed lines. (-A) Active site of the small Ras-like GTPase RhoA in complex with the activating protein RhoGAP [PDB entry 1OW3]; the bound GDP-MgF3 mimics the transition state. The P-loop with the preceding α-helix is shown as green cartoon; Switch I motif with the conserved Mg-2+-binding Thr residue is shown in magenta; Switch II motif (DxxG motif, which starts from the conserved Asp of the Walker B motif) is shown in orange; the Arg finger of RhoGAP is colored turquoise. (B) Active site of the K+-dependent GTPase MnmE with bound GDP-AlF4- [PDB: 2GJ8]. Switch I region and the K-loop are shown in magenta. (C) The active site of dynamin, a Na+-adapted GTPase with bound GDP-AlF4- [PDB: 2X2E]. The P-loop and K-loop (Switch I region) are colored as in panels A and B. (D) Structure of the NTP triphosphate chain with Mg2+ ion in a bidentate coordination, referred to as the βγ conformation. The pink dotted arch indicates the PB-O3B-PG angle; the blue dashed line indicates the PA-PG distance. The atom names are in accordance with the CHARMM naming scheme (Vanommeslaeghe et al., 2010) and the recent IUPAC recommendations (Blackburn et al., 2017).
+**Figure 1.:** Phosphate chains of NTP molecules and their analogs are colored by atoms: oxygen atoms in red, phosphorus in orange. The K+ ion is shown as a purple sphere, Na+ ion is shown as a blue sphere, Mg2+ ions are shown as green spheres. Phosphate chain is shown in stick representation with oxygens in red and phosphorus atoms in orange; γ-phosphate mimicking groups (AlF4- and MgF3-) are shown in black, coordination and hydrogen bonds are shown as black dashed lines. (A) Active site of the small Ras-like GTPase RhoA in complex with the activating protein RhoGAP [PDB entry 1OW3]; the bound GDP-MgF3- mimics the transition state. The P-loop with the preceding α-helix is shown as green cartoon; Switch I motif with the conserved Mg2+-binding Thr residue is shown in magenta; Switch II motif (DxxG motif, which starts from the conserved Asp of the Walker B motif) is shown in orange; the Arg finger of RhoGAP is colored turquoise. (B) Active site of the K+-dependent GTPase MnmE with bound GDP-AlF4- [PDB: 2GJ8]. Switch I region and the K-loop are shown in magenta. (C) The active site of dynamin, a Na+-adapted GTPase with bound GDP-AlF4- [PDB: 2X2E]. The P-loop and K-loop (Switch I region) are colored as in panels A and B. (D) Structure of the NTP triphosphate chain with Mg2+ ion in a bidentate coordination, referred to as the βγ conformation. The pink dotted arch indicates the PB-O3B-PG angle; the blue dashed line indicates the PA-PG distance. The atom names are in accordance with the CHARMM naming scheme (Vanommeslaeghe et al., 2010) and the recent IUPAC recommendations (Blackburn et al., 2017).
 
 Catalytic activity of P-loop NTPases typically depends upon their interaction with other proteins or domains of the same protein or RNA/DNA molecules; upon this interaction, activating Arg or Lys ‘fingers’ are inserted into the catalytic site (Bos et al., 2007), see Figure 1A. It still remains unclear whether there is some universal catalytic mechanism that is common for all P-loop NTPases, see (Wittinghofer, 2006; Kamerlin et al., 2013) for reviews. Recently, Gerwert and colleagues proposed that the Arg finger promotes GTP hydrolysis in small GTPases by rotating the α-phosphate with respect to β- and γ-phosphates towards an eclipsed conformation, which would favor the bond cleavage because of repulsion between the oxygen atoms of all three phosphate groups (Rudack et al., 2012; Mann et al., 2016; Gerwert et al., 2017). Blackburn and colleagues proposed that the insertion of the activating Arg residue leads to the reshuffling of the hydrogen bonded network, which drives the displacement of the attacking water molecule into the reactive position (Jin et al., 2016; Jin et al., 2017a; Jin et al., 2017b).
 
@@ -46,9 +46,9 @@ Here, we have performed evolutionary analysis of the conformations of NTPs and t
 
 ## Results
 
-## Molecular dynamics simulations of Mg2+-NTP complexes in water and comparison with structures of P-loop NTPases
+### Molecular dynamics simulations of Mg2+-NTP complexes in water and comparison with structures of P-loop NTPases
 
-## Molecular dynamics simulations
+#### Molecular dynamics simulations
 
 We have conducted a series of molecular dynamics (MD) simulations of the Mg2+-ATP and Mg2+-GTP complexes (hereafter Mg-ATP and Mg-GTP, respectively) in water and in the presence of K+, Na+, or NH4+ ions (see Materials and methods and Supplementary file 1C for details). To our knowledge, no computational studies of Mg-NTP complexes investigated the effects of monovalent cations.
 
@@ -56,9 +56,25 @@ As a starting point for the MD simulations, we chose the conformation of Mg-ATP 
 
 Since we were mostly interested in the βγ conformations of the Mg-ATP complex that are typical for P-loop NTPases, we have conducted an additional series of 25 independent 20-ns long MD simulations, with and without M+ ions to sample enough βγ conformations for comparative analyses. The simulations were performed both for Mg-ATP and Mg-GTP complexes (Supplementary file 1C). These data were used for analyses of conformations of triphosphate chain in the presence of different M+ ions. Generally, the results were very similar for the Mg-ATP and Mg-GTP complexes, therefore hereafter we describe only the Mg-ATP data. The MD simulation data for Mg-GTP complexes are presented as figure supplements and referred to where appropriate.
 
-## Cation binding to Mg2+-NTP complexes in water
+#### Cation binding to Mg2+-NTP complexes in water
 
 Distance distributions obtained from the MD simulation data (Figure 2, Figure 2—figure supplement 1) show that M+ ions formed coordination bonds with oxygen atoms of the ATP phosphate chain with the respective lengths of 2.2 Å for Na+, 2.6 Å for K+, and 2.7 Å for NH4+ ions. These distances correspond well with the crystallographic data for these ions (Harding, 2002; Harding, 2004; Sigel et al., 2016). On time average, within the 4 Å radius around the phosphate chain, 1.5 cations were present in the case of Na+ and NH4+, and 0.75 cations were present in the case of K+ (Figure 2—figure supplement 2). Based on the radial distributions of M+ ions around each individual oxygen atom of the ATP phosphate chain (Figure 2—figure supplement 1) and visual inspection of the M+ binding to the phosphate groups, at least two distinct binding sites for M+ ions could be identified (Figure 2A). One of them was formed by the oxygen atoms of β- and γ-phosphates, and the other site involved the oxygens of α- and γ-phosphates. We refer to these binding sites as the BG and AG sites, respectively. Additionally, M+ ions were often found close to the distal end of the phosphate chain, where they contacted one or more oxygen atoms of the γ-phosphate (the G site(s), Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig2-v2.jpg)
+
+**Figure 2.:** The color scheme is as in Figure 1. (A) Superposition of the ATP phosphate chain conformations observed in the MD simulations in the presence of K+ ions (shown in purple); Na+ ions (shown in blue) and NH4+ ions (nitrogen atoms of NH4+ ions are shown in yellow/green). The ribose and adenine moieties are not shown, the phosphate chain is shown with PA on top and PG at the bottom. All cations within 5 Å from the phosphate chain are shown and colored in different shades depending on the nearby oxygen atoms to illustrate the distinction between binding in the AG and BG sites (see text for details). Transparent spheres signify the ions outside the AG and BG sites. The constellation of ions in the vicinity of γ-phosphate is referred to as the site G. For the visualization, we have selected every 100th simulation frame to sample the conformational states of the Mg-ATP complex with 5-ns intervals. The conformations were superposed to achieve the best possible match between coordinates of the phosphorus and ester oxygen atoms of the ATP phosphate chain. (B) Geometry of the Mg-ATP complex with two monovalent cations bound, one in the AG site and one in the BG site. Distances to the AG and BG binding sites (RAG and RBG) were calculated as averages of the distances to the two corresponding oxygen atoms. The distances to the oxygen atoms (e.g. rA) were defined as the shortest distances between a particular M+ ion and any oxygen atom of the respective phosphate group (including the bridging oxygen atoms). (C-E) distance distributions for K+, NH4+, and Na+ ions in the AG and BG sites.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Radial distributions are shown for all atoms of the ATP phosphate chain. (A) Atom names are in accordance with the CHARMM naming scheme (Vanommeslaeghe et al., 2010) and the recent IUPAC recommendations (Blackburn et al., 2017). (B) Radial distributions of cations around individual oxygen atoms. The distributions of cations around ester bond oxygen atoms O3A and O3B are shown by dashed lines. The peak distances from the cation to the oxygen atoms were the same 2.7 Å for K+ and NH4+ ions, while for Na+ this distance was 2.2 Å. For the NH4+ ion, the distance was measured from each oxygen atom to the nitrogen atom of NH4+. There are two ester bond oxygens in the phosphate chain, but only the oxygen (O3B) that connects β- and γ-phosphates was seen involved in the cation binding, it interacted more often with K+ and Na+ than with NH4+. Monovalent cations were found near oxygen atoms of γ-phosphate more often than near oxygens of β- and α-phosphates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Probability distribution functions for cations around the phosphate chain. We have plotted the number of atoms inside the area centered on phosphorus atoms of the ATP phosphate chain as a function of the radius of the selected area. This number was estimated by measuring the distance between each cation in the system and the nearest phosphorus atom of ATP during MD simulations. The plot indicates the presence of 1.5 cations on average in the 4 Å radius around the phosphate chain in the case of Na+ and NH4+, and 0.75 ions on average in the case of K+. For all three ions, the first inflection occurs at the distances shorter than 4 Å and a less prominent second inflection can be seen at around 6 Å. (B) Free energy of the cation binding as a function of the distance from the phosphate chain, as estimated from the probability data in panel A. In addition to the two binding sites at the distances of approx. 4 Å and 6 Å, the free energy plot revealed a less pronounced third binding site at a distance of approx. 8–9 Å from the phosphorus atoms. The most prominent is the first peak, corresponding to cation binding around the phosphate chain, within the 4 Å distance of at least one of the phosphorus atoms, so further focus was specifically on cation binding around the phosphate chain.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Distances to the AG and BG binding sites (RAG and RBG) were calculated as averages of the distances to the two corresponding oxygen atoms (see Figure 2 in the main text). The distances to the oxygen atoms (e.g. rA) were defined as the shortest distances between a particular M+ ion and any oxygen atom of the respective phosphate group (including ester oxygen atoms). (A-C) distance distributions for K+, NH4+, and Na+ ions in the AG and BG sites.
 
 To characterize M+ binding in the AG and BG sites, we measured the distances from each M+ ion to the nearest oxygen atoms of the two respective phosphate residues (RAG and RBG distances in Figure 2B). Site occupancy was estimated, as shown in Figure 2C–E, from the number of M+ ions located in the proximity of the binding site at each moment of the simulation. In the BG site, binding of any M+ ion produced a prominent maximum in the RBG distribution. The RBG values peaked at the same distance as the maxima of the distribution of distances to separate oxygens (Figure 2—figure supplement 1), which indicates that the cations in the BG site simultaneously formed coordination bonds with two oxygen atoms. Similarly, in the AG site, the NH4+ and Na+ ions produced peaks in the RAG distribution plots with the maxima at 2.7 Å and 2.3 Å, respectively. For K+ ions, the corresponding peak with a RAG value of 2.6 Å was wide. Still, the distributions of the distances between cations and individual oxygen atoms of the triphosphate chain show that oxygen atoms of γ-phosphate had the most contacts with K+ ions, see graphs in Figure 2—figure supplement 1.
 
@@ -68,17 +84,117 @@ In MD simulations of Mg-GTP complexes, the M+ binding pattern was similar to tha
 
 The reasons for the weak K+-binding in the AG site could be, in principle, clarified by structural and thermodynamic analysis of the conformations of the Mg-NTP complex with two bound K+ ions. Such an analysis, however, was hindered by the scarcity of the respective MD simulation frames. Therefore, we have conducted additional MD simulations with positional restraints applied to the cations (Supplementary file 1C). We have conducted 10-ns simulations of an ATP molecule with Mg2+ in the βγ coordination and K+ in the BG site, and of the same system but with the addition of the second K+ ion in the AG site. Positional restrains were applied to K+ and Mg2+ ions and to one of the atoms of the adenine base. Binding of the second K+ ion in the AG site was found to stabilize all three phosphate groups in a near-eclipsed conformation, with the phosphorus-oxygen bonds of the α-phosphate group almost coplanar to the respective bonds of β- and γ-phosphates (Figure 3; Supplementary file 1D). Only in this conformation, the distance between the oxygen atoms of α- and γ-phosphates was short enough to accommodate the second K+ ion. As shown in Figure 3—figure supplement 1, binding of the second K+ ion in the AG site promotes the transition of the phosphate chain into the almost fully eclipsed conformation by approximately 27 meV or 2.5 kJ/mol.
 
-## Shape of the triphosphate chain of Mg2+-NTP complexes in water as inferred from the MD simulation data
+![Figure 3.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig3-v2.jpg)
+
+**Figure 3.:** (A) Conformations of Mg-ATP complexes with one and two K+ ions bound as inferred from MD simulations; left structure, no K+ ion bound in the AG site; right structure, a K+ ion is bound in the AG site. The α-phosphate is in on the top, β- and γ-phosphates are below; the α-phosphate is shown in green, β-phosphate in blue, γ-phosphate in red. (B) Distribution histograms for dihedral angles between phosphate groups in ATP, calculated from MD simulations of Mg-ATP with one K+ cation bound in the BG site (green) and with two cations bound in the AG and BG sites (red). Normalized histograms of dihedral angle distribution (thin lines) were calculated from MD trajectories and fitted with normal distribution function (thick lines). Dashed lines indicate the centroid values of the fits by Gaussian function. All distributions were fitted with one-term Gaussian models, except for the Ψβ-γ angle in case of Mg-ATP with two cations bound, this distribution was fitted with a two-term Gaussian, parameters for the highest peak are shown. (C) The phosphate chain of GTP, illustrating the dihedral angle Ψα-γ. Dihedral angle is an angle between two planes and is defined by four atoms. In this case, the angle Ψα-γ is an angle between the plane that contains atoms PG, PA and O1A (green), and the plane that contains atoms PA, PG and O3G (red). In the fully eclipsed conformation, both P-O bonds are coplanar, so that the two planes overlap and the dihedral angle between them is 0°.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data from MD simulations with restraints on the positions of K+ ions (see the text and Supplementary file 1C). The top graph shows free energy calculated from normalized probabilities of ATP conformations and plotted as function of the dihedral angle between γ- and β-phosphates. The bottom plot displays free energy of coupling the binding of the second K+ ion with the γ-phosphate rotation, calculated as the difference between the free energy plots shown on the top graph. The lowest energy value was set to zero. These plots show that the presence of second K+ ion in the AG site induces a near-eclipsed state of the phosphate chain, by bringing both Ψα-β and Ψα-γ angles close to 0°, at the expense of Ψβ-γ, which increases slightly (see Supplementary file 1D). Binding of the second K+ ion in the AG site stabilizes this almost eclipsed state by ~27 meV.
+
+#### Shape of the triphosphate chain of Mg2+-NTP complexes in water as inferred from the MD simulation data
 
 Cleavage of the bond between β- and γ-phosphates is believed to proceed via a planar transition complex, whereby the PB-O3B-PG angle widens (Kamerlin et al., 2013; Jin et al., 2017a; Jin et al., 2017b; Kiani and Fischer, 2016; Warshel and Prasad, 2017; Akola and Jones, 2003; Grigorenko et al., 2006; Harrison and Schulten, 2012). Another important feature of the Mg-ATP complex is the curvature of the phosphate chain, which can be characterized by the PA-PG distance (Figure 1D). During all MD simulations, PA-PG distances and PB-O3B-PG angles fluctuated around a certain value for a while and then switched to another set of values; this behavior reflected periods of MD trajectories characterized by the same type of interaction between the Mg2+ ion and the triphosphate chain (Figure 4 and Figure 4—figure supplement 1). The ATP molecules switched between the bidentate βγ conformation and the so-called αβγ conformations with the Mg2+ ion being coordinated by one oxygen atom from each phosphate group (tridentate coordination of Mg2+). The latter conformation is known from 31P NMR studies (Huang and Tsai, 1982; Mildvan, 1987) and some proteins (Chaudhry et al., 2003; Wang and Boisvert, 2003). In the long (3 × 170 ns) simulations, several versions of the αβγ conformation could be seen, differing in the particular oxygen atoms of the phosphate chain that were involved in the tridentate coordination of the Mg2+ ion (Figure 4—figure supplement 1). In short, MD simulations that started from the same βγ conformation (simulations 5–8 in Supplementary file 1C), we did not observe significant differences in the lifetimes of the βγ conformation between systems with different cations (Supplementary file 1E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig4-v2.jpg)
+
+**Figure 4.:** Each left panel shows the PA-PG distance (upper trace) and the PB-O3B-PG angle (bottom trace) in the course of MD simulations. Thin gray lines show actual values measured from each frame of the MD simulation, the bold black lines show moving average with a 2-ps window. Black boxes indicate fragments of simulations chosen for the analyses of particular types of interaction between the Mg2+ ion and the triphosphate chain; the respective conformations of Mg-ATP are shown on the right. The analysis was performed as shown in Figure 2B. The color scheme is as in Figure 1. (A) no added ions; (B–D) MD simulations in the presence of K+, Na+, and NH4+, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Black vertical lines indicate borders between independent simulations, thick colored lines show moving averages of distances measured during MD simulations. Oxygen atoms are labeled as in Figure 1D. The most populated conformation in each of the four systems is characterized by the Mg2+ ion coordinated by three oxygen atoms: one of the free oxygens of the α-phosphate (O1A or O2A), O3B atom, and an oxygen atom from the γ-phosphate (O1G, O2G, or O3G). This conformation resembles the αβγ conformation of the Mg-ATP complex seen in other studies but differs in the inclusion of an ester oxygen atom in the Mg2+ coordination sphere.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** A,B, Changes of the distance value upon MD simulations of βγ-coordinated Mg-ATP complexes with no additional monovalent cations (A) and with K+ ions (B) provided as examples. (C) Autocorrelation values plotted as functions of the time lag. Based on this plot, the correlation time of 1 ns of simulation time was anticipated for the all types of interactions between the Mg2+ ion and the triphosphate chain and in the presence of all tested M+ ions.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** A, B, Changes of the angle value upon MD simulations of βγ-coordinated Mg-ATP complexes with no additional monovalent cations (A) and with K+ ions (B) provided as examples. (C) Autocorrelation values plotted as functions of the time lag. Compared to the distance measurements, the angle values oscillated on a much shorter timescale and accordingly had shorter correlation times. From this plot, the correlation time of 5 frames or 250 ps of simulation time was estimated. The general shape of the autocorrelation function was the same for all types of interactions between the Mg2+ ion and the triphosphate chain and in the presence of all tested M+ ions.
+
 We used the values of PA-PG distances and PB-O3B-PG angles as parameters to describe the geometry of the ATP phosphate chain in the presence and absence of different M+ ions. In each of the sampled conformations, the Mg-ATP complex was characterized by distinct PA-PG distances and PB-O3B-PG angles, which depended on the nature of the added monovalent cation (Figure 4, Table 1). While all M+ ions seemed to contract the phosphate chain, it was more extended in the presence of K+ ions than in the presence of NH4+ or Na+ ions. Furthermore, Na+ and NH4+ ions could induce an even more compressed, curled conformation of the Mg-ATP complex with even shorter distances between PA and PG atoms. Such curled conformations of the phosphate chain were not observed either in the presence of K+ ions or in the absence of M+ ions (Figure 4, Table 1).
+
+**Table 1.**
+ Effects of monovalent cations on the shape of the triphosphate chain of the Mg-ATP complex in water, as inferred from the MD simulation data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Added cation</th>
+      <th colspan="6">Conformation of the triphosphate chain of Mg-ATP*</th>
+    </tr>
+    <tr>
+      <th colspan="2">βγ-coordination</th>
+      <th colspan="2">βγ-coordination, ‘curled’ phosphate chain</th>
+      <th colspan="2">αβγ-coordination</th>
+    </tr>
+    <tr>
+      <th>PA-PG distance, Å</th>
+      <th>PB-O3B-PG angle</th>
+      <th>PA-PG distance, Å</th>
+      <th>PB-O3B-PG angle</th>
+      <th>PA-PG distance, Å</th>
+      <th>PB-O3B-PG angle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None</td>
+      <td>5.46 ± 0.34</td>
+      <td>122.3 ± 3.5</td>
+      <td colspan="2">N/A</td>
+      <td>4.76 ± 0.18</td>
+      <td>124.9 ± 3.3</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>4.91 ± 0.24</td>
+      <td>122.0 ± 3.3</td>
+      <td colspan="2">N/A</td>
+      <td>4.32 ± 0.24</td>
+      <td>128.0 ± 3.5</td>
+    </tr>
+    <tr>
+      <td>Na+</td>
+      <td>4.69 ± 0.22</td>
+      <td>122.9 ± 3.2</td>
+      <td>4.60 ± 0.22</td>
+      <td>124.0 ± 3.3</td>
+      <td>4.26 ± 0.37</td>
+      <td>127.7 ± 3.6</td>
+    </tr>
+    <tr>
+      <td>NH4+</td>
+      <td>4.85 ± 0.22</td>
+      <td>122.3 ± 3.3</td>
+      <td>4.56 ± 0.21</td>
+      <td>124.6 ± 3.3</td>
+      <td>4.22 ± 0.16</td>
+      <td>127.8 ± 3.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The conformations of the Mg-ATP complex were determined as described in the text. Mean values and standard deviations of PA-PG distance (in Å) and the PB-O3B-PG angle (in degrees) were measured over the respective parts of the simulations. Simulation periods corresponding to βγ and αβγ conformations were identified by tracking distances between Mg2+ and non-bridging oxygen atoms of the phosphate chain (Figure 4—figure supplement 1); simulation periods corresponding to the ‘curled’ conformation were identified from PA-PG distance tracks and visual inspection of the phosphate chain shape (Figure 4). Data for the αβγ coordination of the Mg-ATP complex and conformations with curled phosphate chain were calculated from simulations 1–4 in Supplementary file 1C; characterization of the βγ-coordination was based on simulations 5–8 in Supplementary file 1C, see Supplementary file 1E for further details._
 
 Figure 5 shows heat maps of the conformations seen in the MD simulations with the values of PB-O3B-PG angle and PA-PG distance used as coordinates. The shading reflects the probability (normalized frequency) of conformations corresponding to the respective measurements. For the βγ conformation of the Mg-ATP complex, the largest PA-PG distances, up to 5.5 Å, were observed in simulations without M+ ions (Figures 4 and 5). Presence of M+ ions in the simulation system led to a significant decrease of the PA-PG distances (Figures 4 and 5, Table 1). The PB-O3B-PG angles in the βγ-coordinated Mg-ATP complexes did not differ significantly between simulations with different cations or without cations added (Figures 4 and 5, Table 1). Among the studied cations, K+ ions allowed for the longest PA-PG distances.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig5-v2.jpg)
+
+**Figure 5.:** Heat maps for systems with monovalent cations include only conformations of Mg-ATP complexes with at least one cation present within 4 Å radius. The color intensity is proportional to the probability (normalized frequency) of the respective conformation. Magenta dashed lines outline the areas corresponding to the conformations of transition state analogs; blue dashed lines outline the areas corresponding to the conformations of the non-hydrolyzable analogs, calculated from crystal structures of P-loop NTPases (Figure 5—figure supplement 2). (A) Data from the 3 × 170 ns simulations (no. 1–4 in Supplementary file 1C). (B) Data from 4 × 20 ns simulations of Mg-ATP in βγ conformations (no. 5–8 in Supplementary file 1C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Heat maps for systems with monovalent cations include only conformations of Mg-GTP complexes with at least one cation present within 4 Å area, and with Mg2+ in βγ coordination. The color intensity is proportional to the probability (normalized frequency) of the respective conformation. Magenta dashed lines outline the areas corresponding to the conformations of transition state analogs; blue dashed lines outline the areas corresponding to the conformations of the non-hydrolyzable analogs, calculated from crystal structures of P-loop NTPases, see text.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** PDB entries for structures of P-loop NTPases were extracted from InterPro database entry IPR027417 ‘P-loop containing nucleoside triphosphate hydrolase’ and filtered to contain only those X-ray structures that contain Mg2+ ions, resulting in a list of 1,333 PDB IDs. Selected structures were analyzed with custom MATLAB scripts to select only those structures which contain either an NTP molecule, or its non-hydrolyzable analog, or a transition state analog. Additionally, we only considered NTP-like molecules bound in the proximity of at least one Lys residue (with less than 4.5 Å distance from NZ atom of Lys to any of the phosphate chain P atoms or the corresponding atoms in mimicking groups). In total, 1,357 NTP-like molecules from 670 PDB entries were used in the measurements. Isotherms for the heat map of the structure shape distribution are shown to indicate the most and least populated areas. Bold lines indicate isotherms chosen to represent crystallographic data in comparison with the MD results. (A) Shapes of ATP and GTP molecules. Native ATP and GTP molecules are most likely to be crystallized with inactive proteins, so the majority of them represent non-productive conformations of the phosphate chain. (B) Shapes of non-hydrolyzable analogs (PDB IDs: ANP, GNP, ACP, GCP, AGS, GSP). Non-hydrolyzable analogs cover lower values of the angle that is analogous to the PB-O3B-PG angle, since in such molecules, the ester oxygen between PB and PG is replaced with another atom (N in ANP, GNP; C in ACP, GCP); or one of free oxygens of γ-phosphate is replaced with S (GSP, AGS).
+
 The shapes of triphosphate chains of Mg-GTP complexes in water in the presence of the studied M+ ions were very similar to those of Mg-ATP complexes, see Figure 5—figure supplement 1.
 
-## Shape of the phosphate chain in the structures of P-loop NTPases
+#### Shape of the phosphate chain in the structures of P-loop NTPases
 
 Binding in the catalytic site of a P-loop NTPase imposes constraints on the Mg-NTP complex, so that only particular conformations of the phosphate chain are allowed. These conformations appear to be catalytically prone, since NTP binding to an inactive P-loop domain (in the absence of a specific activating protein) already increases the rate constant of hydrolysis by several orders of magnitude as compared to the NTP hydrolysis in water (Kötting and Gerwert, 2004; Shutes and Der, 2006).
 
@@ -90,15 +206,399 @@ Next, we compared the conformations of the phosphate chain of ATP (Figure 5B) an
 
 Altogether, Figure 5 and Figure 5—figure supplement 1 show that the conformational space of phosphate chain conformations, as seen in P-loop NTPases, overlapped much better with conformations seen in the MD simulations of Mg-ATP with K+ and NH4+ ions than with conformations obtained with Na+ ions.
 
-## Cations in the active sites of P-loop NTPases
+#### Cations in the active sites of P-loop NTPases
 
 To further analyze the roles of M+ ions in P-loop NTPases, we selected 10 crystal structures of P-loop GTPases and ATPases, representing different families of P-loop proteins. We have chosen mainly the structures with non-hydrolyzable NTP analogs and transition state analogs in complex with Mg2+ ions, as these structures provide positions of all three phosphate groups. These structures were superposed by matching the coordinates of the P-loop regions against the structure of the K+-dependent GTPase MnmE [PDB: 2GJ8] (Scrima and Wittinghofer, 2006), see Figure 6. Each structure was then inspected to determine the locations of the positively charged residues around the phosphate chain. Figure 6 shows that the binding sites for M+ ions observed in the MD simulations (Figure 6A) were exactly those occupied by positively charged groups in the structures of P-loop NTPases (Figure 6B,C). The binding site between the β- and γ-phosphates (the BG site) is always occupied by the amino group of the conserved P-loop lysine residue, whereas the binding site between the α- and γ-phosphates (the AG site) could be occupied, in the crystal structures, by either a K+ or Na+ ion (Figure 6B), or an amino group of an activating lysine residue, or the guanidinium group of arginine (Figure 6C), or a water molecule (see below).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig6-v2.jpg)
+
+**Figure 6.:** The color scheme is as in Figure 1; dark blue spheres indicate positions of positively charged side-chain nitrogen atoms of Lys and Arg residues, P-loop regions are shown as cartoons in grey. (A) Superposition of phosphate chain conformations observed in MD simulations with K+ ions. Only conformations with βγ coordination of Mg2+ are shown. (B) Superposition of P-loop regions of crystal structures of cation-dependent P-loop NTPases: GTPase MnmE [PDB: 2GJ8], Fe transporter FeoB [PDB: 3SS8], dynamin-like protein [PDB: 2X2E], and translation factor eIF-B5 [PDB: 4TMZ], see Table 3 for details. (C) Superposition of P-loop regions of crystal structures of cation-independent P-loop NTPases: Ras/RasGAP complex [PDB: 1WQ1], septin [PDB: 3FTQ], atlastin [PDB: 4IDQ], Gα12 protein [PDB: 1ZCA], DNA polymerase III subunit τ [PDB: 3GLF], F1-ATPase [PDB: 2JDI].
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Each of the proteins shown has both Asn residues that were shown to be associated with binding of monovalent cations in related proteins (Ash et al., 2012). Switch I, including the K-loop, and its flanking regions are shown in magenta, switch II motif DxxG is shown in orange. NTP-like molecules are shown as sticks, Mg2+ ions are shown as green spheres, water molecules in the area of supposed cation binding are shown as red spheres.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Inactive dimer of the full-length MnmE in the GTP-bound form (the structure (PDB: 3GEI) was resolved with non-hydrolyzable GTP analogs). The P-loop domain is shown in grey, the K-loop is not resolved (its position is indicated by red asterisks), the N-terminal and helical domains are shown in blue and green for different monomers. (B) An active dimer of isolated G-domains of MnmE, as resolved in complex with a transition state analog and K+ ion (PDB: 2GJ8). The K-loops are shown in red, K+ ions are shown as purple spheres. (C) Schematic representation of the conformational changes in MnmE dimers, reproduced after (Klare, 2013), domains are colored the same way as on panel A.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Inactive Era in the GDP-bound form [PDB: 3IEU] (Tu et al., 2009) in two projections. (B) Active Era in complex with nucleotides 1506–1542 of 16S rRNA and a non-hydrolyzable analog of GTP [PDB: 3R9W] (Tu et al., 2011) in two projections. (C) Cation-binding site of active Era, occupied by a water molecule (shown as a red sphere) [PDB: 3R9W] (Tu et al., 2011). The black line indicates, for comparison, the position of the K-loop in the inactive structure [PDB: 3IEU] (Tu et al., 2009). The P-loop domain is shown in grey, the P-loop region shown in green, the K-loop region shown in magenta, nucleotide analogs are shown as sticks, Mg2+ ions are shown as green spheres.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Cation-dependent RadA recombinase from Methanococcus voltae [PDB: 2F1H] (Qian et al., 2006). (B) Cation-independent RecA recombinase from E. coli [PDB: 3CMX] (Chen et al., 2008). The protein structure is shown as grey cartoon, the adjacent monomer is shown in blue, the P-loop region is shown in green; catalytic Glu residues are shown as orange sticks, conserved Asp residues of the Walker B motif are shown as red sticks. Functionally relevant residues from adjacent monomers are shown as blue sticks. Mg2+ ions are shown as green spheres, K+ ions as purple spheres.
 
 In all P-loop NTPases, the phosphate chain is seen in the extended conformation similar to that observed in the presence K+ and NH4+ but not Na+ ions (Figure 5, Figure 5—figure supplement 1). Such an extended conformation is known to be stabilized by numerous interactions of all three phosphate groups with the residues of the P-loop motif, see (Wittinghofer and Vetter, 2011).
 
 Table 2 summarizes the activation mechanisms for those classes of P-loop NTPases that contain both M+-activated and Arg/Lys-activated enzymes. Across different families of P-loop NTPases, different activation mechanisms have been described, usually involving interactions with other proteins, domains of the same protein, or RNA/DNA molecules, and resulting in the insertion of a positive charge - a monovalent cation or an Arg/Lys finger - into the catalytic site (Bos et al., 2007; Scrima and Wittinghofer, 2006; Ash et al., 2011; Meyer et al., 2009; Böhme et al., 2010; Abrahams et al., 1994; Goitre et al., 2014; Komoriya et al., 2012; Vetter and Wittinghofer, 1999). The catalytic roles of Arg/Lys residues in the AG sites of various classes of P-loop NTPases are discussed elsewhere (Shalaeva et al., 2018). Here, we focus on the structures of P-loop NTPases that are dependent upon M+ ions.
 
+**Table 2.**
+ Activation mechanisms within the classes of P-loop NTPases that contain both cation-dependent and cation-independent enzymes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Superfamily</th>
+      <th>Family</th>
+      <th>Activating charge</th>
+      <th>Activation mechanism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Kinase-GTPase division, TRAFAC class</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Classic translation factor GTPases</td>
+      <td>EF-G/EF-2</td>
+      <td>K+</td>
+      <td rowspan="15">Functional interaction with ribosomal RNA/other protein(s)/other domain(s) of the same protein (Hwang and Inouye, 2001;Moreau et al., 2008; Tomar et al., 2011; Achila et al., 2012;Fasano et al., 1982; Ebel et al., 1992; Dubnoff and Maitra, 1972;Kuhle and Ficner, 2014; Manikas et al., 2016; Daigle and Brown, 2004; Foucher et al., 2012;Rafay et al., 2012; Pérez-Arellano et al., 2013; Villarroya et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>EF-Tu/EF-1A</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>EIF2G</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>ERF3</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>IF-2</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>LepA</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td rowspan="4">OBG-HflX-like GTPases</td>
+      <td>HflX</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>OBG</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>NOG</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>YchF/OLA1</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td rowspan="2">YlqF/YawG GTPases</td>
+      <td>NOG2</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>RsgA</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td rowspan="7">TrmE-Era-EngA-EngB-Septin-like GTPases</td>
+      <td>EngA (Der)</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>EngB</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>Era</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>FeoB</td>
+      <td>K+</td>
+      <td rowspan="6">Dimerization (e.g. mRNA-associated in the case of MnmE) (Chappie et al., 2010; Koenig et al., 2008; Gasper et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>MnmE</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>Septin</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td>Toc34-like</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dynamin-like GTPases</td>
+      <td>hGBP</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td>Dynamin</td>
+      <td>K+/Na+</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Extended Ras</td>
+      <td>Ras family</td>
+      <td>Arg finger</td>
+      <td rowspan="4">Interaction with a specialized activating protein or domain(Bos et al., 2007; Cherfils and Zeghouf, 2013)</td>
+    </tr>
+    <tr>
+      <td>Gα subunits</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Myosin/kinesin</td>
+      <td>Myosin</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td>Kinesin</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td colspan="4">ASCE division, RecA/F1-like class</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DNA-repair and recombination ATPases</td>
+      <td>RecA</td>
+      <td>Lys finger</td>
+      <td rowspan="2">DNA/RNA-dependent oligomerization(Chen et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>RadA</td>
+      <td>K+</td>
+    </tr>
+    <tr>
+      <td>Rho helicases</td>
+      <td>Rho</td>
+      <td>Arg finger</td>
+      <td rowspan="7">Interaction with the neighboring subunit within a conformationally coupled hexamer (Komoriya et al., 2012; Walker, 1998;Senior et al., 2002; Skordalakes and Berger, 2006)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">T3SS ATPases</td>
+      <td>YscN</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td>Flil</td>
+      <td>Arg finger</td>
+    </tr>
+    <tr>
+      <td rowspan="4">F-/V-type ATPases</td>
+      <td>V-type A</td>
+      <td rowspan="4">Arg finger</td>
+    </tr>
+    <tr>
+      <td>F-type β</td>
+    </tr>
+    <tr>
+      <td>V-type B</td>
+    </tr>
+    <tr>
+      <td>F-type α</td>
+    </tr>
+  </tbody>
+</table>
+
 We have manually inspected the available structures of known K+-dependent P-loop NTPases (Supplementary file 1A), checked for M+ ions bound near the NTP phosphate chain, and compared the structures of K+- and Na+-bound NTP analogs in crystal structures of P-loop proteins with the structures of the Mg2+-ATP-2K+ and Mg2+-ATP-2Na+ complexes obtained from the MD simulations. In total, we were able to identify and analyze 17 structures of cation-dependent P-loop NTPases in complex with NTP analogs and K+, Na+, or NH4+ ions bound in the active site (Table 3). For each such structure, we checked the shape of the phosphate chain and the coordination sphere of the cation in the AG site. In all these structures, the distances between PA and PG atoms (or between the corresponding mimicking atoms) were in the range of 4.9–5.3 Å for the non-hydrolyzable analogs and 5.3–5.6 Å for transition state analogs (Table 3). These values are similar to the PA-PG distances observed in MD simulations of the Mg-ATP complex in the presence of K+ ions (Figures 4 and 5 and Table 1).
+
+**Table 3.**
+ Monovalent cation binding in crystal structures of P-loop NTPases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Protein</th>
+      <th rowspan="2">PDB entry</th>
+      <th rowspan="2">Bound NTP analog</th>
+      <th colspan="3">Occupation of the AG site</th>
+      <th colspan="2">Phosphate chain shape</th>
+    </tr>
+    <tr>
+      <th>Cation</th>
+      <th>Distance to the closest O atom of PA, Å*</th>
+      <th>Distance to the closest O atom of PG, Å*,†</th>
+      <th>PA-PG distance, Å*</th>
+      <th>PB-O3B-PG angle, degrees†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">TRAFAC class NTPases</td>
+    </tr>
+    <tr>
+      <td rowspan="3">GTPase MnmE(TrmE)</td>
+      <td>2gj8</td>
+      <td>GDP AlF4-</td>
+      <td>K+</td>
+      <td>2.8</td>
+      <td>2.6</td>
+      <td>5.4</td>
+      <td>136.3</td>
+    </tr>
+    <tr>
+      <td>2gja</td>
+      <td>GDP AlF4-</td>
+      <td>NH4+</td>
+      <td>2.9</td>
+      <td>2.5</td>
+      <td>5.4</td>
+      <td>136.9</td>
+    </tr>
+    <tr>
+      <td>2gj9</td>
+      <td>GDP AlF4-</td>
+      <td>Rb+</td>
+      <td>2.9</td>
+      <td>2.8</td>
+      <td>5.5</td>
+      <td>131.6</td>
+    </tr>
+    <tr>
+      <td>GTPase FeoB</td>
+      <td>3ss8</td>
+      <td>GDP AlF4-</td>
+      <td>K+</td>
+      <td>2.8</td>
+      <td>2.6</td>
+      <td>5.4</td>
+      <td>144.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Dynamin-like proteins</td>
+      <td>2x2e</td>
+      <td>GDP AlF4-</td>
+      <td>Na+</td>
+      <td>4.0</td>
+      <td>2.5</td>
+      <td>5.3</td>
+      <td>131.2</td>
+    </tr>
+    <tr>
+      <td>2x2f</td>
+      <td>GDP AlF4-</td>
+      <td>Na+</td>
+      <td>4.1</td>
+      <td>2.6</td>
+      <td>5.3</td>
+      <td>133.6</td>
+    </tr>
+    <tr>
+      <td>3w6p</td>
+      <td>GDP AlF4-</td>
+      <td>Na+</td>
+      <td>4</td>
+      <td>2.4</td>
+      <td>5.5</td>
+      <td>135.3</td>
+    </tr>
+    <tr>
+      <td>3t34</td>
+      <td>GDP AlF4-</td>
+      <td>Na+</td>
+      <td>3.8</td>
+      <td>2.4</td>
+      <td>5.6</td>
+      <td>149.3</td>
+    </tr>
+    <tr>
+      <td>GTPase Era</td>
+      <td>3r9w</td>
+      <td>GNP</td>
+      <td>H2O‡</td>
+      <td>3</td>
+      <td>3.4</td>
+      <td>5.1</td>
+      <td>129.2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Eukaryotic translation initiation factor eIF5B</td>
+      <td>4ncn</td>
+      <td>GTP</td>
+      <td>Na+</td>
+      <td>2.4</td>
+      <td>2.4</td>
+      <td>5.0</td>
+      <td>126.6</td>
+    </tr>
+    <tr>
+      <td>4tmv</td>
+      <td>GSP</td>
+      <td>Na+</td>
+      <td>2.4</td>
+      <td>2.8 (S)§</td>
+      <td>4.9</td>
+      <td>126.3</td>
+    </tr>
+    <tr>
+      <td>4tmw</td>
+      <td>GTP</td>
+      <td>Na+</td>
+      <td>2.4</td>
+      <td>2.4</td>
+      <td>4.9</td>
+      <td>125.9</td>
+    </tr>
+    <tr>
+      <td>4tmz</td>
+      <td>GSP</td>
+      <td>K+</td>
+      <td>2.7</td>
+      <td>3.3 (S)§</td>
+      <td>4.9</td>
+      <td>122.1</td>
+    </tr>
+    <tr>
+      <td colspan="8">RecA/F1-like class NTPases</td>
+    </tr>
+    <tr>
+      <td rowspan="4">DNA recombinase RadA</td>
+      <td>3ew9</td>
+      <td>ANP</td>
+      <td>K+</td>
+      <td>6.2</td>
+      <td>3.3</td>
+      <td>5.1</td>
+      <td>124.5</td>
+    </tr>
+    <tr>
+      <td>2f1h</td>
+      <td>ANP</td>
+      <td>K+</td>
+      <td>6.6</td>
+      <td>3.5</td>
+      <td>5.3</td>
+      <td>125.3</td>
+    </tr>
+    <tr>
+      <td>2fpm</td>
+      <td>ANP</td>
+      <td>K+</td>
+      <td>5.9</td>
+      <td>2.6</td>
+      <td>5.1</td>
+      <td>124.2</td>
+    </tr>
+    <tr>
+      <td>1xu4</td>
+      <td>ANP</td>
+      <td>K+</td>
+      <td>6.1</td>
+      <td>2.7</td>
+      <td>5.2</td>
+      <td>125.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The values were measured directly in the respective protein structures displayed in PyMOL.† If the γ-phosphate was replaced by an AlF4- complex, the distance was measured to the closest F atom‡ While GTPase Era has been shown to be K+-dependent (Rafay et al., 2012; Meier et al., 2000), the crystallization solution contained no K+, only Na+, so that the likely cation-binding site is occupied by a water molecule, which forms hydrogen bonds with K+ ligands.§ Non-hydrolyzable GTP analog GDP-monothiophosphate (GSP) contains a sulfur atom in the place of the O1G atom of γ-phosphate; this atom in involved in coordination of monovalent cations in respective structures._
 
 The majority of K+-activated NTPases, as well as the unique family of the Na+-adapted dynamin-related GTPases, belong to the TRAFAC class of P-loop NTPases (Leipe et al., 2002), where the binding of the M+ ion is assisted by the so-called K-loop (Ash et al., 2012). This loop goes over the nucleotide binding site and provides two backbone carbonyl groups as additional ligands to the M+ coordination sphere (purple cartoon and sticks in Figure 1B,C). To our surprise, very few structures of K+-dependent GTPases of the TRAFAC class contained K+ ions in their AG sites (cf Supplementary file 1A and Table 3). Furthermore, in most cases, the K+ loops were either unresolved or distorted (Figure 6—figure supplement 1). Separate crystal structures with and without activating K+ ion were available only for the tRNA modification GTPase MnmE, see Table 3 and Figure 6—figure supplement 2. It is believed that during the catalytic turnover, two MnmE proteins undergo conformational changes to allow dimerization of their P-loop GTPase domains (G-domains) resulting in their mutual activation (Meyer et al., 2009; Böhme et al., 2010). We have compared the two structures of MnmE GTPase to further clarify their K+-binding determinants. In the crystallized full-length MnmE dimer, only the N-terminal domains of the two proteins interact, forming a central hinge, whereas the large helical domains and G-domains are located on the opposite sides from the central hinge (PDB: 3GEI, Figure 6—figure supplement 2). In such an arrangement, the distance between the active sites of the G-domains (with non-hydrolyzable GTP analogs bound) is about 20 Å (Scrima and Wittinghofer, 2006; Sehorn et al., 2004). The K-loops, responsible for cation binding, are not resolved, and no K+ binding is observed. In the crystal structures of the isolated G-domains of MnmE in complex with the transition state analog GDP-AlF4-, which are dimerized via their K-loop (Switch I) regions (as defined in Figure 1), the K-loops and M+ cations are resolved (PDB: 2GJ8, Figure 6—figure supplement 2). The disordered K-loop in the inactive state of MnmE and the stabilized K-loop in the active state of the protein indicate that the activity of the enzyme could be controlled via formation of a full-fledged K+-binding site upon dimerization.
 
@@ -106,9 +606,21 @@ In one of the structures of the K+-dependent GTPase Era, which was crystallized 
 
 Outside of the TRAFAC class, only a few cases of K+-dependent P-loop NTPases are known, all among RecA-like recombinases (Tables 2 and 3 and Supplementary file 1A). Along with rotary ATPases, these proteins are assigned to the RecA/F1-like class of the ASCE (Additional Strand, Catalytic E) division, as they bear an additional strand between the Walker A and Walker B motifs and have a conserved Glu residue in the catalytic site (Leipe et al., 2002). Consequently, RecA-like recombinases are dramatically different from the TRAFAC class proteins and lack such characteristic structural motifs as Switch I/K-loop and Switch II. Crystal structure of the K+-dependent recombinase RadA [PDB: 3EW9] (Li et al., 2009) shows two binding sites for K+ ions (Figure 6—figure supplement 4). One of these binding sites corresponds roughly to the AG site, although the cation is shifted towards γ-phosphate and away from α-phosphate. The second cation is bound between the γ-phosphate and the catalytic Glu residue, in the position that corresponds to the low-occupancy G-site observed in our MD simulations in water (Figure 2A).
 
-## Molecular dynamics simulations of MnmE GTPase
+### Molecular dynamics simulations of MnmE GTPase
 
 The GTPase MnmE is the only K+-dependent-NTPase for which both K+- bound (PDB: 2GJ8, resolution 1.7 Å, source: E. coli) and K+-free (PDB: 3GEI, resolution 3.4 Å, source: Chlorobium tepidum) X-ray structures are available (Figure 6—figure supplement 2). To clarify whether the binding of the K+ ion could affect the shape of the phosphate chain of Mg-GTP in the active site of MnmE, we performed MD simulations of this protein in its active and inactive states (Figure 7). To model the active state, we took the X-ray structure of the dimeric GTPase domain (G-domain) from E. coli with a K+ ion bound in each of the two active sites (PDB: 2GJ8)) and replaced the transition state analogs GDP-AlF4- in the two active sites by GTP molecules (hereafter the 2GJ8K system). The inactive, K+ free state was modeled by two systems. One inactive system was the monomer from the same 2GJ8 crystal structure where the GDP-AlF4- complex was replaced by a GTP molecule and the K+ ion was replaced by a water molecule (hereafter the 2GJ8W system). The monomeric form was chosen because no dimerization takes place in the absence of K+ ions (Meyer et al., 2009). Another modeled inactive system was the monomeric G-domain of MnmE from the full-length structure of the MnmE from Chlorobium tepidum (PDB 3GEI), where the non-hydrolysable GTP analog guanosine 5′-imidotriphosphate (GppNHp) was replaced by a GTP molecule and the non-resolved K-loop (see above) was reconstructed (hereafter the 3GEI system). These three systems were placed in water boxes with KCl and simulated for 100 ns each (Supplementary file 1C). During the simulation of the inactive 3GEI system, the displacement of the reconstructed K-loop led to the loss of the coordinating bond between the Mg2+ ion and Thr268 (which corresponds to Thr251 in the E. coli structure, PDB 2GJ8). The bidentate βγ coordination of Mg2+ got distorted and the phosphate chain fluctuated between the βγ- and αβγ-coordination states. In spite of these fluctuations, the α-phosphate-binding H-bond between the backbone nitrogen of Thr248 (which corresponds to Ser231 in the E. coli structure) and the O1A atom remained as stable throughout the MD simulation (Figure 7—figure supplement 1A) as the corresponding H-bond between the backbone nitrogen of Ser231 and the O1A atom in the 2GJ8K and 2GJ8W systems (Figure 7—figure supplement 1B,C). In spite of the absence of K+ ions in the 2GJ8W system, the K-loop stayed in place during the MD simulation and prevented the destabilization of the phosphate chain (Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig7-v2.jpg)
+
+**Figure 7.:** (A) Superposition of the GTP-binding sites of the inactive, monomeric G-domain of MnmE (the 2GJ8W system, blue) and the active K+-bound dimer of G-domains (the 2GJ8K system, red); representative structures were sampled from the last 10 ns of 100 ns simulations. The protein backbones are shown as cartoons; GTP and surrounding amino acid residues are shown as sticks; Mg2+ and K+ ions are shown as spheres. Black dashed lines indicate hydrogen bonds and coordination bonds for cations that are present in both structures; the red dashed line indicates the H-bond that is present only in the K+-containing 2GJ8K system. (B) Conformational space of GTP in different states of MnmE GTPase. Scatter plot of the Ψα-γ dihedral angle (Y-axis) against the length of the hydrogen bond between the O2G atom and the backbone nitrogen of Asn226 (X-axis) as sampled from the MD simulations of three systems: (1) red/orange, active dimer of G-domains with K+ ions bound (the 2GJ8K system, red and orange for individual monomers); (2) blue, monomeric G-domain of MnmE with the K+ ion replaced by a water molecule (the 2GJ8W system); and (3) black, inactive monomer G-domain of MnmE without a full-fledged K-loop (the 3GEI system). (C) Distribution histograms for dihedral angles between the phosphate groups in GTP, calculated from MD simulations of the dimeric G-domain of MnmE with bound K+ ions (the 2GJ8K system, red and magenta colors represent individual monomers in the dimer) and the monomeric G-domain with the K+ ion replaced by a water molecule (the 2GJ8W system, blue). Normalized histograms of dihedral angle distribution (solid lines) were calculated from MD trajectories and fitted with normal distribution function (dotted lines). Vertical lines indicate the centroid values of the fits by Gaussian function. Black vertical lines indicate Ψ = 0°, which corresponds to the fully eclipsed conformation, while Ψ =± 60° corresponds to the fully staggered conformation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Distances between phosphate chain oxygen atoms and surrounding amino acid residues were measured in the course of 100-ns MD simulations. (A) inactive monomer without a full-fledged K-loop (the 3GEI system), (B) inactive, monomeric G-domain of MnmE with the K+ ion replaced by a water molecule (the 2GJ8W system), (C) active dimer of G-domains with K+ ions bound (the 2GJ8K system, the blue and black traces correspond to individual monomers in the dimer.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Plotted are data for the active dimer of G-domains with K+ ions bound (the 2GJ8K system, red and magenta for individual monomers) and inactive, monomeric G-domain of MnmE with the K+ ion replaced by a water molecule (the 2GJ8W system, blue). (A) Distribution histograms of the O2A-O3G distances. The distribution histograms were fitted with Gaussians by using MATLAB software, the fitted curves and the corresponding average values are shown as dashed lines. (B) Correlation between the O2A-O3G distance (X axis) and the value of dihedral angle Ψα-γ (Y axis). Individual conformations observed in MD simulations are plotted as dots.
 
 Introduction of the K+ ion between O2A and O3G atoms led to the shortening of the distance between these atoms (Figure 7A, Figure 7—figure supplement 2). In the MD simulation of the inactive 2GJ8W system, the average distance between these two oxygen atoms was 5.3 Å, whereas in the active 2GJ8K dimer, the average distance between the oxygen atoms decreased to 4.7 Å (Figure 7—figure supplement 2). By pulling the O3G atom closer to O2A, the K+ ion twisted the γ-phosphate, so that its O2G atom formed a new H-bond with the backbone nitrogen of Asn226 (Figure 7A,B). It is noteworthy that the side chain of this residue is directly coordinating the K+ ion (Figure 7A). This H-bond between the O2G atom and Asn226 was not seen in the inactive 3GEI and 2GJ8W systems (Figure 7B, Figure 7—figure supplement 1A,B).
 
@@ -116,7 +628,7 @@ To specify the conformational changes of the phosphate chain in response to the 
 
 ## Discussion
 
-## Activation of P-loop NTPases by monovalent cations
+### Activation of P-loop NTPases by monovalent cations
 
 The hydrolysis of NTPs is a key reaction in biochemistry. The large amount of free energy that is released upon the hydrolysis of NTPs results from the repulsion between the negatively charged phosphate groups. At the same time, the cumulative negative charge of these groups repels the attacking nucleophilic groups (usually the OH- ions), securing the stability of the molecule in the absence of NTPases (Kamerlin et al., 2013; Westheimer, 1987). So far, computational studies of the mechanisms of NTP hydrolysis in water used such model systems as methyl triphosphate molecule with and without Mg2+, Mg-ATP complex, and Mg-GTP complex, see for example (Akola and Jones, 2003; Grigorenko et al., 2006; Harrison and Schulten, 2012; Liao et al., 2004; Simonson and Satpati, 2013). These modeled systems, however, contained no monovalent cations.
 
@@ -144,7 +656,7 @@ The disordered K-loop in the inactive states of MnmE and Era and the stabilized 
 
 In RecA-like recombinases (Figure 6—figure supplement 4), the K+ ion in the AG site is coordinated by a conserved Asp residue, which is responsible for the K+-dependent activation (Qian et al., 2006). This residue (Asp302 in PDB: 2F1H) is provided by the adjacent monomer within the RadA homooligomer that assembles upon interaction of RecA proteins with double-stranded DNA. Thus, in RecA-like recombinases, the K+-binding sites differ from those in K+ (or Na+)-dependent TRAFAC NTPases, but, similarly to TRAFAC NTPases, appear to attain functionality upon the interaction with the activating partner that provides ligands for the K+ ion.
 
-## Evolutionary implications and the riddle of dynamins
+### Evolutionary implications and the riddle of dynamins
 
 The major classes of P-loop NTPases appear to have emerged before the divergence of bacteria and archaea (Lupas et al., 2001; Leipe et al., 2002; Ponting and Russell, 2002; Söding and Lupas, 2003; Orengo and Thornton, 2005; Ranea et al., 2006; Alva et al., 2015; Wuichet and Søgaard-Andersen, 2015; Gogarten et al., 1989; Iwabe et al., 1989; Leipe et al., 2003). An evolutionary scenario for the origin of P-loop NTPases has been recently proposed by Lupas and colleagues, who hypothesized that the ancestor of P-loop NTPases was an NTP-binding protein incapable of fast NTP hydrolysis, but, perhaps, involved in the transport of nucleotides (Alva et al., 2015). Indeed, as already discussed (Leipe et al., 2002), the main common feature of the P-loop NTPases is the eponymous motif, which was identified as an antecedent domain segment by Lupas and colleagues (Lupas et al., 2001). Milner-White and coworkers argued that the very first catalytic motifs could have been short glycine-rich sequences capable of stabilizing anions (nests) (Bianchi et al., 2012; Watson and Milner-White, 2002) or cations (niches) (Torrance et al., 2009); such motifs can still be identified in many proteins. Specifically, the P-loop was identified as a nest for the phosphate group(s) (Bianchi et al., 2012; Alva et al., 2015). We showed here that the P-loop motif specifically imposes the same extended, catalytically-prone conformation on bound NTP molecules in different families of P-loop NTPases (Figures 5–7, Figure 5—figure supplement 1).
 
@@ -158,13 +670,13 @@ The smaller Na+-ion, while tightly binding to individual phosphate groups, can n
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/37373/elife-37373-fig8-v2.jpg)
 
-**Figure 8.:** + binding on the shape of phosphate chain in solution and in Na+-adapted P-loop NTPases.The color scheme is as in Figure 1, except that Al and F atoms in the GDP-AlF4- complexes are colored grey and cyan, respectively. (A) Superposition of the K+-bound (solid structure) and Na+-bound (transparent structure) conformations of the triphosphate chain as obtained from MD simulations of an ATP molecule in water. Data from MD simulations 4–8 in Supplementary file 1C. (B) Superposition of the P-loop NTPase structures with a bound K+ ion (MnmE GTPase, PDB: 2GJ8 (Scrima and Wittinghofer, 2006), purple) and Na+ ion (dynamin, PDB: 2X2E (Chappie et al., 2010), blue). Proteins are shown as a cartoon. Dashed lines indicate hydrogen bonds and coordination bonds. Bonds that occur in all P-loop NTPases are shown in green, those that occur in K+-binding proteins are in purple, those bonds that occur in Na+-binding dynamin-like proteins are in blue. The thick dashed purple line indicates the bond between the K+ ion and the oxygen atom of α-phosphate, which is absent in dynamins. The thick dashed blue line indicates the dynamin-specific H-bond between O2A atom and the backbone amide group of the shortened K-loop.
+**Figure 8.:** The color scheme is as in Figure 1, except that Al and F atoms in the GDP-AlF4- complexes are colored grey and cyan, respectively. (A) Superposition of the K+-bound (solid structure) and Na+-bound (transparent structure) conformations of the triphosphate chain as obtained from MD simulations of an ATP molecule in water. Data from MD simulations 4–8 in Supplementary file 1C. (B) Superposition of the P-loop NTPase structures with a bound K+ ion (MnmE GTPase, PDB: 2GJ8 (Scrima and Wittinghofer, 2006), purple) and Na+ ion (dynamin, PDB: 2X2E (Chappie et al., 2010), blue). Proteins are shown as a cartoon. Dashed lines indicate hydrogen bonds and coordination bonds. Bonds that occur in all P-loop NTPases are shown in green, those that occur in K+-binding proteins are in purple, those bonds that occur in Na+-binding dynamin-like proteins are in blue. The thick dashed purple line indicates the bond between the K+ ion and the oxygen atom of α-phosphate, which is absent in dynamins. The thick dashed blue line indicates the dynamin-specific H-bond between O2A atom and the backbone amide group of the shortened K-loop.
 
 The adaptation to Na+ ions required at least three mutational changes in the highly conserved parts of the protein, see (Ash et al., 2012) and Figure 8. The low probability of this combination of changes may explain why just this one case of Na+-adaptation is known. In contrast, Arg/Lys residues are widespread as activators of P-loop NTPases, see Table 2 and (Shalaeva et al., 2018). In a few cases (e.g. in TRAFAC class NTPases) it was possible to trace how Arg residues replaced K+ ions in the course of evolution in different lineages (Mulkidjanian et al., 2012; Dibrova et al., 2015). The recruitment of an Arg/Lys residue as an activating moiety is relatively simple and makes the catalysis independent of the oscillations of K+ and Na+ levels in the cell.
 
 Although Na+ ions cannot activate most P-loop NTPases, their binding in the active sites may be physiologically relevant. Recently Gorfe and colleagues, while performing microsecond-scale MD simulations of oncogenic Ras GTPases, noted tight binding of Na+ ions to the phosphates of GTP molecules bound to the P-loop (Alva and Lupas, 2018). Ras GTPases are activated not by K+ ions, but by arginine fingers of their specific GTPase activating proteins (GAPs) (Wittinghofer and Vetter, 2011; Bos et al., 2007). Gorfe and colleagues suggested that such a Na+ binding might prevent hydrogen bonding of Tyr32 of Ras with the γ-phosphate of GTP, which appears to prevail in the absence of the respective GAP (Sayyed-Ahmad et al., 2017). It is tempting to speculate that bound, but not activating Na+ ion(s) may also hinder the access of the activating Arg or Lys fingers. In active cells, the cytoplasm contains much more K+ ions than Na+ ions (Macallum, 1926; Williams and Frausto da Silva, 1991). Binding of K+ ions in the AG sites of K+-independent NTPases must be weak and is unlikely to hinder the interaction with their activators. However, in energy- or nutrient-limited prokaryotic cells, for example in the stationary phase of growth, a reversal of the [K+]/[Na+] ratio is observed (Fagerbakke et al., 1999) because cells cannot maintain the [K+]/[Na+] disequilibrium on their membranes without an energy source. One would expect that energy-limited or energy-depleted cells would exhaust all their NTP stock and die. Instead, prokaryotic cells often go into a dormant state; this state is characterized by retention of an essential part of the NTP stock that is eventually used for awakening of dormant cells under more favorable conditions, see (Mulkidjanian et al., 2012; Dibrova et al., 2015) and references therein. Elsewhere we argued, that high Na+ levels in dormant cells could suppress their metabolic activity by blocking the K+-dependent NTPases (Mulkidjanian et al., 2012; Dibrova et al., 2015). However, most NTPases in the cell are activated not by K+ions, but by Arg or Lys residues. The remarkable observations of Gorfe and colleagues suggest that these NTPases could also be hampered by Na+ ions, which would then explain how dormant cells succeed to retain their NTP stock.
 
-## Relation to NTPases with other folds
+### Relation to NTPases with other folds
 
 Our MD simulations of the behavior of an unconstrained Mg-ATP complex in water showed correlations between binding of cations to the ATP molecules and their conformation. The data obtained provide information not only on the interaction of M+ ions with Mg-ATP complexes in the bidentate βγ coordination of the Mg2+ ion, which is typical for the P-loop NTPases, but also on their interaction with tridentate αβγ-coordinated Mg-ATP complexes (Figures 4 and 5A, Figure 4—figure supplement 1, Table 1).
 
@@ -172,7 +684,7 @@ The tridentate αβγ-coordination is found, for instance, in the K+-dependent c
 
 For GroEL, K+ ions were shown to increase the affinity to the nucleotide (Grason et al., 2008). It appears that the phosphate chain, unlike those tightly bound to the P-loops, retains certain flexibility in GroEL-type ATPases, so that its shape depends on the size of the monovalent cation, as it was observed in our MD simulations. Here, binding of the Na+ ion would lead to a contracted, supposedly, less catalytically prone conformation. Thus, Na+ ions added over K+ ions, owing to their ability to bind more tightly, would inhibit ATP hydrolysis, in agreement with experimental observations (Kusmierczyk and Martin, 2003). The example of GroEL-type ATPases shows that the balance between compensating the negative charge of the triphosphate chain and maintaining its catalytically-prone conformation might be important not only for P-loop NTPases, but also for other NTPase superfamilies. Accordingly, our MD simulation data may help clarify the mechanisms in other NTPases.
 
-## Conclusions
+### Conclusions
 
 To address the mechanism of NTP hydrolysis in K+-dependent NTPases, we performed MD simulations of Mg-ATP and Mg-GTP complexes in water and in the presence of K+, Na+, or NH4+ ions. These MD simulations revealed specific binding sites that were the same for all studied cations. Comparisons of the MD simulation data with crystal structures of P-loop NTPases showed that the tight cation-binding site between the β- and γ-phosphates, identified in the MD simulations, coincided with the position of the invariant lysine residue of the P-loop (Walker A) motif, whereas the loose binding site between the α- and γ-phosphates corresponded to the position occupied by the activating moiety - either the lysine/arginine finger or the activating M+ ion. In all analyzed structures, the P-loop motif keeps the triphosphate chains of enzyme-bound NTPs in a strictly conserved, extended, catalytically prone conformation, similar to that imposed on NTPs in water by large K+ or NH4+ ions bound between the α- and γ-phosphates. MD simulations of K+-dependent GTPase MnmE showed that linking of the α- and γ-phosphates by the activating K+ ion led to the rotation of the γ-phosphate yielding an almost eclipsed, catalytically productive conformation of the triphosphate chain. The twisting of the γ-phosphate was accompanied by the formation of a new hydrogen bond between the backbone nitrogen atom of the K+-binding Asn226 residue of the P-loop motif and the O2G atom. Because of their smaller size and shorter coordination bonds, Na+ ions cannot bind between the α- and γ-phosphates when the phosphate chain is stretched by the P-loop, which could explain their inability to activate most P-loop NTPases.
 
@@ -182,7 +694,7 @@ In cation-dependent P-loop NTPases, the very formation of the M+-binding site ne
 
 ## Materials and methods
 
-## Molecular Dynamics simulations
+### Molecular Dynamics simulations
 
 To investigate the effects of cation binding on the structure of the Mg-ATP and Mg-GTP complexes, we have conducted free MD simulations of Mg-NTP complexes in water solution alone and in the presence of K+, Na+, or NH4+ ions. Together with monovalent cations, Cl- ions were added to balance the total charge of the system. For the simulation of Mg-NTP complexes in water solution without additional ions, two positive charges had to be added to balance the total charge of the system. We added two dummy atoms with single positive charges and applied positional restraints to fix the positions of these atoms in the corners of the unit cell. In all systems, the ATP or GTP positions were restrained to the center of the cell by applying harmonical positional restraints to the N1 atom of the nucleobase.
 
@@ -200,13 +712,13 @@ In our calculations, we used Gromacs v.4.5.5 (Pronk et al., 2013) software with
 
 Analyses of MD data were performed with MATLAB software (The Mathworks, Inc.). The VMD software (Humphrey et al., 1996) was used for visualization of the MD simulations results.
 
-## Statistical analysis
+### Statistical analysis
 
 To analyze conformations of Mg-ATP complexes in the presence of different cations, we selected MD simulation fragments of similar lengths with the same type of interactions between the Mg2+ ion and the triphosphate chain. In each case ~160 ns of MD simulation were taken to characterize a particular Mg-ATP conformation; if needed, results of several independent simulations were merged to collect enough data, see Figure 4—figure supplement 2A,B and Figure 4—figure supplement 3A,B for examples. For the MD simulation data, we calculated autocorrelation functions (Figure 4—figure supplement 2C and Figure 4—figure supplement 3C). Given the correlation times obtained, independent frames were extracted to calculate characteristic values for the separate conformations of ATP. For the systems without additional monovalent cations, every N-th frame was taken for the calculation, with N defined by the correlation time. For the systems with monovalent cations, only frames in which at least one monovalent cation was bound to the phosphate chain were taken, with at least N frames between measurements. A monovalent cation was considered to be bound when it was within a binding distance from at least one oxygen atom of the phosphate chain, with binding distances defined as follows: 2.4 Å for Na+ and 3.2 Å for K+ and NH4+.
 
 To compare the conformations of Mg-ATP, as obtained in MD simulations with different monovalent cations, we used the two-sample t-test. We used the assumption that the two compared data samples were from populations with equal variances; the test statistics under the null hypothesis had Student's t distribution with n + m–2 degrees of freedom, where n and m were sample sizes, and the sample standard deviations were replaced by the pooled standard deviation. In each case, the null hypothesis was that the data in the two samples come from independent random samples with normal distributions with equal mean values and equal but unknown variances. The alternative hypothesis was that the data in the two samples come from populations with unequal mean values. The test rejects the null hypothesis at the 5% significance level. In Supplementary file 1G-1L we compare the test results and particular P-values obtained for all pairwise comparisons conducted in this study. Statistical analysis of MD trajectories was performed with MATLAB software (The Mathworks, Inc.).
 
-## Protein structure analysis
+### Protein structure analysis
 
 For statistical analysis of the PDB structures, we used the InterPro database (Finn et al., 2017). A list of PDB IDs of P-loop proteins was extracted for the InterPro entry IPR027417 and filtered with the RCSB PDB search engine (Rose et al., 2017) to include only those structures that contained Mg2+ ion and one of the following molecules (in RCSB PDB chemical IDs): ATP, GTP, ANP, GNP, ACP, GCP, ASP, GSP, ADP, and GDP. We used MATLAB software (The Mathworks, Inc.) to measure the distances from the NTPs (or their analogs) to the surrounding Lys/Arg residues and selected only those structures with the nucleotide bound to at least one Lys (indicating that the nucleotide is indeed bound to the P-loop and the P-loop Lys residue is not mutated). MATLAB software (The Mathworks, Inc.) was also used to measure the shape of the phosphate chain in each NTP-like substrate or the transition state-mimicking molecule.
 

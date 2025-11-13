@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Conditional expression of genes and observation of phenotype remain central to biological discovery. Current methods enable either on/off or imprecisely controlled graded gene expression. We developed a 'well-tempered' controller, WTC 846 , for precisely adjustable, graded, growth condition independent expression of genes in Saccharomyces cerevisiae . Controlled genes are expressed from a strong semisynthetic promoter repressed by the prokaryotic TetR, which also represses its own synthesis; with basal expression abolished by a second, 'zeroing' repressor. The autorepression loop lowers cell-to-cell variation while enabling precise adjustment of protein expression by a chemical inducer. WTC 846 allelic strains in which the controller replaced the native promoters recapitulated known null phenotypes ( CDC42, TPI1 ), exhibited novel overexpression phenotypes ( IPL1 ), showed protein dosage-dependent growth rates and morphological phenotypes ( CDC28, TOR2, PMA1 and the hitherto uncharacterized PBR1 ), and enabled cell cycle synchronization ( CDC20 ). WTC 846 defines an 'expression clamp' allowing protein dosage to be adjusted by the experimenter across the range of cellular protein abundances, with limited variation around the setpoint.
+Conditional expression of genes and observation of phenotype remain central to biological discovery. Current methods enable either on/off or imprecisely controlled graded gene expression. We developed a 'well-tempered' controller, WTC846, for precisely adjustable, graded, growth condition independent expression of genes in Saccharomyces cerevisiae. Controlled genes are expressed from a strong semisynthetic promoter repressed by the prokaryotic TetR, which also represses its own synthesis; with basal expression abolished by a second, 'zeroing' repressor. The autorepression loop lowers cell-to-cell variation while enabling precise adjustment of protein expression by a chemical inducer. WTC846 allelic strains in which the controller replaced the native promoters recapitulated known null phenotypes (CDC42, TPI1), exhibited novel overexpression phenotypes (IPL1), showed protein dosage-dependent growth rates and morphological phenotypes (CDC28, TOR2, PMA1 and the hitherto uncharacterized PBR1), and enabled cell cycle synchronization (CDC20). WTC846 defines an 'expression clamp' allowing protein dosage to be adjusted by the experimenter across the range of cellular protein abundances, with limited variation around the setpoint.
 
 ## Introduction
 
@@ -31,17 +31,45 @@ Here, we describe the development of a prokaryotic repressor-based transcription
 
 ## Results
 
-## Construction of a repressible PTDH3 promoter
+### Construction of a repressible PTDH3 promoter
 
 Our goal was to engineer efficient repression of eukaryotic transcription by a bacterial repressor. We started with a strong (Ho et al., 2018), well-characterized, constitutive, and endogenous yeast promoter. This promoter, PTDH3, has three key Transcription Factor (TF) binding sites, one for Rap1 and two for Gcr1 (Yagi et al., 1994; Kuroda et al., 1994) in its Upstream Activating Region (UAS), and a TATA sequence at which PIC assembles on the core promoter (Figure 1A). Based on earlier work, we knew that binding of prokaryotic repressors to sites flanking the TATA sequence of PTDH3 repressed activity of this promoter (Wedler and Wambutt, 1995), presumably by interfering with PIC formation, transcription initiation, or early elongation. We therefore placed well characterized, 15 bp long TetR-binding sites (tetO1) (Bertram and Hillen, 2008) immediately upstream and downstream of the PTDH3 TATA sequence to create P2tet. To determine whether repressor binding could also block function in the UAS, we placed a single tetO1 directly upstream of each Rap1 and Gcr1-binding site to create P3tet. We also combined the operators in these constructs to generate P5tet (Figure 1B). We integrated a single copy (Gnügge et al., 2016) of constructs bearing these promoters directing the synthesis of the fluorescent protein Citrine into the LEU2 locus (Griesbeck et al., 2001).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structure of the starting promoter, PTDH3. Diagram shows the nucleotide positions of the binding sites for the endogenous transcription factors Rap1 and Gcr1, the TATA-sequence, and the transcription start site relative to the start codon of the TDH3 gene. (B) Repression and maximum activity of engineered PTDH3 derivatives. Diagrams above the plots display the genetic elements of strains used in B and C. Left diagram depicts strains used to test repressed activity, right diagram maximum activity. Px denotes any TetR repressible promoter. The * in TetR indicates a SV40 Nuclear Localization Sequence. In all strains, the PTDH3 derivative promoters diagrammed on the left directed the synthesis of Citrine integrated into the LEU2 locus. Grey boxes inside the diagrams denote tetO1 TetR-binding sites. For measurement of repressed activity, an additional PACT1-directed TetR was integrated into the HIS3 locus. Citrine fluorescent signal was detected by flow cytometry. Fold difference refers to the median of the maximum activity divided by the median of the repressed activity signal. Fold over autofluorescence refers to median repressed activity signal divided by the median autofluorescent background signal. Maximum promoter activity is quantified as percentage of PTDH3 signal using the medians. x axis shows intensity of fluorescence signal. Plots are density distributions of the whole population, such that the area under the curve equals 1 and the y axis indicates the proportion of cells at each fluorescence value. The circles inside each density plot show the median, and the upper and lower bounds of the bar correspond to the first and third quartiles of the distribution. Repressed activity of P3tet is above the x axis depicted in this figure, but can be seen in Figure 1—figure supplement 1. (C) Repression and maximum activity of the optimized P7tet.1. Diagrams and plots as in (B). P7tet.1 contained additional binding sites for Rap1 and Gcr1 selected for higher activity, as well as an alternative TATA sequence as described in the Supplementary Information. It shows the highest fold difference, maximum activity comparable to PTDH3, and low repressed activity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We constructed P3tet, a PTDH3 derivative that carried three tetO1 TetR binding sites, adjacent to the endogenous transcription binding sites (one for Rap1, two for Gcr1) in the UAS. We used this to construct Y2564, a strain that carried the P3tet-Citrine construct integrated into the LEU2 locus (unrepressed), and the otherwise isogenic strain Y2573, in which a PACT1-TetR construct was additionally integrated at the HIS3 locus (repressed). We measured Citrine fluorescence using flow cytometry. Plot shows density of cells at each fluorescence value, such that the area under the curve is 1. By comparison of medians, as described, repression by TetR was only 1.5-fold. As described in the main text, the inference from this result is either that TetR cannot efficiently prevent endogenous transcription factors Rap1 and Gcr1 from occupying their binding sites in the UAS, or that interfering with binding to UAS sites without blocking PIC assembly near the TATA-sequence is not sufficient to significantly repress transcription from this promoter.
 
 We compared the Citrine fluorescence signal (measured by flow cytometry at wavelengths 515–545 nm) from these promoters to quantify their activity. We compared the strains Y2551[P2tet], Y2564[P3tet], and Y2566[P5tet] with an otherwise-isogenic strain in which Citrine was expressed from native PTDH3 (Y2683). This fluorescence signal measures Citrine expression, but also includes autofluorescent background from the yeast cells. We quantified this background by using the otherwise-isogenic parent strain Y70. Measured in this way, P2tet had 76%, P3tet 69%, and P5tet 51% of PTDH3 activity (Figure 1B). To assess repressibility of these promoters, we compared Citrine expression in these strains with expression in otherwise-isogenic strains in which a genomically integrated PACT1 promoter drove constitutive expression of TetR (Y2562, Y2573, Y2577). By this measure, TetR repressed P2tet by a factor of 12, P3tet by a factor of 1.5, and P5tet by a factor of 12 (Figure 1B and Figure 1—figure supplement 1). Absolute repressed signal from these promoters was 4.3, 33, and 3 times the autofluorescence background. Because our aim was to create a promoter with no expression when repressed, we viewed even small reductions in repressed expression as useful and therefore decided to use P5tet as a basis for further constructions.
 
 Insertion of tetO1 sites in PTDH3 to create P5tet had reduced promoter maximum activity considerably. In order to regain the lost activity, we tested numerous constructs to find optimal placement for the tetO1 sites, optimized Rap1, Gcr1, and TATA sequences, and increased the number of Rap1 and Gcr1 sequences (see Appendix 1 and Appendix 1- Figure 1). This work resulted in P7tet.1, which carried two Rap1 and three Gcr1 sites, sequence optimized to generate higher promoter activity, and an alternative TATA sequence to that of PTDH3. By the assays described above, the new promoter P7tet.1 (Y2661) showed comparable maximum expression to PTDH3, 20-fold repression of Citrine signal, and absolute repressed activity (Y2663) of 4.3-fold over background (Figure 1C). We chose P7tet.1 as the promoter to develop our controller with.
 
-## Complex autorepressing (cAR) controller architecture expands the input dynamic range and reduces cell-to-cell variation
+### Complex autorepressing (cAR) controller architecture expands the input dynamic range and reduces cell-to-cell variation
 
 We set out to optimize control of genes by P7tet.1. To do so, we tested the ability of different constructions that directed the synthesis of TetR to regulate P7tet.1-citrine directed fluorescence signal. Figure 2A shows the three different architectures. In Simple Repression (SR), the P7tet.1 controlled gene was repressed by TetR expressed from a constitutive promoter. In Autorepression (AR), the P7tet.1 controlled gene was repressed by TetR expressed from a second instance of P7tet.1, therefore creating a negative feedback loop. In Complex Autorepression (cAR), a second TetR gene expressed from a constitutive promoter was added to the AR architecture.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genetic elements of the different controller architectures used in these experiments. The * next to TetR indicates SV40 Nuclear Localization Sequence and flat headed arrows indicate repression. In all cases, P7tet.1 drives Citrine expression integrated at the LEU2 locus. In SR, the repressor of P7tet.1, tetR, is integrated at the HIS3 locus and is constitutively expressed. In AR, tetR is again integrated at the HIS3 locus, but is now expressed by P7tet.1. cAR has the same constructs as AR and an additional, constitutively expressed zeroing repressor integrated at the URA3 locus. (B) aTc dose response curves of Citrine expression for the three different architectures. Citrine fluorescence from strains bearing these architectures was measured at steady state using flow cytometry after 7 hr of induction with different concentrations of aTc. Symbols indicate the median fluorescence at each dose. Lines are fitted using a five-parameter log logistic function as explained in Materials and methods. Dashed line indicates autofluorescence signal measured from the parental strain without Citrine. (C) Slopes of the dose response curves in (B). The x axis range with non-zero slopes defines the useful input dynamic range. (D) Cell-to-cell variation of expression by these three architectures. We calculated single-reporter cell-to-cell variation (VIV) as described. Higher Residual Standard Deviation (RSD) values (y axis) correspond to greater VIV. Dot-dash line indicates the VIV of the strain where Citrine is constitutively expressed from PTDH3 and dashed line indicates VIV of autofluorescence in the parent strain without Citrine. Error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as described in Materials and methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** We calculated the CoV in fluorescence signal using the data shown in main Figure 2B, to test whether the volume-corrected RSD measure described in Appendix 2 and Figure 2—figure supplement 2 agrees with it. The plot shows observed CoV at each aTc concentration tested for the strains carrying different architectures. SR(Y2663), grey, AR(Y2674), purple, and cAR(Y2741), black. Bootstrapping (n=1000) as described in Materials and methods was used to estimate 95% confidence intervals as indicated by the error bars. Dashed line indicates the CoV of the parent cell (autofluorescence control, Y70) and dot-dash line the strain where Citrine was constitutively expressed from PTDH3 (Y2683). The CoV provides a direct measure of the total CCV in expression, and includes variation due to larger cells having had a longer time to produce more fluorescent protein. For each architecture, both this simple CoV and the VIV measure in Main Figure 2B show maximum variation at the same aTc concentrations.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Scatter plot of flow cytometry cell volume proxy vs. Citrine fluorescence in a strain where Citrine is constitutively expressed from PTDH3 at the LEU2 locus (Y2683) shows a positive correlation between the two quantities. Fluorescence and the volume proxy are positively correlated because, in cycling populations larger cells have had more time to express more fluorescent protein. Each point represents a single cell. Volume proxy was calculated as the vector of the SSC-H and FSC-W signals (Materials and methods). The red line indicates the robust linear fit, the ideal linear correlation between volume and fluorescence in this population if there was no cell-to-cell variation. Pink lines represent +1 and −1 one residual standard deviation from this fitted correlation line. The RSD value can be interpreted as the fraction of variation in expression in the population that is not explained by the cell volume proxy/inferred progress through the cell cycle. We therefore named this measure Volume-Independent Variation (VIV).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Plot of flow cytometry cell volume proxy vs Citrine fluorescence in whole (ungated) populations of cells of SR, AR, and cAR architectures (Y2663,2674,2741) grown for 7 hr at different aTc concentrations. Each point indicates an individual cell. The two lines of the same color are drawn at +1 and 1- RSD for the fitted robust line of each population, same as in Figure 2—figure supplement 2. By this measure, at intermediate induction concentrations, the SR architecture shows around twofold increased cell-to-cell variability compared to AR and cAR architectures, both of which contain an autorepression loop.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** We measured Citrine expression and its VIV in otherwise isogenic haploid cells that carried integrated constructs at various auxotrophic marker loci, in which the indicated native yeast promoters drove Citrine expression. All strains used here are indicated in Supplementary file 1 - Table S1 as ‘promoter name-const’. Autofluorescence was strain Y70. We grew cells to exponential phase in Rich medium (YPD) and synthetic medium (SD Full [minimal glucose media with complete amino acid complement]) and measured fluorescent signal with flow cytometry. RSD values were calculated as explained in Appendix 2. Error bars indicate 95% confidence intervals on the RSD measurement as calculated by bootstrapping (See Materials and methods). For most promoters, the the VIV is lower in YPD. For all strong promoters except CYC1 promoter (PCYC1), VIV is around 20%. For promoters with lower endogenous activity (as inferred from expression levels of the endogenous proteins they control Ho et al., 2018) VIV was roughly 30%, similar to the variation measured from the autofluorescence signal of the strain without Citrine. For PCYC1, measured VIV was about 50%.
 
 We compared the input-output relationship (i.e. dose response) for the three architectures. To do so, we constructed otherwise-isogenic strains with these architectures in which P7tet.1 directed Citrine expression (Y2663, Y2674, and Y2741). We used flow cytometry to quantify Citrine fluorescence signal from all strains 7 hr after addition of different concentrations of aTc and fitted a log logistic model to the median fluorescence (see Materials and methods) (Figure 2B&C).
 
@@ -51,17 +79,73 @@ In these experiments, we also measured cell-to-cell variation (CCV) in the expre
 
 Compared with cells bearing the SR architecture, otherwise-isogenic cells bearing the AR architecture showed increased basal expression (6.3 vs. 4.1-fold over autofluorescence background). The increased basal expression was a consequence of the fact that in the AR architecture P7tet.1 directs the synthesis of both the controlled Citrine gene and of TetR itself, so that, in uninduced cells, the steady state abundance of TetR was lower than in cells in which synthesis of TetR was driven by PACT1. More important, in the AR architecture, the fact that some amount of TetR expressed from P7tet.1 was needed to repress its own synthesis meant that it would not be possible to abolish P7tet.1-driven expression of the controlled gene completely. Since ability to abolish basal expression of the controlled gene was an important design goal, we constructed strains with a third architecture, cAR, in which a different constitutive promoter drove expression of a second TetR gene in order to drive basal expression lower. Compared to otherwise-isogenic AR strains, strains expressing Citrine controlled by the cAR architecture showed reduced basal expression (4.1-fold over autofluorescence), and, compared to the otherwise isogenic SR strain, showed reduced CCV and a more gradual dose response (Figure 2C&D and Figure 2—figure supplement 3). We therefore picked this cAR architecture for our controller.
 
-## Hybrid repressor abolishes basal expression of P7tet.1
+### Hybrid repressor abolishes basal expression of P7tet.1
 
 To further decrease basal expression in the cAR architecture, we set out to create a more effective TetR derivative. Initially, we followed an approach that increased the size and nuclear concentration of TetR by fusing it to other inert bacterial proteins and nuclear localization sequences, but this approach was not enough to abolish all basal expression (see Appendix 3).
 
 P3tet bears tetO1 sites only in its UAS. The fact that P3tet SR strains only showed weak repression (1.5-fold) suggested that TetR, and other inert derivatives described in the Appendix 3, exerted their effects on P7tet.1 mostly by their action at the tetO1 sites flanking the TATA sequence. We thus hypothesized that TetR derivatives that carried native, active yeast repressors might more effectively repress from sites in the UAS. The yeast repressor Tup1 complexes with Ssn6 (also called Cyc8) with a ratio of 4:1, forming a complex of 420 kDa (Varanasi et al., 1996), and this complex represses transcription through a number of mechanisms. These include repositioning and stabilizing nucleosomes to form an inacessible chromatin structure (Chen et al., 2013; Zhang and Reese, 2004; Ducker, 2000). Tup1 also blocks chromatin remodeling, masks activation domains, and excludes TBP (Wong and Struhl, 2011; Zhang and Reese, 2004; Mennella et al., 2003). LexA-Tup1 fusion proteins repress transcription when bound upstream of the Cyc1 promoter (Tzamarias and Struhl, 1994), and TetR-Tup1 fusions reduce uninduced expression in a dual TetR activator-repressor controller (Bellí et al., 1998). For P7tet.1, we imagined that as many as seven TetR-Tup1 dimers might bind to the promoter, potentially recruiting two additional Tup1 and one Ssn6 molecules per tetO1 site. The resulting ∼3mDa of protein complexes might block activation by one or more of the above mechanisms. We therefore measured the ability of a TetR-nls-Tup1 fusion to repress P7tet.1-driven Citrine signal in SR strains. When its expression was directed from PACT1 (Y2669), TetR-nls-Tup1 decreased uninduced fluorescence signal to background levels (Figure 3A). Because fusion of TetR to a mammalian repressor domain in mammalian cells had shown very slow induction kinetics (Deuschle et al., 1995), we checked whether the TetR-nls-Tup1 fusion showed increased induction time compared to TetR alone but found no such effect (Figure 3—figure supplement 1). Additionally, TetR-nsl-Tup1 abolished uninduced expression driven by P3tet (Figure 3—figure supplement 2) (77-fold repression), compared to repression in otherwise isogenic strains by TetR, which showed basal expression reduced by only 1.5-fold (Figure 1—figure supplement 1). By contrast, TetR-nls-Tup1 fusion repressed P2tet, where tetO1 flank only the TATA sequence, more strongly than TetR alone, but still showed basal expression. Our data thus suggested that the TetR-nls-Tup1 suppressed basal expression mainly by its effects in the UAS (see Discussion).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig3-v2.jpg)
+
+**Figure 3.:** A) Testing repression by the TetR-Tup1 fusion. The top diagram indicates the genetic elements of the SR architecture used to test the ability of the TetR-Tup1 fusion to abolish basal expression from P7tet.1. Diagrams to the left of the plot show the different repressors used. Each * indicates one SV40 Nuclear Localization Sequence. For both (A) and (B), Citrine fluorescence from P7tet.1 repressed by the repressors indicated was measured using flow cytometry. Plots as in Figure 1. The circles inside each density plot show the median and the upper and lower bounds of the bar correspond to the first and third quartiles of the distribution. Numbers to the left of the plot indicate fold expression over autofluorescence, that is, the median of the Citrine fluorescence detected divided by the median of the autofluorescence signal. (B) Finding the lowest expression level of the zeroing repressor TetR-nls-Tup1 that abolishes basal expression from P7tet.1 . The top diagram shows the genetic elements of the cAR architecture in the strains tested. Pc indicates a constitutive promoter. Promoters driving TetR-nls-Tup1 expression are indicated to the left of the plot. Numbers to the left of the plot as in (A). (C) Reducing expression of TetR-nls-Tup1 lowers induction threshold. The top diagram shows genetic elements of SR architecture in which synthesis of TetR-nls-Tup1 was directed by different promoters. The plot shows Citrine fluorescence measured using flow cytometry at steady state, 7 hr after induction with different aTc concentrations. Arrows indicate induction thresholds, defined as the lowest aTc dose where an increase in fluorescence signal was detected. Dashed line indicates autofluorescence control (parent strain without Citrine), circles indicate the median of the experimentally measured population, lines are fitted. Error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as explained in Materials and methods.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Citrine signal after induction in P7tet.1-Citrine strains. Both strains carried a P7tet.1-Citrine integrated at the LEU2 locus, in conjunction with two different repressors. One strain (red, Y2674) carried an autorepressing P7tet.1-TetR construct integrated at the MET15 locus. The second strain (blue, Y2717) was otherwise isogenic, but had no TetR. Instead it carried a constitutively expressed PRNR2-TetR-nls-Tup1 construct integrated at HIS3 locus. We induced both strains with 600 ng/mL aTc at time zero during exponential growth phase. We quantified Citrine fluorescent signal in flow cytometry, and normalized to maximum level reached at 360 min. The dots indicate the median normalized fluorescence, error bars span the range between the first and the third quartiles. The results show that TetR-nls-Tup1 does not reduce induction speed, nor the time needed to reach steady state.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Strains carried a PACT1 construct that directed the expression of TetR-nls-Tup1 integrated at HIS3 locus. Y2702 (blue line) also carried P3tet-Citrine construct, which bears three TetR binding sites adjacent to each Gcr1 and Rap1-binding site in the UAS, integrated at LEU2. Y2662 (green line) carried P2tet-Citrine construct, in which TetR binding sites flank the TATA-sequence, integrated at LEU2. Y70 (red line) is a control strain with no integrated constructs. Repressed expression was measured using flow cytometry at maximum voltage, that is maximum sensitivity. Plot shows density of cells at each fluorescence value, such that the area under each curve is 1. TetR-nls-Tup1 completely repressed fluorescent signal driven by the P3tet, in which the TetR sites are in the UAS, but not from P2tet construct, in which the TetR binding sites flank the TATA-sequence. For comparison, repressed expression in the P2tet strain (Y2662) was 1.38-fold higher than in the P3tet strain (Y2702), even though the expression in the unrepresssed P2tet strain was only 1.14-fold more than P3tet. This fact shows that, even given the difference in promoter strength, P3tet is repressed more effectively than P2tet.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Fluorescence signal from a strain where a P7tet.1-Citrine construct was integrated at the LEU2 locus and repressed by PREV1-driven TetR-nls-Tup1 integrated at HIS3 and P7tet.1 driven TetR integrated at the MET15 locus (brown, Y2715) was measured using flow cytometry, and autofluorescence signal (black, Y70) was measured from an otherwise isogenic strain that lacked Citrine, TetR, and TetR-nls-Tup1 expression. Plot shows density of cells at each fluorescence value, such that the area under the curve is 1. The dot inside the plot indicates the median, the bar spans the range from the first to the third quartile. TetR-nls-Tup1 can only repress P7tet.1 activity to 10-fold above autofluorescence when expressed from PREV1 in the WTC846 architecture. This result indicated that the TetR-nls-Tup1 needed to be expressed at a higher level to fully repress P7tet.1. Taken together with the results presented in Figure 3B, this result suggests that the lowest abundance of TetR-nls-Tup1 able to fully repress P7tet.1 lies between that expressed from constructs driven by PREV1 and constructs driven by PRNR2.
+
 In the cAR architecture, the induction threshold, that is, the smallest concentration of inducer that can induce expression, is determined by the number of molecules of the repressors present before induction. We sought to lower the induction threshold in order to maximize the input dynamic range. Therefore, we constructed cAR controllers using TetR and TetR-nls-Tup1, to determine the lowest level of TetR-nls-Tup1 that could still abolish uninduced expression from P7tet.1. TetR-nls-Tup1 was driven by constitutive promoters of genes whose products were of decreasing abundance (Ho et al., 2018) (PACT1, PVPH1, PRNR2,PREV1) (Y2673, Y2684, Y2749, and Y2715). The PACT1, PVPH1 and PRNR2 strains showed no uninduced expression (Figure 3B), while the PREV1 strain did (Figure 3—figure supplement 3). Out of the three, Rrn2 protein is present at lower abundance, and the PRNR2-driven TetR-nls-Tup1 has the lowest induction threshold in a dose response experiment with strains bearing SR architectures (Y2669, 2676, 2717) (Figure 3C).
 
 We therefore chose as our final controller the cAR architecture in which P7tet.1 directed the expression of both TetR and of the controlled gene, while PRNR2 directed the synthesis of TetR-nls-Tup1. We constructed plasmids such that the tetR and tetR-nls-tup1 components are encoded on a single integrative plasmid, and a separate plasmid can be used to generate PCR fragments bearing P7tet.1 for homologous recombination directed replacement of the promoter of any yeast gene. Due to its ability to give precisely regulated expression over a wide range of inducer concentrations, we called this construct a 'Well Tempered Controller' and gave it the number of Bach’s first Prelude and Fugue (Bach, Johann Sebastian, 1685-1750. The Well Tempered Clavier. Book I: 24 Preludes and Fugues, BWV 846, C Maj) (Figure 4A).
 
-## WTC846 fulfills the criteria of an ideal transcriptional controller
+![Figure 4.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-v2.jpg)
+
+**Figure 4.:** (A) Architecture of WTC846. The final WTC846 system is composed of a single integrative plasmid bearing TetR and TetR-Tup1 driven by the promoters indicated. This plasmid was integrated at the URA3 locus. P7tet.1-driven Citrine was integrated at the LEU2 locus. * indicates SV40 Nuclear Localization Sequence. Repression of promoters is indicated by flat headed arrows. (B) Time dependent dose response of WTC846-controlled expression. Citrine fluorescence was measured using flow cytometry at 30 min intervals after induction with different concentrations of aTc (ng/mL). Dashed line indicates median autofluorescence (parent strain without Citrine) and dot dashed line fluorescent signal from wild type PTDH3 (Y2683). Circles show the median of the experimentally measured population, and the lines were fitted as explained in Figure 2B. The inset shows response at low input aTc doses. (C) The slopes of the dose response curves in (A), as a visual representation of the input dynamic range, defined as the range of doses where the slope of the dose response curve is non-zero. (D) Cell-to-cell variation of WTC846-controlled expression. Single reporter CCV quantified using the VIV measure at 7 hr calculated as in 2D. Dashed line shows VIV of autofluorescence, dot-dashed line VIV of PTDH3-driven Citrine signal. Where present, error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as described in Materials and methods.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The strain WTC846::citrine (Y2759), in which both TetR and Citrine were expressed from P7tet.1, and TetR-nls-Tup1 was expressed constitutively from PRNR2, was grown in YPD to stationary phase with different aTc concentrations. TetR and TetR-nls-Tup1 were integrated at the URA3, and the P7tet.1-Citrine construct at the LEU2 locus. Protein extracts from 2.5 million cells were loaded per lane for western blotting from either these samples, or from otherwise isogenic control strains that constitutively expressed either TetR (Y2611) or Citrine (Y2683) under the control of PTDH3, TetR-nls-Tup1 (Y2717) under the control of PRNR2 (HIS3 locus), or no non-endogenous protein was expressed (Y70). In this experiment, we used Ponceau staining to confirm uniform sample loading (C,D). The primary antibodies were mouse monoclonal anti-TetR and anti-GFP. The secondary antibody was IRDye 800CW Goat anti-Mouse IgG. We quantified protein level by infrared signal in the the Li-Cor reader as explained in Materials and methods. Numbers indicate aTc concentrations in ng/ mL. In Y2759, both the TetR(A) and Citrine(B) expression was higher at higher aTc concentrations, and neither protein was expressed in the absence of aTc. The result shows that uninduced WTC846 has no detectable repressed expression of either protein at the protein level, and the level of the expressed protein can be precisely adjusted.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Strain carrying WTC846::citrine construct (Y2759) grown in different media. Dots represent the median fluorescence of each population, and the lines were fitted using a five parameter log-logistic model as explained in Materials and methods. Since dose responses were measured in separate experiments, the absolute fluorescence values of cells grown in different media are not comparable. (B) Slopes of the fit of the dose response curves depicted in (A). This plot provides a visual estimate of the input dynamic range, which is the range of aTc concentrations where the slope is non-zero. (C) Dose response of VIV measure of CCV in WTC846::citrine expression in cells grown in different media (in A) at different aTc doses, calculated as in Materials and methods and Appendix 2. (D) VIV of two control strains in the same media conditions: one (Y2683), that carried a PTDH3-citrine construct integrated at LEU2, and a parent strain without any non-endogenous gene expression (Y70, labeled autofluorescence). Where present, error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as explained in Materials and methods. In all media, cell-to-cell variation in WTC846-driven Citrine expression is less than the variation measured in autofluorescence and comparable to that for constitutive expression throughout the majority of the precisely titratable input dynamic range. This shows that WTC846 can reliably titrate proteins under different media conditions.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** We measured the effect of WTC846 on growth rate and on cell viability by ability of single cells to form colonies. To do so, we used the WTC846:: strain Y2761, in which a construct bearing P7tet.1-TetR and PRNR2-TetR-nls-Tup1 was genomically integrated at the URA3 locus, but no controlled gene was present. Growth compared to that of Y70, an otherwise isogenic parent in which these components were not integrated, was used as a proxy for cellular physiology and well-being. (A) Growth curves were obtained using back scatter using a Biolector for YPD, SD Full and YP Ethanol with a total culture volume of 1 mL, a Growth Profiler (Enzyscreen) for S Ethanol with a total culture volume of 250 μL. In (A), y axis shows culture density as measured by the device in arbitrary units. Values were normalized such that the highest value recorded corresponds to 1. Seeding density for liquid cultures were 50,000 cells per mL for all media except when ethanol was used as carbon source, in which case it was 500,000 cells per mL. (B) Colony formation assays for SD Proline and S Glycerol. Spotting assays were on solid SD Proline and S Glycerol media as described. For spotting assays, 500,000 cells were spotted on the left column, and each subsequent spot was from a 1:10 dilution in cell numbers. Pictures were taken after 48 hr of growth at 30°C. These assays showed no significant differences between the parent and the WTC846 strain, except in YP Ethanol, in which the WTC846 strain consistently reached a slightly higher density for unknown reasons.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** We used data from the Time Dependent Dose Response (TDDR) experiment shown in Figure 4B to calculate single reporter VIV during the course of induction of the WTC846::citrine strain (Y2759) at different doses of aTc. We compared this with VIV in autofluorescence (dashed line, Y70) and in constitutive Citrine signal driven by a PTDH3-Citrine construct integrated at LEU2 (dot dash line, Y2683). Error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as explained in Materials and methods. VIV was calculated as explained in Appendix 2. At earlier time points, the peak in VIV is observed at higher doses than steady state, but it stabilizes at steady state levels within 2–2.5 hr after induction.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** We used data from the dose response experiment shown in Figure 3C to calculate single-reporter VIV to quantify CCV as described in the Appendix 2. We induced three strains (Y2669, Y2676, and Y2717) which carried a P7tet.1-Citrine construct integrated at LEU2, and which carried constructs integrated at HIS3 in which the PACT1, PVPH1 and PRNR2 promoters drove TetR-nls-Tup1 expression. Induction was done with different concentrations of aTc and Citrine fluorescence signal was measured after seven hours using flow cytometry. Error bars indicate the 95% confidence interval as calculated by bootstrapping (see Materials and methods). For each strain, peak cell-to-cell variation corresponds to the steepest part of each dose response curve in Figure 3C, and occurs at higher aTc concentrations at higher TetR-nls-Tup1 expression levels (TetR-nls-Tup1 expression level inferred from the endogenous protein abundance of Act1, Vph1, and Rnr2 Ho et al., 2018).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** We grew cells of WTC846::citrine strain (Y2759) to exponential phase, and measured Citrine fluorescence with flow cytometry 7 hr after induction with aTc. The complete dose response is presented in main text Figure 4B. For this plot, we calculated the cell volume proxy as the vector of SSC-H and FSC-W signals as described (Materials and methods and Appendix 2). Each dot represents a single cell. Legend indicates aTc concentration in ng/mL. The boxes were drawn as explained in Figure 2—figure supplement 2. The height of these boxes spans +/- one RSD and indicate the magnitude of variaton in the population. As explained in main text Figure 4D, at lower aTc concentrations the CCV is slightly higher due to the effect of the SR regime of the WTC846 architecture, however for most of the input dynamic range, variation in fluorescence at a given volume is low, as was observed for the AR architecture in main Figure 2D.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** CCV of WTC846 was measured in different media conditions using the WTC846::citrine strain (Y2759) and the VIV measure. Cells were grown in different media at different aTc concentrations, and Citrine fluorescence was recorded with flow cytometry at steady state. Time to reach steady state depends on the growth rate of the cells in the media condition, and is longer the slower the growth rate is. We calculated the single reporter VIV measure of CCV as explained in the Appendix 2. Error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as explained in Materials and methods. In all media, CCV peaked at around the same level of expression (same fluorescence signal value), and was lower at higher expression levels. For all media, variation in signal at higher expression levels was comparable to that for a PTDH3-Citrine construct integrated at the LEU2 locus (Y2683, shown in Figure 4—figure supplement 2D).
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Shutoff upon aTc removal from an exponentially growing, recently induced culture of WTC846::citrine (Y2759). Induction of the main culture (gray) with 600 ng/mL aTc was performed at time 0 and shutoff samples were transferred to (a) medium without aTc (colored solid lines) and (b) medium without aTc that contained 70 μg/mL of translation inhibitor cycloheximide (colored dashed lines), at time points indicated by the colored arrows. Citrine fluorescence was measured with flow cytometry. Error bars indicate the 95% confidence interval as calculated by bootstrapping (see Materials and methods) (B) Shutoff samples from A were aligned such that maximum measured Citrine fluorescence corresponds to time 0. The time it takes for the measured fluorescence to drop by half is an estimate of the rate of dilution+degradation of Citrine.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** Overlaid fluorescence and cell-to-cell variation curves are shown for each system (A) Dose response and cell-to-cell variation curves of the β-estradiol-induced LexA-hER-B112-control system after 24 hr of induction. (B) Dose response and cell-to-cell variation of WTC846 after 7 hr of induction. Data plotted from the experiment presented in main Figure 4. (C) Dose response and cell-to-cell variation of a strain (Y3268) where the PGAL1 promoter drives Citrine expression after 24 hr of induction. Cells were grown overnight in syntethic full media with 2% raffinose and the galactose concentrations indicated, and diluted into the same media the next day. Fluorescence was measured 8 hr after dilution. For all systems, fluorescence was measured using flow cytometry and cell-to-cell variation was calculated using our VIV measure as explained. Where present, error bars indicate 95% confidence interval calculated using bootstrapping (n=1000) as described in Materials and methods. For the β-estradiol-induced system, cell-to-cell variation is above an RSD of 0.4 for most of the dynamic range of the system. For the galactose-inducible promoter PGAL1, cell-to-cell variation is always above 0.6 upon induction. For WTC846 variation is below 0.4 at all but low levels of the input dynamic range. While all three systems show a peak in cell-to-cell variation, this peak spans most of the dynamic range for the β-estradiol induced system, and all of the dynamic range for the galactose-inducible system, whereas it is limited to very low doses for the WTC846.
+
+### WTC846 fulfills the criteria of an ideal transcriptional controller
 
 We measured the time-dependent dose response of fluorescent signal in Y2759, the WTC846::citrine strain during exponential growth using flow cytometry (Figure 4B&C). Without aTc, there was no signal above background. After induction, signal appeared within 30 min. Time to reach steady state, which will be shorter for proteins that degrade more quickly (see Appendix 4), was 7 hr for the stable protein Citrine. Steady state expression was adjustable over aTc concentrations from 0.5 ng/mL to 600 ng/mL, a 1200-fold input dynamic range. Maximum expression was similar to that for the PTDH3-citrine strain Y2683. Direct observation of Citrine and TetR expression by Western blotting showed no expression of Citrine in absence of aTc, adjustable Citrine levels over the same input dynamic range and TetR expression synchronized with Citrine (Figure 4—figure supplement 1). In all eight growth media tested, WTC846::citrine expression was precisely adjustable (Figure 4—figure supplement 2), and even very high induction of the WTC846 system in a strain where only the control plasmid bearing tetR and tetR-nls-tup1 was integrated (Y2761) had no significant effect on growth rates (Figure 4—figure supplement 3).
 
@@ -73,11 +157,239 @@ As expected, we observed an initial increase of fluorescence in the shutoff samp
 
 We also quantified the cell-to-cell variation in Citrine expression using the single reporter VIV measure for the WTC846::citrine strain (Y2759) grown in YPD, and compared it to variation in a β-estradiol (LexA-hER-B112) activation based transcriptional control system we previously described, and the commonly used galactose activated PGAL1 (Figure 4D, Figure 4—figure supplement 4, Figure 4—figure supplement 6 and Figure 4—figure supplement 9). At increasing concentrations of aTc, VIV initially rose to 0.63 at 8 ng/mL, similar to the VIV measured for Citrine expression repressed by PRNR2-driven TetR-nls-Tup1 in an SR strain (Y2717, RSD of 0.67, Figure 4—figure supplement 5). At higher aTc inputs, VIV rapidly dropped below that seen in Y70, an otherwise-isogenic autofluorescence control strain, and reached the same low level (0.18) observed for Citrine whose expression was driven by PTDH3 (Y2683). Because the autofluorescence varied so greatly, absolute VIV for cells grown in different media could not be directly compared. However, under all growth conditions (Figure 4—figure supplement 7), VIV was highest at the similarly low concentrations of aTc and decreased at higher concentrations to the levels shown by the PTDH3-citrine strain (Figure 4—figure supplement 2). We interpret the peak of VIV in the input dynamic range as arising from the fact that the WTC846 architecture combines Simple Repression and Autorepression of the P7tet.1-controlled gene (here, Citrine). At low concentrations of inducer, in the SR regime, most repression of P7tet.1 was due to the constitutively expressed TetR-nls-Tup1, and the peak VIV was similar to that found for the strain where P7tet.1 was repressed by constitutively expressed TetR-nls-Tup1 (Figure 4—figure supplement 5 and see previous Results section). At higher concentrations of aTc, in the AR regime, P7tet.1 is derepressed, the concentration of TetR and the ratio of TetR to TetR-nls-Tup1 is large. At these inducer concentrations, TetR controls its own synthesis and variation is suppressed by this negative feedback, resulting in much lower cell-to-cell variation throughout the dynamic range compared to routinely used transcriptional controllers. Taken together, these results indicated that WTC846 fulfilled our initially stated criteria for an ideal conditional expression system.
 
-## WTC846 alleles allow precise control over protein dosage and cellular physiology
+### WTC846 alleles allow precise control over protein dosage and cellular physiology
 
 We then assessed the ability of WTC846 to direct conditional expression of endogenous genes. We selected (i) genes that are essential for growth, but for which previously generated transcriptionally controlled alleles still formed colonies on solid medium (CDC42, TOR2, PBR1, CDC20) or continued to grow in liquid medium (PMA1) under uninduced conditions, (ii) essential genes for which existing transcriptionally controlled alleles did not show the expected overexpression phenotype (IPL1), or (iii) essential genes for which conditional expression alleles did not exist (CDC28) (Mnaimneh et al., 2004; Yu et al., 2006; Dechant et al., 2014). These genes encoded proteins with a variety of functions: stable (Cdc28) and unstable (Cdc20 and Cdc42) cell cycle regulators, a spindle assembly checkpoint kinase (Ipl1), a metabolic regulator (Tor2), a putative oxidoreducatase (Pbr1), and a high abundance membrane proton pump (Pma1). The encoded proteins spanned a range of abundance from ∼1000 (Tor2 and Ipl1) to >50,000 (Pma1) molecules per cell (Ho et al., 2018).
 
 We constructed strains in which WTC846 controlled the expression of these genes. Before transformation the cells were grown in liquid medium containing aTc, and then plated on solid medium containing aTc (see Appendix 5 for a detailed protocol) (Figure 5A and Table 1, strains labeled WTC846-Kx::gene_name). To make these strains, we integrated a single plasmid-borne TetR-nls-Tup1 and autorepressing TetR construct into the LEU2 locus in a BY4741 background, and replaced sequences upstream of the ATG of the essential gene with a ∼1940 bp casette carrying an antibiotic selection marker and P7tet.1, without altering the sequence of the upstream gene or its terminator. In most cases we removed between 20 and 200 bp of the endogenous gene promoter. The cassette carried one of three different 15 bp translation initiation sequences (extended Kozak sequences; K1, K2, K3) as the last 15 bases before the ATG. These were designed to enable different levels of translation of the gene’s mRNA (Li et al., 2017). The predicted efficiency of the sequences was K1> K2> K3. If cells of a strain carrying a WTC846-controlled essential gene formed colonies on solid medium without aTc, we constructed an otherwise-isogenic strain with a lower efficiency Kozak sequence (data not shown).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-v2.jpg)
+
+**Figure 5.:** (A) The WTC846 architecture used, as in Figure 4A. Figure also shows the three extended Kozak sequences used to control translation efficiency. (B) WTC846 alleles of essential yeast genes show null and quantitative expression phenotypes. The genes whose expression is controlled by WTC846 are indicated on the left. Cells growing in liquid medium were spotted onto different YPD plates, such that the leftmost circle on each plate had 2.25x106 cells and each subsequent column is a 1:10 dilution. aTc concentration in each plate is indicated below each image. Parent refers to the strain where all components of WTC846 except the P7tet.1 that directs expression of the controlled gene was present (Y2769). (C) Precise control of growth rate by adjusting Tor2 protein dosage. Growth of the WTC846-K3::TOR2 strain was measured by scattered light intensity using a growth reader. Cells were grown in liquid YPD, three replicate wells per aTc concentration were measured. Dashed line indicates the growth curve of the parent strain, where Tor2 was under endogenous control. The y-axis was normalized to a range between 0 and 100 and indicates culture density. (D) Precise control of cell volume by titrating dosage of Whi5. Haploid and Diploid refer to WTC846-K1::WHI5 alleles grown in S Ethanol with varying concentrations of aTc. Haploid and diploid parent indicates strains where Whi5 was under endogenous control. Median cell volume was measured using a Coulter Counter. (E) Batch culture cell cycle synchronization. A batch culture of WTC846-K3::CDC20 strain growing in 20 ng/mL aTc was arrested and synchronized by aTc withdrawal. Cells were released from the cell cycle block by addition of aTc at time 0. Cells were stained with Sytox and analyzed with flow cytometry. A total of 10,000 cells per time point were recorded. The plots are density distributions of the Sytox fluorescent signal of the whole population, such that the area under the curve equals 1. The peaks corresponding to one and two sets of chromosomes are labeled. These indicate the cells that are in G1 and G2/M phases of the cell cycle, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Cells of MATa haploid strains bearing genes whose expression was controlled by WTC846 were spotted onto solid media. Names of the genes are given on the left, which correspond to the ‘Name’ column in Supplementary file 1 - Table S1. Spotting protocol is explained in Materials and methods. Briefly, cells were grown in liquid medium that supported growth (YPD with aTc), followed by media allowing WTC846 shutoff (YPD without aTc). Cells were grown in YPD without aTc for 6 hr to allow WTC846 to fully shut off and any residual gene products to be degraded or diluted. Cells were then spotted onto different plates, such that the leftmost spot on each plate had 2.25x106 cells and each subsequent spot was a 1:10 dilution. The aTc concentration in each plate is indicated below each image. 'Parent' refers to strain Y2769, which only has the P7tet.1 directed TetR and PRNR2 directed TetR-nls-Tup1 expression from the LEU2 locus. Plates were imaged after 24 hr for SD, and 42 hr for YPE, S Glycerol and SD Proline. For all but one strain, no growth (as assayed both by increase in optical density of cells in spots and formation of single colonies) was observed without induction. That exception was the WTC846-K3::PBR1 strain, which showed slight increase in optical density of the most concentrated spot, indicating very slow growth or residual protein activity. This could be either due to slow degradation kinetics of the protein upon aTc removal, or very low, residual expression even without induction. No single colonies were observed. The fact that strains bearing WTC846 controlled essential genes did not grow without aTc confirms that in the absence of the inducer, these WTC846 alleles are operationally nulls. In all media tested, growth as assayed by increase in density of the spot and increased frequency of formation of single colonies increased with increasing aTc concentration, indicating titratability of the protein dosage in these alleles. In one strain (i.e. WTC846-K2::IPL1), decreased growth at high-protein dosage was observed as indicated by lighter spots and reduced single colony formation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** We grew WTC846-K2::IPL1 (Y2789) and an otherwise isogenic parent strain (Y2769), where Ipl1 was under the control of its native promoter, in YPD with 400 ng/mL aTc for 18 hr. At each time point cells were fixed with 70% ethanol, stained for DNA content with Sytox and measured using flow cytometry. We recorded 20,000 WTC846-K2::IPL1 cells and 10,000 parent cells at each time point. Plots show counts of cells for each fluorescence value. Peaks corresponding to one set and two sets of chromosomes, indicating cells in G1 and in G2/M are labeled n and 2 n. Results indicate that overexpression of Ipl1 leads to a prolonged G2/M phase and cells with aberrant chromosome numbers above 2 n.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Plots show growth curves of (A) Y2828/ WTC846-K3::PMA1 in SD Full, pH 4.5, (B) Y2773/WTC846-K3::TOR2 in YPD medium (in triplicate), (C) Y2849/WTC846-K3::TPI1 in YPD, and (D) Y2772/WTC846-K1::TOR2 strain in YPD (in duplicates). Solid lines indicate the WTC846 alleles, dashed lines, where present, indicate the otherwise isogenic comparison strain in which the gene of interest was under endogenous control (Y2769). Data in (A,B and D) was acquired with a Biolector device, and 1 mL total culture volume. Data in (C) was acquired with a Growth Profiler and 250 µL total culture volume as described in Materials and methods. Both devices were seeded with 50,000 cells per mL at the start of the experiment. y axis indicates the culture density measured by the device, normalized such that the highest recorded value equals 1. Growth at different aTc concentrations and different dosages of these essential (Pma1,Tor2) and non-essential metabolic (Tpi1) protein products leads to different growth rates. Comparison of panel D Y2772/WTC846-K1::TOR2 and panel B Y2773/WTC846-K3::TOR2 demonstrates that the range of adjustable protein dosages achievable by WTC846 alleles can be further enlarged by choice of Kozak sequences (translation initiation sequences), and that, in the absence of inducer, the reduced translation WTC846-K3::TOR2 allele is a null.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** We grew Y2828/WTC846-K3::PMA1 in SD Full media with the aTc concentrations indicated as ng/mL in the grey boxes above the panels. We fixed the samples with 70% ethanol for Sytox staining. We used flow cytometry to analyze the cells and fluorescence was used as a proxy for DNA content. Figure shows peaks in fluorescence corresponding to one (n) and two (2n) sets of chromosomes indicating cells in G1 and G2/M. Figure also shows peaks corresponding to cells with >2 sets of chromosomes, and dead cells/debris. We calculated cell volume as the vector of SSC-H and FSC-W signals as explained in Materials and methods. Each dot corresponds to a single-cell measurement. Values above 280,000 saturated the measurement device, and this fact resulted in an apparent increase in the number of cells around this value. At no or low aTc concentrations and thus low Pma1 abundance, daughter cells fail to separate from the mother, leading to an apparent increase in cell volume and ploidy as shown in panel (B) using microscopic observation of a representative sample of WTC846-K3::PMA1 cells grown without aTc. Image was acquired using ×40 magnification.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Expression of Whi5 was clamped at different levels by growth of Y2791, a haploid WTC846-K1::WHI5 strain, of Y2929, a WTC846-K1::WHI5/WTC846-K1::WHI5 diploid strain, and otherwise-isogenic control strains in which Whi5 was expressed from its endogenous promoter (Y2769). Cells were grown in S Ethanol medium at different concentrations of aTc to yield different cell volumes, measured by a Coulter counter. (B) We calculated and plotted the CoV of the mean cell volume at each aTc dose as a measure of CCV. CoV of this WTC846 controlled phenotype is at or around the same level as WT variation, except when Whi5 is heavily overexpressed. (C) DNA content of the haploid WTC846-K1::WHI5 strain cells (Y2791, red) at mid-exponential phase in S Ethanol media, grown with four different aTc concentrations as marked on top of each plot. These concentrations result in cells without Whi5 (0 ng/mL aTc), with approximately endogenous levels of Whi5 (10 ng/mL), and with two different levels of overexpressed Whi5 (100 and 600 ng/mL). DNA content was quantified using Sytox staining and flow cytometry. As control, DNA content of the parent strain with endogenous Whi5 control (Y2769, gray) was quantified. Without Whi5 there was a reduction of G1 cells with onw n DNA content in the Y2791 strain, and upon overexpression of Whi5 aneuploid cells with >2n DNA content are observed.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Cells growing in 3 ng/mL aTc were arrested by aTc withdrawal to compare the time to reach arrest to that in Main Figure 5E, in which cells were grown in 20 ng/mL aTc and time to arrest was around 8 hr. Samples were taken at indicated time points after aTc withdrawal. Cells were fixed in 70% ethanol, stained with Sytox and analyzed with flow cytometry. A total of 10,000 cells per time point were recorded. The plots are density distributions of the Sytox fluorescent signal of the whole population, such that the area under the curve in each line (blue for the strain with endogenous Cdc20 control (Y2769), gray for the WTC846-K3::CDC20 strain (Y2837) ) equals 1. The peaks corresponding to one and two sets of chromosomes are labeled. These indicate the cells that are in G1 and G2/M phases of the cell cycle, respectively. Arrest of this strain starts within 90 min, and complete arrest of the batch culture is reached within 3– 4 hr.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/69549/elife-69549-fig5-figsupp7-v2.jpg)
+
+**Figure 5—figure supplement 7.:** PGAL1 was used to drive Citrine expression in strain Y3281 from a centromeric plasmid. The strain was grown in synthetic media lacking uracil with 2% Raffinose and 2% Galactose. For comparison of expression levels, the WTC846::citrine strain (Y2759) was grown in YPD with 400 ng/mL aTc. Median Citrine fluorescence in the Y3281 strain was 2-fold lower than that of Y2759 and cell-to-cell variation in expression was approximately ∼4.5-fold higher when calculated using the VIV measure. Autofluorescence was measured in strain Y70 grown in synthetic full media with 2% Raffinose.
+
+**Table 1.**
+ Main strains used in this work and their relevant genotype.A detailed table including all strains used in the figure supplements can be found in Supplementary file 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Y</th>
+      <th>Name</th>
+      <th>Relevant genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>70</td>
+      <td>autofluorescence</td>
+      <td>BY4743 derivative, haploid, MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 lys2Δ0</td>
+    </tr>
+    <tr>
+      <td>2683</td>
+      <td>PTDH3-const</td>
+      <td>leu2Δ::PTDH3_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2551</td>
+      <td>P2tet-const</td>
+      <td>leu2Δ::P2tet_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2564</td>
+      <td>P3tet-const</td>
+      <td>leu2Δ::P3tet_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2566</td>
+      <td>P5tet-const</td>
+      <td>leu2Δ::P5tet_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2562</td>
+      <td>P2tet-SR</td>
+      <td>leu2Δ::P2tet_citrine-LEU2 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2573</td>
+      <td>P3tet-SR</td>
+      <td>leu2Δ::P3tet_citrine-LEU2 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2577</td>
+      <td>P5tet-SR</td>
+      <td>leu2Δ::P5tet_citrine-LEU2 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2659</td>
+      <td>P5tet.1-const</td>
+      <td>leu2Δ::P5tet.1_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2656</td>
+      <td>P5tet.1-SR</td>
+      <td>leu2Δ::P5tet.1_citrine-LEU2 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2661</td>
+      <td>P7tet.1-const</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2</td>
+    </tr>
+    <tr>
+      <td>2663</td>
+      <td>P7tet.1-SR</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2674</td>
+      <td>P7tet.1-AR</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 met15Δ::P7tet.1_tetR-NLS-MET15</td>
+    </tr>
+    <tr>
+      <td>2741</td>
+      <td>P7tet.1-cAR</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 met15Δ::P7tet.1_tetR-NLS-MET15 his3Δ::PACT1_tetR-NLS-HIS3</td>
+    </tr>
+    <tr>
+      <td>2673</td>
+      <td>P7tet.1-cAR(PACT1-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PACT1_tetR-NLS-tup1-HIS3 met15Δ::P7tet.1_tetR-NLS-MET15</td>
+    </tr>
+    <tr>
+      <td>2684</td>
+      <td>P7tet.1-cAR(PVPH1-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PVPH1_tetR-NLS-tup1-HIS3 met15Δ::P7tet.1_tetR-NLS-MET15</td>
+    </tr>
+    <tr>
+      <td>2749</td>
+      <td>P7tet.1-cAR(PRNR2-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PRNR2_tetR-NLS-tup1-HIS3 met15Δ::P7tet.1_tetR-NLS-MET15</td>
+    </tr>
+    <tr>
+      <td>2715</td>
+      <td>P7tet.1-cAR(P_PREV1-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::P_PREV1_tetR-NLS-tup1-HIS3 met15Δ::P7tet.1_tetR-NLS-MET15</td>
+    </tr>
+    <tr>
+      <td>2669</td>
+      <td>P7tet.1-SR(PACT1-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PACT1_tetR-NLS-tup1-HIS3</td>
+    </tr>
+    <tr>
+      <td>2676</td>
+      <td>P7tet.1-SR(PVPH1-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PVPH1_tetR-NLS-tup1-HIS3</td>
+    </tr>
+    <tr>
+      <td>2717</td>
+      <td>P7tet.1-SR(PRNR2-TUP1)</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 his3Δ::PRNR2_tetR-NLS-tup1-HIS3</td>
+    </tr>
+    <tr>
+      <td>2759</td>
+      <td>WTC846::citrine</td>
+      <td>leu2Δ::P7tet.1_citrine-LEU2 ura3Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-URA3</td>
+    </tr>
+    <tr>
+      <td>2761</td>
+      <td>WTC846::</td>
+      <td>ura3Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-URA3</td>
+    </tr>
+    <tr>
+      <td>2769</td>
+      <td>parent</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2</td>
+    </tr>
+    <tr>
+      <td>2772</td>
+      <td>WTC846-K1::TOR2</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_TOR2::P7tet.1-K1-HygMX</td>
+    </tr>
+    <tr>
+      <td>2775</td>
+      <td>WTC846-K2::CDC28</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_CDC28::P7tet.1-K2-NatMX</td>
+    </tr>
+    <tr>
+      <td>2837</td>
+      <td>WTC846-K3::CDC20</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_CDC20::P7tet.1-K3-NatMX</td>
+    </tr>
+    <tr>
+      <td>2788</td>
+      <td>WTC846-K2::CDC42</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_CDC42::P7tet.1-K2-NatMX</td>
+    </tr>
+    <tr>
+      <td>2789</td>
+      <td>WTC846-K2::IPL1</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_IPL1::P7tet.1-K2-NatMX</td>
+    </tr>
+    <tr>
+      <td>2828</td>
+      <td>WTC846-K3::PMA1</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_PMA1::P7tet.1-K3-NatMX</td>
+    </tr>
+    <tr>
+      <td>2773</td>
+      <td>WTC846-K3::TOR2</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_TOR2::P7tet.1-K3-HygMX</td>
+    </tr>
+    <tr>
+      <td>2827</td>
+      <td>WTC846-K3::CDC28</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_CDC28::P7tet.1-K3-NatMX</td>
+    </tr>
+    <tr>
+      <td>2830</td>
+      <td>WTC846-K3::PBR1</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3,myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_PBR1::P7tet.1-K3-NatMX</td>
+    </tr>
+    <tr>
+      <td>2849</td>
+      <td>WTC846-K3::TPI1</td>
+      <td>leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_TPI1::P7tet.1-K3-NatMX</td>
+    </tr>
+    <tr>
+      <td>2791</td>
+      <td>WTC846-K1::WHI5</td>
+      <td>whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX, leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2 P_WHI5::P7tet.1-K1-NatMX</td>
+    </tr>
+    <tr>
+      <td>2929</td>
+      <td>WTC846-K1::WHI5(diploid)</td>
+      <td>BY4743, whi5Δ::WHI5-mKokappa-HIS3/WHI5 myo1Δ::MYO1-mKate(3x)-KanMX/MYO1 leu2Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-LEU2/leu2Δ0 ura3Δ::PRNR2_tetR-NLS-tup1_P7tet.1_tetR-NLS-URA3/ura3Δ0 P_WHI5::P7tet.1-K1-HygMX/P_WHI5::P7tet.1-K1-NatMX</td>
+    </tr>
+  </tbody>
+</table>
 
 We spotted serial dilutions of cultures of the final seven strains on YPD, YPE, SD, S Glycerol and SD Proline plates with and without inducer, and assessed the strains’ ability to grow into visible colonies at a single time point, at which cells of the parent strain formed colonies in all serially diluted spots (24 hr for YPD and SD, 42 hr for others.) (Figure 5B and Figure 5—figure supplement 1). On all these media, no strain formed colonies without aTc and at intermediate concentrations of aTc all strains did. This result showed that WTC846 alleles can produce null phenotypes.
 
@@ -113,17 +425,17 @@ Taken together, our results show that WTC846 controlled genes define a new type 
 
 ## Materials and methods
 
-## Plasmids
+### Plasmids
 
 Information on plasmids, and promoter and protein sequences used in this study can be found in Supplementary file 1 - Tables S2 and S4. Plasmids with auxotrophic markers were constructed based on the pRG shuttle vector series (Gnügge et al., 2016) using either restriction enzyme cloning or isothermal assembly (Gibson et al., 2009). Inserts were generated either by PCR on existing plasmids or custom DNA synthesis (GeneArt, UK). Oligos for cloning and for strain construction were synthesized by Thermofisher, UK. Plasmids used to generate linear PCR products for tagging transformations were based on the pFA6 backbone (Janke et al., 2004). Plasmids necessary to construct WTC846 strains are available through Addgene. Plasmid structures and a detailed protocol for strain construction can be found in Appendix 5.
 
 pRG shuttle vector series backbones used for integrative transformations have T7 and T3 promoters flanking the insert (Gnügge et al., 2016). During cloning, the insert of plasmids bearing TetR were cloned such that the insert promoter was closer to the T7 promoter and the terminator was near the T3 promoter of the backbone. In plasmids bearing Citrine, the insert was flipped onto the opposite strand, such that the insert promoter was near the T3 promoter, and the terminator near the T7 promoter. This inversion was done to avoid homologous recombination during subsequent integration of these plasmids into the same strain, since in many strains TetR and Citrine were flanked by the same promoter and the same terminator.
 
-## Strains
+### Strains
 
 Strains used in this study can be found in Supplementary file 1 - Table S1. Strains used for fluorescent measurements and the WTC846-K3::TPI1 strain are based on a BY4743 derivative haploid background (MATa his3Δ leu2Δ met15Δ ura3Δ lys2Δ). Strains where P7tet.1 replaced endogenous promoters were based on the haploid BY4741 background with the modifications whi5Δ::WHI5-mKOkappa-HIS3, myo1Δ::MYO1-mKate(3x)-KanMX and so were resistant to G418. The oligos used to replace the promoters of the different endogenous genes with WTC846-controlled P7tet.1 can be found in Supplementary file 1 - Table S3. Correct replacement of the endogenous promoter with P7tet.1 was checked using colony PCR with the protocol from the Blackburn lab (also detailed in Gnügge et al., 2016), and subsequent sequencing (Microsynth, Switzerland). For colony PCR, we used a standard forward oligo annealing to P7tet.1, and gene specific reverse oligos annealing within the tagged gene. Oligo sequences for colony PCR can be found in Supplementary file 1 - Table S3. A comprehensive protocol on how to generate strains where WTC846 controls endogenous genes can be found in Appendix 5.
 
-## Chemicals and media
+### Chemicals and media
 
 YPD/YPE was prepared with 1% yeast extract (Thermofisher, 212720), 2% bacto-peptone (Thermofisher, 211820), and 2% glucose (Sigma, G8270) / ethanol (Honeywell, 02860). Synthetic (S) media except SD Proline contained 0.17% yeast nitrogen base (without amino acids and ammonium sulfate) (BD Difco, 233520) with 0.5% ammonium sulfate (Sigma, 31119) as nitrogen source, complete complement of amino acids and adenine and uracil, except for SD min which contained only the necessary amino acid complements to cover auxotrophies. SD Proline media contained 0.17% yeast nitrogen (without amino acids and ammonium sulfate), only the amino acids necessary to cover auxotrophies and 1 mg/mL proline as the sole nitrogen source. The carbon source was 2% glucose for SD and SD Proline, 2% ethanol for S Ethanol, 3% glycerol for S Glycerol (Applichem, A2957), 2% fructose for S Fructose, 2% Raffinose for S Raffinose and 2% Galactose together with 2% Raffinose for S GalRaf. Experiments were performed in YPD media unless otherwise specified. Solid medium plates were poured by adding 2% agar (BD Sciences, 214040) to the media described above.
 
@@ -131,39 +443,39 @@ aTc was purchased from Cayman Chemicals (10009542) and prepared as a 4628.8 ng/m
 
 When constructing strains where P7tet.1 replaces endogenous promoters, a PCR fragment containing P7tet.1 and an antibiotic marker (either Nourseothricin (Werner BioAgents, clonNAT) or Hygromycin (ThermoFisher,10687010)) was transformed for homologous recombination directed replacement of the endogenous promoter. Cells were plated on YPD + antibiotic plates for selection. Whenever the promoter of an essential gene was being replaced, transformations were plated on multiple plates with YPD + antibiotic and 10/50/100/500 ng/mL aTc.
 
-## Spotting assay
+### Spotting assay
 
 For spotting assays of cell growth and viability, cells were precultured in YPD media with 20 ng/mL aTc (except for WTC846-K2::IPL1 strain which was precultured in 10 ng/mL aTc) and the necessary antibiotic to stationary phase, and diluted into YPD + antibiotic without aTc at a concentration of 0.8x106 cells/mL. Six hr later, cells were spun down and resuspended in YPD. Cells were spotted onto plates containing different media and aTc concentrations prepared as described above such that the most concentrated spot has 2.25x106 cells, and each column is a 1:10 dilution. Pictures were taken after 24 hr for the YPD and SD plates, and 42 hr for SD Proline, S Glycerol and YPE plates.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were diluted 1:200 from dense precultures and cultured to early exponential phase (2–5 x 106 cells/mL) in 96 deep-well plates at 30°C before induction with aTc if necessary. For aTc dose responses, samples were taken at times indicated. For experiments where no dose response was necessary, cells were measured at least 4 hr after dilution of precultures, but always before stationary phase. Samples were diluted in PBS and measured using a LSRFortessa LSRII equipped with a high-throughput sampler. PMT voltages for the forward and side scatter measurements were set up such that the height of the signal was not saturated. Citrine fluorescence was quantified using a 488 nm excitation laser and a 530/30 nm emission filter. PMT voltage for this channel was set up such that the signal from PTDH3 expressed Citrine did not saturate the measurement device, except for basal level measurements in Figure 3B and Figure 3—figure supplement 3, where PMT voltage for the Citrine channel was increased to maximum. Side scatter was measured using the 488 nm excitation laser and 488/10 nm emission filter.
 
-## Western blots
+### Western blots
 
 Cells were grown to stationary phase with the indicated aTc concentration. 5 mL of cell culture was centrifuged and resuspended in 1 mL 70% ethanol. Fixed cells were again centrifuged, and resuspended in 200 uL Trupage LDS loading buffer (Merck, PCG3009) supplemented with 8M urea. Cells were broken using glass beads and a bead beater, and boiled at 95°C for 30 min. Proteins were separated using SDS-Page with Trupage precast 10% gels (Merck, PCG2009-10EA) and the associated commercial buffer, and transferred onto a nitrocellulose membrane (GE Healthcare Life Sciences, 10600008).
 
 We used mouse monoclonal primary antibodies for detecting TetR (Takara, Clone 9G9), and Citrine (Merck, G6539), both diluted 1:2000 in Odyssey Blocking buffer (PBS) (LI-COR Biosciences) + 0.2% Tween 20. The secondary antibody was the near-infrared fluorescent IRDye 800CW Goat anti-Mouse IgG Secondary Antibody from Li-Cor (926–32210), diluted 1:5000 in the same manner. We used Chameleon Duo pre-stained Protein Ladder as our molecular weight marker (928-60000). We used the SNAP i.d. 2.0 system which uses vacuum to drive reagents through the membrane, and the Odyssey CLx (LI-COR) detector for imaging. Images were processed using the Fiji software to obtain black and white images with high contrast (Schindelin et al., 2012).
 
-## Growth curves
+### Growth curves
 
 Cells were precultured in YPD (with aTc in the case of strains where WTC846 controlled essential genes) to stationary phase, then diluted into fresh media at a concentration of 50.000 cells per mL and induced with the necessary aTc concentrations, except for YP Ethanol and S Ethanol media where the concentration was 500,000 cells per mL. The Growth Profiler 960 (EnzyScreen) with 96-well plates and 250 µL volume per well, or Biolector (m2p-labs) with 48 well plates and 1 mL volume per well was used to measure growth curves. These are commercial devices that quantify culture density by detecting the light that is reflected back by the liquid culture.
 
-## Arrest and release assay and DNA staining
+### Arrest and release assay and DNA staining
 
 WTC846-K3::CDC20 and the appropriate control strains were precultured in YPD (pH 4) with with the indicated aTc concentration to a concentration of 2x106 cells/mL, then centrifuged and diluted 1:3 into YPD (pH 4) without aTc. We found that low pH (pH4) of the media was necessary for efficient mother-daughter separation upon completion of cytokinesis, potentially due to the low pH optimum of the chitinase CTS1 (Hurtado-Guerrero and van Aalten, 2007), which plays a role in separation. For the experiment presented in Figure 5E, to prevent the culture from becoming too dense, 25% of the media was filtered and returned to the culture after 4 hr of growth without aTc, which removed 1/4th of the cells. If release was performed, this was done after 8 hr of arrest by adding 600 ng/mL aTc to the culture. Samples were taken at indicated time points before, and every 5 min after aTc was added to the culture, and fixed with 70% ethanol. For the experiment presented in Figure 5E, to aid mother-daughter separation, the samples were sonicated for 1 min in a water bath before fixation.
 
 Samples for DNA staining were digested with 5 mg/mL proteinase K for 50 min at 50°C, followed by 2 hr of RNase A (Applichem, A2760,0500) treatment at 30°C. Samples were stained for DNA content using SYTOX Green (Thermofisher, S7020) diluted 1:5000 in PBS, and were sonicated in a water bath for 25 s before flow cytometry. Fluorescence was detected using a 488 nm excitation laser and a 525/15 nm emission filter. The PMT voltage was set up such that the sample with the highest expected ploidy did not saturate the signal.
 
-## Shutoff assay
+### Shutoff assay
 
 Cells were grown to early exponential phase(∼3 million cells/mL) in YPD at 30°C with shaking and induced with 600 ng/mL aTc. Two mL samples were taken at indicated time points. To remove excess aTc, cells were spun down for 20 s, supernatant was removed and cells were resuspended in YPD. This process was repeated three times. After the 3rd resuspension, the 2 mL sample was divided between two wells of a 96 deep-well plate. Cycloheximide was added to one of the wells at a final concentration of 70 μg/mL. The plate was continuously shaken at 30°C. Citrine fluorescence was measured every 30 min using flow cytometry as explained above.
 
-## Data analysis
+### Data analysis
 
 All analysis was performed using R (R Development Core Team, 2013), and the packages Bioconductor (Ellis et al., 2009), dplyr (Wickham et al., 2018), drc (Ritz et al., 2015), MASS (Kafadar et al., 1999), mixtools (Benaglia et al., 2009), and ggplot2 (Ginestet, 2011). All raw data that is not provided as source data here is available publicly at doi.org/10.3929/ethz-b-000488967.
 
-Flow cytometry data was not gated except when necessary to remove debris. For aTc dose response experiments, median fluorescence of the entire population was used to fit a five-parameter dose response curve with the drm() command and the fplogistic formula c+(d-c)1+exp(b(log(x+1))p⁢_⁢1+exp(log(x+1))p⁢_⁢2) from the drc package. Parameters p_1 and p_2 were fixed individually for each curve, the rest of the parameters were estimated by the drm command. Parameter values can be found in Supplementary file 1 - Table S5. The cytometry cell volume proxy was always calculated as the magnitude of the vector of the FSC-W and SSC-H signals ((F⁢S⁢C-W)2+(S⁢S⁢C-H)2), since forward and side scatter signals provide information about cell volume and budding state. The forward scatter width and side scatter height were chosen because this combination (as opposed to other combinations involving FSC-H/SSC-W or area of the signals) showed the most separation between measured signal peaks corresponding to spherical calibration beads of known diameter.
+Flow cytometry data was not gated except when necessary to remove debris. For aTc dose response experiments, median fluorescence of the entire population was used to fit a five-parameter dose response curve with the drm() command and the fplogistic formula $c+\frac{(d-c)}{1+exp(b(log(x+1))^{p⁢_⁢1}+exp(log(x+1))^{p⁢_⁢2})}$ from the drc package. Parameters p_1 and p_2 were fixed individually for each curve, the rest of the parameters were estimated by the drm command. Parameter values can be found in Supplementary file 1 - Table S5. The cytometry cell volume proxy was always calculated as the magnitude of the vector of the FSC-W and SSC-H signals ($\sqrt{(F⁢S⁢C-W)^{2}+(S⁢S⁢C-H)^{2}}$), since forward and side scatter signals provide information about cell volume and budding state. The forward scatter width and side scatter height were chosen because this combination (as opposed to other combinations involving FSC-H/SSC-W or area of the signals) showed the most separation between measured signal peaks corresponding to spherical calibration beads of known diameter.
 
 For single-reporter quantification of VIV, we calculated the residual standard deviation (RSD) of a linear model describing the relationship between the cytometry cell volume proxy and fluorescence of the population. To do this, the rlm() command from the MASS package was used to generate the linear model, and the residual standard deviation given by the same rlm() command was used as our measure of VIV. See Appendix 2 for a detailed explanation of the method.
 

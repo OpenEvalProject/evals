@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.46417.001 ATP-sensitive potassium (K ATP ) channels composed of a pore-forming Kir6.2 potassium channel and a regulatory ABC transporter sulfonylurea receptor 1 (SUR1) regulate insulin secretion in pancreatic β-cells to maintain glucose homeostasis. Mutations that impair channel folding or assembly prevent cell surface expression and cause congenital hyperinsulinism. Structurally diverse K ATP inhibitors are known to act as pharmacochaperones to correct mutant channel expression, but the mechanism is unknown. Here, we compare cryoEM structures of a mammalian K ATP channel bound to pharmacochaperones glibenclamide, repaglinide, and carbamazepine. We found all three drugs bind within a common pocket in SUR1. Further, we found the N-terminus of Kir6.2 inserted within the central cavity of the SUR1 ABC core, adjacent the drug binding pocket. The findings reveal a common mechanism by which diverse compounds stabilize the Kir6.2 N-terminus within SUR1’s ABC core, allowing it to act as a firm ‘handle’ for the assembly of metastable mutant SUR1-Kir6.2 complexes.
+ATP-sensitive potassium (KATP) channels composed of a pore-forming Kir6.2 potassium channel and a regulatory ABC transporter sulfonylurea receptor 1 (SUR1) regulate insulin secretion in pancreatic β-cells to maintain glucose homeostasis. Mutations that impair channel folding or assembly prevent cell surface expression and cause congenital hyperinsulinism. Structurally diverse KATP inhibitors are known to act as pharmacochaperones to correct mutant channel expression, but the mechanism is unknown. Here, we compare cryoEM structures of a mammalian KATP channel bound to pharmacochaperones glibenclamide, repaglinide, and carbamazepine. We found all three drugs bind within a common pocket in SUR1. Further, we found the N-terminus of Kir6.2 inserted within the central cavity of the SUR1 ABC core, adjacent the drug binding pocket. The findings reveal a common mechanism by which diverse compounds stabilize the Kir6.2 N-terminus within SUR1’s ABC core, allowing it to act as a firm ‘handle’ for the assembly of metastable mutant SUR1-Kir6.2 complexes.
 
 ## Introduction
 
@@ -32,19 +32,344 @@ In this study, we took a comparative structural approach to understand how glibe
 
 ## Results
 
-## Structure determination
+### Structure determination
 
 For structure determination, a FLAG-tagged hamster SUR1 and a rat Kir6.2 (95% and 96% identical to human, respectively) were overexpressed in the insulinoma cell line INS-1, and the channel complex affinity purified via the FLAG-epitope tag as described for our recent cryoEM structure determination of KATP bound to GBC and ATP (Martin et al., 2017a; Martin et al., 2017b). These channels have been used extensively for structure-function and pharmacochaperone studies and are thus well characterized (Inagaki et al., 1995; Shyng et al., 1998; Yan et al., 2004). To allow direct comparison of channel structures containing bound RPG or CBZ with the GBC/ATP-bound structure solved previously (Martin et al., 2017a), data were similarly collected in the presence of ATP (1 mM without Mg2+) but varying the pharmacochaperone by alternatively including 30 μM RPG (referred to as the RPG/ATP state), 10 µM CBZ (referred to as the CBZ/ATP state) or the drug vehicle 0.1% DMSO (referred to as the ATP-only state) in the sample. Further, as an additional control we determined the structure of channels without any pharmacochaperone or ATP (referred to as the apo state).
 
 Initial data processing in RELION with C4 symmetry imposed yielded one dominant 3D class for each dataset, with an overall reported resolution ranging from ~4 Å for the RPG/ATP and CBZ/ATP states to ~7 Å for the ATP-only and the apo states (Figure 1; Figure 1—figure supplements 1–4; Table 1). As with the GBC/ATP state structures we reported previously (Martin et al., 2017a; Martin et al., 2017b), increased disorder was observed at the periphery of the complex in all structures possibly due to minor deviations from C4 symmetry. To see whether resolution of SUR1 could be improved, focused refinement using symmetry expansion and signal subtraction with different masks was performed on all structures, including the previously collected GBC/ATP dataset (Martin et al., 2017a), as described in Materials and methods. This yielded maps with improved reported resolutions for SUR1 as follows: 3.74 Å for the GBC/ATP state, 3.65 Å for the RPG/ATP state, 4.34 Å for the CBZ/ATP state, 4.50 Å for the ATP-only state, and 4.55 Å for the apo state using the FSC cutoff of 0.143 (Table 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-v2.jpg)
+
+**Figure 1.:** (A) Unsharpened 3.9 Å C4 cryoEM reconstruction of the KATP channel bound to RPG and ATP. (B) Structural model of the channel in the RPG/ATP state. (C) Overlay of the RPG/ATP state structure, the ATP only state structure, and the apo state structure viewed from the top showing similarity of the dominant class of the ATP only and the apo state to the RPG/ATP state structure. (D) Left: Same model as (C) viewed from the side and focusing on the ABC transporter core module of SUR1 to illustrate the inward-facing conformation observed in all three structures. Right: Separation between Walker A and the signature motif in NBD1 and NBD2 (G716::S1483 and S831::G1382; Cα to Cα, indicated by the dashed line) in SUR1 bound to RPG and ATP (green) and ATP only (tan) viewed from the bottom.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left: Representative micrograph after alignment with Motioncor2. A few KATP channel complexes of various orientations are outlined by the red box. Middle: Power spectrum calculated with Ctffind4, with resolution reaching 3.0 Å. Right: Representative 2D classes. (B) Overview of data processing workflow. Particle picking was performed automatically with DoGPicker and manual inspection. All other image processing steps were performed in RELION-3. (C) Local resolution plot of focal refined SUR1 map. (D) Angular distribution plot. (E) Fourier shell correlation (FSC) of two independent half maps of focal refined SUR1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Overview of data processing workflow. Particle picking was performed automatically with DoGPicker and manual inspection. All other image processing steps were performed in RELION-3. (B) Local resolution plot of locally refined SUR1 map. (C) Angular distribution plot. (D) Fourier shell correlation (FSC) of two independent half maps of locally refined SUR1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Overview of data processing workflow. Note the dataset used was previously published in Martin et al. (2017a) and the particles that were included in the final reconstruction (EMD-7073) were used for focused refinement in RELION-3. (B) Local resolution plot of the locally refined SUR1 map. (C) Angular distribution plot. (D) Fourier shell correlation (FSC) of two independent half maps of locally refined SUR1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Data processing flow for the ATP only state dataset. The Apo state dataset was processed in the same manner and relevant numbers are shown in red. (B–D) Local resolution map, angular distribution plot, and FSC plot for the ATP only dataset. (E–G) Local resolution map, angular distribution plot, and FSC plot for the apo state dataset.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Left: Cryo-EM C4 map of the SUR1-NBD1 region published in Martin et al. (EMD-7073) contoured to 2.6σ; middle: the same region from the locally refined map contoured to 8.9σ; right: same as the middle panel except the density is displayed in mesh and the structural model of the protein and bound ATP are superposed. (B) Same as (A) but showing the linker region connecting TMD2 and NBD2.
+
+**Table 1.**
+ Statistics of cryo-EM data collection, 3D reconstruction and model building.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>Rpg/ATP</th>
+      <th>Cbz/ATP</th>
+      <th>Gbc/ATP</th>
+      <th>ATP only</th>
+      <th>Apo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>Krios</td>
+      <td>Krios</td>
+      <td>Krios</td>
+      <td>Krios</td>
+      <td>Arctica</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Falcon III</td>
+      <td>Gatan K2</td>
+      <td>Gatan K2</td>
+      <td>Gatan K2</td>
+      <td>Gatan K2</td>
+    </tr>
+    <tr>
+      <td>Camera mode</td>
+      <td>Counting</td>
+      <td>Super-resolution</td>
+      <td>Super-resolution</td>
+      <td>Super-resolution</td>
+      <td>Super-resolution</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>−1.0 ~ −2.6</td>
+      <td>−1.4 ~ −3.0</td>
+      <td>−1.4 ~ −3.0</td>
+      <td>−1.4 ~ −3.0</td>
+      <td>−1.4 ~ −3.0</td>
+    </tr>
+    <tr>
+      <td>Movies</td>
+      <td>5765</td>
+      <td>4413</td>
+      <td>2180</td>
+      <td>2344</td>
+      <td>2047</td>
+    </tr>
+    <tr>
+      <td>Frames/movie</td>
+      <td>240</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td>60</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Dose rate (e-/pixel/s)</td>
+      <td>~0.7</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Magnified pixel size (Å)</td>
+      <td>1.045</td>
+      <td>1.72*</td>
+      <td>1.72*</td>
+      <td>1.71*</td>
+      <td>1.826**</td>
+    </tr>
+    <tr>
+      <td>Total Dose (e-/Å^2)</td>
+      <td>~40</td>
+      <td>~40</td>
+      <td>~40</td>
+      <td>~40</td>
+      <td>~40</td>
+    </tr>
+    <tr>
+      <td>Reconstruction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Whole channel</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Relion 3.0</td>
+      <td>Relion 2</td>
+      <td>Relion 2</td>
+      <td>Relion 2</td>
+      <td>Relion 2</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>C4</td>
+      <td>C4</td>
+      <td>C4</td>
+      <td>C4</td>
+      <td>C4</td>
+    </tr>
+    <tr>
+      <td>Particles refined</td>
+      <td>24,747</td>
+      <td>138,000</td>
+      <td>63,227</td>
+      <td>80,304</td>
+      <td>34,527</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked)</td>
+      <td>3.9 Å</td>
+      <td>4.4 Å</td>
+      <td>4.07 Å</td>
+      <td>4.88 Å</td>
+      <td>5.31 Å</td>
+    </tr>
+    <tr>
+      <td>SUR1 focused refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Relion 3.0</td>
+      <td>Relion 3.0</td>
+      <td>Relion 3.0</td>
+      <td>Relion 3.0</td>
+      <td>Relion 3.0</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Particles refined</td>
+      <td>312,000</td>
+      <td>499,095</td>
+      <td>171,420</td>
+      <td>123,757</td>
+      <td>90,058</td>
+    </tr>
+    <tr>
+      <td>Resolution (masked)</td>
+      <td>3.65 Å</td>
+      <td>4.34 Å</td>
+      <td>3.74 Å</td>
+      <td>4.5 Å</td>
+      <td>4.55 Å</td>
+    </tr>
+    <tr>
+      <td>Model Statistics</td>
+      <td>(Includes KNt)</td>
+      <td></td>
+      <td>(Includes KNt)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Map CC (masked)</td>
+      <td>0.6559</td>
+      <td>0.7771</td>
+      <td>0.7065</td>
+      <td>0.8155</td>
+      <td>0.7677</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>3.37</td>
+      <td>7.52</td>
+      <td>3.22</td>
+      <td>2.60</td>
+      <td>3.11</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.58</td>
+      <td>1.95</td>
+      <td>1.60</td>
+      <td>1.46</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Cβ deviations</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>7.03%</td>
+      <td>9.66%</td>
+      <td>7.98%</td>
+      <td>6.29%</td>
+      <td>5.93%</td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>92.97%</td>
+      <td>90.34%</td>
+      <td>92.02%</td>
+      <td>93.71%</td>
+      <td>94.07%</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length</td>
+      <td>0.009</td>
+      <td>0.008</td>
+      <td>0.007</td>
+      <td>0.005</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Bond angles</td>
+      <td>1.166</td>
+      <td>1.121</td>
+      <td>0.992</td>
+      <td>1.085</td>
+      <td>1.233</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Super-resolution pixel size 0.86; **Super-resolution pixel size 0.913._
+
 For model building, we used our previously published GBC/ATP structure (PDB: 6BAA) (Martin et al., 2017a) as a starting point and refined the models against the experimental data. For the GBC/ATP structure, the new map derived from focused refinement of the Kir6.2 tetramer plus an SUR1 subunit showed significantly improved cryoEM density in a number of regions of SUR1 previously not modeled in the GBC/ATP map (see deposited PDB and EMD files). This allowed us to build additional residues into the GBC/ATP structure. In particular, the ATP density in NBD1 became clearly resolved (Figure 1—figure supplement 5A; note ATP binds NBD1 in the absence of Mg2+[Ueda et al., 1997]). The linker between TMD2 and NBD2 (L1319-Q1342) also showed much improved density, allowing us to build a continuous polyalanine model (Figure 1—figure supplement 5B). Models for the other structural states were similarly built according to the highest resolution maps available for the focus-refined regions (for details see Materials and methods).
 
 In all structures determined in the presence of pharmacochaperones and ATP, the Kir6.2 tetramer is in a closed conformation (Figure 1C), and the SUR1’s ABC core in an ‘inward-facing’ conformation wherein the NBD1 and NBD2 are separated (Figure 1D). This overall structure is very similar to that previously reported for the GBC/ATP state (Martin et al., 2017a; Martin et al., 2017b). Interestingly, the dominant class emerging from 3D classification for the ATP-only state as well as the apo state presented a similar conformation, with Kir6.2 tetramer closed and SUR1 inward-facing (Figure 1C and D). Of note, a dominant inward-facing conformation in the absence of ligand was also observed in another ABC transporter, the multidrug resistance protein MRP1 (Johnson and Chen, 2017). These observations suggest the closed channel conformation is the most stable for the apo state under our experimental conditions (i.e. no ATP and no exogenous PIP2, a lipid required for KATP channel opening [Nichols, 2006]). More data and extensive analyses will be needed to resolve whether other minor conformations are present in our samples and to understand the dynamics of these structures, especially in the ATP-only and the apo states. Here, we focus on analyzing the pharmacochaperone binding pocket and the mechanisms by which pharmacochaperones affect channel assembly and activity.
 
-## RPG and CBZ are located in the GBC binding pocket
+### RPG and CBZ are located in the GBC binding pocket
 
 We previously solved the KATP structure in the presence of GBC and ATP, revealing that GBC is lodged in the TM bundle above NBD1 (Martin et al., 2017a), a finding which has been independently confirmed (Wu et al., 2018). Here, in both the RPG/ATP and CBZ/ATP structures, we observe strong and distinctly shaped cryo-EM densities within the same GBC binding pocket (Figure 2B–D). Such density is absent in the ATP-only and the apo structures (Figure 2E and F), supporting assignment as the pharmacochaperone ligand.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig2-v2.jpg)
+
+**Figure 2.:** (A) Structural model of the RPG-bound SUR1 ABC transporter core module viewed from the side showing the slice viewed from the top (indicated by the two black lines) and the pocket viewed from the side at higher magnification (indicated by the red box) in B-F. (B–F) The pharmacochaperone pocket viewed from the top and the side of the channel in the states indicated. To enable comparison, each map was sharpened and filtered to 4.6 Å (the resolution of the apo state reconstruction) with the Postprocessing procedure in RELION. Ligand density corresponding to RPG in (B) is shown in magenta, CBZ in (C) in red, and GBC in (D) in blue. The binding pocket is empty in both the ATP only state (E) and the apo state (F). Note the side chain of W1297 in TM17 and Y377 in TM7 are shown and labeled in panel (E) to serve as reference points. (G) Chemical structures of the three pharmacochaperones shown in B–D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) CryoEM density of GBC from the focus-refined SUR1 map contoured to 8.5σ. Left: optimal fitting of the GBC structure into the density. The electrostatic nature of the residues in the binding pocket surrounding GBC (see Figure 3B) are shown to demonstrate general electrostatic mismatch with GBC if the molecule were modeled into the density in the flipped orientation by 180° shown on the right. (B) CryoEM density of RPG from the focus-refined SUR1 map contoured to 9σ with RPG fitted into the density. (C) CryoEM density of CBZ from the locally refined SUR1 map contoured to 8.5σ. Left: A CBZ molecule is placed into one end of the density to illustrate that one stationary CBZ molecule cannot account for the full ligand density observed. Right: Two CBZ molecules are placed in the density to show sufficient density to accommodate two CBZ molecules.
 
 Density for RPG appears compact and palm-shaped, and suggests that the molecule adopts a considerably folded shape upon binding to SUR1 (Figure 2B; Figure 2—figure supplement 1B). Interestingly, RPG possesses a carboxyl group adjacent a benzyl group, analogous to the sulfonyl group in GBC that is also adjacent a benzyl group (Figure 2G). Refinement of an RPG molecule into the observed binding pocket density orients this carboxylate towards N1245, R1246, and R1300 (Figure 3A), which coordinate the sulfonyl group in the GBC-bound structure (Figure 3B). However, unlike GBC, the RPG density is distant from S1238. This explains previous functional data that an SUR1 S1238Y mutation does not affect RPG’s ability to modulate channel function (Hansen et al., 2002; Yan et al., 2006). The helix on the opposite side of the binding pocket (i.e. TM8; Figure 3A) is lined with hydrophobic residues (W430, F433, and L434), which may support binding through a combination of van der Waals interactions and shape complementarity. Interestingly, although similar in overall structures, we noted subtle rearrangements within the binding pocket between GBC- and RPG-bound states (Figure 3A and B). The most obvious is in W1297, which in RPG is flipped down towards the ligand. Thus, there is sufficient flexibility of the binding pocket to accommodate diverse compounds with high affinity.
 
@@ -56,15 +381,31 @@ CBZ is a smaller molecule with molecular weight about half of that of GBC and RP
 
 Structural evidence above indicates that the three pharmacochaperones occupy a common binding pocket to exert their effects. To seek functional evidence, we mutated five select SUR1 residues lining the binding pocket to Ala (Figure 3A) and monitored the effect of mutation on the ability of GBC, CBZ and RPG to correct the trafficking defects in SUR1-TMD0 mutants. The trafficking mutation F27S in SUR1 has been well-characterized in previous work, showing nearly undetectable mature complex-glycosylated form (upper band in Figure 3C) in the absence of pharmacochaperones but strong recoveries with both CBZ and GBC (Chen et al., 2013). In an F27S background, we introduced the five binding pocket mutations which have been shown previously to not significantly alter SUR1 maturation by themselves (Martin et al., 2017a), and examined the impact on the chaperone function of CBZ, GBC and RPG. In Western blots, there was a complete absence of the mature upper band for F27S-SUR1 in vehicle (DMSO) treated control. In contrast, there were strong upper bands when the mutant was expressed in the presence of CBZ, RPG or GBC (Figure 3C). This chaperone ability of the drugs was reduced to a variable extent for each of the binding site mutations tested in the F27S background (Figure 3C). Interestingly, we noted that while the sensitivity profile is very similar for GBC and CBZ, that for RPG is slightly different, in particular to the R1246A mutation. This suggests despite sharing a common binding pocket, RPG forms distinct chemical interactions with surrounding residues compared to GBC and CBZ. The combined structural and functional data presented above provide strong evidence that CBZ, RPG, and GBC exert their pharmacochaperoning effects by binding to a common binding pocket we have here identified.
 
-## Structure of the distal N-terminus of Kir6.2
+### Structure of the distal N-terminus of Kir6.2
 
 The N-terminal ~30 amino acids of Kir6.2 (referred to as KNt hereinafter) has been known to be critical for channel assembly, gating, and interaction with sulfonylureas and glinides. However, underlying mechanisms remain poorly understood. Early studies showed that deletion of KNt significantly increases channel open probability (Babenko et al., 1999; Koster et al., 1999b; Reimann et al., 1999; Shyng et al., 1997), reduces ATP inhibition, and renders the channel less sensitive to sulfonylureas (Koster et al., 1999a; Reimann et al., 1999). KNt also appears to contribute to GBC binding (Kühner et al., 2012; Vila-Carriles et al., 2007), and is necessary for high affinity interaction with RPG (Hansen et al., 2005; Kühner et al., 2012). Deletion of amino acids 2–5 from the KNt shifts the binding affinity of RPG by more than 30-fold (Kühner et al., 2012). Moreover, KNt is critical for channel assembly and pharmacochaperoning (Devaraneni et al., 2015; Schwappach et al., 2000). Removal of KNt markedly reduces the ability of GBC and CBZ to rescue SUR1-TMD0 trafficking mutations (Devaraneni et al., 2015). Our recent studies showing that p-azidophenylalanine genetically incorporated at Kir6.2 amino acid position 12 or 18 was photocrosslinked to SUR1 and that the extent of crosslinking increased in the presence of GBC or CBZ further suggest physical interactions between KNt and SUR1 in a drug-sensitive manner (Devaraneni et al., 2015). Taken together, these studies led us to hypothesize that KNt is located near the pharmacochaperone binding pocket we have identified.
 
 Close examination of the three pharmacochaperone-bound SUR1 structures reconstructed using focused refinement indeed revealed significant and continuous cryo-EM density immediately adjacent to the drug binding site, especially in the RPG-bound map (Figure 4A and B). This density appears as a roughly linear peptide inserting between the two TMDs of SUR1 from the intracellular side. By filtering the GBC/ATP and RPG/ATP maps to a lower resolution (6 Å), we were able to see contiguous density that extends out of the SUR1’s central cavity and connects to the density of the first structured residue R32 in Kir6.2 (Figure 4—figure supplement 1). Of note, a recent report by Wu et al. also pointed out a density in the SUR1’s central cavity that is nearly contiguous with the Kir6.2 cytoplasmic domain in our published GBC-bound structure and proposed it to be the N-terminus of Kir6.2 (Wu et al., 2018) (see Discussion).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig4-v2.jpg)
+
+**Figure 4.:** (A) RPG-bound SUR1 from focus-refined, unsharpened map viewed from the side. The major domains are labeled in different colors. (B) Vertical slice view of the map shown in (A) that reveals the bound RPG (in gold) and the cryoEM density of Kir6.2 N-term (in magenta). (C) Comparison of the Kir6.2 N-term cryoEM density in the different structures in horizontal slices viewed from the bottom. All maps are sharpened and filtered to 6 Å. Apo and ATP-only structures are displayed at 1.8σ; RPG/ATP, GBC/ATP, and CBZ/ATP structures are displayed at 2.2σ. Note lower threshold is needed for the Kir6.2 N-term density in the ATP-only structure to become visible.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Maps were sharpened and filtered to 6 Å. The Kir6.2 N-term density shown in gold in the GBC/ATP structure and in blue in the RPG/ATP structure was obtained by subtracting the map calculated from the structure, and then low-pass filtered to 6 Å.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Kir6.2 N-term cryoEM density (pink mesh) with superposed polyalanine model shown in the RPG (green) bound SUR1 structural model. The piperidino moiety of RPG is highlighted with dotted red line to show its close proximity to the N-terminal methionine of the modeled Kir6.2 N-terminal peptide. The relationship between SUR1 C1142 and Kir6.2 L2 is shown to illustrate their close proximity, with Cα-Cα distance of ~7 Å. The Kir6.2 N-term density map was obtained by removing densities corresponding to modeled SUR1 and RPG from the focus-refined RPG/ATP map using the Color Zone option in Chimera, contoured to 12σ. The polyalanine model of the Kir6.2 N-term corresponding to amino acids 1–5 is shown in blue, 5–10 in tan, and 10–15 in red. (B) Western blot showing that deletion of Kir6.2 amino acids 2–5 (ΔN5) or amino acids 2–10 (ΔN10) attenuated or nearly abolished, respectively, the pharmacochaperoning effect [compared to 0.1% DMSO vehicle control (V)] of GBC (G; 1 µM), RPG (R; 1 µM), and CBZ (C; 10 µM) on the SUR1-F27S mutant. (C) Western blot showing Kir6.2 ΔN5 and ΔN10 also greatly impaired maturation of WT SUR1 (V), and rendered GBC, RPG, and CBZ less and less effective in enhancing WT SUR1 maturation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46417/elife-46417-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Table listing the top seven scoring MS/MS spectra for two inter-protein (Kir6.2/SUR1; Nr. 2, 6) and four intra-protein (SUR1/SUR1; Nr. 1, 3, 4, 5, 7; Note Nrs. 3 and 4 are the same crosslink with different z values) peptide crosslinks identified by MeroX software. Q-values of zero were calculated for all identified crosslinks using a decoy database of shuffled sequences from a database of 116 common protein contaminants, indicating a false discovery rate below 1%. All precursor ions for identified crosslinks also had mass errors below two ppm. (B) Score distribution histograms for identified intra- and inter-protein crosslinks and peptide identifications (red bars = decoy matches to shuffled sequences, blue bars = matches to correct sequences). (C) Precursor ion spectrum for +four charge state crosslink between Kir6.2 (5–16) and SUR1 (599–609) showing both light and heavy forms of the crosslinked peptide resulting from the 50:50 mixture of the H8 and D8 forms of CBDPS. Only the heavy form of each 8.05 mass shifted pair was selected for MS/MS analysis. (D) Annotated MS/MS fragment ion spectrum for the +four charge state crosslink between Kir6.2 (5–16, α-peptide) and SUR1 (599–609, β-peptide). Insert shows the matched y- and b-ions along the α- and β-peptide backbones, their relative intensities and their charge states. The graph at the bottom shows the mass errors of matched fragment ions, which all had errors below 10 ppm.
+
 Interestingly, in the RPG-bound structure the piperidino moiety of RPG is in close proximity to the density that corresponds to the most N-terminus of the KNt (Figure 4—figure supplement 2A). This observation agrees with previous findings that the increased affinity to RPG caused by Kir6.2 is due to the peperidino group (Stephan et al., 2006), and that deletion of only a few amino acids from the Kir6.2 N-terminus decreases RPG binding affinity by more than 30-fold (Kühner et al., 2012). Of note, the KNt density is also seen in the ATP-only reconstruction though not as strong or well-defined as in the drug-bound reconstructions (i.e., the density disappears at lower σ values for the ATP-only map), but is largely absent in the apo state structure (Figure 4C). This indicates KNt enters into the central cavity of the inward-facing SUR1 even in the absence of drugs, and that drug binding stabilizes the location of KNt in the central cavity. We found that deletion of amino acids 2–5 or 2–10 increasingly reduced the ability of the pharmacochaperones to correct the processing defect of the F27S TMD0 mutant SUR1 (Figure 4—figure supplement 2B). Although the reduction in the F27S-SUR1 mature band intensity in these experiments could be due to a destabilization effect of KNt deletions on F27S mutant SUR1, it could also suggest that the KNt is needed for the pharmacochaperoning effect. Interestingly, the same Kir6.2 N-terminal deletion mutations also reduced the maturation of WT SUR1 and the ability of pharmacochaperones to enhance WT SUR1 maturation (Figure 4—figure supplement 2C). These structural and functional observations lead us to propose that KNt binds to the central cavity of the SUR1 ABC core and stabilizes SUR1-Kir6.2 association by simultaneous interaction with multiple SUR1 TMD helices to facilitate complex assembly. This mechanism not only is important for efficient biogenesis of WT channels but also likely underlies the ability of pharmacochaperones to enhance WT channel biogenesis efficiency and rescue mutant channel assembly (see Discussion).
 
-## Physical and functional interactions of the distal N-terminus of Kir6.2 with SUR1
+### Physical and functional interactions of the distal N-terminus of Kir6.2 with SUR1
 
 While our cryoEM structures support the assignment of the KNt density, which is consistent with the many functional experiments described above (Babenko and Bryan, 2002; Babenko et al., 1999; Devaraneni et al., 2015; Koster et al., 1999b; Martin et al., 2016), direct physical evidence linking KNt to SUR1 residues lining the central cavity is still lacking. Identification of crosslinked SUR1 residue via p-azidophenylalanine engineered in KNt is technically challenging due to the complex chemistry of the azido-mediated crosslinks (Devaraneni et al., 2015). As an alternative approach, we performed crosslinking experiments using an amine-reactive homobifunctional crosslinker CBDPS (Cyanurbiotindimercaptopropionylsuccinimide) with purified KATP channels bound to GBC, followed by mass spectrometry to identify crosslinked peptides, as described in Materials and methods. One of the inter-SUR1-Kir6.2 crosslinks we identified connected Kir6.2 lysine five and SUR1 lysine 602 (Figure 4—figure supplement 3), which is near the drug binding site in our structural model. The distance between α carbons (Cα) of the crosslinked lysines in our model is ~18 Å, which is within the reported range for the linker (Brodie et al., 2019). This result provides the first evidence for the physical proximity of KNt to the SUR1 ABC core central cavity.
 
@@ -100,35 +441,248 @@ In summary, our study revealed a mechanism by which a diverse set of compounds m
 
 ## Materials and methods
 
-## Cell lines used for protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Cricetus cricetus)</td>
+      <td>ABCC8 (SUR1)</td>
+      <td>UniProt database</td>
+      <td>Q09427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>KCNJ11 (Kir6.2)</td>
+      <td>UniProt database</td>
+      <td>P70673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant adenovirus (Cricetus cricetus)</td>
+      <td>FLAG-tagged hamster SUR1</td>
+      <td>PMID: 28092267</td>
+      <td></td>
+      <td>FLAG-epitope inserted at the N-terminus of SUR1 and cloned into AdEasy vector for production of adenovirus</td>
+    </tr>
+    <tr>
+      <td>Recombinant adenovirus (Rattus norvegicus)</td>
+      <td>Rat Kir6.2</td>
+      <td>PMID: 28092267</td>
+      <td>N/A</td>
+      <td>Constructed using the AdEasy vector for production of adenovirus</td>
+    </tr>
+    <tr>
+      <td>Recombinant adenovirus</td>
+      <td>tTA</td>
+      <td>PMID: 28092267</td>
+      <td>N/A</td>
+      <td>Adenovirus for over-expression of Tetracycline-controlled transactivator (tTA) under CMV promoter used for Tet-Off system</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Cricetus cricetus)</td>
+      <td>FLAG-tagged ham SUR1 in pECE</td>
+      <td>PMID: 11226335</td>
+      <td>N/A</td>
+      <td>FLAG-epitope inserted at the N-terminus of SUR1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (Rattus norvegicus)</td>
+      <td>Rat Kir6.2 in pcDNA3</td>
+      <td>PMID: 14707124</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>INS-1 clone 832/13</td>
+      <td>PMID: 10868964</td>
+      <td>RRID:CVCL_7226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus aethiops)</td>
+      <td>COSm6</td>
+      <td>PMID: 11226335</td>
+      <td>RRID:CVCL_8561</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Calbiochem</td>
+      <td>CAS 11024-24-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glibenclamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>G0639</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Repaglinide</td>
+      <td>Sigma-Aldrich</td>
+      <td>R9028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbamazepine</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CBDPS-H8/D8</td>
+      <td>Creative Molecules, Inc</td>
+      <td>Cat. Number: 014S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE6</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>FLAG-peptide</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3290</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SUR1 (rabbit polyclonal</td>
+      <td>PMID: 17575084</td>
+      <td>N/A</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish Peroxidase conjugated goat anti-rabbit secondary</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Code: 111-035-144</td>
+      <td>(1/1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Serial EM</td>
+      <td>PMID: 16182563</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MOTIONCOR2</td>
+      <td>PMID: 28250466</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>PMID: 26278980</td>
+      <td>http://grigoriefflab.janelia.org/ctffind4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DoGPicker</td>
+      <td>PMID: 19374019</td>
+      <td>https://sbgrid.org/software/titles/dogpicker</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion-3</td>
+      <td>PMID: 30412051</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>PMID: 20383002</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID: 15046863</td>
+      <td>http://www.cgl.ucsf.edu/chimera</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>Schrödinger</td>
+      <td>https://pymol.org/2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines used for protein expression
 
 INS-1 cells clone 832/13 and COSm6 cells were used for protein expression (see below). The identity of these cell lines has been authenticated (see Key Resources Table above). These cell lines are not on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee. The mycoplasma contamination testing was performed routinely in the lab and shown to be negative for the work described here.
 
-## Protein expression and purification
+### Protein expression and purification
 
 KATP channels were expressed and purified as described previously (Martin et al., 2017a; Martin et al., 2017b). Briefly, the genes encoding pancreatic KATP channel subunits, which comprise a hamster SUR1 and a rat Kir6.2 (94.5% and 96.2% sequence identity to human, respectively), were packaged into recombinant adenoviruses (Lin et al., 2005; Pratt et al., 2009); both are WT sequences, except for a FLAG tag (DYKDDDDK) engineered into the N-terminus of SUR1 for affinity purification. INS-1 clone 832/13 (Hohmeier et al., 2000), a rat insulinoma cell line, was infected with the adenoviral constructs in 15 cm tissue culture plates. Protein was expressed in the presence of 1 mM Na butyrate as well as 5 µM RPG (for the RPG/ATP structure) or 10 µM CBZ (for the CBZ/ATP structure) to enhance expression and formation of the channel complex (Chen et al., 2013; Yan et al., 2006). At 40–48 hr post-infection, cells were harvested and cell pellets flash frozen in liquid nitrogen and stored at −80°C until purification.
 
 For purification, cells were resuspended in hypotonic buffer (15 mM KCl, 10 mM HEPES, 0.25 mM DTT, pH 7.5) and lysed by Dounce homogenization. The total membrane fraction was resuspended in buffer A (0.2M NaCl, 0.1M KCl, 0.05M HEPES, 0.25 mM DTT, 4% sucrose, pH 7.5) and solubilized with 0.5% Digitonin. Note for the ATP-only dataset, 1 mM ATP was included throughout the purification; for the CBZ/ATP dataset, 10 µM CBZ and 1 mM ATP were present throughout; for the RPG/ATP dataset, 1 mM ATP and 30 µM RPG were included throughout. The soluble fraction was incubated with anti-FLAG M2 affinity agarose for 4 hr. The agarose beads were washed three times with 4X beads volume of buffer A (without sucrose) and bound proteins eluted with buffer A (without sucrose) containing 0.25 mg/mL FLAG peptide. Purified complexes were concentrated to ~1–1.5 mg/mL and used immediately for cryo grid preparation. For the RPG/ATP sample, the final concentration of RPG was 30 µM, and ATP 1 mM; for the CBZ/ATP sample, the final concentration of CBZ was 10 µM, and ATP 1 mM; for the ATP-only sample, the final ATP concentration was 1 mM.
 
-## Sample preparation and data acquisition for cryo-EM analysis
+### Sample preparation and data acquisition for cryo-EM analysis
 
 3 µL of purified KATP channel complex was loaded onto UltrAufoil gold grids which had been glow-discharged for 60 s at 15 mA with a Pelco EasyGlow. The sample was blotted for 2 s (blot force −4; 100% humidity) and cryo-plunged into liquid ethane cooled by liquid nitrogen using a Vitrobot Mark III (FEI).
 
 Single-particle cryo-EM data was collected on a Titan Krios 300 kV using a Falcon III detector (Thermo Scientific) for the RPG/ATP dataset and a Gatan K2 Summit detector for the CBZ/ATP and the ATP only datasets. The apo dataset was collected on a Talos Arctica 200 kV microscope with a Gatan K2 Summit detector using SerialEM. Data collected using the Gatan K2 Summit direct electron detector were performed in the super-resolution mode, post-GIF (20 eV window), at a physical pixel size of 1.72 Å (Krios) or 1.826 Å (Arctica). For the RPG/ATP dataset, the calibrated pixel-size of the Falcon III was at 1.045 Å. Defocus was varied between −1.0 and −3.0 µm across the datasets. Detailed imaging parameters are provided in Table 1.
 
-## Image processing
+### Image processing
 
 The raw frame stacks were gain-normalized and then aligned and dose-compensated using Motioncor2 (Zheng et al., 2017) with patch-based alignment (5 × 5). CTF parameters were estimated from the aligned frame sums using CTFFIND4 (Rohou and Grigorieff, 2015). Particles were picked automatically using DoGPicker (Voss et al., 2009) with a broad threshold range to reduce bias. Subsequently, each image was analyzed manually to recover particles missed by automatic picking and remove bad micrographs. 2D classifications were done using RELION-2 (Kimanius et al., 2016). Classes displaying fully assembled complexes and high signal/noise were selected and particles re-extracted at 1.72 Å/pix (or 1 Å/pix for the RPG/ATP dataset) and then used as input for 3D classification in RELION-2 (see Table 1 and Figure 1—figure supplements 1–4).
 
 Extensive 3D classification was performed to sample heterogeneity within the data. Symmetry was not imposed at this step in order to select only true four-fold classes. Up to four consecutive rounds of classification were performed, specifying 4 or five classes per round. Individual classes and combinations of classes were refined for each dataset to achieve the best reconstructions (Figure 1—figure supplements 1–4). A soft mask encompassing the entire complex was used during refinement in RELION, with C4 symmetry imposed to yield an overall channel reconstruction using the gold-standard FSC cutoff. The map was B-factor corrected and filtered using RELION-2’s Postprocessing procedure, with the same mask used for refinement.
 
-## Focused refinement
+### Focused refinement
 
 Focused refinement of SUR1 was carried out in RELION-3 using symmetry expansion, partial signal subtraction that removes signals outside the masked region, followed by further 3D refinement of signal subtracted particles (Scheres, 2016). Different masking strategies were applied to the different datasets for focused refinement to obtain the best reconstruction (Figure 1—figure supplements 1–4). For the RPG/ATP dataset, refinement against the SUR1 ABC core module following symmetry expansion and signal subtraction led to significantly improved resolution (Figure 1—figure supplement 1). For the CBZ/ATP dataset, refinement against the entire SUR1 was performed, which also yielded an improved density map for SUR1 (Figure 1—figure supplement 2).
 
 Similar focused refinement strategies were initially applied for the previously published GBC/ATP dataset and the new ATP-only and the apo datasets. However, this resulted in deterioration of map quality and resolution compared to the starting reconstructions. Therefore, alternative signal subtraction strategies were tested for focused refinement, which led to the use of a mask that includes the Kir6.2 tetramer and one SUR1 for the three datasets. Thus, for the GBC/ATP dataset, the particles included in the final C4 reconstruction were subjected to C4 symmetry expansion and signal subtraction using a mask that includes the Kir6.2 tetramer and one SUR1 (Figure 1—figure supplement 3). Although the resulting map showed little improvement in overall resolution compared to our previously published C4 map (Martin et al., 2017a), the local resolution of the SUR1 in several regions was significantly improved, especially NBD1 and the linker between TMD2 and NBD2 (Figure 1—figure supplement 5). A similar scheme with some modifications was employed for the ATP-only and the apo datasets (Figure 1—figure supplement 4).
 
-## Modeling
+### Modeling
 
 Modeling was performed for the RPG- and GBC-bound SUR1 maps, which following focused refinement have the highest resolutions among all the structures included in this study.
 
@@ -138,7 +692,7 @@ Model building for the GBC-SUR1 map was similarly performed. Because the GBC-bou
 
 SUR1 model building in the CBZ-bound SUR1 map was also performed following the same procedure outlined for GBC-SUR1, except that the initial model was the final ABC core structure from the RPG-SUR1 model. Note for the CBZ map, no attempt was made to incorporate the CBZ molecule due to uncertainty in whether the CBZ binds as a monomer or dimer, as discussed in the main text. Also, due to insufficient resolution ATP molecule bound at NBD1 was not modeled.
 
-## Functional studies
+### Functional studies
 
 Point mutations were introduced into hamster SUR1 cDNA in pECE using the QuikChange site-directed mutagenesis kit (Stratagene). Mutations were confirmed by DNA sequencing. Mutant SUR1 cDNA in pECE and rat Kir6.2 in pcDNA3 were co-transfected into COS cells using FuGENE6, as described previously (Devaraneni et al., 2015), and used for Western blotting and electrophysiology as described below.
 
@@ -146,10 +700,10 @@ For Western blotting, cells were lysed in a buffer containing 20 mM HEPES (pH 7.
 
 For electrophysiology experiments testing the effects of crosslinking, cells co-transfected with SUR1 and Kir6.2 cDNAs along with the cDNA for the green fluorescent protein GFP (to facilitate identification of transfected cells) were plated onto glass coverslips 24 hr after transfection and recordings made in the following two days. All experiments were performed at room temperature as previously described Devaraneni et al. (2015). Micropipettes were pulled from non-heparinized Kimble glass (Fisher Scientific) on a horizontal puller (Sutter Instrument, Co., Novato, CA, USA). Electrode resistance was typically 1–2 MΩ when filled with K-INT solution containing 140 mM KCl, 10 mM K-HEPES, 1 mM K-EGTA, pH 7.3. ATP was added as the potassium salt. Inside-out patches of cells bathed in K-INT were voltage-clamped with an Axopatch 1D amplifier (Axon Inc, Foster City, CA). ATP (as the potassium salt), I2 (diluted from 250 mM stock in ethanol), or dithiothreitol (DTT) were added to K-INT as specified in the figure legend. All currents were measured at a membrane potential of −50 mV (pipette voltage = +50 mV). Data were analyzed using pCLAMP10 software (Axon Instrument). Off-line analysis was performed using Microsoft Excel programs. Data were presented as mean ± standard error of the mean (s.e.m.).
 
-## Crosslinking and mass spectrometry
+### Crosslinking and mass spectrometry
 
 Purified KATP channels were crosslinked using a 50:50 mixture of light (H8) and heavy (D8), amine-reactive, homobifunctional crosslinker CyanurBiotinDimercaptoPropionylSuccinimide (CBDPS) [14 Å span] (Creative Molecules Inc) (Petrotchenko et al., 2011). CBDPS was dissolved in anhydrous DMSO at 100 mM concentration, then immediately added to the purified sample. The final reaction buffer contained 150 mM NaCl, 50 mM KCl, 50 mM HEPES, pH 7.5, 0.05% digitonin, 1 mM CBDPS, 1% DMSO, 1 μM GBC, and 0.30 mg/ml purified protein in a volume of 180 µl. The crosslinking reaction was allowed to proceed for 20 min on ice, then quenched with 100 mM Tris, pH 8.0. Protein was then methanol/chloroform precipitated by: addition of 400 µl of methanol, vortexing, addition of 100 µl of chloroform, vortexing, addition of 300 µl of water, vortexing, and the mixture centrifuged at 16,000 x g at 4°C for 10 min. The upper aqueous layer was then removed, being careful not to remove the precipitated protein at the interface, 500 µl of methanol was added, the sample vortexed, then centrifuged as above. The supernatant was then removed and the pellet was washed twice by addition of 500 µl of methanol, gentle vortexing, and centrifugation as above. The pellet was dissolved by shaking for 30 min at 37°C in 15 µl of 8M urea and 20 µl of 50 mM ammonium bicarbonate containing 0.2% ProteaseMAX detergent (Promega). The sample was then reduced by addition of 40.3 µl of 50 mM ammonium bicarbonate, 1 µl of 0.5M dithiothreitol, and heating at 57°C for 30 min. The sample was then alkylated by addition of 2.7 µl of 0.55M iodoacetamide and incubation in the dark for 15 min. Digestion of the sample was then performed overnight at 37°C with shaking after addition of 1 µl of 1% ProteaseMAX detergent and 20 µl of MS-Grade trypsin (Thermo Scientific) dissolved at 0.1 µg/µl concentration in 1 mM HCl. Following digestion, trifluoroacetic acid was added to a final 0.5%, the sample incubated at room temperature for 5 min, centrifuged at 16,000 x g for 15 min, and the supernatant removed. Crosslinked peptides were then affinity purified using reagents and hardware provided in a Cleavable ICAT Reagent Kit for Protein Labeling (monoplex version) using the manufacturer’s recommended protocol (Sciex), except the digest was applied directly to the avidin affinity cartridge without the prior cation exchange purification, the digest was diluted in 1.0 ml the manufacturer’s avidin cartridge loading buffer, and the pH of the solution was adjusted to seven by addition of 1.0 M Tris, pH 8.0 buffer prior to injection onto the avidin cartridge. Purified peptides were then dried by vacuum centrifugation, dissolved in 20 µl of 5% formic acid and analyzed by liquid chromatography/mass spectrometry. The digest was injected onto an Acclaim PepMap 100 μm x 2 cm NanoViper C18, 5 μm trap (Thermo Scientific), at 5 µl/min for 5 min in mobile phase A containing water, 0.1% formic acid, then switched on-line to a PepMap RSLC C18, 2 μm, 75 μm x 25 cm EasySpray column (Thermo Scientific). Peptides were then eluted using a 7.5–30% mobile phase B (acetonitrile, 0.1% formic acid) gradient over 90 min at a 300 nl/min flow rate. Data-dependent tandem mass spectrometry analysis was performed using an Orbitrap Fusion instrument fitted with an EasySpray source (Thermo Fisher Scientific). Survey scans (m/z = 400–1500) and data-dependent MS2 scans were performed in the Orbitrap mass analyzer at a resolution = 120,000, and 30,000, respectively, following higher energy collision dissociation (HCD) using a collision energy of 35 following quadrupole isolation at a 1.6 m/z isolation width. Peptides of charge states 3–7 were selected with signal intensities over 5 × 104 and having a targeted inclusion mass difference of 8.05 to select peptides containing the mass shifted CBDPS cross-linkers. The instrument was also configured to collect MS/MS scans for only the heavy labeled peptide pair. The method also used dynamic exclusion with 30 s duration and mass tolerance of 10 ppm. Cross-linked peptides were identified using version 2.0.0.5 of MeroX software (Iacobucci et al., 2018) using cross-linker masses of 509.0974 and 517.1476 for the (H8) and (D8) forms of the CBDPS cross-linker respectively, and mass precision tolerances of 5 and 10 ppm for precursors and fragment ions, respectively. The instrument mzML file, detailed instrument settings, MeroX result file, FASTA file containing Kir6.2 and SUR1 sequences, and MeroX settings file can be downloaded at ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier PXD014498.
 
-## Note added in proof
+### Note added in proof
 
 While this paper was in review, a paper has been published by Ding et al. showing a structure of a KATP channel formed by a SUR1-Kir6.2 fusion protein bound to repaglinide (Ding et al., 2019).

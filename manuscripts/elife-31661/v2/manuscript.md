@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.31661.001 β‐ and γ‐cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non‐redundant biological roles. The key determinants that drive their functional distinction are unknown. Here, we tested the hypothesis that β- and γ-actin functions are defined by their nucleotide, rather than their amino acid sequence, using targeted editing of the mouse genome. Although previous studies have shown that disruption of β-actin gene critically impacts cell migration and mouse embryogenesis, we demonstrate here that generation of a mouse lacking β-actin protein by editing β-actin gene to encode γ-actin protein, and vice versa, does not affect cell migration and/or organism survival. Our data suggest that the essential in vivo function of β-actin is provided by the gene sequence independent of the encoded protein isoform. We propose that this regulation constitutes a global ‘silent code’ mechanism that controls the functional diversity of protein isoforms.
+β‐ and γ‐cytoplasmic actin are nearly indistinguishable in their amino acid sequence, but are encoded by different genes that play non‐redundant biological roles. The key determinants that drive their functional distinction are unknown. Here, we tested the hypothesis that β- and γ-actin functions are defined by their nucleotide, rather than their amino acid sequence, using targeted editing of the mouse genome. Although previous studies have shown that disruption of β-actin gene critically impacts cell migration and mouse embryogenesis, we demonstrate here that generation of a mouse lacking β-actin protein by editing β-actin gene to encode γ-actin protein, and vice versa, does not affect cell migration and/or organism survival. Our data suggest that the essential in vivo function of β-actin is provided by the gene sequence independent of the encoded protein isoform. We propose that this regulation constitutes a global ‘silent code’ mechanism that controls the functional diversity of protein isoforms.
 
 ## Introduction
 
@@ -36,9 +36,21 @@ Here, we used targeted editing of the mouse genome to test the hypothesis that �
 
 ## Results
 
-## β-actin nucleotide sequence, rather than amino acid sequence, defines its essential role in vivo
+### β-actin nucleotide sequence, rather than amino acid sequence, defines its essential role in vivo
 
 It has been previously found that knockout of β-actin gene in mice, unlike γ-actin, leads to early embryonic lethality – a result that definitively demonstrates its essential, non-redundant biological function (Bunnell et al., 2011). To test whether this essential function of β-actin is defined by its amino acid or nucleotide sequence, we used CRISPR/Cas9-mediated gene editing to introduce five point mutations into the native mouse β-actin gene (Actb), altering it to encode γ-actin protein without changing any of the features of the rest of the gene sequence (‘beta-coded gamma actin’, Figure 1A). We termed this edited gene Actbc-g, in which the native β-actin gene is nearly intact (with five point mutations within the first 10 codons) and contains the same promoter, as well as the same coding and non-coding elements, but the protein produced from this gene is identical to γ-actin. The outcome is no β-actin protein at all, enabling us to definitively test whether β-actin amino acid sequence, or its nucleotide sequence, is responsible for its essential function in organism’s survival. If intact β-actin amino acid sequence is required, the mutant mice would die in embryogenesis, similarly to the β-actin knockout mice (Bunnell et al., 2011; Shawlot et al., 1998; Shmerling et al., 2005; Strathdee et al., 2008; Tondeleir et al., 2013, 2014). If the nucleotide sequence also contributes, these mice would be expected to survive longer than the β-actin knockout mice and have an overall milder phenotype. Finally, if the nucleotide sequence is the sole determinant of β-actin function, these mice would have no phenotype at all.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-v2.jpg)
+
+**Figure 1.:** (A) CRISPR/Cas9 editing strategy used to generate Actbc-g mouse. (B) photos of Actbc-g E12.5 mouse embryos, with genotypes indicated. (C) photos of Actbc-g mice after gene editing, alone (top left) and next to age-matched (top right) and littermate wild type (WT) (bottom). Three mice from two different litters are shown. (D) H&E-stained sagittal sections of the heads (top) and bodies (bottom) of littermate P0 wild type (WT) and Actbc-g mice. Scale bar, 1 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Top left, genotyping strategy: editing of the N-terminal codons of the β-actin gene abolishes an EcoRV restriction site, enabling the screening of the edited gene variants by EcoRV digestion of the PCR-generated DNA fragments corresponding to the 5′ of the actin sequence. Top right, PCR products before (top) and after (bottom) EcoRV digestion. Bottom, western blots of wild type, heterozygous, and Actbc-g mouse tail lysates with antibodies to β- and γ- actin.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Screen shots from the Chromas sequence viewing software.
 
 This gene editing strategy was successful, generating homozygous mouse mutants that contained no β-actin protein (Figure 1—figure supplements 1–2). Strikingly, Actbc-g mice appeared completely healthy, viable, and fertile with no signs of deficiencies previously seen in any of the β-actin knockout mouse models. These mice did not exhibit any visible defects in embryogenesis (Figure 1B), and appeared healthy and normal at birth and throughout life (Figure 1C) (observed until approximately 8 months old by the time of the submission of this study for publication). These mice also had normal fertility, as evidenced by litter sizes from Actbc-g homozygous breeding pairs that averaged 6.4 pups per litter (±0.38 SEM, n = 9), compared to the average litter size of 6.3 pups previously reported for their matching background wild type strain C57BL/6 (http://www.informatics.jax.org/silver/tables/table4-1.shtml). Thus, this result definitively proves that β-actin nucleotide sequence, rather than its amino acid sequence, determines the essential function of β-actin in vivo.
 
@@ -46,15 +58,37 @@ To test for possible milder defects in these mice, we analyzed the overall morph
 
 To confirm the replacement of β-actin protein in these mice with the γ-actin protein, we performed quantitative western blots from several tissues where non-muscle actin isoforms are normally expressed at high levels, including brain, kidney, liver, and lungs (Figure 2). In all these tissues, loss of β-actin protein was accompanied by a prominent increase in γ-actin, without overall changes in total actin levels (Figure 2 and Figure 2—figure supplement 1). Corresponding changes were also seen on 2D gels from these tissues, run under shallow pH gradient to separate actin isoforms (Figure 2 and Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-v2.jpg)
+
+**Figure 2.:** Western blot analysis showing images (left) and quantifications (right) of whole tissue lysates from wild type (Actb+/+) and Actbcg mice. Fluorescence images obtained from the Odyssey gel imager are shown. For quantification, total fluorescence from the 43 kDa actin band was normalized to the loading control and to the actin level in the first lane for each blot. Error bars represent SEM, n = 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Western blots of wild type, heterozygous, and Actbc-g mouse brain lysates probed with antibodies to β- and γ-actin and total actin (pan-actin). Mouse genotypes are indicated on top of each lane, and the antibodies used are listed below each blot.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Top, genotyping strategy: editing of the N-terminal codons of theγ- actin gene generates an EcoRV restriction site, enabling the screening of the edited gene variants by EcoRV digestion of the PCR-generated DNA fragments corresponding to the beginning of the actin sequence. Bottom, PCR products before (top) and after (bottom) EcoRV digestion.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Top, CRISPR/Cas9 editing strategy used to generate Actg1c-b mouse. Bottom left, photos of Actg1c-b mouse after gene editing, to age-matched wild type. Bottom right, H and E-stained sagittal sections of the heads (top) and bodies (bottom) of littermate wild type (WT) and Actg1c-b mice. Scale bar, 1 mm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Western blots with the actin antibodies indicated on the left using tissue homogenates from wild type control and Actg1c-b mouse.
+
 We also performed a reciprocal experiment, using CRISPR/Cas9 gene editing to edit the mouse γ-actin gene to encode β-actin protein (‘gamma-coded beta actin’ or γc-β-actin, Figure 2—figure supplements 3–4). This strategy was only partially successful, resulting in replacement of the first three nucleotides to convert the N-terminal MEEE sequence of γ-actin into the MDDD sequence of β-actin, while failing to achieve I/V substitution at codon 10. However, given that the full deletion of γ-actin has a much milder phenotype than β-actin mouse knockout (Belyantseva et al., 2009; Bunnell et al., 2011; Bunnell and Ervasti, 2010), we did not pursue this further and analyzed the partially edited mouse instead. These Actg1c-b mice showed no detectable phenotype. At the same time, they showed disappearance of γ-actin protein and a corresponding increase in β-actin-like protein by western blots (Figure 2—figure supplement 5). These results suggest that γ-actin in vivo functions, like β-actin, is also defined by its nucleotide, rather than amino acid sequence.
 
-## γ-actin protein expressed off β-actin gene supports normal cell migration
+### γ-actin protein expressed off β-actin gene supports normal cell migration
 
 Since β-actin has been previously shown to play a major role in directional cell migration, and its knockout in cells leads to severe impairments in their actin cytoskeleton organization and their ability to migrate (Bunnell et al., 2011; Tondeleir et al., 2012), we next analyzed the actin cytoskeleton distribution and directional migration of mouse embryonic fibroblasts (MEF) derived from littermate wild type and Actbc-g mice. Despite the complete absence of β-actin protein in these cells, their actin cytoskeleton appeared similar to that of wild type cells. We detected no difference in F-actin levels in these cells (Figure 3), or in the morphology and appearance of the actin cytoskeleton (Figure 3 and Figure 4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig3-v2.jpg)
 
-**Figure 3.:** Actbc-g mice have normal actin cytoskeleton, despite complete lack of β-actin.Top, quantification of total F-actin detected by Phalloidin-AlexaFluor488 staining of wild type (Actb+/+) and Actbc-g primary mouse embryonic fibroblasts. Numbers were averaged from 69 cells in WT and 76 cells in Actbc-g, obtained from two different primary cultures independently derived from two different littermate embryos for each set. Bottom, representative images of both cell types stained with Phalloidin-AlexaFluor488 or antibodies to both actin isoforms as indicated.
+**Figure 3.:** Top, quantification of total F-actin detected by Phalloidin-AlexaFluor488 staining of wild type (Actb+/+) and Actbc-g primary mouse embryonic fibroblasts. Numbers were averaged from 69 cells in WT and 76 cells in Actbc-g, obtained from two different primary cultures independently derived from two different littermate embryos for each set. Bottom, representative images of both cell types stained with Phalloidin-AlexaFluor488 or antibodies to both actin isoforms as indicated.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig4-v2.jpg)
 
@@ -62,11 +96,15 @@ Since β-actin has been previously shown to play a major role in directional cel
 
 To test the ability of these cells to migrate, we performed wound healing assays to measure the overall migration rates of the cell monolayers in wild type and Actbc-g. We also measured the directionality of single cell migration on fibronectin-coated dishes. In both assays, no difference was observed between the two cell types (Figure 5 and Figure 5—videos 1 and 2), confirming that the actin isoform substitution did not result in any significant changes in these cells’ ability to migrate. Thus, our data definitively demonstrate that the essential function of β-actin in vivo is defined by its nucleotide, and not its amino acid sequence.
 
-## Actin isoform coding sequences show dramatic differences in ribosome densities that correlate with their essential biological function
+![Figure 5.](https://cdn.elifesciences.org/articles/31661/elife-31661-fig5-v2.jpg)
+
+**Figure 5.:** Left, phase contrast images of the first (0′) and last (600′) frame taken from a representative time lapse videos of the WT and Actbc-g cells at the edge of a monolayer migrating into an infinite scratch wound. Overlay of the two frames is shown in the bottom row. Scale bar, 100 µm. Right top, quantification of the cell migration rate as μm2/min, WT: n = 28, Actbc-g: n = 29 averaged from two independently derived primary cultures for each set. See Supplemental Videos 1 and 2. Right bottom, quantification of cell directionality in single cell migration assays (calculated as persistence over time, WT: n = 49, Actbc-g: n = 50) suggests that single cell migration was not affected in Actbc-g cells.
+
+### Actin isoform coding sequences show dramatic differences in ribosome densities that correlate with their essential biological function
 
 We have previously reported that β- and γ-actin are differentially arginylated, due to differences in their mRNA nucleotide coding sequences (arising via silent substitutions), which leads to different translation dynamics, and the resulting rates of their accumulation in cells (Buxbaum et al., 2014; Zhang et al., 2010). To assess the potential differences in translation dynamics between the actin isoforms, we analyzed the global ribosome profiling data for these genes (mouse Actb and Actg1, encoding non-muscle β- and γ-actin, respectively) available at the GWIPS-Viz genome browser (http://gwips.ucc.ie; Michel et al., 2014) that aggregates the results of multiple ribosome profiling studies across genomes. Remarkably, composite data from 26 independently performed ribosome profiling studies from different mouse tissues show that the ribosome density on mouse β-actin mRNA is over a thousand fold higher than γ-actin (average ribosome density over the first 150 codons: 1351.607 for β-actin versus 1.289 for γ-actin, see also Table 1 and Supplementary file 1 and 2) . These data suggest that the translation dynamics of β-actin in vivo is dramatically different from that of γ-actin. We next extended this analysis to the whole family of mouse actin genes and correlated the previously reported phenotypes resulting from mouse knockouts of different actin isoforms with the ribosome density number for each isoform (Table 1). This analysis shows that members of the actin family have vastly different ribosome densities, with β-actin being by far the highest, while γ-enteric smooth muscle actin is by far the lowest (ribosome density 0.377), suggesting that the intracellular accumulation rate for these two proteins, as well as their translation dynamics, should be vastly different from each other. In support, they also have different mRNA structures in the coding region (Zhang et al., 2010, Supplementary file 3 and 4). Notably, the actin isoforms that tend to become up-regulated in different knockout models are typically those with the closest ribosome density to the isoform that had been knocked out (Table 1). It appears likely that the success of functional compensation may also be linked to this number, directly or indirectly. For instance, alpha skeletal and alpha smooth muscle actins appear to partially cross-compensate for each other, and these isoforms are also the second and third highest by ribosome density, after β-actin. α-cardiac actin completely rescues knockout of α-skeletal actin, which has the closest ribosome density. In contrast, loss of α-cardiac actin cannot be substituted for by γ-enteric smooth muscle actin, which has a ~10 fold lower ribosome density. These results suggest the actin isoform with similar ribosome density can plausibly compensate for the loss of one of the isoforms. In agreement, given the orders of magnitude difference in ribosome density between β-actin and other actin isoforms, none of the other actin isoforms can compensate for the loss of β-actin. We propose that changes in ribosome density arising from silent substitutions in nucleotide sequence, affect translation dynamics and protein accumulation rates, which in turn regulate functional diversity of actins.
 
-## Silent substitutions in the coding sequence as a potential global regulator of homologous protein isoforms in eukaryotic genomes (‘silent code’)
+### Silent substitutions in the coding sequence as a potential global regulator of homologous protein isoforms in eukaryotic genomes (‘silent code’)
 
 We next used sequence analysis and Ribo-seq data profiling to test whether this type of silent substitution dependent protein regulation may potentially be applicable to other closely related protein isoform families in the mouse genome. First, to identify all protein families encoding highly similar proteins, we searched the mouse genome for proteins that are over 90% identical both in length and in their amino acid sequence over their entire length, and are encoded by different genes. This search yielded 741 families in mouse, encoding nearly 4000 different open reading frames. Next, we compared ribosome density numbers for different protein isoforms within these families using published ribosome profiling data found on GWIPS-Viz genome browser, and sorted these families by the normalized standard deviation (SD) of difference between ribosome densities for different members within the family. We discarded those families in which the ribosome density on the highest translating gene was less than 1, suggesting that their relative abundance in the polysome fraction is negligible (e.g., the majority of olfactory receptors). In the resulting list, we selected the top 100 families with SD of ribosome densities of 1.4 and above and classified them by functions (Supplementary file 1). We also performed the same analysis in two other vertebrate genomes, human and zebrafish (Supplementary files 2 and 3) and cross-referenced the identity of the top families to each other.
 
@@ -90,9 +128,83 @@ Despite the fact that non-muscle actin isoform genes have evolutionarily diverge
 
 Our sequence analysis and data mining suggest that this mechanism of homologous protein regulation through ‘silent code’ may be globally applicable to multiple protein families throughout eukaryotic genomes. Notably, one of the top candidate families for this regulation in addition to actin – tubulin – is also a major cytoskeletal protein regulated by multiple posttranslational modifications. Some members of the tubulin family conceivably may be regulated via silent substitutions in their coding sequence affecting translation dynamics, like shown previously for non-muscle actins. While systematic mouse knockout data for the alpha and β− tubulin isoform families is not available, based on the analogy with the actin isoforms, we predict that tubulin β-V (Tubb5) is likely the most essential of the β− tubulin genes, whose knockout likely cannot be substituted by up-regulation of any other β− tubulin. Notably, the two members of the γ− tubulin isoform family, Tubg1 and Tubg2, have been knocked out in mice, and appear to follow the same trend: knockout of Tubg1, the tubulin isoform with higher ribosome density, is embryonically lethal, while knockout of Tubg2 with the nearly 200 fold lower ribosome density is not (Yuba-Kubo et al., 2005). Further systematic analysis of knockouts of homologous isoforms would enable establishing the universality of the ‘silent code’.
 
+**Table 1.**
+ Severity of the actin isoform knockout phenotypes and their cross-compensation for each other correlate with their ribosome density.See (Perrin and Ervasti, 2010) for the references on the isoform knockout data. * From heterozygotes (since homozygous knockout is embryonic lethal) and knockout MEFs. † Tissue specific upregulation of different isoforms See (Bunnell and Ervasti, 2010).Table 1—source data 1.Composite ribosome profiling data for the actin gene family, plotted in logarithmic scale.Bottom panel shows the coarse curves for the data on top.Table 1—source data 2.Ribosome profiling data for the individual members of the actin family, plotted in logarithmic scale.Table 1—source data 3.Predictions of the secondary structures for β− and γ− actin coding sequences.Plot shows distance in nucleotides (x axis, 0 indicates the first ATG of the coding sequence) versus free energy (y axis).Table 1—source data 4Predictions for the initial regions of the β− and γ− actin coding sequence, compared to their codon-switched versions.Plot shows distance in nucleotides (x axis, 0 indicates the first ATG of the coding sequence) versus free energy (y axis). β-coded γ− actin mRNA is predicted to have a more relaxed structure around the translation initiation site, while being indistinguishable throughout the rest of the sequence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Gene symbol</th>
+      <th>NCBI accession number, protein</th>
+      <th>NCBI accession number, mRNA</th>
+      <th>Composite ribosome density</th>
+      <th>Mouse knockout phenotype</th>
+      <th>Other actin isoforms upregulated upon knockout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>β-cytoplasmic actin</td>
+      <td>Actb</td>
+      <td>NP_031419</td>
+      <td>NM_007393</td>
+      <td>1351.607</td>
+      <td>Early embryonic lethality</td>
+      <td>Acta2; some Actg1*</td>
+    </tr>
+    <tr>
+      <td>α-smooth muscle actin</td>
+      <td>Acta2</td>
+      <td>NP_031418</td>
+      <td>NM_007392</td>
+      <td>53.781</td>
+      <td>Viable, with vascular contractility and blood pressure defects</td>
+      <td>Acta1</td>
+    </tr>
+    <tr>
+      <td>α-skeletal actin</td>
+      <td>Acta1</td>
+      <td>NP_033736</td>
+      <td>NM_009606</td>
+      <td>10.267</td>
+      <td>Muscle weakness; postnatal lethality</td>
+      <td>Acta2 and Actc1</td>
+    </tr>
+    <tr>
+      <td>α-cardiac actin</td>
+      <td>Actc1</td>
+      <td>NP_033738</td>
+      <td>NM_009608</td>
+      <td>3.872</td>
+      <td>Perinatal lethality</td>
+      <td>Acta2 and Acta1</td>
+    </tr>
+    <tr>
+      <td>γ-cytoplasmic actin</td>
+      <td>Actg1</td>
+      <td>NP_033739</td>
+      <td>NM_009609</td>
+      <td>1.289</td>
+      <td>Viable, with growth defects and progressive deafness</td>
+      <td>Acta2, Actb, Acta1, and Actc1†</td>
+    </tr>
+    <tr>
+      <td>γ-enteric smooth muscle actin</td>
+      <td>Actg2</td>
+      <td>NP_033740</td>
+      <td>NM_009610</td>
+      <td>0.377</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
-## CRISPR/Cas9 mutagenesis and genotyping
+### CRISPR/Cas9 mutagenesis and genotyping
 
 C57Bl/6 strain was used to generate the gene-edited mice. The donor females were super-ovulated using 5 IU of PMSG followed 48 hr later with 5 IU HCG, after which the females were mated immediately to C57Bl/6 studs. MEGAshort-script T7 transcription kit (Ambion Thermo Fisher Scientific, Waltham, MA) was used for in vitro transcription of small guide sgRNA (gctgcgctggtcgtcgacaaCGG, where CGG is the Protospacer Adjacent Motif, PAM) as per manufacturer’s protocol. mMESSAGE mMACHINE T7 transcription kit (Ambion) was used to synthesize Cas9 mRNA. MEGAclear transcription clean up kit (Ambion Thermo Fisher Scientific) was used to purify the synthesized RNAs. About 20 hr post HCG, the CRISPR solution was injected into zygotes via pronuclear injection at a concertation of: Cas9 mRNA: 100 ng/µL, template DNA: 100 ng/µL, and gRNA: 50 ng/µL. The zygotes were further cultured overnight in KSOM media using a 5% CO2 incubator. All the embryos which successfully cleaved to the 2 cell stage were transferred into recipient females via oviduct transfer. A founder female that was mosaic for the mutation was derived and crossed with a wildtype male to derive heterozygotes. One male and female heterozygote from the F1 generation were crossed to produce F2 generation. Two separate litters from the F2 generation produced two wildtype females, five heterozygote males, one heterozygote female, and three homozygote males.
 
@@ -102,25 +214,25 @@ Template DNA sequence:
 
 The Actb gene has an EcoRV site which gets destroyed upon gene editing (Figure 1—figure supplement 1). We utilized restriction digestion of a PCR product produced from the Actb gene to determine the genotype of the resulting mice. While wild type (Actb+/+) mice gave two bands: 600 bp and 300 bp upon EcoRV digestion, mice homozygous for the mutations (Actbc-g/Actbc-g) give a single band at 900 bp. PCR products from mice that are heterozygous for the mutation (Actb/Actbc-g) gave three bands upon EcoRV digestion (Figure 1—figure supplement 1). The results were further verified by sequencing the 5′ end of the Actb gene. In order to verify that β-actin protein was no longer produced, tail samples were lysed and a western blot was carried out using isoform-specific antibodies: mouse anti-β-actin (Clone 4C2, EMD Millipore, Burlington, MA, and Clone AC15, Sigma Aldrich, Burlington, MA), mouse anti-γ-actin (Clone 2C3 EMD Millipore).
 
-## Cell culture
+### Cell culture
 
 Primary Mouse Embryonic Fibroblasts (MEFs) were isolated from the back area of freshly euthanized E12.5 mouse embryos by tissue disruption and cultured in DMEM (Gibco) supplemented with 10% FBS (Gibco).
 
-## Cell migration assays and imaging
+### Cell migration assays and imaging
 
 Cell migration was stimulated by making an infinite scratch wound. The cells were allowed to recover for a period of 2 hr before imaging. Migration rates were measured as the area covered by the edge of the wound in the field of view per unit time using Fiji (NIH, Bethesda, MD). For measurements of directionality in single cell migration assays, primary MEFs were cultured on glass bottom MatTek (Ashland, MA) dishes coated with 5 µg/ml Fibronectin at low cell densities. 2 hr after seeding, cells were imaged at 10 min intervals for 4 hr. Single cells were tracked using Metamorph Track Objects (Molecular Devices, Sunnyvale, CA) module. The obtained total displacement was divided by total distance of the track to obtain a directionality score shown in Figure 5. All images for these experiments were acquired on a Nikon Ti microscope with a 10X Phase objective and Andor iXon Ultra 888 EMCCD camera.
 
-## Immunofluorescence
+### Immunofluorescence
 
 To quantitate the amount of actin polymer, cells were seeded on coverslips in six well plates at 20,000 cells/well overnight and fixed in 4% (w/v) PFA at room temperature for 30 min. Cells were then stained with Phalloidin conjugated to AlexaFluor 594 (Molecular Probes, Eugene, OR). Images were acquired using Andor iXon Ultra 888 EMCCD camera at 40X and the total intensity of phalloidin per cell was measured using Metamorph (Molecular Devices).
 
-## Western blotting
+### Western blotting
 
 Tissues from 2 month old Actb+/+ and Actbc-g/Actbc-g mice were collected and flash frozen in liquid nitrogen. Brain, Kidney, Liver and Lung tissues were ground and weighed. The samples were lysed directly in 4x SDS sample buffer (1:4 w/v). Equal volumes of the lysates loaded for SDS-PAGE and 2D gel electrophoresis. Following transfer of the gels, the blots were dried and stained with LI-COR REVRT Total protein stain as per manufacturer's protocol. Images were obtained using an Odyssey scan bed in the 700 nm channel. The blots were then blocked and incubated with primary antibodies for mouse anti-β-actin (Clone 4C2, EMD Millipore), mouse anti-γ-actin (Clone 2C3, EMD Millipore), and rabbit anti-pan-actin (Cytoskeleton, Inc., Denver, CO). Secondary antibodies against mouse and rabbit conjugated to IRDye800 were used to probe the blots and images were acquired in the 800 nm channel using Odyssey scan bed. The total protein intensity was used to account for loading differences and the obtained signals were normalized to the first lane in the blot.
 
 2D gel analysis was performed by Kendrick Laboratories, Inc. (Madison, WI) as described by (Burgess-Cassler et al., 1989; O'Farrell, 1975) using shallow pH gradient for the first dimension to separate actin isoforms (pH 4–6, 4–8).
 
-## Sequence and ribosome profiling data analysis
+### Sequence and ribosome profiling data analysis
 
 NCBI RefSeq mouse genome v. 10 was used for this analysis. GWIPS read density profiles for mouse chromosomes were mapped to the NCBI RefSeq CDS annotations to produce the profiles for mouse mRNAs. Characteristic ribosome density was computed as the average density in the 5’ 150 codons of the CDS.
 

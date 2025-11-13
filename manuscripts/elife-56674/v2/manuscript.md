@@ -16,7 +16,7 @@
 
 ## Abstract
 
-DNA:RNA hybrids constitute a well-known source of recombinogenic DNA damage. The current literature is in agreement with DNA:RNA hybrids being produced co-transcriptionally by the invasion of the nascent RNA molecule produced in cis with its DNA template. However, it has also been suggested that recombinogenic DNA:RNA hybrids could be facilitated by the invasion of RNA molecules produced in trans in a Rad51-mediated reaction. Here, we tested the possibility that such DNA:RNA hybrids constitute a source of recombinogenic DNA damage taking advantage of Rad51-independent single-strand annealing (SSA) assays in the yeast Saccharomyces cerevisiae . For this, we used new constructs designed to induce expression of mRNA transcripts in trans with respect to the SSA system. We show that unscheduled and recombinogenic DNA:RNA hybrids that trigger the SSA event are formed in cis during transcription and in a Rad51-independent manner. We found no evidence that such hybrids form in trans and in a Rad51-dependent manner.
+DNA:RNA hybrids constitute a well-known source of recombinogenic DNA damage. The current literature is in agreement with DNA:RNA hybrids being produced co-transcriptionally by the invasion of the nascent RNA molecule produced in cis with its DNA template. However, it has also been suggested that recombinogenic DNA:RNA hybrids could be facilitated by the invasion of RNA molecules produced in trans in a Rad51-mediated reaction. Here, we tested the possibility that such DNA:RNA hybrids constitute a source of recombinogenic DNA damage taking advantage of Rad51-independent single-strand annealing (SSA) assays in the yeast Saccharomyces cerevisiae. For this, we used new constructs designed to induce expression of mRNA transcripts in trans with respect to the SSA system. We show that unscheduled and recombinogenic DNA:RNA hybrids that trigger the SSA event are formed in cis during transcription and in a Rad51-independent manner. We found no evidence that such hybrids form in trans and in a Rad51-dependent manner.
 
 ## Introduction
 
@@ -28,21 +28,29 @@ DNA:RNA hybrids can also form in vitro with the aid of the bacterial DNA strand 
 
 ## Results
 
-## A new genetic assay to detect recombinogenic DNA:RNA hybrids with RNA produced in trans
+### A new genetic assay to detect recombinogenic DNA:RNA hybrids with RNA produced in trans
 
 We developed a new genetic assay to infer the formation of recombinogenic DNA:RNA hybrids with RNAs produced in trans. It is based on two plasmids, one containing the recombination system and the LacZ gene in cis (GL-LacZ recombination system), and another one providing the in trans LacZ transcripts (tetp:LacZ) (Figure 1). The bacterial LacZ gene consists of a 3 Kb sequence with high G+C content previously reported to be hyper-recombinant and difficult to transcribe in DNA:RNA hybrid-accumulating strains, such as tho mutants (Chávez et al., 2001).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig1-v2.jpg)
+
+**Figure 1.:** (A) DSBs induced in between direct repeats by DNA:RNA hybrids putatively formed with RNA produced in trans would be repaired by Rad51-independent Single-Strand Annealing (SSA) causing the deletion of one of the repeats. A DSB is depicted for simplicity, but other recombinogenic lesions such as nicks or ssDNA gaps cannot be ruled out. (B) Schematic representation of the recombination assay to study the recombinogenic potential RNA produced by transcription (Trx) in cis or in trans. Four combinations were studied: i) no transcription, with GL-LacZ construct turned transcriptionally off (2% glucose) and an empty plasmid; ii) transcription in trans, with GL-LacZ construct turned transcriptionally off (2% glucose) and the tetp:LacZ construct; iii) transcription in cis, with GL-LacZ construct turned transcriptionally on (2% galactose) and an empty plasmid; and iv) transcription in cis and in trans, with GL-LacZ construct turned transcriptionally on (2% galactose) and the tetp:LacZ construct.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Relative RNA levels at the LacZ gene from GL-LacZ and tetp:LacZ constructs when transcription was turned either off (Trx -) or on (Trx +) in WT (W303), hpr1Δ (U678.4C) and rnh1Δ rnh201Δ (HRN2.10C) strains transformed with either pRS314-GL-LacZ or pCM179. Transcription at the GL-LacZ construct was turned on or off by growth in media with 2% galactose or 2% glucose, respectively. Transcription at the tetp:LacZ construct was turned on or off by growth in media without or with 5 μg/mL doxycycline, respectively. Average and SEM of three independent experiments are shown.
 
 The GL-LacZ recombination system is a leu2 direct-repeat construct carrying the LacZ gene in between and under the GAL1 inducible promoter so that this construct is transcribed as a single RNA unit driven from the GAL1 promoter (Piruat and Aguilera, 1998). Single-Strand Annealing (SSA) events cause the deletion of the LacZ sequence and one of the leu2 repeats leading to Leu+ recombinants in a Rad51-independent manner (Figure 1A). To provide LacZ transcripts in trans, we used a fusion construct containing the complete bacterial LacZ gene sequence under the doxycycline-inducible tet promoter (tetp:LacZ). As a control of no expression in trans, we used transformants with an empty plasmid to avoid any possible effect from leaky transcription from the tet promoter in the presence of doxycycline.
 
 Yeast strains carrying both GL-LacZ recombination system and the tetp:LacZ construct were used to assay SSA events in the four different possible conditions: i) no transcription, with GL-LacZ construct turned transcriptionally off (2% glucose) and an empty plasmid; ii) transcription in trans, with GL-LacZ construct turned transcriptionally off (2% glucose) and the tetp:LacZ construct; iii) transcription in cis, with GL-LacZ construct turned transcriptionally on (2% galactose) and an empty plasmid; and iv) transcription in cis and in trans, with GL-LacZ construct turned transcriptionally on (2% galactose) and the tetp:LacZ construct (Figure 1B).
 
-## RNAs produced in trans are not a spontaneous source of recombinogenic DNA damage
+### RNAs produced in trans are not a spontaneous source of recombinogenic DNA damage
 
 The analysis of recombination in wild-type cells revealed that whereas the stimulation of transcription in cis elevated the frequency of recombination threefold, the stimulation of transcription in trans driven from the tetp:LacZ construct had no effect on recombination (Figure 2A). These results already suggest that homologous transcripts coming from a different locus do not represent a detectable source of genetic instability in wild-type conditions and thus argue against the hypothesis that spontaneous DNA:RNA hybrids could be formed with mRNAs generated in trans. However, it is known that mRNA coating protects DNA from co-transcriptional RNA hybridization. Thus, we wondered if transcripts produced in trans could induce recombination in mRNP-defective mutants such as those of the THO complex. Hence, we performed our experiments in mft1∆ and hpr1∆ mutant strains. mft1∆ and hpr1∆ enhanced recombination slightly when transcription in cis was switched off (Figure 2A), likely as a consequence of leaky transcription form the GAL1 promoter in glucose (Figure 1—figure supplement 1). More significantly and in agreement with previous reports (Chávez et al., 2000), recombination frequencies rocketed when transcription was stimulated in cis. However, transcription activation in trans did not enhance recombination, as it would be expected if additional DNA:RNA hybrids could form with RNA produced in trans.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig2-v2.jpg)
 
-**Figure 2.:** (A) Recombination analysis in WT (W303), rnh1Δ rnh201Δ (HRN2.10C), mft1Δ (WMK.1A) and hpr1Δ (U678.4C) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). (B) Recombination analysis in WT (W303), mft1Δ (WMK.1A) and hpr1Δ (U678.4C) strains carrying GL-LacZi plasmid plus either the pCM190 empty vector or the same vector carrying the sequence of the LacZ gene (pCM179). (C) Recombination analysis in WT (W303), rnh1Δ rnh201Δ (HRN2.10C) and mft1Δ (WMK.1A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the last 400 bp from the 3’ end of the LacZ gene (pCM190:LacZ400). In all panels, average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001 (unpaired Student’s t-test).Figure 2—source data 1.
+**Figure 2.:** (A) Recombination analysis in WT (W303), rnh1Δ rnh201Δ (HRN2.10C), mft1Δ (WMK.1A) and hpr1Δ (U678.4C) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). (B) Recombination analysis in WT (W303), mft1Δ (WMK.1A) and hpr1Δ (U678.4C) strains carrying GL-LacZi plasmid plus either the pCM190 empty vector or the same vector carrying the sequence of the LacZ gene (pCM179). (C) Recombination analysis in WT (W303), rnh1Δ rnh201Δ (HRN2.10C) and mft1Δ (WMK.1A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the last 400 bp from the 3’ end of the LacZ gene (pCM190:LacZ400). In all panels, average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001 (unpaired Student’s t-test).
 
 Instead, under conditions of high transcription of the recombination system (transcription in cis), RNA driven from an ectopic locus (transcription in trans) led to a partial suppression of the hyper-recombination. The reason for such suppression might involve the potential ability of the remotely produced RNAs to interfere with transcription occurring at the GL-LacZ construct. Given that a DNA:RNA hybrid produced in the template DNA strand can impair transcription elongation (Tous and Aguilera, 2007), one possibility would be that this interference is mediated by DNA:RNA hybrids formed between the RNA produced in trans and the transcribed DNA strand of the GL-LacZ construct. To rule out this possibility, we used an alternative recombination system (GL-LacZi), in which the LacZ sequence was inverted so that the LacZ transcript produced in trans would not be able to anneal with the transcribed DNA strand of the GL-LacZi system (Figure 2B). We detected a strong hyper-recombination in hpr1∆ cells when the LacZ sequence was transcribed in agreement with previous reports and with the fact that it has been shown that it is the length (and the GC content) but not the orientation of the lacZ sequence what impairs transcription and triggers hyper-recombination (Chávez and Aguilera, 1997; Chávez et al., 2001). Surprisingly, the production of RNAs in trans from the tet::LacZ construct also led to a reduction of the hyper-recombination in this system. Furthermore, in this case, the suppression was stronger and was also observed in glucose, when transcription in cis was off. This could be explained because, in this scenario, the RNA produced in trans is complementary to the mRNA produced in cis. Consequently, they can hybridize together forming a dsRNA that would preclude the possibility to form DNA:RNA hybrids at the GL-LacZi construct.
 
@@ -54,27 +62,27 @@ In order to confirm DNA:RNA hybrid formation in these different sequence context
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig3-v2.jpg)
 
-**Figure 3.:** hpr1Δ and rnh1Δ rnh201Δ mutants at the LacZ-containing constructs under the GAL1 or tet promoters.DNA:RNA Immuno-Precipitation (DRIP) with the S9.6 antibody in WT (W303), hpr1Δ (U678.4C) and rnh1Δ rnh201Δ (HRN2.10C) strains in asynchronous cultures treated or not in vitro with RNase H in the GL-LacZ, tetp:LacZ and GL-LacZi constructs turned transcriptionally off (2% glucose or 5 μg/mL doxycycline) or on (2% galactose and in the absence of doxycycline). Average and SEM of three independent experiments are shown *, p≤0.05; **, p≤0.01; ***, p≤0.001 (unpaired Student’s t-test).Figure 3—source data 1.
+**Figure 3.:** DNA:RNA Immuno-Precipitation (DRIP) with the S9.6 antibody in WT (W303), hpr1Δ (U678.4C) and rnh1Δ rnh201Δ (HRN2.10C) strains in asynchronous cultures treated or not in vitro with RNase H in the GL-LacZ, tetp:LacZ and GL-LacZi constructs turned transcriptionally off (2% glucose or 5 μg/mL doxycycline) or on (2% galactose and in the absence of doxycycline). Average and SEM of three independent experiments are shown *, p≤0.05; **, p≤0.01; ***, p≤0.001 (unpaired Student’s t-test).
 
 Given that the levels of transcription from the GAL1 and tet promoters used for the constructs are very different (Figure 1—figure supplement 1), we decided to perform recombination tests with similar constructs in which the promoters were interchanged. Thus, we studied recombination in the TL-LacZ recombination system (Santos-Pereira et al., 2013) and used a GAL:LacZ construct to produce the LacZ transcripts from a remote locus. Figure 4 shows that, whereas transcription at the TL-LacZ recombination system enhanced recombination as previously published (Santos-Pereira et al., 2013), again no significant stimulation of recombination was detected when RNAs were produced in trans in either wild-type, hpr1∆ or rnh1∆ rnh201∆ cells even when the RNA was generated from the strong GAL1 promoter.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig4-v2.jpg)
 
-**Figure 4.:** Recombination analysis in WT (W303), hpr1Δ (U678.4C) and rnh1Δ rnh201Δ (HRN2.10C) carrying TL-LacZ plasmid system (pCM184-TL-LacZ) plus either the pRS416 empty vector or the same vector carrying the LacZ gene (pRS416-GALLacZ). In this case, the four combinations studied were: i) no transcription, with TL-LacZ construct turned transcriptionally off (5 μg/mL doxycycline) and an empty plasmid; ii) transcription in trans, with TL-LacZ construct turned transcriptionally off (5 μg/mL doxycycline) and the GAL-LacZ construct switched on (2% galactose); iii) transcription in cis, with TL-LacZ construct turned transcriptionally on and an empty plasmid; and iv) transcription in cis and in trans, with TL-LacZ construct turned transcriptionally on and the GAL-LacZ construct switched on (2% galactose). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001 (unpaired Student’s t-test).Figure 4—source data 1.
+**Figure 4.:** Recombination analysis in WT (W303), hpr1Δ (U678.4C) and rnh1Δ rnh201Δ (HRN2.10C) carrying TL-LacZ plasmid system (pCM184-TL-LacZ) plus either the pRS416 empty vector or the same vector carrying the LacZ gene (pRS416-GALLacZ). In this case, the four combinations studied were: i) no transcription, with TL-LacZ construct turned transcriptionally off (5 μg/mL doxycycline) and an empty plasmid; ii) transcription in trans, with TL-LacZ construct turned transcriptionally off (5 μg/mL doxycycline) and the GAL-LacZ construct switched on (2% galactose); iii) transcription in cis, with TL-LacZ construct turned transcriptionally on and an empty plasmid; and iv) transcription in cis and in trans, with TL-LacZ construct turned transcriptionally on and the GAL-LacZ construct switched on (2% galactose). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01; ***, p≤0.001; ****, p≤0.0001 (unpaired Student’s t-test).
 
 Finally, since all experiments were performed in plasmid-born systems in the original W303 background bearing the rad5-G535R mutation (Fan et al., 1996), we integrated the GL-LacZ system in the chromosome of a RAD5 wild-type strain to ascertain that the rad5-G535R mutation did not affect the results as well as to confirm that the results were the same in a chromosome locus. As it can be seen in Figure 5, transcription of the chromosomal recombination system promoted a 30-fold increase in recombination levels in the tho mutant hpr1∆ with respect to the WT, in agreement with all previous data showing that co-transcriptional DNA:RNA hybrids are a potent source of recombination. By contrast, mRNA produced at a different locus had no effect on recombination, neither in wild-type cells nor in the tho mutant hpr1∆. Hence, altogether, these results argue that, in contrast to mRNA produced in cis, RNA produced at a particular locus does not lead to recombinogenic DNA damage at regions located in trans.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig5-v2.jpg)
 
-**Figure 5.:** Recombination analysis in WT (WGLZN), hpr1Δ (HGLZN) strains carrying the GL-LacZ recombination system integrated in chromosome III. Strains were transformed with empty vector pCM190 or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments are shown consisting in the median value of six independent colonies each. **, p≤0.01; ****, p≤0.0001 (unpaired Student’s t-test).Figure 5—source data 1.
+**Figure 5.:** Recombination analysis in WT (WGLZN), hpr1Δ (HGLZN) strains carrying the GL-LacZ recombination system integrated in chromosome III. Strains were transformed with empty vector pCM190 or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments are shown consisting in the median value of six independent colonies each. **, p≤0.01; ****, p≤0.0001 (unpaired Student’s t-test).
 
-## Rad51 is not required for DNA:RNA hybridization
+### Rad51 is not required for DNA:RNA hybridization
 
 We next wondered about the possible role of the recombination protein Rad51 in DNA:RNA hybridization. To examine this, we analyzed in hpr1∆ cells the effect of transcribing the ectopic tet:LacZ construct on recombination in our direct-repeat systems when these were not transcribed (Figure 6). It is important to remark that the recombination events detected in our assays are deletions occurring by SSA between direct repeats, which do not require Rad51 (Pardo et al., 2009). Indeed, in agreement with SSA annealing being Rad51-independent, RAD51 deletion caused no significant changes in the recombination frequencies in our assay. Thus, any conclusion about Rad51-dependency or independency of the hybridization inferred from our assay is not contaminated by a possible direct role of Rad51 in the event we are studying. Importantly, we observed no differences when RAD51 was deleted in hpr1∆ cells even when the LacZ sequence was expressed from the plasmid containing the tet::LacZ construct. This result argues against Rad51 facilitating or impeding the formation of DNA:RNA hybrids with RNAs produced in trans.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig6-v2.jpg)
 
-**Figure 6.:** Recombination analysis in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A) and hpr1Δ rad51Δ (HPR51.15A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01, ***, p≤0.001 (unpaired Student’s t-test).Figure 6—source data 1.
+**Figure 6.:** Recombination analysis in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A) and hpr1Δ rad51Δ (HPR51.15A) strains carrying GL-LacZ plasmid system (pRS314-GL-LacZ) plus either the pCM190 empty vector or the same vector carrying the LacZ gene (pCM179). Average and SEM of at least three independent experiments consisting in the median value of six independent colonies each are shown. *, p≤0.05; **, p≤0.01, ***, p≤0.001 (unpaired Student’s t-test).
 
 We then wondered whether the formation of known recombinogenic DNA:RNA hybrids formed in cis, such as those reported in the hpr1∆ mutant, requires Rad51. For this purpose, we studied the effect in the strong hyper-recombination phenotype of hpr1∆ when transcription was induced in cis. As shown in Figure 6, the absence of Rad51 had no effect on the hyper-recombination observed, as hpr1∆ rad51∆ cells elevated the recombination frequency more than 70-fold with respect to rad51∆, similarly to Rad51+ cells. This result clearly indicates that the in cis DNA:RNA hybrid-mediated hyper-recombination phenotype is actually independent on Rad51.
 
@@ -82,7 +90,7 @@ In parallel, we studied the formation of Rad52 foci, a marker of recombinogenic 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56674/elife-56674-fig7-v2.jpg)
 
-**Figure 7.:** hpr1∆ are independent on Rad51.(A) Spontaneous Rad52-YFP foci formation in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A) and hpr1Δ rad51Δ (HPR51.15A) strains carrying the empty vectors pCM184 and pCM189, or a combination of both carrying the RNH1 or AID genes as indicated in the legend. (B) Representative images and value of the percent of the total nuclei scored that stained positively for DNA:RNA hybrids in chromatin spreads stained with the S9.6 antibody in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A), hpr1Δ rad51Δ (HPR51.15A) and RNH-R (rnh1Δ rnh201Δ) strains. In both panels, average and SEM of at least three independent experiments performed with more than 100 cells are shown. *, p≤0.05; **, p≤0.01, ***, p≤0.001 (unpaired Student’s t-test).Figure 7—source data 1.
+**Figure 7.:** (A) Spontaneous Rad52-YFP foci formation in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A) and hpr1Δ rad51Δ (HPR51.15A) strains carrying the empty vectors pCM184 and pCM189, or a combination of both carrying the RNH1 or AID genes as indicated in the legend. (B) Representative images and value of the percent of the total nuclei scored that stained positively for DNA:RNA hybrids in chromatin spreads stained with the S9.6 antibody in WT (W303), hpr1Δ (U678.1C), rad51Δ (WSR51.4A), hpr1Δ rad51Δ (HPR51.15A) and RNH-R (rnh1Δ rnh201Δ) strains. In both panels, average and SEM of at least three independent experiments performed with more than 100 cells are shown. *, p≤0.05; **, p≤0.01, ***, p≤0.001 (unpaired Student’s t-test).
 
 ## Discussion
 
@@ -104,33 +112,155 @@ Altogether, our results suggest that RNAs do not form hybrids in trans, so that 
 
 ## Materials and methods
 
-## Yeast strains and Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent Saccharomyces cerevisiae</td>
+      <td>W303 background strains with different gene deletions</td>
+      <td>various</td>
+      <td></td>
+      <td>(See Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Yeast expression plasmids and recombination systems</td>
+      <td>various</td>
+      <td></td>
+      <td>(See Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for DRIP and RT-PCR</td>
+      <td>Condalab</td>
+      <td></td>
+      <td>(See Materials and methods section)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated anti-mouse (goat monoclonal)</td>
+      <td>Jackson laboratories</td>
+      <td>Cat# 115-165-003, RRID:AB_2338680</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S9.6 anti DNA:RNA hybrids (mouse monoclonal)</td>
+      <td>ATCC Hybridoma cell line</td>
+      <td>Cat# HB-8730, RRID:CVCL_G144</td>
+      <td>DRIP (1 mg/ml) and IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Macherey-Nagel DNA purification</td>
+      <td>Macherey- Nagel</td>
+      <td>Cat# 740588.250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Qiagen’s RNeasy</td>
+      <td>Quiagen</td>
+      <td>Cat# 75162</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Reverse Transcription kit</td>
+      <td>Qiagen</td>
+      <td>Cat # 205311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Zymolyase 20T</td>
+      <td>US Biological</td>
+      <td>Z1001</td>
+      <td>(50 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycyclin hyclate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td>(5 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K (PCR grade)</td>
+      <td>Roche</td>
+      <td>Cat # 03508811103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Rnase A</td>
+      <td>Roche</td>
+      <td>Cat # 10154105103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism V8.4.2</td>
+      <td>GraphPad Software, La Jolla, CA, USA</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>iTaq Universal SYBR Green</td>
+      <td>Bio-RAD</td>
+      <td>Cat # 1725120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>1 µg/mL</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and Plasmids
 
 Strains used were the wild-type W303-1A (MATa ade2-1 can1- 100 his3-11,15 leu2-3,112 trp1-1 ura3-1 rad5-G535R) and its isogenic hpr1∆::HIS3 mutant U678-1C (MATa) and U678-4C (MATα), mft1∆::KANMX mutant (WMK.1A) (Chávez and Aguilera, 1997), rnh1Δ::KANMX rnh201Δ::KANMX (RNH-R), rad51∆::KANMX (WSR51.4A) (González-Barrera et al., 2002), and hpr1∆::HIS3MX rad51∆::KANMX (HPR51.15A) from this study. rnh1Δ::KAN rnh201Δ::KAN (HRN2.8A) and the wild-type HRN2.8A were from Huertas and Aguilera, 2003. Wild-type (WGLZN) and hpr1∆HIS3 mutant were made in this study by insertion of the GL-LacZ::NATMX at the LEU2 locus in Chromosome III of a W303-1A strain corrected for RAD5 (Moriel-Carretero and Aguilera, 2010).
 
 Yeast plasmids pCM179, pCM184, pCM189 and pCM190 were previously published (Garí et al., 1997). pRS314-GL-LacZ (Piruat and Aguilera, 1998) and pRS314-GL-LacZi plasmids with recombination systems were built as follows. The BamHI fragment containing the LacZ sequence from pPZ (Straka and Hörz, 1991), was inserted in both sense and antisense orientations with respect to the promoter, respectively, into the BglII site of pRS314GLB (Piruat and Aguilera, 1998). pCM184TL-lacZ (Santos-Pereira et al., 2013) pRS416 and pRS416-GALlacZ were described previously (Prado et al., 1997). pCM184:AID was built by inserting the AID ORF from pCM189:AID (Santos-Pereira et al., 2013) into the NotI site of pCM190. pCM190-tet::LacZ400 was built by cloning the KpnI-BamHI 400 bp fragment of the 3' from the LacZ gene into KpnI-BamHI digested pCM190. Plasmids pCM189:AID, pCM184:RNH1 (Santos-Pereira et al., 2013), and pWJ1344 (Lisby et al., 2001) were also previously published.
 
-## Yeast transformation
+### Yeast transformation
 
 Yeast transformation was performed using the lithium acetate method as previously described (Gietz et al., 1995).
 
-## Recombination assays
+### Recombination assays
 
 Cells transformed were grown in selective media containing 2% glucose and 5 μg/mL of doxycycline (kept in the dark) to repress transcription from the GAL1 and tet promoter, respectively. Recombination frequencies were calculated as previously described as means of at least three median frequencies obtained each from six independent colonies isolated in the appropriate medium for the selection of the required plasmids (Gómez-González et al., 2011). Briefly, transformants were cultured for at 3–4 days (until acquiring similar colony size) in the appropriate selective media containing either 2% glucose or 2% galactose and recombinants were obtained by plating appropriate dilutions in selective medium. To calculate total number of cells, plates with the same requirements as for the original transformation were used. All plates were grown for 3–4 days at 30°C. The average and SEM of at least three independent transformants was plotted for each figure but the numerical data can be seen in Figure 2—source data 1, Figure 4—source data 1, Figure 5—source data 1 and Figure 6—source data 1.
 
-## Transcription analysis
+### Transcription analysis
 
 Mid-log cultures were grown with either glucose or galactose and with or without 5 μg/ml doxycycline (kept in the dark). Total RNA was obtained using Qiagen’s RNeasy kit and used for cDNA synthesis with the QuantiTect Reverse Transcription kit with random primers (Qiagen) according to instruction. Real-time quantitative PCR was performed using iTaq universal SYBR Green (Biorad) with a 7500 Real-Time PCR machine (Applied Biosystems). Primers sequences used for this analysis were LacZT1-Fw (GCGCCGTGGCCTGAT), LacZT1-Rv (GTGCAGCGCGATCGTAATC), Intergenic-Fw (TGTTCCTTTAAGAGGTGATGGTGAT) and Intergenic-Rv (GTGCGCAGTACTTGTGAAAACC). The exact values obtained are shown in Figure 1—figure supplement 1—source data 1.
 
-## DRIP assays
+### DRIP assays
 
 DNA:RNA hybrids were measured in cultures with either glucose or galactose and either with or without 5 μg/ml doxycycline (kept in the dark). Cultures were collected, washed with chilled water, resuspended in 1.4 mL spheroplasting buffer (1 M sorbitol, 10 mM EDTA pH 8, 0.1% β-mercaptoethanol, 2 mg/ml Zymoliase 20T) and incubated at 30°C for 30 min. The spheroplasts were pelleted (5 min at 7000 rpm) rinsed with water and homogeneously resuspended in 1.65 mL of buffer G2 (800 mM Guanidine HCl, 30 mM Tris-Cl pH 8, 30 mM EDTA pH 8, 5% Tween-20, 0.5% Triton X-100). Samples were treated with 40 μl 10 mg/ml RNase A for 30 min at 37°C and 75 μl of 20 mg/ml proteinase K (Roche) for 1 hr at 50°C. DRIP was performed mainly as described (Ginno et al., 2012) with few differences. DNA was extracted gently with chloroform:isoamyl alcohol 24:1. Precipitated DNA, washed twice with 70% EtOH, resuspended gently in TE and digested overnight with 50 U of HindIII, EcoRI, BsrGI, XbaI and SspI, 2 mM spermidine and 2.5 μl BSA 10 mg/ml. Half of the DNA was treated with 8 μL RNase H (New England BioLabs) overnight 37°C as RNase H control. RNA-DNA hybrids were immunoprecipitated using S9.6 monoclonal antibody (hybridoma cell line HB-8730) coupled to Dynabeads Protein A (Invitrogen) for 2 hr at 4°C and washed 3 times with 1x binding buffer. DNA was eluted in 100 μL elution buffer (50 mM Tris pH 8.0, 10 mM EDTA, 0.5% SDS) treated 45 min with 7 μL proteinase K 20 mg/ml at 55°C and purified with Macherey-Nagel DNA purification kit. Primers sequences used for this analysis were LacZT1-Fw (GCGCCGTGGCCTGAT) and LacZT1-Rv (GTGCAGCGCGATCGTAATC). The average and SEM of at least three independent transformants was plotted but the numerical data can be seen in Figure 3—source data 1.
 
-## Detection of Rad52-YFP foci
+### Detection of Rad52-YFP foci
 
 Spontaneous Rad52-YFP foci from mid-log growing cells carrying plasmid pWJ1344 were visualized and counted by fluorescence microscopy in a Leica DC 350F microscope, as previously described (Lisby et al., 2001). More than 200 S/G2 cells where inspected for each experimental replica. The average and SEM of at least three independent transformants was plotted but the numerical data can be seen in Figure 7—source data 1.
 
-## S9.6 immunofluorescence of yeast chromosome spreads
+### S9.6 immunofluorescence of yeast chromosome spreads
 
 The procedure performed is similar to Chan et al., 2014 with some modifications. Briefly, mid-log cultures (OD600 = 0.5–0.8) were grown at 30°C; 10 ml of them were collected, washed in cold spheroplasting buffer (1.2 M sorbitol, 0.1 M potassium phosphate and 0.5 MgCl2 at pH 7) and then digested by adding 10 mM DTT and 150 mg/ml of Zymolyase 20T to the same buffer. The digestion was performed for 10 min (37°C) and stopped by mixing the samples with the solution 2 (0.1 M MES, 1M sorbitol, 1 mM EDTA, 0.5 mM MgCl2, pH 6.4). Later, spheroplasts were centrifuged carefully 8 min at 800 rpm, lysed with 1% vol/vol Lipsol and fixed on slides using Fixative solution (4% paraformaldehyde/3.4% sucrose). The spreading was carried out using a glass rod and the slides were dried from 2 hr to overnight in the extraction hood.
 

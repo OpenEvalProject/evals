@@ -48,21 +48,33 @@ In this manuscript, we leverage a host of complementary approaches that support 
 
 ## Results
 
-## Mitochondria are involved in hypoxic HIF1α stabilization in SH-SY5Y human neuroblastoma cells
+### Mitochondria are involved in hypoxic HIF1α stabilization in SH-SY5Y human neuroblastoma cells
 
 In the current study, we leveraged a HIF-luciferase reporter as a more quantitative biomarker of oxygen-dependent changes in endogenous HIF1α protein stabilization in hypoxia. We first established the sensitivity and dynamic range of HIF-luciferase reporter. The HIF-luciferase reporter contains the oxygen dependent domain (ODD) of HIF1α fused to luciferase (ODD-luciferase). We have previously demonstrated that this reporter behaves like endogenous HIF but does not influence endogenous HIF activity (Smirnova et al., 2010; Karuppagounder et al., 2013). Here, we validated the reporter using adaptaquin (AQ), which we have previously established as a specific HIF PHD inhibitor (Karuppagounder et al., 2016). We found that endogenous HIF1α protein levels could be monitored dynamically across a wide range of AQ concentrations (Figure 1A and B). As an independent measure, we also assayed the activity of HIF1α-luciferase reporter by measuring luciferase activity. These assays showed that the HIF1α-luciferase reporter measured by photometric luciferase activity possesses a high dynamic range and low coefficient of variation (Figure 1C). Moreover, we also assessed change in endogenous HIF transcriptional activity by measuring changes in the mRNA levels of HIF target genes, Bnip3 and Eno2. We found dose dependent dynamic changes in the mRNA levels of HIF target genes, Bnip3 and Eno2 in response to increasing concentrations of AQ (Figure 1D and E). Indeed, changes in HIF1α-luciferase activity measurements with increasing doses of AQ showed a strong correlation with quantitative changes in endogenous HIF1α protein levels measured by quantitative immunoblotting (Figure 1F) as well as quantitative changes in endogenous mRNA levels of HIF target genes, Bnip3 and Eno2 (Figure 1G and H). These findings confirmed exogenous ODD-luciferase activity as a sensitive and specific reporter of endogenous HIF1α.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig1-v2.jpg)
 
-**Figure 1.:** Experiments A - H establish specificity and sensitivity of HIF-reporter activity (i.e. ODD-Luciferase activity) while experiments I-L establish involvement of mitochondrial ETC in the hypoxic HIF1α stabilization. SH-SY5Y ODD-Luc. cells that stably overexpressed ODD (HIF Oxygen Dependent Domain-luciferase fusion) were treated with increasing concentrations of adaptaquin (AQ, 1 µM – 30 µM) for 4 hr and were, thereafter, processed for assessment of either changes in HIF protein level via immunoblotting (A, B) or changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) (C) or changes in expression of HIF1α target genes, Eno2 and Bnip3 (D, E). (F) Correlation between relative changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) and relative changes in HIF1α protein. (G, H) Correlation between relative changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) and relative changes in HIF1α target genes, Eno2 and Bnip3. (I–L) SH-SY5Y ODD-Luc. cells were treated with increasing concentrations of rotenone (Complex I inhibitor), antimycin A (Complex III inhibitor), myxothiazol (Complex III inhibitor), and sodium azide (Complex IV inhibitor) and then were exposed to either normoxia or hypoxia for 4 hr. Thereafter, HIF reporter luciferase activity was measured in cell lysates. All experiments were performed in three independent sets. The statistical analyses were performed using One way ANOVA with Dunnett post-test (B–E) and Student’s t test (J–L). (B–E) (n.s.), (*), (**), and (***) indicate non-significant difference and the statistical differences of p < 0.05, p < 0.01, and p < 0.001 with respect to normoxia control. Two-way ANOVA with Bonferroni’s post-test was used for all statistical analyses (I–L). (n.s.), (**), and (***) indicate non-significant difference or statistical differences of p < 0.01 and p < 0.001 with respect to respective control or treatment concentration under normoxia.Figure 1—source data 1.Figure 1A.
+**Figure 1.:** Experiments A - H establish specificity and sensitivity of HIF-reporter activity (i.e. ODD-Luciferase activity) while experiments I-L establish involvement of mitochondrial ETC in the hypoxic HIF1α stabilization. SH-SY5Y ODD-Luc. cells that stably overexpressed ODD (HIF Oxygen Dependent Domain-luciferase fusion) were treated with increasing concentrations of adaptaquin (AQ, 1 µM – 30 µM) for 4 hr and were, thereafter, processed for assessment of either changes in HIF protein level via immunoblotting (A, B) or changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) (C) or changes in expression of HIF1α target genes, Eno2 and Bnip3 (D, E). (F) Correlation between relative changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) and relative changes in HIF1α protein. (G, H) Correlation between relative changes in HIF reporter luciferase activity (i.e. ODD-luciferase activity) and relative changes in HIF1α target genes, Eno2 and Bnip3. (I–L) SH-SY5Y ODD-Luc. cells were treated with increasing concentrations of rotenone (Complex I inhibitor), antimycin A (Complex III inhibitor), myxothiazol (Complex III inhibitor), and sodium azide (Complex IV inhibitor) and then were exposed to either normoxia or hypoxia for 4 hr. Thereafter, HIF reporter luciferase activity was measured in cell lysates. All experiments were performed in three independent sets. The statistical analyses were performed using One way ANOVA with Dunnett post-test (B–E) and Student’s t test (J–L). (B–E) (n.s.), (*), (**), and (***) indicate non-significant difference and the statistical differences of p < 0.05, p < 0.01, and p < 0.001 with respect to normoxia control. Two-way ANOVA with Bonferroni’s post-test was used for all statistical analyses (I–L). (n.s.), (**), and (***) indicate non-significant difference or statistical differences of p < 0.01 and p < 0.001 with respect to respective control or treatment concentration under normoxia.
 
 Mitochondria have been previously shown to be involved in hypoxic HIF1α stabilization in different cell lines (Chandel et al., 2000; Chua et al., 2010; Yang et al., 2012). We wanted to verify the necessity of mitochondria in SH-SY5Y human neuroblastoma cells. To this end, we treated SH-SY5Y cells with different mitochondrial electron transport chain (ETC) inhibitors such as rotenone (ETC complex I inhibitor), myxothiazol (ETC complex III inhibitor), antimycin A (ETC complex III inhibitor), and sodium azide (ETC complex IV inhibitor) and exposed cells, in parallel, to normoxia or hypoxia for 4 hr and, thereafter, assessed ODD-luciferase activity in cell lysates. We found a dose-dependent decrease in ODD-luciferase activity in response to increasing concentrations of all of the ETC complex inhibitors in hypoxic cells (Figure 1I–L). These findings confirmed mitochondrial involvement in hypoxic HIF1α stabilization in SH-SY5Y cells.
 
-## Antioxidant enzymes are not homeostatically induced in hypoxia
+### Antioxidant enzymes are not homeostatically induced in hypoxia
 
 Increases in ROS that are sufficient for signaling or toxicity can trigger homeostatic transcriptional increases in antioxidant enzymes (Christman et al., 1989). To assess whether hypoxia results in similar homeostatic increases in antioxidant protein expression, we exposed human neuroblastoma (SH-SY5Y) cells to hypoxia for 8 hours and measured protein expression levels of peroxisomal, cytosolic and mitochondrial antioxidant enzymes including catalase, glutathione peroxidase-1 (GPX1), glutathione peroxidase-4 (GPX4), MnSOD, and Peroxiredoxin-3 (PRDX3) (Figure 2A). The 8 hr time point was chosen to monitor homeostatic changes in antioxidant enzymes because this would be 6 hr following observable HIF1α stability in hypoxia in SH-SY5Y cells, which should provide adequate time for homeostatic increases to initiate transcriptional or post-transcriptional adaptations. At the 8- hr time point, the protein level of the peroxisomal antioxidant catalase, and antioxidants present in both cytosol and mitochondria, such as GPX1 and GPX4, showed no change protein levels in response to hypoxia (Figure 2B and C). However, since hypoxia induces HIF1α-dependent mitophagy (Aminova et al., 2008; Zhang et al., 2008), mitochondrial mass is decreased with increasing duration of hypoxia, including decreases in mitochondrial DNA and proteins. Accordingly, we normalized distinct mitochondrially targeted antioxidant enzymes to the level of citrate synthase, a mitochondrial protein. When normalized to citrate synthase, the expression levels of mitochondrial antioxidants such as MnSOD and PRDX3 also did not change in hypoxia (Figure 2D and E). To establish whether these findings apply to non-transformed cells, we studied expression levels of antioxidant enzymes in hypoxia in primary neurons. Similar to neuroblastoma cells, antioxidant enzyme levels did not change in hypoxia in post-mitotic neurons (Figure 2F–I). Although 8 hr hypoxic exposure did not show changes in various antioxidants, it is possible that levels of antioxidants might have changed before 8 h time point. In order to explore this possibility, we assessed changes in above mentioned antioxidants for different time points such as 2, 4, and 8 hr in SH-SY5Y ODD-Luc cells. However, we did not see changes in the protein levels of these antioxidants at any time point (Figure 2—figure supplement 1). Alternative possibilities for not observing changes in antioxidant levels could be not looking at right antioxidant enzymes or that changes in ROS levels are too small to induce detectable homeostatic changes in these antioxidant enzymes. Together, these indirect measures suggest that possible increase in ROS levels during hypoxia are less likely. To further confirm if ROS levels increase in hypoxia or not, we directly measured real time changes in ROS levels in hypoxia by using a sensitive ROS marker, HyPer.
 
-## Peroxide levels do not increase during hypoxia
+![Figure 2.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental approach employed to examine changes in the protein levels of endogenous antioxidant enzymes in hypoxia. Immunoblots or densitometric analyses of catalase (peroxisome), GPX1 and GPX4 (cytosol and mitochondria) or MnSOD and PRDX3 (mitochondria) in SH-SY5Y ODD Luc. cells that stably overexpressed ODD (HIF Oxygen Dependent Domain-luciferase fusion) (B–E) or PCNs (F-I) exposed to normoxia or hypoxia for 8 hr. The protein levels of catalase, GPX4, and GPX1 were normalized to actin while those of MnSOD and PRDX3 were normalized to the mitochondrial protein, citrate synthase. A monoclonal antibody to luciferase (indicated as anti-ODD-Luc. in the figure) was used to detect changes in ODD-luciferase protein levels in SH-SY5Y ODD-Luc. cells. (J–K) Pancreatic islets were exposed to hypoxia for 2 hr and then were lysed and processed for mRNA expression analysis of HIF1α target genes, Kdm6b and Bnip3. The densitometric data and gene expression data were pooled from three independent experiments in the form of mean ± SD. The statistical analyses of densitometric data and gene expression data were done using Student’s t test (B–K). (n.s.) indicates non-significant difference, (**) indicates p < 0.01 and (***) indicates p < 0.001 with respect to respective normoxia controls. (L) Hypoxia leads to large decrease in H2O2 levels (top), increased NAD(P)H (middle), and decreased insulin secretion (bottom). Glucose stimulation by 20 mM glucose was added as reference, and oxygen levels were changed using an artificial gas equilibration device placed inline in the flow system. All three experiments were carried out separately but using the same flow culture system.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Immunoblots of endoenous catalase, GPX1 and GPX4 (A) or MnSOD and PRDX3 (B) in SH-SY5Y ODD Luc. cells exposed to either 8 hr normoxia or different periods of hypoxia (2, 4, and 8 hr). HIF1α immunoblot was used to confirm the hypoxic state of these cells (C, D) Densitometric analysis of immunoblots. The protein levels of CAT, GPX1, GPX4, and HIF1α were normalized to actin levels as a loading control while those of MnSOD and PRDX3 were normalized to the mitochondrial protein, citrate synthase. All western blot experiments were performed as three independent sets and a representative blot of each was shown in the figure. One-way ANOVA with Dunnett’s post-test was used for all comparisons. (n.s.) and (**) indicate non-significant difference, and the statistical difference of p < 0.001, respectively, with respect to normoxia control.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** SH-SY5Y cells (A, B) or Hep3B cells (D, E) were exposed to hypoxia for 2 hr and then were lysed and processed for mRNA expression analysis of HIF1α target genes, Eno2 and Bnip3. The gene expression data was pooled from three independent experiments in the form of mean ± SD. The statistical analyses of gene expression data were done using Student’s t test (J–K). (**) indicates p < 0.01 and (***) indicates p < 0.001 with respect to respective normoxia controls. (C, F) Hypoxia does not change in HyPer fluorescence in either SH-SY5Y cells (C) or Hep3B cells (F). Glucose stimulation by 20 mM glucose was added as reference, and oxygen levels were changed by use of an artificial gas equilibration device placed inline in the flow system. (G) Hep3B cells, under normoxic conditions, were treated with bacterial Streptolysin-O to selectively permeabilize the plasma membrane followed by their exposure to increasing concentrations of H2O2. Real time measurement of H2O2 confirmed the specificity of Hyper signals with respect to H2O2. All three experiments (C, F, and G) were carried out separately, but using the same flow culture system. Each Experiment was performed as three independent sets and a representative picture of each is shown.
+
+### Peroxide levels do not increase during hypoxia
 
 HyPer is a fusion protein composed of the peroxide-sensitive domain of the prokaryotic transcription factor, OxyR, and yellow fluorescent protein that is a reporter for cellular peroxide (Belousov et al., 2006). This reporter is not only sensitive and specific, but its activity is also ratiometric, which factors out differences in fluorescence due to cell geometry, path length, and reporter concentration. We have previously shown that enhanced pH buffering of the extracellular medium alleviates the putative effects of acidic pH during hypoxia on the reporter, and that fluorescent ratios can be calibrated in cells to known peroxide concentrations (Neal et al., 2016).
 
@@ -72,9 +84,37 @@ Accordingly, based on the sensitivity and specificity of the reporter assay, we 
 
 To establish the generalizability of these findings to other cell types, we measured HyPer reporter fluorescence ratios in hypoxic conditions in SH-SY5Y and Hep3B human hepatocellular carcinoma cells. Ratiometric imaging of both cell types showed no change in peroxide levels following 2 hr of hypoxia (Figure 2—figure supplement 2C and F), which was sufficient time to activate HIF1α-dependent gene expression (Figure 2—figure supplement 2A and B, 2D, and 2E). This absence of changes in peroxide levels during hypoxia could not be attributed to a lack of HyPer reporter responsiveness to peroxide in these cell types since exogenous addition of peroxide (Figure 2—figure supplement 2G) following the hypoxic exposure led to expected, significant increases in reporter activity. Together with our antioxidant protein expression results, these data suggest that mitochondrial peroxide either decreases or is unchanged by hypoxia in primary (pancreatic beta islets) and transformed cell types (SH-SY5Y, Hep3B), respectively.
 
-## HIF1α stabilization is not oxidant-initiated in hypoxia
+### HIF1α stabilization is not oxidant-initiated in hypoxia
 
 Prior studies showed that decreasing ROS by forced expression of individual antioxidant enzymes can decrease HIF1α protein levels (Brunelle et al., 2005; Chandel et al., 2000). To confirm these findings with our HIF1α-luciferase reporter, we forced expression of either catalase (a peroxide scavenger), GPX1 (a peroxide scavenger), or MnSOD (a superoxide scavenger and peroxide generator) (Figure 3A). SH-SY5Y cells expressing ODD-Luc were transduced with individual antioxidant enzymes encoded in distinct adenoviral constructs or an adenovirus encoding GFP only as a protein control. Seventy-two hours following infection, GFP expression was observed in nearly 90% of SH-SY5Y cells (Figure 3—figure supplement 1). Accordingly, cells were tested for specific enzyme activities of MnSOD, Catalase or GPX1. These studies showed seven-, eleven-, and threefold increase in specific activity over GFP controls for MnSOD-, Catalase-, and GPX1-expressing cells, respectively (Figure 3—figure supplement 2A and C). Moreover, using a cell death assay with DNA binding Sytox blue dye (dead cell stain), we also confirmed the activities of these antioxidants under normoxia and hypoxia by indirectly assessing the protection conferred by these antioxidants from increasing concentrations of exogenous H2O2 treatment. As expected, MnSOD did not improve protection as compared to GFP control while catalase and GPX1 overexpression significantly enhanced protection under both normoxia and hypoxia (Figure 3—figure supplement 2D and F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-v2.jpg)
+
+**Figure 3.:** (A) A schematic diagram showing known mechanisms of H2O2 detoxification by peroxisomal, cytosolic and mitochondrial antioxidants. (B–K) SH-SY5Y cells stably expressing ODD-luciferase were transduced with adenoviruses encoding distinct antioxidant enzymes for 72 hr and then exposed to normoxia or hypoxia in parallel and were either processed for luciferase activity assay (A measure of quantitative changes in ODD) (B and E) or immunoblot analysis (A measure of quantitative changes in protein levels of ODD and HIF1α) (C, D, F, and G) or gene expression analyses of HIF1α target genes, Eno2 and Bnip3 (H–K). (L, M) Correlation between relative changes in either Eno2 or Bnip3 and relative ODD-luciferase activities. Two-way ANOVA with Bonferroni post-test was used for comparisons in B, E, H, I, J, and K. One-way ANOVA with Dunnett post-test was used in the statistical analysis in D while Student t test in was used in G. (n.s.) indicates non-significant difference with respect to GFP control under normoxia while (ns), (#) and (###) indicate non-significant difference and the statistical differences of p < 0.05, and p < 0.001, respectively, with respect to GFP control in hypoxia. All experiments were performed as three independent sets and a representative blot or an average of three independent sets was shown in the figure. “N” stands for normoxia and “H” stands for hypoxia.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Adenoviruses encoding GFP (Ad-GFP) were used to infect SH-SY5Y cells and expression was examined after 72 hr to achieve steady-state levels of expression. Cells were immunostained using a GFP antibody to monitor the efficiency of overexpression. Parallel sets without adenoviral transduction were also monitored with GFP antibody and excluded non-specific staining. Experiments were performed as three independent sets and a representative picture of each is shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) SH-SY5Y cells were transduced with adenoviral constructs encoding MnSOD, catalase, GPX1 or a GFP control and incubated for 72 hr for steady-state expression. Cells were processed for measurement of specific activities of MnSOD, catalase, and GPX1 enzymes in normoxia in sets overexpressing MnSOD, catalase, and GPX1 adenoviral constructs, respectively. The final values were pooled as mean ± S.D. of three independent experiments in all cases. The statistical analyses were performed using Student’s t test. (*) indicates statistical difference of p < 0.05 with respect to respective GFP control. (D–F) In order to indirectly assess the enzyme activities of these antioxidant constructs in normoxia as well as hypoxia, SH-SY5Y cells expressing either GFP or antioxidants (MnOSD, Catalase or GPX1) were treated with increasing conc. of H2O2 (1 mM –10 mM) and then were either exposed to normoxia or hypoxia for 4 hr in parallel. Thereafter, media was carefully removed and 100 μl of 1xPBS containing 10 μM Sytox blue dye (ThermoFisher Scientific; Catalog number: S11348) was added in wells and the plate was incubated for 20 min at room temperature in dark before taking the fluorescence reading at Ex/Em: 440/480. The final values were pooled as mean ± S.D. of three independent experiments in all cases. Two-way ANOVA with Bonferroni post-test was used for the statistical analysis. (n.s.), (*) and (***) indicate non-significant difference, and the statistical differences of p < 0.05, and p < 0.001, respectively, with respect to respective GFP control under normoxia or hypoxia.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–B) After exposing parallel sets of SH-SY5Y ODD-Luc cells to either normoxia or hypoxia for 4 hr, media was removed, cells were washed with 1xPBS, and then 1xPBS with 20 μM DCFDA was added in each well. Additional parallel sets of cells from both conditions were also treated with 5 mM H2O2 at the same time and were used as positive controls. Plates from both normoxia and hypoxia were then incubated at room temperature for 30 min in normoxic condition. Thereafter, the fluorescence of DCFDA loaded SH-SY5Y cells were measured through flow cytometry using standard fluorescein wavelengths. Fluorescence values were obtained by multiplying cell counts with mean fluorescence and later converted into relative fold change with respect to cells expressing GFP exposed to either normoxia or hypoxia. The final values were pooled as mean ± S.D. of three independent experiments in all cases. One-way ANOVA with Dunnett’s post-test was used for all comparisons and a similar comparison was done in hypoxia separately. (n.s.), (*) and (***) indicate non-significant difference, and the statistical differences of p < 0.05, and p < 0.001, respectively, with respect to GFP control under normoxia while (ns) and (#) indicate non-significant difference and the statistical differences of p < 0.05, respectively, with respect to GFP control in hypoxia. (C, D) DCF loading was equivalent in normoxic and hypoxic cells. SH-SY5Y cells were loaded with DCFDA for 30 min either in normoxia or hypoxia and then exposed to visible light equally to completely oxidize fluorescein. Illuminated cells incubated under normoxic or hypoxic conditions (from five independent sets) were counted manually to establish whether cells had equal DCFDA loading under both conditions. These values were pooled as mean ± SD. The statistical analysis was done using Student’s t test. (n.s.) indicates non-significant difference with respect to normoxia.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A, B) The transgene expression after forced expression of transgenes encoded within adenoviral vectors in primary cortical neuronal cultures (PCNs) were validated by infecting PCNs using adenovirus encoding GFP (Ad-GFP) and then examining the expression after 48 hr. Cells were immunostained using a GFP antibody to monitor the efficiency of overexpression. Parallel sets without adenoviral transduction were also monitored with GFP antibody and excluded non-specific staining. Experiments were performed as three independent sets and a representative picture of each is shown. (C–F) Mouse primary neurons were transduced with adenoviral vectors encoding distinct antioxidant enzymes or GFP for 48 hr and then exposed to normoxia or hypoxia in parallel for 4 hr. (C and E) represent immunoblots and (D and F) represent densitometric analysis of the respective HIF1α blots. All western blot experiments were performed as three independent sets and a representative blot of each was shown in the figure. The statistical analyses were performed using One-way ANOVA with Dunnett post-test in (D) and unpaired t test in (F). (n.s.) and (***) indicate non-significant difference and the statistical differences of p < 0.001, respectively, with respect to GFP control in hypoxia.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** HeLa cells were infected with adenoviruses encoding designated antioxidant enzymes and gene expression was assessed after 72 hr. Cells with forced expression of GFP or designated antioxidant enzymes were exposed to normoxia or hypoxia in parallel experiments and were processed for immunobloting of HIF1α or mRNA expression analysis of HIF1α target genes, Eno2 and Bnip3. (A, E, I) Immunoblots showing changes in the protein level of HIF1α in response to catalase (CAT) overexpression (A), peroxiredoxin 3 (PRDX3) overexpression (E) or glutathione peroxidase 1 (GPX1) overexpression (I) under normoxia and hypoxia. (B, F, J) Densitometric analysis of changes in the protein level of HIF1α in hypoxia with designated antioxidant enyzmes. (C, G, K) Changes in mRNA level of HIF1α target gene, Eno2 in respective overexpression conditions in normoxia and hypoxia. (D, H, L) Changes in mRNA level of HIF1α target gene, Bnip3 in respective overexpression conditions in normoxia and hypoxia. The final values were pooled as mean ± S.D. of three independent experiments in all cases. Student’s t test was used to compare the statistical difference between cells expressing antioxidants such as CAT, PRDX3, or GPX1 with that of respective GFP controls under hypoxia in densitometric analysis as well as gene expression analysis. (n.s.) indicates non-significant difference with respect to respective GFP controls under hypoxia. All western blot experiments were performed as three independent sets and a representative blot of each was shown in the figure.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Hep3B cells were infected with adenoviruses encoding distinct antioxidant enzymes and transgenes reached steady state expression after 72 hr. Transduced cells were then exposed to normoxia or hypoxia in parallel experiments and were processed for immunoblotting to assess protein levels of HIF1α or mRNA analysis for assessing changes in levels of established HIF1α target genes, Eno2 and Bnip3. (A, E, I) Immunoblots demonstrating changes in the protein level of HIF1α in response to either catalase (CAT) overexpression (A), peroxiredoxin 3 (PRDX3) overexpression, (E) or glutathione peroxidase 1 (GPX1) overexpression (I) under normoxia and hypoxia. (B, F, J) Densitometric analysis of changes in the protein level of HIF1α under hypoxia in respective overexpression conditions. (C, G, K) Changes in mRNA level of HIF1α target gene, Eno2 in respective overexpression conditions in normoxia and hypoxia. (D, H, L) Changes in mRNA level of HIF1α target gene, Bnip3 in respective overexpression conditions in normoxia and hypoxia. The final values were pooled as mean ± S.D. of three independent experiments in all cases. Student’s t test was used to compare the statistical difference between cells expressing antioxidants such as CAT, PRDX3 or GPX1 with that of respective GFP controls under hypoxia in densitometric analysis as well as gene expression analysis. (n.s.), (*) and (***) indicate non-significant differences, and the statistical differences of p < 0.05, and p < 0.001, respectively with respect to respective GFP controls under hypoxia. All immunoblot experiments were performed as three independent sets and a representative blot of each was shown in the figure.
 
 As a final test of whether overexpression of these adenoviral constructs of antioxidants decrease oxidant production in SH-SY5Y cells or not, we measured 5, 6 carboxydichlorofluorescein fluorescence (a non-selective redox sensitive reporter) using flow cytometry. These experiments confirmed the ability of GPX1, PRDX3, and catalase to decrease steady state DCF oxidation, presumably resulting from oxidants generated physiologically (Figure 3—figure supplement 3A and B). However, there was no significant change in peroxide level in response to MnSOD expression despite a significant increase in the MnSOD enzyme activity and protein level. This was unexpected and could reflect compensatory activation of other antioxidants such as GPX1, GPX4, or Prdx3 in response to increased MnSOD activity. We verified that DCF loading and corresponding antioxidant effects were not different from normoxic or hypoxic cells, arguing against the possibility that our redox reporter or the antioxidant enzymes are behaving differently in normoxia and hypoxia (Figure 3—figure supplement 3C and D). Importantly, Chandel and other groups had added DCF before exposing cells to hypoxia. But there was a concern that if changes in DCF signal are because of differential accumulation of DCF in hypoxic cells as compared to normoxic cells or because of an increased oxidant signaling. To minimize the possibility of increased DCF accumulation during hypoxic exposure, we added DCF after exposing cells to normoxia/hypoxia. With this protocol, we found decrease in DCF signal in control GFP expressing cells with hypoxic exposure compared to control GFP expressing cells with normoxic exposure. Additionally, we did not find an increase in DCF signaling with H2O2 treatment in cells, which were exposed to hypoxia. This could be because of either decrease in ROS level during hypoxia, which likely increased with H2O2 to the level of GFP control under normoxia but didn’t go further up or because of increased scavenging capacity of SH-SY5Y cells under hypoxia.
 
@@ -86,88 +126,516 @@ Our findings did not exclude the possibility that antioxidants alter HIF1α prot
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig4-v2.jpg)
 
-**Figure 4.:** Hif1a mRNA synthesis or stability.(A, B) Relative changes in Hif1a mRNA in SH-SY5Y cells in response to forced expression of various antioxidant enzymes. Data were pooled from three independent experiments in the form of mean ± SD. One-way ANOVA with Dunnett’s post-test was used for comparing cells expressing catalase or GPX1 with respect to cells expressing GFP and Student’s t test was used for comparing cells expressing PRDX3 with respect to GFP. (n.s.) indicates non-significant difference with respect to respective GFP controls under normoxia while (ns) and (#) indicate non-significant difference and the statistical difference of p < 0.05, respectively, with respect to GFP control in hypoxia. (C, D, E) Changes in half-life of HIF1α in SH-SY5Y ODD-Luc cells expressing catalase or GPX1 or PRDX3 with respect to that of respective GFP controls in hypoxia. ODD Half-life was assessed by performing a pulse chase experiment by adding 35 µM cycloheximide at every 20 min for a total of 4 hr using luciferase activity assay in SH-SY5Y cells expressing these antioxidants pre-treated either with or without 10 µM MG132. Data were pooled from three independent experiments in the form of mean ± SD. Two-way ANOVA with Bonferroni’s post-test was used for statistical analysis. (*), (**), and (***) indicate statistical differences of p < 0.05, p < 0.01, and p < 0.001 with respect to respective GFP controls in hypoxia. (°°°), (♦♦♦) and (#) represent statistical differences of p < 0.001w.r.t CAT, p < 0.001 w.r.t GPX1 and p < 0.05 w.r.t PRDX3, respectively.
+**Figure 4.:** (A, B) Relative changes in Hif1a mRNA in SH-SY5Y cells in response to forced expression of various antioxidant enzymes. Data were pooled from three independent experiments in the form of mean ± SD. One-way ANOVA with Dunnett’s post-test was used for comparing cells expressing catalase or GPX1 with respect to cells expressing GFP and Student’s t test was used for comparing cells expressing PRDX3 with respect to GFP. (n.s.) indicates non-significant difference with respect to respective GFP controls under normoxia while (ns) and (#) indicate non-significant difference and the statistical difference of p < 0.05, respectively, with respect to GFP control in hypoxia. (C, D, E) Changes in half-life of HIF1α in SH-SY5Y ODD-Luc cells expressing catalase or GPX1 or PRDX3 with respect to that of respective GFP controls in hypoxia. ODD Half-life was assessed by performing a pulse chase experiment by adding 35 µM cycloheximide at every 20 min for a total of 4 hr using luciferase activity assay in SH-SY5Y cells expressing these antioxidants pre-treated either with or without 10 µM MG132. Data were pooled from three independent experiments in the form of mean ± SD. Two-way ANOVA with Bonferroni’s post-test was used for statistical analysis. (*), (**), and (***) indicate statistical differences of p < 0.05, p < 0.01, and p < 0.001 with respect to respective GFP controls in hypoxia. (°°°), (♦♦♦) and (#) represent statistical differences of p < 0.001w.r.t CAT, p < 0.001 w.r.t GPX1 and p < 0.05 w.r.t PRDX3, respectively.
 
 To establish whether our findings in primary neurons and neuroblastoma cells can be extended to non-neural cell types, we examined the ability of antioxidant enzymes capable of modulating peroxide levels to modulate HIF1α stability in hypoxic Hep3B hepatocarcinoma cells and hypoxic HeLa cervical cancer cells. Forced expression of Catalase, GPX1, or PRDX3 using adenoviral vectors significantly increased in protein levels of each of the antioxidant enzymes in HeLa or Hep3B cells (Figure 3—figure supplements 5 and 6). Similar to primary neurons or neuroblastoma cells, we did not observe a uniform reduction in HIF1α stability in hypoxia by enzymes whose common activity is to decrease peroxide in these non-neural cell types (Figure 3—figure supplements 5 and 6). Altogether, our findings suggest that peroxide levels are uncoupled from HIF1α stability in neural and non-neural cells.
 
-## Neither reactive oxygen species nor reactive lipid species regulate HIF-1α stability in hypoxia
+### Neither reactive oxygen species nor reactive lipid species regulate HIF-1α stability in hypoxia
 
 Previous compelling evidence showed that reactive lipid species (RLS) are sufficient to drive HIF-dependent transcription via their effects on FIH inhibition without affecting HIF1α stability (Masson et al., 2012). Accordingly, we forced expression of GPX4, a selenoprotein that neutralizes RLS (Figure 5A). To manipulate steady-state levels, we used GPX4 protein fused to an optimized destabilization domain (dd) from the prokaryotic dihydrofolate reductase gene. The dd domain destabilizes GPX4 protein unless trimethoprim (TMP, 10 μM) is present (Figure 5B). TMP enhanced GPX4 levels in neuroblastoma cells expressing ddGPX4 but increasing GPX4 levels had no effect on hypoxia-induced HIF1α stability (Figure 5C–E) or HIF1α-dependent transcription (Figure 5F, G). We verified that GPX4 diminished RLS (Figure 5—figure supplement 1) and neutralized ferroptosis induced by glutamate, a form of cell death mediated by reactive lipid species that is abrogated by GPX4 (Figure 5H and I; Tan et al., 1998). Altogether, these findings argue against a central role for hydrogen peroxide or lipid peroxides in mediating HIF1α stabilization in hypoxia.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig5-v2.jpg)
+
+**Figure 5.:** (A) A schematic diagram showing that GPX4 converts lipid hydroperoxides into lipid alcohols using GSH as a cofactor. (B) A schematic showing regulated protein expression of GPX4 fusion containing an optimized destabilization domain when exposed to the antibiotic, Trimethoprim (TMP). Reversible stability of GPX4 protein was conferred by fusing its coding sequence to a destabilization domain sequence (mutants of E. coli dihydrofolate reductase). Accordingly, GPX4 protein possessing the destabilization domain is degraded resulting in low steady levels of GPX4. Trimethoprim binds to and neutralizes the destabilization domain stabilizing GPX4 protein in a dose-dependent manner. (C–E) SH-SY5Y ODD-Luc cells were transduced with adenoviral vectors encoding a destabilized form of GPX4 (ddGPX4) or GFP and then exposed to normoxia/hypoxia and were either processed for luciferase activity assay (C) or immunoblotting (D) and densitometric quantitation of three independent western blots of HIF1α and ODD-Luc protein were shown in (E). 10 µM TMP was added to ddGPX4 expressing cells after 60 h of adenoviral incubation for 12 hr to achieve stabilized GPX4 expression. (F, G) Relative changes in mRNA levels of HIF1α target genes, Eno2 and Bnip3 in SH-SY5Y cells. (H) A schematic diagram depicting the glutathione depletion model of oxidative stress. (I) PCNs were transduced with GFP/GPX4 for 24 hr and then treated with 5 mM HCA. Cells were simultaneously treated with 10 µM TMP. Then, cells were incubated for 24 hr to induce oxidative stress. Thereafter, viability of cells was measured via the MTT assay. 100 µM NAC was used as positive control. The final values were pooled as mean ± S.D. of three independent experiments. Two-way ANOVA with Bonferroni’s post-test was used for statistical analyses. One-way ANOVA with Dunnett’s post-test was used for comparing DCF fluorescence and viability. (n.s.), (*) and (***) indicate non-significant difference, and the statistical differences of p < 0.05, and p < 0.001, respectively, with respect to GFP control under normoxia while (ns), (#) and (###) indicate non-significant difference, and the statistical differences of p < 0.05, and p < 0.001, respectively, with respect to GFP control in hypoxia. (°°°) indicates statistical difference of p < 0.001 with respect to GFP treated with HCA only while (♦♦♦) indicates statistical difference of p < 0.001 with respect to GFP treated with both TMP and HCA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72873/elife-72873-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** After exposing parallel sets of SH-SY5Y ODD-Luc cells to either normoxia or hypoxia for 4 hr, media was removed, cells were washed with 1xPBS, and then 1xPBS with 20 μM DCFDA was added in each well. Additional parallel sets of cells from both conditions were also treated with 5 mM H2O2 at the same time and were used as positive controls. Plates from both normoxia and hypoxia were then incubated at room temperature for 30 min in normoxic condition. Thereafter, the fluorescence of DCFDA loaded SH-SY5Y cells were measured through flow cytometry using standard fluorescein wavelengths. Fluorescence values were obtained by multiplying cell counts with mean fluorescence and later converted into relative fold change with respect to cells expressing GFP exposed to either normoxia or hypoxia. The final values were pooled as mean ± S.D. of three independent experiments. One-way ANOVA with Dunnett’s post-test was used for all comparisons and a similar comparison was done in hypoxia separately. (*) indicate the statistical difference of p < 0.05 with respect to GFP control under normoxia while (n.s.) and (#) indicate non-significant difference and the statistical difference of p < 0.05 with respect to GFP control in hypoxia.
 
 ## Discussion
 
 Seminal studies have supported the notion that mitochondria are essential regulators of hypoxic adaptation possibly acting via their ability to generate peroxide (Agani et al., 2000; Chandel et al., 1998). In this paper, we show that HIF1α stability mediated by HIF PHDs during hypoxia does not require peroxide. These data include our inability to detect an increase in peroxide during hypoxia (Figure 2L); the lack of homeostatic changes in antioxidant protein expression during hypoxia (Figure 2B and Figure 2—figure supplement 1I); and the failure of forced expression of antioxidant enzymes (Catalase, GPX1, and PRDX3) with the common ability to diminish cellular peroxide to influence HIF1α stability and transcription in the same direction (Figure 3). Our findings agree with prior studies that showed: (1) that HIF PHDs are not inhibited by exogenously added peroxide (Chua et al., 2010), and (2) that forced expression of an alternative oxidase which directly transfers electrons from coenzyme Q to oxygen to form water maintains HIF1α stability in hypoxia, despite reducing superoxide generation at Complex III (Chua et al., 2010). Our results cannot be attributed to differences in mitochondrial ROS generation by transformed versus primary cells, or to differences in neuron-like versus non-neural cells, as SH-SY5Y neuroblastoma cells and primary cortical neurons showed similar effects, as did Hep3B hepatocellular carcinoma cells and HeLa cervical cancer cells. While we cannot exclude the possibility that culture conditions such as serum lots could reconcile our results with prior studies, in aggregate, the findings favor a role for mitochondria in modulating HIF1α stability via their effects as oxygen consumers not as peroxide second messenger generators.
 
-## Peroxide scavengers have distinct effects on hypoxic HIF1α stability
+### Peroxide scavengers have distinct effects on hypoxic HIF1α stability
 
 Prior studies have shown that in some cell types, ROS generation in hypoxia could be related to increased oxidant production or decreased defenses (Naranjo-Suarez et al., 2012). In order to address that the imbalance of oxidants and antioxidants plays the regulatory role in mediating hypoxia signaling, we forced expression of distinct antioxidant enzymes known to either decrease (GPX1, Catalase, and PRDX3) or enhance peroxide levels (MnSOD). Despite evidence for increased activity of the antioxidant enzymes studied using multiple experimental approaches, we found that HIF1α stability and transcription did not correlate with effects on peroxide levels in neuroblastoma cells and primary neurons (Figure 3 and Figure 3—figure supplement 4). Similar uncoupling was observed in non-neural cell types as well (Figure 3—figure supplements 5 and 6). The results uncouple peroxide generation in the mitochondria from HIF1α stability via the HIF PHDs. It is likely that the GPX1, catalase, and PRDX3 influenced HIF1α stability either via indirect but distinct effects on oxygen consumption, or alternatively via differential but direct effects on proteins that influence HIF1α regulation.
 
-## HIF1α stability under hypoxia is not regulated by reactive lipid species (RLS)
+### HIF1α stability under hypoxia is not regulated by reactive lipid species (RLS)
 
 Recent studies have highlighted the potential role that RLS could play in regulating HIF transcription rather than HIF1α stability. Accordingly, we forced expression of GPX4, a selenoprotein with known ability to neutralize reactive lipid species. Despite being active in combating RLS-mediated ferroptotic death in transformed cells (Figure 5I), GPX4 had no effect on HIF1α stability in hypoxia (Figure 5C–E) or HIF-dependent transcription (Figure 5F and G). These data suggest that while some RLS (e.g. tert-butyl hydroperoxide) are sufficient to activate HIF transcription, they are not necessary to stabilize HIF1α or drive HIF1α-dependent transcription in hypoxia.
 
 ## Materials and methods
 
-## Cell lines and in vitro tissue culture studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#2555; RRID:AB_390710</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MnSOD(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#HPA001814; RRID:AB_1080134</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Catalase(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C0979; RRID:AB_258720</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GPX1(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#3,286 S; RRID:AB_2067572</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GPX1(Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NBP1-33620; RRID:AB_10004091</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GPX4(Rabbit polyclonal)</td>
+      <td>LSBio</td>
+      <td>Cat#LS B1596</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PRDX3(Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NBP2-19777</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Luciferase(Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-74548; RRID: AB_1125118</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIF1α(Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NB100-479; RRID:AB_10000633</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIF1α(Mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#NB100-105; RRID:AB_10001154</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Citrate synthase(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#14,309 S; RRID:AB_2665545</td>
+      <td>WB(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin(Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A2066; RRID:AB_476693</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin(Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A5316; RRID:AB_476743</td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-GFP</td>
+      <td>ViraQuest, Inc (North liberty, IA)</td>
+      <td>MSRN: 22,576</td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-ddGPX4</td>
+      <td>ViraQuest, Inc (North liberty, IA)</td>
+      <td>MSRN: 22,665</td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMV-GFP</td>
+      <td>Univ. of Iowa, Viral Vector Core Facility</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMV-MnSOD</td>
+      <td>Univ. of Iowa, Viral Vector Core Facility</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMV-CAT</td>
+      <td>Univ. of Iowa, Viral Vector Core Facility</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad5CMV-GPX1</td>
+      <td>Univ. of Iowa, Viral Vector Core Facility</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-CMV-GFP</td>
+      <td>Vector Biolabs</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-h-PRDX3</td>
+      <td>Vector Biolabs</td>
+      <td>ADV-219772</td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-h-GRX1</td>
+      <td>Vector Biolabs</td>
+      <td>ADV-209995</td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ad-HyPer-cyto vector</td>
+      <td>Vector Biolabs</td>
+      <td></td>
+      <td>Adenoviral construct</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Rattus norvegicus)</td>
+      <td>Islets from Sprague–Dawley male rats</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample(Mus musculus)</td>
+      <td>Primary cortical neurons from CD-1 strain mice</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adaptaquin</td>
+      <td>Tocris Bioscience</td>
+      <td>5953; CAS Number 385786-48-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Sigma-Aldrich</td>
+      <td>R8875; CAS Number 83-79-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>A8674; CAS Number 1397-94-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Myxothiazol</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5580; CAS Number 76706-55-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium azide</td>
+      <td>Sigma-Aldrich</td>
+      <td>S2002; CAS Number 26628-22-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium cyanide (KCN)</td>
+      <td>Sigma-Aldrich</td>
+      <td>207810; CAS Number 151-50-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2920; CAS Number 370-86-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trimethoprim (TMP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T7883; CAS Number 738-70-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Homocysteic acid (HCA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H9633; CAS Number 14857-77-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetyl-L-cysteine (NAC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7250; CAS Number 616-91-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrogen peroxide solution, 30% w/w</td>
+      <td>Sigma-Aldrich</td>
+      <td>H1009; CAS Number 7722-84-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>Rat Insulin Radioimmunoassay (RIA)</td>
+      <td>Millipore-Sigma</td>
+      <td>RI-13K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>DCFDA-Cellular Reactive Oxygen Species Detection Assay Kit</td>
+      <td>Abcam</td>
+      <td>ab113851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>DC Protein Assay Kit 1</td>
+      <td>Bio-Rad</td>
+      <td>5000111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>E1501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>MTT assay (CellTiter 96 Non-Radioactive Cell Proliferation Assay)</td>
+      <td>Promega</td>
+      <td>G4100 (G4101+ G4102)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sytox blue nucleic acid stain</td>
+      <td>ThermoFisher Scientific</td>
+      <td>SS11348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SH-SY5Y</td>
+      <td>ATCC</td>
+      <td>CRL-2266; RRID:CVCL_0019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-2; RRID:CVCL_0058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>Hep3B</td>
+      <td>ATCC</td>
+      <td>ATCC HB-8064; RRID:CVCL_0326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled Enolase2 (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00157360_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled Bnip3 (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00969291_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled Hif1α (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs00153153_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VIC labeled human β actin (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>4326315E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled RNA28S5 (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs03654441_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VIC labelled RNA28S5 (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Hs03654441_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled Bnip3 (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Rn00821446_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM labeled Kdm6b (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Rn01471506_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>VIC labeled rat β actin (Taqman probe)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>4352340E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td></td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td></td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td></td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and in vitro tissue culture studies
 
 Immature primary cortical neurons were isolated from CD1 mice embryos (embryonic day 15 [E15]) as previously described (Ratan et al., 1994) by following the protocol approved by IACUC at Weill Cornell Medicine. SH-SY5Y human neuroblastoma cells (purchased from ATCC) were cultured in DMEM/F-12 plus GlutaMAX medium added with 10% fetal bovine serum (Invitrogen) and 1% penicillin/streptomycin (Invitrogen). HeLa cells and Hep3B cells (purchased from ATCC) were cultured in EMEM medium added with 10 % fetal bovine serum (Invitrogen) and 1% penicillin/streptomycin (Invitrogen). All cell lines were pre-authenticated by ATCC using STR profiling and were reported mycoplasma negative.
 
 Islets were harvested from Sprague–Dawley male rats (∼250 g, Envigo, Huntingdon, Cambridgeshire, United Kingdom) anesthetized by an intraperitoneal injection of sodium pentobarbital (35 mg/230 g rat). All procedures were approved by the University of Washington Institutional Animal Care and Use Committee. Islets were prepared and purified as previously described (Sweet et al., 2004) and then cultured at 37°C in RPMI Media 1640 (Gibco, Grand Island, NY) supplemented with 10% heat-inactivated fetal bovine serum (Atlanta Biologicals, Lawrenceville, GA) for specified times with the adenovirus coding the H2O2-sensitive dye (HyPer).
 
-## Adenoviral transduction and normoxia / hypoxia exposure
+### Adenoviral transduction and normoxia / hypoxia exposure
 
 Adenoviral constructs of MnSOD, catalase, GPX1 and respective GFP control were purchased from University of Iowa, Viral Vector Core Facility. Adenoviral construct of ddGPX4 (GPX4 with destabilization domain) and the respective GFP control were obtained from ViraQuest, Inc (North liberty, IA) and adenoviral constructs of PRDX3, GRX1 and respective GFP control were obtained from Vector Biolabs. For GPX4 construct, we took leverage of a novel technique recently developed by Thomas Wandless group (Iwamoto et al., 2010) to deliberately regulate the level of expression of a protein of interest. Adenoviral construct of ddGPX4 had an E. coli dihydrofolate reductase (ecDHFR) mutant (it was called as degradation domain) fused to its CMV promoter which displays Trimethoprim (TMP) dependent stability. Because of the fusion of degradation domain to the GPX4 promoter, GPX4 also displayed TMP dependent stability. Without TMP, GPX4 was rapidly degraded completely through proteasome but with increase in dose of TMP, GPX4 stability increases. Treatment of ddGPX4 expressing cells with 10 µM TMP for 12 hr stabilized ddGPX4 very well. SH-SY5Y cells, HeLa cells or Hep3B cells were transduced with different adenoviral constructs at 500 MOI (Multiplicity of infection) incubated for 72 h and primary immature cortical neurons (PCNs) were transduced with different adenoviral constructs at 100 MOI (Multiplicity of infection) for 48 h. The maximal expression of these constructs was determined by expressing adenoviral construct of GFP at 500 MOI for 72 hr in SH-SY5Y cells and 100 MOI for 48 hr in PCNs, respectively, on slides and staining them with GFP antibody (Abcam, ab6556). Ten µM TMP was added to ddGPX4 expressing cells and their respective control GFP expressing cells after 60 hr of adenoviral incubation for 12 hr to get stabilized GPX4 expression. Parallel sets without transduction of adenoviral constructs but probed with same GFP antibody were used as respective negative controls in each in-vitro models. Thereafter, one set was kept in normoxia (21% oxygen) and a parallel set in hypoxia (1% oxygen) for 4 hr. For the study of changes in endogenous antioxidants, SH-SY5Y cells and primary cortical neurons were exposed to normoxia/hypoxia for a relatively longer time period, 8 hr so that we could visualize compensatory changes in antioxidants under normoxic and hypoxic conditions.
 
 In order to study real time changes in hydrogen peroxide in hypoxia condition, the adenovirus containing the cytosolic H2O2 sensor, pHyPer-cyto vector (FP942, Evrogen, Moscow, Russia) (Belousov et al., 2006) was generated by Vector Biolabs (Malvern, PA) as previously described (Karamanlidis et al., 2013). The H2O2 sensor was transduced in intact islets during incubation in RPMI media supplemented with 10 % heat-inactivated fetal bovine serum and the adenoviruses at 100 MOI for 3 days at 37°C as previously optimized (Neal et al., 2016). SH-SY5Y cells and Hep3B cells were also transduced with the H2O2 sensor at 100 MOI in a similar manner.
 
-## Real-time epifluorescent imaging of intracellular H2O2
+### Real-time epifluorescent imaging of intracellular H2O2
 
 Real-time imaging experiments were carried out while islets were perifused using a commercially available temperature-controlled Bioptechs FCS2, a closed system, parallel plate flow chamber (Butler, PA) as previously described (Neal et al., 2016). After the islets were loaded into the perifusion chambers, the chamber was sealed and mounted onto the stage of a Nikon Eclipse TE-200 inverted microscope. KRB was pumped through the perifusion chamber at flow rates of 120 μl/min using a Masterflex L/S peristaltic pump (Cole-Parmer, Vernon Hills, IL). Use of an artificial gas exchanger positioned on the inflow side of the perifusion chamber enabled rapid changes in the concentrations of dissolved oxygen by switching the source tank of gas between tanks containing 21% and 1% oxygen (balance 5% carbon dioxide and nitrogen) (Sweet et al., 2002). The HyPer signal was generated by dual fluorescence excitation via a xenon arc lamp (Lambda LS-1620, Sutter Instrument Company, Novato, CA) through either a 405/30 nm or a 480/40 nm bandpass filter and detected at 510 nm through a longpass dichroic mirror with a cutoff below 500 nm. The images were taken using a digital camera (Photometrics Cool Snap HQ2 CCD camera, Tucson, AZ) through a 40 X Super Fluor Nikon objective (DIC H/N2). Data were expressed ratiometrically, where the excitation intensities at 480 nm were divided by those obtained during excitation at 405 nm. Similar procedure was used for real time monitoring of H2O2 in SH-SY5Y cells and Hep3B cells. In order to further confirm the specificity of HyPer signals, we treated Hep3B cells with the bacterial Streptolysin-O (which creates pores in the cell membranes) to selectively permeabilize the plasma membrane followed by their exposure to increasing concentrations of exogenous H2O2. Real time measurement of changes in the HyPer signals in response to exogenous addition of H2O2 confirmed the specificity of HyPer signal with regard to H2O2.
 
-## Real-time epifluorescent imaging of intracellular NAD(P)H
+### Real-time epifluorescent imaging of intracellular NAD(P)H
 
-NAD(P)H autofluorescence was measured similarly to H2O2, except there was no need for loading with dye, and the excitation and emission wavelengths were 360 and 460 nm, respectively (as previously described [Gilbert et al., 2008]). To calibrate the relative fluorescence units (RFU), at the end of experiments, the steady state RFU in the presence of potassium cyanide (KCN) and, subsequently, FCCP was measured. The normalized fluorescence of NAD(P)H was then calculated as follows,(1)%ReducedNAD(P)H=100∗(RFUtest−RFUFCCP)/(RFUKCN−RFUFCCP)
+NAD(P)H autofluorescence was measured similarly to H2O2, except there was no need for loading with dye, and the excitation and emission wavelengths were 360 and 460 nm, respectively (as previously described [Gilbert et al., 2008]). To calibrate the relative fluorescence units (RFU), at the end of experiments, the steady state RFU in the presence of potassium cyanide (KCN) and, subsequently, FCCP was measured. The normalized fluorescence of NAD(P)H was then calculated as follows,
+
+$$
+%ReducedNAD(P)H=100∗(RFU_{test}−RFU_{FCCP})/(RFU_{KCN}−RFU_{FCCP})
+$$
 
 where RFUFCCP and RFUKCN equals the average of the final 10 time points during which each agent was present.
 
-## Real-time measurement of insulin secretion rate
+### Real-time measurement of insulin secretion rate
 
 Outflow fractions from the flow system containing islets were collected in a fraction collection for subsequent measurement of insulin (described previously Sweet et al., 2004; Sweet et al., 2002). Insulin secretion rate was calculated as the flow rate (80 µl/min) times the insulin concentration in the outflow Fractions, over the number of islets in the chamber (typically 50 Sweet and Gilbert, 2006). Insulin was measured by radioimmunoassay (RI-13K, EMD Millipore, Darmstadt, Germany) as per the manufacturer instructions.
 
-## ODD-luciferase activity assay
+### ODD-luciferase activity assay
 
 The ODD-luciferase construct with pcDNA3.1 plasmid vector was constructed as previously described (Safran et al., 2006). The proline p402 and p564 present within the oxygen degradation domain (ODD) of HIF1α, when hydroxylated by HIF-PHDs, allow its binding to the VHL protein that target it for proteasomal degradation. In this way, the stabilization of ODD can be used as a marker of HIF1α stability (Safran et al., 2006; Smirnova et al., 2010). Because of the luciferase tagged with ODD, the increase in ODD stability leads to a proportional increase in the luciferase activity and this provides a very good way of measuring the HIF1α stability in a quantitative manner with a wide dynamic range. To this end, we used SH-SY5Y cells stably expressing ODD-luciferase. These cells were made by co-transfecting ODD-luciferase plasmid along with a puromycin resistance plasmid in SH-SY5Y cells and stably transfected cells were positively selected in presence of 4 μg/ml of puromycin. Luciferase activity was measured by luciferase assay kit (promega) using an LMaxII microplate luminometer (molecular Devices). ODD-luciferase activity was normalized to the protein content of each well measured by Bio-Rad DC protein assay kit.
 
-## Gene expression study
+### Gene expression study
 
 Total RNA was prepared from SH-SY5Y cells using the Nucleospin RNA kit (MACHEREY-NAGEL) and following their protocol. Real-time PCRs were performed as a duplex reaction using FAM labeled Enolase2 (Human - Hs00157360_m1), Bnip3 (Human - Hs00969291_m1), and Hif1a (Human - Hs00153153_m1) gene expression assays (Thermo Fisher Scientific) and VIC-labeled human β actin endogenous control probe (Human - 4326315E) or RNA28S5 (Human - Hs03654441_s1) (Thermo Fisher Scientific) so that amplified mRNA can be normalized to β actin or RNA28S5. These experiments were performed using a 7500 Real-time PCR system (Applied Biosystems) using standard PCR protocol and amplification conditions.
 
 In order to measure gene expression in pancreatic islets exposed to normoxia or hypoxia, islets were first placed in incubators containing either 21% or 1% oxygen for 2 hr. At the end of this time, islets were lysed and total RNA was purified using RNeasy Mini Kit (Qiagen, Hilden Germany). Bnip3, Kdm6b and rat Actin B mRNA were measured by quantitative PCR using FAM-labeled Bnip3 (Rat - Rn00821446_g1), Kdm6b (Rat - Rn01471506_m1) gene expression assays and VIC-labeled rat β actin endogenous control probe (Rat - 4352340E), all purchased from Thermo Fisher Scientific. These experiments were performed on Mx3005P Multiplex QPCR System (Stratagene, La Jolla, CA) with samples loaded in triplicate using ∼ 100 ng of total RNA.
 
-## Enzyme activity assay
+### Enzyme activity assay
 
 For GPX1, catalase, and MnSOD activity assay, cells in each sample expressing respective adenoviral constructs were collected, lysed and used for respective enzyme activity assay following the protocols of GPX1, catalase, and SOD assay kit from Biovision. Total protein was measured using the Bio-Rad DC protein assay kit. The enzyme activity was normalized to the protein concentration for each sample.
 
-## Cell viability assay
+### Cell viability assay
 
 In order to test the functional activity of GPX4, immature primary cortical neurons (E15) were isolated from mice embryos and plated at 106 cells/ml in 96-well plate. The next day, cells were transduced with GPX4 adenoviral constructs at 100 MOI. After 24 hr incubation, cells were treated with glutamate analog, homocysteic acid (HCA) (5 mM) which inhibits Xc- transporter, thereby inhibiting cysteine uptake which leads to glutathione depletion and increase in intracellular oxidative stress. Cells were also treated with 10 µM TMP at the same time to stabilize GPX4 protein. The next day, cell viability was assessed by the MTT assay (Promega) to understand whether ddGPX4 is functionally active to show its protective effect by decreasing oxidants under oxidative stress.
 
-## Cell death assay
+### Cell death assay
 
 SH-SY5Y ODD-luc cells overexpressing different adenoviral constructs of antioxidants were treated with increasing concentrations of H2O2 (1mM – 10mM) and then were exposed to normoxia or hypoxia in parallel for 4 hr and then plates were taken out and media was removed gently and 1xPBS containing 10 μM Sytox blue dye (Nucleic acid stain that easily penetrates cells with compromised membranes and binds to DNA) was added in each well and incubated at room temperature for 15 min and then fluorescence was measured using fluorescence plate reader with excitation/emission maxima at 440/480 nm.
 
-## ROS measurement through DCF flow cytometry
+### ROS measurement through DCF flow cytometry
 
 To measure changes in ROS levels, molecular probe DCFDA (2’, 7’ – dichlorofluorescin diacetate) was used. After exposing parallel sets of SH-SY5Y ODD-Luc cells to either normoxia or hypoxia for 4 hr, media was removed, cells were washed with 1xPBS once, and then 1xPBS with 20 μM DCFDA was added in each well. Additional parallel sets of cells from both conditions were also treated with 5 mM H2O2 at the same time and were used as positive controls. Plates from both normoxia and hypoxia were then incubated at room temperature for 30 min in normoxic condition. DCFDA diffuses through the cell membrane and is deacetylated by intracellular esterases to a non-fluorescent form which is later oxidized by ROS into 2’, 7’ – dichlorofluorescein (DCF) which is a highly fluorescent compound. After incubation, fluorescence was measured through flow cytometry at the wavelength of excitation, 485 nm and emission, 535 nm, respectively. Production of ROS was measured as mean fluorescence index multiplied by respective cell counts and was expressed as fold change with respect to control.
 
-## Immunoblotting
+### Immunoblotting
 
 Protein extracts were prepared using 1% triton buffer containing protease inhibitor cocktail, MG132, PMSF, and DTT and were separated by SDS-PAGE, transferred onto nitrocellulose membrane and probed with antibodies against GFP (Cell Signaling Technology; 2555), MnSOD (Sigma-Aldrich; HPA001814), catalase (Sigma-Aldrich; C0979), GPX1 (Cell Signaling Technology; 3,286 S and Novus Biologicals; NBP1-33620), GPX4 (LSBio; LS B1596), PRDX3 (Novus Biologicals; NBP2-19777), Luciferase (Santa Cruz Biotechnology; sc-74548), HIF1α (Novus Biologicals; NB100-479 and NB100-105), Citrate synthase (Cell Signaling Technology; 14,309 S) antibodies were used for immunoblotting. Nuclear-cytoplasmic fractionation was done using NE-PER Nuclear and Cytoplasmic Extraction kit (ThermoFisher Scientific, Catalog number: 78835) and nuclear fraction was used for the immunoblotting of HIF1α using the monoclonal antibody (NB100-105) while the whole cell extract was used for the immunoblotting of HIF1α using polyclonal antibody (NB100-479) and all other immunoblots.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All experiments were performed as at least three independent sets and data were displayed as means ± standard deviation (SD). Statistical significances were assessed in GraphPad Prism using either Student’s t tests to compare values between two specific groups or one-way ANOVA followed by Dunnett’s post-hoc test/Tukey’s Post-hoc test to compare the values of more than two groups or two-way ANOVA followed by Bonferroni’s post-hoc test to compare the values of two groups under two different conditions at a given time. Statistical details for each figure can be found in their respective figure legends. The p value of 0.05 or less was considered statistically significant in all statistical analyses.
 
-## Online supplemental material
+### Online supplemental material
 
 Figure 2—figure supplement 1 shows that hypoxic exposure of SH-SY5Y cells for different time periods such as 2, 4, and 8 hr do not induce homeostatic increase in antioxidant enzymes. Figure 2—figure supplement 2 provides additional evidence in SH-SY5Y cells or Hep3B cells that hypoxia does not increase peroxide levels. Figure 3—figure supplement 1 shows a validation of the degree of expression of transduced transgenes encoded within adenoviral vectors in SH-SY5Y cell and primary cortical neurons (PCNs) using adenoviral particles encoding GFP. Figure 3—figure supplement 2 shows the validation of the enzyme activities of various antioxidants in normoxia and hypoxia. Figure 3—figure supplement 3 shows the validation of the functional activity of antioxidants to decrease reactive oxygen species. Figure 3—figure supplement 4 provides the additional evidence in primary neurons that the stabilization of HIF1α is not oxidant-initiated in hypoxia. Figure 3—figure supplement 5 provides additional evidence in HELA cells that the stabilization of HIF1α is not oxidant-initiated in hypoxia. Figure 3—figure supplement 6 provides another additional evidence in Hep3B cells that the stabilization of HIF1α is not oxidant-initiated in hypoxia. Figure 5—figure supplement 1 shows the validation of the functional activity of GPX4 to reduce reactive lipid species.

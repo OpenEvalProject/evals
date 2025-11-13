@@ -23,21 +23,37 @@ Membrane protein recycling systems are essential for maintenance of the endosome
 
 Recycling sorting components (eg, receptors, SNAREs, transporters, etc) in the endo-lysosome system are essential for the normal assembly and function of the lysosome. The best-characterized recycling cargo is yeast Vps10. Vps10, the first member of the sortilin receptor family, is a transmembrane (TM) protein receptor that sorts carboxypeptidase Y (CPY) into vesicles at the Golgi (Marcusson et al., 1994). After CPY-containing vesicles are transported to the endosome, the endosome matures and fuses with the vacuole, delivering soluble CPY to the vacuole lumen. Unlike CPY, which is released from the Vps10 receptor in the endosome, Vps10 is not delivered to the vacuole. It is recycled from the endosome back to the Golgi by retromer, making Vps10 available for additional rounds of CPY sorting. Retromer is an evolutionarily conserved protein coat complex composed of five proteins: Vps5, Vps17, Vps26, Vps29, and Vps35 (Figure 1A–B, Figure 1—figure supplement 1A; Seaman et al., 1997; Seaman et al., 1998; Suzuki et al., 2019). It deforms the endosomal membrane to form cargo-containing recycling tubules/vesicles. In humans, the loss of retromer function alters the cellular localization of hundreds of TM proteins. A mutation in VPS35 has been associated with Alzheimer’s disease (AD) and Parkinson’s disease (Vilariño-Güell et al., 2011; Zimprich et al., 2011; Rovelet-Lecrux et al., 2015; Small and Petsko, 2015). Retromer also has been identified as an essential host factor for severe acute respiratory syndrome coronavirus 2 (SARS-nCoV2) infection (Daniloski et al., 2021). Thus, retromer-mediated endosomal recycling has been linked to diverse pathologies (Teasdale and Collins, 2012; Small and Petsko, 2015; McMillan et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of SNX-BAR proteins in yeast. (B) Model of endosomal recycling pathways in yeast. (C) Schematic of Vps55 and OB-RGRP. (D) Vps55-GFP localization. The mCherry-Pep12 serves as an endosomal marker. (E) Vps55-GFP localization in wild-type (WT), vps35Δ (retromer mutant), snx4Δ (Snx4 complex mutant), and mvp1Δ. (F) Quantification of Vps55-GFP localization from three independent experiments. N = >30 cells. Scale bar: 1 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of retromer and Snx4 complexes. (B) The localization of mNeonGreen-Pep12 in wild-type (WT) and vps35Δ cells. (C) Vps55-GFP localization with Sec7-mCherry serving as a marker for the trans-Golgi. (D) Manders’ coefficients of Vps55-GFP with Sec7-mCherry or mCherry-Pep12 from C and Figure 1D. (E) Vps55-GFP localization in snx41Δ, snx42Δ, and ykr078wΔ cells. Scale bar: 1 µm.
+
 Sorting nexin (SNX) is an evolutionarily conserved protein family comprising a Phox homology (PX) domain that binds to phosphatidylinositol 3-phosphate (PI3P), allowing its selective interaction with endosome (Burda et al., 2002; Carlton et al., 2004). Some SNXs also possess a Bin-amphiphysin-Rvs167 (BAR) domain that induces/stabilizes membrane curvature. These SNXs have been classified as the SNX-BAR subfamily (Cullen, 2008). Previous studies have identified seven yeast and twelve mammalian SNX-BAR proteins (Figure 1A). In budding yeast, Vps5 (SNX1/2 in humans), Vps17 (SNX5/6/32 in humans), Snx4 (SNX4 in humans), Snx41 (SNX7 in humans), Snx42 (SNX30 in humans), Mvp1 (Snx8 in humans), and Ykr078w belong to this family. Vps5 and Vps17 function in membrane binding/deformation as retromer subunits (Horazdovsky et al., 1997; Seaman et al., 1997; Seaman et al., 1998). Snx4 forms a complex with either Snx41 or Snx42 and mediates retromer-independent membrane protein recycling from the endosome and the vacuole (Figure 1B, Figure 1—figure supplement 1A; Hettema et al., 2003; Suzuki and S.D, 2018).
 
 Mvp1 is a yeast SNX-BAR protein identified as a multicopy suppressor of dominant-negative VPS1 mutations (Ekena and Stevens, 1995). A previous study has proposed that Mvp1 is required for retromer-mediated recycling (Chi et al., 2014). Interestingly, two single-nucleotide polymorphisms within the SNX8 (the human homolog of MVP1) gene locus are associated with late-onset AD (Rosenthal et al., 2012). Xie et al., 2019 report that the SNX8 expression level is significantly lower in AD patients and APP/PS1 AD mouse brain. Overexpression of SNX8 suppresses the accumulation of fragments of amyloid precursor protein (Aβ). Additionally, patients lacking SNX8 were shown to have heart development defects, intellectual disability, learning and language delay, and severe behavioral problems related to the hyperactive-impulsive and inattentive area (Vanzo et al., 2014; Rendu et al., 2014; Mastromoro et al., 2020). Although SNX8 has been linked to several diseases, its molecular function is still poorly characterized. Here, we show that Mvp1 recycles membrane proteins in a retromer- and Snx4-independent manner in yeast. We also demonstrate that SNX8 mediates formation of endosomal recycling tubules in humans. Thus, we propose Mvp1 mediates a conserved endosomal recycling pathway that is mechanistically distinct from the retromer and Snx4 pathways. This study reveals that yeast has three major SNX-BAR endosomal recycling pathways: retromer, Snx4, and Mvp1.
 
 ## Results
 
-## The endosomal localization of Vps55 requires Mvp1
+### The endosomal localization of Vps55 requires Mvp1
 
 To characterize the function of Mvp1 and test the hypothesis that Mvp1 is involved in membrane protein recycling, we tested the requirement of Mvp1 function for endosomal TM cargo proteins. To maintain endosomal localization, these proteins need to be recycled back to the Golgi mainly by the retromer before the endosome fuses with the vacuole. Indeed, the endosomal t-SNARE Pep12 accumulates on the vacuole membrane in retromer-defective vps35Δ cells, because retromer-mediated endosome-to-Golgi retrograde trafficking is impaired (Figure 1—figure supplement 1B). We hypothesized that TM proteins that remain properly localized to the endosome in a retromer-independent manner might be cargo for Mvp1. We examined several endosomal TM proteins’ localization in vps35Δ cells (Figure 1—source data 2) and found Vps55 still localized on the endosome even in retromer mutants.
 
 Vps55 is an endosomal membrane protein involved in the fusion of the endosome with the vacuole (Figure 1C; Belgareh-Touzé et al., 2002; Schluter et al., 2008). Vps55 is evolutionarily conserved and its human homolog is OB-RGRP (OB-R gene-related protein), which is responsible for downregulation of specific leptin receptors (Couturier et al., 2007). When we expressed chromosomally tagged Vps55-GFP, it was localized on punctate structures that colocalized with the endosomal membrane protein mCherry-Pep12, but not with the trans-Golgi protein Sec7-mCherry, as previously reported (Figure 1D, Figure 1—figure supplement 1C, D; Belgareh-Touzé et al., 2002; Schluter et al., 2008). In retromer mutants (vps35Δ), it was still localized on the endosome (Figure 1E and F). The Snx4 complex is known to mediate retromer-independent endosomal recycling (Hettema et al., 2003), but Vps55-GFP was also localized on the endosome in Snx4 complex mutants (snx4Δ, snx41Δ, and snx42Δ) (Figure 1E and F, Figure 1—figure supplement 1E). Strikingly, Vps55-GFP accumulated on the vacuole membrane in mvp1Δ cells (Figure 1E and F). Vps55-GFP localized on the endosome in cells lacking Ykr078w, another poorly characterized SNX-BAR protein (Figure 1—figure supplement 1E). These results suggest that the endosomal localization of Vps55 requires Mvp1.
 
-## Mvp1 is an endosomal coat complex for Vps55 recycling
+### Mvp1 is an endosomal coat complex for Vps55 recycling
 
 Mvp1 has been characterized as a retromer-associated SNX-BAR protein (Chi et al., 2014). However, its function in the retromer-independent pathway has never been studied. Endogenously expressed Mvp1-GFP localized to the endosome as previously reported (Figure 2A; Chi et al., 2014). To test if Mvp1 also localizes to the vacuole membrane, we examined the localization of Mvp1 in cells lacking Pep12, which is essential for endosome assembly (Becherer et al., 1996). In pep12Δ cells, Mvp1-GFP lost its endosomal localization and was distributed to the cytoplasm (Figure 2—figure supplement 1A), suggesting that Mvp1 specifically localizes on the endosome.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mvp1-GFP localization. The mCherry-Pep12 serves as an endosomal marker. (B) Schematic of Mvp1 mutants. (C) The localization of Mvp1-GFP mutants. (D) The localization of Vps55-GFP mutants. (E) Quantitation of Vps55-GFP localization of mvp1 mutants from three independent experiments. N = >30 cells. (F) The binding of SNX-BAR proteins with Mvp1. FLAG-tagged SNX-BAR proteins were immunoprecipitated (IP) from cells expressing Mvp1-GFP, and the IP products were analyzed by immunoblotting using antibodies against FLAG, green fluorescent protein (GFP), and glucose-6-phosphate dehydrogenase (G6PDH). (G) The dimer formation of mvp1 mutants. Mvp1-FLAG was immunoprecipitated from cells expressing Mvp1-GFP mutants, and the IP products were analyzed by immunoblotting using antibodies against FLAG, GFP, and G6PDH. (H) Live-cell imaging analysis of Vps55-mNeonGreen and mCherry-Vps21. (I) Live-cell imaging analysis of Mvp1-mNeonGreen and mCherry-Vps21. Scale bar: 1 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mvp1-GFP localization in pep12Δ cells. Scale bar: 1 µm. (B) Mutation sites used in this study are shown on the cryo-electron microscopy (cryo-EM) structure of Saccharomyces cerevisiae Mvp1 (PDB ID code: 6Q0X). (C) Sequence comparison of the residue required for phosphatidylinositol 3-phosphate (PI3P) binding among Phox homology (PX) domain-containing proteins. (D) Line scan analysis performed for the region highlighted by the white line from Figure 2H.
 
 The PX domain of Mvp1 binds to PI3P, allowing its specific localization on the endosome (Figure 2B). The conserved residue R172 located in the PX domain is responsible for PI3P binding (Figure 2—figure supplement 1B, C; Chi et al., 2014). The R172E mutation severely impaired the endosomal localization of Mvp1 (Figure 2C). When the R172E mutant was expressed in mvp1Δ cells, Vps55-GFP localized to the vacuole membrane (Figure 2D and E), indicating that the endosomal localization of Mvp1 is required for appropriate Vps55 localization.
 
@@ -45,17 +61,33 @@ In addition to the PX domain, Mvp1 has a BAR domain, which induces/stabilizes me
 
 To characterize how Mvp1 recycles Vps55, we performed live-cell imaging of Vps55-mNeonGreen with an endosomal Rab GTPase mCherry-Vps21 (Horazdovsky et al., 1994). The Vps55-mNeonGreen decorated tubules that emerged and detached from both Vps55-mNeonGreen- and mCherry-Vps21-positive endosomes (Figure 2H, Figure 2—figure supplement 1D). Similarly, we observed that Mvp1-mNeonGreen-positive but mCherry-Vps21-negative tubules also budded from the endosome (Figure 2I and Figure 2—video 1), which was consistent with a previous report (Chi et al., 2014). Based on these observations, we propose that Mvp1 is an endosomal coat complex for Vps55 retrieval.
 
-## Mvp1 recognizes Vps55 through a specific sorting motif
+### Mvp1 recognizes Vps55 through a specific sorting motif
 
 To determine the sequence motif required for Vps55 retrieval, we performed a mutational analysis of the cytoplasmic region of Vps55. We generated a series of Vps55-GFP mutants in which three or four consecutive amino acids of the cytoplasmic region were replaced with alanine residues and examined their localization (Figure 3A, Figure 3—figure supplement 1A). Since 2–4 A and 5–8 A mutants failed to express, we were not able to analyze residues 2–8 of Vps55. Of the tested mutants, 60–63 A and 64–67 A mutants exhibited a severe defect in Vps55 recycling. In contrast, 68–71 A, 72–75 A, 133–136 A, and 137–140 A did not show a striking defect. Next, we mutated single residues to alanine in the 60–67 region (Figure 3B, Figure 3—figure supplement 1B). Of the mutants tested, Y61A, T63A, F66A, and M67A stabilized Vps55-GFP on the vacuole membrane. K60A and D65A mutants also showed a defect, but it could be due to the higher expression of Vps55-GFP. Then, we generated Y61A/T63A, F66A/M67A, and Y61A/T63A/F66A/M67A mutants. While Y61A/T63A and F66A/M67A mutants showed a partial defect in Vps55-GFP recycling, the Y61A/T63A/F66A/M67A mutant exhibited a severe defect (Figure 3C and D). To test whether the 61-YHTSDFM-67 region is required for binding with Mvp1, we performed coimmunoprecipitation experiments. Mvp1-GFP was coprecipitated with the wild-type (WT) Vps55-FLAG, whereas the binding of the Y61A/T63A/F66A/M67A mutant was impaired (Figure 3E). Since the Y61A/T63A/F66A/M67A mutant localized on the vacuole membrane, we also examined the Mvp1-Vps55 interaction in cells lacking Vam3, which is an essential SNARE for the endosome to fuse with the vacuole. Mvp1-GFP was still coprecipitated with Vps55-FLAG, but not with Vps554Ala-FLAG (Figure 3—figure supplement 1C). These results suggest that 61-YHTSDFM-67 in Vps55 is required for Mvp1 recognition, although it is also possible that the Vps55-Mvp1 interaction is bridged by another protein (Figure 3F).
 
-## Excess Vps55 is ubiquitinated and degraded rather than recycled
+![Figure 3.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig3-v2.jpg)
+
+**Figure 3.:** (A, B, and D) Schematic of Vps55 mutational analysis and quantitation of Vps55-GFP mutant localization, from Figure 3—figure supplement 1A (A), Figure 3—figure supplement 1B (B), and Figure 3—figure supplement 1C (D). (C) The localization of Vps55-GFP mutants. (E) The Mvp1-Vps55 interaction in Vps55-FLAG mutants. Vps55-FLAG mutants were immunoprecipitated (IP) from cells expressing Mvp1-GFP, and the IP products were analyzed by immunoblotting using antibodies against FLAG, green fluorescent protein (GFP), and glucose-6-phosphate dehydrogenase (G6PDH). (F) Schematic of Vps55 and the residues facilitating its interaction with Mvp1. (G) The localization of overexpressed Vps55-GFP. (H) Vps55-GFP sorting in vacuolar hydrolases (pep4Δ and pep4Δ prb1Δ) and ESCRT (vps4Δ) mutants. Cell lysates expressing Vps55-GFP were analyzed by immunoblotting using antibodies against GFP and G6PDH. (I) The ubiquitination of overexpressed Vps55-GFP. Overexpressed Vps55-GFP was immunoprecipitated from yeast cells under denaturing conditions, and the IP products were analyzed by immunoblotting using antibodies against GFP and ubiquitin. (J) Vps55-GFP-Ub localization in ESCRT mutants. (K) Model of Vps55 recycling and degradation at the endosome. For all quantification shown in this figure, n = >30 cells from three independent experiments. Scale bar: 1 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Localization of Vps55-GFP mutants. In K60A and D65A mutants, the excitation laser intensity was lowered to 20%, because its expression was higher than other mutants. (C) The Mvp1-Vps55 interaction in vam3Δ cells. Vps55-FLAG mutants were immunoprecipitated (IP) from vam3Δ cells expressing Mvp1-GFP, and the IP products were analyzed by immunoblotting using antibodies against FLAG, green fluorescent protein (GFP), and glucose-6-phosphate dehydrogenase (G6PDH). (D) Immunoblotting of cells expressing increasing amounts of Vps55-GFP. (E) The localization of overexpressed Vps55-GFP and Vps68. (F) Quantification of Vps55-GFP localization from three independent experiments. N = >30 cells. (G) Cell lysates expressing Vps55-GFP or Vps55-GFP-Ub were analyzed by immunoblotting using antibodies against GFP and G6PDH. Scale bar: 1 µm.
+
+### Excess Vps55 is ubiquitinated and degraded rather than recycled
 
 Many proteins are assembled into the protein complex of defined stoichiometry to function appropriately (Yanagitani et al., 2017; Mena et al., 2018). Some unassembled soluble proteins are ubiquitinated and then degraded through the proteasome. However, the fate of unassembled membrane proteins has not been well studied. Vps55 forms a complex with Vps68. This complex formation is required for the stability of both Vps55 and Vps68 (Schluter et al., 2008). When we overexpressed Vps55-GFP, it was sorted into the vacuole lumen and degraded (Figure 3G, Figure 3—figure supplement 1D). Consistent with this, Vps55-GFP processing was observed in WT cells by immunoblotting, whereas it was not in cells lacking vacuolar hydrolases PEP4 and PRB1 (Figure 3H). Overexpression of Vps68 suppressed degradation of Vps55-GFP (Figure 3—figure supplement 1E, F), suggesting that the unassembled excess pool of Vps55-GFP is degraded. Vacuolar degradative protein sorting is mainly mediated through the endosomal sorting complex required for transport (ESCRT) complex (Henne et al., 2011). Indeed, Vps55-GFP was not degraded in ESCRT-defective vps4Δ cells, suggesting that the ESCRT pathway is required for the vacuolar sorting of Vps55-GFP (Figure 3H). Cargo ubiquitination is a prerequisite for recognition by the ESCRT machinery (Katzmann et al., 2001). To ask whether Vps55 is ubiquitinated, we immunoprecipitated (IP) Vps55-GFP and were able to detect ubiquitinated forms of Vps55-GFP (Figure 3I). To ask if ubiquitination is sufficient for Vps55 degradation, we fused ubiquitin to Vps55-GFP. Vps55-GFP-Ub was sorted into the vacuole lumen in an ESCRT-dependent manner, even when expressed at endogenous levels (Figure 3J, Figure 3—figure supplement 1G). Collectively, we propose that excess Vps55 is ubiquitinated and degraded through the ESCRT pathway rather than recycled (Figure 3K).
 
-## Mvp1 recruits dynamin-like GTPase Vps1 to catalyze membrane scission
+### Mvp1 recruits dynamin-like GTPase Vps1 to catalyze membrane scission
 
 Dynamin is a GTPase that has diverse roles in membrane remodeling events (Ferguson and Camilli, 2012; Daumke et al., 2014). Its function is best characterized in the context of clathrin-mediated endocytosis. During endocytic vesicle formation, a subset of BAR domain-containing proteins (FCHO1, FBP17, SNX9, endophilin, amphiphysin, etc), together with clathrin and its adaptor proteins, are recruited to the plasma membrane (PM). Subsequently, they induce membrane curvature to mediate the formation of a budding vesicle. Then, dynamin is recruited to its neck to mediate fission, thereby releasing the vesicles (Ferguson and Camilli, 2012). To ask if dynamin catalyzes membrane scission in Mvp1-mediated recycling, we examined Vps55 localization in dynamin mutants. The yeast genome encodes four dynamin-related proteins, Dnm1, Vps1, Sey1, and Mgm1 (Ford and Chappie, 2019). Dnm1 and Vps1 have membrane scission activity, whereas Sey1 and Mgm1 do not. Dnm1 assembles on mitochondria to mediate mitochondrial fission (Bleazard et al., 1999; Sesaki and Jensen, 1999). Vps1 has been implicated in vacuole fusion/fission, endocytosis, peroxisome division, CPY sorting, and endosomal recycling (Figure 4A; Peter et al., 2004; Kuravi et al., 2006; Rooij et al., 2010; Rooij et al., 2012; Hayden et al., 2013; Chi et al., 2014). However, how Vps1 functions in these processes has not been characterized well. When Vps55-mNeonGreen was expressed in vps1Δ cells, it localized to the vacuole membrane, suggesting Vps1 is required for Vps55 recycling (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of Vps1. (B) Vps55-mNeonGreen localization in WT and vps1Δ cells. (C) Quantitation of Vps55-mNeonGreen localization, from B. (D) The live-cell imaging of Vps1-GFP. The mCherry-Vps21 serves as an endosomal marker. (E) Model of Dynamin-1-mediated membrane fission. (F) Sequence comparison of residues required for guanosine-5'-triphosphate (GTP) hydrolysis in Homo sapiens Dynamin-1, H. sapiens Dynamin-2, H. sapiens Dynamin-3, Saccharomyces cerevisiae Dnm1, and S. cerevisiae Vps1. (G) Vps55-mNeonGreen localization in vps1K42A mutants. (H) Quantitation of Vps55-mNeonGreen localization, from G. (I) The localization of Mvp1-mNeonGreen, mCherry-Vps21, and Vps1K42A-BFP. (J) Vps1-GFP localization in wild-type (WT) and vps35Δ snx4Δ mvp1Δ triple mutants. (K) Quantitation of Vps1-GFP localization, from J and Figure 4—figure supplement 1F. (L) The Mvp1-Vps1 interaction. Mvp1-FLAG was immunoprecipitated (IP) from cells expressing Vps1-GFP mutants, and the IP products were analyzed using antibodies against FLAG, green fluorescent protein (GFP), and glucose-6-phosphate dehydrogenase (G6PDH). (M) In vitro binding assay between Mvp1 and Vps1-GFP. The proteins bound to anti-GFP magnetic beads were detected by Coomassie staining. For all quantifications shown in this figure, n = >30 cells from three independent experiments. Scale bar: 1 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Growth of Vps1-GFP-expressing cells. (B, C, and D) Vps1-GFP localization with Sec7-mCherry serving as a marker for the trans-Golgi (B), Nhx1-mCherry serving as a marker for the endosome (C), or Mvp1-mRFP (D). (E) Schematic of Dynamin-1 and Vps1 domains and mutated residues. (F) Vps1-GFP localization in wild-type (WT), vps35Δ, snx4Δ, and mvp1Δ cells. (G) Vacuole morphology in vps35Δ, snx4Δ, and mvp1Δ supplemented with 2 mM choline or 2 mM ethanolamine. (H) Vps1-GFP localization in WT or vps34Δ cells. (I) Quantification of Vps1-GFP localization from H. (J) Mvp1-mNeonGreen localization in WT and vps1Δ cells with mCherry-Vps21 serving as an endosomal marker. (K) Localization of Mvp1-GFP in vps1Δ cells. (L) Quantification of Mvp1-GFP localization from K. (M) Vps1-GFP localization in WT, vps35Δ, snx4Δ, and mvp1Δ cells expressing Mvp1 mutants. (N) Sequence comparison of residues required for the assembly of Vps1 in Homo sapiens Dynamin-1, H. sapiens Dynamin-2, H. sapiens Dynamin-3, Saccharomyces cerevisiae Dnm1, and S. cerevisiae Vps1. Scale bar: 1 µm.
 
 To study the localization of Vps1, we tagged chromosomal VPS1 with green fluorescent protein (GFP) using the LAP (70-residue localization and affinity purification) linker (Guizetti et al., 2011), because direct fusion of GFP to the C-terminus of VPS1 interferes with function (Chi et al., 2014). Cells lacking Vps1 showed a growth defect at 37°C, but Vps1-GFP-expressing cells grew as well as the WT cells, suggesting that this Vps1-GFP is functional (Figure 4—figure supplement 1A). Consistent with a previous report (Varlakhanova et al., 2018), Vps1-GFP colocalized with endosomal Nhx1-mCherry, but not with Golgi-localized Sec7-mCherry (Figure 4—figure supplement 1B, C, C). We also confirmed that Vps1-GFP colocalized with Mvp1-mRFP (Figure 4—figure supplement 1D). Several Vps1-GFP puncta did not colocalize with Mvp1-mRFP, presumably because it also localized on other organelles (ie, PM, peroxisome, etc). To study its dynamics, we performed live-cell imaging analysis of Vps1-GFP with mCherry-Vps21. The Vps1-GFP punctate structures on the mCherry-Vps21-marked endosomes were elongated and then divided (Figure 4D and Figure 4—video 1).
 
@@ -67,9 +99,17 @@ To ask if the oligomerization of Mvp1 is required for Vps1 recruitment to the en
 
 Next, we analyzed the binding of Vps1 mutants to Mvp1. We found that the Vps1K42A mutant interacts with Mvp1 more strongly than WT Vps1 (Figure 4L). The G436D mutant has a defect in the assembly of Vps1 (Figure 4E, Figure 4—figure supplement 1E, N), but the binding of this mutant was barely detected. We also prepared recombinant Mvp1 and Vps1-GFP and subjected them to in vitro binding assays. Mvp1 coprecipitated with Vps1-GFP, but not with GFP, suggesting that Mvp1 directly binds to Vps1 (Figure 4M). Based on these results, we propose that Mvp1 recruits the dynamin-like GTPase Vps1 to the site of vesicle tubule formation to catalyze membrane scission.
 
-## Mvp1 mainly mediates a retromer-independent endosomal recycling pathway
+### Mvp1 mainly mediates a retromer-independent endosomal recycling pathway
 
 Mvp1 has been proposed to function together with the retromer complex, but no interaction between the retromer and Mvp1 has been observed (Chi et al., 2014). To ask if Mvp1 is associated with the retromer complex, we immunoprecipitated the retromer complex from yeast cell lysates. When we immunoprecipitated Vps5-FLAG, the other retromer subunits Vps17-HA, Vps26-Myc, Vps29, and Vps35 were coimmunoprecipitated, but Mvp1-GFP was not (Figure 5—figure supplement 1A). Conversely, when we immunoprecipitated Mvp1-FLAG, retromer subunits Vps5, Vps17-HA, Vps26, Vps29, and Vps35 were not coimmunoprecipitated (Figure 5—figure supplement 1B). Since mvp1Δ cells only exhibit a mild CPY-sorting defect (Ekena and Stevens, 1995), we re-evaluated retromer cargo localization in mvp1Δ cells. We examined the localization of Vps10 (CPY receptor on the Golgi and endosome), Kex2 (serine protease on the Golgi), and Neo1 (P4 type ATPase on the endosome) (Figure 5A and B, Figure 5—figure supplement 1C-F; Marcusson et al., 1994; Voos and Stevens, 1998; Dalton et al., 2017). Vps10-GFP, Kex2-GFP, and GFP-Neo1 accumulated on the vacuole membrane in vps35Δ cells, whereas they localized on punctate structures in mvp1Δ cells, as well as WT cells. These observations suggest that Mvp1 is not required for retromer-mediated recycling.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig5-v2.jpg)
+
+**Figure 5.:** (A) Localization of Vps10-GFP in wild-type (WT), vps35Δ, and mvp1Δ cells. (B) Quantification of Vps10-GFP, Kex2-GFP, and GFP-Neo1 localization from A and Figure 5—figure supplement 1E,F, respectively. N = >30 cells from three independent experiments. (C) Schematic for immunoisolation of Vps55-FLAG-containing structures. (D) The immunoisolation of Vps55-containing vesicles. Vps55-FLAG-containing structures were immunoisolated from sec18ts mutants incubated at 37°C for 1 hr, and the isolated structures were analyzed by immunblotting using antibodies against FLAG, Vps10 (retromer cargo), Vps21 (endosome), Pho8 (vacuole), and glucose-6-phosphate dehydrogenase (G6PDH) (cytoplasm). (E) Electron microscopy (EM) analysis of the isolated Vps55-FLAG-containing structures from D. (F) Live-cell imaging analysis of Vps55-mNeonGreen and Vps10-mCherry. (G) Cell growth in vps35Δ snx4Δ mvp1Δ triple mutants. Cells lacking Vps35 as well as Snx4 and Mvp1 were grown at 26°C and 37°C. (H) Model of retromer-, Snx4-, and Mvp1-mediated recycling. (I) Nhx1 localization in SNX-BAR mutants. (J) Quantitation of Nhx1-GFP localization, from I and Figure 5—figure supplement 1M. N = >30 cells from three independent experiments. Scale bar: 1 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The association of Mvp1 with the retromer complex. Vps5-FLAG was immunoprecipitated (IP) from cells expressing Vps17-HA, Vps26-Myc, and Mvp1-GFP, and the IP products were analyzed by immunoblotting using antibodies against FLAG, hemagglutinin (HA), Myc, Vps29, Vps35, green fluorescent protein (GFP), and glucose-6-phosphate dehydrogenase (G6PDH). (B) Mvp1 binding to the retromer subunits. Mvp1-FLAG was immunoprecipitated from cells expressing Vps17-HA, and the IP products were analyzed by immunoblotting using antibodies against Vps5, HA, Vps26, Vps29, Vps35, and G6PDH. (C and D) Localization of GFP-Neo1 with Sec7-mCherry as a marker for the trans-Golgi (C) and Nhx1-mCherry as a marker for the endosome (D). (E and F) Localization of Kex2-GFP (E) and GFP-Neo1 (F) in wild-type (WT), vps35Δ, and mvp1Δ cells. (G) Hypothesis of Mvp1-mediated recycling. (H) Vps55-GFP localization in sec18ts mutants at 26°C or 37°C for 60 min. (I) Electron microscopy (EM) analysis of the isolated Vps55-FLAG-containing structures. Vps55-FLAG-containing structures were immunoisolated from sec18ts mutants incubated at 37°C for 1 hr, and then eluated using FLAG peptides. Eluated products were analyzed by negative-stain EM. (J) Immunoisolation of Vps10-containing vesicles. Vps10-FLAG-containing structures were immunoisolated from sec18ts mutants incubated at 37°C for 1 hr, and the isolated structures were analyzed by immunblotting using antibodies against FLAG, GFP, and G6PDH. (K) Live-cell imaging of Vps55-mNeonGreen and Vps10-mCherry. (L) GFP-Snc1 localization in WT, snx4Δ, and mvp1Δ cells. (M) Nhx1 localization in vps35Δ snx4Δ, vps35Δ mvp1Δ, and snx4Δ mvp1Δ cells. Scale bar: 1 µm.
 
 Next, we examined if Mvp1 and retromer form distinct recycling vesicles from the endosome (Figure 5—figure supplement 1G). To test this, we biochemically immunoisolated Vps55-containing vesicles and asked if Vps10, a retromer cargo, is also present. In this experiment, we tried to accumulate Vps55-containing recycling vesicles using a temperature-sensitive mutant of Sec18, which is essential for the fusion of recycling vesicles with the Golgi (Figure 5C; Novick et al., 1980). When we shifted sec18ts mutants to a non-permissive temperature (37°C), Vps55-GFP lost its endosomal localization and was distributed in the cytoplasm (Figure 5—figure supplement 1H). We incubated Vps55-FLAG-expressing sec18ts cells at the non-permissive temperature for 60 min and then immunoisolated Vps55-FLAG-containing structures. Vps55-FLAG was concentrated in the isolated product, but Vps10 was not (Figure 5D), nor was Vps21 (endosome) or Pho8 (vacuolar membrane). We also analyzed the isolated Vps55-containing structure by electron microscopy (EM). In the EM images, we could observe spherical structures with a diameter of 40–70 nm attached with anti-FLAG magnetic beads (Figure 5E). When we eluted these structures from anti-FLAG beads by FLAG peptide, we could observe similar structures by EM (Figure 5—figure supplement 1I). Similarly, we immunoisolated Vps10-FLAG-containing vesicles from sec18ts cells expressing Vps10-FLAG and Vps55-GFP. In the isolated products, Vps10-FLAG was concentrated, but Vps55-GFP was not (Figure 5—figure supplement 1J). Next, we performed live-cell imaging of Vps55-mNeonGreen and Vps10-mCherry. The Vps55-mNeonGreen decorated tubules emerged and detached from Vps55-mNeonGreen- and Vps10-mCherry-positive endosomes (Figure 5F). On the other hand, we also observed that Vps10-mCherry-positive but Vps55-mNeonGreen-negative tubules also budded from the endosome (Figure 5—figure supplement 1K). Based on these results, we concluded that Mvp1 mediates retromer-independent recycling.
 
@@ -77,19 +117,39 @@ The Snx4 complex recycles v-SNAREs from the endosome in a retromer-independent m
 
 To ask if the retromer, Snx4, and Mvp1 complexes function in parallel pathways, we generated mutants lacking Vps35 as well as Snx4 and Mvp1 and compared the single or combination mutants for growth. Although vps35Δ, snx4Δ, and mvp1Δ single or double mutants alone did not exhibit any observable growth defect at 37°C, vps35Δ snx4Δ mvp1Δ triple mutants failed to grow at 37°C (Figure 5G). These results suggest that retromer, Snx4, and Mvp1 complexes independently function in endosomal recycling (Figure 5H). Interestingly, the Na+/H+ exchanger Nhx1 still localizes on the endosome in vps35Δ, snx4Δ, and mvp1Δ single mutants, but it accumulated on the vacuole membrane in vps35Δ snx4Δ mvp1Δ triple mutants (Figure 5I and J). In contrast, vps35Δ snx4Δ and vps35Δ mvp1Δ double mutants only exhibited a partial defect, and a snx4Δ mvp1Δ mutant showed no defect. These results suggest that Nhx1 is cooperatively recycled by retromer, Snx4, and Mvp1 complexes, which is consistent with our conclusion that retromer, Snx4, and Mvp1 complexes mediate distinct pathways (Figure 5H).
 
-## Retromer, Snx4, and Mvp1 complexes are required for the proper function of the endosome
+### Retromer, Snx4, and Mvp1 complexes are required for the proper function of the endosome
 
 Retromer-mediated recycling is dispensable for normal growth (Krsmanovic et al., 2005). However, vps35Δ snx4Δ mvp1Δ triple mutants exhibited a severe growth defect (Figure 5G). Hence, we reasoned that general endosomal functions might also be affected in vps35Δ snx4Δ mvp1Δ triple mutants. To evaluate this, we examined Mup1 sorting (Figure 6A). Mup1 is a methionine permease that localizes to the PM in the absence of methionine (Lin et al., 2008), but upon methionine addition, Mup1 is endocytosed, trafficked to endosomes, and sorted into intraluminal vesicles (ILVs) via the ESCRT pathway (Henne et al., 2011). Then, the endosome fuses with the vacuole, which delivers Mup1 to the vacuole lumen. To visualize Mup1 sorting, we fused the pH-sensitive GFP variant, pHluorin, to Mup1 (Miesenböck et al., 1998). When Mup1-pHluorin is sorted into ILVs or the vacuole lumen, its fluorescence is quenched (Prosser et al., 2010). Thus, we can monitor Mup1 sorting by the disappearance of the Mup1-pHluorin signal. After a 60 min treatment with methionine, the fluorescence of Mup1-pHluorin was quenched in the WT cells, whereas Mup1-pHluorin puncta remained stable in vps35Δ snx4Δ mvp1Δ cells (Figure 6B). We also scored Mup1 sorting by immunoblotting. In WT cells, Mup1-pHluorin was fully processed after 30 min of stimulation, whereas full-length Mup1-pHluorin remained even after 90 min in vps35Δ snx4Δ mvp1Δ cells (Figure 6C). We examined the sorting of Carboxypeptidases (CPS), which is another transmembrane cargo for the ESCRT pathway (Odorizzi et al., 1998). It was partially defective in vps35Δ snx4Δ mvp1Δ cells (Figure 6D). To ask which SNX-BAR complexes are responsible, we compared Mup1-GFP sorting in single or combination mutants of retromer, Snx4, and Mvp1. Although vps35Δ, snx4Δ, and mvp1Δ single mutants did not show a defect, vps35Δ snx4Δ mvp1Δ triple mutants exhibited a strong delay in Mup1 sorting (Figure 6—figure supplement 1A). EM analysis revealed that endosomal morphology in vps35Δ snx4Δ mvp1Δ cells was altered (Figure 6E, Figure 6—figure supplement 1B). These observations suggest that retromer, Snx4, and Mvp1 complexes are required for proper function of the endosome.
 
-## Three endosomal recycling pathways cooperatively contribute to maintain appropriate lipid asymmetry
+![Figure 6.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of Mup1-pHluorin sorting. (B) Mup1-pHluorin localization in wild-type (WT) and vps35Δ snx4Δ mvp1Δ cells. Cells expressing Mup1-pHluorin were grown to mid-log phase and stimulated with 20 µg/ml methionine. Scale bar: 1 µm. (C) Mup1-pHlourin processing in WT and vps35Δ snx4Δ mvp1Δ cells. Mup1 sorting was stimulated as in B. (D) GFP-CPS sorting in WT and vps35Δ snx4Δ mvp1Δ cells. (E) Thin-section electron microscopy (EM) of an endosome in vps35Δ snx4Δ mvp1Δ cells. (F) Schematic of screening for multicopy suppressors of vps35Δ snx4Δ mvp1Δ triple mutants. (G) Growth of vps35Δ snx4Δ mvp1Δ triple mutants overexpressing Neo1. (H) Schematic of duramycin assay to evaluate extracellular phosphatidylethanolamine (PE). (I) Growth of recycling mutants in the presence of duramycin.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mup1-GFP sorting in SNX-BAR mutants. Mup1 sorting was stimulated as in Figure 6B. (B) Thin-section electron microscopy (EM) of endosomes in wild-type (WT) and vps35Δ snx4Δ mvp1Δ cells. (C) Summary of identified multicopy suppressors from Figure 6F. (D) Schematic for the plasma membrane (PM) integrity assay for WT and vps35Δ snx4Δ mvp1Δ triple mutants. (E) Quantitation of propidium iodide-stained cells from D.
+
+### Three endosomal recycling pathways cooperatively contribute to maintain appropriate lipid asymmetry
 
 Since the role of endosomal recycling has been characterized by retromer mutants, we hypothesized that analysis of vps35Δ snx4Δ mvp1Δ triple mutants might provide new insights into endosomal recycling. For this purpose, we isolated multicopy suppressors of the temperature-sensitive growth phenotype displayed by vps35Δ snx4Δ mvp1Δ triple mutants and identified, in addition to Vps35, Snx4, and Mvp1, the P4 type of ATPase Neo1 (Figure 6F and G, Figure 6—figure supplement 1C). Neo1 can flip phospholipids, especially phosphatidylethanolamine (PE), from the extracellular/lumenal leaflet to the cytoplasmic leaflet of the membrane bilayer, thereby establishing an asymmetric distribution of phospholipids. Neo1 mutants are defective in establishing membrane asymmetry, which leads to hypersensitivity to duramycin, a bioactive peptide that disrupts the membrane through the binding of extracellular PE (Figure 6H; Takar et al., 2016). To assess the PE asymmetry of the PM, we examined cell growth of vps35Δ, snx4Δ, and mvp1Δ single or combination mutants in the presence of duramycin. Although vps35Δ, snx4Δ, and mvp1Δ single mutants and snx4Δ mvp1Δ double mutants only exhibited a mild defect, vps35Δ snx4Δ and vps35Δ mvp1Δ cells were severely impaired for growth (Figure 6I). Also, the vps35Δ snx4Δ mvp1Δ triple mutant failed to grow in the presence of duramycin. These results suggest that three endosomal recycling pathways cooperatively contribute to maintain appropriate lipid symmetry.
 
 An appropriate lipid composition/distribution of the PM is essential for cell integrity. Hence, we evaluated the PM integrity of vps35Δ snx4Δ mvp1Δ triple mutants under stress conditions. To score cells for loss of integrity, we used propidium iodide, a membrane-impermeable dye. WT cells and vps35Δ snx4Δ mvp1Δ triple mutants grown at 26°C were barely stained (Figure 6—figure supplement 1D,E). At 40°C, only a small population of WT cells was stained, because they were resistant to mild heat stress conditions (2 h at 40°C). In contrast, most of the vps35Δ snx4Δ mvp1Δ triple mutant cells were stained at 40°C. These results suggest that three endosomal recycling pathways are required to maintain PM integrity under stress conditions.
 
-## Mvp1-mediated endosomal recycling is evolutionarily conserved
+### Mvp1-mediated endosomal recycling is evolutionarily conserved
 
 The human homolog of Mvp1 is SNX8, which also contains a PX domain and a BAR domain (Figure 7A; Dyve et al., 2009). SNX8 forms a homodimer and exhibits membrane-deformation activity in vitro (van Weering et al., 2012). Although SNX8 has been linked to several diseases, especially AD (Rosenthal et al., 2012; Xie et al., 2019), its molecular function has not been analyzed in detail. When GFP-SNX8 was expressed in Hela cells, it showed punctate structures that colocalized with the early endosome protein EEA1, as reported previously (Figure 7B–(i); Dyve et al., 2009). In addition to these puncta, we also observed tubule-like structures that also were labeled by EEA1 (Figure 7B -(ii)). Live-cell imaging analysis revealed that the tubule-like structures budded from the GFP-SNX8-positive endosome (Figure 7C, Figure 7—figure supplement 1A, Figure 7—video 1), which is consistent with a previous report (van Weering et al., 2012). SNX1 overexpression induces endosomal swelling and tubulation (Carlton et al., 2004). Similarly, when we increased the expression of GFP-SNX8, the endosome marked by GFP-SNX8 was enlarged (Figure 7—figure supplement 1B, C). Some of these endosomes have long extended tubule structures (Figure 7—figure supplement 1B, D, E). To analyze the biogenesis of this extended tubule structure, we performed live-cell imaging. Once GFP-SNX8 was concentrated on the endosomal surface, the extended tubules emerged from that site (Figure 7D and Figure 7—video 2). These observations suggest that SNX8 mediates the formation of tubules that bud from the endosome.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic of Mvp1 and Snx8. (B) Immunofluorescence of GFP-SNX8-expressing Hela cells, with EEA1 serving as an endosomal marker. (C) Live-cell imaging of GFP-SNX8. (D) Live-cell imaging of highly expressed GFP-SNX8. (E) Model of Mvp1-mediated endosomal recycling. Scale bar: 1 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Live-cell imaging of GFP-SNX8. (B) GFP-SNX8 localization of Hela cells expressing GFP-SNX8 at low or high levels. (C and D) Quantification of SNX8 puncta size (C) or max length of SNX8 tubule (D) from B. (E) GFP-SNX8 tubule structures in GFP-SNX8 highly expressing cells. Scale bar: 1 µm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/69883/elife-69883-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Vps55-GFP localization in cells expressing both Vps55 and Vps55-GFP. (B) Mvp1-GFP localization in wild-type (WT) and vps35Δ cells. (C) GFP-2xFYVE localization in WT and vps35Δ cells. Scale bar: 1 µm.
 
 ## Discussion
 
@@ -107,23 +167,313 @@ Recycling of key membrane proteins (SNAREs, receptors, flippases, transporters, 
 
 ## Materials and methods
 
-## Yeast strain and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DYKDDDDK (mouse monoclonal)</td>
+      <td>WAKO</td>
+      <td>1E6</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Clone 7.1/13.1</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>B-2</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Torrey Pines Biolabs</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>12CA5</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc(mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>9E10</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps5(rabbit polyclonal)</td>
+      <td>Horazdovsky et al., 1997</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps26(rabbit polyclonal)</td>
+      <td>Reddy and Seaman, 2001</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps29(rabbit polyclonal)</td>
+      <td>Seaman et al., 1998</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps35(rabbit polyclonal)</td>
+      <td>Seaman et al., 1998</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps10(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vps21(rabbit polyclonal)</td>
+      <td>Horazdovsky et al., 1994</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-G6PDH(rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ALP(mouse monoclonal)</td>
+      <td>NOVEX</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pgk1(mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EEA1(rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>C45B10</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ubiquitin(mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>P4D1</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-mouse</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW goat anti-rabbit</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT goat anti-rabbit</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT goat anti-mouse</td>
+      <td>LI-COR</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Alexa Fluor Plus 647 anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N-ethylmaleimide</td>
+      <td>Acros Organics</td>
+      <td>156100050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CompleteProtease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NHS beads</td>
+      <td>TAMAGAWA SEIKI</td>
+      <td>TAS8848 N1141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3 X FLAG Peptide</td>
+      <td>Sigma</td>
+      <td>F4799-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Concanavalin A</td>
+      <td>Sigma</td>
+      <td>L7647-250MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GFP-TRAP_A beads</td>
+      <td>Chromo Tek</td>
+      <td>gta-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FuGENE HD Transfection Reagent</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold Antifade Mountant</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>P10144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PMSF</td>
+      <td>Sigma</td>
+      <td>10837091001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Saponin</td>
+      <td>CALBIOCHEM</td>
+      <td>558,255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Triton X-100</td>
+      <td>SIGMA</td>
+      <td>X100-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALON Metal Affinity Resin</td>
+      <td>Clontech</td>
+      <td>635,502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SUMO Protease</td>
+      <td>Milipore</td>
+      <td>SAE0067-2500UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoftWoRx</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SlideBook 6.0</td>
+      <td>Intelligent Imaging Innovations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td>GSL Biotech</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strain and media
 
 Saccharomyces cerevisiae strains used in this study are listed in Supplementary file 1A. Standard protocols were used for yeast manipulation (Kaiser et al., 1994). Cells were cultured at 26°C to mid-log phase in Yeast Extract-Peptone-Dextrose (YPD) medium (1% (w/v) yeast extract, 2% (w/v) bacto peptone, and 2% (w/v) glucose) or Yeast Nitrogen Base (YNB) medium (0.17% (w/v) yeast nitrogen base w/o amino acids and ammonium sulfate, 0.5% (w/v) ammonium sulfate, and 2% (w/v) glucose) supplemented with the appropriate nutrients.
 
-## Mammalian cell line
+### Mammalian cell line
 
 Hela cells were kindly provided by Dr. Anthony Bretscher (Cornell University). Cell lines were verified to be free of mycoplasma contamination and the identities were authenticated by short tandem repeat (STR) profiling.
 
-## Cell culture conditions for mammalian cells
+### Cell culture conditions for mammalian cells
 
 Hela cells were maintained at 37°C and 5% CO2 in Dulbecco's Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), penicillin, and streptomycin.
 
-## Plasmids
+### Plasmids
 
 Plasmids used in this study are listed in Supplementary file 1B.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Fluorescence microscopy was performed using a CSU-X spinning-disk confocal microscopy system (Intelligent Imaging Innovations) or a DeltaVision Elite system (GE Healthcare Life system).
 
@@ -131,7 +481,7 @@ A CSU-X spinning-disk confocal microscopy system is equipped with a DMI 6000B mi
 
 A DeltaVision Elite system is equipped with an Olympus IX-71 inverted microscope, a DV Elite complementary metal-oxide semiconductor camera, a ×100/1.4 NA oil objective, and a DV Light SSI 7 Color illumination system with Live Cell Speed Option with DV Elite filter sets. Imaging was done at RT in YNB medium using GFP and mCherry channels with different exposure times according to each protein’s fluorescence intensity. Image acquisition and deconvolution (conservative setting; five cycles) were performed using DeltaVision software softWoRx 6.5.2 (Applied Precision).
 
-## Immunoprecipitation for yeast cells
+### Immunoprecipitation for yeast cells
 
 Anti-FLAG-conjugated magnetic beads were prepared according to the manufacturer’s protocol. In brief, N-hydroxysuccinimide ester (NHS) ferrite-glycidyl methacrylate (FG) beads (Tamagawa Seiki) were treated with methanol and then incubated with anti-DYKDDDK antibody (Wako) at 4°C for 30 min. The magnetic beads were mixed with 1.0 M 2-aminoethanol, pH 8.0, at 4°C for 16–20 hr to quench the conjugation reaction, washed three times with the bead wash buffer (10 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES)-NaOH [pH 7.2], 50 mM KCl, 1 mM ethylenediaminetetraacetic acid (EDTA), and 10% glycerol), and stored in wash buffer containing 1 mg/ml bovine serum albumin (BSA) (A7030; Sigma-Aldrich).
 
@@ -143,64 +493,64 @@ The Mvp1-Vps1 interaction was examined similarly as the Mvp1-Mvp1 interaction wi
 
 To examine the Mvp1-retromer interaction, cells expressing Vps5-FLAG, Vps17-HA, Vps26-Myc, and Mvp1-GFP or cells expressing Mvp1-FLAG and Vps17-HA were washed twice with PBS IP buffer. Cells were lysed in PBS IP buffer as above. The lysate was solubilized with 0.5% Triton-X 100 for 4°C for 10 min. After centrifugation, the cleared supernatant was incubated with pre-equilibrated anti-FLAG-conjugated magnetic beads and rotated at 4°C for 2 hr. After the beads were washed with wash buffer containing 0.5% Triton X-100, the bound proteins were eluted by incubating the beads in SDS-PAGE sample buffer at 98°C for 5 min.
 
-## Immunoprecipitation under denature condition for yeast cell lysates
+### Immunoprecipitation under denature condition for yeast cell lysates
 
 To analyze the ubiquitination status of Vps55, cells expressing Vps55-GFP were washed twice with 400 mM N-ethylmaleimide (NEM). Cells were lysed in urea cracking buffer (50 mM Tris-HCl [pH 8.0], 1% SDS, 8 M urea, 20 mM NEM, and 1 x protease inhibitor cocktail [Roche]) and lysed by beating with 0.5 mm YZB zirconia beads (Yasui Kikai) for 1 min. High-salt IP buffer with 20 mM NEM and 0.2% Triton X-100 was added to the lysate, and the samples were rotated at 4°C for 10 min. The solubilized lysates were cleared at 500xg for 5 min at 4°C, and the resultant supernatants were subjected to high-speed centrifugation at 17,400xg for 10 min. The cleared supernatants were incubated with pre-equilibrated GFP-TRAP_A beads (Chromo Tek) and rotated at 4°C for 1 hr. After the beads were washed with SDS wash buffer (50 mM Tris-HCl [pH 8.0], 250 mM NaCl, 1% SDS, 4 M urea, and 5% glycerol), the bound proteins were eluted by incubating the beads in SDS-PAGE sample buffer at 98°C for 5 min.
 
-## Immunoisolation of Vps55-FLAG- or Vps10-FLAG-containing structures from yeast cells
+### Immunoisolation of Vps55-FLAG- or Vps10-FLAG-containing structures from yeast cells
 
 To immunoisolate Vps55-FLAG- or Vps10-FLAG-containing structures, cells expressing Vps55-FLAG or cells expressing Vps10-FLAG and Vps55-GFP grown at 26°C were incubated at 37°C for 60 min before harvest. Cells were washed twice with H25S75E5 buffer (25 mM HEPES-NaOH [pH 7.4], 750 mM sorbitol, and 5 mM EDTA). The cells were lysed in H25S75E5 buffer supplemented with 1 x protease inhibitor cocktail (Roche) and lysed by beating with 0.5 mm YZB zirconia beads (Yasui Kikai) for 1 min. The lysates were cleared at 500xg for 5 min at 4°C twice, and the cleared supernatants were incubated with anti-FLAG-conjugated magnetic beads and rotated at 4°C for 1 hr. After the beads were washed with H25S75E5 buffer, the immunoisolated structures were eluted by incubating the beads in SDS-PAGE sample buffer at 98°C for 5 min. For the EM analysis, immunoisolated structures were not eluted, but subjected to negative-staining EM analysis.
 
-## Electron microscopy of immunoisolated Vps55-FLAG-containing structures
+### Electron microscopy of immunoisolated Vps55-FLAG-containing structures
 
 Immunoisolated Vps55-FLAG-containing structures on anti-FLAG-conjugated magnetic beads were applied to the carbon-coated electron microscope grid, stained with 2% ammonium molybdate, and imaged on FEI Morgagni 268 TEM.
 
-## Quantitative analysis of cargo localization
+### Quantitative analysis of cargo localization
 
 Vps55-GFP/mNeonGreen, Vps10-GFP, Kex2-GFP, and GFP-Neo1 localization was classified into two categories: punctate structures and vacuole membrane localization. Cells having both punctate structures and vacuole membrane localization were classified in the vacuole membrane localization category. For each experiment, at least 30 cells were classified, and the data from three independent experiments were used for the statistical analysis.
 
-## Quantitative analysis of Mvp1-GFP and Vps1-GFP localization
+### Quantitative analysis of Mvp1-GFP and Vps1-GFP localization
 
 Mvp1-GFP and Vps1-GFP localization was classified into two categories: punctate structures and cytoplasmic localization. For each experiment, at least 30 cells were classified, and the data from three independent experiments were used for the statistical analysis.
 
-## Preparation of yeast cell lysates
+### Preparation of yeast cell lysates
 
 Cell lysates were prepared as follows. Cells were grown to mid-log phase at 26°C. Aliquots of cells were mixed with trichloroacetic acid at a final concentration of 15%, and the mixtures were incubated for 30 min at 4°C. After centrifugation at 17,400xg for 10 min at 4°C, the cells were washed once with 100% acetone and then were lysed in SDS-PAGE sample buffer (60 mM Tris-HCl [pH7.5], 2% (w/v) SDS, 10% glycerol, 100 mM dithiothreitol (DTT), and bromophenol blue) by beating with 0.5 mm YZB zirconia beads (Yasui Kikai) for 2 min. The lysates were then heated at 98°C for 5 min. After centrifugation at 10,000xg for 1 min at RT, supernatants were analyzed by SDS-PAGE and immunoblotting using anti-GFP and anti-G6PDH antibodies.
 
-## Multicopy suppressor screening
+### Multicopy suppressor screening
 
 The S. cerevisiae genomic library used for the suppressor screen was prepared as described previously (Burda et al., 2002). The genomic library was transformed in vps35Δ snx4Δ mvp1Δ triple mutants. Yeast cells were grown on YPD plates at 26°C for 2 days. Then, cells were replica plated on YPD plates and incubated at 37°C for 3 days. Temperature-resistant yeast colonies were selected. Then, plasmids were isolated, amplified, and sequenced.
 
-## Yeast growth assays
+### Yeast growth assays
 
 Cells grown to mid-log phase at 26°C were diluted back to OD600 = 0.1. Then, a 10-fold serial dilution was spotted on growth media and incubated at the indicated temperature for 2–3 days.
 
-## Duramycin assay
+### Duramycin assay
 
 Cells grown to mid-log phase at 26°C were diluted back to OD600 = 0.01. The cells were grown at 26°C for 16 hr in the presence or absence of 10 µM duramycin, and OD600 of the cells was measured.
 
-## PM integrity assay
+### PM integrity assay
 
 Cells grown to mid-log phase at 26°C were divided in half. One half was incubated at 26°C for 2 hr, and the other half was shifted to 40°C for 2 hr. Cells were washed by PBS and were stained with 20 µM propidium iodide for 20 min at RT. Cells were washed twice with PBS and analyzed by a fluorescent microscope.
 
-## Electron microscopy for yeast cells
+### Electron microscopy for yeast cells
 
 Cells were grown in YNB medium overnight and 40 ODs of cells were harvested at mid-log growth phase the next morning. To fix, the harvested cells were rinsed in 10 ml sodium cacodylate buffer (0.1 M sodium cacodylate [pH 7.4], 5 mM CaCl2, and 5 mM MgCl2), pelleted, decanted, then resuspended in 5 ml fix buffer (3% glutaraldehyde, 0.1 M sodium cacodylate [pH 7.4], 5 mM CaCl2, 5 mM MgCl2, and 2.5% sucrose), and incubated at RT for 1 hr with gentle agitation. After fixing, the cells were washed twice with 5 ml 0.1 M sodium cacodylate (pH 7.4), then rinsed with 5 ml pre-spheroplast buffer (0.1 M Tris-HCl [pH 7.6], 25 mM DTT, 5 mM EDTA, and 1.2 M sorbitol). To prepare for spheroplasting, the cells were re-suspended in 5 ml pre-spheroplast buffer and incubated for 10 min at RT. The cells were then rinsed with 5 ml spheroplast buffer (0.1 M phosphocitrate, 1.0 M sorbitol). The cells were then re-suspended in 1 ml spheroplast buffer containing 0.25 mg/ml zymolyase and incubated at RT for 30 min. After spheroplasting, the cells were gently washed twice with 1 ml staining buffer (0.1 M sodium cacodylate [pH 6.8], 5 mM CaCl2) to remove sorbitol. The cells were embedded in 50 µl of 2% ultra-low-melt agarose and then cut into ∼2 mm3 blocks. The blocks were postfixed/stained in 1 ml osmium staining solution (1% OsO4, 1% potassium ferrocyanide, 0.1 M sodium cacodylate [pH 6.8], 5 mM CaCl2, and 10% formamide) for 1 hr at RT. The blocks were washed four times with water, then stained with 1 ml 1% uranyl acetate overnight. The blocks were washed four times with water, then dehydrated through a graded series of ethanol: 50%, 75%, 95%, and 2 × 100% for 10 min each (1 ml). The blocks were transitioned to 1:1 propylene oxide:ethanol for 10 min, then for 2 × 5 min in 100% propylene oxide (1 ml). The blocks were embedded in 1:1 propylene oxide:epon resin (hard formulation; EMS #14120) and left on a rotator overnight to allow the propylene oxide to evaporate. The blocks were transferred to fresh epon resin and polymerized for 24 hr at 60°C.
 
 The samples were sectioned at ~70 nM. The sections were poststained with 4% uranyl acetate for 10 min, then washed in water. Next, the sections were stained in Reynold’s lead citrate for 2 min, then washed in water. The sections were imaged using a FEI Morgagni 268 TEM.
 
-## Protein expression and purification
+### Protein expression and purification
 
 His-SUMO-Vps1-GFP and His-SUMO-Mvp1 were expressed in Escherichia coli Rosetta (DE3) by the addition of 250 mM isopropyl β- d-1-thiogalactopyranoside (IPTG) for 16 hr at 16°C and purified using TALON Metal Affinity Resin (Clontech) according to the manufacturer’s protocol. The recombinant proteins were eluted with SUMO protease (Milipore) for Vps1-GFP and Mvp1.
 
-## In vitro binding assay
+### In vitro binding assay
 
 Purified proteins were incubated with anti-GFP magnetic beads at 4°C for 30 min. After the beads were washed three times with PBS with 0.1% TX-100, the bound proteins were eluted by incubating the beads in SDS-PAGE sample buffer at 98°C for 5 min.
 
-## Transfection for mammalian cells
+### Transfection for mammalian cells
 
 Transient transfections were carried out using FuGENE (Promega) according to the manufacturer’s instructions, and the experiments were performed 48 hr after transfection.
 
-## Immunostaining for mammalian cells
+### Immunostaining for mammalian cells
 
 Hela cells seeded on coverslips were fixed in 3.7% formaldehyde/PBS for 10 min at RT, washed with PBS, and permeabilized with 0.2% Triton-X-100/PBS for 5 min, washed, and blocked with 2% FBS/PBS for 10 min at RT. Cells were stained for 1 hr at RT with anti-EEA1 antibody in 2% FBS/PBS. After washing in PBS, cells were stained for 1 hr at RT with Alexa Fluor 647 anti-rabbit antibody in 2% FBS/PBS. Cells were washed with PBS and mounted using Prolong Gold Hardmount and imaged by a fluorescent microscope.

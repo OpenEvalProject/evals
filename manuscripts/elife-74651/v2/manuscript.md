@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/0384j8v12 Centre for Complex Systems, Faculty of Engineering, The University of Sydney Sydney Australia
-2. https://ror.org/0087djs12 Max Planck Institute for Dynamics and Self-Organization Göttingen Germany
-3. https://ror.org/01y9bpm73 Campus Institute for Dynamics of Biological Networks, Georg August University Göttingen Germany
+1. Centre for Complex Systems, Faculty of Engineering, The University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+2. Max Planck Institute for Dynamics and Self-Organization Göttingen Germany ([ROR:0087djs12](https://ror.org/0087djs12))
+3. Campus Institute for Dynamics of Biological Networks, Georg August University Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
 
 † Corresponding author
 
@@ -43,11 +43,76 @@ In the analysis that follows, for space considerations, we show plots for four r
 
 The TE between all pairs of electrodes was estimated using a recently introduced continuous-time estimator (Shorten et al., 2021; see section ‘Transfer entropy estimation’). This produces a directed functional network at each recording day, and we aim to analyse how the connections in this network change over development time. Spike sorting was not performed because we would not be able to match the resulting neural units across different recordings and could not then fulfil our aim of contrasting the information flow between specific source-target pairs at different recording days. As such, the activity on each node in the directed functional networks we study is multi-unit activity (MUA) (Schroeter et al., 2015) formed of the spikes from all neurons detected by a given electrode, with connections representing information flows in the MUA. For more details on data preprocessing as well as the parameters used with the estimator, see ‘Materials and methods’.
 
-## The dramatic increase in the flow of information during development
+### The dramatic increase in the flow of information during development
 
-We first investigate how the amount of information flowing between the nodes changes over the lifespan of the cultures. Table 1 shows the mean TE between all source-target pairs (Appendix 3—table 1 shows these values for the additional cultures). We observe that this mean value increases monotonically with the number of DIV, with only a single exception in the main cultures (a slight drop in the mean TE between days 21 and 33 of culture 2-2). We can make the same observation for the additional cultures, where the only drop is caused by day 5 of culture 2-4, a day still very early in development which had no significant TE values. We performed a two-sided Student’s t-test for the difference in the mean between all pairs of recordings for each culture. All such differences (increases and decreases) were found to be statistically significant at p<0.01 with Bonferroni correction for multiple comparisons.
+We first investigate how the amount of information flowing between the nodes changes over the lifespan of the cultures. Table 1 shows the mean TE between all source-target pairs (Appendix 3—table 1 shows these values for the additional cultures). We observe that this mean value increases monotonically with the number of DIV, with only a single exception in the main cultures (a slight drop in the mean TE between days 21 and 33 of culture 2-2). We can make the same observation for the additional cultures, where the only drop is caused by day 5 of culture 2-4, a day still very early in development which had no significant TE values. We performed a two-sided Student’s t-test for the difference in the mean between all pairs of recordings for each culture. All such differences (increases and decreases) were found to be statistically significant at $p<0.01$ with Bonferroni correction for multiple comparisons.
 
-Overall, the magnitude of the increase in the mean TE is substantial. All the first recordings for the main cultures had a mean estimated TE of 0nats.s-1 (with no statistically significant transfer entropies measured as per section ‘The emergence of functional information flow networks’). By contrast, all recordings beyond 20 DIV had a mean TE greater than 0.037nats.s-1.
+**Table 1.**
+ Mean transfer entropy (TE) in nats per second between every source-target pair for each recording studied.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Culture 1-1</td>
+      <td>Day 4</td>
+      <td>Day 14</td>
+      <td>Day 20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>0.060</td>
+      <td>0.097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 1-3</td>
+      <td>Day 5</td>
+      <td>Day 10</td>
+      <td>Day 16</td>
+      <td>Day 24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>2×10–4</td>
+      <td>0.017</td>
+      <td>0.098</td>
+    </tr>
+    <tr>
+      <td>Culture 2-2</td>
+      <td>Day 9</td>
+      <td>Day 15</td>
+      <td>Day 21</td>
+      <td>Day 33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>0.015</td>
+      <td>0.11</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <td>Culture 2-5</td>
+      <td>Day 4</td>
+      <td>Day 10</td>
+      <td>Day 22</td>
+      <td>Day 28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>2×10–3</td>
+      <td>0.037</td>
+      <td>0.082</td>
+    </tr>
+  </tbody>
+</table>
+
+Overall, the magnitude of the increase in the mean TE is substantial. All the first recordings for the main cultures had a mean estimated TE of $0nats.s^{-1}$ (with no statistically significant transfer entropies measured as per section ‘The emergence of functional information flow networks’). By contrast, all recordings beyond 20 DIV had a mean TE greater than $0.037nats.s^{-1}$.
 
 Figure 1 shows scatter plots of the TE values in each recording laid over box-and-whisker plots (Appendix 3—figure 1 shows equivalent plots for the additional cultures). The large increase over time in the amount of information flowing over the networks is clearly visible in these plots. However, it is interesting to note that certain source-target pairs do have large information flows between them on early recording days even while the average remains very low.
 
@@ -57,7 +122,7 @@ Figure 1 shows scatter plots of the TE values in each recording laid over box-an
 
 Figure 1b shows histograms of the TE values estimated in each recording along with probability densities estimated using a Gaussian kernel (Appendix 3—figure 1 shows these for the additional runs). The distributions only include the nonzero (statistically significant) estimated TE values. Some of these distributions do, qualitatively, appear to be log-normal, in particular for later DIV. Moreover, previous studies have placed an emphasis on the observation of log-normal distributions of TE values in in vitro cultures of neurons (Shimono and Beggs, 2015; Nigam et al., 2016). As such, we quantitatively analysed the distribution of the nonzero (statistically significant) estimated TE values in each individual recording. However, contrary to expectations, we found that these values were not well described by a log-normal distribution. It is worth noting that previous work which analysed the distribution of TE values in networks of spiking neurons was performed on organotypic cultures, as opposed to the dissociated cultures studied in this work. See Appendix 1 for further details and discussion.
 
-## The emergence of functional information flow networks
+### The emergence of functional information flow networks
 
 By considering each electrode as a node in a network, we can construct directed functional networks of information flow by assigning a directed edge between each source-target pair of electrodes with a statistically significant information flow. This results in weighted directed networks, the weight being provided by the TE value. Diagrams of these networks for the main cultures are shown in Figure 2, and in Appendix 3—figure 3 for the additional cultures. Note that, in all subsequent analysis presented in this article, a TE value of zero was assigned to all cases where the TE was not statistically significant.
 
@@ -67,6 +132,71 @@ By considering each electrode as a node in a network, we can construct directed 
 
 We are able to notice a number of interesting spatiotemporal patterns in these diagrams. Firstly, the density (number of edges) of the networks increases over time. This is quantified in Table 2, which shows the number of source-target pairs of electrodes for which a statistically significant nonzero TE value was estimated. In all the main cultures studied, the number of such pairs (and, therefore, the network density) increased by orders of magnitude over the life of the culture. For instance, in all four cultures, no statistically significant TE values are estimated on the first recording day. However, over 1000 source-target pairs have significant TE values between them on the final day of recording for each culture. Appendix 3—table 2 shows the same values for the additional cultures. With a few exceptions (such as the abovementioned anomalous culture 1-5), the same relationship is observed. Note that the final recording day for culture 2-4 is relatively early (day 11), and so the low number of significant edges on this day is consistent with the other cultures.
 
+**Table 2.**
+ The number of source-target pairs of electrodes with a statistically significant transfer entropy (TE) value between them for each recording studied.This corresponds to the number of possible edges in the functional networks shown in Figure 2. As the electrode arrays used to record the data had 59 electrodes, the total number of unique ordered pairs of electrodes (and, therefore, the number of possible edges) is 3422.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Culture 1-1</td>
+      <td>Day 4</td>
+      <td>Day 14</td>
+      <td>Day 20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>607</td>
+      <td>2166</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 1-3</td>
+      <td>Day 5</td>
+      <td>Day 10</td>
+      <td>Day 16</td>
+      <td>Day 24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>44</td>
+      <td>999</td>
+      <td>1902</td>
+    </tr>
+    <tr>
+      <td>Culture 2-2</td>
+      <td>Day 9</td>
+      <td>Day 15</td>
+      <td>Day 21</td>
+      <td>Day 33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>371</td>
+      <td>1409</td>
+      <td>1386</td>
+    </tr>
+    <tr>
+      <td>Culture 2-5</td>
+      <td>Day 4</td>
+      <td>Day 10</td>
+      <td>Day 22</td>
+      <td>Day 28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td>185</td>
+      <td>975</td>
+      <td>1263</td>
+    </tr>
+  </tbody>
+</table>
+
 We are, therefore, observing the networks moving from a state where no nodes are exchanging information, to one in which information is being transferred between a substantial proportion of the pairs of nodes (≈30% density of possible directed connections in most networks). Put another way, the functional networks are emerging from an unconnected state to a highly connected state containing the information flow structure that underpins the computational capacity of the network. This helps to explain the overall increase in information flow across the network reported in section ‘The dramatic increase in the flow of information during development’.
 
 We observe that the information flow (both incoming and outgoing) is spread somewhat evenly over the networks – in the sense that in the later, highly connected, recordings there are very few areas with neither incoming nor outgoing flow (the one notable exception to this is culture 2-6). A number of clear hubs (with particularly high either outgoing or incoming information flow) do stand out against this strong background information flow however. The strongest such hubs (with many high-TE edges) are all information sinks: they have low outgoing information flow, but receive high flow from a number of other nodes.
@@ -75,21 +205,67 @@ One can observe many instances in these diagrams where nodes have either very hi
 
 It is possible to observe some notable instances whereby the information processing properties of a node remain remarkably similar across recording days. For example, nodes 55, 50, and 39 of culture 2-2 are outgoing hubs (with almost no incoming TE) on all four recording days. This offers us a tantalising hint that the information processing structure of these networks might be locked-in early in development, being reinforced as time progresses. Section ‘Early lock-in of information flows’ performs a quantitative analysis of this hypothesis.
 
-## Early lock-in of information flows
+### Early lock-in of information flows
 
 In the previous subsection, analysis of the directed functional networks of information flow suggested that the structure of the information processing capacity of the developing networks might be determined early in development and reinforced during the subsequent neuronal maturation.
 
-In order to quantitatively investigate this hypothesis, we examine the relationships in the information flow from a given source to a given target between different recording days. That is, we are probing whether the amount of information flowing between a source and a target on an early day of development will be correlated with the amount flowing on a later day of development. This is equivalent to studying the correlation in the weights of the edges of the functional networks across different recording days. Figure 3 shows scatter plots between the TE values estimated between each source-target pair on earlier and later days. Note that, in every case where the null hypothesis of zero TE could not be rejected (the TE was not statistically significant), a value of zero was used. Days with fewer than 10 nonzero values were excluded from the analysis as they could not lead to meaningful insights. By observing the pair scatters in Figure 3a–d (equivalent plots for the additional cultures are shown in Appendix 3—figure 4), we see that, in many pairs of days, there appears to be a substantial correlation between the TE values on the edges across days. This is particularly pronounced for cultures 1-3 and 1-1, though visual assessment of the trend is complicated by the many zero values (where TE is not significant), gaps in the distribution and outliers. As such, Figure 3a–d also display the Spearman rank-order correlation (ρ) for each early-late pair of days for each culture. This correlation is positive and statistically significant at the p<0.01 level (after Bonferroni correction for multiple comparisons) between all the final pairs of recording days in the analysed cultures (including those in the additional cultures). Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between the TE values on the edges across days. Whether we focus on either the final pairs of recordings or also include pairs that occur after day 15 (by which time the information flow networks have emerged), either all or all but one of the pairs of recordings exhibit such correlations. Moreover, the probability of this number of correlations arising by chance is found to be very low. This represents a strong tendency for the relatively strong information flows between a given source and target on later days to be associated with the relatively strong information flow between the same source and target on an earlier day of development. Figure 3 displays these Spearman correlations between the early and late TE between source-target pairs visually. We notice a trend, whereby the correlation of the TE values seems to be higher between closer days (sample point being closer to the diagonal) and where those days are later in the development of the cultures (sample points being further to the right).
+In order to quantitatively investigate this hypothesis, we examine the relationships in the information flow from a given source to a given target between different recording days. That is, we are probing whether the amount of information flowing between a source and a target on an early day of development will be correlated with the amount flowing on a later day of development. This is equivalent to studying the correlation in the weights of the edges of the functional networks across different recording days. Figure 3 shows scatter plots between the TE values estimated between each source-target pair on earlier and later days. Note that, in every case where the null hypothesis of zero TE could not be rejected (the TE was not statistically significant), a value of zero was used. Days with fewer than 10 nonzero values were excluded from the analysis as they could not lead to meaningful insights. By observing the pair scatters in Figure 3a–d (equivalent plots for the additional cultures are shown in Appendix 3—figure 4), we see that, in many pairs of days, there appears to be a substantial correlation between the TE values on the edges across days. This is particularly pronounced for cultures 1-3 and 1-1, though visual assessment of the trend is complicated by the many zero values (where TE is not significant), gaps in the distribution and outliers. As such, Figure 3a–d also display the Spearman rank-order correlation ($ρ$) for each early-late pair of days for each culture. This correlation is positive and statistically significant at the $p<0.01$ level (after Bonferroni correction for multiple comparisons) between all the final pairs of recording days in the analysed cultures (including those in the additional cultures). Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between the TE values on the edges across days. Whether we focus on either the final pairs of recordings or also include pairs that occur after day 15 (by which time the information flow networks have emerged), either all or all but one of the pairs of recordings exhibit such correlations. Moreover, the probability of this number of correlations arising by chance is found to be very low. This represents a strong tendency for the relatively strong information flows between a given source and target on later days to be associated with the relatively strong information flow between the same source and target on an earlier day of development. Figure 3 displays these Spearman correlations between the early and late TE between source-target pairs visually. We notice a trend, whereby the correlation of the TE values seems to be higher between closer days (sample point being closer to the diagonal) and where those days are later in the development of the cultures (sample points being further to the right).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig3-v2.jpg)
 
-**Figure 3.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant transfer entropy [TE] values). Specifically, in each scatter plot, the  value of a given point is the TE on the associated edge on an earlier day and the x value of that same point is the TE on the same edge but on a later day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation (y) between the TE values on the two days is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the TE on the edges across this pair of recording days. Diamonds indicate significance at ρ, with Bonferroni correction.p<0.05
+**Figure 3.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant transfer entropy [TE] values). Specifically, in each scatter plot, the $x$ value of a given point is the TE on the associated edge on an earlier day and the $y$ value of that same point is the TE on the same edge but on a later day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation ($ρ$) between the TE values on the two days is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the TE on the edges across this pair of recording days. Diamonds indicate significance at $p<0.05$, with Bonferroni correction.
 
-We also investigated the manner in which a node’s tendency to be an information source hub might be bound once information flows are established. Figure 4 shows scatter plots between the outgoing TE of each node (averaged across all targets) on different days of development along with the associated Spearman correlations (Appendix 3—figure 5 shows these plots for the additional cultures). By observing the scatter plots, it is easy to see that there is a strong positive relationship between the outgoing information flow from a given node on an earlier day of development and the outgoing flow from that same node on a later day (when we restrict ourselves to focusing on pairs occurring after a substantial number of statistically significant information flows have been established). This is not surprising, given the correlation we already established for TE on individual pairs, but does not automatically follow from that. As with the TE on the edges, Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between the outgoing TE from each node across days. We see that, whether we focus on just the last recordings of each culture or also include those after day 15, a substantial majority of pairs of recordings exhibit such correlations and that such a majority would be very unlikely to arise by chance. Some of these correlations are particularly strong, and indeed stronger than that observed on the TEs of individual node pairs. For instance, between days 16 and 24 of culture 1-3 we have that ρ=0.62 and between days 14 and 20 of culture 1-1 we have that ρ=0.71. Figure 4 visualises all Spearman correlations between the early and late total outgoing TE of a given node. As per the TEs for individual node pairs, the correlation is higher between closer days and where those days are later in the development of the cultures.
+**Table 3.**
+ Summary of significance values for the lock-in results.Each table cell shows the number of relationships that were found to be significant at the $p<0.05$ level, out of the total number of relationships tested. Note that relationships were only tested in cases where both recordings in the pair had at least 10 significant transfer entropy (TE) values. A hypothesis test is conducted against the null hypothesis that the original p-values that produced these results were uniformly distributed between 0 and 1 (giving a 0.05 chance of a significant result). * indicates that this probability is less than 0.05. ** indicates that the probability of the observed number of significant results has probability less than 0.001 under this null hypothesis, with a Bonferroni correction for multiple comparisons. The first row summarises the significance values for the value of the TE on the edges, shown in Figure 3 and Appendix 3—figure 4. The second and third rows summarise the significance values for the mean outward and inward TE on each node, shown in Figure 4 and Appendix 3—figure 5 as well as Appendix 2—figure 1 and Appendix 3—figure 6, respectively. The final row summarises the significance values for the ratio of inward to outward burst-local TE, shown in Figure 6 and Appendix 3—figure 9. The columns which restrict the analysis to bursting recordings exclude the final recording of culture 1-5, as this culture ceased bursting, after having previously been bursty (Wagenaar et al., 2006b).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All cultures, final pair</th>
+      <th>All cultures, final pair or post day 15</th>
+      <th>Bursting, final pair</th>
+      <th>Bursting, final pair or post day 15</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Edge</td>
+      <td>7/7**</td>
+      <td>8/9**</td>
+      <td>6/6**</td>
+      <td>7/8**</td>
+    </tr>
+    <tr>
+      <td>Out</td>
+      <td>5/7**</td>
+      <td>6/9**</td>
+      <td>5/6**</td>
+      <td>6/8**</td>
+    </tr>
+    <tr>
+      <td>In</td>
+      <td>3/7*</td>
+      <td>3/9*</td>
+      <td>3/6*</td>
+      <td>3/8*</td>
+    </tr>
+    <tr>
+      <td>Burst-local ratios</td>
+      <td>5/7**</td>
+      <td>6/9**</td>
+      <td>5/6**</td>
+      <td>6/8**</td>
+    </tr>
+  </tbody>
+</table>
+
+We also investigated the manner in which a node’s tendency to be an information source hub might be bound once information flows are established. Figure 4 shows scatter plots between the outgoing TE of each node (averaged across all targets) on different days of development along with the associated Spearman correlations (Appendix 3—figure 5 shows these plots for the additional cultures). By observing the scatter plots, it is easy to see that there is a strong positive relationship between the outgoing information flow from a given node on an earlier day of development and the outgoing flow from that same node on a later day (when we restrict ourselves to focusing on pairs occurring after a substantial number of statistically significant information flows have been established). This is not surprising, given the correlation we already established for TE on individual pairs, but does not automatically follow from that. As with the TE on the edges, Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between the outgoing TE from each node across days. We see that, whether we focus on just the last recordings of each culture or also include those after day 15, a substantial majority of pairs of recordings exhibit such correlations and that such a majority would be very unlikely to arise by chance. Some of these correlations are particularly strong, and indeed stronger than that observed on the TEs of individual node pairs. For instance, between days 16 and 24 of culture 1-3 we have that $ρ=0.62$ and between days 14 and 20 of culture 1-1 we have that $ρ=0.71$. Figure 4 visualises all Spearman correlations between the early and late total outgoing TE of a given node. As per the TEs for individual node pairs, the correlation is higher between closer days and where those days are later in the development of the cultures.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig4-v2.jpg)
 
-**Figure 4.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant transfer entropy [TE] values). Specifically, in each scatter plot, the  value of a given point is the average outgoing TE from the associated node on an earlier day and the x value of that same point is the total outgoing TE from the same node but on a later day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation (y) between the outgoing TE values on the two days is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the outward TEs of nodes across this pair of recording days. Diamonds indicate significance at ρ, with Bonferroni correction.p<0.05
+**Figure 4.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant transfer entropy [TE] values). Specifically, in each scatter plot, the $x$ value of a given point is the average outgoing TE from the associated node on an earlier day and the $y$ value of that same point is the total outgoing TE from the same node but on a later day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation ($ρ$) between the outgoing TE values on the two days is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the outward TEs of nodes across this pair of recording days. Diamonds indicate significance at $p<0.05$, with Bonferroni correction.
 
 Appendix 2—figure 1 shows similar plots to Figure 4, but for the average inward TE on each node (with Appendix 3—figure 6 showing plots for the additional cultures). We observe three cases of significant correlations in this value between early and late days, indicating a weaker yet still statistically significant (Table 3) propensity for the average inward TE to also lock-in.
 
@@ -97,7 +273,7 @@ Of course, some pairs involving earlier days of some cultures (such as day 10 of
 
 In summary, the data suggests that, in these developing neural cell cultures, the structure of the information flows is to a large degree locked-in early in development, around the point at which the information dynamics emerge. There is a strong tendency for properties of these flows on later days to be correlated with those same properties on earlier days. Specifically, we have looked at the flows between source-target pairs, the average outgoing flow from a source, and the average incoming flow to a target. The values of these variables on later DIV were found, in the majority of cases, to be positively correlated with the same values on earlier DIV. Further, there were no cases where a statistically significant negative correlation was found.
 
-## Information flows quantify computational role of burst position
+### Information flows quantify computational role of burst position
 
 Developing cultures of dissociated neurons have a tendency to self-organise so as to produce population bursts or avalanches (Wagenaar et al., 2006b; Pasquale et al., 2008). Such spike avalanches are not only a feature of cell cultures, being a ubiquitous feature of in vivo neural recordings (Priesemann et al., 2014; Priesemann et al., 2013; Priesemann et al., 2009). There is a wide body of work discussing the potential computational importance of such periods of neuronal activity (Lisman, 1997; Krahe and Gabbiani, 2004; Shew et al., 2011; Kinouchi and Copelli, 2006; Haldeman and Beggs, 2005; Rubinov et al., 2011; Cramer et al., 2020). It has been observed that cultures often follow one or more ordered patterns of burst propagation (Maeda et al., 1995), with some nodes exhibiting a tendency to burst towards the beginning of these patterns and others towards their end (Schroeter et al., 2015). More recent work has proposed that the nodes which tend to burst at different points in these progressions play different computational roles (Schroeter et al., 2015). This work has placed special importance on those nodes which usually burst during the middle of the burst progression, conjecturing that they act as the ‘brokers of neuronal communication’.
 
@@ -105,31 +281,63 @@ The framework of information dynamics is uniquely poised to illuminate the compu
 
 We analyse the information flowing between nodes during population bursts by estimating the burst-local TE between nodes in each recording (i.e. averaging the TE rates only during bursting periods, using probability distribution functions estimated over the whole recordings; see section ‘Estimation of burst-local TE’). We also measure the mean position of each node within bursts (with earlier bursting nodes having a lower numerical position; see section ‘Analysis of population bursts’). Note that, although there is variability of the burst position across bursts, certain nodes have much lower or higher mean burst positions, indicating a strong tendency to burst earlier or later within the propagation.
 
-Figure 5a and b show plots of the mean burst position plotted against the total inward (Figure 5a) and outward (Figure 5b) burst-local TE of each node. Appendix 3—figure 7 shows these plots for the additional cultures. Plots are only shown for days where there were at least 10 statistically significant burst-local TE values. The Spearman correlation (ρ) between these variables is also displayed on the plots.
+Figure 5a and b show plots of the mean burst position plotted against the total inward (Figure 5a) and outward (Figure 5b) burst-local TE of each node. Appendix 3—figure 7 shows these plots for the additional cultures. Plots are only shown for days where there were at least 10 statistically significant burst-local TE values. The Spearman correlation ($ρ$) between these variables is also displayed on the plots.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig5-v2.jpg)
 
-**Figure 5.:** (a) and (b) show the burst position of each node on the  axis of each plot, plotted against either the total incoming (a) or outgoing (b) TE on the node. The Spearman correlation (x) between the mean burst position and the incoming or outgoing TE values is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) plots the outgoing TE on the ρ axis and the incoming TE on the x axis with the points coloured according to the mean burst position of the node: late bursters are coloured yellow and early bursters are purple.y
+**Figure 5.:** (a) and (b) show the burst position of each node on the $x$ axis of each plot, plotted against either the total incoming (a) or outgoing (b) TE on the node. The Spearman correlation ($ρ$) between the mean burst position and the incoming or outgoing TE values is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) plots the outgoing TE on the $x$ axis and the incoming TE on the $y$ axis with the points coloured according to the mean burst position of the node: late bursters are coloured yellow and early bursters are purple.
 
-We see from Figure 5 that, particularly for the final recording days, in most cases there is a positive correlation between the mean burst position of the node and the total inward burst-local TE. In some cases, this correlation is particularly strong. For instance, on the 24th DIV of culture 1-3, we observe a Spearman correlation of ρ=0.84. In other words, we observe that nodes which tend to burst later have higher incoming information flows. Table 4 summarises the proportions of recordings (including the additional cultures) which had significant positive Spearman correlations between the mean burst position of the node and the total inward burst-local TE. By focussing on recordings that have reached a state of established information dynamics, by either selecting all final recordings or all that were performed post day 15, we see that in all cases a clear majority of cases had a statistically significant positive Spearman correlation. Moreover, the probability of this number of correlations arising by chance is found to be very low. These relationships suggest that there is a tendency for the late bursters to occupy the specialised computational role of information receivers.
+We see from Figure 5 that, particularly for the final recording days, in most cases there is a positive correlation between the mean burst position of the node and the total inward burst-local TE. In some cases, this correlation is particularly strong. For instance, on the 24th DIV of culture 1-3, we observe a Spearman correlation of $ρ=0.84$. In other words, we observe that nodes which tend to burst later have higher incoming information flows. Table 4 summarises the proportions of recordings (including the additional cultures) which had significant positive Spearman correlations between the mean burst position of the node and the total inward burst-local TE. By focussing on recordings that have reached a state of established information dynamics, by either selecting all final recordings or all that were performed post day 15, we see that in all cases a clear majority of cases had a statistically significant positive Spearman correlation. Moreover, the probability of this number of correlations arising by chance is found to be very low. These relationships suggest that there is a tendency for the late bursters to occupy the specialised computational role of information receivers.
 
-Conversely, as shown in Figure 5, there is a tendency for the mean burst position of the nodes to be negatively correlated with the outward burst-local TE. Again, this correlation is particularly strong in many cases. For example, on the 24th DIV of culture 1-3, we observe a Spearman correlation of ρ=-0.80. In other words, we observe that nodes which tend to burst earlier have higher outward information flows. Table 4 summarises the proportions of recordings (including the additional cultures) which had significant negative Spearman correlations between the mean burst position of the node and the total outward burst-local TE. We see that a clear majority of either all final recording days or all recordings performed post day 15 had a statistically significant negative Spearman correlation. Moreover, the probability of this number of correlations arising by chance is found to be very low. These relationships suggest that there is a tendency for the early bursters to occupy the specialised computational role of information receivers.
+**Table 4.**
+ Summary of significance values for the results relating to computational roles.Each table cell shows the number of relationships that were found to be significant at the $p<0.05$ level, out of the total number of relationships tested. A hypothesis test is conducted against the null hypothesis that the original p-values that produced these results were uniformly distributed between 0 and 1 (giving a 0.05 chance of a significant result). ** indicates that the probability of the observed number of significant results has probability less than 0.001 under this null hypothesis, with a Bonferroni correction for multiple comparisons. The first row summarises the significance values for the relationships between inward burst-local TE and burst position, as shown in Figure 5 and Appendix 3—figure 7. The second row summarises the significance values for the relationships between outward burst-local TE and burst position, as shown in Figure 5 and Appendix 3—figure 7.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>All cultures, final day</th>
+      <th>All cultures post day 15</th>
+      <th>Bursting, final day</th>
+      <th>Bursting, post day 15</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>In</td>
+      <td>7/11**</td>
+      <td>10/15**</td>
+      <td>7/10**</td>
+      <td>10/14**</td>
+    </tr>
+    <tr>
+      <td>Out</td>
+      <td>7/11**</td>
+      <td>11/15**</td>
+      <td>7/10**</td>
+      <td>11/14**</td>
+    </tr>
+  </tbody>
+</table>
+
+Conversely, as shown in Figure 5, there is a tendency for the mean burst position of the nodes to be negatively correlated with the outward burst-local TE. Again, this correlation is particularly strong in many cases. For example, on the 24th DIV of culture 1-3, we observe a Spearman correlation of $ρ=-0.80$. In other words, we observe that nodes which tend to burst earlier have higher outward information flows. Table 4 summarises the proportions of recordings (including the additional cultures) which had significant negative Spearman correlations between the mean burst position of the node and the total outward burst-local TE. We see that a clear majority of either all final recording days or all recordings performed post day 15 had a statistically significant negative Spearman correlation. Moreover, the probability of this number of correlations arising by chance is found to be very low. These relationships suggest that there is a tendency for the early bursters to occupy the specialised computational role of information receivers.
 
 Figure 5 plots the total incoming burst-local TE on each node against the total outgoing burst-local TE, with points coloured according to the node’s mean burst position (Appendix 3—figure 8 shows these plots for the additional cultures). We see a very clear pattern in these plots, which is remarkably clear on some later recording days: nodes which often fire at the beginning of the burst progression have high outgoing information flows with lower incoming flows, whereas those which tend to sit at the end of the progression have high incoming flows with lower outgoing flows. By contrast, those nodes which, on average, occupy the middle of the burst progression have a balance between outgoing and incoming information transfer. These nodes within the middle of the burst propagation are, therefore, occupying the suggested role of mediators of information flow.
 
-## Early lock-in of specialised computational roles
+### Early lock-in of specialised computational roles
 
 Given that we have seen in section ‘Information flows quantify computational role of burst position’ that nodes tend to occupy specialised computational roles based on their average position in the burst propagation and that we have seen in section ‘Early lock-in of information flows’ that information processing properties can lock-in early in development, it is worth asking whether the specialised computational roles that nodes occupy during population bursts lock-in during the earlier stages of neuronal development.
 
-In order to investigate this question, we quantified the computational role occupied by a node by measuring the proportion of its total incoming and outgoing burst-local TE that was made up by its outgoing burst-local TE. Scatters of these proportions between earlier and later DIV are plotted in Figure 6 for the main cultures (the additional cultures are shown in Appendix 3—figure 9). They also display the Spearman rank-order correlations (ρ) between the ratios on different days. We see that, in many cases, there are strong, significant, correlations in this ratio between earlier and later DIV. Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between this ratio on each node across days. We see that, whether we focus on just the last recordings of each culture or also include those after day 15, a clear majority of pairs of recordings exhibit such correlations and that such a majority would be very unlikely to arise by chance. Figure 6 visualises all these Spearman correlations between the early and late day pairs.
+In order to investigate this question, we quantified the computational role occupied by a node by measuring the proportion of its total incoming and outgoing burst-local TE that was made up by its outgoing burst-local TE. Scatters of these proportions between earlier and later DIV are plotted in Figure 6 for the main cultures (the additional cultures are shown in Appendix 3—figure 9). They also display the Spearman rank-order correlations ($ρ$) between the ratios on different days. We see that, in many cases, there are strong, significant, correlations in this ratio between earlier and later DIV. Table 3 summarises the proportions of pairs of recordings (including the additional cultures) which had significant positive Spearman correlations between this ratio on each node across days. We see that, whether we focus on just the last recordings of each culture or also include those after day 15, a clear majority of pairs of recordings exhibit such correlations and that such a majority would be very unlikely to arise by chance. Figure 6 visualises all these Spearman correlations between the early and late day pairs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig6-v2.jpg)
 
-**Figure 6.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant burst-local transfer entropy [TE] values). Specifically, in each scatter plot, the  value of a given point is the ratio of total outgoing burst-local TE on the associated node to the total burst-local TE on the same node on one day and the x value of that same point is this same ratio on the same node but on a different day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation (y) between the TE values on the two days is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the outward TE of the nodes across this pair of recording days. Diamonds indicate significance at ρ, with Bonferroni correction.p<0.05
+**Figure 6.:** (a–d) show scatter plots between all pairs of days for each culture (excluding days with less than 10 significant burst-local transfer entropy [TE] values). Specifically, in each scatter plot, the $x$ value of a given point is the ratio of total outgoing burst-local TE on the associated node to the total burst-local TE on the same node on one day and the $y$ value of that same point is this same ratio on the same node but on a different day. The days in question are shown on the bottom and sides of the grids of scatter plots. The orange line shows the ordinary least-squares regression. The Spearman correlation ($ρ$) between the TE values on the two days is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (e) shows all recording day pairs for all cultures (where the pairs are always from the same culture) and the associated Spearman correlation between the outward TE of the nodes across this pair of recording days. Diamonds indicate significance at $p<0.05$, with Bonferroni correction.
 
 These results suggest that, if a node is an information transmitter during population bursts at the point at which the information flows are established, it has a tendency to maintain this specialised role later in development. Similarly, being an information receiver earlier in development increases the probability that the node will occupy this same role later.
 
-## Information flows in an STDP model of development
+### Information flows in an STDP model of development
 
 In order to investigate the generality of the phenomena revealed in this article, we reimplemented a model network (Khoshkhou and Montakhab, 2019) of Izhikevich neurons (Izhikevich, 2003) developing according to an STDP (Caporale and Dan, 2008) update rule as described in section ‘Network of Izhikevich neurons’. For the low value of the synaptic time constant which we used (see section ‘Network of Izhikevich neurons’), these networks developed from a state where each neuron underwent independent tonic spiking at a regular firing rate to one in which the dynamics were dominated by periodic population bursts (Zeraati et al., 2021; Khoshkhou and Montakhab, 2019). It is worth noting that these population bursts are significantly more regular than those in the biological data used in this article. Small modifications were made to the original model in order that the development occurred over a greater length of time. The greater length of development allowed us to extract time windows which were short relative to the timescale of development (resulting in the dynamics being approximately stationary in these windows) yet still long enough to sample enough spikes for reliable TE rate estimation. The windows which we used resulted in a median of 5170 spikes per neuron per window compared with a median of 17,399 spikes per electrode in the biological data. See section ‘Network of Izhikevich neurons’ for more details on the modifications made. A single simulation was run. The dynamics of the model are very consistent across independent runs. Three windows were extracted, extending between the simulation timepoints of 200 and 250 seconds, 400 and 450 seconds, and 500 and 550 seconds. These time windows were labelled ‘early’, ‘mid’, and ‘late’, respectively. The early window was chosen such that it had a nonzero number of significant TE values, but such that this number was of the same (order of magnitude in) proportion as observed in the first recording days of the cell cultures (refer to Table 2). The mid period was set at the point where population bursting begun to emerge, and the late period was set at the point where all neurons were bursting approximately synchronously in a pronounced manner.
 
@@ -137,21 +345,21 @@ TE values between all pairs of model neurons were estimated, as described in sec
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig7-v2.jpg)
 
-**Figure 7.:** Figures 1, 3 and 4 and Appendix 2—figure 1, but for the simulated spiking network developing under spike-timing-dependent plasticity (STDP).(a) shows scatters of the transfer entropy (TE) values overlaid on box plots. The box plots show the quartiles and the median (values greater than 10 SDs from the mean have been removed from both the box and scatter plots as outliers). It corresponds to Figure 1. (b –d) show scatter plots investigating the relationship between TE values (or derived summary statistics) over different stages of development. Specifically, in each scatter plot, the  value of a given point is a TE value or derived statistic at an earlier simulation stage and the x value of that same point is a TE value (or derived statistic) on the corresponding edge or node, but later in the simulation. The orange line shows the ordinary least-squares regression. The Spearman correlation (y) between the TE values on the two days is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (b) corresponds to the scatter plots in ρFigure 3, (c) corresponds to the scatter plots in Figure 4, and (d) corresponds to the scatter plots in Appendix 2—figure 1.
+**Figure 7.:** (a) shows scatters of the transfer entropy (TE) values overlaid on box plots. The box plots show the quartiles and the median (values greater than 10 SDs from the mean have been removed from both the box and scatter plots as outliers). It corresponds to Figure 1. (b –d) show scatter plots investigating the relationship between TE values (or derived summary statistics) over different stages of development. Specifically, in each scatter plot, the $x$ value of a given point is a TE value or derived statistic at an earlier simulation stage and the $y$ value of that same point is a TE value (or derived statistic) on the corresponding edge or node, but later in the simulation. The orange line shows the ordinary least-squares regression. The Spearman correlation ($ρ$) between the TE values on the two days is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (b) corresponds to the scatter plots in Figure 3, (c) corresponds to the scatter plots in Figure 4, and (d) corresponds to the scatter plots in Appendix 2—figure 1.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/74651/elife-74651-fig8-v2.jpg)
 
-**Figure 8.:** Figure 5, but for the simulated spiking network developing under spike-timing-dependent plasticity (STDP).Plots show the relationship between the amount of incoming and outgoing local (in burst) transfer entropy (TE) on a given node and its average burst position. (a) and (b) show the burst position of each node on the  axis of each plot, plotted against either (a) the total incoming or (b) outgoing TE on the node. The Spearman correlation (x) between the mean burst position and the incoming or outgoing TE values is displayed in each plot. Values of ρ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (c) plots the outgoing TE on the ρ axis and the incoming TE on the x axis with the points coloured according to the mean burst position of the node: late bursters are coloured yellow and early bursters are purple.y
+**Figure 8.:** Plots show the relationship between the amount of incoming and outgoing local (in burst) transfer entropy (TE) on a given node and its average burst position. (a) and (b) show the burst position of each node on the $x$ axis of each plot, plotted against either (a) the total incoming or (b) outgoing TE on the node. The Spearman correlation ($ρ$) between the mean burst position and the incoming or outgoing TE values is displayed in each plot. Values of $ρ$ significant at the 0.05 level are designated with an asterisk and those significant at the 0.01 level are designated with a double asterisk. Red asterisks are used to denote significance after performing a Bonferroni correction for multiple comparisons. (c) plots the outgoing TE on the $x$ axis and the incoming TE on the $y$ axis with the points coloured according to the mean burst position of the node: late bursters are coloured yellow and early bursters are purple.
 
 Scatters and box plots of the TE values estimated in each developmental window are shown in Figure 7. We observe a large, monotonic, increase in these values over development. This mirrors the finding in cell cultures, as described in section ‘The dramatic increase in the flow of information during development’.
 
-We also observe a similar lock-in phenomenon of information processing as was found in the cell cultures (described in section ‘Early lock-in of information flows’). Figure 7a–d show the correlation in information flow between different stages of development. Specifically, Figure 7a plots the correlation in TE values between each ordered pair of neurons between early and later windows. Figure 7d plots this same correlation, but for the total incoming TE on each neuron, and Figure 7c does this for the total outgoing TE. In all six of the plots for the relationships between the TE on each edge and for the total outgoing TE, we observe a substantial statistically significant positive correlation between values on earlier and later days (significant at the p<0.01 level, with Bonferroni correction). We observe smaller positive correlations in these values for the total incoming TE on each node, although these correlations are not significant, which aligns somewhat with the weaker effect observed for incoming TE in the cultures. As with the cell cultures, some of the observed correlations are particularly strong, such as the Spearman correlation of ρ=0.62 between the total outgoing TE on each node in the mid window and this same value in the late window. This implies that the spatial structure of the information flow has a tendency to be determined in the earlier stages of development, after which they are locked-in – in a similar fashion to what was observed in the biological experiments in earlier sections.
+We also observe a similar lock-in phenomenon of information processing as was found in the cell cultures (described in section ‘Early lock-in of information flows’). Figure 7a–d show the correlation in information flow between different stages of development. Specifically, Figure 7a plots the correlation in TE values between each ordered pair of neurons between early and later windows. Figure 7d plots this same correlation, but for the total incoming TE on each neuron, and Figure 7c does this for the total outgoing TE. In all six of the plots for the relationships between the TE on each edge and for the total outgoing TE, we observe a substantial statistically significant positive correlation between values on earlier and later days (significant at the $p<0.01$ level, with Bonferroni correction). We observe smaller positive correlations in these values for the total incoming TE on each node, although these correlations are not significant, which aligns somewhat with the weaker effect observed for incoming TE in the cultures. As with the cell cultures, some of the observed correlations are particularly strong, such as the Spearman correlation of $ρ=0.62$ between the total outgoing TE on each node in the mid window and this same value in the late window. This implies that the spatial structure of the information flow has a tendency to be determined in the earlier stages of development, after which they are locked-in – in a similar fashion to what was observed in the biological experiments in earlier sections.
 
-We also performed the same analysis on computational roles as presented in section ‘Information flows quantify computational role of burst position’. This analysis, the results of which are presented in Figure 8, only looked at the mid and late windows. The early window was ignored due to its lack of bursting activity. In the mid recording window, we observe a strong relationship between the mean burst position of the neuron and its computational role. Figure 8 shows that there is a significant (at the p<0.01 level) positive correlation between the mean burst position of a neuron and its total incoming burst-local TE (see section ‘Estimation of burst-local TE’ for more details on the burst-local TE). There is also a negative correlation between the mean burst position and the total outgoing burst-local TE, as shown in Figure 8. However, this relationship is not significant after Bonferroni correction. These same figures also display these relationships for the late window. Here, we observe the same directions of relationships. This relationship is incredibly strong between incoming TE and burst position (ρ=0.81). The relationship between the outgoing TE and burst position is still negative, although it is not as strong as in the mid window and is no longer significant. Inspection of Figure 8 reveals that there is still a very clear negative relationship between burst position and outgoing TE after a burst position of about 20. Indeed, if we condition on the burst position being greater than 20, then we find a Spearman correlation of ρ=0.80, which is significant at the p<0.01 with Bonferroni correction. Inspection of the spike rasters of these simulations suggests that the anomalous results for the earliest bursters may be due to their spiking a very substantial distance ahead of the rest of the population in these simulations. These differing burst dynamics mean that the earliest bursters are then less able to reduce the uncertainty in the spike times of the majority of the neurons which begin spiking significantly later.
+We also performed the same analysis on computational roles as presented in section ‘Information flows quantify computational role of burst position’. This analysis, the results of which are presented in Figure 8, only looked at the mid and late windows. The early window was ignored due to its lack of bursting activity. In the mid recording window, we observe a strong relationship between the mean burst position of the neuron and its computational role. Figure 8 shows that there is a significant (at the $p<0.01$ level) positive correlation between the mean burst position of a neuron and its total incoming burst-local TE (see section ‘Estimation of burst-local TE’ for more details on the burst-local TE). There is also a negative correlation between the mean burst position and the total outgoing burst-local TE, as shown in Figure 8. However, this relationship is not significant after Bonferroni correction. These same figures also display these relationships for the late window. Here, we observe the same directions of relationships. This relationship is incredibly strong between incoming TE and burst position ($ρ=0.81$). The relationship between the outgoing TE and burst position is still negative, although it is not as strong as in the mid window and is no longer significant. Inspection of Figure 8 reveals that there is still a very clear negative relationship between burst position and outgoing TE after a burst position of about 20. Indeed, if we condition on the burst position being greater than 20, then we find a Spearman correlation of $ρ=0.80$, which is significant at the $p<0.01$ with Bonferroni correction. Inspection of the spike rasters of these simulations suggests that the anomalous results for the earliest bursters may be due to their spiking a very substantial distance ahead of the rest of the population in these simulations. These differing burst dynamics mean that the earliest bursters are then less able to reduce the uncertainty in the spike times of the majority of the neurons which begin spiking significantly later.
 
 This implies that, midway through development, we are observing the same specialisation into computational roles based on burst position as was observed in the cell cultures: early bursters display a tendency to be information transmitters, late bursters operate as receivers, and middle bursters exhibit a balance of the two. Later on in development, we do, however, observe a slight departure from the roles we observed in the cell cultures. The computational roles are shifted further down the burst propagation and the earliest bursters here are less strongly driving the rest of the population.
 
-It is worth noting that the estimated TE values in the model are substantially higher than in the biological dataset. The median estimated TE in the late window of the model was around 40nats.s-1 (Figure 7). Conversely, it was less than 0.2nats.s-1 for every last recording day of the cell cultures (Figure 1). This is due to the much higher spike rate of the model implying that the dynamics are operating on different timescales. Indeed, if we compare the magnitude of the burst-local TE – which is measured in nats per spike (see section ‘Estimation of burst-local TE’) – between the model and the biological data (Figures 8 and 5, respectively), we find values of similar magnitude.
+It is worth noting that the estimated TE values in the model are substantially higher than in the biological dataset. The median estimated TE in the late window of the model was around $40nats.s^{-1}$ (Figure 7). Conversely, it was less than $0.2nats.s^{-1}$ for every last recording day of the cell cultures (Figure 1). This is due to the much higher spike rate of the model implying that the dynamics are operating on different timescales. Indeed, if we compare the magnitude of the burst-local TE – which is measured in nats per spike (see section ‘Estimation of burst-local TE’) – between the model and the biological data (Figures 8 and 5, respectively), we find values of similar magnitude.
 
 In summary, in a network model of Izhikevich neurons developing according to STDP towards a state of population bursts, we observe a similar developmental information processing phenomena as in the cell cultures. Namely, the amount of information flowing across the network increases dramatically, the spatial structure of this flow locks in early, and the neurons take on specialised computational roles based on their burst position.
 
@@ -175,7 +383,7 @@ It is worth reflecting on the fact that the observed correlations between burst-
 
 Returning once more to our focus on investigating the emergence of information flows, we have demonstrated, in section ‘Early lock-in of specialised computational roles’, that these specialist computational roles have a tendency to lock-in early. There we looked at the ratio of outgoing burst-local TE to the total burst-local TE on each node. It was found that there is a strong tendency for this ratio to be correlated between early and late days of development. This suggests that the computational role that a node performs during population bursts is determined to a large degree early in development.
 
-Insights into development aside, a fundamental technical difference between the work presented here and previous studies of TE in neural cultures is that here we use a recently developed continuous-time estimator of TE (Shorten et al., 2021). This estimator was demonstrated to have far higher accuracy in estimating information flows than the traditional discrete-time estimator. The principal challenge which is faced when using the discrete-time estimator is that the curse of dimensionality limits the number of previous time bins that can be used to estimate the history-dependent spike rates. All applications of this estimator to spiking data from cell cultures of which the authors are aware (Nigam et al., 2016; Shimono and Beggs, 2015; Matsuda et al., 2013; Timme et al., 2014; Kajiwara et al., 2021; Timme et al., 2016) made use of only a single previous bin in the estimation of these rates. This makes it impossible to simultaneously achieve high time precision and capture the dependence of the spike rate on spikes occurring further back in time. Conversely, by operating on the interspike intervals, the continuous-time estimator can capture the dependence of the spike rate on events occurring relatively far back in time, while maintaining the time precision of the raw data. Looking at a specific representative example, our target history embeddings made use of the previous four interspike intervals (section ‘Selection of embedding lengths’). For the recording on day 24 of culture 1-3, the mean interspike interval was 0.71 s. This implies that the target history embeddings on average extended over a period of 2.84 s. The raw data was collected with a sampling rate of 25kHz (Wagenaar et al., 2006b). In order to lose no time precision, the discrete-time estimator would thus have to use bins of 40 s, and then in order to extend over 2.84 s, the target history embeddings would therefore need to consist of around 70,000 bins which is empirically not possible to sample well.
+Insights into development aside, a fundamental technical difference between the work presented here and previous studies of TE in neural cultures is that here we use a recently developed continuous-time estimator of TE (Shorten et al., 2021). This estimator was demonstrated to have far higher accuracy in estimating information flows than the traditional discrete-time estimator. The principal challenge which is faced when using the discrete-time estimator is that the curse of dimensionality limits the number of previous time bins that can be used to estimate the history-dependent spike rates. All applications of this estimator to spiking data from cell cultures of which the authors are aware (Nigam et al., 2016; Shimono and Beggs, 2015; Matsuda et al., 2013; Timme et al., 2014; Kajiwara et al., 2021; Timme et al., 2016) made use of only a single previous bin in the estimation of these rates. This makes it impossible to simultaneously achieve high time precision and capture the dependence of the spike rate on spikes occurring further back in time. Conversely, by operating on the interspike intervals, the continuous-time estimator can capture the dependence of the spike rate on events occurring relatively far back in time, while maintaining the time precision of the raw data. Looking at a specific representative example, our target history embeddings made use of the previous four interspike intervals (section ‘Selection of embedding lengths’). For the recording on day 24 of culture 1-3, the mean interspike interval was 0.71 s. This implies that the target history embeddings on average extended over a period of 2.84 s. The raw data was collected with a sampling rate of $25kHz$ (Wagenaar et al., 2006b). In order to lose no time precision, the discrete-time estimator would thus have to use bins of 40 s, and then in order to extend over 2.84 s, the target history embeddings would therefore need to consist of around 70,000 bins which is empirically not possible to sample well.
 
 It is worth noting that, as we were performing a longitudinal analysis where each studied recording was separated by days or weeks, we did not perform spike sorting as we would have been unable to match the different units on an electrode across different recordings. We would then not have been able to compare the TE values on a given unit over the course of development. Instead, we analysed the spikes on each electrode without sorting. As such, this work studies MUA (Schroeter et al., 2015). Spike sorting applied to data collected from a near-identical recording setup found an average of four neurons per electrode (Wagenaar et al., 2006a). This situates this work at a spatial scale slightly larger than spike-sorted neural data, but still orders of magnitude finer than fMRI, EEG, or MEG (Bassett and Sporns, 2017).
 
@@ -185,7 +393,7 @@ An exciting direction for future work will be to move beyond directed functional
 
 ## Materials and methods
 
-## Cell culture data
+### Cell culture data
 
 The spike train recordings used in this study were collected by Wagenaar et al., 2006b and are freely available online (Network, 2021). The details of the methodology used in these recordings can be found in the original publication (Wagenaar et al., 2006b). A short summary of their methodology follows.
 
@@ -193,78 +401,387 @@ Dissociated cultures of rat cortical neurons had their activity recorded. This w
 
 30 min recordings were conducted on most days, starting from 3 to 4 DIV. The end point of recording varied between 25 and 39 DIV. Longer overnight recordings were also conducted on some cultures at sparser intervals. As the accurate estimation of information-theoretic quantities requires substantial amounts of data (Shorten et al., 2021; Kraskov et al., 2004), in this work we make use of these longer overnight recordings. These recordings were split into multiple files. The specific files used, along with the names of the cultures and days of the recordings, are listed in Table 5.
 
-The original study plated the electrodes with varying densities of cortical cells. However, overnight recordings were only performed on the ‘dense’ cultures, plated with a density of 2500cells/µ⁢L.
+**Table 5.**
+ File numbers used for each culture on each day.These correspond to the file numbering used in the freely available dataset used in this study, provided by Wagenaar et al., 2006b; Network, 2021.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Culture 1-1</td>
+      <td>Day 4</td>
+      <td>Day 14</td>
+      <td>Day 20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 1-2</td>
+      <td>Day 6</td>
+      <td>Day 11</td>
+      <td>Day 17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 1-3</td>
+      <td>Day 5</td>
+      <td>Day 10</td>
+      <td>Day 16</td>
+      <td>Day 24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Culture 1-4</td>
+      <td>Day 8</td>
+      <td>Day 13</td>
+      <td>Day 19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 1-5</td>
+      <td>Day 7</td>
+      <td>Day 12</td>
+      <td>Day 18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 2-1</td>
+      <td>Day 14</td>
+      <td>Day 32</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 2-2</td>
+      <td>Day 9</td>
+      <td>Day 15</td>
+      <td>Day 21</td>
+      <td>Day 33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Culture 2-3</td>
+      <td>Day 6</td>
+      <td>Day 12</td>
+      <td>Day 24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 2-4</td>
+      <td>Day 3</td>
+      <td>Day 5</td>
+      <td>Day 11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Culture 2-5</td>
+      <td>Day 4</td>
+      <td>Day 10</td>
+      <td>Day 22</td>
+      <td>Day 28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Culture 2-6</td>
+      <td>Day 7</td>
+      <td>Day 13</td>
+      <td>Day 31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+The original study plated the electrodes with varying densities of cortical cells. However, overnight recordings were only performed on the ‘dense’ cultures, plated with a density of $2500cells/µ⁢L$.
 
 The original study performed threshold-based spike detection by determining that a spike was present in the case of an upward or downward excursion beyond 4.5 times the estimated RMS noise of the recorded potential on a given electrode. The analysis presented in this article makes use of these detected spike times. No spike sorting was performed, and, as such, we are studying MUA (Schroeter et al., 2015).
 
-## Network of Izhikevich neurons
+### Network of Izhikevich neurons
 
 The model spiking network used to generate the data analysed in section ‘Information flows in an STDP model of development’ is identical to that presented in Khoshkhou and Montakhab, 2019, with a few minor alterations. This model consists of Izhikevich neurons (Izhikevich, 2003) developing according to an STDP (Caporale and Dan, 2008) update rule. At the beginning of the simulation, each neuron performs independent tonic spiking; however, the network develops towards population bursts.
 
-The specific model settings used were based on those used to produce Figure 5A in Khoshkhou and Montakhab, 2019. That is, the proportion of inhibitory neurons (α) and the synapse time delay (τi⁢j) were both set to 0. The first change made was to use 59 neurons, as opposed to the 500 used in Khoshkhou and Montakhab, 2019, in order to correspond to the number of electrodes used in the cell culture recordings. The maximum connection strength (gm⁢a⁢x) was also increased from 0.6 to 10 in order to compensate for this reduction in the network size.
+The specific model settings used were based on those used to produce Figure 5A in Khoshkhou and Montakhab, 2019. That is, the proportion of inhibitory neurons ($\alpha$) and the synapse time delay ($\tau_{i⁢j}$) were both set to 0. The first change made was to use 59 neurons, as opposed to the 500 used in Khoshkhou and Montakhab, 2019, in order to correspond to the number of electrodes used in the cell culture recordings. The maximum connection strength ($g_{m⁢a⁢x}$) was also increased from 0.6 to 10 in order to compensate for this reduction in the network size.
 
-The only remaining change was made in order to slow the rate of development of the population. The reasoning behind this was to allow for the extraction of windows which were much shorter than the timescale of development, resulting in the dynamics within these windows being approximately stationary (and including enough samples for estimation of the TE rates). Specifically, this change was to greatly reduce the values of the maximum synaptic potentiation and depression (A+ and A-). These values were reduced from 5​​ ×​​10-2 to 4​​ ×​​10-4.
+The only remaining change was made in order to slow the rate of development of the population. The reasoning behind this was to allow for the extraction of windows which were much shorter than the timescale of development, resulting in the dynamics within these windows being approximately stationary (and including enough samples for estimation of the TE rates). Specifically, this change was to greatly reduce the values of the maximum synaptic potentiation and depression ($A_{+}$ and $A_{-}$). These values were reduced from $5​​ ×​​10^{-2}$ to $4​​ ×​​10^{-4}$.
 
-## Data preprocessing
+### Data preprocessing
 
 As the data was sampled at 25 kHz, uniform noise distributed between –20 s and 20 s was added to each spike time. This is to prevent the TE estimator from exploiting the fact that, in the raw data, interspike intervals are always an integer multiple of 40 s.
 
-## Transfer entropy estimation
+### Transfer entropy estimation
 
-The (bivariate) TE (Schreiber, 2000; Bossomaier et al., 2016) was estimated between each pair of electrodes in each of the recordings listed in Table 5. TE is the mutual information between the past state of a source process and the present state of a target process, conditioned on the past state of the target. More specifically (in discrete time), the TE rate is(1)T˙Y→X=1ΔtI(Xt;Y<t|X<t)=1τ∑t=1NTln⁡p(xt|x<t,y<t)p(xt|x<t).
+The (bivariate) TE (Schreiber, 2000; Bossomaier et al., 2016) was estimated between each pair of electrodes in each of the recordings listed in Table 5. TE is the mutual information between the past state of a source process and the present state of a target process, conditioned on the past state of the target. More specifically (in discrete time), the TE rate is
 
-The TE above is being measured from a source Y to a target X, I(⋅;⋅|⋅) is the conditional mutual information (MacKay and Kay, 2003), xt is the current state of the target, x<t is the history of the target, y<t is the history of the source, Δ⁢t is the bin width (in time units), τ is the length of the processes, and NT=τ/Δ⁢t is the number of time samples (bins). The histories x<t and y<t are usually captured via embedding vectors, for example, x<t=xt−m:t−1={xt−m,xt−m+1,…,xt−1}.
+$$
+T˙_{Y→X}=\frac{1}{Δt}I(X_{t};Y_{<t}|X_{<t})=\frac{1}{\tau}\sumt=1N_{T}ln⁡\frac{p(x_{t}|x_{<t},y_{<t})}{p(x_{t}|x_{<t})}.
+$$
 
-## Previous application of the discrete-time estimator
+The TE above is being measured from a source $Y$ to a target $X$, $I(⋅;⋅|⋅)$ is the conditional mutual information (MacKay and Kay, 2003), xt is the current state of the target, $x_{<t}$ is the history of the target, $y_{<t}$ is the history of the source, $Δ⁢t$ is the bin width (in time units), $\tau$ is the length of the processes, and $N_{T}=\tau/Δ⁢t$ is the number of time samples (bins). The histories $x_{<t}$ and $y_{<t}$ are usually captured via embedding vectors, for example, $x_{<t}=x_{t−m:t−1}={x_{t−m},x_{t−m+1},…,x_{t−1}}$.
+
+#### Previous application of the discrete-time estimator
 
 Previous applications of TE to spiking data from neural cell cultures (Nigam et al., 2016; Shimono and Beggs, 2015; Matsuda et al., 2013; Timme et al., 2014; Kajiwara et al., 2021; Timme et al., 2016; Wibral et al., 2017) made use of this discrete-time formulation of TE. This work was primarily focussed on the directed functional networks implied by the estimated TE values between pairs of nodes which has revealed interesting features of the information flow structure. Shimono and Beggs, 2015 found that these networks exhibited a highly non-random structure and contained a long-tailed degree distribution. This work was expanded by Nigam et al., 2016, where it was found that the functional networks contained a rich-club topology. Conversely, Timme et al., 2014 found that the hubs of these networks were localised to certain timescales. Other work (Timme et al., 2016; Wibral et al., 2017) has instead focussed on how the components of information flows in cell cultures can be decomposed into unique, redundant, and synergistic components.
 
-## Continuous-time estimation
+#### Continuous-time estimation
 
-It has, relatively recently, been shown that, for event-based data such as spike trains, in the limit of small bin size, the TE is given by the following expression (Spinney and Lizier, 2018):(2)T˙Y→X=limτ→∞1τ∑i=1NXln⁡λx|x<t,y<t[x<xi,y<xi]λx|x<t[x<xi].
+It has, relatively recently, been shown that, for event-based data such as spike trains, in the limit of small bin size, the TE is given by the following expression (Spinney and Lizier, 2018):
 
-Here, λx|x<t,y<t[x<xi,y<xi] is the instantaneous firing rate of the target conditioned on the histories of the target x<xi and source y<xi at the time points xi of the spike events in the target process. λx|x<t[x<xi] is the instantaneous firing rate of the target conditioned on its history alone, ignoring the history of the source. It is important to note that the sum is being taken over the NX spikes of the target, thereby evaluating log ratios of the expected spike rates of the target given source and target histories versus target histories alone, when the target does spike. As this expression allows us to ignore the ‘empty space’ between events, it presented clear potential for allowing for more efficient estimation of TE on spike trains.
+$$
+T˙_{Y→X}=lim\tau→∞\frac{1}{\tau}\sumi=1N_{X}ln⁡\frac{\lambda_{x|x_{<t},y_{<t}}[x_{<x_{i}},y_{<x_{i}}]}{\lambda_{x|x_{<t}}[x_{<x_{i}}]}.
+$$
 
-This potential was recently realised in a new continuous-time estimator of TE presented in Shorten et al., 2021 (and utilised in Mijatovic et al., 2021), and all TE estimates in this article were performed using this new estimator. In Shorten et al., 2021 it is demonstrated that this continuous-time estimator is far superior to the traditional discrete-time approach to TE estimation on spike trains. For a start, unlike the discrete-time estimator, it is consistent. That is, in the limit of infinite data, it will converge to the true value of the TE. It was also shown to have much preferable bias and convergence properties. Most significantly, perhaps, this new estimator utilises the interspike intervals to efficiently represent the history embeddings x<xi and y<xi in estimating the relevant conditional spike rates in (Lizier, 2013). This then allows for the application of the highly effective nearest-neighbour family of information-theoretic estimators (Kozachenko and Leonenko, 1987; Kraskov et al., 2004), which bring estimation efficiency, bias correction, and together with their application to interspike intervals enable capture of long timescale dependencies.
+Here, $\lambda_{x|x_{<t},y_{<t}}[x_{<x_{i}},y_{<x_{i}}]$ is the instantaneous firing rate of the target conditioned on the histories of the target $x_{<x_{i}}$ and source $y_{<x_{i}}$ at the time points xi of the spike events in the target process. $\lambda_{x|x_{<t}}[x_{<x_{i}}]$ is the instantaneous firing rate of the target conditioned on its history alone, ignoring the history of the source. It is important to note that the sum is being taken over the $N_{X}$ spikes of the target, thereby evaluating log ratios of the expected spike rates of the target given source and target histories versus target histories alone, when the target does spike. As this expression allows us to ignore the ‘empty space’ between events, it presented clear potential for allowing for more efficient estimation of TE on spike trains.
+
+This potential was recently realised in a new continuous-time estimator of TE presented in Shorten et al., 2021 (and utilised in Mijatovic et al., 2021), and all TE estimates in this article were performed using this new estimator. In Shorten et al., 2021 it is demonstrated that this continuous-time estimator is far superior to the traditional discrete-time approach to TE estimation on spike trains. For a start, unlike the discrete-time estimator, it is consistent. That is, in the limit of infinite data, it will converge to the true value of the TE. It was also shown to have much preferable bias and convergence properties. Most significantly, perhaps, this new estimator utilises the interspike intervals to efficiently represent the history embeddings $x_{<x_{i}}$ and $y_{<x_{i}}$ in estimating the relevant conditional spike rates in (Lizier, 2013). This then allows for the application of the highly effective nearest-neighbour family of information-theoretic estimators (Kozachenko and Leonenko, 1987; Kraskov et al., 2004), which bring estimation efficiency, bias correction, and together with their application to interspike intervals enable capture of long timescale dependencies.
 
 This is in contrast to the traditional discrete-time estimator which uses the presence or absence of spikes in time bins as its history embeddings (it sometimes also uses the number of spikes occurring in a bin). In order to avoid the dimensionality of the estimation problem becoming sufficiently large so as to render estimation infeasible, only a small number of bins can be used in these embeddings. Indeed, to the best of the authors’ knowledge, all previous applications of the discrete-time TE estimator to spiking data from cell cultures used only a single bin in their history embeddings. The bin widths used in those studies were 40 s (Nigam et al., 2016), 0.3 ms (Garofalo et al., 2009), and 1 ms (Shimono and Beggs, 2015; Kajiwara et al., 2020). Some studies chose to examine the TE values produced by multiple different bin widths, specifically, 0.6 ms and 100 ms (Matsuda et al., 2013), 1.6 ms and 3.5 ms (Timme et al., 2016), and 10 different widths ranging from 1 ms to 750 ms (Timme et al., 2014). Specifically those studies demonstrated the unfortunate high sensitivity of the discrete-time TE estimator to the bin width parameter. In the instances where narrow (<5 ms) bins were used, only a very narrow slice of history is being considered in the estimation of the history-conditional spike rate. This is problematic as it is known that correlations in spike trains exist over distances of (at least) hundreds of milliseconds (Aldridge and Gilman, 1991; Rudelt et al., 2021). Conversely, in the instances where broad (>5 ms) bins were used, relationships occurring on fine timescales will be completely missed. This is significant given that it is established that correlations at the millisecond and sub-millisecond scale play a role in neural function (Nemenman et al., 2008; Kayser et al., 2010; Sober et al., 2018; Garcia-Lazaro et al., 2013). In other words, previous applications of TE to electrophysiological data from cell cultures either captured some correlations occurring with fine temporal precision or they captured relationships occurring over larger intervals, but never both simultaneously. This can be contrasted with the interspike interval history representation used in this study. To take a concrete example, for the recording on day 24 of culture 1-3, the average interspike interval was 0.71 s. This implies that the target history embeddings (composed of four interspike intervals) on average extended over a period of 2.84 s and the source history embeddings (composed of two interspike intervals) on average extended over a period of 1.42 s. This is despite the fact that our history representations retain the precision of the raw data (40 s) and the ability to measure relationships on this scale where they are relevant (via the underlying nearest-neighbour estimators).
 
-The parameters used with this estimator are shown in Table 6. The values of kglobal and kperm were chosen because, in previous work (Shorten et al., 2021), similar values were found to facilitate stable performance of the estimator. The high values of NU and NU,surrogates were chosen so that histories during bursting periods could be adequately sampled. These two parameters refer to sample points placed randomly in the spike train, at which history embeddings are sampled. As the periods of bursting comprise a relatively small fraction of the total recording time, many samples need to be placed in order to achieve a good sample of histories potentially observed during these periods. The choice of embedding lengths is discussed in the section ‘Selection of embedding lengths’, and the choice of Nsurrogates is discussed in the section ‘Significance testing of TE values’.
+The parameters used with this estimator are shown in Table 6. The values of $k_{global}$ and $k_{perm}$ were chosen because, in previous work (Shorten et al., 2021), similar values were found to facilitate stable performance of the estimator. The high values of $N_{U}$ and $N_{U,surrogates}$ were chosen so that histories during bursting periods could be adequately sampled. These two parameters refer to sample points placed randomly in the spike train, at which history embeddings are sampled. As the periods of bursting comprise a relatively small fraction of the total recording time, many samples need to be placed in order to achieve a good sample of histories potentially observed during these periods. The choice of embedding lengths is discussed in the section ‘Selection of embedding lengths’, and the choice of $N_{surrogates}$ is discussed in the section ‘Significance testing of TE values’.
 
-Instead of selecting a single number of target spikes NX to include in the analysis, we chose to include all the spikes that occurred within the first hour of recording time. The reason for doing this was that the spike rates varied by orders of magnitude between the electrodes. This meant that fixing the number of target spikes would result in the source spikes being severely undersampled in cases where the target spike rate was much higher than the source spike rate. When using 1 hr of recording time, among the main cultures the smallest number of spikes per electrode was 481, the maximum was 69,627, and the median was 17,399.
+**Table 6.**
+ The parameter values used in the continuous-time transfer entropy (TE) estimator.A complete description of these parameters, along with analysis and discussion of their effects, can be found in Shorten et al., 2021.
 
-## Selection of embedding lengths
 
-The target embedding lengths were determined by adapting the technique (Erten et al., 2017; Novelli et al., 2019) extending (Garland et al., 2016) of maximising the bias-corrected active information storage (AIS) (Lizier et al., 2012) over different target embedding lengths for a given target. Our adaptations sought to select a consensus embedding parameter for all targets on all trials to avoid different bias properties due to different parameters across targets and trials, in a similar fashion to Hansen et al., 2021. As such, our approach determines a target embedding length lX which maximises the average bias-corrected AIS across all electrodes using one representative recording (selected as day 23 of culture 1-3). To estimate AIS within the continuous-time framework (Spinney and Lizier, 2018) for this purpose, we estimated the difference between the second KL divergence of Equation 10 of Shorten et al., 2021 and the mean firing rate of the target. These estimates contain inherent bias correction as per the TE estimator itself. Moreover, the mean of surrogate values was subtracted to further reduce the bias. The embedding length lX was continuously increased so long as each subsequent embedding produced a statistically significant (at the p<0.05 level) increase in the average AIS across the electrodes. The resulting mean AIS values (along with standard deviations) and p-values are shown in Table 7. We found that every increase in lX up to 4 produced a statistically significant increase in the mean AIS. The increase from 4 to 5 produced a non-significant decrease in the mean AIS and so lX was set to 4.
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NX</td>
+      <td>Number of spikes in the target spike train</td>
+      <td>Varied (see text)</td>
+    </tr>
+    <tr>
+      <td>lX</td>
+      <td>Number of interspike intervals in target history embeddings</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>lY</td>
+      <td>Number of interspike intervals in source history embeddings</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>kglobal</td>
+      <td>Number of nearest neighbours to find in the initial search</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>kperm</td>
+      <td>Number of nearest neighbours to consider during surrogate generation</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>NU</td>
+      <td>Number of random samples of histories at non-spiking points in time</td>
+      <td>50⁢NX</td>
+    </tr>
+    <tr>
+      <td>NU,surrogates</td>
+      <td>Number of random samples of histories at non-spiking points in time used for surrogate generation</td>
+      <td>10⁢NX</td>
+    </tr>
+    <tr>
+      <td>Nsurrogates</td>
+      <td>Number of surrogates to generate for each node pair</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
 
-With the target embedding length determined, we set about similarly determining a consensus source embedding length lY by estimating the TE between all directed electrode pairs on the same representative recording for different values of lY. Each estimate also had the mean of the surrogate population subtracted to reduce its bias (see section ‘Significance testing of TE values’).
+Instead of selecting a single number of target spikes $N_{X}$ to include in the analysis, we chose to include all the spikes that occurred within the first hour of recording time. The reason for doing this was that the spike rates varied by orders of magnitude between the electrodes. This meant that fixing the number of target spikes would result in the source spikes being severely undersampled in cases where the target spike rate was much higher than the source spike rate. When using 1 hr of recording time, among the main cultures the smallest number of spikes per electrode was 481, the maximum was 69,627, and the median was 17,399.
 
-The embedding length was continuously increased so long as each subsequent embedding produced a statistically significant (at the p<0.05 level) increase in the average TE across all electrode pairs. The resulting mean TE values (along with standard deviations) and p-values are shown in Table 8. We found that increasing lY from 1 to 2 produced a statistically significant increase in the mean TE. However, increasing lY from 2 to 3 produced a non-significant decrease in the mean TE. As such, we set lY to 2.
+### Selection of embedding lengths
 
-## Significance testing of TE values
+The target embedding lengths were determined by adapting the technique (Erten et al., 2017; Novelli et al., 2019) extending (Garland et al., 2016) of maximising the bias-corrected active information storage (AIS) (Lizier et al., 2012) over different target embedding lengths for a given target. Our adaptations sought to select a consensus embedding parameter for all targets on all trials to avoid different bias properties due to different parameters across targets and trials, in a similar fashion to Hansen et al., 2021. As such, our approach determines a target embedding length $l_{X}$ which maximises the average bias-corrected AIS across all electrodes using one representative recording (selected as day 23 of culture 1-3). To estimate AIS within the continuous-time framework (Spinney and Lizier, 2018) for this purpose, we estimated the difference between the second KL divergence of Equation 10 of Shorten et al., 2021 and the mean firing rate of the target. These estimates contain inherent bias correction as per the TE estimator itself. Moreover, the mean of surrogate values was subtracted to further reduce the bias. The embedding length $l_{X}$ was continuously increased so long as each subsequent embedding produced a statistically significant (at the $p<0.05$ level) increase in the average AIS across the electrodes. The resulting mean AIS values (along with standard deviations) and p-values are shown in Table 7. We found that every increase in $l_{X}$ up to 4 produced a statistically significant increase in the mean AIS. The increase from 4 to 5 produced a non-significant decrease in the mean AIS and so $l_{X}$ was set to 4.
 
-In constructing the directed functional networks displayed in Figure 2a, we tested whether the estimated TE between each source-target pair was statistically different from the distribution of TEs under the null hypothesis of conditional independence of the target from the source (i.e. TE consistent with zero). Significance testing for TE in this way is performed by constructing a population of surrogate time-series or history embeddings that conform to the null hypothesis of zero TE (Novelli et al., 2019; Wollstadt et al., 2019; Novelli and Lizier, 2021). We then estimate the TE on each of these surrogates to generate a null distribution of TE. Specifically, we generate the surrogates and compute their TEs according to the method associated with the continuous-time spiking TE estimator (Shorten et al., 2021) and using the parameters shown in Table 6. One small change was made to that surrogate generation method: instead of laying out the NU,surrogates sample points randomly uniformly, we placed each one at an existing target spike, with the addition of uniform noise on the interval [−240ms, 240ms]. This was to ensure that these points adequately sampled the incredibly dense burst regions.
+**Table 7.**
+ Summary statistics for the active information storage (AIS) values estimated at different target embedding lengths $l_{X}$.These were estimated across all electrodes of a representative recording (day 23 of culture 1-3). The p-values shown in the fourth column are associated with the null hypothesis that the mean AIS at the given $l_{X}$ is equal to the mean AIS at $l_{X}-1$.
 
-With the surrogate TE distribution constructed, the resulting p-value for our TE estimate can be computed by counting the proportion of these surrogate TEs that are greater than or equal to the original estimate. Here, we seek to compare significance against a threshold of α<0.01. We chose this lower threshold as false positives are generally considered more damaging than false negatives when applying network inference to neuroscientific data (Zalesky et al., 2016). We also applied a Bonferroni correction (Miller, 2012) to all the significance tests done on a given recording. Given that there are 59 electrodes in the recordings, 3422 tests were performed in each recording. This meant that, once the Bonferroni correction was included, the significance threshold dropped to p<2.9×10−6. Comparing against such a low significance threshold would require an infeasible number of surrogates for the many pairs within each recording, if computing the p-value by counting as above. Instead, we assume that the null TE distribution is Gaussian and compute the p-value for our TE estimate using the CDF of the Gaussian distribution fitted from 100 surrogates (e.g. as per Lizier et al., 2011). Specifically, the p-value reports the probability that a TE estimate on history embeddings conforming to the null hypothesis of zero TE being greater than or equal to our original estimated TE value. If this p-value is below the threshold, then the null hypothesis is rejected and we conclude that there is a statistically significant information flow between the electrodes.
 
-## Analysis of population bursts
+<table>
+  <thead>
+    <tr>
+      <th>lX</th>
+      <th>Mean AIS</th>
+      <th>SD</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>7.73</td>
+      <td>4.71</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>8.27</td>
+      <td>4.97</td>
+      <td>3.0×10–19</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>8.41</td>
+      <td>5.08</td>
+      <td>5.8×10–8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>8.44</td>
+      <td>5.11</td>
+      <td>2.7×10–4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>8.43</td>
+      <td>5.12</td>
+      <td>0.85</td>
+    </tr>
+  </tbody>
+</table>
+
+With the target embedding length determined, we set about similarly determining a consensus source embedding length $l_{Y}$ by estimating the TE between all directed electrode pairs on the same representative recording for different values of $l_{Y}$. Each estimate also had the mean of the surrogate population subtracted to reduce its bias (see section ‘Significance testing of TE values’).
+
+The embedding length was continuously increased so long as each subsequent embedding produced a statistically significant (at the $p<0.05$ level) increase in the average TE across all electrode pairs. The resulting mean TE values (along with standard deviations) and p-values are shown in Table 8. We found that increasing $l_{Y}$ from 1 to 2 produced a statistically significant increase in the mean TE. However, increasing $l_{Y}$ from 2 to 3 produced a non-significant decrease in the mean TE. As such, we set $l_{Y}$ to 2.
+
+**Table 8.**
+ Summary statistics for the transfer entropy (TE) values estimated at different source embedding lengths $l_{Y}$.These were estimated between all electrodes of a representative recording (day 23 of culture 1–-3). The p-values shown in the fourth column are associated with the null hypothesis that the mean TE at the given $l_{Y}$ is equal to the mean TE at $l_{Y}-1$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>lY</th>
+      <th>Mean TE</th>
+      <th>SD</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>0.031</td>
+      <td>0.043</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.058</td>
+      <td>0.056</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.057</td>
+      <td>0.069</td>
+      <td>0.84</td>
+    </tr>
+  </tbody>
+</table>
+
+### Significance testing of TE values
+
+In constructing the directed functional networks displayed in Figure 2a, we tested whether the estimated TE between each source-target pair was statistically different from the distribution of TEs under the null hypothesis of conditional independence of the target from the source (i.e. TE consistent with zero). Significance testing for TE in this way is performed by constructing a population of surrogate time-series or history embeddings that conform to the null hypothesis of zero TE (Novelli et al., 2019; Wollstadt et al., 2019; Novelli and Lizier, 2021). We then estimate the TE on each of these surrogates to generate a null distribution of TE. Specifically, we generate the surrogates and compute their TEs according to the method associated with the continuous-time spiking TE estimator (Shorten et al., 2021) and using the parameters shown in Table 6. One small change was made to that surrogate generation method: instead of laying out the $N_{U,surrogates}$ sample points randomly uniformly, we placed each one at an existing target spike, with the addition of uniform noise on the interval $[−240ms, 240ms]$. This was to ensure that these points adequately sampled the incredibly dense burst regions.
+
+With the surrogate TE distribution constructed, the resulting p-value for our TE estimate can be computed by counting the proportion of these surrogate TEs that are greater than or equal to the original estimate. Here, we seek to compare significance against a threshold of $\alpha<0.01$. We chose this lower threshold as false positives are generally considered more damaging than false negatives when applying network inference to neuroscientific data (Zalesky et al., 2016). We also applied a Bonferroni correction (Miller, 2012) to all the significance tests done on a given recording. Given that there are 59 electrodes in the recordings, 3422 tests were performed in each recording. This meant that, once the Bonferroni correction was included, the significance threshold dropped to $p<2.9\times10^{−6}$. Comparing against such a low significance threshold would require an infeasible number of surrogates for the many pairs within each recording, if computing the p-value by counting as above. Instead, we assume that the null TE distribution is Gaussian and compute the p-value for our TE estimate using the CDF of the Gaussian distribution fitted from 100 surrogates (e.g. as per Lizier et al., 2011). Specifically, the p-value reports the probability that a TE estimate on history embeddings conforming to the null hypothesis of zero TE being greater than or equal to our original estimated TE value. If this p-value is below the threshold, then the null hypothesis is rejected and we conclude that there is a statistically significant information flow between the electrodes.
+
+### Analysis of population bursts
 
 A common family of methods for extracting periods of bursting activity from spike-train recordings examines the length of adjacent interspike intervals. The period spanned by these intervals is designated a burst if some summary statistic of the intervals (e.g. their sum or maximum) is below a certain threshold (Kaneoke and Vitek, 1996; Wagenaar et al., 2005; Wagenaar et al., 2006b; Selinger et al., 2007; Bakkum et al., 2013). In order to detect single-electrode as well as population-wide bursts, we implement such an approach here.
 
 We first determine the start and end points of the bursts of each individual electrode. The locations of the population bursts were subsequently determined using the results of this per-electrode analysis.
 
-The method for determining the times during which an individual electrode was bursting proceeded as follows: the spikes were moved through sequentially. If the interval between a given spike and the second most recent historic spike for that electrode was less than α, then, if the electrode was not already in a burst, it was deemed to have a burst starting at the kth most recent historic spike. A burst was taken to continue until an interspike interval greater than a*α was encountered. If such an interval was encountered, then the end of the burst was designated as the timestamp of the earlier of the two spikes forming the interval.
+The method for determining the times during which an individual electrode was bursting proceeded as follows: the spikes were moved through sequentially. If the interval between a given spike and the second most recent historic spike for that electrode was less than $\alpha$, then, if the electrode was not already in a burst, it was deemed to have a burst starting at the kth most recent historic spike. A burst was taken to continue until an interspike interval greater than $a*\alpha$ was encountered. If such an interval was encountered, then the end of the burst was designated as the timestamp of the earlier of the two spikes forming the interval.
 
-The starts and ends of population bursts were similarly determined by moving through the time series in a sequential fashion. If the population was not already designated to be in a burst, but the number of electrodes currently bursting was greater than the threshold β, then a burst start position was set at the point this threshold was crossed. Conversely, if the electrode was already designated to be in a burst and the number of individual electrodes currently bursting dropped below the threshold γ (γ<β), then a burst stop position was set at the point this threshold was crossed.
+The starts and ends of population bursts were similarly determined by moving through the time series in a sequential fashion. If the population was not already designated to be in a burst, but the number of electrodes currently bursting was greater than the threshold $\beta$, then a burst start position was set at the point this threshold was crossed. Conversely, if the electrode was already designated to be in a burst and the number of individual electrodes currently bursting dropped below the threshold $\gamma$ ($\gamma<\beta$), then a burst stop position was set at the point this threshold was crossed.
 
-In this article, we always made use of the parameters k=2,α=12⁢λ¯,a=3,β=15 and γ=10, where λ¯ is the average spike rate. These parameters were chosen by trial-and-error combined with visual inspection of the resulting inferred burst positions. The results of this scheme showed low sensitivity to the choice of these parameters.
+In this article, we always made use of the parameters $k=2,\alpha=\frac{1}{2⁢\lambda¯},a=3,\beta=15$ and $\gamma=10$, where $\lambda¯$ is the average spike rate. These parameters were chosen by trial-and-error combined with visual inspection of the resulting inferred burst positions. The results of this scheme showed low sensitivity to the choice of these parameters.
 
-For the simulated network dynamics, we used the parameters k=1,α=12⁢λ¯,a=1.5,β=2 and γ=1. These parameters were found to better suit the stereotyped dynamics of the simulated networks.
+For the simulated network dynamics, we used the parameters $k=1,\alpha=\frac{1}{2⁢\lambda¯},a=1.5,\beta=2$ and $\gamma=1$. These parameters were found to better suit the stereotyped dynamics of the simulated networks.
 
-## Estimation of burst-local TE
+### Estimation of burst-local TE
 
 The information dynamics framework provides us with the unique ability to analyse information processing locally in time (Lizier et al., 2008; Lizier, 2013; Lizier, 2014). We make use of that ability here to allow us to specifically examine the information flows during the important period of population bursts. The TE estimator which we are employing here (Shorten et al., 2021) sums contributions from each spike in the target spike train. It then divides this total by the time length of the target spike train that is being examined. In order to estimate the burst-local TE, we simply sum the contributions from the target spikes where those spikes occurred during a population burst. We then normalise by the number of such spikes, providing us with a burst-local TE estimate in units of nats per spike, instead of nats per second. Note that the burst-local TE is different to the approach of Stetter et al., 2012, who extracted the bursting activity prior to any analysis, rendering a TE conditioned on bursting occurring. Specifically, in contrast to the burst-local TE, in their work the non-spiking activity is ignored for the purposes of estimating the log densities.
 
-## Code availability
+### Code availability
 
 Scripts for performing the analysis in this article can be found at http://bitbucket.org/dpshorten/cell_cultures (Shorten, 2022; copy archived at swh:1:rev:8ee5e519da5cb90590865e9a692b96ad7e68a69e).

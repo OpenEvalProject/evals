@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Emerging evidence suggests that hierarchical status provides vulnerability to develop stress-induced depression. Energy metabolic changes in the nucleus accumbens (NAc) were recently related to hierarchical status and vulnerability to develop depression-like behavior. Acetyl-L-carnitine (LAC), a mitochondria-boosting supplement, has shown promising antidepressant-like effects opening therapeutic opportunities for restoring energy balance in depressed patients. We investigated the metabolic impact in the NAc of antidepressant LAC treatment in chronically-stressed mice using 1 H-magnetic resonance spectroscopy ( 1 H-MRS). High rank, but not low rank, mice, as assessed with the tube test, showed behavioral vulnerability to stress, supporting a higher susceptibility of high social rank mice to develop depressive-like behaviors. High rank mice also showed reduced levels of several energy-related metabolites in the NAc that were counteracted by LAC treatment. Therefore, we reveal a metabolic signature in the NAc for antidepressant-like effects of LAC in vulnerable mice characterized by restoration of stress-induced neuroenergetics alterations and lipid function.
+Emerging evidence suggests that hierarchical status provides vulnerability to develop stress-induced depression. Energy metabolic changes in the nucleus accumbens (NAc) were recently related to hierarchical status and vulnerability to develop depression-like behavior. Acetyl-L-carnitine (LAC), a mitochondria-boosting supplement, has shown promising antidepressant-like effects opening therapeutic opportunities for restoring energy balance in depressed patients. We investigated the metabolic impact in the NAc of antidepressant LAC treatment in chronically-stressed mice using 1H-magnetic resonance spectroscopy (1H-MRS). High rank, but not low rank, mice, as assessed with the tube test, showed behavioral vulnerability to stress, supporting a higher susceptibility of high social rank mice to develop depressive-like behaviors. High rank mice also showed reduced levels of several energy-related metabolites in the NAc that were counteracted by LAC treatment. Therefore, we reveal a metabolic signature in the NAc for antidepressant-like effects of LAC in vulnerable mice characterized by restoration of stress-induced neuroenergetics alterations and lipid function.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ In this study, we investigated the ability of LAC supplementation to protect vul
 
 ## Results
 
-## High rank mice are vulnerable to chronic restraint stress
+### High rank mice are vulnerable to chronic restraint stress
 
 First, we confirmed our initial observations (Larrieu et al., 2017) regarding the behavioral phenotype of high and low rank mice (as assessed by testing the four mice from the same home cage in the social confrontation tube test; SCTT), under basal conditions (i.e., before any stress was applied). Specifically, we report here that high (ranks 1 and 2) and low (ranks 3 and 4) rank mice (Figure 1B and C; time in the tube 1–2 vs 1–4, p<0.001), displayed different profile for anxiety-like behaviors. It was reflected by a higher time spent in the open arms of an elevated plus maze (EPM) (Figure 1D; p<0.05) as well as an increased latency to enter the center of an open field (OF) (Figure 1E, left; p<0.05) in high rank compared to low rank mice. However, the two groups did not show differences in the percent time spent in the center of the OF (Figure 1E, center), indicating that their difference in anxiety-like behaviors depends on the specific threat encountered. Importantly, no difference in locomotor activity was observed, as the distance travelled by both groups in the OF was similar (Figure 1E, right; n.s.).
 
@@ -47,23 +47,39 @@ First, we confirmed our initial observations (Larrieu et al., 2017) regarding th
 
 Strikingly, we revealed that the susceptibility to CSDS observed in high rank mice in our previous study (Larrieu et al., 2017) can be generalized to a non-social, chronic restraint stress (CRS) protocol. Indeed, high rank individuals were the ones that, after CRS, showed vulnerability to develop social avoidance towards an unfamiliar mouse in a social interaction test (SI) (Figure 1F). In contrast, low rank mice seemed not being affected by stress exposure (social avoidance score: interaction, F1,21=7.75, p<0.05; time in interaction zone: interaction, F1,21=12.80, p<0.005).
 
-## LAC treatment partially abolishes stress-induced behavioral vulnerability in high rank mice
+### LAC treatment partially abolishes stress-induced behavioral vulnerability in high rank mice
 
 Given the emerging evidence indicating a potential therapeutic efficiency of LAC, the acetylated form of carnitine, in the context of depression (see Introduction), we tested whether LAC treatment could counteract the induction of depressive-like behaviors by CRS in vulnerable (i.e., high rank) mice. In this experiment, mice were exposed to the CRS protocol and received concomitant administration of LAC during the last 7 days of the stress period. Animals exposed to CRS displayed a significant decrease in cumulative body weight gain, regardless of their social rank, that was not counteracted by LAC supplementation (Figure 2B; in high rank: Stress effect F2,10 = 45.0, p<0.0001 and Figure 2—figure supplement 1A; in low rank: Stress effect F2,10 = 20.4, p<0.001). Importantly, whereas stress led to an increase in liquid consumption (+15 ± 12%) in the stressed groups (Figure 2C and Figure 2—figure supplement 1B), there was no difference in liquid consumption between the CRS and CRS + LAC groups (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design of the restraint stress protocol and treatment procedure. (B) High rank mice show a reduction of cumulative weight gain during the restraint stress protocol (Interaction: F20,40=11.5, p<0.0001; stress effect: F2,10 = 45.0, p<0.0001, repeated measures two-way ANOVA; ***p<0.001, ****p<0.0001, Bonferroni’s test, n = 6 per group). The start of LAC treatment during CRS protocol is indicated with an arrow (day 14). (C) Daily water intake during the LAC treatment period (given during the last week of the CRS protocol) normalized by total body weight of the four mice per cage (Group effect: F2,4=17.0, *p<0.05; Interaction: F14,28=0.90, p>0.05; time effect: F7,14=1.24, p>0.05, repeated measures two-way ANOVA; n = 3 cages per group). Thus, water intake data represent the cage average value. Liquid consumption during the first days of the CRS protocol is shown in Figure 2—figure supplement 1B (D) Social avoidance scores measured after chronic restraint stress protocol in high rank mice (F2,15=12.08, p<0.01, one-way ANOVA; **p<0.01, Bonferroni’s test, n = 6 per group). (E) Behavioral despair measured with a forced swim test between high rank mice (F2,15=5.31, p<0.05, one-way ANOVA; *p<0.05, Bonferroni’s test, n = 6 per group). (F) Depressive-like behavior measured as a composite z-score component of social avoidance and immobility time between high rank mice (F2,15=10.31, p<0.005, one-way ANOVA; *p<0.05**p<0.005, Bonferroni’s test, n = 6 per group). (G) Locomotor activity measured during the SI test (No target present: F2,15=2.94, p>0.05, one-way ANOVA; *p<0.05, Bonferroni’s test/Target present: F2,15=2.79, p>0.05, one-way ANOVA;/Average: F2,15=3.67, p<0.05, one-way ANOVA; *p<0.05, Bonferroni’s test, n = 6 per group). Effect of LAC on low rank is shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Low rank mice show a reduction of cumulative weight gain during the restraint stress protocol (Interaction: F40,20=8.17, p<0.0001; stress effect: F2,10 = 20.4, p<0.001, repeated measures two-way ANOVA; n = 6 per group). (B) Daily water intake during the first part of the CRS protocol (day 2–13) normalized by mice total body weight per cage (Group effect: F1,2=1367, p<0.001, repeated measures two-way ANOVA; n = 6 per group). This water intake represents an average value over the cage, including both high rank and low rank mice. (C–D) Depressive-like behavior of subordinate mice is not altered by LAC administration. ANOVA for the SI, FST and composite behavioral z-score for the three groups of low rank mice indicated no significant differences (SI: F2,13=0.55, n.s.; FST: F2,15=1.62, n.s.; Composite behavior: F2,15=0.16, n.s. (C) Social avoidance scores measured after chronic restraint stress protocol in low rank animals (F2,15=0.55, p>0.05, one-way ANOVA; n = 6 per group). (D) Behavioral despair measured with a forced swim test between low rank mice (F2,15=1.62, p>0.05, one-way ANOVA; n = 6 per group). (E) Depressive-like behavior measured as a composite z-score component of social avoidance and immobility time between low rank mice (F2,15=0.16, p>0.05, one-way ANOVA; n = 6 per group).
+
 As we showed in our previous and current studies that CSDS and CRS induce social avoidance only in high rank mice, we investigated whether LAC supplementation could attenuate the effects of chronic stress on emotional behavior in this susceptible (i.e., high rank) group. We found that LAC treatment did not prevent the increase in social avoidance induced CRS in a group of 6 high rank mice (Figure 2D; n.s.). Since LAC has been shown to be a mitochondria-boosting supplement, we tested the possibility that LAC would be more efficient in a high energy-demanding test such as the FST. Indeed, LAC treatment was effective to abolish CRS-induced increase in passive coping behaviors in high rank mice in the FST (Figure 2E). Specifically, a significant increase in the immobility time observed in high rank mice following CRS exposure (Figure 2E; F2,15=5.31, p<0.05), was prevented by LAC supplementation (p<0.05). In order to obtain an integrated estimation of how stress and LAC treatments affect emotional behavior more globally, we computed an overall behavioral composite score to integrate deviation from normality considering high rank mice variance in both behavioral tests. Specifically, the use of this composite score allows considering variation from the mean in individuals’ behavior across two different behavioral tests, providing a more robust measurement of individuals’ behavior in tests that are typically used to index mice depressive-like behaviors. ANOVA of these data indicated a significant effect of treatments (Figure 2F; F2,15=10.31, p<0.005); specifically, CRS led to increased depressive-like behaviors (p<0.005) that was restored by LAC (p<0.05). Altogether, our findings support the view that pharmacological enhancement of mitochondrial function by LAC supplementation normalizes behavioral changes in stressed-high rank mice under unescapable adversity.
 
-## 1H-MRS in NAc reveals stress-responsive metabolites in high rank mice counteracted by LAC treatment
+### 1H-MRS in NAc reveals stress-responsive metabolites in high rank mice counteracted by LAC treatment
 
 Using in vivo 1H-MRS, we aimed at revealing the NAc neurochemical and metabolite profile in high rank mice following CRS and LAC supplementation. Our 1H-MRS acquisitions led to a spectral signal-to-noise ratio (SNR) of 17.5 ± 0.3 with a linewidth of 16 ± 1 Hz after shimming with FAST(EST)MAP. The acquired NAc spectra allowed us to quantify up to 20 metabolites with LCModel (Figure 3). First, we applied an unbiased multivariate factor analysis (FA) that revealed three main factors that accounted for 31%, 12% and 9% of total variance (Figure 4). Individual metabolites with loadings above 0.4 in Factor one included taurine (Tau), glutamate (Glu), phosphocreatine (PCr), N-acetylaspartate (NAA), γ-aminobutyric acid (GABA), creatine (Cr), myo-inositol (Ins), aspartate (Asp), phosphocholine (PCho), glucose (Glc), glutathione (GSH) and ascorbate (Asc) (Figure 5). Metabolites with loading above 0.4 for the two other components were PCho, glycerophosphorylcholine (GPC), and Asc for Factor two, and glutamine (Gln) and lactate (Lac) for Factor three (Figure 6).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig3-v2.jpg)
 
-**Figure 3.:** 1H-MRS at 14T.Spectrum fitting and neuroanatomical image of the NAc with respective voxel position in mouse brain. Spectrum is decomposed into the total fit, the individual metabolite components of the fit, the residual and the baseline, as a result of LCModel analysis. The fitted neurochemical profile included following metabolites: taurine (Tau), creatine (Cr), phosphocreatine (PCr), glutamate (Glu), γ-aminobutyric acid (GABA), aspartate (Asp), glutamine (Gln), N-acetyl-aspartate (NAA), myo-inositol (Ins), glucose (Glc), ascorbate (Asc), glutathione (GSH), phosphorylcholine (PCho), glycerophosphorylcholine (GPC), lactate (Lac), N-acetylaspartyl-glutamate (NAAG), phosphoethanolamine (PE), alanine (Ala), glycine (Gly), as well as macromolecules (Mac).
+**Figure 3.:** Spectrum fitting and neuroanatomical image of the NAc with respective voxel position in mouse brain. Spectrum is decomposed into the total fit, the individual metabolite components of the fit, the residual and the baseline, as a result of LCModel analysis. The fitted neurochemical profile included following metabolites: taurine (Tau), creatine (Cr), phosphocreatine (PCr), glutamate (Glu), γ-aminobutyric acid (GABA), aspartate (Asp), glutamine (Gln), N-acetyl-aspartate (NAA), myo-inositol (Ins), glucose (Glc), ascorbate (Asc), glutathione (GSH), phosphorylcholine (PCho), glycerophosphorylcholine (GPC), lactate (Lac), N-acetylaspartyl-glutamate (NAAG), phosphoethanolamine (PE), alanine (Ala), glycine (Gly), as well as macromolecules (Mac).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig4-v2.jpg)
 
 **Figure 4.:** (A) Metabolites in the nucleus accumbens that load into Factor one, Factor two and Factor three of the factor analysis. The heat map represents the individual loadings of each metabolite into each factor. Factor one represents a linear combination that summarizes neurochemical changes including metabolites with strong contribution (above 0.5: Tau, Cr, PCr, Glc, Glu, GABA, Asp, NAA and Ins.) and moderate (0.4–0.5: GSH and Asc). (B) CRS and LAC treatment in CRS-treated high rank mice impact on Factor one metabolites (F2,13=7.04, p<0.01, one-way ANOVA; *p<0.05, **p<0.01, Fisher LSD test n = 5–6 per group) (C) Factor one correlates with the composite emotional (i.e., depressive-like) behavior in high rank animals (R = −0.58; p<0.05).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig5-v2.jpg)
+
+**Figure 5.:** Metabolites from Factor one with strong loading (above 0.5) include Tau, Cr, PCr, Glc, Glu, GABA, Asp, NAA and Ins. The ratio of PCr/Cr is shown as well. CRS induces a drop in Tau, Glu, PCr, Asp and NAA. Only CRS-induced reductions in Tau and PCr are restored by LAC treatment. The neurochemical profile obtained for low rank mice is reported in Figure 5—figure supplement 1. One-way ANOVA followed by LSD Fisher post-hoc test, *p<0.05, n = 5–6 per group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Factor analysis of the metabolic profile of nucleus accumbens of low rank mice after CRS. Factor one represents a linear combination that summarizes neurochemical changes including metabolites with strong (above 0.5: Tau, Cr, PCr, Glc, Glu, GABA, Asp, NAA and Ins.) and moderate (0.4–0.5: GSH and Asc) contribution in low rank mice (F2,15=0.54, p>0.05, one-way ANOVA; Fisher LSD test n = 6 per group). (B) Metabolites from Factor one with strong loading (above 0.5) Tau, Cr, PCr, Glc, Glu, GABA, Asp, NAA and Ins. The ratio of PCr/Cr is shown as well. One-way ANOVA followed by LSD Fisher post-hoc test, n = 5–6 per group. (C) Metabolites with moderate loadings (0.4–0.5) from Factor one and remaining metabolites from Factors two and three included Gln, GSH, Asc, PCho, Lac and GPC. The ratio of GPC/PCho was also reduced upon treatment. One-way ANOVA followed by LSD Fisher post-hoc test, *p<0.05, n = 5–6 per group. Overall, metabolite levels in low rank mice did not show substantial changes, except for Glc that was increased by CRS (p<0.05) and normalized by LAC treatment (p<0.05).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/50631/elife-50631-fig6-v2.jpg)
 
@@ -95,54 +111,127 @@ Altogether, our findings highlight an accumbal metabolic signature for vulnerabi
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: C57BL/6J</td>
+      <td>Charles River Laboratories</td>
+      <td>Crl:C57BL6/J</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetyl-L-carnitine</td>
+      <td>Sigma Aldrich</td>
+      <td>CAS Number:5080-50-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab v.9.6</td>
+      <td>The MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Observer 11.0</td>
+      <td>Noldus, Information Technology</td>
+      <td>RRID:SCR_004074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision 11.0 XT</td>
+      <td>Noldus, Information Technology</td>
+      <td>RRID:SCR_000441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>GrahpPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LCModel</td>
+      <td>LCModel</td>
+      <td>RRID:SCR_014455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS version 21</td>
+      <td>IBM</td>
+      <td>https://www.ibm.com/analytics/fr/fr/technology/spss/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Six-week-old male C57BL/6J mice were purchased from Charles River Laboratories and, upon arrival, they were housed in groups of four per cage and allowed to acclimate to the animal facility for one week. Mice were weighed at arrival and monitored throughout the experiments. Cages consisted in standard Plexiglass filter-top cages in a temperature (23 ± 1°C) and humidity (40%) controlled environment with normal 12 hr day-light cycle. Animals had ad libitum access to water and standard rodent chow diet. All experiments were performed with the approval of the Cantonal Veterinary Authorities (Vaud, Switzerland) and carried out in accordance with the European Communities Council Directive of 24 November 1986 (86/609EEC).
 
-## Experimental design
+### Experimental design
 
 One week after arrival, mice were tested for their anxiety and locomotor behaviors in an EPM and OF (Figure 1A). After four weeks of cohabitation, a SCTT was used to reveal individual ranks within the home cage tetrad (Larrieu et al., 2017). Subsequently, one group of the animals was subjected to a CRS protocol for 21 days, while the remaining non-stressed animals were submitted to daily handling and body weighting. The impact of chronic stress on behavior was tested in the SI test (CRS day 20). The experiment performed to investigate the ability of LAC treatment on behavioral and metabolic outcomes of CRS, included an additional group treated with LAC from CRS day 15. In addition to the SI test, animals were tested in FST (CRS day 21). Subsequently, 1H-MRS was performed at the end of the protocol, 24 hr after the FST (day 22).
 
-## Elevated plus maze test
+### Elevated plus maze test
 
 Animals were placed into a maze made from black PVC with a white floor. The apparatus consisted of an elevated central platform (5 × 5 cm2) at 65 cm from the ground, from which four opposing arms extended. Two of the arms were open (30 × 5 cm2) and lit with 14–15 lx while the two others were closed (30 × 5 × 14 cm3) with reduced light intensity 3–4 lx. Animals were introduced in the maze facing the wall at the end of closed arms and left freely moving for 5 min. The mice were video-recorded from above the arena and tracking analyses performed with the Ethovision 11.0 XT software (Noldus, Information Technology) to determine the time spent in open and closed arms.
 
-## Open field test
+### Open field test
 
 The OF consisted of a rectangular arena (50 × 50 × 40 cm3) illuminated with dimmed light (30 lx). Mice were introduced near the wall of the arena and allowed to explore for 10 min. Analyses were performed using a tracking software (Ethovision 11.0 XT, Noldus, Information Technology) by drawing a virtual zone (15 × 15 cm2) in the center of the arena defined as the anxiogenic area. Several parameters were analyzed, including the total distance travelled and the time spent in the different zones.
 
-## Social confrontation tube test
+### Social confrontation tube test
 
 The SCTT test was performed as previously described (Larrieu et al., 2017; Wang et al., 2011). Mice were housed together in groups of four during 5 weeks prior to the test to allow enough time for the social hierarchy to be stabilized in the home cage. First, each mouse was independently habituated to cross over a plastic tube (Plexiglas of 3 × 30 cm2, diameter x length) on several trials in two consecutive days. Then, evaluation of social rank took place during eight consecutive days. Specifically, two mice were smoothly guided by the tail to get into each side of the tube for a pairwise confrontation. Once the two mice reached the middle of the tube, the tail was released, and the time spent was recorded until one the mice (the most subordinate) retracted out from the tube. The four mice from the same cage were opposed using a round-robin design that led to six face-to-face trials per day. The tube was cleaned with 70% ethanol and dried after each session. The designation of a winner after each of the six possible pairs of confrontations per cage allowed to rank each mouse by its winning times, varying between 0–3. This value was then divided by three and multiplied by 100 to directly obtain the winning percentage. This percentage was then used to determine the index of dominance ranging from 1 (highest winning percentage, that is highest rank) to 4 (lowest winning percentage, that is lowest rank) for each cage. In order to reflect the specificity of the observed dominant and subordinate behavior to the SCTT (Varholick et al., 2018), animals with highest index of dominance (ranks 1 and 2) are referred to as ‘high rank’ herein, whilst animals with lowest index of dominance (ranks 3 and 4) are referred to as ‘low rank’.
 
-## Chronic restraint stress
+### Chronic restraint stress
 
 This protocol involved 21 days of chronic retrain stress (CRS) and was adapted from Lau et al. (2017); Nasca et al. (2015). Animals were introduced head first into a 50 ml Falcon tube (11.5 cm in length; diameter of 3 cm) in which the cap was removed. Each restrain tube contained 3 0.4 cm air holes to allow the air to reach the nose of the mouse. Paper was added at the other extremity to adjust the physical constraint to the mouse body size and allowing the tail to reach the open space. The mice were subjected to this restrained environment for two consecutive hours every day for a period of 21 days. Control mice were left undisturbed in their home cage except for handling and body weighting each day for 21 days.
 
-## Social avoidance test (social interaction test)
+### Social avoidance test (social interaction test)
 
 Each animal was introduced into a 40 × 40 × 30 cm white arena containing an unfamiliar old breeder CD1 male mouse (social target) confined in a cylindrical drum with wire mesh placed near one of the arena walls. The test consists in two phases. First, the experimental mouse was allowed to freely explore for 2.5 min the arena when the social target was absent (the arena contained only the drum). Then, the target mouse was introduced in the drum for a 2.5 min interaction session. A social avoidance score was calculated as previously described in Larrieu et al. (2017). The mice were video-recorded from above the arena and tracking analyses performed with the Ethovision 11.0 XT software (Noldus, Information Technology).
 
-## Forced swim test
+### Forced swim test
 
 Each animal was introduced into a cylinder (15 cm diameter, 28 cm in height) filled with 5 L 25°C tap water. The level of water was sufficiently high to avoid any contact of the mouse with the bottom of the enclosure and low enough to avoid any possible escape. Animal’s motion was tracked with a camera positioned on top of the setup and recorded for 6 min. Immobility time was quantified using the Observer XT software (Noldus, Information Technology).
 
-## Composite behavior
+### Composite behavior
 
 Using MATLAB (Version 9.6, The MathsWorks Inc, Natick, MA), a behavioral composite z-score was calculated by averaging the z-score of the social avoidance score in the SI test and the z-score of the % time spent immobile in the FST. Both z-scores were calculated with the MATLAB function normalize, using the option argument zscore, which divides the difference between each sample and the sample average by the sample’s standard deviation.
 
-## Acetyl-L-carnitine treatment
+### Acetyl-L-carnitine treatment
 
 LAC was purchased from (Sigma Aldrich). Mice received LAC in the drinking water at a concentration of 0.3%. The treatment started on day 15 of the 21 day-CRS protocol and continued till the end of the experiment. Control groups received regular tap water available ad libitum. In order to maximize the potential therapeutic effects of LAC on the stress-induced depressive-like behavior of mice (Nasca et al., 2013), a 7 day treatment was preferred over a previously reported 3 day protocol (Lau et al., 2017; Nasca et al., 2017). One bottle per cage of 4 mice was used during LAC treatment. Liquid consumption was monitored every day and analyzed following normalization according to the body weight of the four animals in the cage.
 
-## 1H-magnetic resonance spectroscopy
+### 1H-magnetic resonance spectroscopy
 
 In vivo spectroscopy experiments targeting the NAc were performed in anesthetized mice as previously described (Larrieu et al., 2017). Animals were monitored for body temperature (rectal probe and circulating water bath) and respiration (small animal monitor system: SA Instruments Inc, New York, NY, USA) under 1.3–1.5% isoflurane anesthesia mixed with 50% air and 50% O2. Physiological parameters were maintained at 36.5 ± 0.4°C and breathing rate ranged between 70–100 rpm. Animals were scanned in a horizontal 14.1T/26 cm Varian magnet (Agilent Inc, USA) with a homemade 1H surface coil. A set of Fast Spin Echo (FSE) images of the brain was acquired for localizing the Volume of Interest (VOI) of the 1H-MRS scan. Acquisition was done using the spin echo full intensity acquired localized (SPECIAL) sequence (Mlynárik et al., 2006) in the VOI of 1.4 × 4.1 × 1.2 mm3 (TE/TR = 2.8/4000 ms) including the bilateral NAc after field homogeneity adjustment with FAST(EST)MAP (Gruetter and Tkác, 2000). The obtained spectra (20 × 16 averages) were then frequency corrected, summed and quantified using LCModel (Provencher, 2001). Full width at half maximum (FWHM) was used as the output of the LCModel. Concentrations were referenced to the water signal and fitting quality assessed using Cramer-Rao lower bounds errors (CRLB) (Cavassila et al., 2001). A CRLB value below 20% was used as cutoff for high concentration metabolites, while low concentration metabolites were not considered reliable above a CRLB of 50%.
 
-## Statistics
+### Statistics
 
 All values are represented as mean ± SEM. Results from EPM and OF were analyzed using unpaired Student t-tests. Results from the SCTT were analyzed with one-way analysis of variance (ANOVA), with social rank as fixed factor, followed by a Bonferroni corrected post hoc test when appropriate. Behaviors in the SI test and FST were analyzed with a two-way ANOVA, using stress and social rank as fixed factors. In the LAC experiment, behavioral and spectroscopy results were analyzed using one-way ANOVA. Cumulative weight gain was analyzed using a repeated measure two-way ANOVA with time and group as fixed factors. Analyses were followed by Bonferroni post hoc correction when appropriate. Correlations analyses were performed using a Pearson’s correlation coefficient. All statistical tests were performed with GraphPad Prism (GraphPad software, San Diego, CA, USA) using a critical probability of p<0.05. Statistical analyses performed for each experiment are summarized in each figure legend indicating the statistical test used, sample size (‘n’), as well as degree of freedom, F and P values.
 
-## Factor analysis
+### Factor analysis
 
 Factor analysis was used as previously described (Larrieu et al., 2017) using IBM SPSS Statistics version 21 to allow statistical tests using the metabolite’s latent variables as dependent variables in NAc. A linear combination of the dependent variables is generated in order to reduce the noise caused by the high number of variables. Missing values were avoided by using mean value imputation before the computation of correlation matrices, to ensure positive definiteness. A total of three factors was chosen for the NAc after analyzing the scree plots, using principal axis factoring. This resulted in a total of variance explained of 52% without rotation and omitting coefficients below 0.4.

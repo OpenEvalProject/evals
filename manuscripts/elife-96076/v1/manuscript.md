@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00myw9y39 Achucarro Basque Center for Neuroscience Leioa Spain
-2. https://ror.org/000xsnr85 Department of Neuroscience, University of the Basque Country (UPV/EHU) Leioa Spain
-3. https://ror.org/00zca7903 CIBERNED Madrid Spain
-4. https://ror.org/035xkbk20 Aix Marseille University, CNRS, IBDM, Campus de Luminy Marseille France
-5. https://ror.org/004g03602 CIC biomaGUNE, Basque Research and Technology Alliance (BRTA) San Sebastian Spain
-6. https://ror.org/01cc3fy72 Ikerbasque, Basque Foundation for Science Bilbao Spain
-7. https://ror.org/057qpr032 University of Bordeaux, CNRS, IMN, UMR 5293 Bordeaux France
+1. Achucarro Basque Center for Neuroscience Leioa Spain ([ROR:00myw9y39](https://ror.org/00myw9y39))
+2. Department of Neuroscience, University of the Basque Country (UPV/EHU) Leioa Spain ([ROR:000xsnr85](https://ror.org/000xsnr85))
+3. CIBERNED Madrid Spain ([ROR:00zca7903](https://ror.org/00zca7903))
+4. Aix Marseille University, CNRS, IBDM, Campus de Luminy Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+5. CIC biomaGUNE, Basque Research and Technology Alliance (BRTA) San Sebastian Spain ([ROR:004g03602](https://ror.org/004g03602))
+6. Ikerbasque, Basque Foundation for Science Bilbao Spain ([ROR:01cc3fy72](https://ror.org/01cc3fy72))
+7. University of Bordeaux, CNRS, IMN, UMR 5293 Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
 8. Basque Biomodel Platform for Human Research (BBioH) Leioa Spain
 
 † Corresponding author
@@ -42,7 +42,7 @@ We have previously demonstrated that high extracellular adenosine levels, a hall
 
 ## Results
 
-## Thbs4 is expressed in the neurogenic niche of the SVZ
+### Thbs4 is expressed in the neurogenic niche of the SVZ
 
 As suggested by others (Benner et al., 2013; Girard et al., 2014; Pous et al., 2020), Thbs4 is highly expressed in astrocytes of the SVZ and RMS and might play a role in ischemia-induced neurogenesis. To confirm these observations, we labeled the mouse SVZ by immunofluorescence for Thbs4. Thbs4 was mainly expressed in the SVZ, RMS, and OB but also in the cerebellum and ventral tegmental area (Figure 1A). In the SVZ, the staining was associated with cells with different morphologies (Figure 1B), ranging from cells with small primary apical processes in contact with the ventricle, to rounded NSC-like cells in the dorsolateral SVZ horn. After quantification by direct count of Thbs4-positive cells, Thbs4-positive astrocytes represented 21.4% of the total SVZ cells (Figure 1C), with more than 60% of them displaying a radial glia-like type-B morphology (Bond et al., 2015; Doetsch et al., 1999; Figure 1D). This is in accordance with other studies reporting Thbs4 expression in B-cells, either by immunohistochemistry (Beckervordersandforth et al., 2010; Benner et al., 2013) or single-cell RNA sequencing (Basak et al., 2018; Cebrian-Silla et al., 2021; Llorens-Bobadilla et al., 2015).
 
@@ -52,31 +52,79 @@ As suggested by others (Benner et al., 2013; Girard et al., 2014; Pous et al., 2
 
 To validate the immunohistochemistry protocol for Thbs4, we labeled the SVZ cells with green fluorescent protein (GFP) under the control of the Thbs4 promoter (pThbs4-eGFP) by postnatal (P1) electroporation (Figure 1E). Twenty-four hours after electroporation, almost 20% of total cells in the dorsal SVZ expressed GFP (Figure 1F), with a greater expression in the rostral SVZ (Figure 1G), confirming that Thbs4-positive cells were mainly localized in the neurogenic niche of the SVZ. This also suggests that Thbs4 is expressed in NSCs at early postnatal stages, generating astrocytes during development.
 
-## Thbs4 expression in the SVZ increases after brain ischemia
+### Thbs4 expression in the SVZ increases after brain ischemia
 
 To investigate whether brain ischemia could activate astrogliogenesis in the SVZ, we analyzed cell proliferation and Thbs4 expression in the SVZ after MCAO (Figure 2). Sixty minutes of MCAO (Figure 2—figure supplement 1A) caused neuronal damage in the cortex and striatum, as observed by cresyl violet staining and NeuN immunofluorescence (Figure 2—figure supplement 1B and C). The survival rate at 28 days post-lesion was around 50% (Figure 2—figure supplement 1D). Moreover, motor deficits and animal weight of ischemic mice were monitored every day after MCAO for 30 days. Motor deficits improved over time, while body weight dropped sharply the first 3 days after MCAO and was partially restored at 30 dpi (Figure 2—figure supplement 1E and F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative images of Thbs4 (green), Nestin (red), and doublecortin (DCX) (magenta) in the SVZ under physiological conditions (left) and 15 days post-injury (dpi) (right). (B, C) The number of actively proliferating neural stem cells (NSCs) and neuroblasts decreases at 7 and 15 dpi in the SVZ, as shown by reduced Nestin (B) and DCX (C) levels, respectively. (D) Thbs4 expression increases in the SVZ over time following ischemic injury. (E) Representative western blot images of Nestin and Thbs4 in sham and 15 dpi SVZ. (F, G) Quantification of mean gray value (MGV) from (E), normalized to GAPDH, shows an increase in Thbs4 (F) and a decrease in Nestin (G) in the 15 dpi SVZ. Scale bar = 100 µm in (A). n=6 (B–D) and 3 (E–G) per condition. Bars represent mean ± SEM. *p<0.05 and **p<0.01; two-tailed Student’s t-test (sham vs. 15ddMCAO) and Tukey post hoc test (after one-way ANOVA was significant at p<0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scheme of the procedure: 10 mm silicon-coated filament was inserted through an external artery and re-directed to the internal one. Ischemia was induced after 60 minutes of occlusion. After that, the filament was removed, and animals were observed every day before euthanasia. (B) Volume of infarction was observed by cresyl violet staining. (C) Neuronal death was observed by NeuN immunofluorescence. (D) Around 50% of ischemic mice survived at 28 dpi. (E) Ischemic animals ameliorated neurological symptoms over time. (F) Weight was measured as controls for mice healthcare. n=17 (D–F). **p<0.01 and ****p<<0.0001 by survival curve test and Tukey post hoc test (after one-way ANOVA was significant at p<0.05).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Experimental design: three BrdU (50 mg/kg) injections were performed the day before middle cerebral artery occlusion (MCAO) protocol. Animals were sacrificed 24 hours after the brain stroke model. (B) BrdU-positive cells increased in the SVZ 24 hours after MCAO. (C) Representative image of BrdU-positive cells in the ipsilateral (left) and contralateral (right) hemisphere 24 hours after MCAO. (D) Ki67 marker was also used to analyze cell proliferation in wholemount preparations of the SVZ. (E) Ki67-positive cells increased in the SVZ 24 hours after MCAO. (F) The Cleaved-Caspase 3 marker increased in the SVZ 24 hours after MCAO. (G) Cleaved-caspase 3 marker was used to assess apoptosis in the SVZ after brain ischemia. Scale bar = 15 µm (G). n=5 (sham) and 4 (MCAO). Bars represent mean ± SEM. *p<0.05, **p<0.01, and ***p<0.001 by two-tailed Student’s t-test (sham vs. 24h MCAO).
 
 To study cell proliferation in the SVZ, we administered 50 mg/kg BrdU i.p. every 2 hours (three doses in total) the day before MCAO (Figure 2—figure supplement 2A). We observed an increase in the number of total SVZ BrdU-positive cells 24 hours after MCAO (Figure 2—figure supplement 2B and C). Ki67 immunofluorescence of SVZ wholemount preparations also revealed a more than tenfold increase of proliferative cells 24 hours after MCAO (Figure 2—figure supplement 2D and E). In addition, we observed a significant increase in cleaved Caspase3-positive cells 24 hours post-lesion (Figure 2—figure supplement 2F and G). These results suggest a fast and specific proliferative response in the ischemia-induced SVZ.
 
 We next analyzed Thbs4 staining in combination with Nestin, an NSC marker, and doublecortin (DCX), a marker of neuroblasts, before and after MCAO. The entire SVZ was analyzed in sham and ischemic mice 7, 15, and 30 days post-ischemia (dpi). The immunofluorescence analysis of the SVZ (Figure 2A) showed a transient decrease in Nestin and DCX-positive cells but an increase of Thbs4-positive astrocytes up to 15 dpi (Figure 2B–D) compared to sham animals. The increase of Thbs4 astrocytes was also confirmed by western blot analysis using SVZ homogenates (Figure 2E and F), evidencing a twofold increased expression of Thbs4 in the ischemic SVZ. Similarly to immunofluorescence, western blot also showed decreased Nestin protein levels at 15 dpi (Figure 2G). These results demonstrate that Thbs4 expression in the SVZ increases after ischemia, coinciding with a decrease in neuroblast markers, suggesting that the classical pro-neuroblast program of the SVZ is interrupted in favor of the generation of astrocytes after ischemia.
 
-## Characterization of ischemia-induced cell populations in the SVZ
+### Characterization of ischemia-induced cell populations in the SVZ
 
 To characterize the different cell populations of the SVZ activated after focal ischemia, we labeled the whole pool of proliferating cells with 1% BrdU in drinking water for 14 days before MCAO (Codega et al., 2014). One month after MCAO, BrdU in the SVZ primarily stained slow proliferative cells like type B cells, whereas in rapid transit-amplifying cells (type C), BrdU was diluted away. Therefore, we chose to label type C cells by intraperitoneal administration (50 mg/kg) of 5-Iodo-2′-deoxyuridine (IdU) 24 hours before euthanasia (Figure 3A). To identify the cellular origin of newborn astrocytes, we analyzed the SVZ 30 dpi by immunofluorescence co-labeling Thbs4 and GFAP together with BrdU or IdU. We found a twofold increase in the total amount of proliferative cells (BrdU-positive) after MCAO with respect to the sham group (Figure 3B), whereas we did not observe a significant change in the number of IdU-positive cells (Figure 3C). The number of slow proliferative NSC (Thbs4/GFAP/BrdU) increased linearly after MCAO (Figure 3D and E), especially in the dorsal region of the SVZ (Figure 3—figure supplement 1A), whereas the number of activated NSC (Thbs4/GFAP/IdU) did not change significantly, either in the whole SVZ (Figure 3F) or in any subregion analyzed (Figure 3—figure supplement 1). These results suggest that, after ischemia, Thbs4-positive astrocytes derive from the slow proliferative type B cells.
 
-## Ischemia-induced newborn astrocytes migrate from the dorsal SVZ to ischemic regions
+![Figure 3.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design: chronic BrdU (1% in water) treatment was administered for 2 weeks. BrdU labeling persisted only in B type NSCs 30 days after treatment. Animals were injected with IdU (50 mg/kg) three times the day before euthanasia to label proliferating cells. (B, C) BrdU (B) and IdU (C)-positive cells in the SVZ. Only BrdU-positive cells showed a significant increase at 30 dpi. (D) Representative confocal images showing Thbs4, GFAP, and BrdU levels in sham (top) and 30 dpi mice (bottom). (E, F) Thbs4/GFAP/BrdU-positive cells (slow proliferative cells) increased in the SVZ at 30 dpi (E), while no changes were observed in Thbs4/GFAP/IdU-positive cells (fast proliferative cells). Scale bar = 20 µm (D). n=4 (sham) and 3 (MCAO). Bars represent mean ± SEM. *p<0.05 by two-tailed Student’s t-test (sham vs. 30dd MCAO).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Slow proliferative cells were quantified in the lateral (gray), ventral (orange), medial (yellow), and dorsal (blue) subventricular zone (SVZ). We only observed an increase of Thbs4/GFAP/BrdU-positive cells in the dorsal SVZ 30 dpi. (B) Thbs4/GFAP/IdU-positive cells did not show changes in the lateral (gray), ventral (orange), medial (yellow), and dorsal (blue) SVZ after brain ischemia. n=4 (sham) and 3 (MCAO). **p<0.01 by two-tailed Student’s t-test (sham vs. 30dd MCAO).
+
+### Ischemia-induced newborn astrocytes migrate from the dorsal SVZ to ischemic regions
 
 To confirm that Thbs4-positive astrocytes originate from type B cells of dorsal SVZ, we labeled NSCs of dorsal SVZ by electroporating the pCAGGSx-CRE plasmid in P1 Ai14 Rosa26-CAG-tdTomato transgenic mice (Figure 4A). Plasmid electroporation induced the expression of tdTomato (tdTOM) by Cre recombination, enabling the spatial tracking and cell fate assessment of electroporated NCSs from the dorsal SVZ. Three to four months after electroporation, we performed the MCAO, and tdTOM fluorescence was analyzed at 7, 30, and 60 dpi. To confirm the efficient labeling of NSCs by the electroporation protocol, we followed the tdTOM fluorescence in the OB (Figure 4—figure supplement 1A, see ‘Materials and methods’). Only those animals with tdTOM-positive cells in the OB were taken into account for later analysis. After quantification of tdTOM-positive NSCs 7, 30, and 60 dpi, we observed a significant decrease in tdTOM-positive cells in ischemic animals in all SVZ regions analyzed (Figure 4B and C, Figure 4—figure supplement 1B), suggesting that they either left the area or died. Conversely, there was a general increase of tdTOM-positive cells outside the SVZ (Figure 4D and E), especially in the intermediate and caudal axis of the whole brain compared to sham animals (Figure 4—figure supplement 1C–F), suggesting that electroporated cells had migrated away from the SVZ.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design: Ai14, ROSA26-CAG-tdTomato transgenic mice were electroporated in the dorsal SVZ at P1. The pCAGGSx-CRE plasmid induced tdTomato (tdTOM) expression in dorsal neural stem cells (NSCs). Middle cerebral artery occlusion (MCAO) was performed 3–4 months later in the same electroporated hemisphere. Mice were analyzed at 7, 30, and 60 dpi. (B) Quantification of tdTOM-positive cells shows a decrease in the dorsal SVZ following brain ischemia. (C) Representative images of tdTOM-positive cells in sham (top) and 60 dpi SVZ (bottom). (D) Quantification of tdTOM-positive cells in the whole brain shows a gradual increase outside the SVZ after brain ischemia. (E) Representative images of tdTOM expression in sham (left) and 60 dpi mice (right). (F) Representative image of Thbs4/tdTOM-positive cells in the dorsal SVZ. (G) Quantification shows an increase in Thbs4/tdTOM-positive cells in the SVZ at 30 and 60 dpi. (H) The proportion of Thbs4-positive cells within the tdTOM-positive pool increases in the SVZ at 30 and 60 dpi. (I) Around 50% of tdTOM-positive cells expressed Thbs4 in the infarcted tissue at 60 dpi. (J) Representative image of Thbs4 and tdTOM expression near the damaged area. Scale bar = 50 µm (C), 100 µm (E, J), and 10 µm (F). n=6 animals per condition. Bars represent mean ± SEM. *p<0.05, **p<0.01, and ***p<0.001 by chi-square test (H) and Tukey post hoc test (after one-way ANOVA was significant at p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative image of tdTOM-positive cells in the olfactory bulb (OB) 3 weeks after electroporation (3wpi). (B) tdTOM-positive cells decreased in the rostral, intermediate, and caudal subventricular zone (SVZ) 7, 30, and 60 dpi. (C) Expression of tdTomato increased in intermediate and caudal brain areas at 30 dpi. (D) Representative images of tdTOM expression in rostral (left), intermediate (middle), and caudal (right) brain areas of sham (top) and 60 dpi mice (bottom). (E) tdTOM-positive cells increased in the infarcted cortex (Ctx) and striatum (Str) whereas decreased in the dorsal SVZ (SVZ). No changes were observed in the corpus callosum (CC). (F) tdTOM-positive cells only increased in the infarcted cortex and striatum at intermediate and caudal brain regions. (G) Thbs4/tdTOM-positive cells increased in rostral and intermediate SVZ 30 and 60 dpi. Scale bar = 100 µm (A, D). n=6 animals per condition. Bars represent mean ± SEM. *p<0.05, **p<0.01, and ***p<0.001 by Dunnett/Tukey post hoc test (after two-way ANOVA was significant at p<0.05).
+
 To identify the proportion of NSCs that differentiated into Thbs4-positive astrocytes following ischemia, we analyzed the co-expression of Thbs4 with tdTOM after MCAO. Despite the general decrease of tdTOM-positive cells in the SVZ, the fraction of Thbs4/tdTOM cells increased at 30 dpi after MCAO (Figure 4F and G), reaching a maximum increase at 60 dpi (Figure 4H), in particular in rostral and intermediate SVZ (Figure 4—figure supplement 1G). Finally, we analyzed the Thbs4-positive astrocytes recruitment to the ischemic regions. More than half of the total tdTOM-positive cells in the infarcted area expressed the Thbs4 marker at 60 dpi (Figure 4I and J). These results suggest that ischemia-induced astrogliogenesis in the SVZ occurs in type B cells from the dorsal region and that these newborn Thbs4-positive astrocytes migrate to the ischemic areas.
 
-## Thbs4-positive astrocytes accumulate at the glial scar after brain ischemia
+### Thbs4-positive astrocytes accumulate at the glial scar after brain ischemia
 
 Besides its role in the neurogenic niches, Nestin is also rapidly and locally expressed by reactive astrocytes and participates in glial scar formation (Frisén et al., 1995). Thus, we used Nestin immunofluorescence as a reliable tool to identify the lesion border where the glial scar occurs (Figure 5A). Nestin staining of the scar was also compared with more classical methodologies like TTC staining (Figure 5B), where viable tissue is stained red and dead tissue is left unstained. The white-pale pink area was then measured as infarct tissue by TTC staining (Figure 5C). Unlike the TTC staining, which can only be performed shortly after the lesion, the visualization of the glial scar with Nestin immunofluorescence allowed us to analyze the lesion at later time points. We observed a rapid formation of the glial scar as early as 7 dpi (Figure 5D). Analyzing the expression of the two astrocytic markers, Thbs4 and GFAP, as a percentage of the glial scar region of interest (ROI), we observed different dynamics and localization. GFAP expression increased rapidly after 7 days within the glial scar ROI, whereas Thbs4 was upregulated at 15 dpi (Figure 5E). This delay suggested that the glial scar harbors two different astrocytic subpopulations: GFAP-only or GFAP/Thbs4. To analyze the spatial location of GFAP and Thbs4 markers within the Nestin border, we measured the fluorescence intensity profile of damaged area at 30 dpi. GFAP was found in both the scar and core areas, whereas Thbs4 fluorescence was found mostly at the borders of the glial scar (Figure 5F and G). Analysis and dynamics of Thbs4-positive astrocyte migration were further performed in the corpus callosum (CC), striatum (Str), cortex (Ctx), and OB (Figure 5—figure supplement 1A). We observed a linear increase of Thbs4-positive astrocytes from 7 to 60 dpi, both in the Ctx and Str (Figure 5—figure supplement 1B). Migration occurred mainly through the corpus callosum; among the total GFAP-positive astrocytes, 36.5% were also positive for Thbs4, suggesting that more than one-third of the astrocytes in the glial scar originated from the SVZ (Figure 5—figure supplement 1C). Likewise, the number of DCX-positive cells dramatically decreased 15 dpi in all OB layers (Figure 5—figure supplement 1D–F) together with a significant decrease of BrdU-positive cells and DCX/BrdU-positive neuroblasts in the RMS (Figure 5—figure supplement 1G and H). This suggests that ischemia induced a change in the neuroblasts’ ectopic migratory pathway, depriving the OB layers of SVZ newborn neurons.
 
-## Thbs4-positive astrocytes modulate extracellular matrix homeostasis at the glial scar
+![Figure 5.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig5-v1.jpg)
+
+**Figure 5.:** (A) The glial scar could be observed at 30 dpi using Nestin immunofluorescence. (B) Classical TTC technique underestimated ischemic regions compared with Nestin immunofluorescence. (C) Representative images of TTC staining in infarcted brains. (D) Representative confocal images showing the time course of Nestin expression at 3, 7, 15, and 30 dpi. (E) The Nestin-positive glial scar was established by 15 dpi, while Thbs4 astrocytes arrived at the glial scar later, by 30 dpi. (F) Fluorescence profile of Thbs4, GFAP, and Nestin marker from the core to penumbra areas showed Thbs4 was mainly located at the borders of the Nestin-positive glial scar. (G) Representative images of Thbs4 (green), GFAP (white), and Nestin (red) markers in 30 dpi mice. Scale bar = 50 µm (D, G). n=3 animals per condition. Bars/lines represent mean ± SEM. *p<0.05 and **p<0.01 by two-tailed Student’s t-test (TTC vs. Nestin) and by Dunnett post hoc test (after two-way ANOVA was significant at p<0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Thbs4 expression in the corpus callosum (cc), infarcted cortex (Ctx), and infarcted striatum (Str) of sham and 7 and 30 dpi mice. (B) Thbs4 increased by 30 dpi in the cc and 60 dpi in the Ctx and Str. (C) Expression of Thbs4 increased in total GFAP population after 15, 30, and 60 dpi. (D) Experimental design: chronic BrdU (1% in water) treatment was administered for 2 weeks. BrdU only persisted in slow proliferative NSC (Codega et al., 2014). Doublecortin (DCX) and BrdU-positive cells were measured in the olfactory bulb (OB) layers 7, 15, and 30 dpi. (E) Representative images of BrdU and DCX marker in sham (left), 15 (middle), and 30 (right) dpi mice OB. (F) DCX-positive cells decreased 15 and 30 dpi in the rostral migratory stream (RMS), granular OB layer (GrL), and glomerular OB layer (GL). (G) BrdU-positive cells only decreased 30 dpi in the glomerular OB layer (GL). Double DCX/BrdU-positive cells significantly decreased in the RMS 30 dpi. In (G) and (G), values are normalized to total DAPI nuclei (100%). Scale bar = 500 µm (A). n=6 animals per condition. Lines represent mean ± SEM. *p<0.05, **p<0.01, and ***p<0.001 by chi-square test and Tukey post hoc test (after two-way ANOVA was significant at p<0.05).
+
+### Thbs4-positive astrocytes modulate extracellular matrix homeostasis at the glial scar
 
 To investigate the role of Thbs4-positive astrocytes in the glial scar, we analyzed HA, the main component of the brain ECM, using the hyaluronic acid binding protein (HABP) as a marker. Following ischemic damage, local astrocytes (GFAP+/Thbs4-) react by adopting a fibrotic morphology, producing high-molecular weight HA (HMW-HA) to form the glial scar and isolate the damaged area (Preston and Sherman, 2011). We then examined HA deposition in the corpus callosum and the infarcted areas after MCAO. HABP immunofluorescence (Figure 6A) and image analysis revealed HA accumulation in the infarcted areas. Skeleton analysis, which quantifies the length of HA chains and correlates with its molecular weight, identified progressively longer HA cable-like structures at the glial scar as the infarct evolved (Figure 6B). Fractal dimension analysis, which reflects the interconnectivity of the ECM (Soria et al., 2020), further confirmed HA accumulation and increased matrix complexity in infarcted areas, but not in corpus callosum (Figure 6C), suggesting that ECM accumulation is different in white and gray matter.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative images of hyaluronic acid (HA) labeled with HABP in the contralateral (1) and ipsilateral hemisphere (2). Only perineuronal nets are clearly visible in the healthy tissue, while a dense interstitial matrix is observed in ischemic areas. (B) Cumulative distribution of skeletonized HA signal in sham and infarcted regions of 7, 15, and 30 dpi mice (p<0.0001). (C) Quantification of fractal dimension showed increased extracellular matrix interconnectivity in the infarcted cortex and striatum (Ctx and Str) at 30 dpi. (D) Representative confocal images of Thbs4 (green) and HABP (red) in the cortex and striatum of sham and 30 dpi mice. Note the HA labeling on the surface of Thbs4-positive cells. (E) Fluorescence intensity profile of Thbs4, GFAP, and HABP markers from the lesion core to penumbra areas. Thbs4 expression was mainly restricted to the borders of the HA-positive glial scar at 30 dpi. (F) Representative confocal images of Thbs4 and HABP markers in sham and 30 dpi mice (top). Examples of HA (red) occupying the membrane mask of Thbs4-positive astrocytes in sham and 30 dpi mice (bottom), showing increased HA synthesis after MCAO. (G) Quantification of membrane-bound HA showed increased HA along Thbs4-positive membrane after brain ischemia (corpus callosum: pink; infarcted cortex: blue; infarcted striatum: green). Scale bar = 500 µm (A), 10 µm (inset in A, D, and F). n=6 animals per condition. *p<0.05 and ****p<0.0001 by Kruskal–Wallis test and two-way ANOVA (significant at p<0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative images of Thbs4/GFAP (‘newborn astrocytes’, top) and GFAP-only (‘local astrocytes’, bottom) cells in the infarcted areas at 30 dpi. (B) Thbs4-positive astrocytes internalized more HA compared to local astrocytes only labeled with GFAP marker. (C) However, the number of HA spots internalized was higher in local astrocytes compared with Thbs4 astrocytes, suggesting that Thbs4 internalizes HA in fewer vesicles. (D) Representative images of HABP (red), Thbs4 (green), and CD44 (blue) at the lesion border. Inset shows an orthogonal projection of Thbs4/CD44/HABP-positive intracellular vesicle. (E) Thbs4-positive astrocytes expressed a high rate of CD44 receptors so much in corpus callosum (CC), infarcted cortex (Ctx) as in infarcted striatum (Str). Scale bar = 10 µm (A, D). n=5 animals per condition. Bars represent mean ± SEM. *p<0.05 and **p<0.01 by Tukey post hoc test (after two-way ANOVA was significant at p<0.05) and two-tailed Student’s t-test (Thbs4 vs. GFAP).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/96076/elife-96076-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Experimental design: P4 pup rats were sacrificed, and subventricular zone (SVZ) NSC were extracted and cultured in the proliferative medium for 1 week. After that, neurospheres were disaggregated and seeded isolated in a culture dish. The following day, oxygen and glucose deprivation protocol (OGD) was performed. Cells were fixed 7 days after culturing them. (B) Representative images of in vitro Thbs4-positive cells (green) and HA (red). (C) HA spots were measured inside and outside Thbs4-positive cells. (D) HA spots increased inside Thbs4-positive astrocytes after OGD, whereas (E) decreased in the extracellular space. However, when NSCs were exposed to hyaluronidases in order to remove extracellular HA, Thbs4-positive cells decreased internalization of HA spots (F) and increased extracellular HA spots (G). (H) Neurosphere-derived NSC (NSPH1) internalized more HA spots compared with Iba1-positive cells. (I) Metalloproteinase activity was higher in OGD NSC cultures compared to control condition. Scale bar = 10 µm (b). n=15 samples per condition. Bars represent mean ± SEM. *p<0.05, **p<0.01, and ***p<0.001 by two-tailed Student’s t-test (CTRL vs. OGD; NSPH1 vs. Iba1+).
 
 The proximity of Thbs4-positive astrocytes to HA in the ischemic scar (Figure 6D and E) led us to investigate if this population contributed to ECM production and, consequently, to scar formation. Since HA is produced exclusively at the cell membrane (Sherman et al., 2015; Zimmermann and Dours-Zimmermann, 2008), we analyzed HA labeling within 1 µm of the Thbs4-positive cell membrane in high-resolution confocal images (Figure 6F). Image analysis showed a significant increase in HABP area at Thbs4-positive astrocyte-cell membranes after MCAO (Figure 6G), suggesting a role of Thbs4-positive astrocytes in HA production within the glial scar.
 
@@ -84,7 +132,7 @@ To explore the potential role of Thbs4-positive astrocytes in HA removal, we qua
 
 To further investigate HA internalization by astrocytes, we conducted in vitro experiments using cultures of rat SVZ neural stem cells, a more versatile preparation that displays the same HA internalization and degradation machinery as mouse brain tissue (Sherman et al., 2015). An oxygen and glucose deprivation (OGD) protocol was applied as an ischemia model and cells were fixed 7 days after OGD (Figure 6—figure supplement 2A). HA was analyzed via HABP immunofluorescence, both inside and outside the Thbs4-positive cells (Figure 6—figure supplement 2B and C). Thbs4-positive cells showed increased intracellular HA after OGD, while extracellular HA levels decreased (Figure 6—figure supplement 2D and E). However, this phenomenon was reversed after adding hyaluronidases in the extracellular space (Figure 6—figure supplement 2F and G), suggesting that Thbs4-positive cells from SVZ homogenates can internalize or synthesize HA depending on external stimuli. HA internalization was also measured in Iba1-positive cell cultures where we observed a reduced internalization compared to Thbs4-positive cells (Figure 6—figure supplement 2H). Lastly, metalloproteinase activity was found to be increased in Thbs4 cultures following OGD (Figure 6—figure supplement 2I). Altogether, these results suggest Thbs4-positive cells can internalize HA after ischemic conditions but also synthesize it when ECM is degraded.
 
-## Hyaluronan accumulation is sufficient but not exclusive for the recruitment of Thbs4-positive astrocytes
+### Hyaluronan accumulation is sufficient but not exclusive for the recruitment of Thbs4-positive astrocytes
 
 Since Thbs4-positive astrocytes migrate to the glial scar but not to the ischemic core, we hypothesized that HA, the primary component of the ischemic scar, may be the trigger signal for recruiting Thbs4-positive astrocytes. To test this hypothesis, we simulated the ECM accumulation that occurs at the scar by overexpressing the Hyaluronan synthase 2 (Has2) from the naked mole rat (Heterocephalus glaber), a tool often used in mice to produce HA of very high molecular weight (Tian et al., 2013; Zhang et al., 2023). We used a viral vector (AAV2/9-CAG-Has2-3xFlag) with a FLAG tag to visualize transduced cells after intracerebral inoculation in the striatum and checked HA accumulation in FLAG-positive areas using HABP staining (Figure 7A). We overexpressed Has2 (or GFP as control) unilaterally. In a subset of animals that underwent MCAO, AAV-Has2 was injected contralateral to the infarct, to compare Thbs4-positive astrocytes recruitment by both stimuli, the inflammation from the ischemic damage and the HA accumulation per se (Figure 7B). FLAG-positive cells were quantified as a surrogate marker of viral infection for both control and MCAO groups (Figure 7C). The GFP control group did not increase HA production per se (Figure 7D). However, HA overexpression was observed in Has2 groups (both control and MCAO group) by HABP immunofluorescence (Figure 7E and F).
 
@@ -94,7 +142,7 @@ Since Thbs4-positive astrocytes migrate to the glial scar but not to the ischemi
 
 HA accumulation was sufficient to recruit the Thbs4-positive astrocytes from the ipsilateral SVZ 45 days after AAV-Has2 inoculation (Figure 7G), with a similar time window to that observed after MCAO. Interestingly, when we induced a lesion by MCAO and performed viral overexpression of Has2 in the contralateral hemisphere, we found that Thbs4-positive astrocytes preferentially migrated to the ischemic glial scar (Figure 7G). This migration of Thbs4-positive astrocytes to the site of ischemic damage occurred despite no differences in HA overexpression between contralateral (Has2 infected) and ipsilateral (infarcted area) hemispheres (Figure 7H). These results suggest that the accumulation of HMW-HA alone is sufficient to activate and recruit Thbs4-positive astrocytes from the SVZ. However, the preferential migration to the ischemic scar indicates that brain ischemia generates a more potent biochemical signal that not only activates the SVZ but also recruits newborn astrocytes.
 
-## Ischemia-induced gliogenesis at the SVZ correlates with local hyaluronan degradation
+### Ischemia-induced gliogenesis at the SVZ correlates with local hyaluronan degradation
 
 It is known that the niche microenvironment has a unique ECM composition (Kjell et al., 2020) and that the stiffness of the niche plays a crucial role in the proliferation and differentiation of progenitor cells (Long and Huttner, 2019; Segel et al., 2019). After observing the close association between Thbs4-positive astrocytes and the ECM at the glial scar, we decided to study the Thbs4/HA tandem in the SVZ following MCAO (Figure 8A). We did not observe any significant changes in the HA area across the entire SVZ but noted a decrease at 7 and 15 dpi in the dorsal SVZ (Figure 8B–D). Skeleton analysis showed fragmentation of HA exclusively in the dorsal SVZ at 7 and 15 dpi (Figure 8E–G), that is, earlier than the migration of these newborn astrocytes toward the lesion.
 
@@ -122,60 +170,310 @@ Based on our observations of both HA production and internalization by Thbs4-pos
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Male and female wild-type C57BL/6J mice and Ai14-Rosa26-CAG-tdTomatoflx/flx transgenic mice bred at the animal facility of UPV/EHU were used for in vivo experiments. Sprague–Dawley rat pups from P4 to P7 were used for in vitro experiments. Animals were maintained under standard laboratory conditions with food and water ad libitum. All animals were handled in accordance with the European Communities Council Directive (2010/63/EU) and approved by the Ethics Committee of the University of the Basque Country (UPV/EHU) under license CEEA/340/2013.
 
-## Transient MCAO
+### Transient MCAO
 
 Brain ischemia was induced in 3–4-month-old C57BL/6 mice (approximately 25 g) by occluding 60 minutes of the lenticulo-striate arteries with a 10 mm length of silicone-coated 6-0 monofilament nylon suture (602223PK10, Doccol Corporation) using a modification of the protocol described by Gelderblom et al., 2009. Artery occlusion generated a specific lesion in the cortex and striatum that was evaluated at different times after the MCAO (7, 15, 30, or 60 days after occlusion). Ischemic damage was evaluated in the ipsilateral hemisphere by Cresyl violet staining, Nestin immunofluorescence, or hyaluronan staining. Sham animals, in which arteries were visualized but not disturbed, were used as an experimental control. Both experimental groups, sham and ischemic, were anesthetized with a mix of isoflurane and oxygen (induction of anesthesia with 4% isoflurane and maintenance for surgery at 1.5% isoflurane) and maintained under analgesia with buprenorphine 24 hours after ischemia (0.03 mg/kg body weight i.p. every 12 hours). Animal wellness was evaluated daily, controlling the body weight and the motor deficit of the animal by means of neurological scores and pole test. Motor deficit was assessed in each animal 1 hours after MCAO and later every 24 hours. Animals without neurological deficits were excluded from the study.
 
-## 5-bromo-2'-deoxyuridine (BrdU) protocol
+### 5-bromo-2'-deoxyuridine (BrdU) protocol
 
 The total pool of proliferating cells was labeled with three injections of 50 mg/kg 5-bromo-2'-deoxyuridine (BrdU) the day before MCAO protocol. Animals were sacrificed the day after MCAO to analyze acute SVZ proliferation. Chronic BrdU protocol was performed for quiescent NSC identification (Codega et al., 2014). Briefly, 1% of BrdU was administered in the drinking water for 14 days. On day 15, BrdU was removed and animals were subjected to the MCAO protocol. Mice were sacrificed and perfused at 3, 7, 15, and 30 days after MCAO, although only animals with a temporal window of 30 days between MCAO and perfusion were used for statistical analysis. Activated cells were labeled by i.p. injection of 50 mg/kg 5-iodo-2′-deoxyuridine (IdU) 24 hours before euthanasia.
 
-## Electroporation
+### Electroporation
 
 Ai14-Rosa26-CAG-tdTomatoflx/flx transgenic mice and pCAGGS-CRE plasmid were kindly provided for Prof. Harold Cremer and Marie-Catherine Tiveron from the Institut de Biologie du Développement de Marseille (IBDM). Postnatal electroporation was performed as described previously (Platel et al., 2019). Mice pups from P0-P2 were anesthetized by hypothermia. pCAGGS-CRE plasmid was used at a final concentration of 2.5 µg/ul and 2 µl was injected in the lateral ventricle by expiratory pressure using a glass micropipette. Following injection, pup brains were placed between electrodes targeted at the dorsal SVZ and subjected to five 95 V electrical pulses (50 ms, 950 ms intervals). BTX ECM399 (Thermo Fisher Scientific) electroporator was used with 7 mm tweezer electrodes. Electroporated pups were reanimated at 37°C before returning to the mother.
 
 In order to analyze the Thbs4-positive cells in the SVZ, we subcloned the eGFP gene (from a pCMV-eGFP N1) into a PGL3-basic backbone containing mouse Thbs4 promoter, kindly provided by Stenina-Adognravi lab (Muppala et al., 2017). pThbs4-GFP was also electroporated in P0-P2 mice and euthanized 1 day post-electroporation to corroborate Thbs4 expression in the SVZ at postnatal stages.
 
-## AAV vector production
+### AAV vector production
 
 AAV2/9-CAG-Has2-3xFlag vector was produced by polyethylenimine (PEI)-mediated triple transfection of low-passage HEK-293 T/17 cells (ATCC; Cat# CRL-11268). The respective AAV expression plasmid expression plasmid pNMRHas2_N1 (provided by Dr. Vera Gorbunova) was cotransfected with the adeno helper pAd Delta F6 plasmid (Penn Vector Core, Cat# PL-F-PVADF6) and AAV Rep Cap pAAV2/9 plasmid (Penn Vector Core, Cat# PL-TPV008). AAV vector was purified as previously described (Bourdenx et al., 2015). Cells are harvested 72 hours post-transfection, resuspended in lysis buffer (150 mM NaCl, 50 mM Tris–HCl pH 8.5), and lysed by three freeze–thaw cycles (37°C/–80°C). The cell lysate is treated with 150 units/ml Benzonase (Sigma, St Louis, MO) for 1 hours at 37°C, and the crude lysate is clarified by centrifugation. Vectors are purified by iodixanol step gradient centrifugation and concentrated and buffer-exchanged into Lactated Ringer’s solution (Baxter, Deerfield, IL) using vivaspin20 100 kDa cut-off concentrator (Sartorius Stedim, Goettingen, Germany). Titrations were performed at the transcriptome core facility (Neurocentre Magendie, INSERM U862, Bordeaux, France). The genome-containing particle (gcp) titer was determined at a concentration of 1.1013 gcp/ml by quantitative real-time PCR using the Light Cycler 480 SYBR green master mix (Roche, Cat# 04887352001) with primers specific for the AAV2 ITRs (fwd 50-GGAACCCCTAGTGATG GAGTT-3’; rev 50-CGGCCTCAGTGAGCGA-30) on a Light Cycler 480 instrument. The purity assessment of vector stocks was estimated by loading 10 μl of vector stock on 10% SDS acrylamide gels; total proteins were visualized using the Krypton Infrared Protein Stain according to the manufacturer’s instructions (Life Technologies).
 
-## In vivo AAV-HAS2 injections
+### In vivo AAV-HAS2 injections
 
 Mice were anesthetized with isoflurane and fixed to a stereotaxic frame connected with a gas mask. We injected 1 µl of adeno-associated virus (AAV2/9) CAG-Has2-3xFlag (1 × 1013 gc/µl) in the contralateral striatum (AP:+1.0; ML: –1.8; DV: –3.2) to simulate scar tissue hyaluronan. After 2 weeks, the ischemic group was subjected to the MCAO model in the ipsilateral hemisphere and perfused 30 days later. Only slices with representative lesions in both hemispheres were used for image and statistical analysis.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Mice were anesthetized with an intraperitoneal injection of pentobarbital (100 mg/kg). Brain tissues were fixed by intracardiac perfusion using 4% paraformaldehyde. Fixed brains were sliced at 40 μm of thickness using the Leica VT1200S vibratome (Leica Microsystems) and subjected to immunofluorescence. For standard immunofluorescence protocol, tissue slices were permeabilized with 0.1% Triton and non-specific epitopes blocked with 1% bovine serum albumin (BSA) and 10% donkey serum in PBS. Primary antibodies were incubated at different concentrations (see Table 1 for specification) overnight at 4°C and then washed three times with 0.1% Triton in PBS. Secondary conjugated antibodies were incubated for 1 hour at room temperature. After three washes with 0.1% Triton in PBS, cells were stained for 10 minutes with DAPI and further washed with PBS. Finally, coverslips were mounted with Fluoromount (SouthernBiotech) and analyzed by fluorescence using the confocal microscope Leica TCS SP8. For HA labeling, endogenous biotins were pre-blocked using Streptavidin/Biotin blocking solution (Vector Labs, #SP-2002) following the manufacturer’s instructions and further blocked with PBS 1X0.1% Saponin 1% BSA for 1 hour at room temperature. Primary antibodies and biotinylated Hyaluronic Acid Binding Protein (HABP, #385911 Millipore) were incubated for 72 hours at 4°C or 24 hours at room temperature. After three washes with PBS, 1X0.1% Saponin, secondary antibody, and DAPI diluted in the same blocking buffer were incubated for 1 hour at room temperature. Slices were mounted with Mowiol (Millipore #475904) in superfrost slides (Thermo Fisher Scientific) and #1.5 coverslips.
 
-## Imaging and image analysis
+**Table 1.**
+ Primary antibodies used for in vivo immunofluorescence protocol.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Host</th>
+      <th>Isotope</th>
+      <th>Dilution</th>
+      <th>Reference</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Thbs4</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgM kappa light chain</td>
+      <td>1/400</td>
+      <td>Sc-390734</td>
+      <td>Santa Cruz Biotechnology, USA.</td>
+    </tr>
+    <tr>
+      <td>Thbs4</td>
+      <td>Goat</td>
+      <td>Polyclonal IgG</td>
+      <td>1/200</td>
+      <td>AF2390</td>
+      <td>R&amp;B Systems, USA</td>
+    </tr>
+    <tr>
+      <td>S100β</td>
+      <td>Rabbit</td>
+      <td>Polyclonal</td>
+      <td>1/400</td>
+      <td>Z0311</td>
+      <td>Dako, Agilent Technologies, Inc</td>
+    </tr>
+    <tr>
+      <td>S100β</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG2a</td>
+      <td>1/1000</td>
+      <td>MA5-12969</td>
+      <td>Invitrogen, Spain</td>
+    </tr>
+    <tr>
+      <td>GFAP</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG1</td>
+      <td>1/1000</td>
+      <td>MAB3402</td>
+      <td>Sigma, Spain</td>
+    </tr>
+    <tr>
+      <td>GFAP</td>
+      <td>Rabbit</td>
+      <td>Polyclonal</td>
+      <td>1/4000</td>
+      <td>Z0334</td>
+      <td>Dako, Agilent Technologies, Inc</td>
+    </tr>
+    <tr>
+      <td>βIII tubulin</td>
+      <td>Rabbit</td>
+      <td>Polyclonal</td>
+      <td>1/400</td>
+      <td>ab18207</td>
+      <td>Abcam, UK</td>
+    </tr>
+    <tr>
+      <td>NeuN</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG1</td>
+      <td>1/1000</td>
+      <td>MAB377</td>
+      <td>Millipore, Germany</td>
+    </tr>
+    <tr>
+      <td>DCX</td>
+      <td>Rabbit</td>
+      <td>Polyclonal IgG</td>
+      <td>1/500</td>
+      <td>ab18723</td>
+      <td>Abcam, UK</td>
+    </tr>
+    <tr>
+      <td>Nestin</td>
+      <td>Chicken</td>
+      <td>Polyclonal IgY</td>
+      <td>1/1000</td>
+      <td>NES</td>
+      <td>Aves Lab, EEUU</td>
+    </tr>
+    <tr>
+      <td>Prominin 1</td>
+      <td>Rat</td>
+      <td>Monoclonal IgG1 kappa</td>
+      <td>1/300</td>
+      <td>14-1331-82</td>
+      <td>Invitrogen, Spain</td>
+    </tr>
+    <tr>
+      <td>EGFR</td>
+      <td>Mouse</td>
+      <td>Monoclonal</td>
+      <td>1/400</td>
+      <td>SAB4200809</td>
+      <td>Abcam, UK</td>
+    </tr>
+    <tr>
+      <td>BrdU</td>
+      <td>Rat</td>
+      <td>Monoclonal</td>
+      <td>1/400</td>
+      <td>MCA2060</td>
+      <td>Bio-Rad, USA</td>
+    </tr>
+    <tr>
+      <td>BrdU</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG1, kappa</td>
+      <td>1/500</td>
+      <td>03-3900</td>
+      <td>Invitrogen, Spain</td>
+    </tr>
+    <tr>
+      <td>IdU</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG2b</td>
+      <td>1/100</td>
+      <td>MA5-24879</td>
+      <td>Invitrogen, Spain</td>
+    </tr>
+    <tr>
+      <td>Ki67</td>
+      <td>Rabbit</td>
+      <td>Polyclonal IgG</td>
+      <td>1/400</td>
+      <td>Ab15580</td>
+      <td>Abcam, UK</td>
+    </tr>
+    <tr>
+      <td>Cleaved-Caspase 3</td>
+      <td>Rabbit</td>
+      <td>Monoclonal IgG</td>
+      <td>1/300</td>
+      <td>#9664</td>
+      <td>Cell Signaling, Germany</td>
+    </tr>
+    <tr>
+      <td>CD44</td>
+      <td>Rat</td>
+      <td>Monoclonal IgG2b</td>
+      <td>1/500</td>
+      <td>MA517875</td>
+      <td>Invitrogen, Spain</td>
+    </tr>
+    <tr>
+      <td>FLAG</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG1</td>
+      <td>1/500</td>
+      <td>F1804</td>
+      <td>Sigma, Spain</td>
+    </tr>
+    <tr>
+      <td>Olig2</td>
+      <td>Mouse</td>
+      <td>Monoclonal IgG2aκ</td>
+      <td>1/1000</td>
+      <td>MABN50</td>
+      <td>Millipore, Germany</td>
+    </tr>
+  </tbody>
+</table>
+
+### Imaging and image analysis
 
 Confocal images were acquired in a Leica TCS SP8 with ×20 (0.8 NA) and ×63 objectives (1.4 NA). Images were taken with a pixel size of 90 nm. Widefield imaging was performed in a Zeiss AxioVision fluorescence microscope and a 3DHISTECH panoramic MIDI II digital slide scanner. Settings were adjusted for each individual experiment and kept for all conditions. Image processing was performed using FIJI (Schindelin et al., 2012), CaseViewer, and Hyugens (SVI, The Netherlands) software. For Thbs4, Nestin, and DCX immunofluorescence, wholemount SVZ preparations and AAV-HAS2 analysis, tile-scan was done using the navigator plug-in in the LasX software. For Nestin immunofluorescence, images were deconvoluted using the Hyugens software.
 
 SVZ images were reconstructed using the tile-scan tool (LasX software, Leica). SVZ ROI was delimited manually and expression of each marker was measured in the SVZ ROI. Quantification of all markers was done manually, except for HABP quantification, which was done with custom FIJI scripts for in vitro (https://github.com/MariArdaya/Hyaluronan_v2, copy archived at Ardaya, 2025) and in vivo analysis (https://github.com/SoriaFN/Tools, copy archived at Soria, 2025). The HABP signal was segmented with an automatic threshold and colocalized with other markers such as CD44. This, combined with cell segmentation, based on the Thbs4 mask, allowed for quantification of HABP area and number of spots inside cells, outside cells, or at the membrane (with a band ROI of 1 μm). The Analyze Skeleton and Fractal count plugins were used on the skeletonized segmented HABP to quantify the longest shortest path and the fractal dimension, respectively, to reveal the length and interconnectivity of the matrix network (Casey et al., 2024; Soria et al., 2020).
 
-## Western blot
+### Western blot
 
 The SVZ was freshly dissected on ice and minced using a micro grinder. Total protein was extracted after tissue lysis with RIPA buffer (Thermo Fisher Scientific #89900) and Protease and Phosphatase Inhibitor Cocktail 100X (Thermo Fisher Scientific). Samples were lysed in ice for 10 minutes and sonicated using an Ultrasonic Processor (Hielscher Ultrasound Technology). Sonicated tissues were centrifuged at 1200 rpm for 10 minutes and 4°C to remove insoluble fragments. Protein concentration was measured by chemiluminescence using RC DC Protein Assay (Bio-Rad). Then, 40 µg of protein samples were denatured in reducing loading buffer containing β-mercaptoethanol (M3148, Sigma) and 0.0002% bromophenol blue at 95°C for 5 minutes and separated in pre-casted 12% or 7.5% Tris-Glycine polyacrylamide gel using the Criterion cell system (Bio-Rad). Electrophoresis was conducted at 80 V in a Tris-Glycine buffer (25 mM Tris, 192 mM glycine, 0.1% SDS in dH2O, pH 8.3). After complete separation, proteins were transferred to a nitrocellulose membrane (Bio-Rad) using Trans-Blot Turbo Transfer System (Bio-Rad). Nitrocellulose membranes were incubated in blocking solution (Tris-buffer solution, 0.1% Tween-20 and 5% BSA) for 1 hour at room temperature. Primary antibodies were incubated overnight at 4°C. Fluorescent or horseradish peroxidase-conjugated secondary antibodies were incubated in blocking buffer for 1 hour at room temperature. Immunodetection was performed using chemiluminescence or fluorescence on a Chemidoc MP (Bio-Rad) and the intensity of the bands was quantified using ImageLab (Bio-Rad) software corrected by Gaussian curves.
 
-## qRT-PCR
+### qRT-PCR
 
 Fresh SVZ tissue from ipsilateral hemisphere was isolated as previously described from sham, 15 and 30 days after MCAO animals to analyze the expression of several genes (Table 2). After mechanical trituration, RNA was extracted from the tissue following the manufacturer’s protocol (NZYTECH Total RNA Isolation kit protocol, NZYTECH, MB13402). RNA concentration was measured by spectrophotometry using the Nanodrop 2000c spectrophotometer (Thermo Scientific, USA). Real-time polymerase chain reaction (RT-PCR) from 10 ng of RNA was performed using the One-step NZYTECH RT-qPCR Green kit according to the manufacturer’s protocol (NZYTECH, MB34302). RT-PCR was normalized using the housekeeping genes hypoxanthine phosphoribosyl-transferase 1 (HPRT1, QIAGEN QuantiTect Primer Assay, Barcelona, Spain). Specificity of each amplification was confirmed by melting curve analysis. PCR reactions were performed in a CFX96 Detection System (Bio-Rad, Madrid, Spain). Semi-quantification was performed using the 2-ΔΔCt algorithm. Unsupervised hierarchical distance matrix and distance matrix map was developed using Orange3 software (Python v3.0).
 
-## Neural stem cell culture
+### Neural stem cell culture
 
 Neurosphere cultures were prepared from 4 to 7-day-old Sprague–Dawley rat pups as previously described (Cavaliere et al., 2012). Briefly, the SVZ was isolated and minced with a McIllwain tissue chopper (Campden Instruments). SVZs from 2 to 3 brains were digested for 7 minutes at 37°C in 5 ml of trypsin/EDTA (Sigma). Digestion was stopped by adding an equal volume of trypsin inhibitor (Sigma) and 0.01% DNAse I (Sigma). The cell suspension was centrifuged and the pellet mechanically dissociated in NeuroCult medium (StemCell, France). Cells were seeded in proliferation medium: NeuroCult with 10% NSC factors (StemCell), penicillin/streptomycin mix, 20 ng/ml EGF (Promega), 10 ng/ml bFGF (Promega), and cultured in suspension for 7 days at 37°C and 5% CO2.
 
 After 7 days of proliferation, neurospheres were enzymatically dissociated with Accutase (Sigma) and seeded in poly-L-ornithine-coated (Gibco) 0.17 mm glass coverslips at 100.000 cells/well. Cells were differentiated into astrocytes in serum-free medium. The following day, differentiation medium was replaced by oxygen and glucose deprivation (OGD) medium (130 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 26 mM NaHCO3, 0.8 mM MgCl2, 1.18 mM NaH2PO4, 10 mM sucrose, pH 7.2) previously saturated with N2. Cells were subjected to OGD for 60 minutes in 3% O2. After OGD, cells were returned to standard medium, differentiated for 7–10 days and fixed with 4% paraformaldehyde. In some experiments, hyaluronidase (OmniPur Hyaluronidase Sigma, HX0514-1) was added to the medium to remove extracellular HA. To measure metalloproteases activity in culture medium following OGD, we used the MMP Activity Assay Kit (Abcam), which employs GFP as an MMP activity reporter and DAPI as a normalization dye.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was done using GraphPad Prism software (version 8.0; GraphPad software). Data are presented as mean ± SEM unless specified otherwise. Statistical analysis was performed using unpaired Student’s t-test for independent conditions and paired Student’s t-test for dependent conditions. In addition, one-way and two-way ANOVA were also performed to compare more than two groups among them. Tukey and Dunnett post hoc tests were used. For HABP skeleton analysis, Kruskal–Wallis analysis was performed to compare cumulative frequency curves in more than two groups. p-Value was considered significant at p<0.05. Sample number (n), p-values, and statistical test are indicated in figure legends.
 
-## Materials availability
+### Materials availability
 
 The AAV-Has2-NMR vector is available from the corresponding authors upon reasonable request.
+
+**Table 2.**
+ Primer sequences for qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hyal1_FW</td>
+      <td>GTGCCAAGCCCTATGCTAATAAG</td>
+    </tr>
+    <tr>
+      <td>Hyal1_REV</td>
+      <td>GCATGTCCATTGCAAAGACTGA</td>
+    </tr>
+    <tr>
+      <td>Hyal2_FW</td>
+      <td>GTCCCACATACACCCGAGGA</td>
+    </tr>
+    <tr>
+      <td>Hyal2_REV</td>
+      <td>GGCACTCTCACCGATGGTAGA</td>
+    </tr>
+    <tr>
+      <td>Hyal3_Ffw</td>
+      <td>GGACGACCTGATGCAGACTATTG</td>
+    </tr>
+    <tr>
+      <td>Hyal3_REV</td>
+      <td>GGTCCCCCCAGAGTACCACT</td>
+    </tr>
+    <tr>
+      <td>Has1_FW</td>
+      <td>AGGGCTCTTAAAGGAGGAGTCC</td>
+    </tr>
+    <tr>
+      <td>Has1_REV</td>
+      <td>AGAAGGTAAACTGAGTCCCCAGAA</td>
+    </tr>
+    <tr>
+      <td>Has2_FW</td>
+      <td>CAAAGAGGTTCGTTCAAGTTCTGA</td>
+    </tr>
+    <tr>
+      <td>Has2_REV</td>
+      <td>TGTGTTTGTTTCCCACTAGCTCTC</td>
+    </tr>
+    <tr>
+      <td>Hif1a_FW</td>
+      <td>CATAAAGTCTGCAACATGGAAGGT</td>
+    </tr>
+    <tr>
+      <td>Hif1a_REV</td>
+      <td>ATTTGATGGGTGAGGAATGGGTT</td>
+    </tr>
+    <tr>
+      <td>HPRT1_FW</td>
+      <td>TGATAGATCCATTCCTATGACTGTAGA</td>
+    </tr>
+    <tr>
+      <td>HPRT1_REV</td>
+      <td>AAGACATTCTTTCCAGTTAAAGTTGAG</td>
+    </tr>
+  </tbody>
+</table>

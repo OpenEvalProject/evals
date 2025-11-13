@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Neuroscience Graduate Program, Western University London Canada
-2. https://ror.org/05kb8h459 Department of Integrative Medical Biology, Umeå University Umeå Sweden
-3. https://ror.org/02grkyz14 Department of Physiology and Pharmacology, Western University London Canada
+1. Neuroscience Graduate Program, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Integrative Medical Biology, Umeå University Umeå Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))
+3. Department of Physiology and Pharmacology, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
@@ -28,13 +28,13 @@ We recorded action potentials in the distal axon of single FA-1 and SA-1 neurons
 
 ## Methods
 
-## Study participants and data sample
+### Study participants and data sample
 
 Human participants (five males and eight females) provided written informed consent in accordance with the Declaration of Helsinki. The Umeå University ethics committee approved the study (PI: Johansson). The general experimental methodology, procedure, and apparatus have been described previously (Pruszynski and Johansson, 2014).
 
 We recorded action potentials from single first-order tactile neurons terminating in the glabrous skin of the tips of the index, long, or middle fingertips, using tungsten electrodes (Vallbo and Hagbarth, 1968). The electrodes were inserted into the median nerve at the level of the upper arm or wrist. The present study focuses on FA-1 or SA-1 neurons, classified according to previously described criteria (Vallbo and Johansson, 1984). Of the 53 neurons recorded, 30 were FA-1 and 23 were SA-1.
 
-## Stimuli
+### Stimuli
 
 Each neuron was stimulated by lines embossed on a flat surface that moved tangentially across the receptive field along the proximal distal axis of the finger (Figure 1A). The stimulation surface was a photo-etched nylon polymer (EF 70 GB, Toyobo Company, Japan) wrapped around a rotating drum (diameter = 59 mm).
 
@@ -48,15 +48,15 @@ Raised lines oriented –10, –5, 5, and 10° relative to the axis perpendicula
 
 All neurons were scanned at eight tangential speeds: 15, 20, 30, 45, 60, 90, 120, and 180 mm/s presented in random order. A subset of neurons was scanned at up to four additional speeds: 2.5, 5, 10, and 270 mm/s. When the 270 mm/s speed was presented, it was randomly interleaved with the main eight speed conditions. When the three slowest speeds were presented, they were always done after all other speed conditions and in a set order, from fastest to slowest (i.e. 10 mm/s, 5 mm/s, and then 2.5 mm/s). These very slow speeds take a long time to complete so presenting them at the end minimized the risk of losing isolation of the current neuron during the eight main speeds and thereby creating partial datasets. All the analyses presented here focus on the main speed conditions since these were available for all neurons. Note that the same general trends hold for the additional speeds and that the raw data for all speed conditions is provided alongside this manuscript. For each neuron and speed, the drum rotated three times, resulting in 15 trials for each line stimulus and recorded speed condition (5 presentations of stimuli per drum rotation x 3 drum rotations = 15 trials).
 
-## Data processing and analysis
+### Data processing and analysis
 
-## Sampling
+#### Sampling
 
 The nerve signal, the instantaneous position of the stimulus surface, and the contact force were digitally sampled at 19.2 kHz, 2.4 kHz, and 0.6 kHz, respectively (SC/ZOOM, Department of Integrative Medical Biology, Umeå University).
 
 To quantify the intensity of a neuron’s response, we used peak and mean firing rate. For each spike train evoked by an edge passing over the receptive field, we calculated peak firing rate as the reciprocal of the shortest inter-spike interval observed in the evoked response. Mean firing rate was calculated as the number of spikes evoked within an 8 mm response window (the minimum distance between adjacent elements on the drum) divided by the duration of the stimulus traversing this window. Furthermore, for each spike train, we generated the firing rate profile by computing the instantaneous frequency of the action potentials defined as the inverse of the interval between consecutive impulses for the duration of the interval. This calculated rate profile was then treated as a continuously recorded signal.
 
-## Orientation signaling as a function of scanning speed
+#### Orientation signaling as a function of scanning speed
 
 To analyze how well a neuron signaled edge orientation at each scanning speed based on the above response measures, we used methods analogous to those previously described (Pruszynski and Johansson, 2014).
 
@@ -64,17 +64,17 @@ For the intensity measures, we calculated how frequently the peak or mean firing
 
 For a neuron’s firing rate profiles, we calculated the probability of correctly classifying an observed profile to the line stimulus that evoked it. To that end, we pairwise cross-correlated all firing rate profiles obtained at the speed in question. For each profile, we then calculated an average of the correlations between the remaining (14) trials with the same line orientation and the average for 14 trials from each of the other three line orientations. Finally, we calculated how often the highest average correlation resulted from stimuli with the same line orientation as opposed to the other orientations (chance = 0.25). We again only considered 14 other trials to avoid classification bias.
 
-## Speed-invariant orientation signaling
+#### Speed-invariant orientation signaling
 
 To investigate a neuron’s capacity to signal edge orientation in a speed-invariant manner, we applied the classification approach described above for within-speed signaling of other speed conditions. For the intensity measures, we quantified how frequently the peak or mean firing rate evoked by each presentation of a particular line orientation at one speed was closer to the average response of the trials with the same line orientation for another speed (i.e. correctly classified) as opposed to trials with the other line orientations (i.e. incorrectly classified). For firing rate profiles, we quantified how often a neuron’s firing rate profile for a given orientation and speed was best correlated with profiles evoked by stimuli with the same orientation but at different speeds (i.e. correctly classified) as opposed to profiles evoked with the other line orientations also at different speeds (i.e. incorrectly classified). These analyses were performed with firing rate profiles conventionally represented in the temporal domain but also represented in the spatial domain where the positions of the underlying action potential are referenced to the position of the stimulus surface relative to the skin.
 
-## Precision of spiking responses
+#### Precision of spiking responses
 
 The hypothesis that subfield arrangement structures neurons’ spiking activity when edges pass over their receptive fields motivated us to estimate the spatial precision of generated action potentials with reference to neurons’ signaling of fine edge orientation differences. For this purpose, we used a correlation-based measure of similarity between pairs of individual spike trains after imposing various amounts of noise on the position of the recorded action potentials (Fellous et al., 2004; Schreiber et al., 2003). Thus, we convolved each spike train with Gaussians of different kernels with roughly logarithmically spaced SDs in the range of 5–1280 µm, which corresponds to increasingly blurring a neuron’s receptive field sensitivity topography (Jarocka et al., 2021). For each neuron and kernel width, we then pairwise correlated all smoothed spike trains and determined the spatial precision of action potentials by calculating which kernel width yielded the largest average difference in correlations with the same orientations at other speeds and with different orientations at different speeds (termed ‘best kernel’). This analysis thus only considered correlations between speed conditions since our hypothesis predicts speed-invariant edge orientation signaling when spike trains are represented in the spatial domain.
 
 For spike trains convolved with the best kernel averaged across speeds for the FA-1 and SA-1 neurons, respectively, we also quantified for each neuron type the proportion of correctly classified orientations across scanning speeds analogous to the analysis of speed-invariant orientation signaling with firing rate profiles (chance performance = 0.25). Finally, based on pairwise comparisons between the available stimuli, we quantified the proportion of correctly classified orientations as a function of angular difference (chance = 0.5). Given our dataset, the available angular differences were 5 (between –5 and –10° line stimuli and between +5 and +10° line stimuli), 10 (–5 and +5°), 15 (–10 and +5°; –5 and +10°), and 20° (–10 and +10°).
 
-## Statistics
+#### Statistics
 
 We carried out all statistical analysis in R Studio (V1.2.5) and SPSS (V29). Details of statistical analysis are provided in the text including the degrees of freedom, the test statistic, the p-value, and the effect size (partial eta squared: ηp2). In all cases, kernel width data was log-transformed, and discrimination probability data was arcsine square root transformed where needed. For ANOVAs evaluating discrimination probability, we subtracted chance from the data such that a significant intercept in the ANOVA model meant that overall performance was above chance. These analyses included scanning speed (and sometimes orientation difference) as a within-group (repeated measures) factor and neuron type as a between-group factor.
 
@@ -88,7 +88,7 @@ We recorded action potentials from 30 FA-1 and 23 SA-1 isolated neurons when sti
 
 **Figure 2.:** (A) Mean firing rate averaged across fast-adapting type 1 (FA-1) neurons (red line) and slow-adapting type 1 (SA-1) neurons (blue line), respectively. The error bars represent the SEM across neurons (FA-1: n=30; SA-1: n=23). The thin gray lines represent mean responses for each of the four line stimuli separately. (B and C) Same format but for peak firing rate and spike count, respectively.
 
-## Orientation signaling as a function of scanning speed
+### Orientation signaling as a function of scanning speed
 
 For each scanning speed, we calculated how well an ideal observer could correctly classify an edge orientation based on a given neuron’s peak and mean firing rate (see Methods). Discrimination accuracy based on both of these measures was poor but above chance across the speeds (Figure 3A, B). That is, separate two-way ANOVAs with speed as a within-group (repeated measures) factor and neuron type as a between-group factor were applied to the proportion of correctly classified edge orientations referenced to chance performance (25%) and revealed a significant intercept for both peak (F1,51 = 556.9, p<0.001, ηp2=0.92) and mean (F1,51 = 196.3, p<0.001, ηp2=0.79) firing rate.
 
@@ -102,7 +102,7 @@ Given that edge orientation signaling can occur via changes in the sequential st
 
 These results show that the sequential structure of individual first-order tactile neuron responses contains considerable information about fine edge orientation differences. However, it is not obvious that neuron subfield arrangements are a crucial factor in the structuring of responses in this regard. That is, first-order tactile neurons can be incredibly sensitive to skin distortions and produce remarkably repeatable spiking responses with temporal precision to the millisecond level, so it may be argued that edge orientation discrimination can be based on any difference in mechanical events produced by non-identical stimuli (Suresh et al., 2016).
 
-## Speed-invariant orientation signaling
+### Speed-invariant orientation signaling
 
 The following section deals with the ability of individual first-order tactile neurons to precisely signal information about edge orientation in a speed-invariant manner. We are motivated to investigate speed invariance because speed often varies when touching and manipulating objects but mostly because it provides one means of testing whether the subfield arrangement of FA-1 and SA-1 neurons is an important factor for their signaling of fine differences in edge orientation.
 
@@ -114,7 +114,7 @@ Based on a neuron’s response to a line stimulus recorded at a given speed, we 
 
 In contrast, firing rate profiles contained substantial information about edge orientation at other speeds if represented in the spatial domain and therefore not compressed or dilated with speed changes (i.e. when the position of each action potential is referenced to the position of the edge relative to the skin; Figure 4D). Averaged across the speeds, mean discrimination accuracy was 41% (range as a function of speed: 29–48%) among FA-1 neurons and 32% (range: 28–35%) among SA-1 neurons. A two-way ANOVA referenced to chance performance (25%), with speed as a within-group factor and neuron type as a between-group factor, revealed a significant intercept (F1,51 = 119.2, p<0.001,ηp2=0.70). Across-speed discrimination accuracy was reliably better for FA-1 neurons than for SA-1 neurons (F1,51 = 14.2, p<0.001, ηp2=0.22). Discrimination accuracy also varied with speed (F7,357 = 41.9, p<0.001, ηp2=0.45), with a decrease in performance for higher speeds presumably related to the relative decrease in the overall number of action potentials per stimulus. A significant interaction between speed and neuron type (F7,357 = 6.5, p<0.01, ηp2=0.11) reflected a higher increase in discrimination accuracy with decreasing speed for the FA-1 than for SA-1 neurons.
 
-## Spatial precision of spike responses
+### Spatial precision of spike responses
 
 The analysis above indicates that the spatial structuring of FA-1 and SA-1 responses is fairly stable over scanning speeds, which supports our hypothesis that neurons’ subfield arrangements give rise to their ability to signal fine edge orientation differences. However, it does not establish whether the spatial precision of the generated action potentials aligns with the spatial acuity of the subfield arrangement of FA-1 and SA-1 neurons (Jarocka et al., 2021).
 
@@ -130,7 +130,7 @@ For each neuron and kernel-speed combination, we averaged the correlations invol
 
 The distribution of best kernels averaged across scanning speeds was narrow with a mean value of 66 µm for FA-1 neurons and 73 µm for SA-1 neurons (Figure 5C). A two-way ANOVA showed a main effect of scanning speed (F7,357 = 8.38, p<0.001, ηp2=0.141) but not of neuron type (F1,51 = 0.98, p=0.32, ηp2=0.019). There was also a significant interaction between the effects of these factors (F7,357 = 8.4, p<0.001, ηp2=0.142) as SA-1 kernels were less sensitive to scanning speed (Figure 5D). Notably, the estimates of spatial precision based on fine edge orientation discrimination are very similar to the estimates of spatial acuity of the subfield arrangements for FA-1 and SA-1 neurons (see Jarocka et al., 2021 and Discussion).
 
-## Discrimination accuracy based on convolved spike trains
+### Discrimination accuracy based on convolved spike trains
 
 Here, we examined across-speed discrimination accuracy based on convolved spike trains. We calculated discrimination accuracy across the speeds after convolving the spike trains with the mean of the best kernel across FA-1 and SA-1 neurons averaged across the speeds (66 and 73 µm, respectively). We justified the use of a single kernel given the relatively narrow distribution of best kernels across neurons of each type, and the fact that for individual neurons, the exact kernel had a modest effect on the calculated dissimilarity of the relevant spike trains. Note that the corresponding analyses based on the best kernels specified for each neuron individually showed virtually the same results.
 

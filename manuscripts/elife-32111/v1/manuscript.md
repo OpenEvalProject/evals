@@ -45,7 +45,7 @@
 
 ## Abstract
 
-10.7554/eLife.32111.001 Insulin resistance in muscle, adipocytes and liver is a gateway to a number of metabolic diseases. Here, we show a selective deficiency in mitochondrial coenzyme Q (CoQ) in insulin-resistant adipose and muscle tissue. This defect was observed in a range of in vitro insulin resistance models and adipose tissue from insulin-resistant humans and was concomitant with lower expression of mevalonate/CoQ biosynthesis pathway proteins in most models. Pharmacologic or genetic manipulations that decreased mitochondrial CoQ triggered mitochondrial oxidants and insulin resistance while CoQ supplementation in either insulin-resistant cell models or mice restored normal insulin sensitivity. Specifically, lowering of mitochondrial CoQ caused insulin resistance in adipocytes as a result of increased superoxide/hydrogen peroxide production via complex II. These data suggest that mitochondrial CoQ is a proximal driver of mitochondrial oxidants and insulin resistance, and that mechanisms that restore mitochondrial CoQ may be effective therapeutic targets for treating insulin resistance.
+Insulin resistance in muscle, adipocytes and liver is a gateway to a number of metabolic diseases. Here, we show a selective deficiency in mitochondrial coenzyme Q (CoQ) in insulin-resistant adipose and muscle tissue. This defect was observed in a range of in vitro insulin resistance models and adipose tissue from insulin-resistant humans and was concomitant with lower expression of mevalonate/CoQ biosynthesis pathway proteins in most models. Pharmacologic or genetic manipulations that decreased mitochondrial CoQ triggered mitochondrial oxidants and insulin resistance while CoQ supplementation in either insulin-resistant cell models or mice restored normal insulin sensitivity. Specifically, lowering of mitochondrial CoQ caused insulin resistance in adipocytes as a result of increased superoxide/hydrogen peroxide production via complex II. These data suggest that mitochondrial CoQ is a proximal driver of mitochondrial oxidants and insulin resistance, and that mechanisms that restore mitochondrial CoQ may be effective therapeutic targets for treating insulin resistance.
 
 ## Introduction
 
@@ -57,61 +57,238 @@ In the present study, we have performed global analysis of the proteome and tran
 
 ## Results
 
-## Insulin resistance models
+### Insulin resistance models
 
 To identify pathways that may contribute to insulin resistance in adipose tissue we used unbiased proteomics to specifically look for factors or pathways that: (a) change across a range of insulin-resistant models including in humans, and (b) that have a demonstrable link to mitochondrial redox homeostasis. The models studied included adipose tissue from mice fed a high fat high sucrose diet (HFHSD) for different periods of time and three in vitro models of insulin resistance (3T3-L1 adipocytes treated with chronic insulin, dexamethasone or tumour necrosis factor-α). We initially focussed on adipose tissue as our tissue of interest for two main reasons. First, adipose tissue insulin resistance is found in mice and humans that display whole body insulin resistance and insulin resistance at this site can influence whole body insulin sensitivity (Abel et al., 2001; Sugii et al., 2009). Second, there are highly robust in vitro adipocyte models (3T3-L1 cells) that accurately recapitulate both insulin action and the generation of insulin resistance using a range of insults that mimic perturbations implicated in insulin resistance in vivo such as hyperinsulinemia, inflammation and glucocorticoids. These models are invaluable since they provide a highly controlled system for manipulating insulin sensitivity in a cell autonomous manner.
 
 Mice fed a HFHSD for one day were glucose intolerant and the extent of glucose intolerance plateaued by 14 d (Figure 1—figure supplement 1A–B). Adipose tissue insulin resistance was observed by 5 d and this degree of resistance was maintained to 42 d of HFHSD feeding (Figure 1A, Figure 1—figure supplement 1C). Skeletal muscle exhibited a comparatively delayed onset of insulin resistance consistent with previous studies (Turner et al., 2013), but also reached a maximal observed insulin resistance by 14 d (Figure 1—figure supplement 1D). Insulin resistance in in vitro models was defined by impaired HA-GLUT4 translocation to the plasma membrane (Figure 1B) and insulin-mediated 2-deoxyglucose (2DOG) uptake (Figure 1—figure supplement 1E). Together, these models provided an ideal integrated platform with which to explore drivers of insulin resistance.
 
-## Proteomic analysis of insulin resistance
+![Figure 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig1-v1.jpg)
+
+**Figure 1.:** (A) Adipose tissue 3H-2-DOG uptake during a glucose tolerance test in mice fed a high fat high sucrose diet (HFHSD) for indicated times. Results show mean ±S.E.M. of eight mice. *p<0.05 versus mice fed a HFHSD for 0 days, t-tests corrected for multiple comparisons. (B) 3T3-L1 adipocytes were treated with chronic insulin (CI), dexamethasone (Dex) or tumour necrosis factor-α (TNF) to induce insulin resistance and stimulated with 100 nM insulin for 20 min where indicated before determination of insulin sensitivity by HA-GLUT4 abundance at the plasma membrane (PM). Results show mean ±S.E.M. of six separate experiments. *p<0.05 versus insulin-stimulated control cells, t-tests corrected for multiple comparisons. (C) Scatter plot of z-scores of protein changes (p<0.01) in adipose tissue from mice fed a HFHSD for 5 or 14 d (red = proteins consistently up-regulated, blue = proteins consistently down-regulated, purple = proteins with mixed response (up/down), orange = proteins altered at a single time point, black open circle = changed at both HFHSD time points and at least two in vitro models). (D) Three-dimensional direction analysis for proteomic data across the three 3T3-L1 adipocyte models of insulin resistance (coloured proteins = p < 0.01). Axes correspond to the z-scores of protein changes and coloured points indicate proteins changed in at least two out of three models (red = proteins up-regulated, blue = proteins down-regulated, purple = proteins with mixed response (up/down) across models). (E) Scatter plot of z-scores for pathways from proteomic analysis of insulin-resistant tissue (y-axis) or cells (x-axis). Selected pathways with z-scores >4 in tissue and cells are highlighted. (F) Heat map of correlations between expression of proteins within selected KEGG pathways and clinical measures from a cohort of obese subjects. Pathways of interest from (E) with significant (>0.423 or <−0.423) correlation with % suppression of circulating non-esterified fatty acids (NEFA) during a hyperinsulinaemic-euglycaemic clamp are shown (S-State NEFA, steady-state non-esterified free fatty acids during hyperinsulinaemic-euglycaemic clamp; HOMA_IR, Homeostatic model assessment of insulin resistance; GIR, glucose infusion rate during a hyperinsulinaemic-euglycaemic clamp; Delta NEFA, change in circulating NEFA concentrations between baseline and during a hyperinsulinaemic-euglycaemic clamp; % suppression NEFA, percentage suppression of NEFAs between baseline and during a hyperinsulinaemic-euglycaemic clamp; Val, valine; Leu, leucine; Iso, isoleucine; TCA, tricarboxylic acid cycle; Terpenoid bb biosyn., Terpenoid backbone biosynthesis). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Blood glucose concentrations during a glucose tolerance test (GTT) in mice fed a HFHSD for indicated times. (B) Incremental AUC (iAUC) for blood glucose concentrations during a GTT in Figure 1—figure supplement 1A. Results show mean ±S.E.M. of nine to fifteen mice. *p<0.05 versus mice fed a HSHFD for 0 d, t-tests corrected for multiple comparisons. (C) Insulin-regulated 3H-2-DOG uptake was assessed in adipose tissue explants from mice fed a HFHSD for indicated times and stimulated with 10 nM insulin where indicated. Results show mean ±S.E.M. of five mice. #p<0.05 versus unstimulated explants from mice fed a HFHSD for 0 days, *p<0.05 versus insulin-stimulated explants from mice fed a HFHSD for 0 days, t-tests corrected for multiple comparisons. (D) Quadriceps 3H-2-DOG uptake during a glucose tolerance test in mice fed a HFHSD for indicated times. Results show mean ±S.E.M. of nine to fifteen mice. *p<0.05 versus mice fed a HSHFD for 0 d, t-tests corrected for multiple comparisons. (E) 3T3-L1 adipocytes were treated with chronic insulin (CI), dexamethasone (Dex) or tumour necrosis factor-α (TNF) as described in the Materials and Methods and stimulated with 100 nM insulin for 20 min where indicated before determination of insulin sensitivity by 3H-2-DOG uptake. Results show mean ±S.E.M. of six separate experiments. #p<0.05 versus unstimulated control cells *p<0.05 versus insulin-stimulated control cells, t-tests corrected for multiple comparisons. (F–H) Venn diagrams depicting overlap between differentially expressed proteins between models of insulin resistance (F), differentially expressed pathways between models of insulin resistance (G) and between differentially expressed transcripts and proteins in insulin-resistant adipose tissue from mice fed a HFHSD for 5 or 14 d (H). (I–K) Log2 fold change relative to controls for transcripts plotted against log2 fold change data for protein from CI (I), Dex (J) and TNF (K) models. Differential expression at adj. p<0.05. Correlation between transcript and proteins indicated by correlation coefficient, r. (Grey = not differentially expressed at mRNA and protein level, blue = differentially expressed mRNA only, purple = differentially expressed protein only, green = differentially expressed mRNA and protein). Statistical analyses described in Materials and Methods. (L) Heat map of log2 fold change data for mRNA and protein data for 19 proteins found to be regulated in all models (Figure 1—figure supplement 1F, All Models). (M) Heat map of GSEA-derived p values for 10 pathways found to be regulated in all models (Figure 1—figure supplement 1G, All Models).
+
+### Proteomic analysis of insulin resistance
 
 Proteomic analyses of insulin-resistant adipose tissue and 3T3-L1 adipocytes provided quantitative data on 2981 and 3494 proteins, respectively (Figure 1C–D, Supplementary file 1-tabs A, C), 98 of which were altered at both 5 and 14 d HFHSD time points (Figure 1—figure supplement 1F, top right panel, Supplementary file 1- tab A) and 491 in ≥2 in vitro models (Figure 1—figure supplement 1F, left panel, Supplementary file 1-tab C). A small subset of these (19) were common to both analyses (Figure 1—figure supplement 1F, bottom right panel, Figure 1—figure supplement 1.L ) including the LRP1 chaperone LRPAP1, which is of interest because LRP1 regulates GLUT4 trafficking in adipocytes (Jedrychowski et al., 2010). From gene set enrichment analysis, 13 pathways were altered at both time points in adipose tissue from HFHSD mice (Figure 1—figure supplement 1G, top right panel, Supplementary file 1-tab E). Similarly, there was a high degree of overlap in altered pathways across different in vitro models (Figure 1—figure supplement 1G, left panel, Supplementary file 1-tab E). Ten pathways were overlapping between all models (Figure 1—figure supplement 1G, bottom right panel, Figure 1—figure supplement 1.M). Intriguingly, parallel analysis of gene expression in these models revealed minimal overlap between regulated transcripts and proteins in all models (Figure 1—figure supplement 1I–K, Supplementary file 2). For example, of the 98 proteins altered at both 5 and 14 d HFHSD only 12 were altered at the mRNA level (Figure 1—figure supplement 1H, Supplementary file 2-tab A), and there was limited concordance between changes in proteins and transcript expression for the 19 proteins and 10 pathways found to be altered in both in vivo and in vitro models (Figure 1—figure supplement 1L–M). This lack of concordance between gene and protein expression emphasises how crucial proteomic analyses are in identifying causal links to metabolic disease.
 
-## Integrated analysis of insulin-resistant proteomes
+### Integrated analysis of insulin-resistant proteomes
 
 To identify convergent changes in pathways at the proteome-level that correlated with insulin resistance across all adipocyte models, we generated a combined z-score for pathways across in vivo time points and in vitro models (Figure 1E). There were 13 KEGG pathways (excluding disease pathways) that were highly altered (z-score >4) in in vivo and in vitro analyses. Oxidative phosphorylation was most highly altered in both in vivo and in vitro models, and other pathways of interest included TCA cycle, branched chain amino acid metabolism (valine, leucine and isoleucine degradation), proteasome, ribosome, spliceosome, N-glycan biosynthesis and terpenoid backbone biosynthesis/mevalonate pathway (Figure 1E, Supplementary file 3- tab B).
 
-## Proteomic analysis of human adipose insulin resistance
+### Proteomic analysis of human adipose insulin resistance
 
 To further filter pathways that might be implicated in insulin resistance, we next performed proteomic analysis of adipose tissue from a cohort of obese subjects that have been extensively clinically phenotyped (Chen et al., 2015). This cohort was matched for BMI and comprised insulin- sensitive and insulin-resistant subjects based on responses during a hyperinsulinaemic-euglycaemic clamp, meaning that we could identity pathways related to insulin sensitivity independent of obesity/BMI (Chen et al., 2015). We quantified 4481 proteins across 22 subjects and correlated the expression of proteins (Supplementary file 3- tab A) and pathways (Supplementary file 3- tab B) with clinical features that are diagnostic of insulin sensitivity. For the purposes of this exercise, we focused on suppression of non-esterified fatty acids (NEFAs) during the clamp as this is likely to be more directly related to insulin action in adipose tissue than glucose infusion rate (GIR), which is likely driven mainly by muscle. We identified 299 proteins (Supplementary file 3- tab A) and 26 pathways (Supplementary file 3- tab B) that were positively correlated with insulin sensitivity and 142 proteins and two pathways (ribosome, spliceosome) that were negatively correlated with insulin sensitivity (r = <−0.423 or >0.423) (Supplementary file 3- tabs A, B). Importantly, the PPAR signalling pathway, a known regulator of adipose insulin sensitivity (Sugii et al., 2009), was positively associated with insulin sensitivity in this analysis. Of the 13 pathways of interest from the integrated proteomic analysis of insulin resistance models (Figure 1E) only five were positively associated with insulin sensitivity in human adipose tissue (Figure 1F, Supplementary file 3-tab B). These comprised spliceosome, central carbon metabolism (pyruvate metabolism, TCA cycle, glycolysis, pentose phosphate pathway), amino acid metabolism including branched chain amino acid synthesis/degradation and the terpenoid backbone biosynthesis/mevalonate pathway, which generates precursors for isoprenoids such as cholesterol and CoQ. This is of interest as branched chain amino acid metabolism (Newgard et al., 2009) and spliceosome function (Vernia et al., 2016) have been implicated in adipocyte or whole body insulin sensitivity, providing support for our analysis pipeline.
 
-## The mevalonate and coenzyme Q biosynthesis pathways are altered in insulin resistance
+### The mevalonate and coenzyme Q biosynthesis pathways are altered in insulin resistance
 
 We were particularly interested in the potential role of the mevalonate pathway in insulin resistance because this pathway feeds CoQ biosynthesis, an essential component of mitochondrial electron transport and so defects in this pathway might play a role in mitochondrial oxidative stress. Our data revealed changes in transcripts and proteins throughout the mevalonate pathway (Figure 2, Figure 2—figure supplement 1, Supplementary file 1- tabs A-E, Supplementary file 2- tabs A-E, Supplementary file 3- tabs A-B), but when assessing different endpoints of the mevalonate pathway such as cholesterol, N-glycosylation (dolichol) and CoQ, we only observed altered protein expression in components of the CoQ pathway in both human and mouse adipose tissue (Figure 2). COQ7 and COQ9 were lower in insulin-resistant adipose tissue from humans and mice (Figure 2), while ADCK3/COQ8 was dysregulated at the protein and mRNA levels in vitro (Figure 2—figure supplement 1). Our integrated analysis of insulin-resistant proteomes from in vivo and in vitro models, and human, pointed toward a convergence upon dysregulated CoQ biosynthesis in insulin resistance.
 
-## Mitochondrial CoQ content is decreased selectively in insulin resistance
+![Figure 2.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig2-v1.jpg)
+
+**Figure 2.:** Human figures represent expression of pathways or proteins in human data (Supplementary file 3). Circles and triangles represent gene set enrichment pathway analyses for proteomic analysis of tissue from mice fed a HFHSD for 5 (circle) or 14 d (triangle) as indicated in the figure legend (significance = adj. p<0.05). Squares represent individual protein data (adj. p<0.01). Statistical analyses described in Materials and Methods. All proteins in mevalonate/terpenoid backbone biosynthesis pathway are depicted along with selected proteins from CoQ biosynthesis, N-glycan biosynthesis and cholesterol/steroid biosynthesis. Colours indicate direction of change as in legend. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Circles represent gene set enrichment pathway analyses (significance = p < 0.05). Each circle represents a different model of insulin resistance, ordered as indicated in the legend. Left squares represent integrated single gene/protein data from directional analysis for in vitro models, and right square for in vivo models (3T3-L1 transcript p<0.001, 3T3-L1 protein p<0.01, adipose tissue transcript p<0.001, adipose tissue protein p<0.01). Statistical analyses described in Methods. All proteins in mevalonate/terpenoid backbone biosynthesis pathway depicted along with selected proteins from CoQ biosynthesis, N-glycan biosynthesis and cholesterol/steroid biosynthesis. Colours indicate direction of change as in legend.
+
+### Mitochondrial CoQ content is decreased selectively in insulin resistance
 
 We next determined if the change in expression of mevalonate/CoQ pathway proteins translated into altered CoQ metabolism. To do this, we measured total CoQ content in in vivo and in vitro models of adipocyte insulin resistance. Whole-cell CoQ concentrations were decreased in in vitro models (Figure 3A) but not in insulin-resistant adipose tissue (Figure 3B). We postulated that because CoQ is found in membranes throughout the cell that there might be a selective depletion of CoQ in specific locations, for example in mitochondria where it is synthesised. To investigate this, we analysed CoQ in subcellular fractions from 3T3-L1 adipocytes and adipose tissue. This revealed a selective depletion of CoQ in mitochondria across all models (Figure 3C–D, Figure 3—figure supplement 1A–B). This decrease was not due to changes in mitochondrial content (assessed via citrate synthase activity and OXPHOS subunit abundance; Figure 3—figure supplement 1C–J, Supplementary file 2- tabs A-D). Consistent with data from model systems, adipose tissue mitochondrial CoQ10 (the major form of CoQ in humans) was positively correlated with insulin-induced suppression of NEFAs (Figure 3E–F, Table 1) and whole-body insulin sensitivity (GIR) in obese humans (Figure 3—figure supplement 1K–L, Table 1). Mitochondrial CoQ10 was also significantly and positively correlated with expression of proteins in the CoQ biosynthesis pathway (r =+0.52) (Supplementary file 3-tab B) indicating that decreased biosynthesis may contribute to lower mitochondrial CoQ in insulin resistance. Stratification of participants by adipose tissue mitochondrial CoQ10 revealed no effect of age or BMI (Table 1). These findings reveal that decreases in mitochondrial CoQ are an obesity-independent feature of adipocyte insulin resistance.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig3-v1.jpg)
+
+**Figure 3.:** (A) Concentrations of CoQ9 in control (Ctrl) 3T3-L1 adipocytes, and adipocytes treated to induce insulin resistance with chronic insulin treatment (CI), dexamethasone (Dex) or TNFα (TNF). (B) Total adipose tissue concentrations of CoQ9 were determined in mice fed a HFHSD for 0, 5 and 14 d. (C) Concentrations of CoQ9 in the mitochondria of 3T3-L1 adipocytes treated as specified. (D) Concentrations of CoQ9 in mitochondria of adipose tissue from mice fed a HFHSD for indicated times. (A–D) Results show mean ±S.E.M of three to five separate in vitro studies and six in vivo studies. *p<0.05 versus control samples, t-tests corrected for multiple comparisons. (E) Obese participants were stratified into insulin-sensitive (upper tertile, 11 subjects) and insulin-resistant (lower two tertiles, 22 subjects) groups based on the % reduction in circulating NEFAs during a hyperinsulinaemic-euglycaemic clamp. Mean adipose mitochondrial CoQ10 concentrations were calculated for each group, error bars are S.E.M. (Mann-Whitney, *p<0.05). (F) Correlation between rate of reduction (%) in circulating NEFA and adipose mitochondrial CoQ10 concentrations for human subjects in Figure 3E. Colours correspond to colours in Figure 3E. (G) Concentrations of CoQ9 in mitochondria of skeletal muscle (quadriceps) from mice fed a HFHSD for indicated times. Results show mean ±S.E.M of four to six in vivo studies. *p<0.05 versus control samples, t-tests corrected for multiple comparisons. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Concentrations of CoQ9 in the microsomal fraction (A) and plasma membrane (B) of 3T3-L1 adipocytes treated as specified. (C) Citrate synthase activity in lysates of 3T3-L1 adipocytes treated as indicated. (A–C) Results show mean ±S.E.M. of five to eight separate experiments. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (D) Immunoblot analysis of specific subunits of the mitochondrial respiratory complexes in in vitro models of insulin resistance. (E) Densitometric analysis of Figure 3—figure supplement 1D. (D–E) Results show mean ±S.E.M. of five to eight separate experiments. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (F) Citrate synthase activity in lysates of adipocyte tissue from mice fed a HFHSD diet for indicated times. Results show mean ±S.E.M. of six separate experiments. (G–J) Immunoblot analysis of specific subunits of the mitochondrial respiratory complexes in whole adipose (G) or skeletal muscle (I) tissue or in mitochondrial fractions from adipose (H) or quadriceps skeletal muscle (Quad) (J) tissue from mice fed a HFHSD for indicated times. Blots are representative of at least three separate experiments. (K) Obese participants were stratified into insulin-sensitive (upper tertile, 11 subjects) and insulin-resistant (lower two tertiles, 22 subjects) groups based on glucose infusion rate (GIR) during a hyperinsulinaemic-euglycaemic clamp. Mean adipose mitochondrial CoQ10 levels were calculated for each group (Mann-Whitney, *p=0.05). (L) Correlation between patient glucose infusion rate and adipose mitochondrial CoQ10 concentrations. Colours correspond to colours in Figure 3—figure supplement 1K. (M–P) Concentrations of non-esterified cholesterol in the whole cell homogenates (M), mitochondria (N), microsomal fraction (O) and plasma membrane (P) of 3T3-L1 adipocytes treated as specified. Results show mean ±S.E.M of three to five separate in vitro studies. *p<0.05 versus control samples, t-tests corrected for multiple comparisons. (Q) 13C6-CoQ9 concentrations in 3T3-L1 adipocyte models of insulin resistance or in 3T3-L1 adipocytes treated with the inhibitor of CoQ biosynthesis 4-nitrobezoic acid (NB) incubated with 13C-4-hydroxybenzoic acid for 12 hr. Results show mean ±S.E.M of four separate studies. *p<0.05 versus control samples, t-tests corrected for multiple comparisons. (R–T) Concentrations of CoQ9 in whole muscle (R) or liver (T) tissue or mitochondria from liver (S) of mice fed a HFHSD for 0, 5, 14 and 42 d. (U) Concentrations of non-esterified cholesterol in total cell membrane fraction obtained from epididymal adipose tissue from mice fed a HFHSD for 0, 5 and 14 d. (V–W) Concentrations of non-esterified cholesterol in skeletal muscle (V) or liver (W) from mice fed a HFHSD for 0, 5, 14 and 42 d. For R-W, results show mean ±S.E.M of four to six mice. *p<0.05 versus control samples, t-tests corrected for multiple comparisons.
+
+**Table 1.**
+ Anthropometric, clinical and metabolic characteristics of obese females stratified into a upper tertile and lower two tertiles based on adipose tissue mitochondrial CoQ content (CoQhigh vs CoQlow).All p values calculated by Mann Whitney test, p>0.05 in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>CoQhigh (n = 11)</th>
+      <th>CoQlow (n = 22)</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, y</td>
+      <td>53 ± 11</td>
+      <td>51 ± 13</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>BMI, kg/m2</td>
+      <td>36.6 ± 4.2</td>
+      <td>36.9 ± 5.1</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Subcutaneous fat, cm2 a</td>
+      <td>588 ± 132</td>
+      <td>546 ± 114</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Visceral fat, cm2 a</td>
+      <td>210 ± 37</td>
+      <td>264 ± 74</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Liver fat, % a</td>
+      <td>6.8 ± 4.5</td>
+      <td>13.6 ± 10.3</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>Mean adipocyte size, μm b</td>
+      <td>71.3 ± 8.9</td>
+      <td>72.6 ± 9.0</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol, mmol/L</td>
+      <td>5.0 ± 0.8</td>
+      <td>4.8 ± 0.7</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol, mmol/L</td>
+      <td>3.0 ± 0.8</td>
+      <td>2.9 ± 0.6</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>HDL cholesterol, mmol/L</td>
+      <td>1.5 ± 0.2</td>
+      <td>1.4 ± 0.3</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Triacylglycerides, mmol/L</td>
+      <td>0.8 ± 0.3</td>
+      <td>1.0 ± 0.4</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Fasting insulin, mU/L</td>
+      <td>14.2 ± 4.9</td>
+      <td>16.0 ± 7.4</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>Fasting NEFA, mmol/L</td>
+      <td>0.46 ± 0.14</td>
+      <td>0.43 ± 0.13</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>NEFA during low dose insulin infusion, mmol/L</td>
+      <td>0.03 ± 0.02</td>
+      <td>0.06 ± 0.03</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>NEFA suppression during low dose insulin infusion, %</td>
+      <td>92.1 ± 4.5</td>
+      <td>86.5 ± 6.9</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Glucose infusion rate during high dose insulin infusion, μmol/kg fat free mass/min</td>
+      <td>117.8 ± 26.6</td>
+      <td>98.5 ± 29.4</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Endogenous glucose production suppression during low-dose insulin infusion, %</td>
+      <td>73.6 ± 12.1</td>
+      <td>60.5 ± 15.7</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>HOMA-IR score</td>
+      <td>2.9 ± 1.1</td>
+      <td>3.5 ± 1.7</td>
+      <td>0.40</td>
+    </tr>
+  </tbody>
+</table>
+
+_a –CoQhighn = 10, CoQlown = 22.b - CoQhighn = 9, CoQlown = 18._
 
 Intriguingly, our proteomic data indicated that the expression of proteins integral to the mevalonate pathway was decreased in fat from humans and mice and from 3T3-L1 adipocytes treated with dexamethasone or TNF-α whereas this was not the case in the chronic insulin 3T3-L1 adipocyte model (Figure 2—figure supplement 1). Thus, we next examined if the observed decrease in mitochondrial CoQ reflected changes in CoQ biosynthesis, which we measured by determining 13C6-CoQ9 in 3T3-L1 adipocytes incubated with 13C6-4-hydroxybenzoic acid. Consistent with pathway analysis and our intracellular measures of cholesterol content (Figure 3—figure supplement 1M–P), CoQ biosynthesis rates were lower in cells treated with dexamethasone or TNF-α but elevated in response to chronic insulin (Figure 3—figure supplement 1Q). Together, it appears probable that dexamethasone and TNF-α treatments lower mitochondrial CoQ largely via reduced biosynthesis, although increased CoQ in microsomal and PM subcellular fractions (Figure 3—figure supplement 1A–B) in these models point to additional dysregulation of CoQ trafficking. Since these models replicate the lower content of mevalonate/CoQ biosynthesis pathway proteins measured in mice and humans, it is likely that decreased CoQ biosynthesis contributes to loss of CoQ in these more physiological systems. This does not appear to be the case for adipocytes treated with chronic insulin, where additional pathway(s) likely contribute to dysregulated mitochondrial CoQ homeostasis.
 
 The above findings highlight loss of mitochondrial CoQ as a common feature of adipocyte insulin resistance so we next investigated if a similar phenomenon occurs in other insulin responsive tissues, most notably muscle in view of its major role in whole body glucose metabolism/insulin resistance. In muscle, we found decreased mitochondrial CoQ at 14 and 42 d HFHSD feeding (Figure 3G). These time points correlate with the emergence of insulin resistance in muscle (Figure 1—figure supplement 1D). In contrast to adipose tissue, total muscle CoQ was lower at all time points tested (Figure 3—figure supplement 1R), potentially reflecting higher mitochondrial content of this tissue. Liver mitochondrial CoQ was unchanged in response to HFHSD feeding (Figure 3—figure supplement 1S), despite changes in total CoQ at 5 d HFHSD feeding (Figure 3—figure supplement 1T). Changes in cholesterol content in in vitro models (Figure 3—figure supplement 1M–P), adipose tissue (Figure 3—figure supplement 1U), muscle (Figure 3—figure supplement 1V) and liver (Figure 3—figure supplement 1W) were inconsistent with a causal role in insulin resistance across multiple tissues. These data suggest that a decrease in mitochondrial CoQ may be involved at an early stage in the development of insulin resistance in muscle and adipose tissue.
 
-## Supplementation of CoQ restores mitochondrial CoQ and insulin sensitivity
+### Supplementation of CoQ restores mitochondrial CoQ and insulin sensitivity
 
 To test whether loss of CoQ contributes to insulin resistance in adipocytes and muscle, we first examined whether restoration of mitochondrial CoQ could restore insulin sensitivity in 3T3-L1 adipocytes. Addition of CoQ9 had no effect in control cells but increased mitochondrial CoQ9 in insulin-resistant cells (Figure 4A) and both CoQ9 and CoQ10 improved insulin-stimulated HA-GLUT4 translocation and 2DOG uptake in all cell models (Figure 4B, Figure 4—figure supplement 1A–B). In light of the importance of adipocyte lipolysis in whole body glucose homeostasis (Perry et al., 2015; Titchenell et al., 2016), we next tested whether CoQ could also improve insulin-regulated suppression of lipolysis in these models. Dex or TNFα treatment enhanced basal lipolysis as previously described (Souza et al., 1998; Xu et al., 2009) and insulin-regulated inhibition of lipolysis was defective in all models (Figure 4C, Figure 4—figure supplement 1C–E). Provision of CoQ9 had no effect in control cells but increased suppression of lipolysis by insulin in in vitro models (albeit not significantly in the TNF model; p=0.11).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig4-v1.jpg)
+
+**Figure 4.:** (A) Concentrations of CoQ9 in mitochondria of control (Ctrl) and insulin-resistant 3T3-L1 adipocyte models supplemented with 10 µM CoQ9 as indicated. Results show mean ±S.E.M. of three to four independent experiments. *p<0.05 versus control cells, †p<0.05 versus respective cells without CoQ supplementation, t-tests corrected for multiple comparisons. (B–C) 3T3-L1 adipocytes were treated to induce insulin resistance with and without 10 µM CoQ9 supplementation as indicated before determination of insulin sensitivity by HA-GLUT4 abundance at the plasma membrane (PM) in unstimulated cells and in response to 100 nM insulin (B) or by suppression of lipolysis by 0.5 nM insulin (C; calculated from Figure 4—figure supplement 1C–E as described in the Materials and Methods). Results show mean ±S.E.M. of three to four independent experiments. *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus respective insulin-stimulated cells without CoQ supplementation, t-tests corrected for multiple comparisons. (D) Blood glucose concentrations during a glucose tolerance test (GTT) in mice treated as indicated (5 d HFHSD; saline (SAL) or 10 mg/kg CoQ10). Results show mean ±S.E.M. of five to nine mice. *p<0.05 versus chow-fed saline treated mice at the same time-point, †p<0.05 versus HFHSD-fed saline-treated mice at the same time point, t-tests corrected for multiple comparisons. (E) Incremental area under the curve (iAUC) for blood concentrations during GTT in Figure 4D. *p<0.05 versus chow-fed saline treated mice, †p<0.05 versus HFHSD-fed saline-treated mice, t-tests corrected for multiple comparisons. (F) Blood insulin concentrations at 0 and 15 min of the GTT in Figure 4D. (G) Suppression of circulating non-esterified fatty acids (NEFAs) between 0 and 15 min of the GTT in Figure 4D. *p<0.05 versus chow-fed saline treated mice, †p<0.05 versus HFHSD-fed saline-treated mice, t-tests corrected for multiple comparisons. (H) Blood glucose concentrations during an ITT in mice treated as indicated (14 d HFHSD; 10 mg/kg CoQ10). Results show mean ±S.E.M. of five to nine mice. *p<0.05 versus chow-fed saline treated mice at the same time-point, †p<0.05 versus HFHSD-fed saline-treated mice at the same time point, t-tests corrected for multiple comparisons. (I–K) Epididymal (I) and inguinal (J) adipose tissue and quadriceps (K) 3H-2-DOG uptake during the ITT in Figure 4H. Results show mean ±S.E.M. of five to nine mice. *p<0.05 versus chow-fed saline treated mice at the same time-point, †p<0.05 versus HFHSD-fed saline-treated mice at the same time point, t-tests corrected for multiple comparisons. (L) Adipose tissue explants from mice fed a chow diet or a HFHSD for 14 d and supplemented with CoQ10 at specified doses were stimulated with 10 nM insulin where indicated and 2-DOG uptake was assessed. Results show mean ±S.E.M. of five mice. *p<0.05 versus insulin-stimulated explants from mice fed a chow diet and †p<0.05 versus insulin-stimulated explants from HFHSD-fed mice without CoQ supplementation, t-tests corrected for multiple comparisons. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 3T3-L1 adipocytes were treated to induce insulin resistance with and without 10 µM CoQ9 supplementation as indicated before determination of insulin sensitivity by 3H-2-DOG uptake in unstimulated and insulin-stimulated cells. (B) 3T3-L1 adipocytes were treated to induce insulin resistance in the presence and absence of 10 µM CoQ10 as indicated before determination of insulin sensitivity by 3H-2-DOG uptake in non-stimulated and insulin-stimulated cells. Results show mean ±S.E.M. for three to four in vitro studies. #p<0.05 versus unstimulated control cells, *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus insulin-resistant model without CoQ supplementation, t-tests corrected for multiple comparisons. (C–E) 3T3-L1 adipocytes were treated to induce insulin resistance with and without 10 µM CoQ9 supplementation as indicated before insulin sensitivity was determined by inhibition of glycerol release as a measure of lipolysis. Lipolysis was stimulated with 1 nM isoproterenol. Results show mean ±S.E.M. for three separate studies. #p<0.05 versus control cells without isoproterenol, *p<0.05 versus isoproterenol-stimulated control cells, t-tests corrected for multiple comparisons. (F) Blood glucose concentrations during a GTT in mice treated as indicated (14 d HFHSD; 10 mg/kg CoQ10). (G) Incremental area under the curve (iAUC) for blood concentrations during GTT in Figure 4—figure supplement 1F. (H) Blood insulin concentrations during GTT in Figure 4—figure supplement 1G. (I) Blood NEFA concentrations during the first 30 min of the GTT in Figure 4D. (J–L) Epididymal (J) and inguinal (K) adipose tissue and quadriceps (L) 3H-2-DOG uptake during the glucose tolerance test in Figure 4—figure supplement 1F. Results show mean ±S.E.M. of nine mice. *p<0.05 versus mice fed a chow diet, †p<0.05 versus HFHSD-fed mice without CoQ supplementation, t-tests corrected for multiple comparisons. (M) Concentrations of CoQ9 and CoQ10 in mitochondria isolated from adipose tissue from mice fed a HFHSD for 14 d and supplemented with CoQ10 at specified dose. Results show mean ±S.E.M. of five mice. *p<0.05 versus mice without CoQ supplementation, t-tests corrected for multiple comparisons. (N) Blood glucose levels during a GTT in mice fed a HFHSD for 14 d and supplemented with stated dose of CoQ10. Results show mean ±S.E.M. of five mice. *p<0.05 versus HFHSD-fed mice without CoQ supplementation, t-tests corrected for multiple comparisons. (O) iAUC for blood glucose concentrations during a GTT in Figure 4—figure supplement 1N. Results show mean ±S.E.M. of five mice. *p<0.05 versus mice without CoQ10 supplementation, t-tests corrected for multiple comparisons. (P–Q) Body mass (P) and epididymal fat pad mass (Q) for mice fed a HFHSD for 14 d and supplemented with CoQ10 at specified dose. Results show mean ±S.E.M. of five mice.
 
 We next tested whether CoQ could alleviate insulin resistance in vivo by providing liposomal CoQ10 via intraperitoneal injection every second day. CoQ10 was used for these studies as it was not feasible to obtain sufficient CoQ9 and the doses of CoQ10 used in these studies were optimised so that we did not observe changes in body weight or adiposity, reported previously (Xu et al., 2017), since such metabolic changes would likely directly affect insulin action in muscle and adipose. CoQ10 administration improved whole-body glucose tolerance in mice fed a HFHSD for 5 or 14 d (Figure 4D–E, Figure 4—figure supplement 1F–G) without altering insulin secretion (Figure 4F, Figure 4—figure supplement 1H). Improved glucose tolerance was accompanied by increased suppression of NEFAs (Figure 4G, Figure 4—figure supplement 1I) and 2DOG clearance into epididymal (Figure 4—figure supplement 1J) and inguinal (Figure 4—figure supplement 1K, p=0.06) adipose depots and quadriceps (Figure 4—figure supplement 1L, p=0.08) during the GTT. In a more direct measure of insulin sensitivity in vivo, CoQ10 also increased insulin responsiveness of HFHSD-fed mice during an ITT as measured by blood glucose excursion (Figure 4H) and 2DOG uptake into epididymal and inguinal fat pads and quadriceps muscle (Figure 4I–K).
 
 Adipose depots retain a high degree of insulin responsiveness and insulin resistance ex vivo (Figure 1—figure supplement 1C, Figure 4L). Therefore, we used adipose tissue for ex vivo analyses rather than muscle tissue, for which ex vivo analyses are more technically challenging and give less robust responses (data not shown). Administration of increasing doses of CoQ10 to HFHSD-fed mice for 14 d dose-dependently increased CoQ10 in mitochondria from epididymal adipose tissue (Figure 4—figure supplement 1M), improved glucose tolerance (Figure 4—figure supplement 1N–O) and improved insulin-stimulated 2DOG uptake in an ex vivo assay using adipose tissue explants (Figure 4L). CoQ10 did not alter whole body or epididymal fat pad mass (Figure 4—figure supplement 1P–Q). Together, these data suggest that provision of exogenous CoQ improves insulin-regulated glucose uptake and that lower CoQ content may contribute to insulin resistance in adipose tissue and muscle.
 
-## Inhibition of CoQ synthesis induces insulin resistance
+### Inhibition of CoQ synthesis induces insulin resistance
 
 Our previous data shows that lower mitochondrial CoQ content is a common feature of insulin resistance and that replacing CoQ can overcome insulin resistance. We next investigated whether specific perturbation of CoQ biosynthesis was sufficient to induce insulin resistance in adipocytes. To achieve this, we incubated adipocytes with 4-nitrobenzoic acid (NB) or 4-cholorobenzoic acid (CB) (Alam et al., 1975; Forsman et al., 2010) to competitively inhibit 4-hydroxybenzoate:polyprenyl transferase (Coq2) (Figure 5A). Both inhibitors decreased mitochondrial CoQ9 (Figure 5A) to a similar extent to that observed in insulin-resistant adipocytes (Figure 3C), while CoQ9 supplementation restored normal mitochondrial CoQ9 concentrations (Figure 5A). Importantly, both inhibitors caused insulin resistance in adipocytes (Figure 5B–5C, Figure 5—figure supplement 1A–B) which could be reversed with provision of CoQ. Similarly, siRNA knock down of the key regulatory proteins in CoQ biosynthesis that were down-regulated in insulin-resistant mouse and human adipose tissue (Coq7 or Coq9) (Figure 5—figure supplement 1C–D) lowered mitochondrial CoQ9 (Figure 5D) and triggered insulin resistance (Figure 5E–5F, Figure 5—figure supplement 1E). Insulin resistance triggered by pharmacological or genetic inhibition of CoQ biosynthesis occurred independently of consistent defects in insulin signalling to the key regulators of glucose transport (Akt or the Akt substrate TBC1D4), or changes in GLUT4 expression (Figure 5—figure supplement 1F–M). Similarly, CoQ provision did not alter signalling responses or GLUT4 expression in any in vitro models of insulin resistance (Figure 5—figure supplement 1N–Q) despite improved insulin-stimulated HA-GLUT4 translocation, 2DOG uptake and suppression of lipolysis under these conditions (Figure 4B–C, Figure 4—figure supplement 1A). These data are consistent with previous reports that insulin resistance is not driven by overt and consistent defects in proximal insulin signalling (Hoehn et al., 2008; Tan et al., 2015).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig5-v1.jpg)
+
+**Figure 5.:** (A) Concentrations of CoQ9 in mitochondria of control (Ctrl) 3T3-L1 adipocytes and adipocytes treated with 2.5 mM 4-nitrobenzoic (NB) or 4-chlorobenzoic acid (CB) with or without 10 µM CoQ9. Results show mean ±S.E.M. for five-six separate in vitro experiments. *p<0.05 versus control cells, †p<0.05 versus respective model without CoQ supplementation, t-tests corrected for multiple comparisons. (B–C) 3T3-L1 adipocytes were treated with NB or CB before sensitivity was determined by HA-GLUT4 abundance at the plasma membrane (PM) before and after stimulation with 100 nM insulin (B) or suppression of lipolysis by 0.5 nM insulin (C; calculated from Figure 5—figure supplement 1B as described in the Materials and Methods). Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus respective insulin-stimulated cells without CoQ supplementation, t-tests corrected for multiple comparisons. (D) Concentrations of CoQ9 in mitochondria of 3T3-L1 adipocytes treated with control scrambled (Scr) siRNA, or pooled siRNA targeted to Coq7 or Coq9. Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (E–F) Insulin sensitivity of 3T3-L1 adipocytes treated with Scr or siRNA targeted to Coq7 or Coq9 as measured by 2DOG uptake (E) or suppression of lipolysis by 0.5 nM insulin (F; calculated from Figure 5—figure supplement 1E as described in the Materials and Methods). Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus insulin-stimulated control cells, t-tests corrected for multiple comparisons. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) 3T3-L1 adipocytes were treated with nitrobenzoic acid (NB) or chlorobenzoic acid (CB) and/or CoQ9 before sensitivity was determined by 3H-2-DOG uptake. Results show mean ±S.E.M. for four separate studies. #p<0.05 versus unstimulated control cells, *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus respective insulin-stimulated cells without CoQ supplementation, t-tests corrected for multiple comparisons. (B) 3T3-L1 adipocytes were treated with NB and/or CoQ9 before insulin sensitivity was determined by inhibition of glycerol release as a measure of lipolysis. Lipolysis was stimulated with 1 nM isoproterenol. Results show mean ±S.E.M. for three separate studies. #p<0.05 versus control cells without isoproterenol, *p<0.05 versus isoproterenol -stimulated control cells, †p<0.05 versus isoproterenol- and insulin-stimulated NB-treated cells without CoQ supplementation, t-tests corrected for multiple comparisons. (C–D) 3T3-L1 adipocytes treated with scrambled (Scr) or a panel of three different separate or pooled siRNAs against either anti-Coq7 (C) or anti-Coq9 (D) and mRNA levels of target genes were analysed by qPCR to determine the extent of knockdown. Results show mean ±S.E.M. for three separate studies. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (E) 3T3-L1 adipocytes were treated with scrambled siRNA or pooled siRNA to Coq7 or Coq9 before insulin sensitivity was determined by inhibition of glycerol release as a measure of lipolysis. Lipolysis was stimulated with 1 nM isoproterenol. Results show mean ±S.E.M. for three separate studies. #p<0.05 versus control cells without isoproterenol, *p<0.05 versus isoproterenol -stimulated control cells, t-tests corrected for multiple comparisons. (F–Q) Insulin signalling responses and GLUT4 expression was determined by imunnoblot and densitometry in 3T3-L1 adipocytes treated with pharmacological inhibitors of CoQ biosynthesis with and without CoQ9 supplementation (F–I), siRNA to Coq7 or Coq9 (J–M) or with treatments to induce insulin resistance with and with CoQ9 supplementation (N–Q). Results show mean ±S.E.M. of three independent experiments. *p<0.05 versus insulin-stimulated control cells, t-tests corrected for multiple comparisons. (R–S) Concentrations of non-esterified cholesterol (R) and CoQ9 (S) in 3T3-L1 adipocytes treated with 10 µM simvastatin (Sim) or 20 µM atorvastatin (Ator) for 72 hr. Results show mean ±S.E.M. for four separate studies. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (T) 3T3-L1 adipocytes were treated with 10 µM simvastatin (Sim) or 20 µM atorvastatin (Ator) for indicated times with and without 100 µM mevalonate or 10 µM CoQ9 supplementation as indicated before determination of insulin sensitivity by HA-GLUT4 abundance at the plasma membrane (PM) in unstimulated and insulin-stimulated cells. Results show mean ±S.E.M. for four separate studies. #p<0.05 versus control cells, *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus respective statin-treated cells without CoQ supplementation, t-tests corrected for multiple comparisons.
+
 The link between CoQ and insulin resistance is of interest in the context of statins that target the mevalonate pathway and have recently been shown to be associated with progression to type two diabetes in humans (Cederberg et al., 2015; Preiss et al., 2011; Sattar et al., 2010). To begin to explore this, we incubated 3T3-L1 adipocytes with simvastatin or atorvastatin for up to 72 hr. Both statins lowered cellular cholesterol (Figure 5—figure supplement 1R) and CoQ content (Figure 5—figure supplement 1S), providing proof-of-principle that lower mevalonate pathway activity influences cellular CoQ content in adipocytes. Statins induced insulin resistance (Figure 5—figure supplement 1T), and this was reversed by providing CoQ9 or mevalonate (Figure 5—figure supplement 1T). Together with the observation that more specific inhibitors of the CoQ biosynthetic pathway also trigger insulin resistance, these data provide convincing evidence that loss of CoQ is sufficient to induce adipocyte insulin resistance, and this may contribute to off-target effects of statin therapy.
 
-## Loss of mitochondrial CoQ induces insulin resistance via increased mitochondrial oxidants
+### Loss of mitochondrial CoQ induces insulin resistance via increased mitochondrial oxidants
 
 Mitochondrial CoQ is essential for cellular respiration, as it shuttles electrons from various membrane-bound/associated dehydrogenase complexes to complex III during oxidative phosphorylation. In addition, CoQ can regulate the formation of superoxide anion radicals from the various CoQ-interacting sites of complexes I, II and III. In this respect, excess mitochondrial CoQ above that required for maximal respiratory flux can be thought of as an ‘electron sink’. Consistent with this concept, previous studies have shown that modest loss of mitochondrial CoQ can be tolerated for electron transport activity, but at the cost of increased mitochondrial oxidants (Quinzii et al., 2008).
 
 We hypothesised that loss of CoQ in mitochondria may contribute to increased oxidants in insulin resistance. To test this possibility, we utilised peroxiredoxin (PRDX) dimerisation as an indicator of subcellular oxidant burden (Perkins et al., 2015). Peroxiredoxins undergo homodimerisation as part of their mechanism to reduce hydroperoxides particularly hydrogen peroxide (H2O2). Therefore, the PRDX dimer:monomer ratio is a useful surrogate to assess subcellular H2O2 (Bayer et al., 2013). There was no change in the total content of PRDX1-3 in insulin-resistant models (Figure 6A, Figure 6—figure supplement 1A,C,J) and the dimer:monomer ratio of cytosolic PRDX1 and PRDX2 also remained unchanged (Figure 6—figure supplement 1A–D). In contrast, the dimer:monomer ratio of mitochondrial PRDX3 increased significantly in all in vitro models (Figure 6A–6B). Increased dimerisation of PRDX3 was also observed under conditions of pharmacological (Figure 6C, Figure 6—figure supplement 1E) or genetic inhibition (Figure 6—figure supplement 1G–H) of CoQ biosynthesis, with limited or no changes in PRDX2 redox state (Figure 6—figure supplement 1F,I). Restoration of normal mitochondrial CoQ9 content by provision of exogenous CoQ9 lowered the PRDX3 dimer:monomer ratio (Figure 6D–6E). PRDX3 dimerisation was also enhanced in insulin-resistant adipose tissue at 5 and 14 d HFHSD feeding (Figure 6F, Figure 6—figure supplement 1J). In vivo administration of CoQ10 under conditions that improved insulin sensitivity lowered the PRDX3 dimer-to-monomer ratio in a dose-dependent manner (Figure 6G, Figure 6—figure supplement 1K). Together, these data place decreased mitochondrial CoQ upstream of increased mitochondrial oxidants, most likely in the form of H2O2 in adipocyte insulin resistance.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig6-v1.jpg)
+
+**Figure 6.:** (A–E) PRDX3 dimerisation was assessed by immunoblot in 3T3-L1 adipocytes treated as indicated, and the PRDX3 dimer/monomer ratio was measured by densitometry and expressed relative to control cells (B, C, E). Results show mean ±S.E.M. for four to eight separate in vitro experiments. For B, *p<0.05 versus control cells, t-tests corrected for multiple comparisons. For C and E, *p<0.05 versus control cells, †p<0.05 versus respective treatment without CoQ supplementation, t-tests corrected for multiple comparisons. (F) PRDX3 dimer/monomer ratio in adipose tissue obtained from mice fed a HFHSD (relative to ratios from adipose tissue from mice fed a HFHSD for 0 d). Results show mean of six mice, *p<0.05 versus control, t-tests corrected for multiple comparisons. (G) PRDX3 dimer/monomer ratio in adipose tissue from mice fed a HFHSD for 14 d and supplemented with CoQ10 at the specified dose. Results show mean of six mice (relative to ratios from adipose tissue from mice without CoQ10 supplementation). *p<0.05 versus control, t-tests corrected for multiple comparisons. (H) PRDX3 dimer/monomer ratio in adipocytes expressing empty vector (EV) or mitochondria-targeted catalase (mCAT) treated with and without NB. Ratios expressed relative to control EV cells. Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus untreated EV control cells, †p<0.05 versus NB-treated EV cells, t-tests corrected for multiple comparisons. (I) 3T3-L1 adipocytes expressing EV or mCAT treated were treated with NB before insulin sensitivity was determined by 3H-2-DOG uptake. (J) 3H-2-DOG uptake in EV or mCAT expressing 3T3-L1 adipocytes treated with scrambled siRNA (Scr) or siRNA targeted to Coq7 or Coq9 and stimulated with insulin where indciated. Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus insulin-stimulated EV control cells, †p<0.05 versus respective insulin-stimulated EV cells, t-tests corrected for multiple comparisons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Western blot and densitometry analysis of the PRDX1 (A, B) and PRDX2 (C, D) dimerisation status in 3T3-L1 adipocytes treated as indicated. Ratios expressed relative to control cells. (E–I) PRDX3 (E, G, H) and PRDX2 (F, I) dimerisation was assessed by immunoblot in 3T3-L1 adipocytes treated as indicated to inhibit CoQ synthesis and the PRDX3 dimer/monomer ratio measured by densitometry and expressed relative to control cells (H). Blots are representative of at least three separate experiments. Results show mean ±S.E.M. of four independent experiments. *p<0.05 versus control cells, †p<0.05 versus siRNA-treated cells without CoQ supplementation, t-tests corrected for multiple comparisons. (J–K) Representative PRDX3 immunoblots in adipose tissue obtained from mice fed a chow or HFHSD for indicated times (J) or from mice fed a HFHSD and supplemented with CoQ10 as indicated (K) (quantified in Figure 6F and G). (L) Immunoblot validation of overexpression of catalase in 3T3-L1 expressing mitochondrial-targeted catalase (mCAT). (M–O) Immunoblot analysis of PRDX3 dimer/monomer ratio in 3T3-L1 adipocytes expressing EV or mCAT treated as indicated to inhibit CoQ synthesis with NB (M, quantified in Figure 6H) or siRNA to Coq7 or Coq9 (N–O). Ratios expressed relative to control cells in (O). Results show mean ±S.E.M. of three to four independent experiments. *p<0.05 versus control cells, †p<0.05 versus siRNA-treated cells without CoQ supplementation, t-tests corrected for multiple comparisons.
+
 To determine if increased mitochondrial H2O2 was necessary for loss of mitochondrial CoQ to cause insulin resistance, we over-expressed mitochondria-targeted catalase (Figure 6—figure supplement 1L) in the setting of CoQ deficiency. This lowered the PRDX3 dimer:monomer ratio in cells where CoQ biosynthesis was inhibited (Figure 6H Figure 6—figure supplement 1M–O), and improved insulin responses in these conditions (Figure 6I–6J), consistent with loss of mitochondrial CoQ causing insulin resistance via mitochondrial H2O2.
 
-## Loss of mitochondrial CoQ impairs insulin action via complex II-derived H2O2
+### Loss of mitochondrial CoQ impairs insulin action via complex II-derived H2O2
 
 We next examined the effect of loss of mitochondrial CoQ on mitochondrial function and oxidant production in more detail. Although the relationship between impaired mitochondrial function and insulin resistance is controversial (Montgomery and Turner, 2015), we first examined whether insulin resistance or loss of CoQ was associated with bioenergetic defects since CoQ plays a key role in oxidative phosphorylation. We assessed mitochondrial respiration in all in vitro models of insulin resistance. In control and insulin-resistant 3T3-L1 adipocytes cultured in galactose, to force ATP-production via mitochondria (Aguer et al., 2011), we observed no defect in basal or maximal (uncoupler-induced) respiration (Figure 7A). Instead, basal oxygen consumption was increased in multiple models (Figure 7A). To explore this further, we measured oxygen consumption in digitonin-permeabilised 3T3-L1 adipocytes to assess maximal respiratory function (Figure 7B–D, Figure 7—figure supplement 1A). In these experiments, FAD-linked respiratory capacity assessed via succinate was the only activity compromised in all models (Figure 7C). This defect was specific to succinate dehydrogenase, since oxidation of medium-chain fatty acid (i.e., octanoylcarnitine, which also donates electrons to CoQ via electron-transferring-flavoprotein dehydrogenase [Ruzicka and Beinert, 1977]), was not altered (Figure 7—figure supplement 1A). Collectively, these data suggest that loss of mitochondrial CoQ decreases succinate-driven complex II capacity, but this does not limit overall mitochondrial respiration in cells.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig7-v1.jpg)
+
+**Figure 7.:** (A) 3T3-L1 adipocytes were incubated in galactose and respiration was assessed using the XFp Analyzer. Following basal measurements, cells were sequentially treated with, oligomycin (Oligo), BAM15 (uncoupler), and rotenone/antimycin A (Rot/AA). (B–D) Mitochondrial respiration in 3T3-L1 adipocytes treated to induce insulin resistance as indicated. Cells were permeabilised with digitonin and specific substrates and inhibitors were added to assess complex I (B), II (C) and IV (D) activity as described in the Material and Methods. Results show mean ±S.E.M. of five to eight separate in vitro experiments. *p<0.05 versus control, t-tests corrected for multiple comparisons. (E–F) Concentration of 2-hydroxyethidium derivative of MitoSox in cells treated (Ctrl, control; NB, nitrobenzoic acid; CI; chronic insulin; PQ; paraquat) as indicated and incubated with MitoSox for 1 hr. Results show mean ±S.E.M. for three to eight separate in vitro experiments. *p<0.05 versus control cells, t-tests corrected for multiple comparisons. (G) Relative PRDX3 dimer/monomer ratio in adipocytes treated with or without NB and uncouplers (BAM15, FCCP) or inhibitors of complex II (10 or 100 µM TTFA (10-TTFA; 100-TTFA) and malonate (Mal). Results show mean ±S.E.M. of PRDX3 dimer/monomer ratio relative to control 3T3-L1 adipocytes across four separate in vitro experiments. *p<0.05 versus control cells, †p<0.05 versus NB-treated cells without additional treatment, t-tests corrected for multiple comparisons. (H) Relative PRDX3 dimer/monomer ratio in control or insulin-resistant adipocytes treated with or without inhibitors of complex II (100 µM TTFA or malonate). Results show mean ±S.E.M. of PRDX3 dimer/monomer ratio relative to control 3T3-L1 adipocytes across three separate in vitro experiments. *p<0.05 versus control cells, †p<0.05 versus insulin-resistant cells without additional treatment, t-tests corrected for multiple comparisons. (I) 3T3-L1 adipocytes were treated with NB and TTFA or malonate where indicated before sensitivity was determined by HA-GLUT4 abundance at the plasma membrane (PM). Results show mean ±S.E.M. for four separate in vitro experiments. *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus insulin-stimulated NB-treated cells without additional treatment, t-tests corrected for multiple comparisons. (J) 3T3-L1 adipocytes were treated to induce insulin resistance and with 100 µM TTFA or 10 mM malonate where indicated before sensitivity was determined by HA-GLUT4 abundance at the plasma membrane (PM). Results show mean ±S.E.M. for three to four separate in vitro experiments. *p<0.05 versus insulin-stimulated control cells, †p<0.05 versus insulin-stimulated insulin-resistant cells without additional treatment, t-tests corrected for multiple comparisons. (K) Adipose tissue explants from mice fed a chow diet or a HFHSD for 14 d were incubated with or without TTFA prior to assessment of insulin-regulated 2-DOG uptake with 10 nM insulin. Results show mean ±S.E.M. of data from five mice. *p<0.05 versus insulin-stimulated explants from mice fed a chow diet, and †p<0.05 versus insulin-stimulated explants from HFHSD-fed mice without TTFA treatment, t-tests corrected for multiple comparisons. See also Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32111/elife-32111-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Mitochondrial respiration was assessed in 3T3-L1 adipocytes treated to induce insulin resistance as indicated. Cells were permeabilised with digitonin and medium chain fatty acid oxidation assessed. Results show mean ±S.E.M. of four to eight separate in vitro experiments. (B) Mitochondrial respiration was assessed in digitonin permeabilised 3T3-L1 adipocytes. Complex I activity was assessed in the absence of the complex II inhibitor TTFA as a control for mitochondrial function. Complex II activity was assessed in the absence and presence of the complex II inhibitor TTFA (100 µM). Results show mean ±S.E.M. of three to four in vitro experiments. *p<0.05 versus control, t-tests corrected for multiple comparisons. (C) PRDX3 dimer/monomer ratio assessed by immunoblot in adipocytes treated with or without NB and uncouplers (BAM15, FCCP) or inhibitors of complex II (10 or 100 µM TTFA and 10 mM malonate) (quantified in Figure 7G). (D–E) PRDX3 dimerisation was assessed by immunoblot (D) in 3T3-L1 adipocytes treated siRNA to Coq7 or Coq9 and uncoupler (BAM15) or inhibitors of complex II (100 µM TTFA or 10 mM malonate) and the PRDX3 dimer/monomer ratio measured by densitometry (E). Results show mean ±S.E.M. of PRDX3 dimer/monomer ratio relative to control 3T3-L1 adipocytes across four independent experiments. *p<0.05 versus control cells, †p<0.05 versus siRNA-treated cells without additional treatment, t-tests corrected for multiple comparisons. (F) PRDX3 dimer/monomer ratio in adipocytes treated with or without NB and inhibitors of complex I (rotenone, 10 µM), complex III (antimycin A, 50 nM) or complex V (oligomycin, 10 µg/mL) was assessed by immunoblot. Images from same gel, lanes removed for clarity. Representative of three independent experiments. (G) CoQ redox status expressed as the ratio of reduced (CoQH2) to oxidised CoQ (CoQ). Results show mean ±S.E.M. of three to four independent experiments. (H–I) PRDX3 dimer/monomer ratio assessed by immunoblot in adipocytes treated to induce insulin resistance and treated with 100 µM TTFA (H) or 10 mM malonate (I) for 2 hr as indicated. Results representative of three independent experiments (quantified in Figure 7I).
 
 Although mitochondrial superoxide (Hoehn et al., 2009) and hydrogen peroxide (H2O2) (Anderson et al., 2009; Paglialunga et al., 2015) have been implicated in insulin resistance, the cause of increased oxidants has yet to be determined. Elevated mitochondrial H2O2 in response to lower CoQ content is likely caused by increased production of the superoxide anion radical, the precursor of H2O2. To test this directly, we determined superoxide in specific in vitro models of adipocyte insulin resistance, using LC-MS to quantify the conversion of mito-hydroethidine to the superoxide-specific product mito-2-hydroxyethidium (Zielonka et al., 2008). Mitochondrial superoxide was increased in the CI model (Figure 7E) and in adipocytes where CoQ biosynthesis was inhibited (Figure 7E–7F), implying that increased mitochondrial H2O2 following loss of CoQ was due to increased superoxide production.
 
@@ -133,53 +310,393 @@ Coenzyme Q has received considerable attention as a supplement to ameliorate a r
 
 ## Materials and methods
 
-## Animal details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>C57/Bl6J mice</td>
+      <td>Animal Resources Centre (Perth, Australia) or Australian BioResources (Moss Vale, Australia)</td>
+      <td>RRID:IMSR_JAX:000664</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>Mouse: 3T3-L1 adipocytes</td>
+      <td>Dr Howard Green, Harvard Medical School</td>
+      <td>RRID:CVCL_0A20</td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Human adipose tissue</td>
+      <td>Clinical details in PMID: 26378474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mitochondrial complex subunits (OXPHOS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 45–8099</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PRDX1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA3-750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PRDX2</td>
+      <td>Abcam</td>
+      <td>Cat# ab109367, clone: EPR5154</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>catalase</td>
+      <td>Abcam</td>
+      <td>Cat# ab52477</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PRDX3</td>
+      <td>Ab Frontier</td>
+      <td>Cat# LF-PA0030</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>14-3-3</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-629, clone K19</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pT642 TBC1D4</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 4288</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TBC1D4</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 2670</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pT308 Akt</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 9275</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pS473 Akt</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 4051</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Akt</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 4685</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T9026</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GLUT4</td>
+      <td>In-house</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA antibody</td>
+      <td>Covance</td>
+      <td>clone 16B1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers: mCoq7_F; tttggaccatagctgcattg and mCoq7_R; tgaggcctcttccatactctg,</td>
+      <td>Sigma Aldrich</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers: mCoq9_F; tcagcagcattctgagacaca and mCoq9_R; gtgctgtagctgctcctcact,</td>
+      <td>Sigma Aldrich</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers: mCypB-F; ttcttcataaccacagtcaagacc; mCypB-R, accttccgtaccacatccat.</td>
+      <td>Sigma Aldrich</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scrambled siRNA: (sense 5′- CAGTCGCGTTTGCGACTGGTT-3′)</td>
+      <td>Shanghai Genepharma</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>anti-Coq7 siRNA (sense 5′- GGGAUCACGCUGGUGAAUAUTT-3′, 5′- GGAUGACCUUAGACAAUAUTT-3′, 5′- GCCUUGUUGAAGAGGAUUAUTT-3′)</td>
+      <td>Shanghai Genepharma</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>anti-Coq9 siRNA (sense 5′- GCAGCAUUCUGAGACACAGTT-3′, 5′- GCUGGUGAUGAUGCAGGAUTT-3′, 5′- GCAAUGAACAUGGGCCACATT-3′)</td>
+      <td>Shanghai Genepharma</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glycerol assay kit</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: FG0100-1KT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEFA kit</td>
+      <td>Waki Pure Chemical Industries</td>
+      <td>Cat#: 279–75104</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Insulin ELISA</td>
+      <td>Crystal Chem</td>
+      <td>Cat#: 90080</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#: 74104</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript first strand cDNA synthesis kit</td>
+      <td>Clontech</td>
+      <td>Cat#: 6110A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-[1,2-3H(N)]-deoxy-D-glucose</td>
+      <td>Perkin Elmer</td>
+      <td>Cat# NET328001MC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin from bovine pancreas</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I5500-1G; CAS 11070-73-8</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coenzyme Q9</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 27597–1 MG CAS 303-97-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CoQ10 liposomal formulation</td>
+      <td>Tichson Corp</td>
+      <td>LiQsorb</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Chlorobenzoic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 135585–50G CAS 74-11-3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Nitrobenzoic acid</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 461091–250G CAS 62-23-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NEM</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 04259–5G CAS 128-53-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# C2920-10MG CAS 370-86-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BAM15</td>
+      <td>Dr Kyle Hoehn</td>
+      <td>PMID: 24634817</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTFA</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T27006-25G CAS 326-91-0</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Malonate</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# M1296-100G CAS 141-82-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoproterenol</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# I6504-100MG CAS 5984-95-2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoSOX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# M36008</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQaunt</td>
+      <td>https://www.biochem.mpg.de/5111795/maxquant</td>
+      <td>Versions 1.5.7.0, 1.4.0.8, 1.3.0.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affeymetrix GeneChip Command Console Software</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-programming environment – affy package</td>
+      <td>http://bioconductor.org/packages/affy/</td>
+      <td>Version 1.52.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-programming environment – limma package</td>
+      <td>http://bioconductor.org/packages/limma/</td>
+      <td>Version 3.30.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-programming environment – directPA package</td>
+      <td>https://CRAN.R-project.org/package=directPA</td>
+      <td>Version 1.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-programming environment – Re-Fraction package</td>
+      <td>https://github.com/PengyiYang/Re-Fraction (copy archived at https://github.com/elifesciences-publications/Re-Fraction)</td>
+      <td>Version 1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image lab 5.2.1</td>
+      <td>BioRad</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LiCOR</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Software Inc.</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Deposited Data</td>
+      <td>Mouse and cell line mass spectrometry data.</td>
+      <td>ProteomeXchange Consortium</td>
+      <td>PXD005128.</td>
+    </tr>
+    <tr>
+      <td>Deposited Data</td>
+      <td>Human mass spectrometry data.</td>
+      <td>ProteomeXchange Consortium</td>
+      <td>PXD006891</td>
+    </tr>
+    <tr>
+      <td>Deposited Data</td>
+      <td>Mouse and cell line microarray data.</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87853</td>
+      <td>GSE87853</td>
+    </tr>
+    <tr>
+      <td>Deposited Data</td>
+      <td>Mouse and cell line microarray data.</td>
+      <td>https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87854</td>
+      <td>GSE87854</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal details
 
 Eight-week-old male C57BL/6J mice were purchased from the Animal Resources Centre (Perth, Australia) or Australian BioResources (Moss Vale, Australia). The animals were kept in a temperature-controlled environment (22 ± 1°C) on a 12 hr light/dark cycle with free access to food and water. Mice were fed ad libitum for a period of 14 days with a standard lab diet (CHOW) (13% calories from fat, 22% calories from protein, and 65% calories from carbohydrate, 3.1 kcal/g; Gordon's Specialty Stock Feeds, Yanderra, Australia) or with high fat high sucrose diet (HFHSD; 47% of calories from fat (40% calories from lard), 21% calories from protein, and 32% calories from carbohydrates (16% calories from starch), 4.7 kcal/g). All experiments were carried out with the approval of the Garvan Institute/St. Vincent's Hospital Animal Experimentation Ethics Committee (09/46) or the approval of the University of Sydney Animal Ethics Committee (2014/694), following guidelines issued by the National Health and Medical Research Council of Australia. All studies used at least five mice per treatment group. Mice from different cages were used to negate cage-specific effects.
 
-## 2DOG uptake assays in adipose tissue explants
+### 2DOG uptake assays in adipose tissue explants
 
 Epididymal fat depots were excised from mice, transferred immediately to warm DMEM/2% BSA/20 mM HEPES, pH 7.4, and minced into fine pieces. Explants were washed twice and incubated in DMEM/2% BSA/20 mM HEPES, pH 7.4 for 2 hr. Explants were then rinsed and incubated in Krebs–Ringer phosphate buffer containing 2% bovine serum albumin (BSA, Bovostar, Bovogen) (KRP buffer; 0.6 mM Na2HPO4, 0.4 mM NaH2PO4, 120 mM NaCl, 6 mM KCl, 1 mM CaCl2, 1.2 mM MgSO4 and 12.5 mM Hepes (pH 7.4)). Insulin was added for 20 min, and glucose transport was initiated by addition of 2-DOG (0.25 μCi, 50 μM) and [14C]mannitol (Source, 0.036 μCi/sample) for the final 5 min of the assay to measure steady-state rates of 2DOG uptake. For experiments using TTFA (Figure 7K), 100 µM TTFA or equivalent volume of vehicle (EtOH) was included during the 2 hr incubation period in DMEM/2% BSA and maintained throughout subsequent washes and incubation. Also, the 2DOG uptake assay was carried out in DMEM without glucose/2% BSA rather than KRP/2% BSA. Uptake was terminated with three rapid washes in ice-cold PBS, after which the cells were solubilised in radioimmune precipitation assay buffer (RIPA; 50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 0.1% SDS, 1 mM EDTA, and 10% glycerol) supplemented with protease inhibitors (Roche). Samples were assessed for radioactivity by scintillation counting and the results were normalised for protein content determined by the bicichoninic acid assay. Cages were randomly assigned to diets and investigators were not blinded to experimental groups.
 
-## In vivo metabolic assays
+### In vivo metabolic assays
 
 Glucose tolerance tests (GTTs) and insulin tolerance tests (ITTs) were performed on mice following a 6 hr fast from 0700 to 1300. For GTTs, mice were injected i.p. with 10% glucose solution at 1 g/kg (Figure 1) or 2 mg/kg (Figure 4 and Figure 4—figure supplement 1) per lean mass. For tracer uptake during the GTT, mice were also administered [3H]- 2DOG tracer (200 μCi/kg lean weight) within the 10% glucose solution. For ITTs, mice were i.p. injected with 80 mg/kg pentobarbitone sodium (Lethabarb Euthanasia Injection, Virbac, Australia), after 20 min the abdominal cavity was incised along the midline to reveal the liver to inject 1 U/kg lean weight of insulin and [3H]- 2-DOG (200 μCi/kg lean weight) into the hepatic portal vein. At the times indicated, blood was sampled from the tail tip and blood glucose determined with an Accu-Chek II glucometer (Roche). Clearance of the [3H]- 2DOG tracer from the blood during the GTT and ITT was assessed to allow calculation of tracer disappearance. [3H]- 2DOG tracer uptake into epididymal and inguinal adipose tissue and quadriceps muscle and conversion to glucose-6-phospate was determined as previously described (Smith et al., 2007). Plasma NEFAs were measured using NEFA C (Wako, Osaka, Japan) according to the manufacturer’s instructions. Cages were randomly assigned to diets and investigators were not blinded to experimental groups.
 
-## Assessment of blood insulin during GTT
+### Assessment of blood insulin during GTT
 
 Blood samples were obtained via tail bleeds using 5 µL heparinised hematocrit tubes (Drummond) and ejected into a mouse ultra-sensitive insulin ELISA (90080, Crystal Chem). ELISA performed as per manufacturer’s instructions.
 
-## 3T3-L1 fibroblast culture and differentiation into adipocytes
+### 3T3-L1 fibroblast culture and differentiation into adipocytes
 
 Mycoplasma-free 3T3-L1 fibroblasts obtained from 3T3-L1 Howard Green (Harvard Medical School, Boston, MA) were maintained in Dulbecco’s Modified Eagle Medium (DMEM) (Thermo Fisher Scientific) supplemented with 10% fetal calf serum (FCS) (Thermo Fisher Scientific), 1% GlutaMAX (Thermo Fisher Scientific) in a humidified atmosphere with 10% CO2. HA-GLUT4 overexpressing 3T3-L1 fibroblasts were generated by retroviral transduction as previously described (Govers et al., 2004). Confluent 3T3-L1 cells were differentiated into adipocytes by the addition of DMEM containing 0.22 µM dexamethasone, 100 ng/mL biotin, 2 µg/mL insulin, 500 µM IBMX (day 0). After 72 hr, medium was replaced with DMEM/10% FCS/GlutaMAX containing 2 µg/mL insulin (day three post differentiation). After a further 72 hr (day six post differentiation), cells were cultured in DMEM/10% FCS/GlutaMAX. Medium was subsequently replaced every 48 hr. Cells were used between days 10 and 15 after the initiation of differentiation.
 
 For stable isotope labelling of amino acids in cell culture (SILAC)-based proteomics, 3T3-L1 fibroblasts were passaged for six cell divisions in DMEM (Sigma Alrich)/10% dialysed FCS (Thermo Fisher Scientific) containing L-arginine (Arg 0) and L-lysine (Lys 0) (‘light’), L-arginine-U-13C614N4 (Arg 6) and L-lysine-2H4 (Lys 4) (‘medium’) or L-arginine-U-13C615N4 (Arg 10) and L-lysine-U-13C615N2 (Lys 8) (‘heavy’). Final concentrations of arginine and lysine were 33 µg/mL and 76 µg/mL, respectively. This strategy generated three distinct SILAC populations. We periodically tested labelling efficiency by mass spectrometry analysis. SILAC-labelled fibroblasts were differentiated into adipocytes as above.
 
-## In vitro models of insulin resistance and CoQ treatment
+### In vitro models of insulin resistance and CoQ treatment
 
 Insulin resistance was induced by dexamethasone, tumour necrosis factor-α (TNF), or hyperinsulinaemia as previously described (Hoehn et al., 2008). The chronic insulin (CI) model of hyperinsulinemia was created by addition of 10 nM insulin to adipocytes at 1200, 1600 and 2000 hr on day 1 and 0800 hr the following day. Glucocorticoid-induced insulin resistance was recreated with 20 nM dexamethasone (Dex) (0.01% ethanol carrier as control), starting on day seven post initiation of differentiation and media was changed every other day for 8 d. Chronic low-dose inflammation was mimicked in 3T3-L1 adipocytes by incubation with 2 ng/mL TNFα (Calbiochem) for 4 d. Medium was changed every 24 hr. For CoQ treatment, cells were incubated with 10 µM CoQ9 (Sigma Aldrich) or 10 µM liposomal CoQ10 (LiQsorb, Tichson Corp.) for 24 hr prior to assays. CoQ9 was dissolved in ethanol at 5 mM and diluted to 10 µM in pre-warmed DMEM/10% FCS, 1% GlutaMAX and incubated at 37°C for 30 min prior to addition to cells. Ethanol was used as a vehicle control (0.2%).
 
-## 2-Deoxyglucose uptake assays in cultured cells
+### 2-Deoxyglucose uptake assays in cultured cells
 
 Following 2 hr serum-starvation in DMEM/0.2% BSA/1% GlutaMAX, cells were washed and incubated in pre-warmed Krebs–Ringer phosphate buffer containing 0.2% bovine serum albumin (BSA, Bovostar, Bovogen) (KRP buffer; 0.6 mM Na2HPO4, 0.4 mM NaH2PO4, 120 mM NaCl, 6 mM KCl, 1 mM CaCl2, 1.2 mM MgSO4 and 12.5 mM Hepes (pH 7.4)). Cells were stimulated with 100 nM insulin for 20 min. To determine non-specific glucose uptake, 25 μM cytochalasin B (ethanol, Sigma Aldrich) was added to the wells before addition of 2-[3H]deoxyglucose (2-DOG) (PerkinElmer). During the final 5 min 2-DOG (0.25 μCi, 50 μM) was added to cells to measure steady-state rates of 2DOG uptake. Following three washes with ice-cold PBS, cells were solubilised in PBS containing 1% (v/v) Triton X-100. Tracer uptake was quantified by liquid scintillation counting and data normalised for protein content. Data were further normalised to maximal insulin stimulation of control cells, set to 100%.
 
-## HA-GLUT4 assay
+### HA-GLUT4 assay
 
 Determination of plasma membrane HA-GLUT4 was performed as previously described (Govers et al., 2004). Briefly, cells were serum-starved for 2 hr in DMEM/0.2% BSA/GlutaMAX. Cells were stimulated with 100 nM insulin for 20 min as indicated. Cells were fixed but not permeabilised, and the amount of HA-GLUT4 present at the plasma membrane determined by the accessibility of the HA epitope to anti-HA antibody (Covance, clone 16B12). Cells were incubated with 20 μg/mL goat anti-mouse Alexa-488-conjugated secondary antibody (Thermo Fisher Scientific). Determination of total HA-GLUT4 was performed in a separate set of cells that underwent the same labelling procedure except that anti-HA staining was performed after permeabilisation of the cells with 0.1% (w/v) saponin. Total HA-GLUT4 was measured separately for each experimental treatment group. Fluorescence (excitation 485 nm/emission 520 nm) was measured using a fluorescent microtiter plate reader (FLUOstar Galaxy, BMG LABTECH). Surface HA-GLUT4 was expressed as a percentage of total HA-GLUT4.
 
-## Lipolysis assay
+### Lipolysis assay
 
 Following 2 hr serum-starvation in DMEM/0.2% BSA/1% GlutaMAX, cells were washed and incubated in DMEM containing 3.5% fatty acid-free BSA (Sigma-Aldrich), GlutaMAX and 10 mM glucose. Cells were treated with or without 1 nM isoproterenol and/or indicated doses of insulin for 1 hr. Aliquots of medium were taken to assay for glycerol content using Sigma glycerol reagent (Sigma-Aldrich) according to the manufacturer's protocol. Following three washes with ice-cold PBS, cells were solubilised in PBS containing 1% (v/v) Triton X-100. Glycerol release as a measure for lipolysis was normalized to cellular protein content. Complete datasets are presented in Figure 4—figure supplement 1 and Figure 5—figure supplement 1. Insulin-stimulated inhibition of lipolysis (Figures 4C, 5C and F) was calculated as glycerol release from cells treated with 0.5 nM insulin and 1 nM isoproterenol as a percentage of the glycerol release from cells treated with 1 nM isoproterenol alone.
 
-## Human cohort and protocol
+### Human cohort and protocol
 
 Adipose mitochondrial CoQ content was assessed in a cohort of females studied using 2-stage hyperinsulinaemic-euglycaemic clamps with deuterated glucose tracers and adipose biopsies, as previously described (Chen et al., 2015). Briefly, the study protocol was approved by St Vincent’s Hospital Human Research Ethics Committee (Sydney, Australia) (HREC/10/SVH/133) and written consent obtained prior to the study. Volunteers were sedentary individuals with obesity (BMI >30 kg/m2) and exclusion criteria were diabetes, treatment with medications known to affect glucose homeostasis,>20 g/d alcohol intake, body weight instability in previous 3 months and known cancer, cardiac, renal or liver disease. All studies were performed at the Clinical Research Facility at the Garvan Institute of Medical Research (Sydney, Australia). The clamp started with a 2 hr primed (5 mg/kg), continuous (3 mg/kg/h) infusion of [6,6-2H2]glucose, followed by a 2 hr infusion of low-dose insulin (15 mU/m2/min) and a 2 hr infusion of high-dose insulin (80 mU/m2/min). The deuterated glucose infusion rate was halved (1.5 mg/kg/h) during, and ceased at the end of, the low-dose insulin infusion. Glucose was infused to maintain whole-blood concentration of 5 mmol/L with variable rate infusion of dextrose (25%, enriched to 2.5% with deuterated glucose). Endogenous glucose production and non-esterified fatty acid (NEFA) suppression during the low- dose insulin clamp reflect hepatic and adipose insulin resistance, while glucose infusion rate during the last 30 min of the high-dose insulin clamp normalised to body fat free mass estimates muscle insulin resistance (Chen et al., 2015). Periumbilical subcutaneous fat biopsy was performed during the basal clamp stage under sterile conditions using a trocar, as described (Chen et al., 2015). Adipose tissue (50 mg) was fixed, dehydrated, paraffin embedded and sectioned and adipocyte cell size measured as previously described (Chen et al., 2015) or snap frozen and stored in −80°C for processing and analysis of CoQ content. Body composition was evaluated using dual-energy X-ray absorptiometry and abdominal fat distribution and liver fat by magnetic resonance imaging as previously described (Chen et al., 2015). To separate subjects into groups (e.g. high vs low mitochondrial CoQ10 concentrations as in Table 1, or insulin sensitive vs insulin resistant in Figure 3E and Figure 3—figure supplement 1K), subjects were divided into an upper tertile (typically 11 subjects) or lower two tertiles (typically 22 subjects) based on specified parameters (e.g. mitochondrial CoQ10 concentration (Table 1), suppression of NEFAs (Figure 3E), glucose infusion rates [Figure 3—figure supplement 1K]).
 
-## Sample preparation for mass spectrometry (mouse adipose tissue)
+### Sample preparation for mass spectrometry (mouse adipose tissue)
 
 Epididymal adipose tissue was excised from mice fed a HFHSD for the specified durations (five mice per time point). Tissue was lysed in 6 M urea, 2 M thiourea, 25 mM triethylammonium bicarbonate, pH 7.9 containing phosphatase and protease inhibitor cocktails (Roche) by tip-probe sonication (2 × 30 s) on ice. Lysates were centrifuged at 17,000 x g, 15 min, 4°C. The fat cake was removed and the supernate precipitated with 6 volumes of acetone, overnight at −20°C. Pelleted protein was re-suspended in 6 M urea, 2 M thiourea, 25 mM triethylammonium bicarbonate, pH 7.9 and quantified by Qubit fluorescence (Thermo Fisher Scientific). 100 µg of protein was subjected to reduction with 10 mM DTT for 60 min at 25°C and alkylated with 25 mM iodoacetamide for 30 min at 25°C in the dark. Excess iodoacetamide was then removed by reaction 20 mM DTT and the sample digested with Lys-C (Wako) at 1:50 (w/w?) enzyme to substrate ratio for 2 hr at 25°C. The mixture was diluted 5-fold with 25 mM triethylammonium bicarbonate and digested further with trypsin at 1:50 enzyme to substrate ratio for 12 hr at 30°C. The peptide mixture was acidified to a final concentration of 2% formic acid, 0.1% trifuoroacetic acid and centrifuged at 16,000 x g for 15 min. Peptides were desalted using hydrophilic lipophilic balance – solid phase extraction (HLB-SPE) cartridges (Waters) followed by elution with 50% acetonitrile, 0.1% trifuoroacetic acid and dried by vacuum centrifugation.
 
-## Sample preparation for mass spectrometry (3T3-L1 adipocytes)
+### Sample preparation for mass spectrometry (3T3-L1 adipocytes)
 
 SILAC 3T3-L1 adipocytes were left untreated (insulin sensitive) or treated to induce insulin resistance (insulin resistant) as described above. Four biological replicates were used for all SILAC experiments. SILAC mixes were made so that a SILAC doublet contained a constant untreated sample acting as a reference for each insulin-resistant model. A label switch was performed in biological replicates to ensure that identified changes in protein expression were due to experimental manipulation. For example, the light versus heavy doublet was analysed twice; we compared protein content in both insulin sensitive (light) versus insulin resistant (heavy) and insulin sensitive (heavy) versus insulin resistant (light).
 
@@ -187,11 +704,11 @@ Cells were serum-starved for 2 hr, washed three times with ice-cold PBS and lyse
 
 RIPA-soluble and RIPA-insoluble samples for each SILAC doublet were prepared for SDS-PAGE by diluting in sample buffer (Thermo Fisher Scientific). Samples were separated by SDS-PAGE on 4–20% gradient gels (Thermo Fisher Scientific). Gels were stained with SYPRO Ruby Protein Gel Stain (Thermo Fisher Scientific) following the manufacturer's instructions. Lanes containing RIPA-soluble samples were cut into 11 slices, and lanes containing RIPA-insoluble samples were divided into eight slices. Each slice contained approximately the same level of SYPRO Ruby signal and was cut into 1 mm x 1 mm squares to assist protein extraction. Gel pieces were de-stained in 250 mM ammonium bicarbonate pH 8, 50% acetonitrile under constant agitation for 30 min. Destain solution was removed and gel pieces dried in 100% acetonitrile. After 10 min, acetonitrile was removed and proteins were digested by the addition of modified trypsin (Promega, 12.5 ng/μL) in 100 mM NH4HCO3. Digestion was carried out overnight at 37°C. The digestion was stopped by the addition of 5% formic acid and peptides eluted with acetonitrile. Finally, peptide solutions were dried, re-suspended in 1% trifluoroacetic acid and desalted on C18 Stagetips (3M, Empore).
 
-## Sample preparation for mass spectrometry (human adipose tissue)
+### Sample preparation for mass spectrometry (human adipose tissue)
 
 Adipose tissue homogenates were diluted 1:1 in 6 M guanidine in 100 mM Tris pH 7.5 containing 10 mM Tris(2-carboxyethyl)phosphine and 40 mM chloroacetamide, and heated at 95°C for 5 min. The lysate was tip-probe sonicated and centrifuged at 20,000 x g for 30 min at 4°C. The supernatant was precipitated with 6 volumes of acetone, overnight at −20°C. Pelleted protein were re-suspended in 10% trifluoroethanol in 100 mM Tris, pH 7.5 and quantified by BCA. Seven µg of protein was digested with 140 ng sequencing grade Lys-C (Wako) for 2 hr at 25°C followed by 140 ng of sequencing grade trypsin (Sigma Aldrich) overnight at 37°C. The digest was acidified to a final concentration of 1% trifluroacetic acid (TFA), and peptides purified using SDB-RPS solid-phase disks (Sigma Aldrich) and eluted with 1% ammonium hydroxide in 80% acetonitrile. Peptides were dried by vacuum centrifugation and resuspended in 0.1% TFA in 2% acetonitrile.
 
-## Quantitative mass spectrometric analysis
+### Quantitative mass spectrometric analysis
 
 For mouse adipose tissue experiments, peptides were loaded onto a 50 cm column with 75 µm inner diameter, packed in-house with 1.9 µM C18 ReproSil particles (Dr Maisch GmbH). Reversed-phase chromatography was performed on an Easy nLC1000 HPLC using a binary buffer system of 0.5% acetic acid (buffer A) and 80% acetonitrile/0.5% acetic acid (buffer B). Peptides were separated by linear gradients of buffer B from 5% to 35% over 240 min, at a flow rate of 250 nL/min and electrosprayed into the mass spectrometer by the application of 2.3 kV using a liquid junction connection. Ionised peptides were analysed on Q-Exactive (Thermo Fisher Scientific). The Q-Exactive was operated in data-dependent acquisition mode, acquiring survey scans of 3 million ions at a resolution of 70,000 at 200 m/z. Twenty of the most abundant isotope patterns from each of the survey scans with charge state ≥2 were selected with an isolation window of 2 Th, and fragmented in the HCD cell with NCE of 25. Maximum ion fill times for the MS/MS scans were 120 ms, target fill value was 1e5 ions with an under fill ratio of 20%. Fragmented ions were analysed with high resolution (35,000 at 400 m/z) in the Orbitrap analyser. Dynamic exclusion was enabled with a duration of 60 s.
 
@@ -201,7 +718,7 @@ The Orbitrap Velos was operated in data-dependent acquisition mode, acquiring su
 
 For human adipose tissue experiments, peptides were loaded onto a 50 cm column with 75 µm inner diameter, packed in-house with 1.9 µM C18 ReproSil particles (Dr Maisch GmbH). Reversed-phase chromatography was performed on an Easy nLC1200 HPLC using a binary buffer system of 0.1% formic acid (buffer A) and 80% acetonitrile/0.5% acetic acid (buffer B). Peptides were separated by linear gradients of buffer B from 2% to 35% over 180 min, at a flow rate of 300 nL/min and electrosprayed into the mass spectrometer by the application of 2.4 kV using a liquid junction connection. Ionised peptides were analysed on Q-Exactive HF (Thermo Fisher Scientific) operated in data-dependent acquisition mode, acquiring survey scans of 3 million ions at a resolution of 60,000 at 200 m/z. Fifteen of the most abundant isotope patterns from each of the survey scans with charge state ≥2 were selected with an isolation window of 1.4 Th, and fragmented in the HCD cell with NCE of 27. Maximum ion fill times for the MS/MS scans were 125 ms, target fill value was 2e5 ions with a target threshold set to 1e5 Fragmented ions were analysed with high resolution (15,000 at 200 m/z) in the Orbitrap analyser. Dynamic exclusion was enabled with a duration of 60 s.
 
-## Mass spectrometry data processing
+### Mass spectrometry data processing
 
 For mouse adipose tissue experiments, raw mass spectrometry data were processed using the MaxQuant software (Cox and Mann, 2008; Cox et al., 2009) version 1.4.0.8 using the default settings with minor changes: Oxidised Methionine (M) and Acetylation (Protein N-term) were selected as variable modifications, and carbamidomethyl (C) as fixed modification. A maximum of two missed cleavages was permitted, 10 peaks per 100 Da, MS/MS tolerance of 20 ppm, and a minimum peptide length of 6. The ‘matching between runs’ algorithm was enabled with a time window of 2 min to transfer identifications between adjacent samples. Database searching was performed using the Andromeda search engine (Cox et al., 2011) integrated into the MaxQuant environment against the mouse Uniprot proteome database, concatenated with known contaminants and reversed sequences of all entries. Protein, peptide and site FDR was controlled at a maximum of 1% respectively. All contaminants and reverse sequenced peptides were removed and the data were log2 transformed. Proteins with 60% or more missing values within each experimental group were removed. Missing expression data within each group was imputed using nearest neighbour averaging or K-nearest neighbours (k = 5) from R package impute (Trevor Hastie et al., 2018).
 
@@ -209,33 +726,33 @@ For SILAC cell culture experiments, raw mass spectrometry data were processed us
 
 For human adipose tissue experiments, raw mass spectrometry data were processed using the MaxQuant software (Cox and Mann, 2008; Cox et al., 2009) version 1.5.7.0 using the default settings with minor changes: Oxidised Methionine (M) and Acetylation (Protein N-term) were selected as variable modifications, and carbamidomethyl (C) as fixed modification. A maximum of two missed cleavages was permitted, 10 peaks per 100 Da, MS/MS tolerance of 20 ppm, and a minimum peptide length of 6. The ‘matching between runs’ algorithm was enabled with a time window of 2 min to transfer identifications between adjacent samples. Database searching was performed using the Andromeda search engine (Cox et al., 2011) integrated into the MaxQuant environment against the human Uniprot proteome database, concatenated with known contaminants and reversed sequences of all entries. Protein, peptide and site FDR was controlled at a maximum of 1% respectively. All contaminants and reverse sequenced peptides were removed, and the data were log2 transformed. To normalise the protein quantifications across different samples, proteins were first ranked within each sample based on their MS intensities and then ranked across all samples to identify the most stable proteins for data normalisation. Using this approach, 40S ribosomal protein (RPSA) was selected for normalisation by calculating a log fold change of protein intensities with respect to RPSA within each sample, allowing relative protein abundance (refer to as normalised ratio) to be comparable across all samples for all proteins.
 
-## Microarray analysis
+### Microarray analysis
 
 RNA was prepared using the RNeasy protocol (Qiagen, Valencia, CA). Quantity and quality of total RNA samples were determined using an ND-1000 spectrophotometer (Thermo Fisher Scientific) and Bioanalyzer 2100 (Agilent Technologies, Palo Alto, CA), respectively. RNA with RNA integrity numbers > 8, 260/280 values > 1.8 and 260/230 values > 1.8 was considered acceptable. Labelled cRNA was hybridised to Mouse Genome 430 2.0 arrays. Initial data analysis files were generated using manufacturer’s GeneChip Command Console Software. Relative mRNA contents were studied for 45,000 transcripts for cells and tissue.
 
-## Microarray data processing
+### Microarray data processing
 
 All statistical data analysis for the gene expression data were performed in the R-programming environment. AT transcripts in the mouse4302 Affymetrix array was pre-processed using R package affyPLM (Bm, 2004; Bolstad BM et al., 2005). Background correction, quantile normalisation and summarisation was performed using RMA function (Irizarry et al., 2003). Quality control assessments of the arrays were performed and problematic arrays were identified and down-weighted for ensuing statistical inference tests using function arrayWeights (Ritchie et al., 2006) within LIMMA (Ritchie et al., 2015) during linear model fitting of the microarray data. Probes were collapsed to gene level using the maximal average expression of probes across all samples.
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Vizcaíno et al., 2016) partner repository with the dataset identifiers PXD005128 and PXD006891. The microarray discussed in this manuscript have been deposited in NCBI's Gene Expression Omnibus (Edgar et al., 2002) and are accessible through GEO Series accession numbers GSE87853 and GSE87854.
 
-## Differential transcript and protein analysis
+### Differential transcript and protein analysis
 
 Differential expression analysis of proteins and transcripts within each model of insulin resistance were performed using moderated t-test from LIMMA package (Goeman and Bühlmann, 2007; Michaud et al., 2008; Wu and Smyth, 2012). For the cell models and adipose tissue, proteins and transcripts with an absolute fold change (FC) >1.5 and controlled for 5% FDR were considered differentially expressed. Empirical Bayes was used for global variance shrinkage and Benjamini and Hochberg method (Benjamini and Hochberg, 1995) was used to correct multiple hypothesis testing. The moderated t-statistics from differential expression analysis in each model was transformed to z-scores and used as the test statistics for the direction analysis (Yang et al., 2014) to identify genes/proteins altered (up/down) across multiple experimental conditions. For the cell models, we performed a 3-dimensional direction analysis (across CI, Dex and TNF) whereas in AT, we performed a 2-dimensional direction analysis (across 5 and 14 d of HFHSD). Significance for transcripts was defined as p-value<0.001 and for proteins at 0.01.
 
-## Pathway enrichment analysis
+### Pathway enrichment analysis
 
 Pathway enrichment for each condition in cell models and adipose tissue were analysed using by testing up- and down-regulation of 192 pathways from the KEGG database (Kanehisa and Goto, 2000) as curated by the Molecular Signature Database C2: curated gene sets (Liberzon et al., 2011; Subramanian et al., 2005) using the mean-rank gene-set enrichment test implemented in LIMMA R package (Goeman and Bühlmann, 2007; Michaud et al., 2008; Wu and Smyth, 2012) in our transcript and protein data. The fold change (log2 scale) of genes and proteins from the individual DE analysis in each model was used as the test-statistics for the GSEA analysis. Significance of pathways was defined at p-value<0.05. CoQ pathway members were edited from the original KEGG annotation to include recent annotations and consisted of Hpd, Tat, Coq2/3/4/5/6/7/9, Adck3, and Adck4.
 
-## Pathway integrative analysis and phenotype association
+### Pathway integrative analysis and phenotype association
 
 For human proteome data, we associated the normalised ratio of each protein with phenotypical information across all samples using pairwise Pearson’s correlation. To perform a similar analysis on pathway level, for each protein, we calculated a relative protein ratio in each sample by subtracting the average of normalised ratios across all samples. Subsequently, for each KEGG pathway, we summarised its overall trend within each sample by summing the relative ratios of all proteins belong to that pathway. The summary statistics for each pathway in each sample was then used to associate with phenotypical information using pairwise Pearson’s correlation. These results were subsequently visualised as heatmaps.
 
 To identify pathways enriched across multiple tissue and/or cell models, we used Fisher’s combined statistics to integrate p-values from individual pathway enrichment analysis conducted on each condition in cell models and adipose tissue. Fisher’s combined statistics follows a chi-square distribution and the integrated p-values from the chi-square distribution are converted into z-scores (referred to as combined z-scores) for cell model and adipose tissue, respectively, to visualise each pathway and their overall enrichment across multiple conditions in cell models and tissue.
 
-## Determination of cholesterol and CoQ
+### Determination of cholesterol and CoQ
 
 CoQ9 and CoQ10 content in 3T3-L1 adipocyte lysates, tissue homogenates, and membrane fractions from cells, and tissue were determined as described previously (Gay and Stocker, 2004). Investigators were blinded to experimental groups. Briefly, samples were thawed, mixed gently and 50–450 μL placed in a 15 mL screw top tube to which 2 mL methanol and 10 mL of water-washed hexane were added. The mixture was then mixed vigorously for 1 min, centrifuged (1430 x g, 5 min, 4°C) and 9 mL of the top hexane layer collected then dried using a rotary evaporator. The resulting dried lipids were re-dissolved in 180 μL ice-cold mobile phase (ethanol:methanol:isopropanol: ammonium acetate pH 4.4, 65:30:3:2, vol/vol/vol/vol) and transferred into HPLC vials. Cholesterol, CoQ9, CoQ9H2, CoQ10 and CoQ10H2 were determined by HPLC using a Supelcosil LC-C18 column (5 μm, 250 × 4.6 mm) eluted at 1 mL/min and connected to UV and electrochemical (ESA CoulArray 5600A) detectors. NEC was detected at 214 nm, while CoQ9, CoQ9H2, CoQ10 and CoQ10H2 were detected at −700, +700 and +500 mV and quantified against authentic commercial standards obtained from Sigma Aldrich (USA). CoQ9H2 and CoQ10H2 standards were generated by sodium borohydride-mediated reduction of commercial CoQ9 and CoQ10, respectively.
 
@@ -245,68 +762,68 @@ Liquid chromatography/tandem mass spectrometry was used for the determination of
 
 For determination of CoQ9 synthesis rates, cells were incubated with 50 µM 13C6-4-hydroxybenzoic acid (Cambridge isotope, USA) in DMEM containing GlutaMAX and dialysed FCS for 12 hr following treatment to induce insulin resistance. Cells were washed with cold PBS and homogenised in HES-I buffer (10 mM HEPES, pH 7.4, 1 mM EDTA, 250 mM sucrose, protease inhibitors) by 12 strokes of a Dounce homogeniser. To 350 μL of cell homogenates, internal standard (200 pmol CoQ8; Avanti Polar Lipids) was added and homogenates extracted with methanol/hexane as described above. Following evaporation of the hexane phase, the resulting dried lipids were re-dissolved in 150 μL ice-cold ethanol (HPLC grade) and 5 μL injected onto an Agilent 1290 UHPLC system connected to an Agilent 6490 triple-quadrupole mass spectrometer with column, mobile phases, gradient elution, flow rate and mass spectrometry parameters as above. MRM settings for 13C6-CoQ9 (parent ion → fragment ion) were m/z 801.5 → 203 with collision energy (CE) = 33 V. 13C6-CoQ9 was quantified against authentic CoQ9 commercial standard.
 
-## Subcellular fractionation
+### Subcellular fractionation
 
 To measure cholesterol and CoQ9 content is different cellular compartments (Figure 3 and Figure 3—figure supplement 1), we performed isolated plasma membrane, mitochondrial and microsomes by differential centrifugation. 3T3-L1 adipocytes were washed with ice-cold PBS, harvested in ice-cold HES-I, and subsequent steps were carried out at 4°C. Cells were homogenised by 12 strokes of a Dounce homogeniser to yield a whole cell homogenate prior to centrifugation at 700 × g for 10 min to pellet nuclei and unbroken cells. The resulting supernate was centrifuged at 13,550 × g for 12 min to pellet the plasma membrane (PM) and mitochondria, with the resulting supernate consisting of cytosol and microsomes. This supernate was then centrifuged at 235,200 × g for 75 min to obtain a cytosol fraction (supernate) and a microsomal fraction (pellet). The PM/mitochondria pellet was re-suspended/washed in HES-I and re-centrifuged at 13,550 × g for 12 min. The PM/mitochondria pellet was re-suspended again in HES-I and layered over a high sucrose HES buffer (1.12 M sucrose, 0.05 mM EDTA, 10 mM HEPES, pH 7.4) and centrifuged at 111,160 × g for 60 min in a swing-out rotor. The pellet was the mitochondria fraction. The PM fraction was collected above the sucrose layer, and centrifuged again at 13,550 × g for 12 min to achieve a PM pellet. All fractions were re-suspended in HES-I. Protein concentration for each fraction was performed using the BCA assay.
 
-## Mitochondrial isolation
+### Mitochondrial isolation
 
 For specific assessment of mitochondrial CoQ content in cell culture (Figure 4), and for assessment of mitochondrial CoQ9 or CoQ10 in adipose tissue, skeletal muscle and liver from mice and adipose tissue from humans we used a protocol to directly enrich mitochondria (Figure 3, Figure 3—figure supplement 1). Mitochondrial isolation of cultured adipocytes and tissues from mice and humans was performed as previously described (Frezza et al., 2007). Briefly, cells/tissue was homogenised in mitochondrial isolation buffer (10 mM Tris-MOPS, pH 7.4, 1 mM EGTA, 200 mM sucrose containing protease inhibitors) by 12 strokes of a Dounce homogeniser at 4°C and samples kept at 4°C subsequently. Homogenates were centrifuged at 700 x g for 10 min and then the supernate centrifuged at 7000 x g for 10 min to obtain a pellet containing the mitochondria. The pellet was re-suspended in mitochondrial isolation buffer and re-centrifuged at 7000 x g for 10 min. The mitochondrial pellet was finally re-suspended in mitochondrial isolation buffer and protein concentration determined using the BCA assay.
 
-## Citrate synthase assay
+### Citrate synthase assay
 
 Cultured adipocytes or adipose tissue was homogenised in mitochondrial extraction buffer (50 mM potassium phosphate, 0.5 mM EGTA, 0.1% Triton, pH 7.4) by 12 strokes of a Dounce homogeniser. Homogenates were freeze-thawed three times and insoluble debris pelleted by centrifugation at 5000 x g for 10 min. Citrate synthase activity was assayed by adding diluted samples to citrate synthase assay buffer (100 mM Tris:HCl, pH 8, 100 mM MgCl250 mM EDTA) containing 0.5 mM dithionitrobenzoic acid and 80 µM acetyl-CoA and the reaction monitored spectrophotometrically at 37°C at 412 nm for background activity. Oxaloacetate was added to 1 mM to start the reaction. Background activity prior to the addition of oxaloacetate was subtracted to obtain rates specific to citrate synthase. Citrate synthase activity was calculated as mU/mg using the extinction coefficient dithionitrobenzoic acid for (ε = 13.6 μmol/mL/cm) and taking sample dilution into account.
 
-## Cell lysis
+### Cell lysis
 
 Cells were washed twice with PBS and lysed in 1% SDS in PBS-containing protease inhibitors. Cell lysates were sonicated (Bandelin SONOPLUS) for 12 s and centrifuged at 13,000 × g for 15 min at room temperature. The protein concentration of the resulting supernate was then determined by the BCA assay.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 Proteins (5–10 μg) from cell/tissue lysates or homogenates were resolved by SDS-PAGE and transferred to polyvinylidene difluoride membranes. Membranes were blocked in 5% BSA or skim milk powder in Tris-buffered saline containing 0.1% (v/v) Tween 20 for 1 hr, followed by an overnight incubation at 4°C with specific primary antibody solutions. Membranes were incubated with an appropriate secondary antibody for 1 hr before signals were detected using ECL (Thermo Fisher Scientific or Millipore) on the Chemidoc MP (Bio-Rad) or on the Odyssey Fluorescence Detection System (LiCOR). Antibodies detecting multiple mitochondrial complex subunits (Cat. No. 45–8099) and PRDX1 were from Thermo Fisher Scientific (Cat. No. PA3-750), anti-PRDX2 (Cat. No. ab109367, clone: EPR5154) and anti-catalase (Cat. No. ab52477) antibodies were from Abcam, anti-PRDX3 antibody from Ab Frontier (Cat. No. LF-PA0030), anti-14-3-3 antibody was from Santa Cruz (Cat. No. sc-629, clone K19), anti-pT642 TBC1D4 (Cat. No. 4288), anti- TBC1D4 (Cat. No. 2670), anti-pT308 Akt (Cat. No. 9275), anti-pS473 Akt (Cat. No. 4051) and anti-Akt (Cat. No. 4685) antibodies were from Cell Signaling Technologies and anti-α-tubulin antibody was from Sigma Aldrich (Cat. No. T9026). Antibody to GLUT4 was generated in-house. Densitometry analysis was performed using Image Lab 5.2.1 (Bio-Rad) or Image Studio (LiCOR).
 
-## In vivo administration of CoQ
+### In vivo administration of CoQ
 
 For studies in chow and HFHSD-fed mice, male C57BL/6J (n = 9 per treatment) fed ad libitum with normal chow or HFHSD for a period of 14 d. Mice were treated with 10 mg/kg the liposomal CoQ10 (LiQsorb, Tichson Corp.) diluted in saline by intraperitoneal injection every 48 hr for the duration of the feeding regimen. Control mice received saline. Mice were randomly assigned to a treatment group so groups were equally represented within each cage.
 
 For dose response studies, male C57BL/6J (n = 5 per treatment) fed ad libitum for a period of 14 d with HFHSD were treated with the specified dose of liposomal CoQ10 (LiQsorb, Tichson Corp.) (0, 1, 5 or 10 mg/kg) diluted in saline by intraperitoneal injection every 48 hr for the duration of the feeding regimen. Saline was given to the control group. Mice were randomly assigned to a treatment group so that at least one mouse per cage was in each group. For each mouse, epididymal fat pads were assessed for mitochondrial content of CoQ9 and CoQ10, PRDX3 dimer/monomer status and insulin sensitivity by the ex vivo 2DOG uptake assay. For ex vivo 2DOG uptake assay, saline-injected chow mice were included as a control.
 
-## Inhibition of mevalonate pathway or CoQ synthesis
+### Inhibition of mevalonate pathway or CoQ synthesis
 
 Differentiated 3T3-L1 adipocytes were treated with 10 µM simvastatin or 20 µM atorvatstin for indicated times or 2.5 mM 4-nitrobenzoic acid (Alam et al., 1975; Forsman et al., 2010) or 4-chlorobenzoic acid (Bour et al., 2011) for 48 hr. These doses were selected to lower mitochondrial CoQ content to that observed in insulin-resistant 3T3-L1 adipocytes.
 
-## siRNA-mediated knockdown of Coq7 or Coq9
+### siRNA-mediated knockdown of Coq7 or Coq9
 
 Seven days post-differentiation, adipocytes were trypsinised (5 × trypsin, EDTA) (Thermo Fisher Scientific) at 37°C, washed twice with PBS, and re-suspended in electroporation solution (20 mM HEPES, 135 mM KCl, 2 mM MgCl2, 0.5% Ficoll 400, 1% DMSO, 2 mM ATP, and 5 mM glutathione, pH 7.6) with 200 nM scrambled (sense 5′-CAGTCGCGTTTGCGACTGGTT-3′) or pooled anti-Coq7 siRNA (sense 5′-GGGAUCACGCUGGUGAAUAUTT-3′, 5′-GGAUGACCUUAGACAAUAUTT-3′, 5′- GCCUUGUUGAAGAGGAUUAUTT-3′) or pooled anti-Coq9 siRNA (sense 5′-GCAGCAUUCUGAGACACAGTT-3′, 5′-GCUGGUGAUGAUGCAGGAUTT-3′, 5′- GCAAUGAACAUGGGCCACATT-3′) or (Shanghai Genepharma). Cells were electroporated at 200 mV for 20 ms using an ECM 830 square wave electroporation system (BTX Molecular Delivery Systems) and seeded onto Matrigel (Corning)-coated plates. Cells were assayed 96 hr following electroporation.
 
-## Sample preparation and real-time quantitative-PCR assays
+### Sample preparation and real-time quantitative-PCR assays
 
 Total RNA was extracted from cells using TRIzol reagent (Thermo Fisher Scientific). cDNA synthesis was carried out using PrimeScript first strand cDNA synthesis kit (Clontech and Takara Bio Company). Polymerase chain reactions were performed on the LightCycler 480 II (Roche Applied Science) using FastStart Universal SYBR Green Master (Roche Applied Science). Cyclophilin b was used as an internal control. The primer sets used were as follows: mCoq7_F; tttggaccatagctgcattg and mCoq7_R; tgaggcctcttccatactctg, mCoq9_F; tcagcagcattctgagacaca and mCoq9_R; gtgctgtagctgctcctcact, and mCypB-F; ttcttcataaccacagtcaagacc; mCypB-R, accttccgtaccacatccat.
 
-## Mitochondrial bioenergetics in intact cells
+### Mitochondrial bioenergetics in intact cells
 
 The bioenergetics of intact cells was assessed as described previously (Krycer et al., 2017). Briefly, On Day 7–8 of differentiation, 3T3-L1 adipocytes were trypsinised with 5x Trypsin/EDTA (Thermo Fisher Scientific) in phosphate-buffered saline (PBS) and seeded onto XFp cell culture plates coated with Matrigel (Corning, distributed by Sigma Aldrich (Castle Hill, NSW, Australia)). Following the indicated treatment, cells were washed three times with warm PBS, once with bicarbonate-free DMEM buffered with 30 mM Na-HEPES, pH 7.4 (DMEM/HEPES), and then incubated in DMEM/HEPES supplemented with 0.2% (w/v) BSA, 25 mM glucose, 1 mM GlutaMAX and 1 mM glutamine, for 1.5 hr in a non-CO2 incubator at 37°C. Cells were then washed once with PBS, once with DMEM/HEPES, and assayed in the XFp Analyzer in DMEM/HEPES with 25 mM galactose, 1 mM GlutaMAX and 1 mM glutamine and 1 mM NaHCO3. During the assay, respiration was assayed with mix/wait/read cycles of 3/0/2 min for 3T3-L1 adipocytes. Following assessment of basal respiration, the following compounds were injected sequentially: oligoymcin (10 µg/ml), BAM15 (10 µM) (Kenwood et al., 2014) rotenone/antimycin A (5 µM / 10 µM). All of these reagents were obtained from Sigma Aldrich, except BAM15 (Kenwood et al., 2014). After the assay, the medium was aspirated and DNA content was measured by Hoechst staining as described previously (Krycer et al., 2017).
 
-## Mitochondrial bioenergetics in permeabilised cells
+### Mitochondrial bioenergetics in permeabilised cells
 
 3T3-L1 adipocytes were seeded into Matrigel-coated XFp cell culture plates as described above. Following the indicated treatment, cells were washed with warm PBS and incubated in mitochondrial respiration buffer (20 mM K-HEPES pH 7.1, 0.5 mM EGTA, 3 mM MgCl2, 10 mM KH2PO4, 110 mM D-sucrose, 0.1% (w/v) fatty-acid free BSA) for 30 min at 37°C. Cells were permeabilised with 10 µg/mL digitonin prior to equilibration in the Seahorse XFp Analyzer (Seahorse Biosciences). The following injections were used: Port A: ADP-regeneration system (5 mM deoxyglucose, 1 U/mL hexokinase (Roche), 1 mM ADP), 2 mM malate and 10 mM glutamate; Port B: 10 µM rotenone; Port C: 10 mM succinate or 100 µM octanoylcarnitine; Port D: 10 µM antimycin A, 5 mM ascorbic acid and 0.5 mM tetramethyl-phenylenediamine. Each cycle included 3 min mixing time, 0 min waiting time and 2 min measuring time, repeated until a steady JO2 reading was obtained after each injection. Non-mitochondrial respiration was taken as JO2 following rotenone addition and this was subtracted from all substrate-driven rates (ports A, C and D). State four respiration rates (proton leak) was determined by omission of the ADP-regeneration system. All of these reagents were obtained from Sigma Aldrich, unless otherwise stated. The resulting rate was normalised to DNA content, measured using Hoechst 33248 with a previously-described Hoechst-staining protocol (Krycer et al., 2017).
 
-## Assessment of peroxiredoxin dimerisation
+### Assessment of peroxiredoxin dimerisation
 
 Sample preparation was carried out essentially as previously described (Bayer et al., 2013). For in vitro studies, 3T3-L1 adipocytes were pre-treated as indicated and washed three times with ice-cold PBS that had been pre-treated with 10 µg/mL catalase for 1 hr. Cells were incubated with 100 mM N-ethylmaleimide in PBS for 10 min on ice to modify free cysteine residues. Cells were scraped in PBS-containing 1% SDS, protease inhibitors and 100 mM N-ethylmaleimide. For tissue preparation, epididymal adipose tissue was immediately lysed in 2 x RIPA buffer containing protease inhibitors and 100 mM N-ethylmaleimide upon collection buffer by sonication (20 s). Samples were centrifuged at 13,000 × g for 10 min at room temperature. Fat was removed, supernatant collected and protein concentration determined by BCA assay (Thermo Fisher Scientific). Proteins were then separated by non-reducing SDS-PAGE. Intensities of PRDX dimer and monomer bands were determined by densitometry and ratios (dimer/monomer) expressed relative to control samples within each experiment.
 
-## Assessment of conversion of Mito-hydroethidine (MitoSOX) to Mito-2-hydroxyethidium
+### Assessment of conversion of Mito-hydroethidine (MitoSOX) to Mito-2-hydroxyethidium
 
 Conversion of MitoSOX to Mito-2-hydroxyethidium was detected by LC-MS/MS, as previously described (Zielonka et al., 2008) with modifications. 3T3-L1 adipocytes were treated as indicated and incubated with 5 µM MitoSOX (Thermo Scientific) for 60 min in DMEM/GlutMAX without FCS. Cells were scraped in ethanol and centrifuged at 17,000x g for 15 min, 4°C. 5 μL of supernate were then injected onto an Agilent 1290 UHPLC system connected to an Agilent 6490 triple-quadrupole mass spectrometer. Analytes were separated on a 2.6 μm Kinetex XB-C18 100 A column (50 × 2.10 mm; Phenomenex) by gradient elution using mobile phase A (0.1% formic acid in water) and mobile phase B (0.1% formic acid in acetonitrile) at 0.4 mL/min. The gradient consisted of 25% mobile phase B from 0 to 2 min, 25–40% B from 2 to 7 min, 40–90% B from 7 to 8 min, 90% B from 8 to 11 min and back to 25% B from 11 to 12 min. Flow was then directed into the triple quadrupole mass spectrometer with parameters set as follows: gas temperature = 290°C; gas flow = 14 L/min; nebulizer pressure = 35 psi; sheath gas heater = 350°C; sheath gas flow = 11 L/min; capillary voltage = 3,500 V. Detection of MitoSOX, Mito-ethidium (Mito-E+) and Mito-hydroxyethidium (Mito-2OHE+) was by multiple reaction monitoring (MRM) in positive ion mode using the above general mass spectrometry parameters with fragmentor voltage at 380 V and cell accelerator voltage at 5 V. In each case, the fragment ions generated by collision-induced dissociation of the [M + H]+or the [M + 2 hr]+ ions were used for quantification. MRM settings for the target analytes were (parent ion → fragment ion); MitoSOX (m/z 632.2 → 289) with collision energy (CE) = 25 V; Mito-E+ (m/z 315.7 → 289) with CE = 25 V and Mito-2OHE+ (m/z 323.7 → 289) with CE = 25 V. MitoSOX was quantified against authentic commercial standard obtained from Invitrogen while Mito-E+ and Mito-2OHE+ were quantified against standards synthesized from MitoSOX as previously described (Zielonka et al., 2008).
 
-## Treatment of adipocytes with mitochondrial poisons
+### Treatment of adipocytes with mitochondrial poisons
 
 3T3-L1 adipocytes were treated as indicated prior to treatment with 25 µM BAM15, 10 µM FCCP (Sigma Aldrich), 10 µM rotenone (Sigma Aldrich), 50 nM antimycin A (Sigma Aldrich), 10 µg/mL oligomycin (Sigma Aldrich), 10 or 100 µM TTFA (Sigma Aldrich) or 10 mM malonate (Sigma Aldrich) for 2 hr in DMEM/10% FCS/GlutaMAX before determination of PRDX dimerisation status. For assessment of the effect of TTFA or malonate on HA-GLUT4 translocation in 3T3-L1 adipocytes, cells were incubated with 100 µM TTFA or 10 mM malonate for 2 hr in DMEM/10% FCS/GlutaMAX and for 2 hr during serum starvation in DMEM/0.2% BSA/GlutaMAX prior to assessment of insulin action.
 
-## Overexpression of mitochondrial-targeted catalase (mCat)
+### Overexpression of mitochondrial-targeted catalase (mCat)
 
 Mitochondrial-targeted human catalase (human catalase with the 24 residue MnSOD mitochondrial localisation signal at its N-terminus) (Arita et al., 2006) was inserted into the pBABE-puro vector. Mitochondrial-targeted catalase overexpressing 3T3-L1 fibroblasts were generated by retroviral transduction as previously described (Govers et al., 2004). 3T3-L1 fibroblasts were transduced and selected using puromycin. Fibroblasts were differentiated into adipocytes as described.
 
-## Statistical analyses
+### Statistical analyses
 
 Data are expressed as means ± S.E.M. For each dataset, the sub-groups were initially compared with the relevant ANOVA depending on the levels of treatments. If row or column factors were significant, specific sub-groups were then compared using Student’s t-test (adjusting for multiple comparisons using the Sidak method). Significant effects were defined as p<0.05 by these t-tests, as reported in the figures. Human data were assessed by Mann Whitney tests and significant effects were defined as p<0.05.

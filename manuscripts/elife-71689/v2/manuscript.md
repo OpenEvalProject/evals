@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Histamine-dependent and -independent itch is conveyed by parallel peripheral neural pathways that express gastrin-releasing peptide (GRP) and neuromedin B (NMB), respectively, to the spinal cord of mice. B-type natriuretic peptide (BNP) has been proposed to transmit both types of itch via its receptor NPRA encoded by Npr1 . However, BNP also binds to its cognate receptor, NPRC encoded by Npr3 with equal potency. Moreover, natriuretic peptides (NP) signal through the G i -couped inhibitory cGMP pathway that is supposed to inhibit neuronal activity, raising the question of how BNP may transmit itch information. Here, we report that Npr3 expression in laminae I-II of the dorsal horn partially overlaps with NMB receptor (NMBR) that transmits histaminergic itch via G q -couped PLCβ-Ca 2+ signaling pathway. Functional studies indicate that NPRC is required for itch evoked by histamine but not chloroquine (CQ), a nonhistaminergic pruritogen. Importantly, BNP significantly facilitates scratching behaviors mediated by NMB, but not GRP. Consistently, BNP evoked Ca 2+ responses in NMBR/NPRC HEK 293 cells and NMBR/NPRC dorsal horn neurons. These results reveal a previously unknown mechanism by which BNP facilitates NMB-encoded itch through a novel NPRC-NMBR cross-signaling in mice. Our studies uncover distinct modes of action for neuropeptides in transmission and modulation of itch in mice.
+Histamine-dependent and -independent itch is conveyed by parallel peripheral neural pathways that express gastrin-releasing peptide (GRP) and neuromedin B (NMB), respectively, to the spinal cord of mice. B-type natriuretic peptide (BNP) has been proposed to transmit both types of itch via its receptor NPRA encoded by Npr1. However, BNP also binds to its cognate receptor, NPRC encoded by Npr3 with equal potency. Moreover, natriuretic peptides (NP) signal through the Gi-couped inhibitory cGMP pathway that is supposed to inhibit neuronal activity, raising the question of how BNP may transmit itch information. Here, we report that Npr3 expression in laminae I-II of the dorsal horn partially overlaps with NMB receptor (NMBR) that transmits histaminergic itch via Gq-couped PLCβ-Ca2+ signaling pathway. Functional studies indicate that NPRC is required for itch evoked by histamine but not chloroquine (CQ), a nonhistaminergic pruritogen. Importantly, BNP significantly facilitates scratching behaviors mediated by NMB, but not GRP. Consistently, BNP evoked Ca2+ responses in NMBR/NPRC HEK 293 cells and NMBR/NPRC dorsal horn neurons. These results reveal a previously unknown mechanism by which BNP facilitates NMB-encoded itch through a novel NPRC-NMBR cross-signaling in mice. Our studies uncover distinct modes of action for neuropeptides in transmission and modulation of itch in mice.
 
 ## Introduction
 
@@ -44,15 +44,27 @@ How itch and pain information is encoded and transmitted has been subjected to n
 
 B-type or brain natriuretic peptide (BNP), encoded by the gene Nppb, has been implicated in itch at discrete regions, including skin cells, sensory neurons, and spinal cord (Liu et al., 2020; Meng et al., 2018; Mishra and Hoon, 2013; Solinski et al., 2019). The natriuretic peptide (NP) family also consists of atrial (ANP) and C-type natriuretic peptides (CNP) (Potter et al., 2006). BNP binds to both NPRA and NPRC, encoded by Npr1 and Npr3, respectively, with equality affinity, but not NPRB, while ANP also binds NPRA directly, resulting in the elevation of the second message cyclic GMP concentration (Figure 1A; Potter et al., 2006). Although NPRC is considered to function as a clearance or silent receptor (Maack et al., 1987), it can also mediate guanylyl cyclase (GC) receptor-coupled Gαisignaling under certain physiological conditions (Anand-Srivastava, 2005). BNP-NPRA signaling was initially proposed as an itch-specific pathway responsible for transmitting both histamine- and CQ-evoked itch that acts upstream of GRP-GRPR signaling (Huang et al., 2018; Mishra and Hoon, 2013). However, that BNP transmits all types of itch is at odds with the fact that GRP is required only for nonhistaminergic itch. Further, genetic ablation of spinal Grp neurons fails to impact itch behaviors (Barry et al., 2020), indicating that spinal Grp neurons do not constitute a functional circuit for itch. Recent studies have shown that BNP-NPRA signaling is involved in histaminergic itch as well as chronic itch in mice which comprises the histaminergic component (Liu et al., 2020; Solinski et al., 2019). Given that BNP can bind both NPRA and NPRC, two cognate receptors for BNP (Figure 1A), the relationship between NPRA/NPRC and NMBR/GRPR and the role of NPRC in itch transmission remains undefined. Considering that the GC-cGMP signal transduction pathway mediated by BNP is inhibitory (Potter et al., 2006) and that BNP-NPRA/NPRC signaling may exert an inhibitory rather than excitatory function, analogous to GαI protein-coupled signaling, it is paradoxical that BNP would transmit rather than inhibiting itch information.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram shows crosstalk between NPs and NP receptors. BNP can bind NPRA and NPRC. (B) BNP dose-dependently evoked scratching behaviors 60 min after i.t. injection. n = 6. *p < 0.05, **p < 0.01, one-way ANOVA followed by Tukey’s test. (C) Time-course of scratching behaviors induced by different doses of BNP shows a delayed onset of scratching responses. (D, F, H, J, L, N) Images of double RNAscope ISH showing that the overlapping expression of Npr1 (green) with Grpr (red) (D), Nmbr (F), of Npr3 (green) with Nmbr (red) (H), Npr3 (red) with Vglut2 (green) (J), Vgat (green) (L), or Npr1 (green) (N) in laminae I-II of the dorsal horn. Dashed white lines divide laminae I-II from III. White boxes are shown at higher magnification in the right panel. Arrows indicate double-positive neurons. E, G, I, K, M, O, Venn diagrams showing the overlap between Npr1 and Grpr (E), Nmbr (G), between Npr3 and Nmbr (I), Vglut2 (K), Vgat (M) or Npr1 (O). n = 10–15 sections from 3 mice. Scale bar, 20 µm in D – N.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ANP 1 ~ 20 µg, (equivalent to 6–120 µM, i.t.) failed to induce robust scratching behaviors in mice. n = 6. (B) Only BNP (30 µM, i.t.) facilitated histamine itch. Note that neither ANP (60 µM, i.t.) nor CNP (60 µM, i.t.) exhibited facilitatory effect. n = 6–7. *p < 0.05, ***p < 0.001, one-way ANOVA followed by Dunnett’s test. Values are presented as mean ± SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A-D) Comparable expression of CGRP (red) and IB4 staining (green), TRPV1, GRP, and SP in the superficial dorsal horn of WT and Npr1 KO mice. Scale bar, 50 µm. (E) Images of double RNAscope ISH showing that Npr1 (green) is partially co-expressed with Grp (red) in the dorsal horn. Arrows indicate double-positive neurons. Scale bar, 20 µm. (F) Venn diagram showing partial overlapping of Npr1 and Grp expression. (G) Scratching behaviors elicited by i.t. BNP (150 µM) were significantly enhanced by isoflurane. (H) Time course of i.t. NMB (1 nmol) and GRP (1 nmol) evoked scratching behavior. n = 6. **p < 0.01, ***p < 0.001, two-way ANOVA followed by Bonferroni’s test. Values are presented as mean ± SEM. Scale bar, 50 µm in A-D, 20 µm in E.
+
 In the present study, we have examined these open questions using a combination of RNA-scope ISH, genetic knockout (KO) mice, spinal siRNA knockdown, cell ablation, calcium imaging, pharmacological and optogenetic approaches. We found that NPRC, rather than NPRA, is a major functional receptor for BNP in the spinal cord, and BNP facilitates histamine-evoked itch through NPRC-NMBR crosstalk. Importantly, our studies confirmed that BNP is an inhibitory neuropeptide that alone fails to evoke Ca2+ response and itch-related scratching behavior, in contrast to GRP and NMB; However, BNP becomes excitatory by facilitating NMB-mediated itch transmission. Thus. distinct modes of action for neuropeptides coordinate itch transmission in the spinal cord.
 
 ## Results
 
-## Expression of NP Receptors in the spinal cord
+### Expression of NP Receptors in the spinal cord
 
 As ANP also binds NPRA at high affinity, we tested whether intrathecal injection (i.t.) of ANP could induce scratching behavior and found that ANP failed to induce robust scratching behaviors at the dose of 1–20 μg (equivalent to 6–120 µM, Figure 1—figure supplement 1A). Among three NPs, interestingly, only BNP facilitates histamine itch (Figure 1—figure supplement 1B). BNP evoked dose-related scratching behavior (1–5 µg that is equivalent to 30–150 µM) with a peak scratching number of 74 ± 16.2 (Figure 1B), consistent with previous reports (Kiguchi et al., 2016; Liu et al., 2014). However, these doses are much higher than endogenous concentrations of ligands that should be within the nanomolar range, implying that scratching behaviors evoked by BNP reflect a non-specific pharmacological artifact. Time-course analysis showed that scratching behavior was delayed by 20–30 min after BNP injections as described without isoflurane treatment (Kiguchi et al., 2016; Liu et al., 2014; Figure 1C), which is distinct from the rapid onset of scratching response evoked by i.t. GRP or NMB (Figure 1—figure supplement 2H). The use of isoflurane for anesthesia could result in complex effects on neural circuits, especially inhibitory circuits (Constantinides and Murphy, 2016). We compared the effect of i.t. BNP on awake and isoflurane-anesthetized animals and found that isoflurane pretreatment significantly enhanced BNP-induced scratching behaviors in the first 10 min (Figure 1—figure supplement 2G). This suggests that induced scratching behavior is an indirect rather than direct effect of BNP with isoflurane treatment, consistent with the fact that NPRA/NPRC are inhibitory receptors. Recent studies showed that Npr1 is widespread in the dorsal horn (Fatima et al., 2019), in marked contrast to lamina II specific Grp expression (Barry et al., 2020). Consistently, single nucleus RNA sequencing (snRNA-seq) from isolated spinal cord neurons found only a partial overlap (20 ~ 30%) of Npr1 and Grp (Sathyamurthy et al., 2018). To visualize the distribution of NP receptors in the spinal cord, we performed RNAscope in situ hybridization (ISH) and found that all three NP receptors are expressed in the dorsal horn of the spinal cord (Figure 1D-N and Figure 5A-C). Consistent with a previous ISH study (Barry et al., 2020; Fatima et al., 2019; Mishra and Hoon, 2013), Npr1+ neurons are distributed in a gradient manner with higher intensity throughout laminae I-IV and are rather sparse in the deep dorsal horn (Figure 1D and 5A). Remarkably, Npr3+ + are predominantly restricted to lamina I-II (Figure 1H, J, L, N, 5C) with 64.6% being excitatory neurons and 32.0% being inhibitory neurons (Figure 1J–M). In contrast, Npr2 expression is homogenous throughout the spinal cord dorsal horn, implying that Npr2 lacks modality-specific function (Figure 5B). RNAscope ISH showed minimal overlapping expression between Npr1 and Grpr (Figure 1D and E). However, approximately 30% (31/103) of Npr1+ + in laminae I-II of the dorsal horn express Grp (Figure 1—figure supplement 1E, F), and this number is further reduced to 23% (31/132) (data not shown) when all Npr1+ neurons in the dorsal horn are counted. Moreover, Npr1 and Nmbr minimally overlap in the dorsal horn (Figure 1F and G), excluding the likelihood of NPRA-NMBR crosstalk. Npr1 and Npr3 also showed minimal overlapping expression in the spinal cord (Figure 1N and O). By contrast, approximately 47.8% of Npr3+ + express Nmbr (Figure 1H,I), raising the possibility that NPRC is involved in crosstalk with NMBR.
 
-## NPRA and NPRC are important for acute itch
+### NPRA and NPRC are important for acute itch
 
 To examine the role of NP receptors in acute itch behavior, we first analyzed the phenotype of Npr1 knockout (KO) mice (Oliver et al., 1997). A previous study showing that CNP-NPRB is essential for axonal bifurcation of DRG neurons in the developing spinal cord (Schmidt et al., 2009) prompted us to evaluate the innervation of primary afferents in the spinal cord of Npr1 KO mice. We found that innervations of peptidergic CGRP+ and non-peptidergic IB4+ primary afferents in the superficial dorsal horn of Npr1 KO mice are comparable with wild-type (WT) littermates (Figure 1—figure supplement 2A). The innervations of TRPV1+, GRP+, and SP+ primary afferents are also comparable between WT and Npr1 KO mice (Figure 1—figure supplement 2B-D), indicating that NPRA is dispensable for the innervation of primary afferents.
 
@@ -60,17 +72,17 @@ GRP and NMB have been implicated in nonhistaminergic and histaminergic itch, res
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig2-v2.jpg)
 
-**Figure 2.:** (A) Npr1 KO mice and their WT littermates showed comparable scratching behaviors in response to GRP (0.05 nmol, i.t.) and NMB (0.5 nmol, i.t.). n = 6–8. (B) Npr1 KO mice showed significantly reduced scratching behavior elicited by histamine (200 µg, i.d.) and CQ (200 µg, i.d.). n = 9–11. *p < 0.05, **p < 0.01, unpaired t test. (C, D) Mice treated with Npr1 siRNA showed significantly reduced scratching responses to histamine (C), CQ (D), wherea mice treated with Npr3 siRNA displayed deficits only in histamine (C) but not CQ itch (D). n = 6–7. *p < 0.05, **p < 0.01, one-way ANOVA followed by Dunnett’s test. (E, F) Real-time PCR confirmed the reduced Npr1-3 expression by Npr1, Npr2, and Npr3 siRNA knockdown in the spinal cord (E) and DRG (F). n = 4. **p < 0.01, one-way ANOVA followed by Dunnett’s test. Values are presented as mean ± SEM.Figure 2—source data 1.
+**Figure 2.:** (A) Npr1 KO mice and their WT littermates showed comparable scratching behaviors in response to GRP (0.05 nmol, i.t.) and NMB (0.5 nmol, i.t.). n = 6–8. (B) Npr1 KO mice showed significantly reduced scratching behavior elicited by histamine (200 µg, i.d.) and CQ (200 µg, i.d.). n = 9–11. *p < 0.05, **p < 0.01, unpaired t test. (C, D) Mice treated with Npr1 siRNA showed significantly reduced scratching responses to histamine (C), CQ (D), wherea mice treated with Npr3 siRNA displayed deficits only in histamine (C) but not CQ itch (D). n = 6–7. *p < 0.05, **p < 0.01, one-way ANOVA followed by Dunnett’s test. (E, F) Real-time PCR confirmed the reduced Npr1-3 expression by Npr1, Npr2, and Npr3 siRNA knockdown in the spinal cord (E) and DRG (F). n = 4. **p < 0.01, one-way ANOVA followed by Dunnett’s test. Values are presented as mean ± SEM.
 
 The highly restricted expression of NPRC in lamina II and its high binding affinity to BNP prompted us to examine the role of NPRC in itch. However, Npr3 KO mice showed severe skeletal abnormalities, resulting in the failure of most KO mice to survive to adult stage for behavioral analysis (Matsukawa et al., 1999). To determine whether the impaired scratching response of the global Npr1 KO mice could have resulted from the Npr1 deficiency in the spinal cord, DRGs where Npr1 is also expressed (Zhang et al., 2010), or skin cells (Meng et al., 2018), we knocked down Npr1-3 either individually or in combination in C57BI/6 mice using sequence-specific siRNA. I.t. Npr1 siRNA treatment significantly attenuated the scratching behavior evoked by histamine and CQ (Figure 2C and D), whereas Npr3 siRNA treatment selectively attenuated histamine, but not CQ itch (Figure 2C and D). Npr2 siRNA had no effect on CQ and histamine itch, making it unlikely to be involved in itch transmission (Figure 2C and D). The effect of the knock-down of target mRNA in the spinal cord and DRGs was verified using real-time RT-PCR (Figure 2E and F). These results revealed that Npr1 and Npr3 are differentially required for acute itch behavior at the spinal level. Further, we infer that there is little functional compensation among the three NP receptors.
 
-## BNP facilitates NMB-mediated histamine itch
+### BNP facilitates NMB-mediated histamine itch
 
 The slow onset of scratching behavior elicited by BNP, even at a high dose (150 µM), in the first 30 min contrasts sharply with rapid onset of GRP/NMB-induced scratching behavior (Figure 1—figure supplement 2H), implying that direct activation of NPRA/NPRC itself is insufficient to initiate scratching response. This raises the question as to the specific role BNP may play in the first phase, which is physiologically relevant to the histamine and CQ itch that usually occurs within this period. We suspected that BNP may play a modulatory function in acute itch behavior in a manner resembling the role of serotonin in itch modulation (Zhao et al., 2014a). To test this, we pre-treated mice with BNP at a lower dose (30 µM, i.t.) followed by i.d. histamine at a dose of 100 µg that is insufficient to induce robust scratching behaviors. The low-dose effect was similar to the saline control, which enabled us to examine the facilitatory effect, rather than the additive effect (Figure 3A–D). At 30 µM, BNP failed to induce scratching behaviors (Figure 1B). Strikingly, histamine-induced scratching responses were significantly enhanced with BNP pretreatment compared with saline control (Figure 3A). BNP also produced similar potentiating effects on CQ-induced scratching responses (Figure 3B). Since NMB is required for histamine itch via NMBR exclusively (Wan et al., 2017; Zhao et al., 2014b), we tested the possibility that BNP may facilitate histamine itch by modulating NMBR function. At 0.05 nmol, i.t. NMB itself could not induce significant scratching behavior (Figure 3C). However, co-injection of BNP (30 µM) and NMB (0.05 nmol) markedly increased NMB-induced scratching behavior compared with that of mice receiving only NMB (Figure 3C). Importantly, BNP failed to potentiate scratching behaviors induced by GRP (0.01 nmol, i.t.) (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig3-v2.jpg)
 
-**Figure 3.:** (A) Pre-injection of BNP (30 µM, i.t.) for 1 min significantly enhanced scratching behavior evoked by i.d. injection of histamine (Hist.) (100 µg). n = 6. (B) Scratching behavior evoked by i.d. injection of CQ (50 µg, i.d.) was significantly enhanced by pre-injection of BNP for 1 min. n = 6. (C, D) Co-injection of 1 µg BNP (30 µM, i.t.) facilitated scratching behaviors evoked by NMB (0.05 nmol, i.t.) (C) but not GRP (0.01 nmol) (D). n = 6. (E) Pre-injection of 1 µg BNP (30 µM, i.t.) for 1 min significantly enhanced scratching behavior evoked by i.d. injection of histamine (100 µg) in Grpr KO mice. n = 8. (F, G) Pre-injection of NMB (0.05 nmol, i.t.) had no effect on scratching behavior induced by histamine (F) or CQ (G). Note that NMB barely evoked scratching bouts. n = 6. (H), NPRC agonist ANP-4–23 (6 nmol, i.t.) facilitates NMB (0.005 nmol, i.t.) induced scratching behavior. n = 5–9. (I), Histamine (25 µg, i.d.)-induced scratching behavior facilitated by BNP (30 µM, i.t.) was attenuated with AP 811 (10 µM, i.t.) or U 73122 (13.5 nmol, i.t.) treatment. n = 6–11. (I–K) Double RNAScope ISH images (J and L) and Venn diagrams (K and M) showing 60% of Nppb neurons co-express Nmb (J and K), but little Grp in DRGs (L and M). Values are presented as mean ± SEM, *p < 0.05, **p < 0.01, unpaired t test in (A–E), one-way ANOVA in (F and G). Scale bar, 20 µm in J, 50 µm in L.Figure 3—source data 1.
+**Figure 3.:** (A) Pre-injection of BNP (30 µM, i.t.) for 1 min significantly enhanced scratching behavior evoked by i.d. injection of histamine (Hist.) (100 µg). n = 6. (B) Scratching behavior evoked by i.d. injection of CQ (50 µg, i.d.) was significantly enhanced by pre-injection of BNP for 1 min. n = 6. (C, D) Co-injection of 1 µg BNP (30 µM, i.t.) facilitated scratching behaviors evoked by NMB (0.05 nmol, i.t.) (C) but not GRP (0.01 nmol) (D). n = 6. (E) Pre-injection of 1 µg BNP (30 µM, i.t.) for 1 min significantly enhanced scratching behavior evoked by i.d. injection of histamine (100 µg) in Grpr KO mice. n = 8. (F, G) Pre-injection of NMB (0.05 nmol, i.t.) had no effect on scratching behavior induced by histamine (F) or CQ (G). Note that NMB barely evoked scratching bouts. n = 6. (H), NPRC agonist ANP-4–23 (6 nmol, i.t.) facilitates NMB (0.005 nmol, i.t.) induced scratching behavior. n = 5–9. (I), Histamine (25 µg, i.d.)-induced scratching behavior facilitated by BNP (30 µM, i.t.) was attenuated with AP 811 (10 µM, i.t.) or U 73122 (13.5 nmol, i.t.) treatment. n = 6–11. (I–K) Double RNAScope ISH images (J and L) and Venn diagrams (K and M) showing 60% of Nppb neurons co-express Nmb (J and K), but little Grp in DRGs (L and M). Values are presented as mean ± SEM, *p < 0.05, **p < 0.01, unpaired t test in (A–E), one-way ANOVA in (F and G). Scale bar, 20 µm in J, 50 µm in L.
 
 Next we assessed whether BNP may function upstream or independently of GRPR to modulate itch by comparing the facilitatory effect of BNP on histamine itch between Grpr KO and WT mice. If BNP acts upstream of or depends on GRPR, BNP may fail to potentiate histamine itch in Grpr KO mice. We found that BNP similarly potentiated histamine itch in Grpr KO mice (Figure 3E), consistent with the findings that GRP-GRPR signaling is not required for histamine itch (Sun et al., 2009). Together, these results show that the role of BNP signaling in the spinal cord is dependent on NMB-NMBR signaling and independent of GRP-GRPR signaling.
 
@@ -78,25 +90,39 @@ Next, we evaluated whether NMB has a modulatory function that resembles BNP in h
 
 We previously showed that NMB exerts its role exclusively through NMBR in the spinal cord, as NMB is a functional antagonist for GRPR in spite of its cross-binding activity with GRPR in the spinal cord (Zhao et al., 2014b). Double RNAscope ISH showed that ~ 60% of Nppb neurons co-expressed Nmb in the DRG (Figure 3J and K), whereas Grp neurons in DRGs showed minimal co-expression (~19%) with Nppb (Figure 3L and M). This prompted us to test whether BNP may facilitate NMB/histamine itch signaling through crosstalk between NMBR, which is required for histamine itch, and NPRA or NPRC, two receptors that bind to BNP.
 
-## BNP facilitates NMB-evoked calcium response via NPRC-NMBR crosstalk
+### BNP facilitates NMB-evoked calcium response via NPRC-NMBR crosstalk
 
 To test whether BNP can potentiate NMBR function, we took advantage of the fact that NMB exclusively activates NMBR neurons in the spinal cord (Zhao et al., 2014b) and examined the response of NMBR neurons to NMB using Ca2+ imaging of dorsal horn neurons (Munanairi et al., 2018). NMBR functions via the canonic Gq coupled PLCβ-Ca2+ signaling analogous to GRPR (Liu et al., 2011; Zhao et al., 2014a). Using a protocol for investigating facilitating effect (Zhao et al., 2014a), we found that NMB at 20 nM, but not at 10 nM, was able to induce Ca2+ transient in perspective NMBR neurons identified with the first application (Figure 4A and B). BNP by itself rarely induce Ca2+ transient, regardless of the dose, in these neurons. However, when BNP (200 nM) was co-applied with a subthreshold concentration of NMB (10 nM), it dramatically potentiated Ca2+ transients in response to the second NMB application (Figure 4B). Overall, of 1513 neurons analyzed, 100 responded to 20 nM NMB (6.6 %) and 16 to BNP (200 nM, 1.1 %). Thus were classified as NMBR neurons. From which, 16 responded to co-application of BNP (200 nM, 1.1 %). From 33 NMBR neurons used in this study, 8 (24%) were potentiated by co-application of NMB (10 nM) and BNP. Notably, the percentage of NMBR neurons that responded to both NMB and BNP is largely consistent with the finding that 29% of which express Npr3. To further evaluate the response specificity of NMBR neurons to NMB, we analyzed the response of the dorsal horn neurons lacking Nmbr to NMB (up to 20 nM). Importantly, none of NMBR KO neurons showed Ca2+ transients (n = 196 neurons), albeit they all responded to KCL (Figure 4C). Together, these results confirmed the identity as well as response specificity of NMBR neurons to NMB (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig4-v2.jpg)
+
+**Figure 4.:** (A) A diagram showing the procedure for calcium imaging on dissociated spinal cord dorsal horn neurons. (B) Sample traces showing that co-application of BNP and NMB at low doses evoked Ca2+ transients in WT dorsal horn neurons (n = 8 neurons from 33 NMBR neurons analyzed, n = 10 pups). These neurons responded to both BNP/NMB at the low doses responded to NMB at 20 nM robustly, indicating that they are healthy neurons. (C) No dorsal horn neurons responded to NMB (20 nM) isolated from the spinal cord of Nmbr KO mice (n = 2 mice), whereas they responded to KCI, indicating that they were healthy neurons. (D) Co-application of BNP (1 µM) with subthreshold of NMB (1 pM) evoked robust calcium response in HEK 293 cells co-expressing NMBR, which was significantly attenuated by Npr3 siRNA treatment. (E) Calcium transients induced by BNP and NMB were attenuated by pre-incubation of PTX (200 ng/ml), gallein or AP 811 (0.1 µM) for 30 min. n = 6 slides per group with at least 50 cells imaged on each slide. (F) Quantification of calcium concentration ([Ca2+]i) of E. (G) I.t. gallein (20 nmol) significantly reduced scratching behavior evoked by histamine (25 µg, i.d.) facilitated with BNP (30 µM, i.t.). Values are presented as mean ± SEM, n = 6–10. *p < 0.05, ***p < 0.001, one-way ANOVA followed by Tukey’s test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig4-figsupp1-v2.jpg)
+
 To probe the possibility of NPRC-NMBR crosstalk, we took advantage of the fact that HEK 293 cells express endogenous Npr1 and Npr3 as shown by qRT-PCR (Figure 4—figure supplement 1). In HEK 293 cells stably expressing NMBR, application of neither BNP (1 µM) nor NMB (1 pM) induced Ca2+ response, whereas their co-application evoked robust Ca2+ transients (Figure 4D). Importantly, the effect of BNP was greatly attenuated by Npr3 siRNA treatment (Figure 4D), indicating that BNP facilitates NMB/NMBR signaling through NPRC. NPRC has been linked to the inhibition of adenylate cyclase (AC)/cAMP signaling and can activate pertussis toxin (PTX)-sensitive Gαi/βγ signaling pathway (Anand-Srivastava et al., 1990). To examine whether the Gαi/βγ pathway is involved in the facilitatory effect of BNP/NPRC, HEK 293 cells were treated with pertussis toxin (PTX) to inactivate Gαi protein (Murayama and Ui, 1983). Subsequent incubation of BNP and NMB induced much smaller Ca2+ spikes compared to control cells (Figure 4E). The amplitude of intracellular Ca2+ concentrations ([Ca2+]i) was significantly reduced by PTX treatment (Figure 4F). Pre-incubation of gallein, a small molecule Gβγ inhibitor, also blocked the facilitation effect of BNP on NMB-induced calcium spikes (Figure 4E and F). Consistently, i.t. gallein markedly attenuated the facilitatory effect of BNP on histamine itch (Figure 4G). Collectively, these results indicate that BNP-NPRC signaling potentiates NMB/NMBR signaling via Gαi/βγ signaling.
 
-## NPRA and NPRC neurons are required for histamine itch
+### NPRA and NPRC neurons are required for histamine itch
 
 BNP-saporin (BNP-sap) has been used to ablate NPRA neurons in the spinal cord (Mishra and Hoon, 2013). Nevertheless, the expression of NPRC in the dorsal horn has raised the question of whether BNP-sap may additionally ablate neurons expressing NPRC (Figure 1H–N). Because BNP-sap at 5 µg, as described previously (Mishra and Hoon, 2013), resulted in the lethality of WT mice, we reduced the dose to 2.5 µg so that enough animals could survive for behavioral and molecular analysis. RNAscope ISH showed that the number of Npr1+ + were reduced to ~50% (82.9 ± 3.3 in control vs. 39.8 ± 2.2 in BNP-sap) (Figure 5A,F), whereas Npr2+ neurons were not affected (288.0 ± 18.2 in control vs. 300.5 ± 7.8 in BNP-sap) (Figure 5B and F). Moreover, BNP-sap ablated ~67% of Npr3+ neurons (41.8 ± 1.4 in control vs. 13.8 ± 1.8 in BNP-sap) as well as ~37% of Grp+ + (44.6 ± 1.9 in control vs. 22.6 ± 2.0 in BNP-sap) (Figure 5C, D and F). As expected, the number of Nmbr+ neurons was also significantly reduced after BNP-sap injection, likely due to Npr3 expression in these neurons (Figure 5E and F). A premise for ablation of neurons with peptide-conjugated saporin approach is the internalization of the receptor upon binding to the saporin, resulting in cell death (Wiley and Lappi, 2003). To test whether BNP can also internalize NPRB and NPRC, HEK 293 cells were transfected with Npr1, 2, and 3 cDNA tagged with mCherry (mCh) separately. Indeed, BNP internalized NPRA and NPRC, but not NPRB, in HEK 293 cells (Figure 5G), indicating that BNP-sap could ablate both NPRA and NPRC cells. Interestingly, behavioral studies showed that histamine itch was significantly reduced in BNP-sap mice (Figure 5H), whereas CQ itch was not affected (Figure 5I). These results suggest that NPRA and NPRC neurons in the spinal cord play an important role in histamine itch, which can be attributed to partial ablation of NMBR neurons.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig5-v2.jpg)
 
-**Figure 5.:** Npr1 and Npr3.(A-F) RNAscope ISH images (A and C) and quantified data (F) showing that BNP-sap ablated Npr1+ (A), Npr3+ (C), Grp+ (D), and Nmbr+ (E) neurons (red) in the dorsal horn of the spinal cord, while Npr2+ (B) neurons (red) were not affected. n = 4. (G) Incubation of BNP (10 µM) for 30 min caused internalization of Npr1-mCh and Npr3-mCh in HEK 293 cells transfected with NMBR cDNA as indicated by arrows. No internalization of Npr2-mCh was observed. Scale bar, 20 µm. mCh: mCherry. (H, I) Scratching behaviors induced by histamine (H), but not CQ (I) were significantly reduced in BNP-sap treated mice. n = 7–8. Values are presented as mean ± SEM. *p < 0.05, **p < 0.01, unpaired t test. Scale bar, 50 µm in A–F, 10 µm in G.Figure 5—source data 1.Npr1 and Npr3.
+**Figure 5.:** (A-F) RNAscope ISH images (A and C) and quantified data (F) showing that BNP-sap ablated Npr1+ (A), Npr3+ (C), Grp+ (D), and Nmbr+ (E) neurons (red) in the dorsal horn of the spinal cord, while Npr2+ (B) neurons (red) were not affected. n = 4. (G) Incubation of BNP (10 µM) for 30 min caused internalization of Npr1-mCh and Npr3-mCh in HEK 293 cells transfected with NMBR cDNA as indicated by arrows. No internalization of Npr2-mCh was observed. Scale bar, 20 µm. mCh: mCherry. (H, I) Scratching behaviors induced by histamine (H), but not CQ (I) were significantly reduced in BNP-sap treated mice. n = 7–8. Values are presented as mean ± SEM. *p < 0.05, **p < 0.01, unpaired t test. Scale bar, 50 µm in A–F, 10 µm in G.
 
-## The function of BNP and NPRA in dry skin and neuropathic itch
+### The function of BNP and NPRA in dry skin and neuropathic itch
 
 To explore whether NPRA is important for the development of chronic itch mediated by nonhistaminergic mechanisms, we used the mouse dry skin model deprived of histaminergic component (Miyamoto et al., 2002). From day 8, Npr1 KO mice appeared to show a tendency toward reduced scratching behavior relative to their WT littermates. The differences, however, were not statistically significant (Figure 6—figure supplement 1 A). The normal dry skin itch in Npr1 KO mice prompted us to examine Nppb expression in DRGs of dry skin mice. Real-time RT-PCR results showed that the levels of Nppb mRNA in dry-skin mice were either significantly reduced or not changed depending on the day examined (Figure 6—figure supplement 1B, data not shown). Similarly, dry-skin mice also showed unchanged expression of somatostatin (Sst), a peptide largely co-localized with Nppb in DRG neurons (Huang et al., 2018; Stantcheva et al., 2016) and Tac1 (Figure 6—figure supplement 1B-D). In contrast, Grp and Nmb expression levels in mice with dry skin were increased by 447% and 87%, respectively (Figure 6—figure supplement 1B). These findings suggest that BNP-NPRA signaling is not required for the development of dry skin itch.
 
 SST type two receptor (SST2R) is expressed in GABAergic neurons in the spinal cord and has been considered to be a sole receptor for SST (Kardon et al., 2014; Polgár et al., 2013). To test whether SST2R neurons may inhibit both itch and pain transmission, we pharmacologically inhibit these neurons by i.t. SST injection followed by validating the nature of evoked scratching behavior since the injection onto the nape may induce itch-, pain-related or undefined scratching behavior (Shimada and LaMotte, 2008). I.t. SST-evoked scratching was markedly reduced but not abolished by intraperitoneal injection (i.p.) of morphine (Figure 6A), a method used to evaluate whether i.t. induced scratching/biting behavior reflects pain (Hylden and Wilcox, 1981). In addition, scratching behaviors evoked by i.t. injection of SST and octreotide (OCT), a selective SST2R agonist, were significantly attenuated on mice with bombesin-saporin (BB-sap) treatment, which can completely block nonhistaminergic itch transmission (Sun et al., 2009; Figure 6B and C). These results suggest that the pharmacological inhibition of SST2R neurons could result in disinhibition of both itch and pain transmission.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig6-v2.jpg)
+
+**Figure 6.:** (A) Pre-injection of morphine (10 mg/kg, i.p.) for 30 min attenuated scratching behaviors induced by i.t. injection of SST (5 nmol). n = 6 mice per group. Sal, saline; Mor, morphine. (B, C) SST (5 nmol, i.t.)(B) and OCT (C) -evoked scratching behaviors were significantly reduced in bombesin-saporin-treated mice comparing with control mice that were treated with blank saporin. n = 5–6 mice per group. Ctrl, control; BB-sap, bombesin-saporin. (D) Raster plot of scratching behavior induced by light stimulation of skin in Sst-ChR2 and Sst-cre mice. (E) Number of scratches in 5 min induced by 3 s – 1, 5, 10, or 20 Hz light stimulation of nape skin in Sst-ChR2 and Sst-cre mice. n = 8–10 mice. ns – not significant, one-way ANOVA with Tukey post hoc. (F) IHC images of Sst-ChR2/Sst co-expression in DRG of Sst-ChR2 mice (Left). Arrowheads indicate co-expression. Scale bar, 10 µm. Venn diagram showing overlapping expression of Sst-ChR2 and Sst in DRG neurons (Right). (G) IHC images of Sst-ChR2/CGRP/IB4 (left), Sst-ChR2/NF-H (middle), and Sst-ChR2/TRPV1 (right) in DRG of Sst-ChR2 mice. Arrowheads indicate co-expression. (H) IHC image of Sst-ChR2/βIII-Tubulin in hairy nape skin. Dashed line marks epidermal/dermal boundary. Arrowheads indicate ChR2 expression in lanceolate endings of hair follicles. Values are presented as mean ± SEM. *p < 0.05, **p < 0.01, unpaired t test. Scale bars, 10 µm in F, 100 µm in G and H.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Npr1 KO mice and WT littermates showed comparable spontaneous scratching behaviors in the dry skin model. n = 6, p = 0.1283, F1,50 = 2.392, repeated measures Two-way ANOVA. (B) Real-time RT PCR showing significantly reduced levels of Grp, Nmb, Nppb, Sst, and Tac1 in DRGs of dry skin mice relative to WT mice. n = 4. (C), RNA scope ISH images showing that Nppb and Sst were largely co-expressed in WT DRG neurons. Nppb and Sst signals were dramatically reduced in DRGs of BRAFNav1.8 mice. (D) Venn diagram showing overlapping expression of Nppb and Sst. (E) Quantified data of RNA scope showing that the numbers of Nppb neurons and Sst neurons were significantly reduced in the DRGs of BRAFNav1.8 mice. n = 4. Values are presented as mean ± SEM. **p < 0.01, ***p < 0.001, unpaired t test. Scale bars, 50 µm.
 
 We then evaluated the expression of Nppb and Sst in neuropathic itch using BRAFNav1.8 mice that developed spontaneous scratching behavior resulting from enhanced expression of itch-sensing peptides/receptors in sensory neurons (Zhao et al., 2013). Interestingly, Nppb was dramatically down-regulated, whereas Sst was barely detectable in DRG neurons of BRAFNav1.8 mice (Figure 6—figure supplement 1C, D, E). The reduced Sst expression may reflect the dampening effect of the dorsal horn GABAergic neuronal activity under neuropathic itch conditions. Thus, BNP and SST are not involved in the development of dry skin and neuropathic itch in mice.
 
@@ -108,6 +134,14 @@ In this study, we demonstrate that in sensory neurons, BNP can function as a neu
 
 Perhaps, the most unexpected finding is that the BNP-NPRC signaling facilitates histamine itch through NPRC-NMBR crosstalk. Given that PTX acts on Gαi directly in the Gαiβγ heterotrimer (Smrcka, 2008) and gallein acts on Gβγ directly, the findings that inhibition of Gαi and Gβγ signaling similarly attenuates the facilitatory effect of BNP on NMB-induced Ca2+ response in NPRC/NMBR cells and BNP-facilitated histamine itch suggest an intracellular coupling of the Gαi/βγ signaling pathway to PLCβ signaling downstream of NMBR (Figure 7A). Numerous studies have shown that inhibitory GI-coupled receptors enhance or facilitate the activation of the canonical PLCβ−Ca2+ signaling transduction pathway downstream of Gq-coupled receptors (Prezeau et al., 2010; Werry et al., 2003). For example, we have shown that inhibitory receptors such as 5-HT1A and μ-opioid receptor isoform MOR1D in mice or MOR1Y in humans could facilitate or activate Ca2+ signaling downstream of GRPR via intracellular Gi-Gq crosstalk (Liu et al., 2019; Liu et al., 2011; Zhao et al., 2014a). Nevertheless, NPRC-NMBR represents the first example of the crosstalk between a non-GPCR inhibitory receptor and an excitatory GPCR. The attenuation of NPRC-GRPR crosstalk by pharmacological inhibition of either Gβγ or PLCβ signaling suggests that, irrespective of the receptor type, Gi-Gq coupling leading to Ca2+ mobilization are versatile and universal mechanisms. In congruence with this, even the rare Gi-Gβγ-PLCβ-Ca2+ signaling pathway that was considered to be a stand-alone paradigm was recently found to be dependent on Gq signaling (Pfeil et al., 2020). On the other hand, partial attenuation of BNP-facilitated histaminergic itch by PTX and gallein implies that Gβγ-independent signaling mechanisms may also have a role in NPRC-NMBR crosstalk. It is intriguing that ANP may not play a role in facilitating histamine itch, even though it can bind to NPRC with equal potency as BNP. It is possible that ANP may interact with the receptor at different binding sites (Savoie et al., 1995). Alternatively, it could be due to a much faster clearance rate of ANP (0.5–4 min) than BNP (four to more than 20 min) or CNP (Potter, 2011).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig7-v2.jpg)
+
+**Figure 7.:** (A) A schematic showing a model for NMBR-NPRC cross-signaling facilitated by BNP via the NMB-NMBR pathway. In response to histamine, NMB and BNP are released from primary afferents to activate NMBR and NPRC concurrently. Activation of NMBR by NMB at a low concentration may prime PLCβ signaling, whereas activation of NPRC by BNP stimulates Gai signaling, which in turn stimulates PLCβ to activate downstream Ca2+ signaling. (B) A hypothetic model depicting the respective roles of neuropeptides and glutamate in itch transmission. CQ itch is mediated in part by GRP-GRPR signaling independent of glutamatergic transmission. In contrast, histamine itch is mediated by NMB-NMBR signaling from primary afferents to NMBR neurons and by glutamatergic transmission from NMBR neurons to GRPR neurons. BNP facilitates NMB-NMBR signaling via NPRC independent of GRP-GRPR signaling but dependent on GRPR neurons. Glu: glutamate; GRP: gastrin-releasing peptide; BNP: B-type natriuretic peptide; NMB: neuromedin B.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71689/elife-71689-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** In response to histamine injection, NMB is released from primary afferents to activate NMBR neurons, while BNP is released to activate NPRC to facilitate NMBR signaling in NMBR neurons. Note that NMB and BNP do not have to be released from the same sensory neurons since NMB is also expressed in non-BNP neurons that may also innervate NMBR/NPRC neurons. During itch transmission, SST is not released. However, in response to certain types of noxious stimuli, SST may be released due to more intense firing of primary afferents to inhibit SST2R neurons, contributing to nociceptive transmission as a result of disinhibition.
+
 Our study clarifies the role of SST and Nppb/Sst fibers in itch. The finding that cutaneous activation of BNP/SST fibers failed to evoke scratching behavior suggests that activation of these fibers does not transmit itch information as a functional entity. These results may seem surprising in light of robust scratching behavior evoked by i.t. SST. However, they are consistent with the observation that DRG-specific deletion of Sst did not influence itch transmission (Huang et al., 2018). Although diminished itch behavior of Wnt1Cre/Sstf/f mice was used to argue for a role of SST in itch disinhibition in sensory neurons (Huang et al., 2018), the deficit can be ascribed to deletion of Sst in the brain regions, where Wnt1 is expressed in numerous neural precursors (Lewis et al., 2013). It is possible that cutaneous activation of Nppb/Sst fibers may provoke the release of BNP/SST onto the spinal cord; However, their endogenous release may not be sufficient to evoke scratching behavior. Together, these loss- and gain-of-function studies indicate that itch-related scratching behavior evoked by i.t. SST represents a pharmacological artifact. Interestingly, conditional knockout of Sst in DRGs attenuated thermal and mechanical pain (Huang et al., 2018), suggesting that SST release may contribute to certain types of nociceptive transmission. Consistently, the downregulation of Sst in mice with chronic itch may reflect a dampening effect of spinal inhibitory neuronal activity for nociceptive transmission under pathological itch conditions. Thus, the role of SST in sensory neurons is limited to the disinhibition of certain types of pain by inhibiting SST2R inhibitory neurons gating nociceptive transmission (Figure 7—figure supplement 1). This interpretation is in line with recent studies suggesting that spinal inhibitory neurons that gate itch and pain, respectively, are anatomically segregated (Chen, 2021).
 
 Most human chronic itch conditions are resistant to antihistamines, which is a major focus of current research due to clinical implications. However, current mouse models of chronic itch, including allergic contact dermatitis (ACD) and atopic dermatitis (AD), are additionally mediated by histamine-dependent mechanisms, as they are chemically induced allergic inflammatory responses that involve histamine release from mast cells (Shim and Oh, 2008; Wang and Kim, 2020). In these mouse models, BNP may be upregulated in DRGs as a result of mast cell degranulation and may facilitate histaminergic itch (Liu et al., 2020; Solinski et al., 2019). However, it is either downregulated or not altered in a dry skin itch model, which is mediated exclusively through GRP-dependent nonhistaminergic mechanism (Akiyama et al., 2010; Miyamoto et al., 2002; Zhao et al., 2013). Consistently, NPRA is dispensable for the development of dry skin itch and Nppb is downregulated in a neuropathic itch model as shown in the present study.
@@ -116,54 +150,575 @@ In summary, we demonstrate a novel BNP-NPRC-NMBR crosstalk in the modulation of 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BI/6 mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#000664</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Npr1 KO</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#004374</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Grpr KO mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#003126</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Nmbr KO</td>
+      <td>Ohki-Hamazaki et al., 1999</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai32 (Gt(ROSA)26Sortm32(CAG-OP4*H134R/EYFP)Hze)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#024109</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>SstCre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#018973</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK 293</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-1573</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CGRPα(Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#AB1971</td>
+      <td>IF (1/3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-Substance P(Guinea pig polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab10353</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-TRPV1(Guinea pig polyclonal)</td>
+      <td>Neuromics</td>
+      <td>Cat#GP14100</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-NF-H(Chicken polyclonal)</td>
+      <td>EnCor Biotechnology</td>
+      <td>Cat#CPCA-NF-H</td>
+      <td>IF (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-βIII-Tubulin(Rabbit polyclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#802,001</td>
+      <td>IF (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP(Rabbit polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat#A11122</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFP(Chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat#GFP-1020</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated Isolectin B4 (Polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#L2895</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IB4-AlexaFluor 568 conjugate (Polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat#I21412</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated donkey anti-mouse IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#715-165-150</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated donkey anti-chicken IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#703-165-155</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated donkey anti-rabbit IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#711-165-152</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 conjugated donkey anti-guinea pig IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#706-165-148</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated donkey anti-mouse pig IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#715-175-150</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated donkey anti-chicken IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#703-175-155</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated donkey anti-rabbit IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#711-175-152</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated donkey anti-guinea pig IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#706-175-148</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC conjugated donkey anti-mouse IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 715-095-150</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC conjugated donkey anti-chicken IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#703-095-155</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC conjugated (Polyclonal)donkey anti-rabbit IgG</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#111-095-144</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC conjugated donkey anti-guinea pig IgG (Polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#706-095-148</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ANP</td>
+      <td>GenScript</td>
+      <td>Cat#RP11927</td>
+      <td>5–10 μg, i.t.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BNP</td>
+      <td>GenScript</td>
+      <td>Cat#RP11119</td>
+      <td>1–5 μg, i.t.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CNP</td>
+      <td>GenScript</td>
+      <td>Cat#RP11110</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SST</td>
+      <td>GenScript</td>
+      <td>Cat#RP10230</td>
+      <td>5 nmol, i.t.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>OCT</td>
+      <td>GenScript</td>
+      <td>Cat#SMS 201–995</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GRP18-27</td>
+      <td>Bachem</td>
+      <td>Cat#H-3120.0005</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NMB</td>
+      <td>Bachem</td>
+      <td>Cat#H-3280.0001</td>
+      <td>0.5 nmol, i.t.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histamine</td>
+      <td>Sigma</td>
+      <td>Cat#H7250</td>
+      <td>100 μg, i.d.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine</td>
+      <td>Sigma</td>
+      <td>Cat#C6628</td>
+      <td>200 μg, i.d.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BNP-saporin (BNP-sap)</td>
+      <td>Advanced Targeting Systems</td>
+      <td>Cat#IT-69</td>
+      <td>2.5 μg/mouse, i.t</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blank-saporin</td>
+      <td>Advanced Targeting Systems</td>
+      <td>Cat#IT-27B</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pertussis toxin (PTX)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#3,097</td>
+      <td>200 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gallein</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#3,090</td>
+      <td>100 μM, 2 mM calcium imaing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>Sigma</td>
+      <td>Cat#179,124</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AP 811</td>
+      <td>Tocris</td>
+      <td>Cat#5,498</td>
+      <td>10 µM, i.t.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ANP 4–23</td>
+      <td>Bachem</td>
+      <td>Cat#4030384</td>
+      <td>10 µg, i.t.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U73122</td>
+      <td>Selleck</td>
+      <td>Cat#S8011</td>
+      <td>13.5 nmol, i.t.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gallein</td>
+      <td>Selleck</td>
+      <td>S5978</td>
+      <td>20 nmol, i.t., behavior study</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ddiethyl ether</td>
+      <td>Sigma</td>
+      <td>Cat#309,966</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope Fluorescent Multiplex Assay v2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#323,110</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Nppb</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#425,021</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Npr1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#484,531</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Npr2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#315,951</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Npr3</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#502,991</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Grp</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#317,861</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Grpr</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#317,871</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Nmbr</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#406,461</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Vgat</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#319,191</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>RNAscope probe Mm_Vglut2</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#319,171</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr1 siRNA</td>
+      <td>Sigma</td>
+      <td>Cat#SASI_Mm01_00106966</td>
+      <td>2 μg/μL, i.t.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr2 siRNA</td>
+      <td>Sigma</td>
+      <td>Cat#SASI_Mm01_00201357</td>
+      <td>2 μg/μL, i.t.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr3 siRNA</td>
+      <td>Sigma</td>
+      <td>Cat#SASI_Mm01_00036567</td>
+      <td>2 μg/μL, i.t.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Nppb primer for RT-PCR:5’- GTCAGTCGTTTGGGCTGTAAC-3’,5’- AGACCCAGGCAGAGTCAGAA-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Sst primer for RT-PCR:5’- CCCAGACTCCGTCAGTTTCT –3’,5’- CAGCAGCTCTGCCAAGAAGT –3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr1 primer for RT-PCR:5’- TGGAGACACAGTCAACACAGC-3’,5’- CGAAGACAAGTGGATCCTGAG-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr2 primer for RT-PCR:5’- TGAGCAAGCCACCCACTT-3’,5’- AGGGGGCCGCAGATATAC-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Npr3 primer for RT-PCR:5’- TGCACACGTCTGCCTACAAT-3’,5’- GCACCGCCAACATGATTCTC –3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Grpr primer for RT-PCR:5’-TGATTCAGAGTGCCTACAATCTTC-3’,5’-TTCCGGGATTCGATCTG-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Nmbr primer for RT-PCR:5’- GGGGGTTTCTGTGTTCACTC –3’,5’- CATGGGGTTCACGATAGCTC –3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Actb primer for RT-PCR:5’-TGTTACCAACTGGGACGACA-3’,5’-GGGGTGTTGAAGGTCTCAAA-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Gapdh primer for RT-PCR:5’-CCCAGCAAGGACACTGAGCAA-3’,5’-TTATGGGGGTCTGGGATGGAAA-3’</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Prism 6</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software and algorithms</td>
+      <td>Nikon Elements Software</td>
+      <td>Nikon</td>
+      <td>https://www.microscope.healthcare.nikon.com/products/software/nis-elements</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male mice between 7 and 12 weeks of age were used for behavioral experiments. C57BI/6 mice were purchased from The Jackson Laboratory (http://jaxmice.jax.org/strain/013636.html). Npr1 KO mice (Oliver et al., 1997), Grpr KO mice (Hampton et al., 1998), Nmbr KO mice (Ohki-Hamazaki et al., 1999), and their wild-type (WT) littermates were used. We cross SstCre mice (Taniguchi et al., 2011) with a flox-stop channel rhodopsin-eYFP (ChR2-eYFP) line (Ai32) (Madisen et al., 2012) to generate mice with ChR2-eYFP expression in Sst neurons (Sst-ChR2). All experiments were performed in accordance with the guidelines of the National Institutes of Health and the International Association for the Study of Pain and were approved by the Animal Studies Committee at Washington University School of Medicine.
 
-## Drugs and reagents
+### Drugs and reagents
 
 The dose of drugs and injection routes are indicated in figure legends. ANP, BNP, CNP, SST, and OCT were supplied from GenScript USA Inc (Piscataway, NJ). GRP18-27, NMB and ANP-4–23 were from Bachem (King of Prussia, PA). Histamine, chloroquine, Npr1 siRNA, Npr2 siRNA, Npr3 siRNA, and scrambled control siRNA were purchased from Sigma (St. Louis, MO). BNP-saporin (BNP-sap) and blank-saporin were made by Advanced Targeting Systems. Pertussis toxin (PTX) and gallein were from R&D Systems (Minneapolis, MN) or Selleck (Houston, TX). AP 811 was from Tocris (Minneapolis, MN). U73122 was from Selleck (Houston, TX).
 
-## Behavioral tests
+### Behavioral tests
 
 Behavioral tests were videotaped (HDR-CX190 camera, Sony) from a side angle. The videos were played back on the computer and the quantification of mice behaviors was done by persons blinded to the treatments and genotypes.
 
-## Acute scratching behavior
+### Acute scratching behavior
 
 Itch behaviors were performed as previously described (Sun and Chen, 2007; Zhao et al., 2014b). Briefly, mice were given 30 min to acclimate to the plastic arenas (10 × 10.5 × 15 cm). Mice were then briefly removed from the chamber for drug injections. Injection volume was 10 µL for i.t. injection and 50 µL for i.d. injection. Doses of drugs are indicated in figure legends. The number of scratching responses was counted for 30 min at 5 min intervals. One scratching bout is defined as a lifting of the hind limb toward the body and then a replacing of the limb back to the floor or the mouth, regardless of how many scratching strokes take place between those two movements. Scratching toward the injection site was counted after i.d. injection, and all scratching bouts were counted after i.t. injection.
 
-## Chronic itch models
+### Chronic itch models
 
 Dry Skin (Xerosis): The dry skin model was set up as described (Akiyama et al., 2010; Miyamoto et al., 2002). Briefly, the nape of mice was shaved, and a mixture of acetone and diethyl ether (1:1) was painted on the neck skin for 15 s, followed by 30 s of distilled water application (AEW). This regimen was administrated twice daily for 9 days. Spontaneous scratching behaviors were recorded for 60 min on the morning before AEW treatment. BRAFNav1.8 mice were generated as described previously (Zhao et al., 2013).
 
-## RNAscope ISH
+### RNAscope ISH
 
 RNAscope ISH was performed as described (Munanairi et al., 2018; Wang et al., 2012). Briefly, mice were anesthetized with a ketamine/xylazine cocktail (ketamine, 100 mg/kg and xylazine, 15 mg/kg) and perfused intracardially with 0.01 M PBS, pH 7.4, and 4% paraformaldehyde (PFA). The spinal cord was dissected, post-fixed in 4% PFA for 16 hr, and cryoprotected in 20% sucrose overnight at 4 °C. Tissues were subsequently cut into 18-μm-thick sections, adhered to Superfrost Plus slides (Fisher Scientific), and frozen at −20 °C. Samples were processed according to the manufacturer’s instructions in the RNAscope Fluorescent Multiplex Assay v2 manual for fixed frozen tissue (Advanced Cell Diagnostics), and coverslipped with Fluoromount-G antifade reagent (Southern Biotech) with DAPI (Molecular Probes). The following probes, purchased from Advanced Cell Diagnostics were used: Nppb (nucleotide target region 4–777; accession number NM_008726.5), Sst (nucleotide target region 18–407; accession number NM_009215.1), Npr1 (nucleotide target region 941–1882; accession number NM_008727.5), Npr2 (nucleotide target region 1162–2281; accession number NM_173788.3), Npr3 (nucleotide target region 919–1888; accession number NM_008728.2), Grp (nucleotide target region 22–825; accession number NM_175012.2), Grpr (nucleotide target region 463–1596; accession number - NM_008177.2), Nmbr (nucleotide target region 25–1131; accession number NM_008703.2), Vgat (Slc32a1, nucleotide target region 894–2037; accession number NM_009508.2), and Vglut2 (Slc17a6,nucleotide target region 1986–2998; accession number NM_080853.3). Sections were subsequently imaged on a Nikon C2+ confocal microscope (Nikon Instruments, Inc) in three channels with a 20 X objective lens. The criterion for including cells as positive for a gene expression detected by RNAscope ISH: A cell was included as positive if two punctate dots were present in the nucleus and/or cytoplasm. For co-localization studies, dots associated with single DAPI stained nuclei were assessed as being co-localized. Cell counting was done by a person who was blinded to the experimental design.
 
-## ISH and immunohistochemistry
+### ISH and immunohistochemistry
 
 ISH was performed using digoxigenin-labeled cRNA probes as previously described (Chen et al., 2001). Briefly, mice were anesthetized with an overdose of a ketamine/xylazine cocktail and fixed by intracardiac perfusion of cold 0.01 M PBS, pH 7.4, and 4% paraformaldehyde. The spinal cord, DRG, and hairy nape skin tissues were immediately removed, post-fixed in the same fixative overnight at 4 °C, and cryoprotected in 20% sucrose solution. DRGs, lumbar spinal regions and hairy nape skin were frozen in OCT and sectioned at 20 µm thickness on a cryostat. Immunohistochemical (IHC) staining was performed as described (Zhao et al., 2007). Spinal cord and DRG tissues were sectioned at 20 µm thickness. Hairy nape skin was sectioned at 30 µm thickness. Free-floating sections were incubated in a blocking solution containing 2% donkey serum and 0.1% Triton X-100 in PBS (PBS-T) for 2 h at room temperature. The sections were incubated with primary antibodies overnight at 4 °C, washed three times in PBS, incubated with the secondary antibodies for 2 hr at room temperature, and washed three times. Sections were mounted on slides with Fluoromount G (Southern Biotech) and coverslips. Fluorescein isothiocyanate (FITC)-conjugated Isolectin B4 from Griffonia simplicifolia (IB4, 10 µg/mL; L2895, Sigma), IB4-AlexaFluor 568 conjugate (2 μg/mL, ThermoFisher Scientific) or the following primary antibodies were used: rabbit anti-CGRPα (1:3000; AB1971, Millipore), guinea pig anti-Substance P (1:1000; ab10353, Abcam), guinea pig anti-TRPV1 (1:1000; GP14100, Neuromics), chicken anti-NF-H (1:2000, EnCor Biotechnology, CPCA-NF-H), rabbit anti-βIII-Tubulin (1:2000, Biolegend, 802001), rabbit anti-GFP (1:1000, Molecular Probes, A11122), chicken anti-GFP (1:500, Aves Labs, GFP-1020). The secondary antibodies were purchased from Jackson ImmunoResearch Laboratories, including Cyanine 3 (Cy3), Cyanine 5 (Cy5) - or FITC conjugated donkey anti-rabbit, anti-mouse, anti-chicken or anti-guinea pig IgG (Cy3, 0.5 µg/ml; FITC, 1.25 µg/mL), biotin-SP (long-spacer)-conjugated donkey anti-rabbit IgG (1 µg/mL) and avidin-conjugated Alexa Fluor 488 (0.33 µg/mL). Images were taken using a Nikon Eclipse Ti-U microscope with Cool Snap HQ Fluorescent Camera and DS-U3 Brightfield Camera controlled by Nikon Elements Software (Nikon) or a Leica TCS SPE confocal microscope with Leica LAS AF Software (Leica Microsystems). The staining was quantified by a person blinded to the genotype using ImageJ (version 1.34e, NIH Image) as previously described (Zhao et al., 2013). Images were taken using a Nikon C2+ confocal microscope system (Nikon Instruments, Inc) and analysis of images was performed using ImageJ software from NIH Image (version 1.34e). At least 3 mice per group and 10 lumbar sections across each group were included for statistical comparison.
 
-## Small interfering RNA treatment
+### Small interfering RNA treatment
 
 Negative control siRNA (SIC001) and selective siRNA duplex for mouse Npr1 (SASI_Mm01_00106966), mouse Npr2 (SASI_Mm01_00201357), and mouse Npr3 (SASI_Mm01_00036567) were purchased from Sigma. RNA was dissolved in diethyl pyrocarbonate-treated PBS and prepared immediately prior to administration by mixing the RNA solution with a transfection reagent, RVG-9R (Genscript). The final concentration of RNA was 2 µg/10 µL. siRNA was delivered to the lumbar region of the spinal cord. The injection was given once daily for 6 consecutive days as described previously with some modifications (Liu et al., 2011; Luo et al., 2005; Tan et al., 2005). Behavior testing was carried out 24 hr after the last injection.
 
-## BNP-saporin treatment
+### BNP-saporin treatment
 
 Mice were treated with one-time i.t. injection of BNP-sap (2.5 µg/mouse) as previously described (Mishra and Hoon, 2013) with the reduced dose, due to the lethal effect of BNP-sap (5 µg). Behavioral tests were performed 2 weeks after BNP-sap injection. After behavioral tests, the spinal cord/DRGs of mice were processed for real-time RT-PCR and ISH.
 
-## Real-time RT-PCR
+### Real-time RT-PCR
 
 Real-time RT-PCR was performed as previously described with Fast-Start Universal SYBR Green Master (Roche Applied Science) (Liu et al., 2011; Liu et al., 2014). All samples were assayed in duplicate (heating at 95 °C for 10 s and at 60 °C for 30 s). Data were analyzed using the Comparative CT Method (StepOne Software version 2.2.2.), and the expression of target mRNA was normalized to the expression of Actb and Gapdh. The following primers were used: Nppb (NM_008726.4): 5’- gtcagtcgtttgggctgtaac-3’, 5’- agacccaggcagagtcagaa-3’; amplicon size, 89 bp; Sst (NM_009215.1): 5’- CCCAGACTCCGTCAGTTTCT –3’, 5’- CAGCAGCTCTGCCAAGAAGT –3’, amplicon size, 87 bp; Npr1 (NM_008727.5): 5’- tggagacacagtcaacacagc-3’, 5’- cgaagacaagtggatcctgag-3’; amplicon size, 70 bp; Npr2 (NM_173788.3): 5’- tgagcaagccacccactt-3’, 5’- agggggccgcagatatac-3’, amplicon size, 60 bp; Npr3 (NM_008728.2): 5’- TGCACACGTCTGCCTACAAT-3’, 5’- GCACCGCCAACATGATTCTC –3’, amplicon size, 138 bp; Grpr (NM_008177.2): 5’-TGATTCAGAGTGCCTACAATCTTC-3’, 5’-TTCCGGGATTCGATCTG-3’; amplicon size, 71 bp; Nmbr (NM_008703.2): 5’- gggggtttctgtgttcactc –3’, 5’- catggggttcacgatagctc –3’, amplicon size, 67 bp; Actb (NM_007393.3): 5’-TGTTACCAACTGGGACGACA-3’, 5’-GGGGTGTTGAAGGTCTCAAA-3’; amplicon size, 166 bp; and Gapdh (NM_008084.2): 5’-CCCAGCAAGGACACTGAGCAA-3’, 5’-TTATGGGGGTCTGGGATGGAAA-3’; amplicon size, 93 bp.
 
-## Cell or neuronal culture, internalization assay, and calcium imaging
+### Cell or neuronal culture, internalization assay, and calcium imaging
 
 Primary culture of spinal dorsal horn neurons was prepared from 5- to 7-day-old C57BI/6 mice (Zhao et al., 2014b) and NMBR WT and KO mice (Zhao et al., 2014b). The protocol is essentially the same as previously described (Munanairi et al., 2018). After decapitation, laminectomy was performed, and the dorsal horn of the spinal cord was dissected out with a razor blade and incubated in Neurobasal-A Medium (Gibco) containing 30 μL papain (Worthington) at 37 °C for 20 min. Enzymatic digestion was stopped by replacing it with 1 ml Neurobasal-A medium. After washing with the same medium three times, gentle trituration was performed using a flame polished glass pipette until the solution became cloudy. The homogenate was centrifuged at 1500 rpm for 5 min, and the supernatant was discarded. Cell pellet was re-suspended in culture medium composed of Neurobasal-A medium (Gibco, 92% vol/vol), fetal bovine serum (Invitrogen, 2% vol/vol), HI Horse Serum (Invitrogen, 2% vol/vol), GlutaMax (2 mM, Invitrogen, 1% vol/vol), B27 (Invitrogen, 2% vol/vol), Penicillin (100 μg/mL) and Streptomycin (100 μg/mL) and plated onto 12 mm coverslips coated with poly-D-lysine. After three days of culture, neurons were used for calcium imaging as described previously (Zhao et al., 2014b). HEK 293 cells were purchased from ATCC (Cat. CRL-1573) with a certificate of analysis confirming cell line identity by STR profiling and confirming lack of mycoplasma contamination. All experiments were carried out on cells cultured for less than ten passages from the purchased stock. HEK 293 cells were grown in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum in a humidified atmosphere containing 5% CO2. Stable HEK293 cell lines were made as described previously (Liu et al., 2011). Briefly, cells were transfected with pcDNA3.1/NMBR, pcDNA3.1/NPR1-mCherry, pcDNA3.1/NPR2-mCherry, or pcDNA3.1/NPR3-mCherry by electroporation (GenePulser Xcell, Bio-Rad). Stable transfectants were selected in the presence of 500 µg/ml G418 (Invitrogen). For internalization assay, HEK 293 cells expressing mCherry-tagged receptors were plated on glass bottom dishes coated with poly-D-lysine overnight and imaged every 10 min for 30 min using a Nikon C2+ confocal microscope system (Nikon Instruments, Inc) in the presence of 10 µM BNP. For calcium imaging assay, HEK 293 cells expressing NMBR were plated onto 12 mm coverslips coated with poly-D-lysine. Overnight cell cultures were loaded with Fura 2-acetomethoxy ester (Molecular Probes) for 30 min at 37 °C. After washing, neurons or HEK 293-NMBR cells were imaged at 340 and 380 nm excitation to detect intracellular free calcium (Zhao et al., 2014b). PTX (200 ng/ml), gallein (0.1 mM or 2 mM), or AP 811 (0.1 µM) were pre-incubated with NMBR cells for 10 min to block Gαi, Gβγ, or NPRC, respectively.
 
-## Optogenetic activation of cutaneous fibers
+### Optogenetic activation of cutaneous fibers
 
 Sst-ChR2 mice and wild-type littermates (Sst-cre) were used for optical skin stimulation experiments. The nape skin was shaved 3 days prior to stimulation in all mice tested. One day prior to the experiments, each mouse was placed in a plastic arena (10 × 11 X 15 cm) for 30 min to acclimate. For blue light skin stimulation, a fiber optic cable was attached to a fiber-coupled 473 nm blue laser (BL473T8-150FC, Shanghai Laser and Optics Co.) with an ADR-800A adjustable power supply. Laser power output from the fiber optic cable was measured using a photometer (Thor Labs) and set to 15 mW from the fiber tip. An Arduino UNO Rev three circuit board (Arduino) was programmed and attached to the laser via a BNC input to control the frequency and timing of the stimulation (1, 5, 10, or 20 Hz with 10ms on-pulse and 3 s On – 3 s off cycle for 5 min). During stimulation, the mouse was traced manually by a fiber optic cable with a ferrule tip that was placed 1–2 cm above the nape skin. Videos were played back on a computer for scratching behavior assessments by observers blinded to the animal groups and genotypes.
 
-## Statistical analyses
+### Statistical analyses
 
 Values are reported as the mean ± standard error of the mean (SEM). Statistical analyses were performed using Prism 6 (v6.0e, GraphPad, San Diego, CA). For comparison between two or more groups, unpaired, paired two-tailed t-test, one-way ANOVA followed by Tukey post hoc tests, or two-way repeated-measures ANOVA followed by Sidak’s post hoc analysis, was used. Normality and equal variance tests were performed for all statistical analyses. p < 0.05 was considered statistically significant.

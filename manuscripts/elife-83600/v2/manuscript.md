@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Psychology and Neuroscience, Duke University Durham United States
-2. https://ror.org/00py81415 Department of Cell Biology, Duke University School of Medicine Durham United States
-3. https://ror.org/00py81415 Department of Neurobiology, Duke University School of Medicine Durham United States
+1. Department of Psychology and Neuroscience, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Department of Cell Biology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+3. Department of Neurobiology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -36,21 +36,94 @@ To understand the role of D1 + neurons in the hippocampus, we tested whether sel
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of optic fiber placement above virally infected D1 + dentate gyrus (DG) neurons in D1-Cre mice. (B) Left, coronal section showing ChR2 expression in the DG. Right, magnified view of AAV infected DG neurons from inset colocalized with D1 receptors. White arrows indicate cell bodies. (C) Schematic of the operant self-stimulation chamber. (D) Lever pressing rate across three fixed ratios (FR1, FR3, FR5) schedules of reinforcement, and extinction (8 days each) for D1:Chr2-DG animals (n=8) and eYFP (n=8) controls. D1::Chr2-DG mice self-stimulated significantly more than controls (Two-way RM ANOVA, Group [ChR2 or eYFP] × Day, main effect of group F(1,14) = 16.59, p=0.0011, main effect of Day, F(23, 322) = 2.958, p=0.0078, and a significant interaction between day × group F(23,322) = 2.479, p=0.0003). During extinction, there was a significant main effect of group: F(1,112) = 58.87, p<0.0001, no significant effect of Day: F(7, 112) = 0.4571, p=0.8635, and no interaction: F(7, 112) = 0.8243, p=0.8243. Means +/−SEM for all graphs. DG, dentate gyrus; LC, Locus Coeruleus; scp, superior cerebellar peduncle; DAPI, 4′,6-diamidino-2-phenylindole. ****p<0.0001.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Schematic of optic fiber placement above virally infected D1 + dentate gyrus (DG) neurons in D1-Cre mice. (B) Left, coronal section showing ChR2 expression in the DG. Right, magnified view of AAV infected DG neurons from inset colocalized with D1 receptors. White arrows indicate cell bodies. (C) Schematic of the operant self-stimulation chamber. (D) Lever pressing rate across three fixed ratios (FR1, FR3, FR5) schedules of reinforcement, and extinction (8 days each) for D1:Chr2-DG animals (n=8) and eYFP (n=8) controls. D1::Chr2-DG mice self-stimulated significantly more than controls (Two-way RM ANOVA, Group [ChR2 or eYFP] × Day, main effect of group F(1,14) = 16.59, p=0.0011, main effect of Day, F(23, 322) = 2.958, p=0.0078, and a significant interaction between day × group F(23,322) = 2.479, p=0.0003). During extinction, there was a significant main effect of group: F(1,112) = 58.87, p<0.0001, no significant effect of Day: F(7, 112) = 0.4571, p=0.8635, and no interaction: F(7, 112) = 0.8243, p=0.8243. Means +/−SEM for all graphs. DG, dentate gyrus; LC, Locus Coeruleus; scp, superior cerebellar peduncle; DAPI, 4′,6-diamidino-2-phenylindole. ****p<0.0001.
 
 Next, using retrograde tracing methods, we were able to map projections to the DG (Figure 2A–D & Figure 2—figure supplement 1). We confirmed significant LC projections to the DG, but we did not find significant VTA or SNc projections (Figure 2E and H & Table 1). Retrograde labeling of DG-projecting LC neurons is colocalized with tyrosine hydroxylase (TH), a marker for catecholamine neurons (e.g. dopamine, norepinephrine; Figure 2F–H). In contrast, there was no labeling in the VTA (Figure 2H, Figure 2—figure supplement 1). This finding suggests that the DG receives TH + projections from the LC rather than VTA.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of Retro2-Cre injection into the dentate gyrus in Ai-14 reporter mice. (B) Schematic summarizing all brain regions that project to the DG. Only LC is TH+. Abbreviations – Vertical diagonal band (VDB), Medial septal nucleus (MSN), Ventral lateral preoptic area (VLPO), retro mammillary bodies (RMM), dorsal lateral entorhinal cortex (DLEnt) (C) Injection site of the Retro2 showing the Cre-positive neurons. (D–G) Retrograde labeling of neurons in canonical brain regions that project to the hippocampus. (D) Entorhinal cortex (EC). (E) Limited retrograde labeling of neurons in the VTA, colocalized with tyrosine hydroxylase (TH). (F & G) Retrograde labeling of LC neurons in two out of four mice, colocalized with tyrosine hydroxylase. (H) Percent of colocalized neurons in the LC (n=8; four mice × two hemispheres) and VTA (n=6; three mice × two hemispheres). Unpaired t-test, p<0.0001. Mean and +/−SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Schematic of Cav2-Cre injection into the dentate gyrus of the hippocampus of Ai-14 reporter mice. (b) Injection site of the Cav2 showing the Cre-positive neurons. (c–f) Retrograde labeling of neurons in canonical brain regions that project to the hippocampus. Vertical diagonal band (VDB), Ventral lateral preoptic area (VLPO), retro mammillary bodies (RMM), dorsal lateral entorhinal cortex (DLEnt). (g) Retrograde labeling of neurons in the LC, colocalized with tyrosine hydroxylase (TH). (h) Schematic summarizing all brain regions that project to the dentate gyrus (DG). Only LC is TH+ (i - i’’’’) Anterior to posterior series of brain sections, demonstrating that retrograde labeling ends outside of the VTA.
+
+**Table 1.**
+ Colocalization of tyrosine hydroxylase with retrograde dentate gyrus (DG) labeling in the locus coeruleus (LC).Colocalization of tyrosine hydroxylase (TH) and Retro-cre labeling (n=8; four mice, two hemispheres), showing that at least some of the LC-DG neurons are TH positive. In contrast, no colocalization was found with retro-Cre and TH labeling in the VTA (n=6; three mice, two hemispheres), and ventral tegmental area (VTA) slices were not taken from one animal.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Retro-cre label VTA (from DG)</th>
+      <th>Retro-Cre label LC (from DG)</th>
+      <th>LC colocalized with TH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse 1 (LH)</td>
+      <td>0</td>
+      <td>18</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Mouse 1 (RH)</td>
+      <td>0</td>
+      <td>32</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Mouse 2 (LH)</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Mouse 2 (RH)</td>
+      <td>0</td>
+      <td>13</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Mouse 3 (LH)</td>
+      <td>0</td>
+      <td>20</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Mouse 3 (RH)</td>
+      <td>0</td>
+      <td>31</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Mouse 4 (LH)</td>
+      <td>n/a</td>
+      <td>22</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Mouse 4 (RH)</td>
+      <td>n/a</td>
+      <td>14</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
 
 We then tested whether the LC-DG projection is responsible for the self-stimulation effect observed. In order to manipulate the LC-DG pathway selectively, we injected AAV-Retro2-Cre into the DG and a Cre-dependent ChR2 (AAV5-DIO-ChR2) into the LC (Figure 3A–B). We found that ChR2DG-LC (n=8) mice also showed self-stimulation that is comparable to the stimulation of D1::ChR2DG neurons (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic showing selective targeting of LC-DG projection. (B) Left: Representative coronal section showing Cre-dependent ChR2 expression in the LC. Right: Magnified view from inset showing eYFP colocalization with tyrosine hydroxylase (TH) LC neurons. (C) Lever presses per session for three fixed ratios (FR1, FR3, FR5) schedules of reinforcement, and extinction (no stimulation following lever pressing) for Retro::ChR2 DG-LC animals (n=8) and eYFP (n=8) controls. Mice with ChR2 expressed in LC self-stimulated significantly more than controls (Two-way RM ANOVA Group [ChR2 or eYFP] × Day, the significant effect of group: F(1,14) = 13.09, p=0.0031), the significant effect of day, F(23, 322) = 3.601, p<0.0001; interaction of day × group: F(23,322) = 2.712, p<0.0001. (D) Left, design of pharmacological experiments. After FR1 training, mice received IP injections of antagonists for either D1 (SCH 23390), or NE-beta receptors (propranolol). (E) D1-antagonist SCH 23390 significantly reduced self-stimulation of DG-projecting LC neurons: F(2, 14) = 6.9, p=0.008. Post hoc analysis (Dunnett’s) shows that both doses reduced lever pressing relative to controls (0.1 mg/kg, p=0.02; 0.2 mg/kg, p=0.007). (F) The NE antagonist propranolol did not have any effect: F(2, 14) = 0.290, p=0.753. Means +/−SEM. HPC, hippocampus; 4 v, fourth ventricle. *p<0.05, **p<0.01.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.
+**Figure 3.:** (A) Schematic showing selective targeting of LC-DG projection. (B) Left: Representative coronal section showing Cre-dependent ChR2 expression in the LC. Right: Magnified view from inset showing eYFP colocalization with tyrosine hydroxylase (TH) LC neurons. (C) Lever presses per session for three fixed ratios (FR1, FR3, FR5) schedules of reinforcement, and extinction (no stimulation following lever pressing) for Retro::ChR2 DG-LC animals (n=8) and eYFP (n=8) controls. Mice with ChR2 expressed in LC self-stimulated significantly more than controls (Two-way RM ANOVA Group [ChR2 or eYFP] × Day, the significant effect of group: F(1,14) = 13.09, p=0.0031), the significant effect of day, F(23, 322) = 3.601, p<0.0001; interaction of day × group: F(23,322) = 2.712, p<0.0001. (D) Left, design of pharmacological experiments. After FR1 training, mice received IP injections of antagonists for either D1 (SCH 23390), or NE-beta receptors (propranolol). (E) D1-antagonist SCH 23390 significantly reduced self-stimulation of DG-projecting LC neurons: F(2, 14) = 6.9, p=0.008. Post hoc analysis (Dunnett’s) shows that both doses reduced lever pressing relative to controls (0.1 mg/kg, p=0.02; 0.2 mg/kg, p=0.007). (F) The NE antagonist propranolol did not have any effect: F(2, 14) = 0.290, p=0.753. Means +/−SEM. HPC, hippocampus; 4 v, fourth ventricle. *p<0.05, **p<0.01.
 
 The LC-DG projection releases both norepinephrine and dopamine (Kempadoo et al., 2016; Takeuchi et al., 2016). It is unclear which transmitter is responsible for the self-stimulation effect, though our observation on D1 + DG neurons (Figure 1) suggests that dopamine might be responsible. Consequently, to determine which of these transmitters is responsible for the observed effects, we used pharmacological manipulations in combination with pathway-specific optogenetic manipulations using the same self-stimulation paradigm (Figure 3E and Figure 4). Mice (n=8) trained on self-stimulation were tested after either receiving systemic injections of a β-adrenoceptor antagonist (propranolol), or a D1-antagonist (SCH 23390). β-adrenoceptor blockade did not produce any significant effects (Figure 3D and F). In contrast, D1-antagonist significantly impaired self-stimulation (Figure 3E).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic showing injection strategy for local drug infusions into the DG during self-stimulation of LC neurons that project to the DG (n=8). Cre expression was induced in LC neurons projecting to the DG by first injecting AAV-Retro-2 into the DG. An injection of a Cre-dependent virus (AAV5-DIO-ChR2-eYFP) was then made in the LC before optic fiber implantation. Canulae were used to inject DA and NE antagonists into the DG. (B) Top, representative coronal section showing ChR2 expression in the LC. Bottom, ChR2 terminals in DG and cannula tracks. (C) Acquisition of lever pressing Retro::ChR2 DG-LC mice or Retro::eYFP DG-LC (controls). Experimental animals self-stimulated more than controls (Two-way ANOVA [Day × Group], effect of Day F(7, 84) = 5.222, p<0.0001; effect of group, F(1,12) = 37.98, p<0.0001; interaction F(7,84) = 4.932, p<0.0001). (D) One-way RM ANOVA showed D1 antagonist SCH-23390 significantly reduced lever pressing. There is a significant drug effect: F(2,14) = 39.16, p<0.0001. Dunnett’s multiple comparisons show both doses produced significant suppression of lever pressing (1.8 mM, p<0.0001; 3.6 mM, p<0.0001). (E) NE antagonist propranolol had no significant effect on self-stimulation. F(2,14) = 0.1912, p=0.8281. Dunnett’s multiple comparisons show no significant differences 10.5 mM, p=0.7829; 21 nM, p=0.8624. (F) Using DeepLabCut we tracked the distance traveled by the each animal and found no significant differences in the movement for the vehicle, SCH23390 (3.6 mM) or propranolol (21 nM) RM one-way ANOVA no effect of group, F(1, 4) = 3, p=0.1516. Means +/−SEM for all graphs. DG, dentate gyrus; LC, locus coeruleus; 4 v, fourth ventricle.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.
+**Figure 4.:** (A) Schematic showing injection strategy for local drug infusions into the DG during self-stimulation of LC neurons that project to the DG (n=8). Cre expression was induced in LC neurons projecting to the DG by first injecting AAV-Retro-2 into the DG. An injection of a Cre-dependent virus (AAV5-DIO-ChR2-eYFP) was then made in the LC before optic fiber implantation. Canulae were used to inject DA and NE antagonists into the DG. (B) Top, representative coronal section showing ChR2 expression in the LC. Bottom, ChR2 terminals in DG and cannula tracks. (C) Acquisition of lever pressing Retro::ChR2 DG-LC mice or Retro::eYFP DG-LC (controls). Experimental animals self-stimulated more than controls (Two-way ANOVA [Day × Group], effect of Day F(7, 84) = 5.222, p<0.0001; effect of group, F(1,12) = 37.98, p<0.0001; interaction F(7,84) = 4.932, p<0.0001). (D) One-way RM ANOVA showed D1 antagonist SCH-23390 significantly reduced lever pressing. There is a significant drug effect: F(2,14) = 39.16, p<0.0001. Dunnett’s multiple comparisons show both doses produced significant suppression of lever pressing (1.8 mM, p<0.0001; 3.6 mM, p<0.0001). (E) NE antagonist propranolol had no significant effect on self-stimulation. F(2,14) = 0.1912, p=0.8281. Dunnett’s multiple comparisons show no significant differences 10.5 mM, p=0.7829; 21 nM, p=0.8624. (F) Using DeepLabCut we tracked the distance traveled by the each animal and found no significant differences in the movement for the vehicle, SCH23390 (3.6 mM) or propranolol (21 nM) RM one-way ANOVA no effect of group, F(1, 4) = 3, p=0.1516. Means +/−SEM for all graphs. DG, dentate gyrus; LC, locus coeruleus; 4 v, fourth ventricle.
 
 To activate DG-projecting LC neurons robustly, we targeted the cell bodies of the DG-LC projections. But the LC has broad projections to many brain areas (Schwarz and Luo, 2015). To verify that our self-stimulation effects were not due to the activation of LC collaterals in other regions, we performed local infusions of antagonists (Figure 4A–C, n=8). Infusions of a D1-antagonist into the DG significantly impaired self-stimulation, whereas propranolol showed no significant group differences in self-stimulation (Figure 4D–E). These results suggest that the reinforcing effects of LC-DG stimulation are due to the activation of D1 receptors by dopamine, rather than by norepinephrine.
 
@@ -58,15 +131,158 @@ Based on our self-stimulation results, we hypothesized that DG D1 + neurons may 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig5-v2.jpg)
 
-**Figure 5.:** (A) A schematic of a UCLA miniscope and GRIN lens implanted over jGCamp7f-infected D1 + cells in the dentate gyrus (DG) of D1-Cre mice for in vivo imaging (n=5). (B) Left: Representative coronal section showing GCaMP7f expression in D1 neurons of the DG. GRIN lens, marked in white. Middle: Imaging field of view with contours of identified neurons. Right: For example, calcium traces are significantly modulated by lever presses. (C) An example neuron showing increased calcium transient during lever pressing. Top: Heat map shows normalized calcium activity aligned to a single press as a function of time during fixed-ratio (FR) 1 trial. Bottom: Averaged calcium activity across all presses. (D) The press rates for FR1, FR3, and FR5 for each day of testing. The press rates increase across the FR schedule. (E) The percent of neurons modulated by the first press in each FR schedule across days. Two-way RM ANOVA FR schedule × Day, no effect of FR schedule F(2,4) = 0.6702, p=0.5298; effect of day, F(2,4) = 4.536, p=0.0213; no effect of interaction F(2,4) = 0.6403, p=0.6389 (F) The percent of neurons modulated by a non-contingent reward task, or by each press in an FR5 task. Day 1, One-way RM ANOVA F(4,5) = 3.389, p=0.0222. Day 2, One-way RM ANOVA F(4,5) = 16.19, p=0.0046. Day 3, One-way RM ANOVA F(4,5) = 4.807, p=0.0048. Dunnett’s multiple comparison tests was used to compare the percent of press-modulated neurons to the non-contingent modulated neurons. Significance values are marked (*) for p<0.05.Figure 5—source data 1.
+**Figure 5.:** (A) A schematic of a UCLA miniscope and GRIN lens implanted over jGCamp7f-infected D1 + cells in the dentate gyrus (DG) of D1-Cre mice for in vivo imaging (n=5). (B) Left: Representative coronal section showing GCaMP7f expression in D1 neurons of the DG. GRIN lens, marked in white. Middle: Imaging field of view with contours of identified neurons. Right: For example, calcium traces are significantly modulated by lever presses. (C) An example neuron showing increased calcium transient during lever pressing. Top: Heat map shows normalized calcium activity aligned to a single press as a function of time during fixed-ratio (FR) 1 trial. Bottom: Averaged calcium activity across all presses. (D) The press rates for FR1, FR3, and FR5 for each day of testing. The press rates increase across the FR schedule. (E) The percent of neurons modulated by the first press in each FR schedule across days. Two-way RM ANOVA FR schedule × Day, no effect of FR schedule F(2,4) = 0.6702, p=0.5298; effect of day, F(2,4) = 4.536, p=0.0213; no effect of interaction F(2,4) = 0.6403, p=0.6389 (F) The percent of neurons modulated by a non-contingent reward task, or by each press in an FR5 task. Day 1, One-way RM ANOVA F(4,5) = 3.389, p=0.0222. Day 2, One-way RM ANOVA F(4,5) = 16.19, p=0.0046. Day 3, One-way RM ANOVA F(4,5) = 4.807, p=0.0048. Dunnett’s multiple comparison tests was used to compare the percent of press-modulated neurons to the non-contingent modulated neurons. Significance values are marked (*) for p<0.05.
 
 We then recorded calcium transients from DG D1 + neurons during operant lever pressing for food rewards (Figure 5A–C) during lever pressing for food reward on fixed-ratio (FR) schedules (FR1, FR3, and FR5). We found distinct populations of DG D1 + neurons that were modulated by lever pressing. To see if the neural activity is action-contingent, we also used a control task in which pressing is not required. The reward was delivered non-contingently every 20 s, preceded by 1 s of white noise. On this task, there were far fewer significantly modulated DG D1 + neurons (n=6, 3% of the total population) compared to the operant task (Figure 5F, Table 2). To verify that the virus targets D1 + neurons in the DG, we quantified the percentage of neurons that are virally targeted that express D1 receptors. Using RNA scope, we found that GcAMP-7f was colocalized with D1 receptors (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig6-v2.jpg)
 
-**Figure 6.:** (A) Left, the representative coronal section from a Drd1a-cre mouse injected with GCaMP-7f. Right, zoomed-in view of green (GCaMP7f) and red (probe) channels, showing the outlines (white) of GFP + cells identified in FIJI. (B) Left, the percent of GFP cells colocalized with the negative control probe (n=3 sections; one brain, nine images), positive control probe (n=3 sections; one brain, five images), and Drd1a probe (n=7 sections; three brains, 38 images). One-way ANOVA showed a significant group difference (F = 229.2, p<0.0001). About 80% of GFP neurons colocalized with the Drd1a, much higher than the background negative control probe (Tukey‘s, p<0.0001). Right, there was also a significant group difference in puncta per cell (ANOVA, F = 19.51, p=0.0004) between Drd1a probe and negative control probe (Tukey‘s, mean diff = –5.619, adjusted p<0.0052) and positive control probe (Tukey‘s, mean diff = 4.381, adjusted p=0.0226). Thus the SIO/DIO constructs are only being expressed in D1 + neurons. Scale bars represent 10 um.Figure 6—source data 1.
+**Figure 6.:** (A) Left, the representative coronal section from a Drd1a-cre mouse injected with GCaMP-7f. Right, zoomed-in view of green (GCaMP7f) and red (probe) channels, showing the outlines (white) of GFP + cells identified in FIJI. (B) Left, the percent of GFP cells colocalized with the negative control probe (n=3 sections; one brain, nine images), positive control probe (n=3 sections; one brain, five images), and Drd1a probe (n=7 sections; three brains, 38 images). One-way ANOVA showed a significant group difference (F = 229.2, p<0.0001). About 80% of GFP neurons colocalized with the Drd1a, much higher than the background negative control probe (Tukey‘s, p<0.0001). Right, there was also a significant group difference in puncta per cell (ANOVA, F = 19.51, p=0.0004) between Drd1a probe and negative control probe (Tukey‘s, mean diff = –5.619, adjusted p<0.0052) and positive control probe (Tukey‘s, mean diff = 4.381, adjusted p=0.0226). Thus the SIO/DIO constructs are only being expressed in D1 + neurons. Scale bars represent 10 um.
+
+**Table 2.**
+ Calcium imaging neuron counts for each task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Task</th>
+      <th>Animal 1</th>
+      <th>Animal 2</th>
+      <th>Animal 3</th>
+      <th>Animal 4</th>
+      <th>Animal 5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Delay Task</td>
+      <td>64</td>
+      <td>62</td>
+      <td>22</td>
+      <td>59</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>FR1 Day 1</td>
+      <td>40</td>
+      <td>53</td>
+      <td>31</td>
+      <td>82</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>FR1 Day 2</td>
+      <td>42</td>
+      <td>48</td>
+      <td>26</td>
+      <td>99</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>FR1 Day 3</td>
+      <td>26</td>
+      <td>48</td>
+      <td>20</td>
+      <td>94</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>FR3 Day 1</td>
+      <td>26</td>
+      <td>54</td>
+      <td>23</td>
+      <td>90</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>FR3 Day 2</td>
+      <td>27</td>
+      <td>71</td>
+      <td>23</td>
+      <td>75</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>FR3 Day 3</td>
+      <td>27</td>
+      <td>75</td>
+      <td>27</td>
+      <td>80</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>FR5 Day 1</td>
+      <td>32</td>
+      <td>91</td>
+      <td>25</td>
+      <td>98</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>FR5 Day 2</td>
+      <td>28</td>
+      <td>106</td>
+      <td>27</td>
+      <td>100</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>FR5 Day 3</td>
+      <td>33</td>
+      <td>106</td>
+      <td>28</td>
+      <td>75</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>FR5 switch Day 1</td>
+      <td>99</td>
+      <td>65</td>
+      <td>18</td>
+      <td>56</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>FR5 switch Day 2</td>
+      <td>100</td>
+      <td>64</td>
+      <td>20</td>
+      <td>49</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>FR5 switch Day 3</td>
+      <td>96</td>
+      <td>66</td>
+      <td>21</td>
+      <td>54</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>Non-contingent</td>
+      <td>123</td>
+      <td>94</td>
+      <td>23</td>
+      <td>78</td>
+      <td>96</td>
+    </tr>
+  </tbody>
+</table>
 
 To determine if the activity of these neurons reflected the spatial locations of the lever pressing or the action of the lever pressing itself, we used a discrete trial design with two levers (Figure 7). On each trial, one of the two levers was randomly selected to extend into the operant box. Once pressed, the lever would retract. The reward would then be delivered 1 s later. This task allowed us to compare the neural activity modulated by lever pressing and reward, as well as determine the spatial tuning of the same neurons. We found that several populations of dentate D1 + neurons (n=40, 16.5% of the total population) that were significantly modulated at the time of lever pressing (Figure 7C). One small population was modulated by reward delivery (n=14, 4.9% of the total population). Importantly, another population with significantly more neurons was responsive to lever pressing at either lever location (Figure 7C–D; n=22, 9.79% of the total population). These neurons were not spatially selective, as they were responsive when the lever was presented at different locations. However, we did find a small population that responded to only a single lever (Figure 7C; left lever: n=15, right lever: n=12; 4.2% of total population).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig7-v2.jpg)
+
+**Figure 7.:** (A) One example neuron from each of the five calcium imaging animals, showed increased calcium transient during lever pressing. Top: Heat map shows normalized calcium activity aligned to a single press as a function of time during fixed-ratio (FR) 1 trial. Bottom: Averaged calcium activity across all presses. For the five different animals, we recorded n=64 (Animal 1), n=62 (Animal 2), n=22 (Animal 3), n=59 (Animal 4), and n=100 (Animal 5) (B) Top: Schematic of FR1 paradigm. Animals press one of two levers that are randomly presented, which then retracts followed by pellet delivery 1 s later. After 2 s, one of the two levers extends again at random. Bottom: Peri-event heat maps and average traces of calcium activity aligned to either all lever presses, reward, or lever extension. Only neurons that are significantly modulated around each event are shown. (C) Percentages of modulated neurons by each event. More neurons are modulated by lever pressing than reward delivery (One-way ANOVA, F(5,24) = 4.1077, p=0.0078; Dunnett’s multiple comparisons: Lever press vs reward p<0.05). (D) Venn diagram displaying the number of neurons in a session modulated by spatial location (place), lever pressing, or reward delivery.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Left column, occupancy of the animal during the task. Right column, kernel density estimation plots, and corresponding distributions show the center of mass of spatially modulated cells during different tasks. The occupancy and place field distribution largely overlap. (b) Left, percent of modulated neurons for specific events during either an FR1 delay task, or a non-contingent reward task. We found a higher number of neurons active during lever pressing compared to reward delivery in the same task, or reward delivery in a non-contingent task. Right, The proportion of spatially modulated neurons during an open-field baseline session, non-contingent reward task, or an FR1-delay task.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/83600/elife-83600-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) A schematic of the task, where five presses result in a food reward delivery. Once animals receive five rewards (25 presses) the lever is retracted and a second lever is extended. Animals were tested for 3 days, and data were pooled across days here. (b) Top-down schematic of the experimental setup with two levers. (c) Left, place field centers for lever 1 (blue) and lever 2 (red), where the data is binned into 2 cm bins, and kernel density estimations are plotted (paired samples t-test: [Day1, L1 vs L2] N-51, p- 3.44e-0.7, [Day2, L1 vs L2] N-72, p- 0.00186, [Day3, L1 vs L2] N-73, p- 0.000304. Holm-Bonferroni correction for multiple comparisons = 0.0166). Right, occupancy when lever 1 or lever 2 is extended.
 
 It is difficult to assess the spatial activity of neurons in operant tasks, as animals do not cover the arena equally but instead preferentially occupy specific task-relevant locations (Figure 7—figure supplement 1). To examine the stability of spatially related activity during operant conditioning, we used an FR5 task with two levers (Figure 7—figure supplement 2). We then used the same methods as described in Skaggs et al., 1993 to identify spatially modulated neurons, and split the sessions into periods when the left or right lever was active. This allowed us to recalculate the center of mass of our identified spatial firing fields with two different lever locations. As mice mostly stayed close to the wall where the two levers and food port were located, we limited our analysis to the x-dimension which explained most of the variance in the neural activity. We found that the place field centers were significantly different when the lever is available. While we did find that occupancy varied in this switch task, the occupancy across other tasks was consistent, suggesting that spatial modulation does not depend on the type of task (e.g. operant vs Pavlovian) (Figure 7—figure supplement 1). In contrast, task-related neural activity in the DG depends on whether the task is action-contingent.
 
@@ -86,19 +302,19 @@ Our calcium imaging results showed that D1 + neurons in the DG are preferentiall
 
 All experimental procedures were conducted in accordance with standard ethical guidelines and were approved by the Duke University Institutional Animal Care and Use Committee.
 
-## Subjects
+### Subjects
 
 All behavioral data were collected from D1-cre mice (Cre targeted to Drd1 locus, B6;129-Tg(Drd1-cre)120Mxu/Mmjax, Jackson Labs), and wild type (C57BL/6 J). Optogenetic control of D1-receptor expressing dentate hippocampal neurons was achieved with a double-floxed inverted recombinant AAV5 virus injection to express the excitatory opsin ChR2-eYFP. Viral infection in the dentate of the hippocampus was histologically verified with eYFP imaging colocalized against a D1 receptor antibody and DAPI staining. All mice were aged between 2–12 months old, and housed on a 12:12 light cycle, with tests occurring in the light phase. For calcium imaging experiments, mice were put on food restriction and maintained at 90% of their initial body weights.
 
-## Viral constructs
+### Viral constructs
 
 CAV2-Cre was obtained from Institut de Génétique Moléculaire de Montpellier. rAAV5.EF1α.DIO.hChR2(H134R).eYFP, rAAV5.EF1α.DIO.eYFP, AAV9.hSyn.FLEX.jGCaMP7F, AAV(retro2).hSyn.EF1α.Cre.WPRE was obtained from the Duke University Vector Core. pAAV_hSyn1-SIO-stGtACR2-FusionRed was from Ofer Yizhar (Addgene viral prep # 105677-AAV1; https://n2t.net/addgene:105677; RRID:Addgene_105677).
 
-## Pathway-specific retrograde tracing experiments
+### Pathway-specific retrograde tracing experiments
 
 Retrograde anatomical tracing data was collected from Ai14 reporter mice (129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, Jackson labs). Ai14 reporter mice have a loxP-flanked STOP cassette that is excised in the presence of Cre to promote transcription of a CAG promoter-driven red fluorescent protein variant (tdTomato). 50 nL of either Retro2-Cre (Figure 2), or canine adenovirus type 2 expressing Cre recombinase (CAV2-cre, Figure 2—figure supplement 1) was injected into the DG of Ai-14 reporter mice (AP: –2.0 mm relative to bregma, ML: ± 1.3 mm relative to bregma, DV: 2.0 mm from skull surface) (Soudais et al., 2001; Tervo et al., 2016).
 
-## RNAscope
+### RNAscope
 
 Three D1-Cre male mice were injected with the AAV9-hSyn-Flex-GCaMP7f in the DG (–2.0 & –2.2 AP; +\− 1.3 ML; 1.8 DV. from bregma). 3–4 weeks after injections, mice were euthanized with CO2, and their brain was quickly harvested and frozen in OCT for future RNAscope experiments using the Advanced Cell Diagnostics kit and probes (ACD). Brains were sectioned using a cryostat at a thickness of 20 micrometers and directly mounted on superfrost slides; the slides were then stored at –80.
 
@@ -106,39 +322,39 @@ On the experiment day, 4% PFA in PBS was chilled at 4 °C in a PFA-safe IHC cont
 
 Images were then processed using FIJI (https://imagej.net/Fiji/Download), and GFP + cells were identified and saved as individual ROIs. Using the GFP + cells, a mask was created to identify the presence of puncta (probe positive signals) within each ROI using the puncta analyzer plugin. The percentage of GFP + cells having puncta and the average number of puncta per GFP + cell were calculated in all three conditions. (Figure 6).
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Mice were anesthetized and transcardially perfused with 0.1 M phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in order to confirm viral expression as well as optic fiber and GRIN lens placement. To confirm placement, brains were stored in 4% PFA with 30% sucrose for 72 hrs. Tissue was then post-fixed for 24 hr in 30% sucrose before cryostat sectioning (Leica CM1850) at 60 µm. Fiber and lens implantation sites were then verified.
 
 To confirm eYFP expression in LC and DG neurons, sections were rinsed in 0.1 M PBS for 20 min before being placed in a PBS-based blocking solution. The solution contained 5% goat serum and 0.1% Triton X-100 and was allowed to sit at room temperature for 1 hr. Sections were then incubated with a primary antibody (polyclonal rabbit anti-TH 1:500 dilution, Thermo Fisher, catalog no. P21962; polyclonal chicken anti-EGFP, 1:500 dilution, Abcam, catalog no. ab13970) in blocking solution overnight at 4 °C. Sections were then rinsed in PBS for 20 min before being placed in a blocking solution with the secondary antibody used to visualize TH neurons in the LC (goat anti-rabbit Alexa Fluor 594, 1:1000 dilution, Abcam, catalog no. ab150080; goat anti-chicken Alexa Fluor 488, 1:1000 dilution, Life Technologies, catalog no. A11039) for 1 hr at room temperature. Sections were mounted and immediately coverslipped with Fluoromount G with DAPI medium (Electron Microscopy Sciences; catalog no. 17984–24). The placement was validated using an Axio Imager.V16 upright microscope (Zeiss) and fluorescent images were acquired and stitched using a Z780 inverted microscope (Zeiss).
 
-## Co-localization analysis with tracing
+### Co-localization analysis with tracing
 
 In order to characterize projections to the dentate gyrus we injected 50 nL of AAV(retro2).hSyn.EF1α.Cre.WPRE into each hemisphere of the DG of Ai14 mice (four mice × two hemispheres, n=8; two females and two males). We then processed the slices and acquired images as described above. We opened the raw images taken from the Axio Imager V16 upright microscope (Zeiss) in Fiji to quantify the number of cells from a single coronal brain slice using eight-bit confocal images. A threshold was set to identify the neuronal cell bodies. The function ‘fill holes’ was then used to remove possible empty spaces within the selected cells. After converting the image to a mask, we ran the ‘Analyze Particle’ plug-in in Fiji to count the cells in each image. Using the Analyze Particle function, the masks taken were then counted to determine the number of co-localizing cells using the ‘Colocalization Threshold’ plug-in in Fiji.
 
-## Optogenetic experiments
+### Optogenetic experiments
 
 Mice were anesthetized with 2.0 to 2.5% isoflurane mixed with 1.0 L/min of oxygen for surgical procedures and placed into a stereotactic frame (David Kopf Instruments, Tujunga, CA). Meloxicam (2 mg/kg) and bupivacaine (0.20 mL) were administered prior to the incision. To optogenetically stimulate D1 + neurons in the hippocampus, adult D1-cre mice were randomly assigned to D1::ChR2(DG) (n=8, five males, three females, 8–10 weeks old) or D1::eYFP(DG) control groups (n=8, four males, four females, 8–10 weeks old). Craniotomies were made bilaterally above the hippocampus and AAV5-DIO-ChR2 was microinjected into the dentate gyrus through a pulled glass pipette (200 nL each hemisphere at 1 nL/s, AP: 2.0 mm relative to bregma, ML: ± 1.3 mm relative to bregma, DV: 2.0 mm from skull surface) using a microinjector (Nanoject 3000, Drummond Scientific). Optic fibers (SFLC230-10; 200 um core, 0.35 aperture, Ø1.25 mm, 6.4 mm Long SS Ferrule for MM Fiber, Ø231 µm Bore Size) were then implanted bilaterally above the dentate gyri. For pathway-specific experiments, wild-type mice were used to selectively target LC-Hipp (n=8, four males, four females, 8–10 weeks old) neurons by bilaterally injecting AAV(retro2).hSyn.EF1α.Cre.WPRE into the dentate gyrus (150 nL each hemisphere) combined with a Cre-dependent ChR2 virus injection into the locus coeruleus (AP: –5.45 mm relative to bregma, ML: ± 1.10 mm relative to bregma, DV: 3.65 mm from skull surface) before optic fiber placement (AP: –5.45 mm relative to bregma, ML: ± 1.10 mm relative to bregma, DV: 3.50 mm from skull surface). Controls received eYFP injections and fiber implants (n=8, four males, four females).
 
 In addition, eight mice (four males, four females) were used in local infusion experiments in the DG. LC and DG surgeries were the same as pathway-specific manipulations, with the addition of cannulas (P1 technologies. AP: –2.00 mm relative to bregma, ML: ± 1.8 mm relative to bregma, DV: –1.4 mm, at a 10-degree angle). All optic fibers were secured in place with dental acrylic adhered to skull screws. Mice were group housed and allowed to recover for one week before experimentation.
 
-## Operant self-stimulation
+### Operant self-stimulation
 
 Standard operant boxes (Model ENV-007, MED Associates, Inc, Albans, VT) were housed in a light and sound-attenuating cubicles (Model ENV-019, MED Associates, Albans, VT). Each box is equipped with two levers. A Windows XP-based computer system running MED-PC Version IV Research Control & Data Acquisition System software (Med Associates, St. Albans, VT) is used to control the experimental equipment and record the data.
 
 For self-stimulation experiments, a single lever was inserted at the start of the session. For each lever press animals received 500 ms of stimulation at 20 Hz (15 ms pulse width, 5 mW power). Animals were trained in 30 min sessions. Animals were tested for 32 consecutive days, and received eight sessions of FR1, FR3, and FR5, and then eight extinction sessions. To test for extinction, the lever was inserted but no stimulation was delivered for lever presses.
 
-## Drug injections
+### Drug injections
 
 Even low doses of DA antagonists are known to reduce self-stimulation, but low doses of NE antagonists have no effect on self-stimulation behavior (Rolls et al., 1974). In the present study, we selected doses that minimized effects on movement or arousal. The same mice used above were retrained after extinction (three FR1 sessions) to press a lever for stimulation of LC neurons that projected to the dentate gyrus. They were then tested with DA or NE antagonists (n=8; three males, five females). Mice alternated between testing days where they received an intraperitoneal injections (SCH23390 (Tocris) at 0.1 mg/kg and 0.2 mg/kg), propranolol (Sigma Aldrich) at 3 mg/kg or 6 mg/kg, or vehicle (phosphate-buffered saline), and training days with no injections. Each mouse had one testing day for each dose and drug combination (five total), and the order of the injections was determined pseudo-randomly. Injections were given 30 min prior to the start of the session.
 
 For local drug infusions with chronically implanted cannulae, we trained naive animals (n=5) for 8 days on self-stimulation and used the same experimental testing protocol for infusions of SCH23390 (1.8 mM or 3.6 m) or propranolol (10.5 mM 21 mM). The dose is determined based on previous work (Takeuchi et al., 2016). The drugs were infused at a rate of 0.0005 mL.
 
-## Calcium imaging experiments
+### Calcium imaging experiments
 
 In order to target the dentate gyrus, AAV9-syn-FLEX-jGCamp7f was injected (50 nL) in four penetrations (A.P –2.0, M.L. 1.3, D.V. −2.2, –2.1, −2.0, –1.9) of D1-Cre mice (n=5, five males, 8–10 weeks old). A gradient index (GRIN) lens (Inscopix: 1 mm × 4 mm, 1.8 mm DV) was then implanted over the injection site. Viral expression was checked three weeks post-injection, and a base plate was secured to the skull with dental cement. A UCLA miniscope was used to assess in vivo activity of D1 + neurons in the DG in freely moving animals. Images were collected from the miniscope using Bonsai (Lopes et al., 2015). This allowed for the simultaneous collection of calcium data with behavioral videos (Logitech c920). Calcium traces were then motion corrected (https://github.com/flatironinstitute/CaImAn; Flatiron Institute, 2023) and extracted using constrained nonnegative matrix factorization for calcium imaging data (https://github.com/zhoupc/CNMF_E; Zhou, 2020; Zhou et al., 2018). The extracted traces were then analyzed using custom MATLAB scripts. Imaging sessions lasted 8–10 min.
 
-## FR training with a food reward (calcium imaging)
+### FR training with a food reward (calcium imaging)
 
 The behavioral tests used for calcium imaging were performed while the mice were food deprived to 85% of their free-feeding weight. There were six tasks used, with three days of testing for each task, for a total of 18 testing days. Each imaging session lasted approximately 10 min. Five mice were trained on a FR1 task where they received a pellet for pressing a lever. Subsequently, animals were moved to an FR3, and then FR5.
 
@@ -146,10 +362,10 @@ To examine the interaction of spatial location and lever pressing we used an FR5
 
 In order to dissociate reward delivery and action production we used an FR1 schedule of reinforcement where the reward was delayed one second after the press (Two-lever FR1 delay task). We used two levers in this task. One lever is inserted on a given trial. If pressed the lever would retract, and a food pellet is delivered 1 s later. After a 2 s inter-trial interval, one of the two levers was randomly inserted. Following FR testing, mice received a reward at fixed intervals (20 s), preceded by 1 s of white noise (Non-contingent reward). The animals were not required to press a lever to receive the reward.
 
-## Analysis
+### Analysis
 
 To assess significant increases in calcium activity, for each neuron we made a peri-event time histogram (PETH) between –3 s and 3 s aligned to relevant events (da Silva et al., 2018). Event times were considered between –500 ms and +500 ms around the relevant event. Baseline activity was considered –3000 to –1000 ms prior to the event. If the calcium activity was 99% above baseline for three consecutive 100ms bins then there was considered to be a significant increase in calcium activity. For tasks that involved two levers, we calculated the percent of neurons that were significantly modulated by either lever, and then excluded these neurons from our analysis of modulation by a specific lever. We identified spatially tuned cells by computing the spatial information contained in the calcium transients, compared with shuffled data (Skaggs et al., 1993). The data arena was split into 15 by 15 bins (2 × 2 cm each), and neurons were required to be active in active in at least three bins to be considered spatially modulated.
 
-## Movement tracking (DeepLabCut)
+### Movement tracking (DeepLabCut)
 
 To ensure the different compounds were not affecting gross movement we tracked the distance traveled during the vehicle, SCH23390, and propranolol infusions. To do this we used DeepLabCut (Mathis et al., 2018). For each video, 40 frames were labeled and the model was trained for 100,000 iterations. Outlier frames were extracted and relabeled and then the model was retrained. To ensure we had equal data sets 20 min of data was selected from each video.

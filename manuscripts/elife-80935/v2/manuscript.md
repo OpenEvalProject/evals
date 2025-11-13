@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/016xsfp80 Radboud University Nijmegen, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands
+1. Radboud University Nijmegen, Donders Institute for Brain, Cognition and Behaviour Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
@@ -33,11 +33,11 @@ In the current project, we approached this set of questions as follows (Figure 1
 
 ## Results
 
-## Music analysis
+### Music analysis
 
 We quantified the note-level surprise and uncertainty using different computational models of music, which were hypothesized to capture different sources of melodic expectation (see Materials and methods for details). The Probabilistic Model of Melody Perception (Temperley) (Temperley, 2008; Temperley, 2014) rests on a few principles derived from musicology and thus represents Gestalt-like perception (Morgan et al., 2019). The Information Dynamics of Music (IDyOM) model (Pearce and Wiggins, 2012) captures expectations from statistical learning, either based on short-term regularities in the current musical piece (IDyOM stm), long-term exposure to music (IDyOM ltm), or a combination of the former two (IDyOM both). The Music Transformer (MT) (Huang et al., 2018) is a state-of-the-art neural network model, which also reflects long-term statistical learning but is more sensitive to longer-range structure. In a first step, we aimed to establish the different models as distinct hypotheses about the sources of melodic expectations. We examined how well the models predicted music data and to what extent their predictions improved when the amount of available context increased.
 
-## IDyOM stm and Music Transformer show superior melodic prediction
+### IDyOM stm and Music Transformer show superior melodic prediction
 
 First, we tested how well the different computational models predicted the musical stimuli presented in the MEG study (Figure 2). Specifically, we quantified the accuracy with which the models predicted upcoming notes, given a certain number of previous notes as context information. While all models performed well above chance level accuracy (1/128=0.8%), the IDyOM stm (median accuracy across compositions: 57.9%), IDyOM both (53.5%), and Music Transformer (54.8%) models performed considerably better than the Temperley (19.3%) and IDyOM ltm (27.3%) models, in terms of median accuracy across compositions (Figure 2A left). This pattern was confirmed in terms of the models’ note-level surprise, which is a continuous measure of predictive performance. Here lower values indicate a better ability to predict the next note given the context (median surprise across compositions: Temperley = 2.18, IDyOM stm = 1.12, IDyOM ltm = 2.23, IDyOM both = 1.46, MT = 1.15, Figure 2A middle). The median surprise is closely related to the cross-entropy loss, which can be defined as the mean surprise across all notes (Temperley = 2.7, IDyOM stm = 2, ltm = 2.47, both = 1.86, Music Transformer = 1.81). Furthermore, the uncertainty, defined as the entropy of the probability distribution at each time point, characterizes each model’s confidence (inverse) in its predictions (maximum uncertainty = 4.85 given a uniform probability distribution). The Music Transformer model formed predictions more confidently than the other models, whereas the Temperley model displayed the highest uncertainty (median uncertainty across compositions: Temperley = 2.65, IDyOM stm = 2.23, ltm = 2.49, both = 2.28, MT = 1.69, Figure 2A right). Within the IDyOM class, the stm model consistently showed lower uncertainty compared to the ltm model, presumably reflecting a greater consistency of melodic patterns within versus across compositions. As a result, the both model was driven by the stm model, since it combines the ltm and stm components weighted by their uncertainty (mean stm weight = 0.72, mean ltm weight = 0.18).
 
@@ -45,17 +45,17 @@ First, we tested how well the different computational models predicted the music
 
 **Figure 2.:** (A) Comparison of music model performance in predicting upcoming note pitch, as composition-level accuracy (left; higher is better), median surprise across notes (middle; lower is better), and median uncertainty across notes (right). Context length for each model is the best performing one across the range shown in (B). Vertical bars: single compositions, circle: median, thick line: quartiles, thin line: quartiles ±1.5 × interquartile range. (B) Accuracy of note pitch predictions (median across 19 compositions) as a function of context length and model class (same color code as (A)). Dots represent maximum for each model class. (C) Correlations between the surprise estimates from the best models. (For similar results for the musical stimuli used in the EEG study, see Appendix 1—figure 2).
 
-## Music Transformer utilizes long-range musical structure
+### Music Transformer utilizes long-range musical structure
 
 Next, we examined to what extent the different models utilize long-range structure in musical compositions or rely on short-range regularities by systematically varying the context length k (above we considered each model at its optimal context length, defined by the maximum accuracy). The Music Transformer model proved to be the only model for which the predictive accuracy increased considerably as the context length increased, from about 9.17% (k=1) up to 54.82% (k=350) (Figure 2B). The IDyOM models’ performance, in contrast, plateaued early at context lengths between three and five notes (optimal k: stm: 25, ltm: 4, both: 3), reflecting the well-known sparsity issue of n-gram models (Jurafsky and Martin, 2000). Although the Temperley model benefited from additional musical context slightly, the increment was small and the accuracy was lower compared to the other models across all context lengths (5.58% at k=1 to 19.25% at k=25).
 
-## Computational models capture distinct sources of musical expectation
+### Computational models capture distinct sources of musical expectation
 
 To further evaluate the differences between models, we tested how strongly their surprise estimates were correlated across all notes in the stimulus set (Figure 2C). Since the IDyOM stm model dominated the both model, the two were correlated most strongly (r=.87). The lowest correlations occurred between the IDyOM stm on the one hand and the IDyOM ltm (r=0.24) and Temperley model (r=0.22) on the other hand. Given that all estimates quantified surprise, positive correlations of medium to large size were expected. More importantly, the models appeared to pick up substantial unique variance, in line with the differences in predictive performance explored above.
 
 Taken together, these results established that the computational models of music capture different sources of melodic expectation. Only the Music Transformer model was able to exploit long-range structure in music to facilitate predictions of note pitch. Yet, short-range regularities in the current musical piece alone enabled accurate melodic predictions already: the IDyOM stm model performed remarkably well, even compared to the much more sophisticated Music Transformer. We confirmed these results on the musical stimuli from the EEG study (Appendix 1—figure 2).
 
-## M|EEG analysis
+### M|EEG analysis
 
 We used a time-resolved linear regression approach (see Materials and methods for details) to analyse listeners’ M|EEG data. By comparing different regression models, we asked (1) whether there is evidence for the neural processing of melodic surprise and uncertainty during naturalistic music listening and (2) which sources of melodic expectations, represented by the different computational models, best capture that. We quantified the performance of each regression model in explaining the MEG data by computing the correlation r between predicted and observed neural data. Importantly, we estimated r using fivefold cross-validation, thereby ruling out any trivial increase in predictive performance due to increases in number of regressors (i.e. free parameters).
 
@@ -65,11 +65,11 @@ The simplest model, the Onset model, contained a single regressor coding note on
 
 **Figure 3.:** (A) Cross-validated r for the Onset only model (top left). Difference in cross-validated r between the Baseline model including acoustic regressors and the Onset model (bottom left). Difference in cross-validated r between models including surprise estimates from different model classes (color-coded) and the Baseline model (right). Vertical bars: participants; box plot as in Figure 2. (B) Comparison between the best surprise models from each model class as a function of context length. Lines: mean across participants, shaded area: 95% CI. (C) Predictive performance of the Music Transformer (MT) on the MEG data (left y-axis, dark, mean across participants) and the music data from the MEG study (right y-axis, light, median across compositions).
 
-## Long-term statistical learning best explains listeners’ melodic surprise
+### Long-term statistical learning best explains listeners’ melodic surprise
 
 We next investigated to which degree the surprise estimates from the different computational models of music could explain unique variance in the neural data, over and above that already explained by the Baseline model. All models performed significantly better than the Baseline model, providing evidence for tracking of neural surprise during naturalistic music listening (Temperley: ΔrSurprise-Baseline=0.002, SD = 0.001, paired-sample t-test, t34=8.76 p=2.42e-09, d=1.5; IDyOM stm: ΔrSurprise-Baseline=0.001, SD = 0.001, t34=5.66 p=9.39e-06, d=0.97; IDyOM ltm: ΔrSurprise-Baseline=0.003, SD = 0.002, t34=12.74 p=2.51e-13, d=2.19; IDyOM both: ΔrSurprise-Baseline=0.002, SD = 0.001, t34=8.77, p=2.42e-09, d=1.5; and Music Transformer: ΔrSurprise-Baseline=0.004, SD = 0.002, t34=10.82, p=1.79e-11, d=1.86, corrected for multiple comparisons using the Bonferroni-Holm method) (Figure 3A right). Importantly, the Music Transformer and IDyOM ltm model significantly outperformed the other models (paired-sample t-test, MT-Temperley: t34=7.56, p=5.33e-08, d=1.30; MT-IDyOM stm: t34=9.51, p=4.12e-10, d=1.63, MT-IDyOM both: t34=8.87, p=2.07e-09, d=1.52), with no statistically significant difference between the two (paired-sample t-test, t34=1.634, p=0.225), whereas the IDyOM stm model performed worst. This contrasts with the music analysis, where the IDyOM stm model performed considerably better than the IDyOM ltm model. These observations suggest that listeners’ melodic surprise is better explained by musical enculturation (i.e., exposure to large amounts of music across the lifetime), modeled as statistical learning on a large corpus of music (IDyOM ltm and MT), rather than by statistical regularities within the current musical piece alone (IDyOM stm) or Gestalt-like rules (Temperley).
 
-## Short-range musical context shapes listeners’ melodic surprise
+### Short-range musical context shapes listeners’ melodic surprise
 
 We again systematically varied the context length k to probe which context length captures listeners’ melodic surprise best (above we again considered each model at its optimal context length, defined by the maximum ΔrSurprise-Baseline averaged across participants). The Temperley and IDyOM models’ incremental predictive contribution were marginally influenced by context length, with early peaks for the IDyOM stm (k=1) and ltm (k=2) and later peaks for the both (k=75) and Temperley models (k=10) (Figure 3B). The roughly constant level of performance was expected based on the music analysis, since these models mainly relied on short-range context and their estimates of surprise were almost constant. In contrast, we reported above that the Music Transformer model extracts long-range structure in music, with music-predictive performance increasing up to context lengths of 350 notes. Strikingly, however, surprise estimates from the MT predicted MEG data best at a context length of nine notes and decreased for larger context lengths, even below the level of shorter ones (<10) (Figure 3C).
 
@@ -79,7 +79,7 @@ Together, these findings suggest that long-term experience of listeners (IDyOM l
 
 **Figure 4.:** All panels as in Figure 3, but applied to the EEG data and its musical stimuli.
 
-## Spatiotemporal neural characteristics of melodic surprise
+### Spatiotemporal neural characteristics of melodic surprise
 
 To elucidate the spatiotemporal neural characteristics of naturalistic music listening, we further examined the temporal response functions (TRFs; or ‘regression evoked responses’) from the best model (MEG: MT at k=8, Figure 5; EEG: MT at k=7, Figure 6). Each TRF combines the time-lagged coefficients for one regressor. The resulting time course describes how the feature of interest modulates neural activity over time. Here, we focused on note onset, the repetition of notes, and melodic surprise. The TRFs were roughly constant around zero in the baseline period (−0.2–0 s before note onset) and showed a clear modulation time-locked to note onset (Figures 5 and 6). This confirmed that the deconvolution of different features and the temporal alignment in the time-resolved regression worked well. Note that the MEG data were transformed to combined planar gradients to yield interpretable topographies (Bastiaansen and Knösche, 2000), and therefore did not contain information about the polarity. While we reflect on the sign of modulations in the TRFs below, these judgements were based on inspection of the axial gradiometer MEG results (not shown) and confirmed on the EEG data (Figure 6).
 
@@ -89,11 +89,9 @@ To elucidate the spatiotemporal neural characteristics of naturalistic music lis
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80935/elife-80935-fig6-v2.jpg)
 
-**Figure 6.:** Figure 5, but applied to the EEG data and its musical stimuli.
-
 The TRF for the note onset regressor reflects the average neural response evoked by a note. The effect was temporally extended from note onset up to 0.8 s (MEG) and 1 s (EEG) and clustered around bilateral fronto-temporal MEG sensors (MEG: cluster-based permutation test p=0.035, Figure 5A; EEG: p=5e-04, Figure 6A). The time course resembled a P1-N1-P2 complex, typically found in ERP studies on auditory processing (Picton, 2013; Pratt, 2011), with a first positive peak at about 75ms (P1) and a second positive peak at about 200ms (P2). This was followed by a more sustained negative deflection between 300 and 600ms. We inspected the note repetition regressors to account for the repetition suppression effect, as a potential confound of melodic expectations (Todorovic et al., 2011; Todorovic and de Lange, 2012). We observed a negative deflection at temporal sensors peaking at about 200ms, reflecting lower neural activity for repeated versus non-repeated notes (MEG: p=5e-04, Figure 5B; EEG: p=0.008, Figure 6B). This extends the well-known auditory repetition suppression effect (Grill-Spector et al., 2006; Todorovic and de Lange, 2012) to the setting of naturalistic music listening. Finally, the TRF of the surprise regressor indicates how the level of model-based surprise modulates neural activity over and above simple repetition. A fronto-temporal cluster of MEG sensors exhibited a positive peak at about 200ms and a sustained negative deflection between 300 and 600ms (MEG: p=5e-04, Figure 5C; EEG: p=0.004, Figure 6C). The increased activity for more surprising notes is consistent with expectation suppression effects (Todorovic and de Lange, 2012). We ruled out that the late negativity effect was an artifact arising from a negative correlation between surprise estimates of subsequent notes, since these temporal autocorrelations were consistently found to be positive. The surprise estimates from the Temperley and IDyOM models yielded similar, although slightly weaker, spatiotemporal patterns in the MEG and EEG data (Appendix 1—figures 3 and 4), indicating that they all captured melodic surprise given the cross-model correlations.
 
-## Melodic processing is associated with superior temporal and Heschl’s gyri
+### Melodic processing is associated with superior temporal and Heschl’s gyri
 
 To further shed light on the spatial profile of melody and surprise processing, we estimated the dominant neural sources corresponding to the peak TRF deflection (180–240ms post note onset) using equivalent current dipole (ECD) modeling of the MEG data (with one, two, or three dipoles per hemisphere, selected by comparing adjusted r2). These simple models provided a good fit to the sensor-level TRF maps, indicated by the substantial amount of variance explained (mean adjusted r2 across participants = 0.98 / 0.98/0.97 for Onset / Repetition / Surprise regressors, SD = 0.013 / 0.011/0.020). We show the density of fit dipole locations in Figure 7. The TRF peak deflection for the Onset regressor was best explained by sources in bilateral Heschl’s gyri (Figure 7, top). The peak deflections for the Repetition and Surprise regressors were best explained by slightly more lateral sources encompassing both bilateral Heschl’s gyri as well as bilateral superior temporal gyri (see Figure 7 for exact MNI coordinates of density peaks).
 
@@ -101,7 +99,7 @@ To further shed light on the spatial profile of melody and surprise processing, 
 
 **Figure 7.:** Volumetric density of estimated dipole locations across participants in the time window of interest identified in Figure 5 (180–240ms), projected on the average Montreal Neurological Institute (MNI) template brain. MNI coordinates are given for the density maxima with anatomical labels from the Automated Anatomical Labeling atlas.
 
-## No evidence for neural tracking of melodic uncertainty
+### No evidence for neural tracking of melodic uncertainty
 
 Besides surprise, melodic expectations can be characterized by their note-level uncertainty. Estimates of surprise and uncertainty were positively correlated across different computational models (e.g. MT with a context of eight notes: r=0.21) (Figure 8A). Surprisingly, the addition of uncertainty and its interaction with surprise did not further improve but rather reduce models’ cross-validated predictive performance on listeners’ MEG data compared to surprise alone (MT Surprise: ΔrSurpise-Baseline=0.004, SD = 0.002;+Uncertainty: ΔrUncertainty-Baseline=0.003, SD = 0.002, paired-sample t-test compared to Surprise, t34=–9.57, p=1.42e-10, d=–1.64;+Interaction S×U: ΔrSxU-Baseline=0.002, SD = 0.002, t34=–13.81, p=1.66e-14, d=–2.37) (Figure 8B). This result holds true for other computational models of music and for the EEG data. Therefore, we do not further examine the TRFs here.
 
@@ -135,67 +133,83 @@ To conclude, by using computational models to capture different hypotheses about
 
 ## Materials and methods
 
-## Data and code availability
+### Data and code availability
 
 The (anonymized, de-identified) MEG and music data are available from the Donders Repository (https://data.donders.ru.nl/) under CC-BY-4.0 license. The persistent identifier for the data is https://doi.org/10.34973/5qxw-nn97. The experiment and analysis code is also available from the Donders Repository.
 
-## Participants
+### Participants
 
 We recruited 35 healthy participants (19 female; 32 right-handed; age: 18–30 years, mean = 23.8, SD = 3.05) via the research participation system at Radboud University. The sample size was chosen to achieve a power of ≥80% for detecting a medium effect size (d=0.5) with a two-sided paired t-test at an α level of 0.05. All participants reported normal hearing. The study was approved under the general ethical approval for the Donders Centre for Cognitive Neuroimaging (Imaging Human Cognition, CMO2014/288) by the local ethics committee (CMO Arnhem-Nijmegen, Radboud University Medical Centre). Participants provided written informed consent before the experiment and received monetary compensation.
 
-## Procedure
+### Procedure
 
 Participants listened to music, while their neural activity was recorded using magnetoencephalography (MEG) (Figure 1). Participants started each musical stimulus with a button press and could take short breaks in between stimuli. Participants were instructed to fixate a dot displayed at the centre of a screen (~85 cm viewing distance) in order to reduce head and eye movements. Besides that, participants were only asked to listen attentively to the music and remain still. These minimal instructions were intended to maximize the naturalistic character of the study. Initially, three test runs (~10 s each) were completed, in which three short audio snippets from different compositions (not used in the main experiment) were presented. This was intended to make listeners familiar with the procedure and the different sounds, as well as to adjust the volume to a comfortable level.
 
-## Musical stimuli
+### Musical stimuli
 
 We selected 19 compositions (duration: total = 43 min, median across stimuli = 134 s, median absolute deviation (MAD, Leys et al., 2013) = 39 s; note events: total = 9824, median = 448, MAD = 204) from Western classical music (see Appendix 1—table 1). We chose this genre, since (a) participants recruited from the Nijmegen area were assumed to be somewhat familiar with it, (b) it entails relatively complex melodies and long-term structure allowing us to sample a broad range of surprise and uncertainty estimates, (c) many digital music files and corpora in MIDI format are publicly available, and (d) these included monophonic pieces. Monophonic refers to one note being played at a time, that is only containing a melody, compared to polyphonic music, which further includes chords and/or parallel voices. The constraint to monophonic compositions was necessary to enable the application of the Temperley and IDyOM model, which cannot parse polyphonic music. Based on the available databases, the selection aimed to cover various musical periods (1711–1951), composers, tempi (60–176 bpm), and key signatures, roughly matching the statistics of the training corpus for the music models (see below). The median note duration was about 161ms (MAD across all notes = 35ms, min = 20ms, max = 4498ms), with a median inter-note onset interval of 200ms (MAD across all notes = 50ms, min = 22ms, max = 2550ms).
 
 We used the Musescore 3 software to synthesize and export the digital MIDI files as wav audio files (sampling rate = 44.1 kHz). This ensured accurate control over the note timing compared to live or studio recordings, facilitating time-locked analyses. The synthesisation via one of three virtual instruments from fluidsynth (piano, oboe, flute) ensured the natural character of the music. The MIDI velocity, corresponding to loudness (termed ‘velocity’ in MIDI terms because it refers to the velocity with which one could strike a piano key), was set to 100 for all notes, since most files were missing velocity information and the volume was thus held roughly constant across notes.
 
-## Stimulus presentation
+### Stimulus presentation
 
 The experiment was run on a Windows computer using Matlab 2018b (The MathWorks) and the Psychophysics Toolbox (Brainard, 1997). The music was presented binaurally via ear tubes (Doc’s Promolds NonVent with #13 thick prebent 1.85 mm ID tubes, Audine Healthcare, in combination with Etymotic ER3A earphones) at a sampling rate of 44.1 kHz. The volume was adjusted to a comfortable level for each participant during the initial three test runs. To ensure equivalent acoustic input in both ears, the right audio channel from potentially stereo recordings was duplicated, resulting in mono audio presentation. After participants initiated a run by a button press, the wav file was first loaded into the sound card buffer to ensure accurate timing. Once the file was fully loaded, the visual fixation cross appeared at the centre of the screen and after 1.5–2.5 s (random uniform distribution) the music started. The order of compositions was randomized across participants.
 
-## MEG data acquisition
+### MEG data acquisition
 
 Neural activity was recorded on a 275-channel axial gradiometer MEG system (VSM/CTF Systems) in a magnetically shielded room, while the participant was seated. Eight malfunctioning channels were disabled during the recording or removed during preprocessing, leaving 267 MEG channels in the recorded data. We monitored the head position via three fiducial coils (left and right ear, nasion). When the head movement exceeded 5 mm, in between listening periods, the head position was shown to the participant, and they were instructed to reposition themselves (Stolk et al., 2013). All data were low-pass filtered online at 300 Hz and digitized at a sampling rate of 1200 Hz.
 
-## Further data acquisition
+### Further data acquisition
 
 For source analysis, the head shape and the location of the three fiducial coils were measured using a Polhemus 3D tracking device. T1-weighted anatomical MRI scans were acquired on a 3T MRI system (Siemens) after the MEG session if these were not already available from the local database (MP-RAGE sequence with a GRAPPA acceleration factor of 2, TR = 2.3 s, TE = 3.03ms, voxel size 1 mm isotropic, 192 transversal slices, 8 ° flip angle). Additionally, during the MEG session, eye position, pupil diameter and blinks were recorded using an Eyelink 1000 eye tracker (SR Research) and digitized at a sampling rate of 1200 Hz. After the experiment, participants completed a questionnaire including a validated measure of musicality, the Goldsmith Musical Sophistication Index (Müllensiefen et al., 2014). The eye tracking and questionnaire data were not analysed here.
 
-## EEG dataset
+### EEG dataset
 
 In addition, we analysed an open data set from a recently published study (Di Liberto et al., 2020) including EEG recordings from 20 participants (10 musicians, 10 non-musicians) listening to music. The musical stimuli were 10 violin compositions by J. S. Bach synthesized using a piano sound (duration: total = 27 min, median = 161.5 s, MAD = 18.5 s; note events: total = 7839,, median = 631, MAD = 276.5; see Appendix 1—table 1), that were each presented three times in pseudo-randomized order (total listening time = 80 min). The median note duration was 145ms (MAD across all notes = 32ms, min = 70ms, max = 2571ms), with a median inter-note onset interval of 150ms (MAD across all notes = 30ms, min = 74ms, max = 2571ms). EEG was acquired using a 64-electrode BioSemi Active Two system and digitized at a sampling rate of 512 Hz.
 
-## Music analysis
+### Music analysis
 
-We used three types of computational models of music to investigate human listeners’ melodic expectations: the Temperley model (Temperley, 2008; Temperley, 2014), the IDyOM model (Pearce and Wiggins, 2012), and the Music Transformer (Huang et al., 2018). Based on their differences in computational architecture, we used these models to operationalize different sources of melodic expectations. All models take as input MIDI data, specifically note pitch values X ranging discretely from 0 to 127 (8.18–12543.85 Hz, middle C=60,~264 Hz). The models output a probability distribution for the next note pitch at time point t, Xt, given a musical context of k preceding consecutive note pitches:P(Xt|xt−kt−1),whereX∈{0..127},k>0,t≥0.
+We used three types of computational models of music to investigate human listeners’ melodic expectations: the Temperley model (Temperley, 2008; Temperley, 2014), the IDyOM model (Pearce and Wiggins, 2012), and the Music Transformer (Huang et al., 2018). Based on their differences in computational architecture, we used these models to operationalize different sources of melodic expectations. All models take as input MIDI data, specifically note pitch values X ranging discretely from 0 to 127 (8.18–12543.85 Hz, middle C=60,~264 Hz). The models output a probability distribution for the next note pitch at time point t, Xt, given a musical context of k preceding consecutive note pitches:
 
-For the first note in each composition, we assumed a uniform distribution across pitches (PX0=x=1/128). Based on these probability distributions, we computed the surprise S of an observed note pitch xt given the musical context asS(xt)=−loge⁡P(xt|xt−kt−1).
+$$
+P(X_{t}|x_{t−k}^{t−1}),whereX\in{0..127},k>0,t\geq0.
+$$
 
-Likewise, the uncertainty U associated with predicting the next note pitch was defined as the entropy of the probability distribution across all notes in the alphabet:Ut=−∑x=0127P(Xt=x|xt−kt−1)loge⁡P(Xt=x|xt−kt−1).
+For the first note in each composition, we assumed a uniform distribution across pitches ($PX_{0}=x=1/128$). Based on these probability distributions, we computed the surprise S of an observed note pitch xt given the musical context as
 
-## Training corpora
+$$
+S(x_{t})=−log_{e}⁡P(x_{t}|x_{t−k}^{t−1}).
+$$
+
+Likewise, the uncertainty U associated with predicting the next note pitch was defined as the entropy of the probability distribution across all notes in the alphabet:
+
+$$
+U_{t}=−\sumx=0127P(X_{t}=x|x_{t−k}^{t−1})log_{e}⁡P(X_{t}=x|x_{t−k}^{t−1}).
+$$
+
+### Training corpora
 
 All models were trained on the Monophonic Corpus of Complete Compositions (MCCC) (https://osf.io/dg7ms/), which consists of 623 monophonic pieces (Note events: total = 500,000, median = 654, MAD = 309). The corpus spans multiple musical periods and composers and matches the statistics of the musical stimuli used in the MEG and EEG study regarding the distribution of note pitch and pitch interval (Appendix 1—figure 1) as well as the proportion of major key pieces (MCCC: ~81%, MusicMEG: ~74%, but MusicEEG: 20%). Furthermore, the Maestro corpus V3 (Hawthorne et al., 2019, https://magenta.tensorflow.org/datasets/maestro), which comprises 1276 polyphonic compositions collected from human piano performances (Duration: total = 200 h, note events: total = 7 million), was used for the initial training of the Music Transformer (see below).
 
-## Probabilistic Model of Melody Perception | Temperley
+### Probabilistic Model of Melody Perception | Temperley
 
 The Probabilistic Model of Melody Perception (Temperley, 2008; Temperley, 2014) is a Bayesian model based on three interpretable principles established in musicology. Therefore, it has been coined a Gestalt-model (Morgan et al., 2019). The three principles are modeled by probability distributions (discretized for integer pitch values), whose free parameters were estimated, in line with previous literature, based on the MCCC:
 
 The final model multiplicatively combines these distributions to give the probability of the next note pitch given the context. The C code was provided by David Temperley in personal communication and adapted to output probabilities for all possible pitch values X. Specific choices in principles 1–3 above were made in accordance with earlier work (Morgan et al., 2019; Temperley, 2008; Temperley, 2014).
 
-## Information Dynamics of Music model | IDyOM
+### Information Dynamics of Music model | IDyOM
 
-The Information Dynamics of Music (IDyOM) model is an unsupervised statistical learning model, specifically a variable order Markov model (Pearce, 2005; Pearce and Wiggins, 2012). Based on n-grams and the alphabet X, the probability of a note pitch x at time point t, xt, given a context sequence of length k, xt-kt-1 , is defined as the relative n-gram frequency of the continuation compared to the context:P(xt|xt−kt−1)=count(xt−kt)count(xt−kt−1).
+The Information Dynamics of Music (IDyOM) model is an unsupervised statistical learning model, specifically a variable order Markov model (Pearce, 2005; Pearce and Wiggins, 2012). Based on n-grams and the alphabet X, the probability of a note pitch x at time point t, xt, given a context sequence of length k, $x_{t-k}^{t-1}$ , is defined as the relative n-gram frequency of the continuation compared to the context:
+
+$$
+P(x_{t}|x_{t−k}^{t−1})=\frac{count(x_{t−k}^{t})}{count(x_{t−k}^{t−1})}.
+$$
 
 The probabilities are computed for every possible n-gram length up to a bound k and combined through interpolated smoothing. The context length was, therefore, manipulated via the n-gram order bound. The model can operate on multiple musical features, called viewpoints. Here, we use pitch (in IDyOM terminology cpitch) to predict pitch, in line with the other models.
 
 The IDyOM model class entails three different subtypes: a short-term model (stm), a long-term model (ltm), and a combination of the former two (both). The IDyOM stm model rests solely on the recent context in the current composition. As such, it approximates online statistical learning of short-term regularities in the present piece. The IDyOM ltm model, on the other hand, is trained on a corpus, reflecting musical enculturation, that is (implicit) statistical learning through long-term exposure to music. The IDyOM both model combines the stm and ltm model weighted by their entropy at each note.
 
-## Music Transformer
+### Music Transformer
 
 The Music Transformer (MT) (Huang et al., 2018) is a state-of-the-art neural network model that was developed to generate music with improved long-range coherence. To this end, it takes advantage of a Transformer architecture (Vaswani et al., 2017) and relative self-attention (Shaw et al., 2018), which better capture long-range structure in sequences than for example n-gram models. The MT is the only model used here that can process polyphonic music. This is possible due to a representation scheme that comprises four event types (note onset, note offset, velocity, and time-shift events) for encoding and decoding MIDI data. The note onset values are equivalent to pitch values and were used to derive probability distributions. Our custom scripts were based on an open adaptation for PyTorch (https://github.com/gwinndr/MusicTransformer-Pytorch; Gwinn et al., 2022).
 
@@ -203,40 +217,44 @@ The Music Transformer was initially trained on the polyphonic Maestro corpus for
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/80935/elife-80935-fig9-v2.jpg)
 
-**Figure 9.:** A) and fine-tuning (B) of the Music Transformer on the Maestro corpus and MCCC, respectively.Cross-entropy loss (average surprise across all notes) on the test (dark) and training (light) data as a function of training epoch.
+**Figure 9.:** Cross-entropy loss (average surprise across all notes) on the test (dark) and training (light) data as a function of training epoch.
 
 In order to adjust the model to monophonic music, we finetuned the pretrained Music Transformer on the MCCC for 100 epochs using the same training parameters (Figure 9B). Again, the training progress was evaluated based on the cross-entropy loss and the weights were selected based on the minimal loss. While the loss started at a considerably lower level on this monophonic dataset (0.78), it continued to decrease until epoch 21 (0.59), but quickly started to increase, indicating overfitting on the training data. Therefore, the weights from epoch 21 were selected for further analyses.
 
-## Music model comparison
+### Music model comparison
 
 We compared the models’ predictive performance on music data as a function of model class and context length. Thereby, we aimed to scrutinize the hypothesis that the models reflect different sources of melodic expectations. We used the musical stimuli from the MEG and EEG study as test sets and assessed the accuracy, median surprise and uncertainty across compositions.
 
-## M|EEG analysis
+### M|EEG analysis
 
-## Preprocessing
+#### Preprocessing
 
 The MEG data were preprocessed in Matlab 2018b using FieldTrip (Oostenveld et al., 2011). We loaded the raw data separately for each composition including about 3 s pre- and post-stimulus periods. Based on the reference sensors of the CTF MEG system, we denoised the recorded MEG data using third-order gradient correction, after which the per-channel mean across time was subtracted. We then segmented the continuous data in 1 s segments. Using the semi-automatic routines in FieldTrip, we marked noisy segments according to outlying variance, such as MEG SQUID jumps, eye blinks or eye movements (based on the unfiltered data) or muscle artifacts (based on the data filtered between 110 and 130 Hz). After removal of noisy segments, the data were downsampled to 400 Hz. Independent component analysis (ICA) was then performed on the combined data from all compositions for each participant to identify components that reflected artifacts from cardiac activity, residual eye movements or blinks. Finally, we reloaded the data without segmentation, removed bad ICA components and downsampled the data to 60 Hz for subsequent analyses.
 
 A similar preprocessing pipeline was used for the EEG data. Here, the data were re-referenced using the linked mastoids. Bad channels were identified via visual inspection and replaced through interpolation after removal of bad ICA components.
 
-## TRF analysis
+#### TRF analysis
 
-We performed time-resolved linear regression on the M|EEG data to investigate the neural signatures of melodic surprise and uncertainty (Figure 1), using the regression evoked response technique (‘rERP’, Smith and Kutas, 2015).This approach allowed us to deconvolve the responses to different features and subsequent notes and correct for their temporal overlap. The preprocessed M|EEG data were loaded and band-pass filtered between 0.5 and 8 Hz (bidirectional FIR filter). All features of interest were modeled as impulse regressors with one value per note, either binary (x = {0,1}) or continuous (x∈R). The M|EEG channel data and continuous regressors were z-scored. We constructed a time-expanded regression matrix M, which contained time-shifted versions of each regressor column-wise (tmin = –0.2 s, tmax = 1 s relative to note onsets, 73 columns per regressor given the sampling rate of 60 Hz). After removal of bad time points identified during M|EEG preprocessing, we estimated the regression weights β^ using ordinary least squares (OLS) regression:β^=(MTM)−1MTy.
+We performed time-resolved linear regression on the M|EEG data to investigate the neural signatures of melodic surprise and uncertainty (Figure 1), using the regression evoked response technique (‘rERP’, Smith and Kutas, 2015).This approach allowed us to deconvolve the responses to different features and subsequent notes and correct for their temporal overlap. The preprocessed M|EEG data were loaded and band-pass filtered between 0.5 and 8 Hz (bidirectional FIR filter). All features of interest were modeled as impulse regressors with one value per note, either binary (x = {0,1}) or continuous ($x\inR$). The M|EEG channel data and continuous regressors were z-scored. We constructed a time-expanded regression matrix M, which contained time-shifted versions of each regressor column-wise (tmin = –0.2 s, tmax = 1 s relative to note onsets, 73 columns per regressor given the sampling rate of 60 Hz). After removal of bad time points identified during M|EEG preprocessing, we estimated the regression weights $\beta^$ using ordinary least squares (OLS) regression:
+
+$$
+\beta^=(M^{T}M)^{−1}M^{T}y.
+$$
 
 Collectively, the weights form a response function known as the regression evoked response or temporal response function (TRF; Crosse et al., 2016; Ding and Simon, 2012). The TRF depicts how a feature modulates neural activity across time. Here, the units are arbitrary, since both binary and z-scored continuous regressors were included. Model estimation was performed using custom Python code built on the MNE rERP implementation (Gramfort et al., 2013; Smith and Kutas, 2015). Previous similar work has used ridge-regularized regression, rather than OLS (Di Liberto et al., 2020). We instead opted to use OLS, since the risk for overfitting was low given the sparse design matrices and low correlations between the time-shifted regressors. To make sure this did not unduly influence our results, we also implemented ridge-regularized regression with the optimal cost hyperparameter alpha estimated via nested cross-validation. OLS (alpha = 0) was always among the best-fitting models and any increase in predictive performance for alpha >0 for some participants was negligible. Results for this control analysis are shown for the best fitting model for the MEG and EEG data in Appendix 1—figures 5 and 6, respectively. In the rest of the manuscript we thus report the results from the OLS regression.
 
-## Models and regressors
+#### Models and regressors
 
 The Onset model contained a binary regressor, which coded for note onsets and was included in all other models too. The Baseline model added a set of regressors to control for acoustic properties of the music and other potential confounds. Binary regressors were added to code for (1) very high pitch notes (>90% quantile), (2) very low pitch notes (<10% quantile), since extreme pitch values go along with differences in perceived loudness, timbre, and other acoustic features; (3) the first note in each composition (i.e. composition onset); (4) repeated notes, to account for the repetition suppression effect and separate it from the surprise response. Since the MEG experiment used stimuli generated by different musical instruments, we additionally controlled for the type of sound, by including binary regressors for oboe and flute sounds. This was done since the different sounds have different acoustic properties, such as a lower attack time for piano sounds and longer sustain for oboe or flute sounds. For computing continuous acoustic regressors, we downsampled the audio signal to 22.05 kHz. We computed the mean for each variable of interest across the note duration to derive a single value for each note and create impulse regressors. The root-mean-square value (RMS) of the audio signal captures differences in (perceived) loudness. Flatness, defined as the ratio between the geometric and the arithmetic mean of the acoustic signal, controlled for differences in timbre. The variance of the broad-band envelope represented acoustic edges (McDermott and Simoncelli, 2011). The broad-band envelope was derived by (a) filtering the downsampled audio signal through a gammatone filter bank (64 logarithmically spaced filter bands ranging between 50 and 8000 Hz), which simulates human auditory processing; (b) taking the absolute value of the Hilbert transform of the 64 band signals; (c) averaging across bands (Zuk et al., 2021). The baseline regressors were also included in all of the following models. The main models of interest added note-level surprise, uncertainty, and/or their interaction from the different computational models of music, varying the model class and context length.
 
-## Model comparison
+#### Model comparison
 
 We applied a fivefold cross-validation scheme (train: 80%, test: 20%, time window: 0–0.6 s) (Varoquaux et al., 2017) to compare the regression models’ predictive performance on the M|EEG data. We computed the correlation between the predicted and recorded neural signal across time for each fold and channel on the hold out data. To increase the sensitivity of subsequent analyses, we selected the channels most responsive to musical notes for each participant according to the cross-validated performance for the Onset model (>2/3 quantile). The threshold was determined through visual inspection of the spatial topographies, but did not affect the main results. The overall model performance was then determined as the median across folds and the mean across selected channels. Since the predictive performance was assessed on unseen hold out data, the approach controlled for overfitting the neural data and for differences in the number of regressors and free model parameters. For statistical inference, we computed one-sample or paired t-tests using multiple comparison correction (Bonferroni-Holm method).
 
-## Cluster-based statistics
+#### Cluster-based statistics
 
 For visualizations and cluster-based statistics, we transformed the regression coefficients from the axial MEG data to a planar representation using FieldTrip (Bastiaansen and Knösche, 2000). The regression coefficients estimated on the axial gradient data were linearly transformed to planar gradient data, for which the resulting synthetic horizontal and vertical planar gradient components were then non-linearly combined to a single magnitude per original MEG sensor. For the planar-transformed coefficients, we selected the most responsive channels according to the coefficients of the note onset regressor in the Onset model (>5/6 quantile, time window: 0–0.6 s). The threshold was determined through visual inspection of the spatial topographies, but did not affect the main results. We then used cluster-based permutation tests (Maris and Oostenveld, 2007) to identify significant spatio-temporally clustered effects compared to the baseline time window (−0.2–0 s, 2000 permutations). Using threshold free cluster enhancement (TFCE, Smith and Nichols, 2009), we further determined significant time points, where at least one selected channel showed a significant effect. Mass-univariate testing was done via one-sample t-tests on the baseline-corrected M|EEG data with ‘hat’ variance adjustment (σ=1e−3) (Ridgway et al., 2012).
 
-## Source analysis
+#### Source analysis
 
 To localize the neural sources associated with the different regressors, we used equivalent current dipole modeling (ECD). Individuals’ anatomical MRI scans were realigned to CTF space based on the headshape data and the fiducial coil locations, using a semi-automatic procedure in Fieldtrip. The lead field was computed using a single-shell volume conduction model (Nolte, 2003). Based on individuals’ time-averaged axial gradient TRF data in the main time window of interest (180–240ms), we used a non-linear fitting algorithm to estimate the dipole configuration that best explained the observed sensor maps (FieldTrip’s ft_dipolefitting). We compared three models with one to three dipoles per hemisphere. As the final solution per participant, we chose that with the largest adjusted-r2 score in explaining the observed sensor topography (thereby adjusting for the additional 12 free parameters caused by introducing an extra dipole; 2 hemispheres times x/y/z/dx/dy/dz). As starting point for the search, we roughly specified bilateral primary auditory cortex (MNI coordinates x/y/z [48, -28, 10] mm (R), [-40,–28, 6] mm (L); Anderson et al., 2011; Kiviniemi et al., 2009), with a small random jitter (normally distributed with SD = 1 mm) to prevent exact overlap in starting positions of multiple dipoles. Note that the initial dipole location has a negligible effect on the final solution if the data are well explained by the final fit model. This was the case for our data, see Results. For visualization, we estimated the (volumetric) density of best-fit dipole locations across participants and projected this onto the average MNI brain template, separately for each regressor.

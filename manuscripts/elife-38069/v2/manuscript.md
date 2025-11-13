@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.38069.001 Mechanical forces between cells and extracellular matrix (ECM) influence cell shape and function. Tendons are ECM-rich tissues connecting muscles with bones that bear extreme tensional force. Analysis of transgenic zebrafish expressing mCherry driven by the tendon determinant scleraxis reveals that tendon fibroblasts (tenocytes) extend arrays of microtubule-rich projections at the onset of muscle contraction. In the trunk, these form a dense curtain along the myotendinous junctions at somite boundaries, perpendicular to myofibers, suggesting a role as force sensors to control ECM production and tendon strength. Paralysis or destabilization of microtubules reduces projection length and surrounding ECM, both of which are rescued by muscle stimulation. Paralysis also reduces SMAD3 phosphorylation in tenocytes and chemical inhibition of TGFβ signaling shortens tenocyte projections. These results suggest that TGFβ, released in response to force, acts on tenocytes to alter their morphology and ECM production, revealing a feedback mechanism by which tendons adapt to tension.
+Mechanical forces between cells and extracellular matrix (ECM) influence cell shape and function. Tendons are ECM-rich tissues connecting muscles with bones that bear extreme tensional force. Analysis of transgenic zebrafish expressing mCherry driven by the tendon determinant scleraxis reveals that tendon fibroblasts (tenocytes) extend arrays of microtubule-rich projections at the onset of muscle contraction. In the trunk, these form a dense curtain along the myotendinous junctions at somite boundaries, perpendicular to myofibers, suggesting a role as force sensors to control ECM production and tendon strength. Paralysis or destabilization of microtubules reduces projection length and surrounding ECM, both of which are rescued by muscle stimulation. Paralysis also reduces SMAD3 phosphorylation in tenocytes and chemical inhibition of TGFβ signaling shortens tenocyte projections. These results suggest that TGFβ, released in response to force, acts on tenocytes to alter their morphology and ECM production, revealing a feedback mechanism by which tendons adapt to tension.
 
 ## Introduction
 
@@ -30,39 +30,99 @@ Here, we show that mechanical force causes remarkable morphological changes in t
 
 ## Results
 
-## Tenocytes elongate with the onset of muscle contraction
+### Tenocytes elongate with the onset of muscle contraction
 
 Tenocytes in zebrafish express two Scx orthologues, scxa and scxb (Chen and Galloway, 2014). Using a bacterial artificial chromosome (BAC) transgenic line that expresses mCherry under the control of regulatory elements for scxa, Tg(scxa:mCherry), we examined the morphogenesis of tenocytes during embryonic (20 hr post fertilization (hpf) to 72 hpf) and early larval (72 hpf to 5 dpf) zebrafish development. Expression of scxa:mCherry was first detected at 20 hpf in muscle and tendon progenitors of the somites. In a developing zebrafish embryo, muscles in the trunk establish attachments at bilateral, ‘chevron’ shaped somite boundaries that subdivide each muscle segment forming the vertical myoseptum (VMS). In addition, dorsal and ventral compartments within each somite are subdivided by a horizontal myoseptum (HMS), which extends laterally from the notochord (NC), along which oblique myofibers attach. By 24 hpf, as the first myofibers differentiated, scxa:mCherry expression in muscle progenitors diminished and became progressively restricted to scattered tendon progenitors along the HMS and VMS (~24 cells per VMS) (Figure 1A,D,G) (Figure 1—video 1). Cells with the highest levels of scxa:mCherry expression were located laterally, adjacent to the HMS, while more medial cells expressed lower levels (Figure 1A’, D’, G’). By 36 hpf, scxa:mCherry+ cells doubled in number (~44/VMS) and became increasingly localized to the HMS and VMS at future MTJs (Figure 1B,E,H) (Figure 1—video 1). At this stage, cells with the highest scxa:mCherry expression that were located medially and in the ventral somites began to extend projections laterally along the VMS, perpendicular to the orientation of muscle fibers (Figure 1B’, E’, H’). By 48 hpf these projections extended 70–80 μm (Figure 1C,F,I). 3D-reconstructions of confocal stacks at 60 hpf revealed that this polarized network of tenocyte projections covered the entire VMS (Figure 1C’, F’, I’; Figure 1—figure supplement 1). Time-lapsed videos of Tg(scxa:mCherry) embryos capturing images at 20 min intervals from 48 to 60 hpf showed that tenocyte projections are dynamic and constantly changing in length and branching pattern (Figure 1—video 2). Tenocytes along the HMS near the NC have shorter, more convoluted projections than tenocytes along the VMS (Figure 1I’; Figure 1—figure supplement 1B). Thus, during the period in which axial muscles in the trunk begin to contract and embryos become motile, tenocytes align along future MTJs and undergo dramatic changes in cell shape that correlate with the establishment and strengthening of muscle attachments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Lateral views of live Tg(scx:mCherry) embryos showing developing tenocytes (A - 24 hpf, B - 36 hpf, C - 48 hpf). (A’–C’) Transverse views from 3D projections showing the positions of developing tenocytes in relation to the notochord (NC) and neural tube (NT) along the horizontal (HMS) and vertical myosepta (VMS) (arrows). Tenocytes form projections at 36–48 hpf (B’ and C’). (D–F) Diagrams of lateral views showing the morphology of tenocytes in the developing somites. (D’–F’) Diagrams of transverse views from 3D projections of live Tg(scx:mCherry) embryos show the development of tenocyte projections (E’ and F’). (G–I) Lateral views of co-immunostained Tg(scx:mCherry) embryos showing developing tenocytes (anti-mCherry - white) and muscle fibers (anti-MHC - green) (G – 24 hpf, H – 36 hpf, I – 48 hpf). (G’–I’) Transverse views from 3D projections of live Tg(scx:mCherry) embryos showing the positions of developing tenocytes (arrowheads in G’ and H’) in relation to the myotome. Scale bars = 20 microns.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lateral and (B) transverse views of live 60 hpf Tg(scx:mCherry) embryos showing tenocytes, which are pseudocolored to highlight the depth of the 3D reconstructed image. Transgene expression is also observed in neuronal cell bodies in the neural tube. Scale bars = 10 microns.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Co-immunostained Tg(scx:mCherry) embryos (anti-mCherry – red; anti-MHC – green) showing temporal changes in tenocyte morphogenesis in relation to developing muscles. (A, D, G – 48 hpf; B, E, H – 62 hpf; C, F, I, – 72 hpf). Ventral views of Tg(scx:mCherry) embryonic heads. Abbreviations: IMA – intermandibularis anterior, IMP – intermandibularis posterior, IH – interhyal, AM – adductor mandibulae, HH – hyohyal, SH – sternohyoideus, mc – Meckels cartilage, bh – basihyal, ch – ceratohyal. Scale bar = 20 microns.
+
 Cranial tendons also undergo dramatic morphological changes during the onset of muscle attachment and contractility. A cluster of scxa:mCherry+ tenocyte progenitors is first observed at 36 hpf in the ventral midline near the future attachment sites of the sternohyoideus (SH) and adductor mandibulae (AM), which are among the earliest muscles to differentiate at 53 hpf (Schilling and Kimmel, 1997). By 48 hpf, three major clusters of scxa:mCherry+ tenocytes are visible ventrally, one anterior that forms ventral mandibular, hyoid, and oculomotor muscle tendons and two posterior clusters associated with each SH (Figure 1—figure supplement 2A). The anterior cluster subdivides over 14 hr into separate attachment sites for mandibular (IMA, IMP, AM) and hyoid (IH) muscles (Figure 1—figure supplement 2B). Double labeling with anti-MHC and anti-mCherry antibodies revealed a tight correlation between the timing of the onset of muscle contraction and tenocyte morphogenesis in each of these clusters (Figure 1—figure supplement 2A,B,D,E,G,H). Cranial myofibers remain immotile at 48–62 hpf and their corresponding tenocytes form clusters of rounded cells at future attachment sites. These tenocytes then undergo compaction and elongation as contractions begin at 72 hpf (Figure 1—figure supplement 2C,F,I).
 
-## Tenocyte elongation requires muscle contraction
+### Tenocyte elongation requires muscle contraction
 
 Based on the close correlation between the onset of muscle contraction and tenocyte morphogenesis, we hypothesized that mechanical force serves as a cue for tenocytes to elongate and form projections. To test this idea, we first injected full-length mRNA encoding codon-optimized α-bungarotoxin (αBtx), a specific irreversible antagonist of acetylcholine receptors that blocks neuromuscular synapses and prevents skeletal muscle contractions (Swinburne et al., 2015; Westerfield et al., 1990). Embryos injected with αBtx mRNA at the one-cell stage were completely paralyzed until 60 hpf, after which they gradually recovered motility as αBtx activity declined. Depth-coded, 3D-reconstructed images of living trunk tenocytes along the MTJs of somites 16–17 at 48 hpf revealed an average reduction of 13 μm (18%) in axial tenocyte projection length in αBtx-injected embryos compared to uninjected controls (Figure 2A,B,E). Paralyzed embryos also showed reduced branching complexity in their projections (Figure 2F) and projection density along the VMS (Figure 2—figure supplement 1). To restore mechanical force, we electrically stimulated αBtx-injected embryos to induce muscle contractions, as described previously (Subramanian and Schilling, 2014). Stimulation at 48 hpf for 2 min at 20V caused no visible muscle damage or significant change in tenocyte projection lengths compared to controls (Figure 2C,E) while the same stimulation of αBtx-injected embryos rescued both tenocyte projection length and density along the VMS almost completely (Figure 2D,E; Figure 2—figure supplement 1). The observed reductions in projection length and density were caused by paralysis rather than any unanticipated effect of αBtx, since homozygous mutants paralyzed due to lack of a functional voltage-dependent L-type calcium channel subtype beta-1 (Cacnb1), necessary for excitation-contraction coupling in muscle, showed similar (10–15 μm) reductions in projection length (Figure 2—figure supplement 2) (Zhou et al., 2006). Tenocytes in cacnb1 mutant embryos fail to compact and elongate. Since αBtx-injected embryos recover from paralysis at 65 hpf, prior to cranial muscle contractions, we compared cranial tenocyte patterning in immunostained 4 dpf cacnb1 mutant embryos with their siblings. We observed both a failure of cranial tenocytes to compact and elongate, as well as reduced projections and frayed myofibers (Figure 2—figure supplement 3). These results indicate a strong correlation between mechanical force from muscle contraction and tenocyte morphogenesis, suggesting that force stimulates the dynamic growth and branching of tenocyte projections.
 
-## ECM organization at MTJs requires muscle contraction
+![Figure 2.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig2-v2.jpg)
+
+**Figure 2.:** Lateral views of live Tg(scx:mCherry) embryos (48 hpf) showing tenocyte projections. Images are pseudocolored by depth from medial (red) to lateral (blue). Control embryos were imaged without stimulation (A) and after stimulation (B), and the length of tenocyte projections was compared with embryos injected with αBtx and imaged without (C) and with stimulation (D). Dot plot shows individual data points of tenocyte projection length under different conditions (E). The data points from each embryo are connected by a vertical line. NS – Not Stimulated, S – Stimulated. (n > 50 data points/embryo in three embryos/sample, p value was determined through ANOVA 1-way analysis ***<0.00001, **<0.0001). Histogram shows quantification of branch points along tenocyte projections per tenocyte in 36 hpf control and αBtx injected embryos for every level of branching (1o – primary, 2o – secondary, 3o – tertiary, 4o – quaternary). (n = 4, p value was determined through ttest *<0.01, ***<0.00001). The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 2—source data 1 and Figure 2—source data 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Dot plot shows individual data points of tenocyte projection density at the ventral VMS in embryos injected with αBtx and imaged without and with stimulation. The data points from three VMSs in each embryo are connected by a vertical line. NS – Not Stimulated, S – Stimulated. (n ~ 10 embryos/sample, p value was determined through ANOVA 1-way analysis and Tukey test ***<0.00001). The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 2—figure supplement 1—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Lateral views of immunostained (A) sibling and (B) cacnb1 mutant embryos carrying the Tg(scx:mCherry) transgene showing tenocyte projections in a pseuodocolored, depth-coded pattern. (C) Dot plot shows individual data points of tenocyte projection length in sibling and cacnb1 mutant embryos (n = 50 data points/embryo in eight embryos/sample, p-value was determined by Wilcoxon Rank Sum Test - < 0.0001). The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Ventral views of 98 hpf wild-type (A–C) and cacnb1; scx:mCherry (D–F) embryonic heads showing muscle fibers (green) and corresponding tenocytes (red). (G–J) Higher magnification views of control Tg(scx:mCherry) embryonic heads (panel A insets - color coded boxes) and (K–N) higher magnification views of cacnb1; scx:mCherry embryonic heads (panel D insets - color-coded boxes) showing tenocyte projections in different tendons (arrows). Scale bars = 20 microns.
+
+### ECM organization at MTJs requires muscle contraction
 
 We previously showed that Tsp4b secreted by tenocytes is essential for ECM organization at MTJs and strengthens muscle attachments (Subramanian and Schilling, 2014). We hypothesized that force stimulates tenocytes to secrete Tsp4b from the projections they extend into the tendon ECM. Consistent with this, injection of tsp4b-gfp full length mRNA into Tg(scxa:mCherry) embryos produced Tsp4b-GFP protein that localized to MTJs along the attachment sites at 48 hpf (Figure 3A–C,I). This exogenous Tsp4b-GFP protein was dramatically reduced in αBtx-injected embryos, particularly around projections, and became diffuse compared to uninjected controls (Figure 3D–F,I). Likewise, immunohistochemical staining for Tsp4b at 48 hpf in αBtx-injected embryos showed dramatic reductions along the attachment sites compared to controls (Figure 3G,H,J). In contrast, other ECM proteins such as laminin (Lam) at 48 hpf and and fibronectin (Fn) at 24 hpf showed no significant changes at the MTJ in αBtx-injected embryos at 48 hpf (Figure 3—figure supplement 1). Defects in Tsp4b distribution were due to the lack of mechanical force, since restoring force in paralyzed embryos through electrical stimulation rescued both local levels and the overall area of Tsp4b protein localization along the VMS (Figure 3—figure supplement 2). To test the hypothesis that changes in Tsp4b localization were due to reduced tsp4b gene expression in response to lack of force, we performed real-time PCR and found a significant reduction in tsp4b expression at 48 hpf in αBtx-injected embryos, while no significant change in expression was observed at 24 hpf (Figure 3—figure supplement 3). These results suggest a role for mechanical force in both assembly of tendon ECM and expression of key MTJ ECM genes during development and demonstrate that muscle contractions regulate the composition and organization of the tendon ECM.
 
-## Microtubules maintain tenocyte projections and their interactions with tendon ECM
+![Figure 3.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig3-v2.jpg)
+
+**Figure 3.:** Lateral views of live control (A–C) and αBtx injected (D–F) Tg(scx:mCherry) embryos (48 hpf), injected with tsp4b-gfp mRNA showing localization of Tsp4b-GFP (green) (arrowheads) along the VMS and tenocyte projections (red). (I) Histogram shows the percentage of embryos with Tsp4b-GFP localized to VMS (n = 27, p value calculated by chi-squared test <0.05). (G–H) Lateral views of immunostained embryos showing Tsp4b protein localization detected immunohistochemically along VMS in control (G) and αBtx injected (H) embryos. (J) Dot plot shows individual data points of the fluorescent intensity of localized Tsp4b along the VMS in control and αBtx injected embryos. Three VMSs/embryo were sampled in control and αBtx-injected embryos. (n = 9, p value calculated by Wilcoxon Rank Sum Test - < 0.0001). Scale bars = 20 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 3—source data 1 and Figure 3—source data 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Dot plot shows individual data points of the fluorescent intensity of localized Lam (A) and Fn (B) at MTJs along the VMS in control and αBtx-injected embryos at 48 hpf (A) and 24 hpf (B). Three VMSs/embryo were sampled in control and αBtx-injected embryos. (n = 9, p value calculated by ANOVA 1-way analysis and Tukey -*<0.002). Scale bars = 20 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 3—figure supplement 1—source data 1 and Figure 3—figure supplement 1—source data 2.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Lateral view of immunostained 48 hpf embryos showing the localization of Tsp4b in control embryos without (A) and with stimulation (C), and αBtx-injected embryos without (B) and with stimulation (D). Histogram shows the mean area of Tsp4b localization in VMS (dotted region) (E). NS – Not Stimulated, S – Stimulated. Scale bar = 20 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 3—figure supplement 2—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Histogram shows relative expression of rpl13a, scxa and tsp4b in 24 hpf and 48 hpf control and αBtx-injected embryos. (p value calculated by ANOVA 1-way analysis and Tukey test -**<0.001).
+
+### Microtubules maintain tenocyte projections and their interactions with tendon ECM
 
 Cellular projections in neurons, keratinocytes and pigment cells are rich in microtubules (MTs) and in some cases F-actin, while filopodial extensions of cells are typically more actin-based (Eom et al., 2015; Witte et al., 2008). To determine the cytoskeletal structure of tenocyte projections we injected full-length mRNA encoding eGFP-αtubulin and found that this fusion protein localized to MTs along the length of tenocyte projections ﻿﻿﻿﻿﻿ (Figure 4A–C) (Rusan et al., 2001). Similar injections of plasmids encoding EGFP-Lifeact-7 failed to show labeled actin in the projections. To determine if MTs are critical for maintaining projections, we treated embryos with Nocodazole, which caused them to fragment (Figure 4D,E). Immunohistochemical staining of Nocodazole-treated embryos for Tsp4b showed scattered Tsp4b + puncta localized at MTJs along the VMS and reduced Tsp4b protein levels in the VMS (Figure 4F,G,H,I). These results suggest that MTs are the key structural components of tenocyte projections required to sustain the organization of tendon ECM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig4-v2.jpg)
 
-**Figure 4.:** Lateral views of live 48 hpf Tg(scx:mCherry) embryos injected with EGFP-alpha-Tubulin mRNA (A–C) showing localization of a-Tubulin along the length of projections colocalized with mCherry to mark in tenocytes. Transverse views of 3-D reconstructed live 60 hpf embryos showing tenocyte projections in DMSO-treated (D) and Nocodazole (Noco)-treated (E) embryos. Transverse view of 3-D reconstructed 60 hpf embryos immunostained for Tsp4b showing localization of Tsp4b in DMSO treated (F) and Noco treated (G) samples. Quantification of Tsp4b localization intensity in VMS (H) and distribution of Tsp4b aggregates in VMS (I) of DMSO-treated and Noco-treated embryos. (p value calculated by t-test for samples with unequal variance *<0.05, ***<0.0005). Scale bars = 20 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 4—source data 1 and Figure 4—source data 2.10.7554/eLife.38069.026Figure 4—source data 1.10.7554/eLife.38069.027Figure 4—source data 2.
+**Figure 4.:** Lateral views of live 48 hpf Tg(scx:mCherry) embryos injected with EGFP-alpha-Tubulin mRNA (A–C) showing localization of a-Tubulin along the length of projections colocalized with mCherry to mark in tenocytes. Transverse views of 3-D reconstructed live 60 hpf embryos showing tenocyte projections in DMSO-treated (D) and Nocodazole (Noco)-treated (E) embryos. Transverse view of 3-D reconstructed 60 hpf embryos immunostained for Tsp4b showing localization of Tsp4b in DMSO treated (F) and Noco treated (G) samples. Quantification of Tsp4b localization intensity in VMS (H) and distribution of Tsp4b aggregates in VMS (I) of DMSO-treated and Noco-treated embryos. (p value calculated by t-test for samples with unequal variance *<0.05, ***<0.0005). Scale bars = 20 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 4—source data 1 and Figure 4—source data 2.
 
-## TGFβ signaling is required for tenocytes to extend projections in response to force
+### TGFβ signaling is required for tenocytes to extend projections in response to force
 
 Previous studies from primary cultures of tenocytes and stretch tests on isolated tendons in vitro have proposed a mechanoresponsive role for TGFβ signaling (Gumucio et al., 2015; Havis et al., 2016; Maeda et al., 2011). TGFβ secreted by muscles or latent in the ECM of the MTJ could be released in response to force and thereby regulate both tenocyte morphogenesis and ECM production. To address this hypothesis, we treated Tg(scxa:mCherry) embryos with a chemical inhibitor of TGFβ signaling (SB431542 – which blocks TGFβ receptors) for 12 hr from 24 to 36 hpf (Chen and Galloway, 2014). This treatment severely reduced signaling in both muscle fibers and tenocytes as confirmed by immunostaining for phosphorylated SMAD3 (pSMAD3) in SB431542-treated embryos compared to controls (Figure 5A–C,E–G,I). In addition, tenocyte projections were reduced in length by an average of ~20 μm in SB431542-treated embryos (Figure 5D,H,J), similar to the effects of αBtx (Figure 2B,E). However, unlike embryos injected with αBtx, SB431542-treated embryos continued to swim actively. These results suggest that TGFβsignaling acts downstream of muscle contraction to stimulate growth and branching of tenocyte projections. To confirm if muscle contraction is essential for activation of TGFβ signaling, we stained control and αBtx-injected, Tg(scx:mCherry) embryos with anti-pSMAD3. While control embryos showed strong pSMAD3 localization in the nuclei of muscles and tenocytes, pSMAD3 staining was strongly reduced in the nuclei of tenocytes in αBtx-injected embryos (Figure 6A–G). Here, in contrast to embryos treated with SB431542 (Figure 5C,G), paralysis specifically reduced pSMAD3 in tenocytes and not in muscle nuclei. This correlated with the reduction in length of tenocyte projections (Figure 6H). These results suggest that mechanical force from muscle contraction serves as a cue for TGFβ mediated signaling in tenocytes to control their morphogenesis and differentiation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig5-v2.jpg)
 
-**Figure 5.:** Lateral views of immunostained Tg(scx:mCherry) control (A–D) and SB431542-treated (E–H) embryos showing nuclei (DAPI), tenocytes (anti-mCherry) and pSMAD3 (anti-pSMAD3). (I) Localization of pSMAD3 was quantified as fluorescent intensity of nuclear pSMAD3 signal (marked by yellow dotted ROI) and plotted as a dot plot showing data points (n = 9, p value was calculated by t test ***<0.000005). (D, H) Pseudocolored 3D projections show tenocyte cell projections in control (D) and SB 431542 treated embryos (H). (J) Dot plot shows individual data points representing tenocyte projection lengths (n = 50 data points/embryo in nine embryos/sample, p value was calculated by Wilcoxon Rank Sum test ***<0.00005). Representative muscle nuclei are marked by a blue continuous ROI. Scale bars = 10 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 5—source data 1 and Figure 5—source data 2.10.7554/eLife.38069.029Figure 5—source data 1.10.7554/eLife.38069.030Figure 5—source data 2.
+**Figure 5.:** Lateral views of immunostained Tg(scx:mCherry) control (A–D) and SB431542-treated (E–H) embryos showing nuclei (DAPI), tenocytes (anti-mCherry) and pSMAD3 (anti-pSMAD3). (I) Localization of pSMAD3 was quantified as fluorescent intensity of nuclear pSMAD3 signal (marked by yellow dotted ROI) and plotted as a dot plot showing data points (n = 9, p value was calculated by t test ***<0.000005). (D, H) Pseudocolored 3D projections show tenocyte cell projections in control (D) and SB 431542 treated embryos (H). (J) Dot plot shows individual data points representing tenocyte projection lengths (n = 50 data points/embryo in nine embryos/sample, p value was calculated by Wilcoxon Rank Sum test ***<0.00005). Representative muscle nuclei are marked by a blue continuous ROI. Scale bars = 10 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 5—source data 1 and Figure 5—source data 2.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig6-v2.jpg)
+
+**Figure 6.:** Lateral views of 48 hpf immunostained Tg(scx:mCherry) control (A–C) and αBtx injected (D–F) embryos showing nuclei (DAPI), tenocytes (anti-mCherry) and pSMAD3 (anti-pSMAD3) (marked by yellow-dotted ROI). (G) Localization of pSMAD3 was quantified as fluorescent intensity of nuclear pSMAD3 signal and plotted as a dot plot (n = 4, p value was calculated by t-test **<0.005). (H) Dot plot shows individual tenocyte projection lengths (p value was calculated by t-test **<0.00005). Representative muscle nuclei are marked by a blue continuous ROI. Scale bar = 10 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 6—source data 1 and Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–F) Single plane images showing lateral views of paralyzed (αBtx) 48 hpf embryos without stimulation (A–C) and after stimulation (D–F), immunostained to show nuclei (DAPI), tenocytes (anti-mCherry) and pSMAD3 (anti-pSMAD3) (marked by yellow dotted ROI). Cell bodies are outlined by dotted lines. (G) pSMAD3 localization was quantified as fluorescent intensity of nuclear pSMAD3 signal and plotted as a dot plot (n = 3, p value was calculated by Wilcoxon Rank Sum test **<0.0005). NS – Not Stimulated, S – Stimulated. Representative muscle nuclei are marked by a blue continuous ROB. Scale bar = 10 microns. The measurements used for quantitative analysis and creation of the plots can be accessed from Figure 6—figure supplement 1—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) qRT-PCR analysis shows relative expression of scxa, tsp4b, tgfbip and ctgfa2 genes in control (wild-type) embryos and paralyzed embryos (αBtx-inj) (without and with stimulation) (p value was calculated by ANOVA 1-way analysis and Tukey test **<.005). (B) ddPCR analysis shows absolute expression level of scxa, tsp4b, tgfbip and ctgfa2 genes in control (wild-type) embryos and paralyzed embryos (αBtx-injected) (without and with stimulation) in whole embryos.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/38069/elife-38069-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Real time PCR analysis shows relative expression of scxa, tsp4b, tgfbip and ctgfa2 genes in control (DMSO treated) embryos, SB431542-treated embryos (A) and Nocodazole-treated embryos (B).
 
 To further confirm that mechanical force has a role in induction of TGF-β responses in tenocytes, we stained control and αBtx-injected embryos with or without electrical stimulation, with anti-pSMAD3 antibody to verify if localization of pSMAD3 in nuclei of tenocytes could be rescued. αBtx-injected embryos stimulated with mild electric current showed increased pSMAD3 localization in tenocyte nuclei strongly suggesting that mechanical force from muscle contraction can rescue TGFβ signaling in tenocytes (Figure 6—figure supplement 1).
 
-## Tenocyte projections regulate force-dependent gene expression
+### Tenocyte projections regulate force-dependent gene expression
 
 Previous studies have linked mechanical force with the expression of tenogenic and myogenic genes (Chen et al., 2012; Maeda et al., 2011). Our results showing similar tenocyte projection defects in Nocodazole-treated, αBtx-injected and SB431542 treated embryos suggest that they induce similar changes in expression of force-responsive genes. Real-time PCR analysis on cDNA prepared from 48 hpf control and αBtx-injected embryos revealed that paralysis led to an almost complete loss of expression of tsp4b, as well as TGFβ-induced protein (tgfbip) and, connective tissue growth factor a (ctgfa), while expression levels of other tendon genes, such as scxa, were unaffected (Figure 6—figure supplement 2A). All three genes (tsp4b, tgfbip and ctgfa) were restored to control levels of expression with electrical stimulation (Figure 6—figure supplement 2A). We further validated the results with digital droplet PCR (ddPCR) on cDNA prepared from FACS sorted tenocytes and whole embryos respectively. Our ddPCR results from whole embryo cDNA preparation agreed with the real-time PCR analysis (Figure 6—figure supplement 2B). Real-time PCR analysis of SB431542-treated embryos showed significant reductions in expression of tsp4b and tgfbip genes (Figure 6—figure supplement 3A). Loss of tenocyte projections through destabilization of microtubules in nocodazole-treated embryos also led to reduced expression of tsp4b and tgfbip while expression of ctgfa and scxa were elevated (Figure 6—figure supplement 3B). Taken together, these results are consistent with the hypothesis that mechanical force acts through TGFβ signaling to regulate tenocyte-specific transcription including ECM components such as Tsp4b.
 
@@ -74,17 +134,17 @@ Mechanical forces generated by cells adhering to ECM alter their shapes and func
 
 **Figure 7.:** (A) In the presence of tensile force from muscle contraction (1) changes in ECM organization and other factors lead to release of active Tgfβ ligand (2). Tgfβ ligand binds to receptors on tenocytes to increase pSMAD3 signaling (3), secretion of ECM components (4) and growth/branching of microtubule rich projections (5). Cartoon depiction of tenocyte morphogenesis in the presence of mechanical force (during onset of muscle contraction in embryonic development or through electrical stimulation of paralyzed embryos). (B) In the absence of mechanical force (before onset of muscle contraction or in paralyzed embryos) there is reduced active Tgfβ ligand, pSMAD3 signaling, expression of ECM proteins and growth/branching of projections. Depiction of tenocyte morphogenesis in the absence of mechanical force.
 
-## Roles for tensional force in tendon morphogenesis
+### Roles for tensional force in tendon morphogenesis
 
 Tendons primarily experience tension from muscle contractions (Lavagnino et al., 2015; Wang, 2006). In contrast, skeletal cell types (e.g. osteocytes, osteoblasts, chondrocytes) are exposed to compressive forces (Klein-Nulend et al., 2012) or shear forces in the case of chondrocytes in joints exposed to fluid flow (Servin-Vences et al., 2017).We show that in the absence of tension during development, tenocytes reduce the extent and spread of their projections into the tendon ECM and this can be rescued by a short bout of contraction. Tendon defects and injuries result from dramatic changes in tension experienced either instantly or periodically over extended periods of muscle disuse or overuse (Franchi et al., 2013; Gaut and Duprez, 2016; Wang et al., 2012). Embryonic tenocyte progenitors experience muscle contractions at early stages and must continuously adapt to changes in muscle strength. Our results support the idea that the establishment and adaptation of MTJs occurs in response to mechanical force from muscle contraction and involves both changes in tenocyte morphogenesis and ECM production.
 
 We show that paralysis reduces tenocyte branching and tendon ECM, which can be rescued by restoring muscle contractions through electrical stimulation. Early experiments on developing chick embryos have shown that induced lack of muscle activity (either by lack of neuronal innervation or by injecting paralysis-inducing drugs) negatively affects the growth of associated skeletal structures, suggesting a role for force from muscle contraction as an essential cue for proper growth and differentiation of the skeleton (Hall and Herring, 1990; Hamburger and Waugh, 1940). During development, the skeleton is exposed to two major types of force – contractile (tension) force from muscles and compressional force (e.g. gravity). A contractile force from muscles has a greater impact on the growth of bones when compared to compression, indicating a primary role for muscle function in guiding the growth of associated skeletal tissues (Ellman et al., 2014; Warden et al., 2013). Recent studies in paralyzed limbs have shown that the development of a tendon-bone attachment unit, the enthesis, is affected by lack of muscle contraction (Schwartz et al., 2013; Tatara et al., 2014). Our studies suggest that muscle contraction has a similar role in the development of tendons. Immobilization experiments performed on canine models have shown that mechanical force is required for repair of tendon injuries (Gelberman et al., 1982). More recent studies using paralysis and restricted movement have shown that mechanical force has multiple roles in the maintenance of tenogenic gene expression, secretion of tendon ECM, and tenocyte survival (Gaut et al., 2016; Hettrich et al., 2011; Maeda et al., 2011).
 
-## Microtubules are essential for tenocyte projection stability and function
+### Microtubules are essential for tenocyte projection stability and function
 
 Cellular filopodia and neuronal axons require either F-actin and MTs or both in the formation and maintenance of projections, and new classes of cellular projections are emerging from recent studies such as cytonemes and airinemes (Bornschlögl, 2013; Eom et al., 2015; Huang and Kornberg, 2015; Witte et al., 2008). MTs also serve as pathways for trafficking various proteins, RNA, and other intracellular components along projections. Tenocytes in Drosophila rely on a network of polarized MTs for the maintenance of cellular structure and function (Subramanian et al., 2003), but similar requirements for cytoskeletal components have not been investigated in vertebrate tendons. Here, we show that zebrafish tenocytes are rich in MTs, which are required to maintain projections. Pharmacological disruption of MTs destabilized the projections without affecting tenocyte cell bodies. This reduced Tsp4b localization suggesting that tenocyte projections both sense force and respond to it by altering ECM organization in an MT-dependent manner. A caveat to this result is that treatment of embryos with Nocodazole causes global destabilization of MT in the entire embryo. Hence, the effects on tenocyte projections and tendon ECM organization could also arise in response to MT destabilization in neighboring muscle fibers, axons and other cells. Similar roles for cellular projections have been observed in pigment cells, where airinemes composed of both F-actin and MTs play a role in long-range signaling by secreting signaling ligands at the tips of their projections (Eom et al., 2015). We find that loss of tenocyte projections leads to upregulated expression of scxa and ctgfa in MT-deficient embryos, suggesting that they revert to a more dedifferentiated state.
 
-## Tenocyte projections are force sensors in the tendon ECM
+### Tenocyte projections are force sensors in the tendon ECM
 
 Previous EM studies of human and rat tendons have described tenocytes projecting into the tendon matrix, but their functional significance has remained unclear (McNeilly et al., 1996; Pingel et al., 2014). 3D reconstructions from EM studies suggest a role for these projections, referred to as ‘fibropositors’ in one study, in secreting collagen fibrils (Canty et al., 2004). Analysis of Scx expression in chick and mouse using immunostaining and transgenic reporter lines, respectively, have shown that limb tendons elongate as the musculoskeletal system matures (Brent et al., 2003; Kardon, 1998; Pryce et al., 2007). Our results in zebrafish reveal that such elongated projections are conserved, but quite distinct in different classes of tenocytes. While cranial tenocytes resemble those in the limb in that they extend in parallel to the direction of force, axial tenocytes extend their projections perpendicular to the plane of muscle contraction (with opposing directions of contractile force) (Figure 1 and Figure 1—figure supplement 2). Based on our results, we propose that these distinct morphologies reflect a more structural, load-bearing role for cranial (and limb) tenocytes, while early larval axial tenocytes in zebrafish function as tension sensors in the myoseptum. Many important questions remain and form the basis of future studies, including why these cells are so polarized and how this mediolateral polarity develops. Consistent with the tension-sensor hypothesis, the timing of the outgrowth of tenocyte projections tightly correlates with the onset of muscle contraction. Tension sensing projections are observed in other musculoskeletal tissues as osteocytes extend projections into the bone matrix where they are thought to form a network of force sensors (Cowin et al., 1991) that modulate bone formation and resorption (Klein-Nulend et al., 2012; Schaffler et al., 2014). Likewise, the cues that cause osteoblasts to form these projections as they differentiate into osteocytes remain unknown (Franz-Odendaal et al., 2006). Similar to our results with zebrafish tenocytes, mammalian osteocyte projections increase in density in response to force, consistent with a role as force sensors and responders in both cases.
 
@@ -92,7 +152,7 @@ In both bone and tendon, the ECM undergoes dynamic changes in expression of coll
 
 The strong correlation between onset of muscle function, changing myotendinous ECM and tenocyte morphogenesis suggests a model in which force is transduced through cues from the ECM that induce the formation of projections (Figure 7A). Similar processes may underlie the projections of osteocytes and other mesenchymal cell types. Such feedback likely allows tendons to adapt to changing mechanical force during normal development and exercise, as well as in healing and repair of tendon injuries.
 
-## Mechanical forces and signaling
+### Mechanical forces and signaling
 
 Our results show for the first time that activation of TGFβ signaling in response to mechanical force is required for tenocyte morphogenesis, in particular the growth and branching of tenocyte projections. Paralyzed embryos (αBTX-injected) lose pSMAD3 expression in tenocytes and projections shorten, which is rescued by restoring muscle contraction. Similarly, pharmacological inhibition of TGFβ receptors reduces pSMAD3 expression and shortens tenocyte projections. Studies of mechanotransduction have identified several putative signaling pathways involved, depending on the tissue, including TGFβ, YAP/TAZ, and Integrins, as well as membrane channels such as TrpV4 and Piezo receptors (Busch et al., 2017; Gumbiner and Kim, 2014; Lavagnino et al., 2015; Servin-Vences et al., 2017). Some of these pathways such as TGFβ and YAP/TAZ share intermediate signaling components and targets, which complicates our understanding of their role in mechanotransduction in specific tissues (Qin et al., 2018; Szeto et al., 2016). This could help explain the modest reduction in expression of tgfbip and ctgfa2 in SB431542-treated embryos, as other mechanotransduction signaling pathways may still function in these embryos to partially maintain expression levels of these genes (Figure 6—figure supplement 3) In vitro studies of tenocyte primary cultures and excised tendon tissue have shown elevated TGFβ signaling in response to mechanical load (Heinemeier et al., 2003; Heinemeier et al., 2007; Maeda et al., 2013; Maeda et al., 2011; Yang et al., 2004) and mice show elevated TGFβ signaling in muscles and tendons following exercise (Maeda et al., 2011). These studies suggest that TGFβ signaling, in addition to its earlier role in tenocyte specification (Havis et al., 2016), is involved in mechanotransduction in these cells after they differentiate. TGFβ signaling is activated by many factors, including integrins, BMP1 and MMPs which can act on the large latent complex (LLC), to release active TGFβ ligand from the ECM (Horiguchi et al., 2012; Keski-Oja et al., 2004; Todorovic et al., 2005). This could be the critical cue from the ECM that induces and modulates the formation of tenocyte projections. One candidate for initiating these events is Tsp4, since Tsps can activate TGFβ signaling by destabilizing latency-associated peptide (LAP) (Bailey Dubose et al., 2012). The tendon matrix is rich in MMPs and Tsps, which dynamically change in composition and activity depending on mechanical force (Jenkins et al., 2016; Popov et al., 2015; Subramanian and Schilling, 2014). The dynamic reductions in Tsp4b that we have shown in response to paralysis could fail to activate latent TGFβ in the tendon ECM. Furthermore, because we see reductions in Tsp4b expression in paralyzed embryos, our results support a model where force triggers TGFβ signaling leading to increased expression of Tsp4b, which in turn activates TGFβ expression, creating a positive feedback loop (Figure 7A,B). Transection of tendons or injection of botulinum toxin (Botox) to induce paralysis in mice causes tenocyte death and reduced expression of tenogenic genes (Maeda et al., 2011). In contrast, we observe neither cell death nor significant changes in tenogenic gene expression in paralyzed (cacnb1 mutant) zebrafish embryos until 5 dpf, several days after tenocyte differentiation. We interpret such a response as a separate response to prolonged disuse rather than an adaptation to force.
 
@@ -100,11 +160,294 @@ These studies have shown a direct relationship between mechanical force and tend
 
 ## Materials and methods
 
-## Zebrafish transgenics and mutants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Tsp4b</td>
+      <td>Schilling lab</td>
+      <td>RRID: AB_2725793</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti Myosin heavy chain</td>
+      <td>DSHB</td>
+      <td>Cat# A4.1025, RRID: AB_528356</td>
+      <td>1:250 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab13970, RRID: AB_300798</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti mCherry</td>
+      <td>Molecular Probes</td>
+      <td>Cat# M11217, RRID: AB_2536611</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Fibronectin</td>
+      <td>Abcam</td>
+      <td>Cat# ab2413, RRID: AB_2262874</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Laminin</td>
+      <td>Abcam</td>
+      <td>Cat# ab11575, RRID: AB_298179</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti pSMAD3</td>
+      <td>Antibodies-online</td>
+      <td>Cat# ABIN1043888, RRID: AB_2725792</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 conjugated Donkey anti Chicken IgY</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 712-586-153</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 549 conjugated Donkey anti Rabbit IgG</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 711-506-152, RRID: AB_2616595</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 conjugated Donkey anti Rabbit IgG</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 711-545-152, RRID: AB_2313584</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated anti Mouse IgG</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 115-176-071</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated Donkey anti Rat IgG</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 712-586-153, RRID: AB_2340691</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 conjugated anti Mouse IgG</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 715-546-150; RRID: AB_2340849</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DiAmino PhyenylIndole (DAPI)</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306, RRID: AB_2629482</td>
+      <td>1:1000 dulution</td>
+    </tr>
+    <tr>
+      <td>Cell line (E. coli)</td>
+      <td>Chemically competent DH5alpha cells</td>
+      <td>Schilling Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Tocris</td>
+      <td>Cat# 1614, SID: 241182574</td>
+      <td>50 mM stock solution, 10 µM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#1404, SID: 24278535</td>
+      <td>33 mM stock solution, 0.33 mM final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Invitrogen</td>
+      <td>Cat# 15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-aminobenzoic acid ethyl ester methanesulfonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5040, SID: 329770864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine T7 ultra transcription kit</td>
+      <td>Ambion</td>
+      <td>Cat# AM1345, RRID: SCR_016222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine T3 transcription kit</td>
+      <td>Ambion</td>
+      <td>Cat# AM1348, RRID: SCR_016223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMachine SP6 transcription kit</td>
+      <td>Ambion</td>
+      <td>Cat# AM1340, RRID: SCR_016224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protoscript II first strand cDNA synthesis kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E6560, RRID: SCR_016225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna universal qPCR master mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M3003, RRID: SCR_016226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA Miniprep</td>
+      <td>Zymo Research</td>
+      <td>Cat# R2061, RRID: SCR_016227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QX200 EvaGreen 653 ddPCR Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1864033 RRID: SCR_008426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QX200 Droplet Generation Oil for EvaGreen</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1864005, RRID: SCR_008426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QX200 Droplet Generator</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1864002, RRID: SCR_008426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QX200 Droplet 657 Reader</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1864003, RRID: SCR_008426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit SSDNA assay kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# Q10212, SCR_008817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit 2.0 fluorometer</td>
+      <td>Invitrogen</td>
+      <td>Cat# Q32866, SCR_008817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Tg(scx:mCherry)</td>
+      <td>Galloway lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>Cacnb1+/-</td>
+      <td>Schilling lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for RT-PCR, see Table S1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>0.5 µM final concentration</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmtb-t7-alpha-bungarotoxin</td>
+      <td>Addgene</td>
+      <td>Cat# 69542, RRID: SCR_002037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRESneo-EGFP-alpha tubulin</td>
+      <td>Addgene</td>
+      <td>Cat# 12298, RRID: SCR_002037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmEGFP-Lifeact-7</td>
+      <td>Addgene</td>
+      <td>Cat# 54610, RRID: SCR_002037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Simple Neurite Tracer</td>
+      <td>Fiji</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish transgenics and mutants
 
 Tg(scx:mCherry) transgenics were generated by injecting a BAC construct (CH211-251g8) containing mCherry ORF inserted in frame after the start codon of the scxa gene (McGurk et al., 2017). A new mutant allele of cacnb1 was identified in a forward genetic screen and outcrossed with Tg(scxa:mCherry) to create a cacnb1;Tg(scxa:mCherry) line. All embryos were raised in embryo medium at 28.5°C (Westerfield, 2007), and staged as described previously (Kimmel et al., 1995). Craniofacial muscles and cartilages were labeled as described previously (Schilling and Kimmel, 1997). Adult fish and embryos were collected and processed in accordance with approved UCI-IACUC guidelines.
 
-## mRNA injections and drug treatments
+### mRNA injections and drug treatments
 
 A Pmtb-t7-alpha-bungarotoxin (αBtx) vector (Megason lab, Addgene, 69542) was used to synthesize αBtx mRNA following a previously published protocol and injected into Tg(scx:mCherry) embryos at the 1–2 cell stage (Subramanian and Schilling, 2014; Swinburne et al., 2015). A pIRESneo-EGFP-alpha Tubulin plasmid (Wadsworth lab, Addgene, 12298) was used to synthesize EGFP-α Tubulin mRNA following a previously published protocol and injected into Tg(scx:mCherry) embryos at the 1–2 cell stage (Rusan et al., 2001; Subramanian and Schilling, 2014).
 
@@ -112,26 +455,96 @@ A stock solution of 50 mM SB431542 (Tocris 1614, SID: 241182574)), a selective i
 
 A stock solution of 33 mM Nocodazole (Sigma M1404, SID: 336851328), an inhibitor of tubulin polymerization, was prepared in DMSO and diluted to a final working concentration of 0.33 mM in embryo medium. Embryos were incubated in 0.33 mM Nocodazole for 12 hr at 28.5°C. Treated embryos were either mounted for live imaging or fixed for immunostaining.
 
-## RT-PCR
+### RT-PCR
 
 Whole embryo RNA was extracted from control and paralyzed embryos collected at 48 hpf according to standard protocols using Trizol (Invitrogen 15596018) and Direct-zol RNA MinipPrep kits (Zymo Research R2061). RNA concentration was normalized between samples and used as a template for cDNA synthesis. cDNA was synthesized with oligodT primers using the standard protocol of ProtoScript II First Strand cDNA Synthesis Kit (NEB E6560). The synthesized cDNA was diluted to 1:20 and used as a template for RT-PCR using the protocol for the Luna Universal qPCR master mix (NEB M3003S). The primers used for RT-PCR are listed in Table 1. The reaction was run on a LightCycler 480 II Real time-PCR Instrument (Roche) and analyzed using LightCycler 480 Software. Each qPCR experiment was designed with triplicates of reactions for every biological sample and two biological samples were used for each analysis (Subramanian and Schilling, 2014).
 
-## ddPCR
+**Table 1.**
+ List of primer sequences used for RT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Gene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rpl13a-fp-qpcr</td>
+      <td>TCTGGAGGACTGTAAGAGGTATGC</td>
+      <td rowspan="2">ribosomal protein L13a</td>
+    </tr>
+    <tr>
+      <td>rpl13a-rp-qpcr</td>
+      <td>AGACGCACAATCTTGAGAGCAG</td>
+    </tr>
+    <tr>
+      <td>rps13-fp-qpcr</td>
+      <td>ATAGGCGAAGTGTCCCCACA</td>
+      <td rowspan="2">ribosomal protein S13</td>
+    </tr>
+    <tr>
+      <td>rps13-fp-qpcr</td>
+      <td>CAGTGACGAAACGCACCTGA</td>
+    </tr>
+    <tr>
+      <td>scxa-fp-qpcr</td>
+      <td>GGAGAACTCGCAGCCCAAA</td>
+      <td rowspan="2">scleraxis A</td>
+    </tr>
+    <tr>
+      <td>scxa-rp-qpcr</td>
+      <td>AATCCCTTCACGTCGTGGTTT</td>
+    </tr>
+    <tr>
+      <td>tsp4b-fp-qpcr</td>
+      <td>ACAATCCACGAGACAACAGC</td>
+      <td rowspan="2">thrombospondin 4b</td>
+    </tr>
+    <tr>
+      <td>tsp4b-rp-qpcr</td>
+      <td>GCACTCATCCTGCCATCTCT</td>
+    </tr>
+    <tr>
+      <td>ctgfa-fp-qpcr</td>
+      <td>CTTTACTGTGACTACGGCTCC</td>
+      <td rowspan="2">connective tissue growth factor a</td>
+    </tr>
+    <tr>
+      <td>ctgfa-rp-qpcr</td>
+      <td>ACAACTGCTCTGGAAAGACTC</td>
+    </tr>
+    <tr>
+      <td>tgfbip-fp-qpcr</td>
+      <td>CCCCAATGTTTGTGCTATGC</td>
+      <td rowspan="2">tgfβ induced peptide</td>
+    </tr>
+    <tr>
+      <td>tgfbip-rp-qpcr</td>
+      <td>CTCCAATCACCTTCTCATATCCAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### ddPCR
 
 cDNA was prepared from whole embryo RNA using the standard protocol of ProtoScript II First Strand cDNA Synthesis Kit (NEB E6560). The cDNA concentration was determined following standard protocol and reagents from the Qubit SSDNA assay kit (Invitrogen Q10212) and fluorescence was read on a Qubit 2.0 fluorometer (Invitrogen Q32866). A total concentration of 1 ng was used from each sample to prepare 20 ml of ddPCR reaction following the instructions and reagents from QX200 EvaGreen ddPCR Supermix (Bio-Rad 186–4033).Primers for the PCR are listed in Table 1. The droplets were generated using QX200 Droplet Generation Oil for EvaGreen (Bio-Rad 1864005) on a QX200 Droplet Generator (Bio-Rad 1864002). The PCR reaction was run on a standard thermocycler under standard cycling conditions. Following the PCR the droplets were analyzed using QX200 Droplet Reader (Bio-Rad 1864003). The data were analyzed using QuantaSoft Analysis Pro Software.
 
-## Muscle stimulation
+### Muscle stimulation
 
 Electrical stimulation was used to induce muscle contraction, as previously described (Subramanian and Schilling, 2014). Both αBtx injected and control embryos or larvae were anaesthetized with Tricaine (ethyl 3-aminobenzoate methanesulfonate, Sigma A5040, SID: 329770864), placed on a silicone plate in embryo medium and stimulated for 2 min at 20V, 6 msec duration, 4 pulses/sec frequency and 6 msec delay between successive pulses. With these settings neither control nor paralyzed embryos showed any muscle detachment. Embryos were allowed to recover in embryo medium for 12 hr and further processed for immunostaining or RT-PCR.
 
-## Whole embryo immunohistochemistry
+### Whole embryo immunohistochemistry
 
 All embryos used for immunofluorescence experiments were fixed in 4% neutral pH buffered paraformaldehyde (PFA) for 2 hr at room temperature (25°C) or overnight at 4°C. The embryos were washed with 1X Phosphate Buffered Saline (PBS, CID: 24978514) and permeabilized with cold acetone (Fisher Scientific A94, SID: 349996362) for 15 min at −20°C. Following permeabilization, they were rehydrated in PBDT (PBS with 2% DMSO and 1% Triton X-100 (Sigma T9284)) and processed according to a standard antibody staining protocol. Primary antibodies used: rabbit anti-Tsp4b (1:500)(RRID: AB_2725793), mouse anti-myosin heavy chain (MHC) (Developmental Hybridoma - 1:250, A1025, RRID: AB_528356), chicken anti-GFP (Abcam – 1:1000, ab13970, RRID: AB_300798), rat monoclonal anti-mCherry (Molecular Probes −1:500, M11217, RRID: AB_2536611), rabbit anti-Laminin (Abcam – 1:200, ab11575, RRID: AB_298179), rabbit anti-Fibronectin (Abcam – 1:200, ab2413, RRID: AB_2262874 and rabbit anti-pSMAD3 (Antibodies-online – 1:500, ABIN1043888, RRID: AB_2725792). DiAmino PhenylIndole (DAPI) (Invitrogen – 1:1000, D1306, RRID: AB_2629482) was used to mark cell nuclei. Preabsorbed secondary antibodies were all obtained from Jackson ImmunoResearch and used for indirect immunofluorescence at 1:1000, including: Alexa Fluor 488 conjugated donkey anti-mouse IgG (715-546-150, RRID: AB_2340849), DyLight 549 conjugated donkey anti-rabbit IgG (711-506-152, RRID: AB_2616595), Alexa Fluor 488 conjugated donkey anti-rabbit IgG (711-545-152, RRID: AB_231358), Cy5 conjugated Goat anti-mouse IgG (115-176-071), Alexa Fluor 594 conjugated donkey anti-rat IgG (712-586-153, RRID: AB_2340691), and Alexa Fluor 488 conjugated donkey anti-chicken IgY (703-486-155). After staining, embryos were mounted in 1% low melt agarose in PBS and imaged.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Embryos processed for fluorescent immunohistochemistry were imaged using a Nikon A1 confocal system with an Nikon Eclipse Ti inverted microscope using a CFI Plan Apochromat VC 60XC (water immersion) objective. Confocal stacks were analyzed using Image J software. The depth-coded 3D reconstructions were created using Nikon software (NIS-Elements AR 4.60.00 64-bit). To better visualize tenocyte projections along the Z-axis, the 3D reconstructed image was rotated to about 45o. The length of projections was measured using the Neurite Tracer plugin on Image J.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample size and number of data points required for each experiment were determined using a power analysis calculator (www.powerandsamplesize.com). The embryos were collected from a single tank of fish and processed for injection and downstream stimulation together to minimize variation introduced during handling. Fixation and staining of embryos were also performed together for all samples in a given experiment. Imaging of embryos within each experiment was performed with identical parameters. In order to control for variation in position of tenocyte cell bodies and antibody penetrance variation, projection length, fluorescence intensity of ECM proteins and pSMAD3 were always measured in the ventral half of the VMS in somites 16–19. In experiments where a normal distribution was not present, we analysed the significance using a Wilcoxon Rank Sum test. In datasets involving two samples of unequal variance, a t-test was used. In experiments with more than two experimental conditions, an ANOVA single-factor analysis was performed with posthoc multiple comparisons using Tukey method on R. Data were also quantified and analyzed separately by two of the authors to account for user bias and they obtained similar results. Fluorescence Intensity (FI) to quantify protein localization was measured as described previously (Subramanian and Schilling, 2014).

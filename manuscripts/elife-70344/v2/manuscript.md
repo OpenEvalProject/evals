@@ -13,18 +13,18 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-2. https://ror.org/0190ak572 Institute for Systems Genetics, New York University Grossman School of Medicine New York United States
-3. https://ror.org/0464eyp60 Program in Molecular Medicine, University of Massachusetts Medical School Worcester United States
-4. https://ror.org/013ckk937 Department of Cell and Molecular Biology, University of Rhode Island Kingston United States
-5. https://ror.org/01yc7t268 Center for Science and Engineering of Living Systems (CSELS), Washington University in St. Louis St Louis United States
-6. https://ror.org/01yc7t268 Department of Biochemistry and Molecular Biophysics, Washington University School of Medicine St. Louis United States
+1. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Institute for Systems Genetics, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Program in Molecular Medicine, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Department of Cell and Molecular Biology, University of Rhode Island Kingston United States ([ROR:013ckk937](https://ror.org/013ckk937))
+5. Center for Science and Engineering of Living Systems (CSELS), Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+6. Department of Biochemistry and Molecular Biophysics, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 
 ## Abstract
 
-It is increasingly appreciated that intracellular pH changes are important biological signals. This motivates the elucidation of molecular mechanisms of pH sensing. We determined that a nucleocytoplasmic pH oscillation was required for the transcriptional response to carbon starvation in Saccharomyces cerevisiae . The SWI/SNF chromatin remodeling complex is a key mediator of this transcriptional response. A glutamine-rich low-complexity domain (QLC) in the SNF5 subunit of this complex, and histidines within this sequence, was required for efficient transcriptional reprogramming. Furthermore, the SNF5 QLC mediated pH-dependent recruitment of SWI/SNF to an acidic transcription factor in a reconstituted nucleosome remodeling assay. Simulations showed that protonation of histidines within the SNF5 QLC leads to conformational expansion, providing a potential biophysical mechanism for regulation of these interactions. Together, our results indicate that pH changes are a second messenger for transcriptional reprogramming during carbon starvation and that the SNF5 QLC acts as a pH sensor.
+It is increasingly appreciated that intracellular pH changes are important biological signals. This motivates the elucidation of molecular mechanisms of pH sensing. We determined that a nucleocytoplasmic pH oscillation was required for the transcriptional response to carbon starvation in Saccharomyces cerevisiae. The SWI/SNF chromatin remodeling complex is a key mediator of this transcriptional response. A glutamine-rich low-complexity domain (QLC) in the SNF5 subunit of this complex, and histidines within this sequence, was required for efficient transcriptional reprogramming. Furthermore, the SNF5 QLC mediated pH-dependent recruitment of SWI/SNF to an acidic transcription factor in a reconstituted nucleosome remodeling assay. Simulations showed that protonation of histidines within the SNF5 QLC leads to conformational expansion, providing a potential biophysical mechanism for regulation of these interactions. Together, our results indicate that pH changes are a second messenger for transcriptional reprogramming during carbon starvation and that the SNF5 QLC acts as a pH sensor.
 
 ## Introduction
 
@@ -40,9 +40,49 @@ In this study, we elucidate SNF5 as a pH-sensing regulatory subunit of SWI/SNF. 
 
 ## Results
 
-## Induction of ADH2 upon glucose starvation requires the SNF5 glutamine-rich low-complexity sequence with native histidines
+### Induction of ADH2 upon glucose starvation requires the SNF5 glutamine-rich low-complexity sequence with native histidines
 
 The SWI/SNF chromatin remodeling complex subunit SNF5 has a large low-complexity region at its N-terminus that is enriched for glutamine, the sequence of which is shown in Figure 1A. This sequence contains seven histidine residues, and we noticed a frequent co-occurrence of histidines within and adjacent to glutamine-rich low-complexity sequences (QLCs) of many proteins. Inspection of the sequence properties of proteins, especially through the lens of evolution, can provide hints as to functionally important features. Therefore, we analyzed the sequence properties of all glutamine-rich low-complexity sequences (QLCs) in the proteomes of several species.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sequence of the N-terminal low-complexity domain of SNF5. This domain was deleted in the ΔQsnf5 strain. The glutamine-rich domain is highlighted in orange. The 4/7 histidines that were mutated to alanine in the HtoASNF5 allele are highlighted in red. (B) The log2 of the frequency of each amino acid within QLCs divided by the global frequency of each amino acid in the proteome (S. cerevisiae). Values > 0 indicate enrichment in QLCs. (C) Left: schematic of the SWI/SNF complex engaged with a nucleosome. The SNF5 C-terminus is shown in gray, while the disordered N-terminal QLC is shown in orange. Right: schematic of the three main SNF5 alleles used in this study. (D) RT-qPCR results assessing levels of endogenous ADH2 mRNA in four strains grown in glucose (left) or after 4 hr of glucose starvation (right). Note: y-axes are different for each plot. (E) Representative histograms (10,000 cells) showing the fluorescent signal from a PADH2-mCherry reporter gene for four strains grown in glucose (left) or after 6 hr of glucose starvation (right). Statistical tests are Bonferroni-corrected t-tests, *p<0.05, **p<0.01, n.s., not significant.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Fractional disorder in each of the core 11 SWI/SNF components. Dashed red lines represent 25% and 50% disorder. 5 of the 11 components contain over 25% disorders. Disorder prediction performed using metapredict (see Materials and methods).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Example of a QLC region with the criteria that define QLCs annotated: QLCs were defined as subregions of the proteome in which they have an average fraction of glutamine residues of 25% or higher (minimum fraction, e.g., here 40%), the maximum interruption between any two glutamine residues is less than 17 residues (e.g., here 11 residues), and the whole QLC is at least 15 residues in length (minimum length, e.g., here 46). (B–D) Computational analysis used to select the interruption length criterion for QLC identification. Systematic variation revealed that a maximum interruption disruption length of 17 residues optimized the number of QLCs identified (B) and the number of residues found within QLCs (C), offering an optimally permissive value under the 0.25 or greater fraction of glutamine threshold. (D) Number of residues in QLCs vs. number of QLCs shows that an interruption length of 17 sits at an optimum for both parameters. (E) Histogram of the number of histidine residues within S. cerevisiae QLCs (n = 144). (F) Most QLCs contain relatively few histidine, but a small fraction contain five or more.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Amino acid frequencies within glutamine-rich low-complexity sequences (QLCs) in S. cerevisiae (yeast), Dictyostelium discoides, Drosophila melanogaster, and humans. (A) Enrichment of each amino acid in QLCs compared to global amino acid frequencies in each proteome. (B) Enrichment of each amino acid in QLCs compared to amino acid frequencies in all low-complexity sequences identified using Wootton–Federhen complexity (see Materials and methods).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Analysis of SNF5 N-terminal region showing conservation (black), disorder (red), glutamine positions (green), histidine positions (blue), histidines that are mutated (orange), and the QLC (shaded green area). Four histidine residues are highlighted, which, when mutated to alanine, lead to a phenotypic change. Intriguingly, these four histidines are located in highly disordered and poorly conserved subregions of the SNF5 N-terminal region. (B) The same analysis for 19 ascomycetes. (C) Phylogeny of ascomycetes analyzed above, with the total number of QLCs identified in each proteome shown to the right.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Broad orthologs of SNF5 were determined using the more conserved C-terminal domain. These orthologs were analyzed, and if QLCs were detected, the number of residues within is plotted in the bar graph to the right. The Ascomycota and Basidiomycota both have QLCs, possibly indicating gain of the domain in this lineage. There is no evidence of SNF5 QLCs in the Metazoa (animals) or in the closest outgroup to the Metazoa (Choanoflagellates, i.e., Monosiga brevicollis). The slime mold amoeba Dictyostelium discoideum has an SNF5 QLC, but this organism is extremely rich in glutamine repeats, and it is not clear that this QLC has the same origin as the fungal clade.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Growth rate was assessed in a plate reader in various conditions. (A) Comparison of growth rate of WT, ΔQsnf5, HtoAsnf5, and snf5Δ strains in synthetic complete media with glucose. (B) Cells were grown to log phase, carbon-starved for 24 hr, and then grown in 2% glucose. (C, D) Cells were immediately switched from glucose to poor carbon sources. (E, F) Cells were subjected to acute starvation for 24 hr and then switched to poor carbon sources.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) The entire SWI/SNF complex copurifies with SNF2 in all strains and conditions. The endogenous SNF2 gene was tandem affinity purification (TAP)-tagged at the C-terminus and used to immunoprecipitate the SWI/SNF complex from WT, ΔQsnf5, or HtoAsnf5 strains either exponentially growing in glucose or after 4 hr acute carbon starvation in media titrated to pHe 5 or 7.4 (indicated at bottom). A silver stain of an SDS-PAGE analysis is shown. (B) Neither SNF5 nor its mutant alleles are degraded upon glucose starvation. Western blots of the TAP-tagged SNF5 alleles in various conditions (indicated at bottom). TAP-tagged ΔQ-snf5 runs at ~110 kDa, 288 amino acids smaller than WT (~160 kDa). An anti-glucokinase antibody was used as a loading control (bottom band at ~50 kDa).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** The endogenous SNF2 gene was tandem affinity purification (TAP)-tagged at the C-terminus and used to immunoprecipitate the SWI/SNF complex from WT, ΔQsnf5, or HtoAsnf5 strains. Prior to immunoprecipitation, chromatin and proteins were crosslinked with formaldehyde, enabling co-purification of chromatin associated with the SWI/SNF complex (chromatin immunoprecipitation [ChIP]). Quantitative polymerase chain reaction (qPCR) was then performed with primers specific to the ADH2 promoter. The y-axis shows the difference in qPCR signal in strains grown in glucose minus the signal after 4 hr of acute carbon starvation. Values greater than 1 indicate recruitment of SWI/SNF to the ADH2 promoter upon carbon starvation. Experiments were performed in media titrated to pHe 5 or 7.4 (indicated on the x-axis). n = 3, standard deviation is shown.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Schematic of the PADH2-mCherry reporter gene: the reporter construct was integrated into the endogenous ADH2 locus, resulting in a tandem repeat of the reporter gene followed and an intact ADH2 gene. (B) Sequence of the SNF5 N-terminus with the 4/7 histidines that were mutated in the 4HtoAsnf5 allele highlighted as red on yellow, and the additional two histidines that were mutated in the 6HtoAsnf5 allele highlighted as purple on yellow. (C) PADH2-mCherry induction during carbon starvation assessed by fluorescence cytometry, normalized to the maximal induction (median mCherry fluorescence at 24 hr in SNF5 WT strains). (D) The fraction of the cells that induce PADH2-mCherry induction at each time point during carbon starvation (see Materials and methods). The SNF5 alleles compared are WT, ΔQsnf5, 4HtoAsnf5 (referred to in the rest of the article as simply HtoAsnf5), and the 6HtoAsnf5 strains with an additional two histidines (6/7 total) mutated to alanine. There is no significant difference between the 4HtoAsnf5 and 6HtoAsnf5 strains in these experiments. Mean and standard deviation are shown in each plot.
 
 We defined QLCs as protein subsequences with a minimum of 25% glutamine residues, a maximum interruption between any two glutamine residues of 17 residues, and a minimum overall length of 15 residues. These parameters were optimized empirically based on the features of glutamine-rich regions in the S. cerevisiae proteme (see Materials and methods and Figure 1—figure supplement 2). By these criteria, the S288c S. cerevisiae strain had 144 QLCs (Supplementary file 1). We found that proline and histidine were enriched (>50–100%-fold higher than average proteome abundance) in yeast QLCs (Figure 1B), with similar patterns found in Dictyostelium discoideum, and Drosophila melanogaster proteomes (Figure 1—figure supplement 3). Enrichment for histidine within QLCs was previously described across many Eukaryotes using a slightly different method (Ramazzotti et al., 2012). Interestingly, the codons for glutamine are a single base pair mutation away from proline and histidine. However, they are similarly adjacent to lysine, arginine, glutamate, and leucine, yet QLCs are depleted for lysine, arginine, and glutamate, suggesting that the structure of the genetic code is insufficient to explain the observed patterns of amino acids within QLCs. We also considered the possibility that histidines might be generally enriched in low-complexity sequences. In fact, this is not the case: histidines are 50% more abundant in yeast QLCs than in all other low-complexity sequences identified using Wootton–Federhen complexity (see Materials and methods). Thus, histidines are a salient feature of QLCs.
 
@@ -58,25 +98,69 @@ Next, we assayed transcription of the ADH2 gene using reverse transcriptase quan
 
 The RT-qPCR and ChIP assays report on the average behavior of a population. To enable single-cell analysis, we engineered a reporter strain with the mCherry (Shaner et al., 2004) fluorescent protein under the control of the ADH2 promoter integrated into the genome immediately upstream of the endogenous ADH2 locus (Figure 1E, Figure 1—figure supplement 9A). We found high cell-to-cell variation in the expression of this reporter in WT strains: after 6 hr of glucose starvation, PADH2-mCherry expression was bimodal; about half of the cells had high mCherry fluorescence and half were low. This bimodality was strongly dependent on preculture conditions and was most apparent upon acute withdrawal of carbon from early log-phase cells that had grown for >16 hr with optical density at 600 nm (O.D.) never exceeding 0.3 (see Materials and methods). If cells became partly saturated at any time during preculture, ADH2 induction was more rapid and uniform. Complete deletion of SNF5 eliminated this bimodal expression pattern; again, low levels of expression were apparent in glucose and induction during starvation was attenuated. As in the RT-qPCR analysis, the ΔQsnf5 strain completely failed to induce the PADH2-mCherry reporter at this time point and mutation of four central histidines to alanine was sufficient to mostly abrogate expression (Figure 1E). Mutation of a further two histidines had little additional effect (Figure 1—figure supplement 9B–D). Taken together, these results suggest that the dual function of SNF5 leads to switch-like control of ADH2 expression. In glucose, SNF5 helps repress ADH2. Upon carbon starvation, SNF5 is required for efficient induction of ADH2. The SNF5 QLC and histidine residues within seem to be crucial for switching between these states.
 
-## The SNF5 QLC is required for ADH2 expression and recovery of neutral pH
+### The SNF5 QLC is required for ADH2 expression and recovery of neutral pH
 
 Multiple stresses, including glucose starvation, have been shown to cause a decrease in the pH of the cytoplasm and nucleus (nucleocytoplasm) (Dechant et al., 2014; Gores et al., 1989; Triandafillou et al., 2020; Yao and Haddad, 2004). Here, we refer to nucleocytoplasmic pH as intracellular pH (pHi). To investigate the relationship between ADH2 expression and pHi, and how these factors depend upon SNF5, we engineered strains bearing both the ratiometric fluorescent pH reporter, pHluorin (Miesenböck et al., 1998), and the PADH2-mCherry reporter. To calibrate the pHluorin sensor, we calculated the ratio of intensities of fluorescence emission after excitation with 405 and 488 nm light in cells that were ATP-depleted and permeabilized in media of known pH. We obtained a near linear relationship between ratios of fluorescence intensity and pH (Figure 2—figure supplement 1, Materials and methods). Therefore, these strains allowed us to simultaneously monitor pHi and expression of ADH2.
 
 Wild-type cells growing exponentially in 2% glucose had a pHi of ~7.8. Upon acute carbon starvation, cells rapidly acidified to pHi ~ 6.5. Then, during the first hour, two populations arose: an acidic population (pHi ~ 5.5), and a second population that recovered to pHi ~ 7 (Figure 2A). Cells at pHi 7 proceeded to strongly induce expression of the PADH2-mCherry reporter, while cells at pHi 5.5 did not. We used fluorescence-activated cell sorting (FACS) to separate these two populations and found that cells that neither recovered neutral pH nor expressed the PADH2-mCherry reporter had lower fitness relative to the PADH2-mCherry-inducing population, as indicated by lower rates of proliferation on both rich and poor carbon sources, and lower tolerance of heat stress (Figure 2—figure supplement 2). After 8 hr of glucose starvation, >70% of wild-type cells had induced ADH2 (Figure 2A and C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative flow cytometry for WT, ΔQsnf5, or HtoAsnf5 strains: the x-axis shows nucleocytoplasmic pH (pHi), while the y-axis shows fluorescence from the PADH2-mCherry reporter. Panels show cells grown in glucose (top) and then (second to bottom) after 0–8 hr of acute glucose starvation. Percentage of cells in each quadrant is indicated by gray numbers. (B) Schematic of quantification scheme: raw data from (A) was fit to a single or double Gaussian curve determined by a least-residuals method. (C) Quantification of pHi and PADH2-mCherry expression during acute starvation. The median of each Gaussian for pHi is plotted in (C, top), black and gray lines are from induced and uninduced populations, respectively. The height of bars in (C, bottom) indicates the fraction of maximal PADH2-mCherry reporter gene expression (WT cells, 8 hr glucose starvation) The darkness of the bars indicates the fraction of the population in the induced versus uninduced state. Mean and standard deviation of three biological replicates are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Representative calibration curves to determine the ratio of fluorescence intensities at 405 and 488 nm in cells adjusted to a known pH by ATP depletion and permeabilization in buffers. The fluorescence properties of WT and mutant strains were slightly different; therefore, calibration curves were calculated for each strain: (A) WT, (B) ΔQsnf5, and (C)HtoAsnf5. (D) Shows representative scatterplots of fluorescence intensity obtained by cytometry from the WT strain.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** 6 hr after acute carbon starvation, we used fluorescence-activated cell sorting (FACS) to separate equal numbers of cells with high (induced) and low (uninduced) mCherry fluorescence. (A, B) Uninduced cells (dashed lines) have lower growth rates than induced cells (solid lines). Black lines indicate WT strains, orange indicates ΔQsnf5 cells. (A) Comparison of growth rates in rich (2% glucose) media. (B) Comparison of growth rates in poor (2% galactose) media. (C) Uninduced cells have lower resistance to heat stress. Cells were subjected to heat shock for 15 min at 42°C followed by 3 min on ice, and then plated for single colonies. The number of colonies relative to unperturbed cells is plotted as % viability. Mean and standard deviation are shown, n = 3; statistical test is the Student’s t-test, **p<0.01.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Cytometry data showing PADH2-mCherry induction either in glucose (light gray peaks to left) or after 24 hr of carbon starvation (dark lines, and color coded by strain).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Cytometry data showing PADH2-mCherry induction (y-axis) and nucleocytoplasmic pH (pHi), calculated using the ratiometric pHluorin probe (x-axis), in WT (left) and snf5∆ (right) strains. Percentage of cells in each of the four quadrants is indicated.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Cytometry data showing nucleocytoplasmic pH (pHi), calculated using the ratiometric pHluorin probe. (B) Quantification of pHi data (see Materials and methods), orange and gray lines are from induced and uninduced populations, respectively. Mean and standard deviation of three biological replicates are plotted. Cells were switched to acute carbon starvation media titrated to the optimal pHe of 5.5 at time 0, but the right panels show cells additionally exposed to the translational inhibitor cycloheximide. Intracellular pH fails to recover without new protein translation.
+
 We next analyzed cells harboring mutant alleles of the QLC of SNF5. Similarly to WT, both ΔQsnf5 and HtoAsnf5 strains rapidly acidified upon carbon starvation. However, these strains were defective in subsequent neutralization of pHi and in the expression of PADH2-mCherry. At the 4 hr time point, >95% of both ΔQsnf5 and HtoAsnf5 cells remained acidic with no detectable expression, while >60% of wild-type cells had neutralized and expressed mCherry (Figure 2A and C). Eventually, after 24 hr, the majority of mutant cells neutralized to pHi ~7 and induced expression of PADH2-mCherry (Figure 2—figure supplement 3). Again, complete deletion of SNF5 led to less severe phenotypes than the ΔQsnf5 and HtoAsnf5 alleles with only a modest delay in PADH2-mCherry expression (Figure 2—figure supplement 4), suggesting that SNF5 plays both activating and inhibitory roles in ADH2 expression. Thus, the SNF5 QLC and histidines within are required for the rapid dynamics of both transient acidification and transcriptional induction of PADH2-mCherry upon acute carbon starvation.
 
 We hypothesized that mutant cells might fail to recover from acidification because transcripts controlled by SWI/SNF are responsible for pHi recovery. In this model, SWI/SNF drives expression of a set of genes that must be both transcribed and translated. To test this idea, we measured pHi in WT cells during carbon starvation in the presence of the cyclohexamine to prevent translation of new transcripts. In these conditions, we found that cells experienced a drop in pHi but were unable to recover neutral pH (Figure 2—figure supplement 5). Thus, new gene expression is required for recovery of pHi.
 
-## Transient acidification is required for ADH2 induction upon carbon starvation
+### Transient acidification is required for ADH2 induction upon carbon starvation
 
 The acidification of the yeast nucleocytoplasm has been shown to depend upon an acidic extracellular pH (pHe). We took advantage of this fact to manipulate the changes in pHi that occur upon carbon starvation. Cell viability was strongly dependent on pHe, decreasing drastically when cells were starved for glucose in media at pH ≥ 7.0 for 24 hr (Figure 3—figure supplement 1). Expression of PADH2-mCherry expression was also highly dependent on pHe, especially in SNF5 QLC mutants (Figure 3A, Figure 3—figure supplement 2). WT cells failed to induce PADH2-mCherry at pHe ≥ 7, but induced strongly at pHe ≤ 6.5. RT-qPCR showed similar behavior for the endogenous ADH2 transcript (Figure 3—figure supplement 3). ChIP experiments indicated that recruitment of SWI/SNF to the ADH2 promoter was also reduced when starvation was performed with media buffered to pHe 7.5 (Figure 1—figure supplement 7). Furthermore, we found that the nucleocytoplasm of all strains failed to acidify when the environment was held at pHe ≥ 7 (Figure 3—figure supplement 4). Therefore, we conclude that an acidic extracellular environment is required for a decrease in intracellular pH upon carbon starvation, and that this intracellular acidification is required for activation of ADH2 transcription.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig3-v2.jpg)
+
+**Figure 3.:** (A) Expression of PADH2-mCherry reporter gene in WT, ΔQsnf5, or HtoAsnf5 strains 8 hr after acute carbon starvation in media titrated to various pH (pHe, see legend, right). Bar height indicates the fraction of maximal PADH2-mCherry reporter gene expression (WT cells, pHe 5.5). The darkness of the bars indicates the fraction of the population in the induced versus uninduced state (see legend, right). (B) Time courses of glucose starvation with media manipulations to perturb the intracellular pH response, either by changing media pH (pHe) or by adding sorbic acid. Top panels show nucleocytoplasmic pH (pHi), black and gray lines from induced and uninduced populations, respectively. Bottom panels quantify expression of the PADH2-mCherry reporter gene (as in A). All strains are WT except for the far-right panels, which are from a ΔQsnf5 strain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were grown to log phase and then subjected to acute carbon starvation in media titrated to various pHe values (see legend). After 24 hr starvation, cells were plated to determine the number of colony-forming units compared to WT cells starved at pHe 6.5. Mean and standard deviation of three biological replicates are shown. * and ** represent p<0.05 and p<0.01, respectively, from t-tests.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Cytometry data showing expression levels of the PADH2-mCherry reporter from WT, ΔQsnf5, or HtoAsnf5 cells either growing in glucose (Glu), or 6 hr after acute carbon starvation in media titrated to various pHe values (these are representative source data for Figure 3A).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** RT-qPCR data showing ADH2 mRNA levels. The ratio of ADH2 levels in carbon-starved cells to cells growing in glucose is shown. ACT1 was used as an internal control to normalize ADH2 values. WT and ΔQsnf5 strains were carbon-starved in media titrated to pHe of either 6.0 or 7.5. Mean and standard deviation of three biological replicates are shown. * and ** represent p<0.05 and p<0.01, respectively, from t-tests.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Flow cytometry for WT, ΔQsnf5, or HtoAsnf5 strains: the x-axis shows nucleocytoplasmic pH (pHi), while the y-axis shows fluorescence from the PADH2-mCherry reporter. Panels show cells grown in glucose (top) and then (decond to bottom) after 0–8 hr of acute glucose starvation.
 
 Given that intracellular acidification is necessary for ADH2 promoter induction, we next wondered if it was sufficient. First, we used the membrane-permeable sorbic acid to allow intracellular acidification but prevent pHi recovery. These cells failed to induce PADH2-mCherry, indicating that nucleocytoplasmic acidification is not sufficient; subsequent neutralization is also required. Carbon starvation at pHe 7.4 prevented transient acidification and likewise prevented expression (Figure 3B, Figure 3—figure supplement 3). Cells that were first held at pHe 7.4, preventing initial acidification, and then switched to pHe 5, thereby causing late acidification, failed to express mCherry after 6 hr. Finally, starvation at pHe 5 for 2 hr followed by a switch to pHe 7.4, with a corresponding increase in pHi, led to robust PADH2-mCherry expression. Together, these results suggest that transient acidification immediately upon switching to carbon starvation followed by recovery to neutral pHi is the signal for the efficient induction of PADH2-mCherry.
 
 Deletion of the SNF5 QLC leads to both failure to neutralize pHi and loss of ADH2 expression. We therefore wondered if forcing cells to neutralize pHi would rescue ADH2 expression in a ΔQsnf5 strain. This was not the case: the ΔQsnf5 strain still fails to express PADH2-mCherry, even if we recapitulate normal intracellular transient acidification (Figure 3B, right). Therefore, the SNF5 QLC is required for normal kinetics of transient acidification and for additional steps in ADH2 gene activation.
 
-## The SNF5 QLC and acidification of the nucleocytoplasm are required for efficient widespread transcriptional reprogramming upon carbon starvation
+### The SNF5 QLC and acidification of the nucleocytoplasm are required for efficient widespread transcriptional reprogramming upon carbon starvation
 
 We wondered if transient acidification and the QLC of SNF5 were important for transcriptional reprogramming on a genome-wide scale. To test this, we performed Illumina RNA-sequencing analysis on triplicates of each strain (WT, ΔQsnf5, HtoAsnf5) either growing exponentially in glucose or after acute carbon starvation for 4 hr at pHe 5. In addition, to test the pH dependence of the transcriptional response, we analyzed WT strains carbon-starved at pHe 7, which prevents intracellular acidification (Figure 3B, Figure 3—figure supplement 4).
 
@@ -84,7 +168,7 @@ Principal component analysis showed tight clustering of all exponentially growin
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig4-v2.jpg)
 
-**Figure 4.:** SNF5 QLC and acidification of the nucleocytoplasm are required for efficient widespread transcriptional reprogramming upon carbon starvation.(A) Principal component (PC) analysis of three RNA-seq biological replicates for each condition tested. (B) Expression levels of genes that were greater than threefold induced or repressed upon carbon starvation in WT strains are plotted for each SNF5 allele. (C) Volcano plot showing the log2 ratio of expression levels in WT versus ΔQsnf5 strains (x-axis) and p-values for differential expression (y-axis). Genes with significantly different expression are indicated in red (log2 fold change > 1 and Wald test adjusted p-value<0.05). (D) Volcano plot as in (C) but comparing expression levels in  strains to HtoAsnf5ΔQsnf5 strains. (E) Hierarchically clustered heat map showing expression values of 149 genes with a significant change in expression upon starvation of WT cells (log2 fold change > 1 and Wald test adjusted p-value<0.05). Color code indicates gene expression relative to the mean expression of that gene across all strains and conditions, with red indicating high and blue indicating low values (see legend). Three biological replicates are shown for each experiment. Strain and condition identities are indicated at the bottom of each column. Four groups of genes with similar behavior are indicated to the left. Gene Ontology enrichment results for nine clusters of genes are shown to the right.
+**Figure 4.:** (A) Principal component (PC) analysis of three RNA-seq biological replicates for each condition tested. (B) Expression levels of genes that were greater than threefold induced or repressed upon carbon starvation in WT strains are plotted for each SNF5 allele. (C) Volcano plot showing the log2 ratio of expression levels in WT versus ΔQsnf5 strains (x-axis) and p-values for differential expression (y-axis). Genes with significantly different expression are indicated in red (log2 fold change > 1 and Wald test adjusted p-value<0.05). (D) Volcano plot as in (C) but comparing expression levels in HtoAsnf5 strains to ΔQsnf5 strains. (E) Hierarchically clustered heat map showing expression values of 149 genes with a significant change in expression upon starvation of WT cells (log2 fold change > 1 and Wald test adjusted p-value<0.05). Color code indicates gene expression relative to the mean expression of that gene across all strains and conditions, with red indicating high and blue indicating low values (see legend). Three biological replicates are shown for each experiment. Strain and condition identities are indicated at the bottom of each column. Four groups of genes with similar behavior are indicated to the left. Gene Ontology enrichment results for nine clusters of genes are shown to the right.
 
 We next performed hierarchical clustering analysis (Euclidean distance) of the 149 genes that are strongly differentially expressed between strains or at suboptimal pHe 7 (Figure 4E). Based on this clustering and some manual curation, we assigned these genes to four groups. Group 1 genes (n = 42) were activated in starvation in an SNF5 QLC and pH-dependent manner. They are strongly induced in WT, but induction is attenuated both in mutants of the SNF5 QLC and when the transient acidification of pHi was prevented by starving cells in media titrated to pHe 7. Gene Ontology (GO) analysis revealed that these genes are enriched for processes that are adaptive in carbon starvation, for example, fatty acid metabolism and the TCA cycle. Group 2 (n = 64) genes were not strongly induced in WT, but were inappropriately induced during starvation in SNF5 QLC mutants and during starvation at pHe 7. GO analysis revealed that these genes are enriched for stress responses, perhaps because the failure to properly reprogram transcription leads to cellular stress. Group 3 genes (n = 51) were repressed upon carbon starvation in a pH-dependent but SNF5 QLC-independent manner. They were repressed in all strains, but repression failed at pHe 7. Finally, group 4 genes (n = 16) were repressed in WT cells in a pH-independent manner, but failed to repress in SNF5 QLC mutants.
 
@@ -92,15 +176,35 @@ We performed an analysis for the enrichment of transcription factors within the 
 
 In conclusion, both pH changes and the SNF5 QLC are required for correct transcriptional reprogramming upon carbon starvation, but the dependencies are nuanced. Mutation of the SNF5 QLC or prevention of nucleocytoplasmic acidification appears to trigger a stress response (group 2 genes). Another set of genes requires pH change for their repression upon starvation, but this pH sensing is independent of SNF5 (group 3). A small set of genes requires the SNF5 QLC but not pH change for repression upon starvation (group 4). Finally, a set of genes, including many of the traditionally defined ‘glucose-repressed genes,’ require both the SNF5 QLC and a pH change for their induction upon carbon starvation (group 1). For these genes, point mutation of four histidines in the QLC is almost as perturbative as complete deletion of the QLC. We propose that the SNF5 QLC senses the transient acidification that occurs upon carbon starvation to elicit transcriptional activation of this gene set. It is striking that this set is enriched for genes involved in catabolism, TCA cycle, and metabolism, given that these processes are important for energetic adaptation to acute glucose starvation.
 
-## The SNF5 QLC mediates a pH-sensitive transcription factor interaction in vitro
+### The SNF5 QLC mediates a pH-sensitive transcription factor interaction in vitro
 
 We reasoned that pHi changes could affect the intrinsic nucleosome remodeling activity of SWI/SNF or alternatively might impact the interactions of SWI/SNF with transcription factors. Indeed, recent structural evidence (He et al., 2021) shows that the QLCs of not only SNF5 but also several other SWI/SNF subunits appear to be poised for interaction with transcription factors on DNA immediately downstream of the nucleosome (Figure 5—figure supplement 1). We used a fluorescence-based strategy in vitro to investigate these potential pH-sensing mechanisms. A center-positioned, recombinant mononucleosome was assembled on a 200 bp DNA fragment containing a ‘601’ nucleosome positioning sequence (Dechassa et al., 2008; Figure 5A). The nucleosomal substrate contained two binding sites for the Gal4 activator located upstream and 68 base pairs of linker DNA downstream of the nucleosome. The mononucleosome contained a Cy3 fluorophore covalently attached to the distal end of the template DNA, and Cy5 was attached to the H2A C-terminal domain. The Cy3 and Cy5 fluorophores can function as a Förster resonance energy transfer (FRET) pair only when the Cy3 donor and Cy5 acceptor are within an appropriate distance (see also Li and Widom, 2004). In the absence of SWI/SNF activity, the center-positioned nucleosome has a low FRET signal, but ATP-dependent mobilization of the nucleosome toward the distal DNA end leads to an increase in FRET (Brune et al., 1994; Luger et al., 1999; Sen et al., 2017; Smith and Peterson, 2005; Zhou and Narlikar, 2016; Figure 5). In the absence of competitor DNA, SWI/SNF does not require an interaction with a transcription factor to be recruited to the mononucleosome and thus intrinsic nucleosome remodeling activity can be assessed independently of recruitment. In this assay, SWI/SNF complexes containing either ΔQsnf5p or HtoAsnf5 retained full nucleosome remodeling activity (Figure 5B–D), as well as full DNA-stimulated ATPase activity (Figure 5—figure supplement 2). Furthermore, these activities were similar at pH 6.5, 7, or 7.6. Thus, we conclude that the SNF5 QLC does not sense pH by modifying its intrinsic ATPase and nucleosome remodeling activity, at least in this in vitro context.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic: a Cy3 donor fluorophore was attached to one end of the DNA, and the histone H2A C-termini were labeled with a Cy5 acceptor fluorophore. ATP-dependent mobilization of the nucleosome to the DNA increases Förster resonance energy transfer (FRET), leading to increased emission at 670 nm. (B) Representative kinetic traces for WT (B), ΔQsnf5p (C), and HtoAsnf5 (D) SWI/SNF complexes at pH 7.6 (blue), 7.0 (green), or 6.5 (orange). There is no competitor DNA, so these traces indicate intrinsic remodeling activity without requirement for recruitment by transcription factors. (E) Schematic: in the presence of excess competitor DNA, SWI/SNF-dependent remodeling requires recruitment by a transcription factor (Gal4-VP16). (D) Representative kinetic traces for WT (F), ΔQsnf5p (G), and HtoAsnf5 (H) SWI/SNF complexes at pH 7.6 (blue), 7.0 (green), or 6.5 (orange). Inset on the WT panel (F) shows the first 100 s of the assay after ATP addition. All traces are averages of 2–4 experiments and represent FRET normalized to values prior to addition of ATP.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Electron microscopy structure of SWI/SNF (gray) bound to a nucleosome (DNA blue, histones green; PDB ID: 7C4J). The position of SNF5 is highlighted in coral. Rough positions of QLCs are depicted in orange, and large low-complexity sequences are shown in cyan. (B) Electron microscopy structure of human BAF complex (gray) bound to a nucleosome (DNA blue, histones green; PDB ID: 6LTJ). The position of ARID1B is highlighted in coral. Rough positions of large low-complexity domains are depicted in cyan, two of which contain short QLCs (indicated in orange). In both cases, top views only highlight sequences that are proximal to the DNA exiting the nucleosome (potential transcription-factor binding site). (C, D) Schematics showing predicted low-complexity sequence (orange), including regions enriched for particular amino acids (gray, or green for QLCs). (C) shows SWI/SNF subunits and (D) shows BAF subunits. Orthology between SWI/SNF and BAF subunits is indicated by gray double-headed arrows.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative trace of ATPase activity for WT and ΔQsnf5 mutant SWI/SNF complexes in response to varied environmental pH. WT and mutant complexes do not show significant changes in ATPase activity (as assessed by inorganic phosphate release, see Materials and methods). (B) Representative kinetic trace for wild-type SWI/SNF under recruitment conditions after addition of AMP-PNP (a non-hydrolyzable ATP analogue).
+
 Next, we assessed if the SNF5 QLC and pH changes could affect SWI/SNF interactions with transcription factors. SWI/SNF remodeling activity can be targeted to nucleosomes in vitro by Gal4 derivatives that contain acidic activation domains, an archetypal example of which is VP16 (Yudkovsky et al., 1999). Indeed, it was previously demonstrated that the QLC of Snf5p mediates interaction with the Gal4-VP16 transcription factor (Prochasson et al., 2003). To assess recruitment of SWI/SNF, we set up reactions with an excess of nonspecific competitor DNA. In these conditions, there is very little recruitment and remodeling without interaction with a transcription factor bound to the mononucleosome DNA (Figure 5E and F). In this context, we found that the QLC of SNF5 was required for rapid, efficient recruitment of SWI/SNF by the Gal4-VP16 activator, and that the pH of the buffer affected this recruitment (Figure 5F). Within the physiological pH range (6.5–7.6), recruitment and remodeling increased with pH. This behavior might correspond to the recruitment of SWI/SNF to genes that are active at high pHi during growth in glucose. We predict that interactions with transcription factors at glucose-repressed genes would show the opposite behavior, that is, recruitment would be increased at lower pHi. SWI/SNF complexes deleted for the SNF5 QLC (containing ΔQsnf5p) had constitutively lower recruitment and were completely insensitive to pH changes over this same range (Figure 5G). SWI/SNF complexes containing HtoAsnf5p were even more defective that the ΔQsnf5 allele with respect to recruitment to the VP16 transcription factor (Figure 5H); this recruitment was barely above background levels at all pH values. Therefore, we conclude that the SNF5 QLC can sense pH changes by modulating interactions between SWI/SNF and transcription factors. Furthermore, these results suggest that the histidines within the SNF5 QLC must be present and deprotonated to enable interaction with VP16.
 
-## Protonation of histidines leads to conformational expansion of the SNF5 QLC
+### Protonation of histidines leads to conformational expansion of the SNF5 QLC
 
 How might pH change be sensed by SNF5? As described above (Figure 1B), glutamine-rich low-complexity sequences (QLCs) are enriched for histidines, and they are also depleted for charged amino acids (Figure 1B). Charged amino acids have repeatedly been shown to govern the conformational behavior of disordered regions (Mao et al., 2010; Müller-Späth et al., 2010; Sorensen and Kjaergaard, 2019). Given that histidine protonation alters the local charge density of a sequence, we hypothesized that the charge-depleted QLCs may be poised to undergo protonation-dependent changes in conformational behavior. To test this idea, we performed all-atom Monte Carlo simulations to assess the conformational ensemble of a 50 amino acid region of the SNF5 QLC (residues 71–120) that contained three histidines, two of which we had mutated to alanine in our experiments (Figure 6A). We performed simulations with histidines in both uncharged and protonated states to mimic possible charges of this polypeptide at the pH found in the nucleocytoplasm in glucose and carbon starvation, respectively. These simulations generated ensembles of almost 50,000 distinct conformations (representative images shown in Figure 6B). To quantify conformational changes, we examined the radius of gyration, a metric that describes the global dimensions of a disordered region (Figure 6C). Protonation of the wild-type sequence led to a striking increase in the radius of gyration, driven by intramolecular electrostatic repulsions (Figure 6D, left). In contrast, when 2/3 histidines were replaced with alanines, no such change was observed (Figure 6D, right). For context, we also calculated an apparent scaling exponent (νapp), a dimensionless parameter that can also be used to quantify chain dimensions. This analysis showed that protonation of the wild-type sequence led to a change in νapp from 0.48 to 0.55, comparable to the magnitude of changes observed in previous studies of mutations that fundamentally altered intermolecular interactions in other low-complexity disordered regions (Martin et al., 2020; Sorensen and Kjaergaard, 2019). These results suggest that small changes in sequence charge density can elicit a relatively large change in conformational behavior. An analogous (albeit less pronounced) effect was observed for the second QLC subregion that we mutated (residues 195–233) (Figure 6—figure supplement 1). Taken together, our results suggest that charge-depleted disordered regions (such as QLCs) are poised to undergo pH-dependent conformational rearrangement. This inference offers the beginnings of a mechanism for pH sensing by SWI/SNF: the conformational expansion of the QLC sequence upon nucleocytoplasmic acidification may tune the propensity for SWI/SNF to interact with transcription factors (Figure 6E).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of the SNF5 gene (center) with the N-terminal QLC in orange and the two simulated peptides in dark orange. Sequences of the simulated peptides and identities of histidines mutated in both the HtoAsnf5 yeast strain and in simulations are indicated. (B) Representative images of conformations sampled in Monte Carlo all-atom simulations. (C) Cartoon depicting quantification of radius of gyration (Rg). (D) Radius of gyration (Rg, y-axis) of simulations of amino acids 71–120 of the SNF5 QLC with histidines either neutral (pH 7.4) or protonated (pH 5.0). Left two datasets are for the native peptide, right two datasets are with 2/3 histidines (H106 and H109) replaced with alanine, mimicking the HtoAsnf5 allele. Points represent the mean Rg from all conformations sampled in each independent simulation (beginning from distinct random initial conformers). Bars represent the mean values of all simulations. (E) Model of SWI/SNF regulation during carbon starvation. (Top) In glucose (pHi ~ 7.8), the SNF5 QLC is unprotonated. SWI/SNF is engaged by transcription factors that prevent transcription of glucose repressed genes or that activate other genes (TFA). (Middle) Upon acute carbon starvation, pHi drops to ~6.5, leading to protonation of histidines in the SNF5 QLC. Conformational expansion of the QLC may aid the release of SWI/SNF from some transcription factors (TFA) and potentially drive recruitment to others (not shown). (Bottom) As the cell adapts to carbon starvation, pHi neutralizes to ~7.0. Histidines within the SNF5 QLC may be partially protonated? The pKa of histidine is highly context-dependent. The QLC may aid recruitment of SWI/SNF to the promoters of glucose-repressed genes, thus leading to their expression.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70344/elife-70344-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic of the SNF5 gene, with the sequence and location of the simulated peptide indicated. (B) Radius of gyration (Rg, y-axis) of all-atom Monte Carlo simulations of amino acids 195–233 of the SNF5 QLC with histidines either neutral (pH 7.4) or protonated (pH 5.0). Left two datasets are for the native peptide, right two datasets are with 2/3 histidines (H213 and H214) replaced with alanine, mimicking the HtoASNF5 allele. Points represent the mean Rg from all conformations sampled in each independent simulation (beginning from distinct random initial conformers). Bars represent the mean values of all simulations. p-Values are from two-sided independent t-tests.
 
 ## Discussion
 
@@ -120,13 +224,266 @@ All cells must modify gene expression to respond to environmental changes. This 
 
 ## Materials and methods
 
-## Yeast strains used in this study
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>SNF5</td>
+      <td>https://www.yeastgenome.org/</td>
+      <td>SGD:S000000493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>SNF2</td>
+      <td>https://www.yeastgenome.org/</td>
+      <td>SGD:S000005816</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene(pHluorin)</td>
+      <td>pHluorin</td>
+      <td>doi:10.1099/mic.0.022038-0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae S288c)</td>
+      <td>BY4741</td>
+      <td>doi:https://doi.org/10.1002/(SICI)1097-0061(19980130)14:2&lt;115::AID-YEA204&gt;3.0.CO;2-2</td>
+      <td></td>
+      <td>All strains used in this study are derived form BY4741</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LH3647</td>
+      <td>ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-His3MX6</td>
+      <td></td>
+      <td>Yeast strain used to purify SWI/SNF complex</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LH3649</td>
+      <td>ΔQsnf5-HIS3 ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-kanMX6</td>
+      <td></td>
+      <td>Yeast strain used to purify SWI/SNF complex containing ∆Qsnf5</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LH3652</td>
+      <td>HtoAsnf5-HIS3 ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-kanMX6</td>
+      <td></td>
+      <td>Yeast strain used to purify SWI/SNF complex containing HtoAsnf5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid (pRS316)</td>
+      <td>GenBank: U03442</td>
+      <td></td>
+      <td>Used to complement SNF5 gene in snf5∆ strains prior to removal using 5FOA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid(pRS306)</td>
+      <td>GenBank: U03438</td>
+      <td></td>
+      <td>SNF5 and snf5 mutant alleles were all cloned into pRS306 and pRS303</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid(pRS303)</td>
+      <td>GenBank: U03435</td>
+      <td></td>
+      <td>SNF5 and snf5 mutant alleles were all cloned into pRS306 and pRS303</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal IgG</td>
+      <td>Sigma</td>
+      <td>Cat# 12-370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescently labeled goat anti-rabbit polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-68071</td>
+      <td>Western blot (1:15,000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonalanti-glucokinase</td>
+      <td>US Biological</td>
+      <td>Cat# H2035-01</td>
+      <td>Western blot (1:3000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fluorescently labeled goat anti-rabbit polyclonal</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat# 926-32211</td>
+      <td>Western blot (1:15,000 dilution)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains used in this study
 
 All strains were derived from LH2145.
 
-## Plasmids used in this study
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LH2145</td>
+      <td>WT, Mat a from sporulation of BY4743: ura3∆0 his3∆0 leu22∆0 met15∆0</td>
+    </tr>
+    <tr>
+      <td>LH2090</td>
+      <td>ΔQsnf5::kanMX6</td>
+    </tr>
+    <tr>
+      <td>LH2971</td>
+      <td>SNF5-TAP-His3MX6</td>
+    </tr>
+    <tr>
+      <td>LH2973</td>
+      <td>ΔQsnf5-TAP-His3MX6</td>
+    </tr>
+    <tr>
+      <td>LH2974</td>
+      <td>HtoAsnf5-HIS3</td>
+    </tr>
+    <tr>
+      <td>LH2975</td>
+      <td>HtoAsnf5-TAP-kanMX6</td>
+    </tr>
+    <tr>
+      <td>LH2991</td>
+      <td>ADH2::PADH2-mCherry-URA3</td>
+    </tr>
+    <tr>
+      <td>LH2992</td>
+      <td>ΔQsnf5-kanMX6 ADH2::PADH2-mCherry-URA3</td>
+    </tr>
+    <tr>
+      <td>LH2993</td>
+      <td>HtoAsnf5-HIS3 ADH2::PADH2-mCherry-URA3</td>
+    </tr>
+    <tr>
+      <td>LH3486</td>
+      <td>met15∆0 SNF5::kanMX6 (CEN/ARS-SNF5::URA3)</td>
+    </tr>
+    <tr>
+      <td>LH3513</td>
+      <td>snf5Δ::kanMX6 ADH2::PADH2-mCherry-URA3 (CEN/ARS-SNF5::URA3)</td>
+    </tr>
+    <tr>
+      <td>LH3632</td>
+      <td>snf5Δ::kanMX6 ADH2::PADH2-mCherry-URA3 TRP1::pHluorin-natMX6 (CEN/ARS-SNF5::URA3)</td>
+    </tr>
+    <tr>
+      <td>LH3647</td>
+      <td>ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-His3MX6</td>
+    </tr>
+    <tr>
+      <td>LH3649</td>
+      <td>ΔQsnf5-HIS3 ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-kanMX6</td>
+    </tr>
+    <tr>
+      <td>LH3652</td>
+      <td>HtoAsnf5-HIS3 ADH2::PADH2-mCherry-URA3 snf2::SNF2-TAP-kanMX6</td>
+    </tr>
+    <tr>
+      <td>LH3705</td>
+      <td>SNF5 ADH2::PADH2-mCherry-URA3 leu2::pHluorin-LEU2</td>
+    </tr>
+    <tr>
+      <td>LH3707</td>
+      <td>ΔQsnf5::kanMX6 ADH2::PADH2-mCherry-URA3 leu2::pHluorin-LEU2</td>
+    </tr>
+    <tr>
+      <td>LH3713</td>
+      <td>HtoAsnf5-HIS3 ADH2::PADH2-mCherry-URA3 leu2::pHluorin-LEU2</td>
+    </tr>
+  </tbody>
+</table>
 
-## Cloning and yeast transformations
+### Plasmids used in this study
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Identity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pLH226</td>
+      <td>pFA6a- ΔQsnf5-GFP(S65T)-KANMX6</td>
+    </tr>
+    <tr>
+      <td>pLH416</td>
+      <td>pFA6a-SNF5-GFP-KANMX6</td>
+    </tr>
+    <tr>
+      <td>pLH887</td>
+      <td>pRS316-SNF5 (CEN/ARS plasmid)</td>
+    </tr>
+    <tr>
+      <td>pLH931</td>
+      <td>pFA6a-4HtoAsnf5-KANMX6</td>
+    </tr>
+    <tr>
+      <td>pLH963</td>
+      <td>pFA6a-SNF5-TAP-KANMX6</td>
+    </tr>
+    <tr>
+      <td>pLH964</td>
+      <td>pFA6a-SNF5-TAP-HIS3MX6</td>
+    </tr>
+    <tr>
+      <td>pLH998</td>
+      <td>pRS306-PADH2-mCherry</td>
+    </tr>
+    <tr>
+      <td>pLH1085</td>
+      <td>pFA6a-6HtoAsnf5-HIS3MX6</td>
+    </tr>
+    <tr>
+      <td>pLH1093</td>
+      <td>pFA6a-3’snf2-TAP-KANMX6</td>
+    </tr>
+    <tr>
+      <td>pLH1097</td>
+      <td>pRS305-PTDH3-pHluorin</td>
+    </tr>
+    <tr>
+      <td>pLH1206</td>
+      <td>pFA6a-3’snf2-TAP-NATMX</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and yeast transformations
 
 Yeast strains used in this study were all in the S288c strain background (derived from BY4743). The sequences of all genes in this study were obtained from the S. cerevisiae genome database (http://www.yeastgenome.org/).
 
@@ -146,39 +503,39 @@ The SNF5-GFP strain was obtained from the yeast GFP collection (Huh et al., 2003
 
 Supplementary files 6 and 7 list strains and plasmids generated in this study.
 
-## Culture media
+### Culture media
 
 Most experiments, unless indicated, were performed in synthetic complete (SC) media (13.4 g/L yeast nitrogen base and ammonium sulfate; 2 g/L amino acid mix and 2% glucose). Carbon starvation media was SC media without glucose, supplemented with sorbitol, a nonfermentable carbon source to avoid osmotic shock during glucose starvation (6.7 g/L YNB + ammonium sulfate; 2 g/L amino acid mix and 100 mM sorbitol). The pH of starvation media (pHe) was adjusted using NaOH.
 
-## Growth assays
+### Growth assays
 
 Growth rates were determined in an Infinite M200 plate reader (Tecan) in 96-well microtiter plates using 200 μL total volume, cultured at 30°C and agitated at 800 rpm. Cells were pre-cultured overnight to log-phase (or subjected to other indicated pre-culture conditions) and then seeded at an A600 of 0.1 (based on a path length of ~0.3 cm) in SC media with various carbon sources. All measurements were performed in triplicate.
 
-## Glucose starvation
+### Glucose starvation
 
 Cultures were incubated in a rotating incubator at 30°C and grown overnight (14–16 hr) to an OD between 0.2 and 0.3. Note that it is extremely important to prevent culture OD from exceeding 0.3, and results are different if cells are allowed to saturate and then diluted back. Thus, it is imperative to grow cultures from colonies on plates for >16 hr without ever exceeding OD 0.3 to obtain reproducible results. Typically, we would inoculate 3 mL cultures and make a series of 4–5 1/5 dilutions of this starting culture to be sure to catch an appropriate culture the following day. 3 mL of OD 0.2–0.3 culture were centrifuged at 6000 rpm for 3 min and resuspended in 3 mL starvation media (SC sorbitol at various pHe). This spin and resuspension was repeated two more times to ensure complete removal of glucose. Finally, cells were resuspended in 3 mL of starvation media. For flow cytometry, 200 μL samples were transferred to a well of a 96-well plate at each time point. During the course of time-lapse experiments, culture aliquots were set aside at 4°C. An LSR II flow cytometer with an HTS automated sampler was used for all measurements. 10,000 cells were analyzed at each time point.
 
-## Nucleocytoplasmic pH measurements
+### Nucleocytoplasmic pH measurements
 
 Nucleocytoplasmic pH (pHi) was measured by flow cytometry or microscopy. The ratiometric, pH-sensitive GFP variant, pHluorin, was used to measure pH based on the ratio of fluorescence from two excitation wavelengths. The settings used for LSR II flow cytometer were AmCyan (excitation 457, emission 491) and FITC (excitation 494, emission 520). AmCyan emission increases with pH, while FITC emission decreases. A calibration curve was made for each strain in each experiment. To generate a calibration curve, glycolysis and respiration were poisoned using 2-deoxyglucose and azide. This treatment leads to a complete loss of cellular ATP, and the nucleocytoplasmic pH equilibrates to the extracellular pH. We used the calibration buffers published by Patricia Kane’s group (Diakov et al., 2013): 50 mM MES (2-(N-morpholino) ethanesulfonic acid), 50 mM HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid), 50 mM KCl, 50 mM NaCl, 0.2 M ammonium acetate, 10 mM sodium azide, 10 mM 2-deoxyglucose. Buffers were titrated to the desired pH with HCl or NaOH. Sodium azide and 2-deoxyglucose were always added fresh.
 
-## RT-qPCR
+### RT-qPCR
 
 For qPCR and RNA-seq, RNA was extracted with the ‘High pure RNA isolation kit’ (Roche) following the manufacturer’s instructions. Three biological replicates were performed. cDNAs and qPCR were made with iSCRIPT and iTAQ universal SYBR green supermix by Bio-Rad, following the manufacturer’s instructions. Samples processed were exponentially growing culture (+Glu) or acute glucose starvation for 4 hr in media titrated to pH 5.5 or 7.5. Primers for qPCR were taken from Biddick et al., 2008a; for ADH2 and FBP1 genes: forward (GTC TAT CTC CAT TGT CGG CTC), reverse (GCC CTT CTC CAT CTT TTC GTA), and forward (CTT TCT CGG CTA GGT ATG TTG G), reverse (ACC TCA GTT TTC CGT TGG G). ACT1 was used as an internal control; primers were: forward (TGG ATT CCG GTG ATG GTG TT), reverse (TCA AAA TGG CGT GAG GTA GAG A).
 
-## RNA-sequencing
+### RNA-sequencing
 
 We performed RNA-sequencing analysis to determine the extent of the requirement for the SNF5 QLC in the activation of glucose-repressed genes. Three biological replicates were performed. Total RNA was extracted from WT, ΔQ-snf5, and HtoAsnf5 strains during exponential growth (+Glu) and after 4 hr of acute glucose starvation. In addition, WT strains were acutely starved in media titrated to pH 7. Next, poly-A selection was performed using Dynabeads and libraries were performed following the manufacturer’s indications. Sequencing of the 32 samples was performed on an Illumina HiSeq on two lanes. RNA-seq data were aligned to the University of California, Santa Cruz (UCSC), sacCer2 genome using Kallisto (0.43.0, http://www.nature.com/nbt/journal/v34/n5/full/nbt.3519.html) and downstream visualization and analysis was in R (3.2.2). Differential gene expression analysis, heat maps, and volcano plots were created using DESeq2. A Wald test was used to determine differentially expressed genes. Euclidean distance was used to calculate clustering for heat maps, with some manual curation to remove small clusters with no significant GO hits, and to consolidate clusters that had similar behavior. RNA-seq R-code can be found at https://github.com/gbritt/SWI_SNF_pH_Sensor_RNASeq., (copy archived at swh:1:rev:802f3d233210c02c66b745e414a6f7aa1385e379). RNA-seq datasets are deposited at GEO accession number GSE174687 (available here).
 
-## Western blots
+### Western blots
 
 Strains containing SNF5 and SNF2 fused to the TAP tag were used. Given the low concentration of these proteins, they were extracted with trichloroacetic acid (TCA): 3 mL culture was pelleted by centrifugation for 2 min at 6000 rpm and then frozen in liquid nitrogen. Pellets were thawed on ice and resuspended in 200 µL of 20% TCA, ~0.4 g of glass beads were added to each tube. Samples were lysed by bead beating four times for 2 min with 2 min of resting in ice in each cycle. Supernatants were extracted using a total of 1 mL of 5% TCA and precipitated for 20 min at 14,000 rpm at 4°C. Finally, pellets were resuspended in 212 µL of Laemmli sample buffer and pH adjusted with ~26 µL of Tris buffer pH 8. Samples were run on 7–12% gradient polyacrylamide gels with Thermo Fisher PageRuler prestained protein ladder 10–18 kDa. Proteins were transferred to a nitrocellulose membrane, which was then blocked with 5% nonfat milk and incubated with a rabbit IgG primary antibody (which binds to the protein A moiety of the TAP tag) for 1 hr and then with fluorescently labeled goat anti-rabbit secondary antibody IRDye 680RD goat-anti-rabbit (LI-COR Biosciences, Cat# 926-68071, 1:15,000 dilution). Anti-glucokinase was used as a loading control (rabbit-anti-Hxk1, US Biological, Cat# H2035-01, RRID:AB_2629457, Salem, MA, 1:3,000 dilution) followed by IRDye 800CW goat-anti-rabbit (LI-COR Biosciences, Cat# 926-32211, 1:15,000 dilution). Membranes were visualized using a LI-COR Odyssey CLx scanner with Image Studio 3.1 software. Fluorescence emission was quantified at 700 and 800 nM.
 
-## Co-immunoprecipitation of SWI/SNF complex
+### Co-immunoprecipitation of SWI/SNF complex
 
 To evaluate the assembly state of the SWI/SNF complex, we immunoprecipitated Snf2p. To enable this experiment, we constructed strains in which the SNF2 gene was tagged at the C-terminus with a TAP tag (Puig et al., 2001). For each purification, 6 L of cells were grown in YPD to an OD of 1.2. Cells were broken open using glass beads in buffer A (40 mM HEPES [K+], pH 7.5, 10% glycerol, 350 mM KCl, 0.1% Tween-20, supplemented with 20 µg/mL leupeptin, 20 µg/mL pepstatin, 1 µg/mL benzamidine hydrochloride, and 100 µM PMSF) using a BioSpec bead beater followed by treatment with 75 units of benzonase for 20 min (to digest nucleic acids). Heparin was added to a final concentration of 10 µg/mL. The extract was clarified by first spinning at 15,000 rpm in a SS34 Sorvall rotor for 30 min at 4°C, followed by centrifugation at 45,000 rpm for 1.5 hr at 4°C in a Beckman ultracentrifuge. The soluble extract was incubated with IgG Sepharose beads for 4 hr at 4°C using gentle rotation. IgG Sepharose bound proteins were washed five times in buffer A and once in buffer B (10 mM Tris-HCl, pH 8.0, 10% glycerol, 150 mM NaCl, 0.5 mM EDTA, 0.1% NP40, 1 mM DTT, supplemented with 20 µg/mL leupeptin, 20 µg/mL pepstatin, 1 µg/mL benzamidine hydrochloride, and 100 µM PMSF). Bound protein complexes were incubated in buffer B with TEV protease overnight at 4°C using gentle rotation. The eluted protein was collected, CaCl2 was added to a final concentration of 2 mM and bound to Calmodulin Sepharose beads for 4 hr at 4°C using gentle rotation. Following binding, the protein-bound Calmodulin Sepharose beads were washed five times in buffer C (10 mM Tris-HCl, pH 8.0, 10% glycerol, 150 mM KCl, 2 mM CaCl2, 0.1% NP40, 1 mM DTT, supplemented with 20 µg/mL leupeptin, 20 µg/mL pepstatin, 1 µg/mL benzamidine hydrochloride, and 100 µM PMSF). The bound proteins were eluted in buffer D 10 mM Tris-HCl, pH 8.0, 10% glycerol, 150 mM KCl, 2 mM EGTA, 0.1% NP40, 0.5 mM DTT, supplemented with 20 µg/mL leupeptin, 20 µg/mL pepstatin, 1 µg/mL benzamidine hydrochloride, and 100 µM PMSF. The protein complexes were resolved by SDS-PAGE and visualized by silver staining.
 
-## Chromatin immunoprecipitation of SWI/SNF
+### Chromatin immunoprecipitation of SWI/SNF
 
 For ChIP of the SWI/SNF complex, we constructed strains in which the SNF2 gene was tagged at the C-terminus with a TAP tag, as above. 1.25 × 108 cells were collected for each mutant and condition and fixed on 1% formaldehyde for 20 min to crosslink proteins to chromatin, and then the reaction was stopped with 136 mM glycine. Cells were pelleted and frozen in liquid nitrogen. Cells were then resuspended in 400 µL lysis buffer (0.1% deoxycholic acid, 1 mM EDTA, 50 mM HEPES pH 7.5, 140 mM NaCl, 1% Triton X-100, and 5 mM phenanthroline), mixed with 400 µL glass beads, and then lysed by vortexing for 15 min. The same lysis buffer was used to rinse the glass beads once more to recover remaining lysate. Lysates were then sonicated for 10 s, six times in ice to sheer chromatin, and then incubated with 40 µL of IgG-conjugated magnetic beads per sample (1 × 108 beads) and incubated for 24 hr at 4°C on a nutator (Dynabeads m-270 epoxy [Thermo Fisher 14301] conjugated to IgG from rabbit serum [Sigma-Aldrich I5006]; for conjugation protocol, see here).
 
@@ -190,51 +547,51 @@ qPCR was performed using a Roche LightCycler 480 SYBR green master mix (04707516
 
 Two sets of primers were used to amplify for ADH2 (Parua et al., 2014):
 
-## Data fitting
+### Data fitting
 
 Fluorescence intensity from the PADH2-mCherry reporter and ratiometric fluorescence measurements from pHluorin were fit with a single or double Gaussian curve for statistical analysis using MATLAB (MathWorks). The choice of a single or double Gaussian fit was determined by assessing which fit gave the least residuals. For simplicity, the height (mode) of each Gaussian peak was used to determine the fraction of cells in each population rather than the area because peaks overlapped in many conditions.
 
-## Sequence analysis of QLCs
+### Sequence analysis of QLCs
 
-## Identification of QLCs
+#### Identification of QLCs
 
 QLCs were defined as subregions of the proteome that have an average fraction of glutamine residues of 25% or higher (minimum fraction), the maximum interruption between any two glutamine residues is less than 17 residues, and the whole QLC is at least 15 residues in length (minimum length) (Figure 1—figure supplement 2A). All XLCs (low-complexity subssequences for all amino acids, including glutamine) are provided online for further exploration and analysis (see GitHub). Secondly, systematic variation of the maximum interruption size to ask how the number of QLCs and number of residues found revealed that 17 residues was the value that maximized the number of QLCs and the number of residues found within QLCs, offering an optimally permissive value under the 0.25 or greater fraction of glutamine threshold.
 
-## Computation of per-residue conservation
+#### Computation of per-residue conservation
 
 Per-residue conservation was calculated by taking orthologous fungal proteins from the yeast genome order browser, aligning those using Clustal Omega, and calculating the Jensen–Shannon divergence as implemented by Caprah and Singh using the BLOSUM62 matrix (Byrne and Wolfe, 2005; Capra and Singh, 2007; Henikoff and Henikoff, 1992; Lin, 1991; Sievers et al., 2011).
 
-## Proteome-wide analysis
+#### Proteome-wide analysis
 
 S. cerevisiae, Dictyostelium, Drosophila, and human proteins were obtained from UniProt. Sequence analysis was performed with SHEPHARD (https://shephard.readthedocs.io/). Predicted disorder scores, IDR identification, and predicted pLDDT scores were performed by metapredict (Emenecker et al., 2021; ). QLCs and full proteomes are provided at here.
 
-## Proteome-wide per-residue enrichment or depletion in QLCs
+#### Proteome-wide per-residue enrichment or depletion in QLCs
 
 To compute the enrichment or depletion of specific amino acid residues in QLCs, we determined the fraction of non-glutamine residues in QLCs compared to the fraction of non-glutamine residues across the entire proteome. Specifically, for each proteome (S. cerevisiae, D. discoideum, D. melanogaster, and Homo sapiens) we first computed the proteome-wide background by taking the complete set of all protein sequences, removing all glutamine residues from all proteins, and then computing the fraction of the proteome made up of the remaining 19 amino acids. For each proteome, we then identified the full set of QLCs and repeated the analysis. The log2 of the ratio of the fraction of each amino acid in a QLC vs. across the proteome was used to compute enrichment or depletion for different amino acids within QLCs.
 
-## Proteome-wide per-residue enrichment or depletion of QLCs with respect to all XLCs
+#### Proteome-wide per-residue enrichment or depletion of QLCs with respect to all XLCs
 
 To compute enrichment of different amino acids in QLCs compared to other low-complexity domains (XLCs), we repeated the analysis above using XLCs defined by enrichment for non-glutamine residues, and then re-computed non-glutamine enrichment as was done for the whole proteome. The complete set of all XLC subsequences for all four proteomes is provided.
 
-## Nucleosome remodeling assays
+### Nucleosome remodeling assays
 
-## SWI/SNF purification
+#### SWI/SNF purification
 
 SWI/SNF complexes were purified from yeast strains with a TAP protocol as previously described (Smith and Peterson, 2005). Cells were grown in YPAD media and harvested at OD600 = 3, and flash frozen and stored at –80°C. Yeast cells were lysed using a cryomill (PM100 Retsch). Ground cell powder was resuspended in E buffer (20 mM HEPES, 350 mM NaCl, 0.1% Tween-20, 10% glycerol, pH 7.5), with fresh 1 mM DTT and protease inhibitors (0.1 mg/mL phenylmethylsulfonyl fluoride, 2 µg/mL leupeptin, 2 µg/mL pepstatin, 1 mM benzamidine) and incubated on ice for 30 min. The crude lysate was clarified first by centrifugation 3K rpm for 15 min, and then 40K rpm for 60 min at 4°C. The clear lysate was transferred to a 250 mL Falcon tube and incubated with 400 µL IgG resin slurry (washed previously with E buffer without protease inhibitors) for 2 hr at 4°C. The resin was washed extensively with E buffer and protease inhibitors, and the protein-bound resin was incubated with 300 units TEV protease overnight at 4°C. The eluent was collected, incubated with 400 µL calmodulin affinity resin, washed previously with E buffer with fresh protease inhibitors, DTT and 2 mM CaCl2, for 2 hr at 4°C. Resin washed with the same buffer and SWI/SNF was eluted with E buffer with protease inhibitors, DTT, and 10 mM EGTA. The eluent was dialyzed in E buffer with PMSF, DTT, and 50 µM ZnCl2 at least three times. The dialyzed protein was concentrated with a Vivaspin column, aliquoted, flash frozen, and kept at –80°C. SWI/SNF concentration was quantified by electrophoresis on 10% SDS-PAGE gel alongside a BSA standard titration, followed by SYPRO Ruby (Thermo Fisher Scientific) staining overnight and using ImageQuant 1D gel analysis.
 
-## Mononucleosome reconstitutions
+#### Mononucleosome reconstitutions
 
 Recombinant octamers were reconstructed from isolated histones as described previously (Luger et al., 1999). In summary, recombinant human H2A (K125C), H2B, and H3 histones and Xenopus laevis H4 were isolated from Escherichia coli (Rosetta 2 [DE3] with and without pLysS). In order to label human H2A, a cysteine mutation was introduced at residue K125 via site-directed mutagenesis, which was labeled with Cy5 fluorophore attached to maleimide group (Zhou and Narlikar, 2016). DNA fragments were generated from 601 nucleosome positioning sequence and 2x Gal4 recognition sites with primers purchased from IDT. For FRET experiments, PCR amplification of labeled DNA fragments was as follows: 500 nM Cy3 labeled (5′-Cy3/TCCCCAGTCACGACGTTGTAAAAC-3′) and unlabeled primers (5′-ACCATGATTACGCCAAGCTTCGG-3′), 200 µM dNTPs, 0.1 ng/µL p159-2xGal4 plasmid kindly donated by Blaine Bartholomew, 0.02 U/µL NEB Phusion DNA polymerase, 1× Phusion High Fidelity Buffer. For ATPase assays, two unlabeled primers used (PrimerW: 5′-GTACCCGGGGATCCTCTAGAGTG-3′, PrimerS: 5′-GATCCTAATGACCAAGGAAAGCA-3′) under same PCR conditions with NEB Taq DNA Polymerase with 1× NEB ThermoPol Buffer. 400 nM fluorescently labeled and unlabeled mononucleosomes were reconstituted via salt gradient at 4°C with a peristaltic pump as described previously (Luger et al., 1999), with 600 mL high salt buffer (10 mM Tris-HCl, pH 7.4, 1 mM EDTA, 2 M KCl, 1 mM DTT) exchanged with 3 L of low salt buffer (10 mM Tris-HCl, pH 7.4, 1 mM EDTA, 50 mM KCl, 1 mM DTT) over 20 hr. The quality of the nucleosomes was checked by visualizing proteins on a 5% native-PAGE gel and scanning fluorescence ratios of labeled nucleosomes on an ISS PC1 spectrofluorometer.
 
-## FRET-based nucleosome remodeling
+#### FRET-based nucleosome remodeling
 
 The fluorescence resonance energy transfer between Cy3-labeled DNA and Cy5-labeled octamer was used to measure the remodeling and recruitment activity of SWI/SNF using an ISS PC1 spectrofluorometer. The remodeling activity was measured by the increase in FRET signal in that occurred as a consequence of nucleosome sliding the DNA template. The reaction was performed under three different pH conditions: pH 6.5 (25 mM MES, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT), pH 7 (25 mM Tris, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT), and pH 7.6 (25 mM HEPES, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT). Remodeling reactions contained 2 nM or 4 nM (WT or mutant) SWI/SNF, 5 nM nucleosome, and 100 µM ATP or AMP-PNP. A 100 s pre-scan of the reaction was taken before the reaction started and the time-dependent fluorescence measurements started after addition of ATP or AMP-PNP for 1000s at room temperature. Similarly, recruitment assays were performed in three different buffer conditions: pH 6.5, pH 7, and pH 7.6. The recruitment assays contained 2 nM or 4 nM (WT or mutant) SWI/SNF, 5 nM nucleosome, 4 nM competitor DNA, 100 µM Gal4–VP16 (Protein One, P1019-02) and 100 µM ATP or AMP-PNP, together with respective controls (Sen et al., 2017). 100 s of pre-scans and 1000s of time-dependent enzyme kinetics were measured. At least 2–4 kinetic traces were collected per reaction. Data were normalized to their respective pre-scans to account for variation between reactions. The time-dependent FRET signals were excited at 530 nm and measured at 670 nm. The data analysis was performed using the OriginLab software package.
 
-## ATPase activity measurements
+#### ATPase activity measurements
 
 7-Diethylamino-3-[N-(2-maleimidoethyl)-carbamoyl]-coumarin-conjugated phosphate binding protein A197C (MDCC-PBP) (Brune et al., 1994) was used to detect inorganic phosphate (Pi) release from ATPase activity in real time. Before the reaction, ATP was cleared of free Pi by performing a mopping reaction. In order to mop the ATP, 10 mM ATP was incubated with 1 U/mL PNPase (Sigma, N2415-100UN) and 200 µM 7-methylguanosine (Sigma, M0627-100MG) in mopping buffer (25 mM HEPES, 75 mM NaCl, 5 mM MgCl2, 1 mM DTT) for 2 hr at room temperature. ATPase assay reaction conditions were 2 nM SWI/SNF, 5 nM nucleosome, and 100 µM ATP in respective pH buffers; pH 6.5 (25 mM MES, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT), pH 7 (25 mM Tris, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT), or pH 7.6 (25 mM HEPES, 0.2 mM EDTA, 5 mM MgCl2, 70 mM KCl, 1 mM DTT). The measurements were performed on a Tecan Infinite 1000, with excitation at 405 nm and emission at 460 nm. Pre-scan measurements were taken to detect the basal level of signal per reaction. The time-dependent measurements were taken after starting the reaction by ATP addition. At least 3–4 kinetic traces were analyzed using the steady-state equation using GraphPad Prism 8 software.
 
-## All-atom simulations
+### All-atom simulations
 
 All-atom simulations were run with the ABSINTH implicit solvent model and CAMPARI Monte Carlo simulation (V2.0; http://campari.sourceforge.net/; Vitalis and Pappu, 2009). The combination of ABSINTH and CAMPARI has been used to examine the conformational behavior of disordered proteins with good agreement to experiment (Cubuk et al., 2020; Fuertes et al., 2017; Martin et al., 2020).
 
@@ -242,7 +599,7 @@ All simulations were started from randomly generated nonoverlapping random-coil 
 
 ABSINTH simulations were performed with the ion parameters derived by Mao et al. and using the abs_opls_3.4.prm parameters (Mao et al., 2010). All simulations were run at 15 mM NaCl and 325 K, a simulation temperature previously shown to be a good proxy for bona fide ambient temperature (Das et al., 2016; Martin et al., 2020). A summary of the simulation input details is provided in Supplementary file 5. For SNF571-120 simulations, 20 independent simulations were run for each combination of pH (as defined by histidine protonation state) and mutational state. For SNF5195-223, the high glutamine content made conformational sampling challenging, as has been observed in previous glutamine-rich systems, reflecting the tendency for polyglutamine to undergo intramolecular chain collapse (Crick et al., 2006; Newcombe et al., 2018; Warner et al., 2017). To address this challenge, we ran hundreds of short simulations (with a longer equilibration period than in SNF71-120) that are guaranteed to be uncorrelated due to their complete independence (Vitalis and Caflisch, 2010). Simulation code and details can be found at https://github.com/holehouse-lab/supportingdata/tree/master/2021/Gutierrez_QLC_2021.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 All protein sequence analyses were performed with localCIDER, with FASTA files read by protfasta (https://github.com/holehouse-lab/protfasta; Holehouse et al., 2017; Holehouse, 2021). Sequence alignments were performed using Clustal Omega (Sievers et al., 2011). Sequence conservation was computed using default properties in with the score_conservation program as defined by Capra and Singh, 2007. Proteomes were downloaded from UniProt Consortium, 2015.
 

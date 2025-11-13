@@ -25,15 +25,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Interdepartmental Program in Neuroscience, University of Utah Salt Lake City United States
-2. https://ror.org/03r0ha626 Department of Neurosurgery, University of Utah Salt Lake City United States
-3. https://ror.org/03r0ha626 Department of Psychology, University of Utah Salt Lake City United States
-4. https://ror.org/03r0ha626 Department of Neurology, University of Utah Salt Lake City United States
-5. https://ror.org/04b6nzv94 Department of Neurosurgery, Brigham and Women’s Hospital Boston United States
-6. https://ror.org/03czfpz43 Department of Psychology, Emory University Atlanta United States
-7. https://ror.org/036c27j91 Department of Radiology, Washington University School of Medicine St. Louis United States
-8. https://ror.org/036c27j91 Department of Neurology, Washington University School of Medicine St. Louis United States
-9. https://ror.org/036c27j91 Department of Neurological Surgery, Washington University School of Medicine St. Louis United States
+1. Interdepartmental Program in Neuroscience, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Department of Neurosurgery, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+3. Department of Psychology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+4. Department of Neurology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+5. Department of Neurosurgery, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+6. Department of Psychology, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+7. Department of Radiology, Washington University School of Medicine St. Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))
+8. Department of Neurology, Washington University School of Medicine St. Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))
+9. Department of Neurological Surgery, Washington University School of Medicine St. Louis United States ([ROR:036c27j91](https://ror.org/036c27j91))
 10. National Center for Adaptive Neurotechnologies St. Louis United States
 
 † Corresponding author
@@ -54,11 +54,55 @@ Here, we address this knowledge gap by conducting simultaneous microelectrode re
 
 We recorded single-unit activity from 23 patients (n=30 sessions) with medically refractory epilepsy as they completed a visual recognition memory task (see Supplementary file 1 for patient demographics). During the encoding session of the experiment, each patient received either 80 or 160 trials of bipolar intracranial TBS to a contiguous pair of macroelectrode contacts in the BLA (see Figure 1—figure supplement 1 for anatomical localization of stimulated contacts). An equal number of ‘no-stimulation’ trials were randomly interspersed to evaluate the effect of stimulation on memory performance and control for neuronal modulation resulting from experimental stimuli (e.g. image presentation). In total, we isolated 203 putative neurons from 68 bundles of 8 microwires each, distributed among recording sites in the hippocampus (HIP, n=95 units), orbitofrontal cortex (OFC, n=44), amygdala (AMY, n=39), and anterior cingulate cortex (ACC, n=25) (Figure 1; see also Figure 1—figure supplement 2 and Figure 1—figure supplement 3); a subset of these units (n=47, 23.2%) was excluded from subsequent analyses because low baseline firing rates (<0.1 Hz) limited the ability to robustly detect modulation.
 
-## TBS of the BLA modulates widely distributed populations of neurons
+![Figure 1.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig1-v1.jpg)
+
+**Figure 1.:** (A) Behnke Fried-style macro/micro depth electrode (left) and microelectrode bundle locations projected in MNI space (right). (B) The proportion of units recorded from each brain area (left) and the proportion of units that met the criteria for inclusion in analyses (average pre-trial baseline firing rate ≥0.1 Hz) (right). (C) Counts of total (gray) and included (colored) units within each region. (D) Intracranial recording and stimulation took place in the context of a two-phase (encoding, retrieval) visual recognition memory task. A series of neutral valence images were shown (3 s), half of which were followed by direct electrical stimulation (1 s). Retrieval memory was tested during a self-paced task ~24 hr later. (E) Simulated theta burst stimulation trace (left) and individual stimulation pulse (right); charge-balanced, bipolar, biphasic rectangular pulses were delivered over a 1 s period. HIP = hippocampus (coral), OFC = orbitofrontal cortex (yellow), AMY = amygdala (blue), ACC = anterior cingulate cortex (purple).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A coronal slice from the T1-weighted MRI scan is shown for each patient who participated in the study (n=16). Electrode contacts within the same plane of the image are shown with blue circles, and the bipolar pair of stimulated contacts within the basolateral amygdala is highlighted in red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Number of units detected per implanted microelectrode bundle. (B) Mean firing rate (Hz) across recording session. (C) Percent of interspike intervals <3 ms. (D) Interspike interval coefficient of variation. (E) Mean presence ratio of firing within units (1 s bins). (F) Signal-to-noise ratio of unit waveform peak. (G) Mean signal-to-noise ratio across the entire unit waveform. (H) Representative example of stereotyped, high-amplitude stimulation-artifact waveform; non-physiological waveforms were excluded from analysis.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Unit counts on the contralateral (Contra) or ipsilateral (Ipsi) side of stimulation. (B) Unit counts separated by laterality and region. (C) Stacked histograms of Euclidean distance between microelectrode bundle location and stimulation contacts, separated by laterality (bin size = 5 mm).
+
+### TBS of the BLA modulates widely distributed populations of neurons
 
 We hypothesized that BLA stimulation would modulate neuronal activity in the sampled regions, given the amygdala’s well-established connectivity to the HIP, OFC, and ACC (Roy et al., 2009). To test this hypothesis, we quantified spike counts across trials within peri-stimulation epochs (1 s pre-trial ISI, 1 s after image onset, 1 s during stimulation/after image offset, and 1 s post-stimulation) and used Wilcoxon signed-rank tests to compare the spike counts against a null distribution generated by shuffling epoch labels. We performed two firing rate contrasts across trials (pre-trial ISI vs. during stimulation, pre-trial ISI vs. post-stimulation) within two distinct conditions (stim, no-stim); an additional contrast of the pre-trial ISI vs. image onset epochs was included to evaluate the sensitivity of neurons to task image presentations (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative example of modulation during stimulation. The high-pass-filtered, trial-averaged LFP from the corresponding microwire is shown (top) above the spike raster for an example unit located in the hippocampus (middle); the gray shaded region depicts the duration of stimulation with onset at t=0. The average firing rate across trials was estimated by convolving the binned spike counts (100 ms bins) with a Gaussian kernel (bottom). (B) The difference in the number of spikes in the 1 s peri-stimulation epochs for each trial is shown (top). We subsequently performed a Wilcoxon signed-rank test on the during- and post-stimulation spike counts for each trial vs. the pre-trial baseline and compared the empirical test statistic against a null distribution generated by shuffling the epoch labels 1000 times (bottom); the gray-shaded region represents the distribution containing 95% of observed values. (C) Some units (left, left-middle) exhibited increased firing rates, whereas others (right-middle, right) had their firing suppressed. The temporal dynamics of the firing rate modulation (e.g. onset, duration) were highly variable across units. The averaged waveform for each of the visualized units is shown below its corresponding peri-stimulation raster plot (WFs = waveforms); the shaded region represents standard deviation across waveforms.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The same permutation-based analyses reported in the manuscript were repeated under different control conditions. The percent of units (total n=203) that met the firing rate threshold for inclusion (pink), the percent of included units modulated in the stim condition (purple), and the percent of included units modulated in the no-stim condition are shown. (A) The threshold for inclusion of units was varied from 0 to 3 Hz (0.1 step size); the black dashed line represents the ≥0.1 Hz threshold used in the manuscript. (B) To control for the possibility that nonphysiological stimulation artifacts may preclude the detection of temporally adjacent spiking, we removed segments of data beginning at the onset of each burst of pulses (0–60 ms, 5 ms step size). Identical temporal windows were removed from the corresponding pre- and post-stimulation epochs to mitigate effects resulting solely from summation over different epoch sizes (reduced spike counts with shorter windows). (C) Visualization of the predicted probability of detecting modulation across synthetic neurons with variable firing rates and modulation effect sizes; FR = firing rate.
+
 BLA TBS modulated firing rates in 30.1% of all recorded units, a significantly higher proportion than the 15.4% responsive to no-stim (image only) trials (one-sided Fisher’s exact test, OR = 2.37, p<0.001; Figure 3A). Across all regions sampled, we observed units modulated by the stim and no-stim conditions. Units in HIP (OR = 2.07, p=0.044), OFC (OR = 5.09, p=0.040), and AMY (OR = 3.33, p=0.042) were most sensitive to stimulation; we did not observe a difference in the proportions of units within the ACC responsive to the stim vs. no-stim conditions (OR = 1.00, p=0.661; Figure 3B). Only 9.0% of units responded to both the stim and no-stim conditions, despite approximately half of the stim-modulated units (representing 14.7% of all units) exhibiting a change in firing rate associated with image onset (Figure 3D). This result suggests that the units modulated by stimulation are largely distinct from those responsive to image offset during trials without stimulation. Stimulation, however, did not appear to alter the rhythmicity in neuronal firing, as measured by spiking autocorrelograms (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig3-v1.jpg)
+
+**Figure 3.:** (A) Percent of modulated units observed across trials separated by stim (purple) vs. no-stim conditions (orange). (B) Percent of modulated units as a function of recording region. (C) Comparison of baseline firing rate in units separated by condition (stim vs. no-stim) and outcome (NS = not significant, Mod = modulated). (D) Venn diagram depicting the shared and independent proportions of units modulated by image onset (Image) and the two experimental conditions (stim vs. no-stim). (E) Scatterplot of pre-stimulation firing rate relative to the firing rate during the two contrast windows (during, post) for the stim (left) and no-stim (right) conditions. Modulated units are highlighted in purple (stim) or orange (no-stim), whereas units without a significant change are shown in gray. (F) Temporal dynamics of pseudo-population coactivity within each condition, represented by the first three principal components of the trial-averaged firing rates. The gray-shaded region depicts the duration of stimulation with onset at t=0. Images were presented on screen for 3 s, with onset at t = –3. * p<0.05, *** p<0.001, NS = not significant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative autocorrelograms (ACG) for a single neuron. The pairwise differences in spike timing were computed for each trial and epoch (bin size = 5 ms, max lag = 250 ms), then smoothed with a Gaussian kernel. The peak in the normalized ACG across trials was computed for each epoch. (B) Kernel density estimate of the peak ACG lag, separated by epoch. (C) The peak ACG lags were split by whether the neuron was modulated (Mod) or unaffected by stimulation (NS = not significant) for each of the two contrasts: pre- vs. during-stim (left) and pre- vs. post-stim (right).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Comparison of the proportion of stimulation-modulated units across sessions with 1 mA (n=23) vs. 0.5 mA (n=7). (B) Comparison of the proportion of stimulation-modulated units across sessions testing distinct pulse frequencies: 33 Hz vs. 80 Hz (n=1) and 50 Hz vs. 80 Hz (n=6). The values above individual bars represent the number of sessions using that stimulation parameter. NS = not significant.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Pseudo-population activity was characterized within each region via a linear dimensionality reduction on the trial-averaged firing rates. The temporal dynamics of each region’s first three principal components are shown for (A) units ipsilateral to stimulation and (B) units contralateral to stimulation. HIP = hippocampus (coral), OFC = orbitofrontal cortex (yellow), AMY = amygdala (blue), ACC = anterior cingulate cortex (purple).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Example trace of MUA in one channel during a single stimulation trial. Threshold crossings are highlighted with a pink dot overlaid on the MUA signal with a corresponding hash below. (B) The percentage of channels with significantly modulated MUA, separated by the direction of effect. (C) The percentage of channels with significantly modulated MUA, separated by direction effect and region. Inc (red; post > pre) vs. Dec (blue; post < pre). HIP = hippocampus, OFC = orbitofrontal cortex, AMY = amygdala, ACC = anterior cingulate cortex. *** p<0.001, NS = not significant.
 
 Because neuronal firing properties vary across cell types (Barthó et al., 2004; Keller et al., 2010; Peyrache et al., 2012; Le Van Quyen et al., 2008), we also tested whether baseline (pre-trial ISI) firing rates predicted a unit’s response to stimulation, suggestive of selective engagement of specific neuron populations. Stimulation-modulated units exhibited significantly higher baseline firing rates compared to unaffected units (U(NStim, Mod = 47, NStim, NS = 109)=3450.50, p<0.001). No difference in baseline firing rate was observed among units modulated in the no-stim condition, compared to those that were unaffected (U(NNo-Stim, Mod = 24, NNo-Stim, NS = 132)=1964.00, p=0.062) (Figure 3C). The median (Q1, Q3) baseline firing rates for modulated units in the stim and no-stim conditions were 1.77 Hz (0.95 Hz, 5.39 Hz) and 1.53 Hz (0.72 Hz, 5.41 Hz), respectively.
 
@@ -68,13 +112,13 @@ Our exploratory analyses of pseudo-population activity revealed interesting temp
 
 Finally, we performed three supplementary analyses to evaluate the robustness of our approach to detecting firing rate modulation: a sensitivity analysis assessing the proportion of modulated units at different firing rate thresholds for inclusion/exclusion, a data dropout analysis designed to control for the possibility that nonphysiological stimulation artifacts may preclude the detection of temporally adjacent spiking, and a synthetic detection probability analysis. These results recapitulate our observation that units with higher baseline firing are most likely to exhibit modulation (though the probability of detecting modulation is lower for sparsely active neurons) and suggest that suppression in firing rate is not solely attributable to amplifier saturation following stimulation (Figure 2—figure supplement 1).
 
-## Neurons exhibit heterogeneous responses to TBS
+### Neurons exhibit heterogeneous responses to TBS
 
 Recent studies have reported enhanced neural plasticity (via intracranial local field potential recordings and evoked responses) following repetitive direct electrical stimulation (Herrero et al., 2021; Huang et al., 2024; Huang et al., 2019; Keller et al., 2018). Accordingly, we hypothesized that recorded units would predominantly exhibit enhanced spiking in response to intracranial TBS of the BLA. Similarly, individual units exhibited highly variable responses to stimulation with respect to onset latency (rapid vs. delayed), duration (transient vs. durable), and valence (enhancement vs. suppression) (Figure 2B).
 
 The most common epoch for firing rate modulation was during the 1 s epoch in which TBS was delivered (25.0% of all neurons). Smaller subsets were modulated only in the 1 s post-stimulation epoch (6.4%) or in both the during- and post-stimulation epochs (1.3%). A similar trend was observed for modulation in the no-stim condition: 10.9% during, 5.8% post, and 1.3% for both. Suppression was most common among modulated units during stimulation (56.4%), whereas enhancement was the dominant response post-stimulation (70.0%). In contrast, enhancement was most common within both epochs across no-stim trials (58.5% during, 66.7% post). The mean (± SD) absolute z-scored difference in firing rate across stimulation trials (relative to pre-trial ISI) was z=0.60 (±0.58) and z=0.43 (±0.27) for the during- and post-stimulation epochs, respectively. Across no-stim trials, we observed a mean absolute z-scored difference of z=0.38 (±0.24) and z=0.30 (±0.18) in analogous epochs (Figure 3E). Additional characterization of multiunit activity (MUA) revealed a dominant signature of increased activity post- vs. pre-stimulation, in line with the trends observed at the single-neuron level (Figure 3—figure supplement 4).
 
-## TBS modulates excitatory and inhibitory neurons equally
+### TBS modulates excitatory and inhibitory neurons equally
 
 Using k-means clustering, we grouped neurons into two distinct clusters based on waveform morphology, representing neurons that were presumed to be excitatory (E) and inhibitory (I) (Figure 4B). Inhibitory (fast-spiking) neurons exhibited shorter waveform valley-to-peak width (VP) and peak half-width (PHW), compared with excitatory (regular-spiking) neurons (I cluster centroid: VP = 0.50 ms, PHW = 0.51 ms; E cluster centroid: VP = 0.32 ms, PHW = 0.31 ms) and greater baseline firing rates (U(NI = 23, NE = 133)=1074.50, p=0.023) (Figure 4D). Although we observed a much greater proportion of excitatory vs. inhibitory neurons (E: 85.3%, I: 14.7%), stimulation appeared to affect excitatory and inhibitory neurons equally, suggesting that one cell type is not preferentially activated over another (Figure 4E).
 
@@ -82,9 +126,17 @@ Using k-means clustering, we grouped neurons into two distinct clusters based on
 
 **Figure 4.:** (A) Two metrics were calculated using the averaged waveforms for each detected unit: the valley-to-peak width (VP) and peak half-width (PHW). (B) Scatterplot of the relationship between VP and PHW; note that units with identical metrics are overlaid. Using k-means clustering, we identified two distinct response clusters, representing presumed excitatory (E, blue) and inhibitory (I, red) neurons. The units from which the example waveforms were taken are outlined in black. Probability distributions for each metric are shown along the axes. (C) Total number of units within each cluster, separated by region. (D) Comparison of baseline firing rates, separated by cluster. (E) Percent of modulated units in each cluster. *p<0.05, NS = not significant.
 
-## Association between neuronal modulation and memory performance is unclear
+### Association between neuronal modulation and memory performance is unclear
 
 Next, we investigated the link between stimulation and performance during the visual recognition memory task. To this end, we first used a linear mixed-effects model to examine the effect of condition (stim, no-stim) on memory performance (d’) across trials in each session, with individual sessions treated as a random effect (intercept). Experiment type was also included as a fixed effect since data were aggregated across four highly similar experiments with minor differences in the content of visual stimuli, number of trials, stimulation parameters, and testing intervals. We did not observe an overall effect of memory enhancement (p>0.05) when controlling for subject-level variability (Figure 5A). The lack of a memory enhancement effect may be associated with high hit rates limiting sensitivity (mean ± SD) (75.7% ± 13.5% for no-stim trials, 75.0% ± 14.3% for stim trials) and considerable variability among false alarm rates across participants (17.9% ± 17.4%, range 0–70%; Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig5-v1.jpg)
+
+**Figure 5.:** (A) Memory performance for each session is quantified using d’ (left); gray lines connect d’ scores across conditions for an individual session. Boxplot of the observed difference in d’ scores across conditions (right). (B) Hit rate (percent of old images correctly recognized) and false alarm rate (percent of new images incorrectly labeled as old) across conditions. (C) Change in recognition memory performance was split into two categories using a d’ difference threshold of ±0.5: responder (positive or negative; Δd’, pink) and non-responder (~d’, gray). Individual d’ scores are shown (left) with points colored by outcome category; dotted lines demarcate category boundaries, and the gray-shaded region represents negligible change. The number of sessions within each outcome category (middle) and the proportion of modulated units as a function of outcome category, separated by region (right). NS = not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/106481/elife-106481-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Kernel density estimate of the Euclidean distance from stimulation contacts to nearest WM structure (in mm); hash marks represent individual observations. (B) The change in memory performance (Δd’) was linearly regressed onto the distance from the stimulated contacts to white matter.
 
 At the level of individual sessions, we observed enhanced memory (Δd’ >+0.5) in 36.7%, impaired memory (Δd’<–0.5) in 20.0%, and negligible change (–0.5 ≤ Δd’≤0.5) in 43.3% when comparing performance between the stim and no-stim conditions; a threshold of Δd’±0.5 was chosen for this classification based on the defined range of a ‘medium effect’ for Cohen’s d. To test our hypothesis that neuronal modulation would be associated with changes in memory performance, we combined the sessions that resulted in either memory enhancement or impairment and contrasted the proportion of modulated units across regions sampled. We did not, however, observe a meaningful difference in the proportion of modulated units when grouped by behavioral outcome (all contrasts p>0.05) (Figure 5C).
 
@@ -112,45 +164,45 @@ How exactly the activity of single neurons is aggregated to produce local field 
 
 Finally, we performed an exploratory analysis of neuronal pseudo-population activity, which suggests that hippocampal neurons exhibit robust changes in firing rate coactivity in response to BLA stimulation. Related research has similarly described how BLA stimulation can induce synchronous firing of hippocampal neurons, which has memory-enhancing effects (Bass and Manns, 2015). Other studies have leveraged similar, low-dimensional representations of population dynamics to describe how coordinated neural activity facilitates inferential reasoning and memory retrieval within the medial frontal cortex and hippocampus, respectively (Courellis et al., 2024; Minxha et al., 2020). Thus, a greater understanding of how neuronal coactivity may be precisely modulated by stimulation may help to refine therapeutic interventions targeting complex cognition and computation.
 
-## Conclusions
+### Conclusions
 
 By characterizing patterns of neuronal modulation evoked by intracranial TBS, we provide new insights that link micro- and macroscale responses to stimulation of the human brain. These insights advance our limited understanding of how focal electrical fields influence neuronal firing at the single-cell level and motivate future neuromodulatory therapies that aim to recapitulate specific patterns of activity implicated in cognition and memory.
 
 ## Methods
 
-## Participants
+### Participants
 
 We report results from a cohort of 23 patients with medically refractory epilepsy who underwent stereoelectroencephalography to localize epileptogenic foci (74% female, 19–66 years of age). All patients were age 18+ and able to provide informed consent. No exclusion was made concerning a patient’s sex, gender, race, ethnicity, or socioeconomic status. Surgeries were performed at the University of Utah in Salt Lake City, UT, USA (n=10) and Barnes-Jewish Hospital in St. Louis, MO, USA (n=13). Patients were monitored continuously by a clinical team during their postoperative hospital course. Each patient signed a written informed consent form before participation in the research study; all study procedures were approved by the Institutional Review Board at the University of Utah (IRB 00144045, IRB 00114691) and Washington University (IRB 202104033).
 
-## Electrode placement and localization
+### Electrode placement and localization
 
 Numbers and trajectories of stereoelectroencephalography electrode placements were determined case-by-case and solely derived from clinical considerations during a multidisciplinary case conference without reference to this research program. Each patient was implanted with clinical macroelectrodes and 1–3 Behnke-Fried depth electrodes (Ad-Tech Medical Instrument Corporation, Oak Creek, WI, USA), which contained both macro- and microelectrode contacts (eight 40 µm diameter microwires and one unshielded reference wire) for recording local field potentials and extracellular action potentials, respectively (Figure 1A). To localize electrodes, we leveraged the open-access Localize Electrodes Graphical User Interface (LeGUI) (Davis et al., 2021) software developed by our group, which performs coregistration of preoperative MRI and postoperative CT sequences, image processing, normalization to standard anatomical templates, and automated electrode detection.
 
-## Intracranial electrophysiology
+### Intracranial electrophysiology
 
 Neurophysiological data were recorded at both hospitals using a neural signal processor (Blackrock Microsystems, Salt Lake City, UT, USA; Nihon Koden USA, Irvine, CA, USA) sampling at 30 kHz. Microelectrode contacts were locally referenced to a low-impedance microwire near the recording wires. Macroelectrode contacts were referenced to an intracranial contact located within the white matter with minimal activity, per recommended practices (Mercier et al., 2022).
 
-## Experimental design
+### Experimental design
 
 Patients completed a visual recognition memory task previously employed by our group to characterize the effects of BLA stimulation upon memory consolidation (Inman et al., 2018). The memory task consisted of an encoding session, during which a series of neutral valence images were presented, and a self-paced retrieval session ~24 hr post-encoding wherein patients were asked to indicate whether each image onscreen was old (previously shown) or new (unseen) (Figure 2A). Data were aggregated across four highly similar experimental paradigms with minor differences in the content of visual stimuli, number of trials, stimulation parameters, and testing intervals. Each encoding session consisted of 160 or 320 trials wherein an image was presented on screen for 3 s, followed by an ~6 s interstimulus interval (fixation cross on screen).
 
-## Spike detection and sorting
+### Spike detection and sorting
 
 Microelectrode data were first filtered between 250 and 500 Hz with a zero-phase lag bandpass filter and re-thresholded offline at –3.5 times the root mean square of the signal to identify spike waveforms. Units were isolated during a semiautomated process within Offline Sorter (Plexon Inc, Dallas, TX, USA) by applying the T-distribution expectation maximization method on the first three principal components of the detected waveforms (initial parameters: degrees of freedom multiplier = 4, initial number of units = 3) (Shoham et al., 2003). Finally, the waveform shapes, interspike interval distribution, consistency of firing, and isolation from other waveform clusters were manually inspected for further curation and removal of spurious, nonphysiological threshold crossings that could represent stimulation artifacts.
 
-## Single-unit quality metrics
+### Single-unit quality metrics
 
 We calculated several distinct metrics to characterize detected units’ properties and assess the quality of our spike sorting (Figure 1—figure supplement 2): the number of units detected per microelectrode bundle, the mean firing rate (Hz) for each unit, the percentage of interspike intervals <3 ms, the coefficient of variation across each unit’s spike train, the average presence ratio of firing in 1 s bins (proportion of bins which contain ≥1 spike), the ratio between the peak amplitude of the averaged waveform and its standard deviation, and the mean signal-to-noise ratio of the averaged waveform.
 
-## Discrimination of excitatory vs. inhibitory neurons
+### Discrimination of excitatory vs. inhibitory neurons
 
 We calculated two metrics from the averaged waveform from each detected unit: the VP and the PHW (Figure 4A); previously, these two properties of waveform morphology have been used to discriminate pyramidal cells (excitatory) from interneurons (inhibitory) in human intracranial recordings (Peyrache et al., 2012). Next, we performed k-means clustering (n=2 clusters) on the waveform metrics, in line with previous approaches to cell-type classification.
 
-## Intracranial TBS
+### Intracranial TBS
 
 We delivered direct electrical stimulation to the BLA during half of the trials in the encoding phase of each experimental session. Stimulation pulses were delivered immediately once the image was removed from the screen and in a patterned rhythm designed to entrain endogenous theta-gamma oscillatory interactions (i.e. TBS) (Hanslmayr et al., 2016; Suppa et al., 2016). Specifically, we administered current-controlled, charge-balanced, bipolar, 1 mA, biphasic rectangular pulses over a 1 s period with a 50% duty cycle. Stimulation pulses were delivered at a rate of 50 Hz and nested within eight equally spaced bursts (~8 Hz) (Figure 2B and C). A subset of experiments (n=7) used a lower current (0.5 mA) with variable pulse frequencies across trials (33 Hz, 50 Hz, 80 Hz).
 
-## Peri-stimulation modulation analyses
+### Peri-stimulation modulation analyses
 
 We first created peri-stimulation epochs (1 s pre-trial ISI, 1 s after image onset, 1 s during stimulation/after image offset, 1 s post-stimulation), with t=0 representing stimulation onset and the moment at which the image was removed from the screen (Figure 2A); identical epochs were created for the image-only (no-stimulation) trials. Each epoch was constrained to 1 s to ensure that subsequent firing rate contrasts were unbiased and to capture potential transient effects (e.g. image onset/offset). Units with a trial-averaged baseline (pre-trial ISI) firing rate of <0.1 Hz were excluded from subsequent analyses because low firing rates limited the ability to detect modulation robustly. Units were designated as ‘modulated’ if either the during- or post-stimulation firing rate contrast was significant following permutation testing (described in Statistical approach). An additional contrast of pre-trial ISI vs. image onset was performed to evaluate the sensitivity of neurons to task stimuli (i.e. image presentation).
 
@@ -158,16 +210,16 @@ To investigate whether stimulation altered rhythmicity in neuronal firing, we an
 
 Finally, we measured modulation in MUA by filtering the microelectrode signals in a 300–3000 Hz window and counting the number of threshold crossings. Thresholds were determined on a per-channel basis and defined as –3.5 times the root mean square of the signal during the baseline period; activity during stimulation was excluded since stimulation artifact is difficult to separate from MUA in the absence of spike sorting.
 
-## Population analyses
+### Population analyses
 
 To analyze pseudo-population activity, we performed a linear dimensionality reduction with principal component analysis (PCA) on a matrix of the z-scored trial-averaged firing rates of all neurons recorded across patients (sklearn.decomposition.PCA). This approach enables the identification of dominant patterns of coordinated neural activity that may not be apparent when examining individual neurons in isolation. Doing so allowed us to qualitatively examine the temporal dynamics of the dominant modes of neuron coactivity in a low-dimensional subspace, separated by experimental condition (stim vs. no-stim), region, and laterality relative to stimulation. The firing rate matrices for each condition were concatenated prior to PCA to facilitate direct comparison among the principal components; for simplicity, only the first three principal components are visualized. By collapsing across subjects into a common pseudo-population, this analysis provides a mesoscale view of how stimulation modulates shared activity patterns across anatomically distributed neural populations.
 
-## Statistical approach
+### Statistical approach
 
 All statistical analyses were conducted using custom Python scripts and established statistical libraries (i.e. Scikit-learn [Pedregosa et al., 2012], Scipy [Virtanen et al., 2020], Statsmodels [Seabold and Perktold, 2010]). We performed two separate Wilcoxon signed-rank tests across trials on the during- and post-stimulation spike counts relative to their corresponding pre-trial baseline spike counts. To control for false positives, we compared the empirical test statistic against a null distribution generated from shuffling pre/during/post epoch labels (n=1000 permutations) (Figure 2B). An identical analysis was also performed on the no-stimulation (image-only) trials.
 
 To test for differences in the proportion of modulated units (across conditions, regions, cell type, stimulation parameters, and behavioral outcomes), we performed a series of one- and two-sided Fisher’s exact tests. Next, we used Mann-Whitney U tests to contrast baseline firing rates among modulated vs. unaffected units. Behavioral performance during the memory task was calculated using d-prime (d’), defined as the difference in an individual’s z-scored hit rate and false alarm rate. Observed changes in recognition memory were split into two categories using a d’ difference threshold of ±0.5: responder (Δd’<–0.5 or Δd’ >+0.5) or non-responder (–0.5≤Δd’≤0.5). The threshold of ±0.5 was chosen based on the defined range of a ‘medium effect’ for Cohen’s d, which bears conceptual similarity to d’. To test the hypothesis that stimulation affected behavioral performance, we used a linear mixed effects model with d’ score as the dependent variable, condition and experiment as fixed effects, and session as a random effect; an additional test for differences among hit rates (percent of previously seen images correctly identified) was implemented using a paired-samples t-test.
 
-## Firing rate control analyses
+### Firing rate control analyses
 
 We performed a series of control analyses to test whether our approach to firing rate detection was robust. First, we performed a sensitivity analysis by systematically varying the baseline firing rate threshold used to exclude units from modulation analyses. The threshold for inclusion of units was varied from 0 to 3 Hz (0.1 Hz step size), and the firing rate analyses were repeated to quantify the proportion of units meeting inclusion criteria and the proportion of units designated as modulated (Figure 2—figure supplement 1A). Next, we performed a dropout analysis wherein segments of data near the onset of a stimulation burst were removed from the during-stimulation epoch (an identical segment was also removed from the pre-trial ISI and post-stimulation epochs). To this end, we removed a window of data starting at the onset of each burst spanning 0–60 ms (5 ms step size, eight bursts in train) and recomputed the proportion of units meeting inclusion criteria and the proportion of units designated as modulated (Figure 2—figure supplement 1B). Finally, to better understand the trade-offs with our statistical approach, we generated synthetic data with different baseline firing rates (0.1–5.0 Hz) and effect sizes (±0.1–0.7 Hz), then simulated the likelihood of detecting modulation across variable conditions (Figure 2—figure supplement 1C).

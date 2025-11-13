@@ -27,7 +27,7 @@
 
 ## Abstract
 
-Somatic copy number alterations (CNAs) are a hallmark of cancer, but their role in tumorigenesis and clinical relevance remain largely unclear. Here, we developed CNApp, a web-based tool that allows a comprehensive exploration of CNAs by using purity-corrected segmented data from multiple genomic platforms. CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples. We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores. Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances. In summary, CNApp facilitates CNA-driven research by providing a unique framework to identify relevant clinical implications. CNApp is hosted at https://tools.idibaps.org/CNApp/ .
+Somatic copy number alterations (CNAs) are a hallmark of cancer, but their role in tumorigenesis and clinical relevance remain largely unclear. Here, we developed CNApp, a web-based tool that allows a comprehensive exploration of CNAs by using purity-corrected segmented data from multiple genomic platforms. CNApp generates genome-wide profiles, computes CNA scores for broad, focal and global CNA burdens, and uses machine learning-based predictions to classify samples. We applied CNApp to the TCGA pan-cancer dataset of 10,635 genomes showing that CNAs classify cancer types according to their tissue-of-origin, and that each cancer type shows specific ranges of broad and focal CNA scores. Moreover, CNApp reproduces recurrent CNAs in hepatocellular carcinoma and predicts colon cancer molecular subtypes and microsatellite instability based on broad CNA scores and discrete genomic imbalances. In summary, CNApp facilitates CNA-driven research by providing a unique framework to identify relevant clinical implications. CNApp is hosted at https://tools.idibaps.org/CNApp/.
 
 ## Introduction
 
@@ -41,37 +41,65 @@ To address this issue, we developed CNApp, the first open-source application to 
 
 ## Results
 
-## Implementation
+### Implementation
 
 CNApp comprises three main sections: 1- Re-Seg and Score: re-segmentation, CNA scores computation, variable association and survival analysis, 2- Region profile: genome-wide CNA profiling, CNA frequencies, correlation profiles and descriptive regions, and 3- Classifier model: machine learning classification model predictions (Figure 1). Each of these sections and their key functions are described below. The input file consists of a data frame with copy number segments provided by any segmentation algorithm. Mandatory fields and column headers are sample name (ID), chromosome (chr), start (loc.start) and end (loc.end) genomic positions, and the log2 ratio of the copy number amplitude (seg.mean) for each segment. Section one incorporates the correction for tumor purity (i.e. fraction of tumor cells in the sample) to measure the actual magnitude of CNAs. Thus, when available, the input file will also include sample purity estimations (purity) and BAF values (BAF), which correct the accuracy of CNA calls and provide copy number neutral loss-of-heterozygosity (CN-LOH) events. Ploidy values, if known, might also be indicated as an independent variable. Annotation of variables can be included in the input file (tagged in every segment from each sample) or by uploading an additional file indicating new variables per sample.
 
-## Re-Seg and score: re-segmentation, CNA scores computation, variable association and survival analysis
+![Figure 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig1-v2.jpg)
+
+**Figure 1.:** The diagram depicts the overall processes performed by CNApp and indicates the output for each section.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Broad CNA Score (BCS) and fractions of altered genome affected by broad CNA events (whole chromosome and arm-level alterations) in each respective sample (Figure 1—figure supplment 1—source data 1). (B) Focal CNA Score (FCS) and the fraction of altered genome by focal CNA events in each respective sample (Figure 1—figure supplment 1—source data 1). (C) Global CNA Score (GCS) and the overall fraction of altered genome in each respective sample (Figure 1—figure supplment 1—source data 1). (TIFF 572 KB).
+
+#### Re-Seg and score: re-segmentation, CNA scores computation, variable association and survival analysis
 
 First, CNApp applies a re-segmentation approach to adjust for amplitude divergence due to technical variability and correct for estimated tumor purity. Default re-segmentation settings include minimum segment length (100 Kbp), minimum amplitude (seg.mean) deviation from segment to zero (0.16), maximum distance between segments (1 Mb), maximum amplitude (seg.mean) deviation between segments (0.16), and maximum BAF deviation between segments (0.1). These parameters can be customized by the user to better adjust the re-segmentation for each particular dataset. Re-segmented data are then used to calculate the broad (BCS), focal (FCS) and global (GCS) CNA scores, which provide three different quantifications of CNA levels for each sample. To compute these scores, CNApp classifies and weights CNAs based on their length and amplitude. For each sample, BCS is computed by considering broad (chromosome and arm-level) segment weights according to the amplitude value. Likewise, calculation of FCS takes into account weighted focal CNAs corrected by the amplitude and length of the segment. Finally, GCS is computed by considering the sum of normalized BCS and FCS, providing an overall assessment of the CNA burden.
 
 To assess the reliability of CNA scores, we compared each score with the corresponding fraction of altered genome using a TCGA pan-cancer set of 10,635 samples. Both BCS (ranging from 0 to 44) and FCS (values ranging from 5 to 2466) highly correlated with the fraction of altered genome by broad and focal copy number changes, respectively (Spearman's rank correlation for BCS = 0.957 and for FCS = 0.938) (Figure 1—figure supplment 1A and B—source data 1). As expected, GCS (values ranged from −1.93 to 12.60) highly correlated with the fraction of altered genome affected by both broad and focal CNAs (Spearman’s rank correlation for GCS = 0.963 (Figure 1—figure supplment 1C—source data 1). Parametric and non-parametric statistical tests are used to establish associations between CNA scores and annotated variables from the input file. Additionally, Kaplan-Meier survival curves are computed using either CNA scores or additional variables.
 
-## Region profile: genome-wide CNA profiling
+#### Region profile: genome-wide CNA profiling
 
 This section transforms segmented data (either re-segmented data from section one or original segments uploaded by the user) into genomic region profiles to allow sample-to-sample comparisons. Different genomic windows can be selected to compute the genomic profiles (i.e. chromosome arms, half-arms, cytobands, sub-cytobands or 40–1 Mb windows). All segments, or either only broad or only focal can be selected for this analysis. Length-relative means are computed for each window by considering amplitude values from those segments included in each specific window. Default cutoffs for low-level copy number gains and losses (i.e., |0.2|) are used to infer CNA frequencies. Genomic profiles are presented in genome-wide heatmaps to visualize general copy number patterns. Up to six annotation tracks can be added and plotted simultaneously allowing visual comparison and correlation between CNA profiles and different variables, including the CNA scores obtained in section 1. CNA frequency summaries by genomic region and by sample are represented as stacked bar plots. Correlation values and hierarchical clusters are optional.
 
 Importantly, assessing differentially altered regions between sample groups might contribute to discover genomic regions associated with annotated variables and thus unveil the biological significance of specific CNAs. To do so, CNApp interrogates descriptive regions associated with any sample-specific annotation variable provided in the input file. Default statistical significance is set to p-value lower than 0.1. However, p-value thresholds can be defined by the user and adjusted p-value is optional. A heatmap plot allows the visualization and interpretation of which genomic regions are differentially altered between sample groups. By selecting a region of interest, box plots and stacked bar plots are generated comparing seg.mean values and alteration counts in Student’s t-test and Fisher’s test tabs, respectively. Additionally, genes comprised in the selected genomic region are indicated.
 
-## Classifier model: Machine learning classification model predictions
+#### Classifier model: Machine learning classification model predictions
 
 This section allows the user to generate machine learning-based classifier models by choosing a variable to define sample groups and one or multiple classifier variables. To do so, CNApp incorporates the randomForest R package (Liaw and Wiener, 2002). The model construction is performed 50-times, in which training sets of 75% of samples are used in each permutation and the remaining 25% are classified by applying the trained model. By default, annotation variables from the input file are loaded and can be used either by defining sample groups or as a classifier. If Re-Seg and Score and/or Region profile sections have been previously completed, the user can upload data from these sections (i.e. CNA scores and genomic regions). Predictions for the model performance are generated and the global accuracy is computed along with sensitivity and specificity by group. Classifier models can be useful to point out candidate clinical or molecular variables to classify sample subgroups. Nevertheless, the output from the Classifier model would need to be further validated using alternative prediction algorithms and/or independent datasets. A summary of the data distribution and plots for real and model-predicted groups are visualized. A table with prediction rates throughout the 50-times iteration model and real tags by sample is displayed and can be downloaded.
 
-## Characterization of cancer types based on CNA scores
+### Characterization of cancer types based on CNA scores
 
 First, we evaluated the ability of CNApp to analyze and classify cancer types according to CNA scores, and assessed whether CNApp was able to reproduce specific CNA patterns across different cancer types. To do so, by using CNApp default parameters we obtained re-segmented data, CNA scores and cancer-specific CNA profiles for 10,635 tumor samples spanning 33 cancer types from the TCGA pan-cancer dataset. The distribution of BCS, FCS and GCS confirmed the existence of distinct CNA burdens across cancer types (Figure 2A—source data 1). While cancer types such as acute myeloid leukemia (LAML), thyroid carcinoma (THCA) or thymoma (THYM) showed low levels of broad and focal events (GCS median values of −1.67 for LAML, −1.68 for THCA, and −1.52 for THYM), uterine carcinosarcoma (UCS), ovarian cancer (OV) and lung squamous cell carcinoma (LUSC) displayed high levels of both types of genomic imbalances (GCS median values of 2.55, 2.44, and 0.97 for UCS, OV, and LUSC, respectively). Some cancer types displayed a preference for either broad or focal CNAs. For example, kidney chromophobe (KICH) tumors showed the highest levels of broad events (median BCS value of 27), while focal CNAs in this cancer type were very low (median FCS value of 49). In contrast, breast cancer (BRCA) samples displayed high FCS values (median FCS value of 150), while BCS values were only intermediate (median BCS value of 7). Overall correlations between CNA scores were assessed by computing Spearman’s rank test, obtaining values of 0.59 between BCS and FCS, 0.90 between BCS and GCS, and 0.85 between FCS and GCS. In addition, we further assessed the correlation between BCS and FCS for each individual BCS value. While tumors with low BCS displayed a positive correlation between broad and focal alterations, tumors did not maintain such correlation in higher BCS values (Figure 2—figure supplement 1A and B). This correlation between BCS and FCS is maintained across the 33 cancer types (Figure 2—figure supplement 1C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-v2.jpg)
+
+**Figure 2.:** CNApp outputs to characterize pan-cancer 10,635 samples including 33 TCGA cancer types. (A) Broad, Focal and Global CNA scores (BCS, FCS and GCS, respectively) distribution across the 33 cancer types (Figure 2—source data 1). (B) Genome-wide chromosome arm CNA profile heatmap for 10,635 samples considering broad and focal events. Annotation tracks for FCS, BCS and GCS are presented. (C) Arm regions frequencies as percentages relative to the TCGA pan-cancer dataset (red for gains and blue for losses). (D) Heatmap plot showing 20 out of the 33 TCGA cancer type profile correlations, by Pearson's method, hierarchically clustered by tissue of origin. Gastrointestinal, gynecological and squamous cancers are clustering consistently in their respective groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) BCS values (x-axis) and FCS values (y-axis) scatterplot for 10,635 samples from pan-cancer cohort. Scatterplot smoothing by loess regression curve (in blue) and confidence interval. (B) Correlation plot showing broad and focal CNA score values for the TCGA pan-cancer dataset. Spearman’s rank correlation test between broad and focal CNA scores (BCS and FCS, respectively) was performed. Sample subsets were computed by selecting 500 random samples from those displaying BCS ±5 for each BCS value. Values of BCS and FCS for each subset of samples were correlated. (C) Scatterplots for the 33 cancer types with BCS values (x axis) and FCS values (y axis) in samples. Scatterplot smoothing by loess regression curve (in blue) and confidence interval. (TIFF 3.7 MB).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Heatmap analysis showing mean chromosome arm region profiles taking into account both broad and focal alterations, spanning 20 cancer type, for 8653 samples from the TCGA pan-cancer dataset. Cancer types were indicated in the column ID from the input file. Annotation track displays tumor types, including squamous cell carcinomas, gynecological cancers, gastrointestinal cancers, and others. (B) Heatmap analysis showing mean 5 Mb region profiles taking into account only focal alterations, spanning 20 cancer type, for 8653 samples from the TCGA pan-cancer dataset. Cancer types were indicated in the column ID from the input file. Annotation track displays tumor types, including squamous cell carcinomas, gynecological cancers, gastrointestinal cancers, and others. (C) Heatmap plot showing 20 out of the 33 TCGA cancer type profile (by 5 Mb genomic regions and accounting only for focal alterations) correlations, by Pearson's method, hierarchically clustered by tissue of origin. Gastrointestinal, gynecological and squamous cancers are clustering consistently in their respective groups. (TIFF 2.8 MB).
+
 Subsequent analysis aimed at generating genome-wide patterns for each cancer type based on chromosome-arm genomic windows and the overall corresponding frequencies. In agreement with previous studies (Beroukhim et al., 2010), cancer type-specific patterns of genomic gains and losses determined the tissue-of-origin (Figure 2B). Additionally, we found that chromosome arms altered in more than 25% across all samples were 1q, 7 p, 7q, 8q and 20q for copy number gains, and 8 p and 17 p for copy number losses. Conversely, chromosome arms affected by CNAs in less than 10% of all cancer types included chromosome arms 2q and 19 p (Figure 2C). By using a subset of 20 out of the 33 cancer types for which tumor type information was available, we asked CNApp to compute the average arm-region for each cancer type to assess if they clustered according to their CNA profiles (Figure 2—figure supplement 2A). Our analysis showed that correlation values resulting from Pearson’s test hierarchically clustered according to the tissue-of-origin from the tumor. Gastrointestinal (colon, rectum, stomach and pancreatic), gynecological (ovarian and uterine) and squamous (cervical, head and neck, and lung) cancers clustered together based on specific CNA profiles for each group (Figure 2D). Intriguingly, correlation profiles using 5 Mb windows and only considering focal alterations showed a very similar degree of clustering based on the tissue of origin (Figure 2—figure supplement 2B&C).
 
-## Identification of recurrent CNAs in hepatocellular carcinoma: Benchmark with other available tools
+### Identification of recurrent CNAs in hepatocellular carcinoma: Benchmark with other available tools
 
 Next, we attempted to test the ability of CNApp to identify recurrent broad and focal CNAs in a large cohort, and to assess the impact of the customizable parameters to describe CNA profiles. For that reason, we chose to perform CNA analysis of 370 samples from TCGA corresponding to the Liver Hepatocellular Carcinoma (LIHC) cohort. The pattern of recurrent broad and focal CNAs identified by GISTIC2.0 in the TCGA study (Ally et al., 2017) was similar to earlier reports, confirming the suitability of this cohort and the consistent identification of a CNA profile for hepatocellular carcinoma (HCC) (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Totoki et al., 2014; Wang et al., 2013).
 
 By applying the default parameters of CNApp to the LIHC dataset and selecting chromosome arms as genomic regions to assess broad events, we consistently found copy number gains at 1q (56%) and 8q (46%), and copy number losses at 8 p (62%) and 17 p (47%) as the most frequent alterations (Figure 3A). These CNAs are the same as those identified by GISTIC2.0; however, frequencies were slightly lower (Supplementary file 1). Similarly, GISTIC2.0 detected significant gains with rates between 25–40% on eight additional chromosome-arms, including 5 p, 5q, 6 p, 20 p, 20q, 7 p, 7q, and 17q, which were also identified by CNApp, but in 20–30% of the samples. Likewise, GISTIC2.0 detected significant broad deletions at a frequency between 20% and 40% on 18 additional chromosome-arms, of which 4q, 6q, 9 p, 13q, 16 p, and 16q losses were observed at frequencies ≥ 20% by CNApp, and the rest of them displayed rates between 10% and 20%. Therefore, the identification of CNAs in CNApp is very consistent with those described by GISTIC2.0. Differences in frequencies might be expected due to the lower copy number amplitude thresholds used by GISTIC2.0 in comparison with CNApp default cutoffs (|0.1| vs. |0.2|, corresponding to ~2.14/1.8 copies vs. 2.3/1.7 copies, respectively). Indeed, previous reports analyzing CNAs in other HCC cohorts and using greater copy number thresholds, showed frequencies of alterations much more similar to those estimated by CNApp (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Wang et al., 2013). To assess the impact of modifying CNApp amplitude thresholds, we analyze the same dataset dropping the cutoff to |0.1|. By doing so, the overall number of broad CNAs increased, reaching frequency values similar or even higher than those reported by GISTIC2.0 (Figure 3B and Supplementary file 1). Of note, such drop from |0.2| to |0.1| might result in the identification of subclonal genomic imbalances, which are very frequent in tumor samples (McGranahan and Swanton, 2017), and it would also be of utility to compensate for low tumor purities. To evaluate the impact of other customizable parameters of CNApp to the results, we also tested whether the identification of broad events was affected by: (i) the relative length to classify a segment as arm-level alteration, and (ii) the re-segmentation provided by CNApp. As expected, increasing the percentage of chromosome arm required to classify a CNA segment as arm-level (from ≥50% to≥70%) or skipping the re-segmentation step led to an underestimation of some broad events, whereas decreasing the percentage of chromosome arm (from ≥50% to≥40%) resulted in the opposite (Figure 3—figure supplement 1A–C and Supplementary file 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig3-v2.jpg)
+
+**Figure 3.:** Calculation of broad and focal CNA frequencies using several parameters in CNApp in order to describe the genomic landscape of LIHC. (A) CNApp frequencies for chromosome arm regions using default cutoffs, corresponding to 2.3/1.7 copies for gains and losses, respectively. (B) CNApp frequencies for chromosome arm regions relaxing cutoffs to make them equivalent to those of GISTIC2.0. (C) CNApp frequencies of focal events using default thresholds and sub-cytobands genomic regions. (D) Frequencies of focal events from moderate- to high-amplitude levels using sub-cytobands genomic regions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The threshold of the relative length to the chromosome arm was set at ≥70% to classify segments as chromosome arm-level. (B) Lowering the threshold of the relative length to the chromosome arm to ≥40%. (C) Frequency plot using input data without the re-segmentation step. (TIFF 721 KB).
 
 As far as focal CNAs are concerned, CNApp and GISTIC2.0 use different strategies to quantify their recurrence. Therefore, the comparison between the two methods was evaluated in a more indirect manner. GISTIC2.0 generates minimal common regions (also known as ‘peaks’) that are likely to be altered at high frequencies in the cohort, which are scored using a Q-value and may present a wide variety of genomic lengths (Mermel et al., 2011). Instead, CNApp allows dividing the genome in windows of different sizes, calculating average copy number amplitudes for all segments included within each window. We reasoned that considering the length of GISTIC2.0 reported ‘peaks’, CNApp might also be capable of identifying recurrent focal altered regions by dividing the genome in smaller windows. To test our hypothesis, we asked CNApp to calculate the frequency of focal gains and losses by dividing the genome by sub-cytobands. As a result, CNApp consistently localized the most frequently altered sub-cytobands, including gains at 1q21.3 (25%), 8q24.21 (17%, MYC), 5p15.33 (13%, TERT), 11q13.3 (12%, CCND1/FGF19) and 6p21.1 (11%, VEGFA), and losses at 13q14.2 (20%, RB1), 1p36.11 (18%, ARID1A), 4q35.1 (17%, IRF2) and 9p21.3 (14%, CDKN2A), which are in agreement with previous studies in HCC (Figure 3C and Supplementary file 2) (Chiang et al., 2008; Guichard et al., 2012; Schulze et al., 2015; Wang et al., 2013). Compared to GISTIC2.0, CNApp reported 14 of the 27 significant amplifications and 14 of the 34 significant deletions at rates > 10%, and the remaining alterations displaying rates between 4–10% (Supplementary file 3) (Wang et al., 2013). Most importantly, regions with the highest frequency detected by CNApp showed a good match with lowest GISTIC2.0 Q-residual values, indicating that the most significant ‘peaks’ identified by GISTIC2.0 were actually included in the most recurrently altered sub-cytobands reported by CNApp.
 
@@ -79,9 +107,17 @@ Recurrent focal alterations occur at lower frequencies than broad events (Berouk
 
 In order to assess genomic differences between independent sample sets, CNApp determines significance based on regression analysis and statistical tests such as Student's t-test or Fisher's exact test, which allow association of genomic regions based on the seg.mean value or the presence of alterations with specific samples, respectively. To test the suitability of our method, we analyzed a subset of 100 randomly selected samples from the LIHC (n = 50) and COAD (n = 50) TCGA cohorts and we compared our results with those obtained by the recently published tool CoNVaQ (Larsen et al., 2018). Fourteen CNAs (5 gains and 9 losses) showing significant differences between COAD and LIHC were identified by CoNVaQ with a Q < 0.05. The lengths of these CNAs ranged from 38 to 133 Mb, with an average of 67 Mb, suggesting that they were mainly broad events. Consequently, in CNApp, we selected genomic windows corresponding to chromosome arms, and used the default CNA cut-offs (i.e. |0.2|) and maximum number of base pairs allowed for merging adjacent segments (i.e. 1,000,000 bp) for comparison. By doing so, 9 out of 14 events identified by CoNVaQ were also detected by CNApp with an adjusted p<0.05 (Fisher’s exact test). For the remaining five events, four of them were found with an adjusted p=0.06–0.1, thus suggesting a good correlation between CNApp and CoNVaQ when considering broad CNAs.
 
-## Classification of colon cancer according to CNA scores and genomic regions
+### Classification of colon cancer according to CNA scores and genomic regions
 
 A proposed taxonomy of colorectal cancer (CRC) includes four consensus molecular subtypes (CMS), mainly based on differences in gene expression signatures (Guinney et al., 2015). Briefly, CMS1 includes the majority of hypermutated tumors showing microsatellite instability (MSI), high CpG island methylator phenotype (CIMP), and low levels of CNAs; CMS2 and CMS4 typically comprise microsatellite stable (MSS) tumors with high levels of CNAs; and finally, mixed MSI status and low levels of CNAs and CIMP are associated with CMS3 tumors. A representative cohort of 309 colon cancers from the TCGA Colon Adenocarcinoma (COAD) cohort (Cancer et al., 2012) with known CMS classification (CMS1, N = 64; CMS2 N = 112; CMS3 N = 51; CMS4 N = 82) and MSI status (MSI, N = 72; MSS, N = 225) was analyzed by using CNApp. In agreement with Guinney and colleagues, survival curves generated by CNApp indicated that CMS1 patients after relapse showed the worst survival rates as compared to CMS2 patients (Figure 4—figure supplement 1A) (Guinney et al., 2015). Next, we asked CNApp to perform the re-segmentation step using the default copy number thresholds and excluding segments smaller than 500 Kbp to avoid technical background noise. Then, broad CNAs were considered to generate genomic region profiles using chromosome-arm windows. As expected, the CNA frequency plot displayed the most commonly altered genomic regions in sporadic CRC (Figure 4—figure supplement 1B) (Camps et al., 2008; Cancer et al., 2012; Meijer et al., 1998; Nakao et al., 2004; Ried et al., 1996). Most frequently altered chromosome arms included gains of 7 p, 7q, 8q, 13q, 20 p, and 20q, and losses of 8 p, 17 p, 18 p, and 18q, occurring in more than 30% of the samples (Figure 4A). On the other hand, focal CNA patterns were obtained by generating genomic profiles by sub-cytobands. Of note, five out of six losses and five out of 18 gains were also identified by GISTIC2.0 in the COAD TCGA cohort (Cancer et al., 2012).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig4-v2.jpg)
+
+**Figure 4.:** (A) Arm-region frequencies of 309 colon cancer samples using CNApp default thresholds for CNAs. (B) BCS distribution by CMS sample groups (Figure 4—source data 1). FCS distribution by CMS sample groups is presented in Figure 4—figure supplement 1C. Wilcoxon rank-sum test significance is shown as p-value≤0.001 (***); p-value≤0.01 (**); p-value≤0.05 (*); p-value>0.05 (ns). (C) Number of gained and lost chromosome arms for each sample distributed according to the BCS values. Note that a cutoff at four is indicated with a black line. Annotation tracks for microsatellite instability (msi), BRAF mutated samples (braf_mut), CMS groups (cms_label), FCS and BCS are displayed. (D) Genome-wide profiling by chromosome arms distributed according to the CMS group. Annotation tracks for microsatellite instability (msi), BRAF mutated samples (braf_mut), CMS groups (cms_label), FCS and BCS are displayed. Sample-to-sample correlation heatmap plot by Pearson’s method is shown below. (E) Differentially altered chromosome arm regions between CMS groups (CMS1, CMS2, CMS3 and CMS4). Heatmap plot displaying the significance between CMS groups paired comparisons. Student’s T-test was applied and multiple testing correction by BH method was used to assess differences in chromosome arm values between groups. Adjusted p-values are displayed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50267/elife-50267-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Kaplan-Meier survival analysis across CMS groups for overall survival (see Materials and methods section for clinical data extracted from TCGA data portal). (B) CNA profile bar plot with CNA alterations frequencies of 462 colon adenocarcinoma (TCGA-COAD cohort) and 164 rectum adenocarcinoma (TCGA-READ) samples using CNApp default thresholds (read for gains and blue for losses). (C) Box plot showing the distribution of FCS according to the CMS groups for 309 colon adenocarcinoma samples (Figure 4—figure supplement 1—source data 1). Wilcoxon rank-sum test was performed for each pair of groups to assess significant differences. Significance is expressed as: p-value≤0.001 (***); p -value ≤ 0.01 (**); p -value ≤ 0.05 (*); p -value > 0.05 (ns). (D) BCS values density plot for MSI (brown) and MSS (green) sample groups after Classifier model section implementation selecting BCS as classifier variable (N = 297 colon cancer samples). Vertical blue line at BCS = 4.75, as interception value between groups. (E) Sensitivity and specificity curves in ROC analysis across BCS threshold values showing the intersection value of 3.75 (green vertical line). The blue line shows our proposed threshold of BCS = 4. (F) Distribution of chromosome arm 20q copy-number amplitude values according to the CMS groups. Wilcoxon rank-sum test was performed for each pair of groups to assess significant differences. Significance is shown as p-value≤0.001 (***); p-value≤0.01 (**); p-value≤0.05 (*); p-value>0.05 (ns). (TIFF 664 KB).
 
 Subsequently, we performed integrative analysis of genomic imbalances, CMS groups, and CNA scores. By using CNApp, we assessed whether CNA scores were able to classify colon cancer samples according to their CMS. While BCS established significant differences between CMS paired comparisons (p≤0.0001, Student’s t-test), FCS poorly discerned CMS1 from three and CMS2 from 4 (Figure 4B—source data 1 and Figure 4—figure supplement 1C—source data 1). Thus, we reasoned that broad CNAs rather than focal were able to better discriminate between different CMS groups. In fact, the distribution of CMS groups based on BCS resembled the distribution of somatic CNA counts defined by GISTIC2.0 (Guinney et al., 2015).
 
@@ -109,75 +145,245 @@ In summary, although our results ought to be further validated in independent co
 
 ## Materials and methods
 
-## Data availability
+### Data availability
 
-## Pan-cancer cohort and clinical annotation
+#### Pan-cancer cohort and clinical annotation
 
 Affymetrix SNP6.0 array copy number segmented data (Level 3) from 10,635 samples spanning 33 cancer types from TCGA pan-cancer dataset were downloaded from the Genomic Data Commons Data Portal (GDC Data Portal, RRID:SCR_014514) (Grossman et al., 2016). This dataset included the 370 Liver Cancer-Hepatocellular Carcinoma (LIHC) samples used for the analysis of recurrent CNAs and the subset of 309 samples from Colon Adenocarcinoma (COAD) for which the colorectal cancer consensus molecular subtype (CMS) was known (Guinney et al., 2015).
 
 Clinical annotation for the 309 COAD samples was retrieved by using TCGAbiolinks R package (TCGAbiolinks, RRID:SCR_017683) in order to extract survival information for each sample (Colaprico et al., 2016).
 
-## GISTIC data from TCGA: LIHC cohort
+#### GISTIC data from TCGA: LIHC cohort
 
 GISTIC 2.0.22 (Ally et al., 2017) copy number results from 370 LIHC samples included in the TCGA (The Cancer Genome Atlas, RRID:SCR_003193), were downloaded from the Broad Institute GDAC Firehose (https://gdac.broadinstitute.org/). Parameters used for the analysis are detailed in the same GDAC repository. Specifically, parameters conditioning the definition of the CNAs and of interest for our comparison were publicly reported with the following values: amplification and deletion thresholds: 0.1; broad length cutoff: 0.7; joint segment size: 4.
 
-## Software and tool availability
+### Software and tool availability
 
 CNApp can be accessed at https://tools.idibaps.org/CNApp/. It was developed using Shiny R package (version 1.1.0), from R-Studio (Shiny, RRID:SCR_001626) (Chang et al., 2018). The tool was applied and benchmarked while using R version 3.4.2 (2017-09-28) -- ‘Short Summer’. List of packages, libraries and base coded are freely available at GitHub, and instructions for local installation are also specified.
 
-## Baseline adjustment of seg.mean values by sample purity
+### Baseline adjustment of seg.mean values by sample purity
 
-The amount of non-aberrant cell admixture may differ between cancer samples, necessitating separate adjustment of copy number thresholds for each assayed sample. To homogenize the analysis, purity estimations are used by CNApp to apply a baseline adjustment of the seg.means before the subsequent CNA calling by CNA amplitude thresholds. This adjustment allows for subsequent sample-to-sample comparison. Seg.mean values (n) by sample (x), when purity (r) available, are re-computed into new seg.mean values (N) as follows:N(x)=2n(x)+(r(x)-1)
+The amount of non-aberrant cell admixture may differ between cancer samples, necessitating separate adjustment of copy number thresholds for each assayed sample. To homogenize the analysis, purity estimations are used by CNApp to apply a baseline adjustment of the seg.means before the subsequent CNA calling by CNA amplitude thresholds. This adjustment allows for subsequent sample-to-sample comparison. Seg.mean values (n) by sample (x), when purity (r) available, are re-computed into new seg.mean values (N) as follows:
 
-When purity is not provided, 100% purity (r = 1) is assumed. Minimal purity accepted is 40% (r = 0.4), setting to 40% all purities below. Threshold of 40% also sets the negative capping value (C) as the maximal loss possible when heterozygous deletion happens (from 2 copies to one copy):C = log212·0.4= -2.32
+$$
+N(x)=2^{n(x)+(r(x)-1)}
+$$
 
-## CNA scores computation
+When purity is not provided, 100% purity (r = 1) is assumed. Minimal purity accepted is 40% (r = 0.4), setting to 40% all purities below. Threshold of 40% also sets the negative capping value (C) as the maximal loss possible when heterozygous deletion happens (from 2 copies to one copy):
+
+$$
+C=log_{2}\frac{1}{2}·0.4=-2.32
+$$
+
+### CNA scores computation
 
 Segments resulting from re-segmentation (or original segments from input file when re-segmentation is skipped) are classified in chromosomal, arm-level and focal events by considering the relative length of each segment to the whole-chromosome or chromosome arm. Using default parameters, segments are tagged as chromosomal when 90% or more of the chromosome is affected; as arm-level when 50% or more of the chromosome arm is affected; and as focal when affecting less than 50% of the chromosome arm. Percentages for relative lengths are customizable.
 
 Broad (chromosomal and arm-level) and focal alterations are then weighted according to their amplitude values (seg.mean) and taking into account copy number amplitude ranges defined by CNA calling thresholds. Default amplitude thresholds to define these ranges, CNA levels and their corresponding absolute copy number are presented in Table 1.
 
+**Table 1.**
+ Corresponding weights (A) for each threshold, CNA level and its absolute copy number.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Thresholds (Log2ratio values)</th>
+      <th>CNA level</th>
+      <th>Copy number</th>
+      <th>Weights (A)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>High-level gain</td>
+      <td>≥4 copies</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>0.58</td>
+      <td>Medium-level gain</td>
+      <td>[3–4) copies</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>0.2</td>
+      <td>Low-level gain</td>
+      <td>[2.3–3] copies</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>−0.2</td>
+      <td>Low-level loss</td>
+      <td>(1–1.7] copies</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>Medium-level loss</td>
+      <td>(0.6–1] copies</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>−1.74</td>
+      <td>High-level loss</td>
+      <td>≤0.6 copies</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>[−0.2–0.2]</td>
+      <td>Copy-neutral loss-of-heterozygosity (CN-LOH)</td>
+      <td>[1.7–2.3] copies BAF ≥ 0.25</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
 In order to take into account the relative chromosome length from each segment when FCS is computed, coverage punctuation for focal events is implemented as specified in Table 2.
 
-Broad CNA Score (BCS): for a total N of broad events in a sample (x), it equals to the summation of segments weights (A) in that corresponding sample and being i the corresponding segment:BCS(x)=∑i=1NAi
+**Table 2.**
+ Coverage punctuation (L) for focal events.
 
-Focal CNA Score (FCS): same as in BCS, with an additional pondering value L included to the summation, which captures the relative size of the chromosome-arm coverage of each focal CNA):FCS(x)=∑i=1NAi·Li
 
-Global CNA Score (GCS): for a sample x, it is calculated as the summation of normalized BCS and FCS values, where meanBCS and meanFCS stand for mean values of BCS and FCS from total samples, respectively, and sdBCS and sdFCS stand for standard deviation values of BCS and FCS from total samples, respectively:normBCSx=BCSx-meanBCSsdBCS           normFCSx=FCSx-meanFCSsdFCSGCSx=normBCS(x)+normFCS(x)
+<table>
+  <thead>
+    <tr>
+      <th>% chromosome-arm coverage</th>
+      <th>Coverage punctuation (L)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≤5%</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>&gt;5% to≤15%</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>&gt;15% to≤30%</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>&gt;30%</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
-## Correlation between CNA scores and the fraction of genome altered
+Broad CNA Score (BCS): for a total N of broad events in a sample (x), it equals to the summation of segments weights (A) in that corresponding sample and being i the corresponding segment:
+
+$$
+BCS(x)=\sumi=1NA_{i}
+$$
+
+Focal CNA Score (FCS): same as in BCS, with an additional pondering value L included to the summation, which captures the relative size of the chromosome-arm coverage of each focal CNA):
+
+$$
+FCS(x)=\sumi=1NA_{i}·L_{i}
+$$
+
+Global CNA Score (GCS): for a sample x, it is calculated as the summation of normalized BCS and FCS values, where meanBCS and meanFCS stand for mean values of BCS and FCS from total samples, respectively, and sdBCS and sdFCS stand for standard deviation values of BCS and FCS from total samples, respectively:
+
+$$
+normBCSx=\frac{BCSx-meanBCS}{sdBCS}normFCSx=\frac{FCSx-meanFCS}{sdFCS}
+$$
+
+
+
+$$
+GCSx=normBCS(x)+normFCS(x)
+$$
+
+### Correlation between CNA scores and the fraction of genome altered
 
 Correlation between broad, focal and global CNA scores (BCS, FCS and GCS, respectively) was assessed by computing Spearman’s rho statistic. The TCGA pan-cancer dataset including 10,635 samples spanning 33 cancer types was used to perform these associations. This data was downloaded from the Genomic Data Commons Data Portal (GDC Data Portal, RRID:SCR_014514) (Grossman et al., 2016).
 
-To evaluate the applicability of the CNA scores when it comes to sample CNA level assessment, we performed correlation analyses between CNA scores and the altered genome fraction. BCS and FCS were specifically correlated to the altered genome fraction by broad (i.e., chromosomal and arm-level events) and focal alterations, respectively. To do so, we applied the re-segmentation procedure and CNA scores computation on a TCGA dataset comprised by 10,635 primary tumors from 33 TCGA projects analyzed by Affymetrix 6.0 SNP-array and DNACopy (DNAcopy, RRID:SCR_012560) (Venkatraman and Olshen, 2007). Global altered genome fraction (altFract) was computed, for each sample (x), by the summation of all copy number events lengths (l) and divided by total length of human genome (hgLength).altFract(x)=∑i=1NlihgLength
+To evaluate the applicability of the CNA scores when it comes to sample CNA level assessment, we performed correlation analyses between CNA scores and the altered genome fraction. BCS and FCS were specifically correlated to the altered genome fraction by broad (i.e., chromosomal and arm-level events) and focal alterations, respectively. To do so, we applied the re-segmentation procedure and CNA scores computation on a TCGA dataset comprised by 10,635 primary tumors from 33 TCGA projects analyzed by Affymetrix 6.0 SNP-array and DNACopy (DNAcopy, RRID:SCR_012560) (Venkatraman and Olshen, 2007). Global altered genome fraction (altFract) was computed, for each sample (x), by the summation of all copy number events lengths (l) and divided by total length of human genome (hgLength).
 
-Altered genome fractions for broad and focal events were computed, for each sample (x), by the summation of broad and focal alterations lengths (l), respectively, and divided by total length of human genome (hgLength).Broad altFract (x)=∑i=1Nli(Broad)hgLength Focal altFract (x)=∑i=1Nli(Focal)hgLength
+$$
+altFract(x)=\frac{\sumi=1Nl_{i}}{hgLength}
+$$
+
+Altered genome fractions for broad and focal events were computed, for each sample (x), by the summation of broad and focal alterations lengths (l), respectively, and divided by total length of human genome (hgLength).
+
+$$
+BroadaltFract(x)=\frac{\sumi=1Nl_{i(Broad)}}{hgLength}
+$$
+
+
+
+$$
+FocalaltFract(x)=\frac{\sumi=1Nl_{i(Focal)}}{hgLength}
+$$
 
 Correlation tests were performed by applying Spearman’s rho statistic to estimate a rank-based measure of association.
 
-## Associations between CNA scores and annotated variables
+### Associations between CNA scores and annotated variables
 
 Annotated variables from input file are statistically associated with CNA scores computed by CNApp in Re-Seg and Score section. Different association tests are applied according to variable class (i.e. categoric or numerical), as described in Table 3. Both parametric and non-parametric tests are computed to present p-values in order to assess statistical significance for each association.
 
-## Survival analysis
+**Table 3.**
+ Statistical tests used in CNApp.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Parametric</th>
+      <th>Non-parametric</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Categoric</td>
+      <td>n = 2</td>
+      <td>Student’s T-test</td>
+      <td>Wilcoxon rank-sum test</td>
+    </tr>
+    <tr>
+      <td>n &gt; 2</td>
+      <td>ANOVA</td>
+      <td>ANOVA: Kruskal test</td>
+    </tr>
+    <tr>
+      <td>Numerical</td>
+      <td></td>
+      <td>Pearson's rank correlation</td>
+      <td>Spearman's rank correlation</td>
+    </tr>
+  </tbody>
+</table>
+
+_n = groups defined by annotation variable._
+
+### Survival analysis
 
 Survival analysis by Kaplan-Meier was performed using survival and survminer R packages (CRAN, RRID:SCR_003005).
 
-## Genomic region profiles computation
+### Genomic region profiles computation
 
 Region profiling section allows genome segmentation analysis by user-selected windows (i.e. arms, half-arms, cytobands, sub-cytobands, and 40 Mb till 1 Mb). In order to do that, windows files were generated for each option and genome build (hg19 and hg38). Cytobands file cytoBand.txt from UCSC page and for both genome builds was used as mold to compute regions (Tyner et al., 2017).
 
-Segmented samples are transformed into genome region profiles using genomic windows selected by user. Segments from each sample are consulted to assess whether or not overlap with the window region. Thus, window-means (W) are computed for each genomic window by collecting segments (t) overlapping with window-region (i). Segments with loc.start or loc.end position falling within the region are collected, as well as those segments embedding the entire region. At this point, the summation of each segment-mean (S) corrected by the relative window-length (L) affected by the segment length (l) is performed:W(i)=∑t=1nSt·ltL(i)
+Segmented samples are transformed into genome region profiles using genomic windows selected by user. Segments from each sample are consulted to assess whether or not overlap with the window region. Thus, window-means (W) are computed for each genomic window by collecting segments (t) overlapping with window-region (i). Segments with loc.start or loc.end position falling within the region are collected, as well as those segments embedding the entire region. At this point, the summation of each segment-mean (S) corrected by the relative window-length (L) affected by the segment length (l) is performed:
 
-## Descriptive regions assessment
+$$
+W(i)=\sumt=1nS_{t}·\frac{l_{t}}{L(i)}
+$$
+
+### Descriptive regions assessment
 
 Potential descriptive regions between groups defined by the annotated variables provided in the input file can be studied and p-values are presented to evaluate significance in differentially altered regions between those groups. The alterations can be considered as (1) numerical continuous (seg.mean values) and (2) categorical variables (gains, losses and non-altered). In the first case, to assess statistical significance between groups Student’s T-test is applied, whereas in the second situation the significance is assessed by applying the Fisher’s exact test. False discovery rate (FDR) adjustment is performed using the Benjamini-Hochberg (BH) procedure in both cases and corrected p-values (Adj.p-value) or non-corrected p-values (p-values) are displayed by user selection.
 
-## Clustering analysis
+### Clustering analysis
 
 Correlation and clustering methods can be applied into heatmap plots in CNApp Region profile section. Accepted correlation methods are Pearson’s, Spearman’s and Kendall’s tests. Hierarchical cluster analysis is applied when clusters are computed in heatmaps.
 
-## Machine learning-based classifier models
+### Machine learning-based classifier models
 
 We used the randomForest R package (RandomForest Package in R, RRID:SCR_015718) (Liaw and Wiener, 2002) to compute machine learning classifier models. Variables to define sample groups must be selected, as well as at least one classifier variable. Model construction is performed 50-times and training set is changed by iteration. In order to compute model and select training set, multiple steps and conditions have to be accomplished:
 

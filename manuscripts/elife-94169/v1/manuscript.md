@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Division of Multi-Organ Transplantation, Department of Surgery, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Bakar Computational Health Sciences Institute, University of California, San Francisco San Francisco United States
+1. Division of Multi-Organ Transplantation, Department of Surgery, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Bakar Computational Health Sciences Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding the unique susceptibility of the human kidney to pH dysfunction and injury in cystinosis is paramount to developing new therapies to preserve renal function. Renal proximal tubular epithelial cells (RPTECs) and fibroblasts isolated from patients with cystinosis were transcriptionally profiled. Lysosomal fractionation, immunoblotting, confocal microscopy, intracellular pH, TEM, and mitochondrial stress test were performed for validation. CRISPR, CTNS -/- RPTECs were generated. Alterations in cell stress, pH, autophagic turnover, and mitochondrial energetics highlighted key changes in the V-ATPases in patient-derived and CTNS -/- RPTECs. ATP6V0A1 was significantly downregulated in cystinosis and highly co-regulated with loss of CTNS . Correction of ATP6V0A1 rescued cell stress and mitochondrial function. Treatment of CTNS -/- RPTECs with antioxidants ATX induced ATP6V0A1 expression and improved autophagosome turnover and mitochondrial integrity. Our exploratory transcriptional and in vitro cellular and functional studies confirm that loss of Cystinosin in RPTECs, results in a reduction in ATP6V0A1 expression, with changes in intracellular pH, mitochondrial integrity, mitochondrial function, and autophagosome-lysosome clearance. The novel findings are ATP6V0A1’s role in cystinosis-associated renal pathology and among other antioxidants, ATX specifically upregulated ATP6V0A1, improved autophagosome turnover or reduced autophagy and mitochondrial integrity. This is a pilot study highlighting a novel mechanism of tubular injury in cystinosis.
+Understanding the unique susceptibility of the human kidney to pH dysfunction and injury in cystinosis is paramount to developing new therapies to preserve renal function. Renal proximal tubular epithelial cells (RPTECs) and fibroblasts isolated from patients with cystinosis were transcriptionally profiled. Lysosomal fractionation, immunoblotting, confocal microscopy, intracellular pH, TEM, and mitochondrial stress test were performed for validation. CRISPR, CTNS -/- RPTECs were generated. Alterations in cell stress, pH, autophagic turnover, and mitochondrial energetics highlighted key changes in the V-ATPases in patient-derived and CTNS-/- RPTECs. ATP6V0A1 was significantly downregulated in cystinosis and highly co-regulated with loss of CTNS. Correction of ATP6V0A1 rescued cell stress and mitochondrial function. Treatment of CTNS -/- RPTECs with antioxidants ATX induced ATP6V0A1 expression and improved autophagosome turnover and mitochondrial integrity. Our exploratory transcriptional and in vitro cellular and functional studies confirm that loss of Cystinosin in RPTECs, results in a reduction in ATP6V0A1 expression, with changes in intracellular pH, mitochondrial integrity, mitochondrial function, and autophagosome-lysosome clearance. The novel findings are ATP6V0A1’s role in cystinosis-associated renal pathology and among other antioxidants, ATX specifically upregulated ATP6V0A1, improved autophagosome turnover or reduced autophagy and mitochondrial integrity. This is a pilot study highlighting a novel mechanism of tubular injury in cystinosis.
 
 ## Introduction
 
@@ -37,53 +37,202 @@ Figure 1A summarizes the study design. Briefly, the study is divided into three 
 
 **Figure 1.:** (A) Transcriptome profiling with gene microarray performed on cystinotic, normal, and CDME-treated RPTECs and fibroblasts (Step 1). Bioinformatic analysis allowed the identification of genes that are differentially regulated in cystinosis versus normal in both the cell types. Pathway analysis was performed with all the significantly regulated genes, and 11 pathways were found to be significantly affected in cystinotic RPTECs. Most of these pathways and the genes in these pathways are crucial for lysosomal acidic pH and mitochondrial ATP production. Dysfunctional mitochondria and compromised intracellular pH were validated in Step 2. Our CRISPR-mediated CTNS-/- immortalized renal cell line mimicked cystinosis patient primary cells isolated from their urine. Further, we rescued (Step 3) the disease phenotype of the cell by over-expressing ATP6V0A1, the most significantly downregulated gene among other V-ATPases. RNP, Ribonucleoprotein; V-ATPase, vacuolar ATPase; RPTEC, renal proximal tubular epithelial cells. (B) A schematic overview of normal and cystinotic RPTECs. We previously showed that loss of function of Cystinosin in cystinotic cells inactivates the mTORC pathway, and induces autophagy, mitophagy, and clusterin protein expression. In this study, we show that downregulation of CTNS gene also downregulates V-ATPase expression resulting in the loss of lysosomal acidity (pH). The basic pH thus blocks lysosomal clearance after autophagosome-lysosome fusion. Inhibited autophagy flux may explain why cystinotic cells have increased LC3B-II expression. Disrupted intracellular pH also impairs proton-dependent import of amino acids and other metabolites (noted in our microarray data) into the lysosome lumen, and inhibits conversion of these imported large heterodimeric amino acids into usable form. This increases the presence of metabolites in the cytoplasm that may compromise mitochondrial function and increase ROS production through an unspecified mechanism.
 
-## Global transcriptional changes in cystinotic RPTEC affect lysosomal and mitochondrial pathways
+### Global transcriptional changes in cystinotic RPTEC affect lysosomal and mitochondrial pathways
 
 Performed genome wide transcriptional profiling of normal and cystinotic RPTECs and skin fibroblasts with and without cystine dimethylester (CDME), used to load lysosomes with cystine to mimic the basic defect in cystinosis (Gahl et al., 2007; Reimand et al., 2019; Figure 2). The genetic anomaly in cystinosis (mutation of the cystine: proton transporter) is quite heterogeneous with more than 140 identified mutations (David et al., 2019). This heterogeneity affects the phenotype of the disease quite significantly. With this in mind all eight patients from whom the cells were obtained had the same 57 kb mutation (Wagner et al., 2004). Normal CDME loaded RPTECs, and fibroblasts did not transcriptionally mimic the cystinotic phenotype suggesting that CDME loading is a poor surrogate (Sumayao et al., 2013) in vitro model to study cystinosis tissue injury despite much of earlier research in cystinosis using CDME loading (Figure 2). Specific transcriptional signatures are observed in cystinotic skin-fibroblasts and RPTECs obtained from the same individual with cystinosis versus their healthy counterparts (Figure 2B and C). These differences between cell types, at the transcriptional level highlight tissue-specific changes in cystinosis (Figure 2—figure supplement 1). Nevertheless, some overlapping genes are significantly dysregulated in both cystinotic RPTECs (n=1926; FDR <0.05) and fibroblasts (n=745; FDR <0.05), with 219 overlapping genes associated with DNA integrity loss and damage. Further analysis identified that certain molecular pathways were highly enriched (Hennings et al., 2012) only in the kidney, and 11 significant pathways were found to be unique to cystinotic RPTECs alone (Table 1). Metabolic pathways, oxidative phosphorylation and acid secretion pathways are some of the significantly affected pathways in cystinosis-RPTECs. Using K-mean clustering on the genes in these significantly enriched pathways, we identified two distinct clusters (data not shown). One, is enriched in nucleus-encoded mitochondrial genes crucial for energy production, and the other is enriched in v-ATPases family, which are crucial for lysosomes and kidney tubular acid secretion. Ten lysosomal v-ATPases (Table 2) were downregulated in cystinotic RPTECs, five of which are significantly downregulated and some of which play important roles in proximal tubule (PT) H+ secretion to support reabsorption of luminal HCO3− and apical endocytosis (Zhang et al., 2017; Zhang et al., 2019; Vaisbich et al., 2011). The most significantly perturbed member of the V-ATPase gene family that was found to be downregulated in cystinosis RPTECs is ATP6V0A1 (Table 2), hence further attention was focused on characterization of the role of this particular gene in a human in vitro model of cystinosis.
 
-## CRISPR-Cas9-mediated immortalized CTNS-/- RPTECs
+![Figure 2.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig2-v1.jpg)
+
+**Figure 2.:** (A) Study design: Two types of cells were used- RPTECs and fibroblasts. For each cell type there were three groups – normal that serves as control – commercially obtained (n=6), cystinotic – obtained from individuals with cystinosis (n=8), and CDME-treated normal cells (n=4). (B) PCA plot further highlights the unique injury mediated gene profile in cystinotic RPTEC versus normal. Gene expression patterns of cystinotic RPTECs and fibroblasts were found to have no commonality, with cystinostic fibroblasts similar to normal. Gene expression patterns in cystinotic RPTECs are distinct and negatively correlated with normal RPTECs. Whereas gene expression in normal RPTECs laden with CDME are similar to the normal rather than disease phenotype, and hence have a positive correlation with each other. (C) Microarray data from both cell types are represented as a correlation heatmap. Cystinotic RPTECs showed markedly different expression profiles from both the normal and CDME loaded normal RPTEC, which was more similar to normal than diseased. Gene expression patterns in normal, cystinotic, and CDME-treated fibroblasts were found to be similar to each other depicting that nephropathic cystinosis-related changes are highly specific to renal cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Microarray identified additional transcriptional changes in amino acid and sialic acid transporters in cystinotic RPTEC. Significant downregulation of SLC17A1, SLC17A3, SLC17A5, SLC3A1, and SLC7A7. Normal (n=6), Cystinosis (n=8), CDME-treated (n=4). A one-way ANOVA followed by Tukey's test was conducted. Data are presented as mean ± SD. *p<0.05; **p<0.01; ***p<0.001.
+
+**Table 1.**
+ Pathway analysis was performed with all the significantly regulated genes, and 11 pathways were found to be significantly affected in cystinotic RPTECs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Significantly enriched pathways</th>
+      <th>Adjusted p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DNA replication</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Metabolic pathways</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>Oxidative phosphorylation</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>Cell cycle</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>Fanconi anemia pathway</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>Valine, leucine and isoleucine degradation</td>
+      <td>0.0049</td>
+    </tr>
+    <tr>
+      <td>Collecting duct and secretion</td>
+      <td>0.0049</td>
+    </tr>
+    <tr>
+      <td>Aminoacyl-tRNA biosynthesis</td>
+      <td>0.0337</td>
+    </tr>
+    <tr>
+      <td>Pyrimidine metabolism</td>
+      <td>0.0330</td>
+    </tr>
+    <tr>
+      <td>Nucleotide excision repair</td>
+      <td>0.0337</td>
+    </tr>
+    <tr>
+      <td>Homologous recombination</td>
+      <td>0.0337</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ List of all the v-ATPases that are significantly downregulated in cystinosis RPTECs compared to normal.Table 2—source data 1.List of the 10 v-ATPases showing no significant changes in its expression in cystinosis fibroblasts, CDME-treated fibroblasts and CDME-treated RPTECs compared to their respective controls.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Fold change</th>
+      <th>q-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATP6V0A1</td>
+      <td>0.5867</td>
+      <td>0.0407</td>
+    </tr>
+    <tr>
+      <td>ATP6V1C1</td>
+      <td>0.5782</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>ATP6V1B2</td>
+      <td>0.5736</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>ATP6VIE1</td>
+      <td>0.5489</td>
+      <td>0.4074</td>
+    </tr>
+    <tr>
+      <td>ATP6V1H</td>
+      <td>0.4616</td>
+      <td>0.0000</td>
+    </tr>
+    <tr>
+      <td>ATP6V0E1</td>
+      <td>0.6500</td>
+      <td>0.7087</td>
+    </tr>
+    <tr>
+      <td>ATP6V1E2</td>
+      <td>0.6757</td>
+      <td>0.2956</td>
+    </tr>
+    <tr>
+      <td>ATP6AP1</td>
+      <td>0.7300</td>
+      <td>0.4474</td>
+    </tr>
+    <tr>
+      <td>ATP6V1A</td>
+      <td>0.7401</td>
+      <td>1.4208</td>
+    </tr>
+    <tr>
+      <td>ATP6V0D1</td>
+      <td>0.7987</td>
+      <td>1.4208</td>
+    </tr>
+  </tbody>
+</table>
+
+### CRISPR-Cas9-mediated immortalized CTNS-/- RPTECs
 
 We and others have found that CDME loading is a poor surrogate in vitro model; hence there is a need to develop a more robust in vitro model to study the renal tubular injury in cystinosis. Over time, it is likely that the primary cell lines generated from cystinotic patient urine samples may have undergone transformation and the development of a stable, robust in vitro model of renal proximal tubular epithelial cell (RPTEC) injury was recognized as an unmet need in the study of nephropathic cystinosis. Hence, we generated and validated a CRISPR/cas9-based CTNS gene knockout model of RPTEC injury. Ribonucleoprotein (RNP)-mediated CRISPR genome editing (Figure 3A) was adapted to design a guide RNA that binds to exon 3 of the CTNS gene in human immortalized (HuIm) RPTECs and successfully knockout the gene (CTNS-/-; Figure 3B) with 94% efficiency. We isolated the genomic DNA, PCR amplified the CTNS-region with suitable primers, ran the amplified PCR product in a 2% gel to confirm the primer set that worked best, and finally submitted the amplified DNA with primers to QuintaraBio (SF, CA) for Sanger DNA sequencing. The chromatogram obtained after Sanger-seq was analyzed with TIDE webtool online (Figure 3A). As shown in Figure 3B, TIDE analysis identified an estimated percentage of insertions or deletions (indels) in the CTNS gene and showed that the efficiency of the CTNS knockout is 94% in the knockout RPTECs compared to the control RPTECs. To confirm the CTNS knockout at the mRNA level, we isolated total RNA, prepared cDNA, and performed qPCR (Figure 3C). We designed two primers targeting different CTNS exons – 2–3 (CTNS#1) and 9–10 (CTNS#2). Since our CRSPR-guide was targeted on exon 3 of the CTNS gene, we still could observe some CTNS mRNA expression with primer #1; however, CTNS expression was undetectable with primer #2. Further, at the functional level, we performed HPLC-MS/MS and showed a significant increase in cystine accumulation in CTNS-/- RPTECs (Figure 3D), similar to intracellular cystine accumulation found in cystinosis patients (5–6 nmol/mg protein).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig3-v1.jpg)
 
-**Figure 3.:** -/- RPTECs using CRISPR-Cas9 RNPs.(A) Outline of RNP CRISPR editing. The CTNS gene is located on chromosome 17p13.3 and consists of 12 exons, of which the first 2 are non-coding. Therefore, the guide RNA was targeted towards exon 3 to completely knockout the functional CTNS gene. CRISPR-Cas9 ribonucleoproteins (crRNPs) were synthesized in vitro to knockout CTNS gene and delivered to immortalize RPTECs by nucleofection. These cells were expanded for molecular validation of gene editing and downstream functional assays. (B) The guide RNA target sequence and associated PAM are highlighted on the right. We performed Sanger sequencing and the TIDE output calculating percent indels from chromatograms is depicted in the bar-graph. (C) Validation of CTNS knockout (-/-) in immortalized RPTEC by using two primers targeting different exons – CTNS#1 targets between exon 2–3 and CTNS#2 targets between exon 9–10. We have shown that in the CRISPR/Cas9 CTNS-/- RPTEC there is a significant reduced Cystinosin RNA levels with both the primers. (D) Validation of CTNS -/- in immortalized RPTEC. Increased intracellular accumulation of cystine is shown by HPLC-MS/MS method in control and CTNS-/- RPTECs. Student’s t-test was used. Data are presented as mean ± SD. *p<0.05; **p<0.01; ***p<0.001.
+**Figure 3.:** (A) Outline of RNP CRISPR editing. The CTNS gene is located on chromosome 17p13.3 and consists of 12 exons, of which the first 2 are non-coding. Therefore, the guide RNA was targeted towards exon 3 to completely knockout the functional CTNS gene. CRISPR-Cas9 ribonucleoproteins (crRNPs) were synthesized in vitro to knockout CTNS gene and delivered to immortalize RPTECs by nucleofection. These cells were expanded for molecular validation of gene editing and downstream functional assays. (B) The guide RNA target sequence and associated PAM are highlighted on the right. We performed Sanger sequencing and the TIDE output calculating percent indels from chromatograms is depicted in the bar-graph. (C) Validation of CTNS knockout (-/-) in immortalized RPTEC by using two primers targeting different exons – CTNS#1 targets between exon 2–3 and CTNS#2 targets between exon 9–10. We have shown that in the CRISPR/Cas9 CTNS-/- RPTEC there is a significant reduced Cystinosin RNA levels with both the primers. (D) Validation of CTNS -/- in immortalized RPTEC. Increased intracellular accumulation of cystine is shown by HPLC-MS/MS method in control and CTNS-/- RPTECs. Student’s t-test was used. Data are presented as mean ± SD. *p<0.05; **p<0.01; ***p<0.001.
 
-## Knock out of Cystinosin in RPTECs downregulated ATP6V0A1 expression
+### Knock out of Cystinosin in RPTECs downregulated ATP6V0A1 expression
 
 Compared to controls, ATP6V0A1 protein expression was significantly decreased in both primary cystinotic and CTNS-/- RPTECs with an eightfold reduction in isolated lysosomal fractions (Figure 4A–C). Lysosomes were isolated from control and CTNS-/- RPTECs, and the purity of the isolation is shown by the presence of lysosomal marker LAMP2 and absence of GAPDH, expressed in cytoplasm (Figure 4C). Confocal imaging showed reduced immunopositivity for both LAMP2 (lysosomal marker) and ATP6V0A1 in cystinotic RPTECs (Figure 4D, Figure 4—figure supplement 1), with a clear expression of both in normal lysosomes. Figure 4E–F shows a significant reduction in intracellular acidic pH in cystinotic (pH = 5 vs normal RPTEC pH of 4.2) and CTNS-/- RPTECs (pH = 6.6 vs control human immortalized RPTECs pH of 5.8).
 
-## Reduced autophagosome turnover and mTORC1 activity in cystinotic RPTECs
+![Figure 4.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig4-v1.jpg)
+
+**Figure 4.:** This highlights that in addition to the loss of lysosomal Cystinosin there are also other key biological changes in the lysosomes in nephropathic cystinosis. (A-B) Immunoblot analysis of the expression of ATP6V0A1 in cystinotic and CTNS -/- RPTECs with their respective controls. (C) Immunoblot analysis of the expression of ATP6V0A1 in lysosomal fraction isolated from control and CTNS -/- RPTECs. Absence of GAPDH expression depicts successful isolation of pure lysosomes from RPTECs. Results are represented as mean ± SD. The statistically significant differences between the two groups are indicated in the figure. Student’s t-test (* p≤0.05; **p≤0.01; ***p≤0.001). There was no difference between LAMP2 expression in control and cystinotic RPTECs, making this marker a good control for the experiment. (D) Immunofluorescence and confocal microscopy showing endogenous LAMP2 and ATP6V0A1 distribution in normal and cystinotic RPTECs. Colocalization of ATP6V0A1 and LAMP2 is shown in the right panel. Results are representative of at least three separate experiments. Cystinotic and CTNS -/- RPTECs have an intracellular basic pH compared to their respective controls. Cells were stained with BCECF-AM and measured with a microplate fluorimeter in triplicate wells. The pH-dependent spectral shifts exhibited by BCECF allow calibration of the pH response in terms of the ratio of fluorescence intensities measured at two different excitation wavelengths (490, 440 nm). (E) RPTECs isolated from cystinosis patient urine had a more basic pH than normal individuals (**p≤0.01). (F) Similarly, to the primary cells, our in vitro cellular model, CTNS-KO RPTEC, also had a more basic pH than control. The unpaired t-test indicated significant differences (***p≤0.001) between control and diseased cells. Data are representative of at least three biological replicates. Data are presented as mean ± SD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Colocalization of ATP6V0A1 and LAMP2 is shown in the right panel. Decreased immunopositivity to ATP6V0A1 is noted in CTNS-/- RPTECs compared to its control. The pattern is similar to primary RPTECs isolated from individuals with cystinosis.
+
+### Reduced autophagosome turnover and mTORC1 activity in cystinotic RPTECs
 
 By confocal microscopy, we showed increased immunopositivity to LC3B puncta (green) and active or phosphorylated p70S6K (red) in cystinotic RPTECs compared to the control (Figure 5A and B). Similar to the previous figure, confocal imaging revealed decreased LAMP2 (red) immunopositivity in cystinotic RPTECs (Figure 5A). We performed immunoblotting to quantitatively show that both primary and CTNS-/- RPTECs, have reduced phosphorylated and total p70S6 kinase protein expression in the cystinotic RPTECs than its control (Figure 5C and D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig5-v1.jpg)
 
-**Figure 5.:** (A) Immunofluorescence and confocal microscopy showing endogenous LC3B and LAMP2 distribution in normal and cystinotic RPTECs. Colocalization of LC3B and LAMP2 is shown in the right panel. (B) Immunofluorescence and confocal microscopy showing endogenous LC3B and phospho-p70S6 kinase (marker of mTOR activity) distribution in normal and cystinotic RPTECs. Colocalization of LC3B and phosphor-p70S6 kinase is shown in the right panel. (C-D) Immunoblot analysis of the expression of phosphorylated-p70S6 kinase and total p70S6 kinase in cystinotic and CTNS -/- RPTECs with their respective controls. Since there is a change in total p70S6K expression in with and without the CTNS, we normalized both, the phosphorylated and total protein, to GAPDH. mTORC1 plays a central role in cell growth, proliferation, survival, and autophagy inhibition via AMPK, therefore, the presence of lower activity of mTORC1 in cystinosis supports the observations of increased cell death and autophagy as shown by increased LC3B puncta. Results are representative of at least three separate experiments (biological replicates). Results are represented as mean ± SD. The statistically significant differences between the two groups are indicated in the figure. Student’s t-test (* p≤0.05; **p≤0.01; ***p≤0.001).Figure 5—source data 1.Figure 5C and D.Figure 5—source data 2.Figure 5C and D, indicating the relevant bands and treatments.
+**Figure 5.:** (A) Immunofluorescence and confocal microscopy showing endogenous LC3B and LAMP2 distribution in normal and cystinotic RPTECs. Colocalization of LC3B and LAMP2 is shown in the right panel. (B) Immunofluorescence and confocal microscopy showing endogenous LC3B and phospho-p70S6 kinase (marker of mTOR activity) distribution in normal and cystinotic RPTECs. Colocalization of LC3B and phosphor-p70S6 kinase is shown in the right panel. (C-D) Immunoblot analysis of the expression of phosphorylated-p70S6 kinase and total p70S6 kinase in cystinotic and CTNS -/- RPTECs with their respective controls. Since there is a change in total p70S6K expression in with and without the CTNS, we normalized both, the phosphorylated and total protein, to GAPDH. mTORC1 plays a central role in cell growth, proliferation, survival, and autophagy inhibition via AMPK, therefore, the presence of lower activity of mTORC1 in cystinosis supports the observations of increased cell death and autophagy as shown by increased LC3B puncta. Results are representative of at least three separate experiments (biological replicates). Results are represented as mean ± SD. The statistically significant differences between the two groups are indicated in the figure. Student’s t-test (* p≤0.05; **p≤0.01; ***p≤0.001).
 
-## Compromised mitochondrial function in cystinotic RPTECs
+### Compromised mitochondrial function in cystinotic RPTECs
 
 The cell mitochondria-stress test with Agilent Seahorse XFe instrument assessed mitochondrial (mt) function in CTNS-/- and cystinotic RPTECs. Drug additions, as noted in the figure, were used to assess mitochondrial bioenergetic function by measuring the oxygen consumption rate (OCR) in live cells in real time. Both cystinotic and CTNS-/- RPTECs exhibited similar patterns of compromised mitochondrial function (Figure 6), with significantly decreased basal, maximal and ATP-linked respiration compared to their respective controls. OCR linked to proton leak, cells spare respiratory capacity and non-mitochondrial oxygen consumption was significantly lost in cystinotic cells. There was a substantial increase in OCR linked to proton leak in normal cells, indicating that normal cells, when injected with mt-electron chain inhibitors, have higher proton leak than the diseased cells with inhibitors.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig6-v1.jpg)
 
-**Figure 6.:** CTNS RPTECs compared to their respective controls.-/-(Top Center) XF Cell Mito Stress Test assay design and standard output parameters. (A) XF Cell Mito Stress Test shows that primary cystinotic RPTECs have diminished basal and maximal respiration, ATP-linked respiration, spare respiratory capacity, non-mitochondrial oxygen consumption, and proton leak compared with its control (normal RPTEC) when both were treated with specific electron transport chain (ETC) inhibitors. (B) Similar to the primary diseased cells, the CTNS also demonstrated diminished mitochondrial activity. Both cystinotic and -/-CTNS-/- RPTECs exhibited similar patterns of compromised mitochondrial function, with significantly (Normal vs. Cystinosis: p<0.025, p<0.0019, p<0.023; human immortalized RPTEC (HuIm) vs. CTNS-/-: p=0.006, p=0.001, p=0.0002, respectively) decreased basal and maximal respiration and ATP-linked respiration compared to controls. The OCR linked to proton leak and cells spare respiratory capacity was significantly (Normal vs. Cystinosis: p<0.007, p<0.0007; HuIm vs. CTNS-/-: p<0.0001, p=0.002 respectively) lost in cystinotic cells. Non-mitochondrial oxygen consumption did not significantly change in cystinotic or CTNS RPTECs. There was a substantial (Normal vs. Cystinosis: p<0.007; HuIm vs. -/-CTNS-/-: p<0.0001) increase in OCR linked to proton leak. Student’s t-test. Values represent mean ± SD for at least three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001). OCR, oxygen consumption rate.
+**Figure 6.:** (Top Center) XF Cell Mito Stress Test assay design and standard output parameters. (A) XF Cell Mito Stress Test shows that primary cystinotic RPTECs have diminished basal and maximal respiration, ATP-linked respiration, spare respiratory capacity, non-mitochondrial oxygen consumption, and proton leak compared with its control (normal RPTEC) when both were treated with specific electron transport chain (ETC) inhibitors. (B) Similar to the primary diseased cells, the CTNS-/- also demonstrated diminished mitochondrial activity. Both cystinotic and CTNS-/- RPTECs exhibited similar patterns of compromised mitochondrial function, with significantly (Normal vs. Cystinosis: p<0.025, p<0.0019, p<0.023; human immortalized RPTEC (HuIm) vs. CTNS-/-: p=0.006, p=0.001, p=0.0002, respectively) decreased basal and maximal respiration and ATP-linked respiration compared to controls. The OCR linked to proton leak and cells spare respiratory capacity was significantly (Normal vs. Cystinosis: p<0.007, p<0.0007; HuIm vs. CTNS-/-: p<0.0001, p=0.002 respectively) lost in cystinotic cells. Non-mitochondrial oxygen consumption did not significantly change in cystinotic or CTNS-/- RPTECs. There was a substantial (Normal vs. Cystinosis: p<0.007; HuIm vs. CTNS-/-: p<0.0001) increase in OCR linked to proton leak. Student’s t-test. Values represent mean ± SD for at least three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001). OCR, oxygen consumption rate.
 
-## Correction of ATP6V0A1 expression improved autophagosome turnover and mitochondrial function
+### Correction of ATP6V0A1 expression improved autophagosome turnover and mitochondrial function
 
 Since most genes crucial for mitochondrial ATP-generation were downregulated in cystinotic RPTEC, we hypothesized that even without functional Cystinosin, correcting ATP6V0A1 expression would positively affect mitochondrial function and autophagosome turnover. We expressed ATP6V0A1via a plasmid in CTNS-/- RPTECs and observed reduced LC3-II accumulation (Figure 7A) indicating either reduced autophagy or increased autophagosome turnover. LC3-II expression was determined by dividing its expression by that of LC3-I (upper band). Beta-tubulin was used as a housekeeping gene. In addition, study of mitochondrial function (seahorse) in real time revealed increased mitochondrial basal, maximal and ATP-linked respiration - indicating an increased energy demand. ATP6V0A1 also improved non-mitochondrial oxygen consumption. However, the correction had no effect on the proton leak and significantly reduced the spare respiratory capacity (Figure 7B). Additionally, we showed that correcting ATP6V0A1 expression with the plasmid expressing the gene in CTNS-/-  cell lines did not have any significant effect on intracellular cystine level (Figure 7C). Overall, ATP6V0A1 correction in CTNS-/- cells partially improved mitochondrial function compared to the CTNS-/- RPTECs transfected with control plasmid.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig7-v1.jpg)
 
-**Figure 7.:** CTNS-/- RPTECs with a Myc-DDK-tagged human ATP6V0A1-plasmid, partially rescued the disease cell phenotype.(A) Immunoblot showing successful correction of ATP6V0A1 protein in the CTNS-/- cells. Correction of ATP6V0A1 significantly reduced the LC3-II protein expression. (B) The XF Cell Mito Stress Test shows that correction of ATP6V0A1 in CTNS-/- cells significantly improved basal respiration, and increased maximal respiration and ATP-linked respiration. Overall, ATP6V0A1 correction in CTNS-/- cells most closely resemble the normal human immortalized (HuIm) RPTECs compared to CTNS-/- or CTNS-/- with control plasmid. Electron microscopic evaluation of CTNS-/- RPTECs, and its partial recovery by overexpressing ATP6V0A1. (C) Correction of ATP6V0A1 in CTNS-/- cells had no effect on its cystine level. (D) TEM of control, CTNS-/-, and ATP6V0A1 overexpressed CTNS-/- (CTNS-/- +V0A1) RPTECs at low magnification. Asterisks indicate autophagic vacuoles (AV). Number of AV per cell from eight different sections of each sample was counted and depicted as a bar graph. Significant increase in AV (p=0.006) is observed in CTNS-/- compared to that of RPTECs and CTNS-/- +V0A1 groups. (E) TEM of control, CTNS-/-, and CTNS-/- +V0A1 RPTECs at low magnification. Asterisks indicate mitochondria. Number of mitochondria per cell from eight different sections of each sample was counted and depicted as a bar graph. Significant decrease (p=0.0005) in mitochondria is observed in CTNS-/- compared to that of RPTECs and CTNS-/- +V0A1 groups. Both figures A and B indicates rescue of the diseased phenotype by the correction of ATP6V0A1 (p=0.019; p=0.02, respectively). (F) Structurally abnormal ER-wrapped mitochondria with lesser cristae was observed in CTNS-/- compared to that of RPTECs. Though, structurally normal mitochondria with cristae was observed in CTNS-/- +V0A1 group, but majority of the mitochondria are wrapped by ER. Scale = 0.5 µm. (G) Intracellular LD was observed in more number of cells in CTNS-/- and CTNS-/- +V0A1 samples than control RPTECs. LDs have a unique structure, which is delimited by a monolayer of phospholipids differing from the classical bilayer structural organization. Arrows indicate endoplasmic reticulum (ER). Scale = 0.2 um. One-way ANOVA or t-test as suitable. Values represent mean ± SD for at least three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001).Figure 7—source data 1.Figure 7A.Figure 7—source data 2.Figure 7A, indicating the relevant bands and treatments.
+**Figure 7.:** (A) Immunoblot showing successful correction of ATP6V0A1 protein in the CTNS-/- cells. Correction of ATP6V0A1 significantly reduced the LC3-II protein expression. (B) The XF Cell Mito Stress Test shows that correction of ATP6V0A1 in CTNS-/- cells significantly improved basal respiration, and increased maximal respiration and ATP-linked respiration. Overall, ATP6V0A1 correction in CTNS-/- cells most closely resemble the normal human immortalized (HuIm) RPTECs compared to CTNS-/- or CTNS-/- with control plasmid. Electron microscopic evaluation of CTNS-/- RPTECs, and its partial recovery by overexpressing ATP6V0A1. (C) Correction of ATP6V0A1 in CTNS-/- cells had no effect on its cystine level. (D) TEM of control, CTNS-/-, and ATP6V0A1 overexpressed CTNS-/- (CTNS-/- +V0A1) RPTECs at low magnification. Asterisks indicate autophagic vacuoles (AV). Number of AV per cell from eight different sections of each sample was counted and depicted as a bar graph. Significant increase in AV (p=0.006) is observed in CTNS-/- compared to that of RPTECs and CTNS-/- +V0A1 groups. (E) TEM of control, CTNS-/-, and CTNS-/- +V0A1 RPTECs at low magnification. Asterisks indicate mitochondria. Number of mitochondria per cell from eight different sections of each sample was counted and depicted as a bar graph. Significant decrease (p=0.0005) in mitochondria is observed in CTNS-/- compared to that of RPTECs and CTNS-/- +V0A1 groups. Both figures A and B indicates rescue of the diseased phenotype by the correction of ATP6V0A1 (p=0.019; p=0.02, respectively). (F) Structurally abnormal ER-wrapped mitochondria with lesser cristae was observed in CTNS-/- compared to that of RPTECs. Though, structurally normal mitochondria with cristae was observed in CTNS-/- +V0A1 group, but majority of the mitochondria are wrapped by ER. Scale = 0.5 µm. (G) Intracellular LD was observed in more number of cells in CTNS-/- and CTNS-/- +V0A1 samples than control RPTECs. LDs have a unique structure, which is delimited by a monolayer of phospholipids differing from the classical bilayer structural organization. Arrows indicate endoplasmic reticulum (ER). Scale = 0.2 um. One-way ANOVA or t-test as suitable. Values represent mean ± SD for at least three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001).
 
-## Correction of ATP6V0A1 rescued morphologic renal tubular alterations
+### Correction of ATP6V0A1 rescued morphologic renal tubular alterations
 
 We performed TEM to characterize cellular morphologic aberrations in CTNS-/- compared to normal RPTECs and if correcting the ATP6V0A1 expression in CTNS-/- rescued the diseased RPTEC phenotype (Figure 7D). We observed a significant increase in autophagic vacuoles (AV), decrease in mitochondrial number with few or no cristae, swollen ER and the presence of LD within CTNS-/- RPTECs. Similar to control RPTECs, ATP6V0A1 correction significantly reduced AV (Figure 7E–G) and increased mitochondria number with well-preserved cristae. Nevertheless, correction did not affect intracellular LD accumulation.
 
-## ATX but not other antioxidants increases ATP6V0A1 expression in CTNS-/- RPTECs
+### ATX but not other antioxidants increases ATP6V0A1 expression in CTNS-/- RPTECs
 
 Since there is an increased production of reactive oxygen species in cystinotic renal epithelial cells (Sansanwal and Sarwal, 2010), we evaluated the effect of various antioxidants – Cysteamine, Vitamin E, and ATX. Both RPTECs with and without the CTNS were treated with 100 µM of Cysteamine for 24 hr and three different concentrations (20, 50, 100 µM) of vitamin E for 48 hr, and 20 µM of ATX for 48 hr (Figure 8—figure supplement 1). Both Cysteamine and Vitamin E had no significant effect on the ATP6V0A1 protein expression in CTNS-/- RPTECs (Figure 8A and B). Interestingly, only the ATX pretreatment increased ATP6V0A1 protein expression in CTNS-/- RPTECs (Figure 8C). To evaluate whether ATX could improve autophagic clearance via upregulating ATP6V0A1, LC3-II levels were measured and showed significant reduction of LC3-II/LC3-I ratio with ATX (Figure 8C). Figure 8D shows significantly increased ROS production in CTNS-/- RPTEC (p<0.0001) which was rescued with ATX treatment. MitoSox, a mitochondrial selective ROS detector, was used to measure mitochondrial-mediated ROS production and WST-1 was used to normalize cell viability. Using the JC-1 probe, we measured mt-membrane potential (ΔΨm) since its decrease is a quintessential event in the early stages of apoptosis. Compared to control, CTNS-/- RPTEC had a significant decrease (<0.04) in the JC-1 ratio of aggregates (590 nm) to monomers (530 nm) indicating a significant loss in ΔΨm, whereas ATX treatment rescued ΔΨm (Figure 8E) in CTNS-/- RPTEC.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig8-v1.jpg)
+
+**Figure 8.:** (A) Immunoblot showing that 100 µM of cysteamine treatment for 24 hr did not increase the expression of ATP6V0A1 in CTNS-/- RPTECs. (B) Immunoblots showing VitaminE has no effect on ATP6V0A1 expression in CTNS-/- RPTECs. (C) Immunoblots showing ATX upregulates ATP6V0A1, reduced the LC3-II (p=0.04) protein expression. Values represent mean ± SD for three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001). (D) ATX reduced (p=0.0002) mitochondrial ROS normalized to cell viability measured by WST-1. (E) ATX improved mitochondrial membrane potential (p=0.002, p<0.0001 at both 10 µM and 20 µM, respectively) in CTNS-/- as shown by the JC1 ratio. One-way ANOVA followed by Tukey's test or t-test as suitable. Values represent mean ± SD for atleast three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/94169/elife-94169-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** We used three concentrations of ATX 10, 20, 50 µM out of which 50 µM was toxic to RPTECs as it killed the cells. However, ATX improved mitochondrial membrane potential (p=0.002, p<0.0001 at both 10 µM and 20 µM, respectively) in CTNS-/- as shown by the JC1 ratio. A one-way ANOVA followed by Tukey's test was conducted. Values represent mean ± SD for at least three independent experiments (* p≤0.05; **p≤0.01; ***p≤0.001).
 
 ## Discussion
 
@@ -109,74 +258,252 @@ In summary, the novel findings of this study are ATP6V0A1’s role in cystinosis
 
 ## Methods
 
-## Study design and samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>RPTECs; Skin Fibroblasts</td>
+      <td>Gift from Drs. Gahl and Racusen</td>
+      <td></td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>RPTEC</td>
+      <td>Cambrex Biosciences</td>
+      <td></td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Skin Fibroblasts</td>
+      <td>Coriell Cell Repositories</td>
+      <td></td>
+      <td>Primary</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Immortalized RPTEC</td>
+      <td>Kerafast</td>
+      <td>Cat No. ECH001</td>
+      <td>Immortalized cell line, Male</td>
+    </tr>
+    <tr>
+      <td>Drug</td>
+      <td>Astaxanthin (ATX)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. No SML0982</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drug</td>
+      <td>Cysteamine</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. No M9768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drug</td>
+      <td>Vitamin E</td>
+      <td>Selleckchem</td>
+      <td>Cat. No S4686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected Construct (CRISPR/cas9) (Homo-sapiens)</td>
+      <td>guide RNA, tracrRNA, and Cas9</td>
+      <td>Benchling/Dharmacon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primer#1 primer#2</td>
+      <td>Thermos Fisher</td>
+      <td>#1: Assay ID: Hs01568699_m1 #2: Assay ID: Hs01568706_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Whole Human Genome 4×44 k 60-mer oligonucleotide arrays</td>
+      <td>Agilent</td>
+      <td>G4112F</td>
+      <td>Microarray- transcriptional profiles</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lysosome enrichment kit</td>
+      <td>Pierce Biotechnology</td>
+      <td>PI89839</td>
+      <td>Lysosome Isolation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATP6V0A1</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. No. 109002</td>
+      <td>(1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAMP2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. No. sc18822</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LC3B</td>
+      <td>Cell Signaling</td>
+      <td>Cat. No. 3868</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-p70 S6 Kinase (Thr389)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. No. MABS82</td>
+      <td>(1:500 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Total- p70 S6 Kinase</td>
+      <td>Cell Signaling</td>
+      <td>Cat. No. 9202 S</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH</td>
+      <td>Cell Signaling</td>
+      <td>Cat. No. 97166 S</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>beta-tubulin</td>
+      <td>Cell Signaling</td>
+      <td>Cat. No. 2128 S</td>
+      <td>(1:2000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BCECF AM</td>
+      <td>Invitrogen</td>
+      <td>B1170</td>
+      <td>pH measurement</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Seahorse XF Cell Mito Stress test</td>
+      <td>Agilent Technologies</td>
+      <td>103015–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Myc-DDK-tagged ATP6V0A1</td>
+      <td>Origene</td>
+      <td>RC226206</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>JC-1 mitochondrial membrane potential</td>
+      <td>Abcam</td>
+      <td>ab113580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MitoSox Red superoxide indicator</td>
+      <td>Thermo Fisher</td>
+      <td>M36008</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design and samples
 
 Human RPTECs and fibroblasts were isolated from eight unique individuals with a biochemically, clinically and genetically confirmed diagnosis of nephropathic cystinosis (provided by Dr. Gahl; Moran et al., 1990; Uniyal et al., 2019); in addition, similar cell types, RPTEC (Cambrex Biosciences, East Rutherford, NJ) and fibroblast (Coriell Cell Repositories, Camden, NJ) cell lines were commercially obtained as normal control cells. The patient derived RPTECs has its limitations, which are highlighted in the discussion section. Both normal RPTECs and fibroblasts were treated with cysteine dimethyl ester (CDME) to artificially load lysosomes with cystine, as this method has been used previously as a disease model for cystine RPTEC loading, although it is unclear how accurate this model is for functional analysis of molecular changes in cystinosis patient derived RPTECs (Elmonem et al., 2016; Schneider et al., 1967). In addition, we utilized a human immortalized (HuIm) RPTEC line (Clone TH1, passage 8, Cat No. ECH001, Kerafast, Boston, MA), as control, and used CRISPR-Cas9 to generate a CTNS-/- knock out HuIm RPTECs that was then structurally and functionally characterized to evaluate it as an in vitro model system to study human cystinosis RPTEC injury. This purchased HuIm RPTECs are derived from primary human renal proximal tubule epithelial cells (RPTECs) immortalized by two lentiviral vectors carrying the human telomerase and the SV40 T antigen. All cells were verified to be free of mycoplasma contamination. Details of the study design and its findings are shown in Figure 1.
 
 All RPTECs were cultured in renal epithelial growth medium (REGM; Lonza, Bend, OR); fibroblast cells were cultured in Minimum Essential Media (MEM) with Earl’s salts, supplemented with 15% FBS, 2 mM L- glutamine, 2 X conc. of non-essential AA, 100  μg/ml Penicillin, 100 U/ml Streptomycin and 0.5  μg/ml Fungizone (Invitrogen Corporation, Carlsbad, CA) at 37 °C in a 5% CO2 atmosphere. The medium was changed every alternate day, and cultured cells were harvested with 0.05% Trypsin/EDTA (Lonza, Bend, OR) and passaged. All cells were cultured in a 95% air/5% CO2 Thermo Forma incubator (Thermo Fisher Scientific, Waltham, MA) at 37 °C. All the experiments with cystinotic fibroblasts and RPTECs were performed between passage numbers 2–7, and normal immortalized RPTECs purchased from the company were used even at later passages as long as the cells looked healthy under microscope.  For CDME loading, cells were treated with 1 mM CDME (Sigma-Aldrich, St. Louis, MO) for 30 min.  Cells were pretreated with 20 μM ATX, purchased from Millipore Sigma, Burlington, MA (Cat. No SML0982) for 48 hr. Cysteamine was purchased from Millipore Sigma, Burlington, MA (Cat. No M9768) and cells were pretreated with Cysteamine for 24 hr. Vitamin E was purchased from Selleckchem, Houston TX (Cat. No S4686) and cells were treated with it for 48 hr. For each of the treatments, the control well of cells was treated with the same solvent where the compound was dissolved in.
 
-## Adaptation of CRISPR-Cas9 method to generate CTNS-/-  RPTECs
+### Adaptation of CRISPR-Cas9 method to generate CTNS-/-  RPTECs
 
 Since variations in genetic background and characteristics of the patient and normal RPTECs can result in experimental variations, independent of the CTNS mutation, immortalized healthy RPTEC cell lines (Kerafast, Boston, MA) were used to generate isogenic CTNS-/- cell lines. CRISPR-Cas9 ribonucleoproteins (crRNPs) were synthesized in vitro by the incubation of CTNS-specific guide RNA, trans-activating crRNA (tracrRNA), and Cas9 protein (Dharmacon, Lafayette, CO). These preformed complexes were then delivered to immortalized RPTECs by nucleofection for editing. We used benchling to design the guide RNA to specifically cut at exon 3 (Tusher et al., 2001).Though this is not a known cystinosis-causing mutation but such a knockout causes complete inactivation of Cystinosin, which is the common output of all the known mutations associated with nephropathic cystinosis. Since efficiency of gene-knockout varies from one cell to other, we sorted single cells by FACS and created a pure culture from a single cell., amplified over the cut-site using touch-down PCR amplification, and then submitted the PCR products for Sanger sequencing using both the forward and reverse TIDE oligos originally used for amplification. Once the chromatograms were returned, we chose to populate and use cells with at least 95% allelic editing, which provided a rough estimate of knock-out percentages (Figure 3).   Briefly, we cultured these single cells and isolated the DNA from both, the control RPTECs and CTNS-/- RPTECs, and then performed PCR amplification over the cut site from their genomic DNA. We designed single-stranded DNA oligos to serve as PCR primers for CTNS over the targeted cut site. We then amplified over the cut site using a touch-down PCR amplification strategy with appropriate annealing temperatures for the CTNS-specific primers. After this step we submitted the amplified DNA along with both the forward and reverse oligos originally used for amplification the CTNS gene for Sanger sequencing. If the nucleofection was successful, then it will be evident in the chromatogram obtained after Sanger. An estimated percentage of Indels was generated by uploading the experimental and control chromatograms to the TIDE webtool online.
 
-## Validation of the generated CTNS-/- RPTECs at the functional level by HPLC-MS/MS
+### Validation of the generated CTNS-/- RPTECs at the functional level by HPLC-MS/MS
 
 To detect the phenotype of these newly developed CTNS-/-  cell lines, we performed a functional assay measuring intracellular cystine levels using an HPLC-MS/MS method (UCSD Biochemical Genetics, San Diego). Briefly, we prepared the sample by trypsinizing the adherent cells, washed the cell pellet with ice cold 1 mL distilled PBS, centrifuged at 500 × g for 5 min, resuspended the cell pellet in 150 μl ice cold 650 μg/mL N-Ethylmaleimide (NEM; Sigma-Aldrich, St. Louis, MO) in PBS solution, then performed cell-dissociation, followed by adding 50 μL of 15% Sulfosalicylic Acid (SSA; Sigma-Aldrich, St. Louis, MO), centrifuged, saved the cell pellet for protein estimation and collect the supernatant separately, bring the volume up to 0.5 ml. The samples were stored at –80 °C until transfer (on dry ice) to the UCSD Biochemical Genetics lab. The pellet was resuspended in 0.5 mL 0.1 N NaOH to the cell protein pellets to solubilize, pulse vortexed, placed the tube on a rocker with gentle agitation overnight, then protein concentration was calculated by using a standard Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, Hampton, NH). The standards for the BCA assay were resuspended and diluted in 0.1 N NaOH instead of water. High levels of intracellular cystine in the generated CTNS-/-  cell line compared to control cells confirmed the successful knockout of the CTNS gene. The level of intracellular cystine accumulation in CTNS-/-  cell lines were comparable to cystine levels in cystinosis patients (Elmonem et al., 2016; Schneider et al., 1967; Figure 3C).
 
-## Validation of the generated CTNS-/- RPTECs at the transcript level by qPCR
+### Validation of the generated CTNS-/- RPTECs at the transcript level by qPCR
 
 We isolated total RNA from control and CTNS-/-  RPTECs by using RNeasy Mini kit (Cat# 74104; QIAGEN, Hilden, Germany). We followed the standardized protocol provided by the company. The RNA was stored in –80°C for long-term storage. We used 200 μg of the RNA for the complementary-DNA (cDNA) preparation or reverse transcription. Briefly, we added VILO master mix (Thermos Fisher, Waltham, MA) that contains all the reaction components in a pre-mixed formulation and nuclease-free water to the RNA for cDNA synthesis in a thermal cycler (Eppendorf) using lab standardized cDNA synthesis method. The cDNA was stored at 4° C to be used next day for quantitative Polymerase Chain Reaction (qPCR). For qPCR, we designed two primers targeting two specific exons on CTNS gene – primer#1 targets between exon 2–3 and primer#2 targets between exon 9–10. These primers were connected to Taqman MGB probe (Thermo Fisher, Waltham, MA). We diluted the cDNA and used 1.25 ng for the qPCR reaction. Briefly, we added master mix (Applied Bioscience, Waltham, MA) that contains all the reaction components, nuclease-free water, and primers to the cDNA and loaded the 384 PCR plate to the thermal cycle (Applied Bioscience, Waltham, MA) using lab standardized qPCR template.  Raw Ct data normalized using the delta delta Ct method against 18 S and a human universal reference RNA was uploaded into Partek Genomics Suite v.6.6 (Partek Inc, St. Louis, MO, USA). Data were analyzed with Student’s t-test to determine any statistically significant differences between groups. All data are presented as mean  ± SD. All statistical analyses were performed in Partek Genomics Suite v.6.6., GraphPadPrim v.8. (GraphPad Software Inc) and in Microsoft Excel (Microsoft, USA).
 
-## RNA isolation for microarray
+### RNA isolation for microarray
 
 Cells were grown until 70–80% confluence and processed for total RNA extraction using RNeasy Midi Kit (QIAGEN Inc, Germantown, MD). Total RNA concentration was measured by NanoDrop ND-1000 (NanoDrop Technologies, Wilmington, DE) and the integrity of the extracted total RNA was assessed with the Agilent 2100 Bioanalyzer using RNA Nano Chips (Agilent Technologies, Santa Clara, CA). Total RNA was stored at –80 °C until preparation for the microarray experiments.
 
-## Microarray experiments to characterize RPTEC and fibroblast transcriptional profiles in nephropathic cystinosis
+### Microarray experiments to characterize RPTEC and fibroblast transcriptional profiles in nephropathic cystinosis
 
 Hybridization of samples was conducted on Agilent Whole Human Genome 4×44 k 60-mer oligonucleotide arrays (G4112F, Agilent Technologies, Santa Clara, CA), using 150 ng of total RNA as template/sample. The arrays were scanned on an Agilent scanner and further processed using Agilent Feature Extraction Software (Agilent Technologies, Santa Clara, CA).
 
-## Lysosomal fractionation
+### Lysosomal fractionation
 
 Lysosomal fractions were isolated from cultured cells by density gradient separation using the lysosome enrichment kit (Pierce Biotechnology, Waltham, MA) for both tissue and cultured cells, following the protocol provided by Pierce. Fraction purity was assessed by western blot using lysosome-specific antibody against LAMP2.
 
-## Western blot
+### Western blot
 
 Whole cells and lysosomal extracts were prepared, and an equal amount of protein (15 μg) was subjected to SDS-PAGE. All primary antibody incubations were done in PBS supplemented with 0.1% Tween-20 (vol/vol) and 5% milk (wt/vol) overnight followed by washing with PBS-Tween (PBS supplemented with 0.1% Tween). The primary antibodies used were: ATP6V0A1 (Cat. No. 109002, Synaptic Systems, Goettingen, Germany), LAMP2 (Cat. No. sc18822, Santa Cruz Biotechnology, Santa Cruz, CA), LC3B (Cat. No. 3868, Cell Signaling, Danvers, MA), phospho-p70 S6 Kinase (Thr389) (Cat. No. MAB S82, Millipore Sigma, Burlington, MA), total p70 S6 kinase (Cat. No. 9202 S Cell Signaling, Danvers, MA), GAPDH (Cat. No. 97166 S, Cell Signaling, Danvers, MA), and beta-tubulin (Cat. No. 2128 S, Cell Signaling, Danvers, MA). The Peroxidase-conjugated secondary antibodies were diluted 1:2000 in PBS-Tween, incubated with the blot for a minimum of 1 hr at room temperature, and then washed with PBS-Tween and developed using Amersham ECL Plus Detection Reagent (RPN2124, Millipore Sigma, Burlington, MA). Loading levels were normalized using 1:2000 anti-GAPDH or beta-tubulin and anti-LAMP2 Abs. Band quantification was performed using the ImageLab software (National Institutes of Health).
 
-## Measurement of pH
+### Measurement of pH
 
 To measure lysosomal pH, we tried two methods – (1) pHLARE (Webb et al., 2021) and (2) LysoSensor (Ma et al., 2017). But due the fragility of the cystinotic cells, optimum fluorescence level of the biosensor, pHLARE could not be reached. Again, lysoSensor treatment to measure the pH killed the cystinotic RPTECs rapidly even at a very low concentration. Finally, the conversion of non-fluorescent 2',7'-bis-(2-carboxyethyl)–5-(and-6)-carboxyfluorescein acetoxymethyl ester (BCECF AM; Invitrogen, Waltham, MA) into a pH sensitive fluorescent indicator by the intracellular esterase was used to measure the pH, which represents an overall cytoplasmic and organelle pH and is not specific to the lysosomes. Briefly, we seeded a fixed number of cells in a clear-bottom black 96-well plate and incubated overnight in a CO2 incubator for the cells to attach. Next day, we incubated the cells with 2 μM of BCECF for 30 min, washed the plate with Hank’s Balanced Salt Solution (HBSS) then BCECF fluorescence was measured by using fluorescence microplate reader and pH was calculated.  The fluorescence ratio was acquired using the SpectraMax iD3 plate reader (Molecular Devices, San Jose, CA; excitation = 490, 440 nm; emission = 535 nm). The ratio of BCECF fluorescence at 490/440 nm is a function of pH.
 
-## Measurement of mitochondrial oxygen consumption rate
+### Measurement of mitochondrial oxygen consumption rate
 
 The Agilent Seahorse XFe analyzer allows for real-time measurements of cellular metabolic function in cultured cells. The oxygen consumption rate (OCR) was measured by the extracellular flux analyzer XF24 (Seahorse Bioscience, Santa Clara, CA) following optimization of cell number per well. RPTECs were plated at 4 x 105 cells/well in a Seahorse 24-well V7 microplate (Seahorse Bioscience, Santa Clara, CA) and cultured in complete renal epithelial growth medium for 16–18  hr  in a 5% CO2 incubator at 37 °C.  Cells were counted carefully and an equivalent optimum cell density (4x105 cells/ well) was used to always seed the same number of cells on the same plate. Additionally, background correction wells (i.e. wells that have not been seeded with cells) were included in the assay to normalize the data to background plate noise. Prior to the assay, the cells were washed and incubated with assay media (Agilent Technologies, Santa Clara, CA) supplemented with 1  mM glucose (Agilent Technologies, Santa Clara, CA), 1  mM pyruvate (Agilent Technologies), and 2  mM glutamine (Agilent Technologies, Santa Clara, CA) at 37 °C without CO2 for 45 min. Mitochondrial function was measured using  Seahorse XF Cell Mito Stress test (Agilent Technologies, Santa Clara, CA). Mitochondrial complex inhibitors (1.5 μM of oligomycin, 0.5 μM of FCCP, 0.5 μM of rotenone and antimycin A) were freshly prepared in XF assay media prior to each experiment and were distributed in ports surrounding the sensor which were sequentially injected to each well.
 
 OCR following serial injection of various probes was used as an indicator of mitochondrial function. Oligomycin, an ATP synthase inhibitor, was utilized as a probe for ATP-linked oxygen consumption; carbonyl cyanide-4-(trifluoromethoxy)phenylhydrazone (FCCP), an oxidative phosphorylation uncoupling agent, was used to induce maximum oxygen consumption and the resultant OCR was used to calculate spare respiratory capacity. A mixture of rotenone and antimycin-A inhibited complex I and complex III was used to result in complete inhibition of mitochondrial respiration and determination of non-mitochondrial oxygen consumption. We compared the pattern observed after injection of each inhibitor in cystinotic RPTECs.
 
-## Plasmid-mediated ATP6V0A1 expression in CTNS -/- RPTECs
+### Plasmid-mediated ATP6V0A1 expression in CTNS -/- RPTECs
 
 Myc-DDK-tagged ATP6V0A1 expression plasmid (RC226206, Origene, Rockville, MD) for ATP6V0A1 induction and pCMV6-Entry, mammalian vector with C-terminal Myc-DDK Tag (PS100001, Origene, Rockville, MD) as control were used. Briefly, 3×105 CTNS-/- and control RPTECs were seeded in six-well plates and incubated for 24 hr prior to transfection. TurboFectin 8.0 Transfection Reagent (F81001, Origene, Rockville, MD) was used at a final concentration of 4 μg/ml for transduction. The correction of ATP6V0A1 expression was verified with western blotting analysis.
 
-## Confocal microscopy
+### Confocal microscopy
 
 For immunofluorescence, RPTECs were plated in 4-well Chamber Slide with removable wells (Thermo Fisher, Waltham, MA), fixed in 100% chilled methanol (5 min), permeabilized with PBS containing 0.25% Triton X-100 (10 min), and washed three times in PBS. Cells were incubated in 10% normal goat serum blocking solution (Invitrogen, Waltham, MA) for 1 hr followed by overnight primary antibody incubation in a 4 °C humidified chamber. For co-immunostaining, we added both primary antibodies raised in different host species at the same time. The next day, slides were washed three times in PBS and followed by secondary antibody incubation in 1% BSA for 1 hr at room temperature in the dark. After washing with PBS, the cells were counterstained with DAPI for 5 min and then washed. The 1.5-mm-thick coverslip was then mounted with a drop of ProLong Glass Antifade Mountant (Thermo Fisher, Waltham, MA). Primary antibodies used were: LAMP2 (Santa Cruz Biotechnology, Santa Cruz, CA), ATP6V1B2 (Abcam, Cambridge, United Kingdom), ATP6V0A1 (Synaptic Systems, Goettingen, Germany), LC3B (Cell Signaling Technology, Danvers, MA), phospho-p70S6 Kinase (Thr398; Millipore Sigma-Aldrich, St. Louis, MO).  Secondary antibodies, donkey anti-Rabbit IgG Alexa Fluor 488 and goat anti-Mouse IgG Alexa Fluor 555 (Thermo Fisher, Waltham, MA) were used to detect bound primary antibody. Slides were viewed using a Leica SP5 Confocal Laser Scanning Microscope, and the images were analyzed by Leica Confocal software.
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 3×105 RPTECs were seeded in each well of a six well plate and maintained for 24 hr. On the day of the experiment, fresh 2% glutaraldehyde was generated from an 8% stock glutaraldehyde in complete REGM culture media and was added to each well so that cells were fully covered with fixative. After 15 min, the fixed cells were scrapped gently and transferred to a microcentrifuge tube. The samples were centrifuged, and the supernatant was discarded followed by the quick addition of 1 ml fresh fixative (2% glutaraldehyde in 0.1 M Cacodylate buffer pH 7.2). At this stage, the cells were stored at 4 °C and were then handed over to the Electron Microscope Laboratory (EML) imaging core at the University of California, Berkeley for sectioning and imaging. Sections were cut at 80 nm, stained with lead citrate and uranyl acetate, and examined under an FEI Tecnai12 electron microscope (FEI). The electron micrographs obtained from multiple distinct low-powered fields were used to count the number of mitochondria and autophagic vacuoles per cell in at least eight different view fields for each cell culture sample, and the average number of mitochondria or autophagic vacuole per cell culture was calculated.
 
-## Mitochondrial membrane potential assay
+### Mitochondrial membrane potential assay
 
 The mitochondrial membrane potential (ΔΨm) was measured with the JC-1 mitochondrial membrane potential assay kit (ab113580, Abcam, Cambridge, United Kingdom) according to manufacturer’s instructions. Briefly, RPTEC were seeded at 12,000 cells/well and allowed to adhere overnight in a black clear-bottom 96-well plate. Cells were treated with or without 10 or 20 μM ATX for 48 hr and then washed once with 1 X dilution buffer prior to incubation with 20 μM JC-1 dye for 10 min at 37 °C. Following incubation, cells were washed twice with 1 X dilution buffer and fluorescence intensity was determined for red aggregates (excitation = 535 nm)/emission = 590 nm and green monomers (excitation = 475 nm/emission = 530 nm) with the SpectraMax iD3 plate reader (Molecular Devices, San Jose, CA). The ratio of JC-1 aggregates (590 nm) to JC-1 monomers (530 nm) was calculated. A decrease in aggregate fluorescent count is indicative of depolarization whereas an increase is indicative of hyperpolarization.
 
-## Mitochondrial ROS production and cell viability
+### Mitochondrial ROS production and cell viability
 
 Mitochondrial ROS production was assessed using MitoSox Red superoxide indicator (Thermo Fisher, Waltham, MA). Briefly, cells plated at 10,000 cells/well in 96-well plates were washed with Hanks balanced salt solution (HBSS; Thermo Fisher, Waltham, MA) and treated with 5 μM MitoSOX for 15 min at 37 C and 5% CO2, protected from light. After staining, cells were washed twice with HBSS to remove background fluorescence. Fluorescence was read (excitation = 510 nm, emission = 580 nm) with the SpectraMax iD3 plate reader (Molecular Devices, San Jose, CA). Following MitoSox assay, cells were washed with HBSS and WST-1 (Abcam, Cambridge, United Kingdom) was added to the plate and incubated for 30 min at 37 °C and 5% CO2 to measure the cell viability. Absorbance was read at 440 nm to assess cell viability. Mitochondrial ROS production was normalized to cell viability.
 
-## Statistics
+### Statistics
 
 Agilent array data were processed and normalized using LOWESS in Gene Spring GX7.3 (Agilent Technologies). The LOWESS normalized data were further analyzed using significance analysis of microarrays (SAM) for two-class unpaired data to detect expression differences based on q-values (<5%; Tusher et al., 2001). The input for SAM was gene expression measurements from a set of microarray experiments, as well as a response variable from each experiment. SAM used simple median centering of the arrays is an unbiased statistical technique for finding significant genes in a set of microarray experiments. SAM uses repeated permutations of the data to determine whether the expression of each gene is significantly related to the response. Significance levels were set at a q-value of 5%. We used a cutoff of the absolute value of log2 red channel/green channel >0.5. Data were analyzed using GraphPad Prism software.  p-Values were calculated using Student’s t-test or One-way ANOVA and Tukey’ test. Results were expressed as mean ± SD (number of experiments) and considered to be statistically significant when p<0.05.
 
-## Materials availability
+### Materials availability
 
 We did not use human or animal models, but we have used human cells for this study. Cystinosis RPTE and fibroblast cells are gifts from Dr. Gahl and Dr. Racusen. In addition, the cell lines are commercially purchased. CRISPR-edited renal cell line is available in Sarwal Lab. Please email: Minnie.sarwal@ucsf.edu or Swastika.sur@ucsf.edu. The study was controlled by institutional review board approvals from the National Institute of Health, Stanford University and the Regents, University of California.

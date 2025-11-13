@@ -32,47 +32,47 @@ All codes are available online (see Additional files: Code).
 
 ## Results
 
-## Properties of experimental time series
+### Properties of experimental time series
 
 We study time series from different microbial systems: the human gut microbiome (David et al., 2014), marine plankton (Martin-Platero et al., 2018), and diverse body sites (hand palm, tongue, fecal) (Caporaso et al., 2011; Figure 1A). A study of the different characteristics for a selection of these data is represented in Figure 1. The complete study of all time series can be found in Supplementary file 1: Analysis of experimental data. We propose a detailed description of the properties of the experimental time series. They fall essentially into two categories. The stability and rank abundance are tightly connected to the deterministic part of the equations while the differences between abundances at successive time points and noise color explain the stochastic behavior. The neutrality is more subtle and depends on the complete system.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55650/elife-55650-fig1-v2.jpg)
 
-**Figure 1.:** (A) Time series. (B) Rank abundance profile. The abundance distribution is heavy-tailed and the rank abundance remains stable over time. (C) Noise color: No clear correlation between the slope of the power spectral density and the mean abundance of the species can be seen. The noise colors corresponding to the slope of the power spectral density are shown in the colorbar (white, pink, brown, black). (D) Absolute difference between abundances at successive time points: There is a linear correspondence (in log-log scale) between the mean absolute difference between abundances at successive time points and the mean abundance of the species. Because the slope is almost one, this hints at the linear nature of the noise. (E) Width of the distribution of the ratios of abundances at successive time points: The width of the distribution of successive time points is large (order 1) and does not depend on the mean abundance of the species. Most of the species fit well a lognormal distribution: the p-values of the Kolmogorov-Smirnov test are high. (F) Neutrality: The values of the Kullback-Leibler divergence () and the neutral covariance test (DKL) are explicitly given. Additionally, we use color codes for both tests with the neutral regime represented by dark blue. White and red indicate the niche regime for the KL test and NCT respectively. We conclude that most experimental time series are in the niche regime.pN⁢C⁢T
+**Figure 1.:** (A) Time series. (B) Rank abundance profile. The abundance distribution is heavy-tailed and the rank abundance remains stable over time. (C) Noise color: No clear correlation between the slope of the power spectral density and the mean abundance of the species can be seen. The noise colors corresponding to the slope of the power spectral density are shown in the colorbar (white, pink, brown, black). (D) Absolute difference between abundances at successive time points: There is a linear correspondence (in log-log scale) between the mean absolute difference between abundances at successive time points and the mean abundance of the species. Because the slope is almost one, this hints at the linear nature of the noise. (E) Width of the distribution of the ratios of abundances at successive time points: The width of the distribution of successive time points is large (order 1) and does not depend on the mean abundance of the species. Most of the species fit well a lognormal distribution: the p-values of the Kolmogorov-Smirnov test are high. (F) Neutrality: The values of the Kullback-Leibler divergence ($D_{KL}$) and the neutral covariance test ($p_{N⁢C⁢T}$) are explicitly given. Additionally, we use color codes for both tests with the neutral regime represented by dark blue. White and red indicate the niche regime for the KL test and NCT respectively. We conclude that most experimental time series are in the niche regime.
 
-## The time series show fluctuations over time
+#### The time series show fluctuations over time
 
 The experimental time series show large fluctuations over time. We can ask the question whether the origin of this variation is biological or technical, and assume that most of the variation can be contributed to biological processes. This hypothesis is supported by the results of Silverman et al., 2018 for microbial communities of an artificial gut. Here, the biological variation becomes five to six times more important than the technical variation for the sampling interval of a day. Also, Grilli, 2019 shows the time correlation of experimental time series which is non-zero. In the case where the variation is mostly due technical errors, we expect to see no correlation. Because no experimental errorbars are available for most of the data and because we assume most variation has a biological origin, we did not consider the errors on the species abundances.
 
-## The abundance distribution is heavy-tailed
+#### The abundance distribution is heavy-tailed
 
 The first aspect of community modeling that has been widely studied during the last years is the stability of the steady-states. Large random networks tend to be unstable (May, 1972). This problem is often solved by considering only weak interactions, sparse interaction matrices (May, 2001) or by introducing higher-order interactions (Grilli et al., 2017; Gavina et al., 2018; Sidhom and Galla, 2019). Although the stability of gLV models decreases with an increasing number of participating species, the stability only depends on the interaction matrix and not on the abundances (Gibbs et al., 2018). The abundance distribution of the experimental data is heavy-tailed. This means that there are few common and many rare species. The distribution of the steady-state values can also be represented by a rank abundance curve (see Box 1B). Although the abundances show large fluctuations over time, the rank abundance remains stable (Figure 1B).
 
-## The differences between abundances at successive time points are large and linear with respect to the species abundance
+#### The differences between abundances at successive time points are large and linear with respect to the species abundance
 
-Time series can be described by the differences between abundances at successive time points. We propose to focus on two specific representations of the information contained in those differences. First, we consider the mean absolute difference between abundances at successive time points ⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩ as a function of the mean abundance ⟨x⁢(t)⟩ (see Box 1D). For the experimental data, the relation between these variables is a monomial—this means that it is linear on the log-log scale (Figure 1D). The fact that the slope of this line is almost one hints at a linear nature of the noise.
+Time series can be described by the differences between abundances at successive time points. We propose to focus on two specific representations of the information contained in those differences. First, we consider the mean absolute difference between abundances at successive time points $⟨∣x⁢(t+\delta⁢t)-x⁢(t)∣⟩$ as a function of the mean abundance $⟨x⁢(t)⟩$ (see Box 1D). For the experimental data, the relation between these variables is a monomial—this means that it is linear on the log-log scale (Figure 1D). The fact that the slope of this line is almost one hints at a linear nature of the noise.
 
-Second, we examine the distribution of the ratios of the abundances at two successive time points x⁢(t+δ⁢t)/x⁢(t) (see Box 1E). The width of this distribution tells how large the fluctuations are. To measure this width, we fit the distribution with a lognormal curve for which the mean is fixed to be one as the fluctuations occur around steady-state. For most of the species of experimental data (except for the stool data), the fit of the distribution to a lognormal curve is good (Figure 1E). Furthermore, we notice that the distribution is wide—in the order of 1—and that the width does not depend on the mean abundance of the species (Figure 1E).
+Second, we examine the distribution of the ratios of the abundances at two successive time points $x⁢(t+\delta⁢t)/x⁢(t)$ (see Box 1E). The width of this distribution tells how large the fluctuations are. To measure this width, we fit the distribution with a lognormal curve for which the mean is fixed to be one as the fluctuations occur around steady-state. For most of the species of experimental data (except for the stool data), the fit of the distribution to a lognormal curve is good (Figure 1E). Furthermore, we notice that the distribution is wide—in the order of 1—and that the width does not depend on the mean abundance of the species (Figure 1E).
 
-## The noise color is independent of the mean abundance of the species
+#### The noise color is independent of the mean abundance of the species
 
 The noise of a time series can be studied by considering the distribution of the frequencies of the fluctuations. This distribution can be defined by its slope, which is interpreted as the noise color (see Box 1C). We notice that there is no correlation between the noise color and the mean abundance of the species for experimental time series (Figure 1C).
 
-## Experimental time series are in the niche regime
+#### Experimental time series are in the niche regime
 
 In neutral theory, it is assumed that all species or individuals are functionally equivalent. It is challenging to test whether a given time series was generated by neutral or niche dynamics. We use two definitions of neutrality measures: the Kullback-Leibler divergence as used in Fisher and Mehta, 2014 and the neutral covariance test as proposed by Washburne et al., 2016 (see Box 1F). Both neutrality measures indicate that most experimental time series are in the niche regime (Figure 1F).
 
-## Reproducing properties of experimental time series from stochastic generalized Lotka-Volterra models
+### Reproducing properties of experimental time series from stochastic generalized Lotka-Volterra models
 
-We find that the aforementioned characteristics of experimental time series can be reproduced by stochastic logistic equations. We first explain how to choose the growth rate to obtain the heavy-tailed experimental abundance distribution. Next, we discuss how the noise color determines the self-interaction of a species given its abundance and how the implementation of the noise determines the slope of the mean absolute increment ⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩ and the mean abundance ⟨x⁢(t)⟩ (such as in Figure 1D). In the end, by using the appropriate choice for the self-interactions, growth rates, and noise implementation, we conclude that a stochastic logistic model can reproduce all the stochastic properties, including the niche regime for the neutrality tests although the model does not include any interactions.
+We find that the aforementioned characteristics of experimental time series can be reproduced by stochastic logistic equations. We first explain how to choose the growth rate to obtain the heavy-tailed experimental abundance distribution. Next, we discuss how the noise color determines the self-interaction of a species given its abundance and how the implementation of the noise determines the slope of the mean absolute increment $⟨∣x⁢(t+\delta⁢t)-x⁢(t)∣⟩$ and the mean abundance $⟨x⁢(t)⟩$ (such as in Figure 1D). In the end, by using the appropriate choice for the self-interactions, growth rates, and noise implementation, we conclude that a stochastic logistic model can reproduce all the stochastic properties, including the niche regime for the neutrality tests although the model does not include any interactions.
 
-## The rank abundance distribution can be imposed by fixing the growth rate
+#### The rank abundance distribution can be imposed by fixing the growth rate
 
-Random matrix models do typically not give rise to heavy-tailed abundance distributions. Neither is it known which properties of the interaction matrix and growth rates are required to obtain a realistic rank abundance distribution. We can however enforce the desired rank abundance artificially by solving the steady-state of the gLV equations. Given the steady-state abundance vector x→* and interaction matrix ω, we impose the growth rate g^=-ω⁢x→*. One model that results in heavy-tailed distributions is the self-organized instability model proposed by Solé et al., 2002.
+Random matrix models do typically not give rise to heavy-tailed abundance distributions. Neither is it known which properties of the interaction matrix and growth rates are required to obtain a realistic rank abundance distribution. We can however enforce the desired rank abundance artificially by solving the steady-state of the gLV equations. Given the steady-state abundance vector $x→^{*}$ and interaction matrix ω, we impose the growth rate $g^=-\omega⁢x→^{*}$. One model that results in heavy-tailed distributions is the self-organized instability model proposed by Solé et al., 2002.
 
-For logistic models, the growth rate is equal to the product of the self-interaction and mean abundance. The noise color and the width of the distribution of ratios x⁢(t+δ⁢t)/x⁢(t) depend on this product. To obtain given characteristics—a predefined noise color and width of the distribution of ratios x⁢(t+δ⁢t)/x⁢(t)—the choice of the growth rate will dictate the choice of the remaining free parameters, the sampling time step δt and the noise strength σ.
+For logistic models, the growth rate is equal to the product of the self-interaction and mean abundance. The noise color and the width of the distribution of ratios $x⁢(t+\delta⁢t)/x⁢(t)$ depend on this product. To obtain given characteristics—a predefined noise color and width of the distribution of ratios $x⁢(t+\delta⁢t)/x⁢(t)$—the choice of the growth rate will dictate the choice of the remaining free parameters, the sampling time step δt and the noise strength σ.
 
-## The noise color is determined by the mean abundance and the self-interaction of the species
+#### The noise color is determined by the mean abundance and the self-interaction of the species
 
 To study the noise color, we first consider a model where the species are not interacting. The noise color is independent of the implementation of the noise but depends on the product of the mean abundance and the self-interaction of the species (Figure 2A). For noninteracting species, the growth rate equals the product of the self-interaction and the steady-state abundance. Because we consider fluctuations around steady-state, the mean and the steady-state abundance are nearly equal and the x-axis of Figure 2A; Figure 2B; Figure 2C; can be interpreted as the growth rate. Also, the strength of the noise does not change its color (Figure 2C). A parameter that is important for the noise color is the sampling rate: the higher the sampling frequency the darker the noise becomes (Figure 2B). This is in agreement with the results of Faust et al., 2018. Darker noise corresponds to more structure in the time series. The more frequent the abundances are sampled the more details are visible and the underlying interactions become more visible. We conclude that the noise color is only dependent on the mean abundance, the self-interactions, and the sampling rate. Figures of the dependence on the mean abundance and self-interaction separately can be found in Supplementary file 1: Supporting results.
 
@@ -82,21 +82,21 @@ To study the noise color, we first consider a model where the species are not in
 
 For interacting species, increasing the strength of the interactions makes the color of the noise darker in the high mean abundance range (Figure 2D; Figure 2E). Importantly, for interacting species with a lognormal rank abundance, the correlation between the noise color and mean abundance is preserved (Figure 2E). The data can be fit to obtain a bijective function between the product of the mean abundance and the self-interaction, and the noise color. Assuming this model is correct, we can obtain an estimate for the self-interaction coefficients given the mean abundance and noise color by fixing the sampling rate and the interaction strength. The uncertainty on the estimates is larger where the fitted curve is more flat (slopes of the power spectral density around −1.7 and 0), but many experimental values of the stool microbiome data lie in the pink region where the self-interaction can be estimated for this model.
 
-## The implementation of the noise determines the correlation between the mean absolute increment ⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩ and the mean abundance ⟨x⁢(t)⟩
+#### The implementation of the noise determines the correlation between the mean absolute increment ⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩ and the mean abundance ⟨x⁢(t)⟩
 
-Next, we study the differences between abundances at successive time points (see Figure 1D). From the results of the noise color, we can estimate the self-interaction for the dynamics of the experimental data. We use the rank abundance and the self-interaction inferred from noise color of the microbiome data of the human stool to perform simulations and calculate the characteristics of the distribution of differences between abundances at successive time points. We here assume that there are no interactions. More results for dynamics with interactions are in Supplementary file 1: Supporting results. We first study the correlation between the mean absolute difference between abundances at successive time points ⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩ and the mean abundance ⟨x⁢(t)⟩. For linear multiplicative noise, the slope of the curve of the logarithm of the mean absolute difference between abundances at successive time points log10⁡(⟨∣x⁢(t+δ⁢t)-x⁢(t)∣⟩) as a function of the logarithm of the mean abundance log10⁡(⟨x⁢(t)⟩) is one. For multiplicative noise that scales with the square root of the abundance, the slope is around 0.66 and for additive noise, the slope is zero. By combining both linear noise and noise that scales with the square root of the abundance, slopes with values between 0.6 and 1 can be obtained (Figure 3A). The slopes of experimental data range between 0.84 and 0.99, we therefore conclude that linear noise is a relatively good approximation to perform stochastic modeling of microbial communities.
+Next, we study the differences between abundances at successive time points (see Figure 1D). From the results of the noise color, we can estimate the self-interaction for the dynamics of the experimental data. We use the rank abundance and the self-interaction inferred from noise color of the microbiome data of the human stool to perform simulations and calculate the characteristics of the distribution of differences between abundances at successive time points. We here assume that there are no interactions. More results for dynamics with interactions are in Supplementary file 1: Supporting results. We first study the correlation between the mean absolute difference between abundances at successive time points $⟨∣x⁢(t+\delta⁢t)-x⁢(t)∣⟩$ and the mean abundance $⟨x⁢(t)⟩$. For linear multiplicative noise, the slope of the curve of the logarithm of the mean absolute difference between abundances at successive time points $log_{10}⁡(⟨∣x⁢(t+\delta⁢t)-x⁢(t)∣⟩)$ as a function of the logarithm of the mean abundance $log_{10}⁡(⟨x⁢(t)⟩)$ is one. For multiplicative noise that scales with the square root of the abundance, the slope is around 0.66 and for additive noise, the slope is zero. By combining both linear noise and noise that scales with the square root of the abundance, slopes with values between 0.6 and 1 can be obtained (Figure 3A). The slopes of experimental data range between 0.84 and 0.99, we therefore conclude that linear noise is a relatively good approximation to perform stochastic modeling of microbial communities.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55650/elife-55650-fig3-v2.jpg)
 
 **Figure 3.:** (A) Correlation between the mean absolute differences between abundances at successive time points and the mean abundance for different strengths of the linear noise (σlin) and multiplicative noise that scales with the square root of the abundances (σsqrt). More specifically, the parameter represents the slope of the logarithm of the mean absolute difference between abundances at successive time points as a function of the logarithm of the mean abundance. Examples of such slopes are given by Figure 1D. Here, the slope ranges from 0.66 for noise that scales with the square root to one for linear noise. (B) The width of the distribution of the ratios of abundances at successive time points increases for increasing strength of the noise. For sufficiently strong noise the distribution is well fitted by a lognormal function (high p-values for the Kolmogorov-Smirnov test).
 
-## The strength of the noise determines the width of the distribution of ratios x⁢(t+δ⁢t)/x⁢(t)
+#### The strength of the noise determines the width of the distribution of ratios x⁢(t+δ⁢t)/x⁢(t)
 
 Next, we examine the distribution of the ratios of abundances at successive time points (see Box 1E). As expected, for significant noise, this distribution can be approximated by a lognormal curve and the width of the distribution becomes larger for increasing noise strength (Figure 3B). In order to have widths that are of the same order of magnitude as the ones of the experimental data, the noise must be sufficiently strong. Another way of increasing the width is through interactions, this effect is only moderate. These results are presented in Supplementary file 1: Supporting results.
 
-## Stochastic logistic models capture the properties of experimental time series
+#### Stochastic logistic models capture the properties of experimental time series
 
-By using all previous results and imposing the steady-state of experimental data, we find that it is possible to generate time series with identical characteristics to the ones seen in the experimental time series (Figure 4). Furthermore, these time series can be generated without introducing any interaction between the different species, but their neutrality measures can still be in the niche regime (Figure 4F). Out of 100 simulations, 62 had a p-value smaller than 0.05 for the neutral covariance test which means they are in the niche regime. The colors of the noise fix the self-interaction values (Figure 4C), next the rank abundance distribution is imposed by calculating the growth vector g^ (Figure 4B). The slope of the curve of the mean absolute difference between abundances at successive time points as a function of the mean abundance is one by using linear multiplicative noise (Figure 4D) and the width of the fluctuations is tuned by choosing a large noise size σ (Figure 4E). In most experimental time series, only the fractional abundances of species can be measured per time point and not the absolute ones. Because the total abundance of all species remains nearly constant in time series generated by a stochastic logistic equation, our results still hold for time series with fractional abundances (see Supporting results). Similar results can be obtained for models with interactions (see Supporting results), but we want to stress that interactions are not needed to reproduce the properties of experimental time series.
+By using all previous results and imposing the steady-state of experimental data, we find that it is possible to generate time series with identical characteristics to the ones seen in the experimental time series (Figure 4). Furthermore, these time series can be generated without introducing any interaction between the different species, but their neutrality measures can still be in the niche regime (Figure 4F). Out of 100 simulations, 62 had a p-value smaller than 0.05 for the neutral covariance test which means they are in the niche regime. The colors of the noise fix the self-interaction values (Figure 4C), next the rank abundance distribution is imposed by calculating the growth vector $g^$ (Figure 4B). The slope of the curve of the mean absolute difference between abundances at successive time points as a function of the mean abundance is one by using linear multiplicative noise (Figure 4D) and the width of the fluctuations is tuned by choosing a large noise size σ (Figure 4E). In most experimental time series, only the fractional abundances of species can be measured per time point and not the absolute ones. Because the total abundance of all species remains nearly constant in time series generated by a stochastic logistic equation, our results still hold for time series with fractional abundances (see Supporting results). Similar results can be obtained for models with interactions (see Supporting results), but we want to stress that interactions are not needed to reproduce the properties of experimental time series.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55650/elife-55650-fig4-v2.jpg)
 
@@ -112,44 +112,115 @@ Predictive models for the dynamics of microbial communities will certainly requi
 
 ## Materials and methods
 
-## Modeling generalized Lotka-Volterra equations
+### Modeling generalized Lotka-Volterra equations
 
-In a microbial community different species interact because they compete for the same resources. Moreover, they produce byproducts that can affect the growth of other species. Depending on the nature of the byproducts, harmful, beneficial, or even essential, the interaction strength will be either negative or positive. To describe the dynamics of interacting species, one can use the generalized Lotka-Volterra equations:(1)x˙i=λi+gi⁢xi+∑jωi⁢j⁢xi⁢xj,where xi, λi and gi are the abundance, the immigration rate, and the growth rate of species i respectively, and ωi⁢j is the interaction coefficient that represents the effect of species j on species i. The diagonal elements of the interaction matrix ωi⁢i, the so-called self-interactions, are negative to ensure stable steady-states. The off-diagonal elements of the interaction matrix ωi⁢j are drawn from a normal distribution with standard deviation α (ωi⁢j∼𝒩⁢(0,α2)). The gLV equations only consider pairwise effects and no saturation terms, or other higher-order terms. Due to this drawback, these models sometimes fail to predict microbial dynamics (Momeni et al., 2017; Levine et al., 2017). However, they are among the most simple models for interacting species and therefore widely studied and used. Noninteracting species can be described by the logistic model, which is a special case of the gLV model obtained by setting all off-diagonal elements of the interaction matrix to zero.
+In a microbial community different species interact because they compete for the same resources. Moreover, they produce byproducts that can affect the growth of other species. Depending on the nature of the byproducts, harmful, beneficial, or even essential, the interaction strength will be either negative or positive. To describe the dynamics of interacting species, one can use the generalized Lotka-Volterra equations:
 
-## Implementations of the noise
+$$
+x˙_{i}=\lambda_{i}+g_{i}⁢x_{i}+\sumj\omega_{i⁢j}⁢x_{i}⁢x_{j},
+$$
+
+where xi, λi and gi are the abundance, the immigration rate, and the growth rate of species i respectively, and $\omega_{i⁢j}$ is the interaction coefficient that represents the effect of species $j$ on species i. The diagonal elements of the interaction matrix $\omega_{i⁢i}$, the so-called self-interactions, are negative to ensure stable steady-states. The off-diagonal elements of the interaction matrix $\omega_{i⁢j}$ are drawn from a normal distribution with standard deviation α ($\omega_{i⁢j}∼𝒩⁢(0,\alpha^{2})$). The gLV equations only consider pairwise effects and no saturation terms, or other higher-order terms. Due to this drawback, these models sometimes fail to predict microbial dynamics (Momeni et al., 2017; Levine et al., 2017). However, they are among the most simple models for interacting species and therefore widely studied and used. Noninteracting species can be described by the logistic model, which is a special case of the gLV model obtained by setting all off-diagonal elements of the interaction matrix to zero.
+
+### Implementations of the noise
 
 There exist two principal types of noise: intrinsic and extrinsic noise. Extrinsic noise arises due to external sources that can alter the values of the different variables: the immigration rate and growth rate fluctuate in time through colonization of species or a changing flux of nutrients. These processes give rise to additive and linear multiplicative noise respectively. The remaining parameters, inter- and intra-specific interactions can also, change depending on the environment. The formulation of this noise is more subtle (used in Zhu and Yin, 2009). Intrinsic noise is due to the discrete nature of individual microbial cells. Thermal fluctuations at the molecular level determine the fitness of the individual cells. Therefore, cell growth, cell division, and cell death can be considered as stochastic Poisson processes. For large numbers of microbes, these fluctuations will be averaged out.
 
-We first consider the extrinsic noise. If the time series is calculated by xi⁢(t+d⁢t)=xi⁢(t)+d⁢xi⁢(t), the implementation of the linear multiplicative noise is as follows,(2)dxi(t)=λidt+gixi(t)dt+∑jωijxi(t)xj(t)dt+xi(t)σidW(t),where dW is an infinitesimal element of a Brownian motion defined by a variance of dt (d⁢W∼d⁢t⁢𝒩⁢(0,1)). Changes in immigration rates of microbial species can be modeled with additive noise,(3)dxi=λidt+gixidt+∑jωijxixjdt+σi,constdWconst,with d⁢Wconst∼d⁢t⁢𝒩⁢(0,1). Our main motivation is to model the gut microbiome in the colon. Here, we ignore the immigration of species for two reasons. First, the number of microbes in the colon is orders of magnitude larger than the number of microbes in the other parts of the gut (Marteau et al., 2001; Gorbach et al., 1967)—therefore, the flux of incoming microbes in the colon is small. Second, we only consider systems around steady-state, for which we assume immigration does not play an important role. For perturbed systems, which are far from equilibrium, immigration rates cannot be ignored. Ignoring immigration may be too restrictive for some microbial systems such as the skin microbiome or plankton.
+We first consider the extrinsic noise. If the time series is calculated by $x_{i}⁢(t+d⁢t)=x_{i}⁢(t)+d⁢x_{i}⁢(t)$, the implementation of the linear multiplicative noise is as follows,
 
-To derive the form of intrinsic noise in generalized Lotka-Volterra equations, we can consider every species abundance making a random walk in one dimension. The average displacement is zero and the variance of displacement is the sum of the rate of growth (jumping to the right) and the rate of death (jumping to the left). For the generalized Lotka-Volterra equations, this results in a noise term(4)⟨ni(t)ni(t′)⟩=(growth ratei+death ratei)xi=(f(gi)+h(ω,x→))xiδ(t−t′),with ω the interaction matrix and where functions f and h each decouple the growth and death terms. In the generalized Lotka-Volterra model no difference is made between negative interactions as a result of slowing down the growth rate or increasing the death rate, only the resulting net rates are used. This distinction must however be made to implement the intrinsic noise for gLV. In our analysis, we use the simpler logistic models where the resulting variance of the noise is proportional to the square root of the abundance x. One must be careful not to use this noise for values that are smaller than one because this derivation relies on Poisson statistics which is defined for integer numbers.
+$$
+dx_{i}(t)=\lambda_{i}dt+g_{i}x_{i}(t)dt+\sumj\omega_{ij}x_{i}(t)x_{j}(t)dt+x_{i}(t)\sigma_{i}dW(t),
+$$
 
-We implement the intrinsic noise by a term that scales with the square root of the species abundance (Walczak et al., 2012; Fisher and Mehta, 2014),(5)d⁢xi⁢(t)=λi⁢d⁢t+gi⁢xi⁢(t)⁢d⁢t+∑jωi⁢j⁢xi⁢(t)⁢xj⁢(t)⁢d⁢t+xi⁢(t)⁢σi,sqrt⁢d⁢Wsqrt,with d⁢Wsqrt again an infinitesimal element of a Brownian motion defined by a variance of dt (d⁢Wsqrt∼d⁢t⁢𝒩⁢(0,1)). The size of this noise σi,sqrt is determined by the cell division (g+) and death rates (g-) separately, which are in our model combined to one growth vector (g=g+-g-, σi,sqrt=g++g-), for large division and death rates the intrinsic noise will be larger.
+where dW is an infinitesimal element of a Brownian motion defined by a variance of dt ($d⁢W∼\sqrt{d⁢t}⁢𝒩⁢(0,1)$). Changes in immigration rates of microbial species can be modeled with additive noise,
+
+$$
+dx_{i}=\lambda_{i}dt+g_{i}x_{i}dt+\sumj\omega_{ij}x_{i}x_{j}dt+\sigma_{i,const}dW_{const},
+$$
+
+with $d⁢W_{const}∼\sqrt{d⁢t}⁢𝒩⁢(0,1)$. Our main motivation is to model the gut microbiome in the colon. Here, we ignore the immigration of species for two reasons. First, the number of microbes in the colon is orders of magnitude larger than the number of microbes in the other parts of the gut (Marteau et al., 2001; Gorbach et al., 1967)—therefore, the flux of incoming microbes in the colon is small. Second, we only consider systems around steady-state, for which we assume immigration does not play an important role. For perturbed systems, which are far from equilibrium, immigration rates cannot be ignored. Ignoring immigration may be too restrictive for some microbial systems such as the skin microbiome or plankton.
+
+To derive the form of intrinsic noise in generalized Lotka-Volterra equations, we can consider every species abundance making a random walk in one dimension. The average displacement is zero and the variance of displacement is the sum of the rate of growth (jumping to the right) and the rate of death (jumping to the left). For the generalized Lotka-Volterra equations, this results in a noise term
+
+$$
+⟨n_{i}(t)n_{i}(t^{′})⟩=(growth rate_{i}+death rate_{i})x_{i}=(f(g_{i})+h(\omega,x→))x_{i}\delta(t−t^{′}),
+$$
+
+with ω the interaction matrix and where functions f and h each decouple the growth and death terms. In the generalized Lotka-Volterra model no difference is made between negative interactions as a result of slowing down the growth rate or increasing the death rate, only the resulting net rates are used. This distinction must however be made to implement the intrinsic noise for gLV. In our analysis, we use the simpler logistic models where the resulting variance of the noise is proportional to the square root of the abundance $\sqrt{x}$. One must be careful not to use this noise for values that are smaller than one because this derivation relies on Poisson statistics which is defined for integer numbers.
+
+We implement the intrinsic noise by a term that scales with the square root of the species abundance (Walczak et al., 2012; Fisher and Mehta, 2014),
+
+$$
+d⁢x_{i}⁢(t)=\lambda_{i}⁢d⁢t+g_{i}⁢x_{i}⁢(t)⁢d⁢t+\sumj\omega_{i⁢j}⁢x_{i}⁢(t)⁢x_{j}⁢(t)⁢d⁢t+\sqrt{x_{i}⁢(t)}⁢\sigma_{i,sqrt}⁢d⁢W_{sqrt},
+$$
+
+with $d⁢W_{sqrt}$ again an infinitesimal element of a Brownian motion defined by a variance of dt ($d⁢W_{sqrt}∼\sqrt{d⁢t}⁢𝒩⁢(0,1)$). The size of this noise $\sigma_{i,sqrt}$ is determined by the cell division (g+) and death rates (g-) separately, which are in our model combined to one growth vector ($g=g^{+}-g^{-}$, $\sigma_{i,sqrt}=\sqrt{g^{+}+g^{-}}$), for large division and death rates the intrinsic noise will be larger.
 
 To sum up, we focus on linear multiplicative noise because: (a) extrinsic noise is dominant as microbial communities contain a very large number of individuals and (b) we ignore the immigration of individuals in our analysis.
 
 We verified that our analysis is robust with respect to the multiple possibilities for the discretization of these models. We also compare our population-level approach with individual-based modeling approaches. Details can be found in the Supplementary file 1: Supporting results.
 
-## Neutrality measures
+### Neutrality measures
 
 There is no consensus on the definition of neutrality. In general, ecosystems are considered neutral if the dominating cause of fluctuations is random birth and death processes and not fitness advantages of species.
 
 Different neutrality measures focus on different aspects of neutrality. The Kullback-Leibler divergence verifies whether all species are equal (equal abundances and equal covariances). The neutrality covariance test studies the grouping invariance of species in time series.
 
-Given two distributions P and Q, the Kullback-Leibler divergence is defined as(6)DK⁢L⁢(P|Q)=EP⁢[ln⁡PQ]where EP is the expectation value using the probabilities of distribution P. The density function of a multivariate Gaussian distribution is(7)P(x)=1(2π)N/2detKexp⁡(−12(x−μ)TK−1(x−μ))where μ and K are the mean and covariance matrix of the distribution respectively. The Kullback-Leibler divergence for two multivariate Gaussian distributions in ℝn is (Duchi, 2007)(8)DKL(P|Q)=12(ln⁡detKQdetKP−n+Tr(KQ−1KP)+(μQ−μP)TKQ−1(μQ−μP)).
+Given two distributions P and Q, the Kullback-Leibler divergence is defined as
 
-For every time series, we can calculate the mean μ and covariance matrix K, and define values μN and KN for a corresponding neutral time series in which all species are equal (Fisher and Mehta, 2014). The distance to neutrality DK⁢L⁢(P|PN) can thus be calculated by computing the probability distribution of the original time series P and the associated neutral distribution PN with mean values μN=S-1⁢∑i=1Sμi and KP,i⁢i=S-1⁢∑i=1SKi⁢i and KP,i⁢j=S-1⁢(S-1)-1⁢∑i=1S∑j=1,i≠jSKi⁢j with S the number of species.
+$$
+D_{K⁢L}⁢(P|Q)=E_{P}⁢[ln⁡\frac{P}{Q}]
+$$
+
+where $E_{P}$ is the expectation value using the probabilities of distribution P. The density function of a multivariate Gaussian distribution is
+
+$$
+P(x)=\frac{1}{(2\pi)^{N/2}\sqrt{detK}}exp⁡(−\frac{1}{2}(x−\mu)^{T}K^{−1}(x−\mu))
+$$
+
+where μ and K are the mean and covariance matrix of the distribution respectively. The Kullback-Leibler divergence for two multivariate Gaussian distributions in $ℝ^{n}$ is (Duchi, 2007)
+
+$$
+D_{KL}(P|Q)=\frac{1}{2}(ln⁡\frac{detK_{Q}}{detK_{P}}−n+Tr(K_{Q}^{−1}K_{P})+(\mu_{Q}−\mu_{P})^{T}K_{Q}^{−1}(\mu_{Q}−\mu_{P})).
+$$
+
+For every time series, we can calculate the mean μ and covariance matrix K, and define values $\mu_{N}$ and $K_{N}$ for a corresponding neutral time series in which all species are equal (Fisher and Mehta, 2014). The distance to neutrality $D_{K⁢L}⁢(P|P_{N})$ can thus be calculated by computing the probability distribution of the original time series P and the associated neutral distribution $P_{N}$ with mean values $\mu_{N}=S^{-1}⁢\sum_{i=1}^{S}\mu_{i}$ and $K_{P,i⁢i}=S^{-1}⁢\sum_{i=1}^{S}K_{i⁢i}$ and $K_{P,i⁢j}=S^{-1}⁢(S-1)^{-1}⁢\sum_{i=1}^{S}\sum_{j=1,i\neqj}^{S}K_{i⁢j}$ with S the number of species.
 
 The neutral covariance test was designed by Washburne et al., 2016. We used a python translation of the code developed by this author.
 
-## Noise color
+### Noise color
 
 The color of the noise in a time series is determined by the slope of the power spectral density in a log-log scale. This slope can be determined by a linear fit through the spectrum. A different technique to estimate this slope has been put forward by Faust et al., 2018. There, it is argued that the power spectral density does not have a constant slope and that, therefore, a nonlinear curve must be fitted. They choose a spline fit and consider the minimal value of its derivative to be the value of the noise color. Because the minimal value of the slope of the fit is taken, the noise color tends to be darker when using this technique. For our time series, however, we see that the spline fit only deviates from the linear fit for low frequencies (Figure 5). We ignore the low frequencies for fitting because of the windowing effect. Therefore, we opt for a linear fit after omitting the values for low frequencies (one order of magnitude of the lowest frequencies).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55650/elife-55650-fig5-v2.jpg)
 
-**Figure 5.:** A) is determined by the slope of the power spectral density (B).This slope can be measured through a linear fit of all values (dashed), a linear fit through the higher frequency range (solid line) or by performing a spline fit (dotted). A linear fit through all frequencies can be influenced by the windowing effect for low frequencies and the spline fit can make the slope steeper at the low frequencies and result in a darker noise as can be seen for the purple curves. The values of the noise color determined by the different techniques are given in the legend. Therefore, in our work, we opt for the linear fit with a cutoff for low frequencies.
+**Figure 5.:** This slope can be measured through a linear fit of all values (dashed), a linear fit through the higher frequency range (solid line) or by performing a spline fit (dotted). A linear fit through all frequencies can be influenced by the windowing effect for low frequencies and the spline fit can make the slope steeper at the low frequencies and result in a darker noise as can be seen for the purple curves. The values of the noise color determined by the different techniques are given in the legend. Therefore, in our work, we opt for the linear fit with a cutoff for low frequencies.
 
 The correspondence between the colors and slopes is here:
 
-SlopeColor0white-1pink-2brown-3black
+<table>
+  <thead>
+    <tr>
+      <th>Slope</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>white</td>
+    </tr>
+    <tr>
+      <td>-1</td>
+      <td>pink</td>
+    </tr>
+    <tr>
+      <td>-2</td>
+      <td>brown</td>
+    </tr>
+    <tr>
+      <td>-3</td>
+      <td>black</td>
+    </tr>
+  </tbody>
+</table>

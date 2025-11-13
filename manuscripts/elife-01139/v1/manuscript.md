@@ -16,9 +16,218 @@ The relentless expansion that threatens the sustainability of biomedical researc
 
 ## Too many PhD students taking too long to get a PhD
 
-In the past three decades (1979–2009), the number of biomedical graduate students in the US doubled, with most of the increase funded by NIH research grants awarded to principal investigators (see Table 1). However, as many as 44% of these students fail to complete their training, and about one in three of those who do obtain PhDs leave research completely (Table 2). This means that only 37%, or slightly more than a third, of the students who start PhDs eventually become researchers, even though the main purpose of a PhD programme is to teach students how to do research.Table 1.Number of graduate students supported by different funding sources in 1979 and 200919792009Change (%)NIH research grants8,00025,500219NIH training grants4,5005,80029Fellowships3,0007,000133Teaching7,0008,00014Other7,50010,50040Total30,00056,80089The total number of graduate students in the biomedical sciences in the US increased from about 30,000 in 1979 to 56,800 in 2009 (data from figure 2 of the Workforce report). The biggest increase was in the number of students supported from NIH research grants to academic investigators. Fellowships include both NIH and non-federal fellowships. The actual numbers are probably higher because the numbers in the table represent those subsets of the total graduate student population that can be easily tracked: for example, some estimates put the number of PhD students at 83,000 (see Table 2). However, I believe that the overall distribution between subsets, and also the relative changes between 1979 and 2009, are roughly correct.Table 2.A “snapshot” of the biomedical workforce from 2009NumberBiomedical PhD students Total number83,000 Number who started PhDs16,000 Number awarded PhDs9,000 Number who started postdoc5,800 Average time to PhD (years)6–7Post-PhD workforce% Scientific research84,50066  (Government research)(7,000)(6)  (Academic research or teaching)(55,000)(43)  (Industrial research)(22,500)(18) Related to science (not research)24,00018 Unrelated to science17,00013 Unemployed2,5002Total128,000100This snapshot (data from Workforce report, p32) shows that 16,000 students started PhDs in 2009, but only 9,000 students received PhDs in 2009: this suggests a completion rate of just 56%. The table also shows that 66% of PhD graduates go on to pursue careers in research. This suggests that just over one-third (66% of 56% = 37%) of those students who start PhDs go on to become scientific researchers in government, academic or industrial laboratories. The Workforce report emphasizes that these data are only approximate; for instance, estimates of postdoc numbers vary between 37,000 and 68,000, and estimates for the number of PhD students vary between 83,000 (shown here) and 56,800 (Table 1). Overall, however, it is clear to me that too many students start PhDs and that, on average, most PhD training programmes are strikingly inefficient at producing PhDs.
+In the past three decades (1979–2009), the number of biomedical graduate students in the US doubled, with most of the increase funded by NIH research grants awarded to principal investigators (see Table 1). However, as many as 44% of these students fail to complete their training, and about one in three of those who do obtain PhDs leave research completely (Table 2). This means that only 37%, or slightly more than a third, of the students who start PhDs eventually become researchers, even though the main purpose of a PhD programme is to teach students how to do research.
 
-An efficient system, in my opinion, would produce enough high-quality PhD researchers to fulfil the nation’s research needs, plus a few more. Thus, 10 years after receiving their PhD, about 85% of graduates would directly engage in academic or industrial research, usually after a period as a postdoc; 10% would work in non-research activities related to science; and 5% would opt for careers unrelated to science. Some first-rate PhD programmes come close to the 85% target, but the average PhD programme produces new PhDs with scandalously low efficiency (see Box 1 and Table 3).Box1.Making PhD programmes better and shorterTo explore how things might be done differently, let us compare two highly regarded PhD programmes—the Watson School of Biological Sciences at Cold Spring Harbor Laboratory (CSHL), and the ‘Tetrad’ program at my own institution, the University of California, San Francisco (UCSF)—with the average for all graduate programmes. Two points stand out. First, significantly more of the students entering the CSHL and UCSF programmes obtained PhDs, and significantly more also opted for a career in research, which suggests that a large majority of ‘average’ programmes recruit less able students and/or train them poorly. Second, the time taken to obtain a PhD was notably shorter at CSHL—just 4.6 years, compared with 6.5 years at UCSF and 6–7 years on average (Table 3).How does CSHL produce PhDs in an average of 4.6 years? When the Watson School was founded at the lab in 1999, the research faculty agreed to shorten the time taken to obtain a PhD. Each year the school typically admits 10 or fewer new students, which allows for more intensive mentoring of students than in the Tetrad programme at UCSF (which accepts 15–20 new PhD students per year). Students at the Watson School are also mentored by more members of the CSHL faculty compared with their opposite numbers at UCSF. Students also complete their mandatory coursework in a shorter time at CSHL than at UCSF. And perhaps most importantly, training dollars at the Watson School are clearly separated from research dollars: all PhD students are supported by fellowships from outside sources or by the School itself; they receive no funds from research grants obtained by principal investigators. (Students in the Tetrad programme are supported by training grants or other school funds for their first three years in the programme, and thereafter by fellowships from outside sources or research grants awarded to their supervisor.)Does that two-year difference produce students who are less well qualified for postdoc positions? Alex Gann, dean of the Watson School, says that students do not receive a PhD without evidence of substantial research achievement, and that they have no difficulty competing for postdoc positions in excellent labs: for example, of the 52 PhD students who graduated between 1999 and 2008, 11 are in tenure-track positions.Why does it take 6.5 years on average to obtain a PhD from UCSF? A colleague tells me that it takes this long for each student to produce at least one truly outstanding paper, which furnishes the necessary confidence (and the beginning of a striking publication record) for a successful research career. To the contrary, I suspect that my colleagues keep students in their labs for six years or longer, partly in order to get maximum possible output from a student once she or he has learned how to be a scientist. Thus it seems clear, at least to me, that other PhD programmes should emulate the Watson School’s reduction of the overall training period, to help young scientists obtain independent positions earlier in their careers.Table 3.Different PhD programmesUCSF Tetrad 1999–2001CSHL Watson school 1999–2006Average (2009)Number of students who started PhDs666016,000Number (%) who obtained PhDs63 (94%)50 (83%)9,000 (56%)Average time taken (years)6.5 (approximately)4.66–7Post-PhD career path Research (postdocs included)56 (89%)42 (81%)66% Related to science (not research)7 (11%)7 (13%)18% Unrelated to science03 (6%)13%A comparison between the Tetrad PhD programme at the University of California, San Francisco (UCSF), the Watson School at the Cold Spring Harbor Laboratory (CSHL) and an average for all PhD programmes shows differences in the proportion of students who obtain PhDs, the average time taken to obtain a PhD, and the proportion of PhDs who remain in research. Some of these differences might be explained by differences in sample sizes and the length of time that has passed since the PhD was obtained. The differences in the proportion of students remaining in research might also be partially explained by UCSF and CSHL recruiting better applicants and/or their reputations helping new PhDs to obtain research positions (rather than being solely due to better training at UCSF and CSHL). Data: UCSF Tetrad: 7 MD–PhD students who started PhDs in this period are not included due to a lack on information on their post-PhD career path. Watson School: Data available at http://www.cshl.edu/images/stories/wsbs/docs/WSBSstats.pdf. Of the ten students who did not obtain PhDs, seven obtained an MS degree. Data for ‘Post-PhD career path’ is for the 52 individuals who obtained PhDs 2002–2008. Average: data from Workforce report, p32.
+**Table 1.**
+ Number of graduate students supported by different funding sources in 1979 and 2009
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1979</th>
+      <th>2009</th>
+      <th>Change (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NIH research grants</td>
+      <td>8,000</td>
+      <td>25,500</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <td>NIH training grants</td>
+      <td>4,500</td>
+      <td>5,800</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Fellowships</td>
+      <td>3,000</td>
+      <td>7,000</td>
+      <td>133</td>
+    </tr>
+    <tr>
+      <td>Teaching</td>
+      <td>7,000</td>
+      <td>8,000</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7,500</td>
+      <td>10,500</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>30,000</td>
+      <td>56,800</td>
+      <td>89</td>
+    </tr>
+  </tbody>
+</table>
+
+_The total number of graduate students in the biomedical sciences in the US increased from about 30,000 in 1979 to 56,800 in 2009 (data from figure 2 of the Workforce report). The biggest increase was in the number of students supported from NIH research grants to academic investigators. Fellowships include both NIH and non-federal fellowships. The actual numbers are probably higher because the numbers in the table represent those subsets of the total graduate student population that can be easily tracked: for example, some estimates put the number of PhD students at 83,000 (see Table 2). However, I believe that the overall distribution between subsets, and also the relative changes between 1979 and 2009, are roughly correct._
+
+**Table 2.**
+ A “snapshot” of the biomedical workforce from 2009
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biomedical PhD students</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number</td>
+      <td>83,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number who started PhDs</td>
+      <td>16,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number awarded PhDs</td>
+      <td>9,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number who started postdoc</td>
+      <td>5,800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average time to PhD (years)</td>
+      <td>6–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Post-PhD workforce</td>
+      <td></td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>Scientific research</td>
+      <td>84,500</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>(Government research)</td>
+      <td>(7,000)</td>
+      <td>(6)</td>
+    </tr>
+    <tr>
+      <td>(Academic research or teaching)</td>
+      <td>(55,000)</td>
+      <td>(43)</td>
+    </tr>
+    <tr>
+      <td>(Industrial research)</td>
+      <td>(22,500)</td>
+      <td>(18)</td>
+    </tr>
+    <tr>
+      <td>Related to science (not research)</td>
+      <td>24,000</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Unrelated to science</td>
+      <td>17,000</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Unemployed</td>
+      <td>2,500</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>128,000</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_This snapshot (data from Workforce report, p32) shows that 16,000 students started PhDs in 2009, but only 9,000 students received PhDs in 2009: this suggests a completion rate of just 56%. The table also shows that 66% of PhD graduates go on to pursue careers in research. This suggests that just over one-third (66% of 56% = 37%) of those students who start PhDs go on to become scientific researchers in government, academic or industrial laboratories. The Workforce report emphasizes that these data are only approximate; for instance, estimates of postdoc numbers vary between 37,000 and 68,000, and estimates for the number of PhD students vary between 83,000 (shown here) and 56,800 (Table 1). Overall, however, it is clear to me that too many students start PhDs and that, on average, most PhD training programmes are strikingly inefficient at producing PhDs._
+
+An efficient system, in my opinion, would produce enough high-quality PhD researchers to fulfil the nation’s research needs, plus a few more. Thus, 10 years after receiving their PhD, about 85% of graduates would directly engage in academic or industrial research, usually after a period as a postdoc; 10% would work in non-research activities related to science; and 5% would opt for careers unrelated to science. Some first-rate PhD programmes come close to the 85% target, but the average PhD programme produces new PhDs with scandalously low efficiency (see Box 1 and Table 3).Box1.Making PhD programmes better and shorterTo explore how things might be done differently, let us compare two highly regarded PhD programmes—the Watson School of Biological Sciences at Cold Spring Harbor Laboratory (CSHL), and the ‘Tetrad’ program at my own institution, the University of California, San Francisco (UCSF)—with the average for all graduate programmes. Two points stand out. First, significantly more of the students entering the CSHL and UCSF programmes obtained PhDs, and significantly more also opted for a career in research, which suggests that a large majority of ‘average’ programmes recruit less able students and/or train them poorly. Second, the time taken to obtain a PhD was notably shorter at CSHL—just 4.6 years, compared with 6.5 years at UCSF and 6–7 years on average (Table 3).How does CSHL produce PhDs in an average of 4.6 years? When the Watson School was founded at the lab in 1999, the research faculty agreed to shorten the time taken to obtain a PhD. Each year the school typically admits 10 or fewer new students, which allows for more intensive mentoring of students than in the Tetrad programme at UCSF (which accepts 15–20 new PhD students per year). Students at the Watson School are also mentored by more members of the CSHL faculty compared with their opposite numbers at UCSF. Students also complete their mandatory coursework in a shorter time at CSHL than at UCSF. And perhaps most importantly, training dollars at the Watson School are clearly separated from research dollars: all PhD students are supported by fellowships from outside sources or by the School itself; they receive no funds from research grants obtained by principal investigators. (Students in the Tetrad programme are supported by training grants or other school funds for their first three years in the programme, and thereafter by fellowships from outside sources or research grants awarded to their supervisor.)Does that two-year difference produce students who are less well qualified for postdoc positions? Alex Gann, dean of the Watson School, says that students do not receive a PhD without evidence of substantial research achievement, and that they have no difficulty competing for postdoc positions in excellent labs: for example, of the 52 PhD students who graduated between 1999 and 2008, 11 are in tenure-track positions.Why does it take 6.5 years on average to obtain a PhD from UCSF? A colleague tells me that it takes this long for each student to produce at least one truly outstanding paper, which furnishes the necessary confidence (and the beginning of a striking publication record) for a successful research career. To the contrary, I suspect that my colleagues keep students in their labs for six years or longer, partly in order to get maximum possible output from a student once she or he has learned how to be a scientist. Thus it seems clear, at least to me, that other PhD programmes should emulate the Watson School’s reduction of the overall training period, to help young scientists obtain independent positions earlier in their careers.
+
+**Table 3.**
+ Different PhD programmes
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>UCSF Tetrad 1999–2001</th>
+      <th>CSHL Watson school 1999–2006</th>
+      <th>Average (2009)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of students who started PhDs</td>
+      <td>66</td>
+      <td>60</td>
+      <td>16,000</td>
+    </tr>
+    <tr>
+      <td>Number (%) who obtained PhDs</td>
+      <td>63 (94%)</td>
+      <td>50 (83%)</td>
+      <td>9,000 (56%)</td>
+    </tr>
+    <tr>
+      <td>Average time taken (years)</td>
+      <td>6.5 (approximately)</td>
+      <td>4.6</td>
+      <td>6–7</td>
+    </tr>
+    <tr>
+      <td>Post-PhD career path</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Research (postdocs included)</td>
+      <td>56 (89%)</td>
+      <td>42 (81%)</td>
+      <td>66%</td>
+    </tr>
+    <tr>
+      <td>Related to science (not research)</td>
+      <td>7 (11%)</td>
+      <td>7 (13%)</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td>Unrelated to science</td>
+      <td>0</td>
+      <td>3 (6%)</td>
+      <td>13%</td>
+    </tr>
+  </tbody>
+</table>
+
+_A comparison between the Tetrad PhD programme at the University of California, San Francisco (UCSF), the Watson School at the Cold Spring Harbor Laboratory (CSHL) and an average for all PhD programmes shows differences in the proportion of students who obtain PhDs, the average time taken to obtain a PhD, and the proportion of PhDs who remain in research. Some of these differences might be explained by differences in sample sizes and the length of time that has passed since the PhD was obtained. The differences in the proportion of students remaining in research might also be partially explained by UCSF and CSHL recruiting better applicants and/or their reputations helping new PhDs to obtain research positions (rather than being solely due to better training at UCSF and CSHL). Data: UCSF Tetrad: 7 MD–PhD students who started PhDs in this period are not included due to a lack on information on their post-PhD career path. Watson School: Data available at http://www.cshl.edu/images/stories/wsbs/docs/WSBSstats.pdf. Of the ten students who did not obtain PhDs, seven obtained an MS degree. Data for ‘Post-PhD career path’ is for the 52 individuals who obtained PhDs 2002–2008. Average: data from Workforce report, p32._
 
 Despite this inefficiency, the number of new PhDs still seems to exceed the need for researchers. The reasons, almost certainly, are that universities and principal investigators (PIs) recruit PhD students primarily as cheap labour, ignoring the question of how many PhDs the US needs. Many of my academic colleagues vigorously reject this inference, averring their deep commitment to training and promoting the careers of their PhD students. And despite the evidence, the Workforce working group set up by the NIH waffled on the question of whether the number of PhDs exceeds demand, saying that inadequate tracking prevents the NIH from knowing how many PhD students are supported by research grants and what these students do after they obtain their PhD (NIH, 2012). Denial and pleas of ignorance are delaying tactics, not arguments, but those tactics have stymied attempts to change PhD education.
 
@@ -44,7 +253,62 @@ Nonetheless, shifting money from research grants to training grants will make th
 
 ## Draining the postdoc holding tank
 
-Postdocs bear the heaviest burden of the unsustainable biomedical research enterprise. Over the past three decades, the number of postdocs increased about threefold (see Table 4), but jobs in industry and academic research did not keep pace with this increase, so senior postdocs have collected in an ever-deeper ‘holding tank’. Much of the increase in postdoc numbers was driven by researchers from outside the US. The skills and energy of these non-US researchers have been welcomed across the US, but their presence also helps to keep postdoc salaries at relatively low levels, for both US and non-US researchers. The bottleneck between the holding tank and the small number of permanent research positions also shifted the age profile of NIH-funded investigators: in 1980 18% of NIH-funded investigators were under 36 years old, and only 1% were over 65; by 2009 just 3% were under 36 and 7% were over 65 (NIH, 2012).Table 4.A changing world for postdocs19802009Change (%)Postdoc support Federal research grants3,00011,500280 Federal training grants and fellowships2,0002,0000 Non-federal grants1,5007,500400Citizenship US7,00022,000210 Non-US1,50011,000630The number of postdocs supported by federal (NIH) research grants increased significantly between 1980 and 2009, while the number supported by federal training grants and fellowships remained constant (data from Workforce report, pp19–23). The number supported by non-federal grants (such as the American Heart Association and the American Cancer Society) also increased significantly. The number of non-US postdocs also increased dramatically during this period. Note that these numbers differ (in some cases substantially) from other data on postdocs in the Workforce report: while these differences reflect inadequate tracking and enumeration of postdocs, the relative trends are almost certainly correct.
+Postdocs bear the heaviest burden of the unsustainable biomedical research enterprise. Over the past three decades, the number of postdocs increased about threefold (see Table 4), but jobs in industry and academic research did not keep pace with this increase, so senior postdocs have collected in an ever-deeper ‘holding tank’. Much of the increase in postdoc numbers was driven by researchers from outside the US. The skills and energy of these non-US researchers have been welcomed across the US, but their presence also helps to keep postdoc salaries at relatively low levels, for both US and non-US researchers. The bottleneck between the holding tank and the small number of permanent research positions also shifted the age profile of NIH-funded investigators: in 1980 18% of NIH-funded investigators were under 36 years old, and only 1% were over 65; by 2009 just 3% were under 36 and 7% were over 65 (NIH, 2012).
+
+**Table 4.**
+ A changing world for postdocs
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1980</th>
+      <th>2009</th>
+      <th>Change (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Postdoc support</td>
+    </tr>
+    <tr>
+      <td>Federal research grants</td>
+      <td>3,000</td>
+      <td>11,500</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td>Federal training grants and fellowships</td>
+      <td>2,000</td>
+      <td>2,000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Non-federal grants</td>
+      <td>1,500</td>
+      <td>7,500</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td colspan="4">Citizenship</td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>7,000</td>
+      <td>22,000</td>
+      <td>210</td>
+    </tr>
+    <tr>
+      <td>Non-US</td>
+      <td>1,500</td>
+      <td>11,000</td>
+      <td>630</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of postdocs supported by federal (NIH) research grants increased significantly between 1980 and 2009, while the number supported by federal training grants and fellowships remained constant (data from Workforce report, pp19–23). The number supported by non-federal grants (such as the American Heart Association and the American Cancer Society) also increased significantly. The number of non-US postdocs also increased dramatically during this period. Note that these numbers differ (in some cases substantially) from other data on postdocs in the Workforce report: while these differences reflect inadequate tracking and enumeration of postdocs, the relative trends are almost certainly correct._
 
 The postdoc holding tank parallels a broader problem—the fact that the US produces twice as many STEM (science, technology, engineering, and mathematics) graduates as are needed for STEM-based positions in industry. In other words, the claim that there is a shortage of graduates in these areas in the US is a myth, perpetuated in part by employers who can profit by keeping the salaries of their STEM employees low and by persuading Congress to provide more visas for STEM graduates from other countries (Salzman, 2013).
 

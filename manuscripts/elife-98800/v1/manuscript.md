@@ -7,14 +7,14 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Universal Biology Institute, University of Tokyo Tokyo Japan
-2. https://ror.org/023rffy11 Center for Biosystems Dynamics Research, RIKEN Osaka Japan
+1. Universal Biology Institute, University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+2. Center for Biosystems Dynamics Research, RIKEN Osaka Japan ([ROR:023rffy11](https://ror.org/023rffy11))
 
 † Corresponding author
 
 ## Abstract
 
-Homeostasis is a fundamental characteristic of living systems. Unlike rigidity, homeostasis necessitates that systems respond flexibly to diverse environments. Understanding the dynamics of biochemical systems when subjected to perturbations is essential for the development of a quantitative theory of homeostasis. In this study, we analyze the response of bacterial metabolism to externally imposed perturbations using kinetic models of Escherichia coli ’s central carbon metabolism in nonlinear regimes. We found that three distinct kinetic models consistently display strong responses to perturbations; in the strong responses, minor initial discrepancies in metabolite concentrations from steady-state values amplify over time, resulting in significant deviations. This pronounced responsiveness is a characteristic feature of metabolic dynamics, especially since such strong responses are seldom seen in toy models of the metabolic network. Subsequent numerical studies show that adenyl cofactors consistently influence the responsiveness of the metabolic systems across models. Additionally, we examine the impact of network structure on metabolic dynamics, demonstrating that as the metabolic network becomes denser, the perturbation response diminishes—a trend observed commonly in the models. To confirm the significance of cofactors and network structure, we constructed a simplified metabolic network model underscoring their importance. By identifying the structural determinants of responsiveness, our findings offer implications for bacterial physiology, the evolution of metabolic networks, and the design principles for robust artificial metabolism in synthetic biology and bioengineering.
+Homeostasis is a fundamental characteristic of living systems. Unlike rigidity, homeostasis necessitates that systems respond flexibly to diverse environments. Understanding the dynamics of biochemical systems when subjected to perturbations is essential for the development of a quantitative theory of homeostasis. In this study, we analyze the response of bacterial metabolism to externally imposed perturbations using kinetic models of Escherichia coli’s central carbon metabolism in nonlinear regimes. We found that three distinct kinetic models consistently display strong responses to perturbations; in the strong responses, minor initial discrepancies in metabolite concentrations from steady-state values amplify over time, resulting in significant deviations. This pronounced responsiveness is a characteristic feature of metabolic dynamics, especially since such strong responses are seldom seen in toy models of the metabolic network. Subsequent numerical studies show that adenyl cofactors consistently influence the responsiveness of the metabolic systems across models. Additionally, we examine the impact of network structure on metabolic dynamics, demonstrating that as the metabolic network becomes denser, the perturbation response diminishes—a trend observed commonly in the models. To confirm the significance of cofactors and network structure, we constructed a simplified metabolic network model underscoring their importance. By identifying the structural determinants of responsiveness, our findings offer implications for bacterial physiology, the evolution of metabolic networks, and the design principles for robust artificial metabolism in synthetic biology and bioengineering.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ In this article, we examine the mass-balancing kinetic models of Escherichia col
 
 ## Results
 
-## Model
+### Model
 
 In the present study, we investigate the dynamic response of metabolic states to perturbations in metabolite concentrations using kinetic models of E. coli central carbon metabolism. In kinetic modeling approaches, the temporal evolution of metabolites’ concentrations is modeled using ordinary differential equations to capture behaviors in out-of-steady-state metabolism.
 
@@ -36,49 +36,103 @@ We employ three kinetic models of E. coli’s central carbon metabolism, emphasi
 
 The models under consideration are those proposed by Chassagnole et al., 2002, Khodayari et al., 2014, and Boecker et al., 2021. While all three models incorporate the glycolytic pathway, only the models by Khodayari et al. and Chassagnole et al. feature the pentose phosphate (PP) pathway. Notably, the Chassagnole model excludes the tricarboxylic acid cycle. A graphical summary of the metabolic modules in these models is presented in Figure 1A.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-v1.jpg)
+
+**Figure 1.:** (A) A graphical summary of the three models used in this study. The solid circles represent the metabolites, and the lines represent the metabolic reactions. The dashed circles and lines are the subsystems not implemented in the model. (B–D) Example time courses for each model. The top and bottom panels are examples of the strong and weak response, respectively. (E–G) The response coefficient distribution $P(χ)$ of each model (bottom). The average response coefficient distribution of the random catalytic reaction network (RCRN) model is overlaid (green line). The response coefficient distribution of each instance of the RCRN model is shown on the top panel. The model schemes, time courses, and distributions are aligned in each column, that is, the leftmost network of (A), (B), and (E) are from the model developed by Khodayari et al., 2014.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each point corresponds to a single initial condition, while the horizontal and vertical axes represent the response coefficient $χ$ computed by the original and the linearized model, respectively, around the steady state. The linearized model is given by $d⁢𝒙/d⁢t=J⁢𝒙$, where $J$ is the Jacobi matrix of the model at steady state. If any metabolite concentrations become negative, the response coefficient is incomputable and ‘0’ is assigned to such trajectories (note that the minimum value of the response coefficient is unity). Since the response coefficient is based on the logarithm of the concentrations, as the metabolite concentrations approach zero, the response coefficient becomes larger. The high response coefficient in the Boecker and Chassagnole model will be explained by this artifact. The linearized Khodayari model shows either $χ≈1$ or $χ=0$ (one or more metabolite concentrations become negative).This could be due to the number of variables in the model. For the response coefficient to have a larger value, the perturbation should be along the eigenvector that leads to oscillatory dynamics with long relaxation time (i.e., the corresponding eigenvalue has a small real part in terms of absolute value and a nonzero imaginary part). However, since the Khodayari model has about 800 variables, if perturbations are along such directions, there is a high probability that one or more metabolite concentrations will become negative.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Each distribution is obtained by simulating 4096 trajectories. The qualitative features (double-peaks for the Khodayari model and the plateau for the Boecker and Chassagnole models) are unvaried, while the scales of the response coefficient of the Khodayari model differ among the perturbation strengths.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** A metabolite is highlighted if its concentration changes more than $X$-fold from its steady concentration. $X$ is set to be 5 for the Boecker and Chassagnole models, while $X=25$ is chosen for the Khodayari model because too many metabolites are highlighted with $X=5$.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** For each model realization, we have computed 256 trajectories. Trajectories had negative value for any metabolites that are excluded for the computation of the distribution.
+
 The Boecker and Chassagnole models utilize glucose as the sole carbon source, whereas the Khodayari model can assimilate other carbon sources, such as fructose, formate, and acetate depending on the differences between the extracellular and intracellular concentrations. The Boecker model explicitly models biomass formation, considering several metabolites as biomass precursors that are consumed with a fixed stoichiometry to produce biomass. Conversely, the Khodayari and Chassagnole models do not incorporate the biomass formation reaction. Instead, biomass precursor metabolites are consumed independently, implying that the stoichiometry of biomass formation varies depending on the concentrations. The dilution effect due to the volume growth is modeled in both the Boecker and Chassagnole models. In the Boecker model, the dilution rate corresponds proportionally to the biomass formation reaction rate, while it remains constant in the Chassagnole model. The Khodayari model omits the dilution effect. In addition to the metabolic reaction implemented in each model, the specific forms of the reaction rate equations also differ among the models.
 
 Within these models, the dynamics of gene regulation mediated by transcription factors are not modeled; that is, the total concentration of each metabolic enzyme is constant while the substrate-level regulations are incorporated into the models (the lists of substrate-level regulations are provided in Supplementary file 1a–c; for a detailed description, see ‘Materials and methods’).
 
-## Perturbation-response simulation
+### Perturbation-response simulation
 
 In this section, we present the results of a series of simulations, which we call perturbation-response simulations. These simulations highlight the unique responses of the metabolic models to perturbations and shed light on the dynamic behavior of metabolic systems. It may be useful for the reader to first describe the perturbation-response simulation procedure. The procedure is consistently applied across all three models used in our study and can be summarized as follows:
 
-## 1. Computing the attractor
+#### 1. Computing the attractor
 
 First, we identify the steady-state attractor where the production/consumption of each metabolite is balanced. For the Khodayari and Boecker models, the attractor corresponds to the steady state studied in their original papers. For the Chassagnole model, we numerically determined the steady-state attractor (details provided in ‘Materials and methods’).
 
-## 2. Generating the initial points by perturbation
+#### 2. Generating the initial points by perturbation
 
-Once the steady-state attractor has been computed, we establish a set of initial points for subsequent computations by perturbing the metabolite concentrations. This perturbation is a proxy for stochastic fluctuations within cells. We postulate that the perturbation source in the variability in protein concentrations is due to the inherent randomness of transcription and translation processes. Also, the cell division would be another source of perturbations of metabolites’ concentrations while the cell division is not explicitly considered in the study. Based on a stochastic model of transcription and translation with a biologically relevant setup, the relative size of the concentration fluctuations is estimated to be several tens of percent (for a detailed derivation, see ‘Materials and methods’). Consequently, the perturbed concentration of chemical n is xn=rnxnst, where rn is a uniformly distributed random number with a maximum strength of 40%, that is, ranging from 0.6 to 1.4. The perturbation strength is beyond the linear region that the relaxation dynamics is approximated by the linearized model around the steady state. The choice of uniform distribution is not essential for the following result. Also, the characteristic features of the response studied later remain consistent even when different perturbation strengths are employed (see Figure 1—figure supplement 2).
+Once the steady-state attractor has been computed, we establish a set of initial points for subsequent computations by perturbing the metabolite concentrations. This perturbation is a proxy for stochastic fluctuations within cells. We postulate that the perturbation source in the variability in protein concentrations is due to the inherent randomness of transcription and translation processes. Also, the cell division would be another source of perturbations of metabolites’ concentrations while the cell division is not explicitly considered in the study. Based on a stochastic model of transcription and translation with a biologically relevant setup, the relative size of the concentration fluctuations is estimated to be several tens of percent (for a detailed derivation, see ‘Materials and methods’). Consequently, the perturbed concentration of chemical $n$ is $x_{n}=r_{n}x_{n}^{st}$, where $r_{n}$ is a uniformly distributed random number with a maximum strength of 40%, that is, ranging from 0.6 to 1.4. The perturbation strength is beyond the linear region that the relaxation dynamics is approximated by the linearized model around the steady state. The choice of uniform distribution is not essential for the following result. Also, the characteristic features of the response studied later remain consistent even when different perturbation strengths are employed (see Figure 1—figure supplement 2).
 
-## 3.Simulating the dynamics
+#### 3.Simulating the dynamics
 
-We compute the model dynamics using the Nini points generated by the perturbation as initial points to explore the metabolic response to the perturbations. As far as we have tried, all initial points have returned to the original growing steady state, and thus, we hereafter study the relaxation behavior.
+We compute the model dynamics using the $N_{ini}$ points generated by the perturbation as initial points to explore the metabolic response to the perturbations. As far as we have tried, all initial points have returned to the original growing steady state, and thus, we hereafter study the relaxation behavior.
 
-## Strong responses in the kinetic models
+### Strong responses in the kinetic models
 
 After executing the perturbation-response simulations for the models, we observed distinct relaxation dynamics in each. In Figure 1B–D, the top and bottom panels display typical examples of dynamics from each model that either respond strongly or weakly to perturbations. In the weakly responding dynamics (bottom panel), the effects of the perturbations diminish almost monotonically. Conversely, in the dynamics that respond strongly (top panel), the initial displacements of concentrations are amplified over time, leading some metabolites’ concentrations to overshoot or undershoot (significant concentration changes in metabolites are highlighted in Figure 1—figure supplement 3).
 
-For more in-depth analysis, we introduce a measure of the responsiveness to the perturbation that we call the response coefficient χ, defined asχ=maxt‖ln⁡x(t)−ln⁡xst‖‖ln⁡x(0)−ln⁡xst‖,
+For more in-depth analysis, we introduce a measure of the responsiveness to the perturbation that we call the response coefficient $χ$, defined as
 
-where ‖⋅‖ is the Euclidean norm. The response coefficient distributions for each model are plotted in the bottom panels of Figure 1E–G. All three models have the peak at χ=1 (note that this is the minimum value of χ). These peaks correspond to the trajectories where the Euclidean distance between the state and the attractor decreases monotonically with time (i.e., maxt⁡∥ln⁡(𝒙)⁢(t)-ln⁡(𝒙)st∥=∥ln⁡(𝒙)⁢(0)-ln⁡(𝒙)st∥). In addition, the distribution of the Khodayari model exhibits another peak in a larger χ region while the other two models have plateaus adjacent to the primary peak. We have computed the response coefficient by linearizing each model. As shown in Figure 1—figure supplement 1, the responsiveness of the original model cannot be described by the linearized model.
+$$
+χ=maxt\frac{‖ln⁡x(t)−ln⁡x^{st}‖}{‖ln⁡x(0)−ln⁡x^{st}‖},
+$$
+
+where $‖⋅‖$ is the Euclidean norm. The response coefficient distributions for each model are plotted in the bottom panels of Figure 1E–G. All three models have the peak at $χ=1$ (note that this is the minimum value of $χ$). These peaks correspond to the trajectories where the Euclidean distance between the state and the attractor decreases monotonically with time (i.e., $max_{t}⁡∥ln⁡(𝒙)⁢(t)-ln⁡(𝒙)^{st}∥=∥ln⁡(𝒙)⁢(0)-ln⁡(𝒙)^{st}∥$). In addition, the distribution of the Khodayari model exhibits another peak in a larger $χ$ region while the other two models have plateaus adjacent to the primary peak. We have computed the response coefficient by linearizing each model. As shown in Figure 1—figure supplement 1, the responsiveness of the original model cannot be described by the linearized model.
 
 For comparison purposes, we conducted perturbation-response simulations for the random catalytic reaction networks (RCRN) model, a toy model of the metabolic network (Furusawa and Kaneko, 2003; Furusawa and Kaneko, 2012). In one instance of the RCRN model, the ‘metabolites’ are interconnected through a random network, and every metabolite is considered a catalyst as well as a reactant. We generated 128 instances of the RCRN model, each having the same number of metabolites and the same distribution of the reaction rate constant. For instance, to draw a comparison with the Khodayari model, we generated the model instances with 778 metabolites and 3112 reactions, where the reaction rate constants are randomly chosen from that of the Khodayari model (detailed construction of the RCRN model is provided in ‘Materials and methods’). The top panel of Figure 1E–G presents the response coefficient distribution for each RCRN model instance, represented by different lines. Additionally, the ‘average’ response coefficient distribution, which is the mean of the distributions plotted in the top panel, is overlaid (green dotted line). As a fact, the emergence of the additional peak and plateaus, indicative of strong responsiveness, are unique traits of the realistic metabolic reaction network model and are seldom seen in toy representations of the metabolic network.
 
-## Key metabolites on the responsiveness
+### Key metabolites on the responsiveness
 
-What factors contribute to the strong responses of the metabolic state? In this section, we investigate which metabolites play pivotal roles in inducing these strong responses in the model. To understand the role of each metabolite’s dynamics, we conducted perturbation-response simulations using model equations derived by fixing each metabolite’s concentration to its steady-state value, that is, set xmet=xmetst and dxmet/dt=0 for the concentration of the metabolite met whose concentration is fixed. The impact of holding each metabolite’s concentration constant is quantified by the change in the average response coefficient:(1)ρx+=⟨χx⟩−⟨χori⟩⟨χori⟩,(⟨χx⟩≥⟨χori⟩)(2)ρx−=⟨χori⟩−⟨χx⟩⟨χori⟩,(⟨χx⟩≤⟨χori⟩)
+What factors contribute to the strong responses of the metabolic state? In this section, we investigate which metabolites play pivotal roles in inducing these strong responses in the model. To understand the role of each metabolite’s dynamics, we conducted perturbation-response simulations using model equations derived by fixing each metabolite’s concentration to its steady-state value, that is, set $x_{met}=x_{met}^{st}$ and $dx_{met}/dt=0$ for the concentration of the metabolite $met$ whose concentration is fixed. The impact of holding each metabolite’s concentration constant is quantified by the change in the average response coefficient:
 
-where x denotes the metabolites’ IDs and χx represents the response coefficient of the model with the concentration of the metabolite x fixed to constant. Note that for each metabolite in each model, either the ρx+ or ρx− is defined, depending on whether the modified model (with the metabolite x as a held constant) exhibits an average response coefficient larger (for ρx+) or smaller (for ρx−) than the original model.
+$$
+ρ_{x}^{+}=\frac{⟨χ_{x}⟩−⟨χ_{ori}⟩}{⟨χ_{ori}⟩},(⟨χ_{x}⟩\geq⟨χ_{ori}⟩)
+$$
 
-Figure 2 displays ρx± values for representative metabolites (comprehensive results for all metabolites can be found in Figure 2—figure supplement 1). While most metabolites have a bilateral effect on the average response coefficient depending on the original model (or exert a small unilateral effect), ATP and ADP (we refer to them collectively as AXPs) consistently demonstrate a marked impact in reducing the average response coefficient across models. This observed significance of AXPs in metabolic dynamics aligns with previous findings (Himeoka and Mitarai, 2022b). The common importance of AXPs is shown also when we quantify the impact of their dynamics on the responsiveness by utilizing the Sobol’ total sensitivity index (Figure 2—figure supplement 2; Homma and Saltelli, 1996).
+
+
+$$
+ρ_{x}^{−}=\frac{⟨χ_{ori}⟩−⟨χ_{x}⟩}{⟨χ_{ori}⟩},(⟨χ_{x}⟩\leq⟨χ_{ori}⟩)
+$$
+
+where $x$ denotes the metabolites’ IDs and $χ_{x}$ represents the response coefficient of the model with the concentration of the metabolite $x$ fixed to constant. Note that for each metabolite in each model, either the $ρ_{x}^{+}$ or $ρ_{x}^{−}$ is defined, depending on whether the modified model (with the metabolite $x$ as a held constant) exhibits an average response coefficient larger (for $ρ_{x}^{+}$) or smaller (for $ρ_{x}^{−}$) than the original model.
+
+Figure 2 displays $ρ_{x}^{\pm}$ values for representative metabolites (comprehensive results for all metabolites can be found in Figure 2—figure supplement 1). While most metabolites have a bilateral effect on the average response coefficient depending on the original model (or exert a small unilateral effect), ATP and ADP (we refer to them collectively as AXPs) consistently demonstrate a marked impact in reducing the average response coefficient across models. This observed significance of AXPs in metabolic dynamics aligns with previous findings (Himeoka and Mitarai, 2022b). The common importance of AXPs is shown also when we quantify the impact of their dynamics on the responsiveness by utilizing the Sobol’ total sensitivity index (Figure 2—figure supplement 2; Homma and Saltelli, 1996).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-v1.jpg)
+
+**Figure 2.:** This impact is quantified by the relative change in the average response coefficient, as detailed in (1) and (2). The filled point and filled square symbols represent the decrease $(ρ_{x}^{−})$ and the increase $(ρ_{x}^{+})$ of the response coefficient, respectively. The size of the symbols is scaled using the maximum and minimum values of $ρ_{x}^{\pm}$ computed for each model. The cross symbol indicates that the original steady-state attractor becomes unstable when the concentration of the corresponding metabolite is fixed. If a dot, square, or cross is absent, the concentration of the corresponding metabolite is not a variable in the model. Only selected, representative metabolites are displayed in the figure. Comprehensive results are provided in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The dashed line in each panel is the average response coefficient of the original model.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The Sobol’ total sensitivity index $S_{T_{i}}$ is computed for each metabolite.The sensitivity indices are computed by simulating 512 trajectories for the Khodayari model and 4096 trajectories for the Boecker and Chassagnole models.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The scatter plot of the Sobol’ total sensitivity index $S_{T_{i}}$ versus the absolute value of the change in the response coefficient.$|ρ|≡|(⟨χ_{x}⟩−⟨χ_{ori}⟩|/⟨χ_{ori}⟩)$.The inset presents a magnified view of a portion of each figure. The names of metabolites that deviate from the trend between $|ρ|$ and $S_{Ti}$ are highlighted.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The relaxations of the inhibition strength of AKG on CSICD and OAA on MDH increase the responsiveness of the model, while those of FUM on MDH and OAA on FRD have no effect. To relax the inhibition, the equilibrium constant for the corresponding competitive inhibition $k_{rxn_i_met}$ is set to $10^{6}\timesk_{rxn_i_met}$ (the inhibition term is implemented with the form $x_{met}/k_{rxn_i_met}$ in the denominator of the reaction rate function), where rxn, i, and met represent the reaction name, ‘inhibition’, and the metabolite name, respectively. Each distribution is computed from 4096 trajectories.
 
 Interestingly, halting the dynamics of several metabolites can amplify the model’s response coefficient. Across the models, metabolites that augment the response coefficient when their concentrations are fixed tend to be allosteric regulators associated with negative regulation. Freezing these metabolites’ concentrations effectively removes the negative feedback loop present in the metabolic systems. Typically, negative feedback stabilizes system behavior. In the present context, it assists the system in returning to its original state after perturbations. Hence, fixing these metabolites’ concentrations allows the system to respond more vigorously to perturbations compared to the original model. We checked the effect of feedback itself on the responsiveness rather than the concentration dynamics by weakening the strength of substrate-level regulation of OAA, FUM, AKG in the Boecker model (Figure 2—figure supplement 4). It was shown that weakening the substrate-level regulation of CSICD by AKG and MDH by OAA increases the responsiveness. On the other hand, weakening the strength of substrate-level regulation of neither FRD by OAA nor MDH by FUM alters the responsiveness, and in addition there is no substrate-level regulation by SUC. The increase in responsiveness by fixing the concentrations of OAA and AKG would be explained by substrate-level regulation of the corresponding metabolites. However, substrate-level regulation is not sufficient to describe the effect of fixing the concentration of FUM and SUC. Higher order effects may be required.
 
-Pyruvate is an exception to the above description, which is not the regulator in the models. The strong influence of pyruvate on the increase in response coefficients is attributed to the phosphotransferase system (PTS). The external glucose is taken up by converting phosphoenolpyruvate into pyruvate through the PTS. This reaction elevates pyruvate concentration, subsequently decelerating glucose uptake. By holding pyruvate concentration constant, this negative feedback effect is negated, enhancing the autocatalytic nature of the reaction system formed by the PTS and glycolysis (GLCex+PEP→⋯→2PEP).
+Pyruvate is an exception to the above description, which is not the regulator in the models. The strong influence of pyruvate on the increase in response coefficients is attributed to the phosphotransferase system (PTS). The external glucose is taken up by converting phosphoenolpyruvate into pyruvate through the PTS. This reaction elevates pyruvate concentration, subsequently decelerating glucose uptake. By holding pyruvate concentration constant, this negative feedback effect is negated, enhancing the autocatalytic nature of the reaction system formed by the PTS and glycolysis ($GLC_{ex}+PEP→⋯→2PEP$).
 
-## Role of the sparsity of the networks
+### Role of the sparsity of the networks
 
 The key role of AXPs in changing the kinetic models’ responsiveness is shown in the previous section. Nevertheless, this does not imply that all kinetic models of chemical reaction systems with cofactors such as AXPs always exhibit a strong response to perturbations. The strong responses demonstrated by the three models (as seen in Figure 1B–D) are absent in abstract toy models of metabolism, which consist of random reaction networks incorporating such cofactor chemicals Kondo and Kaneko, 2011. This discrepancy prompts us to investigate other potential determinants causing metabolic models to display strong responses shown in the three models.
 
@@ -86,45 +140,61 @@ A noteworthy attribute of metabolic networks is their inherent sparsity. While c
 
 Does network structure play a role in the dynamics of metabolic systems? For this question, previous research in the opposite direction—reaction dynamics on dense networks—provides useful insights. Several studies use the random networks as an abstract model of metabolic networks (Furusawa and Kaneko, 2003; Kaneko et al., 2015; Awazu and Kaneko, 2009; Himeoka et al., 2022a). In such types of models, the effect of the initial perturbations on metabolite concentrations typically decays monotonically over time (Awazu and Kaneko, 2009; Himeoka and Mitarai, 2022b). This is in stark contrast to the behavior observed in Figure 1B–D.
 
-Considering the inherent tendency of random reaction networks to display dynamics characterized by weak responses, we are compelled to investigate the influence of network sparseness on the dynamic behavior of metabolic models. To this end, we increase the reaction density of the metabolic network in the three models and assess the resultant changes in responsiveness. Our approach entails initially introducing Nadd random reactions into the network and subsequently allocating kinetic parameters to these additions from the distribution of parameter values computed from the original model. We then execute a perturbation-response simulation on this extended model to determine the response coefficient, which in turn helps ascertain the distribution and average of these coefficients. This process is schematically depicted in Figure 3A.
+Considering the inherent tendency of random reaction networks to display dynamics characterized by weak responses, we are compelled to investigate the influence of network sparseness on the dynamic behavior of metabolic models. To this end, we increase the reaction density of the metabolic network in the three models and assess the resultant changes in responsiveness. Our approach entails initially introducing $N_{add}$ random reactions into the network and subsequently allocating kinetic parameters to these additions from the distribution of parameter values computed from the original model. We then execute a perturbation-response simulation on this extended model to determine the response coefficient, which in turn helps ascertain the distribution and average of these coefficients. This process is schematically depicted in Figure 3A.
 
-Figure 3B illustrates the alterations in responsiveness resulting from the model extensions. We generated extended metabolic networks and accompanying ordinary differential equation (ODE) models by adding Nadd random reactions, and executed the perturbation-response simulation. The average response coefficient is then computed for each model, and the distribution of the average response coefficient is presented as the violin plots. In the perturbation-response simulation, the extended models with only a single attractor are subjected to the response coefficient analysis (comprehensive procedural details available in ‘Materials and methods’). Note that in this procedure metabolites are not newly introduced to the model, but only the reactions are. Thus, the reaction density increases.
+![Figure 3.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig3-v1.jpg)
+
+**Figure 3.:** (A) A schematic figure of the network expansion simulation. Reactions are randomly added to the original metabolic network, and then, the corresponding ordinary differential equation (ODE) model is constructed. In the illustration, the additional reaction is highlighted as the dashed red lines. The perturbation-response simulation is performed on the expanded models to obtain the response coefficient distribution. The average response coefficient is calculated as a scalar indicator of the responsiveness for each response coefficient distribution. (B). The distribution of the average response coefficient is plotted against the number of additional reactions for the three models. The dashed line indicates the average response coefficient of the original model with no additional reaction. For each $N_{add}$, we generated 256 extended network, and 128 trajectories were computed for each extended network.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The horizontal axis represents the number of additional reactions. The additional reactions are chosen from the reactions registered in the metabolic model database (see Supplementary file 1d).
+
+Figure 3B illustrates the alterations in responsiveness resulting from the model extensions. We generated extended metabolic networks and accompanying ordinary differential equation (ODE) models by adding $N_{add}$ random reactions, and executed the perturbation-response simulation. The average response coefficient is then computed for each model, and the distribution of the average response coefficient is presented as the violin plots. In the perturbation-response simulation, the extended models with only a single attractor are subjected to the response coefficient analysis (comprehensive procedural details available in ‘Materials and methods’). Note that in this procedure metabolites are not newly introduced to the model, but only the reactions are. Thus, the reaction density increases.
 
 As evident from the figures, a consistent trend emerges across the three models: the introduction of random reactions weakens responsiveness. However, the magnitude of this reduction varies among the models. It is important to note that the reactants of the added reactions are selected randomly, thus not based on any specific chemical rationale. Nevertheless, this diminished responsiveness persists even when the additional reactions are confined solely to those cataloged in the metabolic model database, as visualized in Figure 3—figure supplement 1.
 
 Such attenuation aligns with expectations shaped by prior studies on dense reaction networks (Furusawa and Kaneko, 2003; Kaneko et al., 2015; Awazu and Kaneko, 2009; Himeoka et al., 2022a). Evidently, the inherent sparsity of the backbone reaction network plays a critical role, enabling the kinetic model of metabolic systems to respond strongly to perturbations.
 
-## A minimal model for disrupted homeostasis
+### A minimal model for disrupted homeostasis
 
 So far, we have studied the kinetic models of the central carbon metabolism of E. coli. Our findings indicate that cofactors and the sparsity of the backbone network (network devoid of cofactors) are the keys to the responsiveness of the metabolic dynamics. In this section, we develop a simple minimal model to investigate if these two factors are sufficient to induce strong responses in reaction systems.
 
-Our minimal model is designed in a manner that allows us to adjust the sparsity of the backbone network and the proportion of cofactor-coupled reactions. First, we explain the construction of the backbone networks. These networks are comprised of N chemical species, C1,C2,⋯,CN, and R reactions (R≥N−1). For simplicity, we construct the backbone network using only uni-uni reactions. The minimum number of uni-uni reactions required to interlink N chemical species is N−1. To assemble a backbone network with N chemicals and R reactions, we first connect N reactions using N−1 reactions and subsequently introduce random reactions for the pairs of chemicals that lack reactions, totaling R−(N−1). We incorporate exchange reactions with extracellular environments for 5% of the metabolites (this percentage is not critical to the results). The exchange reactions are always introduced to the two endpoints metabolites of the sequential linkage to ensure there are no dead-ends on reaction networks. We posit that one of the endpoint metabolites from the sequential linkage is the nutrient metabolite, and we set its external concentration at 100, while for the remainder, it is set to unity.
+Our minimal model is designed in a manner that allows us to adjust the sparsity of the backbone network and the proportion of cofactor-coupled reactions. First, we explain the construction of the backbone networks. These networks are comprised of $N$ chemical species, $C_{1},C_{2},⋯,C_{N}$, and $R$ reactions $(R\geqN−1)$. For simplicity, we construct the backbone network using only uni-uni reactions. The minimum number of uni-uni reactions required to interlink $N$ chemical species is $N−1$. To assemble a backbone network with $N$ chemicals and $R$ reactions, we first connect $N$ reactions using $N−1$ reactions and subsequently introduce random reactions for the pairs of chemicals that lack reactions, totaling $R−(N−1)$. We incorporate exchange reactions with extracellular environments for 5% of the metabolites (this percentage is not critical to the results). The exchange reactions are always introduced to the two endpoints metabolites of the sequential linkage to ensure there are no dead-ends on reaction networks. We posit that one of the endpoint metabolites from the sequential linkage is the nutrient metabolite, and we set its external concentration at 100, while for the remainder, it is set to unity.
 
-As cofactors, we introduce the three forms of the activation for mimicking AXP, A∗∗,A∗, and A, which are not included in the N chemicals in the backbone network. We introduce the coupling fraction f to modulate the number of reactions with cofactor coupling. With the coupling fraction f, the number of reactions with cofactor coupling is given as Round(fR) with Round(⋅) as the function to round the value to the nearest integer. When a reaction is selected for cofactor coupling, two forms of the cofactor (chosen from A∗∗,A∗, and A) are randomly selected. The reaction then gets coupled to the conversion between these two cofactor forms, with the direction being randomly set.
+As cofactors, we introduce the three forms of the activation for mimicking AXP, $A^{∗∗},A^{∗}$, and A, which are not included in the $N$ chemicals in the backbone network. We introduce the coupling fraction $f$ to modulate the number of reactions with cofactor coupling. With the coupling fraction $f$, the number of reactions with cofactor coupling is given as $Round(fR)$ with $Round(⋅)$ as the function to round the value to the nearest integer. When a reaction is selected for cofactor coupling, two forms of the cofactor (chosen from $A^{∗∗},A^{∗}$, and A) are randomly selected. The reaction then gets coupled to the conversion between these two cofactor forms, with the direction being randomly set.
 
-Overall, the differential equation governing the minimal model can be expressed as(3)dxndt=∑r=1RSnrJr(x)+Dn(Xn−xn),
+Overall, the differential equation governing the minimal model can be expressed as
 
-In this expression, the concentrations of the chemicals from the backbone network, as well as the cofactors, are combined in a vertical stack, that is, n=1,2,⋯,N,N+1,N+2,N+3 with n=1,⋯,N represents the concentrations of the nth chemical in the backbone network, and xN+1,xN+2 and xN+3 denote the concentrations of A∗∗,A∗, and A, respectively. S is the stoichiometric matrix of the reaction network. Dn is unity if the nth chemical has an influx/efflux term, otherwise, it is zero. Xn is the external concentration of chemical n, which is a constant parameter.
+$$
+\frac{dx_{n}}{dt}=\sumr=1RS_{nr}J_{r}(x)+D_{n}(X_{n}−x_{n}),
+$$
 
-Mass action kinetics is employed for the reaction rate function Jr. The rate function has the form(4)Jr(x)=vr(kr+∏n∈Sub(r)xn−kr−∏n∈Prd(r)xn)
+In this expression, the concentrations of the chemicals from the backbone network, as well as the cofactors, are combined in a vertical stack, that is, $n=1,2,⋯,N,N+1,N+2,N+3$ with $n=1,⋯,N$ represents the concentrations of the nth chemical in the backbone network, and $x_{N+1},x_{N+2}$ and $x_{N+3}$ denote the concentrations of $A^{∗∗},A^{∗}$, and A, respectively. $S$ is the stoichiometric matrix of the reaction network. $D_{n}$ is unity if the nth chemical has an influx/efflux term, otherwise, it is zero. $X_{n}$ is the external concentration of chemical $n$, which is a constant parameter.
 
-where Sub(r) and Prd(r) are the set of substrates and products, respectively, of the rth reaction. If the reaction is coupled with the cofactor, |Sub(r)|=|Prd(r)|=2 and otherwise |Sub(r)|=|Prd(r)|=1. We neither allowed the self-loops in the backbone network (Cn⇌Cn) nor the catalytic activity of the cofactors (e.g., Cn+A∗⇌Cm+A∗).
+Mass action kinetics is employed for the reaction rate function $J_{r}$. The rate function has the form
 
-The parameters vr and kr± are the reaction rate and irreversibility, respectively. The vr values are randomly set as vr=10ur with the uniformly distributed random number, ur∼U(−3.66,7.13). The range for the kinetic parameter is derived from the Khodayari model. kr± is calculated using the Arrhenius equation based on the standard chemical potential of each chemical. We randomly set the standard chemical potential μn for each chemical, where μn follows the uniform distribution U(0,1), while the standard chemical potentials of A∗∗,A∗ and A are fixed to the constant values, 1.0,0.5, and 0.0, respectively. To satisfy the detailed balance condition, kr± are then given by kr±=min{1,exp⁡(∓βΔμr)} with Δμr as the standard chemical potential difference between the products and the substrates, Δμr=∑n∈Prd(r)μn−∑n∈Sub(r)μn, and β is the inverse temperature.
+$$
+J_{r}(x)=v_{r}(k_{r}^{+}\prodn\inSub(r)x_{n}−k_{r}^{−}\prodn\inPrd(r)x_{n})
+$$
 
-We generate M networks for several choices of reaction number R and coupling fraction f. We performed the perturbation-response simulation to determine the response coefficient distribution of each network. In Figure 4, the average response coefficient, averaged over the networks, is depicted as functions of R and f (see the rectangles labeled as ‘Cofactor’). These figures clearly illustrate that the average responsiveness tends to decrease as either R increases or f decreases.
+where $Sub(r)$ and $Prd(r)$ are the set of substrates and products, respectively, of the rth reaction. If the reaction is coupled with the cofactor, $|Sub(r)|=|Prd(r)|=2$ and otherwise $|Sub(r)|=|Prd(r)|=1$. We neither allowed the self-loops in the backbone network ($C_{n}⇌C_{n}$) nor the catalytic activity of the cofactors (e.g., $C_{n}+A^{∗}⇌C_{m}+A^{∗}$).
+
+The parameters $v_{r}$ and $k_{r}^{\pm}$ are the reaction rate and irreversibility, respectively. The $v_{r}$ values are randomly set as $v_{r}=10^{u_{r}}$ with the uniformly distributed random number, $u_{r}∼U(−3.66,7.13)$. The range for the kinetic parameter is derived from the Khodayari model. $k_{r}^{\pm}$ is calculated using the Arrhenius equation based on the standard chemical potential of each chemical. We randomly set the standard chemical potential $\mu_{n}$ for each chemical, where $\mu_{n}$ follows the uniform distribution $U(0,1)$, while the standard chemical potentials of $A^{∗∗},A^{∗}$ and A are fixed to the constant values, $1.0,0.5$, and $0.0$, respectively. To satisfy the detailed balance condition, $k_{r}^{\pm}$ are then given by $k_{r}^{\pm}=min{1,exp⁡(\mp\betaΔ\mu_{r})}$ with $Δ\mu_{r}$ as the standard chemical potential difference between the products and the substrates, $Δ\mu_{r}=\sumn\inPrd(r)\mu_{n}−\sumn\inSub(r)\mu_{n}$, and $\beta$ is the inverse temperature.
+
+We generate $M$ networks for several choices of reaction number $R$ and coupling fraction $f$. We performed the perturbation-response simulation to determine the response coefficient distribution of each network. In Figure 4, the average response coefficient, averaged over the networks, is depicted as functions of $R$ and $f$ (see the rectangles labeled as ‘Cofactor’). These figures clearly illustrate that the average responsiveness tends to decrease as either $R$ increases or $f$ decreases.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/98800/elife-98800-fig4-v1.jpg)
 
-**Figure 4.:** , for the model with R metabolites plus three cofactors (the panels labeled as ‘Cofactor’) and N=64 metabolites without cofactors (the panel labeled as ‘Catalytic’).N=67For each combination of  and R, we generated 512 random networks and computed 128 trajectories for each of these networks. The inverse temperature f is set at 10 for the cofactor version and 20 for the catalytic version. This is because the maximum chemical potential difference in the cofactor version is 2.0, but it is 1.0 in the catalytic version. The total concentrations of the cofactors are set to be unity.β
+**Figure 4.:** The distribution of the average response coefficient is plotted against the number of reactions, $R$, for the model with $N=64$ metabolites plus three cofactors (the panels labeled as ‘Cofactor’) and $N=67$ metabolites without cofactors (the panel labeled as ‘Catalytic’).For each combination of $R$ and $f$, we generated 512 random networks and computed 128 trajectories for each of these networks. The inverse temperature $\beta$ is set at 10 for the cofactor version and 20 for the catalytic version. This is because the maximum chemical potential difference in the cofactor version is 2.0, but it is 1.0 in the catalytic version. The total concentrations of the cofactors are set to be unity.
 
-The coupling with the cofactors leads to the two-body reactions, and thus, increases the nonlinearity of the model equation. It is noteworthy that the increase in responsiveness with f cannot be fully attributed to the increase in the model’s nonlinearity. To validate this, we employed the model (3) without the cofactors, but incorporated catalytic reactions. In this model, each reaction proceeds with the catalytic ability of an enzyme, represented as Cn+Cl⇌Cm+Cl (here, autocatalytic reactions are permissible, meaning l can be either n or m).
+The coupling with the cofactors leads to the two-body reactions, and thus, increases the nonlinearity of the model equation. It is noteworthy that the increase in responsiveness with $f$ cannot be fully attributed to the increase in the model’s nonlinearity. To validate this, we employed the model (3) without the cofactors, but incorporated catalytic reactions. In this model, each reaction proceeds with the catalytic ability of an enzyme, represented as $C_{n}+C_{l}⇌C_{m}+C_{l}$ (here, autocatalytic reactions are permissible, meaning $l$ can be either $n$ or $m$).
 
-In terms of the numbers of constant, linear, and quadratic terms in the model equation, the catalytic reaction version of the model corresponds to the f=1 case of the original minimal model. If the increase in responsiveness with f is dictated solely by nonlinearity, the catalytic reaction model should have comparable responsiveness with the ‘cofactor’ model with high f. Yet, as shown in the rectangles above the main plot in Figure 4 (labeled as ‘Catalytic’), the responsiveness metrics are notably lower than those observed in the minimal model.
+In terms of the numbers of constant, linear, and quadratic terms in the model equation, the catalytic reaction version of the model corresponds to the $f=1$ case of the original minimal model. If the increase in responsiveness with $f$ is dictated solely by nonlinearity, the catalytic reaction model should have comparable responsiveness with the ‘cofactor’ model with high $f$. Yet, as shown in the rectangles above the main plot in Figure 4 (labeled as ‘Catalytic’), the responsiveness metrics are notably lower than those observed in the minimal model.
 
 ## Discussion
 
-In the present article, we have studied three models of E. coli’s central carbon metabolism. Our findings indicate that these models commonly exhibit strong and weak responses to perturbations of the steady-state concentration. In the weak response, the effect of the perturbation dwindles almost monotonically over time. In contrast, during a strong response, initial deviations from the steady state get amplified. Note that the linearized models cannot capture the response dynamics. We introduced the response coefficient, χ, as a metric to quantify the strength of these responses and undertook comprehensive computational analyses. The strong responsiveness was observed not only in the three models studied in the article, but also in a model of glycolytic pathway with multiple sets of parameter choices (Figure 1—figure supplement 4; Haiman et al., 2021).
+In the present article, we have studied three models of E. coli’s central carbon metabolism. Our findings indicate that these models commonly exhibit strong and weak responses to perturbations of the steady-state concentration. In the weak response, the effect of the perturbation dwindles almost monotonically over time. In contrast, during a strong response, initial deviations from the steady state get amplified. Note that the linearized models cannot capture the response dynamics. We introduced the response coefficient, $χ$, as a metric to quantify the strength of these responses and undertook comprehensive computational analyses. The strong responsiveness was observed not only in the three models studied in the article, but also in a model of glycolytic pathway with multiple sets of parameter choices (Figure 1—figure supplement 4; Haiman et al., 2021).
 
 We aim to identify key metabolites whose dynamics play a crucial role in the emergence of strong response. We systematically fixed the concentration of each metabolite to its steady-state value and assessed the influence of individual metabolite dynamics on the overall response strength. For a majority of metabolites, the impact on the response coefficient is bidirectional: halting the dynamic concentration of a metabolite can either amplify or diminish the response, depending upon the base model. Even if their effects consistently amplify or diminish the response, the magnitude of change in the average response coefficients remains relatively modest.
 
@@ -148,76 +218,144 @@ Exploring metabolic dynamics also holds promise for synthetic biology and metabo
 
 ## Materials and methods
 
-## Models and modifications
+### Models and modifications
 
 In Khodayari et al., 2014, the kinetic parameter values are estimated by using the ensemble modeling (Khodayari et al., 2014; Tran et al., 2008; Tan and Liao, 2012; Rizk and Liao, 2009) so that the steady flux distribution of the metabolic reactions becomes consistent with the experimental measurements. However, the steady-state dealt with in the article turned out to be unstable, that is, the maximum eigenvalue of the Jacobi matrix of the linearized system at the steady state was positive. For carrying out the perturbation-response simulation, we need to make the steady-state stable. To make the steady-state stable, we fixed the periplasmic hydrogen concentration to the steady-state value and removed the competitive inhibition of phosphoenolpyruvate carboxylase (those two factors were manually found). Also, we set the concentrations of the metabolites in the culture media (extracellular metabolites) with the assumption that the model cell is growing in a sufficiently large flask. In addition, the small molecules, H2O, O2, CO2, NH4, and phosphate, are set to be constant, further assuming that the exchange rate of the small chemicals between the extracellular culture is sufficiently fast.
 
-For the dynamics of ATP and ADP concentrations, in the Chassagnole model (Chassagnole et al., 2002), we used the reactions that coupled with ATP and ADP. Since the kinetic rate equations of those reactions are defined with the dependency of ATP and ADP concentrations in the original model, we utilized the kinetic rate equations as they are. The reactions for the adenine base synthesis are not modeled in the model, and thus, the total concentration of ATP and ADP is the conserved quantity in the model. By assuming that the decreases of the ATP and ADP due to the growth dilution are compensated, the growth dilution term is not introduced to the model equations of ATP and ADP concentrations. Lastly, we introduced the non-growth-associated ATP hydrolysis reaction (ATP→ADP) since the model fails to balance ATP and ADP and relaxes to a steady state where the concentration of some metabolites is almost zero. We utilized a simple Michaelis–Menten rate equation for the hydrolysis reaction JAH=vxATP/(KM+xATP), where v=0.1(sec−1) and KM=1.0(mM)
+For the dynamics of ATP and ADP concentrations, in the Chassagnole model (Chassagnole et al., 2002), we used the reactions that coupled with ATP and ADP. Since the kinetic rate equations of those reactions are defined with the dependency of ATP and ADP concentrations in the original model, we utilized the kinetic rate equations as they are. The reactions for the adenine base synthesis are not modeled in the model, and thus, the total concentration of ATP and ADP is the conserved quantity in the model. By assuming that the decreases of the ATP and ADP due to the growth dilution are compensated, the growth dilution term is not introduced to the model equations of ATP and ADP concentrations. Lastly, we introduced the non-growth-associated ATP hydrolysis reaction (ATP→ADP) since the model fails to balance ATP and ADP and relaxes to a steady state where the concentration of some metabolites is almost zero. We utilized a simple Michaelis–Menten rate equation for the hydrolysis reaction $J_{AH}=vx_{ATP}/(K_{M}+x_{ATP}),$ where $v=0.1(sec^{−1})$ and $K_{M}=1.0(mM)$
 
 The Boecker model (Boecker et al., 2021) is used without modification.
 
-## Computation of dynamics
+### Computation of dynamics
 
 All the ODE simulations in the present study are done using ode15s() function in MATLAB (MathWorks, Inc, 2022). For computing the attractor of the Chassagnole model, we used the initial concentrations registered in chassagnole4 on JWS online (Olivier and Snoep, 2004) as the initial concentrations of the modified Chassagnole model to run the dynamics. The steady-state concentrations of the metabolites reach the initial concentrations and are utilized as the attractor.
 
 For generating random initial conditions by perturbations without altering the conserved quantities, we have performed the conservation analysis described in Vallabhajosyula et al., 2006.
 
-## Estimate of the fluctuation strength
+### Estimate of the fluctuation strength
 
-For estimating the strength of fluctuations, we utilize the following simple metabolic reaction:∅→PX→Q∅.
+For estimating the strength of fluctuations, we utilize the following simple metabolic reaction:
 
-The concentration of the enzyme P and Q follows the stochastic transcription and translation model (Friedman et al., 2006; Paulsson and Ehrenberg, 2000). The temporal change of the concentration of the metabolite X here is given by a simple model with the mass-action kinetics,(5)dxdt=vp(t)−uq(t)x(t),
+$$
+∅→PX→Q∅.
+$$
 
-where x,p,q are the concentrations of X,P, and Q, respectively. v and u are the kinetic parameters of the reactions. According to the time-scale separation of metabolic reactions and transcription/translation, we suppose that x is the fast variable and its dynamics slave to p and q. We assume that the timescales in the change of the metabolite concentrations are sufficiently smaller than that of the proteins and apply the quasi-steady-state approximation: we solve the steady state of the deterministic (Equation 5; Kaneko, 1981; Risken, 1996). Then, we calculate the mean and variance of the solution x(t)=vp(t)/uq(t), which is a stochastic variable. Since the stochastic transcription and translation model leads to the gamma distribution of the protein concentration, the average and the variance are given by(6)⟨x⟩=v/ub2aΓ2(a)∫R+2dpdqpqpa−1e−p/bqa−1e−q/b=vuaa−1(7)⟨x2⟩=(v2/u2)b2aΓ2(a)∫R+2dpdqp2q2pa−1e−p/bqa−1e−q/b=v2u2a(a+1)(a−1)(a−2)
+The concentration of the enzyme $P$ and $Q$ follows the stochastic transcription and translation model (Friedman et al., 2006; Paulsson and Ehrenberg, 2000). The temporal change of the concentration of the metabolite $X$ here is given by a simple model with the mass-action kinetics,
 
-where a and b are the parameters set by the rate of the transcription, translation, mRNA degradation, and protein degradation.
+$$
+\frac{dx}{dt}=vp(t)−uq(t)x(t),
+$$
 
-The coefficient of variation is then given by(8)⟨x2⟩−⟨x⟩2⟨x⟩=2a−1a(a−2).
+where $x,p,q$ are the concentrations of $X,P$, and $Q$, respectively. $v$ and $u$ are the kinetic parameters of the reactions. According to the time-scale separation of metabolic reactions and transcription/translation, we suppose that $x$ is the fast variable and its dynamics slave to $p$ and $q$. We assume that the timescales in the change of the metabolite concentrations are sufficiently smaller than that of the proteins and apply the quasi-steady-state approximation: we solve the steady state of the deterministic (Equation 5; Kaneko, 1981; Risken, 1996). Then, we calculate the mean and variance of the solution $x(t)=vp(t)/uq(t)$, which is a stochastic variable. Since the stochastic transcription and translation model leads to the gamma distribution of the protein concentration, the average and the variance are given by
 
-where a is the ratio between the transcription rate and the protein degradation rate. According to the large-scale proteomic analysis of E. coli (Taniguchi et al., 2010), the mean value of a among the essential genes is ≈6.82±2.34 (only with the essential metabolic enzymes listed in the iML1515 [Monk et al., 2017], the average value is ≈6.72±2.34). By substituting a=6.82 into Equation 8, we obtain the relative noise strength as ≈62%. Since in the estimate we suppose the irreversible reactions lead to larger noise amplitudes than reversible reactions, we regard 62% as the maximum relative noise strength and use a bit smaller value, 40%.
+$$
+⟨x⟩=\frac{v/u}{b^{2a}Γ^{2}(a)}\int_{R_{+}^{2}}dpdq\frac{p}{q}p^{a−1}e^{−p/b}q^{a−1}e^{−q/b}=\frac{v}{u}\frac{a}{a−1}
+$$
 
-## Random catalytic reaction network model
 
-The RCRN model is a simple, mass-balancing toy model of cellular metabolism (Furusawa and Kaneko, 2003; Kaneko et al., 2015). The ordinary differential equation dictating the temporal evolution of the ith metabolite’s concentration xi is given bydxidt=∑j,kxk(vijkxj−vjikxi)+DixT(i)xi(ext)−μxi
 
-where vijk,Di, and μ are the rate constant of the reaction Cj→Ci catalyzed by Ck (Ci denotes the ith metabolite), the substrate update rate of Ci, and the specific growth rate of the model cell, respectively. T(i) denotes the transporter metabolite (enzyme) for the uptake of Ci, and xi(ext) is the external concentration of Ci. In the RCRN model, the total volume of the cell is usually set to be equal to the total amount of the metabolites. This is because each ‘metabolite’ in the model is interpreted as an enzyme as well as a reactant of the metabolic reactions. Hence, the specific growth rate of the model cell is set to the total uptake rate of the metabolites, μ=∑iDixT(i)xi(ext).
+$$
+⟨x^{2}⟩=\frac{(v^{2}/u^{2})}{b^{2a}Γ^{2}(a)}\int_{R_{+}^{2}}dpdq\frac{p^{2}}{q^{2}}p^{a−1}e^{−p/b}q^{a−1}e^{−q/b}=\frac{v^{2}}{u^{2}}\frac{a(a+1)}{(a−1)(a−2)}
+$$
 
-In the construction of an instance of the RCRN model, we first generate a random, connected network among N metabolites, and then, we assign a single catalyst on each reaction edge. If the reaction Cj→Ci catalyzed by Ck exists in the network, vijk is non-zero, while otherwise, it is set to zero. In the present article, we suppose all the reactions are reversible, and thus, vjik is non-zero if and only if vijk is non-zero.
+where $a$ and $b$ are the parameters set by the rate of the transcription, translation, mRNA degradation, and protein degradation.
 
-For making the comparison of the responsiveness of the realistic model to the RCRN model, we generated 128 instances of the RCRN model where the number of metabolites N is set to be equal to the realistic model that we want to make a comparison. The number of reactions R is set to 3.5N for the Boecker and Chassagnole model while 4N for the Khodayari model. The ratio between N and R is set so that the Erdős–Rényi random graph of given size becomes connected with sufficiently high probability. The reaction rate constants vijk’s are sampled from the model to compare. For the sake of simplicity, we suppose only the first metabolite is the nutrient metabolite which is taken up from the external environment and the Nth metabolite is the transporter of it. Di and xi(ext) are set to unity for i=1, and for the else, those parameters are set to zero.
+The coefficient of variation is then given by
 
-For each generated instance of the RCRN model, we performed the perturbation-response simulation where the attractor(s) are computed by simulating the model dynamics from randomly generated 32 initial concentrations 𝒙ini∈(10-3,103)N. The RCRN models exhibiting multistability or computational failure due to numerical issues such as heavy stiffness are not subjected to further analysis (less than 10% of the model instances showed multistability for corresponding models; the computational failure is ≈20% for the RCRN model with the parameter distribution of Chassagnole model, ≈50% for that of the Khodayari model, while less than 1% for that of the Boecker model). For quantifying the response coefficient, we computed 128 trajectories for each of those models.
+$$
+\frac{\sqrt{⟨x^{2}⟩−⟨x⟩^{2}}}{⟨x⟩}=\sqrt{\frac{2a−1}{a(a−2)}}.
+$$
 
-## Random addition of the metabolic reactions
+where $a$ is the ratio between the transcription rate and the protein degradation rate. According to the large-scale proteomic analysis of E. coli (Taniguchi et al., 2010), the mean value of $a$ among the essential genes is $≈6.82\pm2.34$ (only with the essential metabolic enzymes listed in the iML1515 [Monk et al., 2017], the average value is $≈6.72\pm2.34$). By substituting $a=6.82$ into Equation 8, we obtain the relative noise strength as $≈62%$. Since in the estimate we suppose the irreversible reactions lead to larger noise amplitudes than reversible reactions, we regard 62% as the maximum relative noise strength and use a bit smaller value, 40%.
 
-First, we add uni-uni reactions where the reactants are randomly picked from the non-cofactor metabolites. Next, we decide whether the additional reaction to be coupled with the adenyl cofactor metabolites (ATP, ADP, or AMP) with a probability p. The probability p equals to the fraction of adenyl cofactor-coupled reactions in the original model. The addition reaction is either the uni-uni reaction (if the reaction is not coupled with AXPs) or the bi-bi reaction (if the reaction is coupled with the adenyl cofactors). We computed the parameter value distribution for each reaction scheme, and the parameter values for the additional reactions are sampled from the corresponding parameter value distribution.
+### Random catalytic reaction network model
 
-For the Khodayari model, the additional reaction is modeled using the elementary reaction decomposition (ERD) (see the next section), that is, a reaction A⇌B is decomposed into the three elementary reaction steps, E+A⇌EA, EA⇌EB, and EB⇌E+B. The mass-action kinetics is adopted as the reaction rate function for each elementary reaction step.
+The RCRN model is a simple, mass-balancing toy model of cellular metabolism (Furusawa and Kaneko, 2003; Kaneko et al., 2015). The ordinary differential equation dictating the temporal evolution of the ith metabolite’s concentration $x_{i}$ is given by
 
-The ERD is not applied to the Boecker model and the Chassagnole model. Also, several types of reaction rate functions are used in the two models. Thus, we decided to use the simplest enzymatic reaction kinetics used in each paper. The reversible Michaelis–Menten kineticsv=v+[S1]−v−[P1]1+[S1]/KS1+[P1]/KP1
+$$
+\frac{dx_{i}}{dt}=\sumj,kx_{k}(v_{ijk}x_{j}−v_{jik}x_{i})+D_{i}x_{T(i)}x_{i}^{(ext)}−\mux_{i}
+$$
 
-is used for uni-uni reactions, and for bi-bi reactions, the ordered bi-bi reaction kineticsv=v+[S1][S2]−v−[P1][P2]1+[S1]KS1+[P1]KP1+[S1][S2]KS1KS2+[P1][P2]KP1KP2
+where $v_{ijk},D_{i}$, and μ are the rate constant of the reaction $C_{j}→C_{i}$ catalyzed by $C_{k}$ ($C_{i}$ denotes the ith metabolite), the substrate update rate of $C_{i}$, and the specific growth rate of the model cell, respectively. $T(i)$ denotes the transporter metabolite (enzyme) for the uptake of $C_{i}$, and $x_{i}^{(ext)}$ is the external concentration of $C_{i}$. In the RCRN model, the total volume of the cell is usually set to be equal to the total amount of the metabolites. This is because each ‘metabolite’ in the model is interpreted as an enzyme as well as a reactant of the metabolic reactions. Hence, the specific growth rate of the model cell is set to the total uptake rate of the metabolites, $\mu=\sumiD_{i}x_{T(i)}x_{i}^{(ext)}$.
 
-is adopted in the Boecker model, and a reaction kineticsv=v+[S1][S2]−v−[P1][P2](1+[S1]/KS1+[P1]/KP1)(1+[S2]/KS2+[P2]/KP2)
+In the construction of an instance of the RCRN model, we first generate a random, connected network among $N$ metabolites, and then, we assign a single catalyst on each reaction edge. If the reaction $C_{j}→C_{i}$ catalyzed by $C_{k}$ exists in the network, $v_{ijk}$ is non-zero, while otherwise, it is set to zero. In the present article, we suppose all the reactions are reversible, and thus, $v_{jik}$ is non-zero if and only if $v_{ijk}$ is non-zero.
 
-is used in the Chassagnole model. [Si],[Pi], and K∗ (∗ is either S1,S2,P1 or P2) represent the concentration of the ith substrate and product, and the dissociation constant of the corresponding chemical, respectively.
+For making the comparison of the responsiveness of the realistic model to the RCRN model, we generated 128 instances of the RCRN model where the number of metabolites $N$ is set to be equal to the realistic model that we want to make a comparison. The number of reactions $R$ is set to $3.5N$ for the Boecker and Chassagnole model while $4N$ for the Khodayari model. The ratio between $N$ and $R$ is set so that the Erdős–Rényi random graph of given size becomes connected with sufficiently high probability. The reaction rate constants $v_{ijk}$’s are sampled from the model to compare. For the sake of simplicity, we suppose only the first metabolite is the nutrient metabolite which is taken up from the external environment and the Nth metabolite is the transporter of it. $D_{i}$ and $x_{i}^{(ext)}$ are set to unity for $i=1$, and for the else, those parameters are set to zero.
+
+For each generated instance of the RCRN model, we performed the perturbation-response simulation where the attractor(s) are computed by simulating the model dynamics from randomly generated 32 initial concentrations $𝒙_{ini}\in(10^{-3},10^{3})^{N}$. The RCRN models exhibiting multistability or computational failure due to numerical issues such as heavy stiffness are not subjected to further analysis (less than 10% of the model instances showed multistability for corresponding models; the computational failure is $≈20%$ for the RCRN model with the parameter distribution of Chassagnole model, $≈50%$ for that of the Khodayari model, while less than 1% for that of the Boecker model). For quantifying the response coefficient, we computed 128 trajectories for each of those models.
+
+### Random addition of the metabolic reactions
+
+First, we add uni-uni reactions where the reactants are randomly picked from the non-cofactor metabolites. Next, we decide whether the additional reaction to be coupled with the adenyl cofactor metabolites (ATP, ADP, or AMP) with a probability $p$. The probability $p$ equals to the fraction of adenyl cofactor-coupled reactions in the original model. The addition reaction is either the uni-uni reaction (if the reaction is not coupled with AXPs) or the bi-bi reaction (if the reaction is coupled with the adenyl cofactors). We computed the parameter value distribution for each reaction scheme, and the parameter values for the additional reactions are sampled from the corresponding parameter value distribution.
+
+For the Khodayari model, the additional reaction is modeled using the elementary reaction decomposition (ERD) (see the next section), that is, a reaction $A⇌B$ is decomposed into the three elementary reaction steps, $E+A⇌EA$, $EA⇌EB$, and $EB⇌E+B$. The mass-action kinetics is adopted as the reaction rate function for each elementary reaction step.
+
+The ERD is not applied to the Boecker model and the Chassagnole model. Also, several types of reaction rate functions are used in the two models. Thus, we decided to use the simplest enzymatic reaction kinetics used in each paper. The reversible Michaelis–Menten kinetics
+
+$$
+v=\frac{v_{+}[S_{1}]−v_{−}[P_{1}]}{1+[S_{1}]/K_{S_{1}}+[P_{1}]/K_{P_{1}}}
+$$
+
+is used for uni-uni reactions, and for bi-bi reactions, the ordered bi-bi reaction kinetics
+
+$$
+v=\frac{v_{+}[S_{1}][S_{2}]−v_{−}[P_{1}][P_{2}]}{1+\frac{[S_{1}]}{K_{S_{1}}}+\frac{[P_{1}]}{K_{P_{1}}}+\frac{[S_{1}][S_{2}]}{K_{S_{1}}K_{S_{2}}}+\frac{[P_{1}][P_{2}]}{K_{P_{1}}K_{P_{2}}}}
+$$
+
+is adopted in the Boecker model, and a reaction kinetics
+
+$$
+v=\frac{v_{+}[S_{1}][S_{2}]−v_{−}[P_{1}][P_{2}]}{(1+[S_{1}]/K_{S_{1}}+[P_{1}]/K_{P_{1}})(1+[S_{2}]/K_{S_{2}}+[P_{2}]/K_{P_{2}})}
+$$
+
+is used in the Chassagnole model. $[S_{i}],[P_{i}]$, and $K_{∗}$ ($∗$ is either $S_{1},S_{2},P_{1}$ or $P_{2}$) represent the concentration of the ith substrate and product, and the dissociation constant of the corresponding chemical, respectively.
 
 After constructing an extended model, we compute the steady-state attractor by simulating the dynamics from 128 random initial concentrations. These initial conditions are generated by applying a 40% relative perturbation to the steady-state concentrations of the original model. If all the initial conditions converge to a single attractor, then we generate another set of 128 initial conditions by applying a 40% relative perturbation to the steady-state concentrations of the extended model in order to perform the perturbation-response simulation. For the Boecker model, we require the extended model to have a steady growth rate greater than half of that of the original model. This is because growth dilution is typically the slowest process in the model, and thus, a significant slowdown of growth dilution can lead to an artificial overestimation of the model’s responsiveness.
 
-## Elementary reaction decomposition
+### Elementary reaction decomposition
 
-Here, a brief description of the ERD is provided. Suppose that we have the following bi-to-uni reaction(9)A+B⇌C,
+Here, a brief description of the ERD is provided. Suppose that we have the following bi-to-uni reaction
 
-and that the reaction is catalyzed by an enzyme E. For implementing this reaction into the kinetic model, the Michaelis–Menten-type kinetics of chemical reaction is often adopted. With the Michaelis–Menten-type kinetics, the rate of the reaction J is given by(10)J=[E]v+[A][B]−v−[C]1+[A]/KA+[A][B]/KAB+[C]/KC,
+$$
+A+B⇌C,
+$$
 
-where we supposed that the binding of the substrate to the enzyme occurs in the order of A→B.
+and that the reaction is catalyzed by an enzyme $E$. For implementing this reaction into the kinetic model, the Michaelis–Menten-type kinetics of chemical reaction is often adopted. With the Michaelis–Menten-type kinetics, the rate of the reaction $J$ is given by
 
-The Michaelis–Menten-type reaction kinetics (Equation 11) is obtained by the pseudo-equilibrium approximation or the steady-state approximation of the following reactions:(11)A+E⇌EA(12)EA+B⇌EAB(13)EAB⇌EC(14)EC⇌E+C
+$$
+J=[E]\frac{v_{+}[A][B]−v_{−}[C]}{1+[A]/K_{A}+[A][B]/K_{AB}+[C]/K_{C}},
+$$
 
-In the ERD scheme, each step (Equations 12–14) of the overall reaction (Equation 9) is modeled using the mass-action kinetics. Also, the forward and the backward reactions are dealt as different reactions. For instance, the rates of the reaction A+E⇌EA are given by JA,E→EA=vA,E→EA[E][A] and JEA→A,E=vEA→A,E[EA].
+where we supposed that the binding of the substrate to the enzyme occurs in the order of $A→B$.
+
+The Michaelis–Menten-type reaction kinetics (Equation 11) is obtained by the pseudo-equilibrium approximation or the steady-state approximation of the following reactions:
+
+$$
+A+E⇌EA
+$$
+
+
+
+$$
+EA+B⇌EAB
+$$
+
+
+
+$$
+EAB⇌EC
+$$
+
+
+
+$$
+EC⇌E+C
+$$
+
+In the ERD scheme, each step (Equations 12–14) of the overall reaction (Equation 9) is modeled using the mass-action kinetics. Also, the forward and the backward reactions are dealt as different reactions. For instance, the rates of the reaction $A+E⇌EA$ are given by $J_{A,E→EA}=v_{A,E→EA}[E][A]$ and $J_{EA→A,E}=v_{EA→A,E}[EA]$.
 
 The advantage of the ERD is that every reaction rate function is given either by a linear or quadratic function of the metabolites’ concentrations. This feature allows us in the present article to randomize the reaction network in a unified manner. Also, the ERD has the advantage of reducing the computational cost for the parameter estimation based on omics data. For more details, see original papers (Khodayari et al., 2014; Tran et al., 2008; Tan and Liao, 2012; Rizk and Liao, 2009).
 
-## Generative AIs and other software
+### Generative AIs and other software
 
 ChatGPT (OpenAI, September 25, 2023, version) and Grammarly (Grammarly, Inc) are used to improve clarity and brush up on English grammar.

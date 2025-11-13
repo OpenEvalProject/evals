@@ -53,7 +53,7 @@ In this study, we developed a method called genetic-epigenetic tissue mapping (G
 
 ## Results
 
-## Principle of GETMap
+### Principle of GETMap
 
 The principle of the GETMap analysis is illustrated in Figure 1. The first step is to identify different sets of plasma DNA molecules based on genotypic differences. For example, the two sets of plasma DNA molecules carrying cancer-associated mutations and wildtype alleles were identified in cancer patients. In organ transplant recipients, three sets of DNA molecules can be identified, including those carrying the host-specific, recipient-specific alleles and alleles shared between the host and recipient. Similarly, three sets of molecules could be identified in the plasma of a pregnant woman, namely those carrying fetal-specific, maternal-specific alleles and alleles shared by the mother and fetus. Then, the tissue compositions were determined for each set of plasma DNA molecules through comparing the methylation profile of the plasma DNA molecules and the methylation profiles of the relevant tissues after bisulfite sequencing. While there are some similarities between the deconvolution step and that described in our previous study (Sun et al., 2015), there are notable differences. First, only DNA molecules of interest, for example, those carrying fetal-specific alleles, or cancer-associated mutations or donor-derived alleles, are analyzed. Second, only CpG sites near informative single nucleotide polymorphism (SNP) alleles are included in the algorithm. The details of the mathematical calculation are described in the 'Materials and methods' section. For the choice of candidate tissues used for the GETMap analysis, we included the tissues (including neutrophils, lymphocytes, liver, and placenta) that have been validated in a previous study on tissue deconvolution by methylation analysis (Sun et al., 2015). The inclusion of the placenta also allows us to use the analysis of fetal DNA in maternal plasma as a model to validate this new approach. As this study also analyzed patients receiving lung transplantation, lung is further included as one candidate tissue in the plasma DNA deconvolution. The methylation status of the plasma DNA molecules was determined by bisulfite sequencing.
 
@@ -61,21 +61,342 @@ The principle of the GETMap analysis is illustrated in Figure 1. The first step 
 
 **Figure 1.:** The paired individuals (e.g., fetus/mother, organ donor/recipient, and tumor/normal tissue) are genotyped to identify single nucleotide polymorphism (SNP) alleles specific for one of them. After bisulfite sequencing, plasma DNA molecules carrying individual-specific alleles and at least one CpG site are identified. The plasma DNA methylome is compared with the methylation profiles of reference tissues to determine the tissue composition of the subset of plasma DNA molecules derived from a particular individual.
 
-## Accuracy of GETMap analysis
+### Accuracy of GETMap analysis
 
 To evaluate the accuracy of our approach, we performed simulation analyses using GETMap to deconvolute five types of reference tissues including neutrophils, lymphocytes, lung, liver, and placenta. Three sets of simulation analyses were performed to simulate the three clinical application scenarios in our study, namely pregnancy, transplantation, and cancer detection. For each scenario, the numbers of informative DNA fragments, CpG sites, and sequencing depth were matched with the median of the studied samples. Thirty independent simulations were performed for each scenario. The accuracy was calculated as the percentage contribution assigned to the tissue used for the deconvolution. For example, when the bisulfite sequencing data of liver tissue is used for deconvolution, the accuracy would refer to the estimated contribution from liver. The median accuracy of GETMap analyses for reference tissues was 98.3% (range 95.5–99.8%) (Table 1).
 
-## Deconvolution of fetal- and maternal-derived DNA in maternal plasma
+**Table 1.**
+ Results of deconvolution of bisulfite sequencing data from reference tissues for scenarios of (A) pregnancy, (B) lung transplantation, and (C) liver cancer.The underlined numbers represent the percentage of contribution accurately assigned to the respective tissues by genetic-epigenetic tissue mapping (GETMap).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>(A)</th>
+      <th></th>
+      <th colspan="5">Tissue contribution as determined by GETMap analysis</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Neutrophils</th>
+      <th>Lymphocytes</th>
+      <th>Liver</th>
+      <th>Lung</th>
+      <th>Placenta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Reference tissue used for the simulation</td>
+      <td>Neutrophils</td>
+      <td>96.78</td>
+      <td>2.01</td>
+      <td>0.59</td>
+      <td>0.33</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes</td>
+      <td>0.52</td>
+      <td>98.30</td>
+      <td>0.41</td>
+      <td>0.20</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.31</td>
+      <td>0.64</td>
+      <td>98.36</td>
+      <td>0.27</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>0.24</td>
+      <td>0.66</td>
+      <td>0.35</td>
+      <td>98.36</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td>Placenta</td>
+      <td>0.13</td>
+      <td>0.05</td>
+      <td>0.00</td>
+      <td>0.09</td>
+      <td>99.73</td>
+    </tr>
+    <tr>
+      <td>(B)</td>
+      <td></td>
+      <td colspan="5">Tissue contribution as determined by GETMap analysis</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Neutrophils</td>
+      <td>Lymphocytes</td>
+      <td>Liver</td>
+      <td>Lung</td>
+      <td>Placenta</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Reference tissue used for the simulation</td>
+      <td>Neutrophils</td>
+      <td>98.21</td>
+      <td>0.77</td>
+      <td>0.42</td>
+      <td>0.43</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes</td>
+      <td>0.48</td>
+      <td>98.70</td>
+      <td>0.20</td>
+      <td>0.31</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.32</td>
+      <td>0.19</td>
+      <td>99.25</td>
+      <td>0.11</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>0.21</td>
+      <td>0.09</td>
+      <td>0.22</td>
+      <td>99.39</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Placenta</td>
+      <td>0.00</td>
+      <td>0.09</td>
+      <td>0.08</td>
+      <td>0.05</td>
+      <td>99.78</td>
+    </tr>
+    <tr>
+      <td>(C)</td>
+      <td></td>
+      <td colspan="5">Tissue contribution as determined by GETMap analysis</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Neutrophils</td>
+      <td>Lymphocytes</td>
+      <td>Liver</td>
+      <td>Lung</td>
+      <td>Placenta</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Reference tissue used for the simulation</td>
+      <td>Neutrophils</td>
+      <td>96.08</td>
+      <td>2.23</td>
+      <td>0.32</td>
+      <td>0.37</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes</td>
+      <td>0.94</td>
+      <td>95.46</td>
+      <td>0.79</td>
+      <td>2.06</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>0.50</td>
+      <td>0.44</td>
+      <td>96.67</td>
+      <td>1.48</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>0.90</td>
+      <td>1.71</td>
+      <td>0.80</td>
+      <td>96.08</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Placenta</td>
+      <td>0.49</td>
+      <td>0.13</td>
+      <td>0.77</td>
+      <td>0.34</td>
+      <td>98.27</td>
+    </tr>
+  </tbody>
+</table>
+
+### Deconvolution of fetal- and maternal-derived DNA in maternal plasma
 
 We first used the analysis of plasma DNA of pregnant women as a model to demonstrate the feasibility of GETMap. Venous blood samples were collected from 30 pregnant women with 10 in each of the first, second, or third trimesters of gestation. Placental tissues were obtained from chorionic villus sampling or amniocentesis for the first and second trimester pregnant women. For third trimester pregnant women, the placenta was collected after delivery. The pregnant woman and the placental tissue were genotyped using the Illumina whole-genome arrays (HumanOmni2.5, Illumina). Based on the genotypes of the mother and fetus, we identified a median of 189,862 (range 14,035–192,998) maternal-specific informative SNPs where the mother was heterozygous and the fetus was homozygous, and a median of 194,479 (range 145,743–201,847) fetal-specific informative SNPs where the mother was homozygous and the fetus was heterozygous. After bisulfite sequencing of maternal plasma DNA, a median of 103 million uniquely mapped reads (range: 52–186 million) were identified in the maternal plasma DNA samples. Plasma DNA molecules carrying the fetal- and maternal-specific alleles were identified. A median of 162,813 CpG sites (range 8237–295,671) and 53,039 CpG sites (range 16,796–138,284) were identified on the plasma DNA molecules carrying maternal-specific and fetal-specific alleles, respectively. For the plasma DNA molecules carrying fetal-specific alleles, the median deduced contribution from the placenta was 100% (Figure 2A). These results are compatible to the results of previous studies that fetal DNA in maternal plasma is derived from the placenta (Alberry et al., 2007; Masuzaki et al., 2004). For molecules carrying maternal-specific alleles, a median of 80% of DNA molecules were deduced to be derived from hematopoietic cells (i.e., neutrophils and lymphocytes) (Figure 2B). All cases showed no contribution from the placenta. For molecules carrying the shared alleles at SNPs where the mother was homozygous and the fetus was heterozygous, the deduced placental contribution showed a positive correlation with the fetal DNA fractions based on the ratio between the number of plasma DNA molecules carrying fetal-specific alleles and alleles shared by the mother and the fetus (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64356/elife-64356-fig2-v2.jpg)
 
-**Figure 2.:** A) fetal-specific alleles and (B) maternal-specific alleles in 30 pregnant women.(C) Correlation between percentage contribution of the placenta to maternal plasma DNA molecules carrying alleles shared by the fetus and mother and single nucleotide polymorphism (SNP)-based fetal DNA fraction.
+**Figure 2.:** (C) Correlation between percentage contribution of the placenta to maternal plasma DNA molecules carrying alleles shared by the fetus and mother and single nucleotide polymorphism (SNP)-based fetal DNA fraction.
 
-## Deconvolution of DNA molecules carrying donor- and recipient-specific alleles following lung transplantation
+### Deconvolution of DNA molecules carrying donor- and recipient-specific alleles following lung transplantation
 
 We applied GETMap analysis to patients who had received lung transplantation and explored if the tissue composition would change over time. Forty samples from 11 patients were collected (Table 2). By comparing the SNP genotypes between the donor and recipient, we identified a median of 270,144 (range 254,846–344,024) donor-specific informative SNPs where the donor was heterozygous and the recipient was homozygous and a median of 270,285 (range 261,529–357,009) recipient-specific informative SNPs where the donor was homozygous and the recipient was heterozygous. In addition, a median of 81,957 (range 77,196–133,422) dual informative SNPs where both the donor and recipient were homozygous but for different alleles were identified. After bisulfite sequencing of the plasma DNA, a median of 327 million uniquely mapped reads (range 32–481 million) were obtained for each case. A median of 920,830 (range 141,065–1,329,292) and 141,794 (range 12,700–529,211) CpG sites were identified on the plasma DNA molecules carrying recipient- and donor-specific alleles, respectively.
+
+**Table 2.**
+ The demographic profiles of lung transplant recipients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Case number</th>
+      <th>Recipient age</th>
+      <th>Recipient gender</th>
+      <th>Donor age</th>
+      <th>Donor gender</th>
+      <th>Diagnosis for transplant</th>
+      <th>Single/ double lung</th>
+      <th>Cause of death</th>
+      <th>Time of sample collection post-transplant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>34</td>
+      <td>M</td>
+      <td>32</td>
+      <td>M</td>
+      <td>Cystic fibrosis</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>59</td>
+      <td>F</td>
+      <td>27</td>
+      <td>F</td>
+      <td>Interstitial lung disease</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>53</td>
+      <td>M</td>
+      <td>20</td>
+      <td>M</td>
+      <td>Interstitial lung disease</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>63</td>
+      <td>M</td>
+      <td>16</td>
+      <td>F</td>
+      <td>Interstitial lung disease</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr, 6 dy</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>55</td>
+      <td>F</td>
+      <td>36</td>
+      <td>F</td>
+      <td>Interstitial lung disease</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr, 7 dy</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>66</td>
+      <td>M</td>
+      <td>48</td>
+      <td>F</td>
+      <td>Interstitial lung disease</td>
+      <td>Single</td>
+      <td>Alive</td>
+      <td>72 hr, 4 wk</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>66</td>
+      <td>F</td>
+      <td>18</td>
+      <td>M</td>
+      <td>Chronic obstructive pulmonary disease</td>
+      <td>Single</td>
+      <td>Alive</td>
+      <td>72 hr, 7 dy, 5 wk, 20 wk, 25 wk, 157 wk</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>32</td>
+      <td>F</td>
+      <td>39</td>
+      <td>M</td>
+      <td>Cystic fibrosis</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr, 7 dy, 8 wk, 38 wk, 77 wk, 129 wk</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>67</td>
+      <td>F</td>
+      <td>53</td>
+      <td>F</td>
+      <td>Sarcoidosis</td>
+      <td>Double</td>
+      <td>Respiratory failure</td>
+      <td>72 hr, 7 dy, 6 wk, 13 wk, 22 wk</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>44</td>
+      <td>M</td>
+      <td>35</td>
+      <td>F</td>
+      <td>Retransplant</td>
+      <td>Double</td>
+      <td>Alive</td>
+      <td>72 hr, 7 dy, 10 dy, 4 wk, 14 wk, 25 wk, 103 wk</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>67</td>
+      <td>F</td>
+      <td>32</td>
+      <td>M</td>
+      <td>Pulmonary arterial hypertension</td>
+      <td>Single</td>
+      <td>Alive</td>
+      <td>72 hr, 7 dy, 5 wk, 15 wk, 26 wk, 61 wk, 104 wk</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Samples collected when the patient was having a rejection episode were underlined._
 
 For each subject, the first sample was collected at 72 hr after the transplantation. We performed the GETMap analysis on donor-derived DNA molecules for each sample collected at 72 hr post-transplant (Figure 3A). The median contribution from the lung to the donor-derived DNA was only 17%. Surprisingly, a substantial proportion of the DNA molecules carrying the donor-specific alleles were contributed from the hematopoietic cells. The median contribution from the neutrophils and lymphocytes combined was 78%. The median deduced contribution from all other tissues was 5% in total.
 
@@ -89,7 +410,7 @@ We studied the changes in the lung DNA proportions in the donor-derived plasma D
 
 We further explored if the fractional contribution of the lung to the donor-specific DNA would be useful for the detection of graft rejection. As all the rejection episodes occurred after 7 days, only samples collected after 7 days were used for this analysis. The median donor-derived DNA fractions were 3% for the samples collected during rejection episodes and 1% for those collected during remission (p-value=0.22, Mann-Whitney rank-sum test, Figure 3B). The median lung contributions were 69% and 48% for these two groups of samples, respectively (p-value=0.09, Mann-Whitney rank-sum test, Figure 3C).
 
-## Deconvolution of plasma DNA molecules carrying mutant identified in tumor tissues
+### Deconvolution of plasma DNA molecules carrying mutant identified in tumor tissues
 
 We then explored if GETMap analysis could reveal the tissue origin of ctDNA in two HCC patients. The two patients were denoted as HCC 1and HCC 2, respectively. In the initial analysis, we first identified the cancer-specific mutations by analyzing the tumor tissues and the buffy coat of the patients. A total of 30,383 and 6996 tumor-specific single nucleotide mutations were identified from HCC 1 and HCC 2, respectively. After bisulfite sequencing of plasma DNA, 245 and 188 million uniquely mapped reads were obtained for the two patients, respectively. The numbers of plasma DNA molecules carrying the mutant alleles were 29,868 and 5090, and these molecules covered 18,193 and 4076 CpG sites, respectively. Tissue contributions of these tumor-derived plasma DNA molecules were deduced by GETMap analysis (Figure 5). The liver was deduced to be the key contributor with 90% (HCC 1) and 87% (HCC 2). A small contribution of 10% (HCC 1) and 13% (HCC 2) was from the placenta. The numbers of molecules carrying the wildtype alleles were 153,238 and 26,792, containing 35,883 and 8156 CpG sites, respectively. The contribution of the hematopoietic cells was deduced to be 48% (HCC 1) and 53% (HCC 2) whereas the liver contributed 32% (HCC 1) and 23% (HCC 2).
 
@@ -97,7 +418,7 @@ We then explored if GETMap analysis could reveal the tissue origin of ctDNA in t
 
 **Figure 5.:** The tumor-specific mutations were deduced from the tumor tissues.
 
-## Deconvolution of DNA carrying mutations directly derived from plasma
+### Deconvolution of DNA carrying mutations directly derived from plasma
 
 In the scenario of cancer screening using a universal tumor marker based on plasma DNA analysis, the tumor tissue would not be available for mutation analysis. Hence, we further explored if the cancer mutations can be directly derived from plasma DNA analysis. To obtain the mutation information directly from the plasma DNA, we sequenced the buffy coat and plasma DNA without bisulfite conversion. The sequencing depth for the plasma DNA were 50x and 61x haploid genome coverage and those for the buffy coat DNA were 53x and 55x in HCC 1 and HCC 2, respectively. Single nucleotides variations present in the plasma for more than a threshold number of occasions but not in the buffy coat were identified as candidate mutations (see details in the 'Materials and methods'). The numbers of candidate mutations identified were 10,864 and 3446 for the two HCC patients. GETMap analysis was then performed using the plasma DNA bisulfite sequencing data. The numbers of plasma DNA molecules carrying the cancer mutations were 16,200 and 4112, and covered 12,887 and 2991 CpG sites, respectively. For molecules carrying mutations, the contributions from the liver were estimated to be 69% (HCC 1) and 95% (HCC 2) (Figure 6). The placenta contributed the remaining proportion of 31% (HCC 1) and 5% (HCC 2). For molecules carrying wildtype alleles, hematopoietic cells, including neutrophils and lymphocytes, contributed a total of 51% (HCC 1) and 27% (HCC 2).
 
@@ -105,7 +426,7 @@ In the scenario of cancer screening using a universal tumor marker based on plas
 
 **Figure 6.:** The tumor-specific mutations were deduced directly from the plasma.
 
-## Deconvolution of plasma DNA for a pregnant woman with lymphoma
+### Deconvolution of plasma DNA for a pregnant woman with lymphoma
 
 We previously reported the deconvolution results of total plasma DNA for a pregnant woman who was diagnosed as having follicular lymphoma during early pregnancy (Sun et al., 2015). In the current study, we explored if GETMap analysis could determine the tissue composition of the fetal- and cancer-derived DNA independently. We sequenced the lymphoma tissue, as well as the normal cells harvested from buccal swab and post-treatment buffy coat. As the pregnancy was terminated at time of the diagnosis of cancer, no placental tissue was collected. Hence, we deduced the fetal genotypes directly from the plasma DNA. Based on the non-bisulfite sequencing results of the plasma DNA and normal cells, 254,540 variants were identified in the plasma DNA. The algorithm for classifying these variants into fetal-specific alleles and cancer mutations is shown in Figure 7. We reasoned that variants overlapping with the common variations in the dbSNP Build 135 database were more likely derived from the fetus whereas those not overlapping with the database were more likely to come from the tumor. For the 13,546 variants that did not overlap with dbSNP database, 2641 were detected in three or more sequence reads of the tumor tissues. These variants are regarded as tumor mutations for GETMap analysis. For the 240,994 variants overlapping with the dbSNP database, 231,552 were completely absent in the tumor tissue. These variants were likely derived from the fetus and are regarded as fetal-specific alleles for the GETMap analysis. The allele frequencies for the fetal-specific SNPs and tumor-specific mutations in plasma were normally distributed and peaked at 6% and 20%, respectively (Figure 8).
 
@@ -113,13 +434,9 @@ We previously reported the deconvolution results of total plasma DNA for a pregn
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/64356/elife-64356-fig8-v2.jpg)
 
-**Figure 8.:** A) the fetal-specific alleles and (B) the mutant alleles in the plasma of the pregnant woman with lymphoma.
-
 After bisulfite sequencing of plasma DNA, we obtained 700 million uniquely mapped reads. We identified DNA molecules carrying the tumor-specific mutant alleles, wildtype alleles, fetal-specific alleles, and the alleles shared by the fetus and the mother. The GETMap analysis was performed on each set of plasma DNA molecules to deduce their tissue composition. The numbers of CpG sites covered by the DNA molecules carrying the mutant and wildtype alleles were 4781 and 6660, respectively. For the molecules carrying tumor mutations, it was deduced that 100% was from lymphocytes (Figure 9A). For molecules carrying the wildtype alleles, the deduced contribution from neutrophils, lymphocytes, liver, lung, and placenta were 29%, 46%, 13%, 2%, and 11%, respectively. For DNA molecules carrying the fetal-specific, the deduced contribution from the placenta was 95% (Figure 9B). For those carrying alleles shared by the mother and fetus, the deduced contribution from neutrophils, lymphocytes, liver, lung, and placenta were 23%, 48%, 11%, 14%, and 5%, respectively.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/64356/elife-64356-fig9-v2.jpg)
-
-**Figure 9.:** A) plasma DNA with tumor-specific and wildtype alleles, and (B) fetal-specific plasma DNA and DNA carrying the alleles shared by the fetus and the mother in a pregnant woman with lymphoma.
 
 ## Discussion
 
@@ -135,38 +452,52 @@ There has been increasing interest in the tissue composition circulating cell-fr
 
 ## Materials and methods
 
-## Samples and processing
+### Samples and processing
 
 The project was approved by the Joint Chinese University of Hong Kong-Hospital Authority New Territories East Cluster Clinical Research Ethics Committee (approval reference number 2011.204). All participants provided written informed consent. Pregnant women and HCC patients were recruited from the Prince of Wales Hospital of Hong Kong. The pregnant woman with lymphoma was recruited from the Hong Kong Sanatorium and Hospital, Hong Kong. Lung transplant recipients were recruited from the National Institutes of Health (NIH) (iRIS reference number 363880). Plasma samples were collected longitudinally at one or several time points after transplantation. Venous blood samples were collected into EDTA-containing tubes and centrifuged at 1600 g for 10 min. The plasma portion was recentrifuged at 16,000 g to remove residual blood cells. DNA from plasma was extracted with the QIAamp Circulating Nucleic Acid Kit (Qiagen).
 
-## Identification of tumor-specific mutations in HCC patients
+### Identification of tumor-specific mutations in HCC patients
 
 We prepared libraries using DNA extracted from the tumor tissue and buffy coat with the TruSeq Nano DNA Library Prep Kit (Illumina). Paired-end (2 × 75 bp) sequencing was performed on the HiSeq4000 system (Illumina). Sequencing data were aligned to the human reference genome using the Burrows-Wheeler Aligner (Li and Durbin, 2010). We compared the data of tumor tissue with that of buffy coat to call the tumor-specific mutations using the Genome Analysis Toolkit (version 4.1.2.0) (McKenna et al., 2010).
 
 To call the tumor-specific mutations directly from the plasma, DNA isolated from the plasma was submitted to library preparation and sequencing. The sequencing data of plasma DNA were then compared with that of the buffy coat to identify the tumor-specific mutations. Single nucleotides variations observed in plasma for more than a threshold number of occasions but not in the buffy coat were identified as candidate mutations. The threshold was based on the total number of sequenced reads covering the variant's nucleotide position as described in our previous study (Chan et al., 2016). In addition, the sequencing reads covering these candidate mutations were realigned to the reference human genome using a second alignment software which could reduce the number of false-positive results caused by alignment errors as described previously (Chan et al., 2016).
 
-## Identification of tumor-specific mutations and fetal-specific SNPs in the pregnant women with lymphoma
+### Identification of tumor-specific mutations and fetal-specific SNPs in the pregnant women with lymphoma
 
 The DNA extracted from the maternal plasma, tumor cells, and normal cells were submitted to library preparation using either the KAPA HTP Library Preparation Kit (Kapa Biosystems) or the TruSeq Nano DNA Library Prep Kit (Illumina) following the manufacturer’s instructions. The 2 × 75 (paired-end mode) cycles of sequencing were performed using the Illumina platforms, including the HiSeq and NextSeq. To call the plasma-specific variants, we compared the sequencing data of DNA extracted from the maternal plasma with that from the normal cells using the dynamic cutoff algorithm as described previously (Chan et al., 2016). We used the biallelic SNPs downloaded from the dbSNP database (Build 135) to classify the plasma-specific variants. For plasma-specific variants within the dbSNP database, we further filtered out the variants that present in the tumor tissue to obtain the fetal-specific SNPs. For the non-dbSNP variants, the single nucleotide variants observed in at least three molecules from the tumor tissue sequencing data were remained as tumor-specific variants. The bioinformatic pipeline for filtering these mutations was written in Python script.
 
-## Microarray-based genotyping
+### Microarray-based genotyping
 
 Pre-transplant blood samples were collected from the donor and recipient. Genomic DNA was extracted from whole blood with the DNeasy Blood and Tissue Kit (Qiagen) and amplified with REPLI-g Mini Kit (Qiagen). For the pregnant case, genomic DNA of the mother and fetus were extracted from maternal buffy coat and fetal placenta tissue with the QIAamp DNA Mini Kit (Qiagen). Genotyping was performed on Illumina whole-genome arrays (HumanOmni2.5 or HumanOmni1) following the manufacturer’s protocol (De Vlaminck et al., 2014).
 
-## Bisulfite-treated DNA libraries preparation and sequencing analysis
+### Bisulfite-treated DNA libraries preparation and sequencing analysis
 
 Libraries were prepared from plasma DNA with the TruSeq Nano DNA Library Prep Kit (Illumina). DNA libraries were subjected to two rounds of bisulfite modification with the EpiTect Bisulfite Kit (Qiagen) following by 12 cycles of PCR amplification. Bisulfite-treated libraries were sequenced in paired-end mode (2 × 75 bp) on a HiSeq 4000 system (Illumina). The sequencing reads were trimmed to remove adapter sequences and low-quality bases (i.e., quality score <5). The trimmed reads were aligned to the human reference genome build hg19 with Methy-Pipe (Jiang et al., 2014).
 
-## GETMap analysis
+### GETMap analysis
 
-The reference methylomes included the whole-genome bisulfite sequencing data of five different tissues, including neutrophils, lymphocytes (combining B and T lymphocytes), liver, and lung from the BLUEPRINT Project (Martens and Stunnenberg, 2013), Roadmap Epigenomics (Roadmap Epigenomics Consortium et al., 2015), ENCODE (Davis et al., 2018), and GEO (Barrett et al., 2013). In addition, bisulfite sequencing data of two placenta tissues generated by our group were used as tissue-specific methylomes. The sequencing reads were aligned to the human reference genome build hg19 with bwa-meth (https://github.com/brentp/bwa-meth). After alignment, the methylation levels for 28,217,006 CpG sites across five types of tissues were determined. CpG sites fulfilling the following criteria were used for the analysis: (i) in the five reference tissues, the difference between the highest and lowest methylation levels was greater than 25% and (ii) after removing either tissue with the highest or the lowest methylation level, the coefficient of variation of methylation level across the remaining reference tissues was less than 0.3. We retrieved the methylation levels of different tissues across the set of CpG sites covered by the set of DNA molecules carrying the genetic variants. The measured CpG methylation levels of DNA molecules were recorded in a vector (X) and the retrieved reference methylation levels across different tissues were recorded in a matrix (M). The proportional contributions (P) from different tissues to donor- or recipient-specific DNA molecules were deduced by quadratic programming:X¯i=∑k(pk×Mik),where X¯i represents the methylation density of a CpG site i in the DNA mixture; pk represents the proportional contribution of cell type k to the DNA mixture; Mik represents the methylation density of the CpG site i in the cell type k. When the number of sites is the same or larger than the number of organs, the values of individual pk could be determined.
+The reference methylomes included the whole-genome bisulfite sequencing data of five different tissues, including neutrophils, lymphocytes (combining B and T lymphocytes), liver, and lung from the BLUEPRINT Project (Martens and Stunnenberg, 2013), Roadmap Epigenomics (Roadmap Epigenomics Consortium et al., 2015), ENCODE (Davis et al., 2018), and GEO (Barrett et al., 2013). In addition, bisulfite sequencing data of two placenta tissues generated by our group were used as tissue-specific methylomes. The sequencing reads were aligned to the human reference genome build hg19 with bwa-meth (https://github.com/brentp/bwa-meth). After alignment, the methylation levels for 28,217,006 CpG sites across five types of tissues were determined. CpG sites fulfilling the following criteria were used for the analysis: (i) in the five reference tissues, the difference between the highest and lowest methylation levels was greater than 25% and (ii) after removing either tissue with the highest or the lowest methylation level, the coefficient of variation of methylation level across the remaining reference tissues was less than 0.3. We retrieved the methylation levels of different tissues across the set of CpG sites covered by the set of DNA molecules carrying the genetic variants. The measured CpG methylation levels of DNA molecules were recorded in a vector (X) and the retrieved reference methylation levels across different tissues were recorded in a matrix (M). The proportional contributions (P) from different tissues to donor- or recipient-specific DNA molecules were deduced by quadratic programming:
 
-The aggregated contribution of all cell types would be constrained to be 100%:∑kpk=100%
+$$
+X¯_{i}=\sumk(p_{k}\timesM_{ik}),
+$$
 
-Furthermore, all the organs’ contributions would be required to be non-negative:pk ≥ 0, ∀ k
+where $X¯_{i}$ represents the methylation density of a CpG site i in the DNA mixture; pk represents the proportional contribution of cell type k to the DNA mixture; Mik represents the methylation density of the CpG site i in the cell type k. When the number of sites is the same or larger than the number of organs, the values of individual pk could be determined.
+
+The aggregated contribution of all cell types would be constrained to be 100%:
+
+$$
+\sumkp_{k}=100%
+$$
+
+Furthermore, all the organs’ contributions would be required to be non-negative:
+
+$$
+p_{k} \geq 0, ∀ k
+$$
 
 The GETMap deconvolution analysis was performed with a program written in Python (http://www.python.org/).
 
-## Sample information
+### Sample information
 
 The information of all the samples analyzed in this study, including sequencing depth, number of informative SNPs, number of informative sequencing fragments, number of informative CpG sites, and number of CpG sites used for deconvolution, are provided in Supplementary file 1.

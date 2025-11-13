@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.34829.001 The inwardly rectifying K + channel K ir 4.1 is broadly expressed by CNS glia and deficits in K ir 4.1 lead to seizures and myelin vacuolization. However, the role of oligodendrocyte K ir 4.1 channels in controlling myelination and K + clearance in white matter has not been defined. Here, we show that selective deletion of K ir 4.1 from oligodendrocyte progenitors (OPCs) or mature oligodendrocytes did not impair their development or disrupt the structure of myelin. However, mice lacking oligodendrocyte K ir 4.1 channels exhibited profound functional impairments, including slower clearance of extracellular K + and delayed recovery of axons from repetitive stimulation in white matter, as well as spontaneous seizures, a lower seizure threshold, and activity-dependent motor deficits. These results indicate that K ir 4.1 channels in oligodendrocytes play an important role in extracellular K + homeostasis in white matter, and that selective loss of this channel from oligodendrocytes is sufficient to impair K + clearance and promote seizures.
+The inwardly rectifying K+ channel Kir4.1 is broadly expressed by CNS glia and deficits in Kir4.1 lead to seizures and myelin vacuolization. However, the role of oligodendrocyte Kir4.1 channels in controlling myelination and K+ clearance in white matter has not been defined. Here, we show that selective deletion of Kir4.1 from oligodendrocyte progenitors (OPCs) or mature oligodendrocytes did not impair their development or disrupt the structure of myelin. However, mice lacking oligodendrocyte Kir4.1 channels exhibited profound functional impairments, including slower clearance of extracellular K+ and delayed recovery of axons from repetitive stimulation in white matter, as well as spontaneous seizures, a lower seizure threshold, and activity-dependent motor deficits. These results indicate that Kir4.1 channels in oligodendrocytes play an important role in extracellular K+ homeostasis in white matter, and that selective loss of this channel from oligodendrocytes is sufficient to impair K+ clearance and promote seizures.
 
 ## Introduction
 
@@ -34,27 +34,61 @@ Here, we used conditional genetic strategies to define the role of Kir4.1 channe
 
 ## Results
 
-## CNS deletion of Kir4.1 alters the structure but not the development of oligodendrocytes
+### CNS deletion of Kir4.1 alters the structure but not the development of oligodendrocytes
 
 Constitutive deletion of Kir4.1 from glia (Gfa2-Cre;Kcnj10fl/fl mice) leads to dramatic changes in the structure of myelin and in vitro studies of oligodendrocytes lacking Kir4.1 suggest that this channel is required for both their maturation and survival (Djukic et al., 2007; Neusch et al., 2001). However, the role of Kir4.1 in shaping the development of oligodendroglia in vivo remains largely unexplored. We deleted Kir4.1 from the nervous system by crossing Kcnj10fl/fl mice (Djukic et al., 2007) with Nes-Cre mice, which express Cre recombinase in neural progenitor cells (Tronche et al., 1999). These nervous-system-specific Kir4.1 conditional knockout mice (termed nKir4.1cKO) exhibited retarded growth, ataxia, tremor, and early mortality, with most mice dying by postnatal day (P) 25 (Figure 1A–B; Figure 1—video 1), similar to the phenotype of Kir4.1 global knockout and glia-specific Kir4.1 knockout mice (Djukic et al., 2007; Neusch et al., 2001). Kir4.1 immunoreactivity was no longer observed in the brains of these mice (Figure 1C), demonstrating effective deletion of this channel from the CNS. Immunostaining for myelin basic protein (MBP) revealed dense myelinated tracts in the corpus callosum and striatum, indicating that oligodendrocytes were formed; however, these regions exhibited widespread vacuolization of myelin, with swellings visible along most internodes (Figure 1D–F; Figure 1—figure supplement 1). Despite these striking morphological changes, the density of oligodendrocytes in nKir4.1cKO mice at P24, measured by immunostaining for the oligodendrocyte protein aspartoacylase (ASPA), was comparable to control mice (Nes-Cre;Kcnj10fl/+) (Figure 1G,H), indicating that oligodendrocytes are generated and mature in the absence of Kir4.1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig1-v2.jpg)
+
+**Figure 1.:** (A) A P24 Nes-Cre;Kcnj10fl/fl (nKir4.1cKO) mouse and a Nes-Cre;Kcnj10fl/+ (control) littermate. (B) nKir4.1cKO mice display ataxic gate (see Figure 1—video 1). (C) Coronal brain sections from control (left) and nKir4.1cKO (right) mice at P24, immunostained with antibody against Kir4.1. (D) Coronal brain sections from control (left) and nKir4.1cKO (right) mice at P24, immunostained with antibody against Myelin Basic Protein (MBP). (E–F) Higher magnification images of cortex (E) and corpus callosum (F) in control and nKir4.1cKO mice, immunostained for MBP. Images of additional brain regions are included in Figure 1—figure supplement 1. (G) Immunostaining for aspartoacylase (ASPA, a marker of mature oligodendrocytes) in corpus callosum of control (left) and nKir4.1cKO (right) mice. (H) Quantification of ASPA+ cells per mm2 in control (n = 4) and nKir4.1cKO (n = 4) mice. No significant difference in oligodendrocyte density was observed (p=0.60; Student’s t-test). (I) Immunostaining for PDGFRα (green) and Ki67 (red) in hippocampus of control (top row) and nKir4.1cKO (bottom row) mice. Insets show PDGFRα and Ki67 double-immunoreactive cells. (J) Quantification of PDGFRα+ cells per mm2 in hippocampus of control (n = 3) and nKir4.1cKO (n = 3) mice. No significant difference in OPC density was observed (p=0.52; Student’s t-test). (K) Quantification of the proportion of PDGFRα+ cells that were Ki67+ in hippocampus of control (n = 3) and nKir4.1cKO (n = 3) mice. Significantly fewer OPCs were Ki67+ in nKir4.1cKO mice (p=0.002; Student’s t-test). (L) Layer 1 oligodendrocytes in cortex (flat-mount) from Mobp-EGFP (control, top) and nKir4.1cKO;Mobp-EGFP (bottom) mice. Scale bar = 20 μm. White arrowheads indicate large myelin vacuoles. (M) Resting membrane potential and membrane resistance of corpus callosum oligodendrocytes recorded in acute slices from control (Nes-Cre;Mobp-EGFP, n = 5 cells) and nKir4.1cKO (Nes-Cre;Kcnj10fl/fl;Mobp-EGFP, n = 4 cells) mice at P21. nKir4.1cKO oligodendrocytes had a depolarized membrane potential compared to controls (p=7.6 × 10–7; Student’s t-test), but no significant difference was observed in membrane resistance (p=0.62; Student’s t-test). (N) I-V curves of control (gray) and nKir4.1cKO (orange) corpus callosum oligodendrocytes. nKir4.1cKO cells were depolarized, but maintained a linear I-V curve.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig1-figsupp1-v2.jpg)
 
 Oligodendrocytes are maintained by resident OPCs, which proliferate to replace those that transform into new oligodendrocytes (Hughes et al., 2013). Because of this robust homeostatic response, oligodendrocyte density can be maintained despite profound loss (Kang et al., 2010), which could mask underlying oligodendrocyte death. To assess whether there is accelerated turnover of oligodendrocytes in nKir4.1cKO mice, we examined the proportion of OPCs that were immunoreactive to the cell division marker Ki67 (Figure 1I). This analysis revealed that OPC density was unchanged (Figure 1J) in nKir4.1cKO mice, and their proliferation was reduced, rather than increased (Figure 1K), suggesting that oligodendrocyte turnover is not increased.
 
 To assess the physiological properties of oligodendrocytes when Kir4.1 is absent from the CNS, we crossed nKir4.1cKO mice with Mobp-EGFP mice (Gong et al., 2003), allowing oligodendrocytes to be visualized for targeted recording in acute slices (Figure 1L). EGFP+ oligodendrocytes in the corpus callosum of these mice at P21 were significantly depolarized compared to controls (Nes-Cre;Mobp-EGFP) (control: –77 ± 2 mV, n = 5; cKO: –31 ± 1 mV, n = 4; p=7.6 × 10–7) (Figure 1M), but maintained the membrane resistance and linear current-voltage response characteristic of WT oligodendrocytes (Figure 1M,N). Together these results indicate that deletion of Kir4.1 from the CNS leads to profound changes in the structure of myelin and depolarization of oligodendrocytes but does not impair their maturation or accelerate their degeneration during development.
 
-## Kir4.1 channels contribute to the resting membrane potential and membrane resistance of OPCs
+### Kir4.1 channels contribute to the resting membrane potential and membrane resistance of OPCs
 
 Kir4.1 is the most abundant K+ channel expressed by OPCs (Larson et al., 2016), and upregulation of these channels, as assessed by the appearance of Ba2+-sensitive Kir currents, correlates with development of a more negative OPC membrane potential and acquisition of a linear I-V curve profile over the course of postnatal development (Maldonado et al., 2013), suggesting that Kir4.1 plays a key role in establishing the membrane properties of these progenitors. To determine if Kir4.1 channels influence the physiological properties of OPCs and their developmental progression in vivo, we selectively deleted these channels in OPCs by crossing Pdgfra-CreER mice (Kang et al., 2010) with Kcnj10fl/fl mice. A sensitive Cre-dependent EGFP reporter transgene (ROSA26-CAG-EGFP (RCE)) (Sousa et al., 2009) was included to mark cells in which Cre activity was induced and recombination was initiated at P21 with 4-hydroxytamoxifen (4-HT). EGFP+ OPCs in the corpus callosum, hippocampus, and cortex of these conditional knock-out mice (termed pKir4.1cKO) were targeted for whole cell recording in acute slices and compared to OPCs in control mice (Pdgfra-CreER;RCE) (Figure 2A). OPCs were readily distinguished from oligodendrocytes generated in the intervening 2 weeks by their radial morphology (Figure 2B) and presence of a depolarization-induced sodium current (Figure 2C) (Bergles et al., 2000; De Biase et al., 2010; Ong and Levine, 1999). OPCs in control mice exhibited prominent outward and inward currents in response to current injection, resulting in a near linear current-voltage (I-V) relationship (Figure 2D,F; Figure 2—figure supplement 1A). Application of a low concentration of BaCl2 (100 µM), which inhibits Kir4.1 channels, blocked the hyperpolarization-induced inward current (Figure 2D,F; Figure 2—figure supplement 1A,B). In contrast, the majority of OPCs (49/65, 76%) in pKir4.1cKO mice exhibited greatly reduced inward currents in response to hyperpolarization, and BaCl2 (100 µM) did not alter their I-V relationship, indicating that Kir4.1 was no longer expressed (Figure 2E,G; Figure 2—figure supplement 2B). The remaining 24% of EGFP+ OPCs in pKir4.1cKO mice exhibited a linear I-V profile (Figure 2—figure supplement 2), suggesting that activation of CreER in these cells did not result in excision of both floxed Kir4.1 alleles over this time period.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental protocol: 4-hydroxytamoxifen (2 × 1 mg) was administered to Pdgfra-CreER;RCE (control) and Pdgfra-CreER;RCE;Kcnj10fl/fl (pKir4.1cKO) mice i.p. at P21, and mice were sacrificed at P35 for whole cell recording in acute brain slices. (B) Immunostaining in fixed tissue from control mouse showing that EGFP (green) is expressed in OPCs, immunoreactive to NG2 (red) and PDGFRα (blue). (C) Response of an OPC (black) and an oligodendrocyte (red) to a 70 mV depolarizing step. The OPC shows a distinct inward deflection after the initial capacitive current, reflecting activation of voltage-gated sodium channels that are only expressed at the OPC stage. (D) Whole cell recordings from hippocampal OPCs of control mice. Voltage steps (−150 mV to +60 mV, 15 mV intervals) were applied to each cell in regular ACSF and in ACSF +100 μM BaCl2. (E) The same voltage protocol was applied to hippocampal OPCs in pKir4.1cKO mice. (F) Plots showing the I-V relationship of control OPCs in corpus callosum (left, n = 18) and hippocampus (right, n = 16), in regular ACSF (gray) and ACSF +100 μM BaCl2 (black). (G) Plots showing the I-V relationship of pKir4.1cKO OPCs in corpus callosum (left, n = 18) and hippocampus (right, n = 17), in regular ACSF (red) and ACSF +100 μM BaCl2 (black). I-V plots for cortical OPCs are included in Figure 2—figure supplement 1. (H) Quantification of the average resting membrane potential of control OPCs in ACSF (gray, CC: n = 21, Hippocampus: n = 24), control OPCs in 100 μM BaCl2 (black, CC: n = 10, Hippocampus: n = 10), and pKir4.1cKO OPCs (red, CC: n = 21, Hippocampus: n = 20). The three groups are significantly different (CC: F = 27.3, p=1.1 × 10–8; Hippocampus: F = 19.5, p=5.1 × 10–7) (one-way ANOVA). Differences between control/ACSF and control/BaCl2 (CC: p=1.3 × 10–4, Hippocampus: p=1.9 × 10–4) and between control/ACSF and pKir4.1cKO (CC: p=2.4 × 10–7, Hippocampus: p=4.0 × 10–5) are statistically significant (Bonferroni’s test, α = 0.017). CC = corpus callosum. (I) Quantification of membrane resistance of OPCs in (H). The three groups are significantly different (CC: F = 13.2, p=2.7 × 10–5; Hippocampus: F = 10.8, p=1.2 × 10–4) (one-way ANOVA). Differences between control/ACSF and control/BaCl2 (CC: p=0.0019, Hippocampus: p=7.7 × 10–4) and between control/ACSF and pKir4.1cKO (CC: p=3.9 × 10–4, Hippocampus: p=0.0014) are statistically significant (Bonferroni’s test, α = 0.017). Quantifications of membrane resistance and membrane potential of cortical OPCs are included in Figure 2—figure supplement 1. The distribution of membrane potential and membrane resistance among control and pKir4.1cKO cells, as well as example I-V curves of ‘knockout-like’ and ‘wild-type-like’ pKir4.1cKO OPCs, are included in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) I-V plot showing the average current-voltage relationship of control OPCs in cortex (n = 15) in regular ACSF (gray) and ACSF + 100 μM BaCl2 (black). (B) I-V plot showing the average current-voltage relationship of pKir4.1cKO OPCs in cortex (n = 18) in regular ACSF (red) and ACSF + 100 μM BaCl2 (black). (C) Quantification of the average resting membrane potential of control cortical OPCs in ACSF (gray, n = 18), control cortical OPCs in 100 μM BaCl2 (black, n = 10), and pKir4.1cKO cortical OPCs (red, n = 24). The three groups are significantly different (F = 13.9, p=1.7 × 10–5) (one-way ANOVA). Differences between control/ACSF and control/BaCl2 (p=2.5 × 10–4) and between control/ACSF and pKir4.1cKO (p=7.0 × 10–6) are statistically significant (Bonferroni’s test, α = 0.017). (D) Quantification of the average membrane resistance of the same OPCs as in (C). The three groups are significantly different (F = 14.2, p=1.3 × 10–5) (one-way ANOVA). Differences between control/ACSF and control/BaCl2 (p=0.0010) and between control/ACSF and pKir4.1cKO (p=6.5 × 10–6) are statistically significant (Bonferroni’s test, α = 0.017).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Scatterplot of membrane resistance (X-axis) vs. resting membrane potential (Y-axis) of control (gray) and pKir4.1cKO (red) OPCs in cortex, corpus callosum, and hippocampus. 49/65 (76%) of pKir4.1cKO OPCs, including ‘Cell 2’, displayed increased Rm and depolarized RMP, while 16/65 (24%), including ‘Cell 1’, displayed a wild type-like phenotype. CC = corpus callosum. (B) I-V plot of the cell marked ‘Cell 1’ in (E), in regular ACSF (red), and ACSF +100 μM BaCl2 (black). This pKir4.1cKO cell displays a ‘wild-type-like’ phenotype. (C) I-V plot of the cell marked ‘Cell 2’ in (E), in regular ACSF (red), and ACSF +100 μM BaCl2 (black). This pKir4.1cKO cell displays a ‘knockout-like’ phenotype.
+
 OPCs in both gray and white matter that lacked Kir4.1 were ~20 mV more depolarized and exhibited a ~ 10 fold higher membrane resistance (measured at –80 mV with a 10 mV depolarization step) than control OPCs (Figure 2H–I; Figure 2—figure supplement 1C–D). Similar changes were induced in OPCs of control mice when Kir4.1 was inhibited with 100 µM BaCl2 (Figure 2H–I; Figure 2—figure supplement 1C–D), indicating that these changes reflect the direct contribution of Kir4.1 rather than other compensatory changes induced by deletion of these channels. These results indicate that Kir4.1 channels dominate the resting conductance of OPCs and force these progenitors to adopt a more hyperpolarized membrane potential.
 
-## Deletion of Kir4.1 from OPCs does not affect their survival, proliferation, or differentiation
+### Deletion of Kir4.1 from OPCs does not affect their survival, proliferation, or differentiation
 
 Previous in vitro studies have shown that expression of Kir4.1 is sufficient to hyperpolarize and cause G1/G0 arrest of glioma cells (Higashimori and Sontheimer, 2007) and flux of K+ through voltage-gated K+ channels has been shown regulate OPC proliferation and differentiation in vitro (Gallo et al., 1996; Ghiani et al., 1999; Knutson et al., 1997). To determine how the depolarization induced by Kir4.1 deletion influences OPC behavior, we performed in vivo fate tracing using pKir4.1cKO mice bred to R26R-EYFP mice (Srinivas et al., 2001). In the RCE reporter line used for electrophysiological recordings, nearly 100% of OPCs expressed EGFP (Figure 3—figure supplement 1), yet Kir4.1 currents were absent in only 76% of OPCs (Figure 2—figure supplement 2). Therefore, for these studies we used a R26R-EYFP reporter line that exhibits a recombination efficiency (78% of OPCs) comparable to the proportion of OPCs that lack Kir4.1 currents in cKO mice (Figure 3—figure supplement 1). Control (n = 6) and pKir4.1cKO (n = 7) mice received 4-HT at P21 and the density of OPCs in gray and white matter was assessed at P35 by immunostaining for PDGFRα to identify all OPCs, and EYFP to identify OPCs that have expressed Cre recombinase and lack Kir4.1. If OPC proliferation or survival is impaired, a decrease in the relative proportion of EYFP+ OPCs is expected; however, there was no change in the density of OPCs or the proportion of EYFP+ OPCs between control and pKir4.1cKO mice (Figure 3—figure supplement 2).
 
 To assess proliferation more directly, the proportion of dividing OPCs was determined by administering bromodeoxyuridine (BrdU) twice daily from P28 to P34 (Figure 3A). Although the proportion of BrdU+ OPCs varied by region, from ~45% in hippocampus to ~60% in corpus callosum, no differences were observed between EYFP+ and EYFP– populations in either region (Figure 3B–E; Figure 3—figure supplement 3A–C), indicating comparable rates of proliferation. At this time point, EYFP+ cells consisted of ~75% PDGFRα+ OPCs and ~15% CC1+ oligodendrocytes in the hippocampus, and ~45% OPCs and ~40% oligodendrocytes in the corpus callosum, with no significant differences observed between control and Kir4.1-deleted OPCs (Figure 3F–H; Figure 3—figure supplement 3D–F). Thus, although OPCs lacking Kir4.1 exhibited markedly higher membrane resistance and more depolarized membrane potential, remarkably, these changes did not alter their proliferation or differentiation into oligodendrocytes.
 
-## Kir4.1 does not influence the membrane potential or membrane resistance of oligodendrocytes
+![Figure 3.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental protocol: 4-hydroxytamoxifen (2 × 1 mg) was administered to Pdgfra-CreER;R2R-EYFP (control) and Pdgfra-CreER;R26R-EYFP;Kcnj10fl/fl (pKir4.1cKO) mice i.p. at P21. BrdU (2 × 50 mg/kg i.p. +1 mg/mL in drinking water) was administered daily from P28-P34, and mice were sacrificed at P35. (B) Immunostaining for EYFP (green), PDGFRα (red), and BrdU (cyan), showing a BrdU+ OPC in the hippocampus of a control mouse. Orthogonal views show colocalization of the signals in the z plane. (C–D) Immunostaining for EYFP (green), PDGFRα (red), and BrdU (cyan) in the corpus callosum of a control (C) and pKir4.1cKO (D) mouse. Top insets show EYFP+ PDGFRα+ BrdU+ OPCs, bottom insets show EYFP− PDGFRα+ BrdU+ OPCs. (E) Quantification of the proportions of EYFP+ and EYFP− PDGFRα+ cells that incorporated BrdU in the corpus callosum of control (n = 6) and pKir4.1cKO (n = 7) mice. There is no significant interaction between genotype and EYFP expression (Finteraction = 9.9 × 10–5, p=0.99) (two-way ANOVA). All pairwise comparisons between groups are not statistically significant (p>0.008; Bonferroni’s test). (F–G), Immunostaining for EYFP (green), PDGFRα (red), and CC1 (cyan) in the corpus callosum of a control (F) and pKir4.1cKO (G) mouse. Top insets show EYFP+ PDGFRα− CC1+ oligodendrocytes, bottom insets show EYFP+ PDGFRα+ CC1− OPCs. (H) Quantification of the proportions of EYFP+ cells expressing PDGFRα+ (red), CC1+ (blue), or neither (gray) in corpus callosum of control (n = 6) and pKir4.1cKO (n = 7) mice. All pairwise comparisons are not statistically significant (p>0.017; Bonferroni’s test). Recombination efficiencies of the Rosa-CAG-EGFP and R26R-EYFP reporter lines are compared in Figure 3—figure supplement 1. OPC densities in control and pKir4.1cKO mice are quantified in Figure 3—figure supplement 2. Analysis of OPC proliferation and differentiation in hippocampus is included in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Protocol for 4-HT injection. Pdgfra-CreER;RCE (n = 3) and Pdgfra-CreER;R26R-EYFP (n = 6) animals were injected i.p. with 2 × 1 mg 4-HT at P21, and sacrificed at P35 for histologial analysis. (B) Immunostaining for PDGFRα (red) and EGFP (green) in hippocampus of a Pdgfra-CreER;RCE mouse. (C) Quantification of the proportion of PDGFRα+ cells that are EGFP+ (green) and EGFP− (red) in the hippocampus of Pdgfra-CreER;RCE mice. 99.0 ± 0.1% of PDGFRα+ cells are EGFP+. (D) Immunostaining for PDGFRα (red) and EYFP (green) in hippocampus of a Pdgfra-CreER; R26R-EYFP mouse. (E) Quantification of the proportion of PDGFRα+ cells that are EYFP+ (green) and EYFP− (red) in the hippocampus of Pdgfra-CreER;R26R-EYFP mice. 78.0 ± 1.6% of PDGFRα+ cells are EYFP+.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunostaining for EYFP (green) and PDGFRα (red) in brain sections from control (top) and pKir4.1cKO (bottom) mice. Dashed lines demarcate the corpus callosum (CC). (B) Quantification of the density of EYFP+ PDGFRα+ (green) and EGFP− PDGFRα+ (red) cells in the corpus callosum and hippocampus of control (n = 6) and pKir4.1cKO (n = 7) mice. No significant differences were observed in the overall density or in the EYFP+ proportion of PDGFRα+ cells.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–B) Immunostaining for EYFP (green), PDGFRα (red), and BrdU (cyan) in the hippocampus of a control (A) and pKir4.1cKO (B) mouse. Top insets show EYFP+ PDGFRα+ BrdU+ OPCs, bottom insets show EYFP− PDGFRα+ BrdU+ OPCs. (C) Quantification of the proportions of EYFP+ and EYFP− PDGFRα+ cells that have incorporated BrdU in the hippocampus of control (n = 6) and pKir4.1cKO (n = 7) mice. There is no significant interaction between genotype and EYFP expression (Finteraction = 0.44, p=0.51) (two-way ANOVA). All pairwise comparisons between groups are not statistically significant (p>0.008; Bonferroni’s test). (D–E) Immunostaining for EYFP (green), PDGFRα (red), and CC1 (cyan) in hippocampus of a control (D) and pKir4.1cKO (E) mouse. Top insets show EYFP+ PDGFRα− CC1+ oligodendrocytes, bottom insets show EYFP+ PDGFRα+ CC1− OPCs. (F) Quantification of the proportions of EYFP+ cells expressing PDGFRα+ (red), CC1+ (blue), or neither (gray) in hippocampus control (n = 6) and pKir4.1cKO (n = 7) mice. All pairwise comparisons are not statistically significant (p>0.017; Bonferroni’s test).
+
+### Kir4.1 does not influence the membrane potential or membrane resistance of oligodendrocytes
 
 Kir4.1 continues to be expressed by oligodendroglia after differentiation (Brasko et al., 2017; Kalsi et al., 2004; Neusch et al., 2001; Poopalasundaram et al., 2000; Zhang et al., 2014), and the results above indicate that oligodendrocytes in situ are depolarized when Kir4.1 is removed from the entire CNS (Figure 1), raising the possibility that cell autonomous alterations in their physiological properties induce the malformation of myelin observed in these animals. To test this hypothesis, we crossed Kcnj10fl/fl mice with Mog-iCre mice, which express Cre recombinase specifically in mature oligodendrocytes (Buch et al., 2005). Unlike nKir4.1cKO mice, which have severe neurological symptoms and drastically shortened lifespan (Figure 1), these oligodendrocyte-specific Kir4.1 knockout mice (oKir4.1cKO) were grossly normal phenotypically and survived to adulthood.
 
@@ -62,9 +96,29 @@ To enable analysis of both oligodendrocytes and astrocytes, and thereby verify t
 
 To assess the role of Kir4.1 in cell-autonomously regulating the membrane properties of oligodendrocytes, EGFP+ cells were targeted for whole cell recording in the corpus callosum of 5 to 6-week-old control;RCE and oKir4.1cKO;RCE mice. In contrast to nKir4.1cKO mice (Figure 1), no significant changes in resting membrane potential (RMP) (Control: –70 ± 1 mV (n = 17) vs. oKir4.1cKO: –68 ± 1 mV (n = 26), p=0.25), membrane resistance (Rm) (Control: 33 ± 3 MΩ vs. oKir4.1cKO: 40 ± 4 MΩ, p=0.22), or I-V response of EGFP+ oligodendrocytes were observed following selective deletion of Kir4.1 (Figure 4A–B). In an independent group of oligodendrocytes recorded in the alveus of the hippocampus, there was similarly no change in Rm after Kir4.1 deletion (Control: 27 ± 2 MΩ, n = 16 vs. oKir4.1cKO: 28 ± 3 MΩ, n = 18; p=0.86) (data not shown). These findings indicate that Kir4.1 does not influence the membrane properties of mature oligodendrocytes, indicating that other K+ conductances dominate at this stage.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig4-v2.jpg)
+
+**Figure 4.:** (A) Membrane resistance of corpus callosum oligodendrocytes recorded in acute slices from control (Mog-iCre;RCE, n = 17 cells) and oKir4.1cKO (Mog-iCre;RCE;Kcnj10fl/fl, n = 26 cells) mice at 5 to 6 weeks of age. No significant difference was observed in membrane resistance (p=0.22; Student’s t-test). (B) Resting membrane potential of corpus callosum oligodendrocytes recorded in acute slices from control and oKir4.1cKO mice at 5 to 6 weeks of age. No significant difference was observed in resting membrane potential (p=0.25; Student’s t-test). (C) I-V curves of control (n = 14) and oKir4.1cKO (n = 18) corpus callosum oligodendrocytes at 5 to 6 weeks of age. Kir4.1 deletion did not significantly affect the current-voltage relationship. (D) Quantification of average conduction velocity of myelinated (M) and unmyelinated (UM) axons, measured via extracellular field recordings of compound action potentials in the corpus callosum of control (gray, n = 5 slices from two mice) and oKir4.1cKO (blue, n = 5 slices from two mice) animals. No significant differences in conduction velocity were observed (M: p=0.42, UM: p=0.37; Student’s t-test). (E) Tissue sections from a 10-week-old control animal immunostained for MBP (left to right: whole brain (coronal), thoracic spinal cord (transverse), cerebellum (sagittal), layer 1 of cortex (flat mount), optic nerve (longitudinal)). (F) Tissue sections from a 10-week-old oKir4.1cKO animal immunostained for MBP. Same regions as in (E). (G) Immunostaining for EGFP in corpus callosum of 10-week-old control (left) and oKir4.1cKO (right) mice. (H) Quantification of the density of EGFP+ oligodendrocytes in the corpus callosum of control (n = 6) and oKir4.1cKO (n = 6) mice. No significant difference was observed (p=0.997; Student’s t-test). (I) Transmission electron micrographs showing myelinated axons in the corpus callosum of 10-week-old control and oKir4.1cKO mice. (J) Higher-magnification micrographs showing compact myelin in control and oKir4.1cKO mice. (K) Scatterplot of the relationship between axon diameter (X-axis) and myelin g-ratio (diameter of axon/diameter of axon + myelin) (Y-axis). 1103 axons from three control animals (gray) and 692 axons from 3 oKir4.1cKO animals (blue) were analyzed. Solid line = linear regression of control data, R2 = 0.4831. Dashed line = linear regression of oKir4.1cKO data, R2 = 0.4033. (L) Average g-ratio of corpus callosum axons from control (n = 3) and oKir4.1cKO (n = 3) animals. No significant difference was observed (p=0.38; Student’s t-test). (M) Average value of the slope of the linear regression (axon diameter vs. g-ratio) from control (n = 3) and oKir4.1cKO (n = 3) animals. No significant difference was observed (p=0.81; Student’s t-test). Quantitative RT-PCR demonstrating reduced Kir4.1 expression in oKir4.1cKO oligodendrocytes is included in Figure 4—figure supplement 1. The effect of application of BaCl2 to control and oKir4.1cKO oligodendrocytes is shown in Figure 4—figure supplement 2. Example traces from extracellular field recordings measuring corpus callosum axon conduction velocity are included in Figure 4—figure supplement 3. Immunostaining for SMI32 and GFAP in oKir4.1cKO mice is included in Figure 4—figure supplement 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Relative quantity of CNPase and MOBP mRNA (expressed in log10) between FACS-sorted EGFP+ oligodendrocytes from Mog-iCre;RCE mice (n = 6) and FACS-sorted EGFP+ astrocytes from Mog-iCre;Slc1a2-EGFP mice (n = 5). GAPDH mRNA transcript levels were used to normalize each sample prior to comparison. Oligodendrocytes had significantly higher levels of CNPase (RQ = 30.3, 95% CI = 23.5–39.1) and MOBP (RQ = 62.2, 95% CI = 43.5–88.9) mRNA than astrocytes. (B) Relative quantity of GFAP mRNA between FACS-sorted EGFP+ astrocytes from Mog-iCre;Slc1a2-EGFP mice (n = 5) and FACS-sorted EGFP+ oligodendrocytes from Mog-iCre;RCE mice (n = 6). Astrocytes had significantly higher levels of GFAP mRNA than oligodendrocytes (RQ = 13.5, 95% CI = 5.8–31.3). (C) Relative quantity of Kir4.1 mRNA between FACS-sorted EGFP+ oligodendrocytes from Mog-iCre;RCE; Kcnj10fl/fl (oKir4.1cKO) mice (n = 3) and Mog-iCre;RCE (control) mice (n = 3). oKir4.1cKO oligodendrocytes had significantly lower levels of Kir4.1 mRNA than control oligodendrocytes (RQ = 0.063, 95% CI = 0.035–0.112). (D,) Relative quantity of Kir4.1 mRNA between FACS-sorted EGFP+ astrocytes from Mog-iCre; Kcnj10fl/fl;Slc1a2-EGFP (oKir4.1cKO) mice (n = 3) and Mog-iCre;Slc1a2-EGFP (control) mice (n = 2). oKir4.1cKO and control astrocytes did not have significantly different Kir4.1 mRNA levels (RQ = 1.52, 95% CI = 0.32–7.10). *=p < 0.05, **=p < 0.01, ***=p < 0.001 (Student’s t-test).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Membrane resistance of oligodendrocytes in the corpus callosum and alveus of control (gray, n = 25) or oKir4.1cKO (blue, n = 32) mice, in ACSF (gray/blue) and 100 µM BaCl2 (black). Membrane resistance was recorded at −80 mV with a 10 mV voltage step. BaCl2 significantly increased the membrane resistance of control (p=6.8 × 10–5, paired Student’s t-test) and oKir4.1cKO (p=1.5 × 10–6, paired Student’s t-test) oligodendrocytes. (B) There was no significant difference in the effect of application of BaCl2 on the membrane resistance of control (gray) and oKir4.1cKO (blue) oligodendrocytes (p=0.33, Student’s t-test).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic depiction of recording set-up: extracellular field recordings were made in the corpus callosum, while axons were stimulated at a distance of 0.5–1 mm. (B) Example of a corpus callosum compound action potential (CAP). TTX was applied after each recording (red trace), and TTX traces were subtracted from CAP traces to reduce the stimulus artifact (right). The CAP consists of two negative waves, the first representing action potentials from myelinated axons (M), and the second representing action potentials from unmyelinated axons (UM).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–B) Immunostaining for non-phosphorylated neurofilament (SMI32) in the brains of control (A) and oKir4.1cKO (B) mice. Right: higher magnification images of corpus callosum. No SMI32+ axons were observed in corpus callosum of six control and six oKir4.1cKO mice. (C–D) Immunostaining for GFAP in the brains of control (C) and oKir4.1cKO (D) mice. Right: higher magnification images of corpus callosum. There was no evidence of reactive astrocytosis in three oKir4.1cKO mice examined.
+
 To investigate the role of other barium-sensitive K+ channels in maintaining the membrane conductance of control and oKir4.1cKO oligodendrocytes, membrane resistance was measured before and after application of BaCl2 (100 µM). Application of BaCl2 increased the membrane resistance of control and oKir4.1cKO oligodendrocytes to a similar degree (ΔRmcontrol: 15.2 ± 3.2 MΩ, n = 25 vs. oKir4.1cKO: 19.9 ± 3.5 MΩ, n = 32; p=0.33) (Figure 4—figure supplement 2). These results indicate that the change in membrane resistance produced by BaCl2 is due to a non-cell-autonomous effect, such as inhibition of astrocyte Kir4.1, or that other K+ channels in addition to Kir4.1 are inhibited by BaCl2.
 
-## Specific deletion of Kir4.1 from mature oligodendrocytes does not disrupt myelination
+### Specific deletion of Kir4.1 from mature oligodendrocytes does not disrupt myelination
 
 It has been widely hypothesized that Kir4.1 plays an important role in myelination, as the most striking histological feature of Kir4.1 global knockout and glia-specific knockout mice is severe spongiform vacuolation of the white matter (Djukic et al., 2007; Menichella et al., 2006; Neusch et al., 2001) (Figure 1). However, due to the broad expression of this channel, it is unclear whether this pathology is due to defects in oligodendrocytes or a consequence of astrocyte or OPC dysfunction. To determine the role of oligodendrocyte Kir4.1 in myelination, we examined the white matter of oligodendrocyte-specific Kir4.1 knockout mice. To assess whether axons are functionally preserved in the absence of oligodendrocyte Kir4.1, compound action potentials (CAPs) reflecting conduction along myelinated and unmyelinated axons were recorded in the corpus callosum (Figure 4—figure supplement 3A,B). No difference in conduction velocity was observed for myelinated or unmyelinated axon populations between control and oKir4.1cKO mice (Figure 4D).
 
@@ -72,39 +126,59 @@ In contrast to the striking white matter pathology exhibited by nKir4.1cKO mice,
 
 To examine the structure of myelin at higher resolution, transmission electron microscopy (TEM) was performed on control and oKir4.1cKO mice. Electron micrographs containing cross-sections of corpus callosum from 10-week-old mice demonstrated a complete absence of vacuoles or aberrant myelin in oKir4.1cKO animals (Figure 4I–J). Furthermore, the pattern of myelination, estimated by calculating g-ratios (diameter of axon/diameter of axon + myelin) (Figure 4K) revealed that there was no difference in g-ratio across all axons (Control: 0.743 ± 0.010 (n = 3 mice), oKir4.1cKO: 0.752 ± 0.001 (n = 3 mice), p=0.38) (Figure 4L), or in the relationship between axon diameter and g-ratio (Control: 0.16 ± 0.02 (n = 3 mice), oKir4.1cKO: 0.15 ± 0.01 (n = 3 mice), p=0.81) (Figure 4M). In addition, swollen or degenerating axons were completely absent from corpus callosum of oKir4.1cKO mice (Figure 4I) and immunostaining for SMI32 (non-phosphorylated neurofilament), which is upregulated in degenerating axons (Lee et al., 2012), revealed no axonal pathology in the corpus callosum of control or oKir4.1cKO animals (n = 6 for both genotypes) (Figure 4—figure supplement 4A–B). Brain sections were also immunostained for GFAP, as astrocytes become reactive and upregulate GFAP in response to neuronal degeneration (Lee et al., 2012). No difference in GFAP expression was observed between control and oKir4.1cKO animals (Figure 4—figure supplement 4C–D). These findings indicate that myelin and myelinated axons are not structurally altered as result of the selective removal of Kir4.1channels from oligodendrocytes.
 
-## Reduced seizure threshold in oligodendrocyte-specific Kir4.1 knockout mice
+### Reduced seizure threshold in oligodendrocyte-specific Kir4.1 knockout mice
 
 Although oKir4.1cKO mice did not exhibit alterations in the structure of myelin or progressive disability, these animals died much earlier than control littermates (Figure 5A). Kir4.1 is a risk factor gene for epilepsy (Bockenhauer et al., 2009; Dai et al., 2015; Inyushin et al., 2010; Lenzen et al., 2005; Scholl et al., 2009), raising the possibility that Kir4.1 dysfunction in oligodendrocytes is sufficient to increase seizure susceptibility and induce death. Consistent with this hypothesis, oKir4.1cKO mice exhibited occasional seizures and mice that had died were often discovered with limbs extended, suggesting that they had suffered a catastrophic seizure.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig5-v2.jpg)
+
+**Figure 5.:** (A) Kaplan-Meier curve showing the probability of survival of control (black) vs. oKir4.1cKO (blue) mice from birth to one year of age. Dashed lines represent the 95% confidence interval. oKir4.1cKO mice have significantly shorter survival than controls (p=6.8 × 10–7; log-rank test). Mice sacrificed for experimental use were censored on the date of sacrifice. Analysis is based on a total of 113 control and 129 oKir4.1cKO mice. (B) Maximum seizure score achieved by control (n = 17) and oKir4.1cKO (n = 12) mice 30 min following PTZ (40 mg/kg) injection. oKir4.1cKO mice reached significantly higher seizure scores than controls (U = –4.36, p=3.6 × 10–5; Mann Whitney test). (C) Kaplan-Meier curve showing probability of (score ≥3) seizure-free survival between PTZ injection and 30 minutes post-injection. Dashed lines represent the 95% confidence interval. oKir4.1cKO mice (n = 12) had significantly shorter seizure-free survival than controls (n = 17) (p=1.2 × 10–5; log-rank test). (D) Mean latency to maximal seizure among mice reaching a seizure score of 3 and above (n = 13 control, n = 12 oKir4.1cKO). oKir4.1cKO mice had significantly shorter latency to seizure (p=0.006, Student’s t-test).
+
 To assess whether seizure susceptibility is enhanced by removal of Kir4.1 from oligodendrocytes, we compared the response of oKir4.1cKO and control mice to the chemoconvulsant pentylenetetrazol (PTZ). A stark difference was observed between groups. Nearly all (11/12) oKir4.1cKO mice exhibited tonic-clonic seizures with full hindlimb extension after being injected with PTZ, while only 1/17 control mice exhibited this level of seizure severity (Figure 5B; Figure 5—video 1). Moreover, 8/12 oKir4.1cKO mice and only 1/17 control mice experienced fatal seizures, and oKir4.1cKO mice had a faster seizure onset (Figure 5C–D), indicating that deletion of this K+ channel from oligodendrocytes enhances neuronal excitability and increases seizure susceptibility.
 
-## K+ buffering in white matter is impaired following Kir4.1 deletion from oligodendrocytes
+### K+ buffering in white matter is impaired following Kir4.1 deletion from oligodendrocytes
 
 Previous studies have shown that Kir4.1 is involved in buffering extracellular K+ in both gray and white matter (Bay and Butt, 2012; Chever et al., 2010; Haj-Yasein et al., 2011; Neusch et al., 2006; Sibille et al., 2014), as extracellular K+ levels are slower to recover following neuronal stimulation in glia-specific Kir4.1 knockout mice (Chever et al., 2010). However, the relative contribution of astrocytes and oligodendrocytes to K+ clearance, particularly in white matter where there is extensive association between axons and oligodendrocytes, has not been assessed. To investigate the role of oligodendrocyte Kir4.1 in K+ buffering, we recorded the response of oligodendrocytes from control and oKir4.1cKO mice to repetitive axonal stimulation (100 Hz for 1 s) in two white matter tracts, the corpus callosum and the alveus of the hippocampus (Figure 6A; Figure 6—figure supplement 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig6-v2.jpg)
+
+**Figure 6.:** (A) Recording set-up: EGFP+ oligodendrocytes in the corpus callosum were targeted for whole cell recording in control; RCE and oKir4.1cKO;RCE mice. Axons were stimulated at 100 Hz for 1 s with a bipolar electrode at a distance of ~200 μm. (B) Membrane potential changes of oligodendrocytes recorded in current clamp mode during and after 100 Hz stimulation. Shown are averaged responses of cells from control mice (black, n = 15), oKir4.1cKO mice (blue, n = 15), and control mice in the presence of 1 μM TTX (red, n = 7). Dashed line represents baseline RMP. (C) Average responses of control and oKir4.1cKO oligodendrocytes in (B) shown on an expanded time scale to highlight membrane potential changes during and immediately after stimulation. Response amplitudes are scaled to the same value at the end of stimulation to facilitate comparison of response kinetics. Stimulation artifacts have been eliminated for clarity. (D) Quantification of the average decay time, defined as the time from the end of stimulation until the membrane potential first crosses its initial baseline value. This value is independent of response amplitude. oKir4.1cKO oligodendrocytes (n = 15) had significantly longer decay times than control oligodendrocytes (n = 15, p=0.0017; Student’s t-test). (E) Quantification of the average normalized integral, defined as the area under the curve from the end of stimulation until the membrane potential first crosses the baseline, divided by the peak amplitude. oKir4.1cKO oligodendrocytes had significantly greater normalized integral than control oligodendrocytes (p=0.0022; Student’s t-test). (F) EGFP+ astrocytes in the corpus callosum were targeted for whole cell recording in control;Slc1a2-EGFP and oKir4.1cKO;Slc1a2-EGFP mice. Same protocol as in (A). (G) Membrane potential changes of astrocytes recorded in current clamp mode during and after 100 Hz stimulation. Shown are averaged responses of cells from control mice (black, n = 7), oKir4.1cKO mice (green, n = 5), and control mice in the presence of 1 μM TTX (red, n = 6). Dashed line represents baseline RMP. (H) Average responses of control and oKir4.1cKO astrocytes shown in (G), on an expanded time scale. Response amplitudes were scaled to the same value at the end of stimulation, to facilitate comparison of response kinetics. Stimulation artifacts have been eliminated for clarity. (I) Quantification of the average decay time. oKir4.1cKO astrocytes (n = 5) had significantly longer decay times than control astrocytes (n = 7, p=0.026; Student’s t-test). (J) Quantification of the normalized integral. oKir4.1cKO astrocytes had significantly greater normalized integral than control astrocytes (p=0.0049; Student’s t-test). Similar recordings from oligodendrocytes and astrocytes in the alveus of the hippocampus are shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Recording set-up: EGFP+ oligodendrocytes in the alveus were targeted for whole cell recording in control;RCE and oKir4.1cKO;RCE mice. Axons were stimulated at 100 Hz for 1 s with a bipolar electrode at a distance of ~200 μm. (B) Membrane potential changes of oligodendrocytes recorded in current clamp mode during and after 100 Hz stimulation. Shown are averaged responses of cells from control mice (black, n = 14) and oKir4.1cKO mice (blue, n = 16). Dashed line represents baseline RMP. (C) Average responses of control and oKir4.1cKO oligodendrocytes shown in (B), on an expanded time scale to show membrane potential changes during and immediately after stimulation. Response amplitudes are scaled to the same value at the end of stimulation, to facilitate comparison of response kinetics. Stimulation artifacts have been eliminated for clarity. (D) Quantification of the average decay time, defined as the time from the end of stimulation until the membrane potential first crosses its initial baseline value. This value is independent of response amplitude. oKir4.1cKO oligodendrocytes (n = 14) had significantly longer decay times than control oligodendrocytes (n = 16, p=7.8 × 10–5; Student’s t-test). (E) Quantification of the average normalized integral, defined as the area under the curve from the end of stimulation until the membrane potential first crosses the baseline, divided by the peak amplitude. oKir4.1cKO oligodendrocytes had significantly greater normalized integral than control oligodendrocytes (p=0.012; Student’s t-test). (F) EGFP+ astrocytes in the alveus were targeted for whole cell recording in control;Slc1a2-EGFP and oKir4.1cKO;Slc1a2-EGFP mice. Same protocol as in (A). (G) Membrane potential changes of astrocytes recorded in current clamp mode during and after 100 Hz stimulation. Shown are averaged responses of cells from control mice (black, n = 6) and oKir4.1cKO mice (green, n = 8). Dashed line represents baseline RMP. (H) Average responses of control and oKir4.1cKO astrocytes shown in (G), on an expanded time scale. Response amplitudes were scaled to the same value at the end of stimulation, to facilitate comparison of response kinetics. Stimulation artifacts have been eliminated for clarity. (I) Quantification of the average decay time. oKir4.1cKO astrocytes (n = 8) had significantly longer decay times than control astrocytes (n = 6, p=5.0 × 10–4). (J) Quantification of the normalized integral. oKir4.1cKO astrocytes had significantly greater normalized integral than control astrocytes (p=2.7 × 10–4; Student’s t-test).
 
 In accordance with previous studies (Battefeld et al., 2016; Yamazaki et al., 2007; 2014), oligodendrocytes were progressively depolarized during the stimulus train due to K+ release from active axons and gradually returned to baseline after cessation of the stimulus (Figure 6B–C; Figure 6—figure supplement 1B–C) following the gradual decline in extracellular K+ levels (Battefeld et al., 2016). Oligodendrocyte depolarization occurred more slowly in oKir4.1cKO mice, and the decay of membrane potential following cessation of stimulation was markedly prolonged relative to controls (Figure 6B–D; Figure 6—figure supplement 1B–D) (corpus callosum: 11.6 ± 1.6 s (n = 15) vs. 5.9 ± 0.7 s (n = 15), p=0.0036; alveus: 9.3 ± 0.6 s (n = 16) vs. 6.3 ± 0.4 s (n = 14), p=0.0017), which was also reflected in the area under the curve (Figure 6E; Figure 6—figure supplement 1E). Thus, while oligodendrocytes lacking Kir4.1 still depolarize in response to axonal activity, presumably due to the presence of other pathways for K+ redistribution (Rash et al., 2016), their recovery from the stimulus train was slower, suggesting that extracellular K+ clearance is slowed.
 
 To provide an independent assessment of extracellular K+ dynamics, we recorded the response of astrocytes in the corpus callosum and alveus of oKir4.1cKO mice (crossed to Slc1a2-EGFP mice to allow astrocyte visualization) (Figure 6F; Figure 6—figure supplement 1F). Astrocyte membrane potential follows the concentration of extracellular K+ closely, due to the high permeability of their membranes to K+ (Chever et al., 2010; Meeks and Mennerick, 2007; Orkand et al., 1966). Using the same stimulation paradigm, astrocytes were observed to depolarize with a similar time course to oligodendrocytes (Figure 6G–H; Figure 6—figure supplement 1G–H). However, despite the presence of normal Kir4.1 expression by astrocytes, a significant slowing of their decay following the end of the stimulus was observed in oKir4.1cKO mice, comparable to that observed in oligodendrocytes (Figure 6G–J; Figure 6—figure supplement 1G–J). These findings suggest that oligodendrocyte Kir4.1 channels contribute substantially to the removal of axonally released K+ in white matter.
 
-## Deletion of Kir4.1 from oligodendrocytes affects conduction of action potentials through white matter
+### Deletion of Kir4.1 from oligodendrocytes affects conduction of action potentials through white matter
 
 To assess the functional impact of oligodendrocyte-specific Kir4.1 deletion on axonal activity in white matter, CAPs were recorded from isolated optic nerves from 10-week-old animals using suction electrodes (Stys et al., 1991) (Figure 7A). Consistent with the behavior of axons in the corpus callosum (Figure 4D), Kir4.1 deletion from oligodendrocytes did not affect the mode (i.e. peak of the CAP) or median baseline conduction velocity of the nerves (n = 5 nerves from three mice for each genotype) (Figure 7B–C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic diagram of optic nerve recording set-up. Nerve is inserted into suction electrodes, stimulated at the retinal end, and recorded at the chiasmatic end. A reference electrode is placed next to the recording electrode, and the signals are subtracted to reduce the stimulus artifact. (B) Quantification of the peak (mode) conduction velocities of optic nerve axons from control (n = 5 nerves) and oKir4.1cKO (n = 5 nerves) mice. No significant difference was observed (p=0.51; Student’s t-test). (C) Quantification of the median conduction velocities of optic nerve axons from control (n = 5 nerves) and oKir4.1cKO (n = 5 nerves) mice. Median was calculated over 6 ms following stimulus artifact. No significant difference was observed (p=0.11; Student’s t-test). (D) CAPs recorded from a control (top) and oKir4.1cKO (bottom) optic nerve during 30 s of 100 Hz stimulation. The bold black trace is the first sweep, and the bold red trace is the last sweep. (E) CAPs recorded at 0.1 Hz from a control (top) and oKir4.1cKO (bottom) optic nerve during 5 min of recovery from stimulation. The bold black trace is the first sweep, and the bold red trace is the last sweep. Insets: higher resolution views of the CAP peaks during recovery, showing slower recovery of the oKir4.1cKO nerve. (F) Peak CAP amplitude, as a fraction of the baseline value, of control and oKir4.1cKO nerves during 100 Hz stimulation and recovery. oKir4.1cKO nerves recovered significantly more slowly than control nerves (Finteraction = 5.14, p=8.5 × 10–14; two-way ANOVA) (*=p < 0.05; simple effects post-test). (G) Peak CAP amplitude, as a fraction of the baseline value, of control and oKir4.1cKO nerves during 20 Hz stimulation and recovery. oKir4.1cKO nerves recovered significantly more slowly than control nerves (Finteraction = 1.82, p=0.027; two-way ANOVA) (*=p < 0.05; simple effects post-test). Plots of the normalized CAP integral and median conduction latency during stimulation and recovery are included in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) CAP integral, as a fraction of the baseline value, of control and oKir4.1cKO nerves during 100 Hz stimulation and recovery. Integral was calculated over a period of 6 ms following the stimulus artifact. The curves differed significantly, with the oKir4.1cKO nerve taking longer to recover (Finteraction = 4.35, p=3.7 × 10–11; two-way ANOVA). (B) Median CAP latency, as a fraction of the baseline value, of control and oKir4.1cKO nerves during 100 Hz stimulation and recovery. Median latency was calculated over a period of 6 ms following the stimulus artifact. (Finteraction = 3.01, p=1.3 × 10–6; two-way ANOVA). (C) CAP integral during 20 Hz stimulation and recovery (Finteraction = 4.05, p=1.6 × 10–7; two-way ANOVA). (D) Medial CAP latency during 20 Hz stimulation and recovery (Finteraction = 11.69, p=1.2 × 10–23; two-way ANOVA). (*=p < 0.05, simple effects post-test).
+
 It is established that high-frequency stimulation of the optic nerve results in an increase in extracellular K+ levels and a decay of the CAP waveform (Bay and Butt, 2012; Ransom et al., 2000). In young Kir4.1 KO optic nerves, there is a slower restoration of the extracellular K+ concentration after stimulation (Bay and Butt, 2012), suggesting that Kir4.1 plays an important role in K+ clearance in this tissue. To assess the contribution of oligodendrocyte Kir4.1 to K+ clearance, optic nerves from control and oKir4.1cKO mice were stimulated at high frequency (100 Hz), which caused the CAP waveform to progressively broaden and decrease in amplitude (Figure 7D). After cessation of stimulation, the CAP waveform gradually returned to its previous form (Figure 7E). Although oKir4.1cKO nerves exhibited a similar reduction in peak amplitude during stimulation, the CAP waveform in these nerves took significantly longer to recover after stimulation ended (Figure 7E–F). The CAP integral, representing total activity in the nerve, and the median axon conduction latency also recovered more slowly in oKir4.1cKO mice (Figure 7—figure supplement 1). When the same experiments were repeated using lower frequency stimulation (20 Hz), the recovery of oKir4.1cKO CAPs was also delayed (Figure 7G, Figure 7—figure supplement 1). These findings suggest that oligodendrocyte-specific Kir4.1 deletion alters action potential conduction in both physiological and pathophysiological activity regimes.
 
-## Deletion of Kir4.1 from oligodendrocytes results in activity-dependent motor deficits
+### Deletion of Kir4.1 from oligodendrocytes results in activity-dependent motor deficits
 
 To determine whether removal of Kir4.1 selectively from oligodendrocytes influences normal behavior, we examined the motor function of oKir4.1cKO mice. When placed in an open field chamber, there was no difference in total locomotion or in rearing behavior of oKir4.1cKO mice (Figure 8A). However, when challenged by placement on an accelerating rotarod, oKir4.1cKO mice had significantly shorter latency to fall (Figure 8B). Moreover, when given free access to a running wheel over multiple days, control mice increased their running activity over time, eventually running 10–15 km per 24 hr period (Figure 8C), while oKir4.1cKO mice were unable to achieve the same performance level, and typically did not exceed 5 km per 24 hr. As a result, the cumulative distance run over 7 days was significantly less, as was the average speed during active running periods (Figure 8D–E). These results suggest that, under physiologically relevant behavioral conditions, oligodendrocyte Kir4.1 channels play a vital role in facilitating neuronal activity.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/34829/elife-34829-fig8-v2.jpg)
 
-**Figure 8.:** ir4.1 from oligodendrocytes results in activity-dependent motor deficits.(A) Quantification of total beam breaks and rears per minute during 30 min in an open field chamber. No significant difference was observed between control (n = 13) and oKir4.1cKO (n = 11) mice in total activity (p=0.71; Student’s t-test) or rearing (p=0.56; Student’s t-test). (B) Latency to fall on the accelerating rotarod. Initial speed was 5 rpm, with acceleration of 1 rpm every 5 s. There was a significant relationship between genotype and performance which was independent of trial day (F = 20.38, genotypep=2.7 × 10–5; F = 0.007, interactionp=0.99; two-way ANOVA) (*=p < 0.05, **=p < 0.01; simple effects post-test). (C) Distance run on a freely available running wheel per 24 hr period over 7 days of exposure. There was a significant interaction between genotype and trial day (F = 3.09, interactionp=0.008, two-way ANOVA). oKi4.1cKO mice (n = 8) had significantly less daily distance than control mice (n = 10) on days 5–7 (**=p < 0.01, ***=p < 0.001; simple effects post-test). (D) Cumulative distance run on a freely-available running wheel over 7 days of exposure. oKir4.1cKO mice ran significantly less distance than control mice (p=0.0057; Student’s t-test). (E) Average running speed during intervals where running occurred. oKir4.1cKO mice had lower average speed than control mice (p=0.021; Student’s t-test).
+**Figure 8.:** (A) Quantification of total beam breaks and rears per minute during 30 min in an open field chamber. No significant difference was observed between control (n = 13) and oKir4.1cKO (n = 11) mice in total activity (p=0.71; Student’s t-test) or rearing (p=0.56; Student’s t-test). (B) Latency to fall on the accelerating rotarod. Initial speed was 5 rpm, with acceleration of 1 rpm every 5 s. There was a significant relationship between genotype and performance which was independent of trial day (Fgenotype = 20.38, p=2.7 × 10–5; Finteraction = 0.007, p=0.99; two-way ANOVA) (*=p < 0.05, **=p < 0.01; simple effects post-test). (C) Distance run on a freely available running wheel per 24 hr period over 7 days of exposure. There was a significant interaction between genotype and trial day (Finteraction = 3.09, p=0.008, two-way ANOVA). oKi4.1cKO mice (n = 8) had significantly less daily distance than control mice (n = 10) on days 5–7 (**=p < 0.01, ***=p < 0.001; simple effects post-test). (D) Cumulative distance run on a freely-available running wheel over 7 days of exposure. oKir4.1cKO mice ran significantly less distance than control mice (p=0.0057; Student’s t-test). (E) Average running speed during intervals where running occurred. oKir4.1cKO mice had lower average speed than control mice (p=0.021; Student’s t-test).
 
 ## Discussion
 
 Oligodendrocytes play a critical role in the mammalian CNS by forming myelin sheaths around axons that enable action potentials to be propagated rapidly with minimal energy expenditure. Although they were once assumed to be merely passive insulators, recent studies indicate that oligodendrocytes also provide metabolic support to axons in the form of lactate (Fünfschilling et al., 2012; Lee et al., 2012) and contribute to a larger glial network by coupling to astrocytes through gap junctions (Kamasawa et al., 2005; Mugnaini, 1986; Orthmann-Murphy et al., 2007; Rash et al., 1997; 2001). Removal of oligodendrocytes by exposure to the oligotoxin cuprizone, or through genetic ablation in animal models, enhances neuronal excitability (Hamada and Kole, 2015) that can lead to tremor and death (Traka et al., 2010). Moreover, oligodendrocyte loss contributes to neurological disability in diseases such as multiple sclerosis, highlighting the importance of defining the mechanisms that control their form and function. To determine the cell-autonomous role of the inwardly rectifying K+ channel Kir4.1, which has been linked to K+ clearance, neuronal hyperexcitability and myelin disruption, we selectively deleted this abundant channel from OPCs and mature oligodendrocytes in vivo. Despite high expression of this channel by oligodendroglia, genetic removal of Kir4.1 did not alter the developmental trajectory of OPCs or the ability of oligodendrocytes to form and maintain myelin. Nevertheless, mice in which Kir4.1 was selectively deleted from oligodendrocytes exhibited profound motor deficits that emerged with increasing activity, as well as spontaneous seizures that were often fatal. Recordings from both oligodendrocytes and astrocytes revealed that activity-induced K+ clearance in white matter was impaired in these mice, and axons recovered more slowly from repetitive stimulation. Together, these findings indicate that oligodendrocyte Kir4.1 channels are prominent contributors to K+ homeostasis in white matter, and that selective loss of this channel from oligodendrocytes is sufficient to reduce motor performance, enhance neuronal hyperactivity and induce seizures.
 
-## Myelin pathology in the absence of Kir4.1
+### Myelin pathology in the absence of Kir4.1
 
 Global removal of Kir4.1 leads to the formation of prominent vacuoles in myelin sheaths, failure of myelin compaction, and ultimately axonal degeneration (Djukic et al., 2007; Menichella et al., 2006; Neusch et al., 2001) (Figure 1E–F; Figure 1—figure supplement 1). Several explanations for this dramatic pathology have been proposed to link Kir4.1-deficient oligodendroglia to the abnormal formation and maintenance of myelin. Loss of this channel from OPCs may compromise their viability, impair their ability to generate oligodendrocytes or cause abnormalities in oligodendrocytes that are produced. This hypothesis is supported by the observation that OPCs (‘complex glia’) were rarely encountered in hippocampal recordings from glial-specific Kir4.1 knockout mice, in which Kir4.1 was deleted from both astrocytes and oligodendroglia (Djukic et al., 2007). However, our studies show that OPC and oligodendrocyte densities were normal in global CNS Kir4.1 knockout (nKir4.1cKO) mice (Figure 1I–K), despite the presence of widespread myelin vacuolization; the proliferation rate of OPCs also was not increased, as would be expected if these progenitors were mobilized to replace dying OPCs and oligodendrocytes. Moreover, when Kir4.1 was specifically deleted from OPCs during the period of rapid oligodendrogenesis (P21), the survival, proliferation, and differentiation of these progenitors was unaffected (Figure 3; Figure 3—figure supplements 2–3), indicating that removal of Kir4.1 specifically from OPCs does not contribute to this white matter pathology.
 
@@ -112,13 +186,13 @@ Oligodendrocytes in mixed glial cultures from Kcnj10−/− mice are significant
 
 Astrocytes in Kcnj10−/− mice are also severely depolarized, and their ability to remove extracellular K+ is impaired (Djukic et al., 2007), consistent with their high expression of this channel. These dramatic changes in membrane potential could decrease their ability to provide metabolic support to surrounding cells (Morrison et al., 2013; Rinholm et al., 2011; Sánchez-Abarca et al., 2001), reduce the production of factors that promote oligodendrocyte development and myelination (for review, see Kıray et al., 2016), and disrupt ion and water balance leading to vacuolization (Menichella et al., 2006; Rash, 2010). As oligodendrocytes form gap junctions with astrocytes, they may be particularly sensitive to these changes in astrocyte physiology. In support of this hypothesis, deletion of gap junction proteins that link astrocytes and oligodendrocytes produces myelin pathology comparable to what occurs in Kcnj10−/− mice (Magnotti et al., 2011; Menichella et al., 2003), and heterozygote analysis indicates that there is a close genetic interaction between these connexin genes and Kir4.1 in producing myelin vacuolization (Menichella et al., 2006). The presence of a glial syncytium may help to maintain normal oligodendrocyte membrane potentials when Kir4.1 is specifically deleted from these cells and may exacerbate oligodendrocyte depolarization when Kir4.1 is deleted globally, as astrocytes have the ability to maintain a highly stable membrane potential through extensive electric and ionic coupling between cells (Ma et al., 2016). Our results emphasize that both the structure and function of oligodendrocytes is critically dependent on astrocytes, and that reactive changes in astrocytes associated with reduced Kir4.1 expression (Hinterkeuser et al., 2000; Kaiser et al., 2006; MacFarlane and Sontheimer, 1997; Pivonkova et al., 2010; Tong et al., 2014) may in turn precipitate pathological changes in myelin.
 
-## Regulation of OPC behavior
+### Regulation of OPC behavior
 
 OPCs are unique among macroglia in that they continue to proliferate throughout life, engaging in a homeostatic response to replace cells lost through differentiation and death (Hughes et al., 2013; Robins et al., 2013). The mechanisms that guide this remarkable behavior are not well understood, but have important consequences for myelin repair, trauma-induced gliosis and brain cancer. Membrane potential fluctuates predictably during the cell cycle in many cell types (Blackiston et al., 2009; Sundelacruz et al., 2009), and previous studies indicate that K+ channels play an important role in regulating cell cycle progression in OPCs. Pharmacological inhibition of delayed rectifier K+ channels in cultured OPC-like O-2A cells and OPCs in cerebellar slice cultures inhibits their proliferation and differentiation by inducing G1 arrest (Gallo et al., 1996; Ghiani et al., 1999; Knutson et al., 1997). Subsequent studies showed that OPCs upregulate Kv1.3 during G1 phase of the cell cycle, and blockade of this channel prevents G1/S transition (Chittajallu et al., 2002; Tegla et al., 2011), while overexpression of certain Kv1 isoforms promotes their proliferation, suggesting that OPC homeostasis is critically regulated by their membrane potential and potassium conductance. Although the effect of Kir4.1 channels on OPC proliferation and lineage progression had not been evaluated, studies from developing astrocytes and glioma cells suggest that this channel is also involved in cell cycle regulation. Expression of Kir4.1 channels during astrocyte development correlates with a negative shift in RMP, cessation of cell proliferation, and increased differentiation (Bordey and Sontheimer, 1997; MacFarlane and Sontheimer, 2000), and astrocytes that become proliferative after injury have lower Kir current density than non-proliferating astrocytes near the injury site (MacFarlane and Sontheimer, 1997). In addition, heterologous expression of Kir4.1 in glioma cells induces hyperpolarization and G1 arrest, an effect nullified if cells are treated with BaCl2 to block Kir4.1 or artificially depolarized by high K+ (Higashimori and Sontheimer, 2007). Thus, it is remarkable that removal of Kir4.1 from OPCs in vivo, which led to a profound shift in their RMP and increase in their membrane resistance, had no discernable effect on their proliferation, density or their ability to differentiate into oligodendrocytes (Figure 3; Figure 3—figure supplements 2–3). It is possible that OPCs overcome the depolarization induced by Kir4.1 loss by transiently increasing K+ channel expression during certain phases of the cell cycle or by reducing the activity of other channels normally recruited through depolarization, such as voltage-gated calcium channels (Paez et al., 2007). These findings highlight both the extreme behavioral flexibility of OPCs in vivo and the powerful drive to sustain their numbers in the adult CNS. However, our studies also indicate that OPCs are profoundly influenced by their environment, as complete removal of Kir4.1 from the CNS profoundly reduced their proliferation by the third postnatal week (Figure 1K). This phenomenon occurred in the context of widespread depolarization and dysfunction of astrocytes (Djukic et al., 2007) and vacuolization of myelin, suggesting that astrocytes play a crucial role in maintaining a favorable environment for, and perhaps directly facilitating, OPC proliferation and development.
 
 Although OPC proliferation and differentiation is unchanged following Kir4.1 deletion, it remains to be seen whether other functions of OPCs are altered in these mice. OPCs receive synaptic input from neurons (Bergles et al., 2000), and the strength of these inputs is likely to be altered by changes in OPC membrane potential and membrane resistance. It has been shown that OPCs are able to regulate glutamatergic neurotransmission by shedding of cleaved NG2 ectodomains (Sakry et al., 2014), so even subtle alterations in OPC behavior have the potential to affect synaptic communication in the brain.
 
-## K+ uptake in white matter
+### K+ uptake in white matter
 
 Axonal Kv1 channels that control repolarization and limit re-excitation by distal nodes are abundant underneath the myelin sheath, particularly in juxtaparanodal regions that are isolated from nodes of Ranvier by septate/septate-like junctions (Einheber et al., 1997; Poliak et al., 2003; Rash et al., 2016; Wang et al., 1993). Although a single action potential can increase the local extracellular K+ concentration in unmyelinated tissue by as much as 1 mM from a resting level of 3–3.5 mM (Baylor and Nicholls, 1969; Frankenhaeuser and Hodgkin, 1956), and extracellular K+ levels can rise up to 10 mM during pathological conditions such as seizures (Moody et al., 1974), the potential for accumulation of K+ underneath myelin sheaths may be even greater due to the small peri-internodal volume and the barriers to diffusion presumed to be created by the paranodal septate junctions (Bellinger et al., 2008) (but see Hirano and Dembitzer, 1969; Hirano and Dembitzer, 1982; Rash et al., 2016). However, the mechanisms that enable clearance of extracellular K+ from these spaces have not been defined. Pharmacological studies of K+ buffering mechanisms suggest that Kir channels and the Na+/K+ ATPase pump have distinct roles in overall K+ clearance. Analysis of K+ dynamics arising from neuronal activity in gray matter suggest that the Na+/K+ ATPase predominates in lower activity regimes, but at higher frequencies and in situations of localized K+ release, Kir4.1 plays a more prominent role in limiting extracellular K+ accumulation (Chever et al., 2010; Larsen et al., 2014; Sibille et al., 2015).
 
@@ -126,7 +200,7 @@ Kir4.1 is concentrated within the fine processes of astrocytes that surround syn
 
 It is noteworthy that these changes in extracellular K+ homeostasis occurred without changes in oligodendrocyte membrane conductance recorded at the cell soma. As discussed above, somatic membrane conductance may be maintained by expression of other K+ channels, such as K2P or other Kir channels, which are present at baseline and may be upregulated in the setting of Kir4.1 knockout, or by the presence of gap junction-mediated connections with astrocytes. If the conductance is dominated by gap junctions (Orthmann-Murphy et al., 2008), it would explain the dissociation between membrane conductance and K+ buffering, as these intercellular channels do not allow direct flux of K+ to and from the extracellular space. It is also possible that Kir4.1 is the dominant K+ channel within the intermodal membrane and that these regions are electrically isolated from the soma. Loss of Kir4.1 could then slow K+ clearance from the peri-axonal space and impair the ability of myelinated axons to conduct action potentials. Kir4.1 immunoreactivity has been observed at oligodendrocyte cell bodies and proximal processes (Brasko et al., 2017; Kalsi et al., 2004; Poopalasundaram et al., 2000), but it has not yet been detected within paranodal loops or internode segments of myelin. Future studies using immunogold and freeze-fracture immunolabeling in white matter may help to better define the spatial relationship between oligodendrocyte Kir4.1 channels and axonal Kv channels. In these domains, Kir4.1 may be the primary conduit of K+ uptake or may work synergistically with other modes of K+ clearance that have been proposed, such as the direct movement of K+ from axons into myelin through paired Kv.1:connexin 29 channels (Rash et al., 2016). Although removal of Kir4.1 did not alter the resting membrane potential of oligodendrocytes, it is also possible that this manipulation indirectly altered other K+ clearance mechanisms, such as uptake by the Na+/K+ ATPase.
 
-## Oligodendrocyte regulation of neuronal activity
+### Oligodendrocyte regulation of neuronal activity
 
 Mice in which Kir4.1 was removed from oligodendrocytes exhibited rare, but often fatal seizures, and a dramatic reduction in PTZ-induced seizure threshold (Figure 5). There is extensive evidence that Kir4.1 is a key regulator of neuronal excitability, but the involvement of oligodendrocytes in this process has not been demonstrated. Several spontaneously arising rodent models of epilepsy were found to have altered Kir4.1 levels (Harada et al., 2013; Nagao et al., 2013), and a single-nucleotide polymorphism in the Kir4.1 gene (kcnj10) was found to be responsible for differences in seizure susceptibility between C57BL6 and DBA/2 mice (Ferraro et al., 2004; Inyushin et al., 2010). In addition, polymorphisms in KCNJ10 are risk factors for epilepsy in humans (Buono et al., 2004; Dai et al., 2015; Guo et al., 2015; Lenzen et al., 2005), and seizures are a prominent component of the human disorder SeSAME/EAST syndrome, which results from loss-of-function mutations in KCNJ10 (Bockenhauer et al., 2009; Scholl et al., 2009). It has been assumed that the seizures are primarily caused by astrocyte abnormalities and downstream sequelae. However, our findings indicate that even in the absence of any structural changes to myelin, deletion of Kir4.1 from oligodendrocytes alone is sufficient to dramatically lower seizure threshold and induce spontaneous seizures. These findings suggest that functional changes in oligodendrocytes, which would not be detected through analysis of myelination patterns, g-ratios or myelin protein expression, may contribute to epilepsy susceptibility or pathogenesis.
 
@@ -136,64 +210,459 @@ Oligodendrocyte Kir4.1 knockout mice also displayed significant impairments in m
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Kcnj10; Kir4.1</td>
+      <td>NA</td>
+      <td>OMIM: 602208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129-Kcnj10tm1Kdmc/J</td>
+      <td>K. McCarthy, UNC Chapel Hill.Djukic et al., 2007. PMID:17942730.</td>
+      <td>RRID:IMSR_JAX:026826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mog-iCre (knock-in)</td>
+      <td>A. Waisman, Johannes Gutenberg University.Buch et al. (2005). PMID:15908920</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Nes-cre)1Kln/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6N.Cg-Tg(Pdgfra-cre/ERT)467Dbe/J</td>
+      <td>Bergles Lab, Johns Hopkins University.Kang et al. (2010). PMID:21092857</td>
+      <td>RRID:IMSR_JAX:018280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>STOCK Gt(ROSA)26Sortm1.1(CAG-EGFP)Fsh/Mmjax</td>
+      <td>G. Fishell, NYU.Sousa et al., 2009. PMID:19363146</td>
+      <td>RRID:MGI:4412377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.129 × 1-Gt(ROSA)26Sortm1(EYFP)Cos/J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:006148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>STOCK Tg(Mobp-EGFP) IN1Gsat/Mmucd</td>
+      <td>MMRRC</td>
+      <td>RRID:MMRRC_030483-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Slc1a2-EGFP (BAC-transgenic)</td>
+      <td>J. Rothstein, Johns Hopkins University.Regan et al. (2007). PMID:17581948</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASPA (rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat# GTX113389; RRID:AB_2036283</td>
+      <td>(1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BrdU (rat monoclonal)</td>
+      <td>BioRad</td>
+      <td>Cat# OBT0030G; RRID:AB_609567</td>
+      <td>(1:500); Clone BU1/75</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-APC (CC1) (mouse monoclonal)</td>
+      <td>EMD Millipore (Calbiochem)</td>
+      <td>Cat# OP80; RRID:AB_2057371</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (rabbit polyclonal)</td>
+      <td>Dako</td>
+      <td>Cat# Z0334; RRID:AB_10013382</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# GFP-1020; RRID:AB_10000240</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (goat polyclonal)</td>
+      <td>SICGEN</td>
+      <td>Cat# AB0020-200; RRID:AB_2333099</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab15580; RRID:AB_443209</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kir4.1 (rabbit polyclonal)</td>
+      <td>Alomone Labs</td>
+      <td>Cat# APC-035; RRID:AB_2040120</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Cat# MBP; RRID:AB_2313550</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 808401; RRID:AB_2564741</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NG2 (guinea pig polyclonal)</td>
+      <td>Bergles Lab, Johns Hopkins University. Kang et al., 2013. PMID:23542689</td>
+      <td>NA</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRα (rabbit polyclonal)</td>
+      <td>W. Stallcup, Burnham Institute. Nishiyama et al., 1996.PMID:8714520</td>
+      <td>NA</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRα (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3174S; RRID:AB_2162345</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Neurofilament-H (SMI32) (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 801702; RRID:AB_2715852</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-chicken Alexa 488</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 703-546-155; RRID:AB_2340376</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Alexa 488</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 705-546-147; RRID:AB_2340430</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa 488</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 711-546-152; RRID:AB_2340619</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-chicken Cy3</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 703-165-155; RRID:AB_2340363</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-guinea pig Cy3</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 706-166-148; RRID:AB_2340461</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse Cy3</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 715-166-151; RRID:AB_2340817</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Cy3</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 711-166-152; RRID:AB_2313568</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-chicken Alexa 647</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 703-605-155; RRID:AB_2340376</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse DyLight 650</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# SA5-10169; RRID:AB_2556749</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit DyLight 650</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# SA5-10041; RRID:AB_2556621</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rat Cy5</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat# 712-175-153; RRID:AB_2340672</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cnp primers: TTTACCCGCAAAAGCCACACA (f); CACCGTGTCCTCATCTTGAAG (r)</td>
+      <td>MGH PrimerBank</td>
+      <td>PrimerBank ID:6753476a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mobp primers: AGTACAGCATCTGCAAGAGCG (f); TCCTCAATCTAGTCTTCTGGCA (r)</td>
+      <td>MGH PrimerBank</td>
+      <td>PrimerBank ID:678910a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gfap primers: CGGAGACGCATCACCTCTG (f); TGGAGGAGTCATTCGAGACAA (r)</td>
+      <td>MGH PrimerBank</td>
+      <td>PrimerBank ID:6678910a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kcnj10 primers: GTCGGTCGCTAAGGTCTATTACA (f); GGCCGTCTTTCGTGAGGAC (r)</td>
+      <td>MGH PrimerBank</td>
+      <td>PrimerBank ID:34328498a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh primers: AAGATGGTGATGGGCTTCCCG (f); TGGCAAAGTGGAGATTGTTGCC (r)</td>
+      <td>Rhinn et al. (2008). PMID: 18611280</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Neural Tissue Dissociation Kit (P)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-092-628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FastLane Cell cDNA Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 215011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect SYBR Green PCR Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 204143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(Z)−4-Hydroxytamoxifen (4-HT)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H7904; CAS:68392-35-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Bromo-2′-deoxyuridine (BrdU)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B5002; CAS:59-14-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentylenetetrazol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P6500; CAS:54-95-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Abcam</td>
+      <td>Cat# Ab120055; CAS:18660-81-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>http://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 8.0</td>
+      <td>OriginLab Corp.</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp10, pClamp9.2</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python programming language</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StepOne software</td>
+      <td>Applied Biosystems</td>
+      <td>RRID:SCR_014281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Blue</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 All animal experiments were carried out in a strict compliance with protocols approved by the Animal Care and Use Committee at the Johns Hopkins University School of Medicine.
 
-## Transgenic mice
+### Transgenic mice
 
 The following transgenic mouse lines were used in this study: Nes-Cre mice (Tronche et al., 1999) were crossed with Kcnj10fl/fl mice (Djukic et al., 2007) to generate a CNS-specific knockout mouse (termed nKir4.1cKO), in which Kir4.1 is deleted from the entire central nervous system. Pdgfra-CreER mice (Kang et al., 2010) were crossed with Kcnj10fl/fl mice to generate an inducible oligodendrocyte progenitor cell-specific knockout mouse (termed pKir4.1cKO), in which Kir4.1 is deleted from oligodendrocyte progenitors upon exposure to 4-hydroxytamoxifen (4-HT). Mog-iCre mice (Buch et al., 2005) were crossed with Kcnj10fl/fl mice to generate an oligodendrocyte-specific knockout mouse (termed oKir4.1cKO), in which Kir4.1 is deleted from mature oligodendrocytes. In some experiments, these knockout lines were crossed to fluorescent reporter mouse lines, Rosa-CAG-EGFP (RCE) (Sousa et al., 2009) and R26R-EYFP mice (Srinivas et al., 2001), to allow expression of EGFP or EYFP, respectively, in cells that express Cre. For some experiments, knockout mice were crossed to constitutive fluorescent reporter mice, Mobp-EGFP mice (Gong et al., 2003), in which EGFP is expressed in mature oligodendrocytes, and Slc1a2-EGFP mice (Regan et al., 2007), in which EGFP is expressed in astrocytes.
 
-## Cre activity induction and cell proliferation analysis
+### Cre activity induction and cell proliferation analysis
 
 4-hydroxytamoxifen (4-HT, Sigma-Aldrich, St. Louis, MO) was dissolved in sunflower seed oil (Sigma) and administered to Pdgfra-CreER;Rosa-CAG-EGFP (RCE) and Pdgfra-CreER;R26R-EYFP mice (with or without Kcnj10fl/fl) at P21 by two intraperitoneal (i.p.) injections of 1 mg, ≥8 hr apart. Mice were given BrdU (Sigma) in their drinking water (1 mg/mL, plus 1% sucrose to increase palatability), in addition to i.p. BrdU injections (50 mg/kg of body weight, dissolved in 0.9% saline) twice daily ≥8 hr apart for 7 days (P28-P34). Ki67 immunolabeling rather than BrdU incorporation was used for proliferation analysis nKir4.1cKO mice to avoid additional manipulation due to their fragile state.
 
-## Acute brain slice preparation
+### Acute brain slice preparation
 
 P21, P35, or P35-P42 mice were deeply anesthetized with isoflurane and decapitated; brains were dissected into an ice-cold N-methyl-D-glucamine (NMDG)-based solution containing the following (in mM): 135 NMDG, 1 KCl, 1.2 KH2PO4, 1.5 MgCl2, 0.5 CaCl2, 20 choline bicarbonate, and 13 glucose (pH 7.4, 310 mOsm). Coronal forebrain slices (250 μm thick for whole cell recordings; 450 μm thick for extracellular CAP recordings) were prepared in ice-cold NMDG-based cutting solution using a vibratome (Leica VT1000S, Leica Microsystems, Wetzlar, Germany) equipped with a sapphire blade. After sectioning, slices were transferred to artificial cerebral spinal fluid (ACSF) containing the following (in mM): 119 NaCl, 2.5 KCl, 2.5 CaCl2, 1.3 MgCl2, 1 NaH2PO4, 26.2 NaHCO3, and 11 glucose (292 mOsm), maintained at 37°C for 20 min and at room temperature thereafter. Solutions were bubbled continuously with 95% O2/5% CO2.
 
-## Acute slice electrophysiology and analysis
+### Acute slice electrophysiology and analysis
 
 EGFP+ OPCs, oligodendrocytes, and astrocytes were visualized with an upright microscope (Zeiss Axioskop 2 FS plus) equipped with differential interference contrast (DIC) optics and a filter set for GFP (Brightline, GFP-A-Basic-ZHE; Semrock, Rochester, NY). Cells were visualized using a 40x water-immersion objective (Zeiss Achroplan 40x; Carl Zeiss, Oberkochen, Germany) using DIC and GFP fluorescence signals as a guide. For whole cell recordings, the electrode solution consisted of the following (in mM): 120 CH3SO3H (methansulfonic acid, MeS), 10 K-EGTA, 20 HEPES, 1 MgCl2, 2 Na2-ATP, and 0.2 Na-GTP (pH 7.3, 290 mOsm). For extracellular recordings, the electrode was filled with ACSF. Pipette resistance was 3.0–4.5 MΩ for whole cell recordings and 1.5–2.5 MΩ for extracellular recordings. Recordings were made without series resistance compensation. Unless otherwise noted, the holding potential was –80 mV. Whole cell recordings were performed at room temperature, and extracellular CAP recordings were performed at 37°C (in-line heater TC-324B, Warner Instruments, Hamden, CT). Resting membrane potential was measured in current clamp mode within 30 s of establishing the whole cell recording, and membrane resistance were calculated from a 10 mV depolarizing step in voltage clamp mode. To identify OPCs and exclude differentiated cells in Pdgfra-CreER;RCE mice, a 70 mV depolarizing step was applied to detect the presence of a Nav current (De Biase et al., 2010). The following agents were applied by addition to the superfusing ACSF: BaCl2 (100 μM, Sigma); tetrodotoxin (TTX, 1 μM; Abcam, Cambridge, UK). Drugs were allowed to wash in for ≥10 min before additional recordings were made. The corpus callosum and alveus were stimulated using a bipolar stainless steel electrode (Frederick Haer Co., Bowdoin, ME; tip separation, 150 mm) connected to a constant current isolated stimulator unit (Digitimer, Ltd, Welwyn Garden City, UK) controlled by a Master-8 pulse stimulator (A.M.P.I., Jerusalem, Israel) and pClamp10 software (Molecular Devices, Sunnyvale, CA). For whole cell recordings, stimuli were 200 μA and 50 μs in duration; for extracellular recordings, stimuli varied from 100 to 300 μA. During extracellular corpus callosum CAP recordings, 1 μM TTX was applied at the end of each recording, and the resulting trace was subtracted from the CAP trace to reduce the stimulus artifact and increase clarity of the CAP.
 
 Responses were recorded using an Axopatch 200B amplifier (Axon Instruments, Union City, CA), filtered at 1 kHz, digitized at 50 kHz (for episodic recordings) or 5 kHz (for gap-free recordings) using a Digidata 1322A digitizer (Axon Instruments), and recorded to disk using pClamp10 software (Molecular Devices). Data were analyzed offline using Clampfit (Molecular Devices) and Origin (OriginLab, Northampton, MA) software. For whole cell recordings, each recorded cell was considered a biological replicate. For extracellular CAP recordings, each brain slice was considered a biological replicate.
 
-## Tissue fixation and immunohistochemistry
+### Tissue fixation and immunohistochemistry
 
 P24, P35, or P70 mice were deeply anesthetized with pentobarbital and transcardially perfused with 4% paraformaldehyde (PFA) in 0.1 M sodium phosphate buffer (pH 7.4). Brains, spinal cords, and optic nerves were isolated and post-fixed in 4% PFA for 15–20 hr at 4°C. Tissue was cryoprotected in a solution containing 30% sucrose and 0.1% sodium azide in phosphate-buffered saline (PBS). After ≥3 days of cryoprotection, brains were embedded in OCT compound (Sakura Finetek USA, Torrance, CA), frozen at −20°C, and sectioned using a cryostat (HM 550; Microm International GmbH, Walldorf, Germany). 35–40 μm thick brain and spinal cord sections were stored free-floating in PBS with 0.1% sodium azide. 14 μm thick optic nerve sections were slide-mounted and stored at −20°C until further processing.
 
 Sections were permeabilized with 0.3% Triton X-100 in PBS for 10 min at room temperature, then transferred to 0.3% Triton X-100% and 5% normal donkey serum in PBS (blocking buffer) for 1 hr at room temperature. Sections were then incubated in primary antibody diluted in blocking buffer for 16–24 hr at 4°C. See Key Resources Table for a full list of antibodies used. For ASPA immunostaining, tissue sections were incubated in LAB solution (Polysciences, Warminster, PA) for 10 min before the blocking step. For BrdU immunostaining, sections were incubated in 2 N HCl at 37°C for 30 min, followed by neutralization with 0.1 M sodium borate buffer (pH 8.5) before the blocking step. After primary antibody incubation, sections were washed in PBS and incubated for 2–3 hr at room temperature in Alexa Fluor 488-, Cy3-, Alexa Fluor 647- or DyLight 650-conjugated secondary antibodies. Sections were slide-mounted in Aqua-Poly/Mount (Polysciences).
 
-## Image acquisition and analysis
+### Image acquisition and analysis
 
 Images were acquired using an epifluorescence microscope (Zeiss Axio-imager M1) or a LSM 510 Meta confocal microscope (Zeiss). Confocal images represent maximum intensity projections of z-stacks, with step sizes of 0.5–3 μm. Whole brain section images were acquired as tiled arrays using an epifluorescence microscope equipped with a computer-controlled stage (Cell Observer; Zeiss or BZ-X710; Keyence, Japan), and were aligned using the microscope software (Zen software; Zeiss or BZ-X software; Keyence). Images were processed with ImageJ.
 
 For Ki67+ OPC counting and GFP+ oligodendrocyte counting, two forebrain sections were analyzed for each mouse, and the results averaged. For OPC BrdU and fate tracing studies, two independent areas (one from each hemisphere) were analyzed from two brain sections for each mouse, for a total of four areas, and results were averaged. All cell countings were performed by an experimenter blinded to the animal’s genotype.
 
-## Fluorescence-activated cell sorting and RT-qPCR
+### Fluorescence-activated cell sorting and RT-qPCR
 
 P70 mice were deeply anesthetized with pentobarbital and transcardially perfused with ice-cold Hank's Balanced Salt Solution without Ca2+ or Mg2+ (HBSS; Gibco Laboratories, Gaithersburg, MD). Brains were isolated and single-cell suspensions were generated using the Neural Tissue Dissociation Kit (Miltenyi Biotec, Bergisch Gladbach, Germany), following the manufacturer’s instructions. Myelin debris was removed using a Percoll gradient, and cells were resuspended in neurobasal media (Gibco) with 1% BSA for sorting. EGFP+ cells were isolated using the MoFlo MLS high-speed cell sorter (Beckman Coulter, Brea, CA) at the Johns Hopkins School of Public Health FACS core. RNA stabilization, genomic DNA elimination, and reverse transcription were performed using the FastLane Cell cDNA Kit (Qiagen, Hilden, Germany), following the manufacturer’s instructions. Real time qPCR was performed using the QuantiTect SYBR Green PCR Kit (Qiagen), following the manufacturer’s instructions, and using a StepOnePlus Real-Time PCR System (Applied Biosystems, Foster City, CA). Primers for the following genes were identified from the MGH PrimerBank (Spandidos et al., 2008; 2010; Wang and Seed, 2003; Wang et al., 2012): Cnp (ID: 6753476a1), Mobp (ID: 6678910a1), Gfap (ID: 196115326 c1), and Kcnj10 (ID: 34328498a1). The following primers for Gapdh were also used (Rhinn et al., 2008): AAGATGGTGATGGGCTTCCCG (forward), TGGCAAAGTGGAGATTGTTGCC (reverse). Each reaction was performed in quintuplicate, the highest and lowest values were excluded from analysis, and the remaining three technical replicates were averaged for each animal. Data were analyzed using ExpressionSuite v1.1 software (Applied Biosystems).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 P70-P100 mice were deeply anesthetized with pentobarbital and transcardially perfused with 10 mL 0.15 M Sorensen’s Phosphate Buffer (SPB) containing heparin (10 IU/mL, Sigma), then with 60 mL 2.5% glutaraldehyde (Polysciences) in 0.15 M SPB (pH 7.4, 37°C then 4°C). Brains were isolated and post-fixed in 2.5% glutaraldehyde for 2–3 hr at 4°C, then transferred to 0.1% PFA in 0.15 M SPB until further processing.
 
 Fixed tissue was dissected at 4°C, and cut into 100 μm-thick slices using a refrigerated Lancer 1000 Vibratome (Technical Products International, St. Louis, MO). Corpus callosum was further dissected and post-fixed with 1% OsO4 in SPB, rinsed in dH2O, and stained en bloc for 16 hr with 0.5% aqueous unbuffered uranyl acetate (UAc, pH 4.5). Samples stained with aqueous UAc were dehydrated in graded ethanol series. Dehydrated samples were rinsed in 100% acetone, embedded in plastic resin (10% Epon 812, 20% Araldite 502, 70% dodecenyl acetic anhydride) with 1.25–1.5% DMP-30 (dimethyl amino phenol) added as catalyst, and polymerized at 70°C for 24 hr (Rash et al., 1969). Silver and pale gold sections (60–100 nm thick) were cut using a Reichert Ultracut E ultramicrotome (Leica), picked up on 200 mesh copper grids, post stained with UAc and lead citrate (Venable and Coggeshall, 1965), air dried, and examined by transmission electron microscopy. Thin sections were examined in a JEM1400 TEM (JEOL, Tokyo, Japan), operated at 100 kV. Digital images were obtained using an 11 MB Orius SC1000 camera (Gatan, Pleasanton, CA). All images were processed using Adobe Photoshop CS5 (Adobe Systems, San Jose, CA), with ‘levels’ used for contrast expansion and ‘brightness/contrast’ used to optimize image contrast.
 
-## g-ratio analysis
+### g-ratio analysis
 
 TEM images from corpus callosum containing large numbers of myelinated axons in cross-section were selected for g-ratio analysis. g-ratio analysis was performed using ImageJ software. A threshold was applied to binarize the images and custom software (Larson, 2018) (available at https://github.com/valerie-ann-larson/Larson-et-al-eLife-2018; copy archived at https://github.com/elifesciences-publications/Larson-et-al-eLife-2018) was used to identify axons and calculate their cross-sectional area, from which axon diameters were calculated using the formula for the area of a circle, A = πr2. An experimenter blinded to genotype then measured the myelin sheath thickness of each axon, and excluded any improperly detected or obliquely cut axons from analysis. At least three independent images and at least 100 axons were analyzed from each animal. To compare g-ratios between genotypes, average g-ratios and g-ratio vs. axon diameter slopes were calculated for each animal and were treated as single biological replicates.
 
-## Seizure threshold measurement
+### Seizure threshold measurement
 
 Six- to eight-month-old mice were injected intraperitoneally with pentylenetetrazol (PTZ, 40 mg/kg; Sigma), and placed in standard mouse cages without bedding for observation. Up to four mice were placed in each of four cages for simultaneous observation, and their behavior was recorded using a digital video camera (Canon VIXIA HF R400) for 30 min after injection. Seizure activity was scored by a blinded observer using a modified Racine scale with the following scoring levels (Mizoguchi et al., 2011; Schröder et al., 1993): Stage 0 = no response, Stage 1 = ear and facial twitching, Stage 2 = convulsive waves axially through the body, Stage 3 = myoclonic jerks and rearing, Stage 4 = turning over into the lateral position, Stage 5 = generalized tonic-clonic seizures with hind-limb extension, Stage 6 = death. For seizure latency calculation, only mice achieving a seizure score of ≥Stage 3 were included. Surviving mice were euthanized at the end of the experiment.
 
-## Optic nerve recordings and analysis
+### Optic nerve recordings and analysis
 
 P70-P75 mice were anaesthetized with isoflurane and sacrificed by cervical dislocation followed by removal of the heart. Optic nerves were then rapidly dissected and incubated at room temperature in oxygenated ACSF for ≥30 min. Nerves were then transferred to a recording chamber superfused with oxygenated ACSF at 37°C (in-line heater TC-324B, Warner Instruments). Using gentle suction, each end of the nerve was drawn into the tip of a flared pipette electrode. The stimulating electrode (containing the retinal end of the nerve) was connected to a constant current isolated stimulator unit (Winston Electronics Co., St. Louis, MO) driven by pClamp9 software (Molecular Devices). CAPs were elicited by a 1 mA, 50 μs current pulse. The recording electrode (containing the chiasmatic end of the nerve) was connected to one input channel of a Multiclamp 700A amplifier (Axon Instruments). A second electrode, placed near the recording electrode but not in contact with the nerve, was connected to the second channel of the amplifier, and the two signals were subtracted on-line by routing through a differential amplifier (Model 440, Brownlee Precision, Santa Clara, CA), significantly reducing the stimulus artifact. Signals were filtered at 1 kHz, digitized at 100 kHz using a Digidata 1322A digitizer (Axon Instruments), and recorded to disk using pClamp9 software (Molecular Devices). Data were analyzed offline using Clampfit (Molecular Devices), Origin (OriginLab), and custom software (Larson, 2018) (available at https://github.com/valerie-ann-larson/Larson-et-al-eLife-2018; copy archived at https://github.com/elifesciences-publications/Larson-et-al-eLife-2018). Data collected from each optic nerve was considered a biological replicate.
 
-## Behavioral analysis
+### Behavioral analysis
 
 Open field and rotarod tests were performed in the Behavior Core at the Johns Hopkins University School of Medicine. The experimenter was blinded to the genetic background of the animals during testing. Open-field test was performed using a photobeam activity system (San Diego Instruments, San Diego, CA). Mice were placed in the chamber for a single 30-min period, and movement and rearing were automatically recorded as beam breaks. The rotarod test was performed using a Rotamex-5 rotarod (Columbus Instruments, Columbus, OH). Starting speed was 5 rpm, with acceleration of 1 rpm every 5 s. On the first test day, mice were acclimated for 20 min at 5 rpm prior to the first trial. Five trials were performed per mouse on 3 consecutive days. In order to eliminate performance outliers in an unbiased fashion (e.g. single instances of failed starts that would disproportionately affect average time), the best and worst performances on each day were eliminated, and the remaining three trials were averaged for each mouse. Wheel running behavior was recorded using a low-profile wireless running wheel system (Med Associates, Inc., Fairfax, VT) in the home cage for 7 days. Wheel turns were wirelessly recorded in 30 s bins using Wheel Manager software (Med Associates). Data were analyzed post-hoc using custom software (Robert Cudmore, Johns Hopkins University) (Cudmore et al., 2017).
 
-## Statistics
+### Statistics
 
 Statistical analysis was performed using Origin (OriginLab, Northampton, MA) and Excel (Microsoft Corporation, Redmond, WA) software. Sample sizes were constrained by availability of cohorts of age-matched transgenic mice and were not determined in advance. Data are expressed as mean ± SEM throughout, except for qPCR RQ data, which are expressed as a mean and 95% confidence interval, and Kaplan-Meier survival curves, in which the dashed lines represent the 95% confidence interval. For maximal seizure score comparison, the non-parametric Mann Whitney test was used, as data were not normally distributed. To compare Kaplan-Meier survival curves, the log-rank test was used. For multiple comparisons, one-way or two-way ANOVA with Bonferroni’s post-test was performed. For optic nerve CAP recordings, rotarod performance, and running wheel performance, two-way ANOVA was performed with simple effects post-test at each time point. All other comparisons were performed using the unpaired student’s t-test, with results considered significant at p<0.05.

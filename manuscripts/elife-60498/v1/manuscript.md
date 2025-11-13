@@ -50,9 +50,21 @@ Here, we employ the U-DNA sensor in a DNA-IP-seq-like (DIP-seq-like) approach (t
 
 ## Results
 
-## Genome-wide mapping of uracil-DNA distribution patterns by U-DNA-Seq
+### Genome-wide mapping of uracil-DNA distribution patterns by U-DNA-Seq
 
 We designed an adequate DNA immunoprecipitation method that can provide U-DNA specific genomic information by NGS. This method, termed U-DNA-Seq is based on the rationale of the well-established DIP-seq technology. Figure 1A presents the scheme of the protocol leading to an enriched U-DNA sample that was then subjected to NGS. Immunoprecipitation was carried out by applying the FLAG-tagged catalytically inactive ΔUNG sensor (described in Róna et al., 2016) to bind to uracil in purified and fragmented genomic DNA, followed by a pull-down with anti-FLAG agarose beads. All samples addressed by the U-DNA-Seq in the present study are summarized in Supplementary file 1-table 1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic image of the novel U-DNA immunoprecipitation and sequencing method (U-DNA-Seq). After sonication, enrichment of the fragmented U-DNA was carried out by the 1xFLAG-ΔUNG sensor construct followed by pull-down with anti-FLAG agarose beads. U-DNA enrichment compared to input DNA was confirmed by dot blot assay before samples were subjected to NGS. (B) Immunoprecipitation led to elevated uracil levels in enriched U-DNA samples compared to input DNA in case of both 5FdUR (5FdUR_UGI) and RTX (RTX_UGI) treated, UGI-expressing HCT116 samples. For each treatment, the same amount of DNA was loaded as input and enriched U-DNA samples providing a correct visual comparison. Two-third serial dilutions were applied.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HCT116 cells stably expressing UGI along with EGFP following retroviral transduction. GFP positive cells were selected by fluorescence-activated cell sorting and cultured for further analysis. DAPI was used for DNA staining. Scale bar represents 20 µm. (B) Dot blot assay for measuring genomic uracil levels (Róna et al., 2016) of non-treated and drug (5FdUR or RTX) treated HCT116 cells either transiently or stably expressing UGI. Genomic DNA (8 ng) isolated from log-phase growing CJ236 [dut-, ung-] Escherichia coli strain was applied as uracil standard in a ½ dilution series (upper panel). Two-third dilution series from HCT116 samples started with 600 ng DNA for non-treated or 5 ng DNA for 5FdUR or RTX treated samples (lower panel). The dot blot image presented is a representative of six independent biological experiments. (C) Bar graph shows the uracil moieties/million bases of each sample. Drug treatment led to significantly elevated uracil levels in HCT116 cells either transiently or stably expressing UGI (~400 uracil moieties/million for 5FdUR and ~700 uracil moieties/million for RTX) as compared to non-treated (NT) cells (~2–5 uracil moieties/million). Error bars indicate standard errors of the mean (SEM). Calculations were based on six independent datasets (n = 6). p=0.002. Source data are available in Figure 1—figure supplement 1—source data 1. (D) Bar graph shows the uracil moieties/million bases in MMR proficient HCT116 cells stably expressing UGI. Drug treatment resulted in even higher U-DNA content (~900 uracil moieties/million for 5FdUR and ~950 uracil moieties/million for RTX) as compared to MMR deficient cells. Error bars indicate standard errors of the mean (SEM). Calculations were based on six independent datasets (n = 6). p=0.005. Source data are available in Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Relative amount of the pulled down DNA as compared to the input DNA amount. Samples were the following: U-DNA-IP from UGI-expressing, non-treated (NT_UGI) and 5FdUR treated (5FdUR_UGI) samples, and the corresponding mock pulled down controls (NT_UGI_ctr and 5FdUR_UGI_ctr) where ΔUNG sensor free, empty anti-FLAG beads were used. (B) Pearson correlation among log2 ratio coverage tracks calculated from the genome scaled input coverage track and either the original (NT_UGI_no_ctr and 5FdUR_UGI_no_ctr) or the control-subtracted (NT_UGI_ctr_subtracted and 5FdUR_UGI_ctr_subtracted), enriched coverage tracks (Materials and methods, Supplementary file 1). (C) A representative IGV view on original (NT_UGI_no_ctr and 5FdUR_UGI_no_ctr) and the control-subtracted (NT_UGI_ctr_subtracted and 5FdUR_UGI_ctr_subtracted) log2 enrichment (on chr3: 26,000,000–62,000,000).
 
 To allow better detection of nascent uracil, the UNG-inhibitor UGI was expressed in both MMR deficient and proficient HCT116 cells to prevent the action of the major uracil-DNA glycosylase. Besides transient transfection, stable UGI-expressing HCT116 cell lines were also established by retroviral transduction of human codon optimized UGI along with EGFP (Figure 1—figure supplement 1A). We proceeded to treat the UGI-expressing cells with either 5FdUR or RTX. Notably, this combination of UGI expression and drug treatment did not result in any observable cell death. As shown in Figure 1—figure supplement 1B–D, UGI expression and drug (5FdUR or RTX) treatment led to significantly increased uracil content in genomic DNA that is even more pronounced in case of the MMR proficient cells. It is important to note that either UGI expression or treatments with drugs targeting de novo thymidylate biosynthesis pathways on their own do not lead to elevated U-DNA level (Luo et al., 2008; Róna et al., 2016; Yan et al., 2016). Following U-DNA immunoprecipitation, successful enrichment of U-DNA could be confirmed by dot blot assay in the case of drug-treated cells (5FdUR_UGI or RTX_UGI, Figure 1B). To further confirm the capability of U-DNA-IP, uracil-containing spike-in DNA was combined with non-treated genomic DNA samples (Materials and methods). In these samples U-DNA-IP led to 4.5 fold enrichment of the uracil-containing spike-in DNA compared to the uracil-free spike-in as determined by qPCR. Specificity of U-DNA immunoprecipitation is also underlined by the fact that pull-down with empty anti-FLAG beads not containing the U-DNA sensor (i.e. negative control) resulted in negligible amount of DNA (less than 5%, Figure 1—figure supplement 2A, see also Supplementary file 1-table 1). Still, genome-wide sequencing data could be obtained from these negative control samples as well. We demonstrated that subtracting such control signals (for details see Supplementary file 1) will not affect the detected uracil distribution pattern regardless if the sample was drug-treated or not (Figure 1—figure supplement 2B–C). These control experiments provided confidence about the applicability and specificity of our U-DNA-IP method.
 
@@ -60,13 +72,65 @@ Then, enriched and input DNA samples both from treated (5FdUR_UGI, 5FdUR_UGI_MMR
 
 Sequencing data were analyzed using the herein developed computational pipeline shown in Figure 2 (for more details see the Figure 2—figure supplement 1 and Supplementary file 1-table 2). When reads were aligned to the reference GRCh38 human genome, only uniquely mapped reads were kept and regions suffering from alignment artefacts were excluded from the analysis by blacklisting (Figure 2—figure supplement 2). Statistics on pre-processing steps are shown in Supplementary file 1-table 3. Correlation among the samples at the level of cleaned aligned reads (bam files) was checked by Pearson correlation analysis (Figure 2—figure supplement 3, for details see Supplementary file 1). Here, a clear difference was found between the input and the enriched samples; input samples were more similar to each other regardless the applied treatment, while the enriched drug-treated and non-treated samples showed dramatic differences.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig2-v1.jpg)
+
+**Figure 2.:** Both input and enriched U-DNA samples were pre-processed the same way: initial trimming and alignment were followed by filtering for uniquely mapped reads and blacklisting of regions suffering from alignment artefacts, resulting in cleaned read alignments in the format of bam files. The key steps of our proposed data processing are (1) calculation of genome scaled coverage tracks (bigwig/bw files), (2) calculation of log2 (enriched coverage/input coverage) ratio tracks (bigwig/bw files), (3) extraction of interval (bed) files of uracil enriched regions from the corresponding log2 ratio tracks. To correlate the uracil enrichment profiles with other published data, first quick screens using interval files were done, and then detailed correlation analysis with a promising candidate of colocalizing genomic features was performed using coverage track files. GIGGLE search (Layer et al., 2018) and bedtools annotate (Quinlan and Hall, 2010) were used for scoring the similarities between query uracil-DNA and the database interval files. Genome segmentation analysis was performed on fold change over input bigwig files either from the ENCODE database, or our own ChIP-seq data and U-DNA profiles using Segway package (Chan et al., 2018; Hoffman et al., 2012). Figures corresponding to the different analysis steps are also indicated. A more detailed pipeline is shown in Figure 2—figure supplement 1, and the full methodology is described in the Supplementary file 1, 3–5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Input DNA and enriched U-DNA mean genomic DNA fragmented by sonication and uracil-containing fragments pulled-down by FLAG-ΔUNG sensor, respectively. Pre-processing steps (light grey field) include quality check, data trimming, read alignment, sorting, deduplication, filtering out ambiguously mapped reads (mapping quality, MAPQ = 0) and blacklisting. The cell line specific blacklists are defined based on consensus DAC blacklist recommended by ENCODE Consortium (Amemiya et al., 2019), the ultra-high signal (UHS) and low mappability (more than 50% of the reads are with MAPQ = 0) regions. Pearson correlation among samples at the level of aligned reads in bam files is calculated using deepTools package (Ramírez et al., 2016). Data processing (darker grey field) can follow two main streams: (1) peak calling originally designed for ChIP-seq (using MACS2 [Feng et al., 2011; Zhang et al., 2008], resulting in peaks’ interval files in bed format); and (2) coverage track calculation and analysis (using deepTools, resulting in coverage track files in bigwig/bw format). Interval (bed) files are derived not only from peak calling but also from the log2 (enriched coverage/input coverage) ratio bigwig files (log2 enrichment). Ratio of enriched coverage/input coverage is also calculated from the genome scaled coverage tracks, that provides the same type of enrichment profiles as ‘fold change over control’ bigwig tracks used in the ENCODE (fold change over input). Additional calculations for sample characterization are indicated in purple boxes. In the third part (darkest grey field), uracil enrichment profiles were further analyzed by comparing to available data. First, a quick screen using interval (bed) files was performed, and then a detailed correlation analysis was carried out with the promising candidates using coverage track (bw) files. For the initial screen, we collected a set of HCT116 specific ChIP-seq and DNA-IP-seq data, as well as other genomic features in the format of interval (bed) files. GIGGLE search (Layer et al., 2018) and bedtools annotate (Quinlan and Hall, 2010) were used for scoring the similarities between the query uracil-DNA and the database intervals. Moreover, the ENCODE set of these HCT116 specific ChIP-seq data was selected together with our U-DNA fold change over input profiles to perform a genome segmentation analysis using the Segway software package (Chan et al., 2018).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Concept of blacklisting. United cell line specific blacklist was composed from (1) universal DAC blacklist (https://www.encodeproject.org/files/ENCFF419RSJ, grey), (2) Ultra High Signal (UHS, blue) regions derived from input samples, and (3) low mappability regions where more than 50% of the reads are ambiguously mapped (MAPQ = 0, red). (B) Representative IGV view of genomic region (chr2:32,863,802–32,872,901) where both UHS and low mappability regions are present. Tracks from the top are as follows: DAC blacklist (no intervals in the presented region); coverage track (bw file, blue), and the derived UHS regions (bed file, blue); log2 ratio (original/filtered) track (bw file, red), and the derived low mappability regions (bed file, red); intervals after combination of DAC, UHS, and low mappability regions (bed file, purple); and the same after merging intervals separated by less than 500 bases (bed file, the final blacklist, black). The bw files and the derived bed files are shown for one input sample, while the blacklists presented here are calculated from all the input data corresponding to HCT116 cell line. Raw alignments (bam files) of the corresponding enriched and input samples are also shown. Reads in white are characterized with MAPQ = 0. Alterations in reads comparing to the reference genome are indicated with different colors according to the IGV standard. In regions suffering from alignment artefacts, reads often appear with multiple alterations, as it is visible here for the UHS region. (C) Histogram of coverage signal of a representative input sample (the same as above). Both full data range and a zoomed version (inset) with better resolution are shown. In the zoomed histogram, the defined UHS threshold (blue) is also indicated. Source data are available in Figure 2—figure supplement 2—source data 1. (D) Histogram of log2 ratio (original/filtered) signal of a representative input sample (the same as above). Both full data range and a zoomed version (inset) with better resolution are shown. In the zoomed histogram, the defined low mappability threshold (red) is also indicated. Source data are available in Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Calculation was done on uniquely mapped reads after blacklisting and merging replicates, using deepTools multiBamSummary and plotCorrelation (Ramírez et al., 2016) as described in the Supplementary file 1. Heatmap was plotted using python seaborn/matplotlib (Hunter, 2007). The input and the corresponding enriched samples are as follows: non-treated wild type (WT), non-treated UGI-expressing (NT_UGI, NT_UGI_MMR), 5FdUR treated UGI-expressing (5FdUR_UGI, 5FdUR_UGI_MMR), RTX treated UGI-expressing (RTX_UGI, RTX_UGI_MMR) HCT116 cells which are MMR deficient (no distinction) or proficient (labeled with MMR), and non-treated wild type K562 cells (K562).
+
 There are two principal approaches to extract the signals of uracil enrichment from the cleaned aligned reads: (1) computing genome scaled coverage and log2 ratio tracks, and (2) peak calling that is conventionally used for ChIP-seq data analysis. Log2 ratio tracks provide more detailed information on the uracil-DNA distribution patterns, however, it is not compatible with efficient screening on large dataset (Figure 2 and Figure 2—figure supplement 1). Hence, we generated interval (bed) files from the log2 ratio tracks for each sample (Figure 3A) that contain simplified information on uracil enriched regions as described in the Supplementary file 1. Then, we evaluated both the regions derived from the log2 ratio tracks, and the peak calling results (Figure 3—figure supplement 1 and Figure 3—figure supplement 2). We found that the uracil enriched genomic regions are rather broad and much less intense than conventional peaks in ChIP-seq for transcription factors or even for histone modifications. This is somehow expected considering basically stochastic nature of uracil occurrence via both misincorporation and spontaneous cytosine deamination. In agreement with this, reliability and reproducibility of the peak calling approach (using MACS2 with ‘broad’ option) was found to be clearly suboptimal for determination of uracil distribution patterns (Figure 3—figure supplement 1 and Figure 3—figure supplement 2). Therefore, we decided to proceed with the coverage track approach rather than the peak calling. All of the main figures rely on analysis performed with either the log2 ratio tracks or the regions of uracil enrichment derived from the log2 ratio tracks.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative IGV view in genomic segment (chr2:64,500,000–89,500,001) shows log2 ratio signal tracks of enriched versus input coverage (log2, upper tracks) and derived regions of uracil enrichment (regions, bottom tracks) for non-treated: wild type (WT, red), UGI-expressing (NT_UGI, orange), and MMR proficient UGI-expressing (NT_UGI_MMR, yellow); and for treated: with 5FdUR (5FdUR_UGI, green; 5FdUR_UGI_MMR, light green) or raltitrexed (RTX_UGI, blue; RTX_UGI_MMR, cyan) HCT116 samples. Two replicates for each sample were merged before coverage calculation. Differences between treated and non-treated samples are clearly visible. Furthermore, 5FdUR and RTX treatments caused similar but not identical uracil enrichment profiles (differences are highlighted with yellow shade). The impact of the MMR status in case of the 5FdUR treated samples is highlighted with pink shade. (B) Comparison of log2 uracil enrichment profiles among samples was performed using multiBigwigSummary (deepTools) and Pearson correlation was plotted using plotCorrelation (deepTools). A heatmap combined with scatter plots is shown for the seven samples. Two replicates for each sample were merged before coverage calculation, and the same analysis for individual replicates are shown in Figure 3—figure supplement 3. (C) Histograms of log2 ratio profiles were calculated and plotted using R for the drug-treated samples. A sub-population of data bins with elevated log2 uracil enrichment signal is clearly visible (indicated with asterisk) in most cases, where high uracil incorporation was detected (Figure 1—figure supplement 1B–D). Thresholds applied in determination of uracil enriched regions are indicated with red line and also provided in Figure 3—source data 1 together with the histogram data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Upper panel shows IGV view of 112.667.000–112.684.000 genomic segment to demonstrate the processing steps. The tracks from the top are as follows: cleaned aligned reads (bam files) for a pair of input (black title) and enriched (cyan title) samples; genome scaled coverage tracks for the input (black), and for the enriched (cyan) samples computed by deepTools/bamCoverage; log2 ratio track (enriched coverage/input coverage, positive values are shown in cyan, negative values are in black, computed by deepTools/bigwigCompare); regions of uracil enrichment derived from log2 ratio (cyan); peaks called by MACS2 with 0.05 and also with the more permissive 0.5 broad-cutoff (grey). In the presented 16 kb genomic segment a 6 kb region of uracil enrichment is detected, while peak calling either fails or detects only a shorter peak depending on the applied broad-cutoff value. The following panels are zooming out on the same region allowing visualization of its broader context. This 6 kb region of uracil enrichment (red arrows) is a part of a 250 kb super-region that is surrounded by similar super-regions separated by negative log2 value segments. On a larger scale, even these super-regions are clustered (to a 10 Mb cluster here, bottom panel). It is also visible that using more permissive broad-cutoff in peak calling allows higher coverage of the uracil enriched regions, however detects false positive peaks as well.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The samples are as follows: non-treated wild type (WT), non-treated UGI-expressing (NT_UGI), 5FdUR treated UGI-expressing (5FdUR_UGI), RTX treated UGI-expressing (RTX_UGI) HCT116 cells, non-treated wild type K562 cells (K562). The merged data are derived from the merged bam files in the same way as in case of the individual replicates (rep1, rep2). (A) Statistics on the log2 ratio derived regions of uracil enrichment. The applied threshold values were fine-tuned to have approximately the same length of intervals in the corresponding replicates and merged data. Bedtools Jaccard indices were calculated between replicates, as well as between individual replicates and the corresponding merge data. GC contents were also calculated for each interval file of regions. (B) Statistics on peaks called by MACS2. Broad-cutoff values were adjusted to have approximately the same length of intervals in the corresponding replicates and merged data. Bedtools Jaccard indices were calculated between replicates, as well as between individual replicates and the corresponding merged data. GC contents were also calculated for each interval file of peaks. (C) Comparison of samples based on log2 ratio derived regions (merged data). Jaccard indices and numbers of millions of intersecting bases are indicated above and below the diagonal, respectively. Drug-treated and non-treated samples are well separated. (D) Comparison of samples based on peaks (merged data). Jaccard indices and numbers of millions of intersecting bases are indicated above and below the diagonal, respectively. Dreated and non-treated samples are not that well separated anymore.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The log2 ratio tracks were calculated from the genome scaled coverage tracks (enriched vs input) using deepTools bigwigCompare tool for the individual replicates. Pearson correlation was calculated by deepTools multiBigwigSummary and plotCorrelation (Ramírez et al., 2016) as described in the Supplementary file 1. The heatmap was plotted using python seaborn/matplotlib (Hunter, 2007). The samples are as follows: non-treated wild type (WT), non-treated UGI-expressing (NT_UGI, NT_UGI_MMR), 5FdUR treated UGI-expressing (5FdUR_UGI, 5FdUR_UGI_MMR), RTX treated UGI-expressing (RTX_UGI, RTX_UGI_MMR) HCT116 cells which are MMR deficient or proficient (labeled by MMR), and non-treated wild type K562 cells (K562). Replicates are indicated as rep1 and rep2.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Histograms of log2 ratio profiles were calculated and plotted using R for the non-treated samples: wild type (WT), UGI-expressing (NT_UGI) HCT116 cells and its MMR proficient variant (NT_UGI_MMR). Thresholds applied in determination of uracil enriched regions are indicated with red line and also provided in Figure 3—figure supplement 4—source data 1 together with the histogram data.
 
 Figure 3A shows the uracil distribution pattern in a selected chromosomal segment where an uneven distribution with variably spaced broad regions is observed (the same data for all the chromosomes are shown in Supplementary file 2). A clear difference between non-treated and drug-treated cells is already obvious from this view, and the correlations were also measured quantitatively on the whole log2 ratio tracks by Pearson correlation coefficients and related scatter plots (Figure 3B, for description of the samples see Supplementary file 1-table 1, for individual replicates see Figure 3—figure supplement 3). Interestingly, the impact of MMR proficiency on the uracil distribution pattern is obvious in case of the 5FdUR treatment, while RTX treated and especially the non-treated samples do not show notable differences compared to their MMR deficient counterparts.
 
 The uracil-enrichment coverage tracks in Figure 3A and the related correlations in Figure 3B already revealed altered distribution of uracil-containing regions in the drug-treated as compared to the non-treated samples. This difference was further underlined in a histogram representation of uracil enrichment signal (Figure 3C and Figure 3—figure supplement 4) where drug treatment led to a higher number of genomic segments (more data bins) with increased uracil level. MMR proficiency in case of the 5FdUR treatment substantially changed this phenomenon. We investigated whether the uracil distribution patterns might show correlation to any previously determined genomic features. For this reason, we built a relevant database by collecting cell type specific ChIP-seq and DNA accessibility data (for details see Supplementary file 3–4).
 
 Interrogation of the constructed specialized database with respect to the uracil-DNA distribution patterns was performed using interval (bed) files of uracil enriched regions (derived from log2 ratio track) for each U-DNA-Seq sample. To screen for similarity between sample and database interval (bed) files, we applied the GIGGLE search tool (for details see Supplementary file 3). GIGGLE scores measure the colocalization independently from the size of the compared intervals (Layer et al., 2018). Each interval file in the database corresponded to a ChIP-seq data with a given factor (e.g. histone markers, transcription factors, etc.). GIGGLE scores were then calculated pairwise (each sample to each database interval file), and plotted for the top ten factors corresponding to the highest scores (Figure 4A, full data are presented in Supplementary file 3-table 1). The similarity scores of the U-DNA-Seq data with regard to the different chromatin markers indicate that non-treated cells may possess uracils preferentially in the constitutive heterochromatin (high scores with H3K9me2 and H3K9me3 [Hyun et al., 2017; Saksouk et al., 2015]). On the other hand, drug treatment of the cells either with 5FdUR or RTX, induces uracil incorporation into more active genomic segments, which correlates with euchromatin histone marks (H3K36me3 [Becker et al., 2017; Hyun et al., 2017; Pfister et al., 2014], H3K4me1/3 [Hyun et al., 2017], H3K27ac [Creyghton et al., 2010], H3K9ac [Gates et al., 2017]), or factors associated to either activation or repression in a context dependent manner (SP1 [Doetzlhofer et al., 1999], H3K27me3 [Becker et al., 2017; Saksouk et al., 2015], H2AZ/AFZ [Giaimo et al., 2019]) (Figure 4A). Interestingly, MMR proficiency has an impact on this correlation in case of both drug-treated samples reflecting in decreased GIGGLE scores.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig4-v1.jpg)
+
+**Figure 4.:** (A) GIGGLE search was performed with interval (bed) files of uracil enriched regions on a set of HCT116 related ChIP-seq and DIP-seq experimental data (for details see Supplementary file 3). Factors corresponding to the top 10 hits for each sample were selected. GIGGLE scores between all seven samples and all experiments corresponding to these factors were plotted excluding those, where data were not informative (data are found in Supplementary file 3-table 1). Source data are available in Figure 4—source data 1. Histone marks and the transcription factors, SP1 and TCF7L2 are categorized depending on their occurrence in transcriptionally active or repressive regions. Notably, some of them have plastic behavior allowing either transcriptionally active or repressive function. U-DNA-Seq samples are as follows: non-treated wild type (WT, red), non-treated UGI-expressing (NT_UGI, orange), 5FdUR treated UGI-expressing (5FdUR_UGI, green) and RTX treated UGI-expressing (RTX_UGI, blue) HCT116 cells, and their MMR proficient counterparts (NT_UGI_MMR, yellow; 5FdUR_UGI_MMR, light green; RTX_UGI_MMR, light blue). GIGGLE scores are also indicated for our own H3K36me3 ChIP-seq experiments (RTX_UGI sample: empty squares, NT_UGI sample: empty triangles). The tendencies are even more pronounced if the RTX treated U-DNA-Seq is compared with the RTX treated ChIP-seq or if the non-treated U-DNA-Seq is compared with the non-treated ChIP-seq data. (B) Genome segmentation analysis was performed on signal tracks of 22 ChIP-seq data available for HCT116 cells in the ENCODE database, on our own ChIP-seq data for H3K36me3, and on the seven U-DNA enrichment profiles (bold). The Segway train was performed with 25 labels and the corresponding genomic segments were identified with Segway annotate (Chan et al., 2018). The signal distribution data were calculated using Segtools (Buske et al., 2011), and plotted using python seaborn/matplotlib modules (Hunter, 2007). Source data are available in Figure 4—source data 2. Details including the applied command lines are provided in Supplementary file 3. The color-code is applied for each factor (rows) independently, from the minimum to the maximum value as indicated. (C) Correlation with genomic features. Interval (bed) files of genomic features were obtained from UCSC, Ensembl, and ReplicationDomain databases (for details see Supplementary file 4-table 1), and correlation with interval files of uracil regions were analyzed using bedtools annotate software (details are provided in Supplementary file 4). Numbers of overlapping base pairs were summarized for each pair of interval files, and scores were calculated according the formula: (baseNo_overlap/baseNo_sample_file) * (baseNo_overlap/baseNo_feature_file) * 10000. Heatmap was created based on fold increase of the scores compared to the corresponding WT scores. Sizes of interval files in number of base pairs are also given in the second column and the second line. Upon drug treatments, a clear shift from non-coding/heterochromatic/late replicated segments towards more active/coding/euchromatic/early replicated segments can be seen. CDS, coding sequence; SINE, short interspersed element; LTR, long terminal repeat; LINE, long interspersed element; cytoBand, cytogenetic chromosome band negatively (gneg) or positively (gpos) stained by Giemsa; repl. timing, replication timing; DNaseHS, DNase hypersensitive site. (D) Correlation analysis with replication timing. Replication timing data (bigWig files with 5000 bp binsize) specific for HCT116 were downloaded from ReplicationDomain database (Weddington et al., 2008). Data bins were distributed to 10 equal size groups according to replication timing from early to late. Then log2 uracil enrichment signals for these data bin groups were plotted for each sample using R (Supplementary file 5). Source data are available in Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** ChIP-seq experiments were performed for H3K36me3 in UGI-expressing non-treated (NT_UGI_H3K36me3) and RTX treated (RTX_UGI_H3K36me3) HCT116 cells (Materials and methods). Fold change over control tracks were calculated and compared to HCT116 specific H3K36me3 ChIP-seq data from the ENCODE database (ENCFF514ZYW (merged), ENCFF334KFI (rep1), ENCFF238GBP (rep2)) using Pearson correlation calculated by deepTools multiBigwigSummary and plotCorrelation (Ramírez et al., 2016) as described in Supplementary file 3. Notably, differences between our non-treated and RTX treated samples are not higher than difference between replicates of the ENCODE data.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** At the upper part cytogenetic bands by Giemsa staining are visible, the staining intensity (from white to black) correlates to the chromatin structure. Log2 ratio tracks (enriched coverage/input coverage, computed by deepTools/bigwigCompare) are colored by samples (non-treated wild type K562 cells (K562, brown), non-treated wild type (WT, red), non-treated UGI-expressing (NT_UGI, orange), 5FdUR treated UGI-expressing (5FdUR_UGI, green), RTX treated UGI-expressing (RTX_UGI, blue) HCT116 cells, and their MMR proficient variants (NT_UGI_MMR, yellow; 5FdUR_UGI_MMR, light green; RTX_UGI_MMR, light blue)). The negative values of log2 tracks are shown with a bit lighter color than the positives. For all the log2 ratio tracks, the same range was applied from −0.9 to 1. Regions of uracil enrichment derived from log2 ratio tracks are shown with the same color directly below the corresponding log2 tracks. The bottom track shows replication timing data (grey) for HCT116 downloaded from Replication Domain database (Weddington et al., 2008). Replication timing scores are derived from E/L Repli-seq experiments, where cycling cells are pulse-labeled with BrdU, then sorted to early and late S-phase fractions by flow cytometry, and BrdU labeled genomic DNA fragments are pulled down and subjected to NGS. Signal tracks are computed from the read coverages in early over late S-phase samples, therefore the higher score means earlier replication (Marchal et al., 2018). The scale goes from −2.5 to 5. Correlation among samples, replication timing and the cytogenetic bands are well visible (highlighted regions, Figure 4C–D, and Supplementary file 4).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** 25 genomic segments from the Segway were analyzed. Average replication timing scores (gray bars) were calculated from two replicates available in Replication Domain database (Weddington et al., 2008), the standard deviation is also indicated. Replication timing scores are derived from E/L Repli-seq experiments, the higher score means earlier replication (Marchal et al., 2018). AT content of the segments (%, black square) were calculated using bedtools nuc (Quinlan and Hall, 2010) and the GRCh38 reference genome. Details of the calculations are provided in Supplementary file 4. For better comparison, signal distribution patterns of U-DNA-Seq samples derived from the Segway analysis (Figure 4B) are repeated at the bottom.
 
 In order to decide whether drug treatments may cause any notable changes in the distribution pattern of epigenetic markers as compared to the normal patterns, we have performed a direct comparative ChIP-seq study on our UGI-expressing HCT116 cell line. For this, we have selected the H3K36me3 histone marker that gave the highest GIGGLE scores with the RTX treated U-DNA pattern. ChIP-seq for H3K36me3 was performed in both non-treated (NT_UGI_H3K36me3), and RTX treated (RTX_UGI_H3K36me3) UGI-expressing HCT116 cells (Materials and methods, for the details of the analysis see Supplementary file 3, for description of the samples see Supplementary file 1-table 1). Comparison of our H3K36me3 ChIP-seq data to those available within the ENCODE database is presented in Figure 4—figure supplement 1. These results reveal no substantial differences between RTX_UGI_H3K36me3 and NT_UGI_H3K36me3 samples suggesting no major chromatin rearrangement upon drug treatment. Moreover, our ChIP-seq data are similar to the corresponding ENCODE data. Furthermore, on Figure 4A, GIGGLE scores between the U-DNA patterns and our own ChIP-seq peaks are also indicated and these are in good agreement with the other corresponding scores in case of both the non-treated and RTX treated samples.
 
@@ -78,17 +142,41 @@ The observed similarity between wild type uracil distribution and the patterns o
 
 As the uracil distribution pattern in drug-treated cells shows correlation with the early replication timing, we wish to directly investigate if there is any cell cycle arrest occurring under our experimental conditions. Figure 5 shows characteristic scatter plots indicating an expected cell cycle arrest in the drug-treated cells, namely delayed S-phase entry and progression (Blackledge, 1998; Ding et al., 2019; Huehls et al., 2016; Yan et al., 2016; Zhao et al., 2016). In agreement with the literature (Luo et al., 2008), our data clearly show no observable cell cycle effect of UGI expression in our non-treated samples (Figure 5A). Our data also revealed that the MMR proficiency somewhat tempers the observed cell cycle arrest, especially in case of the 5FdUR treatment (Figure 5B). As expected (Meyers et al., 2001), 5FdUR and RTX treatments eventually lead to DNA double-strand breaks (DSBs) as measured by yH2AX staining (Figure 5—figure supplement 1). DNA damage induction by the drugs was similar in MMR deficient and proficient HCT116 cells.
 
-## In situ detection of U-DNA using super-resolution microscopy
+![Figure 5.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig5-v1.jpg)
+
+**Figure 5.:** Scatter plots represent the flow cytometric measurements of BrdU incorporation and propidium iodide (PI) DNA-staining. (A) Cell cycle distribution in non-treated, MMR deficient (WT), and UGI-expressing (NT_UGI); or in MMR proficient (NT_MMR), and UGI-expressing (NT_UGI_MMR) HCT116 cells. (B) Cell cycle differences caused by 5FdUR or RTX drug treatments in MMR deficient, UGI-expressing (5FdUR_UGI and RTX_UGI); or in MMR proficient, UGI-expressing (5FdUR_UGI_MMR and RTX_UGI_MMR) HCT116 cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative histograms show increased γH2AX immunofluorescent signal upon drug (5FdUR or RTX) treatments both in MMR deficient, UGI-expressing (5FdUR_UGI, RTX_UGI); and MMR proficient, UGI-expressing (5FdUR_UGI_MMR, RTX_UGI_MMR) HCT116 cells, compared to the corresponding non-treated ones (NT_UGI, NT_UGI_MMR).
+
+### In situ detection of U-DNA using super-resolution microscopy
 
 We aimed to correlate genome-wide uracil distribution patterns in situ with chromatin architecture. Therefore, we further developed the U-DNA sensor constructs (Róna et al., 2016) to allow in situ detection of genomic U-DNA in complex eukaryotic cells using microscopy. Figure 6A shows a schematic representation of the U-DNA staining procedure. The U-DNA sensor constructs were fused to different tags allowing antibody-based or direct detection via fluorescence microscopy. In order to achieve a versatile labelling technique and to facilitate super-resolution imaging of U-DNA, we attached a SNAP-tag to the C'-terminal end of ΔUNG (FLAG-ΔUNG-SNAP), generating a novel sensor construct (Figure 6—figure supplement 1A). The SNAP-tag offers a flexible biorthogonal chemical labelling strategy as it reacts specifically and covalently with benzylguanine derivatives, permitting the irreversible labelling of SNAP fusion proteins with a wide variety of synthetic probes (Keppler et al., 2003). In order to check whether the functionality of this new construct is still preserved, we performed dot blot and staining experiments. Results shown in Figure 6—figure supplement 1B indicate that the FLAG-ΔUNG-SNAP construct is functional and shows similarly reliable U-DNA detection using dot blot approach, when compared to FLAG-ΔUNG-DsRed protein described previously (Róna et al., 2016). Figure 6—figure supplement 1C shows that the new labelling construct, FLAG-ΔUNG-SNAP, also recognizes the presence of extrachromosomal uracil enriched plasmid aggregates in the cytoplasm. These results confirmed that the FLAG-ΔUNG-SNAP construct is capable of U-DNA detection in dot blot assays and suitable for in situ staining applications.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig6-v1.jpg)
+
+**Figure 6.:** (A). Scheme represents that genomic uracil residues can be visualized in situ using our further developed U-DNA sensor construct via immunocytochemistry (through FLAG-tag) or directly via SNAP-tag chemistry. (B) HCT116 cells expressing UGI and treated with 5FdUR show efficient staining with the uracil sensor compared to non-treated cells, detected by confocal microscopy. Uracil residues are labelled by our FLAG-ΔUNG-SNAP sensor protein visualized by the SNAP647 substrate. DAPI was used for DNA counterstaining. Our optimized staining method is capable of comparable, specific uracil detection in HCT116 cells even with paraformaldehyde (PFA) fixation compared to the Carnoy fixation applied previously (Róna et al., 2016). Scale bar represents 40 µm. Note that the nuclei of the treated cells (5FdUR_UGI) are enlarged as compared to the non-treated ones (NT_UGI) presumably due to cell cycle arrest (Huehls et al., 2016; Yan et al., 2016).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Scheme of the used constructs in this study, with their applications highlighted. The catalytically inactive (D154N and H277N, mutated sites indicated with black lines) and truncated ΔUNG (the N-terminal 84 residues, responsible for the binding to RPA and PCNA, were also removed) was created from human UNG2. The ΔUNG uracil-recognizing core was fused to different epitope tags: His-tag for affinity purification, 1x/3xFLAG and Au1 for antibody-based detection, DsRed-monomer or SNAP-tag for direct fluorescent detection. Our newly developed FLAG-ΔUNG-SNAP sensor construct is indicated with blue frame, separately from the constructs characterized previously (Róna et al., 2016). (B) Dot blot assay was used to compare uracil binding capability of FLAG-ΔUNG-DsRed and FLAG-ΔUNG-SNAP sensor constructs. CJ236 [dut−, ung−] (positive control) and XL1-Blue [dut+, ung+] (negative control) E. coli genomic DNA samples (8 ng) were measured in two-third dilution series. (C) Comparison of the FLAG-ΔUNG-DsRed and the FLAG-ΔUNG-SNAP constructs in detecting uracil-rich plasmid DNA aggregates in HCT116 in an immunocytochemistry assay. The sensors were visualized through the FLAG epitope tag. DAPI was used to counterstain DNA. Scale bar represents 10 μm.
+
 Our goal was to use this new sensor to detect in situ endogenous uracils in human cells in a setup that also allows colocalization with other chromatin factors. For visualization of our sensor, photostable SNAP-tag substrates (here SNAP647 or SNAP546) were used. Figure 6B shows that drug treatment and the inhibition of cellular UNG enzyme by UGI lead to significantly increased uracil content in genomic DNA that is readily observable on conventional confocal microscopic images. Figure 6B also demonstrates that our FLAG-ΔUNG-SNAP sensor can be applied for straightforward staining of genomic uracil after either Carnoy (as used previously [Róna et al., 2016]) or PFA fixation. Unlike Carnoy, PFA fixative is compatible with most antibody-based staining procedures, thus it is suitable for multi-color imaging allowing colocalization studies. Next, we attempted to use super-resolution microscopy to have a better track of the uracil distribution pattern even in case of the low genomic uracil level found in the non-treated cells. Figure 7 compares confocal, STED and dSTORM microscopy techniques for U-DNA detection. The exquisite sensitivity of dSTORM is apparent from these experiments as it can detect the low level of genomic uracil in non-treated cells (Figure 7B). Importantly, we observed different heterogeneous staining in the nucleus for uracil in non-treated and drug-treated cells. Furthermore, images of drug-treated cells show uracil staining with signal enrichment at the nuclear membrane and areas surrounding the nucleoli. Movies in Figure 7—videos 1–4 (for the corresponding representative image see Figure 7—figure supplement 1) contribute to further visualization of uracil distribution captured by confocal and STED imaging.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig7-v1.jpg)
+
+**Figure 7.:** (A) U-DNA staining was performed on non-treated or 5FdUR treated HCT116 cells stably expressing UGI. Different SNAP-tag substrates, SNAP647 for confocal and SNAP546 for super-resolution imaging (STED) were used to label FLAG-ΔUNG-SNAP. Scale bar represents 20 µm for whole images and 10 µm for zoomed sections. (B) dSTORM imaging was performed on non-treated or drug-treated (5FdUR or RTX) HCT116 cells stably expressing UGI to compare the sensitivity of these imaging techniques. U-DNA staining shows a characteristic distribution pattern in cells with elevated uracil levels as compared to non-treated cells. SNAP647 substrate was used to label FLAG-ΔUNG-SNAP. Scale bar represents 10 µm for whole images and 2 µm for zoomed sections.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Genomic uracil levels of HCT116 cells were elevated with 5FdUR treatment and UGI expression. Videos show the following: confocal Z-stack series of 3 cells (Figure 7—video 1), 3D projection of this confocal series (Figure 7—video 2), Z-stack series of 1 cell acquired by STED microscopy (Figure 7—video 3) and 3D projection of this series acquired by STED microscopy (Figure 7—video 4). The related movies are indicated at the top right corner of the images. Scale bar represents 10 µm.
 
 Based on the genome-wide sequencing data analysis, we proceeded to select cognate chromatin markers for colocalization studies. As shown in Figure 4A, the highest similarity (GIGGLE) scores corresponded to H3K36me3 and H3K27me3 for the RTX and the 5FdUR treated samples, respectively. Furthermore, Segway analysis strengthened that these two histone markers (from the 22 investigated factors) show the most similar signal distribution pattern to the U-DNA patterns of drug-treated samples (Figure 4B). Using the herein demonstrated immunofluorescence protocol we obtained co-stained images of uracil and these histone markers by both confocal and dSTORM microscopies (Figure 8A–B). Validating the U-DNA-Seq data, we found that U-DNA staining shows significant colocalization with staining for both chromatin markers; H3K36me3 and H3K27me3, which was quantified using a cross-pair correlation analysis of the dSTORM images as shown in Figure 8C–D. The rate of colocalization, as determined by the interaction factor (IF) value (Bermudez-Hernandez et al., 2017; Whelan et al., 2018), was statistically significant between the uracil signal and both chromatin markers in each case of drug treatment, when compared to the non-treated sample as well as to a generated set of random distribution patterns of these chromatin markers. The cross-pair correlation method probes the probability distributions across all possible pair-wise distances between two species, taking in account the number of foci for each species (Coltharp et al., 2014; Cutler et al., 2013; Veatch et al., 2012; Yin and Rothenberg, 2016). This normalization of the number of foci ensures that any increase in IF is specifically due to an increase in their co-localization probability density, and not due to the increase in the amount of either species.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/60498/elife-60498-fig8-v1.jpg)
 
-**Figure 8.:** Confocal and dSTORM imaging were performed on non-treated, 5FdUR or RTX treated HCT116 cells stably expressing UGI to compare the localization of genomic uracil residues (red) to histone markers, H3K36me3 (green) (A) or H3K27me3 (green) (B). Scale bar represents 5 μm. The graphs display the cross-pair orrelation analysis between U-DNA and H3K36me3 (C) or H3K27me3 (D) performed on dSTORM images. Overlap is defined as any amount of pixel overlap between segmented objects. Total numbers of analyzed nuclei for H3K36me3 staining (C) were the following: NT_UGI (n = 205), 5FdUR_UGI (n = 101) and RTX_UGI (n = 153) from two independent experiments. Total numbers of analyzed nuclei for H3K27me3 staining (D) were the following: NT_UGI (n = 154), 5FdUR_UGI (n = 151) and RTX_UGI (n = 107) from two independent experiments. Black line denotes the mean of each dataset, and error bars represent standard errors of the mean (SEM). The color code follows the one in Figure 3A. Source data are available in Figure 8—source data 1.Figure 8—source data 1.
+**Figure 8.:** Confocal and dSTORM imaging were performed on non-treated, 5FdUR or RTX treated HCT116 cells stably expressing UGI to compare the localization of genomic uracil residues (red) to histone markers, H3K36me3 (green) (A) or H3K27me3 (green) (B). Scale bar represents 5 μm. The graphs display the cross-pair orrelation analysis between U-DNA and H3K36me3 (C) or H3K27me3 (D) performed on dSTORM images. Overlap is defined as any amount of pixel overlap between segmented objects. Total numbers of analyzed nuclei for H3K36me3 staining (C) were the following: NT_UGI (n = 205), 5FdUR_UGI (n = 101) and RTX_UGI (n = 153) from two independent experiments. Total numbers of analyzed nuclei for H3K27me3 staining (D) were the following: NT_UGI (n = 154), 5FdUR_UGI (n = 151) and RTX_UGI (n = 107) from two independent experiments. Black line denotes the mean of each dataset, and error bars represent standard errors of the mean (SEM). The color code follows the one in Figure 3A. Source data are available in Figure 8—source data 1.
 
 ## Discussion
 
@@ -110,58 +198,383 @@ It has been argued that uracil accumulation may play a more decisive role in gen
 
 ## Materials and methods
 
-## Plasmid constructs and cloning of the FLAG-ΔUNG-SNAP construct
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (bacteriophage PBS2)</td>
+      <td>UGI</td>
+      <td>Mol et al., 1995</td>
+      <td>UniProtKB - P14739</td>
+      <td>UNG inhibitor protein encoded in Bacillus subtilis bacteriophage PBS2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2, mouse monoclonal</td>
+      <td>Sigma</td>
+      <td>F3165</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K36me3, rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>4909T</td>
+      <td>(1:8000) for ICC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K27me3, rabbit monoclonal</td>
+      <td>Cell Signaling Technologies</td>
+      <td>9733T</td>
+      <td>(1:6000) for ICC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-γH2AX, rabbit monoclonal</td>
+      <td>Sigma</td>
+      <td>05–636</td>
+      <td>(1:500) for measuring DSBs in flow cytometry</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>Yvonne Jones (Cancer Research UK, Oxford, UK)</td>
+      <td></td>
+      <td>maintained in Dulbecco’s modified Eagle’s medium completed with PenStrep and FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562</td>
+      <td>European Collection of Cell Cultures</td>
+      <td></td>
+      <td>maintained in RPMI 1640 (GlutaMAX Supplement, HEPES) Medium (Gibco), completed with PenStrep and FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116</td>
+      <td>European Collection of Cell Cultures</td>
+      <td></td>
+      <td>maintained in McCoy’s 5A medium, completed with PenStrep and FBS</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116+ch3 sub-line</td>
+      <td>C. Richard Boland (Baylor University, Dallas, Texas, US)</td>
+      <td></td>
+      <td>sub-line of HCT116: MLH1 restored, MMR is functional</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116+ hUGI/EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>sub-line of HCT116: stable expressing UGI (Materials and methods: Generation of UGI-expressing stable cell lines)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116+ch3+ hUGI/EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>sub-line of HCT116+ch3: stable expressing UGI (Materials and methods: Generation of UGI-expressing stable cell lines)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1-Blue</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>CJ236 [dut-, ung-]</td>
+      <td>NEB</td>
+      <td></td>
+      <td>E. coli strain for preparation of the uracil-containing DNA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3) ung-151</td>
+      <td>Samuel E Bennett (Oregon State University, Corvallis, US)</td>
+      <td></td>
+      <td>E. coli strain for expression of ΔUNG sensor constructs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>actin-for</td>
+      <td>Sigma-Aldrich, Ho et al., 2016</td>
+      <td></td>
+      <td>5’-CCTCATGGCCTTGTCACAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>actin-rev</td>
+      <td>Sigma-Aldrich, Ho et al., 2016</td>
+      <td></td>
+      <td>5’-GCCCTTTCTCACTGGTTCTCT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pET15b-For</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>5’-CATATGCTCGAGGATCCGGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pET15b-Rev</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>5’-TCATCGATAAGCTTTAATGCGGT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Spin-Fw</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>5’- ACCGGCATAACCAAGCCTAT-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Spin-Rev</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>5’- ACAATGCGCTCATCGTCATC-3’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLGC-hUGI/EGFP</td>
+      <td>Michael D Wyatt (South Carolina College of Pharmacy, University of South Carolina, US)</td>
+      <td></td>
+      <td>for producing sub-lines stably expressing UGI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSNAPf</td>
+      <td>NEB</td>
+      <td>N9183S</td>
+      <td>to clone the FLAG-ΔUNG-SNAP construct</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLAG-ΔUNG-SNAP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>produced in E. coli BL21(DE3) ung-151 (Materials and methods: Plasmid constructs and cloning of the FLAG-ΔUNG-SNAP construct)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>1xFLAG-ΔUNG</td>
+      <td>Róna et al., 2016</td>
+      <td></td>
+      <td>produced in E. coli BL21(DE3) ung-151</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3xFLAG-ΔUNG</td>
+      <td>Róna et al., 2016</td>
+      <td></td>
+      <td>produced in E. coli BL21(DE3) ung-151</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FLAG-ΔUNG-DsRed</td>
+      <td>Róna et al., 2016</td>
+      <td></td>
+      <td>produced in E. coli BL21(DE3) ung-151</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Quick-DNA Miniprep Plus Kit</td>
+      <td>Zymo Research</td>
+      <td>D4069</td>
+      <td>for genomic DNA preparation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NucleoSpin Gel and PCR Clean-up Kit</td>
+      <td>MACHEREY-NAGEL GmbH and Co. KG</td>
+      <td>740609.25</td>
+      <td>for IP DNA purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NGS including library preparation</td>
+      <td>Novogene</td>
+      <td>Novaseq 6000, 20 GB, 150 PE</td>
+      <td>as a service</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>5-Bromo-2′-deoxy-uridine (BrdU) Labeling and Detection Kit I</td>
+      <td>Roche, Sigma</td>
+      <td>11296736001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-FLAG M2 agarose beads</td>
+      <td>Sigma</td>
+      <td>A2220</td>
+      <td>for U-DNA-IP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Protein A/G Magnetic Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88802</td>
+      <td>for ChIP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-fluoro-2′-deoxyuridine (5FdUR)</td>
+      <td>Sigma</td>
+      <td>F0503</td>
+      <td>Thymidylate synthase inhibitor, treatment: 20 µM, 48 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>raltitrexed (RTX)</td>
+      <td>Sigma</td>
+      <td>R9156</td>
+      <td>Thymidylate synthase inhibitor, treatment: 100 nM, 48 hr</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Surface Alexa Fluor 546</td>
+      <td>NEB</td>
+      <td>S9132S</td>
+      <td>SNAP substrate for superresolution imaging</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SNAP-Surface Alexa Fluor 647</td>
+      <td>NEB</td>
+      <td>S9136S</td>
+      <td>SNAP substrate for superresolution imaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>for densitometry, and image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens STED Deconvolution Wizard</td>
+      <td>Huygens Software</td>
+      <td></td>
+      <td>superresolution image analyzing software package</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA</td>
+      <td>Li and Durbin, 2010</td>
+      <td></td>
+      <td>short sequencing read aligner software</td>
+    </tr>
+    <tr>
+      <td>Softwares, algorithm</td>
+      <td>deepTools package</td>
+      <td>Ramírez et al., 2016</td>
+      <td></td>
+      <td>NGS data processing tools</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bedtools package</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td></td>
+      <td>tools for analyzing interval files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GIGGLE search</td>
+      <td>Layer et al., 2018.</td>
+      <td></td>
+      <td>search tool for similarity screening in large set of interval files</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Segway software package</td>
+      <td>Chan et al., 2018; Hoffman et al., 2012</td>
+      <td></td>
+      <td>machine learning software for genome segmentation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrated Genome Viewer (IGV)</td>
+      <td>Thorvaldsdóttir et al., 2013.</td>
+      <td></td>
+      <td>tool for visualisation of many types of processed NGS data</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid constructs and cloning of the FLAG-ΔUNG-SNAP construct
 
 The pLGC-hUGI/EGFP plasmid was kindly provided by Michael D. Wyatt (South Carolina College of Pharmacy, University of South Carolina, US). Generation of catalytically inactive U-DNA sensor proteins (1xFLAG-ΔUNG, 3xFLAG-ΔUNG, FLAG-ΔUNG-DsRed) was described previously (Róna et al., 2016). pSNAPf (New England Biolabs (NEB), Ipswich, Massachusetts (MA), US) was PCR amplified with primers SNAP-Fw (5’ – TAA TGG TAC CGC GGG CCC GGG ATC CAC CGG TCG CCA CCA TGG ACA AAG ACT GCG AAA TG - 3’) and SNAP-Rev (5’ – ATA TCT CGA GGC CTG CAG GAC CCA GCC CAG G - 3’). The resulting fragments were digested by KpnI and XhoI, and ligated into the KpnI/XhoI sites of the plasmid construct FLAG-ΔUNG-DsRed (in a pET-20b vector) yielding the FLAG-ΔUNG-SNAP construct. Scheme of the used constructs is shown in Figure 6—figure supplement 1A. Primers used in this study were synthesized by Sigma-Aldrich (St. Louis, Missouri, US), and all constructs were verified by sequencing at Microsynth Seqlab GmbH (Göttingen, Germany). All UNG constructs were expressed in the Escherichia coli BL21(DE3) ung-151 strain and puriﬁed using Ni-NTA afﬁnity resin (Qiagen, Hilden Germany) as described previously (Róna et al., 2016).
 
-## DNA isolation and purification
+### DNA isolation and purification
 
 pEGFP-N1 plasmid (Clontech, Mountain View, California, US) was transformed into XL1-Blue [dut+, ung+] (Stratagene, San Diego, California (CA), US) or CJ236 [dut-, ung-] (NEB) E. coli competent cells. Cell cultures were grown for 16 hr in Luria broth (LB) media supplemented with 50 µg/ml kanamycin at 37°C. Plasmids used in this study were purified using PureYield Plasmid Midiprep Kit (Promega, Madison, Wisconsin, US) according to the instructions of the manufacturer. XL1-Blue and CJ236 E. coli strains were propagated in LB media at 37°C and were harvested at log phase. Genomic DNA of bacterial samples as well as eukaryote cells was purified using the Quick-DNA Miniprep Plus Kit (Zymo Research, Irvine, California, US) using the recommendations of the manufacturer.
 
-## Cell culture, transient transfection and treatment of cells
+### Cell culture, transient transfection and treatment of cells
 
 The 293T cell line was a generous gift of Yvonne Jones (Cancer Research UK, Oxford, UK). The HCT116 and the K562 cell lines were purchased from the European Collection of Cell Cultures (ECACC, Salisbury, UK). The HCT116+ch3 sub-line (a kind gift from C. Richard Boland (Baylor University, Dallas, Texas, US)) is complemented with chromosome three carrying the wild type gene for hMLH1 and is competent in MMR function. 293T cells were grown in Dulbecco’s modified Eagle’s medium (Gibco, Life Technologies, Carlsbad, CA, US), while HCT116 and K562 cells were maintained in McCoy’s 5A medium (Gibco) and RPMI 1640 (GlutaMAX Supplement, HEPES) Medium (Gibco), respectively. Media was supplemented with 50 µg/ml Penicillin-Streptomycin (Gibco) and 10% fetal bovine serum (Gibco). Cells were cultured at 37°C in a humidified incubator with 5% CO2 atmosphere. All cell lines used in this study were tested for mycoplasma contamination. HCT116 cells were transfected with FuGENE HD (Promega) according to the manufacturer’s recommendation. For immunocytochemistry, HCT116 cells were transfected with normal pEGFP-N1 (purified from XL1-Blue [dut+, ung+] E. coli cells) or uracil-rich pEGFP-N1 (purified from CJ236 [dut−, ung−] E. coli cells) vector as described previously (Róna et al., 2016). Forty hours after transfection with UGI expressing vectors, transiently transfected cells were grown for an additional 48 hr either in the absence or presence of 20 µM 5FdUR (Sigma) before collecting them for genomic DNA purification.
 
-## Generation of UGI-expressing stable cell lines
+### Generation of UGI-expressing stable cell lines
 
 Retroviral packaging and stable cell line generation were done as described in Rona et al., 2018. Briefly, 293T cells (1.5 × 106 cells in T25 tissue culture flasks) were transfected with 1.5 µg pLGC-hUGI/EGFP, 0.5 µg pCMV-VSV-G envelope and 0.5 µg pGP packaging plasmids using Lipofectamine 3000 transfection reagent (Invitrogen, Carlsbad, CA, US) according to the manufacturer’s recommendation. The supernatant, containing lentiviral particles was collected and filtered through a 0.45 µm filter (Merck Millipore, Burlington, MA, US) 36 hr after the transfection. Successfully transduced MMR deficient and proficient HCT116 cells were collected by FACS sorting for GFP-positive cells using a BD FACSAria III Cell sorter (BD Biosciences, San Jose, CA, US). UGI-expressing cells were treated with 20 µM 5FdUR or 100 nM RTX (Sigma) for 48 hr before fixation for immunocytochemistry or collecting them for genomic DNA purification described above.
 
-## Dot blot measurements and analysis for quantification of U-DNA
+### Dot blot measurements and analysis for quantification of U-DNA
 
 Detection of the genomic uracil content by dot blot measurements were carried out using 3xFLAG-ΔUNG construct, as described earlier (Róna et al., 2016). Dot blot assay was used for measuring genomic uracil levels of non-treated and drug (5FdUR or RTX) treated MMR deficient and proficient HCT116 cells expressing UGI (Figure 1—figure supplement 1B–D), or to confirm the successful enrichment of uracil-containing DNA (Figure 1B), and also to compare uracil recognition specificity of the FLAG-ΔUNG-DsRed and FLAG-ΔUNG-SNAP constructs (Figure 6—figure supplement 1B). Densitometry was done using ImageJ (Fiji) software (National Institutes of Health, US). Analysis of the data and the calculation of the number of deoxyuridine nucleotides in the unknown genomic DNA was described before (Molnár et al., 2018; Róna et al., 2016). Briefly, the number of uracil/million bases in the unknown samples were determined by interpolating their normalized intensities to the calibration curve of the standard. Statistical analysis of dot blot (Figure 1—figure supplement 1C–D) was carried out by Microsoft Excel using the non-parametric two-sided Mann-Whitney U test. Differences were considered statistically significant at p<0.005. Data presented are representative of six independent datasets (n = 6).
 
-## DNA immunoprecipitation
+### DNA immunoprecipitation
 
 After 48 hr treatment, the surface attached cells were harvested. Genomic DNA was purified by Quick-DNA Miniprep Plus Kit (Zymo Research) and eluted in nuclease-free water. 12 µg of genomic DNA was sonicated into fragments ranging between 100 and 500 base pairs (bp) (checked by agarose gel electrophoresis) with a BioRuptor (Diagenode, Liège, Belgium). 25% of the samples was saved as input, and the remaining DNA was re-suspended in the following IP buffer: 30 mM TRIS-HCl, pH = 7.4, 140 mM NaCl, 0.01% Tween-20, 1 mM ethylenediaminetetraacetic acid (EDTA), 15 mM β-mercaptoethanol, 1 mM phenylmethylsulfonyl fluoride, 5 mM benzamidine. Immunoprecipitations were carried out with 15 µg of 1xFLAG-ΔUNG construct for 2.5 hr at room temperature with constant rotation. Anti-FLAG M2 agarose beads (Sigma) were equilibrated in IP buffer, and then added to the IP mixture for 16 hr at 4°C with constant rotation. Beads were washed three times for 10 min in IP buffer, and re-suspended in elution buffer containing 1% sodium dodecyl sulfate (SDS), 0.1 M NaHCO3. Elution of uracil sensor protein binding U-DNA was done by vortexing for 5 min with an additional incubation for 20 min with constant rotation. After centrifugation (13000 rpm for 3 min), supernatant was transferred to clean tubes. This procedure was repeated with the same amount of elution buffer, and protein/DNA eluted complexes were combined in the same tube. Samples were incubated with 150 µg/ml RNAse A (Epicentre, Paris, France) for 30 min, followed by the addition of 500 µg/ml Proteinase K (Sigma) for 1 hr at 37°C for removal of RNA and proteins. Immunoprecipitated DNA was purified with NucleoSpin Gel and PCR Clean-up Kit (MACHEREY-NAGEL GmbH and Co. KG, Düren, Germany) according to the manufacturer’s instructions. Densitometry analysis of agarose gel was done using ImageJ (Fiji) software for concentration calculation of fragmented DNA. Enrichment of uracil in the DNA samples was examined by dot blot assay. DNA libraries were created from the samples and then subjected to next-generation sequencing (NGS). Scheme of U-DNA-Seq is shown in Figure 1A.
 
-## Controls of U-DNA-IP method
+### Controls of U-DNA-IP method
 
 For positive control of the U-DNA-IP, uracil-containing 315 bp spike-in oligo was prepared by PCR amplification from pET15b in the presence of 0.02 mM dUTP, and 0.2 mM dNTP mix using TEMPase Hot Start DNA polymerase (VWR (Radnor, Pennsylvania, US)). Uracil-free oligo was also amplified under the same reaction conditions but in the absence of dUTP. Primer sequences are as follows: pET15b-For: 5’-CATATGCTCGAGGATCCGGC-3’; pET15b-Rev: 5’-TCATCGATAAGCTTTAATGCGGT-3’. Spike-in oligos were purified with NucleoSpin Gel and PCR Clean-up Kit. 2.5 nM uracil-containing or uracil-free spike-in DNA was added into 3 µg of sonicated genomic DNA from non-treated HCT116 cells, then DNA-IP was carried out as described above. Enrichment was measured by qPCR (on a QuantStudio 1 qPCR instrument (Thermo Fisher Scientific (Waltham, MA, US))) and calculation was based on the comparison of the Cq values for IP samples using uracil-containing and uracil-free spike-in oligos. Primer sequences are as follows: Spin-Fw: 5’- ACCGGCATAACCAAGCCTAT-3’; Spin-Rev: 5’- ACAATGCGCTCATCGTCATC-3’. For negative control of the U-DNA-IP, mock IP experiments were also performed using empty anti-FLAG beads not containing the U-DNA sensor on genomic DNA from non-treated (NT_UGI) and 5FdUR treated (5FdUR_UGI), UGI-expressing HCT116 cells, using the same protocol as described above. The amounts of pulled down DNA were much decreased in these control IPs as compared to their true IP counterparts, still NGS were performed (Figure 1—figure supplement 2, Supplementary file 1).
 
-## High-throughput DNA sequencing and data analysis
+### High-throughput DNA sequencing and data analysis
 
 Sequencing of input and enriched U-DNA samples were done on two independent biological replicates at BGI (China) generating 100 bp paired-end reads (PE) on a HiSeq 4000 instrument or at Novogene (China) using the Novaseq 6000 platform resulting in 150 bp PE reads. Analysis pipeline is summarized in Figure 2, and details including the applied command lines and scripts are found in the Supplementary file 1 and 3–5. Sequencing reads were aligned to the GRCh38 human reference genome (version GRCh38.d1.vd1) (Jensen et al., 2017) using BWA (version 0.7.17) (Li and Durbin, 2010). Aligned reads were converted to BAM format and sorted using samtools (version 1.9) (Li et al., 2009). Duplicate reads were marked using Picard Tools (version 1.95). As a part of pre-processing, blacklisting and filtering of ambiguously mapped reads were also performed (Supplementary file 1 and Figure 2—figure supplement 2; Amemiya et al., 2019). For data processing, to derive uracil distribution signal, first, normalized coverage signals were calculated and smoothened using bamCoverage from the deepTools package (Ramírez et al., 2016), which resulted in genome-scaled coverage tracks in bigWig format. Then, log2 ratio of the coverage tracks (enriched/input) were calculated with bigwigCompare. These bigwig files were compared using the multiBigwigSummary, Pearson correlations were calculated using the plotCorrelation tools also from the deepTools package (Figure 3B). From the log2 ratio tracks, interval (bed) files were derived using reasonable thresholds (for details see Supplementary file 1 and Figure 3—figure supplement 2A). Log2 ratio signal distribution (Figure 3C) was calculated using R. Peaks of coverage were also called using the MACS2 with broad option (version 2.1.2), a standard tool in chromatin marker ChIP-seq data analysis (Feng et al., 2011; Zhang et al., 2008). Results of peak calling and the regions derived from the log2 ratio tracks were compared (Figure 3—figure supplement 2). Hereafter, the two terms ’peaks’ and ’regions’ will be consequently applied for the results of the two approaches, respectively. For the negative control IP samples, genome-scaled coverage tracks were also calculated in the same way. Then normalized signal tracks were subtracted from their corresponding U-DNA-IP tracks, and combined with their input to calculate log2 enrichment tracks (Supplementary file 1 and Figure 1—figure supplement 2). Colocalization analysis of identified uracil enriched regions with other ChIP-seq and DNA accessibility data was performed on a dataset containing HCT116 specific or other relevant data only (for details see Supplementary file 3) using GIGGLE search tool (Layer et al., 2018). To plot results of GIGGLE search, OriginPro 8.6 was used (Figure 4A). Genome segmentation analysis on our U-DNA-Seq data, our H3K36me3 ChIP-seq data, and HCT116 specific ChIP-seq data from the ENCODE database was performed using Segway software package (Chan et al., 2018; Hoffman et al., 2012; Supplementary file 3, and Figure 4B). Measuring overlaps with other genomic features (Figure 4C) was done using bedtools annotate tool (Quinlan and Hall, 2010) as it is described in Supplementary file 4. Replication timing scores and AT content were calculated on the genomic segments defined by the Segway analysis as described in Supplementary file 4 (Figure 4—figure supplement 3). Correlation analysis between uracil enrichment and replication timing (Figure 4D and Appendix 1—figure 2C) was done using R as it is described in Supplementary file 5. Sequencing data were visualized (Figure 3A, Figure 1—figure supplement 2, Figure 2—figure supplement 2, Figure 3—figure supplement 1, Figure 4—figure supplement 2, Supplementary file 2, Appendix 1—figure 1A, Appendix 1—figure 2A) using the IGV browser (Thorvaldsdóttir et al., 2013).
 
-## Chromatin immunoprecipitation and sequencing (ChIP-seq)
+### Chromatin immunoprecipitation and sequencing (ChIP-seq)
 
 Sub-confluent cultures of UGI-expressing (non-treated or treated with 100 nM RTX for 48 hr) cells were washed with phosphate-buffered saline (PBS) and cross-linked with 1% paraformaldehyde (PFA) for 10 min, then quenched with the addition of 0.15 M glycine. Cells then were rinsed with ice-cold PBS twice and lysed with buffer LB1 (50 mM TRIS, pH = 7.5, 140 mM NaCl, 2 mM EDTA, 0.5 mM EGTA, 0.5% NP-40, 0.25% Triton X-100, 10% glycerol, and protease inhibitor cocktail) for 10 min at 4°C, then in LB2 (10 mM TRIS, pH = 7.5, 200 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, and protease inhibitor cocktail) for 10 min at 4°C. Nuclei pellets were sonicated in LB3 (10 mM TRIS, pH = 7.5, 0.5% N-Lauroylsarcosine sodium salt, 1 mM EDTA, 0.5 mM EGTA, and protease inhibitor cocktail) in a BioRuptor, which yielded fragments between 100 and 500 bp. After centrifugation for 10 min at 4°C, supernatants were diluted in dilution buffer (50 mM TRIS, pH = 7.5, 0.5% NP-40, 1 mM EDTA, 150 mM NaCl) followed by pre-clearing of Pierce Protein A/G Magnetic Beads (Thermo Fisher Scientific) for 3 hr at 4°C. Immunoprecipitation was performed overnight at 4°C using anti-H3K36me3 (CST (Danvers, MA, US), cat.no.: 4909T) antibody following the supplier's recommendations. After immunoprecipitation, protein A/G magnetic beads (pre-cleared with IgG-free fetal bovine serum albumin (BSA, Jackson ImmunoResearch (Cambridgeshire, UK)), overnight at 4°C) were added for further 7 hr of incubation. Precipitates were washed sequentially for 10 min each with the 1:1 combination of dilution buffer and HS buffer (20 mM TRIS, pH = 8.0, 0.1% SDS, 1% NP-40, 2 mM EDTA, 500 mM NaCl), with HS buffer, and finally with dilution buffer. Precipitates were then washed with TE buffer (10 mM TRIS-HCl, pH = 7.5, 1 mM EDTA) and eluted two times with 1% SDS and 0.1 M NaHCO3. Eluates were pooled and heated overnight at 65°C to reverse the formaldehyde crosslinking. Samples were incubated with 100 µg/ml RNAse A for 30 min, then with 200 µg/ml Proteinase K for 1 hr at 37°C for removal of RNA and proteins. Immunoprecipitated DNA was purified with NucleoSpin Gel and PCR Clean-up Kit according to the manufacturer’s instructions. Quantitative PCR analysis for human β-actin was carried out to check the efficiency of the H3K36me3 IP using the following primer sequences: actin-for: 5’-CCTCATGGCCTTGTCACAC-3’; actin-rev: 5’-GCCCTTTCTCACTGGTTCTCT-3’ (Ho et al., 2016). DNA libraries were created from the samples and then subjected to NGS at Novogene using the Novaseq 6000 platform resulting in 150 bp PE reads. Data analysis were performed similarly to the U-DNA-Seq analysis (Figure 4—figure supplement 1), details are provided in Supplementary file 3.
 
-## Cell cycle analysis and γH2AX staining
+### Cell cycle analysis and γH2AX staining
 
 2D cell cycle analysis was performed using 5-Bromo-2′-deoxy-uridine (BrdU) Labeling and Detection Kit I (Roche, Sigma) and Propidium Iodide (PI, Sigma) staining (Figure 5). Non-treated or drug-treated (20 µM 5FdUR or 100 nM RTX for 48 hr) HCT116 cells were labelled with 10 µM BrdU for 20 min followed by trypsinization, PBS washing and overnight fixation in 70% ethanol at 4°C. DNA was denatured for 30 min with 2 M HCl, 0.5% Triton X-100. Cells were re-suspended in 0.1 M sodium tetraborate (pH = 8.5) for 10 min, and then washed with blocking buffer (1% BSA, 0.05% Tween-20 in PBS). Samples were incubated with anti-BrdU antibody (1:10) in blocking buffer for 30 min at room temperature. After washing, Ig fluorescein coupled (FITC) anti-mouse (1:10) secondary antibody was applied in blocking buffer for 30 min. Finally, after a washing step, cells were incubated with propidium iodide (10 µg/ml) and RNase A (20 µg/ml) for 30 min in PBS. Occurrence of DSBs was investigated by immunofluorescent staining of γH2AX (Figure 5—figure supplement 1). Briefly, non-treated or drug-treated cells were fixed in 70% ethanol (overnight at 4°C), then DNA was denatured for 30 min with 2 M HCl, 0.5% Triton X-100. After blocking, cells were stained with an antibody against γH2AX (1:500, Sigma, cat.no.: 05–636) overnight at 4°C. FITC anti-mouse secondary antibody (1:10) was added for 30 min. Cell cycle analysis and measurement of γH2AX levels were carried out by flow cytometry with a BD FACSCalibur Cell Analyzer.
 
-## Immunofluorescent staining of uracil residues
+### Immunofluorescent staining of uracil residues
 
 Detection of uracil residues was done in extrachromosomal plasmids after transfection (Figure 6—figure supplement 1C) or in genomic DNA of HCT116 cells (Figures 6–8). Staining of extrachromosomal DNA was done as described previously (Róna et al., 2016) with minor modifications for comparison of FLAG-ΔUNG-DsRed or FLAG-ΔUNG-SNAP sensor constructs. Briefly, uracil residues were visualized by applying 1.5 µg/ml of the FLAG-ΔUNG-DsRed or the FLAG-ΔUNG-SNAP, and then primary (anti-FLAG M2 antibody (1:10000, Sigma)) and secondary antibodies (Alexa 488 (1:1000, Molecular Probes, Eugene, Oregon, US)). For immunofluorescent staining of genomic uracil residues, control or HCT116 cells stably expressing UGI were seeded onto 24-well plates containing cover glasses or onto µ-Slides (or their glass bottom derivative) (ibidi GmbH, Germany) suitable for use in STED and single molecule applications, and treated as indicated. In case of dSTORM imaging, coverslips were coated with poly-D-lysine (Merck Millipore) before seeding the cells. Sub-confluent cultures of cells were fixed using 4% PFA (pH = 7.4 in PBS) or Carnoy’s fixative (ethanol: acetic acid: chloroform = 6:3:1) for 15 min. In case of dSTORM imaging, cells were pre-extracted with ice-cold CSK buffer (10 mM PIPES, pH = 6.8, 100 mM NaCl, 300 mM sucrose, 1 mM EGTA, 3 mM MgCl2, 0.25% Triton X-100) containing protease and phosphatase inhibitor tablets (Roche, Basel, Switzerland) for 5 min before PFA fixation. After washing or rehydration steps (1:1 ethanol:PBS, 3:7 ethanol:PBS, PBS), epitope unmasking was done by applying 2 M HCl, 0.5% Triton X-100 for 30 min. DNA denaturation with HCl was required in order to increase DNA accessibility for efficient staining and to eliminate any potential interaction between the overexpressed UGI and the applied UNG sensor construct. After neutralization with 0.1 M Na2B4O7 (pH = 8.5) for 5 min followed by PBS washes, cells were incubated in blocking solution I (TBS-T (50 mM TRIS-HCl, pH = 7.4, 2.7 mM KCl, 137 mM NaCl, 0.05% Triton X-100) containing 5% non-fat dried milk) for 15 min, followed by incubation in blocking buffer I supplemented with 200 µg/ml salmon sperm DNA (Invitrogen) for an additional 45 min. Uracil residues were visualized by applying 4 µg/ml of the FLAG-ΔUNG-SNAP construct for 1 hr in blocking buffer I with 200 µg/ml salmon sperm DNA at room temperature. After several washing steps with TBS-T containing 200 µg/ml salmon sperm DNA, primary, then secondary antibodies were operated in blocking buffer II (5% fetal goat serum (FGS), 3% BSA and 0.05% Triton X-100 in PBS). Anti-FLAG M2 antibody (1:10000, Sigma), then Alexa 488 conjugated secondary antibody (1:1000, Molecular Probes) was applied for 1 hr in blocking buffer II, enabling visualization of FLAG epitope. SNAP-tag substrates were also used to label SNAP-tag fusion proteins when FLAG-ΔUNG-SNAP was applied as the uracil sensor protein. Cells were labelled with 2.5 µM (0.5 µM for dSTORM imaging) SNAP-Surface Alexa Fluor 546 or 647 (indicated as SNAP546 and SNAP647 in this study) (NEB) for 20 min, and optionally counterstained with 1 µg/ml DAPI (4’,6-diamidino-2-phenylindole, Sigma) nucleic acid stain, followed by several PBS washing steps before embedding in FluorSave Reagent (Calbiochem, Merck Millipore). For labelling of histone markers, anti-H3K36me3 (1:8000, CST, cat.no.: 4909T) or anti-H3K27me3 (1:6000, CST, cat.no.: 9733T) primary antibodies were used, then visualized by Alexa 568 conjugated secondary antibody (1:10000, Molecular Probes) in dSTORM or Alexa 555 conjugated secondary antibody (1:2000, Molecular Probes) in confocal imaging.
 
-## Confocal and STED imaging and analysis
+### Confocal and STED imaging and analysis
 
 Confocal images were acquired on a Zeiss LSCM 710 microscope using a 20x (NA = 0.8) or a 63x (NA = 1.4) Plan Apo objective or a Leica TCS SP8 STED 3X microscope using a 100x (NA = 1.4) Plan Apo objective. STED images were acquired on the Leica TCS SP8 STED 3X microscope using 660 nm STED (1.5 W, continuous wave) laser for depletion (in combination with Alexa 546). The same image acquisition settings were applied on each sample for comparison. A moderate degree of deconvolution was applied to the recorded STED images using the Huygens STED Deconvolution Wizard (Huygens Software), based on theoretical point spread function (PSF) values. Fluorescence images were processed using ZEN and ImageJ (Fiji) software. 3D projection movies (Figure 7—videos 1–4) were constructed from Z-stack images captured by confocal or STED imaging.
 
-## dSTORM imaging and image reconstruction
+### dSTORM imaging and image reconstruction
 
 Super-resolution images were obtained and reconstructed as previously described (Rona et al., 2018). Briefly, dSTORM images were recorded using an in-house built imaging platform based around an inverted microscope. Two color imaging was carried out sequentially on samples labelled with SNAP-Surface Alexa Fluor 647 and Alexa Fluor 568. The imaging buffer, consisting of 1 mg/ml glucose oxidase, 0.02 mg/ml catalase, 10% glucose, 100 mM mercaptoethylamine (MEA) in PBS, was mixed and added just before imaging. For display purposes, super-resolution images shown in the manuscript have been adjusted for brightness and smoothed; however, quantitative analysis were performed on images before being manually processed to avoid any user bias.
 
-## Interaction factor
+### Interaction factor
 
 The interaction factor (IF) quantifies the colocalization of red and green foci within a cell nucleus by measuring the area of overlap between the two sets of foci (Bermudez-Hernandez et al., 2017; Whelan et al., 2018). The positions of the green foci are then randomized and the overlap between the two colors is measured again. This randomization is repeated 20 times, and the interaction factor is the ratio between the experimental overlap area and the mean of the randomized overlap areas. If the red and green foci were completely independent of each other, the IF value would equal one. A value greater than one signifies a higher degree of colocalization compared to a random sample. Non-parametric Mann-Whitney U test was used to calculate statistics on the graphs. Differences of the IF values were considered statistically significant at p<0.0001 as indicated in Figure 8C–D. Data are presented from two independent biological experiments.

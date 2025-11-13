@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.46677.001 A mucosal infectious disease episode can render the host either more or less susceptible to recurrent infection, but the specific mechanisms that tip the balance remain unclear. We investigated this question in a mouse model of recurrent urinary tract infection and found that a prior bladder infection resulted in an earlier onset of tumor necrosis factor-alpha (TNFɑ)-mediated bladder inflammation upon subsequent bacterial challenge, relative to age-matched naive mice. However, the duration of TNFɑ signaling activation differed according to whether the first infection was chronic (Sensitized) or self-limiting (Resolved). TNFɑ depletion studies revealed that transient early-phase TNFɑ signaling in Resolved mice promoted clearance of bladder-colonizing bacteria via rapid recruitment of neutrophils and subsequent exfoliation of infected bladder cells. In contrast, sustained TNFɑ signaling in Sensitized mice prolonged damaging inflammation, worsening infection. This work reveals how TNFɑ signaling dynamics can be rewired by a prior infection to shape diverse susceptibilities to future mucosal infections.
+A mucosal infectious disease episode can render the host either more or less susceptible to recurrent infection, but the specific mechanisms that tip the balance remain unclear. We investigated this question in a mouse model of recurrent urinary tract infection and found that a prior bladder infection resulted in an earlier onset of tumor necrosis factor-alpha (TNFɑ)-mediated bladder inflammation upon subsequent bacterial challenge, relative to age-matched naive mice. However, the duration of TNFɑ signaling activation differed according to whether the first infection was chronic (Sensitized) or self-limiting (Resolved). TNFɑ depletion studies revealed that transient early-phase TNFɑ signaling in Resolved mice promoted clearance of bladder-colonizing bacteria via rapid recruitment of neutrophils and subsequent exfoliation of infected bladder cells. In contrast, sustained TNFɑ signaling in Sensitized mice prolonged damaging inflammation, worsening infection. This work reveals how TNFɑ signaling dynamics can be rewired by a prior infection to shape diverse susceptibilities to future mucosal infections.
 
 ## Introduction
 
@@ -37,59 +37,75 @@ The diverging susceptibilities of mice to rUTI as a consequence of the outcome o
 
 ## Results
 
-## Infection history alters acute bladder inflammation kinetics during recurrent UTI
+### Infection history alters acute bladder inflammation kinetics during recurrent UTI
 
 To assess the contribution of host infection history to rUTI susceptibility, we utilized a previously described recurrent cystitis model in adult (16 weeks old) C3H/HeN mice (Figure 1A). Relative to age-matched Adult Naive mice (no history of infection), C3H/HeN mice that spontaneously resolve an initial acute bladder infection are referred to herein as ‘Resolved.’ In contrast, mice with a history of chronic cystitis lasting two weeks or more prior to antibiotic therapy (which sterilizes the bladder) are referred to herein as ‘Sensitized.’ In response to challenge infection, the majority of Sensitized mice develop severe recurrent cystitis that often becomes chronic, whereas cystitis in Adult Naive mice is more moderate and few mice develop chronic cystitis. In contrast, Resolved mice are highly resistant to severe recurrent cystitis during the challenge infection and none develop chronic infections (Hannan et al., 2010; O'Brien et al., 2016).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig1-v1.jpg)
 
-**Figure 1.:** (A) An illustration of C3H/HeN recurrent cystitis model. (B) and (C) C3H/HeN Resolved and Sensitized mice, and Adult Naive mice as a control, were infected with 108 cfu UTI89 or PBS and sacrificed at denoted time points. (B) Hematoxylin and eosin-stained bladder sections were assessed in a blinded fashion. Representative images are shown; scale bars = 50 μm. (C) Histopathology scores were determined as described in the Materials and methods and the degree of inflammation was assessed based on levels of immune cell infiltration, edema, and urothelial integrity. N = 2 independent experiments were conducted. Data points represent values for each individual mouse, bars indicate median values. Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, Kruskal-Wallis test with Dunn’s correction for multiple comparisons.  10.7554/eLife.46677.003Figure 1—source data 1.
+**Figure 1.:** (A) An illustration of C3H/HeN recurrent cystitis model. (B) and (C) C3H/HeN Resolved and Sensitized mice, and Adult Naive mice as a control, were infected with 108 cfu UTI89 or PBS and sacrificed at denoted time points. (B) Hematoxylin and eosin-stained bladder sections were assessed in a blinded fashion. Representative images are shown; scale bars = 50 μm. (C) Histopathology scores were determined as described in the Materials and methods and the degree of inflammation was assessed based on levels of immune cell infiltration, edema, and urothelial integrity. N = 2 independent experiments were conducted. Data points represent values for each individual mouse, bars indicate median values. Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, Kruskal-Wallis test with Dunn’s correction for multiple comparisons.
 
 We performed challenge UPEC infections in Resolved and Sensitized mice four weeks after the initiation of a ten-day course of antibiotics to clear the initial infection. Previous studies have found that this ‘convalescence’ period is sufficient for healing of the bladder mucosa and a return to a non-inflamed, though remodeled, state. In Sensitized mice this remodeling is evidenced by a hyperplastic urothelium that has a defect in terminal differentiation and the presence of persistent lymphoid follicles, which are not necessary for sensitization but often appear with extended (longer than two weeks) duration of initial infection (Hannan et al., 2010; O'Brien et al., 2016). Age-matched Adult Naive mice that were initially mock-infected with PBS in parallel served as a control (Figure 1A). Histopathological analysis of the urinary bladder after challenge with 108 colony-forming units (cfu) of the UPEC strain UTI89 revealed significant differences in the severity and kinetics of bladder inflammation in the previously infected mouse groups relative to Adult Naive mice (Figure 1B–C). Whereas the majority of Resolved and Sensitized mice had severe bladder inflammation (median bladder histopathology scores of 5 for each group) at 6 hpi, none of the Adult Naive mice had severe bladder inflammation (median histopathology score of 2.5). By 24 hpi, the severity of bladder inflammation had waned significantly in Resolved mice and trended lower in Sensitized mice (median bladder histopathology scores of 1 and 2, respectively), but had increased in Adult Naive mice, though not to a severe level in most individuals, with a median bladder histopathology score of 3.5.
 
-## Infection history alters the course of bladder pathophysiology during recurrent UTI
+### Infection history alters the course of bladder pathophysiology during recurrent UTI
 
 Consistent with previous work using a 107 cfu challenge (O'Brien et al., 2016), we observed significantly lower titers at 6 hpi in mice with a history of UTI relative to Adult Naive mice (Figure 2A), indicating that the enhanced bladder inflammation at 6 hpi in previously infected mice was not a consequence of higher bacterial burdens. At 24 hpi, a bimodal distribution of bladder bacterial burdens was observed in mice with a previous history of UTI, with 11 of 14 Sensitized mice experiencing a bloom of UPEC to levels between 105 and 108 cfu/bladder. These titers are similar to or higher than those seen in Adult Naive mice, with an increase in overall median bacterial burden from 3.2 × 104 at 6 hpi to 8.6 × 105 cfu/bladder at 24 hpi. In contrast, the median bacterial burden in Resolved mice decreased from 1.7 × 105 at 6 hpi to 1.6 × 104 cfu/bladder at 24 hpi, though 6 of 17 mice had high bacterial burdens above 105 cfu/bladder at 24 hpi (Figure 2A). However, this subset of Resolved mice with higher bladder titers at 24 hpi did not reflect a propensity for chronic infection, as only one of 25 Resolved mice infected with 108 cfu UTI89 developed chronic infection lasting four weeks, levels similar to those seen in ‘resistant’ C57BL/6J mice (Hannan et al., 2010). The pattern of bladder edema as indicated by the weights of these bladders mirrored the patterns of bladder inflammation observed by histopathology (Figure 2B). Most notably, previously infected mice, whether Resolved or Sensitized, had significantly increased bladder weights at 6 hpi (relative to mock-infected mice with the same infection history) that by 24 hpi had decreased significantly in Resolved mice but remained elevated in Sensitized mice. Bladder weights in Adult Naive mice were not significantly increased until 24 hpi. Bladder levels of the pro-inflammatory cytokines IL-6, CXCL1, and CCL2 followed similar patterns, with sharply increased levels at 6 hpi in previously infected mice relative to Adult Naive mice and waning of these levels by 24 hpi in Resolved, but not in Sensitized, mice. In Adult Naive mice, a gradual increase of these cytokines was observed from 6 hpi to 24 hpi (Figure 2C). Taken together, these data demonstrate that a prior UTI in C3H/HeN mice confers the ability to mount a robust early phase (first 6 hpi) inflammatory response to UPEC infection not seen in Adult Naive mice, and that this inflammation is more likely to be sustained in Sensitized mice.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig2-v1.jpg)
 
-**Figure 2.:** C3H/HeN Resolved and Sensitized mice, and Adult Naive mice as a control, were infected with 108 cfu UTI89 or PBS and sacrificed at 6 or 24 hpi. (A) Bladder bacterial burdens (cfu/bladder) and (B) bladder edema were assessed in N = 4 independent experiments. Bladder edema was assessed by measuring the wet tissue weight of bladders immediately after sacrifice. (C) Levels of the cytokines CXCL1, IL-6, and CCL2 were assessed by ELISA of bladder homogenate supernatants from samples shown in panel C, which were collected from N = 3 independent experiments and assayed simultaneously in duplicate. Data points represent values for each individual mouse (the ELISA values are the average of two technical replicates), bars indicate median values, negative results are plotted at the limit of detection (dotted line). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Kruskal-Wallis test with Dunn’s correction for multiple comparisons.  10.7554/eLife.46677.005Figure 2—source data 1.
+**Figure 2.:** C3H/HeN Resolved and Sensitized mice, and Adult Naive mice as a control, were infected with 108 cfu UTI89 or PBS and sacrificed at 6 or 24 hpi. (A) Bladder bacterial burdens (cfu/bladder) and (B) bladder edema were assessed in N = 4 independent experiments. Bladder edema was assessed by measuring the wet tissue weight of bladders immediately after sacrifice. (C) Levels of the cytokines CXCL1, IL-6, and CCL2 were assessed by ELISA of bladder homogenate supernatants from samples shown in panel C, which were collected from N = 3 independent experiments and assayed simultaneously in duplicate. Data points represent values for each individual mouse (the ELISA values are the average of two technical replicates), bars indicate median values, negative results are plotted at the limit of detection (dotted line). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Kruskal-Wallis test with Dunn’s correction for multiple comparisons.
 
-## Isogenic mice with different infection histories show distinct bladder transcriptomic profile kinetics
+### Isogenic mice with different infection histories show distinct bladder transcriptomic profile kinetics
 
 To explore the transcriptomic signatures driving the different patterns of inflammatory responses in C3H/HeN mice with different UTI histories, we performed multiplexed, paired-end RNA-seq experiments on rRNA-depleted RNA isolated from whole bladders. Adult Naive, Sensitized, and Resolved mice were infected with 108 cfu UTI89 or mock-infected with PBS. Differential gene expression was then determined by comparing samples obtained from Adult Naive, Sensitized and Resolved mice at 3.5, 6 and 24 hpi to bladders with the same infection history but mock-infected with PBS for 3.5 hr. Gene fold changes in UPEC-infected mice were calculated relative to mock-infected counterparts using normalized reads. The transcriptomic profiles displayed patterns similar to those seen in the inflammatory profiles (Figure 3A). In Adult Naive mice, the number of differentially expressed genes (DEGs) increased with time, starting low (291 genes at 3.5 hpi), increasing somewhat by 6 hpi (5309 genes), and peaking at 24 hpi (9249 genes). However, in both Resolved and Sensitized mice, the number of DEGs was relatively low at 3.5 hpi (127 and 944 genes, respectively), but peaked at 6 hpi (10872 and 10133 genes, respectively), and decreased somewhat by 24 hpi (7793 and 8252 genes, respectively; Figure 3B). To obtain a global view of the interplay among infection history, infection status, and gene expression, principal component analyses (PCA) were performed. The PCA plot of the mock-infected mice demonstrated that Resolved mice were similar to Adult Naive mice (Figure 3C). However, Sensitized mice clustered separately, likely due in part to the presence of lymphoid follicles, similar to a previous study (O'Brien et al., 2016). The number of genes that were differentially expressed between the mock-infected Sensitized vs. Resolved groups (1019 genes) was similar to the number found in a previous study (992 genes) (O'Brien et al., 2016), with 357 of the differentially expressed genes and 98 of the 139 enriched pathways being the same between studies (Figure 3—figure supplement 1). Combining all the experimental groups in one PCA shows that the mice infected for 6 or 24 hr clustered separately from mice infected for 3.5 hr or mock-infected on the PC1 axis, regardless of infection history. This clustering is likely driven by infiltration of immune cells into the bladder tissue between 3.5 and 6 hpi in all mice. In contrast, Sensitized mice clustered separately from Resolved and Adult Naive mice on the PC2 axis, irrespective of time point (Figure 3D).
 
-## TNFα receptor pathway activation dynamics correlate with host susceptibility to recurrent cystitis
+![Figure 3.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig3-v1.jpg)
+
+**Figure 3.:** C3H/HeN Resolved and Sensitized mice, and Adult Naive mice as a control, were infected with 108 cfu UTI89 or mock-infected with PBS. RNA was isolated from whole bladders obtained from mice at 3.5, 6, or 24 hpi (eight mice per group for mock-infected and 3.5 hpi; three mice per group at 6 hpi; at 24 hpi, 4 Adult Naive, 5 Resolved, 6 Sensitized) in N = 4 independent infection experiments and grouped into N = 2 independent sequencing experiments. All mock-infected bladders were harvested at 3.5 hpi for baseline controls. (A) The number of significantly differentially expressed genes at each time point compared to mock-infected mice with the same infection history. (B) Volcano plot of statistically significantly differentially expressed genes (DEGs) of Adult Naive, Resolved, and Sensitized mice (infected vs. mock-infected); the number of DEGs is denoted on each graph. (C) Principal component analysis (PCA) of gene expression in mock-infected mice. See also Figure 3—figure supplement 1. (D) PCA of gene expression in all mouse groups at all time points, with shapes indicating different time points post-infection. Each dot represents the transcriptomic profile of a mouse. The PC1 and PC2 axis labels in C) and D) represent principal components 1 and 2, respectively, followed by the percentage of variance they account for.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** A previous study performed RNA-seq of whole bladders of Sensitized vs. Resolved mice during convalescence (after antibiotics but prior to challenge infection) (O'Brien et al., 2016). Here we compared the number of significantly differentially expressed genes from that study (‘Previous work’) to the number of significantly differentially expressed genes between Sensitized vs. Resolved mice after a mock infection (bladders harvested 3.5 hr after PBS inoculation) in the present study (‘Current work’). The overlap between (A) significantly differentially expressed genes and (B) enriched pathways is shown.
+
+### TNFα receptor pathway activation dynamics correlate with host susceptibility to recurrent cystitis
 
 Pathway analysis of the biological processes represented by the DEGs showed that in all mouse groups (Adult Naive, Resolved, and Sensitized) across all time points of infection, 13 or more of the top 20 most pathways enriched in UPEC-infected versus mock-infected bladders were directly related to inflammation and immunity, including immune cell development and recruitment, cytokine expression and pattern recognition receptor signaling (Supplementary file 1). TNFɑ receptor 1 (TNFR1) and TNFɑ receptor 2 (TNFR2) signaling pathways were among the most highly upregulated pathways as determined by z-score during at least one time point for each mouse group (Supplementary files 1 and 2). TNFɑ is a cytokine involved in systemic inflammation, cell proliferation, and cell death. Notably, TNFɑ has been shown to be upregulated in C57BL/6 and CBA mice two hours after bladder infection (Chan et al., 2013; Duell et al., 2012), demonstrating that this response is not unique to C3H/HeN mice. Hierarchical clustering of the relative expression of genes known to be upregulated by TNFɑ signaling demonstrated the following patterns (Figure 4): all mock-infected mice (whether Adult Naive, Resolved, or Sensitized) clustered together (Figure 4A). At 3.5 hpi, 3 of 8 Resolved and 7 of 8 Sensitized mice infected with UPEC had evidence of TNFɑ pathway activation, clustering separately from mock-infected controls and from UPEC-infected Adult Naive mice. At 6 hpi, all Resolved (3 out of 3) and Sensitized (3 out of 3) mice, but only 1 out of 3 Adult Naive mice, infected with UPEC had evidence of strong TNFɑ pathway activation, clustering apart (far left side of dendrogram) from both mock-infected mice and the remaining UPEC-infected Adult Naive mice, of which the latter were intermediate in activation status (to the left of the mock-infected mice). At 24 hpi, strong TNFɑ signaling (far left clustering on the dendrogram) was present in 4 of 6 UPEC-infected Sensitized mice, but not in any Adult Naive or Resolved mice. Nonetheless, the remaining UPEC-infected Adult Naive and Sensitized mice had varying levels of activation at 24 hpi that clearly set them apart from both mock-infected controls and UPEC-infected Resolved mice, neither of which showed evidence of TNFR pathway activation at 24 hpi (Supplementary file 2). Pathway activation patterns were very similar between Resolved and Sensitized mice at 6 hpi. However, among the 100 most significantly enriched pathways at 24 hpi (Supplementary file 1), Resolved and Sensitized mice each possessed 37 pathways that were unique to their respective groups. Pathways unique to Sensitized mice were predominantly related to inflammation, whereas pathways unique to Resolved mice were related to a broader number of functions, such as cell growth and neuron ontogeny, but many of these signals were not strong enough to be assigned a z-score. Nevertheless, some pathways unique to Resolved mice are known to have anti-inflammatory effects, such as signaling pathways associated with derivatives of the omega-3-fatty acid docosahexaenoic acid (DHA), which can lead to production of factors such as resolvins that facilitate the resolution of inflammation (Serhan, 2014).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig4-v1.jpg)
 
-**Figure 4.:** Pathway enrichment analysis and specific gene analysis was performed on the whole bladder RNA-seq data shown in Figure 3. (A) Heatmaps of expression of up-regulated genes in TNFα signaling pathways from Adult Naive, Resolved, and Sensitized mice at indicated time points. The dendrogram at the top of each heat map was produced by hierarchical clustering of gene expression. The same 3.5 hpi mock-infected controls are included as baseline controls for each heatmap. Specific fold changes and down-regulated genes are listed in Supplementary file 2. (B) Gene expression fold change of Tnf (encodes TNFα) and Ptgs2 (encodes COX-2) in infected Adult Naive, Resolved, and Sensitized mice at indicated time points relative to mock-infected controls. Gene fold changes were estimated based on normalized counts using a shrinkage estimation model by DESeq2. Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Wald test, multiple comparison errors were corrected by Benjamini-Hochberg false-discovery rate correction. See also Supplementary files 1 and 2.  10.7554/eLife.46677.010Figure 4—source data 1.
+**Figure 4.:** Pathway enrichment analysis and specific gene analysis was performed on the whole bladder RNA-seq data shown in Figure 3. (A) Heatmaps of expression of up-regulated genes in TNFα signaling pathways from Adult Naive, Resolved, and Sensitized mice at indicated time points. The dendrogram at the top of each heat map was produced by hierarchical clustering of gene expression. The same 3.5 hpi mock-infected controls are included as baseline controls for each heatmap. Specific fold changes and down-regulated genes are listed in Supplementary file 2. (B) Gene expression fold change of Tnf (encodes TNFα) and Ptgs2 (encodes COX-2) in infected Adult Naive, Resolved, and Sensitized mice at indicated time points relative to mock-infected controls. Gene fold changes were estimated based on normalized counts using a shrinkage estimation model by DESeq2. Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Wald test, multiple comparison errors were corrected by Benjamini-Hochberg false-discovery rate correction. See also Supplementary files 1 and 2.
 
 We also specifically analyzed the gene expression pattern of TNFɑ, along with cyclooxygenase-2 (COX-2, encoded by the Ptgs2 gene), an enzyme critical in mediating urothelial inflammation during severe acute and recurrent cystitis (Hannan et al., 2014; O'Brien et al., 2016). The dynamics of Ptgs2 expression closely mirrored that of Tnf expression and differed with infection history (Figure 4B). At 3.5 hpi, Ptgs2 expression relative to mock-infected controls was significantly increased only in Sensitized mice. At 6 hpi, Adult Naive, Resolved, and Sensitized mice all showed evidence of bladder Ptgs2 expression. At 24 hpi Ptgs2 expression was further increased in Adult Naive mice and was sustained in Sensitized mice but fell to mock-infected levels in Resolved mice (Figure 4B). Thus, a robust early phase (first six hpi) TNFɑ signaling response is observed in C3H/HeN mice with a prior bladder infection, whether chronic (Sensitized) or self-limiting (Resolved). However, among previously infected mice (Sensitized and Resolved), TNFɑ signaling is sustained through 24 hpi only in Sensitized mice, who also experience high expression of bladder Ptgs2, which is known to mediate mucosal immune damage to the urothelium and precipitate severe chronic and recurrent cystitis (Hannan et al., 2010; O'Brien et al., 2016).
 
-## TNFα depletion increases bladder intracellular bacterial burdens in Resolved mice during acute rUTI
+### TNFα depletion increases bladder intracellular bacterial burdens in Resolved mice during acute rUTI
 
 Previous studies in naive mice revealed that during infection, UPEC adhere to and invade into the superficial umbrella cells of the bladder epithelium, where they replicate and aggregate into intracellular bacterial communities (IBCs) within the cytosol, permitting the bacteria to increase in number and avoid innate immune defenses and the flow of urine (Justice et al., 2004; Mulvey et al., 1998; Anderson et al., 2003). We previously found that C3H/HeN mice that had experienced a prior UTI exhibit resistance to the stable formation of IBCs upon challenge infection: Resolved bladders harbored few if any IBCs at 6 hpi and none at 24 hpi, and no IBCs were observed in Sensitized bladders at either time point (O'Brien et al., 2016). To determine whether TNFɑ signaling during the early phase (first six hpi) of infection mediates this intracellular colonization resistance, we used a single dose of anti-TNFɑ antibody to deplete TNFɑ prior to challenge with 107 cfu of UTI89. Bacterial colonization and IBC formation was compared to isotype-treated control mice in urine, bladders and kidneys, the latter because C3H/HeN mice are genetically prone to vesicoureteral reflux (Murawski et al., 2010). At 6 hpi, bladder bacterial burdens in Resolved mice given anti-TNFɑ antibody were increased relative to isotype-treated mice, while burdens in Adult Naive and Sensitized mice were unchanged (Figure 5A). Interestingly, TNFɑ depletion did not affect kidney colonization in any group (Figure 5B), but TNFɑ-depleted Resolved mice had lower urine titers at 6 hpi (Figure 5C). Due to the combination of higher bladder bacterial burdens and lower urine titers at 6 hpi, we hypothesized that TNFɑ depletion may have blocked the intracellular colonization resistance phenotype in Resolved mice, thus allowing IBC formation. Using fluorescence microscopy after infection with green fluorescent protein (GFP)-expressing UTI89, we found that TNFɑ depletion resulted in significantly more IBCs in Resolved bladders at 6 hpi, compared to isotype-treated controls (Figure 5D). In contrast, TNFɑ depletion did not affect IBC counts at 6 hpi in Adult Naive or Sensitized mice. In Resolved mice, bladder, but not kidney, bacterial burdens remained elevated in the TNFɑ-depleted group at 24 hpi (Figure 5E and F). By 7 days post-infection, urine titers were elevated in TNFɑ-depleted Resolved mice relative to isotype-treated mice (Figure 5G), suggesting that the increased IBC formation was allowing for more robust and longer-lasting infections. However, though TNFɑ depletion made Resolved mice more susceptible to acute cystitis upon challenge, a single dose of anti-TNFɑ antibody was insufficient to overcome their resistance to chronic infection, as 0 of 11 mice treated with anti-TNFɑ developed chronic cystitis lasting 4 weeks, compared to 0 of 11 mice treated with isotype. Nonetheless, TNFɑ depletion was sufficient to overcome intracellular colonization resistance during acute cystitis in Resolved, but not Sensitized mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig5-v1.jpg)
 
-**Figure 5.:** Adult Naive (blue symbols), Resolved (gold symbols), and Sensitized (purple symbols) mice were treated with anti-TNFα (open circles) or isotype control (solid circles) antibody 18 hr prior to infection with 107 cfu UTI89 and sacrificed at indicated time points. Bacterial burdens were assessed at 6 hpi in the (A) bladder (cfu/bladder), (B) kidneys (cfu/kidney pair), and (C) urine (cfu/ml) in N = 5 independent experiments. (D) Intracellular bacterial communities (IBCs) were enumerated in N = 7 independent experiments. Bacterial burdens were enumerated at 24 hpi in Resolved mice for the (E) bladder (cfu/bladder) and (F) kidneys (cfu/kidney pair) in N = 2 independent experiments. (G) Urine bacterial burdens (cfu/ml) were measured in Resolved mice at 7 days post-inoculation (dpi); data from five independent experiments are depicted. Each data point represents the value for an individual mouse, bars indicate median values, negative results are plotted at the limit of detection (dotted line). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, Mann-Whitney U test.  10.7554/eLife.46677.012Figure 5—source data 1.
+**Figure 5.:** Adult Naive (blue symbols), Resolved (gold symbols), and Sensitized (purple symbols) mice were treated with anti-TNFα (open circles) or isotype control (solid circles) antibody 18 hr prior to infection with 107 cfu UTI89 and sacrificed at indicated time points. Bacterial burdens were assessed at 6 hpi in the (A) bladder (cfu/bladder), (B) kidneys (cfu/kidney pair), and (C) urine (cfu/ml) in N = 5 independent experiments. (D) Intracellular bacterial communities (IBCs) were enumerated in N = 7 independent experiments. Bacterial burdens were enumerated at 24 hpi in Resolved mice for the (E) bladder (cfu/bladder) and (F) kidneys (cfu/kidney pair) in N = 2 independent experiments. (G) Urine bacterial burdens (cfu/ml) were measured in Resolved mice at 7 days post-inoculation (dpi); data from five independent experiments are depicted. Each data point represents the value for an individual mouse, bars indicate median values, negative results are plotted at the limit of detection (dotted line). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, Mann-Whitney U test.
 
-## TNFα signaling restricts bladder intracellular colonization by UPEC in Resolved mice by promoting the exfoliation of infected bladder epithelial cells
+### TNFα signaling restricts bladder intracellular colonization by UPEC in Resolved mice by promoting the exfoliation of infected bladder epithelial cells
 
 We then sought to delineate how TNFɑ signaling restricts IBC formation in Resolved mice. We found that TNFɑ depletion did not affect the intracellular bladder bacterial burdens in Resolved mice at 3 or 4.5 hpi (Figure 6A), nor did it affect the number or morphology of IBCs present at 4.5 hpi (Figure 6B and Figure 6—figure supplement 1), indicating that TNFɑ signaling was neither limiting bacterial entry into urothelial cells nor affecting early IBC formation. We reasoned therefore that TNFɑ signaling was altering the inflammatory state of the bladder and thereby inducing exfoliation of the IBC-containing urothelial cells into the urine, as urothelial cell exfoliation is a known host defense mechanism against UPEC infection (Mulvey et al., 1998; Choi et al., 2016). Scanning electron microscopy (SEM) analysis of the urothelial surface of TNFɑ-depleted vs. control-treated Resolved mice at 6 hpi revealed striking differences: without TNFɑ depletion, clusters of neutrophils regularly gathered on the bladder surface, often underneath or around bulging umbrella cells that were likely ready to exfoliate, or in the gaps left by already exfoliated cells (Figure 6C), consistent with previous observations in UPEC-infected Resolved mice (O'Brien et al., 2016). With TNFɑ depletion, however, the bladder surface was minimally perturbed, with occasional bacteria on the surface and fewer neutrophils that were more scattered, rather than clustered, and little evidence of exfoliation (Figure 6C). Concordantly, bladder weights and neutrophils in the urine (pyuria) were each reduced in TNFɑ-depleted Resolved mice relative to isotype-treated mice at 6 hpi (Figure 6D–E).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig6-v1.jpg)
+
+**Figure 6.:** Resolved mice were treated with anti-TNFα or isotype control antibody 18 hr prior to infection with 107 cfu UTI89 and sacrificed at indicated time points. (A) Bladder intracellular bacterial burdens (cfu/bladder) of Resolved mice as determined by the ex vivo gentamicin protection assay in two independent experiments are shown at the indicated time points. (B) IBCs were enumerated in Resolved mice at 4.5 hpi with or without TNFα depletion from N = 2 experiments. See also Figure 6—figure supplement 1. (C) Scanning electron microscopy was used to assess the bladder luminal surface at 6 hpi in two independent experiments with n = 6 mice per group. Scale bars = 50 μm; white boxes outline areas visualized at a higher magnification to the right. At 6 hpi, (D) bladder edema and (E) pyuria were measured in N = 3 independent experiments. (F) Flow cytometry was performed on bladder single cell suspensions from Resolved mice in N = 2 independent experiments. Neutrophils were defined as CD11b+, Ly6G+, F4/80- cells. Data points represent value for each individual mouse, bars indicate median values, negative results are plotted at the limit of detection (dotted line). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05, **p<0.01, Mann-Whitney U test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Resolved mice were pre-treated with anti-TNF⍺ or isotype control antibody 18 hr prior to infection with 107 cfu GFP-expressing UTI89 (green) and sacrificed at 4.5 hpi. Wheat germ agglutinin (WGA, red) was used to visualize the cell surface. Fluorescent microscopy was performed to detect bladder IBCs and representative images are shown. Scale bar = 20 μm. N = 2 independent experiments were performed with n = 5–6 mice per group.
+
 Neutrophil recruitment to the bladder and subsequent transmigration into the lumen is associated with urothelial exfoliation and is required to prevent overwhelming infection (Haraoka et al., 1999), but excessive neutrophil-induced inflammation can increase the severity of acute cystitis and, correspondingly, the incidence of chronic cystitis by causing mucosal wounding (Hannan et al., 2014). To test whether TNFɑ depletion affected overall neutrophil recruitment to the bladder versus altering neutrophil transmigration across the urothelium, we performed flow cytometry of single cell suspensions generated from Resolved bladders at 6 hpi. TNFɑ-depleted mice had significantly fewer bladder-associated neutrophils than isotype-treated control mice (Figure 6F), indicating diminished neutrophil recruitment to the bladder in the absence of TNFɑ signaling. Thus, in C3H/HeN mice, a history of self-resolving UTI imparts the bladder with resistance to intracellular UPEC colonization that is mediated by bladder TNFɑ signaling, which promotes neutrophilic inflammation and urothelial exfoliation, thereby causing the shedding of IBC-containing cells.
 
-## TNFα depletion decreases the severity of acute rUTI in Sensitized mice
+### TNFα depletion decreases the severity of acute rUTI in Sensitized mice
 
 In Sensitized mice, TNFɑ depletion did not restore IBC formation at 6 hpi (Figure 5D), nor did it affect overall bladder bacterial burdens (Figure 5A), suggesting that colonization resistance during the first hours of challenge infection is unrelated to TNFɑ signaling in these mice. Previous work revealed that COX-2-mediated inflammation in the bladders of Sensitized mice during the first 24 hr of challenge infection overcame colonization resistance to allow severe acute and chronic rUTI, in part by promoting excessive neutrophil transmigration across the epithelium that caused severe bladder inflammation and mucosal wounding (Hannan et al., 2014; O'Brien et al., 2016). Treatment of Sensitized mice with a COX-2 inhibitor just prior to UPEC challenge protected against this outcome. Our findings that TNFɑ depletion in Resolved mice reduced neutrophil recruitment to the bladder as well as pyuria and urothelial exfoliation (Figure 6) suggest that sustained TNFɑ signaling in Sensitized mice may exacerbate acute bladder inflammation and mucosal wounding, predisposing to severe cystitis. We found that TNFɑ depletion in Sensitized mice resulted in a significant reduction in bladder bacterial burdens at 24 hpi (Figure 7A), with a decrease in median bladder titer from 3.8 × 106 cfu/bladder in isotype-treated mice to 8.4 × 103 cfu/bladder in TNFɑ-depleted mice. The effect of TNFɑ depletion in Sensitized mice was specific to the bladder, as kidney and urine bacterial burdens were unchanged (Figure 7B–C). TNFɑ depletion also significantly reduced bladder inflammation (edema) (Figure 7D), but, unlike with Resolved mice, did not affect the degree of pyuria observed Figure 7E. Thus, compared to Resolved mice, robust and sustained TNFɑ signaling in Sensitized mice induces prolonged inflammation through 24 hpi and promotes the development of severe acute cystitis.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46677/elife-46677-fig7-v1.jpg)
 
-**Figure 7.:** Sensitized mice were treated with anti-TNFα or isotype control antibody 18 hr prior to infection with 108 cfu UTI89 infection and sacrificed 24 hpi. Bacterial burdens were enumerated in the (A) bladder (cfu/bladder), (B) kidneys (cfu/kidney pair), and (C) urine (cfu/ml urine), and (D) bladder weight and (E) pyuria were assessed in five independent experiments. Data points represent values for each individual mouse, bars indicate median values, negative results are plotted at the limit of detection (dotted line in A, B, and C). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05. Mann-Whitney U test.  10.7554/eLife.46677.017Figure 7—source data 1.
+**Figure 7.:** Sensitized mice were treated with anti-TNFα or isotype control antibody 18 hr prior to infection with 108 cfu UTI89 infection and sacrificed 24 hpi. Bacterial burdens were enumerated in the (A) bladder (cfu/bladder), (B) kidneys (cfu/kidney pair), and (C) urine (cfu/ml urine), and (D) bladder weight and (E) pyuria were assessed in five independent experiments. Data points represent values for each individual mouse, bars indicate median values, negative results are plotted at the limit of detection (dotted line in A, B, and C). Actual P values are indicated on the graphs if >0.05, or are represented by the following symbols: *p<0.05. Mann-Whitney U test.
 
 ## Discussion
 
@@ -113,62 +129,233 @@ In summary, we show here that the nature and pattern of the bladder mucosal infl
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>C3H/HeN</td>
+      <td>Envigo</td>
+      <td>C3H/HeN Hsd</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>UTI89 pANT4</td>
+      <td>https://doi.org/10.1073/pnas.0308125100 (Justice et al., 2004)</td>
+      <td></td>
+      <td>Episomal enhanced GFP; Kanamycin- and ampicillin-resistant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>UTI89 attHK022::eGFP</td>
+      <td>https://doi.org/10.1128/IAI.73.11.7657-7668.2005 (Wright et al., 2005)</td>
+      <td>UTI89-KanR</td>
+      <td>Chromosomal enhanced GFP; Kanamycin-resistant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>UTI89 attλ::PSSH10-1</td>
+      <td>https://doi.org/10.1128/IAI.73.11.7657-7668.2005 (Wright et al., 2005)</td>
+      <td>UTI89-SpcR</td>
+      <td>Spectinomycin-resistant</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TNFα (rat IgG1 monoclonal, clone XT3.11)</td>
+      <td>BioXCell</td>
+      <td>BP0058, RRID:AB_1107764</td>
+      <td>10 mg/kg IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HRP isotype control (rat IgG1 monoclonal, clone XT3.11)</td>
+      <td>BioXCell</td>
+      <td>BP0088, RRID:AB_1107775</td>
+      <td>10 mg/kg IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b-PE conjugate (rat monoclonal, clone M1/70)</td>
+      <td>BD Biosciences</td>
+      <td>553311, RRID:AB_394775</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly6G-FITC conjugate (rat monoclonal, clone 1A8)</td>
+      <td>BioLegend</td>
+      <td>127605, RRID:AB_1236488</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80-APC conjugate (rat IgG1 monoclonal, clone BM8)</td>
+      <td>BioLegend</td>
+      <td>123115, RRID:AB_893493</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/32, FcR block (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>101301, RRID:AB_312800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duoset IL-6 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>DY406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duoset CXCL1 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>DY453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duoset CCL2 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>DY479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus kit</td>
+      <td>Qiagen</td>
+      <td>74136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboZero rRNA depletion kit</td>
+      <td>Illumina</td>
+      <td>MRZG12324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTScribe reverse transcriptase</td>
+      <td>Clontech</td>
+      <td>639536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>Salmon</td>
+      <td>0.8.2, RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>DESeq2</td>
+      <td>1.14.0, RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen Bioinformatics</td>
+      <td>RRID:SCR_008653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Wheat germ agglutinin, AlexaFluor 594 congugate</td>
+      <td>ThermoFisher</td>
+      <td>W11262</td>
+      <td>(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>ThermoFisher</td>
+      <td>D1306</td>
+      <td>(1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Prolong Gold Anti-fade</td>
+      <td>ThermoFisher</td>
+      <td>P36930</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 All animal experimentation was conducted according to the National Institute of Health guidelines for the housing and care of laboratory animals and performed in accordance with institutional regulations after review and approval by the Institutional Animal Care and Use Committee (animal protocol number 20180276) at Washington University in St. Louis, Missouri (Office of Laboratory Animal Welfare (OLAW) Assurance number A3381-01).
 
-## Bacterial strains
+### Bacterial strains
 
 The UPEC strain primarily used in this study was a kanamycin-resistant derivative of the human cystitis isolate UTI89 (Mulvey et al., 2001): UTI89 attHK022::COM-GFP (UTI89-KanR) (Wright et al., 2005). For UPEC challenge of previously infected mice, we used a spectinomycin-resistant derivative: UTI89 attλ::PSSH10-1 (UTI89-SpcR) (Wright et al., 2005). For enumeration of IBCs by epifluorescence microscopy, we used UTI89 pANT4, which contains a plasmid that constitutively expresses eGFP. Bacteria were routinely cultured in lysogeny broth (LB).
 
-## Mouse infections
+### Mouse infections
 
 Female C3H/HeN mice were purchased from Envigo (Indianapolis, IN). Bacterial strains were inoculated into 20 ml of LB directly from freezer stock, grown statically at 37°C overnight, and sub-cultured 1:1000 into 20 ml of fresh LB and again grown statically at 37°C for 18 hr. These cultures were spun at room temperature for 10 min at 3000 xg, re-suspended in 10 ml phosphate-buffered saline, pH = 7.4 (PBS), and diluted to approximately 2–4 × 109 cfu/ml (OD600 = 3.5). 50 μl of this suspension (~1–2 × 108 cfu) was inoculated into the bladders of 7–8 week old female Juvenile Naive mice by transurethral catheterization. All initial infections and most challenge infections were performed with a high-dose inoculum of 108 cfu UTI89 to reduce variability in infection dynamics and host responses (Hannan et al., 2010). For TNFα depletion studies in Figures 5 and 6, a 107 cfu UTI89 inoculum was used to keep consistent with COX-2 inhibitor treatment studies described previously (O'Brien et al., 2016).
 
-## IBC enumeration
+### IBC enumeration
 
 Bladders were aseptically removed and hemisected. Each hemisphere was splayed out on silica plates using forceps and pins. Bladders were fixed with 4% paraformaldehyde (room temperature, 1 hr, shaking), washed with PBS, and incubated with 0.01% Triton-X in PBS (10 min). Bladders were stained with wheat germ agglutinin Alexa Fluor 594 conjugate (Molecular Probes) and 4’,6-diamidino-2-phenylindole DAPI (Life Technologies), washed with PBS, and mounted on slides with Prolong Gold Anti-Fade (ThermoFisher). Images of bladder hemispheres were captured on a Zeiss Axio Imager M2 upright wide-field fluorescence microscope or a Zeiss Observer D1 inverted wide-field fluorescence microscope and the number of IBCs across the entire interior of the bladder was enumerated manually by ImageJ (NIH, ImageJ bundled with Java 1.8.0_101).
 
-## Tissue bacterial enumeration
+### Tissue bacterial enumeration
 
 At the indicated time points, mice were humanely euthanized and bladders were aseptically harvested and homogenized in PBS using a FastPrep-24 bead beater (MP Biomedicals, Santa Ana, CA). Homogenates were then serially diluted in PBS and spotted onto LB agar plates with and without antibiotic selection. Bladder intracellular bacterial burdens were determined using an ex vivo gentamicin protection assay performed as previously described (Mulvey et al., 1998) with the following modifications: after washing three times with PBS, bladders were incubated at 37°C for 75 min in gentamicin in RPMI cell culture medium with no serum added.
 
-## Urine collection, bacterial enumeration, and urine sediment analysis
+### Urine collection, bacterial enumeration, and urine sediment analysis
 
 Urines were collected by applying suprapubic pressure with proper restraint and collecting the urine stream in sterile 1.5 ml Eppendorf tubes. Urines were then serially diluted in PBS and 10 μl total of each dilution was spotted onto LB and LB with 25 μg/ml kanamycin (LB/Kan25) agar plates. Urine sediments were obtained by cyto-centrifuging 80 μl of a 1:10 dilution of the collected urine onto poly-L-lysine-coated glass slides and stained as described (Rosen et al., 2007). To assess pyuria, stained urine sediments were examined by light microscopy on an Olympus BX51 light microscope (Olympus America), and the average number of polymorphonuclear leukocytes (PMN) per 400x magnification field (hpf) was calculated from counting five fields. A semi-quantitative scoring system of 0–5 was modified from an earlier study to facilitate pyuria analysis: 0, less than 1 PMN/hpf; 1, 1–5 PMN/hpf; 2, 6–10 PMN/hpf; 3, 11–20 PMN/hpf, 4, 21–40 PMN/hpf, and 5,>40 PMN/hpf (Hannan et al., 2010; Hannan et al., 2014).
 
-## Recurrent UTI model
+### Recurrent UTI model
 
 Mice were initially inoculated with either 108 cfu of UTI89-KanR (convalescent) or PBS (Adult Naive) and longitudinal urinalysis was performed to determine disease outcome. Urines were collected at 1, 3, 7, 10, 14, 21, and 28 days post-infection (dpi) and mice with persistent high-titer bacteriuria, which we define as the presence of >104 cfu/mL of UTI89-KanR at every time point, were deemed to have chronic cystitis (Sensitized), and all other UPEC-infected mice were deemed to have resolved the infection (Resolved). At 28 dpi, all mice were treated with trimethoprim and sulfamethoxazole in the drinking water daily for 10 days at concentrations of 54 and 270 μg/ml, respectively (Schilling et al., 2002). During this time, longitudinal urinalysis was continued weekly to confirm clearance of bacteriuria. Four to six weeks after the initiation of antibiotic therapy mice were challenged with 107 or 108 cfu of UTI89-SpcR. Mice were humanely euthanized at various time points and tissue titers determined as above.
 
-## TNFɑ depletion in mice
+### TNFɑ depletion in mice
 
 Mice were administered anti-TNFɑ antibody (clone XT3.11) or isotype control (clone HRPN) (BioXCell, West Lebanon, NH) via intraperitoneal injection 18 hr before infection. Given the recommended dosage of 10 mg/kg, mice were administered 300 μg. Treatment was randomly assigned to each cage of mice.
 
-## Inflammation profiling
+### Inflammation profiling
 
 Mice were infected with 108 cfu of UPEC or PBS and were humanely euthanized at indicated time points. Bladder edema was determined obtained by weighing bladders in pre-weighed Eppendorf tubes and calculating bladder weight. Bladder homogenates were obtained via bead beating as described above, and after cfu plating, the remaining homogenates were spun down at 15,000 rpm for 5 min at 4°C and the supernatants were stored at −80°C. Cytokine expression in bladder homogenate supernatants was measured by enzyme-linked immunosorbent assay (ELISA) using DuoSet kits (R and D Systems, DY406, DY453, DY479) following the manufacturer’s instructions, with the following modifications: incubation with the capture antibody was lengthened to overnight at 4°C, and washes between incubations were performed five times instead of 3.
 
-## Histopathology and immunofluorescence
+### Histopathology and immunofluorescence
 
 Mice were infected with 108 cfu of UPEC or PBS and were humanely euthanized at indicated time points. For histopathology assessment, bladders were excised, fixed with Methacarn (60% methanol, 30% chloroform, 10% glacial acetic acid), embedded in paraffin blocks, and cut into 5 µm sections. Hematoxylin and eosin (H and E) staining was performed and bladder sections were scored in a blinded fashion by a veterinarian using a semi-quantitative scoring system: 0 = normal, 1 = subepithelial cell inflammatory infiltration (focal and multifocal), 2 = edema and subepithelial inflammatory cell infiltration (diffuse), 3 = marked subepithelial inflammatory cells with necrosis and neutrophils in and on bladder mucosal epithelium, 4 = inflammatory cell infiltrate extends into muscle in addition to criteria for grade 3, 5 = loss of surface epithelium (necrosis with full-thickness inflammatory cell infiltration) (Hopkins et al., 1998).
 
-## Flow cytometry
+### Flow cytometry
 
 Mice were infected with 107 cfu UPEC and were humanely euthanized at the indicated time point. Bladders were harvested and made into single-cell suspension via collagenase IV/DNase I digestion for 90 min at 37°C and passing through a 40 μm filter as previously described (Ingersoll et al., 2008). Cell surface markers were stained with fluorochrome-conjugated monoclonal antibodies (MAbs) (F4/80, CD11b, Ly6G from Biolegend and BD Biosciences) in FcR block (Biolegend). Cells were counterstained with propidium iodide (PI) prior to analysis on a FacsCalibur flow cytometer (BD Biosciences). Neutrophils were identified according to the following surface marker profile: CD45+ CD11b+ Ly6G+ F4/80- and relative abundance was reported as a percentage of live (PI-) cells. Data were analyzed with FlowJo software version 10.
 
-## Scanning electron microscopy.
+### Scanning electron microscopy.
 
 Mice were infected with 108 cfu UPEC or PBS. Bladders were fixed in their native state (prior to harvest) using the ‘balloon method’ (Walker et al., 2017). Briefly, the body cavity was opened, a catheter was inserted transurethrally and bladders were inoculated with 50 ul freshly prepared SEM fixative (2% paraformaldehyde, 2% glutaraldehyde in 0.1 M cacodylate, pH 7.4, warmed to 37°C). The bladder was clamped with a hemostat before the catheter was withdrawn, and then excised and placed in 1 ml EM fixative overnight. Bladders were then bisected, post-fixed in 1.0% osmium tetroxide, dehydrated in increasing concentrations of ethanol, further dehydrated at 31.1°C and 1072 p.s.i. for 16 min in a critical point dryer, then sputter-coated with 10 nm iridium and imaged on a Zeiss Crossbeam 540 FIB-SEM or a Zeiss Merlin FE-SEM.
 
-## RNA isolation
+### RNA isolation
 
 Mice infected with 108 cfu of UPEC or PBS were humanely euthanized at indicated time points. All mock-infected mice were euthanized at 24 hpi. Bladders were aseptically harvested, flash-frozen in liquid nitrogen, and stored at −80°C. RNA isolation from whole bladders was performed using the with QIAGEN RNeasy Plus kit (74136). RNA quality was spot-checked using the Bioanalyzer platform (Agilent) and all RNA integrity number (RIN) scores were 8.9 or higher.
 
-## Generation and analysis of RNA-Seq data
+### Generation and analysis of RNA-Seq data
 
 Illumina cDNA libraries were generated using a modified version of the RNAtag-seq protocol (Shishkin et al., 2015). Briefly, fragmented, dephosphorylated total RNA was ligated to barcoded DNA adapters carrying 5’-AN8-3’ barcodes and a 3’ blocking group. Barcoded RNAs were pooled, depleted of rRNA using RiboZero (Illumina MRZG12324), then reverse transcribed using SMARTScribe (Clontech) as described to add an adapter to the 3’ end of the cDNA by template switching (Zhu et al., 2001). Addition of Illumina P5 and P7 sequences to these cDNAs was achieved by PCR using tailed oligos targeting adapter sequences (Supplementary file 3). The resulting libraries were sequenced on the Illumina Nextseq 2500 platform to generate paired end reads. Samples were processed for library construction and sequencing in two batches: PBS mock-infected and UPEC-infected bladder RNA samples taken at 3.5 hpi were included in batch one; whereas UPEC-infected 6 and 24 hpi bladder RNA samples were processed 5 months later using the same reagents in batch two. Sequencing reads from each sample in a pool were demultiplexed based on their associated barcode sequence using custom scripts (https://github.com/broadinstitute/split_merge_pl; copy archived at https://github.com/elifesciences-publications/split_merge_pl) (Bandyopadhyay, 2019). Up to one mismatch in the barcode was allowed provided it did not make assignment of the read to a different barcode possible. Barcode sequences were removed from the first read as were terminal G’s from the second read that may have been added by SMARTScribe during template switching. Reads were aligned to Mus musculus Ensembl sequence GRCm38r94p6 mm10 using bbmap_37.10 (https://jgi.doe.gov/data-and-tools/bbtools/) and read counts were assigned to annotated transcripts using Salmon_0.8.2 (Patro et al., 2017). Differential expression and pathway analysis was conducted with DESeq2_1.14.0 (Love et al., 2014) and Ingenuity Pathway Analysis (https://www.qiagenbioinformatics.com/), respectively. Sequencing data were deposited in GEO database, accession number: GSE117532 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE117532).
 
-## Statistical analysis
+### Statistical analysis
 
 1) RNA-seq: DESeq2 assumes a negative binomial distribution for gene counts, normalizes for read depths and fits a generalized linear model. Statistical significance in gene expression differences were assessed by the Wald test and multiple comparison errors were corrected by Benjamini-Hochberg false-discovery rate correction (Padjusted). Padjusted <0.05 was used as the cutoff for significantly differentially expressed genes without a fold-change cutoff. IPA employs a right-tailed Fisher’s exact test, with Padjusted <0.05 deemed significantly enriched. A fold change cutoff of 2 was used in IPA analysis. Principal component analyses were performed with DESeq2 rlog counts using default settings in DESeq2 and including batch number as a variable to correct for any batch effect. 2) Microbiology, immunology, and pathology: statistical significance of bladder, urine, and kidney bacterial titers, histopathology scores, bladder edema, cytokine expression level, pyuria, IBC counts, and flow cytometry were assessed by Mann-Whitney U when comparing two groups or Kruskal-Wallis test with Dunn’s correction for multiple comparisons when comparing three or more groups. All the above items used two-tailed tests. 3) For all experiments, each data point came from an individual mouse, which is our definition of a biological replicate. For ELISA experiments, two technical replicates (bladder supernatant from the same mouse were applied to two wells of the ELISA plate) were assayed per biological replicate and the average value was plotted. 4) No specific computation of sample size was applied beforehand. Sample size for each experiment was determined a priori and following convention in the field: 3–7 mice per group per replicate experiment, with a minimum of 2–3 replicate experiments (except for RNAseq experiments).

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.42078.001 The molecular mechanisms that control the timing of sexual differentiation in the brain are poorly understood. We found that the timing of sexually dimorphic differentiation of postmitotic, sex-shared neurons in the nervous system of the Caenorhabditis elegans male is controlled by the temporally regulated miRNA let-7 and its target lin-41 , a translational regulator. lin-41 acts through lin-29a, an isoform of a conserved Zn finger transcription factor, expressed in a subset of sex-shared neurons only in the male. Ectopic lin-29a is sufficient to impose male-specific features at earlier stages of development and in the opposite sex. The temporal, sexual and spatial specificity of lin-29a expression is controlled intersectionally through the lin-28/let-7/lin-41 heterochronic pathway, sex chromosome configuration and neuron-type-specific terminal selector transcription factors. Two Doublesex-like transcription factors represent additional sex- and neuron-type specific targets of LIN-41 and are regulated in a similar intersectional manner.
+The molecular mechanisms that control the timing of sexual differentiation in the brain are poorly understood. We found that the timing of sexually dimorphic differentiation of postmitotic, sex-shared neurons in the nervous system of the Caenorhabditis elegans male is controlled by the temporally regulated miRNA let-7 and its target lin-41, a translational regulator. lin-41 acts through lin-29a, an isoform of a conserved Zn finger transcription factor, expressed in a subset of sex-shared neurons only in the male. Ectopic lin-29a is sufficient to impose male-specific features at earlier stages of development and in the opposite sex. The temporal, sexual and spatial specificity of lin-29a expression is controlled intersectionally through the lin-28/let-7/lin-41 heterochronic pathway, sex chromosome configuration and neuron-type-specific terminal selector transcription factors. Two Doublesex-like transcription factors represent additional sex- and neuron-type specific targets of LIN-41 and are regulated in a similar intersectional manner.
 
 ## Introduction
 
@@ -33,11 +33,23 @@ Like in other animals, most of the sex-specific features of the nervous system o
 
 Most if not all of these sexually dimorphic features of the C. elegans nervous system terminally differentiate during the fourth larval stage (Desai et al., 1988; Oren-Suissa et al., 2016; Pereira et al., 2015; Serrano-Saiz et al., 2017a; Sulston and Horvitz, 1977). The molecular mechanisms that control the timing of sexual maturation in postmitotic neurons have largely remained obscure. Candidate regulators of sex-specific developmental timing events are so-called heterochronic genes, first identified in C. elegans (Ambros and Horvitz, 1984). Heterochronies refer to offsets of the relative timing of somatic developmental events versus gonadal developmental events (Slack and Ruvkun, 1997). In heterochronic mutants, the timing of cellular cleavage patterns in postembryonic skin cell lineages is disrupted in a highly stereotyped manner; in some mutants, lineage patterning events normally occurring late will occur earlier (‘precocious mutants’) while in other mutants specific cell lineage patterning events will be delayed or never occur (Ambros, 1989; Ambros and Horvitz, 1984; Slack and Ruvkun, 1997). Molecular analysis of these heterochronic mutants revealed a gene regulatory pathway, which contains several deeply conserved post-transcriptional regulatory factors at its core, including the miRNA let-7, the LIN-28 protein, a negative regulator of let-7 processing, and the RNA-binding, posttranscriptional regulator LIN-41, a key target of the let-7 miRNA (Figure 1A) (Ambros, 1989; Ecsedi et al., 2015; Moss et al., 1997; Reinhart et al., 2000; Slack et al., 2000). While these regulatory factors are well known to control cell division patterns in the ectoderm, their role in postmitotic cell types is much less well defined (Del Rio-Albrechtsen et al., 2006; Hallam and Jin, 1998; Howell et al., 2015; Olsson-Carter and Slack, 2010; Zou et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig1-v1.jpg)
+
+**Figure 1.:** (A) A simplified schematic of the heterochronic pathway, deduced from the genetic analysis of hypodermal cell lineage division events. The LIN-28 RNA binding protein prevents the maturation of miRNA let-7. When LIN-28 protein levels go down at the end of the second larval stage (L2), mature miRNA let-7 levels rise and bind to the 3’UTR of let-7 targets. One let-7 target is the RNA-binding protein LIN-41, whose levels are downregulated at the onset of sexual maturation (L4). This allows for its negative regulator, the zinc-finger transcription factor lin-29, to be expressed at the L4 stage to induce the larval to adult transition. Sequence homology alignment of the five Zn-finger domains shows that LIN-29 is an orthologue of human ZNF362 and ZNF384, while EGRH-1 is an orthologue of human EGR. The Zn fingers of worm, fly and human are shown. Zn coordinating Cys and His residues are colored in blue and DNA-contacting residues (at position −1,+2,+3 and+6 of the helixes preceding the His residues) are colored in red. Conservation is indicated in grey shading. (B) AIM neuronal differentiation is precocious in lin-28(n719lf) and lin-41(bch28lf). unc-17/VACHT (ot907) and cho-1/CHT (otIs534) cholinergic reporter expression (cytoplasmic for unc-17 and nuclear for cho-1) is not observed in AIM in control animals at the L3 stage (dotted circles, top panels). lin-28(n719lf) and lin-41(bch28lf) mutant males show precocious cholinergic gene expression in AIM at the L3 stage (top panels). eat-4/VGLUT (otIs388) glutamatergic reporter expression is observed in AIM in control animals at the L3 stage (circled in white, bottom panels). lin-28(n719lf) and lin-41(bch28lf) mutant males show precocious loss of AIM glutamatergic identity (dotted circles, bottom panels). The AIY cholinergic neuron is located next to AIM and is used as a positional reference. Solid circles indicate expression of the reporter, stippled circle indicates loss of expression. (C) Male-specific AIM differentiation is blocked in let-7(n2853ts), lin-41(xe8gf) and lin-29a/b(n333lf) mutants. unc-17/VACHT (ot907) and cho-1/CHT (otIs354) cholinergic reporter expression (cytoplasmic for unc-17 and nuclear for cho-1) is observed in young adult (YA) control males but not in AIM neurons in hermaphrodites nor let-7(n2853ts), lin-41(xe8gf) and lin-29a/b(n333lf) mutant males (dotted circles, top panels). eat-4/VGLUT (otIs388) glutamatergic reporter expression is observed in hermaphrodites and in let-7(n2853ts), lin-41(xe8gf) and lin-29a/b(n333lf) mutant males, where it fails to be downregulated (circled in white, bottom panels). L1 let-7(n2853ts) animals were shifted to the restrictive temperature (25°C) and imaged after 48hs. The incomplete penetrance of the let-7 mutants is likely because the allele used, n2853, a point mutation in the miRNA seed region, is hypomorphic. The AIY cholinergic neuron is located next to AIM and is used as a positional reference. (D) Quantification for the AIM neurotransmitter switch in heterochronic mutants lin-28(n719lf), lin-41(bch28lf), let-7(n2853ts), lin-41(xe8gf), lin-29a/b(n333lf) and mab-10(xe44) (n = 15). Expression of unc-17/VACHT (ot907) and eat-4/VGLUT (otIs388) was quantified as ON or OFF. (E) CEM neuronal differentiation defects in heterochronic mutants. CEM cholinergic gene expression is precocious in lin-28(n719lf) and lin-41(bch28lf) males compared to control. unc-17/VACHT (ot907) and cho-1/CHT (otIs354) cholinergic reporter expression is not observed in CEM neurons in wild-type males at the L3 stage (dotted circle). lin-28(n719lf) and lin-41(bch28lf) males show precocious cholinergic gene expression in CEM neurons at the L3 stage (circled in white, top panels). CEM cholinergic gene expression is lost in let-7(n2853ts) and lin-41(xe8gf) mutants (dotted circles). lin-29a/b(n333lf) mutants showed no defect in cholinergic gene expression in CEM neurons (circled in white). L1 let-7(n2853ts) animals were shifted to the restrictive temperature (25°C) and imaged after 48hs. The incomplete penetrance of the let-7 mutants is likely because the allele used, n2853, a point mutation in the miRNA seed region, is hypomorphic. (F) Quantification for CEM cholinergic gene expression in heterochronic mutants lin-28(n719lf), lin-41(bch28lf), let-7(n2853ts), lin-41(xe8gf), lin-29a/b(n333lf) and mab-10(xe44) (n = 15). Expression of unc-17/VACHT (ot907) was quantified as ON or OFF.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** We used CRISPR/Cas9 genome editing to place an mKate2::3xFLAG tag at the C-terminal end of the unc-17/VACHT locus. The endogenously tagged cholinergic locus (ot907) recapitulates our previously described unc-17/VACHT expression, assessed with a fosmid-based reporter. The confocal images show that unc-17/VACHT is expressed in AIM sex-shared neurons only in the males (bottom panels), but not in hermaphrodites (top panels), starting at the L4 stage. Each image square inset is zoomed in at the top right corner. AIM neurons are circled inside each inset at the different developmental stages. CEM male-specific neurons showed unc-17/VACHT expression also starting at the L4 stage (circled at the different larval stages). The cho-1/CHT fosmid-based yfp reporter (otIs534) was used to label the neuronal nuclei of cholinergic neurons facilitating their identification.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Germline loss has no effect on AIM nor CEM cholinergic gene expression in males. glp-1(e2141) mutants showed no difference in expression of cholinergic genes unc-17/VACHT and cho-1/CHT in AIM and CEM neurons compared to control adult males. Confocal images for a young adult hermaphrodite (top panel) and young adult male (bottom panel) are shown. (B) Laser ablation of gonad precursors has no effect on AIM and CEM cholinergic gene expression in males. Z1/Z4 gonad and germline precursors were ablated at the L1 stage. No difference was observed in the expression of the cholinergic gene cho-1/CHT (otIs534) in the AIM and CEM neurons of Z1/Z4 ablated adult male animals compared to control animals. All neurons are labeled with a red pan-neuronal rab-3 reporter (otIs355).
+
 Within the nervous system, the impact of heterochronic genes on sex-specific differentiation events during sexual maturation at the juvenile to adult transition has been poorly defined. Such a role is not an obvious matter because heterochronic genes do not control timing in all tissues. For example, heterochronic genes are not involved in controlling the timing of gonadal maturation (Ambros and Horvitz, 1984; Euling and Ambros, 1996). We show here that the phylogenetically conserved core heterochronic pathway genes lin-28, let-7 and lin-41 control the timing of maturation of sexual dimorphisms in different neuron classes. We show that these broadly expressed timing genes act through distinct cell-specific effector modules, among them a specific isoform of the lin-29 Zn finger transcription factor and the two DM domain (DMD) containing transcription factors mab-3 and dmd-3. These temporally regulated effector genes are expressed in a sexually dimorphic manner in distinct sets of sex-shared neurons to control specific aspects of sexually dimorphic features and functions. Remarkably, genome-wide association studies have linked one component of the heterochronic pathway to aberrant onset of puberty in humans (Faunes and Larraín, 2016). Our findings therefore suggest the emergence of a phylogenetically conserved mechanism to control the timing of sexual maturation.
 
 ## Results
 
-## Effects of the heterochronic lin-28/let-7/lin-41 pathway on neuron-specific sexual maturation
+### Effects of the heterochronic lin-28/let-7/lin-41 pathway on neuron-specific sexual maturation
 
 As an entry point to identify the molecular mechanisms required for the correct timing of nervous system sexual maturation, we used the previously described neurotransmitter switch of the AIM interneurons (Figure 1B–D), a sex-shared neuron class that is required for mate searching behavior (Barrios et al., 2012; Pereira et al., 2015). A fosmid-based reporter of the eat-4/VGLUT vesicular glutamate transporter is expressed during juvenile stages in the AIM interneuron of both sexes. At the onset of sexual maturation, during the fourth larval stage, AIM neurons of the male turn off the glutamatergic gene reporter and turn on expression of fosmid-based reporters for the cholinergic genes unc-17/VACHT and cho-1/CHT (Pereira et al., 2015). The acquisition of AIM cholinergic identity during sexual maturation only in males was confirmed by analyzing the expression of the cholinergic unc-17/VACHT locus, tagged with mKate2 using CRISPR/Cas9 genome engineering (Figure 1—figure supplement 1).
 
@@ -49,7 +61,7 @@ We also found that in males carrying a loss-of-function mutation in the miRNA le
 
 The heterochronic pathway genes also controlled the onset of differentiation of the male-specific CEM sensory neurons. Even though these neurons are already born in the embryo (and removed by apoptosis in hermaphrodites [Sulston et al., 1983]), the CEM neurons only fully differentiate at the fourth larval stage (Pereira et al., 2015). By analyzing the expression of cholinergic reporters, we found that this L4-specific maturation event is also precisely timed by the heterochronic pathway genes. In lin-28 mutants, CEM neurons prematurely expressed cholinergic genes while in let-7 mutants CEM neurons’ terminal differentiation was blocked (Figure 1E,F). As we had seen for the AIM neurotransmitter switch, lin-41 mutants showed precocious cholinergic gene expression in CEM neurons and lin-41 gain-of-function mutants (in which lin-41 expression fails to be downregulated) also fail to show CEM cholinergic gene expression during sexual maturation suggesting that let-7 miRNA acts through regulating lin-41 for the correct timing of this process (Figure 1E,F). However, as in the case of the AIM neurotransmitter switch, lin-4 mutants show no defect in the timing of CEM differentiation (data not shown). In conclusion, mutant analysis of the heterochronic pathway genes showed that the lin-28/let-7/lin-41 regulatory pathway is required for the correct timing and for the acquisition of male-specific features of two distinct neuron classes; however, this regulatory cassette may couple to upstream regulatory inputs other than lin-4.
 
-## The lin-29 Zn finger transcription factor is the relevant target of lin-41 in controlling the AIM neurotransmitter switch
+### The lin-29 Zn finger transcription factor is the relevant target of lin-41 in controlling the AIM neurotransmitter switch
 
 lin-41 encodes a versatile regulatory protein with RING and NHL domains, involved in both post-transcriptional RNA regulation (including translation) and protein ubiquitination (Ecsedi and Großhans, 2013). To ask which of the many previously described effectors of LIN-41 (Aeschimann et al., 2017; Ecsedi and Großhans, 2013) are relevant in the context of the AIM neurotransmitter switch, we turned to the lin-29 Zn finger transcription factor, whose expression is translationally inhibited by lin-41 in the context of timing of skin cell proliferation (Aeschimann et al., 2017; Ambros and Horvitz, 1984; Rougvie and Ambros, 1995; Slack et al., 2000)(Figure 1A). Orthology analysis with several tools (Kim et al., 2018; Wang et al., 2017) as well as a detailed analysis of predicted DNA binding features suggests that LIN-29 is an ortholog of the uncharacterized vertebrate ZNF362 and ZNF384 proteins (Figure 1A). During the larva-to-adult transition, let-7 inhibition of lin-41 derepresses lin-29 expression and induces adult gene expression programs in the epidermis. Consistent with lin-29 being a functional effector of lin-41 in the AIM interneurons, we find that the AIM neurotransmitter switch is entirely lost in lin-29 null mutants (Figure 1C,D). In contrast, we found that the onset of differentiation of the male-specific CEM neurons in the L4 stage, as measured by the induction of cholinergic identity, is unaffected in lin-29 null mutants (Figure 1E,F). These findings indicate that lin-41 controls distinct effector genes in different neuron types.
 
@@ -59,7 +71,7 @@ The transcriptional co-factor mab-10/NAB has been shown to act with lin-29 to co
 
 **Figure 2.:** (A) mab-10::mCherry expression pattern during larval development in both sexes. An endogenously tagged mab-10 allele (xe75) showed ubiquitous expression starting in the L4 stage, including in the nervous system. Reporter expression was maintained in the adult. No sexually dimorphic differences were observed for mab-10 expression. A cartoon for the mab-10 locus is shown below the images. (B) lin-28::gfp expression pattern during early larval development. A lin-28::gfp fosmid-based reporter (wgIs535) showed ubiquitous expression at the L2 stage, including in the nervous system. Reporter expression was broadly downregulated at the L3 and L4 stages. The fosmid-based cho-1/CHT reporter (otIs544) was used to label cholinergic neurons. No sexually dimorphic differences were observed for lin-28 expression. (C) lin-41 expression pattern during larval development in both sexes. An endogenously tagged lin-41 allele (tn1541) showed ubiquitous expression at the L3 stage, including in the nervous system. Reporter expression is broadly downregulated at the L4 stage. Expression of lin-41::gfp was maintained in two neuronal pairs in the head (black arrows). No sexually dimorphic differences were observed for lin-41 expression. A cartoon for the lin-41 locus is shown below the images. (D) let-7 activity sensor and control sensor expression during larval development in both sexes. A lin-41 promoter fusion driving gfp and fused to the lin-41 3’UTR (xeSi182), which is directly targeted by let-7 miRNA, showed ubiquitous expression of gfp in the nervous system from the L1 to the L3 stage. At the L4 stage, reporter expression is broadly downregulated and only a few cells are labeled by GFP in the adult head, recapitulating the lin-41::gfp expression. The same lin-41 promoter fusion driving gfp and fused to the unc-54 3’ UTR (xeSi202) failed to be normally downregulated at the L4 stage showing that lin-41 downregulation requires its 3’UTR being bound by miRNA let-7. Cholinergic neurons were labeled by a cho-1/CHT fosmid reporter (otIs544) driving mCherry allowing us to correlate the lin-41 downregulation with AIM neurotransmitter switch in males at the L4 stage. No sexually dimorphic differences in gfp expression were observed for the let-7 sensor and its control. Cartoons for each construct are shown above the images.
 
-## Transition from ubiquitous temporal regulators (lin-28/let-7/lin-41) to a sex- and neuron-type specific regulator (lin-29)
+### Transition from ubiquitous temporal regulators (lin-28/let-7/lin-41) to a sex- and neuron-type specific regulator (lin-29)
 
 To address in which cells the heterochronic pathway acts to control the AIM neurotransmitter switch, we first examined the expression pattern of lin-28, let-7, lin-41 and lin-29 in the nervous system. While expression of these genes in other cells, specifically, the epidermis, has previously been examined in detail (Moss et al., 1997; Rougvie, 2001; Slack et al., 2000), much less is known about their neuronal expression. We analyzed heterochronic gene expression relative to either a panneuronally expressed RFP marker or a cholinergic RFP marker (cholinergic labeling of the AIM neuron allowed us to correlate the timing of heterochronic gene expression relative to the AIM neurotransmitter switch). Consistent with previous reporter gene analysis (Moss et al., 1997), we found that a fosmid-based reporter construct of the lin-28 gene is expressed very broadly in the nervous system in a sexually non-dimorphic manner and downregulated by the end of the L2 stage (Figure 2B).
 
@@ -69,7 +81,7 @@ To determine the expression pattern of the lin-41 effector lin-29 in the nervous
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig3-v1.jpg)
 
-**Figure 3.:** lin-29 in the nervous system of both sexes.(A) Cartoon showing the lin-29 locus. Alternative promoter usage generates two LIN-29 protein isoforms. Exons 1 – 4 are LIN-29A specific while exons 5 – 11, that include the Zn-finger DNA binding domain, are shared by both -A and -B isoforms. The lin-29 locus was tagged using CRISPR/Cas9 genome engineering. gfp was inserted either at the C-terminal end (lin-29a/b::gfp; xe61 allele) to tag both LIN-29A and B protein isoforms or at the N-terminal end (gfp::lin-29a; xe63 allele) to tag only the LIN-29A isoform. Canonical alleles n333 and n546 as well as the newly generated alleles xe37 (null), xe38 (A-specific) and xe40 (A-specific) are indicated. (B) lin-29a/b expression pattern during larval development in both sexes. Confocal images for endogenously tagged lin-29a/b::gfp (xe61) show that GFP is expressed in the pharynx at the L3 stage and onwards in both sexes (examination of young animals showed that pharyngeal expression starts at the L1 stage). Hypodermal GFP expression all along the body started at the end of the L3 stage in both sexes. At the L4 stage, we also detected GFP expression in neurons only in the male, many of which were also labeled by a cholinergic marker, a cho-1/CHT mCherry expressing fosmid (marked by arrows). Expression in these male neurons persisted in the adult stage. No neuronal expression was observed in the head nor tail in hermaphrodite animals. Scale bar: 10 µm. (C) lin-29b expression pattern at the young adult stage in both sexes. Confocal images for gfp tagged lin-29b(xe40) (this allele is given a new name, xe65, since it contains the xe40 lesion plus the gfp insertion) show that GFP is expressed in head glia in both sexes (marked by yellow arrowheads). GFP is also observed in the pharynx and in tail cells in both sexes. Cholinergic cho-1/CHT mCherry expressing fosmid (otIs544) did not co-localize with GFP showing that LIN-29B is not expressed in neurons in the head nor tail in either sex (Note that LIN-29B is expressed in midbody neurons in both sexes not shown in this image). Scale bar: 10 µm. (D) gfp::lin-29a expression pattern during larval development in both sexes. Confocal images for endogenously tagged gfp::lin-29a (xe63) show that GFP is expressed in male-specific non-neuronal tail cells at the end of the L3 stage and onwards. No expression was observed in the head or tail of the hermaphrodite at this stage. No overlap between GFP and the cholinergic fosmid based reporter cho-1/CHT (otIs544) was observed at this stage. At the young adult stage, we observed GFP expression in neurons only in males (expression in male neurons started at the L4 stage), indicated by white arrows. No neuronal expression was observed in hermaphrodite neurons. Many GFP positive neurons in the male were also labeled by the cho-1/CHT mCherry expressing fosmid (otIs544). Cholinergic neurons expressing lin-29a included AIM, ASJ, AVA, ASK, AWA, ASG, RIA and ADF in the head, ventral nerve cord (VNC) motor neurons of the A, B, D and AS classes and the PVC interneuron in the tail. Neuronal GFP expression is indicated by arrows and neuronal identity is indicated for head and tail neurons in the GFP panels. GFP expression was observed throughout the hypodermis in both sexes, indicated with blue circles in the GFP panels. Hypodermis nuclei are larger. Cholinergic retrovesicular ganglion (RVG), ventral nerve cord (VNC) and pre-anal ganglion (PAG) neurons expressing lin-29a are shown in the head, midbody and tail respectively. Male-specific tail cells expressing lin-29a are marked with black arrows. Scale bar: 10 µm.
+**Figure 3.:** (A) Cartoon showing the lin-29 locus. Alternative promoter usage generates two LIN-29 protein isoforms. Exons 1 – 4 are LIN-29A specific while exons 5 – 11, that include the Zn-finger DNA binding domain, are shared by both -A and -B isoforms. The lin-29 locus was tagged using CRISPR/Cas9 genome engineering. gfp was inserted either at the C-terminal end (lin-29a/b::gfp; xe61 allele) to tag both LIN-29A and B protein isoforms or at the N-terminal end (gfp::lin-29a; xe63 allele) to tag only the LIN-29A isoform. Canonical alleles n333 and n546 as well as the newly generated alleles xe37 (null), xe38 (A-specific) and xe40 (A-specific) are indicated. (B) lin-29a/b expression pattern during larval development in both sexes. Confocal images for endogenously tagged lin-29a/b::gfp (xe61) show that GFP is expressed in the pharynx at the L3 stage and onwards in both sexes (examination of young animals showed that pharyngeal expression starts at the L1 stage). Hypodermal GFP expression all along the body started at the end of the L3 stage in both sexes. At the L4 stage, we also detected GFP expression in neurons only in the male, many of which were also labeled by a cholinergic marker, a cho-1/CHT mCherry expressing fosmid (marked by arrows). Expression in these male neurons persisted in the adult stage. No neuronal expression was observed in the head nor tail in hermaphrodite animals. Scale bar: 10 µm. (C) lin-29b expression pattern at the young adult stage in both sexes. Confocal images for gfp tagged lin-29b(xe40) (this allele is given a new name, xe65, since it contains the xe40 lesion plus the gfp insertion) show that GFP is expressed in head glia in both sexes (marked by yellow arrowheads). GFP is also observed in the pharynx and in tail cells in both sexes. Cholinergic cho-1/CHT mCherry expressing fosmid (otIs544) did not co-localize with GFP showing that LIN-29B is not expressed in neurons in the head nor tail in either sex (Note that LIN-29B is expressed in midbody neurons in both sexes not shown in this image). Scale bar: 10 µm. (D) gfp::lin-29a expression pattern during larval development in both sexes. Confocal images for endogenously tagged gfp::lin-29a (xe63) show that GFP is expressed in male-specific non-neuronal tail cells at the end of the L3 stage and onwards. No expression was observed in the head or tail of the hermaphrodite at this stage. No overlap between GFP and the cholinergic fosmid based reporter cho-1/CHT (otIs544) was observed at this stage. At the young adult stage, we observed GFP expression in neurons only in males (expression in male neurons started at the L4 stage), indicated by white arrows. No neuronal expression was observed in hermaphrodite neurons. Many GFP positive neurons in the male were also labeled by the cho-1/CHT mCherry expressing fosmid (otIs544). Cholinergic neurons expressing lin-29a included AIM, ASJ, AVA, ASK, AWA, ASG, RIA and ADF in the head, ventral nerve cord (VNC) motor neurons of the A, B, D and AS classes and the PVC interneuron in the tail. Neuronal GFP expression is indicated by arrows and neuronal identity is indicated for head and tail neurons in the GFP panels. GFP expression was observed throughout the hypodermis in both sexes, indicated with blue circles in the GFP panels. Hypodermis nuclei are larger. Cholinergic retrovesicular ganglion (RVG), ventral nerve cord (VNC) and pre-anal ganglion (PAG) neurons expressing lin-29a are shown in the head, midbody and tail respectively. Male-specific tail cells expressing lin-29a are marked with black arrows. Scale bar: 10 µm.
 
 Expression of lin-29a in all these neurons in the male nervous system is precisely temporally controlled; it is first observed in the early L4 stage and persists throughout adulthood (Figure 3D). In addition to the male-specific neuronal expression of the lin-29a isoform, we also found that the lin-29b isoform is expressed in three postembryonically generated touch neurons (AVM, PVM, PDE), where its expression is not temporally regulated, that is, its expression is induced right after the neurons are born in the first two larval stages and expression is observed in both sexes (data not shown).
 
@@ -77,15 +89,15 @@ The late larval onset of expression of lin-29 in non-neuronal cells has been rep
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig4-v1.jpg)
 
-**Figure 4.:** lin-29a neuronal expression is temporally regulated by lin-41 and let-7.(A) gfp::lin-29a expression in the lin-29a(xe63) strain is precocious in the absence of lin-41. Expression was examined in synchronized L3 animals and compared between lin-41(n2914)/balancer control versus lin-41(n2914) loss-of-function males. Neuronal nuclei are more compact than the larger hypodermal nuclei. (B) gfp::lin-29a expression in the lin-29a(xe63) strain is downregulated in let-7(lf) and lin-41(gf) mutants. Expression was examined at the young adult stage in let-7(n2853ts) loss-of-function mutants and lin-41(xe8) gain-of-function mutants, compared to control males. While control males showed expression of gfp::lin-29a in the hypodermis and nervous system (more compact nuclei), both mutants showed a severe downregulation of gfp::lin-29a expression in the hypodermis and neurons at the young adult stage. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs.
+**Figure 4.:** (A) gfp::lin-29a expression in the lin-29a(xe63) strain is precocious in the absence of lin-41. Expression was examined in synchronized L3 animals and compared between lin-41(n2914)/balancer control versus lin-41(n2914) loss-of-function males. Neuronal nuclei are more compact than the larger hypodermal nuclei. (B) gfp::lin-29a expression in the lin-29a(xe63) strain is downregulated in let-7(lf) and lin-41(gf) mutants. Expression was examined at the young adult stage in let-7(n2853ts) loss-of-function mutants and lin-41(xe8) gain-of-function mutants, compared to control males. While control males showed expression of gfp::lin-29a in the hypodermis and nervous system (more compact nuclei), both mutants showed a severe downregulation of gfp::lin-29a expression in the hypodermis and neurons at the young adult stage. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs.
 
-## The lin-29a isoform is required cell-autonomously and is sufficient to define the male-specific neurotransmitter switch in the AIM interneuron
+### The lin-29a isoform is required cell-autonomously and is sufficient to define the male-specific neurotransmitter switch in the AIM interneuron
 
 To assess the functional relevance of the lin-29a isoform in controlling the AIM neurotransmitter switch, we generated two lin-29a-isoform specific alleles (xe38 and xe40) using CRISPR/Cas9 genome engineering (Figure 3A) (Aeschimann et al., 2018). We indeed find that in both isoform-specific alleles the male-specific AIM neurotransmitter switch failed to occur (Figure 5A). A newly generated lin-29 null allele that removes both isoforms (Aeschimann et al., 2017) also confirmed the results previously reported with the canonical null alleles tested (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig5-v1.jpg)
 
-**Figure 5.:** lin-29a for the AIM neurotransmitter switch.(A) The neurotransmitter switch is blocked in three newly generated lin-29 mutants. In adult control animals, the fosmid-based cholinergic reporters unc-17/VACHT (otIs576) and cho-1/CHT (otIs544) are expressed in AIM neurons of adult males but not hermaphrodites while the eat-4/VGLUT (otIs518) glutamatergic reporter is expressed in AIM neurons of adult hermaphrodites but not males. The AIM neurotransmitter switch is blocked in a newly generated lin-29a/b(xe37) null allele and in two lin-29a-specific mutants (xe38 and xe40). In these lin-29 mutant males, AIM fails to turn on cholinergic markers unc-17/VACHT (top panels) and cho-1/CHT (bottom panels) and expresses a pan neuronal maker rab-3::rfp (top panels) and the glutamatergic marker eat-4/VGLUT (bottom panels). A pan-neuronal rab-3::rfp (otIs355) reporter was used to label all neurons in the top panels. (B) AIM-specific LIN-29A expression is sufficient to cell-autonomously rescue the neurotransmitter switch in males and induce it in young larvae and the opposite sex. LIN-29A expression was driven under an AIM-specific promoter in lin-29a mutant animals: LIN-29A was expressed in lin-29a(xe38) (otEx7316 and otEx7317) and in lin-29a(xe40) (otEx7318 and otEx7319). Expression of cholinergic gene reporter unc-17/VACHT (otIs576) was examined to assay rescue and ectopic induction of the AIM neurotransmitter switch (n = 15).
+**Figure 5.:** (A) The neurotransmitter switch is blocked in three newly generated lin-29 mutants. In adult control animals, the fosmid-based cholinergic reporters unc-17/VACHT (otIs576) and cho-1/CHT (otIs544) are expressed in AIM neurons of adult males but not hermaphrodites while the eat-4/VGLUT (otIs518) glutamatergic reporter is expressed in AIM neurons of adult hermaphrodites but not males. The AIM neurotransmitter switch is blocked in a newly generated lin-29a/b(xe37) null allele and in two lin-29a-specific mutants (xe38 and xe40). In these lin-29 mutant males, AIM fails to turn on cholinergic markers unc-17/VACHT (top panels) and cho-1/CHT (bottom panels) and expresses a pan neuronal maker rab-3::rfp (top panels) and the glutamatergic marker eat-4/VGLUT (bottom panels). A pan-neuronal rab-3::rfp (otIs355) reporter was used to label all neurons in the top panels. (B) AIM-specific LIN-29A expression is sufficient to cell-autonomously rescue the neurotransmitter switch in males and induce it in young larvae and the opposite sex. LIN-29A expression was driven under an AIM-specific promoter in lin-29a mutant animals: LIN-29A was expressed in lin-29a(xe38) (otEx7316 and otEx7317) and in lin-29a(xe40) (otEx7318 and otEx7319). Expression of cholinergic gene reporter unc-17/VACHT (otIs576) was examined to assay rescue and ectopic induction of the AIM neurotransmitter switch (n = 15).
 
 To assess whether lin-29a acts cell-autonomously in AIM to control its neurotransmitter switch, we expressed lin-29a under an AIM-specific promoter (Serrano-Saiz et al., 2017a). This driver is not only active in both sexes, but it is already active in embryos and early larval stages, hence allowing us to assess three key issues: (1) whether LIN-29A acts cell-autonomously, (2) whether LIN-29A can induce the neurotransmitter switch prematurely in males and (3) whether LIN-29A can ectopically induce the AIM neurotransmitter switch in hermaphrodites. We generated two independent transgenic lines that cell type-specifically express lin-29a in a lin-29a (xe38 and xe40) mutant background. We found that in adult male animals, the loss of the AIM neurotransmitter switch (as assayed by cho-1 and unc-17 induction and eat-4 downregulation in AIM) is rescued by the transgene, thereby demonstrating cell autonomy of LIN-29A function (Figure 5B).
 
@@ -93,47 +105,47 @@ Examining juvenile males, before the onset of overt sexual maturation, we observ
 
 To assess whether lin-29a function in AIM goes beyond controlling AIM’s neurotransmitter switch, we examined another molecular marker of sexually dimorphic AIM differentiation, the orphan GPCR, srj-54, which is induced in the AIM neurons upon male sexual differentiation (Portman, 2007). We found that srj-54 fails to be expressed in lin-29a mutants (Figure 6A) adding another AIM male-specific molecular feature that fails to be normally induced in the absence of lin-29. As we will describe further below, lin-29a mutants are also defective in an AIM-mediated sexual behavioral paradigm.
 
-## lin-29a controls sexually dimorphic molecular features of other sex-shared neurons
+### lin-29a controls sexually dimorphic molecular features of other sex-shared neurons
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig6-v1.jpg)
 
-**Figure 6.:** lin-29a mutants.(A) Male-specific expression of srj-54 in AIM requires lin-29a. Expression of the GPCR srj-54 (fsIs5) promoter fusion is observed in adult males but not hermaphrodites in the AIM interneurons. Expression of srj-54 was lost in all the lin-29a(xe38) mutant males. Quantification is shown on the right (n = 15). Scale bar: 10 µm. (B) Male-specific expression of dmd-5 in AVG requires lin-29a. Expression of the DM-containing transcription factor promoter fusion dmd-5 (pUL#JS9B3) is observed in adult males but not hermaphrodites in the AVG interneuron. In the absence of lin-29a, expression is lost from AVG in 80% of the male worms (top panels); quantification is shown on the right (n = 15). The expression of the daf-7/TGFβ-like molecule promoter fusion is observed in adult males but not hermaphrodites and this expression is lost in the lin-29a(xe38) mutant males (bottom panels). Quantification is shown on the right (n = 15). Scale bar: 10 µm. (C) lin-29a is required for normal PDB branching. A cis-regulatory element from the kal-1 locus is expressed in a number of neurons in the tail region in both sexes, including the PDB –inter and motorneuron (Wenick and Hobert, 2004). kal-1::gfp reporter expression showed that the PDB neuron process exhibits elaborate branching in the male after sexual maturation but not at earlier larval stages. In the absence of lin-29a, PDB branching is lost from adult males (bottom panels). Quantification of total neurite length is shown on the right (n = 10). PDB neurites establish extensive electrical and chemical synapses with sex-shared and male-specific neurons exclusively in adult males (schematized based on data from (Jarrell et al., 2012); synaptic partners of PDB present in both sexes are in blue and in black if sex-specific) . Scale bar: 5 µm.
+**Figure 6.:** (A) Male-specific expression of srj-54 in AIM requires lin-29a. Expression of the GPCR srj-54 (fsIs5) promoter fusion is observed in adult males but not hermaphrodites in the AIM interneurons. Expression of srj-54 was lost in all the lin-29a(xe38) mutant males. Quantification is shown on the right (n = 15). Scale bar: 10 µm. (B) Male-specific expression of dmd-5 in AVG requires lin-29a. Expression of the DM-containing transcription factor promoter fusion dmd-5 (pUL#JS9B3) is observed in adult males but not hermaphrodites in the AVG interneuron. In the absence of lin-29a, expression is lost from AVG in 80% of the male worms (top panels); quantification is shown on the right (n = 15). The expression of the daf-7/TGFβ-like molecule promoter fusion is observed in adult males but not hermaphrodites and this expression is lost in the lin-29a(xe38) mutant males (bottom panels). Quantification is shown on the right (n = 15). Scale bar: 10 µm. (C) lin-29a is required for normal PDB branching. A cis-regulatory element from the kal-1 locus is expressed in a number of neurons in the tail region in both sexes, including the PDB –inter and motorneuron (Wenick and Hobert, 2004). kal-1::gfp reporter expression showed that the PDB neuron process exhibits elaborate branching in the male after sexual maturation but not at earlier larval stages. In the absence of lin-29a, PDB branching is lost from adult males (bottom panels). Quantification of total neurite length is shown on the right (n = 10). PDB neurites establish extensive electrical and chemical synapses with sex-shared and male-specific neurons exclusively in adult males (schematized based on data from (Jarrell et al., 2012); synaptic partners of PDB present in both sexes are in blue and in black if sex-specific) . Scale bar: 5 µm.
 
 The expression of lin-29a in a number of distinct neuron types indicated that lin-29a may play additional roles in controlling sexually dimorphic, that is, male-specific nervous system features. To this end, we assessed two other molecular markers that were previously found to be expressed in a sexually dimorphic manner in two distinct, sex-shared neuron classes, both of which express lin-29a. First, the dmd-5 transcription factor was reported to be expressed in AVG neurons in adult males but not in hermaphrodites (Oren-Suissa et al., 2016). By analyzing the expression of a dmd-5 reporter in wild type versus lin-29a mutants, we found that lin-29a is required for dmd-5 expression in AVG in males (Figure 6B). Second, the daf-7 gene, encoding a neuroendocrine TGFβ-like signal, is turned on during sexual maturation in the sex-shared ASJ neurons only in males (Hilbert and Kim, 2017). This induction is also abrogated in lin-29a mutants (Figure 6B). Non-sexually dimorphic expression of dmd-5 and daf-7 in other neuron types was not affected by lin-29a.
 
 The electron micrographical reconstruction of the nervous system of C. elegans male revealed sexually dimorphic neuronal morphology and connectivity of several sex-shared neurons (Jarrell et al., 2012; White et al., 1986). Specifically, the lin-29a-expressing PDB motorneuron located in the pre-anal ganglion grows elaborate branches off from its cell body and initial segment of its posteriorly directed main process. This was only observed in the male but not in the hermaphrodite (Jarrell et al., 2012; White et al., 1986). These male-specific branches make extensive chemical and electrical synaptic contacts with both male-specific neurons, as well as sex-shared neurons (Jarrell et al., 2012). We corroborated the existence and reproducibility of male-specific branches by visualizing PDB with a reporter transgene (Figure 6C). We found that these branches grow specifically during sexual maturation in the L4 stage (Figure 6C), co-incident with the onset of lin-29a expression. Growth of these branches is disrupted in lin-29a mutants (Figure 6C). These findings demonstrate a role for lin-29a in regulating the temporal and sexually dimorphic acquisition of male-specific neuronal morphologies and predict that PDB fails to make its branch-specific synaptic contacts in the absence of lin-29a. We conclude that lin-29a affects multiple distinct types of sexual maturation events, from gene expression to anatomy, in distinct neuron classes.
 
-## lin-29a mutant males display defects in mating behavior
+### lin-29a mutant males display defects in mating behavior
 
 We next sought to broaden our understanding of lin-29a function in the nervous system by testing if lin-29a was required for the establishment of adult-specific sexually dimorphic behaviors. Critical for such an analysis is the fact that lin-29a mutant males do not display the obvious morphological and patterning defects displayed by the lin-29 null allele. Specifically, the male tail, whose overall morphogenesis is disrupted in lin-29 null mutants (Euling et al., 1999) appears morphologically normal in lin-29a mutants (Figure 7A). We precisely quantified other morphological differences between hermaphrodites and males using an automated visualization/measurement tool (Yemini et al., 2013) and found no overt morphological differences between wild-type and lin-29a mutant males (Figure 7B). The normal overall appearance of lin-29a mutant males allowed us to first ask whether lin-29a mutant males displayed mating-related behavioral defects. One aspect of mate attraction relates to the mating process itself, in which the male detects various sensory cues from the hermaphrodites to engage in direct contact (Liu and Sternberg, 1995). Previous work with the lin-29 null mutant revealed multiple defects in these direct interactions and these defects were ascribed to spicule patterning defects (Euling et al., 1999). In spite of spicule patterning appearing normal in lin-29a isoform-specific mutants, we observed that these mutants were unable to mate (Figure 7C). We found that one aspect of mating behavior defective in these mutants is vulva location behavior (Figure 7C).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig7-v1.jpg)
 
-**Figure 7.:** lin-29a is required for male mating behaviors.(A) lin-29A mutants show a normal male tail morphology. DIC images for young adult wild type and lin-29a mutants xe38 and xe40. No morphological defects were detected in the young adult lin-29a mutant males compared to wild type. 20x images for young adult males are shown on the top panels. 63x images of the male tail are shown on the bottom panels. (B) WormTracker analysis of sexually dimorphic postural features showed no difference between wild-type and lin-29a mutant males. Hermaphrodites and males were tracked for 5 min and features describing body posture were analyzed using the WormTracker software. Adult hermaphrodites and males showed sex-specific differences in posture including length, head width, midbody width and area. When wild-type males were compared to lin-29a xe38 and xe40 mutant males no significant differences were found. (C) lin-29a is required for male mating. The ability of the of lin-29a(xe38) and lin-29a(xe40) mutant males to locate the hermaphrodite vulva is significantly reduced compared to lin-29(+) control males (n = 15). (D) lin-29a is required for male-specific mate searching behavior. Young adult males are followed over time and scored for movement beyond 3 cm away from the food source. lin-29a(xe38) mutant males failed to leave the food and search for mates and behaved similarly to wild-type hermaphrodites. lin-29a mate-searching defect could be partially rescued by restoring LIN-29A expression in AIM interneurons (otEx7316). Values plotted are an average of two independent experiments (n = 15 for each experiment).
+**Figure 7.:** (A) lin-29A mutants show a normal male tail morphology. DIC images for young adult wild type and lin-29a mutants xe38 and xe40. No morphological defects were detected in the young adult lin-29a mutant males compared to wild type. 20x images for young adult males are shown on the top panels. 63x images of the male tail are shown on the bottom panels. (B) WormTracker analysis of sexually dimorphic postural features showed no difference between wild-type and lin-29a mutant males. Hermaphrodites and males were tracked for 5 min and features describing body posture were analyzed using the WormTracker software. Adult hermaphrodites and males showed sex-specific differences in posture including length, head width, midbody width and area. When wild-type males were compared to lin-29a xe38 and xe40 mutant males no significant differences were found. (C) lin-29a is required for male mating. The ability of the of lin-29a(xe38) and lin-29a(xe40) mutant males to locate the hermaphrodite vulva is significantly reduced compared to lin-29(+) control males (n = 15). (D) lin-29a is required for male-specific mate searching behavior. Young adult males are followed over time and scored for movement beyond 3 cm away from the food source. lin-29a(xe38) mutant males failed to leave the food and search for mates and behaved similarly to wild-type hermaphrodites. lin-29a mate-searching defect could be partially rescued by restoring LIN-29A expression in AIM interneurons (otEx7316). Values plotted are an average of two independent experiments (n = 15 for each experiment).
 
 The AIM and ASJ neurons, both of which express lin-29a specifically in males, were previously implicated in mate-searching, which constitutes another aspect of mating behavior (Barrios et al., 2012; Hilbert and Kim, 2017). In this behavioral paradigm, well-fed single adult males leave a source of food to explore their environment in search for mating partners. We indeed found that lin-29a mutants are defective in mate searching behavior (Figure 7D). These defects are similar to the defects caused by loss of daf-7/TGFβ (Hilbert and Kim, 2017) and, consistent with this phenotypic similarity, we had described above that daf-7/TGFβ expression is lost in the ASJ neurons of lin-29a mutants. Nevertheless, we could partially rescue the mate searching defects of the lin-29a mutant males by restoring LIN-29A expression exclusively in the AIM neurons (Figure 7D), indicating that lin-29a may function in several distinct neurons to control mate searching behavior.
 
-## Feminization of locomotor patterns of lin-29a mutant males
+### Feminization of locomotor patterns of lin-29a mutant males
 
 The male-specific expression of lin-29a in ventral nerve cord and head motor neurons and in a command interneuron pair made us consider whether lin-29a may be involved in controlling aspects of sexually dimorphic locomotor behavior. It has previously been shown that adult male and hermaphrodites display distinct locomotor behavior when crawling on a lawn of bacteria (Mowrey et al., 2014). We extended the analysis of sexually dimorphic adult-specific behavior using an automated worm tracker system which quantifies several hundred distinct postural and locomotory features of an animal (Yemini et al., 2013). We found a large number of sexually dimorphic features. While many of them were not affected in lin-29a mutant animals (Figure 8 and Supplementary file 1), we found that lin-29a mutants displayed a striking feminization of a number of body posture and locomotory features. Postural differences included head bend, neck bend, midbody bend, hips bend, amplitude ratio and primary wavelength. (Figure 8). Other lin-29a-dependent locomotory features included midbody crawling amplitude and tail crawling amplitude (Figure 8). The lack of morphological differences between wild-type and lin-29a mutant males indicates that these locomotory phenotypes are the result of neuronal defects rather than being a secondary consequence of overall body morphology. Taken together, these results show that lin-29a is required for the acquisition of male-specific postural and locomotory features and that the absence of lin-29a results in a feminization of these behavioral parameters.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig8-v1.jpg)
 
-**Figure 8.:** lin-29a is required for the establishment of male-specific features of locomotor behavior.There are lin-29a dependent and lin-29a independent adult-specific sexually dimorphic locomotory features. Cartoon of an adult C. elegans depicts the location of the body parts used for feature computation. The arrows for each body part represent the bend angle. Wavelength and amplitude while crawling are shown. Adult hermaphrodites and males showed sex-specific differences in posture, path and locomotory features that were not affected by lin-29a absence (top panel). A complete list of sexually dimorphic features not affected by lin-29a is provided in Supplementary file 1. In lin-29a mutant males, a number of sexually dimorphic features were feminized compared to wild-type males (bottom panel), including posture and locomotory features. Restoration of lin-29a expression in command interneuron AVA and ventral nerve cord motor neurons (otEx7320) partially rescued the feminization of two postural features (midbody bend and wavelength) as well as one locomotory feature (midbody crawling amplitude) (n = 20).
+**Figure 8.:** There are lin-29a dependent and lin-29a independent adult-specific sexually dimorphic locomotory features. Cartoon of an adult C. elegans depicts the location of the body parts used for feature computation. The arrows for each body part represent the bend angle. Wavelength and amplitude while crawling are shown. Adult hermaphrodites and males showed sex-specific differences in posture, path and locomotory features that were not affected by lin-29a absence (top panel). A complete list of sexually dimorphic features not affected by lin-29a is provided in Supplementary file 1. In lin-29a mutant males, a number of sexually dimorphic features were feminized compared to wild-type males (bottom panel), including posture and locomotory features. Restoration of lin-29a expression in command interneuron AVA and ventral nerve cord motor neurons (otEx7320) partially rescued the feminization of two postural features (midbody bend and wavelength) as well as one locomotory feature (midbody crawling amplitude) (n = 20).
 
 We sought to determine in which of the neurons that express lin-29a in a sexually dimorphic manner lin-29a acts to control aspects of the locomotor behaviors described above. We particularly considered the so-called ‘motor circuit’, composed of a set of command interneurons and ventral nerve cord motor neurons (Von Stetina et al., 2006). Expression of lin-29a in the motor circuit, using a cis-regulatory element from the unc-17/VAChT locus rescued a defined subset of the feminized behavioral features (wavelength, crawling amplitude and midbody bend) (Figure 8). Other lin-29a-expressing neurons may be involved in controlling locomotory and postural features not rescued by this transgene.
 
-## Intersectional control of the temporal, sexual and spatial specificity of lin-29a expression
+### Intersectional control of the temporal, sexual and spatial specificity of lin-29a expression
 
 Having established the function of lin-29a in sexually dimorphic development and function of the C. elegans nervous system, we sought to better understand the mode of lin-29a regulation. lin-29a shows a striking specificity of expression in three different dimensions. Within the nervous system, lin-29a is expressed in a temporally controlled manner (onset in embryonically born neurons only in the L4 stage), in a sex-specific manner (only in males) and it is expressed in a highly neuron type-specific manner. In as far as the first dimension, time, is concerned, we have described above that lin-29a expression in the nervous system is temporally controlled by the lin-28/let-7/lin-41 heterochronic pathway. To assess the control of sex-specificity of lin-29a expression, we genetically removed tra-1, the master regulatory transcription factor of sex determination which is normally expressed in all hermaphroditic cells (XX sex chromosome genotype) where it suppresses male identities (Schvarzstein and Spence, 2006). We found that in tra-1(e1488) mutants, lin-29a expression becomes derepressed in XX animals (Figure 9A). Moreover, we induced the degradation of tra-1 exclusively in the nervous system by force-expressing fem-3, which promotes TRA-1 protein destruction (Starostina et al., 2007), under the control of a panneuronal driver. We found that lin-29a expression is derepressed in the nervous system of the hermaphrodite, with the same pattern of cellular specificity seen normally in males (Figure 9A).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/42078/elife-42078-fig9-v1.jpg)
 
-**Figure 9.:** lin-41 effectors via heterochronic, sexual (tra-1) and spatial (terminal selector) inputs.(A) LIN-29 neuronal expression is regulated by the sex-determination pathway. Mutant hermaphrodites for the downstream effector of the sex-determination pathway tra-1 showed lin-29a/b::gfp (xe61) expression in hermaphrodite neurons in L4 and adult stages. Masculinization of the hermaphrodite nervous system by a pan-neuronal promoter driving fem-3 (otEx7321), that represses tra-1 function, induced lin-29a/b::gfp (xe61) expression in hermaphrodite neurons in L4 and onwards. (B) lin-29a/b::gfp neuronal expression is lost in neuron-specific transcription factor mutants. The POU homeobox transcription factor unc-86 is required for lin-29a/b::gfp expression in AIM interneurons. The LIM-HD transcription factor ttx-3 is required for lin-29a/b::gfp expression in ASK. The COE/EBF transcription factor unc-3 is required for lin-29a/b::gfp expression in AVA, SAB, DA, DB, VA, VB, PDA, PDB and PVC neurons. Cholinergic neurons are labeled with the cho-1/CHT mCherry fosmid reporter. (C) mab-3::gfp expression in the SMD neurons in control hermaphrodites, males and mutant animals. mab-3::gfp (ot931) expression was determined during larval development. GFP was first observed in the SMD neurons at the L4 stage and onwards, only in males. mab-3::gfp expression was lost from SMD neurons in a let-7(n2853ts) mutant male. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. mab-3::gfp expression was lost from SMD neurons in an unc-42(e419) mutant male. Scale bar: 5 µm. (D) dmd-3::gfp expression in the PHC neuron in control hermaphrodites, males and mutant animals. GFP was first observed in the PHC neurons at the L4 stage and onwards, only in males. dmd-3::gfp expression was decreased from PHC neurons in a let-7(n2853) mutant male. L1 let-7(n2853) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. (E) dmd-3::gfp expression in PHC was lost in ceh-14 null mutant males and in let-7(n2853ts) mutant males. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. (F) Masculinization of the hermaphrodite nervous system by a pan-neuronal promoter driving fem-3 (otEx7322 and otEx7323, respectively), that promotes TRA-1 degradation, induced mab-3::gfp (ot931) expression in hermaphrodite SMD neurons and dmd-3::gfp (ot932) expression in hermaphrodite PHC neurons in L4 and onwards.
+**Figure 9.:** (A) LIN-29 neuronal expression is regulated by the sex-determination pathway. Mutant hermaphrodites for the downstream effector of the sex-determination pathway tra-1 showed lin-29a/b::gfp (xe61) expression in hermaphrodite neurons in L4 and adult stages. Masculinization of the hermaphrodite nervous system by a pan-neuronal promoter driving fem-3 (otEx7321), that represses tra-1 function, induced lin-29a/b::gfp (xe61) expression in hermaphrodite neurons in L4 and onwards. (B) lin-29a/b::gfp neuronal expression is lost in neuron-specific transcription factor mutants. The POU homeobox transcription factor unc-86 is required for lin-29a/b::gfp expression in AIM interneurons. The LIM-HD transcription factor ttx-3 is required for lin-29a/b::gfp expression in ASK. The COE/EBF transcription factor unc-3 is required for lin-29a/b::gfp expression in AVA, SAB, DA, DB, VA, VB, PDA, PDB and PVC neurons. Cholinergic neurons are labeled with the cho-1/CHT mCherry fosmid reporter. (C) mab-3::gfp expression in the SMD neurons in control hermaphrodites, males and mutant animals. mab-3::gfp (ot931) expression was determined during larval development. GFP was first observed in the SMD neurons at the L4 stage and onwards, only in males. mab-3::gfp expression was lost from SMD neurons in a let-7(n2853ts) mutant male. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. mab-3::gfp expression was lost from SMD neurons in an unc-42(e419) mutant male. Scale bar: 5 µm. (D) dmd-3::gfp expression in the PHC neuron in control hermaphrodites, males and mutant animals. GFP was first observed in the PHC neurons at the L4 stage and onwards, only in males. dmd-3::gfp expression was decreased from PHC neurons in a let-7(n2853) mutant male. L1 let-7(n2853) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. (E) dmd-3::gfp expression in PHC was lost in ceh-14 null mutant males and in let-7(n2853ts) mutant males. L1 let-7(n2853ts) animals were shifted to the restricted temperature (25°C) and imaged as adults, after 48hs. (F) Masculinization of the hermaphrodite nervous system by a pan-neuronal promoter driving fem-3 (otEx7322 and otEx7323, respectively), that promotes TRA-1 degradation, induced mab-3::gfp (ot931) expression in hermaphrodite SMD neurons and dmd-3::gfp (ot932) expression in hermaphrodite PHC neurons in L4 and onwards.
 
 To address the cellular specificity of lin-29a expression, we considered the possibility that neuron class-specific terminal selector-type transcription factors that control the expression of neuron-class specific identity programs (Hobert, 2016) may also control the neuronal specificity of lin-29a expression. For example, the terminal differentiation program of the lin-29a expressing ASK neurons is controlled by the LIM homeobox gene ttx-3/LHX2 and the identity of the AIM neuron is defined by the unc-86/BRN3 POU homeobox gene (Serrano-Saiz et al., 2013). We found that lin-29a expression is eliminated in the ASK neurons of ttx-3 mutants and in the AIM neurons of unc-86 mutants (Figure 9B). The unc-3/COE-type transcription factor controls the identity of multiple neurons of the motor circuit, including the lin-29a expressing ventral nerve cord motorneurons, the SAB head motor neurons, the PDA and PDB tail motor neurons and the command interneurons AVA and PVC (Kratsios et al., 2011; Pereira et al., 2015). We found that in unc-3 mutants lin-29a expression is lost in all these neurons (Figure 9B). We conclude that the complex lin-29a expression pattern can be explained by an intersectional mechanism. Temporal control is exerted via the heterochronic pathway, sexual specificity by the sex determination pathway and cellular specificity by terminal selector-type neuronal identity factors.
 
-## Other male-specific effectors of lin-41 are also controlled in an intersectional manner
+### Other male-specific effectors of lin-41 are also controlled in an intersectional manner
 
 The sexually dimorphic expression pattern of lin-29a in the male nervous system does not extend to all sex-shared neurons that are known to display sexually dimorphic features. For example, the sex-shared PHC sensory neuron functionally and anatomically remodels during sexual maturation (Serrano-Saiz et al., 2017a), but does not express lin-29a. This suggests that lin-29a is possibly just one of several targets of LIN-41 in the context of male-specific nervous system differentiation. Previous whole animal RNA profiling of let-7 and lin-41 mutants, as well as RNA-binding assays demonstrated that LIN-41 also represses mab-3 and dmd-3 mRNA (Aeschimann et al., 2017). Both genes are members of the DMD family of sex-specifically expressed transcription factors (Mason et al., 2008; Yi and Zarkower, 1999) and were previously shown to be expressed in male-specific neurons and in a male-specific manner in distinct, but sex-shared neurons (Mason et al., 2008; Serrano-Saiz et al., 2017a; Yi et al., 2000). Their timing of expression had not been previously examined.
 
@@ -161,15 +173,278 @@ How is the neuron type-specificity of the modular outputs (lin-29, mab-3, dmd-3 
 
 ## Materials and methods
 
-## C. elegans strains
+### C. elegans strains
 
 Worm strains used in this study are listed in Table 1. The wild-type strain was Bristol N2. Worms were grown on nematode growth media (NGM) seeded with bacteria (OP50) as a food source. To synchronize worms 10 adult gravid hermaphrodites were transferred to a new plate with OP50. Worms were allowed to lay eggs for approximately two hours and adult gravid hermaphrodites were removed afterwards.
+
+**Table 1.**
+ Strain list.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain name</th>
+      <th>Genotype</th>
+      <th>Relevant DNA on array or single copy transgene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DR466</td>
+      <td>him-5(e1490)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT1524</td>
+      <td>lin-28(n719)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT7897</td>
+      <td>lin-41(n2914)/unc-29(e1072); lin-11(n1281)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT7626</td>
+      <td>let-7(n2853)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1814</td>
+      <td>lin-41(xe8/bch28); him-5(e1490) 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>VT132</td>
+      <td>lin-29a/b(n333)/mnC1; sqt-1(sc13)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB4037</td>
+      <td>glp-1(e2141)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1672</td>
+      <td>lin-29a/b(xe37)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1693</td>
+      <td>lin-29a(xe38)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1695</td>
+      <td>lin-29a(xe40)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1698</td>
+      <td>mab-10(xe44)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB2823</td>
+      <td>tra-1(e1488)/eDp6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MT1859</td>
+      <td>unc-86(n846)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH161</td>
+      <td>ttx-3(ot22)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB151</td>
+      <td>unc-3(e151)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB419</td>
+      <td>unc-42(e419)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH15422</td>
+      <td>ceh-14(ot900) 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH15568</td>
+      <td>unc-17(ot907[unc-17::mKate2::3xflag])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DG3913</td>
+      <td>lin-41(tn1541[lin-41::gfp])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1822</td>
+      <td>lin-29(xe61[lin-29a/b::gfp::3xflag])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW2224</td>
+      <td>lin-29(xe63 [gfp::3xflag::lin-29a]); him-5(e1490)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW1835</td>
+      <td>lin-29(xe65 [lin-29b::gfp::3xflag; lin-29(xe40)])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW2047</td>
+      <td>mab-10(xe75[mab-10::flag::mCherry])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW2225</td>
+      <td>lin-29(xe63); him-5(e1490); let-7(n2853)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW2342</td>
+      <td>lin-29(xe63); him-5(e1490); lin-41(n2914)/unc-29(e1072); lin-11(n1281)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HW2344</td>
+      <td>lin-29(xe63); him-5(e1490); lin-41(xe8/bch28)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH15732</td>
+      <td>mab-3(ot931[mab-3::3xflag::gfp])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH15733</td>
+      <td>dmd-3(ot932[dmd-3::3xflag::gfp])</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH10689</td>
+      <td>otIs355</td>
+      <td>rab-3::nls::tag_rfp</td>
+    </tr>
+    <tr>
+      <td>OH12543</td>
+      <td>otIs534</td>
+      <td>cho-1 fosmid::sl2::yfp::h2b</td>
+    </tr>
+    <tr>
+      <td>OH12655</td>
+      <td>otIs544</td>
+      <td>cho-1 fosmid::sl2::mCherry::h2b</td>
+    </tr>
+    <tr>
+      <td>OH13083</td>
+      <td>otIs576</td>
+      <td>unc-17 fosmid::gfp</td>
+    </tr>
+    <tr>
+      <td>OH11124</td>
+      <td>otIs388</td>
+      <td>eat-4 fosmid::sl2::yfp::h2b</td>
+    </tr>
+    <tr>
+      <td>OH12496</td>
+      <td>otIs518</td>
+      <td>eat-4 fosmid::sl2::mCherry::h2b</td>
+    </tr>
+    <tr>
+      <td>OP535</td>
+      <td>wtIs535</td>
+      <td>lin-28 fosmid::gfp</td>
+    </tr>
+    <tr>
+      <td>HW2172</td>
+      <td>xeSi182</td>
+      <td>plin-41::gfp(pest)::h2b::lin-41 3’UTR</td>
+    </tr>
+    <tr>
+      <td>HW2173</td>
+      <td>xeSi202</td>
+      <td>plin-41::gfp(pest)::h2b::unc-54 3’UTR</td>
+    </tr>
+    <tr>
+      <td>UR219</td>
+      <td>fsIs5</td>
+      <td>srj-54p::yfp</td>
+    </tr>
+    <tr>
+      <td>UL2497</td>
+      <td>Ex(dmd-5p::gfp)</td>
+      <td>dmd-5p::gfp (pUL#JS9B3 plasmid)</td>
+    </tr>
+    <tr>
+      <td>FK181</td>
+      <td>ksIs2</td>
+      <td>daf-7p::gfp</td>
+    </tr>
+    <tr>
+      <td>EB2509</td>
+      <td>dzIs75 II</td>
+      <td>kal-1p::gfp 3</td>
+    </tr>
+    <tr>
+      <td>OH15741</td>
+      <td>lin-29(xe38) + otEx7316</td>
+      <td>eat-4p::lin-29a</td>
+    </tr>
+    <tr>
+      <td>OH15742</td>
+      <td>lin-29(xe38) + otEx7317</td>
+      <td>eat-4p::lin-29a</td>
+    </tr>
+    <tr>
+      <td>OH15743</td>
+      <td>lin-29(xe40) + otEx7318</td>
+      <td>eat-4p::lin-29a</td>
+    </tr>
+    <tr>
+      <td>OH15744</td>
+      <td>lin-29(xe40) + otEx7319</td>
+      <td>eat-4p::lin-29a</td>
+    </tr>
+    <tr>
+      <td>OH15745</td>
+      <td>lin-29(xe38) + otEx7320</td>
+      <td>unc-17p::lin-29a</td>
+    </tr>
+    <tr>
+      <td>OH15746</td>
+      <td>lin-29(xe61) + otEx7321</td>
+      <td>rab-3p::fem-3::mCherry</td>
+    </tr>
+    <tr>
+      <td>OH15748</td>
+      <td>mab-3(ot931) + otEx7322</td>
+      <td>rab-3p::fem-3::mCherry</td>
+    </tr>
+    <tr>
+      <td>OH15749</td>
+      <td>dmd-3(ot921) + otEx7323</td>
+      <td>rab-3p::fem-3::mCherry</td>
+    </tr>
+  </tbody>
+</table>
+
+_1The xe8 gain of function and bch28 null alleles have been described in Ecsedi et al. (2015) and in Katic et al. (2015). These alleles were maintained in trans to improve health of the animals. Offspring homozygous for either allele were scored for phenotypic traits2Bayer and Hobert (2018).3The kal-1 gfp promoter fusion corresponds to ‘promoter G’ from Wenick and Hobert, 2004_
 
 srj-54::yfp is a PCR fragment that was constructed using standard PCR fusion methods by fusing fragment A, comprising 664 bp upstream of the predicted ATG of srj-54 and the first four codons of srj-54 coding sequence, to fragment B, comprising yfp fused to the unc-54 3´ UTR. srj-54::yfp was injected with unc-122::gfp into him-5(e1490) to generate a stable extrachromosomal array. This array was integrated into the genome using standard UV irradiation methods followed by several rounds of backcrossing to him-5(e1490) to generate fsIs5.
 
 For neuron-specific expression of lin-29a, promoter constructs driving lin-29a cDNA were generated by Gibson assembly or RF cloning. cDNA was amplified from pDH06, kindly provided by Dr. Horvitz (Harris and Horvitz, 2011). A 1 kb of the unc-17/VACHT promoter that drives expression in AVA, SAB, DA, DB, VA, VB, PDA and PDB neurons (our unpublished data) was amplified by PCR from the fosmid construct (FW AATGAAATAAGCTTGCATGGTATACACCAATCATTTCTCC and REV TCCTCTAGAGTCGACCTGCAGATAATTTAATTAAAATTGAGTTCCAAC). The PCR fragments were assembled into pPD95.75 by Gibson. For AIM-specific expression a fragment of the eat-4 locus was used to drive LIN-29A expression. The lin-29a cDNA was inserted to replace the fem-3 cDNA in this construct (Pereira et al., 2015). For nervous system masculinization, a rab-3 pan-neuronal promoter driving fem-3::mCherry was used (White et al., 2007). Transgenic lines carrying extrachromosomal arrays were generated by germline injection with 20 ng/ul of plasmid DNA and unc-122::gfp as a co-injection marker, also at 20 ng/ul.
 
-## Genome engineering
+### Genome engineering
 
 Isoform-specific gfp::3xflag tagging of endogenous lin-29 using CRISPR/Cas9. In order to obtain the lin-29(xe65) allele, the following mix was injected into lin-29a(xe40) mutant worms: 50 ng/µl pIK155, 100 ng/µl of pIK198 with a cloned sgRNA (atattatttatcagtgattg), 2.5 ng/µl pCFJ90, 5 ng/µl pCFJ104 and 10 ng/µl pFA26 (pDD282 with cloned homology arms). Recombinants were isolated according to the protocol by Dickinson et al. (Dickinson et al., 2015), verified by DNA sequencing and outcrossed three times. The plasmid for homologous recombination (pFA26) was previously described (Aeschimann et al., 2017). The lin-29(xe63) allele specifically tags lin-29a with GFP::3xFLAG at the N-terminus (Aeschimann et al., 2018).
 
@@ -183,26 +458,26 @@ Tagging of endogenous unc-17 with 3xflag::mKate2 using CRISPR/Cas9. The unc-17 l
 
 Tagging of endogenous mab-3 and dmd-3 with 3xflag::gfp using CRISPR/Cas9. The mab-3 and dmd-3 loci were tagged at the C-terminus as previously described (Dickinson et al., 2015; Katic et al., 2015). The plasmid serving as a template for homologous recombination was cloned using Gibson and included 700 bp-long homology arms. Wild-type moving recombinants were isolated, verified by DNA sequencing and outcrossed three times.
 
-## Neuron identification
+### Neuron identification
 
 Expression analysis of the lin-29 endogenously tagged alleles with neuron-specific resolution was done by assessing nuclear position and size using Nomarski optics and crossing these strains with neuronal landmark reporter strains eat-4 (otIs518) (Serrano-Saiz et al., 2017a) and cho-1 (otIs544) (Pereira et al., 2015).
 
-## Laser ablation
+### Laser ablation
 
 Laser ablation of Z1/Z4 was performed at the L1 stage as previously described (Hsin and Kenyon, 1999) using a MicroPoint Laser System Basic Unit (N2 pulsed laser (dye pump), ANDOR Technology) attached to a Zeiss Axio Imager Z2 microscope (Objective EC Plan-Neofluar 63X/1.30 Oil). Worms were recovered by washing with M9 buffer and imaged at the young adult stage. Control animals were treated in the same manner, but not subjected to laser exposure. Gonad and germline removal were confirmed by DIC microscopy.
 
-## Microscopy
+### Microscopy
 
 Worms were anesthetized using 100 mM of sodium azide and mounted on 5% agarose on glass slides. All images were acquired using a Zeiss confocal microscope (LSM880; Zeiss [Carl Zeiss], Thornwood, NY). Image reconstruction was performed using the ZEN software tool. Maximum intensity projections of representative images are shown. For neurite tracing, confocal Z-stacks were opened using FIJI, and loaded into the Simple Neurite Tracer plugin. All neurites emerging from the soma or posterior process of PDB were traced. The simple neurite tracer plugin was used to analyze the skeletons for neurite length, which were summed to calculate total neurite.
 
-## Mating assays
+### Mating assays
 
 Animals were synchronized at the L1 stage and grown to the early L4 stage group housed. The day before the mating assay experiment, males at the early L4 stage were separated to a new plate. Male mating behavior was assayed by direct observation of the mating process. A single young adult male was placed with 10–15 L4 unc-3(e151) hermaphrodites on a mating plate. The male mating behavior was recorded as previously described (Euling et al., 1999). Males were tested for their ability to locate vulva in a mating assay, calculated as location efficiency. The number of passes or hesitations at the vulva until the male firs stops were counted: location efficiency = 1/number of encounters to stop, expressed as percentage.
 
-## Mate-searching assay
+### Mate-searching assay
 
 Animals were synchronized at the L1 stage and grown to the early L4 stage . The day before the mating assay experiment, hermaphrodites and males at the early L4 stage were separated to a new plate. The mate-searching assay was performed as previously described (Lipton et al., 2004). A single animal was placed in the center of a 15 µ﻿l patch of food per 10 cm plate. Each animal that had left the food was scored blindly at 7 time points for a period of 24 hr. A worm was considered a leaver if it was 3 cm away from the food source at the scoring time.
 
-## Automated worm tracking
+### Automated worm tracking
 
 Automated single worm tracking was performed using the Wormtracker 2.0 system at room temperature (Yemini et al., 2013). Animals were synchronized at the L1 stage and grown to the early L4 stage . The day before the tracking experiments, hermaphrodites and males were separated to same-sex group housed plates. Animals were recorded at the young adult stage for 5 min to ensure sufficient sampling of locomotion related behavioral features. All animals were tracked on NGM plates uniformly covered with food (OP50). To avoid potential variability arising due to room conditions, all strains that were compared in a single experiment were recorded simultaneously in identical room condition, along with the controls. Analysis of the tracking videos was performed as previously described (Yemini et al., 2013). After correction for multiple testing (Bonferroni correction), features shown in Figure 8 and Supplementary file 1 emerged as the ones with most significantly different q-value among the test groups. For the rescue experiment, we only measured these features, permitting us to use the p-value.

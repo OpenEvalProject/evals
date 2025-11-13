@@ -25,20 +25,20 @@
 
 ### Affiliations
 
-1. https://ror.org/02jqj7156 Environmental Science and Policy, College of Science, George Mason University Fairfax United States
-2. https://ror.org/00mzrph17 Urban Wildlife Institute, Conservation and Science Department, Lincoln Park Zoo Chicago United States
-3. https://ror.org/013ckk937 Department of Natural Resource Science, The University of Rhode Island Kingston United States
-4. https://ror.org/05p1j8758 Department of Horticulture and Natural Resources, Kansas State University Manhattan United States
-5. https://ror.org/05gq3a412 Department of Biological Sciences and Center for Urban Ecology and Sustainability, Butler University Indianapolis United States
-6. https://ror.org/0080fxk18 Department of Biological Sciences, California State University Long Beach Long Beach United States
-7. https://ror.org/05n545h05 Department of Environmental Science and Policy, St. Edward’s University Austin United States
-8. https://ror.org/01y2jtd41 Department of Forest and Wildlife Ecology, University of Wisconsin-Madison Madison United States
+1. Environmental Science and Policy, College of Science, George Mason University Fairfax United States ([ROR:02jqj7156](https://ror.org/02jqj7156))
+2. Urban Wildlife Institute, Conservation and Science Department, Lincoln Park Zoo Chicago United States ([ROR:00mzrph17](https://ror.org/00mzrph17))
+3. Department of Natural Resource Science, The University of Rhode Island Kingston United States ([ROR:013ckk937](https://ror.org/013ckk937))
+4. Department of Horticulture and Natural Resources, Kansas State University Manhattan United States ([ROR:05p1j8758](https://ror.org/05p1j8758))
+5. Department of Biological Sciences and Center for Urban Ecology and Sustainability, Butler University Indianapolis United States ([ROR:05gq3a412](https://ror.org/05gq3a412))
+6. Department of Biological Sciences, California State University Long Beach Long Beach United States ([ROR:0080fxk18](https://ror.org/0080fxk18))
+7. Department of Environmental Science and Policy, St. Edward’s University Austin United States ([ROR:05n545h05](https://ror.org/05n545h05))
+8. Department of Forest and Wildlife Ecology, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
 9. Austin Parks and Recreation, City of Austin Austin United States
-10. https://ror.org/0160cpw27 Department of Biological Sciences, University of Alberta Edmonton Canada
-11. https://ror.org/036jqmy94 Department of Geographical and Sustainability Sciences, University of Iowa Iowa City United States
+10. Department of Biological Sciences, University of Alberta Edmonton Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
+11. Department of Geographical and Sustainability Sciences, University of Iowa Iowa City United States ([ROR:036jqmy94](https://ror.org/036jqmy94))
 12. Department of Education & Conservation, Brandywine Zoo Wilmington United States
-13. https://ror.org/0563w1497 The Nature Conservancy in Texas San Antonio United States
-14. https://ror.org/02b5k3s39 Texas Parks and Wildlife Austin United States
+13. The Nature Conservancy in Texas San Antonio United States ([ROR:0563w1497](https://ror.org/0563w1497))
+14. Texas Parks and Wildlife Austin United States ([ROR:02b5k3s39](https://ror.org/02b5k3s39))
 
 † Corresponding author
 
@@ -66,11 +66,121 @@ To quantify changes in mammal diel activity in response to urbanization, we used
 
 Across 41,594 trap nights (Supplementary file 1a), we captured 79,659 total unique detection events. Total detections per species ranged from 102 to 34,931, and each species was detected in 5–10 cities at an average proportion of 0.16–0.77 sites per city (Table 1). Bobcat occurred at the lowest number of cities and proportion of sites, while raccoon occurred in all 10 cities and at the greatest proportion of sites (Table 1, see Supplementary file 1b for the proportion of sites in each city). The number of detections captured throughout the 24-hr diel period varied among species (Table 1).
 
-## Modeling diel activity
+**Table 1.**
+ The total number of detections for each species, number of cities each species was detected in, mean proportion of sites each species was detected at per city, and total number of detections in each time category for 8 urban mammal species across 10 US metropolitan areas between January 2017 and December 2018.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Total detections</th>
+      <th>No. of cities species detected</th>
+      <th>Mean proportion of sites species detected per city</th>
+      <th>No. of ‘day’ detections</th>
+      <th>No. of ‘dawn’ detections</th>
+      <th>No. of ‘dusk’ detections</th>
+      <th>No. of ‘night’ detections</th>
+      <th>No. of ‘deep night’ detections</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bobcat</td>
+      <td>102</td>
+      <td>5</td>
+      <td>0.16</td>
+      <td>29</td>
+      <td>1</td>
+      <td>9</td>
+      <td>45</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Coyote</td>
+      <td>2732</td>
+      <td>9</td>
+      <td>0.63</td>
+      <td>671</td>
+      <td>98</td>
+      <td>256</td>
+      <td>1318</td>
+      <td>389</td>
+    </tr>
+    <tr>
+      <td>Eastern cottontail</td>
+      <td>16,102</td>
+      <td>10</td>
+      <td>0.61</td>
+      <td>3984</td>
+      <td>619</td>
+      <td>1097</td>
+      <td>8317</td>
+      <td>2085</td>
+    </tr>
+    <tr>
+      <td>Raccoon</td>
+      <td>34,931</td>
+      <td>10</td>
+      <td>0.77</td>
+      <td>2638</td>
+      <td>642</td>
+      <td>3767</td>
+      <td>21,723</td>
+      <td>6161</td>
+    </tr>
+    <tr>
+      <td>Red fox</td>
+      <td>1570</td>
+      <td>8</td>
+      <td>0.51</td>
+      <td>441</td>
+      <td>35</td>
+      <td>152</td>
+      <td>744</td>
+      <td>198</td>
+    </tr>
+    <tr>
+      <td>Striped skunk</td>
+      <td>990</td>
+      <td>10</td>
+      <td>0.24</td>
+      <td>89</td>
+      <td>24</td>
+      <td>98</td>
+      <td>584</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td>Virginia opossum</td>
+      <td>8357</td>
+      <td>8</td>
+      <td>0.7</td>
+      <td>407</td>
+      <td>116</td>
+      <td>1027</td>
+      <td>5087</td>
+      <td>1720</td>
+    </tr>
+    <tr>
+      <td>White-tailed deer</td>
+      <td>14,875</td>
+      <td>10</td>
+      <td>0.56</td>
+      <td>7965</td>
+      <td>658</td>
+      <td>816</td>
+      <td>4299</td>
+      <td>1137</td>
+    </tr>
+  </tbody>
+</table>
+
+### Modeling diel activity
 
 We formulated a hierarchical multinomial model to quantify the diel behavior of each species and assess the effects that available greenspace, vegetation cover, impervious land cover, human population density, and daily temperature had on diel behavior of each species. Our approach operates similar to resource selection functions in which resources are selected in space. However, substituting time for space allowed us to quantify changes in diel activity across gradients of environmental change. This temporal resource selection model allowed us to estimate temporal ‘selection’ and the probability of ‘use’ in each time category. Coefficient estimates are estimates of selection for a particular time category relative to the available time in the respective category and the difference from the reference time category (‘day’). Exponentiated coefficient estimates greater than one indicates selection and less than one indicates avoidance, relative to the day reference category. We also estimated the influence that each predictor variable had on the probability of activity in each time category, including the ‘day’ category, using the softmax function – a generalization of the inverse logit link for more than two modeled categories (Kruschke, 2011).
 
-## Among city variation in diel activity patterns
+### Among city variation in diel activity patterns
 
 We found that most species, on average, had a higher probability of being nocturnal (active at night or during the darkest portions of night) with the exception of bobcat and white-tailed deer (Figures 1 and 2). Most species showed variation in diel activity among cities (e.g., bobcat; Figure 1), and some species (e.g., eastern cottontail, coyote, red fox, and bobcat) exhibited profound variation in diel activity across individual sampling sites (Figure 2). For example, the predicted probability of nocturnal behavior for eastern cottontail at each sampled site ranged from 0.15 to 0.69 (see Supplementary file 1c for a full set of ranges for each species and each time category).
 
@@ -80,9 +190,9 @@ We found that most species, on average, had a higher probability of being noctur
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/74756/elife-74756-fig2-v2.jpg)
 
-**Figure 2.:** x-axis) the species was detected.Each column on the x-axis is a stacked bar plot representing the probability of activity in each time category at each sampling site. For each bar plot, all categories sum to one. Sampling sites along the x-axis are ordered from the lowest probability of nocturnal activity to the highest.
+**Figure 2.:** Each column on the x-axis is a stacked bar plot representing the probability of activity in each time category at each sampling site. For each bar plot, all categories sum to one. Sampling sites along the x-axis are ordered from the lowest probability of nocturnal activity to the highest.
 
-## Selection for particular time categories
+### Selection for particular time categories
 
 Of the three predator species that we analyzed (coyote, bobcat, and red fox), we found that anthropogenic and natural features were associated with variation in diel activity for only coyote and red fox (Figure 3A-C). Coyote selected for both nocturnal and crepuscular hours in areas of greater human population densities (Figure 3B), and red fox avoided nocturnal hours in areas with more available greenspace (Figure 3C). Seasonality also had an effect on both coyote and fox diel activity. Coyote selected for dawn hours (Figure 3B) and red foxes selected for dusk hours during periods of higher daily average temperatures (Figure 3C). We found no evidence that bobcats varied their diel activity across our environmental variables (Figure 3A).
 
@@ -94,13 +204,245 @@ Natural features were also associated with variation in diel activity for omnivo
 
 We found seasonality effects on all omnivore and herbivore species. Virginia opossum were more likely to avoid daytime hours as temperatures increased (Figure 3F). Daily average temperature had a positive relationship with diurnal selection for raccoons, striped skunk, eastern cottontail, and white-tailed deer (Figure 3D, E, G, H).
 
-## Probability of nocturnal activity
+### Probability of nocturnal activity
 
 To further assess the probability of a species shifting toward nocturnality as a response to natural and anthropogenic features of the environment, we combined the probability of activity during night and deep night and predicted these values across each continuous covariates using the model results for each species. Coyote had a lower probability of being nocturnal in areas with lower human densities, but that probability increased significantly as human population increased (Figure 4). With a 1 standard deviation (hereafter sd) increase from the mean human population density (from 1512 to 3095 people/km2), coyotes are 18% more likely to use nighttime hours and 38% more likely with a 2 sd increase from 1512 to 4678 people/km2 (Table 2). Across the available habitat gradient red fox were 21% less likely to use nighttime hours with a 1 sd increase in available greenspace from 0.41 to 0.57, and 38% less likely with a sd increase from 0.41 to 0.73 (Table 2). Note that predictor values vary because they were collected at species-specific scales and not all species were detected at the same sites.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/74756/elife-74756-fig4-v2.jpg)
 
 **Figure 4.:** Solid line indicates the median predicted line and shaded areas are 95% credible interval. Darker shading represent the relationships whose odds ratios did not overlap 1.
+
+**Table 2.**
+ Odds ratios for each predictor variable and a 1 and 2 standard deviation increase across their values.Bolded text indicates scenarios where the 95% credible intervals do not overlap 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Available greenspace</th>
+      <th colspan="2">Impervious cover</th>
+      <th colspan="2">Vegetation cover</th>
+      <th colspan="2">Human pop. density</th>
+      <th colspan="2">Daily avg. temp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1-Unit increase</td>
+      <td>2-Unit increase</td>
+      <td>1-Unit increase</td>
+      <td>2-Unit increase</td>
+      <td>1-Unit increase</td>
+      <td>2-Unit increase</td>
+      <td>1-Unit increase</td>
+      <td>2-Unit increase</td>
+      <td>1-Unit increase</td>
+      <td>2-Unit increase</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Bobcat</td>
+      <td>1.01</td>
+      <td>1.03</td>
+      <td>1.04</td>
+      <td>1.09</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.27</td>
+      <td>1.64</td>
+      <td>0.94</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>(0.72–1.58)</td>
+      <td>(0.52–2.58)</td>
+      <td>(0.74–1.75)</td>
+      <td>(0.54–3.18)</td>
+      <td>(0.57–1.77)</td>
+      <td>(0.30–3.51)</td>
+      <td>(0.87–3.09)</td>
+      <td>(0.74–10.4)</td>
+      <td>(0.59–1.24)</td>
+      <td>(0.35–1.56)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Coyote</td>
+      <td>0.99</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>0.89</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>1.18</td>
+      <td>1.38</td>
+      <td>0.95</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>(0.88–1.10)</td>
+      <td>(0.76–1.22)</td>
+      <td>(0.80–1.09)</td>
+      <td>(0.64–1.19)</td>
+      <td>(0.84–1.09)</td>
+      <td>(0.71–1.18)</td>
+      <td>(1.04–1.35)</td>
+      <td>(1.05–1.80)</td>
+      <td>(0.87–1.03)</td>
+      <td>(0.74–1.06)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Red fox</td>
+      <td>0.79</td>
+      <td>0.62</td>
+      <td>0.94</td>
+      <td>0.87</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.92</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>(0.66–0.93)</td>
+      <td>(0.44–0.86)</td>
+      <td>(0.75–1.14)</td>
+      <td>(0.53–1.30)</td>
+      <td>(0.89–1.13)</td>
+      <td>(0.78–1.27)</td>
+      <td>(0.86–1.17)</td>
+      <td>(0.73–1.38)</td>
+      <td>(0.82–1.01)</td>
+      <td>(0.66–1.02)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Raccoon</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>1.10</td>
+      <td>1.20</td>
+      <td>1.02</td>
+      <td>1.03</td>
+      <td>0.93</td>
+      <td>0.87</td>
+      <td>0.81</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>(0.95–1.03)</td>
+      <td>(0.91–1.07)</td>
+      <td>(1.05–1.16)</td>
+      <td>(1.10–1.34)</td>
+      <td>(0.98–1.06)</td>
+      <td>(0.96–1.11)</td>
+      <td>(0.90–0.97)</td>
+      <td>(0.81–0.94)</td>
+      <td>(0.76–0.85)</td>
+      <td>(0.55–0.70)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Striped skunk</td>
+      <td>1.26</td>
+      <td>1.58</td>
+      <td>1.27</td>
+      <td>1.60</td>
+      <td>1.02</td>
+      <td>1.04</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.75</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>(0.93–1.77)</td>
+      <td>(0.84–3.09)</td>
+      <td>(0.93–1.87)</td>
+      <td>(0.85–3.48)</td>
+      <td>(0.86–1.22)</td>
+      <td>(0.73–1.49)</td>
+      <td>(0.79–1.22)</td>
+      <td>(0.60–1.46)</td>
+      <td>(0.59–0.92)</td>
+      <td>(0.35–0.84)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Virginia opossum</td>
+      <td>0.88</td>
+      <td>0.77</td>
+      <td>1.01</td>
+      <td>1.02</td>
+      <td>1.03</td>
+      <td>1.05</td>
+      <td>1.04</td>
+      <td>1.07</td>
+      <td>1.25</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>(0.81–0.96)</td>
+      <td>(0.65–0.92)</td>
+      <td>(0.91–1.12)</td>
+      <td>(0.82–1.24)</td>
+      <td>(0.96–1.10)</td>
+      <td>(0.92–1.20)</td>
+      <td>(0.97–1.11)</td>
+      <td>(0.93–1.23)</td>
+      <td>(1.14–1.36)</td>
+      <td>(1.10–1.70)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Eastern cottontail</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>1.03</td>
+      <td>1.05</td>
+      <td>0.93</td>
+      <td>0.87</td>
+      <td>0.90</td>
+      <td>0.81</td>
+      <td>0.57</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>(0.95–1.04)</td>
+      <td>(0.90–1.07)</td>
+      <td>(0.97–1.09)</td>
+      <td>(0.94–1.18)</td>
+      <td>(0.89–0.98)</td>
+      <td>(0.78–0.96)</td>
+      <td>(0.86–0.94)</td>
+      <td>(0.75–0.89)</td>
+      <td>(0.53–0.60)</td>
+      <td>(0.27–0.34)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">White-tailed deer</td>
+      <td>1.05</td>
+      <td>1.11</td>
+      <td>1.14</td>
+      <td>1.31</td>
+      <td>1.04</td>
+      <td>1.09</td>
+      <td>0.92</td>
+      <td>0.85</td>
+      <td>0.88</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>(1.00–1.10)</td>
+      <td>(1.01–1.22)</td>
+      <td>(1.07–1.21)</td>
+      <td>(1.16–1.47)</td>
+      <td>(1.00–1.09)</td>
+      <td>(0.99–1.19)</td>
+      <td>(0.88–0.96)</td>
+      <td>(0.78–0.92)</td>
+      <td>(0.84–0.92)</td>
+      <td>(0.70–0.84)</td>
+    </tr>
+  </tbody>
+</table>
 
 White-tailed deer, eastern cottontail, and raccoon had a greater probability of being active at night where human densities were low; this probability decreased as human population increased (Figure 4). White-tailed deer were 8% less likely to use nighttime hours with a 1 sd increase in population density from 1515 to 3003 people/km2, eastern cottontail were 10% less likely (from 2226 to 4633 people/km2), and raccoon were 7% less likely (from 1763 to 3789 people/km2; Table 2). With a 2 sd increase in population density (1515–4491 people/km2 for white-tailed deer, 2226–7040 for eastern cottontail, and 1763–5815 for raccoon), white-tailed deer were 15% less likely to be nocturnal, eastern cottontail 19% less likely, and raccoon 13% less likely to be nocturnal (Table 2). Conversely, white-tailed deer and raccoon showed a positive relationship with increased impervious cover and nocturnality (Figure 4). White-tailed deer were 14% more likely to be active at night with a 1 sd increase in impervious cover from 0.16 to 0.31% and 31% more likely with a 2 sd increase from 0.16 to 0.45 (Table 2). Raccoons were 10% more likely to be active at night with a 1 sd increase in impervious cover and 21% more likely with an a 2 sd increase (Table 2).
 
@@ -134,15 +476,15 @@ We have shown that mammals have significant variation in the use and selection o
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The number of sampling sites per city ranged from 24 to 113 (x̅ = 45.30, sd = 28.65). In each city, sampling sites were placed along a gradient of urbanization (high to low population density and impervious cover). At each sampling site (n = 453) we placed one Bushnell motion-triggered infrared Trophy Cam (Bushnell Corp., Overland Park, KS, USA). Sampling sites were located in greenspaces, such as city parks, cemeteries, natural areas, utility easements, and golf courses. To increase the detection probability of each species we placed one synthetic fatty acid scent lure in the camera line of sight, and lures were replaced on 2-week intervals if missing to remain consistent throughout the study. However, Fidino et al., 2020 later found that this type of lure has little to no effect on the detectability of most urban mammals. We used observation data collected between January 2017 and December 2018. However, not all cities were sampled continuously throughout the study period (Supplementary file 1a).
 
-## Data processing
+### Data processing
 
 For each species, we defined a single detection event as all photos taken within a 15-min period at each camera station (Farris et al., 2015; Ridout and Linkie, 2009). We categorized each detection event as either ‘dawn’, ‘dusk’, ‘day’, ‘night’, and ‘deep night’ using the suncalc package (Thieurmel and Elmarhraoui, 2019) in R ver 4.2.0 (R Development Core Team, 2021). The suncalc package defines and calculates ‘dawn’ as starting when morning astronomical twilight (when the center of sun is 18° below the horizon) begins and ending when the bottom edge of the sun touches the horizon. ‘Dusk’ was defined as the beginning of evening astronomical twilight to the point when it became dark enough for astronomical observations. ‘Day’ was defined as the period between dawn and dusk. We considered the nighttime as two distinct time periods (night and deep night), because some species may be nocturnal but use different hours of the night to reduce the risk of human interactions (Gehrt et al., 2009). We defined ‘night’ as the periods between the end of dusk and 1 hr before the moment when the sun is at the lowest point (astronomically darkest moment of the night), and from 1 hr after the moment when the sun is at the lowest point to dawn. ‘Deep night’ was therefore categorized as 1 hr before and after the moment when the sun was at the lowest point. We accounted for the date, geographical location, and daylight savings time of each detection events. Therefore, the amount of time available in each category could vary geographically and seasonally.
 
-## Predictor variables
+### Predictor variables
 
 To assess how characteristics of urban environments influenced diel activity of urban wildlife mammals, we calculated site-level predictor variables within a fixed-radius buffer around each sampling site. Fixed-radius buffers varied in size among species and were based on the typical home range of each species: 500 m fixed-radius buffer for eastern cottontail (Hunt et al., 2013), Virginia opossum (Fidino et al., 2016; Wright et al., 2012), and white-tailed deer (Etter et al., 2002); 1 km fixed-radius buffer for striped skunk (Weissinger et al., 2009) and raccoon (Rosatte, 2000), and 1.5 km fixed-radius buffer for coyote (Gehrt et al., 2009; Riley et al., 2003), red fox (Mueller et al., 2018), and bobcat (Riley et al., 2003). In our analysis, we included variables calculated within each species’ fixed-radius buffer that described two contrasting characteristics of urban ecosystems, the natural and the human-built environment (Supplementary file 1d). We also included average daily temperature to account for possible seasonal changes in diel activity.
 
@@ -154,13 +496,25 @@ Seasonality – Because weather that defines each calendar season varies across 
 
 All predictor variables were group mean centered by the respective city and scaled by the global standard deviation for each variable. This scaling eases parameter interpretation and makes parameter estimates less sensitive to unequal sample size among cities (Fidino et al., 2021; Milliren et al., 2018).
 
-## Quantifying the influence of urban characteristics on diel patterns
+### Quantifying the influence of urban characteristics on diel patterns
 
-By splitting diel time into k in 1, …, K categories where k represents a single category and K represents the total number of categories, we estimated the probability a detection event occurs in each category (k) for each species using multinomial (or softmax) regression (Kruschke, 2011). To do so, we let yi be the time category of the ith in 1, …, I detection events where I is the total number of detection events. Softmax regression is similar to logistic regression (Kruschke, 2011), however in our case we have multiple outcomes and therefore assume yi is a categorical random variable, where ϕ is a probability vector of the K categories ϕ=[ϕ1ϕ2ϕ3ϕ4ϕ5],  ϕ1=1−ϕ2−ϕ3−ϕ4−ϕ5   , and ∑ϕ = 1 such that:(1)yi ∼ Categorical(ϕ).
+By splitting diel time into k in 1, …, K categories where k represents a single category and K represents the total number of categories, we estimated the probability a detection event occurs in each category (k) for each species using multinomial (or softmax) regression (Kruschke, 2011). To do so, we let yi be the time category of the ith in 1, …, I detection events where I is the total number of detection events. Softmax regression is similar to logistic regression (Kruschke, 2011), however in our case we have multiple outcomes and therefore assume yi is a categorical random variable, where $ϕ$ is a probability vector of the K categories $ϕ=[ϕ_{1}ϕ_{2}ϕ_{3}ϕ_{4}ϕ_{5}],  ϕ_{1}=1−ϕ_{2}−ϕ_{3}−ϕ_{4}−ϕ_{5}  $ , and $\sumϕ$ = 1 such that:
 
-To understand mechanistic changes in species-specific diel activity patterns and assess the influence that each predictor variable had on the temporal activity of each species, we let ϕi be a function of covariates the softmax link function,(2)ϕi,k=exp(λi,k)∑k=1Kexp(λi,k)
+$$
+y_{i} ∼ Categorical(ϕ).
+$$
 
-where is the log-linear predictor for detection event i and category k. The softmax function (Equation 2) states that the probability of outcome k is the exponentiated linear propensity of outcome k relative to the sum of the exponentiated linear propensities across all outcome of a set of categories K (Kruschke, 2011). We set our reference category as ‘day’ (i.e., k = 1). In our model the log-linear predictor of each outcome is then(3)λi,k ={log(αi,k) k= 1xjTβj,k+βc[i],k+ log (αi,k) k > 1.
+To understand mechanistic changes in species-specific diel activity patterns and assess the influence that each predictor variable had on the temporal activity of each species, we let $ϕ_{i}$ be a function of covariates the softmax link function,
+
+$$
+ϕ_{i,k}=\frac{exp(\lambda_{i,k})}{\sumk=1Kexp(\lambda_{i,k})}
+$$
+
+where is the log-linear predictor for detection event i and category k. The softmax function (Equation 2) states that the probability of outcome k is the exponentiated linear propensity of outcome k relative to the sum of the exponentiated linear propensities across all outcome of a set of categories K (Kruschke, 2011). We set our reference category as ‘day’ (i.e., k = 1). In our model the log-linear predictor of each outcome is then
+
+$$
+\lambda_{i,k} ={log(\alpha_{i,k}) k= 1x_{j}^{T}\beta_{j,k}+\beta_{c[i],k}+ log (\alpha_{i,k}) k > 1.
+$$
 
 In Equation 3, βj,k coefficients correspond to the effect of greenspace availability, impervious cover, vegetation cover, human population density, and daily average temperature for k > 1. As detection events within each city may not be wholly independent, we included a random intercept for city, βc[i],k, where c is a vector of length I that denotes which city detection event i occurred (Gelman and Hill, 2006). Finally, to account for the different amount of time available to animals among the K categories, we also included a log offset term, log(αk,i), where αk,i is the number of hours available in category k at the time of detection event i. This form of multinomial regression is equivalent to a logistic regression model with a spatial categorical covariate with K levels, where the offset accounts for varying availability. As such, our model approximates the weighted distribution used in resource selection functions assuming an exponential link (Hooten et al., 2017). Exponentiated coefficient estimates greater than one indicates ‘selection’ and less than one indicates ‘avoidance’, relative to the day reference category.
 

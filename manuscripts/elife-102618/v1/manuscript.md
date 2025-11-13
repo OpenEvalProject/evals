@@ -27,7 +27,7 @@ Here, we characterize UBC firing evoked by MF input patterns that are based on i
 
 ## Results
 
-## Diverse MF activity evokes wide ranging UBC responses
+### Diverse MF activity evokes wide ranging UBC responses
 
 We set out to assess the UBC response to MF input patterns as observed in vivo in the vestibulocerebellum. For this purpose, we utilized in vivo recordings of MF activity during a smooth pursuit eye movement task from the floccular complex of rhesus macaques (provided by David J. Herzfeld and Stephen G. Lisberger) and reproduced the firing patterns observed there in acute cerebellar slices (Figure 1a). In their experiments, a head-fixed monkey was trained to track a smoothly moving visual target with minimal saccades while simultaneously recording single unit MF responses (see Methods). MF firing is comprised of sustained changes in firing that encode velocity and eye position, burst discharges that encode saccades, or a combination of both (Lisberger and Fuchs, 1978). We selected 30 s periods of firing from two representative MFs recorded in separate sessions. One showed characteristic burst firing (Figure 1c, green trace) and the other showed more sustained firing that increased or decreased in accordance with the smooth pursuit trials (Figure 1d, green trace). We performed cell-attached recordings from UBCs in acute cerebellar brain slices from P30-47 mice in the presence of GABAA, GABAB, and glycine receptor blockers (see Methods) and stimulated MF inputs using a theta-glass electrode.
 
@@ -39,7 +39,7 @@ As a means of categorizing the UBCs (Guo et al., 2021a; Huson et al., 2023), we 
 
 Next, we stimulated MF inputs to the same four UBCs using an in vivo MF firing pattern associated with smooth pursuit trials (Figure 1d). This firing pattern consists of mossy fiber firing at 10–20 spk/s that periodically increases to 40–80 spk/s. The three excitatory UBCs responded with firing patterns that were qualitatively similar to the mossy fiber input, with irregular firing at 10–50 spk/s periodically increasing by 20–60 spk/s in response to elevations in mossy fiber firing. However, UBC responses were delayed relative to mossy fiber inputs, peaking later and remaining elevated after the MF firing rates decreased. As such, the firing of the excitatory UBCs appeared to be a low-pass filtered version of the MF input, with the time course progressively slower and the extent of filtering more pronounced for the fast, mid-range and slow cells. The slow cell increased its firing only after the elevation in MF firing. The OFF UBC completely shut down during the increase in MF firing, and only fired in between increases in firing, or in response to decreases in firing, effectively inverting the MF firing pattern. Overall, the different UBCs provided diverse temporal transformations of the in vivo MF input patterns.
 
-## The influence of MF burst duration on UBC responses
+### The influence of MF burst duration on UBC responses
 
 Given the diversity of spike numbers in MF bursts in vivo, we systematically examined the effects of MF burst duration on the UBC response. Previously, we found that mossy fiber activation with a burst of 20 stimuli at 100 spk/s evoked a continuum of temporal responses in a population of UBCs (Guo et al., 2021a; Huson et al., 2023). We extended this approach by stimulating MFs with single stimuli, and 100 spk/s bursts of 2, 5, 10, and 20 stimuli (Figure 2a, green trace). We sorted UBCs (n=70) by their responses to the 20 stimuli at 100 spk/s burst, either according to the half-widths of their increases in firing (cells #1–61), or by the pause durations following stimulation (cells #62–70; Guo et al., 2021a; Figure 2b).
 
@@ -53,19 +53,39 @@ Summaries of peak increases in firing (Figure 2c and d), the number of spikes ev
 
 Overall, these results indicate that UBCs can provide long-lasting responses to bursts with a wide range of input durations. After single stimuli and short bursts only fast UBCs respond with clear increases in firing, but these responses remain consistent as burst duration increases. This suggests that fast UBCs are suited to detecting the occurrence of a bust, regardless of burst duration. In contrast, slow UBCs are suited to detecting bursts of 5–20 MF spikes and scaling their responses proportionally to burst duration.
 
-## Different glutamate receptors mediate distinct components of UBC responses
+### Different glutamate receptors mediate distinct components of UBC responses
 
 Many types of glutamate receptors are present at MF to UBC synapses, and it is not clear how each type contributes to responses evoked by MF bursts of different durations. We focused our studies on AMPARs and mGluR1s that elicit excitatory currents in UBCs, and mGluR2/3s that elicit inhibitory currents (Rossi et al., 1995; Kinney et al., 1997; Russo et al., 2008; Kim et al., 2012; Schwartz et al., 2012; Borges-Merjane and Trussell, 2015; Guo et al., 2021a). NMDARs are also present at UBC synapses, but we found that they do not make an appreciable contribution to responses evoked by bursts (Figure 3—figure supplement 1), and we therefore did not explicitly examine their contributions in combination with antagonists of the other glutamate receptors.
 
 We evoked responses in 31 UBCs with single stimuli, 2, 5, 10, and 20 stimuli at 100 spk/s while additively washing in antagonists of mGluR2/3s (LY341495; 1–5 µM), AMPARs (NBQX; 5 µM), and mGluR1s (JNJ16259685; 1 µM) (Figure 3a, above). Blocking mGluR2/3 eliminated the pause after MF stimulation (e.g. cell #27, Figure 3a, orange, and Figure 3d, second row), in line with previous findings (Russo et al., 2008; Kim et al., 2012; Borges-Merjane and Trussell, 2015). Blocking mGluR2/3s also slightly increased peak responses (Figure 3b), and the number of evoked spikes in some cells (Figure 3c and e), especially for larger bursts, with significantly more spikes after blocking mGluR2/3s for burst of 5 stimuli or more (Figure 3f). The additional block of AMPARs eliminated increases in firing evoked by single stimuli in most cells (e.g. cell #8, Figure 3a–c, red, and Figure 3d, third row), but its effect diminished with increasing numbers of stimuli in the burst (Figure 3b, c and e), and on average AMPARs were not the main mediator of the increase in firing for bursts of 5 stimuli or more (Figure 3g). The component of the response that was sensitive to blocking mGluR1 increased as the bursts got longer and was the main mediator of the increase in firing in almost all UBCs for 20 stimulus bursts (Figure 3b, c, e and h). In a few UBCs, some short-lived responses remained after blocking both AMPARs and mGluR1s (e.g. cell #27 Figure 3a and b), but this did not represent a significant portion of the evoked spikes (Figure 3c and e).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig3-v1.jpg)
+
+**Figure 3.:** (a) Instantaneous firing rates of five representative UBCs in response to 100 spk/s bursts comprised of 1–20 stimuli (stimulus indicated by green bars). Responses shown for baseline conditions (black), and after addition of antagonists of mGluR2/3 (yellow), AMPAR (red), and mGluR1 (blue). Glutamate receptor antagonists were applied successively on top of the previous antagonist(s) as depicted in the scheme at the top. Cell numbers refer to the index in the summary plot (d). (b) Summaries of the peak change in firing rate for the same five cells, with successive different markers for baseline and the different glutamate antagonists, and separate plots for the different MF burst stimulations. (c) As in b but for the number of spikes evoked by the MF stimulation. (d) Heat maps showing the normalized instantaneous firing rates for all UBCs in response to 100 spk/s burst comprised of 1–20 stimuli (columns), for baseline and after addition of glutamate receptor antagonists (rows). Responses were normalized per cell to the peak firing rate in response to the 20 stimuli at 100 spk/s burst with mGluR2/3 blocked. Cells sorted by their response to the baseline 20 stimuli at 100 spk/s input, either by the half-width of the increase in firing (cell #1–27) or by pause duration (cell #28–31). Time indicates seconds since start of MF stimulation (indicated by dotted red line). Red arrows indicate representative UBCs shown in a-c. (e) Summary plots of the number of spikes evoked by the MF stimulation on a log scale for all UBCs color coded to correspond to the cell index in d. Successive different markers indicate baseline and the different glutamate antagonists, and separate plots for the different MF burst stimulations. (f) Violin plots of the number of spikes after each burst under baseline conditions (-) and after blocking mGluR2/3 (+), normalized per cell to the number of spikes after 20 stimuli at 100 spk/s under baseline conditions. Markers indicate individual UBCs color coded by the cell index in d. (*P<0.01, Wilcoxon signed rank test). (g) Violin plots of the percentage of the number of spikes evoked by MF stimulation that was mediated by AMPARs, estimated from the effect of blocking AMPARs on the response. Markers indicate individual UBCs color coded by the cell index in d. Responses smaller than 5 spikes not shown. (h) As in g but for the component mediated by mGluR1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Instantaneous firing rates of two representative UBCs in response to 100 spk/s bursts comprised of 1–20 stimuli (stimulus indicated above in green). Responses shown for baseline conditions (black), and after addition of an antagonist of NMDA receptors (pink). Cell numbers refer to the index in the summary plot (b). (b) Heat maps showing the normalized instantaneous firing rates for all UBCs in response to 100 spk/s burst comprised of 1–20 stimuli (columns), for baseline and after addition of an NMDA receptor antagonist (rows). Responses were normalized per cell to the peak firing rate in the baseline response to the 20 stimuli at 100 spk/s burst. Cells sorted by their response to the baseline 20 stimuli at 100 spk/s input, either by the half-width of the increase in firing (cell #1–8) or by pause duration (cell #9–10). Time indicates seconds since start of MF stimulation (indicated by dotted red line). Red arrows indicate representative UBCs shown in a. (c) Violin plots of the number of spikes after each burst under baseline conditions (-) and after blocking NMDAR (+), normalized per cell to the number of spikes after 20 stimuli at 100 spk/s under baseline conditions. Markers indicate individual UBCs color coded by the cell index in b.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) UMAP embedding of normalized gene expression in the UBC population for mGluR1. (b) Same as in a but showing AMPAR subunits GluA1-4. (c) Same as in a but showing auxiliary subunits TARP γ–2, γ–7, and γ–8. (d) Same as in a but showing auxiliary subunit GSG1L.The following previously published data set was used:https://singlecell.broadinstitute.org/single_cell/study/SCP795/a-transcriptomic-atlas-of-the-mouse-cerebellum.
+
 AMPAR-mediated responses to single stimuli are more common in fast UBCs (Figure 3d). This is surprising since AMPAR subunits are expressed homogeneously across within the UBC population (Guo et al., 2021a; Kozareva et al., 2021; Figure 3—figure supplement 2b). It is therefore surprising that AMPAR responses are so small or are not apparent in slower UBCs and OFF UBCs. Although mGluR2/3 inhibition obscured small AMPAR components in some cells (e.g. cell #10, Figure 3a), this was uncommon and did not account for the differences in AMPAR-mediated responses in the UBC population (Figure 3d). It is possible that differential expression of auxiliary proteins governs the amount of AMPAR current present in a UBC. TARP γ–2 controls the amplitude of slow AMPAR EPSCs in UBCs (Lu et al., 2017), and it may be slightly elevated in UBCs that highly express mGluR1 (Figure 3—figure supplement 2), which corresponds to fast excitatory UBCs (Borges-Merjane and Trussell, 2015; Guo et al., 2021a; Kozareva et al., 2021). TARP γ–8 and TARP γ–7 have similar properties as TARP γ–2 (Jackson and Nicoll, 2011) and are also present in UBCs at low levels in UBCs. TARP γ–8 has an inverse expression pattern, and TARP γ–7 is expressed homogeneously, but their roles in regulating AMPARs in UBCs has not been examined. The expression of GSG1L, an AMPAR auxiliary subunit that is implicated in controlling AMPAR desensitization (Shanks et al., 2012), is of particular interest. GSG1L is expressed at high levels and shows a pronounced expression gradient (Figure 3—figure supplement 2c).
 
 In conclusion, each type of glutamate receptor makes a distinct contribution to responses to bursts. mGluR2/3s mediate pauses in firing for both short and long bursts in over half of the cells. AMPARs are important mediators of firing rate increases evoked by short bursts in fast UBCs. mGluR1s are the primary mediators of responses to medium and long duration bursts.
 
-## UBCs provide both time-locked and temporally-filtered responses
+### UBCs provide both time-locked and temporally-filtered responses
 
 Next, we systematically characterized UBC responses evoked by stimulating MFs with input patterns that contain features that are characteristic of MF firing measured during smooth pursuit tasks. To achieve this, we exposed 31 cells to a smooth pursuit-like input pattern with prolonged baseline stimulation at 5 spk/s, interposed by 1 s steps to frequencies, ranging from 10 to 60 spk/s, at 4 s intervals (Figure 4a, green, top). We interposed this stimulation protocol with burst stimulations and used the responses to 20 stimulus at 100 spk/s bursts to sort cells for display purposes (Figure 4a and c, left).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig4-v1.jpg)
+
+**Figure 4.:** (a) Instantaneous firing rates of seven representative UBCs in response to 20 stimuli at 100 spk/s burst (left), and smooth pursuit-like MF input (right) with prolonged 5 spk/s input interposed by 1 s step to 10–60 spk/s. Input pattern indicated above (green traces). Dashed gray lines indicate 0 spk/s; cell numbers refer to the index in the summary plot (c). (b) The same as in a but on an expanded timescale, displaying only the 60 spk/s step. Dotted red lines indicate onset and offset of the 60 spk/s step. (c) Heat maps showing the normalized instantaneous firing rates for all UBCs in response to 20 stimuli at 100 spk/s burst (left) and smooth pursuit-like MF input (right). Responses normalized to the peak firing rate per cell separately for burst and smooth pursuit-like MF input. Cell sorted by their response to 20 stimuli at 100 spk/s burst input, either by the half-width of the increase in firing (cell #1–25) or by pause duration (cell #26–31). Dotted red lines indicate the start of the step changes in input rate, red arrows indicate representative UBCs shown in a,b. (d) The same as in c but on an expanded timescale, displaying only the 60 spk/s step. (e) Summary plot of the number of evoked spikes during the 1 s steps compared to the 1 s period preceding the step. Individual UBCs color coded to correspond to the cell index in c. (f) As in e but for the number of evoked spikes in the 3 s period after the 1 s steps. (g) Summary plot of the time to peak for log-gaussian fits of the response to the step to 60 spk/s. Cells sorted and color coded to correspond to the cell index in c. Cells without significant increase in firing after step changes excluded (cell #28–31). (h) Summary plot of the time for the increase in firing to decay by half after a step change. Cells without significant increase in firing after step changes excluded (cell #28–31).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Instantaneous firing rates of five representative UBCs in response to sustained MF input at three different rates (1, 2.5, and 5 spk/s). Dashed gray lines indicate 0 spk/s; cell numbers refer to the index in the summary plot c. (b) As in a but for the average response of all individual inputs excluding the first 5. (c) Heat maps showing the normalized instantaneous firing rates for all UBCs in response to sustained input at 1, 2.5, and 5 spk/s. Responses normalized per cell by their peak firing rate. Cells sorted by their response to 20 stimuli at 100 spk/s bursts as displayed in Figure 2b. Time indicates seconds since start of sustained MF input. Red arrows indicate representative UBCs shown in a, b. (d) Summary plot showing the peak rate of the average response (as in b) for all UBCs color coded to correspond to the cell index in c. (e) As in d but for the average number of spikes fired. (f) As in d but for the ratio between the average steady state firing rate (200ms after stimuli) and the peak firing rate shown in d.
 
 UBCs showed diverse responses to this input pattern. For some UBCs, each stimulus during 5 spk/s baseline input evoked brief increases in firing, and steps to higher firing rates evoked slower, more prolonged increased in firing (Figure 4, cell #4). Other fast UBCs did not respond to 5 spk/s stimulation, but steps to 10–60 spk/s evoked responses that began with a delay and persisted after the step ended (Figure 4, cell #8). Along the sorted UBCs, 1 s steps evoked responses with increasingly delayed onset, and longer lasting increases in firing (Figure 4, cells #14 and #17). For slow cells, steps to 10–60 spk/s silenced firing during stimulation, and persistently elevated UBC firing after the step had ended (Figure 4, cells #22 and #27). Some slow UBCs also showed discrete decreases in firing during baseline 5 spk/s input (Figure 4a and b, cell #22), while others did not (Figure 4a and b, cell #27). These responses illustrate that UBCs provide both a temporal transformation of sustained changes in firing frequency, and discrete responses evoked by single stimuli. Single stimuli evoked changes in firing in a large percentage of cells for 5 spk/s stimulation, and responses were even larger for 1 spk/s and 2.5 spk/s (Figure 4—figure supplement 1).
 
@@ -73,9 +93,21 @@ As the step change of the input rate increased, the UBC population showed an inc
 
 Overall, during smooth pursuit-like MF input, fast UBCs closely follow the input pattern, while slow UBCs produce strongly temporally filtered responses, in line with responses to 20 stimuli at 100 spk/s bursts. However, many UBCs additionally preserve timing information with discrete changes in firing time-locked to lower rate baseline stimuli. As such, multiple streams of information appear to be simultaneously encoded by the response.
 
-## mGluR1 is the main mediator of UBC responses to smooth pursuit-like input patterns
+### mGluR1 is the main mediator of UBC responses to smooth pursuit-like input patterns
 
 We used selective antagonists to determine the roles of different glutamate receptors in mediating responses evoked by the stimulus protocol in Figure 4a. NMDARs do not make an appreciable contribution to responses evoked by this stimulus (Figure 5—figure supplement 1), and we therefore did not explicitly examine their contributions in combination with other glutamate-receptor antagonists. We again additively washed in antagonists of mGluR2/3s, AMPARs, and mGluR1s. For a fast UBC that responded to each 5 spk/s stimulation and to 1 s increases in input rate, blocking mGluR2/3s had minor effects, while blocking AMPARs eliminated responses to single stimuli only, and blocking mGluR1 eliminated responses to 1 s steps to 10–60 spk/s (Figure 5a and b, cell #3). In another cell (Figure 5a and b, cell #7), 5 spk/s stimulation did not evoke prominent responses, but step increases in input frequency evoked delayed and long-lasting increases in firing. In this cell, blocking mGluR2/3s shortened the delay between the step increases in MF stimulation and UBC firing rate increases (Figure 5a and b, cell #7), blocking AMPARs had very little effect, and blocking mGluR1s eliminated UBC responses. In slow UBCs, suppression of mGluR2/3s also removed discrete inhibitory responses to low-rate baseline input (Figure 5—figure supplement 2b, d, f-h). Blocking AMPARs eliminated excitatory responses evoked by individual stimuli at 5 spk/s (Figure 5a–d), 1 spk/s, and 2.5 spk/s stimuli (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig5-v1.jpg)
+
+**Figure 5.:** (a) Instantaneous firing rates of two representative UBCs in response to 20 stimuli at 100 spk/s bursts (left), and smooth pursuit-like MF input (right) as indicated by the traces at the top (green). Responses shown under baseline conditions and after successive addition of antagonists of mGluR2/3, AMPAR, and mGluR1. Dashed gray lines indicate 0 spk/s; cell numbers refer to the index in the summary plot (c). (b) The same as in a but on an expanded timescale, displaying only the 60 spk/s step. Dotted red lines indicate onset and offset of the 60 spk/s step. (c) Heat maps showing the normalized instantaneous firing rates for all UBCs in response 20 stimuli at 100 spk/s bursts (left) and smooth pursuit-like MF input (right), for baseline and after addition of glutamate receptor antagonists (rows). Responses normalized per cell separately for burst and smooth pursuit-like MF input to the respective peak firing rates with mGluR2/3 blocked. Cells sorted by their response to the baseline 20 stimuli at 100 spk/s input, either by the half-width of the increase in firing (cell #1–9) or by the pause duration (cell #10–11). Dotted red lines indicate the start of the step changes in input rate, red arrows indicate representative UBCs shown in a,b. (d) The same as in c but on an expanded timescale, displaying only the 60 spk/s step. (e) Summary plots of the number of evoked spikes in the 1 s period during the step and the 3 s period follow it for all UBCs color coded to correspond to the cell index in c. Successive different markers indicate baseline and the different glutamate antagonists, and separate plots for the different step changes in input. (f) Violin plots of the number of spikes in the 1 s period during the step and the 3 s period after under baseline conditions (-) and after blocking mGluR2/3 (+), normalized per cell to the number of spikes associated with the step to 60 spk/s under baseline conditions. Markers indicate individual UBCs color coded by the cell index in c. (*p<0.01, Wilcoxon signed rank test). (g) Violin plots of the percentage of the number of spikes evoked by MF stimulation that was mediated by AMPARs, estimated from the effect of blocking AMPARs on the response. Markers indicate individual UBCs color coded by the cell index in d. Responses smaller than 5 spikes not shown. (h) As in g but for the component mediated by mGluR1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Instantaneous firing rates of two representative UBCs in response to 20 stimuli at 100 spk/s burst (left), and smooth pursuit-like MF input (right) as indicated by the traces at the top (green). Responses shown under baseline conditions and after addition of an antagonist of NMDA receptors. Dashed gray lines indicate 0 spk/s; cell numbers refer to the index in the summary plot (c). (b) The same as in a but on an expanded timescale, displaying only the 60 spk/s step. Dotted red lines indicate onset and offset of the 60 spk/s step. (c) Heat maps showing the normalized instantaneous firing rates for all UBCs in response 20 stimuli at 100 spk/s bursts (left) and smooth pursuit-like MF input (right), for baseline and after addition of NMDA receptor antagonist (rows). Responses normalized per cell to the peak firing rate during baseline conditions separately for burst and smooth pursuit-like MF input. Cells sorted by their response to the baseline 20 stimuli at 100 spk/s input, either by the half-width of the increase in firing (cell #1–8) or by the pause duration (cell #9–10). Dotted red lines indicate the start of the step changes in input rate, red arrows indicate representative UBCs shown in a,b. (d) The same as in c but on an expanded timescale, displaying only the 60 spk/s step. (e) Violin plots of the number of spikes in the 1 s period during the step and the 3 s period after under baseline conditions (-) and after blocking NMDAR (+), normalized per cell to the number of spikes associated with the step to 60 spk/s under baseline conditions. Markers indicate individual UBCs color coded by the cell index in c.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/102618/elife-102618-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a) Instantaneous firing rates of two representative UBCs in response to sustained MF input at three different rates (1, 2.5, and 5 spk/s). Responses shown under baseline conditions and after successive addition of antagonists of mGluR2/3, AMPAR, and mGluR1. Dashed gray lines indicate 0 spk/s; cell numbers refer to the index in the summary plot c. (b) As in a but for the average response of all individual inputs excluding the first 5. (c) Heat maps showing the normalized instantaneous firing rates for all UBCs in response to sustained input at 1, 2.5, and 5 spk/s (columns), for baseline and after addition of glutamate receptor antagonists (rows). Responses normalized per cell to the peak firing rate after application of the mGluR2/3 antagonist. Cells sorted by their response to 20 stimuli at 100 spk/s bursts under baseline conditions as in Figure 3d (with exception of Figure 3 cell #20 and #24). (d) Summary plot showing the number of spikes fired in the average response to 1, 2.5, and 5 spk/s sustained input (as in b) for all UBCs color coded to correspond to the cell index in c. Successive different markers indicate baseline and the different glutamate antagonists.
 
 For most UBCs, 1 s 10–60 spk/s MF stimulation evoked slow changes in UBC firing that remained prominent in the presence of mGluR2/3 and AMPAR antagonists. These responses were eliminated by blocking mGluR1 (Figure 5a–d). Plotting the change in spikes evoked by each 1 s step for the successive application of antagonists revealed that many UBCs showed clear increases in their excitatory response after suppression of mGluR2/3s (Figure 5e and f), which were also evident in the heatmaps (Figure 5c and d). Suppression of AMPARs only mildly reduced the number of evoked spikes for most steps (Figure 5g), with 90% (9/10) of UBCs that showed increases in firing to the 60 spk/s step before suppression of AMPAR, still responding after (Figure 5e). However, the number of evoked spikes was close to zero for all UBCs after suppression of mGluR1 (Figure 5e and h).
 
@@ -89,21 +121,21 @@ Our findings establish that the UBC population powerfully preprocesses MF inputs
 
 **Figure 6.:** (a) MF stimuli used to evoke responses in UBCs. (b–e) Drawn representations of instantaneous firing rates illustrate the different types of UBC responses and the contributions of different types glutamate receptors. Four ‘cells’ are shown that range from fast ‘ON’ to slow ‘OFF’ cells that have the properties of classic ON and OFF cells, respectively. Two additional ‘cells’ with intermediate properties are also shown. (b) Total responses evoked by the stimuli in a. (c) Contributions of the AMPAR component to responses in b. (d) Contributions of the mGluR1 component to responses in b. (e) Contributions of the mGluR2/3 component to responses in b.
 
-## The roles of AMPARs in UBC responses to MF input
+### The roles of AMPARs in UBC responses to MF input
 
 We find that for many UBCs AMPARs covey timing information about MF firing by responding to single stimuli, short bursts, and individual stimuli during prolonged low-frequency MF activation (Figure 3, Figure 5, Figure 5—figure supplement 2, Figure 6c). AMPARs primarily mediate responses to high frequency bursts of up to 5 stimuli, but as the burst duration increases their contribution diminishes and mGluR1s are the primary driver of increases in firing for most UBCs (Figure 3). A large fraction of the UBC population fire in response to each stimulus during 1–5 spk/s MF stimulation, and these responses are driven almost entirely by AMPARs (Figure 4—figure supplement 1, Figure 5—figure supplement 2). Although brief compared to UBC responses mediated by mGluR1s following prolonged bursts, AMPAR responses still last up to 400ms, which is much longer than AMPA-mediated EPSCs observed at most synapses. This slow time course is consistent with the properties of AMPAR EPSCs at MF-UBC synapses that arise from the ultrastructure of UBC synapses, the resulting slow glutamate signal, and the distinctive properties of the AMPARs present in UBCs (Rossi et al., 1995; Kinney et al., 1997; van Dorp and De Zeeuw, 2014; Lu et al., 2017; Balmer et al., 2021). Several aspects of AMPAR-mediated spiking are readily explained by known properties of UBC synapses. The multiple phases of the AMPAR response evoked by 20 stimuli at 100 spk/s bursts likely reflect initial activation, desensitization during stimulation, and a large slow rebound current after stimulation as the prolonged presence of glutamate activates AMPARs as they recover from desensitization (Figure 3a cell #8, Figure 3d; Kinney et al., 1997; van Dorp and De Zeeuw, 2014; Lu et al., 2017; Balmer et al., 2021).The frequency-dependent decrease in AMPAR mediated burst magnitude (compare 1 and 5 spk/s Figure 4—figure supplement 1, Figure 5—figure supplement 2) also likely arises from AMPAR desensitization (van Dorp and De Zeeuw, 2014).
 
 Contributions of AMPARs to MF-evoked responses are most apparent in fast UBCs (Figure 2), even though AMPAR subunits are expressed uniformly across the population (Guo et al., 2021a; Kozareva et al., 2021; Figure 3—figure supplement 2b). It is therefore surprising that AMPAR responses are so small or are not apparent in slower UBCs and OFF UBCs. It is possible that differential expression of auxiliary proteins such as TARPs or GSG1L governs the amplitude of AMPAR responses (Figure 3—figure supplement 2c), but further experiments are required to determine if this is the case.
 
-## The roles of mGluR2/3s in MF-UBC responses
+### The roles of mGluR2/3s in MF-UBC responses
 
 Suppression provided by mGluR2/3 receptors influences UBC responses in multiple ways (Figure 6e). (1) It suppresses baseline firing after a MF burst in ‘OFF’ UBCs, a role that has been extensively described previously (Knoflach and Kemp, 1998; Russo et al., 2008; Kim et al., 2012; Borges-Merjane and Trussell, 2015). (2) In most cells with a prominent pause in firing, suppression is followed by slow excitation mediated by mGluR1s. In these cells mGluR2/3s introduces a delay between the onset of MF stimulation and the response in the UBC. This is important for many UBCs that respond to 1 s MF activation with a delayed peak in firing that occurs long after the increase in MF firing rate. In this way mGluR2/3s crucially contribute to UBCs filtering of MF inputs by selectively influencing the slow rise of UBC spiking without influencing the time course of decay. (3) There is also an interplay between mGluR2/3 suppression and excitation by AMPARs and mGluR1s such that even in cells when suppression is not apparent, mGluR2/3s reduce the number of spikes evoked by stimulation. (4) In many UBCs, single stimuli lead to decreases that are mediated by mGluR2/3s.
 
-## The roles of mGluR1s in MF-UBC responses
+### The roles of mGluR1s in MF-UBC responses
 
 mGluR1s mediate slow responses that gradually build during repetitive activation (Figure 6d). Single stimuli and brief bursts build up too little glutamate to effectively activate mGluR1 and drive excitation (Batchelor et al., 1994; Tempia et al., 1998; Brasnjo and Otis, 2001; Wadiche and Jahr, 2005). mGluR1-mediated responses increase as the total number of spikes in the burst increases. In UBCs with prominent AMPAR responses, increasing the number of spikes in a high frequency burst leads to a transition from responses being primarily mediated by AMPARs to responses being mediated by mGluR1s. In these UBCs a combination of AMPARs and mGluR1s conveys relatively consistent increases in peak firing that could not be achieved by either receptor alone (Figures 2 and 3). Such UBCs are highly effective at detecting the presence of a burst, but they are not suited to differentiating between bursts comprised of different numbers of MF spikes. In UBCs with a small AMPAR component and a prominent mGluR1 component, the UBC peak firing rate of the UBC response is strongly related to the number of spikes in the MF input burst. Similarly, increasing the firing rate of 1 s steps during prolonged MF input, as occurs during smooth pursuit eye movements, leads to increases in the magnitude of UBC responses. Additionally, mGluR1s also participate in temporally filtering MF input by mediating broad UBC responses of different durations (Guo et al., 2021a; Huson et al., 2023). However, during prolonged stimulation mGluR1s only play a crucial role in regulating the duration of UBC spiking following changes in the input rate, whereas the delay in the firing rate increase reflects the time course of mGluR2/3 suppression and is not limited by the time course of mGluR1 activation.
 
-## Functional roles of MF transformations by the UBC population
+### Functional roles of MF transformations by the UBC population
 
 Although the manner in which UBCs contribute to cerebellar-dependent behaviors has not been established, the properties of transformations at MF-UBC synapses provide insight into several possible functions. With regard to eye movements, the cerebellum is thought to aid in adaptation for real-time error correction during target tracking, and in learning to predict target trajectory both for saccades and smooth eye movements (Shadmehr, 2017; Soetedjo et al., 2019; Lisberger, 2021).
 
@@ -115,36 +147,130 @@ MF signals encoding vestibular modulation are also likely transformed by UBCs to
 
 Having separate response components also broadens the types of input UBCs can respond to, with AMPAR and mGluR2/3 responding to brief inputs, and mGluR1 and mGluR2/3 responding to long-lasting inputs. While UBCs are enriched in regions processing eye and vestibular signals, they are consistent circuit elements throughout the cerebellum (Floris et al., 1994; Diño et al., 1999; Takács et al., 1999; Englund et al., 2006). The separate response components may provide UBCs with the flexibility required to usefully transform MF inputs in a wide range of behaviors.
 
-## Possible Influence of Inhibition
+### Possible Influence of Inhibition
 
 Our experimental approach only evaluates the direct effects of MF activation on UBC firing and does not incorporate inhibition, which is expected to influence UBC firing in vivo. UBCs are inhibited by Golgi cells (Rousseau et al., 2012), and a subset of UBCs are also inhibited by PCs (Guo et al., 2021a). Although the potential influence of inhibition is of considerable interest, brain slice experiments are poorly suited to addressing this issue. Golgi cells are fragile and many do not survive in adult brain slices (Hull and Regehr, 2012), and many of the complex PC axon collaterals are severed before reaching UBCs (Guo et al., 2021b). In addition, it is exceedingly difficult to activate the population of PCs and Golgi cells as would occur in vivo. In contrast to the simplicity of a single MF input exciting a UBC, Golgi cells are directly activated by many MFs, by MF → granule cell → Golgi cell synapses, and by MF→UBC→ granule cell→Golgi cell synapses (Hull and Regehr, 2022), and PCs are activated by a great many MF → granule cell → PC synapses (Witter et al., 2016), by MF→UBC→ granule cell→PC→synapses and granule cell→molecular layer interneuron synapses (Hull and Regehr, 2022). As a result of these complexities, it will therefore be necessary to perform experiments in vivo to determine how Golgi cell and PC inhibition influences UBC transformations of MF inputs.
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_CRL:027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Abcam</td>
+      <td>Ab120046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>Abcam</td>
+      <td>Ab120159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Abcam</td>
+      <td>Ab120416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JNJ 16259685</td>
+      <td>Tocris</td>
+      <td>Cat. No. 2333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY 341495</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP 55845 hydrochloride</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 8</td>
+      <td>Wavemetrics; https://www.wavemetrics.com/</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MafPC</td>
+      <td>Courtesy of MA Xu-Friedman; https://www.xufriedman.org/mafpc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (R2023b)</td>
+      <td>MathWorks; https://www.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal procedures were carried out in accordance with the NIH and Animal Care and Use Committee (IACUC) guidelines and protocols approved by the Harvard Medical Area Standing Committee on Animals (protocol #IS00000124). C57BL/6 mice of either sex from Charles River Laboratories were used for all experiments.
 
-## Slice preparation
+### Slice preparation
 
 Juvenile (P30–P47) C57BL/6 mice of either sex were anesthetized by a peritoneal injection of 10 mg/kg ketamine/xylazine mixture and then transcardially perfused with ice-cold cutting solution (in mM): 110 choline chloride, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 0.5 CaCl2, 7 MgCl2, 3.1 sodium pyruvate, and 11.6 sodium ascorbate, equilibrated with 95% O2 and 5% CO2. The brain was subsequently extracted, dissected, and submerged in the same solution. 220 µm parasagittal slices from the cerebellar vermis were cut on a Leica VT1200S vibratome. Slices were then incubated for 30 min at 34 °C in artificial cerebral spinal fluid (ACSF) containing (in mM): 125 NaCl, 26 NaHCO3, 1.25 NaH2PO4, 2.5 KCl, 1 MgCl2, 1.5 CaCl2 and 25 glucose, equilibrated with 95% O2 and 5% CO2. Following incubation, the slices were kept for up to 6 hr at room temperature.
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings were performed at ~34 °C in ACSF (flow rate 2–4 ml / min) containing inhibitory receptor blockers picrotoxin (20 µM; Tocris), CGP 55845 (1µM; Abcam), and strychnine hydrochloride (1 µM; Abcam). Visually guided cell-attached recordings were made in lobule X of the cerebellar vermis with 3–5 MΩ patch pipettes pulled from borosilicate glass capillaries (BF150-86-10, Sutter Instrument) with a P-97 Flaming/Brown puller (Sutter Instrument), and filled with ACSF. Once a loose seal was achieved (>10 MΩ), a bipolar theta glass pipette (BT150-10, Sutter Instrument) was placed in the granular layer more than 50 µm from the patched cell, and repositioned until a mossy fiber input was stimulated. UBCs were identified based on their slightly larger soma size compared to granule cells, and their distinctive long-lasting firing upon mossy fiber stimulation. Data were collected with a Multiclamp 700B amplifier (Molecular Devices), filtered at 4 kHz (4-pole Bessel filter) online, digitized at 20 kHz with an ITC18 (Heka Instrument), and saved using mafPC3 (custom software written by M. Xu-Friedman, https://www.xufriedman.org/mafpc) in Igor Pro 8 (WaveMetrics Inc) for offline analysis.
 
 Our previous study (Guo et al., 2021b) explored issues related to the reliability of MF activation, the possibility of glutamate spillover from other synapses, and the possibility of disynaptic activation involving stimulation of MF→UBC→UBC connections (Hariani et al., 2024). We did on-cell recordings and followed that up with whole cell voltage clamp recordings from the same cell and there was good agreement with the amplitude and timing of spiking and the time course and amplitudes of the synaptic currents (Guo et al., 2021b). We also compared responses evoked by focal glutamate uncaging over the brush and MF stimulation and found that the time courses and amplitudes of the responses were remarkably similar (Guo et al., 2021b). This strongly suggests that the responses we observe do not reflect MF→UBC→UBC connections. We also showed that the responses were all-or-none: at low intensities no response was evoked, as the intensity of extracellular stimulation was increased a large response was suddenly evoked at a threshold intensity and further increases in intensity did not increase the amplitude of the response (Guo et al., 2021b).
 
-## In vivo mossy fiber firing patterns
+### In vivo mossy fiber firing patterns
 
 In vivo mossy fiber recordings were provided by David J. Herzfeld and Stephen G. Lisberger. Recordings were made using either single tungsten microelectrodes (FHC,~1 MΩ) or 16-channel Plexon S-probes in the ventral paraflocculus of a head-fixed rhesus monkey during a smooth pursuit eye movement task. Complete experimental details have been described previously (Herzfeld et al., 2023). Spikes were sorted using Full-binary pursuit (Hall et al., 2021), and manually curated by David J. Herzfeld. The mossy fiber traces reproduced in slice in this work were continuous 30 s recordings while the monkey was engaging in smooth pursuit eye movement trials. Briefly, smooth pursuit eye movement trials required the monkey to track a dot as it moves across a monitor at a constant speed. In each trial, the dot would appear stationary in the center of the monitor for 400–800ms before moving at a constant speed in one of 4 cardinal directions for 650ms. The dot would then remain stationary in an eccentric position for another 200ms.
 
-## Pharmacology
+### Pharmacology
 
 Sequential drug wash-ins were performed by switching the bath solution to the same solution with addition of the antagonist(s), taking care to keep the flow rate consistent throughout (2 ml / min). Wash-ins were only performed when UBCs showed stable responses for at least 7.5 minutes. Cells with significant shifts in firing independent of mossy fiber stimulation during wash-ins were excluded from analysis. mGluR2/3s were blocked using LY 341495 (1–5 µM, Tocris). AMPARs were blocked using NBQX (5 µM, Abcam). mGluR1s were blocked using JNJ 16259685 (1 µM, Tocris). NMDARs were blocked using R-CPP (5 µM, Abcam).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 UBC responses were characterized using instantaneous firing rates in response to 20 stimuli at 100 spk/s bursts averaged over 5–10 median filtered trials recorded before other stimulation paradigms. Baseline firing was estimated from this using the second preceding mossy fiber stimulation. Pause duration was calculated as the time between the end of the stimulation and the moment firing reached 5 spk/s or half the peak firing rate (whichever was smaller). The peak change in firing was calculated by subtracting the baseline firing rate from the peak firing rate after the end of MF stimulation. The half-width was calculated as the time between when the firing rate first exceeded and then decayed to half the peak amplitude (baseline corrected). UBCs were sorted by their half-width when the peak change in firing exceeded 8 spk/s (cell 1–61) or by their pause duration (cell 62–70).
 
-Response parameters for different burst durations were calculated in a similar manner, with separate 20 stimuli at 100 spk/s trials recorded in proximity to other burst durations used for comparison. Additionally, the number of spikes evoked by MF stimulation was calculated by integrating the period from the start of stimulation till 2 times the UBCs half-width after the start of the response. The number of spikes was corrected for baseline firing. For smooth pursuit-like input patterns the number of spikes evoked by step changes in input were calculated in a similar manner but corrected for the average firing rate in the 1 s preceding the step change. To determine time to peak, responses to step changes were fit with a log-normal function, A⋅exp{−[(ln(t)−μ)/σ]2}, where A is the amplitude,  μ is the peak location, and σ is the width in log time. The half-decay of the response to step changes was calculated by finding the first point where the firing rate decreased to half the peak response, using an interpolated trace where responses to individual stimuli had been removed. For experiments with constant input at 1, 2.5, and 5 spk/s peak firing rates and number of spikes were calculated based on the average of all responses excluding the first 5, without correcting for baseline firing. For wash-in experiments all parameters were estimated based on trials 2–2.5 min after the start of the application of the antagonist, when responses to 20 stimuli at 100 spk/s bursts had reached a steady state. Significant differences in Figures 3f and 5f were determined using non-parametric Wilcoxon signed rank tests. Correlation was determined using Spearman’s correlation coefficient. All analyses were done using MATLAB R2023b (MathWorks).
+Response parameters for different burst durations were calculated in a similar manner, with separate 20 stimuli at 100 spk/s trials recorded in proximity to other burst durations used for comparison. Additionally, the number of spikes evoked by MF stimulation was calculated by integrating the period from the start of stimulation till 2 times the UBCs half-width after the start of the response. The number of spikes was corrected for baseline firing. For smooth pursuit-like input patterns the number of spikes evoked by step changes in input were calculated in a similar manner but corrected for the average firing rate in the 1 s preceding the step change. To determine time to peak, responses to step changes were fit with a log-normal function, $A⋅exp{−[(ln(t)−\mu)/\sigma]^{2}}$, where $A$ is the amplitude,  μ is the peak location, and $\sigma$ is the width in log time. The half-decay of the response to step changes was calculated by finding the first point where the firing rate decreased to half the peak response, using an interpolated trace where responses to individual stimuli had been removed. For experiments with constant input at 1, 2.5, and 5 spk/s peak firing rates and number of spikes were calculated based on the average of all responses excluding the first 5, without correcting for baseline firing. For wash-in experiments all parameters were estimated based on trials 2–2.5 min after the start of the application of the antagonist, when responses to 20 stimuli at 100 spk/s bursts had reached a steady state. Significant differences in Figures 3f and 5f were determined using non-parametric Wilcoxon signed rank tests. Correlation was determined using Spearman’s correlation coefficient. All analyses were done using MATLAB R2023b (MathWorks).

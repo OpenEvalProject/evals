@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Neuroscience, Washington University in St. Louis St. Louis United States
-2. https://ror.org/01yc7t268 Department of Economics, Washington University in St. Louis St. Louis United States
-3. https://ror.org/01yc7t268 Department of Biomedical Engineering, Washington University in St. Louis St. Louis United States
+1. Department of Neuroscience, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Economics, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Department of Biomedical Engineering, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 
@@ -40,21 +40,33 @@ This framework guided a series of analyses relating the activity of each cell gr
 
 ## Results
 
-## Reduced accuracy and biases in choices under sequential offers
+### Reduced accuracy and biases in choices under sequential offers
 
 Two monkeys participated in the experiments. In each session, they chose between two juices labeled A and B, with A preferred. Offers were represented by sets of colored squares on a monitor, and animals indicated their choice with a saccade. In each session, two choice tasks were randomly interleaved. In Task 1, offers were presented simultaneously (Figure 2A); in Task 2, offers were presented in sequence (Figure 2B). A cue displayed at the beginning of the trial revealed to the animal the task for that trial. Offers varied from trial to trial, and we indicate the quantities offered in any given trial with qA and qB. An ‘offer type’ was defined by two quantities [qA, qB], and the same offer types were used for the two tasks in each session. For Task 2, trials in which juice A was offered first and trials in which juice B was offered first are referred to as ‘AB trials’ and ‘BA trials’, respectively. The first and second offers are referred to as ‘offer1’ and ‘offer2’, respectively.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig2-v2.jpg)
 
-**Figure 2.:** (A, B) Experimental design. Animals chose between two juices offered in variable amounts. Offers were represented by sets of color squares. For each offer, the color indicated the juice type and the number of squares indicated the juice amount. In each session, trials with Tasks 1 and 2 were randomly interleaved. In Task 1, two offers appeared simultaneously on the left and right sides of the fixation point. In Task 2, offers were presented sequentially, spaced by an interoffer delay. After a wait period, two saccade targets matching the colors of the offers appeared on the two sides of the fixation point. The left/right configuration in Task 1, the presentation order in Task 2, and the left/right position of the saccade targets in Task 2 varied randomly from trial to trial. In any session, the same set of offer types was used for both tasks. (C) Example session 1. The percent of B choices (y-axis) is plotted against the log quantity ratio (x-axis). Each data point indicates one offer type in Task 1 (gray circles) or Task 2 (red and blue triangles for AB trials and BA trials, respectively). Sigmoids were obtained from probit regressions. The relative value (ρ) and sigmoid steepness (η) measured in each task and the order bias (ε) measured in Task 2 are indicated. In this session, the animal presented all three biases. Compared to Task 1, choices in Task 2 were less accurate (η < Task2η) and biased in favor of juice A (Task1ρ; preference bias). Furthermore, choices in Task 2 were biased in favor of offer2 (Task2 > ρTask1ε > 0; order bias). (D) Example session 2. Same format as panel C. (E, F) Comparing relative value across choice tasks. Each data point represents one session and gray ellipses indicate 90% confidence intervals. For both monkeys, relative values in Task 2 (y-axis) were significantly higher than in Task 1 (x-axis). Furthermore, the main axis of each ellipse was rotated counterclockwise compared to the identity line. (G, H) Comparing the sigmoid steepness across choice tasks. For both monkeys, sigmoids were consistently shallower (smaller η) in Task 2 compared to Task 1. (I, J) Order bias, distribution across sessions. Both monkeys presented a consistent bias favoring offer2 (mean(ε) > 0). Panels C, E, G, and I are from monkey J (N = 101 sessions); panels D, F, H, and J are from monkey G (N = 140 sessions). Sessions shown in panels C and D are highlighted in yellow in panels E, F, G, and H. Triangles in panels I and J indicate the mean. Statistical tests and exact p values are indicated in each panel.
+**Figure 2.:** (A, B) Experimental design. Animals chose between two juices offered in variable amounts. Offers were represented by sets of color squares. For each offer, the color indicated the juice type and the number of squares indicated the juice amount. In each session, trials with Tasks 1 and 2 were randomly interleaved. In Task 1, two offers appeared simultaneously on the left and right sides of the fixation point. In Task 2, offers were presented sequentially, spaced by an interoffer delay. After a wait period, two saccade targets matching the colors of the offers appeared on the two sides of the fixation point. The left/right configuration in Task 1, the presentation order in Task 2, and the left/right position of the saccade targets in Task 2 varied randomly from trial to trial. In any session, the same set of offer types was used for both tasks. (C) Example session 1. The percent of B choices (y-axis) is plotted against the log quantity ratio (x-axis). Each data point indicates one offer type in Task 1 (gray circles) or Task 2 (red and blue triangles for AB trials and BA trials, respectively). Sigmoids were obtained from probit regressions. The relative value (ρ) and sigmoid steepness (η) measured in each task and the order bias (ε) measured in Task 2 are indicated. In this session, the animal presented all three biases. Compared to Task 1, choices in Task 2 were less accurate (ηTask2 < ηTask1) and biased in favor of juice A (ρTask2 > ρTask1; preference bias). Furthermore, choices in Task 2 were biased in favor of offer2 (ε > 0; order bias). (D) Example session 2. Same format as panel C. (E, F) Comparing relative value across choice tasks. Each data point represents one session and gray ellipses indicate 90% confidence intervals. For both monkeys, relative values in Task 2 (y-axis) were significantly higher than in Task 1 (x-axis). Furthermore, the main axis of each ellipse was rotated counterclockwise compared to the identity line. (G, H) Comparing the sigmoid steepness across choice tasks. For both monkeys, sigmoids were consistently shallower (smaller η) in Task 2 compared to Task 1. (I, J) Order bias, distribution across sessions. Both monkeys presented a consistent bias favoring offer2 (mean(ε) > 0). Panels C, E, G, and I are from monkey J (N = 101 sessions); panels D, F, H, and J are from monkey G (N = 140 sessions). Sessions shown in panels C and D are highlighted in yellow in panels E, F, G, and H. Triangles in panels I and J indicate the mean. Statistical tests and exact p values are indicated in each panel.
 
-The data set included 241 sessions (101 from monkey J, 140 from monkey G; see Methods). Sessions lasted for 217–880 trials (mean ± std = 589 ± 160). For each session, we analyzed choices in the two tasks separately using probit regressions. For Task 1 (simultaneous offers), we used the following model:(1)Choice B=Φ(X)X=a0+a1 log(qB/qA)
+The data set included 241 sessions (101 from monkey J, 140 from monkey G; see Methods). Sessions lasted for 217–880 trials (mean ± std = 589 ± 160). For each session, we analyzed choices in the two tasks separately using probit regressions. For Task 1 (simultaneous offers), we used the following model:
+
+$$
+Choice B=Φ(X)X=a_{0}+a_{1} log(q_{B}/q_{A})
+$$
 
 where Choice B = 1 if the animal chose juice B and 0 otherwise, Φ was the cumulative function of the standard normal distribution, and qA and qB were the quantities of juices offered on any given trial. From the fitted parameters a0 and a1, we derived measures for the relative value of the two juices ρTask1 = exp(−a0/a1) and for the sigmoid steepness ηTask1 = a1. Intuitively, the relative value was the quantity ratio qB/qA that made the animal indifferent between the two juices, and the sigmoid steepness was inversely related to choice variability.
 
-For Task 2 (sequential offers), we used the following model:(2)Choice B=Φ(X)X=a2+a3 log(qB/qA)+a4 (δorder,AB−δorder,BA)
+For Task 2 (sequential offers), we used the following model:
 
-where δorder,AB = 1 for AB trials and 0 otherwise, and δorder,BA = 1 − δorder,AB. In essence, AB trials and BA trials were analyzed separately but assuming that the two sigmoids were parallel. From the fitted parameters a2, a3, and a4, we derived measures for the relative value of the two juices ρTask2 = exp(−a2/a3), for the sigmoid steepness ηTask2 = a3, and for the order bias ε = 2 ρTask2 a4/a3. Intuitively, the order bias was a bias favoring the first or the second offer. Specifically, ε < 0 indicated a bias favoring offer1; ε > 0 indicated a bias favoring offer2. We also defined relative values specific to AB trials and BA trials as ρAB = exp(−(a2 + a4)/a3) and ρBA = exp(−(a2 − a4)/a3). Of note, the order bias was defined such that(3)ϵ≈ρBA−ρAB
+$$
+Choice B=Φ(X)X=a_{2}+a_{3} log(q_{B}/q_{A})+a_{4} (\delta_{order,AB}−\delta_{order,BA})
+$$
+
+where δorder,AB = 1 for AB trials and 0 otherwise, and δorder,BA = 1 − δorder,AB. In essence, AB trials and BA trials were analyzed separately but assuming that the two sigmoids were parallel. From the fitted parameters a2, a3, and a4, we derived measures for the relative value of the two juices ρTask2 = exp(−a2/a3), for the sigmoid steepness ηTask2 = a3, and for the order bias ε = 2 ρTask2 a4/a3. Intuitively, the order bias was a bias favoring the first or the second offer. Specifically, ε < 0 indicated a bias favoring offer1; ε > 0 indicated a bias favoring offer2. We also defined relative values specific to AB trials and BA trials as ρAB = exp(−(a2 + a4)/a3) and ρBA = exp(−(a2 − a4)/a3). Of note, the order bias was defined such that
+
+$$
+ϵ≈ρ_{BA}−ρ_{AB}
+$$
 
 The experimental design gave us the opportunity to compare choices across tasks independently of factors such as selective satiation or changes in the internal state. The relative values measured in the two tasks were highly correlated (Figure 2E, F). At the same time, our analyses revealed three interesting phenomena. First, for both animals, sigmoids measured in Task 2 were significantly shallower compared to Task 1 (Figure 2G, H). In other words, presenting offers in sequence reduced choice accuracy. Second, in Task 2, both animals showed a consistent order bias favoring offer2 (Figure 2I, J). Third, in both animals, relative values in Task 2 were significantly higher than in Task 1 (ρTask2 > ρTask1), and this effect increased with the relative value (Figure 2E, F). In other words, the ellipse marking the 90% confidence interval for the joint distribution of relative values laid above the identity line and was rotated counterclockwise compared to the identity line.
 
@@ -62,9 +74,9 @@ To further investigate the differences in relative values measured across tasks,
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig3-v2.jpg)
 
-**Figure 3.:** (A–C) Monkey J (N = 101 sessions). In panels A and B, ρ and Task2,ABρ (Task2,BAy-axis) are plotted against ρ (Task1x-axis). Each data point represents one session and gray ellipses indicate 90% confidence intervals. The main axis of both ellipses is rotated counterclockwise compared to the identity line (preference bias). In addition, the ellipse in panel B is displaced upwards compared to that in panel A (order bias). In panel C, the same data are pooled and color coded. The two lines are from an ANCOVA (covariate: order; parallel lines). The regression slope is significantly >1 (preference bias) and the two intercepts differ significantly from each other (order bias). (D–F) Monkey G (N = 140 sessions). Same format. The results closely resemble those for monkey J but the preference bias is weaker.
+**Figure 3.:** (A–C) Monkey J (N = 101 sessions). In panels A and B, ρTask2,AB and ρTask2,BA (y-axis) are plotted against ρTask1 (x-axis). Each data point represents one session and gray ellipses indicate 90% confidence intervals. The main axis of both ellipses is rotated counterclockwise compared to the identity line (preference bias). In addition, the ellipse in panel B is displaced upwards compared to that in panel A (order bias). In panel C, the same data are pooled and color coded. The two lines are from an ANCOVA (covariate: order; parallel lines). The regression slope is significantly >1 (preference bias) and the two intercepts differ significantly from each other (order bias). (D–F) Monkey G (N = 140 sessions). Same format. The results closely resemble those for monkey J but the preference bias is weaker.
 
-## Computational framework
+### Computational framework
 
 The following sections present a series of results on the neuronal origins of these behavioral phenomena. We begin by discussing the computational framework for the analyses.
 
@@ -74,23 +86,107 @@ Neuronal activity in OFC does not capture all of these processes. However, previ
 
 Of note, both offer value and chosen value cells encode subjective values. However, in the framework of Figure 1, offer value cells express a pre-decision value, while chosen value cells express a value emerging during the decision process. Conversely, the activity of chosen juice cells captures the evolving commitment to a particular choice outcome. In this framework, suitable analyses of neuronal activity may reveal whether particular choice biases emerge during valuation, during value comparison, or in subsequent computational stages.
 
-## Reduced accuracy under sequential offers emerged at the valuation stage
+### Reduced accuracy under sequential offers emerged at the valuation stage
 
 Other things equal, choices under sequential offers (Task 2) were significantly less accurate than choices under simultaneous offers (Task 1; Figure 2). We first investigated the neural origins of this phenomenon.
 
 The primary data set examined in this study included 183 offer value cells, 160 chosen juice cells, and 174 chosen value cells (see Methods). Comparing neuronal responses across tasks, we noted that offer value signals in Task 2 were significantly weaker than in Task 1. Figure 4A, C illustrates one example cell. In both tasks, this neuron encoded the offer value B. However, the activity range (see Methods) measured in Task 2 was smaller than that measured in Task 1. This effect was also observed at the population level. For this analysis, we pooled offer value cells associated with juices A and B, and with positive or negative encoding (see Methods). For Task 1, we focused on the post-offer time window; for Task 2, we focused on post-offer1 and post-offer2 time windows, pooling trial types from both windows. For each cell, we imposed that the response be significantly tuned in these time windows in each task, and we quantified the mean activity and the activity range (Δr, see Methods). At the population level, the mean activity did not differ significantly across tasks (p = 0.6, t-test; p = 0.4, Wilcoxon test, Figure 4D). In contrast, the activity range was significantly lower in Task 2 compared to Task 1 (ΔrTask2 < ΔrTask1; p = 0.06, t-test; p = 0.02, Wilcoxon test Figure 4E). In other words, offer value signals were weaker in Task 2 compared to Task 1.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Weaker offer value signals in Task 2, example cell. Panel A illustrates the choice pattern. Panel B illustrates the neuronal response measured in Task 1 (post-offer time window). Each data point represents one trial type. In C, two panels illustrate the neuronal responses measured in Task 2 (post-offer1 and post-offer2 time windows). Each data point represents one trial type; red and blue colors are for AB and BA trials, respectively. In panels B and C, firing rates (y-axis) are plotted against variable offer value B and gray lines are from linear regressions. Notably, the cell has lower activity range in Task 2 than in Task 1. (D, E) Weaker offer value signals in Task 2, population analysis (N = 109 offer value cells). The two panels illustrate the results for the mean activity and the activity range, respectively. In each panel, x- and y-axis represent measures obtained in Task 1 and Task 2, respectively. Each data point represents one cell. For each cell, we examined one time window (post-offer) in Task 1 and two time windows (post-offer1 and post-offer2) in Task 2. Circles and diamonds refer to post-offer1 and post-offer2 time windows, respectively. Measures of mean activity measured in the two tasks (panel D) were statistically indistinguishable. In contrast, activity ranges (panel E) were significantly reduced in Task 2 compared to Task 1. Statistical tests and exact p values are indicated in each panel. The example cell shown in panels A–C is highlighted in orange in panels D and E. (F) Offer value signals and choice accuracy (N = 109 cells). For each offer value cell, we computed the activity range Δr in each task (see Methods). Here, the difference in activity range Δr = ΔrTask2 − ΔrTask1 (y-axis) is plotted against the difference in sigmoid steepness Δη = ηTask2 − ηTask1 measured in the same session (x-axis). The two measures were significantly correlated across the population. The gray line in panel F is from a linear regression. This analysis was restricted to 53 cells significantly tuned in the post-offer time window (Task 1) and post-offer1 time window (Task 2), and 56 cells significantly tuned in the post-offer time window (Task 1) and post-offer2 time window (Task 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Chosen value cells (N = 104). Same format as in Figure 4A, B. For each cell, we examined one time window (post-offer) in Task 1 and two time windows (post-offer1 and post-offer2) in Task 2. Both the mean activity and the activity range were statistically indistinguishable across tasks. (C, D) Chosen juice cells (N = 58). For each cell, we examined the same time window (post-juice) in both tasks. Both the mean activity and the activity range were statistically indistinguishable across choice tasks. In panels B–D, legends report the results of statistical tests. For both cell groups, fluctuations in activity range were not correlated with fluctuations in choice variability across the population (in both analyses, |r| < 0.1, p > 0.4; not shown). Only cells presenting significant tuning in the relevant time windows were included in each panel (see Methods).
+
 The activity of offer value cells is causally related to choices (Ballesta et al., 2020). Furthermore, for given value range and mean activity, the activity range determines the neuronal signal-to-noise ratio. Indeed, we previously found that decreases in the encoding slope of offer value cells due to range adaptation reduce choice accuracy (Conen and Padoa-Schioppa, 2019; Rustichini et al., 2017). Along similar lines, we inquired whether the difference in choice accuracy measured across tasks (Figure 2G, H) might be explained, at last partly, by differences in neuronal activity range (Figure 4E). We thus examined the relation between the difference in sigmoid steepness (Δη = ηTask2 − ηTask1) and the difference in activity range (Δr = ΔrTask2 − ΔrTask1). The two measures were positively correlated (Spearman r = 0.2, p = 0.01; Pearson r = 0.3, p = 0.003; Figure 4F). In other words, the drop in choice accuracy observed in Task 2 compared to Task 1 correlated with weaker offer value signals. A similar analysis of chosen value cells found that the activity range Δr was reduced in Task 2 compared to Task 1. However, this effect and the drop in choice accuracy were not significantly correlated (Figure 4—figure supplement 1).
 
 In conclusion, the lower choice accuracy measured in Task 2 compared to Task 1 correlated with weaker offer value signals in OFC. Thus, this behavioral phenomenon emerged, at least partly, during valuation.
 
-## The order bias emerged during value comparison
+### The order bias emerged during value comparison
 
 The next series of analyses focused on the neural origins of the order bias (ε). Since this phenomenon pertains only to choices under sequential offers, we included in the analyses an additional data set recorded in the same animals performing only Task 2 (see Methods).
 
 In the framework of Figure 1, we first inquired whether the order bias emerged during valuation. If this was the case, for any given good, offer value cells should encode a higher value when the good is presented as offer2. To test this hypothesis, we pooled offer value cells associated with the two juices. For each neuron, ‘E’ indicated the juice encoded by the cell and ‘O’ indicated the other juice. We thus refer to EO trials and OE trials. For any given cell, we compared the response recorded in EO trials (post-offer1 time window) with the response recorded in OE trials (post-offer2 time window). If the order bias emerged during valuation, the mean activity and/or the activity range should be higher for the latter (Figure 5—figure supplement 1A). Contrary to this prediction, across a population of 128 cells, we did not find any systematic difference in mean activity or activity range (Figure 5—figure supplement 1B, C). Furthermore, the difference between the activity parameters measured in OE and EO trials did not correlate with the order bias (Figure 5—figure supplement 1D). In conclusion, assigned values did not depend on the presentation order.
 
 We next examined whether the order bias emerged during value comparison. If so, the bias should be reflected in the activity of both chosen juice and chosen value cells (Figure 1). For chosen value cells, the hypothesis might be tested noting that in post-offer1 and post-offer2 time windows these neurons encoded the value currently offered independently of the juice type (Table 1). Thus, the activity measured in these time windows in AB and BA trials provided neuronal measures for the relative values of the two juices. More specifically, for each chosen value cell, we derived the two measures ρneuronalAB and ρneuronalBA for AB trials and BA trials, respectively (Figure 5A; see Methods). We also defined the difference Δρneuronal = ρneuronalBA − ρneuronalAB. We recall that the order bias (ε) was essentially equal to the difference between the relative values measured behaviorally in BA and AB trials (Equation 3). Thus, assessing whether the activity of chosen value cells reflected the order bias amounts to testing the relation between Δρneuronal and ε.
+
+**Table 1.**
+ Neuronal encoding of decision variables in the two choice tasks.The table summarizes the results of a previous report (Shi et al., 2022a). Under simultaneous offers, different groups of orbitofrontal cortex (OFC) neurons encode different decision variables, each with positive or negative sign (indicated here with + and −). In first approximation, each cell encodes the same variable across time windows. Under sequential offers, OFC neurons encode different variables in different time windows. However, the vast majority of them present one of eight specific patterns of variables, referred to as variable ‘sequences’ and detailed here. Furthermore, there is a clear correspondence between neurons encoding a particular variable in Task 1 and neurons encoding a particular sequence in Task 2. Hence, we can refer to different cell groups in OFC using the standard nomenclature originally defined for Task 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Task 1</th>
+      <th colspan="3">Task 2</th>
+    </tr>
+    <tr>
+      <th>Post-offer1</th>
+      <th>Post-offer2</th>
+      <th>Post-juice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>offer value A +</td>
+      <td>offer value A | AB +</td>
+      <td>offer value A | BA +</td>
+      <td>chosen value A +</td>
+    </tr>
+    <tr>
+      <td>offer value A −</td>
+      <td>offer value A | AB −</td>
+      <td>offer value A | BA −</td>
+      <td>chosen value A −</td>
+    </tr>
+    <tr>
+      <td>offer value B +</td>
+      <td>offer value B | BA +</td>
+      <td>offer value B | AB +</td>
+      <td>chosen value B +</td>
+    </tr>
+    <tr>
+      <td>offer value B −</td>
+      <td>offer value B | BA -</td>
+      <td>offer value B | AB −</td>
+      <td>chosen value B −</td>
+    </tr>
+    <tr>
+      <td>chosen juice A</td>
+      <td>AB | BA +</td>
+      <td>AB | BA −</td>
+      <td>chosen juice A</td>
+    </tr>
+    <tr>
+      <td>chosen juice B</td>
+      <td>AB | BA −</td>
+      <td>AB | BA +</td>
+      <td>chosen juice B</td>
+    </tr>
+    <tr>
+      <td>chosen value +</td>
+      <td>offer value1 +</td>
+      <td>offer value2 +</td>
+      <td>chosen value +</td>
+    </tr>
+    <tr>
+      <td>chosen value −</td>
+      <td>offer value1 −</td>
+      <td>offer value2 −</td>
+      <td>chosen value −</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig5-v2.jpg)
+
+**Figure 5.:** (A) Neuronal measures of relative value. The two panels represent in cartoon format the response of a chosen value cell in the post-offer1 and post-offer2 time window (Task 2). In each of these time windows, chosen value cells encode the value of the offer on display. Here, the two axes correspond to the firing rate (y-axis) and to the offered juice quantity (x-axis). The two colors correspond to the two orders (AB, BA). In each time window, two linear regressions provide two slopes, proportional to the value of the two juices. From the four measures θ1A (left panel, red), θ1B (left panel, blue), θ2A (right panel, blue), and θ2B (right panel, red), we derive four neuronal measures of relative value (Methods, Equations 13–16). (B) Neuronal measures of relative value in AB trials and BA trials (N = 96 cells). The x- and y-axis correspond to ρneuronalAB and ρneuronalBA, respectively. Each data point represents one cell. The two measures are strongly correlated. The gray line is from a Deming regression. (C) Fluctuations of relative value and fluctuations in order bias (N = 96 cells). For each chosen value cell, we quantified the difference in the neuronal measure of relative value Δρneuronal = ρneuronalAB − ρneuronalBA. Here, the x-axis is the order bias (ε), the y-axis is Δρneuronal, and each data point corresponds to one cell. The gray line is from a linear regression. Statistical tests and exact p values are indicated in each panel. This analysis was restricted to 96 cells that had significant θ1A, θ1B, θ2A, and θ2B. Fluctuations of Δρneuronal correlated with fluctuations of ε across the population. Of note, the regression line has a negative intercept and the data cloud seems displaced downwards compared to what one might expect. As a result, Δρneuronal was on average close to 0. We cannot provide a clear interpretation for this observation and future work shall revisit this issue.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Rationale for the analysis. The two lines represent in cartoon format the hypothetical tuning functions of an offer value cell in the post-offer1 time window (EO trials) and in the post-offer2 time window (OE trials). The order bias would be explained if offer value cells encoded, other things equal, higher values in OE trials than in EO trials. This would be the case if the mean activity and/or the activity range were higher in OE trials, as depicted here. (B) Comparison of mean activity. x- and y-axis represent the mean activity measured in post-offer1 (EO trials) and post-offer2 (OE trials) time windows, respectively. Each data point represents one cell. The two measures were statistically indistinguishable across the population. (C) Comparison of activity range. Same format as panel B. The two measures were statistically indistinguishable across the population. (D) Lack of correlation between differences in activity range and order bias. Across the population, we did not find any correlation between the difference in activity range (y-axis) and the order bias. Exact p values are indicated in each panel. For this figure, we pooled neurons associated with A and B, and neurons with positive and negative encoding (N = 128 cells total). This analysis was restricted to cells significantly tuned in post-offer1 and post-offer2 time windows (Task 2). An additional 11 cells were removed because measures of order bias were detected as outliers by the interquartile criterion (see Methods). Including these cells in the analysis did not substantially alter the results. A similar analysis conducted on chosen value cells yielded similar negative results (not shown).
 
 We conducted a population analysis of 96 chosen value cells. Confirming previous results (Padoa-Schioppa and Assad, 2006), neuronal and behavioral measures of relative value were highly correlated. Similarly, the two neuronal measures of relative value, ρneuronalAB and ρneuronalBA, were correlated with each other (Figure 5B). Most importantly, the difference Δρneuronal and the order bias ε were significantly correlated across the population (Spearman r = 0.3, p = 0.007; Pearson r = 0.2, p = 0.02; Figure 5C). Hence, session-to-session fluctuations in the activity of chosen value cells correlated with fluctuations in the order bias.
 
@@ -104,13 +200,21 @@ We tested this prediction as follows. First, we replicated previous findings and
 
 In conclusion, the order bias did not originate before or during valuation. Analysis of chosen juice cells and chosen value cells indicated that the order bias emerged during value comparison (decision stage).
 
-## The preference bias emerged late in the trial (post-comparison)
+### The preference bias emerged late in the trial (post-comparison)
 
 When offers were presented sequentially (Task 2), both monkeys showed an additional preference bias that favored juice A and was more pronounced when the relative value of the two juices was larger (Figure 3). Our last series of analyses focused on the origins of this bias.
 
 First, we inquired whether the preference bias emerged during valuation. If this was the case, one or both of the following should be true: (1) offer value A cells encoded higher values in Task 2 than in Task 1 and/or (2) offer value B cells encoded lower values in Task 2 than in Task 1. Furthermore, these putative effects should increase as a function of the relative value. To test these predictions, we examined the tuning functions of offer value cells. For each cell group (offer value A, offer value B), we pooled neurons with positive and negative encoding. For Task 1, we focused on the post-offer time window; for Task 2, we focused on post-offer1 and post-offer2 time windows, pooling trial types from both windows. Indicating with b0 and b1 the tuning intercept and tuning slope (see Methods, Equation 8), we computed the difference in intercept Δb0 = b0,Task2 − b0,Task1 and the difference in slope Δb1 = b1,Task2 − b1,Task1 for each cell. We then examined the relation between these measures and the relative value ρ across the population, separately for each cell group. Contrary to the prediction, we did not find any correlation between neuronal measures (Δb0, Δb1) and the behavioral measure (ρ) for either offer value A or offer value B cells (Figure 7—figure supplement 1). Thus, the preference bias did not seem to emerge at the valuation stage.
 
 We next examined chosen value cells. As discussed above, their activity provided a neuronal measure for the relative value (ρneuronal), which reflected the internal subjective values of the juices emerging during value comparison. In principle, ρneuronal might differ from the relative value derived from choices through the probit regression (ρbehavioral) because choices might be affected by systematic biases originating downstream of value comparison (Figure 1). In the light of this consideration, we examined the relation between the neuronal measure of relative value in Task 2 (ρneuronalTask2, see Methods) and the behavioral measures obtained in the two tasks (ρbehavioralTask1, ρbehavioralTask2). We envisioned two possible scenarios (Figure 7A). In scenario 1, the preference bias reflected a difference in values across tasks. In other words, the subjective values of the juices in the two tasks were different and such that the relative value of juice A was higher in Task 2 than in Task 1. If so, ρneuronalTask2 should be statistically indistinguishable from ρbehavioralTask2 and systematically larger than ρbehavioralTask1. In scenario 2, the subjective values of the juices were the same in both tasks and the preference bias reflected some neuronal process taking place downstream of value comparison. If so, ρneuronalTask2 should be statistically indistinguishable from ρbehavioralTask1 and systematically smaller than ρbehavioralTask2.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig7-v2.jpg)
+
+**Figure 7.:** (A) Hypothetical scenarios. The two panels represent in cartoon format two possible scenarios envisioned at the outset of this analysis. In both panels, the x-axis represents behavioral measures from either Task 1 (green) or Task 2 (yellow); the y-axis represents the neuronal measure from Task 2. In scenario 1, the animal assigned higher relative value to juice A in Task 2. Thus, neuronal measures of relative value derived from the activity of chosen value cells in Task 2 (ρneuronalTask2) would align with behavioral measures from the same task (ρbehavioralTask2) and be systematically higher than behavioral measures from Task 1 (ρbehavioralTask1). In scenario 2, the animal assigned the same relative values to the juices in both tasks. Thus, neuronal measures of relative value in Task 2 (ρneuronalTask2) would be systematically lower than behavioral measures from the same task (ρbehavioralTask2) and would align with behavioral measures from Task 1 (ρbehavioralTask1). (B) Empirical results (N = 52 cells). Neuronal measures derived from Task 2 (ρneuronalTask2) are plotted against behavioral measures obtained in Task 1 (ρbehavioralTask1, green) or Task 2 (ρbehavioralTask2), yellow. Lines are from linear regressions. In essence, ρneuronalTask2 was statistically indistinguishable from ρbehavioralTask1 and systematically lower than ρbehavioralTask2. Details on the statistics and exact p values are indicated in the figure. The analysis was restricted to 52 cells that had significant θ1A, θ1B, θ2A, and θ2B. For this analysis, ρneuronalTask2 was taken as equal to ρneuronaloffer2 (Equation 14). Other definitions provided similar results (data not shown).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Offer value A cells (N = 63 cells). (C, D) Offer value B cells (N = 51 cells). Panels A and C illustrate the relation between differences in tuning intercept (y-axis) and the relative value ρTask1 (x-axis); panels B and D illustrate the relation between differences in tuning slope (y-axis) and ρTask1 (x-axis). For each offer value cell, we examined one time window (post-offer) in Task 1 and two time windows (post-offer1 and post-offer2) in Task 2. In each panel, circles and diamonds refer to post-offer1 and post-offer2 time windows, respectively. Only cells presenting significant tuning in the relevant time windows were included in the analysis (see Methods). Exact p values are indicated in each panel and gray lines are from linear regressions. These analyses did not reveal any significant correlation.
 
 The results of our analysis clearly conformed with scenario 2 (Figure 7B). For each chosen value cell, we computed ρneuronalTask1 in the post-offer time window and ρneuronalTask2 in the post-offer2 time window. Across the population, the two measures were statistically indistinguishable (p = 0.3, t-test; not shown). We then regressed ρneuronalTask2 onto ρbehavioralTask1. The linear relation between these measures was statistically indistinguishable from identity. Separately, we regressed ρneuronalTask2 onto ρbehavioralTask2. In this case, the regression slope was significantly <1 (p = 0.02). This result is quite remarkable. It shows that the chosen value represented in the brain in Task 2 was equal to that inferred from choices in Task 1, and significantly different from that inferred from choices in Task 2. This fact implies that the preference bias was costly for the monkey, as it reduced the value obtained on average at the end of each trial (see Discussion).
 
@@ -120,7 +224,7 @@ To test this intuition, we turned to the activity of chosen juice cells. As note
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/75910/elife-75910-fig8-v2.jpg)
 
-**Figure 8.:** chosen juice cells.(A) Profiles of activity and CP (N = 160 cells). On the top, separate traces are activity profiles for EO trials (dark colors) and OE trials (light colors), separately for E chosen (blue) and O chosen. On the bottom the trace is the mean(CP) computed for OE trials in 100-ms sliding time windows (25-ms steps). Red dots indicate that mean(CP) was significantly >0.5 (p < 0.001; t-test). Value comparison typically takes place shortly after the onset of offer2. (B–E) Distribution of CP in four 250-ms time windows. The time windows used for this analysis are indicated in panel A. (F–I) Correlation between CP and preference bias index. Each panel corresponds to the histogram immediately above it. CPs are plotted against the preference bias index (PBI), which quantifies the preference bias independently of the juice types. Each symbol represents one cell and the line is from a linear regression. CP and PBI were negatively correlated immediately before and after offer2 onset, but not later in the trial. This pattern suggests that the preference bias emerged late in the trial, when decisions were not finalized shortly after offer2 presentation.
+**Figure 8.:** (A) Profiles of activity and CP (N = 160 cells). On the top, separate traces are activity profiles for EO trials (dark colors) and OE trials (light colors), separately for E chosen (blue) and O chosen. On the bottom the trace is the mean(CP) computed for OE trials in 100-ms sliding time windows (25-ms steps). Red dots indicate that mean(CP) was significantly >0.5 (p < 0.001; t-test). Value comparison typically takes place shortly after the onset of offer2. (B–E) Distribution of CP in four 250-ms time windows. The time windows used for this analysis are indicated in panel A. (F–I) Correlation between CP and preference bias index. Each panel corresponds to the histogram immediately above it. CPs are plotted against the preference bias index (PBI), which quantifies the preference bias independently of the juice types. Each symbol represents one cell and the line is from a linear regression. CP and PBI were negatively correlated immediately before and after offer2 onset, but not later in the trial. This pattern suggests that the preference bias emerged late in the trial, when decisions were not finalized shortly after offer2 presentation.
 
 We reasoned that, at the net of noise in measurements and cell-to-cell variability, CPs ultimately quantify the animal’s commitment to the eventual choice outcome. If the preference bias emerged late in the trial – perhaps after target presentation, if animals had not already finalized their decision – the intensity of the preference bias should be inversely related to the animals’ commitment to the eventual choice outcome measured earlier in the trial. In other words, there should be a negative correlation between the preference bias and CPs computed at the time when decisions normally take place (shortly before or after offer2 onset). Our analyses supported this prediction. To quantify the preference bias intensity independent of the juice pair, we defined the preference bias index (PBI) = 2 (ρTask2 − ρTask1)/(ρTask2 + ρTask1). We then focused on four 250-ms time windows before offer1 (control window), before and after offer2 onset, and before juice delivery (Figure 8B–E). Confirming our predictions, CP and PBI were significantly anti-correlated immediately before and during offer2 presentation, but not in the control time window or late in the trial (Figure 8F–I).
 
@@ -128,7 +232,7 @@ In conclusion, our results indicated that the preference bias did not emerge dur
 
 ## Discussion
 
-## Behavioral values, neuronal values, and the origins of choice biases
+### Behavioral values, neuronal values, and the origins of choice biases
 
 Early economists proposed that choices between goods entail the computation and comparison of subjective values. However, the concept of value is somewhat slippery, because values relevant to choices cannot be measured behaviorally other than from choices themselves. This circularity problem haunted generations of scholars, dominating academic debates in the 19th and 20th centuries. In the end, neoclassic economic theory came to reject (cardinal) values and to rely only on (ordinal) preferences (Niehans, 1990; Samuelson, 1947). In other words, standard economics is agnostic as to whether subjective values are computed at all. The construction of standard economic theory was a historic success, but it came at a cost: the theory cannot explain a variety of biases observed in human choices (Camerer et al., 2003; Kahneman and Tversky, 2000; Lichtenstein and Slovic, 2006). In this perspective, neuroscience results showing that neuronal activity in multiple brain regions is linearly related to values defined behaviorally (Amemori and Graybiel, 2012; Cai et al., 2011; Cai and Padoa-Schioppa, 2012; Hosokawa et al., 2013; Jezzini and Padoa-Schioppa, 2020; Kable and Glimcher, 2007; Kim et al., 2008; Lak et al., 2014; Levy et al., 2010; Louie and Glimcher, 2010; Padoa-Schioppa and Assad, 2006; Pastor-Bernier et al., 2019; Plassmann et al., 2007; Shenhav and Greene, 2010), constitute a significant breakthrough. They validate the concept of value and effectively break the circularity surrounding it. Indeed, a neuronal population whose activity is reliably correlated with values measured from choices (behavioral values) may be used to derive independent measures of subjective values (neuronal values). In most circumstances, neuronal values and behavioral values should be (and are) indistinguishable. However, in specific choice contexts, the two measures might differ somewhat. When observed, such discrepancies indicate that choices are partly determined by processes that escape the maximization of offer values. If so, suitable analyses of neuronal activity may be used to assess the origins of particular choice biases.
 
@@ -140,7 +244,7 @@ Two of our findings are particularly relevant to the distinction between behavio
 
 To our knowledge, this is the first study to investigate the origins of choice biases building on the distinction between behavioral values and neuronal values. At the same time, some of our results are not unprecedented. Earlier work showed that human and animal choices are affected by a bias favoring, on any given trial, the same good chosen in the previous trial (Alós-Ferrer et al., 2016; Goodwin, 1977; Padoa-Schioppa, 2013; Schoemann and Scherbaum, 2019; Senftleben et al., 2021). The origins of this phenomenon, termed choice hysteresis, are hard to pinpoint based on behavioral evidence alone. However, previous analysis of neuronal activity in OFC revealed that choice hysteresis is not reflected in the encoding of offer values. Conversely, choice hysteresis correlates with fluctuations in the baseline activity of chosen juice cells, which is partly influenced by the previous trial’s outcome (Padoa-Schioppa, 2013). Thus, similar to the order bias, choice hysteresis appears to emerge at the decision stage.
 
-## The cost of choice biases
+### The cost of choice biases
 
 We have noted that the three behavioral phenomena described here were detrimental to the animals. This point bears a few comments.
 
@@ -152,7 +256,7 @@ It is interesting to speculate whether the choice biases documented here might b
 
 Similar considerations hold for the difference in choice accuracy measured across tasks. The fact that sigmoid functions are not infinitely steep (i.e., the presence of choice variability) means that on some trials the animal chooses the lower value. In fact, one can quantify the loss in expected payoff as a function of the sigmoid steepness (Constantinople et al., 2019; Rustichini et al., 2017). That sigmoids were shallower in Task 2 means that the average payoff was lower in that task – a detriment to the animal. Again, it is interesting to speculate whether weaker offer value signals recorded in Task 2 might also benefit the animal in some way, perhaps by reducing cognitive or metabolic costs. This question remains open for future studies. Importantly, such costs did not explicitly enter the decision process; if they affected behavior, they did so in a meta-decision sense.
 
-## Conclusions
+### Conclusions
 
 The past two decades have witnessed a lively interest for the neural underpinnings of choice behavior. In this effort, a significant breakthrough came from the adoption of behavioral paradigms inspired by the economics literature, in which subjective values derived from choices are used to interpret neural activity. Without renouncing this approach, here we took a further step, showing that the decision process sometimes falls short of selecting the maximum offer value, and that choices are sometimes affected by processes taking place downstream of value comparison. In other words, behavioral values and neuronal values sometimes differ. These results might seem uncontroversial, but they have deep implications for economic theory and beyond. Looking forward, the framework developed here, in which the computation and comparison of offer values are central, but choices can also be affected by other processes accessible through neuronal measures, may help understand the origins of other choice biases.
 
@@ -160,7 +264,7 @@ The past two decades have witnessed a lively interest for the neural underpinnin
 
 All the experimental procedures adhered to the NIH Guide for the Care and Use of Laboratory Animals and were approved by the Institutional Animal Care and Use Committee (IACUC) at Washington University (protocol number 190931).
 
-## Animal subjects, choice tasks, and neuronal recordings
+### Animal subjects, choice tasks, and neuronal recordings
 
 This study presents new analyses of published data (Shi et al., 2022a). Experimental procedures for surgery, behavioral control, and neuronal recordings have been described in detail. Briefly, two male monkeys (Macaca mulatta; monkey J, 10.0 kg, 8 years old; monkey G, 9.1 kg, 9 years old) participated in the study. Under general anesthesia, we implanted on each animal a head restraining device and an oval chamber (axes 50 × 30 mm) allowing bilateral access to OFC. During the experiments, monkeys sat in an electrically insulated environment with their head fixed and a computer monitor placed at 57 cm distance. The gaze direction was monitored at 1 kHz using an infrared video camera (Eyelink, SR Research). Behavioral tasks were controlled through custom written software based on Matlab (v2016a; MathWorks Inc). The code is available online (Hwang et al., 2019; Shi et al., 2022b; https://monkeylogic.nimh.nih.gov).
 
@@ -170,17 +274,33 @@ For any given trial, qA and qB indicate the quantities of juices A and B offered
 
 Neuronal recordings were guided by structural MRI scans (1 mm sections) obtained before and after surgery and targeted area 13 m (Ongür and Price, 2000). We recorded from both hemispheres in both monkeys. Tungsten single electrodes (100 µm shank diameter; FHC) were advanced remotely using a custom-built motorized microdrive. Typically, one motor advanced two electrodes placed 1 mm apart, and 1–2 such pairs of electrodes were advanced unilaterally or bilaterally in each session. Neural signals were amplified (gain: 10,000) bandpass filtered (300 Hz to 6 kHz; Lynx 8, Neuralynx), digitized (frequency: 40 kHz) and saved to disk (Power 1401, Cambridge Electronic Design). Spike sorting was performed offline (Spike2, v6, Cambridge Electronic Design). Only cells that appeared well isolated and stable throughout the session were included in the analysis.
 
-## Behavioral analyses
+### Behavioral analyses
 
-In each session, choice patterns were analyzed using probit regressions as described in the main text (Equations 1 and 2). For convenience, we repeat here the equation only for Task 1.(4)Choice B=Φ(X)X=a0+a1 log(qB/qA)
+In each session, choice patterns were analyzed using probit regressions as described in the main text (Equations 1 and 2). For convenience, we repeat here the equation only for Task 1.
+
+$$
+Choice B=Φ(X)X=a_{0}+a_{1} log(q_{B}/q_{A})
+$$
 
 Here, Φ indicates the cumulative function of the standard normal distribution. This model is referred to as the ‘log value ratio’ model. For Task 1 (simultaneous offers), the probit fit provided measures for the relative value ρTask1 and the sigmoid steepness ηTask1. For Task 2 (sequential offers), the probit fit provided measures for the relative value ρTask2, the sigmoid steepness ηTask2, and the order bias ε. Subsequent analyses of neuronal activity relied on these behavioral measures.
 
-To test the robustness of our findings, we conducted a series of control analyses. First, we fitted a probit using a ‘value difference’ model, defined as follows:(5)Choice B=Φ(X)X=a0 qA+a1 qB
+To test the robustness of our findings, we conducted a series of control analyses. First, we fitted a probit using a ‘value difference’ model, defined as follows:
 
-Second, we fitted a logit using a log value ratio model:(6)Choice B=1/(1+e−X)X=a0+a1 log(qB/qA)
+$$
+Choice B=Φ(X)X=a_{0} q_{A}+a_{1} q_{B}
+$$
 
-Third, we fitted a logit using a value difference model:(7)Choice B=1/(1+e−X)X=a0 qA+a1 qB
+Second, we fitted a logit using a log value ratio model:
+
+$$
+Choice B=1/(1+e^{−X})X=a_{0}+a_{1} log(q_{B}/q_{A})
+$$
+
+Third, we fitted a logit using a value difference model:
+
+$$
+Choice B=1/(1+e^{−X})X=a_{0} q_{A}+a_{1} q_{B}
+$$
 
 Each of these fit provided measures for each of the parameters characterizing choices in the two tasks (ρTask1, ρTask2, etc.). For each session and for each model we obtained an R2. We then compared different models by computing the distribution of BIC across sessions for each pair of models. We generally found that log value ratio models provided a better fit compared to value difference models, consistent with theoretical considerations (Padoa-Schioppa, 2022). We also found that logit models provided a better fit compared to probit models, although measures of relative value, sigmoid steepness, and order bias were very similar and highly correlated. For consistency with previous studies, we report the results of neuronal analyses based on neuronal measures derived from Equations 1 and 2. However, all our results held true using measures derived from logit regressions.
 
@@ -188,7 +308,7 @@ Notably, Equation 2 describes two parallel sigmoids. In a control analysis, we r
 
 Finally, we defined the order bias as ε = 2 ρTask2 a4/a3. This definition is particularly convenient for the present analyses because ε equals the difference ρBA – ρAB (Equation 3). Alternative and valid definitions include ε = a4 and ε = a4/a3. Control analyses showed that using these definitions did not substantially alter any of the results.
 
-## Preliminary analyses of neuronal activity
+### Preliminary analyses of neuronal activity
 
 The present analyses build on the results of a previous study showing that both choice tasks engage the same groups of neurons in OFC (Shi et al., 2022a). Here, we briefly summarize those findings.
 
@@ -200,7 +320,7 @@ Neuronal classification in Task 2 followed the procedures described in a previou
 
 The results of the two classifications were compared using analyses for categorical data. In essence, we found a strong correspondence between the cell classes identified in the two choice tasks (Shi et al., 2022a). Hence, we may refer to the different groups of cells using the standard nomenclature – offer value, chosen juice, and chosen value – independently of the choice task. Based on this result, we proceeded with a comprehensive classification based on the activity recorded in both choice tasks. For each task-related cell, we calculated the sum(sR2) for the eight variables in Task 1 (sum(sR2)Task1) and eight sequences in Task 2 (sum(sR2)Task2) as described above. We then added the corresponding sum(sR2)Task1 and sum(sR2)Task2 to obtain the final sum(sR2)final. Neurons such that sum(sR2)final ≠ 0 for at least one class were said to be tuned; other neurons were untuned. Tuned cells were assigned to the cell class that provided the maximum |sum(sR2)final|.
 
-## Data sets
+### Data sets
 
 In some sessions, one or both choice patterns presented complete or quasicomplete separation – that is, the animal split choices for <2 offer types in Task 1 and/or in Task 2. In these cases, the probit regression did not converge, the resulting steepness η was high and unstable, and the relative value was not unique. This issue affected the classification analyses described above only marginally, but for the present study it was critical that behavioral measures be accurate and precise. We thus restricted our analyses to stable sessions by imposing an interquartile criterion on the sigmoid steepness (Tukey, 1977). Defining IQR as the interquartile range, values below the first quartile minus 1.5*IQR or above the third quartile plus 1.5*IQR were identified as outliers and excluded. Thus, our entire data set included 1204 neurons (577 from monkey J, 627 from monkey G) recorded in 241 sessions (101 from monkey J, 140 from monkey G). In this population, the classification procedures identified 183 offer value cells, 160 chosen juice cells, and 174 chosen value cells. These neurons constitute the primary data set for this study.
 
@@ -208,31 +328,75 @@ Most of our analyses compared choices and neuronal activity across tasks and wer
 
 The interquartile criterion was also used to identify outliers in all the analyses conducted throughout this study. In practice, this criterion became relevant only for the analyses shown in Figure 6 and Figure 5—figure supplement 1, as indicated in the respective figure legends.
 
-## Comparing tuning functions across choice tasks
+### Comparing tuning functions across choice tasks
 
-Several analyses compared the tuning functions recorded in the two tasks. Tuning functions were defined by the linear regression of the firing rate r onto the encoded variable S:(8)r=b0+b1 S
+Several analyses compared the tuning functions recorded in the two tasks. Tuning functions were defined by the linear regression of the firing rate r onto the encoded variable S:
+
+$$
+r=b_{0}+b_{1} S
+$$
 
 Regression coefficients b0 and b1 were referred to as tuning intercept and tuning slope, respectively. Positive and negative encoding corresponded to b1 > 0 and b1 < 0, respectively. We also defined the mean activity and the activity range as follows. Indicating with Smax the maximum value of S, the mean activity was defined as rmean = b0 + b1Smax/2. The activity range was defined as Δr = |b1Smax|, where |·| indicates the absolute value.
 
 For any neuronal response, the tuning was considered significant if b1 differed significantly from zero (p < 0.05) and if the sign of the encoding was consistent with the cell class (e.g., b1 > 0 for offer value A + cells). All the analyses comparing tuning functions across tasks were restricted to neuronal responses with significant tuning.
 
-## Neuronal measures of relative value
+### Neuronal measures of relative value
 
-Several analyses relied on neuronal measures for the relative value of the juices (ρneuronal) derived from the activity of chosen value cells. In Task 1, these neurons encode the chosen value independently of the juice type. For each neuronal response, we performed a bilinear regression:(9)r=θ0+θA qA δchoice,A+θB qB δchoice,B
+Several analyses relied on neuronal measures for the relative value of the juices (ρneuronal) derived from the activity of chosen value cells. In Task 1, these neurons encode the chosen value independently of the juice type. For each neuronal response, we performed a bilinear regression:
 
-where θ0, θA, and θB were the regression coefficients, δchoice,A = 1 if the animal chose juice A and 0 otherwise, and δchoice,B = 1 δchoice,A. If the response encodes the chosen value, θA should be proportional to the value of a quantum of juice A (uA), θB should be proportional to the value of a quantum of juice B (uB), and the ratio θA/θB should equal the value ratio – that is, the relative value of the two juices. We thus defined(10)ρneuronal=θA/θB
+$$
+r=\theta_{0}+\theta_{A} q_{A} \delta_{choice,A}+\theta_{B} q_{B} \delta_{choice,B}
+$$
+
+where θ0, θA, and θB were the regression coefficients, δchoice,A = 1 if the animal chose juice A and 0 otherwise, and δchoice,B = 1 δchoice,A. If the response encodes the chosen value, θA should be proportional to the value of a quantum of juice A (uA), θB should be proportional to the value of a quantum of juice B (uB), and the ratio θA/θB should equal the value ratio – that is, the relative value of the two juices. We thus defined
+
+$$
+ρ^{neuronal}=\theta_{A}/\theta_{B}
+$$
 
 Previous studies showed that this measure is statistically indistinguishable from the behavioral measure ρbehavioral derived from the probit analysis of choice patterns (Padoa-Schioppa and Assad, 2006).
 
-In Task 2, in the post-offer1 and post-offer2 time windows, chosen value cells encoded the value of the current offer, independent of the juice type (Table 1). For each neuron, we thus performed a bilinear regression for each of the two time windows:(11)r1=θ10+θ1A qA δorder,AB+θ1B qB δorder,BA(12)r2=θ20+θ2A qA δorder,BA+θ2B qB δorder,AB
+In Task 2, in the post-offer1 and post-offer2 time windows, chosen value cells encoded the value of the current offer, independent of the juice type (Table 1). For each neuron, we thus performed a bilinear regression for each of the two time windows:
 
-where r1 and r2 were their responses recorded in the post-offer1 and post-offer2 time windows, respectively, and θ10, θ1A, θ1B, θ20, θ2A, and θ2B were regression coefficients. These coefficients provided four neuronal measures of relative value:(13)ρneuronaloffer1=θ1A/θ1B(14)ρneuronaloffer2=θ2A/θ2B(15)ρneuronalAB=θ1A/θ2B(16)ρneuronalBA=θ2A/θ1B
+$$
+r_{1}=\theta_{10}+\theta_{1A} q_{A} \delta_{order,AB}+\theta_{1B} q_{B} \delta_{order,BA}
+$$
+
+
+
+$$
+r_{2}=\theta_{20}+\theta_{2A} q_{A} \delta_{order,BA}+\theta_{2B} q_{B} \delta_{order,AB}
+$$
+
+where r1 and r2 were their responses recorded in the post-offer1 and post-offer2 time windows, respectively, and θ10, θ1A, θ1B, θ20, θ2A, and θ2B were regression coefficients. These coefficients provided four neuronal measures of relative value:
+
+$$
+ρ^{neuronal}offer1=\theta_{1A}/\theta_{1B}
+$$
+
+
+
+$$
+ρ^{neuronal}offer2=\theta_{2A}/\theta_{2B}
+$$
+
+
+
+$$
+ρ^{neuronal}AB=\theta_{1A}/\theta_{2B}
+$$
+
+
+
+$$
+ρ^{neuronal}BA=\theta_{2A}/\theta_{1B}
+$$
 
 In essence, these four measures corresponded to the two time windows (post-offer1 and post-offer2) and to the two presentation orders (AB and BA). Importantly, all these measures were computed conditioned on θ1A, θ1B, θ2A, and θ2B differing significantly from zero (p < 0.05). The analyses illustrated in Figures 5 and 7 were restricted to neurons satisfying this criterion.
 
 In terms of notation, we often omit the superscript in ρbehavioral and we indicate behavioral measures simply as ρ (with the relevant subscripts). We use the superscript ‘behavioral’ only when we explicitly compare behavioral and neuronal measures, for clarity. In contrast, for neuronal measures of relative value we always use the superscript ‘neuronal’.
 
-## Activity profiles of chosen juice cells
+### Activity profiles of chosen juice cells
 
 To conduct population analyses, we pooled all chosen juice cells. The juice eliciting higher firing rates was labeled ‘E’ (encoded) and other juice was labeled ‘O’. In Task 2, we thus referred to EO trials and OE trials, depending on the presentation order.
 
@@ -240,7 +404,11 @@ To illustrate the activity profiles of chosen juice cells in Task 2, we aligned 
 
 Under sequential offers, chosen juice cells encode different variables in different time windows (see Table 1). During offer1 and offer2 presentation, these cells encode in a binary way the juice type currently on display. Later, as the decision develops, these neurons gradually come to encode the binary choice outcome (i.e., the chosen juice). We previously showed that the activity of these neurons recorded in OE trials shortly before offer2 is inversely related to the value of offer1 (Ballesta and Padoa-Schioppa, 2019). This phenomenon, termed circuit inhibition, resembles the setting of a dynamic system’s initial conditions and is regarded as an integral part of the decision process (Ballesta and Padoa-Schioppa, 2019).
 
-For a quantitative analysis of circuit inhibition, we focused on a 300-ms time window starting 250 ms before offer2 onset. We excluded forced choice trials, for which one of the two offers was null. For each neuron, we examined OE trials and we regressed the firing rates against the normalized value of offer1:(17)r=c0+c1 V(O)/ΔVo
+For a quantitative analysis of circuit inhibition, we focused on a 300-ms time window starting 250 ms before offer2 onset. We excluded forced choice trials, for which one of the two offers was null. For each neuron, we examined OE trials and we regressed the firing rates against the normalized value of offer1:
+
+$$
+r=c_{0}+c_{1} V(O)/ΔV_{o}
+$$
 
 where ΔVO was the value range for juice O. The normalization allowed to pool neurons recorded with different value ranges. The regression slope c1 quantified circuit inhibition for individual cells, and we studied this parameter at the population level.
 

@@ -36,9 +36,49 @@ In this study, we focused on three questions: (1) How do FEF and caudate neurons
 
 We recorded from 149 FEF neurons from three monkeys (n = 85, 24 and 40 from monkeys A, C and F, respectively) and, in separate sessions, from 140 caudate neurons from the same monkeys (n = 18, 49, and 73 from monkeys A, C and F, respectively) performing the asymmetric-reward direction-discrimination task. As we reported previously (Fan et al., 2018), the monkeys’ choices and RTs tended to reflect the strength (coherence) and direction of the visual motion stimulus but with a bias toward the large-reward option (Figure 1B,C).
 
-## Diverse task-relevant sensory and reward encoding in both brain regions
+### Diverse task-relevant sensory and reward encoding in both brain regions
 
 Individual neurons in both the FEF and caudate showed a diversity of task-driven responses (several examples are illustrated in Figure 2; population summaries are shown in Figure 2—figure supplement 1 and Figure 3). The FEF neuron in Figure 2A responded to choice target presentation with phasic (transient) and tonic (sustained) activation, showed a dip in activity after motion onset, then had gradually increasing activity (more for trials resulting in a contralateral choice) during motion viewing until a saccade-related burst for the contraversive saccade and a return to baseline activity for the other saccade. The FEF neuron in Figure 2B was activated after target onset, with higher activation when the contralateral choice was paired with large reward (red curves > green curves). This modulation by reward context persisted during a gradual ramp in activity during motion viewing (more for trials with the contralateral choice and for blocks when the contralateral choice was paired with large reward; t-test for H0: regression coefficient for reward context = 0, p<0.05 for all epochs 1–8). This neuron also showed a saccade-related burst for the contraversive saccade. The FEF neuron in Figure 2C showed phasic activation by choice targets and motion onset, with activity that decreased during motion viewing, more gradually for the contralateral choice and higher coherences (compare curves with different shades), until reaching a saccade-related suppression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig2-v1.jpg)
+
+**Figure 2.:** (A-C) Activity of three example FEF neurons. For display purposes, average spike count was measured for correct trials only and convolved with a Gaussian kernel (sd = 40 ms). Green colors: large reward was paired with the ipsilateral choice. Red colors: large reward was paired with the contralateral choice. Shades: coherence levels. For alignment to motion onset, activity was truncated at 100 ms before the median reaction time. For alignment to saccade onset, activity was truncated at 200 ms after the median time for motion onset. (D-E) Activity of two example caudate neurons. Same format as A.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Summary of average activity for each time point during a trial for all FEF neurons (n = 149). Activity was averaged between the two choices and z-scored to baseline activity (average activity in a 300 ms window before target onset). Non-gray colors: z-score as in the color bar, bounded at ±5. Gray: truncated data as in Figure 2. The bars to the right of each panel indicate the monkey identities for the neurons. Neurons are sorted by the timing and sign of peak modulation in the middle column, separately for each monkey. (B) Summary for caudate neurons (n = 140). Same format as A.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fractions of FEF (black) and caudate (red) neurons showing significant regression coefficients in the multiple linear regression in Equation 2. Criterion: t-test, p<0.05. Dashed lines: chance level, adjusted for the number of comparisons. Filled circles: the fraction was significantly greater than chance level (Chi-square test, p<0.05/72 (8 epochs x nine comparisons)). ‘Coherence’ and ‘Coh x Rew’: neurons with significant coefficients for either choice. Vertical color bars indicate epochs defined in Figure 1A. Stars indicate epochs in which the fractions differed between FEF and caudate populations (Chi-square test, p<0.05/72). (B) Fraction of neurons with joint modulation by coherence and reward-related terms. Same format as A. (C, D) Fractions of neurons showing significant regression coefficients in the multiple linear regression in Equation 3. Same format as A and B. (E-I) Fractions of neurons showing significant non-zero regression coefficients for different regressors (Equation 3). Results from RT-reward interaction terms were omitted because both regions showed near chance-level fractions. Dashed horizontal lines: chance level. Only neurons tested with non-vertical motion stimuli were included (n = 126 and 136 for FEF and caudate, respectively).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Fractions of neurons showing significant non-zero regression coefficients for different regressors (Equation 3). Same format as Figure 3E. N = 40 and 73 for FEF and caudate, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Fractions of neurons showing significant non-zero regression coefficients for different regressors (Equation 3). Same format as Figure 3E. N = 22 and 46 for FEF and caudate, respectively.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Fractions of neurons showing significant non-zero regression coefficients for different regressors (Equation 3). Same format as Figure 3E. N = 64 and 17 for FEF and caudate, respectively.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Cumulative variance explained by PCA (black) and dPCA (red) by the first 15 components. (B) Percentage of explained variance by different dPCA components, marginalized by task parameters. (C) Top 10 dPCA components with the highest explained variance (exlucding condition-independent components). In each subplot, the data were projected onto the respective dPCA decoder axis, with 16 lines corresponding to 16 conditions (see legend). The ordinal numbers of the components are shown in the colored circles. The percent explained variance for each component is shown at the left bottom corner.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Same format as Figure 3—figure supplement 4.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Same format as Figure 3—figure supplement 4.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Same format as Figure 3—figure supplement 4.
 
 The caudate neuron in Figure 2D did not respond to target onset but was activated after motion onset, with higher activity for the contralateral choice, at higher coherence, and in blocks when the contralateral choice was paired with large reward. These coherence and reward-context modulations persisted through saccade onset, with no convergence before saccade onset. The caudate neuron in Figure 2E also did not respond to target onset but was activated after motion onset for both choices, with a preference for ipsilateral choices that were paired with the small reward. After an initial large activation, this neuron gradually reduced firing toward saccade onset, largely maintaining reward-context and coherence modulation until after saccade onset.
 
@@ -52,7 +92,7 @@ To examine these task-related modulations at a finer time resolution, we applied
 
 To further characterize the modulation patterns, we applied the demixed principal component analysis (dPCA) method for the two populations (Kobak et al., 2016). Although our sample size was relatively small and trials were inherently unbalanced for different reward-choice-coherence combinations for this method, the dPCA results corroborated several findings from the multiple linear regression analysis (Figure 3—figure supplements 4–7), including: (1) choice-related components tended to account for a larger portion of variance in FEF activity than caudate activity (panels B and C in each figure, purple); (2) reward context-related components tended to account for a larger portion of variance in caudate activity than FEF activity (orange), particularly for around saccade onset; (3) coherence-related components tended to account for a larger portion of variance in FEF activity around motion onset than for activity around saccade onset, while the opposite was true for caudate activity (cyan); and (4) coherence and reward context or size interactions accounted for substantial variance for both regions (dark and light green). Collectively, these results indicated that neurons in both FEF and caudate represent a variety of task-relevant signals that could, in principle, support reward-biased perceptual decisions, but with different prevalences and preferences.
 
-## Predictions of the biased decision variable in a drift-diffusion framework
+### Predictions of the biased decision variable in a drift-diffusion framework
 
 As we showed previously, these monkeys’ patterns of choices and RTs on this task were consistent with a drift-diffusion model (DDM; Fan et al., 2018). According to this model, a decision is formed when accumulated motion evidence reaches one of two pre-defined (collapsing) decision bounds (Figure 4A). The monkeys’ reward-driven biases arose from coordinated, reward context-dependent adjustments of the rate of accumulation (drift rate, which scales with motion coherence) and relative bound heights (Figure 4E; for more details see Fan et al., 2018). A bias in the drift rate (ΔDrift, corresponding to the me parameter in the DDM) can be implemented as a constant offset to the momentary motion evidence (Figure 4B). A bias in the relative bound heights (ΔBound, corresponding to the z parameter in DDM) can be implemented as an offset in the starting value of the accumulation process (Figure 4C), an asymmetry in the absolute bound heights for the two choices (Figure 4D), or a combination of the two.
 
@@ -68,13 +108,144 @@ We examined whether FEF and caudate activity conform to these predictions. Given
 
 **Figure 5.:** (A) Average firing rates of neurons with significant and consistent choice selectivity. See Table 1 for number of neurons in each category. Trials were grouped by choice (left and right rows), reward context (magenta/green), and RT quintiles (shade). Activity was aligned to motion and saccade onsets for the top and bottom rows, respectively. Only correct trials were included. For motion onset alignment, firing rates were truncated at the median RT minus 100 ms for each group. For saccade onset alignment, firing rates were truncated before median motion onset plus 200 ms for each group. For display purposes, firing rates were convolved with a Gaussian kernel (sigma = 25 ms). (B) Average firing rates of other neurons. Same format as A.
 
+**Table 1.**
+ Summary of counts/percentages for neurons with task-modulated activity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">FEF</th>
+      <th colspan="3">Caudate</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Monkey A</th>
+      <th>Monkey C</th>
+      <th>Monkey F</th>
+      <th>Monkey A</th>
+      <th>Monkey C</th>
+      <th>Monkey F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>85</td>
+      <td>24</td>
+      <td>40</td>
+      <td>18</td>
+      <td>49</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Consistently choice-selective</td>
+      <td>35</td>
+      <td>14</td>
+      <td>7</td>
+      <td>6</td>
+      <td>31</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>41%</td>
+      <td>58%</td>
+      <td>18%</td>
+      <td>33%</td>
+      <td>63%</td>
+      <td>29%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Coherence-modulated slope of firing rate during motion viewing</td>
+      <td>44</td>
+      <td>12</td>
+      <td>26</td>
+      <td>10</td>
+      <td>33</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>52%</td>
+      <td>50%</td>
+      <td>65%</td>
+      <td>56%</td>
+      <td>67%</td>
+      <td>56%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Reward context-modulated slope of firing rate during motion viewing</td>
+      <td>21</td>
+      <td>5</td>
+      <td>3</td>
+      <td>2</td>
+      <td>9</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>25%</td>
+      <td>21%</td>
+      <td>8%</td>
+      <td>11%</td>
+      <td>18%</td>
+      <td>21%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Reward context-modulated activity before motion onset</td>
+      <td>38</td>
+      <td>12</td>
+      <td>19</td>
+      <td>15</td>
+      <td>34</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>45%</td>
+      <td>50%</td>
+      <td>48%</td>
+      <td>83%</td>
+      <td>69%</td>
+      <td>53%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Reward context-modulated activity just before saccade onset</td>
+      <td>51</td>
+      <td>16</td>
+      <td>26</td>
+      <td>15</td>
+      <td>34</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>60%</td>
+      <td>67%</td>
+      <td>65%</td>
+      <td>83%</td>
+      <td>69%</td>
+      <td>67%</td>
+    </tr>
+  </tbody>
+</table>
+
 Even using these common criteria for categorization, the average activity patterns of neurons in the same category differed for FEF and caudate. First, consider the choice-selective subpopulations. Whereas choice-selective FEF activity appeared to be roughly consistent with bound-crossing in the DDM (i.e., reaching a fixed level of activity at the end of the decision process and before saccade onset, regardless of the time it took to reach the decision), choice-selective caudate activity did not (Ding and Gold, 2010; Ding and Gold, 2012b). For trials in which the monkey made the preferred choice of the given neuron, the slope of FEF activity during motion viewing appeared to show more separations than the slope of caudate activity, between reward contexts and RT groups. The baseline FEF activity before motion onset appeared to differ more between reward contexts. The peri-saccade activity for the preferred choice appeared to show opposite selectivity for reward context in the two regions (the purple curves tended to be above and below the green curves for FEF and caudate, respectively).
 
 Second, in the other subpopulations that did not exhibit consistent choice selectivity, the average caudate activity appeared to maintain RT separation through saccade generation and onward, whereas the average FEF activity appeared to converge around saccade onset (Figure 5B). These apparent differences suggest that activity in the two regions may relate differently to the predictions of the DDM, which we examine in more detail below.
 
-## FEF activity reflected behaviorally derived reward-driven drift-rate biases
+### FEF activity reflected behaviorally derived reward-driven drift-rate biases
 
 We first examined whether FEF and caudate activity reflected evidence accumulation with a reward-driven bias in the drift rate. As illustrated in Figure 4B, such a signal is expected to show two features in neural activity. First, the rate of accumulation depends on motion coherence. For individual neurons, this dependence translates to motion-coherence modulation of the slope of firing rates during motion viewing. Figure 6A and B illustrate our procedure for estimating the slope of change in firing rates and its modulation by coherence, reward context, and their interaction. Second, the reward-context modulation of the slope of change reflects the behavioral reward bias in drift rate. In the model, the reward bias in drift rates is independent of coherence and the drift-rate scaling and dependent only on reward context. The corresponding modulation of the (slope of) activity of individual neurons is thus by reward context alone and not by the reward context-coherence interaction. Because neurons showed substantial variations in their firing-rate ranges, we used each neuron’s modulation by coherence to normalize its modulation by reward context. The second expectation thus translates to a correlation between this normalized quantity and the behaviorally estimated bias in drift rate across neurons/sessions.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig6-v1.jpg)
+
+**Figure 6.:** (A) Illustration of measurements of different modulations of the rate of change for a single neuron. Left: average firing rates of the example neuron in Figure 2B for its preferred choice and aligned to motion onset. In 200 ms sliding windows, linear regressions were performed to estimate the slope of firing-rate changes as a function of time, coherence, reward context and their combination. Right: slope values for the sliding window in the left panel. A multiple linear regression was performed with coherence, reward context and their interaction as the regressors (lines). The offset between the two reward contexts at zero coherence (filled triangles) represents the magnitude of reward-context modulation in the regression. (B) The regression coefficients of the linear regression for different sliding windows for the example neuron. Filled circle: coefficient was significantly different from zero (t-test, p<0.05). For each neuron, the time with the largest absolute coherence modulation was identified (arrow). For the alignment to motion onset, a minimum 100 ms visual latency was imposed. (C) Coefficient values for FEF (top) and caudate (bottom) neurons with significant coherence-modulated slope values for trials with the preferred choices. (D) Scatter plots of the ratio of regression coefficients for reward context and coherence modulation (abscissa) and the behavioral bias in drift rates (from DDM fits, ordinate), for FEF (top) and caudate (bottom) neurons with significant coherence modulation. Preferred choice only. Slope values were measured from activity aligned to motion (left) and saccade (right) onset. Line and shaded area: linear regression with significant non-zero slope (t-test, p<0.05) and 95% confidence interval. Colors indicate neurons from the three monkeys.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Results from trials with the non-preferred (null) choice for the same FEF neuron as in Figure 6A. Same format as Figure 6A. (B) Results from trials with null choices for FEF neurons with significant coherence modulation of the slope of firing rates and consistent choice selectivity. Same format as Figure 6D. (C) Results from FEF neurons without consistent choice selectivity. Same format as Figure 6D, except that trials were separated by contralateral/upward choices and ipsilateral/downward choices. (D) Results from caudate neurons without consistent choice selectivity. Same format as C.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Only neurons with consistent choice selectivity and significant coherence selectivity during the motion/saccade epoch were included.
 
 We found that many neurons in both regions showed motion-coherence modulation of the slope of firing rates (Figure 6, Table 1), consistent with an involvement of both regions in evidence accumulation (Ding and Gold, 2010; Ding and Gold, 2012b). For choice-selective FEF neurons, the slope of change tended to be greater for higher coherence for trials with the neurons’ preferred choices (i.e., positive coefficients; Figure 6C). Many FEF neurons also showed opposite modulation for trials with the null choices, but these effects were inconsistent, reflecting the lower reliability in estimating slope values from low firing rates. For choice-selective caudate neurons, the slope of change did not show a consistent relationship with coherence for either the preferred or null choices. The overall magnitude of the coefficients tended to be smaller for caudate neurons, reflecting the lower firing rates of caudate neurons.
 
@@ -84,11 +255,23 @@ Although the DDM does not provide predictions for neurons without consistent cho
 
 In addition, a small number of neurons showed significant modulation of the slope of firing rates by the reward context-coherence interaction. In the DDM, such a modulation may relate to reward context-dependent changes in the scaling factor, k. However, the small sample size precluded the detection of any such relationship (data not shown).
 
-## Reward context-modulated baseline activity was inconsistent with reward biases in relative bound heights
+### Reward context-modulated baseline activity was inconsistent with reward biases in relative bound heights
 
 As we showed above, reward-driven biases in the relative bound heights of the DDM, ‘bound bias’ in short, can, in principle, be implemented as an offset to the beginning of the accumulation process (Figure 4C), an offset to the end of the accumulation process (Figure 4D), or the combined effects of the two. Neural activity reflecting such biases is expected to show three features. First, the neural activity should be sensitive to reward context. Second, the sign of its reward-context modulation should be congruent with the reward bias. For example, if the monkey uses the bound bias to favor the large-reward choice, when its preferred choice is paired with the large reward, then the neuron should increase its baseline firing before motion onset (as an offset to the beginning of the accumulation) or decrease its firing before saccade onset (as an offset to the end of the accumulation). Third, in consideration of our lack of knowledge of whether a neuron provides an excitatory or inhibitory role in the decision network, we can relax our expectation for sign congruency . However, we may still expect that, on trials when the reward-context modulation of neural activity is strong, the monkey uses a larger bound bias. We tested these predictions on choice-selective neurons. Note that similar predictions cannot be specified for neurons without choice selectivity.
 
 We found that many choice-selective neurons showed reward context-modulated activity before motion onset and/or before saccade onset in both regions (Figure 7A–D). We assessed the reward context modulation in running windows covering two time periods around motion onset and before saccade, respectively. Figure 7A–D shows heatmaps of regression coefficients for reward context using Equation 3 (same as Figure 3F, but only for choice-selective neurons with significant non-zero values in any time bins). A quick glance suggested that FEF neurons tended to show positive coefficients before motion onset (Figure 7A; warm colors: higher activity when the neuron’s preferred choice was paired with large reward). The coefficients were more mixed in signs for FEF activity before saccade onset (Figure 7C) and for caudate activity (Figure 7B and D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig7-v1.jpg)
+
+**Figure 7.:** (A,B) Heatmaps of normalized regression coefficients for choice-selective FEF (A) and caudate (B) neural activity before/around motion onset (Equation 3). Only neurons with significant modulation in at least one time bin are shown (t-test, p<0.05). Neurons were sorted by bound bias values (color bar to the right), measured with DDM fits. Coefficients were normalized by the maximal absolute value for each neuron for better visualization. For the heatmaps, warm colors indicate stronger activity when the neuron’s preferred choice was paired with large reward, cool colors indicate stronger activity when the null choice was paired with large reward, and gray indicates bins without significant reward context modulation. For the color bars, warm colors indicate bound biases that favored the large-reward choice, cool colors indicate bound biases that favored the small-reward choice. (C,D) Heatmaps of normalized regression coefficients for activity before saccade onset. Same format as A and B. (E-H) Fractions of neurons showing reward context modulation that was congruent with the behaviorally measured bound bias for panels (A-D), respectively. Filled circles indicate fractions that were significantly different from chance level (0.5; chi-square test, 0 < 0.05).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Same format as Figure 7, except for using coherence-based regression (Equation 2).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/60535/elife-60535-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Same format as Figure 7A–D, except for the color codes in heatmaps: warm colors indicate stronger activity when the contralateral/up choice was paired with large reward, cool colors indicate stronger activity when the ipsilateral/down choice was paired with large reward, and gray indicates bins without significant reward context modulation. Note also that there is no meaningful definition of congruency due to these neurons’ lack of choice selectivity.
 
 In contrast to the second expectation above, the signs of coefficients were not consistently congruent with the monkeys’ behavioral bound biases. As illustrated by the color bars at the right of each panel, the monkeys tended to use negative bound biases (favoring the small-reward choice). If the neural activity reflected such biases, the heatmap should be dominated by cool colors for activity before motion onset and by warm colors for activity before saccade onset. This appeared not to be the case. We quantified the fraction of congruent sessions (Figure 7E–H). The only time points with fractions that differed significantly from chance suggested incongruent neural modulation for FEF activity before motion onset (Chi-square test, p=0.05, uncorrected for multiple comparisons to reduce false negatives). We also performed running regression with coherence-based regressors (Equation 2) and observed a similar lack of congruent modulation (Figure 7—figure supplement 1).
 
@@ -120,46 +303,202 @@ To summarize, FEF and caudate activity showed modulations by choice, reward cont
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.5</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td>https://www.python.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Psychophysics Toolbox</td>
+      <td>Pelli, 1997; Kleiner, 2007</td>
+      <td>RRID:SCR_002881</td>
+      <td>http://psychtoolbox.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pandas v0.19.2</td>
+      <td>Python Data Analysis Library</td>
+      <td>RRID:SCR_018214</td>
+      <td>https://pandas.pydata.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scikit-learn v0.18.1</td>
+      <td>scikit-learn.org</td>
+      <td>RRID:SCR_002577</td>
+      <td>https://scikit-learn.org/stable/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statsmodels v0.8.0</td>
+      <td>Statsmodels.org</td>
+      <td>RRID:SCR_016074</td>
+      <td>https://www.statsmodels.org/stable/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scipy v0.18.1</td>
+      <td>SciPy.org</td>
+      <td>RRID:SCR_008058</td>
+      <td>https://docs.scipy.org/doc/scipy/reference/stats.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMC 2.3.6</td>
+      <td>http://github.com/pymc-devs/pymc</td>
+      <td></td>
+      <td>http://github.com/pymc-devs/pymc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dPCA</td>
+      <td>Kobak et al., 2016</td>
+      <td></td>
+      <td>https://github.com/machenslab/dPCA/tree/master/matlab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
 
 All training and experimental procedures were in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the University of Pennsylvania Institutional Animal Care and Use Committee (protocol #804726). Details about monkey training, behavioral tasks, and caudate recording were reported previously (Fan et al., 2018; Doi et al., 2020).
 
-## Neural recording
+### Neural recording
 
 Each monkey was implanted with a head holder and recording cylinder that provided access to the FEF (right for monkeys C and F, left for monkey A). The FEF was identified as the anterior bank of the arcuate sulcus where saccades were evoked with microstimulation of <50 μA (70 ms trains of 300 Hz, 250-μs biphasic pulses) (Bruce and Goldberg, 1985; Ding and Gold, 2012b). Neural activity was recorded using a combination of glass-coated tungsten electrodes (Alpha-Omega), epoxylite-coated tungsten electrodes (FHC), and multi-contact electrodes (V-probe, Plexon, Inc; Multitrodes, Thomas Recording), driven by a NaN microdrive (NAN Instruments, LTD). A memory-guided delayed saccade task was used to estimate the response field of a neuron (Ding and Gold, 2012b). For the motion discrimination task, one choice target was placed in the response field and the other was placed symmetrically across the central fixation point. Motion directions were along the axis defined by the choice targets.
 
 Single-unit recordings were obtained for neurons that showed activity modulation during trials by visual inspection and single-unit spikes were sorted offline (OfflineSorter, Plexon). Neurons with low firing rates (peak firing rate <5 Hz) and few trials (<5 finished trials per choice × coherence × reward context combination or <3 correct trials per combination) were excluded from analysis.
 
-## Behavioral analysis
+### Behavioral analysis
 
-To quantify reward context-induced biases, a logistic function was fitted to the choice data for all trials for each session:(1)Pcontra choice= 11+ e−Slope(Coh+Bias),where Coh is the signed motion coherence,Slope = slope0 + sloperew×RewCont,Bias = bias0 + biasrew×RewCont,RewCont={1 for contralateral−large reward blocks,−1 for ipsilateral−large reward blocks}.
+To quantify reward context-induced biases, a logistic function was fitted to the choice data for all trials for each session:
 
-To infer the latent decision variable, we also fitted the choice and saccade reaction time (RT) data simultaneously to a drift-diffusion model (DDM; Figure 4A), following previously established procedures (Fan et al., 2018). We defined RT as the time from stimulus onset to saccade onset. Saccade onset was identified offline with respect to velocity (>40°/s) and acceleration (>8000°/s2). The DDM assumes that the latent decision variable (DV) is the time integral of evidence (E) and reward asymmetry-induced fictive evidence (me), scaled by a constant (k).E∼N(coherence, 1) and DV= ∫k(E+me) dt
+$$
+P_{contra choice}= \frac{1}{1+ e^{−Slope(Coh+Bias)}},
+$$
 
-At each time point, the DV was compared with two collapsing choice bounds (Zylberberg et al., 2016). The time course of the choice bounds was specified as a/(1+eβ_alphat-β_d), where β_alpha and β_d controlled the rate and onset of decay, respectively and a specified the maximal distance between the two choice bounds. A bias-related parameter (z) specified the relative bound heights of the two choice bounds, where z = 0.5 indicated equal bound heights for the two choices, z>0.5 indicated that the upper bound was closer to the starting point of evidence accumulation than the lower bound.
+where $Coh$ is the signed motion coherence,
+
+$$
+Slope = slope_{_{0}} + slope_{_{rew}}\timesRewCont,
+$$
+
+
+
+$$
+Bias = bias_{_{0}} + bias_{_{rew}}\timesRewCont,
+$$
+
+
+
+$$
+RewCont={1 for contralateral−large reward blocks,−1 for ipsilateral−large reward blocks}.
+$$
+
+To infer the latent decision variable, we also fitted the choice and saccade reaction time (RT) data simultaneously to a drift-diffusion model (DDM; Figure 4A), following previously established procedures (Fan et al., 2018). We defined RT as the time from stimulus onset to saccade onset. Saccade onset was identified offline with respect to velocity (>40°/s) and acceleration (>8000°/s2). The DDM assumes that the latent decision variable (DV) is the time integral of evidence (E) and reward asymmetry-induced fictive evidence (me), scaled by a constant (k).
+
+$$
+E∼N(coherence, 1) and DV= \intk(E+me) dt
+$$
+
+At each time point, the DV was compared with two collapsing choice bounds (Zylberberg et al., 2016). The time course of the choice bounds was specified as $a/(1+e^{\beta_alphat-\beta_d})$, where $\beta_alpha$ and $\beta_d$ controlled the rate and onset of decay, respectively and $a$ specified the maximal distance between the two choice bounds. A bias-related parameter (z) specified the relative bound heights of the two choice bounds, where z = 0.5 indicated equal bound heights for the two choices, z>0.5 indicated that the upper bound was closer to the starting point of evidence accumulation than the lower bound.
 
 For sessions with neurons showing choice-selective activity during a pre-saccade period (see below for epoch definitions), the upper bound was associated with the preferred choice and the lower bound was associated with the null choice. In other words, if DV crossed the upper bound first, a saccade was made to the target inside the neuron’s response field; if DV crossed the lower bound first, a saccade was made to the other target.
 
 DDM model fitting was performed, separately for each session, using the maximum a posteriori estimate method (python v3.5.1, pymc 2.3.6) and prior distributions suitable for human and monkey subjects (Wiecki et al., 2013). We performed at least five runs for each variant and used the run with the highest likelihood for further analyses. Biases in drift and bound (Figure 5I) were computed as the difference in the fitted me and z values between the two reward contexts, respectively. Positive values indicated biases toward the large reward choice.
 
-## Neural data analysis
+### Neural data analysis
 
-We performed three regression analyses on the neural data. First, for each single unit, we computed the average firing rates in eight task epochs (Figure 1A): three epochs before motion stimulus onset (400 ms window beginning at target onset, variable window from target onset to dots onset, and 400 ms window ending at motion onset), two epochs during motion viewing (a fixed window from 100 ms after motion onset to 100 ms before median RT and a variable window from 100 ms after motion onset to 100 ms before saccade onset), a pre-saccade 100 ms window, a peri-saccade 300 ms window beginning at 100 ms before saccade onset, and a post-saccade 400 ms window beginning at saccade onset (before feedback and reward delivery). For each unit, a multiple linear regression was performed on the spike counts in correct trials, for each task epoch separately.(2)Spike count=β0+βChoice×IChoice+βRewCont×IRewCont+βRewSize×IRewSize+ βCoh−Contra×ICoh−Contra+ βCoh−Ipsi×ICoh−Ipsi+ βRewCoh−Contra×ICoh−Contra×IRewSize + βRewCoh−Ipsi×ICoh−Ipsi×IRewSize,whereIChoice={1 for contralateral/up choice, −1 for ipsilateral/down choice} ,IRewCont={1 for contralateral/up−large reward blocks ,−1foripsilateral/down−largerewardblocks},IRewSize={1 if a large reward is expected for the choice,  −1  if a small reward is expected},ICoh−Contra={coherence for contralateral/up choice,  0 for ipsilateral/down choice},andICoh−Ipsi={0 for contralateral/up choice, coherence for ipsilateral/down choice}.
+We performed three regression analyses on the neural data. First, for each single unit, we computed the average firing rates in eight task epochs (Figure 1A): three epochs before motion stimulus onset (400 ms window beginning at target onset, variable window from target onset to dots onset, and 400 ms window ending at motion onset), two epochs during motion viewing (a fixed window from 100 ms after motion onset to 100 ms before median RT and a variable window from 100 ms after motion onset to 100 ms before saccade onset), a pre-saccade 100 ms window, a peri-saccade 300 ms window beginning at 100 ms before saccade onset, and a post-saccade 400 ms window beginning at saccade onset (before feedback and reward delivery). For each unit, a multiple linear regression was performed on the spike counts in correct trials, for each task epoch separately.
+
+$$
+Spike count=\beta_{0}+\beta_{Choice}\timesI_{Choice}+\beta_{RewCont}\timesI_{RewCont}+\beta_{RewSize}\timesI_{RewSize}+ \beta_{Coh−Contra}\timesI_{Coh−Contra}+ \beta_{Coh−Ipsi}\timesI_{Coh−Ipsi}+ \beta_{RewCoh−Contra}\timesI_{Coh−Contra}\timesI_{RewSize} + \beta_{RewCoh−Ipsi}\timesI_{Coh−Ipsi}\timesI_{RewSize},
+$$
+
+where
+
+$$
+I_{Choice}={1 for contralateral/up choice, −1 for ipsilateral/down choice} ,
+$$
+
+
+
+$$
+I_{RewCont}={1 for contralateral/up−large reward blocks ,−1foripsilateral/down−largerewardblocks},
+$$
+
+
+
+$$
+I_{RewSize}={1 if a large reward is expected for the choice,  −1  if a small reward is expected},
+$$
+
+
+
+$$
+I_{Coh−Contra}={coherence for contralateral/up choice,  0 for ipsilateral/down choice},
+$$
+
+and
+
+$$
+I_{Coh−Ipsi}={0 for contralateral/up choice, coherence for ipsilateral/down choice}.
+$$
 
 Significance of non-zero coefficients was assessed using t-test (criterion: p=0.05).
 
 Second, for each single unit, we also performed running regressions using Equation 2 on the spike counts within 150 ms windows every 10 ms. These running regressions were performed on activity aligned to target, motion, and saccade onsets separately. Only correct trials were included. Time windows with fewer than 10 correct trials were excluded.
 
-Third, for these neurons, the following multiple linear regressions was performed in epochs and running windows defined above:(3)Spike count=β0+βChoice×IChoice+βRewCont×IRewCont+βRewSize×IRewSize+ βRT−Contra×RTContra+ βRT−Ipsi×RTIpsi+ βRewRT−Contra×RTContra×IRewSize + βRewRT−Ipsi×RTIpsi×IRewSizewhereRTContra={RT for the contralaeteral/up choice,  0 for the ipsilateral/down choice},andRTIpsi={0 for the ipsilateral/down choice,  RT for the contralateral/up choice}.
+Third, for these neurons, the following multiple linear regressions was performed in epochs and running windows defined above:
+
+$$
+Spike count=\beta_{0}+\beta_{Choice}\timesI_{Choice}+\beta_{RewCont}\timesI_{RewCont}+\beta_{RewSize}\timesI_{RewSize}+ \beta_{RT−Contra}\timesRT_{Contra}+ \beta_{RT−Ipsi}\timesRT_{Ipsi}+ \beta_{RewRT−Contra}\timesRT_{Contra}\timesI_{RewSize} + \beta_{RewRT−Ipsi}\timesRT_{Ipsi}\timesI_{RewSize}
+$$
+
+where
+
+$$
+RT_{Contra}={RT for the contralaeteral/up choice,  0 for the ipsilateral/down choice},
+$$
+
+and
+
+$$
+RT_{Ipsi}={0 for the ipsilateral/down choice,  RT for the contralateral/up choice}.
+$$
 
 To control for reward context or choice-dependent modulation of RT, the RT values used in the regressions were the mean-subtracted values, with the mean values measured for the corresponding reward context-choice combinations. Significance of non-zero coefficients was assessed using t-test (criterion: p=0.05).
 
 Because reward context was alternated in blocks in our task, we examined whether the significant coefficients for reward context in these regressions were simply due to serial correlation of the reward context values (Elber-Dorozko and Loewenstein, 2018). To assess the potential effect of serial correlation on our results, we focused on the epoch-based regressions. For each neuron x epoch combination with a significant coefficient for reward context, we estimated the null distribution of the coefficient by performing 100 regressions using random, unmatched reward-context values. To obtain these unmatched values, we concatenated the reward-context values from all neurons and randomly picked a segment for each regression. We performed one-tailed comparisons between the null distributions and the coefficients obtained using real data and updated the p-values for the reward-context coefficient accordingly. To gain another perspective of the task-related modulation patterns in each population, we performed demixed principal component analysis on spike activity (Kobak et al., 2016), using the publicly available source code (https://github.com/machenslab/dPCA/tree/master/matlab). We focused on two epochs for activity aligned to motion and saccade onset, respectively (Figure 3—figure supplements 4–7) and used only correct trials for this analysis. To mitigate the unbalance inherent in our data set (e.g., there were fewer correct trials for low coherence or when the choice led to small reward; different coherence levels were used for the three monkeys), we used the four highest coherence levels for each session as equivalent conditions across monkeys/sessions.
 
-## Measuring the slope of change in firing rates
+### Measuring the slope of change in firing rates
 
 Only correct trials were included for this analysis. Spike trains were aligned to motion onset and grouped by coherence x reward context combinations. The average firing rates were computed for each combination, truncated at median RT for the combination, and convolved with a Gaussian kernel (σ = 20 ms). The slope of change was measured from 200 ms running windows (in 20 ms steps) of the smoothed firing rates for each combination, using a linear regression with time as the independent variable. For each running window, a multiple linear regression was performed, using coherence, reward context, and their interaction as the independent variable and the slopes of change as the dependent variable. Significance for individual regressors was assessed using t-test (criterion: p=0.05).
 
-## Splitting trials based on baseline activity before motion onset
+### Splitting trials based on baseline activity before motion onset
 
 This analysis was performed on neurons with significant reward-context modulation of average firing rates during epoch #3 (a 400 ms window before motion onset), as identified using the regression in Equation 3. For each neuron, trials were divided into two halves based on the average firing rate in epoch #3, separately for each reward context. This resulted in four combinations of trials: high/low firing rates and two reward contexts (Figure 8A). The ‘large modulation’ trials comprised of high-firing-rates trials in the neuron’s preferred reward context and low-firing-rates trials in the other context. Conversely, the ‘small modulation’ trials comprised of low-firing-rates trials in the neuron’s preferred reward context and high-firing-rates trials in the other context. If the neural activity is closely linked to the reward bias in relative bound heights, the trials with large modulation were expected to show a larger reward bias. These two types of trials were fitted by DDM separately and their estimated reward bias in relative bound heights were compared (Figure 8B and C).

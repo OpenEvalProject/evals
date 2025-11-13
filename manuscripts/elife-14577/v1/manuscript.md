@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.14577.001 The root cap has a fundamental role in sensing environmental cues as well as regulating root growth via altered meristem activity. Despite this well-established role in the control of developmental processes in roots, the root cap’s function in nutrition remains obscure. Here, we uncover its role in phosphate nutrition by targeted cellular inactivation or phosphate transport complementation in Arabidopsis , using a transactivation strategy with an innovative high-resolution real-time 33 P imaging technique. Remarkably, the diminutive size of the root cap cells at the root-to-soil exchange surface accounts for a significant amount of the total seedling phosphate uptake (approximately 20%). This level of Pi absorption is sufficient for shoot biomass production (up to a 180% gain in soil), as well as repression of Pi starvation-induced genes. These results extend our understanding of this important tissue from its previously described roles in environmental perception to novel functions in mineral nutrition and homeostasis control. DOI: http://dx.doi.org/10.7554/eLife.14577.001
+The root cap has a fundamental role in sensing environmental cues as well as regulating root growth via altered meristem activity. Despite this well-established role in the control of developmental processes in roots, the root cap’s function in nutrition remains obscure. Here, we uncover its role in phosphate nutrition by targeted cellular inactivation or phosphate transport complementation in Arabidopsis, using a transactivation strategy with an innovative high-resolution real-time 33P imaging technique. Remarkably, the diminutive size of the root cap cells at the root-to-soil exchange surface accounts for a significant amount of the total seedling phosphate uptake (approximately 20%). This level of Pi absorption is sufficient for shoot biomass production (up to a 180% gain in soil), as well as repression of Pi starvation-induced genes. These results extend our understanding of this important tissue from its previously described roles in environmental perception to novel functions in mineral nutrition and homeostasis control.
 
 ## Introduction
 
@@ -37,25 +37,25 @@ The uptake of phosphate (Pi), an essential plant macronutrient, relies on a fami
 
 ## Results
 
-## Functional elements of Pi uptake are localized within the root cap
+### Functional elements of Pi uptake are localized within the root cap
 
-PHT1;1 and PHT1;4, the two most important high-affinity phosphate transporters required for up to 75% of Pi uptake in
+PHT1;1 and PHT1;4, the two most important high-affinity phosphate transporters required for up to 75% of Pi uptake in Arabidopsis, are localized to the distal part of the root tip (Shin et al., 2004). Both transporters are observed in the root tip (primarily in the root cap), where they are expressed at the transcriptional and protein levels (Figure 1A) with PHF1, a crucial component facilitating PHT1 post-translational regulation and its targeting to the PM (Gonzalez et al., 2005; Bayle et al., 2011) (Figure 1A). The root tip surrounds and protects the meristem, while also acting as the initial contact point between the roots and soil. In order to visualize Pi in plants, pulses of radioactive tracer were applied by immersing the whole root system in 33Pi solution. When fed to plantlets, 33Pi accumulation was observed at the extremity of the root tip (Figure 1B), including the meristematic zone (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig1-v1.jpg)
 
-**Figure 1.:** (A) Reporter lines expressing transcriptional and translational fusions for the high affinity transporters expressed in the root (PHT1;1 and PHT1;4) are localized in the root cap, in addition to PHF1, a major post-translational regulator required for PHT1 targeting to the plasma membrane. Scale bars: 50 μm. (B) Accumulation of 33P in the root tip of Arabidopsis plantlets. Whole roots were immersed in 33P-enriched solution for 1 day. (C) Pi accumulation in the root tip is abolished by targeted ablation with 5FC in the Q0171>>FCY-UPP line. The short pulse of 33Pi applied to the WT and Q0171>>FCY-UPP lines was revealed by a live radioisotope microimaging system. Light transmission and 33P images are merged. 33P content is represented as color intensity. Scale bar: 100 μm.DOI: http://dx.doi.org/10.7554/eLife.14577.003
+**Figure 1.:** (A) Reporter lines expressing transcriptional and translational fusions for the high affinity transporters expressed in the root (PHT1;1 and PHT1;4) are localized in the root cap, in addition to PHF1, a major post-translational regulator required for PHT1 targeting to the plasma membrane. Scale bars: 50 μm. (B) Accumulation of 33P in the root tip of Arabidopsis plantlets. Whole roots were immersed in 33P-enriched solution for 1 day. (C) Pi accumulation in the root tip is abolished by targeted ablation with 5FC in the Q0171>>FCY-UPP line. The short pulse of 33Pi applied to the WT and Q0171>>FCY-UPP lines was revealed by a live radioisotope microimaging system. Light transmission and 33P images are merged. 33P content is represented as color intensity. Scale bar: 100 μm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) 33P (200 kBq) was initially applied to the middle of the root in a zone isolated from the medium by Vaseline. (B) The presence of 33P in the root tip is observed 30 min later by the live radioisotope microimaging system. Presented image is a magnified view of the box in (A). Scale bar: 200 μm.DOI: http://dx.doi.org/10.7554/eLife.14577.004
+**Figure 1—figure supplement 1.:** (A) 33P (200 kBq) was initially applied to the middle of the root in a zone isolated from the medium by Vaseline. (B) The presence of 33P in the root tip is observed 30 min later by the live radioisotope microimaging system. Presented image is a magnified view of the box in (A). Scale bar: 200 μm.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Enzymatic transformation of 5-Fluorocytosine (5-FC) into toxic 5-Fluoro-UMP by FCY and UPP enzymes. (B) Transactivation system used to express a conditional negative marker in the root cap. The Q0171 transgenic line contains a GAL4 activator gene (in T-DNA) driven by a minimal promoter (enhancer trap), which is transactivated in the root cap by a cell layer-specific gene X (black arrow). After crossing with a line containing the conditional ablation marker FCY-UPP driven by UAS, GAL4 binds to the UAS sequence, activating transcription of the GFP reporter gene as well as FCY-UPP (red arrows). (C) Effect of 5FC (3.8 mM) on GFP expression in the transgenic Q0171>>FCY-UPP line. The line contains a transactivating GFP marker (green) and an FCY-UPP fusion in the root cap. 5FC treatment abolishes expression of genes in the root cap (as visualized by a strong reduction in GFP signal) while keeping cells alive (as visualized by the absence of PI staining in the nuclei). The heat shock treatment control promotes cell death (visualized as PI nuclear staining). Images are focused on the surface of the lateral root cap. Magnifications of the images are shown in the inserts. Red: PI, green: GFP. Scale bars: 100 μm.DOI: http://dx.doi.org/10.7554/eLife.14577.005
+**Figure 1—figure supplement 2.:** (A) Enzymatic transformation of 5-Fluorocytosine (5-FC) into toxic 5-Fluoro-UMP by FCY and UPP enzymes. (B) Transactivation system used to express a conditional negative marker in the root cap. The Q0171 transgenic line contains a GAL4 activator gene (in T-DNA) driven by a minimal promoter (enhancer trap), which is transactivated in the root cap by a cell layer-specific gene X (black arrow). After crossing with a line containing the conditional ablation marker FCY-UPP driven by UAS, GAL4 binds to the UAS sequence, activating transcription of the GFP reporter gene as well as FCY-UPP (red arrows). (C) Effect of 5FC (3.8 mM) on GFP expression in the transgenic Q0171>>FCY-UPP line. The line contains a transactivating GFP marker (green) and an FCY-UPP fusion in the root cap. 5FC treatment abolishes expression of genes in the root cap (as visualized by a strong reduction in GFP signal) while keeping cells alive (as visualized by the absence of PI staining in the nuclei). The heat shock treatment control promotes cell death (visualized as PI nuclear staining). Images are focused on the surface of the lateral root cap. Magnifications of the images are shown in the inserts. Red: PI, green: GFP. Scale bars: 100 μm.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** Plantlet phenotypes are shown after the 4-day transfer to 5FC or DMSO (control). Arrows indicate the tips of primary roots at the beginning (blue) and end (black) of the respective treatment. Primary root growth is shown at the beginning (Day 0) and after 2 and 4 days of treatment. DMSO, a solvent of 5FC, was used as the control treatment. Values are means ± SD of 15 plantlets.DOI: http://dx.doi.org/10.7554/eLife.14577.006
+**Figure 1—figure supplement 3.:** Plantlet phenotypes are shown after the 4-day transfer to 5FC or DMSO (control). Arrows indicate the tips of primary roots at the beginning (blue) and end (black) of the respective treatment. Primary root growth is shown at the beginning (Day 0) and after 2 and 4 days of treatment. DMSO, a solvent of 5FC, was used as the control treatment. Values are means ± SD of 15 plantlets.
 
 Pi translocation absorbed by the whole root system contributes to the presence of Pi in the root tip, as revealed by the accumulation of radiotracer in the root tip within 30 min of 33Pi application to the middle of the root system (Figure 1—figure supplement 1). Consequently, we chose genetic approaches to decipher the role of the root tip in Pi uptake, since the small size of this tissue prevented application of 33Pi at the root tip in a precise or exclusive manner.
 
@@ -65,65 +65,98 @@ Pi absorption was visualized using a real-time radioisotope imaging system devel
 
 Nevertheless, this FCY-UPP-based system cannot be used to quantify the physiological effect of root cap ablation on Pi status, since arrested root growth was observed within 2 days of 5FC treatment. This alters the root architecture and prevents any precise quantitative comparison with the WT control (Figure 1—figure supplement 3).
 
-## Quantification of Pi uptake by the root cap
+### Quantification of Pi uptake by the root cap
 
-As stated above, the high redundancy of Pi transporters poses technical difficulties to investigating their roles in a selected tissue. We used a PHF1 mutant (
+As stated above, the high redundancy of Pi transporters poses technical difficulties to investigating their roles in a selected tissue. We used a PHF1 mutant (phf1-1) to circumvent this obstacle, as this mutation strongly reduces PHT1 accumulation in the PM, resulting in a 70–80% reduction in Pi uptake (Bayle et al., 2011; Gonzalez et al., 2005). Consequently, the phf1-1 mutant exhibits phosphate starvation traits in Pi-rich medium, although its growth is only slightly reduced. This offers an appropriate genetic tool for targeted PHF1 complementation to restore Pi uptake in specific tissues. Using the same GAL4/UAS system described above, we back-crossed the GAL4 enhancer trap driving expression in the root cap (line Q0171) in a phf1-1 background. The specific complementation of the root cap was obtained by introducing the UAS-PHF1 construct, producing the phf1 Q0171>>PHF1 line. The proper targeting of Pi transporters to the PM in the root tip of resulting plants was confirmed by introducing the fluorescent marker mCherry fused to the PHT1;4 gene driven by the constitutive 35S promoter. This produced a strong fluorescent signal in the columella and lateral root cap, where the GFP marker driven by GAL4/UAS was also observed (Figure 2A). The proper targeting of the PHT1;4-mCherry fusion protein was validated by its colocalization with the PM-specific FM4-64 dye (Figure 2—figure supplement 1A,B). This confirms that an effective restoration of PHT1 targeting in the root cap PM has taken place in the phf1 Q0171>>PHF1 line (Figure 2—figure supplement 1A,C). A very low, diffuse fluorescence signal could also be detected in other tissues (Figure 2—figure supplement 1C), corresponding to a previously reported low level of ER-retained protein in the phf1-1 mutant (Gonzalez et al., 2005; Bayle et al., 2011). The root cap specificity of the phf1 Q0171>>PHF1 complementation therefore provides a unique opportunity to investigate the effect of localized Pi uptake in the root cap with physiological studies.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig2-v1.jpg)
 
-**Figure 2.:** phf1-1 mutant in the phf1 QO171>>PHF1 line.(A) Accumulation of PHT1;4 in the plasma membrane (red; 35S:PHT1;4-mCherry) correlates with PHF1 complementation in cells expressing GFP. Scale bars: 50 μm. Lower panels display magnified views of the mCherry image in the columella (CC) and lateral root cap (LC) cells. (B) Visualization of 33P absorption (blue) by real-time imaging. The image displays a time course during a 10 min period. (C) Quantification of radioactivity (200 kBq application) in the root apex (0.2 mm from the tip). Values are means ± SD. 3 root tips were analyzed. (D) Quantification of 33P along the root after 1 min. Measurements were taken from the tip to a distance of 1.8 mm at 0.2 mm intervals. A representative graph is shown. The experiment was performed eight times giving the same trend.DOI: http://dx.doi.org/10.7554/eLife.14577.007
+**Figure 2.:** (A) Accumulation of PHT1;4 in the plasma membrane (red; 35S:PHT1;4-mCherry) correlates with PHF1 complementation in cells expressing GFP. Scale bars: 50 μm. Lower panels display magnified views of the mCherry image in the columella (CC) and lateral root cap (LC) cells. (B) Visualization of 33P absorption (blue) by real-time imaging. The image displays a time course during a 10 min period. (C) Quantification of radioactivity (200 kBq application) in the root apex (0.2 mm from the tip). Values are means ± SD. 3 root tips were analyzed. (D) Quantification of 33P along the root after 1 min. Measurements were taken from the tip to a distance of 1.8 mm at 0.2 mm intervals. A representative graph is shown. The experiment was performed eight times giving the same trend.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** phf1 Q0171>>PHF1 line.(A) Images of lateral root cap cells. For arrow, see (B). (B) Intensity profile of FM4-64 and mCherry fluorescence signals along the white arrow indicated in (A). (C) Images of a root epidermis cell. Yellow: FM4-64, red: mCherry. Scale bar: 5 µm.DOI: http://dx.doi.org/10.7554/eLife.14577.008
+**Figure 2—figure supplement 1.:** (A) Images of lateral root cap cells. For arrow, see (B). (B) Intensity profile of FM4-64 and mCherry fluorescence signals along the white arrow indicated in (A). (C) Images of a root epidermis cell. Yellow: FM4-64, red: mCherry. Scale bar: 5 µm.
 
 Visualization (Figure 2B) and quantification (Figure 2C) of Pi absorption at the root apex of the phf1Q0171>>PHF1, phf1-1 and WT lines were performed by real-time imaging. Our time course experiment revealed rapid Pi absorption after only 1 min following 33P addition (Figure 2B). We observed full restoration of Pi absorption at the phf1Q0171>>PHF1 root tip similar to the WT level, whereas no labeling was detected in the phf1-1 mutant during the same time period (Figure 2B,C), demonstrating the successful functional complementation of Pi uptake activity.
 
 Real-time quantification of 33P uptake revealed a significant role for the root tip in Pi absorption as compared to the mature zone of the WT root (Figure 2D). WT plants exhibited a very low level of radiotracer (Figure 2D) in the region between these two parts of the root (corresponding to the elongation and differentiation zones; approximately 500–900 µm from the apex), indicating poor Pi absorption activity. Root labeling occurs in the differentiated zone (≥1.2 mm from the root tip) as a result of uptake through the epidermis. The signal present in the WT was impaired in both phf1-1 and phf1Q0171>>PHF1 (Figure 2D). This confirms the specificity of the root cap complementation in phf1Q0171>>PHF1, since the 33P quantification only describes a specific enrichment in the phf1Q0171>>PHF1 root tip (Figure 2D). Similarly, in the WT, the accumulation of P33 was high in the root tip.
 
-## Pi uptake via the root cap alters plant physiology
+### Pi uptake via the root cap alters plant physiology
 
-## Contribution to plant growth
+#### Contribution to plant growth
 
 Reduced growth in the aerial parts is a well-known consequence of Pi starvation. This feature is conserved in the phf1-1 mutant (Gonzalez et al., 2005) even in Pi-rich medium, in agreement with the low Pi-status of these plants. By contrast, the root architectures of phf1-1 (Thibaud et al., 2010) and the WT were similar in Pi-rich medium, confirming that root growth responds to external Pi (Svistoonoff et al., 2007; Peret et al., 2011). This facilitates analyses between the phf1-1 mutant, the complemented line and the WT control at the whole plant level. Free Pi measured in roots or leaves of the complemented line was similar to the phf1-1 mutant, indicating full metabolization of the excess absorbed Pi (Figure 3—figure supplement 1, Figure 3—figure supplement 1—source data 1).
 
-In addition to the
+In addition to the phf1Q0171>>PHF1 line (in which complementation only takes place in the lateral root cap and columella), two other complemented lines were examined (Figure 3A). Complementation in the columella and the epidermal initial cells was possible with the phf1J1092>>PHF1 line, whereas phf1J0481>>PHF1 allowed PHF1 expression in all external root layers (i.e. the cap and epidermis). As expected, the phf1J0481>>PHF1 line fully restored Pi uptake to a level similar to that of the WT. By contrast, Pi uptake in phf1Q0171>>PHF1 and phf1J1092>>PHF1 restored 20% of the difference in Pi uptake between the WT control and the phf1-1 mutant (Figure 3B, Figure 3B—source data 1). It is likely that this value slightly underestimates the root cap’s contribution to Pi uptake, as the phf1-1 mutant probably displays residual activity in this tissue.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig3-v1.jpg)
 
-**Figure 3.:** (A) GFP expression pattern (green) labels root tissues (root tip and mature zone) where PHF1 complementation occurs in three different transgenic lines. Scale bars: 100 μm. (B) Quantification of Pi uptake after transfer of plantlets to +P medium for 3 d in the presence of 33Pi. Values are means ± SD. 10 plantlets were analyzed individually. Significantly different from phf1-1: P<0.0001 (Student’s t-test). (C) Rosette biomass. Plants were grown in -P and transferred to +P medium for 4 d. Values are means ± SD of 23 to 24 individually weighed rosettes. Significantly different from phf1-1: *P=0.008; **P=0.004; ***P<0.001 (Student’s t-test). (D) Expression level of Pi starvation markers after a 3-day transfer to +P medium relative to low Pi. Results are normalized to phf1-1 values according to Figure 3—figure supplement 3.DOI: http://dx.doi.org/10.7554/eLife.14577.00910.7554/eLife.14577.010Figure 3—source data 1.(B) Effect of tissue-specific PHF1 complementation on plant physiology. Quantification of Pi uptake after transfer of plantlets to +P medium for 3 d in the presence of 33Pi. (C) >Effect of tissue-specific PHF1 complementation on plant physiology. Rosette biomass.DOI: http://dx.doi.org/10.7554/eLife.14577.010
+**Figure 3.:** (A) GFP expression pattern (green) labels root tissues (root tip and mature zone) where PHF1 complementation occurs in three different transgenic lines. Scale bars: 100 μm. (B) Quantification of Pi uptake after transfer of plantlets to +P medium for 3 d in the presence of 33Pi. Values are means ± SD. 10 plantlets were analyzed individually. Significantly different from phf1-1: P<0.0001 (Student’s t-test). (C) Rosette biomass. Plants were grown in -P and transferred to +P medium for 4 d. Values are means ± SD of 23 to 24 individually weighed rosettes. Significantly different from phf1-1: *P=0.008; **P=0.004; ***P<0.001 (Student’s t-test). (D) Expression level of Pi starvation markers after a 3-day transfer to +P medium relative to low Pi. Results are normalized to phf1-1 values according to Figure 3—figure supplement 3.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Quantification of free phosphate present in roots and leaves. Values are means ± SD of three independent experiments. Pools of 10 to 20 plant tissues were analyzed. Significantly different from phf1-1 line: *P=0.008 (Leaves), P=0.0009 (Roots) (Student’s t-test).DOI: http://dx.doi.org/10.7554/eLife.14577.01110.7554/eLife.14577.012Figure 3—figure supplement 1—source data 1.Quantification of free phosphate present in roots and leaves.DOI: http://dx.doi.org/10.7554/eLife.14577.012
+**Figure 3—figure supplement 1.:** Quantification of free phosphate present in roots and leaves. Values are means ± SD of three independent experiments. Pools of 10 to 20 plant tissues were analyzed. Significantly different from phf1-1 line: *P=0.008 (Leaves), P=0.0009 (Roots) (Student’s t-test).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Plants were grown in Pi-rich medium.DOI: http://dx.doi.org/10.7554/eLife.14577.013
+**Figure 3—figure supplement 2.:** Plants were grown in Pi-rich medium.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Expression levels (log2) in phf1 Q0171>>PHF1, phf1-1 and WT lines after 3 days in +P relative to -P for locally (A) or systemically (B) regulated genes. Values are means ± SD of 3 technical replicates.DOI: http://dx.doi.org/10.7554/eLife.14577.01410.7554/eLife.14577.015Figure 3—figure supplement 3—source data 1.(A) Effect of PHF1 complementation on locally-regulated gene expression. (B) Effect of PHF1 complementation on systemically-regulated gene expression.DOI: http://dx.doi.org/10.7554/eLife.14577.015
+**Figure 3—figure supplement 3.:** Expression levels (log2) in phf1 Q0171>>PHF1, phf1-1 and WT lines after 3 days in +P relative to -P for locally (A) or systemically (B) regulated genes. Values are means ± SD of 3 technical replicates.
 
 The effect of the increase in Pi absorption on biomass was also investigated. Rosette weight of in vitro plantlets was increased in all three complemented lines (as compared to the phf1-1 mutant, Figure 3C, Figure 3C—source data 1) after transfer from Pi-depleted to Pi-rich medium during 4 days. The root cap complementation restored 40% of the growth (phf1Q0171>>PHF1 and phf1J1092>>PHF1 lines) and in agreement with the full restoration of Pi uptake similar to the WT control, the phf1J0481>>PHF1 line does not present any growth defects.
 
-To investigate the long term effect of the root cap complementation, we first grew plants on sand (hydroponically with 10 µM Pi supply) for 3 to 4 weeks; the experiment was terminated at the appearance of the first stem. The rosette biomass of the phf1Q0171>>PHF1 line (in which complementation was restricted to the root tip) exhibited a significant 80% increase in rosette biomass, as compared to the phf1-1 mutant (Table 1, Table 1—source data 1). Then, we investigated the growth of plants on soil exhibiting poor P content (less than 0.1% total P). A nutrient solution specifically depleted of Pi was used to water the samples every day. We observed a significant difference after 6 weeks of development, despite the high variability associated with this kind of experiment (as a result of heterogeneous soil composition). In this case, the gain in biomass of the root cap-complemented line turned out to be even higher, reaching 180% (Table 1) when compared to the phf1-1 mutant. The hydroponics and soil experiments were replicated several times, confirming the significant contribution of Pi uptake through the root tip to plant development.10.7554/eLife.14577.016Table 1.Rosette biomass during long-term experiments. Plants were grown on soil or hydroponically in sand.DOI: http://dx.doi.org/10.7554/eLife.14577.01610.7554/eLife.14577.017Table 1—source data 1.Rosette biomass during long-term experiments.DOI: http://dx.doi.org/10.7554/eLife.14577.017FW (mg)On soilHydroponically on sandphf1-13.07 ± 2.233.04 ± 0.70phf1 Q0171>>PHF18.66 ± 4.09*5.53 ± 1.56*WT41.17 ± 24.76*11.04 ± 2.63*FW: fresh weight. Values are mean ± SD. Comparison to phf1-1 line: *P ≤ 0.0009 (Student’s t-test). 10 to 23 rosettes were individually weighed.
+To investigate the long term effect of the root cap complementation, we first grew plants on sand (hydroponically with 10 µM Pi supply) for 3 to 4 weeks; the experiment was terminated at the appearance of the first stem. The rosette biomass of the phf1Q0171>>PHF1 line (in which complementation was restricted to the root tip) exhibited a significant 80% increase in rosette biomass, as compared to the phf1-1 mutant (Table 1, Table 1—source data 1). Then, we investigated the growth of plants on soil exhibiting poor P content (less than 0.1% total P). A nutrient solution specifically depleted of Pi was used to water the samples every day. We observed a significant difference after 6 weeks of development, despite the high variability associated with this kind of experiment (as a result of heterogeneous soil composition). In this case, the gain in biomass of the root cap-complemented line turned out to be even higher, reaching 180% (Table 1) when compared to the phf1-1 mutant. The hydroponics and soil experiments were replicated several times, confirming the significant contribution of Pi uptake through the root tip to plant development.
 
-## Contribution to Pi sensing
+**Table 1.**
+ Rosette biomass during long-term experiments. Plants were grown on soil or hydroponically in sand.Table 1—source data 1.Rosette biomass during long-term experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>FW (mg)</th>
+      <th>On soil</th>
+      <th>Hydroponically on sand</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>phf1-1</td>
+      <td>3.07 ± 2.23</td>
+      <td>3.04 ± 0.70</td>
+    </tr>
+    <tr>
+      <td>phf1 Q0171&gt;&gt;PHF1</td>
+      <td>8.66 ± 4.09*</td>
+      <td>5.53 ± 1.56*</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>41.17 ± 24.76*</td>
+      <td>11.04 ± 2.63*</td>
+    </tr>
+  </tbody>
+</table>
+
+_FW: fresh weight. Values are mean ± SD. Comparison to phf1-1 line: *P ≤ 0.0009 (Student’s t-test). 10 to 23 rosettes were individually weighed._
+
+### Contribution to Pi sensing
 
 Previous experiments have revealed that Pi starvation drives major transcriptional regulation in the plant genome (Thibaud et al., 2010). PHT1;4 is a well-established marker, and is highly induced under Pi deficiency (Muchhal et al., 1996; Misson et al., 2004). To determine its contribution to Pi sensing, we used a translational fusion construct comprising a GUS reporter gene associated with endogenous PHT1;4 (Misson et al., 2004). This marker was present in a previously isolated phf1-2 mutant background, and was introduced into diverse enhancer lines (Figure 3—figure supplement 2). As a consequence, the complemented lines (phf1J1092>>PHF1, phf1Q0171>>PHF1 and phf1J0481>>PHF1) lost the strong induction of PHT1;4-GUS expression observed in the phf1-2 mutant when Pi is present in the growth medium. This complementation effect was confirmed at the molecular level by analyzing the expression of several Pi starvation markers previously identified in a whole-genome transcriptomic analysis (Thibaud et al., 2010). This approach differentiated systemic and locally responsive genes according to their respective response to internal Pi status or to available Pi present in the growth medium. Most of the markers regulated by external phosphate were not affected, and were observed to react identically in WT, phf1-1 and phf1Q0171>>PHF1 backgrounds (Figure 3—figure supplement 3A, Figure 3—figure supplement 3A—source data 1). Analysis of the systemically regulated Pi starvation-induced genes revealed a different situation, in which a general repression of these markers occurred after transfer of the WT and phf1Q0171>>PHF1 lines into Pi-rich medium after 2 days (results not shown) or 3 days (Figure 3D and Figure 3—figure supplement 3B, Figure 3—figure supplement 3B—source data 1). As previously reported (Gonzalez et al., 2005), these systemic markers are strongly induced when the phf1-1 mutant line is grown in high Pi (Figure 3D and Figure 3—figure supplement 3B), whereas these genes are repressed in the WT. This confirms the result obtained with the GUS reporter gene fused with the systemically regulated PHT1;4 (Figure 3—figure supplement 2). The repression of the systemically regulated genes was partially rescued in the root cap PHF1-complemented line. This repression was equivalent to half the repression observed in the WT. This is not proportional to the additional Pi uptake related to root cap complementation (at least 20%), confirming the existence of a non-proportional relationship between Pi uptake, growth and systemic regulation.
 
-## Occurrence of root cap Pi absorption in other plant species
+### Occurrence of root cap Pi absorption in other plant species
 
-In order to investigate whether a significant role for the root cap in Pi import also exists outside of
+In order to investigate whether a significant role for the root cap in Pi import also exists outside of Arabidopsis, we finally examined two very different plants: a monocot (rice) and the wild legume Lotus japonicus (Fabaceae). Clear labeling of the root cap was observed in these specimens by applying the aforementioned protocol consisting of a short pulse of 33P radiotracer (Figure 4 and Figure 4—figure supplement 1). The migration of Pi is clearly visible in both plants beginning at the extremity of the root tip (1 min labeling) and moving gradually toward the differentiated tissues of the root (after 3 and 5 min in rice and lotus; Figure 4A and Figure 4—figure supplement 1 respectively). The quantification of 33P after 1 min (Figure 4B and Figure 4—figure supplement 1) indicates that Pi uptake takes place in the root cap, as in Arabidopsis. These results provide evidence that Pi uptake at the root tip is a feature shared by several disparate plant species.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig4-v1.jpg)
 
-**Figure 4.:** 33P uptake at the root tip in Oryza sativa.(A) Time course of 33P uptake (200 kBq application). (B) Quantification of 33P (after 1 min absorption) along the root in 0.2 mm intervals, extending 2 mm from the tip. Values are means ± SD of 4 plantlets. Scale bar: 0.5 mm. 33P level is represented as color intensity.DOI: http://dx.doi.org/10.7554/eLife.14577.018
+**Figure 4.:** (A) Time course of 33P uptake (200 kBq application). (B) Quantification of 33P (after 1 min absorption) along the root in 0.2 mm intervals, extending 2 mm from the tip. Values are means ± SD of 4 plantlets. Scale bar: 0.5 mm. 33P level is represented as color intensity.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/14577/elife-14577-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** 33P uptake at the Lotus japonicus root tip.(A) Time course of 33P uptake (200 kBq application). (B) Quantification of 33P (after 1 min absorption) along the root in 0.2 mm intervals, extending 2 mm from the tip. Values are means ± SD of 4 plantlets. Scale bar: 0.5 mm. 33P level is shown as color intensity.DOI: http://dx.doi.org/10.7554/eLife.14577.019
+**Figure 4—figure supplement 1.:** (A) Time course of 33P uptake (200 kBq application). (B) Quantification of 33P (after 1 min absorption) along the root in 0.2 mm intervals, extending 2 mm from the tip. Values are means ± SD of 4 plantlets. Scale bar: 0.5 mm. 33P level is shown as color intensity.
 
 ## Discussion
 
@@ -153,13 +186,13 @@ Charles Darwin characterized the root tip as a plant brain, based on its role in
 
 ## Materials and methods
 
-## Plant growth
+### Plant growth
 
 Surface-sterilized seeds were sown in vitro on square Petri plates containing modified Murashige and Skoog medium diluted 10x (MS/10) (from Arnaud et al., 2014), supplemented with 2 μM iron and phosphate (0 or 500 μM NaH2PO4 for low-Pi (-P) orhigh-Pi (+P) respectively). Low-phosphate medium containing 13 μM Pi (Pi present in the agar) was supplemented with NaCl to maintain Na concentration at 500 μM. Plantlets were grown vertically in a growth chamber under a 16 hr photoperiod at 23°C:21°C (light:dark). Growth conditions are described in further detail for each experiment. Rice (Oryza sativa var. Nipponbare) and Lotus japonicus (var. MG-20) seeds were surface-sterilized then germinated in distilled water for 3 d. Seedlings were then grown hydroponically on -P medium for 10 days. Seedlings were grown in a growth chamber under a 16 hr photoperiod at 28°C for rice and 23°C for Lotus japonicus.
 
 Nine-day-old in vitro Arabidopsis plantlets (in +P) were transferred to washed sand distributed in pots (12 to 24 plants per genotype). The nutrient solution (MS/10 supplemented with 10 μM Pi) was replaced every 3 to 4 days. The cambisol surface layer (0–30 cm) was air-dried, gently ground, and sieved (<2 mm) for experiments with soil. The composition of this loamy soil (36.2% silt, 16.5% clay, and 47.2% sand) was determined according to normalized methods (Soil Analyze laboratory ARRAS, NF EN ISO/CEI 17025: 2005, INRA, France) to contain (in mg. g-1 DW): organic C: 25.4, N: 2.14, P: 0.89, Ca: 7.68, K: 9.75, Na: 4.96, Fe: 24, and Si: 348, with a pH (water) of 6.9. The soil was mixed with fine sand (1 part sand:2 parts soil, w/w) and distributed in pots. Nutrient solution (MS/10 without Pi) was provided every day by immersion (20 min). Seeds were sown on the soil surface, and 24 to 30 plantlets per genotype were kept after 10 days.
 
-## Biomass production, Pi uptake and free Pi measurement
+### Biomass production, Pi uptake and free Pi measurement
 
 Plants were grown on Pi-depleted medium for 7 days and then transferred to +P medium for 4 days. All experiments were performed in triplicate. Ten rosettes were individually weighed for biomass determination.
 
@@ -169,7 +202,7 @@ Pi uptake in the whole plant was measured after transfer for 3 days to +P medium
 
 Free Pi in roots and leaves was measured after transferring plants from -P (7 days) to +P for 4 days. Pools of 10 to 20 plants were analyzed in triplicate. Frozen material was homogenized in a grinder (Mixer Mill MM400, Retsch; Germany), resuspended and homogenized in MES buffer (0.17 M, pH 5.8, 10 μL per mg of fresh weight). After centrifugation, the supernatants were analyzed in a 96-well plate and triplicates of 5 – 20 μL subsamples were diluted into a final volume of 145 μL. Phosphate content was then measured using a Malachite green protocol (Misson et al., 2004) that was modified such that 30 μL of each reagent were added, and measurements were performed at 595 nm with a microplate reader (Biorad, Model 3550; USA). Phosphate concentrations were calculated using a calibration curve (performed with a KH2PO4 solution) and were expressed per root or rosette fresh weight.
 
-## DNA construct and transgenic material
+### DNA construct and transgenic material
 
 An amplified product (see Supplementary file 1A for oligonucleotides) containing the PHT1;4 promoter (2.6 kb upstream of the start codon) along with the UTR and genomic sequence was cloned into the pENTR/D-TOPO vector using a pENTR directional TOPO cloning kit (Invitrogen; USA). The cloned fragment was then transferred into the Gateway vector pGWB4 (Nakagawa et al., 2007) to create a translational fusion with sGFP. Homozygous lines (in a WS ecotype background) were selected and designated as PHT1;4-GFP lines.
 
@@ -183,15 +216,15 @@ FCY1 (from S. cerevisiae) and UPP (from E. coli) were amplified by PCR (see Tabl
 
 All plant transformants were generated by the floral dip method as previously described (Clough and Bent, 1998), following introduction of the construct into Agrobacterium tumefaciens.
 
-## Whole-plant autoradiography
+### Whole-plant autoradiography
 
 To visualize 33P absorption, 7-day-old Arabidopsis seedlings grown in high-phosphate medium were incubated for 1 day in liquid medium supplemented with 33P (400 Bq/mL) and exposed against an imaging plate (Fujifilm; Japan) for 4 days at -80°C. Radioluminographic images of the seedlings were then scanned using the FLA-5000 imaging analyzer (Fujifilm; Japan) and analyzed using Image Gauge v4.0 (Fujifilm; Japan).
 
-## Imaging 33P allocation in roots
+### Imaging 33P allocation in roots
 
 Plants were grown in +P medium for 7 days. The middle of the root was isolated from the medium with Vaseline and a 10-µl drop of 33Pi solution (1 µM Pi, including 200 kBq 33P) was applied for 30 min. 33P signal in the root was detected using the Micro Real-time Radio Imaging system (Kanno et al., 2012) with an EMCCD camera iXon3 888 (Andor; USA).
 
-## Real-time imaging of phosphate uptake
+### Real-time imaging of phosphate uptake
 
 Seven-day-old plantlets grown in -P medium were transferred to glass slides covered with 0.1% agar, containing 1 µM Pi solution supplemented with 33P (200 kBq/10 µL). Real-time imaging of 33P uptake was performed using the Imaging System as described above. Images were acquired after 1 to 10 min, and radioactive signal was quantified using the AQUACOSMOS software (Hamamatsu Photonics; Japan) on a selected root tip zone (0.2 mm).
 
@@ -199,15 +232,15 @@ A separate labeling procedure was used to quantify a broader part of the root (2
 
 To analyze Pi uptake in plantlets treated with 5FC, seedlings were grown for 3 days on +P and transferred for one day to +P medium containing 3.87 mM 5FC or DMSO (as a control). Subsequently, samples were transferred to -P medium containing 5FC or DMSO for 3 days before imaging as described above.
 
-## Effect of 5-fluorocytosine treatment on root development
+### Effect of 5-fluorocytosine treatment on root development
 
 Q0171>>FCY-UPP plantlets were grown in +P medium and then treated with 3.87 mM 5FC or DMSO for 4 days. Images of the plates were taken when transferred, and after 2 and 4 days. Primary root length was quantified using the ImageJ software with the NeuronJ plugin (version 1.46r, http://imagej.nih.gov/ij).
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
 RNA extraction, purification, reverse transcription and qPCR analyses were performed as previously described (Thibaud et al., 2010). Primer efficiency factor was measured for each gene, and GapC1, ROC3 and AT1G32050 were used as reference genes. Primer sequences are provided in Supplementary file 1B.
 
-## Reporter line staining and imaging
+### Reporter line staining and imaging
 
 GUS staining was performed as previously described (Misson et al., 2004) on plants grown for 10 days in -P medium supplied with 2 μM FeCl2. For visualization, seedlings were either placed in water and observed under a stereomicroscope (MZ16, Leica Microsystems; Germany) or between coverslips and photographed under the microscope (LMD6000, Leica Microsystems; Germany).
 
@@ -221,6 +254,6 @@ Characterization of mGFP5 localization in the enhancer trap lines (phf1 QO171>>P
 
 Localization of the PHT1;4-mCherry fusion protein to the PM was analyzed in the phf1 QO171>>PHF1 background with 1 μg/mL FM4-64 for 5 min at room temperature (Interchim; France). Co-imaging of FM4-64 and mCherry was performed on a LSM780 confocal microscope in spectral mode (Ex: 561 nm, Em range: 563 – 696 nm). Linear unmixing was applied to separate mCherry and FM4-64 components, using reference spectra acquired separately and the Zen software (Zen 2012 SP1, version 8.1, Zeiss). Fluorescence intensity profiles were subsequently calculated (software: Zen 2012, version 1.1.2.0, Zeiss).
 
-## Statictical analysis
+### Statictical analysis
 
 All statistical analyses were performed with GraphPad prism 6 software (version 6.0f). Values were tested for normality (D’Agostino-Pearson omnibus normality test) and variance homogeneity (Brown-Forsythe and Bartlett’s tests). Unpaired t-test (Student’s test) was run to compare treatments.

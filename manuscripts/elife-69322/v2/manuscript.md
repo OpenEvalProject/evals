@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05cf8a891 Department of Genetics, Albert Einstein College of Medicine Bronx United States
-2. https://ror.org/05cf8a891 Department of Medical Oncology, Albert Einstein College of Medicine Bronx United States
-3. https://ror.org/05cf8a891 Department of Cell Biology, Albert Einstein College of Medicine Bronx United States
+1. Department of Genetics, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+2. Department of Medical Oncology, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
+3. Department of Cell Biology, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 
 † Corresponding author
 
 ## Abstract
 
-Ribosomal protein (Rp) gene haploinsufficiency can result in Diamond-Blackfan Anemia (DBA), characterized by defective erythropoiesis and skeletal defects. Some mouse Rp mutations recapitulate DBA phenotypes, although others lack erythropoietic or skeletal defects. We generated a conditional knockout mouse to partially delete Rps1 2. Homozygous Rps12 deletion resulted in embryonic lethality. Mice inheriting the Rps12 genotype had growth and morphological defects, pancytopenia, and impaired erythropoiesis. A striking reduction in hematopoietic stem cells (HSCs) and progenitors in the bone marrow (BM) was associated with decreased ability to repopulate the blood system after competitive and non-competitive BM transplantation. KO/+ Rps12 lost HSC quiescence, experienced ERK and MTOR activation, and increased global translation in HSC and progenitors. Post-natal heterozygous deletion of KO/+ Rps12 in hematopoietic cells using Tal1-Cre-ERT also resulted in pancytopenia with decreased HSC numbers. However, post-natal Cre-ERT induction led to reduced translation in HSCs and progenitors, suggesting that this is the most direct consequence of Rps12 haploinsufficiency in hematopoietic cells. Thus, RpS12 has a strong requirement in HSC function, in addition to erythropoiesis.
+Ribosomal protein (Rp) gene haploinsufficiency can result in Diamond-Blackfan Anemia (DBA), characterized by defective erythropoiesis and skeletal defects. Some mouse Rp mutations recapitulate DBA phenotypes, although others lack erythropoietic or skeletal defects. We generated a conditional knockout mouse to partially delete Rps12. Homozygous Rps12 deletion resulted in embryonic lethality. Mice inheriting the Rps12KO/+ genotype had growth and morphological defects, pancytopenia, and impaired erythropoiesis. A striking reduction in hematopoietic stem cells (HSCs) and progenitors in the bone marrow (BM) was associated with decreased ability to repopulate the blood system after competitive and non-competitive BM transplantation. Rps12KO/+ lost HSC quiescence, experienced ERK and MTOR activation, and increased global translation in HSC and progenitors. Post-natal heterozygous deletion of Rps12 in hematopoietic cells using Tal1-Cre-ERT also resulted in pancytopenia with decreased HSC numbers. However, post-natal Cre-ERT induction led to reduced translation in HSCs and progenitors, suggesting that this is the most direct consequence of Rps12 haploinsufficiency in hematopoietic cells. Thus, RpS12 has a strong requirement in HSC function, in addition to erythropoiesis.
 
 ## Introduction
 
@@ -40,73 +40,101 @@ To further explore the specific functions of Rp genes, their potential involveme
 
 ## Results
 
-## Rps12 haploinsufficiency results in a pleiotropic phenotype, including delayed growth and increased mortality
+### Rps12 haploinsufficiency results in a pleiotropic phenotype, including delayed growth and increased mortality
 
 To test the role of the Rps12 protein in a mammal, we used CRISPR gene editing to generate a mouse line with LoxP sites flanking exons 2 and 3 of the endogenous Rps12 locus (Rps12flox) (Figure 1—figure supplement 1). Excision of these two exons generates an allele that cannot produce functional RpS12 protein, since exon 2 contains the ATG translation initiation codon. We chose not to eliminate the entire Rps12 locus, to avoid deleting the small nucleolar RNA genes Snord100 and Snora33, which are located in introns 4 and 5, respectively (Figure 1—figure supplement 1). We crossed Rps12flox/flox mice to a line that expresses the Cre recombinase embryonically (EIIa-Cre) to obtain Rps12 heterozygous knock-out (KO) mice (Rps12KO/+) (Figure 1A). Unlike heterozygous null flies, which don’t have any observable phenotype (Marygold et al., 2007; Kale et al., 2018), Rps12KO/+ mice have reduced growth rates post-partum in comparison to their wild-type littermates (Figure 1B and C). Additional phenotypes include kinked tails, mild hyperpigmentation of the footpads, and an increased incidence of hydrocephalus (Figure 1D, E and F). Except for hydrocephalus, these phenotypes have also been found in some other Rp mutant mouse models (Oliver et al., 2004; McGowan et al., 2008; Terzian et al., 2011). Furthermore, Rps12KO/+ mice have increased mortality, especially in early post-natal stages, most of which is associated with hydrocephalus or the inability to gain weight (Figure 1G).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig1-v2.jpg)
+
+**Figure 1.:** (A) Conditional Rps12flox transgenic knock-in has two loxP sites flanking exons 2 and 3, that are removed by Cre-ERT recombinase activity to generate Rps12KO. (B) Post-natal growth curve of Rps12KO/+ and Rps12+/+ littermates (+/+ n=8 and KO/+ n=11 pups). (C) Picture of 5-day-old Rps12KO/+ and Rps12+/+ littermates. (D) Representative picture of ’kinked’ tail in Rps12KO/+ mouse. (E) Representative picture of the anterior footpad hyperpigmentation in Rps12KO/+. (F) Quantification of the percentage of mice presenting hydrocephalus per litter (n=27 litters, two-way ANOVA p=0.0035). (G) Kaplan-Meier survival curves of Rps12KO/+ and Rps12+/+ littermates starting at day 5 of age (+/+ n=39 and KO/+ n=60, log-rank Mantel-Cox test p=0.012). (H) Embryo genotype segregation from crosses between Rps12KO/+ male and female. Graph represents the percentage of developed embryos and the table shows the total numbers (E%=expected percentages, E#=expected numbers, O=observed numbers). (I) Representative pictures of E13.5 embryos with their placentas. (J) E13.5 embryo weights (n=10 on each genotype, unpaired t-test p=0.0420). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Diagram of the WT, Flox, and KO alleles of Rps12 generated in this study indicating the position of Snord100 and Snora33 (snoRNA),Cas9 gRNAs target locations, and primers used for genotyping. The homology arms starting sites are indicated and the ends fall outside of the Rps12 locus. To identify the first transformants, two pair of primers were used for PCR amplification: F2/R2 and F3/R3. F2 and R3 fall outside of the sequence covered by the homology arms, to ensure the inserts are on the correct location. The presence of LoxP sites was confirmed by Sanger sequencing using primers F1 and F4 for F2/R2 fragments, and with F3 and R3 for F3/R3 fragments. To determine excision of exons 2 and 3 by Cre-ERT recombination primers F1 and R1 were used, which generate a 900 bp fragment in Rps12+ and a 300 bp fragment in RpS12KO (B).
+
 To investigate if the KO allele of Rps12 is lethal in the homozygous state, and whether Rps12KO/+ animals have reduced growth during embryonic development, we crossed heterozygous Rps12KO/+ male and female mice and analyzed the resulting embryos at stage E13.5 (we could not assess frequencies in pups at birth because Rps12KO/+ females invariably died during labor). There were no Rps12KO/KO specimens among the embryos obtained (Figure 1H), which led us to conclude that this genotype must be lethal prior to stage E13.5. Furthermore, Rps12KO/+ embryos were smaller in size compared to their wildtype counterparts (Figure 1I and J). Therefore, these results indicate that Rps12 is an essential gene, whose homozygous loss leads to early embryonic lethality, and heterozygous loss causes reduced growth starting in embryogenesis, in addition to other defects recognized post-partum.
 
-## Heterozygous loss of Rps12 results in erythropoiesis defects that worsen with age
+### Heterozygous loss of Rps12 results in erythropoiesis defects that worsen with age
 
 We sought to understand if, similar to other Rp mutant mouse models, Rps12 heterozygous mutants have anemia or defective erythropoiesis. Analysis of peripheral blood counts showed that ‘young’ (6–8 weeks old) Rps12KO/+ mice had a lower number of white blood cells (WBC), red blood cells (RBC), and platelets, a condition known as pancytopenia (Figure 2A). We also observed a high mean corpuscular volume (MCV), which is reminiscent of the macrocytic anemia seen in DBA patients.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig2-v2.jpg)
 
-**Figure 2.:** Rps12 results in erythropoiesis defects that worsen with age.(A) Quantification of peripheral blood counts from young (6–8 weeks) littermates (+/+ n=10 and KO/+ n=13) (WBC=white blood cells, RBC=red blood cell, MCV=mean corpuscular volume). (B) Representative flow cytometry gating of bone marrow cells from 6- to 8-weeks-old mice of erythropoietic populations using Ter119 and CD71 markers. (C, D, E, F) Frequencies of erythroid progenitors in the bone marrow and spleen of young (6- to 7-weeks-old, +/+ n=4 and KO/+ n=4) and older (6- to 7-months-old, +/+ n=5 and KO/+ n=5) mice. (G) Total number of CFU-E and BFU-E colonies per plate (5 x 105 bone marrow (BM) cells plated) in methylcellulose media supplemented with EPO (M3434) from young mice (6- to 7-weeks-old, +/+ n=4 and KO/+ n=4, each biological sample had two replicates) and older mice (6- to 7-months-old, +/+ n=4, and KO/+ n=4, each biological sample had two replicates). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, when only two groups were being compared, unpaired t-test was performed, and for multiple comparisons one-way ANOVA analysis was used. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 2—source data 1.
+**Figure 2.:** (A) Quantification of peripheral blood counts from young (6–8 weeks) littermates (+/+ n=10 and KO/+ n=13) (WBC=white blood cells, RBC=red blood cell, MCV=mean corpuscular volume). (B) Representative flow cytometry gating of bone marrow cells from 6- to 8-weeks-old mice of erythropoietic populations using Ter119 and CD71 markers. (C, D, E, F) Frequencies of erythroid progenitors in the bone marrow and spleen of young (6- to 7-weeks-old, +/+ n=4 and KO/+ n=4) and older (6- to 7-months-old, +/+ n=5 and KO/+ n=5) mice. (G) Total number of CFU-E and BFU-E colonies per plate (5 x 105 bone marrow (BM) cells plated) in methylcellulose media supplemented with EPO (M3434) from young mice (6- to 7-weeks-old, +/+ n=4 and KO/+ n=4, each biological sample had two replicates) and older mice (6- to 7-months-old, +/+ n=4, and KO/+ n=4, each biological sample had two replicates). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, when only two groups were being compared, unpaired t-test was performed, and for multiple comparisons one-way ANOVA analysis was used. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To analyze erythropoiesis in Rps12KO/+ mice, we used flow cytometry with the lineage markers Ter119 and CD71 on bone marrow and spleen cells (Figure 2B). These populations represent different maturation stages of the red blood cell production process, which we refer to as RI (CD71+, Ter119−, proerythroblasts), RII (CD71+Ter119+, basophilic erythroblasts), RIII (CD71mid, Ter119+, late basophilic and polychromatophilic erythroblasts), and RIV (CD71-Ter119+, orthochromatic erythroblasts) (Socolovsky et al., 2001). Bone marrow samples from young Rps12KO/+ mice showed a defective transition between the RII and RIII stage cells, while the erythropoiesis in spleen populations was unchanged (Figure 2C and D). This impairment in erythropoiesis worsened with age, as samples from ‘older’ (6- to 7-month-old) Rps12KO/+ mice had a higher accumulation of RII and RIII stage cells, while RIV population numbers were decreased in both spleen and bone marrow samples at this age (Figure 2E and F). To assess erythropoietic progenitor function, we performed colony-forming unit (CFU) assays in methylcellulose media optimized for the differentiation of erythroid progenitors. Consistent with the observed impairment of erythropoiesis, Rps12KO/+ bone marrow cells generated fewer BFU-E colonies, indicating reduced erythroid progenitors (Figure 2G). Altogether, these results show that Rps12 is required for erythroid differentiation, and demonstrate a role for Rps12 in erythropoiesis, similar to what has been observed in mouse models of DBA genes like Rpl11, Rps19, and Rps14 (Jaako et al., 2011; Morgado-Palacin et al., 2015; Schneider et al., 2016).
 
-## Rps12KO/+ mice have a striking reduction in hematopoietic progenitor populations, resulting in chronic pancytopenia
+### Rps12KO/+ mice have a striking reduction in hematopoietic progenitor populations, resulting in chronic pancytopenia
 
 We were intrigued by the fact that Rps12KO/+ mice have pancytopenia (Figure 2A), since this is not a common feature of DBA patients. Due to the general decrease of peripheral blood cell numbers in Rps12KO/+ mice, we hypothesized that hematopoietic stem and progenitor cells (HSPCs) might be affected. Using flow cytometry analysis, we assessed the stem cell and progenitor populations in the bone marrow using previously defined markers (Pietras et al., 2015; Figure 3A). Indeed, compared to the controls, Rps12KO/+ revealed a striking reduction in the numbers of long-term HSCs (LT-HSCs: Flk2−CD48−CD150+ Lineage-Sca1+c-kit+ (LSK)) and short-term HSCs (ST-HSCs: Flk2−CD48−CD150−LSK) (Figure 3B). In addition, in Rps12KO/+ bone marrow, the numbers of all hematopoietic progenitor populations were significantly reduced (Figure 3C; Figure 3—figure supplement 1C). Accordingly, compared to the WT littermates, young (6- to 8-weeks-old) Rps12KO/+ mice had lower bone marrow cellularity, without obvious changes in the bone marrow architecture or dysplasia, and decreased spleen weights (Figure 3D and E, Figure 3—figure supplement 1A, B). Additionally, older (6- to 7-month-old) Rps12KO/+ mice also had lower HSC numbers and frequency (Figure 3F, Figure 3—figure supplement 1C and D). Interestingly, we observed a partial recovery of some of the HSPC populations with age, such as multi-potent progenitors (MPP) 2 and 3, and the granulocyte-macrophage progenitors (GMP), as well as normalized overall BM cellularity, but not of spleen size (Figure 3G, H and I, Figure 3—figure supplement 1D). This, however, did not lead to improved blood counts (Figure 3J), indicating that HSPC function was not significantly improved with age.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative gating strategy used to identify bone marrow populations of LSKs: long-term HSC (LT- HSC), short-term HSC (ST-HSC), multi-potent progenitors (MPP2, MPP3, MPP4), and myeloid progenitors (MPROG): common myeloid progenitor (CMP), granulocyte-monocyte progenitor (GMP), megakaryocyte-erythrocyte (MEP), and common lymphoid progenitor (CLP). (B) Total LT-HSCs and ST-HSCs per femur of young mice (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=3). (C) Total number of cells per femur of indicated hematopoietic progenitor populations in young mice (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=3). (D) Bone marrow cellularity is represented as cells per femur ×106 from young mice (6- to 7-weeks-old littermates, +/+ n=10, and KO/+ n=10). (E) Spleen weights of young (6- to 7-weeks-old, +/+ n=10, and KO/+ n=10) mice. (F) Total HSCs per femur of older mice (6- to 7-month-old, +/+ n=3, and KO/+ n=4). (G) Total number of cells per femur of indicated hematopoietic progenitor populations in older mice (6- to 7-month-old, +/+ n=3, and KO+ n=4). (H) Bone marrow cellularity is represented as cells per femur ×106 from older mice (older: 6- to 7-months-old, +/+ n=3, and KO/+ n=9). (I) Spleen weights of older (6- to 7-months-old, +/+ n=8, and KO/+ n=14) mice. (J) Quantification of peripheral blood counts from older mice (6- to 7 months old, +/+ n=8, and KO/+ n=11). (K) Total number of colonies per plate (1 × 104 bone marrow (BM) cells from 6- to 7-month-old mice plated in round 1 and 1 × 104 cells plated from the previous plate on each re-plating round) on each round of re-plating in complete methylcellulose media (+/+ n=5 and KO/+ n=5, 2 replicates per biological sample). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Photomicrographs of H&E-stained sections of the bone marrow from a wild-type (WT) and Rps12KO/+ at (A) 8 weeks and (B) 6-month-old animals. Images are taken at 20 x magnification. (C, D) Frequency of the LT-HSCs, ST-HSCs, and progenitor populations (C) in young mice (6–8 weeks old littermates, +/+ n=4, and KO/+ n=3) and in (D) older mice (6- to 7-month-old, +/+ n=3, and KO/+ n=4). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars. Significance was determined using the Welch’s t-test ns ≥0.05, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Comparison of total Rps12 mRNA levels measured by qPCR in cKit +bone marrow cells normalized to housekeeping genes GAPDH, RER1, and HPRT1, between Rps12+/+ and Rps12KO/+ mice. (B) Comparison of total Snord100 and Snora33 small RNAs levels measured by qPCR normalized to housekeeping small RNAs U6, Sno22, and Sno234. (C) Quantification by western blot of the relative levels of Rps12 protein in cKit + bone marrow cells normalized to housekeeping gene ACTB between Rps12+/+ and Rps12KO/+ mice. (D) Comparison on the 28 S and 18 S ribosomal subunits ratio between Rps12+/+ and Rps12KO/+ mice provided by RNA analysis in Agilent 2100 Bioanalyzer (D’) Representative RNA profiles from Rps12+/+ and Rps12KO/+ mice ckit + bone marrow samples. (A, B, C, D) Biological samples are +/+ n=4 and KO/+ n=4. Statistical analysis: quantifications represent mean +/− SEM,shown as the error bars, unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To correlate these phenotypes with the expression levels of Rps12, rather than of the small RNAs Snord100 and Snora33, we performed RT-PCR and Western-blot analysis of cKit-enriched bone marrow cells. As expected, RT-PCR results showed a highly significant decrease in the Rps12 mRNA levels in Rps12KO/+ cells (Figure 3—figure supplement 2A) but no difference in the levels of Snord100 and Snora33 (Figure 3—figure supplement 2B). Western-blot analysis also showed a strong trend toward decreased Rps12 protein levels in cKit + bone marrow cells (Figure 3—figure supplement 2C). We observed no changes to the ratio of the 28 S and 18 S rRNAs (Figure 3—figure supplement 2D), suggesting that steady-state SSU numbers were not depleted overall.
 
 Lastly, since Rps12 deletion resulted in decreased HSC and progenitor numbers, we assessed the self-renewal capacity of Rps12KO/+ bone marrow cells. Plating assays in complete methylcellulose media showed a decreased clonogenic activity of Rps12KO/+ bone marrow cells, as evidenced by the lower number of total colonies observed in the first round of plating (Figure 3K). Additionally, Rps12KO/+ cells have reduced serial replating capacity, suggesting decreased self-renewal capacity (Figure 3K). Together, these results suggest that RpS12 plays an essential role in HSC function.
 
-## Heterozygous loss of Rps12 impairs the ability of HSCs to reconstitute peripheral blood
+### Heterozygous loss of Rps12 impairs the ability of HSCs to reconstitute peripheral blood
 
 We assessed the self-renewal and differentiation properties of Rps12KO/+ bone marrow cells (CD45.2+) in vivo by transplanting bone marrow into lethally irradiated B6.SJL mice (CD45.1+) (Figure 4A). Interestingly, compared to the Rps12flox/flox or Rps12flox/+ controls, Rps12KO/+ bone marrow recipients had decreased survival, with 5 out of 20 transplanted mice dying within the first 8 weeks in the Rps12KO/+ group vs 0 out of 20 dying in the control group (Figure 4B). Whereas 100% of the control recipients were able to reconstitute the bone marrow in the long term (up to 20 weeks), only 55% of the Rps12KO/+ recipients did so (Figure 4C). Furthermore, longitudinal analysis of donor chimerism in the peripheral blood revealed that compared to the controls, surviving Rps12KO/+ transplant recipients had significantly decreased donor chimerism (%CD45.2+) in the B and T cell lineages, and a trend toward decreased chimerism in the myeloid lineage (Figure 4D–G). Together, this data suggests that bone marrow cells that lack RpS12 are deficient in hematopoietic repopulating capacity after lethal irradiation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig4-v2.jpg)
 
-**Figure 4.:** Rps12 impairs hematopoietic stem cells (HSCs) ability to reconstitute peripheral blood.(A) Non-competitive bone marrow (BM) transplant strategy testing the long-term reconstituting activity of Rps12 HSCs. 10KO/+6 bone marrow cells from Rps12 or KO/+Rps12 samples (CD45.2+) were transplanted into lethally irradiated B6.SJL (CD45.1+) mice, peripheral blood chimerism was determined every 4 weeks. (flox/floxB) Kaplan-Meier survival curves of mice transplanted with BM cells from Rps12 and control KO/+Rps12 or flox/+Rps12 mice (control n=20 and KO/+ n=20 transplanted mice, the combination of two independent non-competitive transplants with 1 donor per genotype transplanted into 10 host mice each). (flox/floxC) Frequency of recipient mice with long-term (20 weeks) multi-lineage reconstitution (≥0.5% in all three macrophages, B, and T cells) (control n=20 and KO/+ n=20 transplanted mice, the combination of two independent non-competitive transplants). (D–G) Peripheral blood donor-derived (D) total chimerism and (E–G) multi-lineage chimerism in non-competitively transplanted whole bone marrow (CD45.2+) recipients (flox/flox n=10 and KO/+ n=10). (H) Schematic representation of the competitive bone marrow transplant. 5 × 105 cells from Rps12 or KO/+Rps12 donor bone marrow (CD45.2+) mixed with 5 × 10flox/+5 competitor bone marrow cells from B6.SJL (CD45.1+) mice were injected into lethally irradiated B6.SJL (CD45.1+) mice. Chimerism in peripheral blood was determined every 4 weeks and bone marrow chimerism was analyzed at 20 weeks after transplant. (I) Total bone marrow chimerism and (J) HSCs donor-derived (CD45.2+) chimerism in the recipient bone marrow (flox/+ n=10 and KO/+ n=10 competitive-transplanted mice). (K–N) Donor-derived peripheral blood chimerism of competitively transplanted Rps12 or KO/+Rps12 bone marrow cells as described in (flox/+H). Non- competitive transplants were performed twice, using different controls: Rps12 or flox/+Rps12. The competitive transplant was performed once, using flox/floxRps12 mice as a control group. Statistical analysis: data represent mean +/− SEM, shown as the error bars, unpaired t-tests were performed to assess significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.flox/+Figure 4—source data 1.
+**Figure 4.:** (A) Non-competitive bone marrow (BM) transplant strategy testing the long-term reconstituting activity of Rps12KO/+ HSCs. 106 bone marrow cells from Rps12KO/+ or Rps12flox/flox samples (CD45.2+) were transplanted into lethally irradiated B6.SJL (CD45.1+) mice, peripheral blood chimerism was determined every 4 weeks. (B) Kaplan-Meier survival curves of mice transplanted with BM cells from Rps12KO/+ and control Rps12flox/+ or Rps12flox/flox mice (control n=20 and KO/+ n=20 transplanted mice, the combination of two independent non-competitive transplants with 1 donor per genotype transplanted into 10 host mice each). (C) Frequency of recipient mice with long-term (20 weeks) multi-lineage reconstitution (≥0.5% in all three macrophages, B, and T cells) (control n=20 and KO/+ n=20 transplanted mice, the combination of two independent non-competitive transplants). (D–G) Peripheral blood donor-derived (D) total chimerism and (E–G) multi-lineage chimerism in non-competitively transplanted whole bone marrow (CD45.2+) recipients (flox/flox n=10 and KO/+ n=10). (H) Schematic representation of the competitive bone marrow transplant. 5 × 105 cells from Rps12KO/+ or Rps12flox/+ donor bone marrow (CD45.2+) mixed with 5 × 105 competitor bone marrow cells from B6.SJL (CD45.1+) mice were injected into lethally irradiated B6.SJL (CD45.1+) mice. Chimerism in peripheral blood was determined every 4 weeks and bone marrow chimerism was analyzed at 20 weeks after transplant. (I) Total bone marrow chimerism and (J) HSCs donor-derived (CD45.2+) chimerism in the recipient bone marrow (flox/+ n=10 and KO/+ n=10 competitive-transplanted mice). (K–N) Donor-derived peripheral blood chimerism of competitively transplanted Rps12KO/+ or Rps12flox/+ bone marrow cells as described in (H). Non- competitive transplants were performed twice, using different controls: Rps12flox/+ or Rps12flox/flox. The competitive transplant was performed once, using Rps12flox/+ mice as a control group. Statistical analysis: data represent mean +/− SEM, shown as the error bars, unpaired t-tests were performed to assess significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To assess Rps12KO/+ bone marrow cell repopulation capacity under more stringent conditions, we performed competitive transplantation of control (Rps12flox/+) or Rps12KO/+ bone marrow (CD45.2+) mixed with competitor WT bone marrow from B6.SJL mice (CD45.1+) in a 1:1 ratio into lethally irradiated B6.SJL (CD45.1+) recipient mice. Post-transplantation we monitored donor chimerism in the peripheral blood over time and analyzed the bone marrow chimerism at 20 weeks post-transplantation (Figure 4H). Compared to the controls, Rps12KO/+ transplant recipients showed a striking decrease in the percentage of donor-derived bone marrow cells and of HSCs (Figure 4I and J), accompanied by a significant and persistent reduction in peripheral blood total donor chimerism in both myeloid and lymphoid lineages (Figure 4K–N). Together, these data suggest that Rps12 haploinsufficiency leads to perturbed HSC self-renewal, resulting in ineffective hematopoiesis.
 
-## The embryonic hematopoietic system is largely unaffected in Rps12KO/+ animals
+### The embryonic hematopoietic system is largely unaffected in Rps12KO/+ animals
 
 The striking reduction of hematopoietic progenitor numbers in Rps12KO/+ adult bone marrow prompted us to investigate if this phenotype could be a consequence of defective HSC production in the fetal liver during embryogenesis. We analyzed fetal liver hematopoietic populations of E13.5 Rps12+/+ and Rps12KO/+ embryos because it has been shown that HSC numbers increase, and differentiation begins, between days 12 and 16 of embryogenesis in this organ (Sugiyama et al., 2011). First, we looked at the gross morphology and cellularity of the liver, neither of which were significantly different between the genotypes (Figure 5A and B). Next, we assessed different stages of erythropoiesis using Ter119 and CD71 markers as previously described in fetal liver (Magee and Signer, 2021). Most of the cells in population V were lost during staining, and, therefore, we did not include them in our analysis. Compared to the control embryos, Rps12KO/+ embryos showed no apparent impairment in erythropoiesis in the fetal liver (Figure 5C and D). Finally, we analyzed the distribution of HSPCs in E13.5 embryos. Overall, we did not observe any significant changes in the frequencies of LT-HSCs (CD48−CD150+ LSK), ST-HSCs (CD48−CD150− LSK), MPP (CD48+ LSK), CMP, GMP, or MEP populations (Figure 5E–H). These results show that partial loss of Rps12 does not affect embryonic hematopoiesis by E13.5. Therefore, the later HSPC deficiency is not a consequence of a defect in the embryonic specification.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig5-v2.jpg)
 
-**Figure 5.:** Rps12 animals.KO/+(A) Representative images of Rps12 and littermate E13.5 fetal livers. (+/-B) Quantification of the total number of cells per liver, normalized to embryo weight (+/+ n=9 and KO/+ n = 8). (C) Representative flow cytometry gating of erythropoietic populations using Ter119 and CD71 markers of fetal liver samples from E13.5 embryos. (E) Representative flow cytometry gating of Lin- (top) and LSK (bottom) populations in E13.5 fetal livers. (F, G, H) LT-HSCs, ST-HSCs, and indicated progenitor populations represented as percentages of the Lin- population in E13.5 fetal livers. (D, F, G, H) Biological samples are +/+ n=8 and KO/+ n=4. Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 5—source data 1.
+**Figure 5.:** (A) Representative images of Rps12+/- and littermate E13.5 fetal livers. (B) Quantification of the total number of cells per liver, normalized to embryo weight (+/+ n=9 and KO/+ n = 8). (C) Representative flow cytometry gating of erythropoietic populations using Ter119 and CD71 markers of fetal liver samples from E13.5 embryos. (E) Representative flow cytometry gating of Lin- (top) and LSK (bottom) populations in E13.5 fetal livers. (F, G, H) LT-HSCs, ST-HSCs, and indicated progenitor populations represented as percentages of the Lin- population in E13.5 fetal livers. (D, F, G, H) Biological samples are +/+ n=8 and KO/+ n=4. Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## Rps12KO/+ HSCs and some hematopoietic progenitors show higher translation, cycling, and apoptosis
+### Rps12KO/+ HSCs and some hematopoietic progenitors show higher translation, cycling, and apoptosis
 
 There are several important factors that maintain the HSC pool, including quiescence, low translation levels, and cell survival. We, therefore, analyzed the distribution of HSPCs among the cell cycle stages defined by the DNA content (Hoechst) and the levels of Ki67 (Figure 6A). We observed a lower proportion of Rps12KO/+ HSCs in the G0 stage of the cell cycle, and a significantly increased proportion in the active cycling phases G1 and S/G2/M (Figure 6B). Similar results were observed in MPP2/3 (LSK, Flk2−, CD48+), MPP4, and myeloid (MPROG) and common lymphoid progenitors (CLP) (Figure 6B). These results show that compared to the control, Rps12KO/+ HSCs are significantly less quiescent, with a higher proportion of HSCs and progenitors actively cycling.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig6-v2.jpg)
 
-**Figure 6.:** Rps12 bone marrow.KO/+(A) Representative flow cytometry gating of HSCs (Flk2−CD48−LSK) cell cycle stages (G0, G1, S/G2/M) distribution determined by DNA (Hoechst) and Ki67 levels. (B) Cell cycle stages distribution in HSCs and in indicated progenitor populations. Asterisks correspond to p values assessing significant differences in each cell cycle stage between Rps12 and KO/+Rps12 mice (6- to 8-week-old littermates, +/+ n=4, and KO/+ n=3). (+/+C) Representative flow cytometry histogram showing OPP intensity in RpS12 (green) and KO/+Rps12 (gray) HSCs. (+/+D, E) Median o-propargyl puromycin (OPP) intensity of the indicated bone marrow populations (6- to 8-week-old littermates, +/+ n=4, and KO/+ n=3). This analysis was repeated in 6- to 7-month-old mice with similar results. (F) Representative images of bone marrow cytospins showing the high number of apoptotic cells (arrows) in Rps12 samples. (KO/+G) Representative flow cytometry gating of LIN- population showing apoptotic populations as determined by AnexinV and PI staining. (H, I) Percentage of apoptotic (AnnexinV+) cells in LSK (Lin−cKit+Sca1+) and Myeloid progenitor (MPROG; Lin−cKit+Sca1−) populations (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=3). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, two-way ANOVA (B–F), and unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 6—source data 1.
+**Figure 6.:** (A) Representative flow cytometry gating of HSCs (Flk2−CD48−LSK) cell cycle stages (G0, G1, S/G2/M) distribution determined by DNA (Hoechst) and Ki67 levels. (B) Cell cycle stages distribution in HSCs and in indicated progenitor populations. Asterisks correspond to p values assessing significant differences in each cell cycle stage between Rps12KO/+ and Rps12+/+ mice (6- to 8-week-old littermates, +/+ n=4, and KO/+ n=3). (C) Representative flow cytometry histogram showing OPP intensity in RpS12KO/+ (green) and Rps12+/+ (gray) HSCs. (D, E) Median o-propargyl puromycin (OPP) intensity of the indicated bone marrow populations (6- to 8-week-old littermates, +/+ n=4, and KO/+ n=3). This analysis was repeated in 6- to 7-month-old mice with similar results. (F) Representative images of bone marrow cytospins showing the high number of apoptotic cells (arrows) in Rps12KO/+ samples. (G) Representative flow cytometry gating of LIN- population showing apoptotic populations as determined by AnexinV and PI staining. (H, I) Percentage of apoptotic (AnnexinV+) cells in LSK (Lin−cKit+Sca1+) and Myeloid progenitor (MPROG; Lin−cKit+Sca1−) populations (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=3). Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, two-way ANOVA (B–F), and unpaired t-tests were performed to establish significance among populations between genotypes *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Cell cycle activation generally requires translation, but previous studies have reported a generalized decrease in global translation in some Rp mutants, including in HSPC, despite a decrease in HSC quiescence (Oliver et al., 2004; Signer et al., 2014; Schneider et al., 2016). To assess the global translation levels of each HSPC population in Rps12 heterozygous mice using flow cytometry, we performed an ex vivo assay on freshly isolated HSCs and progenitors using the puromycin analog o-propargyl puromycin (OPP) as previously described (Signer et al., 2014). Unexpectedly, compared to the Rps12+/+ controls, Rps12KO/+ HSCs and multipotent progenitor cell populations all showed increased levels of global translation (Figure 6C and D). The difference was especially remarkable in HSCs. Interestingly, compared to the controls, Rps12KO/+ myeloid progenitors did not exhibit differences in OPP intensity, and among different myeloid progenitor populations, only the megakaryocyte-erythrocyte progenitors (MEP) had a significant increase in OPP incorporation (Figure 6E). Thus, these data suggest that a decrease in RpS12 leads to an abnormal increase in global protein translation in immature bone marrow populations, including HSCs.
 
 Cell death can deplete the HSC pool and can result from chronic HSC activation. We asked whether this reduction of HSCs in Rps12KO/+ animals is due to an increase in apoptosis. Interestingly, compared to controls, Rps12KO/+ animals have an increased number of apoptotic cells in bone marrow cytospins (Figure 6F). To quantify the level of apoptosis in the immunophenotypic populations in the bone marrow, we used the flow cytometry markers PI and Annexin V together with population-specific cell surface markers (Figure 6G). Our flow cytometry analysis confirmed a significant increase in apoptosis in Lineage-Sca1+c-Kit+ (LSK) cells, a population that contains HSCs and MPPs, but not in more mature myeloid progenitors (Figure 6H and I).
 
-## Rps12KO/+ HSPCs have overactivated MEK/ERK and AKT/MTOR signaling pathways
+### Rps12KO/+ HSPCs have overactivated MEK/ERK and AKT/MTOR signaling pathways
 
 Because Rps12KO/+ mutants have increased translation, we assessed the activity of the AKT/MTOR pathway, since it is known to regulate translation. Since the AKT/MTOR pathway is activated by stem cell factor (SCF), we determined the level of the AKT/MTOR pathway activation in the presence and absence of SCF, by assessing the phosphorylation levels of phospho-AKT (Ser 473) and the MTOR downstream effectors phospho-S6 (Ser235/236) and phospho-4E-BP1 (Thr37/46). Our results show that, in the more immature LSK population, which includes HSCs and MPPs, the levels of p-AKT, p-S6, and p-4E-BP1 were significantly elevated in Rps12KO/+ animals compared to wild-type littermates, not only upon SCF stimulation, but even at the non-stimulated baseline (Figure 7A–C). Interestingly, this was not the case for the more mature myeloid progenitor cells, where the levels of p-AKT, p-S6, and p-4E-BP1 are comparable to the controls in both non-stimulated and SCF-stimulated conditions, and these cells also exhibited more normal translation rates (Figure 7D–F). Since phosphorylation of S6 and 4EBP1 leads to increased translation, this data corroborates the increase in translation observed in the Rps12KO/+ LSK population (Figure 6D). Interestingly, more mature MPROG do not have increased translation (Figure 6E) and do not have increased activation of the AKT/MTOR pathway (Figure 7D–F). Together, these data suggest that activation of translation and the increase in AKT/MTOR signaling in Rps12KO/+ mutant cells are specific to HSCs and MPPs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig7-v2.jpg)
 
-**Figure 7.:** (A–H) Representative phospho-flow cytometry histograms and quantification of the normalized geometric mean fluorescent intensity of pAKT (Ser 473) (A, D), pS6 (Ser235/236) (B, E), p4EBP1 (Thr37/46) (C, F), and pERK1(Thr202/Tyr204) (D, H) signal in the LSK (A, B, C, G) and MPROG (D, E, F, H) bone marrow cell populations. Baseline signal was determined in the none treated (NT) serum-starved cells, stimulation was done with the stem cell factor (SCF) ex vivo for 5 min. Immunophenotypic populations were defined as follows: LSK: Lin−cKit+Sca1+, MPROG: Lin−cKit+Sca1−. (I) Representative images of western blot analysis and quantification of phospho-eIF2α normalized to the total eIF2α protein in cKit-enriched BM samples (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=4) (A–H) 7-weeks-old littermates, +/+ n=6, and KO/+ n=6 biological samples were used. Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, one-way ANOVA Tukey’s multiple comparison tests were performed to establish significance among samples between genotypes.Figure 7—source data 1.(A) Complete blot shown in Figure 7I, after blotting with anti-βactin. On the right the blot is shown with labels and with the section cropped for Figure 7I indicated. (B) Complete blot showed after blotting with anti-IF2α. On the right the blot is shown with labels and with the section cropped for Figure 7I indicated. (C) Complete blot showed after blotting with anti-pIF2α. On the right the blot is shown with labels and with the section cropped for Figure 7I indicated.Figure 7—source data 2.
+**Figure 7.:** (A–H) Representative phospho-flow cytometry histograms and quantification of the normalized geometric mean fluorescent intensity of pAKT (Ser 473) (A, D), pS6 (Ser235/236) (B, E), p4EBP1 (Thr37/46) (C, F), and pERK1(Thr202/Tyr204) (D, H) signal in the LSK (A, B, C, G) and MPROG (D, E, F, H) bone marrow cell populations. Baseline signal was determined in the none treated (NT) serum-starved cells, stimulation was done with the stem cell factor (SCF) ex vivo for 5 min. Immunophenotypic populations were defined as follows: LSK: Lin−cKit+Sca1+, MPROG: Lin−cKit+Sca1−. (I) Representative images of western blot analysis and quantification of phospho-eIF2α normalized to the total eIF2α protein in cKit-enriched BM samples (6- to 8-weeks-old littermates, +/+ n=4, and KO/+ n=4) (A–H) 7-weeks-old littermates, +/+ n=6, and KO/+ n=6 biological samples were used. Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars, one-way ANOVA Tukey’s multiple comparison tests were performed to establish significance among samples between genotypes.
 
 Additionally, compared to wild-type controls, Rps12KO/+ mutant animals also have increased phospho-ERK1 (Thr202/Tyr204) in the LSK and MPROG populations under SCF-stimulated and non-stimulated conditions (Figure 7G and H). Another regulator of translation is the eukaryotic initiation factor 2α (eIF2α), which is required for CAP-dependent translation initiation. Cells respond to several stress conditions by phosphorylating eIF2α, reducing global translation, and upregulating stress-response genes (Wek et al., 2006; Sigurdsson and Miharada, 2018). In skeletal muscle stem cells, eIF2α phosphorylation promotes quiescence and stem cell maintenance (Zismanov et al., 2016) Interestingly, compared to the control cells, Rps12KO/+ cKit+ bone marrow progenitor cells show decreased levels of p-eIF2α (Figure 7I), which also correlates with increased translation.
 
-## Heterozygous post-natal loss of Rps12 in the bone marrow impairs translation in HSCs and progenitors and leads to pancytopenia
+### Heterozygous post-natal loss of Rps12 in the bone marrow impairs translation in HSCs and progenitors and leads to pancytopenia
 
 To better understand the effects of Rps12 deletion in HSCs, we generated a conditional knock-out model Rps12flox/+; Tal1-Cre-ERT, in which Rps12 is excised specifically in hematopoietic cells upon tamoxifen (TAM) treatment. We induced Rps12 deletion by tamoxifen injection in young adult mice and assessed changes in the peripheral blood and bone marrow at 7-, 12- and 14-weeks post TAM injection (Figure 8A). Rps12 deletion by tamoxifen injection in young adult mice is present at 2- and 7-weeks post excision, as demonstrated by the presence of DNA fragment of 300 bp compared to the full WT length of 900 bp (Figure 8—figure supplement 1A). At 7 weeks post Rps12 excision, there were no significant changes in peripheral blood counts (Figure 8—figure supplement 1B), in bone marrow cell counts, or by the absolute number of progenitor and stem cell populations in the bone marrow (Figure 8—figure supplement 1C). Additionally, there was no difference in translation levels in bone marrow HSPCs, measured using the OPP incorporation assay (Figure 8—figure supplement 1D). At 12 weeks post Rps12 deletion, there were no changes in peripheral blood counts, total bone marrow cellularity, or in stem and progenitor cell populations in the bone marrow (Figure 8B and C). At that time point, however, OPP incorporation was significantly decreased in hematopoietic stem and progenitor cells, indicating decreased translation (Figure 8D). We did not observe any significant differences in the cell cycle profile of HSPCs at this time point (Figure 8—figure supplement 1E). At 14 weeks post Rps12 deletion, we began to observe mild pancytopenia (Figure 8E), a significant decrease in bone marrow cellularity, a decrease in HSC numbers, and a trend toward decreased progenitor populations (Figure 8F). We did not observe any significant differences in OPP incorporation in HSPCs at this time point (Figure 8—figure supplement 1F). These data suggest that the effect of Rps12 loss upon excision in adult hematopoietic cells is decreased translation, then decreases in HSCs maintenance and quiescence, resulting in decreased BM cellularity and pancytopenia.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig8-v2.jpg)
+
+**Figure 8.:** (A) Schematic representation of the time-course analysis testing the effect of the heterozygous loss of Rps12 activity in hematopoietic stem cells (HSCs). (B–D) Analysis of Rps12flox/+; Tal1-Cre-ERT (Rps12flox/+) and Rps12flox/+(CNTRL) at 12 weeks post tamoxifen treatment (TAM): (B) Peripheral blood cell analysis, (C) quantification of bone marrow cellularity and absolute cell count of bone marrow populations per femur, (D) representative flow histograms, and quantification of the median OPP intensity in bone marrow populations. (E) Peripheral blood cell analysis at 14 weeks and (F) quantification of bone marrow cellularity and absolute cell count of bone marrow populations per femur. (G) Schematic summary of the phenotypic analysis of mouse models. Immunophenotypic populations were defined as follows: MPROG: Lin−cKit+Sca1−, LSK: Lin−cKit+Sca1+; MPP3,2: Lin−cKit+Sca1+Flk2−CD48+, HSCs: Lin−cKit+Sca1+Flk2−CD48−. Statistical analysis: quantifications represent mean +/− SEM, shown as the error bars. Significance was determined using the Welch’s t-test *p≤0.05, **p≤0.01. At each time point n (Rps12flox/+)=5 and n (CNTRL)=5. Schematics created with BioRender.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/69322/elife-69322-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–D) Analysis of Rps12flox/+; Tal1-Cre-ERT (Rps12flox/+) and Rps12flox/+ (CNTRL) at 7 weeks post heterozygous Rps12 excision with tamoxifen (TAM): (A) Peripheral blood excision analysis at 2 and 7 weeks post TAM treatment. (B) Peripheral blood cell analysis, (C) quantification of bone marrow cellularity and absolute cell count of bone marrow populations per femur, (D) representative flow histograms and quantification of the median o-propargyl puromycin (OPP) intensity in bone marrow populations. (E) Cell cycle analysis of bone marrow populations at 12 weeks post TAM treatment. (F) Representative flow histograms and quantification of the median OPP intensity in bone marrow populations at 14 weeks post TAM treatment. Immunophenotypic populations were defined as follows: MPROG: Lin−cKit+Sca1−, LSK: Lin−cKit+Sca1+; MPP3,2: Lin−cKit+Sca1+Flk2−CD48+, HSCs: Lin−cKit+Sca1+Flk2−CD48−. Significance was determined using the Welch’s t-test ns ≥0.05. At each time point n=5 for both cohorts Rps12flox/+ and CNTRL.
 
 ## Discussion
 
@@ -122,84 +150,556 @@ The fact that Rps12KO/+ mice exhibit fully-penetrant pancytopenia with a severe 
 
 ## Methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>EIIa-Cre (FVB/N-Tg(EIIa-cre)C5379Lmgd/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.SJL-Ptprca/BoyAiTac (CD45.1)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>RpS12flox/flox</td>
+      <td>This study</td>
+      <td>Rps12em1Nbakr MGI:6388411</td>
+      <td>Generated for this study</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Scl-Cre-ER</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:037466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>RpS12flox/+; Scl-Cre-ER</td>
+      <td>This study</td>
+      <td></td>
+      <td>Generated for this study</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal CD16/CD32</td>
+      <td>BD biosciences</td>
+      <td>Cat # 553142</td>
+      <td>Clone: 2.4G2(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cy7 Rat anti-mouse monoclonal Gr1</td>
+      <td>BD biosciences</td>
+      <td>Cat # 557661</td>
+      <td>Clone: RB6-8C5(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE rat anti-mouse monoclonal Mac1</td>
+      <td>BioLegend</td>
+      <td>Cat # 101208</td>
+      <td>Clone: M1/70(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 Rat anti-Mouse monoclonal B220</td>
+      <td>BD biosciences</td>
+      <td>Cat # 557957</td>
+      <td>Clone: RA3-6B2(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Rat Anti-Mouse monoclonal Thy1.2</td>
+      <td>BD biosciences</td>
+      <td>Cat # 553007</td>
+      <td>Clone: 53–2.1(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Mouse Anti-Mouse monoclonal CD45.1</td>
+      <td>BD biosciences</td>
+      <td>Cat # 553775</td>
+      <td>Clone: A20(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Dazzle 594 mouse anti-mouse monoclonal CD45.2</td>
+      <td>BioLegend</td>
+      <td>Cat # 109845</td>
+      <td>Clone:104(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3e hamster monoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13003182</td>
+      <td>Clone: 145–2 C11(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4 rat Monoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat #13004182</td>
+      <td>Clone: GK1.5(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8a rat Monoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13008182</td>
+      <td>Clone: 53–6.7(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gr1 rat Monoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13593182</td>
+      <td>Clone: RB68C5(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>B220 rat Monoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13045282</td>
+      <td>Clone: RA3-6B2(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD19 mouseMonoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13019182</td>
+      <td>Clone: MB 19–1(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ter119 ratMonoclonal, Biotin,</td>
+      <td>eBioscience</td>
+      <td>Cat # 13592182</td>
+      <td>Clone: TER119(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 rat anti-mouse monoclonal Sca-1</td>
+      <td>BioLegend</td>
+      <td>Cat #108114</td>
+      <td>Clone: D7(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Rat Anti-Mouse monoclonal cKit</td>
+      <td>BD Biosciences</td>
+      <td>Cat #553356</td>
+      <td>Clone:2B8(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Rat Anti-Mouse monoclonal FCRg</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 12-0161-82</td>
+      <td>Clone: 93(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor 450 Rat Anti-Mouse monoclonal CD34</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #48-0341-80</td>
+      <td>Clone:RAM34(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 421 Rat anti-Mouse monoclonal CD150</td>
+      <td>BD Biosciences</td>
+      <td>Cat #562811</td>
+      <td>Clone: Q38-480(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 700 hamster anti-mouse monoclonal CD48</td>
+      <td>BioLegend</td>
+      <td>Cat #103426</td>
+      <td>Clone: HM48-1(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine5 Rat anti-mouse monoclonal Flk-2</td>
+      <td>BioLegend</td>
+      <td>Cat #135312</td>
+      <td>Clone: A2F10(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Brilliant Violet 605 mouse anti-mouse monoclonal CD45.2</td>
+      <td>BioLegend</td>
+      <td>Cat #109841</td>
+      <td>Clone: 104(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP/Cyanine5.5 rat anti-mouse monoclonal IL-7Rα</td>
+      <td>BioLegend</td>
+      <td>Cat #135021</td>
+      <td>Clone: A7R34(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin-APC-Cy7</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 554063</td>
+      <td>second-step reagent for cells stained with biotinylated primary antibodies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse monoclonal Flk-2</td>
+      <td>BioLegend</td>
+      <td>Cat # 135306</td>
+      <td>Clone: A2F10(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>FITC Annexin V</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 560931</td>
+      <td>Apoptosis detection: Phosphatidylserine probe</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Propidium Iodide</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 556463</td>
+      <td>Apoptosis detection: Staining Solution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pS6 (Ser235/236) Alexa 488 rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 4803 S</td>
+      <td>Clone: D57.2.2EICFC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pERK1 (T202/Y204) Alexa 488 mouse monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 4374</td>
+      <td>Clone: E10ICFC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAkt (Ser473) AF647 rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 2337</td>
+      <td>Clone: 193H12ICFC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p4E-BP1 (Thr37/46) rabbit monoclonal AF647</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 5123</td>
+      <td>Clone: 236B4ICFC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Mouse monoclonal Anti-Ki-67</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 556026RRID: AB_396302</td>
+      <td>Clone: B56(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Hoechst 33342 Solution</td>
+      <td>BD Biosciences</td>
+      <td>Cat # 561908</td>
+      <td>See legend to Figure 6</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Click-iT Plus OPP Alexa Fluor 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # C10456</td>
+      <td>Protein Synthesis Assay Kit</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC rat anti-mouse monoclonal TER-119</td>
+      <td>BioLegend</td>
+      <td>Cat # 116211</td>
+      <td>Clone: TER119(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE rat anti-Mouse monoclonal CD71</td>
+      <td>BD biosciences</td>
+      <td>Cat # 561937</td>
+      <td>Clone: C2(1 µl per 107 cells)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA 1</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>CGCAGTAGACACGCTATCGCCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA 2</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GTGGGTTGCTGTGTGGATCGGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F1</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GCACATGCGCACAGAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R1</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>CGGACTATCTATCCCCACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F2</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GTACAGCTATCTGCCAGGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R2</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>CGAGGTCGACGGTATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F3</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>CGATACCGTCGACCTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>R3</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GTGCTAGCAACAGAAGGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>F4</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GTCTCAATACTGTGGGGTGT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Cytofix/Cytoperm</td>
+      <td>BD biosciences</td>
+      <td>Cat # BDB554714</td>
+      <td>Fixation/Permeabilization Solution Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DNeasy kit</td>
+      <td>Qiagen</td>
+      <td>Cat #69504</td>
+      <td>DNA extraction kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mSCF</td>
+      <td>Peprotech</td>
+      <td>Cat # 250–03</td>
+      <td>Cytokine</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MethoCult GF M3434</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat # 03434</td>
+      <td>Methylcellulose media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MethoCult M3334</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat # 03334</td>
+      <td>Methylcellulose media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CD117 MicroBeads, mouse</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat #130-091-224</td>
+      <td>See ‘Western blot analysis’ in methods section</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LS Column</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat # 130-042-401</td>
+      <td>Separation column</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RpS12, rabbit polyclonal</td>
+      <td>Proteintech</td>
+      <td>Cat # 16490–1-AP</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (13E5) Rabbit monoclonal mAb</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 4970</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eIF2α (D7D3) Rabbit monoclonal mAb</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 5324</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-eIF2α (Ser52) rabbit polyclonal</td>
+      <td>Thermo Scientific</td>
+      <td>Cat # BS-4842R</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>miRNA First-Strand Synthesis Kit</td>
+      <td>Takara Bio</td>
+      <td>Cat # 638313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mirVana miRNA Isolation Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # AM1560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Power SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat # 4367659</td>
+      <td>PCR reaction mix</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animals were housed at the Animal Housing and Studies Facility at Albert Einstein College of Medicine (AECOM) under pathogen-free conditions and experiments were performed following protocols approved by the Institutional Animal Care and Use Committee (IACUC) (Protocol #20181206). C57BL/6 J and EIIa-Cre (FVB/N-Tg(EIIa-Cre)C5379Lmgd/J) mice were obtained from Jackson. B6.SJL-Ptprca/BoyAiTac (CD45.1) mice from Taconic were used for transplantation experiments. To generate Rps12KO/+ mice, we crossed Rps12flox/flox to EIIa-Cre mice and used primers flanking the floxed region to identify progeny where recombination had occurred. Unless indicated, these mice were kept as heterozygous by crossing them with C57BL/6 J, and the presence of the EIIa-Cre transgene was crossed out. In each case, the genotypes were confirmed by PCR using genomic DNA extracted from tails using a DNeasy kit from Qiagen (#69504). Peripheral blood samples were collected via facial vein bleeding under isoflurane anesthesia, and blood counts were obtained using the Genesis analyzer (Oxford Science). To generate growth curves, 5-day-old pups were genotyped and numbered by cutting toes. Pups’ weight was measured daily from day 5–21 of age.
 
-## Generation of Rps12flox knock-in mice
+### Generation of Rps12flox knock-in mice
 
 A pair of guide-RNAs (gRNAs) targeting intron 1 and intron 3 of the Rps12 gene, respectively were designed by an online tool (http://crispr.mit.edu/) and generated by in vitro transcription. Cas9 mRNA was purchased from SBI. An Rps12 conditional knockout homology-directed repair (HDR) plasmid containing 2 kb homologous arms at each side and exons 2 and 3 flanked by loxP sites (Figure 1—figure supplement 1) was generated by SLiCE cloning. Super ovulated female C57BL/6 J mice (3–4 weeks old) were mated to C57BL/6 J males, and fertilized embryos were collected from oviducts. The gRNAs, Cas9 mRNA and conditional knockout HDR plasmid were microinjected into the cytoplasm of fertilized eggs. The injected zygotes were transferred into pseudo-pregnant CD1 females and the resulting pups were genotyped. Out of 20 pups, two mice were identified as Rps12flox/+, which were then crossed to obtain Rps12flox/flox (Rps12em1Nbakr MGI:6388411). The corresponding DNA sequences can be found in the Key Resources Table.
 
-## Generation of the Rps12KO knock-out mutation
+### Generation of the Rps12KO knock-out mutation
 
 Rps12flox/flox mice were mated to EIIA-Cre mice for excision during embryogenesis, the F1 generation carrying the potential Rps12 excision bred with C57BL/6 J mice, and the F2 generation genotyped to identify Rps12KO/+ mice lacking EIIA-Cre.
 
-## Generation of Rps12flox/+; Tal1-Cre-ERT mice
+### Generation of Rps12flox/+; Tal1-Cre-ERT mice
 
 Rps12flox/flox mice were mated to the Tal1-ERT-Cre mice and F1 generation of Rps12flox/+; Tal1-Cre-ERT mice. 6–8 weeks old animals were treated with three doses of tamoxifen (3 × 4 mg/mouse) to achieve the Rps12 excision.
 
-## Preparation of single-cell suspensions
+### Preparation of single-cell suspensions
 
 Bone marrow single-cell suspension was prepared from freshly harvested femurs, tibiae, ilia, and vertebrae by gentle crushing of the bones in phosphate-buffered saline containing 2% fetal bovine serum (PBS/2% FBS) followed by filtration through a 40 µm strainer. Spleen cells were obtained from freshly harvested spleens. Single-cell suspension was prepared by dissociating spleens using the flat end of a plunger against 40 µm strainers and washed with PBS/2% FBS. Fetal liver single cell suspension was prepared from freshly harvested E13.5 fetal livers by passing through a 200 µl pipet tip and filtered through a 40 µm strainer in PBS/2% FBS. Cells were subjected to RBC lysis (Qiagen) according to the manufacturer’s protocol and used for the further steps described below. To calculate the absolute number of cells per femur one femur per mouse was flushed, RBC lysed and cells counted to obtain the total number of cells per femur.
 
-## Flow cytometry on live cells
+### Flow cytometry on live cells
 
-## Bone marrow
+#### Bone marrow
 
 Single-cell bone marrow suspensions were stained with a cocktail of biotin-conjugated lineage antibodies for 30 min at 4 °C, washed with PBS/2% FBS, stained with fluorochrome-conjugated antibody cocktails for 30 min at 4 °C, washed with PBS/2% FBS, resuspended in PBS/2% FBS, filtered through a 40 µm strainer, and subjected to Flow analysis. For the antibody panels, refer to Supplementary file 1.
 
-## Peripheral blood
+#### Peripheral blood
 
 samples were subjected to RBC lysis, blocked with CD16/CD32 10 min at 4 °C followed by staining with fluorochrome-conjugated antibodies, washed with PBS/2% FBS, resuspended in PBS/2% FBS, filtered through a 40 µm strainer and subjected to Flow analysis. For the antibody panels, refer to Supplementary file 1.
 
-## Erythropoiesis analysis
+#### Erythropoiesis analysis
 
 Obtained single cell suspension of spleen cells (without RBC lysis) was blocked with CD16/CD32 for 10 min at 4 °C and stained with fluorochrome-conjugated antibodies for 30 min at 4 °C (Supplementary file 1). E13.5 fetal livers single cell suspension was blocked with CD16/CD32 10 min at 4 °C and stained with erythropoiesis or progenitor panels as described above. All blocking and staining steps were performed in PBS/2% FBS.
 
-## Apoptosis analysis
+#### Apoptosis analysis
 
 Single-cell suspension samples were stained with the lineage-cocktail and fluorochrome-conjugated antibody cocktails as described above. After completion of surface antibody staining, samples were incubated with FITC-conjugated Annexin V (BD-560931) and Propidium Iodide (BD-556463) following the manufacturer’s instructions.
 
 All flow cytometry was performed with BD FACS LSRII or Cytek Aurora and data analysis was done with FlowJo Software (v9, v10).
 
-## Flow cytometry on fixed cells
+### Flow cytometry on fixed cells
 
-## Cell cycle
+#### Cell cycle
 
 Fresh single-cell suspension of the RBC lysed bone marrow cells was stained with lineage antibodies followed by staining with fluorochrome-conjugated antibodies against surface markers, as described above. Immediately after staining cells were fixed and permeabilized using Cytofix/Cytoperm Fixation/Permeabilization Solution Kit (BD biosciences, BDB554714) according to the manufacturer’s instructions. Following fixation, cells were incubated overnight at 4 °C with FITC-conjugated Ki67 antibody in Perm/Wash buffer. DNA was stained with 25 µl/ml Hoechst in Perm/Wash buffer before flow cytometry analysis. Flow cytometry was performed with BD FACS LSRII or Cytek Aurora and data analysis was done with FlowJo Software (v9, v10).
 
-## Global translation in vitro
+#### Global translation in vitro
 
 protocol was based on a previously described assay (Signer et al., 2014). Single-cell bone marrow RBC lysed cell suspension was obtained as described. Cells were resuspended in DMEM (Corning 10–013-CV) media supplemented with 50 µM β-mercaptoethanol (Sigma) and 20 µM OPP (Thermo Scientific C10456). Cells were incubated for 45 min at 37 °C and then washed with Ca2+ and Mg2+ free PBS. The samples were stained with biotin-labeled antibodies, followed by staining with fluorochrome-conjugated antibody cocktails, fixed and permeabilized using Cytofix/Cytoperm as described above. After permeabilization with Perm/Wash buffer, cells were resuspended in Click-iT Plus Reaction Cocktail (Thermo Scientific C10456) containing azide conjugated to Alexa Fluor 488 for 30 min at room temperature, washed once with Click-iT Reaction Rinse Buffer and resuspended in Perm/Wash buffer. Flow cytometry was performed with Cytek Aurora and data analysis was done with FlowJo Software (v9, v10).
 
-## Phospho-flow cytometry
+#### Phospho-flow cytometry
 
 Bone marrow cells were starved for 1 hr in IMDM 2% FBS at 37 °C, stained with lineage antibodies, followed by staining with fluorochrome-conjugated antibodies against surface markers, as described above. Post-staining cells were stimulated with 100 ng/ml mSCF (Peprotech #250–03) in 2% PBS-FBS for 5 min at 37 °C. Stained and stimulated cells were fixed and permeabilized with Cytofix/Cytoperm as described above and stained with phospho-S6 (Ser235/236) - Alexa 488 (Cell Signaling Technology, 4803 S) (1:100) and phospho-AKT (Ser473) - Alexa647 (Cell Signaling Technology, 2337 S), phospho-4E-BP1 (Thr37/46) - Alexa Fluor647 -(Cell Signaling Technology, 5123 S) of pERK1(T202/Y204) - Alexa 488 (Cell Signaling 4374) at 1:20 dilutions. Cells were washed with Perm/Wash buffer to remove residual and unbound antibodies, and resuspended in fresh Perm/Wash buffer, followed by flow cytometry analysis on the Cytek Aurora. Analysis of all flow cytometry data was performed using FlowJo software (v9, v10).
 
-## Methylcellulose cultures and serial re-plating
+### Methylcellulose cultures and serial re-plating
 
 Single-cell bone marrow suspensions (post RBC lysis) or single-cell fetal liver cell suspensions (without RBC lysis) were resuspended in RPMI media supplemented with 10% FBS and 1% penicillin/streptomycin. Cells were manually counted on a hemocytometer using Trypan blue and plated in methylcellulose media (M3434 or M3334, Stem Cell Technologies) at a density of 5 × 105 live cells/ml (in M3434) or 104 live cells/ml (in M3334) in 35 mm cell culture plates. Samples were incubated at 37 °C in 6.5% CO2 at constant humidity. Colonies were scored and evaluated 7–10 days after plating. To replate, cells were washed from the plates with RMPI media, counted, and re-plated in fresh M3334 methylcellulose at a density of 104 live cells/dish in 35 mm plates. This process was repeated until cell exhaustion in one of the experimental groups.
 
-## Bone marrow transplantation
+### Bone marrow transplantation
 
 6- to 8-weeks-old B6.SJL (CD45.1) recipient mice were lethally irradiated with a single dose of 950 Gy using a Cesium-137 gamma-ray irradiator (Mark I irradiator Model 68) at least 3 hr before transplantation. For non-competitive assays, 106 whole bone marrow cells from a donor control (Rps12flox/flox or Rps12flox/+) or Rps12KO/+ mouse (CD45.2) were injected into the retro-orbital venous sinus of recipient mice under isoflurane anesthesia. For competitive transplants, 105 whole bone marrow cells from control Rps12flox/+ or Rps12KO/+ donor mouse (CD45.2), and 105 competitor cells from a B6.SJL (CD45.1) mouse were injected into each recipient mouse. Mice were given drinking water treated with 100 mg/ml Baytril100 (Bayer) for 3 weeks after transplantation. Peripheral blood was collected every 4 weeks and animals were euthanized at the specified experimental time points.
 
-## Western blot analysis
+### Western blot analysis
 
 Whole bone marrow cells were enriched for cKit + cells using CD117 MicroBeads and MACS LS Columns (Miltenyi Biotec 130-091-224 and 130-042-401) following the manufacturer’s protocol. 2 × 106 cKit enriched cells were resuspended in 150 µl Laemmli buffer (BioRad 1610737) supplemented with 1:10 β-mercaptoethanol, passed through a 25 G needle to break the DNA and incubated at 95 °C for 5 min. An equal amount of each sample was separated in polyacrylamide gels (BioRad 4568081), transferred to nitrocellulose membrane (Licor), and blocked (Licor 927–90001). IRDye near-infrared secondary antibodies (Licor) were used to visualize the proteins. The following primary antibodies were used: RpS12 (Proteintech; polyclonal), β-actin (Cell Signaling; 13E5), eIF2α (Cell signaling, 5324T), phospho-eIF2α (Thermo Scientific; Ser52; polyclonal).
 
-## RNA extraction, RT-qPCR, and bioanalyzer analysis
+### RNA extraction, RT-qPCR, and bioanalyzer analysis
 
 Total RNA was extracted from 2 × 106 cKit enriched cells (isolated using CD117 MicroBeads as previously described) with mirVana miRNA Isolation Kit (Thermo Fisher AM1560) following the manufacturer’s instructions for the isolation of total RNA. Final RNA concentration was determined using a NanoDrop Mircrovolume Spectrophotometer (Thermo Scientific). For RT-qPCR, cDNA synthesis was performed using 405 ng of total RNA and the Mir-X miRNA First-Strand Synthesis Kit (Takara Bio 638313) as recommended by the manufacturer. cDNA samples were analyzed, in duplicates, using Power SYBR Green Master Mix (Applied Biosystems 4367659) in an Applied Biosystems StepOne Real-Time PCR instrument (Applied Biosystems 4376357). For mRNA analysis, GAPDH, HPRT1, and RER1 mRNA levels were used as internal controls, and for snoRNA analysis, U6, Sno202, and Sno234, small RNAs were used as internal controls.
 
-## Histology
+### Histology
 
 Peripheral blood smears and cytospins from RBC lysed bone marrow samples were stained using the Hema 3 System (Fisher) following the manufacturer’s instructions. The images were acquired using a Zeiss Axiovert microscope with a digital camera.
 
-## Statistical methods
+### Statistical methods
 
 Two-tailed Student’s t-tests were performed to compare the statistical significance between the two samples. When comparing more than two groups, one-way ANOVA tests were performed with the Turkey’s multiple comparison test. For the presence/absence of phenotype, statistical significance was calculated with Fisher’s exact test. Analysis was done using GraphPad Prism v9.
 
-## Reagents
+### Reagents
 
 All antibodies used for flow cytometry assays, and primers used for CRISPR gene editing and PCR can be found in Supplementary file 1 and the Key Resources Table. Other reagents are mentioned in the methods section and Key Resources Table.

@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Strains of the influenza virus form coherent global populations, yet exist at the level of single infections in individual hosts. The relationship between these scales is a critical topic for understanding viral evolution. Here we investigate the within-host relationship between selection and the stochastic effects of genetic drift, estimating an effective population size of infection N e for influenza infection. Examining whole-genome sequence data describing a chronic case of influenza B in a severely immunocompromised child we infer an N e of 2.5 × 10 7 (95% confidence range 1.0 × 10 7 to 9.0 × 10 7 ) suggesting that genetic drift is of minimal importance during an established influenza infection. Our result, supported by data from influenza A infection, suggests that positive selection during within-host infection is primarily limited by the typically short period of infection. Atypically long infections may have a disproportionate influence upon global patterns of viral evolution.
+Strains of the influenza virus form coherent global populations, yet exist at the level of single infections in individual hosts. The relationship between these scales is a critical topic for understanding viral evolution. Here we investigate the within-host relationship between selection and the stochastic effects of genetic drift, estimating an effective population size of infection Ne for influenza infection. Examining whole-genome sequence data describing a chronic case of influenza B in a severely immunocompromised child we infer an Ne of 2.5 × 107 (95% confidence range 1.0 × 107 to 9.0 × 107) suggesting that genetic drift is of minimal importance during an established influenza infection. Our result, supported by data from influenza A infection, suggests that positive selection during within-host infection is primarily limited by the typically short period of infection. Atypically long infections may have a disproportionate influence upon global patterns of viral evolution.
 
 ## Introduction
 
@@ -37,9 +37,51 @@ We here estimate a mean effective population size for an established within-host
 
 Viral samples were collected at 41 time points spanning 8 months during the course of an influenza B infection in a severely immunocompromised host (Figure 1A). Clinical details of the case, and the use of viral sequence data in evaluating the effectiveness of clinical intervention, have been described elsewhere (Lumby et al., 2020). After unsuccessful treatment with oseltamivir, zanamivir and nitazoxanide, a bone marrow transplant and favipiravir combination therapy led to the apparent clearance of infection. Apart from a single exception, biweekly samples tested negative for influenza across a period of close to two months. A subsequent resurgence of zanamivir-resistant infection was cleared by favipiravir and zanamivir in combination.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-v2.jpg)
+
+**Figure 1.:** (A) CT values from viral samples collected over time indicate the viral load of the infection; a higher number corresponds to a lower viral load. Drug information, above, shows the times during which oseltamivir (green), zanamivir (yellow), nitazoxanide (blue) and favipiravir (purple) were prescribed. Black dots show samples from which viral sequence data were collected; gray dots show samples from which viral sequence data were not collected. The green box shows the window of time over which samples were analysed, preceding the use of favipiravir in January. The mean viral load (dashed horizontal line, red) was close to the mean reported for a set of samples from hospitalised children with influenza (dashed horizontal blue line) (Wishaupt et al., 2017). A black arrow shows the date of a bone marrow transplant (BMT). (B) A phylogeny of whole-genome viral consensus sequences identified two distinct clades in the viral population. Clade B featured three samples, distributed across the period of infection, with the remaining samples contained in Clade A. (C) Sub-consensus structure of the viral population inferred via a haplotype reconstruction algorithm using data from the neuraminidase segment. The same division of sequences into two clades is visible, with samples being comprised of distinct viral genotypes. The area of each circle is proportional to the inferred frequency of the corresponding haplotype in the viral population. Haplotypes reaching a frequency of at least 10% in at least one time point are shown. Multiple drugs were administered to the patient through time, with a favipiravir/zanamivir combination first causing a temporary reduction of the population to undetectable levels, then finally clearing the infection. Haplotypes spanned the loci 96, 170, 177, 402, 403, 483, 571, 653, 968, 973, 1011, 1079, 1170, and 1240 in the NA segment. (D) Evolutionary relationship between the haplotypes; clade B is distinct from and evolves away from those sequences comprising the initial infection. Numbers refer to the distinct haplotypes identified within the population.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sub-consensus structure of the viral population inferred via a haplotype reconstruction algorithm using data from the haemagglutinin segment. A division of sequences into two clades is visible, with samples including largely distinct viral genotypes. The area of each circle is proportional to the amount of virus in each clade. Haplotypes reaching a frequency of at least 10% in at least one time point are shown. Haplotypes spanned the loci 258, 261, 364, 451, 521, 541, 635, and 641 in the HA segment. (B) Evolutionary relationship between the haplotypes; clade B is distinct from and evolves away from those sequences comprising the initial infection. Numbers refer to the distinct haplotypes identified within the population.
+
 Phylogenetic analysis of whole-genome viral consensus sequences showed the existence of non-trivial population structure, with at least two distinct clades emerging over time (Figure 1B, Figure 1—figure supplement 1); we term these clades A and B. Having diverged, the two clades persisted across several months of infection. Haplotype reconstruction showed that samples from clade B were comprised of distinct viral haplotypes to those from clade A; similar patterns were observed in different viral segments (Figure 1—figure supplement 2). The October 4th sample is intermediate between the initial and final samples collected (Figure 1D). We suggest that, from a common evolutionary origin, Clade B slowly evolved away from the initial consensus, while viruses in clade A stayed close in sequence space to this consensus. The cladal structure suggests the existence of spatially distinct viral populations in the host, samples stochastically representing one population or the other.
 
 To estimate the effective population size, we analysed genome-wide sequence data from samples in clade A collected before first use of favipiravir. A method of linear regression was used to quantify the rate of viral evolution, measuring the genetic distance between samples as a function of increasing time between dates of sample collection. We inferred a rate equivalent to 0.051 substitutions per day (97.5% confidence interval 0.034 to 0.068) (Figure 2A), equivalent to 7.94 substitutions genome-wide across 157 days of evolution. The vertical intercept of this line provides an estimate of the contribution of noise to the measured distance between samples, potentially arising from sequencing error or undiagnosed population structure. The identified value of close to 40 substitutions is equivalent to a between-sample allele frequency difference of approximately +/- 0.3% per locus. While considerable noise affects each sample, the dataset as a whole provides a clear signal of evolutionary change.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-v2.jpg)
+
+**Figure 2.:** (A) Computed rate of evolution for viruses in clade A up to the time of the first use of favipiravir. The distance between two sequences is calculated as the total absolute difference in four-allele frequencies measured across the genome. The calculated rate per generation is based upon a generation time for influenza of 10 hours (Nobusawa and Sato, 2006). (B) Distribution of evolutionary distances in influenza populations simulated using a Wright-Fisher model compared to the distance per generation calculated in the regression fit. A solid blue line shows the mean, with shading indicating an approximate 97.5% confidence interval around the mean. Statistics were calculated from sets of 400 simulations conducted at each value of Ne. The dashed black line shows the rate of evolution of the real population; gray shading shows a 97.5% confidence interval for this statistic. (C) Calculated rate of evolution for viruses in clade B. For the purposes of calculating a rate of evolution the first sample collected from the patient was included as part of clade B. (D) Estimation of Ne for clade B. The results of simulations shown here are identical to those in part B of the figure.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The consensus glutamate nucleotide (blue) was sometimes replaced by glycine (green), valine (yellow), and alanine (red). Glycine and alanine are associated with zanamivir resistance in influenza B.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Comparison of rates of synonymous and non-synonymous evolution for viruses in clade A up to the time of the administration of favipiravir. The distance between two samples is calculated as the mean absolute difference in allele frequency, as averaged over synonymous and non-synonymous positions in the genome. (B) Comparison of rates of synonymous and non-synonymous evolution for viruses in clade (B) The rate of evolution in both clades was slower at non-synonymous sites than at synonymous sites, suggesting a general pattern of purifying selection at non-synonymous sites. Change in the population was not as a whole driven by positive selection.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Patients are denoted with the letters assigned them in the original study (Xue et al., 2017). Rates of evolution within each patient were calculated by linear regression, conducted on a plot of evolutionary versus temporal distance between samples. The inferred regression line is shown in red for each dataset. For Patient W samples collected at two time points appear as outliers in the distance plot; distances involving these samples, shown in yellow, were excluded from the calculation. Accompanying plots show distances inferred via simulation compared to the inferred rates. A solid blue line shows the mean, with shading indicating an approximate 97.5% confidence interval around the mean. Statistics were calculated from sets of 400 simulations conducted at each value of Ne.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Allele frequencies from across the genome are sorted and shown on a log scale.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Samples in this dataset were split following RNA extraction with replicate sets of RNA being processed and sequenced independently. Variants at higher frequencies were identified at more consistent frequencies than variants at lower frequencies.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** V indicates the identification of a variant, while X indicates the non-identification of a variant. Combinations of V and X indicate observations made in two replicate samples.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/56915/elife-56915-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** While high frequency variants were very reliably identified, the reliability of identifying variants was significantly impaired at lower frequencies.
 
 A simulation based analysis, measuring the extent of evolution in idealised Wright-Fisher populations (Kimura and Crow, 1963), inferred an effective population size of 2.5 × 107 (95% confidence range 1.0 × 107 to 9.0 × 107) for viruses in clade A before the use of favipiravir (Figure 2B). This value is substantially larger than estimates made recently for within-host HIV infection (Pennings et al., 2014; Rouzine et al., 2014), and suggests that even weak selection could easily overcome genetic drift. Data from clade B gave a lower estimated value of 2 × 106, (95% confidence range 4 × 105 to 2 × 108) perhaps reflecting the less frequent observation of samples in that clade (Figure 2C,D), and the bottleneck induced by favipiravir, which was spanned by the data used in this calculation.
 
@@ -57,37 +99,93 @@ Our result highlights the potential importance of longer infections in the adapt
 
 ## Materials and methods
 
-## Summary
+### Summary
 
-In a single-locus haploid system, the expected change in a variant allele with frequency q caused by genetic drift is given by the formula (Charlesworth, 2009)(1)ΕΔq=q(1-q)Ne
+In a single-locus haploid system, the expected change in a variant allele with frequency q caused by genetic drift is given by the formula (Charlesworth, 2009)
+
+$$
+ΕΔq=\sqrt{\frac{q(1-q)}{N_{e}}}
+$$
 
 This fact has been exploited to evaluate the size of transmission bottlenecks in influenza infection, comparing statistics of genome sequence data collected before and after a transmission event (Poon et al., 2016; Sobel Leonard et al., 2017b). Such a calculation may be affected by noise in the sampling or sequencing of a population, particularly where the extent of noise outweighs the genuine change in a population (Lumby et al., 2018). Here we suggest that, given multiple samples from a population, an alternative approach is possible; we use this to derive a more robust estimate of Ne. By means of evolutionary simulations we estimate Ne for cases of within-host influenza infection.
 
-## Sequence data and bioinformatics
+### Sequence data and bioinformatics
 
 Sequence data describing the evolution of the infection was generated as part of a previous study (Lumby et al., 2020). Data, edited to remove human genome sequence data, have been deposited in the Sequence Read Archive with BioProject ID PRJNA601176. The HCV data used in validating the sequencing pipeline (see below) were previously deposited in the Sequence Read Archive with BioProject ID PRJNA380188. Processed files describing raw variant frequencies for both datasets are available, along with code used in this project, at https://github.com/cjri/FluBData (copy archived at https://github.com/elifesciences-publications/FluBData; Illingworth, 2020a).
 
 Short-read data were aligned first to a broad set of influenza sequences. Sequences from this set to which the highest number of reads aligned were identified and used to carry out a second short-read alignment. The SAMFIRE software package was then used to filter the short-read data with a PHRED score cutoff of 30, to identify consensus sequences, and to calculate the number of each nucleotide found at each position in the genome. SAMFIRE is available from https://github.com/cjri/samfire (Illingworth, 2020b).
 
-## Calculation of evolutionary distances
+### Calculation of evolutionary distances
 
-Variant frequencies at different time points during infection were used to calculate a rate of change in the population over time. We define q(t) as a 4 x L element vector describing the frequencies of each of the nucleotides A, C, G, and T at each locus in the viral genome at time t. We next define a distance between vectors q. Considering a single locus in the genome, we calculate the change in allele frequencies over time via a generalisation of the Hamming distance(2)dqit1,qit2=12∑aϵA,C,G,Tqiat1-qiat2where the term inside the sum indicates the absolute difference between the frequency of allele a at locus i. The statistic di is equal to one in the case of a substitution, for example where only A nucleotides are observed in one sample and only G nucleotides in another. However, in contrast to the Hamming distance it further captures smaller changes in allele frequencies, lesser changes producing values between zero and one, such that a change of a variant frequency from 45% to 55% at a two-allele locus would equate to a distance of 0.1, representing half of the sum of the absolute changes in each of the two frequencies. The total distance between the two vectors may now be calculated as(3)Dqt1,qt2=∑idqit1,qit2where the sum over i is conducted over all loci in the viral genome.
+Variant frequencies at different time points during infection were used to calculate a rate of change in the population over time. We define q(t) as a 4 x L element vector describing the frequencies of each of the nucleotides A, C, G, and T at each locus in the viral genome at time t. We next define a distance between vectors q. Considering a single locus in the genome, we calculate the change in allele frequencies over time via a generalisation of the Hamming distance
 
-Sequence distances for non-synonymous and synonymous mutations were calculated in a similar manner, with the exception that distances were calculated over individual nucleotides rather than in a per-locus manner. We calculated(4)DNSqt1,qt2=12AN,i∑a,iϵAN,iqiat1-qiat2and(5)DSqt1,qt2=12AS,i∑a,iϵAS,iqiat1-qiat2where AN,i and AS,i are the sets of nucleotides a and positions i in the genome which respectively induce non-synonymous and synonymous changes in the consensus sequence. Synonymous and non-synonymous variants were identified with respect to influenza B protein sequences; a nucleotide substitution was defined as being non-synonymous if it induced a change in the coded protein in at least one viral protein sequence. By contrast to our primary distance measurement, values for synonymous and non-synonymous sites were calculated as mean distances per nucleotide, reflecting the differing numbers of each type of potential substitution in the viral genome.
+$$
+dq_{i}t_{1},q_{i}t_{2}=\frac{1}{2}\sumaϵA,C,G,Tq_{i}^{a}t_{1}-q_{i}^{a}t_{2}
+$$
 
-## Estimation of effective population size
+where the term inside the sum indicates the absolute difference between the frequency of allele a at locus i. The statistic di is equal to one in the case of a substitution, for example where only A nucleotides are observed in one sample and only G nucleotides in another. However, in contrast to the Hamming distance it further captures smaller changes in allele frequencies, lesser changes producing values between zero and one, such that a change of a variant frequency from 45% to 55% at a two-allele locus would equate to a distance of 0.1, representing half of the sum of the absolute changes in each of the two frequencies. The total distance between the two vectors may now be calculated as
+
+$$
+Dqt_{1},qt_{2}=\sumidq_{i}t_{1},q_{i}t_{2}
+$$
+
+where the sum over i is conducted over all loci in the viral genome.
+
+Sequence distances for non-synonymous and synonymous mutations were calculated in a similar manner, with the exception that distances were calculated over individual nucleotides rather than in a per-locus manner. We calculated
+
+$$
+D^{NS}qt_{1},qt_{2}=\frac{1}{2A_{N,i}}\suma,iϵA_{N,i}q_{i}^{a}t_{1}-q_{i}^{a}t_{2}
+$$
+
+and
+
+$$
+D^{S}qt_{1},qt_{2}=\frac{1}{2A_{S,i}}\suma,iϵA_{S,i}q_{i}^{a}t_{1}-q_{i}^{a}t_{2}
+$$
+
+where AN,i and AS,i are the sets of nucleotides a and positions i in the genome which respectively induce non-synonymous and synonymous changes in the consensus sequence. Synonymous and non-synonymous variants were identified with respect to influenza B protein sequences; a nucleotide substitution was defined as being non-synonymous if it induced a change in the coded protein in at least one viral protein sequence. By contrast to our primary distance measurement, values for synonymous and non-synonymous sites were calculated as mean distances per nucleotide, reflecting the differing numbers of each type of potential substitution in the viral genome.
+
+### Estimation of effective population size
 
 We converted our measurements of sequence distance into an estimate of Ne by means of a simplified evolutionary model, assuming that all of the change in the population results from genetic drift. We first note the effect of error in measurements of the population upon our distance metric.
 
-We suppose that at the time t, we make the observation:(6)q^(t)=q(t)+e(t)where e is the error in measuring the population. Our definition of ‘error’ here is a broad one; we include both the potential for viral material in a single swab to not fully capture the entire viral diversity within the host and the potential for the sequencing pipeline to distort the composition of the material in the swab (Illingworth et al., 2017). In our distance calculation, we now have:(7)D(q^(t1),q^(t2))=12∑i∑aϵ{A,C,G,T}|(qia(t1)−qia(t2))+((eia(t1)−eia(t2))|where the terms ei are locus-specific errors in the measurement of allele frequencies; we write this equation in the form:(8)D(q^(t1),q^(t2))=D(q(t1),q(t2))+E(q(t1),q(t2))where E is the deviation incurred from the true distance.
+We suppose that at the time t, we make the observation:
 
-Here, given only two error-prone samples from a system, separation of the real population distance and the error term is impossible. However, given multiple samples, an approximate separation can be made. We here use linear regression to fit a model to the observed distances, fitting the model:(9)D(q^(ti),q^(tj))≈k|tj−ti|+Efor constant values k, approximating the rate of evolutionary change in the population per unit time, and E, approximating the mean amount of error in a measurement; here the term in vertical brackets is the absolute difference in time between samples i and j. This approach makes two approximations, which we believe to be either reasonable or possible to account for. Firstly, the model assumes that a linear model is appropriate to describe the change in the population over time; within our drift framework this is correct if the effective population size Ne is constant, and if the distribution of allele frequencies does not change over time. In our data, the consensus population declines approximately eight-fold (Lumby et al., 2020), then undergoes a bottleneck due to the influence of favipiravir; we infer a representative mean value of N, selecting for clade A only samples collected before the bottleneck. Secondly, our model assumes that the deviation from truth in our distance metric does not change in a manner that is systematically associated with the time between samples. Regarding the sequencing process we believe this to be correct in so far as a consistent sequencing pipeline was used throughout. Regarding within-host population structure we note in our data a divergence over time between samples from clade A and clade B, but split these samples to obtain distinct estimates of Ne for each clade. We note that large deviations from our model assumptions can be qualitatively identified by a poor fit between a simple regression model and the data.
+$$
+q^(t)=q(t)+e(t)
+$$
+
+where e is the error in measuring the population. Our definition of ‘error’ here is a broad one; we include both the potential for viral material in a single swab to not fully capture the entire viral diversity within the host and the potential for the sequencing pipeline to distort the composition of the material in the swab (Illingworth et al., 2017). In our distance calculation, we now have:
+
+$$
+D(q^(t_{1}),q^(t_{2}))=\frac{1}{2}\sumi\sumaϵ{A,C,G,T}|(q_{i}^{a}(t_{1})−q_{i}^{a}(t_{2}))+((e_{i}^{a}(t_{1})−e_{i}^{a}(t_{2}))|
+$$
+
+where the terms ei are locus-specific errors in the measurement of allele frequencies; we write this equation in the form:
+
+$$
+D(q^(t_{1}),q^(t_{2}))=D(q(t_{1}),q(t_{2}))+E(q(t_{1}),q(t_{2}))
+$$
+
+where E is the deviation incurred from the true distance.
+
+Here, given only two error-prone samples from a system, separation of the real population distance and the error term is impossible. However, given multiple samples, an approximate separation can be made. We here use linear regression to fit a model to the observed distances, fitting the model:
+
+$$
+D(q^(t_{i}),q^(t_{j}))≈k|t_{j}−t_{i}|+E
+$$
+
+for constant values k, approximating the rate of evolutionary change in the population per unit time, and E, approximating the mean amount of error in a measurement; here the term in vertical brackets is the absolute difference in time between samples i and j. This approach makes two approximations, which we believe to be either reasonable or possible to account for. Firstly, the model assumes that a linear model is appropriate to describe the change in the population over time; within our drift framework this is correct if the effective population size Ne is constant, and if the distribution of allele frequencies does not change over time. In our data, the consensus population declines approximately eight-fold (Lumby et al., 2020), then undergoes a bottleneck due to the influence of favipiravir; we infer a representative mean value of N, selecting for clade A only samples collected before the bottleneck. Secondly, our model assumes that the deviation from truth in our distance metric does not change in a manner that is systematically associated with the time between samples. Regarding the sequencing process we believe this to be correct in so far as a consistent sequencing pipeline was used throughout. Regarding within-host population structure we note in our data a divergence over time between samples from clade A and clade B, but split these samples to obtain distinct estimates of Ne for each clade. We note that large deviations from our model assumptions can be qualitatively identified by a poor fit between a simple regression model and the data.
 
 Linear regression was performed using the Mathematica 11 software package, using the same package to calculate a 97.5% confidence interval for the calculated gradient, k.
 
-## Wright-Fisher simulation
+### Wright-Fisher simulation
 
-We next approximated the behaviour of our system using a Wright-Fisher model, re-writing the first component of Equation 9 as(10)D(q(t1),q(t2))≈ΔD(Ne,q(t1))|t2−t1|
+We next approximated the behaviour of our system using a Wright-Fisher model, re-writing the first component of Equation 9 as
+
+$$
+D(q(t_{1}),q(t_{2}))≈ΔD(N_{e},q(t_{1}))|t_{2}−t_{1}|
+$$
 
 Here ΔD is a stochastic function describing the change in the population, measured according to the metric D, that arises from a single generation of genetic drift in a population with effective size Ne and initial allele frequencies q(t1). Regarding these allele frequencies we note that the distribution of minor allele frequencies across the genome was reasonably constant between samples for which a good read depth was achieved (Figure 2—figure supplement 4; read depths for these data have previously been reported Lumby et al., 2020). To account for variance in these statistics we used different samples to initiate our simulations, reporting error bars across choices of q(t1).
 
@@ -101,7 +199,7 @@ For each population size tested, our simulation was run 400 times, using the dat
 
 Amendments were made to the above approach.
 
-## Accounting for false-positive variants in sequencing: Estimating a false positive rate
+### Accounting for false-positive variants in sequencing: Estimating a false positive rate
 
 The evolutionary distance ΔD(N,q(t1)) calculated by our method is dependent upon the vector of allele frequencies q. Given a greater number of polymorphic alleles in a system, the evolutionary distance, calculated as the sum of allele frequency changes, will also increase. While the experimental pipeline we used has been shown to perform well in capturing within-host viral diversity (STOP-HCV Consortium et al., 2016), the possibility remains that sequencing could contribute additional diversity to the initial populations used in our simulation. We therefore made an estimate of the extent to which our sequencing process led to the false identification of variants. To achieve this, we used data from a previous study describing the repeat sequencing of hepatitis C virus (HCV) samples from a host (Illingworth et al., 2017); data in this previous study were collected using the same sequencing pipeline as that used to collect the data considered here and therefore provide a generic measure of the level of false positive variation. The data we analysed, coded as HCV01 in the original study, comprised four clinical HCV samples, each of which was split following nucleic acid extraction. Some replicate samples were processed using a DNase depletion method before all samples went through cDNA synthesis, library preparation and sequencing. DNase depletion led to samples with lower read depth; we here compared sequence data collected from the non-depleted replicates of each sample. Variant frequencies within this dataset, where variation was observed in more than one sample, are shown in Figure 2—figure supplement 5.
 
@@ -111,23 +209,75 @@ Sequencing of a specific position in the genome results in the observation or no
 
 The underlying purpose of our calculation is to remove falsely detected variation from the population. We begin by assuming that the false negative rate of detecting variants is equal to zero. That is, where we do not see a variant in the sequence data, we assume that a variant is never actually present. This is a conservative step in so far as we never add unobserved variation to the population. Our assumption gives the result that the false negative rate, PX|P = 0. In so far that a variant is never unobserved it follows that the true positive rate PV|P = 1.
 
-We may now construct expressions for the probabilities of observing each of the four possible outcomes. Noting that PV|N + PX|N = 1 we obtain(11)PVV=PPPV|P2+1-PPPV|N2=PP+1-PPPV|N2(12)PVX=PXV=PPPX|PPV|P+1-PPPX|NPV|N=1-PP1-PV|NPV|N(13)PXX=PPPX|P2+1-PPPX|N2=1-PP1-PV|N2
+We may now construct expressions for the probabilities of observing each of the four possible outcomes. Noting that PV|N + PX|N = 1 we obtain
+
+$$
+P_{VV}=P_{P}P_{V|P}^{2}+1-P_{P}P_{V|N}^{2}=P_{P}+1-P_{P}P_{V|N}^{2}
+$$
+
+
+
+$$
+P_{VX}=P_{XV}=P_{P}P_{X|P}P_{V|P}+1-P_{P}P_{X|N}P_{V|N}=1-P_{P}1-P_{V|N}P_{V|N}
+$$
+
+
+
+$$
+P_{XX}=P_{P}P_{X|P}^{2}+1-P_{P}P_{X|N}^{2}=1-P_{P}1-P_{V|N}^{2}
+$$
 
 Thus the outcome probabilities may be expressed in terms of the underlying probability of a position having a variant, PP, and the false positive rate PV|N.
 
 We next processed our sequence replicate data, considering only sites that were sequenced to a read depth of at least 2000-fold coverage. For each locus in a dataset, we calculated the observed frequency of each of the nucleotides A, C, G, and T, generating pairs which described these frequencies in each of our two replicate datasets. Removing pairs in which an allele has a frequency of more than 0.5 in either of the two datasets, we obtained a list of minority variants from each locus, generally comprising three allele frequency pairs per locus. If it is correct that two of the three minority alleles have very low frequencies, the frequencies are close to being statistically independent; the existence of a very few alleles of one minority type does not greatly affect the probability of another variant allele being observed in another read. We note that, of the more than 73 thousand sites sequenced, only 56, fewer than 0.1%, had more than one minority variant at a frequency greater than 1%. We proceeded on the assumption that each pair of minority frequencies was statistically independent of the others.
 
-From the repeated observations of sites, we may count the number of observations of each of the four outcomes; given a total of N pairs we denote these as NVV, NVX, NXV, and NXX. Under our model of independent pairs we constructed the multinomial log likelihood of the underlying variant and false positive rates.(14)L(PP,PV|N)=log⁡NNVVNVXNXVNXXPVVNVVPVXNVXPXVNXVPXXNXXwhere the terms Pab are constructed from PP and PV|N according to the equations above.
+From the repeated observations of sites, we may count the number of observations of each of the four outcomes; given a total of N pairs we denote these as NVV, NVX, NXV, and NXX. Under our model of independent pairs we constructed the multinomial log likelihood of the underlying variant and false positive rates.
 
-Given a set of paired observations, we calculated the maximum likelihood values of PP and PV|N. From these statistics we are able to calculate the positive predictive value of sequencing, namely the proportion of observed variants that are true positives. This is achieved by dividing the probability that a true positive was detected (equal to the number of true positives as PV|P = 1), by the probability that a variant was detected:(15)PPV=PPPP+(1-PP)PV|N
+$$
+L(P_{P},P_{V|N})=log⁡NN_{VV}N_{VX}N_{XV}N_{XX}P_{VV}^{N_{VV}}P_{VX}^{N_{VX}}P_{XV}^{N_{XV}}P_{XX}^{N_{XX}}
+$$
 
-## Frequency dependence of false-positive variant calling
+where the terms Pab are constructed from PP and PV|N according to the equations above.
+
+Given a set of paired observations, we calculated the maximum likelihood values of PP and PV|N. From these statistics we are able to calculate the positive predictive value of sequencing, namely the proportion of observed variants that are true positives. This is achieved by dividing the probability that a true positive was detected (equal to the number of true positives as PV|P = 1), by the probability that a variant was detected:
+
+$$
+PPV=\frac{P_{P}}{P_{P}+(1-P_{P})P_{V|N}}
+$$
+
+### Frequency dependence of false-positive variant calling
 
 Within our data, our expectation was that minority variants at higher allele frequencies would be more likely to be observed as variants in both replicate samples. We note that, where a frequency cutoff is applied to identify variants, care is required in the above protocol. For example, if a hard threshold was applied, in which variants were called at 1% frequency, a variant that was detected at frequencies of 1.01% and 0.99% would be regarded as having been observed in one case, and not observed in the other, although it likely represents a consistent observation.
 
-In order to assess the frequency dependence of our true positive rate, we defined minimum and maximum variant frequency thresholds qmin and qmax, and denoted the replicate observations of a minority variant frequency as qA and qB in the two samples. We further defined the frequency qcut according to the formula:(16)qcut=min⁡qmin,max⁡qmin2,0.001
+In order to assess the frequency dependence of our true positive rate, we defined minimum and maximum variant frequency thresholds qmin and qmax, and denoted the replicate observations of a minority variant frequency as qA and qB in the two samples. We further defined the frequency qcut according to the formula:
 
-We then defined regions of frequency space as follows:VV:qA≥qcut;qA<qmax; qB≥qcut;qB<qmax; qA+qB≥3qmax2;qA+qB<3qmax2;VX:qmin≤qA<qmax; qB<qcutXV: qA<qcut; qmin≤qB<qmax(17)XX:qA<qcut; qB<qcut; qA+qB<3qmin2
+$$
+q^{cut}=min⁡q^{min},max⁡\frac{q^{min}}{2},0.001
+$$
+
+We then defined regions of frequency space as follows:
+
+$$
+VV:q^{A}\geqq^{cut};q^{A}<q^{max}; q^{B}\geqq^{cut};q^{B}<q^{max}; q^{A}+q^{B}\geq\frac{3q^{max}}{2};q^{A}+q^{B}<\frac{3q^{max}}{2};
+$$
+
+
+
+$$
+VX:q^{min}\leqq^{A}<q^{max}; q^{B}<q^{cut}
+$$
+
+
+
+$$
+XV: q^{A}<q^{cut}; q^{min}\leqq^{B}<q^{max}
+$$
+
+
+
+$$
+XX:q^{A}<q^{cut}; q^{B}<q^{cut}; q^{A}+q^{B}<\frac{3q^{min}}{2}
+$$
 
 These inequalities are illustrated in Figure 2—figure supplement 6.
 
@@ -135,34 +285,44 @@ In the above, qcut functions to slightly harshen the criteria for detecting vari
 
 For different ranges of frequency values, qmin and qmax, the proportion of observed variants that were true positives was calculated according to the maximum likelihood method above, using these categorisations. Results are shown in Figure 2—figure supplement 7. In the process of setting up the initial state of our Wright-Fisher simulation variants observed in the sequence data were considered in turn, drawing a Bernoulli random variable for each variant. Variants were included in the initial simulated population with probability equal to the proportion of observed variants that were estimated to be true positives.
 
-## Accounting for mutation-selection balance
+### Accounting for mutation-selection balance
 
 To account for our neglect of mutation, a frequency cutoff was applied to our simulation data. Under a pure process of genetic drift, low-frequency variants in our population are likely to die out, reaching a frequency of zero. In a real population, this would not occur, variants being sustained at low frequencies by a balance of mutation and purifying selection (Haldane, 1937; Haigh, 1978). To correct for this we post-processed the initial and final frequency values from our simulations before calculating our distance, imposing a minimum minority allele frequency of 0.1%. All changes in allele frequency below this threshold were ignored, such that, for example, if a variant changed from 0.5% to 0%, this was processed after the fact so that the variant changed from 0.5% to 0.1%. The choice of threshold here is conservative; leading to a conservatively low estimate of Ne.
 
-## Confidence intervals
+### Confidence intervals
 
 Confidence intervals for the effective population size were calculated as the overlap of 97.5% confidence intervals for the evolutionary rates in the observed data, calculated from the regression for the real data, and estimated from the simulated statistics. The overlap of these values gives an approximate 95% confidence interval for Ne.
 
-## Variations in methodology
+### Variations in methodology
 
 A number of choices were made in our estimation of an effective population size. The effects of each of these choices were explored through further calculation and simulation. Results are shown in Supplementary file 1.
 
-## Approximations in the Wright-Fisher model
+### Approximations in the Wright-Fisher model
 
-In the calculation to set up an initial viral population, the assignment of minority alleles to sequences becomes slow at large population sizes. Our code simulated viral genomes; a variant allele was included into the population by choosing an appropriate proportion of genomes to which the variant was assigned. For greater computational efficiency we used a pseudo-random approach for choosing genomes. Given a population size N, we generated a set P of prime numbers that were each larger than N. Given some desired allele frequency q we wish to choose qN genomes to which to assign the variant. We therefore calculated the set of numbers:(18)ak(mod p)where p is a prime number sampled at random from the set P, and a is a randomly chosen primitive root of p. Given this choice of a and p, the values ak (where k is an integer between one and p-1) form a pseudorandom permutation of the numbers from one to p-1. We constructed a set of qN genomes by choosing genomes indexed in turn by the elements of this set, beginning from k = 1, and discarding values greater than N.
+In the calculation to set up an initial viral population, the assignment of minority alleles to sequences becomes slow at large population sizes. Our code simulated viral genomes; a variant allele was included into the population by choosing an appropriate proportion of genomes to which the variant was assigned. For greater computational efficiency we used a pseudo-random approach for choosing genomes. Given a population size N, we generated a set P of prime numbers that were each larger than N. Given some desired allele frequency q we wish to choose qN genomes to which to assign the variant. We therefore calculated the set of numbers:
+
+$$
+a^{k}(modp)
+$$
+
+where p is a prime number sampled at random from the set P, and a is a randomly chosen primitive root of p. Given this choice of a and p, the values ak (where k is an integer between one and p-1) form a pseudorandom permutation of the numbers from one to p-1. We constructed a set of qN genomes by choosing genomes indexed in turn by the elements of this set, beginning from k = 1, and discarding values greater than N.
 
 To achieve calculations for population sizes larger than 107 we implemented a statistical averaging method. We generated a single population of size 106, then generated 200 outcomes of a single generation of the same size, recording allele frequencies in each case. In order to simulate a value of N of size r x 106 we compared the frequencies of the initial population to the mean frequencies of a random set of r outcomes. This is equivalent of simulating transmission from a population of size r x 106 in which the initial population contains r copies of each of one of 106 genotypes.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Consensus sequences of data were analysed using the BEAST2 software package (Bouckaert et al., 2014). Consensus sequences from each viral segment were concatenated then aligned using MUSCLE (Edgar, 2004) before performing a phylogenetic analysis on the whole genome sequence alignment. The B/Venezuela/02/2016 sequence was used to root the alignment, the haemagglutinin segment of this virus having been identified as being very close to those from the patient. Trees were generated using the HKY substitution model (Hasegawa et al., 1985). A Monte Carlo process was run for 10 million iterations, generating a consensus tree with TreeAnnotator using the first 10% of trees as burn-in. Figures were made using the FigTree package (http://tree.bio.ed.ac.uk/software/figtree/).
 
-## Haplotype reconstruction
+### Haplotype reconstruction
 
-Haplotype reconstruction was performed using multi-locus polymorphism data generated by the SAMFIRE software package (Illingworth, 2016). Variant loci in the genome were identified as those at which a change in the consensus nucleotide was observed between the initial and the final consensus. The short-read data were then processed, converting reads into strings of alleles observed at these loci; a single paired-end read may describe alleles at none, one, or multiple loci. Next, these strings were combined using a combinatorial algorithm to construct a list of single-segment haplotypes, sufficient to explain all of the observed data; no frequencies were inferred at this point. Finally, a Dirichlet-multinomial model was used to infer the maximum likelihood frequencies of each haplotype given the data from each time point (Illingworth, 2015). Formally, we divided reads into sets, according to the loci at which they described alleles. A multi-locus variant consists of an observation of some specific alleles at the loci in question. By way of notation, we denote by nia the number of reads in set i which describe the multi-locus variant a, and denote the total number of reads in the set as Ni. Given a set of haplotypes with frequencies given by the elements of the vector q, we write as qia the summed frequencies of haplotypes that match each multi-locus variant a in set i. For example, the haplotypes ATA and ATG would both match the multi-locus variant AT- describing alleles at only the first two loci. We now express a likelihood for the haplotype frequencies:(19)ℒq=∑ilog⁡Γ(Ni+1)∏aΓ(nia+1)Γ(∑aCqia)Γ(∑ania+Cqia)∏aΓ(nia+Cqia)Γ(Cqia)
+Haplotype reconstruction was performed using multi-locus polymorphism data generated by the SAMFIRE software package (Illingworth, 2016). Variant loci in the genome were identified as those at which a change in the consensus nucleotide was observed between the initial and the final consensus. The short-read data were then processed, converting reads into strings of alleles observed at these loci; a single paired-end read may describe alleles at none, one, or multiple loci. Next, these strings were combined using a combinatorial algorithm to construct a list of single-segment haplotypes, sufficient to explain all of the observed data; no frequencies were inferred at this point. Finally, a Dirichlet-multinomial model was used to infer the maximum likelihood frequencies of each haplotype given the data from each time point (Illingworth, 2015). Formally, we divided reads into sets, according to the loci at which they described alleles. A multi-locus variant consists of an observation of some specific alleles at the loci in question. By way of notation, we denote by $n_{i}^{a}$ the number of reads in set i which describe the multi-locus variant a, and denote the total number of reads in the set as Ni. Given a set of haplotypes with frequencies given by the elements of the vector q, we write as $q_{i}^{a}$ the summed frequencies of haplotypes that match each multi-locus variant a in set i. For example, the haplotypes ATA and ATG would both match the multi-locus variant AT- describing alleles at only the first two loci. We now express a likelihood for the haplotype frequencies:
+
+$$
+ℒq=\sumilog⁡\frac{Γ(N_{i}+1)}{\prod_{a}Γ(n_{i}^{a}+1)}\frac{Γ(\sum_{a}Cq_{i}^{a})}{Γ(\sum_{a}n_{i}^{a}+Cq_{i}^{a})}\proda\frac{Γ(n_{i}^{a}+Cq_{i}^{a})}{Γ(Cq_{i}^{a})}
+$$
 
 Here the parameter C describes the extent of noise in the sequence data, a lower value indicating a lower confidence in the sequence data. Haplotype reconstruction was performed by finding the maximum likelihood value of the vector of haplotype frequencies q. A value of C = 200 was chosen for the calculation, representing a conservative estimate given the prior performance of the sequencing pipeline used in this study (Illingworth et al., 2017). In contrast to previous calculations in which an evolutionary model was fitted to data (Illingworth, 2015), haplotype frequencies for each time point and for each viral segment were in this case inferred independently, with no underlying evolutionary model.
 
-## Data describing influenza A/H3N2 infection
+### Data describing influenza A/H3N2 infection
 
 Our analysis of data describing long-term influenza A/H3N2 infection was performed on data from a previous study (Xue et al., 2017). As our method does not require an exceptional quality of sequencing data to calculate a rate of evolution more samples were included in our analysis than were examined in the original study. Using the codes established in the previous study, we used samples from patient W from days 0, 7, 14, 21, 28, 56, 62, 69 and 76; from patient X from days 0, 7, 14, 21, 28, 42, and 72; from patient Y from days 0, 7, 14, 21, 28, 35, 48, 56, and 70; from patient Z from days 14, 15, 20, 25, 41, 48, 55, 62, and 69. An identical procedure to that used to estimate Ne from the influenza B data was applied, calculating a rate of evolution per day from sequence data, scaling this to a rate per generation (in this case a seven hour generation time was modelled [Nobusawa and Sato, 2006]), and then running simulations to estimate Ne. We note that the estimates of false positive rate generated for the influenza B data were applied equally in this case, due to not having equivalent data to re-estimate these values. Examining the data from patient W, our distance measurements suggested potential population structure involving the samples collected on days 62 and 69; these samples were excluded from our regression analysis.

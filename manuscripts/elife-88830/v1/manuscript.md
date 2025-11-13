@@ -20,17 +20,17 @@
 
 ### Affiliations
 
-1. https://ror.org/04q78tk20 Department of Biomedical Engineering, Sungkyunkwan University Suwon Republic of Korea
-2. https://ror.org/04q78tk20 Department of Molecular Cell Biology, Sungkyunkwan University School of Medicine Suwon Republic of Korea
-3. https://ror.org/04q78tk20 School of Mechanical Engineering, Sungkyunkwan University Suwon Republic of Korea
-4. https://ror.org/01zqrxf85 Institute of Molecular Biotechnology of the Austrian Academy of Sciences (IMBA), Vienna Biocenter (VBC) Vienna Austria
-5. https://ror.org/04q78tk20 Department of Breast Cancer Center, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-6. https://ror.org/04q78tk20 Division of Breast Surgery, Department of Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-7. https://ror.org/037zgn354 The Cancer Ecology Center at the James Buchanan Brady Urological Institute, Johns Hopkins School of Medicine Baltimore United States
-8. https://ror.org/00hx57361 Department of Physics, Princeton University Princeton United States
-9. https://ror.org/04q78tk20 Single Cell Network Research Center, Sungkyunkwan University School of Medicine Suwon Republic of Korea
-10. https://ror.org/04q78tk20 Samsung Biomedical Research Institute, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea
-11. https://ror.org/04q78tk20 Institute of Quantum Biophysics (IQB), Sungkyunkwan University Suwon Republic of Korea
+1. Department of Biomedical Engineering, Sungkyunkwan University Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+2. Department of Molecular Cell Biology, Sungkyunkwan University School of Medicine Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+3. School of Mechanical Engineering, Sungkyunkwan University Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+4. Institute of Molecular Biotechnology of the Austrian Academy of Sciences (IMBA), Vienna Biocenter (VBC) Vienna Austria ([ROR:01zqrxf85](https://ror.org/01zqrxf85))
+5. Department of Breast Cancer Center, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+6. Division of Breast Surgery, Department of Surgery, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+7. The Cancer Ecology Center at the James Buchanan Brady Urological Institute, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+8. Department of Physics, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+9. Single Cell Network Research Center, Sungkyunkwan University School of Medicine Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+10. Samsung Biomedical Research Institute, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+11. Institute of Quantum Biophysics (IQB), Sungkyunkwan University Suwon Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
 
 † Corresponding author
 
@@ -54,7 +54,7 @@ Histone deacetylase 11 (HDAC11) is the most recently discovered member of the HD
 
 ## Results
 
-## Formation and characterization of DOX surviving cells
+### Formation and characterization of DOX surviving cells
 
 Approximately 30 wild type MDA-MB-231 cells per microchamber were seeded through the cell seeding hole in the CDRA chip (Figure 2A–C). The day after seeding, the cells were perfused with gradients of medium and DOX (1.5 μM; Figure 2A, B and E). Cells exposed to a high concentration of DOX (high-DOX region) were killed within 5 days, whereas those exposed to an intermediate concentration of DOX (mid-DOX region) began to die on day 5 (Figure 2E). On day 8, DOXR cells appeared and proliferated in the mid-DOX region. On day 11, a population of phenotypically large cells (L-DOXR) appeared in the mid-DOX region (Figure 2D and E), suggesting that they emerge from stressful but tolerable conditions on the chip in areas where an intermediate concentration of DOX is perfused.
 
@@ -64,17 +64,33 @@ Approximately 30 wild type MDA-MB-231 cells per microchamber were seeded through
 
 Cells were collected from the chip on day 12 and incubated with medium containing DOX (0.05 μM) for 7 days in 24 wells to remove non-resistant cells that might have originated from the low-DOX region (Figure 2A and B). Then, the DOXR cells were separated from the L-DOXR cells using FACS. The FACS cell cycle analysis showed that the proportions of polyploidy (cells greater than 4N+) in the WT cells, DOXR cells, and L-DOXR cells were 2, 15, and 40%, respectively (Figure 2F–H). The L-DOXR cells showed lower susceptibility to DOX than the WT and DOXR cells (Figure 2I–K). Taken together, these results suggest that the CDRA chip can rapidly induce the development of DOXR cells as well as a distinct population of L-DOXR cells.
 
-## L-DOXR cells accelerate cancerous growth and tumor progression in TNBC
+### L-DOXR cells accelerate cancerous growth and tumor progression in TNBC
 
 To better define the oncogenic properties of L-DOXR cells, including their potential role in chemoresistance in TNBC, we investigated their impact on cancer progression. Our results showed that L-DOXR cells exhibited significantly higher rates of proliferation and a greater proportion of Ki67-positive cells compared to WT cells (Figure 3A and B). An in vitro wound-healing assay showed L-DOXR cells migrated faster than WT cells, suggesting that the development of L-DOXR cells could increase the migration capacity of a TNBC cancer cell population (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cell proliferation assay of WT and L-DOXR cells by cell counting. (B) Ki67 immunofluorescence staining and intensity measurement in eight randomly selected fields to evaluate proliferative ability. Scale bars: 20 μm. (C) Wound healing assay to measure cell migration. The gap between cells was measured and shown as a bar graph (bottom). Scale bars: 50 μm. (D, E) Timeline showing subcutaneous injection of 1×107 WT cells and L-DOXR cells followed by DOX injection (2 mg/kg) once a week when tumor volume reached 150 mm3 (n=6 per group). A timeline demonstrating the subcutaneous injection of 1×107 WT cells and L-DOXR cells, followed by injection of DOX (2 mg/kg) into the tail vein (n=6 per group) once a week when the tumor volume reached 150 mm3. Representative tumors shown in photographs. (F) Tumor size measured with calipers every three days for up to 36 days. (G) Representative images of hematoxylin and eosin (H&E) staining (upper) and immunohistochemical staining for PCNA on paraffin sections of tumor tissues (bottom). Scale bars: 50 μm. (H, I) H&E staining of a TNBC tissue microarray with different tumor grades (grades 1, 2, 3, and negative) to detect L-DOXR cells. The number of L-DOXR cells was counted and analyzed from five randomly selected fields on each slide. The black boxes are magnified, and the orange arrows indicate L-DOXR cells. Scale bars: 500 μm. Data presented as mean ± SEM; ***p<0.001; Student’s two-tailed, unpaired t-test (A, B); one-way ANOVA with Bonferroni’s post-test (C, F, I).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Wet weights of WT and L-DOXR tumors treated with DOX or vehicle (n = 6 per group). (B) Representative images showed triple-negative breast cancer tissue microarray (TMA, US Biomax #BR1301) with different tumor grades (grade 1, 2, 3, and negative) after stained with H&E (Hematoxylin and eosin) for the detection of L-DOXR. Black boxes are magnified. Orange arrows indicate L-DOXR cells. Scale bars: 500 μm. All data are presented as means ± SEM; ***p<0.001; one-way ANOVA with Bonferroni’s post-test (A).
 
 To ascertain whether the L-DOXR cells augmented tumorigenicity and conferred DOX-resistance in vivo, we generated an animal model of TNBC by subcutaneously injecting mice with either WT cells or L-DOXR cells and treating the tumor-bearing mice with either vehicle or DOX (Figure 3D). Irrespective of DOX treatment, the mice injected with L-DOXR cells showed much larger tumors compared to the mice injected with WT cells (Figure 3E). The tumor volume of L-DOXR cells treated with DOX and vehicle did not differ significantly (p>0.05), but the tumor volume of WT cells treated with DOX was significantly smaller than that of WT cells treated with vehicle (p<0.001) (Figure 3—figure supplement 1A). Our findings are consistent with hematoxylin and eosin (H&E) staining (Figure 3G, top) and immunohistochemical staining for proliferating cell nuclear antigen (PCNA) (Figure 3G, bottom) in the tumor tissues, which indicate that L-DOXR tumors did not exhibit a reduction in cell density or proliferation upon DOX treatment, in contrast to WT cells. Therefore, the L-DOXR cells in TNBC developed in the CDRA chip significantly enhanced carcinogenesis, and tumors initiated with L-DOXR cells were no longer sensitive to DOX.
 
 L-DOXR cells exhibit increased genomic content (4N+) as compared to WT cells. The presence of cells with increased nuclear size and increased genomic content has been demonstrated to be associated with poor clinical outcomes in several types of cancers (Alharbi et al., 2018; Amend et al., 2019; Fei et al., 2015; Imai et al., 1999; Liu et al., 2018; Lv et al., 2014; Mukherjee et al., 2022; O’Connor et al., 2002; Saini et al., 2022; Trabzonlu et al., 2023). We analyzed the occurrence of cells with increased nuclear size in human TNBC patients. A tissue microarray (TMA; n=130) found cells with increased nuclear size/genomic content only in TNBC patient tissues but not in normal breast tissue (Figure 3—figure supplement 1B). In addition, the number of cells with large nuclei in each tissue correlated with tumor grade (Figure 3I). Therefore, the presence of cells with increased genomic content in TNBC may indicate the presence of cells that are resistant to therapy.
 
-## NUPR1 is a key mediator of chemoresistance
+### NUPR1 is a key mediator of chemoresistance
 
 To elucidate the mechanism underlying the chemoresistance and oncogenic capacity of resistant cells, we performed an RNA sequencing (RNA-seq)-based transcriptome analysis to identify genes differentially expressed between WT and L-DOXR cells. Among the genes whose expression was significantly altered (fold change cut-off=2), 1212 were upregulated and 1,602 were downregulated in the L-DOXR cells (Figure 4A). A DAVID gene ontology term analysis of genes upregulated in the L-DOXR cells (false discovery rate <0.05) indicated that genes involved in cancer progression were most represented. An Ingenuity Pathway Analysis (IPA) revealed that NUPR1, whose upregulation is associated with malignancy of cancer and the chemoresistance network (Wang et al., 2021), was top-ranked, and antioxidant signaling was the most enriched pathway along with other cancer-promoting signaling such as tumor necrosis factor receptor 2, mitogen-activated protein kinase, and phospholipase signaling (Figure 4B). Notably, the upstream regulator analysis in IPA revealed that NUPR1 is a high-rank regulator and is responsible for 4.4% (53/1212) of the genes actively transcribed in the L-DOXR cells (cut-off=1.5, p<0.05) (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig4-v1.jpg)
+
+**Figure 4.:** (A) Volcano plot of differential gene expression between WT and L-DOXR cells. Cut-off criteria included a fold change of 2. (B, C) Ingenuity Pathway Analysis (IPA) of the RNA-sequencing data shows disease and disorders (left), causal network (middle), canonical pathways (Yue et al., 2020), and upstream regulator (C). The top five ranks are presented. Cut-off criteria are p<0.05 and a false discovery rate (FDR) q-value <0.05. (D) Kaplan-Meier (Dai et al., 2013) survival curve represents the overall survival rate in chemotherapy-treated TNBC patients (n=66) based on low vs. high NUPR1 expression from the meta-analysis in KM plotter. (E) KM survival curve representing the relapse-free survival rate in chemotherapy-treated patients (n=135) based on low vs. high NUPR1 expression from GSE12093. (F) Reverse transcriptase-quantitative polymerase chain reaction (RT-qPCR) analysis of NUPR1 mRNA expression in cells (left) and tumor tissue from a mouse xenograft (Yue et al., 2020). The values were normalized to the level of the control (Jazaeri et al., 2005). (G) The relative luciferase activity of the NUPR1 promoter was measured in WT cells and L-DOXR cells. (H) Cell viability was measured among si-NUPR1 transfected cells treated with DOX using a crystal violet staining assay. (I) Cell viability was measured using GST-NUPR1 transfected cells with DOX. (J) Cell viability was measured after administering DOX with and without ZZW-115 (NUPR1 inhibitor). The bar graph indicates the average density of dyed crystal violet. (K) Apoptotic proteins were detected by immunoblotting from WT cells and L-DOXR cells with and without DOX/ZZW-115. (L) Timeline demonstrating the subcutaneous injection of 1×107 L-DOXR cells followed by injections of doxorubicin (4 mg/kg) or ZZW-115 (2.5 mg/kg, 5.0 mg/kg) into the tail vein (n=6 per group). (M) The photographs show representative tumors. Scale bar: 2 cm. (N) Representative images showing immunohistochemical staining for NUPR1 in PCGGs with and without ZZW-115 and DOX treatment (left). Localization of NUPR1 in the control and ZZW-115 (5.0 mg/kg)-injected tumors was analyzed by ImageJ (Yue et al., 2020). Scale bars: 20 μm. (O) Animals were monitored for up to 42 days, and tumor size was measured using calipers at three-day intervals. (P) Representative images showing immunohistochemical staining for TUNEL and active-caspase 3 on paraffin sections of tumor tissues. Scale bars: 20 μm. All data are presented as mean ± SEM; *p<0.05, **p<0.01, ***p<0.001; Student’s two-tailed, unpaired t-test (F); one-way ANOVA with Bonferroni’s post-test (G, H, I, J, O).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparison of overall survival between high (red line) or low (blue line) expressions of NUPR1 in patients after chemo treated (GSE16391) were analyzed by the Kaplan-Meier and Log-rank test. KM survival curve representing the relapse-free survival rate in chemotherapy-treated patients (n=48) based on low (n=30) vs. high (n=18) NUPR1 expression. (B) The RNA expressions of NUPR1 were measured. (C) si-NUPR1 was transfected into WT and L-DOXR and incubated for 24 hr. The RNA expressions of NUPR1 were measured by RT-PCR. (D) WT and L-DOXR were stained with anti-NUPR1 (red) after treated ZZW-115. (E) Tumor weights were measured after they were harvested from the mice. Scale bars: 20 μm. All data are presented as means ± SEM; *p<0.05, **p<0.01, ***p<0.001; Student’s two-tailed, unpaired t-test (B, C); one-way ANOVA with Bonferroni’s post-test (E).
 
 The clinical relevance of NUPR1 expression in TNBC was investigated using a cohort of patients treated with chemotherapy by performing a meta-analysis of all the datasets in Kaplan-Meier plotter (https://kmplot.com/analysis/index.php?p=service&cancer=breast; Lánczky and Győrffy, 2021). The overall survival rate was significantly lower in patients with high NUPR1 mRNA expression than in patients whose NUPR1 mRNA expression was low (high, n=34; low, n=32; p=0.037; Figure 4D). Similarly, in other datasets GSE12093 (Zhang et al., 2009; Figure 4E) and GSE16391 (Desmedt et al., 2009), chemotherapy-treated breast cancer patients with significantly lower survival rates expressed higher level of NUPR1 (p=0.027 and 0.0003, respectively; Figure 4—figure supplement 1A), suggesting that high NUPR1 expression is associated with poor clinical outcomes among TNBC patients.
 
@@ -82,9 +98,17 @@ Consistent with the RNA-seq analysis of L-DOXR cells, increased expression of NU
 
 To define the potential role of NUPR1 in mediating chemoresistance in TNBC, we treated WT cells and L-DOXR cells with ZZW-115, a NUPR1 inhibitor that alters its nuclear localization (Lan et al., 2020), in the absence or presence of DOX. ZZW-115 treatment led to re-sensitization of L-DOXR cells to DOX in a dose-dependent manner, whereas the WT cells barely responded to ZZW-115 (Figure 4J). Delocalization of NUPR1 and increased cell death caused by ZZW-115 were confirmed by immunocytochemistry (Figure 4—figure supplement 1D) and active CASPASE-3 and poly (ADP-ribose) polymerase (PARP) cleavage (Figure 4K). To further verify whether NUPR1 inhibition could overcome DOX resistance and enhance drug response in L-DOXR cells, we treated xenograft model mice with DOX and two doses of ZZW-115 (Figure 4L–P). The addition of ZZW-115 to DOX in the xenograft models resulted in a reduction of tumor volume compared to DOX-only-treated tumors (–469.5 ± 25.20 mm3 [2.5 mg/kg] and –627.2±15.36 [5.0 mg/kg]) (Figure 4M-O; Figure 4—figure supplement 1E) and induced significant cell death (Figure 4P). These findings suggest that NUPR1 inhibition can overcome chemoresistance in highly aggressive L-DOXR cell-induced tumors in xenograft model mice.
 
-## HDAC11 suppression leads to NUPR1 upregulation
+### HDAC11 suppression leads to NUPR1 upregulation
 
 To gain insights into the molecular mechanism underlying NUPR1 upregulation in L-DOXR cells, we aimed to identify a potent regulator of its gene expression. Because epigenetic alterations affect gene expression and are usually associated with cancer progression (Baxter et al., 2014), we first examined the DNA methylation status of the NUPR1 promoter region. However, we did not find any remarkable changes in promoter methylation between WT cells L-DOXR cells (Figure 5—figure supplement 1A). Intriguingly, chromatin immunoprecipitation (ChIP)-qPCR using the histone H3 at lysine 27 (H3K27)-acetylation antibody revealed H3K27 acetylation in L-DOXR cells, specifically in promoter region 3 (Figure 5A). Spurred by our finding of enriched acetylation in L-DOXR cells, we attempted to identify a putative epigenetic regulator, such as a histone acetyltransferase or HDAC, that could be involved in the increased acetylation of NUPR1. An RNA-seq analysis of HATs and HDACs in WT cells and L-DOXR cells showed almost no detectable mRNA expression of HDAC11 in L-DOXR cells (Figure 5—figure supplement 1B), which we confirmed by RT-qPCR (Figure 5C). HDAC11 expression was also dramatically reduced in tumors from L-DOXR cell-derived xenografts compared with tumors derived from WT cells (Figure 5D). In addition, the protein expression of NUPR1 and HDAC11 was inversely correlated in L-DOXR cells and WT cells (Figure 5—figure supplement 1C, D), suggesting that low levels of HDAC11 in L-DOXR cells might contribute to the upregulation of NUPR1 through enriched acetylation in its promoter region. Indeed, forced expression of HDAC11 elicited a dramatic reduction in H3K27 acetylation in the L-DOXR cells promoter region (Figure 5F), which reduced the mRNA expression of NUPR1 in a dose-dependent manner not seen in the parental WT cells (Figure 5E) and also greatly impaired the promoter activity in the L-DOXR cells (Figure 5G). Moreover, HDAC11 inhibitor treatment in WT cells augmented the expression of NUPR1, presumably, reflecting the reverting of promoter acetylation (Figure 5H). These data clearly demonstrate that HDAC11 mediates NUPR1 promoter deacetylation, underscoring that the suppressed expression of HDAC11 in L-DOXR cells allows NUPR1 to escape deacetylation and thereby causes its aberrant high expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic diagram showing the promoter region of NUPR1. A ChIP assay was performed with qPCR on WT cells and L-DOXR cells using anti-H3 and H3K27ac antibodies. L, L-DOXR cells. (B) A heat map representing the relative mRNA expression levels of HDACs in WT cells and L-DOXR cells. (C) Real-time PCR analysis of the mRNA expression of the indicated genes in WT cells and L-DOXR cells. (D) The mRNA expression of HDAC11 in L-DOXR cells-derived tumor tissue was measured by RT-qPCR. (E) The mRNA expression of NUPR1 and HDAC11 was measured in cells transfected with either GFP-MOCK or HDAC11. (F) A ChIP assay was performed after transfecting WT and L-DOXR cells with GFP-MOCK or HDAC11 using anti-H3 or H3K27ac antibodies. Acetylated-histone levels were determined by RT-qPCR with specific primers (−600/–200). L, L-DOXR cells. (G) The relative luciferase activity of the NUPR1 promoter was measured after transfecting WT cells and L-DOXR cells with GFP-HDAC11. (H) Cell viability was measured among SIS17-treated cells with DOX using a crystal violet staining assay. (I) Representative images show the expression of NUPR1 (Gao et al., 2002) and HDAC11 (Liedtke et al., 2008) on a TNBC TMA with different tumor grades (grades 1, 2, and 3). Quantitative analysis of the intensity of NUPR1 and HDAC11 is displayed (Yue et al., 2020). White boxes are magnified. Scale bars: 50 μm (upper) and 25 μm (bottom). All data are presented as means ± SEM; *p<0.05, **p<0.01, ***p<0.001; Student’s two-tailed, unpaired t-testing (C, D); one-way ANOVA with Bonferroni’s post-test (G, I).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88830/elife-88830-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Extracted gDNA from WT and L-DOXR were digested with restriction enzymes that cut only non-methylated CCGG or cut all CCGG sequences. gDNA was assessed for methylation levels using RT-PCR with specific primer sets for CpG islands of NUPR1. L, L-DOXR. (B) Heatmap representing the relative mRNA expression levels of HDACs in WT or L-DOXR. (C) Protein expressions of NUPR1 and HDAC11 were measured from WT and L-DOXR by immunoblotting. (D) Cells were stained with anti-NUPR1 (red) and HDAC11 (green) antibodies for measuring their negative correlation. The intensity of NUPR1 and HDAC11 was measured by ImageJ. Scale bars: 20 μm. (E) Comparison of overall survival between high (n=81) or low (n=427) expressions of HDAC11 in patients after chemo treated (GSE25066, n=508) were analyzed by the Kaplan-Meier and Log-rank test. All data are presented as means ± SEM; ***p<0.001; Student’s two-tailed, unpaired t-test (D).
 
 In a tissue microarray (TMA) of TNBC patient tissues (n=130), we verified that, as tumor grade increased, NUPR1 expression increased and HDAC11 expression decreased (Figure 5I). In addition, a KM plot analysis of breast cancer patients (n=500, HER negative) from GSE25066 (Hatzis et al., 2011) showed that patients with low HDAC11 expression had significantly shorter survival times than patients with high HDAC11 expression after chemotherapy (Figure 5—figure supplement 1E). Thus, these data emphasize that NUPR1 is inversely correlated with HDAC11 level in TNBC patients, and that the epigenetic dysregulation of NUPR1 caused by low HDAC11 level may cause the chemoresistance that dictates the development of L-DOXR cells in TNBC.
 
@@ -100,74 +124,74 @@ Our results demonstrate that clinically meaningful resistant cells can be obtain
 
 ## Materials and methods
 
-## Fabrication of the CDRA chip
+### Fabrication of the CDRA chip
 
 The CDRA chip was fabricated using soft lithography, as previously described (Han et al., 2016; Han et al., 2019). The chip contained a patterned array of 444 hexagonal microchambers, each with a diameter of 200 μm. In the outermost chambers, 5-μm-wide channels allowed medium with and without DOX to perfuse into the interior microchambers. Each interior microchamber had three gates through which the cells could move into the connected chambers.
 
-## Cell culture
+### Cell culture
 
 The MDA-MB-231 TNBC cell line was purchased from ATCC (Manassas, VA, USA) and cultured in RPMI-1640 medium (HyClone, Logan, UT, USA) supplemented with 10% fetal bovine serum (HyClone), 100 units per mL of penicillin (Life Technologies, Carlsbad, CA, USA), and 100 μg/mL of streptomycin (Life Technologies) and maintained at 37°C with 5% CO2.
 
-## Operation of the CDRA chip
+### Operation of the CDRA chip
 
 The chip was prepared before cell seeding as described before (Han et al., 2016). A total of 1×105 cells/10 μL was suspended in culture medium, and 1 μL of the solution was gently added to the chip using a pipette with a tip through the cell seeding hole. The hole was plugged with a sterilized stainless pin, and the chip was incubated at 37°C with 5% CO2 overnight. The next day, 250 μL of culture medium and culture medium containing 1.5 μM DOX were added to two of the diagonal reservoirs, and 50 μL of culture medium was added to the rest of the diagonal reservoirs. The fresh culture medium and drug were replaced every day. After 11 days, trypsin (Gibco) was added to the chip, which was incubated at 37°C for 5 min. The detached cells were flushed out of the chip and collected from the reservoirs by injecting 1 mL of culture medium through the seeding hole with a needle-free syringe. To remove non-resistant cells, the collected cells were grown in medium containing 0.05 μM DOX for 1 week (Figure 2a).
 
-## L-DOXR isolation using FACS
+### L-DOXR isolation using FACS
 
 DOXR cells were seeded in a 10 mm cell culture dish for 1 day and then stained with 5 μg/mL of Hoechst-33342 at 37°C for 5 min and analyzed on a FACSAria Fusion (BD Biosciences, Franklin Lakes, NJ, USA).
 
-## Cell cycle analysis using FACS
+### Cell cycle analysis using FACS
 
 Cells were collected in a 15 mL tube and fixed in pre-cooled 70% ethanol at 4°C for 1 hr. The cells were permeabilized in 0.25% Triton X-100 with phosphate buffered saline (PBS, pH 7.4) at 4°C for 15 min and then stained with 20 μg/mL of propidium iodide (Sigma-Aldrich) containing 10 μg/mL of ribonuclease A at room temperature for 30 min. The stained cells were analyzed in the FACSAria Fusion.
 
-## DOX efflux
+### DOX efflux
 
 About 1×105 cells were incubated in a 6-well plate (Corning Inc) containing RPMI-1640 medium with 5 μM (final concentration) DOX at 37°C for 3 hr, and then the medium was replaced with fresh RPMI-1640 without DOX. After 24 hr, fluorescent images were captured using a DeltaVision Elite microscope (GE Healthcare, Chicago, IL, USA). Then, 10 cells were randomly chosen from the images, and their fluorescence intensity at 585 nm was analyzed using ImageJ (NIH, Bethesda, MD, USA).
 
-## Cell viability
+### Cell viability
 
 To assess the cytotoxic effects of DOX on cells, approximately 103 cells were incubated in a 96-well plate with DOX (0–1 μM) for 72 hr at 37°C. Their viability was measured using EZ-Cytox reagent (Daeillab Service, Seoul, Korea). The percentage of viable cells was calculated by dividing the number of viable cells at each DOX concentration by the number of cells cultured without DOX.
 
-## RNA sequencing
+### RNA sequencing
 
 Total RNA from untreated and treated MDA-MB-231 cells was extracted using a RNeasy Mini Kit (Qiagen, Germantown, MD, USA). RNA sequencing was performed on the NextSeq 500 sequencing platform (Illumina, San Diego, CA, USA). Biological functions were determined using IPA web-based bioinformatics software (QIAGEN). A twofold change in treated cell gene expression was used as the cut-off value indicating a significant change in expression compared with that in untreated MDA-MB-231 cells.
 
-## Antibodies and chemicals
+### Antibodies and chemicals
 
 Anti-PCNA (ab29), Ki67 (ab15580), NUPR1 (ab234696), and active-Caspase 3 (ab2302) antibodies were acquired from Abcam (Cambridge, UK). Anti-HDAC11 (H4539) and HDAC11 (WH0079885M1) antibodies were acquired from Sigma-Aldrich. Anti-PARP (9542 S) antibody was obtained from Cell Signaling Technology (Danvers, MA, USA). Anti-ACTIN (sc-47778) antibody was obtained from Santa Cruz Biotechnology (Dallas, TX, USA). Dimethyl sulfoxide (D2447), ZZW-115 (HY-111838A), and DOX (D1515) were acquired from Sigma-Aldrich.
 
-## Tissue microarray and immunohistochemistry
+### Tissue microarray and immunohistochemistry
 
 Slides of TNBC and normal tissues were obtained from US Biomax (BR1301) (Derwood, MD, USA) consisting of 125 cases of TNBC specimens, whose characteristics, including pathology grade, TNM, clinical stage, and IHC (ER, PR, HER2) results are available online (BR1301 Tissue Array and Tissue Microarray of premade types). For staining, each slide was deparaffinized and permeabilized using 0.25% Triton X-100 in PBS for 2 h. The slides were immunostained using primary antibodies and incubated overnight at 4 °C and then incubated for 1 hr at room temperature with secondary antibodies (Alexa Fluor-488 or –546). Nuclei were counterstained with 4′,6-diamidino-2-phenylindole. Z-stacked images of the stained tissues were acquired using a ZEISS LSM 710 confocal microscope (Zeiss, Oberkochen, Germany).
 
-## Western blot
+### Western blot
 
 Transfected cells were washed with PBS and treated with ice-cold lysis buffer (50 mM Tris-Cl, pH7.4; 150 mM NaCl; 1 mM EDTA; 0.5% Triton X-100; 1.5 mM Na3VO4; 50 mM sodium fluoride; 10 mM sodium pyrophosphate; 10 mM glycerophosphate; 1 mM phenylmethylsulfonyl fluoride, and protease cocktail (Calbiochem, San Diego, CA, USA)). Equal amounts of proteins were denatured, resolved on SDS-PAGE, and transferred to nitrocellulose membranes (Pall Life Science, Port Washington, NY, USA) (Woo et al., 2022).
 
-## RT-qPCR
+### RT-qPCR
 
 To compare the mRNA levels of WT and L-DOXR cells, RT-qPCR was performed. Total RNA was isolated from cells or tumors using a Mini BEST Universal RNA Extraction Kit (Takara, Shiga, Japan). cDNA was prepared from total RNA by reverse transcription using oligo-dT primers (Takara). RT-qPCR was conducted using SoFast EvaGreen Super Mix (Bio-Rad, Hercules, CA, USA) according to the manufacturer’s instructions. glyceraldehyde 3-phosphate dehydrogenase (Gapdh) was used as an internal control for quantitation of target gene expression. A total reaction mixture with a volume of 20 µl was amplified in a 96-well PCR plate (Bio-Rad). The primer sets used are listed in Supplementary file 1.
 
-## Luciferase assay
+### Luciferase assay
 
 Cells were plated in culture plates and transfected with 100 ng of NUPR1-promoter-luciferase reporter and 30 ng of Renilla reporter vector in 6-well plates and then incubated for 24 hr (Yu et al., 2022). The cells were lysed, and luciferase assays were performed using a dual luciferase assay kit (Promega, Madison, WI, USA) according to the manufacturer’s instructions. The transfection efficiency was normalized against Renilla luciferase activity, and the transfection of genes was confirmed using immunoblotting. All assays were performed at least in triplicate.
 
-## ChIP assay
+### ChIP assay
 
 ChIP assays were performed using a ChIP Assay Kit (cat. 17–259; Millipore, Temecula, CA, USA) according to the manufacturer’s instructions. Primers from multiple sites relative to the transcription start site were designed and pretested in both the input and ChIP samples. Purified DNA was subjected to qPCR with primers against the NUPR1 promoter region. The primer sets used are listed in Supplementary file 1.
 
-## Survival analysis
+### Survival analysis
 
 The KM plots were taken from https://kmplot.com/analysis/index.php?p=service&cancer=breast (Desmedt et al., 2009). We chose TNBC patients as follows: ER status IHC: ER-negative; ER status array: ER-negative; PR status IHC: PR negative; and HER2 status array: HER2 negative for meta-analysis and retrieved from the NCBI GEO database GSE12093 (Zhang et al., 2009), GSE16391 (Desmedt et al., 2009), and GSE25066 (Hatzis et al., 2011).
 
-## Animal
+### Animal
 
 All animal experiments were reviewed and approved by the Institutional Animal Care and Use Committee (IACUC) of Sungkyunkwan University School of Medicine (SUSM, SKKUIACUC2021-03-47-1). All experimental procedures were performed according to the regulations of the IACUC guidelines of Sungkyunkwan University.
 
-## Xenograft
+### Xenograft
 
 Procedures for the animal studies were described previously (Hwang et al., 2016). Briefly, 6- to 8-week-old female Balb/c nude mice (Orientbio Inc, Seongnam, Korea) were housed in laminar-flow cabinets under specific pathogen-free conditions. Approximately 1×107 cells of WT cells or treated cells were resuspended in 100 μL of a 1:1 ratio of PBS and Matrigel (Corning Inc, Corning, NY, USA, #354234) and subcutaneously injected into each mouse. The tumor size was monitored every three days using calipers, and the tumor volume (V) was calculated using the formula V = (L × W2)/2, where L was the length and W was the width of the tumor. When the tumor volume reached 150 mm3, the tail veins of the mice were injected with 2 mg/kg of DOX for Figure 3D–G or 2.5 mg/kg or 5.0 mg/kg of ZZW-115 (daily) with and without 2 mg/kg of DOX for Figure 4K–O.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using Prism 8 (GraphPad Software, San Diego, CA, USA). In general, statistical analyses were performed using ANOVA and Student’s t-test. Two-tailed and unpaired t-tests were used to compare two conditions. Two-way ANOVA with Tukey’s post hoc test was used to analyze multiple groups. One-way ANOVA with Bonferroni’s post hoc test was used for comparisons of ages and genotypes. Data are represented as mean ± standard error of the mean (SEM) unless otherwise noted, with asterisks indicating *p<0.05, **p<0.01, and ***p<0.001.

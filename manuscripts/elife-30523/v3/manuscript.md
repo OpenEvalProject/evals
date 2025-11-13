@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.30523.001 The cellular pathways that restart stalled replication forks are essential for genome stability and tumor prevention. However, how many of these pathways exist in cells and how these pathways are selectively activated remain unclear. Here, we describe two major fork restart pathways, and demonstrate that their selection is governed by 53BP1 and BRCA1, which are known to control the pathway choice to repair double-strand DNA breaks (DSBs). Specifically, 53BP1 promotes a fork cleavage-free pathway, whereas BRCA1 facilitates a break-induced replication (BIR) pathway coupled with SLX-MUS complex-mediated fork cleavage. The defect in the first pathway, but not DSB repair, in a 53BP1 mutant is largely corrected by disrupting BRCA1, and vice versa. Moreover, PLK1 temporally regulates the switch of these two pathways through enhancing the assembly of the SLX-MUS complex. Our results reveal two distinct fork restart pathways, which are antagonistically controlled by 53BP1 and BRCA1 in a DSB repair-independent manner.
+The cellular pathways that restart stalled replication forks are essential for genome stability and tumor prevention. However, how many of these pathways exist in cells and how these pathways are selectively activated remain unclear. Here, we describe two major fork restart pathways, and demonstrate that their selection is governed by 53BP1 and BRCA1, which are known to control the pathway choice to repair double-strand DNA breaks (DSBs). Specifically, 53BP1 promotes a fork cleavage-free pathway, whereas BRCA1 facilitates a break-induced replication (BIR) pathway coupled with SLX-MUS complex-mediated fork cleavage. The defect in the first pathway, but not DSB repair, in a 53BP1 mutant is largely corrected by disrupting BRCA1, and vice versa. Moreover, PLK1 temporally regulates the switch of these two pathways through enhancing the assembly of the SLX-MUS complex. Our results reveal two distinct fork restart pathways, which are antagonistically controlled by 53BP1 and BRCA1 in a DSB repair-independent manner.
 
 ## Introduction
 
@@ -30,7 +30,7 @@ Damaged (stalled or collapsed) forks are a major cause of genome instability in 
 
 ## Results
 
-## 53BP1 and RIF1 have a NHEJ-independent function in response to replication stress
+### 53BP1 and RIF1 have a NHEJ-independent function in response to replication stress
 
 Our previous study showed that RIF1 promotes stalled replication restart and RIF1-deficient DT40 cells are hypersensitive to the replication inhibitors hydroxyurea (HU) and aphidicolin (APH) (Xu et al., 2010). We found that both 53BP1-/- and RIF1-/- DT40 cells are hypersensitive to HU and APH (Figure 1A). Importantly, 53BP1-/-/RIF1-/- double knockout cells showed similar sensitivity as the single knockout cells (Figure 1A), demonstrating that 53BP1 and RIF1 are in the same pathway for cellular resistance to replication stress.
 
@@ -40,9 +40,21 @@ Our previous study showed that RIF1 promotes stalled replication restart and RIF
 
 To examine whether the functions of 53BP1 and RIF1 in the cell response to replication stress are due to their role in NHEJ repair, we examined the function of Ku70. In the NHEJ pathway, Ku70 is a core factor and is more essential than 53BP1 and RIF1, which are regulators (Escribano-Díaz et al., 2013). Consistently, compared with 53BP1-/- or RIF1-/- cells, Ku70-/- cells were much more sensitive to ICRF193 (Figure 1B), which is a Topo2 inhibitor and whose sensitivity is a widely used readout of NHEJ-deficiency (Adachi et al., 2003; Wang et al., 2010; Xing et al., 2015). Moreover, we examined random integration efficiency, which mainly depends on the NHEJ pathway in DT40 cells (Escribano-Díaz et al., 2013). Ku70-/- cells showed a much lower integration efficiency (approximately 300-fold less than the wild-type cells) than did the 53BP1-/- and RIF1-/- cells (approximately 5-fold reduction; Figure 1C). Conversely, the Ku70-/- cells showed very weak or no sensitivity to HU and APH (Figure 1B), suggesting that defect in the NHEJ pathway is unlikely to account for the cellular sensitivity to replication stress. Thus, the functions of 53BP1 and RIF1 in response to replication stress are independent of their roles in NHEJ.
 
-## The absence of BRCA1 suppresses the hypersensitivity of 53BP1-deficient cells to replication stress
+### The absence of BRCA1 suppresses the hypersensitivity of 53BP1-deficient cells to replication stress
 
 BRCA1-/- DT40 cells were not only sensitive to PARP inhibitor (Olaparib) and topoisomerase I inhibitor camptothecin (CPT), but also sensitive to HU (Figure 2—figure supplement 1A). These sensitivities were rescued by re-introducing wild-type human BRCA1 or I26A mutant, which loses ubiquitin ligase activity, but not C61G mutant, which loses both ubiquitin ligase activity and its interaction with BARD1(Ruffner et al., 2001) (Figure 2—figure supplement 1A and B). Olaparib- and CPT-induced DNA damages require BRCA1-dependent HR for repair (Bunting et al., 2010). These results suggest that its interaction with BARD1 but not ubiquitin ligase activity is important for functions of BRCA1 in response to replication stress and in HR. Interestingly, BRCA1 mutant M1775R, which localizes in its BRCT domain and disrupts its interaction with CtIP, FANCJ and RAP80 (Huen et al., 2010), rescued the HU- but not Olaparib- or CPT-sensitivity of the BRCA1-/- cells (Figure 2A and Figure 2—figure supplement 1C), suggesting that the function of BRCA1 in response to replication stress is distinct from its role in HR.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig2-v3.jpg)
+
+**Figure 2.:** (A) Sensitivity assay of BRCA1-/- DT40 cells complemented with wild type or M1775R human BRCA1. The mean and s.d. from three independent experiments are shown. (B) Genetic interaction analysis between BRCA1 and 53BP1 by sensitivity assay using MTT staining in DT40 cells. The mean and s.d. from three independent experiments are shown. (C) Sensitivity assay of wild-type, 53BP1-/-, BRCA1-/- and 53BP1-/- BRCA1-/- HCT116 cells. The mean and s.d. from three independent experiments are shown. Please refer to Figure 2—figure supplement 1 and Figure 2—figure supplement 2 for additional information in support of Figure 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Sensitivity assay of BRCA1-/- DT40 cells complemented with wild type or mutant human BRCA1 using MTT staining. (B–C) Western-blotting showing BRCA1 expression levels in the complemented BRCA1-/- cells. (D, F) Genetic interaction analysis between BRCA1 and 53BP1 (D) or RIF1 (F) by sensitivity assay using MTT staining. The mean and s.d. from three independent experiments are shown. (E) Genetic interaction analysis between BRCA1 and 53BP1 or RIF1 by random integration assay. The mean and s.d. from at least three independent experiments are shown. ***p<0.001, *p<0.05, ns p>0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A–B) schematics showing CRISPR sites of BRCA1 (A) and 53BP1 (B) gene. (C–E) Schematic representation of the generation of BRCA1-/- (C), 53BP1-/- (D) and BRCA1-/- 53BP1-/- (E) HCT116 cells. The BRCA1-/-53BP1-/- clone was generated by BRCA1 sgRNA in the 53BP1-/- cells. The guide sequences are highlighted in blue. The PAM sequences are indicated by red lines. The red arrow indicates the putative cleavage site. The red dashes indicate the deleted bases. (F) Immunoblot showing the BRCA1 and 53BP1 protein levels in the wild-type, BRCA1-/-, 53BP1-/- and BRCA1-/- 53BP1-/- HCT116 cells. The asterisks mark crossreactive polypeptides.
 
 Surprisingly, the sensitivity of 53BP1-/- cells to replication stress was strongly suppressed by the disruption of the BRCA1 gene (Figure 2B and Figure 2—figure supplement 1D). In fact, 53BP1-/-/BRCA1-/- cells were even more resistant to HU than were BRCA1-/- cells. This genetic interaction suggests that 53BP1 and BRCA1 are in the same pathway and counteract each other in response to replication stress. Then we tested whether this antagonistic function is due to their counteracting function in DSB repair. We found that the NHEJ-defect phenotypes, ICRF193-sensitivity and decreased random integration efficiency, of 53BP1-/- cells were not recovered when BRCA1 was disrupted (Figure 2—figure supplement 1D and E). Thus, we concluded that 53BP1 and BRCA1 have novel functions in response to replication stress that are independent of their function in DSB repair.
 
@@ -50,55 +62,91 @@ Additionally, RIF1-/-/BRCA1-/- cells were not more sensitive to HU and APH than 
 
 To assess whether this phenomenon also exists in mammalian cells, we generated 53BP1-/-/BRCA1-/- double knockout HCT116 cells using CRISPR (Figure 2—figure supplement 2A–F). Similar to DT40 cells, 53BP1-/- HCT116 cells were sensitive to replication inhibitor, and this phenotype was rescued by the disruption of the BRCA1 gene (Figure 2C), suggesting that the antagonistic functions of 53BP1 and BRCA1 in response to replication stress are conserved in vertebrates.
 
-## 53BP1 and BRCA1 promote the fast and slow kinetics restart pathways, respectively
+### 53BP1 and BRCA1 promote the fast and slow kinetics restart pathways, respectively
 
 Replication stress sensitivity usually results from defects in the restart of stalled forks. Therefore, we examined the replication progression rate under conditions of low replication stress (0.1 mM, 0.2 mM or 0.5 mM HU). All these cells showed a significant decrease in IdU tract lengths during HU exposure (Figure 3A). However, 53BP1-/- cells exhibited a larger decrease in the progression rate upon HU treatment than wild-type cells (Figure 3A). Therefore, these results suggest that 53BP1 is required for replication progression under stress. In comparison, BRCA1-/- and BRCA1-/-/53BP1-/- cells displayed similar replication tracts as wild-type cells (Figure 3A). Thus, the loss of BRCA1 promotes replication progression in 53BP1-deficient cells, which correlates with HU sensitivity.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig3-v3.jpg)
+
+**Figure 3.:** (A) DNA combing assay showing the replication progression under low concentration of HU. The sketch above delineates the experimental design. HCT116 cells were pulse-labeled with CldU for 20 min and then incubated with IdU and HU for 1 hr. The ratios of IdU track compared to CldU track were plotted. The mean and s.e.m are shown. (B, C) graphs showing stalled replication fork restart rates after different periods of replication inhibition followed different recovery times. To completely block the replication fork, 5 μM APH and 5 mM HU were added. The mean and s.d. from three independent experiments are shown. (D) A graph showing IdU tracts length after 40 min recovery following 12 hr blocking in (C). (E) A graph showing stalled replication fork restart rates after different periods of replication inhibition followed different recovery times. ****p<0.0001, **p<0.01, *p<0.05, ns p>0.05. Please refer to Figure 3—figure supplement 1 for additional information in support of Figure 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A graph showing stalled replication fork restart rates BRCA1-/- HCT116 cells expressing wild-type or M1775R BRCA1. The mean and s.d. from three independent experiments are shown. ***p<0.001, ns p>0.05. (B) immunoblots showing expression levels of BRCA1. (C) Sensitivity assay of the BRCA1-/- and its complemented HCT116 cells.
 
 We then directly examined the restart efficiency after replication stalling with high concentrations of replication inhibitors. We first tested the fast restart ability of wild-type and mutant cells after short-term (20 min) recovery following different times of replication inhibition (Figure 3B). The fast restart ability was reduced across all genotypes when the exposure time to replication stress was prolonged. However, compared with wild-type cells, 53BP1-deficient cells had significantly decreased restart efficiencies at almost all treatment times, suggesting that 53BP1 is required for a fast-kinetics pathway of restart. In comparison, BRCA1-/- cells showed comparable fork recovery abilities to wild-type cells, suggesting that BRCA1 is not required for this pathway. Moreover, BRCA1-/-/53BP1-/- cells displayed a significantly higher restart efficiency than 53BP1-/- cells, suggesting that BRCA1 suppresses the fast restart pathway in 53BP1-defecient cells, consistent with sensitivity assay.
 
 We also tested the restart efficiency after prolonged recovery times (20 min, 40 min and 60 min) following a medium-length period (12 hr) of replication inhibition (Figure 3C). The restart efficiencies in all cell lines, except BRCA1-/- cells, were increased when the recovery time was prolonged (from 20 min to 40 min and 60 min), suggesting that BRCA1 is required for a slow-kinetics pathway. Both wild-type and M1775R BRCA1 rescued the defect of the slow-kinetics pathway in the BRCA1-/- cells (Figure 3—figure supplement 1A,B), indicating that the function of BRCA1 in fork restart is independent on HR. 53BP1-/- cells displayed a comparable restart rate to wild-type cells after prolonged recovery times (40 min and 60 min), suggesting that the slow-kinetics fork restart pathway is not impaired in 53BP1-deficient cells. Although the percentage of restarting forks of the 53BP1-/- cells is recovered to a level similar as that of wild-type cells when recover time is prolonged to 40 min, the length of the restarted tracks is significantly shorter (Figure 3D), suggesting that the activated BRCA1-dependent pathway in the 53BP1-/- cells is a delayed mechanism of fork restart. Moreover, the absence of 53BP1 promotes the slow-kinetics fork restart pathway in BRCA1-/- cells (Figure 3C and D), consistent with the replication stress sensitivity assay.
 
-## The 53BP1- and BRCA1-dependent pathways mainly works in early and late stages of replication inhibition, respectively
+### The 53BP1- and BRCA1-dependent pathways mainly works in early and late stages of replication inhibition, respectively
 
 The fast-kinetics fork restart pathway (recovered in 20 min) of wild-type HCT116 cells was very efficient after a short time of replication inhibition (57% at 2 hr), but it progressively decreased over time (11% at 24 hr; Figure 3E), suggesting that this 53BP1-dependent pathway mainly works in the early stage of replication stress. In contrast, the slow-kinetics fork restart pathway (recovered between 20 and 60 min) of wild-type HCT116 cells was not efficient in the early stage (5% at 2 hr; Figure 3E), but significantly increased in the late stage (20% at 24 hr) of replication stress, suggesting that this BRCA1-dependent pathway mainly works in the late stage of replication stress.
 
-## 53BP1 and BRCA1 have antagonistic functions in stalled fork cleavage
+### 53BP1 and BRCA1 have antagonistic functions in stalled fork cleavage
 
 BRCA1 promotes fork cleavage/unhooking at the initiation step of the Fanconi anemia pathway, in which replication forks are blocked by DNA interstrand crosslinks (Bunting et al., 2012; Long et al., 2014). These findings prompted us to examine whether BRCA1 and 53BP1 have functions in the cleavage and/or stabilization of stalled forks. We measured the DSB accumulation using a neutral comet assay. We found that more DSBs accumulated in 53BP1-/- cells than in wild-type cells after HU treatment (Figure 4A). This phenotype was rescued by a full length 53BP1 (Figure 4—figure supplement 1A and B), suggesting that it’s not caused by off-targeting or clone variation. DSB accumulation may result from increased fork cleavage or impaired DSB repair after fork broken. To distinct these two reasons, we examined DSB accumulation after Olaparib or CPT treatment. Different from HU, these two drugs induce accumulation of broken single-strand DNA, which are then directly converted to broken forks and one-end DSBs during replication without cleavage step. 53BP1-/- cells showed similar level of DSBs as that of wild-type cells after Olaparib or CPT treatment (Figure 4B), demonstrating that 53BP1 is dispensable for DSB repair of broken forks. Thus, 53BP1 protects stalled forks from breakage (it’s distinct from the fork protection from nascent DNA degradation; see Discussion below) but does not promote DSB repair after HU treatment. In contrast, BRCA1-/- cells showed more DSBs than did wild-type cells during Olaparib or CPT treatment (Figure 4B), consistent with previous finding that BRCA1 is required for one-end DSB repair through HR (Bunting et al., 2010). Surprisingly, in contrast with Olaparib or CPT treatments, BRCA1-/- cells showed fewer DSBs than did wild-type cells after HU treatment (Figure 4A). Complementation experiments showed that a full length BRCA1 rescued this defect of BRCA1-/- cells (Figure 4—figure supplement 1C–E), suggesting that this phenotype is not due to off-target or clone variation. This phenomenon cannot be explained by its function in DSB repair, suggesting that BRCA1 has additional function to promote the breakage of stalled forks after HU treatment. Interestingly, the DSB accumulation in 53BP1-/-/BRCA1-/- cells was counteracted to a level similar to that of wild type cells after HU treatment (Figure 4A), suggesting that 53BP1 and BRCA1 have antagonistic functions in the stabilization/cleavage of stalled forks. We measured γH2AX and RPA2-pS4/8, which reflect DSB generation, by quantitative image-based cytometry (QIBC) after replication stress (Buisson et al., 2015; Feng et al., 2016; Toledo et al., 2013). 53BP1-/- cells and BRCA1-/- cells showed significantly higher and lower γH2AX and RPA2-pS4/8 signals, respectively, than wild-type cells after HU treatment (Figure 4C); while these phenotypes were counteracted in the double knockout cells, consistent with the results of the comet assay. These results suggest that the two proteins had the opposite effect on fork cleavage.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig4-v3.jpg)
+
+**Figure 4.:** (A, B) Comet assays measuring DSB accumulation in wild-type, 53BP1-/-, BRCA1-/- and 53BP1-/- BRCA1-/- HCT116 cells treated with HU (2 mM for 12 hr; A), CPT (1 μM for 8 hr) and Olaparib (1 μM for 8 hr; B). The mean and s.e.m. are shown. ****p<0.0001, ***p<0.001, *p<0.05, ns p>0.05. (C) QIBC analysis of immunolabeled wild-type, 53BP1-/-, BRCA1-/- and 53BP1-/- BRCA1-/- HCT116 cells. Asynchronous cells were treated with HU (2 mM) for 5 hr before fixing and immunostaining for γH2AX and RPA2-pS4/8. The mean nuclear intensities for γH2AX and RPA2-pS4/8 were determined for each of 5000 individual cells and were plotted. (D, E) Immunostaining (D) and quantification (E) showing γH2AX foci formation over time. The mean and s.d. from three independent experiments are shown. Please refer to Figure 4—figure supplement 1 and Figure 4—figure supplement 2 for additional information in support of Figure 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A, D) Comet assays measuring DSB accumulation in complemented 53BP1-/- (A) and BRCA1-/- (D) HCT116 cells. Cells treated with HU (2 mM) for 12 hr. The mean and s.d. are shown. ****p<0.0001, ns p>0.05. (B, E) immunoblots showing expression levels of 53BP1 (B) and BRCA1 (E). (C) Sensitivity assay of the BRCA1-/- and its complemented HCT116 cells. The mean and s.d. from three independent experiments are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) QIBC assay of immunolabeled DT40 cells. Cells were treated with 5 mM HU 5 hr before harvest. Blue dashed lines indicate the cutoff of γH2AX-positive cells. Percentages of γH2AX-positive cells were calculated. mean ±s.e.m (n = 5000) are shown. (B–C) QIBC assay (B) and comet assay (C) of HeLa cells depleted with indicated proteins. Cells were treated with 2 mM HU for 3 hr (B) or 12 hr (C). mean ±s.e.m are shown. (D) Western-blotting showing knockdown efficiency of multiple siRNAs. The asterisks mark crossreactive polypeptides. (E) graphs showing the γH2AX foci formation in the RIF1-depleted cells. Cells were treated with 2 mM HU 3 hr before fixing. Data are means of at least three independent experiments. Error bars indicate s.d. ****p<0.0001, ***p<0.001, **p<0.01, *p<0.05, ns p>0.05.
 
 We then tested DT40 knockout cells, which showed similar results (Figure 4—figure supplement 2A), suggesting that the antagonism between 53BP1 and BRCA1 in fork breakage is conserved in vertebrates.
 
 Moreover, we examined γH2AX foci formation over a time course after HU treatment (Figure 4D and E). In wild-type cells, the γH2AX foci were few in the early stage after HU treatment, but increased progressively over time, consistent with previous results in U2OS cells (Petermann et al., 2010). When 53BP1 was disrupted, the γH2AX foci formed more quickly in the early stage, but the level was similar to that in wild-type cells after long-term (16 hr) treatment, suggesting that 53BP1 acts predominantly during short-term replication stress to stabilize stalled forks. In BRCA1-/- cells, the γH2AX foci were similar to wild-type cells in the early stage, but became significantly lower in the later stage (12–16 hr), suggesting that BRCA1 gradually becomes predominant to promote fork breakage over time. Moreover, the double knockout cells showed kinetics of γH2AX foci formation similar to that of wild-type cells, suggesting that the counteraction between 53BP1 and BRCA1 occurs throughout replication stress. These findings are consistent with the fork restart analysis showing that these two proteins counteract each other to promote the early- and late-acting pathways, respectively.
 
-## PTIP, REV7, and CtIP are dispensable for stalled fork stabilization or breakage
+### PTIP, REV7, and CtIP are dispensable for stalled fork stabilization or breakage
 
 Several proteins function downstream of 53BP1 or BRCA1 to regulate the pathway choice of DSB repair, including RIF1 (Chapman et al., 2013; Di Virgilio et al., 2013; Escribano-Díaz et al., 2013; Feng et al., 2013; Zimmermann et al., 2013), REV7 (Boersma et al., 2015; Xu et al., 2015) and PTIP (Callen et al., 2013; Wang et al., 2014) (downstream of 53BP1), and CtIP (downstream of BRCA1)(Bunting et al., 2010). We examined whether these proteins also participate in the antagonistic functions of 53BP1 and BRCA1 in promoting the stabilization/cleavage of stalled replication forks. The depletion of RIF1 promoted γH2AX signals and DSB generation after HU treatment (Figure 4—figure supplement 2B–E), suggesting that RIF1 participates in the protection of stalled forks, consistent with the finding that RIF1 is required for cells to resist replication stress together with 53BP1. However, the depletion of PTIP and REV7 individually did not affect γH2AX signals and DSB generation under replication stress (Figure 4—figure supplement 2B–D), suggesting that unlike in DSB repair, PTIP and REV7 are dispensable for the function of 53BP1 in stalled fork protection. Unlike BRCA1, the depletion of CtIP had no or very weak effect on γH2AX signals and DSB generation (Figure 4—figure supplement 2B–D). Consistent with the genetic analysis above, these results suggest that the mechanisms by which 53BP1 and BRCA1 act in the stabilization/cleavage of stalled replication forks are distinct from these in DSB repair.
 
-## BRCA1 promotes the recruitment of the SLX-MUS endonuclease complex to chromosome under replication stress
+### BRCA1 promotes the recruitment of the SLX-MUS endonuclease complex to chromosome under replication stress
 
 Several studies have shown that MUS81 mediates the breakage of stalled forks and promotes a late-acting restart pathway (Franchitto et al., 2008; Hanada et al., 2007; Pepe and West, 2014), which is similar to the functions of BRCA1. SLX4, which along with SLX1, MUS81 and EME1 forms a large endonuclease complex (SLX-MUS) (Fekairi et al., 2009; Svendsen et al., 2009), also takes part in this process under certain conditions (Couch et al., 2013; Ragland et al., 2013). Therefore, we investigated the relationship between BRCA1 and the SLX-MUS complex. FLAG-immunoprecipitations with cell extracts expressing FLAG-tagged proteins revealed that BRCA1 and SLX4 are mutually present in their immunoprecipitates (Figure 5A and B), demonstrating that BRCA1 interacts with SLX4. This interaction was not affected by removing DNA (Figure 5—figure supplement 1A), indicating that their association is not mediated by DNA. BRCA1 was observed in the immunoprecipitate of FLAG-MUS81, but FLAG-BRCA1 did not pulldown a significant band of MUS81 (Figure 5A and C), implying that the interaction of MUS81 with BRCA1 may be weak.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig5-v3.jpg)
+
+**Figure 5.:** (A–C) Immunoblot showing the immunoprecipitation from the extracts of HEK293 cells transfected with vectors expressing Flag-tagged BRCA1 (A), SLX4 (B), MUS81 (C) or control vector (Con). (D, E) Immunoblot showing protein level of SLX4 and MUS81 on the chromosome. Asynchronous cells were treated with or without 2 mM HU for 16 hr (D). Metaphase cells (E) were prepared as experimental workflow in Figure 5—figure supplement 1B. (F, G) Graphs showing γH2AX foci formation in MUS81- or SLX4-depleted 53BP1-/- (F) cells and BRCA1-/- (G) HCT116 cells treated with or without 2 mM HU for 3 hr. Knockdown efficiency was showed in Figure 5—figure supplement 1F and G. (H) A graph showing stalled replication fork restart rates in MUS81- or POLD3- depleted BRCA1-/- cells. (I, J) Immunofluorescence (I) and its quantifications (J) showing DNA synthesis (EdU foci, green) in condensed mitotic nuclei (DAPI, blue). Experiments were preformed as the workflow in Figure 5—figure supplement 1C. (K) A graph showing mitotic DNA synthesis in MUS81- or POLD3- depleted BRCA1-/- cells. The mean and s.d. from three independent experiments are shown. ****p<0.0001, ***p<0.001,**p<0.01, *p<0.05, ns p>0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblot showing the immunoprecipitation of Flag-tagged SLX4 in present of Ethidium Bromide (EtBr; 100 μg/ml) or DnaseI (10 unit/ml). (B–C) experimental workflows for fractionation (B) and immunoflourescence (C). (D–E) Immunofluorescence (D) and its quantifications (E) showing colocalization of MUS81 and FANCD2 in condensed mitotic nuclei. Experiments were preformed as the workflow in (C). The mean and s.d. from four independent experiments are shown. Scale bar 2 μm. ***p<0.001, *p<0.05. (F–H) Western-blotting showing knockdown efficiency of MUS81 (F), SLX4 (G) and POLD3 (H) in HCT116. The asterisk marks a crossreactive polypeptide.
 
 We then examined whether BRCA1 is required for the recruitment of the SLX-MUS complex to stalled replication forks. SLX4 accumulated in the chromatin fraction after HU treatment (Figure 5D) and this recruitment was significantly reduced in BRCA1-/- cells, suggesting that BRCA1 may promote the recruitment of SLX4 to stalled forks. The MUS81 levels in the chromatin fraction did not change significantly after HU treatment and were also not affected by BRCA1 deficiency (Figure 5D), suggesting that the majority of MUS81 is SLX4-free and recruited to the chromatin independent of fork stalling and BRCA1. These results are consistent with a previous study that the interaction of MUS81 with SLX4 is weak in asynchronous cells (Matos et al., 2011; Wyatt et al., 2013).
 
 The SLX-MUS complex is recruited to mitotic chromatin and promotes mitotic DNA synthesis (MiDAS) (Bhowmick et al., 2016; Minocherhomji et al., 2015). We examined whether this recruitment is also dependent on BRCA1. Both SLX4 and MUS81 levels on mitotic chromatin are increased after APH treatment in the wild-type cells, but not in BRCA1-/- cells (Figure 5E and Figure 5—figure supplement 1B). Moreover, immunofluorescence experiments showed that the recruitment of MUS81 to MiDAS sites was significantly decreased in BRCA1-/- cells, but weakly increased in 53BP1-/- cells, compared to that in wild-type cells (Figure 5—figure supplement 1C–E). These results suggest that BRCA1 promotes the recruitment of the SLX-MUS complex to mitotic chromatin on MiDAS sites, while 53BP1 suppresses it.
 
-## BRCA1 promotes the MUS81-coupled BIR pathway
+### BRCA1 promotes the MUS81-coupled BIR pathway
 
 We then examined whether SLX-MUS has a similar function as BRCA1 in counteracting 53BP1 in fork stabilization. As shown in Figure 5F, the depletion of the SLX-MUS complex components MUS81 and SLX4 strongly suppressed stalled fork breakage in 53BP1-/- cells, similar to the effects of BRCA1 disruption. Moreover, MUS81-depeleted wild-type and BRCA1-/- cells resulted in a similar suppression of fork cleavage (Figure 5G), suggesting that BRCA1 and the SLX-MUS complex are in the same fork cleavage pathway. Together, these results suggest that BRCA1 promotes fork cleavage through recruiting the SLX-MUS endonuclease complex.
 
 MUS81 and SLX4 are required for the late-acting fork restart pathway and MiDAS via a BIR-like mechanism (Hanada et al., 2007; Minocherhomji et al., 2015). We therefore examined whether BRCA1 has a similar function in BIR. Epistasis analysis through the determination of the late-acting fork restart pathway revealed that BRCA1 is in the same pathway as MUS81 and POLD3 (Figure 5H), which play a key role in BIR (Bhowmick et al., 2016; Costantino et al., 2014; Sotiriou et al., 2016). Thus, the BRCA1-dependent pathway is a cleavage-coupled BIR.
 
-## Mitotic replication restart specifically requires the BRCA1-mediated pathway
+### Mitotic replication restart specifically requires the BRCA1-mediated pathway
 
 We also examined whether BRCA1 and 53BP1 play roles in MiDAS. Wild-type and mutant cells were treated with replication stress in the form of a low dose (0.2 μM) of APH and then 5-ethynyl-2’deoxyuridine (EdU) was added for 30 min to visualize new DNA synthesis (Figure 5—figure supplement 1C) as previously described (Minocherhomji et al., 2015). Approximately 18% of the mitotic wild-type HCT116 cells contained EdU foci (Figure 5I and J), as previously reported (Minocherhomji et al., 2015). EdU-positive mitotic cells were significantly decreased in BRCA1-/- cells (approximately 9%), but not in 53BP1-/- cells (approximately 17%), demonstrating that BRCA1, but not 53BP1, is specifically required for MiDAS. Moreover, 53BP1-/-/BRCA1-/- cells showed more EdU-positive mitotic cells (17%) than BRCA1-/- cells (Figure 5I and J), suggesting that 53BP1 also has a BRCA1-antagonistic function in MiDAS.
 
 Moreover, epistasis analysis showed that BRCA1 was also in the same pathway as MUS81 and POLD3 in MiDAS (Figure 5K), suggesting that BRCA1 also promotes BIR in MiDAS.
 
-## PLK1 expression is increased during replication stress and mitosis
+### PLK1 expression is increased during replication stress and mitosis
 
 Our data revealed that the 53BP1- and BRCA1-dependent pathways occur predominantly in the early and late (particularly in mitosis) stages of replication stress, respectively. A striking question is how cells temporally regulate the switch between these two pathways. PLK1 promotes stalled fork breakage in the presence of an ATR inhibitor (Ragland et al., 2013), inhibit 53BP1 function (Lee et al., 2014; Orthwein et al., 2014) and stimulate the assembly and activity of the SLX-MUS complex during mitosis (Matos et al., 2011; Wyatt et al., 2013). The expression level of PLK1 is regulated during the cell cycle and peaks at the M phase (Barr et al., 2004). Importantly, our ongoing interactome analysis of DNA repair proteins revealed that PLK1 interacts with BRCA1, SLX4 and 53BP1 (Figures 5B,C and and 6A). We therefore speculated that increased PLK1 activity might control the conversion of these two restart pathways when replication stress is prolonged. We first examined the PLK1 levels after replication inhibition (Figure 6B and C). The cells were arrested in G1/S phase using double-thymidine block and were then treated with HU after release into S phase for 2 hr. The PLK1 levels increased to more than 2-fold after 8–12 hr of HU treatment. We also examined PLK1 levels in unperturbed cells using a QIBC assay (Figure 6D and Figure 6—figure supplement 1A). The cells were pulse-labeled with EdU 30 min before HU treatment and then pre-extracted before fixing and staining. The PLK1 levels were highest in the G2/M phase without HU treatment. After 8–12 hr of HU treatment, the G2/M phase cells were shifted to the G1 and/or G1/S phases, whereas the S phase cells were blocked (Figure 6—figure supplement 1A). Interestingly, the PLK1 levels in the S phase were significantly increased after HU treatment over time (Figure 6D and Figure 6—figure supplement 1A). These results suggest that prolonged replication stress induces PLK1 expression in S phase cells.
 
-## PLK1 regulates the stalled replication restart pathways
+![Figure 6.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig6-v3.jpg)
+
+**Figure 6.:** (A) Immunoblot showing the immunoprecipitation from extracts of HEK293 cells tranfected with control vector (Con) or vector expressing Flag-tagged PLK1. (B, C) Immunoblotting (B) and its quantification (C) showing PLK1 levels after replication inhibition. The mean and s.d. from three independent experiments are shown. (D) QIBC analysis of PLK1 expression after replication inhibition. Asynchronous HCT116 cells were treated with 2 mM HU as indicated time before fixing. PLK1 levels of S phase (Figure 6—figure supplement 1A) were gated and plotted. Red lines indicate the medians of PLK1. (E) Immunoblot showing the immunoprecipitation of FLAG-tagged MUS81. Suspension HEK293 cells expressing FLAG-tagged MUS81 were treated with or without nocodazole (100 ng/ml) and PLK1 inhibitors (10 μM BI2536 or BI6727) for 17 hr and 5 hr before harvest, respectively. (F) QIBC analysis of wild-type and 53BP1-/- HCT116 cells treated with 2 mM HU and PLK1 inhibitor (10 μM BI2536) for 3 hr. ****p<0.0001. (G) DNA combing assay showing that PLK1 works in the same pathway with BRCA1 in stalled fork restart. The sketch above delineates the experimental design. The mean and s.d. from three independent experiments are shown. **p<0.01, ns p>0.05. Please refer to Figure 6—figure supplement 1 for additional information in support of Figure 6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30523/elife-30523-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) QIBC analysis of PLK1 expression after replication inhibition. Asynchronous HCT116 cells were treated with 2 mM HU as indicated time before fixing. The mean levels of PLK1 in the S and G1 phase were showed by red dash lines and green dash lines, respectively. (B) Immunoblot showing the immunoprecipitation of FLAG-tagged SLX4. Suspension HEK293 cells expressing FLAG-tagged SLX4 were treated with or without nocodazole (100 ng/ml) and PLK1 inhibitors (10 μM BI2536 or BI6727) for 17 hr and 5 hr before harvest, respectively. (C) Immunoblot showing protein levels of BRCA1, BARD1, SLX4 and MUS81 on the chromosome. Asynchronous cells were treated with or without 10 μM BI2536 and 5 mM HU for 16 hr before harvest. (D–E) Immunofluorescence (D) and its quantifications (E) showing colocalization of MUS81 and FANCD2 in condensed mitotic nuclei. Experiments were preformed as the workflow in Figure 6—figure supplement 1. PLK1 inhibitor (10 μM BI2536) was added after G2 phase release. (F–G) Immunofluorescence (F) and its quantifications (G) showing colocalization of BRCA1 and ssDNA. HeLa cells were labeled with BrdU for 24 hr and then treated with or without 2 mM HU and 10 μM BI2536 for 5 hr. The Pearson coefficient of colocalization between BRCA1 and BrdU was measured by Huygens Professional Analysis Software. The mean and s.d. from three independent experiments are shown. ****p<0.0001, ***p<0.001, ns p>0.05. Scale bar, 5 μm.
+
+### PLK1 regulates the stalled replication restart pathways
 
 We then examined whether PLK1 regulates the replication restart pathways. We checked the assembly of the SLX-MUS complex (Figure 6E). The associated levels of SLX4 were significantly increased when FLAG-MUS81 was immunoprecipitated from mitotic extracts, in which PLK1 was highly expressed. This interaction was dramatically decreased by PLK1 inhibitors (Figure 6E and Figure 6—figure supplement 1B), suggesting that PLK1 activity promotes the assembly of the SLX-MUS complex, consistent with previous studies (Matos et al., 2011; Wyatt et al., 2013). Consistently, the recruitment of MUS81 to chromatin and stalled forks was impaired by PLK1 inhibitor (Figure 6—figure supplement 1C–E). In contrast, the interaction of BRCA1 with SLX4 and their recruitment to stalled forks were not impaired by PLK1 inhibitors (Figure 6—figure supplement 1B,C,F and G).
 
@@ -106,7 +154,7 @@ Then, we tested SLX-MUS complex-mediated fork breakage when the PLK1 inhibitor w
 
 ## Discussion
 
-## 53BP1-RIF1 and BRCA1 have new functions in the restart of stalled replication forks
+### 53BP1-RIF1 and BRCA1 have new functions in the restart of stalled replication forks
 
 Here, we showed that 53BP1 has a new function in the cleavage-free fork restart pathway, which protects forks from breakage, has fast-kinetics and mainly works in the early stage of replication stress (Figure 7). This pathway has been widely described and many DNA remodeling enzymes, including helicases, translocases, and recombinases (Cortez, 2015; Neelsen and Lopes, 2015), participate in it. RIF1, the downstream protein of 53BP1 in NHEJ repair, is also in the same pathway with 53BP1 in response to replication stress. RIF1 has been reported to restart stalled forks along with BLM, which is a fork remodeling enzyme (Davies et al., 2007; Xu et al., 2010). Therefore, mechanistically, 53BP1-RIF1 may protect and repair stalled forks through BLM-mediated fork remodeling. It remains to be studied in future how 53BP1 and RIF1 exactly protect stalled replication forks.
 
@@ -116,13 +164,13 @@ Conversely, BRCA1 has a new function in the cleavage-coupled BIR pathway, mechan
 
 There are two types of fork protections: one is to protect the stalled forks from cleavage by SLX-MUS to generate one-end DSB, as discussed here; and the other is to protect stalled forks from resection by MRE11 to degrade nascent DNA as described by Schlacher, K. et.al (Schlacher et al., 2011; Schlacher et al., 2012). BRCA1 has opposite activities in these two processes: it promotes fork breakage by SLX-MUS, but inhibits fork degradation by MRE11 (Schlacher et al., 2012). These two functions of BRCA1 likely have no directly causality because of two reasons: first, the defect of nascent DNA protection in the BRCA1 mutant cannot be rescued by disrupting 53BP1 (Ray Chaudhuri et al., 2016), which is different from their antagonistic functions in fork restart described here; second, BRCA2, which plays an essential role in the nascent DNA protection (Schlacher et al., 2011), is dispensable for BIR and MiDAS (Bhowmick et al., 2016; Feng and Jasin, 2017; Lai et al., 2017; Sotiriou et al., 2016), suggesting that these functions are two independent events. In fact, BRCA2 has opposite function from BRCA1 to protect stalled forks from breakage (Lomonosov et al., 2003). Moreover, BRCA2-defective cells display delayed restart of stalled forks (Ray Chaudhuri et al., 2016) and this delayed restart is dependent on MUS81 (Lai et al., 2017; Lemaçon et al., 2017), suggesting that BRCA2 may work in a MUS81-independent pathway to restart stalled forks. Thus, it will be interesting to study whether BRCA2 functions in the cleavage-free replication restart pathway together with 53BP1 in future.
 
-## 53BP1 and BRCA1 counteract each other to control the time-dependent switch of the fork restart pathways
+### 53BP1 and BRCA1 counteract each other to control the time-dependent switch of the fork restart pathways
 
 In the early stage of replication stress, stalled forks were restarted efficiently and quickly (Figure 3B), suggesting that most stalled forks kept activation at an early stage. The stalled forks were not more restarted by the fast pathway when stress was prolonged, even without BRCA1-dependent cleavage (Figure 3B; BRCA1-/- cells showed a similar restart rate as the wild-type cells after 24 hr of inhibition followed by a 20 min recovery), suggesting that these forks might become inactivated or collapsed, such as via replisome-dissociation or over-regression into an aberrant Holiday junction. In contrast, stalled forks in 53BP1-deficient cells were broken by BRCA1-dependent cleavage in the early stress stage (Figure 4D and E) and then were restarted by a slow pathway, BIR (Figure 3C and E). When BRCA1 was disrupted, this cleavage in 53BP1-deficient cells was suppressed (Figure 4D and E) and the stalled forks could still be recovered by the fast restart pathway (Figure 3B; BRCA1-/-53BP1-/- cells showed a higher fork restart rate than 53BP1-/- cells), suggesting that the stalled forks were not inactivated/collapsed before cleavage in the early stage. Thus, the BIR pathway not only repairs broken/collapsed forks, but also restarts stalled forks by coupling BRCA1 and MUS-SLX complex-mediated cleavage. Moreover, fork cleavage and the cleavage-coupled BIR pathway in BRCA1-deficient cells were suppressed by 53BP1 in the late stage or during mitosis (Figures 3C,E, 4D,E and and 5I,J; BRCA1-/-53BP1-/- cells showed a higher fork cleavage efficiency and fork restart rate than BRCA1-/- cells), suggesting that 53BP1 can also protect inactivated/collapsed forks. Together, 53BP1 and BRCA1 counteract each other to protect/cleave damaged (stalled and collapsed) forks and promote replication restart through two distinct pathways.
 
 There is a balance between these two mutually exclusive fork restart pathways. In the early stage of replication stress, the balance favors to 53BP1-dependent pathway, although the BRCA1-dependent pathway is also operative. When replication stress is prolonged, the balance tilts toward the BRCA1-dependent pathway. The switch from 53BP1-mediated pathway to BRCA1-mediated pathway is likely achieved by the cell-cycle-dependent regulation of PLK1 activity, which is high in mitotic cells or in S-phase cells upon prolonged HU treatment (Figure 7). PLK1 promotes the cleavage pathway by enhancing the interactions within the SLX-MUS complex. Moreover, PLK1 can also inactivate 53BP1, at least during mitosis (Lee et al., 2014; Orthwein et al., 2014), but it is unclear whether this inactivation occurs in the S phase when replication stress is prolonged. These findings indicate that fork-breakage/cleavage is not the passive consequence of collapse but a programmed process, combining the temporal regulations of the assembly of the MUS-SLX complex, the increase in PLK1 activity, and the de-repression of 53BP1-RIF1 by BRCA1.
 
-## The antagonistic interactions between 53BP1 and BRCA1 in replication restart are independent of their roles in DSB repair
+### The antagonistic interactions between 53BP1 and BRCA1 in replication restart are independent of their roles in DSB repair
 
 Our data showed that the functions of 53BP1-RIF1 and BRCA1 in replication restart are clearly different from their roles in DSB repair. First, only the defect in fork restart but not DSB repair of the 53BP1-/- cells was rescued by the disruption of BRCA1. Second, more importantly, we found function-separated mutant of BRCA1. Consistent with this finding, an ubiquitin ligase-inactive mutant of BARD1, the partner of BRCA1, also showed separated functions: it couldn’t repair DSBs, but retains its role in response to replication stress (Densham et al., 2016).
 
@@ -132,7 +180,479 @@ Oncogene activation-induced replication stress is common in cancer cells, and st
 
 ## Materials and methods
 
-## Cell culture and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>MUS81 (shRNA)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>TRCN0000049726, TRCN0000049727</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>SLX4 (shRNA)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>TRCN0000143727, TRCN0000142519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>POLD3 (shRNA)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>TRCN0000052990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>BRCA1 (siRNA)</td>
+      <td>PMID:16109739</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>RIF1 (siRNA)</td>
+      <td>PMID:20711169</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>CtIP (siRNA)</td>
+      <td>PMID:23333306</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>PTIP (siRNA)</td>
+      <td>PMID:15456759</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (Homo sapiens)</td>
+      <td>REV7 (siRNA)</td>
+      <td>PMID:23287467</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HCT116</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Hela</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293 Suspension</td>
+      <td>ATCC</td>
+      <td>CRL-1573.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Gallus gallus)</td>
+      <td>DT40</td>
+      <td>other</td>
+      <td></td>
+      <td>A gift from Dr. Minoru Takata’s lab</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-BrdU (BU1/75) (mouse monoclonal)</td>
+      <td>BD Biosciences (San Jose, CA, USA)</td>
+      <td>347580</td>
+      <td>IF: 1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-BrdU (B44) (rat monoclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab6326</td>
+      <td>IF:1:50</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Flag (mouse monoclonal)</td>
+      <td>MBL (Japan)</td>
+      <td>M185-3L</td>
+      <td>WB:1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>γH2AX (mouse monoclonal)</td>
+      <td>Millipore (St. Louis, MO, USA)</td>
+      <td>05–636</td>
+      <td>IF:1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>RPA2 (rabbit polyclonal)</td>
+      <td>Bethyl (Montgomery, TX, USA)</td>
+      <td>A300-244A</td>
+      <td>WB:1:1000; IF:1:500</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>MUS81 (rabbit polyclonal)</td>
+      <td>Proteintech (China)</td>
+      <td>11018–1-AP</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>MUS81 (mouse monoclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab14387</td>
+      <td>IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>BRCA1 (rabbit polyclonal)</td>
+      <td>Millipore (St. Louis, MO, USA)</td>
+      <td>07–434</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>CtIP (rabbit polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab155988</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>PTIP (rabbit polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab70434</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>REV7 (mouse monoclonal)</td>
+      <td>BD Biosciences (San Jose, CA, USA)</td>
+      <td>612266</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>FANCD2 (rabbit polyclonal)</td>
+      <td>Homemade</td>
+      <td></td>
+      <td>WB:1:1000;IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>β-actin (mouse monoclonal)</td>
+      <td>MBL (Japan)</td>
+      <td>M177-3</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>PLK1 (mouse monoclonal)</td>
+      <td>Santa Cruz (Dallas, TX, USA)</td>
+      <td>F-8</td>
+      <td>WB:1:1000;IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>PLK1 (rabbit polyclonal)</td>
+      <td>Proteintech (China)</td>
+      <td>10305–1-AP</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Histone H3-pS10 (mouse monoclonal)</td>
+      <td>Cell Signaling (Danvers, MA, USA)</td>
+      <td>9706 s</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Histone H3 (rabbit polyclonal)</td>
+      <td>Novus Biologicals (Littleton, USA)</td>
+      <td>NB500-171</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>53BP1 (mouse monoclonal)</td>
+      <td>Millipore (St. Louis, MO, USA)</td>
+      <td>MAB3802</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>BARD1 (rabbit polyclonal)</td>
+      <td>proteintech (China)</td>
+      <td>ab22964-1-AP</td>
+      <td>WB:1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Donkey anti-mouse (A594, A488)</td>
+      <td>Invitrogen (Waltham, Massachusetts, USA)</td>
+      <td>A21203,A21202</td>
+      <td>IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Donkey anti-rabbit (A594)</td>
+      <td>Invitrogen (Waltham, Massachusetts, USA)</td>
+      <td>A21207</td>
+      <td>IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Donkey anti-rabbit (A488)</td>
+      <td>Jackson Immunoresearch (Baltimore, MD, USA)</td>
+      <td>711-546-152</td>
+      <td>IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Donkey anti-rat (A488)</td>
+      <td>Invitrogen(Waltham, Massachusetts, USA)</td>
+      <td>A21208</td>
+      <td>IF:1:250</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Mouse IgG</td>
+      <td>Jackson ImmunoResearch (Baltimore, MD, USA)</td>
+      <td>115-035-146, Lot111590</td>
+      <td>WB:1:5000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-Rabbit IgG</td>
+      <td>Jackson ImmunoResearch (Baltimore, MD, USA)</td>
+      <td></td>
+      <td>WB:1:5000</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pDEST26-HF (Gateway vector)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progentiors: pDEST26 from Invitrogen</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-SLX4 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-SLX4; Gateway vector:pDEST36-HF</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-MUS81 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-MUS81; Gateway vector:pDEST36-HF</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-PLK1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-PLK1; Gateway vector:pDEST36-HF</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Flag-BRCA1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progentiors: pDONR221-BRCA1; Gateway vector:pDEST36-HF</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>comet assay kit</td>
+      <td>Trivegen (Gaithersburg, USA)</td>
+      <td>4250–050 K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>HU (hydroxyurea)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>V900323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>APH (aphidicolin)</td>
+      <td>abcam (Cambridge, UK)</td>
+      <td>ab142400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ICRF193</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>I4659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Olaparib</td>
+      <td>selleck (Houston, TX, USA)</td>
+      <td>S1060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CPT (Camptothecin)</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>C9911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BI2536</td>
+      <td>selleck (Houston, TX, USA)</td>
+      <td>S1109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BI6727</td>
+      <td>selleck (Houston, TX, USA)</td>
+      <td>S2235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>IdU</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>I7125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CldU</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>C6891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>EdU</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>900584</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BrdU</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Thymidine</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>T1895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich (St. Louis, MO, USA)</td>
+      <td>M1404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>RO3306</td>
+      <td>selleck (Houston, TX, USA)</td>
+      <td>S7747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>XL413</td>
+      <td>selleck (Houston, TX, USA)</td>
+      <td>S7547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>Carpenter lab website</td>
+      <td></td>
+      <td>open-source, public domain software</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Image J</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>public domain, Java</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Huygens Professional</td>
+      <td>Scientific Volume Imaging</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>casplab</td>
+      <td>open-source, public domain software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>open-source</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen (Waltham, Massachusetts, USA)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and transfection
 
 HeLa cells were cultured in DMEM medium containing 10% fetal bovine serum (FBS; Invitrogen). HCT116 cells were cultured in RPMI1640 medium containing 10% FBS (Invitrogen). HEK293 suspension cells were cultured in Freestyle medium (Invitrogen) supplemented with 1% Gibco FBS and 1% glutamine in an incubator with shaking at 130 r.p.m. DT40 cells were gifted from Dr. Minoru Takata, and grown at 39.5°C, 5% CO2 in RPMI 1640 medium (Gibco) supplemented with 10% fetal calf serum, 1% chicken serum. The other cell lines studied were obtained from the ATCC. All cell lines are not among those listed as commonly misidentified by the International Cell Line Authentication Committee. All cell lines were subjected to mycoplasma testing twice per month and found to be negative. The identity of the cell lines was validated by STR profiling (ATCC) and by analysis of chromosome number in metaphase spreads.
 
@@ -140,34 +660,34 @@ For synchronization, the cells were cultured in medium supplemented with 2.5 mM 
 
 HEK293 suspension cells were transfected with PEI. HeLa and HCT116 cells were transfected with Fugene HD (Promega). The siRNAs targeting Rif1 (5'-GCAGCUUAUGACUACUAAA-3'), CtIP (5'-GCUAAAACAGGAACGAAUC-3'), PTIP (5'-UGCACUAGCCUCACACAUA-3' and 5’-UGUUUGCAAUUGCGGAUUAUU-3’) and REV7 (5'-GAUGCAGCUUUACGUGGAA-3'), were transfected using RNAi MAX (Invitrogen). To produce the MUS81 (CCGGGAGTTGGTACTGGATCACATTCTCGAGAATGTGATCCAGTACCAACTCTTTTTG and CCGGCCTAATGGTCACCACTTCTTACTCGAGTAAGAAGTGGTGACCATTAGGTTTTTG), SLX4 (CCGGGCTGGAGCTAGAACAAACCAACTCGAGTTGGTTTGTTCTAGCTCCAGCTTTTTTG and CCGGGCTCCTCATCCAGTATGTGAACTCGAGTTCACATACTGGATGAGGAGCTTTTTTG), and POL3 (CCGGCGAGTAGCATTATCTGATGATCTCGAGATCATCAGATAATGCTACTCGTTTTTG) shRNA, lentiviral plasmids were co-transfected into 293 T cells using PEI. After 4 days, the supernatants containing the packaged lentivirus were harvested and stored at −80°C until further use.
 
-## DT40 cells
+### DT40 cells
 
 The generation of RIF1-/- cells was described as previously by Xu D. et al (Xu et al., 2010). The generations of Ku70-/-, BRCA1-/-, 53BP1-/-, BRCA1-/-53BP1-/- and RIF1-/-BRCA1-/- DT40 cells were described as previously by Escribano-Dı´az C. et al (Feng et al., 2013). The Ku70, 53BP1 and BRCA1 knockout constructs were gifts from Dr. Minoru Takata (Takata et al., 1998), Dr. Yoshihito Taniguchi (Nakamura et al., 2006) and Dr. Douglas K. Bishop (Martin et al., 2007), respectively.
 
-## Generation of BRCA1 and 53BP1-knockout cells
+### Generation of BRCA1 and 53BP1-knockout cells
 
 BRCA1- and 53BP1-deficient HCT116 cells were generated using CRISPR. Briefly, guide sequences (BRCA1: CTGAGAAGCGTGCAGCTGAG and GAAGGTAAAGAACCTGCAAC; 53BP1: GCAGCTCTCTGGTCAGAGGT) were inserted into the pX330 vector (Cong et al., 2013). The guide-sequence-containing pX330 plasmids were transfected into HCT116 cells and single colonies were picked after 8–10 days of incubation. The genomic fragments of the BRCA1 and 53BP1gene were amplified by PCR using the following primers: ctgcttgtgaattttctgagacggatg and GCTCCTTGCTAAGCCAGGCTGTTTG (for BRCA1 site); gtgtcaatctgagaagtgcaactg and CCTAAGACTCTCAGGCACATACTG (for 53BP1). The products were digested with PvuII and PstI, respectively. Colonies containing the expected PCR fragments were then sequenced and examined by western blotting. BRCA1-/- 53BP1-/- double knockout cells were generated by BRCA1 sgRNA in 53BP1-/- cells.
 
-## Cell survival assay
+### Cell survival assay
 
 Cell survival curves for HCT116 cells treated with HU were generated as described previously (Katsube et al., 2011). An appropriate number of cells was plated into 6-well plates with the indicated dose of HU. Cells were cultured for 9 to 14 days, and the colonies were stained with methylene blue and counted.
 
 The cell survival assay for DT40 cells using MTT staining was performed as described previously (Xu et al., 2010). Briefly, 300–1000 cells were plated into each well of 96-well plates and incubated with a range of doses of HU or APH. After the cells were incubated 72 hr, the cells were pulsed with CellTiter 96 Aqueous One Solution Reagent (Promega) 4 hr. Cell viability was measured by a luminometer, and each dose point was measured in triplicate. For ICRF193, a density of 1500–3000 cells per well and a 48 hr incubation were used.
 
-## Neutral comet assay
+### Neutral comet assay
 
 Neutral comet assay was carried out using a kit (Trevigen) as instructions. Cells were treated with HU (2 mM) for 12 hr, or CPT (1 μM) and Olaparib (1 μM) for 8 hr before harvest.
 
-## Immunofluorescence and quantitative image-based cytometry (QIBC)
+### Immunofluorescence and quantitative image-based cytometry (QIBC)
 
 A modified immunofluorescence assay was performed as described previously (Feng et al., 2016). Briefly, HeLa or HCT116 cells were grown on poly-lysine-coated coverslips 24 hr before the experiments. The cells were washed with PBS once and then pre-extracted for 10 min at 4°C with CSK buffer (20 mM HEPES, pH 7.4, 100 mM NaCl, 300 mM sucrose, and 3 mM MgCl2) containing 0.5% Triton-100. The cells were then washed three times with PBST (PBS with 0.1% Tween-20) and fixed with 3% PFA for 10 min at room temperature. After fixation, the cells were washed three times with PBST and blocked with 5% bovine serum albumin (BSA, Sigma) in PBS for 15 min. The cells were then incubated with the primary antibodies in PBS containing 1% BSA for 90 min. After washing, the cells were incubated with secondary antibodies diluted in PBS containing 1% BSA for 30 min. The cells were washed three times and mounted with ProLong Gold antifade reagent with DAPI (Invitrogen).
 
 QIBC was performed as previously described (Feng et al., 2016; Toledo et al., 2013).
 
-## DNA combing assay
+### DNA combing assay
 
 A DNA combing assay was performed as described previously (Davies et al., 2007). Cells were labeled and treated as experimental designs, as indicated. Because 5 mM HU or 5 μM APH alone failed to completely block replication in HCT116 cells, a combination of 5 mM HU and 5 μM APH was used for blocking (Figure 5—figure supplement 1A,B). Then, the cells were trypsinized and diluted 1:4 with unlabeled cells at a concentration of 2.5 × 105 cells/ml. Then, 2.5 μl of cells was mixed with 7.5 μl of lysis buffer (200 mM Tris-HCl, pH 7.5, 50 mM EDTA and 0.5% SDS) on a clean glass slide. After 3–5 min, the DNA was allowed to slowly flow down along the slide by tilting the slides 15° horizontally. The slides were then air-dried, fixed in 3:1 methanol/acetic acid and refrigerated overnight. The slides were treated with 2.5 M HCl for 1 hr, neutralized in 0.1 M Na3B4O7, pH 8.5, and rinsed three times in PBST (PBS buffer with 0.1% Tween-20). The slides were then blocked in blocking buffer (PBST buffer containing 1% BSA) for 20 min and incubated with rat anti-BrdU antibody (Abcam BU1/75, 1:200) in blocking buffer at 37°C for 1 hr. After three washes with PBST, the slides were incubated with Alexa Fluor 488-conjugated anti-rat (Molecular Probes, 1:200 dilution) for 45 min. After additional washes, the slides were incubated with mouse anti-BrdU (Becton Dickinson B44, 1:40) for 1 hr and then washed once with high-salt PBST (0.5 M NaCl) and three times with PBST. Then, the slides were incubated with Alexa Fluor 549-conjugated anti-mouse (Molecular Probes, 1:200 dilution) for 45 min. After three washes with PBST, the slides were mounted in SlowFade Gold antifade reagent (Invitrogen). The slides were imaged on a Zeiss Axiovert Microscope with a 100 × objective.
 
-## Statistics
+### Statistics
 
 Statistics was performed by two-tailed t-test or one-way ANOVA test. The data were normally distributed and the variance between groups being statistically compared was similar. No statistical methods or criteria were used to estimate sample size or to include/exclude samples. The investigators were not blinded to the group allocation during the experiments.

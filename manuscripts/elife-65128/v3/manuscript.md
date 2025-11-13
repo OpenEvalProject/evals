@@ -43,9 +43,37 @@ We are particularly interested in how stimulus parameters, such as current ampli
 
 ## Results
 
-## Effects of frequency on perceived intensity are electrode-dependent
+### Effects of frequency on perceived intensity are electrode-dependent
 
 In participant P2, we delivered ICMS trains through individual electrodes and asked him to report the perceived intensity on a self-selected scale, which typically ranged from 0 to 4. We found that increasing the stimulus current amplitude and train duration consistently increased the perceived intensity of the evoked sensations on all tested electrodes (Figure 1—figure supplement 1). However, the relationship between stimulus frequency and perceived intensity was electrode dependent (Figure 1). We delivered a 60 μA stimulus train for 1 s at pulse frequencies ranging from 20 to 300 Hz. On some electrodes, percept intensity increased with stimulus pulse frequency (Figure 1B). However, on over half of the tested electrodes, the opposite effect occurred; stimulus trains with low pulse frequencies (20–100 Hz) were perceived as being the most intense and the intensity decreased as the stimulus pulse frequency increased (Figure 1C,D). We used k-means clustering to separate electrodes into three categories based on the reported percept intensity at 20, 100, and 300 Hz (Figure 1—figure supplement 2): electrodes with the highest intensity response at 20 Hz (Figure 2A), electrodes with the highest intensity responses at 100 Hz (Figure 2B), and electrodes with the highest intensity response at 300 Hz (Figure 2C). For simplicity, we refer to these groups based on the pulse frequency range at which the maximal intensity occurred: high-frequency preferring (HFP), intermediate-frequency preferring (IFP), and low-frequency preferring (LFP) electrodes. These electrode groups varied in both the median-reported intensity across all frequencies as well as the frequency at which the maximum intensity occurred.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig1-v3.jpg)
+
+**Figure 1.:** (A) Perceived intensity for each aggregated frequency preference group. Different colors represent different categories. Each data point shows the mean intensity response of all of the electrodes in a given category. (B) Perceived intensity for two examples of high-frequency preferring electrodes that evoked the most intense percepts at the highest pulse frequencies and that generated the least intense percepts overall. (C) Perceived intensity for two examples of intermediate-frequency preferring electrodes that generated the most intense overall percepts, which occurred between 40 Hz and 100 Hz. (D) Perceived intensity for two examples of low-frequency preferring electrodes, which generated intermediate overall intensities that were maximized between 20 and 100 Hz. Error bars represent the standard error. The points are connected with piecewise fits. Axes are scaled differently between panels for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Normalized intensity as a function of current amplitude for all nine tested electrodes (A), and for two individual electrodes (B). The data were fit with a linear function. (C, D) Normalized intensity as a function of train duration for all four tested electrodes (C) and two individual electrodes (D). The data were fit with a logistic function. In all panels, data points are the median-reported intensity at each stimulus parameter. Samples were normalized to the median intensity value for each test. Error bars show the standard error. Note that the Y-axes are scaled differently for each panel for clarity. Colors represent different electrodes as indicated by the legends. Data points for individual electrodes are jittered slightly on the x-axis for visualization.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) K-means clustering of individual electrodes based on intensity responses at 20, 100, and 300 Hz. Individual data points are the median intensities at each frequency across all repetitions. (B–D) Perceived intensity responses at different frequencies for all electrodes classified as low-frequency preferring (B), intermediate-frequency preferring (C), and high-frequency preferring (D). Shaded regions show the smoothed standard error for each electrode.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Plots of magnitude estimation results on all electrodes tested three or more times. Each set of points and the corresponding fit indicate a single post-implant date, as indicated in the legend. Data from each test session were normalized by the median intensity. Different colors show different post-implant dates in each plot as indicated by the legend. Shaded regions show the smoothed standard error.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The mean intensity response across two frequency preference groups. Each data point represents the mean intensity response at the given frequency. The error bars represent the standard error of the mean. The points are connected with piecewise fits. (B) K-means clustering of individual electrodes based on intensity responses at 20, 100, and 300 Hz. Individual data points are the median intensities at each frequency across all repetitions. Some points may overlap due to having the same median intensities.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig2-v3.jpg)
+
+**Figure 2.:** Magnitude estimation data for different current amplitudes and pulse frequencies. Data were aggregated across electrodes by their category, where each plot shows a different category of electrodes. Perceived intensity values for (A) LFP electrodes, (B) IFP electrodes, and (C) HFP electrodes at different current amplitudes and pulse frequencies. Different colored bars represent different current amplitudes. Error bars indicate the standard error across electrodes. We tested two LFP electrodes, three IFP electrodes, and two HFP electrodes which were each tested twice in different sessions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Bar plots showing the probability of correctly identifying the window containing a stimulus train with different pulse frequencies at a fixed perithreshold current amplitude (6–16 μA). Each bar represents the mean detection accuracy at each pulse frequency on four tested electrodes. The error bar indicates the standard deviation. The gray dots show the individual electrode performance accuracies. Chance performance was 50% and is indicated with the red dotted line.
 
 Seven electrodes were tested multiple times (three to six per electrode) to determine whether the relationships between pulse frequency and perceived intensity were consistent across sessions. The perceived intensity on these electrodes changed by statistically significant amounts as the stimulus pulse frequency changed (p<0.001, Friedman test). The reported intensities at each frequency on these electrodes did not change significantly across test days (p>0.05, Friedman test) (Figure 1—figure supplement 3). An additional 22 electrodes were tested in one or two sessions. Of the 29 electrodes tested in total, 20 electrodes exhibited perceived intensities that changed by statistically significant amounts as the stimulus frequency changed (p<0.02, Friedman test). Of these 20 electrodes, five were classified as LFP, seven were classified as IFP, and eight were classified as HFP.
 
@@ -53,25 +81,45 @@ The three different electrode groups had significantly different median intensit
 
 In participant P3, we tested 23 electrodes at 80 μA and three different frequencies (20, 100, and 300 Hz). The perceived intensity changed by statistically significant amounts on 22 electrodes as the stimulus frequency changed (p<0.05, Friedman test). There were similar electrode-specific effects, where some electrodes evoked the highest intensity percepts at the highest frequencies and others had the highest intensity at the lowest frequencies (Figure 1—figure supplement 4). Using the same clustering approach, the data divided into two clusters, which were most similar to the LFP and HFP categories. Fifteen electrodes were classified as HFP, and seven were classified as LFP.
 
-## Frequency-intensity relationships are preserved across suprathreshold amplitudes
+### Frequency-intensity relationships are preserved across suprathreshold amplitudes
 
 We measured whether the frequency–intensity relationships were affected by stimulus current amplitude. If the frequency–intensity relationships were dependent on the current amplitude, this result might reflect idiosyncratic recruitment effects of ICMS. Therefore, in P2, we presented stimulus trains at three current amplitudes (20, 50, and 80 µA) and three pulse frequencies (20, 100, and 300 Hz), which spanned the range of detectable and safe parameters, and asked the participant to report the perceived intensity of the evoked percepts. There were no significant differences in the shape of the frequency–intensity relationships for the three electrode groups at 50 and 80 μA after controlling for changes in median intensity caused by increasing current amplitude (p=0.21–0.99, Friedman’s test, Figure 2). The reported intensity on LFP electrodes peaked at 20 Hz at both current amplitudes (p=0.02, Kruskal–Wallis, Figure 2A), whereas the reported intensities of IFP electrodes peaked at 100 Hz for both current amplitudes (p<0.001, Kruskal–Wallis, Figure 2B) and the reported intensity on HFP electrodes peaked at 300 Hz for both current amplitudes (p<0.001, Kruskal–Wallis, Figure 2C). Interestingly, when we decreased the current amplitude to 20 μA, which was close to the detection threshold for most electrodes, increasing the pulse frequency from 20 to 100 Hz evoked more intense percepts for all electrode groups (p<0.05, Kruskal–Wallis, Figures 2A–C, 20 µA). There were highly significant differences between the shape of the frequency–intensity relationships for all groups at 20 μA versus 50 or 80 μA (p<0.001, Friedman’s test) even after controlling for changes in the median intensity caused by increasing current amplitude. At 20 μA, the percept intensity was very low, making magnitude estimation akin to a detection task.
 
-## High-frequency stimuli are detected more reliably at perithreshold amplitudes
+### High-frequency stimuli are detected more reliably at perithreshold amplitudes
 
 Our observation that higher stimulus pulse frequencies can evoke less-intense percepts at suprathreshold stimulus current amplitudes differs from predictions made from non-human primate studies; higher frequencies evoked detectable percepts at lower amplitudes in NHPs, which led to predictions that higher frequency always results in higher perceived intensities (Kim et al., 2015a; Romo et al., 2000; Romo et al., 1998). However, the effect of changing ICMS parameters on perceived intensity cannot be tested directly in NHPs. Indeed, we found that the perceived intensity at the lowest tested currents always increased when the frequency increased from 20 to 100 Hz (Figures 2A–C, 20 µA), but that this effect was not always maintained at higher current amplitudes (Figures 2A,B, 50 and 80 µA). To explicitly compare our results to NHP work, we performed a detection task in P2 in which the current amplitude was set to perithreshold levels and the pulse frequency was varied between 20, 100, and 300 Hz. We found that at 300 Hz, the interval containing the stimulus train was correctly identified 80% of the time across all tested electrodes (Figure 2—figure supplement 1). Similarly, when the pulse frequency was set to 100 Hz, the mean detection accuracy was 72%. In contrast, when the pulse frequency was set to 20 Hz, the mean detection accuracy was just 42%, which was not significantly different than chance levels of 50% (p=0.14, one-sample t-test). Detection accuracies at 100 Hz and 300 Hz were significantly higher than the detection accuracy at 20 Hz (p<0.05, ANOVA) but were not significantly different from each other (p=0.66, ANOVA).
 
-## Frequency-intensity relationships are associated with different perceptual qualities
+### Frequency-intensity relationships are associated with different perceptual qualities
 
 One advantage of studying somatosensation in humans is the ability to document the sensory qualities evoked by stimulation (Figure 3—figure supplement 1). We found that there were significant differences in the qualities evoked on electrodes belonging to different categories defined by the effect of pulse frequency on intensity in P2 (Figure 3A). Additionally, the sensory qualities for electrodes in each group were differentially modulated by pulse frequency (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig3-v3.jpg)
+
+**Figure 3.:** Radar plots showing the distribution of reported qualities at different pulse frequencies for each electrode category. (A) Percepts sorted by pulse frequency. Electrode categories are indicated with different colors. (B) Percepts sorted by electrode categories. Pulse frequencies are indicated with different colors. In each plot, qualities on which there was a significant difference between categories, as determined with Fisher’s exact test, are marked with an asterisk.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Since multiple percepts can be reported for a single stimulus, columns will add to more than 100%. There were 152 samples at 20 Hz, 621 samples at 100 Hz, and 85 samples at 300 Hz.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Individual electrodes are plotted on the same axes as shown in Figure 1—figure supplement 1. The data were clustered in a 10-dimensional quality space and then plotted in the three-dimensional frequency-intensity space. Clusters are labeled based on the three categories defined by frequency-intensity responses. For example, the blue point in the lower portion of the figure represents an electrode that shared similar frequency-intensity properties with other high-frequency preferring electrodes but shared qualities that were similar to low-frequency preferring electrodes. However, the majority of the electrodes were identified as being in the same clusters regardless of whether the clustering was performed on quality or frequency-intensity data. Electrodes that were classified differently between quality and frequency-intensity data are indicated with orange arrows.
 
 At 20 Hz, LFP and IFP electrodes evoked percepts with pressure, tapping, sparkle, and touch qualities. These qualities were not evoked on HFP electrodes at any frequency. At this low stimulation frequency, HFP electrodes were generally not detectable, resulting in few reports of any percepts. At 100 Hz, IFP electrodes evoked percepts with buzzing, vibration, and sharp qualities. LFP and HFP electrodes never evoked these qualities when stimulated at 100 Hz. HFP electrodes also evoked sensations of touch and prick at 100 Hz that never occurred on LFP or IFP electrodes at any frequency. However, these qualities occurred on less than 30% of trials on HFP electrodes. At 300 Hz, the responses were similar to those at 100 Hz except that all electrode categories evoked less pressure.
 
 We also clustered electrodes based on the verbal reports of percept quality at all frequencies. Interestingly, these clusters were remarkably similar to those based on intensity responses at different frequencies (Figure 3—figure supplement 2). That these electrode categories were nearly identical when created using completely different data sets – perceptual qualities and perceived intensities – strongly suggests that these two features are measures of the same underlying properties of the neurons recruited by stimulation.
 
-## Perceptual responses are spatially clustered in cortex
+### Perceptual responses are spatially clustered in cortex
 
 Finally, we asked whether the categorization of an electrode, which corresponds to its frequency–intensity responses and evoked perceptual qualities, was related to its location in cortex. We compared the observed spatial occurrence of the different electrode categories with a simulation that randomly assigned each category to one of the tested electrode locations while maintaining the same number of electrodes in each category. In P2, there was significant clustering of electrodes in the same category (Figure 4A) across arrays (pseudo-p=0.00017). This was particularly apparent on the lateral array. In P3, LFP electrodes only occurred on one of the arrays (Figure 4—figure supplement 1), which resulted in clustering across the arrays (pseudo-p=0.0045, local indicators of spatial association [LISA]).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig4-v3.jpg)
+
+**Figure 4.:** (A) Map of the medial electrode array (top) and lateral electrode array (bottom) implanted in somatosensory cortex and the distribution of the frequency preference categorizations. The electrode arrays were implanted close to the central sulcus with the left edge of the medial array being approximately parallel to the central sulcus. The arrays are oriented to reflect the implant orientation. Colored squares represent different types of electrodes as indicated by the color bar. (B) The projected field locations for each tested electrode. The label for each electrode corresponds to the most reported projected field for each electrode on all 100 Hz surveys taken in the same year as the magnitude estimation data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65128/elife-65128-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Spatial clustering was significant across the arrays (p=0.0045, LISA). Gray square represents unwired electrodes, and black squares represent untested electrodes.
 
 While there was some overlap between the projected field location and frequency preference, in some cases, electrodes with different frequency preferences evoked percepts from the same region of the hand (Figure 4B). For example, LFP, IFP, and HFP electrodes elicited sensations on the palmar region beneath the middle and ring fingers. As a result, percepts from a single region of the hand could be evoked by electrodes that generated multiple response types.
 
@@ -79,7 +127,7 @@ While there was some overlap between the projected field location and frequency 
 
 We found that ICMS frequency alters the perceived intensity (Figure 1, Figure 1—figure supplement 4) and quality (Figure 3) in an electrode-specific manner. Furthermore, we found that electrodes with similar intensity responses and qualities clustered spatially in somatosensory cortex (Figure 4, Figure 4—figure supplement 1). This implies that the observed electrode-specific relationships between frequency and perception are not caused by random factors and are instead related to the underlying structure of the cortex.
 
-## Neural populations preferentially respond to different stimulus frequencies in somatosensory cortex
+### Neural populations preferentially respond to different stimulus frequencies in somatosensory cortex
 
 Intracortical microstimulation at the maximum amplitudes used in this study can directly activate neurons up to 2 mm away from the electrode tip, but most activation occurs less than 500 µm from the electrode tip (Overstreet et al., 2013; Stoney et al., 1968). At intermediate amplitudes (e.g. 50–60 µA), direct activation primarily occurs within 200–300 µm of the electrode tip. Stimulation can also recruit passing axons which can project to far away areas, resulting in sparse, distributed activation of the cortex (Histed et al., 2009; Michelson et al., 2019). Using optical imaging, clusters of neurons with similar responses extend from 0.2 to 1 mm in squirrel monkeys (Friedman et al., 2004) while electrophysiological recordings have measured similar effects over 0.5 to 1 mm in the mediolateral direction and multiple millimeters in the rostrocaudal direction in macaque monkeys (Sur et al., 1984). These spatial scales over which function varies are similar to the expected recruitment distances from ICMS, supporting the idea that different perceptual or frequency responses may be linked to activating different functional groups of neurons.
 
@@ -87,7 +135,7 @@ Electrophysiological (Mountcastle et al., 1969; Sur et al., 1981; Sur et al., 19
 
 The idea that somatosensory cortex is organized for feature encoding is supported by human psychophysics experiments where frequency perception was dependent on specific spiking patterns and not on the types of mechanoreceptor that were activated (Birznieks et al., 2019). Similarly, individual cells in mouse cortex are preferentially activated by different mechanical stimulation frequencies (Prsa et al., 2019). In those same experiments, the frequency preference of the neural population tended toward higher frequencies when the indentation depth decreased, similar to our results that higher frequencies were perceived as being more intense when the ICMS amplitude was decreased (Figure 2). Together, these results suggest that the somatosensory cortex receives convergent input from different mechanoreceptors and is organized for feature-selective encoding, which results in different preferential responses to ICMS frequency and different evoked qualities.
 
-## Mechanisms for heterogeneous perceptual responses to stimulus frequencies in cortex
+### Mechanisms for heterogeneous perceptual responses to stimulus frequencies in cortex
 
 The effects described here must be related to different cellular responses to stimulation in different regions of the cortex. In fact, different stimulation frequencies in mouse somatosensory cortex can alter the activation of neurons far away from the stimulation electrode (Michelson et al., 2019). Specifically, high pulse frequencies lead to rapid habituation of neurons far away from the electrode, while low pulse frequencies can maintain the activation of these same neurons. This reduced activity in neurons far away from the electrode could lead to decreases in perceived intensity and changes in percept quality in a way that depends on electrode location and local neural populations.
 
@@ -95,7 +143,7 @@ A potential mechanism to explain electrode-dependent responses are varying distr
 
 Short-term plasticity (Tsodyks and Markram, 1997) at synapses driven by stimulation may also explain the observed effects. If a synapse is unable to resupply neurotransmitter at a rate faster than the stimulus frequency, transmitter release at the synapse could become depressed. In this scenario, neurons would be unable to recruit other neurons in synchrony with stimulation, which could result in lower recruitment and lower perceived intensity. If cells in somatosensory cortex have different time constants for transmitter recovery, this could serve as a mechanism for frequency filtering (Rosenbaum et al., 2012). Elucidating the precise mechanisms underlying observed frequency responses in cortex will require further studies in animal models.
 
-## ICMS in humans directly evaluates intensity and perception
+### ICMS in humans directly evaluates intensity and perception
 
 Higher stimulus pulse frequencies decreased the current amplitude required to detect a stimulus train in NHPs (Kim et al., 2015a). This suggested that higher stimulus frequencies would increase the perceived intensity of a stimulus train. Similar to these animal studies, we found that higher frequencies improved the detectability of stimulus trains at perithreshold amplitudes. However, at suprathreshold current amplitudes, increasing the frequency did not always produce higher perceived intensities. A question that emerges then is whether the prediction of increasing intensities at higher frequencies can be reconciled with our observations of decreased intensities at higher frequencies on a subset of the electrodes.
 
@@ -103,7 +151,7 @@ To determine whether changes in frequency could be perceived independently of ch
 
 However, an important difference between these experiments is that many electrodes in our study evoked less-intense percepts as the pulse frequency increased, which was not observed in NHPs. The reason for this is unclear, and it may be related to the larger frequency range explored in this study or the electrode location in the cortex. Another interpretation is that since frequency can change percept quality (Figure 3), different qualities are understood to have different intensities. Animals cannot directly report perceived intensity on an open scale as is simply done in humans. Rather, perceived intensity, as well as other subjective aspects of perception such as quality and naturalness, must be inferred from other experimental paradigms, which makes it difficult to assess how ICMS affects subjective aspects of perception in animals. This demonstrates that human experiments are crucial to understanding how ICMS modulates tactile perception, particularly for subjective evaluation of experience.
 
-## Limitations of study
+### Limitations of study
 
 There are several limitations associated with this work. First, most of these experiments were conducted in a single participant with a chronic implant. Different participants, with different timelines of injury preceding implant, could potentially respond differently to stimulation, particularly if the electrodes are implanted in a different part of the somatosensory cortex. However, the repeatability of our findings suggests that these effects were at least not due to day-to-day variations. Additionally, we found electrode-specific frequency effects, including LFP electrodes, that were spatially clustered in a second participant. This suggests that changing frequency will affect intensity and perception similarly in other participants. One important difference in the second participant was that we only observed LFP relationships on a single array.
 
@@ -115,7 +163,7 @@ Our results are consistent with the idea that somatosensory cortex is organized 
 
 Finally, a challenge for developing mechanistic explanations of these observations is that there are few neuroscientific tools that we can use to further probe these effects in a human. Because of this, addressing the neurophysiological mechanisms of these frequency responses is difficult in a human participant, and further investigation of these properties in animal models is needed.
 
-## Implications for prostheses
+### Implications for prostheses
 
 Stimulus amplitude linearly modulates intensity, while frequency has non-monotonic and electrode-specific effects on intensity and percept quality. To signal changing the intensity of a tactile input, amplitude should be used and not frequency. Other potential options also exist to modulate intensity that were not explored in this paper, including pulse width modulation and multielectrode stimulation. Future studies should assess the efficacy of these parameters.
 
@@ -125,7 +173,7 @@ Second, these results suggest that electrode-specific stimulation encoding schem
 
 ## Materials and methods
 
-## Regulatory and subject details
+### Regulatory and subject details
 
 This study was conducted under an Investigational Device Exemption from the U.S. Food and Drug administration, approved by the Institutional Review Boards at the University of Pittsburgh (Pittsburgh, PA) and the Space and Naval Warfare Systems Center Pacific (San Diego, CA), and registered at ClinicalTrials.gov (NCT0189-4802). Informed consent was obtained before any study procedures were conducted. The purpose of this trial is to collect preliminary safety information and demonstrate that intracortical electrode arrays can be used by people with tetraplegia to both control external devices and generate tactile percepts from the paralyzed limbs; this manuscript presents the analysis of data that were collected during participation in the trial but does not report clinical trial outcomes. All data included in this paper (including magnitude estimation, surveys, detection thresholds, etc.) were limited to 1 year of data collection in P2 to minimize the impact of changes in perception that can occur over long time periods. Data in P3 were collected over 2 months.
 
@@ -133,11 +181,11 @@ Participant P2 was 28 years old at the time of implant and had a C5 motor/C6 sen
 
 Participant P3 was 28 years old at the time of implant and had a C6 ASIA B spinal cord injury. He received the same type of microelectrode arrays in the somatosensory cortex. Data from this participant have not been published previously. The electrodes were also targeted to the hand region of area 1 of the somatosensory cortex using preoperative imaging and evoked sensations that he described as originating from his hand.
 
-## Stimulation protocol
+### Stimulation protocol
 
 Stimulation was delivered using a CereStim C96 multichannel microstimulation system (Blackrock Microsystems, Salt Lake City, UT). Pulse trains consisted of cathodal phase first, current-controlled, charge-balanced pulses, which could be delivered at frequencies from 20 to 300 Hz and at amplitudes from 2 to 100 μA. The cathodal phase was 200 μs long, the anodal phase was 400 μs long, and the anodal phase was set to half the amplitude of the cathodal phase. The phases were separated by a 100 μs interphase period. At the beginning of each test session involving stimulation, we sequentially stimulated each electrode first at 10 μA and 100 Hz for 0.5 s and then at 20 μA and 100 Hz for 0.5 s. During these trials, the interphase voltage on each electrode was measured at the end of the interphase period, immediately before the anodal phase (Cogan, 2008). If an electrode’s measured interphase voltage was less than −1.5 V, the electrode was disabled for the day (Flesher et al., 2016). This step was performed to minimize stimulation on electrodes that might potentially experience high voltages, which could result in irreversible damage.
 
-## Magnitude estimation
+### Magnitude estimation
 
 We assessed the effect of stimulus parameters on perceived intensity using a magnitude estimation task. To test the potential effect of pulse frequency on intensity in P2, pulse trains were delivered for 1 s at 60 µA with frequencies of 20, 40, 60, 80, 100, 150, 200, 250, and 300 Hz. Following each pulse train, P2 was asked to report the magnitude of the perceived intensity on a self-selected scale. P2 was instructed to use values such that a value twice as large as a previous value was twice as intense, and a value half as large was half as intense. These values typically ranged from zero to six. Each set of stimulus pulse frequencies was presented six times, with the presentation order randomized in each block. The responses from the first block were not used in the analysis to allow the participant to establish a baseline for reporting for the session. Data collected on the same electrode over multiple sessions were aggregated for analysis. We tested 29 total electrodes using this paradigm. Seven electrodes were tested in three to six sessions, while 22 electrodes were tested in one to two sessions.
 
@@ -147,7 +195,7 @@ We also assessed the effect of changing the stimulus current amplitude on percei
 
 To investigate the interaction between current amplitude and pulse frequency, we additionally tested frequency and amplitude pairs in P2. The train duration was set to 1 s, the current amplitude was set to 20, 50, or 80 μA, and the pulse frequency was set to 20, 100, or 300 Hz. All frequency and amplitude combinations were tested for each tested electrode six times, and the first trial was excluded from analysis. Each tested electrode was tested twice on two different test sessions, resulting in 10 total trials for each frequency and amplitude pair. For analysis and plotting, we divided electrodes into the categories defined in the frequency magnitude estimation described previously. We tested two LFP electrodes, three IFP electrodes, and two HFP electrodes. We tested six electrodes for this paradigm, each measured twice.
 
-## Detection thresholds
+### Detection thresholds
 
 Detection thresholds were determined using a two-alternative forced choice task in P2. P2 was instructed to focus on a fixation cross on a screen located in front of him. Two 1-s-long windows, separated by a variable delay period, which averaged 1 s in length, were presented and indicated by a change in the color of the fixation cross. Stimulation was randomly assigned to one of the two windows. After the last window, the fixation cross disappeared, and the participant was asked to report which window contained the stimulus.
 
@@ -155,7 +203,7 @@ A one-up three-down staircase method was used, so that if the participant correc
 
 We also conducted standard detection trials where the stimulus pulse frequency was changed while the stimulus current amplitude was held constant in P2. The current amplitude was set to 1.2× the detection threshold for each electrode measured at 100 Hz. The tested frequencies were 20, 100, and 300 Hz, and each pulse frequency was presented 30 times. Pulse frequencies were interleaved randomly resulting in 90 trials per tested electrode. We tested four electrodes with this paradigm.
 
-## Surveys
+### Surveys
 
 Surveys were conducted once every month from the time the arrays were implanted in P2. During a survey, each enabled electrode was stimulated sequentially using a 1 s pulse train at 60 μA. These parameters were selected because they were typically able to evoke sensations consistently while remaining well below our maximum stimulus current amplitude of 100 μA. In participant P2, surveys were conducted once a month at 100 Hz, but we collected additional surveys at 20 and 300 Hz. This resulted in 152 samples at 20 Hz, 621 samples at 100 Hz, and 85 samples at 300 Hz. Surveys were conducted to quantify stimulus-evoked tactile percepts. No visual or auditory cue was provided to the participant to indicate when stimulation was occurring. The participant was instructed to indicate when a sensation was detected, at which point progression through the trial was paused. The participant verbally reported when he detected a sensation, and the pulse train was repeated as many times as necessary for the participant to be able to accurately describe the location and quality of the sensation. A drawing of the hand was partitioned into different segments and the participant reported on which segments the sensation was felt. The participant also used a tablet and stylus to circumscribe the precise areas where sensation was felt on a map of the hand.
 
@@ -163,13 +211,13 @@ After the location of the percept was established, the participant reported the 
 
 The survey data collected in P2 included in these analyses were collected during the same year as the frequency magnitude estimation data to ensure the evoked sensations were consistent across paradigms, which included data from post-implant days 630–962.
 
-## K-means clustering
+### K-means clustering
 
 Electrodes were divided into three categories using k-means clustering using the reported intensity at 20, 100, and 300 Hz. Both silhouette and elbow analysis were used to validate that k = 3 was a suitable parameter choice for P2. We labeled the categories as LFP, IFP, and HFP based on the frequency at which the maximum intensity occurred. Based on silhouette analysis, we found that data from P3 divided best into two clusters. We labeled these clusters as LFP and HFP in line with the classification from the first participant.
 
 Electrodes were additionally clustered based on the reported perceptual qualities at 20, 100, and 300 Hz in P2. Each reported quality (of which there were 10) was summed across sessions and pulse frequencies for each electrode. The total number of reports for each quality was then divided by the maximum number of reports for any electrode, so that each quality was represented by number between zero and one and contributed equally to the clustering of each electrode. No dimensionality reduction was used and electrodes were clustered within the 10 dimensions of reported qualities.
 
-## Statistics
+### Statistics
 
 All quantification and statistical analyses were done in MATLAB (Mathworks, Natick, MA). Sample sizes are listed in the methods for each experiment. A power analysis was not conducted to determine the number of replicates for each experiment. The number of repetitions for psychophysics experiments were based on commonly used values. Electrodes that elicited clearly perceptible sensations and showed a significant change in perception with a change in a parameter were collected across multiple sessions to determine whether effects were consistent over time.
 
@@ -185,6 +233,6 @@ To test whether there was spatial clustering of the effects of frequency on per
 
 For all statistical tests, we considered p<0.05 to be significant.
 
-## Data and code availability
+### Data and code availability
 
 Data and code for this paper are available at GitHub (https://github.com/chughes003r/FrequencyPaper, Hughes et al., 2021b; copy archived at swh:1:rev:96f81aa826f68b9f509a3d73b7765a68ce0193e4).

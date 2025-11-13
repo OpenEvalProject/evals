@@ -18,19 +18,19 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Department of Oncological Sciences, University of Utah Salt Lake City United States
-2. https://ror.org/03r0ha626 Huntsman Cancer Institute, University of Utah Salt Lake City United States
-3. https://ror.org/04twxam07 Department of Genetics, The University of Texas MD Anderson Cancer Center Houston United States
-4. https://ror.org/038hbfs18 Deciphera Pharmaceuticals St. Lawrence United States
-5. https://ror.org/03r0ha626 Department of Pathology, University of Utah Salt Lake City United States
-6. https://ror.org/03r0ha626 Department of Internal Medicine, Division of Medical Oncology, University of Utah Salt Lake City United States
-7. https://ror.org/03r0ha626 Department of Dermatology, University of Utah Salt Lake City United States
+1. Department of Oncological Sciences, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Huntsman Cancer Institute, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+3. Department of Genetics, The University of Texas MD Anderson Cancer Center Houston United States ([ROR:04twxam07](https://ror.org/04twxam07))
+4. Deciphera Pharmaceuticals St. Lawrence United States ([ROR:038hbfs18](https://ror.org/038hbfs18))
+5. Department of Pathology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+6. Department of Internal Medicine, Division of Medical Oncology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+7. Department of Dermatology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-Mutational activation of KRAS occurs commonly in lung carcinogenesis and, with the recent U.S. Food and Drug Administration approval of covalent inhibitors of KRAS G12C such as sotorasib or adagrasib, KRAS oncoproteins are important pharmacological targets in non-small cell lung cancer (NSCLC). However, not all KRAS G12C -driven NSCLCs respond to these inhibitors, and the emergence of drug resistance in those patients who do respond can be rapid and pleiotropic. Hence, based on a backbone of covalent inhibition of KRAS G12C , efforts are underway to develop effective combination therapies. Here, we report that the inhibition of KRAS G12C signaling increases autophagy in KRAS G12C -expressing lung cancer cells. Moreover, the combination of DCC-3116, a selective ULK1/2 inhibitor, plus sotorasib displays cooperative/synergistic suppression of human KRAS G12C -driven lung cancer cell proliferation in vitro and superior tumor control in vivo. Additionally, in genetically engineered mouse models of KRAS G12C -driven NSCLC, inhibition of either KRAS G12C or ULK1/2 decreases tumor burden and increases mouse survival. Consequently, these data suggest that ULK1/2-mediated autophagy is a pharmacologically actionable cytoprotective stress response to inhibition of KRAS G12C in lung cancer.
+Mutational activation of KRAS occurs commonly in lung carcinogenesis and, with the recent U.S. Food and Drug Administration approval of covalent inhibitors of KRASG12C such as sotorasib or adagrasib, KRAS oncoproteins are important pharmacological targets in non-small cell lung cancer (NSCLC). However, not all KRASG12C-driven NSCLCs respond to these inhibitors, and the emergence of drug resistance in those patients who do respond can be rapid and pleiotropic. Hence, based on a backbone of covalent inhibition of KRASG12C, efforts are underway to develop effective combination therapies. Here, we report that the inhibition of KRASG12C signaling increases autophagy in KRASG12C-expressing lung cancer cells. Moreover, the combination of DCC-3116, a selective ULK1/2 inhibitor, plus sotorasib displays cooperative/synergistic suppression of human KRASG12C-driven lung cancer cell proliferation in vitro and superior tumor control in vivo. Additionally, in genetically engineered mouse models of KRASG12C-driven NSCLC, inhibition of either KRASG12C or ULK1/2 decreases tumor burden and increases mouse survival. Consequently, these data suggest that ULK1/2-mediated autophagy is a pharmacologically actionable cytoprotective stress response to inhibition of KRASG12C in lung cancer.
 
 ## Introduction
 
@@ -46,41 +46,423 @@ Here, we test the antitumor effects of DCC-3116 against preclinical models of KR
 
 ## Results
 
-## Human KRASG12C-driven lung cancer cells are sensitive to co-inhibition of KRASG12C and ULK1/2
+### Human KRASG12C-driven lung cancer cells are sensitive to co-inhibition of KRASG12C and ULK1/2
 
 To determine whether direct inhibition of KRASG12C in lung cancer cells influences autophagy, human KRASG12X-driven lung cancer cell lines were engineered to express a chimeric fluorescent autophagy reporter (FAR) comprised of mCherry fused to EGFP fused to LC3 (Kinsey et al., 2019; Kimura et al., 2007). LC3 targets the chimeric FAR to the autophagosome where the pH-sensitive EGFP moiety is quenched in the acidic environment of the autolysosome (pH < 5). Hence, an increase in the ratio of mCherry:EGFP fluorescence is indicative of increased autophagy (Kinsey et al., 2019; Kimura et al., 2007). All KRASG12C-driven lung cancer cells displayed dose-dependent increases in autophagy following sotorasib treatment as indicated by an increase in the mCherry:EGFP ratio detected in live cells (Figure 1A–C, Figure 1—figure supplement 1A–D). Since sotorasib is reported to bind to >300 proteins, we ruled out nonspecific effects of sotorasib on autophagy by treating a KRASG12V-driven NSCLC cell line (COR-L23) with sotorasib, which failed to show any change in mCherry:EGFP fluorescence (Figure 1—figure supplement 1E; Wang et al., 2023). Moreover, as predicted by previous experiments, all KRASG12X-driven NSCLC cell lines displayed a dose-dependent increase in autophagy following treatment with trametinib, a MEK1/2 inhibitor (Figure 1—figure supplement 1F–J; Kinsey et al., 2019).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig1-v1.jpg)
+
+**Figure 1.:** (A–C) Human KRASG12C-driven cell lines NCI-H2122 (A), Calu-1 (B), and NCI-H358 (C) increase autophagy as assessed by mCherry-EGFP-LC3 reporter after 48 hr of sotorasib treatment and decrease autophagy after 48 hr of DCC-3116 treatment. Red = high autophagy, yellow = medium autophagy, green = low autophagy. Statistical significance was determined by comparing autophagy levels to DMSO control, and an ordinary one-way ANOVA with Dunnett’s multiple comparisons was used. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 9 biological replicates. (D–F) Quantification of percent confluence of human KRASG12C-driven cell lines at 72 hr post-drug treatment. Statistical significance was determined by an ordinary one-way ANOVA. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 3 biological replicates. (G–I) In vitro synergy assay of human KRASG12C-driven cell lines using the Loewe method after 72 hr of treatment. N = 3 biological replicates. (J–L) Tumor volume measured over 28 days of treatment in mice inoculated with NCI-H2122 (J), Calu-1 (K), and NCI-H358 (L) cells. Vehicle and sotorasib were administered once daily via oral gavage and DCC-3116 was formulated in the chow. Statistical significance was determined by an ordinary one-way ANOVA compared to vehicle-treated tumors. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 4–5 mice per treatment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–E) Autophagy levels in human KRASG12C-driven lung cancer cells Calu-1 (A), NCI-H2122 (B), NCI-H23 (C), NCI-H358 (D), and the KRASG12V-driven human lung cancer cell line Cor-L23 (E) after 48 hr of sotorasib at indicated concentrations with the fluorescent autophagy reporter (FAR). Red = high autophagy, yellow = medium autophagy, green = low autophagy. Statistical significance was determined by comparing autophagy levels to DMSO control, and an ordinary one-way ANOVA with Dunnett’s multiple comparisons was used. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 9. (F–J) Autophagy levels in human KRASG12C-driven lung cancer cells Calu-1 (F), NCI-H2122 (G), NCI-H23 (H), NCI-H358 (I), and the KRASG12V-driven human lung cancer cell line Cor-L23 (J) after 48 hr of trametinib at indicated concentrations with the FAR. Red = high autophagy, yellow = medium autophagy, green = low autophagy. Statistical significance was determined by comparing autophagy levels to DMSO control, and an ordinary one-way ANOVA with Dunnett’s multiple comparisons was used. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 9.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) ELISA measurement of pS318-ATG13 signal after 16 hr of drug treatment in NCI-H2122 (A), Calu-1 (B), and NCI-H358 cell lines (C). N = 3. Statistical analysis was performed using an ordinary one-way ANOVA with Tukey’s multiple comparisons test. ns = not significant, *p<0.05, ****p<0.0001. (D–F) Percent confluence over time of NCI-H2122 (D), Calu-1 (E), and NCI-H358 (F) cell lines treated with indicated compounds over time. Statistical analysis was performed using an ordinary one-way ANOVA with Tukey’s multiple comparisons test. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 3–5. (G–I) Immunoblotting analysis of NCI- H2122 (G), Calu-1 (H), and NCI-H358 (I) cell lines after 100 nM sotorasib treatment over 24 hr.
 
 Next, we tested the effects of DCC-3116 on autophagy in KRASG12C-driven NSCLC cell lines. As anticipated, DCC-3116 inhibited both basal and sotorasib-induced autophagy in all KRASG12C-driven cell lines as assessed using the FAR (Figure 1A–C). In addition, DCC-3116 treatment, either alone or in combination with sotorasib, led to decreased pS318-ATG13, one of ULK1’s immediate downstream substrate (Figure 1—figure supplement 2A–C). To test whether DCC-3116 might show additive or synergistic antiproliferative effects when combined with sotorasib, human KRASG12C-driven NSCLC cells were treated with varying concentrations of both drugs for 72 hr with cell proliferation assessed using a cell viability assay. Interestingly, we observed synergistic antiproliferative effects of DCC-3116 plus sotorasib in NCI-H2122 and Calu-1 cell lines (Figure 1G and H), but not in NCI-H358 cells, which are noted to be exquisitely sensitive to single-agent sotorasib (Figure 1I). Using the IncuCyte platform, we measured cell proliferation over time and noted that the combination of sotorasib plus DCC-3116 was superior to either single agent in NCI-H2122 and Calu-1 cells (Figure 1D and E, Figure 1—figure supplement 2D and E), but not in NCI-H358 cells (Figure 1F, Figure 1—figure supplement 2F). Intriguingly, we observed consistent inhibition of NCI-H358 cell proliferation with single-agent DCC-3116 (Figure 1F, Figure 1—figure supplement 2F).
 
 We next proceeded to test the antitumor effects of DCC-3116, either alone or in combination with sotorasib, against xenografted tumors derived from injection of NCI-H2122, Calu-1, or NCI-H358 cells into immunocompromised mice. Here, we observed clear cooperation of sotorasib plus DCC-3116 in tumors derived from NCI-H2122 and Calu-1 cells (Figure 1J and K) but not from NCI-H358 cells, which are noted for their sensitivity to low concentrations of sotorasib (Figure 1L). To confirm the inhibitory activity of sotorasib in the cell lines used, cell extracts of control vs. sotorasib-treated NSCLC cells were immunoblotted for phospho-ERK1/2. As expected, pERK1/2 was decreased in all cell lines following 2 hr of sotorasib treatment (Figure 1—figure supplement 2G–I). In addition, we detected by immunoblotting the expected electrophoretic mobility shift of KRASG12C, which is indicative of covalent binding of sotorasib (561 daltons) to cysteine 12 of KRASG12C (Figure 1—figure supplement 2G–I; Canon et al., 2019).
 
-## Genetic inhibition of ULK1 decreases autophagy and cooperates with sotorasib to reduce cell viability
+### Genetic inhibition of ULK1 decreases autophagy and cooperates with sotorasib to reduce cell viability
 
 As an alternate way to assess the role of ULK1/2 in sotorasib-induced autophagy, we conditionally expressed a kinase-inactive, dominant negative form of ULK1 (ULK1K46N) under the control of a tetracycline transactivator (TetON) (Hara et al., 2008). Doxycycline treatment of NCI-H2122/TetON::ULK1K46N cells led to a substantial increase in total ULK1 expression within 8 hr, which could be inferred to also be phosphorylated at known sites (pS555 and pS747) of regulatory phosphorylation of ULK1 (Figure 2A and B). As anticipated, expression of ULK1K46N led to decreased phosphorylation of pS318-ATG13 in a manner comparable to treatment with DCC-3116 (Figure 2C). In addition, expression of ULK1K46N led to a decrease in both basal and sotorasib-induced autophagy as assessed using the FAR. Finally, expression of ULK1K46N displayed synergistic antiproliferative effects in NCI-H2122 cells when combined with sotorasib for 48 hr, suggesting that both genetic and pharmacological inhibition of ULK1 signaling had similar effects on NCI-H2122 cells (Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig2-v1.jpg)
 
-**Figure 2.:** (A) Immunoblot of NCI-H2122:ULK1K46N cells after 24 hr of doxycycline treatment. (B) Immunoblot of NCI-H2122:ULK1K46N cells treated with 1 ug/mL doxycycline over time (hours). (C) ELISA of pS318-ATG13 expression after 16 hr of doxycycline treatment. Statistical significance was determined by an ordinary one-way ANOVA. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 3 biological replicates. (D) NCI-H2122:ULK1K46N cells were engineered to express the mCherry-EGFP-LC3 reporter, and a decrease in autophagy was demonstrated after 48 hr of doxycycline treatment. N = 3. All statistical significance was measured using an ordinary one-way ANOVA with Dunnett’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (E) In vitro synergy assay of NCI-H2122:ULK1K46N cells treated with DMSO control, sotorasib, and/or doxycycline over 48 hr using the Loewe method. N = 3 biological replicates.Figure 2—source data 1.Figure 2.Figure 2—source data 2.Figure 2.
+**Figure 2.:** (A) Immunoblot of NCI-H2122:ULK1K46N cells after 24 hr of doxycycline treatment. (B) Immunoblot of NCI-H2122:ULK1K46N cells treated with 1 ug/mL doxycycline over time (hours). (C) ELISA of pS318-ATG13 expression after 16 hr of doxycycline treatment. Statistical significance was determined by an ordinary one-way ANOVA. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 3 biological replicates. (D) NCI-H2122:ULK1K46N cells were engineered to express the mCherry-EGFP-LC3 reporter, and a decrease in autophagy was demonstrated after 48 hr of doxycycline treatment. N = 3. All statistical significance was measured using an ordinary one-way ANOVA with Dunnett’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (E) In vitro synergy assay of NCI-H2122:ULK1K46N cells treated with DMSO control, sotorasib, and/or doxycycline over 48 hr using the Loewe method. N = 3 biological replicates.
 
-## Either LKB1 silencing or expression of dominant-negative TP53R172H cooperates with KRASG12C-in GEM models of lung cancer
+### Either LKB1 silencing or expression of dominant-negative TP53R172H cooperates with KRASG12C-in GEM models of lung cancer
 
 To complement the use of cultured human lung cancer cells and further test how additional genetic alterations influence KRASG12C-driven lung tumor progression and treatment response, we generated genetically engineered mouse (GEM) models of KRASG12C-driven lung cancer. To that end, we crossed KrasLSL-G12C/+ (K) (Zafra et al., 2020) mice to either (1) Stk11fl/fl (Nakada et al., 2010) mice to generate KL mice or (2) Trp53wm-R172H to generate KP mice (Lang et al., 2004). Intranasal administration of an adenovirus encoding CRE recombinase under the control of a CMV promoter (Ad-CMV-CRE) to KL mice initiates expression of KRASG12C plus silencing of LKB1 in alveolar type 2 (AT2) cells. Similar treatment of KP mice initiates expression of KRASG12C plus dominant-negative TP53R172H in AT2 cells (Figure 3A, Figure 3—figure supplement 1A, Key resources table). At euthanasia, 14 weeks post-initiation (p.i.), compared to KrasLSL-G12C/+ (K) mice, KL and KP mice displayed both accelerated lung cancer formation (Figure 3B) and increased tumor burden (Figure 3C). Histopathological analysis of H&E-stained sections of KRASG12C only-driven lung tumors, also at 14 weeks p.i., indicated that they comprised mainly of atypical adenomatous hyperplasia (AAH) and low-grade small LUADs. KRASG12C/LKB1Null-driven lung tumors comprised AHH, adenocarcinomas, ASC, and mucinous adenocarcinomas. Finally, KRASG12C/TP53R172H-driven lung tumors consisted of AAH and a mix of low- and higher-grade LUADs (Figure 3—figure supplement 1B). Immunohistochemical analysis of tumor sections indicated that phospho-ERK1/2 (pERK1/2) was detected in KRASG12C-driven lung tumors regardless of cooperating alterations in LKB1 or TP53 (Figure 3D). However, the intensity of pERK1/2 staining across all three GEM models, and even between lesions in the same lung lobe (Figure 3—figure supplement 1C) displayed substantial variability. Moreover, phospho-AKT1-3 (a surrogate for activation of PI3’-kinase signaling) was low across all KRASG12C-driven lung tumors, although some individual cells in tumors had readily detected pAKT1-3 (Figure 3—figure supplement 1D). Similar analysis confirmed the absence of LKB1 in KRASG12C/LKB1Null-driven lung tumors, but its presence in KRASG12C only and KRASG12C/TP53R172H-driven lung tumors. Similarly, KRASG12C/TP53R172H-driven lung tumors displayed elevated expression of TP53 that was not observed in KRASG12C only or in KRASG12C/LKB1Null-driven lung tumors (Figure 3D). Previously published data demonstrated that KRAS-driven lung cancer cells occasionally suppress expression of NK2 homeobox 2 (NKX2.1), a master-regulatory transcription factor required for normal lung development (Moisés et al., 2017). In addition, KRAS-driven but NKX2.1-deficient lung tumors display a mucinous adenocarcinoma pathology and other transcriptional features of a pulmonary-to-gastric lineage switch (Snyder et al., 2013). Although mucinous adenocarcinomas were detected in lung sections from KL mice (Figure 3D), these KRASG12C/LKB1Null tumor cells retained expression of NKX2.1 (Figure 3D, Figure 3—figure supplement 1E), and some cells also expressed the gastrointestinal transcription factor HNF4α (Figure 3—figure supplement 1E). Finally, we assessed expression of the AT2-specific pro-surfactant protein C (SPC), a surfactant important for the function of normal lung (Mason and Dobbs, 2016), and noted its uniform expression in KRASG12C-only-driven lung tumors, but more variable expression in KRASG12C/LKB1Null- and KRASG12C/TP53R172H-driven lung tumors (Figure 3D).
 
-## Antitumor effects of DCC-3116 and sotorasib either alone or in combination in GEM models of KRASG12C-driven lung cancer
+![Figure 3.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of genotypes of GEM models and abbreviations. Panel (A) was created with BioRender.com and published using a CC BY-NC-ND license with permission. (B) Representative images of lung lobes from GEM models at indicated time points post-initiation of lung tumorigenesis. (C) Quantification of lung tumor burdens from GEM models 14 weeks post-initiation of tumorigenesis. Statistical analysis was performed using an ordinary one-way ANOVA. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 4 mice. (D) Hematoxylin and eosin (H&E) and immunohistochemical analysis of representative lung sections from GEM models 14 weeks post-initiation of tumorigenesis. p.i. = post-initiation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of allele, structure, and protein changes in GEM models used. (B) Representative hematoxylin and eosin (H&E) stains of K, KL, and KP GEM models 14 weeks post-initiation. N.O. = not observed, AAH = atypical adenomatous hyperplasia, mucinous ADC = mucinous adenocarcinoma. (C, D) Representative immunohistochemical stains of pERK1/2 (C) and pAKT1-3 (D) signal in K, KL, and KP GEM models. (E) Representative images of staining and immunohistochemistry of indicated proteins in KL mice.
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>KrasLSL-G12C</td>
+      <td>The Jackson Laboratory;PMID:32792368</td>
+      <td>Strain #:033068</td>
+      <td>Dow Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Stk11fl/fl (mouse gene is Stk11 and protein is referred to as LKB1)</td>
+      <td>The Jackson Laboratory;PMID:21124450</td>
+      <td>Strain #:014143</td>
+      <td>Morrison Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Trp53wm-R172H</td>
+      <td>PMID:30262850</td>
+      <td></td>
+      <td>Lozano Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nod.Cg-Prkdcscid/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Strain #:001303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (adenovirus)</td>
+      <td>Ad5-CMV-CRE</td>
+      <td>University of Iowa Viral Vector Core</td>
+      <td>VVC-U of Iowa-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCI-H2122</td>
+      <td>ATCC</td>
+      <td>CRL-5985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Calu-1</td>
+      <td>ATCC</td>
+      <td>HTB-54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCI-H358</td>
+      <td>ATCC</td>
+      <td>CRL-5807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NCI-H23</td>
+      <td>ATCC</td>
+      <td>CRL-5800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Cor-L23</td>
+      <td>Sigma-Aldrich</td>
+      <td>92031919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>KL70</td>
+      <td>Tumor-derived cell line</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3700</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-AKT S473 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4060</td>
+      <td>WB (1:1000)IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2920</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho AMPKa S485 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2537</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho AMPKa T172 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2535</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AMPK (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5831</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ATG13 S318 (rabbit polyclonal)</td>
+      <td>Rockland Immunochemicals</td>
+      <td>Cat# 600-401C49</td>
+      <td>ELISA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATG13 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 13272</td>
+      <td>ELISA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HNF4α (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3113</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LKB1 (IHC formulated) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 13031</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LKB1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3050</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NKX2.1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76013</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p44/p42 ERK1/2 (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4696</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p44/42 Thr202/Tyr204 ERK1/2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4377</td>
+      <td>WB (1:1000)IHC (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TP53 (rabbit polyclonal)</td>
+      <td>Leica Biosystems</td>
+      <td>NCL-L-p53-CM5p</td>
+      <td>IHC (1:1000)WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pro-Surfactant Protein C (pSPC) (rabbit monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# AB3786</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAS (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#3965</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin-Poly-HRP antibody</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 21140</td>
+      <td>ELISA (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ULK1 S555 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5869</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-ULK1 S757 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 14202</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ULK1 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8054</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800 CW Goat anti-Rabbit IgG</td>
+      <td>LI-COR</td>
+      <td>Cat# 926-32211</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680LT Donkey anti-Mouse IgG</td>
+      <td>LI-COR</td>
+      <td>Cat# 926-68022</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCW57-MCS1-P2A-MSC2 (Blast)</td>
+      <td>Addgene</td>
+      <td>Plasmid # 80921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Plasmid # 12260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Plasmid # 12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-ULK1K46N</td>
+      <td>Vector Builder</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBabePuro:mCherry-GFP-LC3</td>
+      <td>Addgene</td>
+      <td>Plasmid # 22418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUltra-Hot</td>
+      <td>Addgene</td>
+      <td>Plasmid # 24130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sotorasib</td>
+      <td>Deciphera Pharmaceuticals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DCC-3116</td>
+      <td>Deciphera Pharmaceuticals</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DCC-3116 formulated chow</td>
+      <td>Deciphera Pharmaceuticals, Research Diets</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trametinib</td>
+      <td>Shanghai Biochem Partner</td>
+      <td>Cat# BCP02307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Corn oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C8267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D8418</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antitumor effects of DCC-3116 and sotorasib either alone or in combination in GEM models of KRASG12C-driven lung cancer
 
 The importance of autophagy in the initiation and/or progression of KRAS- or BRAF-driven lung cancer was revealed through analysis of GEM models in which deletion of key autophagy genes (Atg5 or Atg7) accompanied the initiation of oncoprotein expression (Guo et al., 2013; Bhatt et al., 2019; Khayati et al., 2020; Poillet-Perez et al., 2018; Rao et al., 2014). Hence, we tested whether DCC-3116-mediated inhibition of ULK1/2, starting at tumor initiation in KL mice, would inhibit tumor growth. Therefore, KL mice were initiated with Ad-CMV-CRE and then, starting 2 days p.i., treated with either vehicle or DCC-3116 (using a chow formulation) for 12 weeks (Figure 4A) at which time mice were euthanized for analysis. DCC-3116-treated KL mice displayed significantly decreased tumor burden compared to control KL mice (Figure 4B and C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of lung tumor prevention dosing strategy of KL GEMs. Panel (A) was created with BioRender.com and published using a CC BY-NC-ND license with permission. DCC-3116 was administered in drug-formulated chow. N = 4–6 mice. (B) Representative images of lung lobes from GEM models 12 weeks post-initiation of tumorigenesis and DCC-3116 treatment. (C) Quantification of tumor burden of (B). Statistical analysis was measured by an unpaired Student’s t-test. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 4 mice. (D) Schematic of treating tumor-bearing KL mice with vehicle control, 30 mg/kg sotorasib, chow containing DCC-3116 or the combination. Panel (D) was created with BioRender.com and published using a CC BY-NC-ND license with permission. DCC-3116 was administered in drug-formulated chow (Key resources table). Mice were treated daily for 56 days or until termination criteria were reached, whichever was reached first. N = 4–6 mice. (E) Kaplan–Meier survival curve of survival on treatment of KL mice treated as indicated. Statistical analysis was performed using a log-rank test. **p<0.01, N = 4–6 mice. (F) Quantification of tumor burden of (E). (G) H&E analysis of representative lung sections from KL mice after treatment. AB/PAS = Alcian Blue Periodic Acid Schiff, for staining mucins. (H, I) Quantification of immunohistochemical staining of treated mice pERK (H) and pAKT (I) as described in ‘Materials and methods’. Statistical analysis was measured with an ordinary one-way ANOVA. *p<0.05, **p<0.01, ns = not significant. N = 4–5 mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative microCT images of KL mice pre-treatment (day 0) and 14 days, 28 days, and 56 days post-treatment. Vehicle-treated mice and most DCC-3116-treated mice reached termination criteria before the 56-day endpoint. Red arrows indicate lung tumors. (B) Percent change in the body weight of mice over the course of the treatment period. Each line depicts an individual mouse. (C) Representative images of hematoxylin and eosin staining of lung sections of KL mice at the end of treatment. N.O. = not observed, AH = alveolar hyperplasia, ADC = adenocarcinoma, ASC = adenosquamous cell carcinoma, mucinous ADC = mucinous adenocarcinoma.
 
 To test whether combined inhibition of KRASG12C plus ULK1/2 would inhibit growth of established KRASG12C/LKB1Null lung tumors, tumor-bearing KL mice at 10 weeks p.i. were administered sotorasib or DCC-3116 either alone or in combination for 8 weeks or until the mice met predetermined euthanasia endpoints (Figure 4D). Compared to vehicle, all three treatments significantly increased the survival of tumor-bearing KL mice (Figure 4E). Although there was a trend toward improved survival of KL mice treated with the combination of sotorasib plus DCC-3116, these differences were not statistically significant (Figure 4E). We also utilized micro-computed tomography (microCT) to monitor the response of tumors (Johnson, 2007) that were large enough to be detected throughout drug treatment (Figure 4—figure supplement 1A). As expected, lung tumors in vehicle-treated mice rapidly increased in size (Figure 4—figure supplement 1A). The growth of KRASG12C/LKB1Null tumors in mice treated with sotorasib, DCC-3116, or the combination was delayed compared to those in vehicle-treated mice, but tumors ultimately progressed on treatment (Figure 4—figure supplement 1A). However, some lung tumors in mice treated with the sotorasib plus DCC-3116 drug combination did not appear to change their size over the course of treatment (Figure 4—figure supplement 1A). Throughout the course of treatment, we observed substantial (>20%) weight loss in four out of five sotorasib-only treated mice and one combination-treated mouse that reached our euthanasia criteria (Figure 4—figure supplement 1B). Following euthanasia, we performed immunohistochemical analysis on lung sections from control vs. drug-treated mice. In KL mice treated with sotorasib, either alone or in combination with DCC-3116, we noted a predominance of ASC and mucinous adenocarcinomas at the expense of AAH and adenocarcinoma (Figure 4—figure supplement 1C). These results suggest that KRASG12C/LKB1Null-driven ASC or mucinous adenocarcinomas may be less sensitive to sotorasib treatment (Figure 4—figure supplement 1A–C). Intriguingly, single-agent DCC-3116 treatment also slowed the growth of established tumors compared to vehicle treatment (Figure 4—figure supplement 1A), but this did not inhibit the growth of AAH or adenocarcinomas (Figure 4—figure supplement 1C). Immunohistochemistry revealed the expected decrease in pERK1/2 and pAKT1-3 staining in tumors treated with sotorasib, either alone or in combination with DCC-3116, compared to mice treated with vehicle or single-agent DCC-3116 alone (Figure 4G–I). NKX2.1 expression was detected in all lung tumors regardless of the treatment group (Figure 4G). Finally, many mice, regardless of the treatment type, developed lung tumors with the aforementioned mucinous adenocarcinoma phenotype, expressing HNF4α and stained positive for various mucins (Alcian-Blue/PAS-positive) (Figure 4G).
 
 To further compare and contrast the effects of sotorasib and DCC-3116, either alone or in combination in GEM models of lung cancer and because of noted correlations between loss of LKB1 and insensitivity of cancers to various types of therapy, we employed our KP mouse model (Shackelford et al., 2013; Pons-Tostivint et al., 2021). KRASG12C/TP53R172H-driven lung tumorigenesis was initiated in adult KP mice and at 10 weeks p.i. tumor-bearing mice were treated with (1) vehicle control, (2) sotorasib, (3) DCC-3116, or (4) combination of sotorasib plus DCC-3116 for 4 weeks (Figure 5A) at which time mice were euthanized for analysis as described above. Interestingly, compared to control, there was a significant reduction in lung tumor burden in response to all three treatments (Figure 5B). In addition, in all sotorasib-treated mice, either alone or in combination with DCC-3116, regression of preexisting lung tumors was detected by microCT scanning (Figure 5C, Figure 5—figure supplement 1). In mice treated with single-agent DCC-3116, although an overall reduction in tumor burden was observed, some tumors detectable by microCT scanning continued to increase in size throughout treatment (Figure 5B, Figure 5—figure supplement 1). Moreover, in this experiment, we noted no weight loss in mice in any of the three treatment groups (Figure 5C). Immunohistochemical analysis of lung sections from mice again revealed decreased pERK1/2 in mice treated with sotorasib either alone or in combination with DCC-3116, although pERK1/2 was detected in some areas of the lung (Figure 5D and E). Vehicle-treated KRASG12C/TP53R172H-driven lung tumors had detectable pAKT, which was decreased by all three treatments (Figure 5D and F). Finally, all tumors displayed expression of NKX2.1 that was not substantially altered by drug treatment (Figure 5D).
 
-## KL lung cancer-derived cells that acquire resistance to sotorasib increase RAS and pERK1/2 expression and do not increase autophagy after sotorasib treatment
+![Figure 5.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of the treatment of KP GEM models. Panel (A) was created with BioRender.com and published using a CC BY-NC-ND license with permission. Mice were administered vehicle control or 30 mg/kg sotorasib once daily via oral gavage. DCC-3116 was administered in drug-formulated chow. N = 4–5 mice. (B) Quantification of tumor burden of mice after 4 weeks of treatment. Statistical analysis was performed using an ordinary one-way ANOVA. *p<0.05, ns = not significant. N = 4–5 mice. (C) Percent change in the body weight of mice on treatment over 4 weeks. Each line depicts an individual mouse. (D) Representative images of histological analysis of lung lobes from KP mice 4 weeks after treatment. (E, F) Quantification of immunohistochemical staining of treated mice pERK1/2 (E) and pAKT1-3 (F) as described in ‘Materials and methods’. Statistical analysis was performed using an ordinary one-way ANOVA. *p<0.05, **p<0.01. ns = not significant. N = 4–5 mice.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative microCT images of KP mice pre-treatment (day 0) and 7 days, 14 days, and 28 days post-treatment. Red arrows indicate lung tumors.
+
+### KL lung cancer-derived cells that acquire resistance to sotorasib increase RAS and pERK1/2 expression and do not increase autophagy after sotorasib treatment
 
 To complement our in vivo work with GEM models and better understand how acquired sotorasib resistance influences autophagy and treatment sensitivity, we generated KRASG12C/LKB1Null-lung cancer-derived cell lines from suitably manipulated, drug-naive KL mice. As expected, parental KL70 cells are sensitive to the antiproliferative effects of both sotorasib and the MEK1/2 inhibitor, trametinib (Figure 6A–D). In addition, pERK1/2 also is inhibited by both sotorasib and trametinib (Figure 6A). Next, we generated a sotorasib resistant (SR) KRASG12C/LKB1Null-driven lung cancer cell line by culturing parental KL70 cells over 12 weeks in gradually increasing concentrations of sotorasib until a resistant population emerged (KL70SR cells). KL70SR cells were entirely resistant to the antiproliferative effects of sotorasib but remained sensitive to trametinib (Figure 6D). Consistent with this, the level of pERK1/2 was sotorasib resistant but trametinib sensitive (Figure 6A). Indeed, KL70SR cells had a higher baseline level of both RAS and pERK1/2 expression compared to parental KL70 cells, which might explain their more rapid baseline proliferation (Figure 6D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96992/elife-96992-fig6-v1.jpg)
 
-**Figure 6.:** (A) Immunoblot analysis of KL.70 and KL.70R cells treated with 100 nM sotorasib or 100 nM trametinib after 48 hr of treatment. (B, C) Quantification of signal from A normalized to b-actin. (D) Live-cell imaging of percent confluence of KL.70 cells over time treated with DMSO, 100 nm sotorasib of 100 nM trametinib. N = 3 biological replicates. (E) Autophagy measurement with fluorescent autophagy reporter (FAR) in cells assessed by mCherry-eGFP-LC3 reporter after 48 hr of 100 nM sotorasib or 100 nM trametinib treatment. Red = high autophagy, yellow = medium autophagy, green = low autophagy. Statistical significance was determined by comparing autophagy levels to DMSO control, and an ordinary one-way ANOVA with Dunnett’s multiple comparisons was used. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 9 biological replicates. (F, G) In vitro synergy assay of KL70 cells treated with indicated doses of sotorasib and/or DCC-3116 using the Loewe method after 72 hr of treatment. N = 3 biological replicates. (H, I) In vitro synergy assay of KL70SR cells treated with indicated doses of sotorasib and/or DCC-3116 using the Loewe method after 72 hr of treatment. N = 3 biological replicates.Figure 6—source data 1.Figure 6.Figure 6—source data 2.Figure 6.
+**Figure 6.:** (A) Immunoblot analysis of KL.70 and KL.70R cells treated with 100 nM sotorasib or 100 nM trametinib after 48 hr of treatment. (B, C) Quantification of signal from A normalized to b-actin. (D) Live-cell imaging of percent confluence of KL.70 cells over time treated with DMSO, 100 nm sotorasib of 100 nM trametinib. N = 3 biological replicates. (E) Autophagy measurement with fluorescent autophagy reporter (FAR) in cells assessed by mCherry-eGFP-LC3 reporter after 48 hr of 100 nM sotorasib or 100 nM trametinib treatment. Red = high autophagy, yellow = medium autophagy, green = low autophagy. Statistical significance was determined by comparing autophagy levels to DMSO control, and an ordinary one-way ANOVA with Dunnett’s multiple comparisons was used. Ns = not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. N = 9 biological replicates. (F, G) In vitro synergy assay of KL70 cells treated with indicated doses of sotorasib and/or DCC-3116 using the Loewe method after 72 hr of treatment. N = 3 biological replicates. (H, I) In vitro synergy assay of KL70SR cells treated with indicated doses of sotorasib and/or DCC-3116 using the Loewe method after 72 hr of treatment. N = 3 biological replicates.
 
 We next tested the differences in baseline and drug-induced autophagy in KL70 and KL70SR cells using the FAR. As expected based on analysis of human KRASG12C-driven lung cancer cells, KL70 cells increased autophagy in response to either sotorasib or trametinib treatment, a further demonstration that LKB1 is not required for increased autophagy in response to inhibition of KRASG12C>RAF>MEK>ERK inhibition (Figure 6E). KL70SR cells treated with sotorasib displayed little induction of autophagy (Figure 6E). However, trametinib elicited a robust induction of autophagy in KL70SR cells (Figure 6E), further suggesting that changes in autophagy levels are correlated to pERK1/2 levels in the cell. Because sotorasib did not induce autophagy in the KL70SR cells, it was not clear whether the addition of an autophagy inhibitor would decrease cell viability in the SR cells. Cell viability was measured after 72 hr of drug treatment in the KL70 and KL70SR cell lines (Figure 6F–I). The combination of sotorasib and DCC-3116 did not lead to decreases in cell viability in the KL70SR cells (Figure 6H). We next tested whether there were any synergistic decreases in cell viability with the combination of trametinib and DCC-3116 because there was a robust increase in autophagy levels with trametinib treatment in the KL70SR cells. KL70SR cells are exquisitely sensitive to trametinib at very low concentrations, and therefore, little synergy was observed with the tested concentrations (Figure 6I).
 
@@ -98,58 +480,58 @@ In closing, our data support the testing of ULK1/2 inhibitors in patients with K
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Cell lines were routinely tested for mycoplasma contamination. All human lung cancer cell lines were obtained from the ATCC and cultured in RPMI 1640 (Gibco 11875-093) supplemented with 10% (v/v) fetal bovine serum (FBS) (Gibco 10438-026) and 1% penicillin plus streptomycin (P/S) (Gibco 15140-122). Mouse tumor-derived cell lines were derived as previously described (PMID:19282848). Briefly, lungs from tumor-bearing mice were homogenized in a solution of digestive enzymes and plated in dishes. Cells were harshly split to allow for the outgrowth of tumor cells. The specific genetic abnormalities in each cell line were confirmed by analysis of genomic DNA or by immunoblotting. All mouse tumor-derived cell lines were cultured in Dulbecco’s Modified Eagle Medium F12 (DMEM/F12) (Gibco 11330-032) with 10% (v/v) FBS and 1% P/S. KL.70 cells were derived from a 24-week-old female mouse.
 
-## Fluorescent autophagy reporter
+### Fluorescent autophagy reporter
 
 A vector encoding the chimeric FAR protein comprising mCherry:EGFP:LC3 was introduced into human and mouse cell lines as previously described with virus-infected cells selected using puromycin and FAR-expressing cells selected by flow cytometry (Kinsey et al., 2019; Kimura et al., 2007). To assess autophagy, FAR-expressing cells were seeded at equal densities in 6-well plates. After 24 hr, media was replaced with media containing the various drug treatments for 48 hr. Cells were harvested and stained with 1 mM SYTOX Blue (Invitrogen S34857) for the exclusion of dead cells. Flow cytometry (Beckman Coulter CytoFLEX) was performed to assess mCherry and EGFP intensity and quantify the mCherry:EGFP ratio normalized to dimethyl sulfoxide (DMSO) control. Cells engineered to express the FAR are analyzed by flow cytometry in which we defined autophagy status by gating viable (based Sytox Blue staining), DMSO-treated control cells into three bins based on the ratio of EGFP:mCherry fluorescence. We gate all live cells into the 33% highest EGFP-positive cells (autophagy low) and the 33% highest mCherry-positive cells (autophagy high), and therefore, the proportion in the middle is also approximately 33% and considered the medium autophagy status. Again, these gates are based entirely on the DMSO-treated control cells, and all other treatments within the experiment are compared to settings on these gates. For statistical analysis, an ordinary one-way ANOVA and Dunnett’s multiple comparisons test were performed.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 HEK293T cells (Key resources table) were seeded 24 hr prior to transfection in DMEM/F12 (10% FBS 1% P/S). DNA for lentivirus generation was introduced into these cells using a Lipofectamine 3000 kit (Invitrogen L3000015). All virus-containing supernatants were filtered through 0.45 mm filters before use. To increase the efficiency of infection, 10 mg/mL of Polybrene (MilliporeSigma TR-1003-G) was supplemented in the virus-containing media when added to cells. Cells were selected for successful infection through antibiotic selection with the corresponding antibiotics (puromycin or blasticidin) or flow cytometry for fluorescent markers. All plasmids used are described in Key resources table and are commercially available or previously published except the pLV-ULK1K46N plasmid.
 
-## ELISA for pS318-ATG13
+### ELISA for pS318-ATG13
 
 pS318-ATG13 antibody (Rockland Immunochemicals, 600-401C49) was biotinylated using a Biotin Labeling Kit-NH2 (Dojindo, LK03). ELISA plates (Corning, 9018) were coated in anti-ATG13 antibody (Key resources table) overnight at 4°. Cells were plated in equal densities in a 96-well plate. After 24 hr, cells were treated with various drug treatments for 16 hr, washed with 1× phosphate-buffered saline, and then lysed in M-Per lysis buffer (Thermo Fisher, 78501) supplemented with 1× ethylenediaminetetraacetic acid (Thermo Fisher, 1861274), 1× Sigma Phosphatase Inhibitor (Sigma, 5726), 2× Halt Phosphatase and Protease inhibitor Cocktail (Thermo Fisher, 78446) for 15 min on an orbital shaker at 4°C. Cell extracts were then centrifuged for 10 min at 4000 rpm in a 4°C refrigerated centrifuge. ELISA plates were washed twice with 1× ELISA wash buffer (BioLegend, 421601), blocked for 1 hr at room temperature (RT) with 1× ELISA dilutant buffer (BioLegend Cat# 421203), then washed twice with 1× wash buffer. Cell extracts were diluted in wash buffer, incubated in the ELISA plate at RT for 2 hr, and then washed twice with 1× wash buffer. The biotinylated pS318-ATG13 antibody was diluted in 1× dilutant buffer and added to each well. After 1 hr at RT, wells were washed twice with 1× well wash buffer. Streptavidin-Poly-HRP antibody (Key resources table) was diluted in 1× dilutant and added to each well for 1 hr at RT. Wells were washed twice with 1× well wash buffer and tetramethylbenzidine substrate (BioLegend, 421101) was added to each well for 15 min at RT. After 15 min, ELISA stop solution (Invitrogen, SS04) was added to each well. Background correction was performed by including control wells that received every reagent except for protein lysate and subtracting that value from all samples. Plates were immediately read on a Synergy HTX (BioTek) plate reader at 450 nm and 540 nm. Statistical analysis was performed using a one-way ANOVA with Tukey’s multiple comparisons.
 
-## Immunoblotting
+### Immunoblotting
 
 Cell extracts were harvested as previously described (Truong et al., 2020). Following clearing by centrifugation, protein lysates were quantified using a bicinchoninic acid assay (Thermo Scientific 23250). 20-50 mg samples of cell extract were fractionated by SDS-PAGE and then western blotted onto nitrocellulose membranes. Membranes were probed with primary antibodies (Key resources table) overnight at 4°C. Secondary antibodies (Key resources table) were diluted and incubated at RT for 1 hr. Membranes were imaged and analyzed on an Odyssey CLx Infrared Imaging System (LI-COR) and analyzed using Image Studio Software (LI-COR).
 
-## In vitro synergy assays
+### In vitro synergy assays
 
 Cells were seeded in triplicate at 5000–7000 cells/well into black-walled clear bottom 96-well plates (Costar 3603), cultured overnight in complete media, and then treated with various drug treatments at the indicated concentrations for 72 hr. At the endpoint, ATP was quantified using CellTiter-Glo luminescent cell viability assay (Promega, G7570) as per the manufacturer’s instructions. Luminescence was measured using a BioTek Synergy HTX plate reader and data were normalized to untreated controls. Synergy was determined using ComBenefit software (HSA, Bliss, Loewe models) (Di Veroli et al., 2016).
 
-## Live-cell imaging
+### Live-cell imaging
 
 Cells were imaged using an IncuCyte Zoom Live Cell Imager (Sartorius) over time and analyzed using the IncuCyte Analysis Software (Sartorius). Cells were seeded at equal densities in 6-well plates and treated with various inhibitors either as single agents or in combination and imaged every 2 hr. Media was replaced after 48 hr for each well. Percent confluence and standard error were calculated at each time point. Statistical analysis was performed using a one-way ANOVA with Tukey’s multiple comparisons.
 
-## Generation of pLV-ULKK46N expression vector
+### Generation of pLV-ULKK46N expression vector
 
 The pLV-ULK1K46N plasmid was designed and constructed using VectorBuilder. 3× HA-tagged human ULK1K46N was cloned into a pLV lentivirus backbone vector containing a tetracycline-inducible promoter including a Tet response element and puromycin resistance cassette synthesized.
 
-## Animal work
+### Animal work
 
 All animal work was approved by the Institutional Care and Use Committees at the University of Utah (protocol # 21-1005). All work containing biohazardous agents was approved by the University of Utah Biosafety Committee. Mice were fed ad libitum, housed in micro isolator cages, and monitored daily in a temperature-controlled environment with a 12-hr light/dark cycle. KrasLSL-G12C and Lkb1fl/fl mice were purchased from The Jackson Laboratory (Key resources table; Zafra et al., 2020; Nakada et al., 2010). All mice were on a mixed genetic background. Both female and male mice were used for all experiments. Experimental adult mice were initiated between 6 and 8 weeks of age through nasal inhalation of adenovirus expressing CMV-Cre recombinase (Key resources table) using 5 × 107 pfu per mouse as previously described (Fasbender et al., 1998). Lung tumorigenesis was monitored in live mice with micro-computed tomography (microCT) scans (Perkin Elmer Quantum Gx) with a Cu 0.06 + AI 0.5 X-ray filter, 72 mm acquisition, and 45 mm reconstitution for a 2 min standard scan. Mice were scanned up to nine times (<1 gray of total radiation). Mice on treatment were weighed 2–3× per week and euthanized if unacceptable weight loss (>20%) was observed. Upon euthanasia, lungs were dissected and fixed using standard protocols (Limjunyawong et al., 2015). For xenograft models, Nod.Cg-Prkdcscid/J mice were purchased from The Jackson Laboratory (Key resources table) or generated in-house. Cell lines were injected subcutaneously into the flank of adult mice at 1–5 × 106 cells per injection in a 1:1 mixture of serum-free Opti-MEM (Gibco, 31985-070) and Matrigel (Corning, 356231). Once tumors were palpable, they were measured using digital calipers. Once tumors reached ~250 mm3, mice were randomized to treatment arms. Mice were treated, in a nonblinded manner, for 28 days or until maximum tumor volume was reached (~1 cm3). Tumor volume was calculated as equal to (tumor length) × ((tumor width2)/2). Statistical analysis on xenograft assays was performed using an ordinary one-way ANOVA and unpaired Student’s t-test. Corn oil vehicle (Sigma C8261) and sotorasib treatments were administered once daily via oral gavage. DCC-3116 was formulated in chow, and mice were fed ad libitum. Schematics illustrating treatment strategies were created using BioRender.
 
-## Survival of mice on treatment
+### Survival of mice on treatment
 
 KL mice were randomized to treatment arms at 10 weeks post tumor initiation (p.i.) and treated every day or until euthanasia end point criteria were reached or after a predetermined 56 days of drug treatment. Euthanasia criteria were defined per IACUC protocol to monitor pain and distress symptoms in mice (Ullman-Culleré and Foltz, 1999). Statistical analysis of survival was performed using the log-rank (Mantel–Cox) test.
 
-## Tissue hematoxylin and eosin, immunohistochemistry staining
+### Tissue hematoxylin and eosin, immunohistochemistry staining
 
 Lungs were harvested and inflated by perfusion through the trachea with 5 mL of 10% (v/v) buffered formalin (Epredia 5725), and then fixed overnight with gentle rocking at RT following standard protocols (Limjunyawong et al., 2015). Fixed lungs were embedded in paraffin and then 5 μm sections were prepared. Harris hematoxylin acidified (Epredia 6765003) and Eosin Y (Epredia 71211) stains were performed on all tissue sections. For immunohistochemistry (IHC), sections were first deparaffinized using standard protocols, and antigen retrieval was performed in a pressure cooker using 1× Citrate Buffer pH 6 (Novus Biologicals, NB90062075). IHC was performed using the ImmPRESS Polymer Reagents (Vector Laboratories). Primary antibodies (Key resources table) were diluted and incubated at RT for 1 hr and then counterstained with hematoxylin. Sections were dehydrated using standard protocols and mounted with ClearVue Mountant (Epredia 4212). Alcian Blue – Periodic Acid Schiff (PAS) staining was performed using standard protocols. Briefly, slides were deparaffinized, rehydrated, and incubated in Alcian Blue (Leica 38016SS3A). Slides were washed and incubated in periodic acid (Leica 38016SS4A) followed by the Schiff Reagent (Fisher SS32-500).
 
-## Tissue imaging and quantification
+### Tissue imaging and quantification
 
 All tissue imaging was performed using a 3D-Histech Midi Panoramic Scanner (Epredia) at ×20 magnification. Tumor burden was quantified using CaseViewer software (Epredia). Total lung area and tumor area were digitally annotated using a closed polygon annotation. Total tumor and lung areas were summed, and the percent tumor burden was calculated. Immunohistochemical quantification was performed using 3D-Histech Quant Center software (Epredia) as previously described (Silvis et al., 2023). Statistical analysis was performed using an ordinary one-way ANOVA.
 
-## Inhibitor treatments
+### Inhibitor treatments
 
 All pathway-targeted inhibitors (Key resources table) were obtained from reputable sources and resuspended in the appropriate solvent (DMSO or water) for in vitro testing. The biochemical activity of all compounds was tested in vitro before being used in vivo. Compounds for in vivo dosing were resuspended in 10% (v/v) DMSO and 90% (v/v) corn oil (Key resources table) or formulated in mouse chow. The DCC-3116 formulated mouse chow (Research Diets) was formulated with an OpenStandard Diet with 15% kcal% fat and 360 mg DCC-3116 CL/kg diet.
 
-## Materials availability
+### Materials availability
 
 Any newly created materials, such as the KL.70 cells, will be made available to any investigator by reaching out to the corresponding author.

@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05dxps055 California Institute of Technology Pasadena United States
-2. https://ror.org/05dxps055 T&C Chen Brain-Machine Interface Center at Caltech Pasadena United States
-3. https://ror.org/02jx3x895 Institute of Cognitive Neuroscience, University College London London United Kingdom
-4. https://ror.org/024bsrp32 Casa Colina Hospital and Centers for Healthcare Pomona United States
-5. https://ror.org/00t9vx427 UT Southwestern Medical Center Dallas United States
+1. California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+2. T&C Chen Brain-Machine Interface Center at Caltech Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+3. Institute of Cognitive Neuroscience, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+4. Casa Colina Hospital and Centers for Healthcare Pomona United States ([ROR:024bsrp32](https://ror.org/024bsrp32))
+5. UT Southwestern Medical Center Dallas United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ We report that the neural representational structure of BCI finger movements in 
 
 ## Results
 
-## Intracortical recordings during finger flexion
+### Intracortical recordings during finger flexion
 
 We recorded single and multineuron activity (95.8 ± standard deviation [SD] 6.7 neurons per session over 10 sessions) from participant NS while she attempted to move individual fingers of the right hand. We recorded from a microelectrode array implanted in the left (contralateral) PPC at the junction of the postcentral and intraparietal sulci (PC-IP, Figure 1—figure supplement 1). This region is thought to specialize in the planning and monitoring of grasping movements (Andersen et al., 2019; Orban and Caruana, 2014; Gallivan and Culham, 2015; Klaes et al., 2015).
 
@@ -48,17 +48,73 @@ Each recording session started with an initial calibration task (Figure 1—figu
 
 These attempted movements resulted in distinct neural activity patterns across the electrode array. To enable BCI control, we trained a linear classifier (Methods) to identify finger movements from neural firing rates. The participant subsequently performed several rounds of a similar finger flexion task, except that (1) the trained classifier now provided text feedback of its predicted finger and (2) the task randomized the visual cue location (Figure 1a and Methods). We repeated this online-control finger flexion task over multiple sessions (408 ± SD 40.8 trials/session over 10 sessions) and used this data for our offline analyses. Participant NS also performed a control task, identical in structure except that she attended to cues without performing the corresponding movements.
 
-## Accurately decoding fingers from PPC single-neuron activity
+![Figure 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-v2.jpg)
+
+**Figure 1.:** (a) Main finger flexion task. When a letter was cued by the red crosshair, the participant looked at the cue and immediately attempted to flex the corresponding finger of her right (contralateral) hand. We included a null condition ‘X’, during which the participant looked at the target but did not move her fingers. Visual feedback indicated the decoded finger 1.5 s after cue presentation. To randomize the gaze location, cues were located on a grid (three rows, four columns) in a pseudorandom order. The red crosshair was jittered to minimize visual occlusion. (b) Confusion matrix showing robust BCI finger control (86% overall accuracy, 4016 trials aggregated over 10 sessions). Each entry (i, j) in the matrix corresponds to the ratio of movement i trials that were classified as movement j. (c–f) Mean firing rates for four example neurons, color-coded by attempted finger movement. Shaded areas indicate 95% confidence intervals (across trials of one session). Gaussian smoothing kernel (50 ms standard deviation [SD]).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Figure 1—figure supplement 1 and legend text have been reproduced from Figure S1 of Aflalo et al., 2020. The original image and legend text are published under the terms of the Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0) https://creativecommons.org/licenses/by-nc/4.0/. We used fuctional magnetic resonance imaging (fMRI) to identify cortical regions involved in imagined reaching and grasping actions. The participant performed two complementary tasks to ensure activation was robust across paradigms. (a) Event-related task design. Following an intertrial interval, the subject was cued with a specific imagined movement (precision grasp, power grasp, or reach without hand shaping). Following the cue, a cylindrical object was displayed. If the object was intact, the subject imagined performing the cued movement. If the object was broken, the subject withheld movement. (b) Block task design. Eight blocks were presented for 30 s per run. During the first 15 s of each block, common objects were presented every 3 s in varying spatial locations. Before each run, the subject was instructed to either imagine pointing at, imagine reaching and grasping, or look naturally at the object. During the last 15 s of each block, scrambled images were presented and the subject was instructed to guess the identity of the object. (c) Statistical parametric map showing voxels with significant activity for grasping (‘Go’ vs. ‘No-Go’) (p < 0.01, FDR-corrected), based on task (a). Array location and cortical landmarks are depicted in the legend. (d) Statistical parametric map showing voxels with significant activation (p < 0.01, FDR-corrected) for grasping versus looking, based on task (b).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Task structure, single trial. Each trial consisted of an intertrial interval (ITI) and a reaction-time Go phase. During the Go phase, green text specified which finger to flex. All letters were overlaid in gray to minimize visual differences between ITI and Go phases. T = thumb, I = index, M = middle, R = ring, P = pinky, X = no movement.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Finger classification accuracy in the main task across 10 sessions. Session 1 accuracy excludes No-Go (X) trials (see Methods).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Confusion matrix of offline finger classification, cross-validated within single sessions. 4080 trials of the main task aggregated over 10 sessions. (b) Confusion matrix of offline finger classification, cross-validated within single sessions. Five hundred and thirty trials of the calibration task aggregated over nine sessions. T = thumb, I = index, M = middle, R = ring, P = pinky, X = no movement. Each entry (i, j) in the matrix corresponds to the ratio of movement i trials that were classified as movement j.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** All five fingers of the right (contralateral) hand were encoded within the population during movement execution. (a) Percentage of the population tuned significantly (p < 0.05, FDR-corrected) to flexion of each finger. Positive percentages indicate neurons that increased firing rate during finger movement and negative percentages indicates neurons that decreased firing rate. Error bars indicate a 95% bootstrap confidence interval. (b) Percentage of the population tuned best to each finger. (c) Cumulative distribution function of the population’s tuning significance p values. (d) Histogram of d′ (discriminability index) values across neurons. (a–d) Neurons were pooled across sessions.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Linear regression could not decode target location [x, y] coordinates from the neural activity during the attempted-movement period. Violin plot shows that cross-validated regression r2 values are close to 0 across sessions, with each circle marking a single session. (b) A linear classifier (diagonal linear discriminant analysis [LDA]) could not classify the gaze location from neural activity during the attempted-movement period. Confusion matrix depicts cross-validated classifications of cue location. (c) Cross-validated classification accuracy for main and control tasks: a linear classifier (diagonal LDA) could not classify finger movements from neural activity during passive observation (orange) of the finger press task. Sliding bin width: 200 ms. The shaded region indicates ± standard error of the mean (SEM) (six sessions passive viewing, 10 sessions attempted flexion).
+
+### Accurately decoding fingers from PPC single-neuron activity
 
 High classification accuracy during online control (86% ± SD 4% over 10 sessions; chance = 17%) (Figure 1b and Figure 1—figure supplement 3) and offline cross-validated classification (92% ± SD 2%; Figure 1—figure supplement 4a) demonstrated that the finger representations were reliable and linearly separable. During the calibration task, cross-validated classification was similarly robust (accuracy = 96% ± SD 3%; Figure 1—figure supplement 4b). These finger representations were robust across contexts and could be used in a range of environments, including to move the hand of a virtual reality avatar (Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-video1.mp4.jpg)
+
+**Video 1.:** Using a BCI, participant NS controls the individual fingers of a virtual reality hand. She views a virtual hand, table, and cues through an Oculus headset. Similar to the main finger movement task, she acquires green jewels by pressing the corresponding finger and avoids red amethysts by resting. Green jewels disappear when the correct finger is classified (or at the start of the next trial, if incorrectly classified). The screen copies the view that participant NS sees through the Oculus headset.
 
 At the single-neuron level, most (89%) neurons were significantly tuned to individual finger-press movements (significance threshold: p < 0.05, FDR-corrected) (Figure 1—figure supplement 5). Figure 1c–f show the firing rates of example neurons, which were tuned to one or more fingers and change tuning profiles over the course of each movement.
 
 To confirm that the observed neural responses could not be explained by visual confounds, we verified that we could not discriminate between fingers during the control task (Figure 1—figure supplement 6). Furthermore, we could not decode the gaze location during the finger classification time window in the standard online-control task (Figure 1—figure supplement 6). Thus, reliable finger representations emerged from the participant’s movement attempts.
 
-## Finger representational structure matches the structure of able-bodied individuals
+### Finger representational structure matches the structure of able-bodied individuals
 
 Having discovered that PC-IP neurons modulate selectively for finger movements, we next investigated how these neural representations were functionally organized and how this structure related to pre-injury movements. Here, we turned to the framework of representational similarity analysis (RSA) (Kriegeskorte et al., 2008a; Diedrichsen and Kriegeskorte, 2017). RSA quantifies neural representational structure by the pairwise distances between each finger’s neural activity patterns (Figure 2a). These pairwise distances form the representational dissimilarity matrix (RDM), a summary of the representational structure. Importantly, these distances are independent of the original feature types (e.g., electrode or voxel measurements), allowing us to compare finger organizations across subjects and across recording modalities (Kriegeskorte et al., 2008b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-v2.jpg)
+
+**Figure 2.:** (a) To calculate the representational dissimilarity matrix (RDM), a vector of firing rates was constructed for each trial. Repetitions were collected for each condition. Then, pairwise distances were estimated between conditions using a cross-validated dissimilarity metric. This process was repeated to generate an RDM for each session. We drop the No-Go condition (X) here to match previous finger studies (Ejaz et al., 2015; Kikkert et al., 2016). (b) Representational structure hypothesized by the preserved-representation hypothesis: average RDM for 36 able-bodied individuals performing a finger-press task. RDMs were measured at the junction of the postcentral and intraparietal sulci (PC-IP) using fMRI (Ejaz et al., 2015; Kieliba et al., 2021). Max-scaled to [0, 1]. (c) Representational structure hypothesized by the despecialization and task-optimal hypotheses: pairwise-equidistant RDM. Max-scaled to [0, 1]. (d) Finger representational structure measured in tetraplegic participant NS: cross-validated Mahalanobis distances (Methods) between neural activity patterns, averaged across 10 recording sessions. Max-scaled to [0, 1]. (e) Intuitive visualization of the distances in (d) using multidimensional scaling (MDS). Ellipses show mean ± standard deviation (SD) (10 sessions) after Generalized Procrustes alignment (without scaling) across sessions. (f) Measured RDMs (d) match the able-bodied PC-IP fMRI RDM (b) better than they match the task-optimal, unstructured model (c), as measured by the whitened unbiased cosine similarity (Diedrichsen et al., 2021) (WUC) (Methods). Mean differences were significant (able-bodied vs. unstructured, p = 5.7 × 10–5; two-tailed t-test, 1000 bootstrap samples over 10 sessions). Violin plot: solid horizontal lines indicate the median WUC over bootstrap samples, and dotted lines indicate the first and third quartiles. Noise ceiling: gray region estimates the best possible model fit (Methods). Asterisks denote a significant difference at ***p < 0.001. For convenience, a similar figure using a correlation-based similarity metric is shown in Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** fMRI representational dissimilarity matrices (RDMs) for three individual subjects and the group mean (N = 29). Intuitive visualization of distances using multidimensional scaling (MDS) and Generalized Procrustes alignment (without scaling); ellipses show mean ± standard deviation (SD) across subjects. Regions of interest (ROIs): motor cortex (MC, top row) and the junction of the postcentral and intraparietal sulci (PC-IP, bottom row).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** RDMs across all sessions, using the cross-validated Mahalanobis distance. ‘Average’ RDM matches Figure 2d.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Representational dissimilarity matrices (RDMs) calculated with an alternative dissimilarity metric: cross-validated Poisson KL-divergence (Schütt et al., 2019). Units: nats/neuron. Related to Figure 2—figure supplement 2a and Figure 2d. (b) Fit between measured RDMs and motor-intact BOLD data using alternative metrics. Distance metric: cross-validated Poisson KL-divergence. Similarity metric: whitened RDM Pearson correlation (Diedrichsen et al., 2021). Asterisks denote significant differences at ***p < 0.001.Similar to Figure 2f. (c) Representational dynamics calculated with an alternative dissimilarity metric: cross-validated Poisson KL-divergence. Similar to Figure 4e.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Gardner—Altman estimation plot (Ho et al., 2019) of the WUC similarity between same-region of interest (ROI) pairs of RDMs (N = 630 pairs between 36 subjects). Each circle on the swarm plot (left) marks the similarity for a pair of subjects. Horizontal black lines mark the mean pairwise similarity within each ROI. The curve (right) indicates the resampled (N = 5000) distribution of the effect size between ROIs, as measured by Cohen’s d. Cohen’s d of PC-IP minus MC: −2.1 (95% CI: [−2.22, −1.99]).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Measured RDMs match the able-bodied MC fMRI RDM better than they match the able-bodied PC-IP fMRI RDM (p = 1.9 × 10–6; two-tailed t-test, 1000 bootstrap samples over 10 sessions), as measured by the whitened unbiased cosine similarity (Diedrichsen et al., 2021) (WUC) (Methods). Violin plot: solid horizontal lines indicate the median WUC over bootstrap samples, and dotted lines indicate the first and third quartiles. Noise ceiling: gray region estimates the best possible model fit (Methods). Asterisks denote significant differences at ***p < 0.001. Similar to Figure 2f. (b) Paired Gardner–Altman estimation plot (Ho et al., 2019) of the similarity (WUC) between participant NS (average RDM across sessions) and individual MC and PC-IP RDMs from able-bodied fMRI participants. The slopegraph’s connected points (left) show each fMRI participant’s (N = 36) MC and PC-IP similarities with participant NS’s mean finger RDM. Mean difference between PC-IP and MC similarities (right) presented as Cohen’s d (N = 5000 bootstrap samples).
 
 We used RSA to test three hypotheses: (1) the BCI finger representational structure could match that of able-bodied individuals (Ejaz et al., 2015; Kieliba et al., 2021; Figure 2b and Figure 2—figure supplement 1), which would imply that motor representations did not reorganize after paralysis. This hypothesis would be consistent with recent functional magnetic resonance imaging (fMRI) studies of amputees, which showed that sensorimotor cortex representations of phantom limb finger movements match the same organization found in able-bodied individuals (Kikkert et al., 2016; Wesselink et al., 2019). We note that our able-bodied model was recorded from human PC-IP using fMRI, which measures fundamentally different features (millimeter-scale blood oxygenation) than microelectrode arrays (sparse sampling of single neurons). Another possibility is that (2) the participant’s pre-injury motor representations had despecialized after paralysis, such that finger activity patterns are unstructured and pairwise independent (Figure 2c). However, this hypothesis would be inconsistent with results from fMRI studies of amputees’ sensorimotor cortex (Kikkert et al., 2016; Wesselink et al., 2019). Lastly, (3) the finger movement representational structure might optimize for the statistics of the task (Lillicrap and Scott, 2013; Clancy et al., 2014). Our BCI task, as well as previous experiments with participant NS, involved no correlation between individual fingers, so the optimal structure would represent each finger independently to minimize confusion between fingers. In other words, the task-statistics hypothesis (3) would predict that, with BCI usage, the representational structure would converge toward the task-optimal, unstructured representational structure (Figure 2c).
 
@@ -68,15 +124,43 @@ We note that we constructed the able-bodied fMRI model from the mean of PC-IP fM
 
 We also compared the PC-IP BCI RDM with able-bodied fMRI MC RDMs, which have been previously shown to match the patterns of natural hand use (Ejaz et al., 2015). The able-bodied MC and PC-IP fMRI finger organizations are similar in that they represent the thumb distinctly from the other fingers, but PC-IP fMRI signals represent each of the non-thumb fingers similarly while MC distinguishes between all five fingers (Figure 2—figure supplement 1). Interestingly, PC-IP BCI finger representations matched the able-bodied fMRI finger representational structure in the MC (Figure 2—figure supplement 1) even better than that of able-bodied PC-IP (Figure 2—figure supplement 5). The WUC similarity with the MC RDM was close to the noise ceiling (Methods), indicating that the MC RDM matches participant NS’s data better than almost any other model could (see Discussion).
 
-## Representational structure did not trend toward task optimum
+### Representational structure did not trend toward task optimum
 
 Next, we investigated whether the BCI finger representational structure matched that of able-bodied individuals consistently or whether the representational structure changed over time to improve BCI performance. The task-optimal structure hypothesis (3) predicted that the BCI RDMs would trend to optimize for the task statistics (unstructured model, Figure 2c) as the participant gained experience with the BCI task. However, we did not find conclusive evidence for a trend from the able-bodied model toward the unstructured model (linear-model session × model interaction: t(6) = 0.50, one-tailed t-test p = 0.32, Bayes factor [BF] = 0.66) (Figure 3a). Indeed, participant NS’s finger RDMs were largely consistent across different recording sessions (average pairwise correlation, excluding the diagonal: r = 0.90 ± SD 0.04, min 0.83, max 0.99).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig3-v2.jpg)
+
+**Figure 3.:** (a) Slope comparison shows that the model fit did not trend toward the unstructured model over sessions (p = 0.32). (b) The distance between high-error finger pairs (middle-ring and ring-pinky) did not increase across sessions or runs (within sessions), as shown by partial regression plots. Distance metric: cross-validated Mahalanobis, averaged across runs (for the session plot) or averaged across sessions (for the run plot). The black line indicates linear regression. The gray shaded region indicates a 95% confidence interval. Each run consisted of 8 presses per finger. (c) Minimal change in representational structure between early and late sessions or between early and late runs. Mean representational dissimilarity matrix (RDM), when grouped by sessions (top row) or individual runs (bottom row). Grouped into early half (left column) or late half (center column). Multidimensional scaling (MDS) visualization (right column) of early (opaque) and late (translucent) representational structures after Generalized Procrustes alignment (without scaling, to allow distance comparisons).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Brain–computer interface (BCI) classification errors could have encouraged inter-finger distances to increase to improve separability, but this did not occur. Inter-finger distances instead decreased slightly (across sessions: t(8) = −4.0, two tailed t-test p = 0.004; across runs within sessions: t(82) = −2.4, two-tailed t-test p = 0.019), although the effect size was very small (across sessions: Cohen’s $f^{2}$ = 0.008; across runs within sessions: =0.005). Markers indicate average pairwise distance for each finger pair and session (top) or run-within-session (bottom).
+
 We considered whether learning, across sessions or within sessions, could have caused smaller-scale changes in the representational structure. The observed representational structure, where middle-ring and ring-pinky pairs had relatively small distances, was detrimental to classification performance. The majority (70%) of the online classification errors were middle-ring or ring-pinky confusions (Figure 1b). Due to these systematic errors, one might reasonably predict that plasticity mechanisms would improve control by increasing the inter-finger distances between the confused finger pairs. Contrary to this prediction, the middle-ring and ring-pinky distances did not increase over the course of the experiment (across sessions: t(8) = −4.5, one-tailed t-test p > 0.99, BF = 0.03; across runs within sessions: t(82) = −0.45, one-tailed t-test p = 0.67, BF = 0.12) (Figure 3b). When analyzing all finger pairs together, the inter-finger distances also did not increase (across sessions: t(8) = −4.0, one-tailed t-test p = 0.98, BF = 0.01; across runs within sessions: t(74) = −2.4, one-tailed t-test p = 0.99, BF = 0.02), as visualized by the similarity between the average early-half RDM and the average late-half RDM (Figure 3c). These analyses demonstrate that the representational structure did not trend toward the task optimum (Figure 2c) with experience, ruling out the task-statistics hypothesis (3).
 
-## Finger representational structure is motor-like and then somatotopic
+### Finger representational structure is motor-like and then somatotopic
 
 PPC is hypothesized to overcome inherent sensory delays by computing an internal forward model for rapid sensorimotor control (Mulliken et al., 2008; Wolpert et al., 1998; Desmurget and Grafton, 2000.) The forward model integrates an efference copy of motor signals and delayed sensory feedback to dynamically predict the state of the body. The hypothesized forward-model role would predict that the representational structure changes over the time course of each movement, with an early motor-command-like component during movement initiation. To investigate this temporal evolution, we modeled the representational structure of finger movements at each timepoint as a non-negative linear combination (Kietzmann et al., 2019) of potentially predictive models (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig4-v2.jpg)
+
+**Figure 4.:** (a) RDA performs representational similarity analysis (RSA) in a sliding window across time. Here, we model the measured representational structure as a non-negative linear combination of component model representational dissimilarity matrices (RDMs). (b–d) Hypothesized explanatory component RDMs: usage, muscle, and somatotopy (Ejaz et al., 2015). Max-scaled to [0, 1]. (e) RDA of the measured RDM over time shows an early fit to the muscle model and a late fit to the somatotopy model. Confidence intervals indicate ± standard error of the mean (SEM) bootstrapped across 10 sessions. Gray shaded region indicates the approximate onset time of the saccade to cue (interquartile range across trials). Difference in model start time (170 ms, Methods) was significant (p = 0.002, two-sided Wilcoxon signed-rank test). RDM snapshots (bottom, each max-scaled to [0, 1]) intuitively visualize the change in representational structure over time from muscle-like to somatotopic.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Violin plot of WUC similarity between the measured RDM (N = 1000 bootstrap samples over 10 sessions) and the corresponding model combination. Violin plot: solid horizontal lines indicate the mean WUC over bootstrap samples, and dotted lines indicate the first and third quartiles. Horizontal lines (above) indicate significance groups, where the circle-indicated model is significant over the vertical-tick-indicated models (two-tailed t-test, q < 0.01, FDR-corrected for 28 model-pair comparisons). For example, the muscle + somatotopy combined model is significant over the individual muscle, hand usage, somatotopy, combined muscle + hand usage, and pairwise-equidistant/unstructured (null) models.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** When linear modeling within single sessions, the muscle model (blue) consistently preceded the somatotopy model (orange). Time difference: 170 ± 66 ms (SD across sessions) (p = 0.002, two-sided Wilcoxon signed-rank test). Line styles indicate session. Related to Figure 4e.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Representational dynamics analysis shows an early fit to the hand-usage model and a late fit to the somatotopy model. Confidence intervals indicate ± standard error of the mean (SEM) across sessions. Related to Figure 4e. (b) Representational dynamics analysis shows a consistent delay between models during the calibration task. Note: The absolute timing differs from the main task because the calibration task does not require an initial saccade to read the cue. Related to Figure 4e.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/74478/elife-74478-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Histogram of L-ratio, a spike-sorting cluster metric. Threshold for well-isolated units: 33% quantile (Lratio < 10−1.1). (b) Representational dissimilarity matrices (RDMs) calculated only using well-isolated units, using the cross-validated Mahalanobis distance. Similar to Figure 2d and Figure 2—figure supplement 2a. (c) Whitened unbiased similarity (WUC) between measured (b) RDMs (using only well-isolated units) and model predictions (Figure 2b, c), showing that the measured RDMs match the able-bodied fMRI RDM significantly better than they match the unstructured model (p = 3.1 × 10–10, two-tailed t-test) and the SPLa fMRI RDM (p = 1.7 × 10–8). Error bars indicate ± standard error of the mean (SEM). Noise ceiling: gray region estimates the best possible model fit (Methods). Gray downward-semicircle indicates that the noise ceiling is significantly higher (p < 0.001) than the fit of the SPLa fMRI RDM and the unstructured model. Asterisks denote significant differences at ***p < 0.001. Similar to Figure 2f. (d) Representational dynamics analysis, repeated using only well-isolated units, shows an early fit to the muscle model and a late fit to the somatotopy model. Confidence intervals indicate ± SEM across sessions. Similar to Figure 4e.
 
 We considered three models (Ejaz et al., 2015) that could account for representational structure: hand usage, muscle activation, and somatotopy. The hand-usage model (Figure 4b) predicts that the neural representational structure should follow the correlation pattern of finger kinematics during natural hand use. The muscle activation model (Figure 4c) predicts that the representational structure should follow the coactivation patterns of muscle activity during individual finger movements. The somatotopy model (Figure 4d) predicts that the representational structure should follow the spatial layout of the body, with neighboring fingers represented similarly to each other (Ejaz et al., 2015; Schellekens et al., 2018).Schellekens et al., 2018 While somatotopy usually refers to physical spaces that resemble the body, here we use the term broadly to describe encoding spaces that resemble the body.
 
@@ -88,17 +172,17 @@ These temporal dynamics were robust to our model selection procedure, demonstrat
 
 ## Discussion
 
-## Neural prosthetic control of individual fingers using recordings from PC-IP
+### Neural prosthetic control of individual fingers using recordings from PC-IP
 
 We found that participant NS could robustly control the movement of individual fingers using a neural prosthetic in a variety of contexts (Figure 1, Figure 1—figure supplement 4, Video 1), even after years of paralysis. Her BCI control accuracy exceeded the previous best of other five-finger, online BCI control studies (Hotson et al., 2016; Jorge et al., 2020). These results establish PC-IP as a candidate implant region for dexterous neural prostheses.
 
-## Connecting BCI studies to basic neuroscience
+### Connecting BCI studies to basic neuroscience
 
 Although previous studies have shown that the anterior intraparietal (AIP) area of PPC is involved in whole-hand grasping (Schaffelhofer and Scherberger, 2016; Klaes et al., 2015; Murata et al., 2000), our work is the first to discover individual finger representations in PPC (Figure 1—figure supplement 5). Likewise, many other BCI studies with tetraplegic participants have contributed to basic neuroscience, deepening our understanding of the human cortex (Stavisky et al., 2019; Willett et al., 2020; Rutishauser et al., 2018; Zhang et al., 2017; Aflalo et al., 2020; Chivukula et al., 2021). A frequent (Flesher et al., 2016; Armenta Salas et al., 2018; Stavisky et al., 2019; Willett et al., 2020; Fifer et al., 2022; Chivukula et al., 2021; Andersen and Aflalo, 2022) discussion question is: how well do these findings generalize to the brains of able-bodied individuals? Specifically, do the observed phenomena result from partial reorganization (Kambi et al., 2014; Nardone et al., 2013) after spinal cord injury, or do they reflect intact motor circuits, preserved from before injury (Makin and Bensmaia, 2017)?
 
 Early human BCI studies (Hochberg et al., 2006; Collinger et al., 2013) recorded from the MC and found that single-neuron directional tuning is qualitatively similar to that of able-bodied non-human primates (NHPs) (Hochberg et al., 2006; Georgopoulos et al., 1982). Many subsequent human BCI studies have also successfully replicated results from other classical NHP neurophysiology studies (Hochberg et al., 2012; Collinger et al., 2013; Gilja et al., 2015; Bouton et al., 2016; Ajiboye et al., 2017; Brandman et al., 2018; Aflalo et al., 2015), leading to the general heuristic that the sensorimotor cortex retains its major properties after spinal cord injury (Andersen and Aflalo, 2022). This heuristic further suggests that BCI studies of tetraplegic individuals should generalize to able-bodied individuals. However, this generalization hypothesis had lacked direct, quantitative comparisons between tetraplegic and able-bodied individuals. Thus, as human BCI studies expanded beyond replicating results and beganto challenge conventional wisdom, neuroscientists questioned whether cortical reorganization could influence these novel phenomena (see Discussions of Flesher et al., 2016; Armenta Salas et al., 2018; Stavisky et al., 2019; Willett et al., 2020; Fifer et al., 2022; Chivukula et al., 2021; Andersen and Aflalo, 2022). As an example of a novel discovery, a recent BCI study found that the hand knob of tetraplegic individuals is directionally tuned to movements of the entire body (Willett et al., 2020), challenging the traditional notion that primary somatosensory and motor subregions respond selectively to individual body parts (Penfield and Boldrey, 1937). Given the brain’s capacity for reorganization (Jain et al., 2008; Kambi et al., 2014), could these BCI results be specific to cortical remapping? Detailed comparisons with able-bodied individuals, as shown here, help shed light on this question.
 
-## Matching finger organization between tetraplegic and able-bodied participants
+### Matching finger organization between tetraplegic and able-bodied participants
 
 We asked whether participant NS’s BCI finger representations resembled that of able-bodied individuals or whether her finger representations had reorganized after paralysis. Single-neuron recordings of PC-IP during individuated finger movements for able bodied humans are not available for comparison. However, many fMRI studies have characterized finger representations (Kikkert et al., 2021; Ejaz et al., 2015; Kikkert et al., 2016; Yousry et al., 1997), and RSA has previously shown RDM correspondence between fMRI and single-neuron recordings of another cortical region (inferior temporal cortex) (Kriegeskorte et al., 2008b). This match was surprising because single-neuron and fMRI recordings differ fundamentally; single-neuron recordings sparsely sample 102 neurons in a small region, while fMRI samples 104–106 neurons/voxel (Kriegeskorte and Diedrichsen, 2016; Guest and Love, 2017). The correspondence suggested that RSA might identify modality-invariant neural organizations (Kriegeskorte et al., 2008b), so here we used fMRI recordings of human PC-IP as an able-bodied model.
 
@@ -108,7 +192,7 @@ The MC fMRI finger representation is well studied and has been shown to reflect 
 
 Even so, it is striking that participant NS’s finger representation matches the neural and hand use patterns (Figure 4b and Figure 4—figure supplement 1) of able-bodied individuals. Despite the lack of overt movement or biomechanical constraints (Lang and Schieber, 2004), the measured finger representation still reflected these usage-related patterns. This result matches recent sensorimotor cortex studies of tetraplegic individuals, where MC decoding errors (Jorge et al., 2020) and S1 finger somatotopy (Kikkert et al., 2021) appeared to reflect able-bodied usage patterns. Taken together with our dynamics analyses (see Discussion), the evidence supports the interpretation that motor representations are preserved after paralysis. Comparisons with single-neuron recordings from able-bodied participants would validate this interpretation. although such recordings may be difficult to acquire.
 
-## Able-bodied-like finger representation is not explained by learning
+### Able-bodied-like finger representation is not explained by learning
 
 Hand use patterns shape neural finger organization (Ejaz et al., 2015; Kikkert et al., 2016; Wesselink et al., 2019), so we also considered the possibility that participant NS’s able-bodied-like representational structure emerged from BCI usage patterns after paralysis. Contrary to this hypothesis, her BCI finger representational structure changed minimally over weeks (Figure 3). Furthermore, even though participant NS’s representational structure contributed to BCI errors (Figure 1b) and she was anecdotally cognizant of which fingers would get confused, she did not increase the neural distance between fingers with experience. This relative stability suggests that the measured representational structure has been stable after paralysis, rather than emergent from BCI learning.
 
@@ -116,7 +200,7 @@ The stability of finger representations here suggests that BCIs can benefit from
 
 To further understand how much finger representations can be actively modified, future studies could benefit from perturbations (Kieliba et al., 2021; Oby et al., 2019), continuous neurofeedback (Vyas et al., 2018; Ganguly and Carmena, 2009; Oby et al., 2019), and additional participants. Additionally, given that finger representations were dynamic (Figure 4e), learning could occur separately in the early and late dynamic phases. Time-variant BCI decoding algorithms, such as recurrent neural networks (Willett et al., 2021; Sussillo et al., 2012), could also help facilitate learning specific to different time windows of finger movement.
 
-## Representational dynamics are consistent with PPC as a forward model
+### Representational dynamics are consistent with PPC as a forward model
 
 In able-bodied individuals, PPC is thought to maintain a forward estimate of movement state (Mulliken et al., 2008; Wolpert et al., 1998; Desmurget and Grafton, 2000; Aflalo et al., 2015; McNamee and Wolpert, 2019). As such, PPC receives delayed multimodal sensory feedback and is hypothesized to receive efference copies of motor command signals (Mulliken et al., 2008; Andersen et al., 1997). This hypothesized role predicts that PPC houses multiple functional representations, each engaged at different timepoints of motor production.
 
@@ -128,7 +212,7 @@ The somatotopy model predicts that neighboring fingers will have similar cortica
 
 The 170 ms timing difference we found roughly matches the delay between feedforward muscle activation and somatosensory afferents (Scott, 2016; Sollmann et al., 2017) in able-bodied individuals. Given PPC’s hypothesized role as a forward model, PPC likely integrates motor planning and production signals to predict sensory outcomes at such a timing (Mulliken et al., 2008; Wolpert et al., 1998; Desmurget and Grafton, 2000; McNamee and Wolpert, 2019). Alternatively, because participant NS cannot move overtly, the sensory-consequence model could also reflect the error between the internal model’s expected sensory outcomes and the actual (lack of) sensory feedback (Adams et al., 2013). In either scenario, the match in timing between BCI control and able-bodied individuals provides further evidence that the recorded motor circuits have preserved their functional role.
 
-## Stability of sensorimotor representations after paralysis
+### Stability of sensorimotor representations after paralysis
 
 A persistent question in neuroscience has been how experience shapes the brain, and to what extent existing neural circuits can be modified. Early studies by Merzenich et al. showed that the primary somatosensory cortex reorganized after amputation, with intact body parts invading the deprived cortex (Merzenich et al., 1984; Qi et al., 2000; Pons et al., 1991). However, the authors also recognized that the amputated body part might persist in latent somatosensory maps. Since then, preserved, latent somatosensory representations have been demonstrated in studies of amputation (Makin and Bensmaia, 2017; Kikkert et al., 2016; Wesselink et al., 2019; Bruurmijn et al., 2017) and even paralysis (Kikkert et al., 2021; Flesher et al., 2016; Armenta Salas et al., 2018; Fifer et al., 2022). Overall, deafferentation appears to expand the remaining regions slightly, even while the pre-injury structure persists in the deafferented cortex (Makin and Bensmaia, 2017). Fewer studies have investigated sensorimotor plasticity beyond the primary somatosensory cortex and MC, but our results in PC-IP indicate that association areas can also remain stable after paralysis.
 
@@ -138,25 +222,25 @@ As BCIs enable more complex motor skills, such as handwriting (Willett et al., 2
 
 ## Materials and methods
 
-## Data collection
+### Data collection
 
-## Study participant
+#### Study participant
 
 The study participant NS has an AIS-A spinal cord injury at cervical level C3–C4 that she sustained approximately 10 years before this study. Participant NS cannot move or feel her hands. As part of a BCI clinical study (ClinicalTrials.gov identifier: NCT01958086), participant NS was implanted with two 96-channel Neuroport Utah electrode arrays (Blackrock Microsystems model numbers 4382 and 4383). She consented to the surgical procedure as well as to the subsequent clinical studies after understanding their nature, objectives, and potential risks. All procedures were approved by the California Institute of Technology, Casa Colina Hospital and Centers for Healthcare, and the University of California, Los Angeles Institutional Review Boards.
 
-## Multielectrode array implant location
+#### Multielectrode array implant location
 
 The recording array was implanted over the hand/limb region of the left PPC at the junction of the intraparietal sulcus with the postcentral sulcus (Figure 1—figure supplement 1; Talairach coordinates [−36 lateral, 48 posterior, 53 superior]). We previously (Klaes et al., 2015; Zhang et al., 2017; Aflalo et al., 2015) referred to this brain area as the AIP area, a region functionally defined in NHPs. Here, we describe the implanted area anatomically, denoting it the PC-IP area. More details regarding the methodology for functional localization and implantation can be found in Aflalo et al., 2015.
 
-## Neural data preprocessing
+#### Neural data preprocessing
 
 Using the NeuroPort system (Blackrock Microsystems), neural signals were recorded from the electrode array, amplified, analog bandpass-filtered (0.3 Hz to 7.5 kHz), and digitized (30 kHz, 250 nV resolution). A digital high-pass filter (250 Hz) was then applied to each electrode.
 
-Threshold crossings were detected at a threshold of −3.5× RMS (root-mean-square of an electrode’s voltage time series). Threshold crossings were used as features for in-session BCI control. For all other analyses, we used k-medoids clustering on each electrode to spike-sort the threshold crossing waveforms. The first n∈{2, 3, 4} principal components were used as input features to k-medoids, where n was selected for each electrode to account for 95% of waveform variance. The gap criteria (Tibshirani et al., 2001) were used to determine the number of waveform clusters for each electrode.
+Threshold crossings were detected at a threshold of −3.5× RMS (root-mean-square of an electrode’s voltage time series). Threshold crossings were used as features for in-session BCI control. For all other analyses, we used k-medoids clustering on each electrode to spike-sort the threshold crossing waveforms. The first $n\in{2, 3, 4}$ principal components were used as input features to k-medoids, where $n$ was selected for each electrode to account for 95% of waveform variance. The gap criteria (Tibshirani et al., 2001) were used to determine the number of waveform clusters for each electrode.
 
-## Experimental setup
+### Experimental setup
 
-## Recording sessions
+#### Recording sessions
 
 Experiments were conducted in 2–3 hr recording sessions at Casa Colina Hospital and Centers for Healthcare. All tasks were performed with participant NS seated in her motorized wheelchair with her hands resting prone on the armrests. Participant NS viewed text cues on a 27-inch LCD monitor that occupied approximately 40 degrees of visual angle. Cues were presented using the psychophysics toolbox (Brainard, 1997) for MATLAB (Mathworks).
 
@@ -164,11 +248,11 @@ The data were collected on 9 days over 6 weeks. Almost all experiment days were 
 
 Each session consisted of a series of 2–3 min, uninterrupted ‘runs’ of the task. The participant rested for a few minutes between runs as needed.
 
-## Calibration task
+#### Calibration task
 
 At the beginning of each recording day, the participant performed a reaction-time finger flexion task (Figure 1—figure supplement 2; denoted ‘calibration task’ in the Results) to train a finger classifier for subsequent runs of the primary task. On each trial, a letter appeared on the screen (e.g., ‘T’ for thumb). The participant was instructed to immediately flex the corresponding finger on the right hand (contralateral to the implant), as though pressing a key on a keyboard. The condition order was block-randomized, such that each condition appeared once before repetition.
 
-## Finger flexion grid task
+#### Finger flexion grid task
 
 In the primary task, movement cues were arranged in a 3 × 4 grid of letters on the screen (Figure 1a). Each screen consisted of two repetitions each of T (thumb), I (index), M (middle), R (ring), P (pinky/little), and X (No-Go) arranged randomly on the grid. Each trial lasted 3 s. At the beginning of each trial, a new cue was randomly selected with a crosshairs indicator, which jittered randomly to prevent letter occlusion. Each cue was selected once (for a total of 12 trials) before the screen was updated to a new arrangement. Each run consisted of three to four screens.
 
@@ -176,25 +260,25 @@ On each trial, the participant was instructed to immediately (1) saccade to the 
 
 On each trial, 1.5 s after cue presentation, the classifier decoded the finger movement and presented its prediction via text feedback overlaid on the cue.
 
-## No-movement control task
+#### No-movement control task
 
 The control task was similar to the primary task, except that the subject was instructed to saccade to each cued letter and fixate without attempting any finger movements. No classification feedback was shown.
 
-## Statistical analysis
+### Statistical analysis
 
-## Unit selection
+#### Unit selection
 
 Single-unit neurons were identified using the k-medoids clustering method, as described in the Neural Data Preprocessing section. Analyses in the main text used all identified units, regardless of sort quality. With spike-sorting, there is always the possibility that a single waveform cluster corresponds to activity from multiple neurons. To confirm that potential multiunit clustering did not bias our results, we repeated our analyses using only well-isolated units (Figure 4—figure supplement 4).
 
-Well-isolated single units were identified using the L-ratio metric (Schmitzer-Torbert et al., 2005). The neurons corresponding to the lowest third of L-ratio values (across all sessions) were selected as ‘well-isolated’. This corresponded to a threshold of Lratio=10-1.1 dividing well-isolated single units and potential multiunits (Figure 4—figure supplement 4).
+Well-isolated single units were identified using the L-ratio metric (Schmitzer-Torbert et al., 2005). The neurons corresponding to the lowest third of L-ratio values (across all sessions) were selected as ‘well-isolated’. This corresponded to a threshold of $L_{ratio}=10^{-1.1}$ dividing well-isolated single units and potential multiunits (Figure 4—figure supplement 4).
 
-## Single-unit tuning to finger flexion
+#### Single-unit tuning to finger flexion
 
 We calculated the firing rate for each neuron in the window [0.5, 1.5] s after cue presentation. To calculate significance for each neuron (Figure 1—figure supplement 5), we used a two-tailed t-test comparing each movement’s firing rate to the No-Go firing rate. A neuron was considered significantly tuned to a movement if p < 0.05 (after FDR correction). We also computed the mean firing rate change between each movement and the No-Go condition. If a neuron was significantly tuned to at least one finger, we denoted the neuron’s ‘best finger’ as the significant finger with the largest effect size (mean firing rate change). For each neuron and finger, we also calculated the discriminability index (d′, RMS SD) between the baseline (No-Go) firing rate and the firing rate during finger movement.
 
 In Figure 1—figure supplement 5, neurons were pooled across all 10 sessions. Neurons with mean firing rates less than 0.1 Hz were excluded to minimize sensitivity to discrete spike counting.
 
-## Finger classification
+#### Finger classification
 
 To classify finger movements from firing rate vectors, we used linear discriminant analysis (LDA) with diagonal covariance matrices (Dudoit et al., 2002) (a form of regularization); diagonal LDA is also equivalent to Gaussian Naive Bayes (GNB) when GNB assumes that all classes share a covariance matrix.
 
@@ -208,62 +292,84 @@ In the Results, reported classification accuracies aggregate trials over all ses
 
 In the first session (2018-09-10), the No-Go condition (X) was not cued in the calibration task, so the classifier did not output No-Go predictions during that session. However, No-Go was cued in the main task; these 84 No-Go trials were thus excluded from the online-control accuracy metrics (Figure 1b and Figure 1—figure supplement 3), but they were included in the offline cross-validated confusion matrix (Figure 1—figure supplement 4).
 
-## Cross-validated neural distance
+#### Cross-validated neural distance
 
-We quantified the dissimilarity between the neural activity patterns of each finger pair (j, k), using the cross-validated (squared) Mahalanobis distance (Schütt et al., 2019; Nili et al., 2014):djk2=bj-bkAΣA+ ΣB2 -1bj-bkBT / N
+We quantified the dissimilarity between the neural activity patterns of each finger pair $(j, k)$, using the cross-validated (squared) Mahalanobis distance (Schütt et al., 2019; Nili et al., 2014):
 
-where A and B denote independent partitions of the trials, Σ are the partition-specific noise covariance matrices, (bj, bk) are the trial measurements of firing rate vectors for conditions (j, k), and N normalizes for the number of neurons. The units of djk2 are unitless2/neuron.
+$$
+d_{jk}^{2}=b_{j}-b_{k}_{A}\frac{Σ_{A}+ Σ_{B}}{2} ^{-1}b_{j}-b_{k}_{B}^{T} / N
+$$
 
-The cross-validated Mahalanobis distance, also referred to as the ‘crossnobis’ distance (Schütt et al., 2019), measures the separability of multivariate patterns, analogous to LDA classification accuracy (Nili et al., 2014). To generate independent partitions A and B for each session, we stratified-split the trials into five non-overlapping subsets. We then calculated the crossnobis distance for each possible combination of subsets (A,B) and averaged the results. Cross-validation ensures that the (squared) distance estimate is unbiased; E[djk2]=0 when the underlying distributions are identical (Walther et al., 2016). The noise covariance Σ was regularized (Ledoit and Wolf, 2003) to guarantee invertibility.
+where $A$ and $B$ denote independent partitions of the trials, $Σ$ are the partition-specific noise covariance matrices, $(b_{j}, b_{k})$ are the trial measurements of firing rate vectors for conditions $(j, k)$, and $N$ normalizes for the number of neurons. The units of $d_{jk}^{2}$ are $unitless^{2}/neuron$.
+
+The cross-validated Mahalanobis distance, also referred to as the ‘crossnobis’ distance (Schütt et al., 2019), measures the separability of multivariate patterns, analogous to LDA classification accuracy (Nili et al., 2014). To generate independent partitions $A$ and $B$ for each session, we stratified-split the trials into five non-overlapping subsets. We then calculated the crossnobis distance for each possible combination of subsets $(A,B)$ and averaged the results. Cross-validation ensures that the (squared) distance estimate is unbiased; $E[d_{jk}^{2}]=0$ when the underlying distributions are identical (Walther et al., 2016). The noise covariance $Σ$ was regularized (Ledoit and Wolf, 2003) to guarantee invertibility.
 
 Similar results were also obtained when estimating neural distances with the cross-validated Poisson symmetrized KL-divergence (Schütt et al., 2019; Figure 2—figure supplement 3).
 
-## Representational models
+#### Representational models
 
-We used RDMs to describe both the type and format of information encoded in a recorded population. To make these RDMs, we calculated the distances between each pair of finger movements and organized the 10 unique inter-finger distances into a [nfingers, nfingers]-sized RDM (Figure 2d). Conveniently, the RDM abstracts away the underlying feature types, enabling direct comparison with RDMs across brain regions (Kietzmann et al., 2019), subjects, or recording modalities (Kriegeskorte et al., 2008b).
+We used RDMs to describe both the type and format of information encoded in a recorded population. To make these RDMs, we calculated the distances between each pair of finger movements and organized the 10 unique inter-finger distances into a $[n_{fingers}, n_{fingers}]$-sized RDM (Figure 2d). Conveniently, the RDM abstracts away the underlying feature types, enabling direct comparison with RDMs across brain regions (Kietzmann et al., 2019), subjects, or recording modalities (Kriegeskorte et al., 2008b).
 
 We also used RDMs to quantify hypotheses about how the brain might represent different actions. In Figure 2b, we generated an able-bodied model RDM using fMRI data from two independent studies, Kieliba et al., 2021 (N = 29, pre-intervention, right hand, 3T scans) and Ejaz et al., 2015 (N = 7, no intervention, right hand, 7T scans). The fMRI ROI was selected to match participant NS’s anatomical implant location (PC-IP). Specifically, a 4-mm geodesic distance around vertex 7123 was initially drawn in fs_LR_32k space, then resampled onto fsaverage. The RDM for each subject was then calculated using the cross-validated (squared) Mahalanobis distance between fMRI activity patterns. Based on a permutation shuffle test, RDMs were similar between the studies’ groups of participants, so we aggregated the RDMs into a single dataset here. The MC RDMs (Figure 2—figure supplement 1) used data from the same scans (Ejaz et al., 2015; Kieliba et al., 2021), with ROIs covering Brodmann area 4 near the hand knob of the precentral gyrus.
 
 In Figure 4 and its supplemental figures, we decomposed the data RDMs into model RDMs borrowed from Ejaz et al., 2015. The hand-usage model was constructed using the velocity time series of each finger’s MCP joint during everyday tasks (Ingram et al., 2008). The muscle activity model was constructed using EMG activity during single- and multi-finger tasks. The somatotopic model is based on a cortical sheet analogy and assumes that finger activation patterns are linearly spaced Gaussian kernels across the cortical sheet. Further modeling details are available in the methods section of Ejaz et al., 2015.
 
-## Comparing representational structures
+#### Comparing representational structures
 
 We used the rsatoolbox Python library (Schütt et al., 2019) to calculate data RDMs and compare them with model RDMs (RSA) (Kriegeskorte et al., 2008a).
 
-To quantify model fit, we used the whitened unbiased RDM cosine similarity (WUC) metric (Diedrichsen et al., 2021), which (Diedrichsen et al., 2021) recommend for models that predict continuous real values. We used WUC instead of Pearson correlation for two reasons (Diedrichsen et al., 2021). First, cosine similarity metrics like WUC properly exploit the informative zero point; because we used an unbiased distance estimate, djk2=0 indicates that the distributions (j, k) are identical. Second, Pearson correlation assumes that observations are independent, but the elements of each RDM covary (Diedrichsen et al., 2021) because the underlying dataset is shared. For example, the (thumb, middle)-pairwise dissimilarity uses the same thumb data as the (thumb, ring)-pairwise dissimilarity.
+To quantify model fit, we used the whitened unbiased RDM cosine similarity (WUC) metric (Diedrichsen et al., 2021), which (Diedrichsen et al., 2021) recommend for models that predict continuous real values. We used WUC instead of Pearson correlation for two reasons (Diedrichsen et al., 2021). First, cosine similarity metrics like WUC properly exploit the informative zero point; because we used an unbiased distance estimate, $d_{jk}^{2}=0$ indicates that the distributions $(j, k)$ are identical. Second, Pearson correlation assumes that observations are independent, but the elements of each RDM covary (Diedrichsen et al., 2021) because the underlying dataset is shared. For example, the (thumb, middle)-pairwise dissimilarity uses the same thumb data as the (thumb, ring)-pairwise dissimilarity.
 
 Like correlation similarities, a larger WUC indicates a better match, and the maximum WUC value is 1. However, cosine similarities like WUC are often larger than the corresponding correlation values or are even close to 1 (Diedrichsen et al., 2021). Thus, while correlation values can be compared against a null hypothesis of 0-correlation, WUC values should be interpreted by comparing against a baseline. The baseline is usually (Diedrichsen et al., 2021) chosen to be a null model where all conditions are pairwise-equidistant (and would thus correspond to 0-correlation). In this study, this happens to correspond to the unstructured model. For more details about interpreting the WUC metric, see Diedrichsen et al., 2021.
 
 To demonstrate that our model comparisons were robust to the specific choice of RDM similarity metric, we also show model fits using whitened Pearson correlation in Figure 2—figure supplement 3. Whitened Pearson correlation is a common alternative to WUC (Diedrichsen et al., 2021).
 
-## Noise ceiling for model fits
+#### Noise ceiling for model fits
 
-Measurement noise and behavioral variability cause data RDMs to vary across repetitions, so even a perfect model RDM would not achieve a WUC similarity of 1. To estimate the noise ceiling (Nili et al., 2014) (the maximum similarity possible given the observed variability between data RDMs), we assume that the unknown, perfect model resembles the average RDM. Specifically, we calculated the average similarity of each individual-session RDM (Figure 2—figure supplement 2) with the mean RDM across all other sessions (i.e., excluding that session):C^=1D∑d=1Dsimilarity(rd,r¯j≠d)r¯j≠d=1D−1∑j≠drj
+Measurement noise and behavioral variability cause data RDMs to vary across repetitions, so even a perfect model RDM would not achieve a WUC similarity of 1. To estimate the noise ceiling (Nili et al., 2014) (the maximum similarity possible given the observed variability between data RDMs), we assume that the unknown, perfect model resembles the average RDM. Specifically, we calculated the average similarity of each individual-session RDM (Figure 2—figure supplement 2) with the mean RDM across all other sessions (i.e., excluding that session):
 
-where similarity is the WUC similarity function, D is the number of RDMs, rd refers to a single RDM from an individual session, and C^ is the ‘lower’ noise ceiling. This noise ceiling is analogous to leave-one-out-cross-validation. If a model achieves the noise ceiling, the model fits the data well (Nili et al., 2014).
+$$
+C^=\frac{1}{D}\sumd=1Dsimilarity(r_{d},r¯_{j}\neqd)
+$$
 
-## Measuring changes in the representational structure
 
-To assess the effect of BCI task experience on the inter-finger distances, we performed a linear regression analysis (Figure 3b and Figure 3—figure supplement 1). We first subdivided each session’s dataset into individual runs and calculated separate RDMs for each (session, run) index. We then used linear regression to predict each RDM’s (squared) inter-finger distances from the session index, run index, and finger pair:djk2=βjk+βsessions+βrunr+β0
 
-where β0 is the average inter-finger distance, βjk is the coefficient for finger-pair (j, k), s is the session index, and r is the run index. |βsession|>0 would suggest that RDMs are dependent on experience across sessions. |βrun|>0 would suggest that RDMs depend on experience across runs within a session. For t-tests, we conservatively estimated the degrees-of-freedom as the number of RDMs, because the individual elements of each RDM covary and thus are not independent (Diedrichsen et al., 2021). The effect sizes for the session-index predictor and the run-index predictor were quantified using Cohen’s f2 (Cohen, 1988), comparing against the finger-pair-only model as a baseline.
+$$
+r¯_{j\neqd}=\frac{1}{D−1}\sumj\neqdr_{j}
+$$
 
-For t-tests without significant differences, we also calculated BFs to determine the likelihood of the null hypothesis, using the common threshold that BF <1/3 substantially supports the null hypothesis (Dienes, 2014). BFs were computed using the R package BayesFactor (Morey et al., 2015) with default priors. To calculate BFs for one-sided t-tests (for example, β>0), we sampled (N = 106) from the posterior of the corresponding two-sided t-test (|β|>0), calculated the proportion of samples that satisfied the one-sided inequality, and divided by the prior odds (Morey and Wagenmakers, 2014) (P(β>0)P(|β|>0) = 12).
+where $similarity$ is the WUC similarity function, $D$ is the number of RDMs, $r_{d}$ refers to a single RDM from an individual session, and $C^$ is the ‘lower’ noise ceiling. This noise ceiling is analogous to leave-one-out-cross-validation. If a model achieves the noise ceiling, the model fits the data well (Nili et al., 2014).
 
-## Linear combinations of models
+#### Measuring changes in the representational structure
+
+To assess the effect of BCI task experience on the inter-finger distances, we performed a linear regression analysis (Figure 3b and Figure 3—figure supplement 1). We first subdivided each session’s dataset into individual runs and calculated separate RDMs for each (session, run) index. We then used linear regression to predict each RDM’s (squared) inter-finger distances from the session index, run index, and finger pair:
+
+$$
+d_{jk}^{2}=\beta_{jk}+\beta_{session}s+\beta_{run}r+\beta_{0}
+$$
+
+where $\beta_{0}$ is the average inter-finger distance, $\beta_{jk}$ is the coefficient for finger-pair $(j, k)$, $s$ is the session index, and $r$ is the run index. $|\beta_{session}|>0$ would suggest that RDMs are dependent on experience across sessions. $|\beta_{run}|>0$ would suggest that RDMs depend on experience across runs within a session. For t-tests, we conservatively estimated the degrees-of-freedom as the number of RDMs, because the individual elements of each RDM covary and thus are not independent (Diedrichsen et al., 2021). The effect sizes for the session-index predictor and the run-index predictor were quantified using Cohen’s $f^{2}$ (Cohen, 1988), comparing against the finger-pair-only model as a baseline.
+
+For t-tests without significant differences, we also calculated BFs to determine the likelihood of the null hypothesis, using the common threshold that BF <1/3 substantially supports the null hypothesis (Dienes, 2014). BFs were computed using the R package BayesFactor (Morey et al., 2015) with default priors. To calculate BFs for one-sided t-tests (for example, $\beta>0$), we sampled (N = 106) from the posterior of the corresponding two-sided t-test ($|\beta|>0$), calculated the proportion of samples that satisfied the one-sided inequality, and divided by the prior odds (Morey and Wagenmakers, 2014) ($\frac{P(\beta>0)}{P(|\beta|>0)} = \frac{1}{2}$).
+
+#### Linear combinations of models
 
 We modeled the finger RDM (in vector form) as a zero-intercept, non-negative linear combination (Jozwik et al., 2016) of potentially predictive model RDMs: usage, muscle, and somatomorphic (Figure 4).
 
-First, we used the VIF to assess multicollinearity between the hypothesized models. For each model (e.g., usage), we calculated the standard, ordinary least squares (OLS)-based VIF (VIFusage,OLS), and we also calculated a modified VIF (VIFusage,NNLS) based on non-negative least squares (NNLS).VIFj,OLS=11-RMj|M-j2
+First, we used the VIF to assess multicollinearity between the hypothesized models. For each model (e.g., usage), we calculated the standard, ordinary least squares (OLS)-based VIF (VIFusage,OLS), and we also calculated a modified VIF (VIFusage,NNLS) based on non-negative least squares (NNLS).
 
-where RMj|M-j2 is the R2 from an OLS regression predicting RDM Mj from all other RDMs M-j . VIFOLS values above a threshold indicate that multicollinearity is a problem; VIF >5 or VIF >10 are common thresholds (James et al., 2013). Here, we constrained the linear combination coefficients to be non-negative, which can sometimes mitigate multicollinearity. Thus, we also calculated VIFNNLS, which follows the same equation above, except that we use NNLS to predict Mj from M-j .
+$$
+VIF_{j,OLS}=\frac{1}{1-R_{M_{j}|M_{-j}}^{2}}
+$$
+
+where $R_{M_{j}|M_{-j}}^{2}$ is the $R^{2}$ from an OLS regression predicting RDM $M_{j}$ from all other RDMs $M_{-j}$ . VIFOLS values above a threshold indicate that multicollinearity is a problem; VIF >5 or VIF >10 are common thresholds (James et al., 2013). Here, we constrained the linear combination coefficients to be non-negative, which can sometimes mitigate multicollinearity. Thus, we also calculated VIFNNLS, which follows the same equation above, except that we use NNLS to predict $M_{j}$ from $M_{-j}$ .
 
 Because multicollinearity was a problem here, we next determined the best subset of model RDMs to use. We used NNLS to predict the data RDM from the model RDMs. We estimated the model fits using leave-one-session-out cross-validation. To estimate model-fit uncertainty, we bootstrapped RDMs (sessions) over the cross-validation procedure (Schütt et al., 2019). We then used the ‘one-standard error’ rule (James et al., 2013) to select the best parsimonious model, choosing the simplest model within one standard error of the best model fit.
 
-## Representational dynamics analysis
+#### Representational dynamics analysis
 
 To investigate how the finger movement representational structure unfolds over time, we used a time-resolved version of RSA (Kietzmann et al., 2019; Figure 4a). At each timepoint within a trial, we computed the instantaneous firing rates by binning the spikes in a 200-ms time window centered at that point. These firing rates were used to calculate cross-validated Mahalanobis distances between each pair of fingers and generate an RDM. Snapshots (Figure 4e) show single-timepoint RDMs averaged across sessions.
 
-The temporal sequence of RDMs constitutes an RDM movie (size [nfingers, nfingers, ntimepoints]) that visualizes the representational trajectory across the trial duration. RDM movies were computed separately for each recording session. At each timepoint, we linearly decomposed the data RDM into the component models using non-negative least squares. Because the component models were multicollinear, component models were limited to the subsets chosen in the previous model reduction step. Each component RDM was normalized by its vector length (ℓ2-norm) before decomposition to allow comparison between coefficient magnitudes. We used bootstrapped sampling of RDMs across sessions and decomposed the bootstrap-mean RDM to generate a confidence intervals on the coefficients.
+The temporal sequence of RDMs constitutes an RDM movie (size $[n_{fingers}, n_{fingers}, n_{timepoints}]$) that visualizes the representational trajectory across the trial duration. RDM movies were computed separately for each recording session. At each timepoint, we linearly decomposed the data RDM into the component models using non-negative least squares. Because the component models were multicollinear, component models were limited to the subsets chosen in the previous model reduction step. Each component RDM was normalized by its vector length (ℓ2-norm) before decomposition to allow comparison between coefficient magnitudes. We used bootstrapped sampling of RDMs across sessions and decomposed the bootstrap-mean RDM to generate a confidence intervals on the coefficients.
 
 We computed the start time of each model component as the time at which the corresponding mixture coefficient exceeded 0.2 (about 25% of the median peak coefficient across models and sessions).

@@ -31,15 +31,23 @@ The above-outlined overall circuit depends critically on the detailed anatomical
 
 Three main differences are evident when comparing the CX of the fruit fly and the locust (Figure 1). First, as in most insects except Drosophila, the EB of the locust is not closed around the edges, but is crescent-shaped, preventing the E-PG neurons from forming a physical ring. Second, the Drosophila PB consists of nine glomeruli per hemisphere, and accordingly 18 groups of E-PG neurons. In locusts, there are 8 glomeruli per hemisphere and 16 groups of neurons. Third, a key part of the proposed ring attractor circuit, the Delta7 neurons (TB1 neurons in the locust) differ strikingly in their arborization pattern across the width of the PB. Whereas these cells possess two columnar output sites located eight glomeruli apart in all species, their dendrites have an approximately uniform density across the PB glomeruli in Drosophila. This differs substantially from the dendritic distribution in the desert locust, in which the postsynaptic domains of the eight Delta7 neurons are restricted to particular glomeruli of the PB, avoiding the regions around the output branches. This pattern is conserved in other species as well, such as in the Monarch butterfly (Danaus plexippus), the sweat bee (Megalopta genalis), as well as in two species of dung beetles (Scarabaeus lamarcki and Scarabaeus satyrus) (Heinze and Homberg, 2007; Heinze et al., 2013; Stone et al., 2017; El Jundi et al., 2018). Given these three differences of the Drosophila CX from other insects, we explored the functional consequences of each difference and how these might relate to the behavioural characteristics of each insect.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig1-v2.jpg)
+
+**Figure 1.:** There are three apparent differences between the CX of the fruit fly (Drosophila melanogaster) and the desert locust (Schistocerca gregaria). (A, B) The ellipsoid body in the fruit fly has a toroidal shape while in the locust is crescent-shaped so its two ends are separate. (C, D) The protocerebral bridge consists of 18 glomeruli and 18 corresponding E-PG and P-EG neurons in the fruit fly (see Table 3) while in the locust there are 16 glomeruli and neurons innervating them. (E, F) The Delta7 neurons in the fruit fly have postsynaptic domains along the whole length of their neurite while in the desert locust only in specific sections with gaps in between.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Connectivity matrices of the two species. The connectivity matrices derived by the exact neuronal projections of (A) the fruit fly (Drosophila melanogaster) and (B) the desert locust (Schistocerca gregaria), respectively. The difference in the distribution of Delta7 neuron synaptic domains is evident at the lower right part of the images. Synaptic strength is denoted by colour in units of postsynaptic current equivalents as described in section Materials and methods.
+
 To explore this question, we used the anatomical projection patterns of the main CX neuron types in flies and locusts and derived the effective neuronal circuits by simplifying anatomical redundancy. Both resulting circuits indeed have the structural topology of a ring attractor. Despite significant anatomical differences the homologous circuits in the fruit fly and the locust are structurally similar but not identical. Their differences have significant functional effect in the ability of the two circuits to track fast rotational movements and to maintain a stable heading signal. Our results highlight that even seemingly small differences in the distribution of dendritic fibres can affect the behavioural repertoire of an animal. These differences, emerging from morphologically distinct single neurons, highlight the importance of a comparative approach to neuroscience. Rather than assuming results from model species are generalisable, we gain deeper insight into function by discovering which elements are actually shared across species and what are the consequences of observed variation.
 
 ## Results
 
-## The effective circuit
+### The effective circuit
 
 The neuronal projection data of the fruit fly and the desert locust were encoded in connectivity matrices and used for the simulations we report here (Wolff et al., 2015; Wolff and Rubin, 2018; Heinze and Homberg, 2007; Heinze and Homberg, 2008; Heinze and Homberg, 2009; Heinze et al., 2009). While some simplifications could not be avoided, we have exclusively used projection patterns grounded in anatomical data for each species to construct the connectivity matrices. To facilitate conceptual understanding, we visualised the connectivity matrices as directed graphs and analysed the effective connectivity of the neuronal components of the CX for both species.
 
-## Inhibitory circuit
+#### Inhibitory circuit
 
 First, we focus on the inhibitory portion of the circuit. Study of the actual neuronal anatomy of Delta7 neurons in the PB shows that, in both species, each Delta7 neuron has presynaptic terminal domains in two or three glomeruli along the PB (Heinze and Homberg, 2007; Wolff and Rubin, 2018). These presynaptic terminal domains are separated by seven glomeruli (Figure 2A and Figure 2D). In Drosophila, the Delta7 neurons have postsynaptic terminals across all remaining glomeruli of the PB (Wolff and Rubin, 2018; Franconville et al., 2018) while in locusts the Delta7 neurons have postsynaptic terminal domains only in specific glomeruli (Heinze and Homberg, 2007; Beetz et al., 2015; Hadeln et al., 2020).
 
@@ -51,9 +59,33 @@ There are eight types of Delta7 neurons in the PB, each having the same pattern 
 
 The network graph form of the circuit further makes evident a global, uniform, inhibition pattern in the case of the fruit fly versus a local inhibition pattern in the case of the locust (Figure 2C and Figure 2F). That is, in fruit flies each Delta7 neuron forms synapses and inhibits all other Delta7 neurons. In contrast, in the locust each Delta7 neuron only inhibits a subset of Delta7 neurons with weakening synaptic strengths towards its nearest neighbours (Heinze and Homberg, 2007). The effective global inhibition pattern found in the fruit fly fits the observation of Kim et al., 2017 that calcium dynamics better matched a ring attractor with global inhibition in this species.
 
-## Excitatory circuit
+#### Excitatory circuit
 
 We next focused on the excitatory portion of the hypothetical ring attractor circuit. For deriving the effective circuit of the excitatory portion of the network, it was necessary to employ an unconventional numbering scheme for the PB glomeruli; that is, in both hemispheres, glomeruli are numbered incrementally from left to right, 1–9 for the fruit fly (Figure 3) and 1–8 for the locust (Figure 4). EB tiles were numbered 1 to 8 for both species. For brevity, throughout this text, we denote a tile numbered ‘1’ as T1 and a glomerulus numbered ‘1’ as G1. Neurons are numbered by the glomerulus they innervate, using a numerical subscript, e.g. P-EN1 for the P-EN neurons innervating glomeruli G1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig3-v2.jpg)
+
+**Figure 3.:** (Ai–Fi) Examples of E-PG (combined E-PG and E-PGT, see Table 3), P-EN and P-EG neurons with their synaptic domains and projection patterns. (Aii–Cii) Step by step derivation of the effective circuit as a directed graph network (see main text for a complete description). Each coloured disc represents a group of neurons with arrows representing excitatory synaptic connections. Pairs of E-PG and P-EG neurons can be considered to act as single units connecting the respective tile to equally numbered PB glomeruli in both hemispheres, while P-EN neurons are shown overlapped because each receives input only from its contralateral nodulus. (Dii–Eii) The connectivity also allows neurons innervating glomeruli 1 and 9 to act as a single unit. (Fii) Depiction of the complete effective connectivity of the excitatory circuit, which has an eight-fold radial symmetry.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The neuronal activity of P-EN, P-EG and E-PG neurons innervating the glomeruli of the PB for the simulated model of the fruit fly. The activity ‘bump’ is centred around identically numbered glomeruli on the two hemispheres.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B) Examples of the projection patterns of E-PG neurons (combined E-PG and E-PGT, see Table 3). (C, D) Examples of P-EN neurons with their synaptic domains and projection patterns (see main text for detailed description).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig4-v2.jpg)
+
+**Figure 4.:** (Ai–Ei) Examples of E-PG, P-EN and P-EG neurons with their synaptic domains and projection patterns. (Aii–Eii) Step by step derivation of the effective circuit (see main text for a complete description). Each coloured disc represents a group of neurons with arrows representing excitatory synaptic connections. Pairs of E-PG and P-EG neurons can be considered to act as single units connecting the respective tile to equally numbered PB glomeruli in both hemispheres, while P-EN neurons are shown overlapped because each receives input only from its contralateral nodulus. Note that the numbering of the EB slices is conceptual and arbitrary, chosen to assist description of the circuit organisation; what matters for the connectivity is the overlap of the synaptic domains in the EB and not the particular numbering choice. (Fi) The complete effective connectivity of the locust excitatory circuit closely resembles that of the fruit fly. (Fii) Between octants 1 and 8, the locust circuit obtains functional connectivity from P-EN8 to ‘neighbouring’ E-PG1 (red dashed arrow) via three actual connections: P-EN8 to E-PG8 to P-EN1 to E-PG1 (black arrows); and equivalently for P-EN1 to E-PG8.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The neuronal activity of P-EN, P-EG and E-PG neurons innervating the glomeruli of the PB for the simulated model of the locust. The activity ‘bump’ is centred around identically numbered glomeruli on the two hemispheres.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Examples of the projection patterns of E-PG (A, B) and P-EN (C, D) neurons in the locust. The anatomy and projection patterns differ from those in the fruit fly (see main text for detailed description).
 
 In accordance with calcium imaging (Turner-Evans et al., 2017; Green et al., 2017), simulating the fruit fly and locust circuits confirmed that there are two activity ‘bumps’ along the PB. The choice of unconventional numbering scheme for the PB glomeruli has as an effect that both activity ‘bumps’ are centred around neurons innervating identically numbered glomeruli (Figure 3—figure supplement 1). We use this symmetry to simplify the circuit and derive the effective connectivity.
 
@@ -63,7 +95,7 @@ We follow a similar procedure to derive the effective circuit in the locust (Fig
 
 In spite of the EB in the locust not being torus-shaped but rather having a crescent shape, the effective circuit still forms a closed ring with an eight-fold structure almost identical to that of the fruit fly (Figure 4Fi). This is a consequence of the combination of E-PG neurons selectively cross-innervating the two medial glomeruli and the P-EN neurons forming reciprocal connections back to the E-PG neurons in the same octant. Both of these features are missing in the fruit fly. We thus observe the existence of two different solutions to the same problem, in the fruit fly the torus-shaped EB anatomically facilitates closing the ring while in the locust, which has an EB with open ends, adaptations in the neuronal projection patterns result again in a closed ring.
 
-## Overall circuit
+#### Overall circuit
 
 The similarity between the effective circuits of the locust and the fruit fly is striking. Despite the fact that locusts have eight PB glomeruli while fruit flies have nine, both circuits form closed rings organised in eight octants with the functional role of each neuron class appearing to be identical. The E-PG neurons were presynaptic to both P-EG and P-EN neurons, with P-EG neurons forming recurrent synapses back to E-PG neurons. P-EN neurons were presynaptic to E-PG neurons with a shift of one octant to the left or right. Overall, two of the main anatomical differences between the two species (eight versus nine PB glomeruli and ring-shaped versus crescent-shaped EB) had no fundamental effect on the principal structure of the CX heading direction circuit.
 
@@ -77,7 +109,7 @@ When we combined the inhibitory and the excitatory sub-circuits into a complete 
 
 **Figure 5.:** Explanatory drawings of the connectivity of the inhibitory portion with the excitatory portion of the circuit for the fruit fly (A–C) and the locust (D–F). Each coloured disc represents one or more neurons with lines representing synaptic connections. (A) Conceptual depiction of effective global inhibition in the fruit fly. The connectivity of E-PG neurons is shown for two neurons only (B,C and E,F). In this conceptual effective connectivity drawing, E-PG neurons appear to be located on the one side of the ring making synapses around the ring. However, anatomically each E-PG neuron innervates one glomerulus where it makes all its synapses with postsynaptic Delta7 neurons that run along the PB.
 
-## Predicted synaptic strengths
+### Predicted synaptic strengths
 
 We next focused on whether and how the two circuits could operate as ring attractors. To this end, we implemented computational models of the two circuits using neuronal projection patterns derived from the anatomical data and investigated what synaptic connectivity strengths would be required for the circuits to produce ring attractor dynamics. The results constitute a prediction for the synaptic efficacies we expect to be observed in insects when such measurements become available.
 
@@ -87,11 +119,159 @@ We used spiking Leaky Integrate and Fire neuron models following the same approa
 
 **Figure 6.:** Graphical depiction of the synaptic strengths between classes of neurons. (A,C) For the fruit fly ring attractor circuit. (B,D) For the desert locust ring attractor circuit. Synaptic strengths are denoted by colour in panels A and B. In panels C and D, synaptic strengths between neurons are indicated by arrow colour and thickness in scale. Note that in the locust the synaptic strengths shown for Delta7 neurons are the peak values of the Gaussian distributed strengths shown in Figure 1—figure supplement 1.
 
-## Predicted neuronal activity
+### Predicted neuronal activity
 
 Whereas our simulations confirmed that both the fruit fly and the locust circuit can operate as ring attractors, there were clear differences in the spiking activity and dynamics of the two circuits (Figure 7). One major difference was that Delta7 neurons exhibited distinct firing patterns in the two species. In the locust, there was a strong heading-dependent modulation in the firing of Delta7 neurons, in line with the heading signal (activity ‘bump’) location. Those Delta7 neurons corresponding to the current heading signal location remained silent. In contrast, in the fruit fly the firing of action potentials was only minimally modulated across the Delta7 population (Figure 7A and Table 1). This difference reflected the utilisation of local inhibition in the case of the locust versus the global inhibition in the fruit fly. Electrophysiologists have indeed reported this pronounced firing rate variation in the locust (Heinze and Homberg, 2007; Heinze et al., 2009; Bockhorst and Homberg, 2015; Pegel et al., 2018). It will be interesting to see if the fruit fly neurons indeed show a lower modulation as predicted by our model.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig7-v2.jpg)
+
+**Figure 7.:** (A and B) The raster plots of the stimuli used to drive the ring attractor during the simulation are shown on top and the spiking rate activity of each neuron at the bottom. In the beginning of the simulation the stimulus spiking activity sets the ring attractor to an initial attractor state. A ‘darkness’ period of no stimulus follows. Then a second stimulus corresponding to a sudden change of heading by 120° is provided. In the lower parts of A and B, the spiking activity of each neuron, filtered along the time axis by a Gaussian low-pass filter with window of $120⁢m⁢s$ and $\sigma=24⁢m⁢s$, is shown colour coded. The order of recorded neurons is the same as shown in the connectivity matrices (Figure 1—figure supplement 1). (A) Response of the fruit fly ring attractor to sudden change of heading. (B) Response of the locust ring attractor to sudden change of heading. Even though the activity ‘bump’ in the locust model tends to start transitioning sooner, the fruit fly model completes the transition faster. (C and D) Response of individual neuron types to different stimuli azimuths (n = 40 trials in each condition). The mean and standard deviation are indicated by the error bars at the sampled azimuth points. Peak activity has been shifted to 0°. (C) Tuning curves for the fruit fly and (D) tuning curves for the locust.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The mean activity ‘bump’ heading and corresponding standard deviation for the fruit fly and the locust models across time when stimulated with a step change of heading by 180° (80 trials each). (A, B) using spiking neuron models; (C, D) using rate-based neuron models. The activity ‘bump’ moves gradually to the new heading azimuth in the locust models (B, D) while it moves instantaneously in the fruit fly models (A, C). Note that in A and C, the transition slope does not appear exactly vertical (instantaneous) because it is the mean of multiple trials with the transition for each trial occurring with a small time lag in respect to the others.
+
+**Table 1.**
+ Characteristics of the activity ‘bump’.The Full Width at Half Maximum (FWHM), the peak impulse rate of the activity ‘bump’ formed across each family of neurons and the amplitude of the activity ‘bump’ measured as the range of firing rates are shown. Measurements were made 10 s after the stimulus was removed. Numbers are given as median and standard deviation. The activity of Delta7 neurons in Drosophila is approximately even, hence the corresponding FWHM measurement is not meaningful and marked as ‘N/A’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron class</th>
+      <th colspan="3">Drosophila</th>
+      <th colspan="3">Locust</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>FWHM</th>
+      <th>Peak</th>
+      <th>Amplitude</th>
+      <th>FWHM</th>
+      <th>Peak</th>
+      <th>Amplitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>(°)</td>
+      <td>(imp./s)</td>
+      <td>(imp./s)</td>
+      <td>(°)</td>
+      <td>(imp./s)</td>
+      <td>(imp./s)</td>
+    </tr>
+    <tr>
+      <td>E-PG</td>
+      <td>88.3 ± 0.3</td>
+      <td>161.0 ± 0.2</td>
+      <td>160.1 ± 0.3</td>
+      <td>68.3 ± 0.1</td>
+      <td>192.6 ± 0.1</td>
+      <td>192.0 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>P-EN</td>
+      <td>80.4 ± 0.4</td>
+      <td>190.1 ± 0.2</td>
+      <td>190.1 ± 0.2</td>
+      <td>63.1 ± 0.3</td>
+      <td>153.5 ± 0.1</td>
+      <td>153.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>P-EG</td>
+      <td>71.0 ± 0.2</td>
+      <td>190.1 ± 0.2</td>
+      <td>190.1 ± 0.2</td>
+      <td>63.1 ± 0.3</td>
+      <td>153.5 ± 0.1</td>
+      <td>153.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Delta7</td>
+      <td>N/A</td>
+      <td>274.7 ± 0.1</td>
+      <td>27.1 ± 0.2</td>
+      <td>101.1 ± 0.2</td>
+      <td>266.6 ± 0.2</td>
+      <td>266.6 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
 When comparing the head-direction tuning widths between the two species, we noted that in locusts all cell types are consistently tuned more narrowly (ca. 20%, Table 2). Within both species, the activity ‘bump’ is wider for E-PG neurons than for the other excitatory neuron classes (Table 1), a difference that is more pronounced in the fruit fly. The tuning of the Delta7 neurons is the widest across cell types in both species (approx. 96° in the locust, Table 2). In the fruit fly, the activity is approximately even across all Delta7 neurons (ca. 10% modulation).
+
+**Table 2.**
+ Characteristics of the neuron tuning curves.The Full Width at Half Maximum (FWHM), the peak impulse rate of each family of neurons and the activity amplitude measured as the range of firing rates are shown. Numbers are given as median and standard deviation. The activity of Delta7 neurons in Drosophila is approximately even, hence the corresponding FWHM measurement is not meaningful and marked as ‘N/A’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron class</th>
+      <th colspan="3">Drosophila</th>
+      <th colspan="3">Locust</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>FWHM</th>
+      <th>Peak</th>
+      <th>Amplitude</th>
+      <th>FWHM</th>
+      <th>Peak</th>
+      <th>Amplitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>(°)</td>
+      <td>(imp./s)</td>
+      <td>(imp./s)</td>
+      <td>(°)</td>
+      <td>(imp./s)</td>
+      <td>(imp./s)</td>
+    </tr>
+    <tr>
+      <td>E-PG</td>
+      <td>94.7 ± 4.0</td>
+      <td>208.4 ± 2.3</td>
+      <td>208.2 ± 2.2</td>
+      <td>73.4 ± 2.6</td>
+      <td>220.8 ± 1.4</td>
+      <td>220.8 ± 1.4</td>
+    </tr>
+    <tr>
+      <td>P-EN</td>
+      <td>74.6 ± 3.8</td>
+      <td>230.3 ± 2.3</td>
+      <td>230.3 ± 2.3</td>
+      <td>58.9 ± 3.1</td>
+      <td>163.6 ± 0.9</td>
+      <td>163.6 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>P-EG</td>
+      <td>74.6 ± 3.8</td>
+      <td>230.3 ± 2.3</td>
+      <td>230.3 ± 2.3</td>
+      <td>58.9 ± 3.1</td>
+      <td>163.6 ± 0.9</td>
+      <td>163.6 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>Delta7</td>
+      <td>N/A</td>
+      <td>289.9 ± 1.8</td>
+      <td>58.1 ± 4.2</td>
+      <td>96.0 ± 3.2</td>
+      <td>265.4 ± 2.9</td>
+      <td>265.4 ± 2.9</td>
+    </tr>
+  </tbody>
+</table>
 
 In our models, we employed one neuron for each connection, whereas in the actual animals there are multiple copies of each neuron. While definite numbers of neurons will have to await electron microscopy data, there are likely at least two copies of E-PG, P-EG and P-EN neurons in each columnar module, and three to four copies of Delta7 cells (Williams, 1975; Heinze and Homberg, 2008; Beetz et al., 2015; Wolff et al., 2015; Wolff and Rubin, 2018). If we were to replace each modelled neuron by a bundle of neurons, the action potential firing rates shown in Table 1 would be divided among the neurons in each bundle. The peak firing rate of each neuron would be in the range of 40–90 impulses/s which is similar to the range of the rates recorded electrophysiologically in the locust (Heinze and Homberg, 2009). The objective function did not explicitly constrain the firing rates of the neurons but the synergy of biophysical parameters, circuit structure and performance requirements produced working circuits that operate in firing rates similar to those recorded electrophysiologically (see section Discussion).
 
@@ -99,7 +279,7 @@ The steady state peak spiking rate for each group of neurons differs between the
 
 The tuning curves of the P-EN and P-EG neurons have the same statistics because in our models we assumed that all neurons have the same biophysical properties and since both these types of neurons receive the same inputs their responses are identical.
 
-## Connectivity differences affect response dynamics
+### Connectivity differences affect response dynamics
 
 Despite the substantial similarity in functional structure of the two circuits, the subtle differences in connectivity affected the dynamics of the circuit behaviour. This became apparent when we compared the response of both circuits to sudden changes of heading (Figure 7). At a qualitative level, the fruit fly heading signal (the ‘bump’) could jump abruptly from one state to another, whereas the locust circuit exhibited a gradual transition. The results obtained with our spiking neuron models were corroborated by rate-based implementations of the models (Figure 7—figure supplement 1), confirming that the observed difference in response dynamics is not a consequence of neuron model choice but rather due to the differences in connectivity.
 
@@ -109,19 +289,23 @@ To explore whether this difference in movement dynamics of the heading signal co
 
 **Figure 8.:** (A) Time required from the onset of the stimulus until the heading signal settles to its new state. The abscissa (horizontal axis) displays the azimuthal difference between initial and target azimuth. (B) The maximum rate of angular change each model can attain computed as the ratio of shortest angular change of stimulus divided by transition duration. The values for different magnitudes of heading change are depicted as medians. The boxes indicate the 25th and 75th percentiles while the whiskers indicate the minimum and maximum value in the data after removal of the outliers (black dots). ‘Hybrid-species’ is the combination of the fruit fly model with the locust inhibition pattern.
 
-## Quantification of the ring attractor responsiveness
+#### Quantification of the ring attractor responsiveness
 
 Having shown that small changes in the morphology of the Delta7 cells affect the dynamics of the heading signal in a qualitative way, we next quantified the maximal rate of change each ring attractor circuit could attain. To this end, we measured the time it took for the heading signal to transition from one stable location to a new one, in response to different angular heading changes of the stimulus. This was carried out for all three models: the fruit fly model, the locust model, and the hybrid-species model. The fruit fly ring attractor circuit stabilised to the new heading in approximately half the time it takes for the locust circuit to stabilise, across different magnitudes of angular heading change (Figure 8A). The hybrid-species circuit had a similar response time to the locust circuit. This confirmed that the pattern of inhibition in the network is the main contributor to the observed effect.
 
-To calculate the maximal rate of angular change each circuit can possibly track we divided the angular heading change by the time required for the heading signal to transition. When moving gradually, the heading signal transitions along the shortest path around the ring attractor. Therefore, in the calculation of the angular change rate, the numerator was the shortest angular distance between the two azimuths, calculated as(1)angle={angle,if angle ≤ 180∘360∘−angle,if angle > 180∘
+To calculate the maximal rate of angular change each circuit can possibly track we divided the angular heading change by the time required for the heading signal to transition. When moving gradually, the heading signal transitions along the shortest path around the ring attractor. Therefore, in the calculation of the angular change rate, the numerator was the shortest angular distance between the two azimuths, calculated as
+
+$$
+angle={angle,if angle \leq 180^{∘}360^{∘}−angle,if angle > 180^{∘}
+$$
 
 The resulting angular rate of change values revealed that the circuit found in the fruit fly is significantly faster than the locust circuit and the hybrid-species circuit with localised inhibition (Figure 8B). The rate of change was maximal for angular displacement of 180°, because this is the maximum azimuth distance the bump has to travel, as for all other angular displacements there is a shorter path.
 
-## Effects of varying the uniformity of inhibition
+#### Effects of varying the uniformity of inhibition
 
 The above results strongly suggested that the different pattern of inhibition is instrumental to generating the different dynamics in the two circuits. Up to this point, we have examined two extreme cases of inhibitory synaptic patterns, that of the global, uniform, inhibition found in Drosophila and the localised inhibition found in the locust. However, in principle, there could be any degree of uniformity of the inhibition between these two extremes. So far, the locust inhibition has been modelled as a summation of two Gaussian functions that approximates the synaptic density across the PB glomeruli, as derived from estimates of dendritic density along the PB in dye-filled Delta7 neurons (Heinze and Homberg, 2007; Beetz et al., 2015; Hadeln et al., 2020). In the fruit fly, the synaptic distribution of Delta7 neurons has been modelled as uniform across the PB glomeruli, although there might be subtle synaptic density variation along their length. To account for this possibility, we explored a range of synaptic terminal domains distributions. As no measurements of synaptic strengths exist for either animal, we asked what effect varying the synaptic terminal distribution would have on the ring attractor behaviour. We thus modelled the inhibitory synaptic strength across the PB using two Gaussian functions, with peaks separated by 7 or 8 glomeruli, and varied their width (standard deviation σ, see also section Materials and methods). This would not only give us the effect of different inhibitory synaptic domain widths but also predict the plausible range of widths that the actual animals must have in order to exhibit the observed dynamics.
 
-Modelling these variations showed that the transition mode of the heading signal depended on both the extent of the inhibitory synaptic domain width and the angular heading change of the stimulus. This sets limits on the plausible standard deviation (σ) range that the synaptic strength distribution must obey in the actual animals (Figure 9). We observed that for both circuits there was a range of low σ values, corresponding to more localised inhibition, which produce gradual transitions (‘locust-like’). As σ was increased, the inhibitory pattern became more uniform or global, and both circuits transitioned to abrupt jumps (‘fly-like’). Based on density estimates of dendrites in the PB, we approximated the inhibitory synaptic distribution with a value of σ=0.8 for the locust model, yielding a gradual activity transition regime across the whole range of angular changes. These results suggested that the pattern of inhibition is indeed key to the circuit dynamics in response to rapid heading changes.
+Modelling these variations showed that the transition mode of the heading signal depended on both the extent of the inhibitory synaptic domain width and the angular heading change of the stimulus. This sets limits on the plausible standard deviation (σ) range that the synaptic strength distribution must obey in the actual animals (Figure 9). We observed that for both circuits there was a range of low σ values, corresponding to more localised inhibition, which produce gradual transitions (‘locust-like’). As σ was increased, the inhibitory pattern became more uniform or global, and both circuits transitioned to abrupt jumps (‘fly-like’). Based on density estimates of dendrites in the PB, we approximated the inhibitory synaptic distribution with a value of $\sigma=0.8$ for the locust model, yielding a gradual activity transition regime across the whole range of angular changes. These results suggested that the pattern of inhibition is indeed key to the circuit dynamics in response to rapid heading changes.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig9-v2.jpg)
 
@@ -129,7 +313,7 @@ Modelling these variations showed that the transition mode of the heading signal
 
 However, the morphology of the Delta7 neurons is not the only difference between the ring attractors in the two species, hence the recorded response patterns are not identical for the two species (Figure 9). There is also anatomical difference in the presence of the P-EN to E-PG feedback loops only in the locust and consequently the synaptic efficacies differ between the two models. We investigate the effect of this anatomical difference in the subsequent section.
 
-## Attractor states distribution
+### Attractor states distribution
 
 We next investigated the attractor basin of each model. The finite size of the two circuits renders them discrete approximations of ring attractors (Brody et al., 2003). As a consequence, in the absence of input, the activity ‘bump’ will tend to settle to one of a discrete set of states (note this does not prevent a continuous encoding of heading while a heading stimulus is provided, which could be decoded by downstream neuronal circuits). We tested this by stimulating the E-PG neurons at varying azimuthal locations around the circuits, then removing the input stimulus and examining the position of the activity ‘bump’ after 3 s. Both the fruit fly and locust circuits had discrete attractor states where the heading signal eventually settled once the stimulus was removed. Typically, the heading signal moved to the nearest attractor state. When a stimulus was applied equidistantly between two attractor states then, once the stimulus was removed, the activity ‘bump’ moved to one of the two attractor states stochastically due to the presence of noise in the system (Figure 10). These attractor states were more stable and clearly delineated in the locust while in the fruit fly there was a wider distribution of ‘bump’ locations, indicating that the locust ring attractor is more robust to drift and noise (Figure 10).
 
@@ -137,9 +321,9 @@ We next investigated the attractor basin of each model. The finite size of the t
 
 **Figure 10.:** The distribution of azimuthal location of the heading signal 3 s after stimulus removal is plotted. On the abscissa (horizontal axis), the azimuth where the stimulus is applied is shown. On the ordinate (vertical axis), the mean location and standard deviation of the activity ‘bump’ azimuth, 3 s after the stimulus is removed, are shown. (A) for the fruit fly and (B) for the locust. Inset images depict the corresponding EB tiles in colour. Smaller standard deviation corresponds to the ‘bump’ settling more frequently to the same azimuth. This is the case when the stimulus is applied near an attractor state. Applying the stimulus equidistantly from two attractor states results in a movement of the ‘bump’ to either of them and hence the increased standard deviation. In the locust when stimulating the ring attractor at one of the attractor states the ‘bump’ tends to settle at it, indicated by the reduced standard deviation at these locations. In the fruit fly, the activity ‘bump’ is prone to noise and not as stable, thus the standard deviation is not as modulated. This means that the locust attractor states are more stable resulting to the smaller dispersion of ‘bump’ location.
 
-## Stability characteristics of the ring attractors
+### Stability characteristics of the ring attractors
 
-## The locust head direction circuit is more robust to noise
+#### The locust head direction circuit is more robust to noise
 
 An important aspect of a ring attractor is its stability characteristics. The differences in the distribution of activity ‘bump’ locations reported in the previous section hinted that the locust ring attractor is more robust to noise. To quantify this property of the two ring attractors, we measured the effect of different levels of structural (synaptic) noise to the circuit stability. The ring attractor of the locust was significantly more tolerant to structural noise than the fruit fly circuit (Figure 11A).
 
@@ -149,21 +333,29 @@ An important aspect of a ring attractor is its stability characteristics. The di
 
 However, these two ring attractors differ in several respects. To identify the reason for the reduced sensitivity of the locust model to synaptic noise we compared the locust with the hybrid-species model. These two models differ in that reciprocal connections between P-EN and E-PG neurons are present only in the locust model (Figure 3 and Figure 4). If these reciprocal connections are responsible for the increased robustness of the circuit, we would expect the locust model to be more robust to synaptic noise than the hybrid-species model. This is exactly what we found (Figure 11A), thus we inferred that these reciprocal connections, between P-EN and E-PG neurons, provide the increased robustness to the locust model. This circuit specialisation might have important repercussions to the behavioural repertoire of the species, enabling locusts to maintain their heading for longer stretches of time than fruit flies, an important competence for a migratory species such as the locust.
 
-## P-EG neurons stabilise the head direction circuit
+#### P-EG neurons stabilise the head direction circuit
 
 In our models, we included the P-EG neurons connecting the PB glomeruli with EB tiles. Unlike the P-ENs, these neurons have the same connectivity pattern as the E-PG neurons but with presynaptic and postsynaptic terminals on opposite ends. What is the effect of the P-EG neurons in the circuit? Effectively, the P-EG neurons form secondary positive feedback loops within each octant of the circuit that, we hypothesised, help the heading signal to be maintained stably in the current position, even when lacking external input. Therefore, we expected the circuit to function as a ring attractor without these connections, but to be more vulnerable to drift if the neuronal connection weights are not perfectly balanced. The recurrent P-EG to E-PG loops should counteract this tendency to drift.
 
 We tested this hypothesis by measuring the effect of imposing imbalance in the connectivity strengths of P-EN to E-PG neurons between the two hemispheres. We did this for both the full fruit fly and locust circuits as well as two altered circuits with the P-EG neurons removed. The synaptic strengths for the four circuits were optimised separately, since completely removing the P-EG neurons without appropriate synaptic strength adjustment breaks the ring attractor. We measured the percentage of simulation runs that resulted in a stable heading signal being maintained for at least 3 s. The presence of the P-EG neurons substantially increased the robustness of both species models to the effects of synaptic strength imbalance in the P-EN to E-PG synapses, as a stable heading signal was observed over a far wider range of synaptic efficacy changes (Figure 11B&C). The P-EG neurons therefore contribute significantly to the tolerance of the ring attractors to synaptic strength asymmetries.
 
-## Effect of inhibition to stability
+#### Effect of inhibition to stability
 
 It is interesting to note that even though in the locust model the reciprocal connections between E-PG and P-EG neurons were weaker than in the fruit fly model, the presence of the extra reciprocal connections between P-EN and E-PG neurons in the locust resulted in a more stable ring attractor than that in the fruit fly, which possesses only one but stronger recurrency loop. Finally, the hybrid-species model was more robust than the fruit fly one (Figure 11A). The fruit fly and the hybrid-species models differed in the width of their inhibitory synaptic domains and in their synaptic strengths. Although their difference in robustness was smaller than the previously examined ones, we can see an effect of the inhibitory pattern on the stability of the circuit.
 
-## Effect of neuronal heterogeneity
+#### Effect of neuronal heterogeneity
 
 Until this point, we have assumed that all neurons have identical properties. We now relax this assumption by making the membrane properties of the neurons heterogeneous. We tested the effect of neuronal heterogeneity to the stability of the ring attractors. Overall, the stability of the ring attractors deteriorated with increased deviation from the nominal values of membrane properties (Figure 12), but the locust model was more robust to these membrane property variations. Importantly, the distinct heading signal transition regimes (gradual transition in the locust model versus jump in the fruit fly model) were preserved regardless of heterogeneous membrane properties across the neuronal population (Figure 12—figure supplement 1).
 
-## Response to proprioceptive stimuli
+![Figure 12.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig12-v2.jpg)
+
+**Figure 12.:** (A) Stability of the ring attractor heading signal for the fruit fly and the locust model when the membrane properties are heterogeneous across the neuronal population. (B, C) Stability of the ring attractor heading signal when the level of noise on conductance and capacitance is varied independently. In all three plots, the percentage of trials that result in a stable activity ‘bump’ as a function of heterogeneity in cell membrane properties is shown (number of trials n = 50 for each condition). The locust ring attractor is more robust to white Gaussian noise in both conductance and capacitance. In both cases, the activity ‘bump’ is more tolerant to conductance variation than capacitance.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** The difference in the heading signal transition is present at different amounts of heterogeneity in neuron membrane parameters. As neuronal parameters deviate from their nominal values, from top to bottom, the stability of the heading signal deteriorates. The noise added to each membrane property (conductance and capacitance) was chosen from a normally distributed pseudorandom generator with sigma values in the range from 0 to the nominal value of the parameter and the resulting values were clipped to 0 so they are never negative.
+
+### Response to proprioceptive stimuli
 
 Mechanistically, Turner-Evans et al. showed that the activity of P-EN neurons in one hemisphere of the brain increases when the animal turns contralaterally, both with and without visual input (Turner-Evans et al., 2017). The increase in activity is related to the angular velocity the fly experiences (Turner-Evans et al., 2017). Whereas the origin of the angular velocity information in darkness is not known, efference copies of motor commands or proprioceptive inputs are the most likely sources of information about the fly’s rotational velocity. To test whether our models reproduce this behaviour, we artificially stimulated the P-EN neurons in one hemisphere of the PB, mimicking an angular velocity signal caused by turning of the animal, and observed the effect on the heading signal (Figure 13).
 
@@ -175,7 +367,7 @@ Both the locust and the fruit fly model reproduced the response dynamics reporte
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig14-v2.jpg)
 
-**Figure 14.:** Response rate of change of the heading signal with uni-hemispheric stimulation of P-EN neurons. The angular rate of change increases exponentially with stimulation strength and does so most rapidly for the fruit fly circuit. The data points have been fit with the function  and the parameters of the fitted curves are shown on the plot.y=a⁢eb⁢x
+**Figure 14.:** Response rate of change of the heading signal with uni-hemispheric stimulation of P-EN neurons. The angular rate of change increases exponentially with stimulation strength and does so most rapidly for the fruit fly circuit. The data points have been fit with the function $y=a⁢e^{b⁢x}$ and the parameters of the fitted curves are shown on the plot.
 
 Continuous application of angular velocity input caused the heading signal to reach an edge of the PB and then wrap around and continue on the other edge. This behaviour is present in both models and is thus independent of the physical shape of the EB, that is, whether it forms a closed ring or possesses open ends. The wrapping around of the heading signal is required for the animals to track movements that involve turning around its body axis for more that 360° and is supported by the effective closed ring structure we found in both species.
 
@@ -183,7 +375,7 @@ Continuous application of angular velocity input caused the heading signal to re
 
 The availability of tools for the study of insect brains at the single neuron level has opened the way to deciphering the neuronal organisation and principles of the underlying circuit’s behaviour. However, even where there is progress towards a complete connectome, the lack of data on synaptic strengths, neurotransmitter identity, neuronal conductances, etc. leave many parameters of the circuit unspecified. Exploring these parameters via computational modelling can help to illuminate the functional significance of identified neural elements. We have applied this approach to gain greater insight into the nature of the heading encoding circuit in the insect central complex (CX), including the consequences of differences in circuit connectivity across two insect species.
 
-## Overall conservation of structure and function
+### Overall conservation of structure and function
 
 We have focused on a subset of neurons in the PB and EB which have been hypothesised to operate as a ring attractor, with a ‘bump’ of neuronal activity moving across columns consistently with the changing heading direction of the animal. The neuronal projection patterns and columnar organisation differ between the two insect species we have analysed, the fruit fly and the locust. There are additional morphological columns in the PB of flies (9 vs. 8), resulting in a different number of functional units that could influence the symmetry of the underlying neural circuits. Also, the EB in the fruit fly forms a physical ring, while the homologous region in the locust is an open structure. Our analysis of the connectivity as a directed graph has revealed, surprisingly, that the circuits are nevertheless equivalent in their effective structure, forming a closed ring attractor in both species with an identical functional role for each neuron class. The preservation of this circuit across 400 million years of evolutionary divergence suggests that it is an essential, potentially fundamental, part of the insect brain.
 
@@ -191,29 +383,29 @@ It is worth noting that an essential part of the circuit, namely the functionall
 
 In combination, these findings underline that the large-scale anatomical differences at the level of neuropils and projection patterns do not necessarily affect the core functions of the circuit. Rather, the functional constraints appear significant enough that even in those parts of the circuit that clearly differ between species convergent solutions have evolved that solve similar problems, albeit in slightly different ways.
 
-## Differences in dynamical response
+#### Differences in dynamical response
 
 Surprisingly, more subtle differences in the morphology between the two species have significant effects on the dynamical response of the heading direction circuit. First, the shape of the dendritic arborizations of one type of CX neuron determines how quickly the model circuit tracks rotational movements. Second, a difference in the overlap of neuronal projections in the EB results in an extra feedback loop between the P-EN and E-PG neurons in the locust circuit that makes it more robust to synaptic noise.
 
 We suggest that the effects of these differences are consistent with the behavioural ecology of the two species. On the one hand, the faster response of the ring attractor circuit in the fruit fly accommodates the fast body saccades that fruit flies are known to perform (Tammero and Dickinson, 2002; Fry et al., 2003). On the other hand, the locust is a migratory species, so its behaviour demands maintenance of a defined heading for a long period of time (Homberg, 2015; de Vries et al., 2017). This requirement for heading stability might have provided the selective pressure needed to drive the evolution of a more noise resilient head direction circuit.
 
-## Assumptions and simplifications
+### Assumptions and simplifications
 
 As any model, our circuits are necessarily condensed and simplified versions of the real circuits in the insect brain. In comparison to previous models, the work we present has been more precisely constrained by the latest anatomical evidence. We additionally constrained our models to use plausible values for the biophysical properties of neurons (membrane conductance and capacitance) as well as spiking rates (background activity) supported by electrophysiological evidence. Furthermore, in building our models we did not assume that the underlying circuits must be ring attractors, but rather asked and investigated whether, given the available connectivity data, they can be. This was especially the case for the locust model since our work represents the first model of this circuit to date. Nevertheless, it is important to outline those areas where our assumptions cannot be fully justified from the existing data and identify the potential consequences for the modelling results.
 
-## Morphological assumptions
+#### Morphological assumptions
 
 In our model of the fruit fly heading tracking circuit, we assumed a uniform distribution of dendrites across the Delta7 neurons. Imaging of these neurons suggests that there might be a subtle variation of the dendritic density along their length. However, it is unclear how this subtle variation might be related to synaptic density and efficacy. We, therefore, initially made the simplifying assumption that these neurons have uniform synaptic efficacy across the PB. However, we also explored the effect of varying the degree of synaptic uniformity, showing that there is a range of synaptic efficacy distributions that still can produce the fly-like rapidity in the circuit response.
 
 In general, arborization trees of neurons in the CX can be very complex, as they are not only confined to specific slices, but also to one or several layers, especially within the EB. In Drosophila, the spiny terminal arbors of E-PG neurons extend to the width of single wedges in the EB, occupying both the posterior and medial layers. In contrast, P-EG and P-EN neurons arborize in tiles, hence innervating only the posterior surface volume of the EB (Wolff and Rubin, 2018). Therefore, we assume that presynaptic terminals of P-EG and P-EN neurons form synapses with E-PG postsynaptic terminals in the posterior layer of the EB. In locusts, the E-PG arborizations are more complex, as these cells innervate a single wedge of the anterior and medial EB layers, but extend at least twice this width to either side in the posterior layer that provides overlap with the P-EN neurons (Heinze and Homberg, 2008). Additionally, the wider fibres have a different morphological appearance. P-EG neurons in this species innervate all layers evenly. Although these detailed differences likely have consequences for connectivity, we simplified these arborizations to their most essential components, aiding the extraction of the core features. With the advance of comparative connectomics, these aspects will become accessible for investigation.
 
-## Connectivity assumptions
+#### Connectivity assumptions
 
 Several assumptions were made while deriving the neuronal connectivity in our models. We assumed well delineated borders of synaptic domains, which is clearly not always the case. Especially in the EB, some overlapping of neighbouring synaptic domains due to stray terminals is to be expected (Wolff et al., 2015). The circumferential extent of arbors in wedges and tiles may affect the integrity of the resulting circuit and its properties. However, due to lack of adequate data about the extent of such overlap we cannot currently model this aspect in a sensible way.
 
 Furthermore, neuronal connectivity was mostly inferred by co-location of neuronal arbors, that is, projection patterns. A functional connectivity study has reported that stimulation of E-PG neurons triggered significant responses to Delta7 neurons but no columnar neurons (Franconville et al., 2018). However, as those authors note, the lack of response might be due to the limitations of the method used. Alternatively, such connections might be mediated by interneurons instead of being monosynaptic. Future work using electron microscopy data will elucidate which of the overlapping arborizations correspond to functional connections and allow us to augment our models.
 
-## Functional assumptions
+#### Functional assumptions
 
 Further assumptions were made about neuronal polarity, type of synapses and synaptic efficacies. Lin et al., 2013 characterise the EB arbor of E-PG neurons in Drosophila as having both presynaptic and postsynaptic domains; however, Wolff et al., 2015 report that using anti-synaptotagamin is inconclusive for presynaptic terminals. In our models for both the fruit fly and the locust we thus assumed that E-PG neurons are purely postsynaptic in the EB, following the most parsimonious polarity estimate. Connectomics data from a recent preprint demonstrate that in Drosophila synapses exist that directly link Delta7 to E-PG neurons in the PB (Turner-Evans et al., 2019). These synapses are most likely inhibitory and would thus inhibit the distal portion of the ring and thus would not alter the location of the activity ‘bump’. For simplicity and because they do not affect the functional layout of the circuit, these synapses were not included in our model.
 
@@ -221,17 +413,63 @@ Furthermore, the Delta7 neurons are assumed to have inhibitory effect on their p
 
 We additionally assumed that the synaptic strengths of all synapses of each class are identical. This might not be the case in the actual animals, especially considering that one of the EB tiles (T1) is innervated by twice as many neurons as other tiles in fruit flies (Figure 3). Neurons innervating this tile might have reduced synaptic efficacy in order to maintain the radial symmetry of the circuit intact. Similarly, the synaptic strengths of the neurons closing the ring in locusts would be expected to be different than those of other synapses if the ring does not have a functional ‘seam’. Such a synaptic efficacy variation is suggested by the fact that the arborization density of E-PG neurons innervating the two medial PB glomeruli (G9 and G1) is not the same in both of them. There is certainly space for further exploration of the effect of synaptic efficacy in those segments of the ring in both species. Finally, synaptic strength variation might exist for the two Delta7 neurons that have presynaptic terminals in three glomeruli instead of two (Table 3).
 
-## Biophysical assumptions
+**Table 3.**
+ Neuronal nomenclature.The names used for the homologous neurons differ between Drosophila and other species. The first column shows the name used in this paper to refer to each group of neurons. The other three columns provide the names used in the literature.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th colspan="2">Drosophila</th>
+      <th>Locust</th>
+    </tr>
+    <tr>
+      <th>Neuron name</th>
+      <th>Consensus name</th>
+      <th>Systematic name (Wolff and Rubin, 2018)</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E-PG</td>
+      <td>E-PG and E-PGT</td>
+      <td>PBG1-8.b-EBw.s-D/V GA.b and PBG9.b-EB.P.s-GA-t.b</td>
+      <td>CL1a</td>
+    </tr>
+    <tr>
+      <td>P-EN</td>
+      <td>P-EN</td>
+      <td>PBG2-9.s-EBt.b-NO1.b</td>
+      <td>CL2</td>
+    </tr>
+    <tr>
+      <td>P-EG</td>
+      <td>P-EG</td>
+      <td>PBG1-9.s-EBt.b-D/V GA.b</td>
+      <td>CL1b</td>
+    </tr>
+    <tr>
+      <td>Delta7</td>
+      <td>Delta7 or Δ7</td>
+      <td>PB18.s-GxΔ7Gy.b and PB18.s-9i1i8c.b</td>
+      <td>TB1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Biophysical assumptions
 
 All types of neurons in our models were assumed to have the same nominal biophysical properties even though anatomical evidence has shown that their morphology, somata size and main neurite thickness differ (Heinze and Homberg, 2008). To relax this assumption, we explored the effect of heterogeneity in the biophysical properties of the neuronal population. We corroborated our conclusions using both rate-based and Leaky Integrate and Fire neurons with refractory period. This allowed us to highlight the significance of the neuronal connectivity on the circuit dynamics. The point spiking neuron model was sufficient for investigating the performance characteristics, spike timing dynamics and potential spike synchronisation effects in the ring attractors when exposed to neuronal noise, but clearly is highly abstracted in comparison to real neurons. However, we lack most of the necessary detail to constrain more complex neural models. One caveat is that intrinsic properties of neurons could provide short-term memory that would radically alter the circuit response. It is not possible to explore this possibility with the models we have used, but we can conclude that such properties do not appear to be necessary for generating basic ring attractor dynamics. Furthermore, it will be interesting to study how differences in the biophysical properties of neurons between the two species might be affecting performance. We are not exploring this possibility here.
 
-## Comparison to ‘canonical’ ring attractor models
+### Comparison to ‘canonical’ ring attractor models
 
 In our work, we compared the hypothetical heading tracking circuit of two evolutionary distant species. We went beyond mere simulation of neuronal projection data by analysing and deriving the effective underlying circuit structure of the two ring attractors. Our analysis and derivation of the complete effective neuronal circuits revealed not only differences in dynamics but also the construction principles of these circuits. This approach allowed us to identify elements that differ in several ways from the ‘canonical’ ring attractor described in earlier theoretical models (e.g. Amari, 1977; Skaggs et al., 1995; Zhang, 1996).
 
 For example, the circuit found in the two insect species combines two functionalities in the P-EN neurons that are typically assigned to separate neural populations in computational models of ring attractors. Such computational models use one set of neurons to provide the lateral excitation to nearest neighbours and a different set of neurons that receive angular velocity input to drive the left-right rotation of the heading signal. In the insect circuit, the P-EN cells are part of the lateral excitation circuit, providing excitation to their two nearest neighbours, but they also receive angular velocity input. This difference is suggestive of a more efficient use of neuronal resources than the typical computational models of ring attractors. Another novel element we found in the insect ring attractors is the presence of local feedback loops within each octant of the circuit structure (P-EG to E-PG and P-EN to E-PG). Both of these feedback loops increase the tolerance of the ring attractors to noise.
 
-## Hypotheses regarding circuit differences
+### Hypotheses regarding circuit differences
 
 Another unique aspect of our modelling work is the comparison of related, but not identical, circuits found in two species. Indeed, using computational modelling allows us to investigate ’hybrid’ circuits, combining features of each, in order to try to understand the functional significance of each observed difference independently. Nevertheless, some differences between these circuits are not explained by the current model, and may require additional work to fully explicate.
 
@@ -245,15 +483,33 @@ Comparison of different species could potentially elucidate such questions. We w
 
 ## Materials and methods
 
-## Neuron model
+### Neuron model
 
-Our models used the source code of Kakaria and de Bivort, 2017 as a starting point. We used Leaky Integrate and Fire neuron models with refractory period (Stein, 1967). The membrane potential of each neuron was modelled by the differential equation(2)d⁢Vid⁢t=1Cm⁢(V0-ViRm+Ii+∑j=1NMj,i⁢Ij)where Vi is the membrane potential of neuron i, V0 the resting potential, Rm the membrane resistance, Cm the membrane capacitance, Ii the external input current of neuron i, Mj,i the network connectivity matrix, Ij the output current of each neuron in the circuit and N is the number of neurons.
+Our models used the source code of Kakaria and de Bivort, 2017 as a starting point. We used Leaky Integrate and Fire neuron models with refractory period (Stein, 1967). The membrane potential of each neuron was modelled by the differential equation
 
-The model parameter values including membrane resistance, capacitance, resting potential, undershoot potential and postsynaptic current magnitude (IP⁢S⁢C) were set to the same values as used by Kakaria and de Bivort, 2017. These values are consistent with evidence from measurements in D. melanogaster and other species. The membrane capacitance Cm is set to 2⁢n⁢F and the membrane resistance Rm to 10⁢M⁢Ω for all neurons, assuming a surface area of 10-3⁢c⁢m2 (Gouwens and Wilson, 2009). The resting potential V0 is set to -52⁢m⁢V for all neurons (Rohrbough and Broadie, 2002; Sheeba et al., 2008). The action potential threshold is -45⁢m⁢V (Gouwens and Wilson, 2009). When the membrane potential reaches the threshold voltage an action potential template is inserted in the recorded time series. No other impulses occur during this period operating in effect as a refractory period. The action potential template is defined as Kakaria and de Bivort, 2017:(3)V(t)={Vthr+(Vmax−Vthr)𝒩(ttp2,(tAP2)2)−α1β1,if 0≤t<tAP2Vmin+(Vmax−Vmin)sin((t−tAP2)2πtAP+π2)+γ1δ1,if tAP2≤t≤tAPwhere Vm⁢a⁢x is the peak voltage set to 20⁢m⁢V(Rohrbough and Broadie, 2002). Vm⁢i⁢n is the action potential undershoot voltage, set to -72⁢m⁢V(Nagel et al., 2015). tA⁢P is the duration of the action potential set to 2 ms (Gouwens and Wilson, 2009; Gaudry et al., 2013). 𝒩⁢(μ,σ2) is a Gaussian function with a mean µ and standard deviation σ. α1, β1, γ1, and δ1 are normalisation parameters for scaling the range of the Gaussian and the sinusoidal to 0 to 1.
+$$
+\frac{d⁢V_{i}}{d⁢t}=\frac{1}{C_{m}}⁢(\frac{V_{0}-V_{i}}{R_{m}}+I_{i}+\sumj=1NM_{j,i}⁢I_{j})
+$$
 
-The firing of an action potential also adds a postsynaptic current template to the current time series. The postsynaptic current template is defined as(4)I(t)={IPSCsin(tπ2−π2)+α2β2,if  0 ≤t<2msIPSC2−(t−2)/tPSC+γ2δ2,if  2ms≤ t ≤ 2ms + 7tPSCwhere IP⁢S⁢C=5⁢n⁢A (Gaudry et al., 2013). Excitatory and inhibitory postsynaptic currents are assumed to have the same magnitude but opposite signs. tP⁢S⁢C=5⁢m⁢s is the half-life of the postsynaptic current decay (Gaudry et al., 2013). α2, β2, γ2, and δ2 are normalisation constants so that the range of the sinusoidal and exponential terms is 0 to 1. The postsynaptic current traces have duration 2⁢m⁢s+7⁢tP⁢S⁢C, that is 2⁢m⁢s of rise time plus 7⁢tP⁢S⁢C of decay time. The simulation was implemented using Euler’s method with a simulation time step of 10-4⁢s. Our simulation code is derived from the source code published by Kakaria and de Bivort, 2017. All simulations were performed using MATLAB (The MathWorks Inc, Natick, MA) and all source codes are available at https://github.com/johnpi/eLife_Pisokas_Heinze_Webb_2019 (copy archived at https://github.com/elifesciences-publications/eLife_Pisokas_Heinze_Webb_2019; Pisokas, 2020). For data analysis we used MATLAB, python, and R scripts.
+where $V_{i}$ is the membrane potential of neuron i, $V_{0}$ the resting potential, $R_{m}$ the membrane resistance, $C_{m}$ the membrane capacitance, $I_{i}$ the external input current of neuron i, $M_{j,i}$ the network connectivity matrix, $I_{j}$ the output current of each neuron in the circuit and N is the number of neurons.
 
-## Neuronal projections and connectivity
+The model parameter values including membrane resistance, capacitance, resting potential, undershoot potential and postsynaptic current magnitude ($I_{P⁢S⁢C}$) were set to the same values as used by Kakaria and de Bivort, 2017. These values are consistent with evidence from measurements in D. melanogaster and other species. The membrane capacitance $C_{m}$ is set to $2⁢n⁢F$ and the membrane resistance $R_{m}$ to $10⁢M⁢Ω$ for all neurons, assuming a surface area of $10^{-3}⁢c⁢m^{2}$ (Gouwens and Wilson, 2009). The resting potential $V_{0}$ is set to $-52⁢m⁢V$ for all neurons (Rohrbough and Broadie, 2002; Sheeba et al., 2008). The action potential threshold is $-45⁢m⁢V$ (Gouwens and Wilson, 2009). When the membrane potential reaches the threshold voltage an action potential template is inserted in the recorded time series. No other impulses occur during this period operating in effect as a refractory period. The action potential template is defined as Kakaria and de Bivort, 2017:
+
+$$
+V(t)={V_{thr}+(V_{max}−V_{thr})\frac{𝒩(\frac{t_{tp}}{2},(\frac{t_{AP}}{2})^{2})−\alpha_{1}}{\beta_{1}},if 0\leqt<\frac{t_{AP}}{2}V_{min}+(V_{max}−V_{min})\frac{sin((t−\frac{t_{AP}}{2})\frac{2\pi}{t_{AP}}+\frac{\pi}{2})+\gamma_{1}}{\delta_{1}},if \frac{t_{AP}}{2}\leqt\leqt_{AP}
+$$
+
+where $V_{m⁢a⁢x}$ is the peak voltage set to $20⁢m⁢V$(Rohrbough and Broadie, 2002). $V_{m⁢i⁢n}$ is the action potential undershoot voltage, set to $-72⁢m⁢V$(Nagel et al., 2015). $t_{A⁢P}$ is the duration of the action potential set to 2 ms (Gouwens and Wilson, 2009; Gaudry et al., 2013). $𝒩⁢(\mu,\sigma^{2})$ is a Gaussian function with a mean µ and standard deviation σ. $\alpha_{1}$, $\beta_{1}$, $\gamma_{1}$, and $\delta_{1}$ are normalisation parameters for scaling the range of the Gaussian and the sinusoidal to 0 to 1.
+
+The firing of an action potential also adds a postsynaptic current template to the current time series. The postsynaptic current template is defined as
+
+$$
+I(t)={I_{PSC}\frac{sin(\frac{t\pi}{2}−\frac{\pi}{2})+\alpha_{2}}{\beta_{2}},if  0 \leqt<2msI_{PSC}\frac{2^{−(t−2)/t_{PSC}}+\gamma_{2}}{\delta_{2}},if  2ms\leq t \leq 2ms + 7t_{PSC}
+$$
+
+where $I_{P⁢S⁢C}=5⁢n⁢A$ (Gaudry et al., 2013). Excitatory and inhibitory postsynaptic currents are assumed to have the same magnitude but opposite signs. $t_{P⁢S⁢C}=5⁢m⁢s$ is the half-life of the postsynaptic current decay (Gaudry et al., 2013). $\alpha_{2}$, $\beta_{2}$, $\gamma_{2}$, and $\delta_{2}$ are normalisation constants so that the range of the sinusoidal and exponential terms is 0 to 1. The postsynaptic current traces have duration $2⁢m⁢s+7⁢t_{P⁢S⁢C}$, that is $2⁢m⁢s$ of rise time plus $7⁢t_{P⁢S⁢C}$ of decay time. The simulation was implemented using Euler’s method with a simulation time step of $10^{-4}⁢s$. Our simulation code is derived from the source code published by Kakaria and de Bivort, 2017. All simulations were performed using MATLAB (The MathWorks Inc, Natick, MA) and all source codes are available at https://github.com/johnpi/eLife_Pisokas_Heinze_Webb_2019 (copy archived at https://github.com/elifesciences-publications/eLife_Pisokas_Heinze_Webb_2019; Pisokas, 2020). For data analysis we used MATLAB, python, and R scripts.
+
+### Neuronal projections and connectivity
 
 We modelled and compared the hypothetical ring attractor circuits of the fruit fly D. melanogaster and the desert locust S. gregaria. The connectivity of the circuits has been inferred mostly from anatomical data derived using light microscopy, with overlapping neuronal terminals assumed to form synapses between them (Wolff and Rubin, 2018; Wolff et al., 2015; Heinze and Homberg, 2007; Heinze and Homberg, 2008; Pfeiffer and Homberg, 2014).
 
@@ -269,7 +525,13 @@ The most salient difference between the two matrices is the connectivity pattern
 
 We modelled each PB glomerulus, as being innervated by one neuron of each class (E-PG, P-EG, P-EN) even though in reality there are several instances of each one. This was done in order to simplify the computational demands of the simulations.
 
-The locust inhibition pattern has been modelled as the summation of two Gaussian functions that approximate the synaptic density across the PB glomeruli, as derived from estimates of dendritic density along the PB in dye-filled Delta7 neurons. The standard deviation (σ) of the Gaussian functions was set to the value 0.8 as the nearest approximation to the visually determined synaptic domain width. To calculate the synaptic strength of each synapse we used the expression(5)w⁢(i)=W⁢1σ⁢2⁢π⁢e-12⁢(i-1n⁢2⁢π-μσ)2where W is a scaling factor specifying the maximum synaptic strength across the PB, i is the glomerulus number as shown in Figure 15, n is the number of glomeruli in each hemisphere, μ=π, and σ is the standard deviation parameter specifying the width of the Gaussian function used. σ is the parameter estimated by visual inspection of light microscopy data. W is the parameter selected by the optimisation process.
+The locust inhibition pattern has been modelled as the summation of two Gaussian functions that approximate the synaptic density across the PB glomeruli, as derived from estimates of dendritic density along the PB in dye-filled Delta7 neurons. The standard deviation (σ) of the Gaussian functions was set to the value 0.8 as the nearest approximation to the visually determined synaptic domain width. To calculate the synaptic strength of each synapse we used the expression
+
+$$
+w⁢(i)=W⁢\frac{1}{\sigma⁢\sqrt{2⁢\pi}}⁢e^{-\frac{1}{2}⁢(\frac{\frac{i-1}{n}⁢2⁢\pi-\mu}{\sigma})^{2}}
+$$
+
+where W is a scaling factor specifying the maximum synaptic strength across the PB, i is the glomerulus number as shown in Figure 15, n is the number of glomeruli in each hemisphere, $\mu=\pi$, and σ is the standard deviation parameter specifying the width of the Gaussian function used. σ is the parameter estimated by visual inspection of light microscopy data. W is the parameter selected by the optimisation process.
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/53985/elife-53985-fig15-v2.jpg)
 
@@ -277,7 +539,7 @@ The locust inhibition pattern has been modelled as the summation of two Gaussian
 
 It is worth noting that in all our simulations we use the full connectivity matrices derived from neuronal projection data and not the effective circuits described in the section Results.
 
-## Stimuli
+### Stimuli
 
 Two types of input stimuli were used for the experiments: heading and angular velocity. The heading stimulus was provided as incoming spiking activity directly to the E-PG neurons, corresponding to input from Ring neurons (Young and Armstrong, 2010) (called TL neurons in locusts [Vitzthum et al., 2002]). The position of a visual cue, angle of light polarisation (Heinze and Homberg, 2007) or retinotopic landmark position (Seelig and Jayaraman, 2015) around the animal, was mapped to higher firing rates supplied to E-PG neurons at the corresponding location of the EB. The stimulus followed spatially a von Mises distribution with mean the azimuth of the stimulus and full width at half maximum (FWHM) of approximately 90° (Figure 16). The spatial distribution of the stimulus strength was derived using Equation 6.
 
@@ -285,20 +547,36 @@ Two types of input stimuli were used for the experiments: heading and angular ve
 
 **Figure 16.:** The curve demonstrates the relative intensity of the stimulus supplied to neurons innervating each EB tile. In this illustration the stimulus is centred at tile 5.
 
-(6)f(μ,x)=eκcos(a(x)−μ)2πI0(κ),I0(κ)=∑i=0∞κ2i22i(i!)2,a(x)=π4(x−1)where μ∈[0,2⁢π] is the stimulus centre location parameter, x={1,2,…,8} is the EB tile numerical index and κ=34⁢π is the shape parameter. The values returned by f⁢(μ,x) are converted to corresponding spiking activity levels. To do this, we sampled from a Poisson distribution. The minimum value is mapped to the background activity level and the maximum to the peak level of activity. We assumed that the background activity follows a Poisson distribution with a mean background action potential rate of 5 impulses/s. The peak impulse firing rate of the stimulus signal was equal to the peak spiking rate of the activity ‘bump’ across the E-PG neuron population under steady state conditions, in order to obtain comparable measurements across species.
+$$
+f(\mu,x)=\frac{e^{κcos(a(x)−\mu)}}{2\piI_{0}(κ)},I_{0}(κ)=\sumi=0∞\frac{κ^{2i}}{2^{2i}(i!)^{2}},a(x)=\frac{\pi}{4}(x−1)
+$$
+
+where $\mu\in[0,2⁢\pi]$ is the stimulus centre location parameter, $x={1,2,…,8}$ is the EB tile numerical index and $κ=\frac{3}{4}⁢\pi$ is the shape parameter. The values returned by $f⁢(\mu,x)$ are converted to corresponding spiking activity levels. To do this, we sampled from a Poisson distribution. The minimum value is mapped to the background activity level and the maximum to the peak level of activity. We assumed that the background activity follows a Poisson distribution with a mean background action potential rate of 5 impulses/s. The peak impulse firing rate of the stimulus signal was equal to the peak spiking rate of the activity ‘bump’ across the E-PG neuron population under steady state conditions, in order to obtain comparable measurements across species.
 
 The second type of stimulus, angular velocity stimulus, consisted of spikes which were directly supplied to all P-EN neurons in one hemisphere of the PB, corresponding to the direction of rotation (clockwise versus counter-clockwise). The peak impulse rate of the injected spike trains was equal to the peak rate of the steady state activity ‘bump’ across the P-EN neurons. This was done in order to allow for direct comparisons between species.
 
-## Free parameters
+### Free parameters
 
-The free parameters of our models are the synaptic efficacies. The efficacies of synapses connecting each class of neurons are assumed to be identical, e.g., all P-EN to E-PG synapses have the same strength. Therefore, we have one free parameter for each synaptic class. Furthermore, we reduced the computational complexity of optimising the synaptic strengths by making the synaptic strength between some classes of neurons identical. The synaptic strengths of E-PG to P-EN and P-EG are identical as are the synaptic strengths of Delta7 to P-EN and P-EG. This is the minimum set of synaptic strengths that results in working ring attractors. We assumed that all synapses are excitatory apart from the synapses with Delta7 neurons on the presynaptic side, which were assumed to be inhibitory, as Kakaria and de Bivort, 2017 proposed. The synaptic strength was modelled as the number of IP⁢S⁢C unit equivalents flowing to the postsynaptic neuron per action potential.
+The free parameters of our models are the synaptic efficacies. The efficacies of synapses connecting each class of neurons are assumed to be identical, e.g., all P-EN to E-PG synapses have the same strength. Therefore, we have one free parameter for each synaptic class. Furthermore, we reduced the computational complexity of optimising the synaptic strengths by making the synaptic strength between some classes of neurons identical. The synaptic strengths of E-PG to P-EN and P-EG are identical as are the synaptic strengths of Delta7 to P-EN and P-EG. This is the minimum set of synaptic strengths that results in working ring attractors. We assumed that all synapses are excitatory apart from the synapses with Delta7 neurons on the presynaptic side, which were assumed to be inhibitory, as Kakaria and de Bivort, 2017 proposed. The synaptic strength was modelled as the number of $I_{P⁢S⁢C}$ unit equivalents flowing to the postsynaptic neuron per action potential.
 
 Although our models are constrained by anatomical evidence, existing biological studies do not specify synaptic weights or connectivity. Based on the goal that each of the circuits should yield a functional ring attractor, an optimisation algorithm was used to search for synaptic strength combinations that resulted in working ring attractors. Both simulated annealing and particle swarm optimisation algorithms were used (Matlab Optimization Toolbox ‘simulannealbnd’ and ‘particleswarm’ functions); the first one converges quicker while the second one covers the search space more thoroughly. We constrained the acceptable solutions to those that produced an activity ‘bump’ with full width at half maximum (FWHM) of approximately 90° since this is the width that has been observed in fruit flies (Kim et al., 2017).
 
-The objective function used to optimise the synaptic strengths wi was:(7)argminw4(ϵH1(w)+ϵH2(w))+ϵW1(w)+ϵW2(w)+Np0(w)s.tϵH1(w)=|Hd(t1)−Ha(w,t1)|360∘ϵH2(w)=|Hd(t2)−Ha(w,t2)|360∘ϵW1(w)=|90∘−Wa(w,t1)|360∘ϵW2(w)=|90∘−Wa(w,t2)|360∘p0(w)=1N∑i=1N(e−|wi|)20≤w1≤1000≤w2≤1000≤w3≤100−100≤w4≤0−100≤w5≤0where ϵH⁢1, ϵH⁢2, ϵW⁢1 and ϵW⁢2 are the error factors measured as deviations from the desired values. p0 is used to penalise synaptic strengths being too close to 0. N is the number of synaptic strengths wi. Hd(t) is the desired activity ‘bump’ heading at time t, while Ha⁢(𝐰,t) is the actual measured activity ‘bump’ heading at time t given a model with synaptic strengths w. Wa(w,t) is the actual measured width of the activity ‘bump’ at time t (measured as the full width at half maximum). The constraints in Equation 7 specify that the synapses with Delta7 neurons at their presynaptic side are inhibitory (negative) and all others are excitatory (positive). Synaptic weights were initialised with values −0.01 or 0.01 depending on whether the negative only or positive only constraint was applied. During optimisation the spiking models were used to run the simulations and search the space of synaptic strengths. The synaptic strength sets that resulted from multiple runs were manually tested to verify the results. The objective function was used to optimise the synaptic strengths separately for each of the models: the fruit fly, the locust, and the hybrid-species model.
+The objective function used to optimise the synaptic strengths $w_{i}$ was:
 
-## Sensitivity analysis and parameter noise
+$$
+argminw4(ϵ_{H1}(w)+ϵ_{H2}(w))+ϵ_{W1}(w)+ϵ_{W2}(w)+Np_{0}(w)s.tϵ_{H1}(w)=\frac{|H_{d}(t_{1})−H_{a}(w,t_{1})|}{360^{∘}}ϵ_{H2}(w)=\frac{|H_{d}(t_{2})−H_{a}(w,t_{2})|}{360^{∘}}ϵ_{W1}(w)=\frac{|90^{∘}−W_{a}(w,t_{1})|}{360^{∘}}ϵ_{W2}(w)=\frac{|90^{∘}−W_{a}(w,t_{2})|}{360^{∘}}p_{0}(w)=\frac{1}{N}\sumi=1N(e^{−|w_{i}|})^{2}0\leqw_{1}\leq1000\leqw_{2}\leq1000\leqw_{3}\leq100−100\leqw_{4}\leq0−100\leqw_{5}\leq0
+$$
 
-For the sensitivity analysis, white Gaussian noise was added to the membrane parameters of neurons (conductance and capacitance) as well as to the synaptic efficacies, using the formula(8)vi=vnominal+x100vnominalϵ,ϵ∼𝒩(μ,σ2)where vi is the resulting noisy value of the parameter with i={1,2,…,M} and M being the number of parameters. vn⁢o⁢m⁢i⁢n⁢a⁢l is the nominal value of the parameter, x∈[0,100] is the percentage of noise to be added to the nominal value, ε is a random variable sampled from the Gaussian distribution with μ=0 and σ2=1. When noise was added to the conductance and capacitance of neurons the resulting values were clipped to a minimum of 0 because conductance and capacitance values cannot be negative. For measuring the tolerance to inter-hemispheric synaptic asymmetry we altered the P-EN to E-PG synapses in one hemisphere by different amounts in the range −100% to 100%.
+where $ϵ_{H⁢1}$, $ϵ_{H⁢2}$, $ϵ_{W⁢1}$ and $ϵ_{W⁢2}$ are the error factors measured as deviations from the desired values. $p_{0}$ is used to penalise synaptic strengths being too close to 0. N is the number of synaptic strengths $w_{i}$. $H_{d}(t)$ is the desired activity ‘bump’ heading at time t, while $H_{a}⁢(𝐰,t)$ is the actual measured activity ‘bump’ heading at time t given a model with synaptic strengths $w$. $W_{a}(w,t)$ is the actual measured width of the activity ‘bump’ at time t (measured as the full width at half maximum). The constraints in Equation 7 specify that the synapses with Delta7 neurons at their presynaptic side are inhibitory (negative) and all others are excitatory (positive). Synaptic weights were initialised with values −0.01 or 0.01 depending on whether the negative only or positive only constraint was applied. During optimisation the spiking models were used to run the simulations and search the space of synaptic strengths. The synaptic strength sets that resulted from multiple runs were manually tested to verify the results. The objective function was used to optimise the synaptic strengths separately for each of the models: the fruit fly, the locust, and the hybrid-species model.
+
+### Sensitivity analysis and parameter noise
+
+For the sensitivity analysis, white Gaussian noise was added to the membrane parameters of neurons (conductance and capacitance) as well as to the synaptic efficacies, using the formula
+
+$$
+v_{i}=v_{nominal}+\frac{x}{100}v_{nominal}ϵ,ϵ∼𝒩(\mu,\sigma^{2})
+$$
+
+where $v_{i}$ is the resulting noisy value of the parameter with $i={1,2,…,M}$ and $M$ being the number of parameters. $v_{n⁢o⁢m⁢i⁢n⁢a⁢l}$ is the nominal value of the parameter, $x\in[0,100]$ is the percentage of noise to be added to the nominal value, ε is a random variable sampled from the Gaussian distribution with $\mu=0$ and $\sigma^{2}=1$. When noise was added to the conductance and capacitance of neurons the resulting values were clipped to a minimum of 0 because conductance and capacitance values cannot be negative. For measuring the tolerance to inter-hemispheric synaptic asymmetry we altered the P-EN to E-PG synapses in one hemisphere by different amounts in the range −100% to 100%.
 
 The number of successful trials was counted in each condition. The criterion for a successful trial was that the activity ‘bump’ transitioned from an initial stimulus-driven heading to a second stimulus-driven heading with an error of less that ±45° and subsequently the second heading was maintained for at least 3 s. The criterion used for judging jump versus gradual transition of the heading signal was that for the transition to be considered a jump the intervening neurons between the origin and end location must not become maximally active during the transition.

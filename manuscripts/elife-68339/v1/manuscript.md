@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Mobile genetic elements, elements that can move horizontally between genomes, have profound effects on their host's fitness. The p hage-inducible chromosomal island- l ike e lement (PLE) is a mobile element that integrates into the chromosome of Vibrio cholerae and parasitizes the bacteriophage ICP1 to move between cells. This parasitism by PLE is such that it abolishes the production of ICP1 progeny and provides a defensive boon to the host cell population. In response to the severe parasitism imposed by PLE, ICP1 has acquired an adaptive CRISPR-Cas system that targets the PLE genome during infection. However, ICP1 isolates that naturally lack CRISPR-Cas are still able to overcome certain PLE variants, and the mechanism of this immunity against PLE has thus far remained unknown. Here, we show that ICP1 isolates that lack CRISPR-Cas encode an endonuclease in the same locus, and that the endonuclease provides ICP1 with immunity to a subset of PLEs. Further analysis shows that this endonuclease is of chimeric origin, incorporating a DNA-binding domain that is highly similar to some PLE replication origin-binding proteins. This similarity allows the endonuclease to bind and cleave PLE origins of replication. The endonuclease appears to exert considerable selective pressure on PLEs and may drive PLE replication module swapping and origin restructuring as mechanisms of escape. This work demonstrates that new genome defense systems can arise through domain shuffling and provides a greater understanding of the evolutionary forces driving genome modularity and temporal succession in mobile elements.
+Mobile genetic elements, elements that can move horizontally between genomes, have profound effects on their host's fitness. The phage-inducible chromosomal island-like element (PLE) is a mobile element that integrates into the chromosome of Vibrio cholerae and parasitizes the bacteriophage ICP1 to move between cells. This parasitism by PLE is such that it abolishes the production of ICP1 progeny and provides a defensive boon to the host cell population. In response to the severe parasitism imposed by PLE, ICP1 has acquired an adaptive CRISPR-Cas system that targets the PLE genome during infection. However, ICP1 isolates that naturally lack CRISPR-Cas are still able to overcome certain PLE variants, and the mechanism of this immunity against PLE has thus far remained unknown. Here, we show that ICP1 isolates that lack CRISPR-Cas encode an endonuclease in the same locus, and that the endonuclease provides ICP1 with immunity to a subset of PLEs. Further analysis shows that this endonuclease is of chimeric origin, incorporating a DNA-binding domain that is highly similar to some PLE replication origin-binding proteins. This similarity allows the endonuclease to bind and cleave PLE origins of replication. The endonuclease appears to exert considerable selective pressure on PLEs and may drive PLE replication module swapping and origin restructuring as mechanisms of escape. This work demonstrates that new genome defense systems can arise through domain shuffling and provides a greater understanding of the evolutionary forces driving genome modularity and temporal succession in mobile elements.
 
 ## Introduction
 
@@ -27,13 +27,21 @@ The flow of MGEs and their defense systems between viruses and hosts, as well as
 
 True to the ‘guns for hire’ model, ICP1 has co-opted a genome defense system to protect itself from PLE. Many ICP1 isolates encode a CRISPR-Cas system that can destroy PLE within the infected cell and restore ICP1 reproduction (Seed et al., 2013; Figure 1A). CRISPR-Cas systems are typically adaptive immune systems that provide immunological memory against specific nucleic acid sequences (Barrangou et al., 2007; Marraffini, 2015). The memory function of CRISPR-Cas is achieved through the integration of ‘spacers,’ short DNA sequences derived from viruses or MGEs, that are integrated into an array of spacer repeats. The spacer can then be transcribed to serve as an RNA guide that directs nucleolytic machinery against complementary sequence. In this way, acquisition of a small portion of foreign DNA provides the specificity required for defense.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig1-v1.jpg)
+
+**Figure 1.:** (A) A model of ICP1 interference of phage-inducible chromosomal island-like elements (PLEs) via CRISPR. When ICP1 infects a PLE(+) V. cholerae cell, ICP1 is able to overcome PLE restriction and reproduce if it possesses a CRISPR-Cas system with complementary spacers to the PLE. Cas and CR refer to the CRISPR associated genes and CRISPR array respectively. (B) Schematics of the region between gp87 and gp91 as it appears in ICP12001 (top) and ICP12006 (bottom). Genes represented by black arrows are conserved in all ICP1 isolates, while genes represented with gray arrows covary with gp88 or CRISPR-Cas. (C) An alignment between the T5orf172 domain of Gp88 and the GIY-YIG domains of several structurally resolved endonucleases. Secondary structure for Gp88 was predicted using HHPRED (Zimmermann et al., 2018). Alpha helices are shown in yellow shading, and beta strands are shown in blue shading. Key residues of the GIY-YIG motif are bolded. We included an atypical GIY-YIG endonuclease domain from a chloroplast-encoded glutoredoxin atGRXs16 to demonstrate the potential for alternative residues at core motif positions. A conserved glutamate that was previously found to be required for catalysis in I-TevI is denoted by an asterisk (and corresponds to the E180A mutation in Gp88 in subsequent experiments).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Genetic organization of the region between gp87 and gp91 in different ICP1 isolates (ICP12001[top], ICP12006[bottom], ICP12005[middle]). Other than ICP12005, all sequenced ICP1 isolates (Angermeyer et al., 2018) share their organization with ICP12001 or ICP12006.
+
 Reflecting the primary role of ICP1’s CRISPR-Cas as an anti-PLE system, almost all spacers associated with the system are PLE derived (Seed et al., 2013; McKitterick et al., 2019b). Like cellular CRISPR-Cas systems, the ICP1 system can acquire new immunological memory, reflecting that PLE is not a single static genome but that a number of PLE variants exist. To date, five PLE variants, numbered 1–5, have been described, occurring in about ~15% of sequenced epidemic V. cholerae genomes. There is a pattern of temporal succession, where one PLE will dominate in sequenced genomes for a time before being supplanted by another PLE (O'Hara et al., 2017), but the reemergence of old PLE sequence in new PLE variants suggests that unsampled reservoirs exist in nature. Like PLEs, there is also diversity among ICP1 genomes. Not all ICP1 isolates encode CRISPR-Cas, but this does not mean that they are defenseless against PLEs. Previous work found that an ICP1 variant that naturally lacked CRISPR-Cas was able to reproduce on the two oldest PLE variants, PLE5 and PLE4, as well as the most recent variant PLE1 (O'Hara et al., 2017). Much like PLE variants, there appears to be some temporal succession in the presence or absence of ICP1’s CRISPR-Cas system. A minority of ICP1 isolates collected between 2001 and 2011 possessed CRISPR-Cas systems (Angermeyer et al., 2018), while CRISPR-Cas encoding ICP1 predominated between 2011 and 2017 (McKitterick et al., 2019b). As PLE and ICP1 have coevolved specific mechanisms of parasitism and counter-defenses, it is worth exploring if the temporal succession of PLE and ICP1 variants could be in response to selective pressures that the two entities exert on each other.
 
 Intrigued by CRISPR-independent interference of PLE and hoping to gain insight into patterns of ICP1 and PLE variant succession, we set out to identify the mechanism of PLE interference in ICP1 isolates that lack CRISPR-Cas. Surprisingly, we found that all natural ICP1 isolates that do not encode CRISPR-Cas instead encode an endonuclease in the same genomic locus that is necessary for propagation on V. cholerae strains containing PLEs 1, 4, or 5. Lending further support to the ‘guns for hire’ model, we find that this anti-PLE nuclease is of chimeric origin, being partially derived from a PLE-encoded DNA-binding domain while its nucleolytic domain appears to be derived from an ICP1-encoded family of putative HEGs. Harnessing the rich evolutionary interplay of PLE and ICP1, this work shows that domain shuffling between hostile genomes can allow for new forms of antagonism, and that phage-encoded HEGs can be repurposed for antiparasite functions. Additionally, this work reveals key mediators of ICP1-PLE host range that inform observed patterns of PLE temporal succession and modularity, broadening our understanding of subcellular host-parasite coevolution.
 
 ## Results
 
-## A subset of ICP1 isolates deploy a stand-alone nuclease instead of CRISPR-Cas to counter PLE
+### A subset of ICP1 isolates deploy a stand-alone nuclease instead of CRISPR-Cas to counter PLE
 
 We set out to identify which gene(s) determined host range in ICP1 isolates that lack CRISPR-Cas. It has long been recognized that phages are mosaic entities composed of functional gene neighborhoods, and syntenic neighborhoods of divergent sequence may fulfill analogous functions (Brüssow and Hendrix, 2002). Previous work suggests that ICP1 conforms to these general patterns of phage genome structure. Transcriptomics and bioinformatic predictions show that ICP1 genes with related biological functions are organized together in the genome and expressed at the same time, demonstrating the presence of gene neighborhoods (Barth et al., 2020a). Additionally, while the ICP1 genome is highly conserved between isolates and does not display large-scale rearrangements (Angermeyer et al., 2018), there is indication that nonhomologous sequence can serve analogous functions. ICP1 isolates encode one of two alternative SF1B-type helicases thought to be of shared function (McKitterick et al., 2019a), suggesting that ICP1 isolates can use alternative genes to fulfill the same adaptational requirement. We reasoned that such genome organization and mosaicism warranted a ‘guilt by location’ approach to investigating gene function, and that the locus syntenic to CRISPR-Cas in those ICP1 isolates that lack CRISPR might hold clues as to how they overcome PLEs.
 
@@ -43,13 +51,37 @@ Further analysis of gp88 revealed that it encodes a T5orf172 domain (pfam10544) 
 
 To test our hypothesis, we generated ICP12001 mutants with either an in-frame deletion of gp88 or harboring a single amino acid substitution (E180A) predicted to abolish Gp88’s nucleolytic activity (Figure 1C). We also used ICP12006 and a ∆CRISPR derivative to serve as controls for host susceptibility. As expected, the PLE (-) V. cholerae strain was susceptible to all ICP1 variants, and the ICP12006 ∆CRISPR variant was restricted by all PLEs (Figure 2A). CRISPR(+) ICP12006 was able to propagate on all strains except the one containing PLE3 as ICP12006 does not have a matching spacer against PLE3. ICP12001 was able to propagate on PLEs 1, 4, and 5 (Figure 2A), but it was restricted on PLEs 2 and 3. Unlike the wild-type (WT) variant, the ∆gp88 and gp88* mutants were unable to propagate on V. cholerae with PLEs 1, 4, or 5 (Figure 2A), indicating that catalytically active gp88 is necessary for overcoming these PLEs in phages naturally lacking CRISPR-Cas. Unsurprisingly, the gp88 mutants retained sensitivity to restriction by PLEs 2 and 3 (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig2-v1.jpg)
+
+**Figure 2.:** (A) Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). Gp88* possess a single amino acid substitution (E180A) predicted to abolish nuclease activity. Spot assays were performed in biological triplicate, and a single representative image is shown. Replicate spot assays are shown in Figure 2—figure supplement 1 and Figure 2—figure supplement 2. (B) Replication of PLE1 and PLE2 in V. cholerae host strains calculated as the fold change in PLE DNA copy 20 minutes post infection with the ICP1 variant indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). This figure and Figure 2—figure supplement 2 each represent one biological replicate, while a third replicate is divided across Figure 2B, Figure 4B, and Figure 5B. Strain backgrounds appear in the same order that they first appear in the main text. For each biological replicate, spot assays were performed in parallel for the different strains.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). This figure and Figure 2—figure supplement 1 each represent one biological replicate, while a third replicate is divided across Figure 2B, Figure 4B, and Figure 5B. Strain backgrounds appear in the same order that they first appear in the main text. For each biological replicate, spot assays were performed in parallel for the different strains.
+
 As CRISPR targeting was previously observed to diminish PLE replication that occurs during ICP1 infection (McKitterick et al., 2019b), we tested whether the presence of Gp88 could impact PLE replication during infection. We observed that PLE1 is unable to replicate in the presence of Gp88 encoding ICP1, and replication is restored during infection with the Gp88 knockout or catalytically inactive mutant phages (Figure 2B). Consistent with endonucleolytic activity, the PLE1 copy decreases following infection by Gp88 encoding phage. This is notable given that previous work has shown that multiple PLE matched spacers are required for CRISPR-Cas to completely abolish PLE replication during infection (McKitterick et al., 2019b). PLE2 replication is unaffected by the presence or absence of Gp88, consistent with Gp88 not providing ICP1 with immunity against PLE2 (Figure 2A).
 
-## PLE replicons are modular
+### PLE replicons are modular
 
 Having identified gp88’s role in preventing PLE restriction of ICP1, we next sought to determine how Gp88 was recognizing PLE, and why it did not confer protection against PLEs 2 and 3. We reasoned that PLEs 2 and 3 most likely lacked sequence targeted by Gp88 or encoded an inhibitor of Gp88’s activity. To explore these possibilities, we compared the PLE genomes looking for nucleotide sequence that was uniquely present or uniquely absent in PLEs 2 and 3.
 
 Strikingly, only two stretches of sequence met these criteria, and both had been previously implicated in PLE replication (Barth et al., 2020b). The repA gene encoding the replication initiation factor, and the intergenic region containing the PLE origin of replication (ori) to which RepA binds covaried, with the PLE1, 4, and 5 sequences clustering together as one group, and the PLE2 and 3 sequences clustering as another (Figure 3A). More specifically, it was the DNA-binding RepA_N domain of RepA that covaried with the origin, while the C-terminal domain, hypothesized to facilitate replisome recruitment (Barth et al., 2020b), was conserved across all PLEs (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig3-v1.jpg)
+
+**Figure 3.:** (A) Genomic organization of PLE1 with insets corresponding to the PLE noncoding region and repA. Previously characterized PLE genes are labeled. Insets are Mauve alignments showing sequence conservation of the denoted loci across the different PLEs. Shared color denotes sequence conservation, with the height of the histogram representing nucleotide sequence identity. The susceptibility of each PLE(+) V. cholerae host to plaquing by phage encoding Gp88 is indicated. (B) Replication of hybrid PLEs in V. cholerae calculated as the fold change in PLE DNA copy 20 minutes post infection with ICP12006 ∆CRISPR. Strains with PLE1 ∆repA (possessing the native oriPLE1 or ∆ori::oriPLE2) or PLE2 ∆repA (possessing the native oriPLE2 or ∆ori::oriPLE1) were complemented with a vector expressing the repA gene from PLE1 or PLE2. The backbone, identity of the ori, and RepA variant are indicated as being from PLE1 or PLE2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The PLE1 sequence and identical nucleotides in the other PLE variants are shaded blue. Nucleotides that differ from PLE1 but co-occur in at least two PLE variants are shaded yellow. For positions where PLE1 is unique and both PLE2 and PLE3, and PLE4 and PLE5 have separate consensuses, the PLE2 and PLE3 consensus is bolded and unshaded, and the PLE4 and PLE5 consensus is underlined and unshaded. Nucleotides with no aligned matches are unshaded normal text.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Replication of PLE2 in V. cholerae calculated as the fold change in PLE DNA copy 20 minutes post infection with ICP12006 ∆CRISPR.
 
 Previously, we found that during ICP1 infection, ectopic expression of RepA was sufficient to drive replication of a synthetic ‘midiPLE’ construct. The midiPLE consists of the PLE attachment sites, the PLE integrase, and the noncoding region that bears the origin of replication (Barth et al., 2020b). Additionally, midiPLE replication did not occur without RepA, and the PLE integrase was shown to be dispensable for PLE replication (Barth et al., 2020b). These data suggest that the minimal components of the PLE replicon are the replication origin and RepA, the two components that covaried across PLEs. Alignment of the conserved 3′ ends of PLE repA genes suggests that RepA specificity swapping has occurred multiple times (Figure 3A, Figure 3—figure supplement 1). Despite the PLE1 RepA_N domain clustering with the PLE4 and PLE5 variants, the PLE1 C-terminal sequence is more similar to PLE2 (98.88% identical over the last 178 bp) than PLE5 (93.25% identical over the last 178 bp). PLE5 and PLE3 are 99.44% identical over the same region, while the PLE4 C-terminal region is the most diverged from other PLEs (Figure 3—figure supplement 1). This cross-clustering of repA ends would only be expected to occur after multiple gene recombination events, suggesting that PLE replisome module swapping occurred at least twice, and may be an important part of PLE evolution.
 
@@ -57,23 +89,67 @@ The putative modularity of the PLE origins and RepA_N domains covaried with susc
 
 Having confirmed that the PLE2 variant replicon components are necessary for replication, we then sought to demonstrate specificity of the RepA variants to their cognate origin of replication. We generated chimeric ‘origin-swapped’ ∆repA PLEs for PLEs 1 and 2 (Figure 3B), and ectopically expressed each RepA variant in the different PLE backgrounds during phage infection. As expected, PLE replication only occurred when cognate origins and repA alleles co-occurred, revealing that the two components of the PLE replicon function together as a module, irrespective of which PLE backbone they are encoded in.
 
-## Gp88 is an origin-directed nuclease
+### Gp88 is an origin-directed nuclease
 
 Having established the specificity between RepA variants and their cognate origins of replication and recognizing that sensitivity to Gp88 covaried with replicon type, we took a closer look at Gp88 to decipher how it might interface with the PLE replication module. Remarkably, Gp88’s own N-terminal domain is 42% identical and 61% sequence similar across 93% of PLE1’s RepA_N domain (Figure 4A). This was surprising as Gp88’s T5orf172 domain is similar to those of several putative HEGs within the ICP1 genome (Figure 4—figure supplement 1). The high similarity of Gp88’s N-terminal portion to some PLE-encoded RepA alleles and the C-terminal portions similarity to putative HEGs suggest that gp88 may have arisen as a chimeric hybrid of PLE and ICP1 coding sequences. Additionally, the similarity of Gp88’s N-terminal region to PLEs 1, 4, and 5 RepA DNA-binding domains suggested that Gp88 might bind to the replication origins of PLEs 1, 4, and 5 and cleave at or proximal to that site.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sequence alignment of the N-terminal portion of Gp88 with the RepA_N domain from PLE1 RepA. Identical residues are denoted with a ‘*.’ Strong residue similarity is denoted by ‘:’, and weak similarity is denoted by ‘•.’ (B, C) Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). Spot assays were performed in parallel with those in Figure 2, and images labeled with the same PLE background are the same image. Spot assays were performed in biological triplicate, and a single representative image is shown. Biological replicates are shown in Figure 2—figure supplement 1. Gp88* possess a single amino acid substitution (E180A) predicted to abolish nuclease activity. (B) shows phage susceptibility of V. cholerae with PLE1, PLE4, and PLE5 ∆ori derivatives as compared to a strain without PLE. (C) shows phage susceptibility for V. cholerae with PLE2 ∆ori and PLE2 ∆ori::oriPLE1. (D) Nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from the PLE variant indicated (numbers) treated with (+) and without (–) 500 nM of purified Gp88. Nuclease assays were performed in triplicate, replicates are presented in Figure 4—figure supplement 3. (E) Nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from the PLE variant indicated (numbers) treated with (+) and without (–) 500 nM of purified Gp88*. Nuclease assays were performed in triplicate, replicates are presented in Figure 4—figure supplement 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A multiple sequence alignment between the C-terminal portion of Gp88 and several homologous sequences found in putative homing endonucleases in the ICP1 genome. Identical residues are denoted with a ‘*.’ Strong residue similarity is denoted by ‘:,’ and weak similarity is denoted by ‘•.’ (B) A phylogenetic tree constructed from the multiple sequence alignment in (A).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Protein preparations were separated by SDS-PAGE and visualized by Coomassie staining. The marker (M) is indicated; the predicted molecular weight of untagged Gp88 is 26 kDa. (A) Gel showing wild-type Gp88 protein used for all cleavage assays except for those depicted in Figure 4—figure supplement 4 and Figure 6. (B) Gel showing wild-type Gp88 protein used for cleavage assays depicted in Figure 4—figure supplement 4 and Figure 6. (C) Gel showing Gp88* protein used for all in vitro assays that utilized Gp88*. Note that protein preparations (A) and (C) were performed in parallel; the preparation in (B) was completed separately.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Two replicates of a nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from the PLE variant indicated (numbers) treated with (+) and without (–) 500 nM of purified Gp88. A third replicate is depicted in Figure 4D.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Two replicates of a nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from the PLE variant indicated (numbers) treated with (+) and without (–) 500 nM of purified Gp88*. A third replicate is depicted in Figure 4E.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Two replicates of a nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from the PLE1 or PLE4 treated with (+) and without (–) 500 nM of purified Gp88. The PLE4 probe used in this experiment is amplified with a different set of primers compared to the probe used in Figure 4D such that cleavage of the probe at or near the iterons would produce products that could be differentiated on the basis of size.
 
 To evaluate this hypothesis, we next wanted to test whether the PLE origin of replication was a necessary component for Gp88 activity. Previously, it was shown that loss of replication partially attenuated PLE1-mediated restriction of ICP1 but nonreplicating PLE1 mutants were still broadly restrictive to ICP1 ∆CRISPR-Cas (Barth et al., 2020b). We hypothesized that PLE could escape Gp88 targeting through deletion of the PLE origin and thus block propagation of Gp88 encoding phage. We tested this by deleting the entire conserved stretch of sequence that contained the origin of replication in PLEs 1, 4, and 5. In support of our hypothesis, these mutants regained restrictive activity against Gp88 encoding phage (Figure 4B). Conversely, cloning a Gp88 recognized replication origin into PLEs that are insensitive to Gp88 should sensitize them to Gp88 activity. To test this, we infected our ‘ori-swapped’ PLE2 strain (Figure 3B) with Gp88 encoding phage. We included a PLE2 ∆ori strain to control for the possibility that loss of replication would abolish PLE2-mediated restriction of ICP1. The PLE2 ∆ori strain retained the ability to restrict all isolates of ICP12001 (Figure 4C). In contrast, the PLE2 strain bearing the PLE1 origin sequence was no longer restrictive to ICP12001, but still restricted variants that lacked Gp88 activity (Figure 4C), confirming that the presence of the replication origin sequence mediated sensitivity to Gp88.
 
 We wanted to confirm that Gp88-mediated interference manifested through nucleolytic cleavage of PLE. To determine if Gp88 was truly acting as a nuclease, we purified Gp88 (Figure 4—figure supplement 2) and performed in vitro nuclease activity assays. Consistent with the host range of ICP1 encoding Gp88, we found that the purified Gp88 protein cut PCR products amplified from the region containing the origin of replication from PLEs 1, 4, and 5, but did not cut those of PLEs 2 and 3 (Figure 4D), confirming that Gp88 disrupts PLE through nuclease activity. Supporting this interpretation, the E180A Gp88* mutant that was inactive against PLEs 1, 4, and 5 in vivo, and predicted to be catalytically inert, did not cleave PCR products amplified from PLEs 1, 4, and 5 (Figure 4E), further linking the in vivo activity of Gp88 to its capacity to cleave in vitro. Curiously, Gp88 produced only one cleavage product from the PLE4 probe. We reasoned that since the PLE noncoding regions are diverse and the PLE4 origin of replication was located near to the center of the PLE4 probe, Gp88 cleavage of the PLE4 probe might produce two bands of indistinguishable size. To check this, we produced a new PLE4 probe with the origin of replication offset from the middle and found that Gp88 produced two visible bands (Figure 4—figure supplement 5). In light of these results, we renamed Gp88 the origin-directed nuclease or Odn.
 
-## Odn requires iterons to cleave the PLE origin of replication
+### Odn requires iterons to cleave the PLE origin of replication
 
 Our results so far suggested a model where Odn mimics the specificity of the PLE1, 4, and 5 RepA proteins to bind and cut at their cognate origins of replication. Previously, PLE1 RepA was found to bind specifically to a set of iterons, a series of three ~30 bp semi-palindromic repeats in the PLE1 origin of replication (Barth et al., 2020b). If Odn specificity truly mimicked that of RepA, then it should require the iteron sequence for cutting. We tested this in vitro by titrating increasing concentrations of Odn in a nuclease assay with the WT PLE1 origin of replication, as well as the same substrate except with the iterons deleted. In support of our model, we found that Odn does require the iteron sequence for cleavage (Figure 5A). Consistent with iterons being necessary for Odn-mediated in vitro cleavage of the PLE origin, ICP12001 infection was restricted by a PLE1 strain harboring the same iteron deletion (Figure 5B). Together, these results strongly support that Odn has DNA-binding specificity that mimics that of the replication initiation factor of some PLEs.
 
-## PLE mutations lead to escape from Odn
+![Figure 5.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig5-v1.jpg)
+
+**Figure 5.:** (A) Nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from wild-type (WT) PLE1 and the ∆iteron mutant, with purified Odn (31.25–500 nM) titrated in. 500 nM catalytically inactive Odn (Odn*) with a single amino acid substitution (E180A) with the WT PLE1 sequence was also included (far left). Nuclease assays were performed in triplicate and replicates are presented in Figure 5—figure supplement 1. (B) Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). Spot assays were performed in parallel with those in Figures 2 and 4, and images labeled with the same PLE background are the same image. Spot assays were performed in biological triplicate, and a single representative image is shown. Replicate assays are shown in Figure 2—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Nuclease assays showing the integrity of a PCR product amplified from the noncoding region containing the ori from wild-type (WT) PLE1 and the ∆iteron mutant, with purified Odn (31.25–500 nM) titrated in. 500 nM catalytically inactive Odn (Odn*) with a single amino acid substitution (E180A) with the WT PLE1 sequence was also included. This assay was performed in triplicate, and two replicates are shown here. The third replicate is shown in Figure 5A.
+
+### PLE mutations lead to escape from Odn
 
 Odn activity against the origin, as well as the pattern of cross-clustering at the N and C termini of RepA, suggested that Odn may impose substantial evolutionary pressure on PLE replication modules. Since swapping the PLE origin and cognate RepA_N domain could abolish Odn targeting of PLE, it appears likely that Odn selected for the multiple domain shuffling events in PLE RepA inferred by comparison of PLE genomes (Figure 3—figure supplement 1). Because PLE replication is necessary for both PLE mobility and complete restriction of ICP1 (Barth et al., 2020b; McKitterick et al., 2019a), simple deletions of the replication origin would not likely be favored as long-term solutions to evading recognition and subsequent cleavage by Odn.
 
 While the swapping and diversification of certain sequences can be traced through the five PLEs, each PLE variant is remarkably conserved. All members of each variant have been found to be 100% nucleotide identical in previously published data sets (McKitterick et al., 2019b; O'Hara et al., 2017). However, we found a single instance of diversity in PLE1 within a lineage of V. cholerae isolated from Pakistan. This lineage was represented in five sequenced strains (biosample accession numbers SAMN08979118, SAMN08979175, SAMN08979185, SAMN08979188, and SAMN08979253). In these five strains, we discovered variation in a 67 bp stretch covering the iterons that results in several nucleotide changes. Within the first iteron, there is an A to T transversion, and starting at that transversion, the next 42 bp are duplicated and replace the sequence that is normally downstream (Figure 6A). This change maintains the presence of the three iterons, and even reverts a few variant bases to ones in the PLE4 and 5 iterons (Figure 6B). Notably, these changes are the only sequence differences between these PLE variants and all other PLE1 isolates, aside from a 2 bp extension of an 11 bp polyA tract that also occurs in these atypical PLE1 variants.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig6-v1.jpg)
+
+**Figure 6.:** (A) The PLE1Mut iteron region. Iterons are bolded and sub-repeats are denoted with arrows. The underlined sequence is identical to the sequence in red. An asterisk (*) denotes the location of an A to T substitution. (B) An alignment of the iterons from PLE5, PLE4, PLE1, and PLE1Mut. Iterons are in bold with sub-repeats indicated with arrows. Sequence deviating from a consensus is shown in red. Regions with 100% conservation are denoted with an asterisk. (C) Nuclease assay showing the integrity of a PCR product amplified from the noncoding region containing the ori from wild-type (WT) PLE1 or PLE1Mut with purified Odn (31.25–500 nM) titrated in. Nuclease assays were performed in triplicate, and replicates are presented in Figure 6—figure supplement 1. (D) Replication of PLE1 WT and PLE1Mut in V. cholerae calculated as the fold change in PLE DNA copy 20 minutes post infection with the ICP1 variant indicated. (E) Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). Biological replicates of the spot assays are presented in Figure 6—figure supplement 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Nuclease assays showing the integrity of a PCR product amplified from the noncoding region containing the ori from wild-type PLE1 (WT) or PLE1Mut with (+) and without (–) the addition of 500 nM oOdn. Nuclease assays were performed in triplicate. Two replicates are shown here, and the third is depicted in Figure 6C.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68339/elife-68339-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Tenfold dilutions of the phage isolate or mutant derivative indicated spotted on V. cholerae with the PLE indicated (bacterial lawns in gray, zones of killing are shown in black). A representative replicate is also shown in Figure 6E.
 
 We sought to test if this natural example of PLE1 iteron diversity had any effect on susceptibility to Odn. We generated a DNA probe covering this variant region (denoted PLE1Mut) and tested its sensitivity to Odn in comparison to the WT PLE1 ori sequence. The PLE1Mut sequence was notably less susceptible to cleavage by Odn than the WT allele, but some cutting of the PLE1Mut probe at the highest concentration of Odn was apparent (Figure 6C). This raised the question of whether this PLE1 variant could resist attack by Odn in vivo. To investigate this possibility, we cloned the PLE1Mut origin of replication into our PLE1 strain and challenged this mutant with WT, ∆odn and odn* ICP12001. The PLE1Mut origin of replication was able to drive replication to levels comparable to that of the WT origin, and robust replication was maintained even in the presence of Odn (Figure 6D). In agreement with our replication data, we also found that our PLE1Mut strain restricted production of WT ICP12001 (Figure 6E). These data demonstrate that PLE can escape Odn activity through subtle restructuring of the iterons, in addition to more extensive replication module exchange (Figure 3A), and suggest that ICP1 counter-defenses like Odn may select for diversification of the PLE replication machinery.
 
@@ -95,32 +171,336 @@ It is striking that two examples of horizontal transfer between ICP1 and PLE rel
 
 ## Materials and methods
 
-## Strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Vibrio cholerae)</td>
+      <td>RepAPLE1(PLE1 ORF11)</td>
+      <td>Barth et al., 2020b</td>
+      <td>WP_002040284.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Vibrio cholerae)</td>
+      <td>RepAPLE2(PLE2 ORF14)</td>
+      <td>This paper</td>
+      <td>AGG36643.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bacteriophage ICP1)</td>
+      <td>Odn (ICP1_2001_Dha_0 gp88)</td>
+      <td>This paper</td>
+      <td>YP_004251029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bacteriophage ICP1)</td>
+      <td>Odn* (ICP1_2001_Dha_0 gp88E180A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The E180A mutation is predicted to abolish catalytic activity</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ptac-repAPLE1(plasmid)</td>
+      <td>Barth et al., 2020b</td>
+      <td>pZKB129</td>
+      <td>Inducible RepA from PLE1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ptac-repAPLE2(plasmid)</td>
+      <td>This paper</td>
+      <td>pKS2159</td>
+      <td>Inducible RepA from PLE2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pE-SUMO-Odn (plasmid)</td>
+      <td>This paper</td>
+      <td>pKS2187</td>
+      <td>Vector to express 6xHisSumo-fusion protein, fused to N-terminus of Odn (Gp88)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pE-SUMO-Odn* (plasmid)</td>
+      <td>This paper</td>
+      <td>pKS2189</td>
+      <td>Vector to express 6xHisSumo-fusion protein, fused to N-terminus of Odn* (Gp88E180A)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE V. cholerae (E7946)</td>
+      <td>Levine et al., 1982</td>
+      <td>KDS6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1 V. cholerae (PLE1 E7946)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>KDS36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 V. cholerae (PLE2 E7946)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>KDS37</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE3 V. cholerae (PLE3 E7946)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>KDS38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE4 V. cholerae (PLE4 E7946)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>KDS39</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE5 V. cholerae (PLE5 E7946)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>KDS40</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1 ∆ori V. cholerae (PLE1 E7946)</td>
+      <td>This paper</td>
+      <td>KDS297</td>
+      <td>Used for all spot assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 ∆ori V. cholerae (PLE2 E7946)</td>
+      <td>This paper</td>
+      <td>KDS298</td>
+      <td>Figure 3—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 ∆repA V. cholerae (PLE2 E7946)</td>
+      <td>This paper</td>
+      <td>KDS299</td>
+      <td>Figure 3—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1 ∆repA ∆ori::oriPLE2; Ptac-repAPLE1 V. cholerae E7946</td>
+      <td>This paper</td>
+      <td>KDS300</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1 ∆repA ∆ori::oriPLE2; Ptac-repAPLE2 V. cholerae E7946</td>
+      <td>This paper</td>
+      <td>KDS301</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 ∆repA ∆ori::oriPLE1; Ptac-repAPLE1 V. cholerae E7946</td>
+      <td>This paper</td>
+      <td>KDS302</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 ∆repA ∆ori::oriPLE1; Ptac-repAPLE2 V. cholerae E7946</td>
+      <td>This paper</td>
+      <td>KDS303</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE4 ∆ori V. cholerae (PLE4 E7946)</td>
+      <td>This paper</td>
+      <td>KDS304</td>
+      <td>Used for all spot assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE5 ∆ori V. cholerae (PLE5 E7946)</td>
+      <td>This paper</td>
+      <td>KDS305</td>
+      <td>Used for all spot assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1 ∆iterons V. cholerae (PLE1 E7946)</td>
+      <td>Barth et al., 2020b</td>
+      <td>KDS263</td>
+      <td>Used for all spot assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE2 ∆ori::ori PLE1V. cholerae (PLE2 E7946)</td>
+      <td>This paper</td>
+      <td>KDS306</td>
+      <td>Used for all spot assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Vibrio cholerae)</td>
+      <td>PLE1∆ori::oriMut∆lacZ::KanR V. cholerae E7946 (referred to as PLE1Mut)</td>
+      <td>This paper</td>
+      <td>KDS319</td>
+      <td>Ori engineered to match what is observed in PLE1(+) strains from Pakistan: biosample accession numbers SAMN08979118, SAMN08979175, SAMN08979185, SAMN08979188, and SAMN08979253</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>pE-SUMO-Odn E. coli BL21</td>
+      <td>This paper</td>
+      <td>KDS307</td>
+      <td>Expression strain for Gp88/Odn</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>pE-SUMO-Odn* E. coli BL21</td>
+      <td>This paper</td>
+      <td>KDS308</td>
+      <td>Expression strain for Gp88*/Odn*</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteriophage ICP1)</td>
+      <td>2006 WT (ICP1_2006_Dha_E)</td>
+      <td>O'Hara et al., 2017</td>
+      <td>MH310934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteriophage ICP1)</td>
+      <td>2006 ∆CR; ∆Cas2_3 (ICP1_2006_Dha_E)</td>
+      <td>McKitterick and Seed, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteriophage ICP1)</td>
+      <td>2001 WT (ICP1_2001_Dha_0)</td>
+      <td>Seed et al., 2011</td>
+      <td>HQ641347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteriophage ICP1)</td>
+      <td>2001 ∆odn (ICP1_2001_Dha_0)</td>
+      <td>This paper</td>
+      <td>KSϕ93</td>
+      <td>odn is gp88</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacteriophage ICP1)</td>
+      <td>2001 odn* (ICP1_2001_Dha_0)</td>
+      <td>This paper</td>
+      <td>KSϕ134</td>
+      <td>odn* isgp88E180A</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-AGGGTTTGAGTGCGATTACG-3'</td>
+      <td>O'Hara et al., 2017</td>
+      <td>zac14</td>
+      <td>qPCR primer targeting a conserved portion of the PLE noncoding region</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-TGAGGTTTTACCACCTTTTGC-3'</td>
+      <td>O'Hara et al., 2017</td>
+      <td>zac15</td>
+      <td>qPCR primer targeting a conserved portion of the PLE noncoding region</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-GTCATTTAACGCATCTTATCACC-3'</td>
+      <td>This paper</td>
+      <td>KS459</td>
+      <td>F-primer used to amplify noncoding region probes for PLE1 and PLE5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-GGCTTAGCAACTGTCTACGG-3'</td>
+      <td>This paper</td>
+      <td>zac267</td>
+      <td>F-primer used to amplify noncoding region probes for PLE2, PLE3, and PLE4</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-GTTACGTCTGATTGCTGACG-3'</td>
+      <td>This paper</td>
+      <td>KS321</td>
+      <td>R-primer used to amplify noncoding region probes for PLE1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-CCGCTTATATCAATTTCACTAATATCT-3'</td>
+      <td>This paper</td>
+      <td>zac269</td>
+      <td>R-primer used to amplify noncoding region probes for PLE2 and PLE3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5'-GGACGGCTAAACCATTCTCG-3'</td>
+      <td>This paper</td>
+      <td>KS323</td>
+      <td>R-primer used to amplify noncoding region probes for PLE4 and PLE5</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CATAAGGTTGGCTCCTCAATG-3’</td>
+      <td>This paper</td>
+      <td>KS458</td>
+      <td>R-primer used to amplify noncoding region probe for PLE4 in Figure 4—figure supplement 5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and culture conditions
 
 V. cholerae strains used in this study are derived from E7946. Bacteria were routinely grown on LB agar plates and in LB broth with aeration at 37°C. Antibiotics were supplemented as appropriate at the following concentrations: 75 μg/ml kanamycin, 100 μg/ml spectinomycin, 1.25 or 2.5 μg/ml chloramphenicol (V. cholerae for broth or plate conditions, respectively), 25 μg/ml chloramphenicol (Escherichia coli), and 100 μg/ml streptomycin. A detailed list of all strains used throughout this study can be found in the Key resources table.
 
 Phage titers were determined using a soft agar overlay method wherein ICP1 was allowed to adsorb to V. cholerae for 10 minutes at room temperature before the mixture was added to molten LB soft agar (0.5%) and poured onto 100 mm × 15 mm LB agar plates. Plaques were counted after overnight incubation at 37°C. Prior to phage infection for purposes of quantification or qPCR or spot assay analysis, V. cholerae was grown on plates overnight and then inoculated into 2 ml LB liquid cultures. Liquid cultures were grown to an OD > 1, then back diluted in fresh media to OD600 = 0.05, and then grown to OD600 = 0.3, at which point they were infected.
 
-## Generation of mutant strains and constructs
+### Generation of mutant strains and constructs
 
 V. cholerae mutants were generated through natural transformation as described previously (Dalia et al., 2014). For gene knockouts, splicing by overlap extension (SOE) PCR was used to generate deletion constructs with a spectinomycin resistance cassette flanked by frt recombination sites. Following selection of spectinomycin-resistant mutants, a plasmid bearing an isopropyl β-d-1-thiogalactopyranoside (IPTG)-inducible Flp recombinase was mated into transformants and Flp expression was induced to generate in-frame deletions. The plasmid was cured by growing mutants under inducing conditions with 300 μg/ml streptomycin. For unmarked replication origin-swapped constructs, mutants were generated through natural transformation by cotransformation (Dalia et al., 2014). For plasmid expression constructs, a derivative of the pMMB67EH vector with a theophylline-inducible riboswitch was used as previously described (McKitterick and Seed, 2018). All constructs were confirmed with DNA sequencing over the region of interest, and primer sequences and construct designs are available on DRYAD at https://datadryad.org/stash/share/HSB-bM3fCu3gSdF_yMQpCqyYuT4wW6_2IsZAkY0P5Ho.
 
-## Phage infection spot assays
+### Phage infection spot assays
 
 V. cholerae was added to molten 0.5% LB top agar and poured over LB plates. Following solidification of the top agar, 3 μl of serially 10-fold diluted phage were spotted onto the plate. Once phage spots dried, plates were incubated for at 37°C for 2 hr and then overnight at room temperature before visualization.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 qPCR experiments were performed as previously described (Barth et al., 2020b; O'Hara et al., 2017). Briefly, liquid cultures were infected with ICP1 at a multiplicity of infection (MOI) of 2.5 at OD600 = 0.3. Samples were taken at 0 and 20 minutes post infection and boiled before serving as templates for IQ SYBR (Bio-Rad) qPCR reactions. For assays involving induction of repA, 2 ml cultures were grown with 1.25 μg/ml chloramphenicol for plasmid maintenance and induced for 20 minutes prior to infection using a final concentration of 1.5 mM theophylline and 1 mM IPTG starting at OD600 = 0.17. All conditions were tested in biological triplicate, and each reported data point is the mean of two technical replicates. A single primer set (Key resources table) that amplifies a conserved region in all PLEs was used to detect PLE replication by qPCR.
 
-## Protein purification
+### Protein purification
 
 E. coli BL21 cells containing a His6-SUMO fusion to WT or E185A Gp88 were grown to OD600 = 0.5 at 37°C and induced with IPTG to a final concentration of 0.5 mM. The culture was grown for 2 hr and harvested by centrifugation at 4000×g for 20 minutes. The pellet was resuspended in lysis buffer (50 mM Tris–HCl pH 8, 200 mM NaCl, 1 mM BME, 0.5% Triton-X 50 mM imidazole, 1 Pierce Protease Inhibitor Mini Tablet [Thermo Scientific]) and sonicated. Cell debris was removed by centrifugation (29,097×g for 40 minutes). The lysate was applied to a HisTrap HP column (Cytiva). The column was washed with wash buffer (50 mM Tris–HCl pH 8, 200 mM NaCl, 1 mM BME, 50 mM imidazole), and a high salt wash (50 mM Tris–HCl pH 8, 2 M NaCl, 1 mM BME, 50 mM imidazole) was used to remove residual DNA. The protein was eluted using an elution buffer (50 mM Tris–HCl pH 8, 200 mM NaCl, 1 mM BME, 300 mM imidazole), and then the eluate was applied to a HiTrap Heparin HP column (Cytivia) for further purification. Following elution from the HiTrap Heparin column, the protein was dialyzed using a 10k Slide-A-Lyzer Dialysis cassette (Thermo Fisher) in 50 mM Tris–HCl pH 7.5, 150 mM NaCl, 1 mM dithiothreitol (DTT). Concomitant with dialysis, the His6-SUMO tag was cleaved using SUMO protease. The SUMO tag was removed using Dynabeads (Invitrogen).
 
-## Sequence analysis
+### Sequence analysis
 
 All genomes were visualized and compared in CLC Main Workbench 7. Multiple sequence alignments were performed using the Multiple Sequence Alignment (MUSCLE) tool with default settings (Edgar, 2004). The phylogenetic tree was constructed using the IQ-TREE web interface with default settings (Trifinopoulos et al., 2016). Conservation of PLE sequence was compared and visualized using Mauve (Darling et al., 2004).
 
-## Nuclease assays
+### Nuclease assays
 
 Nuclease assays were performed with 100 ng of DNA probes and up to 500 nM of purified Gp88 in 20 μl reactions with 50 mM Tris, 10 mM MgCl2, 50 mM NaCl, 1 mM DTT reaction buffer. Reactions proceeded at 30°C for 30 minutes, and were visualized on 0.8% agarose gels ran at 80 V for 30 minutes, and stained with GelRed (Biotium). For smaller probes (Figure 6), 25 ng of probe was included in reactions, and the product was visualized on 2% agarose gels ran at 120 V for 20 minutes and stained with GelGreen (Biotium). Primers used for probe amplification can be found in the Key resources table.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Molecular examples of evolutionary innovation are scarce and generally involve point mutations. Innovation can occur through larger rearrangements, but here experimental data is extremely limited. Integron integrases innovated from double-strand- toward single-strand-DNA recombination through the acquisition of the I2 α-helix. To investigate how this transition was possible, we have evolved integrase IntI1 to what should correspond to an early innovation state by selecting for its ancestral activity. Using synonymous alleles to enlarge sequence space exploration, we have retrieved 13 mutations affecting both I2 and the multimerization domains of IntI1. We circumvented epistasis constraints among them using a combinatorial library that revealed their individual and collective fitness effects. We obtained up to 10 4 -fold increases in ancestral activity with various asymmetrical trade-offs in single-strand-DNA recombination. We show that high levels of primary and promiscuous functions could have initially coexisted following I2 acquisition, paving the way for a gradual evolution toward innovation.
+Molecular examples of evolutionary innovation are scarce and generally involve point mutations. Innovation can occur through larger rearrangements, but here experimental data is extremely limited. Integron integrases innovated from double-strand- toward single-strand-DNA recombination through the acquisition of the I2 α-helix. To investigate how this transition was possible, we have evolved integrase IntI1 to what should correspond to an early innovation state by selecting for its ancestral activity. Using synonymous alleles to enlarge sequence space exploration, we have retrieved 13 mutations affecting both I2 and the multimerization domains of IntI1. We circumvented epistasis constraints among them using a combinatorial library that revealed their individual and collective fitness effects. We obtained up to 104-fold increases in ancestral activity with various asymmetrical trade-offs in single-strand-DNA recombination. We show that high levels of primary and promiscuous functions could have initially coexisted following I2 acquisition, paving the way for a gradual evolution toward innovation.
 
 ## Introduction
 
@@ -42,17 +42,17 @@ Integrases are therefore a good experimental model to investigate if novel and a
 
 ## Results
 
-## Recoding the integrase gene into two alternative sequences
+### Recoding the integrase gene into two alternative sequences
 
 To explore a broader sequence space of IntI1 and obtain a larger set of possible beneficial mutations, we have used the Evolutionary Landscape Painter (ELP) (Cambray and Mazel, 2008). This algorithm enlarges the evolutionary landscape of a protein by recoding it using different codons. We recoded the IntI1 encoding gene (intI1) into two alternative genes that are synonymous to intI1 but can evolve by exploring a different protein sequence space. After minor modifications aiming to decrease the stability of secondary structures in their transcripts, these low energy alternative genes, named alt1l.e. and alt2l.e., showed recombination activities comparable to those of intI1 and were used as a starting point for directed evolution experiments (Escudero et al., 2018).
 
-## Generating diversity and phenotype selection methods
+### Generating diversity and phenotype selection methods
 
 In order to generate genetic diversity, upon which selection can operate, the three integrase-encoding alleles were further mutagenized using an error prone polymerase. For the intI1 allele, we used a library of randomized intI1 that had been previously constructed in our laboratory (Demarre et al., 2007). Both altl.e alleles were randomized following a similar approach to produce libraries of approximately 7 × 104 clones for each allele (see materials and methods).
 
 In order to enrich the population with beneficial mutations we need a selectable phenotype that results from recombination events. Initially, we adapted our previous method of generating plasmid cointegrates with antibiotic resistance markers (Demarre et al., 2007) to select for ancestral activity through the attI x attI reaction, and used it on intI1 (Appendix 1—figure 1). We then developed a simpler and quicker method based on the attI x attI-mediated reconstitution of the dapA gene on the chromosome (Escudero et al., 2016) and used it with alt1l.e, alt2l.e and 8xmut alleles (see Appendix 1—figure 1 and materials and methods).
 
-## First round of directed evolution experiments
+### First round of directed evolution experiments
 
 The library of intI1 was selected for attI x attI efficiency using classical enrichment cycles for six cycles (Appendix 1—figure 1a), while alternative alleles were evolved using the new enrichment cycles for four cycles (Appendix 1—figure 1b). We then sequenced 18 to 25 clones of each library. Mutations found are listed in Figure 2a. Similarity between mutations found in alt and intI1 libraries validated the new enrichment cycles (Figure 2a, substitutions marked in blue). Also, of the 15 different substitutions found in alt alleles, four were not reachable from the intI1 gene through single nucleotide changes (Figure 2a, substitutions in red) confirming the exploration of a larger protein sequence space with alternative codes. Diversity in the alt2l.e. library was low, with all alleles containing D299E and A329T substitutions.
 
@@ -64,49 +64,49 @@ Recombination frequency for attI x attI was established for all relevant alleles
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58061/elife-58061-fig3-v2.jpg)
 
-**Figure 3.:** (a) fold change in recombination rates for attI x attI, attC x attC, and attI x attC of intermediate steps in the construction of intI1 containing a variety of combinations of mutations. Bars represent average values of at least three independent experiments. Error bars show standard error. Mutations are indicated only on top of blue bars but mutants are depicted in the same order among the three graphs. Arrows and the '+' symbol in 5x, 6x, and 8x mutants mean that mutations shown are added to those in the previous mutant. Strain numbers are found in 8mutSupplementary file 2. (b) negative correlation between the activity in attI x attI reactions and that in attC x attC (above) (Spearman test, r = −0.945, P (two-tailed) <0.0001; log-log regression R2: 0.973); and attI x attC reactions (below) (Spearman test, r = −0.654, P (two-tailed) = 0.0336; log-log regression R2: 0.13). (c) expected and observed increases in recombination rates among mutants containing subsets of the mutations in intI Expected values are obtained based on a multiplicative model in the absence of epistasis. The lower recombination rates observed are indicative of negative epistatic interactions among mutations.8mut.
+**Figure 3.:** (a) fold change in recombination rates for attI x attI, attC x attC, and attI x attC of intermediate steps in the construction of intI18mut containing a variety of combinations of mutations. Bars represent average values of at least three independent experiments. Error bars show standard error. Mutations are indicated only on top of blue bars but mutants are depicted in the same order among the three graphs. Arrows and the '+' symbol in 5x, 6x, and 8x mutants mean that mutations shown are added to those in the previous mutant. Strain numbers are found in Supplementary file 2. (b) negative correlation between the activity in attI x attI reactions and that in attC x attC (above) (Spearman test, r = −0.945, P (two-tailed) <0.0001; log-log regression R2: 0.973); and attI x attC reactions (below) (Spearman test, r = −0.654, P (two-tailed) = 0.0336; log-log regression R2: 0.13). (c) expected and observed increases in recombination rates among mutants containing subsets of the mutations in intI8mut. Expected values are obtained based on a multiplicative model in the absence of epistasis. The lower recombination rates observed are indicative of negative epistatic interactions among mutations.
 
-## Construction of alleles pooling the eight mutations
+### Construction of alleles pooling the eight mutations
 
 From this first round of directed evolution experiments we selected eight different substitutions obtained in the three codes, conferring a gain in recombination activity (T118S, D161G, H162Q, K219R, D299E, G319E, G320D, and A329T) (Figure 2a, asterisks) and combined them together in the intI1 allele to try to obtain a highly hyperactive mutant. Intermediate steps in the construction of this mutant showed a clear trend toward attI x attI hyperactivity yet with some exceptions. For instance, the triple mutant (T118S, D161G, and G320D) is less active than any of the three possible double mutants. The final intI18mut allele showed a 100-fold increase in ancestral (attI x attI) activity (from 1.82 × 10−4 to 1.85 × 10−2) compared to intI1 (Figure 3a).
 
 We sought to elucidate if a gain of recombination efficiency for the ancestral reaction came with a trade-off in the modern reactions, i.e.: attI x attC and attC x attC (Figure 3a). We observed a strong trade-off between attI x attI and attC x attC reactions (log-log regression R2: 0.973; p<0.0001), and a weak 1 between attI x attI and attI x attC reactions (log-log regression R2: 0.13; P: 0.034) (Figure 3b), suggesting that there is a conflict among protein conformations allowing integrases to specifically process attI or attC sites. Interestingly, trade-offs are not always homogeneous: for example, among alt1l.e and alt2l.e. alleles, some attI x attI hyperactive mutants show small gains for the attI x attC reaction too, while others show dramatic losses of activity (almost 6 orders of magnitude) (Appendix 1—figure 2). The variety of trade-offs suggest that there is a general -but not strict- balance between the structural conformations that allow for the efficient recognition or processing of attI and attC sites.
 
-## Negative epistasis is prevalent among mutations
+### Negative epistasis is prevalent among mutations
 
 From the attI x attI data in Figure 3a, one can easily suspect that combination of beneficial mutations would perform less well than expected from the effect of individual mutations. This phenomenon, named negative epistasis, could hamper our efforts to obtain hyperactive integrases. To assess the presence of such epistatic interactions, we have plotted the observed and expected gains in recombination frequency for a subset of mutants for which we have data for isolated and combined mutations (Figure 3c). Observed recombination frequencies were clearly lower than expected (assuming a multiplicative model, typical of independent loci), suggesting pervasive negative epistasis in our experiments. As an example, the three mutations obtained with intI1 in the first round of experiments (T118S, D161G, and G320D), conferring a 7.6-, 5.4-, and 7.2-fold increase in activity respectively, would lead in a non-epistatic scenario to a ≈300-fold activity increase. Instead, the gain in activity with the three mutations is approximately 10-fold and is actually slightly lower than the gain of double mutants (Figure 3a). The combination of these three mutations with all other mutations selected in the first round of experiments except G319E (for which we do not have individual data), would lead in a non-epistatic scenario to a 3.75·104-fold increase in activity in a theoretical intI17mut, again very far from the observed 102-fold gain obtained in the intI18mut bearing all mutations (Figure 3c). We obtained statistical support for negative epistasis by computing error in epistasis estimation (σε) through error propagation (Trindade et al., 2009) (see Materials and methods). These negative epistatic interactions indicate that the benefits of these mutations are not independent. To go further we needed to explore the contribution of new mutations.
 
-## Second round of directed evolution experiments
+### Second round of directed evolution experiments
 
 We sought to obtain the recombination rates on ds-DNA of integrase ancestors. Since we cannot determine this value, we take the rate of modern (ss-DNA) reactions in IntI1 as a hypothetical optimum. We hence aim to cover the four orders of magnitude gap between modern and ancestral activities in IntI1. We decided to re-evolve the intI18mut allele. To do so while preserving the exploration of a larger protein sequence space, we inserted the same mutations in both alternative alleles to obtain alt18mut and alt28mut and subjected them to the same re-evolution experiment in parallel. intI18mut, alt18mut and alt28mut alleles were subjected to randomization through error-prone PCR, established as libraries, and selected for attI x attI hyperactivity. After four enrichment cycles, we sequenced a subset of clones from each experiment and tested their recombination frequency through a modified chromosomal setup (as the one used in the new enrichment cycles) to increase the dynamic range of our experiment (see Appendix 1—figure 3, and Materials and methods). The level of variability within the population was still high at this point in all three populations, but in some cases focusing on the abundance of amino acid substitutions across haplotypes revealed a clearer result. The complete list of mutations found in this re-evolution experiment are listed in Supplementary file 1, but the main results are presented in Figure 4a and summarized below.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58061/elife-58061-fig4-v2.jpg)
 
-**Figure 4.:** a: list of mutations found among the three 8mut alleles after four cycles. Substitutions that are not reachable from the intI1 code are highlighted in red. b: fold increase in recombination rates for the 8mutattI x attI reaction of all mutants compared to their parental 8mut allele. Bars represent average values of at least three independent experiments. Error bars show standard error. Statistically significant results are indicated by * (alpha = 0.05). c: Analysis of the mutations found in the alt1 mutant C122. Of both non-synonymous mutations, only E103K produces a relevant increase in activity. d: Mutational pathways in our experiments highlight the importance of broad sequence space exploration. Mutation S173R, conferring a high activity gain, was only found in the 8mutalt1 code because intI1 and alt2 codes needed an additional mutation to access that codon. Glycine to aspartic acid substitution (G320D) appeared in the intI allele in the first round of experiments and was included in both alt alleles using two different codons. It then re-evolved to asparagine (D320N), a residue that was not reachable from any of the starting codons with a single mutation.8mut
+**Figure 4.:** a: list of mutations found among the three 8mut alleles after four cycles. Substitutions that are not reachable from the intI18mut code are highlighted in red. b: fold increase in recombination rates for the attI x attI reaction of all mutants compared to their parental 8mut allele. Bars represent average values of at least three independent experiments. Error bars show standard error. Statistically significant results are indicated by * (alpha = 0.05). c: Analysis of the mutations found in the alt18mut mutant C122. Of both non-synonymous mutations, only E103K produces a relevant increase in activity. d: Mutational pathways in our experiments highlight the importance of broad sequence space exploration. Mutation S173R, conferring a high activity gain, was only found in the alt1 code because intI1 and alt2 codes needed an additional mutation to access that codon. Glycine to aspartic acid substitution (G320D) appeared in the intI allele in the first round of experiments and was included in both alt8mut alleles using two different codons. It then re-evolved to asparagine (D320N), a residue that was not reachable from any of the starting codons with a single mutation.
 
-## intI18mut
+#### intI18mut
 
 Only two haplotypes, C326 and C325, were found more than once. Allele C326 contained, among others, a Y220N substitution within the I2 domain and showed recombination frequencies approximately seven times higher than the parental intI18mut haplotype and 400 times higher than WT intI1 (Figure 4b). Haplotype C325 showed a toxicity phenotype, with cultures showing very poor growth in inducing conditions. Mutations were tested separately to decipher their contribution (Appendix 1—figure 4). How such an haplotype was present at this stage of purification of the library, remains cryptic.
 
-## alt18mut
+#### alt18mut
 
 Diversity in this library was high (Supplementary file 1) but some amino acid substitutions were particularly prevalent among a variety of different haplotypes. V315A is, for instance, found in combination with other mutations in five other haplotypes (totaling 35% (11/31) of haplotypes). A similar phenomenon was observed for S173R and D320N substitutions. Prevalent mutations and alleles were tested, showing a variety of activity gains (Figure 4b). Mutations E103K and E130K were tested independently (Figure 4c), revealing that only E103K had a beneficial effect on activity. The re-evolution from G320D to D320N in this set of experiments underscores the intrinsic limitations of directed evolution experiments in sequence space exploration (Figure 4d). Interestingly, the S173R mutation -that is out of reach from the intI1 code- exemplifies how the use of synonymous genes can partly alleviate such limitations.
 
-## alt28mut
+#### alt28mut
 
 Sequencing of 26 clones revealed a more homogeneous population than alt18mut (Figure 4a and Supplementary file 1). The V315A substitution already observed in alt18mut, was the most prevalent one, followed by D320N and E103A/K. It is noteworthy that 20 haplotypes bore mutations in the 5’-UTR. These mutations do not change protein activity but may influence translation efficiency and hence bias our selection cycles. Here, the prevalence of 5’ UTR mutations is high enough to suspect that this region is non-optimal. We assessed if the 5’ region of the transcript could be interfering with transcription of the alt28mut gene (as we found in Escudero et al., 2018), but saw no differences in folding energies between WT and mutated 5’-UTRs (−6.1 kcal mol−1 in all cases). This, combined with the linkage of UTR mutations to substitutions that appear alone in other codes, led us to consider UTR mutations in alt28mut as hitchhiking events.
 
 Five mutations considered to be biologically relevant in this round of enrichment cycles, i.e.: E103K, S173R, Y220N, V315A, D320N, and A321G, were selected for further experiments.
 
-## Purifying epistasis
+### Purifying epistasis
 
 Our results on the activity gain in mutants gathering several mutations suggested the presence of negative epistatic interactions between them (Figure 3c). In order to reach our goal of obtaining IntI1 mutants with a similar efficiency on attI x attI as that of WT IntI1 on attI x attC (modern integration reaction), we needed to obtain a four order of magnitude gain in activity. After two rounds of experiments some alleles showed increases of almost three orders of magnitude. Yet future experiments aiming to unravel structural aspects of integrase binding and processing of the attI site will need a highly active protein that is as close to the WT as possible. This, together with the negative epistasis observed, prompted us to avoid pooling together more mutations, but rather to try to obtain the minimal combination of mutations with the highest effect. To do so we established a library of mutants containing all possible combinations of 13 biologically relevant mutations. These are: E103K, T118S, D161G, H162Q, S173R, K219R, Y220N, D299E, V315A, G319E, G320D/N, A321G, and A329T. The rationale of this experiment is that by subjecting this library to our enrichment cycles we should be able to select the combination of mutations showing the highest levels of activity. Because of design constraints in regions with high variability (see Materials and methods) the theoretical number of different alleles in the library was 24,576. To maximize the chances of containing all alleles, we established a library of approximately five times this size. As a preliminary validation step, we sequenced 50 clones and observed a high level of heterogeneity of alleles, with an even distribution of WT and mutated sequences at each residue of interest. We also observed unintentional mutations in approximately 40% of the alleles. This was not completely unexpected, due to the number of rounds of PCR amplification performed to assemble all the fragments, and despite the use of low error rate polymerases (see Materials and methods). Once validated, we subjected this library to the new enrichment cycles to select for the best combination of mutations. An estimate of recombination rates was measured en masse at each step (Appendix 1—figure 5). Recombination activity increased 20-fold during the first four cycles and seemed to plateau from cycle five, leading us to stop the selection process at cycle 6. We sequenced 39 clones of the library at this stage. Among them we obtained 18 different haplotypes of which 13 were unique and five were found eight, eight, five, three, and two times each. All sequences found more than once were tested for recombination frequency, together with one of the sequences with a single representative (Figure 5a). All clones showed significant increases in recombination rates compared to intI18mut, and three of them (Seq 3, Seq 5, and Seq 7) did so by combining a different subset of eight mutations (Figure 5b). Importantly, sequences Seq 5, Seq 7, and Seq 19 show a 100-fold increase compared to intI18mut, reaching our target of 10,000-fold increase compared to WT intI1. In these mutants, the activity levels for the attI x attI reaction are similar to those of the modern attI x attC activity in the wild type integrase. All alleles were specifically tested for second strand exchange activity (Escudero et al., 2016) and showed a variety of gains, with some reaching almost 2000 fold increase compared to WT intI1, confirming the increase in bona fide ancestral activity in some -but not all- cases (Appendix 1—figure 6) (see discussion). To assess the trade-offs entailed by these mutations for other reactions, sequences containing eight mutations were tested for the attI x attC and the attC x attC reactions in a similar chromosomal assay. Recombination activity was normalized to that of IntI1 and compared to the intI18mut allele (Figure 5a). The asymmetry of trade-offs is in some cases remarkable. For instance, while the 10-fold increase obtained in Seq 3 for the attI x attI reaction comes with a symmetrical 10-fold loss for attC x attC, Seq 7 increases 100-fold its activity for the attI x attI reaction, while not decreasing at all its recombination rate on attC x attC. These alleles show a rising trend but no significant differences for the attI x attC reaction.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58061/elife-58061-fig5-v2.jpg)
 
-**Figure 5.:** a: fold change in recombination rates -relative to intI1- for the attI x attI, attC x attC, and attI x attC reactions of mutants obtained after epistasis purification (intI1 is also shown for clarity). Gains in 8mutattI x attI activity entail asymmetrical losses for attC x attC. Bars represent average values of at least three independent experiments. Error bars show standard error. Statistically significant differences are indicated by * (alpha = 0.05) and non-significance by ‘ns’. b: allele-ID (identity of the residues at the 13 positions of interest) of the most prevalent mutants after epistasis purification.
+**Figure 5.:** a: fold change in recombination rates -relative to intI1- for the attI x attI, attC x attC, and attI x attC reactions of mutants obtained after epistasis purification (intI18mut is also shown for clarity). Gains in attI x attI activity entail asymmetrical losses for attC x attC. Bars represent average values of at least three independent experiments. Error bars show standard error. Statistically significant differences are indicated by * (alpha = 0.05) and non-significance by ‘ns’. b: allele-ID (identity of the residues at the 13 positions of interest) of the most prevalent mutants after epistasis purification.
 
-## Mutant dynamics during cycles
+### Mutant dynamics during cycles
 
 Understanding epistasis between the mutations obtained can reveal structural constraints influencing integrase evolution. To study epistasis interactions, we sequenced the initial library and three time-points of the epistasis purification assay (cycles one, three, and six) using PacBio SMRT bell sequencing. This technology provides long reads and allows phasing mutations into haplotypes.
 
@@ -134,7 +134,7 @@ Innovation is a key evolutionary phenomenon for which experimental data is scarc
 
 On top of this, our results have given us a deeper understanding on a variety of aspects of integrase activity.
 
-## Structural insights
+### Structural insights
 
 The crystal structure of attC-bound integrases has provided an unparalleled understanding on how I2 serves to recognize attC sites, with extrahelical bases acting as structural landmarks (MacDonald et al., 2006). The low affinity for the attI site shown by integrases in vitro (Francia et al., 1999; Demarre et al., 2007) has precluded obtaining crystals so far, limiting our understanding on the recognition and processing of attI sites. Mutations found here help understand the structural constraints of the ancestral reaction, and therefore the changes that integrases might have undergone during natural evolution. We find two significant regions where mutations accumulated: (i) the C-terminal domain where a high number of mutations mapped between the M and N helices. Helix N serves as an anchor, burying one face in a hydrophobic pocket of the adjacent integrase monomer in the synaptic complex. It is necessary for the multimerization and stabilization of the tetrameric synapse. Mutations between helices M and N probably entail changes in the flexibility of helix N producing a different conformation of the synapse that better suits the processing of the more rigid attI sites. (ii) The I2 domain that is the basis for innovation toward attC site- processing (Nunes-Düby et al., 1998; Messier and Roy, 2001; MacDonald et al., 2006) only accumulated two of the 13 mutations suggesting it is not the major hindrance for the ancestral activity in modern integrases.
 
@@ -142,75 +142,169 @@ The mutations found here, probably raise the ancestral activity through a variet
 
 It is also of note that we did not select any mutation in the first four α-helixes in the N-terminal part of the protein, which form one side of the U-shaped clamp around the DNA target sites (MacDonald et al., 2006). This part of the recombinase is the most variable one among IntIs, and several amino acids from this segment of IntIAVch make contact with the phosphate chain of structured attC sites (MacDonald et al., 2006). The lack of such mutations means that the way this segment accommodates the attI will remain unknown until the structure of the corresponding synaptic complex is obtained.
 
-## Directed evolution experiments
+### Directed evolution experiments
 
 The enrichment cycles used for directed evolution experiments have yielded examples of a variety of relevant evolutionary phenomena, such as the re-evolution of residue G320 to D and then to N (Figure 4d). This highlights the limits of directed evolution experiments, since the asparagine (N) was not reachable from any of the three initial codons and required a previous non-synonymous mutation (Figure 4d). It therefore vindicates our efforts to explore a larger sequence space while showing the limitations of doing so through synonymous mutations.
 
-## Epistasis purification
+### Epistasis purification
 
 Our combinatorial library of 13 mutations has proven to be an efficient method to avoid the constraints caused by negative epistatic interactions and improve protein activity, as demonstrated by the 100-fold increase in activity obtained while keeping the total number of mutations equal. The study of the behavior of mutations using deep sequencing has yielded interesting results despite strong technical limitations. For instance, the sign epistasis observed between V315A and A321G justifies by itself the need for a combinatorial approach to avoid those mutation combinations with detrimental epistatic effects. It is very likely that, had we not done this, the increase in recombination would have been mild due to sign epistasis between these mutations.
 
 We studied epistasis systematically for pairs of mutations in our library, but could only detect it in a minority of cases (11/55, Figure 6e). When detected, epistasis was more often negative (nine cases with significant negative epistasis versus two with positive epistasis), suggesting that when there are interactions between pairs of mutations, the double mutant performs usually less well than expected. However, we did not clearly recover the classical global epistasis pattern of diminishing returns associated to fitness improvement (Kryazhimskiy et al., 2014). Usually, beneficial mutations have consistently smaller effects on fitter backgrounds. This absence could be the consequence of mutations acting on the different aspects of recombination activity (binding, multimerization, DNA-cleavage or rejoining…). Alternatively, it could also be due to our measure of fitness of single and double mutants, that is averaged across multiple genetic backgrounds. However, models predict that epistasis between pairs of mutations is limited when the adaptive process is initiated far from the optimum, as it is the case here (Escudero et al., 2016; Blanquart et al., 2014). In these conditions, epistatic interactions are barely detectable whether mutations are co-selected in an adaptive walk or selected independently and combined. However, when fitness gets closer to optimality, much more complex patterns of epistatic interactions are possible (Blanquart et al., 2014). Accordingly, the combination of more than two mutations suggests stronger epistatic interactions (Figure 3c) including some positive interactions (Figure 6e). Positive epistasis is the likely explanation to why S173R does not appear in the first round of experiments, despite the strong effect it has in the 8mut background; or why the generally deleterious A321G mutation appears in a background containing T118S.
 
-## Limitations and other considerations
+### Limitations and other considerations
 
 In this work, we have shown that we could shed some light on integrase innovation using a backward evolution approach, in which a modern protein is evolved toward its ancestral function. This has to be contrasted with the ancestral sequence resurrection strategy in which a putative ancestral sequence is inferred phylogenetically, synthesized and evolved toward a new function. Here, the process of ancestral sequence resurrection would be highly questionable because of long evolutionary time scales, the small number of IntI sequences available, and the lack of intermediates. Also, resurrection of an ancestral sequence and de novo insertion of residues is not always successful, because additional mutations elsewhere can be necessary (Boucher et al., 2014). In this situation, the use of experimental selection in the laboratory starting from a partially accurate resurrected ancestor (or from a close canonical tyrosine-recombinase relative) may be beyond reach. The strategy we used proved to be an efficient alternative that could be applied to other important switches in gene function that have occurred long ago. By strongly selecting for double-strand recombination, we have managed to show that I2 is compatible with high rates of ancestral activity and that a route through functional intermediates exists between integrases in an early innovative state and modern integrases. Still, lacking an ancestor sequence inferred phylogenetically, it is beyond our reach to determine whether this was the route naturally followed by integrases (in opposite direction), or the impact that I2 had on the ancestor’s activity. Also, we cannot rule out that the rise of new functions in IntIs actually occurred through gene duplications. Indeed, a plethora of accessory genetic elements in bacteria, such as plasmids, transposons or phage (integrated in tandem repeats), are naturally in a multicopy state that promotes the evolvability of their cargo genes (San Millan et al., 2016).
 
-## Possible scenario for the emergence of integron integrases
+### Possible scenario for the emergence of integron integrases
 
 Y-recombinases are abundant in phages, fomenting speculations about a viral (or partly viral) origin of integrons (Escudero et al., 2016). Interestingly, the CTX phage of Vibrio cholerae is integrated as a ss-DNA hairpin, but it differs from integron recombination in that it is mechanistically identical to ds-recombination. Indeed, the genome of CTXϕ mimics a ds-DNA molecule encoding a dif site to hijack the activity of the host’s XerCD chromosome dimer resolvases -something done by many other elements dubbed IMEXs (integrative mobile elements exploiting Xer) (Das et al., 2013). Xer proteins are the closest relatives to IntIs (Mazel, 2006), but do not contain an I2 domain to recognize ss- substrates and avoid the second strand exchange that would result in a lethal linearization of the chromosome. To integrate safely, CTXϕ activates exclusively XerC, avoiding the deleterious cleavage of XerD. It is therefore possible that the acquisition of I2 occurred in an ancestor with Xer-like activity, and that it served initially to maintain the integrity of the chromosome when hijacked by ss-IMEXs that had not developed mechanisms to avoid the second strand exchange. In this scenario, a mildly negative impact of I2 on the main activity of the ancestor could have been compensated by the safer integration of such ss-IMEXs, that would otherwise linearize the chromosome and kill the host. Our results show that the ancestral integrase bearing I2 could have evolved without impairing the ancestral function up to a quite high activity on ss-DNA. From that detectable activity, natural selection could easily drive the specialization toward the new function, even at the cost of impairing the ancestral function as our data show (Figure 7).
 
-## Concluding remark
+### Concluding remark
 
 The acquisition of an entire domain that is associated with a new function makes integrases an excellent experimental model for studying the evolution of novelty. Our results suggest that such a seemingly disruptive mutational event is compatible with a high ancestral activity, presumably thanks to the well-known robustness of the Y-recombinase fold (Kwon et al., 1997; Tóth-Petróczy and Tawfik, 2014). We further showed -see Figure 7- that an integrase with ancestral levels of ds-recombination activity and containing the I2 domain, could have detectable levels of activity on ss-DNA upon which selection can act. Using the adaptive landscape metaphor -in which genotype space is plotted on the x and y axis and fitness on the z vertical axis- our data suggest that the peaks representing the ancestral and modern functions are connected by some form of ridge that may facilitate the transition from one to the other, fostering innovation.
 
 ## Materials and methods
 
-## Bacterial strains, plasmids, primers
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5a</td>
+      <td>Lab strain</td>
+      <td></td>
+      <td>supE44 DlacU169 (F80lacZ’ DM15) DargF hsdR17 recA1 endA1 gyrA96 thi-1 relA1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>UB5120</td>
+      <td>PMID:2157593</td>
+      <td></td>
+      <td>F-pro met recA56 gyrA [NalR]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>β2163</td>
+      <td>PMID:15748991</td>
+      <td></td>
+      <td>MG1655:: DdapA::(erm-pir)RP4-2-T c::Mu [KmR]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>B36</td>
+      <td>PMID:26961432</td>
+      <td></td>
+      <td>MG1655 ΔdapA recA269::Tn10 attB::attI1WT-attI1STOP-dapA [SpR]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>4137</td>
+      <td>PMID:16341091</td>
+      <td></td>
+      <td>β2163/pSW23T::attCaadA7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>2714</td>
+      <td>PMID:15748991</td>
+      <td></td>
+      <td>β2163/pSW23T::attI1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>H203</td>
+      <td>Strain from this work. Plasmid p6944 from PMID:19730680</td>
+      <td></td>
+      <td>β2163/p6944 (pSW23T:: attCaadA7-VCR2/1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD18</td>
+      <td>PMID:7608087</td>
+      <td></td>
+      <td>pBAD18</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p6944</td>
+      <td>PMID:19730680</td>
+      <td></td>
+      <td>pSW23T::[Ptac]-attCaadA7lacIq-VCR2-pir116*(BOT)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p2714</td>
+      <td>PMID:15748991</td>
+      <td></td>
+      <td>pSW23T::attI1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p929</td>
+      <td>PMID:15716446</td>
+      <td></td>
+      <td>pSU38Δ::attI1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains, plasmids, primers
 
 The most important bacterial strains and plasmids in this work are listed above (key resources table) and were obtained elsewhere (Escudero et al., 2016; Bouvier et al., 2005; Demarre et al., 2005; Martinez and de la Cruz, 1990; Guzman et al., 1995; Bouvier et al., 2009; Biskri et al., 2005). A full list and more details on bacterial strains, plasmids and primers are described respectively in Supplementary files 2 and 3.
 
-## General DNA procedures
+### General DNA procedures
 
 Standard techniques were used for DNA manipulation and cloning (Sambrook et al., 1989). Restriction and DNA-modifying enzymes were purchased from New England Biolabs and Fermentas (Thermo-Scientific). PCR’s (Polymerase Chain Reaction) were performed with Dreamtaq DNA polymerase, and Phusion polymerase (Thermo-Scientific) according to the manufacturer’s instructions. 1% agarose electrophoresis gels were used to visualize DNA. DNA purification from PCR products and gels, as well as plasmid extractions, were performed using Qiagen kits. When necessary, DNA sequence was verified using an ABI BigDye Terminator v.3.1 sequencing kit and an ABI Prism 3100 Capillary Genetic Analyzer (Applied Biosystem). GATC and EUROFINS sequencing services were also used. Sequence analysis was performed using Geneious 7.1.
 
-## Recoding the integrase into alternative genes
+### Recoding the integrase into alternative genes
 
 The Evolutionary Landscape Painter (ELP) (Cambray and Mazel, 2008), is an algorithm that recodes proteins into genes that are synonymous to the gene of origin, but have a different evolutionary landscape i.e.: they can reach parts of the protein sequence space that are not within the reach of the wt code. ELP maximizes the evolutionary potential of each amino acid while respecting codon usage of E. coli. ELP has been recently updated to avoid the formation of secondary structures in the 5’ region of the gene that interfere with transcription (Escudero et al., 2018).
 
-## Sequence randomization
+### Sequence randomization
 
 The intI1 library of mutants used in this work had been established previously (Demarre et al., 2007). Using a similar approach, to produce diversity among alt1l.e., alt2l.e. and the three alleles containing eight mutations, we performed mutagenic PCR using the GeneMorph II kit from Stratagene. In the first set of enrichment cycles the amount of starting template (1 ng and 100 ng) and the number of PCR cycles (35) were adjusted to obtain, for each allele, two populations with approximate averages of two and six mutations per kb. We verified approximate mutation rates by sequencing a small subset of 24 clones from each population (1 ng alt1l.e.=7.3 mut/gene; 100 ng alt1l.e.=2.36 mut/gene; 1 ng alt2l.e.=6.1 mut/gene; 100 ng alt2l.e.=2.31 mut/gene). We mixed both populations to produce a single library of approximately 7 × 104 clones for each allele.
 
 Given the small contribution to the experiment that highly mutated alleles had on the first round of experiments, we sought to decrease the mutation rate for the second set of cycles. We aimed to establish populations with averages of about two and four mutations per gene and obtained average mutation rates for intI18mut, aIt18mut and alt28mut of 3.78, 1.5, 1.25 and 7.5, 4.18 and 4.72 mutations per gene. The size of the libraries was respectively of 8.7 × 104, 5.45 × 104, and 1.75 × 106.
 
-## Enrichment cycles
+### Enrichment cycles
 
 In order to enrich our libraries with hyperactive integrases, selective pressure was applied upon all mutant libraries through a set of enrichment cycles. The cycles used for intI1 (depicted in Appendix 1—figure 1) where based on those applied before (Demarre et al., 2007), with the only difference that the resident plasmid bore an attI recombination site instead of an attC. For alt1, alt2, all 8mut alleles and the epistasis purification experiment, we developed a new experimental setup that was streamlined to deliver rapid directed evolution cycles with lower background noise. To do so we used the DAP- strain B36 that contains a chromosomal insertion of a dapA gene interrupted by two attI1 sites in direct orientation (Escudero et al., 2016). Integrase-mediated recombination of these sites leads to the excision of the region between attI1 sites and reconstitutes dapA, producing a selectable phenotype. Randomized alleles were cloned in a pBAD plasmid under the control of a PBAD promoter, electroporated in B36 and plated in media containing DAP and glucose to prevent the expression of the integrase. Colonies were then harvested from the plates into fresh media containing arabinose 0.2% and incubated at 37°C for one hour. After this induction time, the culture was plated on media without DAP and incubated at 37°C overnight. Colonies of recombinants were then pooled and used to extract plasmid content of this cycle that was electroporated into B36 again, starting the next cycle. This new setup was extremely rapid and efficient and hence, was used for the rest of the enrichment cycles.
 
-## Recombination activity tests
+### Recombination activity tests
 
 In order to quantify the recombination activity of each allele we used two types of setups. First we used a suicide conjugation assay previously developed in our lab (Biskri et al., 2005; Appendix 1—figure 3a) and implemented in several occasions (Nivina et al., 2016; Loot et al., 2012; Bouvier et al., 2009). Briefly, an attI site is provided by conjugation carried on a suicide vector from the R6K- based pSW family that is known to use the Pir protein to initiate its own replication. This plasmid also contains an RP4 origin of transfer (oriTRP4). The donor strain β2163 carries the transfer functions in its chromosome, requires DAP to grow in rich medium and can sustain pSW replication through the expression of a chromosomally integrated pir gene. The DH5α recipient strains, which contain a pBAD plasmid [ApR] containing the allele to be tested and the resident plasmid pSU38Δ::attI1 [SpR] carrying the attI1 site, lacks the pir gene and therefore cannot sustain replication of the incoming attI-containing pSW vector. The only way for this vector to be maintained in the recipient cell is to form a cointegrate by attI x attI recombination (or attI x attC where applicable). The recombination frequency is calculated as the ratio of transconjugants expressing the pSW marker [CmR] to the total number of recipient clones [ApR, SpR]. Recombination frequencies correspond to the average of at least three independent trials. In the attI x attC tests performed to measure the trade-off between functions, plasmid pSU38Δ::attI1 was substituted for plasmid pSU38Δ::attCaadA7. For the attC x attC reaction, a suicide pSW plasmid containing the pir gene interrupted by two attC sites is conjugated into a recipient strain containing the pBAD plasmid with the integrase allele to test. Recombination between both sites leads to the reconstitution of pir so that the plasmid can sustain its own replication (Bouvier et al., 2009). Recombination frequency is calculated as above.
 
 After the first round of enrichment cycles that yielded the eight mutations that combined provided a 100-fold gain in recombination activity, we needed to enlarge the dynamic range of this test to be capable of measuring recombination frequencies of mutants to come. To do so, we used the same recombination system used for the new enrichment cycles in which integrase-mediated recombination of two chromosomal attI1 sites reconstitutes dapA and produces a selectable phenotype (Escudero et al., 2016; Appendix 1—figure 3a). Integrase-coding alleles were expressed from a pBAD promoter for three hours using arabinose 0.2% before plating in media with and without DAP. The ratio between the number of colonies growing without DAP (recombinants) and those growing in DAP-containing media (total) gives the recombination frequency of that allele. In this new setup, recombination rates are 100-fold lower than in conjugation experiments, and we also have one more logarithm of dynamic range since conjugation is no longer limiting (Appendix 1—figure 3b).
 
-## Mutant selection
+### Mutant selection
 
 We selected mutants following an evolutionary rationale to the interpretation of our results, and considered to be relevant those mutations that appear many times in the same or in different codes, alone or in combination with others, despite producing increases in recombination activity that were sometimes not statistically significant (for instance V315A).
 
 Mutations in untranslated regions do not influence the intrinsic activity of the protein and are therefore not relevant for the evolution of the integrase. Yet, they can influence translation rates and hence play a role in the selection cycles. We therefore tested some to assess their influence in the recombination frequency of the allele obtained (as we have done for intI18mut mutants (Appendix 1—figure 4)). Notably, in the second round of enrichment cycles, the number of alt28mut alleles bearing mutations in the 5’UTR of the gene is high enough to be potentially interpreted as if this region was non-optimal. We hence explored the possibility that the 5’ folding of the transcript was interfering with transcription of the alt28mut gene (as we saw in Escudero et al., 2018), but folding energies were identical between WT and mutated 5’ UTRs (−6.1 kcal mol−1 in all cases). Here, using the evolutionary rationale, and on the basis of frequency of appearance, UTR mutations can most often be considered hitchhike events (and neglected) i.e.: UTR mutations are not present in other mutants from intI18mut or alt18mut, and when they appear in alt28mut they are combined with mutations that are prevalent in the other codes. Hence, such parallel evolution events are considered as biologically relevant and help guide our choice of relevant mutations.
 
-## Calculation of epistasis error
+### Calculation of epistasis error
 
 Error in epistasis (σε) was calculated through the error propagation method as described in Trindade et al., 2009. The expected minus the observed fold increases in recombination frequencies (the epistasis) were 41.9; 2.9·102 and 5.24·103 for the double, triple and quintuple mutants respectively. Error values were 18.4, 41.1, and 108.1, respectively, proving that epistasis was significative.
 
-## Epistasis purification library
+### Epistasis purification library
 
 To construct a library with all possible combinations of our 13 mutations we designed oligonucleotides containing a mixture of bases at each position of interest. Several fragments bearing the mutations were amplified and assembled in an approach that combined SOE-PCR splicing through overlap extension PCR (Heckman and Pease, 2007) and Gibson assembly (Gibson et al., 2009). Design constraints were found in more variable regions that introduced more variants. For instance, in position 319, in order to obtain WT (glycine) and mutated (glutamate) alleles we used primers with the codon GRM, that can indeed lead to the residues glycine (GGA, and GGC) and glutamate (GAA), but also to the unintended aspartate (GAC). Also, in the case of the re-evolved G320(D,N) residue, we used primers with an RRT codon that leads to all three residues (glycine: GGT; aspartate: GAT; asparagine: AAT) but also to a serine (AGT). These constraints rendered the library more complex and raised the theoretical number of different alleles in it to 24.576.
 
 Despite the use of high fidelity polymerases at all stages, the several rounds of PCR amplification needed along the process meant that we could not rule out a certain degree of randomization in the final library.
 
-## Sequencing
+### Sequencing
 
 Deep sequencing was performed using PacBio SMRTbell technology (The Genome Analysis Centre, Norwich, UK). PacBio technology produces long sequencing reads with albeit with high error rates (10%). The inclusion of single stranded loops at the edges of PCR-amplified alleles, yields long reads with several copies of a unique allele. This technology strongly decreases the error rate per allele. In our sequencing runs error rates were roughly estimated to be around 0.3%. Although the fidelity was significantly higher, this rate still implies an average of three mutations per allele (1014pb), precluding the use of complete allele sequences for the study. In an effort to capture the diversity of the initial library we dedicated eight SMRT Cells (theoretical number of reads: 4 × 105) for time 0. To observe the evolution of the alleles along the different cycles we dedicated two SMRT cells for each time point (cycles one, three, and six. Theoretical number of reads per time point: 1 × 105). Sequencing results underwent a curation process. First, reads that were too short to contain all mutations were discarded. Then reads were aligned to intI1 revealing a high abundance of indels in our reads. This was also the case for reads from cycle six, where inactive integrases are extremely unlikely to be found, suggesting that indels were rather a technical artifact than a biologically relevant phenomenon. Hence, indels were artificially corrected in our reads. The combination of residues encoded in positions of interest (those in which we had inserted a mutation) was extracted for each allele, conforming a 13-letter string defining that allele: the alleleID. The total amount of usable alleleIDs after curation of our sequencing data was of 67179 reads for the initial library, and 21622, 31694, and 18907 for cycles one, three, and six. The risk of using allele-IDs, is underestimating the effect of mutations in positions other than the 13 loci of interest, that could have appeared during the process of construction of the library, and that could have been non-neutral. To address this, we analyzed the number of mutations found at each position in cycle six (Appendix 1—figure 7A). Mutations clearly clustered in the 13 loci of interest and were distributed homogeneously along the rest of the gene at a lower frequency, except for an unexpected accumulation of mutations leading to a A234V substitution, that was initially included in our analysis.
 
@@ -218,18 +312,30 @@ The current trade-off in sequencing technologies between long reads and coverage
 
 To find epistatic interactions between mutations, we focused on the first two time-points because the profile of the genetic background for each mutation changes with time, influencing the apparent fitness of mutations and precluding proper analysis. To assess the significance of our epistasis estimates in the face of the counting noise inherent in deep-sequencing experiments, we simulated our experiment by starting with the observed genotype counts from the initial library and using the fitness estimates obtained for single mutations to compute genotype counts after cycle one, assuming independent mutation effects (no epistasis). The new counts were computed by Poisson sampling, using the observed total counts for cycle one, and apparent epistasis was calculated from this simulated data as for the real data. The results from multiple no-epistasis simulations could then be confronted with our real epistasis estimates (Figure 6c,d and e).
 
-## Data processing
+### Data processing
 
 In order to analyze epistatic interactions between mutations we removed all sequences that were not WT at positions 319 and 320, and all sequences that were not WT or the expected mutant at all other positions.
 
-## Fitness estimation
+### Fitness estimation
 
 The limited read coverage of mutant sequences constrained us to measuring the fitness effects of focal mutations averaged over all backgrounds present in the library, rather than specifically in the WT background. Thus, the relative fitness effect of a particular mutation (or mutation pair) is defined as the collective fitness of all sequences carrying the mutation (or mutation pair) relative to the fitness of all sequences who are WT at the relevant position(s). This in fact provides a more general measure of fitness which takes into account a mutation’s average epistasis with the genetic background of our library, rather than just focusing on its effect in a single background (ie. the WT background). This approach is permitted by the common profile of the genetic background for all single mutations and mutation pairs at t0, as well as for their respective WT-containing reference sequences (Supplementary file 4), and by the sufficient read coverage at this level of diversity (for single mutations: 910x at t0 and 127x at t1; for double mutations: 182x at t0 and 25x at t1). However, only t0 and t1 could be used for the approach to be valid, as the profile of the genetic background of each focal mutation can change differently over time, due indeed principally to epistasis between focal mutations and the genetic background.
 
-As only a single selection cycle is taken into account, the relative fitness effect, w, of a focal mutation, i, is computed as:Wi=In(mutit1/mutit0,)here mutit0 and mutit1 are the ratio of mutant i counts to the relevant WT reference counts (those sequences with a WT residue at position i) at t0 and t1, respectively. The same principle is applied for calculating the relative fitness effect of mutation pairs. Pairwise epistasis, ε, between focal mutations, i and j, is computed as:εij=Wij−(Wi+Wj),where wij is the relative fitness of the double mutant.
+As only a single selection cycle is taken into account, the relative fitness effect, w, of a focal mutation, i, is computed as:
 
-## Simulation of selection-sequencing experiment as a null model of pairwise epistasis
+$$
+W_{i}=In(mut_{i}^{t1}/mut_{i}^{t0},)
+$$
+
+here mutit0 and mutit1 are the ratio of mutant i counts to the relevant WT reference counts (those sequences with a WT residue at position i) at t0 and t1, respectively. The same principle is applied for calculating the relative fitness effect of mutation pairs. Pairwise epistasis, ε, between focal mutations, i and j, is computed as:
+
+$$
+\epsilon_{ij}=W_{ij}−(W_{i}+W_{j}),
+$$
+
+where wij is the relative fitness of the double mutant.
+
+### Simulation of selection-sequencing experiment as a null model of pairwise epistasis
 
 To assess the significance of our pairwise epistasis measures, we simulated the selection-sequencing experiment under the assumption of no epistasis to see how much of the measured epistasis might be due not to true fitness interactions but to errors in fitness measurement. The main source of noise was assumed to be sampling noise arising from the limited sequencing read coverage (any sampling noise arising from the selection-enrichment protocol itself was neglected, due to the maintenance of a large population size relative to mutant diversity). Other sources of noise, such as off-target mutations, are outside of our reach, and so the epistasis confidence estimates derived here serve as an upper bound.
 
-Simulations were initiated with the real count data for t0, and every genotype was assigned a relative fitness, w, based on the real fitness estimates for single focal mutations and the assumption of no epistasis between mutations (unlike above, w is defined here on a linear, rather than ln, scale). Poisson sampling, based on the real total sequencing reads for t0, was performed to simulate true genotype frequencies at t0. t1 genotype frequencies were then generated according to: fat1 = fatt0 x wa/w¯t0, where fat0 and fat1 denote the frequency of genotype a at t0 and t1, respectively, wa is the relative fitness of genotype a, computed as described above, and w¯t0 is the mean fitness of all genotypes at t0. Finally, t1 counts were generated from the simulated t1 frequencies by an additional Poisson sampling, based on the real total sequencing reads for t1. The simulated t1 counts could then be used along with the real t0 counts to derive fitness estimates for all single focal mutations and mutation pairs, and thus pairwise epistasis estimates for all mutation pairs, exactly as for the real data. 1000 simulations were performed, and the resulting distributions of pairwise epistasis estimates were compared directly with the real pairwise epistasis estimates to assign them confidence values (simply the frequency at which the simulated estimates are less than, or greater than, the real estimate, for positive and negative epistasis, respectively) (Supplementary files 5 and 6).
+Simulations were initiated with the real count data for t0, and every genotype was assigned a relative fitness, w, based on the real fitness estimates for single focal mutations and the assumption of no epistasis between mutations (unlike above, w is defined here on a linear, rather than ln, scale). Poisson sampling, based on the real total sequencing reads for t0, was performed to simulate true genotype frequencies at t0. t1 genotype frequencies were then generated according to: fat1 = fatt0 x wa/$w¯$t0, where fat0 and fat1 denote the frequency of genotype a at t0 and t1, respectively, wa is the relative fitness of genotype a, computed as described above, and $w¯$t0 is the mean fitness of all genotypes at t0. Finally, t1 counts were generated from the simulated t1 frequencies by an additional Poisson sampling, based on the real total sequencing reads for t1. The simulated t1 counts could then be used along with the real t0 counts to derive fitness estimates for all single focal mutations and mutation pairs, and thus pairwise epistasis estimates for all mutation pairs, exactly as for the real data. 1000 simulations were performed, and the resulting distributions of pairwise epistasis estimates were compared directly with the real pairwise epistasis estimates to assign them confidence values (simply the frequency at which the simulated estimates are less than, or greater than, the real estimate, for positive and negative epistasis, respectively) (Supplementary files 5 and 6).

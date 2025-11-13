@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.42214.001 Elevated glucose increases vascular reactivity by promoting L-type Ca V 1.2 channel (LTCC) activity by protein kinase A (PKA). Yet, how glucose activates PKA is unknown. We hypothesized that a G s -coupled P2Y receptor is an upstream activator of PKA mediating LTCC potentiation during diabetic hyperglycemia. Experiments in apyrase-treated cells suggested involvement of a P2Y receptor underlying the glucose effects on LTTCs. Using human tissue, expression for P2Y 11 , the only G s -coupled P2Y receptor, was detected in nanometer proximity to Ca V 1.2 and PKA. FRET-based experiments revealed that the selective P2Y 11 agonist NF546 and elevated glucose stimulate cAMP production resulting in enhanced PKA-dependent LTCC activity. These changes were blocked by the selective P2Y 11 inhibitor NF340. Comparable results were observed in mouse tissue, suggesting that a P2Y 11 -like receptor is mediating the glucose response in these cells. These findings established a key role for P2Y 11 in regulating PKA-dependent LTCC function and vascular reactivity during diabetic hyperglycemia.
+Elevated glucose increases vascular reactivity by promoting L-type CaV1.2 channel (LTCC) activity by protein kinase A (PKA). Yet, how glucose activates PKA is unknown. We hypothesized that a Gs-coupled P2Y receptor is an upstream activator of PKA mediating LTCC potentiation during diabetic hyperglycemia. Experiments in apyrase-treated cells suggested involvement of a P2Y receptor underlying the glucose effects on LTTCs. Using human tissue, expression for P2Y11, the only Gs-coupled P2Y receptor, was detected in nanometer proximity to CaV1.2 and PKA. FRET-based experiments revealed that the selective P2Y11 agonist NF546 and elevated glucose stimulate cAMP production resulting in enhanced PKA-dependent LTCC activity. These changes were blocked by the selective P2Y11 inhibitor NF340. Comparable results were observed in mouse tissue, suggesting that a P2Y11-like receptor is mediating the glucose response in these cells. These findings established a key role for P2Y11 in regulating PKA-dependent LTCC function and vascular reactivity during diabetic hyperglycemia.
 
 ## Introduction
 
@@ -44,9 +44,21 @@ Eight functionally diverse G protein-coupled P2Y receptors have been identified 
 
 ## Results
 
-## Glucose-induced extracellular nucleotide release mediates Ser1928 phosphorylation, increased LTCC activity and vasoconstriction
+### Glucose-induced extracellular nucleotide release mediates Ser1928 phosphorylation, increased LTCC activity and vasoconstriction
 
 In our first series of experiments, we pressurized (60 mmHg) mouse cerebral arteries to develop stable and spontaneous tone (Supplementary file 1 and 2). When increasing extracellular glucose from 10 mM to 20 mM D-glucose, there was a significant constriction (Figure 1A and Supplementary file 1 and 2), which is consistent with previous reports by our group and others (Jackson et al., 2016; Nystoriak et al., 2017). These extracellular D-glucose concentrations are used because they are within the range of observed nonfasting glucose levels in nondiabetic and diabetic mouse models (Lagaud et al., 2001; Moien-Afshari et al., 2008; Navedo et al., 2010b; Nieves-Cintrón et al., 2015; Nystoriak et al., 2014; Nystoriak et al., 2017). Considering that elevating glucose in the external milieu may trigger autocrine release of nucleotides (Costa et al., 2009; Hazama et al., 1998; Nilsson et al., 2006; Parodi et al., 2002), we investigated whether hydrolysis of extracellular nucleotides would ablate glucose-mediated vasoconstriction. For these experiments, pressurized arteries (60 mmHg) were pre-treated with the ectonucleotidase apyrase (0.32 U/mL) in a 10 mM D-glucose solution for 10 min. Apyrase-treated arteries failed to constrict to 20 mM D-glucose (Figure 1A and Supplementary file 2). Vasoconstriction in response to 60 mM potassium (K+) in which the membrane potential closely follows the equilibrium potential for K+ (~−20 mV) (Knot and Nelson, 1998), was similar in control and apyrase-treated arteries (Figure 1—figure supplement 1A and Supplementary file 1 and 2). These results suggest that differences in glucose-induced vasoconstriction were not due to an inability of apyrase-treated arteries to respond to 20 mM D-glucose. Furthermore, the glucose-induced constriction was not attributed to changes in osmolarity as treatment with equimolar concentrations of the nonpermeable mannitol (20 mM = 10 mM D-glucose +10 mM mannitol) had no effect on vascular reactivity (Figure 1—figure supplement 1B and Supplementary file 1 and 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative diameter recordings and summary arterial tone data from pressurized (60 mmHg) wt mouse cerebral arteries before and after application of 20 mM D-glucose in the absence (n = 6 arteries from six mice) and presence (n = 6 arteries from six mice) of apyrase (apy; 0.32 U/ml; *p<0.05, Wilcoxon matched pairs test; Figure 1—source data 1). (B) Characteristic IBa recordings from the same cell and summary IBa data from wt mouse cerebral arterial myocytes evoked by step depolarizations from −70 to +10 mV before and after application of 20 mM D-glucose in the absence (n = 11 cells from five mice) and presence of apyrase (n = 9 cells from five mice) (*p<0.05, paired t test; Figure 1—source data 2). (C) Representative immunoblot detection of phosphorylated Ser1928 (pSer1928) and total CaV1.2 from wt mouse cerebral and mesenteric arteries after 10 min incubation with 10 mM or 20 mM D-glucose in the absence and presence of apyrase (n = 10 arterial lysates per condition), and quantification of pSer1928 (AU = arbitrary units) (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 1—source data 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Bar plot of % constriction in response to high K+ (60 mM) from wt mouse cerebral arteries exposed to 10 mM D-glucose in the absence and presence of apyrase (apy; 0.32 U/ml; n = 6 arteries from six mice per condition; Figure 1—figure supplement 1—source data 1). Response to high K+ (60 mM) was obtained in pressurized arteries at 20 mmHg. (B) Representative diameter recording and summary arterial tone data from pressurized (60 mmHg) wt mouse cerebral arteries before and after application of 20 mM mannitol (n = 6 arteries from six mice; Figure 1—figure supplement 1—source data 2). (C) Exemplary IBa recording from the same cell and summary IBa data from wt mouse cerebral arterial myocytes evoked by step depolarizations from −70 to +10 mV before and after application of 20 mM mannitol (n = 7 cells from three mice; Figure 1—figure supplement 1—source data 3). (D) Complete scan of representative phosphorylated Ser1928 (pSer1928) and total CaV1.2 blots for mouse arteries incubated with 10 mM D-glucose, 20 mM D-glucose and 20 mM D-glucose +apyrase. Red boxes indicate the crop region displayed in the main Figure 1C. (E) Representative immunoblot detection of phosphorylated Ser1928 (pSer1928) and α-tubulin (loading control) from wt mouse arteries after 10 min incubation in either 10 mM D-glucose or 20 mM mannitol (n = 5 arterial lysates from five mice per condition) and quantification of pSer1928 (AU = arbitrary units) (*p=0.3835, unpaired t-test; Figure 1—figure supplement 1—source data 4).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative IBa recordings from the same cell and (B) summary IBa data from wt mouse cerebral arterial myocytes induced by step depolarizations from −70 to +10 mV during exposure to 10 mM D-glucose and in response to 20 mM D-glucose with constant bath perfusion (flow) and after stopping perfusion (e.g. static) (n = 9 cells from three mice; *p<0.05, Friedman Test with Dunn’s multiple comparisons; Figure 1—figure supplement 2—source data 1). For these experiments, cells were patched in a bath solution containing 10 mM D-glucose at a perfusion rate of 2.1 mL/min. After establishment of a stable gigaseal for at least 5 min, IBa were recorded in the presence of 10 mM D-glucose under continuous flow. Cells were then perfused with a bath solution containing 20 mM D-glucose under continuous flow for at least 5 min before recording of IBa again. Subsequently, the bath perfusion was stopped, and cells were bathed in the 20 mM D-glucose solution under static bath condition for five more minutes before recording IBa one more time. If the three experimental conditions could not be performed in the same cells, the results were discarded.
 
 LTCC activity is critical for vascular reactivity (Knot and Nelson, 1998), and its function is enhanced in response to acute increases in glucose and in diabetes due to increased Ser1928 phosphorylation in the CaV1.2 carboxy terminal (Morotti et al., 2017; Navedo et al., 2010b; Nystoriak et al., 2017). We, thus, examined whether nucleotide degradation with apyrase prevents glucose-mediated increases in LTCC activity and Ser1928 phosphorylation. To assess this, we used ﻿patch-clamp electrophysiology in the whole-cell perforated configuration with barium (Ba2+) as the charge carrier, before and after application of nifedipine to determine the nifedipine-sensitive Ba2+ current (IBa) associated with LTCC activity in control and apyrase-treated cerebral arterial myocytes. We found that 20 mM D-glucose significantly enhanced IBa in wild type (wt) control arterial myocytes, but not in apyrase-treated cells (Figure 1B). The glucose effect on LTCC activity was not due to changes in osmolarity as 20 mM mannitol had no impact on IBa (Figure 1—figure supplement 1C).
 
@@ -54,35 +66,99 @@ We next performed Western blot analysis with a specific phospho-antibody against
 
 To further test this possibility, LTCC activity was recorded in response to elevated glucose during continuous perfusion or static bath conditions (as above). The rationale for these experiments was to determine whether the wash out of nucleotides with flow can impact the glucose-induced potentiation of LTCCs. We found statistically similar IBa in cells exposed to 10 mM and 20 mM D-glucose under continuous bath perfusion (Figure 1—figure supplement 2). Conversely, IBa was significantly elevated in arterial myocytes exposed to 20 mM D-glucose when the bath perfusion was stopped (e.g. static bath conditions). These results suggest that secreted nucleotides could diffuse away under continuous flow, whereas under static bath conditions, they could accumulate in or around the area of release at the surface membrane of arterial myocytes to induce the optimal activation of the signaling pathway underlying increased LTCC activity in response to elevations in extracellular glucose.
 
-## P2Y11 receptors are in close proximity to CaV1.2 and PKAcat in arterial myocytes
+### P2Y11 receptors are in close proximity to CaV1.2 and PKAcat in arterial myocytes
 
 Extracellular nucleotides are well-known activators of G-coupled P2Y receptors (von Kügelgen and Harden, 2011). P2Y11 is a Gs-coupled P2Y receptor that could activate PKA (Communi et al., 1997; Kennedy, 2017; Schuchardt et al., 2012; von Kügelgen and Harden, 2011), and this could lead to enhanced Ser1928 phosphorylation, LTCC activity, and vasoconstriction during diabetic hyperglycemia. Using Western blot analysis, we first validated the P2Y11 antibody in tsA-201 cells, which endogenously express P2Y11 (Dreisig and Kornum, 2016), by over-expressing human GFP-tagged P2Y11 and by knocking down the endogenous and over-expressed receptor with specific P2Y11 antisense oligodeoxynucleotides (ODNs) (Figure 2A and B). We subsequently detected an immunoreactive band of the expected molecular weight for P2Y11 (~40 kDa) in lysates from freshly dissected human adipose arteries (Figure 2C and Figure 2—figure supplement 1A). This band seems specific for P2Y11 since treatment of human arteries with specific human P2Y11 antisense ODNs knocked down ~50% of the basal P2Y11 protein abundance (Figure 2—figure supplement 1B). Confocal imaging and line profile analysis of P2Y11-associated fluorescence and the plasma membrane marker wheat germ agglutinin (WGA) suggest a prominent distribution of the receptor on the surface membrane of freshly dissociated human arterial myocytes (Figure 2D and E). This was not observed when the antibody for P2Y11 was omitted from the preparation (Figure 2—figure supplement 1C). These results suggest expression of P2Y11 in human arterial myocytes. We observed comparable results in mouse arterial lysates and arterial myocytes, including detection and knock down with P2Y11 ODNs of an immunoreactive band of the expected molecular weight for P2Y11 (Figure 2C and Figure 2—figure supplement 1A, B and D). A band of ~110–120 kDa was observed in mouse arterial lysates, perhaps reflecting the formation of heterodimers between the P2Y11 receptor itself or other purinergic/G protein-coupled receptors, as previously reported (Barragán-Iglesias et al., 2015; Barragán-Iglesias et al., 2014; Ecke et al., 2008; Nishimura et al., 2016). We also found expected distribution of P2Y11-like-associated fluorescence at the surface membrane of mouse arterial myocytes (Figure 2D and E), which was not observed when the primary antibody was omitted or boiled (Figure 2—figure supplement 1C and E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative blot of immunoreactive bands of expected molecular weight for endogenous P2Y11 (~40 kDa), overexpressed P2Y11-GFP (~70 kDa), and β-actin (~43 kDa) in untransfected, vehicle-treated (empty transfection) and P2Y11-GFP transfected tsA-201 cells (n = 3 lysates per condition). Note that tsA-201 cells endogenously express P2Y11 (Dreisig and Kornum, 2016). (B) Representative blot of immunoreactive bands of expected molecular weight for endogenous P2Y11 (~40 kDa), overexpressed P2Y11-GFP (~70 kDa), and β-actin (~43 kDa) in tsA-cells transfected with P2Y11-GFP as well as corresponding P2Y11 sense (SNS) or antisense (ANS) ODNs (64% reduction in endogenous P2Y11 expression in cells treated with ANS; 62% reduction in P2Y11-GFP expression in P2Y11-GFP-transfected cells treated with ANS; n = 3 lysates per condition; Figure 2—source data 1). (C) Representative immunoblot detection of P2Y11 (~40 kDa) in lysates from human and wt mouse arteries (n = 3 arterial lysates per sample). (D) Representative confocal images of P2Y11-associated fluorescence (green), wheat germ agglutinin (WGA, red) and merged channels in human (n = 11 cells from three humans) and wt mouse (n = 14 cells from three mice) arterial myocytes. (E) Line profile of the P2Y11- and WGA-associated fluorescence from the area highlighted by the dotted lines in the representative human and mouse arterial myocytes in D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Full-length blot corresponding to Figure 2C. Red box indicates the crop region displayed in main figure. (B) Representative blots of immunoreactive bands of expected molecular weight for P2Y11 (~40 kDa) in human (n = 5 arterial lysates per condition) and mouse (n = 5 arterial lysates per condition) arterial lysates treated with P2Y11 sense (SNS) and antisense (ANS) ODNs (*p<0.05, Wilcoxon matched pairs test; Figure 2—figure supplement 1—source data 1). (C) Representative confocal images of human (left; n = 10 cells from two humans) and mouse (right; n = 10 cells from two mice) arterial myocytes in which the primary antibody for P2Y11 (no 1° Ab) was excluded from the preparation (e.g. negative control). Wheat germ agglutinin (WGA, red) was used to label the plasma membrane. (D) Representative blots of immunoreactive bands of expected molecular weight for P2Y11 (~40 kDa) and total protein in isolated mouse arterial myocyte lysates (n = 2 lysates). (E) Exemplary confocal images of P2Y11-associated fluorescence (left) and wheat germ agglutinin (WGA, right) in wt mouse arterial myocytes stained with unboiled (n = 7 cells from six mice) or boiled (n = 7 cells from six mice) P2Y11 primary antibody.
+
 If P2Y11 is involved in PKA-mediated activation of LTCCs in response to elevated glucose, we hypothesized that a subpopulation of these receptors should be localized in close proximity to CaV1.2 and PKAcat. To test this possibility, we examined the spatial relationship of P2Y11 with CaV1.2 and PKAcat in freshly dissociated human arterial myocytes using GSD super-resolution nanoscopy in the Total Internal Reflection Fluorescence (TIRF) configuration. This approach achieves a lateral resolution of ~20 nm with selective illumination of the (sub)sarcolemmal region. Note that the FP1 antibody against CaV1.2 has been extensively validated by our group (Buonarati et al., 2017; Hall et al., 2013; Nystoriak et al., 2017; Patriarchi et al., 2016). The PKAcat antibody was validated in arterial myocytes by pre-absorption with a blocking peptide (Figure 3—figure supplement 1). The GSD super-resolution localization maps (Figure 3A and B, bottom panels) for P2Y11, CaV1.2, and PKAcat obtained from conventional TIRF images (Figure 3A and B, top panels) showed that these proteins form clusters of various sizes (Figure 3C) and density (Figure 3D) at the sarcolemma of human arterial myocytes. Whereas clusters were broadly expressed throughout the sarcolemma, merged spatial maps of P2Y11 with CaV1.2 or PKAcat suggested a close association between a subset of these proteins (Figure 3E and F). Indeed, histograms of the P2Y11-to-nearest CaV1.2 or PKAcat distances revealed that the closest centroids for P2Y11-CaV1.2 and P2Y11- PKAcat were at 59 nm and 58 nm, respectively (Figure 3G and H). Similar results were observed using freshly dissociated mouse cerebral arterial myocytes (Figure 3—figure supplement 2). Clusters of P2Y11, CaV1.2, or PKAcat were never observed when primary antibodies were omitted from the human or mouse preparation (Figure 3—figure supplement 3A and B). To determine whether the interaction between a subpopulation of P2Y11 with a pool of CaV1.2 and PKA in arterial myocytes is the result of specific organization between two proteins, we compared the percentage of P2Y11 and CaV1.2/PKAcat overlap between experimental super-resolution localization maps and images containing randomized distribution of P2Y11, CaV1.2 and PKAcat. Randomized images for P2Y11-CaV1.2 and P2Y11-PKAcat were generated based on data derived from the experimental super-resolution localization maps for these pairs of proteins using the Coste’s randomization algorithm included in the JACoP plug-in in ImageJ (Bolte and Cordelières, 2006). Our analysis found that the percentage of overlap between P2Y11-CaV1.2 and P2Y11-PKAcat obtained from the experimental localization maps was significantly higher than that observed for a simulated random distribution between P2Y11-CaV1.2 and P2Y11-PKAcat (Figure 3I and Figure 3—figure supplement 3C). These results suggest an intimate association between subpopulations of P2Y11-CaV1.2 and P2Y11-PKAcat.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig3-v1.jpg)
+
+**Figure 3.:** Representative conventional TIRF images (top) and corresponding GSD reconstruction maps (bottom) from human arterial myocytes labeled for (A) P2Y11 and CaV1.2 and (B) P2Y11 and PKAcat. Lower panels display enhanced magnifications of areas shown in yellow boxes (scale bar, 400 nm). (C) Histograms of the area of P2Y11, CaV1.2 and PKAcat clusters in isolated human arterial myocytes (1621 ± 29, 1209 ± 16 and 1322 ± 20 nm2, respectively; Figure 3—source data 1). (D) Bar plot of cluster density for P2Y11, CaV1.2 and PKAcat (38 ± 2, 29 ± 4, and 25 ± 3 clusters/µm2, respectively; Figure 3—source data 2). Enlarged merged image (left) and associated x-y fluorescence intensity profile (right) from area highlighted by the dotted lines of sites of close proximity between (E) P2Y11 (red) and CaV1.2 (green) and (F) P2Y11 (red) and PKAcat (green) (scale bar, 200 nm). Histograms of the lowest intermolecular distance to P2Y11 centroids for (G) CaV1.2 (n = 19,611 particles from 6 cells; Figure 3—source data 3) and (H) PKAcat (n = 22,425 particles from 6 cells; Figure 3—source data 4) fluorescence particles. Data were fit with a sum of two Gaussian functions with depicted R2 and centroids. (I) Bar plot of % overlap of P2Y11 with CaV1.2 or PKAcat for experimental (CaV1.2: n = 36 segments from 12 cells; PKAcat: n = 22 segments from 11 cells) and randomized simulations images (CaV1.2: n = 6 segments from 6 cells; PKAcat: n = 6 segments from 6 cells) (*p<0.05, unpaired t test with Welch’s correction; Figure 3—source data 5).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative confocal images of PKAcat-associated fluorescence (top) and differential interference contrast (DIC, bottom) in wt mouse arterial myocytes stained with an anti-PKAcat antibody (- PKAcat blocking peptide on left side; n = 7 cells) and an anti-PKAcat antibody preabsorbed with a PKAcat blocking peptide (+PKAcat blocking peptide on right side; n = 8 cells).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Representative TIRF images (top) and corresponding GSD reconstruction maps (bottom) from murine arterial myocytes labeled for (A) P2Y11 and CaV1.2 and (B) P2Y11 and PKAcat. Lower panels show enhanced magnifications of areas highlighted in yellow boxes (scale bar, 400 nm). (C) Histograms of the area of P2Y11, CaV1.2 and PKAcat clusters in arterial myocytes (1803 ± 22, 2111 ± 68, and 1836 ± 28 nm2, respectively; Figure 3—figure supplement 2—source data 1). (D) Bar plot of cluster density for P2Y11, CaV1.2 and PKAcat (37 ± 2, 24 ± 2, and 23 ± 3 clusters/µm2, respectively; Figure 3—figure supplement 2—source data 2). Enlarged merged image (left) and associated x-y fluorescence intensity profile (right) from area highlighted by the dotted lines of sites of close proximity between (E) P2Y11 (red) and CaV1.2 (green) and (F) P2Y11 (red) and PKAcat (green) (scale bar, 200 nm). Histograms of the lowest intermolecular distance to P2Y11 centroids for (G) CaV1.2 (n = 23,722 particles from 6 cells; Figure 3—figure supplement 2—source data 3) and (H) PKAcat (n = 19,219 particles from 5 cells; Figure 3—figure supplement 2—source data 4) fluorescence particles. Data were fit with a sum of two Gaussian functions with depicted R2 and centroids.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Representative TIRF images (top) and corresponding GSD reconstruction maps (bottom) from freshly dissociated (A) human (n = 6 cells from four humans) and (B) mouse (n = 6 cells from six mice) arterial myocytes labeled with secondary antibodies only (no 1° Ab, Alexa 647 or no 1° Ab, Alexa 568). (C) Representative binarized sub-image area of experimental GSD super-resolution localization maps (top) and randomized simulation distribution images (bottom) for P2Y11 with CaV1.2 (left panels; experimental, n = 38 sub-image area from 12 cells; randomized, n = 6 sub-image area from 6 cells) and P2Y11 with PKAcat (right panels; experimental, n = 24 sub-image area from 11 cells; randomized, n = 6 sub-image area from 6 cells) in arterial myocytes. A smoothing filter was applied to the P2Y11, CaV1.2 and PKAcat images for presentation. Note that randomization data were repeated six times from six different experimental GSD super-resolution localization maps. The overlap images for both experimental and simulated data were generated by multiplying the P2Y11 image by the respective CaV1.2 or PKAcat image, thus revealing overlapping objects.
 
 We used the proximity ligation assay (PLA) as an additional analytical tool to examine the association between P2Y11 and CaV1.2 or PKAcat. PLA fluorescence puncta are only observed if proteins of interest are 40 nm or less apart (Fredriksson et al., 2002). We have extensively validated this approach in previous studies (Nieves-Cintrón et al., 2017; Nystoriak et al., 2017). Whereas PLA signals were absent when at least one primary antibody was omitted (Figure 4—figure supplement 1), robust fluorescent puncta were detected in human (Figure 4A and B) and mouse (Figure 4C and D) arterial myocytes co-labeled for P2Y11 and CaV1.2 or P2Y11 and PKAcat. Altogether, these results suggest that human P2Y11 or mouse P2Y11-like receptors are located on the surface membrane of arterial myocytes within nanometer proximity (~≤40 nm) of a subpopulation of CaV1.2 and PKAcat.
 
-## Increased sarcolemmal cAMP synthesis in arterial myocytes in response to a P2Y11 agonist recapitulates glucose effects
+![Figure 4.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig4-v1.jpg)
+
+**Figure 4.:** (A) Exemplary fluorescence PLA (red)/DAPI (blue) and differential interference contrast (right) images of human arterial myocytes labeled for P2Y11 + CaV1.2 and P2Y11 + PKAcat. (B) Quantification of PLA fluorescent puncta per cell area (puncta/µm2) for human arterial myocytes labeled for P2Y11 (n = 26 cells from three human samples), CaV1.2 (n = 20 cells from three humans), PKAcat (n = 17 cells from three humans), P2Y11 + CaV1.2 (n = 23 cells from three humans), and P2Y11 + PKAcat (n = 20 cells from three humans) (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 4—source data 1). (C) Representative fluorescence PLA (red)/DAPI (blue) and differential interference contrast (right) images of mouse arterial myocytes labeled for P2Y11 + CaV1.2 and P2Y11 + PKAcat. (D) Quantification of PLA fluorescent puncta per µm2 cell area for mouse arterial myocytes labeled for P2Y11 (n = 44 cells from six mice), CaV1.2 (n = 15 cells from six mice), PKAcat (n = 19 cells from six mice), P2Y11 + CaV1.2 (n = 25 cells from six mice), and P2Y11 + PKAcat (n = 29 cells from six mice) (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 4—source data 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Fluorescence PLA (red)/DAPI (blue) (left) and differential interference contrast (right) images of negative controls for human (A) and murine (B) arterial myocytes labeled with one 1° antibody (CaV1.2: n = 20 cells from three humans, n = 15 cells from six mice; P2Y11: n = 26 cells from three humans, n = 44 cells from six mice; PKAcat: n = 17 cells from three humans, n = 19 cells from six mice).
+
+### Increased sarcolemmal cAMP synthesis in arterial myocytes in response to a P2Y11 agonist recapitulates glucose effects
 
 P2Y11 can stimulate adenylyl cyclase (AC) activity to produce cAMP (Communi et al., 1997; Kennedy, 2017; Schuchardt et al., 2012; von Kügelgen and Harden, 2011). Thus, we first used a membrane-targeted Epac1-camps-based FRET sensor (ICUE3-PM) (Allen et al., 2006; Liu et al., 2011) expressed in tsA-201 cells to validate the P2Y11 pharmacology (Figure 5—figure supplement 1A) (Dreisig and Kornum, 2016). As expected, the highly selective P2Y11 agonist NF546 (500 nM) (Meis et al., 2010) increased cAMP synthesis in these cells. This NF546-induced cAMP response remained intact in cells pretreated with either selective P2Y1 (10 µM MRS2179) or P2Y6 (100 nM MRS2578) inhibitors but was prevented in cells exposed to the selective P2Y11 inhibitor NF340 (10 µM; 500-fold more selective for P2Y11 than other P2Y receptors) (Meis et al., 2010).
 
 We recapitulated the NF546-induced cAMP response and its ablation by pretreatment with NF340 in primary, unpassaged human arterial myocytes expressing the ICUE3-PM sensor (Figure 5A and B). Increasing D-glucose concentration from 5 mM to 15 mM, which are glucose concentrations comparable to those observed in nondiabetic and diabetic patients respectively, induced a small yet significant increase in cAMP synthesis in human cells (Figure 5A and B). The glucose effects are not due to osmotic changes as equimolar concentrations of the non-permeable mannitol did not induce any cAMP synthesis (Figure 5—figure supplement 1B). As expected, the synthesis of cAMP was further amplified by the broad AC activator forskolin (1 μM) (Figure 5A) even in the presence of 20 mM mannitol (Figure 5—figure supplement 1B). Simultaneous application of 15 mM D-glucose +NF546 resulted in cAMP synthesis of a similar magnitude to that induced by independent treatments (Figure 5A and B). This suggests that the effects of elevated glucose and the NF546 compound may be acting through a similar pathway that requires activation of P2Y11. Consistent with this notion, application of NF546 by itself or 15 mM D-glucose +NF546 failed to induce cAMP synthesis in cells pretreated with NF340 (Figure 5A and B). Yet forskolin, which bypasses P2Y11, was still able to stimulate global cAMP production. Similar results were observed in murine arterial myocytes expressing the ICUE3-PM sensor (Figure 5C and D and Figure 5—figure supplement 1C). Intriguingly, cAMP synthesis in response to elevated glucose and the P2Y11 agonist NF546 was significantly larger in human myocytes compared to mouse cells (glucose: 0.077 ± 0.003 in human vs 0.045 ± 0.002 in mouse; NF546: 0.083 ± 0.005 in human vs 0.045 ± 0.004 in mouse; p<0.05). The reasons for this are currently unclear but may include intrinsic differences associated with species (human vs mouse), blood vessels (human adipose arteries vs mouse aortae) and expression patterns of the biosensor in human vs mouse cells (Reddy et al., 2018), as well as variations in protein expression and receptor/enzyme activity (e.g. P2Y11, AC and PDE expression/activity) in human vs mouse arterial myocytes. Whether either or all of these factors contribute to distinctive cAMP responses in human vs mouse arterial myocytes as well as their physiological implications remain to be determined. Nevertheless, our findings suggest a role for human P2Y11 and mouse P2Y11-like receptors in glucose-induced cAMP synthesis.
 
-## The P2Y11 inhibitor NF340 prevents glucose-induced Ser1928 phosphorylation, LTCC activity and vasoconstriction
+![Figure 5.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig5-v1.jpg)
+
+**Figure 5.:** (A) Time course of YFP/CFP (donor/acceptor) FRET ratios (normalized to resting levels before treatment) in human arterial myocytes expressing the ICUE3-PM biosensor in response to 15 mM D-glucose (black; n = 19 cells from two humans), 500 nM NF546 (green; n = 18 cells from two humans) and 15 mM D-glucose +500 nM NF546 (red; n = 14 cells from two humans) before and after application of broad adenylyl cyclase agonist forskolin (1 µM). In a set of experiments, cells were first pre-treated with the P2Y11 antagonist NF340 (10 µM) for at least 15–20 min before treatment with 500 nM NF546 (orange; n = 15 cells from two humans) and 15 mM D-glucose +500 nM NF546 (blue; n = 13 cells from two humans). Horizontal bars indicate treatment. Increases in cAMP production are represented by decreases in YFP/CFP ratio due to binding of cAMP to the biosensor. (B) Bar plot of maximum FRET responses (YFP/CFP) for human arterial myocytes in response to the indicated treatment (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 5—source data 1. Statistical differences were compared between 15 mM D-glucose vs NF546, 15 mM D-glucose vs 15 mM D-glucose +NF546, 15 mM D-glucose vs NF546 +NF340, 15 mM D-glucose vs 15 mM D-glucose +NF546+NF340, NF546 vs NF546 +NF340, NF546 vs 15 mM D-glucose +NF546, NF546 vs 15 mM D-glucose +NF546+NF340, 15 mM D-glucose +NF546 vs 15 mM D-glucose +NF546+NF340). (C) Time course of YFP/CFP (donor/acceptor) FRET ratios (normalized to resting levels before treatment) in mouse arterial myocytes expressing the ICUE3-PM biosensor in response to 20 mM D-glucose (black; n = 83 cells from three mice), 500 nM NF546 (green; n = 13 cells from three mice) and 20 mM D-glucose +500 nM NF546 (red; n = 13 cells from three mice). Horizontal bars indicate treatment. In a set of experiments, cells were first pre-treated with the P2Y11 antagonist NF340 (10 µM) for at least 15–20 min before treatment with 500 nM NF546 (orange; n = 17 cells from three mice) and 20 mM D-glucose +500 nM NF546 (blue; n = 18 cells from three mice). Increases in cAMP production are represented by decreases in YFP/CFP ratio due to binding of cAMP to the biosensor. (D) Bar plot of maximum FRET responses (YFP/CFP) for mouse arterial myocytes in response to the indicated treatment (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 5—source data 2. Statistical differences were compared between all datasets).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Time course of YFP/CFP (donor/acceptor) FRET ratios (normalized to resting levels before treatment) in tsA-201 cells expressing the ICUE3-PM biosensor in response to 500 nM NF546 (black; n = 19 cells) and 500 nM NF546 in the presence of the P2Y6 inhibitor MRS2578 (100 nM; green; n = 25 cells), P2Y1 inhibitor MRS2179 (10 μM; red; n = 18 cells) or the P2Y11 inhibitor NF340 (10 μM; orange; n = 20 cells) before and after application of the broad adenylyl cyclase agonist forskolin (1 µM). Horizontal bars indicate treatment. All inhibitors were applied to the preparation 15–20 min before treatment. Increases in cAMP production are represented by decreases in YFP/CFP ratio due to binding of cAMP to the biosensor. Bar plot of maximum FRET responses (YFP/CFP) for tsA-201 cells in response to the indicated treatment (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 5—figure supplement 1—source data 1). (B) Time course of YFP/CFP (donor/acceptor) FRET ratios (normalized to resting levels before treatment) in human arterial myocytes expressing the ICUE3-PM biosensor in response to 15 mM D-glucose (black; n = 19 cells from two humans), 500 nM NF546 (green; n = 18 cells from two humans), and 15 mM mannitol (purple; n = 17 cells from two humans) before and after application of forskolin (1 µM). Bar plot of maximum FRET responses (YFP/CFP) for human arterial myocytes in response to indicated treatment. Data for 15 mM D-glucose and NF546 are from Figure 5A (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 5—figure supplement 1—source data 2). (C) Time course of YFP/CFP (donor/acceptor) FRET ratios (normalized to resting levels before treatment) in mouse arterial myocytes expressing the ICUE3-PM biosensor in response to 20 mM D-glucose (black; n = 83 cells from three mice), 500 nM NF546 (green; n = 13 cells from three mice), and 20 mM mannitol (purple; n = 23 cells from three mice). Bar plot of maximum FRET responses (YFP/CFP) for mouse arterial myocytes in response to indicated treatment. Data for 20 mM D-glucose and NF546 is from Figure 5B (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 5—figure supplement 1—source data 3).
+
+### The P2Y11 inhibitor NF340 prevents glucose-induced Ser1928 phosphorylation, LTCC activity and vasoconstriction
 
 In our next series of experiments, we confirmed the glucose-induced increase in IBa detected in mouse arterial myocytes (Figure 1B) using freshly dissociated human arterial myocytes in which external glucose was elevated from 5 mM to 15 mM (Figure 6A and B). These results indicate that elevations in extracellular glucose also stimulate LTCC activity in human arterial myocytes (Nystoriak et al., 2017). The increase in IBa evoked by 15 mM D-glucose was prevented in human cells pretreated with NF340 (Figure 6A and B). Glucose-induced potentiation of IBa was also prevented in mouse arterial myocytes pretreated with NF340 (Figure 6C and D). However, inhibition of P2Y6 receptors with MRS2578, which has been implicated in myogenic tone regulation and glucose-induced NFAT activation in arterial myocytes (Brayden et al., 2013; Nilsson et al., 2006), failed to stop the increase in IBa in response to 20 mM D-glucose (Figure 6C and D). Note that basal IBa were similar in cells exposed to 10 mM D-glucose and 10 mM D-glucose +MRS2578, suggesting that inhibition of P2Y6 did not alter basal LTCC activity (Figure 6C and D). Altogether, these results suggest that P2Y6 receptors are not involved in glucose-induced potentiation of LTCC activity, and that these glucose effects are prevented with a P2Y11 inhibitor.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative IBa recordings from the same cell and (B) summary current density data obtained from freshly dissociated human arterial myocytes before and after increasing extracellular D-glucose from 5 mM to 15 mM in the absence (n = 12 cells from six humans) and presence (n = 10 cells from five humans) of NF340 (10 µM) (*p<0.05, paired t test; Figure 6—source data 1). (C) Exemplary IBa traces from the same cell and (D) amalgamated current density data recorded from mouse cerebral arterial myocytes treated with 10 µM NF340 (n = 8 cells from three mice) or 100 nM MRS2578 (n = 7 cells from five mice) before and after increasing extracellular D-glucose from 10 mM to 20 mM (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 6—source data 2). Representative immunoreactive bands for phosphorylated Ser1928 (pSer1928) and total CaV1.2 and densitometry for pSer1928/CaV1.2 ratio in lysates from (E) human arteries exposed to 5 mM and 15 mM D-glucose in the absence and presence of 10 µM NF340 (n = 6 arterial lysates per condition; *p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 6—source data 3) and (F) mouse cerebral and mesenteric arteries exposed to 10 mM or 20 mM D-glucose in the presence of 10 µM NF340 or 100 nM MRS2578 (n = 4 arterial lysates per condition; *p<0.05 Kruskal-Wallis with Dunn’s multiple comparisons; Figure 6—source data 4). Representative diameter recordings and summary data from pressurized (60 mmHg) mouse cerebral arteries exposed to (G–H) 10 µM NF340 (n = 4 arteries from four mice; Friedman with Dunn’s multiple comparisons; Figure 6—source data 5) or (I–J) 100 nM MRS2578 (n = 7 arteries from seven mice; *p<0.05, Wilcoxon matched pair test; Figure 6—source data 6) before and after application of 20 mM D-glucose.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative full-length blots corresponding to (A) Figure 6E and (B) Figure 6F. Red boxes indicate the crop region displayed in the main figure. (C) Bar plot of % constriction in response to 60 mM K+ from mouse arteries in control (-) condition (same control as in Figure 1—figure supplement 1A) and arteries pretreated with 10 µM NF340 (n = 4 arteries from four mice), 100 nM MRS2578 (n = 7 arteries from seven mice) or 10 µM MRS2179 (n = 7 arteries from four mice) (Figure 6—figure supplement 1—source data 1). (D) Representative diameter recording and summary data from pressurized (60 mmHg) mouse cerebral arteries exposed to 10 µM MRS2179 before and after application of 20 mM D-glucose in the absence and presence of 500 nM NF546 (n = 7 arteries from four mice; *p<0.05, Friedman test with Dunn’s multiple comparisons for datasets in the presence of MRS2179. Mann-Whitney test was performed between 10 mM D-glu and 10 mM D-glu +MRS2179; Figure 6—figure supplement 1—source data 2). (E) Representative diameter recording and summary data from pressurized (60 mmHg) mouse cerebral arteries exposed to 20 mM D-glucose before and after application of 10 µM MRS2179 (n = 6 arteries from six mice; *p<0.05, Friedman test with Dunn’s multiple comparisons; Figure 6—figure supplement 1—source data 3).
+
 Since the P2Y11 inhibitor hindered the glucose effects on LTCC activity, we also explored whether the NF340 compound interfered with the Ser1928 phosphorylation state of the channel and vascular reactivity in response to hyperglycemia. As observed in mouse arteries (Figure 1C), we found that elevating extracellular glucose significantly increased Ser1928 phosphorylation in human arterial lysates (Figure 6E; Figure 6—figure supplement 1A). Yet, this glucose-mediated increase in Ser1928 phosphorylation was prevented if arterial lysates were pretreated with NF340, whereas phosphorylation still occurred if arterial lysates were pretreated with the P2Y6 inhibitor MRS2578 (Figure 6E and F, and Figure 6—figure supplement 1A and B). Furthermore, vasoconstriction in response to elevated glucose was blocked in pressurized (60 mmHg) mouse cerebral arteries exposed to NF340 (Figure 6G and H and Supplementary file 2) but not to MRS2578 (Figure 6I and J and Supplementary file 2). Note that while arterial tone was similar in control and NF340-treated arteries, it was reduced in arteries exposed to MRS2578 (Figure 6I and J), which is in line with recent data showing that P2Y6 is a sensor of pressure-induced constriction (Brayden et al., 2013). Vasoconstriction in response to 60 mM K+ was similar in control and NF340 as well as MRS2578-treated arteries (Figure 6—figure supplement 1C and Supplementary file 1 and 2). We also evaluated a potential role for P2Y1 receptors in stimulating PKA-mediated vasoconstriction as these receptors have been suggested to crosstalk with P2Y11 to regulate their function in HEK cells and neurons (del Puerto et al., 2012; King and Townsend-Nicholson, 2008). Data revealed that the glucose-induced vasoconstriction was not altered by adding the selective P2Y1 inhibitor MRS2179 (10 μM) either before or after 20 mM D-glucose stimulation (Figure 6—figure supplement 1D and E and Supplementary file 1 and 2). These results suggest that the P2Y1 receptor is not involved in glucose-mediated vasoconstriction. Together, these data demonstrate the effectiveness of a P2Y11 inhibitor in blocking the remodeling of Ser1928 phosphorylation and LTCC activity that mediates vasoconstriction in response to elevated glucose.
 
-## The P2Y11 agonist NF546 stimulates Ser1928 phosphorylation, PKA-dependent LTCC activity and vasoconstriction
+### The P2Y11 agonist NF546 stimulates Ser1928 phosphorylation, PKA-dependent LTCC activity and vasoconstriction
 
 We next investigated whether a selective P2Y11 agonist could recapitulate the glucose-mediated Ser1928 phosphorylation and PKA-dependent LTCC activity. Using freshly dissociated human arterial myocytes, we found that IBa was significantly increased by application of NF546 (Figure 7A). This P2Y11 agonist also increased IBa at multiple membrane potentials in mouse arterial myocytes with no change in the current-voltage (I-V) relationship (Vmax = 14.9 ± 2.0 mV for 10 mM D-glucose and Vmax = 10.9 ± 1.1 mV for NF546; p=0.1085, extra sum-of-squares F test) (Figure 7B). The NF546-mediated increase in IBa was similar in magnitude to that induced by elevated glucose (Figure 7—figure supplement 1A). Similar IBa potentiation was also observed after application of the non-hydrolyzed ATP analog and potent P2Y11 agonist ATPγS (1 μM; Figure 7—figure supplement 1B) (von Kügelgen and Harden, 2011). Note that ATPγS stimulates P2Y11 activity with EC50 that ranges from 31 nM to 23 μM, depending on readout, cell type and species used, but it is still a more potent activator than ATP itself (Communi et al., 1999; Haas et al., 2014; Kennedy, 2017; Meis et al., 2010; Qi et al., 2001; Schuchardt et al., 2012; von Kügelgen and Harden, 2011). We further correlated the potentiation in IBa by NF546 to an elevation of Ser1928 phosphorylation in freshly dissected human and mouse arterial lysates (Figure 7C and Figure 7—figure supplement 1C). Since PKA is essential for glucose-mediated remodeling of IBa in arterial myocytes and can be activated downstream of P2Y11 (Navedo et al., 2010b; Nystoriak et al., 2017), we also examined its involvement in NF546-mediated potentiation of LTCC activity in arterial myocytes. Consistent with a key role for PKA, NF546 failed to upregulate IBa in arterial myocytes incubated with the PKA inhibitors PKI (100 nM) or rpcAMP (10 μM) (Figure 7D).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative IBa recordings from the same cell (top) and summary IBa data (bottom) from freshly dissociated human arterial myocytes in response to step depolarizations from −70 to +10 mV before and after application of 500 nM NF546 (n = 11 cells from five humans; *p<0.05, paired t test; Figure 7—source data 1). (B) Representative IBa recordings from the same cell (left) triggered by step depolarization from −70 mV to voltages ranging from −60 to +60 mV before and after application of 500 nM NF546 in mouse cerebral arterial myocytes and corresponding IBa-voltage relationship (right) (n = 8 cells from five mice) (*p<0.05, paired t test; Figure 7—source data 2). (C) Exemplary immunoblot detection of phosphorylated Ser1928 (pSer1928) and total CaV1.2 from human (left) and mouse cerebral and mesenteric arteries (right) incubated with 500 nM NF546 and respective densitometry quantification of pSer1928/CaV1.2 ratio (n = 6 arterial lysates per condition for humans; n = 6 arterial lysates per condition for mice) (*p<0.05, Wilcoxon matched pairs test; Figure 7—source data 3). (D) Representative IBa recordings from the same cell (top) and summary IBa data (bottom) from mouse arterial myocytes evoked by step depolarizations from −70 to +10 mV before and after application of 500 nM NF546 in the absence (n = 9 cells, four mice) and presence of 100 nM PKI (n = 9 cells, five mice) or 10 µM rpcAMP (n = 9 cells, four mice) (*p<0.05, paired t test; Figure 7—source data 4). (E) Representative diameter recording and summary arterial tone data from pressurized (60 mmHg) mouse cerebral arteries exposed to 500 nM NF546 (n = 6 arteries, six mice) (*p<0.05, Wilcoxon matched pairs test; Figure 7—source data 5). (F) Representative diameter recordings and summary arterial tone data from pressurized (60 mmHg) wt mouse cerebral arteries exposed to 20 mM D-glucose before and after application of 500 nM NF546 (n = 6 arteries, six mice, left; *p<0.05, Friedman with Dunn’s multiple comparisons; Figure 7—source data 6) and S9128A mouse cerebral arteries after NF546 application (n = 4 from three mice, right; Figure 7—source data 6).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Summary data showing changes in IBa in response to elevating D-glucose from 10 mM to 20 mM (−1.9 ± 0.2 pA/pF; n = 11 cells from five mice) or after application of the P2Y11 agonist NF546 (500 nM; −2.8 ± 0.6 pA/pF; n = 9 cells from four mice) (*p=0.1326, unpaired t test; Figure 7—figure supplement 1—source data 1). (B) Representative IBa recordings from the same cell (left) and summary IBa data (right) from mouse arterial myocytes evoked by step depolarizations from −70 to +10 mV before and after application of 1 µM ATPγS (n = 10 cells from four mice) (*p<0.05, paired t test; Figure 7—figure supplement 1—source data 2). (C) Full-length blots corresponding to Figure 7C. Red boxes indicate the crop regions displayed in the main figure. (D) Bar plot of % constriction in response to 60 mM K+ from wt mouse arteries treated with 500 nM NF546 (n = 6 arteries, six mice) and 20 mM D-glucose +NF546 (n = 6 arteries, six mice) and S1928A mouse arteries treated with NF546 (n = 4 from three mice) (Figure 7—figure supplement 1—source data 3).
+
 Having established that application of the P2Y11 agonist NF546 influences Ser1928 phosphorylation state as well as LTCC activity, we investigated whether it could also modulate arterial tone. Accordingly, pressurized (60 mmHg) arteries that developed stable arterial tone and responded to 60 mM K+ (Figure 7—figure supplement 1D and Supplementary file 1 and 2) showed significant constriction upon NF546 application (Figure 7E). Interestingly, NF546 did not induce further constriction in wt arteries previously exposed to 20 mM D-glucose (Figure 7F). Indeed, arterial tone was similar in arteries treated with 20 mM D-glucose or 20 mM D-glucose +NF546 (Supplementary file 1 and 2). Confirming a critical role for Ser1928, arteries from a S1928A knockin mouse in which phosphorylation of this CaV1.2 amino acid is prevented (Lemke et al., 2008; Nystoriak et al., 2017; Qian et al., 2017), failed to constrict to NF546 (Figure 7F and Supplementary file 1 and 2). Response of S1928A arteries to 60 mM K+ was similar to those observed for wt arteries (Figure 7—figure supplement 1D and Supplementary file 1 and 2). These results suggest that a P2Y11 agonist can induce Ser1928 phosphorylation, PKA-dependent LTCC potentiation and vasoconstriction, thus recapitulating glucose effects (Navedo et al., 2010b; Nystoriak et al., 2017), and providing further evidence of the involvement of human P2Y11 and mouse P2Y11-like receptors in these alterations.
 
-## Increased Ser1928 phosphorylation and LTCC activity during chronic diabetic hyperglycemia are prevented by a P2Y11 inhibitor
+### Increased Ser1928 phosphorylation and LTCC activity during chronic diabetic hyperglycemia are prevented by a P2Y11 inhibitor
 
 To explore whether a P2Y11 inhibitor could prevent changes in Ser1928 phosphorylation and LTCC activity during chronic diabetic hyperglycemia, we exposed isolated arteries for 48 hr to 10 mM D-glucose, 20 mM mannitol, 20 mM D-glucose or 20 mM D-glucose +NF340. This organ culture method prevents arterial myocyte phenotypic changes associated with prolonged culturing conditions. Furthermore, the exposure time is sufficient to induce many of the vascular remodeling phenomena associated with elevated glucose in arterial myocytes, including increased LTCC activity, decreased K+ channel activity and downstream activation of Ca2+-dependent transcription factors (Navedo et al., 2010b; Nieves-Cintrón et al., 2015; Nilsson et al., 2006; Nystoriak et al., 2014; Nystoriak et al., 2017). LTCC function was assessed by measuring single-channel activity using the cell-attached configuration from dissociated arterial myocytes under each experimental condition described above. We found that wt cells isolated from the 20 mM D-glucose but not the 20 mM mannitol treated group had significantly enhanced LTCC open probability (nPo) compared to those in the 10 mM D-glucose group (Figure 8A and B). This increase in LTCC activity during diabetic hyperglycemia, however, was prevented in arterial myocytes from arteries treated in the presence of the P2Y11 inhibitor NF340. Ser1928 phosphorylation was significantly elevated in arteries chronically exposed to 20 mM D-glucose, but this effect was completely abolished in the presence of NF340 (Figure 8C and Figure 8—figure supplement 1A). Consistent with a key role for Ser1928 phosphorylation in potentiation of LTCC activity in response to chronic elevations in glucose, LTCC nPo was similar in arterial myocytes from S1928A arteries incubated for 48 hr in 10 mM or 20 mM D-glucose (Figure 8—figure supplement 1B). These results suggest that treatment with a P2Y11 inhibitor can avert PKA-mediated Ser1928 phosphorylation and stimulated LTCC activity during diabetic hyperglycemia.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig8-v1.jpg)
+
+**Figure 8.:** (A) Representative single LTCC recordings obtained during a 2 s step depolarization from −80 to −30 mV and (B) bar plot of LTCC nPo in arterial myocytes isolated from mouse cerebral arteries incubated for 48 hr in 10 mM D-glucose (n = 10 cells from three mice), 20 mM mannitol (n = 13 cells from four mice), 20 mM D-glucose (n = 10 cells from four mice) and 20 mM D-glucose +10 µM NF340 (n = 10 cells from four mice). Channel openings (o) are represented by downward deflections from baseline (c) (*p<0.05, one-way ANOVA with Tukey post hoc test; Figure 8—source data 1). (C) Representative immunoblot detection of phosphorylated Ser1928 (pSer1928) and total CaV1.2 from mouse cerebral and mesenteric arteries incubated for 48 hr in 10 mM D-glucose, 20 mM D-glucose and 20 mM D-glucose +10 µM NF340 and densitometry quantification of pSer1928/CaV1.2 ratio (n = 7 arterial lysates per condition) (*p<0.05, Kruskal-Wallis with Dunn’s multiple comparisons; Figure 8—source data 2). (D) Proposed model for the role of P2Y11 in PKA-dependent stimulation of LTCC activity and vasoconstriction during diabetic hyperglycemia (NUC = nucleotides).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/42214/elife-42214-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Full-length blots corresponding to Figure 8C. Red boxes indicate the crop region displayed in the main figure. (B) Representative single LTCC recordings obtained during a 2 s step depolarization from −80 to −30 mV and bar plot of LTCC nPo in arterial myocytes isolated from S1928A mouse cerebral arteries incubated for 48 hr in 10 mM D-glucose (n = 9 cells from three mice) and 20 mM D-glucose (n = 8 cells from three mice) (Figure 8—figure supplement 1—source data 1). Channel openings (o) are represented by downward deflections from baseline (c). Titles for source data files.
 
 ## Discussion
 
@@ -102,15 +178,326 @@ In summary, our data in human and murine tissue provide evidence of a Gs-coupled
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additionalinformation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus), C57BL/6J</td>
+      <td>wild-type</td>
+      <td>Jackson Laboratories</td>
+      <td>stock # 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>S1928A</td>
+      <td>(Lemke et al., 2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human embryonal kidney)</td>
+      <td>tsA-201</td>
+      <td>Sigma-Aldrich</td>
+      <td>96121229</td>
+      <td>SV40 transformed</td>
+    </tr>
+    <tr>
+      <td>Oligodeoxynucleotide, sense</td>
+      <td>P2Y11 SNS ODN</td>
+      <td>Integrated DNA Technologies</td>
+      <td>human P2Y11 sequence (NC_000019.10): 5’-CAACGTCTCGGGTAAGGAGAA-3’ and 5’-ATGAGGAAGGAAACGTGGGT-3’</td>
+      <td>last three bases on the 3’ end were phosphoro-thioated</td>
+    </tr>
+    <tr>
+      <td>Oligodeoxynucleotide, antisense</td>
+      <td>P2Y11 ANS ODN</td>
+      <td>Integrated DNA Technologies</td>
+      <td>human P2Y11 sequence (NC_000019.10): 5’-CAAGGCCACCCTAACCACTG-3’ and 5’-CTCTCCCTTCCCTGCGTTA-3’</td>
+      <td>last three bases on the 3’ end were phosphoro-thioated</td>
+    </tr>
+    <tr>
+      <td>DNA construct</td>
+      <td>human P2Y11</td>
+      <td>UMR cDNA Resource Center</td>
+      <td>www.cDNA.org; clone ID P2Y1100000</td>
+      <td>tagged with GFP at C- terminus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FP1 (CaV1.2; custom rabbit)</td>
+      <td>(Davare et al., 2000)</td>
+      <td></td>
+      <td>dilutions: 1:100 for immunoblot and PLA; 10 µg/mL for GSD</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CH3P (pSer1928, custom rabbit)</td>
+      <td>(Davare et al., 2000)</td>
+      <td></td>
+      <td>1:50-1:100 dilutions</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab8226 RRID: AB_30637</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-α-tubulin (mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>39527; clone 5-B-1–2</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-P2Y11 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab180739</td>
+      <td>1:100-1:200 dilutions</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-P2Y11 (goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-69588; clone C-18 RRID: AB_21559</td>
+      <td>dilutions: 1:100 for stainings (PLA, classical) and 10 µg/mL for GSD</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PKAcatα, β, γ (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-28315; clone A-2</td>
+      <td>1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PKAcatα, β, γ blocking peptide</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-28315 P; clone A-2</td>
+      <td>1:20 dilution for 1 µg of primary antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PKAcat α, β, γ (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-28892; clone H-95</td>
+      <td>dilutions: 1:200 for PLA and 10 µg/mL for GSD</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 conjugate of wheat germ agglutinin</td>
+      <td>Life Technologies</td>
+      <td>W7024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated donkey anti-goat</td>
+      <td>Molecular Probes</td>
+      <td>A11057 RRID: AB_142581</td>
+      <td>5 mg/mL dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated donkey anti-mouse</td>
+      <td>Molecular Probes</td>
+      <td>A10037</td>
+      <td>5 mg/mL dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated donkey anti-rabbit</td>
+      <td>Molecular Probes</td>
+      <td>A11011 RRID: AB_143157</td>
+      <td>2 µg/mL dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-conjugated donkey anti-goat</td>
+      <td>Molecular Probes</td>
+      <td>A21447 RRID: AB_141844</td>
+      <td>2 µg/mL dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit IgG (H + L)-horseradish peroxidase conjugate</td>
+      <td>Bio-Rad</td>
+      <td>170–6515 RRID: AB_11125142</td>
+      <td>1:10000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG (H + L)-horseradish peroxidase conjugate</td>
+      <td>Bio-Rad</td>
+      <td>170–6516</td>
+      <td>1:10000 dilution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sodium pentobarbital (Fatal-Plus)</td>
+      <td>Vortech Pharma-ceuticals</td>
+      <td>NDC 0298-9373-68</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>mannitol</td>
+      <td>Fisher Scientific</td>
+      <td>BP686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NF340</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-361274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NF546</td>
+      <td>Tocris</td>
+      <td>3892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>apyrase</td>
+      <td>New England Biolabs</td>
+      <td>M0398L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>nifedipine</td>
+      <td>Sigma-Aldrich</td>
+      <td>N7634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bay K-8644</td>
+      <td>Sigma-Aldrich</td>
+      <td>71145-03-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>forskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>F6886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>amphotericin B</td>
+      <td>Sigma-Aldrich</td>
+      <td>A4888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MRS2578</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-204103A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MRS2179</td>
+      <td>Tocris</td>
+      <td>1454889-37-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>protein kinase A inhbitor (PKI)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9115</td>
+      <td>fragment 14–22, myristoylated trifluoroacetate salt</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rp-Adenosine 3’,5’-cyclic monophos-phorothioate triethylam-monium salt (rpcAMP)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5’-[γ-thio] triphosphate tetralithium salt (ATPγS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A1388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td></td>
+      <td>GraphPad Prism, RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>Fiji, RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP10</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>electrophysiology</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LASAF</td>
+      <td>Leica</td>
+      <td></td>
+      <td>GSD</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IonOptix</td>
+      <td>IonOptix</td>
+      <td></td>
+      <td>arterial diameter recordings</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metaflor</td>
+      <td>Molecular Devices</td>
+      <td></td>
+      <td>FRET</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male wild type C57BL/6J (wt) or knockin mice in which Ser1928 of CaV1.2 was mutated to Ala (S1928A) (Lemke et al., 2008) of 5 to 8 weeks of age were euthanized with a lethal dose of sodium pentobarbital (250 mg/kg; intraperitoneally), as approved by the University of California, Davis Animal Care and Use Committee (protocol #: 20321).
 
-## Human tissue
+### Human tissue
 
 Excised adipose arteries from human patients undergoing surgical sleeve gastrectomy were used for this study (Supplementary file 3). Samples were obtained after Institutional Review Board (IRB) approval from the University of Nevada Reno School of Medicine (IRB ID: 2013–019) and in accordance with the guidelines of the Declaration of Helsinki. The need for informed consent was waived by IRBs at the University of Nevada Reno School of Medicine (IRB ID: 2013–019) and the University of California Davis (IRB ID: 597267–1) because the tissue is considered ‘waste’, has no codification that could be used to identify patients and was determined not to be human subject research in accordance with United States of America federal regulations, as defined by 45 CFR 46.102(f). This precludes the acquisition of detailed clinical profiles other than sex, age and whether the patient is nondiabetic or diabetic. Only samples from nondiabetic patients were used. No exclusions were made due to medication history, sex or presence of comorbidities. Collected tissue was placed in cold phosphate-buffered saline (PBS) solution containing (in mM): 138 NaCl, 3 KCl, 10 Na2HPO4, 2 NaH2PO4, 5 D-glucose, 0.1 CaCl2, and 0.1 MgSO4, pH 7.4 with NaOH until used.
 
-## Arterial myocyte isolation
+### Arterial myocyte isolation
 
 Mouse cerebral arteries were dissected in ice-cold dissection buffer containing (in mM): 140 NaCl, 5 KCl, 2 MgCl2, 10 D-glucose, 10 HEPES, pH 7.4, with NaOH. Arteries were digested in dissection buffer containing papain (1 mg/mL) and dithiothreitol (1 mg/mL) at 37° C for 7 min, followed by incubation in dissection buffer containing collagenase type F (0.7 mg/mL) and collagenase type H (0.3 mg/mL) at 37° C for 7 min. Arteries were washed in ice-cold dissection buffer and gently triturated with glass pipettes to disperse the cells, which were kept in ice-cold dissection buffer until use.
 
@@ -118,50 +505,50 @@ Single human arterial myocytes (Supplementary file 3) were isolated as previousl
 
 For unpassaged, cultured human and mouse arterial myocytes, human adipose arteries and mouse aortas were dissected out and placed in ice-cold Dulbecco’s Modified Eagle Medium (DMEM; Gibco – Life Technologies, Grand Island, NY) containing 1X glutamate, 1X pyruvate, 1X penicillin/streptavidin and fungizone (0.25 g/mL). Artery segments were subsequently transferred and incubated in a DMEM solution containing 2.2 mg/mL of collagenase Type 2 (Worthington) at 37° C for 15 min to remove the adventitia. To disperse and culture unpassaged arterial myocytes, the tissue was cut into 2–5 mm segments and incubated at 37° C with constant shaking in a buffer containing (in mM): 134 NaCl, 6 KCl, CaCl2, 10 HEPES, and 7 D-glucose supplemented with 2.2 mg/mL collagenase Type 2 (Worthington). The digestion was stopped by adding an equal volume of DMEM containing 5% fetal bovine serum. Digested tissue was then centrifuged for 5 min at 14,000 rpm. The supernatant was removed and the pellet containing the digested tissue was resuspended in DMEM containing 1X glutamate, 1X pyruvate, 5% serum and 5 mM D-glucose, resulting in dispersion of individual arterial myocytes. Cells were then seeded on glass coverslips coated with laminin and kept in an incubator at 37° C with 5% CO2 for 2–3 days before adenoviral transduction or lysis for immunoblotting (see section below).
 
-## Arterial diameter measurements
+### Arterial diameter measurements
 
 Freshly isolated posterior mouse cerebral arteries were cannulated on glass micropipettes mounted in a 5 mL myograph chamber (University of Vermont Instrumentation and Model Facility), as described previously (Nieves-Cintrón et al., 2017; Nystoriak et al., 2014; Nystoriak et al., 2017). Arteries were allowed to equilibrate at an intravascular pressure of 20 mmHg, while being continuously superfused (37° C, 30 min, 3–5 mL/min) with physiological saline solution composed of (in mM): 119 NaCl, 4.7 KCl, 2 CaCl2, 24 NaHCO3, 1.2 KH2PO4, 1.2 MgSO4, 0.023 EDTA, and 10 D-glucose aerated with 5% CO2/95% O2. Bath pH was closely monitored and maintained at 7.35 to 7.4. After equilibration, intravascular pressure was increased to 60 mmHg and arteries allowed to develop stable myogenic tone. Arteries not exhibiting stable tone after ~1 hr were discarded. To assess the response of arterial diameter to hyperglycemia, D-glucose was increased from 10 mM to 20 mM in the perfusion solution. Arterial tone data are presented as a percent decrease in diameter relative to the maximum passive diameter at 60 mmHg obtained using Ca2+-free saline solution containing nifedipine (1 µM) at the end of the experiment.
 
-## Electrophysiology
+### Electrophysiology
 
 All experiments were performed at room temperature (22–25° C). Both whole-cell and single-channel data were acquired using an Axopatch 200B amplifier and Digidata 1440 digitizer (Molecular Devices). Recording electrodes were pulled from borosilicate capillary glass using a micropipette puller (model P-97, Sutter Instruments) and subsequently polished to achieve resistances that ranged from 3.5 to 6.5 MΩ. L-type Ca2+ channel currents were assessed in freshly dissociated arterial myocytes using the perforated whole-cell mode of the patch-clamp technique with Ba2+ as a charge carrier (IBa) after myocytes were allowed to attach (10 min) to a glass coverslip in a recording chamber. Borosilicate glass pipettes were filled with a solution containing (in mM): 120 CsCl, 20 tetraethylammonium chloride (TEA-Cl), 1 EGTA, and 20 HEPES with amphotericin B (250 µg/mL; pH adjusted to 7.2 with CsOH). The bath solution consisted of (in mM): 115 NaCl, 10 TEA-Cl, 0.5 MgCl2, 10 D-glucose, 5 CsCl, 20 BaCl2, and 20 HEPES, pH adjusted to 7.4 with CsOH. IBa were elicited by 200 ms depolarizing pulses from a holding potential of −70 mV to +10 mV. IBa were first recorded in the presence of 10 mM D-glucose under static flow conditions. This solution was then exchanged for a solution containing either 20 mM D-glucose, 20 mM mannitol or NF546 at a rate of 2.1 mL/min. Flow was stopped after 3 min, and IBa were recorded again under static flow conditions at least 5 min after the indicated treatment was initiated. In some experiments, arterial myocytes were pretreated for 10–15 min with indicated inhibitors prior to IBa recordings. For experiments comparing IBa before and after elevated glucose under continuous flow and static bath conditions, cells were patched in a bath solution containing 10 mM D-glucose at a perfusion rate of 2.1 mL/min. After establishment of a stable gigaseal for at least 5 min, IBa were recorded in the presence of 10 mM D-glucose under continuous flow. Those cells that showed robust IBa in 10 mM D-glucose were then perfused with a bath solution containing 20 mM D-glucose under continuous flow for at least 5 min before recording of IBa again. Subsequently, IBa were recorded one more time on the same cell, 5 min after stopping the bath perfusion (e.g. static bath conditions). Currents were sampled at 10 kHz and low pass-filtered at 5 kHz. The CaV1.2 blocker nifedipine (1 μM) was applied at the end of each experiment to determine the nifedipine-sensitive component. The I-V relationship of nifedipine-sensitive IBa was determined by 200 ms depolarizing steps from −70 mV to voltages ranging from −60 to +60 mV in increments of +10 mV. The I-V relationship for averaged data sets was fit with a peak Gaussian function: I(V)=Imax x exp(−0.5((V – Vmax)/b)2), where Imax is peak I, Vmax is V at Imax, and b is the slope of the distribution, as described previously (Nystoriak et al., 2017). A voltage error of 10 mV attributable to the liquid junction potential of the recording solutions was corrected offline.
 
 The cell-attached configuration of the patch-clamp technique was used to examine single-channel Ca2+ currents in arterial myocytes using Ca2+ as the charge carrier, as previously described (Cheng et al., 2011; Dixon et al., 2015; Dixon et al., 2012; Navedo et al., 2010a; Nystoriak et al., 2017). Resting membrane potential was fixed to ~0 mV using a high K+ bath solution (Hess et al., 1986; Zampini et al., 2006) composed of (in mM): 145 KCl, 10 NaCl, and 10 HEPES, pH adjusted to 7.4 with NaOH. Pipette solution was composed of (in mM): 120 TEA-Cl, 110 CaCl2, and 10 HEPES with BayK-8644 (500 nM), which promotes longer open times of the channel thereby increasing the probability of sweeps with channel activity. Single L-type Ca2+ currents were elicited by a 2 s depolarizing step from a holding of −70 mV to −30 mV. Single-channel currents were sampled at 10 kHz and low pass filtered at 2 kHz, followed by a Gaussian filter (500 Hz) during analysis. Capacitive currents were compensated by subtraction of blank sweeps. When nifedipine was included in the patch pipette, CaV1.2 activity was negligible. Single-channel openings and nPo were analyzed using the single-channel event half-amplitude detection algorithm from pCLAMP 10.
 
-## Immunoprecipitation and immunoblotting
+### Immunoprecipitation and immunoblotting
 
 Human adipose arteries, mouse cerebral and mesenteric arteries, and mouse arterial myoyctes were homogenized in a RIPA lysis buffer solution composed of 50 mM Tris-HCl (pH 7.4), 150 mM NaCl, 5 mM EGTA, 10 mM EDTA, 1% nonyl phenoxypolyethoxylethanol-40 (NP-40), 10% glycerol, 0.05% sodium dodecyl sulfate (SDS), 0.4% deoxycholic acid (DOC) with protease inhibitors (1 µg/ml pepstatin A, 10 µg/ml leupeptin, 20 µg/mL aprotinin, and 200 nM phenylmethylsulfonyl fluoride) and phosphatase inhibitors (2 µM microcystin LR, 1 mM p-nitrophenyl phosphate, 50 mM Na-pyrophosphate, and 50 mM NaF), then sonicated for 5 min at 4° C and cleared by centrifugation (15,000 X g) for 20 min at 4° C. For Ser1928 phosphorylation experiments, the soluble fraction was incubated on a head-over-head tilter with protein A-Sepharose beads and a purified custom antibody against CaV1.2 (5 µg of FP1; see Davare et al., 2000) or nonspecific rabbit immunoglobulin G (IgG) control for 4 hr at 4° C. Beads were washed three times with washing buffer containing (in mM): 150 NaCl, 10 EDTA, 10 EGTA, 10 Tris-HCl (pH 7.4), 0.1% Triton X-100, pH 7.4. Samples were extracted in Laemmli Sample Buffer (Bio-Rad) for 5 min at 95° C for immunoprecipitation (Ser1928 phosphorylation) experiments and 15 min at 80° C for other immunoblot experiments. Proteins were separated by SDS-polyacrylamide gel electrophoresis at 75–100 V for 1.5 hr in a stacking gel polymerized from 3% acrylamide and a resolving phase polymerized from 7.5% (Ser1928 phosphorylation) or 10% acrylamide. Proteins were then transferred to a polyvinylidene difluoride membrane at 50 V for 600 min at 4° C. All membranes, except for P2Y11 blots (10% Odyssey blocking buffer; LI-COR Biosciences), were blocked in 5% nonfat dried milk in tris-buffered saline with 0.05% Tween 20 (TBS-T) for 1 hr at room temperature before primary antibody incubation for 2–3 hr at room temperature. Antibodies and dilutions were as follows: rabbit anti-CH3P (pSer1928; 1:50-1:100),(Davare et al., 2000) rabbit anti-FP1 (CaV1.2; 1:100) (Davare et al., 2000), rabbit anti-P2Y11 (Abcam, 1:100-1:200); mouse anti-β-actin (Abcam, 1:1000), and anti α-tubulin (Active Motif, 1:500). Except for the P2Y11 antibody, which was diluted in 1% bovine serum albumin, all antibodies were diluted in 5% nonfat dried milk in TBS-T. After washing, membranes were then incubated 1 hr at room temperature with horseradish peroxidase-labeled goat anti-rabbit (Bio-Rad; 1:10,000) or goat-anti-mouse antibodies (Bio-Rad; 1:10,000) diluted in 5% nonfat dried milk in TBS-T or 5% Odyssey in TBS-T (P2Y11 only) and developed on autoradiography film using chemiluminescence (Classico [Millipore] and Femto [Thermo Fisher Scientific]). For Ser1928 phosphorylation and P2Y11 knock down experiments, total CaV1.2 and β-actin, respectively, were used for normalization (density expressed as percentage of total CaV1.2/β-actin and these ratios were normalized to the ratio of the control band to get the relative density of pSer1928/CaV1.2 or P2Y11/β-actin for all treatments). For Ser1928 phosphorylation quantification in Figure 1—figure supplement 1E, triplicates were run in parallel and all values were normalized to the ratio of the loading control band (e.g. α-tubulin obtained from the same samples) to get the pSer1928/α-tubulin ratio for all treatments. The pSer1928/α-tubulin ratios were then normalized to the first control band ratio to obtain the relative density of pSer1928/α-tubulin. Densitometry analysis for bands was performed with ImageJ software (National Institutes of Health) as follow. Developed films were scanned to tiff files, uploaded to ImageJ and color inverted. Immunoreactive bands were outlined and light intensity per area was measured. Doublet bands were outlined and measured as one signal. Intensity of equal area above and below each immunoreactive band was measured to average and then subtract the background signal. Importantly, films were exposed for increasing time periods to ensure signals were in the linear range as described in Davare and Hell (2003) and Hall et al. (2006). β-actin and α-tubulin were used as a loading control in some experiments.
 
-## Organ culture
+### Organ culture
 
 Freshly isolated arteries for acute Ser1928 phosphorylation experiments were incubated for 5 min at room temperature in a physiological saline solution composed of (in mM): 119 NaCl, 4.7 KCl, 2 CaCl2, 24 NaHCO3, 1.2 KH2PO4, 1.2 MgSO4, 0.023 EDTA, and 10 (5 for humans) D-glucose aerated with 5% CO2/95% O2 to reach a pH of 7.35–7.4. Arteries were then incubated for 10 min at room temperature in a similar physiological solution containing the specified treatment. Following incubation, arteries were immediately placed in RIPA lysis buffer with protease and phosphatase inhibitors (as described in immunoblotting section). For chronic exposure experiments, arteries were placed in DMEM/F-12 (Gibco-Life Technologies, Grand Island, NY) supplemented with L-glutamine (2 mM) containing 10 mM, 20 mM D-glucose or 20 mM mannitol in the absence or presence of 10 µM NF340 and incubated for 48 hr at 37° C. After incubation, arteries were quickly washed in PBS and then placed in RIPA lysis buffer with protease and phosphatase inhibitors for immunoblotting.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescent labeling of freshly dissociated arterial myocytes was performed as described previously (Navedo et al., 2008), using a goat-anti P2Y11 (Santa Cruz Biotechnology, clone C-18; 1:100) or a mouse-anti PKAcat α, β, γ (Santa Cruz Biotechnology, clone A-2, 1:200) antibodies in PBS supplemented with 0.1% BSA. Alexa Fluor 488 conjugated wheat germ agglutinin (WGA; Life Technologies) was used to stain for the plasma membrane. The secondary antibodies were Alexa Fluor 568-conjugated donkey anti-goat and donkey anti-mouse (5 mg/mL; Molecular Probes). In control experiments, the PKAcat antibody was preabsorbed with a PKAcat blocking peptide (Santa Cruz Biotechnology, A-2; 1:20 for 1 μg of primary antibody). Cells were imaged (512 × 512 pixel images) using an Olympus FV1000 confocal microscope paired with an Olympus 60x oil immersion lens (NA = 1.4) and a zoom of 3.0 (pixel size = 0.1 µm). P2Y11-associated fluorescence was not detected in negative control experiments in which the primary antibody was substituted for PBS or boiled to test for antibody specificity. Cells for each group were imaged with the same laser power, gain settings, and pinhole.
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 A Duolink In Situ PLA kit (Sigma) (Fredriksson et al., 2002) was used to detect complexes consisting of P2Y11 and CaV1.2 and P2Y11 and PKAcat in freshly isolated arterial myocytes as previously described (Nieves-Cintrón et al., 2017; Nystoriak et al., 2017). Briefly, cells were plated on glass coverslips and allowed to adhere (1 hr, room temperature) prior to fixing with 4% paraformaldehyde (20 min), quenching in 100 mM glycine (15 min), and washing in PBS (2 × 3 min). Cells were permeabilized with 0.1% Triton X-100 (20 min) and then blocked (1 hr, 37° C) in 50% Odyssey blocking solution (LI-COR Bioscience). Cells were incubated overnight at 4° C with a specific combination of two primary antibodies in 0.1% Odyssey +0.05% Triton X-100 PBS solution: goat anti-P2Y11 (Santa Cruz Biotechnology, clone C-18; 1:100), custom rabbit anti-FP1 (CaV1.2, 1:100) (Davare et al., 2000) and rabbit anti-PKAcat α, β, γ (Santa Cruz Biotechnology, clone H-95, 1:200). Cells were incubated with only one primary antibody as negative controls. After primary antibody incubation, cells were washed with Duolink buffer A (2 × 5 min). Oligonucleotide-conjugated secondary antibodies (PLA probes: anti-goat MINUS and anti-rabbit PLUS) were used to detect P2Y11 and CaV1.2 and P2Y11 and PKAcat (1 hr, 37° C). Following incubation with probes, cells were washed with Duolink buffer A (2 × 5 min) and a ligation solution composed of two distinct oligonucleotides, complementary to the probes, and ligase was added (30 min, 37° C) to allow hybridization with the probes and formation of a closed DNA circle at sites of dual labeling, which serves as a template for a rolling circle amplification reaction (100 min, 37° C). After the amplification step, cells were washed with Duolink buffer B (2 × 10 min) and 1% buffer B (1 × 1 min). Coverslips were allowed to dry and subsequently mounted on a microscope slide with Duolink mounting medium. The fluorescence signal was detected using an Olympus FV1000 confocal microscope coupled with a 60x oil immersion lens (NA, 1.4). Images were collected at different optical planes (z-axis step = 0.5 µm). The stack of images for each sample was combined into a single-intensity projection image that was subsequently used for analysis of number of puncta/µm2 per cell.
 
-## Immunolabeling and Ground State Depletion (GSD) microscopy
+### Immunolabeling and Ground State Depletion (GSD) microscopy
 
 Isolated arterial myocytes were allowed to adhere to a coverslip (1 hr) before fixing with 3% paraformaldehyde +0.1% glutaraldehyde solution in PBS (10 min) followed by washes with PBS (3 × 15 min). Cells were then incubated for 5 min with 0.1% sodium borohydride in H2O, followed by 3 × 5 min washes with PBS and incubated in permeabilization/blocking solution consistent of 0.05% Triton X-100% and 20% SEA BLOCK (Thermo Scientific) for 1 hr at room temperature. Cells were exposed overnight to primary antibodies [goat anti-P2Y11 (Santa Cruz Biotechnology, clone C-18), custom rabbit anti-CaV1.2 (FP1 (Davare et al., 2000)) or rabbit anti-PKAcat α, β, γ (Santa Cruz Biotechnology, clone H-95)] diluted in blocking buffer to a concentration of 10 µg/mL. Cells were briefly washed 3x with PBS, followed by additional longer washes (3x for 15 min). For secondary antibodies, donkey Alexa Fluor 647-conjugated antibody recognizing goat IgG (2 µg/mL; Molecular Probes) and donkey Alexa Fluor 568-conjugated antibody recognizing rabbit IgG (2 µg/mL; Molecular Probes) diluted in blocking buffer were added for 1 hr at room temperature. Secondary Ab was washed 3x with PBS, followed by longer washes (3x for 15 min). Specificity of secondary antibodies was tested in control experiments in which primary antibodies were omitted from the preparation (no 1° antibody controls). For imaging, coverslips were mounted on microscope slides with a round cavity containing MEA-GLOX imaging buffer (NeoLab Migge Laborbedarf-Vertriebs GmbH, Germany) and sealed with Twinsil (Picodent, Germany). The imaging buffer was composed of 10 mM MEA (cysteamine), 0.56 mg/mL glucose oxidase, 34 µg/mL catalase, and buffer containing 10% w/v glucose, 10 mM NaCl, and 50 mM Tris-HCl, pH 8.
 
 Super-resolution images of arterial myocytes were obtained using a super resolution ground state depletion system (SR-GSD, Leica) dependent on stochastic single-molecule localization, equipped with high-power lasers (532 nm, 2.1 kW/ cm2; 642 nm, 2.1 kW/ cm2) and an additional 30 mW, 405 nm laser. A 160x HCX Plan-Apochromat (NA 1.47) oil immersion lens and an electron-multiplying charge-coupled device (EMCCD) camera (iXon3 897; Andor Technology) were used to acquire images (Dixon et al., 2015). The camera was running in frame-transfer mode at a frame rate of 100 Hz (10 ms exposure time). Fluorescence was detected through Leica high-power TIRF filter cubes (532 HP-T, 642 HP-T) with emission band-pass filters of 550–650 nm and 660–760 nm. Reconstruction of P2Y11, CaV1.2, and PKA distribution from 30,000 images used the coordinates of centroids obtained by fitting single-molecule fluorescence signals with a 2D Gaussian function using a LASAF software (Leica). The localization accuracy of the system is limited by the statistical noise of photon counting; the precision of localization is proportional to DLR/√N, where DLR is the diffraction-limited resolution of a fluorophore and N is the average number of detected photons per switching event, assuming the point-spread functions are Gaussian (Dempsey et al., 2011; Fölling et al., 2008). The full width at half maximum for single-molecule signals was ~20 nm as recently calculated by our group (Tajada et al., 2017). Localizations produced from less than 800 photons were filtered out of the reconstruction. All pixels with intensity above a user-defined threshold were binarized, evaluated and segmented into individual objects and included as clusters in our analysis. Cluster size and density were determined using the Analyze Particle option in the ImageJ software (National Institute of Health). The JACoP plug-in in the ImageJ software was used to unbiasedly and automatically determine the shortest intermolecular distances for P2Y11 and CaV1.2 as well as P2Y11 and PKAcat following the protocol described by Bolte and Cordelières (2006). Intermolecular distance histograms were generated from the JACoP plug-in output data and fitted with a sum of two Gaussian functions of the following equation: Y =Y0 + (A1 / (w1 x √(π/2))) x exp(−2 x ((X - XC1)/w1)2) + (A2 / (w2 x √(π/2))) x exp(−2 x ((X - XC2)/w2)2), where Y0 is the Y offset, A1 and A2 are the areas of the distribution of distances, XC1 and XC2 are the x values of distance at the center of the distribution, and w1 and w2 are the widths of each distribution in nanometers. To calculate the percentage of complete P2Y11 overlap, we first quantified the number of clusters/objects in the thresholded, binarized localization maps for P2Y11 and CaV1.2 as well as P2Y11 and PKAcat using the Analyze Particle tool in ImageJ. The binarized localization maps of P2Y11 were then multiplied by those corresponding to the paired CaV1.2 or PKAcat localization maps. The number of objects obtained from this operation were then divided by the number of clusters/objects present in the original binarized localization maps for P2Y11. This method only detects objects that are 100% overlapping with each other in two independent images (e.g localization maps for P2Y11 and CaV1.2). Random simulation of image pairs for P2Y11 and CaV1.2 or P2Y11 and PKAcat were generated based on the original super-resolution localization maps for each pair of proteins using the Coste’s randomization algorithm included in the JACoP plug-in in ImageJ (Bolte and Cordelières, 2006) from six different cells per condition. Parameters for the Coste’s randomization algorithm were selected to generate simulated images with relative similar cluster size and density to those observed in the original super-resolution localization maps for each protein. Each randomized image was generated after undergoing 1000 randomization rounds. Randomized images were binarized prior to analysis and the percentage of complete P2Y11 overlap from the randomized image pairs was calculated as described above.
 
-## Cell culture, transfection of tsA-201 cells, and reverse permeabilization
+### Cell culture, transfection of tsA-201 cells, and reverse permeabilization
 
 tsA-201 were obtained from Sigma-Aldrich (cat#: ECACC 96121229). These cells are included in the European Collection of Authenticated Cell Cultures. tsA-201 cells were cultured in DMEM supplemented with 1X pyruvate, 1X glutamax, 8% fetal bovine serum (FBS) and 5 mM glucose (without phenol red) at 37° C in a 5% CO2 incubator. Cells were transfected at 60–70% confluence with human P2Y11 tagged with GFP at C-terminus (UMR cDNA Resource Center - www.cDNA.org; clone ID P2Y1100000) with JetPRIME transfection reagent (Polyplus transfection SA, NY) for approximately 36 hr. P2Y11 sense and antisense oligodeoxynucleotides (ODNs; 2 µM; Integrated DNA Technologies) were transfected in tsA-201 cells 24 hr after initial transfection with P2Y11-GFP. The cells were gently washed with 1X PBS and then removed with a cell scrapper using a RIPA lysis buffer solution composed of 50 mM Tris base, 150 mM NaCl, 5 mM EGTA, 10 mM EDTA, 1% nonyl phenoxypolyethoxylethanol-40 (NP-40), 10% glycerol, 0.05% sodium dodecyl sulfate (SDS), 0.4% deoxycholic acid (DOC) with protease inhibitors (1 µg/mL pepstatin A, 10 µg/mL leupeptin, and 20 µg/mL aprotinin). Antisense and sense ODNs for P2Y11 were designed and checked for specificity using Prime BLAST against the human P2Y11 sequence (NC_000019.10). The sequences used for the antisense ODNs were as follows: 5’-CAAGGCCACCCTAACCACTG-3’ and 5’-CTCTCCCTTCCCTGCGTTA-3’. The sequences for sense ODNs were 5’-CAACGTCTCGGGTAAGGAGAA-3’ and 5’-ATGAGGAAGGAAACGTGGGT-3’. For all ODNs, the last three bases on the 3’ end were phosphorothioated to reduce degradation by cellular nucleases. ODNs were dissolved in nuclease-free water to a 1 mM concentration.
 
 Human adipose arteries were permeabilized in a solution containing (in mM): 120 KCl, 2 MgCl2, 10 EGTA, 5 Na2ATP, 20 TES (2-[(2-Hydroxy-1, 1-bis(hydroxymethyl)ethyl)amino] ethanesulfonic acid, N-[Tris(hydroxymethyl)methyl]−2-aminoethanesufonic acid), pH adjusted to 6.8 with NaOH. Arteries were first incubated in permeabilization solution for 20 min at 4°C, followed by a 4 hr incubation at 4°C in a solution supplemented with ODNs (2 µM). Arteries were placed in an ODN-containing solution with elevated MgCl2 (10 mM) for 1 hr at room temperature. Permeabilization was reversed by incubating arteries for 30 min at room temperature in MOPS physiological solution composed of (in mM): 140 NaCl, 5 KCl, 10 MgCl2, 5 D-glucose, and 2 MOPS, pH adjusted to 7.1 with NaOH. Arteries were incubated in a MOPS solution containing 0.01, 0.1, and 1.8 mM CaCl2 in 15 min intervals, increasing Ca2+ gradually. After completing reverse permeabilization, arteries were cultured in D-MEM/F-12 culture media supplemented with L-glutamine (2 mM) for 2.5 days at 37°C. Arteries were then lysed and used for Western blot (see Immunoblotting section).
 
-## Adenovirus infection of unpassaged arterial myocytes and Fluorescence Resonance Energy Transfer (FRET)
+### Adenovirus infection of unpassaged arterial myocytes and Fluorescence Resonance Energy Transfer (FRET)
 
 Laminin (Life Technologies, Grand Island, NY) diluted 100x in sterile-filtered PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH = 7.4) was used to coat #0 glass coverslips (Karl Hecht, Sondheim, Germany). After adding diluted laminin (100 µL per coverslip), coverslips were placed in a 37° C incubator with 5% CO2 for a minimum of 2 hr, then moved to 24-well plate wells (Falcon, Tewksbury, MA), and washed 3x with sterile-filtered PBS. Freshly dissociated human adipose arterial myocytes and mouse aortic cells were plated on the laminin-coated coverslips with 500 μL of serum-containing media for 48 hr in a 37° C incubator with 5% CO2. Media was then replaced with 500 μL of serum-free media-containing virus coding for the membrane-targeted Epac1-camps-based FRET sensor (ICUE3-PM) (Allen et al., 2006; Liu et al., 2011) and placed at 37° C with 5% CO2 for another 36 hr. Viruses were produced using the AdEasy system (Qbiogene, Carlsbad, CA) (Luo et al., 2007). After infection, media was changed to serum-free media without virus. Glass coverslips were transferred to glass bottom culture dishes (MatTek, Ashland, MA) containing 3 mL PBS at room temperature.
 
 A Zeiss AXIO Observer A1 inverted fluorescence microscope (San Diego, CA) equipped with a Hamamatsu Orca-Flash 4.0 digital camera (Bridgewater, NJ) and controlled by Metaflor software (Molecular Devices, Sunnyvale, CA) acquired phase contrast, CFP480, and FRET images. Phase contrast and CFP480 images were collected with 20x and 40x oil immersion objective lenses, while FRET images were collected using only the 40x oil immersion objective lens. Images for FRET analysis were recorded by exciting the donor fluorophore at 430–455 nm and measuring emission fluorescence with two filters (475DF40 for cyan and 535DF25 for yellow). Images were subjected to background subtraction and acquired every 30 s with exposure time of 200 ms for each channel. The donor/acceptor FRET ratio was calculated and normalized to the ratio value of baseline. CFP480 images were acquired by exciting the donor fluorophore at 430–455 nm and measuring emission fluorescence with the 475DF40 filter for 25 ms. Averages of normalized curves and maximal response to stimulation were graphed based on FRET ratio changes. Binding of cAMP to ICUE3-PM led to decreases in the YFP/CFP ratio, indicating increases in cAMP levels.
 
-## Chemicals and statistics
+### Chemicals and statistics
 
 All chemical reagents were from Sigma-Aldrich (St. Louis, MO) unless otherwise stated. Data were analyzed using GraphPad Prism software and expressed as mean ±SEM. Data were assessed for potential outliers using the GraphPad Prism Outlier Test and for normality of distribution using appropriate tests. Statistical significance was then determined using suitable paired or unpaired Student’s t-test, nonparametric tests or One-way analysis of variance (ANOVA) for multiple comparisons with proper post hoc test. p<0.05 was considered statistically significant (denoted by * in figures).

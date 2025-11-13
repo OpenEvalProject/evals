@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.03971.001 Eukaryotic cells rapidly reduce protein synthesis in response to various stress conditions. This can be achieved by the phosphorylation-mediated inactivation of a key translation initiation factor, eukaryotic initiation factor 2 (eIF2). However, the persistent translation of certain mRNAs is required for deployment of an adequate stress response. We carried out ribosome profiling of cultured human cells under conditions of severe stress induced with sodium arsenite. Although this led to a 5.4-fold general translational repression, the protein coding open reading frames (ORFs) of certain individual mRNAs exhibited resistance to the inhibition. Nearly all resistant transcripts possess at least one efficiently translated upstream open reading frame (uORF) that represses translation of the main coding ORF under normal conditions. Site-specific mutagenesis of two identified stress resistant mRNAs (PPP1R15B and IFRD1) demonstrated that a single uORF is sufficient for eIF2-mediated translation control in both cases. Phylogenetic analysis suggests that at least two regulatory uORFs (namely, in SLC35A4 and MIEF1) encode functional protein products. DOI: http://dx.doi.org/10.7554/eLife.03971.001
+Eukaryotic cells rapidly reduce protein synthesis in response to various stress conditions. This can be achieved by the phosphorylation-mediated inactivation of a key translation initiation factor, eukaryotic initiation factor 2 (eIF2). However, the persistent translation of certain mRNAs is required for deployment of an adequate stress response. We carried out ribosome profiling of cultured human cells under conditions of severe stress induced with sodium arsenite. Although this led to a 5.4-fold general translational repression, the protein coding open reading frames (ORFs) of certain individual mRNAs exhibited resistance to the inhibition. Nearly all resistant transcripts possess at least one efficiently translated upstream open reading frame (uORF) that represses translation of the main coding ORF under normal conditions. Site-specific mutagenesis of two identified stress resistant mRNAs (PPP1R15B and IFRD1) demonstrated that a single uORF is sufficient for eIF2-mediated translation control in both cases. Phylogenetic analysis suggests that at least two regulatory uORFs (namely, in SLC35A4 and MIEF1) encode functional protein products.
 
 ## Introduction
 
@@ -43,21 +43,21 @@ The present work uses ribosome profiling (Ingolia et al., 2009) to explore the i
 
 ## Results
 
-## Ribosome profiling
+### Ribosome profiling
 
-In order to generate the most informative conditions for characterizing eIF2-dependent mechanisms of translation regulation, it was important to minimize the transcriptional response and induce significant but not complete inhibition of translation. For this purpose, we chose to treat cells with sodium arsenite for a short time period and to monitor the immediate translational response. Sodium arsenite is a well-known potent inducer of eIF2 phosphorylation that activates EIF2AK1 (
+In order to generate the most informative conditions for characterizing eIF2-dependent mechanisms of translation regulation, it was important to minimize the transcriptional response and induce significant but not complete inhibition of translation. For this purpose, we chose to treat cells with sodium arsenite for a short time period and to monitor the immediate translational response. Sodium arsenite is a well-known potent inducer of eIF2 phosphorylation that activates EIF2AK1 (McEwen et al., 2005). We examined changes in the phosphorylation status of eIF2 and EIF4EBP1 during arsenite treatment to identify suitable conditions for ribosome profiling. The phosphorylated form of eIF2 (p-eIF2) progressively accumulates during the first 2 hr of stress (Figure 1A). After 0.5 hr of arsenite treatment, p-eIF2 reaches 30–40% of maximal levels of phosphorylation (Figure 1A). The dephosphorylation of EIF4EBP1 becomes evident 1 hr after treatment and does not revert (Figure 1A). We did not detect changes in phosphorylation of p70 S6 kinase and its substrate RPS6 during arsenite treatment (Figure 1A). A robust accumulation of ATF4 is evident 30 min after treatment. These results suggest that 0.5 hr post-treatment is likely to be suitable for examining eIF2 inhibition whilst minimizing possible arsenite-induced side effects. Furthermore, the number of ribosomes in polysome fractions was reduced by ∼4.5-fold under these conditions (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig1-v2.jpg)
 
-**Figure 1.:** (A) Western blotting time series analysis of several protein components of HEK293T lysates after treatment with 40 µM sodium arsenite. (B) Sucrose density gradient profiles of HEK293T cells untreated and treated for 30 min with sodium arsenite at 40 µM. (C) Distribution of raw read counts over mRNA functional regions. (D) Metagene analysis: short reads from all mRNAs are aligned around 5′ and 3′ ends of CDS, transcript read density (RNA) is shown using curves, ribosome density (number of footprint reads) is shown using columns corresponding to the alignment locations of the read 5′ ends. (E) Differential gene expression analysis. Scatter plots compare ribosome occupancy (top), transcript levels (middle), and translation efficiency (TE) (bottom) between treated and untreated conditions. To avoid error due to uORF translation the number of ribo-seq reads aligning to the CDS only was used to determine the ribosome occupancy and TE. The x axis represents the normalized number of reads corresponding to the experiment/condition of minimal expression (see ‘Materials and methods’). The threshold used to denote differentially expressed genes (Z-score of 4) is indicated in orange. Certain genes of interest are indicated with numbers, followed by their gene symbols. (F) Two heat maps displaying the fold change and Z-score for the top 22 most stress resistant and bottom 9 most stress sensitive genes, as estimated based on statistical significance of the change of their ribosome occupancy (ribo-seq Z-score).DOI: http://dx.doi.org/10.7554/eLife.03971.00310.7554/eLife.03971.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.03971.004
+**Figure 1.:** (A) Western blotting time series analysis of several protein components of HEK293T lysates after treatment with 40 µM sodium arsenite. (B) Sucrose density gradient profiles of HEK293T cells untreated and treated for 30 min with sodium arsenite at 40 µM. (C) Distribution of raw read counts over mRNA functional regions. (D) Metagene analysis: short reads from all mRNAs are aligned around 5′ and 3′ ends of CDS, transcript read density (RNA) is shown using curves, ribosome density (number of footprint reads) is shown using columns corresponding to the alignment locations of the read 5′ ends. (E) Differential gene expression analysis. Scatter plots compare ribosome occupancy (top), transcript levels (middle), and translation efficiency (TE) (bottom) between treated and untreated conditions. To avoid error due to uORF translation the number of ribo-seq reads aligning to the CDS only was used to determine the ribosome occupancy and TE. The x axis represents the normalized number of reads corresponding to the experiment/condition of minimal expression (see ‘Materials and methods’). The threshold used to denote differentially expressed genes (Z-score of 4) is indicated in orange. Certain genes of interest are indicated with numbers, followed by their gene symbols. (F) Two heat maps displaying the fold change and Z-score for the top 22 most stress resistant and bottom 9 most stress sensitive genes, as estimated based on statistical significance of the change of their ribosome occupancy (ribo-seq Z-score).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Reproducibility between biological replicas, from top to bottom: ribosome profiling under control conditions; ribosome profiling under arsenite induced stress; mRNA-seq fragments, non-treated; mRNA-seq fragments under stress. (B) Distribution of ribosome protected fragments and fragmented RNA relative to the annotated CDS depending on their length (x axis).DOI: http://dx.doi.org/10.7554/eLife.03971.005
+**Figure 1—figure supplement 1.:** (A) Reproducibility between biological replicas, from top to bottom: ribosome profiling under control conditions; ribosome profiling under arsenite induced stress; mRNA-seq fragments, non-treated; mRNA-seq fragments under stress. (B) Distribution of ribosome protected fragments and fragmented RNA relative to the annotated CDS depending on their length (x axis).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) The Z-score based normalization approach for the identification of differentially expressed genes. Z-score is used to mitigate expression variance for the genes expressed at different levels. (B) and (C) Left panels: correlation of Z-scores between replicas calculated for the changes in RNA levels (B) and translation efficiencies (C). Right panels: the most significantly regulated genes.DOI: http://dx.doi.org/10.7554/eLife.03971.006
+**Figure 1—figure supplement 2.:** (A) The Z-score based normalization approach for the identification of differentially expressed genes. Z-score is used to mitigate expression variance for the genes expressed at different levels. (B) and (C) Left panels: correlation of Z-scores between replicas calculated for the changes in RNA levels (B) and translation efficiencies (C). Right panels: the most significantly regulated genes.
 
 Therefore, HEK293T cells were treated with 40 µM sodium arsenite for 30 min before harvesting for ribosomal profiling which was carried out according to the Ingolia et al. protocol (Ingolia et al., 2012) with some modifications (see ‘Materials and methods’).
 
@@ -65,53 +65,376 @@ Figure 1C–E shows the general characteristics of the ribo-seq and mRNA-seq dat
 
 Owing to the stochastic nature of massively parallel sequencing, the accuracy of an estimate of the level of expression of a gene is dependent on its sequencing depth. Therefore the estimated expression levels of weakly expressed genes have greater variability than highly expressed genes. To mitigate this effect we used a Z-score transformation (see review by Quackenbush, 2002). Genes were first ordered based on their lowest read depth (minimum expression). The parameters of the distribution of expression changes for the genes with similar expression levels were used to calculate Z-scores of differential expression for individual genes (see ‘Materials and methods’ and Figure 1—figure supplement 2). We used a Z-score of 4 as an arbitrary threshold of statistical significance for differentially regulated genes to minimize the false discovery rate.
 
-## Effects of arsenite treatment on transcriptome
+### Effects of arsenite treatment on transcriptome
 
 The estimated time required for mRNA maturation (Femino et al., 1998; Audibert et al., 2002) is comparable to the duration of the arsenite treatment, therefore we did not expect significant changes in mRNA levels due to a transcriptional response. However, it is conceivable that the arsenite treatment could affect the stability of specific mRNAs. Indeed, the treatment was found to significantly alter the transcript levels of 24 genes (Figure 1E). The most pronounced effect observed is the accumulation of JUN mRNA, a transcript that is short-lived under normal conditions (Elkon et al., 2010; Rabani et al., 2011). JUN encodes a subunit of the AP-1 transcription factor implicated in response to a myriad of physiological and pathological stimuli (reviewed in Hess et al., 2004). AP-1 transcription factors consist of homo- or heterodimers of different subunits and its composition is crucial for its specificity. As displayed in Figure 1F, despite a significant decrease in its translational efficiency, the overall expression of JUN is almost unaffected upon arsenite treatment because of the increase in its mRNA levels (Figure 1E,F). According to previous observations, AP-1 may induce apoptosis upon treatment with arsenite (Huang et al., 1999; Namgung and Xia, 2000).
 
-## Arsenite treatment strongly inhibits global translation while translation of a few specific mRNAs is resistant
+### Arsenite treatment strongly inhibits global translation while translation of a few specific mRNAs is resistant
 
 A median 5.4-fold reduction of ribosomal occupancy (translational efficiency, TE) was observed with the profiling data, a value that is consistent with the reduced number of ribosomes in the polysome fraction (Figure 1B). A relatively small subset of mRNAs displayed exceptional sensitivity to translational inhibition (see Figure 1—source data 1; the most prominent ones are displayed in Figure 1F). Among these is ODC1 which codes for ornithine decarboxylase, the rate-limiting enzyme of the polyamine biosynthesis pathway. An interesting case of potential downregulation is in EIF2AK2 (a.k.a. PKR), which encodes one of the four eIF2 kinases (we refer to it as potential because its TE and ribo-seq Z-scores did not pass the threshold of statistical significance, but are close to it). Among other extremely sensitive genes are several that encode RNA-binding proteins (PABPC1, PCBP2, RPL12, and CSDE1) and cyclins G1 (CCNG1) and I (CCNI).
 
 To explore the possible activation of the mTOR signalling axis after the course of 0.5 hr arsenite treatment, we analysed the translation of mRNAs that were reported to be strongly downregulated upon pharmacological inhibition of mTOR (Hsieh et al., 2012). Almost all of them have negative Z-scores with their TE decrease upon arsenite treatment ∼25% greater than the average (Figure 1—figure supplement 2C). Thus, while arsenite treatment may affect the mTOR pathway, its impact on translation control is not substantial in comparison with eIF2 inhibition.
 
-Several genes that were previously reported to resist the translation inhibition caused by eIF2 phosphorylation were also found to be resistant in our study (Figure 1F). This includes the well-studied ATF4, ATF5, and PPP1R15A. We did not observe translational resistance for either SRC (Figure 1—source data 1), which was reported to be translated in an eIF2-independent mode (Allam and Ali, 2010), or PRNP, which was also reported to escape eIF2 associated repression (Moreno et al., 2012). The general repression of eIF2 may be expected to promote translation of cellular IRESs if they enabled an eIF2-independent mode of translation as reported for XIAP mRNA (Thakor and Holcik, 2012). However, we found no evidence of resistance by any genes with putative IRES elements according to the IRESite database (Mokrejs et al., 2010), see Table 1 including XIAP mRNA. It is important to note that many of the genes from the IRESite are not expressed at levels sufficient for detecting resistance.10.7554/eLife.03971.007Table 1.Translation response of mRNAs with reported IRES from IRESiteDOI: http://dx.doi.org/10.7554/eLife.03971.007Gene_nameIRES nameORF#Minimal expressionTE fold changeTE Z-scoreAGTR1AT1R_var1140.461.12AGTR1AT1R_var2140.461.12AGTR1AT1R_var3140.461.12AGTR1AT1R_var4140.461.12APAF1Apaf-11102.90.291.8AQP4AQP411.50.982.47ATAD5ELG111083.40.220.75BAG1BAG1_p36delta236 nt BAG1_p3641376.50.1−1.31BCL2BCL21100.18−0.22BIRC2c-IAP1_285-1399 c-IAP1_1313-146211470.13−0.94CCND1CCND112130.17−0.15CDK11APITSLRE_p5810NANACDKN1Bp27kip1112520.17−0.3CSDE1UNR116,657.50.05−5.12DCLRE1AhSNM111065.20.17−0.24EIF4G1eIF4G112,9370.210.65EIF4G1eIF4GI-ext112,9370.210.65EIF4G2DAP5121,727.60.261.56EIF4G3eiF4GII11305.60.13−1.46EIF4G3eIF4GII-long11305.60.13−1.46FGF1FGF1A10NANAFMR1FMR11137.80.13−1.35HSPA1Ahsp7010NANAHSPA5BiP_-222_-311819.30.231IGF2IGF2_leader210NANALAMB1LamB1_-335_-1111410.13−1.52LEF1LEF112480.15−0.8MNTMNT_75-267 MNT_36-16011440.281.32MYBMYB1154.20.09−1.47MYCc-myc219460.14−1.2MYCL1L-myc10.5NANAMYCNn-MYC10NANANKRFNRF_-653_-17110640.18−0.01PDGFBPDGF2/c-sis10NANAPIM1Pim-111130.12−1.1RUNX1AML1/RUNX11100.16−0.38RUNX1T1MTG8a11630.13−1.08XIAPxIAP_5-464 XIAP_305-46612169.60.12−1.67
+Several genes that were previously reported to resist the translation inhibition caused by eIF2 phosphorylation were also found to be resistant in our study (Figure 1F). This includes the well-studied ATF4, ATF5, and PPP1R15A. We did not observe translational resistance for either SRC (Figure 1—source data 1), which was reported to be translated in an eIF2-independent mode (Allam and Ali, 2010), or PRNP, which was also reported to escape eIF2 associated repression (Moreno et al., 2012). The general repression of eIF2 may be expected to promote translation of cellular IRESs if they enabled an eIF2-independent mode of translation as reported for XIAP mRNA (Thakor and Holcik, 2012). However, we found no evidence of resistance by any genes with putative IRES elements according to the IRESite database (Mokrejs et al., 2010), see Table 1 including XIAP mRNA. It is important to note that many of the genes from the IRESite are not expressed at levels sufficient for detecting resistance.
 
-## Efficient translation of uORFs combined with inefficient translation of CDS is a predictor of stress resistant mRNAs
+**Table 1.**
+ Translation response of mRNAs with reported IRES from IRESite
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene_name</th>
+      <th>IRES name</th>
+      <th>ORF#</th>
+      <th>Minimal expression</th>
+      <th>TE fold change</th>
+      <th>TE Z-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGTR1</td>
+      <td>AT1R_var1</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.46</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>AGTR1</td>
+      <td>AT1R_var2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.46</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>AGTR1</td>
+      <td>AT1R_var3</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.46</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>AGTR1</td>
+      <td>AT1R_var4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.46</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>APAF1</td>
+      <td>Apaf-1</td>
+      <td>1</td>
+      <td>102.9</td>
+      <td>0.29</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>AQP4</td>
+      <td>AQP4</td>
+      <td>1</td>
+      <td>1.5</td>
+      <td>0.98</td>
+      <td>2.47</td>
+    </tr>
+    <tr>
+      <td>ATAD5</td>
+      <td>ELG1</td>
+      <td>1</td>
+      <td>1083.4</td>
+      <td>0.22</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>BAG1</td>
+      <td>BAG1_p36delta236 nt BAG1_p36</td>
+      <td>4</td>
+      <td>1376.5</td>
+      <td>0.1</td>
+      <td>−1.31</td>
+    </tr>
+    <tr>
+      <td>BCL2</td>
+      <td>BCL2</td>
+      <td>1</td>
+      <td>10</td>
+      <td>0.18</td>
+      <td>−0.22</td>
+    </tr>
+    <tr>
+      <td>BIRC2</td>
+      <td>c-IAP1_285-1399 c-IAP1_1313-1462</td>
+      <td>1</td>
+      <td>147</td>
+      <td>0.13</td>
+      <td>−0.94</td>
+    </tr>
+    <tr>
+      <td>CCND1</td>
+      <td>CCND1</td>
+      <td>1</td>
+      <td>213</td>
+      <td>0.17</td>
+      <td>−0.15</td>
+    </tr>
+    <tr>
+      <td>CDK11A</td>
+      <td>PITSLRE_p58</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>CDKN1B</td>
+      <td>p27kip1</td>
+      <td>1</td>
+      <td>1252</td>
+      <td>0.17</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>CSDE1</td>
+      <td>UNR</td>
+      <td>1</td>
+      <td>16,657.5</td>
+      <td>0.05</td>
+      <td>−5.12</td>
+    </tr>
+    <tr>
+      <td>DCLRE1A</td>
+      <td>hSNM1</td>
+      <td>1</td>
+      <td>1065.2</td>
+      <td>0.17</td>
+      <td>−0.24</td>
+    </tr>
+    <tr>
+      <td>EIF4G1</td>
+      <td>eIF4G</td>
+      <td>1</td>
+      <td>12,937</td>
+      <td>0.21</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>EIF4G1</td>
+      <td>eIF4GI-ext</td>
+      <td>1</td>
+      <td>12,937</td>
+      <td>0.21</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>EIF4G2</td>
+      <td>DAP5</td>
+      <td>1</td>
+      <td>21,727.6</td>
+      <td>0.26</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <td>EIF4G3</td>
+      <td>eiF4GII</td>
+      <td>1</td>
+      <td>1305.6</td>
+      <td>0.13</td>
+      <td>−1.46</td>
+    </tr>
+    <tr>
+      <td>EIF4G3</td>
+      <td>eIF4GII-long</td>
+      <td>1</td>
+      <td>1305.6</td>
+      <td>0.13</td>
+      <td>−1.46</td>
+    </tr>
+    <tr>
+      <td>FGF1</td>
+      <td>FGF1A</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>FMR1</td>
+      <td>FMR1</td>
+      <td>1</td>
+      <td>137.8</td>
+      <td>0.13</td>
+      <td>−1.35</td>
+    </tr>
+    <tr>
+      <td>HSPA1A</td>
+      <td>hsp70</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>HSPA5</td>
+      <td>BiP_-222_-3</td>
+      <td>1</td>
+      <td>1819.3</td>
+      <td>0.23</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>IGF2</td>
+      <td>IGF2_leader2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LAMB1</td>
+      <td>LamB1_-335_-1</td>
+      <td>1</td>
+      <td>1141</td>
+      <td>0.13</td>
+      <td>−1.52</td>
+    </tr>
+    <tr>
+      <td>LEF1</td>
+      <td>LEF1</td>
+      <td>1</td>
+      <td>248</td>
+      <td>0.15</td>
+      <td>−0.8</td>
+    </tr>
+    <tr>
+      <td>MNT</td>
+      <td>MNT_75-267 MNT_36-160</td>
+      <td>1</td>
+      <td>144</td>
+      <td>0.28</td>
+      <td>1.32</td>
+    </tr>
+    <tr>
+      <td>MYB</td>
+      <td>MYB</td>
+      <td>1</td>
+      <td>154.2</td>
+      <td>0.09</td>
+      <td>−1.47</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>c-myc</td>
+      <td>2</td>
+      <td>1946</td>
+      <td>0.14</td>
+      <td>−1.2</td>
+    </tr>
+    <tr>
+      <td>MYCL1</td>
+      <td>L-myc</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>MYCN</td>
+      <td>n-MYC</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>NKRF</td>
+      <td>NRF_-653_-17</td>
+      <td>1</td>
+      <td>1064</td>
+      <td>0.18</td>
+      <td>−0.01</td>
+    </tr>
+    <tr>
+      <td>PDGFB</td>
+      <td>PDGF2/c-sis</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>PIM1</td>
+      <td>Pim-1</td>
+      <td>1</td>
+      <td>113</td>
+      <td>0.12</td>
+      <td>−1.1</td>
+    </tr>
+    <tr>
+      <td>RUNX1</td>
+      <td>AML1/RUNX1</td>
+      <td>1</td>
+      <td>10</td>
+      <td>0.16</td>
+      <td>−0.38</td>
+    </tr>
+    <tr>
+      <td>RUNX1T1</td>
+      <td>MTG8a</td>
+      <td>1</td>
+      <td>163</td>
+      <td>0.13</td>
+      <td>−1.08</td>
+    </tr>
+    <tr>
+      <td>XIAP</td>
+      <td>xIAP_5-464 XIAP_305-466</td>
+      <td>1</td>
+      <td>2169.6</td>
+      <td>0.12</td>
+      <td>−1.67</td>
+    </tr>
+  </tbody>
+</table>
+
+### Efficient translation of uORFs combined with inefficient translation of CDS is a predictor of stress resistant mRNAs
 
 The mRNAs encoding ATF4, PPP1R15A, SLC35A4, C19orf48, ATF5, and HOXB2 were found to be ‘preferentially translated’ (defined as having a TE >4 and a fold change >1), while mRNAs encoding IFRD1, PTP4A1, PCNXL4, and UCP2 were found to be ‘resistant’ (TE >4 and a fold change <1). Due to the small number of preferentially translated and resistant mRNAs, we analysed their properties together and, for simplicity, we refer to them as resistant for the remainder of this text.
 
-Examination of individual mRNA profiles frequently revealed the presence of extensively translated uORFs in resistant mRNAs (
+Examination of individual mRNA profiles frequently revealed the presence of extensively translated uORFs in resistant mRNAs (Figure 2). Indeed, with the exception of a single weakly expressed gene HOXB2, all mRNAs found to be resistant (TE Z-score >4) contained uORF(s) that are translated under normal conditions. However, ribosome profiling data suggest that 8% of other expressed mRNAs also have translated uORFs (Figure 3A). Hence, the mere presence of translated uORFs is a poor predictor of resistance. We therefore investigated further the features of uORFs that are associated with stress resistance. As can be seen in Figure 3B, uORFs in the resistant mRNAs are usually efficiently translated under normal conditions, though yet again there is a large absolute number of non-resistant mRNAs that contain similarly efficiently translated uORFs. Figure 3C shows the relationship between the TE of the CDS and the resistance: the CDS of the most resistant mRNAs is weakly translated under normal conditions. The ratio of the ribosome densities in uORFs and in CDS provides a much better criterion for discriminating between resistant and non-resistant mRNAs (Figure 3D). The length of all the translated uORFs (in the resistant mRNAs) was found to exceed 20 codons, although this is of limited predictive value as there are many long uORFs in non-resistant mRNAs (Figure 3E). Based on these findings we expected that, upon arsenite treatment, the ribosome density for resistant mRNAs would shift from the 5′ leaders to CDS. Such a shift is indeed observable (Figure 3F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig2-v2.jpg)
 
-**Figure 2.:** Bottom plots for each mRNA show counts of mRNA-seq reads (grey) and ribosome reads (blue and red) as columns (control: positive values; arsenite treatment: negative values). The annotated CDS region is highlighted in yellow. Translated conserved ORFs in the 5′ leaders are highlighted in violet. Read counts above the cut-off are shown with numbers above corresponding columns. Top plots represent conservation of uORF features within the leaders of the orthologous mRNAs (upstream of annotated CDS) obtained from the analysis of genomic alignments of the 46 vertebrates using the human sequence as a reference. Each box corresponds to one of the three reading frames where AUG codons are shown as pink dots and stop codons as navy dots in each of the genomic sequences used in the alignments. Regions of multiple sequence alignment corresponding to translated conserved uORFs are highlighted in violet. Introns and gaps were removed from the alignments.DOI: http://dx.doi.org/10.7554/eLife.03971.008
+**Figure 2.:** Bottom plots for each mRNA show counts of mRNA-seq reads (grey) and ribosome reads (blue and red) as columns (control: positive values; arsenite treatment: negative values). The annotated CDS region is highlighted in yellow. Translated conserved ORFs in the 5′ leaders are highlighted in violet. Read counts above the cut-off are shown with numbers above corresponding columns. Top plots represent conservation of uORF features within the leaders of the orthologous mRNAs (upstream of annotated CDS) obtained from the analysis of genomic alignments of the 46 vertebrates using the human sequence as a reference. Each box corresponds to one of the three reading frames where AUG codons are shown as pink dots and stop codons as navy dots in each of the genomic sequences used in the alignments. Regions of multiple sequence alignment corresponding to translated conserved uORFs are highlighted in violet. Introns and gaps were removed from the alignments.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** SLC35A4 upstream open reading frame (uORF) in three different frames.Codons are represented as coloured bricks according to the following scheme: pink (ATG), navy (stop codons: TAA, TAG or TGA). The rest are coloured depending on the nature of substitution relative to the human sequence as follows: white: no substitution; light green: synonymous; green: positive (BLOSUM62 > 0); red: negative (BLOSUM62 ≤ 0); deletions: grey. Locations of ORFs (from ATG to a stop) present in humans are shown under each alignment as a thicker dark blue bar. Regions of alignment with a high number of light green or green bricks (synonymous and positive substitutions) indicate protein coding evolution. The codon substitution analysis was carried out using CodAlignView (Jungreis I, Lin M, Kellis M. CodAlignView: a tool for visualizing protein-coding constraint) and processed with a python script to remove sequences of codons.DOI: http://dx.doi.org/10.7554/eLife.03971.009
+**Figure 2—figure supplement 1.:** Codons are represented as coloured bricks according to the following scheme: pink (ATG), navy (stop codons: TAA, TAG or TGA). The rest are coloured depending on the nature of substitution relative to the human sequence as follows: white: no substitution; light green: synonymous; green: positive (BLOSUM62 > 0); red: negative (BLOSUM62 ≤ 0); deletions: grey. Locations of ORFs (from ATG to a stop) present in humans are shown under each alignment as a thicker dark blue bar. Regions of alignment with a high number of light green or green bricks (synonymous and positive substitutions) indicate protein coding evolution. The codon substitution analysis was carried out using CodAlignView (Jungreis I, Lin M, Kellis M. CodAlignView: a tool for visualizing protein-coding constraint) and processed with a python script to remove sequences of codons.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** See Figure 2—figure supplement 1 for the explanation of the colour scheme used for the alignment visualization.DOI: http://dx.doi.org/10.7554/eLife.03971.010
+**Figure 2—figure supplement 2.:** See Figure 2—figure supplement 1 for the explanation of the colour scheme used for the alignment visualization.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** SLC35A4 and MIEF1.Ribosome profiling data aligned to the SLC35A4 (A) and MIEF1 (B) loci of the human genome from nine studies available in the GWIPS-viz Browser. The positions of the conserved upstream open reading frames (uORFs) are shown with a red bar below the blue bars representing corresponding RefSeq transcripts.DOI: http://dx.doi.org/10.7554/eLife.03971.011
+**Figure 2—figure supplement 3.:** Ribosome profiling data aligned to the SLC35A4 (A) and MIEF1 (B) loci of the human genome from nine studies available in the GWIPS-viz Browser. The positions of the conserved upstream open reading frames (uORFs) are shown with a red bar below the blue bars representing corresponding RefSeq transcripts.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig3-v2.jpg)
 
-**Figure 3.:** (A) Frequency of AUG initiating uORF occurrence and their translation in stress resistant and other mRNAs. Relationship between stress resistance (y axis) and translation efficiency of uORFs (B), CDS (C), and uORF/CDS ratio (D). Translationally resistant genes (shaded in blue) have a high uORF translational efficiency (TE) and a low CDS TE. (E) Relationship between uORF length (x axis), their TE (y axis), and the level of stress resistance (differential colouring). (F) Relationship between stress resistance (y axis) and shift of ribosome density in the 3′ direction. These plots indicate that, under normal conditions, resistant mRNAs tend to display a high uORF TE and a low CDS TE while, under stress conditions, resistant mRNAs are associated with a shift of ribosome density in the 3′ direction owing to a reduced ratio of ribosome density between uORFs and CDS.DOI: http://dx.doi.org/10.7554/eLife.03971.012
+**Figure 3.:** (A) Frequency of AUG initiating uORF occurrence and their translation in stress resistant and other mRNAs. Relationship between stress resistance (y axis) and translation efficiency of uORFs (B), CDS (C), and uORF/CDS ratio (D). Translationally resistant genes (shaded in blue) have a high uORF translational efficiency (TE) and a low CDS TE. (E) Relationship between uORF length (x axis), their TE (y axis), and the level of stress resistance (differential colouring). (F) Relationship between stress resistance (y axis) and shift of ribosome density in the 3′ direction. These plots indicate that, under normal conditions, resistant mRNAs tend to display a high uORF TE and a low CDS TE while, under stress conditions, resistant mRNAs are associated with a shift of ribosome density in the 3′ direction owing to a reduced ratio of ribosome density between uORFs and CDS.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) WebLogo representation of information content within translation initiation sequences (from position −4 to position +3) for uORF starts in the resistant mRNAs. (B) Comparison of frequencies of various translation initiation sequences (−4 to +3) for annotated ORFs (x axis) and AUG present in 5' leaders (y axis). Translation initiation sequences of uORFs in the resistant mRNAs are shown in blue. (C) Scatter plot representing relationship between translation response (y axis) and the length of 5′ leaders (x axis). (D) Relationship between translational response (y axis) and free energy of potential RNA secondary structures within the first 240 nt of 5′ leaders (x axis).DOI: http://dx.doi.org/10.7554/eLife.03971.013
+**Figure 3—figure supplement 1.:** (A) WebLogo representation of information content within translation initiation sequences (from position −4 to position +3) for uORF starts in the resistant mRNAs. (B) Comparison of frequencies of various translation initiation sequences (−4 to +3) for annotated ORFs (x axis) and AUG present in 5' leaders (y axis). Translation initiation sequences of uORFs in the resistant mRNAs are shown in blue. (C) Scatter plot representing relationship between translation response (y axis) and the length of 5′ leaders (x axis). (D) Relationship between translational response (y axis) and free energy of potential RNA secondary structures within the first 240 nt of 5′ leaders (x axis).
 
 We also compared various sequence features of 5′ leaders and uORFs between the resistant mRNAs and the remaining expressed mRNAs. We explored the nucleotide (nt) context surrounding uORF start codons (mostly AUG but also CUG) in resistant mRNAs but found no evidence for selection for a particular context (Figure 3—figure supplement 1A); the frequency of individual heptameric initiation sequences (−3 to +4) is equally variable across uORFs of resistant and non-resistant mRNAs as well as at annotated starts of CDS (Figure 3—figure supplement 1B). We found that the average 5′ leader length of resistant mRNAs is longer (378.5 nt) than that of other mRNAs (169.0 nt), but there is significant variation within both distributions (Figure 3—figure supplement 1C). We also found that 5′ leaders of resistant mRNAs have lower potential for RNA secondary structure formation within the first 240 nt based on free energy estimates of potential structures predicted with RNAfold (Lorenz et al., 2011). Yet, the difference is small and RNA secondary structure potential does not correlate well with resistance (Figure 3—figure supplement 1D).
 
 Based on this analysis we concluded that uORFs are ubiquitous in all highly resistant mRNAs expressed in HEK293T cells and the efficient (and perhaps inhibitory) translation of these uORFs most likely plays a crucial role in the mechanism of resistance. The mere presence of an uORF and its translation is insufficient to provide the resistance to eIF2 inactivation.
 
-## Newly discovered cases of resistance to eIF2 inhibition mediated by uORFs
+### Newly discovered cases of resistance to eIF2 inhibition mediated by uORFs
 
 We focused our attention on newly identified uORF-bearing mRNAs whose translation was refractory to eIF2 inactivation. For some of these the regulatory function of uORFs has been described previously, but its implication in eIF2-dependent translational control was not shown. This was true for IFRD1 (a.k.a. PC4 and TIS7), an interferon-related developmental regulator that was reported to be a modifier gene for cystic fibrosis (Gu et al., 2009). It has been reported previously that one of the two IFRD1 transcript variants possesses a 51 codon uORF which triggers mRNA decay upon termination under normal conditions but not under conditions of Unfolded Protein Response mediated by tunicamycin (Zhao et al., 2010). We did not observe a significant change in the transcript level upon arsenite treatment. A second case is UCP2, which codes for a mitochondrial anion carrier protein that increases the proton conductance of the mitochondrial membrane in response to reactive oxygen species production (Baird and Wek, 2012). It was shown that expression of UCP2 is upregulated at the translational level upon oxidative stress (Adam et al., 2006). The UCP2 5′ leader contains a 36 codon uORF that inhibits translation of UCP2 mRNA under normal conditions (Hurtaud et al., 2006).
 
@@ -121,31 +444,31 @@ Notably, one of the resistant mRNAs found in our study is the PPP1R15B gene that
 
 Although they did not pass our stringent criteria for a resistant gene, other candidates which we identified (based on the gene function and their profiles) are AZIN1 (TE Z-score 2.76) and MIEF1 (TE Z-score 2.88). AZIN1 encodes an inhibitor of ODC1 (ornithine decarboxylase) antizymes. Antizymes are proteins that target ODC1 for degradation, and AZIN1 is highly similar to ODC1 but lacks ornithine decarboxylation enzymatic activity. This makes it a competitive inhibitor of antizymes (Murakami et al., 1988). It has been shown that an uORF initiated with a non-cognate AUU codon mediates sensitivity of AZIN1 mRNA translation to polyamine levels (Ivanov et al., 2008). MIEF1, mitochondrial elongation factor 1, is another candidate bicistronic mRNA that we have identified (the other is SLC35A4). Similar to SLC35A4, we observed evidence of protein coding evolution within its uORF (Figure 2—figure supplement 2). Its translation is also supported by multiple ribo-seq datasets available in GWIPS-viz (Michel et al., 2014), see Figure 2—figure supplement 3B. Examination of the sequence encoded by its uORF revealed that it contains a conserved domain that belongs to a PFAM family Complex 1 protein (LYR family), ID PF05347.
 
-## 5′ leaders of several newly identified mRNAs are sufficient to provide resistance to translation inhibition
+### 5′ leaders of several newly identified mRNAs are sufficient to provide resistance to translation inhibition
 
 To examine the role of the 5′ leaders in modulating the resistance to eIF2 inhibition of resistant mRNAs revealed in this study (IFRD1, PPP1R15B, UCP2, PTP4A1, and SLC35A4), we designed reporter constructs and prepared capped and polyadenylated mRNAs with sequences of 5′ leaders upstream of a Firefly luciferase (Fluc) coding region. We used the 5′ leader of ATF4 mRNA and the HCV IRES as positive controls and, as a negative control, we used a non-specific 63 nt leader from the vector pGL3. mRNAs along with a control mRNA encoding Renilla luciferase (Rluc) were transfected into HEK293T cells and simultaneously treated with 40 μM arsenite or vehicle (Andreev et al., 2009).
 
-Under normal conditions the translation of mRNAs bearing the 5′ leaders of
+Under normal conditions the translation of mRNAs bearing the 5′ leaders of IFRD1, PPP1R15B, UCP2, and PTP4A1 was about sevenfold lower than that of the control mRNA with the simple non-specific leader (pGL3), whereas SLC35A4 was even lower (Figure 4A and Figure 4—figure supplement 1A). Arsenite treatment resulted in significant inhibition of pGL3 and control Rluc translation, while translation of other mRNAs did not change considerably and even slightly increased for SLC35A4 and HCV IRES. Similar results were observed in the Huh7 hepatocarcinoma cell line (Figure 4—figure supplement 1C). To address the effect of arsenite treatment on ongoing translation, which may be more relevant than conditions applied for ribosome profiling, reporter mRNAs were transfected and 1 hr later cells were treated with either non-specific translational inhibitor cycloheximide or arsenite. As expected, both inhibitors efficiently blocked translation of control Rluc mRNA but only cycloheximide was able to arrest translation driven by leaders of resistant mRNAs. Surprisingly, during arsenite treatment the reporter mRNA with the SLC35A4 5′ leader was able to produce 15 times more luciferase than after treatment with cycloheximide (Figure 4—figure supplement 2).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig4-v2.jpg)
 
-**Figure 4.:** (A) Firefly luciferase (Fluc) activity produced by expression of mRNA containing different 5′ leaders 2 hr after arsenite treatment (red bars) and in untreated cells (blue bars). Relative units correspond to Fluc activity normalized to the median Renilla luciferase (Rluc) activity derived from a co-transfected Rluc mRNA. The green text represents fold change calculated from the same data. The ORF organization of examined mRNAs is outlined on the left. Bars represent standard deviations. (B) Time series analysis of Fluc expression in cells treated at the time of transfection with sodium arsenite to a concentration of 40 µM (dotted lines) or vehicle (solid lines). Fluc activity of vehicle at 1 hr was taken as 100% for each mRNA and experimental condition. (C) Effect of start codon identity in IFRD1 and PPP1R15B 5′ leaders on Fluc activity.DOI: http://dx.doi.org/10.7554/eLife.03971.014
+**Figure 4.:** (A) Firefly luciferase (Fluc) activity produced by expression of mRNA containing different 5′ leaders 2 hr after arsenite treatment (red bars) and in untreated cells (blue bars). Relative units correspond to Fluc activity normalized to the median Renilla luciferase (Rluc) activity derived from a co-transfected Rluc mRNA. The green text represents fold change calculated from the same data. The ORF organization of examined mRNAs is outlined on the left. Bars represent standard deviations. (B) Time series analysis of Fluc expression in cells treated at the time of transfection with sodium arsenite to a concentration of 40 µM (dotted lines) or vehicle (solid lines). Fluc activity of vehicle at 1 hr was taken as 100% for each mRNA and experimental condition. (C) Effect of start codon identity in IFRD1 and PPP1R15B 5′ leaders on Fluc activity.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** A) Resistance of additional reporters with 5′ leaders of ATF5, UCP2, PTP4A1, and SLC35A4 to arsenite treatment.(B and C) Resistance of different 5′ leaders to arsenite treatment in HEK293T cells (B) and to arsenite or dithiothreitol (DTT) treatment in Huh7 cells (C). Western blot on panel B demonstrates ubiquitous phosphorylation of eukaryotic initiation factor 2 (eIF2) upon DTT treatment.DOI: http://dx.doi.org/10.7554/eLife.03971.015
+**Figure 4—figure supplement 1.:** (B and C) Resistance of different 5′ leaders to arsenite treatment in HEK293T cells (B) and to arsenite or dithiothreitol (DTT) treatment in Huh7 cells (C). Western blot on panel B demonstrates ubiquitous phosphorylation of eukaryotic initiation factor 2 (eIF2) upon DTT treatment.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Reporter firefly luciferase (Fluc) mRNAs along with control Renilla luciferase (Rluc) mRNA were co-transfected into HEK293T and 1 hr later cells were treated either with vehicle or with 100 µg/ml cycloheximide or 40 µM arsenite. Two hours after treatment the cells were harvested and luciferase activities were measured. Normalized luciferase values for each sample treated with cycloheximide were set as 100%.DOI: http://dx.doi.org/10.7554/eLife.03971.016
+**Figure 4—figure supplement 2.:** Reporter firefly luciferase (Fluc) mRNAs along with control Renilla luciferase (Rluc) mRNA were co-transfected into HEK293T and 1 hr later cells were treated either with vehicle or with 100 µg/ml cycloheximide or 40 µM arsenite. Two hours after treatment the cells were harvested and luciferase activities were measured. Normalized luciferase values for each sample treated with cycloheximide were set as 100%.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** A) Effect mutations that improve initiation Kozak context for uAUG in the IFRD1 leader during arsenite treatment.(B) Effect of Torin-1 treatment on translation of different reporter mRNAs in HEK293T.DOI: http://dx.doi.org/10.7554/eLife.03971.017
+**Figure 4—figure supplement 3.:** (B) Effect of Torin-1 treatment on translation of different reporter mRNAs in HEK293T.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Renilla luciferase (Rluc, light pink bars).Bottom: Western blots showing the presence of the GADD34-Flag protein product and the phosphorylation level of eukaryotic initiation factor 2 (eIF2).DOI: http://dx.doi.org/10.7554/eLife.03971.018
+**Figure 4—figure supplement 4.:** Bottom: Western blots showing the presence of the GADD34-Flag protein product and the phosphorylation level of eukaryotic initiation factor 2 (eIF2).
 
 For several other reporter mRNAs with different 5′ leaders which possess low TEs under normal conditions, translation was significantly downregulated upon arsenite treatment (data not shown). This rules out the possibility that low TE of reporter mRNA results in resistance to stress.
 
@@ -155,7 +478,7 @@ Treatment with a potent inhibitor of mTOR kinase, torin-1 (Thoreen et al., 2009)
 
 It was conceivable that translational resistance was due to side effects of arsenite treatment rather than its direct effect of eIF2 inactivation. To directly address the impact of eIF2 phosphorylation on reporter mRNA translation during arsenite stress, we carried out an experiment where cells were pre-transfected with a plasmid encoding the full length human PPP1R15A (a.k.a. GADD34) phosphatase subunit which is able to reverse eIF2 phosphorylation (Brush et al., 2003). Arsenite-induced eIF2 phosphorylation, as expected, was almost completely alleviated in the presence of GADD34 (residual phosphorylation probably reflects less than 100% efficient plasmid transfection), see Figure 4—figure supplement 4. As a result, the downregulation of control Rluc mRNA was only twofold in comparison with a more than sixfold reduction in cells not transfected with the GADD34 plasmid. Translation of the IFRD1 reporter was not affected under either condition. We therefore concluded that translational inhibition caused by arsenite treatment is predominantly due to the phosphorylation of eIF2. Also, we treated cells with 2.5 mM dithiothreitol (DTT), triggers the Unfolded Protein Response and results in eIF2 phosphorylation (Prostko et al., 1993). We found that the leaders of IFRD1 and PPP1R15B provide translational resistance under these conditions as well (Figure 4—figure supplement 1B).
 
-## Site-specific mutagenesis confirms the critical role of IFRD1 and PPP1R15B uORF translation in mediating resistance to eIF2 inhibition
+### Site-specific mutagenesis confirms the critical role of IFRD1 and PPP1R15B uORF translation in mediating resistance to eIF2 inhibition
 
 While both IFRD1 and PPP1R15B mRNAs possess uORFs with high TE (Figure 2), the architecture of their uORFs is markedly different (schematic organization of the 5′ leaders is depicted in Figure 4). IFRD1 mRNA contains a single highly conserved 53 codon uORF that starts 19 nt from the 5′ end and ends 43 nt upstream of the main ORF. PPP1R15B mRNA contains two in-frame uORFs separated by 21 nt. The first uORF is eight codons long and is 127 nt from the 5′ end. The second 52 codon long uORF is 75 nt upstream of the CDS.
 
@@ -165,13 +488,13 @@ We conclude that neither of these genes is regulated by delayed reinitiation (as
 
 A single uAUG in IFRD1 mRNA is in a suboptimal initiation context (A in −3 position but U in +4). To explore how the context may affect the resistance we introduced +4U/G mutation that improves the context. We found a slight inhibition of the IFDR1 main ORF translation under normal conditions (presumably due to an increased inhibitory effect of the uORF translation). However, this mutation did not alter the sensitivity of the main ORF translation to arsenite stress (Figure 4—figure supplement 3A).
 
-## An unstructured leader sequence upstream of IFRD1 uORF is necessary for stress resistance
+### An unstructured leader sequence upstream of IFRD1 uORF is necessary for stress resistance
 
-We observed earlier that most stress resistant mRNAs possess efficiently translated uORFs. We hypothesized that some features of the 5′ leaders upstream of uORFs may be important for resistance. To address this issue we created two additional reporters based on control pGL3 and IFRD1, where we added a 5′ terminal stem loop of intermediate stability (
+We observed earlier that most stress resistant mRNAs possess efficiently translated uORFs. We hypothesized that some features of the 5′ leaders upstream of uORFs may be important for resistance. To address this issue we created two additional reporters based on control pGL3 and IFRD1, where we added a 5′ terminal stem loop of intermediate stability (Figure 5). As expected, the addition of this stem loop resulted in a threefold to fourfold decrease in the activity of both reporters under normal conditions. Interestingly, when arsenite stress was induced, the SL-IFRD1 construct did not exhibit resistance while translation of SL-PGL3 was downregulated as much as the pGL3 construct. Therefore we propose that efficient loading of pre-initiator complexes to the uORF is necessary for stress resistance in IFRD1. Next we addressed the question of whether the specific sequence upstream of the IFRD1 uORF is required for regulation. We substituted it with an artificial single stranded (CAA)6 sequence of the same length. This mutation did not alter stress resistance. Thus, we hypothesize that, for resistant translation, the uORF has to be preceded with a leader allowing a high initiation rate at the uORF.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03971/elife-03971-fig5-v2.jpg)
 
-**Figure 5.:** (A) Firefly luciferase (Fluc) activity produced by expression of mRNA containing pGL3 and IRFD1 leaders (outlined on the left) with and without an additional stem loop at the 5′ end under different conditions. Blue (normal conditions) and red (stress conditions) bars correspond to leaders lacking the stem loop while light blue (normal) and yellow (stress) correspond to leaders with the stem loop. The fold change of Fluc activity in response to stress is indicated above by green arrows. (B) Effect of (CAA)6 addition to the 5′ leader of IFRD1 on Fluc activity in response to stress.DOI: http://dx.doi.org/10.7554/eLife.03971.019
+**Figure 5.:** (A) Firefly luciferase (Fluc) activity produced by expression of mRNA containing pGL3 and IRFD1 leaders (outlined on the left) with and without an additional stem loop at the 5′ end under different conditions. Blue (normal conditions) and red (stress conditions) bars correspond to leaders lacking the stem loop while light blue (normal) and yellow (stress) correspond to leaders with the stem loop. The fold change of Fluc activity in response to stress is indicated above by green arrows. (B) Effect of (CAA)6 addition to the 5′ leader of IFRD1 on Fluc activity in response to stress.
 
 ## Discussion
 
@@ -193,7 +516,7 @@ To summarize, our work expands the list of mRNAs which are known to be persisten
 
 ## Materials and methods
 
-## Ribosome profiling
+### Ribosome profiling
 
 The ribosomal profiling technique was carried out according to Ingolia et al. (2012) but with important modifications described below. HEK293T cells were grown in DMEM supplemented with alanyl-glutamine and 10% FBS and replated to 150 mm dishes (two dishes per sample). After the cells reached 70–80% confluency, sodium arsenite (or vehicle) was added at 40 µM and 30 min later the cells were harvested: dishes were immediately chilled on ice and washed with PBS + cycloheximide (100 µg/ml). Importantly, cells were not pre-treated with cycloheximide to avoid artificial accumulation of initiation complexes at translation initiation starts (Gerashchenko and Gladyshev, 2015). Cells were then lysed with buffer containing 20 mM Tris–HCl (pH 7.5), 250 mM NaCl, 1.5 mM MgCl2, 1 mM DTT, 0.5% Triton X-100, 100 µg/ml cycloheximide (Sigma-Aldrich), 20 U/ml TURBO DNAse (Ambion, Waltham, MA). Note that the buffer contains low magnesium (1.5 mM), since high magnesium concentrations stabilize secondary structures in mRNAs which may hamper digestion by RNAse I (RNAse I itself does not require divalent cations for its activity) and lowering magnesium concentration in 5 mM to 15 mM range has been shown to improve footprint resolution (Ingolia et al., 2012). Cell lysates were incubated on ice for 10 min, centrifuged at 16,000×g at +4°C for 10 min, and the supernatant was divided into two parts for ribo-seq and ‘naked’ mRNA-seq library preparation. One part of the lysate, usually 10–20 A260, was treated with RNAse I (Ambion) with 100 U per 3.1 A260 of lysate at 23°C for 50 min. The digestion was then stopped with the appropriate amount of SUPERASE inhibitor (Ambion). The treated lysate was loaded on 10–60% (m/v) sucrose density gradient containing 20 mM Tris–HCl (pH 7.5), 250 mM NaCl, 15 mM MgCl2, 1 mM DTT, 100 μg/ml cycloheximide and centrifuged in SW-41 rotor at 35,000 rpm for 3 hr. Sucrose density gradients were prepared as described previously (Stone, 1974). Briefly, 5.5 ml of 10% sucrose was slowly layered onto the same volume of 60% sucrose, gradient tubes were then sealed with parafilm, slowly placed horizontally for 4 hr to allow spontaneous gradient formation and then slowly returned to a vertical position. This method of gradient formation is highly reliable and reproducible and does not require any special equipment. Total RNA from the fractions corresponding to 80S peak was then extracted with phenol/chloroform followed by ethanol precipitation.
 
@@ -205,7 +528,7 @@ The same quantity of both ribo-seq and mRNA-seq fragments (usually 100 ng) were 
 
 Two independent biological replicates were carried out. Libraries were sequenced either on an Illumina MiSeq genome analyser at the TrinSeq genomic facility (Dublin) or on an Illumina HiSeq 2000 system at the Beijing Genomics Institute (BGI).
 
-## Plasmid constructions
+### Plasmid constructions
 
 Reporter DNA constructs were prepared on the basis of the pGL3R vector (Stoneley et al., 1998). Plasmids containing the 5′ leaders of test mRNAs were cloned between SpeI and NcoI. pGL3R-HCV and pRluc plasmids are described in Andreev et al. (2009). The 5′ leader of IFDR1 mRNA (NM_001550.3) was shortened by 38 nt at the 5′ end to correspond to the location of the likely predominant transcription start based on the analysis of available ESTs (Expression Sequence Tags) for this region. The 5′ leader of PPP1R15B (NM_032833.3) was extended at the 5′ end by 1 nt, which is present in the majority of available EST sequences.
 
@@ -215,13 +538,13 @@ The HCV-Fluc plasmid contained the T7 promoter, the entire viral 5′ leader, an
 
 Full length human ppp1R15A (GADD34) sequence fused with N-terminal FLAG tag was cloned in pcDNA 3.1 construct between HindIII and XbaI to prepare pcDNA GADD34 construct.
 
-## mRNA preparation
+### mRNA preparation
 
 mRNA preparation was carried out as described by Dmitriev et al. (2007). Briefly, PCR products were obtained with a forward primer containing the T7 promoter (either the universal primer which anneals to the vector sequence immediately upstream of insertions, CGCCGTAATACGACTCACTATAGGGAGCTTATCGATACCGTCG or the T7 promoter-containing gene specific primer) and reverse primer containing an oligo(dT) stretch of 50 nt T50AACTTGTTTATTGCAGCTTATAATGG. To introduce stem loop structure, PCR products were obtained with forward primer containing the T7 promoter: CGCCGTAATACGACTCACTATAGGGAGTGGACTTCGGTCCACTCCCAGCTTATCGATACCGTCG. To introduce the CAA6 sequence upstream of the IFRD1 uORF, the following primer was used: CGCCGtaatacgactcactataGGGCAACAACAACAACAACAACAACATGTATCGTTTTCGATCACAGCTC.
 
 The PCR products were then purified and used as templates for T7 RNA polymerase using in vitro RNA transcription by T7 RiboMAX Large Scale RNA Production kit (Promega, Fitchburg Center, WI). For preparation of m7G-capped transcripts the 3′-O-Me-m7GpppG (ARCA cap analogue, New England Biolabs, Ispwich, MA) was added to the transcription mix without GTP for 5 min to prime transcripts with cap followed by the addition of GTP (at a ratio of ARCA:GTP 10:1). The resulting RNAs were purified by LiCl precipitation and examined for integrity by PAGE.
 
-## Cell culture, western blots and transfection procedures
+### Cell culture, western blots and transfection procedures
 
 Experiments with mRNA transfection were performed as described in Andreev et al. (2012). Briefly, the mixture of 0.2 µg m7G-capped Fluc mRNA and 0.01 µg m7G-capped Rluc mRNAs per 1 well of 24-well plate was transfected to the cells at 70–80% confluency either with Lipofectamin 2000 (Invitrogen, Waltham, MA) or Unifectin 56 (Rusbiolink, Russian Federation). Simultaneously with transfection, cells were treated with either 40 µM sodium arsenite, 2.5 mM DTT or 250 nM Torin-1 (Torics Biosciences, Minneapolis, MN). Two hours later (or at the specified time interval), cells were harvested and luciferase activities were analysed with the Dual Luciferase Assay kit (Promega).
 
@@ -229,11 +552,17 @@ For experiments with GADD34 overexpression, cells were transfected with either p
 
 For western blotting, cells were rapidly lysed with buffer containing 1% SDS and 20 mM Tris–HCl pH 6.8 followed by brief sonication of the lysates. This was done to prevent post-translational modifications of proteins of interest during the lysis. Antibodies used in the study were: rabbit anti-EIF4EBP1 (AB3251; Chemicon International, Germany), rabbit anti-GAPDH (PTG10494-1-AP; Proteintech, Chicago, IL), rabbit anti-ATF4 (10835-1-AP; Proteintech), rabbit anti-phospho-p70 S6 kinase (Thr389) (9205S; Cell Signalling, Danvers, MA), rabbit anti-phospho-S6 ribosomal protein (Ser235/236) (2211S; Cell Signalling), rabbit anti-S6 ribosomal protein (2217S, Cell Signalling), rabbit anti-phospho eIF2 (S51) (SA-405; Enzo, New York, NY), and anti-FLAG-M2 (SigmaAldrich, St. Louis, MO). To remove non-specific binding, phospho-eIF2 antibodies (1:2500) were incubated along with 10% fetal bovine serum in TBS-T.
 
-## Data analysis
+### Data analysis
 
 Cutadapt (Martin, 2011) was used to remove the 3′ adapter of the reads (TGGAATTCTCGGGTGCCAAGG for the first replicate and CTGTAGGCACCATCAATAGATCGGAAGAGCACACGTCTGAACTCCAGTCAC for the second). Reads that did not map to either the ‘spike-in’ (ATGTACACGGAGTCGACCCGCAACGCGA) or rRNA sequences were aligned to the RefSeq catalogue (Pruitt et al., 2014) downloaded from the NCBI website on 15 August 2013. The alignment was carried out with Bowtie version 1.0.0 (Langmead et al., 2009), with parameters -a -m 100 –norc (all read mappings to the positive strand were taken with exception of those with more than 100 mappings). Reads that mapped to transcripts of more than one gene or multiple times to a transcript were discarded. In order to maximize the genuine ribosome footprints aligning to the transcriptome, ribo-seq reads with a length typical for monosomes (29–35 inclusive) were used for further analysis. In the case of multiple transcript variants, among the transcripts annotated as protein coding, the one with the highest ribo-seq read density in control conditions was brought forward for differential expression analysis.
 
-The raw read count data were rescaled to normalize for the differences in the total number of reads mapped with a rescale factor F. For the first replicate the rescaled factor F for each sample was calculated as the difference by which the total number of mapped reads exceeds the lowest total number of mapped reads out of two conditions, that is:Fn=∑ixniminixni,where xni is the number of mapped reads from sample n in the condition i. This normalization was carried out independently for ribo-seq and mRNA-seq.
+The raw read count data were rescaled to normalize for the differences in the total number of reads mapped with a rescale factor F. For the first replicate the rescaled factor F for each sample was calculated as the difference by which the total number of mapped reads exceeds the lowest total number of mapped reads out of two conditions, that is:
+
+$$
+F_{n}=\frac{\sumix_{ni}}{minix_{ni}},
+$$
+
+where xni is the number of mapped reads from sample n in the condition i. This normalization was carried out independently for ribo-seq and mRNA-seq.
 
 The second replicate was sequenced on Illumina Miseq and Hiseq 2000 instruments and obtained sequence reads were aggregated. The number of ‘spike-in’ reads was used to rescale the read counts with a similar approach as for replicate 1. The raw read count of each sample was divided by the rescaling factor F calculated as above with the only difference that xni represents the number of ‘spike-in’ reads from sample n in the condition i. This rescaling was also implemented for the ribosomal profiles of individual transcripts shown in Figure 2.
 
@@ -253,6 +582,6 @@ For Figure 3—figure supplement 1B, the sequences of all coding transcripts wer
 
 The free energy of leaders was estimated with RNAfold (Lorenz et al., 2011). The first 240 nt was used (transcripts with shorter leaders were excluded) as free energy of RNA is related to its length. We chose 240 nt as this was the length of the shortest leader of resistant mRNAs with a translated uORF.
 
-## Data access
+### Data access
 
 Sequences of ribosome profiling libraries have been deposited into the NCBI Gene Expression Omnibus portal under the accession number GSE55195.

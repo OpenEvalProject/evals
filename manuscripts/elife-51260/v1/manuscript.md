@@ -39,39 +39,39 @@ We extended previous modeling approaches of exploration behavior (Daw et al., 20
 
 ## Results
 
-## Participants learn to keep track of the best bandit
+### Participants learn to keep track of the best bandit
 
 On each testing day, separated by exactly one week, participants performed 300 trials of a four-armed restless bandit task (Daw et al., 2006; Figure 1; for more details, see Materials and methods section) during fMRI, under three pharmacological conditions (Placebo, Haloperidol, L-DOPA). Overall, participants’ choice behavior indicated that they understood the task structure, and tracked the most valuable bandit throughout the task (see Figure 2). On trial 1, participants randomly selected one of the four bandits (probability to choose best bandit: 21.5 ± 7.49%, M ± SE). After five trials, participants already selected the most valuable option with 49.03% (±4.98%; M ± SE), which was significantly above chance level of 25% (t30 = 4.83, p=3.82*10−5, Figure 2), and consistently kept choosing the bandit with the highest payoff with on average 67.89% (±2.78%). Thus, participants continuously adjusted their choices to the fluctuating outcomes of the four bandits.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig1-v1.jpg)
 
-**Figure 1.:** Daw et al., 2006).(a) Illustration of the timeline within a trial. At trial onset, four colored squares (bandits) are presented. The participant selects one bandit within 1.5 s, which is then highlighted and, after a waiting period of 3 s, the payoff is revealed for 1 s. After that, the screen is cleared and the next trial starts after a fixed trial length of 6 s plus a variable intertrial interval (not shown) with a mean of 2 s. (b) Example of the underlying reward structure. Each colored line shows the payoffs of one bandit (mean payoff plus Gaussian noise) that would be received by choosing that bandit on each trial.
+**Figure 1.:** (a) Illustration of the timeline within a trial. At trial onset, four colored squares (bandits) are presented. The participant selects one bandit within 1.5 s, which is then highlighted and, after a waiting period of 3 s, the payoff is revealed for 1 s. After that, the screen is cleared and the next trial starts after a fixed trial length of 6 s plus a variable intertrial interval (not shown) with a mean of 2 s. (b) Example of the underlying reward structure. Each colored line shows the payoffs of one bandit (mean payoff plus Gaussian noise) that would be received by choosing that bandit on each trial.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig2-v1.jpg)
 
 **Figure 2.:** Shown are the mean percentage of choosing the best bandit in trials 1–10, and over task blocks of trials 11–50 (block 1) and 51–300 separated in 5 blocks of 50 trials each, over all participants, and for each drug session separately. Participants started with randomly (~25%) choosing one bandit in trial 1 (21.5% ± 7.49%, M ± SE). After five trials participants already chose the most valuable bandit with 49.03 ± 4.98% (M ± SE).
 
-## No significant drug effects on model-free performance measures
+### No significant drug effects on model-free performance measures
 
 We first tested for possible drug effects on model-free measures of task performance. These variables included the overall monetary payout (payout), the percentage of choices of the bandit with the highest actual payoff (%bestbandit, Figure 2), the percentage of choice switches (%switches), and median reaction times (median RT). Yet, rmANOVAs yielded no significant drug effect on any of these four model-free choice variables (payout: F2,60=0.06, p=0.943; %bestbandit: F2,60=0.34, p=0.711; %switches: F2,60=1.02, p=0.366; median RT: F2,60=0.50, p=0.611).
 
-## Choice behavior contains signatures of directed exploration and perseveration
+### Choice behavior contains signatures of directed exploration and perseveration
 
-We then used computational modeling to examine whether choice behavior indeed contained signatures of random exploration, directed exploration and perseveration. To this end, we set up eight separate computational models that differed regarding the implemented learning and choice rules within a hierarchical Bayesian framework using the STAN modeling language (version 2.17.0; Stan Development Team, 2017). We compared two learning rules: the classical Delta rule from temporal-difference algorithms (e.g. Sutton and Barto, 1998), and a Bayesian learner (Daw et al., 2006) that formalizes the updating process with a Kalman filter (Kalman, 1960). In the former model, values are updated based on prediction errors that are weighted with a constant learning rate. In contrast, the Kalman filter additionally tracks the uncertainty of each bandit’s value, and value updating is proportional to the uncertainty of the chosen bandit (Kalman gain, see Materials and methods section). These learning rules were combined with four different choice rules that were all based on a softmax action selection rule (Sutton and Barto, 1998; Daw et al., 2006). Choice rule 1 was a standard softmax with a single inverse temperature parameter (β) modeling random exploration. Choice rule 2 included an additional free parameter φ modeling an exploration bonus that scaled with the estimated uncertainty of the chosen bandit (directed exploration). Choice rule 3 included an additional free parameter (ρ) modeling a perseveration bonus for the bandit chosen on the previous trial. Finally, choice rule 4 included an additional term to capture random exploration scaling with total uncertainty across all bandits (Gershman, 2018). Leave-one-out (LOO) cross-validation estimates (Vehtari et al., 2017) were computed over all drug-conditions, and for each condition separately to assess the models’ predictive accuracies. The Bayesian learning model with terms for directed exploration and perseveration (Bayes-SMEP) showed highest predictive accuracy in each drug condition and overall (Figure 3). The most complex model including an additional total-uncertainty dependent term provided a slightly inferior account of the data compared to the model without this term (loo log-likelihood: Bayes-SME(R)P: -0.5983 (-0.59989)).
+We then used computational modeling to examine whether choice behavior indeed contained signatures of random exploration, directed exploration and perseveration. To this end, we set up eight separate computational models that differed regarding the implemented learning and choice rules within a hierarchical Bayesian framework using the STAN modeling language (version 2.17.0; Stan Development Team, 2017). We compared two learning rules: the classical Delta rule from temporal-difference algorithms (e.g. Sutton and Barto, 1998), and a Bayesian learner (Daw et al., 2006) that formalizes the updating process with a Kalman filter (Kalman, 1960). In the former model, values are updated based on prediction errors that are weighted with a constant learning rate. In contrast, the Kalman filter additionally tracks the uncertainty of each bandit’s value, and value updating is proportional to the uncertainty of the chosen bandit (Kalman gain, see Materials and methods section). These learning rules were combined with four different choice rules that were all based on a softmax action selection rule (Sutton and Barto, 1998; Daw et al., 2006). Choice rule 1 was a standard softmax with a single inverse temperature parameter (β) modeling random exploration. Choice rule 2 included an additional free parameter $\phi$ modeling an exploration bonus that scaled with the estimated uncertainty of the chosen bandit (directed exploration). Choice rule 3 included an additional free parameter (ρ) modeling a perseveration bonus for the bandit chosen on the previous trial. Finally, choice rule 4 included an additional term to capture random exploration scaling with total uncertainty across all bandits (Gershman, 2018). Leave-one-out (LOO) cross-validation estimates (Vehtari et al., 2017) were computed over all drug-conditions, and for each condition separately to assess the models’ predictive accuracies. The Bayesian learning model with terms for directed exploration and perseveration (Bayes-SMEP) showed highest predictive accuracy in each drug condition and overall (Figure 3). The most complex model including an additional total-uncertainty dependent term provided a slightly inferior account of the data compared to the model without this term (loo log-likelihood: Bayes-SME(R)P: -0.5983 (-0.59989)).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig3-v1.jpg)
 
 **Figure 3.:** Leave-one-out (LOO) log-likelihood estimates were calculated over all drug conditions (n = 31 subjects with t = 3*300 trials) and once separately for each drug condition (n = 31 with t = 300). All LOO estimates were divided by the total number of data points in the sample (n*t) for better comparability across the different approaches. Note that the relative order of LOO estimates is invariant to linear transformations. Delta: simple delta learning rule; Bayes: Bayesian learner; SM: softmax (random exploration); E: directed exploration; R: total uncertainty-based random exploration; P: perseveration.
 
-## Model-based regressors and classification of exploration trials
+### Model-based regressors and classification of exploration trials
 
-In the best-fitting Bayesian model (Bayes-SMEP), participants’ choices are stochastically dependent on three factors: the prior belief of the mean reward value of each bandit (μ^pre;  Figure 4a), the exploration bonus, that is the prior belief of each bandit’s payout variance (‘uncertainty’) scaled with the exploration bonus parameter φ (φσ^pre; Figure 4b), and the perseveration bonus (Iρ; where I denotes an indicator function with respect to the bandit chosen on the previous trial; Figure 4c). Based on these quantities, which are computed for each bandit, the model computes the choice probabilities for all four bandits on each trial (P; Figure 4d, See Equation 7 in the Materials and methods section). Between trials, participants’ prior belief of the chosen bandit’s mean reward value is updated according to the reward prediction error (δ, Figure 4e), as the difference between their prior belief and the actual reward outcome of the chosen bandit. Based on the model, participants’ choices can be classified as exploitation (i.e. when the bandit with highest expected value was selected), or exploration (i.e. when any other bandit was selected) (Daw et al., 2006). We extended this binary classification of Daw et al., 2006 by further dividing exploration trials into directed exploration (i.e. trials where the bandit with the highest exploration bonus was chosen), and random exploration trials (i.e. trials where one of the remaining bandits was chosen). The trinary classification scheme corresponded well with the respective model parameters (β-random exploration, φ-directed exploration, ρ-perseveration; Appendix 1—figure 1). Over trials, the summed uncertainty over all bandits (Σσ^pre;  Figure 4f) fluctuates in relation to the fraction of exploration.
+In the best-fitting Bayesian model (Bayes-SMEP), participants’ choices are stochastically dependent on three factors: the prior belief of the mean reward value of each bandit ($\mu^^{pre};$ Figure 4a), the exploration bonus, that is the prior belief of each bandit’s payout variance (‘uncertainty’) scaled with the exploration bonus parameter $\phi$ ($\phi\sigma^^{pre}$; Figure 4b), and the perseveration bonus (Iρ; where $I$ denotes an indicator function with respect to the bandit chosen on the previous trial; Figure 4c). Based on these quantities, which are computed for each bandit, the model computes the choice probabilities for all four bandits on each trial ($P$; Figure 4d, See Equation 7 in the Materials and methods section). Between trials, participants’ prior belief of the chosen bandit’s mean reward value is updated according to the reward prediction error ($\delta$, Figure 4e), as the difference between their prior belief and the actual reward outcome of the chosen bandit. Based on the model, participants’ choices can be classified as exploitation (i.e. when the bandit with highest expected value was selected), or exploration (i.e. when any other bandit was selected) (Daw et al., 2006). We extended this binary classification of Daw et al., 2006 by further dividing exploration trials into directed exploration (i.e. trials where the bandit with the highest exploration bonus was chosen), and random exploration trials (i.e. trials where one of the remaining bandits was chosen). The trinary classification scheme corresponded well with the respective model parameters (β-random exploration, $\phi$-directed exploration, ρ-perseveration; Appendix 1—figure 1). Over trials, the summed uncertainty over all bandits ($Σ\sigma^^{pre};$ Figure 4f) fluctuates in relation to the fraction of exploration.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig4-v1.jpg)
 
-**Figure 4.:** Trial-by-trial estimates are shown for the placebo data of one representative subject with posterior medians: β=0.29,  = 1.34, and ρ=4.11 (random exploration, directed exploration, and perseveration). (φa) Colored lines depict the expected values () of the four bandits, whereas colored dots denote actual payoffs. Vertical black lines mark trials classified as exploratory (μ^preDaw et al., 2006). (b) Exploration bonus () and uncertainty (φσ^pre) for each bandit. (σ^prec) Perseveration bonus (Iρ). This bonus is a fixed value added only to the bandit chosen in the previous trial, shown here for one bandit. (d) Choice probability (). Each colored line represents one bandit. (Pe) Reward prediction error (). (δf) The subject’s overall uncertainty (), that is the summed uncertainty over all four bandits.Σσ^pre
+**Figure 4.:** Trial-by-trial estimates are shown for the placebo data of one representative subject with posterior medians: β=0.29, $\phi$ = 1.34, and ρ=4.11 (random exploration, directed exploration, and perseveration). (a) Colored lines depict the expected values ($\mu^^{pre}$) of the four bandits, whereas colored dots denote actual payoffs. Vertical black lines mark trials classified as exploratory (Daw et al., 2006). (b) Exploration bonus ($\phi\sigma^^{pre}$) and uncertainty ($\sigma^^{pre}$) for each bandit. (c) Perseveration bonus (Iρ). This bonus is a fixed value added only to the bandit chosen in the previous trial, shown here for one bandit. (d) Choice probability ($P$). Each colored line represents one bandit. (e) Reward prediction error ($\delta$). (f) The subject’s overall uncertainty ($Σ\sigma^^{pre}$), that is the summed uncertainty over all four bandits.
 
-## L-dopa reduces directed exploration
+### L-dopa reduces directed exploration
 
 Next, we tested for possible drug effects on the percentage of exploitation and exploration trials (overall, random and directed) per subject. Three separate rmANOVAs with within factors drug and trial (6 blocks of 50 trials each) were computed for each of the following four dependent variables: the percentage of (a) exploitation trials, (b) random exploration trials, and (c) directed exploration trials. We found a significant drug effect only for the percentage of directed explorations (F1.66,49.91=7.18, p=.003; Figure 5c). The percentage of random explorations (F2,60=0.55, p=.58, Figure 5b) or exploitations (F2,60=1.57, p=.22; Figure 5a) were not significantly modulated by drug. All drug × trial interactions were not significant (p>=0.19). Post-hoc, paired t-tests showed a significant reduction in the percentage of directed explorations under L-dopa compared to placebo (mean difference P-D=2.82, t30=4.69, p<.001) and haloperidol (mean difference H-D = 2.42, t30=2.76, p=.010), but not between placebo and haloperidol (mean difference P-H=0.39, t30=0.43, p=.667). Notably, an exploratory t-test revealed that the percentage of exploitations was marginally increased under L-dopa compared to placebo (mean difference P-D=-2.61, t30=-1.92, p=.065).
 
@@ -79,67 +79,268 @@ Next, we tested for possible drug effects on the percentage of exploitation and 
 
 **Figure 5.:** Shown are the mean percentage of directed explorations for each drug session over six blocks of 50 trials each (error bars indicate standard error of the mean).
 
-Importantly, the observed attenuation of directed exploration trials under L-dopa was mirrored in our analysis of drug effects on the model parameters’ posterior distributions. Dopaminergic drug effects were first examined for the group-level (mean M posteriors for β (random exploration), φ (directed exploration) and ρ (perseveration)) of the best-fitting Bayesian model, which were estimated separately for each drug. In accordance with the drug effects on fraction of directed explorations, under L-dopa, the posterior group-level mean of φ (Mφ) was substantially reduced compared to both placebo and haloperidol (Figure 6), such that the 90% highest density intervals of the difference of the posterior distributions of Mφ did not overlap with zero (Appendix 1—figure 1b). In contrast, we did not observe effects of L-dopa on random exploration (β, Figure 6) or perseveration (ρ, Figure 6). Somewhat surprisingly, haloperidol showed no effects on the posterior group-level means of any parameter.
+Importantly, the observed attenuation of directed exploration trials under L-dopa was mirrored in our analysis of drug effects on the model parameters’ posterior distributions. Dopaminergic drug effects were first examined for the group-level (mean $M$ posteriors for β (random exploration), $\phi$ (directed exploration) and ρ (perseveration)) of the best-fitting Bayesian model, which were estimated separately for each drug. In accordance with the drug effects on fraction of directed explorations, under L-dopa, the posterior group-level mean of $\phi$ ($M^{\phi}$) was substantially reduced compared to both placebo and haloperidol (Figure 6), such that the 90% highest density intervals of the difference of the posterior distributions of $M^{\phi}$ did not overlap with zero (Appendix 1—figure 1b). In contrast, we did not observe effects of L-dopa on random exploration (β, Figure 6) or perseveration (ρ, Figure 6). Somewhat surprisingly, haloperidol showed no effects on the posterior group-level means of any parameter.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig6-v1.jpg)
 
-**Figure 6.:** Shown are posterior distributions of the group-level mean () of all choice parameters (β, M, ρ), separately for each drug condition. Each plot shows the median (vertical black line), the 80% central interval (blue (grey) area), and the 95% central interval (black contours); β: random exploration, φ: directed exploration; ρ: perseveration parameter. For drug effects on the standard deviation of the group-level median parameters φ and ρ see  φ, βAppendix 1—figure 1a. See Appendix 1—figure 1b and c for pairwise drug-related differences of the group-level mean (M) and (c) standard deviation () of Λ.φ
+**Figure 6.:** Shown are posterior distributions of the group-level mean ($M$) of all choice parameters (β, $\phi$, ρ), separately for each drug condition. Each plot shows the median (vertical black line), the 80% central interval (blue (grey) area), and the 95% central interval (black contours); β: random exploration, $\phi$: directed exploration; ρ: perseveration parameter. For drug effects on the standard deviation of the group-level median parameters $\phi,\beta$ and ρ see Appendix 1—figure 1a. See Appendix 1—figure 1b and c for pairwise drug-related differences of the group-level mean (M) and (c) standard deviation ($Λ$) of $\phi$.
 
 In summary, we found that boosting central dopamine with L-dopa specifically attenuated exploratory choice patterns that aimed at reducing uncertainty of highly uncertain choice options. At the same time, exploitative choices were marginally increased. Although we observed no significant drug × trial interactions, the L-dopa-induced effects appeared to be more pronounced in the first third of the task (Figure 5a, c).
 
-## Distinct brain networks orchestrate exploration and exploitation
+### Distinct brain networks orchestrate exploration and exploitation
 
 Analysis of the imaging data proceeded in two steps. First, we examined our data for overall effects of exploration/exploitation based on a binary trial classification, as well as on the model-based parametric effects of expected value and uncertainty. In a second step, we examined the neural basis of the drug-induced change in exploration. All reported fMRI results are based on statistical parametric maps (SPMs) thresholded at p<0.05, FWE-corrected for whole brain volume (unless stated otherwise, for example for visualization purposes). In addition to whole-brain analyses, drug-induced changes were additionally assessed in a regions of interest approach based on small volume FWE correction (p<0.05) for seven regions that have previously been associated with exploration: the left/right FPC and left/right IPS (Daw et al., 2006), as well as the dACC and left/right AI (Blanchard and Gershman, 2018). Regions used for small volume correction were defined by 10 mm radius spheres centered at peak voxels reported in these previous studies (Appendix 1—table 5).
 
-In a first general linear model (GLM), differences in brain activity between exploratory and exploitative choices were modeled (at trial onset) across all participants and drug conditions, using the binary classification previously described by Daw et al., 2006. In accordance with previous work, the pattern of brain activity differed markedly between both types of choices (Figure 7, Appendix 1—figure 5). Highly similar activation patterns were found with a second GLM that was based on the parametric regressors expected value (μ^pre) and uncertainty (σ^pre) of the chosen bandit, both modeled at trial onset. While expected value related neural activity largely overlapped with the one for exploitative choices (Figure 7a), uncertainty associated patterns of neural activation overlapped with the ones for exploratory choices (Figure 7b).
+In a first general linear model (GLM), differences in brain activity between exploratory and exploitative choices were modeled (at trial onset) across all participants and drug conditions, using the binary classification previously described by Daw et al., 2006. In accordance with previous work, the pattern of brain activity differed markedly between both types of choices (Figure 7, Appendix 1—figure 5). Highly similar activation patterns were found with a second GLM that was based on the parametric regressors expected value ($\mu^^{pre}$) and uncertainty ($\sigma^^{pre}$) of the chosen bandit, both modeled at trial onset. While expected value related neural activity largely overlapped with the one for exploitative choices (Figure 7a), uncertainty associated patterns of neural activation overlapped with the ones for exploratory choices (Figure 7b).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig7-v1.jpg)
 
-**Figure 7.:** Shown are overlays of statistical parametric maps (SPMs) for the contrast (a) the parametric regressor expected value ( of the chosen bandit (in blue) and the binary trial classification related contrast exploit > explore (‘exploit’ in red), and for (μ^pre)b) the parametric regressor uncertainty () (in blue) and the contrast explore > exploit (‘explore’ in red), over all drug conditions. For visualization purposes: thresholded at p<0.001, uncorrected. R: right.σ^pre
+**Figure 7.:** Shown are overlays of statistical parametric maps (SPMs) for the contrast (a) the parametric regressor expected value ($\mu^^{pre})$ of the chosen bandit (in blue) and the binary trial classification related contrast exploit > explore (‘exploit’ in red), and for (b) the parametric regressor uncertainty ($\sigma^^{pre}$) (in blue) and the contrast explore > exploit (‘explore’ in red), over all drug conditions. For visualization purposes: thresholded at p<0.001, uncorrected. R: right.
 
 Replicating earlier findings (e.g. Daw et al., 2006; Addicott et al., 2014), exploration trials were associated with greater activation in bilateral frontopolar cortex (FPC; left: −42, 27, 27 mm; z = 6.07; right: 39, 34, 28 mm; z = 7.56), in a large cluster along the bilateral intraparietal sulcus (IPS; cluster peak at −48,–33, 52; z = 10.45), and in bilateral anterior insula (AI; left: −36, 15, 3 mm; z = 6.69; right: 36, 20, 3 mm; z = 6.87) as well as dorsal anterior cingulate cortex (dACC; cluster peak at 8, 12, 45 mm; z = 8.47). Clusters within thalamus, cerebellum, and supplementary motor area also showed increased bilateral activation during exploration compared to exploitation.
 
 In contrast, exploitative choices were associated with greater activation in the ventromedial prefrontal cortex (vmPFC; −2, 40,–10 mm; z = 5.67) and in bilateral lateral orbitofrontal cortex (lOFC; left: −38, 34,–14 mm; z = 5.81; right: 38, 36,–12 mm; z = 5.02). Furthermore, greater activation during exploitative trials was also observed in a cluster spanning the left posterior cingulate cortex (PCC) and left precuneus (cluster peak at −6,–52, 15 mm; z = 7.40), as well as in the angular gyrus (left: −42,–74, 34 mm; z = 8.04; right: 52,–68, 28 mm; z = 7.02), hippocampus (left: −24,–16, −15 mm; z = 4.16; only at p<0.001, uncorrected; right: 32,–16, −15 mm; z = 5.09), and several clusters along the superior and middle temporal gyrus. A complete list of activations associated with explorative and exploitative choices, as well as activation related to model-based PEs can be found in Appendix 1. We observed no differential activation patterns for directed and random exploration types when expanding the original trial classification of Daw et al., 2006 in a third GLM (Appendix 1—figure 6).
 
-## No evidence for a direct drug modulation of exploration/exploitation-related brain activation
+### No evidence for a direct drug modulation of exploration/exploitation-related brain activation
 
 To test for a main effect of drug on differential explore/exploit-related brain activation, we conducted rmANOVAs on the second level contrasts explore vs. exploit of the first GLM as well as on the contrasts related to the parametric regressors of expected value and uncertainty of the second GLM. Surprisingly, we found no suprathreshold activations on the whole-brain level, nor in any of seven regions of interest (ROIs) with small volume correction applied (i.e. left/right FPC, left/right IPS, left/right AI, and dACC).
 
 The same analyses were run for the contrasts from the third GLM, that is directed exploration vs.exploit, randomexploration vs.exploit, and randomvs.directed exploration. Again, we found no significant drug-related modulation of brain activation for these contrasts in any of our a priori ROIs. Likewise, further analyses revealed no drug effects on neural activation (trial onset, reward onset, PE, and outcome value; see Appendix 1 for details) and no evidence for an association of drug effects with putative proxy measures of baseline DA availability (spontaneous blink rate and working memory span, see Appendix 1 for details).
 
-## L-dopa indirectly modulates exploration via reducing neural coding of overall uncertainty
+### L-dopa indirectly modulates exploration via reducing neural coding of overall uncertainty
 
-Based on the null findings in the planned analyses, we reasoned that L-dopa might attenuate directed exploration not by modulating brain activation for exploratory/exploitative choices in a direct manner, but rather by modulating neural computations that are involved in switching from exploitation to directed exploration. Thus, L-dopa might delay the time point at which directed exploration is triggered in response to accumulating ‘total’ (summed) uncertainty. As we did not find evidence (according to model comparison, see Figure 3) for total (summed) uncertainty (Σσ^pre) related random exploration, this was not accounted for in our final Bayesian model. Still, total uncertainty is linked (via the exploration bonus parameter φ) to the probability to explore a previously unchosen bandit. Σσ^pre gradually increases during a series of exploitations but reduces abruptly when a bandit with high uncertainty is explored (see Figure 2f). We therefore included model-based overall uncertainty as a parametric regressor modeled at trial onset in a new GLM to reveal brain activation that tracks accumulating uncertainty during learning. The contrast images for this regressor were then used in a second-level random effects analysis with the factors drug condition and subject. In the placebo condition alone, no voxels survived whole-brain FWE correction (p<.05), but a more lenient threshold (p<.001, uncorrected) revealed activity in the bilateral dACC (cluster peak at -3, 21, 39mm; z=3.96), right anterior insula (42, 15, -6mm; z=3.46), and left posterior insula (PI) (-34, -20, 8mm; z=4.63) that was positively correlated with the overall uncertainty (Figure 8a, Table 2). To test our exploratory hypothesis, we computed directed t-contrasts for L-dopa vs. placebo (placebo>L-dopa and L-dopa>placebo). While the contrast L-dopa>placebo yielded no suprathreshold activations, the reverse contrast (placebo>L-dopa) revealed a significant activation in the left PI (-34, -20, 8mm; z=5.05). At a reduced threshold (p<.001, uncorrected), left AI (-38, 6, 14mm; z=4.88) and bilateral dACC (left: -2, 36, 33mm; z=3.32; right: 4, 14, 28mm; z=3.41) showed a stronger correlation with the overall uncertainty under placebo compared to L-dopa (Figure 8b, Table 2).
+Based on the null findings in the planned analyses, we reasoned that L-dopa might attenuate directed exploration not by modulating brain activation for exploratory/exploitative choices in a direct manner, but rather by modulating neural computations that are involved in switching from exploitation to directed exploration. Thus, L-dopa might delay the time point at which directed exploration is triggered in response to accumulating ‘total’ (summed) uncertainty. As we did not find evidence (according to model comparison, see Figure 3) for total (summed) uncertainty ($Σ\sigma^^{pre}$) related random exploration, this was not accounted for in our final Bayesian model. Still, total uncertainty is linked (via the exploration bonus parameter $\phi$) to the probability to explore a previously unchosen bandit. $Σ\sigma^^{pre}$ gradually increases during a series of exploitations but reduces abruptly when a bandit with high uncertainty is explored (see Figure 2f). We therefore included model-based overall uncertainty as a parametric regressor modeled at trial onset in a new GLM to reveal brain activation that tracks accumulating uncertainty during learning. The contrast images for this regressor were then used in a second-level random effects analysis with the factors drug condition and subject. In the placebo condition alone, no voxels survived whole-brain FWE correction (p<.05), but a more lenient threshold (p<.001, uncorrected) revealed activity in the bilateral dACC (cluster peak at -3, 21, 39mm; z=3.96), right anterior insula (42, 15, -6mm; z=3.46), and left posterior insula (PI) (-34, -20, 8mm; z=4.63) that was positively correlated with the overall uncertainty (Figure 8a, Table 2). To test our exploratory hypothesis, we computed directed t-contrasts for L-dopa vs. placebo (placebo>L-dopa and L-dopa>placebo). While the contrast L-dopa>placebo yielded no suprathreshold activations, the reverse contrast (placebo>L-dopa) revealed a significant activation in the left PI (-34, -20, 8mm; z=5.05). At a reduced threshold (p<.001, uncorrected), left AI (-38, 6, 14mm; z=4.88) and bilateral dACC (left: -2, 36, 33mm; z=3.32; right: 4, 14, 28mm; z=3.41) showed a stronger correlation with the overall uncertainty under placebo compared to L-dopa (Figure 8b, Table 2).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig8-v1.jpg)
 
 **Figure 8.:** (a) Regions in which activity correlated positively with the overall uncertainty in the placebo condition included the dorsal anterior cingulate cortex (dACC) and left posterior insula (PI). (b) Regions in which the correlation with overall uncertainty was reduced under L-dopa compared to placebo included the dACC and left anterior insula (AI). Thresholded at p<0.001, uncorrected. R: right.
 
+**Table 1.**
+ Free and fixed parameters of all six computational models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Delta rule</th>
+      <th colspan="2">Bayes learner rule</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Choice rule 1</td>
+      <td>α,β</td>
+      <td>fixed: v1</td>
+      <td>β</td>
+      <td>fixed: λ^,ϑ^,σ^02,σ^d2,μ^1pre,σ^1pre</td>
+    </tr>
+    <tr>
+      <td>Choice rule 2</td>
+      <td>α,β,φ</td>
+      <td>fixed: v1</td>
+      <td>β,φ</td>
+      <td>fixed: λ^,ϑ^,σ^02,σ^d2,μ^1pre,σ^1pre</td>
+    </tr>
+    <tr>
+      <td>Choice rule 3</td>
+      <td>α,β,φ,ρ</td>
+      <td>fixed: v1</td>
+      <td>β,φ,ρ</td>
+      <td>fixed: λ^,ϑ^,σ^02,σ^d2,μ^1pre,σ^1pre</td>
+    </tr>
+    <tr>
+      <td>Choice rule 4</td>
+      <td>α,β,φ,ρ, γ</td>
+      <td>fixed: v1</td>
+      <td>β,φ,ρ, γ</td>
+      <td>fixed: λ^,ϑ^,σ^02,σ^d2,μ^1pre,σ^1pre</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Free parameters are only listed for the subject-level. Hierarchical models contained for each free subject-level parameter x two additional free parameters (Μx,Λx) on the group-level (Figure 9). Choice rule 1: softmax; Choice rule 2: softmax with exploration bonus; Choice rule 3: softmax with exploration bonus and perseveration bonus; α: learning rate; β: softmax parameter; φ: exploration bonus parameter; ρ: perseveration bonus parameter; , γ: uncertainty-based random exploration parameter; v1: initial expected reward values for all bandits; λ^: decay parameter; ϑ^: decay center; σ^o2: observation variance; σ^d2: diffusion variance; μ^1pre: initial mean of prior expected rewards for all bandits; σ^1pre: initial standard deviation of prior expected rewards for all bandits._
+
+**Table 2.**
+ Brain regions in which activity was significantly correlated with the overall uncertainty (fourth GLM), shown for the placebo condition and for pairwise comparison with L-dopa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th colspan="3">MNI coordinates</th>
+      <th>peak</th>
+      <th>cluster</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+      <th>z-value</th>
+      <th>extent (k)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Placebo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L posterior insula</td>
+      <td>−34</td>
+      <td>−20</td>
+      <td>8</td>
+      <td>4.63</td>
+      <td>198</td>
+    </tr>
+    <tr>
+      <td>R supplementary motor cortex</td>
+      <td>8</td>
+      <td>10</td>
+      <td>52</td>
+      <td>3.98</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>R/L dorsal anterior cingulate cortex, L supplementary motor cortex</td>
+      <td>-3</td>
+      <td>21</td>
+      <td>39</td>
+      <td>3.96</td>
+      <td>176</td>
+    </tr>
+    <tr>
+      <td>R anterior insula</td>
+      <td>42</td>
+      <td>15</td>
+      <td>-6</td>
+      <td>3.46</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>R thalamus</td>
+      <td>8</td>
+      <td>−10</td>
+      <td>2</td>
+      <td>3.41</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Placebo &gt; L-dopa</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L posterior insula</td>
+      <td>−34</td>
+      <td>−20</td>
+      <td>8</td>
+      <td>5.05*</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>L anterior insula, L frontal operculum</td>
+      <td>−38</td>
+      <td>6</td>
+      <td>14</td>
+      <td>4.88</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>L opercular part of the inferior frontal gyrus</td>
+      <td>−42</td>
+      <td>9</td>
+      <td>26</td>
+      <td>4.01</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>L precentral gyrus</td>
+      <td>−54</td>
+      <td>3</td>
+      <td>12</td>
+      <td>3.47</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>R dorsal anterior cingulate cortex</td>
+      <td>4</td>
+      <td>14</td>
+      <td>28</td>
+      <td>3.41</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>R precentral gyrus</td>
+      <td>39</td>
+      <td>-9</td>
+      <td>44</td>
+      <td>3.39</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>L dorsal anterior cingulate cortex</td>
+      <td>-2</td>
+      <td>36</td>
+      <td>33</td>
+      <td>3.32</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>L-dopa &gt; placebo</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>no suprathreshold activation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Thresholded at p<0.001, uncorrected, with k ≥ 10 voxels; L: left; R: right.*p=0.031, FWE-corrected for whole-brain volume._
+
 ## Discussion
 
 Here, we directly tested the causal role of DA in human explore/exploit behavior in a pharmacological, computational fMRI approach, using L-dopa (DA precursor) and haloperidol (DA antagonist) in a double-blind, placebo-controlled, counterbalanced, within-subjects design. Model comparison revealed that choice behavior was best accounted for by a novel extension of a Bayesian learning model (Daw et al., 2006), that included separate terms for directed exploration and choice perseveration. Modeling revealed that directed exploration was reduced under L-dopa compared to placebo and haloperidol. In contrast, no drug effects were observed on parameters capturing random exploration (β) or perseveration (ρ). On the neural level, exploration was associated with higher activity in the FPC, IPS, dACC, and insula, whereas exploitation showed higher activity in the vmPFC, OFC, PCC, precuneus, angular gyrus, and hippocampus, replicating previous studies (Daw et al., 2006; Addicott et al., 2014; Blanchard and Gershman, 2018). Surprisingly, no drug effects were found for these effects, nor on striatal reward prediction error signaling (see Appendix 1 for details). However, an exploratory model-based analysis revealed that L-dopa reduced insular and dACC activity associated with total (summed) uncertainty.
 
-## Computational modeling of exploration
+### Computational modeling of exploration
 
 We examined two learning rules (Delta rule vs. Bayesian learner) and four choice rules resulting in a total of eight computational models. Model comparison revealed that the Bayesian learning model (Kalman Filter) outperformed the Delta rule for each of the choice rules. Although both learning rules are based on the same error-driven learning principle, the Bayesian learner assumes that subjects additionally track the variance (uncertainty) of reward expectation and adjust the learning rate from trial to trial according to the current level of uncertainty - learning is high when reward predictions are uncertain (i.e. during exploration), but decreases when predictions become more accurate (i.e. during exploitation).
 
 For both learning rules the model including separate parameters for random exploration, directed exploration and perseveration accounted for the data best, in line with recent work from our group (Wiehler et al., 2019). Note that we also replicated this effect in the original data from the Daw et al., 2006 paper (Wiehler et al., 2019). Random exploration was implemented via adding stochasticity to the action selection with a softmax formulation (Thrun, 1992; Daw et al., 2006; Beeler et al., 2010; Gershman, 2018). Directed exploration was implemented via an exploration bonus parameter (e.g. Dayan and Sejnowski, 1996; Daw et al., 2006). In this scheme, ‘uncertainty’ or ‘information’ biases choices toward more uncertain/informative options by increasing their value. In contrast to Gershman and Tzovaras, 2018, we found no evidence in our data that including an additional term for total-uncertainty based exploration further improved model fit.
 
-## Behavioral DA drug effects
+### Behavioral DA drug effects
 
 Overall, our finding that pharmacological manipulation of the DA system impacts the exploration/exploitation trade-off is in line with previous animal and human studies (e.g. Frank et al., 2009; Beeler et al., 2010; Blanco et al., 2015). However, the observed pattern of drug effects did not match our initial hypothesis, according to which both random and directed exploration were expected to increase under L-dopa vs. placebo and decrease under haloperidol vs. placebo.
 
-## L-dopa
+#### L-dopa
 
-L-dopa administration reduced directed exploration (φ) compared to placebo, while random exploration (β) was unaffected. In the model, this could reflect (1) a reduced tendency for directed exploration and/or (2) an increased tendency for value-driven exploitation. Accordingly, when classifying all choices per subject into exploitations, directed exploration and random exploration, L-dopa was found to reduce the percentage of directed but not random exploration compared to placebo across subjects, and marginally increase the percentage of exploitations.
+L-dopa administration reduced directed exploration ($\phi$) compared to placebo, while random exploration (β) was unaffected. In the model, this could reflect (1) a reduced tendency for directed exploration and/or (2) an increased tendency for value-driven exploitation. Accordingly, when classifying all choices per subject into exploitations, directed exploration and random exploration, L-dopa was found to reduce the percentage of directed but not random exploration compared to placebo across subjects, and marginally increase the percentage of exploitations.
 
 Previous studies that found that DA promotes exploration primarily focused on prefrontal DA availability (Frank et al., 2009; Blanco et al., 2015; Kayser et al., 2015) or examined effects of tonic DA modulation (Beeler et al., 2010; Costa et al., 2014). L-Dopa, however, likely increases DA transmission most prominently within striatum, and to a much lesser degree in PFC (Carey et al., 1995; Cools, 2006). PET studies in humans also indicate that L-dopa primarily increases phasic rather than tonic striatal DA activity (Floel et al., 2008; Black et al., 2015). Increased phasic DA release was associated with improved learning under L-dopa compared to placebo, presumably by enhancing the reinforcing effect of positive feedback during learning (Frank et al., 2004; Pessiglione et al., 2006; Cox et al., 2015; Mathar et al., 2017). Thus, L-dopa might strengthen-positive reinforcing effects of immediate rewards (Pine et al., 2010) via increased phasic striatal DA release, fostering both impulsive and exploitative choice behavior (Kobayashi and Schultz, 2008; Schultz, 2010; Pine et al., 2010).
 
 In addition, the striatum is densely interconnected with frontal cortices (Haber and Knutson, 2010; Badre and Nee, 2018). Thus, L-dopa might have also attenuated exploration via indirectly modulating frontal activity through bottom-up interference (Kellendonk et al., 2006; Simpson et al., 2010; Kohno et al., 2015; Duvarci et al., 2018).
 
-## Haloperidol
+#### Haloperidol
 
-Contrary to our hypothesis, we did not observe a significant modulation of exploration/exploitation under haloperidol. Computational modeling revealed no changes in the group-level mean parameters for directed exploration (φ), random exploration (β) or perseveration.
+Contrary to our hypothesis, we did not observe a significant modulation of exploration/exploitation under haloperidol. Computational modeling revealed no changes in the group-level mean parameters for directed exploration ($\phi$), random exploration (β) or perseveration.
 
 Haloperidol is a potent D2 receptor antagonist. Thus, the absence of a clear effect on exploration and/or exploitation is at first glance somewhat puzzling. We predicted haloperidol to attenuate tonic DA signaling and reduce directed and random exploration. However, alternatively one could have predicted haloperidol to reduce phasic signaling within striatum and attenuate reward exploitation and thus increase exploration (Pessiglione et al., 2006; Pleger et al., 2009; Eisenegger et al., 2014).
 
@@ -147,9 +348,9 @@ In addition, numerous studies found opposite effects of single doses of haloperi
 
 Finally, a potential baseline dependency may have given rise to a complex non-linear pattern of drug effects. However, we also examined two proxy measures for striatal DA transmission (spontaneous eye blink rate and working memory capacity), both of which showed no modulation of drug-effects (see Appendix 1).
 
-## fMRI findings
+### fMRI findings
 
-## Neural correlates of exploration and exploitation
+#### Neural correlates of exploration and exploitation
 
 Consistent with previous research in primates and humans (Ebitz et al., 2018; Daw et al., 2006), the pattern of brain activity differed markedly between exploration and exploitation, both using a binary classification of trials and via parametric model-based analyses: Exploratory choices were associated with higher activity in the FPC, IPS, dACC, and AI, replicating previous human fMRI studies (Daw et al., 2006; Addicott et al., 2014; Laureiro-Martínez et al., 2014; Laureiro-Martínez et al., 2015; Zajkowski et al., 2017). It has been suggested that the FPC may track information relevant for exploratory decisions, such as the expected reward and uncertainty of unchosen choice options, and trigger a behavioral switches from an exploitative to an exploratory mode whenever the accumulated evidence supports such a switch (Boorman et al., 2009; Boorman et al., 2011; Badre et al., 2012; Cavanagh et al., 2012). The IPS, in contrast, has been suggested to serve as an interface between frontal areas and motor output areas, initiating behavioral responses to implement exploratory actions (Daw et al., 2006; Boorman et al., 2009; Laureiro-Martínez et al., 2015). The dACC and AI, on the other hand, are thought to form a salience network involved in detecting and orienting toward salient stimuli (Menon, 2015; Uddin, 2015), which may also subserve attentional and behavioral switching from exploitation to exploration.
 
@@ -157,7 +358,7 @@ Exploitative choices were associated with greater activation in vmPFC and OFC, a
 
 In addition, greater activation during exploitation was also observed in the PCC, angular gyrus, precuneus, and hippocampus, partly replicating the results of earlier studies (Addicott et al., 2014; Laureiro-Martínez et al., 2014; Laureiro-Martínez et al., 2015). Together with the medial PFC, these regions are hypothesized to form a large-scale brain system referred to as the ‘default mode network’ (DMN; Raichle et al., 2001; Andrews-Hanna et al., 2014). Thus, activity within these regions during exploitation may also relate to a reduced cognitive and attentional demand during exploitation compared to exploration. The angular gyrus is also heavily implicated in number monitoring (Göbel et al., 2001) and thus may monitor reward values during exploitation (see Addicott et al., 2014). The PCC is considered to be part of the brain’s valuation system and may encode reward-related information during exploitation (Lebreton et al., 2009; Bartra et al., 2013; Grueschow et al., 2015), although in primates PCC neurons were shown to signal exploratory decisions (Pearson et al., 2009). A further characterization of the hypothesized functions of specific subregions of the exploitation- and exploration networks naturally requires direct experimental tests in the future.
 
-## Neural DA drug effects
+#### Neural DA drug effects
 
 We found no direct drug effects on exploration- or exploitation-related brain activity, nor on the neural correlates of reward PE signals (see Appendix 1). We hypothesized DA drug effects on exploratory behavior to be associated with changes in the activity of brain regions implicated in exploratory choices. This was not supported by the fMRI data. Alternatively (or additionally), the observed L-dopa effect on explore/exploit behavior could also be due to an enhanced phasic DA release and PE signaling in the striatum (see above). In such a model, L-dopa would be expected to increase the magnitude of the striatal reward PE signal, as previously shown by Pessiglione et al., 2006. However, a recent study (Kroemer et al., 2019) did not observe such a modulatory effect of L-dopa on PE coding in a sequential reinforcement learning task in a large community sample (N = 65).
 
@@ -167,7 +368,7 @@ Obviously, the BOLD signal does not directly reflect DA release, and the precise
 
 For the haloperidol condition, the null findings on the neural level are less surprising, given the lack of a consistent behavioral effect across subjects. As discussed above, it can be assumed that the low dose (2 mg) of haloperidol used in this study exerted a mixture of presynaptic (DA-stimulating) and postsynaptic (DA-antagonizing) effects across subjects, potentially explaining why no overall haloperidol effects were found on the behavioral and neural level. Similarly, Pine et al., 2010 also did not observe significant effects of haloperidol (1.5 mg) on reward-related striatal activity or choice behavior. Future studies should consider using higher doses of haloperidol to achieve more consistent antidopaminergic effects from postsynaptic D2 receptor blockade across subjects, or other DA antagonists with a lower side effect profile.
 
-## L-dopa attenuates neural tracking of overall uncertainty
+### L-dopa attenuates neural tracking of overall uncertainty
 
 We reasoned that L-dopa may have reduced exploration not by directly affecting the neural signatures of explore/exploit decisions, but instead by modulating the neural correlates involved in behavioral switching from exploitation to exploration in response to accumulating uncertainty. Thus, L-dopa might delay the time point at which directed exploration is triggered, resulting in less directed exploration trials over time.
 
@@ -175,95 +376,135 @@ We examined this alternative hypothesis with an additional model-based fMRI anal
 
 Importantly, we found that L-dopa reduced uncertainty-related activity in the insula and dACC compared to placebo. Expression of D1 and D2 receptors is much higher in striatum than in insula and ACC (Hall et al., 1994; Hurd et al., 2001). Hence, L-dopa may have affected uncertainty-related activity in the insula and ACC indirectly by modulating DA transmission on the striatal level. More specifically, L-dopa might have modulated striatal processing of reward uncertainty (Preuschoff et al., 2006; Schultz et al., 2008) that subsequently is transmitted to cortical structures for integration with other decision parameters to guide explore/exploit behavior (Kennerley et al., 2006; Rushworth and Behrens, 2008; Haber and Knutson, 2010; Shenhav et al., 2013). To further test this hypothesis, future studies should more closely examine the role of the insula and ACC in triggering exploration in response to accumulating uncertainty and further investigate how frontal and/or striatal DA transmission might modulate this process.
 
-## Limitations
+### Limitations
 
 In addition to the limitations discussed above, the moderate sample size of 31 subjects in this within-subjects manipulation study may have contributed to the absence of haloperidol effects and the absence of drug-associated differences in categorical contrasts of explore/exploit trials in the fMRI analysis. A second limitation relates to the fact that while the applied pharmacological fMRI approach can examine DA drug effects on the BOLD signal, it remains unclear which effects directly reflect local changes in DA signaling, and which reflect downstream effects that may also involve other neurotransmitter systems (Schrantee and Reneman, 2014). Needless to say, the BOLD signal provides an indirect index of blood oxygenation rather than a direct measure of DA activity. Hence, an observed BOLD signal change must not necessarily rely on a change in DA transmission, and a change in DA transmission must not necessarily produce a (detectable) BOLD signal change (Brocka et al., 2018). Future research should therefore complement pharmacological fMRI studies with other in vivo techniques that specifically monitor local changes in DA activity, such as molecular imaging with PET and SPECT (single photon emission computed tomography) in humans (Cropley et al., 2006).
 
-## Conclusion
+### Conclusion
 
 The present study examined the causal role of DA in human explore/exploit behavior in a pharmacological model-based fMRI approach, using the dopamine precursor L-dopa and the D2 antagonist haloperidol in a placebo-controlled, within-subjects design. First, our cognitive modeling results confirm that humans use both random and directed exploration to solve the explore/exploit tradeoff. Notably, we extend previous findings by showing that accounting for choice perseveration improves model fit and interpretability of the parameter capturing directed exploration. Our results support the notion that DA is causally involved in the explore/exploit trade-off in humans by regulating the extent to which subjects engage in directed exploration. Interestingly, our neuroimaging data do not support the hypothesis that DA controls this trade-off by modulating the neural signatures of exploratory and exploitative decisions per se. In contrast, we provide first evidence that DA modulates tracking of overall uncertainty in a cortical control network comprising the insula and dACC, which might then drive exploration in the face of accumulating uncertainty. Future research should more closely examine the potential role of these regions in driving exploration based on emotional responses to increasing uncertainty, and further investigate how prefrontal and/or striatal DA may be involved in this process.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 In total, 34 healthy male subjects participated in the study (aged 19 to 35 years, M = 26.85, SD = 4.01). Three subjects dropped out of the study due to illness or personal reasons, two after the initial baseline session and one after the first fMRI session. Only males were included, as female sex hormones fluctuate during menstrual cycle which may affect DA signaling (Almey et al., 2015; Yoest et al., 2018). Sample-size (n = 31, within-subject design) was based on previous work regarding exploration-related brain activation (Daw et al., 2006; n = 14), and dopaminergic manipulation of reinforcement learning (Pessiglione et al., 2006; n = 13, between-subject design). We aimed at a sample-size of least twice the size of the above-mentioned studies for replication purposes. Participants were recruited online and included mainly university students. Inclusion criteria were the following: male, age 18–35 years, normal weight (BMI 18.5–25.0), right-handed, fluent German in speaking and writing, normal or corrected to normal vision, no hearing impairments, no major past or present psychological, neurological, or physical disorders, non-smoker, no excessive consumption of alcohol (<10 glasses per week), no consumption of illegal drugs or prescription drugs within two months prior to the study, no irreversibly attached metal in or on the body, no claustrophobia (the latter two due to the fMRI measurement). Before participating in the study, all subjects provided informed written consent and had to pass a medical check by a physician including an electrocardiogram (ECG) and an interview about their medical history and present health status. Participants received a fixed amount (270€) plus a variable bonus depending on task performance (30–50€). The study procedures were approved by the local ethics committee (Hamburg Medical Council).
 
-## General procedure
+### General procedure
 
 We employed a double-blind, placebo-controlled, counterbalanced, within-subjects design. Each subject (n = 31) was tested in four separate sessions: one baseline session and three fMRI sessions. The baseline screening was scheduled five to six days prior to the first fMRI session.
 
-## Baseline screening
+### Baseline screening
 
 The baseline screening started with spontaneous eye blink rate assessment, followed by a computerized testing of working memory capacity comprising four working memory tasks (as proxy measures for participants’ DA baseline; see Appendix 1), two tasks testing delay and probability discounting behavior (not reported here), and it ended with a psychological questionnaire battery. Participants were encouraged to take small breaks in between the tasks to aid concentration. Blink rate was measured via electromyography for 5 min under resting conditions via three Ag/AgCl electrodes (Blumenthal et al., 2005) and an MP100 hardware system running under AcqKnowledge (version 3.9.1; Biopac Systems, Goleta, CA). Working memory capacity was based on the following tasks: Rotation Span (Foster et al., 2015), Operation Span (Foster et al., 2015), Listening Span (van den Noort et al., 2008; based on the English version by Daneman and Carpenter, 1980), and Digit Span (Wechsler Adult Intelligence Scale: WAIS-IV; Wechsler, 2008). All tasks were implemented using the software MATLAB (R2014b; MathWorks, Natick, MA) with the Psychophysics Toolbox extensions (version 3.0.12; Brainard, 1997; Kleiner et al., 2007).
 
 At the end of the baseline screening, subjects completed a computer-based questionnaire battery assessing demographics, personality traits, addictive behavior, and various symptoms of psychopathology. Most of the questionnaires were assessed for a separate study and are of no further importance here. Only the Symptom Checklist-90-Revised (SCL-90-R; Derogatis, 1992; German version by Franke, 1995) was used to exclude subjects with psychiatric symptoms. A cut-off was calculated for each subject and transformed into T values based on a German norm sample of male students (see SCL-90-R manual by Franke, 2000, p.310–329). As instructed in this manual, the screening cut-off was set to TGSI ≥ 63 or T ≥ 63 for at least two of the nine subscales, which was reached by none of the participants. Further, the Edinburgh Handedness Inventory (Oldfield, 1971) was used to ensure that all participants were right-handed.
 
-## Scanning procedure
+### Scanning procedure
 
 In the three fMRI sessions, each participant performed two tasks inside the MRI scanner under the three different drug conditions. The procedure for each scanning session was as follows: Upon arrival (2.5 hr before testing in the MRI scanner), participants received a first pill containing either 2 mg haloperidol or placebo (maize starch). Two hours later, subjects received a second pill containing either Madopar (150 mg L-dopa + 37.5 mg benserazide) or placebo. Over the course of the study, each subject received one dose of Madopar in one session, one dose of haloperidol in another session, and two placebo pills in the remaining session (counterbalanced). Half an hours later, subjects first performed the restless four-armed bandit task, followed by an additional short reinforcement learning task (not reported here) both inside the MRI scanner. Both tasks were trained on a practice version outside the scanner a priori. On the first fMRI session, a structural MR image (T1) was additionally obtained. Each fMRI session ended with a post-fMRI testing outside the scanner, to assess several control variables (see Appendix 1). Throughout each fMRI session, further control variables were assessed at different time points, including physical wellbeing parameters and mood (see Appendix 1). Subjects were not allowed to eat or drink anything but water throughout the fMRI session but were offered a small snack (cereal bar) after testing in the fMRI scanner to aid concentration for the post-fMRI testing.
 
-## Restless four-armed bandit task
+### Restless four-armed bandit task
 
 The restless four-armed bandit task was adapted from Daw et al., 2006. The task included 300 trials, which were separated by short breaks into four blocks of 75 trials. Each trial started with the presentation of four different colored squares (‘bandits’) representing four choice options (Figure 1). The squares were displayed on a screen that was reflected in a head coil mirror inside the fMRI scanner. Participants selected one option using a button box held in their right hand. Subjects had a maximum of 1.5 s to indicate their choice. If no button was pressed during that time, a large red X was displayed 4.2 s in the center of the screen indicating a missed trial with no points earned. If subjects pressed a button before the response deadline the selected bandit was highlighted with a black frame. After a waiting period of 3 s during which three black dots were shown within the chosen bandit, the number of points earned in this trial was displayed within the chosen bandit for 1 s. Subsequently, the bandits disappeared, and a fixation cross remained on screen until the trial ended 6 s after trial onset. This was followed by a jittered inter-trial interval (poisson distribution, mean: 2 s (0–5 s)). At the end of the task, the sum of points earned as well as the monetary payout resulting from these points were displayed on screen. Participants were told in advance that 5% of all points earned would be paid out after the experiment (5 cents per 100 points). The mean payoffs of the four bandits drifted randomly across trials according to a decaying Gaussian random walk. We used the three instantiations from Daw et al., 2006 for the three fMRI sessions of the current study. One of these instantiations is shown in Figure 1. The order of these three instantiations across fMRI sessions was the same for all subjects, thereby unconfounded with the drug order, which was counterbalanced across subjects. The task was implemented using the software MATLAB (R2014b; MathWorks, Natick, MA) with the Psychophysics Toolbox extensions (version 3.0.12; Brainard, 1997; Kleiner et al., 2007).
 
-## Computational modeling of explore/exploit behavior
+### Computational modeling of explore/exploit behavior
 
 Choice behavior in the four-armed bandit task was modeled using eight different computational models of explore/exploit choice behavior (Table 1). The best fitting model (in terms of predictive accuracy) was selected for subsequent analyses of behavioral and fMRI data, and pharmacological intervention effects. Each computational model was composed of two components: First, a learning rule (Delta rule, Bayesian learner) described how participants generate and update subjective reward value estimates for each choice option (bandit) based on previous choices and obtained rewards. Second, a choice rule (softmax, softmax + exploration bonus, softmax + exploration bonus + perseveration bonus, softmax + exploration bonus + (total uncertainty dependent) random exploration bonus + perseveration bonus) modeled how these learned values influence choices. By combining two different learning rules with four different choice rules, a total of eight models entered for model comparison.
 
-For the sake of brevity, here we only outline the architecture of the Bayesian learner models (see Appendix 1 for the models implementing the Delta rule), which consistently outperformed the Delta rule models (Daw et al., 2006). This model implements the Kalman filter (Anderson and Moore, 1979; Kalman, 1960; Kalman and Bucy, 1961) as the Bayesian mean-tracking rule for the reward-generating diffusion process in the bandit task. The model assumes that subjects form an internal representation of the true underlying reward structure of the task. The payoff in trial t of bandit i followed a decaying Gaussian random walk with mean payoff μi, t and variance σo2 = 42 (observation variance). From one trial to the next, the mean payoffs changed according to: μi, t+1=λμi, t+1-λϑ+vt with parameters λ = 0.9836 (decay parameter), ϑ = 50 (decay center), and diffusion noise vt drawn independently in each trial from a Gaussian distribution with zero mean and σd2 = 2.82(diffusion variance). In the model, subjects’ estimates of these parameters are denoted accordingly as λ^,ϑ^,σ^d2 and σ^d2. According to the model, participants update their reward expectations of the chosen bandit according to Bayes’ theorem. They start each trial with a prior belief about each bandit’s mean payoff, that is normally distributed with mean μ^i,tpre and variance σ^i,t2pre for bandit i  on trial t. For the chosen bandit, this prior distribution is updated by the reward observation rt, resulting in a posterior distribution with mean μ^i,tpost and variance σ^i,t2post according to:(1)μ^ct,tpost=μ^ct,tpre+κtδtwithδt=rt−μ^ct,tpre,(2)σ^ct,t2post=(1−κt)σ^ct,t2pre.
+For the sake of brevity, here we only outline the architecture of the Bayesian learner models (see Appendix 1 for the models implementing the Delta rule), which consistently outperformed the Delta rule models (Daw et al., 2006). This model implements the Kalman filter (Anderson and Moore, 1979; Kalman, 1960; Kalman and Bucy, 1961) as the Bayesian mean-tracking rule for the reward-generating diffusion process in the bandit task. The model assumes that subjects form an internal representation of the true underlying reward structure of the task. The payoff in trial $t$ of bandit $i$ followed a decaying Gaussian random walk with mean payoff $\mu_{i,t}$ and variance $\sigma_{o}^{2}$ = 42 (observation variance). From one trial to the next, the mean payoffs changed according to: $\mu_{i,t+1}=\lambda\mu_{i,t}+1-\lambdaϑ+v_{t}$ with parameters $\lambda$ = 0.9836 (decay parameter), $ϑ$ = 50 (decay center), and diffusion noise $v_{t}$ drawn independently in each trial from a Gaussian distribution with zero mean and $\sigma_{d}^{2}$ = 2.82(diffusion variance). In the model, subjects’ estimates of these parameters are denoted accordingly as $\lambda^,ϑ^,\sigma^_{d}^{2}$ and $\sigma^_{d}^{2}.$ According to the model, participants update their reward expectations of the chosen bandit according to Bayes’ theorem. They start each trial with a prior belief about each bandit’s mean payoff, that is normally distributed with mean $\mu^_{i,t}^{pre}$ and variance $\sigma^_{i,t}^{2pre}$ for bandit $i$ on trial $t$. For the chosen bandit, this prior distribution is updated by the reward observation $r_{t}$, resulting in a posterior distribution with mean $\mu^_{i,t}^{post}$ and variance $\sigma^_{i,t}^{2post}$ according to:
 
-Here, κ denotes the Kalman gain that is computed for each trial t as:(3)κt=σ^ct,t2pre/(σ^ct,t2pre+σ^o2).
+$$
+\mu^_{c_{t},t}^{post}=\mu^_{c_{t},t}^{pre}+κ_{t}\delta_{t}with\delta_{t}=r_{t}−\mu^_{c_{t},t}^{pre},
+$$
 
-The Kalman gain determines the fraction of the prediction error that is used for updating. In contrast to the learning rate (Delta rule), the Kalman gain varies from trial to trial depending on the current variance of the expected reward’s prior distribution (σ^ct,t2pre) and the estimated observation variance (σ^o2). The observation variance indicates how much the actual rewards vary around the (to be estimated) mean reward of a bandit and therefore reflects how reliable each trial’s reward observation (each new data point) is for estimating the true underlying mean. If the prior variance is large compared to the estimated observation variance, that is if a subject’s reward prediction is very uncertain while the reward observation is very reliable, the Kalman gain approaches one and a large fraction of the prediction error is used for updating. If, in contrast, the prior variance is very small compared to the estimated observation variance, that is if a subject’s reward estimation is very reliable while reward observations are very noisy, then the Kalman gain approaches 0 and only a small fraction of the prediction error is used for updating. Similar to the Delta rule, the expected rewards (prior mean and variance) of all unchosen bandits are not updated within a trial, that is their posteriors equal the prior for that trial. However, prior distributions of all four bandits are updated between trials based on the subject’s belief about the underlying Gaussian random walk by:μ^i,t+1pre=λ^μ^i,tpost+(1−λ^)ϑ^andσ^i,t+12pre=λ^2σ^i,tpost+σ^d2.
 
-The trial-by-trial updating process was initialized for all bandits with the same prior distribution Nμ^1pre,σ^12pre, with μ^1pre and σ^12pre as additional free parameters of the model.
 
-The three choice rules were based on the softmax function (Sutton and Barto, 1998; McFadden, 1974). The first implementation utilized the softmax (SM) with the inverse temperature parameter β modeling inherent choice randomness (random exploration). The second choice rule (SM+E) modeled directed exploration in addition, the third choice rule further modeled choice perseveration (SM+E+P), and the fourth model additionally accounted for total uncertainty-based random exploration (SM+E+R+P), all three via a bonus that was added to the expected value. The resulting probabilities Pi,t to choose bandit i  on trial t were then:(5)Choicerule1(SM): Pi,t=exp(βμ^i,tpre)\ ∑jexp(βμ^j,tpre),(6)Choicerule2(SM+E): Pi,t=exp(βμ^i,tpre+ φσ^i,tpre]) ∑jexp(β[μ^j,tpre+ φσ^j,tpre]),(7)Choicerule3(SM+E+P):Pi,t=exp(βμ^i,tpre+φσ^i,tpre+Ict−1=iρ])\ ∑jexp(β[μ^j,tpre+φσ^j,tpre+Ict−1=jρ]).(8)Choicerule4(SM+E+R+P):Pi,t=exp(β[μ^i,tpre+φσ^i,tpre+Ict−1=iρ + γμ^i,tpre\ Σσ^pre])\ ∑jexp(β[μ^j,tpre+φσ^j,tpre+Ict−1=jρ + γμ^i,tpre\ Σσ^pre]).
+$$
+\sigma^_{c_{t},t}^{2post}=(1−κ_{t})\sigma^_{c_{t},t}^{2pre}.
+$$
 
-Choice rule 2 is the “softmax (random exploration) with exploration bonus (directed exploration)”, as used in Daw et al., 2006. Here, φ denotes the exploration bonus parameter, which reflects the degree to which choices are influenced by the uncertainty associated with each bandit.
+Here, $κ$ denotes the Kalman gain that is computed for each trial $t$ as:
 
-Choice rule 3 is a novel extension of this model called “softmax with exploration and perseveration bonus”. It includes an extra perseveration bonus, which is a constant value (free parameter) only added to the expected value of the bandit chosen in the previous trial. Here, ρ denotes the perseveration bonus parameter and I an indicator function that equals 1 for the bandit that was chosen in the previous trial (indexed by ct-1) and 0 for all other bandits.
+$$
+κ_{t}=\sigma^_{c_{t},t}^{2pre}/(\sigma^_{c_{t},t}^{2pre}+\sigma^_{o}^{2}).
+$$
 
-Choice rule 4 further extends choice rule 3 by adding a second random exploration term that is discounted by the estimated total (i.e. summed) uncertainty of all bandits (Gershman, 2018; Thompson, 1933). Here, γ denotes the uncertainty-based random exploration parameter which captures the recent observation that choice randomness may increase with increasing overall uncertainty (Gershman and Tzovaras, 2018).
+The Kalman gain determines the fraction of the prediction error that is used for updating. In contrast to the learning rate (Delta rule), the Kalman gain varies from trial to trial depending on the current variance of the expected reward’s prior distribution ($\sigma^_{c_{t},t}^{2pre}$) and the estimated observation variance ($\sigma^_{o}^{2}$). The observation variance indicates how much the actual rewards vary around the (to be estimated) mean reward of a bandit and therefore reflects how reliable each trial’s reward observation (each new data point) is for estimating the true underlying mean. If the prior variance is large compared to the estimated observation variance, that is if a subject’s reward prediction is very uncertain while the reward observation is very reliable, the Kalman gain approaches one and a large fraction of the prediction error is used for updating. If, in contrast, the prior variance is very small compared to the estimated observation variance, that is if a subject’s reward estimation is very reliable while reward observations are very noisy, then the Kalman gain approaches 0 and only a small fraction of the prediction error is used for updating. Similar to the Delta rule, the expected rewards (prior mean and variance) of all unchosen bandits are not updated within a trial, that is their posteriors equal the prior for that trial. However, prior distributions of all four bandits are updated between trials based on the subject’s belief about the underlying Gaussian random walk by:
+
+$$
+\mu^_{i,t+1}^{pre}=\lambda^\mu^_{i,t}^{post}+(1−\lambda^)ϑ^and\sigma^_{i,t+1}^{2pre}=\lambda^^{2}\sigma^_{i,t}^{post}+\sigma^_{d}^{2}.
+$$
+
+The trial-by-trial updating process was initialized for all bandits with the same prior distribution $N\mu^_{1}^{pre},\sigma^_{1}^{2pre}$, with $\mu^_{1}^{pre}$ and $\sigma^_{1}^{2pre}$ as additional free parameters of the model.
+
+The three choice rules were based on the softmax function (Sutton and Barto, 1998; McFadden, 1974). The first implementation utilized the softmax (SM) with the inverse temperature parameter β modeling inherent choice randomness (random exploration). The second choice rule (SM+E) modeled directed exploration in addition, the third choice rule further modeled choice perseveration (SM+E+P), and the fourth model additionally accounted for total uncertainty-based random exploration (SM+E+R+P), all three via a bonus that was added to the expected value. The resulting probabilities $P_{i,t}$ to choose bandit $i$ on trial $t$ were then:
+
+$$
+Choicerule1(SM): P_{i,t}=\frac{exp(\beta\mu^_{i,t}^{pre})\ }{\sumjexp(\beta\mu^_{j,t}^{pre})},
+$$
+
+
+
+$$
+Choicerule2(SM+E): P_{i,t}=\frac{exp(\beta\mu^_{i,t}^{pre}+ \phi\sigma^_{i,t}^{pre}]) }{\sumjexp(\beta[\mu^_{j,t}^{pre}+ \phi\sigma^_{j,t}^{pre}])},
+$$
+
+
+
+$$
+Choicerule3(SM+E+P):P_{i,t}=\frac{exp(\beta\mu^_{i,t}^{pre}+\phi\sigma^_{i,t}^{pre}+I_{c_{t−1=i}}ρ])\ }{\sumjexp(\beta[\mu^_{j,t}^{pre}+\phi\sigma^_{j,t}^{pre}+I_{c_{t−1=j}}ρ])}.
+$$
+
+
+
+$$
+Choicerule4(SM+E+R+P):P_{i,t}=\frac{exp(\beta[\mu^_{i,t}^{pre}+\phi\sigma^_{i,t}^{pre}+I_{c_{t−1=i}}ρ + \gamma\frac{\mu^_{i,t}^{pre}\ }{Σ\sigma^^{pre}}])\ }{\sumjexp(\beta[\mu^_{j,t}^{pre}+\phi\sigma^_{j,t}^{pre}+I_{c_{t−1=j}}ρ + \gamma\frac{\mu^_{i,t}^{pre}\ }{Σ\sigma^^{pre}}])}.
+$$
+
+Choice rule 2 is the “softmax (random exploration) with exploration bonus (directed exploration)”, as used in Daw et al., 2006. Here, $\phi$ denotes the exploration bonus parameter, which reflects the degree to which choices are influenced by the uncertainty associated with each bandit.
+
+Choice rule 3 is a novel extension of this model called “softmax with exploration and perseveration bonus”. It includes an extra perseveration bonus, which is a constant value (free parameter) only added to the expected value of the bandit chosen in the previous trial. Here, ρ denotes the perseveration bonus parameter and $I$ an indicator function that equals 1 for the bandit that was chosen in the previous trial (indexed by $c_{t-1}$) and 0 for all other bandits.
+
+Choice rule 4 further extends choice rule 3 by adding a second random exploration term that is discounted by the estimated total (i.e. summed) uncertainty of all bandits (Gershman, 2018; Thompson, 1933). Here, $\gamma$ denotes the uncertainty-based random exploration parameter which captures the recent observation that choice randomness may increase with increasing overall uncertainty (Gershman and Tzovaras, 2018).
 
 As mentioned above, all four choice rules were also implemented within a simple Delta rule learning scheme (see Appendix 1). Taken together, by combing each learning rule with each choice rule, eight cognitive models entered model comparison. The parameters for each model are summarized in Table 1.
 
-Posterior parameter distributions were estimated for each subject and drug condition using hierarchical Bayesian modeling within Stan (version 2.17.0; Stan Development Team, 2017), operating under the general statistical package R (version 3.4.3; R Development Core Team, 2017). Stan is based on Hamiltonian Monte Carlo sampling (Girolami and Calderhead, 2011) for approximation. Sampling was performed with four chains, each chain running for 1000 iterations without thinning after a warmup period of 1000 iterations. The prior for each group-level mean was uniformly distributed within the limits as given in Figure 9. For each group-level standard deviation, a half-Cauchy distribution with location parameter 0 and scale parameter 1 was used as a weakly informative prior (Gelman, 2006). Priors for all subject-level parameters were normally distributed with a parameter-specific mean and standard deviation (denoted by Mx and Λx  for any parameter x). Group-level posterior distributions of the three parameters (β,φ,ρ; mean and standard deviation) were estimated separately for each drug condition, which allowed the comparison of subject-level as well as group-level parameters between drugs (for details on the fixed parameters see Appendix 1).
+Posterior parameter distributions were estimated for each subject and drug condition using hierarchical Bayesian modeling within Stan (version 2.17.0; Stan Development Team, 2017), operating under the general statistical package R (version 3.4.3; R Development Core Team, 2017). Stan is based on Hamiltonian Monte Carlo sampling (Girolami and Calderhead, 2011) for approximation. Sampling was performed with four chains, each chain running for 1000 iterations without thinning after a warmup period of 1000 iterations. The prior for each group-level mean was uniformly distributed within the limits as given in Figure 9. For each group-level standard deviation, a half-Cauchy distribution with location parameter 0 and scale parameter 1 was used as a weakly informative prior (Gelman, 2006). Priors for all subject-level parameters were normally distributed with a parameter-specific mean and standard deviation (denoted by $M^{x}$ and $Λ^{x}$ for any parameter $x$). Group-level posterior distributions of the three parameters ($\beta,\phi,ρ$; mean and standard deviation) were estimated separately for each drug condition, which allowed the comparison of subject-level as well as group-level parameters between drugs (for details on the fixed parameters see Appendix 1).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/51260/elife-51260-fig9-v1.jpg)
 
-**Figure 9.:** In this graphical scheme, nodes represent variables of interest (squares: discrete variables; circles: continuous variables) and arrows indicate dependencies between these variables. Shaded nodes represent observed variables, here rewards () and choices (r) for each trial (ch), subject (t), and drug condition (s). For each subject and drug condition, the observed rewards until trial t-1 determine (deterministically) choice probabilities (d) on trial P, which in turn determine (stochastically) the choice on that trial. The exact dependencies between previous rewards and choice probabilities are specified by the different cognitive models and their model parameters (t). Note that the double-bordered node indicates that the choice probability is fully determined by its parent nodes, that is the reward history and the model parameters. As the model parameters differ between all applied cognitive models, they are indicated here by an x as a placeholder for one or more model parameter(s). Still, the general modeling scheme was the same for all models: Model parameters were estimated for each subject and drug condition and were assumed to be drawn from a group-level normal distribution with mean x and standard deviation Mx for any parameter Λx. Note that group-level parameters were estimated separately for each drug condition. Each group-level mean (x) was assigned a non-informative (uniform) prior between the limits Mx and  xmin as listed above. Each group-level standard deviation ( xmax) was assigned a half Cauchy distributed prior with location parameter 0 and scale 1. Subject-level parameters included Λx, α,β, φ, and ρ depending on the cognitive model (see γTable 1).
+**Figure 9.:** In this graphical scheme, nodes represent variables of interest (squares: discrete variables; circles: continuous variables) and arrows indicate dependencies between these variables. Shaded nodes represent observed variables, here rewards ($r$) and choices ($ch$) for each trial ($t$), subject ($s$), and drug condition ($d$). For each subject and drug condition, the observed rewards until trial t-1 determine (deterministically) choice probabilities ($P$) on trial $t$, which in turn determine (stochastically) the choice on that trial. The exact dependencies between previous rewards and choice probabilities are specified by the different cognitive models and their model parameters ($x$). Note that the double-bordered node indicates that the choice probability is fully determined by its parent nodes, that is the reward history and the model parameters. As the model parameters differ between all applied cognitive models, they are indicated here by an $x$ as a placeholder for one or more model parameter(s). Still, the general modeling scheme was the same for all models: Model parameters were estimated for each subject and drug condition and were assumed to be drawn from a group-level normal distribution with mean $M^{x}$ and standard deviation $Λ^{x}$ for any parameter $x$. Note that group-level parameters were estimated separately for each drug condition. Each group-level mean ($M^{x}$) was assigned a non-informative (uniform) prior between the limits $x_{min}$ and $x_{max}$ as listed above. Each group-level standard deviation ($Λ^{x}$) was assigned a half Cauchy distributed prior with location parameter 0 and scale 1. Subject-level parameters included $\alpha,\beta,\phi$, $ρ$, and $\gamma$ depending on the cognitive model (see Table 1).
 
-## Model comparison
+### Model comparison
 
-Following parameter estimation, the eight cognitive models were compared in terms of predictive accuracy using a Bayesian leave-one-out (LOO) cross-validation approach (Vehtari et al., 2017). LOO cross-validation computes pointwise out-of-sample predictive accuracy by repeatedly taking one data set ('testing set') out of the sample, refitting the model to the reduced data ('training set'), and then measuring how accurately the refitted model predicts the data of the testing set. A testing set was defined as the data of one subject under one drug condition, compounded over all trials. Model comparison was performed using the data sets from all 31 participants once combined over all drug conditions (yielding 93 data sets) and once separately for each drug condition (each with 31 data sets). To reduce computational burden, the R package loo (Vehtari et al., 2017) was used, which applies Pareto-smoothed importance sampling to calculate LOO estimates as a close approximation. LOO estimates were calculated for each model fit based on its Stan output, using the log likelihood function evaluated at the sampled posterior parameter values. The log likelihood for each subject was calculated as the logarithmized product of choice probabilities (P) of the chosen bandits (indexed by ct) compounded over trials: log⁡(∏tPct,t). Please note that since cross-validation measures like LOO are not biased in favor of more complex models (like ordinary goodness-of-fit measures), no penalty term is needed here to compensate for model complexity in order to prevent over-fitting. Based on the results of the model comparison (Figure 3), the cognitive model with the highest predictive accuracy (Bayes-learner with exploration and perseveration bonus (choice rule 3)) was then selected for further data analysis.
+Following parameter estimation, the eight cognitive models were compared in terms of predictive accuracy using a Bayesian leave-one-out (LOO) cross-validation approach (Vehtari et al., 2017). LOO cross-validation computes pointwise out-of-sample predictive accuracy by repeatedly taking one data set ('testing set') out of the sample, refitting the model to the reduced data ('training set'), and then measuring how accurately the refitted model predicts the data of the testing set. A testing set was defined as the data of one subject under one drug condition, compounded over all trials. Model comparison was performed using the data sets from all 31 participants once combined over all drug conditions (yielding 93 data sets) and once separately for each drug condition (each with 31 data sets). To reduce computational burden, the R package loo (Vehtari et al., 2017) was used, which applies Pareto-smoothed importance sampling to calculate LOO estimates as a close approximation. LOO estimates were calculated for each model fit based on its Stan output, using the log likelihood function evaluated at the sampled posterior parameter values. The log likelihood for each subject was calculated as the logarithmized product of choice probabilities ($P$) of the chosen bandits (indexed by $c_{t}$) compounded over trials: $log⁡(\prodtP_{c_{t},t})$. Please note that since cross-validation measures like LOO are not biased in favor of more complex models (like ordinary goodness-of-fit measures), no penalty term is needed here to compensate for model complexity in order to prevent over-fitting. Based on the results of the model comparison (Figure 3), the cognitive model with the highest predictive accuracy (Bayes-learner with exploration and perseveration bonus (choice rule 3)) was then selected for further data analysis.
 
-## FMRI data acquisition
+### FMRI data acquisition
 
 Functional imaging data were acquired on a Siemens Trio 3T scanner (Erlangen, Germany) equipped with a 32 channel head-coil. For each subject and drug condition, four blocks à 75 trials were recorded for the bandit task. The first five scans of each block served as dummy scans to allow for magnetic field saturation and were discarded. Functional volumes were recorded using a T2*-weighted EPI sequence. Each volume consisted of 40 slices with 2 mm isotropic voxels and 1 mm gap, acquired with a repetition time of 2470 ms, an echo time of 26 ms, and a flip angle of 80°. In addition, a high-resolution structural image was acquired for each subject at the end of the first fMRI session, using a T1-weighted magnetization prepared rapid gradient echo (MPRAGE) sequence with 1 mm isotropic voxels and 240 slices. The experimental task was projected onto a mirror attached to the head coil and participants responded by using a button box with four buttons held in the right hand.
 
-## FMRI data analysis
+### FMRI data analysis
 
-## Preprocessing
+#### Preprocessing
 
 Preprocessing and statistical analysis of fMRI data was performed using SPM12 (Wellcome Department of Imaging Neuroscience, London, UK). The preprocessing included four steps: (1) realignment and unwarping to the first image of the placebo session; (2) slice time correction to the onset of the middle slice; (3) spatial normalization to Montreal Neurological Institute (MNI) space utilizing the DARTEL approach (Ashburner, 2007) with a resampling of functional images to 1.5 mm isotropic resolution; (4) spatial smoothing using a Gaussian kernel of 6 mm full-width at half-maximum (FWHM).
 
-## First-level analysis
+#### First-level analysis
 
 For the first-level analysis of fMRI data, a general linear model (GLM) was created for each subject and drug condition, concatenated over all four blocks of the bandit task. For each trial in which a bandit was chosen, two different time points were included in the model: trial onset and outcome presentation. GLM regressors for these time points were created by convolving these event onsets (stick function of zero duration) with the canonical hemodynamic response function (HRF). Parametric modulators for both onset regressors were included in the model: (1) the type of each choice (1 = explore, 0 = exploit, see Daw et al., 2006) as a parametric modulator for the trial onset regressor; (2) the reward prediction error and the outcome value as separate parametric modulators for the outcome regressor. For trials in which no bandit was chosen, the model contained an additional error regressor. Four sessions constants (not convolved with the HRF) were included in the model. Low-frequency noise was removed by employing a temporal high-pass filter with a cut-off frequency of 1/128 Hz, and a first order autoregressive model AR(1) was used to remove serial correlations. Regressor-specific contrast images were created for each subject and drug condition for the five regressors of interest: trial onset, outcome onset, choice type, prediction error, and outcome value.
 
-In addition to the main GLM, two alternative GLMs were created. Both alternative GLMs only differed from the main GLM with respect to the regressors modeled at trial onset, while the remaining regressors were the same. The second GLM included one trial onset regressor with two parametric modulators: the expected value (μ^pre) and uncertainty (σ^pre) of the chosen option (in that order), both derived from the cognitive model as described in the results section. The third GLM included three trial onset regressors: one for directed explorations (directed), one for random explorations (random), and one for exploitations (exploit). These three choice types were defined according to the trinary classification scheme as described in the results section.
+In addition to the main GLM, two alternative GLMs were created. Both alternative GLMs only differed from the main GLM with respect to the regressors modeled at trial onset, while the remaining regressors were the same. The second GLM included one trial onset regressor with two parametric modulators: the expected value ($\mu^^{pre}$) and uncertainty ($\sigma^^{pre}$) of the chosen option (in that order), both derived from the cognitive model as described in the results section. The third GLM included three trial onset regressors: one for directed explorations (directed), one for random explorations (random), and one for exploitations (exploit). These three choice types were defined according to the trinary classification scheme as described in the results section.
 
-## Second-level analysis
+#### Second-level analysis
 
 Utilizing a second-level random effects analysis approach, the subject- and drug-specific contrast images for each first-level regressor were submitted to a flexible factorial model in SPM12, including the factors drug (three levels, within-subject), subject (31 levels), and a constant. For each contrast-specific second-level analysis, a t-contrast image was created that tested for the main effect of that specific contrast over all subjects and drug conditions, calculated by weighting each drug level by one and each subject level by 3/31 (Gläscher and Gitelman, 2008). For the choice type regressor (explore = 1, exploit = 0), t-contrast were computed twice, once with positive and once with negative weights to create t-contrast images for both comparisons explore > exploit and exploit > explore. For the second GLM, t-contrasts for both parameteric modulators, that is expected value and uncertainty, were included in the second-level random effects analysis. For the third GLM, the second-level random effects analysis included the t-contrasts directed > exploit, random > exploit, directed > random, and random > directed.
 
 To test for DA drug effects across subjects, an F-contrast image was created for each contrast-specific second-level analysis with the weights [1 -1 0; 0 1 -1] over the three drug levels [P D H] and zero weights for all 31 subject levels (Henson and Penny, 2005).
 
-In addition, a second-level regression analysis was conducted for each drug pair to test whether DA drug effects on exploration-specific brain activity were linearly predicted by DA drug effects on exploratory behavior. For this, the subject- and drug-specific contrast images for explore vs. exploit were used to calculate the difference image of this contrast for a given drug pair (P-D, P-H, or D-H) for each subject. These difference images entered a second-level regression analysis, including the subject-specific drug differences of the exploration bonus parameter φ posterior medians for the same drug pair as explanatory variable. The same kind of regression analysis was also performed for the contrasts of expected value and uncertainty of the second GLM, and directed vs. exploit and random vs. exploit of the third GLM.
+In addition, a second-level regression analysis was conducted for each drug pair to test whether DA drug effects on exploration-specific brain activity were linearly predicted by DA drug effects on exploratory behavior. For this, the subject- and drug-specific contrast images for explore vs. exploit were used to calculate the difference image of this contrast for a given drug pair (P-D, P-H, or D-H) for each subject. These difference images entered a second-level regression analysis, including the subject-specific drug differences of the exploration bonus parameter $\phi$ posterior medians for the same drug pair as explanatory variable. The same kind of regression analysis was also performed for the contrasts of expected value and uncertainty of the second GLM, and directed vs. exploit and random vs. exploit of the third GLM.
 
-Post-hoc, a fourth first-level GLM was created for an additional exploratory analysis. This fourth GLM differed from the main GLM only with respect to the parametric modulator of the trial onset regressor, replacing the binary variable choice type (explore/exploit) by a continuous model-based variable termed overall uncertainty (Σσ^pre), which is the summed uncertainty (σ^pre) over all four bandits. The contrast images for the overall uncertainty regressor were then used in a second-level random effects analysis to test for drug differences in the parametric effects of this regressor across subjects. Since this post-hoc analysis specifically focused on a comparison of the placebo and L-dopa condition (based on the behavioral findings), the second-level model only included these two drug conditions. Based on this model, different t-contrast images were created to test for the parametric effects of this regressor in the placebo condition alone, and for its differential parametric effects between both drug conditions (placebo >L dopa, L-dopa >placebo).
+Post-hoc, a fourth first-level GLM was created for an additional exploratory analysis. This fourth GLM differed from the main GLM only with respect to the parametric modulator of the trial onset regressor, replacing the binary variable choice type (explore/exploit) by a continuous model-based variable termed overall uncertainty $(Σ\sigma^^{pre}$), which is the summed uncertainty ($\sigma^^{pre}$) over all four bandits. The contrast images for the overall uncertainty regressor were then used in a second-level random effects analysis to test for drug differences in the parametric effects of this regressor across subjects. Since this post-hoc analysis specifically focused on a comparison of the placebo and L-dopa condition (based on the behavioral findings), the second-level model only included these two drug conditions. Based on this model, different t-contrast images were created to test for the parametric effects of this regressor in the placebo condition alone, and for its differential parametric effects between both drug conditions (placebo >L dopa, L-dopa >placebo).
 
 For completeness, also a second-level analysis with all three drug conditions was performed to test for the remaining pairwise drug effects accordingly (placebo > haloperidol, haloperidol > placebo, L-dopa > haloperidol, haloperidol > placebo). Finally, also a second-level regression analysis was performed for this regressor.
 

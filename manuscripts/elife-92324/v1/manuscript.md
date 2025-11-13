@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02s6k3f65 Structural Biology and Biophysics, Biozentrum, University of Basel Basel Switzerland
+1. Structural Biology and Biophysics, Biozentrum, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -37,17 +37,17 @@ Here, we prove and refine this model of allosteric activation and interaction be
 
 ## Results and discussion
 
-## Expression of C-terminal Abl truncation constructs
+### Expression of C-terminal Abl truncation constructs
 
 To test the impact of the C-terminal αI-helix on Abl’s conformational equilibria and activity, Abl constructs of the regulatory core (Abl83-534) were expressed with decreasing αI-helix length by introducing stop codons (Figure 2). While Abl constructs with partial truncations of the αI’-helix (Abl83-522 and Abl83-525) could not be purified to homogeneity and were very unstable, the first well purifiable truncation construct was Abl83-519, which misses the entire αI’-helix part of the myristoyl-bound conformation (Figure 2A). As compared to Abl83-534, its expression yield is reduced about fourfold as quantified by western blot (Figure 2B) and analysis of the fully purified construct (Figure 2C). The C-terminus was then further truncated by one amino acid at a time until Abl83-513, thereby removing sequentially the αI–αI’ loop and the last two residues T514 and M515 of the αI-helix part of the myristoyl-bound conformation. The resulting constructs had further reduced expression yields down to less than 10% for the least expressing Abl83-513 relative to Abl83-534 (Figure 2B). This reduction in yield can be rationalized by the sequential loss of stabilizing interactions between the αI-αI’ loop and the αI’-helix involving residues F516, Q517, S520, and D523 (Nagar et al., 2003; Nagar et al., 2006) and the loss of α-helical backbone hydrogen bonds originating at T514 and M515.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92324/elife-92324-fig2-v1.jpg)
 
-**Figure 2.:** (A) Detailed view of the interaction site between the SH2 domain (yellow) and the C-terminus of the Abl KD with its αH- (dark blue) and αI- (cyan) helices from the crystal structure of the assembled Abl core (PDB 2FO0). The Cα-atoms of M515, Q517, and S519 are shown as cyan spheres (B) Top: western blot of E. coli-expressed, soluble truncated Abl constructs in the supernatant after cell lysis. Bottom: expression yields of the corresponding Abl constructs as quantified from the gel bands. The numbers on the horizontal axis denote the last amino acid of the respective construct Abl83-X. (C) Relative yields of the purified truncated Abl constructs and Abl83-534,E528K as quantified by OD280.Figure 2—source data 1.Figure 2B.Figure 2—source data 2.Figure 2B with annotation of relevant bands.
+**Figure 2.:** (A) Detailed view of the interaction site between the SH2 domain (yellow) and the C-terminus of the Abl KD with its αH- (dark blue) and αI- (cyan) helices from the crystal structure of the assembled Abl core (PDB 2FO0). The Cα-atoms of M515, Q517, and S519 are shown as cyan spheres (B) Top: western blot of E. coli-expressed, soluble truncated Abl constructs in the supernatant after cell lysis. Bottom: expression yields of the corresponding Abl constructs as quantified from the gel bands. The numbers on the horizontal axis denote the last amino acid of the respective construct Abl83-X. (C) Relative yields of the purified truncated Abl constructs and Abl83-534,E528K as quantified by OD280.
 
 Due to these severe reductions in yield, large-scale expressions of 15N-labeled constructs for NMR and kinase assays were then only carried out for Abl83-519, Abl83-517, and Abl83-515. The final yield after purification for Abl83-515 was 0.16 mg per liter expression culture and reduced about 20-fold relative to Abl83-534 (3.0 mg/L; Figure 2C). Furthermore, also a full-length Abl83-534 construct harboring the malignant E528K mutation could be purified with good yield (1.3 mg/L).
 
-## Truncation of the C-terminal αI–αI’-loop leads to less disassembly of the Abl core by imatinib
+### Truncation of the C-terminal αI–αI’-loop leads to less disassembly of the Abl core by imatinib
 
 Assembled and disassembled Abl core conformations can be readily distinguished by the 1H-15N chemical shifts of the SH3 and SH2 domain backbone resonances (Skora et al., 2013; Sonti et al., 2018). The well-resolved resonances of V130, T136, and G149 shift particularly strongly (Figure 3A, left) when the type II inhibitor imatinib binds to Abl83-534, which leads to the disassembly of the Abl core as shown by SAXS, NMR relaxation and RDC data (Skora et al., 2013). No pronounced chemical shift changes are observed for these resonances between the Abl83-534•imatinib and the Abl83-‍519•imatinib complexes, indicating that the latter is also disassembled. Upon further truncation of the Abl C-terminus (Abl83-517 and Abl83-515), the resonances of the imatinib complexes shift on a straight line from the disassembled Abl83-534•imatinib in the direction of the Abl83-534 apo form, which is in the assembled conformation (Skora et al., 2013). In contrast, the apo forms of the Abl C-terminal truncations have very similar, yet not completely identical, chemical shifts to apo Abl83-534 (Figure 3A, center) which indicates that they are also assembled (see below).
 
@@ -61,15 +61,23 @@ As observed previously (Sonti et al., 2018), the PC1 scores (Figure 3B) readily 
 
 The PCA loadings (Figure 3C) show the contributions of individual residue chemical shift changes to PC1 and PC2. Residues with |PC1|≥0.15, which are strongly affected by the core assembly-disassembly transition, are annotated in red and indicated as red spheres in the assembled Abl core structure (Figure 3D). While they are distributed to some extent across both SH3 and SH2 domains, residues G104, T136, Y89, and G149 form a notable cluster at the SH3/SH2 interface. This is consistent with the altered environment of residues in this region expected from the disassembly of the regulatory core and the increased interdomain flexibility (Skora et al., 2013). Residues strongly contributing to PC2 (|PC2|≥0.15) are marked in blue in Figure 3C and D. Previously, the largest PC2 score differences of Abl83-534 were observed between the Abl83-534•type I inhibitor complexes and apo Abl83-534 (Sonti et al., 2018). Interestingly, now the truncated apo Abl constructs shift even further away from the type I inhibitor complexes than apo Abl83-534, but show little difference among their different truncation lengths. In contrast to PC1, residues contributing most to PC2 are located either in the upper part of the SH3 domain toward the KD N-lobe or the upper part of the SH2 domain toward the KD αI–αI’ loop (Figure 3D). Both regions are also in direct contact with the KD-SH2 linker (green, Figure 3D). As the affected residues react differently to perturbations by type I inhibitors and truncation of the αI’-helix (Figure 3A, right), we attribute this behavior to two effects intermixed into the PC2 detection: (i) a minor rearrangement of the SH3/KD N-lobe interface caused by filling of the ATP pocket with type I inhibitors, which in contrast to the stronger N-lobe motion induced by type II inhibitors does not yet lead to core disassembly and (ii) a small rearrangement of the SH2/KD C-lobe interface caused by shortening and mutations of the αI-helix.
 
-## Conformational changes within KD and SH2 domain induced by the αI-helix truncation
+### Conformational changes within KD and SH2 domain induced by the αI-helix truncation
 
 The PCA analysis shown in Figure 3 was restricted to the SH3 and SH2 domains and did not include the KD, since the 1H-15N resonances of the former are best suited to monitor the Abl regulatory core assembly-disassembly transition, while not being affected by local changes from ligand binding. An analogous PCA analysis of the 1H-15N KD resonances (164 out of a total of 270 non-proline amino acids) for all investigated Abl constructs and complexes reveals details of these local ligand-induced structural changes as well as of the effects of the αI-helix truncations. Similar to the analysis of the SH2 and SH3 resonances, the PC1/PC2 scores plot of the KD resonances (Figure 4A) clearly separates type I and type II ATP site inhibitor complexes, as well as all forms without any ATP site inhibitor. The respective PC1/PC2 loadings (Figure 4—figure supplement 1A) show that the amino acids, which cause this separation by their pronounced shifts, are distributed across the entire KD. However, effects from the ATP site, allosteric site binding, and the αI-helix truncation are strongly intermixed in this analysis, and specific causes are hard to distinguish.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92324/elife-92324-fig4-v1.jpg)
+
+**Figure 4.:** (A) PCA scores of the KD resonances of all complexes shown in Figure 3B. (B) PCA scores of the KD resonances of only type I and type II inhibitor complexes. The respective loadings are shown in Figure 4—figure supplement 1. (C) Residues with absolute PC1 loadings larger than 0.15 for the analysis in panel B are shown as red spheres in the assembled core structure (PDB 2FO0). The P-loop is shown in orange and the A-loop in its active (green, PDB 2FO0) as well as inactive (magenta, PDB 2HYY Cowan-Jacob et al., 2007) conformation. (D) PCA scores of the resonances of the entire Abl core for the apo forms of all αI-helix variants. The respective loadings are shown in Figure 4—figure supplement 1. (E) Residues with absolute PC1 loadings larger than 0.1 of the analysis in panel D are shown as red spheres in the assembled core structure (PDB 2FO0).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92324/elife-92324-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) PCA of all KD chemical shifts of all investigated complexes corresponding to Figure 4A. (B) PCA of KD chemical shifts for type I and type II inhibitor complexes (Figure 4B and C). Residues with absolute PC1 values larger than 0.15 are indicated in red. (C) PCA of all SH3SH2KD shifts of all apo forms (Figure 4D and E). Residues with sizeable absolute PC1 values larger than 0.1 or sizeable PC2 (< -0.1 or > 0.125) are indicated in red and blue, respectively. V151, N316, and K438 have both sizeable PC1 and PC2 and is shown in magenta.
 
 To separate these effects, two additional PCAs were carried out. The first was restricted to the KD resonances of only type I and type II inhibitor-bound forms (Figure 4B and C). The PC1 scores of this analysis separate the two types of inhibitors in a very clear manner (Figure 4B). The respective PC1 loadings (Figure 4C, Figure 4—figure supplement 1) show that the affected residues are mostly adjacent to the A-loop in its inactive conformation, which is observed in the type II inhibitor-bound crystal structures, as well as adjacent to the nearby P-loop. Thus, these residues evidently feel a force when type II inhibitors bind. This finding corroborates the previously proposed mechanism for type II inhibitor-induced core disassembly (Sonti et al., 2018), namely that type II inhibitors push onto the A-loop and subsequently the P-loop thereby rotating the KD N-lobe toward the SH3 domain and exerting a destabilizing force onto the SH3/KD N-lobe interface.
 
 A further PCA was calculated on all observed SH3-SH2-KD resonances of all apo forms (Figure 4D and E). This analysis of the entire apo SH3-SH2-KD protein is meaningful, since the KD resonances are not dominated by the strong effects of ATP site binders. The PC1 scores (Figure 4D) separate wild-type apo Abl83-534 from all the truncated Abl apo forms (Abl83-515, Abl83-517, Abl83-519) and the Abl83-534,E528K mutant. The respective PC1 loadings of significant size (Figure 4E, Figure 4—figure supplement 1 |PC1|>0.1) are mostly from amino acids in the vicinity of the αI-helix and myristoyl pocket, indicating localized structural changes in this region due to the mutations of the αI-helix.
 
-## The αI-helix contributes directly to Abl activation
+### The αI-helix contributes directly to Abl activation
 
 The NMR data show that the αI-helix plays a crucial role in the imatinib-induced Abl core disassembly and exerts forces onto the SH2-SH3 to KD interface. To quantify the role of the αI-helix in the regulation of Abl, we assayed the kinase activity of the different truncation constructs in vitro using the optimized Abltide peptide substrate (Figure 5A and B, Table 1). Indeed, the stepwise truncation of the αI-helix continuously decreased the Michaelis-Menten vmax (Figure 5A and B) for the different helix lengths reaching a minimum of 3.2 nmol Pi min–1μmol–1 for Abl83-515, which is about 30 times smaller than the wild-type Abl83-534 value (89.4 nmol Pi min–1μmol–1). In contrast, the substrate dissociation constant KM remained almost constant within the error limits (~40–90 μM). The reduction of the enzymatic activity by the αI truncations is consistent with the notion that a shorter αI-helix favors the assembled conformation of the Abl regulatory core, thereby hindering ‘breathing’ motions between the KD N- and C-lobes and impeding substrate binding. Conversely, the full-length αI-helix exerts forces onto the SH3-SH2 interface that either increase KD N-/KD C-lobes hinge motions or lead to complete core disassembly, thereby increasing the enzymatic activity.
 
@@ -77,11 +85,60 @@ The NMR data show that the αI-helix plays a crucial role in the imatinib-induce
 
 **Figure 5.:** (A) Specific kinase activity of Abl83-534, E528K (orange), Abl83-534 (red), Abl83-519 (light blue), Abl83-517 (green), Abl83-515 (magenta), and Abl83-534•asciminib (asc, blue). Sample sizes and statistical information are given in Table 1. (B) Bar plot of fitted Michaelis-Menten vmax values derived from the kinase assays in panel A. Numerical values are given in Table 1. (C) Detailed view of the E528-R479 salt bridge in the structure of the assembled Abl core (PDB 2FO0). Distances between the E528 carboxylate oxygens and the guanidinium sidechain hydrogen of R479 as well as the backbone amide hydrogen of E485 are displayed as dashed lines and indicated in Angstrom. (D) Superpositions of the 1H-15N TROSY resonances of V130, T136, and G149 for apo Abl83-534,wt (red), apo Abl83-534,E528K (orange), Abl83-534,wt•imatinib (blue), and Abl83-534,E528K•imatinib (magenta) showing the increased imatinib-induced core disassembly of the Abl83-534,E528K mutant.
 
-## Glutamate 528 is a crucial stabilizer for the autoinhibited conformation
+**Table 1.**
+ Michaelis-Menten parameters* for the various Abl helix constructs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Abl83-534</th>
+      <th>Abl83-519</th>
+      <th>Abl83-517</th>
+      <th>Abl83-515</th>
+      <th>Abl83-534•asciminib</th>
+      <th>Abl83-534,E528K</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>vmax†</td>
+      <td>89.4±6.7</td>
+      <td>79.5±15.4</td>
+      <td>56.8±13.3</td>
+      <td>3.2±0.2</td>
+      <td>61.9±11.8</td>
+      <td>201.7±16.0</td>
+    </tr>
+    <tr>
+      <td>KM‡</td>
+      <td>51.8±8.8</td>
+      <td>91.4±30.9</td>
+      <td>74.8±35.7</td>
+      <td>39.5±9.0</td>
+      <td>336.7±80.3</td>
+      <td>71.6±12.3</td>
+    </tr>
+    <tr>
+      <td>N§</td>
+      <td>8</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*the Michaelis-Menten parameters and their errors were obtained by Monte Carlo fitting using the sample mean and standard error of the mean of the measured kinase activities shown in Figure 5A.†in nmol Pi min–1μmol–1, where Pi is the transferred phosphate.‡in μM.§total number of activity assay experiments._
+
+### Glutamate 528 is a crucial stabilizer for the autoinhibited conformation
 
 The E528K mutation, located toward the end of helix αI’, has been found in patients with the recently described ABL1 malformation syndrome (Blakes et al., 2021). An inspection of the assembled Abl core structure reveals a potential salt bridge between E528 and R479 in the KD C-lobe adjacent to the myristoyl pocket (Figure 5C). The malignant E528K mutation is expected to disrupt this salt bridge. We speculated that this salt bridge may be a stabilizing element, which restricts the αI’ motion and prevents forces toward the SH2 domain that could lead to core disassembly and higher activity. Albeit we could not study the effect of the αI’-helix length beyond residue 519 due to the instability of the respective truncation mutants, it was possible to express the Abl83-534,E528K mutant. Indeed, the chemical shifts of the Abl83-534,E528K SH2 and SH3 domains show that this mutant is more disassembled upon imatinib binding than Abl83-534 (Figures 3B and 5D). In addition, the kinase activity (vmax) of the Abl83-534,E528K mutant was increased more than two-fold relative to Abl83-534, while KM remained unaffected (Figure 5A and B, Table 1). Thus, as expected, the disruption of the E528-R479 salt bridge significantly increases both Abl’s enzymatic activity as well as the tendency for Abl core disassembly.
 
-## Correlation between imatinib-induced Abl core disassembly, apo conformation, and apo kinase activity
+### Correlation between imatinib-induced Abl core disassembly, apo conformation, and apo kinase activity
 
 It is striking that for all investigated αI-helix mutants, the kinase activity and the tendency of imatinib to open the assembled core correlate. This can be quantified by comparing the vmax of these various Abl mutants and the respective principal component 1 (PC1) score of the SH2/SH3 domain chemical shifts in their imatinib-bound forms, which is a measure of the core disassembly (Figure 3B). Indeed, the correlation between vmax and the PC1 score is highly significant with a Pearson r of 0.89 (Figure 6A). Thus, the imatinib-induced core disassembly and the activating motions required for kinase activity seem to be controlled by a common mechanism, which originates at the αI-helix. A thorough inspection of the PCA results for all SH3SH2KD resonances of the apo αI-helix mutants (Figure 4D) revealed that its PC2 score also follows the kinase activity. A quantitative correlation revealed a highly significant Pearson r of 0.98 between this PC2 score and vmax (Figure 6B). Thus, the chemical shift changes captured by the PC2 of the apo αI mutants report structural variations which are related to the changes in the kinase activity. The strongest respective chemical shift changes (according to the PC2 loadings, Figure 6E) occur at the interface of the SH2 domain (V151, L160, E187, V190, R194, L228) with the KD C-lobe and in the vicinity of the αI N-terminal end (N316, I437, K438). Clearly, as both NMR resonance PC scores (PC1 imatinib-bound forms and PC2 apo forms) correlate to the kinase vmax, they must also correlate to each other, and a respective high Pearson r of 0.94 is observed (Figure 6C). Taken together, these results show that the truncations and mutations of the αI-helix exert forces from the αI-helix onto the SH2 domain, which modulate both the kinase activity and the imatinib-induced opening of the core.
 
@@ -91,7 +148,7 @@ It is striking that for all investigated αI-helix mutants, the kinase activity 
 
 To obtain more insights into these forces we carefully compared the assembled core (myristoylated and in complex with the type I inhibitor PD166326) structure with the bent αI-helix and the isolated Abl kinase domain (in complex with the type I inhibitor PD173955) structure with the straight αI-helix (Figure 6F). A superposition reveals that steric clashes of the straight αI-helix with the SH2 domain are mostly expected for residues F516, Q517, S520, and I521 residing in the αI–αI’ loop. In the assembled core structure, these residues are within van-der-Waals distance of several SH2 residues, for which no well-resolved resonances could be detected in the NMR spectra (yellow residues in Figure 6F). However, the latter are in direct contact with the SH2 residues previously identified as having the strongest chemical shift PC2 loadings caused by the mutations of the αI-helix (red residues in Figure 6E and F). These results establish that the most significant part of the forces from the αI-helix onto the SH2 domain is transmitted from the αI–αI’ loop toward a region on the SH2 surface, which is centered around residue V190.
 
-## Mechanics of Abl kinase regulation by the αI’-helix
+### Mechanics of Abl kinase regulation by the αI’-helix
 
 Based on the current data we can refine our previous mechanical model of Abl regulation (Sonti et al., 2018), which is based on the assumption that a disassembled regulatory core is necessary for high activity (Figure 7). Two main mechanical forces drive the opening of the core: FKD–N,SH3 acts between the KD N-lobe and the SH3 domain and FαI,SH2 acts between the αI-helix and the SH2 domain.
 
@@ -105,7 +162,7 @@ When type II, but not type I inhibitors bind to the ATP pocket, they exert press
 
 The data of the various truncations and mutations of the αI’-helix provide the following detailed picture of its role in Abl activation (Figure 7C). In wild-type apo Abl83-534, the αI’-helix motion is apparently restricted by the E528-R479 salt bridge. This is evident from the fact that the disruption of the salt bridge in the Abl83-534,E528K mutant leads to strongly increased activity (Figure 5A) and a stronger core disassembly by imatinib (Figures 3B, 5D and 6A). Both effects can be explained by an increased force FαI,SH2 acting onto the SH2 domain, which is evident by the increased PC2 score of apo Abl83-534,E528K‍ (Figures 4D and 6B). Nevertheless, also the αI-helix of wild-type apo Abl83-534 exerts a force FαI,SH2 onto the SH2 domain. The latter is reduced in the presence of certain myristoyl pocket binders such as asciminib, which change the αI-αI’ loop conformation and lock the αI’-helix onto the KD C-lobe. The FαI,SH2 force of the wild-type αI-helix apparently does not mainly originate from its αI’ part, since the truncation Abl83-519 has no strong effect. It neither significantly reduces the imatinib-induced core disassembly, nor the apo activity, nor the apo PC2 score, that is the force FαI,SH2 (Figure 6A and B). However, the further truncation Abl83-515, which removes the αI-αI’ loop, abolishes the kinase activity almost completely (Figure 5A and B) and strongly decreases the FαI,SH2 force as well as the imatinib-induced core disassembly (Figure 6A and B). This indicates that the αI helix of wild-type Abl mainly exerts the FαI,SH2 force onto the SH2 domain via the αI-αI’ loop. The αI-αI’ loop is flexible to a certain extent since various conformations are observed in the presence and absence of myristoyl pocket binders. Presumably, the FαI,SH2 force is exerted by steric clashes of some members from the conformational ensemble of the flexible loop.
 
-## Conclusion
+### Conclusion
 
 The allosteric connection between Abl ATP site and myristate site inhibitor binding has been noted before, albeit specific settings such as construct boundaries and the control of phosphorylation vary in published experiments. Positive and negative binding cooperativity of certain ATP-pocket and allosteric inhibitors has been observed in cellular assays and in vitro (Kim et al., 2023; Zhang et al., 2010). Furthermore, hydrogen exchange mass spectrometry has indicated changes around the unliganded ATP pocket upon binding of the allosteric inhibitor GNF-5 (Zhang et al., 2010). Here, we present a detailed high-resolution explanation of these allosteric effects via a mechanical connection between the kinase domain N- and C-lobes that is mediated by the regulatory SH2 and SH3 domains and involves the αI helix as a crucial element.
 
@@ -119,21 +176,227 @@ Notably, the used regulatory core construct Abl83-534 lacks the myristoylated N-
 
 ## Materials and methods
 
-## Abl constructs, expression, and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Human)</td>
+      <td>Abl</td>
+      <td>Uniprot</td>
+      <td>P00519-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Escherichia phage lambda)</td>
+      <td>Lambda phosphatase; LPP</td>
+      <td>Uniprot</td>
+      <td>P03772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0014</td>
+      <td>Chemical competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid containing human Abl83-534</td>
+      <td>Skora et al., 2013DOI:10.1073/pnas.1314712110</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid containing Lambda phosphatase</td>
+      <td>Sonti et al., 2018DOI:10.1021/jacs.7b12430</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Conjugated poly-histidine antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# A7058</td>
+      <td>Mouse monoclonal (1:10000); peroxidase conjugate</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Abltide</td>
+      <td>ProteoGenix</td>
+      <td></td>
+      <td>biotin-GGEAIYAAPFKK</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SAM2 Biotin Capture Membrane</td>
+      <td>Promega</td>
+      <td>Cat.# V2861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Asciminib; asci</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S8555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNF-5</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S7526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMP-PNP</td>
+      <td>Roche</td>
+      <td>Cat.# 10102547001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bosutinib; bosu</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Axitinib; axit</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dasatinib; dasa</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Danusertib; danu</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tozasertib; toza</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine; staur</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD180970</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# PZ0142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD166326</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# PZ0366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rebastinib; reba</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S2634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ponatinib; pona</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nilotinib; nilo</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafetinib; bafe</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S1369</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imatinib; ima</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat.# S2475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRPipe</td>
+      <td>Delaglio et al., 1995DOI:10.1007/bf00197809</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPARKY</td>
+      <td>Lee et al., 2015DOI:10.1093/bioinformatics/btu830</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NumPy</td>
+      <td>Harris et al., 2020DOI:10.1038/s41586-020-2649-2</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Abl constructs, expression, and purification
 
 To generate the various Abl αI-helix mutant constructs (Abl83-513, Abl83-514, Abl83-515, Abl83-516, Abl83-‍517, Abl83‍-‍518, Abl83-519, and Abl83-534,E528K, Abl 1b numbering), stop (TAG) or lysine (AAG) codons were introduced at the respective positions by site-directed QuikChange mutagenesis into the plasmid containing human Abl83-534, which was described earlier (Skora et al., 2013). For the initial expression and solubility tests, all Abl constructs were co-expressed with lambda phosphatase (LPP; to obtain dephosphorylated Abl) as described earlier (Sonti et al., 2018) in 25 mL LB medium. After harvesting, cells were resuspended in 1 mL lysis buffer, sonicated, centrifuged and the supernatant collected for western blot analysis with a conjugated poly-histidine antibody (Sigma Aldrich, Cat.No. A7058).
 
 All Abl constructs used for NMR experiments were co-expressed with LPP in 15N-labeled M9 minimal medium as described (Sonti et al., 2018). The cell lysate was cleared by centrifugation at 30,000 × g, loaded onto a His-Trap column (GE Healthcare), and eluted by applying a linear imidazole gradient from 20 mM to 200 mM over 30 column volumes. Abl83-534 was then purified using an ion exchange Q-sepharose HP (GE Healthcare) column equilibrated with 20 mM Tris-HCl, 20 mM NaCl, 2 mM TCEP, 5% glycerol, pH 8.0 (ion exchange buffer). The truncated Abl mutants did not bind to either ion exchange Q- or S-sepharose HP (GE Healthcare) columns in ion exchange buffer. However, using the Q-sepharose HP column helped to remove impurities and the respective Abl constructs were collected in the flow through. In vitro LPP treatment was then applied as described (Sonti et al., 2018) in cases where the Abl construct was not fully dephosphorylated as indicated by the elution profile and confirmed by electron-spray ionization (ESI) time-of-flight (TOF) mass spectrometry (MS). All Abl constructs were then further purified by size exclusion chromatography as described (Sonti et al., 2018). Final samples were validated by ESI-TOF MS for correct protein mass and absence of contaminations by other proteins.
 
-## NMR spectroscopy
+### NMR spectroscopy
 
 As in previous studies (Skora et al., 2013; Sonti et al., 2018), the isotope-labeled SH3-SH2-KD Abl constructs were concentrated to 25–100 µM in 20 mM Tris·HCl, 100 mM NaCl, 2 mM EDTA, 2 mM TCEP, 0.02% NaN3, 95% H2O/5% D2O, pH 8.0. Ligands pre-dissolved in DMSO (stock concentration 50 mM) were added at a molar ratio of 3:1 (ligand:protein). All NMR experiments were performed at 303 K on a Bruker AVANCE 900-MHz spectrometer equipped with a TCI triple resonance cryo-probe. 1H-15N TROSY experiments were recorded with 224 (15N)×1024 (1H) complex points and acquisition times of ~40 ms in both dimensions. All NMR data were processed with the NMRpipe software package (Delaglio et al., 1995). Spectra were displayed and analyzed with the program SPARKY (Lee et al., 2015). The principal component analysis (PCA) of chemical shift variations was carried out using NumPy (Harris et al., 2020).
 
-## PDB structure analysis
+### PDB structure analysis
 
 PDB structures were displayed using the PyMOL Molecular Graphics System (Schrödinger, LLC).
 
-## Activity assays
+### Activity assays
 
 A biotinylated form of the optimized Abl substrate Abltide (biotin-GGEAIYAAPFKK, obtained from ProteoGenix, France) was incubated in concentrations ranging from 3.125 µM to 200 µM together with 0.1 ng/μl of the respective Abl construct, 100 μM ATP and 5 μCi γ-32P-ATP in 20 μl kinase assay buffer (20 mM Tris-HCl, 5 mM MgCl2, 1 mM DTT, 10 μM bovine serum albumin, pH 7.5) for 12 min at room temperature. The reaction was terminated by adding 10 μl 7.5 M guanidine hydrochloride. Eight μl of the terminated reaction mixture were then applied to a streptavidin biotin capture membrane (SAM2, Promega, Cat.# V2861) and further treated following the manufacturer’s recommendations. After a short (~1 min) drying phase, the membrane was washed consecutively 30 s with 2 M NaCl, 3×2 min with 2 M NaCl, 4×2 min with 2 M NaCl +1% H3PO4, 2×30 s with deionized water, and finally rinsed with ethanol.
 

@@ -45,9 +45,17 @@ All together our results demonstrate that early visual deprivation triggers an e
 
 ## Results
 
-## Topographical selectivity map
+### Topographical selectivity map
 
 Figure 1B represents the topographical selectivity maps, which show the voxel-wise preferred stimulus condition based on a winner take-all approach (for the four main categories: animals, humans, small objects and places). In the visual modality, we found the well-known functional selectivity map for visual categories (Julian et al., 2012; Kanwisher, 2010). The auditory selectivity maps of the blind subjects partially matched the visual map obtained in sighted controls during vision (r = 0.19, pFDR <0.001). The blind map and the visual control map are strongly correlated.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig1-v2.jpg)
+
+**Figure 1.:** (A) Categories of stimuli and design of the visual (VIS) and auditory (AUD) fMRI experiments. (B) Averaged untresholded topographical selectivity maps for the sighted-visual (top), the blind-auditory (center) and the sighted-auditory (bottom) participants. These maps visualize the functional topography of VOTC to the main four categories in each group. These group maps are created for visualization purpose only since statistics are run from single subject maps (see methods). To obtain those group maps, we first averaged the β-values among participants of the same group in each voxel inside the VOTC mask for each of our 4 main conditions (animals, humans, manipulable objects and places) separately and we then assign to each voxel the condition producing the highest β-value. We decided to represent maps including the 4 main categories (instead of 8) to simplify visualization of the main effects (the correlation values are almost identical with 8 categories and those maps can be found in supplemental material).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The averaged untresholded topographical selectivity maps for the sighted-visual (top), the blind-auditory (center) and the sighted-auditory (bottom) participants. These maps visualize the functional topography of VOTC to the eight sub-categories. The average correlation between each group comparison is reported.
 
 In addition, a similar selectivity map was also observed in the sighted controls using sounds. The correlation was significant both with visual map in sighted (r = 0.14, pFDR <0.001), and with the auditory map in blinds (r = 0.06, pFDR = 0.001). The correlation between EBa and SCa was significantly lower than both the correlation between SCv and EBa (pFDR. = 0.0003) and the correlation between SCv and SCa (pFDR = 0.0004). Instead, the magnitude of correlation between EBa and SCv was not significantly different from the correlation between SCa and SCv (pFDR = 0.233).
 
@@ -57,13 +65,21 @@ In order to look at the consistency of the topographical representation of the c
 
 In addition, we wanted to explore the similarity and differences among the topographical representations of our categories when they were presented visually compared to when they were presented acoustically, both in sighted and in blind. To do that, we computed the Jaccard similarity index for each category, between the topographical map of each blind and sighted subject in the auditory experiment and the averaged topographical selectivity map of the sighted in the visual experiment (see Figure 2C for the results). The one-sample T-tests revealed a significant similarity between EBa and SCv and between SCa and SCv in each category (pFDR <0.001 in all cases). The repeated measures ANOVA highlighted a significant main effect of Category (F(2.2,69.8) = 31.17, p<0.001). In both groups’ comparisons the Jaccard similarity was higher between the big objects and places category compared to the other three categories (animal: p<0.001; human: p<0.001; manipulable: p<0.001).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig2-v2.jpg)
+
+**Figure 2.:** (A) Number of selective voxels for each category in each group, within VOTC. Each circle represents one subject, the colored horizontal lines represent the group average and the vertical black bars are the standard error of the mean across subjects. (B) The Jaccard similarities values within each group, for each of the four categories. (C) The Jaccard similarity indices between the EBa and the SCv groups (left side) and the Jaccard similarity indices between the SCa and the SCv groups (right side).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Results on the eight sub-categories from the selective voxels’ count for each category (first line); from the Jaccard similarity analysis within each group (middle line); from the Jaccard similarity with SCv (bottom line). Each circle represents one subject, the colored horizontal line represents the group mean and the black vertical bars represent the standard error of the mean across subjects.
+
 No difference emerged between groups, suggesting comparable level of similarity of the auditory topographical maps (both in blind and in sighted) with the visual topographical map in sighted participants.
 
 Finally, since the degree of overlap highlighted by the Jaccard similarity values might be driven by the number of voxels selective for each category, we looked at the number of voxels showing the preference for each category in each group. The one sample T-test revealed a significant number of selective voxels in each category and in each group (in all cases p<0.001, after FDR correction for the 12 comparisons: 3 groups * 4 categories). We performed a repeated measure ANOVA to look at the differences between categories and groups. In SCv we found that a smaller number of voxels shows selectivity for the human category compared to the others (human vs animal: t(15)=-3.27; pFDR = 0.03; human vs manipulable: t(15)=2.60; pFDR = 0.08; human vs big: t(15)=-4.16; pFDR = 0.01). In EBa, instead, there is a lower number of voxels preferring animals compare to non-living categories (animals vs manipulable: t(15)=-2.47; pFDR = 0.09; animals vs big: t(15)=-3.22; pFDR = 0.03). Finally, in SCa the number of voxels selective for the big and place category was significantly higher than the number of voxels selective for the manipulable category (t(16)=3.27; pFDR = 0.03). Importantly, when we look at the difference between the 3 groups for each category, the main difference emerged from the animal category. In this category, the ANOVA revealed a main effect of group (F(2,46)=3.91; p=0.03). The post hoc comparisons revealed that this difference was mainly driven by the reduced number of voxels selective for the animal category in EBa compared to SCv (p=0.02).
 
 For the results of the same analysis on the 8 different categories see also Figure 1—figure supplement 1 and Figure 2—figure supplement 1.
 
-## Binary MVP classification
+### Binary MVP classification
 
 Figure 3B represents the results from the average binary classification analyses for each group and every ROI (FDR corrected). In SCv and in EBa the averaged decoding accuracy was significantly higher than chance level in both EVC (SCv: DA = 69%; t(15)=6.69, pFDR <0.00001; EBa: DA = 55%; t(15)=4.48, pFDR = 0.0006) and VOTC (SCv: DA = 71%; t(15)=7.37, pFDR <0.00001; EBa: DA = 57%; t(15)=8.00, pFDR <0.0001). In the SCa the averaged decoding accuracy was significantly higher than the chance level in VOTC (DA = 54%; t(16)=4.32, pFDR = 0.0006) but not in EVC (DA = 51%; t(16)=1.70, pFDR = 0.11). Moreover, independent sample t-tests revealed higher decoding accuracy values in EBa when compared to SCa in both EVC (t(31)=2.52, pFDR = 0.017) and VOTC (t(31)=2.08, pFDR = 0.046).
 
@@ -77,7 +93,7 @@ Results from each binary classification analysis (n = 28) for each group are r
 
 **Figure 4.:** (A1 and B1) Binary decoding bar plots. For each group (SCv: top; EBa: center; SCa: bottom) the decoding accuracy from the 28 binary decoding analyses are represented. Each column represents the decoding accuracy value coming from the classification analysis between 2 categories. The 2 dots under each column represent the 2 categories. (A2 and B2) The 28 decoding accuracy values are represented in the form of a dissimilarity matrix. Each column and each row of the matrix represent one category. In each square there is the accuracy value coming from the classification analysis of 2 categories. Blue color means low decoding accuracy values and yellow color means high decoding accuracy values. (A3 and B3) Binary decoding multidimensional scaling (MDS). The categories have been arranged such that their pairwise distances approximately reflect response pattern similarities (dissimilarity measure: accuracy values). Categories placed close together were based on low decoding accuracy values (similar response patterns). Categories arranged far apart generated high decoding accuracy values (different response patterns). The arrangement is unsupervised: it does not presuppose any categorical structure (Kriegeskorte et al., 2008b). (A4 and B4) Binary decoding dendrogram. We performed hierarchical cluster analysis (based on the accuracy values) to assess if EVC (A4) and VOTC (B4) response patterns form clusters corresponding to natural categories in the 3 groups (SCv: top; EBa: center; SCa: bottom).
 
-## RSA: Correlation between the neural dissimilarity matrices of the 3 groups
+### RSA: Correlation between the neural dissimilarity matrices of the 3 groups
 
 We used the accuracy values from the binary classifications to build neural dissimilarity matrices for each subject in EVC (Figure 4 - Panel A2) and in VOTC (Figure 4 - Panel B2). Then, in every ROI we computed the correlations between DSMs for each groups’ pair (i.e. SCv-EBa; SCv-SCa; EBa-SCa).
 
@@ -85,15 +101,31 @@ In EVC, the permutation test revealed a significant positive correlation only be
 
 In VOTC, we observed a significant correlation for all the groups’ pairs: SCv and EBa (r = 0.34; pFDR = 0.0002), SCv and SCa (r = 0.1; pFDR = 0.002), SCa and EBa (r = 0.1; pFDR = 0.002). Moreover, the correlation between SCv and EBa was significantly higher compared to both the correlation between SCv and SCa (corr. diff = 0.25; pFDR = 0.008) and the correlation between SCa and EBa (corr. diff = 0.25; pFDR = 0.008).
 
-## Hierarchical clustering analysis on the brain categorical representation
+### Hierarchical clustering analysis on the brain categorical representation
 
 We implemented this analysis to go beyond the magnitude of correlation values and to qualitatively explore the representational structure of our ROIs in the 3 groups. Using this analysis, we can see which categories are clustered together in the brain representations according to a specified n number of clusters (see Figure 5 for detailed results). In VOTC the most striking results are related to the way the animal category is represented in the EBa group compared to the SCv. In fact, when the hierarchical clustering was stopped at 2 clusters in SCv, we observed a clear living vs non-living distinction. In EBa, instead, the division was between humans and non-humans (including all the non-living categories plus the animals). When the clusters are 3, we see in SCv a separation into (1) non-living; (2) human; (3) animals. In EBa, instead, the animals keep in being clustered with non-living, in a way that the 3 clusters are: (1) Non-living and animals; (2) Human vocalization voices; (3) Human non-vocalization voices. In the case of the 4 clusters, in both SCv and EBa the additional 4th cluster is represented by the manipulable-tools category, while in the EBa the animals remain with the rest of the non-living categories. In the VOTC of SCa group, the structure of the categorical representation is less straightforward, despite the significant correlation with the DSMs of SCv. For example, we cannot clearly discern the distinction into living/non-living, or into humans and animals. However, there are some specific categories such as manipulable-graspable objects, human vocalizations and environmental sounds that show a segregated representation from the others. When we observe the clustering in EVC, we see that there is not a clear categorical clustering in this ROI in none of the groups, with the exception of the SCv in which the human stimuli tend to cluster together.
 
 Finally, the clustering analysis on the behavioral data (see Figure 5) revealed a very similar way of clustering the categories in the 2 groups of sighted that in the 4 clusters step show exactly the same structure: (1) Animate categories including animals and humans; (2) Manipulable Objects; (3) Big mechanical objects; (4) Big Environmental category. In the EBa, instead, we find a different clustering structure with the animal and the human categories being separated.
 
-## RSA: correlation with representational low-level/behavioral models
+![Figure 5.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig5-v2.jpg)
+
+**Figure 5.:** Hierarchical clustering on the dissimilarity matrices extracted from EVC (left) and VOTC (right) in the three groups. The clustering was repeated three times for each DSM, stopping it at 2, 3 and 4 clusters, respectively. This allows to compare the similarities and the differences of the clusters at the different steps across the groups. In the figure each cluster is represented in a different color. The first line represents 2 clusters (green and red); the second line represents 3 clusters (green, red and pink); finally, the third line represents 4 clusters (green, red, pink and light blue).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Hierarchical clustering on the dissimilarity matrices built from the behavioral ratings. The clustering was repeated three times for each DSM, stopping it at 2, 3 and 4 clusters, respectively. This allows to compare the similarities and the differences of the clusters at the different steps across the groups. In the figure each cluster is represented in a different color. The first line represents 2 clusters (green and red); the second line represents 3 clusters (green, red and pink); finally the third line represents 4 clusters (green, red, pink and light blue).
+
+### RSA: correlation with representational low-level/behavioral models
 
 In a behavioral session following the fMRI session, we asked our participants to rate each possible pair of stimuli in the experiment they took part in (either visual or acoustic) and we built three dissimilarity matrices based on their judgments. A visual exploration of the ratings using the dissimilarity matrix visualization revealed a clustering of the stimuli into a main living/non-living distinction, with some sub-clustering such as humans, animals and objects (Figure 6A). The three DSMs were highly correlated (SCa/EBa: r = 0.85, p<0.001; SCa/SCv: r = 0.95, p<0.001; EBa/SCv: r = 0.89, p<0.001), revealing a similar way to group the stimuli across the three groups following mostly a categorical strategy to classify the stimuli. Based on this observation, we used the behavioral matrices as a categorical/high-level model to contrast with the low-level models built on the physical properties of the stimuli (HmaxC1 and pitch models, Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig6-v2.jpg)
+
+**Figure 6.:** (A) In each ROI we computed the brain dissimilarity matrix (DSM) in every subject based on binary decoding of our 8 different categories. In the visual experiment (left) we computed the partial correlation between each subject’s brain DSM and the behavioral DSM from the same group (SCv-Behav.) regressing out the shared correlation with the HmaxC1 model, and vice versa. In the auditory experiment (right) we computed the partial correlation between each subject’s brain DSM (in both Early Blind and Sighted Controls) and the behavioral DSM from the own group (either EBa-Behav. or SCa-Behav.) regressing out the shared correlation with the pitch model, and vice versa. (B) Results from the Spearman’s correlation between representational low-level/behavioral models and brain DSMs from both EVC and VOTC. On the left are the results from the visual experiment. Dark green: partial correlation between SCv brain DSM and behavioral model; Light green: Partial correlation between SCv brain DSM and HmaxC1 model. On the right are the results from the auditory experiment in both early blind (EBa) and sighted controls (SCa). Orange: partial correlation between EBa brain DSM and behavioral model; Yellow: Partial correlation between EBa brain DSM and pitch model. Dark blue: partial correlation between SCa brain DSM and behavioral model; Light blue: partial correlation between SCa brain DSM and pitch model. For each ROI and group, the gray background bar represents the reliability of the correlational patterns, which provides an approximate upper bound of the observable correlations between representational low-level/behavioral models and neural data (Bracci and Op de Beeck, 2016; Nili et al., 2014). Error bars indicate SEM. ***p<0.001, **p<.005, *p<0.05. P values are FDR corrected.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50732/elife-50732-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** To select the auditory model we tested different low-level acoustic models on the sighted participants that took part in the auditory experiment. The following models were tested: pitch; harmonicity to noise ratio (HNR); spectral centroid (S.Cent.); the voice frequency band (between 500–2500 Hz) and the sound energy per unit of time (envelope). We extracted these values from our 24 auditory stimuli and we built 5 dissimilarity matrices (DSM) each one based on one acoustic feature. Then, we extracted the brain dissimilarity matrix (1-Pearson’s correlation between each pattern of activity) from the auditory cortex of each sighted subject that took part in the auditory experiment. Here is represented the second-order correlation between each acoustic model and the brain DSMs, ranked from the highest to the lowest (left to right). Since pitch resulted the most represented model in the auditory cortex of sighted participants, we selected this acoustic model to run further analyses in the experiment.
 
 In order to better understand the representational content of VOTC and EVC, we computed second-order partial correlations between each ROI’s DSM and our representational models (i.e. behavioral and low-level DSMs) for each participant. Figure 6B represents the results for the correlations between the brain DSMs in the 3 groups and the representational low-level/behavioral models DSMs (i.e. behavioral, pitch and Hmax-C1 DSMs).
 
@@ -103,7 +135,7 @@ In the EBa and SCa groups, EVC’s DSMs were not significantly correlated with n
 
 For completeness of results, we report here also the correlation results before regressing out the partial correlation of the behavioral/low-level models from each other. In ECV, the mean correlation with the behavioral model was: r = 0.2 in SCv, r = 0.02 in EBa and r=–0.07 in SCa. In ECV, the mean correlation with the low level/model was: r = 0.21 in SCv (HmaxC1), r=–0.09 in EBa (pitch) and r = –0.06 in SCa (pitch). In VOTC, the mean correlation with the behavioral model was: r = 0.42 in SCv, r = 0.12 in EBa and r = 0.04 in SCa. In VOTC, the mean correlation with the low level/model was: r = 0.15 in SCv (HmaxC1), r = –0.08 in EBa (pitch) and r = 0.005 in SCa (pitch).
 
-## RSA: Inter-subjects correlation
+### RSA: Inter-subjects correlation
 
 We run this analysis to understand how variable was the brain representation in VOTC across subjects belonging either to the same group or to different groups. Since we have 3 groups, this analysis resulted in 6 different correlation values: 3 values for the 3 within group correlation conditions (SCv; EBa; SCa) and 3 values for the 3 between groups correlation conditions (i.e. SCv-EBa; SCv-SCa; EBa-SCa). Results are represented in Figure 7.
 
@@ -113,7 +145,7 @@ We run this analysis to understand how variable was the brain representation in 
 
 The permutation test revealed that the correlation between subjects’ DSMs in the within group condition was significant in SCv (r = 0.42; pFDR <0.001) and EBa (r = 0.10; pFDR <0.001), whereas it was not significant in SCa (r = –.03; pFDR = 0.98). Moreover, the correlation between subjects’ DSMs was significant in all the three between groups conditions (SCv-EBa: r = 0.17, pFDR <0.001; SCv-SCa: r = 0.04, pFDR = 0.002; EBa-SCa: r = 0.02; pFDR = 0.04). When we ranked the correlations values (Figure 7) we observed that the highest inter-subject correlation is the within SCv group condition, which was significantly higher compared to all the other five conditions. It was followed by inter-subject correlation between SCv and EBa group and the within EBa group correlation. Interestingly, both the between groups SCv-EBa and the within group EBa correlations were significantly higher compared to the last 3 inter-subjects correlation’s values (between SCv-SCa; between EBa-SCa; within SCa).
 
-## Representational connectivity analysis
+### Representational connectivity analysis
 
 Figure 8 represents the results from the representational connectivity analysis in VOTC. The permutation analysis highlighted that the representational connectivity profile of VOTC with the rest of the brain is significantly correlated between all pairs of groups (SCv-EBa: mean r = 0.18, pFDR = 0.001; SCv-SCa: mean r = 0.14, pFDR <0.001; EBa-SCa: mean r = 0.16, pFDR <0.001), and with no difference between groups’ pairs.
 
@@ -151,11 +183,11 @@ A different profile emerged from EVC. First, sound categories could be decoded i
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Thirty-four participants completed the auditory version of the fMRI study: 17 early blinds (EBa; 10F) and 17 sighted controls (SCa; 6F). An additional group of 16 sighted participants (SCv; 8F) performed the visual version of the fMRI experiment. All the blind participants lost sight at birth or before 4 years of age and all of them reported not having visual memories and never used vision functionally (see Supplementary file 1). The three groups were age (range 20–67 years, mean ± SD: 33.29 ± 10.24 for EBa subjects, respectively 23–63, 34.12 ± 8.69 for SCa subjects, and 23–51, 30.88 ± 7.24 for SCv subjects) and gender (χ2 (2,50)=1.92, p=0.38) matched. One blind subject performed only 2 out of the 5 runs in the fMRI due to claustrophobia; because of that we excluded his data. All subjects were blindfolded during the auditory task and were instructed to keep the eyes closed during the entire duration of the experiment. Participants received monetary compensation for their participation. The ethical committee of the University of Trento approved this study (protocol 2014–007) and participants gave their informed consent before participation.
 
-## Stimuli
+### Stimuli
 
 We decided to use sounds and images, instead of words, because we wanted to access and model the bottom-up cascade of sensory processing starting from the low-level sensory processing up to the more conceptual level. This methodological decision was crucial in order to assess what level of sound representation is implemented in VOTC of blind and sighted individuals.
 
@@ -165,15 +197,15 @@ The final acoustic stimulus set included 24 sounds from 8 different categories (
 
 We created a visual version of the stimuli set. The images for the visual experiment were colored pictures collected from Internet and edited using GIMP (https://www.gimp.org). Images were placed on a gray (129 RGB) 400 × 400 pixels background.
 
-## Procedure
+### Procedure
 
 The experimental session was divided into two parts: first the subjects underwent the fMRI experiment and then they performed a behavioral rating judgment task on the same stimuli used in the fMRI experiment.
 
-## Similarity rating
+### Similarity rating
 
 The behavioral experiment aimed to create individual behavioral dissimilarity matrices to understand how the participants perceived the similarity of our stimulus space. Due to practical constraints, only a subset of our participants underwent the behavioral experiment (15 EBa, 11 SCa, and 9 SCv). We created each possible pair from the 24 stimuli set leading to a total of 276 pairs of stimuli. In the auditory experiment, participants heard each sound of a pair sequentially and were asked to judge from 1 to 7 how similar the two stimuli producing these sounds were. In the visual experiment, we presented each pair of stimuli on a screen to the participants and we asked them to judge from 1 to 7 how similar the two stimuli were. Since their rating was strongly based on the categorical features of the stimuli, we used the data from the behavioral experiment to build the categorical models for the representational similarity analysis (see the section ‘Representational similarity analysis: correlation with representational low-level/behavioral models’).
 
-## fMRI experiment
+### fMRI experiment
 
 Each participant took part in only one experiment, either in the auditory or in the visual version. We decided to include two separate groups of sighted people, one for each modality, for two crucial reasons. First, we wanted to limit as much as possible the possibility of triggering mental imagery from one modality to the other. Second, since cross-group comparisons of representational dissimilarity analyses represent a core component of our analyses stream, we wanted to ensure a cross-group variance comparable between the blind versus the sighted and the sighted in audition versus the sighted in vision.
 
@@ -183,7 +215,7 @@ Before entering the scanner, all the stimuli (either auditory or visual) were pr
 
 The use of a ‘‘quick’’ event-related fMRI paradigm balances the need for separable hemodynamic responses and the need for presenting many stimuli in the limited time-span of the fMRI experiment. Within both the auditory and the visual fMRI sessions, participants underwent five runs. Each run contained 3 repetitions of each of the 24 stimuli, eight catch trials and two 20s-long rest periods (one in the middle and another at the end of the run). The total duration of each run was 8 min and 40 s for the auditory experiment and 6 min for the visual experiment. For each run, the presentation of trials was pseudo-randomized: two stimuli from the same category were never presented in subsequent trials. The stimulus delivery was controlled using the Psychophysics toolbox implemented in Matlab R2012a (The MathWorks).
 
-## fMRI data acquisition and preprocessing
+### fMRI data acquisition and preprocessing
 
 We acquired our data on a 4T Bruker Biospin MedSpec equipped with an eight-channel birdcage head coil. Functional images were acquired with a T2*-weighted gradient-recalled echo-planar imaging (EPI) sequence (TR, 2000 ms; TE, 28 ms; flip angle, 73°; resolution, 3 × 3 mm3; 30 transverses slices in interleaved ascending order; 3 mm slice thickness; field of view (FoV) 192 × 192 mm2). The four initial scans were discarded for steady-state magnetization. Before each EPI run, we performed an additional scan to measure the point-spread function (PSF) of the acquired sequence, including fat saturation, which served for distortion correction that is expected with high-field imaging.
 
@@ -191,17 +223,17 @@ A structural T1-weighted 3D magnetization prepared rapid gradient echo sequence 
 
 To correct for distortions in geometry and intensity in the EPI images, we applied distortion correction on the basis of the PSF data acquired before the EPI scans (Zeng and Constable, 2002). Raw functional images were pre-processed and analyzed with SPM8 (Welcome Trust Centre for Neuroimaging London, UK (https://www.fil.ion.ucl.ac.uk/spm/software/spm8/) implemented in MATLAB R2013b (MathWorks). Pre-processing included slice-timing correction using the middle slice as reference, the application of temporally high-pass filtered at 128 Hz and motion correction.
 
-## Regions of interest
+### Regions of interest
 
 Since we were interested in the brain representation of different categories we decided to focus on the ventro-occipito temporal cortex as a whole. This region is well known to contain several distinct macroscopic brain regions known to prefer a specific category of visual objects including faces, places, body parts, small artificial objects, etc. (Kanwisher, 2010). We decided to focus our analyses on a full mask of VOTC, and not in specific sub-parcels because we were interested in looking at the categorical representation across categories and not at the preference of a specific category compared to the others. Our study therefore builds upon the paradigm shift of viewing VOTC as a distributed categorical system rather than a sum of isolated functionally specific areas, which reframes how we should expect to understand those areas (Haxby et al., 2001). In fact, our main aim was to investigate how sensory input channel and visual experience impact on the general representation of different categories in the brain. Looking at one specific category-selective region at time would not allow us to address this specific question, since we would expect an imbalanced representation of the preferred category compared to the others. Indeed, to tackle our question, we need to observe the distributed representation of the categories over the entire ventral occipito-temporal cortex (Haxby et al., 2001). This approach has already been validated by previous studies that investigated the categorical representation in the ventral-occipito temporal cortex, using a wide VOTC mask, such as van den Hurk et al. (2017); Kriegeskorte et al. (2008b); Wang et al. (2015). We also added the early visual cortex (EVC) as a control node. We decided to work in a structurally and individually defined mask of VOTC using the Desikan-Killiany atlas (Desikan et al., 2006) implemented in FreeSurfer (http://surfer.nmr.mgh.harvard.edu). Six ROIs were selected in each hemisphere: Pericalcarine, Cuneus and Lingual areas were combined to define the early visual cortex (EVC) ROI; Fusiform, Parahippocampal and Infero-Temporal areas were combined to define the ventral occipito-temporal (VOTC) ROI. Then, we combined these areas in order to obtain one bilateral EVC ROI and one bilateral VOTC ROI (Figure 3A).
 
 Our strategy to work on a limited number of relatively large brain parcels has the advantage to minimize unstable decoding results collected from small regions (Norman et al., 2006) and reduce multiple comparison problems intrinsic to neuroimaging studies (Etzel et al., 2013). All analyses, except for the topographical selectivity map (see below), were carried out in subject space for enhanced anatomico-functional precision and to avoid spatial normalization across subjects.
 
-## General linear model
+### General linear model
 
 The pre-processed images for each participant were analyzed using a general linear model (GLM). For each of the five runs, we included 32 regressors: 24 regressors of interest (each stimulus), 1 regressor of no-interest for the target stimulus, six head-motion regressors of no-interest and one constant. From the GLM analysis, we obtained a β-image for each stimulus (i.e. 24 sounds) in each run, for a total of 120 (24 stimuli x five runs) beta maps.
 
-## Topographical selectivity map
+### Topographical selectivity map
 
 For this analysis, we needed all participants to be coregistered and normalized in a common volumetric space. To achieve maximal accuracy, we relied on the DARTEL (Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra; Ashburner, 2007) toolbox. DARTEL normalization takes the gray and white matter templates from each subject to create an averaged template based on our own sample that will be used for the normalization. The creation of a study-specific template using DARTEL was performed to reduce deformation errors that are more likely to arise when registering single subject images to an unusually shaped template (Ashburner, 2007). This is particularly relevant when comparing blind and sighted subjects given that blindness is associated with significant changes in the structure of the brain itself, particularly within the occipital cortex (Dormal et al., 2016; Jiang et al., 2009; Pan et al., 2007; Park et al., 2009).
 
@@ -219,11 +251,11 @@ In addition, we computed the Jaccard similarity index for each category, between
 
 However, the Jaccard similarity values could be partially driven by the number of voxels that show selectivity for each category. For instance, the absence of overlap between the voxels that prefer animals in EBa and SCv could be explained by the fact that different voxels prefer animals in the two groups or by the fact that one or both groups have a limited number of voxels that show a preference for this category. To disentangle these two possibilities we counted in each group the number of voxels within VOTC that prefers each category (see Figure 2A for the results). We ended up with four values (one number for each category) for each group. Statistical significance of the number of voxels within groups was assessed using parametric statistics: One sample t-tests to assess the difference against zero, a repeated measure ANOVA (four categories * three groups) to compare the different categories and groups.
 
-## MVP-classifications: Binary decoding
+### MVP-classifications: Binary decoding
 
 We performed a binary MVP-classification (using SVM - support vector machine classifier) to look at the ability of each ROI to distinguish between two categories at time. With eight categories we can have 28 possible pairs, resulting in 28 binary MVP-classification tests in each ROI. Statistical significance of the binary classification was assessed using t-test against the chance level. We, then, averaged the 28 accuracy values of each subject in order to have one mean accuracy value for subject. Statistical significance of the averaged binary classification was assessed using parametric statistics: t-test against zero and ANOVA.
 
-## Representational similarity analysis (RSA): Correlation between neural dissimilarity matrices of the three groups
+### Representational similarity analysis (RSA): Correlation between neural dissimilarity matrices of the three groups
 
 We further investigated the functional profile of the ROIs using RSA. RSA was performed using the CoSMoMVPA toolbox, implemented in Matlab (r2013b; Matworks). The basic concept of RSA is the dissimilarity matrix (DSM). A DSM is a square matrix where the number of columns and rows corresponds to the number of the conditions (8 × 8 in this experiment) and it is symmetrical about a diagonal of zeros. Each cell contains the dissimilarity index between the two stimuli. We used the binary MVP-classification as dissimilarity index to build neural DSMs (Carlson et al., 2013; Cichy and Pantazis, 2017; Cichy et al., 2013; Dobs et al., 2019; Haxby et al., 2014; Haxby et al., 2011; O'Toole et al., 2005; Pereira et al., 2009; Proklova et al., 2019) for each group, in order to compare the functional profile of the ROIs between the three groups. In this way, we ended up with a DSM for each group for every ROI.
 
@@ -235,25 +267,25 @@ Considering the unidirectional hypothesis for this test (a positive correlation 
 
 See the section ‘Statistical analyses’ for details about the assessment of statistical differences.
 
-## Hierarchical clustering analysis on the brain categorical representations
+### Hierarchical clustering analysis on the brain categorical representations
 
 In order to go beyond the correlation values and to explore more qualitatively the representational structure of VOTC and EVC in the three groups, we implemented a hierarchical clustering approach (King et al., 2019). First, we created a hierarchical cluster tree for each brain DSM using the 'linkage’ function in Matlab, then we defined clusters from this hierarchical cluster tree with the ‘cluster’ function in Matlab. Hierarchical clustering starts by treating each observation as a separate cluster. Then, it identifies the two clusters that are closest together, and merges these two most similar clusters. This continues until all the clusters are merged together or until the clustering is ‘stopped’ to a n number of clusters. We repeated the clustering three times for each DSM, stopping it at 2, 3 and 4 clusters, respectively (see Figure 5). In this way, we could compare the similarities and the differences of the clusters at the different scales across the groups. We applied the same clustering analysis also on the behavioral data (see Figure 5—figure supplement 1).
 
-## Representational similarity analysis (RSA): correlation with representational low-level/behavioral models
+### Representational similarity analysis (RSA): correlation with representational low-level/behavioral models
 
 We then intended to investigate which features of the visual and auditory stimuli were represented in the different ROIs of sighted and blind subjects. RSA allows the comparisons between the brain DSMs extracted from specific ROIs with representational DSMs, based on physical properties of the stimuli or based on behavioral rating of the perceived categorical similarity of our stimuli.
 
-## Low-level DSM in the auditory experiment: pitch DSM
+### Low-level DSM in the auditory experiment: pitch DSM
 
 Pitch corresponds to the perceived frequency content of a stimulus. We selected this specific low-level auditory feature for two reasons. First, previous studies showed that this physical property of the sounds is distinctly represented in the auditory cortex and may create some low-level bias of auditory category selective responses in the temporal cortex (Giordano et al., 2013; Leaver and Rauschecker, 2010; Moerel et al., 2012). Second, we confirmed with our own SCa group that, among alternative auditory RDMs based on separate acoustic features (e.g. Harmonicity on noise ratio, Spectral centroid), the pitch model correlated most with brain RDM extracted from the temporal cortex. This provided strong support that this model was maximally efficient in capturing the encoding of sounds based on acoustic features in auditory cortical regions (see Figure 6—figure supplement 1).
 
 We computed a pitch value for each of the 24 auditory stimuli, using the Praat software and an autocorrelation method. This method extracts the strongest periodic component of several time windows across the stimulus and averages them to have one mean pitch value for that stimulus. The ‘pitch floor’ determines the size of the time windows over which these values are calculated in Praat. Based on a previous study, we chose a default pitch floor of 60 Hz (Leaver and Rauschecker, 2010). We then averaged the pitch values across stimuli belonging to the same category. Once we obtained one pitch value for each category, we built the DSM computing the absolute value of the pitch difference for each possible pairwise (see Figure 6A). The pitch DSM was not positively correlated with the behavioral DSM of neither SCa (r=–0.36, p=0.06) nor EBa (r = –0.29, p=0.13).
 
-## Low-level DSM in the visual experiment: Hmax- C1 model
+### Low-level DSM in the visual experiment: Hmax- C1 model
 
 The Hmax model (Serre et al., 2007) reflects the hierarchical organization of the visual cortex (Hubel and Wiesel, 1962) in a series of layers from V1 to infero-temporal (IT) cortex. To build our low-level visual model we used the output from the V1- complex cells layer. The inputs for the model are the gray-value luminance images presented in the sighted group doing the visual experiment. Each image is first analysed by an array of simple cells (S1) units at 4 different orientations and 16 scales. At the next C1 layer, the image is subsampled through a local Max pooling operation over a neighbourhood of S1 units in both space and scale, but with the same preferred orientation (Serre et al., 2007). C1 layer stage corresponds to V1 cortical complex cells, which shows some tolerance to shift and size (Serre et al., 2007). The outputs of all complex cells were concatenated into a vector as the V1 representational pattern of each image (Khaligh-Razavi and Kriegeskorte, 2014; Kriegeskorte et al., 2008a). We averaged the vectors of images from the same category in order to have one vector for each category. We, finally, built the (8 × 8) DSM computing 1- Pearson’s correlation of each pair of vectors (see Figure 6A). The Hmax-C1 DSM was significantly correlated with the SCv behavioral DSM (r = 0.56, p=0.002).
 
-## Behavioral-categorical DSMs
+### Behavioral-categorical DSMs
 
 We used the pairwise similarity judgments from the behavioral experiment to build the semantic DSMs. We computed one matrix for each subject that took part in the behavioral experiment and we averaged all the matrices of the participants from the same group to finally obtain three mean behavioral-categorical DSMs, one for each group (i.e. EBa, SCa, SCv; Figure 4A). The three behavioral matrices were highly correlated between them (SCv-EBa: r = 0.89, p<0.001; SCv-SCa: r = 0.94, p<0.001; EBa-SCa: r = 0.85, p<0.001), and the similarity judgment was clearly performed on a categorical-membership basis (Figure 6A).
 
@@ -261,13 +293,13 @@ The last step consisted in comparing neural and external DSMs models using a sec
 
 See the section ‘Statistical analyses’ for details about the assessment of statistical differences.
 
-## RSA: Inter-subjects correlation
+### RSA: Inter-subjects correlation
 
 To examine the commonalities of the neural representational space across subjects in VOTC, we extracted the neural DSM of every subject individually and then correlated it with the neural DSM of every other subject. Since we have 49 participants in total, this analysis resulted in a 49 × 49 matrix (Figure 7) in which each line and column represents the correlation of one subject’s DSM with all other subjects’ DSM. The three main squares in the diagonal (Figure 7) represent the within group correlation of the 3 groups. We averaged the value within each main square (only the upper half excluding the diagonal) on the diagonal to obtain a mean value of within group correlation for each group. The three main off diagonal squares (Figure 7) represent the between groups correlation of the three possible groups’ pairs (i.e. 1.SCv/EBa; 2.SCv-SCa; 3.EBa-SCa). We averaged the value within each main off-diagonal square in order to obtain a mean value of between groups correlation for each groups’ pair.
 
 See the section ‘Statistical analyses’ for details about the assessment of statistical differences.
 
-## Representational connectivity analysis
+### Representational connectivity analysis
 
 Representational connectivity analysis were implemented to identify the representational relationship among the ROIs composing VOTC and the rest of the brain (Kriegeskorte et al., 2008a; Pillet et al., 2018). This approach can be considered a type of connectivity where similar RDMs of two ROIs indicate shared representational structure and therefore is supposed to be a proxy for information exchange (Kriegeskorte et al., 2008b). Representational connectivity between two ROIs does not imply a direct structural connection but can provide connectivity information from a functional perspective, assessing to what extent two regions represent information similarly (Xue et al., 2013).
 
@@ -279,7 +311,7 @@ We computed the same analysis also in the EVC, as a control ROI. In this case th
 
 See the section ‘Statistical analyses’ for details about the assessment of statistical differences.
 
-## Statistical analyses
+### Statistical analyses
 
 To assess statistical differences, we applied parametric tests (T-Test and ANOVA) in the analyses that met the main assumptions required by parametric statistics: normal distribution of the data and independency of the observations. Moreover, in case of statistical comparisons between different groups we ran the Levene’s test to check for the assumption of equality of variances between the groups, in case the test was significant (suggesting different levels of variance) we applied the Welch Homogeneity correction. Parametric tests were used in the Jaccard similarity analyses (both within and between groups), in the analysis on the selective voxel’s count and in the averaged binary decoding analysis. In all these analyses the correlation data were z-transformed before subjecting them to parametric statistics.
 

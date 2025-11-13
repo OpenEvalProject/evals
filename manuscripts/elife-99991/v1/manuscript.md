@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03nawhv43 Department of Physics and Astronomy, University of California, Riverside Riverside United States
+1. Department of Physics and Astronomy, University of California, Riverside Riverside United States ([ROR:03nawhv43](https://ror.org/03nawhv43))
 
 † Corresponding author
 

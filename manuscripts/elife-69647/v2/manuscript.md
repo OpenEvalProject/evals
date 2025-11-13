@@ -41,7 +41,7 @@ In the current study we combined these two protocols. In Experiment 1, cacher ja
 
 ## Results
 
-## Integration of cues correlating with others’ desire and perspective
+### Integration of cues correlating with others’ desire and perspective
 
 In Experiment 1, we tested whether jays can integrate multiple cues to decide where to hide food to protect it from being pilfered. To do so, we manipulated the observer’ visual access to two caching trays through a ‘T’-shaped Perspex barrier (henceforth T-barrier). This T-barrier – which was the same barrier originally designed and used in Legg and Clayton, 2014 – consisted of three plastic panels: one transparent panel forming one arm of the ‘T’ and two opaque panels forming the second arm and stem of the ‘T’ (see Materials and methods). The T-barrier could be placed around two caching trays (Figure 1) such that an observer could see the tray behind the transparent arm (in-view tray) but could not see the tray behind the opaque arm (out-of-view tray).
 
@@ -77,7 +77,7 @@ Consequently, as in Experiment 1, the observed data cannot be interpreted as sup
 
 Although birds could have used multiple cues to guide their caching decisions in Experiments 1 and 2, they could also have adjusted their caching preference according to just one single type of cue, that is either the cues correlating with the observer’s desire or the cues correlating with the observer’s perspective. Both experiments used an experimental manipulation that, when applied separately, has already been reported – in previous studies – to have elicited a behavioural response that has been interpreted as a cache-protection strategy. Specifically, the caching phase of Experiment 1 involved the same procedure and set-up used by Legg and Clayton, 2014, except for the specific types and quantities of food provided to the jays. Similarly, the In-view condition of Experiment 2 and the Seen condition of Ostojić et al., 2017’s experiment employed the same procedure, with the exception that in the former the observers could see the caching location through a transparent barrier, whereas in the latter no barrier was present. However, in contrast to these previous studies, the results obtained in our experiments did not show a directional caching pattern in the predicted direction in these situations. Again, this may be a result of the low statistical power of our design, or possibly from the greater demands associated with tracking and integrating multiple cues to inform decision-making. However, the inconsistencies with previous research could also be due to previously reported effects not being reliable enough to form the basis of follow-up studies. Therefore, we conducted three further experiments to explore the reliability of the effects reported by Legg and Clayton, 2014 and Ostojić et al., 2017. In Experiments 3 and 4, we attempted a replication of Legg and Clayton, 2014’s findings. In Experiment 3, birds were tested in one trial per condition, mirroring Experiment 1, while in Experiment 4, we conducted a complete direct replication of the original study that encompassed two trials in the Private condition and two trials in each of the two Observed conditions. Finally, in Experiment 5, we tested whether the presence or absence of a transparent barrier – that is the minor difference in the set-up between Experiment 2 and Ostojić et al., 2017’s experiment – may have affected the Eurasian jays’ response in this caching situation.
 
-## Exploring the reliability of caching strategies based on either the perspective or the current desire of a competitor
+### Exploring the reliability of caching strategies based on either the perspective or the current desire of a competitor
 
 In Experiment 3, we investigated whether jays use information about an observer’s visual perspective to protect their caches in a simplified version of Legg and Clayton, 2014’s experiment, that is the jays received only one trial in each of the two testing conditions. This mirrors the procedure in Experiment 1, where the same set-up was used and only one trial per testing condition was conducted. Following the original study, we presented cacher jays with two caching trays and manipulated the observer’s visual access to cache locations by using the T-barrier. However, while Legg and Clayton, 2014 tested jays in three conditions – Observed by Dominant, Observed by Subordinate and Private – and gave them two trials in each condition, in Experiment 3, jays (n = 8) received only two trials: one with a conspecific present in the adjacent compartment (Observed condition) and one with no conspecific present (Private condition). Seven birds met the inclusion criterion (see Material and methods for details).
 
@@ -117,7 +117,160 @@ Second, our five studies used the same populations of birds as tested in the pre
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69647/elife-69647-fig5-v2.jpg)
 
-**Figure 5.:** Legg and Clayton, 2014 and Ostojić et al., 2017.Note that Ostojić et al., 2017 tested California scrub-jays and Eurasian jays but only Eurasian jays were relevant to the analysis, and therefore included in the plot. MedianExperiment 1 = 10; MedianExperiment 2 = 3.75; MedianExperiment 3 = 5; MedianExperiment 4 = 1.83; MedianExperiment 5 = 6.5; MedianLegg & Clayton (2014) = 2.5; Median Ostojić et al., 2017 = 6.
+**Figure 5.:** Note that Ostojić et al., 2017 tested California scrub-jays and Eurasian jays but only Eurasian jays were relevant to the analysis, and therefore included in the plot. MedianExperiment 1 = 10; MedianExperiment 2 = 3.75; MedianExperiment 3 = 5; MedianExperiment 4 = 1.83; MedianExperiment 5 = 6.5; MedianLegg & Clayton (2014) = 2.5; Median Ostojić et al., 2017 = 6.
+
+**Table 1.**
+ Individual data of the birds that participated in this study (Experiments 1–5).The table reports also the individual data of the birds that participated in Legg and Clayton, 2014’s study and to the caching experiment by Ostojić et al., 2017.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony</th>
+      <th>Bird</th>
+      <th>Sex</th>
+      <th>Born</th>
+      <th>Experiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Caracas</td>
+      <td>M</td>
+      <td>May 2006</td>
+      <td>1S, Ob, 2S, Ob, 3S, Ob, 4S, Ob, 5S, OS, Ob</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Dublin</td>
+      <td>M</td>
+      <td>May 2006</td>
+      <td>(1), 3Ob, 4S, 5S, Ob, OS</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Jerusalem</td>
+      <td>F</td>
+      <td>May 2006</td>
+      <td>1S, Ob, 2S, Ob, 3S</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Lima</td>
+      <td>M</td>
+      <td>May 2006</td>
+      <td>1S, 2S, 3S, Ob, 4S, 5Ob, S</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Lisbon</td>
+      <td>M</td>
+      <td>May 2006</td>
+      <td>(1Ob), (2), 3Ob, S!, 4S, Ob, 5S!, Ob</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Quito</td>
+      <td>F</td>
+      <td>May 2006</td>
+      <td>1S, 2S, 3S, 4S, Ob, 5S</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Rome</td>
+      <td>F</td>
+      <td>May 2006</td>
+      <td>1S, Ob, 2Ob, S, 3S, 4 S, Ob, 5Ob, S, OS</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Washington</td>
+      <td>F</td>
+      <td>May 2006</td>
+      <td>1S, 2S, Ob, 3 S, Ob, 4Ob, S, 5S, OS</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Wellington</td>
+      <td>F</td>
+      <td>May 2006</td>
+      <td>1S, Ob, 2S, Ob, 3S, 4S, Ob, 5S, Ob,</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hunter</td>
+      <td>F</td>
+      <td>May 2008</td>
+      <td>4S, LS</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Adlington</td>
+      <td>F</td>
+      <td>May 2008</td>
+      <td>(4Ob), LOb, S</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Webb</td>
+      <td>F</td>
+      <td>May 2008</td>
+      <td>(4)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Hoy</td>
+      <td>M</td>
+      <td>May 2008</td>
+      <td>(4), LS, Ob, OS, Ob</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Romero</td>
+      <td>M</td>
+      <td>May 2008</td>
+      <td>(4), OS</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Wilson</td>
+      <td>M</td>
+      <td>May 2008</td>
+      <td>LS, Ob</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ohurougu</td>
+      <td>F</td>
+      <td>May 2008</td>
+      <td>LS, Ob</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Pendleton</td>
+      <td>M</td>
+      <td>May 2008</td>
+      <td>LS, OS, Ob</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ainslie</td>
+      <td>M</td>
+      <td>May 2008</td>
+      <td>LOb</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Purchase</td>
+      <td>F</td>
+      <td>May 2008</td>
+      <td>LOb</td>
+    </tr>
+  </tbody>
+</table>
+
+_'L’ refers to Legg and Clayton, 2014; ‘O’ refers to Ostojić et al., 2017. ‘()’ means that the bird participated only in a preliminary phase of the experiment (i.e., familiarisation). This is relevant only to the experiments reported in this study but not to Legg and Clayton, 2014, Ostojić et al., 2017. ‘Ob’ means that the bird participated in the experiment as an observer. ‘S’ means that the bird participated in the experiment as a subject. ‘!’ means that the bird did not complete the testing, such that its data was not included in the analyses. Note that the order in which ‘Ob’ and ‘S’ are reported describes the order in which the bird was used as observer and as subject (e.g., ‘1Ob, S’ means that the bird was used as observer before being used as subject in Experiment 1, whereas ‘1S, Ob’ means that the bird was used as observer after being used as subject in Experiment 1)._
 
 With regard to the potential motivational changes due to ageing, it is possible that ontogenetic variations in sociality could influence the performance in caching tasks. Although data on corvids specifically are limited, research in primates has shown that motivations potentially relevant to cache protection, such as those driving socialisation and social influence, change dramatically throughout life, declining substantially in some taxa (Machanda and Rosati, 2020). A notable example of this process is provided by rhesus macaques, which, similarly to humans, show a reduced propensity to follow gaze in older age (Rosati et al., 2016). When it comes to corvids, the only data at the moment concern age-related shifts in non-social predisposition, such as neophobia (Greggor et al., 2020). Thus, age-related changes in the jays’ motivation to attend to others’ social cues are speculative, but in light of the negative results reported here, may present a line of enquiry for future studies.
 
@@ -135,13 +288,13 @@ In conclusion, the current study presents five experiments that are inconsistent
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Fourteen adult Eurasian jays from two separate colonies were tested in this study (Table 1). Most of the jays took part in multiple experiments and had previously been tested in experiments that involved caching in a similar set-up as that used in the current study (details about which jay participated in which experiment(s) are given in Table 1).
 
 All of the jays were hand-raised, having been taken as chicks from wild nests or from the natural nests of birds in a breeding programme. The birds from each colony were housed as a group in large outdoor aviaries each measuring 20 m long × 10 m wide × 3 m high in Clayton’s Comparative Cognition Lab at the Sub-Department of Animal Behaviour, University of Cambridge, Madingley, UK. At one end, the aviaries were divided such that birds had access to multiple smaller aviaries (approximately 6 × 2 × 3 m) and from these smaller aviaries birds could access indoor (colony 1) or fully sheltered (colony 2) testing compartments (2 × 1 × 3 m). Birds of colony 2 were housed in pairs in indoor cages until 2009 or 2010. Outside of testing the birds had ad libitum access to their maintenance diet of vegetables, eggs, seed, and fruits. Water was available at all times. All procedures were approved by the University of Cambridge Animal Ethics Committee (reference n. ZOO35/17).
 
-## Experimental set-up
+### Experimental set-up
 
 Birds were tested in the testing compartments measuring 2 m long × 1 m wide × 3 m high, which were accessible from the smaller aviaries through flap windows. In trials requiring the presence of an observer, two birds – a cacher bird and an observer bird – were located in adjacent compartments. These compartments were separated by wire mesh and additional opaque sheeting. A little mesh window (30 × 55 cm) was not covered by the opaque sheeting and through it the birds had visual access to the adjacent compartment. Testing compartments contained a suspended platform (1 × 1 m) approximately 1 m from the ground, onto which food bowls, caching trays, and Perspex barriers could be placed. Each type of food used in the experiments was presented in a bowl of a specific colour, and these colours were kept consistent for all birds to minimise the likelihood of experimenter errors. Rectangular seedling trays (5 × 3 pots filled with sand) were used as caching trays. Trays were painted different colours and were trial specific to minimise the probability that birds’ caching behaviour in one trial would be influenced by its memory from previous trials.
 
@@ -149,63 +302,63 @@ In Experiments 1, 3, and 4, a T-barrier was used to manipulate the observer’s 
 
 In Experiments 2 and 5, a U-barrier was used to manipulate the observer’s visual access to the caching trays. The barrier consisted of two lateral Perspex panels (26 × 25 cm) and one central Perspex panel (53 × 25 cm) forming two angles of approximately 45°. In Experiment 2, we used two U-barriers, one made of transparent Perspex and another made of white opaque Perspex. In Experiment 5, only the transparent barrier was used. The U-barrier was placed around a single tray in the cacher’s compartment, and if opaque, it impaired the observer’s visual access to the caching tray.
 
-## General procedures
+### General procedures
 
 In all experiments, the birds’ maintenance diet was removed from the aviary approximately 1.5 hr prior to the start of each trial to ensure that the birds were mildly hungry and thus likely to interact with food provided during testing.
 
-## Familiarisation
+#### Familiarisation
 
 In all experiments in which the birds had not experienced the set-up and apparatuses just prior to testing (i.e., in Experiments 1, 2, 4, and 5), a familiarisation procedure was conducted to ascertain that birds were comfortable caching in trays placed in proximity of the respective barriers (see Specific Procedures for further details). During the familiarisation, each bird was tested in isolation, i.e., with no other birds present in the test area. Compartments used during the familiarisation were not used in the test phase to minimise the probability of carry-over effects.
 
-## Test
+#### Test
 
 In Experiments 1, 2, and 5, test trials involved a pre-feeding phase followed by a caching phase. Before the start of a test trial, two birds (a cacher and an observer) were given access to two adjacent compartments. Subsequently, the experimenter placed a bowl containing the pre-feeding food (macadamia nuts or peanuts) on the suspended platform in the observer’s compartment and a bowl containing a handful of maintenance diet on the platform in the cacher’s compartment (Figures 1, 2 and 4). Both bowls were placed in front of the mesh window to ensure that the birds could see each other whilst eating and to maximise the likelihood that the cacher could see on which food the observer was pre-fed. The experimenter then left the test room and the birds could eat the pre-feeding food for 15 min. Next, the experimenter entered the test room again and removed the bowls as well as any food remains on the platforms. In the subsequent caching phase, the caching trays, as well as the barrier and the food bowl, were positioned in front of the mesh window in the cacher’s compartment (Figures 1, 2 and 4). The experimenter then left the test room and the birds were given 15 minutes during which the cacher could eat and cache the food in the trays. In Experiments 3 and 4, the test trials involved only a caching phase (Figure 3). Before the start of a trial, the cacher bird was given access to the testing compartment where the caching trays and the T-barrier had already been positioned. In the test trials of the Observed condition, a second bird (i.e., the observer) was also induced to enter the adjacent compartment. Subsequently, a food bowl was placed on the suspended platform in the cacher’s compartment. The experimenter then left the test room and the cacher was given the opportunity to eat and cache food for 15 min.
 
 At the end of each familiarisation and test trial, the experimenter opened the flap windows to allow the bird(s) to re-join the rest of the group in the aviary and recorded the amount of food eaten and the number and location of caches by manually checking the food bowls and trays. Approximately 3 hr after each trial, the cacher was allowed to re-enter the caching compartment. No other birds were present in the test area and the flap window was kept open so that the bird had access not only to the test compartment but also to the adjacent smaller aviary. Note that the door connecting the small aviary to the main aviary was kept closed such that no other bird could enter the cacher’s aviary or compartment. The cacher could retrieve the hidden items and re-cache them in the compartment and in the adjacent small aviary. This retrieval phase was conducted only to reduce the probability that birds would stop caching in the trays, and thus these data were not analysed. Birds received a single test trial per day.
 
-## Specific procedures
+### Specific procedures
 
-## Experiment 1
+#### Experiment 1
 
-## Familiarisation
+##### Familiarisation
 
 Birds (n = 9; Table 1) received two familiarisation trials on two separate days to ensure that they were comfortable caching in trays when these were placed in proximity of each of the two arms of the T-barrier. On each trial, the bird was presented with the T-barrier, a single caching tray and a food bowl containing either 50 macadamia nut halves (M) or 50 whole peanuts with skin (P). The type of food (macadamia nuts or peanuts) was randomly assigned to birds but each bird was provided with the same type of food in both trials. The bird was given the opportunity to eat and cache for 15 min. On one trial, the tray was placed behind the opaque arm of the T-barrier, and on the other trial, it was placed behind the transparent arm. The order in which birds experienced the tray in the two locations was counterbalanced across birds. The orientation of the barrier within the compartment was different from that later used during testing and was kept consistent for each bird across the two familiarisation trials (Figure 1). This procedure was chosen to ensure that the birds were not more familiar with one of the two orientations of the barrier in a specific spatial set-up (e.g., opaque arm facing the outdoor aviary) in the subsequent test. To proceed to the test, birds had to cache at least one food item in the tray on each trial. If a bird did not meet this criterion, it was excluded from further testing. All birds except two (i.e., Dublin and Lisbon; Table 1) passed the familiarisation and proceeded to the test.
 
-## Test
+### Test
 
 During the pre-feeding phase, cachers (n = 7; Table 1) could see a conspecific eat a specific type of food: either the same type of food they were going to receive in the subsequent caching phase (Same Food condition) or a different one (Different Food condition; Figure 1). The order in which the birds experienced the Different Food and Same Food conditions was counterbalanced across birds. In the subsequent caching phase, cachers were provided with the same food used in the familiarisation and with two caching trays, each one placed behind one of the two arms of the T-barrier (Figure 1). The food given to the observer during the pre-feeding phase and to the cacher during the caching phase was either 50 macadamia nut halves or 50 whole peanuts with skin. All birds received one trial per condition, that is, two test trials in total. If a bird cached no items on both trials, it was paired with a different observer and the two trials were repeated. If it again did not cache on both trials, these data were not included in the analysis. In contrast, if the bird cached with the second observer, then these data were included in the analysis. This procedure was decided during data collection, after one bird (Lima) did not cache any food across both trials, but before the analysis was conducted. For all other birds, test trials were not repeated. The analysis included the data of all seven birds. Experiment 1 was conducted from October to November 2017 by LO, BF, and PA.
 
-## Experiment 2
+### Experiment 2
 
-## Familiarisation
+#### Familiarisation
 
 Birds (n = 8; Table 1) received two familiarisation trials on two separate days to ascertain that they were comfortable caching both types of food (macadamia nuts and peanuts) in a tray placed in proximity of each of the U-barriers (transparent and opaque). On each trial, the bird was presented with a U-barrier, a single caching tray and two food bowls, which were presented sequentially. The food bowls contained either 50 macadamia nut halves or 50 whole peanuts with skin. The bird was given the opportunity to eat and cache for 20 min: during the first 10 minutes it was provided with one type of food and during the next 10 min with the other. The order in which the birds experienced the two types of foods was counterbalanced across birds and across trials, such that each bird experienced one order on their first trial and the opposite order on their second trial. On each trial, the barrier was either transparent or opaque. The order in which the birds experienced the two types of the U-barrier was counterbalanced across birds. To proceed to testing, birds had to (1) cache at least one item on each trial and (2) cache at least one item of each kind of food across the two trials. If a bird did not meet these criteria, it was excluded from further testing. All birds except one (Lisbon; Table 1) passed the familiarisation and proceeded to the test.
 
-## Test
+#### Test
 
 The pre-feeding phase was conducted in the same way as in Experiment 1. In the subsequent caching phase, the cacher was provided with a single tray placed within the U-barrier and two food bowls (one containing 50 macadamia nut halves and the other containing 50 whole peanuts with skin). Birds (n = 7; Table 1) received four trials in total: there were two conditions, namely the In-view condition (transparent U-barrier) and the Out-of-view condition (opaque U-barrier), and within each condition, there were two trials, one in which the observer was pre-fed on one type of food (e.g., macadamia nuts) and one in which the observer was pre-fed on the other type food (e.g., peanuts). Birds first received both trials of one condition, and then the two trials of the other condition. The order of conditions was counterbalanced across birds. The order in which the observer was pre-fed on the two types of food was counterbalanced across birds within condition, but kept consistent across conditions (i.e., the order of the two trials was the same in both conditions). If a bird did not cache any items in one or two trials, those trials were repeated at the end of the experiment. However, if a bird did not cache any items in more than two trials, that bird was not tested any further and was excluded from the analysis. A specific trial was repeated for a maximum of two times, such that a bird was excluded from the analysis if it cached no item in both repeated trials. It was necessary to repeat trials for three birds (i.e., Jerusalem: two repeated trials; Lima: two repeated trials; Rome: one repeated trial). The analysis included the data of all seven birds. Experiment 2 was conducted from January to February 2018 by PA.
 
-## Experiment 3
+### Experiment 3
 
-## Familiarisation
+#### Familiarisation
 
 Here, we conducted no familiarisation because this experiment took place shortly after Experiment 1 (which also involved the T-barrier) and involved the same birds. Thus, participation in Experiment 1 already insured that birds were comfortable caching in trays next to the T-barrier.
 
-## Test
+#### Test
 
 The procedure of the test was simplified from the procedure in Legg and Clayton, 2014. The main difference was that there was only one trial per condition. In addition, we used either 50 whole peanuts with skin or macadamia nut halves (counterbalanced across birds) as food for the cachers, whereas the original study used 30 peanut halves. Birds (n = 8; Table 1) were given two trials in total: one with an observer present in the adjacent compartment (Observed condition) and one in which no observer was present (Private condition). The order of the conditions was counterbalanced across birds. On each trial, two trays were positioned behind the T-barrier, one behind the opaque and one behind the transparent arm. The orientation of the T-barrier was counterbalanced across birds but kept constant across trials for each bird. The cacher was given 15 min during which it could each or cache the food. If a bird did not cache on a trial, the trial was repeated. If the bird did not cache again, the data were not included in the analysis. A trial was repeated for one bird (Caracas). Due to timing constraints, another bird (Lisbon) was not given the possibility to repeat the trials in which no item was cached. Thus, although this was not pre-specified as an exclusion criterion, Lisbon’s data were excluded from the analysis before it was conducted. The analysis included the data of seven birds, that is, all birds except one (Lisbon). Experiment 3 was conducted in December 2017 by LO.
 
-## Experiment 4
+### Experiment 4
 
-## Dominance hierarchy
+#### Dominance hierarchy
 
 In Legg and Clayton, 2014’s experiment, cacher birds received four trials in the Observed condition: two trials in which they were observed by a higher ranked individual (Observed by dominant condition), and two trials in which they were observed by a lower ranked individual (Observed by subordinate condition). Thus, to replicate the original design, it was necessary to determine the dominance hierarchy within each colony. To this end, ad libitum observations were conducted for each colony. Birds were observed as a group in the main outdoor aviaries after their maintenance diet had been removed for approximately 2 hr. For each observation session, maintenance diet was presented on a single food platform in the aviary. This procedure was chosen to increase activity within the colony. To solicit competitive interactions among birds, higher value food items (e.g., wax worm larvae, Galleria mellonella) were also presented in a bowl or scattered around on the floor of the aviary. The identity of both actor and recipient involved in any displacement (i.e., Bird X approaches Bird Y causing Bird Y to leave) was recorded. If necessary, to obtain data for all birds, higher ranked birds were locked into separate compartments to favour interactions among lower ranked birds. Observation sessions were conducted on multiple days, until data were collected to establish a clear social hierarchy within each colony. Sessions lasted approximately 40 min each. Dominance hierarchy data were not collected for colony 2 because only one bird of this group (Hunter) passed the familiarisation.
 
-## Familiarisation
+#### Familiarisation
 
 Unlike birds from colony 1, birds of colony 2 had not recently had any experience with the T-barrier. Thus, all birds (n = 13; Table 1) received two familiarisation trials on separate days to ascertain that the birds were comfortable caching in proximity of both the transparent and the opaque arm of the T-barrier (see also pre-registration addition from 8 Dec 2018). This familiarisation followed the same procedure as the familiarisation in Experiment 1, except that here, each bird was provided with 30 peanut halves as in the original study Legg and Clayton, 2014. To proceed to the test, birds were required to cache at least one food item in each of the two familiarisation trials. If no item was cached in a trial, then that trial was repeated for a maximum of two times. Thus, a bird could receive a maximum of six trials in total. The repeated trials were conducted at the end (e.g., if a bird’s first trial had to be repeated, then the bird received the second, pre-planned trial on day 2, and subsequently it received the first trial again on day 3). It was necessary to repeat trials for two birds (i.e., Lisbon: one repeated trial; Lima: one repeated trial). Nine birds (Table 1) passed the familiarisation and proceeded to the test. Due to an experimenter’s error, the raw data for one bird (Hunter) in the familiarisation was not archived.
 
-## Test
+#### Test
 
 Following the procedure in Legg and Clayton, 2014, birds (n = 9) received six trials in total. There were three conditions (Private condition, Observed by dominant condition, and Observed by subordinate condition) and in each condition, the cacher experienced the T-barrier in two different orientations (opaque arm of the barrier was facing the outdoor aviary, transparent arm facing outdoor aviary) on two separate trials. Each bird was first tested in all conditions with the barrier being kept consistent in one specific orientation, then subsequently received the remaining trials with the barrier being kept consistent in the alternative orientation. The order in which the two orientations of the barrier were experienced was counterbalanced among birds.
 
@@ -213,39 +366,39 @@ On each trial, the cacher was given access to the testing compartment and presen
 
 All birds were tested in all three conditions, except the highest and lowest ranked bird in each colony. The former could only be tested in the Private and Observed by subordinate conditions and the latter could only be tested in the Private and Observed by dominant conditions. Thus, most birds received six trials in total (two trials per condition), whereas the highest and lowest ranked individuals in each colony received four trials in total because they could only be tested in two of the three conditions. In line with the procedure of the original study, test trials were not repeated if the bird cached no item. However, we decided to repeat a specific trial (Dublin’s first trial in the Observed by dominant condition) because the bird that served as observed (Rome) appeared to experience issues with flying. This trial was repeated with a different observer after the remaining pre-planned trials were completed. The analysis included the data of all nine birds. This experiment was pre-registered on the Open Science Framework (https://osf.io/8p4tx/). The pre-registration was conducted after the familiarisation was completed but before the start of the test. Experiment 4 was conducted from October to December 2018 by PA (colony 1) and Rachel Crosby (colony 2).
 
-## Experiment 5
+### Experiment 5
 
-## Familiarisation
+#### Familiarisation
 
 Birds (n = 8; Table 1) received two familiarisation trials on separate days to ensure that they were motivated to cache both types of food and were comfortable caching in a tray both when it was positioned close to the U-barrier and when no barrier was present. Thus, the familiarisation followed the procedure of the familiarisation in Experiment 2, except that here, one trial involved the transparent U-barrier and the other one no barrier. To proceed to testing, birds had to (1) cache at least one item on each trial (i.e., both with barrier present and with no barrier present), and (2) cache at least one item of each type of food across the two trials. If no item was cached in a trial, then that trial was repeated for a maximum of two times. Thus, a bird could receive a maximum of six trials in total. The repeated trials were conducted at the end: for example, if a bird’s first trial had to be repeated, then this bird received the second, pre-planned trial on day 2, and subsequently it received the first trial again on day 3. It was necessary to repeat trials for two birds (i.e., Lisbon: one repeated trial; Wellington: one repeated trial). All eight birds (Table 1) passed the familiarisation and proceeded to the test.
 
-## Test
+#### Test
 
 The procedure in the test phase was the same as in Experiment 2, except that instead of two different U-barriers being used (transparent and opaque), here there was either a clear U-barrier (Barrier condition) or no barrier at all (No-barrier condition; Figure 4). Birds first received both trials (observer pre-fed macadamia nuts and observer pre-fed peanuts) of one condition (e.g., Barrier condition), and then the two trials of the other condition. The order in which the two conditions were conducted was counterbalanced across birds. The order in which observers were pre-fed the two kinds of food within a condition was counterbalanced across birds, but kept consistent across conditions such that the order of the two trials for each bird was the same in both conditions. If a bird did not cache any items in one or two trials, those trials were repeated at the end of the experiment. Each trial could be repeated no more than two times (i.e., three attempts in total). If a bird cached no item in more than two trials, that bird was not tested any further and was excluded from the analysis. It was necessary to repeat trials for two birds (i.e., Quito: one trial; Wellington: two trials). The analysis included the data of seven birds (Table 1), that is all birds except one (Lisbon), that cached no items in three trials. This experiment was pre-registered on the Open Science Framework (https://osf.io/8p4tx/). Experiment 5 was conducted in November 2018 by PA.
 
-## Data collection
+### Data collection
 
 In all experiments, we recorded the number and type of food items cached on each trial by manually checking the trays. The experimenters were not blind to the conditions while counting the food items. These data were used to test whether the birds had a preference for caching a specific type of food or for caching in a specific tray. In all experiments, we also recorded (1) the number of items taken from the bowl by observers (during pre-feeding) and by cachers and (2) the number of items recovered by cachers during retrieval sessions. These data were collected such that all data available for each trial are archived and available, but these data were not relevant to the experimental question so that they were not analysed.
 
-## Statistical analysis
+### Statistical analysis
 
 The birds’ preference for a specific type of food or tray was analysed according to two indices: proportion scores (e.g., the proportion of items cached in one location out of total number of items cached in both locations) and difference scores (e.g., number of items cached in one location minus the number of items cached in the other location). As stated in the pre-registrations of Experiments 4 and 5 (https://osf.io/8p4tx/), we originally planned to analyse the data of all five experiments only through proportion scores. However, when a bird caches no item in a trial, then the individual performance in that specific trial cannot be analysed through the proportion scores, yet it can still be analysed through the difference scores. This issue is relevant only to Experiment 4, where – in line with the procedure of the original study by Legg and Clayton, 2014, and in contrast with the procedure of Experiments 1, 2, 3, and 5 – the trials in which no item was cached were not repeated. Nevertheless, after the study was conducted, we decided to analyse the data of all experiments – not only the data of Experiment 4 – also by using the difference scores. We reasoned that, if there are large discrepancies between the results obtained with both types of indices, then this may be important information regarding the robustness of any effects because such discrepancies would show that results from small sample sizes are easily susceptible to change based on the type of analysis used.
 
 No power analysis was conducted to establish an appropriate sample size for the study. In each experiment, we used all the individuals out of all the Eurasian jays housed in the facility, that were available for testing at the time when the experiment was being conducted and were familiar with the general set-up of caching experiments (i.e., the jays that would cache in caching trays placed in indoor testing compartments).
 
-## Experiment 1
+#### Experiment 1
 
 For each trial, we calculated the proportion of items cached in the out-of-view tray out of the total number of items cached in the out-of-view and in-view trays [Cachesout-of-view/(Cachesout-of-view+ Cachesin)]. In parallel, for each trial we calculated the difference score, that is, the number of items cached in the out-of-view tray minus the number of items cached in the in-view tray [Cachesout-of-view − Cachesin-view]. Both indices indicate a preference for caching in the out-view tray over the in-view tray. Wilcoxon signed-rank tests were used to test whether the two indices of preference for caching in the out-of-view tray differed between the Same Food condition and the Different Food condition. Further, in the Different Food condition, one-sample Wilcoxon signed-rank tests were used to test whether the preference for caching in the out-of-view tray was different from that expected by chance, that is, 0.5 for the proportion score, and 0 for the difference score. As an additional, exploratory analysis, one-sample Wilcoxon signed-rank tests were used to investigate whether the preference for caching in the out-of-view tray differed from chance (again, 0.5 for the proportion score and 0 for the difference score) in Same Food condition.
 
-## Experiment 2
+#### Experiment 2
 
 For each trial, we calculated (1) the proportion of peanuts (P) cached out of the total number of peanuts and macadamia nuts (M) cached [Pcached/(Pcached+ Mcached)] and (2) the difference score, i.e., the number of P cached minus the number of M cached [Pcached − Mcached]. These scores indicate a potential preference for caching P over M. For each condition (In-view and Out-of-view condition), we further calculated (1) the difference of proportions score, namely the proportion of P cached when the observer was pre-fed on P minus the proportion of P cached when the observer was pre-fed on M: [Pcached/(Pcached+ Mcached)]pre-fed P − [Pcached/(Pcached+ Mcached)]pre-fed M and (2) the difference of difference score, namely the difference score when the observer was pre-fed on P minus the difference score when the observer was pre-fed on M: [Pcached − Mcached]pre-fed P − [Pcached − Mcached]pre-fed M. These scores indicate a potential preference to cache P over M when the observer was sated on P relative to when the observer was sated on M. Consequently, Wilcoxon signed-rank tests were used to test whether the difference of proportion scores and the difference of differences scores were statistically different between the In-view and in the Out-of-view conditions. In addition, Wilcoxon signed-rank tests were also used to test whether – in the In-view condition – the proportion score and the difference score differed when the observer was pre-fed on P relative to when the observer was pre-fed on M. The same tests were also conducted in the Out-of-view condition as an exploratory analysis.
 
-## Experiment 3
+#### Experiment 3
 
 As in Experiment 1, for each trial we calculated the proportion of items cached in the out-of-view tray – [Cachesout-of-view/(Cachesout-of-view+ Cachesin-view)] – and the difference between the number of items cached in the out-of-view tray and the number of items cached in the in-view tray – [Cachesout-of-view − Cachesin-view]. Subsequently, we used one-tailed Wilcoxon signed-rank tests to investigate whether each of the two indices was significantly higher in the Observed condition than in the Private condition.
 
-## Experiment 4
+#### Experiment 4
 
 As in Experiment 1, for each trial we calculated the proportion of items cached in the out-of-view tray – [Cachesout-of-view/(Cachesout-of-view+ Cachesin-view)] – and the difference between the number of items cached in the out-of-view tray and the number of items cached in the in-view tray – [Cachesout-of-view − Cachesin-view]. Following Legg and Clayton, 2014, for both indexes we calculated individual mean values in the Private condition and Observed condition. In the latter case, all trials in which an observer was present (i.e., Observed by dominant condition and Observed by subordinate condition) were taken into account to calculate individual mean values. It should be noted that for the proportion score, the actual number of trials that could be used to calculate the individual means in each condition was not consistent for all birds. This is because the trials in which no item was cached across both trays had to be excluded. We also calculated the mean number of caches made in both trays by each individual, in each condition.
 
@@ -253,7 +406,7 @@ The data were analysed using the same statistical analysis used by Legg and Clay
 
 In parallel, we also analysed the data using Wilcoxon signed-rank tests like in all other experiments reported here. In particular, one-tailed tests were used to investigate whether individual mean values (for both the proportion score and the difference score) were significantly higher in the Observed condition than in the Private condition.
 
-## Experiment 5
+#### Experiment 5
 
 As in Experiment 2, for each trial we calculated the proportion of P cached – [Pcached/(Pcached+ Mcached)] – and the difference of P cached – [Pcached − Mcached]. Furthermore, as in Experiment 2, we also calculated for each condition (Barrier and No-barrier conditions) the difference of proportion scores – [Pcached/(Pcached+ Mcached)]pre-fed P – [Pcached/(Pcached+ Mcached)]pre-fed M – and the difference of differences scores – [Pcached – Mcached]pre-fed P – [Pcached – Mcached]pre-fed M. Consequently, we used Wilcoxon signed-rank tests to investigate whether the difference of proportions score and the difference of differences score were statistically different between the Barrier and No-barrier conditions. In addition, one-tailed Wilcoxon signed-rank tests were also used to test whether – in each condition – the proportion score and the difference score were higher when the observer was pre-fed P relative to when the observer was pre-fed M.
 

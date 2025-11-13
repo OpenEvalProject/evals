@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Malaria is a global health burden, with Plasmodium falciparum (Pf) and Plasmodium vivax (Pv) responsible for the majority of infections worldwide. Circumsporozoite protein (CSP) is the most abundant protein on the surface of Plasmodium sporozoites, and antibodies targeting the central repeat region of CSP can prevent parasite infection. Although much has been uncovered about the molecular basis of antibody recognition of the PfCSP repeats, data remains scarce for PvCSP. Here, we performed molecular dynamics simulations for peptides comprising the PvCSP repeats from strains VK210 and VK247 to reveal how the PvCSP central repeats are highly disordered, with minor propensities to adopt turn conformations. Next, we solved eight crystal structures to unveil the interactions of two inhibitory monoclonal antibodies (mAbs), 2F2 and 2E10.E9, with PvCSP repeats. Both antibodies can accommodate subtle sequence variances in the repeat motifs and recognize largely coiled peptide conformations that also contain isolated turns. Our structural studies uncover various degrees of Fab-Fab homotypic interactions upon recognition of the PvCSP central repeats by these two inhibitory mAbs, similar to potent mAbs against PfCSP. These findings augment our understanding of host -Plasmodium interactions and contribute molecular details of Pv inhibition by mAbs to unlock structure-based engineering of PvCSP-based vaccines.
+Malaria is a global health burden, with Plasmodium falciparum (Pf) and Plasmodium vivax (Pv) responsible for the majority of infections worldwide. Circumsporozoite protein (CSP) is the most abundant protein on the surface of Plasmodium sporozoites, and antibodies targeting the central repeat region of CSP can prevent parasite infection. Although much has been uncovered about the molecular basis of antibody recognition of the PfCSP repeats, data remains scarce for PvCSP. Here, we performed molecular dynamics simulations for peptides comprising the PvCSP repeats from strains VK210 and VK247 to reveal how the PvCSP central repeats are highly disordered, with minor propensities to adopt turn conformations. Next, we solved eight crystal structures to unveil the interactions of two inhibitory monoclonal antibodies (mAbs), 2F2 and 2E10.E9, with PvCSP repeats. Both antibodies can accommodate subtle sequence variances in the repeat motifs and recognize largely coiled peptide conformations that also contain isolated turns. Our structural studies uncover various degrees of Fab-Fab homotypic interactions upon recognition of the PvCSP central repeats by these two inhibitory mAbs, similar to potent mAbs against PfCSP. These findings augment our understanding of host-Plasmodium interactions and contribute molecular details of Pv inhibition by mAbs to unlock structure-based engineering of PvCSP-based vaccines.
 
 ## Introduction
 
@@ -41,33 +41,446 @@ Here, we present a detailed molecular analysis of the PvCSP repeat region and it
 
 ## Results
 
-## PvCSP repeat peptides are structurally disordered and behave like harmonic springs
+### PvCSP repeat peptides are structurally disordered and behave like harmonic springs
 
 Due to the variety of PvCSP repeat sequence motifs, we created an extensive list of peptides for circular dichroism (CD) spectroscopy and MD simulations studies (Supplementary file 1, Figure 1A) to examine the structural propensities of 18- and 27-aa-long motifs from the PvCSPvk210 and PvCSPvk247 repeats. CD spectra of all analyzed peptides were indicative of a lack of secondary structure, with minima at ~200 nm (Figure 1B).
 
 For a finer dissection of potential minor secondary structure propensities, we performed all-atom MD simulations on 27-aa peptides derived from PvCSPvk210 and PvCSPvk247 (Supplementary file 1, Figure 2, Figure 2—figure supplement 1, Figure 2—figure supplement 2). All analyzed peptides were highly disordered in solution and adopted a large ensemble of conformations (Figure 2A), similar to peptides derived from PfCSP and PbCSP (Kucharska et al., 2020). Secondary structure was present mainly in the form of transient hydrogen-bonded β-turns (Figure 2B). The propensity of individual residues to form turns varied from 0 to ~60%, with PvCSPvk210 peptides displaying slightly lower averaged turn propensity (~15–20%) than PvCSPvk247 peptides (~23–26%) (Figure 2C). PvCSPvk210 peptides containing (GDRAAGQPA)2 motifs (210-7 and -9), as well as the last repeat of the 247-3 peptide (GNGAGGQAA), were the only motifs with a significant propensity to form helices (>20%).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig2-v2.jpg)
+
+**Figure 2.:** (A) Superposition of the conformations of peptides resulting from molecular dynamics (MD) simulations at every 2 ns and aligned to the conformational median structure. (B) Example snapshots of the highest (peptides 210-7, 210-8, 210-9, and 247-3) or the second highest (peptides 210-6, 247-1, 247-2) propensity β-turn for each peptide. Color coding of atoms: oxygen (red), nitrogen (blue), and hydrogen (white). For clarity, only the hydrogen atom involved in the H-bonded turn is shown. H-bond between C=O of residue i and N–H of residue i + 3 is shown as a gray line. (C) Secondary structure propensity at each residue, averaged over 20 replicas and computed using the Dictionary of Secondary Structure for Proteins (DSSP) criteria (Nagy and Oostenbrink, 2014). (D) Elastic modulus of peptides computed from MD simulations. The reversible work or free energy (ΔG) for extension and compression of the peptide is plotted as a function of equilibrium end-to-end distances (dEE) (solid line). The data is fitted to the quadratic function of elastic potential energy (black dashed line). For each peptide, the estimated values of k (elastic modulus), d0 (equilibrium dEE), and R2 (regression coefficient to indicate quality of fit) are shown. Shading represents standard error of mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Properties are averaged over 20 replicas, with the shading area representing standard error of the mean. (A) H-bond turn propensity (Xturn). (B) Number of peptide-peptide H-bonds per residue (XHB).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** A forward H-bond forms between C=O (acceptor) of residue i and N–H (donor) of residue i + n (upper diagonal), while the reverse forms a reverse H-bond (lower diagonal). Within the diagonal represents local interactions, which forms by a pair of residues that are less than seven residues apart. The color of each square represents the H-bond propensities formed by the interacting residues. The gray and the pink arrows indicate the highest and the second highest propensity turn, respectively.
+
 In order to estimate the elastic modulus of these peptides with intrinsically low secondary structure propensities, peptides were modeled as Hookean springs (Figure 2D), in which the force needed to extend or compress a spring by some distance is proportional to that distance, and the underlying energy function is quadratic (Equation 1). The PMF or free energy governing changes in the peptide’s end-to-end distance was computed and fit to a quadratic function. The excellent data fits (R2 = 0.91–0.97) suggest that in aqueous solution, peptides derived from the PvCSP repeats behave like harmonic springs. On average, the elastic modulus was ~3–5 cal/(mol Å2), with the highest values (stiffest peptide) observed for peptide 247-2 (4.9 ± 0.2 cal/(mol Å2)) and lowest (most flexible peptide) observed for peptide 247-1 (3.2 ± 0.2 cal/(mol Å2)).
 
-## Molecular basis of 2F2 recognition of the PvCSPvk210 central repeat
+### Molecular basis of 2F2 recognition of the PvCSPvk210 central repeat
 
 To gain insights into how inhibitory mAb 2F2 binds to a largely disordered, elastic repeating PvCSPvk210 epitope, we performed isothermal titration calorimetry (ITC) with PvCSPvk210 repeat peptides representative of the different sequence motifs contained within the central repeat region (Supplementary file 1, Figure 3A, Figure 3—figure supplement 1). 2F2 Fab binds to all tested peptides containing two repeats with similar affinity, with a slight preference for peptide 210-3 (GDRADGQPAGDRAAGQPA; 13.8 nM) over 210-2 (GDRAAGQPAGDRAAGQPA; 37.5 nM) (Figure 3A), with other peptides displaying intermediate affinities (17.1–19.1 nM). Peptides 210-3 and 210-2 differ in the fifth residue of the first repeat, which is an aspartic acid for peptide 210-3 and an alanine for peptide 210-2 (GDRA(D/A)GQPA).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig3-v2.jpg)
+
+**Figure 3.:** (A) Affinities of 2F2 Fab for peptides 210-1, 210-2, 210-3, 210-4, and 210-5 as measured by isothermal titration calorimetry (ITC). Open circles represent independent measurements. Mean binding constant (KD) and binding stoichiometry (N) values are shown above the corresponding bar. Error bars represent SEM. (B) Upper panel: sequences of peptides used in ITC experiments with variable residues underlined. Dark gray denotes the core epitope of the peptide resolved in all the X-ray crystal structures, and light gray shading indicates residues resolved in the corresponding X-ray crystal structures. Bottom panel: comparison of the conformations of PvCSP210 peptides in X-ray crystal structures. PvCSPvk210 peptides are colored from navy to light blue, with the residues adopting one turn of a 310-helix depicted in pink. (C) Top and side views of the 210-4 peptide (light blue) in the binding groove of the 2F2 Fab shown as surface representation (heavy chain [HC] shown in green and kappa chain [KC] shown in white). (D) Comparison of the conformations adopted by the core epitope of peptides 210-1, 210-2, 210-3, 210-4, and 210-5 when bound to 2F2. (E) Detailed interactions between Fab 2F2 and peptide 210-4. H-bonds and salt bridges are shown as black dashes, peptide 210-4 is shown in light blue, HC is shown in green, and KC is shown in gray. Fab residues are annotated with H or K letters to indicate heavy and kappa light chain, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Heavy chain complementarity-determining region (HCDR) and kappa chain complementarity-determining region (KCDR) are colored green and gray, respectively. The positions of germline-encoded tryptophan and tyrosine residues interacting with the peptides are highlighted with black dashed circles. (A) 1210 Fab (Imkeller et al., 2018) and NANP5 peptide (pink); (B, D) 2E10.E9 Fab and 247-4 peptide (orange); (C, E) 2F2 Fab and 210-3 peptide (blue). (F) Interactions between peptide proline residues and H.Trp52 in 1210 Fab (left panel) and H.Trp50 in 2E10.E9 Fab (right panel). (G) Residues 8PAG10 of PvCSPvk210 peptides adopt one turn of a 310-helix, which is positioned in the pocket formed by aromatic residues of KCDR1 and 3.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Scale: –5 kT e–1 (red) to +5 kT e–1 (blue).
+
 Next, we co-crystalized the 2F2 Fab with five different peptides derived from PvCSPvk210 (210-1, 210-2, 210-3, 210-4, and 210-5, Supplementary file 1, Figure 3, Figure 3—figure supplement 2) to gain molecular insights into the binding mode and cross-reactivity of mAb 2F2 binding to PvCSPvk210. The crystal structures were solved to resolutions ranging from 1.97 Å to 2.67 Å (Table 1). 2F2 recognizes the core epitope (2DRA(D/A)GQPAGD11) of all PvCSPvk210 peptides in an almost identical coil conformation peptide backbone root-mean-square deviation (RMSD 0.10–0.28 Å) with two consecutive β-turns observed for residues 7QPAGD11 (Supplementary file 2) forming one turn of a 310-helix, thus consistent with the moderate secondary structure propensities observed for the unliganded PvCSPvk210 repeats (Figure 3B). The co-crystal structures also provide molecular insights into the cross-reactivity of 2F2 to different types of PvCSPvk210 repeat motifs (1GDRA(D/A)GQPA9). The sidechains of D/A5 point up and away from the 2F2 paratope and do not significantly contribute to the 2F2 Fab-peptide interaction, helping to explain the similar binding affinities to the different peptides containing this variation (Figure 3E). 2F2 also binds the 210-5 peptide containing a unique repeat C-terminal of the central region (1GDRAAGQPAGNGAGGQAA18); however, the electron density of residues 12–18 C-terminal of the bound core peptide motif is weak in the co-crystal structure, thus providing limited structural insight into this peptide region and suggesting it does not make strong interactions with 2F2 (Figure 3—figure supplement 2).
+
+**Table 1.**
+ X-ray crystallography data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>2F2-210-1</th>
+      <th>2F2-210-2</th>
+      <th>2F2-210-3</th>
+      <th>2F2-210-4</th>
+      <th>2F2-210-5</th>
+      <th>2E10-247-2</th>
+      <th>2E10-247-3</th>
+      <th>2E10-247-4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>APS 23-ID-B</td>
+      <td>APS 23-ID-D</td>
+      <td>APS 23-ID-B</td>
+      <td>APS 23-ID-B</td>
+      <td>APS 23-ID-D</td>
+      <td>APS 23-ID-B</td>
+      <td>APS 23-ID-B</td>
+      <td>APS 23-ID-D</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033167</td>
+      <td>1.033200</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 1</td>
+      <td>C 2</td>
+      <td>C 2</td>
+      <td>P 1</td>
+      <td>C 2</td>
+      <td>P 31</td>
+      <td>P 21</td>
+      <td>P 1</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td>71.5, 81.4, 82.3</td>
+      <td>92.9, 60.4, 158.3</td>
+      <td>92.6, 60.8, 81.4</td>
+      <td>71.7, 82.3, 82.8</td>
+      <td>93.4, 60.5, 159.1</td>
+      <td>142.4, 142.4, 91.3</td>
+      <td>56.4, 144.4, 60.5</td>
+      <td>54.5, 66.3, 142.3</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (o)</td>
+      <td>94.6, 114.1, 111.6</td>
+      <td>90, 101.5, 90</td>
+      <td>90, 101.6, 90</td>
+      <td>95.3, 113.8, 111.5</td>
+      <td>90, 101.2, 90</td>
+      <td>90, 90, 120</td>
+      <td>90, 102.8, 90</td>
+      <td>100.4, 92.3, 91.7</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>29.48–2.20 (2.25–2.20)</td>
+      <td>29.21–2.54 (2.65–2.54)</td>
+      <td>29.71–1.97(2.02–1.97)</td>
+      <td>29.61–2.67 (2.77–2.67)</td>
+      <td>29.69–2.27 (2.34–2.27)</td>
+      <td>29.55–3.19 (3.30–3.19)</td>
+      <td>29.48–2.68 (2.78–2.68)</td>
+      <td>29.34–2.71 (2.81–2.71)</td>
+    </tr>
+    <tr>
+      <td>No. molecules in the asymmetric unit (ASU)</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>No. observations</td>
+      <td>264,344 (16,542)</td>
+      <td>181,285 (21,112)</td>
+      <td>101,891 (4384)</td>
+      <td>155,413 (16,123)</td>
+      <td>471,275 (38,772)</td>
+      <td>693,999 (70,530)</td>
+      <td>184,740 (18,748)</td>
+      <td>552,431 (55,667)</td>
+    </tr>
+    <tr>
+      <td>No. unique observations</td>
+      <td>75,088 (4440)</td>
+      <td>28,642 (3484)</td>
+      <td>31,038 (1962)</td>
+      <td>43,179 (4542)</td>
+      <td>40,512 (3722)</td>
+      <td>34,411 (3469)</td>
+      <td>26,439 (2627)</td>
+      <td>53,126 (5316)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>3.5 (3.7)</td>
+      <td>6.3 (6.1)</td>
+      <td>3.3 (2.2)</td>
+      <td>4.7 (1.5)</td>
+      <td>11.6 (10.3)</td>
+      <td>20.1 (20.3)</td>
+      <td>7.0 (7.1)</td>
+      <td>10.4 (10.5)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)†</td>
+      <td>15.5 (95.2)</td>
+      <td>16.4 (144.5)</td>
+      <td>6.5 (55.7)</td>
+      <td>13.9 (62.8)</td>
+      <td>34.2 (175.0)</td>
+      <td>36.1 (370.6)</td>
+      <td>21.6 (158.6)</td>
+      <td>22.4 (123.5)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%) ‡</td>
+      <td>7.5 (32.4)</td>
+      <td>10.6 (97.6)</td>
+      <td>6.1 (46.9)</td>
+      <td>7.8 (30.8)</td>
+      <td>15.3 (83.0)</td>
+      <td>8.2 (84.0)</td>
+      <td>8.8 (63.7)</td>
+      <td>7.3 (39.8)</td>
+    </tr>
+    <tr>
+      <td>&lt; I/σ I&gt;</td>
+      <td>5.2 (1.5)</td>
+      <td>6.7 (1.5)</td>
+      <td>8.3 (1.5)</td>
+      <td>4.7 (1.5)</td>
+      <td>9.4 (1.5)</td>
+      <td>13.2 (1.7)</td>
+      <td>9.2 (1.6)</td>
+      <td>7.4 (1.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.965 (0.527)</td>
+      <td>0.994 (0.529)</td>
+      <td>0.996 (0.603)</td>
+      <td>0.987 (0.669)</td>
+      <td>0.927 (0.435)</td>
+      <td>0.998 (0.756)</td>
+      <td>0.993 (0.578)</td>
+      <td>0.995 (0.729)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.5 (97.1)</td>
+      <td>99.8 (100.0)</td>
+      <td>98.7 (90.5)</td>
+      <td>98.3 (97.8)</td>
+      <td>99.9 (100.0)</td>
+      <td>99.8 (99.6)</td>
+      <td>99.9 (100.0)</td>
+      <td>100.0 (100.0)</td>
+    </tr>
+    <tr>
+      <td colspan="9">Refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>74,672</td>
+      <td>28,604</td>
+      <td>31,030</td>
+      <td>43,160</td>
+      <td>40,501</td>
+      <td>34,411</td>
+      <td>26,439</td>
+      <td>53,126</td>
+    </tr>
+    <tr>
+      <td>Reflections used for R-free</td>
+      <td>3731</td>
+      <td>1432</td>
+      <td>1552</td>
+      <td>2162</td>
+      <td>2026</td>
+      <td>1732</td>
+      <td>1314</td>
+      <td>2067</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>10,580</td>
+      <td>6872</td>
+      <td>3595</td>
+      <td>10,504</td>
+      <td>6941</td>
+      <td>6818</td>
+      <td>6885</td>
+      <td>13,707</td>
+    </tr>
+    <tr>
+      <td>Macromolecule</td>
+      <td>10,123</td>
+      <td>6864</td>
+      <td>3418</td>
+      <td>10,344</td>
+      <td>6841</td>
+      <td>6818</td>
+      <td>6845</td>
+      <td>13,620</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>433</td>
+      <td>8</td>
+      <td>177</td>
+      <td>160</td>
+      <td>100</td>
+      <td>-</td>
+      <td>34</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>Heteroatom</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>R §work/R¶free</td>
+      <td>17.9/22.0</td>
+      <td>20.2/24.9</td>
+      <td>18.6/23.5</td>
+      <td>18.6/22.8</td>
+      <td>19.2/23.8</td>
+      <td>18.0/21.0</td>
+      <td>20.7/23.9</td>
+      <td>20.9/24.6</td>
+    </tr>
+    <tr>
+      <td colspan="9">Rms deviations from ideality</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.007</td>
+      <td>0.002</td>
+      <td>0.015</td>
+      <td>0.002</td>
+      <td>0.003</td>
+      <td>0.010</td>
+      <td>0.010</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.87</td>
+      <td>0.51</td>
+      <td>1.33</td>
+      <td>0.57</td>
+      <td>0.71</td>
+      <td>1.39</td>
+      <td>1.25</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <td colspan="9">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored regions (%)</td>
+      <td>97.5</td>
+      <td>97.9</td>
+      <td>97.3</td>
+      <td>97.9</td>
+      <td>98.6</td>
+      <td>94.6</td>
+      <td>97.1</td>
+      <td>97.5</td>
+    </tr>
+    <tr>
+      <td>Allowed regions (%)</td>
+      <td>2.3</td>
+      <td>2.1</td>
+      <td>2.7</td>
+      <td>1.9</td>
+      <td>1.4</td>
+      <td>5.4</td>
+      <td>2.9</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td colspan="9">B-factors (A2)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-value</td>
+      <td>39.1</td>
+      <td>64.7</td>
+      <td>35.5</td>
+      <td>47.0</td>
+      <td>50.0</td>
+      <td>91.0</td>
+      <td>42.1</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <td>Average B-factors</td>
+      <td>45.7</td>
+      <td>75.0</td>
+      <td>45.7</td>
+      <td>51.0</td>
+      <td>53.7</td>
+      <td>111.0</td>
+      <td>71.0</td>
+      <td>77.0</td>
+    </tr>
+    <tr>
+      <td>Average macromolecule</td>
+      <td>45.7</td>
+      <td>75.9</td>
+      <td>45.9</td>
+      <td>51.1</td>
+      <td>53.7</td>
+      <td>111.0</td>
+      <td>71.4</td>
+      <td>77.2</td>
+    </tr>
+    <tr>
+      <td>Average heteroatom</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>69.8</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Average water molecule</td>
+      <td>44.0</td>
+      <td>61.4</td>
+      <td>41.1</td>
+      <td>41.9</td>
+      <td>54.3</td>
+      <td>-</td>
+      <td>37.8</td>
+      <td>43.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses refer to the highest resolution bin.†Rmerge = ∑hkl ∑i | Ihkl, i -< Ihkl > | / ∑hkl< Ihkl > .‡Rpim = ∑hkl [1/(N – 1)]1/2 ∑i | Ihkl, i -< Ihkl > | / ∑hkl< Ihkl > .§Rwork = (∑ | |Fo | - |Fc | |) / (∑ | |Fo |).¶5% of data were used for the Rfree calculation._
 
 The recognition of PvCSPvk210 peptides by 2F2 is mediated mostly by residues localized in heavy chain complementarity-determining regions (HCDRs) 1, 2, and 3, and kappa chain complementarity-determining regions (KCDRs) 1 and 3. The PvCSPvk210 one turn of a 310-helix is positioned in the hydrophobic pocket formed by KCDR1 residues of the antibody (Figure 3C and D, Figure 3—figure supplement 3C, E, and G), and is stabilized by three H-bonds formed between A9 and the backbone of K.Gly91 and K.Phe96, and G10 and the sidechain of H.Ser58 (Figure 3E). The antibody-antigen complex buries 848 Å2 on the Fab (437 Å2 on HC and 411 Å2 on KC) and 1023 Å2 on the 210-4 peptide. Peptide residues 1GRDADG6 are positioned between HCDR1 and 3 and do not interact with the light chain (Figure 3C and D).
 
 2F2 binds to PvCSPvk210 peptides using both germline and somatically hypermutated residues. Nine germline-encoded aromatic residues form significant van der Waals interactions with the peptides, contributing a total of ~385 Å2 of buried surface area (BSA; Figure 3E, Figure 3—figure supplement 3C, E, and G). To accommodate arginine residues present in the sequence of the PvCSPvk210 peptides, the 2F2 paratope has an overall electronegative potential (Figure 3—figure supplement 4A). R3 and Q7 play a central role in mediating the Fab-peptide interactions, forming six H-bonds with both heavy and light chain residues of the antibody (Figure 3E), and contributing ~107 Å2 and ~ 156 Å2 of BSA, respectively.
 
-## Molecular basis of mAb 2E10.E9 recognition of the PvCSPvk247 central repeat
+### Molecular basis of mAb 2E10.E9 recognition of the PvCSPvk247 central repeat
 
 Unlike PvCSPvk210, PvCSPvk247 contains one predominant repeat motif; ‘ANGAGNQPG,’ with the exception of the first (EDGAGNQPG) and the last repeat (ANGAGGQAA) in the central region (Figure 1A). 2E10.E9 Fab binds peptides derived from PvCSPvk247 with affinity ranging from 0.507 µM (peptide 247-4) to 1.67 µM (peptide 247-1), as measured by ITC. Based on the binding stoichiometry derived from ITC, the 18-aa peptide 247-4 accommodates binding of one Fab, while 27-aa peptides 247-1, 247-2, and 247-3 are long enough to allow two Fabs to bind simultaneously (Figure 4A, Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig4-v2.jpg)
+
+**Figure 4.:** (A) Affinities of 2E10.E9 Fab for peptides 247-1, 247-2, 247-3, and 247-4 as measured by isothermal titration calorimetry (ITC). Open circles represent independent measurements. Mean binding constant (KD) and binding stoichiometry (N) values are shown above the corresponding bar. Error bars represent SEM. (B) Upper panel: sequences of peptides used in ITC with variable residues underlined. Dark gray denotes the core epitope of the peptide resolved in all X-ray crystal structures, and light gray shading indicates residues resolved in the corresponding X-ray crystal structures. Bottom panel: comparison of the conformations of PvCSP247 peptides in X-ray crystal structures, with peptides 247-2, 247-3, and 247-4 depicted in yellow, orange, and teal, respectively. (C) Top and side views of the 247-3 peptide (orange) in the binding groove of the 2E10.E9 Fab shown as surface representation (heavy chain [HC] shown in blue and kappa chain [KC] shown in white). (D) Comparison of the conformations adopted by the core epitope of peptides 247-2, 247-3, and 247-4 when bound to 2E10.E9. (E) Detailed interactions between Fab 2E10.E9 and peptide 247-3. H-bonds are shown as black dashes, peptide 247-3 is shown in orange, HC is shown in green, and KC is shown in gray. The Fab residues are annotated with H or K letters to indicate heavy and kappa light chain, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig4-figsupp2-v2.jpg)
 
 We obtained co-crystal structures of the 2E10.E9 Fab in complex with three different peptides: 247-3 and 247-4 at ~2.7 Å resolution, and 247-2 at 3.19 Å resolution (Table 1, Figure 4, Figure 3—figure supplement 3B, D, and F, Figure 4—figure supplement 2). In the 2E10.E9 Fab-247-2 co-crystal structure, two Fabs bind to one peptide, which is in agreement with the 2:1 stoichiometry established by ITC (Figure 4A). The core epitope of PvCSPvk247 peptides contains eight residues (3GAGNQPGA10) and adopts a similar coil conformation in all analyzed peptides when bound to 2E10.E9 (peptide backbone RMSD 0.48–1.0 Å), with only isolated turns (Figure 4B, Supplementary file 2). Although 2E10.E9 Fab binds peptides 247-2 and 247-3 containing the first (EDGAGNQPG) and the last repeat (ANGAGGQAA) motifs, the electron density of residues unique to these repeats was absent in the co-crystal structures obtained. This suggests that the antibody does not interact extensively with these variable residues that are outside the well-resolved conserved core (Figure 4B, Figure 4—figure supplement 2).
 
 2E10.E9 interacts with the PvCSPvk247 peptides using HCDRs 1, 2, and 3, and KCDR1 and 3, with the N-terminal part of the peptide positioned between HCDR1 and 3. Six germline-encoded aromatic residues, including K.Tyr32, K.Tyr92, K.Tyr94, K.Phe96, H.Tyr32, and H.Trp50, play a central role in peptide recognition, forming three H-bonds with G9, Ala10, and A13, and contributing 176 Å2 BSA to the relatively small paratope of this Fab (444 Å2 total BSA on the 2E10.E9 paratope; 588 Å2 total BSA on peptide 247-3) (Figure 3—figure supplement 3B, D, and F). Interestingly, HCDR3 H.Cys98 and H.Cys100 make a disulfide bond that positions H.Gly99 in an ideal position to form an H-bond with residue G9 of the peptide and mimic the stacking effect provided by aromatic sidechains (Figure 4E). Residue N6 of the PvCSPvk247 peptides is central to the interaction, forming four H-bonds with HCDR2 residues H.Thr30, H.Asn52, and H.Ser52A (Figure 4E).
 
-## Homotypic 2E10.E9 Fab-Fab interactions upon PvCSPvk247 repeat binding
+### Homotypic 2E10.E9 Fab-Fab interactions upon PvCSPvk247 repeat binding
 
 In the 2E10.E9 Fab-247-2 peptide co-crystal structure where two Fabs bind to one peptide, we observed multiple contacts between the two 2E10.E9 Fabs (Figure 5). Indeed, the two 2E10.E9 Fabs interact in a head-to-head binding mode at an ~146o angle (Figure 5A). Contacts between the two Fabs are mostly symmetric and involve mainly HCDR2 of both Fab A and B, as well as the KCDR3 of Fab A (Figure 5A and B). Fab-Fab interactions contribute 949 Å2 of BSA (482 Å2 on Fab A, 477 Å2 on Fab B). The interaction between neighboring 2E10.E9 Fabs is stabilized by five H-bonds; three between HCDR2 residues of both Fab A and B and two additional H-bonds between K.Tyr94 of Fab A, and H.Asn53 and H.Thr73 of Fab B (Figure 5B). Comparison of the 2E10.E9 variable gene sequences to the inferred germline precursor (IGHV9-3 and IGKV8-19) reveals that only one of the residues involved in Fab-Fab contacts has been somatically hypermutated (H.Ser52A), making this homotypic Fab-Fab interaction primarily germline-encoded in the context of binding its repeating epitope (Figure 5C).
 
@@ -75,9 +488,17 @@ In the 2E10.E9 Fab-247-2 peptide co-crystal structure where two Fabs bind to one
 
 **Figure 5.:** (A, B) 2E10.E9 Fabs that simultaneously recognize the 247-2 peptide contact each other through an interface consisting of mainly of heavy chain complementarity-determining region (HCDR)2 of both Fab A and B, as well as kappa chain complementarity-determining region (KCDR)3 of Fab A. The heavy chain (HC) of Fab A and B is colored light and dark blue, respectively. The kappa chain (KC) of Fab A and B is colored light and dark gray, respectively. HCDR1, 2, and 3 are colored light pink, dark pink, and purple, respectively. KCDR1, 2, and 3 are shown in light brown, dark brown, and red, respectively. The 247-2 peptide is depicted in yellow. Black dashed lines denote H-bonds. Residues forming Fab-Fab contacts are labeled with the position of the Fab (A or B) indicated in subscript. (C) Sequence alignment of monoclonal antibody (mAb) 2E10.E9 with its inferred germline precursor. Yellow highlight: residues involved in homotypic interactions; green highlight: residues involved in homotypic interactions that form H-bonds.
 
-## Central repeat flexibility upon binding of inhibitory antibodies to full-length PvCSP
+### Central repeat flexibility upon binding of inhibitory antibodies to full-length PvCSP
 
 Next, we characterized the binding of mAbs 2F2 and 2E10.E9 to full-length recombinant PvCSPvk210 and PvCSPvk247. Both mAbs exhibit fast associations to their respective PvCSP sequences, as revealed in biolayer interferometry (BLI) experiments (Figure 6A and C). However, mAb 2E10.E9 displays a relatively fast dissociation compared to mAb 2F2, which contributes to the lower overall binding affinity of this mAb to PvCSPvk247 compared to a higher binding affinity for the mAb 2F2-PvCSPvk210 interaction. Next, ITC measurements indicated that, as expected, both 2F2 and 2E10.E9 Fabs bind PvCSP with high stoichiometry indicative of multiple Fab copies interacting with a single PvCSP molecule. 2F2 Fab recognizes PvCSPvk210 with ~10 times higher affinity (0.242 µM) compared to the 2E10.E9 Fab-PvCSPvk247 interaction (2.21 µM), corroborating the binding kinetics data (Figure 6B and D). Size-exclusion chromatography coupled with multiangle light scattering (SEC-MALS) characterization of the Fab-PvCSP complexes revealed high binding stoichiometry with a molecular weight of ~522 kDa and ~463 kDa for the 2F2 Fab-PvCSPvk210 and 2E10.E9 Fab-PvCSPvk247 complexes, respectively (Figure 6E). These sizes correspond to approximately 10 2F2 Fab’s bound to one molecule of PvCSPvk210 and to approximately 9 2E10.E9 Fab’s bound to one molecule of PvCSPvk247. Although both ITC and SEC-MALS confirm the assembly of large complexes formed by multiple Fab’s binding to one PvCSP molecule, the exact Fab:PvCSP stoichiometry that ensues from these independent analyses is slightly different between the two techniques, which we attribute to the difficulty in obtaining precise concentration measurements for recombinant PvCSP and to the two experiments being performed at distinct concentrations.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig6-v2.jpg)
+
+**Figure 6.:** Binding kinetics of twofold dilutions of 2F2 IgG and Fab (A, upper panel and lower panel, respectively) to PvCSPvk210, and 2E10.E9 IgG and Fab (B, upper panel and lower panel, respectively) to PvCSPvk247, as measured by biolayer interferometry (BLI). Representative sensograms are shown in black and 2:1 model best fits in red. Data shown are representative of three independent measurements. Isothermal titration calorimetry (ITC) analysis of 2F2 Fab binding to PvCSPvk210 (C) and 2E10.E9 Fab binding to PvCSPvk247 (D) at 25°C. (C, top panels): raw data of PvCSPvk210 (5 µM) in the sample cell titrated with 2F2 Fab (240 µM) in the syringe. (D, top panels): raw data of PvCSPvk247 (5 µM) in the sample cell titrated with 2E10.E9 Fab (400 µM) in the syringe. (C, D, bottom panel): plot and trendline of heat of injectant corresponding to the raw data. Results from size-exclusion chromatography coupled with multiangle light scattering (SEC-MALS) for the Fab 2F2-PvCSPvk210 sample (E, left panel) and 2E10.E9 Fab-PvCSPvk247 (F, left panel) sample, where the Fabs are in molar excess. Measurement of the molar mass of the eluting complex is shown as a red line. Mean molar mass is indicated. SDS-PAGE analysis of resulting peaks 1 and 2 for 2F2 Fab-PvCSPvk210 (E, right panel) and 2E10.E9 Fab-PvCSPvk247 (F, right panel) samples from SEC-MALS. Each peak was sampled in reducing and nonreducing conditions as indicated by + and –, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72908/elife-72908-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Upper panels show representative NS EM (left panel) and cryo-EM (right panel) micrographs. Positions of representative individual particles are highlighted with white circles. Lower panels: representative NS EM (left panel) and cryo-EM (right panel) 2D class averages. Scale bars on micrographs: 100 nm. Scale bars on 2D classes: 10 nm.
 
 To investigate a possible structural ordering of the PvCSP central repeat as might be induced by the binding of multiple 2F2 and 2E10.E9 Fab’s, we performed negative stain electron microscopy (NS EM) and electron cryomicroscopy (cryo-EM) analyses of the SEC-purified Fab-PvCSP complexes (Figure 6—figure supplement 1). 2D class average images from the negative stain micrographs of the 2E10.E9 Fab-PvCSPvk247 complex revealed multiple 2E10.E9 Fabs spaced tightly against each other (Figure 6—figure supplement 1A, left panels). However, cryo-EM analysis of the same 2E10.E9 Fab-PvCSPvk247 complex indicated that Fab 2E10.E9 does not form regular, spiral assemblies with CSP, presumably because this type of complex would not accommodate the symmetric, head-to-head interactions between 2E10.E9 Fabs that were observed in the 2E10.E9 Fab-247-2 peptide crystal structure (Figure 5, Figure 6—figure supplement 1A, right panels).
 
@@ -105,55 +526,510 @@ MAb 2E10.E9 displays homotypic Fab-Fab interactions, as was previously described
 
 ## Materials and methods
 
-## CD spectroscopy
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4-2F2 Fab HC (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>2F2 Fab heavy chain gene in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4-2F2 KC (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>2F2 light chain gene in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4-2E10.E9 Fab HC (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>2E10.E9 Fab heavy chain gene in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4-2E10.E9 KC (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>2E10.E9 light chain gene in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4-PvCSPvk210-His6x (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>PvCSPvk210 gene with His tag in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.4- PvCSPvk247-His6x (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>PvCSPvk247 gene with His tag in pcDNA3.4 TOPO vector</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>FreeStyle 293F cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>2F2 hybridoma cell line</td>
+      <td>Nardin et al., 1982, Alan Cochrane, unpublished results</td>
+      <td>BEI Resources #MRA-184; RRID:CVCL_A7VR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>2E10.E9 hybridoma cell line</td>
+      <td>Nardin et al., 1982, Alan Cochrane, unpublished results</td>
+      <td>BEI Resources #MRA-185; RRID:CVCL_A7VT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco FreeStyle 293 Expression Medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12338026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco Hybridoma-SFM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12045076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FectoPRO DNA Transfection Reagent</td>
+      <td>VWR</td>
+      <td>Cat# 10118-444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 12483-020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>2F2 IgG (mouse monoclonal)</td>
+      <td>Nardin et al., 1982, Alan Cochrane, unpublished results</td>
+      <td>N/A</td>
+      <td>Purified from 2F2 hybridoma cell line; see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>2E10.E9 IgG (mouse monoclonal)</td>
+      <td>Nardin et al., 1982, Alan Cochrane, unpublished results</td>
+      <td>N/A</td>
+      <td>Purified from 2E10.E9 hybridoma cell line; see Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Carica papaya)</td>
+      <td>Papain from papaya latex</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>1210 Fab</td>
+      <td>Imkeller et al., 2018</td>
+      <td>N/A</td>
+      <td>See Materials and methods for concentrations and masses used, and buffer conditions</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3D11 Fab</td>
+      <td>Kucharska et al., 2020</td>
+      <td>N/A</td>
+      <td>See Materials and methods for concentrations and masses used, and buffer conditions</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>2F2 Fab</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods for concentrations and masses used, and buffer conditions</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>2E10.E9 Fab</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>See Materials and methods for concentrations and masses used, and buffer conditions</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-1 (GDRADGQPAGDRADGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-2 (GDRAAGQPAGDRAAGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-3 (GDRADGQPAGDRAAGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-4 (GDRAAGQPAGDRADGQP)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-5 (GDRAAGQPAGNGAGGQAA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-6 (GDRADGQPAGDRADGQPAGDRADGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-7 (GDRAAGQPAGDRAAGQPAGDRAAGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-8 (GDRADGQPAGDRAAGQPAGDRADGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-9 (GDRAAGQPAGDRAAGQPAGNGAGGQAA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>210-10 (GDRADGQPAGDRADGQPAGDRADGQPAGDRADGQPA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk210 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>247-1 (ANGAGNQPGANGAGNQPGANGAGNQPG)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk247 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>247-2 (EDGAGNQPGANGAGNQPGANGAGNQPG)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk247 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>247-3 (ANGAGNQPGANGAGNQPGANGAGGQAA)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk247 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>247-4 (ANGAGNQPGANGAGNQPG)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Derived from PvCSPvk247 repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NPNDx2 (PPPPNPNDPPPPNPNDPPPPNPND)</td>
+      <td>Kucharska et al., 2020</td>
+      <td>N/A</td>
+      <td>Derived from PbCSP ANKA repeat region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NANP5 (NANPNANPNANPNANPNANP)</td>
+      <td>Imkeller et al., 2018</td>
+      <td>N/A</td>
+      <td>Derived from PfCSP NF54 repeat region</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS 2016.5</td>
+      <td>Abraham et al., 2015; Berendsen et al., 1995</td>
+      <td>https://manual.gromacs.org/documentation/2016-current/index.html;RRID:SCR_014565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM22*</td>
+      <td>Best and Hummer, 2009; Best and Mittal, 2010; Lindorff-Larsen et al., 2012; MacKerell et al., 1998; Piana et al., 2011</td>
+      <td>https://www.charmm.org/charmm/?CFID=66837e22-4ee5-47ba-bcbf-b4b385c2397e&amp;CFTOKEN=0; RRID:SCR_014892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LINCS</td>
+      <td>Hess, 2008</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Particle-Mesh Ewald algorithm</td>
+      <td>Darden et al., 1993; Essmann et al., 1995</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Parrinello–Rahman algorithm</td>
+      <td>Parrinello and Rahman, 1981</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VMD</td>
+      <td>Humphrey et al., 1996</td>
+      <td>https://www.ks.uiuc.edu/Research/vmd/; RRID:SCR_001820</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matplotlib</td>
+      <td>Hunter, 2007</td>
+      <td>https://matplotlib.org/; RRID:SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MDTraj</td>
+      <td>McGibbon et al., 2015</td>
+      <td>https://www.mdtraj.org/1.9.5/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Octet Data AnalysisSoftware 9.0.0.6</td>
+      <td>ForteBio</td>
+      <td>https://www.fortebio.com/products/octet-systems-software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroCal ITC Origin7.0 Analysis Software</td>
+      <td>Malvern</td>
+      <td>https://www.malvernpanalytical.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRA</td>
+      <td>Wyatt</td>
+      <td>https://www.wyatt.com/products/software/astra.html; RRID:SCR_016255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/; RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>SBGrid Consortium</td>
+      <td>https://sbgrid.org/; RRID:SCR_003511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v2</td>
+      <td>Punjani et al., 2017</td>
+      <td>https://cryosparc.com/; RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>Scheres, 2012</td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/; RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>Kabsch, 2010</td>
+      <td>http://xds.mpimf-heidelberg.mpg.de/; RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>McCoy et al., 2007</td>
+      <td>https://www.phenix-online.org/; RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix (phenix.refine; phenix.real_space_refine)</td>
+      <td>Adams et al., 2010</td>
+      <td>https://www.phenix-online.org/; RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera/; RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>Goddard et al., 2018</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/; RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/; RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>The PyMOL Molecular Graphics System, version 1.8 Schrödinger, LLC.</td>
+      <td>https://pymol.org/2/#products; RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PDBePISA</td>
+      <td>Krissinel and Henrick, 2007</td>
+      <td>https://www.ebi.ac.uk/pdbe/pisa/; RRID:SCR_015749</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stride</td>
+      <td>Heinig and Frishman, 2004</td>
+      <td>http://webclu.bio.wzw.tum.de/stride/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Homemade holey gold grids</td>
+      <td>Marr et al., 2014</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Homemade carbon grids</td>
+      <td>Booth et al., 2011</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### CD spectroscopy
 
 The lyophilized samples of peptides 210-1, 210-2, 210-3, 210-4, 210-5, 247-1, 247-2, and 247-3 (Supplementary file 1) were suspended in pH 7.4 PBS buffer and diluted to 0.1 mg/mL. Spectra were collected using a Jasco J-1500 Spectropolarimeter with a cuvette path length of 0.1 cm, 2 s response time, 1 nm bandwidth, and a 100 nm/min scanning speed. Three spectra were collected at room temperature for each peptide.
 
-## MD simulations
+### MD simulations
 
 GROMACS 2016.5 (Abraham et al., 2015; Berendsen et al., 1995) was used to perform all-atom molecular simulations of the following seven peptides: 210-6, 210-7, 210-8, 210-9, 247-1, 247-2, and 247-3 (Supplementary file 1). The CHARMM22* (Best and Hummer, 2009; Best and Mittal, 2010; Lindorff-Larsen et al., 2012; MacKerell et al., 1998; Piana et al., 2011) force field and the CHARMM-modified TIP3P (TIPS3P) explicit water model (Jorgensen et al., 1983) were used for all simulations. PyMOL (Schrödinger, 2015) was used to design the peptides with acetylated N-terminus and amidated C-terminus. The peptides were first collapsed from their arbitrary extended state without any solvent (in vacuo) under NVT conditions. The last conformations from simulations in vacuo were used to initiate equilibrium simulations in water, with 20 replicas for each peptide.
 
 Peptides were solvated with water and 0.15 M NaCl in a rhombic dodecahedral box, with a side length of 4.0 nm. Periodic boundary conditions were applied, and energy minimization was carried out using the steepest descent algorithm. Lennard–Jones and short-range electrostatic interactions were computed with a cutoff of 9.5 Å. Long-range electrostatic interactions were computed with Particle-Mesh Ewald summation (Darden et al., 1993; Essmann et al., 1995), using a fourth-order interpolation and a grid spacing of 1.2 Å. All bonds were constrained using the LINCS algorithm (Hess, 2008). The system was brought to the specified temperature of 300 K and pressure of 1 atm under NPT conditions. 10 ns NPT simulations were performed with velocity-rescaling temperature coupling (Bussi et al., 2007) and Berendsen pressure coupling (Berendsen et al., 1984). Finally, simulations were carried out under NPT conditions with Parrinello–Rahman pressure coupling (Parrinello and Rahman, 1981) for 300 ns. The integration step was 2 fs, and atomic coordinates were recorded every 100 ps.
 
-## MD simulation analyses
+### MD simulation analyses
 
-Visual molecular dynamics (VMD) (Humphrey et al., 1996) was used to create snapshots of peptides, while all plots were created with Matplotlib (Hunter, 2007). The first 225 ns were excluded for computation of secondary structure propensities per residue, as well as for H-bonding contact maps. Secondary structure was assigned using the Python package MDTraj (McGibbon et al., 2015), which uses the DSSP algorithm (Nagy and Oostenbrink, 2014). An in-house script was used to compute H-bonding contact maps. Forward peptide-peptide H-bonds form between C=O of residue i and N–H of residue i + n. A forward H-bond was identified if the donor-acceptor distance (rON) and the hydrogen-donor-acceptor angle (θ) were less than 3.5 Å and 37° for n = 2 (γ-turn), 4.9 Å and 66° for n = 3 (β-turns), 4.5 Å and 60° for n = 4 (α-turn) and 3.5 Å and 40° for n ≥ 5. A reverse turn is formed between N–H of residue i and C=O of residue i + n, and identified if rON < 3.5 Å and θ < 60° (except for n = 3, for which θ < 40°). From a histogram of equilibrium end-to-end distances (d = distance between Cα of the first and last residues), the probabilities at each given d (P(d)) were used to compute a free energy profile (ΔG(d)) of the peptide’s end-to-end distances. The resulting potential of mean force (PMF) was then fitted to the quadratic function of elastic potential energy:(1)ΔG(d)=−kBTlnP(d)≅½k(d−d0)2
+Visual molecular dynamics (VMD) (Humphrey et al., 1996) was used to create snapshots of peptides, while all plots were created with Matplotlib (Hunter, 2007). The first 225 ns were excluded for computation of secondary structure propensities per residue, as well as for H-bonding contact maps. Secondary structure was assigned using the Python package MDTraj (McGibbon et al., 2015), which uses the DSSP algorithm (Nagy and Oostenbrink, 2014). An in-house script was used to compute H-bonding contact maps. Forward peptide-peptide H-bonds form between C=O of residue i and N–H of residue i + n. A forward H-bond was identified if the donor-acceptor distance (rON) and the hydrogen-donor-acceptor angle (θ) were less than 3.5 Å and 37° for n = 2 (γ-turn), 4.9 Å and 66° for n = 3 (β-turns), 4.5 Å and 60° for n = 4 (α-turn) and 3.5 Å and 40° for n ≥ 5. A reverse turn is formed between N–H of residue i and C=O of residue i + n, and identified if rON < 3.5 Å and θ < 60° (except for n = 3, for which θ < 40°). From a histogram of equilibrium end-to-end distances (d = distance between Cα of the first and last residues), the probabilities at each given d (P(d)) were used to compute a free energy profile (ΔG(d)) of the peptide’s end-to-end distances. The resulting potential of mean force (PMF) was then fitted to the quadratic function of elastic potential energy:
+
+$$
+ΔG(d)=−kBTlnP(d)≅½k(d−d_{0})^{2}
+$$
 
 where kB is the Boltzmann constant, T is the absolute temperature, k represents the stiffness or elastic modulus of the peptide, and d0 is the equilibrium end-to-end distance.
 
-## 2F2 and 2E10.E9 IgG expression and purification
+### 2F2 and 2E10.E9 IgG expression and purification
 
 Hybridoma cell lines for mAbs 2F2 and 2E10.E9 (BEI Resources MRA-184 and MRA-185, respectively) were cultured in Gibco Hybridoma-SFM (Thermo Fisher Scientific Cat#12045076) with 5–20% fetal bovine serum (Thermo Fisher Scientific Cat# 12483-020). After 5–7 days, cells were harvested and centrifuged. The supernatant containing 2F2 or 2E10.E9 IgG was purified via Protein G affinity chromatography (GE Healthcare) and size-exclusion chromatography (Superose 6 Increase 10/300 GL, GE Healthcare).
 
-## 2E10.E9 IgG papain digestion
+### 2E10.E9 IgG papain digestion
 
 To obtain Fab, 2E10.E9 IgG was digested with papain (Sigma-Aldrich Cat#P4762) at a 5:1 molar ratio for 16 h at 37°C in PBS, 10 mM EDTA, 20 mM cysteine, pH 7.4. Fc, and non-digested IgG were removed via Protein A affinity chromatography (GE Healthcare). 2E10.E9 Fab was subsequently purified via size-exclusion chromatography (Superdex 200 Increase 10/300 GL, GE Healthcare), concentrated, and diluted to 10 mg/mL with peptide 247-4 to immediately use in crystallization experiments.
 
-## 2F2 Fab and 2E10.E9 Fab expression and purification
+### 2F2 Fab and 2E10.E9 Fab expression and purification
 
 Variable light and heavy chains of mAb 2F2 and 2E10.E9 antibody genes were sequenced from the hybridomas (BEI Resources MRA-184 and MRA-185, respectively; Applied Biological Materials Inc). Sequenced regions were gene synthesized and cloned (GeneArt) into custom pcDNA3.4 expression vectors immediately upstream of human Igκ and Igγ1-CH1 domains. pcDNA3.4-Fab KC and Fab HC plasmids were co-transfected into HEK 293F cells for transient expression using FectoPRO DNA transfection reagent (Polyplus). Cells were cultured in Gibco FreeStyle 293 Expression Medium for 6–7 days and subsequently purified via a combination of KappaSelect affinity chromatography (GE Healthcare), cation exchange chromatography (MonoS, GE Healthcare), and size-exclusion chromatography (Superdex 200 Increase 10/300 GL, GE Healthcare).
 
-## Recombinant PvCSP expression and purification
+### Recombinant PvCSP expression and purification
 
 Constructs of full-length PvCSPvk210 (GenBank accession number: AAA29526.1) and PvCSPvk247 (GenBank accession number: AAA29506.1) were gene synthesized and cloned (GeneArt) into pcDNA3.4 expression vectors with a His6x tag. The resulting pcDNA3.4-PvCSPvk210-His6x and pcDNA3.4-PvCSPvk247-His6x plasmids were transiently transfected in HEK 293F cells using FectoPRO DNA transfection reagent (Polyplus), cultured in Gibco FreeStyle 293 Expression Medium, and purified by HisTrap FF affinity chromatography (GE Healthcare) and size-exclusion chromatography (Superdex 200 Increase 10/300 GL, GE Healthcare).
 
-## Cell lines
+### Cell lines
 
 HEK 293F cells (Thermo Fisher Scientific 12338026) and mAb 2F2 and 2E10.E9 hybridoma cell lines (BEI Resources MRA-184 and -185, respectively) were authenticated and validated to be mycoplasma-free by their respective commercial entities.
 
-## Biolayer interferometry
+### Biolayer interferometry
 
 BLI (Octet RED96, ForteBio) experiments were conducted to determine the binding kinetics of 2F2 and 2E10.E9 IgG and Fab to recombinant PvCSPvk210 and PvCSPvk247. PvCSPvk210 or PvCSPvk247 was diluted to 10 µg/mL in kinetics buffer (PBS, pH 7.4, 0.01% [w/v] BSA, 0.002% [v/v] Tween-20) and immobilized onto Ni-NTA biosensors (ForteBio). Subsequently, biosensors were dipped into wells containing dilutions of either 2F2 or 2E10.E9 IgG or Fab in kinetics buffer. For measurement of the dissociation rate, tips were immersed back into kinetics buffer after association. All data were analyzed using ForteBio’s Octet Data Analysis software 9.0.0.6, and curves were fitted to a 2:1 binding model given the presence of multiple epitopes of slightly different sequence composition for these mAbs within a single PvCSP molecule.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ITC experiments were performed with an Auto-iTC200 instrument (Malvern) at 25°C. Titrations were performed with 2F2 or 2E10.E9 Fab in the syringe in 15 successive injections of 2.5 µl. Full-length recombinant PvCSPvk210 and PvCSPvk247, and PvCSP-derived peptides (Supplementary file 1) were added to the calorimetric cell. All proteins and peptides were diluted in Tris-buffered saline (TBS; 20 mM Tris pH 8.0, and 150 mM NaCl). Full-length recombinant PvCSP was diluted to 5 µM and titrated with Fab at 240–400 µM. All PvCSP-derived peptides were diluted to 4–8 µM and titrated with 2F2 Fab at 100–125 µM or 2E10.E9 Fab at 180–220 µM. Experiments were performed at least in duplicates, and the mean and standard error of the mean are reported. ITC data were analyzed using the Micro-Cal ITC Origin 7.0 Analysis Software according to a 1:1 binding model.
 
-## Size-exclusion chromatography-multiangle light scattering
+### Size-exclusion chromatography-multiangle light scattering
 
 Full-length recombinant PvCSPvk210 or PvCSPvk247 was complexed with a molar excess of 2F2 or 2E10.E9 Fab and loaded on a Superose 6 Increase 10/300 GL column (GE Healthcare) using an Agilent Technologies 1260 Infinity II HPLC coupled inline with the following calibrated detectors: (i) MiniDawn Treos MALS detector (Wyatt); (ii) quasi elastic light scattering (QELS) detector (Wyatt); and (iii) Optilab TreX refractive index (RI) detector (Wyatt). Data processing was performed using the ASTRA software (Wyatt).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Purified 2F2 Fab was concentrated and diluted to 5 mg/mL with peptides 210-1, 210-2, 210-3, 210-4, and 210-5 (Supplementary file 1) in a 1:3 molar ratio. The 2F2 Fab-peptide complexes were mixed in a 1:1 ratio with the following conditions to obtain crystals: 0.2 M ammonium sulfate, 25% (w/v) PEG 4000, 0.1 M sodium acetate, pH 4.6 (2F2 Fab-210-1); 0.1 M CHES, pH 9.6%, and 20% (w/v) PEG 8000 (2F2 Fab-210-2); 0.2 M potassium acetate and 20% (w/v) PEG 3350 (2F2 Fab-210-3); 0.1 M sodium citrate, pH 5.0, and PEG 6000 (2F2 Fab-210-4); and 0.2 M disodium tartrate and 20% (w/v) PEG 3350 (2F2 Fab-210-5). Crystals appeared after 1–3 days and were cryoprotected in 15% (v/v) ethylene glycol (2F2 Fab-210-1 and 2F2 Fab-210-3), 20% (v/v) ethylene glycol (2F2 Fab-210-2 and 2F2 Fab-210-5) or 25% glycerol (2F2 Fab-210-4), before being flash-frozen in liquid nitrogen.
 
@@ -161,10 +1037,10 @@ Purified 2E10.E9 Fab was concentrated and diluted to 10 mg/mL with peptide 247-4
 
 Data were collected at the 23-ID-D or 23-ID-B beamlines at the Argonne National Laboratory Advanced Photon Source. All datasets were processed and scaled using XDS (Kabsch, 2010). The structures were determined by molecular replacement using Phaser (McCoy et al., 2007). Refinement of the structures was performed using phenix.refine (Adams et al., 2010) and iterations of refinement using Coot (Emsley et al., 2010). Access to all software was supported through SBGrid (Morin et al., 2013). Prediction of secondary structure of the co-crystallized peptides was performed with Stride (Heinig and Frishman, 2004). Fab-peptide and Fab-Fab contacts were analyzed using the PDBePisa server (Krissinel and Henrick, 2007). The detection of intramolecular H-bonds in peptides was performed with PyMOL (Schrödinger, 2015).
 
-## Negative stain EM
+### Negative stain EM
 
 2F2 Fab-PvCSPvk210 or 2E10.E9 Fab-PvCSPvk247 complexes were purified on a Superose 6 Increase 10/300 GL column (GE Healthcare) and diluted to 50 µg/mL. 2F2 Fab-210-6, 2E10.E9 Fab-247-2, 3D11 Fab-NPNDx2, and 1210 Fab-NANP5 peptide complexes were purified on a Superdex 200 Increase 10/300 GL column (GE Healthcare) and diluted to 25 µg/mL. Samples were deposited onto homemade carbon film coated grids and stained with 2% uranyl formate. Specimens were imaged with a FEI Tecnai T20 electron microscope operating at 200 kV with an Orius charge-coupled device (CCD) camera (Gatan Inc). A calibrated 34,483× magnification, resulting in a pixel size of 2.71 Å, was used for data collection. Particle selection, extraction, and three rounds of 2D classification with 50 classes were performed with Relion (Scheres, 2012) and cryoSPARC v2 (Punjani et al., 2017).
 
-## Cryo-EM data collection and image processing
+### Cryo-EM data collection and image processing
 
 2F2 Fab-PvCSPvk210 and 2E10.E9 Fab-PvCSPvk247 complexes were purified via Superose 6 Increase 10/300 GL chromatography (GE Healthcare) and concentrated to 0.5 mg/mL. 3 µL of the sample was deposited on homemade holey gold grids (Marr et al., 2014), which were glow-discharged in air for 15 s before use. Samples were blotted for 12.0 s and subsequently plunge-frozen in a mixture of liquid ethane and propane (Tivol et al., 2008) using a modified FEI Vitrobot (maintained at 4°C and 100% humidity). Data collection was performed with a FEI Tecnai F20 microscope operated at 200 kV with a K2 camera (Gatan Inc). A calibrated 34,483× magnification, resulting in a pixel size of 1.45 Å, and defocus range between 1.5 and 2.8 µm were used for data collection. Exposures were fractionated as movies of 30 frames with a total exposure of 35 electrons/Å2. A total of 269 movies were obtained for the 2E10.E9 Fab-PvCSPvk247 complex and 169 movies for the 2F2 Fab-PvCSPvk210 complex. Image processing was carried out in cryoSPARC v2 (Punjani et al., 2017). Initial specimen motion correction, exposure weighting, and CTF parameters estimation were done using patch-based algorithms. 100,133 and 87,287 particle images were extracted from micrographs of 2E10.E9 Fab-PvCSPvk247 and 2F2 Fab-PvCSPvk210 complex, respectively, and subjected to 4–5 rounds of 2D classification.

@@ -37,7 +37,7 @@ Here, we distinguished the rule-based chunking model from the word-based models 
 
 ## Results
 
-## Word sequences and model predictions
+### Word sequences and model predictions
 
 Participants were instructed to parse a sequence of words into chunks and each chunk consisted of two words. The words were drawn from two categories, that is living (L) and nonliving (N) things. The experiment contrasted two conditions in which the chunks were constructed based on different rules. In one condition, referred to as the same-category condition, the two words in a chunk belonged to the same semantic category (Figure 1A, upper panel). In the other condition, referred to as the different-category condition, the two words in a chunk were drawn from different categories (Figure 1A, lower panel). Based on these rules, there were two valid chunks in the same-category condition, that is LL and NN, and also two valid chunks in the different-category condition, that is NL and LN.
 
@@ -45,17 +45,33 @@ The same- and different-category conditions were presented in separate blocks. I
 
 Simulations of the neural responses to the alternating- and random-order sequences by the three models are shown in Figure 2 for both the same- and different-category conditions. The lexical property model considers two neural populations that idealize tuning to living and nonliving word meanings, respectively. Since the two neural populations are anti-correlated, only the neural population tuned to living things is shown (Figure 2AB). The simulated neural response analyzed in the frequency domain demonstrates that neither the population shows a spectral peak at 1 Hz, that is the chunk rate, in the spectrum. In contrast to the lexical property model, the semantic relatedness model and the rule-based chunking model predict a 1 Hz response peak (red and green curves respectively in Figure 2AB).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55613/elife-55613-fig2-v2.jpg)
+
+**Figure 2.:** (A) Simulations for alternating-order sequences. The left panel illustrates the response waveform for example sequences. Neural responses predicted by the lexical property and semantic relatedness models differ by a time lag between same- and different-category conditions. The rule-based chunking model, however, predicts identical responses in both conditions. The middle panel shows the predicted spectrum averaged over all sequences in the experiment. The semantic relatedness model and the rule-based chunking model both predict a significant 1 Hz response, while the lexical property model predicts a significant response at 0.5 Hz and its odd order harmonics. The right panel shows predicted phase difference between same- and different-category conditions at 1 Hz. The phase difference predicted by the lexical property model is uniformly distributed. The semantic relatedness model predicts a 180° phase difference between conditions, while the rule-based chunking model predicts a 0° phase difference. (B) Simulations for random-order sequences. The semantic relatedness model and rule-based model predict a significant 1 Hz response. They generate different predictions, however, about the 1 Hz phase difference between conditions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55613/elife-55613-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Procedures to simulate the lexical property model and the semantic relatedness model. The left panel illustrates the representation of word features. Each feature dimension is represented by a pulse sequence, with a pulse placed at the onset of each word and the amplitude of the pulse modulated by the word feature. Two feature dimensions are illustrated here. The predicted neural response is simply the feature sequence convolving a response function, which is a 500 ms Gaussian window. For the semantic relatedness model, the correlation coefficient between binary vectorial word representations is used to measure semantic similarity between words. In the pule sequence, the pulse at the onset of each word denoted the one minus the correlation between the current word and the previous word. (B) Potential waveforms for the chunk response. The rule-based chunking model only assumes a reliable response to each chunk and does not constrain the response waveform. Simulations show that the core model predictions, that is a 1 Hz spectral peak and a 180° phase difference between conditions, are not affected by the response waveform.
+
 A more fundamental difference between the semantic relatedness model and rule-based chunking model lies in their predictions about the 1 Hz response phase. The semantic relatedness model predicts a 180° phase difference between same- and different-category conditions, while the rule-based chunking model predicts a 0° phase difference between conditions (Figure 2). For the alternating-order sequence, these predictions are straightforward: These sequences are offset by one word between the same- and different-category conditions. Consequently, neural activity tracking semantic relatedness between words is offset by the duration of a word between conditions. For neural activity at 1 Hz, this time lag lead to a 180° phase difference. For the random-order sequence, although less straightforward, model simulation shows that the 1 Hz response has a 180° phase difference between conditions. For the rule-based model, however, the response is aligned with the chunk boundaries, which are not affected by the conditions and sequence types. Therefore, the rule-based model predicts the same response phase, that is a 0° phase difference, for the same- and different-category conditions.
 
 In summary, the three models considered in this study lead to different predictions about the neural responses (Figure 2AB). Details about the model simulations are given in Figure 2—figure supplement 1A. The lexical property model and the semantic relatedness model assume ideal tuning to living/nonliving things. In the following, we turn to the actual neural responses obtained using MEG and evaluate their consistency with the simulations made for the three different models.
 
-## Rule-dependent neural tracking of Alternating-order sequences
+### Rule-dependent neural tracking of Alternating-order sequences
 
 The MEG responses were separately averaged for the same- and different-category conditions and the mean response was transformed to the frequency domain. We first analyzed the MEG responses to the alternating-sequences. The response spectrum averaged over all MEG gradiometers showed a clear peak at 1 Hz (Figure 3A, left two plots). The 1 Hz response power was significant in both conditions (F32,64 = 5.8, p=2.0 × 10−9 and F32,64 = 6.5, p=2.1 × 10−10 for the same- and different-category conditions respectively; F-test, FDR corrected). The 1 Hz spectral peak was consistent with the semantic relatedness model and the rule-based chunking model, but not with the lexical property model (Figure 2A). On top of the 1 Hz response peak, a 2 Hz response peak was clearly observed and was significant (F32,64 = 45.8, p=9.7 × 10−33 and F32,64 = 35.9, p=1.4 × 10−29 for the same- and different-category conditions respectively; F-test, FDR corrected). However, no significant peak was observed at 0.5 Hz (F32,64 = 1.3, p=0.17 and F32,64 = 1.0, p=0.52 for the same- and different-category conditions respectively; F-test, FDR corrected).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55613/elife-55613-fig3-v2.jpg)
+
+**Figure 3.:** (A) The response power spectrum averaged over participants and MEG gradiometers. A 1 Hz response peak and a 2 Hz response peak are observed. The shaded area covered 1 SEM over participants on each side. (B) The 1 Hz and 2 Hz response power. There is no significant difference between conditions. (C, D) Response topography (gradiometers) and source localization results, averaged over participants. Sensors (shown by black dots) and vertices that have no significant response (p>0.05; F-test; FDR corrected) are not shown in the topography and localization results. The 1 Hz and 2 Hz responses both show bilateral activation. The neural source localization results are shown by the dSPM values and vertices with dSPM smaller than the min value in the color bar are not shown. (E) Phase difference between the same-category and different-category conditions at 1 Hz. The topography shows the distribution of phase difference across MEG sensors (one magnetometers and two gradiometers in the same position are circular averaged). The topography is circular averaged over participants. The histogram shows the phase difference distribution for all 306 MEG sensors. The phase difference is closer to 0° (predicted by the rule-based chunking model) than 180° (predicted by the semantic relatedness model). (F) Waveform averaged over trials and subjects (the second PC across MEG sensors). The waveform is filtered around 1 Hz and is highly consistent between the same- and the different-category conditions. *p<0.05, **p<0.005
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55613/elife-55613-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Individual response spectrum and phase difference. In the response spectrum, each curve is the result from a participant (averaged over alternating- and random-order sequences with both same- and different-category chunks). A 1 Hz spectral peak can be seen in 14 out of 16 participants. In the phase difference (averaged over alternating- and random-order sequences), each point on the unit circle is the result from a participant. In 14 out of 16 participants, the phase difference is between −45° and 45°. (B) Waveform of the first and second PC across all MEG sensors, which is consistent between the same- and different category conditions. (C) Region of interest (ROI) analysis of 1 Hz power. The 1 Hz power in two ROIs were extracted (90th percentile). The two ROIs include one in the frontal lobe (shown in red/blue in the left/right hemisphere) and one in the temporal lobe. In the bar graph, each marker denotes the response to each kind of sequence and each bar shows the power averaged over all sequences. *p<0.05, **p<0.005.
+
 We then analyzed the phase difference between same- and different-category conditions at 1 Hz. In all the 306 MEG sensors, the phase difference averaged over participants was closer to 0° than 180° (Figure 3E), and in 258 sensors the effect was significant (p<0.01, bootstrap, see Materials and methods, FDR corrected). These results were consistent with the rule-based chunking model (Figure 2A). The phase difference averaged over all MEG sensors was significantly closer to 0° than 180° (p=1 × 10−4, bootstrap, see Materials and methods). The mean phase difference was 0.5° and the 99% confidence interval ranged from −22.9° to 18.7°. The main results on response spectrum and response phase difference could be reliably observed in individual participants (Figure 3—figure supplement 1A). To further illustrate the response phase difference in the time domain, we analyzed the response waveforms. The Principal Component Analysis (PCA) was employed to extract major response patterns from all MEG sensors. The first PC captured the MEG response to the sound onset (Figure 3—figure supplement 1B) and the second PC captured the 1 Hz response, which oscillate in phase in the same- and different-category conditions (Figure 3F).
 
-## Rule-dependent neural tracking of Random-order sequences
+### Rule-dependent neural tracking of Random-order sequences
 
 The MEG responses to random-order sequences were analyzed the same way as the responses to alternating-order sequences, and the results were similar: In the response spectrum, a clear peak was observed at 1 Hz (Figure 3A, right two plots). The 1 Hz response power was significant in both conditions (F32,64 = 4.5, p=2.6 × 10−7 and F32,64 = 5.9, p=1.5 × 10−9 for the same- and different-category conditions respectively; F-test, FDR corrected). The 1 Hz response power was not significantly different between random- and alternating-order sequences (F32,32 = 1.0, p=0.99 and F32,32 = 1.1, p=0.90 for same- and different-category conditions respectively; F-test, FDR corrected; Figure 3B). The responses to random-order sequences also showed a significant 2 Hz response peak (F32,64 = 48.5, p=1.7 × 10−33 and F32,64 = 44.6, p=2.0 × 10−32 for the same- and different-category conditions respectively; F-test, FDR corrected). The peak at 0.5 Hz was not significant (F32,64 = 0.75, p=0.81 and F32,64 = 0.91, p=0.61 for the same- and different-category conditions respectively; F-test, FDR corrected). At 1 Hz, the phase difference between conditions was closer to 0° than 180° in all MEG sensors (Figure 3E), and the effect was significant in 196 sensors (p<0.01, bootstrap, see Materials and methods, FDR corrected). The phase difference averaged over all MEG sensors was significantly closer to 0° than 180° (p=4 × 10−4, bootstrap, see Materials and methods). The mean phase difference was 20.3° and the 99% confidence interval over participants ranged from −0.1° to 56.6°.
 
@@ -87,11 +103,11 @@ Finally, the chunk-rate response in the current study is consistent with the rul
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Sixteen participants took part in the study (19–27 years old; mean age 22.6; eight female). All participants were right-handed, with no self-reported hearing loss or neurological disorders. The experimental procedures were approved by the Research Ethics Committee of the College of Medicine, Zhejiang University (2019–047) and the Research Ethics Committee of Peking University (2019-02-05). The participants provided written consent and were paid.
 
-## Words and sentences
+### Words and sentences
 
 All words were disyllabic words in mandarin Chinese and each syllable was a morpheme. For the noun sequences, each word was selected from a pool of 240 disyllabic concrete nouns. These concrete nouns equally divided into two categories, that is living (L) and nonliving (N) things. Living things further divided into 2 subcategories, that is animals (N = 60; e.g., monkey, panda) and plants (N = 60; e.g., tulip, strawberry). Nonliving things also divided into two subcategories, that is small manipulatable objects (N = 60; e.g., teacup, toothbrush) and large non-manipulatable objects (N = 60; e.g., playground, hotel). In each noun sequence, all living things were randomly drawn from a subcategory, that is animals or plants, and all nonliving things were also randomly drawn from a subcategory, that is manipulatable or non-manipulatable objects. Details about how the nouns constructed noun sequences are provided in the Sequence Structure section.
 
@@ -99,7 +115,7 @@ Each disyllabic word was independently synthesized by the iFLYTEK synthesizer (h
 
 When constructing sequences, the synthesized disyllabic words were directly concatenated, without any additional pause in between. Therefore, words were isochronously presented at 2 Hz. For speech stimuli generated according to this procedure, each disyllabic word was an acoustically independent unit and larger chunks consisting of multiple words had no acoustically defined boundaries.
 
-## Sequence structures
+### Sequence structures
 
 Pairs of nouns constructed chunks and chunks further constructed sequences. The experiment compared two conditions in which the chunks were constructed based on different rules. For the same-category condition, the two nouns in each chunk belonged to the same semantic category. For the different-category condition, however, the two nouns in each chunk were from different semantic categories. Since the study only considered two categories of words, there were two valid chunks in the same-category condition, that is LL and NN, and two valid chunks in the different-category, that is NL and LN. Each chunk was 1 s in duration.
 
@@ -107,7 +123,7 @@ Each sequence consisted of 12 chunks and therefore was 12 s in duration. In each
 
 The alternating-order sequences had a highly regular structure, which led to a simple relationship between the alternating-order sequences in same- and different-category conditions: Any alternating-order sequence in the different-category condition could be converted to a same-category sequence by removing the first word in the sequence. Attributable to this property, the neural response phase could conveniently distinguish the word- and phrase-based models in Figure 2. Nevertheless, this property also gave rise to an alternative strategy that could detect invalid chunks based on the same set of rules in both the same- and different-category conditions. For this strategy, the participants ignored the first word of each sequence in the different-category condition and treated the rest of the sequence as a same-category sequence. To eliminate this alternative strategy and to ensure that participants had to apply different rules in the same- and different-category conditions, the random-order sequences were designed as fillers to increase variability.
 
-## Experimental procedures and tasks
+### Experimental procedures and tasks
 
 Participants were familiarized with the synthesized words at the beginning of each experiment. In the familiarization session, after hearing a word, the participants pressed a key to see the word on a screen. Then, the participants could press one key to hear the word again or press another key to hear the next word.
 
@@ -117,11 +133,11 @@ Before MEG recording, participants received training. The same-category conditio
 
 During the practice session and during the MEG experiment, participants had to distinguish normal and outlier sequences and indicated their decisions by pressing different keys at the end of each sequence. After the key press, the next sequence was presented after a silent interval randomized between 1 s and 2 s (uniform distribution). The practice session ended after the participants made four correct responses in five consecutive sequences. The MEG experiment started after participants finished the practice session for the different-category condition.
 
-## Data acquisition
+### Data acquisition
 
 Neuromagnetic responses were recorded using a 306-sensor whole-head MEG system (Elekta-Neuromag, Helsinki, Finland) at Peking University, sampled at 1 kHz. The system had 102 magnetometer and 204 planar gradiometers. Four MEG-compatible electrodes were used to record EOG at 1000 Hz. To remove ocular artifacts in MEG, the horizontal and vertical EOG were regressed out from the recordings using the least-squares method. Four head position indicator (HPI) coils were used to measure the head position inside MEG. The positions of three anatomical landmarks (nasion, left, and right pre-auricular points), the four HPI coils, and at least 200 points on the scalp were also digitized before experiment. For MEG source localization purposes, structural Magnetic Resonance Imaging (MRI) data were collected from all participants using a Siemens Magnetom Prisma 3 T MRI system (Siemens Medical Solutions, Erlangen, Germany) at Peking University. A 3-D magnetization-prepared rapid gradient echo T1-weighted sequence was used to obtain 1 × 1 × 1 mm3 resolution anatomical images.
 
-## Data processing
+### Data processing
 
 In each condition, normal and outlier sequences were mixed and presented in a random order. However, only the neural responses to normal sequences were analyzed. Temporal Signal Space Separation (tSSS) was used to remove the external interference from MEG signals (Taulu and Hari, 2009). Since the current study only focused on responses at 0.5 Hz, 1 Hz, and 2 Hz, the MEG signals were bandpass filtered between 0.3 and 2.7 Hz using a linear-phase finite impulse response (FIR) filter (−6 dB attenuation at the cut-off frequencies, 10 s Hamming window). The frequency response curve of the FIR filter was compensated in the response spectrum.
 
@@ -131,42 +147,48 @@ The MEG signals were further denoised using a semi-blind source separation techn
 
 To illustrate the response waveform, the PCA was employed to transform the 306-channel MEG data into components. Responses in the same- and different-category conditions and responses to the alternating- and random-order sequences were pooled in the PCA analysis. The first two PC were shown in Figure 3—figure supplement 1B and the 2nd PC, which captured the 1 Hz response, was filtered around 1 Hz and shown in Figure 3F (FIR filter with 2 s Hamming window, cut-off frequency: 0.75 and 1.25 Hz).
 
-## Frequency-domain analysis
+### Frequency-domain analysis
 
 In the frequency-domain analysis, to avoid the response to the sound onset, the response during the first two seconds of each trial were removed. Consequently, the neural response was 10 s in duration for each trial. The average of all trials was transformed into the frequency domain using the Discrete Fourier Transform (DFT) without any additional smoothing window. The frequency resolution of the DFT analysis was 1/10 Hz. If the complex-valued DFT coefficient at frequency f was denoted as X(f), the response power and phase were |X(f)|2 and ∠X(f), respectively. The DFT was separately applied to each MEG sensor. For the MEG response power analysis, responses from the two collocated gradiometers were always averaged. When showing the spectrum, all MEG gradiometers were averaged. For the phase analysis, all magnetometers and gradiometers were separately analyzed. The circular mean was used to average the neural response phase over participants or sensors.
 
-## Source localization
+### Source localization
 
 The MEG responses averaged over trials were mapped into source space using cortex constrained minimum norm estimate (MNE) (Hämäläinen and Ilmoniemi, 1994), implemented in the Brainstorm software (Tadel et al., 2011). The T1-weighted MRI images were used to extract the brain volume, cortex surface, and innermost skull surface using the Freesurfer software (http://surfer.nmr.mgh.harvard.edu/). In the MRI images, the three anatomical landmarks (nasion, left, and right pre-auricular points) were marked manually. Both three anatomical landmarks and digitized head points were used to align the MRI images with MEG sensor array. The forward MEG model was derived based on the overlapping sphere model (Huang et al., 1999). The identity matrix was used as noise covariance. Source-space activation was measured by the dynamic statistical parametric map (dSPM) (Dale et al., 2000) and the value was in arbitrary unit (a.u.). Individual source-space responses, consisting of 15,002 elementary dipoles over the cortex, was rescaled to the ICBM 152 brain template (Fonov et al., 2011) for further analyses.
 
-## Source-space region of interest (ROI) analysis
+### Source-space region of interest (ROI) analysis
 
 Two ROIs were defined in each hemisphere. A frontal-lobe ROI included the pars opercularis and pars triangularis, and a temporal-lobe ROI included the superior temporal area. Anatomical areas are defined according to an automated landmark-based registration algorithm (Desikan et al., 2006). In source space, the response of all dipoles were transformed to the frequency domain, and the 90th percentile of response power was calculated for each ROI, at each frequency. When comparing the response between ROIs, the results were averaged over the alternating-order and random-order sequences and over the same-category and different-category conditions.
 
-## Model simulations
+### Model simulations
 
 Pulse sequence: In all three models, the smallest unit being considered was the word, and the model output was updated word by word. Therefore, in the simulations, each model was first simulated using a pulse sequence (Figure 2—figure supplement 1A), in which a pulse was placed at the onset of each word and the pulse amplitude was described in the following. The lexical property model and the semantic relatedness model were simulated based on lexical features. For the model illustrated in Figure 2, only two features were considered, that is living and nonliving things. Each feature took a binary value, that is one when the feature was present and 0 otherwise, and the pulse amplitude for each word equaled this binary value. The semantic relatedness model built on the lexical property model: The semantic relatedness between the current word and the previous word was characterized by the correlation coefficient between lexical representations (Broderick et al., 2018). The correlation coefficient was a scalar. Additionally, since the neural response to a stimulus is usually weaker instead of stronger if the stimulus is preceded by a similar stimulus, we used one minus the correlation coefficient to modulate a pulse sequence. In the rule-based chunking model, pulses of unit amplitude were placed at the chunk onset.
 
-## Simulate neural response waveform
+### Simulate neural response waveform
 
 The neural responses were smooth waveforms rather than sharp pulses. Therefore, neural response waveforms were further simulated by convolving the pulse sequence with a response function, which was a 500 ms duration Gaussian window. Here, the rule-based chunking model was simulated by a response time locked to the chunk onset. In general, however, the model only assumed a consistent response within the duration of a chunk. Results in Figure 2—figure supplement 1B confirmed that the key predictions of the model were not affected by the waveforms.
 
-## Statistical tests
+### Statistical tests
 
-## Spectral peak
+#### Spectral peak
 
-An F-test was used to test if the power at a target frequency fT was significantly higher than the power in neighboring frequency bins (one bin on each side). The power ratio was defined asPR(fT)=2∑1≤k≤N|Xk(fT)|2/∑1≤k≤N(|Xk(fT−Δf)2+|Xk(fT+Δf)|2),where X was the complex-valued DFT coefficient defined in Frequency-domain analysis section, fT±Δf denoted the two neighboring frequency bins, and k denoted data from the kth participant.
+An F-test was used to test if the power at a target frequency fT was significantly higher than the power in neighboring frequency bins (one bin on each side). The power ratio was defined as
+
+$$
+PR(f_{T})=2\sum1\leqk\leqN|X_{k}(f_{T})|^{2}/\sum1\leqk\leqN(|X_{k}(f_{T}−Δf)^{2}+|X_{k}(f_{T}+Δf)|^{2}),
+$$
+
+where X was the complex-valued DFT coefficient defined in Frequency-domain analysis section, fT±Δf denoted the two neighboring frequency bins, and k denoted data from the kth participant.
 
 Under the null hypothesis, that is no difference between the power at the target and neighboring frequency bins, the power ratio was subject to an F(2N,4N) distribution for a single-sensor recording averaged over N independent participants (Dobie and Wilson, 1996). Here, response power was calculated over sensors or dipoles and the degree of freedom would further increase if the sensors were not fully correlated. However, since it was difficult to quantify the increase in degree of freedom, we conservatively assumed that the power ratio remained following an F(2N,4N) distribution. The significance test was applied to the response power at the 0.5 Hz, 1 Hz and 2 Hz. A false discovery rate (FDR) correction was applied to these frequencies.
 
-## Power difference between conditions
+#### Power difference between conditions
 
 The F-test was used to compare the power at a target frequency between conditions. The response power comparison was performed between two conditions in which the response power was both significant at target frequency. The power ratio between conditions was subject to an F(2N,2N) distribution, where N was the number of participants. Only in the ROI analysis, since the responses were averaged over the alternating-order and random-order sequences, and over the same-category and different-category conditions, the power ratio test was based on an F(8N,8N) distribution.
 
-## Response phase
+#### Response phase
 
 A test based on bias-corrected and accelerated bootstrap (Efron and Tibshirani, 1994) was used to test whether the response phase difference was closer to 0° or 180°. In the bootstrap procedure, all the participants were resampled with replacement 100,000 times. The test was two-sided. If the resampled phase difference was closer to 0° for A times, the significance level was 2 min(A + 1, 100001−A)/100001. Furthermore, the 99% confidence interval of the phase difference was also calculated based on the resampled data. It was measured by the smallest angle that could cover 99% of the resampled phase difference.
 
-## Post-hoc effect size calculation
+#### Post-hoc effect size calculation
 
 On top of the showing individual results in Figure 3—figure supplement 1A, an effect size analysis was applied to the 1 Hz spectral peak to validate that the sample size was appropriate. In this analysis, we applied a paired t-test to compare the power at the target frequency and the power averaged over two neighboring frequencies (both in dB scales). Such a t-test had weaker power than the F-test (Dobie and Wilson, 1996) but was easy to calculate the effect size using the G*Power Version 3.1 (Faul et al., 2007). We calculated d and Power based on the mean and standard deviation (reported in Supplementary file 1). For the effect size observed in the data set, the study was powerful with the described sample population and the α level of 0.05.

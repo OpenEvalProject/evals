@@ -18,22 +18,22 @@
 
 ### Affiliations
 
-1. https://ror.org/056d84691 Department of Neurobiology, Care Sciences and Society, Division of Clinical Geriatrics, Karolinska Institutet Stockholm Sweden
-2. https://ror.org/01tm6cn81 Department of Physics, Goteborg University Goteborg Sweden
-3. https://ror.org/00cyydd11 University of Eastern Finland Kuopio Finland
-4. https://ror.org/056d84691 Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden
-5. https://ror.org/01tm6cn81 Department of Psychiatry and Neurochemistry, Institute of Neuroscience and Physiology, the Sahlgrenska Academy at the University of Gothenburg Mölndal Sweden
-6. https://ror.org/04vgqjj36 Clinical Neurochemistry Laboratory, Sahlgrenska University Hospital Mölndal Sweden
-7. https://ror.org/02jx3x895 Department of Neurodegenerative Disease, UCL Institute of Neurology London United Kingdom
-8. https://ror.org/02wedp412 UK Dementia Research Institute at UCL London United Kingdom
+1. Department of Neurobiology, Care Sciences and Society, Division of Clinical Geriatrics, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+2. Department of Physics, Goteborg University Goteborg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+3. University of Eastern Finland Kuopio Finland ([ROR:00cyydd11](https://ror.org/00cyydd11))
+4. Department of Clinical Neuroscience, Karolinska Institutet Stockholm Sweden ([ROR:056d84691](https://ror.org/056d84691))
+5. Department of Psychiatry and Neurochemistry, Institute of Neuroscience and Physiology, the Sahlgrenska Academy at the University of Gothenburg Mölndal Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))
+6. Clinical Neurochemistry Laboratory, Sahlgrenska University Hospital Mölndal Sweden ([ROR:04vgqjj36](https://ror.org/04vgqjj36))
+7. Department of Neurodegenerative Disease, UCL Institute of Neurology London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+8. UK Dementia Research Institute at UCL London United Kingdom ([ROR:02wedp412](https://ror.org/02wedp412))
 9. Hong Kong Center for Neurodegenerative Diseases, Clear Water Bay Hong Kong China
-10. https://ror.org/01y2jtd41 Wisconsin Alzheimer’s Disease Research Center, University of Wisconsin School of Medicine and Public Health, University of Wisconsin-Madison Madison United States
-11. https://ror.org/00ggpsq73 Institute of Cognitive Neurology and Dementia Research (IKND), Otto-von-Guericke University Magdeburg Magdeburg Germany
-12. https://ror.org/00ggpsq73 German Center for Neurodegenerative Diseases (DZNE), Otto-von-Guericke University Magdeburg Magdeburg Germany
-13. https://ror.org/03d1zwe41 Center for Behavioral Brain Sciences, University of Magdeburg Magdeburg Germany
-14. https://ror.org/02jz4aj89 Maastricht University Maastricht Netherlands
-15. https://ror.org/002pd6e78 Massachusetts General Hospital Boston United States
-16. https://ror.org/012a77v79 Memory Research Unit, Department of Clinical Sciences Malmö, Lund University Lund Sweden
+10. Wisconsin Alzheimer’s Disease Research Center, University of Wisconsin School of Medicine and Public Health, University of Wisconsin-Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+11. Institute of Cognitive Neurology and Dementia Research (IKND), Otto-von-Guericke University Magdeburg Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))
+12. German Center for Neurodegenerative Diseases (DZNE), Otto-von-Guericke University Magdeburg Magdeburg Germany ([ROR:00ggpsq73](https://ror.org/00ggpsq73))
+13. Center for Behavioral Brain Sciences, University of Magdeburg Magdeburg Germany ([ROR:03d1zwe41](https://ror.org/03d1zwe41))
+14. Maastricht University Maastricht Netherlands ([ROR:02jz4aj89](https://ror.org/02jz4aj89))
+15. Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+16. Memory Research Unit, Department of Clinical Sciences Malmö, Lund University Lund Sweden ([ROR:012a77v79](https://ror.org/012a77v79))
 
 † Corresponding author
 
@@ -53,11 +53,94 @@ We show that the LC exhibits a basic rostro-caudal functional gradient that is r
 
 ## Results
 
-## Functional connectivity is organized along a rostro-caudal axis in the LC
+### Functional connectivity is organized along a rostro-caudal axis in the LC
 
 Characteristics of both cohorts can be found in Table 1. The average dominant gradient consistently exhibited a rostro-caudal organization in all age groups in the CamCAN dataset and across all subjects in the HCP 7T dataset (see Figure 1A; also see Figure 1—figure supplement 1 for a difference map of gradients from the two datasets). To assess the extent to which the ROI mask influences the rostro-caudal gradient, we repeated the gradient calculation in both datasets using a larger LC ROI from Tona et al., 2017; gradients using this ROI retained the rostro-caudal organization (see Figure 1—figure supplement 2). The gradient was monotonous, meaning that the stepwise changes in connectivity were consistent along the longitudinal axis of the LC and did not show clear functional area boundaries. When partitioned into rostral and caudal parts, the rostral part was characterized by connections to the posterior and anterior cingulate cortices and the medial temporal lobe, whereas the caudal part projected to the parietal and visual cortices. Regarding subcortical structures, the rostral LC mainly projected to the hippocampi, amygdalae, and striatum, while the caudal part projected to the thalami, occipital, precentral, and postcentral regions (see Figure 1B). To summarize, the rostral part was mainly associated with higher order, associative cortical areas and limbic regions, while the caudal part was more connected to primary sensorimotor and visual areas.
 
-## The functional gradient in the LC is different across ages
+![Figure 1.](https://cdn.elifesciences.org/articles/87188/elife-87188-fig1-v2.jpg)
+
+**Figure 1.:** (A) Average functional gradients from subjects below 40 years of age in the CamCAN and HCP 7T datasets were projected to a surface rendering of the LC region of interest (ROI) mask. We present younger participants from the CamCAN cohort to make it comparable to the demographic characteristics of the HCP cohort. The color bar denotes normalized values of the dominant eigenmap. (B) Projection maps of the LC were calculated as the mode of maximal correlation localization to either the rostral (red) or the caudal (blue) part of the LC in order to show the two extremes of connectivity. Projection maps were overlaid on the average HCP cortical surface and MNI152 template for the subcortical structures.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87188/elife-87188-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We present younger participants from the CamCAN cohort to make it comparable to the demographic characteristics of the HCP cohort. The difference map was calculated as the absolute difference by subtracting the normalized CamCAN gradient from the normalized HCP gradient.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87188/elife-87188-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Average functional gradients from subjects below 40 years of age in the CamCAN and HCP 7T datasets were projected to a surface rendering of the LC ROI mask. We present younger participants from the CamCAN cohort to make it comparable to the demographic characteristics of the HCP cohort. The color bar denotes normalized values of the dominant eigenmap.
+
+**Table 1.**
+ Demographic features of the CamCAN and Human Connectome Project (HCP) 7T cohorts.Values in the table represent means followed by (standard deviations), except when stated otherwise. Measures from the emotional memory task represent d prime scores, which demonstrate the sensitivity of an individual to detect or correctly categorize stimuli in the given condition. Emotion regulation measures represent rescaled Likert-scale ratings, whereas the Hotel-task is scored as the average time in seconds a participant spends on each subtask. PSQI is a self-reported measure of sleep quality. HADS is a screening tool for anxiety and depression symptoms. Abbreviations: SD=standard deviation, M=male, F=female, PSQI=Pittsburgh Sleep Quality Index, HADS=Hospital Anxiety and Depression Scale.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CamCAN (n=618)</th>
+      <th>HCP 7T (n=184)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age range (years)</td>
+      <td>18–88</td>
+      <td>22–36</td>
+    </tr>
+    <tr>
+      <td>Biological sex (M/F)</td>
+      <td>305/313</td>
+      <td>72/112</td>
+    </tr>
+    <tr>
+      <td>Education years</td>
+      <td>14.56 (4.02)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Emotional memory – recollection</td>
+      <td>1.58 (0.69)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Emotional memory – recognition</td>
+      <td>2.63 (0.55)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Emotional memory – priming</td>
+      <td>0.41 (0.09)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Emotion regulation – reactivity</td>
+      <td>5.29 (1.63)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Emotion regulation – reappraisal</td>
+      <td>0.038 (1.11)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Hotel-task</td>
+      <td>301.93 (172.36)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>PSQI score (median, range)</td>
+      <td>4 (0–22)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>HADS score (median, range)</td>
+      <td>5 (0–20)</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+### The functional gradient in the LC is different across ages
 
 The gradient explained a significant amount of variance in age over and above the effects of sex (F=8.671, adjusted partial R2=0.504, p<0.001; see Figure 2A and B). Also, specific parameters of the gradient’s spatial model were associated with age in a way that a loss of rostral-like connectivity, more clustered appearance, and increased asymmetry were related with older age (see correlation plots on Figure 2B). This was further confirmed by the clusterability analysis, which showed that, with increasing age, the gradient could be clustered into rostral and caudal regions more effectively (R=0.313, p<0.009).
 
@@ -65,11 +148,19 @@ The gradient explained a significant amount of variance in age over and above th
 
 **Figure 2.:** Average functional gradients from representative age groups (20–30, 30–50, <50) were projected to a surface rendering of the left and right LC region of interest (ROI) mask (A). The scatter plots show the relationship between age and rank-transformed values of trend surface model (TSM) parameters (after adjusting for effects of sex) describing the spatial features of the gradient (see Materials and methods for more details) with a least-squares line in red (B). Parameter changes correspond to a loss of rostral-like connectivity, increased asymmetry, and more clustered functional organization of the LC in older participants.
 
-## Spatial features of the LC functional gradient are associated with behavioral measures
+### Spatial features of the LC functional gradient are associated with behavioral measures
 
 Regarding cognitive variables, the gradient explained a significant amount of variance above the effects of age, sex, and education in emotional memory scores – more specifically recollection of stimulus valence (F=2.632, adjusted partial R2=0.224, p=0.016), recognition of previously seen objects associated with emotionally charged stimuli (F=7.992, adjusted partial R2=0.552, p<0.001), priming (F=2.198, adjusted partial R2=0.175, p=0.042), emotional reactivity to negative events (F=4.008, adjusted partial R2=0.365, p<0.001), and reappraisal of emotional valence for negative stimuli (F=2.827, adjusted partial R2=0.259, p=0.012) after false discovery rate (FDR) corrections. For a depiction of gradient spatial layouts associated with behavioral scores, see Figure 3. Beside the overall spatial features, some of these tests were also associated with specific parameters of the spatial model, indicating a spatial gradient phenotype that is associated with lower scores of emotional memory and emotion regulation regardless of age, sex, or education (see Figure 3—figure supplement 1 for partial Spearman’s rank correlation coefficients and statistical significance). In general, an old-like functional gradient exhibiting a loss of rostral-like connectivity and more clustered functional organization was associated with worse performance in emotional memory and emotion regulation tasks related to negative events. Overall spatial features of LC functional gradients did not explain a significant amount of additional variance in executive functions (Hotel-task; F=1.473, adjusted partial R2=0.036, p<0.168) or sleep quality scores (Pittsburgh Sleep Quality Index [PSQI]; F=1.124, adjusted partial R2=0.01, p<0.352).
 
-## The LC functional gradient is different in people with higher anxiety and depression ratings
+![Figure 3.](https://cdn.elifesciences.org/articles/87188/elife-87188-fig3-v2.jpg)
+
+**Figure 3.:** The polar plot depicts additional variance explained by spatial features of the LC functional gradient over and above nuisance variables (age, sex, education for the analyses to predict cognitive variables) in emotional memory, emotion regulation, executive function, and sleep quality in terms of adjusted partial R2 values. Example window-averaged gradients from participants with lowest and highest emotional memory scores and emotion regulation scores were projected to a surface rendering of the LC region of interest (ROI) mask, showing that old-like functional gradient spatial features (less extensive rostral-like connectivity and more clustered functional organization) are associated with lower scores in emotional memory and emotion regulation related to stimuli with negative valence. No significant associations were found with executive function and sleep quality. Abbreviations: EM = emotional memory, ER = emotion regulation, PSQI = Pittsburgh Sleep Quality Index.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87188/elife-87188-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The scatter plots depict residuals of rank-transformed gradient parameters and cognitive scores after correcting for age, sex, and education, with a least squares line superimposed in red color.
+
+### The LC functional gradient is different in people with higher anxiety and depression ratings
 
 Participants with higher-than-normal HADS scores exhibited a different gradient compared to participants with normal HADS scores (one-way multivariate analysis of variance [MANOVA]: p<0.001). The gradient in the pathological group showed generally less rostral-like connectivity and was more asymmetric (left LC – z: p<0.002, z3: p<0.007; right LC – x: p<0.001, z: p<0.001, x3: p<0.001, z3: p<0.001; see Figure 4), showing a further reduction of left rostral-like connectivity compared to the right one.
 
@@ -99,19 +190,19 @@ In conclusion, in this study we show that functional connectivity is organized i
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We included 618 participants who had resting-state fMRI data from the CamCAN dataset (https://www.cam-can.org). To investigate the relationship between LC functional gradients and cognitive measures, we assessed a set of cognitive functions that were previously associated with LC function (Liu et al., 2020), namely negative valence trials of emotional memory and emotion regulation tests (Hämmerer et al., 2018), executive functions measured by the Hotel-task (von der Gablentz et al., 2015), sleep quality measured by the PSQI (Buysse et al., 1989), as well as anxiety and depression symptoms measured by the HADS (Zigmond and Snaith, 1983). From the imaging dataset, 292 participants had emotional memory scores, 272 emotion regulation scores, 601 Hotel-task scores, 586 PSQI scores, and 615 had HADS scores. Demographic characteristics of these subgroups did not differ from that of the whole sample.
 
 To investigate the reproducibility of the functional gradient results, we analyzed 184 participants from the HCP with 7T resting-state fMRI data (https://db.humanconnectome.org). The first resting-state fMRI run was analyzed for all subjects.
 
-## Image acquisition
+### Image acquisition
 
 The 3T resting-state fMRI protocol for the CamCAN dataset included an echo planar imaging (EPI) sequence (TR = 1970 ms; TE = 30 ms; FOV: 192×192 mm2; 3×3×4.4 mm3 voxel resolution; duration: 8.5 min); data was collected at a single site using a 3T Siemens TIM Trio scanner with a 32-channel head coil (Taylor et al., 2017). Participants were asked to lie motionless with their eyes closed and not fall asleep during the scan.
 
 The acquisition protocol for the HCP 7T resting-state fMRI data included a multiband gradient-echo EPI sequence (TR = 1000 ms; TE = 22.2 ms; FOV: 208×208 mm2; 1.6 mm isotropic voxel resolution; duration: 16 min); data was collected at a single site using a 7T Siemens Magnetom scanner (T Vu et al., 2017). During the acquisition, participants were asked to keep their eyes open and fixate on a cross, shown on a presentation screen inside the scanner.
 
-## Image preprocessing
+### Image preprocessing
 
 The HCP 7T dataset was preprocessed according to a minimal preprocessing pipeline as described in Glasser et al., 2013. First, fMRI scans underwent EPI distortion correction, removal of non-brain tissue, motion correction, intensity normalization, and a two-stage registration to standard MNI space, followed by regression of noise and motion-related artifacts using FSL FIX (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FIX) and high-pass filtering with a cut-off of 2000s. Additionally, following previous publications using functional gradients (Przeździk et al., 2019; Haak et al., 2018), signals from the cerebrospinal fluid and white matter were removed via nuisance regression.
 
@@ -119,15 +210,15 @@ Functional scans from the CamCAN dataset were preprocessed through a standard pi
 
 To minimize signal leakage from the surrounding brainstem regions and the fourth ventricle, the LC was masked for each subject and spatial smoothing was applied with a 3 mm FWHM isotropic 3D Gaussian kernel within the mask to ensure that weighted graphs obtained from the similarity matrices are fully connected, since a measure of spatial smoothness is necessary for gradient calculation (Haak et al., 2018; see Connectopic mapping section).
 
-## Delineation of the LC
+### Delineation of the LC
 
 The LC was delineated using a standard mask from a recent study that developed a meta-analytical consensus mask by aggregating previous segmentations of the LC on neuromelanin-sensitive MRI sequences (Dahl et al., 2022). The mask was transformed to standard MNI152 space and downsampled to the respective isotropic spatial resolution of the two preprocessed datasets (2 mm isotropic voxels in the CamCAN dataset and 1.6 mm isotropic voxels in the HCP 7T dataset).
 
-## Connectopic mapping
+### Connectopic mapping
 
 After preprocessing, we performed connectopic mapping, a data-driven approach that characterizes spatially continuous changes in connectivity profiles as gradients (Haak et al., 2018), using the ConnGrads toolbox (https://github.com/koenhaak/congrads; Haak et al., 2018). The analysis starts by calculating functional connectivity matrices (or ‘fingerprints’) between all voxel time series in an ROI (in this case this was the LC defined in the way described above), and time series from a target mask. In the current study, the target mask was defined using a cortical and subcortical parcellation. Average time series were extracted from each parcel in the atlases separately, and then pairwise correlations were calculated with time series from all voxels in the ROI (the LC). We used the Glasser-atlas (containing 360 parcels) as cortical and the Tian-atlas (containing 50 parcels) as subcortical parcellation (Glasser et al., 2016; Tian et al., 2020). Afterward, we obtained a similarity matrix from the functional connectivity matrices of LC ROI voxels by calculating the eta-squared measure (Cohen et al., 2008). The similarity matrix contains the eta-squared similarity measure of fingerprints between all pairs of LC voxels, therefore one index in the similarity matrix corresponds to the similarity between the fingerprints of two specific LC voxels. This similarity matrix was then transformed into a connected graph and fed to the Laplacian eigenmaps algorithm (Belkin and Niyogi, 2003), which results in a decomposition of the similarity graph so that the eigenvectors of graph Laplacian represent axes along which the stepwise change in functional connectivity is the largest, that is spatially graded patterns of functional organization, or functional gradients. Along these gradients, voxels which exhibit similar functional connectivity fingerprints will be placed close to each other. The spatial features of these gradients were then summarized using a spatial regression approach (trend surface modeling) to improve sensitivity over voxel-wise analyses. Trend surface modeling uses polynomial basis functions to describe the spatial features of a functional gradient (Huertas et al., 2017). We fit a third-order trend surface model (TSM) based on previous studies (Przeździk et al., 2019; Oldehinkel et al., 2022; Marquand et al., 2017) that contains nine parameters corresponding to the three axes of MNI152 space using Bayesian linear regression (coefficients for x, y, z axes and their second and third power: x2, y2, z2, and x3, y3, z3). More generally speaking, first-order coefficients of the TSM describe the slope of changes in functional connectivity along the x, y, z axes, while higher order coefficients describe more detailed spatial features (such as curvature).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using RStudio (v2022.07.1, with the rsq package, v2.5: https://cran.r-project.org/package=rsq) and MATLAB (MathWorks Inc, R2021B). Since individual gradient estimation is often not consistent (Haak et al., 2018), we derived a group-based scheme to estimate the relationship between behavioral variables and LC gradient parameters.
 

@@ -47,11 +47,290 @@ The current model for the assembly state of VP40 within filovirus particles cons
 
 The linear CTD-CTD interface is consistently observed in unmodified VP40 crystals eVP40 and sVP40, with intact CTDs and in the absence of charged additives, consistently crystallize in linear filaments of dimers in the space group C2 (Bornholdt et al., 2013; Clifton et al., 2015; Dessen et al., 2000). In an attempt to determine if this linear arrangement is an inherent preferred assembly interface of eVP40 or simply the result of the common C2 crystal packing, we crystallized eVP40 in two alternate crystal forms: P62 and P6422. Notably, in both of these crystal forms, eVP40 also builds linear filaments of dimers, mediated by CTD-CTD interdimer interfaces, with CTD basic patches displayed on a common face. These filaments differ from the C2 filaments by slight torsional rotation about the relatively flat hydrophobic CTD-CTD interface (Figure 1—figure supplement 1E,F and Table 1). The propensity of VP40 to form linear assemblies by CTD-CTD interactions across multiple crystal forms suggest this is a biologically preferred interface and may be important in the viral particle or virus assembly.
 
+**Table 1.**
+ Crystallographic data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>eVP40 P62 (7JZJ)</th>
+      <th>eVP40 P6422 (7JZT)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P62</td>
+      <td>P6422</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>159.94, 159.94, 89.75</td>
+      <td>105.28, 105.28, 463.74</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9795</td>
+      <td>0.9793</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)*</td>
+      <td>79.97–2.46 (2.59–2.46)</td>
+      <td>19.87–4.78 (4.86–4.78)</td>
+    </tr>
+    <tr>
+      <td>Observations*</td>
+      <td>350132 (55437)</td>
+      <td>95505 (4826)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections*</td>
+      <td>44360 (6904)</td>
+      <td>12595 (607)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>93.1 (99.8)</td>
+      <td>99.5 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>7.9 (8.0)</td>
+      <td>12.1 (13)</td>
+    </tr>
+    <tr>
+      <td>CC1/2*</td>
+      <td>0.999 (0.443)</td>
+      <td>0.99 (0.60)</td>
+    </tr>
+    <tr>
+      <td>I/σI*</td>
+      <td>15.3 (0.90)</td>
+      <td>7.5 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Rmerge*</td>
+      <td>0.092 (3.204)</td>
+      <td>0.211 (8.301)</td>
+    </tr>
+    <tr>
+      <td>Rpim*</td>
+      <td>0.052 (1.795)</td>
+      <td>0.081 (3.187)</td>
+    </tr>
+    <tr>
+      <td>Anisotropy correction</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anisotropic resolution (Å)</td>
+      <td></td>
+      <td>5.54 (0.89 a* - 0.45 b*)</td>
+    </tr>
+    <tr>
+      <td>(direction)</td>
+      <td></td>
+      <td>5.54 b*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3.60 c*</td>
+    </tr>
+    <tr>
+      <td>Resolution after correction*</td>
+      <td></td>
+      <td>19.88–3.77 (4.30–3.77)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections* (ellipsoidal)</td>
+      <td></td>
+      <td>6953 (376)</td>
+    </tr>
+    <tr>
+      <td>I/σI (ellipsoidal)*</td>
+      <td></td>
+      <td>12.3 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Completeness (ellipsoidal) (%)*</td>
+      <td></td>
+      <td>90.8 (64.3)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td>7452</td>
+      <td>6795</td>
+    </tr>
+    <tr>
+      <td>Rcryst/Rfree (%)</td>
+      <td>24.7/25.5</td>
+      <td>31.5/34.5</td>
+    </tr>
+    <tr>
+      <td>Ramachadran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.00</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>1.15</td>
+      <td>4.74</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>98.85</td>
+      <td>95.03</td>
+    </tr>
+    <tr>
+      <td>RMSD from ideal geometry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.013</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.96</td>
+      <td>1.05</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>1.52</td>
+      <td>8.99</td>
+    </tr>
+    <tr>
+      <td>Average B factor</td>
+      <td>89.32</td>
+      <td>185.96</td>
+    </tr>
+    <tr>
+      <td>Refinement program</td>
+      <td>Phenix</td>
+      <td>Phenix</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbers in parentheses correspond to the outer resolution shell._
+
 The structure of the matrix layer in EBOV VLPs eVP40 expression induces budding of long VLPs from the surface of mammalian cells (Noda et al., 2002; Timmins et al., 2001). We purified Zaire eVP40 VLPs by sucrose gradient purification and imaged them by cryo-ET, finding multi-micron long filaments with a diameter of ~ 28 nm (Table 2) and a matrix-like protein layer visible under the membrane bilayer. We applied subtomogram averaging methods to determine the structure of the matrix layer to a resolution of 10 Å (Figure 1, Figure 1—figure supplement 2) from intact eVP40 VLPs. We observed that the matrix layer is formed by higher-order linear oligomerization of VP40 dimers on the inner surface of the viral membrane. VP40 dimers form long chains that stack to form 2D lattices with a monoclinic p2 space group in the plane of the membrane (Figure 1, Table 2). The crystal structure of the C2 eVP40 dimer (PDB: 4LDB) could be fit as a rigid body into the density, showing that linear oligomerization is mediated by CTD to CTD interactions.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig1-v2.jpg)
+
+**Figure 1.:** (A) The structure of the matrix layer in Ebola VP40, VP40-GP, and NP-VP24-VP35-VP40 VLPs. For these rows, the left column shows a portion of the subtomogram average from within the VLP; overlaid are the approximate unit-cell dimensions of the 2D lattice. eVP40 dimers are fitted as rigid bodies in the central column (PDB: 4ldb). The right column shows a cross-sectional view parallel to a VP40 linear chain. (B) A detailed view of the inter-dimeric CTD-CTD interface in Ebola NP-VP24-VP35-VP40 matrix, with hydrophobic residues at the inter-dimer interface shown in white; this interface is present in all three VLPs. (C) Electrostatic maps of the eVP40 dimer, with the hydrophobic patch forming the inter-dimer interface marked by an arrowhead.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Crystal structures of VP40 assembled by CTD-to-CTD interactions of VP40 dimers. NTDs are colored in blue, while CTDs are in orange. (A) eVP40, C2, with insets showing the residues of the hydrophobic CTD-CTD interface (magenta) and the CTD basic patch (green). (B) sVP40, C2; (C) mVP40; (D) eVP40 linear hexamer, (E) eVP40, P62, (F) eVP40, P6422. Views are from outside the membrane surface.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Arrows indicate resolution at FSC = 0.143.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Zaire eVP40 (4ldb Bornholdt et al., 2013) crystallographic dimer. This dimer is then shown overlaid with: (B) Sudan eVP40 (3ctq Bornholdt et al., 2013), (C) Zaire eVP40 (1es6 Dessen et al., 2000), (D) Sudan eVP40 (4ld8 Bornholdt et al., 2013), (E) Zaire eVP40 P62 unit cell (this study), (F) Zaire eVP40 P6422 unit cell, (this study) (G) Zaire eVP40 linear hexamer (4ldd Bornholdt et al., 2013), (H) a superposition of all six structures.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Structure of side-by-side VP40 dimers. NTDs are colored blue and CTDs are colored orange. (B) Zoomed in view of the CTD-CTD interface. Modeling suggests that introduction of phenylalanine at positions 305 and 307 might stabilize the CTD-CTD interface. (C) Expression level of wild-type, R134A/I307R, I307F, and I307F/M305F VP40. R134A/I307R has been previously described to abolish VP40 dimerization and VLP release (Bornholdt et al., 2013). (D) Relative budding index of VLPs into the supernatant (ratio of supernatant to cell-lysate VP40, normalized to the WT values) from WT and mutant VP40. Three independent replicates. Values represent mean +/- SEM ns=P 0.05, *p≤0.05, ****p≤0.0001 by student’s t test. The M305F/I307F mutation, predicted to stabilize the CTD-CTD interface, shows enhanced budding compared to WT VP40.
+
+**Table 2.**
+ Unit cell and filament dimensions matrix layers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th>Radius (nm)</th>
+      <th>a (Å)</th>
+      <th>b (Å)</th>
+      <th>θ (°)</th>
+      <th>α (°)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ebola VP40 VLPs</td>
+      <td>28 ± 6 (n = 42)</td>
+      <td>82</td>
+      <td>47</td>
+      <td>80</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>Ebola VP40-GP VLPs</td>
+      <td>25 ± 3 (n = 60)</td>
+      <td>80</td>
+      <td>48</td>
+      <td>81</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Ebola NP-VP24-VP35-VP40 VLPs</td>
+      <td>41 ± 2 (n = 54)</td>
+      <td>81</td>
+      <td>50</td>
+      <td>84</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Marburg Virus</td>
+      <td>43 ± 2 (n = 75)</td>
+      <td>78</td>
+      <td>60</td>
+      <td>54</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <td>Marburg VP40 VLPs</td>
+      <td>25 ± 2 (n = 25)</td>
+      <td>83</td>
+      <td>46</td>
+      <td>77</td>
+      <td>35</td>
+    </tr>
+  </tbody>
+</table>
+
+_Unit cell dimensions are illustrated in Figures 1 and 2 and are defined as follows: a is the distance between VP40 dimers along the chains, b is the distance between dimers between chains, θ is the internal angle of the lattice, and α is the rotational angle of the unit cell._
 
 In addition to eVP40 VLPs, we also produced VLPs by co-expression of eVP40 with the Ebola virus glycoprotein GP, and by co-expression of eVP40 with the NC components NP, VP24 and VP35. As described previously (Bharat et al., 2012), NP-VP24-VP35-VP40 VLPs have substantially wider filaments to accommodate the NC-like assembly (Table 2). We determined the structures of eVP40 within these VLPs at resolutions of 10 Å, (Figure 1, Figure 1—figure supplement 2). As in the eVP40 VLPs, the matrix layer in these VLPs is formed from extended chains of eVP40 that stack to form monoclinic p2 lattices (Figure 1, Table 2).
 
-## EBOV matrix layer is formed by oligomerization of VP40 dimers into chains
+### EBOV matrix layer is formed by oligomerization of VP40 dimers into chains
 
 We were able to fit the C2 crystallographic eVP40 dimer as a rigid body into the matrix structures from all three VLPs (Figure 1). We did not observe any substantial electron density that is not occupied by eVP40. The eVP40 dimers are oriented similarly such that the basic patches in the CTDs all point toward and contact the membrane. This orientation is consistent with previous studies, which showed that mutations within this patch modulate membrane binding (Bornholdt et al., 2013), and consistent with linear assemblies observed in crystals in which the basic patches are oriented in the same direction.
 
@@ -59,17 +338,37 @@ In all VLPs, oligomerization of eVP40 dimers to form extended chains occurs thro
 
 We previously probed the CTD-CTD interface by introducing either an M241R point mutation or an I307R mutation, both of which lie in the CTD-CTD interface. I307R was combined with R134A in the octameric assembly site to inhibit octamer formation. VP40 mutants bearing M241R or I307R substitutions do not assemble VLPs. We sought to identify an alternate mutation that would stabilize, instead of disrupt, the CTD-CTD interaction. We generated eVP40 bearing an M305F/I307F double mutation, which modeling studies suggested would support hydrophobic packing at the interface (Figure 1—figure supplement 4). Although eVP40 M305F/I307F overall expressed to a lower yield, the relative proportion of VLP budding was enhanced over wild-type (Figure 1—figure supplement 4).
 
-## The structure of the matrix layer in MARV
+### The structure of the matrix layer in MARV
 
 In order to determine if the disparate sequence of the MARV VP40 CTD still resulted in a matrix assembly similar to that of eVP40, we prepared and purified mVP40 VLPs and determined the structure of the matrix layers to 10 Å resolution (Figure 2, Figure 2—figure supplement 1). The matrix layer appears similar to that seen in eVP40 VLPs, adopting a p2 lattice with similar dimensions (Figures 1 and 2), suggesting that the structure is conserved despite sequence divergence (34% identical, 49% homologous). We fit the dimeric mVP40 crystal structure as well as a dimeric eVP40 crystal structure into the density as a rigid body. For mVP40, there were clashes of the CTDs at the inter-dimer interface (Figure 2—figure supplement 2), while eVP40 fit these densities well. This suggests to us that the CTD of mVP40 is rotated slightly about the CTD-NTD hinge into a position more similar to that of eVP40 when assembled in VP40 VLPs. A structural change in mVP40 in membrane binding has been proposed in prior simulation studies (Bhattarai et al., 2017).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top row shows the structure of the matrix layer in Marburg VP40 VLPs and bottom row shows Marburg virus. Left column shows a portion of the subtomogram average from within the filaments; overlaid are the approximate unit-cell dimensions of the 2D lattice. Center column shows the same view, but rigid-body fitted mVP40 dimers (PDB: 5b0v). Right column shows the same rigid-body fitting as in the center column, but as a cross-sectional view parallel to a VP40 linear chain. (B) A detailed view of the inter-dimeric CTD-CTD interface. (C) Electrostatic maps of mVP40 dimer.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Arrows indicate resolution at FSC = 0.143.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A and B) are densities from Marburg virus while (C and D) are densities from mVP40 VLPs. mVP40 crystal structures (PDB: 5b0v) are in blue and orange while eVP40 structures (PDB: 4ldb) are in cyan and yellow. For Marburg virus, both structures fit without clashing, while in Marburg VP40 VLPs only the eVP40 structures fit, suggesting a conformational change between the mVP40 crystal structure and the VLP.
 
 We generated authentic MARV virions by infection of Huh7 cells and imaged fixed, purified virions by cryo-ET. MARV virion matrix layers again consist of VP40 dimers forming extended chains through their CTDs and stacking of these chains form a 2D p2 lattice (Figure 2), but the lattice angles differ from those in VLPs: the VP40 chains run nearly perpendicular to the filament axis, and the register of neighboring chains differs by approximately half a VP40 protomer from those seen in VLPs (Figures 1 and 2). Rigid body fitting of mVP40 dimers or eVP40 dimers shows a good fit with no extra, unassigned densities (Figure 2), suggesting that VP40 is the only component in the matrix layer. At this resolution we are unable to confidently assess whether the CTD has rotated slightly relative to the NTD or not.
 
 We attempted to determine the structure of the matrix layer within authentic, fixed Ebola virions, but found that some membranes were ‘moth-eaten’, leaving membrane and matrix layers disrupted, while in others there were only few places where an ordered matrix layer was observed (Figure 3—figure supplement 1). We were therefore unable to determine a structure for VP40 within authentic EBOV virions.
 
-## Global order of filovirus matrices
+### Global order of filovirus matrices
 
 Lines of density that correspond to VP40 dimer chains are directly visible in tomograms of VLPs and viruses (Figure 3A). General features such as the orientation of the chains relative to the axis of the filamentous particle are consistent with those determined by subtomogram averages.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig3-v2.jpg)
+
+**Figure 3.:** (A) Tomographic slice of the matrix layer protein density directly under the membrane bilayer; VP40 chains are seen as dark lines of density. (B) Central slice through each filament with lattice maps overlaid. VP40 dimers are visualized as rectangles, which connect into linear chains along the short sides. Colors are scaled from green to red, which denote high and low correlation scores, respectively. Low correlation scores are generally associated with regions where the local lattice is broken, thus correlating poorly with the strong lattice in the subtomogram average. Representative well-ordered regions are boxed in magenta, while representative poorly ordered regions are boxed in blue. Both are shown in detail in C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Left column shows regions that show ordered VP40 striations, center column shows virions with intact membranes but unstructured matrix layer, and right column shows matrix layer of moth-eaten membranes.
 
 When determining structures, subtomogram averaging provides the position and orientation of each VP40 dimer-centered subtomogram within the tomogram. Visualizations of these positions and orientations are called ‘lattice maps’ and reveal the global arrangement of VP40 (Figure 3B,C). Lattice maps show that in all VLPs studied, 2D lattices form locally ordered patches, and that there are disordered areas or other defects in crystallographic packing between the patches. The local pitch of the array is somewhat variable, and VP40 chains can terminate and run into each other. The overall topology of the matrix layer is a ‘patchwork’ of locally ordered 2D lattices.
 
@@ -79,9 +378,17 @@ Based on the relative positions of subtomograms as visualized in the lattice map
 
 **Figure 4.:** Scatter points represent measurements for individual filaments. Dotted lines represent expected helical pitch for given radius, assuming a constant radius of curvature. The radii of curvature plotted from left to right are 30, 40, 50, and 60 nm.
 
-## Spatial relationships between EBOV VP40 and other viral proteins
+### Spatial relationships between EBOV VP40 and other viral proteins
 
 We next analyzed the spatial relationship between eVP40 and the other viral components NC or GP. To do this, we first required the positions and orientations of the other viral components. For EBOV NP-VP24-VP35-VP40, NC positions had been calculated previously while determining the structure of the NC (Wan et al., 2017). For EBOV VP40-GP VLPs, we determined a low-resolution structure of Ebola GP, thereby determining its position (Figure 5—figure supplement 1). We then generated neighbor density maps: these show the relative distribution of all subtomograms of interest (those containing GP or NC) with respect to all reference subtomograms (those containing VP40) (Figure 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig5-v2.jpg)
+
+**Figure 5.:** (A) First two columns are from NP-VP24-VP35-VP40 VLPs while last three columns are from VP40-GP VLPs, respective subtomogram averaging structures are shown as transparent densities. Each neighbor density map is shown as a colored isosurface indicating the preferred location of the named protein relative to the VP40 positions. Top row shows cross-sectional views through the filaments, center row shows view from outside the filaments, and bottom row shows detailed views from center row. In center and bottom rows, membrane is removed from subtomogram averages for easier viewing. The projected GP layer contains the same data as the GP layer, but projected on to the VP40 radius along the direction of the GP stalks. (B) A zoomed-in view of the low projected GP panel, showing the preferred positions of GP relative to a model of the VP40 layer.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59225/elife-59225-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top and (B) side view of Ebola GP subtomogram average. (C) FSC plot of Ebola GP subtomogram average; arrow indicates resolution at FSC = 0.143. Deposited as emd-11665.
 
 We found that the NC layer is positioned at a consistent radial distance from VP40, but otherwise shows no defined spatial relationships with VP40 particles (Figure 5). This arrangement is consistent with the presence of a tether (likely contributed by NP) that radially links VP40 and the NC layer. We estimated the stoichiometric ratio between VP40 and NC as ~ 4.4, suggesting that only a minority of VP40 molecules can be simultaneously bound by such a tether, and explaining the absence of any density corresponding to a bound tether in our VP40 structure.
 
@@ -113,43 +420,394 @@ GP has been previously shown to migrate toward VP40-rich membrane areas and colo
 
 Our data reveal the arrangement of VP40 in assembled filovirus particles. They are consistent with a model for filovirus assembly in which VP40 dimers in solution migrate toward the plasma membrane, where they oligomerize into curved chains via CTD-CTD interactions, which induces local membrane curvature. Stacking of VP40 chains results in the formation of 2D lattices which are curved in one direction. Membrane curvature can be propagated over larger areas of the membrane by growth of patches of 2D lattice or by contact and ‘fusion’ between neighboring patches.
 
-## Data deposition
+### Data deposition
 
 EM maps of VP40 from Ebola NP-VP24-VP35-VP40, VP40, VP40-GP VLPs and Marburg virions and VP40 VLPs were deposited in the EMDB with accession numbers EMD-11660, EMD-11661, EMD-11662, EMD-11663, EMD-11664, respectively. EM map of Ebola GP was deposited as EMD-11665. Crystal structures of eVP40 P62 and eVP40 P6422 were deposited to the PDB with accession numbers 7JZJ and 7JZT, respectively.
 
 ## Materials and methods
 
-## Expression, crystallization, and crystal structure determination of Ebola VP40
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novagen Rosetta 2 (DE3) Merck (Darmstadt, Germany)</td>
+      <td></td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK-293T</td>
+      <td>American Type Culture Collection</td>
+      <td></td>
+      <td>VLP production</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Huh7</td>
+      <td>Japanese Collection of Research Bioresources</td>
+      <td></td>
+      <td>Marburg virus production</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ZEBOV-NP (plasmid)</td>
+      <td>Hoenen et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ZEBOV-VP24 (plasmid)</td>
+      <td>Hoenen et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ZEBOV-VP35 (plasmid)</td>
+      <td>Hoenen et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ZEBOV-VP40 (plasmid)</td>
+      <td>Hoenen et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ZEBOV-GP (plasmid)</td>
+      <td>Hoenen et al., 2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-MARV-VP40 (plasmid)</td>
+      <td>Wenigenrath et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTriex5-Strep-zVP40-WT</td>
+      <td>Bornholdt et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTriex5-Strep-zVP40-R134A/I307R</td>
+      <td>Bornholdt et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTriex5-Strep-zVP40-I307F</td>
+      <td>this manuscript</td>
+      <td></td>
+      <td>Plasmid construction is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTriex5-Strep-zVP40-M305F/I307F</td>
+      <td>this manuscript</td>
+      <td></td>
+      <td>Plasmid construction is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET46+zVP40-d43</td>
+      <td>Bornholdt et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Virus</td>
+      <td>Marburg Virus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>autoPROC</td>
+      <td>Vonrhein et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Adams et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCorr</td>
+      <td>Li et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ctfphaseflip</td>
+      <td>Xiong et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>Kremer et al., 1996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EM-toolbox</td>
+      <td>Pruggnaller et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TOM-toolbox</td>
+      <td>Nickell et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AV3</td>
+      <td>Förster et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dynamo</td>
+      <td>Castaño-Díez et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression, crystallization, and crystal structure determination of Ebola VP40
 
 eVP40 was expressed in E. coli BL21 cells as previously described (Bornholdt et al., 2013) and crystallized in 100 mM HEPES, 50 mM MgCl2, 38% PEG400, pH 7.2. Crystals belonging to the P62 space group diffracted to 2.4 Å, at Beamline 12–2 of the Stanford Synchrotron Radiation Lightsource (SSRL). Crystals belonging to the space group P6422 space group diffracted anisotropically to 3.7 Å, at the Argonne National Laboratory, Beamline SBC- 19-ID. Data integration and scaling were performed using the autoPROC implementation of XDS and AIMLESS (Vonrhein et al., 2011). Anisotropy correction of the eVP40 P6422 data set was performed using STARANISO with a surface threshold of 1.2/σ(I), implemented through the autoPROC pipeline (Vonrhein et al., 2018). Isotropic data were used for model building and refinement of the eVP40 P62 crystal form and anisotropic corrected data were used for model building and refinement of the eVP40 P6422 crystal form. Both structures were determined using molecular replacement using PHENIX (Adams et al., 2010) with dimeric eVP40 (PDB: 4LDB) as the search model. Refinement of each crystal structure was done through iterative rounds of manual model building using COOT (Emsley et al., 2010), followed by refinement of the models in PHENIX.
 
-## Cell lines
+### Cell lines
 
 HuH7 cells were obtained from Japanese Collection of Research Bioresources and tested for mycoplasma contamination. HEK293T cells were obtained from American Type Culture Collection. They are listed in the database of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee, but were used as they are well-established tools for the expression of VLPs: the cells themselves were not studied.
 
-## Expression and purification of VLPs
+### Expression and purification of VLPs
 
 HEK293T cells were transfected with the appropriate combination of full length plasmids in pCAGGS backbones: full-length Marburg virus VP40; Zaire Ebola virus VP40; Zaire Ebola virus VP40 and GP; or Zaire Ebola virus NP, VP24, VP35, and VP40 (Hoenen et al., 2006; Wenigenrath et al., 2010). Supernatant was collected 3 days after transfection and clarified by centrifugation at 800 g for 10 min at 4°C. The remaining steps were performed at 4°C. VLPs were pelleted through a 20% (w/v) sucrose cushion in TNE buffer (50 mm Tris–HCl pH 7.4, 100 mm NaCl, 0.1 mm EDTA) at 160,000 g for 3 hr, resuspended in TNE buffer, and separated on a Nycodenz step gradient (2.5%, 5%, 7.5%, 10%, 15%, 20%, 30% (v/v)) at 34,400 g for 15 min. Fractions 4–6 were collected and checked by negative-stain EM; fractions confirmed to contain VLPs were pooled and pelleted at 92,000 g for 2 hr. Final pellets were resuspended in TNE.
 
-## VLP budding assay
+### VLP budding assay
 
 Budding of virus-like particles (VLPs) into cell supernatants was detected by Western blot analyses. Wild-type and mutant VP40 bearing a Strep-Tag were cloned into pTriEx-5 (Novagen) and transfected into cells using TrasnIT-LT1 transfection reagent (Mirus). VLPs were harvested 24 hr post-transfection. Cell culture medium was spun down at 3500 rpm for 20 min to pellet any cells out of the media. The cleared supernatants were then ultracentrifuged at 30,000 rpm with an SW-60 rotor (Beckman) for 2 hr through a 20% (w/v) sucrose cushion-50 mM Tris pH 7.4, 100 mM NaCl. Pelleted VLPs were resuspended in 1X NuPAGE LDS sample buffer (ThermoFisher). Cell lysates were collected by washing cells twice with PBS followed by lysis in CytoBuster. VLPs and cell lysates were then run on SDS denaturing gels, transferred onto polyvinylidene difluoride (PVDF) Immobilon transfer membranes (Millipore), and probed with an anti-Strep-Tag antibody (GeneTex). The relative intensities of the bands were quantified by densitometry with a ChemiDoc MP imaging system (Bio-Rad) and ImageJ. The budding index was defined as the amount of Strep-VP40 in the VLPs divided by the amount in the cell lysate and presented as % of wild-type Strep-VP40.
 
-## Preparation of inactivated Marburg virus
+### Preparation of inactivated Marburg virus
 
 Virus specimens were grown, purified, and fixed under BSL-4 conditions as previously described (Bharat et al., 2011). Briefly, Huh7 cells were infected with Marburg virus. Supernatant was collected 1 day post infection, and centrifuged at 4°C for 2 hr at approximately 77,000 g through a 20% (w/w) sucrose cushion to isolate the virus particles. The resultant virus pellet was resuspended in calcium and magnesium deficient phosphate-buffered saline (PBS), re-pelleted, and inactivated with paraformaldehyde in DMEM (final concentration 4%) for 24 hr by filling the tube completely. The viruses were pelleted and the 4% paraformaldehyde solution in DMEM (w/v) was replaced with a fresh solution of 4% paraformaldehyde. The sample was released from the BSL-4 facility after an additional 24 hr.
 
-## Cryo-electron tomography
+### Cryo-electron tomography
 
 C-Flat 2/2–3C grids stored under vacuum were glow discharged for 30 s at 20 mA. Virus or VLP solution was diluted with 10 nm colloidal gold; 2.5 µl of this mixture was applied to each grid and plunge frozen into liquid ethane using a FEI Vitrobot Mark 2. Grids were stored in liquid nitrogen until imaging.
 
 Tomographic imaging was performed as described previously (Schur et al., 2016; Wan et al., 2017). Briefly, imaging was performed on a FEI Titan Krios at 300 keV using a Gatan Quantum 967 LS energy filter with a slit width of 20 eV and a Gatan K2xp detector in super-resolution mode. Tomograms were acquired from −60° to 60° with 3° steps using SerialEM (Mastronarde, 2005) and a scripted dose-symmetric tilt-scheme (Hagen et al., 2017). Data collection parameters are provided in Table 3.
 
+**Table 3.**
+ Data collection and image processing table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>EBOV NP-VP24-VP35-VP40 (EMD-11660)</th>
+      <th>EBOV VP40 (EMD −11661)</th>
+      <th>EBOV VP40-GP (EMD −11662)</th>
+      <th>MARV (EMD −11663)</th>
+      <th>MARV VP40 (EMD −11664)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Magnification</td>
+      <td>81,000x</td>
+      <td>81,000x</td>
+      <td>81,000x</td>
+      <td>81,000x</td>
+      <td>81,000x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/ Å2)</td>
+      <td>~100</td>
+      <td>~100</td>
+      <td>~100</td>
+      <td>~80</td>
+      <td>~100</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−2.0 to −4.5</td>
+      <td>−2.0 to −4.5</td>
+      <td>−2.0 to −4.5</td>
+      <td>−2.0 to −4.5</td>
+      <td>−2.0 to −4.5</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Gatan Quantum K2</td>
+      <td>Gatan Quantum K2</td>
+      <td>Gatan Quantum K2</td>
+      <td>Gatan Quantum K2</td>
+      <td>Gatan Quantum K2</td>
+    </tr>
+    <tr>
+      <td>Energy filter</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Slit width (eV)</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Tilt Range (min/max, step)</td>
+      <td>−60°/60°, 3°</td>
+      <td>−60°/60°, 3°</td>
+      <td>−60°/60°, 3°</td>
+      <td>−60°/60°, 3°</td>
+      <td>−60°/60°, 3°</td>
+    </tr>
+    <tr>
+      <td>Pixel Size (Å)</td>
+      <td>1.78</td>
+      <td>1.78</td>
+      <td>1.78</td>
+      <td>1.78</td>
+      <td>1.78</td>
+    </tr>
+    <tr>
+      <td>Tomograms (used/acquired)</td>
+      <td>52/64</td>
+      <td>39/42</td>
+      <td>55/73</td>
+      <td>76/82</td>
+      <td>34/35</td>
+    </tr>
+    <tr>
+      <td>Filaments</td>
+      <td>54</td>
+      <td>43</td>
+      <td>65</td>
+      <td>93</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C2</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td>Final subtomograms (no.)</td>
+      <td>59580</td>
+      <td>20352</td>
+      <td>106793</td>
+      <td>75212</td>
+      <td>42938</td>
+    </tr>
+    <tr>
+      <td>Map resolutions (FSC = 0.143)</td>
+      <td>10.2 Å</td>
+      <td>9.8 Å</td>
+      <td>9.9 Å</td>
+      <td>9.6 Å</td>
+      <td>10.8 Å</td>
+    </tr>
+  </tbody>
+</table>
+
 Frames were aligned with either K2Align software, which uses the MotionCorr algorithm (Li et al., 2013), or with the frame alignment algorithm built into serialEM; aligned frames were Fourier cropped to 4k × 4 k, giving a final pixel size of 1.78 Å per pixel. Defocus for each tilt was determined by CTFFIND4 (Rohou and Grigorieff, 2015). Tilt images were filtered by cumulative electron dose using the exposure-dependent attenuation function and critical exposure constants as described elsewhere (Schur et al., 2016).
 
 Contrast transfer functions (CTFs) of individual images were corrected using ctfphaseflip (Xiong et al., 2009) and tomograms were reconstructed using weighted back projection in IMOD (Kremer et al., 1996). Tomograms with poor fiducial alignment were discarded; poor fiducial alignment was defined as alignment residual above one pixel in 2 × binned data or retaining fewer than eight fiducial markers. CTF-corrected unbinned tomograms were binned by 2× (3.56 Å per pixel) and 4× (7.12 Å per pixel) by Fourier cropping.
 
-## Subtomogram averaging
+### Subtomogram averaging
 
 Filaments of interest were first identified in 4×-binned tomograms using Amira visualization software (FEI Visualization Sciences Group). Using Amira and the electron microscopy toolbox (Pruggnaller et al., 2008), points were selected along the central filament axes and radii were measured along the matrix layers. These were then used to define the filament axes and generate an oversampled cylindrical grid for each filament along the matrix layer. These gridpoints served as initial extraction points for subtomograms. Initial Euler angles for each gridpoint were derived from the cylindrical grid. These initial positions and orientations were used to generate the initial motivelist, the metadata file for subtomogram averaging.
 
@@ -159,15 +817,15 @@ At this point, it became clear that the matrix layer was not helical in structur
 
 Final resolutions were measured using a mask-corrected FSC (Chen et al., 2013), and final averages were low-pass filtered, sharpened, CTF-reweighted, and figure-of-merit weighted to their determined resolutions as previously described (Schur et al., 2016). Data processing parameters are provided in Table 3.
 
-## Visualization and rigid body fitting
+### Visualization and rigid body fitting
 
 Visualization of tomograms and electron density maps were done with University of California, San Francisco (UCSF) Chimera (Pettersen et al., 2004). Rigid body fitting of atomic models into density maps was performed using the fit-in-map function in UCSF Chimera.
 
-## Measuring 2D crystal lattices
+### Measuring 2D crystal lattices
 
 Approximate 2D crystal lattices were measured from the subtomogram averages. Prior to measurement, the structures were ‘unwrapped’ from Cartesian space to cylindrical polar space, allowing for direct measurement along the cylindrical surface. Measurements were performed near the middle of the VP40 dimeric interface.
 
-## Lattice maps and neighbor density plots
+### Lattice maps and neighbor density plots
 
 The data for lattice maps are the positions and the orientations of the subtomograms determined during subtomogram averaging. Lattice maps were visualized in UCSF Chimera using the Place Objects plugin (Qu et al., 2018).
 

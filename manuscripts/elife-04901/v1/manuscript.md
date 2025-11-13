@@ -12,4 +12,4 @@
 
 ## Abstract
 
-Proposals to reduce the number of students who do PhDs are misguided, writes Eve Marder , because they would exclude young scientists with qualities that do not show up in exam results and interviews.
+Proposals to reduce the number of students who do PhDs are misguided, writes Eve Marder, because they would exclude young scientists with qualities that do not show up in exam results and interviews.

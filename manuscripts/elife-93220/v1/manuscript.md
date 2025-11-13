@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02ke8fw32 College of Animal Science and Technology, Key Laboratory of Efficient Utilization of Non-Grain Feed Resources, Ministry of Agriculture and Rural Affairs, Shandong Agricultural University Taian China
-2. https://ror.org/023b72294 College of Animal Science and Technology, Huazhong Agricultural University Wuhan China
-3. https://ror.org/023b72294 College of Food Science and Technology, Huazhong Agricultural University Wuhan China
+1. College of Animal Science and Technology, Key Laboratory of Efficient Utilization of Non-Grain Feed Resources, Ministry of Agriculture and Rural Affairs, Shandong Agricultural University Taian China ([ROR:02ke8fw32](https://ror.org/02ke8fw32))
+2. College of Animal Science and Technology, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))
+3. College of Food Science and Technology, Huazhong Agricultural University Wuhan China ([ROR:023b72294](https://ror.org/023b72294))
 
 † Corresponding author
 
@@ -33,47 +33,111 @@ In this study, the chicken fibroblast cells were implanted into the hydrogel sca
 
 ## Results
 
-## Chicken fibroblasts proliferate stably in low-serum conditions
+### Chicken fibroblasts proliferate stably in low-serum conditions
 
 The chicken fibroblast cells were chosen as the ideal cell source for cultured meat production because they can propagate indefinitely and undergo myogenesis whenever the induction is provided. These cells can be readily obtained from fertilized eggs without the need to harvest animals. We have previously constructed an inducible myogenic transdifferentiation system in chicken fibroblasts with the stable integration of Tet-On-MyoD cassette (Ren et al., 2022). The MyoD is the key myogenic transcription factor, and the chicken fibroblasts could be converted into striated and elongated myotubes (myofibers) upon forced expression of MyoD (Ren et al., 2022; Weintraub et al., 1989). The Tet-On-MyoD cassette enables the inducible and reversible activation of chicken MyoD factor, and in the current fibroblast cells, the myogenic transdifferentiation is only switched on by adding doxycycline (DOX). Without the DOX treatment, the control chicken fibroblast cells (Tet-On-MyoD) do not differ from the wild-type cells in terms of morphology, proliferation rate, and gene expression (Figure 1—figure supplement 1A–C). Hence, as a proof-of-concept experiment, we utilized this inducible myogenic fibroblast cell line to develop protocols for cultured chicken meat production.
 
 To achieve sustainable and cost-effective cell production, it is essential to minimize the serum usage in the culture medium. Therefore, we implemented a progressive serum reduction approach to acclimate the cells in the prospect of obtaining a stable cell source that can be propagated in low serum concentrations. In the initial experiment, we used 12% fetal bovine serum (FBS) in 1640 basal medium, which served as the control group. The results showed that the cells were able to proliferate normally at 6, 3, and 1.5% serum concentrations, but at decreasing rates as shown by the EdU assay (Figure 1A and B). We also tested the CS as an alternative to bovine serum in order to avoid cross-species contamination of animal derivatives. The results showed that chicken fibroblasts could proliferate stably in the 1% CS (Figure 1A and B, Figure 1—figure supplement 1D) and the cell populations multiplied three times in 3 d as demonstrated by the CCK-8 assay (Figure 1C). Thus, we conclude that the low-serum medium can effectively support the stable propagation of chicken fibroblasts.
 
-## 3D culture of chicken fibroblasts in GelMA hydrogels
+![Figure 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cellular morphology and EdU staining of chicken fibroblasts under different low-serum conditions. FBS: fetal bovine serum; CS: chicken serum. Scale bars, 200 µm. (B) Quantification of the proportion of EdU-positive cells in (A). Error bars indicate s.e.m. n = 3. *p<0.05, **p<0.01, ***p<0.001. Paired t-test. (C) The CCK-8 cell proliferation assay showed the proliferation of chicken fibroblasts in 1% CS. Error bars indicate s.e.m, n = 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme of the MyoD-induced transdifferentiation. (B) Morphology and EdU staining of chicken fibroblasts under different conditions from (A). Scale bars, 200 µm. (C) Quantification of the proportion of EdU-positive cells in (B). Error bars indicate s.e.m, n = 3. ns: not significant. Paired t-test. (D) Cellular morphology of chicken fibroblasts under different low-serum conditions. Orange triangles mark the sharper and smoother morphology of cell edge contours. Please note that the cells showed abnormal morphology in the lowest serums of 1% FBS and 0.5% CS. FBS: fetal bovine serum; CS: chicken serum. Scale bar, 100 µm.
+
+### 3D culture of chicken fibroblasts in GelMA hydrogels
 
 The behavior of cells grown on the top of 2D flat surface may differ from that of cells in 3D space. To simulate the 3D natural growth environment of cells in vivo, we utilized the gelatin methacrylate (GelMA)-based hydrogels as scaffolds for chicken fibroblasts. GelMA hydrogel can form a stable and porous structure for cell implantation and is commonly used in tissue engineering because of its great biocompatibility and mechanical tenability (Pepelanova et al., 2018). We created hydrogels with varying concentrations at 3, 5, 7, and 9wt%, and then observed their surface characteristics when immersed in culture medium using an emission scanning electron microscope. The porosity was measured to be 83.27, 65.01, 62.47, and 57.96%, respectively. Thus, the higher the mass concentration of hydrogels, the tighter the 3D mesh structure formed and the smaller the porosity (Figure 2A). The pore diameters in the scaffolds were determined to range from 3 µm2 to 100 µm2, showing the biggest pore size in 3% hydrogel and the smallest in 9% hydrogel (Figure 2B). Therefore, the porosity and pore size of the scaffold could be adjusted to achieve optimal physical strength and nutrients delivery that are suited for long-term cell culturation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig2-v1.jpg)
+
+**Figure 2.:** (A) Microscopic images of GelMA hydrogels at different concentrations (3, 5, 7, and 9 wt%) taken by scanning electron microscopy (SEM) and their corresponding simplified maps of pore distributions. Scale bar, 10 µm. (B) Quantification of pore area in (A). Error bars indicate s.e.m, n = 3. ****p<0.0001. Paired t-test. (C) Brightfield and red fluorescent images of cells in 3D culture after PKH26 staining at different times (1 hr, 1 d, 3 d, 5 d, and 9 d). Scale bars, 100 µm. (D) Relative area of PKH26-linked cells in (C). Error bars indicate s.e.m, n = 3. *p<0.05, ***p<0.001, ****p<0.0001. (E) Representative EdU staining shows the proliferation of cells in 3D culture on 1 d, 3 d, and 5 d after cell implantation in hydrogel. Scale bars, 100 µm. (F) Quantification of the proportion of EdU-positive cells in (E). Error bars indicate s.e.m, n = 3. **p<0.01. Paired t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Morphological changes of cells implanted and cultured on four different concentrations of hydrogels at 3, 5, 7, and 9 wt% for different times, and the 3 wt% hydrogel collapsed after the second day of growth. Scale bars, 100 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Brightfield and red fluorescent images of chicken fibroblasts in 2D culture after PKH26 labeling. Scale bars, 100 µm. (B) Morphology of cells in gelatin methacrylate (GelMA) hydrogels cultured in 3D before and after dissociation. Scale bars, 100 µm. (C) Morphology and EdU staining of chicken fibroblasts under different conditions. 3D→2D indicates that cells isolated from 3D (B) were re-cultured in 2D. Scale bars, 200 µm. (D) Quantification of the proportion of EdU-positive cells in (C). Error bars indicate s.e.m, n = 3. ns: not significant. Paired t-test.
 
 To determine the most ideal gel concentration and pore size suited for chicken fibroblast attachment and growth, we conducted an experiment where we implanted the same number of cells into gels with varied pore sizes and examined the cellular dynamics over a 9-day period (Figure 2—figure supplement 1). The cells adhered to the gels immediately and started to exhibit typical extended and irregular fibroblast cell morphology after 1 d, indicating the hydrogel’s good biological compatibility with chicken fibroblast cells. However, the 3% hydrogel collapsed in the medium 2 d after cell implantation and thus did not support the long-term cell growth. We continued to monitor the 3D cell proliferation and found that the cells successfully propagated in 5, 7, and 9% hydrogels for the entire duration of the experiment. Among the tested hydrogels, the 5% concentration was found to be the best option for cell attachment and growth as shown by the densest cellular structure formed, and thus be utilized for the subsequent analysis.
 
 Due to the challenges of observing and distinguishing the cells and pores within the hydrogel scaffold using the brightfield of ordinary light microscopy, we then used the PKH26 fluorescent cellular dye to accurately observe the cellular morphology and quantify the cell numbers. The cells were firstly labeled with PKH26 in 2D culture (Figure 2—figure supplement 2A) and then transferred into the gel matrix. Upon implantation, the cells appeared mostly round on the first day, but gradually extended and expanded within the hydrogel scaffold. By the fifth day, most of the cells were elongated with irregular shape and short tentacles and packed tightly, and by the ninth day they multiplied more than 15 times and formed dense fibrous bundles (Figure 2C and D). We also examined the proliferation dynamics of the cells in 3D scaffold via the EdU assay. The proliferation efficiency of chicken fibroblast cells gradually increased over time in 3D culture and reached replication levels even higher than those in 2D culture (Figures 1B and 2E,F). This result indicates that 3D culture conditions provide a more favorable environment for cell growth. Moreover, when the 3D cultured cells were detached from the gel by collagenase dissociation (Figure 2—figure supplement 2B) and seeded back in 2D monolayer culture plates, the cells again exhibited similar morphology but slightly increased proliferation capacity compared to the original fibroblasts in 2D conditions (Figure 2—figure supplement 2C and D). Thus, the chicken fibroblast cells cultured in 3D maintain their normal physiological characteristics and we continue to stimulate the cellular myogenesis and lipogenesis to prepare them for cultured meat production.
 
-## Transdifferentiation of chicken fibroblasts into muscle cells in 3D
+### Transdifferentiation of chicken fibroblasts into muscle cells in 3D
 
 Despite the complexity of the composition of fresh meat and processed products, muscle cells are the major and indispensable component of meat foods. The muscle cell-derived myotubes (myofibers) provide a rich source of proteins and nutrients and constitute the meat texture. To this end, we aimed to transform the chicken fibroblast into muscle cells through the established MyoD overexpression protocol (Ren et al., 2022). We first tested and optimized the myogenic transdifferentiation parameters in 2D culture through the DOX-induced MyoD expression (Figure 3—figure supplement 1). We observed elongated multinucleated myotubes and abundant expression of myosin heavy chain (MHC) after 3 d of myogenic induction (Figure 3—figure supplement 2A and B). The ‘serum deprivation’ protocol was the classical strategy to stimulate terminal myogenic differentiation in myoblasts of various species including chicken (Nakashima et al., 2005). Thus, we examined the myogenic transdifferentiation efficiency (myotube fusion index) in the chicken fibroblast cells overexpressing MyoD in combination with reduced concentrations of bovine or horse serums. However, we found that reducing serum concentrations did not increase the myotube formation but instead caused massive cell death (Figure 3—figure supplement 2B). Therefore, it seems that the ‘serum deprivation’ could not further improve the myogenic transdifferentiation in chicken fibroblast cells and a simple MyoD overexpression strategy is sufficient for efficient production of mature muscle cells.
 
 After demonstrating the feasibility of induced transdifferentiation of chicken fibroblasts into muscle cells in 2D culture, we continued myogenic transdifferentiation in 3D to simulate the construction of concrete whole-cut meat. The cells were inoculated into a hydrogel scaffold and allowed to proliferate for 7 d before inducing transdifferentiation with MyoD overexpression (Figure 3A). We used whole-amount MHC immunofluorescence staining to examine the myotube formation directly inside the gel. We identified abundant multinucleate MHC+ myotubes at multiple focal planes within the gel (Figure 3B, Figure 3—video 1), indicating successful myogenic transdifferentiation of 3D cultured chicken fibroblasts. In contrast, no MHC signal or autofluorescence was detected in the 3D cultured chicken fibroblasts (Figure 3—figure supplement 2C) and hydrogel without cells (Figure 3—figure supplement 2D). With the assistance of confocal Z-stack analysis, the stacked images showed densely packed MHC+ myotubes from a piece of cellular hydrogel complex at a depth of 68 μm (Figure 3D). The separate XY axis views of the orthogonal projections at different depths (Figure 3E) and a multiangle video (Figure 3—video 2) also showed that several myotubes were aligned together. Nevertheless, many myotubes were oriented in different directions, preventing the entire matrix from aligning in one direction. In conclusion, we successfully transformed the chicken fibroblast cells into mature muscle cells in 3D environment.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design for fibroblast myogenic transdifferentiation in 3D culture. (B) Representative images of myosin heavy chain (MHC) staining showed the myogenic ability of chicken fibroblasts in 3D culture. Scale bars, 50 µm. (C) Comparison of the mean myogenic fusion index between 2D and 3D. Error bars indicate s.e.m, n = 3. *p<0.05. Paired t-test. (D) 3D images of MHC staining of cells cultured in 3D. The right panel is depth-coded image, which indicate different depths from the deepest (cyan) to the surface (yellow). (E) Orthogonal projections of three sets of MHC staining of cells in 3D culture at different depths. Scale bars, 50 µm. (F) Expression of skeletal muscle-related genes was determined by RT-qPCR in 2D and 3D cells upon myogenic transdifferentiation and control 3D cells without stimulation. Note that the myogenic transdifferentiation driven by MyoD stimulates the expression of classical myogenic factors. Error bars indicate s.e.m, n = 3. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Paired t-test. (G) Macroscopic morphology of the empty hydrogel matrix (left) and cultured meat (right). The cultured meat is the product obtained after 3D cell culture and induction of myogenesis. Scale bars, 1 cm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The MyoD-3xFlag was fused in frame and under the control of Tet-On system. Representative immunofluorescence staining of MyoD in fibroblast_MyoD and fibroblast_Con. Scale bars, 50 μm. (B) Representative immunofluorescence staining of Flag in fibroblast_MyoD and fibroblast_Con. The anti-Flag immunostaining indicate the exogenous MyoD transgene expression. Scale bars, 50 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Experimental design for fibroblast myogenic transdifferentiation in 2D culture. (B) Myosin heavy chain (MHC) staining demonstrates the myogenic capacity of chicken fibroblasts. Note that horse serum (HS) treatment causes massive loss of cells. Scale bars, 100 µm. (C) Immunofluorescence staining of MHC in 3D cultured chicken fibroblasts without activation of MyoD factor as a negative control. Scale bar, 100 µm. (D) Immunofluorescence staining MHC in cell-free gelatin methacrylate (GelMA) hydrogels as the control. Scale bar, 200 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Scale bars, 1 cm.
+
 Compared to 2D, the transdifferentiated myotubes induced in 3D were more organized and densely packed, resembling the native myofiber distribution in vivo (Figure 3B). The myotube formation efficiency (fusion index) in 3D reached 30.49%, which was significantly higher than that of the 2D under the same transdifferentiation conditions (Figure 3C). We also evaluated the expression of several myogenic markers by RT-qPCR (Figure 3F). MyoG (myogenin) is a transcription factor regulating terminal skeletal muscle differentiation and could be induced by MyoD (Cao et al., 2006). MYH6 (myosin heavy chain 6) is the major protein comprising the muscle thick filament and functions in muscle contraction (van Rooij et al., 2009). MCK (muscle creatine kinase) is an enzyme that is primarily active in mature skeletal and heart muscle (Vincent et al., 1993). All myogenic factors, including MyoG, MYH6, and MCK, significantly increased upon transdifferentiation in both 2D and 3D. In addition, the transdifferentiated cells exhibited significantly higher expression of MyoG and MCK in 3D conditions compared to that in 2D, indicating more robust myogenic differentiation and maturation of cells in the 3D microenvironment. We speculate that the porous structure of the hydrogel matrix may support the cells to grow in all directions, similar to the environment in which the myofibers form in vivo.
 
 Macroscopically, the muscle filaments and the dense cellular network structures formed by myogenic transdifferentiation could make the hydrogel matrix more compact and solid (Figure 3G). Thus, compared to the empty transparent scaffolds without cells, the hydrogels cultivated with muscle cells more closely resemble whole-cut meat, similar to fresh animal meat.
 
-## Myogenic transdifferentiation of fibroblast does not produce myofibroblasts
+### Myogenic transdifferentiation of fibroblast does not produce myofibroblasts
 
 Fibroblasts can be induced to differentiate into myofibroblast upon injury, leading to tissue fibrosis. Similar to the skeletal muscle cells, the myofibroblast is also contractile and expresses the myogenic factor MyoD as well as certain types of sarcomeric MHCs (Hecker et al., 2011). To confirm that the myogenic transdifferentiated cells were indeed skeletal muscle cells but not the myofibroblasts, we utilized a panel of cell lineage-specific markers to delineate the cell conversion progress and determine the cellular identity of fibroblasts, myoblasts, and myofibroblasts, respectively. The immunofluorescence staining of 3D cultured cells showed that the muscle-specific intermediate filament Desmin (Paulin and Li, 2004) was expressed only in the MyoD-transdifferentiated cells, but not in the original fibroblasts or the embryonic skin-derived myofibroblasts (Figure 4A). In contrast, the classical myofibroblast marker alpha-smooth muscle actin (α-SMA) (Hinz et al., 2007) was expressed only in myofibroblasts, but not in the fibroblast or the transdifferentiated cells (Figure 4). The fibroblast intermediate filament Vimentin (Tarbit et al., 2019) was abundantly expressed in the fibroblasts but reduced in the myogenic transdifferentiated cells (Figure 4C). The 2D and 3D cultured cells showed consistent pattern of marker protein expression, indicating that the different culture models and conditions do not affect the cell identity conversion (Figure 4—figure supplement 1A and B). These results confirmed that the MyoD indeed transdifferentiate the cells toward the skeletal muscle lineage but not the myofibroblast. Furthermore, the RT-qPCR showed that, after myogenic induction in 3D, the skeletal muscle-specific genes Desmin and Six1 (Relaix et al., 2013) were significantly elevated (Figure 4D), whereas the fibroblast gene Thy-1 was significantly reduced (Figure 4E). The transforming growth factor β (TGFβ) signaling is the most potent known inducer of myofibroblast differentiation (Vaughan et al., 2000). We found that the expression of core TGFβ signaling components, TGFβ-1, TGFβ-3, and Smad3, remained unchanged during the transdifferentiation process (Figure 4F), indicating that the classical myofibroblast lineage was not induced. Together, these data confirm that the myogenic transdifferentiation of fibroblast does not produce myofibroblasts.
 
-## Stimulate the fat deposition in chicken fibroblasts in 3D
+![Figure 4.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunofluorescence staining of 3D cultured cells showed that the skeletal muscle marker Desmin was expressed only in the transdifferentiated cells but not in fibroblasts or myofibroblasts. Scale bars, 50 µm. (B) Immunofluorescence staining of 3D cultured cells showed that the myofibroblast marker alpha-smooth muscle actin (α-SMA) was expressed only in the myofibroblasts but not in fibroblasts or transdifferentiated cells. Scale bars, 50 µm. (C) Immunofluorescence staining of 3D cultured cells showed that the fibroblast marker Vimentin was abundantly expressed in fibroblasts and myofibroblasts but greatly reduced in transdifferentiated cells. Scale bars, 50 µm. (D) RT-qPCR showed that the myogenic genes Desmin and Six1 were significantly increased upon myogenic transdifferentiation. (E) RT-qPCR showed the fibroblast marker gene Thy-1 was significantly reduced upon myogenic transdifferentiation. (F) The myofibroblast marker genes TGFβ-1, TGFβ-3, and Smad3 remain unchanged during myogenic transdifferentiation. Error bars indicate s.e.m, n = 4. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. ns: not significant. Paired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunofluorescence staining of 2D cultured cells showed that the skeletal muscle marker Desmin was expressed only in the transdifferentiated cells but not in fibroblasts or myofibroblasts, and the myofibroblast marker alpha-smooth muscle actin (α-SMA) was expressed only in the myofibroblasts, but not in fibroblasts or transdifferentiated cells. Scale bars, 50 µm. (B) Immunofluorescence staining of 2D cultured cells showed that the fibroblast marker Vimentin was abundantly expressed in fibroblasts but greatly reduced in MyoD-transdifferentiated cells. Scale bars, 50 µm.
+
+### Stimulate the fat deposition in chicken fibroblasts in 3D
 
 The intramuscular fat is a crucial component of meat that can determine its quality attributes, such as taste and flavor. The chicken fibroblasts have been reported to be amenable to lipogenesis through various stimuli, including CS, insulin, fatty acids, and retinoic acids (Kim et al., 2021; Kim et al., 2020; Lee et al., 2021). We first attempted different lipogenic stimulations on 2D cultured cells and stained them for Oil Red O to visualize and quantify fat deposition in the fibroblasts. Very few scattered Oil Red O signals were found in the treatments consisting of only serums (12.5% FBS, 1% CS, or 2% CS), indicating no lipogenesis during normal proliferation conditions. However, when we added insulin and fatty acids (oleic/linoleic acid) to the medium, lipid droplets in the cells dramatically increased as detected by the Oil Red O staining. After extensive optimization of the concentrations of supplements in the medium, we identified that the 8 µg/ml fatty acids plus 60 µg/ml insulin (abbreviated as FI, F: fatty acids, I: insulin) can induce lipogenesis most efficiently in 2D chicken fibroblasts (Figure 5—figure supplement 1A–C).
 
 Next, the same lipogenesis induction strategy was applied to the 3D cultured cells (Figure 5A). We found extensive Oil Red O signal inside the hydrogel matrix at different focal planes and the lipid droplets were clearly visible as beaded strings under magnification (Figure 5B and C, Figure 5—video 1). The RT-qPCR analysis illustrated the expression of genes involved in lipogenesis and triglyceride synthesis was significantly higher in the cells with lipogenic stimulation compared to the control (Figure 5D). Notably, the genes encoding for PPARγ (peroxisome proliferator-activated receptor gamma), Gpd1 (glycerol-3-phosphate dehydrogenase), and FABP4 (fatty acid binding protein 4) all showed higher expression in 3D than that in 2D. Interestingly, the expression of Znf423 (zinc finger protein 423), which is a PPARγ transcriptional activator (Addison et al., 2014; Longo et al., 2018), only increased upon lipogenic induction in 3D but not in 2D conditions. It seems that the cells grown in 3D hydrogel showed enhanced lipogenesis compared to the flat surface cultured cells, similar to the myogenic transdifferentiation process in 3D. In addition to the lipogenic induction with fatty acids and insulin (FI), we also validated the use of CS in promoting lipid accumulation as previously reported (Kim et al., 2021). Our results showed that the CS alone could also stimulate fat accumulation effectively (Figure 5—figure supplement 2A–C). We further measured the triglyceride content and found that the lipogenic induction increased the triglyceride significantly in the cell matrix (Figure 5E). In conclusion, the 3D cultured chicken fibroblast can efficiently deposit lipids by different stimulations.
 
-## Controlled fat deposition in the transdifferentiated muscle cells in 3D hydrogel
+![Figure 5.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design for fibroblast lipogenesis in 3D culture (‘F’ is for fatty acids and ‘I’ is for insulin). (B) Representative images showing the Oil Red O staining of lipid content accumulated in cells at different focal planes at the same position. The control group was normal medium without lipogenesis. Scale bars, 100 µm. (C) Relative area of lipid droplets in (B). Error bars indicate s.e.m, n = 3. ****p<0.0001. Paired t-test. (D) Expression of lipid synthesis-related genes determined by RT-qPCR in 2D and 3D cells upon lipogenic induction and control 3D cells without stimulation. Error bars indicate s.e.m, n = 3. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Paired t-test. (E) Triglyceride content in the cultured meat upon different lipogenic inductions and control 3D cells without stimulation. Error bars indicate s.e.m, n = 3. **p<0.01. Paired t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Experimental design of fibroblast lipogenic differentiation in 2D culture. (B) Oil Red O staining of lipids in 2D under different conditions. Scale bar, 100 µm. (C) Relative area of lipid droplets in (B). Error bars indicate s.e.m, n = 3. ***p<0.001, ****p<0.0001. Paired t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Experimental design for fibroblast lipogenic differentiation in 3D culture induced by CS. (B) Oil Red O staining of 3D culture of cells after lipogenic induction (10% CS) and representative images were taken consecutively at different focal planes in the same position. ‘1’, ‘2’, ‘3’, are magnifications of the corresponding areas. Scale bars, 100 µm. (C) Relative area of lipid droplets in (B). Error bars indicate s.e.m, n = 3. ****p<0.0001. Paired t-test.
+
+### Controlled fat deposition in the transdifferentiated muscle cells in 3D hydrogel
 
 The above-presented data shows that chicken fibroblast cells have a superior capacity for transforming into muscle and depositing fat when cultured in a 3D hydrogel matrix. Next, we tried to combine the myogenic and lipogenic stimuli together to modulate the fat deposition in the cultured meat to simulate the various intramuscular fat contents in the conventionally raised meat. Rather than converting fibroblasts into muscle cells and fat cells separately and mixing them later, we adopted a new strategy that can induce de novo lipid deposition in the muscle by first inducing myogenic transdifferentiation and then followed by lipid induction in the same cells (Figure 6A, Figure 6—figure supplement 1A). In 2D conditions, plenty of MHC+ myotubes and Oil Red O-stained lipids were found to intermingle after the myogenic/lipogenic treatment (Figure 6—figure supplement 1B), and some of the red marked lipid droplets were located inside the myotubes, indicating that the transformed muscle cells indeed deposit fat autonomously to constitute intramyocellular lipids (Figure 6—figure supplement 1C). Next, we applied similar treatment to the cells cultured in 3D hydrogel and also identified Oil Red O-labeled lipid droplets mixed with the densely packed MHC+ myotubes (Figure 6B and C). These findings suggest that the use of myogenic/lipogenic treatments can induce the formation of muscle cells that are capable of depositing fat in both 2D and 3D. We further examined the expression levels of both myogenic and lipogenic factors in the 3D cultured cells by RT-qPCR. Compared to the control 3D cells without myogenic/lipogenic stimulations, the induced cells showed significantly higher expression of genes involved in both myogenesis and lipogenesis (Figure 6D). Interestingly, the extent of gene upregulation upon the combined myogenic/adipogenic stimulations was comparable to that of myogenic or adipogenic induction alone. This finding suggests that sequential myogenic transdifferentiation and lipid deposition do not interfere with each other when conducted in the same cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig6-v1.jpg)
+
+**Figure 6.:** (A) Experimental design for fibroblast myogenic/lipogenic differentiation in 3D culture. (B) Representative images of myosin heavy chain (MHC) and Oil Red O staining of cells upon myogenesis/lipogenesis in 3D culture. Scale bars, 50 µm. (C) Orthogonal projections of three sets of MHC and Oil Red O staining of cells in 3D culture at different depths. Scale bars, 50 µm. (D) Expression of muscle-related genes (top) and lipid-related genes (bottom) in the cells with myogenesis/lipogenesis induction and control 3D cells without any stimulation were determined by RT-qPCR. (E) Triglyceride content of cultured meat under different conditions and real meat compare to fibroblasts_control. ‘Meat_leg’ and ‘Meat_breast’ were taken from the leg and breast muscles of adult chickens. Error bars indicate s.e.m, n = 3. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Paired t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/93220/elife-93220-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Experimental process for sequential myogenic/lipogenic stimulation in 2D culture. (B) Myosin heavy chain (MHC) staining and Oil Red O staining of cells with 2D induction of myogenesis/lipogenesis, with the triangular arrow indicating that Oil Red O-labeled lipid droplets are shown under the red fluorescent channel. Scale bars, 100 µm. (C) Immunofluorescence staining and Oil Red O staining demonstrating lipid deposition inside the transdifferentiated muscle cells, with the triangular arrow indicating the location of the lipids within the muscle cell. Scale bars, 100 µm.
+
 The intramuscular fat is an integral component of both traditional animal meat and cultured meat, and it directly influences the meat flavor and texture (Frank et al., 2016). Hence, we compared the triglyceride levels in the 3D hydrogel cells with different types of lipogenic stimuli with the chicken breast and leg meat. The results showed that the lipogenic stimulation in the 3D hydrogel cells increased the triglyceride content in the cultured meat to the levels comparable to or even higher than real chicken meat (Figure 6E). In contrast, the control cells without any induction or with only myogenic stimulation do not show apparent triglyceride accumulation (Figure 6E). Therefore, the fat content in the cultured meat could be synthesized in a controlled manner, and then we tried to purposely manipulate the triglyceride contents in the meat matrix by adjusting the potency of adipogenic stimulation. By fine-tuning the concentrations of insulin and fatty acids during lipogenic induction, the triglyceride contents in the final product of cultured meat can precisely reach any customized levels across the range from 1.5 mg/g to 7 mg/g (Figure 6E), which overlap and surpass the levels in the fresh chicken breast and leg meat. As a result, this strategy greatly expands the diversity and category of cultured meat products, allowing for precise control over intramuscular fat contents to meet consumer preferences. Therefore, guided and graded fat deposition in cultured meat allows for the creation of various meat products with controlled intramuscular fat contents.
 
-## The collagen content and extracellular matrix components of cultured meat
+### The collagen content and extracellular matrix components of cultured meat
 
 Fibroblasts are an essential source of extracellular matrix (ECM), including the collagen, which provides elasticity to the tissue in the body and enriches the texture of the cultured meat (Ben-Arye and Levenberg, 2019). In theory, the fibroblast should generate abundant ECM to produce a more realistic meat product. We then examined the collagen content in the cultured meat and found that the total collagen protein gradually increased and reached the plateau at 1.59 µg/mg in the final product (Figure 7A). This is mainly due to the increased cell numbers and the accumulation of secreted collagen in the hydrogel matrix during myogenic/adipogenic transdifferentiation. Nevertheless, the RT-qPCR showed that the genes encoding the major components of ECM exhibited various expression patterns with the extension of culture time. The expression of COL1A1 (collagen, type I, alpha 1) and COL1A2 (collagen, type I, alpha 2) gradually decreased, whereas the fibronectin increased during the time course of meat synthesis. The expression of elastin and laminin genes remained stable throughout the whole course of the experiment (Figure 7B). However, the laminin protein content was accumulated and increased steadily during 3D culturation (Figure 7C). Overall, the synthesis and accumulation of different types and amounts of ECM components during the myogenic/lipogenic stimulations can improve the texture of the cultured meat prepared from fibroblast cells.
 
@@ -81,7 +145,7 @@ Fibroblasts are an essential source of extracellular matrix (ECM), including the
 
 **Figure 7.:** (A) Total collagen content of cultured meat at different days of cultivation. Error bars indicate s.e.m, n = 3. *p<0.05, ***p<0.001. Paired t-test. (B) Expression of ECM-related genes determined by RT-qPCR of cultured meat. Error bars indicate s.e.m, n = 3. *p<0.05, ***p<0.001, ****p<0.0001. Paired t-test. (C) Representative Laminin staining of cells in 3D culture on 1 d, 3 d, 5 d, and 7 d after cell implantation and transdifferentiation in hydrogel. Scale bars, 100 µm.
 
-## The characterization of molecular changes during myogenic transdifferentiation and fat deposition in cultured meat
+### The characterization of molecular changes during myogenic transdifferentiation and fat deposition in cultured meat
 
 To provide insights into the functional shifts during the transdifferentiation from fibroblasts toward muscle, fat, or muscle/fat cells in 3D culture, we further analyzed the transcriptomes from the different populations of cells including the ‘original fibroblasts’ (3D_fibroblast), ‘myogenic transdifferentiated cells’ (3D_MyoD), ‘adipogenic transdifferentiated cells’ (3D+FI), and ‘myogenic/adipogenic transdifferentiated cells’ (3D_MyoD+FI) (Figure 8A). To illustrate the relationship between these cell groups, we conducted an unsupervised hierarchical clustering analysis of the whole transcriptome. The findings revealed that the 3D+FI group clustered distinctly from the others, while the 3D_MyoD and 3D_MyoD + FI groups exhibited greater similarity. Moreover, the 3D_fibroblasts formed a distinct sub-cluster on their own (Figure 8B), suggesting that myogenic or adipogenic transdifferentiation drives these cells away from their original fibroblastic state. The principal component analysis (PCA) of the transcriptomes also showed that distinct trajectories of myogenic and adipogenic transdifferentiation routes were derived from the original fibroblasts and finally integrated together into the myogenic/adipogenic cells (3D) (Figure 8C). It indicates that the myogenic and adipogenic signalings could operate simultaneously and separately during the generation of the culture meat composed of muscle and fat. We also compared the differentially expressed genes (DEGs) from ‘3D_MyoD vs 3D_fibroblast’, ‘3D+FI vs 3D_fibroblast’, and ‘3D_MyoD + FI vs 3D_fibroblast’. The results showed that the majority (78%) of DEGs in the 3D_MyoD+FI are overlapped with 3D_MyoD and 3D+FI, indicating that sequential myogenic/adipogenic induction in 3D_MyoD+FI is consistent with myogenic or adipogenic function individually (Figure 8D). The heat map also highlighted the representative myogenic or adipogenic genes that were upregulated in the myogenic, adipogenic, or myogenic/adipogenic cells constitute the culture meat. In contrast, the fibroblast genes were diminished during the transdifferentiation, confirming the loss of fibroblast identity (Figure 8E). In addition, the Gene Ontology (GO) analysis of upregulated DEGs in 3D_MyoD+FI cells confirmed that myogenic-specific pathways such as ‘muscle organ development’ and adipogenic-specific pathways such as ‘PPAR signaling pathway’ were enriched. In addition, we also identified several multifunctional signaling pathways such as ‘JAK-STAT signaling pathway’, ‘NF-kappa B signaling pathway’, and ‘MAPK signaling pathway’ that were simultaneously activated during myogenic/adipogenic transdifferentiation, which should have profound effects on both myogenesis (Bakkar and Guttridge, 2010; Jang and Baik, 2013; Keren et al., 2006) and adipogenesis (Batista et al., 2012; Bost et al., 2005; Richard and Stephens, 2011; Figure 8F). The upregulated genes in the representative pathways (such as ‘Stat1’ in JAK-STAT signaling pathway, ‘Mapkapk3’ in MAPK signaling pathway) are shown in Figure 8G. In conclusion, the transcriptome analysis of the different types of transdifferentiated cells revealed important molecular mechanisms including not only the myogenic- and adipogenic-specific pathways driving the muscle formation and fat deposition respectively, but also several key multifunctional signaling pathways that can promote the cell fate transition and differentiation in different cellular contexts including the muscle and fat tissues.
 
@@ -107,64 +171,180 @@ In conclusion, we have effectively utilized immortalized chicken fibroblasts in 
 
 ## Materials and methods
 
-## Cell preparation and inducible myogenic transdifferentiation
+### Cell preparation and inducible myogenic transdifferentiation
 
 The cellular transdifferentiation was constructed as described previously (Ren et al., 2022; Ren et al., 2023). Briefly, we cloned the chicken full MyoD coding sequence fused in-frame with 3xFlag into a DOX-inducible lentiviral system (Tet-On-MyoD). The wild-type chicken fibroblasts were infected with lentivirus and subjected to puromycin selection, and finally obtained the transdifferentiation cell lines. In addition, myofibroblasts were isolated from the skin of 10-day-old chicken embryos in the same way as in the previous study (Kosla et al., 2013). Cells were cultured in 1640 basal medium (Gibco, #C11875500BT) supplemented with 12% FBS (CELLiGENT, #CG0430A) and 1% penicillin-streptomycin (Gibco, #11140050) at 39°C under 5% CO2 atmosphere and were given fresh medium every 2 d. When grown to approximately 80% confluence, the cells were trypsinized and passaged. The study was approved by the Animal Care and Use Committee of Shandong Agricultural University.
 
-## Domestication of cells in low-concentration serum medium
+### Domestication of cells in low-concentration serum medium
 
 The chicken fibroblast cells were domesticated with the progressive reduced concentrations of serum. In general, cells were cultured with 12% FBS in 1640 basal medium, and when grown to about 80% confluence, the medium was replaced with a 6% FBS medium for further cell culture and passage. The medium was then changed to 3% FBS medium for further cell culture and passage depending on the cell status, and so on. This was started again and the above steps were repeated as soon as the cells grew badly or died. We directly changed the cell culture medium from 12% FBS to 2% CS then reduced it to 1% CS when using CS (Solarbio, #S9080) medium and the cells could adapt to the medium with low concentration of CS after 3–5 passages.
 
-## Preparation of 3D scaffold and cell culture in 3D matrix
+### Preparation of 3D scaffold and cell culture in 3D matrix
 
 GelMA hydrogels were purchased from Beijing ShangPu for this experiment. Appropriate amount of GelMA powder was weighed, dissolved in 1640 basal medium on a water bath at 70°C for about 30 min, and then filtered with 0.22 μm sieve. Then, 1/8 volume of lithium acylphosphinate salt photoinitiator was added to the dissolution solution to obtain GelMA hydrogel solution, then stored at 37°C until usage but no more than 24 hr. Fibroblast cells were obtained by trypsin treatment and suspended with GelMA hydrogel solution and gently mixed, followed by treatment of 405 nm UV light for 10–20 s to get a 3D hydrogel scaffold. In addition, the hydrogel was secured on a fixation ring for better cell growth and easy movement (Figure 3—figure supplement 3). The cell hydrogel complexes were placed in 24-well plate and culture with 1640 medium containing 12% FBS. Then, they were transferred to a new well after 12 hr, and fresh medium was added and changed every 24 hr. The cell hydrogel complexes were gently washed three times with PBS buffer and digested by collagenase II enzyme (Worthington, LS004177) in an incubator at 39°C for 6 min until the cells in the hydrogel package became round and shed. The digest was terminated by adding medium and then centrifuged at 1000 × g for 10 min at room temperature (25 °C).
 
-## Cell Counting Kit-8 assay
+### Cell Counting Kit-8 assay
 
 Cells cultured in 1% CS and 12% FBS were seeded into 96-well plates with 100 μl of medium per well and incubated for 0 hr, 24 hr, 48 hr, and 72 hr. 10 μl of the Cell Counting Kit-8 assay (CCK-8) solution (Solarbio, #CA1210, China) was then added to each well and incubated for 2 hr. The absorbance values at 450 nm were measured with an EnSpire multifunctional spectrophotometer (PerkinElmer, USA).
 
-## EdU assay
+### EdU assay
 
 2D cells were cultured in 6-well plates, and 1 ml of the growth medium was added to each well with 0.25 μl of 1.25 mg/ml 5-ethynyl-2'-deoxyuridine (EdU) (Beyotime, #ST067-1g). After 30 min of incubation, cells were fixed by 4% paraformaldehyde (PFA) for 30 min. The cells were stained with a prepared reaction solution consisting of 1 mmol/L CuSO4, 100 mmol/L Tris–HCl, 100 mmol/L ascorbic acid, 1:1000 Alexa Fluor 555 Azide as previous described (Zhang et al., 2022). After 30 min, the cells were washed with PBS, and the nuclei were stained with 50 ng/ml DAPI for 10 min. 3D cultures of cells were cultured in 24-well plate by adding 1 ml of the medium with 0.25 μl EdU, incubated for 1 hr, and then fixed with 4% PFA for 24 hr. Staining time was extended to 1 hr and nuclear staining to 20 min. Fluorescence images were collected using fluorescence microscopy.
 
-## Cell differentiation
+### Cell differentiation
 
 For fibroblast induction into myoblasts, 50 ng/ml DOX (Sigma, #D3000000) in 1640 basal medium containing 12% FBS was added for 3 d, and the differentiation medium was replaced when the cells reached 80% confluence. In addition, in 3D culture, cells were proliferated for 7 d before changing the differentiation medium when a dense arrangement of cells can be observed under the microscope.
 
 For induction of lipogenic differentiation, the differentiation medium was changed when the fusion rate of cells reached 80% in 2D culture or proliferated for 5–7 d in 3D culture. The lipogenesis was induced for 48 hr with fresh medium changes every 24 hr. For the differentiation experiments, 1640 with 12% FBS was used as a control, and the lipogenic medium was consistent with a 1:100 fatty acid ('F' for short) composition of 1:1 oleic acid (Sigma, #O3008, 2 mol oleic acid/mole albumin) and linoleic acids (Sigma, #L9530, 2 mol linoleic acid/mole albumin; 100 mg/ml albumin), and insulin ('I' for short) (Sigma, #I0516) concentration of 60 μg/ml.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Similar to our previous steps for immunofluorescence staining of cells in 2D culture (Luo et al., 2022), cells were fixed in 4% PFA for 30 min and washed three times with PBS buffer at room temperature, then permeabilized with 0.5% Triton X-100 in PBS for 10 min and blocked with 10% goat serum at 0.5% TritonX-100 for 1 hr. Primary antibodies were diluted with 10% goat serum in 0.5% Triton X-100 at 4°C for 12 hr. The primary antibodies for MHC (DSHB, #AB2147781), Desmin (Sigma, #D8281) and laminin (Sigma, #F1804) were added at a dilution of 1:500, and the primary antibodies for Vimentin (DSHB, #AB528504) was added at a dilution of 1:200. This was followed by incubation with Alexa secondary antibody (Invitrogen, #A-21202, #A-21206, and #A-31570) at a 1:500 dilution for 2 hr at room temperature. The antibody for α-SMA (Sigma, C6198) was added at a dilution of 1:500 and incubated with 10% goat serum in 0.5% Triton X-100 at room temperature for 2 hr. Nuclear staining was performed with 50 ng/ml DAPI (Sigma, #D8417) for 10 min. Cells in the 3D culture were fixed for 48 hr, the total time of permeabilizing and the blocking was no more than 24 hr, and the incubation time of the primary antibody was extended to 24 hr, the secondary antibody to 4 hr, and the nuclear staining to 20 min. For MHC detection, fluorescence images were collected using fluorescence microscopy, and the MHC+DAPI+/DAPI+ differentiation index was calculated from three or more images using confocal microscopy (Zeiss LSM 800).
 
-## Oil Red O staining
+### Oil Red O staining
 
 For Oil Red O staining, cells were fixed with 4% PFA for 30 min or 24 hr, respectively, in 2D and 3D culture. After washing thrice with PBS at room temperature, the cells were soaked in 60% isopropanol for better coloration of Oil Red and then washed for 5 min or 10 min, respectively, in 2D and 3D culture. The cells were stained with Oil Red O (Sigma, #O0625) for 30 min or 60 min, respectively, in 2D and 3D. The cells were then washed with 60% isopropanol for 30 s or 1 min, respectively, in 2D and 3D to remove surface staining. Then, the cells were washed with distilled water three times and the stained lipid droplets were visualized using a microscope.
 
-## mRNA extraction and RT-qPCR
+### mRNA extraction and RT-qPCR
 
 Cells were lysed in Trizol (Simgen, #5301100) and RNA was extracted following the manufacturer’s recommendations. RNA concentration was measured on NanoDrop2000 (Thermo Scientific, USA). 1 μg of RNA was reverse-transcribed using PrimeScript RT reagent kit (Takara, #RR047A). Real-time quantitative PCR was performed using SYBR Green Mix (Abclonal, #RK21203) following the manufacturer’s instructions. Expression was normalized to GAPDH using delta-delta-CT method. For comparisons of the expression, we used a one-tailed Student’s t-test. The error bars indicate the SEM. The RT-qPCR primers are described in Table 1.
 
-## Transcriptome analysis
+**Table 1.**
+ List of primers of qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gapdh</td>
+      <td>TCGGAGTCAACGGATTTGGC</td>
+      <td>ATAGTGATGGCGTGCCCATT</td>
+    </tr>
+    <tr>
+      <td>MyoD</td>
+      <td>ACTACAGCGGGGAGTCAGAT</td>
+      <td>GCTTCAGCTGGAGGCAGTAT</td>
+    </tr>
+    <tr>
+      <td>MyoG</td>
+      <td>AGCCTTCGAGGCTCTGAAAC</td>
+      <td>AAACTCCAGCTGGGTGCTC</td>
+    </tr>
+    <tr>
+      <td>Myh15</td>
+      <td>AGATAAAGGAACTACAGGCTCGT</td>
+      <td>CGCCAGCTTCAGGAACTCA</td>
+    </tr>
+    <tr>
+      <td>CKM</td>
+      <td>ACCTGGACCCCAAATACGTG</td>
+      <td>TCGAACAGGAAGTGGTCGTC</td>
+    </tr>
+    <tr>
+      <td>Desmin</td>
+      <td>GGAGATCGCCTTCCTCAAGA</td>
+      <td>CAGGTCGGACACCTTGGATT</td>
+    </tr>
+    <tr>
+      <td>Six1</td>
+      <td>ACTGCTTCAAGGAGAAGTCG</td>
+      <td>TTCTCCGTGTTCTCCCTCTC</td>
+    </tr>
+    <tr>
+      <td>Thy-1</td>
+      <td>TGTCATCCTGACAGTGCTGC</td>
+      <td>GGTAGAGGCACACCAGGTTC</td>
+    </tr>
+    <tr>
+      <td>TGFβ–1</td>
+      <td>GAGCTGTACCAGGGTTACG</td>
+      <td>GAAGCCTTCGATGGAGATG</td>
+    </tr>
+    <tr>
+      <td>TGFβ–3</td>
+      <td>CTCCCCGAGCACAATGAGT</td>
+      <td>TATATGCTCATCTGGCCGCA</td>
+    </tr>
+    <tr>
+      <td>Smad3</td>
+      <td>GCAAGATCCCACCAGGATG</td>
+      <td>GAGGTGCAGCTCAATCCAG</td>
+    </tr>
+    <tr>
+      <td>Pparg</td>
+      <td>TGCCAAGCATTTGTAT</td>
+      <td>TGCGAATTGCTACTTCTTTGTT</td>
+    </tr>
+    <tr>
+      <td>Znf423</td>
+      <td>CCAGTGCCCACAGAAGTTCT</td>
+      <td>CCACTGTGCCACCATCAAGT</td>
+    </tr>
+    <tr>
+      <td>Fabp4</td>
+      <td>CAAGCTGGGTGAAGAGTTTGATG</td>
+      <td>TCGTAAACTCTTTTGCTGGTAAC</td>
+    </tr>
+    <tr>
+      <td>Gpd1</td>
+      <td>GGCTTTTGCCAAGACTGGGAA</td>
+      <td>GGTTTGCCCTCATAGCAGATCTG</td>
+    </tr>
+    <tr>
+      <td>Collagen I α1</td>
+      <td>GTCCTGCTGGATTTGCTGG</td>
+      <td>GAAACCAGTAGCACCAGGG</td>
+    </tr>
+    <tr>
+      <td>Collagen I α2</td>
+      <td>TGATCCATCTAAAGCGGCTG</td>
+      <td>TTTGCCAGGGTGACCATCTT</td>
+    </tr>
+    <tr>
+      <td>Laminin</td>
+      <td>CGCGATTTCTGATTTTGCCG</td>
+      <td>CATTGCAGTCACAAGGCAAG</td>
+    </tr>
+    <tr>
+      <td>Fibronectin</td>
+      <td>GTGCTACGACGATGGGAAAA</td>
+      <td>GCAGTTGACGTTGGTGTTTG</td>
+    </tr>
+    <tr>
+      <td>Elastin</td>
+      <td>CTACTGGGACAGGTGTTGGA</td>
+      <td>CACCATAGGCTCCTGCCTT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transcriptome analysis
 
 The RNA-seq library-preparation protocol was based on the NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, #E7530L). Insert size was assessed using the Agilent Bioanalyzer 2100 system and qualified insert size was accurate quantification using StepOnePlus Real-Time PCR System (Library valid concentration＞10 nM) and then paired-end sequencing using an Illumina platform. RNA-seq was performed on triplicates for each sample. Sequencing data have been deposited in SRA database under accession code PRJNA1102033.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 The RNA-seq raw data were first trimmed adapters by trim_galore software (Bolger et al., 2014) and then the clean data of RNA-seq was mapped to the chicken genome (Ensembl, GRCg7b) using hisat2 (Kim et al., 2019) with default parameters. Because of using paired-end reads, the concordant unique mapping reads/pairs were kept based on the mapping flags. The duplications were removed based on the coordinates of the reads/pairs. The de-duplication unique mapping reads/pairs were used for further analysis in this study. The read counts for each sample were computed with the featureCounts (Liao et al., 2014) software, and the RefSeq gene annotation for chicken genome assembly is GRCg7b. The transcript per million (TPM) was normalized using the read counts. DEGs of RNA-seq data were analyzed using DESeq2 called by q<0.01 and fold change >2 thresholds. The chicken genes were transformed to homolog human genes using the ensemble bioMart database, the GO in this study was conducted in Metascape, and the enriched top pathways are shown. All plots were generated with R (v4.0.3).
 
-## Measurement of total collagen content in cultured meat
+### Measurement of total collagen content in cultured meat
 
 Total collagen content was determined by the concentration of hydroxyproline. The medium was replaced with fresh medium in the incubator for 2 hr before the assay and washed three times with PBS. According to the instructions of the Hydroxyproline Assay Kit (Jiancheng, #A030-1-1, China), 1 volume of saline was added to dried cultured meat at a 1:1 ratio of weight and volume. After mechanical homogenization in an ice-water bath, the digestion solution was incubated at 37°C in a water bath for 4 hr. Hydroxyproline content was measured by the absorbance at 550 nm using an EnSpire multifunctional spectrophotometer (PerkinElmer). For each measurement of cultured meat, the hydroxyproline content of the corresponding blank cell-free hydrogel was subtracted. The amount of collagen was calculated from the hydroxyproline concentration with a conversion factor of 7.25 in μg/mg wet tissue (Vasanthi et al., 2007; Zheng et al., 2021).
 
-## Measurement of triglyceride content in cultured meat
+### Measurement of triglyceride content in cultured meat
 
 The triglyceride content in cultured meat was measured using the kit (Solarbio, #BC0620, China). Before the assay, the culture system was washed three times with PBS and uniformly added to the same medium containing 12% FBS in an incubator for 2 hr. It was then removed and washed three more times with PBS. The cultured meat was taken out and churned, and the precipitate is obtained by centrifugation, which should be well air-dried. The precipitate was weighed and Trizol was added to lyse cell for 2 hr. A mixture of n-heptane and isopropanol at a ratio of 1:1 was then added, shaken, and mixed. Then, potassium hydroxide was added and fullly shaken to produce glycerol and fatty acids, and the other reagents were added in sequence according to the instructions. The final triglyceride content was measured by the specific light intensity at 420 nm, as described previously.
 
-## Emission scanning electron microscope
+### Emission scanning electron microscope
 
 The cell hydrogels were washed three times with PBS and then fixed in 4% PFA for 1 hr. The samples were randomly clamped into spiking trays, rapidly frozen in liquid nitrogen, and then the images were randomly collected using the emission scanning electron microscope (Hitachi SU8010, Japan).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using the GraphPad Prism software. For normally distributed data sets with equal variances, a two-sample t-test was used. The significance of differences is provided in the figure legends.

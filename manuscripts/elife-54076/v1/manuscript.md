@@ -38,11 +38,198 @@ Direct estimation of 46,000 annual snakebite deaths in India in 2005 (Mohapatra 
 
 ## Results
 
-## Trends in snakebite mortality and its geographic and temporal patterns
+### Trends in snakebite mortality and its geographic and temporal patterns
 
 From 2001 to 2014, the MDS reported deaths with causes classified by physicians who examined verbal autopsy records collected from over 3.6 million households in three distinct nationally representative sampling frames (1993–2003; 2004–13; and 2014–23). Two of 404 independent physicians coded each death to the International Classification of Diseases-10th revision (ICD-10), reconciling (anonymously) any coding differences with a senior physician adjudicating any persistent disagreements (Gomes et al., 2017; Aleksandrowicz et al., 2014; Menon et al., 2019). Among 611,483 available records, 2833 deaths were assigned to snakebites (ICD-10 code X20). The two physicians agreed on the diagnosis 92% of the time. About 94% of snakebite deaths occurred in rural areas, and 77% occurred out of hospital (Appendix 1—table 1).
 
 We applied the age- and sex-specific proportion of snakebite deaths to total deaths as estimated by the United Nations Population Division (UN) for India (United Nations, 2019) to estimate national death rates by age and sex, as well as absolute totals for each year (Table 1). The UN totals are based on careful demographic review of census and other data sources. The fieldwork procedures of the Sample Registration System (SRS the underlying demographic survey on which the MDS is based) leads to some undercounts (of about 5–10%) of expected deaths (Gerland, 2014). The SRS is representative at the state and rural/urban strata, and has a large, distributed sampling covering over 7000 small areas in the whole of the country (Registrar General of India, 2017). Hence, any missing deaths are generally randomly distributed across states, and not clustered in one state or one key sub-group, such as in rural areas (Dhingra et al., 2010; Aleksandrowicz et al., 2014; Menon et al., 2019). Thus, the proportion of snakebite deaths is not likely an underestimate. However, total snakebite deaths might be underestimated. The use of the UN death totals adjusts for these possible undercounts and provides a plausible national total for each year.
+
+**Table 1.**
+ Snakebite deaths in the Million Death Study, age-standardized and age-specific mortality rates and risks in India from 2001-2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Year</th>
+      <th rowspan="2">Study deaths from snakebite/all causes</th>
+      <th colspan="4">Standardized death rate /100,000 (all ages) and age-specific rates /100,000*</th>
+      <th>Snakebite mortality risk†</th>
+      <th>Estimated national deaths (000)‡</th>
+    </tr>
+    <tr>
+      <th>All ages</th>
+      <th>0-14</th>
+      <th>15-29</th>
+      <th>30-69</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2001</td>
+      <td>199 /41826</td>
+      <td>5.3</td>
+      <td>5.4</td>
+      <td>3.6</td>
+      <td>5.9</td>
+      <td>0.40%</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>183 /41740</td>
+      <td>5.2</td>
+      <td>5.2</td>
+      <td>3.5</td>
+      <td>5.8</td>
+      <td>0.39%</td>
+      <td>55.3</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>179 /38798</td>
+      <td>5.1</td>
+      <td>5.0</td>
+      <td>3.4</td>
+      <td>5.8</td>
+      <td>0.38%</td>
+      <td>55.8</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>190 /37380</td>
+      <td>5.0</td>
+      <td>4.6</td>
+      <td>3.5</td>
+      <td>5.7</td>
+      <td>0.38%</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>244 /46755</td>
+      <td>4.9</td>
+      <td>4.8</td>
+      <td>3.4</td>
+      <td>6.4</td>
+      <td>0.40%</td>
+      <td>60.8</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>214 /47471</td>
+      <td>5.3</td>
+      <td>4.7</td>
+      <td>3.2</td>
+      <td>6.7</td>
+      <td>0.40%</td>
+      <td>62.7</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>225 /48536</td>
+      <td>5.3</td>
+      <td>4.5</td>
+      <td>3.0</td>
+      <td>6.4</td>
+      <td>0.39%</td>
+      <td>61.0</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>215 /47673</td>
+      <td>5.1</td>
+      <td>4.2</td>
+      <td>2.8</td>
+      <td>5.9</td>
+      <td>0.36%</td>
+      <td>57.4</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>183 /47873</td>
+      <td>4.7</td>
+      <td>3.9</td>
+      <td>2.6</td>
+      <td>5.3</td>
+      <td>0.33%</td>
+      <td>53.8</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>200 /45719</td>
+      <td>4.3</td>
+      <td>3.9</td>
+      <td>2.6</td>
+      <td>5.0</td>
+      <td>0.32%</td>
+      <td>52.4</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>185 /46099</td>
+      <td>4.2</td>
+      <td>4.0</td>
+      <td>2.7</td>
+      <td>5.1</td>
+      <td>0.33%</td>
+      <td>54.9</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>227 /46635</td>
+      <td>4.3</td>
+      <td>4.3</td>
+      <td>2.8</td>
+      <td>5.4</td>
+      <td>0.36%</td>
+      <td>59.2</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>214 /45331</td>
+      <td>4.6</td>
+      <td>4.4</td>
+      <td>3.0</td>
+      <td>5.8</td>
+      <td>0.38%</td>
+      <td>62.3</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>175 /29647</td>
+      <td>4.7</td>
+      <td>4.2</td>
+      <td>3.0</td>
+      <td>5.9</td>
+      <td>0.37%</td>
+      <td>61.2</td>
+    </tr>
+    <tr>
+      <td>2001-2014</td>
+      <td>2833 /611483</td>
+      <td>4.8</td>
+      <td>4.5</td>
+      <td>3.1</td>
+      <td>5.8</td>
+      <td>0.37%</td>
+      <td>807.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Plausible range (Lower, Upper)§</td>
+      <td>(4.4, 5.0)</td>
+      <td>(4.1, 4.7)</td>
+      <td>(2.8, 3.2)</td>
+      <td>(5.3, 6.0)</td>
+      <td>(0.34%, 0.38%)</td>
+      <td>(738.2, 833.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Death rates were standardized to the Indian population in census year 2001 to take into account minor changes in the age distribution over time.† The probability of dying due to snakebite before reaching age 70 years in the hypothetical absence of other competing causes of death. This was calculated by summing the 5-yearly standardized death rates from ages 0 to 69 years.‡ Total death estimates at all ages were calculated by applying the MDS sample weighted proportion of deaths from snakebites, using weighted 3-yearly moving average, to the United Nations Population Division death totals.§ Plausible ranges: The inherent variation in these estimates is not from the underlying demographic estimates but in the determination of primary causes of death. Therefore, we used plausible ranges based on independent cause assignment by two physicians and subsequent agreement on ICD-10 codes (X20 or X29). The lower bound was based on immediate agreement of both physicians and upper bound based on either of two physicians coding snakebite deaths._
 
 Total snakebite deaths in India from 2001 to 2014 totaled about 808,000, with reasonably narrow uncertainty range of 738,000 to 833,000, based on both physicians immediately assigning snakebites or only one physician doing so. Some age-specific death rates fell, but as population growth averaged 1.1% annually, the application of annual age-specific rates to the UN death totals for that year showed that the overall number of snakebite deaths grew from about 55,000 in 2001 to about 61,000 in 2014. During the 2001–2014 MDS study period, the average age-standardized snakebite death rate (using the Indian census population of 2001 to take into account the minor change in age structure) was 4.8 per 100,000 population, falling annually by 0.8%.
 
@@ -50,11 +237,315 @@ Declines in the age-specific snakebite death rate were fastest for children aged
 
 Because the risk of dying from snakebites has been stable from 2001 to 2014, we can make reasonably reliable forward projections from 2015 to 2019 and backward projections from 2001 to 2000 (Table 2). This reveals that 1.2 million snakebite deaths occurred over this 20-year period. Of these deaths, 602,000 occurred among males and 565,000 occurred among females. With both sexes combined, about 543,000 (47%) occurred in middle-age (30–69 years), 325,000 (28%) among children below 15 years, 197,000 (17%) among adults aged 15–29 years, and 102,000 (9%) among those over age 70 years. Using the agreement of one or two physicians on the cause yielded generally narrow uncertainty estimates for each sex and age groups.
 
+**Table 2.**
+ Estimated snakebite deaths in thousands by age and sex from 2000 to 2019 in India.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age range</th>
+      <th>Male (LL, UL)</th>
+      <th>Female (LL, UL)</th>
+      <th>Both (LL, UL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0-14 years</td>
+      <td>149 (134, 154)</td>
+      <td>176 (160, 180)</td>
+      <td>325 (294, 334)</td>
+    </tr>
+    <tr>
+      <td>15-29 years</td>
+      <td>109 (102, 111)</td>
+      <td>88 (82, 89)</td>
+      <td>197 (184, 199)</td>
+    </tr>
+    <tr>
+      <td>30-69 years</td>
+      <td>290 (269, 303)</td>
+      <td>253 (232, 260)</td>
+      <td>543 (501, 564)</td>
+    </tr>
+    <tr>
+      <td>70 years or above</td>
+      <td>54 (45, 60)</td>
+      <td>48 (44, 50)</td>
+      <td>102 (89, 110)</td>
+    </tr>
+    <tr>
+      <td>All Ages</td>
+      <td>602 (551, 626)</td>
+      <td>565 (518, 578)</td>
+      <td>1,167 (1068, 1204)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Total deaths for 2001-2014 MDS study period were 807,500 (Table 1). Deaths for 2000-2019 were calculated by extrapolating these annual deaths. The extrapolated annual deaths in thousands for outside the study period were 54.0 for 2000, 62.3 for 2015, 62.0 for 2016, 61.4 for 2017, 60.3 for 2018 and 59.8 for 2019.Lower limit (LL) and Upper limit (UL) are lower and upper uncertainty bounds for estimates. The major uncertainty in our analyses, however, is not the demographic totals, but the cause of death classification. Hence, the lower bound was based on immediate agreement of both physicians on the ICD-10 code for snakebite and upper bound based on either of two physicians coding as snakebite death._
+
 From 2001 to 2014, just under 70% of these snakebite deaths occurred in eight states with about 55% of the population: Bihar, Jharkhand, Madhya Pradesh, Odisha, Uttar Pradesh, Andhra Pradesh (which includes Telangana, a recently defined state), Rajasthan and Gujarat (Table 3). In these high-burden states, the age-standardized death rate was about six per 100,000. Snakebite death rates generally rose over time in most high-burden states, particularly in Bihar, but fell in Andhra Pradesh. The remaining lower-burden states began the study period with age-standardized death rates of about 3.7, which fell over time. Figure 1 shows the absolute risk of dying from snakebite using data from 7400 small areas (the small sampling units used in the RGI’s Sample Registration System for the MDS) from 2004 to 2013. The absolute risks were calculated applying spatially smoothed predictive relative risks from a spatial Poisson model to the overall national risk before age 70 years (of about 0.4%, Table 1) after adjusting for any differences in rural/urban status, female illiteracy levels, temperature, and altitude of local areas. We observed greater than 0.6% (1 in 167) mortality risk before age 70 years in the highest risk sub-areas of Andhra Pradesh, Odisha, Bihar, Uttar Pradesh, Madhya Pradesh, Chhattisgarh, and Rajasthan. About 260 million people lived in these areas in 2015, including about 4 million people living in hot spots that had a 1% or greater risk of death from snakebite. Appendix 3 provides statistical details and credible intervals of these risk estimates.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54076/elife-54076-fig1-v1.jpg)
 
 **Figure 1.:** Note: About 0.33% of the Indian population lived in areas with an absolute risk of 1% or greater of dying from snakebite before age 70 years, and 21% lived in areas with absolute risk of 0.6% or higher. Population estimates used the Gridded Population of the World version 4 for year 2015 (Center for International Earth Science Information Network - CIESIN - Columbia University, 2015). Further details of statistical method and stochastic uncertainties of spatial mortality risk pertaining to these estimates are explained in Appendix 3.
+
+**Table 3.**
+ Snakebite death rates by state in India for 2001-2014.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2"></th>
+      <th rowspan="2">Study deaths in MDS</th>
+      <th colspan="4">Annual average standardized death rate /100,000</th>
+      <th rowspan="2">Estimated deaths for 2001-14 (000)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">State</th>
+      <th>2001-2004</th>
+      <th>2005-2009</th>
+      <th>2010-2014</th>
+      <th>Trend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Higher burden states</td>
+      <td>1726</td>
+      <td>5.9</td>
+      <td>6.1</td>
+      <td>6.2</td>
+      <td></td>
+      <td>557.4</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Andhra Pradesh</td>
+      <td>271</td>
+      <td>8.5</td>
+      <td>7.3</td>
+      <td>5.6</td>
+      <td></td>
+      <td>82.9</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Bihar</td>
+      <td>321</td>
+      <td>5.6</td>
+      <td>7.6</td>
+      <td>8.9</td>
+      <td></td>
+      <td>101.9</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Odisha</td>
+      <td>191</td>
+      <td>7.5</td>
+      <td>7.2</td>
+      <td>5.9</td>
+      <td></td>
+      <td>40.3</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Madhya Pradesh</td>
+      <td>195</td>
+      <td>6.7</td>
+      <td>7.7</td>
+      <td>6.0</td>
+      <td></td>
+      <td>67.8</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Uttar Pradesh</td>
+      <td>322</td>
+      <td>5.2</td>
+      <td>5.9</td>
+      <td>6.0</td>
+      <td></td>
+      <td>153.6</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Rajasthan</td>
+      <td>192</td>
+      <td>4.9</td>
+      <td>6.7</td>
+      <td>5.0</td>
+      <td></td>
+      <td>52.1</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Gujarat</td>
+      <td>176</td>
+      <td>4.1</td>
+      <td>4.8</td>
+      <td>5.1</td>
+      <td></td>
+      <td>38.8</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Jharkhand</td>
+      <td>58</td>
+      <td>4.9</td>
+      <td>2.0</td>
+      <td>7.1</td>
+      <td></td>
+      <td>20.1</td>
+    </tr>
+    <tr>
+      <td colspan="3">Lower burden states</td>
+      <td>1107</td>
+      <td>3.7</td>
+      <td>3.1</td>
+      <td>2.1</td>
+      <td></td>
+      <td>249.9</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Chhattisgarh</td>
+      <td>42</td>
+      <td>6.0</td>
+      <td>6.5</td>
+      <td>2.5</td>
+      <td></td>
+      <td>16.8</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Jammu &amp; Kashmir</td>
+      <td>64</td>
+      <td>5.3</td>
+      <td>7.0</td>
+      <td>0.9</td>
+      <td></td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Tamil Nadu</td>
+      <td>176</td>
+      <td>6.1</td>
+      <td>3.4</td>
+      <td>3.0</td>
+      <td></td>
+      <td>42.1</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Karnataka</td>
+      <td>137</td>
+      <td>5.6</td>
+      <td>3.3</td>
+      <td>2.9</td>
+      <td></td>
+      <td>33.0</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Maharashtra</td>
+      <td>147</td>
+      <td>4.2</td>
+      <td>3.7</td>
+      <td>2.6</td>
+      <td></td>
+      <td>56.0</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>West Bengal</td>
+      <td>188</td>
+      <td>4.1</td>
+      <td>3.3</td>
+      <td>2.9</td>
+      <td></td>
+      <td>42.7</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Punjab</td>
+      <td>67</td>
+      <td>2.9</td>
+      <td>3.1</td>
+      <td>4.0</td>
+      <td></td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Haryana</td>
+      <td>45</td>
+      <td>2.9</td>
+      <td>3.3</td>
+      <td>1.8</td>
+      <td></td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Assam</td>
+      <td>27</td>
+      <td>2.8</td>
+      <td>0.7</td>
+      <td>2.1</td>
+      <td></td>
+      <td>7.3</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Northeastern states</td>
+      <td>37</td>
+      <td>2.3</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td></td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Kerala</td>
+      <td>43</td>
+      <td>1.8</td>
+      <td>1.3</td>
+      <td>0.5</td>
+      <td></td>
+      <td>6.5</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>All other states</td>
+      <td>134</td>
+      <td>4.3</td>
+      <td>3.9</td>
+      <td>3.2</td>
+      <td></td>
+      <td>12.2</td>
+    </tr>
+    <tr>
+      <td colspan="3">All India</td>
+      <td>2833</td>
+      <td>5.1</td>
+      <td>4.9</td>
+      <td>4.5</td>
+      <td></td>
+      <td>807.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_States are in descending order of annual average death rates for the study period of 2001-2014. We included only the states with populations over 10 million. Andhra Pradesh included Telangana. The Northeastern states include Arunachal Pradesh‚ Manipur‚ Meghalaya‚ Mizoram‚ Nagaland‚ Sikkim and Tripura._
 
 Half of all snakebite deaths occurred during the southwest monsoon seasons from June to September. Seasonality was similar in each of the study years (Appendix 1—figure 2) and was similar in higher-burden and lower-burden states (data not shown). We used a Poisson time series model for snakebite deaths from 2001 to 2014 to predict the average daily snakebite mortality in India. The peak (294 deaths per day) was in mid-July and the trough (78 deaths per day) was in mid-February (Figure 2A). We also aggregated the deaths from 2001 to 2013 by every 100 m of altitude above sea level (Figure 2B). The crude death rates in areas below 400 m were about three times those in areas at about 1000 m. Over 80% of snakebite deaths occurred below 400 m and 50% occurred below 200 m.
 
@@ -62,17 +553,278 @@ Half of all snakebite deaths occurred during the southwest monsoon seasons from 
 
 **Figure 2.:** Notes: The daily snakebite totals are a composite of all study years from 2001 to 2014. The crude death rates by elevation use the RGI’s Sample Registration System population as denominators, and hence are generally lower than the overall rates we apply to the whole of India (using the United Nations death totals, which has the benefit of taking into account undercounts in the SRS data [Menon et al., 2019]). However, the relationship of crude death rates with elevation is unaffected by this procedure.
 
-## Characteristics of snakebites from a systematic review of the literature
+### Characteristics of snakebites from a systematic review of the literature
 
 A systematic literature review yielded 87,590 snakebite cases in India (both fatal and non-fatal) from 2000 to 2019 based on screening 1417 papers and including 78 studies from 24 states or union territories in India (Figure 3, Appendix 2—figure 1, Appendix 2—table 2). In the published studies, snakebites were more common in males (59%), at ages 30–69 years (57%), from June to September (48%), and occurring outdoors (64%). These results match the relevant results for the MDS. However, MDS snakebite deaths were equal between males and females. The leg was the dominant site of bite (77%), and the time of reported bite was throughout the day. Of the treated cases, nearly two-thirds (66%) were seen within 1–6 hr, with the remainder seen after six hours. The proportion treated within 1–6 hr improved over time (data not shown). In the fewer studies that attempted to identify the snake species, Russell’s viper (Daboia russelii) constituted 43%, followed by unknown species (21%), krait (Bungarus species) (18%), and cobra (Naja species) (12%).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54076/elife-54076-fig3-v1.jpg)
 
-## Snakebite and mortality surveillance
+### Snakebite and mortality surveillance
 
 The Government of India relies on reporting via public hospitals to track snakebites and deaths (Government of India, 2015). We examined the total bites and deaths available from 2003 to 2015 in Government hospitals and compared these deaths to the MDS in-hospital deaths (Table 4). Over this 13-year period, the MDS estimated about 154,000 snakebite deaths in public and private hospitals, and the Government reported 15,500 deaths in hospitals, meaning that the routine reporting system captured only 10% of the expected hospital-based deaths. The most complete reporting was in Karnataka which captured 26% of expected hospital snakebite deaths.
 
-## Snakebite prevalence and envenomation
+**Table 4.**
+ Government hospital reports of snakebites and deaths, compared to MDS death totals by state for 2003-2015.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Government reporting*</th>
+      <th colspan="4">MDS estimates</th>
+    </tr>
+    <tr>
+      <th>State</th>
+      <th>No. of bites (000)</th>
+      <th>No. of deaths (000)</th>
+      <th>% died in hospital</th>
+      <th>Total no. of deaths (000)</th>
+      <th>No. died in hospital (000)</th>
+      <th>% Government coverage</th>
+    </tr>
+    <tr>
+      <th>(1)</th>
+      <th>(2)</th>
+      <th>(3)</th>
+      <th>(4)</th>
+      <th>(5)</th>
+      <th>(6)=(4)*(5)</th>
+      <th>(7)=(3)/(6)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Higher burden states†</td>
+      <td>530.0</td>
+      <td>6.9</td>
+      <td>19%</td>
+      <td>539.6</td>
+      <td>94.6</td>
+      <td>7%</td>
+    </tr>
+    <tr>
+      <td>Andhra Pradesh</td>
+      <td>251.3</td>
+      <td>1.4</td>
+      <td>16%</td>
+      <td>74.1</td>
+      <td>11.6</td>
+      <td>12%</td>
+    </tr>
+    <tr>
+      <td>Bihar</td>
+      <td>20.9</td>
+      <td>0.1</td>
+      <td>16%</td>
+      <td>105.4</td>
+      <td>17.0</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Odisha</td>
+      <td>76.2</td>
+      <td>1.8</td>
+      <td>29%</td>
+      <td>36.9</td>
+      <td>10.9</td>
+      <td>17%</td>
+    </tr>
+    <tr>
+      <td>Madhya Pradesh</td>
+      <td>28.3</td>
+      <td>1.1</td>
+      <td>22%</td>
+      <td>64.4</td>
+      <td>14.1</td>
+      <td>8%</td>
+    </tr>
+    <tr>
+      <td>Uttar Pradesh</td>
+      <td>27.8</td>
+      <td>0.6</td>
+      <td>13%</td>
+      <td>150.7</td>
+      <td>20.2</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>Rajasthan</td>
+      <td>71.3</td>
+      <td>1.0</td>
+      <td>16%</td>
+      <td>49.6</td>
+      <td>7.8</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>Gujarat</td>
+      <td>45.7</td>
+      <td>0.8</td>
+      <td>27%</td>
+      <td>38.6</td>
+      <td>10.5</td>
+      <td>7%</td>
+    </tr>
+    <tr>
+      <td>Jharkhand</td>
+      <td>8.5</td>
+      <td>0.1</td>
+      <td>12%</td>
+      <td>20.0</td>
+      <td>2.5</td>
+      <td>6%</td>
+    </tr>
+    <tr>
+      <td>Percentage to national</td>
+      <td>41%</td>
+      <td>45%</td>
+      <td></td>
+      <td>71%</td>
+      <td>61%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower burden states</td>
+      <td>772.2</td>
+      <td>8.6</td>
+      <td>28%</td>
+      <td>219.8</td>
+      <td>59.6</td>
+      <td>14%</td>
+    </tr>
+    <tr>
+      <td>Chhattisgarh</td>
+      <td>16.7</td>
+      <td>0.3</td>
+      <td>17%</td>
+      <td>14.3</td>
+      <td>2.4</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>Jammu &amp; Kashmir</td>
+      <td>18.4</td>
+      <td>0.0</td>
+      <td>26%</td>
+      <td>5.9</td>
+      <td>1.5</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Tamil Nadu</td>
+      <td>106.6</td>
+      <td>0.5</td>
+      <td>28%</td>
+      <td>36.0</td>
+      <td>10.0</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>Karnataka</td>
+      <td>89.2</td>
+      <td>1.6</td>
+      <td>21%</td>
+      <td>28.1</td>
+      <td>6.0</td>
+      <td>26%</td>
+    </tr>
+    <tr>
+      <td>Maharashtra</td>
+      <td>178.7</td>
+      <td>1.2</td>
+      <td>25%</td>
+      <td>49.0</td>
+      <td>12.5</td>
+      <td>10%</td>
+    </tr>
+    <tr>
+      <td>West Bengal</td>
+      <td>208.9</td>
+      <td>3.4</td>
+      <td>41%</td>
+      <td>38.9</td>
+      <td>15.9</td>
+      <td>22%</td>
+    </tr>
+    <tr>
+      <td>Punjab</td>
+      <td>9.1</td>
+      <td>0.2</td>
+      <td>10%</td>
+      <td>14.2</td>
+      <td>1.4</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>Haryana</td>
+      <td>14.3</td>
+      <td>0.1</td>
+      <td>16%</td>
+      <td>8.5</td>
+      <td>1.3</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Assam</td>
+      <td>3.6</td>
+      <td>0.1</td>
+      <td>32%</td>
+      <td>6.6</td>
+      <td>2.1</td>
+      <td>3%</td>
+    </tr>
+    <tr>
+      <td>Northeastern states</td>
+      <td>11.1</td>
+      <td>0.1</td>
+      <td>25%</td>
+      <td>1.8</td>
+      <td>0.4</td>
+      <td>11%</td>
+    </tr>
+    <tr>
+      <td>Kerala</td>
+      <td>37.9</td>
+      <td>0.2</td>
+      <td>27%</td>
+      <td>5.2</td>
+      <td>3.5</td>
+      <td>6%</td>
+    </tr>
+    <tr>
+      <td>All other states</td>
+      <td>77.8</td>
+      <td>0.8</td>
+      <td>24%</td>
+      <td>11.1</td>
+      <td>2.7</td>
+      <td>32%</td>
+    </tr>
+    <tr>
+      <td>Percentage to national</td>
+      <td>59%</td>
+      <td>55%</td>
+      <td></td>
+      <td>29%</td>
+      <td>39%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>1302.2</td>
+      <td>15.5</td>
+      <td>22%</td>
+      <td>759.4</td>
+      <td>154.2</td>
+      <td>10%</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Government statistics are as published by the Ministry of Health and Family Welfare, Government of India (Government of India, 2015).† Higher burden states are those where the snakebite death rate at all ages is above 5/100,000 deaths for the entire study period of 2001-14 as listed in Table 3. In cases of number less than 100 deaths, they are listed as 0.0 in thousands._
+
+### Snakebite prevalence and envenomation
 
 Among the 87,590 snakebites reported in the literature, there were 3329 reported deaths (Appendix 2—table 1). We fitted death and bite data from each study to an ordinary least square regression to calculate a case-fatality rate, after removing the extreme outliers. We estimated a crude case-fatality rate of 3.2% for in-hospital cases. Based on mostly cautious assumptions about the ratio of in-hospital to out-of-hospital prevalence of snakebites (Appendix 1—table 2), we estimate the total number of snakebites to range from 1.11 to 1.77 million in 2015. Based on 44 hospital studies where 70% of patients sought treatment, were diagnosed with systemic envenomation, and received antivenom, we estimate that the annual number of envenomations is about 0.77 to 1.24 million with the remainder being ‘dry bites’ or bites by non-venomous species (0.33 to 0.53 million).
 
@@ -88,7 +840,7 @@ We estimate, crudely, that the in-hospital case-fatality rate based on the liter
 
 Finally, improved surveillance is required of venomous snake species as well as the human consequences of bites. An enhanced snake species database, hosted in collaboration with agricultural and forest departments, of their habitat details, clear photographs, and geographical distributions is now available as a downloadable Google app (Indian Snakes, 2019; World Health Organization (WHO), 2019d). There are at least 15 species of snake in India responsible for human deaths, and better information about them would aid control (Whitaker and Whitaker, 2006; Whitaker and Martin, 2015). We show that public facility-based reporting of deaths captures only 10% of expected deaths in public and private hospitals. While much care in India occurs in private hospitals, disease reporting and surveillance by private facilities is likely to be similarly or even more deficient (Jha and Laxminarayan, 2009). The Government of India could designate and enforce snakebite as a ‘Notifiable Disease’ within the Integrated Disease Surveillance Program. However, since most deaths occur at home, community death tracking through ongoing mortality surveillance will be needed. Both community and facility-based surveillance data are essential to better align interventions to prevent and treat snakebites to their heterogeneously distributed burden. For both hospital and community bites, it would be invaluable to document the circumstances and consequences of snakebites, including morbidity sequelae, with simple questions to investigate the circumstances of each bite or death/disability. This could include data such as use of boots, walking in the dark, sleeping patterns, and other questions. Similar investigative tools for HIV/AIDS have recently been proposed to add to the WHO’s standard verbal autopsy (Bogoch et al., 2018).
 
-## Limitations of our study
+### Limitations of our study
 
 The major source of uncertainty in our estimates of snakebite deaths at national level arises not from random errors, as the MDS has a large sample size and the vital rates used as underlying denominators are reasonably complete (Menon et al., 2019), but from the misclassification of causes of death in the verbal autopsy. Earlier evaluations of the MDS showed strong reproducibility of the dual physician-coded verbal autopsies, generally low rates of misclassification in children and young and middle-age adults, and high consistency with relevant hospital or clinical data (Gomes et al., 2017; Aleksandrowicz et al., 2014; Menon et al., 2019). Moreover, two independent physicians agreed about 92% of the time on a diagnosis of snakebite deaths. Snakebite mortality may be under-estimated because the phenomenon of painless, unsuspected nocturnal krait (Bungarus) bites resulting in ‘early morning paralysis’ may not be attributed to snakebite (Saini et al., 1986; Ariaratnam et al., 2008), but this is likely to be a small bias. Our estimates for some states are uncertain due to small number of deaths recorded annually, which also prevented us from examining yearly spatial clustering patterns.
 
@@ -96,36 +848,36 @@ Our estimates of case-fatality rate and envenomations based on the systematic li
 
 Another major uncertainty from the literature review are in the hospital-based data, given expected problems with publication biases and in the differences between patients seeking or not seeking hospital care. For example, serious cases are more likely to be hospitalized, raising the observed case-fatality rate. However, under various scenarios, our report of 20 to 40 bites per death is greater than the crude estimate of 20 envenomations per death we made earlier (Mohapatra et al., 2011). Additional hospital-based surveillance, including tracking the severity of treated cases, could further refine the actual ratio of envenomations to deaths. These uncertainties demand appropriate caution in interpreting our basic estimate of the number of envenomations.
 
-## Conclusion
+### Conclusion
 
 We conclude that snakebite deaths in India are concentrated largely within limited geographical areas, and involve particular communities during specific seasons. Our identification of the focused geographic and temporal spread of snakebites allows targeted prevention and treatment strategies that could help India to achieve the WHO’s goal of halving snakebite death and morbidity rates by 2030. Further use of nation-wide, representative epidemiological studies will be essential to review the success of such control programs.
 
 ## Materials and methods
 
-## Data sources
+### Data sources
 
 To derive comprehensive and up-to-date estimates of snakebite mortality and prevalence, we collected all possible statistics related to snakebites in India from 2000 to 2015. The main data sources for this study were snakebite mortality data from the Indian Million Death Study (MDS), a systematic review of studies published in the scientific literature, and chronological statistics published by the Ministry of Health and Family Welfare of the Government of India.
 
-## Nationally representative mortality data
+### Nationally representative mortality data
 
 The methods, strengths, and limitations of the MDS and key results for various diseases have been extensively reviewed and published (Aleksandrowicz et al., 2014; Gomes et al., 2017; Menon et al., 2019). Briefly, in collaboration with the Registrar General of India, the MDS monitored approximately 23 million people in 3.6 million nationally representative households in India from 1998 to 2014. The Registrar General of India’s Sample Registration System (SRS) established three sampling frames for the MDS, which covered years 1993-2003, 2004-2013, and 2014-2023. The SRS randomly selects sampling units based on the 1991, 2001, and 2011 censuses for the respective sampling frames (Registrar General of India, 2017). Mortality data used in this study were from 2001-2003, 2004-2013, and 2014, generated from these sampling frames. Every six months, about 900 non-medical surveyors recorded the details of each death that occurred in these households during the preceding six months using a well-validated verbal autopsy instrument (based on the 2012 WHO instrument and including a half-page local language narrative). Each record is converted to an electronic form and randomly assigned to two of 404 trained physicians, who each assign a cause of death using ICD-10 codes. Disagreements in assignment undergo anonymous reconciliation, and persisting differences undergo adjudication by a third physician. We included 2833 snakebite deaths in our study by carefully examining 3020 probable snakebite deaths that either of the two physicians had coded as X20 (venomous snakes), X27 (venomous animals) or X29 (not specific). We followed the same inclusion/exclusion method described in our earlier analyses (Mohapatra et al., 2011). Out of the 3020 possible snakebite deaths, there were 2779 (92%) deaths in which both coders initially coded to X20. Review of these yielded no misclassified deaths. Re-examination of the symptoms and physician keywords for 105 deaths that one coder had coded as X20 and other coder as X27 or X29 revealed that 54 (2%) were snakebite deaths. No misclassified deaths were found in the 136 deaths that one coder had coded X20, X27 or X29 and the other coder had assigned a different ICD-10 code.
 
-## Statistical methods
+### Statistical methods
 
-## Geospatial mapping of deaths
+#### Geospatial mapping of deaths
 
 The SRS provided population data for the sampling units for 2004–2013 (Registrar General of India, 2017). These population values were partitioned into single-year ages by applying 2011 Census Registrar General of India, 2011 district-level single-year age structure proportions (by sex and rural/urban setting). District codes from 2011 Census (Registrar General of India, 2011) were converted to 2001 codes prior to linking with sampling units given that the 2004–2013 sampling frame used 2001 codes. Sampling units that belonged to districts that split in 2011 used 2001 district codes from the parent districts. All sampling units that belonged to the same district, rural/urban setting and sex shared the same age structure proportions. We further linked the MDS data to these population data at the sampling unit level. Statistical analyses were based on data from 7377 geocoded sampling units (out of 7597 sampling units), after exclusion of sampling units from the islands.
 
 We derived the spatially-smoothed absolute risks of snakebite mortality in India for 2004–2013. First, using mortality data of ages 0–69 years (by 5-year age group) as the outcome and sampling unit population of the same age range as the offset, we fitted a Bayesian Poisson model to obtain the age- and sex-specific snakebite death rates at the national level. We did not include an intercept in the model, but included age-sex interaction term and time trend (using year 2010 as the reference value) as covariates. This formulation allowed us to obtain the estimated age- and sex-specific national death rates for year 2010. We then used a geostatistical Bayesian Poisson model to estimate the spatially smoothed relative risks of snakebite mortality, by comparing the observed snakebite death rates at each sampling unit versus the national death rate (see Appendix 3 for details). The geostatistical models adjusted for time trends, urban/rural status, female illiteracy in rural areas, altitude, and average of long-term monthly mean temperature. We adjusted for urban/rural status of the sampling unit due to the higher risks of snakebite in rural areas compared to urban areas (Chaves et al., 2015). We included female illiteracy in rural areas as a proxy of poverty effects on snakebite mortality, since the poor have higher risk of snakebite (Harrison et al., 2009). We used sub-district-level female illiteracy data from the 2011 Indian census (Registrar General of India, 2011). We included altitude and long-term monthly temperature as covariates since they affect the occurrence of snakebite (Chaves et al., 2015). Altitude data came from the NASA Shuttle Radar Topographic Mission’s digital elevation data version 4 (Jarvis et al., 2008). Long-term monthly mean temperature came from the University of Delaware’s air temperature gridded dataset V5.01, with a 0.5 degree latitude/longitude grid resolution (Willmott and Matsuura, 2001). We also included spatial random effects and sampling unit-level random effects in the model. Thus, the spatially smoothed relative risks were the predicted relative risks of snakebite mortality across India. These relative risks were assigned to grid cells that covered the country (see Appendix 3: statistical supplement). Finally, we calculated the absolute risks of snakebite mortality across India by multiplying the spatially-smoothed relative risks (in each grid cell) by the national risks of dying before age 70 years from Table 1. National risks of dying used the average of annual risks of dying for 2004–13. The absolute risks represent the risk of dying from snakebite before age 70 years at the grid cell location. Population estimates in high-risk areas were obtained by overlaying the absolute risk surface on the Gridded Population of the World version 4 for year 2015 (Center for International Earth Science Information Network - CIESIN - Columbia University, 2015). Further technical explanation on the geostatistical Bayesian model is published (Brown, 2015). Appendix 3 provides the model form, equations and implementation.
 
-## Systematic literature review
+### Systematic literature review
 
 We performed a systematic review of snakebite studies in India. We searched the literature using a combination of keywords related to the study setting, metrics, treatment, snake species, and geography in Ovid MEDLINE(R), PubMed, Web of Science, and Scopus electronic databases. We selected relevant studies published in the English language from January 1 2000 to September 1 2019, to collect data for understanding case-fatality patterns and important snakebite characteristics in India. In addition, we hand searched articles that had cited our 2011 publication (Mohapatra et al., 2011). Appendix 2 provides the keywords and inclusion and exclusion criteria. The search initially found 1417 snakebite mortality and morbidity studies. After a careful review of titles, abstracts and quality of the studies by three independent reviewers (MB, KP and WS), 78 of the 95 possible studies were included in our analysis. We categorized the 78 studies to four study types: autopsy (seven studies: only deaths), emergency medical services (EMS) (one study of prevalence), hospital (66 studies: both prevalence and deaths) and community (four studies: both prevalence and deaths).
 
-## Mortality rates
+### Mortality rates
 
 We applied the SRS probability of selection sampling weights to the snakebite death frequencies to address urban and rural differences. We calculated snakebite mortality fractions using three-year backward moving averages of weighted snakebite death frequencies for each age, sex, and urban/rural stratum for each state of India. We interpolated the mortality fractions, using standard statistical methods for strata with zero death count (SAS Institute, 2014). We applied these mortality fractions to SRS and the India census demographic framework to obtain the snakebite death rates. We then adjusted the death rates (usually upward by slight amounts) to the United Nations Population Division (United Nations, 2019) estimated India death totals (United Nations, 2019) to obtain the numbers of national and sub-national snakebite deaths. To address the remaining noise from crude death rates, we fitted cubic spline regressions to 2003 to 2014 cause-specific death rates while adjusting snakebite mortality to other causes of death to obtain the final estimates. We obtained estimates for the beginning and end of the period, including years 2001 and 2002 where data used for moving averages were less than three years, by extrapolating the spline curves to cover the overall period of 2000–2015. For comparison of rates across the years, we standardized the death rates to the 2001 census population. We calculated the number of in-hospital and out-of-hospital deaths by multiplying estimated deaths by percentages of study deaths that occurred in-hospital and out-of-hospital, as reported in the MDS. Appendix 1—figure 1 shows the data sources, data inputs and outcomes.
 
-## Snakebite prevalence estimates
+### Snakebite prevalence estimates
 
 We used an indirect method to estimate snakebite prevalence (which given very short duration of each bite effectively represents incidence) measured in terms of in-hospital and out-of-hospital prevalences. This involved using the estimated MDS hospital deaths divided by case-fatality rate from systematic review of the literature to estimate the in-hospital prevalence and apply a hypothetical relationship between in-hospital and out-of-hospital prevalence to estimate the out-of-hospital prevalence. This is, by necessity, crude but provides some reasonable ranges to estimate the numbers of bites and envenomations in India in recent years. We applied all such prevalence estimates for 2015, as that was the closest year to the last MDS round of 2014. Appendix 1—table 2 provides details of the calculation and the assumptions.

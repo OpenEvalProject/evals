@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.12470.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores ( Errington et al., 2014 ). This Registered Report describes the proposed replication plan of key experiments from “Coding-Independent Regulation of the Tumor Suppressor PTEN by Competing Endogenous 'mRNAs' by Tay and colleagues, published in Cell in 2011 ( Tay et al., 2011 ). The experiments to be replicated are those reported in Figures 3C, 3D, 3G, 3H, 5A and 5B, and in Supplemental Figures 3A and B. Tay and colleagues proposed a new regulatory mechanism based on competing endogenous RNAs (ceRNAs), which regulate target genes by competitive binding of shared microRNAs. They test their model by identifying and confirming ceRNAs that target PTEN . In Figure 3A and B, they report that perturbing expression of putative PTEN ceRNAs affects expression of PTEN. This effect is dependent on functional microRNA machinery (Figure 3G and H), and affects the pathway downstream of PTEN itself (Figures 5A and B). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.12470.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology. The papers, which were published between 2010 and 2012, were selected on the basis of citations and Altmetric scores (Errington et al., 2014). This Registered Report describes the proposed replication plan of key experiments from “Coding-Independent Regulation of the Tumor Suppressor PTEN by Competing Endogenous 'mRNAs' by Tay and colleagues, published in Cell in 2011 (Tay et al., 2011). The experiments to be replicated are those reported in Figures 3C, 3D, 3G, 3H, 5A and 5B, and in Supplemental Figures 3A and B. Tay and colleagues proposed a new regulatory mechanism based on competing endogenous RNAs (ceRNAs), which regulate target genes by competitive binding of shared microRNAs. They test their model by identifying and confirming ceRNAs that target PTEN. In Figure 3A and B, they report that perturbing expression of putative PTEN ceRNAs affects expression of PTEN. This effect is dependent on functional microRNA machinery (Figure 3G and H), and affects the pathway downstream of PTEN itself (Figures 5A and B). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -40,258 +40,258 @@ The Pandolfi group followed up on their 2011 paper by generating a mathematical 
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors. An asterisk (*) indicates data or information provided by the Reproducibility Project: Cancer Biology core team. A hashtag (#) indicates information provided by the replicating lab.
 
-## Protocol 1: Knock-down of ceRNA network genes results in decreased PTEN-3’UTR luciferase expression
+### Protocol 1: Knock-down of ceRNA network genes results in decreased PTEN-3’UTR luciferase expression
 
 This protocol describes how to silence expression of ceRNA network genes and measure effects on PTEN expression by measuring PTEN 3’UTR luciferase activity, as seen in Figures 3C and Supplementary S3A
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Extracted RNA integrity will be reported with A260/280 and A260/230 absorbance ratios, and transfection efficiency will be checked using the siGLO control. qRT-PCR will be performed to confirm the silencing of ceRNA expression. The cells will be sent for mycoplasma testing confirming lack of contamination and STR profiling confirming cell line authenticity. Transfection efficiency will be recorded for each replicate and any transfection that does not contain >90% efficiency will be excluded and not continue through the rest of the procedure. Any modifications to the transfection protocol will be recorded, and the procedure will be maintained for the remaining replicates. All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/oblj1/).
 
-## Protocol 2: Overexpression of PTEN ceRNA 3’UTRs network genes results in upregulation of PTEN3’UTR luciferase activity
+### Protocol 2: Overexpression of PTEN ceRNA 3’UTRs network genes results in upregulation of PTEN3’UTR luciferase activity
 
 This protocol describes how to measure the effect of ectopic overexpression of PTEN ceRNA 3’UTRs in DU145 cells on Luc-PTEN 3’UTR levels. This protocol replicates Figures 3D.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cells will be sent for mycoplasma testing confirming lack of contamination and STR profiling confirming cell line authenticity. All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/oblj1/).
 
-## Protocol 3: Knock-down of ceRNA network genes results in decreased PTEN protein that is dependent on microRNA functioning
+### Protocol 3: Knock-down of ceRNA network genes results in decreased PTEN protein that is dependent on microRNA functioning
 
 This protocol describes how to test the effects of siRNA-mediated depletion of SERINC1, VAPA, or CNOT6L expression on PTEN protein expression in wild-type HCT116 colon cancer cells. It also tests whether these effects are dependent on mature microRNA using Dicer mutant (DICEREx5) HCT116 cells. It replicates Figures 3G,H, and Supplementary Figure 3B.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Extracted RNA integrity will be reported with A260/280 and A260/230 absorbance ratios, and transfection efficiency will be checked using the siGLO control. The cells will be sent for mycoplasma testing confirming lack of contamination and STR profiling confirming cell line authenticity. Transfection efficiency will be recorded for each replicate and any transfection that does not contain >90% efficiency will be excluded and not continue through the rest of the procedure. If the efficiency does not reach >90%, then any modifications to the transfection protocol will be recorded. qRT-PCR will be performed to confirm silencing of mRNA expression. Images of Ponceau staining to confirm protein transfer. All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/oblj1/).
 
-## Protocol 4: Effect of knock-down of ceRNA network genes on cell proliferation
+### Protocol 4: Effect of knock-down of ceRNA network genes on cell proliferation
 
 This experiment tests the effects of siRNA-mediated depletion of PTEN, CNOT6L, and VAPA expression on cell proliferation in DU145, HCT116 WT, and HCT116 DICEREx5 cells. It replicates Figure 5B.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
 Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 Extracted RNA integrity will be reported with A260/280 and A260/230 absorbance ratios, and transfection efficiency will be checked using the siGLO control. Cells will be sent for mycoplasma testing confirming lack of contamination and STR profiling confirming cell line authenticity. Transfection efficiency will be recorded for each replicate and any transfection that does not contain >90% efficiency will be excluded and not continue through the rest of the procedure. Any modifications to the transfection protocol will be recorded and the procedure will be maintained for the remaining replicates. All data obtained from the experiment - raw data, data analysis, control data and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/oblj1/).
 
-## Protocol 5: Knock-down of ceRNA network genes results in AKT activation
+### Protocol 5: Knock-down of ceRNA network genes results in AKT activation
 
 This experiment tests the effects of siRNA-mediated depletion of PTEN, CNOT6L, and VAPA expression on AKT activation in DU145, HCT116 WT, and HCT116 DicerEx5 cells. It replicates Figure 5A.
 
-## Sampling
+#### Sampling
 
-## Materials and reagents
+#### Materials and reagents
 
-## Procedure
+#### Procedure
 
-## Notes:
+##### Notes:
 
-## Deliverables
+#### Deliverables
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
-## Known differences from the original study
+#### Known differences from the original study
 
 All known differences are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cells will be sent for mycoplasma testing confirming lack of contamination and STR profiling confirming cell line authenticity. Transfection efficiency will be recorded for each replicate and any transfection that does not contain >90% efficiency will be excluded and not continue through the rest of the procedure. Any modifications to the transfection protocol will be recorded, and the procedure will be maintained for the remaining replicates. Images of Ponceau staining to confirm protein transfer. All data obtained from the experiment - raw data, data analysis, control data, and quality control data - will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/oblj1/).
 
-## Power calculations
+#### Power calculations
 
 For additional details on power calculations, please see analysis scripts and associated files on the Open Science Framework:
 
 https://osf.io/c8hb5/?view_only=5e59bdfcf48a40ec982378c58de5739d
 
-## Protocol 1
+### Protocol 1
 
 Summary of original luciferase activity data:
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
 Summary of original qPCR gene expression data:
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 2
+### Protocol 2
 
 Summary of original Luciferase data:
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 3
+### Protocol 3
 
 Summary of original Western blot data:
 
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
 Summary of original mRNA expression data:
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 4
+### Protocol 4
 
 Summary of original cell proliferation data:
 
-## DU145 cells
+### DU145 cells
 
-## Test family
-
-Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
-
-## Test family
-
-## Power calculations
-
-## Test family
-
-## Power calculations
-
-## HCT116 cells
-
-## Test family
+#### Test family
 
 Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Protocol 5
+### HCT116 cells
+
+#### Test family
+
+Power Calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
+
+#### Test family
+
+#### Power calculations
+
+#### Test family
+
+#### Power calculations
+
+### Protocol 5
 
 Summary of original AKT Activation data
 
-## DU145 cells
+### DU145 cells
 
 Note: The original data does not indicate the error associated with multiple biological replicates. To identify a suitable sample size, power calculations were performed using different levels of relative variance.
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## HCT 116 cells
+### HCT 116 cells
 
 Note: The original data do not indicate the error associated with multiple biological replicates. To identify a suitable sample size, power calculations were performed using different levels of relative variance.
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
-## Test family
+#### Test family
 
-## Power calculations
+#### Power calculations
 
 In order to produce quantitative replication data, we will run the experiment seven times. Each time we will quantify band intensity. We will determine the standard deviation of band intensity across the biological replicates and combine this with the reported value from the original study to simulate the original effect size. We will use this simulated effect size to determine the number of replicates necessary to reach a power of at least 80%. We will then perform additional replicates, if required, to ensure that the experiment has more than 80% power to detect the original effect.

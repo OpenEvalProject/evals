@@ -17,9 +17,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03tqb8s11 Jiangsu Key Laboratory of Crop Genomics and Molecular Breeding/Key Laboratory of Plant Functional Genomics of the Ministry of Education, Jiangsu Co-Innovation Center for Modern Production Technology of Grain Crops, Yangzhou University Yangzhou China
-2. https://ror.org/0205xz563 State Key Lab of Plant Genomics, Institute of Genetics and Developmental Biology, Innovation Academy for Seed Design, Chinese Academy of Sciences Beijing China
-3. https://ror.org/02ke8fw32 College of Horticulture Science and Engineering, Shandong Agricultural University Shandong China
+1. Jiangsu Key Laboratory of Crop Genomics and Molecular Breeding/Key Laboratory of Plant Functional Genomics of the Ministry of Education, Jiangsu Co-Innovation Center for Modern Production Technology of Grain Crops, Yangzhou University Yangzhou China ([ROR:03tqb8s11](https://ror.org/03tqb8s11))
+2. State Key Lab of Plant Genomics, Institute of Genetics and Developmental Biology, Innovation Academy for Seed Design, Chinese Academy of Sciences Beijing China ([ROR:0205xz563](https://ror.org/0205xz563))
+3. College of Horticulture Science and Engineering, Shandong Agricultural University Shandong China ([ROR:02ke8fw32](https://ror.org/02ke8fw32))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ Here, we investigated the functional roles of SCC3 in rice, elucidating its part
 
 ## Results
 
-## SCC3 causes both vegetative and reproductive growth defects
+### SCC3 causes both vegetative and reproductive growth defects
 
 Considering SCC3 is a highly conserved protein in different species, we performed a BLAST search in the Rice Genome Annotation Project database (http://rice.plantbiology.msu.edu/cgibin/gbrowse/rice) and found a single hypothetical homolog of SCC3 proteins (A. thaliana SCC3, M. musculus STAG3 and H. sapiens SA1). This candidate protein is encoded by the Os05g0188500 gene and shares the highest similarity with AtSCC3. The full-length cDNA of SCC3 is 3755 nucleotides long and comprises 22 exons and 21 introns. SCC3 contains a 3345-nucleotide-long ORF that encodes an 1116 amino-acid protein. In higher eukaryotes, SCC3 is an evolutionary conserved protein that contains a highly conserved STAG domain (140-239aa), as predicted by SMART (Figure 1—figure supplement 1A). Multiple alignments of full-length SCC3 protein sequences and its homologs in other plants revealed the STAG domain is highly conserved across both monocotyledons and dicotyledons (Figure 1—figure supplement 1B). Homology modeling indicated that the structure of the SCC3 protein is strongly conserved among different species, which also possess similar STAG domains (Figure 1—figure supplement 2A). Additionally, a phylogenetic tree was constructed with full-length SCC3 amino-acid confirming that this protein is conserved in eukaryotes (Figure 1—figure supplement 2B). We also performed multiple sequence alignments of these proteins used in the evolutionary tree analysis (Figure 1—figure supplement 3).
 
@@ -51,9 +51,31 @@ A previous study in Arabidopsis (Chelysheva et al., 2005) identified a T-DNA ins
 
 In addition, we obtained a weak transgenic line (scc3) containing a frameshift ‘T’ insertion in exon 19 leading to premature termination of translation. We found the scc3 weak mutant exhibits abnormal vegetative growth (Figure 1A and B) and proceeded with further investigation of its other phenotypic effects. This revealed that scc3 decreases plant height, tiller number, and panicle length (Figure 1—figure supplement 5B–E). To investigate the patterns of SCC3 expression, we employed RT-PCR in various tissues and found the gene is ubiquitously expressed, particularly in roots, leaves, and panicles (Figure 1—figure supplement 5A). Accordingly, the weak mutant of SCC3 causes severe vegetative growth defects in rice plants.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-v1.jpg)
+
+**Figure 1.:** (A) Morphology of seedlings and root tips in wild-type and scc3. (B) Morphology of plants in wild-type and scc3. (C) Morphology of panicles in wild-type and scc3. (D) Pollen grains stained in 1% I2-KI solution in wild-type and scc3. Bars, 50 μm. (E) The chromosome behaviors of root tip cells in wild-type and scc3, stained with 4',6-diamidino-2-phenylindole (DAPI). Individual chromosomes are marked by red boxes. The distance between the sister chromatids increased significantly at prometaphase, and the sister chromatids separated in advance at metaphase in scc3. Bars, 5 μm. (F) Fluorescence in situ hybridization (FISH) analysis of mitotic cells with centromere-specific probes in the wild-type and scc3. The distance between centromeres increased significantly in scc3. CentO (red) signals indicate centromeres. Chromosomes were stained with DAPI (blue). Bars, 5 μm. (G) The distance between sister chromatids in different mitotic chromosomes. In normal condition, two sister chromatids form tight stick. In scc3, the distance between chromosome arms and telomeres were increased significantly. Curve diagrams show the distance between the arms and the telomeres, respectively, as measured by IMAGEJ. Bars, 1 μm. (H) Graphical representation of the frequency of each type of chromosome morphology. The classification was assigned when >50% chromosomes in a spread showed the indicated morphology.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SCC3 contains a conserved STAG domain. (B) STAG domains are conserved in both monocotyledonous and dicotyledonous plants.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The full-length (1–1,116 aa) SCC3 protein among different species shows high structural similarity. The arrow indicates similarity in SCC3 subunits. (B) Phylogenetic tree derived from full-length SCC3 amino acid sequences and homologous sequences from other plant species. The right panel indicates the conserved domains of SCC3 proteins in different species.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-figsupp3-v1.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Schematic representation of the SCC3 gene and its mutation site. Coding regions are shown as black boxes and untranslated regions are shown as gray boxes.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) The expression pattern of SCC3. P2, 2 cm long panicles; P2-3, 2–3 cm long panicles; P3-5, 3–5 cm long panicles; P5-7, 5–7 cm long panicles; P7, 7 cm long panicles. Expression values represent means ± SD of three biological replicates. (B) Statistics of plant height in wild-type and scc3. Values are shown as mean ± SD of three biological replicates. (C) Statistics of panicle length in wild-type and scc3. Values are shown as mean ± SD of three biological replicates. (D) Statistics of tiller number in wild-type and scc3. Values are shown as mean ± SD of three biological replicates. (E) Statistics of seed-setting rates in wild-type and scc3. Values are shown as mean ± SD of three biological replicates.
+
 To elucidate whether gametogenesis is normal in scc3, we performed cytological observation of anthers stained with 1% I2-KI, and found almost all pollen grains were shrunken and inviable (Figure 1D). Our results also showed scc3 flowers did not set seeds when pollinated with wild-type pollen, suggesting the mutant was both male and female sterile. We further observed heterozygous scc3 plants produced progenies with a segregation ratio of 3:1 (normal: dwarf and sterile), indicating the scc3 mutation is recessive and monogenic. These data suggest that the scc3 weak mutation dramatically interferes with both plant vegetative and reproductive growth.
 
-## SCC3 is required for sister chromatid cohesion during mitosis
+### SCC3 is required for sister chromatid cohesion during mitosis
 
 To determine whether SCC3 is involved in sister chromatid cohesion during mitosis, we observed chromosome behavior in root tip cells of scc3 and wild-type plants. In wild-type plants, DNA replicates and folds into an ordered structure during interphase (Figure 1E). Subsequently, chromatin condenses to form rod-like chromosomes during prophase, further aligning at the equatorial plate during metaphase before segregating to distinct poles of the cell.
 
@@ -63,13 +85,27 @@ Additionally, we monitored the distance between centromeres using FISH probes wi
 
 To elucidate the underlying cause of the increased distance between sister chromatids, we performed full-length FISH assays to monitor the dynamic phenotype of chromosome 12 during interphase. In the wild-type, replicating sister chromatids were observable during interphase (Figure 2A). Subsequently, two chromosome clumps formed during prophase and developed into high-order linear chromosomes during prometaphase. During this period, the two sister chromatids overlapped and condensed into a short stick. However, in scc3, no chromosome clumps were detected during interphase, and an evident uncondensed chromosome structure was observed, suggesting a role for SCC3 in organizing genome topology and chromatin association dynamics. During prophase, chromosome 12 remained in a loose lump and was unable to condense into a stick-like structure. At prometaphase, the abnormal chromatin finally formed loosely connected sister chromatids (Figure 2A). These observations implicate SCC3 involvement in the dynamic structural change of chromatin during interphase, influencing the ability of cohesin to bind sister chromatids, potentially regulating chromatin composition, and genome dynamics.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig2-v1.jpg)
+
+**Figure 2.:** (A) The dynamic process of chromosome structure in early mitosis as revealed by pooled oligos specific to chromosome 12 (red). In the wild-type, S1 and S2 indicate the replicated sister chromatids. However, in scc3 sister chromatids exhibited the variation of structure from interphase to prophase. Mitotic chromosomes in wild-type and scc3 were stained with 4',6-diamidino-2-phenylindole (DAPI) (blue). Bars, 5 μm. (B) The loading pattern of SCC3 (green, from mouse) and CENH3 (red, from rabbit) in wild-type root tip cells. Chromosomes were stained with DAPI (blue). Bars, 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunolocalization of CENH3 (red, from rabbit) and SCC3 (green, from mouse) in scc3 root tip cells during mitosis. Chromosomes were stained with 4',6-diamidino-2-phenylindole (DAPI). Bar, 5 μm. (B) Immunolocalization of REC8 (red, from rabbit) and SCC3 (green, from mouse) in scc3 meiocytes during meiosis. Bar, 5 μm.
+
 To investigate the localization of SCC3 during mitosis, we generated a mouse polyclonal antibody against the C-terminal of SCC3 and performed immunostaining in wild-type root tip cells (Figure 2B). No SCC3 signal was detected in scc3 root tip cells, confirming the specificity of the SCC3 antibody utilized in mitosis (Figure 2—figure supplement 1A). In most instances, SCC3 was uniformly distributed within the nuclear during interphase. As cell division started, SCC3 immunosignals around centromeric regions intensified at prophase. SCC3 eventually coalesced into intact chromosomes at prometaphase. From metaphase to telophase, SCC3 signals completely disappeared (Figure 2B). These observations suggest that SCC3 may enhance the cohesin-DNA interaction during the transition from interphase to prophase and gradually dissociates from chromosomes after prometaphase.
 
-## SCC3 acts as an axial element during meiosis
+### SCC3 acts as an axial element during meiosis
 
 To evaluate SCC3 localization during meiosis, we performed dual-immunolocalization between SCC3 and REC8 in wild-type meiocytes. REC8 is a specific axial protein specific to meiosis (Shao et al., 2011). REC8 signals were initially detected as foci in the nucleus at leptotene, during which SCC3 was simultaneously detectable at the same time (Figure 3A). From leptotene to zygotene, SCC3 signals were detected as similar elongated foci that formed filamentous structures on the chromosomes. During pachytene and diplotene, constant SCC3 signals were distributed along the chromosome axes (Figure 3A). At diakinesis, axial SCC3 signals became diffuse and centromeric signals gradually became clear. At metaphase I, only centromeric SCC3 signals remained (Figure 3B). However, REC8 signals were difficult to be detected after diakinesis (Figure 3—figure supplement 1). In order to further clarify the localization pattern between SCC3 and REC8, we performed super-resolution imaging on wild-type meiocytes. We found REC8 and SCC3 signals were parallel and colocalized forming the parallel axis along chromosome length (Figure 3C). In addition, the central element ZEP1 formed two parallel lines surrounded by SCC3 signals (Figure 3D). No SCC3 signal was present in scc3 meiocytes, confirming the specificity of the SCC3 antibody utilized in immunodetection (Figure 2—figure supplement 1B).
 
-## SCC3 is required for sister chromatids cohesion in early meiosis
+![Figure 3.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig3-v1.jpg)
+
+**Figure 3.:** (A) In meiosis, SCC3 (green, from mouse) colocalizes with REC8 (red, from rabbit) from the leptotene to diplotene. Bars, 5 μm. (B) During diakinesis and metaphase I, SCC3 (green, from mouse) gradually dispersed and finally retained in the centromeres indicated by CENH3 (red, from rabbit). Chromosomes were stained with 4',6-diamidino-2-phenylindole (DAPI) (blue). Bars, 5 μm. (C) Immunostaining of SCC3 (cyan, from mouse) and REC8 (red, from rabbit) in wild-type meiocytes at pachytene. Two parallel linear SCC3 signals colocalize with the REC8 linear signals, indicating chromosomal axial elements. Magnified images of the blocked regions are shown on the right. Bars, 5 μm. (D) Immunostaining of SCC3 (cyan, from mouse) and ZEP1 (red, from rabbit) in wild-type meiocytes at pachytene. Two linear SCC3 signals wrap the ZEP1 signals, indicating central elements of SC are wrapped by axial elements. Magnified images of the blocked regions are shown on the right. Bars, 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig3-figsupp1-v1.jpg)
+
+### SCC3 is required for sister chromatids cohesion in early meiosis
 
 The premeiotic interphase bears the resemblance to mitosis, wherein sister chromatids undergo replication and are tethered together by cohesins. To determine whether SCC3 is involved in sister chromatid cohesion during meiosis, we scrutinized the chromosome dynamics of meiocytes in both scc3 and wild-type before leptotene. Detailed cytological phenotypes of meiotic initiation in rice have been previously elucidated (Zhao et al., 2018). In the wild-type, the initial discernible stage of meiosis is preleptotene, during which sister chromatids have completed their replication. At this stage, each chromosome exhibited a condensed configuration, similar to the mitotic prophase chromosome (Figure 4A). Subsequently, they turned into fine threads at leptotene. However, in scc3, chromosomes showed defused morphology without clear outlines at preleptotene. These observations suggest that SCC3 affects the morphological construction of early meiotic chromosomes.
 
@@ -79,15 +115,27 @@ The premeiotic interphase bears the resemblance to mitosis, wherein sister chrom
 
 We also scrutinized the chromosome behavior in both the rec8 single mutant and the scc3 rec8 double mutant at preleptotene (Figure 4A). Surprisingly, rec8 exhibited elongated chromosomes similar to the wild-type, whereas scc3 rec8 displayed diffused chromosomes same as scc3. These results suggest that REC8 does not impede the early replication process of sister chromatids, and the chromosomal abnormalities observed in the scc3 rec8 double mutant would be attributed to the SCC3 mutation. We further performed full-length FISH assays to monitor chromosome 12 at preleptotene (Figure 4B). The labeled chromosome 12 formed short rod-shaped threads in both wild-type and rec8, whereas it appeared diffuse structure in both scc3 and scc3 rec8. These data together with those from DAPI staining, further prove that SCC3 has an important function on chromosome structure during early meiosis, which is independent of REC8.
 
-## Homologous chromosome pairing and synapsis are disturbed in scc3
+### Homologous chromosome pairing and synapsis are disturbed in scc3
 
 To elucidate the causes of sterility in scc3, we investigated the male meiotic chromosome behavior of wild-type and scc3 meiocytes. In wild-type meiocytes, homologous chromosomes initiated pairing during the early zygotene stage and completed synapsis at pachytene. Additionally, at metaphase I, 12 bivalents were methodically arranged on the equatorial plate, facilitating the segregation of homologous chromosomes during anaphase I (Figure 5A). The chromosomal dynamics in scc3 did not deviate from the wild-type during zygotene. However, the onset of meiotic anomalies became evident at pachytene, characterized by the dispersion of most chromosomes as solitary filaments due to inadequate homologous pairing (Figure 5A). Twenty-four univalents were observed from diakinesis to metaphase I (n=161, 150 meiocytes had 24 univalents, while 11 meiocytes had 1–2 bivalents). Two sister chromatids of each univalent were always pulled to opposite poles leading to 48 sister chromatids being observed at anaphase I. Notably, in spo11-1 mutants implicated in the disruption of meiotic DSB formation and similarly exhibiting 24 univalents as observed in scc3, the separation of sister chromatids occurred either haphazardly or not at all (Figure 5—figure supplement 1A). These findings indicate that the mutation of SCC3 will lead to premature separation of sister chromatids at anaphase I.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig5-v1.jpg)
+
+**Figure 5.:** (A) Meiotic chromosome behavior in wild-type and scc3. Bars, 5 μm. (B) Immunolocalization of ZEP1 (green, from mouse) and REC8 (red, from rabbit) in wild-type and scc3 meiocytes. ZEP1 was severely suppressed from early zygotene to pachytene in scc3. Bars, 5 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Chromosome behavior of spo11 in metaphase I and anaphase I. Bars, 5 μm. (B) Telomere bouquets were detected in both wild-type and scc3 with the telomere-specific probe (pAtT4, green) by fluorescence in situ hybridization (FISH) assays. Chromosomes were stained with 4',6-diamidino-2-phenylindole (DAPI). Bars, 5 μm. (C) The pairing status of chromosomes revealed by 5 S ribosomal DNA (rDNA) in wild-type. Chromosomes were stained with DAPI. Bars, 5 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Bar, 5 μm.
 
 The formation of the telomere bouquet constitutes an essential precondition for homologous chromosome pairing during early zygotene (Zhang et al., 2020). To ascertain the occurrence of bouquet formation, we employed fluorescence in situ hybridization (FISH) assays targeting telomeres with a specific probe (pAtT4) in both wild-type and scc3. In the wild-type, telomeres congregated to a specified region, culminating in the formation of a quintessential bouquet at the nuclear envelope during zygotene. Notably, scc3 mutants also demonstrated typical telomere bouquet formation (Figure 5—figure supplement 1B). Subsequently, we utilized 5 S ribosomal DNA (5 S rDNA) as a marker to evaluate homologous pairing. One overlapping 5 S rDNA focus was observed in wild-type pachytene, but two separate foci were observed in scc3, indicative of unpaired homologous chromosomes (n=52; Figure 2—figure supplement 1C). This observation corroborates the function of SCC3 in facilitating homologous chromosome pairing.
 
 Homologous chromosomes align and are subsequently juxtaposed via a proteinaceous structure known as the synaptonemal complex (SC), which comprises two parallel arrays of axial elements (AE), termed lateral elements (LE) prior to synapsis. These elements lay the groundwork for SC assembly (Ren et al., 2021). Given SCC3’s identification as a component of the AE, we examined the SC assembly process by immunostaining with an antibody against ZEP1 in both scc3 and wild-type meiocytes. In the wild-type, ZEP1 progressively elongated, forming brief linear signals during zygotene that fully extended along the paired homologous chromosomes by pachytene (Figure 5B). Conversely, scc3 mutants exhibited ZEP1 as isolated punctate foci at early zygotene, a pattern that persisted into pachytene (Figure 5B), underscoring the critical role of SCC3 in SC assembly. Furthermore, the localization of other AE components (PAIR2 and PAIR3) was also investigated, and these proteins displayed normal behavior in scc3 (Figure 5—figure supplement 2).
 
-## SCC3 is essential for recombination progress and CO formation
+### SCC3 is essential for recombination progress and CO formation
 
 Since homologous pairing was impaired in scc3 meiocytes, we wondered whether recombination was normal in scc3. γH2AX is a marker that is used as a proxy to assess DSB formation. Immunostaining results revealed no significant difference in the quantity of γH2AX foci between the wild-type and scc3 (265.4±8.6, n=31 for scc3 meiocytes; 262.2±7.2, n=20 for wild-type meiocytes) (Figure 6A). Furthermore, we examined the DSB resection factor (COM1), meiotic strand-invasion and exchange factors (RAD51, DMC1) and the interference-sensitive crossover (CO) marker (ZIP4) in both wild-type and scc3. Immunostaining results revealed that the number of COM1 foci (290.3±8.8, n=26 for scc3 meiocytes; 293.8±9.4, n=23 for wild-type meiocytes) showed no significant difference between the wild-type and scc3 (Figure 6A and B). However, a significant reduction in the foci of DMC1 (65.4±17.1, n=25 for scc3 meiocytes; 281.2±8.3, n=20 for wild-type meiocytes), RAD51 (55±21.7, n=26 for scc3 meiocytes; 306±11.9; n=24 for wild-type meiocytes), and ZIP4 (58±17.9, n=23 for scc3 meiocytes; 316.6±11.1, n=21 for wild-type meiocytes) was observed in scc3, suggesting a disruption in recombination progression and CO formation. Previous studies have identified HEI10 as a marker of Class I COs. In the wild-type, prominent HEI10 foci were observed (24.2±3.8, n=25) at late pachytene (Figure 6A and B). Conversely, scc3 predominantly exhibited sparse HEI10 foci, lacking in prominent, bright signals. Collectively, these results suggest that CO maturation was disturbed in scc3. Although a minor portion of recombinant proteins could be localized, the homologous recombination process was still greatly restricted.
 
@@ -95,15 +143,31 @@ Since homologous pairing was impaired in scc3 meiocytes, we wondered whether rec
 
 **Figure 6.:** (A) Immunolocalization of histone γH2AX (red), COM1 (green, from mouse), DMC1 (green, from mouse), RAD51 (green, from rabbit), ZIP4 (green, from mouse), and HEI10 (green, from mouse) in wild-type and scc3. REC8 (red, from mouse and rabbit) signals were used to visualize chromosome axes. Bars, 5 μm. (B) Box scatter plot of histone γH2AX phosphorylation, COM1, DMC1, RAD51, and ZIP4 in wild-type and scc3. No difference of histone γH2AX and COM1 were shown between the wild-type and scc3. DMC1, RAD51, and ZIP4 foci were significantly decreased in scc3 compared with wild-type. Values are means ± SD. *** represents p<0.001, two-tailed Student’s t-tests was performed. (C) Chromosome behaviors in scc3, rec8, rec8 scc3, dmc1, and dmc1 scc3 from diakinesis to anaphase I. Bars, 5 μm.
 
-## Meiotic DSBs are repaired using sister chromatids in scc3
+### Meiotic DSBs are repaired using sister chromatids in scc3
 
 It is noteworthy that the formation of DSBs appears normal in scc3 (Figure 6A). However, the destabilization of homologous pairing and synapsis in scc3 leads to aberrations in homologous recombination. Despite the absence of the homologous recombination process, 24 univalents were observed from diakinesis to metaphase I. This was coupled with the complete separation of sister chromatids during anaphase I without chromosome fragmentation, suggesting proficient repair of these meiotic DSBs in scc3. These observations indicate that the meiotic DSBs in scc3 most likely utilize sister chromatids as repair templates. Additionally, we examined the chromosome behavior of both rec8 and rec8 scc3 from diakinesis to anaphase I (Figure 6C). They all exhibited abnormal chromosome morphology, manifesting a highly adhesive phenotype from diakinesis to metaphase I. Furthermore, chromosome fragmentation was observed in anaphase I, indicating inadequate repair of meiotic DSBs in both rec8 and rec8 scc3. Moreover, DMC1 has been implicated in inter-sister exchange during meiosis in both Arabidopsis and rice (Kurzbauer et al., 2012; Wang et al., 2016). To gain a deeper understanding of the relationship between DMC1 and SCC3 in rice, we generated the dmc1 scc3 double mutant and monitored the meiosis process from diakinesis to anaphase I. The meiotic defects of dmc1 and dmc1 scc3 were similar from diakinesis to metaphase I, resulting in 24 univalents (Figure 6C). However, the sister chromatids of dmc1 scc3 were completely separated in anaphase I, which was consistent with the phenotype of scc3. This suggests that these two genes might function independently in sister-chromatids repair during meiosis.
 
-## The loading of SCC3 onto meiotic chromosomes depends on REC8
+### The loading of SCC3 onto meiotic chromosomes depends on REC8
 
 After establishing SCC3’s role as an axial element in meiosis, an assessment was conducted to ascertain whether its localization was influenced by other meiotic AEs. REC8, PAIR2, and PAIR3 are known to localize on chromosome axes in rice, playing pivotal roles in facilitating SC assembly. The distribution of SCC3 signals remained unaffected in pair2 and pair3 mutants during meiosis (Figure 7B). Moreover, the distribution of SCC3 was normal in other mutants that affect meiotic DSB formation (spo11-1), strand invasion and homology searching (com1 and dmc1), and synaptonemal complex formation (zep1) (Figure 7B). This indicates that SCC3 localization is independent of the recombination process. However, a notable absence of SCC3 signal distribution was observed in rec8, indicating that REC8 plays a crucial role in the normal loading progression of SCC3 (n=36). Immunostaining of γH2AX confirmed normal DSB formation in rec8 (Figure 7A). In addition, the localization of the DSB end resection factor COM1 (n=25) and the inter-homologous strand-invasion factor RAD51 (n=26) was impaired in rec8 (Figure 7A). Furthermore, PAIR2 (n=28) only form short, interrupted stretches, and few detectable PAIR3 signals were observed (n=32). These findings indicate that meiotic DSB formation remains unaffected in rec8, while the processes of DSB end resection and homologous recombination are significantly compromised.
 
-## SCC3 interacts with SCC1
+![Figure 7.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunolocalization of γH2AX (red, from rabbit), COM1 (green, from mouse), RAD51 (green, from rabbit), SCC3 (green, from mouse), PAIR2 (green, from rabbit), and PAIR3 (green, from rabbit) in rec8 meiocytes at zygotene. CENH3 (red and green, from rabbit and mouse) was used to indicate the centromeres. Bars, 5 μm. (B) Immunolocalization of REC8 (red, from rabbit) and SCC3 (green, from mouse) in spo11, com1, dmc1, zep1, pair2, and pair3 meiocytes at zygotene. Bars, 5 μm. (C) SCC3 interacts with RAD21.1 in yeast-two-hybrid assays. Interactions between bait and prey were examined on SD/DDO (SD-Leu-Trp) control media and SD/QDO (SD-Ade-His-Leu-Trp) selective media. AD, prey vector; BD, bait vector. (D) Bimolecular fluorescence complementation assays show the interactions between SCC3 and RAD21.1 in rice protoplasts. Bars, 5 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) SCC3 does not interact with REC8, SMC1, and SMC3 in yeast-two-hybrid assays. (B) SCC3 does not interact with REC8, SMC1, and SMC3 in bimolecular fluorescence complementation assays in rice protoplast. Bars, 5 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The expression levels of SMC1, SMC3, SCC1, REC8, PAIR2, PAIR3, SGO1 and ZEP1 in sister chromatid cohesion 3 (scc3) and wild-type. Values are shown as mean ± SD of three biological replicates. * represents p<0.05, ** represents p<0.01, two-tailed Student’s t-tests was performed. (B) The expression levels of SMC1, SMC3, SCC3, and SCC1 in pair2, pair3, and wild-type. Values are shown as mean ± SD of three biological replicates. ** represents p<0.01, two-tailed Student’s t-tests was performed.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/94180/elife-94180-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Structure model of the cohesin complex. The SCC3 subunit is associated with the middle region of SCC1. (B) During meiosis, SCC3’s localization pattern probably changes to the root of DNA loop with lateral elements (LEs), which wraps synaptonemal complex (SC). This indicates SCC3 is a meiotic LE essential for homologous chromosome pairing and synapsis, also affects recombination progress and crossover (CO formation).
+
+### SCC3 interacts with SCC1
 
 The cohesin complex is a ring-shaped protein complex where subunits interact with each other (Li et al., 2018a; Murayama and Uhlmann, 2015; Roig et al., 2014). To clarify the relationship between different subunits in rice, we performed Y2H assays between core cohesin proteins. Surprisingly, we found that SCC3 only interacts with SCC1 (Figure 7C), which was further confirmed by BiFC assays (Figure 7D). However, it is worth noting that SCC3 could not interact with other cohesin proteins, including REC8, SMC1, and SMC3 (Figure 7—figure supplement 1), indicating that SCC3 could function directly in combination with SCC1 in the cohesin complex.
 
@@ -123,50 +187,50 @@ Cohesin is a multi-protein complex that plays an indispensable role in establish
 
 ## Materials and methods
 
-## Meiotic chromosome preparation
+### Meiotic chromosome preparation
 
 Young rice panicles were fixed in Carnoy’s solution (ethanol: acetic acid, 3: 1, v/v). Microsporocytes at different meiotic stages were squashed in an acetocarmine solution on glass slides. Moreover, the slides were covered with a coverslip and washed with 45% acetic acid from each side. Subsequently, the slides were frozen in liquid nitrogen for 10 s, and then the coverslip was removed as soon as possible ensuring sufficient cells were fixed on the slide. After ethanol gradient dehydration (70%, 90%, and 100%), the slides with chromosome spreads were counterstained with 4',6-diamidino-2-phenylindole (DAPI, Vector Laboratories, Burlingame, CA, USA) solution. Chromosome behaviors were observed and captured using a ZEISS A2 microscope imaging system with a micro-charge-coupled (micro CCD) device camera.
 
-## Antibody production
+### Antibody production
 
 To generate the antibody against SCC3, a 648 bp C-terminal fragment of SCC3 complementary DNA (amino acids 910–1116) was amplified using primers SCC3-Ab-F and SCC3-Ab-R (Supplementary file 1). The PCR product was cloned into the expression vector pET-30a (Novagen, Madison, WI, USA). The fusion peptide expression and purification were carried out as described previously (Miao et al., 2021). The polyclonal antibody was raised from mouse and rabbit. Other antibodies were generated in our laboratory previously.
 
-## Immunofluorescence assay
+### Immunofluorescence assay
 
 Fresh young panicles were fixed in 4% (w/v) paraformaldehyde for 30 min at room temperature. Different meiotic stages of anthers were squashed in a drop of 1x PBS solution on glass slides. After freezing in liquid nitrogen and ethanol dehydration, slides were incubated with different combinations of diluted antibodies (1:100) in a humid chamber at 37 °C for 2 hr. Thereafter, the slides were washed with 1x PBS solution three times and were further incubated for 1 hr with the appropriate fluorochrome-coupled secondary antibody, including ﬂuorescein-isothiocyanate-conjugated goat anti-mouse antibody (Southern Biotech, Birmingham, AL, USA), rhodamine-conjugated goat anti-rabbit antibody (Southern Biotech), and AMCA-conjugated goat anti-guinea pig antibody (Jackson Immuno Research, West Grove, PA, USA). Slides were washed with 1x PBS solution three times and eventually stained with DAPI. The immunoﬂuorescence signals were analyzed and captured using a ZEISS A2 microscope imaging system.
 
-## Fluorescence in situ hybridization
+### Fluorescence in situ hybridization
 
 Young panicles of both wild-type and mutants were fixated in Carnoy’s solution (ethanol: acetic acid, 3: 1, v/v). The FISH analysis was performed as a detailed protocol previously (Cheng, 2013). The pAtT4 clone containing telomere repeats, the pTa794 clone containing 5 S ribosomal RNA genes, and the bulked oligonucleotide probes specific to chromosome 12 were used as probes in FISH analysis. Rhodamine anti-digoxigenin was used for digoxigenin-labeled probes. Chromosome images were captured using an Olympus (Shinjuku-ku, Tokyo, Japan) BX51 fluorescence microscope with a micro CCD camera using software IPLAB4.0 (BD Biosciences, San Jose, CA, USA).
 
-## Yeast two-hybrid assay
+### Yeast two-hybrid assay
 
 The yeast two-hybrid (Y2H) assays were conducted by the full-length CDSs of SCC1, SCC3, REC8, SMC1, and SMC3 independently cloned into the pGBKT7 or pGADT7 vector. Co-transformants were selected on SD/DDO (SD-Leu-Trp) medium at 30 °C for 3–4 days. Positive interactions of transformants were selected on SD/QDO (SD-Leu-Trp-His-Ade) medium containing aureobasidin A. All primers used to construct plasmids are listed in Supplementary file 1. The detailed protocol was described in the manufacturer’s handbook (Yeast protocols handbook; PT3024-1; Clontech).
 
-## BiFC assay
+### BiFC assay
 
 To conduct BiFC assays, SCC3 and RAD21.1 were amplified by KOD-plus polymerase and ligated into BiFC vectors, including pSCYNE (SCN) and pSCYCE (SCC). The constructed plasmids were transformed into protoplasts extracted from the young stem of rice-etiolated seedlings. After incubation in the dark for 18 hr at 28 °C, the CFP signals were captured under a confocal laser scanning microscope at an excitation wavelength of 405 nm (Leica TCS SP5, Wetzlar, Germany).
 
-## STED microscopy and image analysis
+### STED microscopy and image analysis
 
 Immunoﬂuorescence assays were conducted by the procedures described above. STED images were acquired using Abberior STEDYCON (Abberior Instruments GmbH, Göttingen, Germany) fluorescence microscope built on an upright microscope BX53 (Olympus UPlanXAPO 100 x, NA1.45, Tokyo, Japan). The microscope is equipped with pulsed STED lasers at 775 nm and 640 nm excitation lasers. The appropriate fluorochrome-coupled secondary antibody were used in this study, including abberior STAR ORANGE goat anti-mouse IgG (STORANGE-1001–500 UG), abberior STAR RED goat anti-rabbit lgG (STRED-1002–500 UG). Imaging and image processing was done with ImageJ software.
 
-## RNA extraction and real-time PCR
+### RNA extraction and real-time PCR
 
 Real-time PCR assays were used to detect the expression patterns of SCC3. Total RNA was extracted from different tissues in wild-type including root, stem, leaf, sheath, spikelet, 2 cm long panicle, 2–3 cm long panicle, 3–5 cm long panicle, 5–7 cm long panicle, and 7 cm long panicle using TRIzol reagent. After digestion with RNase-free DNaseI to remove genomic DNA, reverse transcription PCR was performed to synthesize cDNA using SuperScript III Reverse Transcriptase by manufacturer’s protocol (Invitrogen). Quantitative real-time PCR assays were performed on the Bio-Rad CFX96 instrument using Evagreen (Biotium, Freemont, CA, USA) with a procedure of 98 °C 3 min, 40 cycles of 98 °C 15 s, and 60 °C 20 s. The UBIQUITIN gene was used as an internal reference. Three biological repeats were performed for each sample. Primers used for real-time PCR assays were listed in Supplementary file 1.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 The full-length amino acid sequence of SCC3 was selected as a template and searched by the NCBI blastp tool to identify similar proteins among species. A detailed protocol for further analysis has been reported previously (Li et al., 2018b; Ren et al., 2018; Ren et al., 2020). Filtered sequences were downloaded and used for constructing neighbor-joining trees by MEGA5 software and processed with EvolvieW (https://evolgenius.info/evolview/).
 
-## Multiple sequence alignments
+### Multiple sequence alignments
 
 Multiple alignments were performed using the online toolkit MAFFT (https://toolkit.tuebingen.mpg.de/mafft) and processed with ESPRIPT3 (http://espript.ibcp.fr/ESPript/ESPript/) by previously detailed reported (Zhao et al., 2021).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 The rice scc3 mutant was produced by CRISPR-Cas9 toolkit in japonica rice variety Yandao 8. Primers used for CRISPR-Cas9 are listed in Supplementary file 1. Other meiosis mutants pair3 (Wuxiangjing 9), pair2 (Nipponbare), zep1 (Nipponbare), rec8 (Yandao 8), sgo1 (Yandao 8), spo11-1 (Guangluai 4), dmc1 (Nipponbare) have been previously described (Wang et al., 2016). Yandao 8 was used as the wild-type. All the rice plants were grown in a paddy ﬁeld under natural rice-growing conditions.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 At least three independent biological repeats were performed for each experiment. Values in Figures are means ± SD. The significant difference between the wild-type and corresponding mutants was evaluated by two-tailed Student’s t-test and p<0.05 was considered as a criterion for judging statistically significant differences. The significance labeled in the Figures represents the following meanings: *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.

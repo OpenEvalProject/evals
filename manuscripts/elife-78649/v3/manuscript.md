@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/006w34k90 Howard Hughes Medical Institute, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Department of Molecular and Cellular Physiology, Stanford University Stanford United States
+1. Howard Hughes Medical Institute, Stanford University Stanford United States ([ROR:006w34k90](https://ror.org/006w34k90))
+2. Department of Molecular and Cellular Physiology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
 ## Abstract
 
-At CA1→subiculum synapses, alternatively spliced neurexin-1 (Nrxn1 SS4+ ) and neurexin-3 (Nrxn3 SS4+ ) enhance NMDA-receptors and suppress AMPA-receptors, respectively, without affecting synapse formation. Nrxn1 SS4+ and Nrxn3 SS4+ act by binding to secreted cerebellin-2 (Cbln2) that in turn activates postsynaptic GluD1 receptors. Whether neurexin-Cbln2-GluD1 signaling has additional functions besides regulating NMDA- and AMPA-receptors, and whether such signaling performs similar roles at other synapses, however, remains unknown. Here, we demonstrate using constitutive Cbln2 deletions in mice that at CA1→subiculum synapses, Cbln2 performs no additional developmental roles besides regulating AMPA- and NMDA-receptors. Moreover, low-level expression of functionally redundant Cbln1 did not compensate for a possible synapse-formation function of Cbln2 at CA1→subiculum synapses. In exploring the generality of these findings, we examined the prefrontal cortex where Cbln2 was recently implicated in spinogenesis, and the cerebellum where Cbln1 is known to regulate parallel-fiber synapses. In the prefrontal cortex, Nrxn1 SS4+ -Cbln2 signaling selectively controlled NMDA-receptors without affecting spine or synapse numbers, whereas Nrxn3 SS4+ -Cbln2 signaling had no apparent role. In the cerebellum, conversely, Nrxn3 SS4+ -Cbln1 signaling regulated AMPA-receptors, whereas now Nrxn1 SS4+ -Cbln1 signaling had no manifest effect. Thus, Nrxn1 SS4+ - and Nrxn3 SS4+ -Cbln1/2 signaling complexes differentially control NMDA- and AMPA-receptors in different synapses in diverse neural circuits without regulating synapse or spine formation.
+At CA1→subiculum synapses, alternatively spliced neurexin-1 (Nrxn1SS4+) and neurexin-3 (Nrxn3SS4+) enhance NMDA-receptors and suppress AMPA-receptors, respectively, without affecting synapse formation. Nrxn1SS4+ and Nrxn3SS4+ act by binding to secreted cerebellin-2 (Cbln2) that in turn activates postsynaptic GluD1 receptors. Whether neurexin-Cbln2-GluD1 signaling has additional functions besides regulating NMDA- and AMPA-receptors, and whether such signaling performs similar roles at other synapses, however, remains unknown. Here, we demonstrate using constitutive Cbln2 deletions in mice that at CA1→subiculum synapses, Cbln2 performs no additional developmental roles besides regulating AMPA- and NMDA-receptors. Moreover, low-level expression of functionally redundant Cbln1 did not compensate for a possible synapse-formation function of Cbln2 at CA1→subiculum synapses. In exploring the generality of these findings, we examined the prefrontal cortex where Cbln2 was recently implicated in spinogenesis, and the cerebellum where Cbln1 is known to regulate parallel-fiber synapses. In the prefrontal cortex, Nrxn1SS4+-Cbln2 signaling selectively controlled NMDA-receptors without affecting spine or synapse numbers, whereas Nrxn3SS4+-Cbln2 signaling had no apparent role. In the cerebellum, conversely, Nrxn3SS4+-Cbln1 signaling regulated AMPA-receptors, whereas now Nrxn1SS4+-Cbln1 signaling had no manifest effect. Thus, Nrxn1SS4+- and Nrxn3SS4+-Cbln1/2 signaling complexes differentially control NMDA- and AMPA-receptors in different synapses in diverse neural circuits without regulating synapse or spine formation.
 
 ## Introduction
 
@@ -36,9 +36,21 @@ These results characterized a trans-synaptic signaling pathway that organized a 
 
 ## Results
 
-## Constitutive deletion of Cbln2 suppresses NMDARs and enhances AMPARs both at regular- and at burst-firing subiculum neuron synapses
+### Constitutive deletion of Cbln2 suppresses NMDARs and enhances AMPARs both at regular- and at burst-firing subiculum neuron synapses
 
 Previous conclusions that presynaptic Nrxn1SS4+ and Nrxn3SS4+ regulate postsynaptic NMDARs and AMPARs, respectively, via binding to Cbln2, but that Nrxn1SS4+, Nrxn3SS4+, and Cbln2 are not required for synapse formation relied on conditional manipulations at mature CA1→subiculum synapses (Dai et al., 2021). In contrast to these results, studies in the cerebellum (Hirai et al., 2005; Ito-Ishida et al., 2008; Rong et al., 2012; Yuzaki, 2011) and the PFC (Shibata et al., 2021) suggested a function for Cbln1 and Cbln2, respectively, in synapse formation, raising the question whether conditional deletions might have overlooked a developmental synapse formation role of Cbln2 at CA1→subiculum synapses. Moreover, previous experiments did not differentiate between CA1→subiculum synapses on regular- and on burst-firing neurons that exhibit distinct forms of long-term plasticity (Wozny et al., 2008b). To explore whether Cbln2 may have an earlier developmental role in addition to its regulation of AMPARs and NMDARs at mature CA1→subiculum synapses, we examined the effect of a constitutive deletion of Cbln2. To determine whether Cbln2 may have distinct functions at synapses on regular- and burst-firing neurons, moreover, we studied these synapses separately at the same time (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig1-v3.jpg)
+
+**Figure 1.:** (A) Experimental strategy for analysis of littermate wild-type and constitutive Cbln2 KO mice. (B) & (C) Input/output measurements of evoked AMPAR- and NMDAR-EPSCs recorded from burst-spiking neurons in acute subiculum slices reveal that the Cbln2 KO enhances AMPAR-EPSCs (B) but suppresses NMDAR-EPSCs (C). EPSCs were evoked by stimulation of CA1 axons in acute slices from littermate control and Cbln2 KO mice at P35-42 (left, summary plots of input-output curves with sample traces on top; right, summary graph of input/output slopes). (D–F) The Cbln2 KO had no effect on the presynaptic LTP typical for burst-spiking neurons that is induced by four 100 Hz/1 s stimulus trains with 10 s intervals under voltage-clamp (D, summary plot of AMPAR-EPSC amplitudes with sample traces on top; E, summary graph of the LTP magnitude (normalized EPSC amplitudes during the last 5 min of recordings at least 30 min after LTP induction); F, summary graph of paired-pulse ratios before and after LTP induction as a measure of the release probability). (G) (H) Same as B & C, but recorded from regular-spiking neurons. Note that the AMPAR-EPSC and NMDAR-EPSC phenotype of the Cbln2 KO is identical in burst- and regular-spiking neurons. (I–K) The Cbln2 KO abolishes NMDAR-dependent postsynaptic LTP that is typical for regular-firing subiculum neurons, and does not involve a change in PPR. Data are from experiments analogous to those described in D-F. All data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test or two-way ANOVA (*p≤0.05, **p≤0.01, and ***p≤0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A & B) Left, sample traces of evoked AMPAR-EPSCs with 100 μA stimulus intensity (data from Figure 1B and G); right, summary graph of the coefficient of variation of AMPAR-EPSCs. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test revealed no significant differences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Experimental design for the generation and analysis of littermate control and conditional Cbln2 KO mice. AAVs encoding Cre orΔCre (as a control) were stereotactically injected into the subiculum of conditional Cbln2 KO mice at P21, and mice were analyzed by slice physiology 2–3 weeks later. (B–E) Input/output measurements of evoked AMPAR-EPSCs (B) and NMDAR-EPSCs (D) recorded from burst-spiking neurons in acute subiculum slices reveal that the conditional Cbln2 KO enhances AMPAR-EPSCs (B) without changing the paired-pulse ratio of AMPAR-EPSCs (C) but suppresses NMDAR-EPSCs (D), again without changing the paired-pulse ratio of NMDAR-EPSCs (E), in burst-spiking neurons. Sample traces are shown above the respective summary plots and graphs. (F–I) Same as B-E, but recorded from regular-spiking neurons. Note that the conditional Cbln2 KO phenotype is identical between burst- and regular-spiking neurons. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test or two-way ANOVA (*p≤0.05, **p≤0.01, and ***p≤0.001).
 
 We generated littermate WT and constitutive Cbln2 KO mice and examined CA1→subiculum synaptic transmission in acute slices at postnatal day 35–42 (P35-42) (Figure 1A). In these experiments, we distinguished between regular- or burst-firing neurons in the subiculum by their electrical properties, stimulated axons emanating from the CA1 region, the major source of excitatory inputs into the subiculum (Böhm et al., 2018), and monitored EPSCs. In both regular- and burst-firing neurons, the constitutive Cbln2 deletion caused a large elevation (~50%) in AMPAR-EPSC amplitudes and a similarly large decrease (~50%) in NMDAR-EPSC amplitudes, as quantified in input/output curves to control for differences in stimulation efficiency (Figure 1B, C, G and H). Moreover, the coefficient of variance of evoked AMPAR-EPSCs did not change, suggesting that the constitutive Cbln2 deletion did not greatly alter the release probability (Figure 1—figure supplement 1). These results duplicate those obtained with conditional deletions (Dai et al., 2021), suggesting that the absence of Cbln2 throughout development did not produce an additional change in synapses. Furthermore, the finding that synapses on regular- and burst-firing neurons, the two different major types of excitatory synapses in the subiculum, are identically regulated by Cbln2 was confirmed in additional conditional deletion experiments (Figure 1—figure supplement 2).
 
@@ -46,31 +58,51 @@ CA1→subiculum synapses on regular- and burst-firing subiculum neurons exhibit 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig2-v3.jpg)
 
-**Figure 2.:** Cbln2 deletion impairs contextual memory in the two-chamber avoidance test.(A, B) Experimental strategy of behavioral experiments utilizing littermate Cbln2 KO and WT mice (A) and design of the two-chamber avoidance test in which mice receive mild electric foot shocks in the otherwise preferred darker chamber (B; Cimadevilla et al., 2001; Qiao et al., 2014). (C, D) Cbln2 KO mice exhibit a delayed learning curve during two-chamber avoidance training. Mice learn to stay in the safe space by remembering visual cues to avoid the foot shock (C, trials for each mouse taking to learn when they remain in safe chamber for more than 2 min) (called latency; summary graphs shows number of entries); D, graphs for the movement activity measured by four independent infrared photobeams in the safe chamber in 2 min and the summary graph shows activity level in the safe chamber for the last training trial. (E–G) Cbln2 KO severely decreases contextual memory in mice as measured by the two chamber avoidance test 1 day (left graphs) or 7 days (right graphs) after training (summary graphs of E, entry latencies; F, number of entries, and G, mouse activity). Data are means ± SEMs, the number of mice analyzed are depicted in the bars. Statistical analyses were performed by one-tail t-test (*=p ≤ 0.05; **=p ≤ 0.01).Figure 2—source data 1.
+**Figure 2.:** (A, B) Experimental strategy of behavioral experiments utilizing littermate Cbln2 KO and WT mice (A) and design of the two-chamber avoidance test in which mice receive mild electric foot shocks in the otherwise preferred darker chamber (B; Cimadevilla et al., 2001; Qiao et al., 2014). (C, D) Cbln2 KO mice exhibit a delayed learning curve during two-chamber avoidance training. Mice learn to stay in the safe space by remembering visual cues to avoid the foot shock (C, trials for each mouse taking to learn when they remain in safe chamber for more than 2 min) (called latency; summary graphs shows number of entries); D, graphs for the movement activity measured by four independent infrared photobeams in the safe chamber in 2 min and the summary graph shows activity level in the safe chamber for the last training trial. (E–G) Cbln2 KO severely decreases contextual memory in mice as measured by the two chamber avoidance test 1 day (left graphs) or 7 days (right graphs) after training (summary graphs of E, entry latencies; F, number of entries, and G, mouse activity). Data are means ± SEMs, the number of mice analyzed are depicted in the bars. Statistical analyses were performed by one-tail t-test (*=p ≤ 0.05; **=p ≤ 0.01).
 
 The finding that the constitutive and conditional deletions of Cbln2 produce the same synaptic phenotype suggests that the constitutive deletion, like the conditional deletion, does not impair synapse formation, as would also be indicated by the dramatic increase in AMPAR-EPSC amplitudes induced by the Cbln2 deletion in both conditions. However, since cerebellins are broadly thought to mediate synapse formation (Kusnoor et al., 2010; Mishina et al., 2012; Matsuda, 2017; Seigneur and Südhof, 2018; Yuzaki, 2018), we examined the overall synapse density in the subiculum as a function of the constitutive Cbln2 deletion using measurements of immunocytochemical staining intensity for vGluT1 and quantifications of synaptic protein levels as a proxy (Figure 3). The constitutive Cbln2 KO caused no change in vGluT1 staining intensity (Figure 3B and C) or in the levels of multiple synaptic proteins as assessed by quantitative immunoblotting (Figure 3D and E). Together with the lack of a decrease in AMPAR-mediated responses, these findings suggest that the constitutive ablation of Cbln2 expression throughout development, similar to the conditional deletion in juvenile mice, does not decrease synapse numbers.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig3-v3.jpg)
 
-**Figure 3.:** Cbln2 deletion does not alter the overall synapse density in the subiculum.(A) Experimental strategy for the analysis of littermate wild-type and constitutive Cbln2 KO mice. (B) Representative images of subiculum sections stained for vGluT1 as a proxy of synapse density, MAP2 as a proxy of neuronal density, and DAPI. (C) The Cbln2 KO does not cause a major loss of excitatory synapses in the subiculum as indicated by the vGluT1 staining intensity. (D& E) The Cbln2 KO also does not significantly alter the levels of synaptic proteins in the hippocampus. Protein levels were measured in hippocampal lysates by quantitative immunoblotting using fluorescent secondary antibodies (D) representative blots, please also see original full-sized immunoblots in Figure 3—source data 1; (E), summary graph (levels are normalized for β-actin as an internal standard, and then to the controls to render results from multiple experiments comparable; n=3 independent experiments). Data are means ± SEMs, the number of slices/mice or number of mice analyzed are depicted in the bars; statistical analyses by unpaired two-tailed t-test revealed no significant differences.Figure 3—source data 1.
+**Figure 3.:** (A) Experimental strategy for the analysis of littermate wild-type and constitutive Cbln2 KO mice. (B) Representative images of subiculum sections stained for vGluT1 as a proxy of synapse density, MAP2 as a proxy of neuronal density, and DAPI. (C) The Cbln2 KO does not cause a major loss of excitatory synapses in the subiculum as indicated by the vGluT1 staining intensity. (D& E) The Cbln2 KO also does not significantly alter the levels of synaptic proteins in the hippocampus. Protein levels were measured in hippocampal lysates by quantitative immunoblotting using fluorescent secondary antibodies (D) representative blots, please also see original full-sized immunoblots in Figure 3—source data 1; (E), summary graph (levels are normalized for β-actin as an internal standard, and then to the controls to render results from multiple experiments comparable; n=3 independent experiments). Data are means ± SEMs, the number of slices/mice or number of mice analyzed are depicted in the bars; statistical analyses by unpaired two-tailed t-test revealed no significant differences.
 
-## Cbln2 regulates AMPARs and NMDARs via a trans-synaptic Nrxn1SS4+- and Nrxn3SS4+-dependent mechanism, respectively
+### Cbln2 regulates AMPARs and NMDARs via a trans-synaptic Nrxn1SS4+- and Nrxn3SS4+-dependent mechanism, respectively
 
 We next set out to test whether the constitutive Cbln2 KO phenotype is due to the ablation of normally occurring presynaptic Nrxn1SS4+ and Nrxn3SS4+ signals, as suggested by previous studies (Aoto et al., 2013; Dai et al., 2019 and Dai et al., 2021). Quantifications of the alternative splicing of neurexins at SS4 in the CA1 region, subiculum, PFC, and cerebellum suggest that in the cerebellum, all neurexins are primarily expressed at SS4 +splice variants, whereas in the other three regions examined neurexins are expressed as a mixture of SS4 +and SS4- splice variants (Figure 4—figure supplement 1). Thus, a shift in alternative splicing of neurexins at SS4 could play a major regulatory role, as suggested previously (Ding et al., 2017; Fuccillo et al., 2015; Iijima et al., 2011). Therefore we used two experimental paradigms to induce such a shift and thereby to ask whether deletion of Cbln2 blocked the ability of Nrxn1SS4+ to enhance NMDAR-EPSCs and of Nrxn3SS4+ to suppress AMPAR-EPSCs that have been shown in previous studies (Aoto et al., 2013; Dai et al., 2019).
 
 First, we crossed constitutive Cbln2 KO mice with conditional Nrxn1SS4+ or Nrxn3SS4+ knockin mice (Aoto et al., 2013; Dai et al., 2019), and bilaterally infected the CA1 region of these double-mutant mice by stereotactic injections with AAVs encoding ΔCre (which retains the SS4 +splice variant) or Cre (which converts the presynaptic SS4 +splice variant into the SS4- variant) (Figure 4A). The Cbln2 deletion completely ablated the effect of the presynaptic Nrxn1SS4+ or Nrxn3SS4+ knockin on NMDAR- and AMPAR-ESPCs, respectively (Figure 4B and C). None of these manipulations altered PPRs, documenting that they did not influence the release probability (Figure 4D and E). These results confirm that Cbln2 is required for transduction of the presynaptic Nrxn1SS4+ or Nrxn3SS4+ signals into postsynaptic NMDAR and AMPAR responses, respectively.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig4-v3.jpg)
+
+**Figure 4.:** (A) Experimental strategy for testing whether the Cbln2 deletion blocks the effects of Nrxn1SS4+ and Nrxn3SS4+ signaling. Constitutive Cbln2 KO mice (Cbln2KO) were crossed with Nrxn1SS4+ and Nrxn3SS4+ knockin mice that constitutively express Nrxn1SS4+ and Nrxn3SS4+ splice variants, but that are converted into constitutively expressing Nrxn1SS4- and Nrxn3SS4- splice variants by Cre-recombinase (Dai et al., 2019). Three groups of mice were compared: 1. Cbln2WT mice expressing Nrxn1SS4+ or Nrxn3SS4+, 2. Cbln2KO mice expressing Nrxn1SS4+ and Nrxn3SS4+ in which presynaptic CA1 neurons were infected stereotactically at P21 with AAVs expressing inactive ΔCre (retains presynaptic Nrxn1SS4+ and Nrxn3SS4+ genotype); and 3. Nrxn1SS4+ and Nrxn3SS4+ in which presynaptic CA1 neurons were infected stereotactically at P21 with AAVs expressing active Cre (generates presynaptic Nrxn1SS4- and Nrxn3SS4- genotype). CA1→subiculum synapses were then analyzed in acute slices from these mice at P35-42. (B) On the background of the Cbln2 KO, knockin of Nrxn3SS4+ no longer suppresses AMPAR-ESPCs, nor does it reverse the increase in AMPAR-EPSCs induced by the Cbln2 KO at CA1→subiculum synapses (left, representative traces; middle, summary plot of the input/output relation; right, summary graph of the slope of the input/output relations). (C) Similarly, Nrxn1SS4+ no longer enhances NMDAR-ESPCs on the background of the Cbln2 KO, nor does it reverse the decrease in NMDAR-EPSCs induced by the Cbln2 KO (left, representative traces; middle, summary plot of the input/output relation; right, summary graph of the slope of the input/output relations). (D & E) Constitutive expression of Nrxn1SS4+ and Nrxn3SS4+ alone or in combination with the Cbln2 KO have no effect on the paired-pulse ratio of evoked AMPAR-EPSCs (D) or NMDAR-EPSCs (E) at CA1→subiculum synapses (left, sample traces; right, summary plots of PPRs). (F) Alternative experimental strategy for testing whether the Cbln2 deletion blocks the effects of Nrxn1SS4+ and Nrxn3SS4+ signaling. Analysing the epistatic relation of neurexin alternative splicing at SS4 with the Cbln2 KO at CA1→subiculum synapses using viral overexpression of Nrxn1βSS4+ or Nrxn3βSS4+ in Cbln2 KO mice. The CA1 region of constitutive Cbln2 KO mice was bilaterally infected at P21 by stereotactic injections with AAVs expressing Nrxn1βSS4+, Nrxn1βSS4-, Nrxn3βSS4+, or Nrxn3βSS4-, and subiculum neurons were analyzed 2–3 weeks later. The representative image on the right depicts the signal for eGFP (which is co-expressed with the neurexins) in CA1 neurons after 2 weeks infection. (G) On the background of the Cbln2 KO, overexpression of Nrxn3βSS4+ again no longer suppresses AMPAR-ESPCs, nor does it reverse the increase in AMPAR-EPSCs induced by the Cbln2 KO at CA1→subiculum synapses (left, representative traces; middle, summary plot of the input/output relation; right, summary graph of the slope of the input/output relations). (H) Similarly, overexpressed Nrxn1βSS4+ no longer enhances NMDAR-ESPCs on the background of the Cbln2 KO, nor does it reverse the decrease in NMDAR-EPSCs induced by the Cbln2 KO (left, representative traces; middle, summary plot of the input/output relation; right, summary graph of the slope of the input/output relations). (I & J ) Overexpression of any neurexin has no effect on the paired-pulse ratio of evoked AMPAR-EPSCs (I) or NMDAR-EPSCs (J) (left, sample traces; right, summary plots of PPRs). Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test comparing to control and two-way ANOVA (*p≤0.05, **p≤0.01, and ***p≤0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sample gels of amplified DNA obtained by RT-PCR of mRNAs from the indicated brain regions. RT-PCR was carried out with primers flanking SS4; as a result, in most brain regions two bands are observed that correspond to mRNAs containing (upper bands) and lacking SS4 (lower bands). Please also see original full-sized gels in Figure 4—figure supplement 1—source data 2. (B) Quantification of the prevalence of SS4 +variants of the three neurexins in the indicated brain regions. Data are means ± SEM (n=3).
+
 Second, we overexpressed Nrxn1βSS4+ or Nrxn3βSS4+ in the presynaptic CA1 region in constitutive Cbln2 KO mice in vivo using stereotactic bilateral injections of AAVs (Figure 4F). We previously showed that overexpression of Nrxn1βSS4+ in wild-type CA1 neurons increases NMDAR- but not AMPAR-EPSCs at CA1→subiculum synapses, whereas overexpression of Nrxn3βSS4+ in wild-type CA1 neurons suppresses AMPAR- but not NMDAR-EPSCs in the same synapses (Dai et al., 2019). When we tested the effect of Nrxn1βSS4+ or Nrxn3βSS4+ in constitutive Cbln2 KO mice, however, Nrxn1βSS4+ no longer increased NMDAR-EPSCs and Nrxn3βSS4+ no longer suppressed AMPAR-EPSCs (Figure 4G and H). None of these manipulations altered PPRs, demonstrating that they did not affect presynaptic properties (Figure 4I and J). Viewed together, these data suggest that Cbln2 transduces presynaptic Nrxn1SS4+ and Nrxn3SS4+ signals into distinct postsynaptic receptor responses at CA1→subiculum synapses.
 
-## Double deletion of Cbln1 and Cbln2 produces the same phenotype as deletion of Cbln2 alone
+### Double deletion of Cbln1 and Cbln2 produces the same phenotype as deletion of Cbln2 alone
 
 Up to this point, our results indicate that Cbln2 functions both at regular- and at burst-firing neuron synapses in the subiculum to control AMPARs and NMDARs without being required for synapse formation. However, in these and earlier experiments we only studied Cbln2, but quantifications show that Cbln1 is also expressed in the subiculum, albeit at much lower levels (Figure 5—figure supplements 1 and 2). Moreover, the constitutive Cbln2 KO does not alter the expression of Cbln1, Nrxns, and GluDs (Figure 5—figure supplement 2). Cbln1 and Cbln2 have nearly indistinguishable biochemical properties, suggesting that they are functionally redundant. The finding that Cbln1 is also expressed in the subiculum raises the possibility that the observed Cbln2 KO phenotype reflects only those Cbln2 functions that are most sensitive to a decrease in overall Cbln1/2 levels, and that the remaining Cbln1 could occlude other phenotypes. To address this possibility, we generated conditional Cbln1/2 double KO mice and analyzed the effect of the double Cbln1/2 deletion in the subiculum by electrophysiology, using an expansive array of measurements to ensure that no effects were overlooked (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig5-v3.jpg)
+
+**Figure 5.:** (A) Experimental strategy. AAVs encoding Cre or ΔCre (as a control) were stereotactically injected into the subiculum of conditional KO mice at P21, and mice were analyzed by slice physiology 2–3 weeks later. (B-E) Input/output measurements of evoked EPSCs recorded from combined burst- and regular-spiking neurons in acute subiculum slices reveal that the conditional Cbln2 KO enhances AMPAR-EPSCs (B) without changing the paired-pulse ratio of AMPAR-EPSCs (C) but suppresses NMDAR-EPSCs (D), again without changing the paired-pulse ratio of NMDAR-EPSCs (E). Sample traces are shown above the respective summary plots and graphs. (F-I) Analyses of mEPSCs recorded at –70 mV and +60 mV holding potentials from burst- and regular-firing neurons in the subiculum after deletion of both Cbln1 and Cbln2 reveal an increase in mEPSC frequency measured at both holding potentials, but a decrease in charge transfer only of mEPSCs monitored at a+60 mV holding potential consistent with the decreased NMDAR-EPSC amplitude detected during input/output measurements (F, sample traces; G, bar graphs of the mEPSC frequency and amplitude, respectively; H & I, same as F & G but for recordings at +60 mV). (J) Experimental strategy. The subiculum region of Cbln1/2cKO was bilaterally infected at P21 by stereotactic injections of AAVs expressing ΔCre-eGFP (Cbln1/2f/f) or Cre-eGFP (Cbln1/2cKO), and then two weeks later cohorts of mice injected with Cre were further injected into the CA1 region with AAVs expressing Nrxn1βSS4+ or Nrxn1βSS4-. Mice were then analyzed at P49-P56 by acute slice electrophysiology. (K) Overexpressed Nrxn1βSS4+ no longer enhances NMDAR-ESPCs on the background of the double Cbln1/2 cKO, nor does it reverse the decrease in NMDAR-EPSCs induced by the double Cbln1/2 cKO (left, representative traces; middle, summary plot of the input/output relation; right, summary graph of the slope of the input/output relations). (L) Conditional deletion of both Cbln1 and Cbln2 without or with presynaptic overexpression of Nrxn1βSS4+ or Nrxn1βSS4- does not alter paired-pulse ratios of NMDAR EPSCs. Left panels show sample traces; right panels summary plots of the paired-pulse ratio as a function of the interstimulus interval. Data are means ± SEMs; the number of cells/mice are depicted in the bars. Statistical analyses were performed by two-way ANOVA or unpaired two-tailed t-test comparing KOs to WT (*p≤0.05; **p≤0.01, and ***p≤0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A & B) Single-molecule in-situ hybridization analysis of Cbln1 (A) and Cbln2 mRNAs (B) reveals highly restricted expression patterns in brain (left, overview of horizontal mouse brain sections hybridized for Cbln1 or Cbln2 mRNAs; right, representative images for Cbln1 and Cbln2 in the cerebellum (i), hippocampal formation (ii), and mPFC (iii)). Note that Cbln1 is highly expressed only in the cerebellum, whereas Cbln2 is most abundant in the subiculum and PFC (abbreviations used: RSA, retrosplenial agranular cortex; IC, inferior colliculus; PPT, posterior pretectal nucleus; sm, stria medullaris; Au1, primary autitory area; S1 & S2, primary and secondary somatosensory cortex; OB, olfactory bulb; gr, granular layer; mo, molecular layer; pcl, purkinje cell layer; S, subiculum; PrS, presubiculum; Pas, parasubiculum; CA1, 2, 3, cornu ammonis 1, 2, 3; DG, dentate gyrus; CPu, caudate putamen (striatum); cg, cingulum; IL, infralimbic cortex; VO, ventro orbital cortex; MO, medial orbital cortex; PrL, prelimbic cortex). The extremely high expression levels of Cbln1 in the cerebellum causes the Cbln1 signal to become dim in other brain regions if all images are analyzed with the same settings. To compensate for this, the Cbln1 signal strength was enhanced in the A (ii) and A (iii) images, and the strength of the Cbln1 signal in the images cannot be directly compared to that of A (i).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A & B) Left, sample microdissection of the PFC and subiculum indicated by black dashed boxes from Cbln2 WT and KO brain sections; right, quantification of the relative mRNA levels of the three neurexins, two cerebellins, and two GluDs in the indicated brain regions using qRT-PCR (normalized to β-actin). Data are means ± SEM (n=3).
 
 Measurements of NMDAR-EPSCs and AMPAR-ESPCs at CA1→subiculum synapses revealed the same phenotype in Cbln1/2 double conditional KO as the conditional and constitutive Cbln2-only deletion, namely a decrease in NMDAR-responses and an increase in AMPAR-responses (Figure 5B and D). These phenotypes were validated using input/output measurements to control for variabilities in the position of the stimulating electrode, and were due to a postsynaptic mechanism, as described before, since PPRs did not change (Figure 5C and E). We also measured spontaneous mEPSCs as an indirect measure of synaptic activity and synapse numbers, and monitored mEPSCs at two holding potentials (–70 mV and +60 mV) to capture the contributions of both AMPARs and NMDARs to mEPSCs (Figure 5F–I). mEPSCs monitored at –70 mV are exclusively mediated by AMPARs, whereas mEPSCs monitored at +60 mV contain contributions of both AMPAR and NMDAR activation. At both holding potentials, the mEPSC frequency was massively enhanced (~100–130% increase) by the Cbln1/2 double KO, presumably because of the increased AMPAR-responses leads to increased detection of mEPSCs at both holding potentials. Importantly, the average mEPSC amplitude was increased at the –70 mV holding potential but the average mEPSC total charge transfer decreased at the +60 mV, consistent with the observation that the double Cbln1/2 KO increases AMPAR- but decreases NMDAR-responses (Figure 5B and D).
 
 Finally, we asked whether the phenotype of the double Cbln1/2 KO might be more sensitive to manipulations of neurexins than that of the Cbln2 single KO. Focusing on Nrxn1 and NMDARs, we found that as with the single deletion of Cbln2, NMDAR EPSCs were no longer altered upon presynaptic overexpression of Nrxn1β containing or lacking an insert in SS4 (Figure 5J–L). Overall, these data suggest that the Cbln1/2 double deletion has the same overall phenotype as the Cbln2 single deletion, with a dramatic change in AMPAR- and NMDAR-EPSCs but no apparent changes in presynaptic release probability.
 
-## Nrxn1SS4+-Cbln2 complexes upregulate NMDARs in PFC, but Nrxn3SS4+-Cbln2 complexes have no effect
+### Nrxn1SS4+-Cbln2 complexes upregulate NMDARs in PFC, but Nrxn3SS4+-Cbln2 complexes have no effect
 
 Our studies in two different CA1→subiculum synapses, described here and previously (Aoto et al., 2013 and 2015; Dai et al., 2019 and Dai et al., 2021), show that Nrxn1SS4+-Cbln2 complexes upregulate NMDARs whereas Nrxn3SS4+-Cbln2 complexes downregulate AMPARs. Does this trans-synaptic signaling pathway also operate in non-subiculum synapses, or is this a specific feature of subiculum synapses?
 
@@ -78,7 +110,7 @@ To address this question, we conditionally deleted Cbln2 from the mPFC (Figure 6
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig6-v3.jpg)
 
-**Figure 6.:** SS4+-Cbln2 signaling controls NMDAR-EPSCs but not AMPAR-EPSCs in the PFC, whereas Nrxn3SS4+-Cbln2 signaling does not regulate either AMPAR- or NMDAR-EPSCs in the PFC.(A & B) Experimental strategy (left, flow diagram of the experiments); middle and right, Analysis strategies of Cbln2/Nrxn1-SS4/Nrxn3-SS4 conditional KO. Right, the mPFC region of Cbln2cKO was bilaterally infected at P21 by stereotactic injections of AAVs expressing ΔCre-eGFP (Cbln2f/f) or Cre-eGFP (Cbln2cKO), and L5/6 pyramidal neurons in the prelimbic cortex (PL) region were analyzed 2–3 weeks later (A) The stimulation electrode was placed in L2/3 as indicated and applied same stimulation intensity/duration for all groups of mice to keep the consistency (B) C. Left, sample traces of evoked AMPAR- and NMDAR-EPSCs at Cbln2f/f and Cbln2cKO mPFC brain slices; Right, statistics of AMPA/NMDA ratios, AMPAR-EPSCs amplitude, and NMDAR-EPSCs amplitude. (D) Left, sample traces of paired-pulse measurements from each condition; Right, summary plots of PPRs. (E & F) Same as (C & D), but recorded from Nrxn1SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. (G & H) Same as (C & D) but recorded from Nrxn3SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn3-SS4+splice variants, whereas Cre converts the Nrxn3-SS4+variants into constitutive Nrxn3-SS4- variants. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test or two-way ANOVA (*P≤0.05, **P≤0.01, and ***p≤0.001).Figure 6—source data 1.SS4+-Cbln2 signaling controls NMDAR-EPSCs but not AMPAR-EPSCs in the PFC, whereas Nrxn3SS4+-Cbln2 signaling does not regulate either AMPAR- or NMDAR-EPSCs in the PFC.
+**Figure 6.:** (A & B) Experimental strategy (left, flow diagram of the experiments); middle and right, Analysis strategies of Cbln2/Nrxn1-SS4/Nrxn3-SS4 conditional KO. Right, the mPFC region of Cbln2cKO was bilaterally infected at P21 by stereotactic injections of AAVs expressing ΔCre-eGFP (Cbln2f/f) or Cre-eGFP (Cbln2cKO), and L5/6 pyramidal neurons in the prelimbic cortex (PL) region were analyzed 2–3 weeks later (A) The stimulation electrode was placed in L2/3 as indicated and applied same stimulation intensity/duration for all groups of mice to keep the consistency (B) C. Left, sample traces of evoked AMPAR- and NMDAR-EPSCs at Cbln2f/f and Cbln2cKO mPFC brain slices; Right, statistics of AMPA/NMDA ratios, AMPAR-EPSCs amplitude, and NMDAR-EPSCs amplitude. (D) Left, sample traces of paired-pulse measurements from each condition; Right, summary plots of PPRs. (E & F) Same as (C & D), but recorded from Nrxn1SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. (G & H) Same as (C & D) but recorded from Nrxn3SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn3-SS4+splice variants, whereas Cre converts the Nrxn3-SS4+variants into constitutive Nrxn3-SS4- variants. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by unpaired two-tailed t-test or two-way ANOVA (*P≤0.05, **P≤0.01, and ***p≤0.001).
 
 These data suggest that at L2/3→L5/6 synapses of the adult mPFC, Cbln2 operates only as a regulator of NMDARs but not of AMPARs (Figure 6C and D). Is the function of Cbln2 in the mPFC also downstream of neurexins? To examine this question, we investigated the effect of the constitutive expression of Nrxn1SS4+ or Nrxn3SS4+ at L2/3→L5/6 synapses in the mPFC. We bilaterally infected the mPFC of Nrxn1SS4+ or Nrxn3SS4+ conditional knockin mice (Aoto et al., 2013; Dai et al., 2019) by stereotactic injections with AAVs encoding ΔCre (which retains the SS4 +variant) or Cre (which converts SS4 +variants into SS4- variants). Consistent with the Cbln2 KO results, only the constitutive presynaptic expression of Nrxn1SS4+ produced a phenotype, whereas the constitutive expression of Nrxn3SS4+ had no effect (Figure 6E–H). Specifically, constitutive expression of Nrxn1SS4+ deletion caused a large increase (~100%) in the AMPAR/NMDAR ratio due to a large decrease (~100%) in the NMDAR-EPSC amplitudes but not AMPAR-EPSC; this phenotype was abolished by conversion of Nrxn1SS4+ to Nrxn1SS4- (Figure 6E). In contrast, the constitutive expression of Nrxn3SS4+ had no effect on the AMPAR/NMDAR ratio or either AMPAR-EPSC or NMDAR-EPSC amplitudes (Figure 6G). Again, none of these manipulations altered PPRs, documenting that they did not influence the release probability (Figure 6F and H). These results are consistent with the Cbln2 KO findings in the mPFC, validating the Nrxn1SS4+→Cbln2→NMDAR signaling pathway in the mPFC in the absence of the Nrxn3SS4+→Cbln2→AMPAR signaling pathway that we also observed in the subiculum.
 
@@ -88,9 +120,9 @@ To test this hypothesis and to further confirm whether Cbln2 is involved in syna
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig7-v3.jpg)
 
-**Figure 7.:** Cbln2 deletion does not alter the overall synapse density in the PFC.(A) Experimental strategy for the analysis of littermate wild-type and constitutive Cbln2 KO mice. () Representative images of PFC sections with a single biocytin-filled neuron (left, 20 x images of PFC sections with biocytin labeling and DAPI staining; right, 100 x images of dendrite spines). (BC) The Cbln2 KO does not cause a change of dendrite spine density in the PFC as quantified in biocytin-filled neurons. (D) Representative images of PFC sections stained for vGluT1 as a presynaptic marker and Homer1 as a postsynaptic maker (left, 10 x images of PFC sections with vGluT1 and Homer1 staining; middle, 100 x images of the prelimbic cortex (PL), right, enlarged images of vGluT1 staining, Homer1 staining, and their colocalization). (E) The Cbln2 KO also does not significantly alter the size of synaptic puncta, the intensity of synaptic markers, and the density of synapses in the PFC. Data are means ± SEMs, the number of dendrites/cells or sections/mice analyzed are depicted in the bars; statistical analyses by unpaired two-tailed t-test revealed no significant differences.Figure 7—source data 1.
+**Figure 7.:** (A) Experimental strategy for the analysis of littermate wild-type and constitutive Cbln2 KO mice. (B) Representative images of PFC sections with a single biocytin-filled neuron (left, 20 x images of PFC sections with biocytin labeling and DAPI staining; right, 100 x images of dendrite spines). (C) The Cbln2 KO does not cause a change of dendrite spine density in the PFC as quantified in biocytin-filled neurons. (D) Representative images of PFC sections stained for vGluT1 as a presynaptic marker and Homer1 as a postsynaptic maker (left, 10 x images of PFC sections with vGluT1 and Homer1 staining; middle, 100 x images of the prelimbic cortex (PL), right, enlarged images of vGluT1 staining, Homer1 staining, and their colocalization). (E) The Cbln2 KO also does not significantly alter the size of synaptic puncta, the intensity of synaptic markers, and the density of synapses in the PFC. Data are means ± SEMs, the number of dendrites/cells or sections/mice analyzed are depicted in the bars; statistical analyses by unpaired two-tailed t-test revealed no significant differences.
 
-## In the cerebellum, Nrxn3SS4+-Cbln1 complexes suppress AMPARs, whereas Nrxn1SS4+-Cbln1 complexes have no effect
+### In the cerebellum, Nrxn3SS4+-Cbln1 complexes suppress AMPARs, whereas Nrxn1SS4+-Cbln1 complexes have no effect
 
 Cerebellins were discovered in the cerebellum, with constitutive deletions of Cbln1 or of its receptor GluD2 causing a marked but partial loss of parallel-fiber synapses (Hirai et al., 2005; Kashiwabuchi et al., 1995; Kurihara et al., 1997; Takeuchi et al., 2005). However, it is unclear whether this synapse loss (that starts after synapses are initially formed) reflects a direct function of Cbln1 in synapse formation or represents an indirect effect of an increase in AMPAR-mediated synaptic transmission to which parallel-fiber synapses may be particularly sensitive (note that parallel-fiber synapses do not express functional NMDARs; Llano et al., 1991; Perkel et al., 1990). In the first case, Cbln1 would perform a function in the cerebellum that differs from that of Cbln2 in the subiculum and mPFC; in the second case, Cbln1 would also regulate AMPARs in parallel-fiber synapses in a function that would be the same as that of Cbln2 in the subiculum and mPFC, and that should become detectable in synapses after they have been formed.
 
@@ -98,7 +130,7 @@ To address this question, we stereotactically infected lobes 4–5 of the cerebe
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig8-v3.jpg)
 
-**Figure 8.:** SS4+-Cbln1 signaling controls AMPAR-EPSCs in the cerebellum, but in this brain region Nrxn1SS4+-Cbln1 signaling has no effect.(A) Experimental workflow for analyzing the effect of the Cbln1 cKO or of the conditional Nrxn1SS4+ or Nrxn3SS4+ knockin on parallel-fiber synaptic transmission in the cerebellum. Note that the expression of ΔCre in Nrxn1SS4+ or Nrxn3SS4+ knockin mice retains the constitutive expression of their SS4 +splice variants, whereas the expression of Cre converts SS4 +into a constitutive SS4- splice variant. (B) Image of a cerebellar cortex section (lobes 4–5) from Cbln1 cKO mouse in which these lobes were infected at P21 by stereotactic injections of AAVs expressing ΔCre-eGFP (Cbln1f/f) or Cre-eGFP (Cbln1cKO). Sections were analyzed at P35 by slice physiology; the positions of the recording electrode in the patched Purkinje cells and of the stimulation electrode in the granule cell layer are indicated. () The CCbln1 deletion in cerebellum significantly increases the amplitude of AMPAR-EPSCs at parallel-fiber synapses (left, sample traces of evoked AMPAR-EPSCs; middle, summary plot of AMPAR-EPSCs input-output curves; right, summary graph of the slope of AMPAR-EPSC input/output curves). (D) The Cbln1 deletion in cerebellum has no major effect on the coefficient of variation at parallel-fiber synapses, suggesting that it does not greatly change the release probability (left, sample traces of evoked AMPAR-EPSCs with 50 μA stimulus intensity; right, summary graph of the coefficient of variation of AMPAR-EPSCs). (E & F) Same as (C & D) but recorded from Nrxn1SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. ( G& ) Same as (HE & F) but for Nrxn3SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by two-way ANOVA or unpaired two-tailed t-test (*p≤0.05, **p≤0.01, and ***p≤0.001).Figure 8—source data 1.SS4+-Cbln1 signaling controls AMPAR-EPSCs in the cerebellum, but in this brain region Nrxn1SS4+-Cbln1 signaling has no effect.
+**Figure 8.:** (A) Experimental workflow for analyzing the effect of the Cbln1 cKO or of the conditional Nrxn1SS4+ or Nrxn3SS4+ knockin on parallel-fiber synaptic transmission in the cerebellum. Note that the expression of ΔCre in Nrxn1SS4+ or Nrxn3SS4+ knockin mice retains the constitutive expression of their SS4 +splice variants, whereas the expression of Cre converts SS4 +into a constitutive SS4- splice variant. (B) Image of a cerebellar cortex section (lobes 4–5) from Cbln1 cKO mouse in which these lobes were infected at P21 by stereotactic injections of AAVs expressing ΔCre-eGFP (Cbln1f/f) or Cre-eGFP (Cbln1cKO). Sections were analyzed at P35 by slice physiology; the positions of the recording electrode in the patched Purkinje cells and of the stimulation electrode in the granule cell layer are indicated. (C) The Cbln1 deletion in cerebellum significantly increases the amplitude of AMPAR-EPSCs at parallel-fiber synapses (left, sample traces of evoked AMPAR-EPSCs; middle, summary plot of AMPAR-EPSCs input-output curves; right, summary graph of the slope of AMPAR-EPSC input/output curves). (D) The Cbln1 deletion in cerebellum has no major effect on the coefficient of variation at parallel-fiber synapses, suggesting that it does not greatly change the release probability (left, sample traces of evoked AMPAR-EPSCs with 50 μA stimulus intensity; right, summary graph of the coefficient of variation of AMPAR-EPSCs). (E & F) Same as (C & D) but recorded from Nrxn1SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. (G & H) Same as (E & F) but for Nrxn3SS4+ knockin mice in which ΔCre retains a constitutive expression of Nrxn1-SS4+splice variants, whereas Cre converts the Nrxn1-SS4+variants into constitutive Nrxn1-SS4- variants. Data are means ± SEM. Number of neurons/mice are indicated in bars. Statistical significance was assessed by two-way ANOVA or unpaired two-tailed t-test (*p≤0.05, **p≤0.01, and ***p≤0.001).
 
 These results, based on our analyses of subiculum and mPFC synapses above, imply that Nrxn3SS4+-Cbln1 complexes, but not Nrxn1SS4+-Cbln1 complexes, control parallel-fiber synapse properties in the cerebellum. Given the fact that both Nrxn1 and Nrxn3 are expressed in the cerebellum almost exclusively as SS4 +splice variants (Figure 4—figure supplement 1), this implication is surprising. To validate this conclusion, we again used the mouse lines carrying conditional genetic knockin mutations that cause a constitutive expression of SS4 +variants of endogenous Nrxn1 and Nrxn3. Measurements of parallel-fiber synaptic transmission demonstrated that the presynaptic Nrxn3SS4+ knockin fully phenocopied the Cbln1 cKO, whereas the Nrxn1SS4+ knockin had no effect (Figure 8E–H). As before, none of these manipulations altered the coefficient of variation, suggesting that they did not influence the release probability (Figure 8F and H). These results confirm that the function of Cbln1 in cerebellum is dependent on presynaptic Nrxn3SS4+ signals and acts to control postsynaptic AMPAR responses at the PF-PC synapses (Figure 8).
 
@@ -110,7 +142,7 @@ We have now addressed these questions. Our data suggest that at CA1→subiculum 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/78649/elife-78649-fig9-v3.jpg)
 
-**Figure 9.:** SS4+-Cbln1/2 and Nrxn3SS4+-Cbln1/2 signaling complexes control postsynaptic AMPARs and NMDARs in subicular, prefrontal, and cerebellar circuits.The schematic is based on data shown previously (Aoto et al., 2013; Dai et al., 2019 and Dai et al., 2021) and described here. Alternative splicing of presynaptic Nrxn1 and Nrxn3 at SS4 that controls their interactions with Cbln1/2 and thereby with postsynaptic GluD1/2 differentially regulates the postsynaptic content of AMPARs and NMDARs in different brain region. In the hippocampus, Nrxn1SS4+-Cbln1/2 complexes enhance NMDAR-EPSCs, whereas Nrxn3SS4+-Cbln1/2 complexes suppress AMPAR-EPSCs, with both types of complexes acting via GluD1/2. In the PFC, Nrxn1SS4+-Cbln1/2 complexes also enhance NMDAR-EPSCs, but Nrxn3SS4+-Cbln1/2 complexes have no effect. In the cerebellum, conversely, Nrxn3SS4+-Cbln1/2 complexes suppress AMPAR-EPSCs, whereas now Nrxn1SS4+-Cbln1/2 complexes have no effect. These results indicate that Nrxn1SS4+-Cbln1/2 and Nrxn3SS4+-Cbln1/2 complexes perform universal functions in regulating AMPARs and NMDARs, respectively, but that these regulatory signaling pathways are differentially expressed in different types of synapses.
+**Figure 9.:** The schematic is based on data shown previously (Aoto et al., 2013; Dai et al., 2019 and Dai et al., 2021) and described here. Alternative splicing of presynaptic Nrxn1 and Nrxn3 at SS4 that controls their interactions with Cbln1/2 and thereby with postsynaptic GluD1/2 differentially regulates the postsynaptic content of AMPARs and NMDARs in different brain region. In the hippocampus, Nrxn1SS4+-Cbln1/2 complexes enhance NMDAR-EPSCs, whereas Nrxn3SS4+-Cbln1/2 complexes suppress AMPAR-EPSCs, with both types of complexes acting via GluD1/2. In the PFC, Nrxn1SS4+-Cbln1/2 complexes also enhance NMDAR-EPSCs, but Nrxn3SS4+-Cbln1/2 complexes have no effect. In the cerebellum, conversely, Nrxn3SS4+-Cbln1/2 complexes suppress AMPAR-EPSCs, whereas now Nrxn1SS4+-Cbln1/2 complexes have no effect. These results indicate that Nrxn1SS4+-Cbln1/2 and Nrxn3SS4+-Cbln1/2 complexes perform universal functions in regulating AMPARs and NMDARs, respectively, but that these regulatory signaling pathways are differentially expressed in different types of synapses.
 
 First, we showed that a constitutive deletion of Cbln2 operating throughout development has the same effect as the conditional post-developmental deletion of Cbln2 (Figures 1—3). Both produced a similar enhancement of AMPAR-EPSCs (up to 100% increase) and suppression of NMDAR-EPSCs (up to 40% decrease), without a change in synapse numbers. Consistent with a broad effect on synapses, the Cbln2 deletion also severely impaired contextual learning (Figure 2). Moreover, the constitutive deletion of Cbln2 occluded the dominant effects of Nrxn1SS4+ and Nrxn3SS4+ signaling on NMDARs and AMPARs, respectively (Figure 4), confirming that Nrxn1SS4+ and Nrxn3SS4+ operate upstream of Cbln2.
 
@@ -132,58 +164,334 @@ In summary, our data spanning diverse genetic manipulations in multiple brain re
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-vGluT1</td>
+      <td>Millipore</td>
+      <td>Cat. No. AB5905</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Homer1</td>
+      <td>Millipore</td>
+      <td>Cat. No. ABN37</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAD65</td>
+      <td>DSHB</td>
+      <td>Cat. No. mGAD6-a</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAP2</td>
+      <td>Millipore</td>
+      <td>Cat. No. AB5622</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Synaptotagmin 1</td>
+      <td>Südhof lab</td>
+      <td>CL41.1</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Neurexin</td>
+      <td>Südhof lab</td>
+      <td>G394</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CASK</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat. No. 610782</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD95</td>
+      <td>Südhof lab</td>
+      <td>L667</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Synapsin</td>
+      <td>Südhof lab</td>
+      <td>E028</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Neuroligin-1</td>
+      <td>Südhof lab</td>
+      <td>4F9</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin</td>
+      <td>Sigma</td>
+      <td>Cat. No. A1978</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin</td>
+      <td>Sigma</td>
+      <td>Cat. No. C9848</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cbln1 in-situ probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat. No. 538491-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cbln2 in-situ probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat. No. 428551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-hSyn-Cre-eGFP</td>
+      <td>Aoto et al., 2013</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to express Cre and eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-hSyn-eGFP</td>
+      <td>Aoto et al., 2013</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to express eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-CAG-Cre-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to express Cre and eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti-CAG-eGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to express eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-Cre-eGFP</td>
+      <td>Aoto et al., 2015</td>
+      <td>N/A</td>
+      <td>AAV construct to express Cre and eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-eGFP</td>
+      <td>Aoto et al., 2015</td>
+      <td>N/A</td>
+      <td>AAV construct to express eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-eGFP-p2A-Nrxn1βSS4+/-</td>
+      <td>Dai et al., 2019</td>
+      <td>N/A</td>
+      <td>AAV construct to express eGFP and Nrxn1βSS4+/-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-hSyn-eGFP-p2A-Nrxn3βSS4+/-</td>
+      <td>Dai et al., 2019</td>
+      <td>N/A</td>
+      <td>AAV construct to express eGFP and Nrxn3βSS4+/-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX</td>
+      <td>Tocris</td>
+      <td>Cat. No. 0190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Tocris</td>
+      <td>Cat. No. 1128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX</td>
+      <td>Fisher Scientific</td>
+      <td>Cat. No. 50-753-2807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Sigma</td>
+      <td>Cat. No. B4261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin Alexa 647</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. No. S32354</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: C57BL/6J wildtype</td>
+      <td>The Jackson Laboratory</td>
+      <td>Jax Stock no: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: Nrxn1-SS4+, Nrxn3-SS4+cKI</td>
+      <td>Dai et al., 2019; Aoto et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Mouse: Cbln1, Cbln2, Cbln12 cKO, Cbln2 KO</td>
+      <td>Seigneur and Südhof, 2017</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10</td>
+      <td>Molecular Devices</td>
+      <td>https://www.moleculardevices.com/products/axon-patch-clamp-system/acquisition-and-analysis-software/pclamp-software-suite</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor software</td>
+      <td>Wavemetrics</td>
+      <td>https://www.wavemetrics.com/downloads</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio</td>
+      <td>LI-COR Biosciences</td>
+      <td>https://www.licor.com/bio/image-studio/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements AR Analysis</td>
+      <td>Nikon</td>
+      <td>https://www.microscope.healthcare.nikon.com/products/software/nis-elements/nis-elements-advanced-research</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Viewer III</td>
+      <td>Bioserve</td>
+      <td>http://www.biobserve.com/behavioralresearch/products/viewer/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>Systat Software</td>
+      <td>https://systatsoftware.com/sp/download.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The Cbln1 conditional KO and Cbln2 conditional/constitutive KO mouse lines were described in Seigneur and Südhof, 2017. SS4 +conditional knockin (cKI) mice of Nrxn1 and Nrxn3 were described previously (Aoto et al., 2013; Dai et al., 2019; Dai et al., 2021). All mice above were maintained on a mixed C57BL/6/SV129/CD1 (wild type) background. Primers (IDT) are used for genotyping are as follows: Nrxn1-SS4+, forward: 5’-AGACAGACCCGAACAACCAA-3’, reverse: 5’-TGCTAGGCCTATTTCAGATGCT-3’; Nrxn3-SS4+, forward: 5’-CTCCAACCTGTCATTCAAGGG-3’, reverse: 5’-CTACGGGCCGGTTATATTTG-3’; Cbln1, LoxP forward: 5’-TAGGG TGGACAGAGAAAAGG-‘3, LoxP reverse: 5’- CTTCTAATCTGTCCTGACCACA-‘3; Cbln2, LoxP forward: 5’-TAAAAGACAGTCCAGAGTTTTAGTC-3’, LoxP reverse: 5’-TCAAATAGAGAGGAGTAAGCACA-3’, and Recombined reverse: 5’-TTTCCTTGAAGGACTCCAATAG-3’. All mouse studies were performed according to protocols (#18846) approved by the Stanford University Administrative Panel on Laboratory Animal Care. In all studies, we examined littermate male or female mice.
 
-## Single-molecule RNA FISH
+### Single-molecule RNA FISH
 
 As described in our previous study (Dai et al., 2021), P30 Wild type BL6 mice were euthanized with isofluorane and followed by transcardial perfusion with ice cold PBS. The brain were quickly dissected and embedded in OCT (Optimal Cutting Temperature) solution on dry ice. Horizontal sections with 16 µm thickness were cut by using Leica CM3050-S cryostat, mounted directly onto Superfrost Plus slides and stored in –80 °C until use. Single-molecule FISH for Cbln1 (Cat# 538491-C2) and Cbln2 (Cat# 428551) mRNA was performed using the multiplex RNAscope platform (Advanced Cell Diagnostics) according to manufacturer instructions. Fluorescent microscopy images were acquired at ×20 magnification using Olympus VS120 slide scanner.
 
-## Semi-quantitative RT-PCR
+### Semi-quantitative RT-PCR
 
 For semi-quantitative RT-PCR measurements of neurexin SS4 alternative splicing (Liakath-Ali and Südhof, 2021), total RNA was extracted using TRIzol and cDNA was synthesized using the SuperScript III First-Strand Synthesis System (Invitrogen) according to the manufacturer’s instructions. PCR primers to detect Nrxn-SS4 isoforms (Forward, reverse): Nrxn1SS4, CTGGCCAGTTATCGAACGCT, GCGATGTTGGCATCGTTCTC; Nrxn2SS4, CAACGAGAGGTACCCGGC, TACTAGCCGTAGGTGGCCTT; Nrxn3SS4, ACACTTCAGGTGGACAACTG, AGTTGACCTTGGAAGAGACG; β-actin, TTGTTACCAACTGGGACGACA, TCGAAGTCTAGAGCAACATAGC.
 
-## mRNA measurements
+### mRNA measurements
 
 mRNA was prepared from brain tissue directed from the subiculum or PFC region of P35-42 mice. RNA extraction was taken by using Trizol (Thermo Fisher, 15596026) and quantified using an ND-1000 spectrophotometer (NanoDrop, ThermoScientific). Quantitative RT-PCR was performed using the TaqMan Fast Virus One-Step Master Mix (Life Technologies) based on the manufacturer’s instructions, and reactions were carried out and quantified using a QuantStudio 3 instrument (Applied Biosystems). Expression levels were normalized to β-actin (Applied Biosystems; cat. no. 4352933) as endogenous internal control. The following PrimeTime qPCR Assays (IDT) were used (shown as gene, primer1, probe, primer2 or predesigned): Nrxn1, ACTACATCAGTAACTCAGCACAG, CTTCTCCTTGACCACAGCCCCAT, ACAAGTGTCCGTTTCAAATCTTG; Nrxn3, TGCCACCTGAAATGTCTACC, CTACGACCACCACCCGAAAGAACC, ATCTGACGTGGGCTGAATG; Nrxn2, (Mm.PT.45.16500979); Cbln1 (Mm.PT.58.12172339); Cbln2 (Mm.PT.58.5608729); GluD1 (Mm.PT.58.32947175); GluD2 (Mm.PT.58.12083939).
 
-## DNA constructs and viruses
+### DNA constructs and viruses
 
 hSyn-Cre-eGFP, hSyn-ΔCre-eGFP, CAG-Cre-eGFP, CAG-ΔCre-eGFP, full-length Nrxn1βSS4+, Nrxn1βSS4-, Nrxn3βSS4+, and Nrxn3βSS4- were cloned into AAV-DJ vector (Xu et al., 2012; Aoto et al., 2013; Dai et al., 2019) for in vivo Cre-recombination or overexpression as previously described (Dai et al., 2019). The overexpression levels mediated by the viruses were quantified in microdissected brain tissue (please see details in Dai et al., 2019).
 
-## Cell lines
+### Cell lines
 
 HEK 293T cells were directly purchased from ATCC, which regularly validates cell lines. Cell lines were tested negative for mycoplasma contamination using the fluorochrome Hoechst DNA stain and the direct culture method.
 
-## Slice electrophysiology
+### Slice electrophysiology
 
 As previously described, electrophysiological recordings from acute hippocampal slices (Dai et al., 2019; Dai et al., 2021) or PFC (Xu et al., 2012) or cerebellum (Zhang et al., 2015) were essentially performed. In brief, slices were prepared from Cbln2+/+ and Cbln2-/- mice at P35-42, or from all other mice at 2–3 weeks after stereotactic infection of AAVs (encode Cre, ΔCre, and various β-neurexins). Horizontal hippocampal slices (300 μm thickness) and Coronal PFC slices (250 μm thickness) were cut in a high sucrose cutting solution containing (in mM) 85 NaCl, 75 sucrose, 2.5 KCl, 1.3 NaH2PO4, 24 NaHCO3, 0.5 CaCl2, 4 MgCl2 and 25 D-glucose. Sagittal cerebellum slices were sectioned in a low calcium solution containing (in mM) 125 mM NaCl, 2.5 mM KCl, 3 mM MgCl2, 0.1 CaCl2, 1.25 NaH2PO4, 25 NaHCO3, 3 mM myo-inositol, 2 mM Na-pyruvate, 0.4 mM ascorbic acid, and 25 D-glucose. Slices were equilibrated in ACSF at 31 °C for 30 min, followed by room temperature for an hour. Hippocampal or PFC Slices were then transferred to a recording chamber containing ACSF solution maintained at 30.5 °C (in mM): 120 NaCl, 2.5 KCl, 1 NaH2PO4, 26.2 NaHCO3, 2.5 CaCl2, 1.3 MgSO4-7 H2O, 11 D-Glucose,~290 mOsm. Cerebellum slices were then transferred to a recording chamber containing ACSF solution maintained at 30.5 °C (in mM): 125 mM NaCl, 2.5 mM KCl, 1 mM MgCl2, 2 CaCl2, 1.25 NaH2PO4, 25 NaHCO3, 3 mM myo-inositol, 2 mM Na-pyruvate, 0.4 mM ascorbic acid, and 25 D-glucose. To induce evoked synaptic responses in subiculum, a nichrome stimulating electrode was placed at the most distal portion of hippocampal CA1 region as shown in our previous studies (Dai et al., 2019; Dai et al., 2021). The firing type of subiculum neurons (burst-spiking vs. regular-spiking) was identified by injecting a depolarizing current immediately after breaking in and monitoring action potential patterns in current-clamp mode as previously described (Aoto et al., 2013; Dai et al., 2019). To induce evoked synaptic responses in mPFC, the electrode was placed at the border of L1 and L2/3 layer as illustrated in Figure 6B and the L5/6 layer pyramidal neurons were recorded (Fénelon et al., 2011). To induce evoked synaptic responses in cerebellum, the electrode was placed at the parallel fibers in the distal molecular layer as illustrated in Figure 8B and the purkinje neurons were recorded (Zhang et al., 2015). AMPAR-EPSCs input/output curves, AMPAR/NMDAR ratios, NMDAR input/output curves, LTP, and mEPSCs (holding potentials = –70 mV for AMPAR-EPSCs,+40 mV for NMDAR-EPSCs, and +60 mV for NMDAR mEPSCs) were recorded with an internal solution containing (in mM): 117 Cs-methanesulfonate, 15 CsCl, 8 NaCl, 10 TEA-Cl, 0.2 EGTA, 4 Na2-ATP, 0.3 Na2-GTP, 10 HEPES, pH 7.3 with CsOH (~300 mOsm). All recordings were performed in the presence of 50 μM picrotoxin for AMPAR-EPSCs, 50 μM picrotoxin and 10 μM CNQX for NMDAR-EPSCs, and 50 μM picrotoxin and 0.5 μM TTX for mEPSCs. Paired-pulse ratios were monitored with interstimulus intervals of 20–2000 ms. LTP was induced by four tetani of 100 Hz stimulus trains applied for 1 s with 10 s intervals under voltage-clamp mode (holding potential = 0 mV). Pre-LTP (averaging last 5 mins as baseline) and post-LTP (averaging the last 5 mins) were recorded at 0.1 Hz. Paired-pulse ratios were measured with 40ms interstimulus intervals before and after LTP. Measurements of the AMPAR/NMDAR ratios were performed in 50 μM picrotoxin at holding potentials of –70 mV (AMPAR-EPSCs) or +40 mV (NMDAR-EPSCs, quantified at 50ms after the stimulus). All slopes of input/output ratio were calculated from 10 to 50 μA of input current except the cerebellum that was calculated from 10 to 100 μA of input current. All data were analyzed with the Igor software (WaveMetrics). Miniature events were handpicked with a threshold of 5 pA by using the Igor software (Dai et al., 2015).
 
-## Stereotactic Injections
+### Stereotactic Injections
 
 Stereotactic injections of AAV into mice at P21 were performed essentially as described (Xu et al., 2012; Aoto et al., 2013; Dai et al., 2019; Dai et al., 2021). Briefly, P21 mice were anesthetized with Avertin, and viruses were injected using a stereotactic instrument (David Kopf) and a syringe pump (Harvard Apparatus) with ~0.85 μl of concentrated virus solution (108-9 TU) at a slow rate (0.1 l/min) iμnto the CA1 region of the intermediate hippocampus (Bregma coordinates (mm): AP: −3.1, ML:±3.4, DV: −2.5) or with ~0.4 μl of virus into subiculum region (Bregma coordinates (mm): AP: −3.3, ML:±3.3, DV: −2.5) or with ~0.8 μl of virus into mPFC region (Bregma coordinates (mm): AP:+1.25, ML:±0.3, DV: −1.0 mm and –1.5 mm received both 0.4 μl of virus) or with ~0.8 μl of virus into cerebellum lobe4-5 region (Bregma coordinates (mm): AP: –6.35, ML:±0.5, DV: −1.5 mm received both 0.4 μl of virus). After infection, viral mediated expression was confirmed by the presence of eGFP. Images (Figures 4F, 6B and 7B) were taken using a Nikon confocal microscope (A1Rsi) with a 10 x objective (PlanApo, NA1.4) with 1024x1024 pixel resolution. The fluorescence of all slices prepared for physiology was confirmed under a fluorescence microscope (Olympus).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For hippocampal cryosections were performed as described (Dai et al., 2019; Dai et al., 2021). Briefly, mice were anesthetized with isoflurane and perfused with 10 ml PBS followed by 30 ml 4% PFA in 1 x PBS using a perfusion pump (2 ml/min). Whole brains were dissected out and kept in PFA for 6 hours, then post-fixed in 30% sucrose (in 1×PBS) for 24 h-48 h at 4 °C. Horizontal brain sections (30 μm) were collected at –20 °C with a cryostat (Leica CM1050). Sections were washed with PBS and incubated in blocking buffer (0.3% Triton X-100 and 5% goat serum in PBS) for 1 hr at RT, and incubated overnight at 4 °C with primary antibodies diluted in blocking buffer (anti-vGluT1, 1:1000, guinea pig, Millipore and anti-MAP2, 1:1000, rabbit, Millipore). Sections were washed three times for 10 min each in 1 x PBS, followed by treatment with secondary antibodies (1:1000, Alexa 405, Alexa 647) at 4 °C overnight, then washed three times for 10 min each with 1 x PBS. All incubations were performed with agitation. All sections were then mounted on superfrost slides and covered with Fluoromount-G as previously described. Serial confocal z-stack images (1 μm step for 10 μm at 1024x1,024 pixel resolution) were acquired using a Nikon confocal microscope (A1Rsi) with a 60 x oil objective (PlanApo, NA1.4). All acquisition parameters were kept constant among different conditions within experiments. For data analysis (n≥3 animals per condition), maximum intensity projections were generated for each image, and average vGlut1 intensity (mean ± S.E.M) calculated from the entire area of subiculum (object size range 0.05–0.21 mm2). An example cerebellum slice was stained with vGluT1 (anti-vGluT1, 1:1000, guinea pig, Millipore) and Calbindin (anti-calbindin, 1:2000, mouse, Sigma). For double labeling of presynaptic marker vGlut1 (anti-vGluT1, 1:1000, guinea pig, Millipore) and postsynaptic maker Homer1 (anti-Homer1, 1:1000, rabbit, Milllipore), PFC coronal sections from constitutive Cbln2 WT and KO are prepared exactly as described above. Then, we acquired images using a Nikon A1 Eclipse Ti confocal microscope with 100 x objective and 0.25 μm Z-stacks at 0.06 μm/pixel resolution, and nine sections were acquired and maximum pixel intensity projections were generated. For synaptic puncta quantification, images were thresholded by intensity to exclude background signals and the puncta size (0,1–3 μm2) was quantified to calculate the mean intensity, size, and density.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was performed as described previously (Seigneur and Südhof, 2018; Patzke et al., 2019; Dai et al., 2021; Patzke et al., 2021). Briefly, dissected hippocampal tissue were homogenized in Laemmli buffer (12.5 mM Tris-HCl, pH 6.8, 5 mM EDTA, pH 6.8, 143 mM β-mercaptoethanol, 1% SDS, 0.01% bromophenol blue, 10% glycerol), boiled and separated by SDS–PAGE at 100 V for about 1.3 hr, then transferred onto nitrocellulose membranes using the Trans-Blot Turbo transfer system (Bio-Rad). Membranes were then blocked with 5% milk in TBS containing 0.1% Tween 20 (TBST) at RT for 1 hr, and then incubated in primary antibody overnight at 4 °C. Membranes were washed 3 X with TBST, then incubated in fluorescent labeled secondary antibodies (donkey anti-rabbit IR dye 680/800CW, 1:10000; donkey anti-mouse IR dye 680/800CW, 1:10,000; and donkey anti-guinea pig IR dye 680RD, 1:10,000; LI-COR Bioscience). Membranes were scanned using an Odyssey Infrared Imager and analyzed with the Odyssey software (LI-COR Biosciences). Intensity values for each protein were first normalized to actin then to the control sample. The antibodies used are as follows: anti-Neuroligin-1 mouse (1:500; Südhof lab; 4F9), anti-β-actin mouse (1:10000; Sigma-Aldrich; Cat# A1978), anti-PSD95 rabbit (1:500; Südhof lab; L667), anti-Synapsin rabbit (1:1000; Südhof lab; E028), anti-CASK mouse (1:1000; BD Transduction Laboratories; Cat# 610782), anti-Neurexin rabbit (1:500; Südhof lab; G394), anti-GAD65 mouse (1:500; DSHB; Cat# mGAD6-a), anti-Synaptotagmin-1 mouse (1:1000, Südhof lab; CL41.1), and anti-vGluT1 guinea pig (1:1000; Millipore; Cat# AB5905).
 
-## Single-cell biocytin labeling
+### Single-cell biocytin labeling
 
 As described in previous study, whole-cell recordings with voltage clamp at –70 mV for about 10–15 mins. The cesium methanesulfonate internal solution was made as described above with 2 mg/mL Biocytin (Sigma Cat#B4261). Then slices were transferred to 4%PFA/PBS and fixed one hour in room temperature. Slices were washed 3x5 min with PBS, permeabilized in 0.3% Triton-X100/PBS for 30 min, and blocked in 5% normal goat serum (NGS)/0.1% Triton-X100/PBS at room temperature for 1 hr. Subsequently, slices were incubated in Streptavidin Alexa 647 (Invitrogen Cat#S32357) diluted 1:1000 in 5% NGS/0.1% Triton-X100/PBS at 4 °C overnight, washed 5x5 min with PBS and mounted with 0 thickness coverglass (Assistent Cat#01105209). Images were acquired using a Nikon A1 Eclipse Ti confocal microscope with 20 x and 100 x objectives, operated by NIS-Elements AR acquisition software. For spine imaging, Z-stacks were collected at 0.2 μm with 0.06 μm/pixel resolution, and 6–10 dendrites were analyzed per cell.
 
-## Two-chamber avoidance test
+### Two-chamber avoidance test
 
 Littermate Cbln2 WT and Cbln2 KO male mice were generated from crossing heterozygous Cbln2+/- mice. Mice were handled daily for 5 days prior to behavioral experiments starting at P45. Mice were maintained with a normal 12/12 hr daylight cycle, and analyzed in the assay sequence and at the time shown in Figure 2A. The modified protocol was performed as described previously (Dai et al., 2019) and was based on previous studies (Ambrogi Lorenzini et al., 1984; Cimadevilla et al., 2001; Qiao et al., 2014). Briefly, two chambers (left and right) were designed with different visual cues (Figure 2B) under dim light with a gate between them (Shuttle box, Med Associates Inc). The right chamber has a foot shock with electric current (intensity: 0.15 mA, duration: 2 s). Mice can explore both chambers freely. At the training day, mice will be put in left chamber. Once they go to the right chamber, they will get a foot shock after a 2 s delay. In this case, they will return back immediately to the left chamber. This is one trial of learning which is counted as one entry. It may come as another trial, once they visit right chamber again. This training process will be completed until mice are able to stay in left “safe” chamber more than 2 min. After 1 day and 7 days, they will be tested by putting back into left chamber to record latency to enter the right chamber and the number of entries in 2 min. Using this approach, two groups of Cbln2 WT and KO mice were tested. All behavior assays were carried out and analyzed by researchers blindly.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All data are shown as means ± SEMs, with statistical significance (*=p < 0.05, **=p < 0.01 and ***=p < 0.001) determined by Student’s t-test or two-way analysis of variance (ANOVA). Non-significant results (p>0.05) are not specifically identified.
 
-## Materials availability
+### Materials availability
 
 All reagents produced in this study, including recombinant DNA plasmids and mouse lines, are openly distributed to the scientific community and freely shared upon request.

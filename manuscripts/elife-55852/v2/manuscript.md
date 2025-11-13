@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Cyclic nucleotide second messengers are increasingly implicated in prokaryotic anti-viral defence systems. Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA, activating ancillary nucleases that can be toxic to cells, necessitating mechanisms to remove cOA in systems that operate via immunity rather than abortive infection. Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA 4 ), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an ‘off-switch’ for the cyclase activity. Subsequently, we identified the cellular ring nuclease Crn1, which slowly degrades cA 4 to reset the system (Rouillon et al., 2018), and demonstrated that viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1. Here, we present a comprehensive analysis of the dynamic interplay between these enzymes, governing cyclic nucleotide levels and infection outcomes in virus-host conflict.
+Cyclic nucleotide second messengers are increasingly implicated in prokaryotic anti-viral defence systems. Type III CRISPR systems synthesise cyclic oligoadenylate (cOA) upon detecting foreign RNA, activating ancillary nucleases that can be toxic to cells, necessitating mechanisms to remove cOA in systems that operate via immunity rather than abortive infection. Previously, we demonstrated that the Sulfolobus solfataricus type III-D CRISPR complex generates cyclic tetra-adenylate (cA4), activating the ribonuclease Csx1, and showed that subsequent RNA cleavage and dissociation acts as an ‘off-switch’ for the cyclase activity. Subsequently, we identified the cellular ring nuclease Crn1, which slowly degrades cA4 to reset the system (Rouillon et al., 2018), and demonstrated that viruses can subvert type III CRISPR immunity by means of a potent anti-CRISPR ring nuclease variant AcrIII-1. Here, we present a comprehensive analysis of the dynamic interplay between these enzymes, governing cyclic nucleotide levels and infection outcomes in virus-host conflict.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ CRISPR systems are widespread in archaea and bacteria, providing adaptive immuni
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig1-v2.jpg)
 
-**Figure 1.:** Sulfolobus solfataricus.The Cas10 subunit of the type III CRISPR complex synthesises cyclic tetra-adenylate (cA4) when viral RNA transcripts are detected. Target RNA cleavage shuts-off cA4 synthesis. cA4 binds to the CARF (CRISPR associated Rossmann Fold) domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN (Higher Eukaryotes and Prokaryotes Nucleotide binding) domain, which degrades RNA non-specifically within the cell. Extant cA4 is degraded slowly by CRISPR ring nucleases (Crn1 family) which likely facilitate cell recovery after clearing the virus. Viral anti-CRISPR ring nucleases (AcrIII-1 family) degrade cA4 rapidly to stop activation of ancillary defence enzymes such as Csx1 and supress antiviral immunity.
+**Figure 1.:** The Cas10 subunit of the type III CRISPR complex synthesises cyclic tetra-adenylate (cA4) when viral RNA transcripts are detected. Target RNA cleavage shuts-off cA4 synthesis. cA4 binds to the CARF (CRISPR associated Rossmann Fold) domain of CRISPR ancillary nuclease Csx1 and allosterically activates its HEPN (Higher Eukaryotes and Prokaryotes Nucleotide binding) domain, which degrades RNA non-specifically within the cell. Extant cA4 is degraded slowly by CRISPR ring nucleases (Crn1 family) which likely facilitate cell recovery after clearing the virus. Viral anti-CRISPR ring nucleases (AcrIII-1 family) degrade cA4 rapidly to stop activation of ancillary defence enzymes such as Csx1 and supress antiviral immunity.
 
 In our previous study, we demonstrated that the type III-D system from Sulfolobus solfataricus synthesises predominantly cA4, which activates the CRISPR ancillary ribonuclease Csx1. We examined the first regulatory step in cOA synthesis in detail and demonstrated that target RNA cleavage and dissociation from the complex shut-off cOA synthesis (Rouillon et al., 2018). Since CRISPR ancillary nucleases degrade nucleic acids non-specifically, cellular as well as viral targets are destroyed. Collateral cleavage of self-transcripts by a Csm6 enzyme has previously been shown to result in cell growth arrest (Rostøl and Marraffini, 2019). Therefore, in addition to regulating the synthesis of cOA, cells need a mechanism to remove extant cOA if they are to return to normal growth. To solve this problem, S. solfataricus encodes CRISPR-associated ring nuclease 1 (Crn1) family enzymes (Athukoralage et al., 2018). Crn1 enzymes slowly degrade cA4 to yield di-adenylate products incapable of activating Csx1. In other species Csm6 proteins have evolved catalytic CARF domains capable of degrading cA4, thereby acting as their own ‘off-switches’ to their RNase activity (Athukoralage et al., 2019; Jia et al., 2019). Unsurprisingly, archaeal viruses and bacteriophage have co-opted this regulatory strategy in order to subvert type III CRISPR defence. Many archaeal viruses and bacteriophage encode a ring nuclease anti-CRISPR (AcrIII-1), unrelated to Crn1, which neutralises the type III response by rapidly degrading cA4 to prevent ancillary nuclease activation (Athukoralage et al., 2020).
 
@@ -35,35 +35,63 @@ It is clear that the cA4 antiviral second messenger is at the centre of a networ
 
 While the control of cOA synthesis by target RNA binding and cleavage is now understood reasonably well, the full implications of cOA generation in a virally-infected cell are not. This requires a detailed knowledge of the levels of cOA produced, consequences for antiviral defence enzymes and the effects of cOA degrading enzymes from cellular and viral sources. These were the aims of our study.
 
-## Signal amplification on cA4 production
+### Signal amplification on cA4 production
 
 We first investigated the extent of signal amplification that occurs in a cell from detection of a single viral RNA and generation of the cA4 second messenger. Using the S. solfataricus type III-D CRISPR effector, we varied the concentration of target RNA and quantified the resultant cA4 production. As previously observed (Rouillon et al., 2018), increasing the target RNA concentration resulted in increased cA4 production (Figure 2). Quantification of the concentration of cA4 generated was accomplished by using α-32P-ATP and quantification of products using a phosphorimager in comparison to standards (Figure 2—figure supplement 1). We observed that approximately 1000 molecules (980 ± 24) of cA4 were generated per molecule of RNA, over a range of 10–100 nM target RNA (Figure 2). When a poorly-cleavable target RNA species containing phosphorothioates was used as the substrate, the amount of cA4 generated increased approximately 3-fold (3100 ± 750, Figure 2), confirming the important role of RNA cleavage for deactivation of the cyclase domain (Rouillon et al., 2018; Nasef et al., 2019). Additionally, analysis of previously published data enabled us to determine the catalytic rate constant (k) of cA4 synthesis by the S. solfataricus type III effector as 0.04 ± 0.01 min−1 at 70°C (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-v2.jpg)
+
+**Figure 2.:** (A) Upper panel shows phosphorimages of thin-layer chromatography of cyclic tetra-adenylate (cA4) made by S. solfataricus (Sso) Csm complex (470 nM carrying the CRISPR RNA A26) across a range of RNA target concentrations (0.1, 1, 10, 25,100 nM) complementary to the A26 CRISPR RNA at 70°C. Lower panel shows cA4 synthesised with a cleavage resistant (phosphorothioate) form of the RNA target. (B) Bar graph of the concentration of cA4 generated with increasing cleavable and cleavage-resistant RNA target generated by quantifying the densiometric signals from A, with an α-32P-ATP standard curve (Figure 2—figure supplement 1). Error bars indicate the standard deviation of the mean of three technical replicates, with individual data points shown as clear circles. No data are shown for 1 nM cleavable RNA target as cA4 generated was below detection limits. (C) Bar chart quantifying the number of molecules of cA4 generated per molecule of cleavable or cleavage resistant target RNA across a range of RNA target concentrations. On average SsoCsm synthesised 980 ± 24 and 3100 ± 750 molecules of cA4 per molecule of cleavable and cleavage resistant target RNA, respectively. (D) Cartoon depicting the cellular implications of ~1000 molecules of cA4 generated per molecule of RNA target, which in S. solfataricus would equate to ~6 µM cA4 within the cell.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Left-hand side panel shows duplicate serial dilution of 32P-α-ATP (5 nM) and ATP (500 µM) mix spotted (1 µl) on a thin-layer chromatography (TLC) plate. The right-hand side panel is a plot of the densiometric signal quantified from the TLC plate after phosphorimaging. The mean densiometric signal is plotted and errors bars showing the standard deviation are plotted but not visible due to their scale. The densiometric signal corresponding to cA4 was compared to the standard curve to determine the concentration of ATP converted. Duplicate standard curves were carried out for each replicate assay examining cA4 synthesis.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Plot showing the concentration of cA4 generated by SsoCsm (~4.2 µM) over time in the presence of 25 nM RNA target, 0.5 mM ATP and 2 nM 32P-α-ATP at 70°C. The data were originally reported in Rouillon et al. (2018) and here were fitted to an exponential equation to determine the kinetic rate constant of cA4 synthesis (0.04 ± 0.01 min−1). Error bars show the standard deviation of the mean of three technical replicates.
+
 Given that S. solfataricus cells are cocci with a diameter of approximately 0.7 µm, the volume of an average cell can be calculated as approximately 0.3 fL (by comparison, E. coli has a cell volume of 1 fL [Kubitschek and Friske, 1986]). Using Avogadro’s number, 1000 molecules equates to an intracellular concentration of 6 µM cA4 in S. solfataricus. Thus, detection of one viral RNA in the cell could result in the synthesis of 6 µM cA4, 10 RNAs – 60 µM, etc. The upper limits of cA4 generation could be defined by the number of viral target RNAs present, the number of type III effectors carrying a crRNA matching that target, or even conceivably the amount of ATP available for cA4 generation.
 
-## Kinetic parameters of the Csx1 ribonuclease
+### Kinetic parameters of the Csx1 ribonuclease
 
 The cA4 second messenger binds to CARF family proteins to elicit an immune response. To understand the concentration of cA4 required to activate an antiviral response, we determined the dissociation constant of the major ancillary ribonuclease Csx1 for the cA4 activator. Using radioactive cA4, we titrated an increasing concentration of Csx1 protein and subjected the mixture to native gel electrophoresis (Figure 3A,B). cA4 was bound by Csx1 with a dissociation constant (KD) of 130 ± 20 nM. Thus, even one viral target RNA detected by the type III CRISPR system should generate enough cA4 (6 µM) to fully activate the Csx1 ribonuclease for defence. We proceeded to estimate the binding affinity of a ribonuclease-deficient Csx1 variant for its RNA target, yielding an apparent dissociation constant of approximately 5 µM (Figure 3C). Finally, we measured the initial velocity of RNA degradation at a variety of RNA concentrations under steady state conditions and determined the multiple-turnover kinetic constant (kcat) for cA4-activated RNA cleavage by Csx1 as 0.44 ± 0.03 min−1 at 70°C (Figure 4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig3-v2.jpg)
 
-**Figure 3.:** 4 with high affinity and RNA with relatively low affinity.(A) Phosphorimage of native gel electrophoresis visualising cA4 (20 nM) binding by Csx1 (concentrations as indicated in the figure). The other bands visible are due to unreacted ATP and other linear nucleotide products. (B) Plot of fraction of cA4 bound by Csx1. Error bars indicate the standard deviation of the mean of four technical replicates and the data were fitted to a quadratic equation incorporating a term for non-specific binding. The inset plot is a magnification of cA4 binding between 0.01 and 5 µM Csx1 dimer concentrations. (C) Phosphorimage of native gel electrophoresis visualising A1 substrate RNA binding by Csx1 H345N protein dimer in the absence (left hand-side) or presence (right hand-side) of unlabelled cA4 (20 µM). The image shown is representative of three technical replicates. Control c – RNA alone.Figure 3—source data 1.4 and RNA.
+**Figure 3.:** (A) Phosphorimage of native gel electrophoresis visualising cA4 (20 nM) binding by Csx1 (concentrations as indicated in the figure). The other bands visible are due to unreacted ATP and other linear nucleotide products. (B) Plot of fraction of cA4 bound by Csx1. Error bars indicate the standard deviation of the mean of four technical replicates and the data were fitted to a quadratic equation incorporating a term for non-specific binding. The inset plot is a magnification of cA4 binding between 0.01 and 5 µM Csx1 dimer concentrations. (C) Phosphorimage of native gel electrophoresis visualising A1 substrate RNA binding by Csx1 H345N protein dimer in the absence (left hand-side) or presence (right hand-side) of unlabelled cA4 (20 µM). The image shown is representative of three technical replicates. Control c – RNA alone.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig4-v2.jpg)
 
-**Figure 4.:** Analysis of multiple-turnover, steady state kinetics of A1 RNA cleavage by Csx1 (125 nM dimer) at 70°C. The data were fitted to the Michaelis-Menten equation and error bars show the standard deviation of the mean of three technical replicates.Figure 4—source data 1.
+**Figure 4.:** Analysis of multiple-turnover, steady state kinetics of A1 RNA cleavage by Csx1 (125 nM dimer) at 70°C. The data were fitted to the Michaelis-Menten equation and error bars show the standard deviation of the mean of three technical replicates.
 
-## Kinetic and equilibrium constants of the ring nucleases Crn1 and AcrIII-1
+### Kinetic and equilibrium constants of the ring nucleases Crn1 and AcrIII-1
 
 We have previously established that Crn1 cleaved cA4 at a rate of 0.089 ± 0.003 min−1 at 50°C, while AcrIII-1 cleaved cA4 at a rate of 5.4 ± 0.38 min−1, about 60-fold faster (Athukoralage et al., 2020). The difference in reaction rates probably reflects the different roles of the two enzymes, with Crn1 working in conjunction with the type III CRISPR defence and AcrIII-1 opposing it. To quantify the interaction between ring nucleases and cA4, we titrated radioactively labelled cA4 with either Crn1 or AcrIII-1 and visualised cA4 binding by phosphorimaging following native gel electrophoresis. Crn1 bound cA4 with an apparent KD of ~50 nM, while the inactive H47A variant of AcrIII-1 bound cA4 with an apparent KD of ~25 nM (Figure 5). Thus, both ring nucleases bound cA4 three to four-fold more tightly than Csx1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig5-v2.jpg)
 
-**Figure 5.:** 4 with high affinity.Phosphorimages of native gel electrophoresis visualising radiolabelled cyclic oligoadenylate (cOA) binding by (A) Crn1 (B) and catalytically inactive AcrIII-1 (SIRV1 gp29 H47A). Crn1 binds cA4 (10 nM) with an apparent dissociation constant (KD) of ~50 nM, whereas AcrIII-1 binds cA4 with an apparent KD of ~25 nM. The images shown are representative of three technical replicates. Control c – cOA alone. The other bands near the bottom of the gel are caused by unreacted ATP and other linear products.
+**Figure 5.:** Phosphorimages of native gel electrophoresis visualising radiolabelled cyclic oligoadenylate (cOA) binding by (A) Crn1 (B) and catalytically inactive AcrIII-1 (SIRV1 gp29 H47A). Crn1 binds cA4 (10 nM) with an apparent dissociation constant (KD) of ~50 nM, whereas AcrIII-1 binds cA4 with an apparent KD of ~25 nM. The images shown are representative of three technical replicates. Control c – cOA alone. The other bands near the bottom of the gel are caused by unreacted ATP and other linear products.
 
-## Kinetic modelling of the antiviral signalling pathway and its regulation by cA4 degrading enzymes
+### Kinetic modelling of the antiviral signalling pathway and its regulation by cA4 degrading enzymes
 
 We entered the experimentally determined kinetic and equilibria parameters into the KinTek Global Kinetic Explorer software package and generated a model to simulate RNA degradation by Csx1 and the effects of ring nucleases over time (Figure 6A). Enzyme concentrations were set initially at 1 µM, based on published studies of transcript levels (Ortmann et al., 2008; Wurtzel et al., 2010), but were varied during modelling to assess the influence of enzyme concentration on RNA cleavage. We standardised the reaction temperature at 70°C, close to the growth temperature of S. solfataricus. This necessitated an estimation of the rate constants of Crn1 and AcrIII-1, which were measured at lower temperatures, based on a 2-fold increase in activity for each 10°C rise in temperature, in line with our previous studies of these enzymes (Athukoralage et al., 2018; Athukoralage et al., 2020). To model the generation of cA4 by the Csm:target RNA complex, we set the concentration of that complex at 6, 60 or 600 µM (equivalent to low, medium and high levels of infection), allowing the generation of the equivalent concentration of cA4 with the measured rate constant of 0.04 min−1 (Figure 6A). Henceforth, this will be referred to as 6, 60 or 600 µM cA4 for simplicity.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic showing kinetic and equilibrium parameters inserted into the KinTek Global Kinetic Explorer software for modelling the type III CRISPR defence illustrated in Figure 1. Parameters have been determined in this study with the following exceptions: Crn1 rate constant of 0.46 min−1 at 70°C estimated from rate of 0.23 min−1 measured at 60°C and AcrIII-1 rate constant of 21.6 min−1 at 70°C estimated from rate of 5.4 min−1 measured at 50°C (Athukoralage et al., 2020). The parameter ‘target-Csm-ATP’ was set at 6, 60 or 600 µM in simulations. Underscores connecting two variables indicate their relationship in a complex. cA4, cyclic tetra-adenylate; Crn1, CRISPR ring nuclease 1; AcrIII-1, viral ring nuclease anti-CRISPR SIRV1 gp29; Csx1, CRISPR ancillary ribonuclease; A2 >P, di-adenylate containing 2’,3’ cyclic phosphate (product of cA4 cleavage). (B) Free cA4 (600 µM, blue; 60 µM, red; 6 µM, green) concentration and (C), RNA cleavage in presence of 1 µM Crn1 and 1 µM Csx1. (D) and (E) show equivalent plots in the presence of 1 µM AcrIII-1. Insets where present show a magnified view of the start of each plot. (F) 3D plot visualising concentration of RNA (1000 µM at start) cleaved by Csx1 in response to 60 µM cA4 made by Csm complex, 1 µM Crn1 and varying amounts of AcrIII-1 across a range of doubling endpoints. (G) 3D plot visualising concentration of RNA (1000 µM at start) cleaved by Csx1 in response to 60 µM cA4 made by Csm complex, and varying concentrations of Csx1, Crn1 and AcrIII-1 enzymes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Plot of RNA (1000 µM) cleaved by 1 µM Csx1 in the presence of 6, 60 or 600 µM cA4 and no ring nuclease. Identical amounts of RNA are cleaved when cA4 synthesised is in excess of Csx1 concentration and all the RNA present is eventually degraded.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Active fraction of 1 µM Csx1 (dotted lines, left-hand side y-axis; cA4_Csx1 and cA4_Csx1_RNA) plotted together with cleaved RNA (solid lines, right-hand side axis) in response to varying cA4 concentrations (600 µM, blue; 60 µM, red; 6 µM, green) made by target:Csm complex when 1 µM Crn1 is present. (B) Active fraction of 1 µM Csx1 and cleaved RNA over time in response to varying cA4 concentrations when 1 µM Crn1 and 1 µM AcrIII-1 is present, as colour coded previously.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/55852/elife-55852-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** 3D plot visualising concentration of RNA (1000 µM at start) cleaved by Csx1 in the presence of 600 µM cA4, 1 µM Crn1 and varying amounts of AcrIII-1 over time. Maximal RNA cleavage negatively correlates with AcrIII-1 concentration.
 
 In the absence of any ring nuclease activity, 1 µM Csx1 was fully activated, degrading all 1000 µM RNA provided in the simulation within 2400 min, regardless of the simulated level of infection (Figure 6—figure supplement 1). The lack of titration of Csx1 activity observed here is due to its high affinity for cA4, resulting in full activation even at very low simulated infection levels. We observed a rapid initial increase in the levels of cA4 due to synthesis by the activated Csm complex (Figure 6B). In the simulations, 1 µM Crn1 degraded 60 µM cA4 within 120 min, but took over 1200 min to degrade 600 µM cA4 (Figure 6B). These differences were reflected in the levels of Csx1-mediated RNA degradation, which were much higher for 600 µM cA4 than for the lower concentrations (Figure 6C). Thus, the kinetic modelling demonstrated that addition of a ring nuclease activity allows the cell to respond differently to varied levels of infection, and therefore cA4 concentration, resulting in a range of RNA degradation levels.
 
@@ -73,11 +101,11 @@ The concentration of AcrIII-1 within S. solfataricus cells during infection is n
 
 ## Discussion
 
-## Signal amplification in type III CRISPR defence
+### Signal amplification in type III CRISPR defence
 
 In this study, we used biochemical data to build a kinetic model of the type III CRISPR antiviral signalling pathway within S. solfataricus cells and examined the capacity of CRISPR and anti-CRISPR ring nucleases for its regulation. Quantification of cA4 generated by the SsoCsm complex in vitro revealed that ~ 1000 molecules of cA4 are made per RNA target, amounting to a concentration of 6 µM in the cell if replicated in vivo. This large degree of signal amplification would ensure that detection of 1 RNA target could generate sufficient amounts of cA4 to fully activate the ribonuclease effector protein Csx1, which has a dissociation constant for cA4 of 0.13 µM. Given the large signal amplification observed here, it seems likely that some means of cOA degradation, either via self-limiting ribonucleases (Athukoralage et al., 2019; Jia et al., 2019) or dedicated ring nucleases (Athukoralage et al., 2018), will be essential for type III CRISPR systems to provide immunity rather than elicit abortive infection. Indeed, growth arrest has been observed for cOA activated Csm6 during bacteriophage infection (Rostøl and Marraffini, 2019). This life or death decision in response to genotoxic stress has also been observed in S. islandicus, which becomes dormant upon viral infection and subsequently dies if virus remains in culture (Bautista et al., 2015). In recent years, diverse CRISPR systems have been implicated in abortive infection or cell dormancy. The Type I-F CRISPR system of Pectobacterium atrosepticum was found to provide population protection by aborting infection when infected by virulent phage (Watson et al., 2019). Likewise, the in-trans collateral RNA cleavage of Listeria seeligeri Cas13a resulted in cell dormancy, providing herd immunity to the bacterial population (Meeske et al., 2019). Similarly, in ecological contexts, it is possible that different multiplicities of viral infection illicit different outcomes from the type III CRISPR response that benefit either the individual cell or the population.
 
-## Cellular and viral ring nucleases reset the system in fundamentally different ways
+### Cellular and viral ring nucleases reset the system in fundamentally different ways
 
 Biochemical comparison of Crn1 and AcrIII-1 revealed that both enzymes bind cA4 with dissociation constants around 40 nM, around 3-fold tighter than observed for Csx1. However, Crn1 is a much slower enzyme. Kinetic modelling of the antiviral signalling pathway confirms that Crn1 is effective only at low levels of viral gene expression, where it has the potential to neutralise the toxicity associated with cA4-activated ribonucleases to offer a route for cell recovery without abrogating immunity. In contrast, the much faster reaction kinetics of the anti-CRISPR ring nuclease means it can rapidly deactivate Csx1 and immunosuppress cells even under very high RNA target (and thus cA4) levels.
 
@@ -85,7 +113,7 @@ Our modelling suggests that the rapid turnover of cA4 by AcrIII-1 over a wide co
 
 It should be noted that the type III CRISPR locus of S. solfataricus contains a number of CARF domain proteins and their contribution to immunity has not yet been studied. In particular, the CARF-family putative transcription factor Csa3 appears to be involved in transcriptional regulation of CRISPR loci, including the adaptation and type I-A effector genes, when activated by cA4 (Liu et al., 2015; Liu et al., 2017). These observations suggest that the cA4 signal may transcend type III CRISPR defence in some cell types by activating multiple defence systems. However, by degrading the second messenger, AcrIII-1 has the potential to neutralise all of these.
 
-## Cyclic nucleotides in prokaryotic defence systems
+### Cyclic nucleotides in prokaryotic defence systems
 
 Cyclic nucleotide-based defence systems are emerging as powerful cellular sentinels against parasitic elements in prokaryotes. Mirroring the role of cyclic GMP-AMP synthase (cGAS) in eukaryotic defence against viruses as part of the cGAS-STING pathway, bacterial cGAS enzymes have recently been discovered that abort infection by activating phospholipases through cGAMP signaling (Cohen et al., 2019). Termed the cyclic-oligonucleotide-based antiphage signaling system (CBASS), a large number of additional cOA sensing effector proteins associated with CBASS loci remain uncharacterised, highlighting great diversity in the cellular arsenal used for defence (Burroughs et al., 2015; Cohen et al., 2019). Furthermore, diverse nucleotide cyclases have been identified that generate a range of cyclic nucleotides including cUMP-AMP, c-di-UMP and cAAG, which are also likely to function in novel antiviral signal transduction pathways (Whiteley et al., 2019). Type III systems also generate cyclic tri-adenylate (cA3) and cyclic penta-adenylate (cA5) molecules. Whereas no signalling role has yet been ascribed to cA5, cA3 has been demonstrated to activate a family of DNases termed NucC which abort infection by degrading the host genome prior to completion of the phage replication cycle (Lau et al., 2020).
 
@@ -93,29 +121,170 @@ The balance between immunity, abortive infection and successful pathogen replica
 
 ## Materials and methods
 
-## Cyclic oligoadenylate (cOA) synthesis and visualisation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Sulfolobus solfataricus)</td>
+      <td>Csm complex (eight subunits)</td>
+      <td>PMID:24119402</td>
+      <td></td>
+      <td>virus expression construct</td>
+    </tr>
+    <tr>
+      <td>Gene (Sulfolobus solfataricus)</td>
+      <td>Csx1</td>
+      <td>PMID:29963983</td>
+      <td>UniProtKB - Q97YD5</td>
+      <td>plasmid expression construct</td>
+    </tr>
+    <tr>
+      <td>Gene (Sulfolobus solfataricus)</td>
+      <td>Crn1</td>
+      <td>PMID:30232454</td>
+      <td>UniProtKB - Q7LYJ6</td>
+      <td>plasmid expression construct</td>
+    </tr>
+    <tr>
+      <td>Gene (Sulfolobus islandicus rod-shaped virus 1)</td>
+      <td>AcrIII-1</td>
+      <td>PMID:31942067</td>
+      <td>UniProtKB - Q8QL27</td>
+      <td>plasmid expression construct</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KinTek Kinetic Explorer</td>
+      <td>PMID:19897109</td>
+      <td></td>
+      <td>model constructed for this paper</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cyclic oligoadenylate (cOA) synthesis and visualisation
 
 Cyclic tetra-adenylate (cA4) made per RNA target (0.01, 0.1, 1, 10, 25 or 50 nM) was investigated in a 20 μl reaction volume incubating A26 RNA target or A26 phosphorothioate RNA target (Table 1) with 13.5 μg Sulfolobus solfataricus (Sso)Csm complex (~470 nM carrying A26 CRISPR RNA) in Csx1 buffer containing 20 mM MES pH 5.5, 100 mM K-glutamate, 1 mM DTT and 3 units SUPERase•In Inhibitor supplemented with 1 mM ATP, 5 nM α-32P-ATP and 2 mM MgCl2 at 70°C for 2 hr. All samples were deproteinised by phenol-chloroform extraction (Ambion) followed by chloroform (Sigma-Aldrich) extraction prior to separating the cOA products by thin-layer chromatography (TLC). TLC was carried out as previously described (Rouillon et al., 2019). In brief, 1 μl of radiolabelled cOA product was spotted 1 cm from the bottom of a 20 × 20 cm silica gel TLC plate (Supelco Sigma-Aldrich). The TLC plate was placed in a sealed glass chamber pre-warmed at 37°C containing 0.5 cm of a running buffer composed of 30% H2O, 70% ethanol and 0.2 M ammonium bicarbonate, pH 9.2. After TLC the plate was air dried and sample migration visualised by phosphor imaging. For analysis, densiometric signals corresponding to cA4 was quantified as previously described (Rouillon et al., 2019).
 
-## Generation of α-32P-ATP standard curves
+**Table 1.**
+ Oligonucleotides.CRISPR RNA A26 is shown 3’ to 5’. Phosphorothioate linkages are indicated with an asterisk. Regions complementary to CRISPR RNA A26 are italicized.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Crispr rna a26</td>
+      <td>3’-GCAACAATTCTTGCTGCAACAATCTTCAACCCATACCAGAAAGUUA</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Sequence (5’−3’)</td>
+    </tr>
+    <tr>
+      <td>Target RNA A26</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGUUAGAAGUUGGGUAUGGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>Phosphorothioate target RNA A26</td>
+      <td>AGGGUCGUUGUUAAGAACGACGUUGU*U*A*GAAGUUGGGU*A*U*GGUGGAGA</td>
+    </tr>
+    <tr>
+      <td>A1 substrate RNA</td>
+      <td>AGGGUAUUAUUUGUUUGUUUCUUCUAAACUAUAAGCUAGUUCUGGAGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of α-32P-ATP standard curves
 
 cA4 synthesis was visualised by incorporation of 5 nM α-32P-ATP added together with 0.5 mM ATP at the start of the reaction. Therefore, to calculate the concentration of ATP used for cA4 synthesis, α-32P-ATP standard curves were generated in duplicate, starting with 5 nM α-32P-ATP within a 20 μl volume to represent the densiometric signal corresponding to the complete conversion of 0.5 mM ATP into cOA. Serial two-fold dilutions of 5 nM α-32P-ATP and 0.5 mM ATP starting from a 20 μl volume were made and 1 μl of each dilution was spotted on a silica plate and phosphorimaged alongside TLC separating cOA made with varying RNA target concentrations. After phosphorimaging, the densiometric signals of the serial dilutions were quantified, averaged and plotted against ATP concentration starting from 0.5 mM and halving with each two-fold dilution. A line of best fit was then drawn. The concentration of ATP used to synthesise cA4 was calculated by entering the densiometric signal of the cA4 product into to equation of the line of best fit for the α-32P-ATP standard curve. The concentration of cA4 generated was derived by dividing the concentration of ATP incorporated by four to account for polymerisation of four ATP molecules to generate one molecule of cA4. Finally, the molecules of cA4 made per RNA was calculated by dividing the cA4 concentration generated by the concentration A26 RNA target used for cOA synthesis.
 
-Calculation determining the concentration of cA4 made when one RNA target is detected within a S. solfataricus cell of ≈ 0.8 µm (0.6–1.0 µm) diameter.Volume (V)=43πr3andr=12dr=12 × 0.8μmr=0.4μmV=43π×(0.4μm)3V=0.268μm31μm3=1fL0.268μm3=0.268fL=2.68×10−13mL1moleofRNA=6.022×1023moleculesofRNA1moleculeofRNA=1÷6.022×1023=1.661×10−24molesofRNA
+Calculation determining the concentration of cA4 made when one RNA target is detected within a S. solfataricus cell of ≈ 0.8 µm (0.6–1.0 µm) diameter.
 
-As ~1000 molecules of cA4 is made per 1 molecule of RNA1.661 ×10−24 moles × 1000 =1.661 ×10−21 molesofcA4
+$$
+Volume (V)=\frac{4}{3}\pir^{3}andr=\frac{1}{2}d
+$$
 
-Concentration (M) = moles / Volume (L)1.661 ×10−21 moles ÷ 2.68×10−16L=6.20×10−6Mor6.20μMcA4
 
-## Electrophoretic mobility shift assays to determine cA4 equilibrium binding constants
+
+$$
+r=\frac{1}{2} \times 0.8\mum
+$$
+
+
+
+$$
+r=0.4\mum
+$$
+
+
+
+$$
+V=\frac{4}{3}\pi\times(0.4\mum)^{3}
+$$
+
+
+
+$$
+V=0.268\mum^{3}
+$$
+
+
+
+$$
+1\mum^{3}=1fL
+$$
+
+
+
+$$
+0.268\mum^{3}=0.268fL=2.68\times10^{−13}mL
+$$
+
+
+
+$$
+1moleofRNA=6.022\times10^{23}moleculesofRNA
+$$
+
+
+
+$$
+1moleculeofRNA=1\div6.022\times10^{23}=1.661\times10^{−24}molesofRNA
+$$
+
+As ~1000 molecules of cA4 is made per 1 molecule of RNA
+
+$$
+1.661 \times10^{−24 }moles \times 1000 =1.661 \times10^{−21} molesofcA_{4}
+$$
+
+Concentration (M) = moles / Volume (L)
+
+$$
+1.661 \times10^{−21} moles \div 2.68\times10^{−16}L=6.20\times10^{−6}Mor6.20\muMcA_{4}
+$$
+
+### Electrophoretic mobility shift assays to determine cA4 equilibrium binding constants
 
 ~20 nM radioactively-labelled cA4 generated using the SsoCsm was incubated with increasing concentrations of Csx1 (0.01, 0.05, 0.10, 0.20, 0.40, 0.60, 0.80, 1,0, 2.0, 4.0, 8.0, 10.0, 20.0 μM protein dimer) in buffer containing 20 mM Tris-HCl pH 7.5, 150 mM NaCl, 2 mM MgCl2 supplemented with 2 µM Ultrapure Bovine Serum Albumin (Invitrogen) for 10 min at 25°C. A reaction volume equivalent of 20% (v/v) glycerol was then added prior to loading the samples on a 15% polyacrylamide, 1 X TBE gel. Electrophoresis was carried out at 28°C and 250 V. Gels were phosphor imaged overnight at −80°C. For investigating RNA binding, 50 nM 5’-end radiolabelled and gel purified A1 RNA was incubated with Csx1 variant H345N (0.01, 0.10, 1.0, 5.0, 10.0, 20.0 μM protein dimer) in the presence or absence of 20 µM cA4 for 15 min at 40°C. To examine cA4 binding by Crn1,~10 nM radiolabelled SsoCsm cA4 was incubated with Sso2081 (0.01, 0.05, 0.10, 0.20, 0.40, 0.60, 0.80, 1,0, 2.0, 4.0, 8.0, 10.0, 20.0 μM protein dimer) on ice for 15 min before gel electrophoresis as described above but at 300V and at 4°C. cA4 binding by AcrIII-1 was examined by incubating ~10 nM radiolabelled SsoCsm cA4 with SIRV1 gp49 H47A (0.001, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.10, 1.0, 10.0, 20.0 µM protein dimer) for 10 min at 25°C before gel electrophoresis at 30°C as described above. For analysis densiometric signal corresponding to cA4 bound protein was quantified. The densiometric count corresponding to cA4 bound to 20 µM Csx1 dimer was used to represent 100% binding and densiometric counts from other lanes were normalised to this value within each replicate. Error of the 100% bound (20 µM Csx1 dimer) densiometric count was derived by calculating the area adjusted count for each replicate and then the standard deviation of their mean, reporting the standard deviation as a fraction of the mean set as 100% bound. The data were fitted to a quadratic equation with an adjust for nonspecific binding (Y = (ymax-ymin)*((x + [ligand] + Kd) - ((x+[ligand]+Kd)^2–4*x*[ligand])^0.5)/(2*[ligand]) +a*x+b) using GraphPad Prism 8.
 
-## Multiple turnover kinetics of RNA cleavage by Csx1
+### Multiple turnover kinetics of RNA cleavage by Csx1
 
 Multiple turnover kinetic experiments were carried out by incubating Csx1 (0.125 µM dimer) with radiolabelled (50 nM) and unlabelled RNA A1 to a final concentration of 1.25, 1.5, 2.0, 5.0, 10.0, or 20.0 μM RNA in Csx1 buffer at 70°C. Control reactions with no protein and with protein and RNA in the absence of cA4 were included. 10 μl reaction aliquots were quenched by adding to phenol-chloroform and vortexing and the different time-points at which reactions were quenched for each RNA concentration is indicated in data transparency. Deproteinised products were run on a 7 M urea, 20% acrylamide, 1 X TBE gel at 45°C as previously described (Rouillon et al., 2019), and phosphorimaged overnight at −80°C. Each experiment was carried out in triplicate. Fraction of RNA cut was plotted against time and a linear regression was carried out on the linear portion of each plot to determine the initial rate of RNA cleavage at each RNA concentration. To determine the parameters kcat and KM, the average initial rate of RNA cleavage was plotted against RNA concentration and fitted to the Michaelis-Menten equation using GraphPad Prism 8.
 
-## Modelling antiviral signalling and its control by ring nucleases
+### Modelling antiviral signalling and its control by ring nucleases
 
 Modelling was carried out using the KinTek Explorer eight software package (Johnson, 2009), which is available from (https://kintekcorp.com/software). Experiments were modelled and simulated using kinetic and equilibrium paramters detemined experimentally as described in Figure 6A. The following steps were inserted to generate the model:
 

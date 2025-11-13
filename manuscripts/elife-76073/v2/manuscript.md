@@ -11,18 +11,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03f9nc143 Skolkovo Institute of Science and Technology Moscow Russian Federation
-2. https://ror.org/010pmpe69 White Sea Biological Station, Biological Faculty, Lomonosov Moscow State University Moscow Russian Federation
-3. https://ror.org/010pmpe69 Belozersky Institute of Physico-Chemical Biology, Lomonosov Moscow State University Moscow Russian Federation
-4. https://ror.org/006strx72 Yugra State University Khanty-Mansiysk Russian Federation
-5. https://ror.org/00jmfr291 Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States
+1. Skolkovo Institute of Science and Technology Moscow Russian Federation ([ROR:03f9nc143](https://ror.org/03f9nc143))
+2. White Sea Biological Station, Biological Faculty, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+3. Belozersky Institute of Physico-Chemical Biology, Lomonosov Moscow State University Moscow Russian Federation ([ROR:010pmpe69](https://ror.org/010pmpe69))
+4. Yugra State University Khanty-Mansiysk Russian Federation ([ROR:006strx72](https://ror.org/006strx72))
+5. Department of Ecology and Evolutionary Biology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 6. Institute for Information Transmission Problems of the Russian Academy of Science Moscow Russian Federation
 
 † Corresponding author
 
 ## Abstract
 
-It is natural to assume that patterns of genetic variation in hyperpolymorphic species can reveal large-scale properties of the fitness landscape that are hard to detect by studying species with ordinary levels of genetic variation. Here, we study such patterns in a fungus Schizophyllum commune , the most polymorphic species known. Throughout the genome, short-range linkage disequilibrium (LD) caused by attraction of minor alleles is higher between pairs of nonsynonymous than of synonymous variants. This effect is especially pronounced for pairs of sites that are located within the same gene, especially if a large fraction of the gene is covered by haploblocks, genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection. Haploblocks are usually shorter than 1000 nucleotides, and collectively cover about 10% of the S. commune genome. LD tends to be substantially higher for pairs of nonsynonymous variants encoding amino acids that interact within the protein. There is a substantial correlation between LDs at the same pairs of nonsynonymous mutations in the USA and the Russian populations. These patterns indicate that selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles. When less polymorphic species are studied, analogous patterns can be detected only through interspecific comparisons.
+It is natural to assume that patterns of genetic variation in hyperpolymorphic species can reveal large-scale properties of the fitness landscape that are hard to detect by studying species with ordinary levels of genetic variation. Here, we study such patterns in a fungus Schizophyllum commune, the most polymorphic species known. Throughout the genome, short-range linkage disequilibrium (LD) caused by attraction of minor alleles is higher between pairs of nonsynonymous than of synonymous variants. This effect is especially pronounced for pairs of sites that are located within the same gene, especially if a large fraction of the gene is covered by haploblocks, genome segments where the gene pool consists of two highly divergent haplotypes, which is a signature of balancing selection. Haploblocks are usually shorter than 1000 nucleotides, and collectively cover about 10% of the S. commune genome. LD tends to be substantially higher for pairs of nonsynonymous variants encoding amino acids that interact within the protein. There is a substantial correlation between LDs at the same pairs of nonsynonymous mutations in the USA and the Russian populations. These patterns indicate that selection in S. commune involves positive epistasis due to compensatory interactions between nonsynonymous alleles. When less polymorphic species are studied, analogous patterns can be detected only through interspecific comparisons.
 
 ## Introduction
 
@@ -32,11 +32,39 @@ Perhaps, the fitness landscape is complex macroscopically but is more smooth mic
 
 ## Results
 
-## Elevated LD between nonsynonymous polymorphisms
+### Elevated LD between nonsynonymous polymorphisms
 
 In a vast majority of species, nucleotide diversity π, the evolutionary distance between a pair of randomly chosen genotypes, is, at selectively neutral sites, of the order of 0.001 (as in Homo sapiens) or 0.01 (as in Drosophila melanogaster) (Leffler et al., 2012). Still, a few hyperpolymorphic species with π>0.1 are known, of which the wood-decaying fungus Schizophyllum commune is the most extreme, where π=0.20 or 0.13 in the USA or the Russian populations, respectively (Baranova et al., 2015; Appendix 3—figure 1). The two populations of S. commune are highly divergent (dS between populations ≈ 0.34, Fst = 0.58), but there is essentially no structure within either of them (Appendix 3—figure 2). We studied 34 haploid genotypes from the USA and 21 from Russia, each obtained by sequencing and de novo assembly of a haploid culture originated from a single haplospore. The use of haploid samples and de novo assembly of each sample ensures robust identification of haplotypes. We then compared the LD between nonsynonymous SNPs (LDnonsyn) to that between synonymous SNPs (LDsyn).
 
 In both S. commune populations, at sites with minor allele frequency (MAF) >0.05, LDnonsyn is much higher than LDsyn at the same nucleotide distance (Figure 1A, Figure 1—figure supplement 1A). This excess of LDnonsyn is much stronger for pairs of SNPs located within the same gene, compared to pairs of SNPs from adjacent genes at the same distance. By contrast, the excess of LDnonsyn is independent of whether the two SNPs are located within the same or in different exons of a gene (Figure 1—figure supplement 2). In S. commune, the recombination rate is higher within exons (Seplyarskiy et al., 2014), which may affect the patterns of LD; however, this factor could only reduce within-gene LD, and in any case cannot explain the difference between LDnonsyn and LDsyn. For S. commune, the excess of LDnonsyn over LDsyn holds when we explicitely control for MAFs (Figure 1—figure supplement 3), indicating that differences in MAFs between synonymous and nonsynonymous polymorphisms cannot explain the excess of LDnonsyn.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) LD in natural populations for SNPs with MAF >0.05. (A) USA population of S. commune, (B) Zambian population of D. melanogaster, (C) African superpopulation of H. sapiens. Filled areas in (A)-(C) indicate SE of LD calculated for each chromosome or scaffold separately. (D–F) A hyperpolymorphic population (D) may occupy a sizeable chunk of a complex fitness landscape, leading to pervasive positive epistasis, while variation within less polymorphic populations (E and F) is confined to smaller, and approximately linear, portions of the landscape, so that no strong epistasis and LD can emerge. The area of the landscape covered by the population is shown in green.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. (A) Russian population of S. commune, (B) European super-population of H. sapiens. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. Only SNPs with minor allele frequency > 0.05 are analysed. Filled areas indicate SE of LD calculated for each chromosome (for human) or scaffold (for S. commune) separately.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Solid lines indicate LD between pairs of SNPs located within the same exon of the gene; dashed lines correspond to pairs of SNPs located in different exons of the gene. (A) USA population of S. commune, (B) RUS population of S. commune. Only SNPs with minor allele frequency > 0.05 are analysed. Filled areas indicate SE of LD calculated for each scaffold separately.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** For each possible minor allele count and nucleotide distance, the number of corresponding pairs of nonsynonymous variants and LDnonsyn between them is calculated. Then, the same number of synonymous variants on the same nucleotide distance and with the same minor allele count is randomly chosen to calculate LDsyn. Subsampling is performed for 100 times. Filled areas show 95% intervals of LDsyn in the subsamples. (A) All SNPs, (B) SNPs with MAF >0.05.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each scaffold separately. (A, B) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (C, D) Pairs of SNPs split by MAF.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each chromosome separately. (A) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (B) Pairs of SNPs with MAF <0.05 (large scale). (C) Pairs of SNPs split by MAF.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** LD between nonsynonymous SNPs is shown in orange, and LD between synonymous SNPs is shown in blue. Filled areas indicate SE of LD calculated for each chromosome separately. (A) LD between all pairs of SNPs pooled together. Solid lines indicate LD between pairs of SNPs located within the same gene; dashed lines correspond to pairs of SNPs located in different genes. (B) Pairs of SNPs with MAF <0.05 (large scale). (C) Pairs of SNPs split by MAF.
 
 A much weaker excess of LDnonsyn over LDsyn for MAF >0.05 is also observed in the less genetically diverse D. melanogaster population (Figure 1B). In the still less polymorphic human populations, LDnonsyn is indistinguishable from LDsyn at the same distances (Figure 1C, Figure 1—figure supplement 1B).
 
@@ -44,7 +72,7 @@ The excess of LDnonsyn over LDsyn corresponds to the attraction between minor no
 
 For rare SNPs with MAF <0.05 taken alone, LDnonsyn is similar or lower to LDsyn for all three species, consistent with the effects of random drift, Hill-Robertson interference, and/or negative epistasis (Figure 1—figure supplements 4–6; Appendix 2). Decreased LD between negatively selected polymorphisms is expected due to Hill-Robertson interference between deleterious alleles (Hill and Robertson, 1966; Roze and Barton, 2006); this effect has been described previously for H. sapiens (Garcia and Lohmueller, 2021) and D. melanogaster (Sandler et al., 2021) and is observed in our simulations (Appendix 2—figure 4). In addition, LDnonsyn can be reduced by negative epistasis between deleterious alleles (Garcia and Lohmueller, 2021), similarly to the negative LD detected among loss-of-function polymorphisms in humans, flies and plants (Sandler et al., 2021; Sohail et al., 2017).
 
-## Elevated LD between interacting sites
+### Elevated LD between interacting sites
 
 Natural selection acting on physically interacting amino acids that are located close to each other within the three-dimensional structure of a protein is characterized by strong epistasis which leads to their coevolution at the level of between-species differences (Marks et al., 2011; Ovchinnikov et al., 2014; Sjodt et al., 2018). Genome-wide elevated LD between amino acid sites within structural domains was recently demonstrated in human populations (Ragsdale, 2021). Extraordinary diversity of S. commune makes it possible to observe an analogous phenomenon at the level of individual genes in within-population variation.
 
@@ -52,9 +80,21 @@ To test this, we aligned S. commune proteins to the PDB database of protein stru
 
 In both S. commune populations, pairs of nonsynonymous SNPs are in stronger LD when they are located at codons encoding physically close than distant amino acids (Figure 2A; permutation test p-value <1e-3). This is not the case for pairs of synonymous SNPs (Figure 2A; permutation test p-value = 0.58).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-v2.jpg)
+
+**Figure 2.:** (A) Within pairs of SNPs that correspond to pairs of amino acids that are colocalized within 10 Å in the protein structure, the LD is elevated between nonsynonymous, but not between synonymous, variants. Dashed lines show the average LD between colocalized sites. Permutations were performed by randomly sampling pairs of non-interacting SNPs while controlling for genetic distance between them, measured in amino acids; pairs of SNPs closer than 5 aa were excluded. (B–D) Examples of proteins with LD patterns matching their three-dimensional structures. Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Dashed lines in (c) structure show high LD between physically close SNPs from different segments of high LD. In these examples, LD is calculated in the Russian population of S. commune.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Grey regions indicate the exon structure of the genes. (A) cog1523 (5Y1B:A); (B) cog2779 (1SXJ:B); (C) cog5375 (1RGI:G); (D), cog5725 (1TA3:B); (E) cog18092 (4QJY:A); (F) cog7878 (4TYW:A). LD statistics and p-values for each gene are listed in Appendix 3—table 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Heatmaps show the physical distance between pairs of sites in the protein structure; only positions carrying biallelic SNPs are shown. Black dots correspond to pairs of sites with high LD (>0.9 quantile for the gene). Grey regions indicate the exon structure of the genes. (A) cog1536 (6AHR:E); (B) cog5725 (1TA3:B); (C) cog8253 (6F87:A); (D) cog9241 (1YCD:A). LD statistics and p-values for each gene are listed in Appendix 3—table 1.
+
 Moreover, it is possible to identify individual proteins with significant associations between the patterns of LD and of physical interactions between sites. At a 5% FDR, we found 22 such proteins in the USA population, and 87 proteins in the Russian population (Appendix 3—table 1); three examples are shown in Figure 2B–D (see also Figure 2—figure supplements 1 and 2). The alignment of ADAT2 protein contains two segments (teal and red in Figure 2B) characterized by high within-segment LD. The boundaries of these segments match those of structural units of the protein, but not the exon structure of its gene. In RadB protein, a similar pattern is observed, and LD is also elevated between pairs of SNPs from different segments on the interface of the corresponding structural units (Figure 2C). The alignment of 4CL protein can be naturally split into four high-LD segments, which also match its structure (Figure 2D).
 
-## Distinct regions of high LD
+### Distinct regions of high LD
 
 The magnitude of LD varies widely along the S. commune genome. Visual inspection of the data shows a salient pattern of regions of relatively low LD, alternating with mostly short regions of high LD (haploblocks, Figure 3—figure supplement 1). We calculated LD along the genome in a sliding window of 250 nucleotides and regarded as a haploblock any continuous genomic region with LD values that belong to the heavy tail of its distribution (see Materials and methods).
 
@@ -62,13 +102,43 @@ In the USA population, 8.4% of the genome is occupied by 5,316 such haploblocks,
 
 LD within a haploblock is usually so high that most genotypes can be attributed to one of just two distinct haplotypes, which carry different sets of alleles (Figure 3—figure supplement 3). This results in a bimodal distribution of the fraction of minor alleles in a genotype within a haploblock, because some genotypes belong to the major haplotype and, thus, carry only a small fraction of minor alleles, and other genotypes belong to the minor haplotype and, thus, possess a high fraction of minor alleles (Figure 3A). Polymorphic sites within haploblocks are characterized by higher MAF than that at sites that reside in non-haploblock regions (t-test p-value <2e-16), and in the USA population MAFs within a haploblock are positively correlated with its strength of LD (Figure 3B, Pearson correlation estimate = 0.07, p-value <2e-6).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-v2.jpg)
+
+**Figure 3.:** (A) Distribution of the fraction of polymorphic sites that carry minor alleles in a genotype within haploblocks. Black line shows the distribution of fraction of minor alleles in genotypes in non-haploblock regions. (B) Distributions of the average MAF within a haploblock for haploblocks with different average values of LD. The average MAF in non-haploblock regions is shown as a horizontal black line for comparison. (C) LD between nonsynonymous and synonymous SNPs within individual genes. Linear regression of LDnonsyn on LDnsyn is shown as the red line. To control for the gene length, only SNPs within 300 nucleotides from each other were analyzed. Genes with fewer than 100 such pairs of SNPs were excluded. (D,E) The positive correlation between pn/ps of the gene and its average LD (D) or the difference between LDnonsyn and LDsyn (E). Here, the data on the USA population of S. commune are shown; similar patterns in the Russian population are shown in Figure 3—figure supplement 4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The heatmaps show LD between polymorphic SNPs in the same genomic regions in the USA and RUS populations of S. commune. Only biallelic polymorphic sites with minor allele frequency >1 are shown, the number of such sites can differ between populations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Region 3097200–3097500 of scaffold 4 in the USA population of S. commune is shown. The top line shows the consensus sequence based on 34 genotypes; dot indicates match with the consensus.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Bimodal distribution of the fraction of polymorphic sites carrying minor alleles per genome within the haploblocks. Each count corresponds to a genotype within a haploblock. Black line shows the background distribution of minor alleles in the non-haploblock regions. (B) The increased average minor allele frequency within haploblocks as compared to the non-haploblock regions (dashed line, t-test p-value <2e-16). (C) LD between nonsynonymous and synonymous SNPs within single genes. Each dot represents an individual gene. Linear regression of LDnonsyn over LDnsyn is shown as the red line. To control for the gene length, only SNPs within 300 bp from each other were analyzed. Genes with fewer than 100 such pairs of SNPs were excluded. (D,E) The positive correlation between pn/ps of the gene and its average LD (Spearman correlation p-value = 4e-16) (D) or the difference between LDnonsyn and LDsyn (Spearman correlation p-value = 2e-5) (E).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) The USA population, (B) the RUS population. The genes are stratified by their average LD (the panels) and by the pn/ps. Only pairs of SNPs within 300 bp from each other are analyzed; genes with less than 100 such pairs of nonsynonymous or synonymous SNPs are excluded. Spearman correlation p-values are shown.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) The excess of LDnonsyn over LDsyn under different models of epistasis between two deleterious mutations A → a and B → b without balancing selection and in the presence of negative frequency-dependent selection (NFDS) or associate overdominance (AOD) acting in the linked sites. The height of columns shows fitness of the corresponding genotypes. (+) indicate simulations where the excess of LDnonsyn is reproduced. (B) The average LD in the simulations. (C) The difference between LDnonsyn and LDsyn in the simulations.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Red lines show the distribution of LD (r2) in windows of 250 nucleotides in two populations. Black line corresponds to the lognormal distribution with the same mean and variance. The windows with LD higher than the threshold value defined as the intersection point of the two lines (dashed) are attributed to haploblocks.
+
 There is no one-to-one correspondence between haploblocks and genes, which are, on average, longer. Still, different genes are covered by haploblocks to different extent, which leads to wide variation in the strength of LD and other characteristics among them. Genes with high LD, that is those that contain haploblocks, have the largest excess of LDnonsyn over LDsyn (Figure 3C). Positive correlation between the overall LD within the gene and the excess of LDnonsyn in this gene indicates that the attraction between nonsynonymous variants, driven by epistasis, is stronger if combinations of epistatic alleles are persisting within population for a long time, comprising haplotypes within a haploblock. Since both haplotypes tend to be common in a haploblock (Figure 3), this excess is much stronger for loci with MAF >0.05.
 
 LD between alleles of all kinds is higher within genes with large ratios of nonsynonymous and synonymous polymorphisms pn/ps (Spearman correlation p-value <2e-16, Figure 3D). Genes with elevated pn/ps also have a stronger excess of LDnonsyn over LDsyn (Figure 3E, Spearman correlation p-value = 4.4e-17). This excess is the strongest for genes with high overall LD, but its correlation with pn/ps holds even when the overall LD is controlled for (Figure 3—figure supplement 5).
 
 There can be multiple non-exclusive mechanisms by which epistasis could lead to the observed positive associations between pn/ps, overall LD, and excess LDnonsyn. First, genes under weaker selection, and therefore higher pn/ps, could be characterized by a higher overall amount and/or strength of epistasis. Second, epistasis, as estimated by excess LDnonsyn, can contribute to increased pn/ps by allowing nonsynonymous polymorphisms to segregate in the population when maintained in coadapted combinations, therefore weakening negative selection against them. Third, epistasis can be more potent in genes with lower overall recombination rate due to competition between epistasis and recombination: recombination breaks positively interacting combinations of alleles, disrupting linkage between them and interfering with epistasis. Fourth, existence of cosegregating combinations of mutually beneficial alleles could select for reduced local recombination rate.
 
-## Excess of LDnonsyn requires stable polymorphism
+### Excess of LDnonsyn requires stable polymorphism
 
 Simulations show that positive epistasis alone cannot lead to the observed large excess LDnonsyn over LDsyn, for which two extra conditions need to be satisfied. The general reason for this is simple: in order for a substantial LD between not-too-rare alleles to appear, these alleles must persist in the population for a long enough time.
 
@@ -78,13 +148,25 @@ Second, there must be some kind of balancing selection that specifically works t
 
 Balancing selection is also neccessary for the presence of haploblocks, because a pair of divergent haplotypes can evolve in a panmictic population only if they coexist for a considerable time. A single locus under NFDS is enough to maintain a haploblock comprising the region of the genome around it. By contrast, if variation is maintained by AOD, it is more likely that selection against recessive mutations acts at a number of tightly linked loci (Gilbert et al., 2020). Long coexistence of diverged haplotypes that comprise a haploblock enables accumulation of co-adapted combinations of nonsynonymous alleles within them. Thus, it is not surprising that a pronounced excess of LDnonsyn over LDsyn in S. commune is observed primarily within haploblocks and that this excess is higher in genes with higher pn/ps.
 
-## Correlated LDs in two populations
+### Correlated LDs in two populations
 
 Although a high excess of LDnonsyn is observed only within haploblocks, a signature of epistasis can also be seen outside of them in the form of a correlation between LDs in the two populations. This correlation can be high even if LDs by themselves are low.
 
 The USA and the Russian populations share a large proportion of their SNPs. Given the high divergence between the two populations, few such shared SNPs are expected to have common origin in the ancestral population, and instead they are likely to have arisen from recurrent mutation. Since the haploblocks show little correlation between the two populations, we assume that they arose after their divergence. The high prevalence of coincident SNPs is not surprising because SNPs comprise 0.28 and 0.13 of all the aligned nucleotide sites in the USA and Russian populations, respectively (Baranova et al., 2015, Appendix 3—figure 2). We identified pairs of shared biallelic SNPs located within 2 kb from one another and calculated the LD between them in both populations. To avoid the effects of strong within-population linkage and the occasional co-ocсurrence of haploblocks between populations, we excluded SNPs located within haploblocks or within genes under high LD (>0.8 LD quantile for the corresponding population) in either population.
 
 The values of LD in the two populations are strongly correlated only for pairs of nonsynonymous SNPs located within the same gene, and only if both populations carry the same pairs of amino acids in the same sites (Figure 4). The correlation of LDs is the strongest if shared SNPs carry the same pairs of nucleotides, but is also observed if they encode the same amino acids by different nucleotides (Figure 4—figure supplement 1). The contrast between correlations within pairs of sites that reside in the same vs. different genes and the correlation of LDs observed for different nucleotides encoding the same amino acid cannot be explained by inheritance of LD from the common ancestral population. Moreover, synonymous SNPs are expected to be on average older than nonsynonymous ones, so that this mechanism should lead to a higher correlation of LDs for pairs of synonymous mutations. Thus, the observed pattern indicates that epistatic selection is shared between the two populations.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-v2.jpg)
+
+**Figure 4.:** (A) Pairs of SNPs with the same alleles in both sites, (B) pairs of SNPs differing by at least one allele. Asterisks indicate Spearman correlation p-values <0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) All pairs of SNPs pooled together. Pair of SNPs is considered to carry different alleles if at least one allele differs in at least one site. (B) Pairs of SNPs stratified by distance between them. Asterisks indicate Spearman correlation p-values <0.01.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76073/elife-76073-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Pairs of SNPs with the same major and minor alleles in both sites, (B) pairs of SNPs differing by at least one allele. Asterisks indicate Spearman correlation p-values <0.001.
 
 The correlation of LDs between SNPs located within haploblocks in both populations is high regardless of whether they reside in the same or different genes, apparently because of occasional coincidence of haploblocks between populations (Figure 4—figure supplement 2).
 
@@ -104,7 +186,7 @@ In a vast majority of species, π is a small parameter <<1. This imposes a sever
 
 ## Materials and methods
 
-## S. commune sampling, sequencing, and assembly
+### S. commune sampling, sequencing, and assembly
 
 Haploid cultures of 24 isolates, each originated from a single haplospore, were obtained from fruit bodies collected in Ann Arbor, MI, USA by T. James and A. Kondrashov and in Moscow and Kostroma regions, Russia by A. Kondrashov, A. Baykalova and T. Neretina in 2009–2015. Specimen vouchers are stored in the White Sea Branch of Zoological Museum of Moscow State University (WS). Herbarium numbers are listed in Appendix 3—table 2. To obtain isolates, wild fruit bodies were hung on the top lid of a 10 cm petri dish with agar medium. Petri dish was set at an angle of 60–70 degrees to the horizontal surface for 32 hr. A germinated spore was excised together with a square-shaped fragment (approximately 0.7 × 0.7 mm) of the medium from the maximally rarefied area of the obtained spore print under a stereomicroscope with 100 x magnification. The obtained isolates were cultured in Petri dishes on 2% malt extract agar for a week. For storage, cultures were subcultured into 1.5 ml microcentrifuge tubes with 2% malt extract agar. To obtain sufficient biomass for DNA isolation, isolates were cultured in 20 ml 0.5% malt extract liquid medium in 50 ml microcentrifuge tubes in a horizontal position on a shaker at 100 rpm in daylight for 5–10 days. The tubes with the cultures were then centrifuged at 4000 rpm, and the supernatant was decanted. The resulting mycelium was lyophilized. DNA was extracted using Diamond DNA kit according to the manufacturer’s recommendations.
 
@@ -116,23 +198,23 @@ The phylogeny of the sequenced genomes was reconstructed with RAxML (Stamatakis,
 
 Genome sequence data are deposited at DDBJ/ENA/GenBank under accession numbers JAGVRL000000000-JAGVSI000000000, BioProject PRJNA720428. Sequencing data are deposited at SRA with accession numbers SRR14467839-SRR14467862.
 
-## Data on H. sapiens and D. melanogaster populations
+### Data on H. sapiens and D. melanogaster populations
 
 We used polymorphism data from 347 phased diploid human genomes from African and 301 genomes from European super-populations sequenced as part of the 1000 Genomes project (1,000 1000 Genomes Project Consortium et al., 2015). If several individuals from the same family were sequenced, we included only one of them. As a D. melanogaster dataset, we used 197 haploid genomes from the Zambia population (Lack et al., 2015). Only autosomes were analyzed in both datasets.
 
-## Estimation of LD
+### Estimation of LD
 
 As a measure of linkage disequilibrium between two biallelic sites, we used r2, calculated as follows:
 
-r2= (p(AB) - p(A)p(B))2p(A)(1-p(A)) p(B)(1-p(B)), where p(A) and p(B) are the minor allele frequencies at these sites, and p(AB) is the frequency of the genotype that carries minor alleles at both sites.
+$r^{2}= \frac{(p(AB) - p(A)p(B))^{2}}{p(A)(1-p(A)) p(B)(1-p(B))}$, where p(A) and p(B) are the minor allele frequencies at these sites, and p(AB) is the frequency of the genotype that carries minor alleles at both sites.
 
 Singletons (sites with minor allele present only in one genotype) were excluded from the analysis if not stated otherwise.
 
-## Haploblocks annotation
+### Haploblocks annotation
 
 In order to annotate the haploblocks, we calculated LD along the S. commune genome in a sliding window of 250 nucleotides with a step of 20 nucleotides (only non-singleton SNPs are analyzed; the windows with less than 10 SNPs were excluded). Any continuous sequence of overlapping windows with r2 larger than the threshold value was merged together in a haploblock. The LD threshold value was defined independently for each S. commune population as the heavy tail of the within-window LD distribution, as compared with the lognormal distribution with the same mean and variance as in the data (Figure 3—figure supplement 7).
 
-## Estimation of LD between physically interacting amino acid sites
+### Estimation of LD between physically interacting amino acid sites
 
 Of 16,319 annotated protein-coding genes of S. commune (Ohm et al., 2010) 9,941 were found in all 55 aligned genomes. We blasted the protein sequences of these orthologous groups against the PDB database of protein structures. About 52% of them (5,188) had a match (e-value threshold = 1e-5) amongst the proteins with the known structure. We realigned the sequences of S. commune protein and the matching PDB protein with clustal and calculated within-population LD and physical distance (Å) for each pair of aligned positions. A pair of amino acid sites was considered physically adjacent if they were located within 10 Å from each other.
 
@@ -140,7 +222,7 @@ To compare LD between pairs of physically close and distant sites, we used the c
 
 To examine LD patterns within individual protein structures, we calculated contingency tables of pairs of SNPs being located in codons encoding physically close amino acids and having high LD (no less than 90% quantile for a given gene). Pairs of amino acid sites located closer than 30 aa or more distant than 100 aa from each other were excluded; genes with less than five pairs of physically close sites under high or low LD were also excluded. From these contingency tables, we calculated the odds ratio (OR) and chi-square test p-value for each gene. p-values were adjusted using BH correction. We identified 22 genes with pairs of adjacent sites having significantly higher LD in the USA population (out of 1286 eligible genes in total), and 87 genes in the Russian population (out of 967) under 5% FDR (Appendix 3—table 1). Examples of such genes are shown in Figure 2 and Figure 2—figure supplements 1 and 2.
 
-## Simulations of epistasis
+### Simulations of epistasis
 
 To simulate evolution of populations with or without epistasis and balancing selection (Figure 3—figure supplement 6), we used an individual-based model implemented by SLiM (Haller and Messer, 2019). Simulations were performed with diploid population size N=1000 and recombination rate 0. To achieve the level of genetic diversity π similar to S. commune, mutation rate μ was scaled as μ=π/2N=5e-5. The length of the simulated sequence was 100 nt. Each simulation started with a monomorphic population and proceeds for 100 N generations. For calculations of synonymous and nonsynonymous LD, random 100 haploid genotypes were sampled from the population. Only SNPs with minor allele frequency >5% in the sample were analyzed.
 

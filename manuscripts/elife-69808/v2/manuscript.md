@@ -19,7 +19,7 @@
 
 ## Abstract
 
-The replication of Plasmodium falciparum parasites within red blood cells (RBCs) causes severe disease in humans, especially in Africa. Deleterious alleles like hemoglobin S are well-known to confer strong resistance to malaria, but the effects of common RBC variation are largely undetermined. Here, we collected fresh blood samples from 121 healthy donors, most with African ancestry, and performed exome sequencing, detailed RBC phenotyping, and parasite fitness assays. Over one-third of healthy donors unknowingly carried alleles for G6PD deficiency or hemoglobinopathies, which were associated with characteristic RBC phenotypes. Among non-carriers alone, variation in RBC hydration, membrane deformability, and volume was strongly associated with P. falciparum growth rate. Common genetic variants in PIEZO1 , SPTA1/SPTB , and several P. falciparum invasion receptors were also associated with parasite growth rate. Interestingly, we observed little or negative evidence for divergent selection on non-pathogenic RBC variation between Africans and Europeans. These findings suggest a model in which globally widespread variation in a moderate number of genes and phenotypes modulates P. falciparum fitness in RBCs.
+The replication of Plasmodium falciparum parasites within red blood cells (RBCs) causes severe disease in humans, especially in Africa. Deleterious alleles like hemoglobin S are well-known to confer strong resistance to malaria, but the effects of common RBC variation are largely undetermined. Here, we collected fresh blood samples from 121 healthy donors, most with African ancestry, and performed exome sequencing, detailed RBC phenotyping, and parasite fitness assays. Over one-third of healthy donors unknowingly carried alleles for G6PD deficiency or hemoglobinopathies, which were associated with characteristic RBC phenotypes. Among non-carriers alone, variation in RBC hydration, membrane deformability, and volume was strongly associated with P. falciparum growth rate. Common genetic variants in PIEZO1, SPTA1/SPTB, and several P. falciparum invasion receptors were also associated with parasite growth rate. Interestingly, we observed little or negative evidence for divergent selection on non-pathogenic RBC variation between Africans and Europeans. These findings suggest a model in which globally widespread variation in a moderate number of genes and phenotypes modulates P. falciparum fitness in RBCs.
 
 ## Introduction
 
@@ -33,41 +33,113 @@ Here, we approach these questions by performing exome sequencing and extensive R
 
 ## Results
 
-## Many healthy blood donors with African ancestry carry alleles for RBC disease
+### Many healthy blood donors with African ancestry carry alleles for RBC disease
 
 We collected blood samples from 121 donors with no known history of blood disorders, most of whom self-identified as having recent African ancestry (Figure 1A). As a positive control, we also sampled a patient with hereditary elliptocytosis (HE), a polygenic condition characterized by extremely fragile RBC membranes that strongly inhibit P. falciparum growth (Schulman et al., 1990; Facer, 1995; Dhermy et al., 2007; Gallagher, 2013). We performed whole-exome sequencing (Figure 1—source data 1), both to check for the presence of known RBC disease alleles and to confirm the population genetic ancestry of our donors. A principal component analysis of more than 35,000 exomic single-nucleotide polymorphisms (SNPs) showed that most donors fell along a continuum from African to European ancestry, as defined by data from the 1000 Genomes Project (Figure 1A). Pairwise kinship coefficients demonstrated that all donors were unrelated, apart from a six-member family with unique ancestry (Figure 1A, light borders). We found that 16% of the healthy donors carried pathogenic hemoglobin alleles (Figure 1B), including 5 heterozygotes for hemoglobin S (HbAS), 4 heterozygotes for hemoglobin C (HbAC), and 11 individuals with one or two copies of an HBA2 deletion causing α-thalassemia (Galanello and Cao, 2011). We also scored eight polymorphisms in G6PD that have been functionally associated with various degrees of G6PD deficiency (Yoshida et al., 1971; Clarke et al., 2017) and found that 32% of the study population carried at least one, including 12 of the 20 donors with hemoglobinopathies. Among those with wild-type hemoglobin, we identified 1 individual with polymorphisms associated with severe G6PD deficiency (>60% loss of function) and 23 with polymorphisms associated with mild to medium deficiency (<42% loss of function). We detected no alleles linked to other monogenic RBC disorders, including β-thalassemia or xerocytosis (Cao and Galanello, 2010; Glogowska et al., 2017). We therefore classified the remaining 68 unrelated donors as ‘non-carriers’ of known disease alleles for the purposes of this work.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig1-v2.jpg)
 
-**Figure 1.:** (A) PCA of genetic variation across 35,759 unlinked exome SNPs. Donors from this study are plotted on coordinate space derived from 1000 Genomes reference populations. Points with white borders represent six related individuals, five of whom were excluded from the study. All exome variants passing quality filters are available in Figure 1—source data 1. (B) Over a third of donors carried alleles for RBC disorders linked to Plasmodium falciparum resistance. Individuals with >1 disease allele were classified by their most severe condition. non-carrier: Donor without any of the following alleles or conditions. G6PD−low: Mild to medium G6PD deficiency (<42% loss of function). G6PD−high: Severe G6PD deficiency (>60% loss of function). −α/αα: heterozygous HBA2 deletion, or alpha thalassemia minima. −α/−α: homozygous HBA2 deletion, or α-thalassemia trait. HbAC: heterozygous HBB:E7K, or hemoglobin C trait. HbAS: heterozygous HBB:E7V, or sickle cell trait. HE: hereditary elliptocytosis. (C) Two components of P. falciparum fitness were measured with flow cytometry at three timepoints. Invasion is the change in parasitemia as schizonts egress from maintenance RBCs (green) and invade fresh acceptor RBCs from the blood donors (purple). Growth is the multiplication rate from a complete parasite cycle in the fresh acceptor RBCs. (D) RBC phenotypes were measured using complete blood counts with RBC indices, osmotic fragility tests, and ektacytometry on fresh samples. This figure was partially created with Biorender.com. RBC, red blood cell; SNP, single-nucleotide polymorphism.Figure 1—source data 1.
+**Figure 1.:** (A) PCA of genetic variation across 35,759 unlinked exome SNPs. Donors from this study are plotted on coordinate space derived from 1000 Genomes reference populations. Points with white borders represent six related individuals, five of whom were excluded from the study. All exome variants passing quality filters are available in Figure 1—source data 1. (B) Over a third of donors carried alleles for RBC disorders linked to Plasmodium falciparum resistance. Individuals with >1 disease allele were classified by their most severe condition. non-carrier: Donor without any of the following alleles or conditions. G6PD−low: Mild to medium G6PD deficiency (<42% loss of function). G6PD−high: Severe G6PD deficiency (>60% loss of function). −α/αα: heterozygous HBA2 deletion, or alpha thalassemia minima. −α/−α: homozygous HBA2 deletion, or α-thalassemia trait. HbAC: heterozygous HBB:E7K, or hemoglobin C trait. HbAS: heterozygous HBB:E7V, or sickle cell trait. HE: hereditary elliptocytosis. (C) Two components of P. falciparum fitness were measured with flow cytometry at three timepoints. Invasion is the change in parasitemia as schizonts egress from maintenance RBCs (green) and invade fresh acceptor RBCs from the blood donors (purple). Growth is the multiplication rate from a complete parasite cycle in the fresh acceptor RBCs. (D) RBC phenotypes were measured using complete blood counts with RBC indices, osmotic fragility tests, and ektacytometry on fresh samples. This figure was partially created with Biorender.com. RBC, red blood cell; SNP, single-nucleotide polymorphism.
 
-## P. falciparum replication rates vary widely among non-carrier RBCs
+### P. falciparum replication rates vary widely among non-carrier RBCs
 
 To determine the variation in P. falciparum fitness among samples with different genotypes, we performed invasion and growth assays with two parasite strains. The genome reference strain 3D7, which was originally isolated from a European, has been continuously cultured in academic labs for at least 40 years (Walliker et al., 1987; Moser, 2020). Th.026.09 is a drug-resistant strain collected from Senegal in 2009 that is minimally adapted to lab culture (Daniels et al., 2012). These divergent strains were selected in an attempt to balance biological realism with reliable in vitro data.
 
 We observed a wide range of P. falciparum growth rates among RBC samples, especially among non-carriers that lacked known disease alleles (Figure 2A–C). Each strain’s growth rate is defined here as parasite multiplication over a full 48-hr cycle in donor RBCs (Figure 1C), with the mean value for non-carriers set to 100% after normalization. Briefly, we used a repeated control RBC sample (Figure 2, gray points) and other batch-specific factors to correct for variation in parasite growth across multiple experiments (Figure 2—figure supplement 1). Among non-carriers, growth rates ranged from 64% to 136% for 3D7 (SD=17.7%) and 76% to 128% for Th.026.09 (SD=10.6%) (Figure 2A–B). Per-sample growth rates were strongly correlated between the two strains (Figure 2C, R2=0.69, p<3×10–16) and positively correlated when measured in different weeks (p=0.35, Figure 2—figure supplement 2), demonstrating that these data capture meaningful variation among donor RBCs. Furthermore, as expected (Friedman, 1978; Ifediba et al., 1985; Greene, 1993; Facer, 1995), we detected reductions in mean growth rate for both strains in RBCs carrying known disease alleles. These included individuals with α-thalassemia trait (3D7 p=0.027; Th.026.09 p=0.077), HbAS (3D7 p=1.05×10–7; Th.026.09 p=1.2×10–4), and the single carriers of HE and severe G6PD deficiency. Notably, the wide distribution of growth rates for non-carrier RBCs had considerable overlap with the growth rates in carrier RBCs. Only the HbAS and HE samples fell entirely outside the non-carrier range. This observation implies the existence of previously unknown RBC variation that impacts P. falciparum growth, which may have cumulative effect sizes comparable to known disease alleles.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Growth of P. falciparum lab strain 3D7 (A) or clinical isolate Th.026.09 (B) over a full 48-hr cycle in donor RBCs (see Figure 1C). Growth is presented relative to the average non-carrier rate after correction for batch effects (Figure 2—figure supplement 1; see Materials and methods), including comparison to a repeated RBC control shown in gray. Each carrier group was compared to unrelated non-carriers using Student’s t-test, except in cases where N=1, where asterisks instead indicate the percentile of the non-carrier distribution. Repeated measurements of 11 donors are shown in Figure 2—figure supplement 2. (C) Per-sample growth rates are correlated between the two P. falciparum strains. (D–F) As in (A–C) but for P. falciparum invasion efficiency (see Figure 1C). R2 and p-values are derived from OLS regression. *p<0.1; **p<0.05; ***p<0.01. RBC, red blood cell.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** PMR: parasite multiplication rate.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Twelve participants (including the weekly control, 1111) donated blood in multiple weeks for independent experiments. Repeated donors were non-carriers except 6443, who carried the HbAC allele; and 7160, 8597, and 4278, who carried alleles for mild G6PD deficiency. Growth and invasion data are shown after standardization and batch correction, as described in Materials and methods. Pearson’s rho is calculated between the first and second assays and can range from –1 to 1.
+
 We observed a similarly wide range in the efficiency of P. falciparum invasion into donor RBCs (Figure 2D–F). Invasion is defined here as the fold-change in parasitemia over the first 24 hours of the assay, when parasites previously maintained in standard culture conditions egressed and invaded new donor RBCs (Figure 1C). Among non-carriers, invasion rates ranged from 70% to 143% for 3D7 (SD=14.9%) and 41% to 193% for Th.026.09 (SD=29.1%) (Figure 2D–E). Compared to growth rates, no disease alleles conferred protection against invasion that was extreme enough to fall outside the broad non-carrier range. HbAC was associated with an 11% decrease in 3D7 invasion (p=0.008), while α-thalassemia trait was associated with a 22% increase in Th.026.09 invasion (p=0.091). Only HE had a strong effect on the invasion efficiency of both strains. The correlation of invasion efficiencies between strains was weaker than for growth (Figure 2F, R2=0.10, p=6×10–4), potentially reflecting strain-specific differences in the pathways used for invasion (Wright and Rayner, 2014). However, we also observed greater batch effects (Figure 2—figure supplement 1) and greater variability between repeated samples (Figure 2—figure supplement 2) for invasion than for growth, suggesting that invasion is influenced by greater experimental noise.
 
-## RBC phenotypes vary widely among non-carriers
+### RBC phenotypes vary widely among non-carriers
 
 To assess phenotypic variation across donor RBCs, we measured 22 common indices of RBC size and hemoglobin content from complete blood counts using an ADVIA hematology analyzer (Figure 3A–D; Figure 3—figure supplements 1–2). Mean cellular volume (MCV) and hemoglobin mass (MCH) are closely related traits, which can be represented together as cellular hemoglobin concentration (CHCM) or the fraction of RBCs with ‘normal’ hemoglobin and volume indices (M5). As expected, each known disease allele was associated with a distinct set of RBC abnormalities (Figure 3—figure supplement 3). These included elevated CHCM for HbAC (p=0.033), consistent with dehydration, and very low MCV (p=6.8×10–5) and MCH (p=2.5×10–7) for α-thalassemia trait (−α/−α), consistent with microcytic anemia (Galanello and Cao, 2011). RBCs from the HE patient also had very low MCV and MCH, reflecting the membrane breakage and volume loss characteristic of this disease. For all these phenotypic measures, we also observed broad distributions in non-carriers that overlapped the distributions of most carriers (Figure 3A–D; Figure 3—figure supplements 1–2). Notably, the breadth of the non-carrier distribution for each phenotype was large (e.g., 24 fl range for MCV) compared to the average difference between Africans and Europeans (e.g., 3–5 fl; Beutler and West, 2005; Lo et al., 2011). This wide diversity and substantial overlap between non-carrier and carrier traits suggest that healthy RBCs exist on the same phenotypic continuum as RBCs carrying known disease alleles.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Red cell indices were measured by an ADVIA hematology analyzer. Additional indices are shown in Figure 3—figure supplement 1. MCV: mean corpuscular (RBC) volume; MCH: mean cellular hemoglobin; CHCM: cellular hemoglobin concentration; M5: fraction of RBCs with normal volume and normal hemoglobin (see Figure 3—figure supplement 2). Statistical tests as in Figure 2. (E, F) Osmotic fragility curves. Fragility is defined as the NaCl concentration at which 50% of RBCs lyse (see Figure 3—figure supplement 4). (G, H) Ektacytometry curves characterize RBC deformability and dehydration under salt stress (Figure 3—figure supplement 5). A heatmap of all phenotypes by carrier status is available in Figure 3—figure supplement 3. RBC, red blood cell.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Donor classifications and statistical tests as in Figure 3. HCT, hematocrit; HDW, hemoglobin distribution width; HGB, hemoglobin; MCHC, mean corpuscular hemoglobin concentration; MPV, mean platelet volume; PLT, platelet count; RBC, red blood cell; RDW, red cell distribution width, .
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Donor classifications and statistical tests as in Figure 3. RBC, red blood cell.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Phenotypes were scaled and centered at 0 with the preProcess function from the caret package in R using all sample data (i.e., not limited to non-carriers). The mean value for each carrier group is shown. RBC, red blood cell.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Donor classifications and statistical tests as in Figure 3.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Donor classifications and statistical tests as in Figure 3.
+
 We observed similar patterns of variation in RBC membrane fragility (Figure 3E–F; Figure 3—figure supplement 4) and membrane deformability (Figure 3G–H; Figure 3—figure supplement 5), as measured with osmotic fragility tests and osmotic gradient ektacytometry. Both sets of curves represent RBC tolerance to osmotic stress, which can result in swelling and lysis (fragility, Figure 3E–F) or dehydration and decreased deformability (Ohyper, Figure 3G–H). Specific hemoglobinopathies were associated with moderate to strong reductions in fragility, deformability, and/or resistance to loss of deformability when dehydrated (Figure 3—figure supplements 3–5). HE cells were both extremely fragile and extremely non-deformable. In non-carriers, the distributions for all membrane measures were wide, continuous, and overlapped the distribution of most carriers (Figure 3E–H). Overall, these data demonstrate that multiple phenotypic alterations associated with RBC disease alleles are also present in non-carrier RBCs.
 
-## Non-carrier variation in RBC phenotypes predicts P. falciparum replication rate
+### Non-carrier variation in RBC phenotypes predicts P. falciparum replication rate
 
 To identify sets of phenotypes associated with P. falciparum replication in non-carrier RBCs, we used a machine learning method called LASSO (Least Absolute Shrinkage and Selection Operator) that performs regularization and variable selection (Tibshirani, 1994). Briefly, LASSO shrinks the regression coefficients for some possible predictors to zero to obtain a subset of predictors (in this case, phenotypes) that minimizes prediction error. This method is well-suited for data sets where predictors are correlated, as are RBC size, hemoglobin, and membrane dynamics; and for cases where the number of possible predictors is large compared to the number of measurements. To validate RBC phenotypes associated with P. falciparum replication by LASSO, we performed k-folds cross-validation (CV) on train and test sets derived from 10,000 divisions of the non-carrier data in 10-folds (see Materials and methods). To further control for overfitting, we also applied the same procedure to 1000 random permutations of the parasite data. Finally, for each trait selected by LASSO in at least 40% of training sets, we applied univariate OLS regression to estimate the sign of its effect on all measured components of parasite fitness. The highest-confidence results from this analysis are summarized in Figure 4A, with complete details provided in Figure 4—source data 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig4-v2.jpg)
+
+**Figure 4.:** (A) Phenotypes selected by LASSO in at least 40% of train data sets (blue shading; see Materials and methods) in at least one of four models of parasite replication (columns). Each model was trained on ~90% of the data (B, C) and tested on the remaining 10% (B, C). (+/−) shows the direction of effect if the phenotype was significantly correlated (p<0.1) with the parasite fitness component in a separate, univariate linear model (Figure 4—figure supplement 1; ). MCV: mean RBC volume (fl).MCH: mean corpuscular hemoglobin (pg/RBC). O50: Osmotic fragility (mM NaCl; see Figure 3—figure supplement 4). DImax: Maximum membrane deformability (arbitrary units; see Figure 3—figure supplement 5). Ohyper: Tendency to resist osmotic dehydration and loss of deformability. M4: fraction of RBCs with normal volume and low hemoglobin (see Figure 3—figure supplement 2). M6: fraction of RBCs with normal volume and high hemoglobin. M8: fraction of RBCs with low volume and normal hemoglobin. CHCM: cellular hemoglobin concentration mean (g/dl). MCHC: mean corpuscular hemoglobin concentration (g/dl). PLT: platelet number (×103/µl). MPV: mean platelet volume (fl). RBC: red cell number (×106/µl). HCT: hematocrit, or the fraction of blood volume composed of RBCs. RDW: red cell distribution width (%). (B, C) Variance in parasite fitness explained by RBC phenotypes in LASSO models. Dashed lines indicate average R2 for the measured test data. Each histogram shows the same procedure on 1000 permutations of the measured test data. RBC, red blood cell.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phenotypes from Figure 4A are shown if at least one OLS test had p<0.1. Lines of best fit are shown if p<0.1. All phenotypes except Fragility and Donor Age are clustered around the median as a result of normalization, which equalized the median value across weeks (see Materials and methods). Pink: 3D7; Orange: Th.026.09. RBC, red blood cell.
 
 P. falciparum fitness in non-carrier RBCs was strongly predicted by variation in traits related to volume, hemoglobin, deformability, and dehydration (Figure 4A). Among 25 tested phenotypes, the most strongly predictive was the ektacytometry parameter Ohyper, which represents a cell’s tendency to retain deformability in the face of dehydration (Figure 3—figure supplement 4). In univariate models, non-carrier RBCs with the largest Ohyper values—that is, those that retained more deformability when dehydrated—supported 22–46% faster parasite growth (3D7 p=0.003, Th.026.09 p=0.007) and 31–83% more effective invasion (3D7 p=0.008, Th.026.09 p=0.005) than RBCs with the smallest Ohyper values, which quickly lost deformability. Consistent with this result, P. falciparum replication was inhibited in RBCs that were more dehydrated at baseline (e.g., with higher CHCM; 3D7 invasion p=0.006, 3D7 growth p=0.024, Th.026.09 invasion p=0.004, Th.026.09 growth p=0.26). Parasites also grew faster in RBCs with larger mean volume (MCV; 3D7 p=0.001, Th.026.09 p=0.0009); a greater mass of hemoglobin per cell (MCH; 3D7 p=0.071, Th.026.09 p=0.016); and more deformable membranes (DImax; 3D7 p=0.0005, Th.026.09 p=0.008). 3D7 growth was also reduced in RBCs with more fragile membranes (O50; p=0.005). Additional phenotypes related to platelets and RBC density were selected for some models, but the direction of their effects was unclear when they were considered individually (Figure 4A, Figure 4—source data 1). These results indicate that common, non-pathogenic variation in RBC size, membrane dynamics, and other correlated traits have meaningful effects on P. falciparum replication rate in RBCs.
 
 Taken together, the non-carrier phenotypes selected by LASSO from training data (N~61, Figure 4A) explained 3–9% of the variation in parasite growth in separate test data (N~7, Figure 4B; 3D7 p=0.008 and RMSE=18.0%; Th.026.09 p=0.079 and RMSE=10.8%). This fraction was significantly greater than expected from random permutations, which were centered on R2=0 in the test data (Figure 4B). Notably, prediction error was greater for individuals with parasite growth values farther away from the mean. In contrast, for invasion, RBC phenotypes did not explain more variation in the test data than expected from permutations (Figure 4C; 3D7 p=0.79 and RMSE=15.0%; Th.026.09 p=0.53 and RMSE=29.5%). All phenotype models were less predictive for the clinical isolate Th.026.09 than the lab strain 3D7, perhaps because clinical isolates are less adapted to laboratory conditions. Overall, these results demonstrate that multiple, variable phenotypes impact P. falciparum susceptibility in healthy RBCs. Non-carrier cells that are less hospitable to parasites share specific traits with RBCs that carry disease alleles, including smaller size, decreased deformability, and an increased tendency to lose deformability when dehydrating.
 
-## Common RBC alleles predict P. falciparum replication in non-carriers
+### Common RBC alleles predict P. falciparum replication in non-carriers
 
 Next, we tested whether non-carrier genotypes derived from exome sequencing could improve our predictions of P. falciparum replication rate. With a sample of 68 unrelated non-carriers, we lacked the power to perform the many thousands of tests that are typical in large genetic association studies (Fadista et al., 2016). Instead, our study design focused on 23 RBC proteins previously associated with malaria (Figure 5—source data 1), which we hypothesized are enriched for common variants impacting P. falciparum fitness, as compared to random control sets of RBC proteins. We used the same LASSO procedure described above to test 106 unlinked genetic variants (pairwise r2<0.1) in these 23 RBC proteins, along with RBC phenotypes, for association with P. falciparum fitness in non-carriers. To test for the effects of population structure, we also included the top 10 principal components (PCs) from 1000 Genomes as possible predictors. Notably, PC1 is equivalent to the exome-wide fraction of African ancestry, as determined by ADMIXTURE with K=4 from the 1000 Genomes reference populations (see Materials and methods). We again compared these results to permuted data, as well as to 1,000 sets of 23 genes drawn at random from the RBC proteome (Figure 5—source data 2).
 
 Taken together, genotypes and phenotypes selected by LASSO explained 7–15% of the variation in parasite growth rate in the test data (Figure 5B; 3D7 p=0.012 and RMSE=16.5%; Th.026.09 p=0.063 and RMSE=10.6%). Prediction error was greater for donors with parasite values farther away from the mean, though this trend was weaker than for phenotype-only models. The variance explained by models using real genotype and phenotype data was significantly larger than expected from permutation (Figure 5—figure supplement 1A) and random sets of RBC genes (Figure 5B), suggesting that the 23 malaria-related genes contain variation that influences P. falciparum development.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-v2.jpg)
+
+**Figure 5.:** (A) Variants in 23 malaria-related genes (Figure 5—source data 1) and genetic PCs selected by LASSO in at least >40% of train data sets. Each model was trained on ~90% of the measured data (B C) and tested on the remaining 10% (B C). The following genes had no associated variants in non-carriers: CD55, EPB41, FPN, G6PD, GYPA, GYPE, HBA1/2, HBB, and HP. *The only significant PC association was driven by a single East Asian donor (Figure 5—figure supplement 5). (B, C) Variance in parasite fitness explained by LASSO models including 23 malaria-related genes, the top 10 PCs, and RBC phenotypes. Dashed lines indicate average R2 for models using the measured test data. Each histogram shows R2 for models including variants from 23 random genes in the RBC proteome (Figure 5—source data 2) instead of malaria-related genes. All predictors with non-zero LASSO support are shown in Figure 5—source data 3. Additional histograms from permuted data are shown in Figure 5—figure supplement 1. The variance explained by variants undiscovered by previous GWAS is shown in Figure 5—figure supplement 4. GWAS, genome-wide association studies; PC, principal component; RBC, red blood cell.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Each model was trained on ~90% of the measured data and tested on the remaining 10%. Dashed lines indicate average R2 for the measured test data. Each histogram shows the same procedure on 1,000 permutations of the measured test data.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Each cell shows the p-value from a linear model between the genetic variant and trait in non-carriers. RBC, red blood cell.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Homozygotes for the minor allele were ignored when estimating effect sizes for these alleles with OLS for Figure 6E. Effect size estimates that include all homozygotes are shown in Figure 5—source data 3.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** ‘Variance explained’ is the R2 of a linear model in non-carriers (excluding using only these variants as predictors. Details on the variants and previous GWAS traits are provided in Figure 5—source data 3). GWAS, genome-wide association studies.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** See also Figure 1A.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Only PCs that distinguish the family from other non-carriers are shown. P-values are derived from t-tests. PC, principal component.
 
 Nearly all of the 32 polymorphisms selected by LASSO in growth models occurred in (1) ion channel proteins, which regulate RBC hydration; (2) components of the flexible RBC membrane backbone; or (3) red cell plasma membrane proteins, including known invasion receptors (Figure 5A). In the first category, the highly polymorphic ion channel PIEZO1 contained seven polymorphisms associated with small (<3.7%) to moderate (31%) reductions of P. falciparum growth rate. In practice, the smallest effect size that could be reliably determined for an allele with our data was ±3.7% (Figure 5—source data 3). The microsatellite variant PIEZO1-E756del, which has been a focus of several recent studies (Ilboudo et al., 2018; Ma et al., 2018; Rooks et al., 2019; Nguetse et al., 2020), predicted a moderate reduction in Th.026.09 growth (–7.9%, p=0.01) but was not related to RBC dehydration in these data (Figure 5—figure supplement 2). For 3D7, we also detected one growth-associated variant in ATP2B4 (–5.9%, p=0.075), which encodes the primary RBC calcium channel PMCA4b. This variant tags an ATP2B4 haplotype implicated by GWAS in protection from severe malaria and many RBC phenotypes (van der Harst et al., 2012; Li et al., 2013b; Lessard et al., 2017; Lin et al., 2020, Timmann et al., 2012, Zámbó et al., 2017). Notably, however, this variant has never before been functionally demonstrated to be associated with P. falciparum fitness.
 
@@ -79,9 +151,17 @@ In contrast to growth, models of invasion that included genotypic predictors wer
 
 No PCs of population structure were significantly associated with P. falciparum growth rate (Figure 5—source data 3), including the PC that distinguishes Africans from other populations (PC1, Figure 1A). One PC was selected by LASSO for 3D7 growth, but this association was driven by a single donor with East Asian ancestry and relatively high susceptibility (Figure 5—figure supplement 5). We note that the unique ancestry and extreme phenotypes of the six-member family (Figure 5—figure supplement 6) would have driven additional correlations if family members had not been excluded from the LASSO models. Although the present study is limited by sample size, these associations between global genetic PCs and P. falciparum growth suggest that additional functional variants remain to be discovered in many populations.
 
-## African ancestry does not predict P. falciparum resistance in red cells
+### African ancestry does not predict P. falciparum resistance in red cells
 
 Based on evidence from balanced disease alleles like HbAS, it has been suggested that anti-malarial selection has shaped polygenic red cell phenotypes in African populations as a whole (Goheen et al., 2016; Kanias et al., 2017; Ma et al., 2018; Page et al., 2021). We tested this hypothesis by examining the correlation between African ancestry and P. falciparum fitness in non-carrier RBCs (Figure 6A–D). Surprisingly, we found no evidence that these traits were related, apart from a positive relationship between African ancestry and invasion rate of Th.026.09, the clinical Senegalese strain (p=0.004, R2=0.13, Figure 6D). To understand this result, we next examined how key RBC phenotypes identified in this study (Figure 4A) vary with African ancestry (Figure 6F–H; Figure 6—figure supplement 1). We found that greater African ancestry predicts reduced osmotic fragility (p=1.2×10–6), reduced RBC dehydration (CHCM p=0.009; MCHC p=0.089), and a greater fraction of ‘overhydrated’ RBCs with normal volume and low hemoglobin (M4 p=0.041). All of these traits actually predict greater red cell susceptibility to P. falciparum (Figure 4A), although together they explain less than 13% of the non-carrier variation in 3D7 growth. The remaining key phenotypes do not vary with African ancestry, which may explain why African ancestry itself is only weakly associated with P. falciparum fitness in non-carrier RBCs (Figure 6A–D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Parasite replication versus the exome-wide fraction of African ancestry in non-carriers, determined with ADMIXTURE by comparison to 1000 Genomes reference populations. R2 and p-values are shown for OLS regression. (E) Alleles in 23 malaria-related genes that predict slower P. falciparum growth in non-carriers (Figure 5A) are not enriched for higher frequencies in Africa versus Europe. Effect sizes are shown for one allele copy for 3D7 or Th.026.09 growth, whichever was greater. Effect sizes were determined from additive models except for three alleles that appeared overdominant (Figure 5—figure supplement 3). FST was calculated from African and European samples in gnomAD (see Materials and methods). HbAS and the HBA2 deletion are shown for comparison. (F–H) RBC phenotypes associated with P. falciparum growth versus the exome-wide fraction of African ancestry in non-carriers. Slower P. falciparum growth in RBCs is predicted by greater fragility (F), greater dehydration (G), and lower Ohyper (H) (Figure 4A). Additional phenotypes are shown in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69808/elife-69808-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Phenotypes from Figure 4A are shown. R2 and p-values were estimated from OLS regression. RBC, red blood cell.
 
 Next, we used allele frequency data from over 54,000 individuals in the gnomAD collection (Karczewski et al., 2020) to test whether the polymorphisms we associated with P. falciparum growth occur at different frequencies in African and European populations. Geographical differences in malaria selection are sometimes hypothesized to have increased the frequency of hundreds or thousands of undiscovered anti-malarial alleles in Africa (Mackinnon et al., 2005; Williams, 2006), as has been shown for several variants causing common RBC disorders (Kariuki and Williams, 2020). To address this hypothesis for non-carrier variation, we calculated FST between Africans and Europeans for 22 alleles with protective effects large enough to be specified in our sample (≥3.7%; Figure 5—source data 3). We found that 11 of these protective alleles (50%) are more common in Africans, which is not more than expected by chance (p=0.5, one-sided binomial test). The three protective variants with the largest absolute FST values are all more common in Europeans, including a synonymous SPTA1 allele with GWAS associations to several RBC and white blood cell traits. Two protective PIEZO1 variants are more common in Africans, including E756del and a synonymous variant of large effect. Overall, however, we find no evidence that African populations are enriched for non-pathogenic RBC polymorphisms or phenotypes associated with impaired P. falciparum growth in vitro.
 
@@ -111,13 +191,142 @@ In conclusion, this study demonstrates that substantial phenotypic and genetic d
 
 ## Materials and methods
 
-## Sample collection and preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary whole blood samples</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly drawn from de-identified human subjects into CPDA tubes (IRB #40479)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>3D7</td>
+      <td>PMID:3299700; Obtained from Walter and Eliza Hall Institute, Melbourne, Australia</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. falciparum)</td>
+      <td>Th026.09</td>
+      <td>PMID:22430961; Gift from Daouda Ndiaye and Sarah Volkman, Senegal</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue Kit</td>
+      <td>QIAGEN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Hyperplus Kit</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SeqCap EZ Prime Exome Kit</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers amplifying PIEZO1 exon 17</td>
+      <td>PMID:32265284</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bwa mem</td>
+      <td>http://arxiv.org/abs/1303.3997</td>
+      <td>0.7.17-r1188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GATK</td>
+      <td>https://gatk.broadinstitute.org/hc/en-us</td>
+      <td>4.0.0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vcftools</td>
+      <td>doi:10.1093/bioinformatics/btr330</td>
+      <td>0.1.15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ANNOVAR</td>
+      <td>PMID:20601685</td>
+      <td>2018-04-16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PLINK</td>
+      <td>PMID:17701901</td>
+      <td>v1.90b6.8 64-bit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ADMIXTURE</td>
+      <td>PMID:21682921</td>
+      <td>1.3.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.R-project.org/</td>
+      <td>3.5.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYBR Green I nucleic acid stain</td>
+      <td>Invitrogen</td>
+      <td>S7563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Drabkin’s Reagent</td>
+      <td>Ricca Chemical</td>
+      <td>2660–32</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection and preparation
 
 One-hundred and twenty-one subjects with no known history of RBC disorders were recruited to donate blood at the Stanford Clinical and Translational Research Unit. This study size was designed to sample multiple individuals carrying alleles of moderate frequency (5% or higher). Written informed consent was obtained from each subject and/or their parent as part of a protocol approved by the Stanford University Institutional Review Board (#40479). To help control for weekly batch effects, subject 1111 donated fresh blood for each parasite assay. Eleven other subjects donated blood on at least 2 different weeks, constituting biological replicates. Whole blood samples from a HE patient were obtained from Dr. Bertil Glader under a separate approved protocol (Stanford IRB #14004) that permitted sample sharing among researchers. All samples were de-identified upon collection by labeling with a random four-to-six digit code. Two samples were eventually removed from analysis based on a failed sequencing library (6449KD) and history of stem cell transplant (8715).
 
 Whole blood was drawn into CPDA tubes and spun down within 36 hr to separate serum, buffy coat, and RBCs. RBCs were washed and stored in RPMI-1640 medium (Sigma-Aldrich) supplemented with 25 mM HEPES, 50 mg/L hypoxanthine, and 2.42 mM sodium bicarbonate at 4°C. Buffy coat was transferred directly to cryotubes and stored at –80°C.
 
-## Exome sequencing and genotype calling
+### Exome sequencing and genotype calling
 
 Genomic DNA was isolated from frozen buffy coats using a DNeasy Blood and Tissue Kit (QIAGEN). Libraries were prepared using a KAPA Hyperplus Kit (Roche) and hybridized to human exome probes using the SeqCap EZ Prime Exome Kit (Roche). The resulting exome libraries were sequenced with paired-end 150 bp Illumina reads on the HiSeq or NextSeq platforms at Admera Health (South Plainfield, NJ).
 
@@ -125,17 +334,17 @@ Reads were aligned to the hg38 human reference genome using bwa mem (Li, 2013a),
 
 PIEZO1 E756del was genotyped via PCR and Sanger sequencing according to a previously published protocol (Nguetse et al., 2020). To call deletion variants that cause α-thalassemia in the paralogous genes HBA2 and HBA1, we extracted reads from each.bam file that lacked any mismatches or soft-clipping and had MAPQ≥13 (i.e., <5% chance of mapping error). Coverage with these well-mapped reads was calculated over the 73 and 81 bp of unique sequence in HBA2 and HBA1 and normalized to each sample’s exome-wide coverage. To determine which samples has unusually low coverage, we formed an ad hoc reference panel of seven donors who were unlikely to carry deletion alleles based on their normal MCH, MCV, and HGB and >96% exome-wide European ancestry (Weatherall, 2001). We called heterozygous HBA2 deletions when normalized coverage across three unique regions of the HBA2 gene was below the minimum reference value. Similarly, we called homozygous HBA2 deletions when normalized coverage across three unique regions of the HBA2 gene was less than half of the minimum reference value. This approach resulted in an estimated HBA2 copy number of 2.0 in the reference panel, 0.95 in eight putative heterozygotes and 0.12 in four putative homozygotes. The same method produced no evidence of HBA1 deletion in any sample.
 
-## Variant classification and linkage pruning
+### Variant classification and linkage pruning
 
 Exonic variants in RefSeq genes were identified using ANNOVAR (Wang et al., 2010). Variants were classified into three categories: those within 23 malaria-related genes (Figure 5—source data 1); those within 887 other RBC proteins (Figure 5—source data 2) derived with a medium-confidence filter from the Red Blood Cell Collection database (rbcc.hegelab.org); and those within any other gene.
 
 Linkage between all pairs of bi-allelic, exonic variants in our 121 genotyped samples was calculated using the --geno-r2 and --interchrom-geno-r2 functions in vcftools (Danecek et al., 2011). Variants in RBC genes that shared r2 >0.1 with any variant in the 23-gene set were removed. Within the 23-gene set and RBC-gene set separately, non-carrier variants were ranked by the p-values of their OLS regression with all four parasite measures. Then, one variant was removed from each pair with r2>0.1, prioritizing retention in the following order: greater significance across models; non-synonymous protein change; higher frequency in our sample; and finally by random sampling. We report results from additive genetic models (genotypes coded 0/1/2), which performed as well or better than recessive (0/0/2) and dominant (0/2/2) models. For three variants, overdominant models (0/1/–) provided the best fit and were used to estimate effect sizes (Figure 5—figure supplement 3).
 
-## Population analysis
+### Population analysis
 
 The population ancestry of our donors was assessed by comparison with African, European, East Asian, and South Asian reference populations from the 1000 Genomes Project (Auton et al., 2015). Briefly, variants called from an hg38 alignment of the 1000 Genomes data (Lowy-Gallego et al., 2019) were filtered for concordance with the variants genotyped in this study. The --indep-pairwise command in PLINK (Purcell et al., 2007) was used to prune SNPs with r2>0.1 with any other SNP in a 50-SNP sliding window, producing 35,759 unlinked variants. These variants were analyzed in both PLINK --pca and in ADMIXTURE (Alexander and Lange, 2011) with K=4 for the 121 genotyped individuals in this study, alongside 2458 individuals from 1000 Genomes. Pan-African and pan-European allele frequencies were obtained from gnomAD v3 (Karczewski et al., 2020). FST for specific alleles was calculated as (HT−HS)/HT and then polarized, such that positive values indicate variants more common in Africa.
 
-## P. falciparum culture and assays
+### P. falciparum culture and assays
 
 Our 3D7 strain of P. falciparum was obtained from the Walter and Eliza Hall Institute (Melbourne, Australia) and routinely cultured in human erythrocytes obtained from the Stanford Blood Center. Th.026.09 is a clinical strain isolated from a patient in Senegal in 2009 and kindly provided by Daouda Ndiaye and Sarah Volkman. 3D7 is drug-sensitive and has been lab-adapted for over 40 years, whereas Th.026.09 is drug-resistant and minimally lab-adapted (Walliker et al., 1987; Daniels et al., 2012; Moser, 2020). 3D7 was maintained at 2% hematocrit in RPMI-1640 supplemented with 25 mM HEPES, 50 mg/L hypoxanthine, 2.42 mM sodium bicarbonate, and 4.31 mg/ml Albumax (Invitrogen) at 37°C in 5% CO2 and 1% O2. Th.026.09 was maintained in the same conditions, except that half the Albumax was replaced with heat-inactivated human AB serum.
 
@@ -143,7 +352,7 @@ Parasite growth and invasion assays were performed using schizont-stage parasite
 
 To correct for batch effects, including substantial week-to-week variation in P. falciparum replication rate, we extracted the residuals from a linear regression of the raw parasite values against up to four significantly related batch variables: (1) the raw values for control donor 1111 each week; (2) the parasitemia measured at the previous time point; (3) the age in weeks of the RBCs being measured; and (4) the experimenter performing the assays. Notably, there was no additional effect of ‘Week’ or the length of the experiment (i.e., 3 or 5 days) once the above variables were regressed out. To convert these residuals (mean 0%) to relative percentages (mean 100%), we first trained linear models for growth and invasion in each strain with data from control donor 1111 and carriers with extreme parasite values (HbAS and HE for growth; G6PD−high and HE for invasion). For these models, relative percentages were calculated by normalizing the raw multiplication rates in these samples to the raw multiplication rate in the 1111 control from that week. These linear models were used to convert residuals to relative percentages for all samples. Finally, the relative percentages were arithmetically adjusted so that the mean invasion and growth values for non-carriers was 100%. Code for this normalization is available at https://github.com/emily-ebel/RBC (copy archived at swh:1:rev:31f953428a4ec5f0fa83201085ada0a0995facb2), Ebel, 2021.
 
-## Red cell phenotyping and normalization
+### Red cell phenotyping and normalization
 
 Complete blood count (CBC) data for RBCs, reticulocytes, and platelets were obtained with an ADVIA 120 hematology analyzer (Siemens, Laguna Hills, CA) at the Red Cell Laboratory at Children’s Hospital Oakland Research Institute. These data were: RBC, HGB, HCT, MCV, MCH, MCHC, CHCM, RDW, HDW, PLT, MPV, Reticulocyte number and percentage, and the fraction of RBCs in each of nine cells of the RBC matrix (see Figure 3—figure supplement 2). Systematic biases were evident for some measures in certain weeks, but data from control donor 1111 were not available for all weeks. Therefore, CBC data were normalized such that the median value for non-carrier samples was equal across weeks.
 
@@ -151,7 +360,7 @@ Osmotic fragility tests were performed in duplicate by incubating 20 μl of wash
 
 Osmotic gradient ektacytometry (Clark et al., 1983; Kuypers, 1990) was performed at the Red Cell Laboratory at Children’s Hospital Oakland Research Institute. Red cell deformability estimates across a gradient of NaCl concentrations were fitted to a 20-parameter polynomial model to generate a smooth curve, which was manually verified to closely fit the data. Each curve was summarized with three standard points (Figure 3—figure supplement 5; Clark et al., 1983), which were normalized such that the median x- and y-values of the three points was equal for non-carrier samples across weeks.
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test was used to compare trait values between non-carriers and carriers where N>1. Given our modest sample sizes and the expected noise in parasite data, we defined statistical significance as p<0.1. Where N=1 (i.e., for G6PD−high and HE), significance was assessed with the percentile of the non-carrier distribution. For all comparisons of two continuous variables, OLS linear regression was performed with the lm function in R unless otherwise specified. Adjusted R2 values are reported.
 

@@ -32,9 +32,25 @@ Here, using acute striatal slice electrophysiological recordings in the dorsolat
 
 ## Results
 
-## Changes in ChI spontaneous firing rate following DA depletion and chronic L-DOPA treatment
+### Changes in ChI spontaneous firing rate following DA depletion and chronic L-DOPA treatment
 
 To study alterations in ChI physiology in the parkinsonian mouse striatum, we induced dopaminergic lesions by infusing 6-OHDA unilaterally to the medial forebrain bundle (MFB). The protocol that we used produces severe and permanent lesion of both the cell bodies and axons of midbrain dopaminergic neurons (Won et al., 2014). After 3–4 weeks of recovery, the animals were randomized to receive daily IP injections of either saline (6-OHDA group) or L-DOPA (3 mg/kg, chronic-LD group) that continued for the next 3–11 weeks. Control mice (sham group) received vehicle MFB infusion and daily IP saline injections (Figure 1A). All 6-OHDA-infused mice showed severe deficits in contralateral front paw adjusting steps in the weight-supported treadmill stepping task, confirming significant lesion of the dopaminergic system. There was no difference in stepping deficit between mice assigned to the 6-OHDA or chronic-LD groups (% steps taken with impaired paw; 6-OHDA: 9.6 ± 0.9%, n = 21 mice; chronic-LD: 8.8 ± 0.7%, n = 30 mice; p=0.547, Mann-Whitney test; Figure 1—figure supplement 1A). When challenged with a dyskinesogenic dose of L-DOPA (3 mg/kg), all lesioned mice showed abnormal involuntary movements indicative of LID, starting with the first L-DOPA injection (Figure 1—figure supplement 1B). Total LID magnitudes were similar between the first L-DOPA dose (representative of the 6-OHDA group) compared to mice tested after chronic L-DOPA (total LID score; first dose: 45.1 ± 2.7, n = 11 mice; chronic-LD: 42.3 ± 3.4, n = 23 mice; p=0.295, Mann-Whitney test; Figure 1—figure supplement 1C). However, the onset of LID was shifted to earlier time points in chronic-LD mice (LID score for the first 10 min; first dose: 6.0 ± 0.7; chronic-LD: 13.4 ± 1.2; p=0.0002, Mann-Whitney test; Figure 1—figure supplement 1B,D), indicating further sensitization of LID despite maximized total LID scores from the dose of L-DOPA we used (Nadjar et al., 2009).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig1-v2.jpg)
+
+**Figure 1.:** (A) DA lesion and chronic L-DOPA treatment paradigm. 3–4 weeks after unilateral 6-OHDA lesion, mice were randomly divided into two groups to receive either saline or L-DOPA. Experimental groups included sham: mice with vehicle injection into the MFB, 6-OHDA: mice with MFB lesions injected with daily IP saline, and chronic LD: MFB-lesioned mice treated with 3 mg/kg L-DOPA IP once daily. Electrophysiological slice recordings were carried out 3–11 weeks after the initiation of L-DOPA or saline injections. (B) Representative cell-attached recordings and distributions of average (per cell) instantaneous spontaneous action potential frequency (sAP) of ChIs from sham-lesioned (n = 83 neurons/26 mice), 6-OHDA-lesioned (n = 81 neurons/29 mice), and 6-OHDA-lesioned mice treated with chronic LD (n = 87 neurons/25 mice). Scale bars are 1 s and 50 pA. (C) Dot plots of spontaneous cell activity in the absence (same as in B) and the presence of synaptic blockers CNQX (10 µM), APV (25 µM) and picrotoxin (PCX) (25 µM). Number of recordings with synaptic blockers: sham n = 13 neurons/3 mice, 6-OHDA n = 11 neurons/3 mice, chronic-LD 13 neurons/3 mice. (D) Coefficient of variation (CV) of instantaneous sAP frequencies in sham, 6-OHDA, and chronic LD groups (same N as in B). For C and D, line denotes median, error bars show interquartile range, p<0.05 (*), p<0.01 (**), p<0.001 (***), or p<0.0001 (****) by Kruskal-Wallis test with Dunn’s multiple comparison test; (E) The number of evoked action potentials following current injection was decreased in ChIs from 6-OHDA lesioned mice but restored to sham levels after chronic L-DOPA treatment. p<0.01 (**), 6-OHDA vs. the two other groups by two-way ANOVA with Tukey’s post-hoc test; sham n = 11 neurons/4 mice, 6-OHDA n = 16 neurons/5 mice, chronic-LD n = 18 neurons/5 mice. (F) Averaged perforated-patch recordings of sAP in ChIs following 30 µM DA perfusion in the presence of synaptic blockers. Sham n = 7 neurons/3 mice, 6-OHDA n = 7 neurons/2 mice, chronic-LD n = 10 neurons/3 mice. (G) Changes in average sAP frequencies in individual cells before and after DA exposure. (same N as in F). p<0.01 (**) by paired t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) All 6-OHDA-lesioned mice developed contralateral front paw stepping deficits, p<0.0001 vs. 50% for both groups, Wilcoxon signed rank test. There was no difference in stepping deficit between the mice assigned to the 6-OHDA-only or chronic L-DOPA groups, p=0.5467 by Mann-Whitney test; 6-OHDA n = 21 mice, chronic-LD n = 30 mice. (B) Time course of LID expression following single injection of L-DOPA (3 mg/kg) either as the first dose or after chronic administration of L-DOPA. First dose n = 11 mice, chronic-LD n = 23 mice; p<0.0001 for time x treatment interaction by two-way ANOVA, (*) p<0.05 between first dose vs. chronic administration at the same time point after L-DOPA injection by Bonferroni post-hoc test. (C) Total LID was not different between the groups, p=0.2946 by Mann-Whitney test. (D) LID expression occurred sooner after L-DOPA injection in mice that received chronic L-DOPA, p=0.0002, Mann-Whitney test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The number and duration of bursts and pauses were quantitated using the robust Gaussian surprise method. (A–F) Firing patterns of ChIs from sham (n = 83 neurons/26 mice), 6-OHDA (n = 81 neurons/29 mice, and chronic-LD (n = 87 neurons/25 mice) groups. (G–L) Firing patterns of ChIs in untreated mouse brain slices (n = 17 neurons/6 mice), those treated with 1 μM ZD7288 and 1 nM apamin (n = 8 neurons/3 mice) or the same concentration of apamin alone (n = 10 neurons/3 mice). p<0.05 (*), p<0.01 (**), p<0.001 (***), p<0.0001 (****) by Kruskal-Wallis test with Dunn’s multiple comparison. Burst duration (C and I) and pause duration (F and L) were analyzed only in neurons exhibiting bursts and pauses: sham n = 66, 75; 6-OHDA n = 52, 64; chronic-LD n = 80, 85; untreated n = 17, 16; ZD+apamin n = 6, 8; apamin n = 10, 10 (bursts, pauses). Blockade of HCN and SK currents largely reproduced changes in firing patterns observed in the 6-OHDA and chronic LD groups. Also note that number of bursts and pauses was not different between any groups when bursts or pauses were normalized to the number of action potentials (B,H,E,K), suggesting that the expression of bursts and pauses is related to the change in the firing rate.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Voltage-current dependence, (B) resting membrane potential, (C) input resistance, (D) membrane capacitance and (F) rheobase were unchanged in 6-OHDA and chronic-LD groups. (E) Ramp protocol for rheobase determination. Recordings in A-D were recorded in whole-cell mode in the presence of 1 µM TTX (n = 12–34 neurons/4–9 mice per group). (G) Representative and (H) averaged traces and shape characteristics (I) of sAPs from the three experimental groups (n = 21–27 neurons/8–10 mice per group). (J) Current protocol (lower) and representative trace (upper) of action potentials evoked by 100 pA current injection. (K, L) Shape characteristics of action potentials evoked by 100 pA current injection (n = 19–28 neurons/8–11 mice per group). p<0.05 (*) or p<0.01 (**) by Kruskal-Wallis test with Dunn’s multiple comparison analysis. Exact n for each figure are listed in Figure 1—source data 1.
 
 Next, using cell-attached recordings we measured spontaneous action potentials (sAP) of ChIs in acute striatal slices from the three groups of mice. Cholinergic neurons were identified by their large soma size relative to other cells in the dorsolateral striatum. The spontaneous firing frequency of ChIs decreased in 6-OHDA lesioned mice, but this decrease was reversed by chronic L-DOPA treatment to a level higher than that of sham-lesioned mice (sham: 2.6 ± 0.2 Hz, n = 83 neurons/26 mice; 6-OHDA: 1.7 ± 0.2 Hz, n = 81 neurons/29 mice; chronic-LD: 3.5 ± 0.2 Hz, n = 87 neurons/25 mice; p<0.0001, Kruskal-Wallis test; pairwise: sham vs. 6-OHDA, p=0.0002; sham vs. chronic-LD, p=0.0029; 6-OHDA vs. chronic-LD, p<0.0001, Dunn’s multiple comparison test; Figure 1B,C). These changes persisted in the presence of blockers of ionotropic GABA and glutamate receptors (Figure 1C), indicating that altered spontaneous firing was driven by ChI-intrinsic mechanisms.
 
@@ -46,7 +62,7 @@ Our group previously reported that chronic treatment with L-DOPA in a genetic mo
 
 Thus, DA depletion significantly decreases the spontaneous firing rate, regularity of spiking and excitability of ChI, while increasing the firing rate in response to dopamine. Chronic treatment of dopamine-depleted animals with L-DOPA restores the key parameters of regularity and excitability, but increases firing frequency beyond that of control animals.
 
-## Electrophysiological characteristics and synaptic input to striatal ChIs
+### Electrophysiological characteristics and synaptic input to striatal ChIs
 
 To determine whether changes in basic electrophysiological characteristics of ChIs could explain observed alterations in spontaneous activity of the cells, we performed whole-cell recordings. For voltage-current dependence, resting membrane potential, input resistance, and membrane capacitance (Figure 1—figure supplement 3A–D) measurements, tetrodotoxin (TTX) was included during recording to prevent spontaneous APs. Likewise, ChI were briefly hyperpolarized before the current ramping protocol for rheobase determination (Figure 1—figure supplement 3E,F). There were no differences in these properties between the experimental groups. Similarly, analysis of the waveforms of spontaneous or evoked action potentials (Figure 1—figure supplement 3G–L) generally revealed no differences in peak amplitude, half width, rise time, decay time, threshold, and latency to first spike; however, the sAP threshold potential was more positive in the +chronic-LD group vs. 6-OHDA and the rise time of evoked APs was longer in the 6-OHDA group vs. sham.
 
@@ -54,23 +70,23 @@ Several reports have shown that changes in neuronal excitability correlate with 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig2-v2.jpg)
 
-**Figure 2.:** (A–G) Sholl analysis of ChI morphology. Cells were filled with biocytin during physiological recordings, fixed, and imaged for biocytin labeling by confocal microscopy. (A) Representative maximum projection images from three dimensional reconstructions of ChIs, scale bar = 20 μm. (B) Sholl analysis of reconstructed ChIs, solid line denotes mean intersections at indicated distance from soma, shaded area shows SEM, p<0.05 (*) for sham vs. 6-OHDA and sham vs. chronic LD, Dunnett’s multiple comparison test following two-way ANOVA, p=0.0074 for interaction between treatment group and distance from soma. (C–G) DA lesion caused significant increase in total dendrite length (C), total number of intersections (D) and ending radius (E), whereas the number of primary dendrites (F) and ramification index (G) were similar between the groups, p<0.05 (*) 6-OHDA and +chronic-LD vs. Sham, Kruskal-Wallis test with Dunn’s multiple comparison. For A-G sham n = 13 neurons/7 mice, 6-OHDA n = 28 neurons/14 mice, chronic-LD n = 19/10 mice. (H and J) Representative traces of spontaneous inhibitory postsynaptic currents (sIPSCs) and excitatory postsynaptic currents (sEPSCs) of ChIs from sham, 6-OHDA and chronic LD mice. (I) Amplitudes of sIPSCs were similar, but their frequency was increased in chronic L-DOPA group. Sham n = 9 neurons/5 mice, 6-OHDA n = 12 neurons/6 mice, chronic-LD n = 7 neurons/3 mice. p<0.05 (*) by Kruskal-Wallis test followed by Dunn’s multiple comparison test. (K) There were no changes in amplitude or frequency of sEPSCs. Sham n = 8 neurons/4 mice, 6-OHDA n = 16 neurons/7 mice, chronic-LD n = 11 neurons/6 mice.  Figure 2—source data 1.
+**Figure 2.:** (A–G) Sholl analysis of ChI morphology. Cells were filled with biocytin during physiological recordings, fixed, and imaged for biocytin labeling by confocal microscopy. (A) Representative maximum projection images from three dimensional reconstructions of ChIs, scale bar = 20 μm. (B) Sholl analysis of reconstructed ChIs, solid line denotes mean intersections at indicated distance from soma, shaded area shows SEM, p<0.05 (*) for sham vs. 6-OHDA and sham vs. chronic LD, Dunnett’s multiple comparison test following two-way ANOVA, p=0.0074 for interaction between treatment group and distance from soma. (C–G) DA lesion caused significant increase in total dendrite length (C), total number of intersections (D) and ending radius (E), whereas the number of primary dendrites (F) and ramification index (G) were similar between the groups, p<0.05 (*) 6-OHDA and +chronic-LD vs. Sham, Kruskal-Wallis test with Dunn’s multiple comparison. For A-G sham n = 13 neurons/7 mice, 6-OHDA n = 28 neurons/14 mice, chronic-LD n = 19/10 mice. (H and J) Representative traces of spontaneous inhibitory postsynaptic currents (sIPSCs) and excitatory postsynaptic currents (sEPSCs) of ChIs from sham, 6-OHDA and chronic LD mice. (I) Amplitudes of sIPSCs were similar, but their frequency was increased in chronic L-DOPA group. Sham n = 9 neurons/5 mice, 6-OHDA n = 12 neurons/6 mice, chronic-LD n = 7 neurons/3 mice. p<0.05 (*) by Kruskal-Wallis test followed by Dunn’s multiple comparison test. (K) There were no changes in amplitude or frequency of sEPSCs. Sham n = 8 neurons/4 mice, 6-OHDA n = 16 neurons/7 mice, chronic-LD n = 11 neurons/6 mice.
 
 We next investigated whether changes in excitatory and inhibitory synaptic inputs followed observed adaptations in dendritic morphology. Spontaneous inhibitory postsynaptic currents (sIPSC) frequency was increased in the chronic-LD group compared to sham mice, while sIPSC amplitude was unchanged (sIPSC amplitude; sham: 26.9 ± 2.2 pA, n = 9 neurons/5 mice; 30.0 ± 3.8 pA, n = 12 neurons/6 mice; chronic-LD: 23.2 ± 2.1 pA, n = 7 neurons/3 mice; p=0.1824, Kruskal-Wallis test; sIPSC frequency; sham: 2.4 ± 0.6 Hz; 6-OHDA: 3.3 ± 0.7 Hz; chronic-LD: 5.5 ± 0.9 Hz; p=0.0240, Kruskal-Wallis test; pairwise: sham vs. 6-OHDA, p=0.8769; sham vs. chronic-LD: p=0.0202, Dunn’s multiple comparison test; Figure 2H,I). In contrast, neither frequency nor amplitude of spontaneous excitatory postsynaptic currents (sEPSC) was changed by the treatments (sEPSC amplitude; sham: 24.2 ± 2.8 pA, n = 8 neurons/4 mice; 6-OHDA: 23.2 ± 1.3 pA, n = 16 neurons/7 mice; chronic-LD: 21.8 pA, n = 11 neurons/6 mice; p=0.7949, Kruskal-Wallis test; sEPSC frequency; sham: 0.2 ± 0.1 Hz; 6-OHDA: 0.4 ± 0.1 Hz; chronic-LD: 0.1 ± 0.03 Hz; p=0.2276, Kruskal-Wallis test; Figure 2J,K). However, due to the rarity of spontaneous excitatory events, we are likely underpowered for a definite conclusion about the lack of change in sEPSCs (Bennett and Wilson, 1999). These results demonstrate that L-DOPA treatment of DA lesioned mice increased synaptic connectivity of ChIs with GABA neurons, despite dendritic remodeling in both DA lesioned and chronic-LD groups.
 
-## Restoration of DA depletion-induced decrease of HCN current by chronic L-DOPA
+### Restoration of DA depletion-induced decrease of HCN current by chronic L-DOPA
 
 Examination of the whole-cell recording traces from ChIs of the three groups revealed marked differences in the kinetics of voltage change following the action potential. In the 6-OHDA group, the cell returned to the threshold firing potential at a significantly slower rate, while in the chronic-LD group, the hyperpolarization that followed the AP appeared to be lower in amplitude (Figure 3A). This prompted us to next look at the activity of the channels known to mediate the afterhyperpolarization (AHP) currents that regulate the rate of spontaneous firing of striatal ChIs.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig3-v2.jpg)
 
-**Figure 3.:** (A) Representative perforated-patch recordings of sAP from sham, 6-OHDA and +chronic-LD groups. Dotted line represents a threshold potential, which was similar between the groups. Note the markedly slower rate of cell depolarization after the action potential in the ChIs from 6-OHDA group and decreased amplitude of the AHP in a neuron from the +chronic-LD group. (B) Representative cell-attached recordings of ChI activity before and after treatment with HCN channel blocker ZD7288 (25 µM). (C) Current-clamp protocol (lower) and representative recordings (upper) showing voltage sag, a characteristic of HCN channel activation. (D) Quantification of sag amplitude at different current steps. Sham n = 39 neurons/18 mice, 6-OHDA n = 23 neurons/11 mice, chronic-LD n = 30 neurons/12 mice; p<0.05 (*) for 6-OHDA vs. two other groups, p<0.05 (#) 6-OHDA vs. chronic-LD at indicated current by Tukey’s multiple comparisons test following repeated measures two-way ANOVA. (E) Voltage-clamp protocol (lower) and representative ZD7288-sensitive (I) current (upper). (hF) I density was decreased in ChIs from DA-depleted mice. Sham n = 11 neurons/6 mice, 6-OHDA n = 12 neurons/6 mice, chronic-LD n = 13 neurons/7 mice; p<0.05 (*) for sham vs. 6-OHDA at −100 mV by Tukey’s multiple comparison following repeated measures two-way ANOVA. (hG) Boltzmann fits of normalized I densities. (Same N as in F); p<0.05 (*) for V50 values of sham vs. 6-OHDA by Tukey’s multiple comparison following one-way ANOVA. (hH) ChI-specific gene expression of Hcn1-4 isoforms and Pex5l (Trip8b) measured by RT-qPCR from striatal mRNA immunoprecipitated from Chat-Cre:Rpl22 (ribotag) mice treated as indicated. Target mRNA levels were normalized to β-actin. Sham n = 6 samples/20 mice, 6-OHDA n = 4 samples/17 mice, chronic-LD n = 6 samples/22 mice; P-values on graphs are for Kruskal-Wallis test, p<0.05 (*) with Dunn’s multiple comparisons test.HA  Figure 3—source data 1.
+**Figure 3.:** (A) Representative perforated-patch recordings of sAP from sham, 6-OHDA and +chronic-LD groups. Dotted line represents a threshold potential, which was similar between the groups. Note the markedly slower rate of cell depolarization after the action potential in the ChIs from 6-OHDA group and decreased amplitude of the AHP in a neuron from the +chronic-LD group. (B) Representative cell-attached recordings of ChI activity before and after treatment with HCN channel blocker ZD7288 (25 µM). (C) Current-clamp protocol (lower) and representative recordings (upper) showing voltage sag, a characteristic of HCN channel activation. (D) Quantification of sag amplitude at different current steps. Sham n = 39 neurons/18 mice, 6-OHDA n = 23 neurons/11 mice, chronic-LD n = 30 neurons/12 mice; p<0.05 (*) for 6-OHDA vs. two other groups, p<0.05 (#) 6-OHDA vs. chronic-LD at indicated current by Tukey’s multiple comparisons test following repeated measures two-way ANOVA. (E) Voltage-clamp protocol (lower) and representative ZD7288-sensitive (Ih) current (upper). (F) Ih density was decreased in ChIs from DA-depleted mice. Sham n = 11 neurons/6 mice, 6-OHDA n = 12 neurons/6 mice, chronic-LD n = 13 neurons/7 mice; p<0.05 (*) for sham vs. 6-OHDA at −100 mV by Tukey’s multiple comparison following repeated measures two-way ANOVA. (G) Boltzmann fits of normalized Ih densities. (Same N as in F); p<0.05 (*) for V50 values of sham vs. 6-OHDA by Tukey’s multiple comparison following one-way ANOVA. (H) ChI-specific gene expression of Hcn1-4 isoforms and Pex5l (Trip8b) measured by RT-qPCR from striatal mRNA immunoprecipitated from Chat-Cre:Rpl22HA (ribotag) mice treated as indicated. Target mRNA levels were normalized to β-actin. Sham n = 6 samples/20 mice, 6-OHDA n = 4 samples/17 mice, chronic-LD n = 6 samples/22 mice; P-values on graphs are for Kruskal-Wallis test, p<0.05 (*) with Dunn’s multiple comparisons test.
 
 Hyperpolarization-activated cyclic nucleotide-gated (HCN) channels are essential for the cell-autonomous spontaneous firing of ChIs (Ferreira et al., 2014; Oswald et al., 2009; Wilson, 2005). Accordingly, bath application of an HCN channel antagonist ZD7288 (25 μM) significantly decreased ChI sAP frequency in our slice preparation (Figure 3B). To characterize HCN channel activity, we measured the characteristic voltage sag induced by hyperpolarizing current injection in the current clamp mode (Figure 3C) and also directly isolated ZD7288 sensitive HCN currents (Ih) in the voltage clamp mode (Figure 3E,F). ChIs from 6-OHDA mice exhibited smaller voltage sag amplitudes and decreased Ih than either sham or chronic-LD mice, whereas there was no difference in these parameters in ChIs from chronic-LD mice compared to sham (sag amplitude at −250 pA; sham: −16.6 ± 0.8 mV, n = 39 neurons/18 mice; 6-OHDA: −13.4 ± 0.9 mV, n = 23 neurons/11 mice; chronic-LD: −17.9 ± 1.3 mV, n = 30 neurons/12 mice, p=0.0255 for group effect, two-way ANOVA; pairwise comparison at −250 pA: sham vs. 6-OHDA, p=0.0266; sham vs. chronic-LD, p=0.6781, Tukey’s multiple comparison test; Figure 3D; Ih density at −100 mV; sham: −0.94 ± 0.09 pA/pf, n = 11 neurons/6 mice; 6-OHDA: −0.59 ± 0.10 pA/pF, n = 12 neurons/6 mice; chronic-LD: −1.01 ± 0.15 pA/pF, n = 13 neurons/7 mice; p=0.0025 for interaction, two-way ANOVA; pairwise comparison at −100 mV: sham vs. 6-OHDA, p=0.0464; sham vs. chronic-LD, p=0.9078, Tukey’s multiple comparison test; Figure 3F). Furthermore, Boltzmann fits of normalized voltage dependences of HCN currents showed a more negative half activation voltage in ChIs from 6-OHDA mice compared to sham and chronic-LD animals (V50; sham: −88.8 ± 0.9 mV; 6-OHDA: −95.6 ± 2.5 mV; chronic-LD: −91.0 ± 1.4 mV, one-way ANOVA, p=0.0312; pairwise: sham vs. 6-OHDA, p=0.0287; sham vs. chronic-LD, p=0.6601; Figure 3G), suggesting that the gating properties or the expression profile of HCN isoforms were altered by 6-OHDA lesion and restored by chronic L-DOPA exposure (Simeone et al., 2005; Wang et al., 2001; Zolles et al., 2006).
 
 We therefore next assessed whether the ChI-specific gene expression profiles of HCN channel isoforms were changed by DA depletion or chronic L-DOPA treatment using bitransgenic Chat-Cre:Rpl22HA (ribotag) mice which express a tagged ribosomal subunit only in cholinergic neurons (Sanz et al., 2009). We subjected these mice to the same DA depletion and chronic L-DOPA treatment paradigm and then collected tagged ribosome-bound mRNA for RT-qPCR analysis. mRNA was harvested 20 hr after the last injection of saline or L-DOPA, reflecting steady-state gene expression levels. This technique yielded ~38 fold enrichment of cholinergic neuron specific genes compared to total striatal mRNA (Chat:Actb; ribotag: 0.42 ± 0.01 vs. input: 0.01 ± 0.001). Consistent with previous findings, Hcn2 was the most abundantly expressed HCN isoform in ChIs (Figure 3H) while Hcn3 and Hcn4 mRNA were enriched in ChIs compared to total striatal input (not shown), though there was no statistically significant difference in mRNA levels of Hcn1-4 between any groups. The trafficking and gating of HCN channels is regulated by tetratricopeptide repeat-containing Rab8b-interacting protein (TRIP8b; gene name Pex5l), an auxiliary β subunit expressed in neurons (Bankston et al., 2012; Lewis et al., 2011). TRIP8b mRNA levels were significantly reduced in ChIs from 6-OHDA mice (Pex5l:Actb ratio; sham: 0.066 ± 0.003, n = 6 samples/20 mice; 6-OHDA: 0.053 ± 0.003, n = 4 samples/17 mice; chronic-LD: 0.060 ± 0.003, n = 6 samples/22 mice; p=0.0462, Kurskal-Wallis test; pairwise: sham vs. 6-OHDA, p=0.0474; sham vs. chronic-LD, p=0.6087, Dunn’s multiple comparisons test; Figure 3H), which may contribute to the decrease in their HCN current. Together, these findings indicate that the decrease in firing rate of ChIs from 6-OHDA mice could be due to decreased HCN function. However, as HCN activity and expression of its subunits was restored to sham levels in the chronic-LD group, changes in Ih alone cannot account for the accompanying overshoot in ChI firing caused by chronic L-DOPA treatment.
 
-## Persistent decrease in medium afterhyperpolarization currents
+### Persistent decrease in medium afterhyperpolarization currents
 
 The AHP following each ChI action potential is mediated by potassium channels that are activated during cell depolarization and concomitant Ca2+ influx (Bennett et al., 2000; Goldberg and Wilson, 2005; Tubert et al., 2016). At low frequency spiking of ChIs, such as during their cell-autonomous activity, small conductance calcium-activated potassium channels (SK) mediate a medium-duration afterhyperpolarization (mAHP). Conversely, prolonged high frequency firing of ChIs activates a slow afterhyperpolarization (sAHP) that can last several seconds (Goldberg et al., 2009; Wilson and Goldberg, 2006).
 
@@ -78,23 +94,23 @@ To assess changes in AHP currents, first we applied a 300 ms depolarizing pulse 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig4-v2.jpg)
 
-**Figure 4.:** (A and C) Representative voltage-clamp recording of (A) Ba2+-sensitive and (C) apamin-sensitive AHP currents before and after drug application (upper), and corresponding voltage protocols (lower). (B) BaCl2 (200 µM) blocked both peak and late phases of the current but the magnitude of the changes was similar in all groups. Sham n = 9 neurons/3 mice, 6-OHDA n = 10 neurons/3 mice, chronic-LD n = 9 neurons/3 mice. (D) Using a depolarization protocol to recruit primarily mAHP currents, apamin (100 nM) decreased the peak current amplitude without altering the late stage of the AHP current. Sham n = 17 neurons/5 mice, 6-OHDA n = 14 neurons/4 mice, chronic-LD n = 14 neurons/4 mice; p<0.05 (*), Kruskal-Wallis test with Dunn’s multiple comparison. (E) ChI-specific gene expression of Kcnn1-3 (SK1-3) isoforms measured by RT-qPCR as in Figure 3H. Target mRNA levels were normalized to β-actin. There were no significant differences between the groups by Kruskal-Wallis test; sham n = 6 samples/20 mice, 6-OHDA n = 4 samples/17 mice, chronic-LD n = 6 samples/22 mice.  Figure 4—source data 1.
+**Figure 4.:** (A and C) Representative voltage-clamp recording of (A) Ba2+-sensitive and (C) apamin-sensitive AHP currents before and after drug application (upper), and corresponding voltage protocols (lower). (B) BaCl2 (200 µM) blocked both peak and late phases of the current but the magnitude of the changes was similar in all groups. Sham n = 9 neurons/3 mice, 6-OHDA n = 10 neurons/3 mice, chronic-LD n = 9 neurons/3 mice. (D) Using a depolarization protocol to recruit primarily mAHP currents, apamin (100 nM) decreased the peak current amplitude without altering the late stage of the AHP current. Sham n = 17 neurons/5 mice, 6-OHDA n = 14 neurons/4 mice, chronic-LD n = 14 neurons/4 mice; p<0.05 (*), Kruskal-Wallis test with Dunn’s multiple comparison. (E) ChI-specific gene expression of Kcnn1-3 (SK1-3) isoforms measured by RT-qPCR as in Figure 3H. Target mRNA levels were normalized to β-actin. There were no significant differences between the groups by Kruskal-Wallis test; sham n = 6 samples/20 mice, 6-OHDA n = 4 samples/17 mice, chronic-LD n = 6 samples/22 mice.
 
 To determine whether changes in mAHP current were due to decreased expression of SK channels, we measured mRNA levels of SK1-3 (gene name Kcnn1-3) in ChIs from Chat-Cre:Rpl22HA mice. There was no difference in the mRNA expression of these SK isoforms, suggesting that changes in mAHP current were not mediated by transcriptional regulation of these channels (Figure 4E).
 
-## Partial inhibition of HCN and SK channels recapitulates changes in ChI firing rate caused by DA depletion and chronic L-DOPA treatment
+### Partial inhibition of HCN and SK channels recapitulates changes in ChI firing rate caused by DA depletion and chronic L-DOPA treatment
 
 Based on the changes in Ih and mAHP currents presented above, we hypothesized that altered activity of HCN and SK channels might be responsible for decreased spontaneous activity in 6-OHDA and increased spontaneous activity in chronic-LD mice (Figure 5A). To model these changes pharmacologically, we first established the concentrations of ZD7288 and apamin that provide ~50% inhibition of HCN- and SK-mediated currents observed in ChIs from 6-OHDA and chronic-LD mice (ZD7288: EC50 = 1.4 μM, R2 = 0.87, n = 8 neurons/2 mice; apamin: EC50 = 0.9 nM, R2 = 0.88, n = 6 neurons/2 mice; Figure 5B,C). Next, using slice preparations from control mice (no sham surgery), we performed cell-attached recordings of ChI activity before and after bath application of 1 nM apamin either alone (to mimic decreased SK but normal HCN activity seen in chronic-LD group) or in combination with 1 µM ZD7288 (to mimic inhibition of both SK and HCN channels in 6-OHDA group). Partial blockade of both channels decreased sAP frequency (baseline: 1.9 ± 0.3 Hz; apamin + ZD7288: 0.9 ± 0.2 Hz, n = 8 neurons/3 mice; p=0.0078, Wilcoxon signed rank test; Figure 5D,E), increased the coefficient of variation of sAP frequency (baseline: 0.28 ± 0.04; apamin + ZD7288: 0.74 ± 0.15; p=0.0156, Wilcoxon signed rank test; Figure 5F,G) and phenocopied changes in bursting and pausing of ChIs in the 6-OHDA group (Figure 1—figure supplement 2G–L). Similarly, the features of ChI firing in the chronic-LD group were recapitulated with partial SK current blockade, including increased sAP frequency (baseline: 1.8 ± 0.2 Hz; apamin: 2.7 ± 0.3 Hz, n = 10 neurons/3 mice; p=0.0020, Wilcoxon signed rank test; Figure 5D,E), no change in coefficient of variation of sAP frequency (baseline: 0.60 ± 0.14; apamin: 0.55 ± 0.10; p=0.8457, Wilcoxon signed rank test; Figure 5F,G) and similar changes in the bursting/pausing patterns (Figure 1—figure supplement 2). Overall, our findings suggest that alterations in ChI spontaneous activity caused by DA depletion and subsequent chronic L-DOPA treatment can be reproduced by decreasing HCN- and SK- mediated currents.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56920/elife-56920-fig5-v2.jpg)
 
-**Figure 5.:** (A) Proposed changes in HCN and SK currents in ChIs from different treatment groups and their effect on spontaneous firing rates (+). (B) Dependence of I density (as measured on hFigure 3E) on ZD7288 concentration. The orange curve represents fit of the data with the equation Y = 100(XSlope)/(IC50Slope + XSlope). Hill slope and IC50 are 0.9 and 1.4 µM, correspondingly; n = 8 neurons/2 mice. (C) Dependence of mAHP current density (as measured on Figure 4C) on apamin concentration. Hill slope and IC50 are 4 and 0.9 nM, correspondingly; n = 6 neurons/2 mice.(D–G) Partial SK and HCN channel blockade reproduced changes in the sAP rate and coefficient of variation of 6-OHDA and +chronic-LD groups. Although on average the decrease and increase in sAP frequency caused by apamin+ZD and apamin alone, respectively, did not reach statistical significance (D), apamin+ZD reliably decreased and apamin alone increased baseline sAP firing rate in individual ChIs (E). Likewise, the differences in the median coefficient of variation did not reach statistical significance (F), however, apamin+ZD increased CV over baseline for most ChIs, whereas apamin alone did not change the baseline CV (G). Untreated n = 17 neurons/6 mice, apamin+ZD n = 8 neurons/3 mice, apamin n = 10 neurons/3 mice; In panel D, p<0.001 (***) by Kruskal-Wallis test with Dunn’s multiple comparisons. In panels E and G, p<0.05 (*) and p<0.01 (**), Wilcoxon matched-pairs signed rank test.  Figure 5—source data 1.
+**Figure 5.:** (A) Proposed changes in HCN and SK currents in ChIs from different treatment groups and their effect on spontaneous firing rates (+). (B) Dependence of Ih density (as measured on Figure 3E) on ZD7288 concentration. The orange curve represents fit of the data with the equation Y = 100(XSlope)/(IC50Slope + XSlope). Hill slope and IC50 are 0.9 and 1.4 µM, correspondingly; n = 8 neurons/2 mice. (C) Dependence of mAHP current density (as measured on Figure 4C) on apamin concentration. Hill slope and IC50 are 4 and 0.9 nM, correspondingly; n = 6 neurons/2 mice.(D–G) Partial SK and HCN channel blockade reproduced changes in the sAP rate and coefficient of variation of 6-OHDA and +chronic-LD groups. Although on average the decrease and increase in sAP frequency caused by apamin+ZD and apamin alone, respectively, did not reach statistical significance (D), apamin+ZD reliably decreased and apamin alone increased baseline sAP firing rate in individual ChIs (E). Likewise, the differences in the median coefficient of variation did not reach statistical significance (F), however, apamin+ZD increased CV over baseline for most ChIs, whereas apamin alone did not change the baseline CV (G). Untreated n = 17 neurons/6 mice, apamin+ZD n = 8 neurons/3 mice, apamin n = 10 neurons/3 mice; In panel D, p<0.001 (***) by Kruskal-Wallis test with Dunn’s multiple comparisons. In panels E and G, p<0.05 (*) and p<0.01 (**), Wilcoxon matched-pairs signed rank test.
 
 ## Discussion
 
 Dysregulation of cholinergic neurotransmission is an important contributor to both the expression of PD symptoms and the adverse effects of DA replacement therapy. Here, we examined the consequences of DA loss and those of chronic treatment with L-DOPA on mouse ChI physiology. In addition to altered morphology, synaptic connectivity and responsiveness to DA receptor stimulation, we found significant alterations of cell-intrinsic properties of ChIs. In the DA depleted striatum, both HCN- and SK-mediated currents were diminished. HCN current reduction was accompanied by reduced TRIP8b, which regulates trafficking and gating of HCN channels, rather than changes in Hcn mRNA expression. Interestingly, chronic treatment of lesioned mice with L-DOPA restored HCN activity to sham levels while SK currents remained depressed. The pharmacological blockade of HCN and SK channels to mimic the DA depleted and chronic L-DOPA treated states recapitulated the changes in rate and pattern of ChI firing, providing new insights into molecular adaptations that follow striatal DA depletion in PD patients receiving L-DOPA therapy.
 
-## Changes in ChI tonic activity following DA depletion and chronic L-DOPA treatment
+### Changes in ChI tonic activity following DA depletion and chronic L-DOPA treatment
 
 Anticholinergic drugs have been effective in the treatment of PD symptoms, highlighting the importance of cholinergic neurotransmission to basal ganglia function. Early observations showed that the severity of PD symptoms in patients is worsened by drugs that increase cholinergic activity (Duvoisin, 1967), while more recent reports demonstrated that direct optogenetic and chemogenetic inhibition of ChIs improved DA depletion-mediated motor dysfunction (Maurice et al., 2015; Tanimura et al., 2019; Ztaou et al., 2016). Though the contribution of aberrant ChI neurotransmission to PD pathophysiology is unquestioned, conflicting results on the change in ChI activity caused by DA depletion have been reported. We show here that both spontaneous activity and excitability of dorsolateral striatal ChIs in 6-OHDA injected mice are significantly decreased. Similar changes were recently demonstrated using a genetic model with diphtheria toxin to induce dysfunction in dopaminergic neurons (McKinley et al., 2019). In contrast, other studies using similar protocols in rodents have shown no significant change in the tonic firing rate (Ding et al., 2006), and increased excitability of ChIs (Maurice et al., 2015; Sanchez et al., 2011; Tubert et al., 2016). Some of these discrepancies can be attributed to differences in animal species (mice vs. rats) or experimental conditions (DA-lesion protocol, composition of the recording solutions, etc.) but careful evaluation of the contribution of these differences is currently lacking.
 
@@ -104,19 +120,19 @@ Chronic L-DOPA treatment of 6-OHDA-lesioned mice increased the tonic firing of C
 
 In slice preparations, ChIs fire spontaneously and generate a variety of spiking patterns and firing frequencies autonomously. Though excitatory and inhibitory inputs to ChIs are present, these are largely silent as the firing rate and pattern of ChIs are unaffected by blockade of AMPA, NMDA, GABAA, D1, D2, or muscarinic receptors (Bennett and Wilson, 1999). Consistent with this, the changes in tonic firing rate caused by DA depletion and chronic L-DOPA treatment persisted in the presence of blockers of ionotropic glutamate and GABA receptors (Figure 1C), indicating that these changes are intrinsic to ChIs. Furthermore, the increases in dendritic branching and GABAergic inputs onto ChIs after chronic L-DOPA treatment (Figure 2), which likely represent compensatory remodeling of striatal circuitry, did not have significant effect on the tonic firing of ChIs in our preparation. Together with altered responsiveness to DA receptor stimulation (Figure 1G), these synaptic adaptations may, however, play important roles in vivo, which will be addressed in future studies.
 
-## DA depletion and chronic L-DOPA treatment change HCN activity
+### DA depletion and chronic L-DOPA treatment change HCN activity
 
 HCN channels are essential for the tonic firing of ChIs and serve to depolarize neurons back towards spike threshold during the hyperpolarization that follows an action potential. Inhibition of Ih decreases the rate and increases irregularity of tonic firing in ChIs (Bennett et al., 2000; Deng et al., 2007; McKinley et al., 2019; Zhao et al., 2016). In line with this, we found that DA depletion reduced Ih and shifted the gating for channel activation to more negative potentials (Figure 3), which was accompanied by slower and irregular firing. By contrast, chronic treatment of DA depleted mice with L-DOPA restored Ih to the level of sham-lesioned animals, though the firing rate exceeded that of ChI from sham animals. These findings are consistent with a recent study using a targeted diphtheria toxin model of DA depletion which found a similar decrease of Ih that was mediated by the transcriptional downregulation of specific Hcn isofroms (McKinley et al., 2019). Although we did not observe statistically significant changes in Hcn mRNA levels, we found that DA depletion significantly decreased Trip8b mRNA levels in ChIs (Figure 3H). Trip8b is expressed in neurons and regulates surface expression and trafficking of HCN channels. Knockdown of Trip8b in vivo causes the mis-localization of HCN channels and reduces Ih in hippocampal CA1 neurons (Piskorowski et al., 2011). Our results confirm a previous report of reduction in Trip8b mRNA after DA depletion in the external globus pallidus (GPe) in conjunction with decreased Ih (Chan et al., 2011). In our study, chronic treatment with L-DOPA reversed the decrease in Trip8b suggesting that striatal DA, including the levels achieved with once daily administration of L-DOPA, may maintain HCN activity by regulating Trip8b expression. This effect lasts longer than pharmacokinetic availability of L-DOPA (Abercrombie et al., 1990) since the recordings were performed at least 20 hr after the last L-DOPA dose, reflecting the long-term adaptation to chronic L-DOPA exposure rather than the immediate pharmacologic actions of L-DOPA itself. A possible mechanism linking DA depletion with changes in HCN biophysical properties may involve the regulation of cAMP production by DA receptor signaling (Greengard, 2001). Binding of cAMP to HCN channels, which can also be regulated by Trip8b (Hu et al., 2013; Saponaro et al., 2014), shifts their activation kinetics towards more positive potentials and increases channel opening kinetics (Wainger et al., 2001). We found that HCN activation was shifted to more hyperpolarized potentials in ChIs from DA depleted mice and restored by chronic L-DOPA treatment (Figure 3G), although whether these changes are mediated by decreased cAMP availability or other DA-dependent mechanisms remains to be tested.
 
 The somatodendritic localization of HCN channels determines their effect on neuronal activity. In ChIs, HCN channels located at the soma depolarize neurons towards threshold potential and increase the firing rate of tonically-active neurons (Bennett et al., 2000). However, high expression of HCN channels in the distal dendrites of cortical or hippocampal pyramidal neurons dampens temporal summation of excitatory synaptic input to enforce dendritic integration, decreasing excitability. Accordingly, deletion of HCN1, HCN2, Trip8b, or pharmacological inhibition with ZD7288 increases dendritic summation in these neurons and increases dendritic and cellular excitability (Harnett et al., 2015; Lewis et al., 2011). In layer five cortical pyramidal neurons, this property is acquired during postnatal dendritic maturation where the attenuation of dendritic excitability follows the trafficking and concentration of HCN channels in the distal apical dendrites (Atkinson and Williams, 2009). The ‘maturity’ of the newly formed ChI dendritic arbors in dopamine-depleted and L-DOPA treated mice (Figure 2A) in terms of HCN channel localization and function may dictate whether they enhance or inhibit excitatory synaptic input onto ChIs in vivo. The downregulation of Trip8b mRNA in ChIs following dopamine depletion (Figure 3H) suggests that HCN channels may not be efficiently trafficked to dendritic sites which would increase dendritic excitability despite decreased tonic activity.
 
-## DA depletion decreases SK current
+### DA depletion decreases SK current
 
 During tonic firing of ChIs, calcium entry following each action potential induces outward potassium currents mediated by apamin-sensitive SK-channels (Goldberg and Wilson, 2005) and the kinetics of this afterhyperpolarization current determines the firing rate of ChIs (Bennett et al., 2000). We found decreased SK current in ChIs from DA depleted mice both with or without L-DOPA treatment, consistent with smaller AHP amplitudes. Although the reduction in SK current was the same for both groups, only parkinsonian mice treated chronically with L-DOPA showed higher firing rates, indicating that in the 6-OHDA group the decrease in firing rate from HCN current loss cannot be overcome by the increase in firing rate expected to result from reduction in SK current. The mRNA levels of SK channel isoforms were not different between groups indicating that the changes in channel activity are not directly mediated by their gene expression. In ChI, SK channel activation is coupled to calcium entry through Cav2.2 (N-type) channels, which are strongly inhibited by dopamine D2 and muscarinic M2/M4 receptors (Goldberg and Wilson, 2005; Yan et al., 1997; Yan and Surmeier, 1996). The reduction of SK current we observed could indicate persistent dysregulation of Cav2.2 channels or the G-protein signaling pathways to which they are coupled. Interestingly, modulation of Cav2.2-mediated Ca2+ currents by M4 autoreceptors, but not D2 receptors, is diminished following dopamine depletion through the downregulation of G-protein signaling (Ding et al., 2006). This was proposed to prevent a decrease in SK current by M4 activation, though no direct measurements of SK current were made. Whether decreased SK channel activity is caused by perturbed auto-receptor signaling remains to be tested, although muscarinic antagonists did not influence spontaneous firing of ChIs in a previous study (Bennett and Wilson, 1999).
 
 As with HCN channels, the subcellular location and channel subtype dictates the contribution of SK channels to neuronal activity. Midbrain dopaminergic neurons express SK1-3 subunits, with somatically localized SK3 channels being the dominant subtype and SK2 channels localized to distal dendrites. As with the ChI in our study, blockade of SK channels with apamin increases the rate of tonic activity, though the concentration of apamin used was higher (200 nM vs. 1 nM). The ability of apamin to increase firing rate is occluded in neurons from SK3-/-, but not SK2-/- mice. However, this high concentration of apamin still caused firing irregularities in SK3-/- that were attributed to blocking dendritic SK2 (Deignan et al., 2012). As SK3 channels are the most abundantly expressed subtype in ChI, they likely play similar role in regulating tonic firing rate (Figure 4E), though the somatodendritic distribution SK channel subtypes in ChI is unknown.
 
-## Pharmacological blockade of HCN and SK channels in ChIs mimics firing patterns caused by DA depletion and chronic L-DOPA treatment
+### Pharmacological blockade of HCN and SK channels in ChIs mimics firing patterns caused by DA depletion and chronic L-DOPA treatment
 
 Several changes in spontaneous firing of ChIs in our animal models were recapitulated by pharmacological inhibition of HCN and SK channels in striatal slices from control animals, including altered spontaneous activity and rhythmicity. Critically, we were able to titrate the concentrations of antagonists to resemble the degree of channel inhibition caused by DA depletion and chronic L-DOPA treatment. Consistent with previous studies, a saturating concentration of apamin caused ChIs to transition into burst firing mode, characterized by increased firing frequency within bursts, long pauses between bursts and decreased average firing frequency (data not shown and Bennett et al., 2000; Yorgason et al., 2017). However, when SK channels were only partially inhibited using an IC50 concentration of apamin, the average firing rate of ChIs was increased without an increase in burstiness, closely mimicking changes observed in the ChIs from L-DOPA treated mice. Likewise, partial blockade of both HCN and SK channels caused significant depression of ChI firing rate, consistent with the DA depleted state. These findings confirm that reducing the current from these channels is sufficient to account for the changes in ChI activity and show that the slower rate of depolarization from hyperpolarized potentials caused by HCN inhibition overrides the smaller AHP resulting from reduced SK activity. Importantly, further studies should address whether targeted restoration of these channels’ activities can be employed to ameliorate PD-related motor deficiencies, such as akinesia and LID.
 
@@ -124,25 +140,217 @@ In summary, we followed up on our previous finding that chronic L-DOPA treatment
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus MF)</td>
+      <td>C57BL/6J mouse</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:000664, RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus MF)</td>
+      <td>Chat-Cre; Tg(Chat-cre)GM24Gsat/Mmucd</td>
+      <td>GENSAT</td>
+      <td>RRID:MMRRC_017269-UCD</td>
+      <td>Colony maintained in-house</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus MF)</td>
+      <td>Ribotag; B6N.129-Rpl22tm1.1Psam/J</td>
+      <td>Jackson Laboratory</td>
+      <td>IMSR Cat# JAX:011029, RRID:IMSR_JAX:011029</td>
+      <td>Colony maintained in-house</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-OHDA ; 6-hydroxydopamine hydrobromide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:H-116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desipramine hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:D-3900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-DOPA; L-3,4-dihydroxyphenylalanine methyl ester hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:D-1507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benserazide hydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#:D-7283</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TTX; tetrodotoxin citrate</td>
+      <td>Tocris</td>
+      <td>Cat#:1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD7288</td>
+      <td>Tocris</td>
+      <td>Cat#:1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>apamin</td>
+      <td>Tocris</td>
+      <td>Cat#:1652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CNQX; CNQX disodium salt</td>
+      <td>Tocris</td>
+      <td>Cat#:1045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AP5; DL-AP5</td>
+      <td>Tocris</td>
+      <td>Cat#:0105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PCX; picrotoxin</td>
+      <td>Tocris</td>
+      <td>Cat#:1128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QX 314 bromide</td>
+      <td>Tocris</td>
+      <td>Cat#:1014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>biocytin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:B4261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dopamine; dopamine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:H8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:449644</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>gramicidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:G5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>streptavidin-DyLight-633 conjugate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat:21844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinWCP</td>
+      <td>University of Strathclyde, UK</td>
+      <td>RRID:SCR_014713</td>
+      <td>http://spider.science.strath.ac.uk/sipbs/software_ses.htm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pclamp10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 6</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mini Analysis</td>
+      <td>Synaptosoft</td>
+      <td>RRID:SCR_002184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab 2016a, Matlab 2019a</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v8</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The use of the animals followed the National Institutes of Health guidelines and was approved by the Institutional Animal Care and Use Committee of Columbia University and New York State Psychiatric Institute. For behavior and slice electrophysiology studies, we used male C57BL/6J mice (Jackson Laboratory, Bar Harbor, ME, stock# 000664) at twelve-weeks of age at the beginning of the experiments. To obtain bitransgenic mice that express ‘tagged’ ribosomes selectively in cholinergic neurons, mice expressing the Cre-recombinase under the regulation of the Chat promotor (Chat-Cre; Tg(Chat-Cre)GM24sat/Mmucd from the GENSAT Project obtained from the MMRRC, stock# 017269-UCD) (Gong et al., 2007) were bred with mice expressing a Cre-activated knock-in of HA-tagged Rpl22 ribosomal subunit (ribotag mice; B6N.129-Rpl22tm1.1Psam/J obtained from Jackson Laboratory, stock# 011029) (Sanz et al., 2009). Mice of both sexes were used for experiments and were homozygous for ribotag and heterozygous for Chat-Cre.
 
-## DA lesion and chronic L-DOPA treatments
+### DA lesion and chronic L-DOPA treatments
 
 Anesthesia was induced by intraperitoneal (IP) injection of ketamine and xylazine, followed by a subcutaneous injection of bupivacaine for local anesthesia at the incision site. Animal were head-fixed in a stereotaxic apparatus (Kopf Instruments) with ear cups, and 6-hydroxydopamine (6-OHDA, Sigma, St. Louis, MO; H-116; 4.5 ug dissolved in 1.5 microliters of 0.05% ascorbic acid in 0.9% saline) was injected into left medial forebrain bundle (MFB) (coordinates: AP −1.3 mm and ML +1.3 mm from Bregma, and DV −5.4 mm from skull surface) through a small borehole in the skull. The entire volume was infused over 7.5 min through a stainless-steel cannula (Braintree Scientific, Braintree, MA; RM-SBL STD), which was left in place for an additional 5 min before withdrawal and incision closure. Desipramine (Sigma D3900; 25 mg/kg delivered IP) was given 30 min prior to 6-OHDA infusion to block uptake of the toxin by noradrenergic neurons. Intensive post-operative care included providing supplemental nutrition (Bacon Softies F-3580, Bio-Serv, Flemmington, NJ) and extra fluids (saline subcutaneously and dextrose saline IP). The health status of the animals was monitored daily until stabilization of body weight with free access to food and water. Sham-lesioned control mice received same volume of vehicle into the left MFB.
 
 3–4 weeks after unilateral 6-OHDA injection, lesioned mice were tested for stepping (Figure 1—figure supplement 1A) and randomly divided to receive daily IP injections of saline or L-DOPA (3 mg/kg + 12.5 mg/kg benserazide), while all sham-injected control mice received saline. For slice electrophysiology studies, mice were used at 3–11 weeks after the first injection of saline or L-DOPA. For gene expression analysis, striatal tissue was collected after 3 weeks of daily L-DOPA treatment. Dopaminergic lesion was confirmed in some cohorts of mice by western blot analysis of striatal tissue lysates for tyrosine hydroxylase (TH) protein levels which showed near >98% depletion of TH in the striatal hemisphere ipsilateral to the 6-OHDA lesion (not shown).
 
-## Weight-supported treadmill stepping task
+### Weight-supported treadmill stepping task
 
 Stepping tests to assess akinesia of the impaired forelimb (contralateral to the 6-OHDA lesion) were performed 3–4 weeks post 6-OHDA injection before the initiation of repeated L-DOPA or saline treatment. Both forelimbs were placed on a treadmill with the surface moving at 4.6 cm/sec away from the head of the mouse while the body weight was supported by examiner. Forepaw steps were video recorded from five nonconsecutive cycles of treadmill. The number of left and right paw steps was counted over a distance of 45 cm per trial for five non-consecutive trials and averaged to obtain the stepping score per mouse.
 
-## LID assessment
+### LID assessment
 
 L-DOPA-induced abnormal involuntary movements (AIMs) were assessed after the first IP injection of L-DOPA (the acute L-DOPA in naïve state) and again after 3 weeks of daily L-DOPA treatment (chronically-treated state) (Figure 1—figure supplement 1B–D). One cohort of mice was tested again at 10 weeks of L-DOPA treatment, which showed no difference from the 3 week time point indicating that LID scores remained stable throughout the time course of the experiments (not shown). At the start of the session, each mouse was placed into a clear polypropylene cylinder and allowed to acclimate for at least 3 min. L-DOPA was then injected and the mouse was video-recorded for 1 min periods at 0, 5, 10, 20, 40, 60, 80, 100 and 120 min post injection. Limb and axial dyskinesias were analyzed from recorded videos using previously described protocols (Ding et al., 2011; Won et al., 2014).
 
-## Slice preparation and electrophysiological recordings
+### Slice preparation and electrophysiological recordings
 
 At the time of recordings, mice were 4–6 month-old; each day, animals were randomly selected from a different treatment group. Slices were prepared at least 20 hr after the last L-DOPA or vehicle treatment. Mice were euthanized by cervical dislocation and coronal 270 µm-thick striatal slices were prepared on a vibratome (VT1200; Leica, Sloms, Germany) in oxygenated ice cold cutting-artificial cerebrospinal fluid (ACSF) containing (in mM): 194 sucrose, 30 NaCl, 4.5 KCl, 26 NaHCO3, 6 MgCl2·6H2O, 1.2 NaH2PO4, and 10 D-glucose (pH 7.4, 290 ± 5 mOsm). Slices were then transferred to oxygenated normal ACSF containing 125.2 NaCl, 2.5 KCl, 26 NaHCO3, 1.3 MgCl2·6H2O, 2.4 CaCl2, 0.3 NaH2PO4, 0.3 KH2PO4, and 10 D-glucose (pH 7.4, 290 ± 5 mOsm) at 34°C and allowed to recover for at least 40 min before the recordings.
 
@@ -156,20 +364,20 @@ Voltage sag was measured in current-clamp mode following 500ms-long current inje
 
 To measure Ba2+-sensitive afterhyperpolarization (AHP) currents, cells were clamped at −60 mV in the presence of TTX followed by a 300ms-long depolarizing step to +10 mV. Peak current amplitude was measured in the first 200 ms following the offset of the depolarizing voltage step, while the late phase was the average steady-state current at 900–1000 ms after the end of the step. To measure apamin-sensitive current, cells were depolarized from −60 mV to 0 mV for 100 ms. BaCl2 (200 µM) or apamin (0.5–100 nM) were applied for 10 min and currents measured after drug application were subtracted from those before the treatments to assess the contribution of peak and late components of AHP.
 
-## Analysis of Burst-Pause activity
+### Analysis of Burst-Pause activity
 
 We used the Robust Gaussian Surprise (RGS) method to determine burst and pause patterns during tonic ChI firing using the MatLab code available from Storey et al., 2016. This method identifies differences in the firing rate of adjacent spikes against the local log ISI distributions, assigning individual spikes to burst or pause strings based on statistical criteria in comparison to the Gaussian distribution of the entire spike train (Ko et al., 2012). The parameters used for burst and pause detection were: p=0.15 for the calculation of the central location, alpha = 0.05 for Bonferroni correction, Nmin = 2 for minimum number of spikes to be considered a burst/pause, and central distribution calculated as the median ±2 x median average deviation.
 
-## Immunohistochemistry and morphological analysis
+### Immunohistochemistry and morphological analysis
 
 For morphological characterization of recorded ChIs, biocytin (1 mg/ml) was included in the internal pipette solution and allowed to fill the cell for 30–40 min after achieving the whole-cell configuration. Then, slices were fixed with 4% paraformaldehyde in 0.1M PBS overnight at 4°C, washed with Tris-buffered saline (TBS: 50 mM Tris-Cl, 150 mM NaCl, pH 7.5) and incubated with a streptavidin-Dylight 633 conjugate (1:200; Thermo Scientific, Grand Island, NY) in TBS + 0.6% Triton-X100 for 48 hr. The slices were then rinsed and mounted on glass slides using Fluormount-G (Southern Biotech, Birmingham, AL). For morphological reconstruction, serial optical sections encompassing the neurites of biocytin-labeled ChIs were imaged at 0.25 μm2 pixels at a z-depth of 0.74 μm using a Leica DM6 confocal microscope with a 20x/0.7 NA oil immersion objective (Leica HCX PL APO CS). The neurites were traced from the resulting stacks using the Simple Neurite Tracer plugin in Fiji (ImageJ) for Sholl analysis (Ferreira et al., 2014; Longair et al., 2011).
 
-## Gene expression analysis
+### Gene expression analysis
 
 Brain tissue from Chat-Cre x Rpl22HA mice was collected at least 20 hr after the last L-DOPA or saline injection. Striatal tissue ipsilateral to the 6-OHDA lesion from 3 to 4 mice for each experimental group was pooled per replicate (4–6 total replicates per condition), weighed and immediately placed into cold homogenization buffer at 5% (w/v) consisting of (pH 7.4, in mM): 50 Tris, 100 KCl, 12 MgCl2, 1 DTT, 1% Nonidet P40 substitute (Roche, Basel, Switzerland), 0.1 mg/ml cyclohexamide, 1x protease inhibitor cocktail, and 200 U/mL RNAsin (Promega, Madison, WI). The tissue was then homogenized with a powered Dounce homogenizer at 1700 rpm for 14 complete up-down strokes, followed by centrifugation at 10,000 RCF for 10 min at 4°C. Mouse anti-HA antibody (5 μl, HA.11, BioLegend, San Diego, CA; MMS-101R) was added to 800 μl of the resulting supernatant and incubated for 4 hr at 4°C. The mixture was then added to protein-G magnetic beads (Dynabeads 400 μl equivalent, Invitrogen, Carlsbad, CA) and incubated overnight at 4°C. The next day, the beads were separated from the supernatant with a magnet and washed 3 times for 10 min at 4°C in high salt washing buffer consisting of (in mM): 50 Tris, 300 KCl, 12 MgCl2, 0.5 DTT, 1% Nonidet P40 substitute, and 0.1 mg/ml cyclohexamide. After the last wash, the beads were collected and the bound RNA eluted with 350 μl of RLT buffer from the RNeasy Micro Kit. The beads were removed from the RLT buffer and the RNA was isolated according the manufacturer’s instructions (Qiagen, Hilden, Germany). The resulting RNA was assayed for integrity and amount with a Bioanalyzer (Agilent, Santa Clara, CA). All samples exhibited a RNA integrity number (RIN) score of 8.4–10.
 
 cDNA libraries were generated from the resulting RNA with the SuperScript IV VILO master mix (Invitrogen) according to the manufacturer’s protocols. Gene expression was measured using Taqman probes for the target genes and Actb as a housekeeping control assayed in duplex for each well on a CFX96 Touch Real-Time PCR Detection System (Bio-Rad, Hercules, CA) using TaqMan Fast Advanced (Applied Biosystems, Foster City, CA) master mix according to the manufacturer’s instructions. Each sample was assayed in triplicate using 0.33 μl of the cDNA library (undiluted) per reaction. Cycling conditions were: 50° x 2 mins, 95° x 20 s, (95° x 3 s, 60° x 30 s) x 40 cycles. Gene expression is stated as a ratio of the target gene to Actb as determined by 2-ΔCt. The probes were obtained from Applied Biosystems and include: Hcn1 (Mm00468832_m1), Hcn2 (Mm00468538_m1), Hcn3 (Mm01212852_m1), Hcn4 (Mm01176086_m1), Pex5l (Mm00458088_m1), Chat (Mm01221882_m1), Kcnn1 (Mm01349167_m1), Kcnn2 (Mm00446514_m1), Kcnn3 (Mm00446516_m1) and Actb (4352341E).
 
-## Statistical analysis
+### Statistical analysis
 
 Unless stated otherwise, electrophysiological data represent observations from single neurons in slices. We consider each neuron to be a biological replicate, with no technical replicates included in any statistical analysis. The total number of neurons and animals used for each experiment are indicated in the text, figure legends and source data files for each figure. Sample sizes were calculated using G*Power software for three experimental groups assuming the typical variance from our data, effect size = 0.3, α-error = 0.05, and power = 0.95 for physiology experiments and indicated at least 7 data points were needed for each group. For the mRNA expression data, the number of animals per replicate pool were selected based on Doyle et al., 2008 where polyribosomal immunoprecipitation was used to isolate cell-type specific mRNA from striatal tissue. Mice were randomly assigned to receive sham or 6-OHDA lesions. The lesioned animals were again randomized to receive chronic treatment with saline of L-DOPA. The treatment groups were not masked for allocation, data collection, or analysis. For data expressed as dot plots, each symbol represents an individual neuron, the horizontal line denotes the median, and whiskers the interquartile range (25-75th percentile). For bar and line graphs, data are expressed as mean ± standard error of the mean (SEM). Data in the text are expressed as mean ± SEM. The statistical tests used are listed in the figure legends and text. Unless indicated, non-parametric tests were used for all figures where possible. All individual cell data and details of statistical tests and data representation are included in the source data files for each figure. Statistical analysis and data were plotted using GraphPad Prism 8.4 (GraphPad Software, San Diego, CA).

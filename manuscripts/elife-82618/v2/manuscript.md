@@ -102,66 +102,66 @@
 
 ### Affiliations
 
-1. https://ror.org/04bj28v14 Loma Linda University Cancer Center Loma Linda United States
-2. https://ror.org/007ps6h72 Fred Hutchinson Cancer Research Center Seattle United States
-3. https://ror.org/00cvxb145 University of Washington Seattle United States
-4. https://ror.org/03jq88n71 Seattle Cancer Care Alliance Seattle United States
-5. https://ror.org/00f54p054 Stanford University Palo Alto United States
-6. https://ror.org/05dq2gs74 Vanderbilt University Medical Center Nashville United States
+1. Loma Linda University Cancer Center Loma Linda United States ([ROR:04bj28v14](https://ror.org/04bj28v14))
+2. Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+3. University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Seattle Cancer Care Alliance Seattle United States ([ROR:03jq88n71](https://ror.org/03jq88n71))
+5. Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))
+6. Vanderbilt University Medical Center Nashville United States ([ROR:05dq2gs74](https://ror.org/05dq2gs74))
 7. Advanced Cancer Research Group Kirkland United States
-8. https://ror.org/00cm2cb35 Virginia Mason Cancer Institute Seattle United States
-9. https://ror.org/023h0re83 University of Hawaii Cancer Center Honolulu United States
-10. https://ror.org/01e3m7079 University of Cincinnati Cancer Center Cincinnati United States
-11. https://ror.org/02jzgtq86 Dana-Farber Cancer Institute Boston United States
-12. https://ror.org/00cj35179 The University of Kansas Cancer Center Kansas City United States
-13. https://ror.org/02yrq0923 Memorial Sloan Kettering Cancer Center New York United States
-14. https://ror.org/00ysqcn41 Sidney Kimmel Comprehensive Cancer Center, Thomas Jefferson University Philadelphia United States
-15. https://ror.org/05xcyt367 Loyola University Medical Center Maywood United States
-16. https://ror.org/03czfpz43 Winship Cancer Institute, Emory University Atlanta United States
-17. https://ror.org/04drvxt59 Beth Israel Deaconess Medical Center Boston United States
-18. https://ror.org/05hr4m393 Northwest Medical Specialties Tacoma United States
-19. https://ror.org/00hj8s172 Herbert Irving Comprehensive Cancer Center, Columbia University New York United States
-20. https://ror.org/043mz5j54 Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco San Francisco United States
+8. Virginia Mason Cancer Institute Seattle United States ([ROR:00cm2cb35](https://ror.org/00cm2cb35))
+9. University of Hawaii Cancer Center Honolulu United States ([ROR:023h0re83](https://ror.org/023h0re83))
+10. University of Cincinnati Cancer Center Cincinnati United States ([ROR:01e3m7079](https://ror.org/01e3m7079))
+11. Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+12. The University of Kansas Cancer Center Kansas City United States ([ROR:00cj35179](https://ror.org/00cj35179))
+13. Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
+14. Sidney Kimmel Comprehensive Cancer Center, Thomas Jefferson University Philadelphia United States ([ROR:00ysqcn41](https://ror.org/00ysqcn41))
+15. Loyola University Medical Center Maywood United States ([ROR:05xcyt367](https://ror.org/05xcyt367))
+16. Winship Cancer Institute, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+17. Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+18. Northwest Medical Specialties Tacoma United States ([ROR:05hr4m393](https://ror.org/05hr4m393))
+19. Herbert Irving Comprehensive Cancer Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+20. Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 21. Inova Schar Cancer Institute Fairfax United States
-22. https://ror.org/02qp3tb03 Mayo Clinic Rochester United States
+22. Mayo Clinic Rochester United States ([ROR:02qp3tb03](https://ror.org/02qp3tb03))
 23. ThedaCare Cancer Care Appleton United States
-24. https://ror.org/03jhe7195 University of Illinois Hospital & Health Sciences System Chicago United States
-25. https://ror.org/04b2p2059 St. Elizabeth Healthcare Edgewood United States
-26. https://ror.org/00jmfr291 Rogel Cancer Center, University of Michigan-Ann Arbor Ann Arbor United States
-27. https://ror.org/04a9tmd77 Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States
-28. https://ror.org/03xjacd83 Cleveland Clinic Cleveland United States
-29. https://ror.org/00rs6vg23 The Ohio State University Comprehensive Cancer Center Columbus United States
-30. https://ror.org/0193sb042 Henry Ford Cancer Institute, Henry Ford Hospital Detroit United States
-31. https://ror.org/00nhpk003 Mount Auburn Hospital Cambridge United States
+24. University of Illinois Hospital & Health Sciences System Chicago United States ([ROR:03jhe7195](https://ror.org/03jhe7195))
+25. St. Elizabeth Healthcare Edgewood United States ([ROR:04b2p2059](https://ror.org/04b2p2059))
+26. Rogel Cancer Center, University of Michigan-Ann Arbor Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+27. Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+28. Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+29. The Ohio State University Comprehensive Cancer Center Columbus United States ([ROR:00rs6vg23](https://ror.org/00rs6vg23))
+30. Henry Ford Cancer Institute, Henry Ford Hospital Detroit United States ([ROR:0193sb042](https://ror.org/0193sb042))
+31. Mount Auburn Hospital Cambridge United States ([ROR:00nhpk003](https://ror.org/00nhpk003))
 32. Penn State Health St Joseph Cancer Center Reading United States
-33. https://ror.org/01kd65564 Mays Cancer Center, The University of Texas Health San Antonio MD Anderson Cancer Center San Antonio United States
-34. https://ror.org/05gq02987 Lifespan Cancer Institute, Brown University Providence United States
-35. https://ror.org/05xcyt367 Stritch School of Medicine, Loyola University Maywood United States
-36. https://ror.org/017zqws13 Masonic Cancer Center, University of Minnesota Minneapolis United States
-37. https://ror.org/00skc2q21 Baptist Cancer Center Memphis United States
-38. https://ror.org/04mvr1r74 Intermountain Healthcare Salt Lake City United States
-39. https://ror.org/02dgjyy92 Sylvester Comprehensive Cancer Center, University of Miami Miller School of Medicine Miami United States
-40. https://ror.org/05cf8a891 Montefiore Medical Center, Albert Einstein College of Medicine Bronx United States
+33. Mays Cancer Center, The University of Texas Health San Antonio MD Anderson Cancer Center San Antonio United States ([ROR:01kd65564](https://ror.org/01kd65564))
+34. Lifespan Cancer Institute, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+35. Stritch School of Medicine, Loyola University Maywood United States ([ROR:05xcyt367](https://ror.org/05xcyt367))
+36. Masonic Cancer Center, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+37. Baptist Cancer Center Memphis United States ([ROR:00skc2q21](https://ror.org/00skc2q21))
+38. Intermountain Healthcare Salt Lake City United States ([ROR:04mvr1r74](https://ror.org/04mvr1r74))
+39. Sylvester Comprehensive Cancer Center, University of Miami Miller School of Medicine Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))
+40. Montefiore Medical Center, Albert Einstein College of Medicine Bronx United States ([ROR:05cf8a891](https://ror.org/05cf8a891))
 41. Kaiser Permanente Northwest Portland United States
-42. https://ror.org/02y3ad647 Division of Hematology and Oncology, University of Florida Health Cancer Center Gainesville United States
-43. https://ror.org/0168r3w48 Moores Cancer Center, University of California, San Diego San Diego United States
-44. https://ror.org/00y4zzh67 Division of Radiation Oncology, George Washington University Washington United States
+42. Division of Hematology and Oncology, University of Florida Health Cancer Center Gainesville United States ([ROR:02y3ad647](https://ror.org/02y3ad647))
+43. Moores Cancer Center, University of California, San Diego San Diego United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+44. Division of Radiation Oncology, George Washington University Washington United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
 45. Hartford HealthCare Cancer Institute Hartford United States
-46. https://ror.org/0499dwk57 Roswell Park Comprehensive Cancer Center Buffalo United States
-47. https://ror.org/05rrcem69 UC Davis Comprehensive Cancer Center, University of California, Davis Davis United States
-48. https://ror.org/002pd6e78 Massachusetts General Hospital Boston United States
-49. https://ror.org/058az4744 Virtua Health Marlton United States
-50. https://ror.org/040gcmg81 Division of Cancer Control and Population Sciences, National Cancer Institute Rockville United States
-51. https://ror.org/05jr4qt09 Carl & Dorothy Bennett Cancer Center, Stamford Hospital Stamford United States
+46. Roswell Park Comprehensive Cancer Center Buffalo United States ([ROR:0499dwk57](https://ror.org/0499dwk57))
+47. UC Davis Comprehensive Cancer Center, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+48. Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+49. Virtua Health Marlton United States ([ROR:058az4744](https://ror.org/058az4744))
+50. Division of Cancer Control and Population Sciences, National Cancer Institute Rockville United States ([ROR:040gcmg81](https://ror.org/040gcmg81))
+51. Carl & Dorothy Bennett Cancer Center, Stamford Hospital Stamford United States ([ROR:05jr4qt09](https://ror.org/05jr4qt09))
 52. METAvivor Annapolis United States
-53. https://ror.org/04d5w7479 Aurora Cancer Care, Advocate Aurora Health Milwaukee United States
-54. https://ror.org/03j7sze86 Yale Cancer Center, Yale University School of Medicine New Haven United States
+53. Aurora Cancer Care, Advocate Aurora Health Milwaukee United States ([ROR:04d5w7479](https://ror.org/04d5w7479))
+54. Yale Cancer Center, Yale University School of Medicine New Haven United States ([ROR:03j7sze86](https://ror.org/03j7sze86))
 
 † Corresponding author
 
 ## Abstract
 
-Limited information is available for patients with breast cancer (BC) and coronavirus disease 2019 (COVID-19), especially among underrepresented racial/ethnic populations. This is a COVID-19 and Cancer Consortium (CCC19) registry-based retrospective cohort study of females with active or history of BC and laboratory-confirmed severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infection diagnosed between March 2020 and June 2021 in the US. Primary outcome was COVID-19 severity measured on a five-level ordinal scale, including none of the following complications, hospitalization, intensive care unit admission, mechanical ventilation, and all-cause mortality. Multivariable ordinal logistic regression model identified characteristics associated with COVID-19 severity. 1383 female patient records with BC and COVID-19 were included in the analysis, the median age was 61 years, and median follow-up was 90 days. Multivariable analysis revealed higher odds of COVID-19 severity for older age (aOR per decade, 1.48 [95% CI, 1.32–1.67]); Black patients (aOR 1.74; 95 CI 1.24–2.45), Asian Americans and Pacific Islander patients (aOR 3.40; 95 CI 1.70–6.79) and Other (aOR 2.97; 95 CI 1.71–5.17) racial/ethnic groups; worse ECOG performance status (ECOG PS ≥2: aOR, 7.78 [95% CI, 4.83–12.5]); pre-existing cardiovascular (aOR, 2.26 [95% CI, 1.63–3.15])/pulmonary comorbidities (aOR, 1.65 [95% CI, 1.20–2.29]); diabetes mellitus (aOR, 2.25 [95% CI, 1.66–3.04]); and active and progressing cancer (aOR, 12.5 [95% CI, 6.89–22.6]). Hispanic ethnicity, timing, and type of anti-cancer therapy modalities were not significantly associated with worse COVID-19 outcomes. The total all-cause mortality and hospitalization rate for the entire cohort was 9% and 37%, respectively however, it varied according to the BC disease status. Using one of the largest registries on cancer and COVID-19, we identified patient and BC-related factors associated with worse COVID-19 outcomes. After adjusting for baseline characteristics, underrepresented racial/ethnic patients experienced worse outcomes compared to non-Hispanic White patients. This study was partly supported by National Cancer Institute grant number P30 CA068485 to Tianyi Sun, Sanjay Mishra, Benjamin French, Jeremy L Warner; P30-CA046592 to Christopher R Friese; P30 CA023100 for Rana R McKay; P30-CA054174 for Pankil K Shah and Dimpy P Shah; KL2 TR002646 for Pankil Shah and the American Cancer Society and Hope Foundation for Cancer Research (MRSG-16-152-01-CCE) and P30-CA054174 for Dimpy P Shah. REDCap is developed and supported by Vanderbilt Institute for Clinical and Translational Research grant support (UL1 TR000445 from NCATS/NIH). The funding sources had no role in the writing of the manuscript or the decision to submit it for publication. CCC19 registry is registered on ClinicalTrials.gov, NCT04354701 .
+Background:Limited information is available for patients with breast cancer (BC) and coronavirus disease 2019 (COVID-19), especially among underrepresented racial/ethnic populations.Methods:This is a COVID-19 and Cancer Consortium (CCC19) registry-based retrospective cohort study of females with active or history of BC and laboratory-confirmed severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) infection diagnosed between March 2020 and June 2021 in the US. Primary outcome was COVID-19 severity measured on a five-level ordinal scale, including none of the following complications, hospitalization, intensive care unit admission, mechanical ventilation, and all-cause mortality. Multivariable ordinal logistic regression model identified characteristics associated with COVID-19 severity.Results:1383 female patient records with BC and COVID-19 were included in the analysis, the median age was 61 years, and median follow-up was 90 days. Multivariable analysis revealed higher odds of COVID-19 severity for older age (aOR per decade, 1.48 [95% CI, 1.32–1.67]); Black patients (aOR 1.74; 95 CI 1.24–2.45), Asian Americans and Pacific Islander patients (aOR 3.40; 95 CI 1.70–6.79) and Other (aOR 2.97; 95 CI 1.71–5.17) racial/ethnic groups; worse ECOG performance status (ECOG PS ≥2: aOR, 7.78 [95% CI, 4.83–12.5]); pre-existing cardiovascular (aOR, 2.26 [95% CI, 1.63–3.15])/pulmonary comorbidities (aOR, 1.65 [95% CI, 1.20–2.29]); diabetes mellitus (aOR, 2.25 [95% CI, 1.66–3.04]); and active and progressing cancer (aOR, 12.5 [95% CI, 6.89–22.6]). Hispanic ethnicity, timing, and type of anti-cancer therapy modalities were not significantly associated with worse COVID-19 outcomes. The total all-cause mortality and hospitalization rate for the entire cohort was 9% and 37%, respectively however, it varied according to the BC disease status.Conclusions:Using one of the largest registries on cancer and COVID-19, we identified patient and BC-related factors associated with worse COVID-19 outcomes. After adjusting for baseline characteristics, underrepresented racial/ethnic patients experienced worse outcomes compared to non-Hispanic White patients.Funding:This study was partly supported by National Cancer Institute grant number P30 CA068485 to Tianyi Sun, Sanjay Mishra, Benjamin French, Jeremy L Warner; P30-CA046592 to Christopher R Friese; P30 CA023100 for Rana R McKay; P30-CA054174 for Pankil K Shah and Dimpy P Shah; KL2 TR002646 for Pankil Shah and the American Cancer Society and Hope Foundation for Cancer Research (MRSG-16-152-01-CCE) and P30-CA054174 for Dimpy P Shah. REDCap is developed and supported by Vanderbilt Institute for Clinical and Translational Research grant support (UL1 TR000445 from NCATS/NIH). The funding sources had no role in the writing of the manuscript or the decision to submit it for publication.Clinical trial number:CCC19 registry is registered on ClinicalTrials.gov, NCT04354701.
 
 ## Introduction
 
@@ -171,19 +171,19 @@ Breast cancer (BC) is the most common cancer diagnosed in females and affects al
 
 ## Methods
 
-## Study population
+### Study population
 
 The COVID-19 and Cancer Consortium (CCC19) consists of 129 member institutions capturing granular, detailed, and uniform data on demographic and clinical characteristics, treatment information, and outcomes of COVID-19. Details of CCC19 protocol, data collection, and quality assurance have been previously described (Kuderer et al., 2020; COVID-19 and Cancer Consortium. Electronic address: jeremy.warner@vumc.org and COVID-19 and Cancer Consortium, 2020). This registry-based retrospective cohort study included all female adults (age ≥18 years) with an active or previous history of invasive BC and laboratory-confirmed diagnosis of SARS-CoV-2 by polymerase chain reaction (PCR) and/or serology from March 17, 2020, to June 16, 2021, in the US. Patient records with multiple invasive malignancies including history of multiple invasive BC were excluded; patients with unknown or missing race and ethnicity, inadequate data quality (quality score >4), and those not evaluable for the primary ordinal outcome were also excluded (supplementary appendix 1) (COVID-19 and Cancer Consortium. Electronic address: jeremy.warner@vumc.org and COVID-19 and Cancer Consortium, 2020). This study was exempt from institutional review board (IRB) review (VUMC IRB#200467) and was approved by IRBs at participating sites per institutional policy. CCC19 registry is registered on ClinicalTrials.gov, NCT04354701.
 
-## Outcome definitions
+### Outcome definitions
 
 The primary outcome was a five-level ordinal scale of COVID-19 severity based on each individual patient’s most severe reported disease status: none of the following complications; admitted to the hospital; admitted to an intensive care unit (ICU); mechanically ventilated at any time after COVID-19 diagnosis; or death from any cause. Other COVID-19-related complications (cardiovascular; gastrointestinal; and pulmonary complications, acute kidney injury, multisystem organ failure, superimposed infection, sepsis, any bleeding); 30-day mortality; and anti-COVID-19 directed interventions (supplemental oxygen, remdesivir, systemic corticosteroids, hydroxychloroquine, and other treatments) are also reported.
 
-## Covariates
+### Covariates
 
 Covariates were selected a priori and included: age; sex; race/ethnicity (non-Hispanic White [NHW], Black, Hispanic, Asian Americans and Pacific Islanders [AAPI], and Other) as recorded in the EHR, based on the Center for Disease Control and Prevention Race and Ethnicity codes (CDC, 2021); US census region of reporting institution (Northeast [NE], Midwest [MW], South and West); month/year of COVID-19 diagnosis (classified into 4-month intervals); smoking status; obesity; comorbidities (cardiovascular, pulmonary, renal, or diabetes mellitus); Eastern Cooperative Oncology Group (ECOG) performance status (PS); BC subtypes based on hormone receptor (HR) and human epidermal growth factor receptor 2 (HER2) expression (HR+/HER2-, HR+/HER2+, HR-/HER2+, HR-/HER2- [triple negative], missing/unknown); cancer status at time of COVID-19 diagnosis; timing of most recent anti-cancer therapy relative to COVID-19 diagnosis (never or after COVID-19 diagnosis, 0–4 weeks, 1–3 months, >3 months); and modality of anti-cancer therapy received within 3 months of COVID-19 diagnosis. Cancer status was defined as remission or no evidence of disease (NED) for >5 years, remission or NED for ≤5 years, and active disease, with active disease further classified as responding to therapy, stable, or progressing. Anti-cancer modalities were categorized as chemotherapy; cyclin-dependent kinase (CDK) 4/6 inhibitor; anti-HER2 therapy; other targeted therapy (non-CDK 4/6 inhibitor, non-anti-HER2 therapy); endocrine therapy; immunotherapy; and locoregional therapy (surgery and/or radiation). In the survey, drug classes (modalities) along with a few specific drugs (through checkboxes) were captured. Survey respondents were also encouraged to provide additional details in the free text boxes which were reviewed extensively by the Informatics Core at VUMC, and queries were sent to participating sites to clarify ambiguous reports. CDK 4/6 inhibitor, anti-HER2 therapy, and other targeted therapy information were extracted from free text in the registry survey while the others were checkboxes. In addition, baseline severity of COVID-19 at presentation, classified as mild (no hospitalization indicated), moderate (hospitalization indicated), and severe (ICU admission indicated), was collected. Other variables included location of patient residence (urban, suburban, rural) and treatment center characteristics (academic medical center, community practice, tertiary care center). The CCC19 data dictionary is available at https://github.com/covidncancer/CCC19_dictionary (Mishra and Warner, 2023). The project approved variables used for the analysis are provided in supplementary appendix 3.
 
-## Statistical methods
+### Statistical methods
 
 Covariates, outcome definitions, and statistical analysis plan were prespecified by the authors and the CCC19 Research Coordinating Center prior to analysis (supplementary appendix 2). Standard descriptive statistics were used to summarize prognostic factors, rates of clinical complications, interventions during hospitalization, and rates of outcomes such as 30-day mortality, hospitalization, oxygen requirement, ICU admission, mechanical ventilation, and overall mortality among racial and ethnic groups. The primary analysis was restricted to females with BC.
 
@@ -195,27 +195,1126 @@ Multivariable ordinal logistic regression models for the COVID-19 severity outco
 
 ## Results
 
-## Baseline characteristics and COVID-19 outcomes in female patients with BC
+### Baseline characteristics and COVID-19 outcomes in female patients with BC
 
 Of the total 12,034 reports on all cancers submitted to the CCC19 registry at the time of this analysis, 1383 females with BC met the eligibility criteria and were included (Figure 1). The median age for the cohort was 61 years (IQR 51–72 years) and median follow-up was 90 (IQR 30–135) days. BC subtypes by biomarker distribution in CCC19 registry included: 52% HR+/HER2-, 14% HR+/HER2+, 8% HR-/HER2+, 11% triple negative, and 14% unknown or missing. BC subtype distribution based on biomarkers in the CCC19 cohort are similar to SEER data which adds broader applicability of these findings (SEER, 2022). With regard to BC status, 27% were in remission/NED for over 5 years and 32% were in remission/NED for less than 5 years since the initial BC diagnosis and 32% had active cancer (13% had active and responding, 12% had active and stable and 7% had active and progressing cancer). 57% of patients had received some form of anti-cancer therapy within 3 months of COVID-19 diagnosis. The unadjusted total all-cause mortality and hospitalization rate, included in the primary ordinal outcome, for the female cohort was 9% and 37%, respectively. However, the unadjusted rates of COVID-19 outcomes varied by their BC status; females with active and progressing cancer had the highest all-cause mortality (38%) and hospitalization rates (72%) compared to the rest of the group (Appendix 5—table 1). Other clinical outcomes for the female cohort included 30-day all-cause mortality (6%), mechanical ventilation (5%), and ICU care (8%). Additional details on patients with BC and COVID-19 by specific characteristics of interest are presented below.
 
-## Characteristics of female patients with BC and COVID-19 by race/ethnicity
+**Table 1.**
+ Baseline characteristics by race/ethnicity.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NHW</th>
+      <th>Black</th>
+      <th>Hispanic</th>
+      <th>AAPI</th>
+      <th>Others</th>
+      <th>All</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>(n=736, 53%)</td>
+      <td>(n=289, 21%)</td>
+      <td>(n=235, 17%)</td>
+      <td>(n=45, 3%)</td>
+      <td>(n=78, 6%)</td>
+      <td>(n=1383, 100%)</td>
+    </tr>
+    <tr>
+      <td>Median age, years* [IQR]</td>
+      <td>64 (54–76)</td>
+      <td>61 (52–69)</td>
+      <td>53 (46–62)</td>
+      <td>54 (43–73)</td>
+      <td>62 (53–71)</td>
+      <td>61 (51–72)</td>
+    </tr>
+    <tr>
+      <td>Median follow-up, days [IQR]</td>
+      <td>90 (30–135)</td>
+      <td>90 (30–180)</td>
+      <td>90 (30–135)</td>
+      <td>42 (21–90)</td>
+      <td>70 (30–180)</td>
+      <td>90 (30–135)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Smoking status</td>
+    </tr>
+    <tr>
+      <td>Never</td>
+      <td>460 (62%)</td>
+      <td>186 (64%)</td>
+      <td>180 (77%)</td>
+      <td>35 (78%)</td>
+      <td>50 (64%)</td>
+      <td>911 (66%)</td>
+    </tr>
+    <tr>
+      <td>Current or former</td>
+      <td>261 (35%)</td>
+      <td>95 (33%)</td>
+      <td>53 (23%)</td>
+      <td>8 (18%)</td>
+      <td>25 (32%)</td>
+      <td>442 (32%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>15 (2%)</td>
+      <td>8 (3%)</td>
+      <td>2 (1%)</td>
+      <td>2 (4%)</td>
+      <td>3 (4%)</td>
+      <td>30 (2%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Obesity</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>421 (57%)</td>
+      <td>133 (46%)</td>
+      <td>116 (49%)</td>
+      <td>32 (71%)</td>
+      <td>45 (58%)</td>
+      <td>747 (54%)</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>308 (42%)</td>
+      <td>156 (54%)</td>
+      <td>116 (49%)</td>
+      <td>13 (29%)</td>
+      <td>33 (42%)</td>
+      <td>626 (45%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>7 (1%)</td>
+      <td>0 (0%)</td>
+      <td>3 (1%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>10 (1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Comorbidities†</td>
+    </tr>
+    <tr>
+      <td>Cardiovascular</td>
+      <td>179 (24%)</td>
+      <td>60 (21%)</td>
+      <td>14 (6%)</td>
+      <td>7 (16%)</td>
+      <td>11 (14%)</td>
+      <td>271 (20%)</td>
+    </tr>
+    <tr>
+      <td>Pulmonary</td>
+      <td>125 (17%)</td>
+      <td>65 (22%)</td>
+      <td>33 (14%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>7 (9%)</td>
+      <td>234 (17%)</td>
+    </tr>
+    <tr>
+      <td>Renal disease</td>
+      <td>66 (9%)</td>
+      <td>31 (11%)</td>
+      <td>13 (6%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>&lt;5 (&lt;6%)</td>
+      <td>115 (8%)</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td>127 (17%)</td>
+      <td>98 (34%)</td>
+      <td>51 (22%)</td>
+      <td>10 (22%)</td>
+      <td>20 (26%)</td>
+      <td>306 (22%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>9 (1%)</td>
+      <td>1 (&lt;1%)</td>
+      <td>5 (2%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>15 (1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">ECOG performance status</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>314 (43%)</td>
+      <td>130 (45%)</td>
+      <td>123 (52%)</td>
+      <td>18 (40%)</td>
+      <td>32 (41%)</td>
+      <td>617 (45%)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>135 (18%)</td>
+      <td>72 (25%)</td>
+      <td>48 (20%)</td>
+      <td>10 (22%)</td>
+      <td>16 (21%)</td>
+      <td>281 (20%)</td>
+    </tr>
+    <tr>
+      <td>2+</td>
+      <td>69 (9%)</td>
+      <td>33 (11%)</td>
+      <td>15 (6%)</td>
+      <td>5 (11%)</td>
+      <td>5 (6%)</td>
+      <td>127 (9%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>218 (30%)</td>
+      <td>53 (18%)</td>
+      <td>49 (21%)</td>
+      <td>12 (27%)</td>
+      <td>25 (32%)</td>
+      <td>357 (26%)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>0 (0%)</td>
+      <td>1 (&lt;1%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>1 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Region</td>
+    </tr>
+    <tr>
+      <td>Northeast</td>
+      <td>247 (34%)</td>
+      <td>101 (35%)</td>
+      <td>106 (45%)</td>
+      <td>12 (27%)</td>
+      <td>26 (33%)</td>
+      <td>492 (36%)</td>
+    </tr>
+    <tr>
+      <td>Midwest</td>
+      <td>239 (32%)</td>
+      <td>110 (38%)</td>
+      <td>23 (10%)</td>
+      <td>8 (18%)</td>
+      <td>12 (15%)</td>
+      <td>392 (28%)</td>
+    </tr>
+    <tr>
+      <td>South</td>
+      <td>116 (16%)</td>
+      <td>58 (20%)</td>
+      <td>27 (11%)</td>
+      <td>X*</td>
+      <td>14 (18%)</td>
+      <td>218 (16%)</td>
+    </tr>
+    <tr>
+      <td>West</td>
+      <td>128 (17%)</td>
+      <td>16 (6%)</td>
+      <td>77 (33%)</td>
+      <td>22 (49%)</td>
+      <td>24 (31%)</td>
+      <td>267 (19%)</td>
+    </tr>
+    <tr>
+      <td>Undesignated</td>
+      <td>6 (1%)</td>
+      <td>4 (1%)</td>
+      <td>2 (1%)</td>
+      <td>3 (7%)*</td>
+      <td>2 (3%)</td>
+      <td>14 (1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Month/year of COVID-19 diagnosis</td>
+    </tr>
+    <tr>
+      <td>Jan-Apr 2020</td>
+      <td>140 (19%)</td>
+      <td>74 (26%)</td>
+      <td>41 (17%)</td>
+      <td>8 (18%)</td>
+      <td>20 (26%)</td>
+      <td>283 (20%)</td>
+    </tr>
+    <tr>
+      <td>May-Aug 2020</td>
+      <td>279 (38%)</td>
+      <td>141 (49%)</td>
+      <td>101 (43%)</td>
+      <td>24 (53%)</td>
+      <td>30 (38%)</td>
+      <td>575 (42%)</td>
+    </tr>
+    <tr>
+      <td>Sept-Dec 2020</td>
+      <td>197 (27%)</td>
+      <td>42 (15%)</td>
+      <td>50 (21%)</td>
+      <td>5 (11%)</td>
+      <td>16 (21%)</td>
+      <td>310 (22%)</td>
+    </tr>
+    <tr>
+      <td>Jan-Jun 2021</td>
+      <td>118 (16%)</td>
+      <td>32 (11%)</td>
+      <td>41 (17%)</td>
+      <td>7 (16%)</td>
+      <td>12 (15%)</td>
+      <td>210 (15%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>2 (&lt;1%)</td>
+      <td>0 (0%)</td>
+      <td>2 (1%)</td>
+      <td>1 (2%)</td>
+      <td>0 (0%)</td>
+      <td>5 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Area of patient residence</td>
+    </tr>
+    <tr>
+      <td>Urban</td>
+      <td>193 (26%)</td>
+      <td>136 (47%)</td>
+      <td>124 (53%)</td>
+      <td>13 (29%)</td>
+      <td>30 (38%)</td>
+      <td>496 (36%)</td>
+    </tr>
+    <tr>
+      <td>Suburban</td>
+      <td>315 (43%)</td>
+      <td>77 (27%)</td>
+      <td>65 (28%)</td>
+      <td>17 (38%)</td>
+      <td>31 (40%)</td>
+      <td>505 (37%)</td>
+    </tr>
+    <tr>
+      <td>Rural</td>
+      <td>81 (11%)</td>
+      <td>7 (2%)</td>
+      <td>9 (4%)</td>
+      <td>X*</td>
+      <td>0 (0%)</td>
+      <td>98 (7%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>147 (20%)</td>
+      <td>69 (24%)</td>
+      <td>37 (16%)</td>
+      <td>15 (33%)*</td>
+      <td>17 (22%)</td>
+      <td>284 (21%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Treatment center characteristics</td>
+    </tr>
+    <tr>
+      <td>Academic medical center</td>
+      <td>123 (17%)</td>
+      <td>102 (35%)</td>
+      <td>43 (18%)</td>
+      <td>7 (16%)</td>
+      <td>11 (14%)</td>
+      <td>286 (21%)</td>
+    </tr>
+    <tr>
+      <td>Community practice</td>
+      <td>238 (32%)</td>
+      <td>51 (18%)</td>
+      <td>44 (19%)</td>
+      <td>X*</td>
+      <td>23 (29%)</td>
+      <td>359 (26%)</td>
+    </tr>
+    <tr>
+      <td>Tertiary care center</td>
+      <td>375 (51%)</td>
+      <td>136 (47%)</td>
+      <td>147 (63%)</td>
+      <td>35 (78%)</td>
+      <td>44 (56%)</td>
+      <td>737 (53%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>1 (&lt;1%)</td>
+      <td>3 (7%)*</td>
+      <td>0 (0%)</td>
+      <td>1 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Receptor status</td>
+    </tr>
+    <tr>
+      <td>HR+/HER2-</td>
+      <td>419 (57%)</td>
+      <td>135 (47%)</td>
+      <td>102 (43%)</td>
+      <td>22 (49%)</td>
+      <td>43 (55%)</td>
+      <td>721 (52%)</td>
+    </tr>
+    <tr>
+      <td>HR+/HER2+</td>
+      <td>102 (14%)</td>
+      <td>35 (12%)</td>
+      <td>43 (18%)</td>
+      <td>7 (16%)</td>
+      <td>9 (12%)</td>
+      <td>196 (14%)</td>
+    </tr>
+    <tr>
+      <td>HR-/HER2+</td>
+      <td>46 (6%)</td>
+      <td>28 (10%)</td>
+      <td>32 (14%)</td>
+      <td>X*</td>
+      <td>X*</td>
+      <td>111 (8%)</td>
+    </tr>
+    <tr>
+      <td>Triple negative</td>
+      <td>57 (8%)</td>
+      <td>54 (19%)</td>
+      <td>35 (15%)</td>
+      <td>5 (11%)</td>
+      <td>7 (9%)</td>
+      <td>158 (11%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>112 (15%)</td>
+      <td>37 (13%)</td>
+      <td>23 (10%)</td>
+      <td>11 (24%)</td>
+      <td>19 (24%)*</td>
+      <td>197 (14%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Cancer status</td>
+    </tr>
+    <tr>
+      <td>Remission/NED, &gt;5 years</td>
+      <td>247 (34%)</td>
+      <td>76 (26%)</td>
+      <td>23 (10%)</td>
+      <td>9 (20%)</td>
+      <td>20 (26%)</td>
+      <td>375 (27%)</td>
+    </tr>
+    <tr>
+      <td>Remission/NED, &lt;5 years</td>
+      <td>234 (32%)</td>
+      <td>100 (35%)</td>
+      <td>77 (33%)</td>
+      <td>11 (24%)</td>
+      <td>26 (33%)</td>
+      <td>448 (32%)</td>
+    </tr>
+    <tr>
+      <td>Active and responding</td>
+      <td>68 (9%)</td>
+      <td>35 (12%)</td>
+      <td>56 (24%)</td>
+      <td>X*</td>
+      <td>11 (14%)</td>
+      <td>173 (13%)</td>
+    </tr>
+    <tr>
+      <td>Active and stable</td>
+      <td>91 (12%)</td>
+      <td>28 (10%)</td>
+      <td>35 (15%)</td>
+      <td>10 (22%)</td>
+      <td>5 (6%)</td>
+      <td>169 (12%)</td>
+    </tr>
+    <tr>
+      <td>Active and progressing</td>
+      <td>41 (6%)</td>
+      <td>27 (9%)</td>
+      <td>20 (9%)</td>
+      <td>6 (13%)</td>
+      <td>X*</td>
+      <td>97 (7%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>48 (7%)</td>
+      <td>19 (7%)</td>
+      <td>22 (9%)</td>
+      <td>6 (13%)*</td>
+      <td>15 (19%)*</td>
+      <td>104 (8%)</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>7 (1%)</td>
+      <td>4 (1%)</td>
+      <td>2 (1%)</td>
+      <td>3 (7%)</td>
+      <td>1 (1%)</td>
+      <td>17 (1%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Timing of anti-cancer therapy</td>
+    </tr>
+    <tr>
+      <td>Never/after COVID-19</td>
+      <td>24 (3%)</td>
+      <td>10 (3%)</td>
+      <td>7 (3%)</td>
+      <td>X*</td>
+      <td>7 (9%)</td>
+      <td>50 (4%)</td>
+    </tr>
+    <tr>
+      <td>0–4 weeks</td>
+      <td>364 (49%)</td>
+      <td>135 (47%)</td>
+      <td>158 (67%)</td>
+      <td>25 (56%)</td>
+      <td>39 (50%)</td>
+      <td>721 (52%)</td>
+    </tr>
+    <tr>
+      <td>1–3 months</td>
+      <td>26 (4%)</td>
+      <td>20 (7%)</td>
+      <td>19 (8%)</td>
+      <td>0 (0%)</td>
+      <td>X*</td>
+      <td>69 (5%)</td>
+    </tr>
+    <tr>
+      <td>&gt;3 months</td>
+      <td>303 (41%)</td>
+      <td>118 (41%)</td>
+      <td>45 (19%)</td>
+      <td>18 (40%)</td>
+      <td>24 (31%)</td>
+      <td>508 (37%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>19 (3%)</td>
+      <td>6 (2%)</td>
+      <td>6 (3%)</td>
+      <td>2 (4%)*</td>
+      <td>8 (10%)*</td>
+      <td>35 (3%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Modality of active anti-cancer therapy‡, §</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>333 (45%)</td>
+      <td>127 (44%)</td>
+      <td>53 (23%)</td>
+      <td>20 (44%)</td>
+      <td>30 (38%)</td>
+      <td>563 (41%)</td>
+    </tr>
+    <tr>
+      <td>Chemotherapy</td>
+      <td>117 (16%)</td>
+      <td>68 (24%)</td>
+      <td>88 (37%)</td>
+      <td>11 (24%)</td>
+      <td>14 (18%)</td>
+      <td>298 (22%)</td>
+    </tr>
+    <tr>
+      <td>Targeted therapy</td>
+      <td>112 (15%)</td>
+      <td>38 (13%)</td>
+      <td>59 (25%)</td>
+      <td>8 (18%)</td>
+      <td>11 (14%)</td>
+      <td>228 (16%)</td>
+    </tr>
+    <tr>
+      <td>Anti-HER2 therapy</td>
+      <td>60 (8%)</td>
+      <td>17 (6%)</td>
+      <td>36 (15%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>&lt;5 (&lt;6%)</td>
+      <td>123 (9%)</td>
+    </tr>
+    <tr>
+      <td>CDK4/6 inhibitor</td>
+      <td>33 (4%)</td>
+      <td>12 (4%)</td>
+      <td>14 (6%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>&lt;5 (&lt;6%)</td>
+      <td>65 (5%)</td>
+    </tr>
+    <tr>
+      <td>Other¶</td>
+      <td>14 (2%)</td>
+      <td>5 (2%)</td>
+      <td>&lt;5 (&lt;2%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>0 (0%)</td>
+      <td>24 (2%)</td>
+    </tr>
+    <tr>
+      <td>Endocrine therapy</td>
+      <td>283 (38%)</td>
+      <td>86 (30%)</td>
+      <td>91 (39%)</td>
+      <td>15 (33%)</td>
+      <td>26 (33%)</td>
+      <td>501 (36%)</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy</td>
+      <td>12 (2%)</td>
+      <td>8 (3%)</td>
+      <td>&lt;5 (&lt;2%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>&lt;5 (&lt;6%)</td>
+      <td>28 (2%)</td>
+    </tr>
+    <tr>
+      <td>Local (surgery/radiation)</td>
+      <td>80 (11%)</td>
+      <td>37 (13%)</td>
+      <td>41 (17%)</td>
+      <td>&lt;5 (&lt;11%)</td>
+      <td>9 (12%)</td>
+      <td>172 (12%)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13 (2%)</td>
+      <td>3 (1%)</td>
+      <td>2 (1%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>18 (1%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>12 (2%)</td>
+      <td>7 (2%)</td>
+      <td>5 (2%)</td>
+      <td>0 (0%)</td>
+      <td>5 (6%)</td>
+      <td>29 (2%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Severity of COVID-19</td>
+    </tr>
+    <tr>
+      <td>Mild</td>
+      <td>535 (73%)</td>
+      <td>177 (61%)</td>
+      <td>173 (74%)</td>
+      <td>28 (62%)</td>
+      <td>50 (64%)</td>
+      <td>963 (70%)</td>
+    </tr>
+    <tr>
+      <td>Moderate</td>
+      <td>174 (24%)</td>
+      <td>97 (34%)</td>
+      <td>56 (24%)</td>
+      <td>14 (31%)</td>
+      <td>21 (27%)</td>
+      <td>362 (26%)</td>
+    </tr>
+    <tr>
+      <td>Severe</td>
+      <td>25 (3%)</td>
+      <td>15 (5%)</td>
+      <td>6 (3%)</td>
+      <td>X*</td>
+      <td>7 (9%)</td>
+      <td>56 (4%)</td>
+    </tr>
+    <tr>
+      <td>Missing/unknown</td>
+      <td>2 (&lt;1%)</td>
+      <td>0 (0%)</td>
+      <td>0 (0%)</td>
+      <td>3 (7%)*</td>
+      <td>0 (0%)</td>
+      <td>2 (&lt;1%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Variable categories with one to five cases are masked by replacing with N < 5 according to CCC19 policy.*Cells combined to mask N<5 according to CCC19 low count policy.†Age was truncated at 90.‡Percentages could sum to >100% because categories are not mutually exclusive.§Within 3 months of COVID-19 diagnosis.¶Therapies other than anti-Her2 therapy or CDK4/6 inhibitor._
+
+### Characteristics of female patients with BC and COVID-19 by race/ethnicity
 
 Of the 1383 female patients, 736 (53%) were NHW, 289 (21%) Black, 235 (17%) Hispanic, 45 (3%) AAPI, and 78 (6%) belonged to Other racial/ethnic group. Baseline characteristics of females stratified by race/ethnicity groups are shown in Table 1. Hispanic and AAPI patients were younger with median ages of 53 (IQR 46–62) and 54 (IQR 43–73) years, respectively, compared to 64 years in NHW (IQR 54–76) and 61 years (IQR 52–69) in Black patients. Prevalence of smokers were higher among NHW (35%), Black (33%), and Other (32%) racial/ethnic groups compared to Hispanic (23%) and AAPI (18%) patients. Rates of obesity were higher in Black (54%) and lower in AAPI (29%) compared to NHW (42%) patients. Cardiovascular comorbidity was less common in Hispanic patients (6%), while diabetes mellitus was more prevalent among Black patients (34%) compared to NHW patients (24% and 17%, respectively). Compared to NHW, Hispanic patients had higher rates of active cancer (24% responding, 15% stable, and 9% progressing) and had higher rates of receipt of anti-cancer systemic therapy within 3 months of COVID-19 diagnosis (37% chemotherapy, 25% targeted therapy, 39% endocrine therapy). Similarly, AAPI patients also had higher rates of active cancer (7% responding, 22% stable, and 13% progressing) and received anti-cancer systemic therapy within 3 months of COVID-19 diagnosis (24% chemotherapy, 18% targeted therapy, 33% endocrine therapy) compared to NHW patients with active cancer (9% responding, 12% stable, and 6% progressing) who received anti-cancer systemic therapy (16% chemotherapy, 15% targeted therapy, 38% endocrine therapy). With regard to baseline severity of COVID-19 at presentation, 39% of Black and 38% of AAPI patients presented with moderate or higher severity of COVID-19 infection compared to 27% in both NHW and Hispanic patients. Table 2 summarizes the clinical outcomes, complications, and interventions, stratified by race/ethnicity.
 
-## Characteristics of female patients with MBC and COVID-19
+**Table 2.**
+ Outcomes, clinical complications, and COVID-19 interventions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>NHW</th>
+      <th>Black</th>
+      <th>Hispanic</th>
+      <th>AAPI</th>
+      <th>Other</th>
+      <th>All</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>n** (%)</td>
+      <td>n** (%)</td>
+      <td>n** (%)</td>
+      <td>n** (%)</td>
+      <td>n** (%)</td>
+      <td>n** (%)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Outcomes</td>
+    </tr>
+    <tr>
+      <td>Total all-cause mortality*</td>
+      <td>60 (8)</td>
+      <td>38 (13)</td>
+      <td>12 (5)</td>
+      <td>&lt;5(&lt;11)</td>
+      <td>9 (12)</td>
+      <td>123 (9)</td>
+    </tr>
+    <tr>
+      <td>30-day all-cause mortality†</td>
+      <td>40 (5)</td>
+      <td>29 (10)</td>
+      <td>8 (3)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>8 (10)</td>
+      <td>89 (6)</td>
+    </tr>
+    <tr>
+      <td>Received mechanical ventilation*</td>
+      <td>24 (3)</td>
+      <td>26 (9)</td>
+      <td>11 (5)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>&lt;5 (&lt;6)</td>
+      <td>69 (5)</td>
+    </tr>
+    <tr>
+      <td>Admitted to an intensive care unit*</td>
+      <td>45 (6)</td>
+      <td>31 (11)</td>
+      <td>18 (8)</td>
+      <td>7 (16)</td>
+      <td>10 (13)</td>
+      <td>111 (8)</td>
+    </tr>
+    <tr>
+      <td>Admitted to the hospital*</td>
+      <td>245 (33)</td>
+      <td>137 (47)</td>
+      <td>77 (33)</td>
+      <td>20 (44)</td>
+      <td>33 (42)</td>
+      <td>512 (37)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Clinical complications</td>
+    </tr>
+    <tr>
+      <td>Any cardiovascular complication‡</td>
+      <td>82 (11)</td>
+      <td>50 (17)</td>
+      <td>30 (13)</td>
+      <td>6 (13)</td>
+      <td>18 (23)</td>
+      <td>186 (14)</td>
+    </tr>
+    <tr>
+      <td>Any pulmonary complication§</td>
+      <td>170 (23)</td>
+      <td>88 (31)</td>
+      <td>43 (18)</td>
+      <td>12 (27)</td>
+      <td>23 (30)</td>
+      <td>336 (24)</td>
+    </tr>
+    <tr>
+      <td>Any gastrointestinal complication¶</td>
+      <td>12 (2)</td>
+      <td>7 (2)</td>
+      <td>&lt;5 (&lt;2)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>&lt;5 (&lt;7)</td>
+      <td>26 (2)</td>
+    </tr>
+    <tr>
+      <td>Acute kidney injury</td>
+      <td>41 (6)</td>
+      <td>46 (16)</td>
+      <td>11 (5)</td>
+      <td>5 (11)</td>
+      <td>10 (13)</td>
+      <td>113 (8)</td>
+    </tr>
+    <tr>
+      <td>Multisystem organ failure</td>
+      <td>10 (1)</td>
+      <td>12 (4)</td>
+      <td>&lt;5 (&lt;2)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>&lt;5 (&lt;7)</td>
+      <td>29 (2)</td>
+    </tr>
+    <tr>
+      <td>Superimposed infection</td>
+      <td>62 (9)</td>
+      <td>42 (15)</td>
+      <td>14 (6)</td>
+      <td>7 (16)</td>
+      <td>&lt;5 (&lt;7)</td>
+      <td>129 (10)</td>
+    </tr>
+    <tr>
+      <td>Sepsis</td>
+      <td>43 (6)</td>
+      <td>24 (8)</td>
+      <td>15 (6)</td>
+      <td>7 (16)</td>
+      <td>12 (16)</td>
+      <td>101 (7)</td>
+    </tr>
+    <tr>
+      <td>Any bleeding</td>
+      <td>15 (2)</td>
+      <td>7 (2)</td>
+      <td>&lt;5 (&lt;2)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>&lt;5 (&lt;7)</td>
+      <td>29 (2)</td>
+    </tr>
+    <tr>
+      <td colspan="7">Interventions</td>
+    </tr>
+    <tr>
+      <td>Remdesivir</td>
+      <td>68 (10)</td>
+      <td>20 (7)</td>
+      <td>15 (7)</td>
+      <td>8 (18)</td>
+      <td>5 (7)</td>
+      <td>116 (9)</td>
+    </tr>
+    <tr>
+      <td>Hydroxychloroquine</td>
+      <td>60 (9)</td>
+      <td>41 (15)</td>
+      <td>14 (6)</td>
+      <td>&lt;5 (&lt;11)</td>
+      <td>11 (15)</td>
+      <td>129 (10)</td>
+    </tr>
+    <tr>
+      <td>Systemic corticosteroids</td>
+      <td>107 (15)</td>
+      <td>50 (18)</td>
+      <td>31 (14)</td>
+      <td>8 (18)</td>
+      <td>13 (18)</td>
+      <td>209 (16)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>112 (16)</td>
+      <td>53 (19)</td>
+      <td>36 (16)</td>
+      <td>11 (25)</td>
+      <td>12 (17)</td>
+      <td>224 (17)</td>
+    </tr>
+    <tr>
+      <td>Supplemental oxygen</td>
+      <td>173 (24)</td>
+      <td>87 (31)</td>
+      <td>43 (19)</td>
+      <td>14 (31)</td>
+      <td>24 (31)</td>
+      <td>341 (25)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Variable categories with one to five cases are masked by replacing with N<5 according to CCC19 policy.*Included in primary outcome.†Secondary outcome.‡Cardiovascular complication includes hypotension, myocardial infarction, other cardiac ischemia, atrial fibrillation, ventricular fibrillation, other cardiac arrhythmia, cardiomyopathy, congestive heart failure, pulmonary embolism (PE), deep vein thrombosis (DVT), stroke, thrombosis NOS complication.§Pulmonary complication includes respiratory failure, pneumonitis, pneumonia, acute respiratory distress syndrome (ARDS), PE, pleural effusion, empyema.¶Gastrointestinal complication includes acute hepatic injury, ascites, bowel obstruction, bowel perforation, ileus, peritonitis.**N based on number of patients with non-missing data._
+
+### Characteristics of female patients with MBC and COVID-19
 
 Female patients with MBC consisted of 17% of the cohort (N=233), with median age 58 years [IQR 50–68]. Racial/ethnic groups consisted of 46% NHW, 24% Black, 21% Hispanics, 4% AAPI, and 4% Other. Most patients with MBC were never smokers (70%) and non-obese (60%). The predominant tumor biology was HR+/HER2- (42%) followed by HR+/HER2+ (23%). The most common sites of metastases were bone (58%), lung (28%), and liver (26%). A high percentage (87%) had received anti-cancer treatment within 3 months prior to COVID-19 diagnosis and 32% had active and progressing cancer. The unadjusted total all-cause mortality and hospitalization rate in females with MBC was 19% and 53% respectively. Further details of baseline characteristics and unadjusted rates of COVID-19 outcomes, complications, and interventions are presented in Appendix 6—table 1 and Appendix 6—table 2.
 
-## BC treatment characteristics
+### BC treatment characteristics
 
 758 (55%) out of 1383 female patients with BC received some form of systemic treatment within 3 months prior to COVID-19 diagnosis, and specific drug information was available for 679 (90%) (Table 3). Of these 679 patients, the most common systemic therapy was endocrine therapy alone (n=336, 49.5%). This was followed by chemotherapy in 163 (24%) patients who received it either as single agent (n=55, 8%) or combination chemotherapy (n=60, 9%) or combined with anti-HER2 therapy (n=48, 7%). 78 (11.5%) patients received anti-HER2 therapy with or without endocrine therapy, and 63 (9%) patients received CDK4/6 inhibitors with or without endocrine therapy.
 
-## Prognostic factors associated with COVID-19 severity
+**Table 3.**
+ Systemic treatments received within 3 months prior to COVID-19 diagnosis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>679 (100%)</td>
+    </tr>
+    <tr>
+      <td>Endocrine therapy alone</td>
+      <td>336 (49.5)</td>
+    </tr>
+    <tr>
+      <td>CDK4/6 inhibitor ± endocrine therapy</td>
+      <td>63 (9)</td>
+    </tr>
+    <tr>
+      <td>Other targeted therapy ± endocrine therapy</td>
+      <td>10 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Anti-HER2 therapy ± endocrine therapy</td>
+      <td>78 (11.5)</td>
+    </tr>
+    <tr>
+      <td>Anti-HER2 therapy + chemotherapy</td>
+      <td>48 (7)</td>
+    </tr>
+    <tr>
+      <td>Single agent chemotherapy ± endocrine therapy</td>
+      <td>55 (8)</td>
+    </tr>
+    <tr>
+      <td>Combination chemotherapy ± endocrine therapy</td>
+      <td>60 (9)</td>
+    </tr>
+    <tr>
+      <td>Immunotherapy ± chemotherapy</td>
+      <td>19 (3)</td>
+    </tr>
+    <tr>
+      <td>Other combination therapies</td>
+      <td>10 (1.5)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Prognostic factors associated with COVID-19 severity
 
 After adjusting for baseline demographic, clinical, and spatiotemporal factors in multivariable analysis model, factors associated with worse outcomes in females with BC included older age (aOR per decade, 1.48 [95% CI, 1.32–1.67]); Black (aOR, 1.74 [95% CI, 1.24–2.45]), AAPI (aOR, 3.40 [95% CI, 1.70–6.79]), and Other (aOR, 2.97 [95% CI, 1.71–5.17]) racial/ethnic group; cardiovascular (aOR, 2.26 [95% CI, 1.63–3.15]) and pulmonary (aOR, 1.65 [95% CI, 1.20–2.29]) comorbidities; diabetes mellitus (aOR, 2.25 [95% CI, 1.66–3.04]); worse ECOG PS (ECOG PS 1: aOR, 1.74 [95% CI, 1.22–2.48]; ECOG PS ≥2: aOR, 7.78 [95% CI, 4.83–12.5]); and active and progressing cancer status (aOR, 12.5 [95% CI, 6.89–22.6]). Association between Hispanic ethnicity, obesity, pre-existing renal disease, anti-cancer treatment modalities including all forms of systemic therapy and locoregional therapy, month/year, and geographic region of COVID-19 diagnosis and COVID-19 severity did not reach statistical significance (Table 4). The e value for the COVID-19 severity OR and CI for each racial group are shown in Appendix 7—table 1. This value demonstrates the impact of unknown _residual_ confounding above that adjusted for by including adjustment variables in the multivariable model. For example, an unmeasured confounder would need to be associated with both race and mortality with an OR of at least 1.97 to fully attenuate the observed association for Black females and the OR would need to be at least 1.47 for the null-hypothesized value (1.0) to be included in the CI. Similarly, e value estimates are noted for AAPI and Other groups. The unmeasured confounding for other races based on the e value is larger than most documented associations in the CCC19 cohort (Grivas et al., 2021).
 
-## Male patients with BC and COVID-19
+**Table 4.**
+ Adjusted associations of baseline characteristics with COVID-19 severity outcome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>COVID-19 severity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>OR (95% CI)</td>
+    </tr>
+    <tr>
+      <td>Age (per decade)</td>
+      <td>1.48 (1.32–1.67)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Race (Ref: non-Hispanic White)*</td>
+    </tr>
+    <tr>
+      <td>Non-Hispanic Black</td>
+      <td>1.74 (1.24–2.45)</td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>1.38 (0.93–2.05)</td>
+    </tr>
+    <tr>
+      <td>Non-Hispanic AAPI</td>
+      <td>3.40 (1.70–6.79)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.97 (1.71–5.17)</td>
+    </tr>
+    <tr>
+      <td>Obesity (Ref: No)</td>
+      <td>1.20 (0.92–1.57)</td>
+    </tr>
+    <tr>
+      <td>Cardiovascular comorbidity (Ref: No)</td>
+      <td>2.26 (1.63–3.15)</td>
+    </tr>
+    <tr>
+      <td>Pulmonary comorbidity (Ref: No)</td>
+      <td>1.65 (1.20–2.29)</td>
+    </tr>
+    <tr>
+      <td>Renal disease (Ref: No)</td>
+      <td>1.34 (0.86–2.07)</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus (Ref: No)</td>
+      <td>2.25 (1.66–3.04)</td>
+    </tr>
+    <tr>
+      <td colspan="2">ECOG performance status (Ref: 0)</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1.74 (1.22–2.48)</td>
+    </tr>
+    <tr>
+      <td>2+</td>
+      <td>7.78 (4.83–12.5)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>2.26 (1.61–3.19)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cancer status (Ref: Remission/NED, &gt;5 years)</td>
+    </tr>
+    <tr>
+      <td>Remission or NED, &lt;5 years</td>
+      <td>0.91 (0.63–1.33)</td>
+    </tr>
+    <tr>
+      <td>Active and responding</td>
+      <td>1.07 (0.63–1.83)</td>
+    </tr>
+    <tr>
+      <td>Active and stable</td>
+      <td>1.37 (0.82–2.28)</td>
+    </tr>
+    <tr>
+      <td>Active and progressing</td>
+      <td>12.5 (6.89–22.6)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>1.79 (0.96–3.34)</td>
+    </tr>
+    <tr>
+      <td>Chemotherapy (Ref: No)</td>
+      <td>1.37 (0.91–2.06)</td>
+    </tr>
+    <tr>
+      <td>Anti-HER2 therapy (Ref: No)</td>
+      <td>1.13 (0.67–1.92)</td>
+    </tr>
+    <tr>
+      <td>CDK 4/6 inhibitor (Ref: No)</td>
+      <td>1.21 (0.60–2.42)</td>
+    </tr>
+    <tr>
+      <td>Other targeted therapies† (Ref: No)</td>
+      <td>1.78 (0.69–4.59)</td>
+    </tr>
+    <tr>
+      <td>Endocrine therapy (Ref: No)</td>
+      <td>1.00 (0.73–1.37)</td>
+    </tr>
+    <tr>
+      <td>Locoregional therapy (Ref: No)</td>
+      <td>1.36 (0.88–2.10)</td>
+    </tr>
+    <tr>
+      <td>Never received cancer treatment (Ref: &gt;3 month)</td>
+      <td>0.65 (0.28–1.49)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Month/year of COVID-19 diagnosis (Ref: Jan-Apr 2020)</td>
+    </tr>
+    <tr>
+      <td>May-Aug 2020</td>
+      <td>0.57 (0.41–0.81)</td>
+    </tr>
+    <tr>
+      <td>Sept-Dec 2020</td>
+      <td>0.45 (0.30–0.68)</td>
+    </tr>
+    <tr>
+      <td>Jan-Jun 2021</td>
+      <td>0.57 (0.36–0.89)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Region (Ref: Northeast)</td>
+    </tr>
+    <tr>
+      <td>Midwest</td>
+      <td>0.76 (0.54–1.05)</td>
+    </tr>
+    <tr>
+      <td>South</td>
+      <td>0.76 (0.51–1.13)</td>
+    </tr>
+    <tr>
+      <td>West</td>
+      <td>0.43 (0.29–0.65)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Odds ratios greater than 1 indicate higher odds of composite outcome. The p value for evaluating the null hypothesis of equality in odds ratios across race (4 degrees of freedom) was <0.001.†Therapies other than CDK4/6 inhibitor or anti-HER2 therapy. All variance inflation factors are <1.8 for the model._
+
+### Male patients with BC and COVID-19
 
 Male patients with BC were evaluated separately as part of exploratory analysis. The median age for male BC cohort (N=25) was 67 years [IQR 60–75]. Racial/ethnic composition consisted of NHW (52%) followed by Black (32%) males. Most males with BC were non-smokers (72%) and diabetes mellitus was the predominant comorbidity (44%). The hospitalization rate was 60% and all-cause mortality was 20%. Additional clinical characteristics, complications, interventions, and unadjusted outcomes among males with BC in the CCC19 registry are provided in Appendix 8—table 1 and Appendix 8—table 2.
 

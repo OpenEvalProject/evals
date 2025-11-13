@@ -7,17 +7,25 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Department of Physiology, Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States
+1. Department of Physiology, Howard Hughes Medical Institute, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
 
 † Corresponding author
 
 ## Abstract
 
-The genomes of close unicellular relatives of animals encode orthologs of many genes that regulate animal development. However, little is known about the function of such genes in unicellular organisms or the evolutionary process by which these genes came to function in multicellular development. The Hippo pathway, which regulates cell proliferation and tissue size in animals, is present in some of the closest unicellular relatives of animals, including the amoeboid organism Capsaspora owczarzaki . We previously showed that the Capsaspora ortholog of the Hippo pathway nuclear effector Yorkie/YAP/TAZ (coYki) regulates actin dynamics and the three-dimensional morphology of Capsaspora cell aggregates, but is dispensable for cell proliferation control (Phillips et al., 2022). However, the function of upstream Hippo pathway components, and whether and how they regulate coYki in Capsaspora , remained unknown. Here, we analyze the function of the upstream Hippo pathway kinases coHpo and coWts in Capsaspora by generating mutant lines for each gene. Loss of either kinase results in increased nuclear localization of coYki, indicating an ancient, premetazoan origin of this Hippo pathway regulatory mechanism. Strikingly, we find that loss of either kinase causes a contractile cell behavior and increased density of cell packing within Capsaspora aggregates. We further show that this increased cell density is not due to differences in proliferation, but rather actomyosin-dependent changes in the multicellular architecture of aggregates. Given its well-established role in cell density-regulated proliferation in animals, the increased density of cell packing in coHpo and coWts mutants suggests a shared and possibly ancient and conserved function of the Hippo pathway in cell density control. Together, these results implicate cytoskeletal regulation but not proliferation as an ancestral function of the Hippo pathway kinase cascade and uncover a novel role for Hippo signaling in regulating cell density in a proliferation-independent manner.
+The genomes of close unicellular relatives of animals encode orthologs of many genes that regulate animal development. However, little is known about the function of such genes in unicellular organisms or the evolutionary process by which these genes came to function in multicellular development. The Hippo pathway, which regulates cell proliferation and tissue size in animals, is present in some of the closest unicellular relatives of animals, including the amoeboid organism Capsaspora owczarzaki. We previously showed that the Capsaspora ortholog of the Hippo pathway nuclear effector Yorkie/YAP/TAZ (coYki) regulates actin dynamics and the three-dimensional morphology of Capsaspora cell aggregates, but is dispensable for cell proliferation control (Phillips et al., 2022). However, the function of upstream Hippo pathway components, and whether and how they regulate coYki in Capsaspora, remained unknown. Here, we analyze the function of the upstream Hippo pathway kinases coHpo and coWts in Capsaspora by generating mutant lines for each gene. Loss of either kinase results in increased nuclear localization of coYki, indicating an ancient, premetazoan origin of this Hippo pathway regulatory mechanism. Strikingly, we find that loss of either kinase causes a contractile cell behavior and increased density of cell packing within Capsaspora aggregates. We further show that this increased cell density is not due to differences in proliferation, but rather actomyosin-dependent changes in the multicellular architecture of aggregates. Given its well-established role in cell density-regulated proliferation in animals, the increased density of cell packing in coHpo and coWts mutants suggests a shared and possibly ancient and conserved function of the Hippo pathway in cell density control. Together, these results implicate cytoskeletal regulation but not proliferation as an ancestral function of the Hippo pathway kinase cascade and uncover a novel role for Hippo signaling in regulating cell density in a proliferation-independent manner.
 
 ## Introduction
 
 Despite the increasing recognition that the last unicellular ancestor of animals possessed many genetic components that mediate development in modern animals (Ros-Rocher et al., 2021), little is known about the function of such developmental regulators in the unicellular ancestor, and the process of how such genes came to function in these roles over evolutionary time is poorly understood. One example of a developmental pathway that is now known to be conserved in close unicellular relatives of animals is the Hippo pathway, which regulates tissue size in animals (Pan, 2022). The Hippo pathway consists of a kinase cascade in which the kinase Hippo/MST phosphorylates the kinase Warts/LATS, which in turn phosphorylates the transcriptional coactivator Yorkie/YAP/TAZ, resulting in inactivation through cytoplasmic sequestration (Figure 1A, Ma et al., 2019). In the nucleus, Yorkie/YAP/TAZ forms a complex with the transcription factor Sd/TEAD, and this complex drives the expression of genes that promote proliferation and affect cell differentiation (Wu et al., 2008). The Hippo pathway thus serves to inhibit Yorkie/YAP/TAZ activity, and this regulatory activity restricts tissue growth in development and homeostasis. In cultured cells, the Hippo pathway is regulated by cell density in a process called contact inhibition, whereby Hippo signaling is low in sparse culture to allow cell proliferation but activated in confluent culture to arrest proliferation (Zhao et al., 2007). Although the state of the cytoskeleton (Dupont et al., 2011) and epithelial cell architecture (Yang et al., 2015) are known to regulate Hippo signaling, and many additional upstream regulatory components have been identified (Deng et al., 2015; Hamaratoglu et al., 2006; Yu et al., 2010; Zheng et al., 2017), how exactly Hippo signaling is regulated to achieve appropriate tissue size during development or stop cell proliferation in confluent cultures remains incompletely understood. As Hippo pathway dysregulation underlies multiple human cancer types (Zanconato et al., 2016), a more complete understanding of Hippo pathway regulation could guide the development of novel cancer therapeutics.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig1-v1.jpg)
+
+**Figure 1.:** (A) The Hippo pathway in Drosophila (yellow text) and mammals (white text). Figure from Phillips et al., 2022. (B) Conservation of Hippo pathway components in close unicellular relatives of animals. 1The Hippo kinase SARAH domain is absent from putative Hippo kinase orthologs in yeasts, but is present in the early-branching fungus Spizellomyces punctatus and in amoebozoans such as Dictyostelium, indicating SARAH domain loss in some fungal lineages. Data from Sebé-Pedrós et al., 2012. (C) Cells were transiently transfected with the indicated constructs and imaged by confocal microscopy. Scale bar is 5 microns. (D) Intensity of mScarlet-coYki signal in the nucleus and cytoplasm of cells was quantified. Where p-values are given, differences between conditions are significant (One-way ANOVA, Tukey’s test, n=3 with at least 10 cells measured for each independent experiment.) Values are mean ± SEM. Absence of error bars indicates that error is smaller than the plot symbol.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A diagram of the coHpo genomic loci in wild-type (WT) or a putative coHpo -/- knockout line is shown. ‘KD’ indicates kinase domain, ‘SD’ indicates the SARAH domain, ‘GenR’ indicates a geneticin resistance cassette, and ‘NatR’ indicates a nourseothricin resistance cassette. Arrows indicate a pair of primers used in PCR reactions. The same primer pair were used in all PCRs shown. Expected PCR product sizes for different alleles are given. A SacII site present only within the allele containing the NatR cassette is shown. (B) PCR products from WT and coHpo -/- cells using primers are shown in (A). Because the product sizes for the WT and ΔcoHpo::NatR alleles are close in size, we digested PCR products with SacII, which uniquely cuts the ΔcoHpo::NatR allele. The coHpo -/- cell line shows the expected products for a homozygous knockout. Sequencing of PCR products confirmed the identity of the WT, ΔcoHpo::GenR, and ΔcoHpo::NatR alleles. (C) A diagram of the coWts genomic loci in WT or a putative coWts -/- knockout line is shown. ‘KD’ indicates kinase domain, ‘GenR’ indicates a geneticin resistance cassette, and ‘NatR’ indicates a nourseothricin resistance cassette. Arrows indicate a pair of primers used in PCR reactions. The same primer pair were used in all PCRs shown. (D) PCR products from WT and coHpo -/- cells using primers are shown in (C). The coWts -/- cell line shows the expected products for a homozygous knockout. Sequencing of PCR products confirmed the identity of the WT, ΔcoWts::GenR, and ΔcoWts::NatR alleles.
 
 Although once thought to be present only in animals, the Hippo pathway is now known to be present in some of the closest unicellular relatives of animals (Figure 1B, Sebé-Pedrós et al., 2012). One such unicellular organism is Capsaspora owczarzaki from the clade Filasterea, the sister group to Choanozoa (a clade comprising animals and choanoflagellates) (Shalchian-Tabrizi et al., 2008). The Capsaspora genome encodes all components of the core Hippo pathway as well as some conserved upstream Hippo pathway regulators such as Kibra and NF2/Merlin (Sebé-Pedrós et al., 2012). Capsaspora is a motile amoeboid organism with a 5-micron-diameter cell body covered with F-actin-rich filopodia-like structures, and was initially identified as an apparent endosymbiont in the snail B. glabrata (Stibbs et al., 1979). However, all other known filasterians are apparent free-living heterotrophs (Hehenberger et al., 2017; Patterson et al., 1993; Tong, 1997), and whether Capsaspora is an obligate or facultative endosymbiont is not known. Physical or chemical signals can induce Capsaspora cells to aggregate into round, 3-dimensional multicellular structures that require calcium for cell-cell adhesion (Ros-Rocher et al., 2023; Sebé-Pedrós et al., 2013). Other filasterians and closely related organisms isolated from natural environments also form aggregates (Hehenberger et al., 2017; Tikhonenkov et al., 2020), indicating that aggregation is a conserved physiological process in this clade. Capsaspora is easily culturable in axenic medium, has a sequenced genome with chromosome-level assembly (Schultz et al., 2023; Suga et al., 2013), and is genetically tractable owing to gene disruption and stable transgenic techniques that we have recently developed (Phillips et al., 2022). Furthermore, the Capsaspora genome contains many genes once thought specific to animals, such as cell-cell adhesion and ECM proteins (cadherins, integrins, and laminins) and developmental regulators (NF-κB, P53/63/73, Brachyury, and RUNX) (Suga et al., 2013). Therefore, along with other emerging holozoan research organisms (Booth and King, 2020; Faktorová et al., 2020; Kożyczkowska et al., 2021; Olivetta and Dudin, 2023; Woznica et al., 2021), Capsaspora is a valuable system for studying the function of such genes in unicellular organisms.
 
@@ -27,37 +35,67 @@ In this study, we addressed these questions by generating homozygous mutant cell
 
 ## Results
 
-## The Hippo pathway kinases regulate the subcellular localization of coYki in Capsaspora
+### The Hippo pathway kinases regulate the subcellular localization of coYki in Capsaspora
 
 Characterizing the function of the Hippo pathway in close unicellular relatives of animals may (a) enhance our understanding of the evolutionary origins and ancestral function of this pathway and (b) provide a relatively simple system to better understand how this biomedically significant pathway is regulated. To address these aims, we generated homozygous mutant cell lines for the single Capsaspora orthologs of the Hippo/MST and Warts/LATS kinases (coHpo and coWts, respectively.) For each gene, homologous recombination was used to replace the kinase domain of both WT alleles with selectable markers (Figure S1) as described previously (Phillips et al., 2022). Homozygous mutation of the kinases was verified by PCR and by sequencing the disrupted region of the genes (Figure 1—figure supplement 1).
 
 In animals, the Hippo kinase cascade regulates the transcriptional coactivator Yorkie/YAP/TAZ by phosphorylation-mediated cytoplasmic sequestration (Dong et al., 2007). To test if the Hippo kinase cascade similarly regulates the subcellular localization of the single YAP/TAZ/Yorkie orthologue in Capsaspora (coYki), we transiently co-transfected WT, coHpo-/-, and coWts-/- cells with the fluorescent fusion proteins mScarlet-coYki and Histone H2B-Venus, a marker of the nucleus. In WT cells, mScarlet-coYki was predominantly cytoplasmic (Figure 1C), as reported previously (Phillips et al., 2022). In contrast, the majority of coHpo-/- and coWts-/- cells showed nuclear levels of mScarlet-coYki greater than or equal to that seen in the cytoplasm (Figure 1C and D). Interestingly, we found that coWts-/- cells were significantly more likely to show nuclear mScarlet-coYki localization than coHpo-/- cells (Figure 1D), which is consistent with Hpo/MST-independent activity of Wts/LATS previously reported in Drosophila and mammals (Zheng et al., 2015). Together, these results show that the Capsaspora Hippo kinase cascade regulates coYki by cytoplasmic sequestration, indicating a premetazoan origin of this regulatory activity of the Hippo pathway.
 
-## The Hippo pathway kinases do not restrict cell proliferation in Capsaspora
+### The Hippo pathway kinases do not restrict cell proliferation in Capsaspora
 
 The Hippo pathway negatively regulates tissue size and cell proliferation by restricting the activity of the growth-promoting oncogene Yorkie/YAP/TAZ in animals. However, we have previously reported that coYki is genetically dispensable for cell proliferation in Capsaspora (Phillips et al., 2022). To further evaluate the role of proliferation control by the Hippo pathway in Capsaspora, we examined the requirement of coHpo and coWts in cell proliferation control under three distinct conditions: adherent growth while attached to a solid substrate, proliferation in shaking culture, and proliferation within multicellular aggregates. In adherent growth conditions, coWts-/- and coHpo-/- cells proliferated at similar rates as WT cells (Figure 2A). In shaking culture, coHpo-/- cells proliferated at similar rates as WT cells, whereas coWts-/- cells proliferated slower than WT (Figure 2B). As cells lacking a negative regulator of proliferation are expected to proliferate faster than WT cells, this result suggests that coWts is not a negative regulator of cell proliferation as in Drosophila and mammals, but instead is required for normal cell viability under some growth conditions. Finally, to examine cell proliferation within multicellular aggregates, we used EdU labeling, a marker of cells that have undergone the S phase. The percentage of cells labeled by EdU in coHpo-/- and coWts-/- aggregates was not significantly different from WT aggregates (Figure 2C and D), indicating that coHpo and coWts do not affect cell proliferation within multicellular aggregates. Together with our previous characterization of coYki (Phillips et al., 2022), these results support the view that the Hippo pathway does not restrict cell proliferation in Capsaspora as in Drosophila and mammals.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig2-v1.jpg)
 
-**Figure 2.:** Capsaspora.Cells were grown in adherent culture in 96-well plates (A) or in shaking culture (B) and cell density was measured daily by hemocytometer. (C, D) Cells were inoculated under low-adherence conditions to induce aggregate formation, and 3 days after induction aggregates were incubated with EdU for 4 hr, fixed, and processed to detect EdU labeling. Scale bar is 10 microns. Differences in EdU labeling between WT and mutants were not significant (one-way ANOVA, Dunnett’s test, n=3 with three aggregates measured for each independent experiment). Black bars show mean ± SEM, and red dots show values for individual aggregates.
+**Figure 2.:** Cells were grown in adherent culture in 96-well plates (A) or in shaking culture (B) and cell density was measured daily by hemocytometer. (C, D) Cells were inoculated under low-adherence conditions to induce aggregate formation, and 3 days after induction aggregates were incubated with EdU for 4 hr, fixed, and processed to detect EdU labeling. Scale bar is 10 microns. Differences in EdU labeling between WT and mutants were not significant (one-way ANOVA, Dunnett’s test, n=3 with three aggregates measured for each independent experiment). Black bars show mean ± SEM, and red dots show values for individual aggregates.
 
-## The Hippo pathway kinases regulate cell morphology and actomyosin-dependent contractile behaviors in Capsaspora
+### The Hippo pathway kinases regulate cell morphology and actomyosin-dependent contractile behaviors in Capsaspora
 
 We have previously shown that, in contrast to WT Capsaspora cells with a round and relatively stable actin cortex, coYki-/- cells show aberrant, actin-depleted bleb-like protrusions at the cell cortex, implicating coYki in the control of cytoskeletal dynamics and cell morphology (Phillips et al., 2022). To test whether the Hippo pathway kinases affect the same processes in Capsaspora, we examined the morphology of adherent coHpo-/- and coWts-/- cells. While most cells showed a round cell body morphology (Figure 3A), a distinct elongated cell morphology was observed in a subset of coWts -/- or coHpo -/- cells, which was seen much less frequently in WT cells. Quantification of cellular aspect ratio in cell populations showed a non-gaussian distribution, with a distinct population of high aspect ratio cells in coHpo or coWts mutants (Figure 3B). The presence of elongated cells was rescued by transgenic expression of coHpo or coWts in the respective mutant (Figure 3A and B), demonstrating that the elongated cell phenotype was specifically due to the absence of these kinases.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cells were inoculated into glass-bottom chamber slides, and adherent cells were imaged 2 days after inoculation. Scale bar is 50 microns. (B) The aspect ratio of cells imaged as described in (A) was measured using ImageJ. The differences between wild-type (WT) and either coHpo -/- or coWts -/- cells are significant (one-way ANOVA, Dunnett’s test, n=3 with 50 cells measured for each independent experiment). Black bars show mean ± SEM, and red dots show values for 150 individual cells. (C) Cells were prepared as described in (A) and imaged by time-lapse microscopy. Scale bar is 10 microns.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Adherent cells stably expressing N-myristoylation motif (NMM)-Venus, a plasma membrane marker which allows for visualization of filopodia, were imaged live by confocal microscopy. Scale bar is 10 microns.
+
 To examine the dynamic properties of these elongated cells, we imaged coHpo -/- and coWts -/- cells by time-lapse microscopy (Figure 3C and Videos 1–3). These elongated cells are highly dynamic. A previously round, motile cell starts extending along an axis, the direction of which does not necessarily correspond with the cell’s previous direction of movement. The cell then stops extending, remaining for approximately 20 s in its elongated form. Filopodia appear enriched at the poles of elongated cells (Figure 3C, 2:00 timepoint). To examine filopodia more carefully, we stably expressed NMM-Venus in cells, which labels the cell membrane and allows for visualization of the filopodia (Parra-Acero et al., 2018). Filopodia were enriched at the poles of elongated cells in all genotypes (Figure 3—figure supplement 1), suggesting that filopodia may play a role in this elongated morphology. After this elongated form, the cell then contracts: adhesion at one of the poles is apparently lost, leading to a rapid contractile movement toward the other pole and returning the cell to the initial round morphology. Together, these results suggest that Capsaspora cells can perform a dynamic contractile behavior that is regulated by the Hippo pathway kinases.
+
+![Video 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-video1.mp4.jpg)
+
+**Video 1.:** This video serves as a control for Videos 2 and 3.
+
+![Video 2.](https://cdn.elifesciences.org/articles/90818/elife-90818-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/90818/elife-90818-video3.mp4.jpg)
 
 The actomyosin cytoskeletal network mediates amoeboid motion and cytokinesis in unicellular organisms and contractile processes such as muscle contraction in animals (Brunet and Arendt, 2016). To examine the behavior of the actomyosin network in contractile Capsaspora cells, we stably expressed Lifeact-mScarlet, which labels F-actin in Capsaspora cells (Phillips et al., 2022). As contractile cells in the coHpo mutant background tended to show a more elongated morphology than the coWts mutant, we focused on the coHpo mutant for further analysis. We have previously reported that adherent WT Capsaspora cells show F-actin-rich foci near the area of contact with the substrate. In motile cells, these foci do not move relative to the substrate, suggesting that they are points of adhesion (Phillips et al., 2022). Similar F-actin-rich foci were observed at or near the polar ends of elongated coHpo -/- cells (Figure 4A, blue arrowheads). In most elongated cells, an F-actin fiber running parallel to the axis of elongation was observed connecting the two polar foci (Figure 4A, yellow arrow; Videos 4 and 5). During the contractile process, the cell contracts towards one of the foci, which remains intact, while the other substrate-foci interaction is lost, and the cell resumes a round morphology.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig4-v1.jpg)
 
-**Figure 4.:** Capsaspora cells.(A) Cells were inoculated on glass-bottom chamber slides, and at 2 days after inoculation adherent cells were imaged by time-lapse epifluorescence microscopy. Blue arrowheads indicate ventral F-actin-enriched foci, and the yellow arrow indicates the F-actin fiber that connects the foci. Scale bar is 10 microns. (B) Cells were inoculated on glass-bottom chamber slides. Two days after inoculation, DMSO or Blebbistatin at a concentration of 1 μM was added to cells. Cells were imaged 24 hr after the addition of blebbistatin. (C) The aspect ratio of cells prepared as in (B) was measured using ImageJ. For both wild-type (WT) and coHpo -/- cells, the difference between DMSO and blebbistatin treatment measurements are significant (t-test, n=3 with 50 cells measured for each independent experiment). Black bars indicate mean ± SEM, and red dots indicate measurements for 150 individual cells for each condition. Absence of error bars indicates that error is smaller than the plot symbol.
+**Figure 4.:** (A) Cells were inoculated on glass-bottom chamber slides, and at 2 days after inoculation adherent cells were imaged by time-lapse epifluorescence microscopy. Blue arrowheads indicate ventral F-actin-enriched foci, and the yellow arrow indicates the F-actin fiber that connects the foci. Scale bar is 10 microns. (B) Cells were inoculated on glass-bottom chamber slides. Two days after inoculation, DMSO or Blebbistatin at a concentration of 1 μM was added to cells. Cells were imaged 24 hr after the addition of blebbistatin. (C) The aspect ratio of cells prepared as in (B) was measured using ImageJ. For both wild-type (WT) and coHpo -/- cells, the difference between DMSO and blebbistatin treatment measurements are significant (t-test, n=3 with 50 cells measured for each independent experiment). Black bars indicate mean ± SEM, and red dots indicate measurements for 150 individual cells for each condition. Absence of error bars indicates that error is smaller than the plot symbol.
+
+![Video 4.](https://cdn.elifesciences.org/articles/90818/elife-90818-video4.mp4.jpg)
+
+**Video 4.:** This video serves as a control for Video 5.
+
+![Video 5.](https://cdn.elifesciences.org/articles/90818/elife-90818-video5.mp4.jpg)
 
 Superficially, the actin fibers observed in elongated coHpo -/- cells resemble stress fibers, which are contractile cytoskeletal structures found in animal cells with functions in processes such as extracellular matrix remodeling and cell motility (Tojkander et al., 2012). Contractility of stress fibers is generated by the motor protein myosin II (Chrzanowska-Wodnicka and Burridge, 1996). If myosin mediates the contractile behavior of coHpo -/- cells, then inhibition of myosin activity may slow or prevent the contraction of elongated cells, resulting in more cells with an elongated morphology in a population. To test this prediction, we treated cells with the myosin inhibitor blebbistatin and then examined the occurrence of elongated cell morphology. Blebbistatin treatment increased the occurrence of elongated cell morphology in coHpo -/- cell populations (Figure 4B and C). Interestingly, despite the rarity of elongated cell morphology in WT cell populations, blebbistatin also resulted in a greatly increased occurrence of this morphology in WT cell populations (Figure 4B and C). These results suggest that the contractile behavior of Capsaspora cells is mediated by myosin activity.
 
-## The Hippo pathway kinases regulate the density of cell packing in Capsaspora aggregates via actomyosin-mediated contractility
+### The Hippo pathway kinases regulate the density of cell packing in Capsaspora aggregates via actomyosin-mediated contractility
 
 Capsaspora cells can aggregate into three-dimensional multicellular structures. We have previously identified a critical role for coYki in this process: whereas WT Capsaspora cells form round, spheroid aggregates, coYki-/- cells form asymmetrical and flattened aggregates (Phillips et al., 2022). To test whether the Hippo pathway kinases regulate aggregate morphology, we induced aggregate formation and then measured the size and circularity of aggregates. coHpo -/- aggregates showed similar size and circularity as WT aggregates (Figure 5A and B). However, coWts -/- aggregates, while similar in size to WT, showed reduced circularity. Whereas WT aggregates showed a round, smooth boundary, coWts -/- aggregate boundaries were rough and showed nonuniform protrusions (Figure 5A and B). These results suggest that Hippo signaling through coWts can affect aggregate morphology, but inactivation of the upstream Hippo kinase alone is not sufficient to induce this effect.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig5-v1.jpg)
+
+**Figure 5.:** (A) Aggregates were induced by inoculating cells in low-adherence conditions, and aggregates were imaged 5 days after inoculation. Scale bar is 100 microns. (B) The size and circularity of aggregates imaged as in (A) was measured using ImageJ. Black bars indicate mean ± SEM (n=3 with 10 aggregates measured for each independent experiment), and red dots indicate values for 30 individual aggregates. For aggregate circularity, the difference between wild-type (WT) and coWts -/- aggregates are significant (one-way ANOVA, Dunnett’s test.) (C) Cells expressing either mScarlet or N-myristoylation motif (NMM)-Venus, a marker of the plasma membrane which allows visualization of filopodia, were mixed 1:1 and inoculated into low-adherence conditions to induce aggregation. After 5 days, aggregates were imaged by confocal microscopy. Scale bar is 10 microns. (D) Clonal populations of cells of the indicated genotype stably expressing mScarlet were inoculated into low-adherence conditions, and cell aggregates were imaged 5 days after inoculation by confocal microscopy. Scale bar is 20 microns. (E) The number of cells within a 40 micron2 area from aggregate optical sections imaged as in (D) was measured. Black bars indicate mean ± SEM (n=3 with three aggregates measured for each independent experiment), and red dots indicate values for nine individual aggregates for each condition. The difference between WT and either coHpo -/- or coWts -/- cells is significant (one-way ANOVA, Dunnett’s test.).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type (WT) cells stably expressing N-myristoylation motif (NMM)-Venus, which allows visualization of filopodia, were mixed with WT, coHpo -/-, or coWts -/- cells stably expressing NMM-mScarlet at a 9:1 cell ratio and were inoculated into low-adherence wells to induce aggregate formation. Cells within aggregates were then imaged 3 days after aggregate induction. Yellow arrowheads indicate examples of filopodia. Scale bar is 10 microns.
 
 Capsaspora aggregates are composed of adherent cells that form connections primarily through filopodia-like protrusions on the cell surface. This can be visualized by mosaic aggregates consisting of cells expressing mScarlet, which labels the cell body, and cells expressing NMM-Venus, which allows for visualization of filopodia. In mosaic aggregates, contacts are visible between filopodia but not between cell bodies (Figure 5C), showing that filopodium-filopodium contacts, but not cell body-to-cell body contacts, are the primary mode of adhesion in aggregates.
 
@@ -69,21 +107,29 @@ Given that coHpo and coWts regulate a contractile behavior in Capsaspora cells, 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig6-v1.jpg)
 
-**Figure 6.:** Capsaspora aggregates.(A) Aggregates were treated with 20 μM blebbistatin or DMSO as a vehicle control for 20 minand then imaged by confocal microscopy. Scale bar is 20 microns. (B) Cells per area were quantified from images obtained as in (A). Black bars indicate means ± SEM (n=3 with three aggregates measured for each independent experiment), and red dots indicate values for nine individual aggregates for each condition. Absence of error bars indicates that error is smaller than the plot symbol. For both wild-type (WT) and coHpo -/- aggregates, the difference between DMSO and blebbistatin treatment is significant (t-test). (C) Aggregates were treated with 5 μg/ml Latrunculin B or ethanol as a vehicle control for 1 hr and then imaged by confocal microscopy. Scale bar is 20 microns. (D) Cells per area were quantified from images obtained as in (C). For both WT and coHpo -/- aggregates, the difference between ethanol and Latrunculin B treatment is significant (n=3, t-test.).
+**Figure 6.:** (A) Aggregates were treated with 20 μM blebbistatin or DMSO as a vehicle control for 20 minand then imaged by confocal microscopy. Scale bar is 20 microns. (B) Cells per area were quantified from images obtained as in (A). Black bars indicate means ± SEM (n=3 with three aggregates measured for each independent experiment), and red dots indicate values for nine individual aggregates for each condition. Absence of error bars indicates that error is smaller than the plot symbol. For both wild-type (WT) and coHpo -/- aggregates, the difference between DMSO and blebbistatin treatment is significant (t-test). (C) Aggregates were treated with 5 μg/ml Latrunculin B or ethanol as a vehicle control for 1 hr and then imaged by confocal microscopy. Scale bar is 20 microns. (D) Cells per area were quantified from images obtained as in (C). For both WT and coHpo -/- aggregates, the difference between ethanol and Latrunculin B treatment is significant (n=3, t-test.).
 
 coYki affects both the cytoskeletal dynamics of Capsaspora cells and the shape of multicellular aggregates (Phillips et al., 2022). Given these previous results and the fact that Yorkie/YAP/TAZ is inhibited by the Hippo pathway kinases in other organisms, it is plausible that the phenotypes observed in the coHpo and coWts mutants are mediated by coYki. Since techniques are currently unavailable to create double mutants in Capsaspora, we could not test this possibility through classic genetic epistasis. As an alternative approach, we asked whether ectopic activation of coYki can phenocopy the loss of coHpo or coWts, by transgenically expressing a coYki mutant in which the four predicted Wts/LATS phosphorylation sites are mutated to non-phosphorylatable Alanine (coYki 4SA). coYki 4SA shows increased nuclear localization compared to the wild-type coYki protein (Phillips et al., 2022), and thus is predicted to be hyperactive. As observed in coHpo and coWts mutants, stable transgenic expression of coYki 4SA resulted in increased cell packing of Capsaspora aggregates (Figure 7A and B), as well as an elongated cell morphology in adherent cells (Figure 7C and D). These results suggest that the phenotypes observed in coHpo and coWts mutants are due to coYki activation resulting from a loss of upstream kinase signaling.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig7-v1.jpg)
 
-**Figure 7.:** coHpo or coWts in Capsaspora.(A) Aggregates were imaged 5 days after inoculation. Scale bar is 20 microns. (B) The number of cells within a 40 micron2 area within an aggregate was measured. Black bars indicate mean ± SEM (n=3 with three aggregates measured for each independent experiment), and red dots indicate values for 9 individual aggregates for each condition. The difference between wild-type (WT) and EF1 >coYki 4SA is significant (one-way ANOVA, Dunnett’s test). (C) Cells were inoculated into glass-bottom chamber slides and imaged 2 days after inoculation. Scale bar is 25 microns. (D) The aspect ratio of cells imaged as in (C) was measured using ImageJ. Black bars show mean ± SEM (n=3 with 40 cells measured for each independent experiment), and red dots show values for 150 individual cells. The difference between WT and EF1 >coYki 4SA is significant (one-way ANOVA, Dunnett’s test).
+**Figure 7.:** (A) Aggregates were imaged 5 days after inoculation. Scale bar is 20 microns. (B) The number of cells within a 40 micron2 area within an aggregate was measured. Black bars indicate mean ± SEM (n=3 with three aggregates measured for each independent experiment), and red dots indicate values for 9 individual aggregates for each condition. The difference between wild-type (WT) and EF1 >coYki 4SA is significant (one-way ANOVA, Dunnett’s test). (C) Cells were inoculated into glass-bottom chamber slides and imaged 2 days after inoculation. Scale bar is 25 microns. (D) The aspect ratio of cells imaged as in (C) was measured using ImageJ. Black bars show mean ± SEM (n=3 with 40 cells measured for each independent experiment), and red dots show values for 150 individual cells. The difference between WT and EF1 >coYki 4SA is significant (one-way ANOVA, Dunnett’s test).
 
 Previously, Xu et al., reported that in Drosophila, Yorkie can act in a transcription-independent manner at the cell cortex to regulate actomyosin-mediated contractility (Xu et al., 2018), raising the possibility that cytoskeletal regulation by coYki is transcription-independent. To test this possibility, we evaluated whether coYki 4SA requires transcriptional activity to affect cell and aggregate morphology. The conserved coYki residue F123 aligns with the human YAP1 residue F95, which is required for YAP-TEAD binding and YAP transcriptional activity (Li et al., 2010). The analogous residue in Drosophila is not required for the transcription-independent Yorkie activity reported by Xu et al., 2018. We found that, in contrast to coYki 4SA, the expression of a coYki 4SA F123A mutant did not affect cell or aggregate morphology (Figure 7). This result indicates that these phenotypes are mediated by the transcriptional activity of coYki.
 
-## Effects of the Hippo pathway on gene expression in Capsaspora
+### Effects of the Hippo pathway on gene expression in Capsaspora
 
 To better understand how perturbation of Hippo pathway signaling affects gene expression in Capsaspora, we performed RNA-seq on coHpo -/- and coWts -/- cells. We previously identified 15 Capsaspora genes differentially expressed in the coYki -/- mutant that is predicted to bind actin (Phillips et al., 2022). Of these genes, 14 were differentially expressed in the coHpo or coWts mutant cell lines, and six of these genes were differentially expressed in both the coHpo and coWts mutant lines (Differences in gene expression between WT and mutant are significant, with p<0.05 (Supplementary file 1)). This result indicates that coYki, coHpo, and coWts regulate a shared set of genes, a subset of which may affect the cytoskeletal properties of cells through actin regulation.
 
 To further examine how the Hippo pathway affects gene expression in Capsaspora, we performed functional enrichment analysis on three gene sets: genes differentially expressed in the coHpo mutant (1032 genes), the coWts mutant (609 genes), and the overlapping set of genes differentially expressed in the coHpo, coWts, and coYki mutants (107 genes, termed the ‘core Hippo pathway’ gene set) using coYki mutant sequencing data from our previous study (Phillips et al., 2022)(See Supplementary file 2 for gene lists). The core Hippo pathway set showed enrichment in membrane-associated and transmembrane domain-containing proteins, proteins functionally linked to differentiation, and proteins encoding a laminin G domain (Figure 8). Laminins are a component of the ECM in animals, functioning to couple cell surface receptors such as integrins to the basement membrane (Hohenester and Yurchenco, 2013). The function of Laminin G domain-containing Capsaspora proteins is unknown, and conservation of this domain appears restricted to animals and their closest unicellular relatives such as filasterians and choanoflagellates (Fahey and Degnan, 2012; Williams et al., 2014). Another protein domain, Insulin-like growth factor binding protein, N-terminal (IGFBPN), was also enriched in the core Hippo pathway gene set. In animals, this domain is associated with receptor tyrosine kinases and other proteins linked to tyrosine kinase signaling (Ward et al., 1995; Zesławski et al., 2001). The sets of genes differentially expressed in the coHpo or coWts mutants also showed enrichment in genes encoding the IGFBPN domain, membrane-associated proteins, and genes functionally linked to differentiation (Figure 8—figure supplement 1). The finding that the Capsaspora Hippo pathway regulates genes encoding membrane proteins and putative ECM components such as laminins suggests that this pathway may regulate cell and aggregate morphology not just through intracellular cytoskeletal regulators, but also through modification of the extracellular environment and cell surface proteins such as receptors or adhesion molecules.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig8-v1.jpg)
+
+**Figure 8.:** Categories with FDR <0.05 are shown. Interpro or Uniprot accession numbers are given for each enriched category. FDR: false discovery rate.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/90818/elife-90818-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Categories with FDR <0.05 are shown, except where FDR is indicated. Interpro or Uniprot accession numbers are given for enriched categories where appropriate. FDR: false discovery rate.
 
 ## Discussion
 
@@ -101,32 +147,217 @@ In cultured mammalian cells, Hippo signaling regulates contact inhibition, a phe
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Capsaspora owczarzaki)</td>
+      <td>coHpo</td>
+      <td>Genbank</td>
+      <td>CAOG_01932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Capsaspora owczarzaki)</td>
+      <td>coWts</td>
+      <td>Genbank</td>
+      <td>CAOG_00619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Capsaspora owczarzaki)</td>
+      <td>coYki</td>
+      <td>Genbank</td>
+      <td>CAOG_07866</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Capsaspora owczarzaki)</td>
+      <td>WT</td>
+      <td>ATCC</td>
+      <td>30864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP80</td>
+      <td>Phillips et al., 2022</td>
+      <td></td>
+      <td>Capsaspora expression vector: mScarlet-coYki fusion,Geneticin resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pONSY-coH2B:Venus</td>
+      <td>Addgene</td>
+      <td>Addgene Plasmid #111877</td>
+      <td>Capsaspora expression vector:Histone H2B-Venus fusion</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP122</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Capsaspora expression vector: coHpo transgene,Hygromycin B Resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP125</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Capsaspora expression vector: coWts transgene,Hygromycin B Resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP145</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Capsaspora expression vector:NMM-Venus,Hygromycin B Resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP118</td>
+      <td>Phillips et al., 2022</td>
+      <td></td>
+      <td>Capsaspora expression vector:Lifeact-mScarlet,Hygromycin B Resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP103</td>
+      <td>Phillips et al., 2022</td>
+      <td></td>
+      <td>Capsaspora expression vector: mScarlet,Hygromycin B Resistance</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJP90</td>
+      <td>Phillips et al., 2022</td>
+      <td></td>
+      <td>Capsaspora expression vector: coYki 4SA,Geneticin Resistance</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP201:coHpo KO Forward: homologous arm +actin promoter</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCGCCTCGTCCCAACAACAGCTCGTACGGCTCGGTCTTCAAGGCTCGCCACAAGGACACCCAGTCCATCCTCGCCGTCAAGCAGGTGCCCCTTGAGAACACAAAAATGCTGATTGTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP202:coHpo KO Reverse: homologous arm +actin terminator</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGCAACATTGCTTCGTTGACTAACGCTTCATGGTGCCGTCCTCGCCCATGACCATCGTGCCGGAGTCGCCAGTGACCATCGTTCCGCTATCAACAAGGGTTTTTTCTTTGTACAAGATCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP203:coWts KO Forward: homologous arm +actin promoter</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAACGGCGAGACCAGCTCGAGATTGAGATGGCCAAGATGGACCTGACCGATGTTCAAAAGACCCAGTTGCGTCGCATCCTCCGCATGAAGGAATCAGAGACAAAAATGCTGATTGTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP204:coWts KO Reverse: homologous arm +actin terminator</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCATTTTAATGTGCTCGACCGTCTCCCGGCCGAGACGATCGGAGGATTCACAGCAGAGCCGGGAGATGAGGTCTTTGGACTCGCGCGAAATCTTTGCCCGTTTTTTCTTTGTACAAGATCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP205:coHpo Diagnostic Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAAAACAACAGCGAAAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP206:coHpo Diagnostic Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCATCGGAGGAAACTAAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP207:coWts Diagnostic Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTGCTGAAAATGAAAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>JP208:coWts Diagnostic Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAACCTCACCAGGATTTTGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TransIT-X2 Dynamic Delivery System</td>
+      <td>Mirus Bio</td>
+      <td>MIR 6003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT Plus EdU Cell Proliferation Kit for Imaging, Alexa Fluor 488 dye</td>
+      <td>ThermoFisher</td>
+      <td>C10637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>B0560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin B</td>
+      <td>Sigma-Aldrich</td>
+      <td>L5288</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Capsaspora cells were grown in ATCC medium 1034 as described previously (Phillips et al., 2022). Quantification of proliferation in shaking culture, induction of aggregates, quantification of aggregate size and circularity, EdU labeling within aggregates, and quantification of mScarlet-coYki fluorescence intensity were done as described previously (Phillips et al., 2022). Quantification of proliferation on a solid substrate was done as described previously (Phillips et al., 2022), except 96-well plates were used in place of 24-well plates. To add blebbistatin (Sigma B0560) or latrunculin B (Sigma L5288) to cell cultures, a 10 X mix of drug or vehicle control in a growth medium was prepared, and this concentrated drug preparation was added to cultures so that a final 1 X concentration of drugs was reached.
 
-## Molecular biology
+### Molecular biology
 
 For a list of plasmids and oligonucleotides generated for this study, see Key Resources Table. For a list of synthesized DNA sequences used in this study, see Supplementary file 3. For transgenic expression of Capsaspora genes, we synthesized genes coding for the appropriate Capsaspora protein but with synonymous codon changes throughout the DNA sequence. This was done to reduce DNA sequence homology in order to prevent homologous recombination of the transgene with the endogenous Capsaspora alleles during plasmid integration into the genome, as done previously (Phillips et al., 2022). To construct a plasmid for transgenic expression of coHpo in Capsaspora cells (pJP122), we synthesized a transgene encoding the coHpo protein (sJP201). There are three predicted isoforms of the coHpo sequence, but only one of these encodes the SARAH domain, which is important for Hippo kinase activity in Hippo pathway signaling (Scheel and Hofmann, 2003). We, therefore, used the isoform sequence encoding the SARAH domain to design our transgene. The coHpo transgene was cloned into a KpnI and AflII digest of pJP103 (Addgene #176481) using Gibson assembly, generating a vector encoding the coHpo transgene and hygromycin B resistance. Similarly, a coWts transgene was synthesized (sJP202) and cloned into a KpnI and AflII digest of pJP103 by Gibson assembly, generating a vector encoding a coWts transgene and hygromycin B resistance (pJP125.)
 
 To generate a plasmid to stably express N-myristoylation motif (NMM)-Venus (pJP145), a marker of the plasma membrane and filopodia in Capsaspora, we first constructed a vector expressing both Venus and hygromycin B resistance (pJP115) by PCR-amplifying the Venus gene from pJP114 (Phillips et al., 2022) and cloning it by Gibson assembly into a KpnI and AflII digest of pJP103 (Addgene #176481), which contains a hygromycin B resistance cassette. We then synthesized the NMM motif (sJP203) following the sequence from the pONSY-coNMM:mCherry vector (Addgene #111878, Parra-Acero et al., 2018) and cloned this DNA fragment into a KpnI digest of pJP115 using Gibson assembly.
 
-## Capsaspora transfection and genome editing
+### Capsaspora transfection and genome editing
 
 Transfection of Capsaspora cells and stable cell line generation was done using the TransIT-X2 transfection reagent (Mirus Bio) as previously described (Phillips et al., 2022). Disruptions of Capsaspora genes were done as previously described (Phillips et al., 2022). Briefly, oligos oJP201 and oJP202 were used to generate gene-targeting constructs by PCR with homologous arms that target the coHpo gene (CAOG_01932). Oligos oJP203 and oJP204 were used to generate gene-targeting constructs for the coWts gene (CAOG_00619). For both homozygous mutants, the two WT alleles present in the diploid Capsaspora genome were disrupted using selectable markers for geneticin resistance and nourseothricin resistance. oJP205 and oJP206 were used in a diagnostic PCR that amplifies across the deleted region of the coHpo gene, and oligos oJP207 and oJP208 were used in a diagnostic PCR across the deleted region of the coWts gene.
 
-## Measurement of cell and aggregate properties
+### Measurement of cell and aggregate properties
 
 To measure the aspect ratio of cells, the ImageJ freehand selection tool was used to manually trace the border of imaged cells, and the Measure function was used to calculate the cellular aspect ratio. To quantify cell packing within aggregates expressing mScarlet, a z-stack of optical sections was obtained by confocal microscopy. To measure cells within the aggregate as opposed to cells at the edge of the aggregate, an optical section 14 microns deep into the aggregate was used for measurement. A 40 micron2 square was drawn in the center of the optical section of the aggregate and the number of cells in the square was counted.
 
-## RNA-seq
+### RNA-seq
 
 RNA-seq of Capsaspora cells was done as previously described (Phillips et al., 2022) except that cells were inoculated into flasks at 4 × 105 cells/ml instead of 2x105 cells/ml to increase RNA yield. Analysis of RNA-seq data was done as previously described (Phillips et al., 2022), except that after differential expression analysis by edgeR (Robinson et al., 2010), the following criteria were used to select genes for further analysis: false discovery rate [FDR]≤0.001, absolute log2(fold change)≥0.5, log(counts per million)≥0. Enrichment analyses were done using DAVID (Sherman et al., 2022).
 
-## Gene nomenclature
+### Gene nomenclature
 
 In this article, we use italicized text to refer to a gene (e.g. coHpo), unitalicized text to refer to a protein (e.g. coHpo), and ‘-/-’ to indicate a homozygous deletion mutant (e.g. coHpo -/-). ‘EF1 >coHpo’ indicates transgenic expression of coHpo driven by the EF1 promoter.
 
-## Statistics
+### Statistics
 
 Statistical analyses were done using Prism (GraphPad Software, San Diego, CA). For experiments where multiple cells or aggregates were measured for each independent experiment, the mean of all measurements made for each biological replicate was calculated, and statistical analyses were performed on these sample level means following Lord et al., 2020.

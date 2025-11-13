@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01zgy1s35 Department of Neurophysiology and Pathophysiology, University Medical Center Hamburg-Eppendorf Hamburg Germany
-2. https://ror.org/0524sp257 School of Psychological Science, University of Bristol Bristol United Kingdom
+1. Department of Neurophysiology and Pathophysiology, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+2. School of Psychological Science, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
 
 † Corresponding author
 
@@ -44,19 +44,35 @@ Overall, our analyses update the state-of-the-art by suggesting that, when confo
 
 We re-analysed five datasets from published studies (Chau et al., 2014; Gluth et al., 2018; N = 144 human participants) of a speeded multiattribute decision-making task. Participants were shown choice alternatives that varied along two distinct reward attributes: reward magnitude (X) and reward probability (P), which mapped to visual features (colourful slanted bars as options in Figure 2a). After learning the feature-to-attribute mapping, participants were instructed to choose the most valuable one among multiple options placed in this multiattribute space (Figure 2a) on each trial and to maximise the total reward across trials. In the ternary-choice condition, one option (the ‘distractor’, or D) was flagged unavailable for selection early in the trial. The expected value (or EV, i.e., X multiplied by P) of the higher- and lower-value available alternatives ('targets’ H and L, respectively), and of the unavailable distractor were denoted by HV, LV, and DV, respectively.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig2-v2.jpg)
+
+**Figure 2.:** (a) Multiattribute stimuli in a previous study (Chau et al., 2014). Participants made a speeded choice between two available options (HV: high expected value; LV: low expected value) in the presence (ternary) or absence (binary) of a third distractor option (‘D’). Three example stimuli are labelled for illustration purposes only. In the experiment, D was surrounded by a purple square to show that it should not be chosen. (b, c) Relative choice accuracy (probability of H choice among all H and L choices) in ternary trials (panel b) and in binary-choice baselines (panel c) plotted as a function of both the expected value (EV) difference between the two available options (HV − LV) (y-axis) and the EV difference between D and H (x-axis). Relative choice accuracy increases when HV − LV increases (bottom to top) as well as when DV − HV increases (left to right, i.e., positive D effect). (d–f) Predicting relative accuracy in human data using regression models (Methods). Asterisks: significant effects [p < 0.05; two-sided one-sample t-tests of generalised linear model (GLM) coefficients against 0] following Holm’s sequential Bonferroni correction for multiple comparisons. n.s.: non-significant. (g) Rival hypotheses underlying the positive notional distractor effect on binary-choice accuracy. Left: EV indifference contour map; Right: additive utility (AU) indifference contour map. Utility remains constant across all points on the same indifference curve and increases across different curves in evenly spaced steps along the direction of the dashed grey line. Decision accuracy scales with Δ(utility) between H and L in binary choices. Left (hypothesis 1): Δ(EV) = (HV − LV)/(HV + LV) by virtue of divisive normalisation (DN); because HV2 − LV2 = HV1 − LV1, and HV2 + LV2 > HV1 + LV1, Δ(EV2) becomes smaller than Δ(EV1). Right (hypothesis 2): Δ(AU) = AUH − AUL; Δ(AU2) < Δ(AU1) by virtue of additive integration. (h, i) Regression analysis of model-predicted accuracy in binary choice. EV + DN model corresponds to hypothesis 1 whilst AU model corresponds to hypothesis 2 in panel g. Error bars = ± standard error of the mean (SEM) (N = 144 participants).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Method in the original study (Chau et al., 2014): A schematic showing that the mean DV across relevant ternary trials (‘T’) is taken as a notional DV for each individual binary trial (‘B’). For each participant, among the 150 T trials there are 149 unique T conditions with a specific combination of P and X attributes across the 3 alternatives, while among the 150 B trials there are only 95 unique B conditions with a specific combination of P and X across the 2 options. The T and B trials do not have one-to-one mapping even if the unique stimulus positions (among four quadrants of the screen) are taken into consideration. (b) A successful reproduction of an invalid control analysis in the Supplementary file 3b of the original study (Chau et al., 2014): ‘The effect of HV-D on human behavior was specific to distractor trials’ using the notional DV depicted in panel a. Error bars: ± standard error of the mean (SEM) across participants (N = 21). (c) Our baselining approach uses a new dependent variable, the trial-by-trial baseline accuracy, via identifying all matched B trials (number of trials 1 ≤ nB ≤ 6) of every T trial. Of note, when analysing choice accuracies in B trials using logistic regression (e.g., Figure 2), Matlab’s glmfit takes a two-column response matrix whose first column indicates the number of correct responses (H choices) for each observation and second column indicates nB for each observation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The only difference between this figure and Figure 2 in the main text is that the regressor DV − HV in Figure 2 is replaced by DV here. Error bars = ± standard error of the mean (SEM) (N = 144 participants). n.s.: non-significant.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The generalised linear models (GLMs) here included an additional regressor HV + LV. Error bars = ± standard error of the mean (SEM) (N = 144 participants). Asterisks: significant effects (p < 0.05; two-sided one-sample t-tests of GLM beta coefficients against 0) following Holm’s sequential Bonferroni correction for multiple comparisons. n.s.: non-significant.
+
 Rational choice theory posits that an unavailable D should not in any way alter the relative choice between two available H and L targets. However, the behavioural data in this task (Chau et al., 2014) challenged this view. By examining the probability of H being chosen over L in ternary trials, that is, the relative choice accuracy, Chau et al., 2014; Chau et al., 2020 reported that a relative distractor variable ‘DV − HV’ (the EV difference between the distractor and the best available target) altered relative accuracy. We note that other recent studies, using different stimuli, quantified the distractor influence by means of an absolute distractor variable DV (Louie et al., 2013; Gluth et al., 2020a). Wherever possible, we quantify distractor effects using both the relative (DV − HV) and absolute (DV) distractor variables.
 
 To begin with, we note that, in addition to ternary trials in which D was present (but unavailable), participants encountered ‘matched’ binary trials in which only the H and L target alternatives were shown. These binary trials are ideally suited for assessing the extent to which previously reported distractor affects can be attributed to covariations between the distractor variable and target-related properties. This is because, for each ternary trial, we can derive a respective binary-choice baseline accuracy from binary trials that had the exact same targets but no distractor (Figure 2—figure supplement 1c). Given that participants never saw D in binary trials, the distractor variable is notional and should have no effect on the binary baseline accuracies. However, if D does paradoxically ‘influence’ binary accuracies, then this would signal that the distractor variable covaries with other unspecified modulators of choice accuracy. We dub any effect that D has upon binary-choice accuracy as the ‘notional distractor effect’. We emphasise here that a notional distractor effect is not a genuine empirical phenomenon but a tool to diagnose target-related covariations in the experimental design.
 
-## Re-assessing distractor effects beyond target-related covariations
+### Re-assessing distractor effects beyond target-related covariations
 
 We used logistic regression (generalised linear model or GLM) to quantify the effect of the distractor variable on relative choice accuracy (the probability of H choice among all H and L choices). Differently from previous studies, which focused primarily on ternary-choice trials, here we analysed two different dependent variables (Figure 2d—f): ternary-choice relative accuracies (‘T’) and their respective baseline accuracies (‘B’) (see Methods and Figure 2—figure supplement 1c). For the ternary-choice condition, our GLM reveals a significant main effect of the relative distractor variable ‘DV − HV’ (t(143) = 3.89, p < 0.001), and a significant interaction between this distractor variable and the index of decision difficulty ‘HV − LV’ on relative choice accuracy, t(143) = −3.67, p < 0.001 (Figure 2d). These results agree with previous reports when analysing ternary choice alone (Chau et al., 2014; Chau et al., 2020). Turning into the matched binary baseline accuracies, the GLM coefficients bear a striking resemblance to those of the ternary-choice GLM (see Figure 2e; also compare Figure 2b to Figure 2c for a stark resemblance between T and B accuracy patterns), with (this time) notional positive and interacting distractor effects being observed. Crucially, neither the main distractor nor the (HV − LV) × (DV – HV) interaction effects are modulated by ‘Condition’ in a GLM combining T and B together, |t(143)| < 0.92, p > 0.72 (Figure 2f). We see similar results when the relative distractor variable DV − HV is replaced by the absolute distractor variable DV or when a covariate HV + LV is additionally included: the distractor’s EV had no differential effect on relative accuracy across binary vs. ternary condition (Figure 2—figure supplements 2 and 3). These results equate the distractor effects in ternary trials (D present) with the notional distractor effects in binary trials (D absent), indicating that the former arose for reasons other than the properties of D. Specifically, the notional distractor effects (Figure 2e) in binary trials (with only H and L stimuli present) indicate that the value of D covaries with target-related properties (other than HV − LV, which was already a regressor) that modulate choice accuracy. Next, we use computational modelling to unveil these confounding target-related properties.
 
-## Integrating reward and probability information additively in risky choice
+### Integrating reward and probability information additively in risky choice
 
 The original study reported a surprising phenomenon (Chau et al., 2014): decisions seem to be particularly vulnerable to disruption by a third low value, as opposed to high value, distracting alternative, that is, a positive distractor effect. The very definition of this effect hinges upon the a priori assumption that decisions rely on calculating and subsequently comparing the EVs across choice options. An alternative prominent idea is that participants eschew EV calculations (Hayden and Niv, 2021); instead, they compute the difference between alternatives within each attribute and simply sum up these differences across attributes. As mentioned in the Introduction, we refer to this class of strategies that involve the additive (independent) contributions of reward and probability as the AU strategy. Indeed, past studies in binary risky choice have reported decision rules in humans and other animals (Rouault et al., 2019; Farashahi et al., 2019; Bongioanni et al., 2021) based on a weighted sum of the attribute differences, that is, a decision variable equivalent to the AU difference between alternatives, Δ(AU) = λ(HX − LX) + (1 − λ)(HP − LP), where 0 ≤ λ ≤ 1. Although the additive combination of reward and probability may not be generalisable in all types of risky-choice tasks, it could viably govern decisions in the simple task illustrated in Figure 2a. Of note, we came to notice that the key distractor variable DV − HV positively covaries with the Δ(AU) between H and L across all choice-sets (e.g., Pearson’s r(148) = 0.314, p < 0.0001, in the case of equal weighting between X and P, λ = 0.5). This unintended covariation arose in the original study possibly due to a deliberate attempt to decorrelate two EV-based quantities (DV − HV and HV − LV) in the stimuli (Chau et al., 2014). The correlation between DV − HV and Δ(AU) is stronger in more difficult trials (r(71) = 0.52, p < 0.0001, shared variance = 27%; splitting 150 trials into difficult vs. easy by the median of HV − LV; Chau et al., 2020) than in easier trials (r(59) = 0.43, p < 0.001, shared variance = 19%), mirroring both the positive (overall positive correlation) and the interacting (change of correlation strength as a function of difficulty) notional distractor effects on binary choice.
 
-## Additive integration explains notional distractor effects in binary-choice trials
+### Additive integration explains notional distractor effects in binary-choice trials
 
 Notably, DV − HV also negatively covaries with HV + LV (Pearson’s r(148) = −0.78, p < 0.001), which potentially leads to another explanation of why binary-choice accuracy seems lower as the matched DV − HV variable decreases. This explanation appeals to the divisive normalisation (DN) model based on EV (Louie et al., 2013; Pirrone et al., 2022). Imagine choosing between two prospects, H and L, in two different choice-sets, {H1 vs. L1} and {H2 vs. L2}, with the EV difference between H and L being the same across the two choice-sets (Figure 2g, left panel). DN applied to EVs (‘EV + DN’, hereafter) will shrink the EV difference between H and L more aggressively for set 2 than for set 1 because of the larger denominator in set 2, rendering set 2 a harder choice problem (lower accuracy). It is important to note that, in line with previous analyses (Chau et al., 2014; Gluth et al., 2018), adding the HV + LV covariate to the GLMs does not explain away the interacting notional distractor effects in binary trials (Figure 2—figure supplement 3). Qualitatively, the above two hypotheses (‘AU’ vs. ‘EV + DN’) both predict a positive main notional distractor effect on binary-choice accuracy, but their predictions for the (HV − LV) × (DV − HV) interaction could differ. For instance, DN might even predict a slightly positive, rather than negative, interacting notional distractor effect on binary accuracy—in this stimulus set, the divisively normalised Δ(EV) happens to be more positively correlated with DV − HV in easier trials (shared variance = 39.8%) than in harder trials (shared variance = 36.7%).
 
@@ -64,23 +80,39 @@ It is also important to note that AU on its own can approximate this EV sum effe
 
 Next, we used formal Bayesian model comparison to quantitatively identify the simplest possible model that can reproduce the binary-choice behaviour. For completeness, we added in the comparison a naive expected-value (EV) model, and a recently proposed dual-route model, which relies on EV and flexibly arbitrates between DN and mutual-inhibition (MI) processes (Chau et al., 2020). A vanilla DN model can be viewed as a nested model within the dual-route model. All models were fitted to each participant’s binary choices and reaction times (RTs) by optimising a joint likelihood function (Methods). Qualitatively, Figure 3a shows that the naive EV model fundamentally deviates from the human choice data: the model predicts a vertical gradient of choice accuracy constrained by HV − LV. When comparing these models head-to-head using a cross-validation scheme, we find that the AU model wins over any other model (Figure 3b; protected exceedance probability Ppexc > 0.99; Methods). This result still holds robustly when including, in all models, subjective non-linear distortions of attributes (Zhang and Maloney, 2012; ‘Non-linear’ in Figure 3b, c right panels; Methods). Moreover, the RTs predicted by the DN model mismatch the human RTs (Figure 3a: ‘EV + DN’). But this is not the sole reason why DN fails in the model comparisons. DN still fails to win over the AU model even when we consider static versions of the models fitted to the choice probabilities alone while ignoring the RTs (Figure 3c, ‘Static models’; Methods). These systematic model comparisons thus quantitatively support the AU model as a remarkably simple account of the ‘notional distractor’ effects in binary trials (Figure 2i). Additional model comparisons corroborate that the AU model is favoured over specific and popular instantiations of the non-linear multiplicative model (i.e., expected utility [Von Neumann and Morgenstern, 2007] and prospect theory [Kahneman and Tversky, 1979]; see Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig3-v2.jpg)
+
+**Figure 3.:** (a) Human vs. model-predicted choice accuracy and reaction time (RT) patterns. (b, c) Bayesian model comparison based on cross-validated log-likelihood. Linear and non-linear: different psychometric transduction functions for reward magnitude and probability (see Methods). Linear multiplicative: EV; linear additive: AU. Dynamic model: optimisation based on a joint likelihood of choice probability and RT; Static model: optimisation based on binomial likelihood of choice probability. (d–f) Model predictions (circles) plotted against human data (bars) for different condition categories [H dominates L on one attribute only, that is, single dom. (81% of all trials), or on both attributes, that is, double dom. (only 19%)] at each level of HV – LV. Error bars = ± standard error of the mean (SEM) (N = 144 participants).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Bayesian random-effect comparison of models fit to binary-choice trials. (b) Visualisation of best-fitting utility and probability functions of the prospect-theory model. Grey curves: individual participants’ best-fitting functions; red curves: median across participants (N = 144). The typical best-fitting probability function tends to overweigh low probabilities and the typical utility function (distorted magnitude) tends to be concave (i.e., compressive non-linearity).
+
 The success of the AU model suggests that the reward attributes were not multiplicatively conglomerated into a single EV dimension. To better illustrate the differences between AU- and EV-based models, we plotted model predictions separately for different condition categories in which H dominates L in one attribute only (single dom.) or in both attributes simultaneously (double dom.; only 19% of all trials) (Figure 3d—f). The EV model, being only sensitive to the difference in the product of probability and reward, fails to capture any performance variations across these distinct categories (because these categories are orthogonal to the EV difference; Figure 3d). By contrast, the AU model can capture these across-category performance changes (Figure 3e). Qualitatively, the dual-route model seems to be able to capture some patterns of the human data on the binned maps (Figure 3a: ‘Dual-route’), but its deviation from human behaviour becomes more salient when we inspect the model predictions at each fixed level of EV difference (Figure 3f). Taken together, we show that the AU model reproduces the patterns of both accuracy and RT in binary-choice trials decisively better than the models relying on EV or divisively normalised EV (also see Supplementary file 1, Supplementary file 2 for model parameter estimates).
 
-## A modest negative distractor effect operating on AU
+### A modest negative distractor effect operating on AU
 
-Because ‘additive integration’ is a decisively better model of binary-choice behaviour than multiplicative models are (e.g., EV, EV + DN, expected utility, and prospect theory), here we re-assessed distractor effects after defining the key analysis variables using the subjective utilities afforded by the AU model. To better define these variables, we fit the dynamic AU model (with free λ weight; Methods: Context-independent model) to binary and ternary choices, separately, and constructed subjective utility as AU = λ(X) + (1 − λ)(P). We then analysed relative choice accuracy using a GLM with AU-based regressors: AUH − AUL (AU difference between targets), AUH + AUL (AU sum), distractor variable (absolute: AUD, or relative: AUD − AUH), distractor variable × (AUH − AUL) interaction, and the interaction between each of these effects and ‘C’ (Condition: T vs. B). We focus on the key regressors that assess the distractor effects in ternary choices over and above the matched baseline performance (captured by the ‘× C’ interaction): the main distractor effect, ‘distractor variable × C’, and the interacting distractor effect dependent on choice difficulty, ‘distractor variable × (AUH − AUL) × C’. First, we verified that including the AU-sum regressors decisively improved the GLM’s goodness-of-it,  χ2 (2) > 1.005 × 103, p < 0.0001; and the GLM with AU regressors had better goodness-of-it than the GLM with EV regressors,  χ2 (0) > 1.03 × 104, p < 0.0001 (for either absolute or relative distractor variable). We found a significant negative main distractor effect, AUD × C, on the choice accuracy, t(143) = −2.27, p = 0.024 (uncorrected); however, this main effect was marginally significant when using the relative distractor variable AUD – AUH, t(143) = −1.86, p = 0.065 (uncorrected). The interacting distractor effect was not significant t(143) < −0.54, p > 0.1 (see Supplementary file 3 for a full report). We here reiterate that, by contrast, neither the main nor the interacting distractor effects were significant in the GLM with EV-based regressors (p > 0.3, uncorrected, Figure 2f and Figure 2—figure supplements 2 and 3). These results based on subjective AU fit more closely with recent reports showing a negative main distractor effect (Louie et al., 2013).
+Because ‘additive integration’ is a decisively better model of binary-choice behaviour than multiplicative models are (e.g., EV, EV + DN, expected utility, and prospect theory), here we re-assessed distractor effects after defining the key analysis variables using the subjective utilities afforded by the AU model. To better define these variables, we fit the dynamic AU model (with free λ weight; Methods: Context-independent model) to binary and ternary choices, separately, and constructed subjective utility as AU = λ(X) + (1 − λ)(P). We then analysed relative choice accuracy using a GLM with AU-based regressors: AUH − AUL (AU difference between targets), AUH + AUL (AU sum), distractor variable (absolute: AUD, or relative: AUD − AUH), distractor variable × (AUH − AUL) interaction, and the interaction between each of these effects and ‘C’ (Condition: T vs. B). We focus on the key regressors that assess the distractor effects in ternary choices over and above the matched baseline performance (captured by the ‘× C’ interaction): the main distractor effect, ‘distractor variable × C’, and the interacting distractor effect dependent on choice difficulty, ‘distractor variable × (AUH − AUL) × C’. First, we verified that including the AU-sum regressors decisively improved the GLM’s goodness-of-it, $ χ^{2}$ (2) > 1.005 × 103, p < 0.0001; and the GLM with AU regressors had better goodness-of-it than the GLM with EV regressors, $ χ^{2}$ (0) > 1.03 × 104, p < 0.0001 (for either absolute or relative distractor variable). We found a significant negative main distractor effect, AUD × C, on the choice accuracy, t(143) = −2.27, p = 0.024 (uncorrected); however, this main effect was marginally significant when using the relative distractor variable AUD – AUH, t(143) = −1.86, p = 0.065 (uncorrected). The interacting distractor effect was not significant t(143) < −0.54, p > 0.1 (see Supplementary file 3 for a full report). We here reiterate that, by contrast, neither the main nor the interacting distractor effects were significant in the GLM with EV-based regressors (p > 0.3, uncorrected, Figure 2f and Figure 2—figure supplements 2 and 3). These results based on subjective AU fit more closely with recent reports showing a negative main distractor effect (Louie et al., 2013).
 
-## Distractor-related covariations and multiattribute context effects
+### Distractor-related covariations and multiattribute context effects
 
 Having revisited distractor effect while controlling for target-related confounding covariations, we now move into examining distractor-related covariations, that is, whether multiattribute context effects were present in these datasets, and if so, whether they were related to the modest AU-based negative distractor effect we reported above.
 
 Classic multiattribute context effects typically occur when a decoy alternative is added to a choice-set consisting of the two non-decoy alternatives (Figure 4a). Two classic context effects are particularly relevant in this task because 84% of the ternary trials satisfy specific H, L, and D geometric (i.e., in the two-dimensional choice space) configurations that could give rise to these context effects (Figure 4a). First, an attraction effect (Huber et al., 1982), whereby the probability of choosing a target over a competitor increases due to the presence of an ‘inferior’ dominated D near the target (also see Figure 1d for an illustrative example); and second, a repulsion effect (Dumbalska et al., 2020), whereby this pattern is reversed (and the probability of choosing the target is reduced) in the presence of a nearby ‘superior’ dominating D. We note in passing that other popular context effects, such as the similarity and the compromise effects, could not be examined here due to the absence or the very low frequency of occurrence of appropriate choice-sets (i.e., in these effects the decoys are required to be roughly iso-preferable to the target or the competitor alternatives, Spektor et al., 2021).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig4-v2.jpg)
+
+**Figure 4.:** (a) The attraction effect (Huber et al., 1982) can happen when D is close to and dominated by H or L. The repulsion effect (Dumbalska et al., 2020) can happen when D is close to but dominates H or L. (b) T − B p(H over L) plotted as a function of D’s relative Euclidean distance to H vs. L in the attribute space and D’s additive utility (AU) dominance—‘superior’ (‘inferior’) D lies on a higher (lower) AU indifference line than both H and L. Error bars: ± standard error of the mean (SEM) across participants (N = 144). (c) Condition-unspecific bias of p(H over L) in ternary conditions relative to binary conditions. (d) Bias-corrected T − B p(H over L). Black asterisks: significant context effects (Bonferroni–Holm corrected p < 0.05; two-tailed one-sample t-tests against 0). (e) Bias-corrected T − B p(H over L) predicted by different models. Grey asterisks: significant difference between model predictions and human data (uncorrected p < 0.05; two-tailed paired-sample t-tests). (f) Main effect of D’s AU dominance (superior vs. inferior) on T − B relative accuracy change in human data and model predictions. (g) Bayesian model comparison of context-dependent models (also see Figure 4—figure supplement 1). (h) Model recovery (Methods). Text in each cell: posterior model frequency; Heatmap: protected exceedance probability (Ppexc) that a fitted model (each column) has the highest log-likelihood given input ternary-trial data (choice probabilities and RTs) simulated by a certain model (each row).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Bayesian random-effects model comparison based on cross-validated log-likelihood (fivefolds). SI: selective integration model; Adap. Gain: adaptive gain model; CI: context independent; EV: expected value; AU: additive utility. Dual-route and divisive normalisation (DN) model predictions for the relative accuracy change (Ternary minus Binary, T − B) as a function of (b) both D’s AU dominance (colour of the bars) and D’s position similarity to H and L in the 2D attribute space, or (c) D’s AU dominance only (main effect). AU: additive utility; EV: expected value. Error bars: ± standard error of the mean (SEM) across participants (N = 144).
+
 Before characterising decoy effects, we considered the possibility that the change of relative accuracy between binary (B) and ternary (T) choice reflects a condition-unspecific change in behaviour, that is, an accuracy reduction potentially induced by higher cognitive demands in the ternary trials. We estimated this ‘generic’ bias by a permutation procedure whereby we randomly shuffled the true mappings between ternary conditions and their matched binary conditions and obtained an average T − B accuracy contrast across random permutations (Figure 4c; see Methods). After this bias was corrected for each participant, the relative accuracy change from B to T was compared against zero (i.e., zero represents a null hypothesis in which T and B had no difference over and above the condition-unspecific bias). The bias-corrected T − B relative accuracy change shows a strong attraction effect: The relative choice accuracy dynamically decreases and increases as an inferior D gets closer to L (n = 32 relevant trials in this category) and H (n = 33), respectively, |t(143)| > 4.88, p < 0.0001 (Figure 4d). Meanwhile, a significant repulsion effect occurs when a superior D dominates H or L in the attribute space, t(143) = −2.53, p = 0.025, particularly when D is closer to H (n = 41 relevant trials in this category), but not when D is closer L (fewer trials n = 20 in this category; t(143) = −1.09, p = 0.28, Bonferroni–Holm corrected). A repeated-measures analysis of variance (ANOVA) reveals a significant interaction between the similarity (D closer to H vs. D closer to L) and the dominance of D (inferior vs. superior), F(1, 143) = 30.6, p < 0.0001, partial η2 = 0.18, on the T − B relative accuracy change.
 
 Of note, in line with the AU-based negative distractor effect we reported in the previous section, the current analysis on multiattribute decoy effects also reveals a significant main effect of D’s AU dominance on relative accuracy change (repeated-measures ANOVA on T − B relative accuracy change in all trials), F(1, 143) = 6.51, p = 0.012, partial η2 = 0.044 (Figure 4f: ‘Human’). This overall dominance effect seems to be induced by a noticeable asymmetry in the observed decoy effects (Figure 4d, net of inferior-purple vs. superior-blue bars): targeting H seems more effective than targeting L, and also, the attraction effect is stronger than the repulsion effect (hence, the multiattribute effects do not cancel out but lead to a net accuracy boost for inferior D’s). Crucially, across participants there is a significant positive correlation between the negative main distractor effect ‘AUD × C’ (GLM in the previous section) and the negative main effect of D’s AU dominance here (Spearman’s ρ = 0.28, p = 0.00074). This indicates that if a participant had a stronger asymmetry in the decoy effects (D’s AU dominance) then they would also have a stronger AU-based negative distractor effect. We further interpret this correspondence using computational modelling in the next section.
 
-## Selective gating explains multiattribute context effects and adapts to decision noise
+### Selective gating explains multiattribute context effects and adapts to decision noise
 
 Although the AU model successfully described behavioural responses in binary trials (Figure 3), it is essentially a context-independent model complying with the independence from irrelevant alternatives (IIA) principle. That is, according to the AU model, the characteristics of D in ternary trials should not lead to any preference change between the two available targets H and L. In this section, we resort to computational modelling to understand why multiattribute context effects occur in ternary trials. First, as shown in Figure 4e leftmost panel, the T − B effects in human data could not be explained by a context-independent AU model (‘blind’ to D, i.e., only taking H and L as inputs) with freely varying parameters across B and T conditions (the free parameters could capture any global changes in behaviour due to, for example, different noise levels and/or attribute weighting, potentially induced by higher cognitive demands in the ternary trials; Methods).
 
@@ -89,6 +121,14 @@ Next, we considered two models that can predict context effects in multiattribut
 Crucially, the SI model could lawfully reproduce the overall negative D’s AU dominance effect without relying on any additional mechanism such as DN, F(1, 143) = 78.4, p < 0.00001, partial η2 = 0.35, post hoc t-test: t(143) = −8.85, p < 0.0001 (Figure 4f). By contrast, the models that predict ‘by-design’ unidimensional distractor effect (dual-route and DN) could not describe the multiattribute decoy effects (Figure 4e, f; also see Figure 4—figure supplement 1b, c). This suggests that the negative D dominance effect is not the by-product of a unidimensional distractor mechanism but instead falls out naturally from the presence of asymmetrical decoy effects (i.e., stronger attraction effect, when H is targeted). The correlation between the D dominance and AU distractor effects discussed above, corroborates the possibility that, to some extent, the negative distractor effect is driven by asymmetrical decoy effects (Figure 4f: SI model mimics the negative D dominance effect).
 
 How does the winning SI model capture the attraction and repulsion effects? The way the model works in these two effects is shown in a schematic form in Figure 5a, b. Because SI selectively allocates reduced gain to ‘locally losing’ attribute values, it exerts a stronger gating on the utility of option B when the decoy D dominates B (Figure 5b) than when D is dominated by B (Figure 5a). Thus, the relative preference between A and B can be dynamically reversed according to the dominance of D, giving rise to the opposing context effects of attraction and repulsion.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig5-v2.jpg)
+
+**Figure 5.:** (a, b) By virtue of selective integration (SI), alternatives A, B, and D are ranked within each attribute dimension; SI weights are then assigned to the sorted alternatives accordingly (for illustration, w1 = 0, w2 = 0.5, and w3 = 0.9). Attribute values are selectively suppressed in proportion to the SI weights, that is, lower ranked values are suppressed more strongly. As a result of SI (assuming any w1 < w2 ≤ w3), the additive utility (AU) of B is higher in the case of panel a than the AU of B′ in the case of panel b due to the distinct locations of decoy D. (c) Relationship between SI w and decision noise. Red lines: robust linear regression fits (using Matlab’s robustfit). $\beta$: softmax inverse temperature. Top: binary trials (‘B’); bottom: ternary trials ('T’) (ternary SI w: mean across w2 and w3); SI w = 0: lossless integration, that is, attributes maintain their original values; SI w > 0: selective integration; SI w = 1: losing attribute value shrinks to 0. ρ: Spearman’s rank correlation coefficient. ***p < 0.0001. (d) Relationship between SI w and drift sensitivity k (filled black) or decision bound (open grey). Each point represents a participant (N = 144 in total).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83316/elife-83316-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Recovery of selective integration (SI) model parameters by simulating choice probabilities (1000 trials) based on a grid of uniformly distributed parameter values (n = 800 each) and then estimating the best-fitting parameters. (c, d) Each row shows a case of simulating choice probabilities by varying 1 model parameter while fixing all other parameters ($\lambda$ = 0.5, $\beta$ = 10, SI w = 0.5) and then estimating the best-fitting parameter values via model fitting. On-diagonal panels show the recovery of each parameter as a function of itself (all |Pearson’s r| > 0.99), whilst off-diagonal panels suggest that variation in irrelevant parameters do not bias the recovery of any given parameter of interest (all |Pearson’s r| < 0.056, p > 0.1).
 
 Lastly, SI has been shown to maximise decision accuracy and economic outcomes in the face of decision noise that arises when multiple attributes or pieces of information need to be combined towards a decision (Tsetsos et al., 2016; Wyart and Koechlin, 2016). Here, we examined whether SI confers robustness on decisions by adapting to the individual decision noise levels. And if so, it could provide a normative justification of these decoy biases as emergent properties of a decision policy that maximises robustness against decision noise. After fitting a static version of the SI model to choice probabilities (Methods), we found a positive correlation across participants between the SI gating w and the temperature of a softmax choice function (Spearman’s ρ(142) > 0.43, p < 0.0001, for both binary and ternary choices; Figure 5c). Additional parameter-recovery simulations corroborated that these findings are not due to any trade-off between model parameters (Figure 5—figure supplement 1). After fitting the dynamic SI model to choices and RTs together, we found that the SI w negatively correlates with the utility drift sensitivity (how effective a participant is in using the information about utility; Methods), but not the height of the decision bound (Figure 5d). These findings suggest that SI has an adaptive role, as it selectively exaggerates the attribute difference between winning and losing alternatives by just the right amount in proportion to decision noise.
 
@@ -108,94 +148,212 @@ To conclude, harnessing the power of open science, we scrutinised large datasets
 
 ## Methods
 
-## Multiattribute decision-making task and datasets
+### Multiattribute decision-making task and datasets
 
 In the multiattribute decision-making task of Chau et al., 2014, participants made a speeded choice within 1.5 s between two available options (HV: high value; LV: low value) in the presence (‘ternary’) or absence (‘binary’) of a third unavailable distractor option (D). On each trial, the two or three options appeared in different quadrants of a computer screen. Each option was a small rectangle and its colour/orientation represented some level of reward magnitude/probability (the feature-to-attribute mapping was counterbalanced across participants). There were equal number of ternary (n = 150) and binary trials (n = 150). However, the ternary and binary trials did not have ‘one-to-one’ mapping, that is, some ternary trials had only 1 matched binary trial with the same H and L options while others had several (also see Figure 2—figure supplement 1). The available targets and the unavailable distractor were flagged by orange and pink surround boxes, respectively, 0.1-s poststimulus onset. Participants received feedback about whether the chosen option yielded a reward at the end of each trial. We re-analysed five published datasets of this speeded-decision task (N = 144 human participants in total). These five datasets all include ternary and binary trials: the original fMRI dataset (N = 21, Chau et al., 2014), a direct replication study (using exact trial sequence provided by Chau et al.) performed by Gluth et al. (Gluth Experiment 4: N = 44), and additional replication experiments performed by Gluth et al. (Gluth Experiments 1, 2, and 3; N = 79 in total, Gluth et al., 2018). Of note, a new dataset (‘Hong Kong’; N = 40) recently acquired by Chau et al., 2020 did not contain binary trials and thus could not be included in our analyses that compared ternary and binary choices head-to-head.
 
-## Computational modelling of behaviour
+### Computational modelling of behaviour
 
-## General architecture of dynamic models
+#### General architecture of dynamic models
 
-We used the framework of feedforward inhibition (FFI) model to jointly fit choice probability and RT. The FFI model conceptually ‘interpolates’ between a race model and a drift-diffusion model (Mazurek et al., 2003). Each accumulator is excited by the evidence for one alternative and inhibited by the evidence for the other alternatives via feedforward inhibition. Evidence units are ideal integrators with no leak, and they receive crossed inhibition from different alternatives. The activation of each integrator is xi (for the i th alternative), which takes Ii as evidence input:(1)dxi=(kIi+I0)dt+ξdt
+We used the framework of feedforward inhibition (FFI) model to jointly fit choice probability and RT. The FFI model conceptually ‘interpolates’ between a race model and a drift-diffusion model (Mazurek et al., 2003). Each accumulator is excited by the evidence for one alternative and inhibited by the evidence for the other alternatives via feedforward inhibition. Evidence units are ideal integrators with no leak, and they receive crossed inhibition from different alternatives. The activation of each integrator is $x_{i}$ (for the $i$ th alternative), which takes $I_{i}$ as evidence input:
 
-where k is a sensitivity parameter (drift rate coefficient, i.e., how effective the nervous system is in using utility information), and I0 a baseline drift, independent of Ii. ξ denotes Gaussian noise of a zero mean and a variance of σ2. The noise term is in proportion to the square-root of dt because the noise variance itself is a linear function of dt. Evidence Ii is computed as the utility of alternative i inhibited by the average utility across all other alternatives in a choice-set (assuming n alternatives in total including i):(2)Ii=Ui−c(∑j≠iUjn−1)
+$$
+dx_{i}=(kI_{i}+I_{0})dt+ξ\sqrt{dt}
+$$
 
-where c (0≤c≤1) is the FFI strength. When c = 0, the model becomes a classic race model; when c = 1, it corresponds to a drift-diffusion model. The drift rate μ of FFI diffusion thus can be rewritten as:(3)μi= kUi-ck∑j≠iUjn-1+I0
+where $k$ is a sensitivity parameter (drift rate coefficient, i.e., how effective the nervous system is in using utility information), and $I_{0}$ a baseline drift, independent of $I_{i}$. $ξ$ denotes Gaussian noise of a zero mean and a variance of $\sigma^{2}$. The noise term is in proportion to the square-root of $dt$ because the noise variance itself is a linear function of $dt$. Evidence $I_{i}$ is computed as the utility of alternative $i$ inhibited by the average utility across all other alternatives in a choice-set (assuming n alternatives in total including $i$):
 
-The utility function Ui can take different forms of interest, such as EV, AU, or being adaptive to contexts (SI and adaptive gain models, see next).
+$$
+I_{i}=U_{i}−c(\frac{\sumj\neqiU_{j}}{n−1})
+$$
 
-We next derive the analytical solutions for the FFI dynamic system (Equation 1). First, the distribution of first-passage times t (i.e., decision-bound hitting times) is known to follow an inverse Gaussian distribution (Usher et al., 2002):(4)p(t;θ,x0,μ)=θ−x02πσ2t3e−(θ−x0−μt)22σ2t
+where c ($0\leqc\leq1$) is the FFI strength. When c = 0, the model becomes a classic race model; when c = 1, it corresponds to a drift-diffusion model. The drift rate μ of FFI diffusion thus can be rewritten as:
 
-In which, x0 is a starting point of the integrator, and θ, the height of decision bound. Then, we can derive the probability of observing a response time RT on a given trial as:(5)p(t=T)=θ−x02πσ2T3e−(θ−x0−μT)22σ2T
+$$
+\mu_{i}= kU_{i}-ck\frac{\sum_{j\neqi}U_{j}}{n-1}+I_{0}
+$$
 
-where T=RT-tnd, and tnd is a non-decision response delay. Now, we can obtain the probability of observing a choice i but not choice j at time T as:(6)p(choice=i,t= T)=p(ti=T)p(tj>T)=p(ti=T)[1−p(tj<T)]
+The utility function $U_{i}$ can take different forms of interest, such as EV, AU, or being adaptive to contexts (SI and adaptive gain models, see next).
 
-That is, we can multiply the PDF for response i (e.g., H choice) with the cumulative probability that the alternative response j (e.g., L choice) hits the decision bound if and only if at a time later than T. Given that a CDF of an inverse Gaussian is expressible in terms of the CDF of the standard Gaussian Φ(·), that is,(7)p(tj<T)=Φ(μjT−θ+x0σT)+e2(θ−x0)μjσ2Φ(−μjT−θ+x0σT)
+We next derive the analytical solutions for the FFI dynamic system (Equation 1). First, the distribution of first-passage times $t$ (i.e., decision-bound hitting times) is known to follow an inverse Gaussian distribution (Usher et al., 2002):
 
-and by substituting Equation 7 into Equation 6, we obtain the likelihood function of observing choice i at time T as:(8)L(i,T)=[1−Φ(μjT−θσT)+e2θμjσ2Φ(−μjT−θσT)]θσ2πT3e−(θ−μiT)22σ2T
+$$
+p(t;\theta,x_{0},\mu)=\frac{\theta−x_{0}}{\sqrt{2\pi\sigma^{2}t^{3}}}e^{\frac{−(\theta−x_{0}−\mut)^{2}}{2\sigma^{2}t}}
+$$
 
-Further, we assume no bias in the starting point of accumulation, that is, x0=0, and a unit variance of the noise term, that is, σ=1. This is equivalent to measuring the diffusion properties such as sensitivity k and bound θ in units of σ, a convention in standard diffusion models that prevents parameter trade-offs via a re-scaling of the diffusion space (Drugowitsch et al., 2014; Palmer et al., 2005). When fitting the models to data, we maximised the sum of Log(L) (LL, hereafter) across trials given empirical trial-by-trial choices and RTs. From this, and after getting the best-fitting model parameters, we can get the model prediction of choice probability (Equation 9) and mean RT (Equation 10) using the following integrals, respectively:(9)p(choice=i)=∫0+∞L(i,t)dt(10)E(ti)=∫0+∞(tL(i,t))dt/∫0+∞L(i,t)dt
+In which, $x_{0}$ is a starting point of the integrator, and $\theta$, the height of decision bound. Then, we can derive the probability of observing a response time $RT$ on a given trial as:
 
-In practice, we used the trapezoidal numerical integration with a small enough  dt = 0.001 s and a large enough Tmax = 100 s. Empirically, no negative drift rates were observed in any of the model parameter estimates in any participant.
+$$
+p(t=T)=\frac{\theta−x_{0}}{\sqrt{2\pi\sigma^{2}T^{3}}}e^{\frac{−(\theta−x_{0}−\muT)^{2}}{2\sigma^{2}T}}
+$$
 
-## Context-independent model
+where $T=RT-t_{nd}$, and $t_{nd}$ is a non-decision response delay. Now, we can obtain the probability of observing a choice $i$ but not choice $j$ at time $T$ as:
 
-The utility function Ui in the context-independent model is ‘blind’ to the distractor (D). For ternary trials, the context-independent model only takes H and L as inputs. For instance, the context-independent AU model assumes AUH = (λ)HX + (1 − λ)HP and AUL = (λ)LX + (1 − λ)LP, with λ being the attribute weight of reward magnitude (0 ≤ λ ≤ 1).
+$$
+p(choice=i,t= T)=p(t_{i}=T)p(t_{j}>T)=p(t_{i}=T)[1−p(t_{j}<T)]
+$$
 
-## SI model
+That is, we can multiply the PDF for response $i$ (e.g., H choice) with the cumulative probability that the alternative response $j$ (e.g., L choice) hits the decision bound if and only if at a time later than T. Given that a CDF of an inverse Gaussian is expressible in terms of the CDF of the standard Gaussian $Φ$(·), that is,
 
-We adopted the simplest form of SI model. The SI model discards information about those choice alternatives with relatively lower value in each attribute separately (Usher et al., 2019). Alternatives are compared and then selectively gated based on their ranks within each attribute. The highest attribute value remains unchanged (w1=0), intermediate value gets suppressed by a multiplicative weight w2, whilst the lowest value gets more strongly suppressed by w3 (0≤w2≤w3≤1). That is, the SI w represents the percent reduction in information processing gain. In case of a tie for the highest value, the two high values are unchanged, and the lowest value is suppressed by w3. By contrast, in case of a tie for the lowest value, the two low values both get suppressed by w3. After the selective gating within each attribute, which transforms attribute values to X′ and P′, respectively, an AU is constructed for each alternative via a weighted averaging, that is, AU = (λ)X′ + (1 − λ)P′, with λ being the attribute weight of reward magnitude (0 ≤ λ ≤ 1). This AU (after SI) is then fed into the FFI model as the component U for each alternative (Equation 3).
+$$
+p(t_{j}<T)=Φ(\frac{\mu_{j}T−\theta+x_{0}}{\sigma\sqrt{T}})+e^{\frac{2(\theta−x_{0})\mu_{j}}{\sigma^{2}}}Φ(\frac{−\mu_{j}T−\theta+x_{0}}{\sigma\sqrt{T}})
+$$
 
-## Adaptive gain model
+and by substituting Equation 7 into Equation 6, we obtain the likelihood function of observing choice $i$ at time $T$ as:
 
-The attribute value of a certain alternative, i, for example, the reward magnitude, Xi, is inhibited by a context mean across all alternatives in a choice-set (e.g., n alternatives), which yields Xi¯. Xi¯ then passes through a sigmoidal transduction function with slope s and bias term b (Dumbalska et al., 2020). This gain control is adaptive in that it accommodates the contextual information. Importantly, the gain control operates independently on each attribute, and it produces the final subjective attribute value (XiAG) for the construction of AU for each alternative: (11)XiAG=1/(1+ebx−Xi¯sx)(12)Xi¯=Xi−(∑iXin)
+$$
+L(i,T)=[1−Φ(\frac{\mu_{j}T−\theta}{\sigma\sqrt{T}})+e^{\frac{2\theta\mu_{j}}{\sigma^{2}}}Φ(\frac{−\mu_{j}T−\theta}{\sigma\sqrt{T}})]\frac{\theta}{\sigma\sqrt{2\piT^{3}}}e^{\frac{−(\theta−\mu_{i}T)^{2}}{2\sigma^{2}T}}
+$$
 
-The adaptive gain modulation of P can be obtained by replacing X with P in the above two equations. Ultimately, the utility of each alternative is computed as a weighted average across attribute values: (13)Ui=λXiAG+(1−λ)PiAG
+Further, we assume no bias in the starting point of accumulation, that is, $x_{0}=0$, and a unit variance of the noise term, that is, $\sigma=1$. This is equivalent to measuring the diffusion properties such as sensitivity $k$ and bound $\theta$ in units of $\sigma$, a convention in standard diffusion models that prevents parameter trade-offs via a re-scaling of the diffusion space (Drugowitsch et al., 2014; Palmer et al., 2005). When fitting the models to data, we maximised the sum of Log(L) (LL, hereafter) across trials given empirical trial-by-trial choices and RTs. From this, and after getting the best-fitting model parameters, we can get the model prediction of choice probability (Equation 9) and mean RT (Equation 10) using the following integrals, respectively:
 
-## Dual-route model
+$$
+p(choice=i)=\int_{0}^{+∞}L(i,t)dt
+$$
 
-The dual-route model arbitrates between a vanilla MI process and an MI process with additional DN (Chau et al., 2020). In the vanilla MI ‘route’, this model assumes that the evidence input to the accumulator is:(14)Ii=Ui−fMI(∑iUin)
 
-where U is expected value (EV), that is, EV = XP, and fMI is the inhibition strength of MI. In another rival route, the utility of each choice alternative is additionally divisively normalised by the sum of utilities across all alternatives (H + L in a binary trial; H + L + D in a ternary trial): (15)IiDN=UiDN−fMI(∑iUiDNn)(16)UiDN=Ui/∑iUi
 
-The drift rate takes the same form as that in FFI: μi=kIi+I0. Based on Equation 8 and for clarity, we rewrite the two components in Equation 8 as g and G:(17)G(μ,T,θ,σ)=1−Φ(μT−θσT)+e2θμσ2Φ(−μT−θσT)(18)g(μ,T,θ,σ)=θσ2πT3e−(θ−μT)22σ2T
+$$
+E(t_{i})=\int_{0}^{+∞}(tL(i,t))dt/\int_{0}^{+∞}L(i,t)dt
+$$
 
-The likelihood of the DN route and the vanilla route arriving at the decision bound first to yield a choice i is, respectively: (19)LDN(i,T)=g(μiDN,T,θ,σ)G(μjDN,T,θ,σ)G(μi,T,θ,σ)G(μj,T,θ,σ)(20)L(i,T)=g(μi,T,θ,σ)G(μj,T,θ,σ)G(μiDN,T,θ,σ)G(μjDN,T,θ,σ)
+In practice, we used the trapezoidal numerical integration with a small enough  $dt$ = 0.001 s and a large enough Tmax = 100 s. Empirically, no negative drift rates were observed in any of the model parameter estimates in any participant.
 
-The final likelihood function of choice i at time T thus is: LDNi,T+Li,T. These closed-form analytical solutions of choice probability and mean RT, as given by Equation 9, Equation 10 match well with the model simulations performed in Chau et al., 2020. Empirically, the trial-by-trial model predictions of a model with free σ (one for each route) vs. a model with  σ = 1 are highly similar (across-participants mean Pearson’s correlation coefficient r(148) = 0.96 for ternary-choice probabilities, r(148) = 0.98 for binary-choice probabilities, r(148) = 0.97 for ternary RTs, r(148) = 0.88 for binary RTs). Here, we chose the simpler model with unit σ (lower BIC compared to the free σ model: −169 for ternary trials and −790 for binary trials, summed across participants).
+### Context-independent model
 
-## Static models
+The utility function $U_{i}$ in the context-independent model is ‘blind’ to the distractor (D). For ternary trials, the context-independent model only takes H and L as inputs. For instance, the context-independent AU model assumes AUH = (λ)HX + (1 − λ)HP and AUL = (λ)LX + (1 − λ)LP, with λ being the attribute weight of reward magnitude (0 ≤ λ ≤ 1).
 
-The static models were fit to trial-by-trial human choice probability (while ignoring RT). These models assume a softmax function that takes as inputs the options’ utilities (AU, EV, or divisively normalised EV, see Figure 3) and controls the level of decision noise via an inverse temperature parameter β:(21)p(choice=i)=eβUi∑ieβUi
+### SI model
 
-The model-predicted and the empirical choice probabilities were then used to calculate the binomial log-likelihood: LL∝pelog⁡pm+1-pelog⁡1-pm, in which pm and pe denotes the model-predicted and empirical p(H over L), respectively.
+We adopted the simplest form of SI model. The SI model discards information about those choice alternatives with relatively lower value in each attribute separately (Usher et al., 2019). Alternatives are compared and then selectively gated based on their ranks within each attribute. The highest attribute value remains unchanged ($w_{1}=0$), intermediate value gets suppressed by a multiplicative weight $w_{2}$, whilst the lowest value gets more strongly suppressed by $w_{3}$ ($0\leqw_{2}\leqw_{3}\leq1$). That is, the SI $w$ represents the percent reduction in information processing gain. In case of a tie for the highest value, the two high values are unchanged, and the lowest value is suppressed by $w_{3}$. By contrast, in case of a tie for the lowest value, the two low values both get suppressed by $w_{3}$. After the selective gating within each attribute, which transforms attribute values to X′ and P′, respectively, an AU is constructed for each alternative via a weighted averaging, that is, AU = (λ)X′ + (1 − λ)P′, with λ being the attribute weight of reward magnitude (0 ≤ λ ≤ 1). This AU (after SI) is then fed into the FFI model as the component U for each alternative (Equation 3).
 
-## Model fitting, comparison, and recovery
+### Adaptive gain model
+
+The attribute value of a certain alternative, $i$, for example, the reward magnitude, $X_{i}$, is inhibited by a context mean across all alternatives in a choice-set (e.g., n alternatives), which yields $X_{i}¯$. $X_{i}¯$ then passes through a sigmoidal transduction function with slope s and bias term b (Dumbalska et al., 2020). This gain control is adaptive in that it accommodates the contextual information. Importantly, the gain control operates independently on each attribute, and it produces the final subjective attribute value ($X_{i}^{AG}$) for the construction of AU for each alternative:
+
+$$
+X_{i}^{AG}=1/(1+e^{\frac{b_{x}−X_{i}¯}{s_{x}}})
+$$
+
+
+
+$$
+X_{i}¯=X_{i}−(\frac{\sumiX_{i}}{n})
+$$
+
+The adaptive gain modulation of P can be obtained by replacing X with P in the above two equations. Ultimately, the utility of each alternative is computed as a weighted average across attribute values:
+
+$$
+U_{i}=\lambdaX_{i}^{AG}+(1−\lambda)P_{i}^{AG}
+$$
+
+### Dual-route model
+
+The dual-route model arbitrates between a vanilla MI process and an MI process with additional DN (Chau et al., 2020). In the vanilla MI ‘route’, this model assumes that the evidence input to the accumulator is:
+
+$$
+I_{i}=U_{i}−f_{MI}(\frac{\sumiU_{i}}{n})
+$$
+
+where U is expected value (EV), that is, EV = XP, and $f_{MI}$ is the inhibition strength of MI. In another rival route, the utility of each choice alternative is additionally divisively normalised by the sum of utilities across all alternatives (H + L in a binary trial; H + L + D in a ternary trial):
+
+$$
+I_{i}^{DN}=U_{i}^{DN}−f_{MI}(\frac{\sumiU_{i}^{DN}}{n})
+$$
+
+
+
+$$
+U_{i}^{DN}=U_{i}/\sumiU_{i}
+$$
+
+The drift rate takes the same form as that in FFI: $\mu_{i}=kI_{i}+I_{0}$. Based on Equation 8 and for clarity, we rewrite the two components in Equation 8 as $g$ and $G$:
+
+$$
+G(\mu,T,\theta,\sigma)=1−Φ(\frac{\muT−\theta}{\sigma\sqrt{T}})+e^{\frac{2\theta\mu}{\sigma^{2}}}Φ(\frac{−\muT−\theta}{\sigma\sqrt{T}})
+$$
+
+
+
+$$
+g(\mu,T,\theta,\sigma)=\frac{\theta}{\sigma\sqrt{2\piT^{3}}}e^{\frac{−(\theta−\muT)^{2}}{2\sigma^{2}T}}
+$$
+
+The likelihood of the DN route and the vanilla route arriving at the decision bound first to yield a choice $i$ is, respectively:
+
+$$
+L^{DN}(i,T)=g(\mu_{i}^{DN},T,\theta,\sigma)G(\mu_{j}^{DN},T,\theta,\sigma)G(\mu_{i},T,\theta,\sigma)G(\mu_{j},T,\theta,\sigma)
+$$
+
+
+
+$$
+L(i,T)=g(\mu_{i},T,\theta,\sigma)G(\mu_{j},T,\theta,\sigma)G(\mu_{i}^{DN},T,\theta,\sigma)G(\mu_{j}^{DN},T,\theta,\sigma)
+$$
+
+The final likelihood function of choice $i$ at time $T$ thus is: $L^{DN}i,T+Li,T$. These closed-form analytical solutions of choice probability and mean RT, as given by Equation 9, Equation 10 match well with the model simulations performed in Chau et al., 2020. Empirically, the trial-by-trial model predictions of a model with free $\sigma$ (one for each route) vs. a model with  $\sigma$ = 1 are highly similar (across-participants mean Pearson’s correlation coefficient r(148) = 0.96 for ternary-choice probabilities, r(148) = 0.98 for binary-choice probabilities, r(148) = 0.97 for ternary RTs, r(148) = 0.88 for binary RTs). Here, we chose the simpler model with unit $\sigma$ (lower BIC compared to the free $\sigma$ model: −169 for ternary trials and −790 for binary trials, summed across participants).
+
+### Static models
+
+The static models were fit to trial-by-trial human choice probability (while ignoring RT). These models assume a softmax function that takes as inputs the options’ utilities (AU, EV, or divisively normalised EV, see Figure 3) and controls the level of decision noise via an inverse temperature parameter $\beta$:
+
+$$
+p(choice=i)=\frac{e^{\betaU_{i}}}{\sumie^{\betaU_{i}}}
+$$
+
+The model-predicted and the empirical choice probabilities were then used to calculate the binomial log-likelihood: $LL∝p_{e}log⁡p_{m}+1-p_{e}log⁡1-p_{m}$, in which $p_{m}$ and $p_{e}$ denotes the model-predicted and empirical p(H over L), respectively.
+
+### Model fitting, comparison, and recovery
 
 Models were fit to data via maximising the log-likelihood summed over trials. Because the LL functions all have analytical solutions, Matlab’s fmincon was used for parameter optimisation. To avoid local optima, we refit each model to each participant’s behavioural data at least 10 times using a grid of randomly generated starting values for the free parameters. Conversative criteria were used during the optimisation search: MaxFunEvals = MaxIter = 5000; TolFun = TolX = 10−10. We then calculated each model’s posterior frequency and protected exceedance probability (i.e., the probability corrected for chance level that a model is more likely than any others in describing the data) using the variational Bayesian analysis (VBA) toolbox (Rigoux et al., 2014; Daunizeau et al., 2014). To be consistent with the methods in Chau et al., 2020, we fit models to those trials with either H or L responses whilst ignoring a very small portion of trials in which D was accidentally chosen (median proportion of D choices: 4%, IQR: [2%, 8%], across participants).
 
 Model comparison relied on cross-validation. That is, for each participant, we split the 150 trials into five folds and then fit each model to a ‘training’ set comprising four random folds of trials, obtained the best-fitting parameters, and finally calculated the LL summed across trials in the left-out ‘test’ fold. This process was repeated over test folds and the final cross-validated LL was computed as the mean LL across cross-validation folds. Model recovery was carried out by first simulating each model’s behaviour (choice probability and RT) with its own best-fitting parameters obtained from fitting the model to each participant’s raw data; then cross-fitting all models of interest to the simulated behaviour and calculating the LLs summed over trials; and finally comparing models’ goodness-of-fit using Bayesian model comparison.
 
-## Subjective distortion of reward attributes
+### Subjective distortion of reward attributes
 
-When modelling binary-choice behaviour, in addition to assuming linear subjective representations of reward attributes for simplicity, we also considered non-linear subjective functions (Zhang and Maloney, 2012). The probability distortion undergoes a log-odds function (Equation 22) that converts a probability value P to Pd, in a flexible manner (S-shape, inverted S-shape, concave, or convex, depending on parameterisation), whereas the magnitude distortion follows a power-law function (Equation 23) that converts X to Xd:(22)log⁡(Pd1−Pd)=ηlog⁡(P1−P)+(1−η)log⁡(P01−P0)(23)Xd=Xγ
+When modelling binary-choice behaviour, in addition to assuming linear subjective representations of reward attributes for simplicity, we also considered non-linear subjective functions (Zhang and Maloney, 2012). The probability distortion undergoes a log-odds function (Equation 22) that converts a probability value $P$ to $P_{d}$, in a flexible manner (S-shape, inverted S-shape, concave, or convex, depending on parameterisation), whereas the magnitude distortion follows a power-law function (Equation 23) that converts $X$ to $X_{d}$:
 
-where η>0, P0 (0<P0<1), and γ>0 are the three parameters controlling the extent of non-linearity of the distortion functions.
+$$
+log⁡(\frac{P_{d}}{1−P_{d}})=ηlog⁡(\frac{P}{1−P})+(1−η)log⁡(\frac{P_{0}}{1−P_{0}})
+$$
 
-In addition to the log-odds function, we also considered another non-linear function (only 1 free parameter τ) for the probability distortion, described by Equation 24: (24)Pd=Pτ[Pτ+(1−P)τ]1τ
 
-This particular function underlies the subjective probability distortion in a model of the prospect theory (Kahneman and Tversky, 1979). More specifically, the prospect-theory model assumes a multiplicative utility that multiplies Xd (Equation 23) with Pd (Equation 24). Another popular multiplicative model is the standard expected utility (Von Neumann and Morgenstern, 2007) in which the probability function is linear (i.e., τ is fixed to 1) while γ governing Xd is a free parameter. We included these 2 additional multiplicative models when comparing additive vs. multiplicative strategies (Figure 3—figure supplement 1).
 
-## Condition-unspecific response bias correction
+$$
+X_{d}=X^{\gamma}
+$$
+
+where $η>0$, $P_{0}$ ($0<P_{0}<1$), and $\gamma>0$ are the three parameters controlling the extent of non-linearity of the distortion functions.
+
+In addition to the log-odds function, we also considered another non-linear function (only 1 free parameter $\tau$) for the probability distortion, described by Equation 24:
+
+$$
+P_{d}=\frac{P^{\tau}}{[P^{\tau}+(1−P)^{\tau}]^{\frac{1}{\tau}}}
+$$
+
+This particular function underlies the subjective probability distortion in a model of the prospect theory (Kahneman and Tversky, 1979). More specifically, the prospect-theory model assumes a multiplicative utility that multiplies $X_{d}$ (Equation 23) with $P_{d}$ (Equation 24). Another popular multiplicative model is the standard expected utility (Von Neumann and Morgenstern, 2007) in which the probability function is linear (i.e., $\tau$ is fixed to 1) while $\gamma$ governing $X_{d}$ is a free parameter. We included these 2 additional multiplicative models when comparing additive vs. multiplicative strategies (Figure 3—figure supplement 1).
+
+### Condition-unspecific response bias correction
 
 Choice behaviour can differ between a binary condition and a ternary condition, simply due to the increased number of options (higher cognitive demands) regardless what they are. To estimate these condition-unspecific biases, we used a permutation approach to shuffling the mappings between the ternary conditions and their matched binary conditions (5000 permutations). This yielded a mean bias term for the ‘T minus matched B’ relative accuracy data, and was eventually removed from the re-referenced ternary-trial performance (‘T – B’).
 
-## GLM analysis of relative choice accuracy
+### GLM analysis of relative choice accuracy
 
-We used GLM approach to analysing choice behaviour. For ternary conditions, we focused on the relative accuracy, that is, the proportion of H choices among trials with H or L choices (while ignoring a small number of D-choice trials), which has been commonly used as a measure of the violation of the IIA principle. Matched binary trials were identified for each ternary trial (see Figure 2—figure supplement 1). Among the 150 ternary trials there are 149 unique ternary conditions with a unique combination of probability (P) and magnitude (X) attributes across the three alternatives (H, L, and D), whereas among the 150 binary trials there are only 95 unique conditions with a specific combination of P and X across the two available options (H and L). The ternary and binary trials do not have ‘one-to-one’ mapping. Some ternary trials have more than 1 matched binary trial. The different counts of matched binary trials were explicitly considered as ‘observation weights’ in the GLM. We used logit binomial GLM to analyse trial-by-trial relative choice accuracy (Matlab’s glmfit with ‘binomial’ distribution and ‘logit’ link function). The GLMs in Figure 2 (d, e; using relative distractor variable ‘DV – HV’) and Figure 2—figure supplement 2 (using absolute distractor variable ‘DV’) were specified as follows:Logit(p(HoverL))∼β0+β1z(HV−LV)+β2z(DV−HV)+β3z(HV−LV)×z(DV−HV)Logit(p(HoverL))∼β0+β1z(HV−LV)+β2z(DV)+β3z(HV−LV)×z(DV)
+We used GLM approach to analysing choice behaviour. For ternary conditions, we focused on the relative accuracy, that is, the proportion of H choices among trials with H or L choices (while ignoring a small number of D-choice trials), which has been commonly used as a measure of the violation of the IIA principle. Matched binary trials were identified for each ternary trial (see Figure 2—figure supplement 1). Among the 150 ternary trials there are 149 unique ternary conditions with a unique combination of probability (P) and magnitude (X) attributes across the three alternatives (H, L, and D), whereas among the 150 binary trials there are only 95 unique conditions with a specific combination of P and X across the two available options (H and L). The ternary and binary trials do not have ‘one-to-one’ mapping. Some ternary trials have more than 1 matched binary trial. The different counts of matched binary trials were explicitly considered as ‘observation weights’ in the GLM. We used logit binomial GLM to analyse trial-by-trial relative choice accuracy (Matlab’s glmfit with ‘binomial’ distribution and ‘logit’ link function). The GLMs in Figure 2 (d, e; using relative distractor variable ‘DV – HV’) and Figure 2—figure supplement 2 (using absolute distractor variable ‘DV’) were specified as follows:
+
+$$
+Logit(p(HoverL))∼\beta_{0}+\beta_{1}z(HV−LV)+\beta_{2}z(DV−HV)+\beta_{3}z(HV−LV)\timesz(DV−HV)
+$$
+
+
+
+$$
+Logit(p(HoverL))∼\beta_{0}+\beta_{1}z(HV−LV)+\beta_{2}z(DV)+\beta_{3}z(HV−LV)\timesz(DV)
+$$
 
 z(·): z-score normalisation of the regressor vector. The interaction terms were constructed after individual component terms were z-scored (Gluth et al., 2018). The analysis shown in Figure 2f combined ternary (T) and binary (B) relative accuracies in a single GLM and assessed how distractor-related effects interacted with ‘Condition’ (i.e., ‘C’, a dummy variable: 0 for B, 1 for T). The code for reproducing Figure 2 and Figure 2—figure supplements 2 and 3, GLMs can be found here: https://github.com/YinanCao/multiattribute-distractor, (Cao, 2022 copy archived at swh:1:rev:a465f0c394fa1b29b16ff8aa7d384f38f0a0c67b).
 
-## Construction of binned maps
+### Construction of binned maps
 
 The choice-accuracy and RT maps (Figure 2b, c; Figure 3a) were constructed using the exact binning approach of Chau et al., 2020. Data were averaged using a sliding square window inside the space defined by the two expected-value differences, (DV − HV) and (HV − LV). The edge length of the window is 30% quantile difference along each dimension, with step-size being equal to 1% quantile difference. This binning approach smooths the data and results in a map of size 71-by-71.

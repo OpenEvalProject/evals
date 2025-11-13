@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03ad39j10 University of Pisa Pisa Italy
-2. https://ror.org/04tfzc498 IRCCS Stella Maris Pisa Italy
-3. https://ror.org/030za3c40 Laboratoire des systèmes perceptifs, Département d’études cognitives, École normale supérieure, PSL Research University Paris France
+1. University of Pisa Pisa Italy ([ROR:03ad39j10](https://ror.org/03ad39j10))
+2. IRCCS Stella Maris Pisa Italy ([ROR:04tfzc498](https://ror.org/04tfzc498))
+3. Laboratoire des systèmes perceptifs, Département d’études cognitives, École normale supérieure, PSL Research University Paris France ([ROR:030za3c40](https://ror.org/030za3c40))
 4. IMAGO7 Foundation Pisa Italy
 
 † Corresponding author
@@ -46,6 +46,18 @@ To test these hypotheses, we measured the plasticity response of LGN and pulvina
 
 In 18 adult participants with normal vision, we measured 7T BOLD responses to monocular visual stimulation (bandpass filtered noise, refreshing 8 times per second and presented in blocks of 9 s, followed by 12-s interstimulus intervals), delivered before and after 2 hr of eye patching (experimental design is shown in Figure 1A). We previously analyzed responses in visual cortical areas (Binda et al., 2018); here, we focused on responses in the visual thalamus. Pooling data across participants, after aligning them to the MNI template (Avants et al., 2008), we found that visual responses within the thalamus clustered in two foci (Figure 1B) that match two independently defined ROIs (green and blue outlines in Figure 1B): LGN and vPulv, obtained from the NSD (Guest et al., 2021). The third ROI, the mid-Pulv (magenta line in Figure 1B), failed to respond to our visual stimuli, which was expected since the stimuli were delivered passively and this region is primarily driven by images supporting execution of an active task (Wilke et al., 2009).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental design. Responses to monocular presentations of dynamic bandpass noise were recorded before and after 2 hr of monocular deprivation. Binocular rivalry was measured immediately before each scanning session and used to estimate the shift of perceptual eye dominance following deprivation. (B) Map of visually evoked activity, estimated by Fourier analysis of the BOLD time series, pooled across conditions and participants and mapped on the 1 mm3 MNI template. Activity in each voxel was measured as signal-to-noise ratio, defined as the amplitude at stimulus fundamental frequency divided by the mean square root of the amplitude of neighboring frequencies (as in Biagi et al., 2015). Maps are thresholded by the associated p values, False Discovery Rate (FDR) corrected. Colored lines outline the three independently defined subcortical regions of interest (ROIs) (Guest et al., 2021): ventral pulvinar (vPulv), Lateral Geniculate Nucleus (LGN), and mid-dorsal pulvinar (dPulv). For visualization purposes, these ROIs are also mapped on a publicly available high-resolution 0.4 mm3 anatomy (https://osf.io/xkqb3/; Amunts et al., 2013; Xiao et al., 2019). (C) Temporal dynamics of the BOLD response in the three subcortical ROIs; curves and shaded areas show means and standard errors across participants (data pooled across all sessions and averaged after subtracting the baseline BOLD signal at stimulus onset; the gray shaded area represents stimulus contrast modulation ON/OFF). (D) Polar plot of phase (angle) and amplitude (radius) at the stimulus fundamental frequency for each ROI. The fundamental harmonic phase of the stimulus contrast modulation corresponds to a phase of 0° (dashed gray line) and phase delays are represented as counterclockwise rotations and expressed in degrees. Each dot represents an individual participant. Averages across participants are shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) BOLD timecourses for each region of interest (ROI), averaged across conditions, subjects, and voxels. The gray line above the plot shows the stimulus contrast modulation (ON/OFF). (B) Fourier spectra (amplitude) of the BOLD timecourses in panel A and of the stimulus contrast modulation; the fundamental frequency of the stimulus is 10 cycles per scan, corresponding to 1/21 s. (C) Polar plot of phase and amplitude at the stimulus fundamental frequency, for each ROI. Same conventions as in Figure 1D. The fundamental harmonic phase of the stimulus contrast modulation corresponds to phase of 0° (dashed gray line) and phase delays are represented as counterclockwise rotations (e.g., the average Lateral Geniculate Nucleus [LGN] timecourse has a phase of about 60° corresponding to 1/6 of the stimulus cycle of 21 s).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) BOLD response evoked in a subset of participants (N = 9) with a visual-localizer experiment (binary noise, shown at the top). BOLD timecourses were averaged across participants after aligning to the MNI space. Activity in each voxel was measured using Fourier analysis and computing the signal-to-noise ratio (SNR, or ratio of the amplitude at the stimulus fundamental frequency divided by the amplitude at neighboring frequencies) and associated p values (FDR corrected). Dashed blue and green outlines show the anatomical templates (Bürgel et al., 2006; Bürgel et al., 1999; Najdenovska et al., 2018) that we used in conjunction with functional activations to define alternative ROIs for visual pulvinar and Lateral Geniculate Nucleus (LGN). (B) Red patches show the 200 voxels with higher SNR in response to our localizer stimulus, within each anatomical mask: LGN and pulvinar. Continuous lines show ROIs used for the main analyses (Guest et al., 2021), indicating that the two approaches converged on similar ROI definitions.
+
 Figure 1C shows the temporal dynamics of the average BOLD responses extracted from these independently defined ROIs. Responses in dPulv were almost absent, showing only a weakly negative modulation during stimulus presentation, whereas reliable BOLD responses were observed in both LGN and vPulv. Although clearly weaker than previously measured in V1 (were signals peaked at about 2.5% at 9 s from stimulus onset; Binda et al., 2018), these were reliably larger than 0 at all points between 3 s after stimulus onset to 3 s after its offset (all t(17) > 4.30 and p < 0.01). Response dynamics was faster than in V1 (the peak response in LGN and vPulv occurred around 6 s from stimulus onset, 1TR earlier than in V1), as previously reported (Lewis et al., 2018). It was also slightly faster in LGN than in vPulv.
 
 Given these differences in the response profile, we opted to quantify BOLD response amplitudes with an approach that makes minimal assumptions on temporal dynamics. Since the visual stimulus was a periodic alternation of stimulus contrast ON/OFF (ignoring variations in stimulus spatial scale that is not relevant here, see methods), visually evoked responses could be studied by Fourier analyses of the fMRI time series, taking the amplitude and phase at the stimulus fundamental frequency to estimate response magnitude and its delay (Figure 1—figure supplement 1; note that analyses based on general linear modeling (GLM) and event-related averaging produced the same pattern of results, as detailed below).
@@ -57,6 +69,18 @@ With this approach, we compared the amplitude of responses to stimuli delivered 
 Before monocular deprivation, no systematic differences in eye dominance were expected; therefore, we used BOLD responses to stimuli in the two eyes for estimating the internal consistency of our results. We found that responses to the two eyes were correlated across participants in all thalamic regions (Pearson’s correlation coefficients were vPulv: r(18) = 0.58, p = 0.011; LGN: r(18) = 0.66, p = 0.003; dPulv: r(18) = 0.74, p < 0.001) indicating good test–retest reliability of our measurements and allowing us to examine their variations after monocular deprivation.
 
 Figure 2 compares response amplitudes before and after deprivation, for stimuli in the deprived and nondeprived eye. vPulv showed a significant eye by time interaction (Figure 2A: F(1,17) = 14.75, p = 0.001), similar as that seen in V1 (Binda et al., 2018). This is the hallmark of a significant short-term plasticity effect. In contrast, neither LGN nor dPulv showed any significant effect (Figure 2B, LGN, F(1,17) = 0.18, p = 0.675; Figure 2C, dPulv, F(1,17) = 0.70, p = 0.415).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig2-v2.jpg)
+
+**Figure 2.:** (A, B, D) Modulation of visually evoked BOLD responses with monocular deprivation, in the deprived and nondeprived eye. BOLD responses were quantified by fast Fourier analysis of the functional magnetic resonance imaging (fMRI) time series, taking the amplitude at the stimulus fundamental frequency. Symbols show means and standard error of the mean (SEM) across participants. Panels A, B, and D shows results for ventral pulvinar (vPulv), LGN, and dPulv, respectively. Note the amplified ordinate scale for dPulv data. Dashed gray lines show the average monocular responses before and after deprivation. The text inset reports the p value of the ANOVA interaction term (time by eye). (C) Correlation between deprivation indices computed, for each participant, for BOLD responses in vPulv and for perceptual responses during binocular rivalry (same equation as in Binda et al., 2018); the text inset shows Pearson’s correlation coefficient, and the asterisk marks significance at p < 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Modulation of BOLD responses with monocular deprivation in anatomically defined ROIs (Bürgel et al., 2006; Bürgel et al., 1999; Najdenovska et al., 2018) intersected with functional activations (Figure 1—figure supplement 2) to map visually responsive pulvinar (A) and LGN (B). Same conventions as in Figure 2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74565/elife-74565-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Coronal slice of the high-resolution 0.4 mm3 anatomy downloaded from a public repository (https://osf.io/xkqb3/; Amunts et al., 2013; Xiao et al., 2019); the hippocampus is evident on the lower right of the image; colored lines highlight the LGN regions of interest (ROIs): dark yellow and dark blue for parvo- and magnocellular subdivisions of the LGN obtained from quantitative MRI anatomical image (Müller-Axt et al., 2021) and green for the LGN used in the main analysis (Guest et al., 2021). Numbers give the size of each subdivision in anatomical (1 mm3) resolution. (B, C) Modulation of responses by monocular deprivation for parvo- and magnocellular division of the LGN. Same conventions as in Figure 2.
 
 We also examined response phase estimates, which did not vary across eyes or times, for any of the regions (eye by time interaction in vPulv: F(1,17) = 0.07, p = 0.801; LGN: F(1,17) = 1.08, p = 0.313; dPulv: F(1,17) = 0.19, p = 0.669).
 
@@ -100,17 +124,21 @@ In conclusion, the present study showed that short-term monocular deprivation ef
 
 ## Materials and methods
 
-## Participants and monocular deprivation procedure
+### Participants and monocular deprivation procedure
 
 Experimental procedures are in line with the declaration of Helsinki and were approved by the regional ethics committee [Comitato Etico Pediatrico Regionale—Azienda Ospedaliero-Universitaria Meyer—Firenze (FI)] and by the Italian Ministry of Health, under the protocol ‘Plasticità e multimodalità delle prime aree visive: studio in risonanza magnetica a campo ultra alto (7T)’ version #1 dated 11/11/2015. Written informed consent was obtained from each participant, which included consent to process and preserve the data and publish them in anonymous form. Twenty healthy volunteers with normal or corrected-to-normal visual acuity were examined (8 females and 12 males, mean age = 27 years). Sample size was set based on the minimum number of participants (N = 17) required to reliably detect a medium sized correlation between MRI and psychophysical data: r = 0.62 or higher, as reported in previous MR work on short-term plasticity (Lunghi et al., 2015b). Two (male) participants were excluded. One because of strong eye dominance (already excluded for the analyses in Binda et al., 2018) and the second due to a large vein passing near LGN that could bias the BOLD response. This left 18 participants (8 females and 10 males). We analyzed data from two fMRI sessions, before and after 2 hr of monocular deprivation, performed by patching the dominant eye with a translucent patch.
 
 Binocular rivalry was measured in two short sessions (each comprising two runs of 3 min each), immediately before each fMRI session to estimate the transient ocular dominance shift (pre- vs. postdeprivation). Stimuli were presented on a 15-inch LCD monitor, placed at 57 cm distance and were viewed through anaglyph red-blue goggles (right lens blue, left lens red). Stimuli were composed of two oblique orthogonal red and blue gratings (orientation: ±45°, size: 3°, spatial frequency: 2 cpd, contrast 50%), surrounded by a white smoothed circle, presented on a black uniform background in central vision. Peak luminance of the red grating was reduced to match the peak luminance of the blue one using photometric measures. During stimulus presentation, participants were asked to respond with the computer keyboard and report which grating (red or blue or a mixture of the two) they perceived as dominant by continuous keypresses.
 
-The effect of monocular deprivation on perception and brain activations was estimated by computing a deprivation index (Binda et al., 2018). This is the post- to predeprivation ratio of values ‘y’ for the deprived eye, divided by the same value for the nondeprived eye:DI=(yDepPOSTyDepPRE)/(yNdepPOSTyNdepPRE)
+The effect of monocular deprivation on perception and brain activations was estimated by computing a deprivation index (Binda et al., 2018). This is the post- to predeprivation ratio of values ‘y’ for the deprived eye, divided by the same value for the nondeprived eye:
+
+$$
+DI=(\frac{y_{DepPOST}}{y_{DepPRE}})/(\frac{y_{NdepPOST}}{y_{NdepPRE}})
+$$
 
 with ‘y’ defined as binocular rivalry phase durations or BOLD responses. Using the same equation to compute the deprivation effects on psychophysical and BOLD data allowed for correlating them across participants (Figure 2C).
 
-## fMRI acquisition protocols and analyses
+### fMRI acquisition protocols and analyses
 
 Detailed information on the protocol and data preprocessing may be found in Binda et al., 2018. In our previous publication, we limited our analyses to the cortical projections of fMRI time series and focused on BOLD responses in the visual cortex. Here, we analyzed fMRI time series in the volume and focused on subcortical visual structures. Individual participants’ data were aligned to a standard anatomical template, the MNI atlas, using ANTs (Avants et al., 2008; Avants et al., 2011). ANTs aligned T1 anatomical images (acquired with 1 mm isotropic resolution) to the MNI template available in FSL (Collins et al., 1995; Mazziotta et al., 2001), by means of an affine registration matrix and a warp field. These were used to transform individual participants’ preprocessed BOLD data (EPI-GRE with 1.5-mm isotropic resolution and TR = 3 s, which had been slice-time, motion, and distortion corrected) to the MNI space through the antsRegistrationSyN.sh routine (Tustison and Avants, 2013). Purely for visualization purposes, we also mapped our ROIs to a high-resolution anatomy, downloaded from a public source (https://osf.io/xkqb3/; Amunts et al., 2013; Xiao et al., 2019), which is shown in Figures 1 and 2, Figure 1—figure supplement 2 to facilitate visual appreciation of the consistency and placement of our ROI.
 
@@ -124,17 +152,21 @@ We complemented the Fourier analysis approach with two other methods.
 
 First, we used an event-related averaging approach to estimate the profiles of fMRI responses. We selected 21 s long (7TRs) BOLD epochs following each stimulus onset and averaged across epochs (of which we had 10 per acquisition). We assumed that the response occurs between 3 and 12 s from stimulus onset, and we used the average over this interval to estimate its amplitude.
 
-Second, we used a GLM, and we assumed a canonical (two-gamma) HRF as previously used to model subcortical responses (Koizumi et al., 2019; McFadyen et al., 2019)h(t)=tα1-1β1α1e-β1tΓα1-ctα2-1β2α2e-β2tΓα2
+Second, we used a GLM, and we assumed a canonical (two-gamma) HRF as previously used to model subcortical responses (Koizumi et al., 2019; McFadyen et al., 2019)
+
+$$
+h(t)=\frac{t^{\alpha_{1}-1}\beta_{1}^{\alpha_{1}}e^{-\beta_{1}t}}{Γ\alpha_{1}}-c\frac{t^{\alpha_{2}-1}\beta_{2}^{\alpha_{2}}e^{-\beta_{2}t}}{Γ\alpha_{2}}
+$$
 
 where t is time, α1 = 6, α2 = 16, β1 = β2 = 1, c = 1/6 and Γ represents the gamma function.
 
 We generated a stimulus predictor (boxcar function representing the stimulus ON/OFF periods, convolved by the HRF) and two nuisance predictors (a linear trend and a constant) and we extracted the corresponding beta-weights by linear regression.
 
-## Localizer runs
+### Localizer runs
 
 Our alternative ROI labeling approach required selecting visually responsive voxels within broadly and anatomically defined thalamic regions. We performed this selection based on an independent dataset collected with a secondary experiment in a subset of our participants (N = 9). Using the same setup and fMRI parameters as in the main experiment, we acquired BOLD responses while a full-screen full-contrast binary-noise image (check size of 0.15°, 0.37°, 0.77°, 1.43°, and 3.3°) was refreshed 8 times per second and presented in blocks of 9 s, followed by 12-s interstimulus intervals. The sequence was repeated 10 times within a run, and in four runs per participant. As for the main experiment, our analyses ignored this stimulus dimension and simply treated timecourses as a periodic oscillation of stimulus ON and OFF periods. Responses were estimated after averaging timecourses across subjects and runs, creating one map of visually responding voxels. Visual activations were defined as SNR values computed with the same Fourier analysis approach used for the main experiment.
 
-## ROI definition
+### ROI definition
 
 Thalamic ROIs were defined in the MNI space based on publicly available atlases; fMRI timecourses were averaged across voxels (pooled across hemispheres) in each ROI.
 

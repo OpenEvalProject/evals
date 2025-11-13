@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04n3h0p93 Center of Translational Medicine, Zibo Central Hospital Affiliated to Binzhou Medical University Zibo China
-2. https://ror.org/05jb9pq57 Shandong First Medical University Jinan China
-3. https://ror.org/01p455v08 The Second Medical College, Xinjiang Medical University Urumqi China
-4. https://ror.org/038hzq450 School of Laboratory Medicine, Xinxiang Medical University Xinxiang China
+1. Center of Translational Medicine, Zibo Central Hospital Affiliated to Binzhou Medical University Zibo China ([ROR:04n3h0p93](https://ror.org/04n3h0p93))
+2. Shandong First Medical University Jinan China ([ROR:05jb9pq57](https://ror.org/05jb9pq57))
+3. The Second Medical College, Xinjiang Medical University Urumqi China ([ROR:01p455v08](https://ror.org/01p455v08))
+4. School of Laboratory Medicine, Xinxiang Medical University Xinxiang China ([ROR:038hzq450](https://ror.org/038hzq450))
 
 † Corresponding author
 
 ## Abstract
 
-TIPE ( TNFAIP8 ) has been identified as an oncogene and participates in tumor biology. However, how its role in the metabolism of tumor cells during melanoma development remains unclear. Here, we demonstrated that TIPE promoted glycolysis by interacting with pyruvate kinase M2 (PKM2) in melanoma. We found that TIPE-induced PKM2 dimerization, thereby facilitating its translocation from the cytoplasm to the nucleus. TIPE-mediated PKM2 dimerization consequently promoted HIF-1α activation and glycolysis, which contributed to melanoma progression and increased its stemness features. Notably, TIPE specifically phosphorylated PKM2 at Ser 37 in an extracellular signal-regulated kinase (ERK)-dependent manner. Consistently, the expression of TIPE was positively correlated with the levels of PKM2 Ser37 phosphorylation and cancer stem cell (CSC) markers in melanoma tissues from clinical samples and tumor bearing mice. In summary, our findings indicate that the TIPE/PKM2/HIF-1α signaling pathway plays a pivotal role in promoting CSC properties by facilitating the glycolysis, which would provide a promising therapeutic target for melanoma intervention.
+TIPE (TNFAIP8) has been identified as an oncogene and participates in tumor biology. However, how its role in the metabolism of tumor cells during melanoma development remains unclear. Here, we demonstrated that TIPE promoted glycolysis by interacting with pyruvate kinase M2 (PKM2) in melanoma. We found that TIPE-induced PKM2 dimerization, thereby facilitating its translocation from the cytoplasm to the nucleus. TIPE-mediated PKM2 dimerization consequently promoted HIF-1α activation and glycolysis, which contributed to melanoma progression and increased its stemness features. Notably, TIPE specifically phosphorylated PKM2 at Ser 37 in an extracellular signal-regulated kinase (ERK)-dependent manner. Consistently, the expression of TIPE was positively correlated with the levels of PKM2 Ser37 phosphorylation and cancer stem cell (CSC) markers in melanoma tissues from clinical samples and tumor bearing mice. In summary, our findings indicate that the TIPE/PKM2/HIF-1α signaling pathway plays a pivotal role in promoting CSC properties by facilitating the glycolysis, which would provide a promising therapeutic target for melanoma intervention.
 
 ## Introduction
 
@@ -36,29 +36,61 @@ The tumor necrosis factor alpha-induced protein 8 (TNFAIP8, TIPE) family is comp
 
 ## Results
 
-## TIPE increases aerobic glycolysis in melanoma cells
+### TIPE increases aerobic glycolysis in melanoma cells
 
 To characterize how TIPE performs biological functions in melanoma, we examined its expression levels in melanoma cell lines. The results showed that A375 and A875 cells had relatively higher TIPE expression than G361 and MM96L cells. Therefore, we downregulated TIPE expression in A375 cells and overexpressed TIPE in G361 cells to perform further experiments (Figure 1—figure supplement 1). Furthermore, we demonstrated that TIPE promotes melanoma tumorigenesis both in vitro and in vivo (Figure 1—figure supplement 2).
 
 Consequently, we performed RNA sequencing analysis by overexpressing TIPE in G361 cells (Figure 1A) to examine the underlying mechanisms involved in the progression of melanoma. The results revealed that the overexpression of TIPE dramatically promoted expression of genes regarding glycolysis and the HIF-1α pathway (Figure 1B, C). Since HIF-1α pathway participates in metabolic reprogramming, especially aerobic glycolysis as well (Baik et al., 2019), we assumed that TIPE promotes melanoma progression might via the regulation of metabolic reprogramming. Therefore, we performed a metabolomic analysis after interfering with TIPE in A375 cells. Interestingly, the results indicated that the aerobic glycolysis pathway, including pyruvate and lactate, was significantly inhibited in melanoma cells after TIPE silencing (Figure 1—figure supplement 3, Figure 1D), confirming that TIPE facilitates glycolytic metabolism in melanoma. Consequently, ATPase activity, lactate secretion, and ATP content assays were performed to further confirm TIPE-induced glycolytic changes. The results demonstrated that TIPE decreased ATPase activity and ATP content while promoting lactate production (Figure 1E–G). Additionally, we measured the extracellular acidification rate (ECAR) after the overexpression or downregulation of TIPE using a Seahorse Bioscience Flux Analyzer. The results also revealed that TIPE promoted glycolysis and glycolytic capacity in melanoma cells (Figure 1H–K).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Transcriptomics analysis by unsupervised hierarchical clustering and Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis showed that TIPE increased glycolysis and HIF-1α pathways. (C) GSEA analysis of glycolysis showed that TIPE enhanced glycolysis compared to the control. (D) Untargeted metabolomics analysis indicated that interfering with TIPE decreased the glycolysis pathway. (E–G) TIPE decreases ATPase activity and ATP content and increases lactate levels. (H, I) Overexpression of TIPE promotes glycolysis and glycolytic capacity according to extracellular acidification rate (ECAR) analysis. (J, K) Interfering with TIPE decreased glycolysis and glycolytic capacity using ECAR analysis. (L) TIPE significantly activated hypoxia response element (HRE) activity. *p < 0.05; **p < 0.01; ***p < 0.001. The data represent the means ± SEM of three replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Western blot validation of TIPE in melanoma cell lines. (b) Western blot and qPCR analysis of TIPE expression after TIPE interference in A375 cells. (c) Western blot and qPCR analysis of TIPE expression after overexpression of TIPE in G361 cells ***P<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) CCK8 assay showed that interfering TIPE (TIPE-sh) decreased the cells proliferation in A375 cells compared to control (Ctrl-sh). (b) Overexpression of TIPE (TIPE) elevated G361 cell proliferation compared to control (Ctrl). (c, d) Fluorescence-activated cell sorting (FACS) analysis of the effects of TIPE on cell cycle. (e) Effects of TIPE on colony formation in A375 and G361 cells. (f–h) Effect of TIPE on tumor formation in a nude mouse xenograft model. Nude mice were subcutaneously injection of cells containing Ctrl-sh and TIPE-sh, respectively. The tumor volume was measured every 7 days for five times until sacrifice. Representative images of tumors from the TIPE-sh and control groups (Ctrl-sh), n = 4 for each group. (i) Interfering TIPE decreases the expression of Ki67 in nude mice, measured by immunohistochemistry. (j) TCGA dataset shows a positive relation between the mRNA expression of TIPE and Ki67 in melanoma patients. *p < 0.05; ***p < 0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Principal component analysis (PCA) and volcano plots of the samples from TIPE interference group vs. control in the negative mode (a, b) or positive mode (c, d) by using untargeted metabolomics. (e) Heatmap indicated that the glycolysis pathway including pyruvate and lactic acid is decreased after TIPE interference.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) TIPE upregulated HIF-1α mRNA expression using a qPCR assay. (b) Western blot analysis showed that TIPE increased HIF-1α expression. (c) TCGA dataset indicated that TIPE has a positive correlation with HIF-1α ***P<0.001.
+
 Furthermore, we investigated whether TIPE affected HIF-1α transcriptional activity or its expression levels. The results demonstrated that TIPE increased the expression of HIF-1α at both mRNA and protein levels (Figure 1—figure supplement 4). Interestingly, TIPE can dramatically activate the HRE reporter activity, with which HIF-1α is more prone to recognize the specific DNA motif to regulate metabolic gene transcription (Chen et al., 2022a; Figure 1L).
 
 Collectively, above results demonstrate that TIPE plays a crucial role in promoting melanoma glycolysis. However, the impact of TIPE on the Warburg effect by regulating HIF-1α activity requires further investigation.
 
-## TIPE interacts with PKM2, promotes its dimerization and nuclear import
+### TIPE interacts with PKM2, promotes its dimerization and nuclear import
 
 To further study the functions of TIPE in melanoma, we used the co-immunoprecipitation mass spectrometry (Co-IP/MS) method to bait the potential binding partners of TIPE (the candidate interacting proteins of TIPE are listed in Supplementary file 1a). Interestingly, we found that PKM2, the key enzyme in aerobic glycolysis, might be a new partner of TIPE in melanoma (Figure 2A and Figure 2—figure supplement 1). Next, we performed Co-IP assays to confirm the interactions between TIPE and PKM2. The results revealed that exogenously overexpressed Flag-tagged PKM2 interacted with exogenously overexpressed HA-tagged TIPE (Figure 2B, C). Furthermore, endogenous interactions between PKM2 and TIPE were confirmed in the A375 cells (Figure 2D, E). GST-pull down assays demonstrated that TIPE directly bound to PKM2 in vitro (Figure 2F). Moreover, we performed Doulink assay to further demonstrate their endogenous interactions. The results also showed that endogenous interactions between TIPE and PKM2 were confirmed in G361 cells (Figure 2G). Based on these interactions, we identified the binding regions between TIPE and PKM2. We generated four fragments of PKM2, including amino acids 1–390 (NA1BA2), 45–390 (A1BA2), 1–219 (NA1B), and 220–390 (A2), based on their structural domains (Figure 2H). The results showed that except for the A2 domain, the NA1BA2, A1BA2, and NA1B domains of PKM2 were necessary for its interaction with TIPE (Figure 2I). Finally, the TIPE protein was divided into two fragments, including amino acids 1–100 (M1) and 101–198 (M2). The data showed that the amino acids 1–100 (M1) and 101–198 (M2) of TIPE interacted with PKM2 (Figure 2J). Due to both domains of TIPE can interact with PKM2, we believe that the A2 domain of PKM2 might have important structural effects that could affect interactions with TIPE. Taken together, these data revealed that TIPE interacts with PKM2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig2-v1.jpg)
+
+**Figure 2.:** (A) Co-immunoprecipitation mass spectrometry (Co-IP/MS) analysis demonstrated that PKM2 interacted with TIPE in A375 cells. The results indicated that there were five peptides of PKM2 were detected to interact with TIPE (below), and one of which was shown at the upper. (B, C) Immunoprecipitation (IP) and western blot analysis of the exogenous TIPE/PKM2 proteins interaction in the HEK-293T cells co-transfected with Flag-tagged PKM2 and HA-tagged TIPE. (D, E) IP and western blot analysis of the endogenous TIPE/PKM2 proteins interaction in the A375 cells. (F) GST-pull down assay analysis of TIPE/PKM2 proteins interaction using purified GST-tagged PKM2 and TIPE-HA. (G) TIPE (rabbit source, TIPER) endogenously interacted with PKM2 (mouse source, PKM2M) in G361 cells by using the Doulink assay. The results suggested that TIPE interacted with PKM2 to form a red color complex. The red color signal is generated only when the two proteins are too close to interaction. (H, I) IP and western blot analysis of HA-tagged TIPE and Flag-tagged PKM2 fragment protein interaction in HEK-293T cells. (J) IP and western blot analysis of the Flag-tagged PKM2 and HA-tagged TIPE fragment protein interaction in HEK-293T cells. (K) Interfering TIPE decreased PKM2 dimeric formation but increased tetramer formation, as analyzed by BN-PAGE with β-actin as a loading control. (L) Overexpression of TIPE increased PKM2 dimeric formation and decreased tetramer formation. (M) Western blot showed that TIPE promoted PKM2 translocation into the nucleus. (N) TIPE enhanced PKM2 translocation into the nucleus, and this phenomenon was diminished by the administration of TEPP-46 (100 μM). *p < 0.05; **p < 0.01. The data represent the means ± SEM of three replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a, b) Molecular docking with a superposition of the three structures showed binding domain of TIPE and PKM2 by using PyMol 2.2.0 (S = −246.61). (c) Western blot analysis by using the TIPE antibody to bait its potential partner prior to the ‘IN-GEL DIGESTION’ step. Before the ‘nano-HPLC-MS/MS ANALYSIS’ step, the quality control including false discovery rate (d), score distribution (e), peptides feature detection (f), verifiable de novo sequences (g), and quality accuracy control (h) were performed.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a, b) TIPE did not impact the expression levels of PKM2. (c) TCGA dataset showed that there was no significant correlation between TIPE and PKM2.
+
 Since TIPE interacts with PKM2 in melanoma, we determined whether TIPE increases aerobic glycolysis by affecting PKM2 expression or its activity. The results showed that TIPE did not influence the expression of PKM2 at either the mRNA or the protein level (Figure 2—figure supplement 2). Intriguingly, we demonstrated that dimeric PKM2 was reduced in TIPE-silenced A375 cells (Figure 2K) and was increased following TIPE overexpression in G361 cells (Figure 2L). Normally, a dimeric form of PKM2 with low affinity for its substrate, PEP, and a tetrameric form have a high PEP affinity. Moreover, the dimeric form of PKM2 is more prone to translocation into the nucleus and thus exerts protein kinase activity, which confers the Warburg effect and tumorigenesis (Zhou et al., 2022). Western blot analysis of nuclear and cytosolic fractions from A375 cells revealed that PKM2 primarily resided in the cytoplasm in which TIPE was downregulated. Likewise, the nuclear level of PKM2 was increased after overexpression of TIPE in G361 cells (Figure 2M). Furthermore, we examined the distribution of PKM2 after TIPE overexpression by using a Thermo Fisher EVOS microscopic analysis. As shown in Figure 2N, PKM2 was predominantly present in the nucleus after TIPE overexpression, and this phenomenon was diminished by the administration of a PKM2 dimer formation suppressor (TEPP-46, 100 μM). It has been shown that dimeric PKM2 promotes tumor progression by regulating the Warburg effect (Zhou et al., 2022). Thus, we speculated that TIPE restores the nuclear levels of PKM2 to promote melanoma tumorigenicity via a dimeric PKM2-dependent Warburg effect.
 
-## TIPE requires PKM2 for transcriptional activation of HIF-1α
+### TIPE requires PKM2 for transcriptional activation of HIF-1α
 
 Accumulating evidence has revealed that tetrameric PKM2 is enzymatically active toward pyruvate and acts as a transcriptional coactivator, while it dissociates into a dimer (Wei et al., 2020). Consequently, the dimeric form of PKM2 becomes a coactivator of HIF-1α to transcriptionally activate glycolytic genes in favor of the Warburg effect (Figure 3A; Ouyang et al., 2018). As PKM2 and HIF-1α both play important roles in the metabolic reprogramming process, it is reasonable to believe that the interactions between TIPE and these two molecules could affect the glycolysis in melanoma. Thus, we investigated whether TIPE promoted the transcriptional activation of HIF-1α in a PKM2-dependent manner.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig3-v1.jpg)
 
-**Figure 3.:** (A) Proposed molecular mechanism by which dimeric PKM2 regulates cell proliferation and glycolysis by modulating HIF-1α activity. (B) TIPE, especially when combined with PKM2, boosts relative hypoxia response element (HRE) luciferase activity, as examined by luciferase reporter assay. (C) TIPE promoted HRE activity in a dose- and PKM2-dependent manner. (D, E) TIPE increases HIF-1α targeted genes, including LDHA and SLC2A1, in a dose- and PKM2-dependent manner. (F, G) TIPE promoted endogenous interaction between PKM2 and HIF-1α in melanoma cells using a Doulink assay. Interference of TIPE in A375 cells promoted the interaction between PKM2 and HIF-1α (upper) compared to that overexpression of TIPE in G361 cells decreased their interaction (lower). The density of the red color signaling means the interactive strength between PKM2 and HIF-1α affected by TIPE. (H) TIPE enhanced the PKM2/HIF1a interaction in the nucleus. (I) TIPE increased the exogenous interaction between PKM2 and HIF-1α in a dose- dependent manner in HEK-293T cells. (J) TCGA dataset revealed that TIPE has a positive relationship with hypoxia score in melanoma. (K) Higher expression of TIPE is associated with a relatively higher hypoxia score in melanoma. *p < 0.05; **p < 0.01; ***p < 0.001. The data represent the means ± SEM of three replicates *p<0.05.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3, indicating the relevant bands and treatments.
+**Figure 3.:** (A) Proposed molecular mechanism by which dimeric PKM2 regulates cell proliferation and glycolysis by modulating HIF-1α activity. (B) TIPE, especially when combined with PKM2, boosts relative hypoxia response element (HRE) luciferase activity, as examined by luciferase reporter assay. (C) TIPE promoted HRE activity in a dose- and PKM2-dependent manner. (D, E) TIPE increases HIF-1α targeted genes, including LDHA and SLC2A1, in a dose- and PKM2-dependent manner. (F, G) TIPE promoted endogenous interaction between PKM2 and HIF-1α in melanoma cells using a Doulink assay. Interference of TIPE in A375 cells promoted the interaction between PKM2 and HIF-1α (upper) compared to that overexpression of TIPE in G361 cells decreased their interaction (lower). The density of the red color signaling means the interactive strength between PKM2 and HIF-1α affected by TIPE. (H) TIPE enhanced the PKM2/HIF1a interaction in the nucleus. (I) TIPE increased the exogenous interaction between PKM2 and HIF-1α in a dose- dependent manner in HEK-293T cells. (J) TCGA dataset revealed that TIPE has a positive relationship with hypoxia score in melanoma. (K) Higher expression of TIPE is associated with a relatively higher hypoxia score in melanoma. *p < 0.05; **p < 0.01; ***p < 0.001. The data represent the means ± SEM of three replicates *p<0.05.
 
 To confirm the effect of TIPE activation on HIF-1α transcriptional activity, we tested the ability of TIPE to activate the HRE reporter activity in HRE-luciferase plasmid transfected HEK-293T cells. Not surprisingly, significant augmentation of HRE promoter activation by TIPE was observed, especially when combined with PKM2 (Figure 3B). Consequently, TIPE-activated HRE reporter activity in a dose-dependent manner, and this phenomenon was reversed after PKM2 knockdown, demonstrating that TIPE has critical effects on the activation of HIF-1α transcription in a PKM2-dependent manner (Figure 3C). HIF-1α targeted genes such as LDHA and SLC2A1 were also upregulated by TIPE in a dose-dependent manner and were reversed by interfering with PKM2 (Figure 3D, E). Due to PKM2 cooperated with HIF-1α to activate glycolytic genes during the Warburg effect, we used the Duolink method to confirm whether TIPE affects the endogenous interaction between HIF-1α and PKM2. The results showed that the interaction between HIF-1α and PKM2 was decreased by TIPE interference, whereas the interaction was increased when TIPE was overexpressed (Figure 3F, G). More interestingly, TIPE enhanced the PKM2/HIF-1α interaction in the nucleus, further indicating that TIPE-induced PKM2 nuclear translocation and thus promoted its interaction with HIF-1α (Figure 3H). In addition, the Co-IP assay revealed that TIPE elevated this interaction in a dose-dependent manner (Figure 3I).
 
@@ -66,17 +98,17 @@ Moreover, we analyzed the correlation between TIPE and hypoxia scores using TCGA
 
 Collectively, these results demonstrated that TIPE has critical effects on the transcriptional activation of HIF-1α in a PKM2-dependent manner.
 
-## TIPE promotes HIF-1α transcriptional activation via PKM2 Ser37 phosphorylation
+### TIPE promotes HIF-1α transcriptional activation via PKM2 Ser37 phosphorylation
 
 The presence of PKM2 in the nucleus enhances glucose metabolism by regulating HIF-1α (Luo et al., 2011). Our results preliminarily demonstrate that TIPE promotes PKM2 dimerization and nuclear import, thereby increasing HIF-1α transcriptional activation and promoting aerobic glycolysis. Normally, Erk1/2-dependent phosphorylation of PKM2 at serine 37 (Ser37) and FGFR1-dependent phosphorylation of PKM2 at tyrosine 105 (Tyr105) (Li et al., 2016; Zhou et al., 2018) are indicative of its dimerization and translocation, further promoting the Warburg effect and serving as a transcription factor coactivator (Novoyatleva et al., 2019; Wei et al., 2020). As shown in Figure 4A, interference with TIPE in A375 cells blocked PKM2 Ser37 phosphorylation, and overexpression of TIPE in G361 cells caused Ser37 phosphorylation compared to controls. However, the phosphorylation of PKM2 Tyr105 did not show any obvious changes. Consequently, we hypothesized that this transformation caused by Ser37 phosphorylation affects the interaction between TIPE and PKM2. As expected, the mutation of PKM2 at S37A blocked its interaction with TIPE, but not with the Y105D mutation (Figure 4B). Interestingly, this mutation also interfered with the interaction between PKM2 and HIF-1α, which was elevated by TIPE overexpression (Figure 4C). A previous study has revealed that TIPE promotes chemoresistance in acute myeloid leukemia (AML) by activating the ERK signaling pathway (Pang et al., 2020). In addition, phosphorylation of PKM2 at serine 37 is ERK1/2-dependent manner (Yang et al., 2012). TIPE does not serve as a phosphorylase to perform such post-translational modifications directly. Taken together, these results indicate that TIPE promotes PKM2 dimerization depending on ERK signaling. As expected, the ERK inhibitor, U0126, inhibited PKM2 Ser37 phosphorylation induced by TIPE overexpression (Figure 4D). To investigate whether TIPE affects the binding affinity of PKM2 to the Hif-1α-specific binding site of the LDHA and SLC2A1 promoter using chromatin immunoprecipitation qPCR (ChIP-qPCR) analysis, we found that TIPE increased the binding of PKM2 to the LDHA and SLC2A1 promoters. This phenomenon, caused by the overexpression of TIPE, was diminished after the administration of TEPP-46, indicating that TIPE promoted the binding of PKM2 to the LDHA and SLC2A1 promoters in a dimeric PKM2-dependent manner (Figure 4E, F). Finally, we demonstrated that the augmentation of TIPE on HRE promoter activation or HIF-1α targeted genes such as LDHA and SLC2A1 was blocked by the S37A mutation (Figure 4G–I).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig4-v1.jpg)
 
-**Figure 4.:** (A) TIPE enhanced PKM2 Ser37 phosphorylation, but not that of Tyr105. (B) PKM2 Ser37, but not Tyr105, increased its interaction with TIPE. (C) PKM2 Ser37 mutation (S37A) hampered its interaction with HIF-1α promoted by TIPE. (D) TIPE elevated PKM2 Ser37 phosphorylation in an ERK-dependent manner. (E, F) TIPE enhanced PKM2 binding to the hypoxia response element (HRE) for LDHA and SLC2A1 in a dimeric form-dependent manner. (G) PKM2 Ser37 mutation (S37A) inhibited the HRE activity induced by TIPE. (H, I) PKM2 Ser37 mutation (S37A) decreased the expression of LDHA and SLC2A1 that promoted by TIPE. **p < 0.01; ***p < 0.001. The data represent the means ± SEM of three replicates.Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4, indicating the relevant bands and treatments.
+**Figure 4.:** (A) TIPE enhanced PKM2 Ser37 phosphorylation, but not that of Tyr105. (B) PKM2 Ser37, but not Tyr105, increased its interaction with TIPE. (C) PKM2 Ser37 mutation (S37A) hampered its interaction with HIF-1α promoted by TIPE. (D) TIPE elevated PKM2 Ser37 phosphorylation in an ERK-dependent manner. (E, F) TIPE enhanced PKM2 binding to the hypoxia response element (HRE) for LDHA and SLC2A1 in a dimeric form-dependent manner. (G) PKM2 Ser37 mutation (S37A) inhibited the HRE activity induced by TIPE. (H, I) PKM2 Ser37 mutation (S37A) decreased the expression of LDHA and SLC2A1 that promoted by TIPE. **p < 0.01; ***p < 0.001. The data represent the means ± SEM of three replicates.
 
 In brief, we revealed that TIPE promoted HIF-1α transcriptional activation via ERK-dependent PKM2 Ser37 phosphorylation.
 
-## TIPE facilitates melanoma tumorigenesis and aerobic glycolysis in a dimeric PKM2-dependent manner
+### TIPE facilitates melanoma tumorigenesis and aerobic glycolysis in a dimeric PKM2-dependent manner
 
 Several studies have demonstrated that dimeric PKM2 increases tumor progression by regulating the Warburg effect. Therefore, we speculated that TIPE promotes melanoma growth through a dimeric PKM2-dependent Warburg effect. To demonstrate this, we knocked down TIPE in A375 cells and found that cell proliferation was decreased. Interestingly, we found that Pyridoxine, a PKM2 dimer formation inducer (Wei et al., 2020), was sufficient to abrogate the TIPE silencing-mediated cell proliferation (Figure 5A). Consistently, TEPP-46, a PKM2 dimer formation suppressor, was sufficient to reverse the increased proliferative capacity induced by TIPE overexpression in G361 cells (Figure 5B). Clone formation ability (Figure 5C, D) and in vivo experiments (Figure 5E–G) also demonstrated this phenomenon. Interestingly, we found that decreased ECAR, glycolysis, and glycolytic capacity induced by TIPE interference could be fully antagonized by Pyridoxine in A375 cells (Figure 5H–J). In addition, TEPP-46 reversed the ECAR, glycolysis, and glycolytic capacity induced by TIPE overexpression in G361 cells (Figure 5K–M).
 
@@ -88,7 +120,7 @@ Lastly, to further demonstrate how TIPE affects the PKM2/HIF-1α pathway during 
 
 Taken together, these data suggest that TIPE regulates cell growth and the Warburg effect by inducing the formation of dimeric PKM2, and thus activating the HIF-1α pathway.
 
-## TIPE accelerates melanoma cells stem-like phenomenon via promoting PKM2 dimerization under normoxic conditions
+### TIPE accelerates melanoma cells stem-like phenomenon via promoting PKM2 dimerization under normoxic conditions
 
 Increasing evidence has shown that the HIF-1α pathway is associated with acquisition of cancer stem-like properties (Weinstein et al., 2022; Zhu et al., 2022). To confirm the effects of TIPE on the stemness of melanoma cells under normoxic conditions, we examined the stemness-associated features in vitro. First, we measured cancer stem-like phenotype markers, including NANOG, NOTCH, POU5F1(OCT3/4), SOX2, and BMI-1. The results showed that the markers were increased after overexpression of TIPE in G361 cells and were reduced after TIPE interference in A375 cells by using qPCR method. More interestingly, neural crest stem cell markers (including NES and SOX10) that are more relevant to melanoma biology were also greatly changed (Figure 6A, B). We further revealed that TIPE increased the migration ability and increased sphere formation (Figure 6C, D). In addition, TIPE significantly increased the chemosensitivity of melanoma cell to sorafenib (Figure 6E, F). Next, we examined the tumorigenicity of melanoma cells with TIPE knockdown in vivo by injecting Ctrl-sh or TIPE-sh A375 cells subcutaneously into nude mice at three dilutions (1 × 106, 1 × 105, and 1 × 104) and allowing them to grow for 4 weeks. The confidence intervals (CIs) for 1/(stem cell frequency) using extreme limiting dilution were calculated as previous reported (Hu and Smyth, 2009; Niu et al., 2021). The estimated CI for the frequency of CSCs in the TIPE knockdown group was 202,749, compared with 18,441 in the control group (p < 0.001) (Figure 6G; Supplementary file 1c, d). Moreover, CD44+ subpopulations were significantly elevated, as detected using a fluorescence-activated cell sorting (FACS) assay (Figure 6H, I).
 
@@ -100,9 +132,15 @@ Because TIPE promotes HIF-1α transcriptional activation in a dimeric PKM2-depen
 
 These findings strongly suggest that TIPE maintains melanoma cell stemness via dimeric PKM2-dependent HIF-1α activation.
 
-## TIPE is positively correlated with the levels of PKM2 Ser37 phosphorylation and CSC markers
+### TIPE is positively correlated with the levels of PKM2 Ser37 phosphorylation and CSC markers
 
 We analyzed the expression of TIPE in melanoma and benign skin tumors, and the results showed that the expression of TIPE was dramatically increased compared to controls using a tissue chip (Figure 7A, B). Furthermore, the expression of TIPE in primary group (non-lymph node metastasis) was lower than that of the metastatic group (lymph node metastasis) (Figure 7C). To determine if there was a correlation between TIPE and PKM2 Ser37 levels and other indicators such as Ki67- and hypoxia-related gene (LDH), their expression were analyzed by immunohistochemistry (IHC) staining. The results showed that TIPE expression was positively correlated with PKM2 Ser37, Ki67, and LDH expression (Figure 7D). However, an analysis of the correlation between TIPE levels and the outcomes of melanoma patients was not conducted owing to the absence of survival data within the tissue chip. Intriguingly, the findings from the TCGA dataset present a paradoxical observation, suggesting that elevated TIPE expression is associated with a more favorable prognosis in melanoma patients (Figure 7—figure supplement 1). This unexpected correlation underscores the need for a more comprehensive investigation into the underlying mechanisms.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Higher expression of TIPE was observed in melanoma tumor tissues than in the control, as evidenced by immunohistochemistry. (C, D) The expression of TIPE correlated well with p-PKM2(Ser37) in melanoma tumor tissues. (E) Similarly, a good correlation was observed between TIPE, p-PKM2(Ser37), LDH, and CD44 in mouse xenografts. (F–I) In addition, the expression of TIPE was positively correlated with CSCs markers, including BMI1, NANOG, NOTCH1, and POU5F1 in TCGA dataset. (J) A brief model depicting the functional impact of TIPE on metabolic reprogramming in melanoma. ***p < 0.001. The data represent the means ± SEM of three replicates "*p<0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92741/elife-92741-fig7-figsupp1-v1.jpg)
 
 Consistent with the above findings, IHC results showed that TIPE, PKM2 Ser37, LDH, and CSCs marker CD44 were inhibited in A375 TIPE-interfering cell-derived xenografts (Figure 7E). Lastly, TCGA dataset revealed that TIPE has a positive relationship with CSCs markers including BMI1, NANOG, NOTCH1, and POU5F1 in melanoma (Figure 7F–I).
 
@@ -124,74 +162,74 @@ However, we measured metabolites such as glucose, pyruvate, and lactate at stead
 
 ## Materials and methods
 
-## Cell culture and plasmids construction
+### Cell culture and plasmids construction
 
 Human A375, A875, G361, MM96L, and HEK-293T cell lines were purchased from the Shanghai Institute of Cell Biology (Chinese Academy of Sciences, Shanghai, China) and were maintained in Dulbecco’s modified Eagle’s medium (DMEM, Gibco) supplemented with 10% fetal bovine serum (Gibco) at 37°C under 5% CO2. The source of the cell lines was confirmed through short tandem repeat (STR) profiling and verified to be free of mycoplasma contamination. The TIPE overexpression lentiviral vector (TIPE), TIPE expression knockdown vector (TIPE-sh) and their control vectors were constructed by GeneChem company (Shanghai, China). HIF-1α, PKM2-Flag, TIPE-HA, and their truncated vectors were constructed in our laboratory. The mutant vectors such as PKM2 S37A were synthesized by Tsingke Biology Co, Ltd (Beijing, China). All plasmids were transfected into the cells according to the manufacturer’s protocol.
 
-## Cell proliferation, cell cycle, and colony formation assays
+### Cell proliferation, cell cycle, and colony formation assays
 
 Cell proliferation was measured using the Cell Counting Kit-8 method (Dojindo, Shanghai, China). For the cell cycle assay, the cells were stained with propidium iodide (Sigma, USA) and were measured with a flow cytometer (FACS Aria 2, BD, USA). For the colony formation assay, cells were seeded, fixed, and stained as previously described (Yang et al., 2022).
 
-## Transwell assay
+### Transwell assay
 
 Tranwell assay was performed as we previous described (Yang et al., 2022). Photographs of at least three randomly selected fields were captured and were counted.
 
-## Bioinformatics, transcriptomics, and metabolomics analyses
+### Bioinformatics, transcriptomics, and metabolomics analyses
 
 The correlations between TIPE and HIF1A, hypoxia score, CSCs markers including BMI1, NANOG, NOTCH1, and POU5F1 were estimated by using the ASSISTANT for Clinical Bioinformation website (https://www.aclbi.com/static/index.html#/). Transcriptomics and metabolomics were performed and analyzed by GeneChem company (Shanghai, China). Overexpression of TIPE into G361 cells and their control group were randomly divided into three groups to perform transcriptomic analyses. In details, RNA was extracted from cells by standard extraction methods, and then the RNA samples were strictly controlled by using Nanophotometer spectrophotometer to detect RNA purity, and Agilent 2100 Bioanalyzer to detect RNA integrity. Purified mRNA by Oligo (dT) magnetic beads then randomly interrupted by divalent cations in NEB Fragmentation Buffer, and the library is built according to the NEB common library construction method. The library was qualified and processed for Illumina sequencing. Finally, the results were subjected to gene differential expression analysis. Interfering TIPE in A375 cells and its control group were randomly divided into six groups to perform metabolomic analyses. In details, samples were extracted using the methanol/acetonitrile/aqueous solution method, followed by chromatography-mass spectrometry analysis. Finally, the data were analyzed, including univariate statistical analysis, multidimensional statistical analysis, differential metabolite screening, differential metabolite correlation analysis, KEGG pathway analysis, etc.
 
-## ATP content, ATPase activity, pyruvate kinase activity, and lactic acid content measurement
+### ATP content, ATPase activity, pyruvate kinase activity, and lactic acid content measurement
 
 The concentration of ATP was determined 72 hr after overexpression or interfering of TIPE by using an ATP assay kit (Beyotime, S0026) according to the manufacturer’s instructions. ATPase activity was measured by using an ATPase Assay Kit (Sigma-Aldrich, MAK113). Pyruvate kinase activity and lactate production after overexpression or interfering of TIPE were measured using a Pyruvate Kinase Activity Assay Kit (Nanjing Jiancheng, A076-1-1) and Lactic Acid Assay Kit (Nanjing Jiancheng, A019-2-1) according to the manufacturer’s instruction, respectively.
 
-## Extracellular acidification rate
+### Extracellular acidification rate
 
 The ECAR of melanoma cells was determined using the Seahorse XF extracellular flux analyzer (Agilent, Santa Clara, CA, USA). The cells were plated, washed before analysis. The cells were then treated at specific time points: glucose (10 mM), followed by oligomycin (1 μM) and 2-Deoxy-D-glucose (2-DG) (50 mM). Finally, the ECAR was measured by the Seahorse XF software.
 
-## Chromatin immunoprecipitation quantitative PCR
+### Chromatin immunoprecipitation quantitative PCR
 
 Melanoma cells were cross-linked with 1% formaldehyde, lysed with sodium dodecyl sulfate buffer and sonicated. Sheared DNA was immunoprecipitated with PKM2 antibody and negative control anti-IgG, and quantified using SYBR Green Realtime PCR analysis (ABI, USA). Primer sequences are listed in Supplementary file 1e. Fold enrichment was calculated based on Ct as 2−Δ(ΔCt), where ΔCt = CtIP − CtInput and Δ(ΔCt) = ΔCtantibody − ΔCtIgG.
 
-## Sphere formation assay
+### Sphere formation assay
 
 Melanoma cells transfected with TIPE or TIPE-sh were plated onto 24-well low attachment surface polystyrene plates (Corning, USA). Cells were grown in DMEM/F12 medium (Invitrogen, USA) for approximately 10 days supplemented with 20 ng/ml epidermal growth factor (EGF) (Bioworld, BK0026), 2% B27 (Invitrogen, 17504044), 20 ng/ml basic fibroblast growth factor (FGF) (PeproThech, #100-18B), and 1% N2 (Invitrogen, 17502048).
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 Human HEK-293T cells were seeded onto 48-well plates and transiently transfected with pHRE-Firefly luciferase reporter, TIPE-HA and PKM2-Flag or sh-RNA vector targeting PKM2 plasmids together with internal control reporter pTK (Thymidine kinase)-Renilla luciferase by Lipofectamine 2000 reagent (Thermo, USA). FLuc and RLuc activities were determined using the Dual-Luciferase Assay System (Promega, USA).
 
-## qPCR
+### qPCR
 
 mRNA was isolated and cDNAs were synthesized by using a Prime Script RT Reagent Kit (TaKaRa, China) according to the manufacturer’s instruction. qPCR was performed using Real SYBR Mixture (CoWin Bioscience, China) on an ABI PRISM 7500 instrument (Thermo Fisher, USA). The sequences of the primers used in this study are listed in Supplementary file 1e.
 
-## Duolink proximity ligation assay
+### Duolink proximity ligation assay
 
 Duolink In Situ PLA kit (Sigma-Aldrich, DUO92101) was performed to demonstrate the endogenous interactions between TIPE and PKM2, and to interpret how TIPE impact the interactions between HIF-1α and PKM2 according to we described previously (Yang et al., 2022; Zhao et al., 2019). Quantification analysis was performed using the ImageJ software.
 
-## Nuclear and cytosolic fractionation
+### Nuclear and cytosolic fractionation
 
 Nuclear and cytosolic fractions were prepared using NE-PER Extraction Reagents (Thermo, 78833) according to the manufacturer’s recommendation. Finally, both cytosolic and nuclear subfractions were stored in –80°C prior to western blot.
 
-## Western blot
+### Western blot
 
 The prepared lysates were separated by 10% sodium dodecyl sulfate–polyacrylamide gel electrophoresis and transferred onto polyvinylidene fluoride (PVDF) membranes (Bio-Rad, USA). The membranes were then blocked and incubated overnight at 4°C with the primary antibodies (as listed in Supplementary file 1f). After incubated with secondary antibodHead2ies, the protein bands were visualized using a Tanon 5200 Imager (Shanghai, China).
 
-## Immunohistochemical and immunofluorescence
+### Immunohistochemical and immunofluorescence
 
 Melanoma tissue chip was purchased from Zhongke Guanghua (Xi’an, China) Intelligent Biotechnology Co, Ltd (#K063Me01), and the clinicopathological characteristics of melanoma specimens are summarized in Supplementary file 1g. IHC staining was performed as previously reported. The samples were finally analyzed by using semiquantitative scoring criteria. The staining index values (0–12) were obtained and calculated (Yang et al., 2022). For immunofluorescence, cells were seeded onto 24-well plates at a density of 5000 cells per well. Then, the cells were fixed using 4% formaldehyde solution and permeabilized with 0.5% Triton X-100 solution. Finally, cells were incubated overnight with antibodies prior to blocked with 1% bovine serum albumin in phosphate-buffered saline containing 0.2% Tween-20. The fluorescence images of the cells were acquired with a fluorescence microscope equipped with appropriate filter combinations.
 
-## Co-IP and Co-IP/MS
+### Co-IP and Co-IP/MS
 
 For Co-IP, the cells were seeded, harvested, and were then washed twice with phosphate-buffered saline and digested and lysed in lysis buffer. The lysed supernatant was incubated with Tag-conjugated beads to bait the potential interacted proteins according to the manufacturer’s instruction. For Co-IP/MS, the beads consequently were washed, eluted, resolved, and then stained with Coomassie brilliant blue. The bands were excised and digested with chymotrypsin and subjected to LC–MS/MS sequencing and data analysis by OBiO Technology Corp, Ltd (Shanghai, China).
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Cell apoptosis was measured by using a Cell Apoptosis Analysis Kit (Engreen Biosystem Co, Ltd, Beijing, China). The cells were then incubated in serum-free medium for starvation prior to analysis and fixed using 70% ethanol for 12 hr. Consequently, cells were washed, incubated with propidium iodide, and analyzed by an FACS scanner (Aria II, BD, USA). For CD44 analyzing, the cells were seeded, harvested, and incubated with anti-CD44 fluorescent antibody. Isotype-matched human immunoglobulins served as controls. Finally, the cells were counted with the FACS scanner.
 
-## Mouse xenograft tumor study
+### Mouse xenograft tumor study
 
 Xenograft tumor studies were conducted utilizing the 6-week-old male BALB/c nude mice purchased from the Shanghai SLAC Laboratory Animal Co, Ltd. The total number of mice was randomly divided into respective groups and maintained in a standard pathogen free environment. All the animal experiments were approved by the Animal Ethics Committee of Zibo Central Hospital, Binzhou Medical University (Ethical Approval Number: 2021-037). Tumor growth was monitored regularly and the length, width, and height measurements taken every 7 days for five times. In the rescue experiment (Figure 5E), the tumor volumes were measurements taken every 5 days for seven times. For the rescue test, 1 week after injection, mice bearing TIPE-vector were treated with TEPP-46. TEPP-46 (50 mg/kg) or vehicle control (0.9% NaCl) was administrated via intraperitoneal injection. At the end of experiment, mice were euthanized and tumors were collected. Tumors were fixed with 4% paraformaldehyde for further IHC analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism (GraphPad Software, San Diego, CA) was used for statistical analyses. Two-tailed Student’s t-tests were used to compare two groups. Linear regression analysis was explored to analyze the correlation of TIPE with other indicators. All the data are shown as the standard error of mean from at least three independent experiments. A p value of <0.05 was considered statistically significant for all tests.

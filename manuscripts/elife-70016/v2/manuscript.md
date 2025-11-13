@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Most cellular ATP is made by rotary F 1 F O ATP synthases using proton translocation-generated clockwise torque on the F O c-ring rotor, while F 1 -ATP hydrolysis can force counterclockwise rotation and proton pumping. The F O torque-generating mechanism remains elusive even though the F O interface of stator subunit-a, which contains the transmembrane proton half-channels, and the c-ring is known from recent F 1 F O structures. Here, single-molecule F 1 F O rotation studies determined that the pKa values of the half-channels differ, show that mutations of residues in these channels change the pKa values of both half-channels, and reveal the ability of F O to undergo single c-subunit rotational stepping. These experiments provide evidence to support the hypothesis that proton translocation through F O operates via a Grotthuss mechanism involving a column of single water molecules in each half-channel linked by proton translocation-dependent c-ring rotation. We also observed pH-dependent 11° ATP synthase-direction sub-steps of the Escherichia coli c 10 -ring of F 1 F O against the torque of F 1 -ATPase-dependent rotation that result from H + transfer events from F O subunit-a groups with a low pKa to one c-subunit in the c-ring, and from an adjacent c-subunit to stator groups with a high pKa. These results support a mechanism in which alternating proton translocation-dependent 11° and 25° synthase-direction rotational sub-steps of the c 10 -ring occur to sustain F 1 F O ATP synthesis.
+Most cellular ATP is made by rotary F1FO ATP synthases using proton translocation-generated clockwise torque on the FO c-ring rotor, while F1-ATP hydrolysis can force counterclockwise rotation and proton pumping. The FO torque-generating mechanism remains elusive even though the FO interface of stator subunit-a, which contains the transmembrane proton half-channels, and the c-ring is known from recent F1FO structures. Here, single-molecule F1FO rotation studies determined that the pKa values of the half-channels differ, show that mutations of residues in these channels change the pKa values of both half-channels, and reveal the ability of FO to undergo single c-subunit rotational stepping. These experiments provide evidence to support the hypothesis that proton translocation through FO operates via a Grotthuss mechanism involving a column of single water molecules in each half-channel linked by proton translocation-dependent c-ring rotation. We also observed pH-dependent 11° ATP synthase-direction sub-steps of the Escherichia coli c10-ring of F1FO against the torque of F1-ATPase-dependent rotation that result from H+ transfer events from FO subunit-a groups with a low pKa to one c-subunit in the c-ring, and from an adjacent c-subunit to stator groups with a high pKa. These results support a mechanism in which alternating proton translocation-dependent 11° and 25° synthase-direction rotational sub-steps of the c10-ring occur to sustain F1FO ATP synthesis.
 
 ## Introduction
 
@@ -21,7 +21,7 @@ The F1FO ATP synthase (Figure 1) that is found in all animals, plants, and eubac
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig1-v2.jpg)
 
-**Figure 1.:** 1FO ATP synthase inhibited by ADP in three rotary states, and measurement of changes in rotational position between catalytic dwells.(A) Rotational state-1, pdb-ID 6OQU (Sobti et al., 2020). (B) State-2, pdb-ID 6OQV, with rotor 120° counterclockwise (CCW) from (A) where subunit-α is not shown to reveal subunit-γ. (C) State-3, pdb-ID 6WNR, with rotor 240° CCW from (A) showing microscope slide assembly of F1FO embedded in a lipid bilayer nanodisc (LBN) for rotation measurements. His6-tags (HT) on β-subunit C-termini enabled attachment to slide, while the gold nanorod (AuNR) coated with streptavidin (SA) bound to the biotinylated subunit c-ring. (D) Rotational position of single F1FO molecules versus time was monitored by intensity changes of polarized red light scattered from the AuNR in the presence of 1 mM Mg2+ATP, which enabled F1-ATPase-dependent 120° CCW power strokes between catalytic dwells (green bars). Prior to data collection at 200 kHz, a polarizer in the scattered light path was rotated to minimize intensity during one of the three catalytic dwells. Light intensity increased to a maximum upon rotation by 90° during the subsequent CCW 120° power stroke. For each molecule the angular dependence of these power strokes versus time was analyzed.
+**Figure 1.:** (A) Rotational state-1, pdb-ID 6OQU (Sobti et al., 2020). (B) State-2, pdb-ID 6OQV, with rotor 120° counterclockwise (CCW) from (A) where subunit-α is not shown to reveal subunit-γ. (C) State-3, pdb-ID 6WNR, with rotor 240° CCW from (A) showing microscope slide assembly of F1FO embedded in a lipid bilayer nanodisc (LBN) for rotation measurements. His6-tags (HT) on β-subunit C-termini enabled attachment to slide, while the gold nanorod (AuNR) coated with streptavidin (SA) bound to the biotinylated subunit c-ring. (D) Rotational position of single F1FO molecules versus time was monitored by intensity changes of polarized red light scattered from the AuNR in the presence of 1 mM Mg2+ATP, which enabled F1-ATPase-dependent 120° CCW power strokes between catalytic dwells (green bars). Prior to data collection at 200 kHz, a polarizer in the scattered light path was rotated to minimize intensity during one of the three catalytic dwells. Light intensity increased to a maximum upon rotation by 90° during the subsequent CCW 120° power stroke. For each molecule the angular dependence of these power strokes versus time was analyzed.
 
 When ΔGATP is significantly higher than n*pmf, the F1-ATPase motor can overpower the FO motor and catalyze net ATP hydrolysis (Steigmiller et al., 2008; Fischer et al., 2000). This results in ATPase-dependent power strokes that rotate continuously CCW for 120° at saturating ATP concentrations (Yasuda et al., 2001; Spetzler et al., 2006), and pump protons across the membrane to the periplasm in E. coli (Spetzler et al., 2012). Power strokes are separated by catalytic dwells that last a few ms, during which ATP is hydrolyzed (Yasuda et al., 2001; Spetzler et al., 2006; Spetzler et al., 2009). At rate-limiting ATP concentrations, an ATP-binding dwell can interrupt the E. coli F1 power stroke ~34° after the catalytic dwell (Yasuda et al., 2001; Martin et al., 2014). At this same rotary position, high ADP concentrations can compete with ATP to bind to the empty catalytic site resulting in ADP inhibition (Martin et al., 2014). All ATP synthases can catalyze ATP hydrolysis to some extent, although many have evolved regulatory mechanisms to minimize this energy wasteful process (Kühlbrandt, 2019). Under some circumstances, E. coli employs F1FO as an ATPase-driven H+ pump to maintain a pmf as an energy source for other metabolic processes (Spetzler et al., 2012).
 
@@ -51,19 +51,104 @@ The extent of rotation during ATP synthase-direction steps was unexpectedly foun
 
 Contributions of subunit-a residues putatively involved in the ATP synthase H+ half-channels were assessed by the effects on TD formation caused by mutations that converted charged or polar groups in subunit-a to hydrophobic leucine. Changes in rotational position were measured by a 35 × 75 nm gold nanorod (AuNR) bound to the biotinylated c-ring of individual E. coli FOF1 molecules embedded in lipid bilayer nanodiscs (Ishmukhametov et al., 2010), hereafter F1FO (Figure 1C). Changes in rotational position during F1-ATPase power strokes in the presence of saturating 1 mM MgATP were monitored by the intensity of polarized red light scattered from the AuNR (Spetzler et al., 2006; Hornung et al., 2011). Prior to data collection, the polarizer was adjusted so that the scattered red light intensity was at a minimum during one of the three F1 catalytic dwells (Figures 1D and 2A). The subsequent power stroke caused an increase in light intensity to a maximum when the AuNR had rotated 90° (Ragunathan et al., 2017). Rotational data sets of each F1FO molecule examined were collected for 5 s, which included ~300 of these power strokes (Yanagisawa and Frasch, 2017). Ten data sets were collected for each molecule. The number of F1FO molecules examined at each pH for WT and mutants is indicated in Figure 2—figure supplement 3. Using WT at pH 5.0 as an example where data from 103 F1FO molecules were collected, this was equivalent to 1030 data sets, and ~309,000 power strokes examined. For each molecule examined, rotational position versus time was calculated from scattered light intensity versus time using an arcsine1/2 function from which the number of TDs observed during the first 90° of rotation were determined (Ragunathan et al., 2017).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig2-v2.jpg)
+
+**Figure 2.:** (A) Examples of power strokes without TDs (blue), and of power strokes with TDs that lacked (green), or contained clockwise (CW) synthase-direction c-ring rotation relative to subunit-a (red) plotted as degrees of rotation after the catalytic dwell versus time where 40° (dotted line) is the optimal position for binding of ATP or inhibitory ADP (Yasuda et al., 2001; Martin et al., 2014). Brackets indicate Brownian-type oscillations during a TD. (B) Average percent TDs per data set versus pH from which pKa values were derived via intercepts of the slope and plateaus (solid line) of each curve based on the fit of the data to Equation 1 for WT (black line) and subunit-a mutants (red line). (C) Distributions at pH 6.0 of the percent of TDs per data set of power strokes (gray bars) where multiple data sets that each contained ~300 power strokes were collected from each of the total number of the F1FO indicated, and data were binned in 10% increments. The data were fit to the sum of three Gaussians (black line) representing low (blue), medium (orange), and high (green) efficiencies of TD formation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** In each mutant, examples 1–5 show power strokes without transient dwells (TDs). Examples 6–10 show power strokes with transient dwells where the FO motor either halts counterclockwise (CCW) rotation or caused clockwise (CW) rotation in the ATP synthase direction (synthase-direction steps). Brackets indicate Brownian-type oscillations during a TD.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The data were fit to the sum of three Gaussians (—) representing low (—), medium (—), and high (—) efficiencies of TD formation. Ten data sets were acquired from each molecule, and the number of molecules examined is shown for each condition.
+
 Example power strokes from WT and mutant F1FO molecules at pH 5.0 where TDs were present (black dots) and absent (blue dots) are shown in Figure 2A and Figure 2—figure supplement 1, respectively. When present, TDs either stopped F1-ATPase CCW rotation momentarily (green dots) or exhibited CW rotation in the ATP synthase direction, hereafter synthase-direction steps (red dots). None of the mutations examined eliminated the ability of F1FO to form TDs. Power strokes typically contained two to three TDs, when present. These were separated by an average of ~36°, consistent with an interaction between subunit-a and successive c-subunits in the c10-ring of E. coli F1FO.
 
 A power stroke mechanism has been defined as the generation of a large free energy gradient over a distance comparable to the step size of the molecular motion so that transition to the forward position occurs nearly irreversibly (Hwang and Karplus, 2019). By contrast, in a Brownian ratchet mechanism the motor is thought to visit previous and forward positions through thermal motion, where stabilization in the forward position results by conformational changes triggered by the fuel processing event. While some synthase-direction steps shown of Figure 2A and Figure 2—figure supplement 1 rotated CW in a concerted, and apparently irreversible manner characteristic of a power stroke, others indicated by brackets were observed to oscillate back and forth during the TD. These oscillations most commonly occurred late in the F1 power stroke (~70–80°) and were more pronounced in all mutations examined except aN214L (Figure 2—figure supplement 1). Such oscillations are direct evidence of a Brownian ratchet mechanism and are likely the result of a close balance between the energy that powers the F1-ATPases power stroke with the energy that powers synthase-direction rotation, which suggests that these mutations cause a decrease in the energy to power synthase-direction rotation.
 
-## Subunit-a mutations alter pKas of TD formation
+### Subunit-a mutations alter pKas of TD formation
 
 We postulated that mutation of subunit-a residues involved in H+ translocation related to c-ring rotation would alter the pKa of the half-channel in which the is located if each residue contributes independently to the H+ translocation process. Consequently, we precisely determined the pKa values of groups that contribute to TD formation (Figure 2B) using equations applied to the pH dependence of enzyme inhibition kinetics (Cook and Cleland, 2007).
 
 TDs occur when subunit-a binds to the c-ring to stop F1 ATPase-driven rotation for a period of time. Thus, a TD represents an extent that FO inhibited the F1ATPase motor, which occur as often as 3.6 times per F1 power stroke. Kinetically, the ATPase power stroke duration without TDs is ~200 μs, while the average duration of each TD is ~150 μs (Martin et al., 2015; Ishmukhametov et al., 2010; Yanagisawa and Frasch, 2017). In data sets where TDs occur in 100% of the power strokes, for example, aN214L at pH 6.0, all of the ~300 power strokes in that data set will contain TDs (i.e. they look like the power strokes in Figure 2A where TDs are denoted by green or red dots) such that the efficiency of TD formation is 100%. Such a data set represents a 64% inhibition of the F1ATPase power stroke kinetics. When all ~300 power strokes in a data set look like those in Figure 2A represented by blue dots, the efficiency of TD formation in that data set is 0%.
 
-Precise pKa determination depended upon the fits of the efficiency at each pH examined to the pH dependence over the range of pH values in Figure 2B. The number of molecules examined for WT and each mutant is indicated in Figure 2—figure supplement 3. For example, a total of 553 F1FO molecules (~92 million power strokes) were examined to establish the pH dependence of WT. A maximum average of 47.5% of WT power strokes from all three efficiency groups occurred at pH 5.0, which decreased with increasing pH until it plateaued at a minimum of ~22% at pH values > 7.5 (Figure 2B). The pH dependences for WT and mutants were fit to Equation 1 where T is the total average TD occurrence, Tmin is the minimum TD occurrence, and K1 and K2 are the inhibition constants that define the increase and maximum TD occurrence versus pH as the result of either a residue that is protonated with pKa1, or unprotonated with pKa2, respectively. It is noteworthy that K1 is similar to a dissociation constant because a smaller K1 increases the ability of subunit-a to bind to, and stop, c-ring rotation with decreasing pH (Figure 2—figure supplement 2). Conversely, a smaller K2 value decreases TD formation with decreasing pH because it is the unprotonated form of that residue that binds and inhibits.(1)T=logTmin−log(1+K1[H+])+log(1+K2[H+])
+Precise pKa determination depended upon the fits of the efficiency at each pH examined to the pH dependence over the range of pH values in Figure 2B. The number of molecules examined for WT and each mutant is indicated in Figure 2—figure supplement 3. For example, a total of 553 F1FO molecules (~92 million power strokes) were examined to establish the pH dependence of WT. A maximum average of 47.5% of WT power strokes from all three efficiency groups occurred at pH 5.0, which decreased with increasing pH until it plateaued at a minimum of ~22% at pH values > 7.5 (Figure 2B). The pH dependences for WT and mutants were fit to Equation 1 where T is the total average TD occurrence, Tmin is the minimum TD occurrence, and K1 and K2 are the inhibition constants that define the increase and maximum TD occurrence versus pH as the result of either a residue that is protonated with pKa1, or unprotonated with pKa2, respectively. It is noteworthy that K1 is similar to a dissociation constant because a smaller K1 increases the ability of subunit-a to bind to, and stop, c-ring rotation with decreasing pH (Figure 2—figure supplement 2). Conversely, a smaller K2 value decreases TD formation with decreasing pH because it is the unprotonated form of that residue that binds and inhibits.
+
+$$
+T=logT_{min}−log(1+\frac{K_{1}}{[H^{+}]})+log(1+\frac{K_{2}}{[H^{+}]})
+$$
 
 The fit of the data to Equation 1 defines the slope of the curve as well as the high and low plateau values. Because these are log-log plots, the pKa values (Figure 2B, dotted lines) are determined by the intercept of the slope with the high and low plateau values (solid lines). None of the mutations changed Tmin significantly. Using parameters derived by the fits of the data to Equation 1 for WT and mutants (Table 1), the WT group(s) that must be protonated to induce a TD had pKa1 and K1 of 5.6, and 6.4, respectively, while the group(s) that must be unprotonated to induce a TD had pKa2 and K2 values of 7.5 and 6.75, respectively.
+
+**Table 1.**
+ pKa values and inhibition constants for WT and subunit-a mutants.Values were derived from the fits to Equation 1 of the average percent of TDs per data set versus pH in Figure 2C.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>K1</th>
+      <th>K2</th>
+      <th>Tmin (%)</th>
+      <th>pKa1</th>
+      <th>pKa2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>6.4</td>
+      <td>6.75</td>
+      <td>22.0</td>
+      <td>5.6</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>aN214L</td>
+      <td>7.0</td>
+      <td>7.50</td>
+      <td>19.1</td>
+      <td>6.3</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>aQ252L</td>
+      <td>7.0</td>
+      <td>7.40</td>
+      <td>19.5</td>
+      <td>6.3</td>
+      <td>8.1</td>
+    </tr>
+    <tr>
+      <td>aE219L</td>
+      <td>6.9</td>
+      <td>7.35</td>
+      <td>17.8</td>
+      <td>6.2</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>aH245L</td>
+      <td>6.5</td>
+      <td>6.87</td>
+      <td>20.0</td>
+      <td>5.6</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>aE196L</td>
+      <td>6.3</td>
+      <td>6.70</td>
+      <td>20.0</td>
+      <td>5.6</td>
+      <td>7.4</td>
+    </tr>
+  </tbody>
+</table>
 
 The aN214L mutation, which had the greatest effect on the pH dependence of TD formation, increased the maximum percent of TDs formed at low pH to 61% (1.3-fold) and shifted the pH dependence in the alkaline direction from WT. These changes were due to increases in K1 and K2 to 6.4 and 6.75, respectively, that increased pKa1 and pKa2 by 0.9 and 0.7 pH units. The differential increases in K1 and K2 by 0.6 and 0.75 units led to the aN214L-dependent increase in maximum TD formation at low pH because an equal shift of these values in the same direction causes the curve to shift to higher pH values without affecting the maximum occurrence of TDs formed (Figure 2—figure supplement 2). Similar but smaller effects were observed with aQ252L and aE219L (Figure 2B) where K1 increased by 0.6 and 0.5 units, respectively, resulting in a pKa1 increase of almost 1 pH unit from that of WT. However, aQ252L and aE219L decreased K2 by 0.35 and 0.40 units from WT such that the increase in pKa2 was proportionally smaller than that observed for aN214L. Consequently, while both mutants shifted the pH dependence in the alkaline direction from that of WT, only aQ252L showed an increase in the maximum TD occurrence (52%).
 
@@ -71,7 +156,7 @@ Mutations aH245L and aE196L caused the smallest changes in the pH dependence of 
 
 In summary, mutation of residues examined in either the input or the output channel changed both the high and low pKa values of TD formation. These results support the conclusion that they participate in H+ translocation as first proposed from ensemble studies (Lightowlers et al., 1987; Cain and Simoni, 1989; Cain and Simoni, 1988; Vik et al., 1988; Lightowlers et al., 1988; Howitt et al., 1990; Eya et al., 1991; Hartzog and Cain, 1994; Hatch et al., 1995), but also show that the two channels communicate via the c-ring, which would occur if the residues in both channels support a Grotthuss-type water column connected by c-ring rotation.
 
-## Subunit-a mutations affect TD formation efficiency
+### Subunit-a mutations affect TD formation efficiency
 
 The percent of TDs observed per data set was fit to three Gaussian distributions with low (blue), medium (orange), and high (green) efficiencies as shown at pH 6.0 (Figure 2C), and at all pH values examined (Figure 2—figure supplement 3). These efficiency differences were proposed to result from elastic energy resulting from the 14° rotational mismatch between two of the three catalytic dwells and the c10-ring that supplements or subtracts from the binding energy required for subunit-a to stop F1-ATPase-driven rotation momentarily, resulting in a TD. If TDs result from H+ translocation-dependent interactions between subunit-a and the c-ring, mutations that impact H+ translocation should alter the TD formation efficiency.
 
@@ -81,23 +166,99 @@ Subunit-a mutations affected the percent of TDs formed per data set during power
 
 **Figure 3.:** Each was the average of all pH values examined (Figure 2—figure supplement 3). All of the low, medium, and high efficiences of TD formation are shown in that supplementary figure from which the averages were taken to calculate Figure 3. Vertical bars represent standard error.
 
-## Synthase-direction steps rotate CW an average of ~11°
+### Synthase-direction steps rotate CW an average of ~11°
 
 The proportion of TDs with and without a synthase-direction step for WT and mutants are shown in Figure 4A at the pH values when the proportion of synthase-direction steps was minimum (black bars) and maximum (red bars), and at all pH values examined in Figure 4—figure supplement 1. The minimum proportion of synthase-direction steps was observed at pH 5.5 for WT and all mutants except aN214L that occurred at pH 6.0. Even at these low pH values, synthase-direction steps accounted for 62–68% of all TDs. In WT, a maximum of ~80% of TDs contained synthase-direction steps at pH 7.0, which was an increase of 13% from the minimum. These plots also show the distributions of the extent of CW rotation during a synthase-direction step, for which the 11° and 9° average and median values of CW rotation, respectively, were not changed significantly by the mutations (Figure 4B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig4-v2.jpg)
+
+**Figure 4.:** (A) Distributions of the extent of CW rotation in the ATP synthesis direction during transient dwells for WT and subunit-a mutants at the low (black) and high (red) pH values indicated. (B) Mean (black) and median (red) extents of CW rotation during a synthase-direction step versus pH. (C) Distributions of the difference in extent of CW synthase-direction step rotation between pH values in Figure 2D when the percent of synthase-direction steps was maximum versus minimum where the blue line is the Gaussian fit. (D) Percent of TDs containing CW synthase-direction steps versus pH, where the data were fit to Equation 3 (black line). The fit for WT is shown as a gray line in the mutant plots. The fraction of protonated groups with pKa1 (blue line), and unprotonated groups with pKa2 (red line) versus pH was calculated from the pKa values of Table 2. (E) Percent of TDs that lack synthase-direction steps versus pH where the probability of forming a TD without a synthase-direction step (black line) was determined by Equation 2 from the fraction of protonated groups with pKa1 (blue line), and unprotonated groups with pKa2 (red line) versus pH calculated using pKa values from Table 2. The fit for WT is shown as a gray line in the mutant plots.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig4-figsupp2-v2.jpg)
+
 After subtracting the occurrence of the extent of synthase-direction step CW rotation at the pH when it was at a minimum (black bars) from that observed at other pH values (Figure 4—figure supplement 1) including that at its maximum (red bars), a Gaussian distribution of the increase in the extent of synthase-direction step CW rotation was observed (Figure 4C). During a synthase-direction step, the mean and standard deviations in the extent of CW rotation (Figure 4—figure supplement 2) was 12° ± 3° for WT, with little variation resulting from the mutations including: 11° ± 3° (aN214L), 11° ± 4° (aQ252L), 11° ± 3° (aH245L), 10° ± 3° (aE219L), and 11° ± 3° (aE196L) . In all cases, the distributions were truncated with minimum CW rotational steps of 6°. At their maxima, the extents of CW c-ring rotation during synthase events rotated 25° and 36° about 1% and 0.1% of the time, respectively.
 
-## Subunit-a mutations affect the proportion of TDs with synthase-direction steps
+### Subunit-a mutations affect the proportion of TDs with synthase-direction steps
 
 We tested the hypothesis that synthase-direction steps result when both the input and output channels are in the correct protonation state to enable H+ transfer to the carboxyl groups of the leading, and from the lagging c-subunits, respectively. If correct, the pH dependence of synthase-direction steps should follow the sum of the proportions of the protonated input and unprotonated output channels even when these pKa values change as the result of mutations. Alternatively, it was possible that the 11° rotations that we attribute to synthase-direction steps resulted instead from twisting of subunit-a and the c-ring as a single unit in response to the mismatch of the c-ring and catalytic dwell positions, which would not be subject to changes by subunit-a mutations.
 
 The subset of TDs that forced the c-ring to rotate CW (synthase-direction steps) against the CCW force of F1-ATPase rotation was pH dependent (Figure 4D). A maximum of 80% of TDs contained synthase-direction steps in WT at ~pH 7.3, and a minimum of 67% at pH 5.5. At pH values > 7.5, the proportion of synthase-direction steps decreased to 71% at pH 9.0.
 
-Because a TD either contains (TS) or lacks (TN) a synthase-direction step, the pH dependence of TDs with a synthase-direction step (Figure 4D) was the inverse of that without a synthase-direction step (Figure 4E) per Equation 2.(2)TS=1−TN
+Because a TD either contains (TS) or lacks (TN) a synthase-direction step, the pH dependence of TDs with a synthase-direction step (Figure 4D) was the inverse of that without a synthase-direction step (Figure 4E) per Equation 2.
 
-For WT, the minimum TN of 20% at pH 7.5 increased 1.7-fold and 1.5-fold at pH 5.5 and at pH 9.0, respectively. At these extremes of low and high pH values, TD formation was dominated by groups where either pKa1 is protonated or by unprotonated groups with pK2. This conclusion is supported by the good fits of the pH dependencies of TDs without synthase-direction steps for WT and subunit-a mutants (Figure 4E) to Equation 3, where the probability of forming a TD without a synthase-direction step (TN) is the sum of the probability (P1) of the protonated group(s) with pKa1 (X1), and the probability (P2) of unprotonated group(s) with pKa2 (Y2). Thus, these results support the conclusion that a TD without a synthase-direction step can result from a H+ transfer event from the protonated group with pKa1 or from a H+ transfer event to the unprotonated group with pKa2.(3)TN=P1(X1)+P2(Y2)
+$$
+T_{S}=1−T_{N}
+$$
+
+For WT, the minimum TN of 20% at pH 7.5 increased 1.7-fold and 1.5-fold at pH 5.5 and at pH 9.0, respectively. At these extremes of low and high pH values, TD formation was dominated by groups where either pKa1 is protonated or by unprotonated groups with pK2. This conclusion is supported by the good fits of the pH dependencies of TDs without synthase-direction steps for WT and subunit-a mutants (Figure 4E) to Equation 3, where the probability of forming a TD without a synthase-direction step (TN) is the sum of the probability (P1) of the protonated group(s) with pKa1 (X1), and the probability (P2) of unprotonated group(s) with pKa2 (Y2). Thus, these results support the conclusion that a TD without a synthase-direction step can result from a H+ transfer event from the protonated group with pKa1 or from a H+ transfer event to the unprotonated group with pKa2.
+
+$$
+T_{N}=P_{1}(X_{1})+P_{2}(Y_{2})
+$$
 
 Fits of the pH dependence of TDs without synthase-direction steps from Equation 3 (black line) were based on the pKa values (Figure 4E), and probabilities summarized in Table 2. The WT data fit to probabilities of 38% and 33% for protonated groups (pKa1 6.5) and unprotonated groups (pKa2 7.7), respectively, such that the difference between the pKa values was 1.2 pH units. Consequently, TN showed a minimum at ~pH 7.3, and maxima at high and low pH values when only the group(s) with either pKa1 or pKa2 were protonated and unprotonated, respectively.
+
+**Table 2.**
+ pKa values and probabilities of forming transient dwells (TDs) without synthase-direction steps for WT and subunit-a mutants.Values were derived from the fits of the data of Figure 4C to Equation 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>pKa1</th>
+      <th>P1 (%)</th>
+      <th>pKa2</th>
+      <th>P2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>6.5</td>
+      <td>38</td>
+      <td>7.7</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>aN214L</td>
+      <td>8.0</td>
+      <td>37</td>
+      <td>8.4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>aQ252L</td>
+      <td>5.9</td>
+      <td>42</td>
+      <td>6.4</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>aE219L</td>
+      <td>7.1</td>
+      <td>32</td>
+      <td>7.4</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>aH245L</td>
+      <td>7.3</td>
+      <td>33</td>
+      <td>7.7</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>aE196L</td>
+      <td>6.2</td>
+      <td>34</td>
+      <td>6.5</td>
+      <td>28</td>
+    </tr>
+  </tbody>
+</table>
 
 As a result of the subunit-a mutations, P1 values changed to a smaller extent (32–42%) than did P2 values (5–35%). Except for aE219L, all mutations decreased P2, including a >6-fold decrease with aN214L. The difference between pKa values observed with the mutants was from 0.3 to 0.5 pH units compared to the 1.2 pH unit difference of WT. Both pKa1 and pKa2 of aN214L increased by 1.5 and 0.7 pH units such that the minimum TN of ~18% at pH 8.0 represented an increase of 0.7 pH units from that of WT. At pH 5.5, TNs comprised 38% of all TDs in aN214L. A similar but smaller shift of the minimum TN occurrence to pH 7.5 was also observed for aH245L, which primarily resulted from an increase in pKa1 by 0.8 pH units from WT. A striking effect of mutations aQ252L, aE219L, and aE196L was that they suppressed the pH dependence of synthase-direction step formation. Of these, aE219L was most suppressed where TS varied between 66% and 71% of TDs over the pH range examined.
 
@@ -107,7 +268,7 @@ In all cases, the occurrence of synthase-direction steps reached a maximum at th
 
 The results presented here provide new insight into the mechanism by which the FO motor uses the energy from H+ translocation to generate CW rotational torque on the c-ring to catalyze ATP synthesis. These studies support the hypothesis that residues associated with the half-channels work together to support a water column that transfers protons across the membrane in a coherent manner coupled to c-ring rotation in lieu of transferring protons directly and independently. These single-molecule investigations also tested the hypothesis that c-rotation operates via a Brownian ratchet versus a power stroke mechanism, and the results provide the first direct evidence that synthase-direction steps can occur by both mechanisms. Finally, the results presented here show that the proton translocation-dependent synthase-direction rotation occurs in 11° steps. These results do not support the hypothesis that the function of the essential aR210 is to deprotonate cD61 because recent FO structures show that the unprotonated lagging cD61 carboxyl is still 7.3 Å away from aR210 after an 11° c-ring rotation. Alternatively, an alternating two-step mechanism is proposed below to resolve this discrepancy.
 
-## FO uses a Grotthuss mechanism to translocate protons through both half-channels
+### FO uses a Grotthuss mechanism to translocate protons through both half-channels
 
 The results presented here support a Grotthuss mechanism in FO where water columns in each half-channel communicate via rotation-dependent H+ transfer to and from the leading and lagging c-ring cD61 carboxyls. The coherent behavior of the water columns enables the release of a H+ to the cytoplasm concurrent with each H+ that enters the subunit-a input channel from the periplasm. This conclusion is supported by observations that: (i) ATP synthase-direction steps were maximal in WT and mutants when the fractions of protonated groups and unprotonated groups with low and high pKa values, respectively, were optimal for H+ transfer both from the lagging cD61 to the output channel and from the leading cD61 to the input channel; (ii) mutation of a residue from either the input or output channel altered both the low and high pKa values of TDs indicating that the channels communicate; (iii) all mutations changed the ability to form TDs, indicating all the groups examined participate; and (iv) none of the mutations completely eliminated the ability to form TDs.
 
@@ -117,9 +278,17 @@ A recent F1FO structure from bovine mitochondria was of sufficient resolution to
 
 Additional structural evidence that supports the existence of a Grotthuss H+ translocation mechanism (Figure 5) is the presence of an ~30 Å diameter funnel that is lined with carboxylate and imidazole residues as the funnel narrows (Figure 5). The aE219-carboxyl examined here, which we propose to be the start of the Grotthuss column is positioned at the apex of this funnel. A Grotthuss mechanism was first proposed to explain extremely high rates of FO-dependent H+ translocation across R. capsulatus membranes (Feniouk et al., 2004). The rates were so fast that an ~40 Å diameter Coulomb cage of charged and polar groups was proposed to be required to serve as a H+ ‘antenna’ to increase the delivery rate of protons from the aqueous solution to the entrance of the input channel water column (Wraight, 2006).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig5-v2.jpg)
+
+**Figure 5.:** (A) Transmembrane view of Escherichia coli FO (pdb-ID 6OQR) showing the path of charged and polar residues across the membrane. Outlines indicate space occupied by hydrophobic residues in subunit-a (black line), subunit-b1 (blue line), and subunit-b2 (orange line). The inner surface of the funnel, which is lined with polar residues and loop regions (green), acidic groups (red), and histidines (blue) from subunit-a and the subunit-b1 N-terminus, is exposed to the periplasm at its wide end that narrows to aE219 (yellow) at the bottom. The input channel (yellow) extends from aE219 to aN214 and aQ252, which are proximal to aR210. Between aR210 and the output channel (dark blue) the leading (pink) and lagging (orange) cD61 groups rotate through a vestibule lined above and below the cD61 rotation plane by polar sidechains (light blue) that decrease the dielectric constant of the vestibule from that of the lipid bilayer. A protonated cD61 exposed to the lipid bilayer (yellow) is also visible. (B) Periplasmic surface of FO showing the interior surface of the funnel (orange oval) lined with charged and polar groups from subunit-a and subunit-b1 as in A that narrows to aE219 (yellow) at the bottom where the input channel begins. Hydrophobic residues are shown of subunit-a (gray), subunits-b1 and -b2 (black), and the c-ring (white). The cY3 sidechains (orange) are shown to indicate the orientation of the periplasmic surface of the c-ring.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sequences were aligned relative to essential Escherichia coli residues aR210 (blue) in the penultimate helix (helix IV), and with highly conserved aQ252 in the ultimate helix (helix V). Residues associated with the input channel (green), the output channel (pink), and the vestibule (yellow). Sequences are from the following species with their names indicated on the left: ESCCO, Escherichia coli; HOMSA, Homo sapiens; BOSTA, Bos taurus; SUSSC, Sus scrofa; MYCPH, Mycobacterium phlei; TETTH, Tetrahymena thermophila mitochondrial; POLPR, Polytomella sp. Pringsheim 198.80 mitochondrial; PICAN, Pichia angusta mitochondrial; EUGGR-M, Euglena gracilis mitochondrial; EUGGR-C, Euglena gracilis chloroplast; YARLI, Yarrowia lipolytica mitochondrial; SACCE, Saccharomyces cerevisiae mitochondrial; TOXGO, Toxoplasma gondii; GEOST, Geobacillus stearothermophilus; ACEWO, Acetobacterium woodii (Na+); ILYTA, Ilyobacter tartaricus (Na+); FUSNU, Fusobacterium nucleatum; PARDE, Paracoccus denitrificans; HELMO, Heliobacter modesticaldum unicellular photosynthetic; ENTHI, Enterococcus hirae (V/A-type Na+); THETH, Thermus thermophilus (V/A-type); BACPS, Bacillus pseudofirmus OF4 (Alkalihalobacillus pseudofirmus); BACTA, Bacillus sp. Strain TA2.A1 (thermoalkalophilic); PISSA-C, Pisum sativum chloroplast; SPIOL-C, spinacia oleracea chloroplast, ART09.13F, Arthrospira sp. 09.13 F; BURPS, Burkholderia pseudomallei.
+
 The results presented here indicate that multiple residues contribute to the pKa values that enable synthase-direction steps. The funnel extends the input channel from the residues investigated here that are located near the middle of the membrane to the periplasm, which provides the ultimate supply of protons to the c-ring. The charged and polar residues in the funnel are likely to contribute to the pKa value, and may also facilitate the protonation of the input channel relative to the output channel even though both half-channels are exposed to the same buffer as the result of the lipid bilayer nanodiscs employed. More work is necessary to address this issue.
 
-## FO undergoes H+ translocation-dependent 11° c-ring synthase-direction rotation steps
+### FO undergoes H+ translocation-dependent 11° c-ring synthase-direction rotation steps
 
 The extent of rotation during ATP synthase-direction steps was unexpectedly found to rotate CW by 11° in the WT and all mutants. Evidence presented here supports the conclusion that synthase-direction steps result from protonation of the leading cD61 from the input channel and from deprotonation of the lagging cD61 to the output channel to rotate the c-ring relative to subunit-a. These results include that: (i) synthase-direction steps depend on a group of residues with a low pKa that must be protonated, and a second group with a high pKa that must be unprotonated; (ii) formation of synthase-direction steps reached a maximum at the pH when the fractions of protonated groups with the low pKa and unprotonated groups with the high pKa were optimal; and (iii) mutating subunit-a residues in either the input or output half-channels altered both high and low pKa values, and altered the extent and pH dependence of synthase-direction step formation. The effects of the subunit-a mutants on the synthase-direction steps rule out the possibility that these steps result from twisting the entire FO relative to F1.
 
@@ -133,7 +302,7 @@ A mechanism where FO uses alternating 11° (Figure 6A,B) and 25° (Figure 6B,C) 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70016/elife-70016-fig6-v2.jpg)
 
-**Figure 6.:** O c-ring ATP synthase-direction rotation.(A) The pH-dependent 11° sub-step occurs when H+ transfer from aN214/aQ25-bound water to the unprotonated leading cD61-carboxyl (pink), and from the protonated lagging cD61-carboxyl (orange) to aS199/aE196-bound water. Upon displacement from aR210 by protonation, leading cD61 adopts the closed conformation to enable rotation into the lipid bilayer (yellow). Due to coherent H+ movement in the Grotthuss column, each H+ entering the input channel (green) from the funnel causes a H+ to exit the output channel (blue) to the cytoplasm. Rotation occurs when lagging cD61 is deprotonated because the negatively charged carboxyl moves in response to the decrease in hydrophobicity from the lipid bilayer to the water-containing vestibule (blue), and from the electrostatic attraction to aR210. This decreases the distance between the lagging cD61 carboxyl and the aR210-guanidinium from ~11.5 to ~7.5 Å. (B) The 25° sub-step occurs primarily from the electrostatic interaction between the lagging cD61 carboxy (orange) and the aR210-guanidinium. (C) Electrostatic attraction decreases the distance between orange cD61 and aR210 from ~7.5 to ~3.5 Å to complete a 36° stepwise c-ring rotation, which positions the orange cD61 to become the leading carboxyl for the next pH-dependent 11° sub-step. Escherichia coli F1FO cryo-EM structures of rotary sub-states pdb-IDs 5OQS (A and C), and 5OQR (B) are shown as cross-sections of FO with hydrophobic resides of subunit-a (brown) and the c-ring (gray) along the plane defined by cD61 groups as viewed from the periplasm. Protons are alternately colored black and white to show the progression of proton transfer events.
+**Figure 6.:** (A) The pH-dependent 11° sub-step occurs when H+ transfer from aN214/aQ25-bound water to the unprotonated leading cD61-carboxyl (pink), and from the protonated lagging cD61-carboxyl (orange) to aS199/aE196-bound water. Upon displacement from aR210 by protonation, leading cD61 adopts the closed conformation to enable rotation into the lipid bilayer (yellow). Due to coherent H+ movement in the Grotthuss column, each H+ entering the input channel (green) from the funnel causes a H+ to exit the output channel (blue) to the cytoplasm. Rotation occurs when lagging cD61 is deprotonated because the negatively charged carboxyl moves in response to the decrease in hydrophobicity from the lipid bilayer to the water-containing vestibule (blue), and from the electrostatic attraction to aR210. This decreases the distance between the lagging cD61 carboxyl and the aR210-guanidinium from ~11.5 to ~7.5 Å. (B) The 25° sub-step occurs primarily from the electrostatic interaction between the lagging cD61 carboxy (orange) and the aR210-guanidinium. (C) Electrostatic attraction decreases the distance between orange cD61 and aR210 from ~7.5 to ~3.5 Å to complete a 36° stepwise c-ring rotation, which positions the orange cD61 to become the leading carboxyl for the next pH-dependent 11° sub-step. Escherichia coli F1FO cryo-EM structures of rotary sub-states pdb-IDs 5OQS (A and C), and 5OQR (B) are shown as cross-sections of FO with hydrophobic resides of subunit-a (brown) and the c-ring (gray) along the plane defined by cD61 groups as viewed from the periplasm. Protons are alternately colored black and white to show the progression of proton transfer events.
 
 The low, medium, and high efficiencies of TD formation reported here (Figure 2B) were attributed to torsional strain resulting from the asymmetry between 36° c10-ring stepping, and the 120 ° F1 power strokes (Yanagisawa and Frasch, 2017; Sielaff et al., 2019). Based on this asymmetry observed in ADP-inhibited F1FO structures (Sobti et al., 2016), high efficiency TD formation was proposed to occur (Sielaff et al., 2019) in the rotary state comparable to that in which rotary sub-state structures PDB-IDs 6OQR and 6OQS were subsequently observed at 3.1 Å resolution (Sobti et al., 2020). Sobti et al., 2020, concurred that torsional strain contributed to their ability to resolve the 6OQR and 6OQS sub-state structures. However, in results presented here, catalytically active F1Fo in lipid bilayer nanodiscs show successive 11° ATP synthase-direction steps every 36° including at the rotary position of the ATPase power stroke where ADP inhibits rotation (Figure 2A, dashed line). Because ATP synthase-direction steps can also occur with low efficiency when torsional strain decreases the probability of forming a synthase-direction step, it is clear that torsional strain is not the primary contributing factor to the ability of FO to undergo 11° ATP synthase-direction steps.
 
@@ -143,15 +312,23 @@ The probability that a TD occurs may appear to be stochastic. However, its occur
 
 Evidence supports the hypothesis that the energy for F1-ATPase power strokes is derived from ATP binding-dependent closure of the β-subunit lever domain upon subunit-γ, which is initiated at ~36° after the catalytic dwell in E. coli F1 (Martin et al., 2014). Based on the KD of ATP at 36° measured in Geobacillus stearothermophilus F1, the energy available for the power stroke from ATP binding is ~13.5 kBT (Adachi et al., 2012).
 
-The results here suggest that the energy required to power the 11° synthase-direction step is close to that of the F1-ATPase power stroke including: (i) that some synthase-direction steps oscillate consistent with a Brownian ratchet, especially those steps that occur late in the F1 power stroke when the affinity for ATP is the highest; and (ii) that TD formation efficiency is increased or decreased (high and low efficiencies) by the 0.4 kBT of torsional energy from the ±14° rotary mismatch between F1 and FO calculated from Equation 4, where θ is the rotational displacement in radians using the spring constant, κ, of 12.6 kBT radian–2 measured for E. coli F1FO(Sielaff et al., 2008).(4)U=0.5κθ2
+The results here suggest that the energy required to power the 11° synthase-direction step is close to that of the F1-ATPase power stroke including: (i) that some synthase-direction steps oscillate consistent with a Brownian ratchet, especially those steps that occur late in the F1 power stroke when the affinity for ATP is the highest; and (ii) that TD formation efficiency is increased or decreased (high and low efficiencies) by the 0.4 kBT of torsional energy from the ±14° rotary mismatch between F1 and FO calculated from Equation 4, where θ is the rotational displacement in radians using the spring constant, κ, of 12.6 kBT radian–2 measured for E. coli F1FO(Sielaff et al., 2008).
 
-Consequently, the FO motor must have at least 13.5 kBT available to cause a TD. Possible sources of energy for TDs in addition to the 0.4 kBT of torsional energy include: (i) as much as 4.4 kBT from the difference of pKa values between the input and output channels; (ii) 5.9 kBT from the exclusion of the lagging charged cD61 carboxyl from the lipid bilayer into the aqueous vestibule, based on its measured desolvation energy (White and Wimley, 1999). The energy penalty of 0.8 kBT to insert the leading protonated cD61 carboxyl into the lipid bilayer is avoided by its conversion to the closed and locked position in the c-ring (Pogoryelov et al., 2010); and (iii) as much as 38.1 kBT from the electrostatic attraction of aR210 to unprotonated lagging cD61 at a distance of 11.5 Å when it is exposed directly to the lipid bilayer. The energy of this attractive force, which is highly dependent on the hydrophobicity of its environment, is calculated by the modified Coulomb equation (Equation 5), where qi and qj are elementary charges, rij is the interatomic distance (in Ångstroms), and e is the dielectric constant, which is a measure of the hydrophobicity of the environment that ranges from 2 (lipid bilayer) to 80 (aqueous solvent). Although we do not yet know how wet the vestibule is, a dielectric constant of 13 and an 11.5 Å aR210-cD61 distance results in 3.8 kBT, which when summed with the other energy sources totals 14.1 kBT without input of torsional energy. Since F1-ATPase rotation from the catalytic dwell to the point that ATP binds is powered by no more than 4 kBT (Martin et al., 2018), this explains why synthase-direction rotation at these rotational positions typically has power stroke characteristics.(5)U=1e(qiqjrij)561 κBT
+$$
+U=0.5κ\theta^{2}
+$$
+
+Consequently, the FO motor must have at least 13.5 kBT available to cause a TD. Possible sources of energy for TDs in addition to the 0.4 kBT of torsional energy include: (i) as much as 4.4 kBT from the difference of pKa values between the input and output channels; (ii) 5.9 kBT from the exclusion of the lagging charged cD61 carboxyl from the lipid bilayer into the aqueous vestibule, based on its measured desolvation energy (White and Wimley, 1999). The energy penalty of 0.8 kBT to insert the leading protonated cD61 carboxyl into the lipid bilayer is avoided by its conversion to the closed and locked position in the c-ring (Pogoryelov et al., 2010); and (iii) as much as 38.1 kBT from the electrostatic attraction of aR210 to unprotonated lagging cD61 at a distance of 11.5 Å when it is exposed directly to the lipid bilayer. The energy of this attractive force, which is highly dependent on the hydrophobicity of its environment, is calculated by the modified Coulomb equation (Equation 5), where qi and qj are elementary charges, rij is the interatomic distance (in Ångstroms), and e is the dielectric constant, which is a measure of the hydrophobicity of the environment that ranges from 2 (lipid bilayer) to 80 (aqueous solvent). Although we do not yet know how wet the vestibule is, a dielectric constant of 13 and an 11.5 Å aR210-cD61 distance results in 3.8 kBT, which when summed with the other energy sources totals 14.1 kBT without input of torsional energy. Since F1-ATPase rotation from the catalytic dwell to the point that ATP binds is powered by no more than 4 kBT (Martin et al., 2018), this explains why synthase-direction rotation at these rotational positions typically has power stroke characteristics.
+
+$$
+U=\frac{1}{e}(\frac{q_{i}q_{j}}{r_{ij}})561 κ_{B}T
+$$
 
 After the 25° rotation step when the unprotonated cD61-aR210 distance is 3.8 Å, the electrostatic force is 11.4 kBT or 73.8 kBT when the dielectric constant is 13 or 2, respectively. Thus, the electrostatic interaction in a hydrophobic environment would be far too strong for any rotation to occur. More work is required to quantify the energetics of these sub-steps in the ATP synthesis mechanism because, when understood in combination with the steady-state pmf values and the dissociation constants of ATP, ADP, and Pi versus rotary position, these energy contributions will determine the non-equilibrium ATP/ADP•Pi concentration ratio that can be maintained by F1FO at steady-state in vivo.
 
 ## Materials and methods
 
-## Mutagenesis and purification of nanodisc FOF1
+### Mutagenesis and purification of nanodisc FOF1
 
 The FO subunit-a mutant plasmids were constructed from the pNY1-Ase plasmid containing the entire unc operon with a 6-His tag on the N-terminus of subunit-β and a cysteine inserted at the second position of subunit c (c2∇Cys), described previously by Ishmukhametov et al., 2010. The aN214L, aQ252L, aH245L, aE219L, and aE196L mutations were made on the plasmid using QuikChangesII-XL Site-Directed Mutagenesis Kit (Agilent). E. coli strain DK8, which lacks the unc operon, was transformed with the mutant plasmid. Cells were grown in 8 L of LB medium containing 50 μg/mL of ampicillin while shaking at 170 rpm at 37°C. About 40 g wet weight of cells was pelleted by centrifugation at 7700× g for 10 min at 4°C and stored at –80°C.
 
@@ -159,6 +336,6 @@ All subsequent steps were carried out at 4°C. The cell pellet was thawed, resus
 
 To form nanodiscs, membrane scaffold protein MSP-1E3D1 was used. The MSP was prepared by removing the His-tag with overnight TEV protease digestion at room temperature (at 25:1 ratio, w/w). Cleaved MSP was purified by passing through a Ni-NTA column. To incorporate the FOF1 into nanodiscs, a 1:4 molar ratio of FOF1:MSP was mixed with the addition of 10% stock sodium cholate in Extraction buffer to make the final sodium cholate concentration of 1%. To biotinylate the cysteine residue inserted at the N-terminus of subunit c, a 10-fold molar excess of biotin maleimide was added to FOF1. The mixture was gently shaken for 15 min to form biotinylated FOF1 nanodisc. The sample was desalted by running through a Sephadex G-50 column equilibrated with Buffer A containing 6% (v/v) glycerol, 50 mM Tris-HCl (pH 8.0), 100 mM NaCl, 4 mM p-aminobenzamidine, and 5 mM MgCl2. The sample was aliquoted into 50 μL and quick frozen with liquid nitrogen until use. The presence of all F1FO subunits and the MSP in each preparation was confirmed by SDS-PAGE.
 
-## Gold-nanorod single-molecule experiments
+### Gold-nanorod single-molecule experiments
 
 Rotation of individual nanodisc FOF1 molecules were observed by single-molecule rotation assay. Sample slides were prepared with modifications of previously described methods (Yanagisawa and Frasch, 2017). Briefly, purified nanodisc FOF1 were immobilized on a microscope slide by the His-tag on subunit-β, unbound enzymes were washed off the slide with wash buffer (30 mM Tris, 30 mM PIPES, 10 mM KCl, at the appropriate pH), 80 × 40 nm AuNR coated with avidin was bound to the biotinylated c-ring of E. coli nanodisc FOF1, excess AuNRs were washed off with the wash buffer, and rotation buffer (1 mM Mg2+ ATP, 30 mM Tris, 30 mM PIPES, 10 mM KCl, at the pH indicated) was added to the slide. The rotation of individual molecules was observed by measuring the change in intensity of polarized red light scattered from the AuNR using a single-photon detector. In each molecule observed, the rotation of the nanorod attached to an active nanodisc FOF1 complex was confirmed by the change in scattered light intensity as a function of the rotational position of the polarizing filter as described previously (Spetzler et al., 2006; Hornung et al., 2011). To make the measurement of nanodisc FOF1 undergoing power strokes, the orientation of the polarizing filter was adjusted to align with the minimum light intensity position that that corresponded to one of the three catalytic dwells. The sinusoidal change of polarized red light intensity was measured as the AuNR rotated from 0° to 90° relative to the catalytic dwell position. Measurements were taken in the form of 5 s data set at frame rate of 100 kHz. The occurrence of TDs in each subunit-a mutant was analyzed at varying pH from 5.0 to 8.0. TDs that occurred during the power strokes in the recorded data sets were analyzed by determining the arcsin1/2 of the intensity at each time point (Martin et al., 2018; Martin et al., 2015 Sielaff et al., 2016).

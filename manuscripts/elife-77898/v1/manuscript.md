@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03sfybe47 Canada's Michael Smith Genome Sciences Centre, BC Cancer Agency Vancouver Canada
-2. https://ror.org/03rmrcq20 Department of Medical Genetics, University of British Columbia Vancouver Canada
-3. https://ror.org/03rmrcq20 Department of Microbiology and Immunology, Michael Smith Laboratories, University of British Columbia Vancouver Canada
+1. Canada's Michael Smith Genome Sciences Centre, BC Cancer Agency Vancouver Canada ([ROR:03sfybe47](https://ror.org/03sfybe47))
+2. Department of Medical Genetics, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+3. Department of Microbiology and Immunology, Michael Smith Laboratories, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
 
 † Corresponding author
 
 ## Abstract
 
-Imprinting is a critical part of normal embryonic development in mammals, controlled by defined parent-of-origin (PofO) differentially methylated regions (DMRs) known as imprinting control regions. Direct nanopore sequencing of DNA provides a means to detect allelic methylation and to overcome the drawbacks of methylation array and short-read technologies. Here, we used publicly available nanopore sequencing data for 12 standard B-lymphocyte cell lines to acquire the genome-wide mapping of imprinted intervals in humans. Using the sequencing data, we were able to phase 95% of the human methylome and detect 94% of the previously well-characterized, imprinted DMRs. In addition, we found 42 novel imprinted DMRs (16 germline and 26 somatic), which were confirmed using whole-genome bisulfite sequencing (WGBS) data. Analysis of WGBS data in mouse ( Mus musculus ), rhesus monkey ( Macaca mulatta ), and chimpanzee ( Pan troglodytes ) suggested that 17 of these imprinted DMRs are conserved. Some of the novel imprinted intervals are within or close to imprinted genes without a known DMR. We also detected subtle parental methylation bias, spanning several kilobases at seven known imprinted clusters. At these blocks, hypermethylation occurs at the gene body of expressed allele(s) with mutually exclusive H3K36me3 and H3K27me3 allelic histone marks. These results expand upon our current knowledge of imprinting and the potential of nanopore sequencing to identify imprinting regions using only parent-offspring trios, as opposed to the large multi-generational pedigrees that have previously been required.
+Imprinting is a critical part of normal embryonic development in mammals, controlled by defined parent-of-origin (PofO) differentially methylated regions (DMRs) known as imprinting control regions. Direct nanopore sequencing of DNA provides a means to detect allelic methylation and to overcome the drawbacks of methylation array and short-read technologies. Here, we used publicly available nanopore sequencing data for 12 standard B-lymphocyte cell lines to acquire the genome-wide mapping of imprinted intervals in humans. Using the sequencing data, we were able to phase 95% of the human methylome and detect 94% of the previously well-characterized, imprinted DMRs. In addition, we found 42 novel imprinted DMRs (16 germline and 26 somatic), which were confirmed using whole-genome bisulfite sequencing (WGBS) data. Analysis of WGBS data in mouse (Mus musculus), rhesus monkey (Macaca mulatta), and chimpanzee (Pan troglodytes) suggested that 17 of these imprinted DMRs are conserved. Some of the novel imprinted intervals are within or close to imprinted genes without a known DMR. We also detected subtle parental methylation bias, spanning several kilobases at seven known imprinted clusters. At these blocks, hypermethylation occurs at the gene body of expressed allele(s) with mutually exclusive H3K36me3 and H3K27me3 allelic histone marks. These results expand upon our current knowledge of imprinting and the potential of nanopore sequencing to identify imprinting regions using only parent-offspring trios, as opposed to the large multi-generational pedigrees that have previously been required.
 
 ## Introduction
 
@@ -35,25 +35,437 @@ To detect imprinted methylation, accurate assignment of methylation data to pate
 
 Previously, we have shown that nanopore sequencing can detect allelic methylation in a single sample and accurately determine PofO using only trio data. We also previously developed the software NanoMethPhase for this purpose (Akbari et al., 2021). Here, we applied NanoMethPhase to public nanopore data from a diverse set of 12 lymphoblastoid cell lines (LCLs) from the 1000 Genomes Project (1KGP) and Genome in a Bottle (GIAB) to investigate genome-wide allele-specific methylation (ASM) and detect novel imprinted DMRs (Figure 1A; Auton et al., 2015; De Coster et al., 2019; Jain et al., 2018; Shafin et al., 2020; Zook et al., 2016; Zook et al., 2019). Using trio data from GIAB and 1KGP for these cell lines, we phased nanopore long reads to their PofO and inferred allelic methylation (Akbari et al., 2021; Auton et al., 2015; Zook et al., 2019). We were able to detect haplotype and methylation status for 26.5 million autosomal CpGs comprising 95% of the human autosomal methylome (GRCh38 main chromosomes). We further used public whole-genome bisulfite sequencing (WGBS) data to confirm the presence of the detected DMRs in other tissues and to classify the novel DMRs as germline or somatic. We captured 94% of the well-characterized DMRs and detected 42 novel DMRs (16 gDMRs and 26 sDMRs). Of these novel DMRs, 40.5% show evidence of conservation. We also detected seven blocks of PofO methylation bias at seven imprinted clusters with mutual exclusive allelic H3K36me3 and H3K27me3 histone marks. Collectively, our results extend the set of known imprinted intervals in humans and demonstrate a major contribution in our ability to characterize imprinting by ASM, brought about by the capabilities of long-read nanopore sequencing.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig1-v1.jpg)
+
+**Figure 1.:** (a) Flowchart of the study representing all the analysis steps. (b) Pearson correlation matrix of the nanopore CpG methylation frequencies for the 12 cell lines and NA12878 whole-genome bisulfite sequencing (WGBS) from ENCODE (ENCFF835NTC). (c) Upset plot of the number of differentially methylated regions (DMRs) detected in our study and previous studies, including overlaps.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** To calculate coverage, the genome length is considered as 3.2G.
+
 ## Results
 
-## Assessing the effectiveness of nanopore methylation calling and detection of known imprinted DMRs
+### Assessing the effectiveness of nanopore methylation calling and detection of known imprinted DMRs
 
 Using the set of 12 LCLs for which we called methylation data, we conducted correlation analysis among nanopore-called methylation data and another WGBS dataset for NA12878 cell line (ENCFF835NTC) to confirm the reliability of methylation calling (Figure 1B). We observed high correlation across cell lines (r=0.75–0.93), as expected as they were the same cell type. NA12878 nanopore-called methylation also showed the highest correlation (r=0.89) with NA12878 WGBS, as expected (Figure 1B). To assess the use of nanopore long reads in detecting known DMRs, we identified previously reported DMRs, including 383 imprinted intervals (Court et al., 2014; Hernandez Mora et al., 2018; Joshi et al., 2016; Zink et al., 2018). Of these 383, we classified 68 as ‘well-characterized’ as they were reported by at least two genome-wide mapping studies or were previously known to be imprinted (Supplementary file 1). Subsequently, we haplotyped the methylome in each cell line, and performed differential methylation analysis (DMA) between alleles across cell lines; 95% (26.5M) of the human autosomal CpGs could be assigned to a haplotype. We detected 200 allelic DMRs (p-value <0.001, |methylation difference|>0.20, and detected in at least four cell lines in each haplotype) (Supplementary file 2). Out of the 200 detected DMRs, 101 overlapped with 103 previously reported DMRs with consistent PofO (Supplementary file 3), while the remaining 99 were novel (Figure 1C). Of the well-characterized DMRs, 64/68 (94%) were detected in our study (Figure 1C; Supplementary file 3).
 
 Similarly, we assessed methylation haplotyping and detection of imprinted DMRs within a single sample. On average, 90% (M ± SD = 25 M ± 1.61 M) of the human methylome could be assigned to a parental haplotype in each cell line (Figure 1—figure supplement 1). Among the well-characterized DMRs, ~73% (M ± SD = 49.5 ± 4.5) could be detected in a single cell line. An additional 33 DMRs (SD = 9.6) reported by only one previous study were detected in each cell line (Figure 1—figure supplement 1).
 
-## Confirmation of novel imprinted DMRs
+### Confirmation of novel imprinted DMRs
 
 We detected 99 imprinted DMRs that did not overlap with previously reported imprinted DMRs (Court et al., 2014; Hernandez Mora et al., 2018; Joshi et al., 2016; Zink et al., 2018). In order to confirm these DMRs in human tissues and detect potential novel imprinted regions, we investigated WGBS datasets for partial methylation at nanopore-detected DMRs (Materials and methods). We used 60 WGBS datasets from 29 tissue types and 119 blood samples from 87 individuals (Bernstein et al., 2010; ENCODE Project Consortium, 2012; Stunnenberg et al., 2016). We first examined the 68 well-characterized DMRs, 91% of them demonstrated partial methylation (more than 60% of the CpGs at the DMR having between 0.35 and 0.65 methylation) in at least one tissue and individual blood samples (Figure 2A and B). As controls, we used 100 randomly selected 1, 2, 3 kb bins, and CpG islands (CGIs) in 100 resampling iterations. Of these, 0.65%, 0.74%, 2.28%, and 4.83% of the randomly selected 3, 2, 1 kb, and CGIs, respectively, demonstrated partial methylation (Figure 2—figure supplement 1). Applying this approach to the 99 previously unreported DMRs, the WGBS data supported 42 of the novel DMRs (Figure 2, Table 1). In agreement with previous studies reporting a higher number of maternally methylated intervals (Court et al., 2014; Hernandez Mora et al., 2018; Joshi et al., 2016), 74% of the novel DMRs were maternally methylated. Overall, we detected 143 imprinted DMRs of which 101 were found to overlap with previously reported DMRs while 42 were novel DMRs detected by nanopore and confirmed using WGBS data (Figure 2C, Supplementary file 4).
 
-## Novel imprinted DMRs display inter-individual variation
+![Figure 2.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig2-v1.jpg)
+
+**Figure 2.:** (a) and (b) Violin plots representing the average methylation of each DMR in WGBS tissue and blood samples. (c) Idiogram of the 101 DMRs overlapping to reported intervals and 42 novel DMRs which were confirmed by WGBS. Paternally methylated DMRs are labelled on the left side of each chromosome while maternally methylated DMRs are on the right. Red labels represent germline DMRs while blue labels represent somatic DMRs. Novel DMRs are boxed and named based on their nearest gene (Ensembl Gene 103 GRCh38.p13).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig2-figsupp1-v1.jpg)
+
+**Table 1.**
+ Forty-two detected imprinted differentially methylated regions (DMRs) from nanopore data and confirmed using whole-genome bisulfite sequencing (WGBS) data.DMRs are named after the nearest gene (EnsemblGene 103 GRCh38.p13).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>DMR name</th>
+      <th>Origin</th>
+      <th>Type</th>
+      <th>Distance to nearest imprinted gene</th>
+      <th>% Individuals with partial methylation</th>
+      <th>% Tissues with partial methylation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>22</td>
+      <td>AC024940.1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>0</td>
+      <td>15.9</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>DDA1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>0</td>
+      <td>7.3</td>
+      <td>15.4</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>ACTL10;NECAB3</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>0</td>
+      <td>3.7</td>
+      <td>8.7</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>SYCE1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>3.2 kb</td>
+      <td>4</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>FAM83H</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>149 kb</td>
+      <td>48.8</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>OPCML</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>744.1 kb</td>
+      <td>45.1</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>YBX2P1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>3.7</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>NALCN-AS1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>30.5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>PTGDR</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>8.4</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>AATK</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>23.2</td>
+      <td>9.1</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>MIR7-3HG</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>8.1</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>AC007391.3</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>37.2</td>
+      <td>60.7</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>C4orf50</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>14.5</td>
+      <td>22.2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>CPLANE1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>2.3</td>
+      <td>7.1</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>SPTLC1</td>
+      <td>Maternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>5.8</td>
+      <td>48.1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>BMP8A</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>0</td>
+      <td>4.5</td>
+      <td>26.1</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>LPAR6;RB1</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>0</td>
+      <td>2.3</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>ZNF714</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>0</td>
+      <td>43.9</td>
+      <td>29.6</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>BTBD7P1</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>73.5</td>
+      <td>55.6</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>ANKRD2</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>34.1</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>GJA3</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>25.6</td>
+      <td>21.4</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>RANBP20P</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>28</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>NFE2L3P1</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>29.3</td>
+      <td>44.4</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>AL096828.3</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>50</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>SLC5A1</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>56.1</td>
+      <td>25.9</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>TMEM232</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>25.6</td>
+      <td>37.9</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>NME5</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>22.1</td>
+      <td>10.7</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>AC092634.8</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>6.1</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>CDRT15P6</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>12.7</td>
+      <td>5.6</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>TMOD1</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>35.4</td>
+      <td>14.8</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>LHX6</td>
+      <td>Maternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>44.6</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>MIR6085</td>
+      <td>Paternal</td>
+      <td>Germline</td>
+      <td>&gt;2 Mb</td>
+      <td>27.1</td>
+      <td>25.9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>PAX8;PAX8-AS1</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>0</td>
+      <td>24.4</td>
+      <td>32.1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ZDBF2</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>0</td>
+      <td>53.6</td>
+      <td>58.6</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>SNHG14</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>3 kb</td>
+      <td>4.7</td>
+      <td>37.9</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>AC092296.3</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>90 kb</td>
+      <td>1.2</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>RIMBP3</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>296 kb</td>
+      <td>17.4</td>
+      <td>11.1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>RNU6-293P</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>1.03 Mb</td>
+      <td>65.1</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>PARP11</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>10.8</td>
+      <td>22.2</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>UBAC2</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>1.2</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>CFAP161</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>22.4</td>
+      <td>6.9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>MIR4456</td>
+      <td>Paternal</td>
+      <td>Somatic</td>
+      <td>&gt;2 Mb</td>
+      <td>11.3</td>
+      <td>22.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Novel imprinted DMRs display inter-individual variation
 
 Although imprinted methylation is generally regarded as consistent between individuals and resistant to environmental factors, there are examples of polymorphic imprinting where imprinted methylation is not consistently observed across individuals. In order to assess the inter-individual variation of the novel imprinted DMRs, we examined partial methylation in the 119 blood samples from 87 individuals. Some imprinted DMRs such as VTRNA2-1, IGF2, RB1, PARD6G, CHRNE, and IGF2R are known to be polymorphic (Joshi et al., 2016; Zink et al., 2018). The detected DMRs that mapped to these imprinted regions displayed partial methylation in 2–65% of the individuals in our analysis (M ± SD = 40% ± 22%; Supplementary file 5). ZNF331 DMR is known to be consistently imprinted across individuals (Zink et al., 2018). In our analysis, the DMR that mapped to ZNF331 reported interval displayed partial methylation in 99% of the individuals (Supplementary file 5). We then examined inter-individual variation across the 42 novel DMRs. Imprinted methylation at all the novel DMRs demonstrated variation ranging from 1.2% to 73.5% of the individuals (M ± SD = 23.6% ± 19.2%; Table 1). Among the novel DMRs, maternal sDMR near BTBD7P1 is the most consistent with partial methylation in 73.5% of the individuals (Table 1). On the other hand, the novel paternal sDMRs within AC092296.3 and UBAC2 are the most variable with partial methylation in 1.2% of the individuals (Table 1). Among the individuals, four displayed hypermethylation at several of the well-characterized and novel DMRs (Figure 2B), in line with a previous study that identified rare individuals with consistent hyper- or hypomethylation at dozens of imprinted loci, indicative of a generalized imprinting disruption (Joshi et al., 2016).
 
 As demonstrated in Figure 1C, a considerable number of imprinted DMRs detected in different studies are not overlapping between studies. Different studies used different samples and individuals, therefore, we examined inter-individual variation at DMRs detected in two or more studies (including the current work) and those that detected in one study (Supplementary file 5). The DMRs that detected in at least two studies demonstrated more consistency across individuals (M ± SD = 41.2% ± 33%) while DMRs detected in a single study showed more variability (M ± SD = 10.6% ± 15.4%) (Supplementary file 5). These results suggest that polymorphic imprinting can explain this non-overlapping DMRs across studies.
 
-## Determination of germline versus somatic status of novel imprinted DMRs
+### Determination of germline versus somatic status of novel imprinted DMRs
 
 We investigated the methylation status of the detected novel DMRs in sperm and oocyte to determine if they are germline or somatic imprinted intervals. Maternally methylated gDMRs must display high methylation in oocyte and very low or no methylation in sperm with partial methylated after fertilization. Paternally methylated gDMRs must show high methylation in sperm and very low or no methylation in oocyte with partial methylated after fertilization. For the novel DMRs, 16 were detected as germline (more than 70% methylation in oocyte and less than 20% in sperm and vice versa) from which 15 were maternally methylated and one was paternally methylated (Figure 3A and B). Moreover, novel candidate gDMRs showed partial methylation in the blastocyst and fetal samples, indicating the gDMRs escaped de-methylation after fertilization. Meanwhile, sDMRs displayed partial methylation in fetal tissues, indicating their establishment during somatic development (Figure 3A and B). Overall, 16 of the novel DMRs were found to be germline while 26 were sDMRs.
 
@@ -63,17 +475,17 @@ We investigated the methylation status of the detected novel DMRs in sperm and o
 
 During germ cell development, gDMRs are bound by proteins critical for their methylation maintenance during post-fertilization reprogramming. ZFP57 and ZNF445 have been identified as imprinting maintenance proteins (Takahashi et al., 2019). Using ZFP57 and ZNF445 ChIP-seq peak calling information from human embryonic stem cells and the HEK 293T cell line (Imbeault et al., 2017; Takahashi et al., 2019), 44% of the novel gDMRs and 49% of the reported gDMRs were bound by ZFP57 and/or ZNF445 (Figure 3C; Supplementary file 4). Of these gDMRs, 89% had a ZFP57 peak and 45% had a ZNF445 peak. This highlights the importance of ZFP57 as an important factor for the maintenance of imprinted methylation at gDMRs. 5′-TGC(5mC)GC-3′ is the canonical binding motif for ZFP57 (Quenneville et al., 2011). Eighty-eight percent of the gDMRs with a ZFP57 peak had at least one 5′-TGCCGC-3′ motif, while 40% of the gDMRs without ZFP57 peak had at least one 5′-TGCCGC-3′ motif in the human genome (GRCh38; Supplementary file 4). Moreover, at gDMRs the number of 5′-TGCCGC-3′ motifs demonstrated a significant positive correlation with the number of individuals demonstrating partial methylation (Pearson = 0.54, p-value = 3.6e−07; Appendix 1—figure 1). This suggests that a greater number of motifs provide more functional binding opportunities for ZFP57 and also less likelihood that all ZFP57 motifs could be perturbed through polymorphism or DNA sequence variation resulting in the imprinted methylation being less polymorphic.
 
-## Allelic H3K4me3 histone mark at detected DMRs
+### Allelic H3K4me3 histone mark at detected DMRs
 
 The H3K4me3 histone mark is protective against DNA methylation. At imprinted DMRs, the unmethylated allele is usually enriched for this histone modification (Court et al., 2014; John and Lefebvre, 2011). We used H3K4me3 chromatin immunoprecipitation sequencing (ChIP-seq) data for six LCLs and their heterozygous single-nucleotide variant (SNV) calls from 1KGP. Fifty of the DMRs mapped to reported intervals and 19 of the novel DMRs could be examined. Of these, 47 previously reported and 16 novel DMRs showed a significant allelic count in ChIP-seq data (Fisher’s combined p-value binomial <0.05 with at least 80% of the reads on one allele) (Figure 4a; Supplementary file 6). We also examined if the allelic H3K4me3 and methylation are in opposite alleles in NA12878 and NA19240. Forty of the previously reported DMRs and 10 of the novel DMRs with significant allelic H3K4me3 could be examined in NA12878 and/or NA19240. Thirty-seven previously reported and seven novel DMRs showed opposite allelic states between H3K4me3 and methylation (Figure 4b; Supplementary file 6).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig4-v1.jpg)
 
-**Figure 4.:** (a) The plots representing reference and alternative alleles H3K4me3 read counts for the heterozygous single-nucleotide variants (SNVs) mapped to the detected DMRs for the six examined samples. Each point represents an SNV. Blue color displays SNVs with Fisher’s combined p-value binomial <0.05 and at least 80% of the reads on one allele and red color represent those SNVs that did not satisfy either of these thresholds. (b) The plots representing paternal and maternal H3K4me3 read counts for the heterozygous SNVs at DMRs in NA12878 and NA19240. Each point represents an SNV. The ‘Status’ indicates the methylation origin of the DMR and if the DMR is novel or reported.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (a) The plots representing reference and alternative alleles H3K4me3 read counts for the heterozygous single-nucleotide variants (SNVs) mapped to the detected DMRs for the six examined samples. Each point represents an SNV. Blue color displays SNVs with Fisher’s combined p-value binomial <0.05 and at least 80% of the reads on one allele and red color represent those SNVs that did not satisfy either of these thresholds. (b) The plots representing paternal and maternal H3K4me3 read counts for the heterozygous SNVs at DMRs in NA12878 and NA19240. Each point represents an SNV. The ‘Status’ indicates the methylation origin of the DMR and if the DMR is novel or reported.
 
 Overall, gDMRs were enriched more with the H3K4me3 mark. Sixty-three percent of the gDMRs and 48% of the sDMRs with at least one heterozygous SNV demonstrated an allelic H3K4me3 mark (Supplementary file 4). This is consistent with previous studies demonstrating the protective role of H3K4me3 against DNA methylation, specifically at germline ICRs in the second round of re-methylation during implantation and somatic development (Chen and Zhang, 2020; Hanna and Kelsey, 2014).
 
-## Conservation of detected imprinted DMRs across mammals
+### Conservation of detected imprinted DMRs across mammals
 
 To investigate the conservation of detected DMRs and determine if any of the novel DMRs are conserved in mammals, we used WGBS data from mouse (Mus musculus), rhesus macaque (Macaca mulatta), and chimpanzee (Pan troglodytes) (Hon et al., 2013; Jeong et al., 2021; Tung et al., 2012). In determining whether any of the orthologous regions in these mammals displayed partial methylation, we found that 81 of the detected intervals which overlapped with previously reported DMRs and 17 of the novel imprinted DMRs displayed partial methylation in at least one tissue sample in one or more mammals (Figure 5A; Supplementary file 4). In the mouse, orthologs of the 33 detected DMRs were partially methylated, 20 of these were previously reported to be imprinted in mice (Gigante et al., 2019; Xie et al., 2012). Most (88%) of the partially methylated DMRs in the mouse were also partially methylated in rhesus macaque and/or chimpanzee suggesting conservation across species. These shared DMRs mapped to well-known imprinted clusters including KCNQ1, H19, GNAS, SNURF/SNRPN, PLAGL, SGCE, BLCAP, PEG3, PEG10, PEG13, GRB10, BLCAP, NAP1L5, INPP5F, and MEG3 where their allelic PofO expression has already been reported in mouse and other mammals (Geneimprint, 2021; Morison et al., 2001).
 
@@ -83,27 +495,143 @@ To investigate the conservation of detected DMRs and determine if any of the nov
 
 Sperm, oocyte, and embryo WGBS data for mouse and rhesus macaque were used to investigate if DMRs classified as germline or somatic in humans were still germline or somatic in other mammals and vice versa (Figure 5B; Dahlet et al., 2020; Gao et al., 2017; Jung et al., 2017; Saenz-de-Juano et al., 2019). Overall, imprinted DMRs preserved their identity as germline or somatic in the two other mammals examined (Figure 5B). However, in a few cases, the type of imprinted DMR was not consistent between humans and other mammals (Figure 5B). This finding is supported by an earlier study indicated that imprinting is largely conserved in mammals while the identity of ICR at the germline stage is not completely conserved (Cheong et al., 2015).
 
-## Novel DMRs within known imprinted gene domains
+### Novel DMRs within known imprinted gene domains
 
 To examine the vicinity of novel DMRs to known imprinted genes, we assembled a list of 259 imprinted genes identified in previous studies (Supplementary file 7; Babak et al., 2015; Baran et al., 2015; Geneimprint, 2021; Jadhav et al., 2019; Morison et al., 2001; Zink et al., 2018). Fifteen of the novel DMRs (six germline and nine somatic) identified in our study could be mapped nearby (<1.03 Mb) to known imprinted genes (Table 1; Supplementary file 4).
 
 Novel sDMRs close to known imprinted genes were mostly paternal of origin. Five of them mapped within known imprinted genes including ZDBF2, PAX8/PAX8-AS1, LPAR6/RB1, BMP8A, and ZNF714 while four mapped close to imprinted genes including PWAR1, LINC00665, DGCR6, and IGF2R (Figure 6; Figure 6—figure supplements 1–7). For ZNF714 and PAX8/PAX8-AS1, there are no reported imprinted DMRs within the gene or very close to them that explain their imprinted expression. Two of the novel sDMRs mapped to the promoters of these genes with a reverse relation between origin of methylation and expression (Figure 6), suggesting these DMRs could directly suppress paternal and maternal alleles in PAX8-AS1 and ZNF714, respectively.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-v1.jpg)
+
+**Figure 6.:** (a) Novel maternally methylated somatic DMR overlapping with the promoter of paternally expressed ZNF714 gene. (b) Novel paternally methylated somatic DMR overlapping with the promoter of maternally expressed PAX8-AS1gene. Highlighted box regions represent the DMRs. Parent-of-origin (PofO) allele-specific expression (ASE) track is created using publicly available ASE data from Zink et al., 2018 (see Materials and methods). Positive vertical bars (upward) represent paternal expression and negative bars (downward) represent maternal expression. The range for all methylation tracks is 0–1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig6-figsupp7-v1.jpg)
+
+**Figure 6—figure supplement 7.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
 All novel gDMRs close to imprinted genes were maternal of origin. Three of them mapped within known imprinted genes including ACTL10/NECAB3, DDA1, and AC024940.1 while three of them mapped close to imprinted genes including SYCE1, NAPRT, and NTM (Figure 7; Figure 7—figure supplements 1–4). Three of the germline DMRs mapped within or very close to three known imprinted genes without reported ICR including AC024940.1 (OVOS2), ACTL10/NECAB3, and SYCE1. A novel maternal gDMR mapped to the promoter of the paternally expressed ACTL10 (Zink et al., 2018; Figure 7A). In a previous study, a CpG site located ~130 bp away from the DMR we detected was demonstrated to be a cis-methylation quantitative trait loci with PofO association (Cuellar Partida et al., 2018). Thus, the novel gDMR might be the ICR of this gene and directly suppress the maternal allele. Another novel maternal gDMR mapped to the promoter of SYCE1, which demonstrates paternal expression bias in the allele-specific expression (ASE) track (Zink et al., 2018; Figure 7B). Nakabayashi et al., 2011, also observed two array probes consistent with an imprinted DMR at this region, but were unable to validate them because of the difficulty in designing bisulfite PCR primers (Nakabayashi et al., 2011). The novel maternal gDMR at the promoter of SYCE1 could be the ICR for this gene and directly suppress the maternal allele.
 
-## Contiguous blocks of parental methylation bias
+![Figure 7.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig7-v1.jpg)
+
+**Figure 7.:** (a) Novel maternally methylated germline DMR overlapping with the promoter of the paternally expressed ACTL10 gene. (b) Novel maternally methylated germline DMR overlapping with the promoter of the SYCE1 gene, which demonstrates paternal expression bias from parent-of-origin (PofO) allele-specific expression (ASE) track. Highlighted box regions represent the DMRs. PofO ASE track is created using publicly available ASE data from Zink et al., 2018 (see Materials and methods). Positive vertical bars (upward) represent paternal expression and negative bars (downward) represent maternal expression. The range for all methylation tracks is 0–1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig7-figsupp4-v1.jpg)
+
+**Figure 7—figure supplement 4.:** The range for all methylation tracks is 0–1. In parent-of-origin (PofO) ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+### Contiguous blocks of parental methylation bias
 
 Previous studies demonstrated two paradigms of imprinting at the PWS/AS imprinted cluster, either PofO methylation confined to particular regulatory regions such as CGIs or subtle paternal bias across this cluster with spikes of maternal methylation (Court et al., 2014; Joshi et al., 2016; Sharp et al., 2010; Zink et al., 2018). Probes with paternal methylation bias at the SNORD116 cluster have been reported, spanning about a 95 kb region, and paternal deletion of this cluster results in PWS phenotypes (Hernandez Mora et al., 2018; Joshi et al., 2016; Matsubara et al., 2019). Slight hypomethylation of SNORD116 cluster in cases with PWS phenotype and hypermethylation in the cases with AS phenotype have been reported (Matsubara et al., 2019). We did not observe paternal methylation bias across the whole PWS/AS cluster; however, we detected a paternal methylation block spanning ~200 kb, immediately downstream of the known, maternally methylated PWS SNURF/SNRPN ICR (Figure 8). This block encompasses the SNORD116 cluster genes and several other genes such as PWAR1, 5 and 6, PWARSN and IPW. In addition to the PWS/AS block, we detected six other PofO methylation bias blocks ranging from 35 to 65 kb in size, were located within ZNF331, KCNQ1OT1, GNAS/GNAS-AS1, L3MBTL1, ZNF597/NAA60, and GPR1-AS/ZDBF2 imprinted clusters (Figure 8—figure supplements 1–6).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-v1.jpg)
+
+**Figure 8.:** The range for all methylation tracks is 0–1. The histone mark tracks represent allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. Purple highlight demonstrates the whole block. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Black box represents known somatic differentially methylated region (DMR) in the block while red box shows known germline DMR in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Purple highlight demonstrates the whole block. Red box shows known germline differentially methylated region (DMR) in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Purple highlight demonstrates the whole block. Red box shows known germline differentially methylated region (DMR) in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Purple highlight demonstrates the whole block. Black box represents known somatic differentially methylated region (DMR) in the block while red box shows known germline DMR in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Purple highlight demonstrates the whole block. Red box shows known germline differentially methylated region (DMR) in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig8-figsupp6-v1.jpg)
+
+**Figure 8—figure supplement 6.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Purple highlight demonstrates the whole block. Black box represents known somatic differentially methylated region (DMR) in the block. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
 As mentioned in the ‘Confirmation of novel imprinted DMRs’ section, only 42 out of 99 detected novel DMRs in the nanopore data could be confirmed in the WGBS data as partially methylated. Forty of the novel nanopore-detected DMRs that did not show partial methylation in the WGBS data mapped to the seven PofO-biased blocks. At imprinted intervals one allele is methylated and the other one is not. Therefore, at these intervals aggregated methylation from both alleles demonstrate partial methylation (~50% methylation) in WGBS data. However, in the subtle PofO bias blocks both alleles are methylated with a subtle hypomethylation on one of the alleles. Therefore, in contrast to imprinted intervals, aggregated methylation at these blocks usually do not show partial methylation in WGBS data. The weaker or subtle differential methylation can therefore explain why several novel DMRs detected in the nanopore data did not show partial methylation in the WGBS data and demonstrates the utility of nanopore sequencing in detecting subtle ASM differences.
 
-## Enriched allelic H3K36me3 and H3K27me3 histone marks at contiguous blocks
+### Enriched allelic H3K36me3 and H3K27me3 histone marks at contiguous blocks
 
 RNA polymerase II recruits SETD2 during elongation which results in the deposition of the H3K36me3 mark in the gene body. In turn, H3K36me3 recruits de novo DNA methyltransferases through their PWWP domain which results in DNA methylation in the gene body (Wagner and Carpenter, 2012).
 
 Within the seven PofO methylation-biased blocks, parentally expressed or active allele demonstrated hypermethylation suggesting that subtle methylation is linked to parental ASE. Except ZNF597/NAA60, all the blocks demonstrated hypermethylation and ASE on the paternal allele. ZNF597/NAA60 demonstrated hypermethylation and ASE on the maternal allele. Therefore, to assess allelic H3K36me3, we used ChIP-seq data from six LCLs (Kasowski et al., 2013). H3K36me3 and H3K27me3 histone marks are mutually exclusive (Yuan et al., 2011). Moreover, DNA methylation and H3K27me3 shown to be mutually exclusive at CGIs (Brinkman et al., 2012). Thus, we also examined allelic H3K27me3 in the same cell line samples (Kasowski et al., 2013).
 
 To analyze allelic histone modifications and detect blocks of allelic histone marks at large blocks of PofO bias, we binned the genome into 10 kb intervals and performed a binomial test with Fisher’s combined p-value test to determine the significance of allelic read counts at 10 kb intervals with >3 informative heterozygous SNVs (having at least five mapped reads) within each block in each sample. A 10 kb bin considered as significant for allelic histone mark if it had an adjusted p-value <0.001 and if at least 70% of the SNVs within the 10 kb bin having ≥80% of the reads mapped to one allele. In total, 174 bins for H3K36me3 and 132 bins for H3K27me3 could be examined. Of these, 147 bins for H3K36me3 and 51 bins for H3K27me3 were significant. Thirty-eight bins were significant for both histone marks in the same sample. All the seven blocks demonstrated multiple significant bins for H3K36me3 at almost all the samples. L3MBTL1, GPR1-AS/ZDBF2, GNAS/GNAS-AS1, and ZNF597/NAA60 demonstrated multiple significant H3K27me3 bins in majority of the samples and KCNQ1OT1, PWS/AS, and ZNF331 had significant H3K27me3 bins at 3, 2, and 1 of the samples, respectively. H3K36me3 and H3K27me3 demonstrated mutual exclusive pattern and H3K36me3 appeared on the hypermethylated allele while H3K27me3 on the hypomethylated allele (Figure 8; Figure 8—figure supplements 1–6; Figure 9; Supplementary file 8).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-v1.jpg)
+
+**Figure 9.:** All blocks demonstrate allelic H3K36me3 on hypermethylated allele and H3K27me3 on hypomethylated allele. For NA12878 and NA19240, allele1 is the paternal and allele2 is maternal. For sake of visualization in other four cell lines without parental information, allele1 for H3K36me3 mark demonstrates the allele with more mapped reads at all blocks except ZNF597/NAA60. Therefore, for H3K36me3 we swapped the reference allele read count with the alternative allele read count if the reference allele count was less than the alternative allele count. At ZNF597/NAA60, we swapped the reference allele read count with the alternative allele read count if the reference had higher read count. We also swapped the reference and the alternative allele counts for the same SNVs for H3K27me3. Each point represents a heterozygous SNV. Lines are connecting SNVs that have mapped reads for both histone modifications.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Test blocks do not display allelic bias for H3K36me3 or H3K27me3 histone modifications. For NA12878 and NA19240, allele1 is the paternal and allele2 is maternal. For sake of visualization in other four cell lines without parental information, allele1 for H3K36me3 mark demonstrates the allele with more mapped reads. Therefore, for H3K36me3 we swapped reference allele read count with alternative allele read count if reference allele count was less than alternative allele count. We also swapped reference and alternative allele counts for the same SNVs for H3K27me3. Each point represents a heterozygous SNV. Lines are connecting SNVs that have mapped reads for both histone modifications.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Red box shows known germline DMR. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Black box shows known somatic differentially methylated region (DMR). The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp4-v1.jpg)
+
+**Figure 9—figure supplement 4.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Red box shows known germline differentially methylated region (DMR). The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 5.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp5-v1.jpg)
+
+**Figure 9—figure supplement 5.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Red box shows known germline differentially methylated region (DMR). The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 6.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp6-v1.jpg)
+
+**Figure 9—figure supplement 6.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Black box represents known somatic differentially methylated region (DMR) and red box shows known germline DMR. The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 7.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp7-v1.jpg)
+
+**Figure 9—figure supplement 7.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Black box represents known somatic differentially methylated region (DMR). The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
+
+![Figure 9—figure supplement 8.](https://cdn.elifesciences.org/articles/77898/elife-77898-fig9-figsupp8-v1.jpg)
+
+**Figure 9—figure supplement 8.:** The histone mark tracks are representing allelic read counts for H3K36me3 and H3K27me3 modifications. The range for all histone mark tracks is 0–20. In H3K27 and H3K36 tracks, for NA12878 and NA19240 the parent-of-origin (PofO) could be determined and specified by maternal (Mat) and paternal (Pat) alleles. While the other samples are specified by reference (Ref) and alternative (Alt) alleles. Red box shows known germline differentially methylated region (DMR). The range for all methylation tracks is 0–1. In PofO ASE track, positive or upward bars represent paternal expression bias and negative or downward bars represent maternal expression bias.
 
 To determine if allelic histone marks are unique to the PofO methylation-biased blocks, we examined allelic histone marks on several other imprinted clusters with strong ASE which did not display PofO bias methylation. For this, we examined PPIEL, MEG3, MEST, DIRAS3, IGF2, MTRNR2L4, and ADNP2/PARD6G-AS1 clusters. Eighty-three bins for H3K36me3 and 138 bins for H3K27me3 could be examined at the seven test blocks. Of these, only five bins for H3K36me3 and seven bins for H3K27me3 were significant and none of the bins were significant for both histone marks (Figure 9—figure supplements 1–8; Supplementary file 9). These results suggest that the blocks of PofO methylation bias in the gene body of active alleles are mediated by transcription and histone marks at their gene bodies.
 
@@ -127,27 +655,27 @@ Overall, our study demonstrates a near-complete genome-wide map of human ASM by 
 
 ## Materials and methods
 
-## Nanopore sequencing data and detection of ASM
+### Nanopore sequencing data and detection of ASM
 
 We used publicly available nanopore sequencing data for 12 LCLs with trio data available. Raw and base-called nanopore data for HG002, HG005, HG00733, HG01109, HG01243, HG02055, HG02080, HG02723, HG03098, and HG03492 were obtained from the Human Pangenomics and GIAB (Shafin et al., 2020; Zook et al., 2016). NA19240 data (ERR3046934 and ERR3046935 raw nanopore and their base-called reads ERR3219853 and ERR3219854) were obtained from De Coster et al., 2019. Raw and base-called nanopore data for NA12878 were obtained from rel6 nanopore WGS consortium (Jain et al., 2018). Reads were mapped to the GRCh38 human reference genome using Minimap2 with the setting minimap2 –ax map-ont (Kent et al., 2002; Li, 2018). For all the cell lines and their parents, except HG002 and HG005, high-quality SNVs were called using Strelka2 with default parameters from alignment files in the 1KGP GRCh38 (Auton et al., 2015; Kim et al., 2018). High-quality SNVs for HG002 and HG005 and their parents were obtained from GIAB v.3.3.2 high confidence variant calls (Zook et al., 2019). CpG methylations were called from nanopore data using nanopolish with default parameters (Simpson et al., 2017). Methylation calls for each sample were preprocessed using the NanoMethPhase methyl_call_processor default setting (Akbari et al., 2021). Subsequently, haplotyping and PofO methylation detection were performed using NanoMethPhase and trio (mother, father, and child) variant call data with the setting nanomethphase phase –mbq 0. Finally, DMRs between haplotypes were called using the default setting of NanoMethPhase dma module that uses Dispersion Shrinkage for Sequencing data R package for DMA (Park and Wu, 2016). To avoid the confounding effects of X-chromosome inactivation, and because previous studies demonstrated no evidence of imprinting at sex chromosomes, we only examined autosomal chromosomes (Court et al., 2014; Joshi et al., 2016; Zink et al., 2018).
 
-## WGBS data and detection of novel DMRs
+### WGBS data and detection of novel DMRs
 
 To confirm allelic methylation in other tissues and also detect potential novel imprinted DMRs, we used 60 public WGBS data records for 29 tissue type samples from the Epigenomics Roadmap and ENCODE projects (Supplementary file 10) and 119 blood WGBS datasets for 87 individuals from the Blueprint project (Bernstein et al., 2010; ENCODE Project Consortium, 2012; Stunnenberg et al., 2016; Supplementary file 10). CpGs with at least five mapped reads were used for further analysis. At imprinted DMRs, only one allele is methylated and we expect to observe partial methylation (~50%) at such regions. Therefore, we investigated the partial methylation of nanopore-detected DMRs in WGBS data (code is available on https://github.com/vahidAK/NanoMethPhase/tree/master/scripts (Akbari, 2022): PartialMethylation_AtDMR.sh). As controls, we examined 100 randomly selected CGIs: 1, 2, and 3 kb intervals with more than 15 CpGs each resampled 100 times.
 
-## Detection of gDMRs and sDMRs
+### Detection of gDMRs and sDMRs
 
 To discriminate gDMRs from sDMRs, we used publicly available WGBS data for three sperms, two oocytes, and one blastocyst first published by Okae et al., 2014, and three fetal tissue libraries (GSM1172595 thymus, GSM1172596 muscle, and GSM941747 brain) from the Roadmap project (Bernstein et al., 2010; Okae et al., 2014).
 
-## Allelic H3K4me3, H3K36me3, and H3K27me3 analysis
+### Allelic H3K4me3, H3K36me3, and H3K27me3 analysis
 
 H3K4me3, H3K36me3, and H3K27me3 ChIP-seq fastq files were obtained for NA12878, NA12891, NA12892, NA19238, NA19239, and NA19240 (SRP030041) (Kasowski et al., 2013). ChIP-seq data were aligned to the GRCh38 reference genome using the bwa-mem default setting (Kent et al., 2002; Li and Durbin, 2009). High-quality SNVs were called for these samples from 1KGP GRCh38 alignment files using strelka2 (Auton et al., 2015; Kim et al., 2018). We then counted the number of reads with a minimum mapping quality of 20 and base quality of 10 at each heterozygous SNV and kept those with at least five mapped reads. The reference allelic counts and total counts at each heterozygous SNV were used to detect significant allelic bias using a two-sided binomial test under the default probability of p=0.5 in python SciPy package (codes are available on GitHub https://github.com/vahidAK/NanoMethPhase/tree/master/scripts: CountReadsAtSNV.py & Binomial_test.py) (Virtanen et al., 2020).
 
-## ASE track
+### ASE track
 
 ASE data from Zink et al., 2018 (PofO_ASE.tsv; https://doi.org/10.6084/m9.figshare.6816917) were used to create ASE track for IGV. In PofO_ASE.tsv file from Zink et al., they have calculated lor_paternal_maternal across individuals which is (lor_ref_alt_pref - lor_ref_alt_palt)/2. lor_ref_alt_pref is log(#reads with ref allele/#reads with alt allele) when paternal homologue has ref allele and lor_ref_alt_palt is log(#reads with ref allele/#reads with alt allele) when paternal homologue has alt allele. For visualization in IGV, we converted the PofO_ASE.tsv file from Zink et al., to a bigwig format file using the UCSC tool bedGraphToBigWig version 4 and we kept lor_paternal_maternal as ASE value (Kent et al., 2010).
 
-## Mammalian conservation of DMRs
+### Mammalian conservation of DMRs
 
 We used 16 WGBS datasets for mouse (GSM1051150-60 and GSM1051162-66), 34 WGBS datasets for rhesus macaque (GSE34128 and GSE151768), and 22 WGBS datasets for chimpanzee (GSE151768) to examine partial methylation in orthologous intervals (Hon et al., 2013; Jeong et al., 2021; Tung et al., 2012). Mouse, macaque, and chimpanzee coordinates lifted over to mm10, RheMac8, and PanTro5 coordinates using CrossMap and the appropriate liftover file from the UCSC genome browser. The list of detected human DMRs were also converted to the orthologous regions for each mammal using CrossMap and the appropriate liftover file (Kent et al., 2002; Zhao et al., 2014). Since many coordinates in the human splitted to several orthologs in other mammals, we merged orthologs that were ≤200 bp apart.
 

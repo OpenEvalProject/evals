@@ -17,17 +17,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Columbia Center for Translational Immunology, Department of Medicine, Columbia University Medical Center, Columbia University New York United States
-2. https://ror.org/03660jn93 Department of Immunology, Department of Biochemistry and Molecular Biology, Mayo Clinic Phoenix United States
-3. https://ror.org/039zxt351 San Raffaele Hospital Milan Italy
-4. https://ror.org/00hj8s172 Department of Microbiology and Immunology, Columbia University Medical Center, Columbia University New York United States
-5. https://ror.org/00hj8s172 Department of Surgery, Columbia University Medical Center, Columbia University New York United States
+1. Columbia Center for Translational Immunology, Department of Medicine, Columbia University Medical Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Department of Immunology, Department of Biochemistry and Molecular Biology, Mayo Clinic Phoenix United States ([ROR:03660jn93](https://ror.org/03660jn93))
+3. San Raffaele Hospital Milan Italy ([ROR:039zxt351](https://ror.org/039zxt351))
+4. Department of Microbiology and Immunology, Columbia University Medical Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+5. Department of Surgery, Columbia University Medical Center, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
 ## Abstract
 
-Human immune system (HIS) mice constructed in various ways are widely used for investigations of human immune responses to pathogens, transplants, and immunotherapies. In HIS mice that generate T cells de novo from hematopoietic progenitors, T cell-dependent multisystem autoimmune disease occurs, most rapidly when the human T cells develop in the native NOD.Cg- Prkdc scid Il2rg tm1Wjl (NSG) mouse thymus, where negative selection is abnormal. Disease develops very late when human T cells develop in human fetal thymus grafts, where robust negative selection is observed. We demonstrate here that PD-1 + CD4 + peripheral (Tph) helper-like and follicular (Tfh) helper-like T cells developing in HIS mice can induce autoimmune disease. Tfh-like cells were more prominent in HIS mice with a mouse thymus, in which the highest levels of IgG were detected in plasma, compared to those with a human thymus. While circulating IgG and IgM antibodies were autoreactive to multiple mouse antigens, in vivo depletion of B cells and antibodies did not delay the development of autoimmune disease. Conversely, adoptive transfer of enriched Tfh- or Tph-like cells induced disease and autoimmunity-associated B cell phenotypes in recipient mice containing autologous human APCs without T cells. Tfh/Tph cells from mice with a human thymus expanded and induced disease more rapidly than those originating in a murine thymus, implicating HLA-restricted T cell-APC interactions in this process. Since Tfh, Tph, autoantibodies, and lymphopenia-induced proliferation (LIP) have all been implicated in various forms of human autoimmune disease, the observations here provide a platform for the further dissection of human autoimmune disease mechanisms and therapies.
+Human immune system (HIS) mice constructed in various ways are widely used for investigations of human immune responses to pathogens, transplants, and immunotherapies. In HIS mice that generate T cells de novo from hematopoietic progenitors, T cell-dependent multisystem autoimmune disease occurs, most rapidly when the human T cells develop in the native NOD.Cg- Prkdcscid Il2rgtm1Wjl (NSG) mouse thymus, where negative selection is abnormal. Disease develops very late when human T cells develop in human fetal thymus grafts, where robust negative selection is observed. We demonstrate here that PD-1+CD4+ peripheral (Tph) helper-like and follicular (Tfh) helper-like T cells developing in HIS mice can induce autoimmune disease. Tfh-like cells were more prominent in HIS mice with a mouse thymus, in which the highest levels of IgG were detected in plasma, compared to those with a human thymus. While circulating IgG and IgM antibodies were autoreactive to multiple mouse antigens, in vivo depletion of B cells and antibodies did not delay the development of autoimmune disease. Conversely, adoptive transfer of enriched Tfh- or Tph-like cells induced disease and autoimmunity-associated B cell phenotypes in recipient mice containing autologous human APCs without T cells. Tfh/Tph cells from mice with a human thymus expanded and induced disease more rapidly than those originating in a murine thymus, implicating HLA-restricted T cell-APC interactions in this process. Since Tfh, Tph, autoantibodies, and lymphopenia-induced proliferation (LIP) have all been implicated in various forms of human autoimmune disease, the observations here provide a platform for the further dissection of human autoimmune disease mechanisms and therapies.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ We have now examined the role of B cells, autoantibodies, and T cell help for B 
 
 ## Results
 
-## Mouse-reactive T cells in HIS mice with mouse or human thymus
+### Mouse-reactive T cells in HIS mice with mouse or human thymus
 
 We have previously demonstrated that a thymus-dependent multiorgan autoimmune disease occurs in HIS mice generated by intravenous injection of human fetal liver (FL) CD34+ cells into NSG mice and that this disease develops more rapidly in mice containing a native murine thymus (termed ‘Mu/Hu mice’ [murine thymus/human CD34+ cells]) than in thymectomized (Khosravi-Maharlooei et al., 2020) NSG mice receiving a human thymus graft, termed ‘Hu/Hu mice’ (human thymus/human CD34+ cells) (Khosravi-Maharlooei et al., 2021). While Mu/Hu mice rely on the native mouse thymus for human T cell development, T cells in Hu/Hu mice develop in the human fetal thymus graft. At 20 weeks after transplantation, animals in both groups were sacrificed and their splenocytes were CFSE-labeled and tested for reactivity to autologous FL-derived human dendritic cells (DCs) and for responses to NSG mouse bone marrow-derived DCs (anti-host response) as well as responses to autologous human DCs pulsed with apoptotic NSG mouse DCs (indirect anti-host response). As shown in Figure 1A and B, T cells from Hu/Hu and Mu/Hu mice showed proliferation to autologous human DCs that was not significantly augmented by pulsing of human DCs with murine antigens. Since the responder splenocyte preparations were not depleted of murine cells, we cannot distinguish whether the baseline proliferation represents responses to human antigens or to murine antigens presented by these DCs. However, proliferation of both CD4 and CD8 T cells to NSG mouse DCs was greater in Mu/Hu mice than in three of four Hu/Hu mice, which showed little, if any, direct proliferation to murine antigens. Proliferation of Mu/Hu CD4+ T cells to murine DCs was significantly greater than proliferation in the absence of DCs, in contrast to Hu/Hu CD4 cells, suggesting a lack of tolerance to NSG antigens only in Mu/Hu CD4+ T cells (Figure 1B). This observation is consistent with the lack of cortico-medullary structure or normal negative selection in the native murine thymi (Khosravi-Maharlooei et al., 2021).
 
@@ -47,9 +47,17 @@ We have previously demonstrated that a thymus-dependent multiorgan autoimmune di
 
 **Figure 1.:** Mu/Hu (n=4) and Hu/Hu (n=4) mice were sacrificed 20 weeks after transplantation and their splenocytes were CFSE-labeled and tested for reactivity to various antigen-presenting cells. To test direct reactivity to autologous human dendritic cells (DCs), fetal liver (FL) CD34+ cells used to generate both Hu/Hu and Mu/Hu mice were differentiated into DCs. NSG DCs were generated from bone marrow progenitors. Proliferation of T cells was measured after 6 days of co-culture based on CFSE dilution. (A) Representative plots showing proliferation of HuHu (top) and MuHu (bottom) T cells following co-culture with autologous human DCs, NSG mouse DCs, autologous human DCs loaded with murine antigens or with no DC. (B) Frequencies of proliferating CD3+ T cells and CD4+ and CD8+ T cells from splenocytes of HuHu (red) and MuHu (blue) mice in response to the indicated DCs. Differences between proliferation rate of Hu/Hu and Mu/Hu T cells were analyzed with unpaired t-test. In all graphs, each point represents an individual mouse with the mean indicated by a black line. Asterisks indicate statistical significance. **p<0.01, *p<0.05 . Statistically significant differences in responses between Hu/Hu or Mu/Hu T cells compared to the same group of T cells stimulated with other DCs are indicated by red and blue asterisks, respectively, while differences between Hu/Hu and Mu/Hu T cells are marked with black asterisks.
 
-## Increased number of Tfh cells in HIS mice with a mouse thymus compared to those with a human thymus
+### Increased number of Tfh cells in HIS mice with a mouse thymus compared to those with a human thymus
 
 Since increases in Tfh and Tph have been associated with various human autoimmune diseases, we compared Tfh-like and Tph-like cells in groups of Mu/Hu (n=8) and Hu/Hu mice (n=11) generated from the same two FL donors (Figure 2A). CD3+ T cells were detected in peripheral blood around 12 weeks after transplantation (data not shown), as we previously reported (Kalscheuer et al., 2012; Khosravi-Maharlooei et al., 2021; Khosravi-Maharlooei et al., 2020).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/99389/elife-99389-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of experimental design; (B) representative staining; (C,D) percentage of CXCR5-PD-1+ Tph and CXCR5+PD-1+ Tfh cells among CD4+CD45RA- T cells and absolute counts per microliter in peripheral blood of HIS mice with mouse thymus (n=19) or human thymus (n=29) from week 12 to week 32 post-transplantation, analyzed every 2 weeks; (E) representative staining and (F,G) percentage of CXCR5-PD-1+ Tph and CXCR5+PD-1+ Tfh cells among CD4 T cells and absolute counts in spleens of HIS mice with mouse thymus or human thymus at <20W, 20–30W, and >30W post-transplantation. (H) Expression of ICOS in Tph and Tfh from Mu/Hu (n=16) and Hu/Hu (n=8) mice (combined results) and (I) IL-21 cytokine production after PMA/ionomycin stimulation of Tph (CXCR5-PD-1+) and Tfh cells (CXCR5+PD-1+) compared to naive CD4+ T cells (gray) from Mu/Hu (n=11) and Hu/Hu (n=4) mice (combined results). The results are expressed as mean ± SEM geometric mean fluorescence intensity (MFI) values; (J,K) percentage of ICOS+ and FOXP3+ cells among splenic Hu/Hu and Mu/Hu Tfh and Tph cells. All data are shown as means ± SEM. Asterisks indicate statistical significance between Hu/Hu and Mu/Hu groups as calculated by Bonferroni multiple comparison test. *p<0.05,. **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99389/elife-99389-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Data are summarized for Mu/Hu (n=3) and Hu/Hu (n=2) mice.
 
 We monitored PD-1+CXCR5- Tph-like and PD-1+CXCR5+ Tfh-like CD4+CD45RA- T cell reconstitution from 12 to 32 weeks post-transplantation (Figure 2B–D). Circulating Tph-like cells were detected at 13 weeks post-transplantation in both groups. The frequency and absolute numbers of Tph-like cells in blood of Mu/Hu mice tended to be greater than those in Hu/Hu mice and the difference in percentages achieved statistical significance across multiple time points (Figure 2C). Circulating Tfh-like cells appeared at 13 weeks post-transplantation in Mu/Hu mice (Figure 2D), increased progressively over time and were significantly more abundant in this group than in Hu/Hu mice (Figure 2D).
 
@@ -61,7 +69,7 @@ To further characterize Tph-like and Tfh-like cells in HIS mice, we measured ICO
 
 We also compared the levels of FOXP3 within splenic Tfh-like and Tph-like populations in Hu/Hu and Mu/Hu mice. Approximately 10% of Tfh-like and Tph-like cells in both Hu/Hu and Mu/Hu groups were FOXP3+, with the highest proportion observed in Hu/Hu Tph-like cells (Figure 2K).
 
-## Increased serum IgG in Mu/Hu compared to Hu/Hu HIS mice
+### Increased serum IgG in Mu/Hu compared to Hu/Hu HIS mice
 
 To determine whether or not the increased proportion of Tfh-like cells in Mu/Hu HIS mice impacted B cell differentiation and survival, as reported in humans (Weinstein et al., 2012), we monitored total B cell reconstitution and serum IgM and IgG levels over time. While overall B cell reconstitution (Figure 3A) and serum IgM concentration was similar between Mu/Hu and Hu/Hu mice, serum IgG levels were significantly greater in Mu/Hu mice (Figure 3B), suggesting increased B cell differentiation and IgG class switching.
 
@@ -69,13 +77,13 @@ To determine whether or not the increased proportion of Tfh-like cells in Mu/Hu 
 
 **Figure 3.:** (A) Absolute concentrations of CD19+ B cells in peripheral blood of human immune system (HIS) mice with mouse thymus (n=19) or human thymus (n=29) from week 12 to week 32 post-transplantation, analyzed every 2 weeks; and their (B) plasma IgM and IgG concentrations; (C) FACS-sorted Tfh (CD4+CD19-CD45RA-CXCR5+CD25-) and Tph (CD4+CD19-CD45RA-CXCR5-CD25-) cells from spleens of HIS mice with mouse vs human thymus were co-cultured with naïve B cells (CD4-CD19+CD38-IgD+CD27-) and staphylococcal enterotoxin B (SEB) as described in Materials and methods and plasmablast differentiation was assessed. (D) Percentage of naïve splenic B cells that differentiated into plasmablasts (CD4-CD19+CD20-CD38+) following co-culture with Tfh or Tph cells from HIS mice with mouse thymus (n=11) or human thymus (n=12) sacrificed at <20 weeks or >20 weeks post-transplantation. Splenocytes were obtained in the indicated time ranges. (E) Concentration of CXCL13 chemokine from plasma of HIS mice with mouse thymus (n=12) or human thymus (n=13). For (A–B–G), Bonferroni multiple comparison test was used. For (C–D) Friedman test was performed and corrected using Dunn’s multiple comparisons test. For (F), Wilcoxon matched pairs signed rank test was used. Data are represented as mean ± SEM. *p<0.05, **p<0.01, and ****p<0.0001.
 
-## Helper function of Tfh and Tph in Mu/Hu and Hu/Hu mice
+### Helper function of Tfh and Tph in Mu/Hu and Hu/Hu mice
 
 Next, to compare the functional capacity of Tfh-like and Tph-like cells from HIS mice with mouse or human thymus, we measured the ability of sorted CD25-CXCR5+ CD45RA- (including Tfh and excluding regulatory follicular cells) and CD25- CXCR5-CD45RA- (including Tph cells and excluding Tregs) CD4+ cells to induce differentiation of CD19+CD38-IgD+CD27- naïve B cells to CD20-CD38+ plasmablasts in vitro (Figure 3C). After isolation, these T cell fractions were incubated with autologous naïve B cells. Helper cells from both Mu/Hu and Hu/Hu mice induced plasmablast formation and this activity was greater at later (>20 weeks) than earlier (<20 weeks) times post-transplant. However, Tfh-like cells from Hu/Hu mice demonstrated greater B cell helper function than those from Mu/Hu mice, particularly in the later time period. A similar trend was seen for Tph-like cells (Figure 3D), indicating that T-B cell interactions are more effective for T cells generated in a human thymus that is isogenic to the B cells than for those generated in a xenogeneic murine thymus, and consistent with previous literature (Lang et al., 2013; Danner et al., 2011; Suzuki et al., 2012).
 
 Because B cells undergo class switching in germinal centers (GC), whose activity can be estimated by plasma CXCL13 levels, we analyzed serum concentrations of human CXCL13 in HIS mice. While human CXCL13 was detected in both groups and did not correlate with the number of splenic Tfh or Tph cells (data not shown), the levels tended to be higher in Mu/Hu compared to Hu/Hu mice (Figure 3E).
 
-## Splenic B cell follicles and GC in HIS mice
+### Splenic B cell follicles and GC in HIS mice
 
 We performed histological and immunostaining analyses of spleens to quantify B cell follicles in tissue sections from Mu/Hu (n=8) and Hu/Hu (n=11) mice in three time periods (<20 weeks, 20–30 weeks, and >30 weeks post-transplantation). Tissue sections were stained for CD3 (T cells), CD20 (B cells), and peanut agglutinin (PNA, marking GC-B cells) (Figure 4A). B cell follicles were manually quantified, and their size (in pixels per area) was determined using ImageJ software.
 
@@ -87,7 +95,7 @@ Hematoxylin and eosin (H&E) staining revealed a semiorganized splenic structure,
 
 Despite the increased number of Tfh-like cells in the spleens of Mu/Hu mice, there were no significant differences in the number or total area of splenic follicles between Mu/Hu and Hu/Hu mice (Figure 4B).
 
-## Autoreactivity of IgM and IgG in HIS mice
+### Autoreactivity of IgM and IgG in HIS mice
 
 To investigate the possible role of autoantibodies in driving autoimmune disease in HIS mice, we tested serum IgG and IgM for autoreactivity (Figure 5). Figure 5B confirms, in a separate experiment from that in Figure 3, a progressive increase in total serum IgM levels in both groups over time, while Figure 5D shows high levels of IgG antibodies in sera of Mu/Hu mice already by 20 weeks, when Hu/Hu mice still showed very low IgG levels. As shown in Figure 5A and Table 1, serum from Mu/Hu and Hu/Hu mice contained IgM antibodies that were reactive to multiple murine tissues. Several Mu/Hu mice also contained IgG antibodies with broad reactivity to multiple murine tissues. IgM in sera from HIS mice was reactive to LPS, insulin, and dsDNA, and these levels increased over time irrespective of the thymus type (Figure 5C). IgG against these antigens also increased over time in both groups (Figure 5E), even though total IgG levels tended to be higher in Mu/Hu than Hu/Hu mice (Figure 5D). To assess the possibility that IgM autoantibodies might be polyreactive, we compared the sum of IgM concentrations reacting to dsDNA, insulin, and LPS to total serum IgM concentrations and observed that the sum of these reactivities was >100% for three Mu/Hu mice (Figure 5F), consistent with polyreactivity of individual B cells in these mice.
 
@@ -95,7 +103,412 @@ To investigate the possible role of autoantibodies in driving autoimmune disease
 
 **Figure 5.:** (A) NSG intestine stained with serum from HIS mice with mouse or human thymus or with naïve NSG mouse serum and secondary antibodies against human IgM and IgG. DAPI was used for nucleic acid staining. (B–C) Total concentration of serum IgM antibody and concentration of IgM antibody reactive to LPS, insulin, and dsDNA. (D) Total concentration of serum IgG antibody; (E) concentrations of IgG antibody reactive to LPS, insulin, and dsDNA. RU were defined as relative units compared to control supernatants from monoclonal polyreactive IgG-producing cell cultures. (F) Percentage of total serum IgM antibody that was reactive to LPS, insulin, and dsDNA from total IgM of HIS mice with mouse (n=11) vs human thymus (n=15) at <20W, 20–30W, and 30W post-transplantation. (G) Percentage of CD11c+ CD27+ and CD11c+ CD27+ in IgG- CD19+ B cells in the spleens of donor Hu/Hu and Mu/Hu mice. Asterisks indicate statistical significance as calculated by t-test *p<0.05. Means ± SEMs are shown.
 
-## Depletion of B cells does not impact development of autoimmunity
+**Table 1.**
+ Mouse tissue-reactive human IgM and IgG in serum of Mu/Hu and Hu/Hu mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+      <th>Pancreas</th>
+      <th>Liver</th>
+      <th>Spleen</th>
+      <th>Kidney</th>
+      <th>Thymus</th>
+      <th>SI</th>
+      <th>SG</th>
+      <th>Skin</th>
+      <th>AG</th>
+      <th>LI</th>
+      <th>Bone</th>
+      <th>Lung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Control mouse</td>
+      <td rowspan="2">NSG</td>
+      <td>IgM</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Humanized, nothymus &lt;20 W</td>
+      <td rowspan="2">Mouse #1</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #2</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Mouse thymus &lt;20 W</td>
+      <td rowspan="2">Mouse #3</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse#4</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #5</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Mouse thymus &gt;30 W</td>
+      <td rowspan="2">Mouse #6</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #7</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #8</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Human thymus &gt;30 W</td>
+      <td rowspan="2">Mouse#9</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #10</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mouse #11</td>
+      <td>IgM</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+  </tbody>
+</table>
+
+_SI, small intestine; SG, salivary gland; AG, adrenal gland; LI, large intestine._
+
+### Depletion of B cells does not impact development of autoimmunity
 
 To link the B cell types in HIS mice with autoantibody production, we performed phenotypic analysis of B cells. These studies revealed increased proportions of activated or age-associated B cells (IgD⁻CD27+CD11c+) and atypical B cells (IgD⁻CD27⁻CD11c+) in Mu/Hu mice compared to those from Hu/Hu mice (Figure 5G).
 
@@ -105,9 +518,15 @@ To assess the possible role of B cells in the development of autoimmunity in HIS
 
 **Figure 6.:** (A) Human immune system (HIS) mice with mouse thymus were generated as described in Materials and methods and were injected intraperitoneally with 1 mg of rituximab (anti-CD20) or PBS every 3 weeks from W20 to W38. (B) Frequency and absolute number of CD19+ B cells and serum IgM concentration before (gray) and after (white) treatment in HIS mice treated with rituximab or PBS (control). (C) NSG tissue stained with (primary) serum from HIS mice with mouse thymus and secondary antibodies against human IgM. DAPI was used for nucleic acid staining. (D) Kaplan-Meier curves for disease-free survival in relation to rituximab treatment in HIS mice with mouse thymus (n=6 per group). (E) Schema for early rituximab treatment initiation, Kaplan-Meier curves showing disease-free survival of each group, and serum IgM levels in rituximab-treated and PBS-treated control group (n=6 per group). All data are shown as means ± SEM. Asterisks indicate statistical significance as calculated by Bonferroni multiple comparison test. **p<0.01 and ****p<0.0001.
 
-## Tfh- and Tph-like cells adoptively transfer disease in recipients containing human APCs without T cells: accelerated expansion and disease induction by T cells from Hu/Hu compared to Mu/Hu mice
+### Tfh- and Tph-like cells adoptively transfer disease in recipients containing human APCs without T cells: accelerated expansion and disease induction by T cells from Hu/Hu compared to Mu/Hu mice
 
 To further clarify the role of Tfh- and Tph-like cells in the development of autoimmunity, we tested their ability to expand, differentiate, promote B cell differentiation, and induce disease in a T cell adoptive transfer model. We first generated a cohort of Mu/Hu and Hu/Hu mice from the same human FL CD34 cell donor. Twenty-two weeks later, after T cells had reconstituted the spleen, we euthanized both groups of HIS mice and FACS-sorted splenic CD4+CD45RA- CD45RO+PD-1+CXCR5+ Tfh-like and CD4+CD45RA-CD45RO+PD-1+CXCR5- Tph-like cells. These T cells were adoptively transferred intravenously into thymectomized NSG mouse recipients that had received FL CD34+ cells 12 weeks earlier from the same human donor. Since these latter recipients lacked an endogenous (murine) thymus and had not received a thymus graft, they reconstituted only with B cells and myeloid APCs derived from the fetal HSC donor and did not generate T cells, as we have previously reported (Khosravi-Maharlooei et al., 2021; Khosravi-Maharlooei et al., 2020). Thus, there were five different recipient groups: (a) no T cell transfer (APC only, n=3), (b) mice that received Tph-enriched (n=5) or (c) Tfh-enriched cells (n=3) from Hu/Hu mice, and mice that received (d) Tph-enriched (n=5) and (e) Tfh-enriched cells (n=3) from Mu/Hu mice (Figure 7A). Figure 7B illustrates the gating strategy used to isolate Tfh and Tph cells from donor spleens.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/99389/elife-99389-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schema for adoptive transfer experiment. Purified Tph or Tfh cells from reconstituted mice with mouse vs human thymus were adoptively transferred to thymectomized NSG mice that had received HSCs 12 weeks earlier from the same fetal liver CD34+ cell donor but did not receive a thymus graft. These mice therefore had B cells and other APCs but not T cells at the time of adoptive transfer. (B) The gating strategy used to isolate Tfh and Tph cells from donor spleens. (C) Representative plot of CD3+ T cells and CD19+ B cells in APC-only mice (n=3), adoptive recipients of Tph cells (n=5) or Tfh cells (n=3) from HIS mice with human thymus (Hu/Hu), or adoptive recipients of Tph cells (n=5) or Tfh cells (n=3) from HIS mice with mouse thymus (Mu/Hu). (D) Frequency and absolute number of CD3+ T cells. (E–F) Frequencies and absolute numbers of CXCR5+PD-1+ Tfh and CXCR5-PD-1- Tph cells, respectively, in indicated groups. Asterisks indicate statistical significance as calculated by Bonferroni multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. The green asterisks show significant differences between the Tph in Hu/Hu vs Mu/Hu mice, while the orange asterisks show significant differences between the Tfh in Hu/Hu vs Mu/Hu mice. Means ± SEMs are shown in panels D-F.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/99389/elife-99389-fig7-figsupp1-v1.jpg)
 
 As shown in Figure 7C and D, both Tfh-like and Tph-like cells originating in Hu/Hu mice expanded faster and to a greater extent than those originating in Mu/Hu mice, achieving higher circulating levels. Recipients of Tfh-like cells from Hu/Hu mice contained high numbers of circulating Tph-like and much lower numbers of Tfh-like cells (Figure 7E and F), suggesting that Tfh-like cells might have lost CXCR5 expression or that Tph-like contaminants expanded preferentially. Recipients of Tph-like cells from Hu/Hu mice also contained low numbers of Tfh-like cells and much higher fractions of Tph-like cells, whose numbers and percentages were similar to those seen in recipients of Hu/Hu Tfh-like cells (Figure 7F). Recipients of Mu/Hu Tfh-like or Tph-like cells contained much lower numbers of human T cells of both types (Figure 7D–F), but T cells in the group receiving Mu/Hu Tfh-like cells also demonstrated a predominant Tph-like phenotype (Figure 7F). Similar trends were seen in spleens at the time of sacrifice, though differences did not achieve statistical significance (Figure 7—figure supplement 1, top row).
 
@@ -149,64 +568,157 @@ In summary, our data directly demonstrate the pathogenicity and capacity to indu
 
 ## Materials and methods
 
-## Animals and tissues
+### Animals and tissues
 
 NSG (NOD.Cg-Prkdcscid Il2rgtm1Wjl) mice (Strain #:005557, RRID:IMSR_JAX:005557) were purchased from Jackson Laboratory (Bar Harbor, ME, USA) and were housed and bred in specific pathogen-free helicobacter and Pasteurella pneumotropica-free conditions in the Animal Facility at Columbia University Medical Center. Human fetal thymus and FL tissues (gestational age 17–20 weeks) were obtained from Advanced Biosciences Resources. Fetal thymus fragments were cryopreserved in 10% dimethyl sulfoxide (Sigma-Aldrich) and 90% human AB serum (Gemini Bio Products). FL fragments were treated for 20 min at 37°C with 100 μg/ml of Liberase (Roche) to obtain a cell suspension. Human CD34+ cells were isolated from FL by density gradient centrifugation (Histopaque-1077, Sigma) followed by positive immunomagnetic selection using anti-human CD34 microbeads (Miltenyi Biotec) according to the manufacturer’s instructions. Cells were then cryopreserved in liquid nitrogen. Studies were approved by the Animal Care and Use Committee at Columbia University under the IACUC protocol AC-AABM5551. All human samples were collected with approval of the Institutional Review Board of Columbia University Medical Center in accordance with the Declaration of Helsinki.
 
-## Clinical definition of autoimmune disease
+### Clinical definition of autoimmune disease
 
 The definition of autoimmune-like disease after humanization with HSCs or following adoptive T cell transfer to T cell-deficient HIS mice is based on a GVHD scoring system described in our earlier publication. This system evaluates five criteria: percentage of weight loss, posture, activity level, fur condition, and skin condition, with each parameter assigned a grade from 0 to 2 (Table 2). For the disease-free survival curve (Figures 6 and 8F), a total score exceeding 3 or >20% weight loss was classified as indicative of disease.
 
-## Human fetal tissue transplantation
+**Table 2.**
+ Graft-vs-host disease (GVHD) scoring system to assess disease severity based on five parameters: weight loss, posture, activity, fur condition, and skin condition.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Criteria</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Weight loss</td>
+      <td>10–25% weight loss compared to baseline</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>&gt;25% weight loss compared to baseline</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Posture</td>
+      <td>Slight kyphosis</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Obvious kyphosis</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Kyphosis</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Severe kyphosis</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Activity</td>
+      <td>Decreased activity</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Stationary &gt;50% of the time</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Moves when stimulated</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>No movement</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Fur condition</td>
+      <td>Ventral ruffling</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Ventral line and slight back ruffling</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ruffling &gt;50% of the body</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Ruffling entire body and denuded skin</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Skin condition</td>
+      <td>Flaking of ears, tail, or paws</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Erythema in tail or anus, ear shriveling</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Open lesions</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Multiple open lesions</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human fetal tissue transplantation
 
 To generate HIS mice with human thymus (Hu/Hu mice), 6- to 8-week-old NSG mice were thymectomized and allowed to recover for 2 weeks, then sublethally irradiated (1.0–1.2 Gy) using an RS-2000 X ray irradiator (Rad Source Technologies, Inc, Suwanee, GA, USA). Human fetal thymus fragments of about 1 mm3 were implanted beneath the kidney capsule and 2×105 human FL CD34+ cells were injected IV. Recipient mice received intraperitoneal injections of 400 μg of anti-human CD2 monoclonal antibody BTI-322 or Lo-CD2 26 (Bio X Cell, Inc) on days 0, 7, and 14 post-transplantation. HIS mice with intact mouse thymus (Mu/Hu mice) were generated simultaneously and received similar treatment without thymectomy or thymus transplantation.
 
-## Flow cytometry
+### Flow cytometry
 
 Human reconstitution, Tfh cells, Tph cells, and B cells were monitored in PBMC from 8 weeks after transplantation and in spleens of HIS mice until endpoint. Single-cell splenocyte suspensions and blood samples were treated with ACK lysis buffer (Life Technologies) to remove erythrocytes. After ACK erythrocyte lysis, remaining spleen cells were passed through a 70 μm filter prior to staining for FCM analysis. All cells were stained for detection of surface ICOS (ISA-3), CD45RA (HI100), CCR7 (G043H7), PD-1 (EH12.2H7), CXCR5 (RF8B2), CD8 (RPA-T8), CD25 (2A3), CD3 (SK7), CD4 (RPA-T4), CXCR3 (1C6), CD127 (A019D5), CCR2 (1D9), CCR5 (2D7), CD20 (L27), CD19 (HIB19), IgM (G20-127), IgG (G18-145), IgA (IS11-8E10), IgD (IA6-2), CD27 (O323), CD38 (HIT2), CD138 (MI15), CD11c (B-ly6), CD14 (M5E2), CD21 (Bu32), hCD45 (HI30), and mCD45 (30-F11). To detect IL-21, cells were stimulated for 3 hr with 50 ng/ml phorbol myristic acid (PMA; Sigma-Aldrich, St Louis, MO, USA), 1 μg/ml ionomycin (Sigma-Aldrich) and 3 μg/ml brefeldin A in RPMI supplemented with 10% FBS, 1% HEPES (Sigma-Aldrich), 1% penicillin-streptomycin (Life Technologies), and 0.05% gentamicin (Life Technologies) in 37°C, 5% CO2 incubator conditions. For intracellular staining, single-cell suspensions were fixed-permeabilized with the FOXP3 Fixation Kit (Invitrogen) for 45 min at RT and then stained with mAbs for IL-21 (3A3-N2.1) for 30 min at RT in permeabilization buffer. After washing, cells were acquired on an Aurora Cytek (Fremont, CA, USA) or on a FACS FORTESSA (BD Biosciences), and analyzed with FlowJo v10 (Tree Star, USA) software.
 
-## Proliferative responses of HIS mouse T cells to human and mouse antigens
+### Proliferative responses of HIS mouse T cells to human and mouse antigens
 
 Mu/Hu and Hu/Hu mice were sacrificed 20 weeks after transplantation and their splenocytes (not purified, so multiple murine and human cell populations were present) were CFSE-labeled and tested for reactivity to various antigen-presenting cells. To test direct reactivity to autologous human DCs, FL CD34+ cells used to generate both Hu/Hu and Mu/Hu mice were differentiated into DCs. Briefly, HSCs were cultured in Aim-V medium containing 10% human serum and stem cell factor (SCF, 50 ng/ml) and granulocyte-macrophage colony-stimulating factor (GM-CSF, 50 ng/ml) for 3 days. After 3 days, additional GM-CSF (100 ng/ml) and SCF (50 ng/ml) and low dose TNF-α (1 ng/ml) were added to the culture. At day 7, cells were washed and cultured in medium containing GM-CSF (100 ng/ml), IL-4 (20 ng/ml), and TNF-α (2 ng/ml). One week later, differentiated DCs were harvested and either activated with prostaglandin E2 (PG-E2, 3000 ng/ml) and TNF-α (20 ng/ml) or incubated with apoptotic (irradiated at 30 Gy) NSG mouse DCs for 12 hr for indirect presentation of mouse antigens, followed by activation with PG-E2 and TNF-α. To generate NSG mouse DCs, mouse bone marrow cells were cultured in AIM-V media containing 10% FBS and murine IL-4 (5 µg/ml) and GM-CSF (3 µg/ml). After 1 week, mouse DCs were harvested and either activated with LPS (1 μg/ml) for 8 hr for direct presentation or irradiated (30 Gy) for co-culture with human DCs (for indirect presentation of mouse antigens on human DCs).
 
 Splenocytes from Hu/Hu and Mu/Hu mice were stained with CFSE and cultured with various DCs (Auto human DCs, NSG DCs, Auto DCs loaded with mouse antigens, or no DCs) at a 10:1 ratio of splenocytes:DCs (100K CFSE-stained splenocytes and 10K DCs) in U-bottom 96-well plates. After 6 days, cells were stained with antibodies against human CD3, CD4, and CD8 and analyzed with a flow cytometer.
 
-## T-B cell interaction assay
+### T-B cell interaction assay
 
 Single-cell splenocyte suspensions were stained with a panel to detect CD4 (RPA-T4), CXCR5 (RF8B2), CD45RA (HI100), CD19 (HIB19), IgD (IA6-2), CD27 (O323), and CD38 (HIT2) and prepared for sorting on a BD FACSAria Fusion II. Cells were first gated based on single cells and lymphocytes, and then Tfh cells (CD4+CD45RA-CXCR5+CD25-), Tph cells (CD4+CD45RA-CXCR5-CD25-), and naive B cells (CD19+CD38-CD27-IgD+) were FACS sorted. Cells were collected in RPMI 1640 (Life Technologies) supplemented with 10% FBS (Life Technologies). After collection, 20×103 Tfh cells or Tph cells and naïve B cells (CD19+CD38-CD27-IgD+) were incubated in the presence of staphylococcal enterotoxin B (0.1 μg/ml) in a 1:1 ratio (T cells:B cells). Cultures were performed in V-shaped 96-well plates in RPMI 1640 (Life Technologies) supplemented with 10% FBS, 1% HEPES (Sigma-Aldrich), 1% penicillin-streptomycin (Life Technologies), and 0.05% gentamicin (Life Technologies) in 37°C, 5% CO2 incubator conditions. After 7 days, cell pellets were harvested and stained to analyze plasmablast differentiation (CD19+CD20-CD38+).
 
-## Plasma CXCL13 levels
+### Plasma CXCL13 levels
 
 Whole peripheral blood (in heparin) was centrifuged at 1000 rpm for 15 min to collect plasma. Plasma was further centrifuged at 13,000 rpm for 10 min to remove debris. CXCL13 was evaluated in EDTA plasma by ELISA assay (Human CXCL13/BLC/BCA-1 Quantikine ELISA Kit, R&D Systems) following the manufacturer’s instructions.
 
-## Plasma IgM and IgG levels
+### Plasma IgM and IgG levels
 
 To quantify human antibodies in sera of HIS mice, diluted samples were added to plates (Corning Inc, Corning, NY, USA) coated with goat anti-human IgG Fcγ fragment (Jackson) or goat anti-human IgM (Southern Biotech) overnight at 4°C. Plates were then washed in PBS with 0.05% Tween 20, and blocked with 2% Bovine Serum Albumin (BSA, Fisher Scientific). Bound human Ig was detected using biotin-conjugated mouse anti-human IgG (BD Pharmingen) or biotin-conjugated mouse anti-human IgM (BD Pharmingen) secondary antibodies, followed by streptavidin-horseradish peroxidase (HRP) (Thermo Scientific). Colorimetric change by 3,3′,5,5′-tetramethylbenzidine substrate solution (Thermo Scientific) was stopped by 2 M sulfuric acid (Sigma), and optical densities determined by spectrophotometer absorbance at 450 nm. Human serum with known IgM and IgG concentrations (Bethyl) was used to establish standard curves.
 
-## Assessment of reactivity to insulin, dsDNA, LPS molecules
+### Assessment of reactivity to insulin, dsDNA, LPS molecules
 
 To determine the reactivity of serum antibodies to insulin, dsDNA, and LPS, polystyrene plates (Corning) were coated overnight at 4°C with 10 μg/ml LPS, 10 μg/ml dsDNA, or 10 μg/ml recombinant human insulin (Sigma-Aldrich, St. Louis, MO, USA). After five washes in PBS with 0.05% Tween 20, serum was added and incubated for 2 hr at room temperature. Plates were then washed in PBS with 0.05% Tween 20, incubated for 1 hr with either HRP-conjugated goat anti-human IgM or IgG (Invitrogen, Camarillo, CA, USA), washed again, and developed using 3,3′,5,5′-tetramethylbenzidine (eBioscience, San Diego, CA, USA). Optical density was read at 450 nm absorbance. Supernatants from polyreactive IgM and IgG B cell cultures generated as described (Porcheray et al., 2012) and provided by Dr. Emmanuel Zorn (Columbia University) were used to establish standard curves.
 
-## Histopathological analysis for HIS mouse models
+### Histopathological analysis for HIS mouse models
 
 For postmortem histopathology, spleen from HIS mice were excised, fixed in zinc-formalin (Sigma), and embedded in paraffin. Serial 5 µm sections were stained with H&E and images were acquired using Aperio AT2 (Leica Biosystems, Wetzlar, Germany).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Spleens from HIS mice were fixed with formalin and embedded in paraffin. FFPE tissues were cut using a Leica microtome at 5 μm. Cuts were done sequentially, placed on slides and left to dry for 24 hr prior to antibody staining. Tissues were deparaffinized and rehydrated by warming at 60°C for 1 hr followed by a serial bath of xylene and ethanol dilutions (100%, 95%, 80%, 70%, water). Antigen retrieval was performed using Borg RTU de-cloaking solution and a pressure cooker. The pressure cooker was set for 15 min at 11°C. Antigen retrieval was followed by permeabilization with confocal buffer for 1 hr. Titrated primary antibodies were added and left at 40°C overnight. Tissues were washed three times in 1× PBS and blocked with mouse and/or goat serum for 1 hr. Then, anti-human CD3 Alexa Fluor 488 (UCHT1, BioLegend, 1:50 dilution), anti-human CD20 Alexa 647 (Abcam, EPR1622Y), and peanut agglutinin (PNA/GC) antibodies were incubated for 1 hr at room temperature followed by three washes, then incubation with secondary antibodies for 2 hr. Tissues were washed again in 1× PBS followed by staining with nuclear marker DAPI and Fluoromount G mounting media.
 
 For detection of mouse-reactive human IgM and IgG antibodies, sera from HIS mice were incubated on pancreas, liver, spleen, kidney, thymus, small intestine, large intestine, skin, bone, and lung sections taken from a naïve NSG mouse. After incubation for 2 hr at room temperature, serum was washed away and secondary anti-human IgM and IgG antibodies were added for detection for 2 hr at room temperature. Negative controls were incubated with either no serum or naïve NSG mouse serum followed by secondary antibodies.
 
-## B cell depletion experiments
+### B cell depletion experiments
 
 A group of Mu/Hu mice were generated (Figure 6A) with irradiation (1 Gy) followed by injection with FL CD34+ HSCs. Starting at week 20 post-transplantation, mice were injected with rituximab (1 mg diluted in 1 ml of PBS, injected intraperitoneally) every 3 weeks until week 38. Blood was drawn at various time points before and after rituximab injection to measure human immune cell reconstitution in the blood and IgM levels in the serum. Mice were followed and evaluated for development of autoimmunity.
 
 In another experiment (Figure 6E), Hu/Hu mice generated as described above received intraperitoneal injections of rituximab (1 mg/mouse/injection) starting from week 1 and every 3 weeks until week 31. Serum IgM was checked with ELISA and mice were followed and evaluated for the development of autoimmunity.
 
-## Adoptive transfer experiment
+### Adoptive transfer experiment
 
 Donor Mu/Hu and Hu/Hu mice were sacrificed at 22 weeks and CD4+CD45RA-CD45RO+PD-1+CXCR5+ Tfh and CD4+CD45RA-CD45RO+PD-1+CXCR5- Tph cells were FACS sorted from their pooled (for each donor type) splenocyte suspensions. 2.5×105 Tfh cells or Tph cells were adoptively transferred intravenously into recipient mice. The recipients were thymectomized NSG mice reconstituted 12 weeks earlier with the same HSCs as the Tfh/Tph donors, without a thymus transplant, which therefore contained autologous human APCs but no T cells. Adoptive recipient mice were monitored for disease and peripheral blood was collected from the tail vein once a week. After 9 weeks, adoptive recipient mice were euthanized. Spleens and blood were collected and stained for Tfh, Tph, and B cell analysis. Plasma was also collected for IgM and IgG evaluation.
 
-## Statistical methods
+### Statistical methods
 
 Statistical analyses and comparisons were performed with GraphPad Prism 8.0 (GraphPad Software). All data are expressed as average ± standard error of mean. The nonparametric Mann-Whitney U test was used to compare two groups. One-way analysis of variance (ANOVA) with post hoc Tukey test was performed to compare three groups. Two-way ANOVA was used to resolve overall effects between transplant groups over time. When two-way ANOVA was significant, Bonferroni’s multiple comparison test was run. Spearman’s correlation coefficient was computed to study the strength of correlation between quantitative variables. Wilcoxon matched pairs signed rank test was used when analyzing paired groups. Mantel-Cox tests were used to measure significance of differences in Kaplan-Meier survival curves. p<0.05 was considered to be statistically significant.

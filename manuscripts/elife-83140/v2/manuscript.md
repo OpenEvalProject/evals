@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Department of Systems Biology, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/0464eyp60 Department of Microbiology and Physiological Systems, University of Massachusetts Chan Medical School Worcester United States
-3. https://ror.org/0464eyp60 Program in Microbiome Dynamics, University of Massachusetts Chan Medical School Worcester United States
-4. https://ror.org/0464eyp60 Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States
-5. https://ror.org/0464eyp60 Department of Molecular, Cell and Cancer Biology, University of Massachusetts Chan Medical School Worcester United States
+1. Department of Systems Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Microbiology and Physiological Systems, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+3. Program in Microbiome Dynamics, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+5. Department of Molecular, Cell and Cancer Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
@@ -35,11 +35,23 @@ The tumor-microbiome in pancreatic cancer has attracted much attention recently 
 
 Gemcitabine drug metabolism is well-understood in the model gamma-proteobacteria Escherichia coli (Geller and Straussman, 2018; Figure 1A). The antimetabolite gemcitabine, a nucleoside analog, is imported into the bacterial cell through the nucleoside transporter NupC and is then phosphorylated. Gemcitabine triphosphate may be incorporated into a newly synthesized DNA strand and then may interfere with chain elongation by masked chain termination (similar to mammalian cells; de Sousa Cavalcante and Monteiro, 2014). Therefore, despite its clinical use as an anticancer drug, gemcitabine’s mechanism of action potentially makes it a broadly toxic, antimicrobial compound. Previous works showed that some bacterial species can rapidly convert gemcitabine into the less toxic metabolite 2′,2′-difluoro-2′-deoxyuridine (dFdU) (Geller et al., 2017; Vande Voorde et al., 2014; Lehouritis et al., 2015). In gamma-proteobacteria, gemcitabine degradation proceeds through a specific isoform of the cytidine deaminase enzyme (CddL) (Geller et al., 2017). The well-characterized interactions between tumor cells, gemcitabine, and gamma-proteobacteria puts forth a good model system for testing how bacterial adaptation can impact drug metabolism and potentially influence the tumor’s chemoresistance.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gemcitabine transport and metabolism in E. coli. Similar to deoxycytidine (dC), gemcitabine (dFdC) is imported into the cell through the nucleoside permease NupC. Intracellular gemcitabine is either converted into the less toxic metabolite dFdU by the cytidine deaminase Cdd or is phosphorylated and incorporated into the DNA. (B) Gemcitabine dose–response curves for three E. coli strains (three technical replicates, error bars represent standard deviation, experiment performed once). The inferred IC50 are shown in parenthesis. Gemcitabine IC50 range of 29 pancreatic adenocarcinomas are shown as a box plot above the graph. (C) Overview of the pooled screening approach. Pooled cultures of the knockout strain collection were inoculated (i) and grown for multiple hours with or without gemcitabine (ii), DNA extracted from cells was used to amplify, sequence and calculate the frequency of barcodes that correspond to individual strains (iii), and the ratio of barcode frequencies of each strain in gemcitabine and control conditions were used to identify sensitive and resistant knockouts (iv). Experiment includes three biological replicates (independent inoculums). (D) Volcano plot of the genetic screen results. Green and purple dots represent sensitive and resistant knockout strains, respectively. (E) Highly sensitive and resistant strains. Asterisk marks the gene knockouts likely involved in gemcitabine transport and phosphorylation. Knockouts marked in bold were characterized as slow-growing strains. (F) Statistically significant enriched and depleted KEGG categories identified by the genetic screen (FDR adjusted p-value cutoff: 0.1). The marker size shows the number of genes in the category and the gray scale marks the statistical significance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Bar plots showing the number of reads with or without barcodes across samples (three biological replicates with gemcitabine and without drug). (B) Violin plots showing the frequency of individual barcode counts. (C) Scatter plots of barcode counts across biological replicates (D) Comparison between independent biological replicates of the genetic screen for gemcitabine resistance. Left panel: comparison between the log-fold change in strain enrichment between the original screen and a screen performed with the same strain collection (odd collection) on the different day. Right panel: comparison between the log-fold change in strain enrichment between the original screen and a screen performed with the knockout strain collection that was independently cloned (even collection). Strain marked in purple are resistant knockout strains that were identified in the original screen (Figure 1E). Eleven knockout strains that were gemcitabine resistant in the original screen were not detected at all newly used strain collection (even collection).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The ybcn deletion strain was used as a wild-type control since this gene deletion does not impact E. coli growth and genetic background of this strain is comparable to the other mutants used in the experiment. Background subtracted mean absorbance (600nm) of three technical replicates are plotted. Shaded areas show the standard deviation.
+
 Through a pooled genetic screen, we systematically mapped all loss-of-function mutations that increase E. coli’s resistance to gemcitabine and found that inactivation of over 40 genes increased bacterial resistance by more than 16-fold. This observation led us to conclude that resistance can rapidly emerge under natural selection through gene inactivation within a single evolutionary step. Using a functional assay, we found that one third of top resistance mutations impacted extracellular drug concentrations (gemcitabine activity). Co-culturing bacteria harboring these loss-of-function mutations with cancer cells confirmed that these adaptive mutations in bacteria have the potential to alter chemoresistance of neighboring tumor cells. Finally, through in vitro evolution we studied which adaptations emerge under drug selection in three E. coli strains. We found that inactivation of the drug transporter NupC arises in all evolved strains. This inactivation leads to decreased bacterial drug import and therefore reduces the rate of gemcitabine breakdown. Reduced bacterial breakdown, in turn, increases gemcitabine availability for neighboring tumor cells. Our work reveals that bacterial adaptation to the frontline chemotherapy drug gemcitabine can take place rapidly in vitro. If similar adaptation takes place in gemcitabine-treated patients, it may ultimately increase the chemosensitivity of the hosting tumor. Our in vitro work suggests that monitoring bacterial adaptation to chemotherapy may be required to decide whether chemotherapy should be augmented with antibiotic treatments. Such decisions are nontrivial given that administration of antibiotics can be detrimental to cancer patients (Meriggi and Zaniboni, 2021; Gao et al., 2020; Corty et al., 2020; Elkrief et al., 2019).
 
 ## Results
 
-## The E. coli resistome against gemcitabine
+### The E. coli resistome against gemcitabine
 
 We first set out to determine the inhibitory concentration of gemcitabine in three E. coli strains: BW25113 (a K-12 lab strain), F-18 (a human fecal isolate), and Nissle 1917 (a human fecal isolate that is used as probiotic). We characterized the inhibitory concentrations by monitoring bacterial growth inhibition after 12 hr. Figure 1B shows the sensitivity curves and the inhibitory concentration that reduced culture density by 50% (IC50). We observed that gemcitabine can completely inhibit the growth of all three strains, with F-18 being most sensitive (IC50 = 0.7 µM) and BW25113 being most resistant (IC50 = 103 µM). These concentrations are comparable to the IC50 reported for 29 pancreatic adenocarcinomas in the GDSC2 dataset that tested hundreds of toxic compounds on a thousand cell lines (Yang et al., 2012; boxplot above Figure 1B).
 
@@ -51,9 +63,23 @@ Next, we used the gene set enrichment analysis tool GAGE (Luo et al., 2009) to t
 
 Taken together, the results from our genetic screen outline three adaptation strategies that increase bacteria’s gemcitabine resistance: reduced drug import by inactivating membrane proteins and transporter systems, changes in the drug metabolism through mutations in the target pathway, and inactivation of metabolic genes that slowdown bacterial growth. Importantly, since these resistance adaptations arise from knockout of single genes, they are all accessible within a single evolutionary step (e.g., a single gene inactivating mutation).
 
-## The impact of bacterial resistance on bacterial drug degradation
+### The impact of bacterial resistance on bacterial drug degradation
 
 Our genetic screen revealed alternative adaptation strategies that increase bacterial resistance against gemcitabine. However, for most loss-of-function mutations, it remains to be determined how they will influence the rate of bacterial drug degradation (and ultimately drug availability for neighboring cancer cells). We therefore designed a functional assay to detect changes in drug activity, after bacterial incubation with the drug, relative to its activity after incubation with the wild-type strain (outlined in Figure 2A). We incubated a knockout strain of interest in saline with a high gemcitabine concentration and collected the conditioned supernatant after a short incubation period (15 or 45 min). We diluted the conditioned supernatant into regular media and monitored the growth of a drug-sensitive reporter strain (a cdd knockout that cannot degrade gemcitabine) in this media. Finally, we used growth curves of the reporter strain as a proxy for the gemcitabine concentration in the conditioned supernatant. We reasoned that a conditioned supernatant containing high drug concentration is indicative of slow degradation by the strain of interest. This difference in drug concentration will in turn manifest as slow growth of the reporter strain (blue curve in Figure 2A). We note that this detection method is insufficient to resolve the mechanism underlying the slowed degradation since it only measures drug availability in the extracellular environment after incubation (e.g., both slow import and slow deamination will be interpreted as slow degradation).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-v2.jpg)
+
+**Figure 2.:** (A) The functional drug breakdown assay. Each knockout strain was inoculated in saline containing gemcitabine and incubated for 15 or 45 min. Conditioned supernatant was then filtered and mixed with fresh media before inoculating a reporter strain. Reporter strain growth was used as a proxy for changes in gemcitabine availability in the conditioned supernatant. (B) Results of the drug breakdown assay for the top 88 resistant knockouts. A third of all tested knockouts (33/88) influenced the drug degradation rate. (C) Chemical validation of the functional assay for the slowest and fastest degraders. GC-MS was used to measure gemcitabine concentration (shaded area, top panels) and its degradation product dFdU (hatched area, lower panels) in conditioned supernatant (colors as in A). The dashed black curve marks the measurements after incubation with the wild-type strain. The error bars show the standard deviation of three biological replicates. (D) Co-culture experiments shows bacterial mutations can influence gemcitabine efficacy in neighboring spheroids of cancer cells. Representative microscopy images of spheroids that were co-cultured with wild-type bacteria across multiple concentrations of drug and bacteria (large images show the same spheroid before the wash, after the wash that removed dead cell debris, and after image segmentation). (E) Bacterial mutations that modulate drug degradation can impact drug efficacy in neighboring cancer cells. Results of spheroid experiments with the slowest and fastest degraders and the inferred fitness landscapes. Each panel shows the fitness landscape calculated from spheroid size across a range of gemcitabine and bacteria concentrations (as in D). The color code shows the normalized spheroid size (ranging from the smallest spheroid to the largest one). The dashed black line marks the parameter combination (bacteria and gemcitabine concentrations) that reduce spheroid growth by 50% (EC50 front), and solid lines show the EC50 front for the knockout strains. Shifts in the EC50 front, relative to the wild-type front, indicate that co-incubation with the knockout strain during drug exposure altered the spheroid’s chemoresistance.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The title of each graph shows the knockout strain that was incubated with gemcitabine before the reporter strain was inoculated into the filtered conditioned supernatant. (A) Mean growth curves of the reporter strain in the conditioned supernatant filtered after 15 min of co-incubation (three biological replicates) with the 88 tested knockout strains. Statistically significant fast degraders are shown with red color (one-tailed Student’s t-test with FDR-corrected p-adj<0.1). (B) Mean growth curves of the reporter strain in the conditioned supernatant filtered after 45 min of co-incubation (three biological replicates) with 88 tested knockout strains. Statistically significant slow degraders are shown with blue color (one-tailed Student’s t-test with FDR-corrected p-adj<0.1).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The fitness landscape inferred for the slowest and fastest bacterial degraders relative to the wild-type strains. Each panel shows the fitness landscape calculated from spheroid size across a range of gemcitabine (0 μM to 57.6 μM as 1.5-fold dilutions) and bacterial concentrations(0–32 million as two-fold dilutions). The color code shows the normalized spheroid size (ranging from the smallest spheroid to the largest one). The dashed black line marks the parameter combination (bacteria and gemcitabine concentrations) that reduce spheroid growth by 50% (EC50 front) and solid lines show the EC50 front for the knockout strains. Shifts in the EC50 front, relative to the wild-type front, indicate that co-incubation with the knockout strain during drug exposure altered the spheroid’s chemoresistance.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig2-figsupp3-v2.jpg)
 
 We evaluated drug activity after incubation of the 88 most resistant strains, the top 42 resistors found by the strict enrichment cutoff (Figure 1E) and the next 46 resistant strains (supernatant collection was repeated three times on different days). Figure 2B shows a summary of the results of this assay (Figure 2—figure supplement 1 shows observed growth curves). We found one third of the tested knockout strains modulated extracellular drug availability (33 of 88). Specifically, 11% of all strains were fast degraders and 26% of strains were slow degraders (one-tailed t-test, FDR-adjusted p-value<0.1). We next decided to validate the conclusions of our functional assay using an independent chemical approach for the wild-type and three knockout strains. We focused on the fastest and the slowest degraders and cdd knockout as a control. We incubated each strain with gemcitabine and sampled aliquots of the supernatant at predetermined timepoints (20, 45, and 75 min). We then used gas chromatography–mass spectrometry (GC-MS) to measure the concentration of gemcitabine and its degradation product in the conditioned supernatant (Figure 2C). In agreement with our functional assay, the GC-MS measurements confirmed that the gene knockouts indeed altered the availability of gemcitabine and in the extracellular environment. The increased availability of the drug breakdown product (dFdU) support the conclusion that rate of drug metabolism is underlying this change (as opposed to intracellular drug accumulation; Klünemann et al., 2021).
 
@@ -63,23 +89,35 @@ We used our systematic measurements of spheroid area to fit a fitness landscape.
 
 Taken together, the results of the spheroid experiments demonstrate that mutations impacting gemcitabine degradation rates in bacteria can indeed impact neighboring cancer cells simultaneously with the drug. Importantly, we observed that bacterial resistors can have opposite influences on gemcitabine sensitivity of co-cultured cancer cells. For examples, the nupC knockout decreased chemoresistance while the cytR knockout increased it. A key question remaining is which adaptations will naturally transpire during bacterial evolution under drug selection.
 
-## Evolved bacterial resistance against gemcitabine
+### Evolved bacterial resistance against gemcitabine
 
 The genetic screen uncovered multiple loss-of-function mutations that confer bacterial gemcitabine resistance. Yet, such screens are insufficient for determining which gene inactivation, if any, will emerge under natural selection. Moreover, since evolution can leverage additional processes beyond gene inactivation, such as gain-of-function, adaptation may follow an entirely different evolutionary trajectory. We applied the widely used serial transfer approach to select for evolved drug resistance in bacteria (Dragosits and Mattanovich, 2013). Such in vitro experiments can shed light on the mechanisms underlying resistance and the time scale needed to acquire resistance. To test whether reoccurring adaptations emerge, we used the three E. coli strains that were characterized by different drug sensitivity levels (Figure 1B). Once the serial transfer experiment ended, we evaluated whether drug resistance increased in the population and isolated single-resistant clones for whole-genome sequencing (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig3-v2.jpg)
 
-**Figure 3.:** E. coli strains.(A) Overall approach for the lab evolution experiment. Three E. coli strains were evolved over 50 generations in serial transfer evolution experiment. We measured gemcitabine resistance of last day populations and eight single clones were isolated from each population. A single resistant clone was used for the whole-genome sequencing and for identifying of the underlying mechanism for drug resistance. (B) Heatmaps showing the temporal changes in gemcitabine IC50 of evolving populations in each day of the serial transfer experiment. (C) Gemcitabine dose–response curves of last day populations from lab evolution experiment. All of the gemcitabine evolved lines, but not the control evolved lines, developed a high resistance against gemcitabine. Error bars show the standard deviation of three technical replicates. (D) Pie charts showing the gemcitabine IC50 levels of screened clones. Slices represent the clone selected for whole-genome sequencing. Color scale is the same as panel (B).
+**Figure 3.:** (A) Overall approach for the lab evolution experiment. Three E. coli strains were evolved over 50 generations in serial transfer evolution experiment. We measured gemcitabine resistance of last day populations and eight single clones were isolated from each population. A single resistant clone was used for the whole-genome sequencing and for identifying of the underlying mechanism for drug resistance. (B) Heatmaps showing the temporal changes in gemcitabine IC50 of evolving populations in each day of the serial transfer experiment. (C) Gemcitabine dose–response curves of last day populations from lab evolution experiment. All of the gemcitabine evolved lines, but not the control evolved lines, developed a high resistance against gemcitabine. Error bars show the standard deviation of three technical replicates. (D) Pie charts showing the gemcitabine IC50 levels of screened clones. Slices represent the clone selected for whole-genome sequencing. Color scale is the same as panel (B).
 
 We evolved three independent populations of each E. coli strain in sub-inhibitory concentrations of gemcitabine (‘Materials and methods’) and three control populations without any drug. We monitored drug resistance in all populations daily throughout the experiment (Figure 3B). We observed that resistance emerged within a day or two for the Nissle 1917 and F-18 strains, while it emerged more slowly for the BW25113 strain. Last day populations from all strains that evolved in gemcitabine were resistant to the drug across all tested drug concentrations (Figure 3C). In order to isolate individual resistant clones, we streaked each of the evolved population on agar plates and measured IC50 dose for eight independent colonies. (Figure 3D). Almost all clones from Nissle 1917 and F-18 drug evolved strains were resistant. However, clones from the BW25113 populations showed heterologous levels of resistance. All clones isolated from the populations that evolved without the drug were gemcitabine sensitive. We chose a single clone from each population for further analysis (marked as extruding slices in the pie charts in Figure 3D). These individual clones represent lineages that evolved completely independently from one another.
 
-## Inactivation of nupC underlies evolved drug resistance
+### Inactivation of nupC underlies evolved drug resistance
 
 Phenotypic measurements revealed that all drug-evolved populations became highly resistant. We next sequenced the genomes of evolved clones to identify the underlying adaptive mutations and identified mutations with the BreSeq software (Barrick et al., 2014). Figure 4A shows the mutations we identified in the single clones as circa plots (concentric circles representing the bacterial chromosomes). Annotation of mutations in F-18 required careful manual inspection since its reference genome consists of 113 contigs. As the figure shows, we observed that the genomes of all the drug-evolved clones harbored nupC mutations while none of the control-evolved clones had such mutations. Supplementary file 3 provides the BreSeq information of mutations we identified. Importantly, while we found additional mutations beyond those in the nupC gene, we did not observe another gene that was repeatedly mutated across all independent replicates in all of the E. coli strains. The only other repeated mutation we identified involved the yahF gene in two lines of F-18 that also shared an identical nupC mutation (transposon). Inspecting the BreSeq report and the contig files led us to believe both lines shared single new junction that impacted both the nupC and yahF loci.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-v2.jpg)
+
+**Figure 4.:** (A) Circa plots showing the mutations identified by whole-genome sequencing in pure clones isolated from independently evolved populations. Mutations in the coding region of the nupC gene were observed across all gemcitabine-evolved clones but not in the no-drug control evolved clones. Since the F-18 genome is not fully assembled, relative positions on the F-18 circa plot are not real genomic positions. (B) Pie chart showing the frequency of various mutation types identified by sequencing the nupC gene across 96 spontaneous gemcitabine resistant mutants in the BW25113 strain. (C) A comparison of the evolutionary conservation of missense mutation positions relative to the conservation of all positions in the nupC gene. The positions of the missense mutations are statistically biased towards the conserved positions (p-value = 1.95 * 10–4 in Wilcoxon rank-sum test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The color code shows the conservation level inferred for the NupC protein with the ConSurf server. Mutations shown in black are found in spontaneous mutants isolated from agar plates containing high concentrations of gemcitabine. Mutations shown in red are missense mutations found in the gemcitabine-evolved strains. del: deletion; ins: insertion; fs: frameshift-causing mutation; IS: insertion element (transposon insertion).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83140/elife-83140-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Errorbars show the 95% confidence intervals (data from ten technical replicates for each biological replicate). Each experiment was performed with four biological replicates/single colonies.
+
 The mechanism of mutation in the nupC gene varied across the gemcitabine-evolved strains and included point mutations, large deletions, and new junction formation within nupC coding region that can stem from transposon insertions and genomic rearrangements. Two of the point mutations we identified were missense mutations (S175P and V249A). To evaluate whether these point mutations likely interfere with the permease function, we used the ConSurf Server that identifies evolutionarily conserved positions (Ashkenazy et al., 2016). The analysis revealed that both positions are highly conserved and are therefore likely important for the permease function (positions marked in red in Figure 4—figure supplement 1). Lastly, we examined the function of all other genes that were mutated in evolved strains to pinpoint additional putative adaptive mutations. We identified a new genomic junction, likely originating from a transposon insertion, upstream to the uvrA gene. The uvrA gene codes for A subunit in the UvrABC nuclease that is involved in the nucleotide excision repair pathway (Keseler et al., 2017). The mutation impacted the annotated promoter of the gene according to regulonDB (Gama-Castro et al., 2016). Taken together, we concluded that resistance emerged across all 12 sequenced and independently gemcitabine-evolved strains primarily through inactivation of the nucleoside permease NupC.
 
-## Mechanisms underlying convergence towards nupC inactivation
+### Mechanisms underlying convergence towards nupC inactivation
 
 Gemcitabine adaptation in our evolution experiments likely emerged through inactivation of nupC across all evolved strains. This convergence can be driven by multiple mechanisms that are not necessarily exclusive to one another. Evolutionary trajectories are influenced by multiple parameters, including the adaptation benefit (e.g., the level of resistance the mutation confers), the adaptation cost (e.g., if it reduces growth), and the likelihood that the mutation will appear spontaneously. We reasoned that quantifying these parameters for the nupC gene would provide insight into the forces underlying the evolutionary convergence we observed.
 
@@ -105,65 +143,171 @@ While we believe this work illuminates an underexplored and potentially impactfu
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 Bacterial strains used in this study are shown in Table 1. We used the E. coli barcoded knockout strain collection for the pooled genetic screen (similarly to Rosener et al., 2020; Noto Guillen et al., 2021). All experiments measuring gemcitabine breakdown were performed with strains from the KEIO strain collection (Baba et al., 2006). For spheroid experiments, double knockout strains were generated with P1 transduction method (Thomason et al., 2007) using pyrD knockout strain from the barcoded library and the desired gene knockout from the KEIO collection. The pyrD knockout background was used since it is a pyrimidine auxotroph that cannot grow in the media used to culture the spheroids.
 
+**Table 1.**
+ Bacteria used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Source</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli BW25113</td>
+      <td>Walhout Lab, University of Massachusetts Chan Medical School, MA, USA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli F-18</td>
+      <td>McCormick Lab, University of Massachusetts Chan Medical School, MA, USA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli MG1655</td>
+      <td>Brewster Lab, University of Massachusetts Chan Medical School, MA, USA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli Nissle 1917</td>
+      <td>ArdeyPharm GmbH, (Pharma Zentrale GmbH), Germany</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli KEIO knockout collection</td>
+      <td>Dharmacon (GE Life Sciences)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E. coli Barcoded knockout collection (barcoded library)</td>
+      <td>Hirotada Mori, Nara Institute of Science and Technology, Japan</td>
+      <td>Parent Strain: BW38028</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆cdd::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆cytR::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆envZ::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆glnG::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆ihfB::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆nupC::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆ompR::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆phoR::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆rfaG::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆ubiF::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆yfjG::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+    <tr>
+      <td>BW25113 ∆pyrD::tGFP-chlr-barcode ∆yohK::kanr</td>
+      <td>Barcoded library, KEIO Collection</td>
+      <td>Double knockout was generated by P1 transduction</td>
+    </tr>
+  </tbody>
+</table>
+
 For all experiments, bacteria were inoculated into Lysogeny Broth (LB) and grown overnight at 37°C, 200 rpm orbital shaking. Knockout strains were grown in LB media supplemented with 50 μg/mL kanamycin (KEIO strain collection) or 25 μg/mL chloramphenicol (barcoded strain collection). All growth and serial evolution experiments were performed in M9 minimal media supplemented with 0.2% amicase and 0.4% glucose. Experiments designed to monitor gemcitabine breakdown were performed in PBS (functional assay) or in 0.9% saline (GC-MS).
 
-## Barcoded strain library
+### Barcoded strain library
 
 The E. coli barcoded deletion library was used as in our previous studies (Rosener et al., 2020; Noto Guillen et al., 2021). The parent strain of this library is BW38028 with the genotype Δ(araD-araB)567 lacZp-4105(UV5)-lacY hsdR514, rph+ (Conway et al., 2014). The library includes two sets of 3680 knockout strains (each set with different barcodes: odd and even libraries). After overnight growth in nutrient-poor synthetic media (M9), we identified 3512 barcodes in one set and 3226 barcodes in the other set (3145 knockout strains were detected in both collections). In each strain, the open-reading frame of a single gene was replaced in-frame with a fragment containing turbo GFP, chloramphenicol resistance cassette, and a unique 20 bp sequence that serves as an identification barcode. Since the barcode is the only variable region across strains, it can be amplified from a mixed culture of strains with a single pair of primers. We used primers that amplify a 325 bp region.
 
-## Measurement of bacterial gemcitabine dose–responses and IC50
+### Measurement of bacterial gemcitabine dose–responses and IC50
 
 On the day of the experiment, a 384-well plate containing serially diluted gemcitabine in M9 was prepared at 2× concentration in a volume of 35 µL. For the day-to-day IC50 measurements (Figure 3B), a sample from daily evolving populations was directly diluted 1:200 into the microtiter plate with gemcitabine. For measurement of gemcitabine resistance of evolved populations (Figure 3C), a sample from frozen last day glycerol stocks of evolution experiment was inoculated into 3 mL LB for overnight culture. Overnight cultures were diluted to OD (600 nm) of 1 in M9 and were added to the 384-well plate (1:200 final dilution). For single-colony gemcitabine IC50 experiments (Figure 1B and Figure 3D), single colonies were grown overnight in 3 mL LB and the same dilution protocol was followed as evolved populations. The prepared microplates (with bacteria and gemcitabine dilutions) were incubated at 37°C and 360 rpm double orbital shaking in an automated plate reader (BioTek Eon) and absorbance (600 nm) was monitored every 10 min for 18 hr. All measurements were performed in technical triplicates. Each evolved population is considered as a separate biological replicate (three biological replicates per evolution condition; one biological replicate is shown in the figure for control evolved population). A MATLAB script was used to fit the dose–response curves and infer the IC50 values. Individual growth curves were assessed for quality control and to determine the exclusion criteria for analysis.
 
-## Pooled genetic screen
+### Pooled genetic screen
 
 We thawed a frozen glycerol stock of the pooled barcoded strain collection and inoculated 15 µL of the stock into 25 mL of M9 supplemented with chloramphenicol for overnight growth at 37°C and 200 rpm shaking. In the morning, the culture was diluted to OD (600 nm) of 1, and then diluted 1:400 into 7 ml of M9 with or without 140 µM gemcitabine. We prepared triplicates for each of the two conditions (quadruplicates in validation screens). The tubes were incubated at 37°C shaker and OD was monitored periodically. Once culture crossed OD (600 nm) 0.6, we collected the cells and extracted genomic DNA with a commercial kit (Zymo Quick DNA miniprep Plus Kit, Cat# D4068). Library preparation was identical to the protocol we previously developed (Rosener et al., 2020). Briefly, genomic DNA isolated from endpoint of the genetic screen was quantified using Qubit dsDNA high sensitivity kit (Thermo Fisher, Cat# Q32854). We used 6.25 ng DNA to prepare the DNA library. First, barcoded region was amplified using the following primers and 2× KAPA HiFi Hotstart ReadyMix (Kapa Biosystems, Cat# KK2602), which yielded ~350 bp product. PCR products were purified using AMPure XP beads (Beckman Coulter, Cat# A63881). Nextera XT Index Kit protocol (Illumina, Cat# FC-131-1024) was used to add indices and Illumina sequencing adapters to each PCR sample. Next, products were purified using AMPure XP bead (Beckman Coulter, Cat# A63881) purification protocol. The libraries were then run on a 3% agarose gel, and the product was extracted using NEB Monarch DNA Gel Extraction Kit (NEB, Cat# T1020L). Next, we used Agilent High Sensitivity DNA Kit (Agilent Technologies, Cat# 5067-4626) to evaluate the quality and average size of the libraries. Using Qubit dsDNA high-sensitivity kit, we measured the concentration and calculated the molarity of each library. Libraries were normalized to 4 nM, denatured, and diluted according to Illumina MiniSeq/NextSeq System Denature and Dilute Libraries Guide. After pooling, sequencing was performed using MiniSeq High Output Reagent Kit, 75-cycles (Illumina, Cat# FC-420-1001) or NextSeq 500/550 High output Reagent Kit v 2.5, 75-cycles (Illumina, Cat# 20024906). Raw reads were converted to barcode counts using a MATLAB script, which compared a database of all barcodes to the reads (Rosener et al., 2020).
 
 We identified the enriched or depleted hits by comparing the relative frequency of individual barcodes when the pooled library grew in the presence or absence of gemcitabine. For this analysis, we used the barcode counts and identified barcodes with significant changes in their relative frequency with DEBRA (Akimov et al., 2020). We discarded barcodes with less than 10 counts. We used ‘Wald statistical test’ and a cutoff value of 16-fold for enrichment and FDR-adjusted p-value of 0.05. Next, we performed gene set enrichment analysis with GAGE (Luo et al., 2009) using KEGG (Kanehisa et al., 2016) and GO (Ashburner et al., 2000) databases at a FDR-adjusted p-value of 0.1. We used published data on the KEIO strain collection (Supplementary file 3 in Baba et al., 2006) to classify slow-growing knockouts. Specifically, we used the optical density measurements made after 24 hr of growth of the strain collection on minimal defined media (MOPS) and defined a cutoff value of 0.11 to discriminate normal and slow growth. We chose this cutoff value by the bimodal distribution of the density measurements in the dataset (this value separated the data into two unimodal histograms with 124 slow-growing strains and 4178 strains with normal growth).
 
-## Rapid gemcitabine breakdown assay
+### Rapid gemcitabine breakdown assay
 
 We picked from the KEIO strain collection the top 88 gemcitabine-resistant knockouts that were identified in the genetic screen. Knockout strains that were not found in the KEIO collection were picked from the barcoded knockout collection. The strains were grown in LB media with appropriate antibiotic at 37°C and 200 rpm shaking. We included six overnight cultures of the wild-type strain (BW25113) as controls. The next day, all strains were diluted to OD (600 nm) of 0.5 into 1 mL PBS with gemcitabine (200 μM) in a 96-deep well plate. The plate was incubated in a shaker at 37°C, 900 rpm orbital shaking. 250 μL of the supernatant was sampled after 15 and 45 min and filtered by spinning down at 5000 × g using a 96-well plate 0.22 μm filters (PALL Corporation, Cat# 8119). We repeated this procedure for obtaining conditioned buffer three times on different days as independent biological replicates.
 
 After we obtained the conditioned buffers, we evaluated the amount of residual gemcitabine in left by monitoring the growth of a gemcitabine-sensitive reporter strain (cdd knockout). The cdd knockout was grown overnight in 3 mL M9 media at 37°C, 200 rpm shaking. The next day, the culture was first diluted to OD (600 nm) 1 and then further diluted 1:500 into M9 media. We aliquoted 150 μL of this culture into a 96-well plate and added 50 μL of conditioned buffer to each well. The plate was incubated at 37°C and 360 rpm double orbital shaking in an automated plate reader (BioTek Eon/TECAN). Absorbance (600 nm) was monitored every 10 min for 7 hr. We used the growth measurements from media supplemented with buffer after 15 min of incubation to identify fast degraders and growth measurements from media supplemented with buffer after 45 min of incubation to identify slow degraders. We used a statistical test to identify fast and slow degraders. For this test, we calculated the area under the growth curve (AUC) after blank subtraction for each replicate and used a one-tailed t-test to test whether the conditioned buffer from a knockout strain (three biological replicates) reduced or increased the AUC of the reporter strain compared to the buffer prepared with the wild-type strain (18 replicates). We used an FDR-adjusted p-value of 0.1 as a cutoff for statistical significance.
 
-## GC-MS measurement of gemcitabine and dFdU
+### GC-MS measurement of gemcitabine and dFdU
 
 We picked the knockout strains directly from frozen glycerol stock of the barcoded knockout collection and grew them overnight in 3 mL M9 media at 37°C, 200 rpm shaking. The next day, cultures were washed in saline (distilled water with 0.9% NaCl) and cultures were diluted to an OD (600 nm) of 0.125 in 1350 μL of saline in a 96-deep well plate. Gemcitabine was added to each well to reach a final concentration of 80 μM, and cultures were incubated in microplate shaker at 900 rpm and 37°C. We sampled 450 μL from the cultures at predetermined time points and filtered the samples using 0.22 μm filters by centrifugation at 5000 × g for 5 min. We froze the conditioned supernatants at –20°C until the GC-MS measurements were performed. This experiment was performed as three biological replicates (independent three overnight cultures and independent co-incubations).
 
 For GC-MS measurements, first 200 μL of bacterial culture supernatants (or standard solution) were dried under vacuum. Dried samples were derivatized by adding 20 μL of pyridine and 50 μL of N-methyl-N-(trimethylsilyl) trifluoroacetamide (Sigma-Aldrich, Cat# M-132) followed by incubation for 3 hr at 37°C. The derivatization reaction was allowed to complete for 5 hr at room temperature. Measurements were performed on an Agilent 7890B single quadrupole mass spectrometer coupled to an Agilent 5977B gas chromatograph with an HP-5MS Ultra Inert capillary column (30 m × 0.25 mm × 0.25 μm). Helium was used as carrier gas at flow rate of 1 mL/min (constant flow). The temperatures were set as follows: inlet at 230°C, the transfer line at 280°C, the MS source at 230°C, and quadrupole at 150°C. 1 μL of sample was injected in a splitless mode. Initial oven temperature was set to 80°C, held for 1 min and then increased to 270°C at a rate of 20°C/min, then further increased to 285 at a rate of 5°C/min. MS parameters were three scans/s with 30–500 m/z range, electron impact ionization energy 70 eV. Analytes were identified based on retention time, one quantifier and two qualifier ions that were manually selected using a reference compound. Gemcitabine was quantified as m/z 241 ion eluted at 13.14 min, 2',2'-difluorodeoxyuridine was quantified as m/z 242 ion eluted at 11.42 min and peak integration and quantification of peak areas were done using MassHunter software (RRID:SCR_015040).
 
-## Spheroid experiments
+### Spheroid experiments
 
 We plated CT26 mouse colon carcinoma cell-line (RRID:CVCL_7256) on 96-well low attachment plates (Costar, Cat# 7007) as 4000 cells/well to form spheroids. Cells were incubated in RPMI 1640 media (Gibco, Cat# 11875-093) with 2 mM L-glutamine, 5% fetal bovine serum (Gibco, Cat# 26140-079) and 25 mM HEPES Buffer (Corning, Cat# 25-060CI). The plates were centrifuged at 3000 × g for 5 min and kept in a tissue culture incubator with 37°C with 5% CO2. After 4 days of spheroid growth, we serially diluted bacterial cultures into the spheroid microplate and incubated the co-culture for 4 hr with gemcitabine (1.6-fold serially diluted across the columns). Note that all the tested bacterial mutants in this experiment were on pyrD knockout background (a pyrimidine auxotroph) to avoid bacterial proliferation in cell culture media that does not contain any nucleotides. Next, the plate was washed with cell culture media with 50 μg/ml gentamicin three times. To achieve this, we used 96-channel handheld electronic pipette (Integra, Viaflo 96) and made use of gravity force. 100 μL media was aspirated capturing the spheroid from the bottom of the wells. After the spheroids sank to the bottom of the tips, the tips were touched to the surface of a fresh plate containing culture media with 50 μg/mL gentamicin, leaving the spheroids in the new plate. We chose a 4 hr time interval to address two opposing requirements of the co-culture system – mitigate overgrowth of the bacterial cultures (which hinders spheroid growth irrespective of the drug) while still allowing enough incubation time to allow for drug degradation. While removal of bacteria after 4 hr may limit the bacterial impact, such a limitation will only result in underestimation of the bacterial impact (but will have no impact on how we evaluate how strains compare to one another).
 
 After three washes, the 96-well plate was transferred to an S3 imaging platform (Incucyte, Sartorius) which is housed inside a tissue culture incubator. The plate was imaged every 6 hr to track spheroid growth and validate that there was no residual contamination of resistant bacteria (evident by bacterial overgrowth). After 7 days of growth, spheroids were washed once using cell culture media with 50 μg/mL gentamicin to get rid of any dead cell and cellular debris and a final microscopy image was captured. We calculated the area of individual spheroids using the Incucyte software (segmentation sensitivity: 40; minimum area filter: 2000 μm2). A MATLAB script was used to make the fitness landscapes by fitting polynomial equations. The following are the steps followed: (1) normalization by timepoint zero: we divided the last day spheroid area to day zero spheroid area (4 days post cell seeding). (2) Normalization by plate: we subtracted the minimum spheroid area from all spheroid areas and divided that value by second largest spheroid area in the plate minus minimum spheroid area. (3) Fitting 3D surface and calculating EC50 lines: we fitted a mesh surface using normalized spheroid areas (2D) using a four-degree polynomial function (‘poly44’). Lastly, we marked the EC50 line by calculating the coordinates of the 3D mesh surface where the values corresponded to a mid-response (value of 0.5). This experiment was performed with high resolution of conditions (12 × 8 conditions), which did not require technical replication.
 
-## Lab evolution experiment
+### Lab evolution experiment
 
 We evolved bacteria in sub-inhibitory doses of gemcitabine using a standard serial transfer protocol (200 µM for BW25113, 750 µM for Nissle 1917, 100 µM for F-18) in a deep 96-well plate. For each strain, a single colony was picked for each individual evolution line and grown overnight in M9 media (three biological replicates per condition). The cultures were normalized to OD (600 nm) 1 and diluted 1:200 to a total volume of 1200 µl M9 (with or without gemcitabine). The 96-well plate was incubated at 37°C, 200 rpm shaking and was diluted 1:200 daily into fresh media for a period of 7 days (~53 generations). Resistance of evolving populations was measured daily by diluting the cultures 1:200 into a 384-well plate (35 µl per well) containing serially diluted gemcitabine (prepared in M9 at 2× concentration at a volume of 35 µL). The microplate was incubated at 37°C and 360 rpm double orbital shaking in automated plate reader (BioTek Eon) and absorbance (600 nm) was monitored every 10 min for 18 hr. All absorbance measurements were performed in technical triplicates. All downstream experiments were performed using the frozen last day populations.
 
-## Whole-genome sequencing and analysis of lab evolution experiment
+### Whole-genome sequencing and analysis of lab evolution experiment
 
 We isolated single individual colonies from last day of the independently evolved populations by streaking them on LB agar plates. Eight colonies were selected and gemcitabine IC50 levels were determined using microtiter plate-based assay. The gDNA was extracted from selected clones using Zymo Quick-DNA Fungal/Bacterial Miniprep Kit (Cat# 11-321). Ancestor gDNAs from the replicates of each strain were pooled at equal ratio and processed as a single sample. DNA sequencing was performed by Seqcenter (Pittsburg, PA). Seqcenter prepared libraries using Illumina DNA Prep Kit and IDT 10 basepair UDI indices. Sequencing was performed on Illumina NextSeq 2000 device (2 × 151 bp reads). For all samples, demultiplexing, quality control, and adapter trimming were performed with bcl2fastq (Illumina) and trimgalore (Trim Galore, RRID:SCR_011847). DNA sequencing yielded a median coverage of ~120× per reference genome. We used BreSeq tool to identify and annotate mutations (Barrick et al., 2014). Mixed ancestor populations were run in breseq population mode to evaluate all existing mutation variants and all other samples were run as pure clones. The following are the NCBI accession numbers for the reference genomes we used in the analysis: CP009273 for E. coli BW25113; CP058217.1 for E. coli Nissle 1917; and MLZI01000100.1 for F-18. The BreSeq gdtools SUBTRACT/COMPARE was used to substract mutations that existed in the ancestor population (mutations existing 30% or more were considered) from the independently evolved clones. Then, we inspected BreSeq reports to resolve unassigned junction evidence (we did not evaluate the unassigned missing coverage). Supplementary file 3 includes the mutations identified in all clones after manual inspection of the BreSeq reports. Only the mutations that exist in the evolved clones but not in the ancestor were visualized on concentric circles shown in Figure 4A using circa software (OMGenomics). Since F-18 genome consists of 113 contigs, the genomic locations shown on F-18 circa plot are undetermined. Mutations identified on contigs with low/unusual coverage were ignored (these are usually observed on small contigs that are shorter than 1 kb and frequently arise due to challenges in read mapping).
 
-## Obtaining spontaneous nupC mutants
+### Obtaining spontaneous nupC mutants
 
 We cultured 96 cultures of the BW25113 strain from individual colonies overnight in LB media (96 biological replicates). In the morning, 100 µL of each culture were plated with glass beads on M9 agar plates containing 0.5 mM gemcitabine. A day after, a single colony, corresponding to single spontaneous resistant mutant, was isolated from each agar plate. A 1.3 kb region spanning the entire nupC coding region was amplified by colony PCR and Sanger sequenced with forward (5′ TCACAGGACGTCATTATAGTG 3′) and reverse (5′ TGAGAGTAATTCATCGGCAC 3′) primers. We annotated mutations by pairwise alignment of the Sanger sequencing results with the nupC coding sequence of the reference genome (Supplementary file 5). Short insertions and deletions identified in the alignment were annotated as indels. Point mutations identified in the alignment were annotated as missense or nonsense mutations according to their impact on the coding sequence. Insertion of transposon was inferred by a truncated (local) alignment to a region in the nupC coding sequence followed by alignment of the remaining sequence to a known transposon. We note that mutations in the promoter region were not sequenced or annotated by this method due to the position of the primers. However, some mutations in this region may account for some of the spontaneous resistant mutants that were not annotated as having nupC mutation (Figure 4B).
 
-## Luria–Delbruck fluctuation experiment
+### Luria–Delbruck fluctuation experiment
 
 For each strain, we inoculated four single colonies into 1 mL M9 medium and grew them at 37°C, 200 rpm shaking for 12 hr. Cultures were diluted to OD (600 nm) of 1 in M9. A 10–6 dilution of OD1 was used to determine accurate CFU/OD (600 nm) by plating on LB agar plates. A 10–4 dilution of OD 1 was further diluted 27-fold and transferred into 10 wells of a 96-well plate as 200 μL/well (initial population size [N0]: approximately 730 cells/well). The 96-well plate was incubated at 37°C, 1000 rpm shaking overnight. Next day, OD (600 nm) of two wells from the 96-well plate was measured to estimate the final population size (Nt). Next, all cultures were diluted 1:40 into 1 mL of 0.9% saline. We plated 200 μL of each cell suspension on M9 agar plates (plating efficiency [ɛ], 1:40) containing selective amounts of gemcitabine (0.5 mM for BW25113, Nissle 1917, MG1655; 62.5 μM for F-18) or furazolidone (1 mg/mL for BW25113, Nissle 1917, MG1655; 2 mg/mL for F-18). Plates were incubated at 37°C for 18 hr, and the number of colonies was determined. Then, mutation rates were calculated using the RSalvador package in R (Zheng, 2017). First, mutation frequency (m) was calculated using the function newton.LD.plating (and 95% confidence intervals were calculated using conf.LD.plating). Then mutation frequency (m) was divided to Nt to find mutation rate per generation (p). These numbers later normalized to a gene that is 1000 bp long.
 
-## Justification for cell lines
+### Justification for cell lines
 
 Murine colorectal carcinoma cell line (CT26) used in this article was identified as Mycoplasma free, and the cell identity was confirmed by STR profiling (ATCC). According to testing results STR profile was 98% similar to CT26.CL25(ATCC, #CRL-2639). The manuscript refers to this cell line as CT26. This cell line is not in the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Materials and data availability statement
+### Materials and data availability statement
 
 E. coli barcoded library used in this study was kindly provided by Dr. Hirotada Mori. Gemcitabine/no drug evolved BW25113 and F-18 populations are available upon request. Gemcitabine/no drug evolved E. coli Nissle 1917 strain and its ancestors cannot be shared with third parties due to material transfer agreement conditions between University of Massachusetts Chan Medical School, USA, and Ardeypharm, GmBH, Germany, unless there is written permission from Ardeypharm, GmBH, Germany.
 

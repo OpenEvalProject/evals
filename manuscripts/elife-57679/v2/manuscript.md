@@ -35,15 +35,31 @@ Here, we investigate the mechanisms by which ZNF165 modulates TGFβ-dependent tr
 
 ## Results
 
-## SMAD3 is enriched at ZNF165 binding sites in TNBC cells
+### SMAD3 is enriched at ZNF165 binding sites in TNBC cells
 
 To comprehensively investigate whether ZNF165 interfaces with the TGFβ transcriptional network, we first generated a SMAD3 genomic binding profile in WHIM12 cells, where ZNF165 is essential for growth (Maxfield et al., 2015). WHIM12 cells were originally developed from a patient-derived xenograft established from a triple-negative, highly chemo-resistant tumor (Li et al., 2013). Moreover, these cells are classified within the claudin-low molecular subtype of breast cancer, which exhibits activated TGFβ signaling (Prat et al., 2010; Asiedu et al., 2011; Sabatier et al., 2014). We found that SMAD3 binding is associated with over >27,000 sites in WHIM12 cells, comparable to previous studies of SMAD3 binding in TNBC cell lines (Tufegdzic Vidakovic et al., 2015). Intersecting SMAD3 and ZNF165-associated genes revealed that >90% of ZNF165 target genes are also bound by SMAD3, an overlap representing a statistically significant enrichment (p=5.5e-120, hypergeometric distribution) (Figure 1A). This is in agreement with our previous findings that ZNF165 targets a significant fraction of the TGFβ-responsive transcriptome (Maxfield et al., 2015). Mapping the distance between binding sites further revealed that 90% of shared targets were bound by both transcription factors at a distance of less than 100 kb from one another (Figure 1B). Furthermore, 36% of shared target genes had ZNF165 and SMAD3 binding sites within 1 kb, a proximity at which both factors exhibited overlap on chromatin due to the broad enrichment profile of SMAD3 as observed within our dataset (Figure 1B–E). We next established ZNF165 and SMAD3 binding profiles in SUM159 cells, which are also classified within the claudin-low molecular subtype and require ZNF165 for viability (Prat et al., 2010; Maxfield et al., 2015). SMAD3 enrichment at the ZNF165 binding sites here closely resembled that of WHIM12 cells (Figure 1C–E; Figure 1—figure supplement 1A–C). Further analysis of SMAD3 binding in MDA-MB-231 cells corroborated these findings (Figure 1—figure supplement 1D–F). Together these data demonstrate that despite differences in the genetic backgrounds of TNBC tumor cells, ZNF165 and SMAD3 exhibit significant co-occupancy on chromatin throughout the genome.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig1-v2.jpg)
+
+**Figure 1.:** (A) Venn diagram displaying the overlap between ZNF165 and SMAD3 target genes in WHIM12 cells as identified by GREAT (ver 3.0.0). Significance was determined using the hypergeometric distribution. (B) Cumulative frequency distribution of the nearest distance between ZNF165 and SMAD3 binding sites associated with each shared target gene. Distance was calculated using the peak coordinates of each factor nearest to one another. (C) Browser tracks of ChIP-seq data showing peaks for ZNF165 and SMAD3 near the CDC25B and BCAR1 loci with overlapping distances of 223 and 680 bp, respectively. (W) WHIM12, (S) SUM159. (D) Heatmaps of ChIP-seq data for ZNF165 and SMAD3 in the indicated TNBC cell lines. All peaks within each heatmap are centered ±2.5 kb from the ZNF165 peaks identified in WHIM12 cells (n = 322). (E) Normalized read density (per bp per peak) for SMAD3 plotted ±2.5 kb from the ZNF165-SMAD3 co-bound peaks identified in WHIM12 cells (n = 118). (F) Pie charts displaying the distribution of genomic features bound by ZNF165-SMAD3 (n = 118) or only SMAD3 (n = 27,979) in WHIM12 cells. (G) Motifs enriched at ZNF165-SMAD3 co-bound sites within WHIM12 cells. The 204 ZNF165 binding sites not occupied by SMAD3 were used as a control set of sequences to identify differentially enriched motifs at the shared sites (n = 118). (H) Motif density (per bp per peak) for the GCCG(G|C)C motif plotted ±2.5 kb from the ZNF165-SMAD3 co-bound peaks in WHIM12 cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Venn diagram displaying the peak overlap between ZNF165 binding sites identified in WHIM12 and SUM159 cells. P-value was calculated using the hypergeometric distribution. (B) Venn diagram displaying the peak overlap between ZNF165 and SMAD3 in WHIM12 cells. Genes associated with the 118 co-bound peaks are listed in Supplementary file 1. P-value was calculated using the hypergeometric distribution. (C) As in (B) except using peaks identified in SUM159 cells. (D) Heatmaps of SMAD3 ChIP-seq data in WHIM12, SUM159, and MDA-MB-231 cells. All peaks within each heatmap are centered ±2.5 kb from the SMAD3 peaks identified in WHIM12 cells (n = 27,979). Data for MDA-MB-231 cells were obtained from EGAS00001001570 (Tufegdzic Vidakovic et al., 2015). (E) Venn diagram displaying the overlap between SMAD3 peaks identified in each cell line. (F) Browser tracks of ChIP-seq data showing peaks for ZNF165 and SMAD3 near the CDC25B and BCAR1 loci with overlapping distances of 223 and 680 bp, respectively. (W) WHIM12, (S) SUM159, (M) MDA-MB-231. (G) Gene set enrichment analysis (GSEA) of ZNF165-responsive genes in WHIM12 cells. Transcriptome data for ZNF165 knockdown was obtained from GSE63984 (Maxfield et al., 2015). Genes included within this gene set are listed in Supplementary file 2. (H) Kaplan-Meier plot displaying distant metastasis free survival in breast cancer patients with high (red) or low (black) ZNF165 expression. P-value and hazard ratio (HR) were calculated using the logrank test.
+
 We identified 118 sites where ZNF165 and SMAD3 were bound within 1 kb of each other in WHIM12 cells (Figure 1—figure supplement 1B, Supplementary file 1). More than 50% of these ZNF165-SMAD3 co-bound sites were present in gene promoters (−1 kb or +100 base pairs from TSS) while the majority of SMAD3 binding sites were generally distributed across different genomic regions (Figure 1F). Motif enrichment analysis revealed a significant presence of GC-rich motifs at the ZNF165-SMAD3 co-bound regions (n = 118) compared to those bound by ZNF165 alone (n = 204) (Figure 1G and H). Such GC-rich SMAD binding elements (SBEs) have recently been characterized as universal binding sites for receptor-activated SMAD proteins, and SMAD3 can bind variants of these motifs with high affinity (Martin-Malpartida et al., 2017). Thus, the GC-rich SMAD3 binding element may be an underlying genomic feature of the ZNF165-occupied sites that facilitates co-occupancy. Collectively, these data suggest that ZNF165 and SMAD3 may form cis-regulatory modules on chromatin to direct TGFβ-mediated gene expression in TNBC. In support of this notion, gene set enrichment analysis of ZNF165-responsive genes in WHIM12 cells revealed a significant enrichment of genes involved in the epithelial-to-mesenchymal transition (EMT), a SMAD3-dependent process that promotes metastasis in response to TGFβ signaling (Figure 1—figure supplement 1G, Supplementary file 2; Tian et al., 2003; Xu et al., 2009; Petersen et al., 2010). Consistent with this, elevated ZNF165 expression in patients with breast cancer is associated with a greater metastatic potential (Hazard Ratio (HR) = 1.4; p=0.004) (Figure 1—figure supplement 1H).
 
-## ZNF165 and SMAD3 cooperate to modulate TGFβ-responsive gene expression
+### ZNF165 and SMAD3 cooperate to modulate TGFβ-responsive gene expression
 
 Given the enrichment of SMAD3 and ZNF165 at shared sites and their general proximity to one another on chromatin, we next asked whether these transcription factors cooperate to regulate expression of co-bound genes. We leveraged a previously generated gene expression data set of TGFβ responsiveness in WHIM12 cells (Maxfield et al., 2015). Here, we assembled a set of 65 TGFβ-responsive genes that are co-bound by SMAD3 and ZNF165 (Figure 2—figure supplement 1A). We then compared the impacts of ZNF165 and SMAD3 depletion on a subset of these genes. This analysis revealed a significant correlation (r = 0.52) between expression fold-changes in response to depletion of either transcription factor (Figure 2A). In particular, ZNF165 and SMAD3 were required to either activate or repress expression of the majority of shared target genes (quadrant I and III, Figure 2A). We also observed opposing effects of SMAD3 and ZNF165 on a smaller subset of genes, suggesting that in some cases, the activities of these two proteins may oppose one another (quadrant II and quadrant IV, Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig2-v2.jpg)
+
+**Figure 2.:** (A) WHIM12 cells were transfected with siRNA for 48 hr, and qPCR was used to quantify relative expression (log2 fold change) of ZNF165-SMAD3 target genes upon depletion of ZNF165 (x-axis) or SMAD3 (y-axis). The Pearson correlation coefficient is indicated by r. Data are representative of four independent experiments. (B) WHIM12 cells were transfected with siRNA for 72 hr. Whole cell lysates were collected and immunoblotted for the indicated proteins. Data are representative of two independent experiments. (C) As in (B) except cells were transfected with siRNA targeting SMAD3. (D) SUM159 cells were transfected with siRNA for 32 hr and subjected to SMAD3 ChIP followed by qPCR using primers targeting the indicated binding sites. Fold enrichment was determined by dividing the percent input values for SMAD3 by those for IgG. Error bars represent mean ± SEM. P-values were calculated using an unpaired, two-tailed Student’s t-test. Data are representative of four independent experiments. (E) SUM159 cells were transfected with siRNA for 32 hr and subjected to H3K27ac ChIP followed by qPCR using primers targeted to the RRAD promoter or a negative control region. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Mann-Whitney test. Data are representative of four independent experiments. (F) SUM159 cells stably expressing ZNF165-V5 or control cDNA were subjected to H3K27ac ChIP followed by qPCR using primers targeted to the RRAD promoter or a negative control region. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Mann-Whitney test. Data are representative of four independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap plotting the log2 fold-change in expression of 65/446 shared ZNF165-SMAD3 target genes (cutoff >0.25) following TGFβ exposure in WHIM12 cells. Expression data were obtained from GSE63986 (Maxfield et al., 2015). (B) Kaplan-Meier plots displaying overall survival and distant metastasis free survival (DMFS) for patients with the mesenchymal subtype of TNBC and high or low RRAD expression. P-values and hazard ratios (HRs) were calculated using the logrank test. (C) As in (B) except for patients with ER+ breast cancer. (D) TNBC cell line dependency scores calculated from CRISPR-mediated perturbation (as determined by CERES) plotted against RRAD expression (log2(TPM+1)) (Barretina et al., 2012; Meyers et al., 2017). Negative dependency scores represent a decrease in viability. Data were obtained from the Cancer Dependency Map (depmap.org). (E) Soft agar growth assays for SUM159 cells transfected with indicated siRNAs. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Student’s t-test. Data are representative of three independent experiments. (F) As in (E) except using MCF7 cells.
 
 The observed expression changes in Figure 2A suggest two modes of regulation for ZNF165-SMAD3 targets. First, ZNF165 collaborates with SMAD3 to activate or oppose TGFβ-mediated gene expression changes (quadrant I and III, Figure 2A). Alternatively, ZNF165 can antagonize SMAD3-mediated activation or repression of shared target genes in response to TGFβ (quadrant II and IV, Figure 2A). The majority of genes fell into the former category, with SMURF2 and RRAD being the two most responsive and were thus selected as archetypes for follow-up analysis. Importantly, we found that RRAD and SMURF2 protein accumulation corresponded to mRNA alterations upon ZNF165 or SMAD3 depletion (Figure 2B and C).
 
@@ -51,7 +67,7 @@ Given the observed collaborative function of ZNF165 and SMAD3 on target gene exp
 
 We reasoned that the coordinated activity of ZNF165 and SMAD3 could modulate expression of genes required for tumorigenic phenotypes. Indeed, SMURF2 is a well characterized negative regulator of the TGFβ pathway whose expression is activated in a TGFβ-dependent, SMAD-independent manner by PI3K signaling (Ohashi et al., 2005). Together with our previous findings, data presented here now indicate that ZNF165 coordinates SMAD3 to repress SMURF2 and thereby attenuate negative feedback of TGFβ signaling in TNBC (Maxfield et al., 2015). In addition, a report from 2001 indicated that RRAD is sufficient to promote proliferation of breast tumor cells in vitro and in vivo (Tseng et al., 2001). Based on this observation, we investigated breast cancer gene expression data sets for clinical correlates with RRAD expression. In the mesenchymal subtype of TNBC, which is enriched for active TGFβ signaling and an EMT gene expression signature, RRAD expression correlated with reduced overall survival (HR = 2.31; p=0.04) and greater metastatic potential (HR = 3.18; p=0.05) (Figure 2—figure supplement 1B; Lehmann et al., 2011). Conversely, in luminal tumors, which are traditionally ER+ and exhibit tumor-suppressive TGFβ signaling, RRAD expression correlated with improved overall survival (HR = 0.63; p=0.01) and no correlation was observed with distant metastasis free survival (HR = 1.12; p=0.55) (Figure 2—figure supplement 1C; Perou et al., 2000; Sato et al., 2014). Moreover, DepMap analysis revealed that RRAD perturbation generally leads to a reduction in 2D growth of TNBC cell lines, and we found that RRAD was essential for growth of SUM159 cells in soft agar (Figure 2—figure supplement 1D and E). However, we observed an enhanced growth phenotype in ER+ MCF7 cells, supporting the notion that TGFβ mediates tumor-suppressive phenotypes in more differentiated breast cancer cells and pro-tumorigenic effects in less differentiated cell types (Figure 2—figure supplement 1F; Tian et al., 2003; Massagué, 2008). Collectively, these data suggest that ZNF165 is capable of directing SMAD3 recruitment to TGFβ-responsive target genes, whose altered expression can support malignant behaviors in the context of TNBC.
 
-## ZNF165 physically associates with SMAD3 in a TGFβ-dependent manner
+### ZNF165 physically associates with SMAD3 in a TGFβ-dependent manner
 
 As ZNF165 appears to facilitate SMAD3 recruitment to chromatin, we asked whether these proteins physically associate. Interaction studies using co-expression/co-immunoprecipitation indicated an association between ZNF165 and SMAD3 (Figure 3A). In addition, we found that ZNF165 interacts with the active, phosphorylated form of SMAD3 on chromatin in SUM159 cells stably expressing ZNF165-V5 (Figure 3B). Activation of SMAD3 and its resulting nuclear translocation is dependent on the phosphorylation of its C-terminus by TGFβRI in response to TGFβ (Massagué, 2012). Thus, we employed the serine/threonine kinase inhibitor SB-431542, which selectively inhibits TGFβRI and downstream phosphorylation of SMAD3, to assess whether the ZNF165-SMAD3 interaction is dependent on pathway activation (Figure 3C; Inman et al., 2002; Massagué, 2012). Proximity ligation assays (PLAs) in SUM159 cells treated with TGFβ revealed an endogenous association between ZNF165 and SMAD3, which was significantly diminished by pre-treatment with SB-431542 (Figure 3D). Furthermore, we found that endogenous ZNF165 and SMAD4 also interact in a TGFβ-dependent manner (Figure 3E). Importantly, ChIP-seq analysis did not reveal the presence of ZNF165 binding sites near the SMAD3 or SMAD4 gene loci (Maxfield et al., 2015). This supports the notion that ZNF165 functions to influence SMAD3/4 transcriptional activity via physical association and not through regulation of SMAD3/4 gene expression itself. Taken together, these results indicate that in response to TGFβ, ZNF165 associates with phosphorylated SMAD3 to modulate the transcriptional output of TGFβ signaling in TNBC.
 
@@ -59,15 +75,39 @@ As ZNF165 appears to facilitate SMAD3 recruitment to chromatin, we asked whether
 
 **Figure 3.:** (A) Forty-eight hours after transfection with HA-SMAD3 and/or ZNF165-myc cDNA, HEK293T cells were subjected to immunoprecipitation with HA antibody. Immunoblotting was performed with indicated antibodies. Data are representative of two independent experiments. (B) ChIP was performed in SUM159 cells stably expressing ZNF165-V5 with antibodies against phosphorylated SMAD3 (Ser423/425) or IgG, and the precipitated material was immunoblotted with indicated antibodies. Data are representative of two independent experiments. (C) SUM159 cells were pre-treated with SB-431542 at the indicated concentrations for 15 min, followed by stimulation with 5 ng mL−1 TGFβ for 30 min. Immunoblotting was performed with indicated antibodies. Data are representative of two independent experiments. (D) Proximity ligation assays (PLAs) performed using antibodies against endogenous ZNF165 and SMAD3 in SUM159 cells, where either antibody alone was used as a negative control. Cells were pre-treated with 20 μM SB-431542 or DMSO for 15 min, followed by stimulation with 5 ng mL−1 TGFβ for 30 min. Scale bar, 10 μm. The mean PLA signal (number of foci per nucleus) is quantified (right), where each data point represents the mean signal calculated within one image. P-value was calculated using an unpaired, two-tailed Student’s t-test. Ten images were used per condition and data are representative of three independent assays. (E) As in (D) except antibodies against endogenous ZNF165 and SMAD4 were used.
 
-## ZNF446 is an obligate component of the ZNF165-SMAD3 transcriptional complex
+### ZNF446 is an obligate component of the ZNF165-SMAD3 transcriptional complex
 
 We reasoned that ZNF165 and SMAD3 likely function within a multi-protein transcriptional complex to mediate gene expression changes in response to TGFβ. Therefore, we searched for additional ZNF165 interactors using proteomics data generated from a systematic yeast two-hybrid (Y2H) screening approach (Rolland et al., 2014). This search returned 48 putative ZNF165 interacting partners, 17 of which are likely transcriptional regulators based on the presence of known gene regulatory domains (Supplementary file 3). To triage these candidates, we focused on those containing a SCAN (SRE-ZBP, Ctfin51, AW-1 and Number 18) domain, which is well-documented to mediate specific interactions among SCAN-zinc finger proteins (ZFPs) and the only domain within ZNF165 aside from its zinc finger array (Figure 4A; Edelstein and Collins, 2005). We identified five putative interactors with SCAN domains and examined the consequences of their depletion on SMURF2 expression. Of the proteins tested, ZNF446 and SCAND1 phenocopied the changes in gene expression observed for ZNF165 and SMAD3 in two TNBC cell lines (Figure 4B). Examination of their tumor expression patterns revealed that ZNF446 is upregulated in breast tumors, an increase that trends with reduced survival in the triple-negative enriched basal-like subtype of breast cancer (HR = 1.89; p=0.059) (Figure 4—figure supplement 1A and B; Perou et al., 2000; Sørlie et al., 2001). Moreover, we found that depletion of ZNF446 significantly reduced anchorage-independent growth of TNBC cells (Figure 4—figure supplement 1C). Co-expression/co-immunoprecipitation assays confirmed that ZNF165 and ZNF446 interact and that deletion of the ZNF165 SCAN domain abrogates this association (Figure 4C). In addition, an endogenous interaction between ZNF165 and ZNF446 was detectable in TNBC tumor cell nuclear extracts, confirming these proteins interact in the relevant subcellular compartment (Figure 4D). We then employed the SMAD3/4 PLA assay described above and found that ZNF446 interacts with both SMAD3 and SMAD4 in a TGFβ-dependent fashion, similar to ZNF165 (Figure 4E and F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig4-v2.jpg)
+
+**Figure 4.:** (A) ZNF165 interactors that contain a SCAN domain as identified from a systematic yeast two-hybrid screening approach (interactome.dfci.harvard.edu). A domain map of ZNF165 is shown above for reference. (B) Forty-eight hours after transfection with indicated siRNAs, RNA was extracted from WHIM12 or SUM159 cells and qPCR was used to determine the relative expression of SMURF2. Log2 fold-change values normalized to control knockdown samples are displayed. Error bars represent mean + SEM. P-values were calculated for each sample using a one-tailed Mann-Whitney test. Data are representative of three independent experiments. (C) Forty-eight hours after transfection with indicated cDNA, HEK293T lysates were subjected to immunoprecipitation with V5 antibody. Immunoblotting was performed with indicated antibodies. Data are representative of three independent experiments. (D) SUM159 nuclear lysates were immunoprecipated with antibodies against endogenous ZNF165 or IgG. Immunoblotting was performed with indicated antibodies. Data are representative of two independent experiments. (E) Proximity ligation assays (PLAs) performed using antibodies against endogenous ZNF446 and SMAD3 in SUM159 cells, where either antibody alone was used as a negative control. Cells were pre-treated with 20 μM SB-431542 or DMSO for 15 min, followed by stimulation with 5 ng mL−1 TGFβ for 30 min. Scale bar, 10 μm. The mean PLA signal (number of foci per nucleus) is quantified (right), where each data point represents the mean signal calculated within one image. P-value was calculated using an unpaired, two-tailed Student’s t-test. Ten images were used per condition and data are representative of three independent assays. (F) As in (E) except antibodies against endogenous ZNF446 and SMAD4 were used.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Box-plot showing ZNF446 expression values (log2 median centered ratio) from normal breast and invasive lobular breast carcinoma. Data were obtained from TCGA and p-value was calculated using an unpaired, two-tailed Student’s t-test. (B) Kaplan-Meier plot displaying overall survival of patients with the basal-like subtype of breast cancer and either low or high ZNF446 expression. P-value and hazard ratio (HR) were calculated using the logrank test. (C) Soft agar growth assays for SUM159 cells transfected with indicated siRNAs. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Student’s t-test. Data are representative of three independent experiments.
+
 To determine if ZNF446 also associates with ZNF165-SMAD3 target genes, we performed ChIP-seq for ZNF446-V5 stably expressed in WHIM12 and SUM159 cells. This led to the identification of 5039 and 7926 binding sites in WHIM12 and SUM159 cells, respectively. In both cell lines, ZNF446 was enriched at the ZNF165 binding sites (Figure 5A and B; Figure 5—figure supplement 1A–C). Intersecting the target genes identified for ZNF446 and ZNF165 further revealed a statistically significant overlap in both WHIM12 and SUM159 cells (p<0.0001, hypergeometric distribution) (Figure 5C and D). Approximately half of all ZNF446 binding sites in WHIM12 cells were also co-occupied by SMAD3 (Figure 5E and F; Figure 5—figure supplement 1D). These co-bound sites were largely enriched for promoter regions compared to the total binding sites for either factor (Figure 5—figure supplement 1E). Differential motif enrichment analysis revealed the presence of a short GC-rich element at these ZNF446-SMAD3 bound sites, closely resembling the motif we identified at ZNF165-SMAD3 bound sites and identical to the recently reported SMAD consensus binding motif (Figure 5G and H; Figure 1G; Martin-Malpartida et al., 2017). In addition, we found that over half of the TGFβ-responsive target genes shared by ZNF165 and SMAD3 (251/446) are also targeted by ZNF446 (Figure 5I). The impact of ZNF446 depletion on expression of these genes significantly correlated with both ZNF165 (r = 0.49) and SMAD3 (r = 0.86) (Figure 5J). Together, these findings collectively implicate ZNF446 as a member of the ZNF165-SMAD3 complex that can influence TGFβ-dependent gene regulation in TNBC.
 
-## TRIM27 is essential for ZNF165 transcriptional activity and tumor growth in vivo
+![Figure 5.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmaps of ChIP-seq data for ZNF165 and ZNF446 in the indicated TNBC cell lines. All peaks within each heatmap are centered ±2.5 kb from the WHIM12 ZNF165 peaks (n = 322). (B) Normalized read density (per bp per peak) for ZNF446 plotted ±2.5 kb from the ZNF165 peaks identified in WHIM12 cells (n = 322). (C) Venn diagram displaying the overlap between ZNF165 and ZNF446 target genes in WHIM12 cells as identified by GREAT (ver 3.0.0). P-value (p<0.0001) was calculated using the hypergeometric distribution. (D) As in (C) except using target genes identified for ZNF165 and ZNF446 in SUM159 cells. (E) Heatmaps of ChIP-seq data for ZNF446 and SMAD3 in WHIM12 cells. All peaks within each heatmap are centered ±2.5 kb from the ZNF446 peaks (n = 5,039). (F) Read density (per bp per peak) for SMAD3 plotted ±2.5 kb from the ZNF446 peaks identified in WHIM12 cells (n = 5,039). (G) Motifs enriched at ZNF446-SMAD3 co-bound sites within WHIM12 cells. The ZNF446 binding sites not occupied by SMAD3 (n = 2,587) were used as a control set of sequences to identify differentially enriched motifs at the shared sites (n = 2,376). (H) Motif density (per bp per peak) for the (G|C)CGCGG motif plotted ±2.5 kb from the ZNF446-SMAD3 co-bound peaks in WHIM12 cells. (I) Venn diagram displaying the overlap between ZNF165, SMAD3, and ZNF446 target genes from WHIM12 cells as identified by GREAT (ver 3.0.0). (J) Heatmap displaying log2 fold-changes of ZNF165-SMAD3 targets in response to depletion of ZNF446, as well as either ZNF165 or SMAD3. The Pearson correlation coefficient is indicated by r. Significance is indicated by asterisks, where *=p < 0.05 and ****=p < 0.0001. Data are representative of four independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Browser tracks of ChIP-seq data showing peaks for ZNF165, SMAD3, and ZNF446 near the ITM2C and ZMPSTE24 loci in WHIM12 or SUM159 cells. (B) Venn diagram displaying the peak overlap between ZNF165 and ZNF446 in WHIM12 cells. P-value was calculated using the hypergeometric distribution. (C) As in (B) except using peaks identified in SUM159 cells. (D) Venn diagram displaying the peak overlap between ZNF446 and SMAD3 in WHIM12 cells. P-value was calculated using the hypergeometric distribution. (E) Pie charts displaying the distribution of genomic features bound by ZNF446-SMAD3 or either transcription factor alone in WHIM12 cells.
+
+### TRIM27 is essential for ZNF165 transcriptional activity and tumor growth in vivo
 
 ZNF446 contains a KRAB (Krüppel-associated box) domain, which is well documented to interact with the RBCC (RING, B-box, coiled-coil) domain of proteins within the tripartite motif (TRIM) family that in turn function as co-repressors or, as recently demonstrated, co-activators (Friedman et al., 1996; Schultz et al., 2001; Schultz et al., 2002; Chen et al., 2019). Y2H-based proteomics confirmed such an interaction of TRIM27, which contains the classic RBCC domain, with ZNF446 (Figure 6A; Supplementary file 3). Originally identified as an oncogenic fusion with the RET tyrosine kinase, TRIM27 has been ascribed roles in numerous cellular processes that include transcriptional repression, proliferation, meiosis, innate immunity, and endosomal trafficking (Takahashi et al., 1985; Shimono et al., 2000; Shimono et al., 2003; Zha et al., 2006; Hao et al., 2013; Zaman et al., 2013; Zheng et al., 2015; Ma et al., 2016). However, its function as a transcriptional regulator in TNBC has not been characterized. Co-expression/co-immunoprecipitation experiments revealed that both ZNF446 and ZNF165 interact with TRIM27 and that all three proteins immunoprecipitate as a complex (Figure 6B). We subsequently confirmed a nuclear interaction between ZNF165-V5 and endogenous TRIM27 by proximity ligation in SUM159 cells and found that TRIM27 depletion also phenocopied changes in ZNF165-SMAD3 target gene expression (r = 0.81) (Figure 6C and D). Notably, TRIM27 appears to be bi-functional, either positively or negatively regulating expression of the ZNF165-SMAD3 targets (quadrant I and III, Figure 6D). Indicative of a co-activator function, we found that TRIM27 is required for the transcriptional activation of RRAD following ZNF165 or ZNF446 overexpression (Figure 6E; Figure 6—figure supplement 1A). Similar to ZNF165 and ZNF446, proximity ligation assays revealed endogenous, nuclear interactions between TRIM27 and both SMAD3 and SMAD4, which were reduced by TGFβ pathway inhibition (Figure 6F and G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cartoon maps showing the domains of ZNF446 and TRIM27. The KRAB-binding domain of TRIM27 is highlighted for reference. (B) Forty-eight hours after transfection with indicated cDNA, HEK293T lysates were subjected to immunoprecipitation with HA antibody. Immunoblotting was performed using indicated antibodies. Data are representative of three independent experiments. (C) Proximity ligation assays (PLAs) performed using V5 and TRIM27 antibodies in SUM159 cells stably expressing ZNF165-V5. Parental SUM159 cells were used as a negative control with the V5/TRIM27 antibody combination. Scale bar, 10 μm. The mean PLA signal (number of foci per nucleus) is quantified (right), where each data point represents the mean signal calculated within one image. P-values were calculated using an unpaired, two-tailed Student’s t-test. Five images were used per condition and data are representative of four independent assays. (D) WHIM12 cells were transfected with siRNA for 48 hr and qPCR was used to quantify relative expression (log2 fold change) of shared ZNF165-SMAD3 target genes upon depletion of ZNF165 (x-axis) or TRIM27 (y-axis). The Pearson correlation coefficient is indicated by r. Data are representative of three independent experiments. (E) SUM159 cells stably expressing indicated cDNA were transfected with siRNA targeting TRIM27 for 48 hr. Relative RRAD expression was measured using qPCR and the data were normalized to the CTRL sample (grey). Error bars represent mean + SEM. P-values were calculated using an unpaired, two-tailed Mann-Whitney test. Significance is indicated by asterisks, where *=p < 0.05. Data are representative of four independent experiments. (F) PLAs performed using antibodies against endogenous TRIM27 and SMAD3 in SUM159 cells, where either antibody alone was used as a negative control. Cells were pre-treated with 20 μM SB-431542 or DMSO for 15 min, followed by stimulation with 5 ng mL−1 TGFβ for 30 min. Scale bar, 10 μm. The mean PLA signal (number of foci per nucleus) is quantified (right), where each data point represents the mean signal calculated within one image. P-value was calculated using an unpaired, two-tailed Student’s t-test. Ten images were used per condition and data are representative of three independent assays. (G) As in (F) except antibodies against endogenous TRIM27 and SMAD4 were used. (H) Tumor volumes from mice orthotopically injected with SUM159T-Luciferase cells stably expressing shRNAs against TRIM27 (n = 10) or a non-targeting control (n = 9). P-value was calculated using an unpaired, two-tailed Student’s t-test. (I) Representative images of bioluminescence (BLI) measurements taken for mice from each group. BLI data was quantified (right) and the p-value was calculated using an unpaired, two-tailed Student’s t-test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57679/elife-57679-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) WHIM12 cells were transfected with indicated siRNA for 72 hr. Whole cell lysates were collected and immunoblotted for the indicated proteins. Data are representative of two independent experiments. (B) Box-plot showing TRIM27 expression values (transcript per million) from normal breast and TNBC. Data were obtained from TCGA and the p-value was calculated using an unpaired, two-tailed Student’s t-test. (C) Immunohistochemistry (IHC) staining for TRIM27 in patient-derived normal breast and TNBC tissues. Scale bar, 50 μm. Nuclear staining was scored (right) using IHC Profiler (Varghese et al., 2014). (D) Soft agar growth assays for SUM159 cells transfected with indicated siRNAs. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Student’s t-test. Data are representative of three independent experiments. (E) SUM159T-Luciferase cells were transduced with indicated shRNAs. After 72 hr, whole cell lysates were collected and immunoblotted for the indicated proteins. Data are representative of two independent experiments. (F) Soft agar growth assays for SUM159T-Luciferase cells transduced with indicated shRNAs. Error bars represent mean + SEM. P-value was calculated using an unpaired, two-tailed Student’s t-test. Data are representative of three independent experiments.
 
 TRIM27 expression is elevated in several cancers including colon, lung, endometrial and ovarian, and often correlates with poor prognosis (Tsukamoto et al., 2009; Horio et al., 2012; Iwakoshi et al., 2012; Zoumpoulidou et al., 2012; Ma et al., 2016; Zhang et al., 2018). Using TCGA data, we found that TRIM27 expression is significantly elevated in TNBC compared to normal breast tissue (Figure 6—figure supplement 1B). Moreover, we stained a small cohort of normal and TNBC tissues for TRIM27 and observed a striking difference in its subcellular localization. TRIM27 appeared to be predominantly cytoplasmic in normal breast epithelia and more nuclear in TNBC tissues, suggesting that its transcriptional activity might associate with the transformed state (Figure 6—figure supplement 1C). This finding is in agreement with previous reports and the Human Tissue Atlas, where TRIM27 is mostly cytoplasmic in normal breast and nuclear in testis and a subset of breast cancer tissues (Tezel et al., 1999; Tezel et al., 2009; Uhlén et al., 2015).
 
@@ -91,66 +131,363 @@ An additional, unexpected finding is that RRAD, whose transcription is highly re
 
 ## Materials and methods
 
-## Cell lines and transfections
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>NOD.Cg-PrkdcscidIl2rgtm1Wjl/SzJ; NSG</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock no. 005557; RRID:IMSR_JAX:005557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MCF7</td>
+      <td>ATCC</td>
+      <td>HTB-22; RRID:CVCL_0031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>WHIM12</td>
+      <td>Li et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SUM159</td>
+      <td>Asterand</td>
+      <td>RRID:CVCL_5423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>SUM159T-Luciferase</td>
+      <td>Westcott et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rat monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat #11867423001; RRID:AB_390918</td>
+      <td>IB (1:1000), IP (1 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Myc (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-789; RRID:AB_631274</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #13202; RRID:AB_2687461</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMAD3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab28379; RRID:AB_2192903</td>
+      <td>IB (1:1000), PLA (1:200), ChIP-qPCR (1.5 μg), ChIP-seq (10 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-SMAD3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #9520; RRID:AB_2193207</td>
+      <td>IB (1:1000), ChIP (5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMURF2 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-393848</td>
+      <td>IB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RRAD (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA537885; RRID:AB_2554493</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZNF165 (Mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>H00007718-M02; RRID:AB_1717273</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZNF165 (Rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>HPA007247; RRID:AB_2797217</td>
+      <td>IB (1:1000), PLA (1:200), IP (5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tubulin (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #2128; RRID:AB_823664</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZNF446 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>16218–1-AP</td>
+      <td>IB (1:1000), PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRIM27 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #15099; RRID:AB_2798707</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R960-25; RRID:AB_2556564</td>
+      <td>PLA (1:500), IP (1 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMAD3 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-101154; RRID:AB_1129525</td>
+      <td>PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMAD4 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-7966; RRID:AB_627905</td>
+      <td>PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TRIM27 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>12205–1-AP; RRID:AB_2256660</td>
+      <td>PLA (1:200), IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K27ac (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab4729; RRID:AB_2118291</td>
+      <td>ChIP-qPCR (2 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal rabbit IgG (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #2729; RRID:AB_1031062</td>
+      <td>IP (1 μg), ChIP-qPCR (1.5–5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab9116; RRID:AB_307024</td>
+      <td>ChIP-seq (5 μg)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Transforming Growth Factor-β1</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #8915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-431542</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat #1614</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA HyperPrep Kit</td>
+      <td>KAPA Biosystems</td>
+      <td>KK8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ PLA Probe Anti-Mouse PLUS</td>
+      <td>Sigma-Aldrich</td>
+      <td>DUO92001; RRID:AB_2810939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ PLA Probe Anti-Rabbit MINUS</td>
+      <td>Sigma-Aldrich</td>
+      <td>DUO92005; RRID:AB_2810942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Duolink In Situ Detection Reagent Red</td>
+      <td>Sigma-Aldrich</td>
+      <td>DUO92008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td>ver 2.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID:SCR_005476</td>
+      <td>ver 2.3.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_002105</td>
+      <td>ver 1.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepTools</td>
+      <td>Ramírez et al., 2016</td>
+      <td>RRID:SCR_016366</td>
+      <td>ver 2.3.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Robinson et al., 2011</td>
+      <td>RRID:SCR_011793</td>
+      <td>ver 2.3.93</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOMER</td>
+      <td>Heinz et al., 2010</td>
+      <td>RRID:SCR_010881</td>
+      <td>ver 4.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GREAT</td>
+      <td>McLean et al., 2010</td>
+      <td>RRID:SCR_005807</td>
+      <td>ver 3.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME</td>
+      <td>Bailey et al., 2009</td>
+      <td>RRID:SCR_001783</td>
+      <td>ver 5.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA</td>
+      <td>Subramanian et al., 2005</td>
+      <td>RRID:SCR_003199</td>
+      <td>ver 4.0.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and transfections
 
 Cell lines were obtained from American Type Culture Collection (ATCC) except for: WHIM12 (Matthew Ellis, Baylor College of Medicine), SUM159 (Asterand), and SUM159T-Luceiferase (Gray Pearson, Georgetown University). All cell lines were cultured in the provider’s recommended medium and authenticated using short-tandem repeat (STR) profiling. Cell lines were regularly tested for mycoplasma and no contamination was observed. For siRNA transfections, cells were trypsinized and seeded in Opti-MEM containing Lipofectamine RNAiMAX (Thermo Fisher Scientific, Waltham, MA) and pooled siRNAs at a final concentration of 50 nM. cDNA transfections in HEK293T cells were performed using the calcium phosphate method as previously described (Maxfield et al., 2015).
 
-## Antibodies and reagents
+### Antibodies and reagents
 
 The following antibodies were used for immunoblotting: HA (3F10; 1:1000; Roche, Basel, Switzerland), c-Myc (sc-789; 1:1000; Santa Cruz Biotechnology; Dallas, TX), V5 (13202; 1:1000; Cell Signaling Technology, Danvers, MA), SMAD3 (ab28379; 1:1000; Abcam, Cambridge, United Kingdom), phospho-SMAD3 (9520, 1:1000; Cell Signaling Technology), SMURF2 (sc-393848; 1:500; Santa Cruz Biotechnology), RRAD (PA537885; 1:1000; Thermo Fisher Scientific), ZNF165 (H00007718-M02; 1:1000; Novus Biologicals, Centennial, CO), ZNF165 (HPA007247, 1:1000; Atlas Antibodies, Bromma, Sweden), Tubulin (2128; 1:1000; Cell Signaling Technology), ZNF446 (16218–1-AP; 1:1000; Proteintech, Rosemont, IL), TRIM27 (15099; 1:1000; Cell Signaling Technology). The following antibodies were used for proximity ligation assays: V5 (R960-25; 1:500; Thermo Fisher Scientific), SMAD3 (ab28379; 1:200; Abcam), SMAD3 (sc-101154, 1:200; Santa Cruz Biotechnology), SMAD4 (sc-7966; 1:200, Santa Cruz Biotechnology), ZNF165 (HPA007247, 1:200; Atlas Antibodies), ZNF446 (16218–1-AP; 1:200; Proteintech), TRIM27 (12205–1-AP; 1:200, Proteintech). ChIP-qPCR experiments were performed with 1.5 μg SMAD3 (ab28379; Abcam; Lot no. GR321957-8), 5 μg phospho-SMAD3 (9520; Cell Signaling Technology; Lot no. 15), 2 μg H3K27ac (ab4729; Abcam; Lot no. GR323132-1), or the appropriate amount of normal rabbit IgG (2729; Cell Signaling Technology; Lot no. 9). ChIP-seq in WHIM12 and SUM159 cells was performed with 10 μg SMAD3 (ab28379; Abcam; Lot no. GR321957-8) or 5 μg V5 (ab9116; Abcam; Lot no. GR3215823-1). Immunoprecipitations used for interaction studies were performed with HA (3F10; Roche), V5 (R960-25; Thermo Fisher Scientific), and ZNF165 (HPA007247; Atlas Antibodies). IHC was performed using TRIM27 (12205–1-AP; Proteintech) at 1:200.
 
 Transforming growth factor-β1 was purchased from Cell Signaling Technology (8915) and SB-431542 was purchased from Tocris Bioscience (Bristol, United Kingdom) (1614). siRNAs targeting ZNF165, SMAD3, ZNF446, TRIM27, SCAND1, ZNF24, ZNF263, or ZKSCAN8, and non-targeting control #2 were obtained from Dharmacon (Lafayette, CO) (Supplementary file 4). siRNAs targeting RRAD (SASI_Hs01_00221658, SASI_Hs01_00221655, SASI_Hs01_00221652, SASI_Hs01_00221653) and shRNAs targeting TRIM27 (SHCLNG-NM_006510; TRCN0000280319 and TRCN0000011021) or a non-targeting control were purchased from Sigma (St. Louis, MO) (Supplementary file 4).
 
-## Expression plasmids
+### Expression plasmids
 
 ZNF165 and ZNF446 cDNA was purchased in pDONR223 vectors from the DNASU Plasmid Repository (Tempe, AZ) and cloned into pLX302-V5 or pLX304-V5 lentiviral vectors, respectively, using the Gateway Cloning system (Thermo Fisher Scientific). psPAX2 and pMD2.G were gifts from Didier Trono (Addgene plasmids #12260 and #12259). SMAD3, SMAD4, and TRIM27 cDNA was obtained in pENTR221 vectors from the UT Southwestern (UTSW) McDermott Center for Human Genetics and subcloned into pCMV-HA or pCMV-myc (Clontech, Mountain View, CA) between SalI and NotI restriction sites. pCMV6-ZNF165-myc was obtained from Origene (Rockville, MD) (RC205600). The SCAN domain of pCMV6-ZNF165-myc was deleted using overlap extension PCR and verified by sequencing and western blot (primers listed in Supplementary file 4).
 
-## Generation of stable cell lines
+### Generation of stable cell lines
 
 Stable cell lines were generated through lentiviral-mediated transduction. HEK293T cells were co-transfected with the target gene vectors (pLX302 or pLX304) and lentiviral packaging plasmids (psPAX2 and pMD2.G). Virus conditioned media was collected 48 hr post transfection and used to infect target cells in the presence of polybrene. Selection with appropriate antibiotics was performed for 3 days following infection to generate stable populations. ZNF165-V5 or ZNF446-V5 expression was confirmed by RT-qPCR, western blotting, and immunofluorescence.
 
-## Western blotting and gene expression analysis
+### Western blotting and gene expression analysis
 
 Western blotting was done as previously described (Maxfield et al., 2015). RNA was isolated using the GenElute Mammalian Total RNA Miniprep Kit (Sigma), and 500 ng RNA was reverse transcribed using the High Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific) according to manufacturer’s instructions. Taqman Real-Time PCR (Thermo Fisher Scientific) gene expression assays were run in technical duplicate to quantify expression on an Applied Biosystems QuantStudio 5 Real-Time PCR System. Relative expression values were calculated using the 2-ΔΔCT method and the data were normalized to RPL27 values. Catalog numbers for Taqman probes used to measure gene expression can be found in Supplementary file 4.
 
-## Chromatin immunoprecipitation (ChIP) and sequencing (ChIP-seq)
+### Chromatin immunoprecipitation (ChIP) and sequencing (ChIP-seq)
 
 Cells were grown to ~90% confluency and crosslinked with 1% formaldehyde for 15 min at 37°C. Crosslinking was then quenched with 0.125 M glycine for 5 min at 4°C. Cells were washed twice with cold PBS and lysed in hypotonic buffer (5 mM PIPES pH 8, 85 mM KCl, 0.5% NP-40, 1 mM DTT). All buffers were supplemented with Complete Protease Inhibitor Cocktail (Sigma). Nuclei were pelleted at 2,000 rpm for 5 min and resuspended in lysis buffer containing 50 mM Tris pH 7.9, 1% SDS, 10 mM EDTA, and 1 mM DTT. Chromatin was sheared into 200–400 bp fragments using a Bioruptor sonicator (Diagenode), clarified by centrifugation at max speed for 10 min, and diluted (1:10) in buffer containing 20 mM Tris pH 7.9, 0.5% Triton X-100, 150 mM NaCl, 2 mM EDTA, and 1 mM DTT. Lysates were pre-cleared with Protein A/G agarose beads (Thermo Fisher Scientific) for 1 hr and, following removal of input material, incubated with appropriate antibodies overnight at 4°C. Protein A/G agarose beads blocked with BSA were then added to lysates for 2 hr, followed by one low salt wash (20 mM Tris pH 7.9, 125 mM NaCl, 0.05% SDS, 1% Triton X-100, 2 mM EDTA), one high salt wash (20 mM Tris pH 7.9, 500 mM NaCl, 0.05% SDS, 1% Triton X-100, 2 mM EDTA), a more stringent wash (10 mM Tris pH 7.9, 250 mM LiCl, 1% NP-40, 1% sodium deoxycholate, 1 mM EDTA), and a final wash in TE buffer (10 mM Tris pH 7.9, 1 mM EDTA). For western blotting of immunoprecipitated proteins, beads were boiled in 2X Laemmli sample buffer (containing 4% β-mercaptoethanol) for 5–10 min. Otherwise, chromatin was eluted from beads with 100 mM NaHCO3 and 1% SDS, and de-crosslinking was carried out overnight at 65°C. RNA and protein were digested with RNase A (3 μg/mL) and Proteinase K (50 μg/mL), respectively. DNA was purified using phenol/chloroform/isoamyl alcohol (25:24:1) and precipitated overnight with isopropyl alcohol at −20°C.
 
 Libraries of ChIP DNA were prepared using the KAPA Hyper Prep Kit (KAPA Biosystems, Cape Town, South Africa) according to the manufacturer’s instructions. Samples were multiplexed with Illumina adapters (NEB, Ipswich, MA) and 75 bp single end reads (~50M per sample) were generated on an Illumina NextSeq 500 (UTSW McDermott Center Next Generation Sequencing Core). Raw reads were aligned to the human genome assembly (hg19) using Bowtie2 (ver 2.3.2) with the ‘sensitive’ parameters enabled, and the mapped read files were sorted and indexed with SAMtools (ver 1.6). BigWig files for visualization on the IGV genome browser (Robinson et al., 2011) were generated using DeepTools (ver 2.3.5). ChIP-seq was performed using biological duplicates for each sample. WHIM12 ZNF165-V5 ChIP-seq data was previously generated and is available under GEO accession GSE65937. All other ChIP-seq datasets have been deposited under GEO accession GSE130364.
 
-## ChIP-seq peak calling and annotation
+### ChIP-seq peak calling and annotation
 
 Peaks were called using the HOMER (ver 4.9) findPeaks module with size and minimum distance parameters set to 150 bp and 370 bp, respectively. Target genes for each transcription factor were identified using GREAT version 3.0.0 (great.stanford.edu) with default parameters. The HOMER mergePeaks module was used to identify overlapping peaks with a size parameter of 1000 bp. Tag density plots were generated using the HOMER annotatePeaks module with size and bin size parameters set to 5000 and 5 bp, respectively. The same module with the genomeOntology parameter enabled was used to annotate the genomic regions associated with each factor. For heatmap generation, the HOMER annotatePeaks module was used to create matrix files, which were clustered with Cluster 3.0 and visualized with Java TreeView (ver 1.1.6r4). To identify motifs enriched at co-bound sites, motif discovery was performed with MEME (ver 5.1.1) in ‘differential enrichment’ mode. Motif density plots were generated using the HOMER annotatePeaks module with size and bin size parameters set to 5000 and 5 bp, respectively.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 ChIP was performed as described above, and qPCR was carried out using SYBR green reagents in technical duplicates (Thermo Fisher Scientific) on an ABI QuantStudio 5 Real-Time PCR System. Three ten-fold dilutions were used to generate standard curves and the amount of ChIP DNA relative to corresponding input values (percent input) was calculated. SMAD3 enrichment was determined relative to IgG percent input values within the same treatment or condition. Primer sequences are listed in Supplementary file 4.
 
-## Proximity ligation assays
+### Proximity ligation assays
 
 Proximity ligation assays (PLAs) were performed using Duolink reagents (Sigma) according to manufacturer’s instructions. Briefly, cells attached to glass coverslips were fixed with 3.7% formaldehyde for 15 min and then permeabilized with 0.5% Triton X-100 for 15 min. Blocking was performed for 1 hr at 37°C, and cells were incubated with appropriate antibodies overnight at 4°C. After washing, coverslips were incubated with PLUS (rabbit) and MINUS (mouse) secondary probes for 1 hr at 37°C. Ligation was performed for 30 min at 37°C, followed by rolling circle amplification for 100 min at 37°C. Coverslips were washed, mounted to glass slides in medium containing DAPI, and kept at 4°C. Cells were imaged using a Keyence BZ-X710 fluorescence microscope at 100x magnification and 5–10 regions of interest were captured on each coverslip. PLA signals were quantified using ImageJ by counting the average number of foci per nucleus in any given image.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 For co-expression/co-immunoprecipitation studies, cells were lysed for 30 min on ice in non-denaturing lysis buffer (NDLB) containing 50 mM HEPES pH 7.4, 150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 25 mM β-glycerophosphate, 1 mM EDTA, 1 mM EGTA, 1 mM Na3VO4, 1 μg mL−1 pepstatin, 2 μg mL−1 leupeptin, 2 μg mL−1 aprotinin, and 10 μM bestatin. Lysates were clarified at 12,000 g for 10 min and pre-cleared with Protein A/G agarose beads for 1 hr at 4°C. Five percent of each lysate was set aside as input material and the remainder was immunoprecipitated with appropriate antibodies for 0.5–4 hr at 4°C. Protein A/G agarose beads blocked with 0.5% BSA were added in the final 30 min of immunoprecipitation. Beads were then washed three times in NDLB and once in NDLB containing 500 mM NaCl. For endogenous immunoprecipitation of ZNF165, ~2×108 cells were collected and lysed in a hypotonic buffer (5 mM PIPES pH 8, 85 mM KCl, 0.5% NP-40) supplemented with Complete Protease Inhibitor Cocktail (Sigma) for 20 min. Nuclei were pelleted at 2,000 rpm for 5 min and resuspended in RIPA buffer (50 mM HEPES pH 7.4, 150 mM NaCl, 1% Triton X-100, 0.5% sodium deoxycholate, 0.5% SDS, 25 mM β-glycerophosphate, 1 mM EDTA, 1 mM EGTA, 1 mM Na3VO4) supplemented with Complete Protease Inhibitor Cocktail. Nuclear lysis was facilitated by gentle agitation at 4°C with intermittent sonication (5–10 pulses at 5 s each using a Fisher Scientific Model 60 Sonic Dismembrator). Lysates were clarified at 16,000 g for 10 min, concentrated to a volume of 1–2 mL, and pre-cleared with Protein A/G agarose beads for 1 hr at 4°C. Five percent of each lysate was set aside as input material and the remainder was subjected to immunoprecipitation overnight at 4°C. The next day, Protein A/G agarose beads blocked with BSA were added to lysates for 2 hr, followed by four washes in a buffer containing 50 mM HEPES pH 7.4, 150 mM NaCl, 1% Triton X-100, 25 mM β-glycerophosphate, 1 mM EDTA, 1 mM EGTA, 1 mM Na3VO4, and Complete Protease Inhibitor Cocktail. Immunoprecipitated proteins were eluted in 2X Laemmli sample buffer (containing 4% β-mercaptoethanol) by boiling for 5–10 min.
 
-## Soft agar assays
+### Soft agar assays
 
 4 × 103 SUM159 or MCF7 cells were trypsinized, counted, and resuspended in 0.366% Bacto agar in complete medium and seeded on a layer of solidified 0.5% Bacto agar in 6-well plates 48 hr post-transfection. After solidification, another layer of complete medium containing 2X FBS was added. Cells were grown for 14 days (fed every 3 days) and then stained with 0.05% crystal violet in phosphate-buffered saline (PBS) overnight. Images were taken using a LEICA MZ75 stereomicroscope at a magnification of 6.3X and colony number was quantified using ImageJ software.
 
-## Tumor expression and patient survival analysis
+### Tumor expression and patient survival analysis
 
 Normal/tumor expression data for ZNF446 and TRIM27 was generated by the TCGA Research Network (https://www.cancer.gov/tcga) and visualized with Oncomine and UALCAN, respectively (Rhodes et al., 2004; Chandrashekar et al., 2017). Survival analysis was performed using Kaplan Meier plotter (Györffy et al., 2010). For ZNF165, expression data was bifurcated using the upper quartile. For RRAD expression data was bifurcated using median and lower tertile for OS and DMFS, respectively. For ZNF446, expression was based on median values. Hazard ratios and p-values were calculated using the logrank test.
 
-## Human breast tissue immunohistochemistry (IHC)
+### Human breast tissue immunohistochemistry (IHC)
 
 Normal breast and TNBC tissues were obtained with informed consent from the UTSW Tissue Management Shared Resource (TMSR) in compliance with the UTSW Internal Review Board committee. TRIM27 IHC was optimized and performed by the TMSR according to internal protocols using the Dako Autostainer Link 48 system. Quantification of nuclear TRIM27 signal was performed using IHC Profiler (ImageJ) according to the developer’s guidelines (Varghese et al., 2014).
 
-## Orthotopic xenografts
+### Orthotopic xenografts
 
 SUM159T-Luciferase cells (5 × 105) stably expressing TRIM27 shRNAs or a non-targeting hairpin were injected in the mammary fat pad of 10 week old female NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ (NSG) mice obtained from the Jackson Laboratory as previously described (Westcott et al., 2015). Ten mice per condition were tested. Eight mice allowed for the comparison of the mean values of two different samples (Control and Test) with a standard deviation value of up to 60% of the difference between the means and a power of 0.8 using a two−sample t test. Ten mice were used to account for possible technical problems in handling samples after the mouse is sacrificed, the need to prematurely sacrifice mice because of an adverse response to surgical or non−surgical procedures, illness, or complete failure of tumor growth. Mice were assigned to groups randomly. Tumors were measured weekly using a digital caliper and volume (V) was calculated using the following formula: V = (Length x (Width2))/2. Starting four weeks post injection, tumors were measured weekly with bioluminescent imaging (BLI). At six weeks post injection, mice were sacrificed after obtaining final BLI measurements. These studies were conducted in accordance with a UT Southwestern Institutional Animal Care and Use Committee (IACUC) approved protocol.
 
-## Statistical analysis
+### Statistical analysis
 
 Graphpad Prism (Graphpad Software) was used to perform statistical analyses. Data were assessed by one or two-tailed, unpaired t-tests or Mann-Whitney, or hypergeometric distribution. P-values less than 0.05 were considered significant. Biological replicates were considered to be experiments performed on distinct samples, while technical replicates were considered identical samples run in parallel.

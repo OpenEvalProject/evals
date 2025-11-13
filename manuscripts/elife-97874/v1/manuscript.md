@@ -17,11 +17,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04dkp9463 Integrative Model-Based Neuroscience Research Unit, University of Amsterdam Amsterdam Netherlands
-2. https://ror.org/027bh9e22 Cognitive Psychology Unit, Institute of Psychology and Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands
+1. Integrative Model-Based Neuroscience Research Unit, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+2. Cognitive Psychology Unit, Institute of Psychology and Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
 3. Full brain picture Analytics Leiden Netherlands
-4. https://ror.org/01wy3h363 Department of Psychology, Shandong Normal University Jinan China
-5. https://ror.org/05xg72x27 Norwegian University of Science and Technology Trondheim Norway
+4. Department of Psychology, Shandong Normal University Jinan China ([ROR:01wy3h363](https://ror.org/01wy3h363))
+5. Norwegian University of Science and Technology Trondheim Norway ([ROR:05xg72x27](https://ror.org/05xg72x27))
 
 † Corresponding author
 
@@ -55,11 +55,206 @@ Taken together, this 7T fMRI study was designed to shed light on subcortical –
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 The results of the behavioral analyses of the reference-back task are presented in the appendix (Appendix 1—tables 3–5). Descriptive statistics are reported in Table 1.
 
+**Table 1.**
+ Hierarchical descriptive statistics for the behavioral data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2"></th>
+      <th colspan="2">Response time</th>
+      <th colspan="2">Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Trial type</td>
+      <td>Switch type</td>
+      <td>Response type</td>
+      <td>Mean (s)</td>
+      <td>SD</td>
+      <td>Mean (%)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Reference</td>
+      <td>Repeat</td>
+      <td>Same</td>
+      <td>0.751</td>
+      <td>0.243</td>
+      <td>97.205</td>
+      <td>0.164</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Different</td>
+      <td>0.957</td>
+      <td>0.269</td>
+      <td>95.298</td>
+      <td>0.211</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Switch</td>
+      <td>Same</td>
+      <td>0.807</td>
+      <td>0.274</td>
+      <td>94.560</td>
+      <td>0.227</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Different</td>
+      <td>1.012</td>
+      <td>0.291</td>
+      <td>91.001</td>
+      <td>0.286</td>
+    </tr>
+    <tr>
+      <td>Comparison</td>
+      <td>Repeat</td>
+      <td>Same</td>
+      <td>0.776</td>
+      <td>0.262</td>
+      <td>93.085</td>
+      <td>0.254</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Different</td>
+      <td>0.861</td>
+      <td>0.253</td>
+      <td>93.693</td>
+      <td>0.243</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Switch</td>
+      <td>Same</td>
+      <td>0.76</td>
+      <td>0.216</td>
+      <td>96.196</td>
+      <td>0.191</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Different</td>
+      <td>0.896</td>
+      <td>0.255</td>
+      <td>96.357</td>
+      <td>0.187</td>
+    </tr>
+  </tbody>
+</table>
+
 Table 2 illustrates the group-averaged mean response time (RT) and accuracy for each condition of the experimental design. The overall mean RT was 0.86 s (mean RT for correct responses was 0.85 s), and the overall accuracy on the task was 94.7%, indicating that participants understood the task instructions. Correct responses were, on average, faster than errors (Δ=0.169 s, t=12.8, df = 149, p<0.001, d=0.61).
+
+**Table 2.**
+ Contrast weights for defining the four distinct working memory updating subprocessess.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Trial type</th>
+      <th colspan="4">reference</th>
+      <th colspan="4">comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Gate switch</td>
+      <td colspan="2">repeat</td>
+      <td colspan="2">switch</td>
+      <td colspan="2">repeat</td>
+      <td colspan="2">switch</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Response</td>
+      <td>same</td>
+      <td>different</td>
+      <td>same</td>
+      <td>different</td>
+      <td>same</td>
+      <td>different</td>
+      <td>same</td>
+      <td>different</td>
+    </tr>
+    <tr>
+      <td>Contrast</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gate opening</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gate closing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Substitution</td>
+      <td></td>
+      <td>-</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Updating mode</td>
+      <td></td>
+      <td>+</td>
+      <td>+</td>
+      <td></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 For mean RT, there were significant main effects of trial type, switch type, and response. Additionally, the two-way interactions but not the three-way interactions were significant. For accuracy, there were no significant main effects. However, we found two-way interactions between trial type and switch type paired with trial type and response. There was no three-way interaction (Appendix 1—Tables 3–5, Appendix 1—figure 2).
 
@@ -71,35 +266,899 @@ For the substitution contrast, the difference between ‘different’ and ‘sam
 
 Finally, responses were slower but more accurate on repeated reference trials (RT: M=0.856 s, SEM = 0.016; accuracy: M=0.962, SEM = 0.005) responses compared with repeated comparison trials (RT: M=0.821 s, SEM = 0.008; accuracy: M=0.933, SEM = 0.008), reflecting the RT cost of being in a general updating mode.
 
-## fMRI results
+### fMRI results
 
-## Whole-brain GLMs
+#### Whole-brain GLMs
 
 Whole-brain analyses were conducted to explore the brain activations associated with gate opening, gate closing, substitution, and updating (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97874/elife-97874-fig2-v1.jpg)
 
-**Figure 2.:** (a) whether the condition was switched or repeated and (b) whether the stimulus/response matched the previous reference stimulus or differed from it. The figure also displays the associated behavioral contrasts and their significance levels. See Reference-back task for detailed information on how the contrasts were computed. Ref = reference trials; Com = comparison trials; GO = gate opening; GC = gate closing; S=substitution; UM = updating mode. ***=p<0.001.Figure 2—source data 1.
+**Figure 2.:** (a) whether the condition was switched or repeated and (b) whether the stimulus/response matched the previous reference stimulus or differed from it. The figure also displays the associated behavioral contrasts and their significance levels. See Reference-back task for detailed information on how the contrasts were computed. Ref = reference trials; Com = comparison trials; GO = gate opening; GC = gate closing; S=substitution; UM = updating mode. ***=p<0.001.
 
-## Gate opening
+##### Gate opening
 
 Gate opening was associated with large bilateral clusters of activation across the cortex. Specifically, we found increased activation in frontal cortical regions, including the mPFC and dlPFC, as well as the somatosensory and motor cortices (Figure 3; Table 3). Gate opening was also associated with increased activation in posterior parietal regions, including the precuneus cortex and left parietal lobe. The occipital lobe, including the left and right fusiform cortex, also showed increased activation during gate opening. Subcortically, gate opening was associated with clusters of increased activation in the thalamus, in particular a large cluster in the left thalamus. These findings are consistent with Nir-Cohen et al., 2020. Additionally, we found a large cluster of activation in the brainstem and midbrain regions (see Figure 7), covering areas such as the left and right red nucleus, periaqueductal gray, superior peduncle, and left subthalamic nucleus (STN).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97874/elife-97874-fig3-v1.jpg)
 
-## Gate closing
+**Table 3.**
+ List of peak activation in MNI coordinates from the whole-brain analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>MNI</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>hem</td>
+      <td>Voxels</td>
+      <td>x</td>
+      <td>y</td>
+      <td>z</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gate opening</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>preSMA</td>
+      <td>l</td>
+      <td>13380</td>
+      <td>–6.0</td>
+      <td>12.0</td>
+      <td>50.0</td>
+      <td>6.387</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Occipital fusiform gyrus</td>
+      <td>l</td>
+      <td>8915</td>
+      <td>–29.0</td>
+      <td>–63.0</td>
+      <td>–7.0</td>
+      <td>5.144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MFG</td>
+      <td>r</td>
+      <td>849</td>
+      <td>34.0</td>
+      <td>9.0</td>
+      <td>29.0</td>
+      <td>5.129</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insular</td>
+      <td>l</td>
+      <td>724</td>
+      <td>–30.0</td>
+      <td>29.0</td>
+      <td>–1.0</td>
+      <td>5.025</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precuneus cortex</td>
+      <td>l</td>
+      <td>5482</td>
+      <td>7.0</td>
+      <td>–67.0</td>
+      <td>25.0</td>
+      <td>4.422</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Brainstem</td>
+      <td></td>
+      <td>841</td>
+      <td>0.0</td>
+      <td>–33.0</td>
+      <td>–29.0</td>
+      <td>4.338</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Primary somatosensory cortex</td>
+      <td>r</td>
+      <td>2043</td>
+      <td>41.0</td>
+      <td>–16.0</td>
+      <td>50.0</td>
+      <td>4.219</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1</td>
+      <td>l</td>
+      <td>976</td>
+      <td>–27.0</td>
+      <td>–28.0</td>
+      <td>64.0</td>
+      <td>4.064</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Primary somatosensory cortex</td>
+      <td>l</td>
+      <td>566</td>
+      <td>–53.0</td>
+      <td>–14.0</td>
+      <td>40.0</td>
+      <td>3.958</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1</td>
+      <td>r</td>
+      <td>81</td>
+      <td>11.0</td>
+      <td>–24.0</td>
+      <td>81.0</td>
+      <td>3.363</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Primary somatosensory cortex</td>
+      <td>r</td>
+      <td>34</td>
+      <td>66.0</td>
+      <td>–8.0</td>
+      <td>30.0</td>
+      <td>3.284</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Primary motor cortex</td>
+      <td>l</td>
+      <td>92</td>
+      <td>–35.0</td>
+      <td>–20.0</td>
+      <td>45.0</td>
+      <td>3.188</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gate closing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inferior parietal cortex</td>
+      <td>l</td>
+      <td>3769</td>
+      <td>–27.0</td>
+      <td>–64.0</td>
+      <td>36.0</td>
+      <td>4.560</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inferior temporal gyrus</td>
+      <td>l</td>
+      <td>716</td>
+      <td>–52.0</td>
+      <td>–65.0</td>
+      <td>–12.0</td>
+      <td>4.376</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VI (cerebellum)</td>
+      <td>r</td>
+      <td>2418</td>
+      <td>28.0</td>
+      <td>–61.0</td>
+      <td>–28.0</td>
+      <td>4.316</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusiform gyrus</td>
+      <td>l</td>
+      <td>957</td>
+      <td>–33.0</td>
+      <td>–80.0</td>
+      <td>–20.0</td>
+      <td>4.284</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>V (cerebellum)</td>
+      <td>l</td>
+      <td>1680</td>
+      <td>–50.0</td>
+      <td>42.0</td>
+      <td>9.0</td>
+      <td>4.091</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusiform gyrus</td>
+      <td>r</td>
+      <td>14</td>
+      <td>35.0</td>
+      <td>–79.0</td>
+      <td>–21.0</td>
+      <td>3.070</td>
+    </tr>
+    <tr>
+      <td>Substitution</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1</td>
+      <td>l</td>
+      <td>68499</td>
+      <td>–45.0</td>
+      <td>–13.0</td>
+      <td>38.0</td>
+      <td>6.834</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>l</td>
+      <td>1813</td>
+      <td>–20.0</td>
+      <td>5.0</td>
+      <td>0.0</td>
+      <td>5.530</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BA 9 (dlPFC)</td>
+      <td>l</td>
+      <td>714</td>
+      <td>–22.0</td>
+      <td>56.0</td>
+      <td>33.0</td>
+      <td>4.763</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insular</td>
+      <td>l</td>
+      <td>108</td>
+      <td>–31.0</td>
+      <td>17.0</td>
+      <td>10.0</td>
+      <td>3.389</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Brainstem</td>
+      <td></td>
+      <td>32</td>
+      <td>–19.0</td>
+      <td>–32.0</td>
+      <td>–33.0</td>
+      <td>3.184</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M1</td>
+      <td>r</td>
+      <td>15</td>
+      <td>25.0</td>
+      <td>–25.0</td>
+      <td>68.0</td>
+      <td>2.974</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BA 9 (dlPFC)</td>
+      <td>l</td>
+      <td>21</td>
+      <td>–31.0</td>
+      <td>41.0</td>
+      <td>45.0</td>
+      <td>2.892</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parahippocampal gyrus</td>
+      <td>l</td>
+      <td>12</td>
+      <td>–28.0</td>
+      <td>–30.0</td>
+      <td>–20.0</td>
+      <td>2.825</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual cortex V1</td>
+      <td>r</td>
+      <td>12</td>
+      <td>29.0</td>
+      <td>–62.0</td>
+      <td>5.0</td>
+      <td>2.803</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cingulate gyrus</td>
+      <td>r</td>
+      <td>15</td>
+      <td>5.0</td>
+      <td>–51.0</td>
+      <td>19.0</td>
+      <td>2.728</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inferior parietal lobule</td>
+      <td>l</td>
+      <td>13</td>
+      <td>–57.0</td>
+      <td>–44.0</td>
+      <td>34.0</td>
+      <td>2.652</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Visual cortex V4</td>
+      <td>r</td>
+      <td>19</td>
+      <td>22.0</td>
+      <td>–71.0</td>
+      <td>–1.0</td>
+      <td>2.633</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Updating mode</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BA 40 (PPC)</td>
+      <td>l</td>
+      <td>24635</td>
+      <td>–56.0</td>
+      <td>–41.0</td>
+      <td>55.0</td>
+      <td>8.084</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MFG</td>
+      <td>l</td>
+      <td>19609</td>
+      <td>–36.0</td>
+      <td>0.0</td>
+      <td>65.0</td>
+      <td>6.160</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BA 9 (dlPFC)</td>
+      <td>l</td>
+      <td>5254</td>
+      <td>–44.0</td>
+      <td>38.0</td>
+      <td>33.0</td>
+      <td>5.816</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusiform gyrus</td>
+      <td>r</td>
+      <td>12503</td>
+      <td>30.0</td>
+      <td>–70.0</td>
+      <td>–17.0</td>
+      <td>5.776</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Putamen</td>
+      <td>l</td>
+      <td>1486</td>
+      <td>–21.0</td>
+      <td>15.0</td>
+      <td>–2.0</td>
+      <td>4.983</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Caudate</td>
+      <td>r</td>
+      <td>1702</td>
+      <td>17.0</td>
+      <td>13.0</td>
+      <td>16.0</td>
+      <td>4.384</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inferior temporal gyrus</td>
+      <td>r</td>
+      <td>45</td>
+      <td>49.0</td>
+      <td>–38.0</td>
+      <td>–16.0</td>
+      <td>3.162</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precuneus cortex</td>
+      <td>r</td>
+      <td>19</td>
+      <td>18.0</td>
+      <td>–60.0</td>
+      <td>31.0</td>
+      <td>2.754</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Results from the Bayesian one-sample t-test on the beta values derived from the region-of-interest (ROI)-wise GLMs are reported for each contrast and ROI.Moderate or higher evidence for ROI activity is indicated by bold font. Bayes factors favoring the alternative hypothesis are reported under BF10, and Bayes factors favoring the null hypothesis in column BF01.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ROI</th>
+      <th>hem</th>
+      <th>BF10</th>
+      <th>BF01</th>
+      <th>Error %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gate opening</td>
+      <td>Tha</td>
+      <td>l</td>
+      <td>0.287</td>
+      <td>3.489</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td rowspan="13"></td>
+      <td></td>
+      <td>r</td>
+      <td>1.070</td>
+      <td>0.934</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Str</td>
+      <td>l</td>
+      <td>0.197</td>
+      <td>5.072</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.185</td>
+      <td>5.407</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>GPe</td>
+      <td>l</td>
+      <td>0.192</td>
+      <td>5.213</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.952</td>
+      <td>1.050</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>GPi</td>
+      <td>l</td>
+      <td>0.266</td>
+      <td>3.755</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.510</td>
+      <td>1.962</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>STN</td>
+      <td>l</td>
+      <td>0.193</td>
+      <td>5.184</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.184</td>
+      <td>5.440</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>SN</td>
+      <td>l</td>
+      <td>0.184</td>
+      <td>5.421</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.186</td>
+      <td>5.372</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>l</td>
+      <td>0.190</td>
+      <td>5.250</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.207</td>
+      <td>4.831</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Gate closing</td>
+      <td>Tha</td>
+      <td>l</td>
+      <td>0.229</td>
+      <td>4.364</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.208</td>
+      <td>4.799</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Str</td>
+      <td>l</td>
+      <td>0.643</td>
+      <td>1.556</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>1.239</td>
+      <td>0.807</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>GPe</td>
+      <td>l</td>
+      <td>0.275</td>
+      <td>3.636</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>3.582</td>
+      <td>0.279</td>
+      <td>6.359×10–7</td>
+    </tr>
+    <tr>
+      <td>GPi</td>
+      <td>l</td>
+      <td>0.211</td>
+      <td>4.746</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.205</td>
+      <td>4.874</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>STN</td>
+      <td>l</td>
+      <td>0.444</td>
+      <td>2.255</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>1.568</td>
+      <td>0.638</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>SN</td>
+      <td>l</td>
+      <td>1.104</td>
+      <td>0.905</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>1.537</td>
+      <td>0.651</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>l</td>
+      <td>0.254</td>
+      <td>3.936</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.404</td>
+      <td>2.478</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Substitution</td>
+      <td>Tha</td>
+      <td>l</td>
+      <td>1.722</td>
+      <td>0.581</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>1.138</td>
+      <td>0.879</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Str</td>
+      <td>l</td>
+      <td>3.846</td>
+      <td>0.260</td>
+      <td>5.752×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>3.292</td>
+      <td>0.304</td>
+      <td>7.157×10–7</td>
+    </tr>
+    <tr>
+      <td>GPe</td>
+      <td>l</td>
+      <td>1.232</td>
+      <td>0.812</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.502</td>
+      <td>1.992</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>GPi</td>
+      <td>l</td>
+      <td>2.367</td>
+      <td>0.422</td>
+      <td>1.108×10–6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.264</td>
+      <td>3.791</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>STN</td>
+      <td>l</td>
+      <td>1.486</td>
+      <td>0.673</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>8.206</td>
+      <td>0.122</td>
+      <td>1.685×10–7</td>
+    </tr>
+    <tr>
+      <td>SN</td>
+      <td>l</td>
+      <td>0.326</td>
+      <td>3.065</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.184</td>
+      <td>5.434</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>l</td>
+      <td>0.779</td>
+      <td>1.284</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>4.089</td>
+      <td>0.245</td>
+      <td>5.267×10–7</td>
+    </tr>
+    <tr>
+      <td rowspan="14">Updating mode</td>
+      <td>Tha</td>
+      <td>l</td>
+      <td>1.605</td>
+      <td>0.623</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>1.035</td>
+      <td>0.967</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Str</td>
+      <td>l</td>
+      <td>1.943</td>
+      <td>0.515</td>
+      <td>1.415×10–6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>2.233</td>
+      <td>0.448</td>
+      <td>1.192×10–6</td>
+    </tr>
+    <tr>
+      <td>GPe</td>
+      <td>l</td>
+      <td>90.327</td>
+      <td>0.011</td>
+      <td>1.536×10–8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>3.956</td>
+      <td>0.253</td>
+      <td>5.523×10–7</td>
+    </tr>
+    <tr>
+      <td>GPi</td>
+      <td>l</td>
+      <td>4.451</td>
+      <td>0.225</td>
+      <td>4.633×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>0.199</td>
+      <td>5.024</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>STN</td>
+      <td>l</td>
+      <td>2.862</td>
+      <td>0.349</td>
+      <td>8.649×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>14.117</td>
+      <td>0.071</td>
+      <td>5.350×10–8</td>
+    </tr>
+    <tr>
+      <td>SN</td>
+      <td>l</td>
+      <td>0.908</td>
+      <td>1.101</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>3.273</td>
+      <td>0.306</td>
+      <td>7.215×10–7</td>
+    </tr>
+    <tr>
+      <td>VTA</td>
+      <td>l</td>
+      <td>0.348</td>
+      <td>2.877</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>r</td>
+      <td>2.185</td>
+      <td>0.458</td>
+      <td>1.225×10–6</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Gate closing
 
 Gate closing was associated with a few clusters of cortical activations, in line with Nir-Cohen et al., 2020. Our largest cluster covered much of the left PPC; another cluster occurred in the left dlPFC. In contrast to findings by Nir-Cohen et al., there was no activation in the right hemisphere except for relatively small activation clusters in the bilateral occipital fusiform gyrus. In addition, gate closing was associated with increased activity in the left inferior temporal gyrus and cerebellum (Figure 4; Table 3).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97874/elife-97874-fig4-v1.jpg)
 
-## Substitution
+##### Substitution
 
 Substitution was associated with several large clusters of activation. There was increased activation in the premotor cortex and a substantial portion of the PFC, including Brodman area (BA) 8 (dlPFC), BA 24, and BA 32 (mPFC). There was increased activation in the pre-supplementary motor area (preSMA), the superior and inferior frontal gyrus, the left and right PPC, and the left inferior parietal lobule (IPL). The subcortex showed heightened activation in both the right and left striatal regions, including the caudate and putamen. A complete list of all active clusters is given in Table 3. The pattern of activation associated with substitution is broadly consistent with Nir-Cohen et al., 2020. However, we found a considerably greater extent of cortical activation, along with subcortical activation not observed by Nir-Cohen et al., 2020 (Figure 5 and Figure 7).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97874/elife-97874-fig5-v1.jpg)
 
-## Updating mode
+##### Updating mode
 
 The updating mode was associated with increased activation in frontal and posterior parietal regions. The frontal activation covered the left and right medial to dorsolateral prefrontal regions (from the preSMA, over the superior and middle frontal gyrus, to the inferior frontal gyrus). The posterior parietal cluster covered the IPL and stretched from the supramarginal gyrus, medially toward the precuneus cortex, and ventrally along the angular gyrus toward the medial temporal gyrus. There was increased activation in occipital regions, including the fusiform gyrus and the intra- and supracalcarine cortex. In the subcortex, clusters of increased activation were found in the left and right putamen, caudate nuclei, and the right thalamus. This pattern of activation is consistent with Nir-Cohen et al., 2020, but extends their findings to a broader range of cortical (Figure 6; Table 3) and subcortical regions (Figure 7).
 
@@ -109,7 +1168,7 @@ The updating mode was associated with increased activation in frontal and poster
 
 **Figure 7.:** Coordinates are in MNI2009cAsym (1 mm) space. For orientation purposes, the MASSP atlas is overlaid: substantia nigra (SN) (blue), ventral tegmental area (VTA) (black), red nucleus (purple), subthalamic nucleus (green), periaqueductal gray (light blue), globus pallidus interna (GPi) (yellow), globus pallidus externa (GPe) (orange), striatum (white), and thalamus (gray).
 
-## ROI analyses
+### ROI analyses
 
 We conducted three sets of region-of-interest (ROI) analyses, as described in Regions-of-interest. The main ROI analyses included ROI-wise GLMs based on the individually parcellated masks derived from MASSP (Bazin et al., 2020). In addition, we conducted an additional ROI analysis into subdivisions of the dopaminergic midbrain regions through the exploration of masks derived from a probabilistic atlas. A supplementary exploration into clusters of activation within ROIs based on the whole-brain GLMs was also performed for comparison with Nir-Cohen et al., 2020 (see A1.1). Hence, the first ROI-wise GLMs (‘ROI-wise GLMs on individually parcellated masks’) emphasized individual delineations and thus provided high precision with regard to individual anatomy. The post hoc ROI-wise GLMs provided information on the possible differential involvement of subnuclei of the VTA and substantia nigra (SN), however, at the cost of individual anatomical detail and will be referred to as ‘ROI-wise GLMs based on VTA/SN subdivisions atlas’ in the following. Results of the ROI analyses are illustrated in Figures 8 and 9, Tables 2 and 3.
 
@@ -119,45 +1178,259 @@ We conducted three sets of region-of-interest (ROI) analyses, as described in Re
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/97874/elife-97874-fig9-v1.jpg)
 
-**Figure 9.:** Pauli et al., 2018.Error bars represent the 95% credible intervals. Abbreviations indicate ventral tegmental area (VTA) nucleus, parabrachial pigmented (PBP) nucleus, and substantia nigra pars compacta (SNc). * indicate moderate evidence and ** indicate strong evidence that the observed BOLD signal change is larger than 0.
+**Figure 9.:** Error bars represent the 95% credible intervals. Abbreviations indicate ventral tegmental area (VTA) nucleus, parabrachial pigmented (PBP) nucleus, and substantia nigra pars compacta (SNc). * indicate moderate evidence and ** indicate strong evidence that the observed BOLD signal change is larger than 0.
 
-## ROI-wise GLMs on individually parcellated masks
+#### ROI-wise GLMs on individually parcellated masks
 
 ROI-wise GLMs analyses demonstrated that subcortical regions play a role in each experimental contrast. The main findings for each experimental contrast are summarized below and depicted in Figure 8 and Table 4.
 
-## Gate opening
+#### Gate opening
 
 During gate opening, subcortical activation was limited to the right thalamus. Bayesian analyses provided only weak evidence for activity in the right thalamus, contrasting the observation of extensive bilateral thalamus activation in the whole-brain contrast. Notably, we found moderate evidence against activity in any other ROI in the basal ganglia and midbrain, along with weak evidence against activity in the right thalamus, right GPe, and right GPi.
 
-## Gate closing
+#### Gate closing
 
 ROI-wise GLM results indicated moderate evidence for activity in the right GPe and weak evidence for activity in the right basal ganglia nuclei, namely right striatum and right STN, during gate closing. Moreover, bilateral midbrain activation of the SN was observed, indicated by weak evidence.
 
-## Substitution
+#### Substitution
 
 During substitution, the results of ROI-wise GLMs confirmed the engagement of subcortical structures, although there were variations in their individual contributions. Moderate evidence of activity was observed in the striatum bilaterally, in the right STN, and the right VTA. Moreover, weak evidence indicated activity in the thalamus, left GPe, left GPi, and left STN. Overall, Bayesian analyses did not indicate strong evidence against activity in any subcortical ROI during the process of substitution.
 
-## Updating mode
+#### Updating mode
 
 Being in an updating mode was associated with both basal ganglia and midbrain activity. Precisely, ROI-wise GLM results provided Bayes factors suggesting strong evidence for activity in the left GPe and right STN. Yet, only moderate evidence for the right GPe, left GPi, and right SN. Furthermore, weak evidence from the ROI GLMs indicated activity of the thalamus, striatum, left STN, and right VTA. Overall, there were no Bayes factors indicating strong evidence against activity related to the updating mode in any ROI.
 
-## ROI-wise GLMs based on VTA/SN subdivisions atlas
+#### ROI-wise GLMs based on VTA/SN subdivisions atlas
 
 ROI-wise GLM analysis demonstrated that midbrain nuclei play a role in gate closing, substitution, and updating mode. The main findings for each experimental contrast are summarized below and depicted in Figure 9 and Table 5.
 
-## Gate opening
+**Table 5.**
+ Results from the Bayesian one-sample t-test on the beta values derived from the region-of-interest (ROI) GLMs using the masks from Pauli et al., 2018, are reported for each contrast and ROI.Moderate or higher evidence for ROI activity is indicated by bold font. Bayes factors favoring the alternative hypothesis are reported under BF10, and Bayes factors favoring the null hypothesis in column BF01.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ROI</th>
+      <th>hem</th>
+      <th>BF10</th>
+      <th>BF01</th>
+      <th>Error %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gate opening</td>
+      <td>VTAnc</td>
+      <td>l</td>
+      <td>0.190</td>
+      <td>5.256</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.184</td>
+      <td>5.436</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBP</td>
+      <td>l</td>
+      <td>0.351</td>
+      <td>2.851</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.185</td>
+      <td>5.392</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SNc</td>
+      <td>l</td>
+      <td>0.267</td>
+      <td>3.741</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.198</td>
+      <td>5.048</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Gate closing</td>
+      <td>VTAnc</td>
+      <td>l</td>
+      <td>0.388</td>
+      <td>2.578</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.213</td>
+      <td>4.705</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBP</td>
+      <td>l</td>
+      <td>0.340</td>
+      <td>2.944</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.414</td>
+      <td>2.415</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SNc</td>
+      <td>l</td>
+      <td>3.348</td>
+      <td>0.299</td>
+      <td>6.990×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>32.293</td>
+      <td>0.031</td>
+      <td>4.835×10–9</td>
+    </tr>
+    <tr>
+      <td>Substitution</td>
+      <td>VTAnc</td>
+      <td>l</td>
+      <td>0.184</td>
+      <td>5.429</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.459</td>
+      <td>2.178</td>
+      <td>0.032</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBP</td>
+      <td>l</td>
+      <td>0.774</td>
+      <td>1.292</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>3.913</td>
+      <td>0.256</td>
+      <td>5.609×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SNc</td>
+      <td>l</td>
+      <td>0.754</td>
+      <td>1.326</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>13.330</td>
+      <td>0.075</td>
+      <td>6.138×10–8</td>
+    </tr>
+    <tr>
+      <td>Updating mode</td>
+      <td>VTAnc</td>
+      <td>l</td>
+      <td>0.224</td>
+      <td>4.474</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>0.343</td>
+      <td>2.916</td>
+      <td>0.035</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBP</td>
+      <td>l</td>
+      <td>0.265</td>
+      <td>3.777</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>1.304</td>
+      <td>0.767</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SNc</td>
+      <td>l</td>
+      <td>3.105</td>
+      <td>0.322</td>
+      <td>7.757×10–7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>r</td>
+      <td>142.529</td>
+      <td>0.007</td>
+      <td>2.305×10–4</td>
+    </tr>
+    <tr>
+      <td colspan="6">Note: For all tests, the alternative hypothesis specifies that the population mean differs from 0. BF10 1–3 indicates weak evidence, BF10 3–10 moderate evidence, and BF10 &gt;10 strong evidence.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Gate opening
 
 Confirming results from the preceding ROI-wise GLM analysis, ROI-wise GLMs using the probabilistic atlas masks implicated no evidence for activity in midbrain dopamine-producing nuclei in gate opening, supported by moderate evidence against activity in any mask from Pauli et al., 2018.
 
-## Gate closing
+#### Gate closing
 
 ROI-wise GLMs provided evidence for SNc activation during gate closing. There was strong evidence for activity in the right SNc and moderate evidence for activity in the left SNc. This high Bayes factor in favor of the right SNc suggests a dopaminergic involvement during gate closing. Furthermore, the results of the Bayesian analyses did not provide strong evidence against activity in any ROI during gate-closing trials.
 
-## Substitution
+#### Substitution
 
 In line with the results from the ROI analyses based on MASSP delineations (see above), results implicated activity in the right VTA. Specifically, the right parabrachial pigmented (PBP) mask by Pauli et al., 2018, indicated activity with moderate evidence, suggesting an involvement of the dorsolateral nucleus of the VTA during substitution. In addition, BOLD signal change in the right SNc demonstrated a high Bayes factor. Both findings indicate dopaminergic involvement in the substitution process.
 
-## Updating mode
+#### Updating mode
 
 Midbrain masks by Pauli et al., 2018, demonstrated an extremely high Bayes factor for the right SNc – insinuating very strong evidence for increased activity – moderate evidence for activation in the left SNc, along with weak evidence for activity in the right PBP during updating mode. Again, there were no Bayes factors that indicated strong evidence against activity related to the updating mode in any ROI.
 
@@ -177,7 +1450,7 @@ We extend previous work by investigating individual masks of subcortical ROIs us
 
 Our findings refine prominent neural theories of working memory gating by showing that, rather than controlling gating, the basal ganglia’s role may be more specific to the actual act of updating working memory representations with new information and a sustained open-gate state. The reasons for this are twofold. First, there was an absence of evidence for striatal participation in gate opening. Second, we found midbrain and basal ganglia activation during substitution, suggesting a neural signature of midbrain activation – potentially dopaminergic – of the basal ganglia-thalamo-cortical loop. These findings significantly advance our understanding of the cortical and subcortical neural basis of working memory updating subprocesses.
 
-## No support for striatal gate opening
+### No support for striatal gate opening
 
 The first aspect of the twofold revelation, indicating a role for the basal ganglia in working memory updating that differs from what was originally postulated, is the absence of evidence for striatal gate opening. We observed no increased activation in the striatum during gate opening but primarily activations in FPN regions, suggesting no active striatal involvement in opening the gate to working memory. In fact, ROI-wise GLMs suggest evidence against the involvement of any basal ganglia nucleus in gate opening. This contrasts with the findings of Nir-Cohen et al., 2020, and raises questions about the relationship between the gate opening process in the reference back task and the indirect striatal gating mechanism described in the PBWM model (Frank et al., 2001; Hazy et al., 2007; O’Reilly and Frank, 2006) and other neurocomputational theories (Hazy et al., 2007; Jongkees, 2020). According to these models, a dopaminergic signal in the striatum is required to trigger gating. Although the orthogonal contrasts in the reference-back task are intended to isolate working memory subprocesses inspired by models of working memory, the two gating contrasts do not fully capture the gating mechanism as originally proposed in neurocomputational models (Frank et al., 2001; Hazy et al., 2007; O’Reilly and Frank, 2006).
 
@@ -193,7 +1466,7 @@ Moreover, despite the lack of striatal involvement during gate opening, our find
 
 Additionally, our results suggest a more specific role for the basal ganglia in a ready-to-update mode rather than controlling the gate to working memory, as defined in the reference-back task’s gate opening contrast. The contrasting patterns of activation observed in the basal ganglia, particularly the striatum, between the gate opening and updating mode in our dataset compared to the findings of Nir-Cohen et al., 2020, highlight an interesting discrepancy and emphasize the importance of additional research to better understand these variations.
 
-## Dopaminergic involvement in working memory substitution
+### Dopaminergic involvement in working memory substitution
 
 The second aspect of the twofold revelation, indicating a revised role for the basal ganglia in working memory, is the observation of basal ganglia activation in combination with midbrain activation, specifically during substitution trials. Our findings suggest that the striatum – along with the rest of the basal ganglia and the thalamus – is more involved in the actual process of replacing and updating working memory representations (‘substitution’) than controlling the more general sustained ready-to-update state (‘updating mode’). This observation is supported by the enhanced subcortical activity we found in substitution trials evident from whole-brain analyses and ROI-wise GLMs (as well as cluster-based ROI analysis, see Appendix 1). Nir-Cohen et al., 2023, further affirm our observation through their modified version of the reference-back paradigm, which includes task switching, demonstrating that the gate opens only when truly necessary (i.e. when updating of the task that is held in working memory is required) and is associated with increased activity in the basal ganglia, thalamus, and midbrain.
 
@@ -205,7 +1478,7 @@ Finally, our findings indicate a role for dopaminergic brain regions in the subs
 
 Taken together, our results provide convincing evidence for dopaminergic processing when substituting new information into working memory. Moreover, our results suggest shared mechanisms between working memory updating and value-based (reinforcement) learning, both of which update cortical representations in an adaptive manner. Additionally, these findings refine the PBWM model’s gating mechanism and suggest that phasic dopamine release, in fact, may signal the updating of cortical representations.
 
-## Subcortical involvement in gate closing
+### Subcortical involvement in gate closing
 
 Based on the whole-brain and cluster-based ROI analyses, we found that the (left) PPC was the primary region involved in gate closing, without involvement from the basal ganglia. This finding is in line with Nir-Cohen et al., 2020, and the predictions of the PBWM model (Frank et al., 2001; Hazy et al., 2007; O’Reilly and Frank, 2006). However, it stands in contrast to Nir-Cohen et al., 2023, who found that the striatum was involved during distractor conditions that required active gate closing (by filtering out conflicting task cues). Intriguingly, our ROI-wise GLM analyses did reveal additional yet weak support for (right-lateralized) striatal activity during gate closing. Furthermore, our results provide weak evidence for lateralized right STN and SN activation and particularly strong evidence for the right GPe and right SNc activation during the process of gate closing. Across all fMRI analyses, we observed little activation of the PFC and large activation clusters in the PPC. However, given the evidence against thalamic activations, it seems unlikely that the entire basal ganglia-thalamo-cortical loop is engaged during gate closing. Thus, the ROI-wise GLM-based evidence implicating parts of the right basal ganglia in gate closing may hint toward a different functional basal ganglia loop. This is supported by evidence against the activity of the basal ganglia output nucleus GPi and the thalamus in this contrast, suggesting no engagement of the two structures crucial for the signaling between the cortex and basal ganglia.
 
@@ -217,7 +1490,7 @@ Finally, no evidence for activity in the VTA was found in gate closing, proving 
 
 Taken together, our analyses provide evidence against a striatal gate-closing process yet implicate the involvement of other subcortical nuclei (right GPe and the right SNc) during gate closing, which might represent a process to inhibit false updating-related signaling from being transmitted to the cortex. Furthermore, it supports the idea that the working memory gate is closed by default due to the basal ganglia sitting in a No-Go-state, and updating working memory requires actively transmitting a Go-signal through the basal ganglia.
 
-## Functional subdivisions of the dopaminergic midbrain
+### Functional subdivisions of the dopaminergic midbrain
 
 Gate closing, substitution, and updating mode are differently associated with the activity of the individually parcellated midbrain ROIs VTA and SN. Yet, it remains unclear whether nigrostriatal, mesolimbic, or mesocortical cell populations were involved in the individual contrasts due to limitations in identifying the associated cell assemblies in the individual MRI scan. In the following, dopaminergic-midbrain-associated results across all ROI analyses are discussed in detail in order to potentially shed light on the functional spatial organization of the dopaminergic midbrain region.
 
@@ -231,7 +1504,7 @@ Furthermore, the findings associated with working memory substitution suggest me
 
 To summarize, follow-up analyses using different masks associated with dopaminergic cell populations of the midbrain revealed interesting insights. There was strong evidence for the role of the SNc in the process of substitution, supported by both ROI analysis approaches that complement each other’s limitations. Also, during gate closing and updating mode, the SNc showed increased activation, suggesting nigrostriatal pathway engagement. Additionally, there was evidence of the right PBP nucleus activity for both substitution and updating mode. At the same time, no contrast revealed evidence for working memory updating-related activity in the VTA nucleus. These observations suggest that the evidence for activity limited to the right VTA using the MASSP masks (Bazin et al., 2020) was driven by activity in a region of the midbrain that is associated with both neighboring nuclei, PBP and SNc. The intricacy in the functional engagement by midbrain nuclei emphasizes the necessity for individually parcellated masks, in particular of the VTA, in future studies that provide more precision both with respect to functional and anatomical subdivisions. This becomes especially apparent when considering the likelihood of neighboring nuclei influencing the observed activity (de Hollander et al., 2017).
 
-## Limitations
+### Limitations
 
 We replicated many behavioral results from previous reference-back studies (e.g. Boag et al., 2021; Jongkees, 2020; Rac-Lubashevsky and Kessler, 2016a; Rac-Lubashevsky and Kessler, 2016b; Rac-Lubashevsky and Kessler, 2018). Notably, we observed an accuracy gain in gate-closing trials similar to the findings of Boag et al., 2021, and Konjusha et al., 2023, but inconsistent with Nir-Cohen et al., 2020, indicating that an active switch of closing the gate potentially suppresses erroneous updating signal may be advantageous for working memory maintenance. However, we could not replicate the gate-closing cost for RT that other studies have reported (e.g. Jongkees, 2020; Nir-Cohen et al., 2020; Rac-Lubashevsky and Kessler, 2016a; Rac-Lubashevsky and Kessler, 2016b; Rac-Lubashevsky and Kessler, 2018). This may have been due to our ultrahigh field scanning protocol, which allowed for fewer trials than are typically collected in reference-back studies and included longer intertrial intervals than previous behavioral studies.
 
@@ -239,7 +1512,7 @@ Consequently, the fewer trials compared to other work (Nir-Cohen et al., 2020; N
 
 Finally, the ROI-wise GLM analysis does not consider striatal subdivisions as these are not parcellated by MASSP. In light of the relatively large volume of the striatum as a whole, the association of the dorsal and ventral striatum with the nigrostriatal and mesolimbic pathways, respectively, in combination with the different functional profiles of the striatal subdivision (Haber, 2003), it would be intriguing to explore the contribution of individual striatal subdivision in working memory updating processes in the future, as discussed in the previous paragraph.
 
-## Conclusions
+### Conclusions
 
 Our finding of the absence of evidence for striatal activity during the process of gate opening, alongside observed activity in FPN regions, suggests the striatum is not crucially involved in opening the gate to working memory as operationalized in the reference-back task. This finding challenges the concept of a striatal working memory gating mechanism in such low-demand working memory tasks and previous empirical results (Nir-Cohen et al., 2020; Nir-Cohen et al., 2023). Instead, our data revealed basal ganglia engagement associated with the ready-to-update working memory mode (‘updating mode’), suggesting a more specific role for the basal ganglia in a sustained ready-to-update mode rather than controlling the gate state to working memory. Moreover, in line with previous work (Nir-Cohen et al., 2020), our findings implicate that the basal ganglia-thalamo-cortical loop is not engaged in gate closing, as evidence for basal ganglia output is lacking, despite observed basal ganglia activation. Instead, our ROI analyses, together with behavioral results, indicate the suppression of updating-related signaling in the subcortex during gate closing. Furthermore, our data indicate the involvement of dopamine-producing midbrain nuclei during the process of working memory gate closing, notably only the SNc, and during a general ready-to-update mode, both the SNc and the PBP of the VTA.
 
@@ -249,11 +1522,11 @@ This study furthers understanding of the neural mechanisms underlying working me
 
 ## Methods
 
-## Procedure
+### Procedure
 
 37 participants (20 female; mean age 26.65±5.72 years; age range 19–39 years) took part in the study, which was approved by the Ethics Review Board of the Faculty of Social and Behavioral Sciences at the University of Amsterdam, the Netherlands (reference: 2021-BC-13146), and the Regional Committees for Medical and Health Research Ethics, Norway (reference: 116630). All participants provided written informed consent and completed MRI screening forms to ensure they were eligible for scanning. The recruitment was conducted at the Norwegian University of Science and Technology. The participants had a corrected-to-normal vision and no history of epilepsy or overt clinical neuropsychiatric disease. Two participants’ data were excluded because they had more than 30% nonresponses or less than 70% accuracy on the reference-back task, suggesting that these participants were either disengaged or misunderstood the task instructions.
 
-## Reference-back task
+### Reference-back task
 
 To disentangle the various working memory updating subprocesses, participants completed the reference-back task (Rac-Lubashevsky and Kessler, 2016a). The task required participants to compare a presented stimulus – a capital letter, akin to Rac-Lubashevsky and Kessler, 2016a – to a reference stimulus held in working memory (i.e. the referent; Figure 1). The color of the stimulus frame indicated whether to open the gate to working memory facilitating potential updating of the referent with the presented stimulus (on red frame/reference trials) or to keep the gate closed to maintain the existing referent (on blue frame/comparison trials). When the presented stimulus matched the referent, participants were instructed to respond ‘same’ (by pressing the right key). When the presented stimulus did not match the referent, participants were instructed to respond ‘different’ (by pressing the left key). In other words, reference trials required updating working memory because the current stimulus served as a referent for subsequent trials. Here, the actual act of updating, i.e., the process of replacing old information with new, is represented by substitution. By contrast, comparison trials did not require updating working memory. Working memory gate opening was needed in reference trials that followed comparison trials, and working memory gate closing was required in comparison trials that followed reference trials; hence, both involved a switch in the gate state. Accordingly, the gate state ‘switched’ or ‘repeated’ in each trial. This resulted in eight conditions: 2 (trial type: reference vs. comparison)×2 (switch type: repeat vs. switch)×2 (response: same vs. different), which formed the basis of the various reference-back contrasts.
 
@@ -261,7 +1534,7 @@ In each block of the task, the trial sequence began with a reference trial that 
 
 In accordance with Nir-Cohen et al., 2020, we defined four contrasts based on the eight reference-back conditions (Table 5): gate opening, gate closing, substitution, and updating mode. Gate opening was measured by the difference between reference/switch and reference/repeat trials. This is because the process of opening the gate to working memory should only take place in reference/switch trials, as no change in the gate state is required in repeated reference trials. Similarly, gate closing was measured by the difference between comparison/switch and comparison/repeat trials. Substitution takes place in reference/different trials. However, in order to isolate it from any gate-switching effects, the contrast only takes into account ‘repeat’ trials. Furthermore, in order to set apart the general effects of ‘same’ and ‘different’ responses, the difference between ‘different’ and ‘same’ responses in comparison trials was used as a baseline. Thus, the cost of substitution is indicated by a larger difference between ‘different’ and same responses in reference/repeat trials compared to comparison/repeat trials. Additionally, we computed the updating mode contrast (Nir-Cohen et al., 2020), operationalized as the difference between reference/repeat and comparison/repeat trials (Table 5).
 
-## Behavioral analysis
+### Behavioral analysis
 
 Statistical tests on all the conditions, including four a priori contrasts of interest, were conducted to examine the effects of different trial types and reference-back measures on mean RT and accuracy.
 
@@ -269,7 +1542,7 @@ The first trial from each block, which did not require a response, was excluded,
 
 Linear mixed models were employed to assess the statistical significance of trial type (reference/comparison), switch type (switch/repeat), and response (same/different), along with the four contrasts (gate opening, gate closing, substitution, and updating mode) on mean RT and accuracy. General linear mixed models with a Gaussian link function were used for mean RT, and generalized linear mixed models with a probit link function were used for accuracy. Each model included trial type, switch type, and response as fixed effects, along with random intercepts for each participant. We used a significance criterion of alpha equivalent to 0.05.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Each participant was scanned four times using a 7T Siemens MAGNETOM TERRA scanner (gradient strength = 80 mT/m at 200 T/m/s) equipped with a 32-channel Nova Medical’s single channel transmit 32-channel receive head coil. Anatomical scans were collected in the first session, and the remaining sessions involved different functional scans. The data discussed in this article were collected in one of the functional sessions that included four functional runs in which the participants completed two different tasks. One task was the reference-back (Figure 1), which consisted of two runs of 129 trials each. The other task was a reversal-learning task and is not analyzed in the present article. The order of the two tasks was randomized between subjects.
 
@@ -279,13 +1552,13 @@ The experimental session comprised four functional echo-planar imaging (EPI) run
 
 Physiological data, including heart rate and respiration, were recorded for all participants to assess the impact of physiological noise on the fMRI data.
 
-## MRI data preprocessing
+### MRI data preprocessing
 
 The imaging data was preprocessed using the neuroimaging preprocessing tool fMRIPrep 20.2.0 (Esteban et al., 2018; Esteban et al., 2019), which is based on Nipype 1.7.0 (Gorgolewski et al., 2011; Gorgolewski et al., 2018; RRID:SCR_002502). The anatomical data preprocessing involved multiple steps such as intensity and nonuniformity correction (using N4BiasFieldCorrection, Tustison et al., 2010), skull-stripping (using Nipype’s antsBrainExtraction.sh), and tissue segmentation (using FSL’s fast, Zhang et al., 2001) of the T1-weighted images. The brain-extracted T1-weighted scans were normalized by means of volume-based spatial nonlinear registration to standard space ICBM 152 Nonlinear Asymmetricl template version 2009c (MNI152NLin2009cAsym; Fonov et al., 2009, RRID:SCR_008796) using antsRegistration (ANTs 2.3.3). For more information on anatomical data preprocessing, see Miletić, 2023.
 
 The following preprocessing was performed for each of the two functional (BOLD) runs per task per participant. A reference volume and its skull-stripped version were generated by aligning and averaging one single-band reference (SBRefs). A B0-nonuniformity map (or fieldmap) was estimated based on two EPI references with opposing phase-encoding directions, with 3dQwarp (Cox and Hyde, 1997; AFNI 20160207). Based on the estimated susceptibility distortion, a corrected EPI reference was calculated for a more accurate co-registration with the anatomical reference. The BOLD reference was then co-registered to the T1w reference using bbregister (FreeSurfer 6.0.1), which implements boundary-based registration (Greve and Fischl, 2009). Co-registration was configured with six degrees of freedom. Head-motion parameters with respect to the BOLD reference (transformation matrices and six corresponding rotation and translation parameters) were estimated before any spatiotemporal filtering using mcflirt (FSL 5.0.9, Jenkinson et al., 2002). BOLD runs were slice-time corrected using 3dTshift from AFNI 20160207 (Cox and Hyde, 1997; RRID:SCR_005927). A reference volume and its skull-stripped version were generated using a custom methodology of fMRIPrep. The BOLD time-series (including slice-timing correction when applied) were resampled onto their original, native space by applying a single, composite transform to correct for head-motion and susceptibility distortions. These resampled BOLD time-series will be referred to as preprocessed BOLD in original space or just preprocessed BOLD. Several confounding time-series were calculated based on the preprocessed BOLD: framewise displacement (FD), ‘DVARS’ (the spatial standard deviation of difference images), and three region-wise global signals. FD was computed using two formulations following Power (absolute sum of relative motions, Power et al., 2014) and Jenkinson (relative root mean square displacement between affines, Jenkinson et al., 2002). FD and DVARS were calculated for each functional run, both using their implementations in Nipype (following the definitions by Power et al., 2014). The three global signals were extracted within the CSF, the WM, and the whole-brain masks. Additionally, a set of physiological regressors was extracted to allow for component-based noise correction (Behzadi et al., 2007). Principal components were estimated after high-pass filtering of the preprocessed BOLD time-series (using a discrete cosine filter with 128 s cut-off) for the two CompCor variants: temporal (tCompCor) and anatomical (aCompCor). tCompCor components were then calculated from the top 2% variable voxels within the brain mask. For aCompCor, three probabilistic masks (CSF, WM, and combined CSF+WM) were generated in anatomical space. The implementation differs from that of Behzadi et al., 2007. Instead of eroding the masks by two pixels on BOLD space, the aCompCor masks were subtracted from a mask of pixels that likely contain a volume fraction of GM. This mask is obtained by dilating a GM mask extracted from the FreeSurfer’s aseg segmentation, and it ensures that components were not extracted from voxels containing a minimal fraction of GM. Finally, these masks were resampled into BOLD space and binarized by thresholding at 0.99 (as in the original implementation). Components were also calculated separately within the WM and CSF masks. For each CompCor decomposition, the k components with the largest singular values were retained, such that the retained components’ time-series are sufficient to explain 50% of variance across the nuisance mask (CSF, WM, combined, or temporal). The remaining components were excluded. The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file. The confound time-series derived from head motion estimates and global signals were expanded with the inclusion of temporal derivatives and quadratic terms for each (Satterthwaite et al., 2013). Frames that exceeded a threshold of 0.5 mm FD or 1.5 standardized DVARS were annotated as motion outliers. All resamplings can be performed with a single interpolation step by composing all the pertinent transformations (i.e. head-motion transform matrices, susceptibility distortion correction when available, and co-registrations to anatomical and output spaces). Gridded (volumetric) resamplings were performed using antsApplyTransforms (ANTs), configured with Lanczos interpolation to minimize the smoothing effects of other kernels (Lanczos, 1964). Non-gridded (surface) resamplings were performed using mri_vol2surf (FreeSurfer). Many internal operations of fMRIPrep use Nilearn 0.6.2 (Abraham et al., 2014, RRID:SCR_001362), mostly within the functional processing workflow.
 
-## Regions-of-interest
+### Regions-of-interest
 
 For the selection of ROIs, we selected only subcortical masks for our ROI analyses given our main research aim centered on the subcortex. Second, we included individual subcortical masks derived from the MASSP automated parcellation algorithm (Bazin et al., 2020) to increase delineation accuracy on a subject level. Third, bilateral masks for each ROI were included to maximize regional specificity. Fourth, the pallidum was included with individual masks for its external (GPe) and internal (GPi) segments. Fifth, playing an important role in subcortical functioning in general and in basal ganglia processes in particular, the STN mask was also selected for this study. Most importantly, we incorporated masks of the dopaminergic midbrain given our secondary research aim focused on the dopamine sources. This resulted in 7 masks (14 bilaterally). Hence, the MASSP algorithm (Bazin et al., 2020) was used to parcellate individual anatomical masks for the thalamus (Tha), striatum (Str), GPe and GPi, STN, SN, and VTA.
 
@@ -295,7 +1568,7 @@ Furthermore, a supplementary exploration into the BOLD signal clusters within RO
 
 All masks were registered to MNI152NLin2009cAsym using antsRegistration (ANTs 2.3.3).
 
-## fMRI statistical analysis
+### fMRI statistical analysis
 
 The aim of our 7T fMRI study was to shed light on subcortical – in particular possible dopaminergic – contributions to working memory updating subprocesses in the human brain. To achieve this, we extended Nir-Cohen et al., 2020, fMRI data analysis procedure, with a specific emphasis on the subcortical regions. Our foundational objective was to compare the results obtained from a protocol optimized for BOLD sensitivity in the subcortex with the current empirical evidence, which has not definitively established the involvement of subcortical regions. This included a multistep fMRI analysis. First, a whole-brain analysis was conducted to investigate brain activation by means of SPMs for each contrast on a whole-brain level. Second, ROI-wise GLM analysis with increased regional specificity due to extraction from unsmoothed data was conducted to explore the contribution of several subcortical nuclei in working memory updating. Details about the GLM analysis on both the whole-brain and region-specific levels are listed below. Third, a cluster-based ROI analysis was carried out to explore the presence of significant clusters within each ROI, akin to Nir-Cohen et al., 2020 (for detailed methodology, see A1.2 in the appendix).
 
@@ -307,6 +1580,6 @@ In addition, the ROI GLM analysis was conducted as follows: Mean time-series dat
 
 Lastly, by means of providing comparability with the only other existing fMRI study employing the same experimental paradigm (Nir-Cohen et al., 2020), we also ran an additional ‘cluster-based ROI analysis’ which examined each ROI for clusters of activation based on the whole-brain GLMs after correcting for multiple comparisons across the ROI’s voxels. Here, we investigated the involvement of specific brain regions previously associated with working memory, including the FPN and the basal ganglia in each working memory subprocess (for methods and results, see A1 in the appendix).
 
-## Code availability statement
+### Code availability statement
 
 All code used for preprocessing and analyses of the data acquired in this study is available at https://osf.io/jmu6q/.

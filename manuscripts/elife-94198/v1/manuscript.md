@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0190ak572 Neurology Department, New York University New York United States
-2. https://ror.org/00671me87 Max Planck Institute for Psycholinguistics Nijmegen Netherlands
-3. https://ror.org/0190ak572 Biomedical Engineering Department, New York University New York United States
-4. https://ror.org/0190ak572 Neurosurgery Department, New York University New York United States
+1. Neurology Department, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+2. Max Planck Institute for Psycholinguistics Nijmegen Netherlands ([ROR:00671me87](https://ror.org/00671me87))
+3. Biomedical Engineering Department, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+4. Neurosurgery Department, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
@@ -93,54 +93,54 @@ Forward models of speech production suggest that a mismatch between the predicte
 
 ## Materials and methods
 
-## Participant information
+### Participant information
 
 The Institutional Review Board of NYU Grossman School of Medicine approved all experimental procedures. After consulting with the clinical-care provider, a research team member obtained written and oral consent from each participant. 35 neurosurgical epilepsy patients (19 females, mean age: 31, 23 left, 9 right, and 3 bilateral hemisphere coverage) implanted with subdural and depth electrodes provided informed consent to participate in the research protocol. Electrode implantation and location were guided solely by clinical requirements. Three patients were consented separately for higher density clinical grid implantation, which provided denser sampling of underlying cortex.
 
-## iEEG recording
+### iEEG recording
 
 iEEG was recorded from implanted subdural platinum-iridium electrodes embedded in flexible silicon sheets (2.3 mm diameter exposed surface, 8×8 grid arrays, and 4–12 contact linear strips, 10 mm center-to-center spacing, Ad-Tech Medical Instrument, Racine, WI, USA) and penetrating depth electrodes (1.1 mm diameter, 5–10 mm center-to-center spacing 1×8 or 1×12 contacts, Ad-Tech Medical Instrument, Racine, WI, USA). Three participants consented to a research hybrid grid implanted which included 64 additional electrodes between the standard clinical contacts (16×8 grid with sixty-four 2 mm macro contacts at 8×8 orientation and sixty-four 1 mm micro contacts in between, providing 10 mm center-to-center spacing between macro contacts and 5 mm center-to-center spacing between micro/macro contacts, PMT Corporation, Chanhassen, MN, USA). Recordings were made using one of two amplifier types: NicoletOne amplifier (Natus Neurologics, Middleton, WI, USA), bandpass filtered from 0.16 to 250 Hz and digitized at 512 Hz. Neuroworks Quantum Amplifier (Natus Biomedical, Appleton, WI, USA) recorded at 2048 Hz, bandpass filtered at 0.01–682.67 Hz and then downsampled to 512 Hz. A two-contact subdural strip facing toward the skull near the craniotomy site was used as a reference for recording and a similar two-contact strip screwed to the skull was used for the instrument ground. iEEG and experimental signals (trigger pulses that mark the appearance of visual stimuli on the screen, microphone signal from speech recordings and feedback voice signal) were acquired simultaneously by the EEG amplifier in order to provide a fully synchronized dataset.
 
-## Experimental design
+### Experimental design
 
-## Experiment 1: AWR
+#### Experiment 1: AWR
 
 35 participants performed the experiment. Stimuli consisted of 50 items (nouns) taken from the revised Snodgrass and Vanderwart object pictorial set (e.g. ‘drum’, ‘hat’, ‘pencil’) (Rossion and Pourtois, 2004; Shum et al., 2020). Auditory words presented randomly (two repetitions) through speakers. Participants were instructed to listen to the presented words and repeat them out loud at each trial.
 
-## Experiment 2: VWR
+#### Experiment 2: VWR
 
 The same 35 participants performed the experiment. Stimuli consisted of the same 50 words used in Experiment 1, however visually presented as text stimuli on the screen in a random order (two repetitions). Participants were instructed to read the presented word out loud at each trial.
 
-## Experiment 3: DAF
+#### Experiment 3: DAF
 
 A subgroup of 14 participants performed this experiment. Stimuli consisted of 10 different three-syllable words visually presented as text stimuli on the screen (e.g. ‘envelope’, ‘umbrella’, ‘violin’). Participants were instructed to read the presented word out loud at each trial. As participants spoke, their voices were recorded using the laptop’s internal microphone, delayed at four different amounts (no-delay, 50, 100, 200 ms) using custom script MATLAB, Psychtoolbox-3, available in GitHub (copy archived at Ozker, 2024) and played back to them through earphones. Trials, which consisted of different stimulus-delay combinations, were presented randomly (three to eight repetitions). Behavioral and neural data from the DAF experiment were used in a previous publication from our group (Ozker et al., 2022).
 
-## Experiment 4: VWR-AF
+#### Experiment 4: VWR-AF
 
 A subgroup of four participants performed an additional VWR experiment, in which they were presented with the word stimuli as in Experiment 3 and heard their simultaneous (no-delay) voice feedback through earphones.
 
-## Statistical analysis
+### Statistical analysis
 
 Electrodes were examined for speech-related activity defined as significant high gamma broadband responses. Unpaired t-tests were performed to compare responses to a baseline for each electrode and multiple comparisons were corrected using the false discovery rate method (q=0.05). Electrodes that showed significant response increase (p<10–4) either before (−0.5 to 0 s) or after speech onset (0–0.5 s) with respect to a baseline period (−1 to –0.6 s) and at the same time had a large signal-to-noise ratio (μ/σ>0.7) during either of these time windows were selected. Electrode selection was first performed for each task separately, then electrodes that were commonly selected were further analyzed. For the analysis of the DAF experiment, one-way ANOVA was calculated using the average neural response as a dependent variable and feedback delay as a factor to assess the statistical significance of response enhancement in a single electrode.
 
-## Experimental setup
+### Experimental setup
 
 Participants were tested while resting in their hospital bed in the epilepsy-monitoring unit. Visual stimuli were presented on a laptop screen positioned at a comfortable distance from the participant. Auditory stimuli were presented through speakers in the AWR and VWR experiments and through earphones (Bed Phones On-Ear Sleep Headphones Generation 3) in the DAF and in the VWR-AF experiment. Participants were instructed to speak at a normal voice level and sidetone volume was adjusted to a comfortable level at the beginning of the DAF experiment. DAF and VWR-AF experiments were performed consecutively and sidetone volume was kept the same in the two experiments. Participants’ voice was recorded using an external microphone (Zoom H1 Handy Recorder). A TTL pulse marking the onset of a stimulus, the microphone signal (what the participant spoke), and the feedback voice signal (what the participant heard) were fed into the EEG amplifier as an auxiliary input in order to acquire them in sync with EEG samples. Sound files recorded by the external microphone were used for voice intensity analysis. Average voice intensity for each trial was calculated in dB using the ‘Intensity’ object in Praat software (Boersma, 2001).
 
-## Electrode localization
+### Electrode localization
 
 Electrode localization in individual space as well as MNI space was based on co-registering a preoperative (no electrodes) and postoperative (with electrodes) structural MRI (in some cases a postoperative CT was employed depending on clinical requirements) using a rigid-body transformation. Electrodes were then projected to the surface of cortex (preoperative segmented surface) to correct for edema-induced shifts following previous procedures (Yang et al., 2012) registration to MNI space was based on a nonlinear DARTEL algorithm (Ashburner, 2007). Within participant anatomical locations of electrodes were based on the automated FreeSurfer segmentation of the participant’s preoperative MRI. We recorded from a total of 3591 subdural and 1361 depth electrode contacts in 35 participants. Subdural electrode coverage extended over lateral temporal, frontal, parietal, and lateral occipital cortices. Depth electrodes covered additional regions to a limited extent including the transverse temporal gyrus, insula, and fusiform gyrus. Contacts that were localized to the cortical white matter were excluded from the analysis. To categorize electrodes in the STG into anterior and posterior groups, lateral termination of the TTS was used as an anatomical landmark (Greenlee et al., 2011; Nourski et al., 2016).
 
-## Neural data analysis
+### Neural data analysis
 
 Electrodes with epileptiform activity or artifacts caused by line noise, poor contact with cortex, and high-amplitude shifts were removed from further analysis. A common average reference was calculated by subtracting the average signal across all electrodes from each individual electrode’s signal (after rejection of electrodes with artifacts). The analysis of the electrophysiological signals focused on changes in broadband high gamma activity (70–150 Hz). To quantify changes in the high gamma range, the data were bandpass filtered between 70 and 150 Hz, and then a Hilbert transform was applied to obtain the analytic amplitude.
 
 Recordings from the DAF and VWR-AF experiments were analyzed using the multitaper technique, which yields a more sensitive estimate of the power spectrum with lower variance, thus is more beneficial when comparing neural responses to incremental changes in stimuli. Continuous data streams from each channel were epoched into trials (from –1.5 to 3.5 s with respect to speech onset). Line noise at 60, 120, and 180 Hz were filtered out. Three Slepian tapers were applied in timesteps of 10 ms and frequency steps of 5 Hz, using temporal smoothing (tw) of 200 ms and frequency smoothing (fw) of ±10 Hz. Tapered signals were then transformed to time-frequency space using discrete Fourier transform and power estimates from different tapers were combined (MATLAB, FieldTrip toolbox). The number of tapers (K) were determined by the Shannon number according to the formula: K=2*tw*fw-1 (Percival and Walden, 1993). The high gamma broadband response (70–150 Hz) at each time point following stimulus onset was measured as the percent signal change from baseline, with the baseline calculated over all trials in a time window from –500 to –100 ms before stimulus onset (data files containing high gamma activity recordings are available in GitHub).
 
-## SuppI calculation
+### SuppI calculation
 
 Suppression of neural activity is measured by comparing responses in two time periods in the AWR task. First time period was during listening the stimulus (0–0.5 s) and the second time period was during speaking (0–0.5 s). For each trial, average responses over Listen and Speak periods were found and suppression was measured by calculating Listen-Speak/Listen+Speak. Then suppression values were averaged across trials to calculate a single SuppI for each electrode. For the neural activity, raw high gamma broadband signal power was used instead of the percent signal change to ensure that the SuppI values varied between –1 and 1, indicating a range from complete enhancement to complete suppression respectively.
 
-## SensI calculation
+### SensI calculation
 
 Sensitivity to DAF is measured by comparing neural responses to increasing amounts of feedback delay. Neural responses in each trial were averaged in a time period following the voice feedback (0–0.5 s). For each electrode, a SensI was calculated by measuring the trial-by-trial Spearman correlation between the delay condition and the averaged neural response. A large sensitivity value indicated a strong response enhancement with increasing delays.

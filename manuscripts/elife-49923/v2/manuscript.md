@@ -38,49 +38,73 @@ In the present study, we investigated the effect of IH exposure on cardiac fibro
 
 ## Results
 
-## IH induced cardiac fibrosis and aggravated Ang II-induced cardiac dysfunction in mice
+### IH induced cardiac fibrosis and aggravated Ang II-induced cardiac dysfunction in mice
 
 Most respiratory events of patients with OSA result in desaturation–reoxygenation sequences that cause IH (Baguet et al., 2012). To investigate IH exposure to cardiac function, we housed mice under IH or normoxia for 28 days (Figure 1A). Hypoxia in heart tissue was evaluated by using pimonidazole (Figure 1—figure supplement 1A). IH exposure slightly increased the ratio of heart weight to tibial length (Figure 1B). Echocardiography analysis revealed a moderate decrease in ejection fraction (EF) and fractional shortening (FS) with IH as compared with normoxia (Figure 1C–D). Furthermore, Masson and Sirius red staining demonstrated mildly larger fibrosis area in the heart of mice after IH exposure (Figure 1E–F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig1-v2.jpg)
+
+**Figure 1.:** (A) C57BL/6 mice were housed under normoxia or IH with or without infusion of angiotensin II (Ang II) for 28 days. (B) Ratio of heart weight to tibial length of mice in each group. (C, D) Ejection fraction (EF) and fractional shortening (FS) of mice quantified by echocardiography. (E) Representative images of Masson and Sirius red staining of left ventricle. Scale bar, 100 μm. (F) Quantification of fibrotic area in (E). (G) Representative confocal microscopy images of immunofluorescence staining for α-SMA, vimentin (VIME, fibroblast marker), collagen I (Col1), periostin and DAPI. Scale bar, 20 μm. (H) Quantification of co-localization of α-SMA and VIME, Col1 and periostin fluorescence intensity in (G). (I) Col1, periostin, and α-SMA protein level in left ventricle detected by western blot analysis. (J) Quantification of Col1, periostin and α-SMA protein level in (I). (K) Quantification of Acta2, col1a1 and Postn mRNA expression. Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) C57BL/6 mice exposed to intermittent hypoxia (IH) for 7 days. Mice were sacrificed 1 hr after pimonidazole injection. Representative confocal microscopy images of immunofluorescence staining for pimonidazole and DAPI. Scale bar, 100 μm. (B) C57BL/6 mice were housed under normoxia or IH with or without infusion of angiotensin II (Ang II) for 28 days. Quantification of cross-sectional area of cardiomyocytes in left ventricle. C) Ratio of TUNEL positive cells in left ventricle. Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 1—figure supplement 1—source data 1.
+
 To investigate the effect of IH associated with cardiac function after injury, we used the mouse model of Ang II-induced cardiac hypertrophy to represent cardiac fibrotic responses. Consistent with previous studies (Su et al., 2017; Schafer et al., 2017), Ang II treatment induced cardiac fibrosis with increasing the ratio of heart weight to tibial length and fibrosis area and impaired EF and FS (Figure 1B–D). Strikingly, IH exposure further impaired cardiac function, with increasing the ratio of heart weight to tibial length and decreasing EF and FS (Figure 1B–D). IH exposure significantly enlarged the fibrotic area of heart as well (Figure 1E–F). IH exposure had little effect on myocyte size or ratio of apoptotic cells in the left ventricle with or without Ang II challenge (Figure 1—figure supplement 1B–C). These results indicated that IH could induce cardiac fibrosis both at the basal level and in response to Ang II and also aggravated Ang II-induced cardiac dysfunction.
 
-## IH induced fibroblast activation in myocardial interstitium
+### IH induced fibroblast activation in myocardial interstitium
 
 CFs are now recognized for their fundamental contributions to the heart’s response to various forms of injury (Travers et al., 2016). To investigate the effect of IH on fibroblast activation, we analyzed the expression of α-SMA, collagen I and periostin in the left ventricle of mice after IH exposure. First, immunofluorescence staining showed strongly α-SMA signaling in vimentin-positive CFs in the IH group. IH-induced α-SMA expression in CFs was further enhanced under the Ang II-induced cardiac pathologic condition (Figure 1G–H). Meanwhile, the expression of collagen I and periostin showed a similar trend as α-SMA expression (Figure 1G–H). In addition, IH exposure slightly increased the mRNA and protein levels of α-SMA, collagen I and periostin (Figure 1I–K) in the mouse left ventricle and significantly elevated the levels in the left ventricle of Ang II-infused mice (Figure 1I–K). These results suggest that IH can activate CFs at the basal level and under the Ang II-induced injury condition.
 
-## IH exposure promoted TSP1 expression in CFs
+### IH exposure promoted TSP1 expression in CFs
 
 To test whether TSP1 plays an important role in the progression of cardiac fibrosis induced by IH, we next detected TSP1 expression in mice after IH exposure. As compared with normoxia, IH exposure significantly increased plasma TSP1 content and mRNA level in the mouse left ventricle, especially in Ang II-infused mice (Figure 2A–B). The protein level of TSP1 in the left ventricle showed a similar trend to that of collagen I and periostin (Figure 2C–D). Given that TGFβ and its downstream Smad signaling critically modulate the fibroblast phenotype (Travers et al., 2016; Cucoranu et al., 2005), we assessed Smad2/3 phosphorylation in the mouse left ventricle. The phosphorylation of Smad2/3 was slightly increased after IH exposure but greatly increased after IH exposure in the Ang II-induced injury condition (Figure 2C–D), which is consistent with TSP1 expression. Furthermore, immunofluorescence staining showed elevated signaling of TSP1 in the left ventricle after IH, especially in the Ang II-induced condition (Figure 2E–F). In addition, the expression of TSP1 in cells positive for Thy1 (an inclusive surface protein given its association with CFs [Ali et al., 2014; Hudon-David et al., 2007]) and negative for CD11b (macrophage marker), CD31 (endothelial cell marker), CD45 and Ter119 (hematopoietic cell marker) in the heart, detected by flow cytometry, was significantly higher after IH exposure (Figure 2G), which indicated that IH exposure could induce TSP1 expression in CFs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig2-v2.jpg)
 
-**Figure 2.:** (A) C57BL/6 mice were housed under normoxia or IH with or without infusion of Ang II for 28 days. Plasma concentration of TSP1 in mice detected by ELISA. (B) Thbs1 mRNA level in left ventricle of mice exposed to IH with or without infusion of Ang II for 14 days quantified by RT-PCR. (C) C57BL/6 mice were housed under normoxia or IH with or without infusion of Ang II for 28 days. The protein levels of TSP1, phosphorylated Smad2/3 (p-Smad2/3), and total Smad2/3 (t-Smad2/3) in left ventricle of mice detected by western blot analysis. (D) Quantification of TSP1 and p-Smad2/3 in (C). (E) Representative confocal microscopy images of immunofluorescence staining for TSP1 and DAPI. Scale bar, 20 μm. (F) Quantification of TSP1 fluorescent intensity in (E). Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. (G) Quantiﬁcation of number of cells negative for CD45, CD31, CD11b, and Ter119 and positive for Thy1 from left ventricle tissue digestion, that stained positive for intracellular TSP1 by ﬂow cytometry. Data are mean ± SEM, n = 6, *p<0.05, unpaired 2-tail t test. (H) Plasma concentration of TSP1 in healthy individuals and patients with obstructive sleep apnea (OSA) detected by ELISA. Data are mean ± SEM, n = 21, *p<0.05, unpaired 2-tail t test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) C57BL/6 mice were housed under normoxia or IH with or without infusion of Ang II for 28 days. Plasma concentration of TSP1 in mice detected by ELISA. (B) Thbs1 mRNA level in left ventricle of mice exposed to IH with or without infusion of Ang II for 14 days quantified by RT-PCR. (C) C57BL/6 mice were housed under normoxia or IH with or without infusion of Ang II for 28 days. The protein levels of TSP1, phosphorylated Smad2/3 (p-Smad2/3), and total Smad2/3 (t-Smad2/3) in left ventricle of mice detected by western blot analysis. (D) Quantification of TSP1 and p-Smad2/3 in (C). (E) Representative confocal microscopy images of immunofluorescence staining for TSP1 and DAPI. Scale bar, 20 μm. (F) Quantification of TSP1 fluorescent intensity in (E). Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. (G) Quantiﬁcation of number of cells negative for CD45, CD31, CD11b, and Ter119 and positive for Thy1 from left ventricle tissue digestion, that stained positive for intracellular TSP1 by ﬂow cytometry. Data are mean ± SEM, n = 6, *p<0.05, unpaired 2-tail t test. (H) Plasma concentration of TSP1 in healthy individuals and patients with obstructive sleep apnea (OSA) detected by ELISA. Data are mean ± SEM, n = 21, *p<0.05, unpaired 2-tail t test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 2—source data 1.
 
 To identify the potential relevance of TSP1 to OSA, we measured the concentration of TSP1 in plasma samples from 21 patients with OSA and 21 healthy subjects. TSP1 content was significantly increased in patients with OSA as compared with healthy individuals (Figure 2H). Together, these data suggest that TSP1 level was elevated in both mice and humans after IH exposure and might contribute to CF activation and cardiac fibrosis.
 
-## IH induced primary CF (PCF) activation via TSP1
+### IH induced primary CF (PCF) activation via TSP1
 
 Next, to confirm the effect of IH on PCF activation in vitro, we used immunofluorescence staining of α-SMA in mouse PCFs (mPCFs) with or without IH exposure. As compared with normoxia, IH increased α-SMA expression in PCFs and led to an activated phenotype of fibroblast cells (Figure 3A–B). In addition, IH exposure increased the proliferation and contractility of PCFs (Figure 3C–D). We tested whether TSP1 plays an important role in fibroblast activation and found the mRNA expression of Thbs1 significantly increased by IH as compared with normoxia in mPCFs (Figure 3E). In addition, IH significantly increased the protein level of TSP1 beginning from 2 hr and sustained until 8 hr in mPCFs (Figure 3F–G). Furthermore, shRNA lentivirus used to produce TSP1 deficiency in PCFs attenuated IH-induced mRNA and protein levels of α-SMA, collagen I and periostin (Figure 3H–K). TSP1 deficiency in PCFs also blocked inflammatory gene Tnfa expression (Figure 3I) induced by IH exposure. Thus, our results suggested that IH induced PCF activation through upregulating TSP1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mouse primary CFs (mPCFs) were cultured under normoxia or IH for 24 hr. Representative confocal microscopy images of immunofluorescence stained for α-SMA, phalloidin and DAPI. Scale bar, 20 μm. (B) α-SMA fluorescence intensity quantification. (C) Ratio of Ki67 positive cells to total mPCFs after IH exposure for 24 hr. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (D) Quantification of gel contraction by mPCFs after IH exposure for 24 hr. Data are mean ± SEM, n = 4 independent experiments, *p<0.05, unpaired 2-tail t test. (E) Thbs1 mRNA levels detected by RT-PCR. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (F) Expression of TSP1 in mPCFs exposed to IH for the indicated time detected by western blot analysis. (G) Quantification of TSP1 in (F). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 1-way ANOVA with Bonferroni post-test. (H–K) mPCFs were infected with lentivirus to deliver Thbs1 shRNA (LV-shThbs1) or control shRNA (LV-shCtrl) for 48 hr, then cultured under normoxia or IH for 24 hr. (H–I) Thbs1, Acta2, Col1a1, Postn and Tnfa mRNA levels detected by RT-PCR. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. (J) Protein level of TSP1, collagen I (Col1), periostin and α-SMA detected by western blot analysis. (K) Quantification of TSP1, Col1, periostin and α-SMA in J). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** (A) Mouse primary CFs (mPCFs) were cultured under normoxia or IH for 24 hr. Representative confocal microscopy images of immunofluorescence stained for α-SMA, phalloidin and DAPI. Scale bar, 20 μm. (B) α-SMA fluorescence intensity quantification. (C) Ratio of Ki67 positive cells to total mPCFs after IH exposure for 24 hr. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (D) Quantification of gel contraction by mPCFs after IH exposure for 24 hr. Data are mean ± SEM, n = 4 independent experiments, *p<0.05, unpaired 2-tail t test. (E) Thbs1 mRNA levels detected by RT-PCR. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (F) Expression of TSP1 in mPCFs exposed to IH for the indicated time detected by western blot analysis. (G) Quantification of TSP1 in (F). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 1-way ANOVA with Bonferroni post-test. (H–K) mPCFs were infected with lentivirus to deliver Thbs1 shRNA (LV-shThbs1) or control shRNA (LV-shCtrl) for 48 hr, then cultured under normoxia or IH for 24 hr. (H–I) Thbs1, Acta2, Col1a1, Postn and Tnfa mRNA levels detected by RT-PCR. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. (J) Protein level of TSP1, collagen I (Col1), periostin and α-SMA detected by western blot analysis. (K) Quantification of TSP1, Col1, periostin and α-SMA in J). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 3—source data 1.
 
-## IH upregulated phosphorylation of STAT3 at Tyr705 site both in vivo and in vitro
+### IH upregulated phosphorylation of STAT3 at Tyr705 site both in vivo and in vitro
 
 TSP1 was reported to be transcriptionally regulated by STAT3 in astrocytes (Tyzack et al., 2014), and emerging evidences has indicated that STAT3 involved in fibrosis diseases (Chakraborty et al., 2017; Wang et al., 2018). Here, we hypothesized that STAT3 might play a vital role in IH-induced TSP1 expression and cardiac fibrosis. Since the phosphorylation status of STAT3 is related to its transcriptional activity (Darnell et al., 1994; Ihle, 1995), we determined the phosphorylation of STAT3 at multiple sites as well as the phosphorylation of JAKs in mPCFs under IH. STAT3 phosphorylation at Tyr705 was significantly increased by IH from 0.5 to 2 hr, but STAT3 phosphorylation at Ser727 or total STAT3 was not altered by IH exposure (Figure 4A–B). Meanwhile, IH exposure significantly induced the phosphorylation of JAK2 at Tyr1008 without affecting that of JAK1 or JAK3 (Figure 4A–B). A JAK2 inhibitor, TG101209, abolished the phosphorylation of STAT3 at Tyr705 induced by IH (Figure 4C–D), so IH-induced STAT3 phosphorylation might be mediated by JAK2. Phosphorylation of STAT3 at Tyr705 was reported to be crucial to STAT3 nuclear translocation and transcriptional activity (Darnell et al., 1994; Ihle, 1995), so we next analyzed the STAT3 subcellular localization. STAT3 nuclear translocation was significantly increased by IH on immunofluorescent staining (Figure 4E–F). Moreover, in the mouse left ventricle after IH exposure, consistent with results in vitro, IH exposure induced phosphorylation of STAT3 at Tyr705 but not Ser727 (Figure 4G–H). Also, IH exposure or together with Ang II markedly increased STAT3 nuclear localization in vivo (Figure 4I). Thus, IH induced STAT3 activation via JAK2-mediated STAT3 phosphorylation at Tyr705.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig4-v2.jpg)
 
-**Figure 4.:** (A) mPCFs were cultured and exposed to IH for the indicated time. The protein levels of phosphorylated JAK1 at Tyr1034/1035 (p-JAK1Y1034/1035), total JAK1 (t-JAK1), p-JAK2 at Tyr1008 (p-JAK2Y1008), total JAK2 (t-JAK2), p-JAK3 at Tyr980/981 (p-JAK3Y980/981), total JAK3 (t-JAK3), p-STAT3 at Tyr705 (p-STAT3Y705) and Ser727 (p-STAT3S727) and total STAT3 (t-STAT3) detected by western blot analysis. (B) Quantification of indicated protein levels in (A). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 1-way ANOVA with Bonferroni post-test. (C–D) mPCFs were cultured and exposed to IH for 1 hr with or without TG101209 (2 μM). Indicated protein levels were analyzed (D). (E) mPCFs were exposed to IH for 1 hr. Representative confocal microscopy images of immunofluorescence staining for STAT3 and DAPI. Scale bar, 20 μm. (F) Quantification of subcellular localization of STAT3 in (E). Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (G) The protein levels of p-STAT3Y705 and p-STAT3S727 in ventricles of mice with or without IH detected by western blot analysis. (H) Quantification of p-STAT3Y705, p-STAT3S727 and t-STAT3 in (E). Data are mean ± SEM, n = 6 mice per group, *p<0.05, unpaired 2-tail t test. (I) Representative confocal microscopy images of immunofluorescence staining for STAT3, periostin, and DAPI in mice exposed IH with or without Ang II infusion for 4 weeks. The white arrows indicate periostin-positive cells with nuclear localization of STAT3. Scale bar, 10 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) mPCFs were cultured and exposed to IH for the indicated time. The protein levels of phosphorylated JAK1 at Tyr1034/1035 (p-JAK1Y1034/1035), total JAK1 (t-JAK1), p-JAK2 at Tyr1008 (p-JAK2Y1008), total JAK2 (t-JAK2), p-JAK3 at Tyr980/981 (p-JAK3Y980/981), total JAK3 (t-JAK3), p-STAT3 at Tyr705 (p-STAT3Y705) and Ser727 (p-STAT3S727) and total STAT3 (t-STAT3) detected by western blot analysis. (B) Quantification of indicated protein levels in (A). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 1-way ANOVA with Bonferroni post-test. (C–D) mPCFs were cultured and exposed to IH for 1 hr with or without TG101209 (2 μM). Indicated protein levels were analyzed (D). (E) mPCFs were exposed to IH for 1 hr. Representative confocal microscopy images of immunofluorescence staining for STAT3 and DAPI. Scale bar, 20 μm. (F) Quantification of subcellular localization of STAT3 in (E). Data are mean ± SEM, n = 5 independent experiments, *p<0.05, unpaired 2-tail t test. (G) The protein levels of p-STAT3Y705 and p-STAT3S727 in ventricles of mice with or without IH detected by western blot analysis. (H) Quantification of p-STAT3Y705, p-STAT3S727 and t-STAT3 in (E). Data are mean ± SEM, n = 6 mice per group, *p<0.05, unpaired 2-tail t test. (I) Representative confocal microscopy images of immunofluorescence staining for STAT3, periostin, and DAPI in mice exposed IH with or without Ang II infusion for 4 weeks. The white arrows indicate periostin-positive cells with nuclear localization of STAT3. Scale bar, 10 μm. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 4—source data 1.
 
-## STAT3 silencing or inhibition blunted IH-induced TSP1 expression and CF activation
+### STAT3 silencing or inhibition blunted IH-induced TSP1 expression and CF activation
 
 We next explored the role of STAT3 in IH-induced TSP1 expression and CF activation. Knockdown of STAT3 with siRNA almost completely abolished IH-induced TSP1 expression both in mRNA and protein level (Figure 5A–C). Simultaneously, IH-induced α-SMA, collagen I and periostin expression was blocked by STAT3 knockdown at both the mRNA and protein level (Figure 5A–C). To further assess the importance of STAT3 transcriptional activity, we treated PCFs with S3I-201, a selective STAT3 inhibitor. S3I-201 barely showed effect on the basal level of TSP1, α-SMA, collagen I and periostin expression but significantly attenuated IH-induced expression of TSP1, α-SMA, collagen I and periostin at both the mRNA and protein level (Figure 5D–F). Quantitative chromatin immunoprecipitation (ChIP) assay proved that IH enhanced the enrichment of STAT3 at TSP1 promoter in PCFs as compared with the control (Figure 5—figure supplement 1A). Taken together, our results indicated a predominant role of STAT3 in IH-induced CF activation.
 
-## Pharmacological or genetic inhibition of STAT3 ameliorates IH-induced cardiac dysfunction and fibrosis
+![Figure 5.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig5-v2.jpg)
+
+**Figure 5.:** (A–C) mPCFs were transduced with STAT3 siRNA (siSTAT3) or control siRNA (siCtrl) for 24 hr, then cultured under normoxia or IH for 24 hr. (A) Thbs1, Acta2, Col1a1, Postn, Stat3 mRNA levels were quantified by RT-PCR. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. (B) The protein levels of TSP1, collagen I (Col1), periostin, STAT3 and α-SMA detected by western blot analysis. (C) Quantification of TSP1, Col1, periostin, STAT3 and α-SMA protein level in (B). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. (D–F) mPCFs were cultured under normoxia and IH for 24 hr with or without S3I-201 (100 ng/mL). (D) Thbs1, Acta2, Col1a1, and Postn, mRNA levels detected by RT-PCR and quantified. Data are mean ± SEM, n = 5 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. (E) The protein levels of TSP1, Col1, periostin, and α-SMA detected by western blot analysis. (F) Quantification of TSP1, Col1, periostin, and α-SMA protein level in (E). Data are mean ± SEM, n = 4 independent experiments, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) mPCFs were cultured under normoxia and IH for 24 hr. Chromatin immunoprecipitation (ChIP) quantitative PCR analysis of STAT3 binding on the Thbs1 genomic locus involved antibodies against STAT3, or rabbit IgG. The fold enrichment of the Thbs1 locus was determined by quantitative PCR and calculated as percentage of input. Data are mean ± SEM (n = 4 independent experiments). *p<0.05, unpaired 2-tail t test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 5—figure supplement 1—source data 1.
+
+### Pharmacological or genetic inhibition of STAT3 ameliorates IH-induced cardiac dysfunction and fibrosis
 
 As we found that STAT3-induced TSP1 contributed to IH-induced CF activation, we injected S3I-201 into IH-exposed mice with or without Ang II infusion for 28 days (Figure 6A). First, echocardiography analysis showed that S3I-201 promoted significant recovery of ratio of heart weight to tibial length (Figure 6B) and EF after IH exposure (Figure 6C). Moreover, on Masson staining, S3I-201 reduced IH-induced fibrosis under both basal and Ang II infusion conditions (Figure 6D–E). In addition, immunofluorescence staining showed significantly decreased TSP1, collagen I, periostin and α-SMA expression in the mouse left ventricle after S3I-201 treatment under both basal and Ang II infusion conditions (Figure 6D–E). The expression of TSP1, collagen I, periostin and α-SMA, as well as phosphorylation of STAT3 at Tyr705 site in the left ventricle showed similar trends (Figure 6F–G).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig6-v2.jpg)
+
+**Figure 6.:** (A) C57BL/6 mice exposed to IH with or without infusion of Ang II were treated with S3I-201 or vehicle. (B) Ratio of heart weight to tibial length of mice. (C) Quantification of ejection fraction (EF) after echocardiography of mice. (D) Representative Masson staining of left ventricle of mice. Immunofluorescence staining of left ventricle for TSP1, periostin, Collagen I (Col1), α-SMA, VIME and DAPI. Scale bar, 100 μm. (E) Quantification of fibrotic area in Masson-stained slides (D), quantification of TSP1, periostin, and Col1 fluorescent intensity in (D), and quantification of co-localization of α-SMA and VIME in (D). (F) Protein levels of TSP1, Col1, periostin, p-STAT3Y705, t-STAT3 and α-SMA in left ventricle of mice detected by western blot analysis. (G) Quantification of TSP1, Col1, periostin, p-STAT3Y705 and α-SMA in (F) Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. (H) Schematic diagram depicting the key findings of this study. IH induced cardiac fibrosis via a STAT3/TSP1/Smad pathway. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49923/elife-49923-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) C57BL/6 mice were treated with S3I-201 or vehicle for 14 days after exposure to IH and Ang II for 28 days. (B) Ratio of heart weight to tibial length of mice. (C) Quantification of ejection fraction (EF) after echocardiography of mice. D) Representative Masson and Sirius red staining of left ventricle of mice. Scale bar, 100 μm. (E) Quantification of fibrotic area in Masson-stained slides (D). Data are mean ± SEM, n = 6 mice per group, *p<0.05, unpaired 2-tail t test. (F) C57BL/6 mice infected with AAV9-periostin promoter-shStat3 (AAV9-Postn Prom-shStat3) or AAV9-periostin promoter-shScramble (AAV9-Postn Prom-shScramble) were exposed to IH with or without infusion of Ang II for 28 days. (G) Quantiﬁcation of number of cells negative for CD45, CD31, CD11b, and Ter119 and positive for Thy1 from left ventricle tissue digestion that stained positive for intracellular STAT3 by ﬂow cytometry. Data are mean ± SEM, n = 6 mice per group, *p<0.05, unpaired 2-tail t test. (H) Ratio of heart weight to tibial length of mice. (I) Quantification of ejection fraction (EF) after echocardiography of mice. (J) Representative Masson and Sirius red staining of left ventricle of mice. Scale bar, 100 μm. K) Quantification of fibrotic area in Masson-stained slides (J). Data are mean ± SEM, n = 6 mice per group, *p<0.05, 2-way ANOVA with Bonferroni post-test. Data used for quantitative analyses as well as the numerical data that are represented in graphs are available in Figure 6—figure supplement 1—source data 1.
 
 To further investigate whether S3I-201 could reverse the damage already induced by IH, we treated mice with S3I-201 for 2 weeks after exposure to IH and Ang II for 28 days (Figure 6—figure supplement 1A). The ratio of heart weight to tibial length, EF and fibrotic area in mice were comparable between groups (Figure 6—figure supplement 1B–E). In addition, because systemic S3I-201 administration might protect the heart via direct and indirect mechanisms, we determined the effect of AAV9-periostin promoter-shStat3 on IH-induced fibrosis (Figure 6—figure supplement 1F). Evidence from flow cytometry confirmed the knockdown of STAT3 in CFs (Figure 6—figure supplement 1G). Similar to that observed in animals subjected to S3I-201 treatment, AAV9-periostin promoter-shStat3 promoted a significant recovery of ratio of heart weight to tibial length and EF after IH exposure (Figure 6—figure supplement 1H–I), and reduced IH-induced fibrosis under both basal and Ang II infusion conditions (Figure 6—figure supplement 1J–K). These results suggest that pharmacological or genetic inhibition of STAT3 might be a potential therapeutic strategy for cardiac fibrosis induced by IH.
 
@@ -98,64 +122,431 @@ In summary, our study demonstrated that IH upregulated the expression of TSP1 in
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-thrombospondin-1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 37879</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-SMAD2/3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8828</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SMAD2/3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8685</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-JAK1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 74129</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-JAK2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8082</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-JAK3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5031</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-JAK1 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3344</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-JAK2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3230</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-JAK3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8827</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-STAT3(Tyr705) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9145</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-STAT3(Ser727) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9134</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT3 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 12640</td>
+      <td>WB (1:1000) ChIP (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-STAT3 (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9139</td>
+      <td>IF (1:100) FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal Rabbit IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2729</td>
+      <td>ChIP (1 μg per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-thrombospondin antibody (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1823</td>
+      <td>IF (1:50) FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-αSMA (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab7817</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Collagen I antibody (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6308</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-periostin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab14041</td>
+      <td>WB (1:1000) IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-vimentin (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab92547</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (Mouse monoclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 60004</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (Rabbit monoclonal)</td>
+      <td>HuaAn Biotechnology Co</td>
+      <td>Cat# ET1609-34</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD45-PE Cy7 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103114</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD31-PE Cy7 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102523</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse CD11b-PE Cy7 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 101215</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Ter119-PE Cy7 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 116221</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse thy1- Alexa Fluor 488 (Mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 202505</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse thy1- Alexa Fluor 488 (Rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 105315</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE RAT anti-mouse IgG1</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 550083</td>
+      <td>FACS (1 μL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alex 594-conjugated goat anti-mouse antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11005</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alex 488-conjugated goat anti-rabbit antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11008</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stat3 siRNA</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-29494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Control siRNA</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-37007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Acta</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Col1a1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Postn</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Thbs1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences inSupplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tnfa</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Stat3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse 18S</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Sequences in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Angiotensin II</td>
+      <td>Abcam</td>
+      <td>Cat# ab120183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSP1 ELISA KIT(Human)</td>
+      <td>R and D Systems</td>
+      <td>Cat# DTSP10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSP1 ELISA KIT(Mouse)</td>
+      <td>Cloud-Clone Corp.</td>
+      <td>Cat# SEA611Mu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TUNEL staining kit</td>
+      <td>KeyGEN BioTECH</td>
+      <td>Cat# KGA7073-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SimpleChIP Enzymatic Chromatin IP Kit</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Eastep Super Total RNA Extraction Kit</td>
+      <td>Promega Corporation</td>
+      <td>Cat# LS1040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S3I-201</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-204304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TG101209</td>
+      <td>MedChem Express</td>
+      <td>Cat# HY-10410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism version 7.0</td>
+      <td>GraphPad Software Inc</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ version 1.52a</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo version 10</td>
+      <td>Tree Star Inc</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male C57BL/6J mice at 8–10 weeks of age were used. All mice were housed in a controlled environment (20 ± 2°C, 12 hr/12 hr light/dark cycle) and maintained on a standard chow diet with free access to water. Intermittent hypoxia (IH) was induced as described previously by using an automated system to control ambient oxygen concentration (Savransky et al., 2007; Chen et al., 2005). Briefly, O2 concentration was decreased to 4–6% approximately every 60 s. IH mice were exposed to IH for 8 hr/day in the light time for 28 days. In the pathologic cardiac fibrosis model, mice were subcutaneously implanted with an osmotic minipump (2004 model, Alzet, CA) containing Ang II (1 mg/kg/day) in saline (0.9% w/v) or an identical volume of saline. After the surgery, all mice were exposed to IH for 28 days. In rescue experiments, S3I-201 (5 mg/kg) was given by intraperitoneal injection every 2 days during or after the IH exposure.
 
-## Adeno-associated virus (AAV) construction and infection
+### Adeno-associated virus (AAV) construction and infection
 
 The AAV used in this study was constructed as previously reported (Piras et al., 2016). Briefly, AAV9 carrying a periostin promoter driving the expression of shRNA targeting Stat3 (AAV9-periostin promoter-shStat3) was constructed by Shanghai Genechem Co. (Shanghai). The sequences of the shRNAs were for shStat3, GTCACACAGATGAACTTGGTCTTCAGGT and GCATCAATCCTGTGGTATA. The periostin AAV9-periostin promoter-shStat3 or AAV9-periostin promoter-shScramble (1.5 × 1011 v.g) was injected into the tail vein of mice. At 1 week post-injection, mice were exposed to IH with or without Ang II infusion.
 
-## Echocardiography
+### Echocardiography
 
 Trans-thoracic echocardiography was performed on all mice by using a Vevo 2100 system with a MS400 linear array transducer (VisualSonics, ON, Canada) as previously reported (Zhang et al., 2018). Briefly, mice were anesthetized with 2% isoflurane and kept warm on a heated platform (37°C). The chest hairs were removed by using depilatory cream, and a layer of acoustic coupling gel was applied to the thorax. An average of 10 cardiac cycles of standard 2-D and m-mode short axis at mid-papillary muscle level were analyzed. Left ventricular ejection fraction and dimensions were calculated by using a modified Quinone method.
 
-## Histology
+### Histology
 
 Tissues were fixed in 10% neutral-buffered formalin for 24 hr at room temperature and embedded in paraffin. Hearts were sectioned at 5 μm for staining. Collagen deposition was stained with Masson’s trichrome (Sigma-Aldrich, MO) and Sirius red (Solarbio Life Sciences, Beijing) according to the manufacturer’s instructions. Images of sections were captured under an Olympus inverted microscope (IX53, Tokyo) and fibrotic areas were semi-quantitatively determined by using ImageJ 1.52.
 
 For immunofluorescence staining, harvested hearts were fixed and embedded in OCT (VWR, PA) and sectioned at 5 μm. Then, sections were stained with primary antibodies for TSP1, Collagen I, periostin, α-SMA and vimentin overnight at 4°C. Alex 488-conjugated goat anti-rabbit and Alex 594-conjugated goat anti-mouse antibodies were used as secondary antibodies. Nuclei were stained with DAPI. TUNEL staining kit (KGA7073-1, KeyGEN BioTECH, Nanjing) was used for analyzing apoptotic cells in cardiac tissue. Images were acquired under an Olympus inverted microscope (IX81, Tokyo). Fluorescent intensity was quantified by using ImageJ. Colocalization of α-SMA and vimentin was quantified by using the Image J with colocalization plugin. Briefly, the plugin initially generates an 8-bit image with only the colocalized points, then it combines the three 8-bit images in an RGB image. Two points are considered as colocalized if their respective intensities are strictly higher than the threshold of their channels.
 
-## RT–qPCR
+### RT–qPCR
 
 RNA was extracted by using the Eastep Super Total RNA Extraction Kit (LS1040, Promega, WI). cDNA was synthesized by using the iScript cDNA Synthesis Kit (Bio-Rad, CA). Quantitative RT-PCR was performed with gene-specific primers shown in Supplementary file 1.
 
-## Western blot analysis
+### Western blot analysis
 
 Proteins were isolated from snap-frozen heart tissue and cultured cardiac fibroblasts (CFs), which were extracted in RIPA solution with a protease inhibitor cocktail (#4693132001) and PhosSTOP (#04906845001, both Roche, IN). Proteins were quantified by using the BCA Protein Assay Kit (Thermo Fisher Scientific, MA). Then, 20 μg each protein was separated on SDS-PAGE and electrotransferred onto PVDF membranes, blocked with TBST containing 5% bovine serum albumin, and blots on membranes incubated with antigen and antibody complexes were detected by an ECL protocol with horseradish peroxidase-conjugated IgG as secondary antibodies. Immunoblots were quantified by using ImageJ 1.52.
 
-## Isolation and culture of primary CFs (PCFs)
+### Isolation and culture of primary CFs (PCFs)
 
 Isolation of mouse primary CFs (mPCFs) was performed as previously reported (Su et al., 2017). Briefly, mouse hearts from freshly euthanized C57BL/6 mice were harvested and minced to 1 mm (Somers et al., 2008) in cold phosphate buffered saline. Minced tissue was subsequently digested with buffer containing collagenase II (#V900892, Sigma-Aldrich, MO) and trypsin (Solarbio life Sciences, Beijing) under constant stirring at 37°C for 60 min. The supernatants were spun to collect cells. Then cells resuspended in DMEM/F12 (#11320033, Gibco, MA) were plated into dishes and incubated for 2 hr. Supernatant was discarded and dishes were replenished with fresh medium. mPCFs were incubated at 37°C in a humidified atmosphere of 5% CO2 and grown to 70–80% confluence. Cells at passages 2 to 3 were used in experiments. Cells exposed to IH were maintained in a hypoxia chamber (5% CO2; balance N2 and O2 from 5% to 21%) for the indicated times.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry was performed as previously reported (Ali et al., 2014). Digested cells from mouse hearts were suspended in staining buffer containing the relevant surface marker antibodies (PE/Cy7 anti-mouse CD45, CD31, CD11b, Ter119, and Alexa Fluor 488 anti-mouse Thy1) in the dark for 30 min at room temperature. Then, for intracellular staining, cells were fixed with cold methanol for 10 min at −20°C, then incubated with a stain buffer containing TSP1 or STAT3 antibody. After three washing steps, a secondary antibody conjugated to PE was added. The cells were then washed and ready for analysis.
 
-## Cell immunofluorescence staining
+### Cell immunofluorescence staining
 
 Mouse primary CFs were fixed with 4% paraformaldehyde and permeabilized with 0.25% Triton X-100. Then cells were stained with antibodies against α-SMA (1:100), STAT3 (1:100) or Ki67 (1:100). Alexa Fluor antibodies (1:200) were used as secondary antibodies. Stress fibers were stained with rhodamine phalloidin (Thermo Fisher Scientific, MA). Nuclei were stained with DAPI. Images were acquired under an Olympus laser scanning microscope (IX81, Tokyo).
 
-## Collagen gel contraction assay
+### Collagen gel contraction assay
 
 The collagen contraction assay was performed as previously reported (Pincha et al., 2018). Mouse primary CFs were embedded in collagen gel containing collagen type I from rat tail (#08–115, Sigma-Aldrich, MO) and culture medium. Contraction was measured from the gel images after 24 hr.
 
-## Lentivirus construction and infection
+### Lentivirus construction and infection
 
 Lentiviruses carrying short hairpin (shRNA) for Thbs1 (LV-shThbs1) and non-specific shRNA (LV-shCtrl) were constructed by Shanghai Genechem Co. (Shanghai). CFs were infected with lentivirus at multiplicity of infection (MOI) 10, and no detectable cellular toxicity was observed.
 
-## ELISA
+### ELISA
 
 The secretion of TSP1 in mice or human plasma was quantified by using an ELISA kit (SEA611Mu, Cloud-Clone Corp., TX and DTSP10 R and D Systems, MN) according to the manufacturer’s instructions.
 
-## siRNA transfection
+### siRNA transfection
 
 Mouse primary CFs were seeded on plates and cultured to 80% confluence, then transfected with Stat3 siRNA (#sc-29494) or control siRNA (#sc-37007, both Santa Cruz Biotechnology, CA) by using Lipofectamine RNAi MAX transfection reagent (Thermo Fisher Scientific, MA) for 24 hr.
 
-## Chromatin immunoprecipitation (ChIP) assay
+### Chromatin immunoprecipitation (ChIP) assay
 
 ChIP was performed as previously reported (He et al., 2018) with SimpleChIP Enzymatic Chromatin IP Kits (Cell Signaling Technology, MA) according to the manufacturer’s instructions. Briefly, mPCFs were crosslinked with 1% formaldehyde followed by quenching with glycine for 5 min. Cell lysates were digested by micrococcal nuclease, sonicated, and proteins were immunoprecipitated with antibody to STAT3 or rabbit IgG as a control. After complete washing, immunoprecipitated DNA was eluted with elution buffer and reverse-crosslinked overnight at 65°C. DNA was purified and quantified by quantitative RT-PCR. Enrichment was calculated relative to input. Primers for ChIP-qPCR were forward, 5’- TGGCTTCCTCTGTGGTCTCT-3’, and reverse, 5’-GTCAAGGTCATGGGATGGTC-3’.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes were designed with adequate power according to the literature and our previous studies. Data are presented as mean ± standard error of the mean (SEM). Statistical analysis involved use of GraphPad Prism 7 v7.04 with two-tailed, unpaired Student’s t test or one-way or two-way ANOVA with Bonferroni multiple comparison post-test, as appropriate. The criterion for statistical significance was p<0.05.

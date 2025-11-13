@@ -40,9 +40,33 @@ Here we report HiLITR (High-throughput Localization Indicator with Transcription
 
 ## Results
 
-## HiLITR is a live-cell transcriptional reporter of protein localization
+### HiLITR is a live-cell transcriptional reporter of protein localization
 
 To design HiLITR, we needed a mechanism to convert protein localization or mislocalization in live cells to a simple readout for pooled genetic screens. We designed two protein components – a protease (GFP-TEVp) and a transcription factor (TF), each targetable to specific subcellular locations (Figure 1A and B). If the protease and TF are colocalized to the same organelle (e.g., the mitochondrial membrane in Figure 1A), then proximity-dependent proteolysis of a protease cleavage sequence (TEVcs) in the TF’s membrane anchor releases the TF, which can translocate to the nucleus and drive expression of a chosen reporter gene. If the protease and TF are not colocalized, then TF cleavage and reporter gene expression will not occur.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of HiLITR. HiLITR has two components: a low-affinity protease (green) and a membrane-anchored transcription factor (TF, red). Left: when protease and TF are colocalized on the same organelle, and 450 nm blue light is supplied, the TF is released by proximity-dependent cleavage and drives reporter gene expression. Right: when protease and TF are not colocalized, HiLITR is off. (B) Domain structures of HiLITR components and timeline for HiLITR usage. The targeting domain is a protein or localization peptide that directs the TF/protease to the desired subcellular region (such as the mitochondrion in A, left). (C) Fluorescence images of HiLITR in HeLa cells. TF is on the outer mitochondrial membrane (OMM), and protease is localized to the OMM (top row), ER membrane (middle), or cytosol (bottom). mCherry is the reporter gene and TOMM20 is a mitochondrial marker. Cells were stimulated with 450 nm light for 3 min, then fixed and stained 8 hr later. Scale bars, 10 µm. (D) Fluorescence-activated cell sorting (FACS) plots of K562 cells expressing HiLITR. TF is on the OMM (top row) or ER membrane (bottom row), while protease localization is varied as indicated. Light stimulation was 3 min. mCherry on the y-axis reports HiLITR activation, and GFP on the x-axis reports protease expression level. Percentage of cells above the red line is quantified in each plot. (E) Model selection on K562 cells expressing HiLITR TF on mitochondria. Cells with mitochondrial protease (colocalized with TF) versus cytosolic protease (not colocalized with TF) were combined in a 1:20 ratio. Cells were stimulated with light for 3.5 min and sorted for high mCherry expression 8 hr later. (F) qPCR analysis of mito- and cyto-protease transcript from predefined, pre-sort, and post-sort cell mixtures from (E). Mito-protease cells were enriched 308-fold over cyto-protease cells in one round of FACS sorting. Full data in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** LOV, TF, and TEV protease domains used in Figure 1—figure supplements 2 and 3 (HiLITR optimization) vary slightly. Any differences are shown and discussed in the text.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fluorescence-activated cell sorting (FACS) plots of HEK cells transiently transfected with unoptimized HiLITR components. Transcription factor (TF) is on the outer mitochondrial membrane (OMM), while protease is localized to the OMM (top row), ER membrane (middle), or cytosol (bottom). mCherry on the y-axis reports HiLITR turn-on, while GFP on the x-axis reports protease expression level. In (A), (C), (E), and (G), the percentage of cells in each of the two right quadrants is shown in red. The TF component contains ‘eLOV’ (Wang et al., 2017) and the GAL4 activation domain. The protease used here is wild-type TEV truncated at amino acid 219 (Wang et al., 2017). (B) Quantitation of the results in (A). The fraction of cells expressing both protease and reporter (top value in FACS plot) was divided by the total fraction of protease-positive cells (sum of top and bottom values). (C) FACS plots of K562 cells stably expressing HiLITR TF and mCherry reporter, and transduced with mitochondrial, ER, or cytosolic protease. Truncated wild-type TEV protease (top row) or ultraTEV (uTEV) protease (Sanchez and Ting, 2020; bottom row) were used. 2 min of light stimulation. (D) Quantitation of the results in (C). (E) FACS plots of K562 cells stably expressing mCherry reporter and TF containing ‘eLOV’ or improved ‘hLOV’ (Kim et al., 2017). Cells were transduced with uTEV protease targeted to the mitochondria, ER, or cytosol. No light stimulation was used. hLOV reduces background signal. (F) Quantitation of the results in (E). (G) FACS plots of K562 cells stably expressing mCherry reporter, protease, and GAL4 or VP64 TF activation domain variant. No light stimulation was used. (H) Quantitation of the results in (G). (I) FACS plots of K562 cells stably expressing mCherry reporter with our previously described SPARK tool (Kim et al., 2017). Protease was tested at the OMM, ERM, and cytosol, with 0, 2, or 5 min of light stimulation. (J) Same as (I), but with the optimized HiLITR components (mitochondrial TF, mitochondrial ‘TA protease,’ ER protease, and cytosolic protease shown in Figure 1—figure supplement 1). SPARK and optimized HiLITR differ in their TF and protease domains. (K) Quantitation of results in (I) and (J).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Fluorescence-activated cell sorting (FACS) plots of K562 cells stably expressing optimized mitochondrial HiLITR components (outer mitochondrial membrane [OMM]-targeted protease and transcription factor [TF]). Protease expression was induced with doxycycline for either 16 hr or 40 hr, and cells were left in the dark or exposed to light for 2 min. In (A), (C), (E), and (H), the percentage of cells in each right quadrant is quantified and shown in red. (B) Quantitation of the results in (A). The fraction of cells expressing both protease and reporter was divided by the total fraction of protease-positive. (D), (F), and (I) are quantified in the same manner. (C) FACS plots of K562 cells stably expressing optimized mitochondrial HiLITR components. Protease expression was induced for 16 hr with 50–400 ng/mL doxycycline. Light stimulation was provided for 2 min. HiLITR activation (top row) and total protease expression (bottom row, green histogram; the 50 ng/mL doxycycline condition is overlayed in gray) were measured across conditions. (D) Quantitation of the results in (C). (E) FACS plots of K562 cells stably expressing mitochondrial HiLITR TF and the indicated proteases. Light stimulation was varied between 0 and 10 min. Quantitation of the results in (E). The best specificity was achieved with 2 min of light stimulation. (F) FACS plots of a clonal K562 cell line stably expressing mitochondrial TF, mitochondrial protease, and mCherry reporter (compare to mito protease in non-clonal stable K562s, top row of E). (G) The clonal cell line in (G) was stimulated with light for 3 min, then cultured for 3–20 hr before FACS analysis. The percentage of cells with high mCherry expression (above the top red line) or low mCherry expression (below the bottom red line) is shown in each plot. (H) Quantitation of the results in (G). We used 8 hr for mCherry expression in subsequent experiments.Figure summary - Optimization of HiLITR experimental parameters. After optimization of HiLITR components to minimize background and maximize dynamic range, we investigated the modulation of experimental parameters in the HiLITR assay. First, we looked at expression of the protease. The HiLITR protease is under the expression of a doxycycline inducible promoter to avoid prolonged stable expression of both HiLITR components and to enable cell culturing in ambient light prior to induction of the protease. Reducing the protease expression time window from 40 hr to 16 hr prior to light stimulation improved the signal to noise ratio between the light and dark states from 2.3-fold to 4.9-fold with 2 min of light stimulation, with only ~10% reduction in activation in the light state (A, B). Varying the concentration of doxycycline used to induce protease expression had a modest impact on HiLITR activation, the proportion of protease-positive cells, and total protease expression (C, D). Next, we asked how HiLITR performance varied with light stimulation time. By varying light stimulation time from 0 to 10 min, we found that we could achieve robust HiLITR activation with the mitochondrial protease while maintaining low background with the ER and cytosolic proteases with just 2–5 min of light stimulation time (E, F). In this experiment, 2 min of light stimulation gave a ±light signal to noise ratio of 7× and a ±colocalization signal ratio of 35× (activation of HiLITR mito TF with mitochondrial vs. ER protease). To improve light vs. dark signal to noise, we considered that in the heterogenous population of cells, there were likely some cells that produced light-independent cleavage and other cells that never produced TF cleavage under even extended light stimulation. Reducing cell-to-cell variability is desirable in gene-perturbation studies, so we generated clonal cell lines for testing. We identified a clonal population that gave only 1.7% activation in the dark state but 63% activation with 2 min of light stimulation (G), a signal to noise ratio of 37×. Because this clone showed lower activation in the dark state and higher activation in the light state than the heterogeneous population, we reasoned that it must represent an intermediate level of HiLITR sensitivity. Finally, we tested the change in HiLITR readout with respect to time of reporter expression after light stimulation. In large screens, time of FACS sorting is non-negligible, so it is important to have a readout that is stable with time. With our clonal line, we found that a minimum of 8 hr is required for robust reporter expression, and reporter levels are stable between 8 and 20 hr post-stimulation (H, I). It is likely that keeping cell samples on ice after 8 hr of reporter expression further stabilized total reporter levels in our high-throughput screens.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Immunofluorescence microscopy of stably-integrated HiLITR components used in fluorescence-activated cell sorting (FACS) experiment in Figure 1D. The localizations of the mitochondrial transcription factor (TF) (V5 tag, top row) and protease constructs (bottom three rows) were compared to nuclear (DAPI), mitochondrial (TOMM20), and ER (Calnexin) markers in K562 cells. Scale bars, 10 µm. (B) Immunofluorescence microscopy of the ER-localized HiLITR TF used in Figures 1D, 2D and E (‘ER transcription factor’ in Figure 1—figure supplement 1). In HeLa cells, the localization of the ER transcription factor (V5 tag) was compared to an ER marker (Calnexin). A fraction of the ER-TF localizes to a non-ER region, consistent with the dual localization of TMED3 (from which the targeting domain was derived) to ER and Golgi membranes (Emery et al., 2000; Jenne et al., 2002). Scale bar, 10 µm. (C) Immunofluorescence microscopy of the signal-anchored mitochondrial protease used in Figure 2C and E (‘Signal-anchored protease’ in Figure 1—figure supplement 1). In HeLa cells, the localization of the signal-anchored protease (GFP) was compared to a mitochondrial marker (TOMM20). Scale bar, 10 µm. (D) Immunofluorescence microscopy of the mutant mitochondrial tail-anchored protease (mutant 1, ‘mTA* protease’ in Figure 1—figure supplement 1) and variants (mutants 2–6; sequences in Materials and methods). HeLa were stained with anti-TOMM20 to visualize mitochondria. Scale bars, 10 µm. At right, mean and standard deviation for Pearson’s correlation coefficient between the protease and mito marker channels (n = 10–30 cells per condition). ***p<0.001, vs. TA protease, Wilcoxon rank-sum test. (E) Same as (D) (‘mTA* protease’, mutant 1) but with additional Golgi stain (anti-GRASP65). Scale bar, 10 µm. (F) HiLITR constructs for detection of protein colocalization at the peroxisome. Top: domain structures of peroxisome-targeted HiLITR TF and protease constructs. The TF and protease domains face the cytosol. Bottom: localization of HiLITR constructs in HeLa, using PEX14 peroxisomal marker. Note that despite testing numerous targeting signals, we were unable to generate a peroxisomal TF with clean localization. Scale bars, 10 µm. (G) FACS analysis of K562 cells expressing the indicated HiLITR combinations, 8 hr after 3 min light stimulation. Percentage of cells in the red gate is quantified in each plot. Mito-TF and ER-TF data was obtained as part of the experiment in Figure 1D. HiLITR at the peroxisomal membrane.Figure summary - Generation of the mutant tail-anchored mitochondrial protease (mTA* protease). For the ER screen (Figure 2), we sought to generate a mutant tail-anchored mitochondrial protease with a greater propensity to mistarget to the ER. To do this, we considered the features of tail-anchored proteins which promote ER vs. mitochondrial targeting. Tail-anchor sequences of native ER proteins tend to be longer, more hydrophobic, and have fewer basic flanking residues than mitochondrial tail-anchor sequences (Beilharz et al., 2003; Costello et al., 2017; Horie et al., 2002). We found that neutralizing just one of three positive residues flanking the transmembrane domain in our MAVS-based mito TA protease produced detectable mislocalization to the ER and Golgi (mutant 1, D, E), while other mutations disrupted mitochondrial localization too severely (D). Note that localization of protease variants in (D) to the Golgi and plasma membrane is a consequence of further trafficking after initial insertion at the ER (Borgese et al., 2019). We selected mutant 1, a MAVS-R537A mutant of the mito TA construct (‘mTA* protease,’ D) for our ER screen. The additional mutant constructs are described in Supplementary file 1.Figure summary - HiLITR at the peroxisomal membrane. As part of our HiLITR panel in Figure 1D, we also tested the mitochondrial TF and ER-TF against a peroxisomal protease (localization in F). As expected, there was no HiLITR activation with the ER-TF by the peroxisomal protease (G). Interestingly, the peroxisomal protease did induce mild HiLITR activation with the mitochondrial TF (G). This may be due to mitochondria-peroxisome contact sites (Chen et al., 2020), which could produce crosstalk between protease and TF constructs on neighboring membranes. We also attempted to generate a HiLITR TF for the peroxisomal membrane. Unfortunately, despite testing numerous fusion constructs incorporating both short targeting domains and full-length peroxisomal proteins, we observed leak to non-peroxisome locations in HeLa cells. Our most cleanly targeted peroxisomal TF fusion was based on full-length PMP34, but still showed obvious mistargeting to non-peroxisomal compartments (F). Peroxisomes are formed in a process that involves both the ER and the mitochondrial membranes (Sugiura et al., 2017), and many peroxisome membrane proteins insert at one or both locations, to be subsequently trafficked into newly derived peroxisomes. It is likely that overexpression of the peroxisomal TF construct produces pools of TF on the mitochondria and/or ER that are too abundant to be efficiently concentrated into nascent peroxisomal membranes. The phenomenon of peroxisomal fusion constructs mislocalizing to the mitochondria or ER has been previously observed (Kim et al., 2006; Sugiura et al., 2017). Consistent with the incomplete targeting of the peroxisomal TF to the peroxisome, we observed HiLITR activation when our peroxisomal TF was paired with the peroxisomal, mitochondrial, or ER proteases (G). HiLITR activation with the mitochondrial protease was slightly greater than with the peroxisomal protease, which is likely a result of higher expression of the mitochondrial protease relative to the peroxisomal protease, as well as the mislocalization of the peroxisomal TF. Importantly, cytosolic protease did not activate reporter expression with the peroxisomal TF (G), indicating that colocalization is still a requirement for TF release.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Same as Figure 1E and F, except that cells expressing mitochondrial protease (colocalized with TF) are combined with cells expressing ER protease (rather than cytosolic protease as in Figure 1E). Cells were combined in a 1:20 ratio as indicated, stimulated with light for 3 min, and sorted for high mCherry expression 8 hr later. qPCR analysis of mito- and ER-protease transcript from predefined, pre-sort, and post-sort cell mixtures showed a 281-fold enrichment of mito-protease cells over ER-protease cells in one round of sorting. Full data in Figure 1—figure supplement 5—source data 1.
 
 To maximize the dynamic range of HiLITR, we included a second ‘gate’ in our design – a photosensory light-, oxygen-, or voltage-sensing (LOV) domain adjacent to the TEVcs in the TF tether (Figure 1A and B). The LOV domain sterically blocks protease cleavage in the dark, but changes conformation to provide access under blue light illumination. HiLITR therefore acts as an AND gate, requiring both protease/TF colocalization and blue light to turn on. This two-gate design improves the dynamic range, temporal precision, and tunability compared to a one-gate design (Kim et al., 2017).
 
@@ -52,9 +76,17 @@ We further tested the versatility of HiLITR by designing a TF targeted to the ER
 
 Finally, we performed a model selection to assess our ability to enrich cells with colocalized HiLITR components from cells with non-colocalized HiLITR components. qPCR analysis showed >300-fold enrichment in a single round of FACS (Figure 1E and F and Figure 1—figure supplement 5).
 
-## Using HiLITR in pooled CRISPRi screens to probe pathways of ER and mitochondrial membrane protein trafficking
+### Using HiLITR in pooled CRISPRi screens to probe pathways of ER and mitochondrial membrane protein trafficking
 
 Because HiLITR provides a simple, fluorescence intensity-based readout of protein colocalization in living cells, we sought to combine it with CRISPRi and FACS in a pooled screen to identify factors regulating the trafficking of ER and mitochondrial membrane proteins. For instance, if the HiLITR TF is targeted to the OMM via an N-terminal transmembrane anchor (signal anchor) and the HiLITR protease is localized to the OMM via a C-terminal transmembrane anchor (tail anchor, ‘TA’), then any sgRNA that disrupts a gene important for TA protein targeting to the OMM should reduce HiLITR-driven reporter gene expression (Figure 2A). Cells with reduced HiLITR activation can be enriched by FACS and analyzed by sgRNA sequencing (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig2-v2.jpg)
+
+**Figure 2.:** (A) Possible outcomes for sgRNA disruption of mitochondrial protease in cells expressing mitochondrial HiLITR transcription factor (TF) and protease. In the first example, sgRNA #1 disrupts protease localization while in the second example, sgRNA #2 reduces protease abundance. Both perturbations lead to decreased HiLITR-driven mCherry expression. (B) Format and timeline of CRISPRi screens. (C–E) Three HiLITR configurations used for CRISPRi screens. The first two (C, D) use mitochondria-localized TF and either tail-anchored (TA; C) or signal-anchored (SA; D) mitochondrial protease. The third cell line (E) uses ER-localized TF and a mutated tail-anchored mitochondrial protease that partitions between the outer mitochondrial membrane (OMM) and ER membrane. Examples of how HiLITR activation will be affected by various sgRNA-induced changes to protein localization are illustrated. (F) Fluorescence-activated cell sorting (FACS) plots showing cell populations collected and sequenced from the TA, SA, and ER CRISPRi screens from (C–E). Light stimulation times varied from 3.5 to 5 min.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) CasTLE plot showing results of whole-genome CRISPRi screen, performed in two replicates in the clonal K562 mito transcription factor (TF)/mito protease HiLITR cell line (shown in Figure 2C, left). Fluorescence-activated cell sorting (FACS) data in inset. x-axis shows log2-scaled change in HiLITR activation (ratio of high mCherry cells to low mCherry cells) relative to nontargeting controls. y-axis shows the CasTLE score, a measure of significance. Labeled hits are annotated for function in protein folding (blue), membrane trafficking (purple), or proteasome function/biogenesis (red). (B) Immunofluorescence microscopy of MAVS, an endogenous mitochondrial tail-anchored protein, with or without knockdown of two CRISPRi hits (VPS13D and TTC1) in HeLa. TOMM20 and Calnexin are mitochondrial and ER markers, respectively. Scale bar, 10 µm. For MAVS vs. TOMM20 images, mean and standard deviation of Pearson’s correlation coefficient between the protease and mito marker channels were calculated (n = ~ 20 cells per condition).Figure summary - Analysis of the whole-genome HiLITR screen. There are several interesting results to emerge from the whole-genome screen. First, our top hit, PGK1, is an artifact of using the PGK1 promoter upstream of HiLITR TF in the expression vector (the PGK1 promoter drives an antibiotic resistance gene, not the TF itself). Therefore, sgRNAs against PGK1 have off-target effects that silence the TF expression, giving a profound reduction in HiLITR activation. Interestingly, the second and third most significant hits, RBM12 and CPNE1, share a promoter (Yang et al., 2008). sgRNAs targeting RBM12 will knock down CPNE1, and vice versa, so it is encouraging that knockdown of RMB12 and CPNE1 produce very similar results. Before the three sublibrary screens (Figure 2C–E), we performed follow-up on a few hits from the whole-genome screen. Two of these hits, VPS13D and TTC1, showed profound defects in mitochondrial morphology when knocked down by CRISPRi (B). VPS13D plays a role in organelle-to-organelle contact and bulk lipid transfer (Gao and Yang, 2018), and the effect of its depletion on mitochondrial morphology has previously been observed (Anding et al., 2018). TTC1 is a tetratricopeptide repeat (TPR) domain-containing protein that binds to both HSP70 (Liu et al., 1999) and HSP90 (Liou and Wang, 2005). Despite the general mitochondrial defects we observed, however, knockdown of VPS13D or TTC1 did not produce measurable changes in the colocalization of an endogenous mitochondrial tail-anchored (TA) protein (MAVS) with a mitochondrial marker, TOMM20 (B). After we performed the three sublibrary screens, we checked the results for VPS13D and TTC1 (Supplementary file 2). While VPS13D has been observed to disrupt mitochondrial morphology (Anding et al., 2018), it has not been found to disrupt the ER (Seong et al., 2018). Consistent with this, VPS13D knockdown decreased HiLITR activation in the TA and signal-anchored (SA) screens, but not the ER screen. Likewise, TTC1 knockdown decreased HiLITR activation in only the TA and SA screens. We speculate that VPS13D and TTC1 may have some functional relationship to each other.
 
 A myriad of proteins function at the OMM and ERM, localized via signal-anchored (SA), TA, internal, and multipass transmembrane domains. Several distinct pathways orchestrate the co-translational or post-translational insertion of these proteins at the ERM (Shao and Hegde, 2011) and at the OMM (Hansen and Herrmann, 2019). Recent studies have also revealed a striking interplay between ER and mitochondrial membrane targeting pathways (Costa et al., 2018; Gamerdinger et al., 2015; Mårtensson et al., 2019), such as the ER-SURF pathway, in which some OMM proteins are harbored on the ERM when mitochondrial import is impaired (Hansen et al., 2018).
 
@@ -68,9 +100,29 @@ To first narrow down our list of candidate genes, we performed a whole-genome �
 
 Using these results, we designed an sgRNA sublibrary (Supplementary file 2) for simultaneous screening in the three HiLITR configurations (TA screen, SA screen, and ER screen). In total, we transduced our three clonal HiLITR K562 cell lines with 2,930 sgRNAs targeting 586 genes (5 guides/gene) plus 500 nontargeting controls. Two biological replicates were performed for each HiLITR configuration. The screens were performed as shown in Figure 2B, with infection, passaging, and sorting carried out at 2,000–10,000× coverage – a higher level than standard – in order to detect subtle or partial effects. For each screen, we collected cell populations corresponding to high mCherry reporter expression and low mCherry reporter expression (Figure 2F) and assessed the representation of each sgRNA between the two collected populations by next-generation sequencing.
 
-## CRISPRi screens with three HiLITR configurations identify proteins that influence the localization of mitochondrial and ER membrane proteins
+### CRISPRi screens with three HiLITR configurations identify proteins that influence the localization of mitochondrial and ER membrane proteins
 
 The combined results from our three HiLITR screens are shown in Figure 3A. Sequencing data were analyzed by CasTLE (Morgens et al., 2016), which assigns to each gene an effect size and an associated CasTLE score (a measure of significance, signed for effect direction). CasTLE scores in the TA and SA screens were largely concordant, reflecting the similarity between the two configurations (R2 = 0.69, compared to R2 = 0.28 for TA vs. ER screens and 0.37 for SA vs. ER screens). Out of 586 genes, sgRNAs against 270 of them impacted HiLITR turn-on significantly (at 10% false discovery rate [FDR]) in at least one screen (186 genes in 2+ screens). The TA screen and whole-genome screens used the same HiLITR configuration, and of the 50 most significant genes from the whole-genome screen that were included in the three-screen sublibrary, 47 were significant in the TA screen at 10% FDR, indicating good reproducibility.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig3-v2.jpg)
+
+**Figure 3.:** (A) CasTLE plot showing combined results from tail-anchored (TA), signal-anchored (SA), and ER CRISPRi screens. x-axis plots the TA screen score (lower when the mito TA protease from Figure 2C is disrupted) and y-axis plots the ER screen score (higher when the mito mTA* protease from Figure 2D relocalizes to the ER membrane). Points are color-coded according to score in the SA screen, with red denoting less disruption of the mito SA protease from Figure 2C. (B) Venn diagram showing that proteins regulating the targeting of mitochondrial TA proteins may exhibit some combination of low TA score, mid to high SA score, and high ER score. (C) Zoom-in of proteins with low TA score and medium-high SA score (replotted from A). Points are colored according to absolute difference in effect size in TA vs. SA screen. Dashed black lines enclose the 90% interquantile range for difference between TA and SA score. (D) Zoom-in of proteins with low TA score and high ER score, corresponding to maroon shaded region in (A). (E) Zoom-in of proteins with high ER score and medium-high SA score, corresponding to brown shaded region in (A). Unlabeled points showed significant increases in HiLITR activation (at 10% FDR) in all three screens and are likely to be nonspecific hits.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The plot from Figure 3A, with genes in the TRC pathway (GET pathway in yeast) labeled. All five genes tested in the sublibrary screens (WRB and CAMLG were omitted) produced significant increases in HiLITR activity in the tail-anchored (TA) screen (p=1.7e-7, hypergeometric test). (B) Schematic of the TRC pathway. (C) Quantitation of individual fluorescence-activated cell sorting (FACS) analysis of gene knockdown in the TRC pathway. The K562 TA and signal-anchored (SA) (top) and ER (bottom) HiLiTR cell lines were transduced with individual sgRNAs against TRC pathway genes. Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of nontargeting (NT) control. (D) Schematic showing possible membrane insertion pathway of TA protease. Most protein traffics to the outer mitochondrial membrane (OMM), but a subpopulation may be nonproductively handled by TRC pathway chaperones, resulting in rejection from ER insertion by the receptors, adaptor-mediated recruitment of ubiquitination machinery, and subsequent degradation. (E) Schematic showing possible membrane insertion pathway of mTA* protease. (F) Immunofluorescence microscopy analysis of TRC pathway knockdown. In HeLa cells, the localization of mTA* protease was compared to Golgi (GRASP65) and mitochondrial (TOMM20) markers. Scale bar, 10 µm. Note: knockdown of CAMLG in HeLa cells impaired cell adherence, preventing immunofluorescence analysis. (G) Quantification of data in (F), along with ~20 additional fields of view per condition (total ~50 cells per sample). For each cell, the mean intensity of Golgi-colocalized GFP was divided by the mean intensity of mitochondria-colocalized GFP. ***p<0.001, Student’s t-test. Full data in Figure 3—figure supplement 1—source data 1.Figure summary - Analysis of TRC pathway genes in the CRISPRi sublibrary screens. The TRC pathway is the first pathway discovered for the targeting of ER-destined TA proteins and is well-characterized (Borgese et al., 2019). (B) shows the key players in the TRC pathway. ER-targeted TA proteins that are TRC pathway clients are handled directly by two chaperones, SGTA and TRC40 (Chang et al., 2010; Schuldiner et al., 2008; Stefanovic and Hegde, 2007). Three adaptor proteins (UBL4A, TRC35, and BAG6) (Mariappan et al., 2010) coordinate handoff between SGTA and TRC40 (Shao et al., 2017; Wang et al., 2010), while BAG6 additionally recruits the E3 ubiquitin ligase RNF126 (not shown) to degrade nonproductively associated proteins (Rodrigo-Brenni et al., 2014). At the ER membrane, WRB and CAMLG act as receptors to assist with insertion of the client protein (Schuldiner et al., 2008; Vilardi et al., 2011; Yamamoto and Sakisaka, 2012), but proteins with significant positive charge flanking the transmembrane domain (such as mitochondrial TA proteins) are rejected, either by the receptors or due to the energetic barrier posed by the ER membrane (Rao et al., 2016). The chaperones (SGTA and TRC40) and adaptors (TRC35, BAG6, and UBL4A) were included in our CRISPRi sublibrary, while WRB and CAMLG were not. We further explored the TRC pathway with individual knockdown of the chaperones SGTA and TRC40, the adaptor TRC35, and the receptors WRB and CAMLG. Interestingly, the profiles of HiLITR performance across the three HiLITR configurations segregated based on the function of each protein in the TRC pathway (C). Notably, knockdown of none of the proteins affected the SA screen HiLITR configuration, consistent with the fact that the TRC pathway acts only on TA proteins. In the TA screen configuration, knockdown of the chaperones and adaptors both increased HiLITR activation (C). If the chaperones are knocked down, there will be decreased mishandling of mitochondrial TA protein, and therefore an increase in normal topogenesis, localization to the mitochondria, and release of mitochondrial TF (D). Similarly, upon loss of adaptors, handoff of TA protein between SGTA and TRC40 is less coordinated. Adaptor-mediated degradation of uninserted TA protein will also be reduced. Both effects promote increased targeting of the TA protein to the mitochondrial membrane, increasing HiLITR activation (D). Knockdown of receptors in the TA screen configuration did not impact HiLITR activation (C). Since mitochondrial TA proteins that reach the ER are rejected on the basis of charge, loss of the receptors will have no additional impact (D). In the ER screen configuration, we used the mutant TA protein (mTA*-protease) that partitions between the OMM and ER membrane. We observed that knockdown of the chaperones and receptors decreased HiLITR activation (A, C). Loss of chaperones will mean less mTA* protease is routed to the ER, meaning less ends up colocalized with the ER-targeted TF, leading to reduce HiLITR activation (E). Similarly, if the receptors are disrupted, the mTA* protease cannot be inserted into the ER, decreasing HiLITR activation (E). In contrast to the chaperones and receptors, the adaptors gave mixed results, with two of the three adaptors producing no significant result in the ER screen (A, C). Knockdown of the adaptors will decrease handoff of the mTA* protease between SGTA and TRC40, providing opportunity for escape to the mitochondrial membrane (and decreased HiLITR activation). However, this effect is opposed by the fact that loss of adaptors will reduce degradation of the mTA* protease, providing more time for its insertion into the ER membrane (increasing HiLITR activity). As such, the impact of knocking down the adaptors is harder to predict for the ER screen (E). Lastly, we tested the effect of TRC protein knockdown on the localization of the mutant TA protease. Knockdown of SGTA, TRC40, and WRB decreased activation of HiLITR in the ER screen configuration, indicating reduced ER targeting of the mTA* protease. As expected, knockdown of any of these components reduced the fraction of mTA* protease colocalizing with the Golgi (G). TRC35 also decreased the fraction of mTA* protease colocalized with the Golgi, despite a neutral effect in the ER screen HiLITR configuration. It is likely that loss of TRC35 increases the fraction of mTA* protease which is rescued from the TRC pathway, while also increasing the efficiency by which unrescued mTA* protease is inserted into the ER (E). This would result in an increase in mitochondrial mTA* protease and neutral effect on ER mTA* protease, which would decrease the ratio of Golgi-localized mTA* protease without affecting total Golgi-localized protease or subsequent HiLITR activation in the ER screen configuration.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fluorescence-activated cell sorting (FACS) plots showing the effects of individual sgRNAs on HiLITR readout in three K562 HiLITR cell lines (tail-anchored [TA], signal-anchored [SA], and ER) from Figure 2C–E. Percentage of cells above and below the red lines is quantified in each plot. Genes in this group were hits with low TA score and mid to high SA score, labeled in Figure 3C. (B) FACS plots showing the effects of the guides tested in (A) on protease expression level. Protease expression level in cells with nontargeting control sgRNA is overlaid in gray. (C) Same as (A), for three additional genes that were hits with low TA score and high ER score, labeled in Figure 3D. (D) FACS plots showing the effects of the guides tested in (C) on protease expression level. Protease expression level in cells with nontargeting control sgRNA is overlaid in gray. (E) Quantitation of FACS data in (A) and (C). Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of nontargeting (NT) control plot. Top shows TA configuration and SA configuration HiLITR data, bottom shows ER configuration HiLITR data for each gene tested. (F) Fluorescence microscopy of mTA* protease in HeLa with knockdown of three different CRISPRi hits. GRASP65 and TOMM20 are Golgi and mitochondrial markers, respectively. Scale bars, 10 µm. (G) Quantification of data in (D), along with ~20 additional fields of view per condition (~50 cells per condition). For each cell, the mean intensity of Golgi-colocalized protease was divided by the mean intensity of mitochondria-colocalized protease. ***p<0.001, Student’s t-test. Full data in Figure 3—figure supplement 1—source data 2.Figure summary - Description of additional hits from Figure 3 and discussion of potential artifacts. We performed individual validation experiments on a number of hits from sublibrary screens. Performance in individual validation experiments is compared to performance in the sublibrary screens in Supplementary file 2. PTPN1 is a TA protein known to localize to both the ER and mitochondria in an isoform-dependent manner (Brambillasca et al., 2006; Fueller et al., 2015). PTPN1 showed significant reduction in HiLITR activity in only the TA screen. We validated the strong negative effect of PTPN1 on HiLITR activation in the TA configuration with two guides (A, B, E). However, PTPN1 also decreased activation in the SA configuration, albeit to a more modest extent. REEP4 plays a role in ER membrane sequestration during metaphase (Schlaitz et al., 2013). It was found to decrease HiLITR activation in the TA and ER screens, while increasing HiLITR activation in the SA screen. Validation of REEP4 with two guides was consistent with screen results, with both guides showing decrease in activation in the TA configuration and one guide each showing either decreased activation in the ER configuration or increased activation in the SA configuration (B–E). REEP4 was observed to have a significant growth defect, and its annotation seemed to imply a nonspecific role, so we declined to analyze it further. SEC61A1 is a member of the ER translocon. It was observed to decrease HiLITR activation in the TA and SA screens and increase HiLITR activation in the ER screen. During individual validation, it was instead found to mildly increase HiLITR activation in all three configurations (C–E). Knockdown of SEC61A1 also produced a substantial growth defect. CYB5B is a second TA protein known to localize to both the ER and mitochondria (D’Arrigo et al., 1993). It was seen to decrease HiLITR activation in the TA and SA screens and increase HiLITR activation in the ER screen (C–E). These results did not replicate with the guide we used for individual validation. The proteins we validated with success were SKA1, CCNK, and ATP6V1A (A–E). CCNK and SKA1 have annotation related to mitosis, while ATP6V1A is a member of the vacuolar ATPase. For these guides and for SAE1, we assessed the possibility that clone-specific effects could account for their performance in the HiLITR screens as a consequence of either clone-specific sensitivity to certain biological pathways or off-target silencing if a HiLITR component was integrated next to a targeted gene. We therefore repeated HiLITR assays in the polyclonal cell lines from which the monoclonal screen cell lines were isolated and found that HiLITR performance in polyclonal cell lines generally agreed with screen results, though data were noisier due to the population heterogeneity (Figure 3—figure supplement 3). ATP6V1A showed no loss of HiLITR activation in the heterogeneous TA configuration, while CCNK and SKA1 showed greater activation in the ER configuration than was observed with the clonal population.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Fluorescence-activated cell sorting (FACS) plots showing the effects of individual sgRNAs on HiLITR readout in polyclonal K562 HiLITR cell lines (corresponding to tail-anchored [TA], signal-anchored [SA], and ER screens from Figure 2C–E). Percentage of cells above and below the red lines shown in each plot. (B) Quantitation of FACS data in (A). Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of nontargeting (NT) control plot.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Results from the exosome complex. The plot from Figure 3A, with genes in the exosome complex labeled. (B) Results from the COPI/COPII pathway. The plot from Figure 3A, with genes in the COPI pathway (Golgi to ER retrograde transport) and SEC13 from the COPII pathway (ER to Golgi anterograde transport) labeled. (C) Results from TIMM and TOMM complexes. The plot from Figure 3A, with the TIMM and TOMM complexes labeled.Figure summary - Description of additional pathways in Figure 3. In addition to individual hits, we took note of three groups of functionally related genes that showed specific patterns of activation in the sublibrary screens. Several components of the exosome complex increased HiLITR activation in one or more screens (A). This complex is almost certainly a false positive, as it plays a role in RNA degradation (Kilchert et al., 2016), but it importantly indicates that in some cases false positives can increase – rather than decrease – HiLITR activation. We noticed that the set of generally activity-increasing hits included several members of the COPI complex, which mediates ER-to-Golgi anterograde transport (B). Interestingly, SEC13, a member of the Golgi-to-ER retrograde COPII complex, decreased HiLITR activation in the tail-anchored (TA) and ER screen. While the mechanistic connection of COPI/II to trafficking of the HiLITR components is not readily apparent – and quite possibly indirect – the recapitulation of the opposing roles of COPI and COPII in the HiLITR data is intriguing. Finally, we looked at all proteins in the TOMM and TIMM complexes (C). Surprisingly, knockdown of a large number of TIMM components, as well as TOMM20, decreased HiLITR activation in the ER screen. Several components also decreased HiLITR activation in the signal-anchored (SA) screen. We speculate that the knockdown of key TIMM and TOMM members might produce systems-level protein trafficking defects with far-ranging effects. It is interesting to consider how organelles in general, or different classes of proteins specifically, relate to global patterns in protein trafficking.
 
 To assess the validity of our screens, we first checked genes with known roles in mitochondrial and ER protein trafficking. The TRC pathway (Schuldiner et al., 2008; Stefanovic and Hegde, 2007), which handles the membrane insertion of ER TA proteins, also mishandles overexpressed mitochondrial TA proteins (Vitali et al., 2018). Consistent with this activity, knockdown of the TRC pathway chaperones SGTA and TRC40 significantly altered HiLITR activation in the TA and ER screens, but not the SA screen (Figure 3A). Other TRC pathway components also altered HiLITR activation in the TA and ER screens (Figure 3—figure supplement 1). The EMC, similar to the TRC pathway, handles insertion of a subset of TA proteins at the ERM (Guna et al., 2018). Among nine subunits tested, eight significantly altered HiLITR activation uniquely in the ER screen (Figure 6A). These results suggest that our HiLITR screens are able to recapitulate the known functions of well-characterized ER and mitochondrial membrane regulatory genes.
 
@@ -80,7 +132,15 @@ As each HiLITR configuration is unlikely to be perfectly sensitive, we also look
 
 To check the robustness of our hits, we individually validated single sgRNAs in our HiLITR cell lines (Figure 3—figure supplements 2A and C and 3). In addition to HiLITR activation, we also quantified expression level of the GFP-tagged protease as mistargeting may result in protein degradation and reduction of GFP signal (Figure 3—figure supplement 2B and 2D). We selected SAE1 (Figure 4) and seven additional hits from Figure 3D and E for validation. Four of these hits (SAE1, CCNK, SKA1, and ATP6V1A) were validated (Figure 4 and Figure 3—figure supplement 2E), and we found by imaging that knockdown of SKA1 or ATP6V1A increased the fraction of GFP-mTA* protease mislocalized to the Golgi (Figure 3—figure supplement 2F and 2G; a consequence of anterograde trafficking after mistargeting to the ER).
 
-## SAE1 knockdown disrupts localization and abundance of many mitochondrial TA proteins
+![Figure 4.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig4-v2.jpg)
+
+**Figure 4.:** (A) SAE1 knockdown by CRISPRi reduces HiLITR activation in TA screen configuration, while increasing HiLITR activation in SA and ER screen configurations. (B) Quantitation of data in (A). Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of nontargeting (NT) sgRNA control. (C) Expression levels of GFP-tagged mitochondrial proteases from samples in (A). Green: SAE1 knockdown cells; gray: control cells with NT guide. (D) SAE1 knockdown increases mislocalization of the GFP-tagged mutant TA (mTA*) protease from mitochondria to Golgi. HeLa cells expressing mTA* protease and dCas9-KRAB were infected with SAE1 sgRNA or NT control for 9 days. In rows 2 and 4, SAE1 knockdown was rescued by overexpression of sgRNA-resistant SAE1. nfBFP: non-fluorescent BFP. Mitochondria and Golgi are visualized with anti-TOMM20 and anti-GRASP65 antibodies, respectively. In SAE1 knockdown without rescue (third row), mutant GFP-protease accumulates in Golgi (white arrow). Scale bars, 10 µm. (E) Quantitation of data in (D) along with ~20 additional fields of view (n = ~50 cells per condition). The value plotted is the mean intensity of GFP-protease signal colocalized with Golgi divided by mean signal colocalized with mitochondria. N.S.: not significant, ***p<0.001, Student’s t-test. Full data in Figure 4—source data 1. (F) Chemical inhibition of SAE1’s SUMOylation activity increases mislocalization of the GFP-tagged mTA* protease to the Golgi. HeLa cells were treated with SUMO E1-ligase inhibitor ML-792 for 6 days before expression of mTA* protease for 1 day. Localization of the GFP-tagged mutant protease was compared with respect to mitochondrial and Golgi markers. Scale bars, 10 µm. (G) Quantitation of the data in (F), with six additional concentrations of ML-792 inhibitor. ~20 fields of view (n = ~50 cells) were imaged per condition. *p<0.05, ***p<0.001, Student’s t-test. Full data in Figure 4—source data 2. (H) SAE1 knockdown increases the fraction of endogenous mitochondrial TA protein MAVS that is mislocalized. HeLa cells were infected with nontargeting control or sgRNA against TRC40 or SAE1 for 9 days. Endogenous MAVS and the mitochondrial marker TOMM20 were visualized by immunostaining. Zooms are contrast-enhanced. White arrow points to MAVS signal in a non-mitochondrial region. Scale bars, 20 µm. (I) Quantitation of data in (I) along with approximately five additional fields of view (n = ~ 60 cells per condition). ***p<0.001, Student’s t-test. Full data in Figure 4—source data 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Same as Figure 4A, but showing data for three additional sgRNAs against SAE1. Guide #2 (blue) is the same guide used in Figure 4A, but with new data here. Note: guide #1 produced a severe growth defect in the cells, potentially contributing to the discrepant HiLITR activation. (B) Quantitation of fluorescence-activated cell sorting (FACS) data in (A). Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of nontargeting (NT) control plot. Top shows tail-anchored (TA) configuration and signal-anchored (SA) configuration HiLITR data, bottom shows ER configuration HiLITR data for each gene tested. (C) FACS analysis of GFP expression levels for the samples in (A). Green plot shows SAE1 knockdown cells; gray plot shows control cells (NT guide). (D) Same as Figure 4D, but with three additional sgRNAs against SAE1, and without expression of rescue constructs. Guide #2 (blue) is the same guide used in Figure 4D. HeLa cells expressing mTA* protease and dCas9-KRAB were infected with SAE1 sgRNA or NT control for 8 days before expression of protease for 1 day, fixation, and imaging. Mitochondria and Golgi are visualized with anti-TOMM20 and anti-GRASP65 antibodies, respectively. Scale bars, 10 µm. (E) Quantitation of data in (E) along with ~20 additional fields of view (n = ~50 cells per condition). For each cell, the mean intensity of Golgi-colocalized protease was divided by the mean intensity of mitochondria-colocalized protease. *p<0.05, ***p<0.001, Student’s t-test. Full data in Figure 4—figure supplement 1—source data 1. (F) FACS analysis of HiLITR activity upon chemical inhibition of SUMOylation. Three HiLITR configurations (as in Figure 2C–E) in K562 cells treated with either vehicle control (DMSO) or SUMO E1 ligase inhibitor ML-792 for 2 days prior to analysis. (G) Quantitation of FACS data in (F). Log2-transformed ratio of high mCherry to low mCherry cells was calculated for each plot and normalized to that of vehicle control. (H) FACS analysis of GFP-protease expression levels from the samples in (F) Green plot shows ML-792-treated cells, gray plot shows vehicle-treated control cells. (I) Control for Figure 4H. SAE1 knockdown does not affect mitochondrial localization of the endogenous SA protein AKAP1. Endogenous AKAP1 and the mitochondrial marker TOMM20 were visualized by immunostaining. Zooms are contrast-enhanced. Scale bar, 20 µm. (J) Quantitation of data in (I) along with approximately five additional fields of view (n = ~ 60 cells per condition). No results were significant by Student’s t-test. Full data in Figure 4—figure supplement 1—source data 2.
+
+### SAE1 knockdown disrupts localization and abundance of many mitochondrial TA proteins
 
 Validation with individual sgRNAs against SAE1 in HiLITR cell lines recapitulated the results of the CRISPRi screens (Figure 4A and B and Figure 4—figure supplement 1A and B). In addition, we observed that SAE1 knockdown specifically reduced the abundance of GFP-tagged mitochondrial TA protease, but not GFP-tagged mitochondrial SA protease (Figure 4C and Figure 4—figure supplement 1C). This may be because a significant fraction of mitochondrial TA protease that fails to target to the OMM is destabilized and degraded. We also used confocal microscopy to analyze the subcellular localization of GFP-tagged mitochondrial mTA* protease. We found that knockdown of SAE1 increases the mislocalization of GFP-mTA* protease to ER/Golgi compartments, as measured by the ratio of GFP overlapping with Golgi versus mitochondrial markers. The effect was rescued by overexpression of sgRNA-resistant SAE1 gene (Figure 4D and E and Figure 4—figure supplement 1D and E).
 
@@ -90,15 +150,51 @@ We next examined the effect of SAE1 knockdown on endogenous rather than recombin
 
 We also used western blotting to assess the abundance of specific endogenous mitochondrial TA proteins. HeLa cells expressing dCas9-KRAB were infected with a nontargeting sgRNA or an sgRNA against SAE1. After 9 days of guide expression, we harvested cells and measured the abundance of endogenous mitochondrial proteins, using GAPDH as a loading control because it is known to not be SUMOylated (Huang et al., 2018). Of three mitochondrial TA proteins tested (MAVS, SYNJ2BP, and FIS1), two showed significant depletion upon knockdown of SAE1 (Figure 5A and B and Figure 5—figure supplement 1). In contrast, three non-TA mitochondrial proteins with diverse targeting signals (COX4, VDAC1, and AKAP1) all showed no reduction in protein abundance upon SAE1 knockdown (Figure 5A and B and Figure 5—figure supplement 1). Overexpression of sgRNA-resistant SAE1 partially restored levels of the mitochondrial TA proteins (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-v2.jpg)
+
+**Figure 5.:** (A) HeLa cells infected with SAE1 sgRNA or nontargeting control for 9 days were analyzed by western blot. Three TA mitochondrial proteins (MAVS, SYNJ2BP, FIS1) were analyzed in addition to three non-TA mitochondrial proteins (COX4, VDAC1, AKAP1). Uncropped blots in Figure 5—figure supplement 1. (B) Quantification of data in (A) along with two additional biological replicates per condition. Error bars = SEM. *p<0.05, **p<0.01, Student’s t-test. Full data in Figure 5—source data 1. (C) Proteomic analysis of endogenous mitochondrial protein abundance in whole-cell lysate from SAE1 knockdown HeLa cells. Enrichment scores (abundance in SAE1 knockdown samples relative to abundance in nontargeting control samples; same samples as in Figure 5—figure supplement 3) were normalized to the mean mitochondrial protein abundance. Dashed line, p=0.05. Full volcano plot in Figure 5—figure supplement 4. (D) Percentage of different protein classes whose abundance positively correlates with that of SAE1 (red). TA: mitochondrial tail-anchored proteins; SA: mitochondrial signal-anchored proteins; OMM: other transmembrane outer mitochondrial membrane proteins; other: all other mitochondrial proteins. **p<0.01, chi-square test against ‘other’ mitochondrial proteins.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Data from sgRNA #2 (blue) was used to generate Figure 4A (boxed regions).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** HeLa cells expressing dCas9-KRAB were infected for 9 days with either nontargeting control (NT) or sgRNA against SAE1. Each sample was further transduced with either sgRNA-resistant SAE1 or nonfluorescent BFP control (nfBFP). The abundance of endogenous mitochondrial proteins, SAE1, and GAPDH loading control was measured for each sample.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Overview of proteomic experiment. HeLa cells expressing either sgRNA-resistant SAE1 or nonfluorescent BFP (nfBFP) were infected with either nontargeting control sgRNA or sgRNA against SAE1 for 9 days. Whole-cell lysate in triplicate samples was analyzed by mass spectrometry. (B) Overexpression of SAE1 does not alter proteome stability. Samples with nontargeting sgRNA and SAE1 rescue (‘overexpression’) were compared to samples with nontargeting sgRNA and nfBFP rescue (‘control’). Within each sample, data were normalized to median protein abundance prior to statistical analysis. Overexpression of SAE1 only significantly alters the abundance of SAE1. Dashed line, p=0.05. (C) Knockdown of SAE1 differentially alters the stability of the mitochondrial proteome. Samples with SAE1 sgRNA and nfBFP rescue (‘knockdown’) were compared to samples with nontargeting sgRNA and nfBFP rescue (‘control’). When data are normalized to median protein abundance, we observe that SAE1 knockdown significantly alters the abundance of about half the proteome (1830 down, 2195 up, 5587 unaltered). Interestingly, SAE2 is one of the most significantly depleted proteins, suggesting coregulation of the SAE1/SAE2 heterodimer. In contrast to the overall proteome, the mitochondrial proteome abundance is specifically increased upon SAE1 knockdown (100 mitochondrial proteins down in abundance, 378 up, 411 unaltered). Note that the knockdown of SAE1 is surprisingly not classified as significant when data are normalized to median protein abundance.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Same as Figure 5C, but zoomed out to show the entire volcano plot. HeLa cells expressing nonfluorescent BFP (nfBFP) were infected with sgRNA against SAE1 (‘SAE1 knockdown’) or with nontargeting control (‘NT control’; same samples as Figure 5C and Figure 5—figure supplement 3C). Data were normalized to the mean of the mitochondrial proteome, rather than to that of the cellular proteome. The depletion of SAE1 is significant when data are normalized in this way. Upon knockdown of SAE1, seven tail-anchored proteins are significantly depleted while two are enriched (compared to 202 depleted and 197 enriched for the mitochondrial proteome overall). Note that FKBP8-1/2 are different isoforms of FKBP8 that were separately detected in the proteomic analysis. In western blot experiments, the largest isoform of the tail-anchored protein MAVS was depleted (Figure 5A and B and Figure 5—figure supplements 1 and 2, MW 57 kDa). The proteomics data does not distinguish between large isoform MAVS and its five smaller isoforms, four of which lack the C-terminal transmembrane domain. This may be why the proteomics data does not show a change in endogenous MAVS abundance when SAE1 is knocked down, whereas our western blot data in Figure 5A and B does. (B) Overexpression of SAE1 rescues the effects of SAE1 knockdown. HeLa cells expressing sgRNA-resistant SAE1 and sgRNA against endogenous SAE1 (‘SAE1 rescue’) were compared to the SAE1 knockdown cells from (A). Proteins that were significantly depleted upon SAE1 knockdown vs. nontargeting control are generally enriched upon SAE1 vs. nfBFP overexpression, and vice versa. (C) Representative traces of protein abundance in basal (left), SAE1 knockdown (middle), or SAE1 rescue (right) conditions. Data shown for three tail-anchored, three signal-anchored, one outer mitochondrial membrane, one inner mitochondrial membrane, and one intermembrane space protein. The three tail-anchored proteins track with the abundance of SAE1 itself. †p<0.10, *p<0.05, **p<0.01, ***p<0.001, moderated t-test.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Knockdown of SAE1 does not significantly affect ER tail-anchored protein abundance relative to other ER proteins. HeLa cells expressing nonfluorescent BFP and sgRNA against SAE1 (‘SAE1 knockdown’) or nontargeting control (‘NT control’; same samples as Figure 5C and Figure 5—figure supplement 3C) were analyzed by filtering the mass spectrometry data for ER proteins and normalizing abundance to the mean abundance of the ER proteome. When data were processed this way, 10 tail-anchored proteins were significantly depleted and 6 were significantly enriched (compared to 203 depleted and 156 enriched for the ER overall). (B) Overexpression of SAE1 rescues the effects of SAE1 knockdown. HeLa cells expressing sgRNA-resistant SAE1 and sgRNA against endogenous SAE1 (‘SAE1 rescue’) were compared to the SAE1 knockdown cells from (A). Proteins that were significantly depleted upon SAE1 knockdown vs. nontargeting control are generally enriched upon SAE1 vs. nfBFP overexpression, and vice versa. (C) Percentage of various protein classes whose abundance positively correlates with that of SAE1. TA: ER tail-anchored proteins; SA: ER signal-anchored proteins; ERM: other ER transmembrane proteins; other: all other ER proteins. ***p<0.001, chi-square test against ‘other‘ ER proteins. Note that compared to the mitochondria a significant number of ER transmembrane proteins are oriented into the lumen, with minimal cytosolic exposure. These proteins may be more insulated from the effects of reduced SUMOylation compared to cytosol-oriented transmembrane or peripheral proteins. (D) Representative traces of protein abundance in basal (left), SAE1 knockdown (middle), or SAE1 rescue (right) conditions. Data shown for three ER tail-anchored, two ER signal-anchored, two ER transmembrane, and two ER lumen proteins. (E) Same as (D), but for the tail-anchored ER protein SQS and the 10 members of the ER membrane complex (EMC). Related to Figure 6. †p<0.10, **p<0.01, ***p<0.001, moderated t-test.
+
 To examine the mitochondrial proteome in a more global and quantitative manner, we performed mass spectrometry-based proteomic analysis on SAE1 knockdown HeLa samples. HeLa cells overexpressing nonfluorescent BFP control or sgRNA-resistant SAE1 were each transduced with nontargeting sgRNA or sgRNA against SAE1 for 9 days. These samples were harvested in triplicate and whole-cell lysates were analyzed by mass spectrometry (Figure 5—figure supplement 3A). We found that overexpression of SAE1 in cells expressing nontargeting control guide produced no significant changes in the overall proteome (Figure 5—figure supplement 3B). By contrast, because SAE1 is essential, its knockdown affected a large swath of the human proteome (Figure 5—figure supplement 3C), with 10.8% of proteins changing in abundance by 1.25-fold or more (see Supplementary file 3 for complete proteomic data). Surprisingly, knockdown of SAE1 also substantially increased the abundance of the mitochondrial proteome relative to the non-mitochondrial proteome (Figure 5—figure supplement 3C). To examine the mitochondrial proteome specifically, we normalized the abundance of the 889 detected mitochondrial proteins to their collective mean (Figure 5—figure supplement 4A and B). Knockdown of SAE1 resulted in relative depletion of seven TA mitochondrial proteins while only two were enriched (Figure 5C and Figure 5—figure supplement 4A). Rescue of SAE1 reversed these trends (Figure 5—figure supplement 4B and C). Using data from both the knockdown and rescue samples, the abundance of a majority of the detected mitochondrial TA proteins positively correlated with that of SAE1, including FIS1 from the western blot data (Figure 5D). In contrast, only a quarter of the overall mitochondrial proteome positively correlated with SAE1, and neither SA proteins nor other transmembrane proteins of the OMM significantly deviated from this trend (Figure 5D). When we performed the same analysis on the ER proteome, neither TA nor SA proteins of the ER significantly deviated from the rest of the ER proteome (Figure 5—figure supplement 5).
 
 Taken together, our results suggest that SAE1 knockdown impairs the targeting and triggers the degradation of MAVS and several other endogenous mitochondrial TA proteins, but not of other transmembrane mitochondrial or ER proteins.
 
-## EMC10 is an EMC component with a distinct regulatory effect on ERM proteins
+### EMC10 is an EMC component with a distinct regulatory effect on ERM proteins
 
 In our ER screen, the HiLITR TF is localized to the ERM, and the mTA* protease is distributed between the OMM and ERM (Figure 1—figure supplement 4E). Therefore, it is possible for the ER screen to also identify regulators of ER TA proteins, whose knockdown could decrease colocalization of the mTA* protease and ER-TF, reducing HiLITR activation. We closely examined hits that gave large CasTLE scores in the ER screen. Several of the highest scoring genes were components of the EMC, which mediates proper insertion of both multipass transmembrane proteins (Chitwood et al., 2018; Shurtleff et al., 2018) and a subset of TA proteins (Guna et al., 2018) into the ERM.
 
 Seven of the nine EMC subunits included in our screen reduced HiLITR activity in the ER screen but had no effect in the TA or SA screens (Figure 6A; EMC subunits 1/2/3/4/6/7/8). This suggests that our mTA* protease is a client of EMC, while the mitochondrial TA and SA proteases do not interact with the EMC. In contrast to the other subunits, EMC10 strongly increased HiLITR activity in the ER screen (Figure 6A). EMC10 is less well-conserved than other EMC proteins (Wideman, 2015), does not cluster with core components in genetic interaction mapping (Jonikas et al., 2009), and is dispensable for complex stability (Volkmar et al., 2019). EMC10 forms contacts with EMC1 and EMC7 in the ER lumen (O’Donnell et al., 2020), and mutations at the EMC1/7 interface strongly increase the level of a reporter based on the canonical TA EMC client SQS (Miller-Vedam et al., 2020). Therefore, we hypothesized that EMC10 may antagonize or regulate the activity of the EMC, such that its depletion increases rather than decreases the insertion of client TA proteins.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig6-v2.jpg)
+
+**Figure 6.:** (A) Locations of 9 of 10 EMC components in the 3-CRISPRi screen CasTLE plot from Figure 3A. EMC5 was not included in the screen. In the table at right, corresponding effect sizes from each screen are shown. (B) Quantitation of the effect of individual EMC subunit (4, 8, and 10) knockdown in the TA, signal-anchored (SA), and ER HiLITR cell lines. Fluorescence-activated cell sorting (FACS) data shown in Figure 6—figure supplement 1. (C) Knockdown of EMC10 increases, while knockdown of EMC4 or EMC8 decreases, the mislocalization of GFP-tagged mTA* protease from mitochondria to Golgi in HeLa cells. Golgi and mitochondria are detected with anti-GRASP65 and anti-TOMM20 antibodies. Scale bar, 10 µm. (D) Quantification of data in (C) along with ~20 additional fields of view per condition (~50 cells per sample). *p<0.05, **p<0.01, ***p<0.001, Student’s t-test. Full data in Figure 6—source data 1. (E) Knockdown of EMC subunits has different effects on endogenous EMC client protein SQS. HeLa cells expressing the indicated sgRNAs (EMC10 sgRNA #2) for 9 days were analyzed by western blot to detect the endogenous TA EMC client protein SQS as well as two non-client proteins (ER lumen protein CALR and ER TA protein VTI1B). Uncropped blots in Figure 6—figure supplement 2. (F) Quantification of data in (E) along with two additional biological replicates per condition. Error bars = SEM. **p<0.01, ***p<0.001, Student’s t-test. Full data in Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Fluorescence-activated cell sorting (FACS) analysis related to Figure 6B. Three HiLITR configurations (as in Figure 2C–E) in K562 cells with sgRNAs against EMC subunits and two nontargeting control guides. (B) Immunofluorescence microscopy of the EMC client tail-anchored proteases. In HeLa cells, the localization of the SQS-tmd and SQS-FL proteases (GFP) was compared to an ER marker (RCN2). Scale bar, 10 µm. (C) FACS analysis of HiLITR for ER-targeted tail-anchored (TA) protease. Protease was targeted to the ER with the transmembrane domain of TA protein SQS. HiLITR transcription factor (TF) was also targeted to the ER. Three biological replicates were performed in polyclonal cell lines, and the percentage of cells above the red line is shown in each plot. (D) Quantitation of the replicates in (C). Error bars = SEM. Significance calculated by Student’s t-test. (E) Same as (C), but the protease was targeted to the ER with full-length SQS. (F) Quantitation of the replicates in (E). Error bars = SEM. Significance calculated by Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69142/elife-69142-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Images in Figure 6E were generated from the boxed regions in each plot, which are in each case the replicate most representative of the average shown in Figure 6F.
 
 We began by validating the HiLITR screen results of EMC4, EMC8, and EMC10. We chose EMC4 because it is part of the main cavity (along with EMC3/6) that mediates insertion of EMC substrates (Bai et al., 2020; Pleiner et al., 2020), but its depletion does not destabilize the rest of the EMC (Volkmar et al., 2019). Compared to two nontargeting controls, EMC4 and EMC8 knockdown both decreased HiLITR activity specifically in the ER screen configuration, while two guides against EMC10 both increased HiLITR activity (Figure 6B and Figure 6—figure supplement 1A), consistent with the results of our screen.
 
@@ -128,7 +224,542 @@ In our ER screen, we observed a novel and unexpected consequence of EMC10 knockd
 
 ## Materials and methods
 
-## Mammalian cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-243; RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>Hein et al., 2015</td>
+      <td>RRID:CVCL_1922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# R960; RRID:AB_2556564</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TOMM20 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab186735; RRID:AB_2889972</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GRASP65 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-374423; RRID:AB_10991322</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CANX (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA5-34754; RRID:AB_2552106</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PEX14 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 10594-1-AP; RRID:AB_2252194</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RCN2 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA5-56542; RRID:AB_2646431</td>
+      <td>Immunofluorescence (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-32233; RRID:AB_627679</td>
+      <td>Western blot (1:4500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SAE1 (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# SAB4500028; RRID:AB_10742679</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COX4 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab16056; RRID:AB_443304</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VDAC1 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab14734; RRID:AB_443084</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKAP1 (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-135824; RRID:AB_2225573</td>
+      <td>Immunofluorescence (1:200); western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MAVS (Mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-166583; RRID:AB_2012300</td>
+      <td>Immunofluorescence (1:200); western blot (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYNJ2BP (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# HPA000866; RRID:AB_2276678</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FIS1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 10956–1-AP; RRID:AB_2102532</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EMC4 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab184162; RRID:AB_2801471</td>
+      <td>Western blot (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EMC10 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab180148; RRID:AB_2889936</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CALR (Rabbit polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# PA3900; RRID:AB_325990</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VTI1B (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab184170; RRID:AB_2889935</td>
+      <td>Western blot (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SQS (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab195046; RRID:AB_2860018</td>
+      <td>Western blot (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11029; RRID:AB_138404</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa Fluor 568 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A11031; RRID:AB_144696</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A21236; RRID:AB_2535805</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 568 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11036; RRID:AB_10563566</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 405 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A31556; RRID:AB_221605</td>
+      <td>Immunofluorescence (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG IRDye 680RD (Goat polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 926-68070; RRID:AB_10956588</td>
+      <td>Western blot (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG IRDye 800CW (Goat polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 926-32210; RRID:AB_621842</td>
+      <td>Western blot (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG IRDye 680RD (Goat polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 926-68071; RRID:AB_10956166</td>
+      <td>Western blot (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG IRDye 800CW (Goat polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 926-32211; RRID:AB_621843</td>
+      <td>Western blot (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids used</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HiLITR TEV-protease QPCR primers</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and methods: ‘Model selection’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Random hexamer primer</td>
+      <td>Invitrogen</td>
+      <td>Cat# N8080127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Individual sgRNA sequences used</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA libraries derived from hCRISPRi-v2</td>
+      <td>Horlbeck et al., 2016</td>
+      <td>RRID:Addgene_83969</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fibronectin</td>
+      <td>Millipore</td>
+      <td>Cat# FC010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine serum albumin</td>
+      <td>Fisher BioReagents</td>
+      <td>Cat# BP1600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Aprotinin</td>
+      <td>Sigma</td>
+      <td>Cat# A1153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Leupeptin</td>
+      <td>Roche</td>
+      <td>Cat# 11017101001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Endoproteinase LysC</td>
+      <td>Wako Laboratories</td>
+      <td>Cat# 12505061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sequencing-grade trypsin</td>
+      <td>Promega</td>
+      <td>Cat# V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Blood Maxi Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 51194</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Assay Kit</td>
+      <td>Pierce</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma detection kit</td>
+      <td>Lonza</td>
+      <td>Cat# LT07-118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1% penicillin-streptomycin</td>
+      <td>Corning</td>
+      <td>Cat# 30-002CI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GlutaMAX</td>
+      <td>Gibco</td>
+      <td>Cat# 35050061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma</td>
+      <td>Cat# P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>Corning</td>
+      <td>Cat# 30-100-RB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin</td>
+      <td>Corning</td>
+      <td>Cat# 30-240-CR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geneticin G418</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 10131035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethyleneimine (PEI)</td>
+      <td>Polysciences</td>
+      <td>Cat# 24765-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Millipore</td>
+      <td>Cat# TR-1003-G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma</td>
+      <td>Cat# C9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Deep Red FM</td>
+      <td>Invitrogen</td>
+      <td>Cat# M22426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>RICCA</td>
+      <td>Cat# 3180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat# T9284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMTpro isobaric mass tagging reagent</td>
+      <td>Thermo</td>
+      <td>Cat# A44520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CasTLE</td>
+      <td>Morgens et al., 2016</td>
+      <td>https://bitbucket.org/dmorgens/castle/src</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie 2</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>RRID::SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SH800S Cell Sorter Software (versions 2.1.2, 2.1.5)</td>
+      <td>SONY</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Everest (version 2.3)</td>
+      <td>BioRad</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo (version 10.7.1)</td>
+      <td>FlowJo</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SlideBook 5.0 software</td>
+      <td>Intelligent Imaging Innovations</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StepOne Software (version 2.2.2)</td>
+      <td>Applied Biosystems</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Limma (version 3.42.2)</td>
+      <td>Smyth, 2004</td>
+      <td>RRID:SCR_010943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Avantor</td>
+      <td>Cat# 97068-085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RiboLock RNAse inhibitor</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# EO0382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Maxima SYBR Green/ROX qPCR Master Mix</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# K0221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Herculase II Fusion</td>
+      <td>Agilent</td>
+      <td>Cat# 600679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Sigma</td>
+      <td>Cat# P8849</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Precision Plus Protein All Blue Prestained Standards</td>
+      <td>BioRad</td>
+      <td>Cat# 1610373</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell culture
 
 HEK293T cells (ATCC) were cultured as a monolayer in a 1:1 DMEM/MEM mixture (Corning 10-017; Corning 15-010) supplemented with 10% fetal bovine serum (FBS; Avantor 97068-085) and 1% penicillin-streptomycin (Corning 30-002CI, final concentration 1 U/mL penicillin and 100 µg/mL streptomycin) at 37°C with 5% CO2. Cell line was authenticated by vendor and confirmed free of mycoplasma by PCR test.
 
@@ -136,7 +767,7 @@ K562 cells (ATCC) were cultured in suspension in RPMI 1640 (Corning 15-040) supp
 
 HeLa cells (CVCL_1922) were cultured as a monolayer in Roswell Park Memorial Institute 1640 (Corning 15-040) supplemented with 10% FBS (Avantor 97068-085), 1% penicillin-streptomycin (Corning 30-002CI, final concentration 1 U/mL penicillin and 100 µg/mL streptomycin) and 1% GlutaMAX (Gibco 35050061) at 37°C with 5% CO2. For fluorescence microscopy experiments, cells were plated on 7 mm × 7 mm glass coverslips in 48-well plates. The coverslips were pretreated with 50 mg/mL fibronectin (Millipore FC010) in identical culturing medium and conditions for at least 4 hr in order to improve cell adherence. Cell line was authenticated by vendor and confirmed free of mycoplasma by MycoAlert kit (Lonza LT07-118).
 
-## Lentivirus generation and stable integration of constructs
+### Lentivirus generation and stable integration of constructs
 
 Lentivirus was generated by transfection of lentiviral vector (1000 ng) and packaging plasmids pCMV-dR8.91 (900 ng) and pCMV-VSV-G (100 ng) with 12 µL of polyethyleneimine (PEI, 1 mg/mL; Polysciences 24765-1) into HEK293T cells that had been grown to 60–80% confluence in 6-well plates. Total volume of media was 2 mL per transfection. About 48 hr after transfection, the cell medium was harvested in 0.5 mL aliquots and flash-frozen in liquid nitrogen, then stored at –80°C. Prior to infection, viral aliquots were thawed at 37°C.
 
@@ -144,13 +775,13 @@ For larger-scale lentivirus generation, lentiviral sgRNA vector libraries (8000 
 
 To infect K562 cells, 50,000–250,000 cells in log-phase growth were combined with one or two viral aliquots and 1.6 µL of polybrene (10 mg/mL; Millipore TR-1003-G) in a total volume of 2 mL in a 24-well plate format. The plates were subjected to centrifugation at 1000 × g and 33°C for 2 hr. For large-scale experiments, infections were performed in 6-well plates, and the volume of reagents and number of plates used was scaled up in proportion to the desired number of cells infected. HeLa cells were infected by adding one or two viral aliquots to the media of a 6-well plate when the cells had grown to 15–30% confluency. For both K562 and Hela Cell, selection was initiated 2 days after infection with 0.5 µg/mL puromycin (Sigma P8833), which was increased in concentration to 1 µg/mL over the next 2 days and supplied for a total of 3–6 days. Some plasmids instead required selection with blasticidin (Corning 30-100-RB, starting with 4 µg/mL and increased to 8 µg/mL over a selection time course of 5–7 days) or with hygromycin (Corning 30-240-CR, starting with 100 µg/mL and increased to 200 µg/mL over a selection time course of 5–7 days), or with geneticin (Thermo Fisher #10131035, starting with 50 µg/mL and increased to 100 µg/mL over a selection time course of 5–7 days).
 
-## Generation of clonal cell lines
+### Generation of clonal cell lines
 
 To generate clonal K562 cell lines, cell lines were first generated with stable integration and selection of all desired constructs. Cell density was estimated using a Countess II FL automated cell counter, and cells were serially diluted and plated in a 48-well plate format at a target density of 0.2 cells/well. After 1–2 weeks of expansion, clonal cell lines were selected for desired levels of construct expression and HiLITR response, as assessed by flow cytometry analysis.
 
 Clonal HeLa cell lines were generated from cell cultures with stably integrated and selected constructs. After lifting and separating cells with trypsin (Corning 25-053), serial dilutions were plated on 10 cm cell culture dishes. A day after plating, individual clones were identified with an Olympus CKX31 benchtop inverted microscope. After 1–2 weeks of expansion, previously identified colonies were isolated with a cloning cylinder (Millipore TR-1004), lifted with trypsin, and transferred to a 6-well plate for further expansion. Clonal lines were then selected for desired levels of construct expression, as assessed by flow cytometry.
 
-## Immunofluorescence staining and fluorescence microscopy
+### Immunofluorescence staining and fluorescence microscopy
 
 Cells were incubated with 400 ng/mL doxycycline (Sigma D9891) upon plating if a doxycycline-inducible fluorescent construct was to be Imaged. Roughly 12–16 hr after plating, cells were fixed with 4% paraformaldehyde (RICCA 3180) in phosphate-buffered saline (PBS) for 15 min. For immunofluorescence experiments with K562 cells, the plates containing the cells were subjected to centrifugation at 1000 × g during fixation. After fixation, cells were washed with PBS, then permeabilized with 0.2% triton X-100 (Sigma T9284) in PBS for 10 min. After washing again with PBS, cells were incubated with primary antibody for 1 hr in 2% BSA (Fisher BioReagents BP1600) in PBS, then washed with PBS and incubated with secondary, fluorophore-conjugated antibody in 2% BSA in PBS for 30 min, followed by a final wash before imaging. During wash steps, media was removed with vacuum aspiration at the lowest possible pressure setting. On occasions where media removal was performed by hand, additional PBS washes were incorporated between steps.
 
@@ -162,7 +793,7 @@ Secondary antibodies used in imaging include the following: anti-mouse Alexa Flu
 
 MitoTracker Deep Red FM (Invitrogen M22426) was also used for imaging.
 
-## FACS analysis and sorting
+### FACS analysis and sorting
 
 FACS analysis and sorting of K562 cells were carried out with a SONY SH800S cell sorter equipped with four collinear excitation lasers (405 nm, 488 nm, 561 nm, and 638 nm; all 30 mW), using a 100 µm sorting chip. The 638 nm laser was disabled during experiments. Additional fluorescent cell cytometry analysis of K562 cells and HeLa cells was performed using a BioRad ZE5 cell analyzer with four parallel excitation lasers (405 nm – 100 mW, 488 nm – 100 mW, 561 nm – 50 mW, and 640 nm – 100 mW). For experiments using the SONY SH800S, instrumental analysis and data processing were performed using the SONY Cell Sorter Software, versions 2.1.2 and 2.1.5. For experiments with the BioRad ZE5, instrumental analysis was performed using Everest software version 2.3 (BioRad) and data processing was performed using FlowJo version 10.7.1.
 
@@ -172,13 +803,13 @@ A short series of gates was used to focus sorting and analysis on the desired po
 
 Samples were maintained on ice prior to instrumental analysis. For the large-scale sorting experiments, the acquisition and collection chambers of the SONY SH800S were maintained at 4°C. Sorted cells were collected in 15 mL conical tubes containing 5 mL of HEPES-buffered RPMI (Sigma R7388) supplemented with 30% FBS (Avantor 97068-085). During sorting, collections tubes that were filled were subjected to centrifugation at 1000 × g, and the media was removed and replaced with HEPES-buffered RPMI with 10% FBS. After the conclusion of all sorting, collected cells were pooled by sample and sort condition, pelleted again by centrifugation and removal of media, and flash-frozen in liquid nitrogen or immediately subjected to sequencing library preparation.
 
-## HiLITR activation
+### HiLITR activation
 
 For small-scale analyses, K562 cells were grown in 6-well plate format (at 50,000–500,000 cells/mL), while for large-scale sorting experiments (such as the whole-genome selection), the cells were grown in T125 flasks (at 300,000–600,000 cells/mL). Cells were incubated with 400 ng/mL doxycycline to induce expression of the TEV protease component roughly 16–24 hr prior to light stimulation (experiments where conditions differ noted in the text). Upon addition of doxycycline, the plates or flasks were wrapped completely in tin foil, exposing only the vented flask cap, where applicable. Following doxycycline incubation, cells were stimulated with 450 nm blue light from a 28.8 × 28.8 cm2, 22 W panel (26.5 mW/cm2; Yescom YES3110) for a period of 2–8 min (depending on the experiment and sample). Plates or flasks were placed directly on top of the panel and agitated by hand once every 1–2 min to prevent settling of cells. Light stimulation was carried out at room temperature in a dark room with only red light sources as additional illumination for visual aid. Following light stimulation, cells were returned to tin foil wrapping and replaced in the 37°C, 5% CO2 incubator for 8–16 hr to allow for expression of the reporter construct. After expression, K562 cells were transferred to appropriate tubes for FACS analysis/sorting and placed on ice. For small-scale experiments, cells were sorted in their native RPMI medium. For the large-scale sorts, the cells were collected by centrifugation at 1000× and the media was removed and replaced with HEPES-buffered RPMI with 10% FBS. During this medium-replacement step, cells were concentrated to a density of 8–12 million cells/mL.
 
 For HiLITR experiments with HeLa cells, light stimulation was carried out in an identical manner, except cells were cultured on 7 mm × 7 mm glass coverslips, they were not agitated during light stimulation, and they were subjected to immunofluorescence staining and fluorescence microscopy after reporter expression.
 
-## Model selection
+### Model selection
 
 A clonal K562 line was generated with a ‘matched’ HiLITR configuration, bearing a TA, mitochondrial TEV protease component and an SA, mitochondrial TF component. The clone was selected on the bases of good light/dark sensitivity, typical TEV protease expression levels, and HiLITR activation that was not atypically robust. Two additional K562 cell lines with ‘mismatched’ HiLITR configurations were generated, bearing the same mitochondrial TF and either a TA, ER TEV protease component or an NES-tagged, cytosolic TEV protease component. One day prior to selection, the density of each cell line was estimated using a Countess II FL automated cell counter. For each mismatched-HiLITR cell line, the matched-HiLITR clonal line was mixed at a 1:20, 1:2, 5:1, and 50:1 ratio of matched to mismatched cells, creating a calibration series over four orders of magnitude (~200 thousand cells/sample). Additional 1:20 population mixtures (~2 million cells/sample), as well as unmixed cell lines (~200 thousand cells/sample), were then subjected to the HiLITR activation protocol (doxycycline-induced TEV protease expression, 3.5 min light stimulation). Unmixed cell lines were analyzed by FACS (SONY SH800S), and the resulting activation profiles were used to design gates to maximally enrich the matched-HiLITR cell line from the pooled mixture. Just prior to sorting, a ‘pre-sort’ baseline of the mixed cell line sample was set aside from each pooled mixture. Sorting was conducted for about 20 min per sample, and about 150,000 cells were collected per sort. Immediately after sorting, RNA was extracted from the post-sort collected, pre-sort baseline, and calibration series populations.
 
@@ -186,21 +817,21 @@ RT-qPCR analysis was performed to measure the levels of matched (mitochondrial) 
 
 A 60°C annealing temperature was used in the qPCR reaction. For each sample, the ratio of matched protease transcript to mismatched protease transcript was used as a proxy for the ratio of cells from the corresponding populations. Comparison of the transcript ratios from the pre-sort and post-sort samples to the calibration series enabled calculation of the absolute ratio of matched protease to mismatched protease cells in each sample, from which the corresponding enrichment of cells bearing the matched protease could be derived.
 
-## RNA extraction
+### RNA extraction
 
 RNA extraction was performed using a RNeasy Plus Mini Kit (Qiagen 74134). Extraction was performed in accordance with the protocol provided in the kit, at a 350 µL scale for pelleted cells.
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 To convert RNA to single-stranded cDNA for qPCR analysis, 8 µL of extracted RNA was mixed with 1 µL of 10 mM dNTPs and 1 µL of 50 µM random hexamer primer (Invitrogen N8080127). The sample was heated to 65°C for 5 min and then stored on ice for 1 min. The sample was then added to a mixture of 1 µL SuperScript III RT, 4 µL 5×X First-strand Buffer, and 2 µL 0.1 µM DTT (all from Invitrogen 18080044), with 1 µL RiboLock RNAse inhibitor (Thermo Scientific EO0382), and 2 µL RNAse-free water. Single-stranded DNA was generated by placing the mixture on a thermocycler for 10 min at 25°C, followed by 1 hr at 55°C and 15 min at 40°C, before holding at 4°C.
 
 To analyze cDNA by qPCR, cDNA was first diluted 25-fold in water. Subsequently, 2 µL of cDNA was mixed with 2.4 µL water, 0.3 µL each of 10 µM forward and reverse primers, and 5 µL of Maxima SYBR Green/ROX qPCR Master Mix (Thermo Scientific K0221). Samples were prepared on ice and arranged in a MicroAmp 48-well reaction place (Applied Biosystems 4375816), which was sealed with MicroAmp optical adhesive film (Applied Biosystems 4375323). Instrumental analysis was performed on a StepOne Real-Time PCR system (Applied Biosystems 436907) using StepOne Software (version 2.2.2). Samples were quantified over 40 cycles of amplification, followed by melt curve analysis for quality control. Count values for each sample were obtained using automatic thresholding performed by the software, and count values were exported to Microsoft Excel for additional analysis.
 
-## Whole-genome selection
+### Whole-genome selection
 
 The top five sgRNA per gene from a genome-wide CRISPRi library (Horlbeck et al., 2016) were used for the genome-wide CRISPRi screen. After generation of lentivirus, the library was infected into the clonal K562 cell line generated for the model selection (mitochondrial TF, TA mitochondrial TEV protease). Infection was performed with 280 million K562 cells. Based on FACS analysis of BFP-positive cells, multiplicity of infection was 0.4, for a theoretical coverage of 1100× per library element. We selected for sgRNA incorporation with puromycin, split samples into two technical replicates, and 36 hr prior to FACS sorting, induced TEV protease expression with doxycycline. Cells were maintained at or above coverage for the culture duration. The cells were transferred to T150 flasks (60 mL) for light stimulation 12 hr prior to sorting, then returned to the spinner flask for reporter expression. Sorting was performed 9 days after infection. About 200 million cells were analyzed by FACS for each technical replicate. Gates were set to collect cells with the top 15% and bottom 15% of mCherry reporter expression, representing the cells with the greatest and least HiLITR activity. Based on sorting purity parameters, about 18 million cells were collected for each gate. Genomic DNA was harvested from cells (Qiagen 51192) immediately after completion of sorting.
 
-## Matched sublibrary selections
+### Matched sublibrary selections
 
 The library for the three matched selections was designed based on the results from the whole-genome selection. The library featured sgRNAs targeting 586 genes (five sgRNAs per gene) as well as 500 nontargeting controls. Genes targeted were selected based on significance in the whole-genome selection and on lack of clear annotation related to transcription or translation. A smaller set of genes corresponding to known protein trafficking pathways was also included.
 
@@ -208,11 +839,11 @@ In addition to the clonal K562 cell line that was previously used in the whole-g
 
 Each cell line was transduced with lentivirus of the sgRNA sublibrary at 50 million cell scale for the TA and SA cell lines, and 70 million cell scale for the ER cell line. Cell lines were split into two biological replicates immediately after infection, before cells began to divide. Multiplicity of infection was estimated as follows, based on proportion of BFP-positive, sgRNA-expressing cells: 0.8 for the TA cell line (5700× coverage per biological replicate), 1.4 for the SA cell line (10,000× coverage), and 0.16 for the ER cell line (1600× coverage). Cells were cultured in T150 flasks with linear shaking, and coverage levels were maintained during cell culturing and selection. TEV protease expression was induced with doxycycline 36 hr prior to sorting, and light stimulation was performed 12 hr prior to sorting. Sorting was performed 11 days after infection. For the TA cell line, cells with the top and bottom 16% of mCherry reporter expression were collected (11 million cells per condition). For the SA cell line, cells with the top 16% and bottom 33% of mCherry reporter expression were collected (12 million and 24 million cells, respectively). For the ER cell line, cells with the top 9% and bottom 30% of mCherry reporter expression were collected (6 million and 22 million cells, respectively). Genomic DNA was harvested from cells immediately after completion of sorting.
 
-## Sequencing library preparation
+### Sequencing library preparation
 
 The integrated sgRNA library was PCR amplified and separately barcoded for each collected population with Herculase II Fusion DNA Polymerase (Agilent 600677). Samples were then pooled and sequenced on an Illumina NextSeq flow cell with aligned read counts as follows for each screen:
 
-## Data analysis of CRISPR screens
+### Data analysis of CRISPR screens
 
 CRISPR screens were analyzed using CasTLE (Morgens et al., 2016), a maximum likelihood estimator that determines each gene’s effect size based on the enrichment of its sgRNAs relative to a null effect model derived from the enrichments of nontargeting control sgRNAs. The significance of each gene’s effect size is tested by evaluating it against the distribution of the estimated effect sizes from random permutations drawn from all targeting sgRNA within the library.
 
@@ -222,7 +853,7 @@ Cloning individual sgRNA lentiviral vectors sgRNA vectors were cloned as follows
 
 See Supplementary file 1 for specific guide sequences used.
 
-## mTA* protease immunofluorescence quantification
+### mTA* protease immunofluorescence quantification
 
 A clonal HeLa cell line was generated, expressing dCas9-KRAB-BFP and the doxycycline-inducible, mutant TA TEV protease fused to EGFP. The clonal line was separately infected with sgRNAs against genes of interest and nontargeting control. After selection of sgRNA-positive cells with puromycin, samples were plated on coverslips on the eighth day after infection, and TEV protease expression was induced with doxycycline. The following day, cells were fixed, permeabilized, and subjected to immunostaining. Primary: mouse anti-GRASP65 (Golgi; Santa Cruz sc-374423, 1:500 dilution) and rabbit anti-TOMM20 (mitochondria; Abcam ab186735, 1:500 dilution); secondary: goat anti-mouse Alexa Fluor 647 (Invitrogen A21236, 1:1000 dilution) and goat anti-rabbit Alexa Fluor 568 (Invitrogen A11036, 1:1000 dilution).
 
@@ -232,54 +863,54 @@ In some figures, images were taken across multiple experiments and data is combi
 
 When analyzing localization of the six mutant TA protease candidates, a Golgi marker was not present. Instead, Pearson’s coefficient between the protease channel and the TOMM20 channel was calculated for each cell.
 
-## Endogenous protein immunofluorescence quantification
+### Endogenous protein immunofluorescence quantification
 
 HeLa cells expressing dCas9-KRAB-BFP were infected with sgRNAs and passaged for 8 days with puromycin selection, before plating on glass coverslips. The following day, cells were fixed, permeabilized, and immunostained. Primary: mouse anti-MAVS (Santa Cruz sc-166583, 1:200 dilution) or mouse anti-AKAP1 (Santa Cruz sc-135824, 1:200 dilution) and rabbit anti-TOMM20 (Abcam ab186735, 1:500 dilution). Secondary: goat anti-mouse Alexa Fluor 488 (Invitrogen A11029, 1:1000 dilution) and goat anti-rabbit Alexa Fluor 568 (Invitrogen A11036, 1:1000 dilution).
 
 The resulting images were analyzed with SlideBook 5.0 software (Intelligent Imaging Innovations, 3i), as follows. Cells that were completely present in the image and that had clear signal in the fluorescent channels corresponding to MAVS and TOMM20 were bounded to generate unique image objects. For each object, a mask was created for pixels that exceeded a threshold intensity for both MAVS and TOMM20, based on intensity in the nucleus. A second mask was created for pixels that exceeded the threshold for MAVS but not TOMM20. After background subtraction (using a noncellular region), the percent of non-mitochondrial MAVS was measured as the total MAVS intensity from the MAVS-only mask divided by the sum total MAVS intensity across both masks. Significance was measured by Wilcoxon rank-sum test due to the presence of outliers and skew with certain sgRNAs. AKAP1-stained cells were analyzed in the same manner as MAVS-stained cells.
 
-## Western blots
+### Western blots
 
 HeLa cells expressing dCas9-KRAB-BFP were infected with sgRNAs and passaged for 9 days in T25 or T75 flasks with puromycin selection. To harvest, cells were washed twice with DBPS. In 2 mL of DPBS, the cells were dislodged with a cell scraper (Thermo Fisher 179693) and pelleted by centrifugation (500 × g for 3 min). The cell pellets were then resuspended in 1 mL DPBS and pelleted again by centrifugation in 1.5 mL Eppendorf tubes (500 × g for 3 min). Supernatant was removed by aspiration, and the pellets were flash frozen with liquid nitrogen and stored at –80°C. Later, the pellets were lysed by resuspending in RIPA buffer (50 mM Tris pH 8, 150 mM NaCl, 0.1% SDS, 0.5% sodium deoxycholate, 1% Triton X-100; Sigma T9284) in the presence of 1× protease inhibitor cocktail (Sigma-Aldrich P8849) and 1 mM PMSF. The Eppendorf tubes were incubated for 15 min at 4°C and vortexed every 3 min for proper sample digestion. Lysates were clarified by centrifugation at 10,000 RPM for 15 min at 4°C. Protein loading buffer (6×, 20 μL) was mixed with 100 μL of the clarified lysate and boiled for 3 min prior to PAGE gel separation.
 
 Proteins were separated on 9 or 12% SDS-PAGE gels in Tris-Glycine buffer and then were transferred into PVDF membrane (Sigma 05317). The blots were then blocked in 3% BSA (w/v) in TBS-T (Tris-buffered saline, 0.1% Tween 20) for 45 min at room temperature. Blots were then incubated with primary antibody in 3% BSA (w/v) in TBS-T for 1 hour at room temperature, washed two times with TBS-T for 10 min each, then stained with secondary antibody in 3% BSA (w/v) in TBS-T for 45 min at room temperature. The blots were washed four times with TBS-T for 5 min each time before imaging on Licor Odyssey CLx imaging system. Quantitation was performed using the software provided by Licor.
 
-## Primary
+#### Primary
 
-## Secondary
+#### Secondary
 
-## Proteomic profiling
+### Proteomic profiling
 
-## In-solution digestion
+#### In-solution digestion
 
 HeLa cell pellets were lysed in-solution with 8 M urea, 75 mM NaCl, 50 mM Tris-HCl pH 8.0, 1 mM EDTA, 2 µg/mL aprotinin (Sigma A1153), 10 µg/mL leupeptin (Roche 11017101001), and 1 mM phenylmethylsulfonyl fluoride (PMSF; Sigma). Protein concentration of cleared lysate was estimated with a bicinchoninic acid (BCA) assay (Pierce 23225). Protein disulfide bonds were reduced with 5 mM dithiothreitol (DTT) at room temperature for 1 hr, and free thiols were alkylated in the dark with 10 mM iodoacetamide (IAM) at room temperature for 45 min. The urea concentration in all samples was reduced to 2 M by addition of 50 mM Tris-HCl, pH 8.0. Denatured proteins were then enzymatically digested into peptides upon incubation first with endoproteinase LysC (Wako Laboratories 12505061) at 25°C shaking for 2 hr and then with sequencing-grade trypsin (Promega V5111) at 25°C shaking overnight, both added at a 1:50 enzyme:substrate ratio. Digestion was quenched via acidification to 1% formic acid (FA). Precipitated urea and undigested proteins were cleared via centrifugation, and samples were desalted using 50 mg tC18 1cc SepPak desalt cartridges (Waters 186000308). Cartridges were conditioned with 100% acetonitrile (MeCN), 50% MeCN/0.1% FA, and 0.1% trifluoroacetic acid (TFA). Samples were loaded onto the cartridges and desalted with 0.1% TFA and 1% FA, and were then eluted with 50% MeCN/0.1% FA. Eluted samples were frozen and dried via vacuum centrifugation.
 
-## TMT labeling of peptides
+#### TMT labeling of peptides
 
 Desalted peptides were reconstituted in 30% MeCN/0.1% FA and the peptide concentration was quantified with a BCA assay. With 100 µg peptide input per channel, samples were labeled with a TMTpro isobaric mass tagging reagent (Thermo A44520) as previously described (Zecha et al., 2019). Samples were reconstituted in 50 mM HEPES, pH 8.5, at a peptide concentration of 5 mg/mL. Dried TMT reagent was reconstituted in 100% anhydrous MeCN at a concentration of 40 µg/µL, added to each sample at a 2:1 TMT:peptide ratio, and allowed to react for 1 hr at 25°C. Labeling was quenched upon addition of 5% hydroxylamine to a final concentration of 0.25%, incubating for 15 min at 25°C. TMT-labeled samples were combined, frozen, and dried via vacuum centrifugation. This dried sample was reconstituted in 0.1% FA and desalted using a 100 mg tC18 1cc SepPak cartridge as described above. The eluted sample was frozen and dried via vacuum centrifugation.
 
-## Basic reverse phase (bRP) fractionation
+#### Basic reverse phase (bRP) fractionation
 
 Labeled and combined peptides for proteome analysis were fractionated using offline basic reverse-phase (bRP) fractionation as previously described (Mertins et al., 2018). The sample was reconstituted in 900 µL bRP solvent A (2% vol/vol MeCN, 5 mM ammonium formate, pH 10.0) and loaded at a flow rate of 1 mL/min onto a custom Zorbax 300 Extend C18 column (4.6 × 250 mm, 3.5 µm, Agilent 770995) on an Agilent 1100 high-pressure liquid chromatography (HPLC) system. Chromatographic separation proceeded at a flow rate of 1 mL/min with a 96 min gradient, starting with an increase to 16% bRP solvent B (90% vol/vol MeCN, 5 mM ammonium formate, pH 10.0), followed by a linear 60 min gradient to 40% that ramped up to 44% and concluded at 60% bRP solvent B. Fractions were collected in a Whatman 2 mL 96-well plate (GE Healthcare) using a horizontal snaking pattern and were concatenated into 24 final fractions for proteomic analysis. Fractions were frozen and dried via vacuum centrifugation.
 
-## Liquid chromatography and mass spectrometry
+#### Liquid chromatography and mass spectrometry
 
 Sample analysis was performed via coupled nanoflow liquid chromatography and tandem mass spectrometry (LC-MS/MS). Fractions were reconstituted in 3% MeCN/0.1% FA at a peptide concentration of 1 µg/µL. From each fraction, 1 µg sample was loaded for online separation onto an ~25 cm analytical capillary column (360 µm O.D. × 75 µm I.D.), heated to 50°C and packed with ReproSil-Pur C18-AQ 1.9 µm beads (Dr. Maisch GmbH), with a 10 µm electrospray emitter tip. Nanoflow liquid chromatography was performed with an Easy-nLC 1200 system (Thermo), employing a 110 min gradient with varying ratios of solvent A (3% MeCN/0.1% FA) and solvent B (90% MeCN/0.1% FA). Described as min:% solvent B, the steps in the gradient include 0:2, 1:6, 85:30, 94:60, 95:90, 100:90, and 110:50, beginning at a flow rate of 200 nL/min for the first six steps and increasing to 500 nL/min for the final two.
 
 Tandem MS analysis was performed on a Q-Exactive HF-X series mass spectrometer (Thermo). Acquisition was done in data-dependent MS2 mode, picking the top 20 most abundant precursor peaks in an MS1 scan for fragmentation. MS1 scans were collected at a resolution of 60,000, with an automatic gain control (AGC) target of 3 × 106 ions, or a maximum inject time of 50 ms. HCD-MS2 scans were collected at a resolution of 45,000, with an AGC target of 5 × 104, or a maximum inject time of 105 ms. The MS2 isolation window was 0.7 m/z, and a collision energy of 29 was used. Ions with a charge state other than 2–6 were excluded, peptide matching was set to ‘preferred,’ and dynamic exclusion time was set to 15 s. Raw mass spectrometry data is publicly available in MassIVE.
 
-## Data analysis
+#### Data analysis
 
 Mass spectrometry data was processed using Spectrum Mill (Rev BI.07.04.210, proteomics.broadinstitute.org). Extraction of raw files retained spectra within a precursor mass range of 750–6000 Da and a minimum MS1 signal-to-noise ratio of 25. MS1 spectra within a retention time range of ±60 s or within a precursor m/z tolerance of ±1.4 m/z were merged. MS/MS searching was performed against a human UniProt database. Digestion parameters were set to ‘trypsin allow P’ with an allowance of four missed cleavages. The MS/MS search included fixed modifications, carbamidomethylation on cysteine and TMT on the N-terminus and internal lysine, and variable modifications, acetylation of the protein N-terminus and oxidation of methionine. Restrictions for matching included a minimum matched peak intensity of 30% and a precursor and product mass tolerance of ±20 ppm. Peptide matches were validated using a maximum FDR threshold of 1.2%, limiting the precursor charge range to 2–6. Protein matches were additionally validated, requiring a minimum protein score of 0. Validated data was summarized into a protein-centric table and filtered for fully quantified hits represented by two or more unique peptides. Non-human contaminants and human keratins were removed.
 
-## Statistical approach
+#### Statistical approach
 
 Each protein ID was associated with a log2-transformed expression ratio for every sample condition over the median of all sample conditions. After normalization, a two-sample moderated t-test was performed on the data to compare treatment groups using an internal R-Shiny package based in the limma library. p-Values associated with every protein were adjusted using the Benjamini–Hochberg FDR (Benjamini and Hochberg, 1995).
 
-## Resource availability
+### Resource availability
 
 Lead contact: Further information and requests for resources or reagents should be directed to the lead contact, Alice Ting (ayting@stanford.edu).
 
-## Materials availability
+### Materials availability
 
 Plasmids generated in the study have been deposited to Addgene or are available upon request (Supplementary file 1).

@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Earth and Environmental Sciences, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Department of Mechanical Engineering and Applied Mechanics, University of Pennsylvania Philadelphia United States
+1. Department of Earth and Environmental Sciences, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Department of Mechanical Engineering and Applied Mechanics, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
 
 † Corresponding author
 

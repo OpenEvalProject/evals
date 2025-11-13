@@ -32,33 +32,45 @@ To define the key factors responsible for the topography of behavioral respondin
 
 ## Results
 
-## White noise elicits active fear responses during SCS conditioning regardless of temporal relationship to the US
+### White noise elicits active fear responses during SCS conditioning regardless of temporal relationship to the US
 
 We first tested whether reversing the order of 7.5 kHz tone (TN) and white noise (WN) presentation during SCS conditioning reverses the behaviors these stimuli elicit. To distinguish responses due to learned CS-US associations from those due to sensitization or generalization, a control group was included with a 60 s ‘gap’ between the SCS and the US (Figure 1A–C). As evident from the motion traces (Figure 1D–F), all groups exhibited significantly greater motion during WN than TN, irrespective of the order that these stimuli were presented during training (Figure 1J–L). As conditioning progressed, mice in all groups began to exhibit active responses to the WN, including darting and jumping, behaviors quantified using an ‘escape score’ (Figure 1M–O, see Materials and methods).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Protocol and structure of stimuli applied during conditioning for paired and unpaired groups. (D–F) Motion indices (mean ± SEM) showing movement in the absence or presence of stimuli (10 × 7.5 kHz pips, 75 dB, 0.5 s each at 1 Hz, blue; 10x white noise (WN) pips, 75 dB, 0.5 s each at 1 Hz, pink; 1 × 0.9 mA footshock, 1 s, yellow) for all 10 conditioning trials (Days 1 and 2). (G–I) Percentage time spent freezing during baseline (BL, 3 min prior to the first stimulus presented each day) and trials across each conditioning day. (J–L) Average motion during BL and trials. (M–O) Active fear behavior during each trial quantified as an escape score (see Materials and methods). CS order and pairing: group 1 (D,G,J,M: CS1 = 7.5 kHz, CS2 = WN; n = 15), group 2 (E,H,K,N: CS1 = WN, CS2 = 7.5 kHz; n = 10), and group 3 (F,I,L,O: CS1 = 7.5 kHz, CS2 = WN, gap; n = 10). Asterisks indicate significant difference between stimuli for a given trial (Two-way Repeated Measures ANOVA with Sidak multiple comparison test. Error bars indicate the SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Protocol and structure of stimuli applied during conditioning. (C,D) Motion indices (mean ± SEM) in a novel context tone test for mice trained on a paired (C, n = 8) or gap (D, n = 7) SCS conditioning protocol, showing a single 10 s presentation of 7.5 kHz tone pips; onset of tone stimuli is indicated by light blue shading. Blue segments of the motion trace indicate statistically-significant decreases from the baseline (p<0.05; multivariate permutation tests). (E) Paired but not gap trained mice show significantly increased freezing in response to 7.5 kHz tone presentations. Error bars indicate SEM.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A,B) Protocol and structure of stimuli applied during conditioning for two paired groups. (C,H) Motion indices (mean ± SEM) showing movement in the absence or presence of stimuli (10 × 7.5 kHz pips, 75 dB, 0.5 s each at 1 Hz, blue; 10x white noise (WN) pips, 75 dB, 0.5 s each at 1 Hz, pink; 1 × 0.9 mA footshock, 1 s, yellow) for all 10 conditioning trials (Days 1 and 2) Group 7 (C) was trained with a tone-white noise SCS; Group 8 (H) was trained with a white noise-tone SCS. (D,I) Percentage time spent freezing during baseline (BL, 3 min prior to the first stimulus presented each day) and each trial (SCS presentation) across each conditioning day. (E,J) Average velocity during BL and trials. (F,K) Active fear behavior during each trial quantified by escape score (G) or flight Score (Fadok et al., 2017) (L), which yielded similar results. Both groups, n = 12 per group. Black asterisks indicate significant difference between groups for a given trial. Asterisks indicate significant difference between stimuli for a given trial. Error bars indicate SEM.
 
 Evidence that Pavlovian conditioning occurred to individual components of the SCS is as follows. First, freezing to the TN differed between paired Group 1 (G1) and gap Group 3 (G3) during conditioning. Freezing to TN was higher in G1 than G3 (3-Way ANOVA on Day 2, G1 vs. G3, Main Effect of Stimulus (F(1,23) = 429.5, p<0.0001), Main Effect of Trial (F(4,92) = 5.083, p=0.001), Group X Stimulus Interaction, (F(1,23) = 27.51, p<0.0001); Follow-Up Two-Way RM ANOVA for freezing just to the tone stimulus, Main Effect of Trial (F(3.2, 75.9)=3.79, p<0.05), Main Effect of Group (F(1,23) = 6.41, p<0.05)). Second, a separate cohort of mice trained on the same protocol were tested for TN-elicited freezing in a novel context (Figure 1—figure supplement 1). Whereas mice in the gap group (G3 protocol) did not show significantly increased freezing between baseline and tone onset (p>0.05), mice in the paired group (G1 protocol) exhibited robust acute freezing upon tone onset (p<0.001)(Two-Way RM ANOVA, Main Effect of Stimulus (F(1,13) = 19.98, p<0.001), Stimulus X Group Interaction (F(1,13) = 5.492, p<0.05), Sidak’s comparisons to determine which group drives the Main Effect of Stimulus). Third, motion and escape score during WN presentations differed between G1 and G3 during conditioning. Mice in G1 had higher motion to WN than G3 mice (3-Way ANOVA on Day 2, G1 vs. G3 Activity, Main Effect of Stimulus (F(1,23) = 69.89, p<0.0001), Main Effect of Group (F(1,23) = 11.75, p<0.01), Group X Stimulus Interaction (F(1,23) = 19.77, p<0.001); Follow-up Two-Way RM ANOVA for motion just to WN stimulus, Main Effect of Group (F(1,23) = 15.79, p<0.001)), and also had higher escape scores to the WN stimulus (3-Way ANOVA on Day 2, G1 vs. G3 Escape Score, Main Effect of Stimulus (F(1,23) = 67.85, p<0.0001), Main Effect of Group (F(1,23) = 15.98, p<0.001), Group X Stimulus Interaction (F(1,23) = 20.41, p<0.001); Follow-up Two-Way RM ANOVA for escape score just to WN, Main Effect of Group (F(1,23) = 18.25, p<0.001)). Although Group 2 (G2) did not show significantly different freezing, motion, or escape score compared to G3 (3-Way ANOVA on Day 2, G2 vs G3, no group differences or interactions for freezing, motion, or escape score), G2 did display differential behavior to the two CS stimuli across these same metrics and in the same direction as G1 (Figure 1E–N; 2-Way ANOVA with Trial and Stimulus as factors; details in Source Data).
 
 Notably, G1 motion responses to WN on day 2 (Figure 1D) were largest immediately following stimulus onset and decreased thereafter until US exposure (paired t-test, average motion first two vs. last two seconds of CS2, trials 6, 7, p<0.01; trials 8, 9, p<0.05). Thus, imminence in the SCS paradigm does not appear to be determined by a cognitive process that uses cue order or hazard rate, and reversing stimulus order does not reverse behavior. Similar results were observed when these same experiments were performed with C57Bl/6J mice (Figure 1—figure supplement 2), the strain most comparable to that used in previous studies (Dong et al., 2019; Fadok et al., 2017). Together, these results suggest that threat prediction in the SCS paradigm may be related to intrinsic properties of the auditory stimuli themselves.
 
-## White noise is inherently more arousing than 7.5 kHz tones in naïve, unconditioned mice
+### White noise is inherently more arousing than 7.5 kHz tones in naïve, unconditioned mice
 
 Mice can hear sounds from 1 kHz to 100 kHz, but sensitivity to specific frequencies varies dramatically over this range. For example, the minimal sound pressure levels (SPL) that mice can reliably detect for 16 kHz tones is ~10 x lower (10 dB) than for 7.5 kHz tones (20 dB) (Koay et al., 2002). Given that the WN stimulus used here and previously (Dong et al., 2019; Fadok et al., 2017) is composed of frequencies between 1–20 kHz, one explanation for the above results is that WN stimuli are more efficiently detected and so of higher salience to mice than 7.5 kHz tones. To test this idea, we measured physiological and behavioral responses to unconditioned TN and WN stimuli from naive, head-fixed mice on running wheels that had not undergone conditioning of any kind or previously been exposed to these stimuli (Figure 2A–C). Surprisingly, we found that pupil dilation and simple locomotor responses on the running wheel were significantly greater to WN than TN (Figure 2D–F). In addition, comparison of the first three versus last three trials revealed that whereas TN responses habituate with repeated presentations, WN responses do not (Figure 2G–N). Thus, even in the absence of any association with an aversive US, TN and WN differ significantly in the magnitude of the physiological and behavioral responses they elicit.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig2-v2.jpg)
 
-**Figure 2.:** (A–C) Pupillometry setup, data processing, and protocol for measuring innate physiological responses to 7.5 kHz tone and white noise (WN) stimuli in unconditioned mice. (D,E) Pupil diameter relative to baseline (top traces) and running wheel velocity (bottom traces) are (F) both significantly greater in response to WN than tones. (G–L) Comparison of the first three (G–I) versus last three (J–L) trials reveals that responses to tones habituate more rapidly than to WN (insets, (J,K). Two-Way ANOVA (stimulus, group) with Sidak’s multiple comparison tests (F,I,L) for pupil dilation relative to baseline (left) were done using mean values during the last 5 s of stimulus presentations (to account for slow kinetics of dilation), and for running wheel velocity (right) on mean values over the full 10 s stimulus presentations. (M,N) Comparison of first three versus last three trials of Tone response (M) shows habituation, while Noise response (N) does not. Traces and graphs plotted as mean ± SEM.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A–C) Pupillometry setup, data processing, and protocol for measuring innate physiological responses to 7.5 kHz tone and white noise (WN) stimuli in unconditioned mice. (D,E) Pupil diameter relative to baseline (top traces) and running wheel velocity (bottom traces) are (F) both significantly greater in response to WN than tones. (G–L) Comparison of the first three (G–I) versus last three (J–L) trials reveals that responses to tones habituate more rapidly than to WN (insets, (J,K). Two-Way ANOVA (stimulus, group) with Sidak’s multiple comparison tests (F,I,L) for pupil dilation relative to baseline (left) were done using mean values during the last 5 s of stimulus presentations (to account for slow kinetics of dilation), and for running wheel velocity (right) on mean values over the full 10 s stimulus presentations. (M,N) Comparison of first three versus last three trials of Tone response (M) shows habituation, while Noise response (N) does not. Traces and graphs plotted as mean ± SEM.
 
-## Stimulus intensity, not training order, determines the defensive behaviors elicited by SCS stimuli
+### Stimulus intensity, not training order, determines the defensive behaviors elicited by SCS stimuli
 
 This suggests that TN and WN are differentially salient to mice, which perceive the two stimuli as reflecting distinct points along the threat imminence continuum. A prediction of this model is that a 7.5 kHz CS presented at high SPL should be perceived as more imminent and elicit more escape than the exact same CS presented at low SPL. To test this, we performed a ‘SPL step test’ in which mice were presented with a SCS composed of two 7.5 kHz tones: CS1 is held constant at 75 dB while CS2 SPL magnitude begins at 55 dB and is stepped up by 5 dB each trial, finishing at 105 dB (Figure 3A–C). While predominantly freezing was observed at ≤85 dB, 7.5 kHz tones began to elicit escape behaviors in the paired group when CS2 ≥90 dB (Figure 3D,F,H). Further, escape scores for trials where CS2 ≥90 dB were significantly higher in group 1 (paired) than group 3 (gap; Figure 3H,I): 2-Way Repeated Measures ANOVA, Main Effect of Trial (F (4, 92)=3.208, p<0.05), Main Effect of Group (F (1, 23)=4.613, p<0.05). This argues that group one responses are at least in part influenced by perceived threat levels which are a function of conditioned fear, and are not simply a reflexive reaction to loud sounds. Moreover, escape at later trials was observed in response to CS2 but not CS1, demonstrating that these behavioral changes were not due solely to enhanced responsivity to any stimulus following repeated US exposure.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mice conditioned in groups 1 and 3 (Figure 1) were run through a tone SPL step test on day 4. (B) The tone step SCS (sSCS) is composed of two 7.5 kHz tone stimuli in which CS1 is held constant at 75 dB while CS2 begins at 55 dB and is stepped up by 5 dB each trial. (C) Schematic of tone SPL step test. (D,E) Percentage time spent freezing. (F,G) Average motion. (H,I) Escape score. Paired sSCS (D, F, H); n = 15); gap sSCS (E, G, I); n = 10). Asterisks indicate significant difference between stimuli for a given trial. ns, not significant. (J) On day 6, a WN SPL step test was done in a novel context. (K) The WN step CS (sCS) is a white noise stimulus which begins at 40 dB and is stepped up by 5 dB each trial. (L) Schematic of WN SPL step test. (M) Percentage time spent freezing, (N) average motion, and (O) escape score. Paired sSCS (D,F,H; n = 15); gap sSCS (E,G,I; n = 10). Black asterisks indicate significant difference between groups for a given trial. Dashed horizontal gray brackets indicates significant main effect of SPL. Statistical comparisons were 2-Way Repeated Measures ANOVA, with Trial and Stimulus as factors. Dashed vertical gray brackets indicate significant main effect of group. Error bars indicate SEM.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (A) Mice conditioned in groups 1 and 3 (Figure 1) were run through a tone SPL step test on day 4. (B) The tone step SCS (sSCS) is composed of two 7.5 kHz tone stimuli in which CS1 is held constant at 75 dB while CS2 begins at 55 dB and is stepped up by 5 dB each trial. (C) Schematic of tone SPL step test. (D,E) Percentage time spent freezing. (F,G) Average motion. (H,I) Escape score. Paired sSCS (D, F, H); n = 15); gap sSCS (E, G, I); n = 10). Asterisks indicate significant difference between stimuli for a given trial. ns, not significant. (J) On day 6, a WN SPL step test was done in a novel context. (K) The WN step CS (sCS) is a white noise stimulus which begins at 40 dB and is stepped up by 5 dB each trial. (L) Schematic of WN SPL step test. (M) Percentage time spent freezing, (N) average motion, and (O) escape score. Paired sSCS (D,F,H; n = 15); gap sSCS (E,G,I; n = 10). Black asterisks indicate significant difference between groups for a given trial. Dashed horizontal gray brackets indicates significant main effect of SPL. Statistical comparisons were 2-Way Repeated Measures ANOVA, with Trial and Stimulus as factors. Dashed vertical gray brackets indicate significant main effect of group. Error bars indicate SEM.
 
 To determine whether behavioral responses to WN also scale with SPL, we performed a SPL step test using a simple WN CS presented in a novel context (Figure 3J–L). At low SPL (40–45 dB), WN elicited robust freezing and little to no escape behavior. In contrast, at higher SPL (≥60 dB), escape responses were common and freezing was minimal during WN presentations (Figure 3M–O). Thus, SCS fear conditioned TN and WN stimuli elicit freezing or flight behavior according to the SPL magnitude at which they are presented.
 
-## Active fear behaviors are more potently elicited by 12 kHz than 3 kHz stimuli during pure tone SCS conditioning
+### Active fear behaviors are more potently elicited by 12 kHz than 3 kHz stimuli during pure tone SCS conditioning
 
 Elicitation of robust escape by SCS conditioned 7.5 kHz tones required presentation at ≥90 dB, whereas both paired and unpaired mice began responding actively to WN stimuli at SPL as low as 50 dB. Although these stimuli differ in terms of frequency, they also differ with regards to signal regularity: whereas the 7.5 kHz tone is sinusoidal and periodic, WN is random and aperiodic. Therefore, although the above results could reflect differential sensitivity of mice to stimuli of different frequencies, they might alternatively be due to distinct defensive responses triggered by periodic versus aperiodic signals.
 
@@ -66,7 +78,7 @@ To test if frequency alone can influence defensive behaviors, we performed fear 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53803/elife-53803-fig4-v2.jpg)
 
-**Figure 4.:** (A) Contribution of CS audio frequency, order presented relative to US, and pairing were assessed by conditioning with a SCS composed of 3 and 12 kHz pure tones; conditioning was done as in Figure 1A. (B–D) Motion indices (mean ± SEM) show locomotor responses to stimuli (3 kHz pips, blue; 12 kHz pips, green; 0.9 mA footshock, yellow) for trials 1 (Day 1, top) and 10 (Day 2, bottom). (E–G) Percent time spent freezing. (H–J) Average motion. (K–M) Escape score. CS order and pairing: group 4 (B,E,H,K: CS1 = 3 kHz, CS2 = 12 kHz; n = 10), group 5 (C,F,I,L: CS1 = 12 kHz, CS2 = 3 kHz; n = 10), and group 3 (D,G,J,M: CS1 = 3 kHz, CS2 = 12 kHz, unpaired; n = 10). (N–P) Tone tests established that lack of active responses to the 75 dB 3 kHz CS was not due to it being inaudible, as paired mice exhibited robust freezing to this stimulus when presented at an even lower SPL (60 dB) outside of the conditioning context. Black asterisks indicate significant difference between groups for a given trial. Dashed vertical gray brackets indicate significant main effect of CS type. Error bars indicate the SEM.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Contribution of CS audio frequency, order presented relative to US, and pairing were assessed by conditioning with a SCS composed of 3 and 12 kHz pure tones; conditioning was done as in Figure 1A. (B–D) Motion indices (mean ± SEM) show locomotor responses to stimuli (3 kHz pips, blue; 12 kHz pips, green; 0.9 mA footshock, yellow) for trials 1 (Day 1, top) and 10 (Day 2, bottom). (E–G) Percent time spent freezing. (H–J) Average motion. (K–M) Escape score. CS order and pairing: group 4 (B,E,H,K: CS1 = 3 kHz, CS2 = 12 kHz; n = 10), group 5 (C,F,I,L: CS1 = 12 kHz, CS2 = 3 kHz; n = 10), and group 3 (D,G,J,M: CS1 = 3 kHz, CS2 = 12 kHz, unpaired; n = 10). (N–P) Tone tests established that lack of active responses to the 75 dB 3 kHz CS was not due to it being inaudible, as paired mice exhibited robust freezing to this stimulus when presented at an even lower SPL (60 dB) outside of the conditioning context. Black asterisks indicate significant difference between groups for a given trial. Dashed vertical gray brackets indicate significant main effect of CS type. Error bars indicate the SEM.
 
 Freezing and escape behavior in this ‘two-tone’ SCS protocol resulted from Pavlovian Conditioning. Though groups did not differ in freezing behavior to the 3 kHz tone during conditioning, this difference was revealed in a novel context tone test (Figure 4N–P). Elevated motion and escape behaviors to the 12 kHz tone occurred only in the paired groups, indicating that these behaviors are conditioned responses (2-Way RM ANOVA, G4 vs. G6, Motion to 12 kHz Tone: Main Effect of Trial (F(2.5, 45.7)=3.31, p<0.05), Main Effect of Group (F(1,18) = 8.64, p<0.01); 2-Way RM ANOVA, G4 vs. G6, Escape score to higher Tone: Main Effect of Trial (F(2.7, 48.0)=4.36, p<0.05), Main Effect of Group (F(1,18) = 10.1, p<0.01); 2-Way RM ANOVA, G5 vs G6, Escape score to 12 kHz Tone: Main Effect of Group (F(1,18) = 4.49, p<0.05). As observed for the TN and WN stimuli (Figure 1), reversing stimulus order reduced the magnitude of the elevated activity and escape to the high-salience stimulus, but did not reverse the behaviors elicited by the two stimuli.
 
@@ -88,26 +100,78 @@ Finally, we note that conditioned responses exhibited at the onset of a CS can d
 
 ## Materials and methods
 
-## Subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>FVBB6 F1</td>
+      <td>Taconic stock #FVB/Ntac x Envigo stock #C57Bl/6NHsd</td>
+      <td>RRID:MGI:5653121 RRID:MGI:5658877</td>
+      <td>cross of FVB/N to B6N</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory (Bar Harbor, ME)</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>JAX stock # 000664</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bonsai</td>
+      <td>Open Ephys</td>
+      <td>RRID:SCR_017218</td>
+      <td>Version 2.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks (Natick, MA)</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2017b</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subjects
 
 Male FVBB6 F1 hybrid mice (3–5 months of age, 25–30 g) were used for all experiments except those in Figure 1—figure supplement 1, which used C57Bl/6J mice (JAX). All mice were singly housed beginning one week prior to and throughout training and testing, and maintained on a 12 hr reverse light/dark cycle with access to food and water ad libitum. All behavioral tests were conducted during the dark phase, beginning not before one hour of lights OFF and ending not later than one hour before lights ON. Animals were randomly assigned to the experimental groups. The behavioral procedures used in this study were approved by the Institutional Animal Care and Use Committee at Boston Children’s Hospital.
 
-## Apparatus
+### Apparatus
 
 Behavioral training used fear conditioning chambers (30 × 25×25 cm, Med-Associates, Inc St. Albans, VT), equipped with a Med-Associates VideoFreeze system. The boxes were enclosed in larger sound-attenuating chambers. Aspects of the boxes were varied to create two distinct contexts. The pre-exposure and testing context were composed of a white Plexiglas floor insert and a curved white Plexiglas wall insert with a hole over the wall speaker, making the rear walls of the chamber into a semi-circle. The ceiling and front door were composed of clear Plexiglas. The overhead light was off and the box was cleaned with 1% acetic acid. The conditioning context was comprised of a rectangular chamber with aluminum sidewalls and a white Plexiglas rear wall. The grid floor consisted of 16 stainless steel rods (4.8 mm thick) spaced 1.6 cm apart (center to center). Pans underlying each box were sprayed and cleaned between mice. Fans mounted above each chamber provided background noise (65 dB). The experimental room was brightly lit with an overhead white light. Animals were kept in a holding room and individually transported to the experimental room in their home cage. Chambers were cleaned with soap and water following each day of behavioral testing.
 
-## Serial compound stimulus (SCS) fear conditioning
+### Serial compound stimulus (SCS) fear conditioning
 
 For tone-white noise SCS, three groups of mice were conditioned with compound stimuli consisting of ten pure tone pips (7.5 KHz, 75 dB, 0.5 s duration at 1 Hz), ten white noise pips (WN, 75 dB, 0.5 s duration at 1 Hz), and a foot shock (0.9mA, 1 s duration). The order and pairing differed between groups: Group one received Tone-WN paired with shock, Group two received WN-Tone paired with shock, and Group three received Tone-WN not directly paired with shock (i.e. 60 s gap in between CS2 and US). All groups had a 3 min baseline period prior to the first CS and 30 s after the final shock. Groups 1 and 2 had a 60 s average pseudorandom ITI (range 50–90 s), while Group 3 had a 180 s average pseudorandom ITI (range 150–200). For pure tone SCS conditioning, the protocols were the same except that the tone and white noise stimuli were replaced with two pure tone stimuli: 3 KHz (75 dB, 10 × 0.5 s duration pips at 1 Hz) and 12 KHz (75 dB, 10 × 0.5 s duration pips at 1 Hz). On the day 0 of both experiments, mice were placed into the pre-exposure context and received four CS-alone trials. On Days 1 and 2, mice were placed into the conditioning context, where they received five CS trials that included shock. SPL step tests were run as indicated in the figures.
 
-## Quantification of behavior
+### Quantification of behavior
 
 Freezing behavior, average motion, and maximum motion were calculated using motion indices determined using automated near infrared (NIR) video tracking equipment and computer software (VideoFreeze, Med-Associates Inc), as previously described (Zelikowsky et al., 2013). Escape behaviors were scored manually from video files to count the number of darts and jumps. Darts were defined as rapid crossings preceded by immobility; jumps were defined as rapid movements in which all four paws left the floor. These behaviors were summed to determine the number of escape behaviors per mouse per trial, and used to quantify the vigor of responses to particular auditory stimuli via an ‘escape score’. As most mice were freezing throughout baseline (BL) periods on conditioning day 2 (resulting in a motion index = 0), computation of a ‘flight score’ which compares motion during CS presentation versus BL as a CS/BL ratio (similar to what was done previously using velocity [Fadok et al., 2017]) was problematic due to most ratios having 0 in the denominator. We therefore calculated an ‘escape score’ by taking the difference in average motion index (MI) during CS versus the baseline for each trial (i.e. the 10 s period preceding delivery of a CS), dividing this by 100, and then adding one point for each dart or two points for each jump observed during that particular stimulus and trial: escape score = (MICS – MIBL)/100 + 1 (for each dart) + 2 (for each jump).
 
-## Pupillometry
+### Pupillometry
 
 Mice with stainless steel head posts were head-fixed on a running wheel, and pupils illuminated with an infrared LED and imaging with a FLIR Flea3 USB 3.0 camera at 30fps. Importantly, mice used for these experiments had not previously received any type of conditioning nor been exposed to either tone or white noise stimuli. To extract pupil diameter traces, the pupil was thresholded and binarized in Bonsai 2.3 using a custom workflow (OpenCV). The resulting image was dilated and eroded to remove noise from the pupil edge, and the largest radius of the oval is extracted as pupil diameter. Blinks were removed in MATLAB. Following habituation to head-fixation on the wheel for three days (10 min per day), mice were exposed to ten trials of the Tone-WN stimuli alone; the following day they received ten trials of the WN-Tone stimuli alone. To minimize the influence of ‘ceiling effects’, trials were excluded when pupil diameter exceeded the mouse’s own 50th percentile in the 5 s prior to stimulus onset. All velocity traces were included.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed with t-tests or two-way repeated-measures ANOVAs, with Sidak post hoc analysis correcting for multiple comparisons where appropriate. Sample size was pre-determined from previously published research and from pilot experiments performed in the laboratory. Experiments in Figure 1 were replicated two (groups 2 and 3) or three (group 1) times using separate cohorts of animals. Experiments in Figure 2 were replicated twice using separate groups of animals. Experiments in Figures 3 and 4 were performed once. Experiments in Figure 1—figure supplement 1 were performed once. Experiments in Figure 1—figure supplement 2 were replicated twice with separate cohorts of animals. In all instances, these were ‘biological replicates’ (i.e. different mice for each experiment). Lab personnel were blind to experimental group during scoring. Statistical significance is labeled as *p<0.05, **p<0.01, and ***p<0.001.

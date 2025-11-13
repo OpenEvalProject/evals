@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.33126.001 The WNT signaling pathway regulates patterning and morphogenesis during development and promotes tissue renewal and regeneration in adults. The R-spondin (RSPO) family of four secreted proteins, RSPO1-4, amplifies target cell sensitivity to WNT ligands by increasing WNT receptor levels. Leucine-rich repeat-containing G-protein coupled receptors (LGRs) 4-6 are considered obligate high-affinity receptors for RSPOs. We discovered that RSPO2 and RSPO3, but not RSPO1 or RSPO4, can potentiate WNT/β-catenin signaling in the absence of all three LGRs. By mapping the domains on RSPO3 that are necessary and sufficient for this activity, we show that the requirement for LGRs is dictated by the interaction between RSPOs and the ZNRF3/RNF43 E3 ubiquitin ligases and that LGR-independent signaling depends on heparan sulfate proteoglycans (HSPGs). We propose that RSPOs can potentiate WNT signals through distinct mechanisms that differ in their use of either LGRs or HSPGs, with implications for understanding their biological functions.
+The WNT signaling pathway regulates patterning and morphogenesis during development and promotes tissue renewal and regeneration in adults. The R-spondin (RSPO) family of four secreted proteins, RSPO1-4, amplifies target cell sensitivity to WNT ligands by increasing WNT receptor levels. Leucine-rich repeat-containing G-protein coupled receptors (LGRs) 4-6 are considered obligate high-affinity receptors for RSPOs. We discovered that RSPO2 and RSPO3, but not RSPO1 or RSPO4, can potentiate WNT/β-catenin signaling in the absence of all three LGRs. By mapping the domains on RSPO3 that are necessary and sufficient for this activity, we show that the requirement for LGRs is dictated by the interaction between RSPOs and the ZNRF3/RNF43 E3 ubiquitin ligases and that LGR-independent signaling depends on heparan sulfate proteoglycans (HSPGs). We propose that RSPOs can potentiate WNT signals through distinct mechanisms that differ in their use of either LGRs or HSPGs, with implications for understanding their biological functions.
 
 ## Introduction
 
@@ -30,7 +30,125 @@ In previous work (Lebensohn et al., 2016), we generated and thoroughly character
 
 We made the serendipitous and unexpected observation that RSPO3 could potently enhance WNT reporter fluorescence driven by a low concentration of WNT3A in two independently derived HAP1-7TGP clonal cell lines carrying loss-of-function mutations in LGR4 (LGR4KO cells; see Materials and methods and Supplementary file 1) (Figure 1A). In contrast, RSPO1 did not enhance the response to WNT3A in LGR4KO cells. RSPO1 and RSPO3 had equivalent activity in wild-type (WT) HAP1-7TGP cells, demonstrating that both ligands were functional, and the response to RSPO3 in both WT and LGR4KO cells depended on the presence of WNT3A (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/33126/elife-33126-fig1-v3.jpg)
+
+**Figure 1.:** (A) WNT reporter fluorescence (median ±standard error of the median (SEM) from 10,000 cells) for WT HAP1-7TGP and two distinct LGR4KO clonal cell lines (determined by genotyping, Supplementary file 1) following treatment with the indicated combinations of WNT3A conditioned media (CM) and untagged, recombinant RSPO1 or RSPO3 (both at 20 ng/ml). All cell lines responded similarly to a saturating dose of WNT3A, demonstrating an intact downstream signaling response. (B) WNT reporter fluorescence (median ±SEM from 10,000 cells) for WT HAP1-7TGP and three distinct LGR4/5/6KO clonal cell lines (Supplementary file 1) treated with the indicated combinations of WNT3A CM and various RSPOs. RSPO1, RSPO2 and RSPO3 were used at 40 ng/ml and RSPO4 at 400 ng/ml, concentrations that produced equivalent responses in WT cells. (C) Dose-response curves for RSPO1 and RSPO3 in WT HAP1-7TGP and LGR4/5/6KO cells in the presence of 1.43% WNT3A CM. Each symbol represents the median WNT reporter fluorescence from a single well and measurements from three independently treated wells are shown for each RSPO concentration. The curves were fitted as described in Materials and methods.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33126/elife-33126-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Summary of a new experimental strategy for the rapid, one-step purification of secreted WT and mutant RSPO proteins containing an HA epitope tag at the N-terminus and a dual Fc-1D4 tag at the C-terminus. The Fc fusion stabilized the various RSPO mutants used in the study, the 1D4 tag enabled immuno-affinity purification under native conditions, and the HA tag allowed immunoblotting to ensure that each RSPO ligand was produced as a full-length species. See Materials and methods for details. (B) Equal volumes (13.5 μl) of the final eluate for each purified RSPO protein were resolved by polyacrylamide gel electrophoresis (PAGE) and stained with coomassie (top panel). Proteins were quantified by fluorimetry using the Licor Odyssey scanner and then equal mass amounts of each protein were analyzed by immunoblotting against the HA tag (bottom panels). Molecular weight standards (in kilodaltons (kDa)) are shown and/or indicated to the left. (C and D) Dose-response curves comparing untagged RSPOs to RSPOs tagged with HA and Fc-1D4 tags (shown in B) in WT HAP1-7TGP (C) and LGR4/5/6KO (D) cells, in the presence of 1.43% WNT3A CM. Each symbol represents the median WNT reporter fluorescence from 5000 cells.
+
 While LGR4 is the only RSPO receptor expressed in HAP1 cells (Table 1) (Dubey et al., 2016), we excluded the possibility of compensatory up-regulation of LGR5 or LGR6 by simultaneously disrupting both genes in LGR4KO cells, generating multiple independent clonal cell lines lacking all three RSPO receptors (hereafter called LGR4/5/6KO cells; Supplementary file 1). LGR4/5/6KO cells retained an intact WNT signaling cascade, responding normally to a saturating dose of WNT3A (Figure 1B). All four RSPOs (1-4) strongly potentiated WNT signaling in WT cells, establishing ligand integrity. However, RSPO1 and RSPO4 were completely inactive in LGR4/5/6KO cells, even at concentrations that induced maximum WNT reporter induction in WT cells, whereas RSPO2 and RSPO3 strongly potentiated signaling driven by low concentrations of WNT3A in the absence of all three LGRs (Figure 1B). Therefore, RSPO2 and RSPO3 possess a unique quality absent in RSPO1 and RSPO4 that enables them to potentiate WNT responses without LGRs.
+
+**Table 1.**
+ Relative gene expression level in HAP1 cells of selected genes discussed in this work.RPKM (Reads Per Kilobase of transcript per Million mapped reads) values from duplicate RNAseq datasets described previously (NCBI GEO accession number GSE75515, https://www.ncbi.nlm.nih.gov/geo/), obtained from two different passages of WT HAP1 cells (Dubey et al., 2016). Groups of paralogues or genes with redundant function are shaded in alternating colors to facilitate comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene</th>
+      <th colspan="3">RPKM</th>
+    </tr>
+    <tr>
+      <th>Replicate 1</th>
+      <th>Replicate 2</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LGR4</td>
+      <td>160.61</td>
+      <td>174.69</td>
+      <td>167.65</td>
+    </tr>
+    <tr>
+      <td>LGR5</td>
+      <td>0.02</td>
+      <td>0.00</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>LGR6</td>
+      <td>0.02</td>
+      <td>0.00</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>ZNRF3</td>
+      <td>30.9</td>
+      <td>33.3</td>
+      <td>32.1</td>
+    </tr>
+    <tr>
+      <td>RNF43</td>
+      <td>0.12</td>
+      <td>0.08</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>GPC1</td>
+      <td>49.55</td>
+      <td>47.53</td>
+      <td>48.54</td>
+    </tr>
+    <tr>
+      <td>GPC2</td>
+      <td>4.17</td>
+      <td>4.79</td>
+      <td>4.48</td>
+    </tr>
+    <tr>
+      <td>GPC3</td>
+      <td>170.22</td>
+      <td>144.37</td>
+      <td>157.29</td>
+    </tr>
+    <tr>
+      <td>GPC4</td>
+      <td>209.39</td>
+      <td>229.86</td>
+      <td>219.63</td>
+    </tr>
+    <tr>
+      <td>GPC5</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>GPC6</td>
+      <td>13.88</td>
+      <td>14.90</td>
+      <td>14.39</td>
+    </tr>
+    <tr>
+      <td>SDC1</td>
+      <td>51.37</td>
+      <td>47.88</td>
+      <td>49.63</td>
+    </tr>
+    <tr>
+      <td>SDC2</td>
+      <td>11.42</td>
+      <td>9.2</td>
+      <td>10.31</td>
+    </tr>
+    <tr>
+      <td>SDC3</td>
+      <td>43.58</td>
+      <td>50.64</td>
+      <td>47.11</td>
+    </tr>
+    <tr>
+      <td>SDC4</td>
+      <td>8.16</td>
+      <td>8.21</td>
+      <td>8.18</td>
+    </tr>
+  </tbody>
+</table>
 
 Dose-response analysis revealed that RSPO1 and RSPO3 enhanced WNT signaling in WT cells with nearly identical pharmacodynamics—both the efficacy (maximum reporter activity) and the potency (measured by the EC50, defined as the RSPO concentration that induced half-maximum reporter activity) were similar for both ligands (Figure 1C). In LGR4/5/6KO cells, RSPO1 had no detectable activity at concentrations up to 160 ng/ml, 400-fold higher than its EC50 in WT cells. While RSPO3 potentiated WNT signaling in LGR4/5/6KO cells, its efficacy was reduced by 33% and its EC50 was increased by 16-fold compared to WT cells (Figure 1C). The distinct pharmacodynamics of RSPO3 in the two cell types suggested that its reception was mediated by different mechanisms in the presence and absence of LGRs.
 
@@ -56,6 +174,14 @@ To identify the region of RSPO3 that confers the capacity to signal without L
 
 These results suggested that the WNT-potentiating activity of RSPO3 in the absence of LGRs depends on its interaction with ZNRF3/RNF43 through the FU1 domain and additional interactions with an alternative co-receptor through the TSP/BR domains. We considered the previous observation that the TSP/BR domains of RSPOs can bind to heparin (Nam et al., 2006). Addition of heparin to the culture medium completely blocked potentiation of WNT signaling by RSPO3 in LGR4/5/6KO cells, but had only a partial inhibitory effect in WT cells, in which RSPO3 can also signal through LGRs (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33126/elife-33126-fig4-v3.jpg)
+
+**Figure 4.:** (A) WNT reporter induction in WT HAP1-7TGP and LGR4/5/6KO cells treated with 1.43% WNT3A CM, 2 nM untagged RSPO3 and the indicated concentrations of heparin. For each heparin concentration, the fold-induction (over 1.43% WNT3A CM alone) by RSPO3 was calculated from the median WNT reporter fluorescence from 5000 cells and is expressed as percentage of the fold-induction in the absence of heparin to facilitate comparisons. (B–D) WNT reporter induction following treatment of the indicated cell lines with 2.78% WNT3A CM -/+20 ng/ml untagged RSPO3, except for LGR4/5/6KO; PIGLKO and LGR4/5/6KO; GPC4/6KO cells, which were treated with 11.1% WNT3A CM -/+20 ng/ml untagged RSPO3 (since depletion of PIGL or of GPC4 and GPC6 reduces signaling at low doses of WNT (Lebensohn et al., 2016), different WNT3A CM concentrations were used to achieve comparable signaling responses to WNT3A alone in all cell lines, so that potentiation by RSPO3 could be compared directly). The fold-induction (over WNT3A CM alone) by RSPO3 was calculated from the average of the median WNT reporter fluorescence from duplicate (C) or triplicate (B and D) wells and is expressed as percentage of the average fold-induction for WT HAP1-7TGP (left two genotypes in B) or LGR4/5/6KO (right two genotypes in B and all genotypes in C and D) cells to facilitate comparisons. Each circle represents a distinct clonal cell line (Supplementary file 1) and the average of data from two or three clonal cell lines for each genotype is indicated by a horizontal line. Significance was determined as described in Materials and methods. (E) Proposed models for LGR-dependent and LGR-independent signaling by RSPOs. See text for details.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33126/elife-33126-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) WNT reporter fluorescence (average of the meidan from duplicate (B) or triplicate (A and C) wells) for the same clonal cell lines depicted in Figure 4B–D. Where indicated, cells were treated with a sub-saturating concentration (11.1%) of WNT3A CM or with 10 μM of the GSK3 inhibitor CHIR-99021. Each circle represents a unique clonal cell line and the average of data from two or three independent clonal cell lines for each genotype is indicated by a horizontal line.
+
 The TSP/BR domains of RSPOs can mediate interactions with the two major families of cell-surface HSPGs, the glycophosphatidylinositol (GPI)-linked glypicans and the transmembrane syndecans (Ohkawara et al., 2011). In humans, both protein families are encoded by multiple, partially redundant genes: six glypican genes (GPC1-6) and four syndecan genes (SDC1-4) (Park et al., 2000), all of which are expressed in HAP1 cells except for GPC5 (Table 1). Since all glypicans and syndecans must be post-translationally modified with heparan sulfate chains for receptor function, we disrupted EXTL3, a gene encoding a glycosyltransferase that is specifically required for HSPG biosynthesis, but dispensable for the synthesis of other glycosaminoglycans and proteoglycans (Takahashi et al., 2009). The loss of EXTL3 in LGR4/5/6KO cells led to an 81% reduction in RSPO3-mediated potentiation of WNT signaling (Figure 4B). In contrast, the loss of EXTL3 in WT cells only reduced signaling by 34%, likely because RSPO3 can also signal through LGRs in WT cells. In an important control, the loss of EXTL3 did not affect signaling induced by addition of a sub-saturating concentration of WNT3A alone or by inhibition of the β-catenin destruction complex kinase GSK3 in either WT or LGR4/5/6KO cells (Figure 4—figure supplement 1A).
 
 To distinguish between glypicans and syndecans, we took advantage of the fact that only glypicans are anchored to the cell surface by a GPI linkage. Disrupting PIGL, a gene required for GPI-anchor biosynthesis, or disrupting both GPC4 and GPC6, the two glypican genes identified in our previous haploid genetic screens (Lebensohn et al., 2016), in LGR4/5/6KO cells did not impair LGR-independent potentiation of WNT signaling by RSPO3 (Figure 4C). As we had found previously in WT HAP1-7TGP cells (Lebensohn et al., 2016), disrupting PIGL or GPC4 and GPC6 in LGR4/5/6KO cells reduced signaling by a sub-saturating dose of WNT3A (Figure 4—figure supplement 1B), indicating that glypicans are required to mediate cellular responses to low doses of WNT3A. Disrupting all four syndecans (SDC1-4) simultaneously in LGR4/5/6KO cells did not impair LGR-independent potentiation of WNT signaling by RSPO3 (Figure 4D), nor signaling induced by sub-saturating WNT3A or by inhibition of GSK3 (Figure 4—figure supplement 1C).
@@ -74,7 +200,7 @@ While LGRs are specifically expressed in some stem cell compartments (Clevers
 
 In summary, our results define two alternative modes of RSPO-mediated amplification of WNT/β-catenin signaling that differ in their use of either LGRs or HSPGs (Figure 4E). The mutant and chimeric RSPO ligands we described should allow the selective modulation of these alternate modes of signaling.
 
-## Note added in proof
+### Note added in proof
 
 We recently became aware of soon-to-be published experiments from Bruno Reversade and colleagues (E. Szenker-ravi et al., 2018) that suggest an LGR-independent role for RSPOs during mouse development.
 
@@ -82,11 +208,11 @@ We recently became aware of soon-to-be published experiments from Bruno Reversad
 
 The following Materials and methods relevant to this manuscript have been described previously (Lebensohn et al., 2016): cell lines and growth conditions, preparation of WNT3A conditioned medium (CM) and construction of the HAP1-7TGP WNT reporter haploid cell line.
 
-## Reagent providers
+### Reagent providers
 
 Reagents were obtained from the following providers: GE Dharmacon, Lafayette, CO; Addgene, Cambridge, MA; New England Biolabs (NEB), Ipswich, MA; Integrated DNA Technologies (IDT), Inc., Coralville, IA; R&D Systems, Minneapolis, MN; Selleck Chemicals (Selleckchem), Houston, TX; Gemini Bio-Products, West Sacramento, CA; BD Biosciences, San Jose, CA; GE Healthcare Life Sciences, Logan, UT; Polysciences, Inc., Warrington, PA; Thermo Fisher Scientific, Waltham, MA; Sigma-Aldrich, St. Louis, MO; Pall Corporation, Fribourg, Switzerland; Bio-Rad, Hercules, CA; Li-Cor, Lincoln, NE; BioLegend, San Diego, CA.
 
-## Plasmids
+### Plasmids
 
 pCX-Tev-Fc (unpublished) was a gift from Henry Ho (University of California Davis, Davis, CA). pHLsec-HA-Avi-1D4 (unpublished, derived from pHLSec (Aricescu et al., 2006) by incorporating a C-terminal HA tag following the signal sequence and an N-terminal Gly/Ser linker, AviTag biotinylation sequence and 1D4 tag [Molday and Molday, 2014]) was a gift from Christian Siebold (University of Oxford, Oxford, United Kingdom). RSPO1-GFP (Ruffner et al., 2012) was a gift from Feng Cong (Developmental and Molecular Pathways, Novartis Institutes for Biomedical Research, Cambridge, MA). MGC Human RSPO3 Sequence-Verified cDNA was purchased (GE Dharmacon Cat. # MHS6278-202841214). pX330-U6-Chimeric_BB-CBh-hSpCas9 (pX330) was a gift from Feng Zhang (Addgene plasmid # 42230). pX333 was a gift from Andrea Ventura (Addgene plasmid # 64073).
 
@@ -100,19 +226,19 @@ To remove the dimerizing Fc tag from RSPO3 ΔTSP/BR in order to make the protein
 
 All constructs were sequenced fully and have been deposited in Addgene.
 
-## Analysis of WNT reporter fluorescence
+### Analysis of WNT reporter fluorescence
 
 To measure WNT reporter activity in HAP1-7TGP cells (Lebensohn et al., 2016) or derivatives thereof, ~24 hr before treatment cells were seeded in 96-well plates at a density of 1.5 × 104 per well and grown in 100 μl of complete growth medium (CGM) 2 (Lebensohn et al., 2016). Cells were treated for 20–24 hr with the indicated concentrations of WNT3A CM (Lebensohn et al., 2016), untagged recombinant human R-Spondin 1, 2, 3 or 4 (R&D Systems Cat. # 4645-RS, 3266-RS, 3500-RS or 4575-RS, respectively), tagged RSPO1-4 proteins (see below) or CHIR-99021 (CT99021) (Selleckchem Cat. # S2924), all diluted in CGM 2. Cells were washed with 100 μl phosphate buffered saline (PBS), harvested in 30 μl of 0.05% trypsin-EDTA solution (Gemini Bio-Products Cat. # 400–150), resuspended in 120 μl of CGM 2 and EGFP fluorescence was measured immediately by FACS on a BD LSRFortessa cell analyzer (BD Biosciences) using a 488 laser and 505LP, 530/30 BP filters, or on a BD Accuri RUO Special Order System (BD Biosciences).
 
 For the experiments shown in Figures 1C, 2B, E, 3B, E and 4B–D and Figure 4—figure supplement 1A—C, cells were treated in duplicate or triplicate wells, fluorescence data for 5000–10,000 singlet-gated cells was collected and the median EGFP fluorescence for each well was depicted and/or used to calculate other parameters depicted, as indicated in the figure legends. For the experiments shown in Figures 1A,B, 2C, D, F, G, 3C, D, 4A and Figure 1—figure supplement 1C and D, cells were treated in single wells and fluorescence data for 5000–10,000 singlet-gated cells was collected. The median EGFP fluorescence and in some cases the standard error of the median (SEM = 1.253 σ / √n, where σ = standard deviation and n = sample size) from each well were depicted. Dose-response curves were fitted using the nonlinear regression (curve fit) analysis tool in GraphPad Prism 7 using the [agonist] vs. response – variable slope (four parameters) equation (Figure 1C, 2C, D, F, G, 3C, D and Figure 1—figure supplement 1C and D) or the [inhibitor] vs. response – variable slope (four parameters) equation (Figure 4A), both with least squares (ordinary) fit option. Results presented are representative of experiments repeated at least twice.
 
-## Construction of mutant HAP1-7TGP cell lines by CRISPR/Cas9-mediated genome editing
+### Construction of mutant HAP1-7TGP cell lines by CRISPR/Cas9-mediated genome editing
 
 Oligonucleotides encoding single guide RNAs (sgRNAs) (Supplementary file 3) were selected from one of two published libraries (Wang et al., 2015; Doench et al., 2016) or designed using the ‘Guide Picker’ tool of the DESKGEN Cloud CRISPR design software (https://www.deskgen.com/landing/cloud.html). Oligonucleotides were cloned into the single cloning site of pX330 according to a published protocol (Cong et al., 2013) (original version of ‘Target Sequence Cloning Protocol’ from http://www.genome-engineering.org/crispr/wp-content/uploads/2014/05/CRISPR-Reagent-Description-Rev20140509.pdf), or sequentially into the two cloning sites of pX333 (Maddalo et al., 2014) by digesting the plasmid at each site and ligating the oligonucleotides as described for pX330.
 
 Clonal cell lines derived from HAP1-7TGP were established by transient transfection with pX330 or pX333 containing the desired sgRNAs, followed by single-cell sorting as described previously (Lebensohn et al., 2016). Genotyping was done as described previously (Lebensohn et al., 2016) using the primers indicated in Supplementary file 3 and the results are summarized in Supplementary file 1. To generate triple, quadruple, quintuple and septuple knock-out (KO) cell lines, a single clonal cell line harboring the first desired mutation or mutations was used in subsequent rounds of transfection with pX330 or pX333 containing additional sgRNAs, followed by single-cell sorting. To facilitate screening of mutant clones by PCR when targeting multiple genes simultaneously, we sometimes targeted one of the genes at two different sites within the same exon or in adjacent exons and amplified genomic sequence encompassing both target sites. Mutant clones were readily identified by the altered size of the resulting amplicon and the precise lesions were confirmed by sequencing the single allele of each gene.
 
-## Production of tagged RSPO proteins by transient transfection of 293T cells and immuno-affinity purification from conditioned media (see Figure 1—figure supplement 1A)
+### Production of tagged RSPO proteins by transient transfection of 293T cells and immuno-affinity purification from conditioned media (see Figure 1—figure supplement 1A)
 
 ~24 hr before transfection, 14 × 106 293T cells were seeded in each of two T-175 flasks containing 30 ml of CGM 1 (Lebensohn et al., 2016) for transfection with each construct. Once they had reached 60–80% confluency, the cells in each flask were transfected with 1 ml of a transfection mix prepared as follows: 22.3 µg of pHLsec-HA-hRSPO-Tev-Fc-Avi-1D4 construct encoding tagged WT, mutant or chimeric RSPO proteins was diluted in 930 µl of serum-free DMEM (GE Healthcare Life Sicences Cat. # SH30081.01) and 70 µl of polyethylenimine (PEI, linear, MW ~25,000, Polysciences, Inc. Cat. # 23966) were added from a 1 mg/ml stock (prepared in sterile water, stored frozen and equilibrated to 37°C before use). The transfection mix was vortexed briefly, incubated for 15–20 min at room temperature (RT) and added to the cells without replacing the growth medium. ~16 hr post-transfection, the cells were washed with 30 ml PBS and the medium was replaced with 28 ml of CD 293 medium (Thermo Fisher Scientific Cat. # 11913019) supplemented with 1x L-glutamine solution (stabilized, Gemini Bio-Products Cat. # 400–106), 1x penicillin/streptomycin solution (Gemini Bio-Products Cat. # 400–109) and 2 mM valproic acid (Sigma-Aldrich Cat. # P4543, added from a 0.5 M stock prepared in water and sterilized by filtration through a 0.22 µm filter) to promote protein expression.
 
@@ -124,20 +250,20 @@ Prior to the purification, Rho 1D4 immuno-affinity resin was prepared by couplin
 
 Following the last wash, the buffer was aspirated and the resin was resuspended in 150 µl of PBS, 10% glycerol to obtain a ~50% slurry. Tagged RSPO protein was eluted by adding 3 µl of a 25 mM stock of 1D4 peptide ((NH3)-T-E-T-S-Q-V-A-P-A-(COOH)) for a final concentration of 250 µM. Elution was carried out by rotating the tube horizontally overnight at 4°C. Following centrifugation of the resin, the eluate was recovered and reserved on ice. The resin was resuspended in 150 µl of PBS, 10% glycerol and 250 µM 1D4 peptide was added. A second round of elution was carried out for 1 hr at RT. Following centrifugation of the resin, the second eluate was recovered and pooled with the first. The final eluate was centrifuged once again to remove residual resin and the supernatant containing tagged RSPO proteins was aliquoted, frozen in liquid nitrogen and stored at −80°C.
 
-## Quantification of tagged RSPO proteins (see Figure 1—figure supplement 1B)
+### Quantification of tagged RSPO proteins (see Figure 1—figure supplement 1B)
 
 4.5 µl and 13.5 µl of the final eluates containing tagged RSPO proteins were diluted with 4x LDS sample buffer (Thermo Fisher Scientific Cat. # NP0007) supplemented with 50 mM tris(2-carboxyethyl)phosphine (TCEP), heated for 10 min at 95°C and loaded onto NuPAGE 4–12% Bis-Tris gels (Thermo Fisher Scientific) alongside Precision Plus Protein molecular weight standards (Bio-Rad Cat. # 1610373) and bovine serum albumin (BSA) standards (Thermo Fisher Scientific Cat. # 23209) for quantification. Proteins were electrophoresed in 1x NuPAGE MES SDS running buffer (Thermo Fisher Scientific Cat. # NP0002).
 
 Gels were fixed in 50% methanol, 7% acetic acid for 30 min, rinsed with several changes of water for 1.5 hr, stained with GelCode Blue Stain Reagent (Thermo Fisher Scientific Cat. # 24590) for 2 hr, de-stained in water overnight and imaged using the Li-Cor Odyssey imaging system. Acquisition parameters for coomassie fluorescence (700 nm channel) were set so as to avoid saturated pixels and bands with intensities within the linear range of fluorescence for the BSA standards were quantified using manual background subtraction.
 
-## Immunoblot analysis of tagged RSPO proteins (see Figure 1—figure supplement 1B)
+### Immunoblot analysis of tagged RSPO proteins (see Figure 1—figure supplement 1B)
 
 50 ng of tagged RSPO proteins were electrophoresed as described above and transferred to nitrocellulose membranes in a Criterion Blotter apparatus (Bio-Rad Cat. # 1704071) using 1x NuPAGE transfer buffer (Thermo Fisher Scientific Cat. # NP0006) containing 10% methanol. Membranes were blocked with Odyssey Blocking Buffer (Li-Cor Cat. # 927–40000) for 1 hr at RT and incubated overnight at 4°C with purified anti-HA.11 Epitope Tag primary antibody (BioLegend Cat. # 901501; previously Covance cat. # MMS-101P) diluted 1:1500 in blocking solution (a 1 to 1 mixture of Odyssey Blocking Buffer and TBST (Tris buffered saline (TBS), 0.1% Tween-20)). Membranes were washed with TBST, incubated for 1 hr at RT with IRDye 800CW donkey anti-mouse IgG (H + L) (Li-Cor Cat. # 926–32212) diluted 1:10,000 in blocking solution, washed with TBST followed by TBS and imaged using the Li-Cor Odyssey imaging system.
 
-## Preparation of figures and statistical analysis
+### Preparation of figures and statistical analysis
 
 Illustrations were prepared using PowerPoint (Microsoft) and Illustrator CS6 (Adobe). Bar graphs, dose-response graphs and circle graphs were prepared using Prism 7 (GraphPad Software) and statistical analysis was performed using the same software. For comparisons between two datasets, significance was determined by unpaired t test; for comparisons between more than two datasets, significance was determined by one-way ANOVA. Significance is indicated as **** (p<0.0001), ** (p<0.01), * (p<0.05) or ns (not significant). Pictures of gels and immunoblots were only adjusted for contrast and brightness using Photoshop CS6 (Adobe) and were arranged in Illustrator CS6.
 
-## Data availability
+### Data availability
 
 All data generated or analyzed during this study are included in this published article (and its supplementary information files). The RNAseq dataset used in Table 1 is publicly available (NCBI GEO accession number GSE75515, https://www.ncbi.nlm.nih.gov/geo/).

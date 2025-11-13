@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Female mosquitoes need a blood meal to reproduce, and in obtaining this essential nutrient they transmit deadly pathogens. Although crucial for the spread of mosquito-borne diseases, blood feeding remains poorly understood due to technological limitations. Indeed, studies often expose human subjects to assess biting behavior. Here, we present the biteOscope, a device that attracts mosquitoes to a host mimic which they bite to obtain an artificial blood meal. The host mimic is transparent, allowing high-resolution imaging of the feeding mosquito. Using machine learning, we extract detailed behavioral statistics describing the locomotion, pose, biting, and feeding dynamics of Aedes aegypti, Aedes albopictus, Anopheles stephensi, and Anopheles coluzzii . In addition to characterizing behavioral patterns, we discover that the common insect repellent DEET repels Anopheles coluzzii upon contact with their legs. The biteOscope provides a new perspective on mosquito blood feeding, enabling the high-throughput quantitative characterization of this lethal behavior.
+Female mosquitoes need a blood meal to reproduce, and in obtaining this essential nutrient they transmit deadly pathogens. Although crucial for the spread of mosquito-borne diseases, blood feeding remains poorly understood due to technological limitations. Indeed, studies often expose human subjects to assess biting behavior. Here, we present the biteOscope, a device that attracts mosquitoes to a host mimic which they bite to obtain an artificial blood meal. The host mimic is transparent, allowing high-resolution imaging of the feeding mosquito. Using machine learning, we extract detailed behavioral statistics describing the locomotion, pose, biting, and feeding dynamics of Aedes aegypti, Aedes albopictus, Anopheles stephensi, and Anopheles coluzzii. In addition to characterizing behavioral patterns, we discover that the common insect repellent DEET repels Anopheles coluzzii upon contact with their legs. The biteOscope provides a new perspective on mosquito blood feeding, enabling the high-throughput quantitative characterization of this lethal behavior.
 
 ## Introduction
 
@@ -28,39 +28,121 @@ To overcome these limitations, we developed the biteOscope, an open platform tha
 
 ## Results
 
-## The biteOscope
+### The biteOscope
 
 To allow mosquitoes to engage in blood feeding and feed to full repletion, a device needs to attract mosquitoes, allow them to explore and pierce the surface, and subsequently imbibe a blood meal. To design a tool that can easily be used in a variety of ‘mosquito labs’ (including (semi-)field settings), we sought to recapitulate this behavioral sequence using readily available and low-cost laboratory materials. Heat is a dominant factor in short-range mosquito attraction and can be used to attract mosquitoes to a surface and elicit probing behavior (Healy et al., 2002; Corfas and Vosshall, 2015; Zermoglio et al., 2017; Greppi et al., 2020). We constructed a bite substrate using an optically clear flask filled with water as a controllable heat source (see Figure 1A). An artificial blood meal is applied on the outside of the flask and covered using Parafilm (a commonly used membrane in laboratory blood feeders) creating a thin fluid cell on which mosquitoes can feed (see Figure 1—figure supplement 1). To elicit blood feeding in a transparent medium, we use adenosine triphosphate (ATP) as a strong phagostimulant, which, together with an osmotic pressure similar to that of blood and the presence of sodium ions, is sufficient to induce Aedes mosquitoes to feed to full engorgement (Galun et al., 1963; Duvall et al., 2019). Anopheles also require sodium ions and a tonicity similar to blood to feed to full engorgement, but interestingly their feeding rate on artificial meals is independent of ATP (Galun et al., 1985).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the set up. The bite substrate consists of a water bath (cell culture flask) that is mounted in the floor or wall of a cage, allowing freely flying mosquitoes access. An artificial meal is applied on the outside surface of the culture flask and covered using a Parafilm membrane, water in the flask is temperature controlled using a Raspberry Pi reading a temperature probe, and a Peltier element for heating (0.1 accuracy). The Raspberry Pi optionally controls the inflow of gas. Illumination is provided by an array of white or IR LEDs. A camera and lens situated outside the cage images mosquitoes (abdominal view) through the bite substrate. (B) Two-dimensional histogram (heatmap) showing mosquito presence on the bite substrate (indicated with a dashed line) and on the surrounding wall. Mosquitoes spend more time on the bite surface. (C) Raw image of Ae. aegypti on the bite substrate. (D-F) Images of an Ae. aegypti mosquito that has pierced the membrane and inserted its stylet into the meal. After imbibing, the abdomen dilates. The red arrow in (F) indicates the tip of the labium where the stylets (visible as a thin needle-like structure) pierce the surface and enter the artificial meal. (G) Tracks showing movement of Ae. aegypti on the bite substrate, color of tracks indicates velocity. (H) Fold expansion of the abdomen over time, indicating full engorgement in mosquitoes 1 and 2, and no feeding in mosquito 3 of panel (G).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Assembly of the bite substrate. Step 1: The artificial meal is applied to the top surface of a flask containing degassed water (for the top surface of a 70 mL falcon tissue culture flask, a volume of approximately 1.6 mL is used). Step 2: The liquid is spread with a pipette tip to cover the entire top surface of the flask, and a rectangular section of Parafilm is stretched to approximately twice its original size (in x and y direction). Step 3: The Parafilm is stretched over the top surface of the flask to create a liquid cell and secured on the sides of the flask (by gently pressing). Step 4: A 5 mm wide ribbon of Parafilm is wrapped around the edge of the flask to provide additional support against leaking, the Peltier element (heating) is attached to the side of the flask using tape, and the temperature probe is inserted in the flask.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig1-figsupp2-v2.jpg)
+
 To allow freely behaving mosquitoes access to the bite substrate, we constructed acrylic cages having an opening in the wall or floor where the bite substrate can be mounted. The bite substrate is transparent, facilitating imaging with a camera mounted outside the cage (Figure 1A shows a schematic of the set up). For the majority of data presented here, we used a 4.3 × 4.3 cm field of view (see Figure 1C) which allows up to 15 mosquitoes to explore and feed simultaneously while providing images at a resolution where small body parts like the stylets can easily be resolved. Depending on experimental requirements, the field of view (and correspondingly assay throughput) can be much larger at the expense of resolution. Figure 1B, for example, shows a 13 × 13 cm field of view. Individual mosquitoes can be easily tracked at that resolution, yet the visualization of small body parts is challenging. Experiments on Ae. aegypti and Ae. albopictus, both active during the day, were performed using white light illumination; we used an infrared (IR) LED array as light source during experiments on An. coluzzii and An. stephensi which were performed in the dark, corresponding to their peak activity during the night. Figure 1B demonstrates that Ae. aegypti mosquitoes show strong attraction to the bite substrate (surface indicated using a dashed line) and spend more time on its surface compared to the surrounding wall. Figure 1C–F shows Ae. aegypti undertaking the full blood feeding trajectory on the substrate: starting with surface exploration (Figure 1C and G), piercing of the membrane and insertion of the stylet into the artificial meal (Figure 1D–F), and feeding to full engorgement, as evidenced by the expanded abdomen (Figure 1E). Videos 1, 2, 3 and 4 show blood feeding Ae. albopictus, Ae. aegypti, An. stephensi, and An. coluzzii, respectively. Imaging the stylet (Videos 1 and 5) as it evaluates the artificial meal reveals the striking dexterity of the organ as it rapidly bends, extends, and retracts—aspects of feeding that normally remain hidden inside the skin.
 
-## Automatic characterization of the blood-feeding behavior of multiple species
+![Video 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-video1.mp4.jpg)
 
-We created a computational pipeline to extract behavioral statistics from image sequences (see Figure 1—figure supplement 2 for an overview and Materials and methods for details). The position of individual mosquitoes is tracked over time to yield locomotion statistics (see Figure 1G and Video 6), and select all time slices that make up a single behavioral trajectory (e.g. landing, exploration, feeding, and take off). The error rate of tracking was 0.045 (5 errors in a validation data set of n=111 tracks, see Materials and methods for details) with the majority of errors arising from erroneously assigned identities when two mosquitoes cross. Validation videos (see Video 7 for an example) make it straightforward to manually correct such errors yielding near-perfect tracking. To determine a mosquito’s engorgement status, we take advantage of the dilation of the mosquito abdomen when it takes a blood meal (Figure 1E). We determine a mosquito’s body shape (excluding appendages) using an active contour model to quantify feeding dynamics and engorgement status at each timepoint of a trajectory, and detect full engorgement with a sensitivity of 81% and a specificity of 100% (see Figure 1 G1-3, Video 8, and Materials and methods for details). Together with locomotion statistics, engorgement data provides a high-level description of the behavioral trajectory.
+**Video 1.:** Upon landing, the mosquito walks/explores the substrate for a short period to pierce the surface and insert her stylets, clearly visible as a flexible needle. The video shows a fast pulling motion of the fore and hind legs towards the body which is typical during the probing phase. While engorging, the body remains nearly motionless and the abdomen dilates visibly.
+
+![Video 2.](https://cdn.elifesciences.org/articles/56829/elife-56829-video2.mp4.jpg)
+
+**Video 2.:** Engorgement is clearly visible as a dilation of the abdomen. Video playing in real time.
+
+![Video 3.](https://cdn.elifesciences.org/articles/56829/elife-56829-video3.mp4.jpg)
+
+**Video 3.:** The individual that initiates feeding in the top right corner of the frame stops engorging half way, and subsequently moves to the left side of the frame to continue engorging. Video playing in real time.
+
+![Video 4.](https://cdn.elifesciences.org/articles/56829/elife-56829-video4.mp4.jpg)
+
+**Video 4.:** Both Anopheles species quickly concentrate the obtained meal by excreting liquid (visible as a growing excretion droplet), Aedes excrete small droplets as well, yet to a much smaller extent. Video playing in real time.
+
+![Video 5.](https://cdn.elifesciences.org/articles/56829/elife-56829-video5.mp4.jpg)
+
+**Video 5.:** The stylet is a flexible organ that bends, extends, and retracts in the liquid. Video playing in real time.
+
+### Automatic characterization of the blood-feeding behavior of multiple species
+
+We created a computational pipeline to extract behavioral statistics from image sequences (see Figure 1—figure supplement 2 for an overview and Materials and methods for details). The position of individual mosquitoes is tracked over time to yield locomotion statistics (see Figure 1G and Video 6), and select all time slices that make up a single behavioral trajectory (e.g. landing, exploration, feeding, and take off). The error rate of tracking was 0.045 (5 errors in a validation data set of $n=111$ tracks, see Materials and methods for details) with the majority of errors arising from erroneously assigned identities when two mosquitoes cross. Validation videos (see Video 7 for an example) make it straightforward to manually correct such errors yielding near-perfect tracking. To determine a mosquito’s engorgement status, we take advantage of the dilation of the mosquito abdomen when it takes a blood meal (Figure 1E). We determine a mosquito’s body shape (excluding appendages) using an active contour model to quantify feeding dynamics and engorgement status at each timepoint of a trajectory, and detect full engorgement with a sensitivity of 81% and a specificity of 100% (see Figure 1 G1-3, Video 8, and Materials and methods for details). Together with locomotion statistics, engorgement data provides a high-level description of the behavioral trajectory.
+
+![Video 6.](https://cdn.elifesciences.org/articles/56829/elife-56829-video6.mp4.jpg)
+
+**Video 6.:** The color of the centroid and the trail is a measure for the instantaneous velocity of the animal.
+
+![Video 7.](https://cdn.elifesciences.org/articles/56829/elife-56829-video7.mp4.jpg)
+
+**Video 7.:** Example of a validation video for tracking data playing at 2.5 times reduced speed. Numerical IDs are assigned to mosquitoes and shown overlaid on the original data (the position of the centroid is indicated in the same color as the ID).
+
+![Video 8.](https://cdn.elifesciences.org/articles/56829/elife-56829-video8.mp4.jpg)
+
+**Video 8.:** Fitting an active contour model to the mosquito body (after computationally removing appendages) provides the abdomen width (and other shape parameters) which can be used to estimate engorgement status.
 
 To assess the capability of the biteOscope to characterize the behavior of different species of mosquito, we performed experiments with the two most important vectors of arboviral diseases (Ae. aegypti and Ae. albopictus) and two dominant malaria vectors (An. stephensi and An. coluzzii, formerly known as Anopheles gambiae M molecular form). Figure 2 and Figure 2—figure supplement 1 show locomotion and feeding statistics for the four species. All species land readily on the bite substrate and undertake exploratory bouts leading to full engorgement in 18%, 7%, 4%, and 14% of all trajectories and 46%, 22%, 10%, and 31% of all >10 second trajectories, for Ae. aegypti, Ae. albopictus, An. stephensi, and An. coluzzii, respectively, when offered a meal consisting of 1 mM ATP in phosphate buffered saline (PBS). Figure 2A–D shows summary statistics of 349 behavioral trajectories of An. coluzzii obtained from a total of 1 hr and 15 min of imaging data (five 15-min experiments with 15 females per experiment), demonstrating the throughput of the biteOscope.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig2-v2.jpg)
+
+**Figure 2.:** Each datapoint is derived from an individual trajectory, boxes indicate quartiles. (A) The time spent on the bite surface ($n=349$). (B) The total distance covered walking on the surface during a trajectory ($n=349$). (C) The mean velocity during a trajectory ($n=349$). (D) The time from landing to full engorgement (for trajectories leading to full engorgement, $n=48$). (E) The duration of a trajectory (total time for trajectories not leading to engorgement (transparent dots), time to full engorgement for trajectories that led to full engorgement (opaque circles)) versus the distance covered during that trajectory. The different colors denote different species, Ae. aegypti: magenta, Ae. albopictus: black, An. stephensi: cyan, An. coluzzii: yellow.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each datapoint is derived from an individual trajectory. (A) The time spent on the bite surface. (B) The total distance covered walking on the surface during this time. (C) The mean velocity during a trajectory. (D) The time from landing to full engorgement (for trajectories leading to full engorgement).
 
 Figure 2E shows the time spent on the surface versus the distance covered for trajectories that did (large opaque circles) and did not (small transparent dots) lead to full engorgement for the four species. As expected, rather short trajectories do not lead to engorgement, yet less intuitive is the observation that exploratory trajectories that do not lead to engorgement rarely exceed the duration of successful feeding trajectories (8% of non-feeding trajectories takes longer than the mean time to engorge). This suggests that a mosquito’s search for blood has a characteristic timescale that is independent of success, and when blood is not found within the time a typical meal takes, the search is aborted.
 
 We further explored this observation using individual Ae. albopictus which were offered a bite substrate with a meal of PBS with or without ATP. As PBS alone does not lead to engorgement, mosquitoes offered the PBS only feeder never engorged whereas mosquitoes interacting with the PBS + ATP feeder engorged to full repletion in the majority of cases (55%). High-resolution trajectory analysis enables us to dissect behavioral patterns that lead to (non-)feeding; a trajectory here is defined as landing, the ensuing behavioral sequence, followed by leaving the bite substrate by walking or flying (see Videos 9 and 10 for two example trajectories). The velocity of a mosquito’s centroid can be used to classify locomotion behaviors (stationary, walking, flight) with high accuracy (89% see Figure 3—figure supplement 1 and Materials and methods for details). Figure 3 presents ethograms of Ae. albopictus on these two bite substrates, and in agreement with the data in Figure 2E, shows that trajectories on feeders without ATP (non-feeding) have an approximately equal maximum duration as trajectories leading to full engorgement on the feeder with ATP. While mosquitoes do not increase the duration of exploratory trajectories when not feeding to repletion, the number of exploratory bouts mosquitoes undertook on the PBS only substrate was significantly higher compared to the PBS + ATP case (Wilcoxon rank-sum test p < 0.05), resulting in a slightly longer total exploration time (Figure 3C). This suggests that mosquitoes not finding their desired resource increase the frequency with which they initiate searches rather than the duration of individual searches. This observation may be interpreted in the context of the dangers associated with blood-feeding: while on a host, a mosquito runs the risk of being noticed and subsequently killed. When not finding blood, it may therefore be beneficial to abort the search and evacuate from a risky, yet unproductive situation to try elsewhere. The trade-off between exploiting a potential resource versus exploring other options has been shown to depend on the internal state of individuals in other insects (Katz and Naug, 2015; Corrales-Carvajal et al., 2016), it is possible that such mechanisms play a role here too. Figure 3 furthermore shows a strong behavioral heterogeneity between individual mosquitoes. While all individuals are from the same mosquito population (and raised and maintained under identical conditions) and interact with the same bite substrate, there is a clear heterogeneity in the number of times a mosquito visits the surface (Figure 3C, middle panel), the amount of time she spends exploring the surface (Figure 3C, left panel), and the behaviors they engage in. Automatic classification of locomotion behaviors, shows that some individuals often land on the surface to engage in short interactions, while other individuals undertake much longer trajectories. These long trajectories, in turn, vary in the amount of stationary versus locomotion behaviors. The richness of these data highlight the potential of the biteOscope to quantitatively characterize the intricacy of individual behaviors hidden in population averages.
 
-## Pose estimation, behavioral classification, and contact-dependent sensing
+![Figure 3.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Ethograms of individual Ae. albopictus interacting with a bite substrate offering a PBS only meal, $n=10$ (A), and a meal consisting of PBS + 1 mM ATP, $n=9$ (B). Distinct exploratory bouts appear as continuous blocks in the ethogram and are labeled according to the behavior being displayed: flight (yellow), walking (purple), and stationary (dark blue), the time of engorgement to full repletion is marked by a black box and a white asterix. (C) Behavioral statistics of the data displayed in A and B showing the total time spent on the bite substrate (left, no significant difference $p=0.39$, Wilcoxon rank-sum test), the number of exploratory bouts undertaken (middle, significantly different $p=0.020$, Wilcoxon rank-sum test), and the length of individual bouts (right, significantly different $p=9\times10^{-4}$, Wilcoxon rank-sum test), of Ae. albopictus exploring the PBS only substrate (labeled 0) and those that engorged to full repletion on the PBS + ATP substrate (labeled 1). Individual data points are shown in purple, the mean and associated 95% confidence interval are depicted by a black dot and bar, respectively. Individuals that were offered the PBS + ATP substrate but did not feed to full repletion were excluded from this analysis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The accuracy of automatic classification of locomotion behaviors (stationary, walking, flight) presented in Figure 3A,B is 89% and exceeds 80% for a range of parameter values. (A) Threshold used to distinguish stationary from walking. (B) Threshold used to distinguish walking from flight.
+
+![Video 9.](https://cdn.elifesciences.org/articles/56829/elife-56829-video9.mp4.jpg)
+
+**Video 9.:** Video playing in real time.
+
+![Video 10.](https://cdn.elifesciences.org/articles/56829/elife-56829-video10.mp4.jpg)
+
+**Video 10.:** While walking, the proboscis often moves laterally and taps the surface. Video playing in real time.
+
+### Pose estimation, behavioral classification, and contact-dependent sensing
 
 We next turned to body part tracking to acquire a more detailed description of behavioral trajectories. Body part tracking is powerful to address a variety of questions, for example by determining points of surface contact of specific appendages, or to estimate the pose of an animal, which when tracked over time can be translated into a behavioral sequence. We used a recently developed deep learning framework, DeepLabCut (Mathis et al., 2018), to train a convolutional neural network (CNN) to detect the head, proboscis, abdomen, abdominal tip, and six legs of Ae. aegypti and Ae. albopictus. Due to their morphological similarity, the same CNN can be used to track the body parts of both Aedes species with a mean accuracy of 11 pixels (275 micrometer, see Materials and methods for details) in a 4.3 × 4.3 cm field of view. Tracking stylet insertions into the artificial meal during probing and feeding using DeepLabCut was challenging, and therefore not included.
 
 Figure 4A–C shows body part tracking results of Ae. albopictus and reveals the choreography of three distinct behaviors. Anterior grooming is characterized by circular motion of the forelegs followed by the proboscis, while the middle legs remain stationary (see Figure 4—video 1). During walking, the tips of all six legs oscillate along the body axis while the proboscis explores laterally (see Figure 4—video 2), while during probing, the fore and middle legs pull toward the body and the proboscis remains stationary (see Figure 4—video 3). Inference is done on raw images and the obtained coordinates thus subject to movement of the mosquito. To correct for this, the coordinates are translated and rotated to align along the body axis taking the abdominal tip as the origin. Figure 4D–I shows time series of the obtained egocentric coordinates and their corresponding wavelet transforms. The three behaviors each are associated with distinct periodic movements: smooth periodic motion of the forelegs during anterior grooming (x, and y coordinates), punctuated oscillations along the body axis during walking (x coordinate), and faster jerky movement during probing (x, and y coordinate of forelegs, y coordinate of middle legs). These trajectories can be used in concert with locomotion and body-shape features as inputs for behavioral classification algorithms. The data outputted by our computational pipeline is ideally suited for classification in either a supervised (e.g. Kain et al., 2013; Kabra et al., 2013) or unsupervised (e.g. Berman et al., 2014; Marques et al., 2018; Calhoun et al., 2019; Tao et al., 2019) approaches (see Figure 4—figure supplement 1).
 
-## DEET repels An. coluzzii upon contact with legs
+![Figure 4.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig4-v2.jpg)
+
+**Figure 4.:** Color coding of plots in panels A-F are displayed at the bottom of the figure. (A–C) Trajectories of the tips of the six legs and proboscis of an Ae. albopictus female grooming her antennae (A), walking (B), and probing (C). (D–F) Time traces showing egocentric x (full lines) and y (dashed lines) coordinates of the body parts of mosquitoes shown in A-C. Anterior grooming is characterized by smooth periodic movement in the x and y planes. During walking the x-coordinate shows a swing that alternates between fore, middle, and hind leg; probing shows rapid pulling of the fore and middle legs towards the body. (G–I) Continuous wavelet transforms of the body part coordinates highlight the periodicity of movements. The amplitude of the spectrogram is indicated by the color, going from low (purple) to high (yellow). Yellow bands indicate periodic movement of a body part. Spectrograms of the seven body parts are stacked and separated by white lines (color coding on the right shows stacking order, with the x-coordinate of the body part on top, and y-coordinate on the bottom (x, and y coordinates are separated by a dashed line)).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Two-dimensional embedding of the body part coordinates and their wavelet transforms (data from Figure 4) using t-SNE. Data points are color coded according to the behavior displayed (manually labelled) and show three distinct clusters for grooming, walking, and probing. The clustering of the data points demonstrates the richness of the data obtained from body part tracking and indicates that clustering body part coordinates and derived features may be a feasible method to classify behaviors. Robust unsupervised classification using such methods requires a larger dataset than the one presented here.
+
+#### DEET repels An. coluzzii upon contact with legs
 
 Next, we explored the use of body part tracking within the context of contact-dependent sensing by An. coluzzii. Anopheles and Aedes mosquitoes have an overall similar body plan, yet the length of their maxillary palps (an olfactory appendage projecting from the head) is very different with anophelines having maxillary palps with a length comparable to the proboscis, while Aedes palps are much shorter. We therefore trained a CNN for Anopheles body parts, which additionally tracks the position of the maxillary palps (mean accuracy for Anopheles body parts: six pixels, 150 micrometer). Through this approach, we addressed the open question if An. coluzzii is repelled by N,N-diethyl-meta-toluamide (DEET) upon contact. DEET has been in use as an effective insect repellent for decades and is thought to act on mosquitoes through several mechanisms that are either olfactory- or contact-based (DeGennaro, 2015). Afify et al., 2019 recently observed that volatile DEET does not activate olfactory neurons in An. coluzzii and reported that An. coluzzii does not avoid DEET by smelling it (Afify et al., 2019; Afify and Potter, 2020). Afify et al., 2019 proposed that DEET may prevent An. coluzzii from locating humans by masking odorants emanating from potential hosts. However, it remained an open question if An. coluzzii is repelled by DEET upon direct contact.
 
-We addressed this question by imaging An. coluzzii offered a bite substrate partly coated with DEET. Figure 5 shows that An. coluzzii do land on both the DEET-coated and uncoated surface, and there is a moderate decrease in landing rate on the DEET-coated portion (the landing rate is 1.9 times lower, normalized for surface area). The time An. coluzzii spend on the DEET-coated surface, however, is much shorter: trajectories on the DEET-coated surface (n=34) are on average seven times shorter when compared to the uncoated surface (n=412). Furthermore, the longest residence time observed on the DEET-coated surface was less than 6 s, whereas individual An. coluzzii spent up to 52 s on the uncoated surface. From these data, we conclude that An. coluzzii do approach and land on the DEET-coated surface, but avoid (prolonged) contact with it, indicating that An. coluzzii indeed is not strongly repelled by volatile DEET at very close range, yet avoids it on contact.
+We addressed this question by imaging An. coluzzii offered a bite substrate partly coated with DEET. Figure 5 shows that An. coluzzii do land on both the DEET-coated and uncoated surface, and there is a moderate decrease in landing rate on the DEET-coated portion (the landing rate is 1.9 times lower, normalized for surface area). The time An. coluzzii spend on the DEET-coated surface, however, is much shorter: trajectories on the DEET-coated surface ($n=34$) are on average seven times shorter when compared to the uncoated surface ($n=412$). Furthermore, the longest residence time observed on the DEET-coated surface was less than 6 s, whereas individual An. coluzzii spent up to 52 s on the uncoated surface. From these data, we conclude that An. coluzzii do approach and land on the DEET-coated surface, but avoid (prolonged) contact with it, indicating that An. coluzzii indeed is not strongly repelled by volatile DEET at very close range, yet avoids it on contact.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56829/elife-56829-fig5-v2.jpg)
 
-**Figure 5.:** An. coluzzii on contact with legs.(A) Landings on a substrate partly coated with 50% DEET (white line indicates DEET-coated surface). Black dots indicate landings outside the DEET area, red dots indicate landings inside the DEET area. The landing rate in the DEET area is approximately 1.9 times lower compared to the non-treated surface. (B) Trajectories of mosquito movement on the surface. Dots of individual tracks are colored from purple (start of the track) to yellow (end of the track). An. coluzzii on average spend seven times longer on the non-coated surface compared to the DEET-coated surface. (C) Example tracks of mosquitoes landing on the non-treated area and subsequently entering the DEET-coated area. (D) Body part tracking of a mosquito near the edge of the DEET-coated surface. The grey line indicates the movement of the center of mass of the mosquito (a dot indicates the start of the track, arrowhead departure). Colored dots indicate the position of the legs and proboscis during the section of the trajectory where the mosquito is within reach of the DEET-coated area (indicated by the white line). (E) Ethogram showing typical behavioral patterns when a mosquito comes in contact with DEET. The grey bar (top) indicates that a mosquito is anywhere on the surface (including the uncoated area), the colored bars indicate contact of a specific appendage with DEET. The top panel corresponds to the mosquito shown in (D) illustrating a mosquito that walks toward the DEET area, contacts it with several legs, and flies away. The middle panel is an example of ‘touch and go’ contact in which a mosquito lands on the DEET area, contacts it with several legs and proboscis, and takes off. The bottom panel shows a mosquito that after a long exploratory bout outside the DEET area, takes off as soon as the right foreleg and both middle legs contact the DEET area.
+**Figure 5.:** (A) Landings on a substrate partly coated with 50% DEET (white line indicates DEET-coated surface). Black dots indicate landings outside the DEET area, red dots indicate landings inside the DEET area. The landing rate in the DEET area is approximately 1.9 times lower compared to the non-treated surface. (B) Trajectories of mosquito movement on the surface. Dots of individual tracks are colored from purple (start of the track) to yellow (end of the track). An. coluzzii on average spend seven times longer on the non-coated surface compared to the DEET-coated surface. (C) Example tracks of mosquitoes landing on the non-treated area and subsequently entering the DEET-coated area. (D) Body part tracking of a mosquito near the edge of the DEET-coated surface. The grey line indicates the movement of the center of mass of the mosquito (a dot indicates the start of the track, arrowhead departure). Colored dots indicate the position of the legs and proboscis during the section of the trajectory where the mosquito is within reach of the DEET-coated area (indicated by the white line). (E) Ethogram showing typical behavioral patterns when a mosquito comes in contact with DEET. The grey bar (top) indicates that a mosquito is anywhere on the surface (including the uncoated area), the colored bars indicate contact of a specific appendage with DEET. The top panel corresponds to the mosquito shown in (D) illustrating a mosquito that walks toward the DEET area, contacts it with several legs, and flies away. The middle panel is an example of ‘touch and go’ contact in which a mosquito lands on the DEET area, contacts it with several legs and proboscis, and takes off. The bottom panel shows a mosquito that after a long exploratory bout outside the DEET area, takes off as soon as the right foreleg and both middle legs contact the DEET area.
 
 We next asked what appendages mediate this contact dependent avoidance. The 34 trajectories in which An. coluzzii visited the DEET area consisted of 25 ‘touch and go’ events in which an individual approached the DEET surface in flight, landed, and immediately took off after first contact (residence time on DEET surface <0.5 second, see Video 11 for a typical ‘touch and go’ event played at 1/4 speed). In the remaining nine trajectories, An. coluzzii landed outside the DEET area and moved onto it (see Figure 5 and Video 12), the reverse scenario in which a mosquito would land on the DEET surface and move onto the non-coated surface was never observed. We performed body part tracking on the trajectories where An. coluzzii moved from the non-coated surface to the DEET-coated surface and developed analysis software that scores how often a specific body part visits an arbitrarily shaped region of interest. We observed that the legs of individuals came in contact with the DEET surface in all cases, whereas the proboscis only came in contact with the DEET surface in 5/9 cases (in cases where no proboscis contact was observed, the entire proboscis remained outside the boarders of the DEET-treated area). Together, these observations demonstrate that An. coluzzii are indeed repelled upon contact with DEET, and indicate that this behavior is mediated by sensilla on the legs, and likely not the proboscis. While contact-dependent sensing (e.g. by tarsal neurons) seems the most plausible mechanism to explain this contact-dependent avoidance, we cannot rule out that physical properties of the DEET coating play a role as well.
+
+![Video 11.](https://cdn.elifesciences.org/articles/56829/elife-56829-video11.mp4.jpg)
+
+**Video 11.:** Video playing four times slower than real time. The majority of trajectories in which An. coluzzii comes into contact with the DEET-coated surface results in an immediate take off.
+
+![Video 12.](https://cdn.elifesciences.org/articles/56829/elife-56829-video12.mp4.jpg)
+
+**Video 12.:** Body part tracking shows that this female lands outside the DEET-coated area and subsequently her left fore and middle leg come into contact with the DEET-coated portion. After a short contact, the mosquito flies away.
 
 ## Discussion
 
@@ -80,50 +162,165 @@ The biteOscope is designed with a variety of possible users in mind. It has a re
 
 ## Materials and methods
 
-## Mosquito rearing and maintenance
+**Key resources table**
 
-The mosquito species/strains used in this study are described in Key resources table. Larvae were hatched and reared in water at a density of approximately 200 larvae per liter on a diet of fish food. Adult mosquitoes were maintained at 28⁢°C, 75% relative humidity, and a photoperiod of 12 hr light : 12 hr dark in 30 × 30 × 30 cm screened cages having continuous access to 10% sucrose. Prior to experiments, mosquitoes were deprived of sucrose for 6–12 hr while having access to water. Mosquitoes aged 6–25 days old were used for behavioral experiments. Experiments using Ae. aegypti and Ae. albopictus were performed during light hours, while experiments with An. stephensi and An. coluzzii were performed during dark hours. Mosquitoes had no access to water during experiments.
 
-## biteOscope hardware
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Ae. aegypti )</td>
+      <td>KPPTN</td>
+      <td>Lambrechts lab, Institut Pasteur</td>
+      <td></td>
+      <td>Thailand, G18</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Ae. aegypti)</td>
+      <td>D2S3</td>
+      <td>BEI resources</td>
+      <td></td>
+      <td>Puerto Rico x Nigeria cross</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Ae. aegypti)</td>
+      <td>Liverpool</td>
+      <td>Vosshall lab, Rockefeller University</td>
+      <td></td>
+      <td>West Africa</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Ae. albopictus)</td>
+      <td>BP</td>
+      <td>Lambrechts lab, Institut Pasteur</td>
+      <td></td>
+      <td>Vietnam, G23</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(An. stephensi)</td>
+      <td>Sda500</td>
+      <td>CEPIA, Institut Pasteur, Paris</td>
+      <td></td>
+      <td>Pakistan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(An. coluzzii)</td>
+      <td>N’Gousso</td>
+      <td>CEPIA, Institut Pasteur, Paris</td>
+      <td></td>
+      <td>Cameroon</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biteOscope code</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Hol, 2020 github.com/felixhol/biteOscope (copy archived at https://github.com/elifesciences-publications/biteOscope).</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>Mathis et al., 2018</td>
+      <td></td>
+      <td>version 2.0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mosquito rearing and maintenance
+
+The mosquito species/strains used in this study are described in Key resources table. Larvae were hatched and reared in water at a density of approximately 200 larvae per liter on a diet of fish food. Adult mosquitoes were maintained at $28⁢°C$, 75% relative humidity, and a photoperiod of 12 hr light : 12 hr dark in 30 × 30 × 30 cm screened cages having continuous access to 10% sucrose. Prior to experiments, mosquitoes were deprived of sucrose for 6–12 hr while having access to water. Mosquitoes aged 6–25 days old were used for behavioral experiments. Experiments using Ae. aegypti and Ae. albopictus were performed during light hours, while experiments with An. stephensi and An. coluzzii were performed during dark hours. Mosquitoes had no access to water during experiments.
+
+### biteOscope hardware
 
 A full list of components necessary to build the biteOscope is available in Appendix 1—table 1. Depending on the experimental requirements, several components can be easily adapted (e.g. cage geometry or bite substrate) or replaced by more economical alternatives (e.g. imaging components).
 
-## Cage, bite substrate, and environmental control
+#### Cage, bite substrate, and environmental control
 
 Cages were constructed from 1.59 mm (1/16 inch) thick clear cast acrylic sheets (McMaster Carr) cut to the required dimensions using a laser cutter (Epilog). To facilitate mounting of the bite substrate, an opening having the same dimensions as the bite substrate was cut in the floor or one of the walls of the cage (all design files are available on Github). We noted that orientation of the bite substrate affects both the landing rate of mosquitoes (e.g. Ae. albopictus had a lower landing rate on vertically mounted substrates compared to those mounted in the floor) and their orientation (on vertical surfaces mosquitoes aligned with gravity, head up bottom down). While this suggests that orientation is an interesting parameter to explore, all experiments presented here were performed with floor-mounted substrates to prevent behavioral biases possibly associated with vertically mounted substrates. The bite substrate was made using a 70-mL culture flask (Falcon 353109) filled with warm water maintained at 37 by a Raspberry Pi taking the input of a waterproof temperature probe (DS18b20, Adafruit) to control a Peltier element (digikey) used for heating. If desired, the same Raspberry Pi can operate a 12 Volt solenoid valve (Adafruit) to control the inflow of gas. An artificial meal of phosphate buffered saline (sigma-aldrich) (supplemented with 1 mM of adenosine triphosphate (sigma aldrich) where noted) was applied to the rectangular section of the outside of the culture flask and covered with a Parafilm membrane. This creates a fluid cell supported by the membrane and the outside of the culture flask. The artificial meal is maintained at 37 by the water inside the flask. We performed additional experiments using 1 mM ATP in 110 mM NaCl and 20 mM NaHCO3 as the artificial meal and observed robust feeding of Aedes and Anopheles mosquitoes on this formulation as well.
 
-## Imaging and illumination
+#### Imaging and illumination
 
 Images were acquired at 25 or 40 frames per second using a Basler acA2040-90um camera controlled using Pylon 5 software running on an Ubuntu 18.04 computer (NUC8i7BEH). The camera was equipped with a 100 mm macro lens (Canon macro EF 100 mm f/2.8L). Illumination for Aedes experiments was provided by two white light LED arrays (Vidpro LED-312), while IR LEDs (Taobao) were used for Anopheles experiments. The same camera was used for white light and IR illuminated experiments. Thorlabs components were used to arrange all optical components and the experimental cage at suitable distance.
 
-## Computational tools
+### Computational tools
 
 All image processing and downstream analysis code was written in Python 3 and is available from Github (https://github.com/felixhol). Raw images were background subtracted, thresholded, and subjected to a series of morphological operations to yield binary images representing mosquito bodies of which the center of mass was determined using SciPy (Virtanen et al., 2019). The Crocker–Grier algorithm (Crocker and Grier, 1996) was used to link the obtained coordinates belonging to an individual mosquito in time using trackPy (Allan et al., 2016). The obtained tracking data is used to select all images that make up a single behavioral trajectory (e.g. landing, exploration, feeding, and take off) and store cropped image sequences centered on the focal mosquito. In addition to the computationally extracted data described below, such image sequences can also be used for the manual annotation of other events (e.g. stylet insertion as done in Jove et al., 2020).
 
 We verified the tracking results of 111 individual trajectories across 12293 images resulting in an error rate of 0.045 (5/111). The validation dataset includes data from both Aedes and Anopheles experiments and consists of images having a variety of densities ranging from 0.05 to 0.4 mosquitoes per cm2. The most common error (4/5) is caused by wrongly assigning the identity of two mosquitoes that cross (e.g. an individual moving over another one and thus overlapping in the image). Interestingly, the validation videos (e.g. Video 7) make it straightforward to correct such errors by manually re-assigning the correct identity to the track. A rather minor amount of manual interventions therefore results in nearly perfect tracking.
 
-## Classifying locomotion behaviors
+#### Classifying locomotion behaviors
 
-Locomotion behaviors (as presented in Figure 3A and B) can be automatically assigned based on the velocity of the centroid of a mosquito. To estimate the accuracy of this procedure, we manually labeled the behavior Ae. albopictus mosquitoes exhibited in 1124 frames of the dataset presented in Figure 3 and compared the labeled behaviors to the computationally detected behaviors. The overall accuracy of behavioral classification was 89%, with a per class accuracy of 90% (stationary), 89% (walking), and 97% (flight), with accuracy defined as: TP+TNO, with TP denoting true positives, TN true negatives, and O the number of observations. The classification of locomotion behaviors depends on the velocity thresholds set to distinguish flight, walking, and stationary behaviors. Figure 3—figure supplement 1 shows that classification accuracy peaks at 89% accurate classifications using a stationary – walking threshold of 2 mm/s and a walking – flight threshold of 12 mm/s, and exceeds 80% for a range of parameters.
+Locomotion behaviors (as presented in Figure 3A and B) can be automatically assigned based on the velocity of the centroid of a mosquito. To estimate the accuracy of this procedure, we manually labeled the behavior Ae. albopictus mosquitoes exhibited in 1124 frames of the dataset presented in Figure 3 and compared the labeled behaviors to the computationally detected behaviors. The overall accuracy of behavioral classification was 89%, with a per class accuracy of 90% (stationary), 89% (walking), and 97% (flight), with accuracy defined as: $\frac{TP+TN}{O}$, with TP denoting true positives, TN true negatives, and O the number of observations. The classification of locomotion behaviors depends on the velocity thresholds set to distinguish flight, walking, and stationary behaviors. Figure 3—figure supplement 1 shows that classification accuracy peaks at 89% accurate classifications using a stationary – walking threshold of 2 mm/s and a walking – flight threshold of 12 mm/s, and exceeds 80% for a range of parameters.
 
-## Detecting engorgement
+#### Detecting engorgement
 
 Images cropped on the focal mosquito (above) are used to determine a mosquito’s body shape at each timepoint to infer engorgement status by computationally removing all appendages and fitting an active contour model (using OpenCV [Bradski, 2000]) to the remaining body shape. For a mosquito to be computationally defined as engorged, two empirically determined conditions need to be met:
 
-We estimated the performance of the engorgement detection algorithm by validating all data presented in Figure 2 and Figure 2—figure supplement 1 and observed an overall sensitivity of engorgement detection T⁢PP=0.81 (n=130), with a sensitivity of 0.97 (n=29) and 0.76 (n=101) for Aedes and Anopheles mosquitoes, respectively. The overall specificity was T⁢NN=1.0 (n=1184). The difference in sensitivity for detecting engorgement in Aedes versus Anopheles may have two reasons: (1) Anopheles excrete excess liquid during feeding to a much larger extent than Aedes mosquitoes, resulting in a less pronounced dilation of the abdomen and (2) some Anopheles experiments had a higher density of mosquitoes on the bite substrate leading to mosquitoes touching more often resulting in less accurate fitting of the body shape.
+We estimated the performance of the engorgement detection algorithm by validating all data presented in Figure 2 and Figure 2—figure supplement 1 and observed an overall sensitivity of engorgement detection $\frac{T⁢P}{P}=0.81$ ($n=130$), with a sensitivity of 0.97 ($n=29$) and 0.76 ($n=101$) for Aedes and Anopheles mosquitoes, respectively. The overall specificity was $\frac{T⁢N}{N}=1.0$ ($n=1184$). The difference in sensitivity for detecting engorgement in Aedes versus Anopheles may have two reasons: (1) Anopheles excrete excess liquid during feeding to a much larger extent than Aedes mosquitoes, resulting in a less pronounced dilation of the abdomen and (2) some Anopheles experiments had a higher density of mosquitoes on the bite substrate leading to mosquitoes touching more often resulting in less accurate fitting of the body shape.
 
-## Body part tracking
+#### Body part tracking
 
 The DeepLabCut framework (Mathis et al., 2018) was used to train a convolutional neural network (ResNet architecture) to detect the most distal part of the six legs, the abdominal tip, the center of the abdomen, the head, the tip of the proboscis, and for anophelines the tip of the maxillary palps. Due to their similar appearance, Ae. aegypti and Ae. albopictus can be analyzed using the same network, while a second network was trained for An. stephensi and An. coluzzii. Approximately 350 images were used to train the Aedes dataset, while approximately 300 images were used for the Anopheles dataset. To ensure robustness of training, the Aedes and Anopheles models were trained on 4 and 2 shuffles of the training set, respectively. Averaged across shuffles training yielded an accuracy, defined as the mean average Euclidean error between the manual labels and predicted labels, of 11 pixels (275 µm) and six pixels (150 µm) in a 4.3 × 4.3 cm field of view, for Aedes and Anopheles, respectively. In addition to the mean performance across all body parts, prediction accuracies per groups of body parts (core: head, proboscis, abdomen, abdominal tip, (and palps for Anopheles); and legs: tips of all six legs) was 1.7 pixels (43 μm) for core body parts, and 1.6 (40 μm) for the tips of legs for the best performing Aedes model; and 5.2 pixels (130 μm) and 3.7 pixels (93 μm) for core and legs for the best performing Anopheles model. Trained models are available on GitHub.
 
 We used cropped image sequences (described above) for inference. To facilitate downstream analysis of body part tracking data, body part coordinates can be aligned along the body axis (defined along the abdominal tip and center of the abdomen) yielding coordinates invariant of body orientation or movement. The wavelet transforms shown in Figure 4 are obtained by applying the Morlet continues wavelet transform to this data. Two-dimensional embedding of the aligned body part coordinates and their wavelet transform (Figure 4—figure supplement 1) was done by scaling the data (subtracting the mean and scaling to unit variance) and using t-distributed stochastic neighborhood embedding (tSNE) in two dimensions (Maaten and Hinton, 2008).
 
-## Experiment-specific procedures
+### Experiment-specific procedures
 
-## Feeding experiments
+#### Feeding experiments
 
 Population experiments (Figure 1 and Figure 2) were performed with 15–30 individuals in a 10 × 10 × 10 cm cage. Groups of mosquitoes were recorded for up to 1 hr and replaced by a new group for a subsequent recording (mosquitoes were not re-used and discarded after experiments). We noticed that activity is typically highest in the first 15–30 min of an experiment, depending on the question being addressed multiple short experiments may therefore yield more data compared to a single long experiment. Individual Ae. albopictus females (Figure 3) were recorded for 10 min per mosquito and discarded after the experiment. Movement status (Figure 3A and B) was classified using the velocity derived from tracking.
 
-## DEET experiments
+#### DEET experiments
 
 As DEET dissolves Parafilm and plastics, a glass surface was placed on top of the heated culture flask (no artificial meal was present during DEET experiments). The glass surface was partly coated with 50% N,N-diethyl-meta-toluamide (DEET) using a cotton swab. Groups of 20 An. coluzzii females (14 days old) were released into a 10 × 10 × 10 cm cage with the DEET-coated substrate mounted in the floor. Images were acquired at 40 frames per second for 1 hr. Mosquito and body part tracking was performed as described above. The landing rate was calculated by summing the number of trajectories that started on the surface in question (DEET coated versus non-coated) and normalizing this value by the area of the surface. The dwell time was calculated as the average duration of all trajectories on the surface in question. The duration of trajectories moving from the non-coated surface to the DEET-coated surface was split proportionally to the time spend on the respective surface, trajectories moving from the DEET-coated surface to the non-coated surface were not observed indicating that the dwell time on the DEET surface was not limited by the size of the surface.

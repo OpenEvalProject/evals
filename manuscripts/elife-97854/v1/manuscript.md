@@ -20,19 +20,19 @@
 
 ### Affiliations
 
-1. https://ror.org/02xe5ns62 Department of Physiology, School of Medicine, Jinan University Guangzhou China
-2. https://ror.org/00zat6v61 Department of Pathology, School of Basic Medicine, Guangzhou Medical University Guangdong China
-3. https://ror.org/04tm3k558 Biotherapy Center, Cell-gene Therapy Translational Medicine Research Center, The Third Affiliated Hospital of Sun Yat-Sen University Guangzhou China
-4. https://ror.org/02d5ks197 School of Medicine, The Chinese University of Hong Kong Shenzhen China
-5. https://ror.org/05d5vvz89 Endoscopy Center, The First Affiliated Hospital of Jinan University Guangzhou China
-6. https://ror.org/02xe5ns62 Department of Pharmacology, School of Medicine, Jinan University Guangzhou China
-7. https://ror.org/02xe5ns62 Key Laboratory of Viral Pathogenesis & Infection Prevention and Control (Jinan University), Ministry of Education Guangzhou China
+1. Department of Physiology, School of Medicine, Jinan University Guangzhou China ([ROR:02xe5ns62](https://ror.org/02xe5ns62))
+2. Department of Pathology, School of Basic Medicine, Guangzhou Medical University Guangdong China ([ROR:00zat6v61](https://ror.org/00zat6v61))
+3. Biotherapy Center, Cell-gene Therapy Translational Medicine Research Center, The Third Affiliated Hospital of Sun Yat-Sen University Guangzhou China ([ROR:04tm3k558](https://ror.org/04tm3k558))
+4. School of Medicine, The Chinese University of Hong Kong Shenzhen China ([ROR:02d5ks197](https://ror.org/02d5ks197))
+5. Endoscopy Center, The First Affiliated Hospital of Jinan University Guangzhou China ([ROR:05d5vvz89](https://ror.org/05d5vvz89))
+6. Department of Pharmacology, School of Medicine, Jinan University Guangzhou China ([ROR:02xe5ns62](https://ror.org/02xe5ns62))
+7. Key Laboratory of Viral Pathogenesis & Infection Prevention and Control (Jinan University), Ministry of Education Guangzhou China ([ROR:02xe5ns62](https://ror.org/02xe5ns62))
 
 † Corresponding author
 
 ## Abstract
 
-Glucagon-like peptide 1 (GLP-1) is a gut-derived hormone secreted by intestinal L cells and vital for postprandial glycemic control. As open-type enteroendocrine cells, whether L cells can sense mechanical stimuli caused by chyme and thus regulate GLP-1 synthesis and secretion is unexplored. Molecular biology techniques revealed the expression of Piezo1 in intestinal L cells. Its level varied in different energy status and correlates with blood glucose and GLP-1 levels. Mice with L cell-specific loss of Piezo1 ( Piezo1 IntL-CKO) exhibited impaired glucose tolerance, increased body weight, reduced GLP-1 production and decreased CaMKKβ/CaMKIV-mTORC1 signaling pathway under normal chow diet or high-fat diet. Activation of the intestinal Piezo1 by its agonist Yoda1 or intestinal bead implantation increased the synthesis and secretion of GLP-1, thus alleviated glucose intolerance in diet-induced-diabetic mice. Overexpression of Piezo1, Yoda1 treatment or stretching stimulated GLP-1 production and CaMKKβ/CaMKIV-mTORC1 signaling pathway, which could be abolished by knockdown or blockage of Piezo1 in primary cultured mouse L cells and STC-1 cells. These experimental results suggest a previously unknown regulatory mechanism for GLP-1 production in L cells, which could offer new insights into diabetes treatments.
+Glucagon-like peptide 1 (GLP-1) is a gut-derived hormone secreted by intestinal L cells and vital for postprandial glycemic control. As open-type enteroendocrine cells, whether L cells can sense mechanical stimuli caused by chyme and thus regulate GLP-1 synthesis and secretion is unexplored. Molecular biology techniques revealed the expression of Piezo1 in intestinal L cells. Its level varied in different energy status and correlates with blood glucose and GLP-1 levels. Mice with L cell-specific loss of Piezo1 (Piezo1 IntL-CKO) exhibited impaired glucose tolerance, increased body weight, reduced GLP-1 production and decreased CaMKKβ/CaMKIV-mTORC1 signaling pathway under normal chow diet or high-fat diet. Activation of the intestinal Piezo1 by its agonist Yoda1 or intestinal bead implantation increased the synthesis and secretion of GLP-1, thus alleviated glucose intolerance in diet-induced-diabetic mice. Overexpression of Piezo1, Yoda1 treatment or stretching stimulated GLP-1 production and CaMKKβ/CaMKIV-mTORC1 signaling pathway, which could be abolished by knockdown or blockage of Piezo1 in primary cultured mouse L cells and STC-1 cells. These experimental results suggest a previously unknown regulatory mechanism for GLP-1 production in L cells, which could offer new insights into diabetes treatments.
 
 ## Introduction
 
@@ -46,49 +46,101 @@ The current study has shown that Piezo1 channels on intestinal L cells mediate m
 
 ## Results
 
-## Assessment of Piezo1 in human and mouse intestine in different energy status
+### Assessment of Piezo1 in human and mouse intestine in different energy status
 
 Piezo1 mRNA was found to be highly expressed in both mouse ileal mucosa and STC-1 cells (Figure 1—figure supplement 1A). Moreover, Piezo1 was co-localized with GLP-1 in immunofluorescent staining on NCD fed mouse ileal sections, indicating its expression in L cells (Figure 1—figure supplement 1B). Interestingly, increased body weight and impaired glucose tolerance were observed in high-fat diet-induced diabetic mice, while Piezo1 and Proglucagon expression levels in the ileal mucosa of diabetic mice were significantly lower than that in mice feed with normal chow diet (Figure 1—figure supplement 1C–F). Moreover, ileal mucosal Piezo1 mRNA levels were positively correlated with Gcg mRNA levels (Figure 1—figure supplement 1G), but negatively correlated with the AUC of glucose tolerance test (Figure 1—figure supplement 1H). Obese T2DM patients who underwent Roux-en-Y gastric bypass (RYGB) surgery showed decreased BMI (Figure 1—figure supplement 1I) and increased Piezo1 and GLP-1 in ileal mucosa (Figure 1—figure supplement 1J, K) compared to that before surgery. These findings indicated that Piezo1 is expressed in intestinal L cells and its level varies in different energy status.
 
-## Generation and characterization of Piezo1 IntL-CKO mice
+### Generation and characterization of Piezo1 IntL-CKO mice
 
 To investigate the potential role of Piezo1 in GLP-1 production, we tried to knockout Piezo1 in L cells by Cre-loxP system driven by an L cell-specific promoter. Proglucagon (encoded by Gcg gene) is mainly expressed in both L cells and pancreatic α cells (Jin, 2008). Villin-1 (encoded by Vil1 gene) is expressed in gastrointestinal epithelium, including L cells, but not in pancreatic α cells (Maunoury et al., 1992; Rutlin et al., 2020). Since neither Gcg nor Villin are specific markers for L cells, we tried to generate a new line of mice enabling loss of Piezo1 expression specifically in the intestine L cell by combination of FLP-Frt and Cre-loxP system. We inserted a Flippase (FLP) expression cassette in the 3’UTR of Vil1 to generate a Vil1 promoter-driven FLP mice (Vil1FLP; Figure 1A). Then, we generated Flippase-dependent Gcg promoter driven-Cre (GcgCre) mice by inserting an Frt-flanked Cre expression cassette in reverse orientation within the 3’- UTR of Gcg gene (Figure 1A). We further crossed the Vil1FLP mice with GcgCre mice to obtain L-cell-specific Cre mice (Vil1FLP::GcgfrtCre), in which Vil1 promoter-driven Flippase flipped the reverse Cre cassette into a correct orientation in Villin-positive cells (including L cells, but not pancreatic α cells), and thus Cre can only be expressed under the Gcg promoter in L cells. The genotypes of the Vil1FLP, GcgCre and Vil1FLP::GcgfrtCre mice were identified by PCR with specific primers (Figure 1B). The flipping of the reverse Cre cassette was validated by PCR, which confirmed that the flipping only occurred the intestine, but not in the pancreas (Figure 1C). To confirm the cell type specificity of Cre activity, we crossed Vil1FLP::GcgfrtCre mice to Rosa26mT/mG reporter mice. All tissues and cells of Rosa26mT/mG mice express red fluorescence (membrane-targeted tdTomato; mT) at baseline, and switch to membrane-targeted EGFP in the presence of cell-specific Cre (Figure 1D). EGFP expression was only observed scatteredly in the intestine, but not in the pancreas, indicating the intestine-specific Cre activity in the Vil1FLP::GcgfrtCre mice (Figure 1E). Finally, we bred Vil1FLP::GcgfrtCre mice with Piezo1loxp/loxp mice to generate Piezo1 IntL-CKO mice (Figure 1F).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic description for the generation of Vil1FLP and Flippase-dependent GcgCre mice. Vil1FLP flip the inverted Cre gene in the GcgCre cassette in Vil1FLP::GcgfrtCre mice to restrict Cre expression in intestinal L cells. As shown, locations of genotyping primers are also indicated. (B) Tail DNA genotyping PCR results using genotyping primer for Vil1FLP, GcgCre and Flippase-activated Cre (Vil1FLP::GcgfrtCre) mice. (C) Intestine and pancreas DNA genotyping results. The ‘Original’ band represents the original GcgCre cassette with inverted Cre, while the ‘Flipped’ band represents recombined GcgCre cassette with Cre flipped into the correct direction. (D) Schematic description for the validation of Vil1FLP::GcgfrtCre efficacy by crossing with Rosa26mT/mG reporter mice. (E) Fluorescence was detected in the ileal and pancreatic tissues from Rosa26mT/mG and Vil1FLP::GcgfrtCre-Rosa26mT/mG mice by frozen tissue confocal microscopy. Green fluorescence represents successful deletion of TdTomato and reactivation of EGFP in the Cre-expressing cells. (F) Schematic description for the generation of Intestinal L cell-Piezo1-/- mice (Piezo1 IntL-CKO) by crossing Piezo1loxp/loxp mice with Vil1FLP::GcgfrtCre mice. (G) Body weight of 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (H, I) IPGTT (H) and ITT (I) and associated area under the curve (AUC) values of 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (J) Gcg mRNA levels in ileum of 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (K) The plasma GLP-1 levels in 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (L) Representative images for Piezo1 RNA-FISH and GLP-1 immunofluorescent staining in the ileum of 14-week-old male mice of indicated genotypes fed with NCD (n=6/group). (M) Percentage of Piezo1-positive GLP-1 cells in total GLP-1 cells in the ileal mucosa of 14-week-old male mice of indicated genotypes fed with NCD (n=6/group). (N) A schematic diagram depicting the potential mechanisms linking the CaMKKβ/CaMKIV-mTOR signaling pathway and GLP-1 production. (O) Representative western blots are shown for indicated antibodies in the ileal mucosa (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Piezo1 mRNA levels in STC-1 cells and various tissues of 14-week-old male C57BL/6 J mice fed with normal chow diet (NCD). (B) Double immunofluorescent staining of Piezo1 (red) and GLP-1 (green) in the NCD mouse ileum. (C) Body weight of 14-week-old male C57BL/6 J mice were fed with either normal chow diet (NCD) or high-fat diet (HFD) (n=6/group). (D) IPGTT and associated area under the curve (AUC) values of 14-week-old male C57BL/6 J mice fed with NCD or HFD (n=6/group). (E) Representative western blots are shown for Piezo1 and β-actin protein levels in the ileal mucosa of 14-week-old male C57BL/6 J mice fed with NCD or HFD (n=6/group). (F) Piezo1 and Proglucagon (Gcg) mRNA levels in the ileal mucosa of 14-week-old male C57BL/6 J mice fed with NCD or HFD detected by qPCR (n=6/group). (G) Pearson’s correlation analysis of the correlation between ileal mucosal Piezo1 and Gcg mRNA levels in 14-week-old male C57BL/6 J mice fed with NCD or HFD. (H) Pearson’s correlation analysis of the correlation between area under the curve (AUC) for glucose excursion and ileal mucosal Piezo1 mRNA level in 14-week-old male C57BL/6 J mice fed with NCD or HFD. (I) Body mass index (BMI) of post-RYGB subjects and obese type 2 diabetics (n=6/group). (J) Piezo1 mRNA levels in the ileal mucosa of post-RYGB subjects and obese type 2 diabetics by qPCR (n=6/group). (K) Double immunofluorescent staining of Piezo1 and GLP-1 in the ileum of post-RYGB patients and obese type 2 diabetic patients. (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Food intake and (B) water intake of 12- to 14-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with normal chow diet (n=8/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) HE staining of pancreatic sections from 14- to 16-week-old male mice of the indicated genotypes fed with NCD. (B, C) Piezo1 (B) and Gcg (C) mRNA levels in pancreas of 14- to 16-week-old male mice of the indicated genotypes fed with NCD. (n=6/group). (D) Western blot analysis of Proglucagon protein levels in pancreas of 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A, B) HE staining of ileal sections from 14- to 16-week-old male mice of the indicated genotypes fed with NCD (A) or HFD (B). (C, D) The length of small intestine from male mice of the indicated genotypes fed with NCD (C) or HFD (D) (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Representative images for Piezo1 and GLP-1 immunofluorescent staining from different regions of the intestine of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (B) Percentage of Piezo1-positive GLP-1 cells in total GLP-1 cells in the different regions of intestinal mucosa of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Representative images for Piezo1 and Ghrelin immunofluorescent staining in the ileum of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (B) Representative images for Piezo1 and Glucagon immunofluorescent staining in the pancreas of 14-week-old male mice of the indicated genotypes fed NCD (n=6/group).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Representative images for Peptide YY (PYY) immunofluorescent staining in the ileum of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (B) Percentage of PYY-positive cells in ileal mucosal cells (n=6/group). (C) Representative images for GLP-1 immunofluorescent staining in the ileum of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (D) Percentage of GLP-1-positive cells in ileal mucosal cells (n=6/group). (E) Ileal mucosal CCK mRNA levels of 14- to 16-week-old male mice of the indicated genotypes fed with NCD (n=6/group).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A) Representative images for ZO-1 immunofluorescent staining in the ileum of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (B) Representative images for Occludin immunofluorescent staining in the ileum of 14-week-old male mice of the indicated genotypes fed with NCD (n=6/group). (C) Representative western blots are shown for ZO-1, Occludin and β-actin protein levels in the ileal mucosa of 14-week-old male mice of the indicated genotypes fed with NCD or HFD (n=6/group).
 
 Under normal chow diet, Piezo1 IntL-CKO mice exhibited increased body weight (Figure 1G) and greater glycemic excursions compared to control groups (Piezo1loxp/loxp, Vil1FLP, GcgCre and Vil1FLP::GcgfrtCre; Figure 1H and I), while the food and water intake were not changed (Figure 1—figure supplement 2A, B). The morphology of islet (Figure 1—figure supplement 3A) and ileum (Figure 1—figure supplement 4A) were not affected. Ileal mucosal Proglucagon expression and plasma GLP-1 level were significantly lower in Piezo1 IntL-CKO mice than that in all littermate controls such as Piezo1loxp/loxp, Vil1FLP, GcgCre and Vil1FLP::GcgfrtCre mice (Figure 1J and K), while no significant alteration was observed in the expression of pancreatic Piezo1 and Proglucagon (Figure 1—figure supplement 3B–D). According to in situ hybridization of Piezo1 and immunofluorescence analysis of GLP-1, the expression of Piezo1 disappeared in GLP-1 positive cells, suggesting successful knockout of Piezo1 in L cells in Piezo1 IntL-CKO mice (Figure 1L and M). Also depicted in Figure 1—figure supplement 5, Piezo1 is expressed in GLP-1-positive cells of the duodenum, jejunum, ileum, and colon in control mice, but not in Piezo1 IntL-CKO mice. However, Piezo1 remains expressed in intestinal ghrelin positive cells and pancreatic glucagon-positive cells of Piezo1 IntL-CKO mice (Figure 1—figure supplement 6). Moreover, while GLP-1 levels were reduced in L cells of Piezo1 IntL-CKO mice, levels of PYY, another hormone secreted by L cells, were unaffected (Figure 1—figure supplement 7A–D). Additionally, ileal mucosal cholecystokinin (CCK), a hormone secreted by I cells with metabolic effects similar to GLP-1, was also unchanged in Piezo1 IntL-CKO mice (Figure 1—figure supplement 7E). Previous study showed that Piezo1 affected intestinal tight junctions and epithelial integrity (Jiang et al., 2021). To access whether loss of Piezo1 in L cells affect epithelial integrity of the intestine, we examined the expression of tight junction proteins, including ZO-1 and Occludin. As shown in Figure 1—figure supplement 8, the expression of ZO-1 and Occludin remained unchanged in Piezo1 IntL-CKO mice when compared to littermate controls.
 
 Piezo1 is a non-selective cationic channel that allows passage of Ca2+ and Na+. CaMKKβ is the main calcium/calmodulin dependent protein kinase kinase involved in the regulation of metabolic homeostasis (Marcelo et al., 2016). It is activated by binding calcium-calmodulin (Ca2+/CaM), resulting in downstream activation of kinases CaMKIV. The activation of CaMKIV modulate the gene expression of nutrient- and hormone-related proteins (Ban et al., 2000; Chen et al., 2011; Takemoto-Kimura et al., 2017). Previous studies have reported that Ca2+ and mTOR signaling regulate the production of GLP-1 (Tolhurst et al., 2011; Xu et al., 2015; Yu and Jin, 2010). Drawing from these findings, this research study proposed a hypothesis that Piezo1 may regulate GLP-1 synthesis via the CaMKKβ/CaMKIV-mTOR signaling pathway (Figure 1N). As shown in Figure 1O, abrogated GLP-1 production was associated with decreased CaMKKβ/CaMKIV-mTOR signaling in the ileal mucosa of Piezo1 IntL-CKO mice (Figure 1O).
 
-## Derangements of glucose metabolism and GLP-1 production were induced by HFD in Piezo1 IntL-CKO mice, which was mitigated by Exendin-4
+### Derangements of glucose metabolism and GLP-1 production were induced by HFD in Piezo1 IntL-CKO mice, which was mitigated by Exendin-4
 
 We next assessed the effect of L-cell-specific Piezo1 gene deletion on GLP-1 and glucose tolerance in diet-induced diabetic mice. Piezo1 IntL-CKO and control mice were exposed to HFD for 10 weeks. Compared to the controls, higher body weight (Figure 2A), greater glucose excursions (Figure 2B) were observed in Piezo1 IntL-CKO mice exposed to HFD. Ileal mucosal Proglucagon expression levels were lower in Piezo1 IntL-CKO than control mice (Figure 2C–F). Impaired CaMKKβ/CaMKIV-mTORC1 signaling pathway in ileal mucosa as evidenced by a decrease in CaMKKβ, reduced phosphorylation levels of CaMKIV, mTOR, S6K, and S6 was also observed in Piezo1 IntL-CKO mice (Figure 2F). No significant alteration in morphology, Piezo1 or Proglucagon levels were observed in the pancreas of Piezo1 IntL-CKO mice (Figure 2—figure supplement 1A–D). Together these data demonstrate that Piezo1 IntL-CKO mice with prolonged HFD feeding exhibit impaired glucose metabolism phenotype and reduced GLP-1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig2-v1.jpg)
+
+**Figure 2.:** (A) Body weight of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD for 10 weeks (n=6/group). (B) IPGTT and associated area under the curve (AUC) values of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (C) Gcg mRNA levels in the ileal mucosa of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (D) The plasma GLP-1 level in 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (E) Double immunofluorescent staining of Piezo1, and GLP-1 in the ilea of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (F) Representative western blots are shown for indicated antibodies in the ileal mucosa (n=6/group). (G) Body weight after 7 consecutive days infusion of saline or Ex-4 (100 µg/kg body weight) in 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (H, I) IPGTT (H) and ITT (I) and associated area under the curve (AUC) values after consecutive infusion of saline or Ex-4. (J) Gcg mRNA levels in the ileal mucosa (n=6/group) after consecutive infusion of saline or Ex-4. (K) The plasma GLP-1 level after consecutive infusion of saline or Ex-4 (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) HE staining of pancreatic sections from 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD. (B) Piezo1 and (C) Gcg mRNA levels in pancreas of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). (D) Western blot analysis of Proglucagon protein levels in pancreas of 14- to 16-week-old male Piezo1loxp/loxp and Piezo1 IntL-CKO mice fed with HFD (n=6/group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
 Injection of GLP-1 analog Exendin-4 (Ex-4) decreased the body weight (Figure 2G) and improved both glucose tolerance (Figure 2H) and insulin resistance (Figure 2I) in control and Piezo1 IntL-CKO mice, while endogenous synthesis of GLP-1 was not changed by Ex-4 injection in Piezo1 IntL-CKO mice (Figure 2J and K). These data suggested that decreased GLP-1 synthesis and secretion contribute to impaired glucose metabolism in Piezo1 IntL-CKO mice.
 
-## The pharmacological and mechanical activation of ileal Piezo1 stimulates GLP-1 synthesis
+### The pharmacological and mechanical activation of ileal Piezo1 stimulates GLP-1 synthesis
 
 We next examined whether activation of Piezo1 could rescued the impaired glucose metabolism in diet-induced diabetic mice. Injection of Piezo1 activator Yoda1 after 10 weeks of high-fat diet, led to reduced body weight and improved the impaired glucose metabolism significantly in diabetic mice, while Piezo1 antagonist GsMTx4 reversed the weight loss and glucose-lowering effect of Yoda1 (Figure 3A and B). Yoda1 remarkably induced an increase in GLP-1 synthesis and secretion (Figure 3C and D), as well as an increment of CaMKKβ/CaMKIV-mTORC1 signaling in ileal mucosa (Figure 3E), while GsMTx4 abolished the effect of Yoda1 (Figure 3C–E). However, weight loss, improved plasma glucose and increased GLP-1 production induced by Yoda1 were not observed in Piezo1 IntL-CKO mice (Figure 3F–J).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig3-v1.jpg)
+
+**Figure 3.:** (A–E) 14- to 16-week-old male C57BL/6 J mice fed with HFD for 10 weeks were infused with vehicle, Yoda1 (2 μg per mouse) or GsMTx4 (250 μg/kg) by i.p. for 7 consecutive days. (n=6/group). (A) Body weight after consecutive drug infusion. (B) IPGTT and associated area under the curve (AUC) values. (C) Gcg mRNA levels in the ileal mucosa. (D) Plasma GLP-1. (E) Representative western blots are shown for indicated antibodies in the ileal mucosa. (F–J) 14- to 16-week-old male Piezo1 IntL-CKO mice fed with HFD for 10 weeks were infused with vehicle, Yoda1 (2 μg per mouse) by i.p. for 7 consecutive days. (n=4 or 5/group). (F) Body weight after 7 consecutive days’ drug infusion. (G) Fasting blood glucose levels. (H) Ileal mucosal Gcg mRNA levels. (I) Plasma GLP-1 levels. (J) Ileal mucosal Proglucagon protein levels. (K–R) 14- to 16-week-old male C57BL/6 J mice fed with HFD were subjected to sham operation, or intestinal bead implantation (n=6/group). (K) Fasting blood glucose levels. (L) IPGTT and associated area under the curve (AUC) values. (M) Body weight. (N, O) Piezo1 (N) and Gcg (O) mRNA levels in the ileal mucosa. (P) The plasma GLP-1 levels. (Q) Immunofluorescence staining of GLP-1 in ileum and quantification of GLP-1-positive cells. (R) Representative western blots images and densitometry quantification for indicated antibodies in the ileal mucosa. Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fecal weight of sham and bead implanted mice fed with HFD. (n=9/group). (B) Gastrointestinal transit time of sham and bead-implanted mice fed with HFD. (n=5/group). (C) Assessment of abdominal mechanical sensitivity. Mechanical sensitivity of the abdomen was assessed using calibrated von Frey filaments (0.07 g, 0.16 g, and 1 g) in sham and bead-implanted mice (n=5 per group). Data are represented as mean ± SEM. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
+
 The intestine receives mechanical stimulation from the chyme, which may activate Piezo1 in the intestine epithelium, including L cells. To mimic the mechanical pressing and stretching induced by intestinal contents, a small silicon bead was implanted into the high-fat diet-induced diabetic mouse ileum. To exclude the possibility of bowel obstruction and abdominal pain caused by bead implantation, we measured the fecal mass and gastrointestinal transit time, and accessed abdominal mechanical sensitivity in both sham and bead-implanted mice. As shown in Figure 3—figure supplement 1A, B, there was no significant difference in fecal mass and gastrointestinal transit time between the sham-operated mice and those implanted with beads. The results of abdominal mechanical sensitivity indicated that no difference in abdominal pain threshold was observed between sham and bead implanted mice (Figure 3—figure supplement 1C). Intestinal bead implantation improved the impaired glucose metabolism in diabetic mice (Figure 3K and L). Body weight loss, activated ileal mucosal CaMKKβ/CaMKIV-mTOR signaling, increased mRNA and protein levels of ileal mucosal Piezo1 and Proglucagon, as well as the circulating levels of GLP-1 were observed in diabetic mice after operation (Figure 3M–R). The above data suggest that mechanical stimuli induced by intestinal bead implantation activates ileal Piezo1 in diabetic mice, stimulating GLP-1 production via CaMKKβ/CaMKIV-mTOR signaling axis, thus improving glucose homeostasis.
 
-## Piezo1 regulates GLP-1 synthesis and secretion in primary cultured mouse L cells and isolated mouse ileum
+### Piezo1 regulates GLP-1 synthesis and secretion in primary cultured mouse L cells and isolated mouse ileum
 
 To obtain primary L cells, we isolated cell from the ileum of Vil1FLP::GcgfrtCre-Rosa26mT/mG mice, in which tdTomato expression switched to EGFP expression in L cells as shown in Figure 1E. EGFP-positive cells (mouse L cells) were then sorted from isolated single cells (Figure 4A). Immunofluorescence showed that the sorted EGFP+ cells were Piezo1 positive (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig4-v1.jpg)
 
-**Figure 4.:** (A) Isolation of mouse L cells (GFP positive) from ileal tissue by FACS. The gating in flowcytometry for sorting of GFP-positive cells. (B) Immunofluorescent staining of Piezo1 in sorted GFP-positive L cells. (C) Intracellular Ca2+ imaging by fluo-4-AM calcium probe. The change of fluorescent intensity (ΔF/F0) was plotted against time. (D–F) L cells were treated with vehicle or Yoda1 (5 μM) for 24 hr. (D) Gcg mRNA expression. (E) GLP-1 concentrations in the culture medium. (F) Western blot images and densitometry quantification for the indicated antibodies. (G–J) Knockdown of Piezo1 in L cells by shRNA for 48 hours. (G) Piezo1 mRNA expression. (H) Gcg mRNA expression. (I) GLP-1 levels in the culture medium. (J) Western blot images and densitometry quantification for the indicated antibodies. (K–N) Ileal tissues from Piezo1 and loxp/loxpPiezo1 IntL-CKO mice were subjected to tension force (n=6/group). (K) A representative photograph showing the traction of isolated ileum. (L) Gcg mRNA levels. (M) GLP-1 concentrations in the medium. (N) Western blot images and densitometry quantification for the indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.Figure 4—source data 1.Figure 4F, J and N, indicating the relevant bands and treatments.Figure 4—source data 2.Figure 4F, J and N.Figure 4—source data 3.Figure 4.
+**Figure 4.:** (A) Isolation of mouse L cells (GFP positive) from ileal tissue by FACS. The gating in flowcytometry for sorting of GFP-positive cells. (B) Immunofluorescent staining of Piezo1 in sorted GFP-positive L cells. (C) Intracellular Ca2+ imaging by fluo-4-AM calcium probe. The change of fluorescent intensity (ΔF/F0) was plotted against time. (D–F) L cells were treated with vehicle or Yoda1 (5 μM) for 24 hr. (D) Gcg mRNA expression. (E) GLP-1 concentrations in the culture medium. (F) Western blot images and densitometry quantification for the indicated antibodies. (G–J) Knockdown of Piezo1 in L cells by shRNA for 48 hours. (G) Piezo1 mRNA expression. (H) Gcg mRNA expression. (I) GLP-1 levels in the culture medium. (J) Western blot images and densitometry quantification for the indicated antibodies. (K–N) Ileal tissues from Piezo1loxp/loxp and Piezo1 IntL-CKO mice were subjected to tension force (n=6/group). (K) A representative photograph showing the traction of isolated ileum. (L) Gcg mRNA levels. (M) GLP-1 concentrations in the medium. (N) Western blot images and densitometry quantification for the indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
 
 Yoda1 at the dose of 5 μM triggered an increase in intracellular Ca2+ level in primary cultured mouse L cells, which was blocked by pre-incubation of cells with GsMTx4 (0.1 μM) for 15 min (Figure 4C). Yoda1 also stimulated Proglucagon expression and GLP-1 secretion, as well as CaMKKβ/CaMKIV-mTOR signaling pathway in primary cultured mouse L cells (Figure 4D–F). In contrast, knockdown of Piezo1 by shRNA led to significant decrease in Proglucagon expression and GLP-1 secretion, as well as inhibition of CaMKKβ/CaMKIV/mTOR signaling pathway (Figure 4G–J).
 
 Given the ability of Piezo1 in sensing mechanical force, tension of 1.5 g was applied to the isolated mouse ileum bathed in Tyrode’s solution for four hours. Tension stimulated Proglucagon expression, GLP-1 secretion and activated CaMKKβ/CaMKIV-mTOR signaling pathway in the ileum of control mice, but not in Piezo1 IntL-CKO mice (Figure 4K–N), suggesting the involvement of Piezo1 of the L cells in mediating the force-induced GLP-1 production and CaMKKβ/CaMKIV-mTOR signaling.
 
-## Pharmacological, mechanical and genetic activation of Piezo1 stimulates GLP-1 synthesis and secretion in STC-1 cells
+### Pharmacological, mechanical and genetic activation of Piezo1 stimulates GLP-1 synthesis and secretion in STC-1 cells
 
 To further validate the role of Piezo1 in regulating GLP-1, we examined the effect of manipulating Piezo1 on GLP-1 production in an intestinal neuroendocrine cell line STC-1. Pharmacological activation of Piezo1 by Yoda1 triggered an inward current in STC-1 cell recorded by whole cell patch-clamp, which could be inhibited by pre-incubation of GsMTx4 (Figure 5A). Yoda1 also triggered an increase in intracellular Ca2+ level in STC-1 cells. Pre-incubation of cells with GsMTx4 (0.1 μM) for 15 min inhibited [Ca2+]i increase (Figure 5B and C). Yoda1 induced a concentration-dependent activation of CaMKKβ/CaMKIV-mTOR pathway and GLP-1 synthesis and secretion (Figure 5D–F). GsMTx4 blocked the effect of Yoda1 on STC-1 cells in both GLP-1 and CaMKKβ/CaMKIV-mTOR activation (Figure 5G–I).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig5-v1.jpg)
 
-**Figure 5.:** (A) Whole-cell currents induced by Yoda1 (5 μM) were recorded from STC-1 cells or STC-1 cells pretreated with GsMTx4 for 30 min. (B, C) Intracellular calcium imaging in STC-1 cells. (B) STC-1 cells were loaded with fluo-4 AM for 1 hr. The representative time-lapse image showing the intracellular Ca2+ signals. (C) The change of fluorescent intensity (ΔF/F0) was plotted against time. (D–F) STC-1 cells were treated with various concentrations of Yoda1 for 24 hr. (D) Whole-cell extracts underwent western blot with indicated antibodies. (E) Gcg mRNA levels. (F) GLP-1 concentrations in the culture medium. (G–I) STC-1 cells were treated with Yoda1 (5 μM) in the presence or absence of GsMTx4 (0.1 μM) for 24 hr. (G) Whole-cell extracts underwent western blot with indicated antibodies. (H) Gcg mRNA levels. (I) GLP-1 concentrations in the culture medium. (J–N) STC-1 were subjected to mechanical stretch. (J) STC-1 cells were cultured in elastic chambers and the chambers were subjected to mechanical stretch by 120% extension of their original length. (K) The medium GLP-1 concentrations were detected at indicated time. (L) Piezo1 mRNA levels. (M) Gcg mRNA levels. (N) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.Figure 5—source data 1.Figure 5D, G and N, indicating the relevant bands and treatments.Figure 5—source data 2.Figure 5D, G and N.Figure 5—source data 3.Figure 5.
+**Figure 5.:** (A) Whole-cell currents induced by Yoda1 (5 μM) were recorded from STC-1 cells or STC-1 cells pretreated with GsMTx4 for 30 min. (B, C) Intracellular calcium imaging in STC-1 cells. (B) STC-1 cells were loaded with fluo-4 AM for 1 hr. The representative time-lapse image showing the intracellular Ca2+ signals. (C) The change of fluorescent intensity (ΔF/F0) was plotted against time. (D–F) STC-1 cells were treated with various concentrations of Yoda1 for 24 hr. (D) Whole-cell extracts underwent western blot with indicated antibodies. (E) Gcg mRNA levels. (F) GLP-1 concentrations in the culture medium. (G–I) STC-1 cells were treated with Yoda1 (5 μM) in the presence or absence of GsMTx4 (0.1 μM) for 24 hr. (G) Whole-cell extracts underwent western blot with indicated antibodies. (H) Gcg mRNA levels. (I) GLP-1 concentrations in the culture medium. (J–N) STC-1 were subjected to mechanical stretch. (J) STC-1 cells were cultured in elastic chambers and the chambers were subjected to mechanical stretch by 120% extension of their original length. (K) The medium GLP-1 concentrations were detected at indicated time. (L) Piezo1 mRNA levels. (M) Gcg mRNA levels. (N) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
 
 To mimic the activation of Piezo1 by mechanical stretching in vivo, STC-1 cells grown on elastic chambers were subjected to mechanical stretch to 120% of their original length. Mechanical stretch upregulated Piezo1 and Proglucagon expression, promoted GLP-1 secretion (Figure 5J–N), and activated CaMKKβ/CaMKIV- mTOR signaling pathways (Figure 5N).
 
@@ -96,15 +148,15 @@ Consistent to the pharmacological and mechanical activation of Piezo1, over-expr
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig6-v1.jpg)
 
-**Figure 6.:** (A–D) STC-1 cells were transfected with mouse control or Piezo1 expression plasmids for 48 hr. Piezo1 (A) and Gcg (B) mRNA levels in STC-1 cells. (C) GLP-1 concentrations in culture medium. (D) Whole-cell extracts underwent western blot with indicated antibodies. (E–H) Stable knockdown of Piezo1 in STC-1 cells. Piezo1 (E) and Gcg (F) mRNA levels in STC-1 cells. (G) GLP-1 concentrations in culture medium. (H) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test, *p<0.05, **p<0.01, ***p<0.001.Figure 6—source data 1.Figure 6D and H, indicating the relevant bands and treatments.Figure 6—source data 2.Figure 6D and H.Figure 6—source data 3.Figure 6.
+**Figure 6.:** (A–D) STC-1 cells were transfected with mouse control or Piezo1 expression plasmids for 48 hr. Piezo1 (A) and Gcg (B) mRNA levels in STC-1 cells. (C) GLP-1 concentrations in culture medium. (D) Whole-cell extracts underwent western blot with indicated antibodies. (E–H) Stable knockdown of Piezo1 in STC-1 cells. Piezo1 (E) and Gcg (F) mRNA levels in STC-1 cells. (G) GLP-1 concentrations in culture medium. (H) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test, *p<0.05, **p<0.01, ***p<0.001.
 
-## Piezo1 regulates GLP-1 production through CaMKKβ/CaMKIV and mTOR in STC-1 cells
+### Piezo1 regulates GLP-1 production through CaMKKβ/CaMKIV and mTOR in STC-1 cells
 
 Next, we examined whether CaMKKβ/CaMKIV and mTOR signaling mediates the effects of Piezo1 on GLP-1 production. Overexpression of CaMKKβ or CaMKIV increased CaMKKβ/CaMKIV and mTOR signaling activity, resulting in increased synthesis and secretion of GLP-1 (Figure 7A–C). In contrast, the CaMKKβ inhibitor STO-609, downregulated CaMKKβ/CaMKIV and mTOR signaling, as well as GLP-1 synthesis and secretion (Figure 7D–F). Inhibition of mTORC1 activity by rapamycin suppressed GLP-1 production induced by Yoda1, which was associated with inhibition of mTOR signaling (Figure 7G–I).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/97854/elife-97854-fig7-v1.jpg)
 
-**Figure 7.:** (A–C) STC-1 cells were transfected with GFP, CaMKKβ or CaMKIV plasmids for 48 hr. (A) Gcg mRNA levels in STC-1 cells. (B) GLP-1 concentrations in culture medium. (C) Whole-cell extracts underwent western blot with indicated antibodies. (D–F) STC-1 cells were treated with CaMKKβ inhibitor STO-609 (10 μmol/L) for 24 hr. (D) Gcg mRNA levels in STC-1 cells. (E) GLP-1 concentrations in culture medium. (F) Whole-cell extracts underwent western blot with indicated antibodies. (G–I) STC-1 cells were pretreated with Rapamycin (50 nmol/L) for 1 hr, then treated with Yoda1 (5 μmol/L) for 24 hr. (G) Gcg mRNA levels in STC-1 cells. (H) GLP-1 concentrations in the culture medium. (I) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.Figure 7—source data 1.Figure 7C, F and I, indicating the relevant bands and treatments.Figure 7—source data 2.Figure 7C, F and I.Figure 7—source data 3.Figure 7.
+**Figure 7.:** (A–C) STC-1 cells were transfected with GFP, CaMKKβ or CaMKIV plasmids for 48 hr. (A) Gcg mRNA levels in STC-1 cells. (B) GLP-1 concentrations in culture medium. (C) Whole-cell extracts underwent western blot with indicated antibodies. (D–F) STC-1 cells were treated with CaMKKβ inhibitor STO-609 (10 μmol/L) for 24 hr. (D) Gcg mRNA levels in STC-1 cells. (E) GLP-1 concentrations in culture medium. (F) Whole-cell extracts underwent western blot with indicated antibodies. (G–I) STC-1 cells were pretreated with Rapamycin (50 nmol/L) for 1 hr, then treated with Yoda1 (5 μmol/L) for 24 hr. (G) Gcg mRNA levels in STC-1 cells. (H) GLP-1 concentrations in the culture medium. (I) Whole-cell extracts underwent western blot with indicated antibodies. Data are represented as mean ± SEM and are representative of six biological replicates. Significance was determined by Student’s t test for comparison between two groups, and by one-way ANOVA for comparison among three groups or more, *p<0.05, **p<0.01, ***p<0.001.
 
 ## Discussion
 
@@ -122,39 +174,581 @@ Furthermore, recent studies have highlighted the role of Piezo1 in enhancing ins
 
 ## Materials and methods
 
-## Collection of human intestine samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, C57BL/6 J)</td>
+      <td>Vil1FLP,GcgCre</td>
+      <td>Shanghai Model Organisms Center</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6 J)</td>
+      <td>Vil1FLP::GcgfrtCre</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Please refer to the "Genetic mouse generation" section.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6 J)</td>
+      <td>Rosa26mTmG</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No. 007676</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6 J)</td>
+      <td>B6.Cg-Piezo1tm2.1Apat/J</td>
+      <td>Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:029213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus, mouse)</td>
+      <td>STC-1</td>
+      <td>ATCC</td>
+      <td>CRL-3254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mouse)</td>
+      <td>Primary mouse ileal L cells, Ileum, Pancreas, Liver, Skeletal muscle, Epididymal adipose, Hypothalamus</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Freshly isolated from Mice.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLKO.1-shPiezo1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Lentiviral construct to transfect and express the shRNA.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Piezo1 (Rabbit polyclonal)</td>
+      <td>Affinity Biosciences</td>
+      <td>Cat# DF12083,RRID:AB_2844888</td>
+      <td>WB: 1:1000IF: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CaMKKβ(mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-271674,RRID:AB_10708844</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-CaMKIV (Thr200) (Rabbit polyclonal)</td>
+      <td>Affinity Biosciences</td>
+      <td>Cat# AF3460,RRID:AB_2834898</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CaMKIV(Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4032,RRID:AB_2068389</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho- mTOR (Ser2448)(Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 5536,RRID:AB_10691552</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mTOR(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2983,RRID:AB_2105622</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p70 S6 Kinase (Thr389)(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9234,RRID:AB_2269803</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p70 S6 Kinase(Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2903,RRID:AB_1196657</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-S6 Ribosomal Protein (Ser235/236)(Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4858,RRID:AB_916156</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S6 Ribosomal Protein(Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2217,RRID:AB_331355</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLP-1 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab23468,RRID:AB_470325</td>
+      <td>WB: 1:1000IF: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin(Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3700,RRID:AB_2242334</td>
+      <td>WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase‐conjugated, Goat Anti-Rabbit IgG</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 111-035-003,RRID:AB_2313567</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horseradish peroxidase‐conjugated, Goat Anti-Mouse IgG</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 115-035-003,RRID:AB_10015289</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse fluorescein isothiocyanate-conjugated IgG</td>
+      <td>EarthOx LLC</td>
+      <td>Cat# E031210-01</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dylight 594 affinipure donkey anti-rabbit IgG</td>
+      <td>EarthOx LLC</td>
+      <td>Cat# E032421-01</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-mPiezo1-IRES-GFP</td>
+      <td>Addgene</td>
+      <td>Cat# 80925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-IRES-GFP</td>
+      <td>Addgene</td>
+      <td>Cat# 51406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaMKKβ(Plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Gifted by Professor Koji Murao from Kagawa University</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CaMKIV(Plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Gifted by Professor Koji Murao from Kagawa University</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACCTTTGCCCTCTGGTCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGTGACGGTGCCAGAGAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P3</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACTCCAGCTGCCTTCTCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P4</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTGATCTCCCAGATGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P5</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCTAACTCAGTCTCCAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P6</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGGTTACCAGGTGGTCATGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P7</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCTAACTCAGTCTCCAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P8</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGCAAAGGGTCGCTACAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P9</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATGGCTCTCCTCAAGCGTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P10</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACAGGAGGTAGTCCCTCACAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P11</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGTCGGGGAAATCATCGTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1_F(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATCGCCATCATCTGGTTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1_R(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGTGAACAGCGGCTCATAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GCG_F(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCACATTCACCAGTGACTACAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GCG_R(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGCAGCTTGGCCTTCCAAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin_F(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCATGAAGATCCTCACCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin_R(Human)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCTCTTGCTCGAAGTCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAGTGGCAGTGAGGAGATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATATGCAGGCGCCTATCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gcg_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATTGCCAAACGTCATGATGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gcg_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCGACTTCTTCTGGGAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCK_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAGCGCGATACATCCAGCAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CCK_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTATTCGTAGTCCTCGGCACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb_F(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCACAGCTGAGAGGGAAATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Actb_R(Mouse)</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGGAAGGCTGGAAAAGAGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Glucagon-Like Peptide 1 (GLP-1) ELISA Kit</td>
+      <td>Millipore</td>
+      <td>Cat# EGLP-35K</td>
+      <td>Mouse Glucagon-Like Peptide 1 (GLP-1) ELISA Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RT-PCR kit</td>
+      <td>Takara</td>
+      <td>Cat# RR014A</td>
+      <td>RT-PCR kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.1% gelatine</td>
+      <td>Biological Industries</td>
+      <td>Cat# 01-944-1B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM high sugar medium</td>
+      <td>Gibco</td>
+      <td>Cat# 11965092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Gibco</td>
+      <td>Cat# 12484028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Equine serum</td>
+      <td>Gibco</td>
+      <td>Cat# 16050122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Immobilon western chemiluminescent HRP substrate</td>
+      <td>Millipore</td>
+      <td>Cat# WBKLS0500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diprotin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 90614-48-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thermo Scientific TurboFect Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R0531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA Lysis Buffer</td>
+      <td>Beyotime Biotechnology</td>
+      <td>Cat# P0013B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GsMTx4</td>
+      <td>Alomone Labs</td>
+      <td>Cat# STG-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-3504B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>STO-609</td>
+      <td>Selleck</td>
+      <td>Cat# S8274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yoda1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SML1558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Exendin-4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E7144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluo-4 AM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# F14201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software,https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ,https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe photoshop</td>
+      <td>Adobe,https://www.adobe.com/creativecloud/desktop-app.html</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal chow diet</td>
+      <td>Research Diets</td>
+      <td>Cat# D12450B</td>
+      <td>Feed for feeding mice.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>High fat diet</td>
+      <td>Research Diets</td>
+      <td>Cat# D12492</td>
+      <td>Feed for feeding mice.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Collection of human intestine samples
 
 Male obese participants with type 2 diabetes (n=6, BMI = 45.87 ± 4.889 kg/m2) and one-year post-RYGB patients (n=6, BMI = 25.48 ± 1.085 kg/m2) were recruited in current study. Written informed consent was obtained from each donor. The study protocol was approved by the Institutional Review Board of Jinan University. Mucosal biopsies were obtained from human intestines by using a colonoscopy (CF-HQ290I; Olympus).
 
-## Genetic mouse generation
+### Genetic mouse generation
 
-## Vil1FLP mice
+#### Vil1FLP mice
 
 Vil1FLP knock-in mouse model was developed by Shanghai Model Organisms Center, Inc. The targeting construct was designed to insert a 2A-Flp-WPRE-pA coexpression cassette into the stop codon of mouse Vil1 gene via homologous recombination using CRISPR/Cas9 system. 5'-AGCCCCTACCCTGCCTTCAA-3' was chosen as Cas9 targeted guide RNA (sgRNA). The donor vector, sgRNA and Cas9 mRNA was microinjected into C57BL/6 J fertilized eggs. F0 generation mice positive for homologous recombination were identified by long PCR. The primers (I-IV) used for detection of the correct homology recombination were I: 5’-ACTTCAGGCCTAACGCTCAC-3’ and II: 5’-TGTCCTGCAGGCAGAGAAAG-3’ for the correct 5’ homology arm recombination, and III: 5’-GTGCCGTCTCTAAGCACAGT-3’and IV: 5’-TGTTGGTGCTTCGGAGTGTT-3’for the correct 3' homology arm recombination. The PCR products were further confirmed by sequencing. F0 mice were crossed with C57BL/6 J mice to obtain Vil1FLP heterozygous mice.
 
-## FLP-dependent glucagon-Cre (GcgCre) mice
+#### FLP-dependent glucagon-Cre (GcgCre) mice
 
 GcgCre mouse model was developed by Shanghai Model Organisms Center, Inc. The targeting construct was designed to insert an IRES-F3-Frt-Wpre-pA-Cre-Frt-F3 expression cassette into the 3’ UTR of mouse Gcg gene of via homologous recombination using CRISPR/Cas9 system. 5’-ATGCAAAGCAATATAGCTTC-3’ was chosen as Cas9 targeted guide RNA (sgRNA). The donor vector, sgRNA and Cas9 mRNA was microinjected into C57BL/6 J fertilized eggs. F0 generation mice positive for homologous recombination were identified by long PCR. The primers (I-IV) used for detection of the correct homology recombination were I: 5’-TGCTACACAGGAGGTCTGTC-3’ and II: 5’-AGGCATGCTCTGCTATCACG-3’ for the correct 5’ homology arm recombination, and III: 5'-CCCTCCTAGTCCCTTCTCAGT-3' and IV: 5'-GCCAAGGACATCTTCAGCGA-3’ for the correct 3’ homology arm recombination. The PCR products were further confirmed by sequencing. F0 mice were crossed with C57BL/6 J mice to obtain Gcgcre heterozygous mice.
 
-## Vil1FLP::GcgfrtCre mice
+#### Vil1FLP::GcgfrtCre mice
 
 Vil1FLP mice were crossed with Gcgcre mice to obtain Intestinal L cell-specific Cre (Vil1FLP::GcgfrtCre) mice.
 
-## Piezo1 IntL-CKO mice
+#### Piezo1 IntL-CKO mice
 
 Piezo1loxp/loxp mice (B6.Cg-Piezo1tm2.1Apat/J) purchased from Jackson laboratory were crossed with Vil1FLP::GcgfrtCre mice to generate Piezo1 IntL-CKO mice.
 
 PCR is used to identify the genotype of mice during the subsequent mating and breeding process. The primers required for mouse genotyping are shown in the Key Resources Table.
 
-## Mouse validation
+### Mouse validation
 
 Rosa26mT/mG reporter mice were purchased from Jackson laboratory, Inc Vil1FLP::GcgfrtCre mice were bred with Rosa26mT/mG reporter mice to further validate Cre recombinase activity and specificity. Every single Vil1FLP::GcgfrtCre mouse was confirmed by Rosa26mT/mG reporter mice before breeding with Piezo1loxp/loxp mice to generate Piezo1 IntL-CKO mice.
 
-## Frozen tissue confocal imaging
+### Frozen tissue confocal imaging
 
 Vil1FLP::GcgfrtCre-Rosa26mT/mG reporter mice were sacrificed. Fresh ileum and pancreas tissues were collected and embedded in O.C.T. compound for histological analysis immediately. Slices of the tissues were cut for confocal imaging, which was protected from light. Fluorescence was detected by laser scanning confocal microscopy (Li et al., 2022).
 
-## Animal housing and treatment
+### Animal housing and treatment
 
 Male mice were maintained on a 12 hr light/12 hr dark cycle environment. Normal chow diet (NCD) or a high-fat diet (HFD) and water were available ad libitum unless specified otherwise. The animal protocols were approved by the Animal Care and Use Committee of Jinan University (IACUC-20230517–01).
 
@@ -168,63 +762,63 @@ High fat diet treated Piezo1 IntL-CKO mice were randomly divided into 2 groups. 
 
 Diet induce diabetic C57BL/6 J mice were divided into sham and intestinal bead implantation groups.
 
-## Food and water intake detection
+### Food and water intake detection
 
 The food and water intake were quantified using metabolic cages (Cat 41853, Ugo Basile, Comerio, Italy). The mice were individually housed in these specialized cages and given a period of 3 days to acclimate before data collection began. They had unrestricted access to food and water, which was continuously monitored throughout the study. The 41850–010 software/interface package, consisting of EXPEDATA (for data analysis) and METASCREEN (for data collection) software, along with the IM-2 interface module, was employed to record and analyze the data.
 
-## Intraperitoneal glucose tolerance test
+### Intraperitoneal glucose tolerance test
 
 Mice were fasted for 12 hr before measuring their fasting glucose levels. An intraperitoneal glucose tolerance test (IPGTT) was performed by administering 1.5 g/kg body weight of glucose. Blood glucose concentrations were measured at specified time points using a glucometer by collecting tail vein blood samples.
 
-## Insulin tolerance test
+### Insulin tolerance test
 
 Mice were subjected to a 4 hr fast before measurement of fasting glucose were taken. Insulin tolerance tests (ITT) were conducted with a dose of 0.75 U/kg body weight of insulin. Blood glucose levels were measured at specified time points.
 
-## Intestinal bead implantation
+### Intestinal bead implantation
 
 High-fat diet-induced type 2 diabetic C57BL/6 J mice were fasted 6–8 hr before the operation. Standard aseptic procedures were used throughout the operation. Intestinal bead implantation was similar to gastric bead implantation described in our previous study (Zhao et al., 2024). Briefly, a 1 cm incision was made on the abdominal wall to expose the intestine. A 1 cm incision was made approximately 1 cm above the ileocecal region. A 2.5 mm diameter bead was implanted into the ileum of the mouse through an incision. Then the wound was closed with suture. Finally, the abdominal wall was closed with suture. For sham operation, all the procedures were the same as the bead implantation except that the bead was not implanted.
 
-## Detection of abdominal mechanical sensitivity
+### Detection of abdominal mechanical sensitivity
 
 The mice were familiarized with a metal mesh floor covered with plastic boxes for 2 hr each day for 2 days prior to testing. Their abdominal fur was shaved 1 day before the experiments. The abdominal area was then stimulated using calibrated von Frey filaments (VFFs) that applied varying forces: subthreshold mechanical stimuli (indicative of allodynia, 0.07 g force) and painful stimuli (indicative of hyperalgesia, 0.16 and 1 g force). Each filament was applied 10 times for 5–8 s with 10 s intervals between applications. To prevent learning or sensitization, the same area was not stimulated more than once consecutively. The data were presented as the number of withdrawal responses out of 10 applications, with 0 indicating no withdrawal and 10 indicating the maximum withdrawal. A withdrawal response was defined as (1) the mouse withdrawing its abdomen from the VFFs, (2) subsequent licking of the abdominal area, or (3) withdrawal of the entire body. All tests were conducted in a blinded manner.
 
-## Gastrointestinal transit time
+### Gastrointestinal transit time
 
 The whole-gut transit time test was conducted as previously described (Qin et al., 2017). The duration between the oral administration of charcoal and the appearance of the first stained fecal pellet was recorded as the total gastrointestinal transit time.
 
-## Stretching of isolated ileum
+### Stretching of isolated ileum
 
 About 2 cm ileum was isolated from control and Piezo1 IntL-CKO mice and kept in the specimen chamber filled with Tyrode’s solution (KCl 0.2 g/L, NaCl 8 g/L, CaCl2 0.2 g/L, MgCl2 0.1 g/L, NaHCO3 1 g/L, NaH2PO4 0.05 g/L, Glucose 1 g/L) of 37℃ gassed with oxygen. The specimen was connected to the force transducer of organ bath system (HW200S, Techman, Chengdu, CN). Adjust the transducer to apply traction force of 1.5 g on the tissue and maintained for 4 hr.
 
-## Measurement of GLP-1 secretion
+### Measurement of GLP-1 secretion
 
 The measurement of GLP-1 secretion was carried out according to previously described methods (Zhai et al., 2018). Samples were collected in the presence of aprotinin (2 μg/mL), EDTA (1 mg/mL) and diprotin A (0.1 mmol/L), and stored at –80 °C before use. GLP-1 levels were assayed using enzyme immunoassay kits following the manufacturer’s instructions.
 
-## Histological analysis
+### Histological analysis
 
 Tissues were collected, fixed with 4% paraformaldehyde, embedded in paraffin, and cut into 4 μm sections. Standard protocols were followed for staining the sections with hematoxylin-eosin. Photomicrographs were captured under an inverted microscope (Leica, Germany).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Paraffin-embedded tissue sections were dewaxed and rehydrated, followed by boiling in 0.01 mol/L citrate buffer (pH 6.0) for 10 min. Subsequently, the sections were blocked with 5% goat serum for 1 hr and then incubated overnight at 4 °C with the following primary antibodies: Piezo1 (1:400), Glucagon (1:200), Ghrelin (1:100), GLP-1(1:500), PYY (1:100), ZO-1 (1:200), or Occludin (1:200). The sections were then incubated with a mixture of secondary antibodies. Images were taken by laser scanning confocal microscopy (Leica SP8). Fluorescence intensity was quantified by ImageJ software.
 
-## In situ hybridization
+### In situ hybridization
 
 Paraffin sections were dewaxed and rehydrated. After antigen retrieval in in citrate buffer (pH6.0), the sections were incubated with Proteinase K (5 µg/ml) at 37 °C for the 15 min. Then the sections were hybridized with the probes overnight in a temperature-controlled chamber at 40 °C. The Piezo1 probe sequences were as follows: 5′-CTGCAGGTGGTTCTGGATATAGCCC-3′,5′-AAGAAGCAGATCTCCAGCCCGAAT-3′, 5′-GCCATGGATAGTCAATGCACAGTGC-3′. After washing with SSC buffers, the sections were hybridized in pre-warmed branch probes at 40 °C for 45 min. After washing with SSC buffers, the sections were hybridized with signal probe at 42 °C for 3 hr. After washing with SSC buffers, the sections were blocked with normal serum and then incubated with mouse anti-GLP-1 (1:500) antibody at 4 °C overnight followed by secondary antibody. Images were taken laser scanning confocal microscopy and the fluorescence signals were quantified by ImageJ.
 
-## Western blot analysis
+### Western blot analysis
 
 Tissues and cells were harvested. Ileal mucosa was scraped for protein extraction. Protein extraction was performed by using RIPA lysis buffer (50 mM Tris PH 7.4, 150 mM NaCl, 1% Triton X-100, 0.1% SDS, 1% Sodium deoxycholate, 1 mM PMSF and protease inhibitor cocktail.), then 40 µg of proteins were loaded onto an SDS-PAGE gel for separation. After the separation, the proteins were transferred onto a nitrocellulose membrane. The membrane was then incubated in blocking buffer at room temperature for 1 hur. For overnight incubation, the membrane and primary antibody (at the recommended dilution as stated in the product datasheet) were immersed in primary antibody dilution buffer, with gentle agitation, at 4 °C. Subsequently, the membrane was incubated with a secondary antibody that specifically recognizes and binds to the primary antibody. Finally, western blotting luminol reagent was used to visualize bands. The grey scale values of the bands were measured using ImageJ software.
 
-## RNA extraction, quantitative real-time PCR
+### RNA extraction, quantitative real-time PCR
 
 RNA was extracted and reverse-transcribed into cDNAs using RT-PCR kit. Real-time PCR was performed as previously described (Zhai et al., 2018). Sequences for the primer pairs used in this study were shown in Key Resources Table.
 
-## Isolation of mouse intestinal L cells
+### Isolation of mouse intestinal L cells
 
 A 5~6 cm long ileum segment was collected from the Vil1FLP::GcgfrtCre-Rosa26mT/mG mouse. The tissue was washed with ice-cold PBS twice to remove the chyme in the lumen. The tissue was minced into 0.5 mm3 pieces in ice-cold PBS and then digested in 100mIU collagenase I and 0.01 g/mL trypsin at 37 °C for 30 min with rotation. After digested tissue was passed through 40 μm and 30 μm cell strainers sequentially, then centrifuged for 7 min at 4 °C. The cell pellet was resuspended in red cell lysis buffer and incubated for 10 min at room temperature. The unlysed cells were collected by centrifugation and resuspended with 1 mL cold PBS. The GFP positive cells was sorted by fluorescence-activated cell sorting (FASC) on Beckman Coulter MoFlo XDP cell sorter system.
 
-## Cell culture and treatments
+### Cell culture and treatments
 
 STC-1 cells were maintained in DMEM medium supplemented with 2.5% fetal bovine serum and 10% equine serum at 37 °C with 5% CO2 air. L cells were maintained in DMEM medium supplemented with 10% fetal bovine serum.
 
@@ -234,14 +828,14 @@ For stable knockdown of Piezo1 in STC-1 cells, short hairpin RNA (shRNA) sequenc
 
 For cell stretching, cells were grown in silicone elastic chambers coated by 0.1% gelatin solution. After incubated at 37 °C for 24–48 hr, The chambers were subjected to mechanical stretch to 120% of their original length.
 
-## Calcium imaging
+### Calcium imaging
 
 Cells were plated onto confocal dishes at optimal densities and grown for 24 hr. Cells were loaded with the calcium fluorescent probe fluo-4 AM (1 μM) for 1 hr at 37 °C, then the cells were treated with Yoda1 (5 μM) or GsMTx4. The intracellular calcium ions were measured at room temperature using a laser confocal microscope with an excitation wave length of 494 nm and an emission wave length of 516 nm. The change of fluorescent signal was presented as ΔF/F0 and plotted against time.
 
-## Whole-cell patch-clamp recording
+### Whole-cell patch-clamp recording
 
 Borosilicate glass-made patch pipettes (BF150-86-7.5, Sutter Instrument Co, USA) were pulled with micropipette puller (P-1000, Sutter Instrument Co, USA) to a resistance of 3–5  MΩ after being filled with pipette solution: 138 mM KCl, 10 mM NaCl, 1 mM MgCl2, 10 mM Glucose and 10 mM HEPES (pH 7.4). Cells were bathed in Margo-Ringer solution: 130 mM NaCl, 5 mM KCl, 1 mM MgCl2, 2.5 mM CaCl2, 10 mM Glucose, 20 mM HEPES (pH7.4). Whole-cell calcium currents of STC-1 cells were recorded with the EPC10 USB patch-clamp amplifier (HEKA, Germany) controlled by PatchMaster software.
 
-## Statistical analysis
+### Statistical analysis
 
 All data were expressed as mean ± S.E.M. Statistical differences were evaluated by one-way ANOVA or Student’s t-test. The correlation was determined by Pearson analysis. p<0.05 was considered significant. (*p<0.05, **p<0.01, *** p<0.001, ns = not significance). In this study, the data collection and analysis processes were not conducted in a blinded manner with respect to the experimental conditions. For the administration of drugs to animals, we allocated mice of the same genetic background to various experimental cohorts using a randomization protocol. No data were excluded during the data analysis.

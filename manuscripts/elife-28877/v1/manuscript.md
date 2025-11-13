@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.28877.001 Peptide signaling controls many processes involving coordinated actions of multiple organs, such as hormone-mediated appetite regulation. However, the extent to which the mode of action of peptide signaling is conserved in different animals is largely unknown, because many peptides and receptors remain orphan and many undiscovered peptides still exist. Here, we identify two novel Caenorhabditis elegans neuropeptides, LURY-1-1 and LURY-1-2, as endogenous ligands for the neuropeptide receptor-22 (NPR-22). Both peptides derive from the same precursor that is orthologous to invertebrate luqin/arginine-tyrosine-NH 2 (RYamide) proneuropeptides. LURY-1 peptides are secreted from two classes of pharyngeal neurons and control food-related processes: feeding, lifespan, egg-laying, and locomotory behavior. We propose that LURY-1 peptides transmit food signals to NPR-22 expressed in feeding pacemaker neurons and a serotonergic neuron. Our results identified a critical role for luqin-like RYamides in feeding-related processes and suggested that peptide-mediated negative feedback is important for satiety regulation in C. elegans .
+Peptide signaling controls many processes involving coordinated actions of multiple organs, such as hormone-mediated appetite regulation. However, the extent to which the mode of action of peptide signaling is conserved in different animals is largely unknown, because many peptides and receptors remain orphan and many undiscovered peptides still exist. Here, we identify two novel Caenorhabditis elegans neuropeptides, LURY-1-1 and LURY-1-2, as endogenous ligands for the neuropeptide receptor-22 (NPR-22). Both peptides derive from the same precursor that is orthologous to invertebrate luqin/arginine-tyrosine-NH2 (RYamide) proneuropeptides. LURY-1 peptides are secreted from two classes of pharyngeal neurons and control food-related processes: feeding, lifespan, egg-laying, and locomotory behavior. We propose that LURY-1 peptides transmit food signals to NPR-22 expressed in feeding pacemaker neurons and a serotonergic neuron. Our results identified a critical role for luqin-like RYamides in feeding-related processes and suggested that peptide-mediated negative feedback is important for satiety regulation in C. elegans.
 
 ## Introduction
 
@@ -47,35 +47,178 @@ Here, we report the identification of two luqin-like RYamide peptides in C. eleg
 
 ## Results
 
-## Identification and structural determination of LURY-1-1 and LURY-1-2
+### Identification and structural determination of LURY-1-1 and LURY-1-2
 
 To identify novel peptide ligands in C. elegans, we constructed a stable CHO cell line expressing NPR-22a (CHO-NPR-22a) and measured changes in intracellular calcium concentration ([Ca2+]i) induced by gel filtration samples from worm extracts. However, we could not detect any agonist activity from each fraction in this Ca2+ assay (Figure 1A). In contrast to the NPR-22a-expressing cells, our previous study showed that CG5811-expressing cells have a distinctive feature to detect both RYamide- and RFamide-containing peptides with high potency (Ida et al., 2011). Therefore, we utilized a stable CHO cell line expressing CG5811 (CHO-CG5811) to search for agonist peptides from C. elegans extracts. The agonist activity for CHO-CG5811 cells was revealed at molecular mass (Mr) of about 1000 by gel filtration chromatography (Figure 1A). This activity could not be detected on CHO-NPR-22a cells even by the use of ten times the amount of samples used on CHO-CG5811 cells (Figure 1A). When the active fractions were separated by carboxymethyl ion-exchange high-performance liquid chromatography (CM-HPLC) at pH 6.5, four distinct agonist activities were revealed (fractions A–D, Figure 1B). Each activity was purified as a single peak by successive reverse-phase HPLC (RP-HPLC). Of these, two peaks, P1 and P2, were isolated from fraction A (Figure 1—figure supplement 2A,B). Amino acid sequences of the purified peptides were determined by a protein sequencer and mass spectrometry (Table 1). These two peptides were encoded by the same gene, Y75B8A.11, which was predicted as an ortholog of luqin/RYamide precursors in a bioinformatic study (Mirabeau and Joly, 2013). Combined with the sequence of the Y75B8A.11 cDNA (Figure 2A,B), we deduced the primary structures of the peptides as AVLPRY-NH2 (P1) and PALLSRY-NH2 (P2) (Figure 2C). Mass spectrometric analysis revealed that the observed monoisotopic m/z values of the purified peptides (P1, 717.25 and P2, 818.34) were almost identical to the theoretically predicted values (717.42 and 818.46, respectively) for peptides that are C-terminally amidated. Moreover, the synthetic AVLPRY-NH2 and PALLSRY-NH2 had identical retention times to natural peptides on RP-HPLC (Figure 1—figure supplement 2C). These data also suggest that both of the natural peptides have the deduced primary structures. These peptides have the C-terminal RYamide motif identical to that of dRYamide peptides, the authentic ligands for CG5811 (Figure 2C; Ida et al., 2011). We assigned Y75B8A.11 the gene name lury-1 (LUqin-like RYamide peptides) and designated the PALLSRY-NH2 and AVLPRY-NH2 peptides as LURY-1-1 and LURY1-2, respectively. The proneuropeptide has a characteristic of luqins with canonical pair of cysteines in the C-terminal portion (Figure 2B). Each of the peptides purified from fractions B to D was determined to be an RFamide-containing peptide generated from flp-1, flp-12, flp-6, or flp-22 based on protein sequencing and mass spectrometry (Table 1). LURY-1-1 and -2 induced concentration-dependent, robust increases in [Ca2+]i in CHO-CG5811 cells, with a half-maximal response concentration (EC50) of 1.86 × 10−9 and 1.07 × 10−9 M, respectively (Figure 2D). Neither LURY-1 peptides nor dRYamides induced a response in CHO cells transfected with vector alone (Figure 2—figure supplement 1A,B), confirming that these peptides act through CG5811.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig1-v1.jpg)
+
+**Figure 1.:** (A) Gel filtration on Sephadex G-50 (fine) of the SP-III fraction obtained from C. elegans. Red bars indicate fluorescence changes owing to [Ca2+]i increase in receptor expressing cells. (top) Non-transfected CHO cells. (middle) CHO-NPR-22a cells. (bottom) CHO-CG5811 cells. The amount of worm extracts in each [Ca2+]i assay was approximately equivalent to that from 20 mg (top, middle) or 2 mg (bottom) frozen weight of C. elegans. (B) CM-HPLC (pH 6.5) of the active fractions on the gel filtration. Red bars indicate [Ca2+]i changes in CHO-CG5811 cells. Active fractions that were further fractionated are depicted as A to D. (A, B) Blue lines indicate total protein content in each fraction as measured by absorbance at 280 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Phylogenetic tree constructed by Maximum likelihood analysis using the ‘One Click’ mode (without Gblocks) on the online Phylogeny.fr platform (http://www.phylogeny.fr/, Dereeper et al., 2008). The numbers next to the nodes are branch support values. The accession numbers of the sequences used in this analysis are: Zeugodacus cucurbitae, XP_011182823.1; Bactrocera latifrons, XP_018786122.1; Drosophila melanogaster, NM_139711.3; Stomoxys calcitrans, XP_013116217.1; Culex quinquefasciatus, XP_001862450.1; Aedes aegypti, AAT95982.1; Mus musculus Y4R, NP_032945.3; Mus musculus Y1R, NP_035064.1; Mus musculus Y6R, Q61212.1; Mus musculus Y5R, NP_057917.2; Mus musculus Y2R, NP_032757.2; Mus musculus TACR2, AAI06960.1; Mus musculus TACR1, EDK99033.1; Mus musculus TACR3, EDL12172.1; Strongyloides ratti, CEF70748.1; Caenorhabditis elegans NPR-22, NP_001023540; Haemonchus contortus, CDJ93635.1; Oesophagostomum dentatum, KHJ95408.1; Dictyocaulus viviparous, KJH45375.1; Trichuris suis, KFD65303.1; Tribolium castaneum RYamide receptor, ADZ17181; Bombus terrestris, XP_020721062.1; Apis dorsata, XP_006608028.1; Diachasma alloeum, XP_015108325.1; Fopius arisanus, XP_011313674.1; Polistes canadensis, XP_014599240.1; Lucilia cuprina, KNC20611.1; Drosophila melanogaster CG5811, NP_524525; Platynereis dumerilii luqin receptor, AKP24072.1; Lingula anatine, XP_013402794.1; Octopus bimaculoides, XP_014786450.1; Lymnaea stagnalis luqin receptor, AAB92258.1; Lottia gigantea, XP_009060304.1; Mizuhopecten yessoensis, OWF56520.1; Crassostrea gigas, XP_011456887.1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Final purification of the active peptides P1 (A) and P2 (B) from fraction A on CM-HPLC at pH 6.5. (C) Chromatographic comparison using RP-HPLC of natural LURY-1 peptides and synthetic LURY-1 peptides. Each peptide was applied to a Symmetry C18 column with a linear gradient elution for 80 min. Synthetic LURY-1 peptides represent identical retention time to natural peptides, P1 and P2. (A): synthetic LURY-1-2. (B): synthetic LURY-1-1. (A–C) Red bars indicate [Ca2+]i change in CHO-CG5811 cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig2-v1.jpg)
+
+**Figure 2.:** (A) Genomic organization of the lury-1/Y75B8A.11 (left) and npr-22 (right) loci and the lesions in mutant alleles. (B) Amino acid sequences of LURY-1-1 (red) and LURY-1-2 (blue) in the LURY-1 prepropeptide. lury-1 encodes an 89-residue peptide. The asterisks show glycine residues, which serve as amide donors for C-terminal amidation. The green underlines show cysteine residues which are conserved among propeptides of the luqin family. (C) Sequences comparison of C. elegans LURY-1 peptides and Drosophila dRYamides. RYamide structures conserved between the peptides are shaded. (D) Pharmacological characterization of synthetic peptides using CG5811 stably expressed in CHO cells. Dose-response relationships of changes in [Ca2+]i for LURY-1-1 (red), LURY-1-2 (blue), dRYamide-1 (orange), dRYamide-2 (brown), and FLP-7-3 (green) in CHO-CG5811 cells. (E, F) Pharmacological characterization of synthetic peptides using the A isoform (E) and the B isoform (F) of C. elegans NPR-22 stably expressed in CHO cells. Dose-response relationships of changes in [Ca2+]i for LURY-1-1 (red), LURY-1-2 (blue), and FLP-7-3 (green) in CHO-NPR-22a/b cells. Data points are means ±S.E.M. of 6 replicates for each experiment.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Responses to synthetic peptides in CHO cells transiently expressing Drosophila CG5811. Dose-response relationships of changes in [Ca2+]i for (A) dRYamide-1, dRYamide-2 and (B) LURY-1-1, LURY-1-2 in CHO-CG5811 cells. Neither dRYamides nor LURY-1 peptides induced a response in CHO cells transfected with vector alone (Mock). EC50: dRYamide-1, 4.50 × 10−11 M; dRYamide-2, 1.30 × 10−11 M; LURY-1-1, 3.66 × 10−8 M; LURY-1-2, 7.34 × 10−9 M. (C) Responses to synthetic peptides in CHO cells stably expressing the A isoform of C. elegans NPR-22. Dose-response relationships of changes in [Ca2+]i for LURY-1-1 and LURY-1-2 in CHO-NPR-22a cells. Each RFamide-containing peptide purified from C. elegans extracts had no effect on CHO-NPR-22a cells. EC50: LURY-1-1, 3.05 × 10−8 M; LURY-1-2, 2.07 × 10−8 M. (A–C) Data points are means ±S.E.M. of triplicates for each experiment.
+
+**Table 1.**
+ Active fractions of each chromatography and the amino acid sequences of the purified peptides.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Ion-exchange- HPLC Elution time (min)</th>
+      <th rowspan="2">Reversed-phase- HPLC Retention time (min)</th>
+      <th rowspan="2">Observed mass (MH+)</th>
+      <th rowspan="2">Theoretical mass (MH+)</th>
+      <th rowspan="2">Sequence</th>
+      <th rowspan="2">Precursor gene</th>
+      <th rowspan="2">Peptide name*</th>
+    </tr>
+    <tr>
+      <th>pH 6.5</th>
+      <th>pH4.8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">48–52 (Fr. A)</td>
+      <td rowspan="2">46–48</td>
+      <td>13–13.5</td>
+      <td>717.25</td>
+      <td>717.42</td>
+      <td>AVLPRY-NH2</td>
+      <td>lury-1</td>
+      <td>LURY-1-2</td>
+    </tr>
+    <tr>
+      <td>17–18</td>
+      <td>818.34</td>
+      <td>818.46</td>
+      <td>PALLSRY-NH2</td>
+      <td>lury-1</td>
+      <td>LURY-1-1</td>
+    </tr>
+    <tr>
+      <td>60–62 (Fr. B)</td>
+      <td>56–60</td>
+      <td>25.5–26.5</td>
+      <td>792.29</td>
+      <td>792.43</td>
+      <td>PNFLRF-NH2</td>
+      <td>flp-1</td>
+      <td>FLP-1-6</td>
+    </tr>
+    <tr>
+      <td>92–94 (Fr. C)</td>
+      <td>108–112</td>
+      <td>27.5–28.5</td>
+      <td>1255.45</td>
+      <td>1255.68</td>
+      <td>RNKFEFIRF-NH2</td>
+      <td>flp-12</td>
+      <td>FLP-12</td>
+    </tr>
+    <tr>
+      <td rowspan="2">94–96 (Fr. D)</td>
+      <td>86–88</td>
+      <td>15.5–16.5</td>
+      <td>901.27</td>
+      <td>901.45</td>
+      <td>KSAYMRF-NH2</td>
+      <td>flp-6</td>
+      <td>FLP-6-1</td>
+    </tr>
+    <tr>
+      <td>90–92</td>
+      <td>23–23.5</td>
+      <td>1108.33</td>
+      <td>1108.55</td>
+      <td>SPSAKWMRF-NH2</td>
+      <td>flp-22</td>
+      <td>FLP-22</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Peptide names other than LURY-1 peptides are taken from Li and Kim, 2008._
+
 We next investigated whether LURY-1 peptides could bind and activate NPR-22. LURY-1-1 and -2 induced concentration-dependent robust increases in [Ca2+]i in CHO-NPR-22a cells (EC50 = 1.44 × 10−8 and 2.18 × 10−8 M, respectively) (Figure 2E). Potencies of these peptides for CHO-NPR-22a cells were ~20 fold less than CHO-CG5811 cells. Mertens et al. reported that FLP-7-3 (SPMERSAMVRF-NH2) derived from FLP-7 was the most potent ligand for NPR-22 (Mertens et al., 2006). However, the potency of FLP-7-3 for CHO-NPR-22a cells in the Ca2+ assay was lower than that of LURY-1 peptides (EC50; submicromolar vs. subnanomolar range) (Figure 2E). Furthermore, each RFamide-containing peptide purified from fractions B to D had no effect in the assay used for CHO-NPR-22a cells (Figure 2—figure supplement 1C). When we used a stable CHO cell line expressing the B isoform of NPR-22 (CHO-NPR-22b), which is the only known splice variant of NPR-22a (Figure 2A), LURY-1 peptides showed similar efficacies and potencies to those for the CHO-NPR-22a cells (Figure 2F). Based on these findings, we propose that LURY-1-1 and -2, derived from the lury-1 gene, are endogenous ligands for NPR-22.
 
-## The lury-1 gene is expressed in two classes of pharyngeal neurons
+### The lury-1 gene is expressed in two classes of pharyngeal neurons
 
 We next investigated the in vivo expression patterns of the lury-1 and npr-22 genes. When the fluorescent reporter Venus was fused to the 3.5 kb lury-1 promoter (lury-1prom), the expression of Venus was observed only in two classes of pharyngeal neurons (Figure 3—figure supplement 1A). These neurons were identified as the M1 and M2 neurons (Figure 3A) by their morphology, position, and the co-expression of established cell markers (Kim and Li, 2004; Refai et al., 2013) (Figure 3—figure supplement 1B,C). We found that the lury-1prom::Venus reporter was robustly expressed in M1 in all larval stages and in adults, whereas its expression in M2 was not detectable in most L1–L3 worms but started to increase from the L4 stage (Figure 3A and Figure 3—figure supplement 1D). We also generated a lury-1prom::lury-1::Venus translational reporter, in which Venus is C-terminally fused in frame to the genomic lury-1-coding sequences containing introns. This translational reporter produced fluorescent signals in coelomocytes, which are macrophage-like scavenger cells that endocytose proteins secreted into the body cavity (Fares and Greenwald, 2001), as well as in the M1 and M2 neurons (Figure 3—figure supplement 1E). This result implies that the LURY-1 preproprotein is sorted into the secretory pathway and that LURY-1 peptides can reach distant cells.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig3-v1.jpg)
+
+**Figure 3.:** (A) Expression pattern of lury-1prom::Venus reporter in the head region of an adult worm. Fluorescence of lury-1prom::venus was specifically observed in the M1 and M2 pharyngeal neurons in adult worms. Asterisk, a knot-like structure in the M1 axon occasionally generated by the expression of fluorescent proteins. (B) Expression pattern of Venus reporter driven by the npr-22 promoter in the head region of an adult worm. (A, B) White scale bars, 20 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression pattern of lury-1prom::Venus reporter in an adult worm. lury-1prom::venus was specifically expressed in pharynx. (B) Co-expression of lury-1prom::mCherry and glr-2prom::Venus in M1. (C) Co-expression of lury-1prom::mCherry and flp-18prom::Venus in M2. (D) Expression of lury-1prom::Venus reporter during development. The number of worms showing detectable expression in the indicated cell type is shown at the bottom. (E) Expression pattern of lury-1prom::lury-1(with intron)::Venus translational reporter in an adult worm. Arrowheads, coelomocytes (CC). (A–E) Yellow scale bars, 100 µm. White scale bars, 20 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Expression pattern of npr-22prom::Venus reporter in an adult worm. White arrowheads, ventral nerve cord neurons. (B) Co-expression of npr-22prom::mCherry and flp-15prom::Venus in I2. (C) Co-expression of npr-22prom::mCherry and ceh-19prom::Venus in MC. (D) Co-expression of npr-22prom::mCherry and cat-1prom::Venus in RIH. (E) Co-expression of npr-22prom::mCherry and slt-1prom::Venus in RIH. (F) Co-expression of npr-22prom::Venus and ins-1prom::mCherry in AIA. (G) Co-expression of npr-22prom::mCherry and npr-1prom::Venus in AUA. (H) Co-expression of npr-22prom::mCherry and acr-5prom::Venus in B-type motor neurons. (A–H) Yellow scale bars, 100 µm. White scale bars, 20 µm.
+
 The Venus reporter driven by the 5.7 kb npr-22 promoter was expressed in many cells mainly in the head region (Figure 3B and Figure 3—figure supplement 2A); the npr-22prom::Venus expression was observed in head muscles, the I2 neurons, the MC neurons, the RIH neuron, the AIA neurons, the AUA neurons, the ASK neurons (strong in larval worms), the ASI neurons (strong in larval worms), a few B-type motorneurons in the posterior ventral nerve cord (variable), pharyngeal muscles, body wall muscles (weak), the intestine (weak), and a few classes of unidentified cells anterior to the nerve ring (Figure 3B and Figure 3—figure supplement 2A). In the I2, MC, RIH, AIA, AUA, and posterior B-type motorneurons, we confirmed the co-expression of established cell markers (Feng and Hope, 2013; Hao et al., 2001; Kim and Li, 2004; Macosko et al., 2009; Sze et al., 2002; Tomioka et al., 2006) (Figure 3—figure supplement 2B–H). Collectively, these results raise the possibility that pharyngeal LURY-1 peptides may transmit signals to a broad range of cells.
 
-## LURY-1 peptides regulate egg-laying, feeding, lifespan, and locomotion through their receptor NPR-22
+### LURY-1 peptides regulate egg-laying, feeding, lifespan, and locomotion through their receptor NPR-22
 
 To assess the physiological functions of LURY-1 peptides, we introduced the multicopy array containing a 5.7 kb fragment spanning the lury-1 locus (extrachromosomal Ex[lury-1(+)] or chromosomally integrated peIs2413[lury-1(+)]/peIs2414[lury-1(+)]) and examined the effects of the increased copy numbers of lury-1. This multicopy expression of lury-1 caused the following phenotypes. First, numbers of unlaid eggs in the uterus were decreased (Figure 4A,B). The rate of egg-laying was not affected by the multicopy lury-1 expression (Figure 4C), indicating that in this strain the rate of ovulation is normal while egg-laying is constitutively facilitated and early-stage embryos are prematurely laid (Figure 4A). These phenotypes meet the standard criteria to be classified as egg-laying constitutive (Egl-c) (Hart, 2006) and are similar to those of the mutants previously described as Egl-c (Hawasli et al., 2004; Kwok et al., 2006; Ringstad and Horvitz, 2008) (Figure 4—figure supplement 1A,B). Second, the rate of pharyngeal pumping, which is a rhythmic muscle contraction required for food intake (Avery and You, 2012), was reduced (Figure 4D). Third, adult lifespan is extended as much as 21–50% (Figure 4E, Figure 4—figure supplement 2, and Supplementary file 1). The ectopic expression of lury-1 in all neurons using the rimb-1 promoter also caused the similar phenotypes (Figure 4B,D and Supplementary file 1). Fourth, roaming behavior, which was measured by the numbers of grid squares that were entered by the worm tracks (Fujiwara et al., 2002), was attenuated (Figure 4F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig4-v1.jpg)
+
+**Figure 4.:** (A) Lateral views near the uterus of synchronized adult worms (36 hr after the L4 white-crescent stage) of wild type, Ex[lury-1(+)], and npr-22(ok1598); Ex[lury-1(+)]. Asterisk, ~30 cell stage eggs laid on agar pads during immobilization. Daggers, 2- to 4 cell stage eggs laid on an agar pad during immobilization. The number of eggs retained in the uterus is decreased in the Ex[lury-1(+)] strain. Black scale bars, 100 µm. (B) Number of unlaid eggs in the uterus of lury-1- and npr-22-related strains. N = 29, 25, 30, 24, 21, 18, 18, 24, and 18 animals (from left to right in order of each group). ***p<0.001, *p<0.05 (ANOVA with Tukey’s post-test). (C) Number of eggs laid per animal per hour. N = 8, 8, 8, 8, 8, 7, 7, 8, and 7 animals (from left to right in order of each group). ANOVA with Tukey’s post-test. n.s., not significant. (D) Pharyngeal pumping rate of lury-1- and npr-22-related strains. N = 25, 25, 26, 27, 17, 26, 17, 26, and 25 animals (from left to right in order of each group). ***p<0.001 (ANOVA with Tukey’s post-test). (E) Lifespans of lury-1- and npr-22-related strains. Details are shown in Supplementary file 1. (F) Roaming behavior of lury-1- and npr-22-related strains. Tracks of worm movement generated on food over a 4 hr period were examined. N = 12 animals. ***p<0.001 (ANOVA with Tukey’s post-test). (A–F) All strains have the myo-3prom::venus transgene as a transgenic marker. Bars represent mean ±S.E.M.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Number of unlaid eggs in the uterus of adult goa-1(n1134), egl-30(js176gf), eat-16(ce71), and egl-19(n2368gf) worms (36 hr after the L4 white-crescent stage). N = 12 animals. ***p<0.001 (ANOVA with Dunnett’s post-test). (B) Number of eggs laid per animal per hour. N = 12 animals. ANOVA with Dunnett’s post-test. n.s., not significant. Bars represent mean ±S.E.M.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Lifespans of peIs2413 (A) and peIs2414 (B) strains, in which the lury-1(+) transgene is integrated into genomic DNA. The results of wild type and npr-22(ok1598) are the same as shown in Figure 4E. Details are shown in Supplementary file 1.
 
 Importantly, these Egl-c, slow-pumping, long-lived, and reduced-roaming phenotypes were all largely suppressed by the deletion of npr-22 (Figure 4A,B,D,E,F, Figure 4—figure supplement 2, and Supplementary file 1), indicating that lury-1(+) functions upstream of npr-22.
 
 To examine whether LURY-1 peptides are responsible for the effects of the multicopy expression of the lury-1 gene, we next administered synthetic LURY-1 peptides into adult worms using a peptide microinjection protocol (Rogers et al., 2003). When a 10 µM solution of either LURY-1-1 or LURY-1-2 was injected into wild-type worms, number of eggs retained in the uterus and pharyngeal pumping rate were reduced (Figure 5A,B), similar to worms carrying the lury-1(+) transgenic array (Figure 4B,D). These effects of the injection of LURY-1 peptides were not observed in the npr-22(ok1598) mutants (Figure 5A,B). On the other hand, neither the administration of a 10 µM solution of another putative NPR-22 ligand, FLP-73, nor the multicopy expression of its precursor gene flp-7(+) caused any Egl-c or slow-pumping phenotype (Figure 5—figure supplement 1A–D). Taken together, these results support that both LURY-1-1 and LURY-1-2 act through NPR-22 to control multiple processes.
 
-## LURY-1 peptides may transmit food signals
+![Figure 5.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Effects of administration of LURY-1 peptides on the number of retained eggs (A) and pharyngeal pumping (B). Each of synthetic LURY-1 peptides was injected to wild-type and npr-22(-) worms at a concentration of 10 µM. M9 dilution buffer was injected as a control. N = 16 animals. ***p<0.001 compared with buffer controls (ANOVA with Dunnett’s post-test). n.s., not significant. Bars represent mean ±S.E.M.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Number of unlaid eggs in the uterus of animals carrying an extrachromosomal flp-7(+) array. N = 18 animals. (B) Pharyngeal pumping rate of animals carrying an extrachromosomal flp-7(+) array. N = 16 animals. (C) Number of unlaid eggs in the uterus of animals into which synthetic FLP-7–3 peptide was injected at a concentration of 10 µM. N = 16 animals. (D) Pharyngeal pumping rate of animals into which synthetic FLP-7–3 peptide was injected at a concentration of 10 µM. N = 16 animals. (C, D) M9 dilution buffer was injected as a control. ns., not significant (two-tailed t test). Bars represent mean ±S.E.M.
+
+### LURY-1 peptides may transmit food signals
 
 When a proneuropeptide is tagged with a fluorescent protein, the soluble fluorescent protein is considered to be packaged into dense core vesicles (DCVs) together with the processed active neuropeptide(s) and the fluorescence can be used to monitor DCV release (Sasidharan et al., 2012; Sieburth et al., 2007). In C. elegans, the exocytosis of fluorescent proteins can be assessed by quantifying the fluorescence in coelomocytes, into which the proteins in the body cavity are concentrated (Fares and Greenwald, 2001). To examine under which conditions LURY-1 peptides are secreted, we performed this coelomocyte uptake assay, which has been used to evaluate the secretion of neuropeptides in previous studies (Ch’ng et al., 2008; Hao et al., 2012; Palamiuc et al., 2017; Rabinowitch et al., 2016; Sasidharan et al., 2012; Schild et al., 2014; Sieburth et al., 2007). When Venus is C-terminally fused to the LURY-1 coding region, the fluorescence of the Venus reporter in coelomocytes was decreased in starved worms, and was rapidly restored by subsequent refeeding (Figure 6A,B). When GFP is fused with a signal sequence for secretion and expressed in body wall muscles, the fluorescence is also accumulated in coelomocytes (Fares and Greenwald, 2001) (Figure 6—figure supplement 1A). This fluorescence reporting the constitutive secretion from muscles was unchanged by starvation or subsequent refeeding (Figure 6—figure supplement 1B). Moreover, when Venus alone was expressed under the lury-1 promoter, the fluorescence in M1 and M2 was unaffected by the presence or absence of food (Figure 6—figure supplement 1C). Therefore, the changes in the fluorescence derived from the lury-1prom::lury-1::Venus reporter in coelomocytes (Figure 6A,B) were not likely caused by the modification of the activity of coelomocytes or the lury-1 promoter. Collectively, these results suggest that the secretion of LURY-1 peptides is positively controlled by the presence of food.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig6-v1.jpg)
+
+**Figure 6.:** (A) The fluorescence of lury-1prom::lury-1::venus reporter in worms that had been fed (top), fasted (middle), or fasted and refed (bottom). White arrowheads, coelomocytes (CC). Scale bars, 100 μm. (B) The secretion of the LURY-1::Venus reporter, expressed as ratios of fluorescence in coelomocytes to that in the M1 and M2 cell bodies, was quantified in worms that had been fed (naive), starved for two hours, or refed for 30–120 min after the 2 hr starvation. N = 15, 20, 16, 16, and 16 animals (from left to right in order of each condition). ***p<0.001 (ANOVA with Dunnett’s post-test). (C) Changes in number of unlaid eggs in the uterus. Animals were starved for two hours, and then refed for 15, 30, or 60 min. The results of animals that did not experience starvation are also shown (‘naïve’). N = 16, 15, 16, 16, and 15 animals (from left to right in order of each condition). ***p<0.001, **p<0.01, *p<0.05 compared with wild-type animals (ANOVA with Dunnett’s post-test). (D) Number of eggs laid per animal during 30 min refeeding. After animals were starved for two hours, they were transferred back to fresh E. coli-seeded plates. N = 16 animals. **p<0.01, *p<0.05 compared with wild-type animals (ANOVA with Dunnett’s post-test). (E) Changes in pharyngeal pumping rate. Worms were starved for two hours, and then refed for 15, 30, 60, or 120 min. The results of animals that did not experience starvation are also shown (”naive’). ***p<0.001, **p<0.01 compared with wild-type animals. ns., not significant. Bars represent mean ±S.E.M.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Coelomocyte uptake of signal sequence-tagged GFP (ssGFP), which was expressed in body wall muscles under the myo-3 promoter. White arrowheads, coelomocytes. Scale bar, 100 μm. (B) The fluorescence of myo-3prom::ssGFP in coelomocytes was quantified in worms that had been fed (naive), starved for two hours, or refed for one hour after the 2 hr starvation. N = 18 animals. (C) The fluorescence of lury-1prom::Venus in the cell bodies of M1, M2L, and M2R was quantified in worms that had been fed (naive), starved for two hours, or refed for one hour after the 2 hr starvation. The peak fluorescence intensities in the three neurons were averaged. N = 19 animals. ns., not significant (ANOVA with Dunnett’s post-test). Bars represent mean ±S.E.M.
 
 The deletion of lury-1 or npr-22 (Figure 2A) by itself did not cause egg-laying defective, fast-pumping, short-lived, or increased-roaming phenotype under normal conditions (Figure 4B,D,E,F and Supplementary file 1), except for a weak egg-laying defective phenotype shown by the lury-1(gk961835) mutants (Figure 4B). These observations suggested the possibility that LURY-1 peptides exert their effects only under specific conditions. Considering that lury-1 is expressed in the pharyngeal M1 and M2 neurons, LURY-1 peptides might transmit the changes in the pharyngeal activity.
 
 To address this possibility, we examined the egg-laying and pharyngeal pumping behavior during refeeding after fasting, the period during which pharyngeal pumping is highly activated and subsequently suppressed (You et al., 2008) (Figure 6E, WT). In wild-type worms, the egg-laying behavior is dramatically inhibited upon food deprivation but it resumes if they are returned to food, which apparently increases the offspring's chance of growing in a food-rich environment (Dong et al., 2000). We found that the lury-1(gk961835) and npr-22(ok1598) mutants normally retained eggs in their body after 2 hr starvation (Figure 6C). However, in the lury-1(gk961835) and npr-22(ok1598) mutants, the numbers of eggs laid during the initial 30 min refeeding period were decreased (Figure 6D), and the numbers of unlaid eggs in the uterus returned to baseline of fed worms more slowly during the refeeding period than in wild type (Figure 6C). We also found that the lury-1(gk961835) and npr-22(ok1598) mutants normally elevated their pharyngeal pumping shortly after refeeding, but showed their satiety-induced suppression of pharyngeal pumping (You et al., 2008) more slowly than wild type (Figure 6E). These results might suggest that the activities of LURY-1 peptides and NPR-22 are latent under normal culture conditions and that LURY-1 peptides exert their actions under certain conditions that induce hyperactivation of pharynx, such as abrupt refeeding after starvation, along with other signals such as insulin and TGF-β (You et al., 2008).
 
-## NPR-22 acts in distinct cells to control feeding and egg-laying
+### NPR-22 acts in distinct cells to control feeding and egg-laying
 
 To determine where the LURY-1 peptides-mediated signals are received, we expressed the npr-22 cDNA in the peIs2413[lury-1(+)]; npr-22 mutants using various cell-specific promoters and examined whether the effects of multicopy expression of lury-1(+) were restored.
 
@@ -83,9 +226,25 @@ When either of the two npr-22 isoforms (npr-22a and npr-22b; Figure 2A) was expr
 
 We found that the expression of npr-22a driven by the ceh-19 promoter, which induces the expression in MC, ADF, and PHA (Feng and Hope, 2013) (Figure 3—figure supplement 2C), was sufficient for the mediation of the suppressive effects of lury-1(+) on feeding (Figure 7A). In contrast, when npr-22a was expressed in npr-22-expressing cells other than MC (driven by the ins-1, ges-1, cat-1, flp-15, myo-2, myo-3, and acr-2 promoters), in ADF (driven by the cat-1 promoter), or in PHA (driven by the flp-15 promoter), feeding was not affected in the peIs2413[lury-1(+)]; npr-22 background (Figure 7A and Figure 7—figure supplement 1B), suggesting that the expression of npr-22a in MC is important. To further restrict the expression site of npr-22 to the left/right pair of the single MC class (MCL and MCR), we next employed the FLP-FRT gene activation system (Davis et al., 2008), in which FLP-mediated recombination between two FRT sites allows the transgene expression (Davis et al., 2008) (Figure 7B). When npr-22prom::FLP and ceh-19prom::FRT::terminator::FRT (FTF)::npr-22a::sl2::mCherry transgenes were introduced into worms, the mCherry transcriptional reporter placed downstream of the trans-spliced leader sequence SL2 was specifically expressed in the two MC neurons (Figure 7C), in which both npr-22prom and ceh-19prom are active (Figure 3—figure supplement 2C). The MC-specific expression of npr-22a using this system was sufficient for the mediation of the suppressive effects of lury-1(+) on feeding in the npr-22 mutant background (Figure 7D). Therefore, we conclude that NPR-22 is likely to act in MC, which are known to be important neurons for the stimulation of food pumping (Raizen et al., 1995; Trojanowski et al., 2014), to control feeding. The expression of npr-22a driven by the ceh-19 promoter also rescued the shortened lifespan of peIs2413[lury-1(+)]; npr-22 (Figure 7E), implying the relationship between feeding suppression and extended lifespan mediated by lury-1(+).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig7-v1.jpg)
+
+**Figure 7.:** (A) Pharyngeal pumping rate of animals expressing npr-22a under indicated promoters. N = 13, 12, 12, 12, 12, 12, 12, 12, 12, and 12 animals (from left to right in order of each group). (B) Schematic of the FLP recombinase technology to restrict the npr-22 expression to single cells. (C) MC-specific expression of the mCherry reporter driven by the combination of npr-22prom::FLP and ceh-19prom::FTF::npr-22::sl2::mCherry transgenes. The magnified view of the head is shown in the lower panels. Yellow scale bar, 100 µm. White scale bar, 20 µm. (D) Pharyngeal pumping rate of animals expressing npr-22a specifically in RIH or MC. N = 16 animals. (E) Lifespans of animals expressing npr-22a driven by the ceh-19 or cat-1 promoter. Details are shown in Supplementary file 1. (A, D) ***p<0.001, *p<0.05 compared with npr-22(ok1598); peIs2413 animals carrying only the transformation marker (−) (ANOVA with Dunnett’s post-test). Bars represent mean ±S.E.M.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Pharyngeal pumping rate of animals expressing the npr-22a or npr-22b isoform. N = 12 animals. (B) Pharyngeal pumping rate of animals expressing npr-22a under the acr-2 promoter. N = 16 animals. (A, B) ***p<0.001, **p<0.01 compared with npr-22(ok1598); peIs2413 animals carrying only the transformation marker (−) (ANOVA with Dunnett’s post-test). n.s., not significant. Bars represent mean ±S.E.M.
+
 In the regulation of egg-laying, the Egl-c phenotype reappeared when npr-22a was expressed in serotonergic/dopaminergic neurons under the cat-1 promoter in the peIs2413[lury-1(+)]; npr-22 strain (Figure 8A). The RIH neuron is the only cell in which the expression patterns induced by the npr-22 and cat-1 promoters overlap (Figure 3—figure supplement 2D). Moreover, the Egl-c phenotype was also restored by the expression of npr-22a under the slt-1 promoter (Figure 8A), which is also active in the RIH neuron (Hao et al., 2001) (Figure 3—figure supplement 2E). We also observed that the RIH-specific expression of npr-22a driven by the FLP-FRT gene activation system using npr-22prom and cat-1prom (Figures 7B and 8B) rescued the npr-22 mutant phenotype in the egg-laying regulation (Figure 8C), whereas the expression of npr-22a in npr-22-expressing cells other than RIH had no effects (Figure 8A,C and Figure 8—figure supplement 1B). These results suggest that the action of NPR-22 in RIH is important for the facilitation of egg-laying.
 
-## Serotonin signaling may act downstream of the LURY-1 peptides in egg-laying regulation
+![Figure 8.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig8-v1.jpg)
+
+**Figure 8.:** (A) Number of unlaid eggs in the uterus of animals expressing npr-22a under indicated promoters. N = 18, 18, 18, 19, 18, 18, 20, 18, 18, 19, and 18 animals (from left to right in order of each group). (B) RIH-specific expression of the mCherry reporter driven by the combination of cat-1prom::FLP and npr-22prom::FTF::npr-22::sl2::mCherry transgenes. The magnified view of the head is shown in the lower panels. Yellow scale bar, 100 µm. White scale bar, 20 µm. (C) Number of unlaid eggs in the uterus of animals expressing npr-22a specifically in RIH or MC. N = 16 animals. (A, C) ***p<0.001 compared with npr-22(ok1598); peIs2413 animals carrying only the unc-122prom::mCherry transformation marker (−) (ANOVA with Dunnett’s post-test). Bars represent mean ±S.E.M.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/28877/elife-28877-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Number of unlaid eggs in the uterus of animals expressing the npr-22a or npr-22b isoform. N = 18, 18, 18, 18, 16, and 18 animals (from left to right in order of each group). (B) Number of unlaid eggs in the uterus of animals expressing npr-22a under the acr-2 promoter. N = 16 animals. (A, B) ***p<0.001 compared with npr-22(ok1598); peIs2413 animals carrying only the transformation marker (−) (ANOVA with Dunnett’s post-test). n.s., not significant. Bars represent mean ±S.E.M. Additional files.
+
+### Serotonin signaling may act downstream of the LURY-1 peptides in egg-laying regulation
 
 The RIH neuron does not express serotonin [5-hydroxytryptamine (5-HT)] biosynthesis enzymes but uptake serotonin from extracellular space through MOD-5/serotonin reuptake transporter (SERT) (Jafari et al., 2011), and serotonin regulates many food-associated processes including egg-laying (Chase and Koelle, 2007; Sze et al., 2000). To examine whether serotonin signaling is involved in the LURY-1 peptides-mediated control of egg-laying, we examined the genetic interaction between lury-1 and genes for monoaminergic signaling.
 
@@ -113,62 +272,62 @@ Biochemical identification and characterization of bioactive peptides have been 
 
 ## Materials and methods
 
-## Strains and culture
+### Strains and culture
 
 Bristol N2 was used as the wild-type C. elegans. Worms were raised on NGM using the standard methods (Brenner, 1974). The Escherichia coli strain HB101 was used as a food source. Strains used in this study are listed in Supplementary file 2.
 
-## Construction of NPR-22-expressing cells
+### Construction of NPR-22-expressing cells
 
 The full-length cDNA of C. elegans NPR-22a (Y59H11AL.1; GenBank accession number NM_001028369.2; residues 12–1343) was obtained by RT-PCR, with C. elegans cDNA as the template. The sense and antisense primers were 5′-cacccgtcatctaattcgtgagcaaa-3′ and 5′-tctatggtcttctatagctttccac-3′, respectively. The full-length cDNA of C. elegans NPR-22b (Y59H11AL.1; GenBank accession number NM_001028370.3; residues 35–1339) was obtained by gene synthesis (Eurofins Genomics, Tokyo, Japan). The amplified cDNA was cloned into a pcDNA3.2 vector (Invitrogen, Tokyo, Japan) and transfected into Chinese hamster ovary cells deficient of dihydrofolate reductase (CHO-dhfr-, provided by Dr. Kaoru Miyamoto and used as a standard cell line in the Kojima, Miyazato, and Ida laboratories). The CHO cell line was tested negative for mycoplasma contamination using VenorGem Classic Mycoplasma Testing PCR Kit (Minerva Biolabs, Berlin, Germany), and was not found to be on the list of commonly misidentified cell lines (International Cell Line Authentication Committee). Thereafter, stably expressing cells were selected using 1 mg/ml G418 (Nacalai Tesque, Kyoto, Japan). The selected cell lines, CHO-NPR-22a-line 7-3 and CHO-NPR-22b-line 11-2, which showed the highest expression of NPR-22a and NPR-22b mRNA, respectively, were used in this study.
 
-## Purification of LURY-1-1 and LURY-1-2
+### Purification of LURY-1-1 and LURY-1-2
 
 During the purification process, the activity of LURY-1 peptides was followed by measuring changes in intracellular calcium concentrations ([Ca2+]i) with the FlexStation 3 fluorometric imaging plate reader (Molecular Devices, CA, USA) in a cell line stably expressing Drosophila CG5811 (CHO-CG5811-line 7-4), as described previously (Ida et al., 2011). Boiled frozen worms (100 g) were used as the starting material. A basic peptide fraction (SP-III) was prepared as described previously (Ida et al., 2007) and then fractionated on a Sephadex G-50 gel filtration column (1.7 × 130 cm; GE Healthcare, Tokyo, Japan). A portion (0.002%) of each fraction, equivalent to 2 mg frozen weight, was subjected to the assay using CHO-CG5811 cells. The active fractions were separated by CM-HPLC on a TSK CM-2SW column (4.6 × 250 mm; Tosoh, Tokyo, Japan) with a linear gradient of 0.01 to 0.6 M ammonium formate (pH6.5) in the presence of 10% acetonitrile (ACN) at a flow rate of 1 ml/min over 2 hr. Four distinct active fractions (fractions A–D, Figure 1B) were further purified by fractionation on the same column at pH 4.8. The active fractions were separated by RP-HPLC using a Symmetry C18 column (3.9 × 150 mm, Waters, MA, USA) with a linear gradient of 10% to 60% ACN containing 0.1% trifluoroacetic acid (TFA) at a flow rate of 1 ml/min for 80 min. The active peaks were finally purified manually by RP-HPLC using a Chemcosorb 3ODS-H column (2.1 × 75 mm; Chemco, Osaka, Japan) with a linear gradient of 10% to 60% ACN/0.1% TFA at a flow rate of 0.2 ml/min for 80 min. The final purified peptides were analyzed with a protein sequencer (model 494; Applied Biosystems, CA, USA) and a mass spectrometry (TOF/TOF 5800 system; AB Sciex, MA, USA).
 
-## Cloning of prepro-LURY-1 cDNA
+### Cloning of prepro-LURY-1 cDNA
 
 A tblastn search of the C. elegans nucleotide databases was performed using the amino-acid sequence of the purified peptides, and a C. elegans mRNA sequence (lury-1/Y75B8A.11; GenBank accession number NM_001268231.1) derived from an annotated nucleotide sequence was obtained. Based on this sequence, we designed sequence-specific primers (5′-aatccaatcatgctcacaagg-3′; 5′-gagaggtttcacaaaaagaacg-3′). RT-PCR was performed with C. elegans cDNA as the template. The candidate PCR product was subcloned into the pCR-II TOPO vector (Invitrogen) and sequenced by a DNA sequencer (model 3100; Applied Biosystems). The cDNA sequence was determined from six independent clones.
 
-## Peptides
+### Peptides
 
 LURY-1-1, LURY-1-2, and FLP-7-3 were chemically synthesized by Scrum Inc. (Tokyo, Japan). FLP-1-6 (PNFLRF-NH2), FLP-6-1 (KSAYMRF-NH2), FLP-12 (RNKFEFIRF-NH2), and FLP-22 (SPSAKWMRF-NH2) were chemically synthesized by Peptide 2.0 Inc. (VA, USA).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Animals were mounted on 5% agar with 10 mM NaN3. Soon after immobilization, images were captured using a Leica HCX PL APO 40×/0.85 CORR CS objective or an HC PL APO 10×/0.40 CS objective on a Leica TCS-SP5 confocal microscope. For examination of effects of starvation and refeeding (Figure 6A,B and Figure 6—figure supplement 1B,C), animals that were starved for two hours in basal buffer (50 mM NaCl, 5 mM potassium phosphate [pH 6.0], 1 mM CaCl2, 1 mM MgSO4, 0.05% gelatin) or refed on fresh HB101-seeded NGM plates again for the indicated times after the 2 hr starvation were observed.
 
-## Egg-in-worm assays
+### Egg-in-worm assays
 
 The number of unlaid eggs in the uterus was quantified as described previously (Koelle and Horvitz, 1996). White-crescent stage L4 worms were transferred to fresh HB101-seeded NGM plates and were allowed to grow for 36–38 hr at 20°C. Synchronized adult worms were then individually dissolved in five-times diluted commercial bleach solution (Kitchen Heiter, Kao, Tokyo, Japan; final sodium hypochlorite concentration is ~1%) in a flat-bottom 96-well plate and their eggs were counted under a dissecting microscope. For examination of effects of starvation and refeeding (Figures 6C and 9B), synchronized adult worms that were starved for two hours in basal buffer (50 mM NaCl, 5 mM potassium phosphate [pH 6.0], 1 mM CaCl2, 1 mM MgSO4, 0.05% gelatin) or refed on fresh HB101-seeded NGM plates again for the indicated times after the 2 hr starvation were dissolved.
 
-## Egg-laying assays
+### Egg-laying assays
 
 White-crescent stage L4 worms were transferred to fresh HB101-seeded NGM plates and were allowed to grow for 36–38 hr at 20°C. The worms were again transferred to fresh HB101-seeded NGM plates gently and were allowed to lay eggs for 1 hr at 20°C. For examination of effects of starvation and refeeding (Figure 6D), synchronized adult worms were starved for two hours in basal buffer (50 mM NaCl, 5 mM potassium phosphate [pH 6.0], 1 mM CaCl2, 1 mM MgSO4, 0.05% gelatin) and refed on fresh HB101-seeded NGM plates for 30 min. Laid eggs were counted under a dissecting microscope.
 
-## Pharyngeal pumping assays
+### Pharyngeal pumping assays
 
 Young adult worms were transferred to fresh HB101-seeded NGM plates and left for more than two hours at room temperature (23°C). Food pumping rate was then measured on the plates by counting grinder movements in the pharyngeal terminal bulb with a Zeiss (Oberkochen, Germany) Axiovert S100 inverted microscope. For examination of effects of starvation and refeeding (Figure 6E), worms that were starved for two hours in basal buffer (50 mM NaCl, 5 mM potassium phosphate [pH 6.0], 1 mM CaCl2, 1 mM MgSO4, 0.05% gelatin) were transferred to HB101-free NGM plates (time ‘0’) or refed on fresh HB101-seeded NGM plates again for the indicated times (time ‘15’, '30’, '60’, and '120’) after the 2 hr starvation and their pumping rate was immediately measured.
 
-## Lifespan assays
+### Lifespan assays
 
 Lifespan assays were performed as previously described (Ohno et al., 2014) with modifications. Animals were raised at 20°C until the L4 stage and then gently transferred to HB101-seeded plates containing 10 µg/ml 5-fluorodeoxyuridine (FUdR). Following transfer (day 0), the plates were incubated at 22°C. Animals were observed every other day and scored as dead when they no longer responded to gentle touch with a platinum wire.
 
-## Roaming assays
+### Roaming assays
 
 Young adult worms were singly and gently transferred to fresh HB101-seeded NGM plates (diameter: 6 cm) and left for four hours in the dark at room temperature (23°C). After removing the worms, each plate was superimposed on a grid containing 5 mm squares and the number of squares that were entered by the worm tracks was counted.
 
-## Microinjection of synthetic peptides
+### Microinjection of synthetic peptides
 
 Microinjection of peptides was performed as previously described (Rogers et al., 2003) with modifications. Synthetic LURY-1-1, LURY-1-2, or FLP-7-3 was diluted to a concentration of 10 µM in M9 buffer and then filtered through 0.22 µm filters (Merck Millipore, Billerica, MA). Each peptide solution or M9 buffer (control) was injected slightly posterior to the dorsal part of the pharyngeal terminal bulb using standard microinjection techniques (Mello et al., 1991). Each solution was injected until the diameter of its spread reached approximately 5–10 µm (one sixth to one third of the diameter of the terminal bulb of pharynx). The estimated injected amount is around 100 fL. The injected worms were transferred to fresh HB101-seeded NGM plates and incubated at room temperature (23°C). Their pharyngeal pumping rate and the number of eggs in their uterus were then counted 3 hr and 4 hr after microinjection, respectively.
 
-## Germ-line transformation and integration of transgenes
+### Germ-line transformation and integration of transgenes
 
 Expression constructs were injected at 2–50 ng/µl along with a co-injection marker and pPD49.26 (a gift from A. Fire) as a carrier DNA. We utilized the co-injection marker transgenes myo-3prom::venus, lin-44prom::gfp, or unc-122prom::mCherry injected at 10–20 ng/µl. In each case, the total concentration of injected DNA was 100 ng/µl. In some strains (Supplementary file 2), the transgenes were amplified via PCR and the obtained linear vector-free DNA fragments were injected at 20–50 ng/µl after purification (Etchberger and Hobert, 2008). lury-1(+) genomic DNA (5,689 bp) was amplified via PCR using primers 5′-ctacagtaatcctaccgcactc-3′ and 5′-tattcaaatcacgggcggag-3′. For peIs2413 and peIs2414 strains, chromosomal integration of the lury-1(+) genomic DNA and the co-injected myo-3prom::venus transformation marker was induced using UV irradiation (300 µJ/cm2). Each integrated strain was backcrossed six times with N2. flp-7(+) genomic DNA (4981 bp) was amplified via PCR using primers 5′-cactatgcggtcattacacgtc-3′ and 5′-aggcatcctctatcccaatataac-3′.
 
-## Transgene constructions
+### Transgene constructions
 
 The construction of pDEST-venus, pDEST-mCherry, pENTR-ins-1prom, pENTR-ges-1prom, pENTR-myo-3prom, pENTR-rimb-1prom (pENTR-H20p), pG-myo-3prom::venus, and pG-unc-122prom::mCherry was described previously (Ohno et al., 2014; Tomioka et al., 2006). For pDEST-npr-22a and pDEST-npr-22b, the npr-22a and npr-22b cDNAs, respectively, obtained by PCR from the NPR-22-pcDNA3.2 expression vectors (see above), were inserted into the NheI-KpnI sites of the pPD-DEST vector. For pDEST-FTF::npr-22a::SL2::mCherry, the FRT-terminator (let-858 3′-UTR)-FRT fragment (FTF), npr-22a cDNA, the trans-spliced leader sequence SL2, and mCherry cDNA were concatenated and cloned into the pPD-DEST vector by a PCR-based method. For pDEST-FLP, the MluI-NheI fragment from pWD79-2RV (a gift from E. M. Jorgensen) was cloned into the pPD-DEST vector. The PCR-amplified myo-2 promoter (1.2 kb) and acr-2 promoter (1.9 kb) were cloned into pDONR201 (Invitrogen) through BP reaction (site-specific recombination) to create pENTR-myo-2prom and pENTR-acr-2prom, respectively. For pENTR-lury-1prom, pENTR-npr-22prom, pENTR-flp-18prom, pENTR-flp-15prom, pENTR-ceh-19prom, pENTR-cat-1prom, pENTR-slt-1prom, and pENTR-acr-5prom, the PCR-amplified lury-1 promoter (3.5 kb), npr-22 promoter (5.7 kb), flp-18 promoter (4.2 kb), flp-15 promoter (2.4 kb), ceh-19 promoter (1.5 kb), cat-1 promoter (4.0 kb), slt-1 promoter (4.4 kb), and acr-5 promoter (4.2 kb), respectively, were inserted into the pENTR1A vector (Invitrogen). The expression constructs of pG-lury-1prom::venus, pG-lury-1prom::mCherry, pG-npr-22prom::venus, pG-npr-22prom::mCherry, pG-flp-18prom::venus, pG-flp-15prom::venus, pG-ceh-19prom::venus, pG-cat-1prom::venus, pG-slt-1prom::venus, pG-ins-1prom::venus, pG-acr-5prom::venus, pG-npr-22prom::npr-22a, pG-npr-22prom::npr-22b, pG-rimb-1prom::npr-22a, pG-ceh-19prom::npr-22a, pG-ins-1prom::npr-22a, pG-ges-1prom::npr-22a, pG-cat-1prom::npr-22a, pG-flp-15prom::npr-22a, pG-myo-2prom::npr-22a, pG-myo-3prom::npr-22a, pG-slt-1prom::npr-22a, pG-acr-2prom::npr-22a, pG-npr-22prom::FLP, pG-cat-1prom::FLP, pG-npr-22prom::FTF::npr-22a::SL2::mCherry, and pG-ceh-19prom::FTF::npr-22a::SL2::mCherry were created by LR reactions (site-specific recombination) between the pENTR plasmids and the pDEST plasmids (Ohno et al., 2014). For pG-lury-1prom::lury-1(with intron)::venus, the genomic coding region of lury-1 (from the start codon to the last codon before the stop codon) was fused to venus::unc-54 3′-UTR by a PCR-based method and cloned into the XhoI and ApaI sites of pG-lury-1prom::venus. The expression constructs of lury-1(+) genomic DNA (5,689 bp, see above), flp-7(+) genomic DNA (4,981 bp, see above), rimb-1prom::lury-1(+), glr-2prom::venus and npr-1prom::venus were created by PCR-based methods. Further details of all constructs will be provided upon request.
 
-## Data analyses
+### Data analyses
 
 No statistical methods were used to predetermine sample size, although our sample sizes are similar to those previously reported. Most experiments were repeated on two to four separate days. Statistic analyses were performed using Prism v.5 (GraphPad software, San Diego, CA). We did not exclude any data in our statistic analyses. Data in all bar graphs are presented as mean ±S.E.M.

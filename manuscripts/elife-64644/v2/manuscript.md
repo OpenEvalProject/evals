@@ -37,31 +37,211 @@ To answer these questions about temporal pattern and synergy, we developed a sin
 
 ## Results
 
-## Model validation
+### Model validation
 
 To investigate how temporal pattern of synaptic activity determines which pathway in the ERK signaling cascade (Figure 1A, Figure 1—source data 1–5) dominates in dendritic spines of hippocampal CA1 pyramidal neurons, we developed a single-compartment, stochastic reaction–diffusion model of pathways activating ERK. The model included two calcium signaling pathways (RasGRF and SynGap) and three cAMP signaling pathways (Epac, PKA, and the βγ subunit of Gi). The model was built by merging and adapting two existing models of synaptic plasticity in hippocampal neurons (Jain and Bhalla, 2014; Jȩdrzejewska-Szmek et al., 2017). These previously published models were modified by adding SynGap and RasGRF, which are critical for ERK activation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig1-v2.jpg)
 
-**Figure 1.:** (A) Five pathways are included in the model: calcium activation of (1) RasGRF followed by RasGTP production or (2) CaMKII phosphorylation of SynGap followed by increasing RasGTP and Rap1GTP lifetime; cAMP activation of (3) Epac or (4) PKA phosphorylation of Src family kinase, leading to Rap1GTP production; Gi subtype of GTP binding protein (Giβγ) (5) recruits Src family kinase followed by activation of RasGTP. (B) Four effects of CaMKII on SynGap were evaluated. KCK: No autophosphorylation of CaMKII, KSyn1: No pCaMKII binding to SynGap, KSyn2: SynGap binds to pCaMKII, but cannot be phosphorylated, KSyn3: SynGap phosphorylated, but not dispersed to the dendrite. (C) LTP protocols: four trains of 100 Hz (each 1 s duration) spaced by different intertrial intervals: 3, 20, 40, 80, and 300 s.Figure 1—source data 1.Figure 1—source data 2.Figure 1—source data 3.Figure 1—source data 4.Figure 1—source data 5.Figure 1—source data 6.
+**Figure 1.:** (A) Five pathways are included in the model: calcium activation of (1) RasGRF followed by RasGTP production or (2) CaMKII phosphorylation of SynGap followed by increasing RasGTP and Rap1GTP lifetime; cAMP activation of (3) Epac or (4) PKA phosphorylation of Src family kinase, leading to Rap1GTP production; Gi subtype of GTP binding protein (Giβγ) (5) recruits Src family kinase followed by activation of RasGTP. (B) Four effects of CaMKII on SynGap were evaluated. KCK: No autophosphorylation of CaMKII, KSyn1: No pCaMKII binding to SynGap, KSyn2: SynGap binds to pCaMKII, but cannot be phosphorylated, KSyn3: SynGap phosphorylated, but not dispersed to the dendrite. (C) LTP protocols: four trains of 100 Hz (each 1 s duration) spaced by different intertrial intervals: 3, 20, 40, 80, and 300 s.
 
 To validate the model, we replicated the results from several published experiments. First, we simulated an experiment measuring RasGTP in response to glutamate uncaging at 0.5 Hz with 0 mM extracellular Mg2+ (Harvey et al., 2008), by delivering a single pulse of 0.5 µM of calcium for 60 s. RasGTP dynamics are qualitatively consistent with experimental measurements of Harvey et al., 2008 (Figure 2A). Second, we mimicked an L-LTP experiment that applied two trains of 100 Hz frequency spaced by 20 s intervals (Kasahara et al., 2001), by injecting 5 µM calcium, 1 µM cAMP, and 0.1 µM Giβγ. The simulation shows qualitative match of ERK activation to the experimental model as ERK peaks around 3 min after stimulation and returns to basal about 30 min after stimulation (Figure 2B). Third, we show that cAMP-bound Epac and phosphorylation of PKA substrates are similar to that measured in hippocampal neurons (Figure 2—figure supplement 1A and B). Fourth, we show that our parameter optimization was successful, allowing us to reproduce CaMKII activation (Figure 2—figure supplement 1C) and CaMKII phosphorylation of SynGap (Figure 2—figure supplement 1D). Additional validations, comparing results to knockout experiments, are shown after the L-LTP results. In summary, the model is based on two, well-constrained, and validated signaling pathway models and is further validated experimentally with several systems level experiments.
 
-## Single-pulse stimuli: maximal ERK activation requires multiple pathways
+![Figure 2.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time course of RasGTP in response to 30 pulses at 0.5 Hz (Harvey et al., 2008). RasGTP dynamics are qualitatively consistent with experimental measurements. (B) Relative increase of ppERK in response to L-LTP stimuli (two bursts of 100 Hz for 1 s, bursts separated by 20 s) (Kasahara et al., 2001). Simulation shows qualitative match of ERK activation to the experimental model as ppERK peaks around 3 min after stimulation and returns to basal about 30 min after stimulation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Epac activity in response to 1 µM ISO in the model is similar to dynamics of experimentally measured Epac fluorescence (Luczak et al., 2017). (B) Time course of PKA phosphorylation of Src in response to 1 µM ISO is similar to the PKA FRET sensor activity (Luczak et al., 2017). (C, D) Parameter optimization matches experimental data of CaMKII (De Koninck and Schulman, 1998) (C) and SynGap phosphorylation (Walkup et al., 2015) (D).
+
+### Single-pulse stimuli: maximal ERK activation requires multiple pathways
 
 In order to assess whether multiple pathways are required for maximal ERK activation, both single pathway and multi-pathway dynamics were monitored. Simulation experiments used different amplitude ranges (for 1 s) and different durations of the input to evaluate doubly phosphorylated ERK (ppERK) (Table 1). We assessed whether the ERK response is graded or ultrasensitive and whether multiple pathways combine linearly or nonlinearly.
 
-## Linear activation by cAMP pathway: opposite dynamics of Epac and PKA
+**Table 1.**
+ Single pathway experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Amplitude protocol (µM)</th>
+      <th>Duration protocol (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Calcium</td>
+      <td>1 s: 0.2, 0.3, 0.5, 1, 1.5, 2, 5</td>
+      <td>0.5 µM: 1, 2, 4, 5, 6, 8, 10, 30, 100 1 µM: 1, 4, 100</td>
+    </tr>
+    <tr>
+      <td>cAMP</td>
+      <td>1 s: 0.1, 0.2, 0.5, 1, 1.5, 2</td>
+      <td>0.1 µM: 1, 4, 10, 30, 100 0.5 µM: 1, 4, 10, 30, 100</td>
+    </tr>
+    <tr>
+      <td>Giβγ</td>
+      <td>1 s: 0.005, 0.03, 0.1, 0.5</td>
+      <td>0.03 µM: 1, 4, 10, 30, 100 0.1 µM: 1, 4, 10, 30, 100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Linear activation by cAMP pathway: opposite dynamics of Epac and PKA
 
 cAMP activates ERK through three different pathways: Epac activation of Rap1GTP, PKA phosphorylation of Src, and PKA phosphorylation of β adrenergic receptors (βAR), which switches βAR coupling from Gs to Gi, which is followed by Giβγ recruitment of Src (Lin et al., 2013; Luttrell et al., 1997). To separate the direct action of cAMP (i.e. Epac activation of Rap1GTP or PKA phosphorylation of Src) from its indirect action through the switching pathway, we evaluated the effect of Giβγ separately and in combination with Epac and PKA direct activation.
 
 Model simulations show a linear activation of ppERK with either cAMP duration or concentration (Figure 3, Table 2), through the direct pathway and a slightly non-linear activation with indirect pathway. As observed in Figure 3A,B, as the input duration increases, ppERK amplitude and duration increase. Similarly, the indirect cAMP pathway displays linear activation of ERK with Giβγ input (Figure 3C). Figure 3D shows that increasing the input duration (red traces) or concentration (black trace) is similarly effective in increasing ppERK. Giβγ produces a delayed activation of ERK consistent with experimental data (Koch et al., 1994; Schmitt and Stork, 2002) and a computational model showing a 7 min delay (Khalilimeybodi et al., 2018). cAMP and Giβγ input for these simulations are shown in Figure 3—figure supplement 1. In summary, in response to cAMP input, ppERK total activity is linearly related to the input duration and concentration, with a delayed activation through the indirect pathway.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig3-v2.jpg)
+
+**Figure 3.:** (A) ppERK response to a single pulse of 0.5 μM cAMP is graded with duration. (B) Integral of ppERK concentration over time (AUC) in response to different cAMP concentrations (for 1 s) and different cAMP durations (with a concentration of 0.5 μM). (C) Time course of ppERK in response to single pulses of 0.1 μM Giβγ for different durations. Recruitment of ERK by Giβγ binding protein shows delayed activation. (D) Total activity of ppERK in response to different Giβγ concentrations (for 1 s) and durations (with a concentration of 0.1 μM). Increasing duration or concentration are similarly effective in increasing ppERK. (E) Direct and indirect cAMP pathways combine linearly for all duration inputs and sublinearly, with prolonged duration inputs. Two-way ANCOVA (analysis of covariance) of ppERK AUC versus stimulation characteristics (duration) and type (combination versus summation) as factors (N = 5 in each group) is significant for both duration and type (F (2,47) = 419.5, T < 0.001; P(dur) < 0.0001, T(dur) = 28.61, P(type) < 0.0001, T(type) = 4.54). Combo: response to Giβγ and cAMP, sum: sum of the responses in (A) and (C). (F) Ratio of ppERK to basal ppERK in response to cAMP activation of PKA, Epac or Giβγ (0.5 μM (cAMP) or 0.1 μM (Giβγ) for 30 s). ppERK increases quickly and transiently with Epac and with a delay and more prolonged in response to PKA or Giβγ.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Calcium concentration. (A1) Three different concentrations of 1 s duration. (A2) Three different durations of 0.5 µM concentration. (B) cAMP concentration. cAMP decay is slower than calcium decay as observed experimentally. (B1) Three different concentrations of 1 s duration. (B2) Three different durations of 0.5 µM concentration. (C) Giβγ concentration. (C1) Three different concentrations of 1 s duration. (C2) Three different durations of 0.5 µM concentration.
+
+**Table 2.**
+ Regression analysis results for cAMP pathway.AIC: Akaike information criteria, lower values indicate better models. If adjusted R2 for linear is less than 0.9, then the best model is determined by AIC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="2">Giβγ</th>
+      <th colspan="2">cAMP</th>
+      <th colspan="2">Calcium</th>
+    </tr>
+    <tr>
+      <th>Dur</th>
+      <th>Conc</th>
+      <th>Dur</th>
+      <th>Conc</th>
+      <th>Dur</th>
+      <th>Conc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Adjusted R2</td>
+      <td>Linear</td>
+      <td>0.832</td>
+      <td>0.827</td>
+      <td>0.951</td>
+      <td>0.937</td>
+      <td>0.486</td>
+      <td>0.675</td>
+    </tr>
+    <tr>
+      <td>log</td>
+      <td>0.880</td>
+      <td>0.787</td>
+      <td>0.957</td>
+      <td>0.815</td>
+      <td>0.955</td>
+      <td>0.604</td>
+    </tr>
+    <tr>
+      <td>Hill</td>
+      <td>0.922</td>
+      <td>0.913</td>
+      <td>0.969</td>
+      <td>0.964</td>
+      <td>0.970</td>
+      <td>0.989</td>
+    </tr>
+    <tr>
+      <td rowspan="3">AIC</td>
+      <td>Linear</td>
+      <td>−1.112</td>
+      <td>−8.266</td>
+      <td>−10.181</td>
+      <td>−52.828</td>
+      <td>166.225</td>
+      <td>99.958</td>
+    </tr>
+    <tr>
+      <td>log</td>
+      <td>10.196</td>
+      <td>24.022</td>
+      <td>13.458</td>
+      <td>13.710</td>
+      <td>107.598</td>
+      <td>127.772</td>
+    </tr>
+    <tr>
+      <td>Hill</td>
+      <td>−28.406</td>
+      <td>−38.033</td>
+      <td>−48.562</td>
+      <td>−48.911</td>
+      <td>−86.367</td>
+      <td>−101.415</td>
+    </tr>
+    <tr>
+      <td>Conclusion</td>
+      <td></td>
+      <td>Non-linear</td>
+      <td>Non-linear</td>
+      <td>Linear</td>
+      <td>Linear</td>
+      <td>Non-linear</td>
+      <td>Non-linear</td>
+    </tr>
+  </tbody>
+</table>
+
 To investigate the activation of ERK by Epac and PKA individually, the simulations were repeated while blocking cAMP binding to one of these molecules (Table 3). When cAMP binding to Epac is blocked, the basal quantity of ppERK is dramatically reduced (results not shown), implying that Epac is the main source of basal ppERK. The remaining activity, due to PKA, shows a delayed activation of ERK (Figure 3F). In contrast, Epac produces a fast and transient activation of ERK (Figure 3F). Similarly to PKA activation, Giβγ shows a delayed activation of ERK (Figure 3F). Thus, Epac contributes to ERK activation with different temporal dynamics compared to PKA and Giβγ.
+
+**Table 3.**
+ Knockout experiment.Rate constant names are shown in Figure 1A,B. Block lists the rate constant whose value is set to zero.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Input</th>
+      <th>Block</th>
+      <th>Effect/molecular dependence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Calcium 2000 nM for 1 s</td>
+      <td>KCK</td>
+      <td>CaMKII is activated but cannot autophosphorylate itself, thus RasGRF is the only contributor</td>
+    </tr>
+    <tr>
+      <td>KSyn1</td>
+      <td>pCaMKII is unable to bind to SynGap</td>
+    </tr>
+    <tr>
+      <td>KSyn2</td>
+      <td>pCaMKII binds to SynGap but is unable to phosphorylate SynGap</td>
+    </tr>
+    <tr>
+      <td>KSyn3</td>
+      <td>SynGap is phosphorylated but is unable to disperse to the dendrite</td>
+    </tr>
+    <tr>
+      <td rowspan="2">cAMP 500 nM for 30 s</td>
+      <td>KEpac</td>
+      <td>Epac binds cAMP but cannot activate Rap1GDP, thus PKA is the only contributor</td>
+    </tr>
+    <tr>
+      <td>KPKA</td>
+      <td>Final step of PKA pathway activation of Rap1GDP is blocked, thus Epac is the only contributor</td>
+    </tr>
+  </tbody>
+</table>
 
 Direct and indirect cAMP pathways combine linearly for short duration inputs and sublinearly with prolonged duration inputs. Figure 3E shows that the response to stimulating all three cAMP pathways overlaps with the sum of the single pathway responses only at a short duration. As the stimulus duration increases, the ppERK response is slightly lower than the sum of responses to cAMP direct and indirect activation (Figure 3E,F). Sublinear summation is due to two loci of competition. First, competition was observed between the PKA phosphorylation of Src and Giβγ activation of Src. PKA has a higher affinity for Src than does Giβγ; therefore, Src is trapped by PKA, reducing available Src for Giβγ. This sublinear response is observed with 2× and 4× increases in Src quantity (results not shown), demonstrating that the sublinear summation is not due to Src depletion but indeed due to Giβγ and PKA competition with Src. The second competition was observed between Epac and the Giβγ/Crk-C3G for Rap1GDP. Rap1GDP is utilized by Epac, which reduces the Rap1GDP availability for Giβγ/Crk-C3G. Blocking Epac allows more Rap1GDP to bind Crk-C3G, prolonging ppERK activity as observed with Giβγ alone. In conclusion, competition between PKA and Giβγ for Src, and between Epac and Crk-C3G for Rap1GDP, affects summation in the cAMP pathway.
 
-## Non-linear activation by calcium pathways: SynGAP dispersion and phosphatase activity control ERK activation by calcium
+### Non-linear activation by calcium pathways: SynGAP dispersion and phosphatase activity control ERK activation by calcium
 
 Model simulations show a non-linear activation with either calcium duration or concentration. Figure 4A reveals that low calcium inputs produce little to no ppERK, whereas with higher calcium inputs, ppERK reaches a plateau and the duration of ppERK is prolonged. Similar results are observed with increasing duration using 0.5 μM calcium concentration. Total activity of ppERK (Figure 4B, Table 2) reveals a supralinear response (also called ultrasensitivity), with a calcium duration threshold of 5 s and an amplitude threshold between 1 and 2 μM. A calcium amplitude or duration above these thresholds induces maximal and sustained ppERK. Calcium input for these simulations is shown in Figure 3—figure supplement 1A.
 
@@ -73,9 +253,40 @@ To determine whether the ultrasensitivity of ppERK was caused by CaMKII, we blo
 
 The ultrasensitivity of CaMKII autophosphorylation has been shown to depend on the quantity of the phosphatase PP1 (Bradshaw et al., 2003; Singh and Bhalla, 2018), and thus might regulate the calcium duration and amplitude thresholds. We used a concentration of 3.6 µM of PP1 (PP1: CaMKII ratio = 18%) based on previous reports (Rangamani et al., 2016). To evaluate whether PP1 quantity controls the ppERK non-linear response, we repeated simulations with different quantities of PP1 (10, 50, and 100% of CaMKII quantity). Model simulations show that both ppERK and phosphorylated CaMKII decrease as PP1 concentration increases (Figure 4D). The calcium duration producing half-maximal ppERK did not change much with increased PP1; however, the sensitivity to calcium duration decreased with an increase in PP1 (Figure 4E, Table 4). Thus, our data demonstrate that PP1 indirectly influences ppERK amplitude and sensitivity to calcium duration through modulation of pCaMKII. Therefore, the ultrasensitivity of both CaMKII and ppERK depends on the ratio of CaMKII to PP1 quantity.
 
+**Table 4.**
+ PP1 concentration influences ppERK quantity and ultrasensitivity.The calcium duration producing half-maximal ppERK AUC and the sensitivity to duration were estimated by fitting a hill equation to ppERK AUC vs calcium duration. Values shown are parameter estimates ± standard deviation of the estimate. Width at half max: the calcium duration at half-maximal ppERK.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pp1 (%)</th>
+      <th>Width at half max</th>
+      <th>Hill coefficient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>6.0 ± 1.07</td>
+      <td>4.1 ± 1.5</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>6.7 ± 1.53</td>
+      <td>2.5 ± 1.1</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>9.9 ± 5.28</td>
+      <td>1.4 ± 1.1</td>
+    </tr>
+  </tbody>
+</table>
+
 CaMKII does not directly activate ERK but instead modulates ERK phosphorylation through its phosphorylation of SynGap, a molecule that inactivates Ras family GTPases. The effect of CaMKII phosphorylation is complex, including enhanced SynGap activity (Walkup et al., 2015) and SynGap dispersion from the spine (Araki et al., 2015). We evaluated the contribution of these processes by eliminating them individually. Simulations reveal that persistent activation of ERK requires phosphorylation of SynGap by pCaMKII and dispersion of pSynGap to the dendrite (Figure 4F). A lower ppERK total activity results when pSynGap remains anchored in the spine (Figure 1B, Figure 4F, no pSynGap dispersion trace). Blocking the phosphorylation of SynGap was implemented using two approaches. In one, CaMKII can bind to SynGap but does not phosphorylate it. This reduces the available SynGap, which doubles ppERK concentration compared to control (Figure 4F, pCK bound to SynGap). In the second approach, CaMKII is unable to bind to SynGap. This increases the available SynGap, resulting in a reduction of ppERK below basal (Figure 4F, no pCK bound to SynGap). These data suggest that the quantity of free SynGap in the spine, which is controlled by CaMKII, regulates ERK activation. To verify that the results were not an artifact of the binding affinity implemented in the model, simulations were repeated using 10× and 100× lower affinity of pCaMKII for SynGap. Simulation results show a similar relation of ppERK to pSynGap, reinforcing the hypothesis that CaMKII regulates ppERK total activity through its modulation of SynGap.
 
-## Overall ppERK response is a linear combination of response to calcium and cAMP
+### Overall ppERK response is a linear combination of response to calcium and cAMP
 
 Simulations reveal that both pathways (calcium, cAMP) combine linearly to activate ERK. Figure 5A shows that the response to stimulating both pathways overlaps with the sum of the single pathway responses. This summation was observed with short and long duration stimuli and with high- and low-amplitude stimuli, regardless of whether calcium was below or above the threshold. When calcium is below threshold (e.g. short duration stimuli), cAMP contributes more to ppERK, whereas when calcium is above the threshold, it provides most of the ppERK (Figure 5B). The contribution of cAMP is transient, occurring briefly after induction while the calcium contribution is delayed and sustained (Figure 5C). The two pathways have distinct temporal dynamics that overlap and switch in their contribution about 3 min after induction. Further subdividing pathway contributions (Figure 5D) reveals that the transient ppERK is produced by Epac, with PKA and Gi contributing to a small sustained ppERK. Most of the sustained ppERK is produced by SynGap, with RasGRF contributing to a small transient ppERK.
 
@@ -85,27 +296,131 @@ Simulations reveal that both pathways (calcium, cAMP) combine linearly to activa
 
 In summary, ppERK exhibits a non-linear response to calcium, a linear response to cAMP pathways, and the response to the combination of pathways also is a linear combination of the single pathway responses. Nevertheless, each pathway exhibits distinct temporal pattern dynamics. However, these simulations used single pulses of stimuli; thus, the next section evaluates the response to stimuli similar to those used for synaptic plasticity experiments.
 
-## L-LTP stimuli: ERK signaling pathway temporally integrates input signals
+### L-LTP stimuli: ERK signaling pathway temporally integrates input signals
 
 Previous research has shown that different temporal patterns for inducing L-LTP work through different signaling pathways: PKA is needed for spaced stimuli, while CaMKII is greater in response to massed stimuli. Thus, a critical question is whether different temporal patterns select different signaling pathways for activation of ERK. To evaluate that question, we simulated the response to L-LTP inputs. As in L-LTP experiments, the model was activated with four trains of 100 Hz stimuli for 1 s using a range of intertrain intervals (ITIs), including massed (3, 20, 40 s) and spaced (80,300 s) ITI.
 
-## Temporal sensitivity of ppERK to cAMP matches that of PKA
+### Temporal sensitivity of ppERK to cAMP matches that of PKA
 
 Since ppERK increases more with cAMP duration than concentration (either direct action or in combination with Giβγ), as shown above, we predicted that ppERK would be greater for spaced than massed stimulation with cAMP. Model simulations with cAMP input show that ppERK total activity increases as ITI increases (Figure 6). Note that the ppERK amplitude decreases with ITI (Figure 6A), but the increase in ppERK duration more than compensates for the lower amplitude, resulting in greater total activity for the 300 s ITI. The summation is significantly higher than the combination as observed with single-pulse stimuli: ppERK in response to Giβγ plus Epac and PKA pathways is less than the sum of the responses to either pathway alone (Figure 6B). Competition for Src and Rap1GDP, which limits linear summation, is also observed for L-LTP stimuli. Note that the temporal sensitivity of ppERK is similar to that of PKA (Figure 6B). However, the Epac pathway contributes more to ppERK with short ITI while PKA contributes more with spaced stimuli (Figure 6—figure supplement 1), suggesting an Epac-dependent L-LTP for short ITIs. In summary, ERK activated by cAMP exhibits sensitivity to ITI and is greater with spaced stimuli. These data are consistent with experiments showing a requirement for PKA in spaced but not massed stimulation, and simulations showing an increase in PKA activity with spaced stimulation (Kim et al., 2010; Woo et al., 2003).
 
-## ppERK favors longer ITIs, independent of CaMKII temporal sensitivity
+![Figure 6.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig6-v2.jpg)
+
+**Figure 6.:** (A) Time course of ppERK in response to 4 trains of 100 Hz stimuli of cAMP (Epac, PKA, Giβγ pathways). ppERK peak amplitude decreases with ITI, but the AUC increases with ITI. (B) Total kinase activity in response to cAMP shows that ppERK exhibits sublinear response to cAMP stimuli: the sum (dashed line) is higher than ppERK in response to combination (solid black line). PKA and ppERK have similar temporal sensitivity, favoring spaced stimuli. Two-way ANCOVA (analysis of covariance) of ppERK AUC versus stimulation characteristics (ITI) and type (combination versus summation) as factors (N = 5 in each group) is significant for both stimulation ITI and type (F (2,47) = 42.25, T < 0.0001; T(ITI) = 4.67, P(ITI) < 0.0001, T(type) = 7.92, P(type) < 0.0001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The model is stimulated using L-LTP patterns of input with only a single cAMP pathway active, either Epac, PKA, or Giβγ. Total ppERK versus ITI follows a similar pattern for all pathways, though Epac contributes more, especially for short intertrain intervals. (B) Time courses of cAMP pathways at 3 (B1) and 300 (B2) s ITI. Epac pathway contributes more to ppERK with 3 s (short) ITI, while PKA contributes more with 300 s (spaced) ITI.
+
+### ppERK favors longer ITIs, independent of CaMKII temporal sensitivity
 
 L-LTP simulations using 1 µM amplitude calcium pulses produce similar ppERK traces for ITIs between 3 and 40 s (Figure 7A). Multiple 1 s pulses of 1 µM calcium are similar to a single 5 s pulse, due to the slow decay of pCaMKII; thus, calcium is above the threshold for CaMKII ultrasensitivity and ppERK is sustained for a long duration, consistent with experimental data showing that CaMKII above threshold is enough to induce L-LTP (Shibata et al., 2021). Only with a 300 s ITI does pCaMKII and ppERK decay (though not to basal) between stimuli. The temporal sensitivity of ppERK in response to calcium input tends toward longer ITIs than the temporal sensitivity of CaMKII. The greatest total activity of ppERK (Figure 7B) and pCaMKII (Figure 7C) are observed with 80 s and 3 s ITI, respectively. To test the role of CaMKII ultrasensitivity in the temporal sensitivity of ppERK, we repeated simulations with an increased PP1 quantity (10 µM or 50% ratio). As observed with 18% PP1, the greatest pCaMKII occurs with short ITIs, as reported previously (Ajay and Bhalla, 2004; Kim et al., 2010), but the decrease in pCaMKII with ITI is steeper with 50% PP1. This change shifted ppERK temporal sensitivity slightly to favor middle ITIs but still does not match the temporal sensitivity of CaMKII.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig7-v2.jpg)
+
+**Figure 7.:** (A) Time course of ppERK in response to four trains of 100 Hz calcium stimuli (1 μM concentration) shows sustained and prolong ppERK with 3 and 40 s ITI. (B) ppERK AUC changes with PP1 quantity, but still is highest for spaced ITIs. (C) Increasing PP1 quantity or lowering calcium concentration makes CaMKII more sensitive to shorter ITIs.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Normalized activity is the total activity divided by the maximum total activity (over all ITI). Inactive SynGap is the SynGap bound to pCaMKII or dispersed to the dendrite. Active RasGRF is the RasGRF bound to calmodulin. The model is simulated using L-LTP patterns of input. (A, B) Using 1 µM calcium, temporal sensitivity of ppERK is similar to inactive SynGap regardless of PP1 quantity. (C) temporal sensitivity of ppERK is similar to inactive SynGap using alternative CaMKII model (D). Temporal sensitivity of ppERK matches active RasGRF more than inactive SynGap with low calcium concentration. (E). Pearson's R correlation was calculated between ppERK and SynGap or RasGRF. Correlation coefficients (R) demonstrate that the temporal pattern of ppERK is highly correlated with the temporal pattern of inactive SynGap, except with low calcium, in which case it is highly correlated with the temporal pattern of RasGRF.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The model is simulated using L-LTP patterns of input with 1 µM calcium. (A) Blocking dispersion of pSynGap to the dendrite or blocking CaMKII catalytic activity (pCaMKII bound SynGap) reduces ppERK, whereas allowing CaMKII to bind (but not phosphorylate) SynGap (No pCaMKII bound SynGap) enhances total ERK activity. (B) Time course of ppERK produced by calcium pathways at 3 (B1) and 300 (B2) s ITI. ERK activation by SynGap is enhanced and delayed when RasGRF is blocked.
+
 In addition to varying PP1 quantity, we used lower concentration calcium pulses and an alternative CaMKII model (alt CaMKII) (Dupont et al., 2003; Jȩdrzejewska-Szmek et al., 2017) that does not exhibit the same ultrasensitivity. Simulations with this alternative CaMKII model reveal a small shift in temporal sensitivity toward smaller ITIs, but the temporal sensitivity of ppERK still tends toward longer ITIs than the temporal sensitivity of CaMKII. Similar results were observed with the ultrasensitive CaMKII model when smaller calcium pulses (0.5 µM) were used (Figure 7B,C). In addition, ERK’s temporal sensitivity follows RasGRF (low calcium) and SynGap (high calcium) temporal activity (Figure 7—figure supplement 1). Similar to what was observed with single-pulse experiments, either blocking dispersion of SynGap or blocking pCaMKII binding to SynGap reduces ppERK (Figure 7—figure supplement 2). In summary, though the ultrasensitivity of CaMKII is controlled in part by PP1, ppERK temporal sensitivity does not follow CaMKII temporal sensitivity, and instead follows the temporal sensitivity of CaMKII downstream targets such as SynGap.
 
-## ppERK favors long intertrial intervals
+### ppERK favors long intertrial intervals
 
 To simulate L-LTP in response to four trains of synaptic activation, we used both calcium and cAMP inputs, as would occur with glutamatergic inputs. L-LTP simulations with both calcium and cAMP show an increase of ppERK total activity with longer ITI. Results show that the greatest total ppERK occurs at 80 s (using 18% PP1 and 1 µM calcium) or 300 s (using 50% PP1-1 µM calcium or 18% PP1-0.5 µM calcium) (Figure 8A). Though the change in optimal ITI varies little, the total quantity of ppERK greatly depends on calcium and PP1 concentration. In these simulations, the contribution of the cAMP pathway to ppERK is independent of calcium, in part because cAMP, calcium, and Giβγ are specified independently (Figure 8—figure supplement 1). To address the question of which pathway contributes more to ppERK and whether different temporal patterns use different pathways, we calculated the percent ppERK produced by each pathway. cAMP is responsible for a majority of the ppERK with below threshold calcium, but only responsible for a third of the ppERK for above threshold calcium (Figure 8B). Analyzing the five pathways separately reveals ppERK increases with ITI for all pathways (Figure 8—figure supplement 2). Nonetheless, the relative contribution of SynGap decreases with ITI, as the other pathways increase more with ITI (Figure 8C). As seen with single-pulse stimuli, pSynGap is the main source of prolonged ppERK, whereas Epac and RasGRF are main sources of transient ppERK (Figure 8—figure supplement 3).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig8-v2.jpg)
+
+**Figure 8.:** (A) ppERK mostly increases with temporal interval, with the greatest quantity occurring at 80 s (above calcium threshold or 18% PP1) or 300 s (below calcium threshold). Supralinear summation occurs at 18% PP1 and linear summation occurs at low calcium or high PP1 – conditions that reduce ultrasensitivity of CaMKII (Figure 3E). Supralinearity is indicated by the response to the combination of cAMP and calcium (Combo) being greater than the sum of responses to calcium and cAMP separately. ANCOVA results are in Table 5. (B) Summary of ppERK total activity in response to 300 s ITI. The contribution of the calcium pathway relative to the cAMP pathway is greatest when calcium is above threshold for an ultrasensitive CaMKII response. (C) Qualitative single pathway contribution to ppERK (ppERK from single pathway divided by ppERK from all pathways; sum of pathways exceeds 100%). The contribution of SynGap decreases with ITI, whereas other pathways increase with ITI.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) calcium, (B) cAMP, (C) Giβγ, (D) active PKA, (E) phosphorylated CaMKII, (F) phosphorylated SynGap, (G) phosphorylated Src, (H) RasGTP, (I) Rap1GTP, (J) total active Raf1, (K) total bRaf, (L) ppMEK.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** ppERK increases with ITI for all pathways, though SynGap does not increase as sharply, reducing its relative contribution.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Time course of (A) ppERK, (B) active Epac, (C) active RasGRF, and (D) phosphorylated SynGap . (A2–D2) represent the first 140 s after stimulation of (A1–D1), respectively.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** (A) Total ppERK activity in response to L-LTP stimuli under Raf1, bRaf, or Raf1 dimerization knockout (KO). bRaf is the greatest contributor, as observed experimentally. Eliminating dimerization enhances reduces ERK activation mostly for lower intertrain intervals; thus, the enhanced activity of Raf1 dimers reduces temporal sensitivity of ppERK. (B) Total ppERK activity in response to L-LTP stimuli under Rap1 (C1) and Ras (C2) knockout. Rap1GTP is the main contributor to ppERK, as observed experimentally.
+
+**Table 5.**
+ Two-way ANCOVA (analysis of covariance) results for ppERK AUC versus stimulation characteristics (ITI) and type (combination versus summation) as factors (N = 5 in each group).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">cAMP+Giβγ+calcium</th>
+    </tr>
+    <tr>
+      <th>0.5 µM ca</th>
+      <th>18% PP1</th>
+      <th>50% PP1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F (2,47)</td>
+      <td>43.56</td>
+      <td>28.28</td>
+      <td>3.99</td>
+    </tr>
+    <tr>
+      <td>P (ITI)</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>T (ITI)</td>
+      <td>9.11</td>
+      <td>6.43</td>
+      <td>2.36</td>
+    </tr>
+    <tr>
+      <td>P (type)</td>
+      <td>0.05</td>
+      <td>&lt;0.0001</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>T (type)</td>
+      <td>−2.04</td>
+      <td>−3.90</td>
+      <td>−1.56</td>
+    </tr>
+    <tr>
+      <td>Conclusion</td>
+      <td>Significant for stim only</td>
+      <td>Significant for both type and stim</td>
+      <td>Significant for stim only</td>
+    </tr>
+  </tbody>
+</table>
 
 ppERK linearly integrates the calcium and cAMP inputs when calcium is below threshold. Thus, the response to the combined stimuli is similar to the sum of ppERK responses to individual stimuli with 0.5 µM calcium (Figure 8A). Similar results were obtained with 50% PP1. With 18% PP1 and high calcium (above threshold), supralinear summation was observed: the response to the combination is greater than the summation of individual responses (Figure 8A). CaMKII modulation of SynGap with above threshold calcium may be responsible for the supralinear summation as SynGap dispersion enhances RasGTP and Rap1GTP in response to cAMP.
 
 To further investigate responses to synaptic input, we simulated our model with five different L-LTP protocols. Two of them, bath-applied isoproterenol (ISO) followed by either 1 s of 100 Hz stimulation or 180 s of 5 Hz, experimentally elicit LTP, whereas giving 100 Hz, 5 Hz, or ISO alone do not. For these protocols, cAMP, calcium, and Giβγ inputs (Figure 9—figure supplement 1) were determined from a spatial model response to glutamate (Jȩdrzejewska-Szmek et al., 2017); thus, cAMP is produced by Gs and calcium-calmodulin activation of adenylyl cyclase. Simulation results show that isoproterenol followed by either 100 Hz or 5 Hz produce greater ppERK than ISO, 100 Hz, or 5 Hz alone (Figure 9). These results are consistent with experimental observations (Gelinas et al., 2008a; Gelinas et al., 2008b; Winder et al., 1999) that the combination stimuli are needed to produce L-LTP, thus validating the model. In addition, our results show that cAMP provided by ISO is compensating for the strong calcium input provided by four trains of 100 Hz.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig9-v2.jpg)
+
+**Figure 9.:** ppERK in response to isoproterenol (ISO), 1 s of 100 Hz, or 180 s of 5 Hz does not exceed 30 nM (A), whereas ppERK reaches or exceeds 35 nM in response to the combination of isoproterenol and either 100 Hz or 5 Hz stimulation (B).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/64644/elife-64644-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) calcium, (B) cAMP, (C) active PKA, (D) phosphorylated CaMKII, (E) phosphorylated SynGap, (F) phosphorylated Src, (G) RasGTP, (H) Rap1GTP, (I) total active Raf1, (J) total bRaf, (K) ppMEK .
 
 We performed additional simulations to evaluate the role of Ras and Raf isoforms and to further validate the model. First, we simulated Raf knockout experiments and measured ERK activity in response to four trains of 100 Hz. Simulation results are consistent with experimental data (Chen et al., 2006; Li et al., 2016; Takahashi et al., 2017; York et al., 1998) as bRaf knockout, but not Raf1 knockout, greatly reduces ERK activity (Figure 8—figure supplement 4A). Second, we simulated Ras or Rap knockout and measured ERK activity after LTP induction. Simulation results are consistent with experimental data (Grewal et al., 2000b; Grewal et al., 2000a; Keyes et al., 2020; Li et al., 2016; Takahashi et al., 2013; York et al., 1998; Zhang et al., 2018) as knocking out Rap1 produces a greater ppERK deficit than knocking out Ras (Figure 8—figure supplement 4B). We assessed whether Ras could compensate for Rap and vice versa, by doubling the quantity of the remaining GTPase. Result shows that doubling Ras cannot compensate for the Rap1 knockout, whereas doubling Rap1 increases ppERK above the control (Figure 8—figure supplement 4B2). This shows, for the first time, that overexpression of Rap1 can compensate for Ras activity in ERK activation.
 
@@ -113,7 +428,7 @@ A unique aspect of our model is that full activation of Raf1-RasGTP requires dim
 
 In summary, these results demonstrate that ERK signaling pathways integrate multiple inputs synergistically. In fact, ppERK activity in response to the combination of calcium and cAMP is always greater than the response to either calcium or cAMP alone. For high calcium inputs, as likely occur during L-LTP induction, these inputs combine supralinearly. Synergy is attributable to CaMKII phosphorylation of SynGap, as dispersion of SynGap from the spine enhances RasGTP and RapGTP in response to both calcium and cAMP inputs. Furthermore, our simulations suggest that Raf dimerization enhances Raf1 activation of ERK in response short ITI, thereby reducing the temporal sensitivity of ERK activation.
 
-## Robustness
+### Robustness
 
 In computational models, it is critical to ensure the robustness of the results to variation in parameter values. The main result of the model is that ERK signaling pathways, no matter the protocol used, favor spaced stimuli. To assess the robustness of the temporal sensitivity of ERK signaling pathways to small variations in parameters, simulations were repeated using concentrations of ±10% of the control value. The concentrations were changed either individually or collectively with changes drawn from a uniform distribution (between −10% and +10%). These simulations show that total ERK increase with ITI, similar to control results. Table 6 shows that the optimal ITI was 80 or 300 s (spaced) 80% of the time. We also evaluated the mean ppERK (across all ITIs) and the degree of temporal sensitivity, quantified as the difference between maximum ppERK and minimum ppERK (across ITIs). Results show that a 10% change in a single-molecule quantity rarely produced more than 20% change in mean ppERK (Figure 10A), with changes evenly distributed about 0%. In contrast, temporal sensitivity was more sensitive to parameter variations, with most parameter changes increasing temporal sensitivity (Figure 10B). An increase in temporal sensitivity with minimal change in mean ppERK implies that the response to short ITIs decreases while the response to long ITIs increases. As observed with single-molecule changes, small random changes to all molecule quantities increased temporal sensitivity (Figure 10B) with minimal changes in mean ppERK (Figure 10A).
 
@@ -121,7 +436,191 @@ In computational models, it is critical to ensure the robustness of the results 
 
 **Figure 10.:** Molecule concentrations were changed individually by either +10% (red) or −10% (black) or the set of concentrations was changed randomly, within ±10% (gold). (A) Percent change in mean ppERK, averaged across all 5 ITIs. (B) Percent change in temporal sensitivity. Most variations increased temporal sensitivity.
 
+**Table 6.**
+ Count of best ITIs.Count of preferred ITIs in robustness simulations, using either single-molecule changes of ±10% or random changes (between +10% and −10%) to all molecules. 80% of the parameter variations yield optimal ppERK in response to spaced stimulation (ITI = 80 or 300 s).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ITIs</th>
+      <th>Random</th>
+      <th>10% lower</th>
+      <th>10% higher</th>
+      <th>Total percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>38</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4.69</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>46</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5.80</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>81</td>
+      <td>3</td>
+      <td>1</td>
+      <td>10.49</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>154</td>
+      <td>112</td>
+      <td>51</td>
+      <td>39.14</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>181</td>
+      <td>40</td>
+      <td>102</td>
+      <td>39.88</td>
+    </tr>
+  </tbody>
+</table>
+
 To evaluate which molecule quantities produced the largest effect on ppERK, we used random forest regression to analyze the effect of random changes on the entire set of molecules. Random forest regression is a non-linear method (in contrast to linear regression) to determine which parameters are best for predicting the results. The algorithm creates numerous decision trees, each of which is a hierarchical set of rules, where each rule partitions the data (ppERK in our case) based on a single feature (molecule quantity in our case). The features of each tree are ranked based on their weight in accurately predicting the data. Table 7 ranks the molecules, with the highest weight indicating the molecule that caused the most significant change in ppERK. The observation that most weights are small indicates that no single molecules can explain the change in ppERK. However, calcium pathway molecules such as RasGRF, calmodulin, pmca, and cAMP pathway such as Epac are ranked high, consistent with the contribution illustrated in single pathway simulations. In summary, the temporal sensitivity of ERK is quite robust to variation in parameters and favors spaced ITIs.
+
+**Table 7.**
+ Random forest analysis.One hundred random perturbations of all molecule concentrations (between +10% and −10%) were simulated. Features are ranked from most important to least important in predicting the temporal sensitivity. The sum of features’ importance equals 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecules abbreviation</th>
+      <th>Weights</th>
+      <th>Molecules full name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RasGRF</td>
+      <td>0.084</td>
+      <td>Ras guanine nucleotide–releasing factor</td>
+    </tr>
+    <tr>
+      <td>Sos</td>
+      <td>0.074</td>
+      <td>Son of sevenless</td>
+    </tr>
+    <tr>
+      <td>Cam</td>
+      <td>0.068</td>
+      <td>Calmodulin</td>
+    </tr>
+    <tr>
+      <td>MEK</td>
+      <td>0.050</td>
+      <td>Mitogen-activated protein kinase kinase</td>
+    </tr>
+    <tr>
+      <td>PDE2</td>
+      <td>0.050</td>
+      <td>Phosphodiesterase 2</td>
+    </tr>
+    <tr>
+      <td>pmca</td>
+      <td>0.048</td>
+      <td>Plasma membrane calcium pump</td>
+    </tr>
+    <tr>
+      <td>Epac</td>
+      <td>0.046</td>
+      <td>Exchange protein directly activated by cAMP</td>
+    </tr>
+    <tr>
+      <td>Calbin</td>
+      <td>0.046</td>
+      <td>Calbindin</td>
+    </tr>
+    <tr>
+      <td>CRKC3G</td>
+      <td>0.044</td>
+      <td>v-CRK Proto-Oncogene/Rap guanine nucleotide exchange factor 1</td>
+    </tr>
+    <tr>
+      <td>rasGap</td>
+      <td>0.043</td>
+      <td>Ras GTPase-activating protein</td>
+    </tr>
+    <tr>
+      <td>SynGap</td>
+      <td>0.042</td>
+      <td>Synaptic rasGap</td>
+    </tr>
+    <tr>
+      <td>PP1</td>
+      <td>0.038</td>
+      <td>Protein phosphatase 1</td>
+    </tr>
+    <tr>
+      <td>Shc</td>
+      <td>0.035</td>
+      <td>Src homology collagen-like</td>
+    </tr>
+    <tr>
+      <td>Grb2</td>
+      <td>0.034</td>
+      <td>Growth factor receptor-bound protein 2</td>
+    </tr>
+    <tr>
+      <td>PP2A</td>
+      <td>0.033</td>
+      <td>Protein phosphatase 2</td>
+    </tr>
+    <tr>
+      <td>MKP1</td>
+      <td>0.033</td>
+      <td>Mitogen-activated protein kinase phosphatase 1</td>
+    </tr>
+    <tr>
+      <td>Ng</td>
+      <td>0.033</td>
+      <td>Neurogranin</td>
+    </tr>
+    <tr>
+      <td>Src</td>
+      <td>0.032</td>
+      <td>Non-receptor tyrosine kinase</td>
+    </tr>
+    <tr>
+      <td>Cbl</td>
+      <td>0.030</td>
+      <td>Casitas B-lineage lymphoma</td>
+    </tr>
+    <tr>
+      <td>ERK</td>
+      <td>0.027</td>
+      <td>Mitogen-activated protein kinase</td>
+    </tr>
+    <tr>
+      <td>PDE4</td>
+      <td>0.025</td>
+      <td>Phosphodiesterase 4</td>
+    </tr>
+    <tr>
+      <td>PKA</td>
+      <td>0.025</td>
+      <td>Protein kinase A</td>
+    </tr>
+    <tr>
+      <td>NCX</td>
+      <td>0.022</td>
+      <td>Sodium calcium exchanger</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -143,7 +642,7 @@ Different temporal patterns may produce different outcomes by activating differe
 
 ## Materials and methods
 
-## Computational methods
+### Computational methods
 
 To investigate how temporal pattern of synaptic activity determines which pathway in the ERK signaling cascade (Figure 1A, Figure 1—source data 1–5) dominates in dendritic spines of hippocampal CA1 pyramidal neurons, we developed a single-compartment, stochastic reaction–diffusion model of pathways activating ERK. The model was built by merging and adapting two existing models of synaptic plasticity in hippocampal neurons. One of those models (Jȩdrzejewska-Szmek et al., 2017) explains how different temporal patterns activate different kinases such as CaMKII and PKA that are critical for L-LTP induction, and the other model (Jain and Bhalla, 2014) demonstrates that protein synthesis is the result of synergistic activation of different pathways such as ERK and mTOR to generate unique patterns in response to different L-LTP stimuli. These previously published models were modified by adding several molecules and reactions critical for ERK activation.
 
@@ -153,13 +652,13 @@ Initial conditions and rate constants are either taken from previous models (Jai
 
 Several simulations use a compartment with a volume comparable to a spine head (about 0.1–0.8 µm3). To minimize noise inherent in stochastic models, most simulations used a larger compartment, of volume 4 µm3. Other than the level of noise, no differences in temporal sensitivity were observed between the small and large volume models.
 
-## Stimulation protocols
+### Stimulation protocols
 
 In brain slices, presynaptic stimulation results in calcium influx through NMDA receptors, and norepinephrine (NE) or dopamine, which bind to Gs-coupled metabotropic receptors (Jȩdrzejewska-Szmek et al., 2017) is required for L-LTP (Huang and Kandel, 1995). To investigate the effect of calcium distinct from cAMP produced by NE, the model is activated using three independent inputs leading to ERK activation: calcium (through RasGRF and SynGap), cAMP (through Epac and PKA), and βγ subunit of inhibitory G protein (Gi) (through implicit PKA phosphorylation of βAR). βARs are mostly coupled with stimulatory G protein (Gs). However, when phosphorylated by PKA, βARs decouple from Gs and couple with inhibitory G proteins (Gi). Both Gs-activated and βAR coupled with Gi-activated signaling pathways converge to activate ERK using different pathways. To determine whether maximal ERK activation requires multiple pathways, the contribution of each pathway was tested singly and in combination using either a duration or amplitude protocol (Table 1). Duration protocols used a sustained concentration of calcium, cAMP, and Giβγ. Amplitude protocols used transient (1 s duration) elevations of different concentrations of the inputs. Calcium and cAMP each have several different pathways to ERK activation; thus, to determine the contribution of each of the (sub)pathways, the above simulations were repeated with one of the rates set to zero, as shown in Table 3. To investigate whether different L-LTP temporal patterns select different signaling pathways for ERK activation, simulations were performed using stimulation protocols identical to the experimental protocols used to induce L-LTP. Therefore, we stimulated the model with four trains of 100 Hz for 1 s at five different intertrial intervals: 3, 20, 40 s (massed) or 80 and 300 s (spaced) (Figure 1C). Each stimulation pulse triggered a transient elevation of either calcium, cAMP (direct action and in combination with Giβγ) singly, or in combination.
 
 We also tested different forms of stimulation patterns that induce L-LTP. The additional stimulation protocols are bath-applied ISO followed by 1 train of 100 Hz (ISO+100 Hz) or 5 Hz (ISO+5 Hz). The inputs used to run these simulations are derived from simulations of a spatial model response to glutamate (Jȩdrzejewska-Szmek et al., 2017).
 
-## Simulation and analysis
+### Simulation and analysis
 
 The model is implemented using a stochastic reaction–diffusion simulator NeuroRD (Jȩdrzejewski-Szmek and Blackwell, 2016), version 3.2.4 (Jędrzejewski-Szmek and Blackwell, 2018), using the adaptive (asynchronous tau-leap) numerical method and tolerance of 0.1. Even though stochastic fluctuations observed using small compartments do not impact the results, the stochastic algorithm is extremely fast, especially for stiff systems; thus, there would be no advantage to switching to a potentially less accurate deterministic simulator. All model files needed to run the simulations, including molecule quantities, reaction rate constants, and stimulation quantities, are available on GitHub (Miningou Zobon et al., 2021) and on modelDB, accession number 267073.
 

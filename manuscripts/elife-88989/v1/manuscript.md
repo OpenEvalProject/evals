@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Psychology, Institute for Mind and Biology and Neuroscience Institute, University of Chicago Chicago United States
+1. Department of Psychology, Institute for Mind and Biology and Neuroscience Institute, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 

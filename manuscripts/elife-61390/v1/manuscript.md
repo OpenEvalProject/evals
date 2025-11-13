@@ -26,9 +26,9 @@ SARS-CoV-2 is closely related to SARS-CoV, which was responsible for a global ou
 
 Research on SARS-CoV-2 and COVID-19 is advancing at unprecedented speed. Much data has already been accumulated, some still in the pre-printing stage, that supports ongoing research aimed at understanding pathogenesis and provides information on potential therapeutic strategies. Here, we offer a critical summary of the current knowledge highlighting the remaining gaps that need to be filled to fully characterize the function of ACE2 in the infection by SARS-CoV-2 and the associated pathogenesis. Current evidence supports the low expression of ACE2 in the human respiratory system, which raises questions about the exact role of ACE2 in SARS-CoV-2 infection and has given rise to the hypothesis that co-receptors/attachment factors, such as neuropilins, heparan sulfate, and sialic acids or putative alternative receptors, such as CD147 and GRP78, could be involved in the entry of SARS-CoV-2 and contribute to tropism.
 
-## Evidence supporting ACE2 as an entry receptor for SARS-CoV-2
+### Evidence supporting ACE2 as an entry receptor for SARS-CoV-2
 
-## 1.1 In-silico and in-vitro studies supporting interaction between ACE2 and SARS-CoV-2 spike protein
+#### 1.1 In-silico and in-vitro studies supporting interaction between ACE2 and SARS-CoV-2 spike protein
 
 The surface glycoprotein S of coronaviruses mediating the attachment and entry into target cells is composed of 2 subunits, S1 and S2. The S1 subunit contains a N-terminal domain (NTD) and a receptor-binding domain (RBD) encompassing the receptor-binding motif (RBM) (Figure 1). The S2 contains a fusion peptide (FP), heptad repeat 1 (HR1) and 2 (HR2) domains, and a transmembrane (TM) and a cytoplasmic (CP) domain (Xia et al., 2020a; Li et al., 2005; Ou et al., 2020). After S1 binding to a membrane receptor, the FP is inserted into the cell membrane to promote fusion with the viral membrane, a process that depends on proteolytic cleavages at the S1/S2 site to separate S1 and S2 and at the S2 site to generate a mature FP (Hoffmann et al., 2018).
 
@@ -42,33 +42,364 @@ Subsequent in-vitro studies, notably by resolution of cryo-EM structures, confir
 
 Several reports using surface plasmon resonance (SPR) to study the interaction between recombinant ACE2 and S proteins have determined a higher Kd for SARS-CoV S than for SARS-CoV-2 S (Table 1). Although these studies point to higher affinity of ACE2 for SARS-CoV-2 S than for SARS-CoV S, they are in contrast with results obtained using a biolayer interferometry binding (BLI) approach (Table 1). At this point, one cannot exclude that these discrepancies result from the analysis of distinct domains. Additionally, currently available measures rely only on protein fragments lacking the TM domains that likely alter the dynamics of the three-dimensional protein structure, prompting a careful interpretation of the available data.
 
+**Table 1.**
+ Measure of the dissociation constant (Kd) of ACE2 bound to immobilized SARS-CoV or SARS-CoV-2 S proteins by surface plasmon resonance (SPR) or biolayer interferometry binding (BLI) approaches.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reference</th>
+      <th>ACE2 protein PD domain</th>
+      <th>SARS-CoV S</th>
+      <th>SARS-CoV2 S</th>
+      <th>Method</th>
+      <th>Measured kd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Wrapp et al., 2020</td>
+      <td rowspan="2">1–615 aa</td>
+      <td>306–577 aa</td>
+      <td></td>
+      <td rowspan="2">SPR</td>
+      <td>325.8 nM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1–1208 aa</td>
+      <td>14.7 nM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wang et al., 2020a</td>
+      <td rowspan="2">19–615 aa</td>
+      <td>306–527 aa</td>
+      <td></td>
+      <td rowspan="2">SPR</td>
+      <td>408.7 nM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>319–541 aa</td>
+      <td>133.3 nM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lan et al., 2020</td>
+      <td rowspan="2">19–615 aa</td>
+      <td>306–527 aa</td>
+      <td></td>
+      <td rowspan="2">SPR</td>
+      <td>31.6 nM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>319–541 aa</td>
+      <td>4.7 nM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Walls et al., 2020</td>
+      <td rowspan="2">1–614 aa</td>
+      <td>306–575 aa</td>
+      <td></td>
+      <td rowspan="2">BLI</td>
+      <td>1.2 nM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>328–533 aa</td>
+      <td>5 nM</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wrapp et al., 2020</td>
+      <td rowspan="2">1–615 aa</td>
+      <td>306–577 aa</td>
+      <td></td>
+      <td rowspan="2">BLI</td>
+      <td>13.7 nM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>319–591 aa</td>
+      <td>34.6 nM</td>
+    </tr>
+  </tbody>
+</table>
+
 Overall, in-silico predictions and structural analyses support an interaction between ACE2 and SARS-CoV-2 S with additional contact points compared to the interaction with SARS-CoV S, which are associated with a higher affinity that may explain the easy human-to-human spread (Wrapp et al., 2020). Future studies should aim to further characterize the interaction between full-length ACE2 and SARS-CoV-2 proteins to provide the most precise ground for the development of therapies aimed at disrupting this interaction.
 
-## 1.2 In cellulo evidence of ACE2 acting as SARS-CoV-2 entry receptor
+#### 1.2 In cellulo evidence of ACE2 acting as SARS-CoV-2 entry receptor
 
 The extraordinary speed of research following the identification of SARS-CoV-2, particularly the development of pseudotyped viruses (Hoffmann et al., 2020; Ou et al., 2020; Walls et al., 2020; Tai et al., 2020; Lei et al., 2020a), the isolation of the virus from patient samples and the establishment of an in-vitro culture as early as January 2020 (Zhou et al., 2020), quickly made it possible to tackle the question of the identity of the entry receptor in cellular models (Hoffmann et al., 2020). Pseudotyped vesicular stomatitis virus expressing SARS-CoV-2 S (VSV-SARS-S2) efficiently infects only a limited number of cell lines, with Calu-3 human lung adenocarcinoma epithelial cell line, CaCo-2 human colorectal adenocarcinoma colon epithelial cell line and Vero African grey monkey kidney epithelial cell line being the most permissive (Hoffmann et al., 2020; Ou et al., 2020). While permissive cell lines all express ACE2, as previously demonstrated by indirect immunofluorescence (IF) or by immunoblotting (IB, antibody AF933) (Ren et al., 2006; Tseng et al., 2005; Liao et al., 2013; Lu et al., 2008), the role of ACE2 in virus entry was demonstrated by the observation that its ectopic expression is sufficient to make the BHK-21 fibroblast and HEK293 cell lines permissive to VSV-SARS-S2 (Hoffmann et al., 2020; Ou et al., 2020). Importantly, the preincubation of VSV-SARS-S2 with the soluble form of ACE2 prevents the infection likely by blocking the site of S protein interaction. The use of VSV pseudovirions expressing the SARS-CoV S protein (VSV-SARS-S) modified to contain the RBD from other coronaviruses, including MERS-CoV and SARS-CoV-2, allowed to underscore the importance of the RBD in the interaction with ACE2 in cellular models (Letko et al., 2020). Murine leukemia viruses (MLV)-based pseudoviruses expressing SARS-CoV and SARS-CoV-2 S were also found to infect Vero E6 cells (Walls et al., 2020), which express endogenous ACE2 (Sheahan et al., 2008), and ACE2-transfected BHK-21 cells (Walls et al., 2020).
 
 Although pseudotyped viruses are a great tool to document the need for ACE2 for the entry steps mediated by the S protein, they do not make it possible to assess the contribution of other virions characteristics, such as envelope or membrane proteins, on the cell tropism (Joglekar and Sandoval, 2017). Access to SARS-CoV-2 patient isolates allowed to further evaluate the need of ACE2 for virus entry. Indeed, infection of HeLa, BHK-21 or A549 cells with isolates requires transfection of ACE2 (Hoffmann et al., 2020; Blanco-Melo et al., 2020; Zhou et al., 2020). While direct protein interaction in cellular model is difficult to assess, cell surface colocalization of ectopically expressed GFP-tagged ACE2 and SARS-CoV-2 S protein fragments containing the RBD was observed (Wang et al., 2020a). GFP-ACE2 expressed at the cell surface was also shown to bind soluble SARS-CoV-2 RBD; an interaction that was inhibited by incubation with a soluble form of ACE2 (Tai et al., 2020). Collectively, evidence obtained using cell lines further supports in-silico data that ACE2 binds to SARS-CoV-2 S and points to a model in which ACE2 is necessary for virus entry. More physiologically relevant studies are awaited to strengthen our understanding of the exact role of ACE2 in vivo and help determine if co-receptors or attachment factors act in concert with ACE2 and if alternative receptors may play a role in SARS-CoV-2 entry.
 
-## ACE2 expression in the respiratory apparatus
+### ACE2 expression in the respiratory apparatus
 
-## 2.1 Basal expression of ACE2 in the human respiratory system
+#### 2.1 Basal expression of ACE2 in the human respiratory system
 
 ACE2 was first identified in 2000 as a gene encoding a single isoform of a new angiotensin enzyme (Donoghue et al., 2000). Recently, due to the great interest generated around ACE2, bioinformatics and RNA-seq analyses have revisited the human ACE2 genomic region and identified the existence of an alternative splice site (Rehman and Tabish, 2020; Blume et al., 2020) that results in the transcription of a previously unknown isoform of ACE2 (deltaACE2 or dACE2). The dACE2 isoform lacks the first N-terminal 356 aa region compared to full-length ACE2 (flACE2) (Blume et al., 2020; Onabajo et al., 2020) and therefore is unable to bind to SARS-CoV-2 S (Onabajo et al., 2020). Considering the recent discovery of dACE2, the majority of ACE2 mRNA analyses reported below have not taken into account its existence. However, when possible, we indicated when the design discriminated specific ACE2 isoforms.
 
 High-throughput gene promoter activity and mRNA expression data available in public repositories, that is functional annotation of the mammalian genome (FANTOM 5, flACE2), the Human Protein Atlas (HPA) and the genome‐based tissue expression consortia (GTEx), provide evidence of ACE2 mRNA expression in the respiratory system (Yu et al., 2015; Uhlén et al., 2015; Keen and Moore, 2015). As pointed out in two recent reports, levels of ACE2 mRNA in the respiratory system are low compared to other organs such as the small intestine, kidney or the myocardium (Table 2; Hikmet et al., 2020; Aguiar et al., 2020). An additional transcriptomic dataset of various human tissues confirmed ACE2 mRNA expression throughout the respiratory tract, including fetal and adult lungs, olfactory bulbs and trachea, with the highest expression in the lung (Leung et al., 2020). RNA-seq and microarray datasets from nasal and bronchial epithelial cells obtained through brushings demonstrate ACE2 detection with low levels in the nose, trachea and small and large airways (Leung et al., 2020; Su et al., 2004). Low expression of ACE2 (flACE2) in the nasal respiratory epithelium and at even lower levels in the trachea, bronchioles and alveoli was confirmed by RNA in-situ hybridization (RNA-ISH) of lung and nasal sections (n = 7) (Hou et al., 2020). RT-qPCR of brush samples from the same donors confirmed a gradient of ACE2 mRNA with the strongest expression in the nasal tissue and the lowest in the bronchioles and alveoli (Hou et al., 2020). It is noteworthy that this gradient of ACE2 expression mirrors the profile of permissiveness to SARS-CoV-2. Indeed, infection of primary cells led to higher viral titers in cells from the nasal epithelium and from the large airways than in cells from lower airways or Alveolar type II cells (AT2). Analysis of the specific expression of dACE2 and flACE2 in lung explants and nasal tissue reported similar expression profile at basal levels (Blume et al., 2020; Onabajo et al., 2020). Further analyses are needed to evaluate levels of expression of both isoforms in other respiratory tissues. While altogether these studies provide clues for ACE2 mRNA expression in the respiratory apparatus that is the primary target by SARS-CoV-2, they also shed light on the overall low levels detected at basal levels when performing bulk analyzes of the whole tissues (Figure 1).
 
+**Table 2.**
+ mRNA levels of ACE2 found in the lungs, small intestine, kidney, and heart muscle reported in the Human Protein Atlas (HPA) consortium (Uhlén et al., 2015), the genome‐based tissue expression (GTEx) consortium (Keen and Moore, 2015).Activity levels of the promoter of ACE2 assembled in the Fantom (FANTOM5) consortium (Yu et al., 2015). Protein-transcripts per million (pTPM). Scaled Tags Per Million (sTPM).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Lung</th>
+      <th>Small Intestine</th>
+      <th>Kidney</th>
+      <th>Heart Muscle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HPA (pTPM)</td>
+      <td>1.7</td>
+      <td>31.1</td>
+      <td>107.2</td>
+      <td>31.1</td>
+    </tr>
+    <tr>
+      <td>GTEx (pTPM)</td>
+      <td>1.1</td>
+      <td>5.4</td>
+      <td>6.8</td>
+      <td>5.4</td>
+    </tr>
+    <tr>
+      <td>FANTOM5 (sTPM)</td>
+      <td>2.8</td>
+      <td>21.7</td>
+      <td>31.5</td>
+      <td>21.7</td>
+    </tr>
+  </tbody>
+</table>
+
 The low levels of ACE2 mRNA detected in tissues of the respiratory system likely reflects restricted expression in specific cell subpopulations (Figure 1). This has indeed been documented in several studies using scRNA-seq and snRNA-seq strategies, which make it possible to identify the cell populations expressing ACE2 mRNA. A first report describing the integrated analysis of 107 scRNA-seq and snRNA-seq datasets, including 22 from lungs and airways and 85 from other organs and encompassing 164 donors, revealed ACE2 expression in multi-ciliated epithelial and goblet cells of the proximal airways, and in AT2 cells in the distal lung epithelium (Muus et al., 2020). Expression of ACE2 in AT2 cells (defined as HTII280+ or PRO-SFTPC+ cells) was further confirmed by proximity ligation in-situ hybridization (PLISH) performed on airway and alveoli tissue from healthy donors. A second report describing the re-analysis of five scRNA-seq datasets from the lung, bronchus and nasal tissues, also concluded that ACE2 is enriched in lung AT2 cells and in bronchial and nasal ciliated epithelial and goblet cells (Hikmet et al., 2020). While the two reports led to similar qualitative conclusions, they differed in the quantitative report of the estimated % of ACE2+ AT2 cells, that is 6.2% and less than 1%, respectively. The use of the scRNA-ISH technique that combines scRNA-seq and ISH data, showed 20% of nasal and bronchial cells expressing ACE2 (Okochi et al., 2020). ACE2 mRNA was also detected in a fraction of nasal and bronchial ciliated (FOXJ1+) and secretory (MUC5B+) cells and in AT2 cells (SFTPC+) in the alveoli (Hou et al., 2020).
 
 Several studies attempted to detect ACE2 protein by immunohistochemistry (IHC) in lung histological sections. Results exhibit more discrepancies than mRNA analyses, making it difficult to draw firm conclusions. Significant variations between studies are likely due to poor antibody validation practices, different antigen retrieval methodologies or to low antibody sensitivity. In Table 3, we attempted to summarize the available validation data for the antibodies used in the studies described in this review in accordance to the pillars defined by the Antibodypedia validation initiative (Uhlen et al., 2016). Importantly, all antibodies still await validation by siRNA or CRISPR technologies. Use of HPA000288 and MAB933 antibodies, which allow high detection of ACE2 in kidney and intestine, only showed very low to no detection in lung tissues (Uhlén et al., 2015; Hikmet et al., 2020). Positive staining of ACE2 was only observed in a very small percentage of individuals and corresponded to the surface of nasal ciliated cells, glandular cells of the trachea or AT2 cells consistent with mRNA expression. In a systematic study, six anti-ACE2 antibodies targeting different epitopes, ab15348, HPA000288, ab239924, NBP2-67692, AF933 and MAB933, were tested together with distinct antigen retrieval methods (Lee et al., 2020). Only the ab15348 antibody revealed robust staining in pneumocytes, while as expected the six antibodies showed positive staining in kidney and intestine. Further use of this antibody for indirect IF staining of only one donor revealed ACE2 detection in MUC1 positive type II pneumocytes. Additionally, IHC staining of resected lungs (n = 9) using this same antibody allowed detection of ACE2 in the small airway epithelial layer (Leung et al., 2020). ACE2 was detected in AT2 cells (PRO-SFTPC+) from human explant donors by IHC coupled to IF (IHC-IF) using the AF933, but not ab15348 or MAB933, antibodies, while low counts of ACE2-positive alveolar epithelial cells were detected in post-mortem lung sections (n = 10) using ab108252 (Ackermann et al., 2020; Muus et al., 2020).
 
+**Table 3.**
+ Available validation data for the antibodies used in the studies described in this review in accordance to the pillars defined by the Antibodypedia validation initiative (Uhlen et al., 2016).Provider refers to the information found in the website of the company. IB: Immunoblot. IHC: Immunohistochemistry. IF: Immunofluorescence.  Enhanced validation, Supportive validation, No data available, + Positive detection, +/- Weak detection, - Absence of detection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Method</th>
+      <th>Antibodypedia</th>
+      <th>Provider</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Ab15348 (or GTX15348) Immunogen: 788-805aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Testis, intestines, lung, Calu-3 - Breast</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Testis, kidney, aorta and lung</td>
+      <td>+ Intestine, heart, stomach, spleen (Independent antibody validation) (Lee et al., 2020) +, +/-, - Lung. Increased in COPD and smokers (correlation with mRNA) (Leung et al., 2020; Muus et al., 2020; Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">MAB933 Immunogen: 18-74aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Kidney - NSO cells</td>
+      <td>+ Vero E6 cells - CHO cells (Jia et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Kidney</td>
+      <td>+ Orthogonal (RNA) and independent antibody validation +/-, - Lung (Hikmet et al., 2020; Aguiar et al., 2020; Muus et al., 2020; Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td>+ ALI-cultured ciliated airway epithelial cells (Martinez-Anton et al., 2013)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">AF933 Immunogen: 18-74aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Ovary, testis and kidney</td>
+      <td>+ Airway and distal lung, ALI-cultured airway epithelial cells (correlation with mRNA levels), Calu-3 and Caco-2 cells (Liao et al., 2013; Smith et al., 2020) - A549 (expected), Huh-7 cells (Liao et al., 2013; Smith et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Kidney</td>
+      <td>+ Testis, stomach, intestine (Independent antibody validation) +/-, - Lung (Ren et al., 2006; Muus et al., 2020; Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">HPA000288 Immunogen: 1-111aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Kidney, but several bands</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Intestine and kidney. - Tonsil</td>
+      <td>+ Orthogonal (RNA) and independent antibody validation +/-, - Lung (Uhlén et al., 2015; Hikmet et al., 2020; Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Ab108252 Immunogen: 200-300aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Testis, kidney, lung, HepG2, Caco-2 - A549 cells</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Kidney</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Ab239924 Immunogen: 200-300aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Testis, kidney</td>
+      <td>+ ACE2 transfected A459 - Non transfected A549 cells (Blanco-Melo et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Testis, kidney</td>
+      <td>+ Intestine, heart, stomach, spleen (Independent antibody validation), +/- Lung (Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">NBP2-67692 Immunogen: 200-300aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ Kidney</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>+ Kidney</td>
+      <td>+ Testis and intestine (Independent antibody validation) - Lung (Lee et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td>+ HepG2, MCF-7, 293 cells</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Anti-ACE2489 Immunogen: 489-508aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>+ACE2 transfected CHO cells - Non transfected CHO cells</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td></td>
+      <td>+ Heart (No staining with secondary antibody alone) (Qian et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sc-20998 Immunogen: 631-805aa</td>
+      <td>IB</td>
+      <td></td>
+      <td>Antibody discontinued</td>
+      <td>Detection in rat tissue only (Sims et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td>Antibody discontinued</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td>Antibody discontinued</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Homemade antibody Immunogen: 206-225aa</td>
+      <td>IB</td>
+      <td></td>
+      <td></td>
+      <td>Detection in rat tissue only (Mossel et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>IHC</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IF</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Overall, ACE2 protein is only weakly detected in the respiratory system by two distinct antibodies and a single antibody allows stronger detection in AT2 cells, while all antibodies detect high expression in kidneys and intestine. One cannot fully exclude that ACE2 detection in the lung is impaired by lung-specific post-translational modifications, such as glycosylations, that affects the antigen recognition. Bias from antibodies specificity and sensitivity can be circumvented through proteomic analyses. In this perspective, the low expression of ACE2 in the respiratory system is further supported by the analysis of public mass spectrometry (MS) datasets for protein abundance that does not show detectable ACE2 in the nasal mucosa or the lungs, in contrast to high levels in the kidneys and intestine (Hikmet et al., 2020). Altogether, currently available evidence from mRNA, IHC and MS analyses points to low expression of ACE2 in the respiratory apparatus at basal levels. How these low basal levels of ACE2 expression allow efficient replication and excretion of SARS-CoV-2 is a question that deserves more attention. Moreover, it is still difficult to conclude from the available data that the infection is strictly limited to ACE2 positive cells. These questions remain open and require further investigation.
 
-## 2.2 ACE2 expression in human respiratory epithelial cells ex vivo: impact of differentiation
+#### 2.2 ACE2 expression in human respiratory epithelial cells ex vivo: impact of differentiation
 
 Ex vivo culture of cells from the respiratory system is an essential tool for the study of virus infection and pathogenesis. Epithelial cells from distinct sections of the respiratory tract, including the nose, trachea, bronchi and alveoli, are either cultured submerged in culture medium or at air-liquid interface (ALI) for polarization or differentiation into pseudostratified mucociliary epithelium. While submerged culture of human tracheobronchial epithelial cells exhibits low ACE2 mRNA and protein detection by IB(AF933 or MAB933), the expression levels are highly enhanced following differentiation in ALI (Blanco-Melo et al., 2020; Jia et al., 2005; Martinez-Anton et al., 2013; Smith et al., 2020; Qian et al., 2013). More recently, a clear distinction between dACE2 and flACE2 mRNA levels allowed to confirm that both isoforms are increased in differentiated cultures (Blume et al., 2020). Of note, re-submersion of cells, which led to loss of differentiation markers, reversed ACE2 mRNA and protein levels (Jia et al., 2005), supporting a key role of the differentiation process in ACE2 expression. Further study by IF staining of ALI-differentiated human primary alveolar cells (MAB933) showed that ACE2 is localized at the apical surface (Sims et al., 2005). This was recapitulated using confocal horizontal scanning (AF933) of the Calu-3 cell line polarized in ALI (Ren et al., 2006). Importantly, in hTERT-immortalized bronchial cells differentiated into multiciliated cells in ALI, only the flACE2 protein was detected in motile cilia (Blume et al., 2020) suggesting a specific role of the full-length isoform at this location. Overall, these studies show that differentiation significantly increases the expression of ACE2 and, as such, suggests that the use of differentiated cells should be preferred to model ACE2-dependent SARS-CoV-2 infection. Additionally, the heterogeneity of patient-derived respiratory epithelial cells argues for the study of large cohorts to reach clear conclusions. However, this is hardly achievable due to the scarcity of the cells and the high demanding differentiation process. Beside donor to donor variation, IF staining of ALI-cultured AT2 cells also pointed to heterogeneous ACE2 levels in a single culture (Mossel et al., 2008), which correlates with observations made on lung tissue sections showing ACE2 in only a small fraction of the AT2 cells (Muus et al., 2020).
 
-## 2.3 ACE2 levels during SARS-CoV-2 infection
+#### 2.3 ACE2 levels during SARS-CoV-2 infection
 
 The correlation between the expression of ACE2 mRNA and that of the classical interferon (IFN) stimulated genes (ISG) that was observed through meta-analysis of scRNA-seq data, as well as the presence of two STAT1 binding sites in the promoter of the human ACE2 gene, supports the hypothesis that ACE2 itself could be an ISG (Ziegler et al., 2020; Hennighausen and Lee, 2020). Several reports have indeed documented the capacity of IFNβ and/or IFNα2 to induce ACE2 mRNA in human basal epithelial cells from nasal scraping, human tracheal cells and human large and small airway cells (Hou et al., 2020; Smith et al., 2020; Ziegler et al., 2020). FlACE2 was also induced in nasal and tracheal cells, but not in small airway cells, in response to IFNγ (Smith et al., 2020). Specific analysis of flACE2 and dACE2 isoforms revealed that in fact IFNα, IFNβ and IFN-λ3 specifically induce dACE2 in human bronchial epithelial cells (HBEC) (Blume et al., 2020; Onabajo et al., 2020). While an increase of dACE2, which does not bind to SARS-CoV-2 S, should not translate into more entry of the virus, the question of how this increase would impact the host antiviral response remains to be determined. The IFN-dependent regulation of ACE2 mRNA expression might explain ACE2 upregulation observed within bystander goblet or squamous cells, but not directly in infected cells, during influenza (IAV) virus infections (Ziegler et al., 2020). Only dACE2 mRNA is upregulated upon IAV and rhinovirus infections, but the role of IFNs in ACE2 upregulation in these contexts remains to be fully addressed (Onabajo et al., 2020).
 
@@ -78,7 +409,7 @@ Studies documenting ACE2 protein expression upon IFNs stimulation and SARS-CoV-2
 
 Altogether, for the time being, it appears clear that ACE2 mRNA is detected in the respiratory system, but at significantly lower levels than in kidneys and intestine. Detection of ACE2 protein remains controversial mainly because of discrepancies between antibodies. Importantly, we now know that there are 2 isoforms of ACE2, one of which is unable to bind to SARS-CoV-2. Future studies aimed at analyzing ACE2 mRNA and protein should attempt to determine which of the isoforms is detected considering the great impact this information will have on our understanding of SARS-CoV-2 infection and tropism. The distribution in respiratory tissues is heterogenous and ACE2 is mainly detected in ciliated, goblet, and club cells of the nose and bronchi and in the AT2 cells in the alveoli (Figure 1). The detection of ACE2 mainly in nasal cells could explain a higher shedding of virus in the upper respiratory tract at the beginning of the disease, which has been observed from repeated biological samples (Wang et al., 2020b; Zou et al., 2020). Conversely, the presence of ACE2 in AT2 might facilitate entry of SARS-CoV-2 as observed in infected macaques (Rockx et al., 2020) causing damages of alveoli that could contribute to COVID-19 severity (Olajuyin et al., 2019). Future studies should aim to determine if and how regulation of ACE2 expression during SARS-CoV-2 infection impacts the dynamics of infection and the antiviral response.
 
-## ACE2 expression in comorbidities associated with COVID-19 severity: protective or harmful role?
+### ACE2 expression in comorbidities associated with COVID-19 severity: protective or harmful role?
 
 A large body of evidence supports a protective role for ACE2 in several disease models. The role of ACE2 was initially described in the context of the renin-angiotensin system (RAS), with the discovery of the ACE2/Angiotensin (Ang 1–7)/Mas axis that counteracts the axis of the ACE/AngII/AT1 receptor. ACE2 also plays as a role in the regulation of the kallikrein-kinin system (KKS) that catalyzes the formation of the Bradykinin 2 (B2) receptor ligands, bradykinin and Lys-bradykinin, which are further hydrolyzed into the B1 receptor ligands des-Arg9-bradykinin and Lys-des-Arg9-bradykinin. ACE2 inactivates B1 receptor ligands by cleavage. Increased ACE2 levels, associated with a decrease in AngII due to conversion into Ang 1–7, is typically considered an indicator of organ protection because of its role in reducing pulmonary vasoconstriction, remodeling, atherosclerosis, blood pressure, myocardial hypertrophy, fibrosis and ventricular remodeling. Additionally, through inhibition of B1 receptor ligands, ACE2 is protective against pulmonary angioedema. On the contrary, a decrease in ACE2 levels is associated with an increase in pulmonary vascular permeability, pulmonary edema, ARDS, atherosclerosis, hypertension, cardiac hypertrophy, ventricular remodeling, and heart failure. Importantly, the ACE2/Ang 1–7/Mas axis and ACE2-dependent inhibition of B1R activation also exerts inhibitory effects on inflammation. These functions of ACE2 were fully reviewed by others (Muñoz-Durango et al., 2016; Simões e Silva et al., 2013; Mirabito Colafella et al., 2019; van de Veerdonk et al., 2020; Chung et al., 2020).
 
@@ -96,7 +427,7 @@ While evidence supports ACE2 increase in at least some comorbidities or in respo
 
 A possible alternative explanation that was recently discussed for comorbidities is that disfunction or absence of ACE2 may result in increased levels of AngII and hyperactivation of B1R which leads to inflammation, fibrosis, oxidative stress, vasoconstriction and angioedema (Chung et al., 2020). This could in fact be the case during infection with SARS-CoV-2 if virus-bound ACE2 is no longer available. In addition, while infection progresses, virus entry leads to the intake of ACE2, thereby resulting in a decreased amount of ACE2 at the membrane. Increased levels of AngII were found in the plasma of COVID-19 patients with pneumonia compared to healthy individuals and the levels of AngII positively correlated with SARS-CoV-2 viral load and lung injury (Liu et al., 2020b). It is possible that in patients presenting comorbidities associated with a dysregulation of the RAS system, AngII modulation by SARS-CoV-2 reaches a critical level that ultimately induces an inflammatory state causing fatal issues.
 
-## Potential co-receptors/attachment factors for ACE2-dependent SARS-CoV-2 entry
+### Potential co-receptors/attachment factors for ACE2-dependent SARS-CoV-2 entry
 
 The cell surface neuropilin NRP1 (also known as Vascular endothelial cell growth factor 165 receptor, VEGF165R Soker et al., 1997) and NRP2 (also known as VEGF165R2 Ambra et al., 2006) are dimeric receptors known to contribute to neurogenesis and angiogenesis (Yasuhara et al., 2004). They bind ligands containing a C-terminal polybasic motif that follows the C-end-Rule (CendR) (Teesalu et al., 2009). SARS-CoV-2 S contains a furin cleavage site which has the potential to generate a solvent exposed C-terminus containing the CendR R/KXXR/K sequence which is, according to molecular modeling predictions, capable of binding to the coagulation b1 domain of NRP (Teesalu et al., 2009; Cantuti-Castelvetri et al., 2020). This observation led to the hypothesis that neuropilins could serve as co-receptor for SARS-CoV-2 attachment to the cell surface (Figure 1) and contributes to the tropism as previously documented for viruses such as Human T-cell lymphotropic virus type 1 (HTLV-1) and Epstein–Barr virus (EBV) (Lambert et al., 2009; Wang et al., 2015). Several experimental observations support the role of NRP1 as SARS-CoV-2 co-receptor. In a GFP-nanotrap experiment in HEK293T cells, SARS-CoV-2 S1 interacts with GFP-NRP1 in a CendR motif-dependent manner (Daly et al., 2020). While deletion of NRP1 strongly reduced SARS-CoV-2 infection of Hela cells expressing ACE2, NRP1 alone was not sufficient as cells that do not express ACE2 are not infected by SARS-CoV-2 (131). In addition, incubation of VSV-SARS-S2 or patient-isolated SARS-CoV-2 with monoclonal anti-NRP1 decreased, although to a lesser extent than monoclonal anti-ACE2, the efficiency of infection of HEK293 cells expressing ACE2 and of Calu3 cells (Cantuti-Castelvetri et al., 2020; Daly et al., 2020). NRP1 and 2 are expressed in the respiratory epithelium with similar levels than ACE2 in AT2 cells. Cellular staining of NRP1 (IF, ab81321, n = 6) of post-mortem olfactory tissue sections showed high detection of NRP1 in infected epithelial cells of COVID-19 patients compared to control individuals (n = 7) (Cantuti-Castelvetri et al., 2020). Altogether, although still limited, current evidence suggests that NRP1 potentiates attachment of SARS-CoV-2 to facilitate ACE2-mediated entry. Further studies are required to determine if the use of neuropilins as co-receptors may partly explain that low levels of ACE2 in the respiratory epithelium are sufficient to allow efficient entry of SARS-CoV-2.
 
@@ -106,7 +437,7 @@ Sialic acids have been described as cell attachment factors for many viruses inc
 
 Altogether, evidence supporting the involvement of NRP1 or HS as co-receptor/attachment factors favoring SARS-CoV-2 entry into cells is still sparse. This is even more true for the potential role of sialic acids that remains speculative. Further studies, ideally in vivo in animal models or in patients will be necessary to delineate the specific role of each of these elements in the control of SARS-CoV-2 infection and whether they constitute potential therapeutic targets to effectively inhibit the spread of the virus in the respiratory system. Whether the specific distribution of one or more of these factors in specific cell types could define SARS-CoV-2 tropism is a topic of interest. It is possible that different co-receptor/attachment factors bind to SARS-CoV-2 S at the same time without creating steric hindrance, but this remains to be assessed.
 
-## Alternative receptors with potential role in SARS-CoV-2 entry
+### Alternative receptors with potential role in SARS-CoV-2 entry
 
 Despite convincing evidence that ACE2 is a high affinity receptor for SARS-CoV-2, the limited levels of expression throughout the respiratory system allow speculation on the uniqueness of this entry route. Data derived mainly from the study of other coronaviruses provide sufficient evidence to discuss the putative role of CD147 and GRP78 as entry receptors for SARS-CoV-2 (Figure 1). The Ang II type 2receptor (AGTR2), and ACE have also been proposed alternative receptors by others (Cui et al., 2020; Prates et al., 2020), but evidence is fairly weak and therefore will not be reviewed here.
 
@@ -114,6 +445,6 @@ The transmembrane glycoprotein CD147, also known as basigin or EMMPRIN (Miyauchi
 
 The ER chaperone BiP, also known as 78 kDa glucose-regulated protein (GRP78)/Binding-immunoglobulin protein (BiP)/Heat shock protein family A member 5 (HSPA5), is widely known for its role in the degradation of misfolded proteins and in the unfolded protein response (Yang et al., 2015; Ting and Lee, 1988; Baumeister et al., 2005; Werner et al., 1998). GRP78 is detected in bronchial epithelial cells and mRNA levels in the lung are significantly higher than ACE2 (Uhlén et al., 2015; Aguiar et al., 2020; Su et al., 2004; Wu et al., 2009). While GRP78 mainly resides in the ER, plasma membrane localization is also observed upon response to cellular stress (Ibrahim et al., 2019). In particular, GRP78 was found to relocalize to cell surface and serve as an attachment point for MERS-CoV and bat coronavirus HKU9 (bCoV-HKU9) (Chu et al., 2018). Complexes containing GRP78 and MERS-CoV S protein and colocalization of GRP78 and DDP4, the main entry receptor of MERS-CoV, have been observed. However, silencing of GRP78 only slightly reduced MERS-CoV entry compared to DDP4 pointing to a model in which GRP78 acts as a point of attachment potentiating virus entry via DDP4 (Chu et al., 2018). While there is no direct demonstration yet, the speculation that GRP78 could act as a receptor for SARS-CoV-2 came in part from the observation that the S protein contains disulfide bonds that form cyclic structures that share similarities to that of Pep42, a cyclic 13-mer (CTVALPGGYVRVC) that interacts with GRP78 at the cell surface (Kim et al., 2006). Modelization confirmed that SARS-CoV-2 S could stably interact with the head of GRP78 (Ibrahim et al., 2020). However, this study relies on the structure of S that differs from previously published structure obtained by cryo-EM in the number of disulfide bonds (Wrapp et al., 2020). Further mechanistic studies in vitro and in cells are needed to draw conclusions about the role of GRP78 in the entry of SARS-CoV-2.
 
-## Concluding remarks
+### Concluding remarks
 
 Clearly, a detailed characterization of receptor(s) and protease(s) involved in SARS-CoV-2 entry is of major importance to understand the tropism of SARS-CoV-2 and therefore the COVID-19 disease. Indeed, while in the early phase of the pandemic, SARS-CoV-2 was believed to behave like other respiratory viruses leading to ARDS, it is now very clear that it is a very unusual pathogen that provokes manifestations outside the respiratory apparatus leading to fatal outcomes in vulnerable people. Although research on receptors and proteases has highly benefited from accumulated knowledge on other human coronaviruses, notably the closely related SARS-CoV, much remains to be learned in the context of SARS-CoV-2 infection. The numerous data discussed in this review support a main role of ACE2 as for SARS-CoV. Although this is a plausible model, it is disputed by the observation that ACE2 is at most poorly expressed in the respiratory epithelium. Whether co-receptors, such as NRP1, HS or sialic acids, exposed at the surface of target cells could be part of the answer to define a two-step attachment mechanism should be further addressed. Research on alternative routes of entry is also worth pursuing. CD147 has emerged as a potential alternative entry receptor, but the fact that it is ubiquitously expressed raises questions about associated mechanisms that would be needed to explain the restricted tropism of SARS-CoV-2. With COVID-19 emerging as a disease with vascular consequences rather than just a respiratory syndrome, the identity of entry receptors is an even more important topic. Intriguing preliminary data suggesting infection of endothelial cells is consistent with the role of ACE2. However, more solid data, notably relying on post-mortem analyses or from relevant animal models, are urgently needed to validate this observation and determine whether it is anecdotic or more widespread among COVID-19 patients. Such data will have an immense impact on our understanding of COVID-19 pathogenesis and would undoubtedly guide future development of therapies. Finally, with the information currently available, it is very difficult to conclude on the role of the modulation of the entry receptors in patients with comorbidities associated with severe symptoms and fatal outcome of COVID-19. An important question awaiting answers is whether the involvement of ACE2 in SARS-CoV-2 infection has an impact on the RAS and KKS systems and whether this could be related to the inflammatory state of severe COVID-19.

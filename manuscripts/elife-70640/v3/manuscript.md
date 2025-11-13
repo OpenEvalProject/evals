@@ -21,7 +21,7 @@
 
 ## Abstract
 
-An early-warning model to predict in-hospital mortality on admission of COVID-19 patients at an emergency department (ED) was developed and validated using a machine-learning model. In total, 2782 patients were enrolled between March 2020 and December 2020, including 2106 patients (first wave) and 676 patients (second wave) in the COVID-19 outbreak in Italy. The first-wave patients were divided into two groups with 1474 patients used to train the model, and 632 to validate it. The 676 patients in the second wave were used to test the model. Age, 17 blood analytes, and Brescia chest X-ray score were the variables processed using a random forests classification algorithm to build and validate the model. Receiver operating characteristic (ROC) analysis was used to assess the model performances. A web-based death-risk calculator was implemented and integrated within the Laboratory Information System of the hospital. The final score was constructed by age (the most powerful predictor), blood analytes (the strongest predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %), and Brescia chest X-ray score ( https://bdbiomed.shinyapps.io/covid19score/ ). The areas under the ROC curve obtained for the three groups (training, validating, and testing) were 0.98, 0.83, and 0.78, respectively. The model predicts in-hospital mortality on the basis of data that can be obtained in a short time, directly at the ED on admission. It functions as a web-based calculator, providing a risk score which is easy to interpret. It can be used in the triage process to support the decision on patient allocation.
+An early-warning model to predict in-hospital mortality on admission of COVID-19 patients at an emergency department (ED) was developed and validated using a machine-learning model. In total, 2782 patients were enrolled between March 2020 and December 2020, including 2106 patients (first wave) and 676 patients (second wave) in the COVID-19 outbreak in Italy. The first-wave patients were divided into two groups with 1474 patients used to train the model, and 632 to validate it. The 676 patients in the second wave were used to test the model. Age, 17 blood analytes, and Brescia chest X-ray score were the variables processed using a random forests classification algorithm to build and validate the model. Receiver operating characteristic (ROC) analysis was used to assess the model performances. A web-based death-risk calculator was implemented and integrated within the Laboratory Information System of the hospital. The final score was constructed by age (the most powerful predictor), blood analytes (the strongest predictors were lactate dehydrogenase, D-dimer, neutrophil/lymphocyte ratio, C-reactive protein, lymphocyte %, ferritin std, and monocyte %), and Brescia chest X-ray score (https://bdbiomed.shinyapps.io/covid19score/). The areas under the ROC curve obtained for the three groups (training, validating, and testing) were 0.98, 0.83, and 0.78, respectively. The model predicts in-hospital mortality on the basis of data that can be obtained in a short time, directly at the ED on admission. It functions as a web-based calculator, providing a risk score which is easy to interpret. It can be used in the triage process to support the decision on patient allocation.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ The study was approved by the local ethics committee (COVID-SURG-BS; NP 4059).
 
 ## Results
 
-## Description of the sample
+### Description of the sample
 
 The entire sample analyzed in this paper contained 2782 COVID-19 patients (1010 female [36.3%] and 1772 male [63.7%]), admitted to the ED and hospitalized at SCBH from March to December 2020. During these 10 months, the pandemic had two temporal waves: March–April (MA) (2106 patients, 75.70% of the entire sample) and May–December (MD) (676 patients, 24.30% of the entire sample) (Supplementary file 1a). The model was trained on a subsample extracted from the first wave (70%) and tested (i) on data not used to calibrate the model (remaining 30% from the first wave) and (ii) on data from the second wave (Figure 1).
 
@@ -48,6 +48,986 @@ The entire sample analyzed in this paper contained 2782 COVID-19 patients (1010 
 **Figure 1.:** The early-warning model (BS-EWM) was trained with a random forest on 70% of first-wave patients (rebalanced with the synthetic minority oversampling technique [SMOTE] procedure) and (i) validated on remaining 30% of first-wave patients (ii) tested on 676 second-wave patients. In detail, 2106 patients were randomly in training and validating, maintaining the same death prevalence of the first wave.
 
 The first-wave subsample contained 2106 COVID-19 patients hospitalized in March–April 2020 at SCBH: 744 females (35.3%) and 1362 males (64.7%) (Table 1). During that period, 423 patients died (20.09% of the total): 131 females (31%) and 292 males (69%). Their mean age ± SD was 66.89 ± 14.19: 67.93 ± 15.40 for females and 66.32 ± 13.45 for males (p-value = 0.001). The mean age of deceased patients was 76.21 ± 9.12, while for living patients, it was 64.55 ± 14.27 (p-value < 0.001). Mean hospital stay was 13.58 ± 11.58 days (from a minimum of 0 to a maximum of 140 days): 11.33 ± 10.98 days for patients who died, 14.15 ± 11.66 days for surviving patients (p-value < 0.001).
+
+**Table 1.**
+ Descriptive statistics on all variables in the dataset stratified respect alive–dead. Comparison between first (March–April) and second (May–December) wave.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variables</th>
+      <th colspan="2">First wave: March–April (MA) 2020</th>
+      <th rowspan="2">p-Value</th>
+      <th colspan="2">Second wave: May–December (MD) 2020</th>
+      <th rowspan="2">p-Value</th>
+    </tr>
+    <tr>
+      <th>Alive(N = 1683)</th>
+      <th>Dead(N = 423)</th>
+      <th>Alive (N = 594)</th>
+      <th>Dead (N = 82)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>64.55 (14.27)</td>
+      <td>76.21 (9.12)</td>
+      <td></td>
+      <td>65.30 (15.20)</td>
+      <td>76.72 (10.79)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>65.00(55.00, 75.00)</td>
+      <td>77.00(72.00, 82.00)</td>
+      <td></td>
+      <td>67.00(55.00, 77.00)</td>
+      <td>80.00(72.25, 84.75)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>19.00–97.00</td>
+      <td>44.00–98.00</td>
+      <td></td>
+      <td>18.00–97.00</td>
+      <td>44.00–98.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td>0.036†</td>
+      <td></td>
+      <td></td>
+      <td>0.131†</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>613 (36.4%)</td>
+      <td>131 (31.0%)</td>
+      <td></td>
+      <td>240 (40.4%)</td>
+      <td>26 (31.7%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>1,070 (63.6%)</td>
+      <td>292 (69.0%)</td>
+      <td></td>
+      <td>354 (59.6%)</td>
+      <td>56 (68.3%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Days in hospital</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.008*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+      <td>95</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>14.15 (11.66)</td>
+      <td>11.33 (10.98)</td>
+      <td></td>
+      <td>14.95 (11.67)</td>
+      <td>17.77 (10.75)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>11.00(7.00, 18.00)</td>
+      <td>8.00(4.00, 15.00)</td>
+      <td></td>
+      <td>12.00(7.00, 20.00)</td>
+      <td>17.50(9.00, 25.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–140.00</td>
+      <td>0.00–88.00</td>
+      <td></td>
+      <td>0.00–79.00</td>
+      <td>2.00–46.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Score</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>6.92 (4.40)</td>
+      <td>8.77 (4.39)</td>
+      <td></td>
+      <td>5.65 (4.48)</td>
+      <td>8.23 (4.63)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>7.00(3.00, 10.00)</td>
+      <td>9.00(6.00, 12.00)</td>
+      <td></td>
+      <td>5.00(2.00, 9.00)</td>
+      <td>9.00(5.25, 11.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–18.00</td>
+      <td>0.00–18.00</td>
+      <td></td>
+      <td>0.00–18.00</td>
+      <td>0.00–17.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D-dimer</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>406</td>
+      <td>113</td>
+      <td></td>
+      <td>128</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>1155.03 (2218.51)</td>
+      <td>3124.25 (8070.21)</td>
+      <td></td>
+      <td>1538.17 (3123.38)</td>
+      <td>4712.44 (8897.82)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>443.00(262.00, 985.00)</td>
+      <td>944.50(476.50, 2970.75)</td>
+      <td></td>
+      <td>739.50(427.50, 1341.25)</td>
+      <td>1112.00(725.50, 3619.25)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>200.00–47228.00</td>
+      <td>200.00–60,342.00</td>
+      <td></td>
+      <td>190.00–33,501.00</td>
+      <td>190.00–35,000.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fibrinogen</td>
+      <td></td>
+      <td></td>
+      <td>0.951*</td>
+      <td></td>
+      <td></td>
+      <td>0.778*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>339</td>
+      <td>117</td>
+      <td></td>
+      <td>54</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>530.53 (194.13)</td>
+      <td>530.55 (213.69)</td>
+      <td></td>
+      <td>523.94 (169.43)</td>
+      <td>519.77 (213.05)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>520.00(381.00, 650.00)</td>
+      <td>515.00(381.00, 654.00)</td>
+      <td></td>
+      <td>512.00(405.00, 612.00)</td>
+      <td>510.00(330.50, 649.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>119.00–1339.00</td>
+      <td>68.00–1333.00</td>
+      <td></td>
+      <td>147.00–1371.00</td>
+      <td>153.00–1287.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LDH</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>188</td>
+      <td>92</td>
+      <td></td>
+      <td>61</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>321.25 (227.50)</td>
+      <td>433.71 (205.10)</td>
+      <td></td>
+      <td>308.30 (196.23)</td>
+      <td>443.49 (707.95)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>283.00(222.00, 373.00)</td>
+      <td>406.00(269.50, 545.50)</td>
+      <td></td>
+      <td>273.00(218.00, 354.00)</td>
+      <td>332.00(257.00, 442.50)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>90.00–6689.00</td>
+      <td>123.00–1365.00</td>
+      <td></td>
+      <td>108.00–2565.00</td>
+      <td>122.00–6310.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>5.67 (3.61)</td>
+      <td>7.17 (4.39)</td>
+      <td></td>
+      <td>5.80 (3.97)</td>
+      <td>7.21 (4.13)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>4.83(3.29, 7.03)</td>
+      <td>6.20(4.12, 9.02)</td>
+      <td></td>
+      <td>4.78(3.42, 7.11)</td>
+      <td>6.72(4.00, 9.77)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–53.99</td>
+      <td>0.17–30.45</td>
+      <td></td>
+      <td>0.10–47.03</td>
+      <td>0.19–23.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocytes</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>1.43 (5.48)</td>
+      <td>1.19 (4.29)</td>
+      <td></td>
+      <td>1.22 (0.81)</td>
+      <td>1.38 (4.63)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>1.04(0.75, 1.42)</td>
+      <td>0.81(0.55, 1.18)</td>
+      <td></td>
+      <td>1.06(0.72, 1.52)</td>
+      <td>0.74(0.47, 1.06)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.10–177.63</td>
+      <td>0.04–85.51</td>
+      <td></td>
+      <td>0.08–10.28</td>
+      <td>0.08–42.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils on lymphocytes</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>6.18 (5.87)</td>
+      <td>10.72 (11.71)</td>
+      <td></td>
+      <td>7.19 (9.92)</td>
+      <td>12.84 (13.09)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>4.52(2.84, 7.50)</td>
+      <td>7.13(4.47, 13.06)</td>
+      <td></td>
+      <td>4.32(2.63, 8.40)</td>
+      <td>8.50(4.05, 15.19)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–101.90</td>
+      <td>0.01–129.67</td>
+      <td></td>
+      <td>0.12–143.25</td>
+      <td>0.11–70.56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils %</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>22</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.73 (0.13)</td>
+      <td>0.80 (0.12)</td>
+      <td></td>
+      <td>0.73 (0.13)</td>
+      <td>0.79 (0.16)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.74(0.66, 0.82)</td>
+      <td>0.82(0.75, 0.88)</td>
+      <td></td>
+      <td>0.73(0.64, 0.83)</td>
+      <td>0.83(0.69, 0.89)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–0.97</td>
+      <td>0.01–0.97</td>
+      <td></td>
+      <td>0.10–0.99</td>
+      <td>0.10–0.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocytes %</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>22</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.18 (0.11)</td>
+      <td>0.13 (0.09)</td>
+      <td></td>
+      <td>0.18 (0.11)</td>
+      <td>0.13 (0.13)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.16(0.11, 0.23)</td>
+      <td>0.11(0.07, 0.17)</td>
+      <td></td>
+      <td>0.17(0.10, 0.25)</td>
+      <td>0.10(0.06, 0.18)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.01–0.97</td>
+      <td>0.01–0.99</td>
+      <td></td>
+      <td>0.01–0.88</td>
+      <td>0.01–0.88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCR</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.004*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>47</td>
+      <td>12</td>
+      <td></td>
+      <td>21</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>77.25 (75.76)</td>
+      <td>117.68 (95.97)</td>
+      <td></td>
+      <td>64.28 (73.38)</td>
+      <td>98.59 (102.49)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>55.65(17.30, 111.60)</td>
+      <td>99.20(42.80, 170.45)</td>
+      <td></td>
+      <td>39.10(12.30, 91.10)</td>
+      <td>74.80(20.12, 140.73)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.30–479.00</td>
+      <td>0.70–471.10</td>
+      <td></td>
+      <td>0.30–483.20</td>
+      <td>0.30–593.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WBC</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.011*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>21</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>7.73 (7.13)</td>
+      <td>9.13 (7.46)</td>
+      <td></td>
+      <td>7.65 (4.17)</td>
+      <td>9.23 (6.25)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>6.62(4.87, 9.11)</td>
+      <td>7.62(5.60, 10.74)</td>
+      <td></td>
+      <td>6.67(5.02, 8.90)</td>
+      <td>8.34(5.55, 12.04)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.72–191.02</td>
+      <td>0.32–92.23</td>
+      <td></td>
+      <td>0.97–48.19</td>
+      <td>0.97–47.79</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Basophils</td>
+      <td></td>
+      <td></td>
+      <td>0.073*</td>
+      <td></td>
+      <td></td>
+      <td>0.419*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.02 (0.02)</td>
+      <td>0.02 (0.02)</td>
+      <td></td>
+      <td>0.02 (0.04)</td>
+      <td>0.02 (0.02)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.01(0.01, 0.02)</td>
+      <td>0.01(0.01, 0.02)</td>
+      <td></td>
+      <td>0.02(0.01, 0.03)</td>
+      <td>0.01(0.01, 0.03)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–0.31</td>
+      <td>0.00–0.15</td>
+      <td></td>
+      <td>0.00–0.84</td>
+      <td>0.00–0.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Basophils %</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.024*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>22</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.00 (0.00)</td>
+      <td>0.00 (0.00)</td>
+      <td></td>
+      <td>0.00 (0.00)</td>
+      <td>0.00 (0.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.00(0.00, 0.00)</td>
+      <td>0.00(0.00, 0.00)</td>
+      <td></td>
+      <td>0.00(0.00, 0.00)</td>
+      <td>0.00(0.00, 0.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–0.02</td>
+      <td>0.00–0.06</td>
+      <td></td>
+      <td>0.00–0.05</td>
+      <td>0.00–0.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eosinophils</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.015*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.06 (0.12)</td>
+      <td>0.04 (0.10)</td>
+      <td></td>
+      <td>0.06 (0.14)</td>
+      <td>0.05 (0.13)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.01 (0.00, 0.07)</td>
+      <td>0.00 (0.00, 0.02)</td>
+      <td></td>
+      <td>0.01 (0.00, 0.06)</td>
+      <td>0.00 (0.00, 0.03)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–2.19</td>
+      <td>0.00–0.79</td>
+      <td></td>
+      <td>0.00–1.95</td>
+      <td>0.00–0.97</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eosinophils %</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.013*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>22</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.01 (0.02)</td>
+      <td>0.00 (0.01)</td>
+      <td></td>
+      <td>0.01 (0.02)</td>
+      <td>0.01 (0.01)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.00(0.00, 0.01)</td>
+      <td>0.00(0.00, 0.00)</td>
+      <td></td>
+      <td>0.00(0.00, 0.01)</td>
+      <td>0.00(0.00, 0.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–0.27</td>
+      <td>0.00–0.12</td>
+      <td></td>
+      <td>0.00–0.25</td>
+      <td>0.00–0.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Monocytes</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.683*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>23</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.56 (0.68)</td>
+      <td>0.69 (3.32)</td>
+      <td></td>
+      <td>0.55 (0.32)</td>
+      <td>0.58 (0.41)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.47(0.32, 0.68)</td>
+      <td>0.41(0.25, 0.63)</td>
+      <td></td>
+      <td>0.49(0.33, 0.68)</td>
+      <td>0.48(0.27, 0.77)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.01–23.31</td>
+      <td>0.02–66.34</td>
+      <td></td>
+      <td>0.02–2.45</td>
+      <td>0.07–2.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Monocytes %</td>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001*</td>
+      <td></td>
+      <td></td>
+      <td>0.034*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>22</td>
+      <td>19</td>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>0.08 (0.04)</td>
+      <td>0.07 (0.05)</td>
+      <td></td>
+      <td>0.08 (0.04)</td>
+      <td>0.07 (0.05)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>0.07 (0.05, 0.10)</td>
+      <td>0.06 (0.04, 0.08)</td>
+      <td></td>
+      <td>0.07 (0.05, 0.10)</td>
+      <td>0.06 (0.04, 0.09)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>0.00–0.70</td>
+      <td>0.01–0.72</td>
+      <td></td>
+      <td>0.01–0.31</td>
+      <td>0.01–0.27</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>Ferritin F</td>
+      <td>613 patients(82.39%)</td>
+      <td>131 patients(17.61%)</td>
+      <td>&lt;0.001*</td>
+      <td>240 patients(90.23%)</td>
+      <td>26 patients(9.77%)</td>
+      <td>0.372*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>158</td>
+      <td>34</td>
+      <td></td>
+      <td>43</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>674.53 (817.61)</td>
+      <td>1237.07 (2308.64)</td>
+      <td></td>
+      <td>564.63 (526.39)</td>
+      <td>2006.00 (4680.23)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>459.00(212.00, 820.50)</td>
+      <td>700.00(353.00, 1347.00)</td>
+      <td></td>
+      <td>433.00(216.00, 750.00)</td>
+      <td>510.00(269.00, 722.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>4.00–7687.00</td>
+      <td>19.00–20,572.00</td>
+      <td></td>
+      <td>11.00–3397.00</td>
+      <td>81.00–20,941.00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ferritin M</td>
+      <td>1070 patients(78.56%)</td>
+      <td>292 patients(21.44%)</td>
+      <td>&lt;0.001*</td>
+      <td>354 patients(90.23%)</td>
+      <td>56 patients(9.77%)</td>
+      <td>0.007*</td>
+    </tr>
+    <tr>
+      <td>N-Miss</td>
+      <td>257</td>
+      <td>96</td>
+      <td></td>
+      <td>50</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean (SD)</td>
+      <td>1353.00 (1359.86)</td>
+      <td>1825.25 (1945.47)</td>
+      <td></td>
+      <td>1181.95 (3295.92)</td>
+      <td>1372.04 (1258.14)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Median(Q1, Q3)</td>
+      <td>939.00(461.00, 1705.00)</td>
+      <td>1262.50(572.25, 2323.25)</td>
+      <td></td>
+      <td>737.50(405.25, 1283.00)</td>
+      <td>1159.00(598.00, 1500.00)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>23.00–11,513.00</td>
+      <td>55.00–13,289.00</td>
+      <td></td>
+      <td>25.00–56,039.00</td>
+      <td>112.00–7058.00</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_In bold and italics p-values < 0.05.*Wilcoxon rank-sum test.†Fisher’s exact test._
 
 The second-wave subsample contained 676 COVID-19 patients hospitalized in MD 2020 at SCBH: 266 females (39.3%), 410 males (60.7%) (Table 1). During the 8 months of the second wave, 82 patients died (12.13%): 26 females (31.7%) and 56 males (68.3%). The mean age of deceased patients was 76.72 ± 10.79 vs. 65.30 ± 15.20 for surviving patients (p-value < 0.001). The mean hospital stay was 15.35 ± 11.58 days (from a minimum of 0 to a maximum 79 days): 17.77 ± 10.75 days for patients who died, 14.95 ± 11.67 days for surviving patients (p-value = 0.008).
 
@@ -59,7 +1039,7 @@ The correlations between the 17 analytes and the Brescia X-ray score were invest
 
 **Figure 2.:** The relationships between 17 analytes and Brescia chest X-ray score are inspected with the Spearman correlation coefficients, ρs, which are represented in this correlation plot by means of blue and red circles (positive and negative correlation, respectively). The diameter of the circle is proportional to the magnitude of ρs and black crosses on them identify correlation not significantly different from zero (p-values > 0.05). The correlation matrix is reordered according to the hierarchical cluster analysis on the quantitative variables.
 
-## BS-EWM
+### BS-EWM
 
 A machine-learning model (BS-EWM) was developed by inputting a dataset of 2782 COVID-19 patients admitted to the ED and hospitalized at SCBH from March to December 2020. The majority of patients (2106/2782, 75.70%) belonged to the first wave (MA), the remaining fraction (676/2782, 24.30%) to the second wave (MD). As outcome, the machine-learning model had the condition dead/alive, and, as covariates: age, Brescia X-ray score, and 17 blood sample analytes.
 
@@ -82,6 +1062,72 @@ When compared to other models such as gradient boosting machine (GBM) and logist
 ![Figure 5.](https://cdn.elifesciences.org/articles/70640/elife-70640-fig5-v3.jpg)
 
 **Figure 5.:** ROC curves of three methods: (i) random forest, (ii) GBM, and (iii) logistic regression. Each graph reports the ROC curve computed in training (blue line, 70% of March–April’s patients), validating (dashed red line, 30% of March–April’s patients), and testing (dashed green lined, May–December’s patients).
+
+**Table 2.**
+ Performance metrics of methods: random forest, gradient boosting machine (GBM), and logistic regression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Metrics</th>
+      <th colspan="3">Random forest</th>
+      <th colspan="3">GBM</th>
+      <th colspan="3">Logistic regression</th>
+    </tr>
+    <tr>
+      <th>TrainingMarch–April (MA)</th>
+      <th>ValidatingMarch–April (MA)</th>
+      <th>TestingMay–Dec(MD)</th>
+      <th>TrainingMarch–April (MA)</th>
+      <th>ValidatingMarch–April (MA)</th>
+      <th>TestingMay–Dec(MD)</th>
+      <th>TrainingMarch–April (MA)</th>
+      <th>ValidatingMarch–April (MA)</th>
+      <th>TestingMay–Dec(MD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AUC (DeLong)(95% CI)</td>
+      <td>0.97(0.97–0.98)</td>
+      <td>0.83(0.80–0.87)</td>
+      <td>0.78(0.73–0.84)</td>
+      <td>0.88(0.86–0.89)</td>
+      <td>0.84(0.80–0.88)</td>
+      <td>0.78(0.73–0.83)</td>
+      <td>0.84(0.82–0.86)</td>
+      <td>0.83(0.79–0.87)</td>
+      <td>0.52(0.44–0.60)</td>
+    </tr>
+    <tr>
+      <td>Sensitivity(95% CI)</td>
+      <td>0.93(0.91–0.97)</td>
+      <td>0.82(0.72–0.92)</td>
+      <td>0.73(0.54–1.00)</td>
+      <td>0.85(0.80–0.88)</td>
+      <td>0.80(0.66–0.90)</td>
+      <td>0.77(0.65–0.94)</td>
+      <td>0.80(0.77–0.84)</td>
+      <td>0.84(0.76–0.91)</td>
+      <td>0.87(0.18–1.00)</td>
+    </tr>
+    <tr>
+      <td>Specificity(95% CI)</td>
+      <td>0.92(0.88–0.94)</td>
+      <td>0.75(0.63–0.83)</td>
+      <td>0.73(0.41–0.89)</td>
+      <td>0.77(0.73–0.81)</td>
+      <td>0.75(0.65–0.87)</td>
+      <td>0.71(0.50–0.79)</td>
+      <td>0.74(0.70–0.77)</td>
+      <td>0.73(0.65–0.79)</td>
+      <td>0.26(0.11–0.94)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Comparison between the performances of three methods: random forest, GBM, and logistic regression model applied on the rebalanced dataset obtained with SMOTE methodology. Logistic regression predictions are computed using the 10-fold cross-validation in order to be comparable with random forest and GBM predictions (which use out-of-bag and 10-fold cross-validation, respectively)._
 
 In order to compare the BS-EWM score with univariate models based on single biomarkers, three random forest (on training, validation, and testing) are estimated on the most important biomarkers (LDH, D-dimer, neutr/lymph, neutrophils %, fibrinogen, CRP, Brescia chest X-ray, lymphocytes %, ferritin std, monocytes %). Results of these 30 models are reported in Supplementary file 1d. It is evident that considering one biomarker per time, the model provides good predictions in training, but bad performances out of sample (contrary to the BS-EWM score it loses its predictive power on fresh data). Hence, it is evident that a score based on a multivariate model provide better results since it also considers interactions among variables.
 

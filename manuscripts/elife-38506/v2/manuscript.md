@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.38506.001 Light-gated chloride channels are emerging as promising optogenetic tools for inhibition of neural activity. However, their effects depend on the transmembrane chloride electrochemical gradient and may be complex due to the heterogeneity of this gradient in different developmental stages, neuronal types, and subcellular compartments. Here we characterized a light-gated chloride channel, GtACR2, in mouse cortical neurons. We found that GtACR2 activation inhibited the soma, but unexpectedly depolarized the presynaptic terminals resulting in neurotransmitter release. Other light-gated chloride channels had similar effects. Reducing the chloride concentrations in the axon and presynaptic terminals diminished the GtACR2-induced neurotransmitter release, indicating an excitatory effect of chloride channels in these compartments. A novel hybrid somatodendritic targeting motif reduced the GtACR2-induced neurotransmitter release while enhancing the somatic photocurrents. Our results highlight the necessity of precisely determining the effects of light-gated chloride channels under specific experimental conditions and provide a much-improved light-gated chloride channel for optogenetic inhibition.
+Light-gated chloride channels are emerging as promising optogenetic tools for inhibition of neural activity. However, their effects depend on the transmembrane chloride electrochemical gradient and may be complex due to the heterogeneity of this gradient in different developmental stages, neuronal types, and subcellular compartments. Here we characterized a light-gated chloride channel, GtACR2, in mouse cortical neurons. We found that GtACR2 activation inhibited the soma, but unexpectedly depolarized the presynaptic terminals resulting in neurotransmitter release. Other light-gated chloride channels had similar effects. Reducing the chloride concentrations in the axon and presynaptic terminals diminished the GtACR2-induced neurotransmitter release, indicating an excitatory effect of chloride channels in these compartments. A novel hybrid somatodendritic targeting motif reduced the GtACR2-induced neurotransmitter release while enhancing the somatic photocurrents. Our results highlight the necessity of precisely determining the effects of light-gated chloride channels under specific experimental conditions and provide a much-improved light-gated chloride channel for optogenetic inhibition.
 
 ## Introduction
 
@@ -29,9 +29,25 @@ To this end, we investigated the effects of activating GtACR2 in mouse cortical 
 
 ## Results
 
-## Light activation of GtACR2 in mouse cortical neurons causes neurotransmitter release
+### Light activation of GtACR2 in mouse cortical neurons causes neurotransmitter release
 
 To examine the efficacy of GtACR2 in mouse cortical excitatory neurons, we expressed a GtACR2-EYFP fusion protein (referred to as GtACR2 below) together with a red fluorescent protein, tdTomato, in layer 2/3 pyramidal neurons of the mouse visual or somatosensory cortex by in utero electroporation of plasmids at embryonic day 14.5–15.5. We obtained acute coronal brain slices from 3 to 8 week-old mice and observed that GtACR2 was present in the soma, dendrites, and axon (Figure 1A). We performed whole-cell patch clamp recordings at the soma of neurons expressing GtACR2 (GtACR2+ neurons) with a K+-based pipette solution (Figure 1B). As previously reported (Govorunova et al., 2015), activation of GtACR2 by wide-field blue light (455 nm) potently inhibited current-induced spiking in these neurons (Figure 1C). However, when we voltage clamped the neurons to record GtACR2-mediated photocurrents, we unexpectedly found an inward current that was superimposed on the photocurrent. This inward current resembled an excitatory postsynaptic current (EPSC; Figure 1D). To further investigate this phenomenon, we recorded layer 2/3 pyramidal neurons that did not express GtACR2 (GtACR2– neurons) with a Cs+-based pipette solution (Figure 1E). Activation of GtACR2 with a short light pulse (0.5–10 ms) generated inward currents in all recorded GtACR2– neurons that were voltage clamped at the reversal potential for GABAergic inhibition (−60 mV). The onsets of these inward currents followed the onset of the blue light by 3.19 ± 0.26 ms (mean ± s.e.m., n = 25). These currents were abolished by the glutamatergic receptor antagonists, NBQX and CPP (Figure 1F), or the voltage-gated sodium channel blocker, tetrodotoxin (TTX; Figure 1G), indicating that they were indeed monosynaptic EPSCs caused by the glutamate transmitter released from GtACR2+ neurons. Activation of GtACR2 also produced inhibitory postsynaptic currents (IPSCs) in GtACR2– neurons that were voltage clamped at the reversal potential for glutamatergic excitation (+10 mV). These IPSCs were disynaptic because they were abolished by NBQX and CPP (Figure 1—figure supplement 1), indicating that activating GtACR2 in pyramidal neurons can release sufficient glutamate to recruit inhibitory interneurons.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig1-v2.jpg)
+
+**Figure 1.:** (A) A representative fluorescent image of the visual cortex showing GtACR2-EYFP and tdTomato expression in a subset of layer 2/3 pyramidal neurons. Note the strong EYFP fluorescence in layer 5 that contains the axons of layer 2/3 pyramidal neurons. L, layer; WM, white matter. (B) Schematic of slice experiments in (C,D). GtACR2 in a subset of layer 2/3 pyramidal neurons. (C) Membrane potentials (upper panel) in response to somatic current injections (lower panel) from a GtACR2+ neuron. Blue light activation of GtACR2 suppressed the action potentials evoked by current injections (n = 5 neurons). (D) Blue light-induced membrane currents recorded at the membrane potentials of −75, –77, −78, –79, and −80 mV from the same GtACR2+ neuron in (C). Note the EPSC-like inward currents (arrows) superimposed on the GtACR2-mediated photocurrents (n = 2 neurons). (E) Schematic of slice experiments in (F,G). GtACR2 in a subset of layer 2/3 pyramidal neurons. (F) Left, photoactivation of GtACR2 generated EPSCs in a GtACR2– neuron, which were abolished by the glutamate receptor antagonists, NBQX and CPP. Right, summary graph of similar experiments (n = 17, p<0.0001). (G) Left, photoactivation of GtACR2 generated EPSCs in a GtACR2– neuron, which were abolished by the voltage-gated sodium channel blocker, TTX. Right, summary graph of similar experiments (n = 8, p=0.02). (H) A representative fluorescent image of the visual cortex showing GtACR2-EYFP expression in Pv neurons. (I,J,K) As in (E,F,G), but for GtACR2 in Pv neurons. GtACR2 activation-induced IPSCs were abolished by the GABAA receptor antagonist, Gabazine (J, n = 7, p=0.02) or TTX (K, n = 10, p=0.002).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Left, schematic of slice experiments. GtACR2 in a subset of layer 2/3 pyramidal neurons. Right, photoactivation of GtACR2 generated an EPSC (inward current) recorded at the membrane potential of −60 mV and an IPSC (outward current) recorded at the membrane potential of +10 mV in a GtACR2– neuron. The IPSC was abolished by the glutamatergic receptor antagonists, NBQX and CPP (red trace), indicating its disynaptic nature (n = 3 neurons).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons. (B) Left, a 20 Hz train of blue-light pulses activated GtACR2 to generate EPSCs in a GtACR2– neuron. Right, summary graph of similar experiments (n = 12) showing the EPSC amplitudes normalized to the first response. (C,D) As in (A,B), but for GtACR2 in Pv neurons. A 20 Hz train of blue-light pulses activated GtACR2 to generate IPSCs in GtACR2– neurons (n = 14).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons. (B) Photoactivation of GtACR2 by a 2-s light pulse generated photocurrents in a GtACR2+ neuron (top panel, recorded at the membrane potential of +10 mV) and EPSCs in a simultaneously recorded GtACR2– neuron (middle panel, recorded at the membrane potential of −60 mV). A segment of the trace from the GtACR2– neuron was expanded to show the EPSCs (bottom panel). Note the sustained photocurrent throughout the light pulse and the large EPSC at the onset of the light pulse. (C,D) Summary graphs of similar experiments (n = 6) as in (B). (C) The cumulative charge transfers of EPSCs from GtACR2– neurons during 2-s light pulses were plotted as a function of time to show the time course of neurotransmitter release. Each curve was normalized by the mean of its last 100 ms of the 2-s light pulse. (D) The durations from the onset of the light pulse to the time when the cumulative charge transfer reached 50% and 90%. The orange line and symbol correspond to the experiment in (B). (E,F,G) As in (A,B), but for GtACR2 in Pv neurons. Two experiments were shown in (F,G). The traces from the GtACR2– neurons were expanded to show IPSCs (bottom panels). Note the sustained photocurrents throughout the light pulses and the large IPSCs at the onset of the light pulses followed by smaller IPSCs. (H,I) As in (C,D), but for GtACR2 in Pv neurons (n = 7). The orange and magenta lines and symbols correspond to the experiments in (F,G), respectively.
 
 To determine if the phenomenon of GtACR2-induced neurotransmitter release also occurs in GABAergic inhibitory neurons, we expressed GtACR2 in parvalbumin-expressing (Pv) neurons by injecting a Flpo recombinase-dependent adeno-associated virus (AAV) into the visual cortex of Pvalb-2A-Flpo mice (PvalbFlpo/+) (Madisen et al., 2015) at postnatal day 1 (Figure 1H). Using acute brain slices from 3 to 6 week-old mice, we found that activation of GtACR2 in Pv neurons generated IPSCs in all recorded GtACR2– layer 2/3 pyramidal neurons, and the IPSCs were abolished by Gabazine, a GABAA receptor antagonist, or TTX (Figure 1I–K). The onsets of the IPSCs followed the onset of the blue light by 2.47 ± 0.15 ms (mean ± s.e.m., n = 17), indicating that they were monosynaptic IPSCs caused by the GABA transmitter released from GtACR2+ Pv neurons.
 
@@ -39,7 +55,7 @@ We next determined how repetitive or prolonged activation of GtACR2 would affect
 
 The finding of GtACR2-induced neurotransmitter release was unexpected, because the Nernst equilibrium potential of chloride becomes lower than the action potential threshold in rodent cortical neurons after the second postnatal week, and activation of chloride channels should inhibit, not promote, neurotransmitter release onto neighboring cells (Ben-Ari, 2002; Owens et al., 1996). We thus sought to identify the cause of this paradoxical neurotransmitter release and considered three possibilities. First, GtACR2 may conduct cations to depolarize neurons. Second, an increase in the intracellular chloride or strong hyperpolarization induced by GtACR2 activation may lead to rebound spikes. Third, GtACR2-mediated chloride currents may be excitatory.
 
-## A GtACR2-mediated excitatory chloride conductance causes neurotransmitter release
+### A GtACR2-mediated excitatory chloride conductance causes neurotransmitter release
 
 First, it was reported that GtACR2 did not conduct physiological cations (Govorunova et al., 2015), but some other light-gated chloride channels retained certain cation conductance (Berndt et al., 2014; Wietek et al., 2014). Thus, we sought to verify that in cortical neurons, GtACR2 has a similar reversal potential as a known chloride channel. To accomplish this, we determined the reversal potential of GtACR2-mediated photocurrents in comparison with that of IPSCs mediated by the endogenous GABAA receptors. We used in utero electroporation to express GtACR2 in layer 2/3 pyramidal neurons and a Cre recombinase-dependent AAV to express a red light-gated cation channelrhodopsin, ReaChR, in Pv neurons of Pvalb-2A-Cre mice (PvalbCre/+) (Madisen et al., 2010). We performed whole-cell voltage clamp recordings at the soma of a GtACR2+ layer 2/3 pyramidal neuron and a nearby GtACR2– pyramidal neuron simultaneously (Figure 2—figure supplement 1A). In the GtACR2+ neuron, we sequentially recorded the IPSCs induced by activating ReaChR in Pv neurons via 617 nm light and the GtACR2-mediated photocurrents activated by 455 nm light. Both IPSCs and photocurrents were recorded at different membrane potentials to determine their reversal potentials in the same neuron (Figure 2—figure supplement 1B,C). 617 nm light does not activate GtACR2 (Govorunova et al., 2015), whereas 455 nm light partially activates ReaChR (Lin et al., 2013). Thus, to avoid Pv neuron-mediated IPSCs contaminating GtACR2-mediated photocurrents, we monitored the IPSCs in the GtACR2– neuron at the membrane potential of +10 mV to ensure that the intensity of the 455 nm light was not sufficient to activate Pv neurons and generate IPSCs (Figure 2—figure supplement 1B). We found that the reversal potentials of GtACR2-mediated photocurrents and GABAergic IPSCs were similar for each neuron and well below the action potential threshold (Figure 2—figure supplement 1D), indicating that GtACR2 does not conduct cations to cause neurotransmitter release.
 
@@ -47,23 +63,47 @@ Second, we tested if GtACR2-induced neurotransmitter release could be due to reb
 
 Third, although GtACR2-mediated photocurrents are inhibitory at the soma, it is possible that the chloride concentrations are higher in some other cellular compartments, such that the electrochemical gradient causes chloride to exit the cell upon GtACR2 channel opening, resulting in depolarization of the membrane potential. To test this hypothesis, we pharmacologically inhibited the activity of Na+-K+-2Cl– cotransporter 1 (NKCC1) with bumetanide (50 or 100 µM) to decease the intracellular chloride concentrations, as NKCC1 is responsible for transporting chloride into neurons (Ben-Ari, 2017). When we activated GtACR2 in layer 2/3 pyramidal neurons, the resulting EPSCs in GtACR2– pyramidal neurons were diminished by bath application of bumetanide (Figure 2A,B), indicating that GtACR2-induced neurotransmitter release requires high concentrations of intracellular chloride. An alternative interpretation of this result would be that bumetanide blocks GtACR2 itself. To test this possibility, we simultaneously recorded the photocurrents and EPSCs in GtACR2+ and GtACR2– pyramidal neurons, respectively. While bumetanide diminished the EPSCs in GtACR2– neurons, it had no effect on the photocurrents in GtACR2+ neurons (Figure 2—figure supplement 3A,B), thereby ruling out the possibility that bumetanide affects GtACR2 itself. Furthermore, when a cation channel, channelrhodopsin-2 (ChR2) (Boyden et al., 2005; Li et al., 2005; Nagel et al., 2003), was expressed and activated in layer 2/3 pyramidal neurons, the resulting EPSCs in ChR2– neurons were not affected by bumetanide (Figure 2C,D), indicating that reducing the intracellular chloride concentration only affects chloride-mediated, and not cation-mediated, EPSCs. Finally, bumetanide also diminished the IPSCs resulting from GtACR2 activation in Pv neurons (Figure 2E,F). Together, these results demonstrate that light activation of GtACR2 generates an excitatory chloride conductance in certain neuronal compartments to trigger neurotransmitter release.
 
-## Expression and activation of GtACR2 in adult neurons cause neurotransmitter release
+![Figure 2.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons. (B) Left, photoactivation of GtACR2 generated EPSCs in a GtACR2– neuron, which were diminished by decreasing intracellular chloride concentrations with an NKCC1 blocker, bumetanide. Right, summary graph of similar experiments (n = 10, p=0.002). (C,D) As in (A,B), but for ChR2. ChR2 activation-induced EPSCs were not affected by bumetanide (n = 8, p=0.9). (E,F) As in (A,B), but for GtACR2 in Pv neurons. GtACR2 activation-induced IPSCs were diminished by bumetanide (n = 9, p=0.004). (G,H) As in (A,B), but for iC++. iC++-induced EPSCs were diminished by bumetanide (n = 6, p=0.009). (I,J) As in (E,F), but for iC++. iC++-induced IPSCs were diminished by bumetanide (n = 8, p=0.008).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons and ReaChR in Pv neurons. (B) In a GtACR2+ neuron, GABAergic IPSCs induced by activating ReaChR in Pv neurons (left panel) and GtACR2-mediated photocurrents (right panel) were sequentially recorded at different membrane potentials. The example traces show the currents at the membrane potentials of −50, −60, −65, −66, −68, −70, and −75 mV. A GtACR2– neuron was simultaneously recorded at the membrane potential of +10 mV to ensure that the blue light did not generate IPSCs (right panel). (C) The amplitudes of IPSCs and GtACR2 photocurrents were plotted as a function of the membrane potentials for the GtACR2+ neuron in (B). Each set of data were fit with linear regression and the reversal potentials were determined by the Vm-axis intercepts. (D) Summary graph of similar experiments in (B,C) where the reversal potential of IPSCs was plotted against that of GtACR2 photocurrents for each GtACR2+ neuron. All data points fall close to the dotted unity line, and there is no significant difference between the reversal potentials of IPSCs and photocurrents (n = 8, p=0.4).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons. (B) Left, photoactivation of GtACR2 generated EPSCs in a GtACR2– neuron, which were not decreased by blocking the Ih current with ZD7288 (20 μM). Right, summary graph of similar experiments showing that the EPSC amplitudes were slightly increased by ZD7288 (n = 12, p=0.03). (C) Schematics of conditional expression of GtACR2 in a subset of layer 2/3 pyramidal neurons. A Flpo-dependent plasmid (FRT-FLEX-GtACR2) was electroporated at embryonic day 15 (E15) and AAV9-hSyn-Flpo was injected into the electroporated mice at different postnatal days (P23, P60, or P64). Green bars indicate the approximate GtACR2 expression time windows. (D) Left, representative fluorescent images of the visual cortex obtained at postnatal day 78 showing that, without injection of AAV9-hSyn-Flpo, transfected neurons (labeled by tdTomato) did not express GtACR2-EYFP (left panel, n = 6 mice, postnatal day 51–150). Right, representative fluorescent images of the visual cortex obtained at postnatal day 40 showing that the expression of GtACR2-EYFP in transfected neurons was turned on by the injection of AAV9-hSyn-Flpo at postnatal day 23 (right panel, n = 7 mice, postnatal day 40–86). L, layer; WM, white matter. (E) Photoactivation of GtACR2 generated EPSCs in GtACR2– neurons when GtACR2 was expressed during 3 different time windows as indicated in (C). Bumetanide was applied in a subset of experiments and the EPSCs were diminished (n = 12, p=0.0005).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons. (B) Left, photoactivation of GtACR2 generated photocurrents in a GtACR2+ neuron (top panel, recorded at the membrane potential of +10 mV) and EPSCs in a simultaneously recorded GtACR2– neuron (bottom panel, recorded at the membrane potential of −60 mV). Bumetanide diminished the EPSCs (circle symbols) without affecting the photocurrents (square symbols). Right, summary graph of similar experiments (n = 6; EPSCs, p=0.03; photocurrents, p=0.3). (C,D) As in (A,B), but for iC++. Bumetanide diminished the EPSCs without affecting the photocurrents (n = 3; EPSCs, p=0.03; photocurrents, p=0.7).
+
+### Expression and activation of GtACR2 in adult neurons cause neurotransmitter release
 
 Since we expressed GtACR2 by in utero electroporation or neonatal AAV injection, we sought to determine if the excitatory effect of GtACR2 was caused by the long-term expression of GtACR2 throughout development that somehow altered the chloride homeostasis. To selectively express GtACR2 in adult neurons, we in utero electroporated a Flpo-dependent plasmid into layer 2/3 pyramidal neurons that will express GtACR2 only if Flpo is present (Figure 2—figure supplement 2C,D). A Flpo-expressing AAV was then injected into the electroporated mice at postnatal week 4 or 9 to turn on the GtACR2 expression. We obtained acute coronal brain slices 1–3 weeks after injecting Flpo-expressing AAV and found that light activation of GtACR2, again, produced bumetanide-sensitive EPSCs in GtACR2– neurons (Figure 2—figure supplement 2E). Thus, it is unlikely that GtACR2 expression during neuronal development alters the chloride homeostasis to render GtACR2 excitatory, as acute expression of GtACR2 in mature neurons had the same effect.
 
-## Activation of other light-gated chloride channels causes neurotransmitter release
+### Activation of other light-gated chloride channels causes neurotransmitter release
 
 To determine if activation of other light-gated chloride channels can trigger neurotransmitter release, we examined iC++ and iChloC, two engineered blue light-gated chloride channels that were converted from cation channelrhodopsins (Berndt et al., 2016; Wietek et al., 2015), and GtACR1, another natural anion channelrhodopsin from Guillardia theta (Govorunova et al., 2015). We in utero electroporated plasmids to express iC++ in layer 2/3 pyramidal neurons of the visual cortex and obtained acute coronal brain slices from 3 to 9 week-old mice. Similar to GtACR2, light activation of iC++ generated EPSCs in iC++– layer 2/3 pyramidal neurons that were abolished by NBQX and CPP (amplitude reduced by 97.3 ± 0.9%, mean ± s.e.m., n = 4). Bumetanide diminished the iC++-induced EPSCs (Figure 2G,H) without affecting the iC++-mediated photocurrents (Figure 2—figure supplement 3C,D). We also expressed iC++ in Pv neurons by injecting a Cre-dependent AAV into PvalbCre/+ mice and found that light activation of iC++ caused bumetanide-sensitive IPSCs in iC++– layer 2/3 pyramidal neurons (Figure 2I,J). Similarly, when we expressed iChloC in Pv neurons, light activation of iChloC resulted in IPSCs in 10 out of 17 recorded iChloC– layer 2/3 pyramidal neurons (183 ± 42 pA, mean ± s.e.m., n = 10), presumably because iChloC generated smaller photocurrents than iC++ (iChloC, 292 ± 62 pA, n = 7; iC++, 2182 ± 291 pA, n = 15; recorded at the membrane potential of +10 mV; mean ± s.e.m., p<0.0001, t test with Welch’s correction). Finally, activation of GtACR1 in layer 2/3 pyramidal neurons produced EPSCs onto all recorded GtACR1– pyramidal neurons (149 ± 47 pA, mean ± s.e.m., n = 11). Altogether, these results demonstrate that activation of different light-gated chloride channels in neurons can trigger neurotransmitter release.
 
-## GtACR2 activation directly depolarizes the presynaptic terminals
+### GtACR2 activation directly depolarizes the presynaptic terminals
 
 We hypothesized that the most likely neuronal compartments rendering GtACR2 excitatory were the distal axon and presynaptic terminals because of the following previous findings. First, activation of presynaptic GABAA or glycine receptors enhanced neurotransmitter release at several synapses of the hippocampus, cerebellum, and brainstem (Jang et al., 2006; Pugh and Jahr, 2011; Ruiz et al., 2010; Stell et al., 2007; Turecek and Trussell, 2001; Zorrilla de San Martin et al., 2017). Second, the chloride concentrations were 4–5 times higher in the presynaptic terminals of the Calyx of Held than the parent soma (Price and Trussell, 2006). Third, there appeared to be an axo-somato-dendritic gradient in which the reversal potentials of GABA from the axon to the soma and dendrites of cortical neurons become progressively more negative (Khirug et al., 2008). To test our hypothesis, we expressed GtACR2 in layer 2/3 pyramidal neurons of the visual cortex in one hemisphere as described above and obtained acute coronal slices from the contralateral hemisphere (Figure 3A). GtACR2 was present in the long-range callosal projections in the contralateral hemisphere (Figure 3—figure supplement 1A), which enabled us to activate GtACR2 in the axon and presynaptic terminals that were severed from their parent somas. Light activation of GtACR2 in the callosal projections generated EPSCs in layer 2/3 pyramidal neurons of the contralateral cortex, which were diminished by TTX (Figure 3—figure supplement 1B,C) or bumetanide (Figure 3B). These results demonstrate that activation of GtACR2 in the axon and presynaptic terminals is sufficient to trigger neurotransmitter release.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of slice experiments in (B). GtACR2 in a subset of layer 2/3 pyramidal neurons in the contralateral hemisphere. (B) Left, photoactivation of GtACR2 in the callosal axons, severed from their somas, generated EPSCs in a GtACR2– neuron, which were diminished by bumetanide. Right, summary graph of similar experiments (n = 15, p<0.0001). (C) Schematic of slice experiments in (D). GtACR2 in a subset of layer 2/3 pyramidal neurons. (D) Left, photoactivation of GtACR2 generated EPSCs in a GtACR2– neuron, which were abolished by TTX, but partially recovered by the addition of voltage-gated potassium channel blockers, 4-AP (1.5 mM) and TEA (1.5 mM). Right, summary graph of similar experiments (n = 10; TTX vs. control, p=0.02, average EPSC amplitude in TTX was 2% of control; TTX + 4-AP + TEA vs. TTX, p=0.0004, average EPSC amplitude in TTX + 4-AP + TEA was 35% of control). (E,F) As in (C,D), but for Pv neurons. GtACR2 activation-induced IPSCs were abolished by TTX, but partially recovered by 4-AP and TEA (n = 9; TTX vs. control, p=0.006, average IPSC amplitude in TTX was 0.9% of control; TTX + 4-AP + TEA vs. TTX, p=0.008, average IPSC amplitude in TTX + 4-AP + TEA was 23% of control). (G) Schematic of slice experiments in (H). GtACR2 in a subset of layer 2/3 pyramidal neurons. (H) Photoactivation of GtACR2 generated antidromic spikes in GtACR2+ pyramidal neurons, which were not affected by NBQX and CPP, but were abolished by TTX in both loose-patch (left panel) and whole-cell (right panel) recordings. In the whole-cell recordings, the resting membrane potentials of those neurons that generated antidromic spikes were −68.1 ± 1.7 mV (mean ± s.e.m., n = 21). (I,J) As in (G,H), but for Pv neurons. The antidromic spikes in GtACR2+ Pv neurons were abolished by TTX. In the whole-cell recordings, the resting membrane potentials of those neurons that generated antidromic spikes were −60.0 ± 2.4 mV (mean ± s.e.m., n = 7).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) GtACR2-EYFP and tdTomato were expressed in a subset of layer 2/3 pyramidal neurons in the visual cortex of one hemisphere. Representative fluorescent images of the contralateral hemisphere showing GtACR2-EYFP (left panel) in the callosal projections labeled by tdTomato (right panel). L, layer; WM, white matter. (B) Schematic of slice experiments in (C). GtACR2-EYFP in a subset of layer 2/3 pyramidal neurons in the contralateral hemisphere. (C) Left, photoactivation of GtACR2 in the callosal axons generated EPSCs in a GtACR2– neuron, which were abolished by TTX. Right, summary graph of similar experiments (n = 9, p=0.004).
 
 If GtACR2-mediated chloride currents are excitatory in the presynaptic terminals, then GtACR2 should be similar to ChR2, whose activation can directly depolarize the presynaptic membrane in the absence of action potentials to trigger neurotransmitter release (Petreanu et al., 2009). To test this prediction, we recorded EPSCs or IPSCs in GtACR2– neurons while activating GtACR2 in layer 2/3 pyramidal neurons or Pv neurons, respectively (Figure 3C,E). As described above, bath application of TTX abolished the EPSCs and IPSCs. However, when we further blocked voltage-gated potassium channels by 4-aminopyridine (4-AP) and tetraethylammonium (TEA) to prolong membrane depolarization (Petreanu et al., 2009), the EPSCs and IPSCs were partially recovered (Figure 3D,F). These results indicate that in the absence of action potentials, light activation of GtACR2 is sufficient to depolarize the presynaptic membrane to open voltage-gated calcium channels and trigger neurotransmitter release.
 
 We further tested if GtACR2-induced axonal depolarization could evoke antidromic action potentials by performing extracellular loose-patch or whole-cell current clamp recordings at the somas of GtACR2+ pyramidal neurons. We observed antidromic spikes in 9 out of 88 neurons recorded in loose-patch configuration and 21 out of 56 neurons recorded in whole-cell configuration in response to blue light stimulation (Figure 3G,H). In the whole-cell current clamp recordings, although the chloride concentration in the patch pipette solution sets the Nernst equilibrium potential of chloride around −85 mV (see Materials and methods), blue light induced a depolarization following the initial hyperpolarization. This observation is consistent with the notion that the depolarization antidromically propagated from the distal axon to the soma (Figure 3H). The antidromic spikes were not affected by NBQX and CPP, but were abolished by TTX (Figure 3H), indicating that the spikes were generated within the GtACR2+ neurons, rather than by excitatory inputs from other neurons. Antidromic spikes were only observed in a subset of neurons, likely because the GtACR2 expression levels are heterogeneous in different neurons, and the hyperpolarization initiated at the soma can orthodromically propagate to counteract the antidromic spikes. Similarly, TTX-sensitive antidromic spikes were observed in a subset of GtACR2+ Pv neurons (3 out of 11 neurons in loose-patch configuration and 7 out of 17 neurons in whole-cell configuration, Figure 3I,J). These results show that GtACR2-induced axonal depolarization can be sufficient to elicit antidromic action potentials.
 
-## Targeting GtACR2 to the somatodendritic domain reduces light-induced neurotransmitter release
+### Targeting GtACR2 to the somatodendritic domain reduces light-induced neurotransmitter release
 
 Activating GtACR2 and other light-gated chloride channels inhibits the soma but depolarizes the presynaptic terminals to release neurotransmitters. This dichotomic effect can confound the utilization of these channels as inhibitory optogenetic tools for suppressing neuronal activity. We reasoned that reducing the trafficking of light-gated chloride channels into the axon and presynaptic terminals should reduce or eliminate their depolarizing action. Thus, we sought to restrict GtACR2 within the somatodendritic domain of neurons by fusing GtACR2 with a number of reported somatodendritic targeting motifs including a 26-amino acid Myosin Va-binding domain of Melanophilin (MBD) (Lewis et al., 2009), a 32-amino acid cytoplasmic C-terminal motif of Neuroligin 1 (Nlgn1C) (Rosales et al., 2005), a 16-amino acid dileucine-containing motif of potassium channel Kv4.2 (Kv4.2LL) (Rivera et al., 2003), the N-terminal 150 residues of kainate receptor subunit 2 (KA2N) (Shemesh et al., 2017), the C-terminal 17 residues of Telencephalin (TlcnC) (Mitsui et al., 2005), and a 65-amino acid cytoplasmic C-terminal motif of potassium channel Kv2.1 (Kv2.1C) (Lim et al., 2000; Wu et al., 2013). Each of these GtACR2 variants (Table 1), along with tdTomato, were expressed in layer 2/3 pyramidal neurons of the visual cortex by in utero electroporation (Figure 4A). Since GtACR2 was tagged with EYFP or EGFP, we compared the EYFP or EGFP fluorescence in layer 5, which only contains the axons of layer 2/3 pyramidal neurons, with the EYFP or EGFP fluorescence in layer 2/3 to estimate the distribution of GtACR2 between the axon and somatodendritic domain. We normalized the EYFP or EGFP fluorescence ratio between layer 5 and layer 2/3 by the tdTomato fluorescence ratio between layer 5 and layer 2/3 to control for variations in the collateral axons. Among tested motifs, TlcnC and Kv2.1C were most effective in targeting GtACR2 to the soma and dendrites (Figure 4D). As these two motifs may engage different trafficking mechanisms, we combined them to create two hybrid motifs, Kv2.1C-TlcnC and Kv2.1C-linker-TlcnC. Kv2.1C-linker-TlcnC turned out to be the best in restricting GtACR2 within the somatodendritic domain (Figure 4A,D). Interestingly, GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC showed less intracellular aggregation than wild type GtACR2 (Figure 4B), suggesting that the somatodendritic targeting motifs also enhance the surface expression of GtACR2. Finally, the EYFP fluorescence of the callosal projections in the contralateral hemisphere was also reduced for GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC as compared to GtACR2-EYFP (Figure 4C,E), demonstrating that both somatodendritic targeting motifs decreased the trafficking of GtACR2 into the distal axon.
 
@@ -71,7 +111,62 @@ Activating GtACR2 and other light-gated chloride channels inhibits the soma but 
 
 **Figure 4.:** (A) Wild type (WT) GtACR2 and its variants tagged with EYFP or EGFP were expressed along with tdTomato in a subset of layer 2/3 pyramidal neurons. Representative fluorescent images of the cortices showing the distribution of GtACR2. Note the strong EYFP fluorescence in layer 5 for WT GtACR2 and weak EYFP fluorescence in layer 5 for some somatodendritically targeted GtACR2 variants (e.g., Kv2.1C-linker-TlcnC). L, layer; WM, white matter. (B) Representative fluorescent images of electroporated neurons showing that GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC were more concentrated on the membranes at the soma and proximal dendrites (arrows) than GtACR2-EYFP. Note the intracellular aggregation of GtACR2-EYFP (arrow head). (C) Representative fluorescent images of the contralateral hemisphere showing less GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC in the callosal projections than GtACR2-EYFP. The callosal projections were labeled by tdTomato. (D) Summary data of the experiments in (A). The EYFP or EGFP fluorescence ratio between layer 5 and layer 2/3 was normalized by the tdTomato fluorescence ratio between layer 5 and layer 2/3. A reduction in the normalized EYFP or EGFP fluorescence ratio indicates a shift of the EYFP or EGFP distribution from the axon to somatodendritic domain. (E) Summary data of the experiments in (C). The ratio of EYFP fluorescence to tdTomato fluorescence of the callosal projections in the contralateral hemisphere. A reduction in the ratio indicates less EYFP in the callosal axons. The numbers of analyzed slices were indicated in the panels. The columns and error bars are mean ± s.e.m. **p<0.01, ****p<0.0001.
 
+**Table 1.**
+ Amino acid sequences of somatodendritic targeting motifs.Black bold, amino acid sequences of somatodendritic targeting motifs; blue, GtACR2; red, EYFP or EGFP; purple, linker.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Motif</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBD</td>
+      <td>GtACR2-EYFP-GSGSGTRGSGS-RDQPLNSKKKKRLLSFRDVDFEEDSD</td>
+    </tr>
+    <tr>
+      <td>Nlgn1C</td>
+      <td>GtACR2-EYFP-VVLRTACPPDYTLAMRRSPDDIPLMTPNTITM</td>
+    </tr>
+    <tr>
+      <td>Kv4.2LL</td>
+      <td>GtACR2-EYFP-FETQHHHLLHCLEKTT</td>
+    </tr>
+    <tr>
+      <td>KA2N</td>
+      <td>GtACR2-GGSGGTGGSGGT-MPAELLLLLIVAFANPSCQVLSSLRMAAILDDQ TVCGRGERLALALAREQINGIIEVPAKARVEVDIFELQRDSQYETTDTMCQIL PKGVVSVLGPSSSPASASTVSHICGEKEIPHIKVGPEETPRLQYLRFASVSLYPS NEDVSLAVS-GASGGT-EGFP</td>
+    </tr>
+    <tr>
+      <td>TlcnC</td>
+      <td>GtACR2-EYFP-AESPADGEVFAIQLTSS</td>
+    </tr>
+    <tr>
+      <td>Kv2.1C</td>
+      <td>GtACR2-EYFP-QSQPILNTKEMAPQSKPPEELEMSSMPSPVAPLPARTEGVID MRSMSSIDSFISCATDFPEATRF</td>
+    </tr>
+    <tr>
+      <td>Kv2.1C-TlcnC</td>
+      <td>GtACR2-EYFP-QSQPILNTKEMAPQSKPPEELEMSSMPSPVAPLPARTEGVID MRSMSSIDSFISCATDFPEATRF-AESPADGEVFAIQLTSS</td>
+    </tr>
+    <tr>
+      <td>Kv2.1C-linker-TlcnC</td>
+      <td>GtACR2-EYFP-QSQPILNTKEMAPQSKPPEELEMSSMPSPVAPLPARTEGVID MRSMSSIDSFISCATDFPEATRF-GSGSGSGSGS-AESPADGEVFAIQLTSS</td>
+    </tr>
+  </tbody>
+</table>
+
 To determine how targeting GtACR2 to the somatodendritic domain affects its photocurrent and ability to trigger neurotransmitter release, we compared the somatodendritically targeted GtACR2 variants, GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC, with wild type GtACR2 in the same litters of mice. We first recorded GtACR2+ layer 2/3 pyramidal neurons and found that the blue light-activated photocurrents of GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC were 2.1–2.4 and 2.7–3.5 folds of GtACR2-EYFP photocurrents, respectively (Figure 5A–C and Figure 5—figure supplement 1A,C,E,G). We then recorded the EPSCs in GtACR2– layer 2/3 pyramidal neurons in response to different strengths of blue light stimulation. The EPSCs evoked by activating GtACR2-EYFP-Kv2.1C or GtACR2-EYFP-Kv2.1C-linker-TlcnC were reduced by 52–60% or 65–77%, respectively, as compared to those evoked by activating GtACR2-EYFP (Figure 5D–G and Figure 5—figure supplement 1B,D,F,H). In a subset of experiments with GtACR2-EYFP-Kv2.1C or GtACR2-EYFP-Kv2.1C-linker-TlcnC, the lowest light stimulation strength could no longer evoke EPSCs in GtACR2– neurons, but still induced robust photocurrents in GtACR2+ neurons (Figure 5—figure supplement 1E–H). Furthermore, when photostimulating the callosal projections, the EPSCs in layer 2/3 pyramidal neurons of the contralateral cortex were reduced by 54% and 73% for GtACR2-EYFP-Kv2.1C and GtACR2-EYFP-Kv2.1C-linker-TlcnC, respectively, as compared to GtACR2-EYFP (Figure 5H,I). These results show that the somatodendritic targeting motifs, especially Kv2.1C-linker-TlcnC, shift GtACR2 from the axon towards the soma and dendrites, thereby reducing the excitatory action in the axon and presynaptic terminals while enhancing the inhibitory currents at the soma and dendrites.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of slice experiments in (B,C). GtACR2-EYFP, GtACR2-EYFP-Kv2.1C, or GtACR2-EYFP-Kv2.1C-linker-TlcnC in a subset of layer 2/3 pyramidal neurons. (B) Somatic photocurrents recorded at the membrane potential of +10 mV from GtACR2-EYFP-, GtACR2-EYFP-Kv2.1C-, or GtACR2-EYFP-Kv2.1C-linker-TlcnC-expressing neurons in response to a blue light pulse of 1 ms and 2.5 mW/mm2. (C) Summary graph showing the photocurrent peak amplitudes in response to a blue light pulse of 1 ms and 2.5 mW/mm2. (D,E) As in (A,B), but for recording EPSCs in GtACR2– layer 2/3 pyramidal neurons in response to a blue light pulse of 5 ms and 2.9 mW/mm2. (F,G) Summary graphs showing the EPSC amplitudes in response to a blue light pulse of 1 ms and 2.5 mW/mm2 (F), 5 ms and 2.9 mW/mm2 (G, left panel), or 5 ms and 16.1 mW/mm2 (G, right panel). Note that at the stimulation strength of 1 ms and 2.5 mW/mm2 (F), EPSCs were not observed in a subset of neurons, particularly for GtACR2-EYFP-Kv2.1C-linker-TlcnC. (H) Schematic of slice experiments in (I). GtACR2-EYFP, GtACR2-EYFP-Kv2.1C, or GtACR2-EYFP-Kv2.1C-linker-TlcnC in a subset of layer 2/3 pyramidal neurons in the contralateral hemisphere. (I) Summary graphs showing the EPSC amplitudes of GtACR2– layer 2/3 pyramidal neurons in response to stimulating the callosal axons with a blue light pulse of 5 ms and 23.6 mW/mm2. The numbers of recorded neurons were indicated in the panels. The columns and error bars are mean ± s.e.m. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38506/elife-38506-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) Schematics of slice experiments in (C,E,G) and (D,F,H), respectively. GtACR2-EYFP, GtACR2-EYFP-Kv2.1C, or GtACR2-EYFP-Kv2.1C-linker-TlcnC in a subset of layer 2/3 pyramidal neurons. (C,D) Summary graph showing the photocurrent peak amplitudes (C) and EPSC amplitudes (D) in response to a blue light pulse of 1 ms and 2.3 mW/mm2. Note that at this stimulation strength, EPSCs were not observed in a subset of neurons, particularly for GtACR2-EYFP-Kv2.1C-linker-TlcnC. (E,F) Summary graph showing that in a subset of experiments for WT GtACR2-EYFP (top panels) and GtACR2-EYFP-Kv2.1C (bottom panels), photocurrents (E) or EPSCs (F) were recorded in response to all four different strengths of stimulation (#1: 1 ms and 2.3 mW/mm2, #2: 1 ms and 2.5 mW/mm2, #3: 5 ms and 2.9 mW/mm2, and #4: 5 ms and 16.1 mW/mm2). (G,H) As in (E,F), but for WT GtACR2-EYFP (top panels) and GtACR2-EYFP-Kv2.1C-linker-TlcnC (bottom panels). Note that for GtACR2-EYFP-Kv2.1C-linker-TlcnC, EPSCs were absent in 13 out of 38 GtACR2– neurons when the stimulation strength decreased to 1 ms and 2.3 mW/mm2, whereas photocurrents were still observed in all recorded GtACR2+ neurons at this stimulation strength. (I) Left, schematic of slice experiments. GtACR2-EYFP-Kv2.1C-linker-TlcnC in a subset of layer 2/3 pyramidal neurons. EPSCs and photocurrents were simultaneously recorded from a GtACR2– neuron and a GtACR2+ neuron, respectively. Right, in 3 experiments where the EPSCs in GtACR2– neurons were absent when the stimulation strength decreased to 1 ms and 2.3 mW/mm2 or 2.5 mW/mm2, the photocurrent peak amplitudes and EPSC amplitudes from these pairs of GtACR2+ and GtACR2– neurons were plotted as a function of light stimulation strength. Each shape of the symbols represents one pair of neurons. Note that GtACR2+ neurons still showed robust photocurrents when the EPSCs in GtACR2– neurons reduced to zero.
 
 ## Discussion
 
@@ -85,23 +180,159 @@ While GtACR2-EYFP-Kv2.1C-linker-TlcnC can still traffic to the axon to cause neu
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Pvalb-2A-Flpo</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:022730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Pvalb-2A-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:012358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>GtACR2</td>
+      <td>Govorunova et al., 2015</td>
+      <td>Addgene:67877</td>
+      <td>pLenti-UbiC- GtACR2-EYFP; obtained from Dr. John Spudich</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>GtACR1</td>
+      <td>Govorunova et al., 2015</td>
+      <td>Addgene:67795</td>
+      <td>pLenti-UbiC- GtACR1-EYFP; obtained from Dr. John Spudich</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>iC++</td>
+      <td>Berndt et al., 2016</td>
+      <td></td>
+      <td>pAAV-CaMKIIα-i C++-TS-EYFP or pAAV-EF1α-DIO-iC++ -TS-EYFP; obtained from Dr. Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>Flpo</td>
+      <td>Xue et al. (2014)</td>
+      <td>Addgene:60662</td>
+      <td>pCAG-Flpo</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>ChR2</td>
+      <td>this paper</td>
+      <td>Addgene:114367</td>
+      <td>pCAG-hChR2(H134R) -EYFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>Flpo-dependent GtACR2</td>
+      <td>this paper</td>
+      <td>Addgene:114369</td>
+      <td>pAAV-EF1α-FRT-FLEX -GtACR2-EYFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>Flpo-dependent GtACR1</td>
+      <td>this paper</td>
+      <td>Addgene:114370</td>
+      <td>pAAV-EF1α-FRT-FLEX -GtACR1-EYFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>GtACR2-EYFP-Kv2.1C</td>
+      <td>this paper</td>
+      <td>Addgene:114375</td>
+      <td>pAAV-EF1α-FRT- FLEX-GtACR2- EYFP-Kv2.1C</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>GtACR2-EYFP- Kv2.1C-linker-TlcnC</td>
+      <td>this paper</td>
+      <td>Addgene:114377</td>
+      <td>pAAV-EF1α-FRT- FLEX-GtACR2-EYFP- Kv2.1C-linker-TlcnC</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (adeno- associated virus)</td>
+      <td>Flpo</td>
+      <td>Xue et al. (2014); Penn Vector Core</td>
+      <td>Addgene:60663</td>
+      <td>AAV9-hSyn-Flpo</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (adeno -associated virus)</td>
+      <td>Flpo-dependent GtACR2; GtACR2</td>
+      <td>This paper; Baylor College of Medicine Gene Vector Core</td>
+      <td>Addgene:114369</td>
+      <td>AAV9-EF1α- FRT-FLEX -GtACR2-EYFP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (adeno- associated virus)</td>
+      <td>ReaChR</td>
+      <td>This paper; Baylor College of Medicine Gene Vector Core</td>
+      <td>Addgene:114368</td>
+      <td>AAV9-EF1α- DIO-ReaChR-P2A-dTomato</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (adeno- associated virus)</td>
+      <td>iC++</td>
+      <td>This paper; Baylor College of Medicine Gene Vector Core</td>
+      <td></td>
+      <td>AAV9-EF1α-DIO- iC++-TS-EYFP; plasmid obtained from Dr. Karl Deisseroth</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (adeno-associated virus)</td>
+      <td>iChloC</td>
+      <td>This paper; Baylor College of Medicine Gene Vector Core</td>
+      <td></td>
+      <td>AAV9-EF1α-DIO- iChloC-T2A-mCherry; plasmid obtained from Drs. Matthew Caudill and Massimo Scanziani</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bumetanide (Ro 10–6338)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz:sc-200727</td>
+      <td>50 or 100 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All procedures to maintain and use mice were approved by the Institutional Animal Care and Use Committee at Baylor College of Medicine. Mice were maintained on a 14 hr:10 hr light:dark cycle with regular mouse chow and water ad libitum. Experiments were performed during the light cycle. ICR (CD-1) female mice were purchased from Baylor College of Medicine Center for Comparative Medicine or Charles River Laboratories. C57BL6/J, Pvalb-2A-Cre, and Pvalb-2A-Flpo mice were obtained from Jackson Laboratory (stock numbers 000664, 012358, and 022730, respectively). Both male and female mice were used in the experiments. The mice were used at the age of 3–9 weeks for experiments, except for the conditional expression of GtACR2 in adults, where mice were used at the age of 10–12 weeks.
 
-## DNA constructs
+### DNA constructs
 
 Plasmids pLenti-UbiC-GtACR2-EYFP (Addgene #67877) and pLenti-UbiC-GtACR1-EYFP (Addgene #67795) were obtained from Dr. John Spudich, pAAV-CaMKIIα-iC++-TS-EYFP and pAAV-EF1α-DIO-iC++-TS-EYFP from Dr. Karl Deisseroth, pAAV-EF1α-DIO-iChloC-T2A-mCherry from Drs. Matthew Caudill and Massimo Scanziani, pCAG-tdTomato from Anirvan Ghosh, and pCAG-Cre from Addgene (#13775). Plasmid pCAG-Flpo (Addgene #60662) was previously described (Xue et al., 2014). All other plasmids were generated and deposited at Addgene as below. pCAG-hChR2(H134R)-EYFP (Addgene #114367) was created by replacing the EGFP in pCAG-EGFP (Addgene #11150) with the hChR2(H134R)-EYFP from pAAV-EF1α-DIO-hChR2(H134R)-EYFP (Addgene #20298). pAAV-EF1α-DIO-ReaChR-P2A-dTomato (Addgene #114368) was created by replacing the oChIEF(E163A T199C) in pAAV-EF1α-DIO-oChIEF(E163A T199C)-P2A-dTomato (Addgene #51094) with the ReaChR from pAAV-hSyn-FLEX-ReaChR-Citrine (Addgene #50955). pAAV-EF1α-FRT-FLEX-GtACR2-EYFP (Addgene #114369) and pAAV-EF1α-FRT-FLEX-GtACR1-EYFP (Addgene #114370) were created by replacing the mNaChBac-T2A-tdTomato in pAAV-EF1α-FRT-FLEX-mNaChBac-T2A-tdTomato (Addgene #60658) with the GtACR2-EYFP and GtACR1-EYFP from pLenti-UbiC-GtACR2-EYFP and pLenti-UbiC-GtACR1-EYFP, respectively. Motifs MBD and TlcnC were generated by PCR primers. Motifs Nlgn1C and Kv4.2LL were generated by PCR from pAAV-CAG-post-mGRASP-2A-dTomato (Addgene #34912) and a Kv4.2-expressing plasmid, respectively. Motif Kv2.1C was obtained from pAAV-EF1α-DIO-hChR2(H134R)-EYFP-Kv2.1C (Wu et al., 2013). Motifs Kv2.1C-TlcnC and Kv2.1C-linker-TlcnC were generated by PCR from Kv2.1C and TlcnC. All motifs were then added to the C-terminus of the GtACR2-EYFP to create pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-MBD (Addgene #114371), pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-Nlgn1C (Addgene #114372), pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-Kv4.2LL (Addgene #114373), pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-TlcnC (Addgene #114374), pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-Kv2.1C (Addgene #114375), pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-Kv2.1C-TlcnC (Addgene #114376), and pAAV-EF1α-FRT-FLEX-GtACR2-EYFP-Kv2.1C-linker-TlcnC (Addgene #114377). pAAV-EF1α-FRT-FLEX-GtACR2-KA2N-EGFP (Addgene #114378) was created by replacing the EYFP in pAAV-EF1α-FRT-FLEX-GtACR2-EYFP with the KA2N-EGFP from pAAV-hSyn-soCoChR-EGFP (Addgene #107708).
 
-## In utero electroporation
+### In utero electroporation
 
 Female ICR mice were crossed with male C57BL6/J, Pvalb-2A-Cre, or Pvalb-2A-Flpo mice to obtain timed pregnancies. In utero electroporation was performed as previously described (Xue et al., 2014) with a square-wave pulse generator (Gemini X2, BTX Harvard Bioscience). To express GtACR2, GtACR1, iC++, or ChR2 in layer 2/3 pyramidal neurons, pLenti-UbiC-GtACR2-EYFP, pLenti-UbiC-GtACR1-EYFP, pAAV-CaMKIIα-iC++-TS-EYFP, or pCAG-hChR2(H134R)-EYFP (all 2 µg/µl) was used, respectively. In a few experiments, pAAV-EF1α-FRT-FLEX-GtACR2-EYFP (2 µg/µl) with pCAG-Flpo (0.2 µg/µl), pAAV-EF1α-FRT-FLEX-GtACR1-EYFP (2 µg/µl) with pCAG-Flpo (0.2 µg/µl), or pAAV-EF1α-DIO-iC++-TS-EYFP (2 µg/µl) with pCAG-Cre (0.2 µg/µl) was used to express GtACR2, GtACR1, or iC++, respectively. To express somatodendritically targeted GtACR2 variants in layer 2/3 pyramidal neurons and compare them with wild type GtACR2, the pAAV-EF1α-FRT-FLEX constructs described above were used (all 2 µg/µl) with pCAG-Flpo (0.2 µg/µl). pCAG-tdTomato (0.1 µg/µl) was included in all experiments. The plasmid concentrations stated above were final concentrations in the plasmid mix. Transfected pups were identified by the transcranial fluorescence of tdTomato with a MZ10F stereomicroscope (Leica) 1–2 days after birth.
 
-## AAV production and injection
+### AAV production and injection
 
 All recombinant AAV serotype 9 vectors were produced by the Gene Vector Core at Baylor College of Medicine except AAV9-hSyn-Flpo (Addgene #60663), which was produced by the Penn Vector Core (Xue et al., 2014). To express GtACR2, ReaChR, iC++, or iChloC in Pv neurons, 200–250 nl of the following recombinant AAV serotype 9 vectors at their respective titer were injected into the visual cortex of PvalbFlpo/+ (for GtACR2) or PvalbCre/+ (for ReaChR, iC++, or iChloC) mice at postnatal day 1 as previously described (Xue et al., 2014): AAV9-EF1α-FRT-FLEX-GtACR2-EYFP (3.8 × 1013 genome copies/ml), AAV9-EF1α-DIO-ReaChR-P2A-dTomato (7.0 × 1013 genome copies/ml), AAV9-EF1α-DIO-iC++-TS-EYFP (3.71 × 1013 genome copies/ml), and AAV9-EF1α-DIO-iChloC-2A-mCherry (3.7 × 1014 genome copies/ml). To conditionally express GtACR2 in juvenile and adult neurons, mice previously electroporated with plasmid pAAV-EF1α-FRT-FLEX-GtACR2-EYFP into layer 2/3 pyramidal neurons were injected with 200 nl of AAV9-hSyn-Flpo (1.2 × 1012 genome copies/ml) at postnatal day 23, 60, or 64. Injection was performed as previously described (Xue et al., 2014) with an UltraMicroPump III and a Micro4 controller (World Precision Instruments).
 
-## Brain slice electrophysiology
+### Brain slice electrophysiology
 
 Mice were anesthetized by an intraperitoneal injection of a ketamine and xylazine mix (80 mg/kg and 16 mg/kg, respectively) and transcardially perfused with cold (0–4°C) slice cutting solution containing 80 mM NaCl, 2.5 mM KCl, 1.3 mM NaH2PO4, 26 mM NaHCO3, 4 mM MgCl2, 0.5 mM CaCl2, 20 mM D-glucose, 75 mM sucrose and 0.5 mM sodium ascorbate (315 mosmol, pH 7.4, saturated with 95% O2/5% CO2). Brains were removed and sectioned in the cutting solution with a VT1200S vibratome (Leica) to obtain 300 μm coronal slices. Slices were incubated in a custom-made interface holding chamber containing slice cutting solution saturated with 95% O2/5% CO2 at 34°C for 30 min and then at room temperature for 20 min to 10 hr until they were transferred to the recording chamber.
 
@@ -113,15 +344,15 @@ Synaptic currents and photocurrents were recorded in the whole-cell voltage clam
 
 For pharmacology experiments, the baseline synaptic currents were recorded for at least 3 min in the absence of any drug. The drugs were then added to the ACSF at the following concentrations: TTX (1 μM), NBQX (10 μM), (RS)-CPP (10 μM), SR95531 (Gabazine, 10 μM), ZD7288 (20 μM), bumetanide (50 or 100 μM), TEA (1.5 mM), and 4-AP (1.5 mM). The synaptic currents were recorded for at least 3 min in the presence of drugs. For ZD7288, which did not inhibit GtACR2-induced neurotransmitter release, the efficacy of the drug was monitored by examining the Ih current of cortical layer 5 pyramidal neurons.
 
-## Fluorescent microscopy
+### Fluorescent microscopy
 
 Fluorescent images were taken from live brain slices, except for the conditional expression of GtACR2 in adults, where images were taken from fixed brain slices. Live brain slices were prepared as described for slice electrophysiology. For the fixed brain slices, mice were anesthetized by an intraperitoneal injection of a ketamine and xylazine mix (80 mg/kg and 16 mg/kg, respectively) and transcardially perfused with phosphate buffered saline (PBS, pH 7.4) followed by 4% paraformaldehyde in PBS (pH 7.4). Brains were further fixed overnight in 4% paraformaldehyde, cryoprotected with 30% sucrose in PBS, and frozen in optimum cutting-temperature medium until sectioning. A HM 450 Sliding Microtome (Thermo Scientific) was used to section the brains to obtain 30–50 mm coronal slices. Images were acquired on an Axio Zoom.V16 Fluorescence Stereo Zoom Microscope (Zeiss) and processed using National Institutes of Health ImageJ.
 
-To determine the EYFP (or EGFP) fluorescence ratio between layer 5 and layer 2/3, one or two 350 µm-wide rectangular regions that were perpendicular to the pia and spanned all 6 cortical layers were selected in the most transfected regions of each slice. The mean EYFP (or EGFP) fluorescence was measured for layer 5 and layer 2/3 within the selected area. The mean tdTomato fluorescence was measured similarly for layer 5 and layer 2/3. The mean background fluorescence was measured from a nearby rectangular region (140.5 µm by 90.8 µm) where no cellular EYFP (or EGFP) and tdTomato fluorescence was present. The normalized EYFP (or EGFP) fluorescence ratio between layer 5 and layer 2/3 was calculated by Layer 5EYFP-BackgroundEYFPLayer 2/3EYFP-BackgroundEYFP/Layer 5tdTomato-BackgroundtdTomatoLayer 2/3tdTomato-BackgroundtdTomato.
+To determine the EYFP (or EGFP) fluorescence ratio between layer 5 and layer 2/3, one or two 350 µm-wide rectangular regions that were perpendicular to the pia and spanned all 6 cortical layers were selected in the most transfected regions of each slice. The mean EYFP (or EGFP) fluorescence was measured for layer 5 and layer 2/3 within the selected area. The mean tdTomato fluorescence was measured similarly for layer 5 and layer 2/3. The mean background fluorescence was measured from a nearby rectangular region (140.5 µm by 90.8 µm) where no cellular EYFP (or EGFP) and tdTomato fluorescence was present. The normalized EYFP (or EGFP) fluorescence ratio between layer 5 and layer 2/3 was calculated by $\frac{Layer5_{EYFP}-Background_{EYFP}}{Layer2/3_{EYFP}-Background_{EYFP}}/\frac{Layer5_{tdTomato}-Background_{tdTomato}}{Layer2/3_{tdTomato}-Background_{tdTomato}}$.
 
-To determine the ratio of EYFP fluorescence to tdTomato fluorescence in the callosal projections, one or two rectangular regions that contained the tdTomato-labeled axons were selected in each slice to measure the mean EYFP and tdTomato fluorescence. The mean background fluorescence was measured in a nearby cortical area spanning the same layers. The ratio of EYFP fluorescence to tdTomato fluorescence was calculated by FluorescenceEYFP-BackgroundEYFPFluorescencetdTomato-BackgroundtdTomato.
+To determine the ratio of EYFP fluorescence to tdTomato fluorescence in the callosal projections, one or two rectangular regions that contained the tdTomato-labeled axons were selected in each slice to measure the mean EYFP and tdTomato fluorescence. The mean background fluorescence was measured in a nearby cortical area spanning the same layers. The ratio of EYFP fluorescence to tdTomato fluorescence was calculated by $\frac{Fluorescence_{EYFP}-Background_{EYFP}}{Fluorescence_{tdTomato}-Background_{tdTomato}}$.
 
-## Statistics
+### Statistics
 
 All reported sample numbers (n) represent biological replicates that are the numbers of recorded neurons for electrophysiology or the numbers of analyzed regions of interest (ROI) for fluorescent images. Statistical analyses were performed with Prism 7 (GraphPad Software). We first determined whether the data were normally distributed by performing the D’Agostino and Pearson test, Shapiro-Wilk test, and KS test. If all data within one experiment passed all three normality tests, we then performed the statistical test that assumes a Gaussian distribution. Otherwise, we performed the statistical test that assumes a non-Gaussian distribution. All statistical tests were two-tailed with an alpha of 0.05.
 

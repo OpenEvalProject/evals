@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.28032.001 C-type inactivation in potassium channels helps fine-tune long-term channel activity through conformational changes at the selectivity filter. Here, through the use of cross-linked constitutively open constructs, we determined the structures of KcsA’s mutants that stabilize the selectivity filter in its conductive (E71A, at 2.25 Å) and deep C-type inactivated (Y82A at 2.4 Å) conformations. These structural snapshots represent KcsA’s transient open-conductive (O/O) and the stable open deep C-type inactivated states (O/I), respectively. The present structures provide an unprecedented view of the selectivity filter backbone in its collapsed deep C-type inactivated conformation, highlighting the close interactions with structural waters and the local allosteric interactions that couple activation and inactivation gating. Together with the structures associated with the closed-inactivated state (C/I) and in the well-known closed conductive state (C/O), this work recapitulates, at atomic resolution, the key conformational changes of a potassium channel pore domain as it progresses along its gating cycle.
+C-type inactivation in potassium channels helps fine-tune long-term channel activity through conformational changes at the selectivity filter. Here, through the use of cross-linked constitutively open constructs, we determined the structures of KcsA’s mutants that stabilize the selectivity filter in its conductive (E71A, at 2.25 Å) and deep C-type inactivated (Y82A at 2.4 Å) conformations. These structural snapshots represent KcsA’s transient open-conductive (O/O) and the stable open deep C-type inactivated states (O/I), respectively. The present structures provide an unprecedented view of the selectivity filter backbone in its collapsed deep C-type inactivated conformation, highlighting the close interactions with structural waters and the local allosteric interactions that couple activation and inactivation gating. Together with the structures associated with the closed-inactivated state (C/I) and in the well-known closed conductive state (C/O), this work recapitulates, at atomic resolution, the key conformational changes of a potassium channel pore domain as it progresses along its gating cycle.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Further analyses of these structures revealed that most of the degradation in ov
 
 ## Results
 
-## Trapping KcsA with its activation gate in the open conformation
+### Trapping KcsA with its activation gate in the open conformation
 
 Using the open-inactivated structure of KcsA (PDB = 3F5W) (Cuello et al., 2010b) as a reference (Figure 1b), six cysteine pairs were tested between the N-terminal side of the transmembrane segment 1 (TM1) and the C-terminal end of TM2 (Figure 1c) for disulfide-bond formation in SDS gels (Figure 1d). While a number of cysteine pairs were formed under oxidizing conditions, cysteine-pair 28–118 (between adjacent subunits) spontaneously formed a covalently linked tetramer, which presumably has trapped-open KcsA’s activation gate (Locked-open KcsA). This double-cysteine mutant, while displaying similar overall biochemical properties to those of wild type KcsA (Figure 2a) is also resistant to high temperatures, as indicated by thermal denaturation experiments (Figure 2b). Single-channel activity recorded on liposomes containing Locked-open KcsA (in symmetrical 200mM-K+) exhibited low steady-state open probability and large single-channel conductance (~200 pS) (Figure 2c), as expected from channels mostly populating the O/I state. With Rb+ as charge carrier, open probability increases and the single-channel conductance is reduced (~23 pS) (Figure 2d). These changes are the result of ion-specific interactions at the selectivity filter (Lockless et al., 2007; Morais-Cabral et al., 2001; Zhou et al., 2001a) and suggest that indeed, most of the gating transitions obtained in these steady-state single-channel recordings derive from conformational transitions at the selectivity filter.
 
@@ -39,7 +39,7 @@ Using the open-inactivated structure of KcsA (PDB = 3F5W) (Cuello et al., 2010
 
 **Figure 2.:** (a) Hydrodynamic properties of the disulfide-bonded KcsA-OM (Locked-open KcsA) were assessed by analytical size exclusion chromatography in a Superdex HR200 column. The chromatogram shows, in black, the elution volume for the chymotrypsin truncated Locked-open KcsA and in blue, in complex with a Fab fragment (Ve = 12.7 ml) required for crystallization trials. (b) Since the Locked-open-KcsA is covalently linked by disulfide bonds, its tetrameric state is remarkably resistant to high temperature (upper panel), when compared to KcsA wild type (lower panel). Melting experiments were conducted for 30 min at the temperature indicated in the absence of a reducing agent. (c) A representative single-channel trace of the Locked-open KcsA channel in 200 mM KCl, displays a very low-open probability, which agrees with it being an open and C-type inactivated channel. (d) An excised multi-channel patch of the Locked-open KcsA displays the characteristic low-open probability mode and large single- channel conductance when K+ was the permeant ion, 200 mM KCl (Black). After rapidly switching the bath solution to Rb+ as the permeant ion, 200 mM RbCl (Red), the channel switches to a high-open probability mode and small single-channel conductance.
 
-## Locked-open KcsA and mutations that modulate C-type inactivation
+#### Locked-open KcsA and mutations that modulate C-type inactivation
 
 It was shown earlier that mutations nearby KcsA-selectivity filter can either eliminate (E71A) or strengthen (Y82A) C-type inactivation gating (Figure 3a, b and c). Hence, these mutants were used to bias the Locked-open KcsA gating behavior by incorporating mutations proven to modulate C-type inactivation gating in KcsA. As predicted, the E71A mutant on the Locked-open channel background displayed a pH-independent high-open probability single- channel activity (Figure 3d and e), albeit showing discernible subconductance states (attributed to an incomplete cross-linking of the activation gate). Nevertheless, the E71A Locked-open seems to effectively sample the O/O state. Conversely, the Y82A mutant on the Locked-open channel background exhibited a pH-independent low-open probability single- channel activity (Figure 3d and e) and presumably is sampling the O/I state. These results provided an experimental path towards the crystallization of KcsA’s O/O and O/I states at improved resolutions.
 
@@ -47,9 +47,199 @@ It was shown earlier that mutations nearby KcsA-selectivity filter can either el
 
 **Figure 3.:** (a) A cartoon representation of KcsA’s selectivity filter indicating mutated positions used in this study that either accelerates (Y82A in green) or removes (E71A in red) C-type inactivation. (b) Representative macroscopic currents recorded in symmetric 200 mM KCl during a pH fast-switching experiment for: the wild type channel (black), the fast-inactivating mutant Y82A (green) and the non-inactivating E71A mutant (red). (c) Tau for inactivation of KcsA wild type, Y82A and E71A mutants after a pH jump experiment (reported values are an average of the number (n) of independent observations indicated in parenthesis). (d) Representative 30 s. single-channel recordings of the Locked-open E71A (upper trace) and Y82A (lower trace) mutants, the pH of the bath solution was switched from 8 to 3 after 15 s. of recording by using a fast perfusion system. (e) The number of channel x open probability (NPo) of the Locked-open channel, as predicted, was pH insensitive but high for the E71A (~0.8–0.9) and low for the Y82A mutants (~0.015–0.04) Reported values are means ±SEM of 3 independent experiments. (f) A cartoon representation of the Locked-open KcsA X-ray structure highlighting the location of the inter-subunit disulfide bond between introduced cysteine residues at position 28 and 118 (g) 2Fo-Fc electron-density map (cyan, contoured at 1.0σ) of the Locked-open KcsA validating the formation of the 28cys-118cys disulfide bond. (h) An intracellular view displaying an activation gate opening of 22 Å (measured between Threonine 112 α-carbons on diagonal subunits).
 
-## Atomic-resolution structure of KcsA open and conductive
+### Atomic-resolution structure of KcsA open and conductive
 
 Incorporating the non-inactivating mutation E71A on the Locked-open-KcsA scaffold would lead to an efficient sampling of the elusive O/O state (Cordero-Morales et al., 2006) (Figure 3a, d and e). Indeed, crystals of the Locked-open-KcsA E71A mutant diffracted to 2.25 Å Bragg spacings, and the structure was solved by molecular replacement with Rwork = 0.186 and Rfree = 0.213, PDB = 5VK6 (Table 1). The O/O state electron-density map validated the inter-subunit disulfide bond between positions 28 and 118 (Figure 3f and g). In the O/O state the activation gate spans 22 Å in diameter (Cα-Cα distance at Thr 112) (Figure 3h), in agreement with the more physiologically relevant open conformation found in the full-length structures of KcsA and Kv1.2 channels (Uysal et al., 2011; Long et al., 2005).
+
+**Table 1.**
+ Crystallographic table and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Statistic</th>
+      <th>E71A-OM</th>
+      <th>Y82A-OM</th>
+      <th>Y82A-F103A closed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Data Collection</td>
+    </tr>
+    <tr>
+      <td>Space Group</td>
+      <td>I4</td>
+      <td>I4</td>
+      <td>I4</td>
+    </tr>
+    <tr>
+      <td>Cell Dimension</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a = b, c (Å)</td>
+      <td>156.54, 74.61</td>
+      <td>156.19, 74.17</td>
+      <td>155.73, 76.225</td>
+    </tr>
+    <tr>
+      <td>α=β=γ (°)</td>
+      <td>90</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>24.75–2.25 (2.33–2.25)</td>
+      <td>36.82–2.37 (2.45–2.37)</td>
+      <td>42.91–2.25 (2.33–2.25)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.052 (0.38)</td>
+      <td>0.059 (0.46)</td>
+      <td>0.079 (0.26)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>29.3 (3.9)</td>
+      <td>29.53 (2.9)</td>
+      <td>15.8 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>95.11 (99.70)</td>
+      <td>99.76 (99.24)</td>
+      <td>98.43 (91.97)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.6 (5.0)</td>
+      <td>4.5 (4.4)</td>
+      <td>4.5 (4.4)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>42598 (4255)</td>
+      <td>36377 (3605)</td>
+      <td>42773 (3985)</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.186 (0.228)</td>
+      <td>0.194 (0.239)</td>
+      <td>0.174 (0.219)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.213 (0.262)</td>
+      <td>0.226 (0.265)</td>
+      <td>0.203 (0.234)</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>4088</td>
+      <td>4054</td>
+      <td>4386</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>3939</td>
+      <td>3926</td>
+      <td>4036</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>7</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>101</td>
+      <td>84</td>
+      <td>218</td>
+    </tr>
+    <tr>
+      <td>Other ligands</td>
+      <td>48</td>
+      <td>44</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>529</td>
+      <td>528</td>
+      <td>535</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.003</td>
+      <td>0.003</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.64</td>
+      <td>0.65</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>50.05</td>
+      <td>51.10</td>
+      <td>30.63</td>
+    </tr>
+    <tr>
+      <td>Average B-Factor, Å2</td>
+      <td>69.09</td>
+      <td>67.94</td>
+      <td>39.39</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>69.22</td>
+      <td>68.08</td>
+      <td>38.93</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>79.42</td>
+      <td>76.41</td>
+      <td>49.72</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>59.26</td>
+      <td>75.05</td>
+      <td>45.37</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Favored (%)</td>
+      <td>97.35</td>
+      <td>95.97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.19</td>
+      <td>0.38</td>
+      <td>0.19</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell is show in parenthesis.†Data sets were collected from a single crystal._
 
 As expected, in the O/O state the selectivity filter shows 4 K+ ions in the canonical 1,3 and 2,4 configurations (Figure 4a), together with three more K+ ions, two at the extracellular entrance and one inside the channel’s central cavity (Figure 4b). This is in agreement with most predictions suggesting that the O/O and C/O-state conformations should be similar around the selectivity filter. At the present resolution, there were identified four water molecules coordinating the K+ ion in the central cavity, consistent with the coordination of a partially dehydrated ion about to enter the selectivity filter (Figure 4b and c). Superimposing the selectivity filter structures of KcsA C/O and O/O states (Figure 4d) confirms the conformational equivalence of these structures within 0.26 Å RMSD (for selectivity filter atoms). Furthermore, although the activation gate is open, the overall organization of the eight oxygen atoms surrounding each K+ ion is similar in the C/O and O/O states.
 
@@ -67,15 +257,23 @@ Interestingly, significant changes in ion selectivity during activation gating h
 
 Clearly, the structure of the Locked-open KcsA-E71A mutant represents a snapshot of the pore domain of a K+ channel only transiently available during normal gating cycle operation. KcsA’s O/O state is therefore likely to adopt a filter conformation similar to that found in the present Locked-open KcsA E71A structure. However, while this experimental manipulation led to a structure with an activation gate open and a conductive selectivity filter, this is only a condition biased by disulfide bonds and is unlikely to reflect potential conformational dynamic changes as a consequence of ion fluxes and/or the presence of a membrane potential.
 
-## Atomic-resolution structure of KcsA open and deep C-type inactivated
+### Atomic-resolution structure of KcsA open and deep C-type inactivated
 
 In most K+ channels the O/O conformation is metastable, as it eventually transitions into the O/I or C-type inactivated state. To further bias the selectivity filter into this conformation it was engineered onto the Locked-open KcsA scaffold a mutant which exhibits an increased rate and steady-state level of C-type inactivation(Cordero-Morales et al., 2006; López-Barneo et al., 1993). In KcsA, mutant Y82A (equivalent mutation to T449A in Shaker) also leads to an augmented rate and degree of C-type inactivation (Cordero-Morales et al., 2006) (Figure 3a, green trace), which it could be interpreted as favoring entry into a deep C-type inactivated state (a collapsed selectivity filter). Crystals of the O/I-state diffracted ~2.4 Å and its structure was solved by molecular replacement (Rwork = 0.194 and Rfree = 0.226) PDB = 5 VKE (Figure 6a). This represents the highest resolution structure of KcsA’s O/I state available, offering a unique perspective on the interactions between the selectivity filter backbone, permeant ions, and structural waters that stabilize its deep collapsed state.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28032/elife-28032-fig6-v2.jpg)
+
+**Figure 6.:** (a) X-ray crystal structure of the Locked-open open and fast inactivating Y82A mutant @ 2.37 Å resolution (PDB 5VKE). Shown is the 2Fo-Fc electron-density map for the selectivity filter residues 71–80 from two diagonally symmetric subunits, colored in yellow with oxygen atoms in red (light-blue mesh contoured at 2.6σ); for the two remaining ions in the filter (magenta mesh contoured at 3σ) and for three water molecules, ‘inactivating waters’, located inside a cavity behind KcsA filter (green mesh contoured at 3σ). The Cα-Cα distance at position Gly 77 measured from diagonal subunits is 6 Å, narrowing KcsA’s filter ~2 Å. (b) Selectivity filters of the closed-KcsA (PDB 1K4C) colored in blue and oxygen atoms in red as a reference and of the Locked-open KcsA fast-inactivating Y82A mutant (PDB 5VKE) colored in white and oxygen atoms in red. The peptide backbone carbonyl groups from the Locked-open KcsA Y82A mutant flips away from the channel’s axis of symmetry moving sideways into a cavity, (b) ‘inactivation cavity’, which is located behind the channel’s filter of a neighboring subunit. This network of water molecules holds the filter in the inactive or flipped conformation. (c) Cartoon representation of KcsA wild type (PDB 1K4C), colored in white with oxygen atoms in red, as a reference and on the left a surface representation of a neighboring subunit in which the entryway of the inactivation cavity is guarded by Tyr 82 (in red), which is positioned to putatively regulate the rate and the extent of C-type inactivation by steric regulation and or/hydrophobic effect of the diffusion of water molecules (yellow spheres) into the ‘inactivation cavity’. (d) X-ray crystal structure of the Y82A mutant in the closed state @ 2.25 Å resolution. Substitution of the bulky and hydrophobic tyrosine at position 82 by alanine not only eliminates the steric limitation of water flow into the inactivation cavity (dashed arrow) but it solvates the entryway of the cavity, as denoted by the large number of crystallographic water molecules identified at this region of the structure (yellow spheres).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28032/elife-28032-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Left, A cartoon representation of a structural alignment of the pore helix and the selectivity filter of the Locked-open KcsA, E71A and Y82 mutants in blue and red, respectively, a dashed arrow highlights the compression of the pore helix. Right. A plot of the distance I to i + 4 of the pore helix residues shows the compression of its last turn when KcsA is open and inactivated.
 
 In the O/I-state, the selectivity filter contains 2 K+ ions tightly coordinated at positions 1 and 4, with ion vacancies at positions 2 and 3 (Figure 6a). The backbone carbonyl of Val-76 flips out of the axis of symmetry, obliterating the S2 and S3 K+ binding sites, as this transition directly affects K+ coordination by backbone carbonyls at the center of selectivity filter. This seems to represent an insurmountable energetic barrier to ion movement along KcsA-selectivity filter (Cuello et al., 2010b). Interestingly, Val-76 carbonyls can be seen forming hydrogen bonds with newly resolved structural waters behind KcsA’s selectivity filter (Figure 6a). These appear to be a feature of the collapsed filter conformation and should be considered when analyzing the energetics of C-type inactivation onset and repriming. Moreover, as originally reported at lower resolution (and also observed in the low [K+] KcsA structure), the O/I-state pore is collapsed at the Gly-77 (Figure 6a), where the inter-subunit Cα diameter is reduced from 8 to 6 Å. This change originates from the rotational freedom of Gly-77 α-carbons, and represents an additional steric barrier to the movement of K+ ions along the selectivity filter (Cuello et al., 2010a). Contrary to what is seen in the C/O or O/O states, the O/I-state displays a minor change in the pitch of the last turn of the pore helix (~0.5 Å shorter, [Figure 6—figure supplement 1]) (Cuello et al., 2010a), creating an expansion of the S3 and S4 K+ binding sites. This selectivity filter is structurally reminiscent to selectivity filters in both, a constitutively open-inactivated mutant (Cuello et al., 2010a) or in the KcsA closed structure at low K+ concentration (Ader et al., 2008; Bhate and McDermott, 2012; Wylie et al., 2014; Zhou et al., 2001b).
 
 At the higher resolution of the Locked-open-Y82A structure, a novel network of water molecules appears behind KcsA’s selectivity filter. These three ‘inactivating waters’ were predicted on computational grounds (Ostmeyer et al., 2013) and appear to stabilize the O/I conformation (Figure 6a and b). Val-76 C = O has moved away from the axis of symmetry and is hydrogen-bonded to one of the inactivating water molecules (wat-1), which resides in an ‘inactivation cavity’ behind KcsA’s selectivity filter (Figure 6b). Wat-1 is in turn hydrogen-bonded to wat-2 and wat-3 and to other chemical groups of the selectivity filter, from bottom to top: Glu-71 carbonyl, Val-76 carbonyl in a neighboring subunit, Gly-77 amide nitrogen, Glu-71 and Asp-80 side chains (Figure 6b).
 
-## Diffusion of ‘inactivating waters’ determines the rate of C-type inactivation gating
+### Diffusion of ‘inactivating waters’ determines the rate of C-type inactivation gating
 
 The existence of these inactivating water in KcsA’s deep C-type inactivated state is highlighted by both, the arrangement of hydrogen-bonds formed with the backbone carbonyls in the selectivity filter and their absence in the conductive state of the filter (Zhou et al., 2001b). Consequently, water access to the inactivation cavity becomes a critical factor controlling the rate and magnitude of this process. In this mechanism, water molecules would diffuse into the inactivation cavity by a conduit formed by the apposition of two neighboring subunits. The entrance to this conduit (Figure 6c) is guarded by Tyr-82 (Thr-449 in Shaker). This position, at the external mouth of the filter has been shown to regulate C-type inactivation gating in a variety of K+ channels (Cordero-Morales et al., 2006; López-Barneo et al., 1993). For instance, replacing Tyr 82 in KcsA with Alanine accelerates C-type inactivation gating (Cordero-Morales et al., 2006; López-Barneo et al., 1993), while in Shaker T449Y slows down this process. These experimental observations suggest that this position could work as a gatekeeper, regulating the diffusion of water molecules into the inactivation cavity. Thus, a reduction in the volume and/or hydrophobicity of this amino acid side chain would maximize the diffusion of water molecules into the inactivation cavity, increasing the rate and the magnitude of C-type inactivation. In order to address this possibility, the crystal structure of the closed Y82A mutant was solved at 2.25 Å resolution, PDB = 5 VKH, (Rwork = 0.1749 and Rfree = 0.2037). As expected, a smaller and less hydrophobic amino acid at this position not only creates a septum or a channel that communicates the extracellular milieu and the ‘inactivation cavity’, possibly enhancing the diffusion of water molecules into it, but also allows the solvation of the inactivation cavity entryway, as evidenced by the additional crystallographic water molecules detected at this region (Figure 6d). Interestingly, it has been shown computationally and experimentally that recovery from C-type inactivation is in fact, dependent on the occupancy of this buried waters into the ‘inactivation cavity’ and that as predicted, changing the water activity at the extracellular part of the channel slows down KcsA’s inactivation kinetics (Ostmeyer et al., 2013).
 
@@ -95,22 +293,30 @@ Furthermore, these experimental results, together with a number of recent report
 
 Recapitulating existing data with the present high-resolution structures, KcsA’s C-type inactivation can be explained by the following minimal mechanistic model (Figure 8—figure supplement 1). Upon activation gating (C/O-to-O/O transition) KcsA’s inner bundle gate opens, expands its diameter to ~22 Å and allowing the diffusion of hydrated K+ ions into the channel central cavity. Once in the cavity, a K+ ion sheds off water molecules (Figure 4b) immediately before entering a selectivity filter that has undergone subtle but distinctive structural changes. The O/O is a transient kinetic state that conducts K+ ions for hundredths of milliseconds. But a strong allosteric coupling between KcsA’s and the selectivity filter (Phe 103 clashes with I100, Thr 74 and 75 from the signature sequence) deforms the pore helix and as a consequence the selectivity filter undergoes compensatory structural changes (Pan et al., 2011; Cuello et al., 2010a). These changes involve (1) flipping of the selectivity filter backbone C = O, which triggers the consecutive loss of the second and third K+ binding sites as a function of the channel’s activation gate opening and (2) in the absence of the second and third K+ binding sites the selectivity filter collapses. A KcsA kinetic intermediate that has loss as much as one K+ binding site at the selectivity filter is considered an inactivated state (I1) (Figure 8, Figure 8—figure supplement 1), which can dramatically reduce the unitary conductance of the channel(Morais-Cabral et al., 2001). This sequence of events underlies C-type inactivation gating in KcsA and likely in other Kv channels (O/O to O/I transition). A network of water molecules that resides in a cavity behind KcsA’s selectivity filter stabilizes its collapsed conformation; diffusion of water molecules into the inactivation cavity determines the rate and magnitude of C-type inactivation. Once the stimulus is terminated, the activation gate closes (O/I to C/I transition) although the selectivity filter remains collapsed for a short period of time, likely defined by the exit rate of water molecules from the inactivation cavity (Ostmeyer et al., 2013). Finally, the selectivity filter resets to the conductive conformation (C/I to C/O transition) completing the KcsA kinetic cycle (Figure 8—figure supplement 1.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/28032/elife-28032-fig8-v2.jpg)
+
+**Figure 8.:** The simplest KcsA kinetic cycle contains at least four distinct states, closed and prime-to-conduct (C/O), open and conductive (O/O), open and C-type inactivated (O/I) and closed and C-type inactivated (C/I). KcsA resting state (C/O) is best represented by the structure of its closed state in high-potassium concentration (PDB 1K4C). (a) Upon proton activation, the channel undergoes conformational changes at its activation gate, increasing its diameter to 22 Å, which allows K+ ions to flow down their electrochemical gradient for about 200 ms, just before the onset of C-type inactivation. The Locked-open KcsA E71A mutant (PDB 5VK6) likely represents this short-lived open and conductive state (O/O). (b) A strong allosteric coupling between KcsA’s activation gate and its filter determines the duration of its O/O state. Opening of the channel activation gate is communicated to the filter by mechanical deformation that propagates along a network of interacting amino-acid residues along the second membrane-spanning segment. Among many, Phe 103 undergoes conformational changes (yellow spheres) that make it clash with Thr 75 on the channel’s pore helix, triggering a series of structural rearrangement at the channel’s filter that yield a pore with two consecutive ion vacancies and collapsed or deep C-type inactivated. The Locked-open KcsA Y82A mutant structure (PDB 5VKE) recapitulates the most important features of KcsA’s O/I state. (c) Decreasing intracellular proton concentration triggers KcsA deactivation gating, which involves structural rearrangements that close the channel’s activation gate. For a brief period of time, KcsA exists with a collapsed filter and its activation gate closed. The structural model that best describes KcsA’s C/I state is the closed structure in low K+ concentration (PDB 1K4D). (d) Once the KcsA activation gate is closed, the filter remains collapsed for an undetermined period of time, though computational calculations have suggested that the exit of the ‘inactivating waters’ from the ‘inactivation cavity’ determines the recovery rate of the channel’s filter.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/28032/elife-28032-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** On the left panel, a cartoon representation showing the structural transition of KcsA’s selectivity filter once its activation gate is open. The right panel (top) shows a crystallographic view of KcsA’ selectivity filter in the conductive conformation (O/O) and the bottom panel in a deep C-type inactivated conformation (O/I). In between, two different inactivated states occur: I1 (an early-inactivated state) and I2 (a deep-inactivated state), which have been inferred from crystal structures of kinetic intermediates represented by KcsA’s partially-open structures (Cuello et al., 2010b). The onset of C-type inactivation is marked by the narrowing of the permeation pathway at Gly77, which is triggered by a strong allosteric coupling between KcsA’s selectivity filter and its activation gate (dashed red line). KcsA’s activation gate opening perturbs the conformational stability of the conductive selectivity filter by a conformation wave of mechanical deformation that travels along the channel inner helix (activation gate→selectivity filter)(Cuello et al., 2010a; Pan et al., 2011; Panyi and Deutsch, 2006; Zhuo et al., 2016). For channels on the left side, with ions at positions 2 and 4, an initial narrowing of the permeation pathway at G77 leads to the loss of the K+ at position 2. Further narrowing of the permeation pathway yields the deep C-type inactivated state (I2) in which the carbonyl at Val76 adopt a flip conformation with an ion bound at position 4. Channels on the right side, which have K+ at positions 1 and 3 would stay conductive during an early narrowing at G77, albeit with lower single-channel conductance, yet additional constricting at that position causes the exit of the K+ at position 3, yielding the deep C-type inactivated state I2 with an ion present at position 1.
+
 Trapping KcsA in its open conformation has allowed the development of an atomic description of its O/O and O/I kinetic states. These two new kinetic intermediate snapshots complement, at high resolution, the existing structures for the C/O (high K+-structure) and the C/I (low K+-structure) conformations (Zhou et al., 2001a) and highlight a network of water molecules behind the channel’s selectivity filter that stabilizes its collapsed conformation (Figure 6a and b). The structural description of this gating cycle stresses diffusion of water molecules into the inactivation cavity as a key determinant of the rate and magnitude of KcsA’s C-type inactivation.
 
 Finally, a recent Cryo-EM structural study of the human Ether-à-go-go-Related K+ channel (hERG) suggested that the structural changes at the selectivity filter associated with C-type inactivation are subtle and might be different from those reported for KcsA (Wang and MacKinnon, 2017). Given hERG distinctive inactivation process, it is not surprising that the structure-function correlation underlying hERG inactivation is unique and different from the one displayed by KcsA and other voltage-gated K+ channels (Cuello et al., 2010a).
 
 ## Materials and methods
 
-## KcsA expression, purification and crystallization
+### KcsA expression, purification and crystallization
 
 KcsA (The Locked-open and closed conformations) cloned in the pQE70 expression vector were transformed in freshly-made XL10-gold competent cells by heat shock method. Cell cultures harvesting the plasmid to express the desired KcsA mutant were grown overnight at 37°C in the presence of 2% glucose and 0.4 mg/ml ampicillin. Next day, the overnight culture was diluted 100 times in 1 liter of LB media supplemented with 0.4 mg/ml and 0.2% glucose and grown at 37°C. Once the cells have reached an O.D. of 0.6, the cultures were cooled down to for 2 hr. Next, 10 mM BaCl2, 0.4 mg/ml ampicillin and 0.4 mM IPTG were added to induce protein production at 29°C for ~18 hr (Cuello et al., 2010b). Next day, cells expressing KcsA were collected by centrifugation and resuspended in a buffer of the following composition: 50 mM Tris-Cl, pH 7.5, 150 mM KCl, 170 ug/ml phenylmethylsulfonyl fluoride (Buffer A). The cell suspension was disrupted by passing them three times through an ice-cold Emulsiflex C3. The broken cell suspension was spun down at 100,000 g for 1 hr and after discarding the supernatant, the cell membrane pellet was resuspended in buffer A and stored and −80°C.
 
 A KcsA containing membrane preparation was solubilized with 20 mM dodecyl-maltoside for 2 hr, the insoluble material was spun down at 100,000 g and the supernatant was loaded into a pre-packed cobalt resin column. Next, the column was washed with 10 column volumes (CV) of buffer A, 10 mM imidazole and 1 mM DDM. Finally, KcsA was eluted with buffer A, 1 mM DDM and 400 mM imidazole. Chymotrypsin-cut KcsA was complexed with an antibody fragment used for crystallization purposes and purified in 5 mM DM. Crystal trials were set up by the sitting-drop method in 24–27% PEG400 (v/v), 50 mM magnesium acetate, 50 mM sodium acetate (pH 5.4–6.0) at 20°C (Cuello et al., 2010b).
 
-## Patch-clamp studies
+### Patch-clamp studies
 
 Locked-open KcsA and the closed channel containing single point mutations that enhance or eliminate C-type inactivation gating were reconstituted in Asolectin liposomes. In brief, channels were reconstituted at a 1 to 100 for macroscopic currents or 1 to 5000 protein-to-lipid ratio for single-channel recordings, in Asolectin liposomes made in the following buffer: 200 mM KCl and 5 mM MOPS-buffer at pH 7.0 (buffer B) and incubated overnight with bio-beads from Bio-Rad. Next day, KcsA containing proteoliposomes were harvested by ultracentrifugation at 100,000 g for 1 hr. Then, the pellet was resuspended in 60 μL of buffer B and three drops of this proteoliposomes suspension were placed on a microscope glass slides and dehydrated overnight inside a desiccation chamber. Next day, the dried drops were rehydrated with 20 μl at 4°C overnight. Normally, the samples were rehydrated for ~24 hr yielding giant liposomes appropriate for patch-clamp experiments. KcsA channel activity was recorded in symmetrical 5 mM MOPS at pH 4.0 in the presence of 200 mM KCl or RbCl. KcsA currents were recorded with a patch-clamp amplifier Axopatch 200 B, and currents were sampled at 40 kHz with an analogue filter set to 10 kHz. Patch pipettes, after fire polishing, displayed a resistance of 2.0 MΩ (they were filled with 200 mM KCl and 5 mM MOPS-buffer at pH 4.0). Data Analysis: to calculate the Tau for inactivation a single exponential curve was fitted to the data, and the reported values are the mean ±SEM of 5 to 10 independent experiments. To estimate the nominal open probability of the Locked-open E71A and Y82A mutants, steady-state single-channel recordings at pH 8 or 3 were measured. The open probability was calculated from Gaussian fits to the peaks of all point histograms of the single-channel recording at each measured pH.
 
-## Crystallographic analysis
+### Crystallographic analysis
 
 Crystallographic data were collected at the beamlines 23ID (GMCA) and Beamline 14-ID-B at the Advance Photon Source (Argonne) and at the beamline 14–1 at the Stanford Synchrotron Radiation Laboratory (SSRL) and processed with HKL2000 (Otwinowski and Minor, 1997). The phase of all KcsA structures was obtained by molecular replacement using as a search model, the antibody fragment bound to the KcsA-OM (PDB = 35FW). A structural model for the locked-open KcsA was built from scratch using Coot (Emsley and Cowtan, 2004) for modeling followed by iterative cycles of refinement using Phenix (Adams et al., 2010). For the B-factors analysis a new structure for KcsA in the closed state was solved in house at the same resolution and using the same parameters during the refinement process of the Locked-open E71A mutant. The figures on this paper were made using Pymol (https://pymol.org) and the statistical analysis was done in Origin (OriginLab).

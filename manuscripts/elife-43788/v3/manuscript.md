@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.43788.001 PUF ( PU milio/ F BF) RNA-binding proteins recognize distinct elements. In C. elegans , PUF-8 binds to an 8-nt motif and restricts proliferation in the germline. Conversely, FBF-2 recognizes a 9-nt element and promotes mitosis. To understand how motif divergence relates to biological function, we first determined a crystal structure of PUF-8. Comparison of this structure to that of FBF-2 revealed a major difference in a central repeat. We devised a modified yeast 3-hybrid screen to identify mutations that confer recognition of an 8-nt element to FBF-2. We identified several such mutants and validated structurally and biochemically their binding to 8-nt RNA elements. Using genome engineering, we generated a mutant animal with a substitution in FBF-2 that confers preferential binding to the PUF-8 element. The mutant largely rescued overproliferation in animals that spontaneously generate tumors in the absence of puf-8 . This work highlights the critical role of motif length in the specification of biological function.
+PUF (PUmilio/FBF) RNA-binding proteins recognize distinct elements. In C. elegans, PUF-8 binds to an 8-nt motif and restricts proliferation in the germline. Conversely, FBF-2 recognizes a 9-nt element and promotes mitosis. To understand how motif divergence relates to biological function, we first determined a crystal structure of PUF-8. Comparison of this structure to that of FBF-2 revealed a major difference in a central repeat. We devised a modified yeast 3-hybrid screen to identify mutations that confer recognition of an 8-nt element to FBF-2. We identified several such mutants and validated structurally and biochemically their binding to 8-nt RNA elements. Using genome engineering, we generated a mutant animal with a substitution in FBF-2 that confers preferential binding to the PUF-8 element. The mutant largely rescued overproliferation in animals that spontaneously generate tumors in the absence of puf-8. This work highlights the critical role of motif length in the specification of biological function.
 
 ## Introduction
 
@@ -45,13 +45,216 @@ Here, we provide evidence that both PUF protein curvature and TRM interactions c
 
 ## Results
 
-## The curvature of PUF-8 correlates with recognition of an 8-nt motif
+### The curvature of PUF-8 correlates with recognition of an 8-nt motif
 
 The C. elegans genome encodes nine classical PUF proteins that cluster into four phylogenetic clades (Figure 1A) (Stumpf et al., 2008). Members of the FBF clade (FBF-1 and FBF-2) recognize the 9-nt FBF binding element or FBE, 5´-UGURNNAUA-3´ (Figure 1B) (Zhang et al., 1997; Bernstein, 2005). The clade containing PUF-8 and PUF-9 possesses a distinct specificity, and these proteins bind to the 8-nt PBE (Figure 1C) (Opperman et al., 2005; Nolde et al., 2007). To clarify the molecular basis of this divergent binding specificity, we determined a 2.6 Å crystal structure of PUF-8 bound to an 8-nt PBE RNA, 5´-UGUAUAUA-3´ (Table 1). The overall structure of the RNA-binding domain of PUF-8 is similar to that of other classical PUF proteins with eight α-helical PUM repeats (R1 to R8) and flanking regions at both the N- and C-termini (R1´ and R8´; Figure 1C). The eight repeats and two flanking regions together form a crescent shape, and the 8-nt RNA target sequence binds to the concave surface.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig1-v3.jpg)
 
-**Figure 1.:** C.elegans PUF protein family.(A) Dendrogram of C. elegans PUF proteins based on alignment of primary sequences. The four clades are indicated: FBF, containing FBF-2 (blue and maroon); PUF-8/9, containing PUF-8 (blue and yellow); PUF-3/11 (cyan) and PUF-5/6/7 (mauve). (B) FBF-2 forms a flatter RNA-binding surface to bind to a 9-nt FBE sequence and accommodates an extra nucleotide opposite PUM repeats R4 and R5. Schematic illustration (left) and ribbon diagram (middle) of FBF-2 in complex with FBE RNA (PDB ID 3V74). Repeats are colored alternately red and blue. RNA recognition side chains from each PUM repeat are shown. The RNA is shown as a stick representation colored by atom type (maroon, carbon; red, oxygen; blue, nitrogen; orange, phosphorus). Carbon atoms for nucleotides 5 and 6 are green. Structural superposition of repeats R5-R8 of PUF-8 and FBF-2 demonstrates the flatter curvature of the RNA-binding surface of FBF-2. The RNA-binding helices of PUF-8 (gold) and FBF-2 (red) are shown as cylinders (right). (C) Crystal structure of PUF-8 in complex with 8-nt PBE RNA reveals modular 1:1 recognition of RNA by PUM repeats and a curvature similar to PUM1. Schematic illustration (left) and ribbon diagram (middle) of PUF-8 in complex with PBE RNA. Repeats are colored alternately gold and blue. RNA recognition side chains from each PUM repeat are shown. The RNA is colored as in panel B, except carbon atoms are gold, The RNA base at the 5th position, which stacks with the 4th base and turns away from the protein surface, is shown with green carbon atoms. Superposition of the crystal structures of PUF-8 and human PUM1 demonstrates similar curvature. The RNA-binding helices of PUF-8 (gold) and PUM1 (blue) are shown as cylinders (right).
+**Figure 1.:** (A) Dendrogram of C. elegans PUF proteins based on alignment of primary sequences. The four clades are indicated: FBF, containing FBF-2 (blue and maroon); PUF-8/9, containing PUF-8 (blue and yellow); PUF-3/11 (cyan) and PUF-5/6/7 (mauve). (B) FBF-2 forms a flatter RNA-binding surface to bind to a 9-nt FBE sequence and accommodates an extra nucleotide opposite PUM repeats R4 and R5. Schematic illustration (left) and ribbon diagram (middle) of FBF-2 in complex with FBE RNA (PDB ID 3V74). Repeats are colored alternately red and blue. RNA recognition side chains from each PUM repeat are shown. The RNA is shown as a stick representation colored by atom type (maroon, carbon; red, oxygen; blue, nitrogen; orange, phosphorus). Carbon atoms for nucleotides 5 and 6 are green. Structural superposition of repeats R5-R8 of PUF-8 and FBF-2 demonstrates the flatter curvature of the RNA-binding surface of FBF-2. The RNA-binding helices of PUF-8 (gold) and FBF-2 (red) are shown as cylinders (right). (C) Crystal structure of PUF-8 in complex with 8-nt PBE RNA reveals modular 1:1 recognition of RNA by PUM repeats and a curvature similar to PUM1. Schematic illustration (left) and ribbon diagram (middle) of PUF-8 in complex with PBE RNA. Repeats are colored alternately gold and blue. RNA recognition side chains from each PUM repeat are shown. The RNA is colored as in panel B, except carbon atoms are gold, The RNA base at the 5th position, which stacks with the 4th base and turns away from the protein surface, is shown with green carbon atoms. Superposition of the crystal structures of PUF-8 and human PUM1 demonstrates similar curvature. The RNA-binding helices of PUF-8 (gold) and PUM1 (blue) are shown as cylinders (right).
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Protein:RNA</th>
+      <th>PUF-8: PBE</th>
+      <th>FBF-2 SS/Y: PBE</th>
+      <th>FBF-2 AS/Y: PBE</th>
+      <th>FBF-2 AQ/Y: PBE</th>
+    </tr>
+    <tr>
+      <th colspan="2">Data collection</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Space group</td>
+      <td>C2</td>
+      <td>P61</td>
+      <td>P61</td>
+      <td>P61</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Unit Cell</td>
+      <td>a, b, c (Å)</td>
+      <td>109.2, 189.0, 63.2</td>
+      <td>96.4, 96.4, 99.9</td>
+      <td>96.5, 96.5, 101.1</td>
+      <td>95.9, 95.9, 100.4</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 103.6, 90</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td colspan="2">Resolution (Å)</td>
+      <td>50–2.55 (2.59–2.55)*</td>
+      <td>50–2.25 (2.29–2.25)*</td>
+      <td>50–2.25 (2.33–2.25)*</td>
+      <td>50–2.85 (2.9–2.85)*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rsym or Rmerge</td>
+      <td>0.191 (0.692)</td>
+      <td>0.101 (0.704)</td>
+      <td>0.104 (0.772)</td>
+      <td>0.191 (0.957)</td>
+    </tr>
+    <tr>
+      <td colspan="2">I /σI</td>
+      <td>9.4 (1.9)</td>
+      <td>19.2 (3.42)</td>
+      <td>17.1 (2.98)</td>
+      <td>12.8 (2.34)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Completeness (%)</td>
+      <td>98.9 (98.0)</td>
+      <td>99.9 (100)</td>
+      <td>99.9 (100)</td>
+      <td>99.6 (99.2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Redundancy</td>
+      <td>6.9 (3.6)</td>
+      <td>5.7 (5.7)</td>
+      <td>5.7 (5.7)</td>
+      <td>10.7 (8.8)</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Resolution (Å)</td>
+      <td>33.8–2.6</td>
+      <td>32.0–2.3</td>
+      <td>31.6–2.3</td>
+      <td>27.5–2.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">No. reflections</td>
+      <td>37,625</td>
+      <td>25,089</td>
+      <td>25,386</td>
+      <td>12,185</td>
+    </tr>
+    <tr>
+      <td colspan="2">Rwork/Rfree</td>
+      <td>0.229/ 0.285</td>
+      <td>0.158/ 0.204</td>
+      <td>0.167/ 0.223</td>
+      <td>0.219/ 0.272</td>
+    </tr>
+    <tr>
+      <td colspan="2">No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Protein</td>
+      <td>8415</td>
+      <td>3197</td>
+      <td>3194</td>
+      <td>3189</td>
+    </tr>
+    <tr>
+      <td colspan="2">RNA</td>
+      <td>507</td>
+      <td>150</td>
+      <td>168</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td colspan="2">Solvent</td>
+      <td>229</td>
+      <td>169</td>
+      <td>109</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td colspan="2">B-factors (Å2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Wilson B</td>
+      <td>29.7</td>
+      <td>36.6</td>
+      <td>35.5</td>
+      <td>48.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Protein</td>
+      <td>32.8</td>
+      <td>45.3</td>
+      <td>45.1</td>
+      <td>50.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">RNA</td>
+      <td>43.6</td>
+      <td>51.4</td>
+      <td>58.8</td>
+      <td>64.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Solvent</td>
+      <td>32.7</td>
+      <td>49.6</td>
+      <td>44.3</td>
+      <td>23.1</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.007</td>
+      <td>0.007</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td colspan="2">Bond angles (°)</td>
+      <td>0.45</td>
+      <td>0.77</td>
+      <td>0.78</td>
+      <td>0.38</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest-resolution shell._
 
 Target RNA bases are recognized by conserved amino acid side chains from PUF-8 repeats. The RNA binds with its 5´ end near the C-terminus of the protein (Figure 1C). PUM repeats R8-R5 bind to the 5´-UGUA sequence, and PUM repeats R3-R1 bind to bases 6–8, the AUA-3´ sequence (Figure 2A,B). The 5´-UGUA and AUA-3´ base specific interactions bracket a central region in which the 5th base turns away from the concave RNA-binding surface and stacks directly with the 4th base (Figure 2C,D). As a result, the 5th base is not recognized by PUF-8, and PBE RNAs with any nucleotide at position 5 are bound by PUF-8 with similar affinity (Table 2). R362 in R5 is located at the position that typically would form stacking interactions between the 4th and 5th RNA bases, but instead the side chain is moved aside (Figure 2C,D). This type of recognition was observed in crystal structures of human PUM1 and PUM2 with some RNA sequences and is termed the base-omission mode (Lu and Hall, 2011).
 
@@ -59,45 +262,248 @@ Target RNA bases are recognized by conserved amino acid side chains from PUF-8 r
 
 **Figure 2.:** (A) Recognition of the conserved 5´-UGUR sequence by PUF proteins. (B) Recognition of the conserved AUA-3´ sequence by PUF proteins. Superpositions of crystal structures of PUF-8:PBE RNA (orange), human PUM1:PBE RNA (blue), and C. elegans FBF-2/FBE RNA (red) are shown. Structures were aligned by superimposing the RNA bases. (C) PUF-8 base omission mode of RNA recognition. In panels A-C, the TRM residues from each PUM repeat are shown. (D) Schematic representation of the interactions between PUF-8 and PBE RNA. PUM repeats are indicated by boxes, and RNA bases are indicated by ovals. Interactions are indicated by dashed lines (hydrogen bonds, black; van der Waals contacts, tan).
 
+**Table 2.**
+ RNA-binding analyses of PUF-8 and FBF-2 proteinsTable 2—source data 1.Data for Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>RNA</th>
+      <th>RNA sequence</th>
+      <th>Kd (nM)</th>
+      <th>Krel*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PUF-8</td>
+      <td>PBE</td>
+      <td>UGUA  UAUA</td>
+      <td>28.8 ± 0.7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBE-A5</td>
+      <td>UGUA  AAUA</td>
+      <td>25.9 ± 3.1</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBE-C5</td>
+      <td>UGUA  CAUA</td>
+      <td>44.8 ± 2.4</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PBE-G5</td>
+      <td>UGUA  GAUA</td>
+      <td>45.6 ± 3.1</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>UGUGCCAUA</td>
+      <td>3110 ± 656</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <td>FBF-2 WT</td>
+      <td>PBE</td>
+      <td>ACAUGUAA AUAC</td>
+      <td>74.6 ± 7.7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>ACAUGUGCCAUAC</td>
+      <td>19.3 ± 0.6</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>FBF-2 SS/Y</td>
+      <td>PBE</td>
+      <td>ACAUGUAA AUAC</td>
+      <td>22.7 ± 0.4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>ACAUGUGCCAUAC</td>
+      <td>50.9 ± 2.3</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>FBF-2 AS/Y</td>
+      <td>PBE</td>
+      <td>ACAUGUAA AUAC</td>
+      <td>16.3 ± 0.8</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>ACAUGUGCCAUAC</td>
+      <td>76.7 ± 4.3</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>FBF-2 SS/R</td>
+      <td>PBE</td>
+      <td>ACAUGUAA AUAC</td>
+      <td>51.1 ± 1.1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>ACAUGUGCCAUAC</td>
+      <td>26.9 ± 2.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>FBF-2 AQ/Y</td>
+      <td>PBE</td>
+      <td>ACAUGUAA AUAC</td>
+      <td>20.2 ± 1.2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>FBE</td>
+      <td>ACAUGUGCCAUAC</td>
+      <td>79.9 ± 2.0</td>
+      <td>4.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Krel values are calculated for each protein with binding to the PBE RNA set to 1._
+
 The mode of RNA recognition and overall curvature of PUF-8 are reminiscent of the one repeat to one base modularity of PUM1 (Lu and Hall, 2011). Superposition of the structures highlights this relationship as the RMSD is 1.2 Å over 293 Cα atoms, and the inner RNA-binding helices align with similar curvature (Figure 1C). In contrast, FBF-2 and PUF-8 do not superimpose well over all eight PUM repeats. Aligning repeats R5-R8 illustrates that the curvature of the PUF-8 scaffold contrasts starkly with the flatter FBF-2 scaffold (Figure 1B). These results indicate that PUF-8 resembles PUM1 with respect to curvature and mode of RNA recognition.
 
-## A key role for FBF-2 repeat R5 in defining RNA length selectivity
+### A key role for FBF-2 repeat R5 in defining RNA length selectivity
 
 Comparing the structure of PUF-8 in complex with an 8-nt sequence to FBF-2 in complex with a 9-nt element revealed a major difference in addition to curvature. As noted above, repeat R5 of FBF-2 lies opposite the additional central nucleotides in the FBE RNA (Figures 1B and 2C). In the central region of both PUF-8 and PUM1, R5 uses its TRM to directly contact the RNA base at position 4 (Figures 2C and 3A). Although the R5 TRMs of PUM1, PUF-8 and FBF-2 are identical, CQ/R (by convention C and Q are the edge-on residues and R is the stacking residue), we proposed that substitution of amino acid residues in the R5 TRM might produce interactions with the RNA that could favor binding of FBF-2 to an 8-nt sequence and offset the effects of curvature. To test this hypothesis, we developed a modified yeast three-hybrid screen to identify TRM variants that cause FBF-2 to bind preferentially to an 8-nt PBE versus a 9-nt FBE. We expressed a reporter under the control of the lac operator containing the integral membrane protein Aga2p fused to 10 HA epitope tags (Figure 3—figure supplement 1). In this system, the strength of an interaction drives proportional changes in the level of cell surface expression of the antigen, and we enriched for cells with high surface antigen expression using anti-HA antibodies immobilized on metal-containing resin.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig3-v3.jpg)
+
+**Figure 3.:** (A) PUM1 binds preferentially to an 8-nt PBE by intercalating R1008 between bases A4 and A5 (left, PDB ID 3Q0L). This is distinct from FBF-2 bound to a 9-nt FBE where R364 projects away from base C5 (right, PDB ID 3K5Q). The PBE (gold) and FBE (mauve) RNAs are shown with cartoon backbones and stick bases. Hydrogen bond and van der Waals interactions between TRM residues and RNA bases are indicated with dashes. (B) An FBF-2 variant bearing the SS/Y TRM at repeat R5 preferentially binds to an 8-nt PBE. Yeast 3-hybrid analyses of binding by FBF-2 WT, PUF-8, and FBF-2 SS/Y variant to an MS2 hairpin (None, grey) or an MS2 hairpin fused to an 8-nt PBE (orange) or a 9-nt FBE (red). Binding activity is shown as units of β-galactosidase activity normalized to cell count. Error bars indicate the standard deviation of three replicate measurements. Source data are available in Figure 3—source data 1. (C) The crystal structure of the FBF-2 SS/Y variant reveals binding to the 8-nt PBE in a 1:1 recognition pattern. Hydrogen bond and van der Waals interactions are indicated with dashes, and a water molecule is shown as a red sphere. (D) Identification of a naturally occurring SS/Y TRM. Sequence alignment of FBF-2 repeat R5 with PUM repeat R7 from N. gruberi. TRM residues are indicated in red. Identical residues are labeled with an asterisk, dots indicate similar types of amino acid residues.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic representation of RNA selection using the yeast three-hybrid system. RNA is presented to RNA-binding proteins by virtue of a LexA MS2 coat protein chimera. Hybrid RNAs containing MS2 stem loops and a binding site of interest are expressed. Putative RNA-binding proteins (RBPs) associate with binding elements, which in turn lead to transcription through recruitment of the GAL-4 activation domain. The interaction drives the production of HA-tagged integral membrane protein. Weak interactions are selected against through the addition of 3-AT, an inhibitor of the HIS-3 gene product. Finally, cells from surviving colonies are pooled together for sorting. (B) Magnetic separation is used to separate cells with strong interactions from those with weak interactions based on the relative density of cell surface epitopes. Magnetic beads crosslinked to HA antibodies are used to preferentially enrich cells with high levels of antigen presentation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** The FBF-2 R5 SS/Y variant shifts specificity toward an 8-nt PBE over a 9-nt FBE. FBF-2 binds preferentially to a 9-nt FBE versus an 8-nt PBE (A, B), whereas FBF-2 SS/Y binds preferentially to an 8-nt PBE versus a 9-nt FBE (C, D). Representative binding curves (A, C) and corresponding electrophoretic mobility shift assays (B, D) are shown.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) The SS/Y substitutions do not change the overall curvature of FBF-2. Superimposed crystal structures of an FBF-2:FBE complex and the FBF-2 SS/Y:PBE complex are shown as backbone traces. The repeat R5 TRM side chains are shown for FBF-2 WT and SS/Y.
+
 We selected and validated a single FBF-2 variant both functionally and structurally (Figure 3B,C). The variant bears an SS/Y TRM at repeat R5, and this imparted the ability to bind to the 8-nt PBE RNA. To identify this variant, we generated a library with randomized codons in the edge-on and stacking positions of FBF-2 repeat R5. We subjected ~20,000 unique transformants to genetic and magnetic cell selection. We validated candidates using a standard yeast 3-hybrid assay where the strength of an interaction is proportional to the activity of induced β-galactosidase (Hook et al., 2005). We measured binding to three RNAs containing an MS2 hairpin fused to the 8-nt PBE (5´-UGUAAAUA-3´), the 9-nt FBE (5´-UGUGCCAUA-3´), or a vector sequence devoid of a known binding element (Figure 3B). We found that the FBF-2 variant with an SS/Y TRM preferentially bound to the PBE versus the FBE. As controls, we confirmed that FBF-2 with a wildtype R5 TRM binds preferentially to the FBE and PUF-8 binds preferentially to the PBE. We also determined the RNA-binding affinities of FBF-2 WT, FBF-2 SS/Y variant, and PUF-8 by electrophoretic mobility shift assay and confirmed preference of the FBF-2 SS/Y variant for the 8-nt PBE (Table 2 and Figure 3—figure supplement 2). The binding affinity of the SS/Y variant for the PBE (22.7 nM) was comparable to the affinity of wild-type PUF-8 for the PBE (25.9 nM) and FBF-2 WT for the FBE (19.3 nM).
 
-## Changes in curvature are dispensable
+### Changes in curvature are dispensable
 
 To understand how variation of the FBF-2 R5 TRM converts binding preference to an 8-nt PBE RNA, we determined a crystal structure of the R5 SS/Y variant in complex with a PBE RNA (Table 1) and found that the Y364 residue in the R5 TRM stacks between bases A4 and A5, which positions FBF-2’s PUM repeat R5 opposite a single RNA base, A4 (Figure 3C). In crystal structures of wild-type FBF-2 with 9-nt RNAs, the three central RNA bases of nucleotides 4–6 form a ‘triple stack’ of bases that is accommodated by the flexible arginine side chain at the stacking position of repeat R5 (Figure 3A). In a manner similar to PUM1, Y364 of the the SS/Y variant occupies the space of the middle base of the triple stack, which allows interactions of repeats R5 and R4 with bases 4 and 5, respectively (Figure 3A,C). The two serine side chains (S363 and S367) contact the A4 base. S363 forms a van der Waals interaction at the C2 position, and S367 interacts via a water molecule at the N1 position. FBF-2 R5 SS/Y retained the same overall curvature in complex with an 8-nt as wildtype FBF-2 in complex with a 9-nt RNA (Figure 3—figure supplement 3). We conclude that the change in identity of the TRM residues is sufficient for the transformation of binding site length specificity.
 
 A key question is whether the TRM combination that favored 8-nt length preference exists in nature. To address this question, we searched a database of ~24,000 PUM repeat sequences identified in Pfam for the presence of the TRM combination capable of switching specificity (Finn et al., 2016). We identified the SS/Y TRM in a PUM repeat from Naegleria gruberi (Figure 3D). The observation of the SS/Y TRM in nature implies that the combination of amino acid residues reported here from in vitro selection has also arisen through natural selection.
 
-## The stacking residue is critical for binding length specificity
+### The stacking residue is critical for binding length specificity
 
 To determine which amino acid residues in the R5 SS/Y TRM contribute to the transition of specificity away from the FBE and towards the PBE sequence, we generated a series of systematic substitutions to the SS/Y TRM residues. First, we addressed whether the serine residues that occupy edge-on positions are required to confer preference of the PBE. We substituted alanine for one (AS/Y or SA/Y) or both (AA/Y) of the edge-on serine residues. Intriguingly, all of the mutants with edge-on alanine substitutions and a tyrosine stacking residue retained preferential binding to the 8-nt PBE over the 9-nt FBE (Figure 4A, Figure 4—figure supplement 1). A crystal structure of the AS/Y variant in complex with PBE RNA was nearly identical to the SS/Y structure (Table 1 and Figures 3C and 4B). We also tested the binding preferences of an FBF-2 R5 AQ/Y variant that we identified as an in vivo substitution by genome engineering (see below). This variant demonstrated preferential binding to the 8-nt PBE over the 9-nt FBE, and a crystal structure confirms recognition of the 8-nt motif (Figure 4A,C, Figure 4—figure supplement 1). These data suggest that the tyrosine stacking residue plays a prominent role in preferential binding of FBF-2 variants to the PBE.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig4-v3.jpg)
+
+**Figure 4.:** (A) Interaction of FBF-2 TRM variants with 8-nt PBE and 9-nt FBE RNAs. Yeast 3-hybrid analyses of binding by FBF-2 WT and the FBF-2 SS/Y variant to an MS2 hairpin (None, grey) or an MS2 hairpin fused to an 8-nt PBE (orange) or a 9-nt FBE (red). Binding activity is shown as units of β-galactosidase activity. Source data areavailable in Figure 4—source data 1. (B) The FBF-2 AS/Y variant binds to the PBE RNA in a 1:1 recognition pattern similar to the SS/Y variant. Hydrogen bond and van der Waals interactions are indicated with dashes. (C) The FBF-2 AQ/Y variant binds to the PBE RNA in a 1:1 recognition pattern. (D) The FBF-2 variants retain recognition of the 3´ sequence. Yeast 3-hybrid analyses of binding by PUF-8 and FBF-2 variants to an MS2 hairpin fused to an 8-nt WT PBE or a 7–10-nt PBE with the penultimate nucleotide changed to G. Binding activity is shown as units of β-galactosidase activity normalized to cell count. Error bars indicate the standard deviation of three replicate measurements. Mutants in PUF-8, FBF-2 SS/Y, FBF-2 AS/Y, or FBF-2 AQ/Y introduce a requirement for a G base opposite repeat R2, and interaction with only 8-nt sequences indicates the importance of the 3´ sequence. Source data areavailable in Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Representative binding curves and corresponding electrophoretic mobility shift assays are shown. (A, B) FBF-2 AS/Y and AQ/Y bind preferentially to an 8-nt PBE versus a 9-nt FBE. (C) FBF-2 SS/R binds with modest preference to an 9-nt FBE versus an 8-nt PBE.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Wild-type FBF-2 is expressed at comparable levels to the CQ/Y variant. The pGADT7 vector contains an HA tag which is used to detect activation domain fusions. GAPDH is shown as a load control.
+
 We next tested whether the tyrosine stacking residue is required for PBE specificity of the SS/Y variant and found that it is necessary to convert FBF-2 to 8-nt specificity. We substituted the stacking residue with alanine, which reverted FBF-2 R5 SS/A to 9-nt FBE specificity, indicating the crucial role of Y364 (Figure 4A). When we restored the WT stacking residue, R364, the resulting R5 SS/R variant poorly discriminated between the FBE and PBE. We sought to determine whether a tyrosine stacking residue was sufficient to convert FBF-2 to 8-nt specificity. However, a CQ/Y variant, which maintains WT edge-interacting residues, failed to bind either RNA (Figure 4A). Although the CQ/Y protein was expressed (Figure 4—figure supplement 2), it lost both PBE and FBE binding activity. Collectively, our data suggest that mutation of the stacking residue from arginine to tyrosine is necessary to direct specificity towards the PBE but small residues in the edge-on positions are also required to completely switch specificity.
 
-## Compensatory mutations reveal engagement of the 3´ end
+### Compensatory mutations reveal engagement of the 3´ end
 
 Our crystal structures of the FBF-2 variants indicated that they used their TRMs to recognize the full 8-nt PRE. Among PUF proteins, mutations to both the RNA and TRM residues that contact the 5´ portion of the FBE sequences tend to be less tolerated than those to the 3´ end and protein partners can enable degeneracy on the 3´ end (Campbell et al., 2012a; Valley et al., 2012; Weidmann et al., 2016). The interactions of the FBF-2 variants with the 3´ site could have been favored under the high concentrations of crystallization resulting in an artifactual 1:1 binding mode. Additionally, the crystal structure of the SS/Y variant bound to the PRE showed poor density for the 8th nucleotide. To test the 1:1 binding mode, we examined whether interactions of FBF-2 variants with the 3´ sequences of the 8-nt RNA are required for tight binding in cells. The remarkable modularity of individual PUM repeats enables the generation of variants that selectively associate with RNAs containing G at the opposing position in an RNA target (Opperman et al., 2005; Cheong and Hall, 2006; Campbell et al., 2014; Porter et al., 2015). We introduced a G-selective TRM combination SE/H into repeat R2 of the FBF-2 R5 variants SS/Y, AS/Y, and AQ/Y (FBF-2 R5 SS/Y R2 SE/H, R5 AS/Y R2 SE/H, and R5 AQ/Y R2 SE/H) (Wang et al., 2009a; Campbell et al., 2014). As a control using a PUF protein that naturally binds an 8-nt sequence, we also generated a PUF-8 variant with an SE/H TRM in repeat R2 (PUF-8 R2 SE/H). We assessed the ability of these TRM variants to interact with RNAs of length from 7 to 10 nts that ended with GA at the 3´ end to match the TRMs of repeats R2 and R1, 5´-UGUA-A1-4-GA-3´ (Figure 4D). If interaction with the 3´ sequences is important for binding, the repeat R2 variants should bind preferentially to the 8-nt site. In contrast, if a 5´UGUAA sequence is sufficient for tight binding, the repeat R2 variants should bind equally well to sites of all lengths. We found that the PUF-8 variant R2 SE/H and the FBF-2 variants R5 SS/Y R2 SE/H, R5 AS/Y R2 SE/H, and R5 AQ/Y R2 SE/H bound preferentially to the 8-nt U7G RNA with an order of magnitude greater activity than to the shorter and longer elements. All of the variants bound poorly to the wild-type PBE sequence due to the mismatch of a G-specific TRM in repeat R2 opposite a U7 nucleotide. We therefore conclude that the FBF-2 R5 TRM variants retain association to the 3´ end of target RNAs.
 
-## FBF-2 R5 TRM variants retain FBF-2 base recognition specificity at positions 3–5
+### FBF-2 R5 TRM variants retain FBF-2 base recognition specificity at positions 3–5
 
 We assessed whether the FBF-2 R5 TRM variants that favor binding to an 8-nt PBE have base recognition properties more similar to the original scaffold, WT FBF-2, or to PUF-8 (Figure 5). FBF-2 and PUF-8 both specify a U3 and have loosened sequence requirements at position 5 (Campbell et al., 2012a). In contrast, PUF-8 is specific for A4 while FBF-2 accepts A4 or G4 (Bernstein, 2005). These preferences are reflected in their known target mRNAs. We tested binding of WT PUF-8 and FBF-2 R5 TRM variants SS/Y, AS/Y, and AQ/Y to 8-nt RNA sequences with base substitutions at positions 3–5 of the PBE using the yeast three-hybrid system. The FBF-2 variants R5 SS/Y, AS/Y, and AQ/Y bound the PBE with comparable activity to PUF-8 and retained specificity for a U3 base. This is consistent with prior studies that showed TRM substitutions did not affect specificity of the preceding base (Bernstein, 2005; Valley et al., 2012). At nucleotide 4, which is opposite repeat R5, PUF-8 was selective for A, as expected. However, the FBF-2 R5 TRM variants were not as selective at this position. FBF-2 R5 SS/Y bound equally well to either an A or G at position 4, similar to WT FBF-2 (Bernstein, 2005), and the R5 AS/Y variant accommodated A4, G4 or U4. The R5 AQ/Y variant displayed preference for A4, although not as strictly as PUF-8. These results are consistent with the interactions observed in the crystal structures of the FBF-2 variants with PBE RNA. The tyrosine base-stacking interaction is critical for binding energy, whereas serine or alanine residues in the edge-interacting positions permit binding to different nucleotides at position 4. The AQ/Y variant is most similar to the WT TRM, which seems to impart preference for A4. Finally, at nucleotide 5, all proteins preferred A5 and excluded G5. PUF-8 had broadened specificity and also accommodated C5 or U5, and FBF-2 R5 AS/Y and AQ/Y also bound to U5. Collectively, these experiments demonstrate that the FBF-2 R5 TRM variants retain specificity for U3 and the ability of WT FBF-2 to recognize A4 or G4. However, the TRM variation at repeat R5 has differing effects on the specificity of repeat R4 for the nucleotide at position 5. This suggests that there is cooperativity between TRMs as opposed to true independent modularity. Similar results were obtained with variants at the R7 TRM (Campbell et al., 2014). Finally, the FBF-2 R5 AQ/Y variant demonstrates a recognition pattern qualitatively more similar to PUF-8 than FBF-2.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig5-v3.jpg)
 
-**Figure 5.:** Yeast 3-hybrid analyses of binding by PUF-8, FBF-2 SS/Y, FBF-2 AS/Y, and FBF-2 AQ/Y to an MS2 hairpin fused to 8-nt PBE RNAs bearing nucleotide substitutions at positions 3–5. Binding activity is shown as units of β-galactosidase activity normalized to cell count. Error bars indicate the standard deviation of three replicate measurements. Source data areavailable in Figure 5—source data 1.10.7554/eLife.43788.018Figure 5—source data 1.
+**Figure 5.:** Yeast 3-hybrid analyses of binding by PUF-8, FBF-2 SS/Y, FBF-2 AS/Y, and FBF-2 AQ/Y to an MS2 hairpin fused to 8-nt PBE RNAs bearing nucleotide substitutions at positions 3–5. Binding activity is shown as units of β-galactosidase activity normalized to cell count. Error bars indicate the standard deviation of three replicate measurements. Source data areavailable in Figure 5—source data 1.
 
-## An 8-nt-binding FBF-2 variant can substitute for PUF-8 in vivo
+### An 8-nt-binding FBF-2 variant can substitute for PUF-8 in vivo
 
 With the knowledge of variant combinations that convert the binding preference of FBF-2 to mirror that of the homologue PUF-8, we next sought to determine whether altering the RNA recognition motif length would allow FBF-2 to fulfill PUF-8 protein function to control germline cell proliferation. Using genome engineering, we tested whether an 8-nt-binding FBF-2 variant could rescue loss of puf-8 function in vivo. In the C. elegans germline, loss of puf-8 does not substantially impair mitotic proliferation or entry into meiosis (Subramaniam and Seydoux, 2003; Bachorik and Kimble, 2005). This is in contrast with temperature-sensitive germline proliferation-1 (glp-1) gain-of-function mutants where mitotic cells overproliferate (e.g. the glp-1(ar202) strain), resulting in a tumorous phenotype at the restrictive temperature (25°C) (Pepper et al., 2003). This phenotype is strongly enhanced by loss of puf-8 as evidenced by tumors at the permissive temperature (15°C) (Racher and Hansen, 2012). Upon reduction of puf-8 by RNAi (puf-8(RNAi)), the glp-1(ar202) mutant strain develops tumors throughout the germline at permissive temperature (15°C) (Figure 6A). To mark cells in mitosis, we used immunofluorescence to detect phosphorylated histone H3 (PHH3) in formaldehyde-fixed gonads. We also stained germline cells with DAPI to visualize nuclear morphology. Tumorous germlines were defined as having DAPI cells with anti-PHH3 staining throughout the distal and proximal end of the germline. Based on these criteria, 98% of the glp-1(ar202) puf-8(RNAi) germlines contained tumors despite expression of WT FBF (Table 3). Tumor formation in the glp-1(ar202) animals depended upon depletion of puf-8, since treatment of animals with an RNAi vector containing a scrambled RNA sequence did not result in tumorigenesis (Table 3).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/43788/elife-43788-fig6-v3.jpg)
 
-**Figure 6.:** C.elegans germ line caused by loss of PUF-8 in a sensitized genetic background.Extruded germlines were stained for nuclei (DAPI, blue) or mitotic cells (α-PHH3, red). (A) Fluorescence microscopic image of an extruded germline from an animal with wild-type fbf-2 and a gain-of-function mutation (glp-1(ar202)) that was subjected to puf-8 depletion by RNAi. These animals produce tumors throughout the germline as evidenced by the presence of red mitotic cells. (B) Fluorescence microscopic image of an extruded germline from an edited animal with FBF-2 AQ/Y variant (fbf-2(lot14)) and a gain-of-function mutation (glp-1(gf)) that was subjected to puf-8 depletion by RNAi. Note the absence of red mitotic cells throughout the gonad.
+**Figure 6.:** Extruded germlines were stained for nuclei (DAPI, blue) or mitotic cells (α-PHH3, red). (A) Fluorescence microscopic image of an extruded germline from an animal with wild-type fbf-2 and a gain-of-function mutation (glp-1(ar202)) that was subjected to puf-8 depletion by RNAi. These animals produce tumors throughout the germline as evidenced by the presence of red mitotic cells. (B) Fluorescence microscopic image of an extruded germline from an edited animal with FBF-2 AQ/Y variant (fbf-2(lot14)) and a gain-of-function mutation (glp-1(gf)) that was subjected to puf-8 depletion by RNAi. Note the absence of red mitotic cells throughout the gonad.
+
+**Table 3.**
+ Phenotypic analysis of mutant strains
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Genotype</th>
+      <th rowspan="2">RNAi</th>
+      <th>Wild-type</th>
+      <th>Complete tumorous</th>
+      <th rowspan="2">N</th>
+    </tr>
+    <tr>
+      <th>Germline, %</th>
+      <th>Germline, %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>glp-1(ar202)</td>
+      <td>puf-8</td>
+      <td>2</td>
+      <td>98</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>glp-1(ar202)</td>
+      <td>Scramble</td>
+      <td>100</td>
+      <td>0</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>fbf-2(lot14) glp-1(ar202)</td>
+      <td>puf-8</td>
+      <td>64</td>
+      <td>36</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>fbf-2(lot14) glp-1(ar202)</td>
+      <td>Scramble</td>
+      <td>100</td>
+      <td>0</td>
+      <td>107</td>
+    </tr>
+  </tbody>
+</table>
 
 Although PUF-8 and FBF have opposing effects on mitosis, we reasoned that both proteins are likely translational repressors and that regulatory differences may arise through changes in motif length recognition that direct their functions to distinct subsets of the transciptome (Friend et al., 2012; Vaid et al., 2013). To test this idea, we generated a C. elegans strain expressing an 8-nt-binding FBF-2 variant using CRISPR. Mutations were introduced into the endogenous gene encoding FBF-2 (note that FBF-2 can be modified, because FBF-1 is functionally redundant to FBF-2). We injected Cas9 protein, a guide RNA (target sequence: 5´-AGATTTGTTCTGATAAGTAT-3´), and repair templates corresponding to the AS/Y and SS/Y mutations into the germline of N2 animals. After numerous attempts, we were unable to recover the desired AS/Y and SS/Y mutants. We did, however, recover multiple strains with deletion mutations and a single strain that incorporated a novel repeat R5 TRM variant - AQ/Y. This mutant strain was designated fbf-2(lot14). We speculate that this variant resulted from homology repair when using the AS/Y repair template. Serendipitously, as shown above, the AQ/Y mutation preferentially binds to the PBE relative to the FBE in cells and in vitro (Figure 4, Figure 4—figure supplement 1, Table 2), and a crystal structure of the FBF-2 R5 AQ/Y variant bound to the PBE adopts a similar conformation to SS/Y and AS/Y bound to the PBE (Figure 4C). Furthermore, the FBF-2 R5 AQ/Y mutant retains base recognition specificity at flanking positions (Figure 5). We conclude that the AQ/Y variant behaves similarly to SS/Y and AS/Y and preferentially favors binding to the 8-nt PBE.
 
@@ -117,9 +523,9 @@ Why modulate motif length recognition as a means of differentiating homologous R
 
 ## Materials and methods
 
-## Structural analysis
+### Structural analysis
 
-## Protein expression and purification
+#### Protein expression and purification
 
 PUF-8: A cDNA encoding the PUF-8 RNA-binding domain (residues T171-S525) was cloned into the vector pGEX-6P1 (GE Healthcare), which encodes an N-terminal glutathione S-transferase (GST) tag followed by a TEV protease cleavage site. The vector was transformed into E. coli strain BL21 star (DE3) (Invitrogen), and cultures were grown at 37°C in LB medium supplemented with 100 µg ml−1 ampicillin until the OD600 reached 0.6–0.8. Fusion protein expression was induced by addition of 0.3–0.5 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) and incubation at 25°C for 16–20 hr.
 
@@ -133,7 +539,7 @@ Cell pellets were frozen at −80°C. Upon thawing, cell pellets from each liter
 
 To purify the FBF-2 proteins from the His6-SUMO tag and TEV protease, the cleaved fusion protein was filtered through a 0.22 µM filter and loaded onto a 5 ml Hi-Trap Heparin column (GE Healthcare) in buffer A (20 mM Tris pH 8, 1 mM DTT). FBF-2 proteins eluted at about 38–40% buffer B (20 mM Tris pH 8, 1 M NaCl, 1 mM DTT). The fractions containing the FBF-2 proteins were pooled and concentrated to a volume <1 ml using Amicon Ultra-15 concentrators with a 30 kDa cutoff. Concentrated FBF-2 proteins purified by size selection on a HiLoad 16/60 Superdex 75 column (GE Healthcare) equilibrated in a running buffer containing 20 mM Hepes pH 7.4, 150 mM NaCl, 2 mM DTT. FBF-2 protein was concentrated to >1 mg ml−1 using Amicon Ultra-15 concentrators with a 30 kDa cutoff.
 
-## Crystallization
+### Crystallization
 
 Crystals of a PUF-8:PRE RNA complex were grown by hanging drop vapor diffusion by mixing the protein:RNA complex solution at a 1:2 (v/v) ratio with crystallization solution (3.6 M sodium formate and 10 mM betaine hydrochloride or 3.6 M sodium formate and 3% [w/v] dextran sulfate). Shortly before data collection, crystals were transferred into a series of modified crystallization solutions supplemented with 5%, 10%, and finally 20% (v/v) glycerol, incubating in each solution for 5 min. Crystals were frozen by flash-cooling in liquid nitrogen.
 
@@ -141,46 +547,46 @@ For crystallization, FBF-2 variant proteins were mixed with PBE RNA (5´-UGUAAAU
 
 Crystals of FBF-2 variant complexes with PBE RNA were grown by hanging drop vapor diffusion by mixing the protein:RNA complex solution at a 1:1 (v/v) ratio with optimized crystallization solutions. The crystallization solutions were SS/Y:PBE (100 mM Tris pH 8.6, 15% [w/v] PEG 8000, 8% [v/v] ethylene glycol), AS/Y:PBE (100 mM Tris pH 8.0, 15% [w/v] PEG 8000, 8% [v/v] ethylene glycol), and AQ/Y:PBE (100 mM Tris pH 8.0, 12% [w/v] PEG 8000, 8% [v/v] ethylene glycol). Shortly before data collection, crystals were transferred into a series of modified crystallization solutions supplemented with 5%, 10%, 15%, and finally 20% (v/v) glycerol. Crystals were frozen by flash-cooling in liquid nitrogen.
 
-## X-ray data collection and processing
+### X-ray data collection and processing
 
 Diffraction data for PUF-8 were collected from crystals at 100 K using a home X-ray source (Rigaku Micromax-007HF X-ray generator with Saturn 92 CCD detector, wavelength 1.5418 Å, NIH/NIEHS). Data were indexed and scaled with HKL2000 (Otwinowski and Minor, 1997), and converted to structure factors using SCALEPACK2MTZ from the CCP4i software package (CCP4 (Collaborative Computational Project, Number 4, 1994). Data collection and processing statistics are shown in Table 1.
 
 Diffraction data for FBF-2 variants were collected from crystals at 100 K at the SER-CAT beamline 22-ID or 22-BM at the Advanced Photon Source, Argonne National Laboratory. Data were indexed and scaled with HKL2000 (Otwinowski and Minor, 1997), and converted to structure factors using SCALEPACK2MTZ from the CCP4i software package (CCP4 (Collaborative Computational Project, Number 4, 1994). Data collection and processing statistics are shown in Table 1.
 
-## Crystal structure determination and refinement
+### Crystal structure determination and refinement
 
-## PUF-8
+#### PUF-8
 
 A crystal structure of the PUF-8:PBE RNA complex was determined by molecular replacement using the crystal structure of the Pumilio-homology domain of human PUM1 (PDB 1M8Y, 45% sequence identity) as the initial model (Wang et al., 2002). The initial structure determination was performed in 2008. MolRep from the CCP4i software package (CCP4 (Collaborative Computational Project, Number 4, 1994) was used to correct the initial model by alignment and find the three copies of PUF-8 in each asymmetric unit. PHASER from the CCP4i software package (CCP4 (Collaborative Computational Project, Number 4, 1994) was used to calculate initial phases. CNS was then used to refine the initial model at 50–2.6 Å resolution, including rigid body refinement, a simulated annealing at 5000 K to reduce model bias, grouped and individual temperature factor refinements as well as energy minimization (Brünger and Rice, 1997). O was used for manual rebuilding (Jones et al., 1991). Electron density for the bound RNA was visible in the initial electron density map, but the RNA was built at a later refinement stage when the electron density became continuous. The final model of the PUF-8:PBE RNA complex comprises residues D174 to L511 and nucleotides U1 to A8. An N-terminal glycine residue encoded by the TEV cleavage site, N-terminal residues TTT (3-5) and C-terminal residues FQKPAVMS (518-525) were not included in the structure due to poor electron density at the N- and C-termini. Phenix.Refine was employed for addition of water molecules and TLS refinement (Afonine et al., 2005). Additional refinement and model building was performed with COOT and Phenix (Adams 2002, Emsley and Cowtan 2004). Refinement statistics are shown in Table 1. For each structure, all φ-ψ torsion angles are within allowed regions of the Ramachandran plot and 98% are in the most favored regions. All superpositions were calculated using SUPERIMPOSE from the CCP4i software package (Collaborative Computational Project, Number 4, 1994). Figures were prepared with PyMol (Schrödinger) (DeLano, 2002).
 
-## FBF
+#### FBF
 
 Crystal structures of the FBF-2 mutants in complex with PBE RNA were determined by molecular replacement using the crystal structure of FBF-2:FBE (PDB ID:3K5Q) as the search model with Phaser. Iterative model building was done with COOT and Phenix (Adams 2002, Emsley and Cowtan 2004). The final models of the FBF-2:PBE RNA complexes comprise residues L168 to S569 and nucleotides U1 to A8. The density for nucleotide A8 was weak in the structure of the SS/Y mutant, so it was not modeled. Refinement statistics are shown in Table 1.
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
 Equilibrium dissociation constants and percentage of active protein were determined as described previously 13. Briefly, 100 pM of synthetic RNA (Dharmacon), 32P 5´-end-labeled using T4 polynucleotide kinase, was incubated with a range of FBF-2 protein concentrations in 10 mM Hepes (pH 7.4), 50 mM NaCl, 0.1 mg ml−1 BSA, 0.01% (v/v) Tween-20, 0.1 mg ml−1 yeast tRNA (Ambion), 1 mM EDTA, 1 mM DTT for 1 hr at room temperature. Loading dye (4 µl of 2.5% Ficoll 400 [v/v], 0.05% bromophenol blue) was added to each 20 µl reaction before loading 10 µl on a pre-run non-denaturing 10% TBE-polyacrylamide gel. The apparent dissociation constants were calculated using GraphPad Prism (Graphpad LLC) by fitting data from at least three independent experiments using non-linear regression with a one-site, specific binding model. The dissociation constants in Table 2 were adjusted based on the percentage of active protein in each preparation (PUF-8, 78%; FBF-2 WT, 80%; SS/Y, 47%, SS/R, 69%, AQ/Y, 75%; AS/Y, 64%).
 
-## Screening
+### Screening
 
 A randomized library was generated through amplification of an oligonucleotide encoding R5 by PCR (template: CCGTCAGATTTGTTCTGATAAGTATGGGNNNNNNGTTGTGNNNACTATTATCGAAAAGCTCACTGCTGA; forward primer: CCACCCCAGAGCACCTCCGTCAGATTTGTTCTGATAAGTAT; reverse primer: CAACGTTCATTGAATCAGCAGTGAGCTTTTCGATAA). The resulting product encodes randomized amino acid residues at the edge-on and stacking positions of R5 (RQICSDKYGXXVVXTIIEKLTA). A linear vector encoding FBF-2 fused to the GAL4 activation domain was generated by PCR (Forward primer: CCCATACTTATCAGAACAAATCTGACGG; Reverse primer: ACTATTATCGAAAAGCTCACTGCTGA) (Hook et al., 2005). The vector was combined with the insert at a 1:3 molar ratio and subjected to micro-homology guided in vitro recombination (Gibson et al., 2009). After library generation, screening was conducted in a modified version of YBZ-1 (pLexA Aga2p::10xHA). Yeast cells were co-transformed with plasmids encoding FBF-2 mutants and the PBE expressed from p3HR2 (Bernstein et al., 2002). Transformants were plated on selective media lacking histidine, uracil, tryptophan, and leucine. Colonies were re-suspended in TBST (Tris-buffered saline containing 0.05% [v/v] Tween-20) and subjected to magnetic sorting using anti-HA magnetic beads (cat. 88836, Thermo Fisher) equilibrated in TBST. After incubation at room temperature for 30 min, cells were collected by placing tubes on a magnetic stand and the supernatant was discarded. The beads were washed twice with 200 μl of TBS-T, mixed and collected by placing on a magnetic stand. The beads were re-suspended in sterile water and plated on yeast selective media agar.
 
-## Yeast-three hybrid assays
+### Yeast-three hybrid assays
 
 YBZ-1 was co-transformed with pGADT7 plasmids encoding FBF-2 (residues 121–632) and PUF-8 (127–519) fused to Gal4 (Bernstein et al., 2002). Mutant RNAs were expressed using the p3HR2 vector. Luminescence data were collected with the β-Glo reagent (Promega) and measured using a 96-well Tecan plate reader (Tecan).
 
-## Genome editing
+### Genome editing
 
 N2 young adult worms were injected with the following: 3.0 μL Cas9 (61 μM) (IDT cat #: 1074181), 3.0 μL duplexed 100 μM tracrRNA (IDT cat #: 1072533), 100 μM crRNA guideRNA, (IDT cat #: 1074181), and 2.0 μL of each 100 μM AS/Y and 100 μM SS/Y repair oligos (IDT). F1 progeny were cloned into individual liquid culture wells in 96 well plates. F2 and F3 progeny were screened via PCR and using CEL1 (Lo et al., 2013). CEL1-positive candidates were selected for homozygotes and sequenced to identify molecular lesions. The guide RNA sequence was 5´-AGATTTGTTCTGATAAGTAT-3´. The AS/Y repair oligonucleotide sequence was 5´-cctccgtcagatttgttctgataagtatggc GCG TAT gttgtg TCC actattatcgaaaagctcactgctg-3´. The SS/Y repair oligonucleotide sequence was 5´-cctccgtcagatttgttctgataagtatggc TCA TAC gttgtg TCA actattatcgaaaagctcactgctg-3´. Strain designations were as follows: wild type N2, glp-1(gf): GC833 glp-1(ar202), and AQ/Y: TWL013 fbf-2(lot14).
 
-## RNAi
+#### RNAi
 
 puf-8 RNAi vectors and feeder bacteria were obtained from Dharmacon (cat. numbers: RCE1182; ORF ID: C30G12.7). Bacteria were streaked onto selective media containing ampicillin (50 μg ml−1) and tetracycline (12.5 μg ml−1). Single colonies were isolated and grown in 3 ml Luria broth with ampicillin (50 μg ml−1) at 37°C in a shaker. Cultures were concentrated prior to seeding on Nematode Growth Medium (NGM) plates. Gravid worms were synchronized by bleaching with 5 ml Alkaline Hypochlorite Solution (1 ml Sodium hypochlorite ~3%, 0.5 ml 5 M sodium hydroxide solution, and 3.5 ml water). Bleached eggs (F0 generation) were moved to the RNAi plates and hatched at ambient temperature prior to transfer and growth at 15°C. The F1 generation was allowed to reach late L4 stage prior to dissection and immunological analysis.
 
-## Immunofluorescence
+### Immunofluorescence
 
 F1 adult worms were picked from RNAi/control plates and washed with 1 ml of 0.25 mM Levamisole (anthelmintic chemical) in wash buffer (1X phosphate-buffered saline with 1% (v/v) Tween20). Dissected gonads were transferred to a microcentrifuge tube and spun down at 8000 rpm for 2–3 s (all spinning steps were performed at this speed for 2–3 s). The supernatant was removed carefully, and extruded gonads were fixed with 200 μl 3% (v/v) formaldehyde for 30–60 min at room temperature. The microcentrifuge tubes were spun again, the supernatant was removed, and the gonads were then treated with 100% methanol and incubated at −20°C for at least 10 min. The microcentrifuge tubes were spun, supernatant was discarded and 100 μl of 10 mM sodium citrate buffer, that contained 0.05% (v/v) Tween20 adjusted to pH 6.0, was added for antigen retrieval. The gonads were incubated in sodium citrate buffer for 30 min, spun down and supernatant was removed. Following this, 100 μl of 3% (w/v) bovine serum albumin (BSA) in wash buffer was added to the microcentrifuge tubes for 30 min or longer to block non-specific staining, spun down and removed. Primary antibody, rabbit α-PHH3 (sc-8656-R Santa Cruz, 1:1000 dilution) was then added to the gonad pellet and incubated overnight at 4°C for efficient staining. The gonads were washed with 200 μl wash buffer three times for 30 min (10 min interval) and incubated with fluorescent Cy3-conjugated secondary α-Rabbit antibody (A10520 Invitrogen 1:2000 dilution), for 2 hr at room temperature. The gonads were washed with 200 μl wash buffer and incubated with 100 ng ml−1 4,6-diamidino-2-phenylindole hydrochloride (DAPI, D9542 Millipore Sigma) in PBS for 10 min to stain DNA. The gonads were washed three times for 30 min (10 min interval) and 10–20 μl supernatant was left behind in the microcentrifuge tube. Fluorescent images were generated using an Olympus FV3000RS confocal laser scanning microscope. Images were analyzed using FLUOVIEW FV3000 software.
 
-## Immunoblots
+### Immunoblots
 
 Yeast cells were lysed by ultrasonication (Qsonica model number Q125, 25 Watts for 60 s with a 3 s interval after 3 s of sonication) in lysis buffer (50 mM Tris, pH 8, 500 mM NaCl, 1 mM EDTA pH 8.0, 5 mM DTT, 20 mM β-mercaptoethanol and 0.2% NP-40) containing protease inhibitors (Pierce protease inhibitor mini tablets, 1 tablet per 10 ml solution, ThermoScientific, cat. number A32955 and Phenylmethylsulfonyl flouride at a working concentration of 1 mM, Sigma-Aldrich, cat. number 88H0793). Clairified lysates was obtained by aspiration of the supernatant following by centrifugation at 14,000 × g for 20 min at 4°C. Samples were denatured by boiling in 2 × SDS page loading buffer (2x Laemmli Sample Buffer, Bio-Rad, cat. number 1610737) and separated on 10% SDS-PAGE gels before transferring to Immobilon-P membranes (Millipore). The membrane was blocked in 5% milk for 1 hr at room temperature prior to overnight incubation with HA antibody (1:1000 dilution; Anti-HA.11 epitope tag antibody, BioLegend, cat. number MMS-101R) overnight at 4°C. The secondary goat anti-mouse antibody conjugated to horseradish peroxidase (1:2000; Goat anti-mouse IgG (H + L), HRP conjugate, Proteintech, cat. number SA00001-1). Peroxidase activity was detected using Pierce ECL Western Blotting Substrate (Thermo Fisher) on ChemiDoc Touch Imaging System, Bio-Rad). The blot was stripped in Restore Plus western blot stripping buffer (Thermo Fisher, cat. number SL258473) according to the manufacturer’s instructions and re-probed with a glyceraldehyde 3-phosphate dehydrogenase (GAPDH) antibody (1:2000 dilution; GAPDH antibody, Proteintech, cat. number 10494–1-AP) and goat anti-rabbit secondary antibody for GAPDH expression detection (1:10,000 dilution; Goat anti-rabbit IgG (H + L), HRP conjugate, Proteintech, cat. number SA00001-2).

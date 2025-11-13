@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05dxps055 Division of Chemistry and Chemical Engineering, California Institute of Technology Pasadena United States
-2. https://ror.org/05dxps055 Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States
+1. Division of Chemistry and Chemical Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+2. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
 
 † Corresponding author
 
@@ -26,21 +26,51 @@ Among the numerous biomolecular transactions investigated using fixed-cell imagi
 
 ## Results
 
-## Fixation enhances the LLPS appearance of FET family proteins
+### Fixation enhances the LLPS appearance of FET family proteins
 
 To investigate the effect of PFA fixation on the appearance of LLPS, we first compared confocal fluorescence images of live and fixed U2OS cells that transiently express an IDR tagged with EGFP and a nuclear localization sequence (NLS). We focused on the FET family protein IDRs (AA2-214 of FUS, AA47-266 of EWS, and AA2-205 of TAF15) that are reported to undergo putative LLPS in cells upon overexpression (Altmeyer et al., 2015; Chong et al., 2018; Wang et al., 2018). Figure 1, Video 1, and Figure 1—figure supplement 1 compare the same cells before and after treatment of 4% PFA for 10 min unless otherwise noted, a typical condition utilized for fixed-cell imaging techniques such as immunofluorescence. At high enough expression levels, all three IDRs are able to form discrete and spherical puncta in the live cell nucleus, which show fusion and fission behaviors and are thereby consistent with LLPS droplets (Alberti et al., 2019; Banani et al., 2017). Interestingly, after fixation, the puncta of all three IDRs appear to increase in their numbers, sizes, and contrast compared with the dilute phase. In particular, PFA fixation was able to artificially turn a cell with EGFP-EWS(IDR) homogeneously distributed in the nucleus without any puncta into one with many discrete puncta (Figure 1). We quantified the fixation-induced changes of LLPS appearance by calculating three parameters from the fluorescence images of cells, including the number of puncta, surface roughness, and punctate percentage, and found a significant increase in all three parameters after fixation (Figure 1D–F, Figure 1—source data 1). The number of puncta and punctate percentage (percentage of intranuclear fluorescence intensity in the concentrated phase) are indicators of the propensity to phase separate (Berry et al., 2015). The surface roughness (standard deviation of pixel intensities across the nucleus) quantifies the uneven distribution of a fluorescently labeled protein in the nucleus, allowing for detection of puncta appearance or disappearance without the need for an algorithm to identify individual puncta in the cell.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig1-v3.jpg)
+
+**Figure 1.:** (A) EGFP-EWS(IDR), (B) EGFP-FUS(IDR), and (C) EGFP-TAF15(IDR) are transiently expressed in U2OS cells and imaged before and after fixation using confocal fluorescence microscopy. A schematic of each protein construct is shown on the left. A maximum z-projection of a representative live cell expressing its respective protein is shown next to that of the same cell after 10 min of fixation with 4% paraformaldehyde (PFA). The inserts show a zoomed-in region of the cell. (D–F) Quantification of percentage change of LLPS parameters after fixation. The values are averaged from 34 (D), 17 (E), or 24 (F) cells measured in 3 (D), 2 (E), or 2 (F) independent transfection and imaging sessions. Error bars represent standard errors. Asterisks indicate a significant difference compared with 0 (p<0.05, Wilcoxon signed-rank test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The expression level of EGFP-EWS(IDR) here is significantly higher than in Figure 1A. After paraformaldehyde (PFA) fixation, additional puncta appear, and pre-existing puncta get bigger and brighter relative to the nucleoplasm, consistent with the trend shown in Figure 1A.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Fixation is complete in ~100 s. The green scattered plot represents actual data points, and the blue line plot is to guide the eye.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** We show the percentage change of LLPS parameters after 10 min of fixation. The values are averaged from 10 (0% PFA, PBS buffer only), 20 (1% PFA), 20 (2% PFA), 34 (4% PFA), or 20 (8% PFA) cells. Error bars represent standard errors. Asterisks indicate a significant difference of the values compared with 0 (p<0.05, Wilcoxon signed-rank test). All the tested concentrations of PFA except for 0% PFA (PBS only) result in a significant change of the LLPS parameters. A quantitative comparison between the results at different PFA concentrations is difficult due to increased fluorescence quenching effects at higher concentrations of PFA. We thus focus on comparing the percentage change of LLPS parameters with 0 and with that upon treatment of PBS only.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** Adding 0.2% GA to 4% PFA does not reduce the fixation artifact. The fixed-cell image was taken 10 min after PFA/GA treatment. Percentage change of LLPS parameters after PFA/GA fixation is significantly different from 0, but not significantly different from the percentage change upon PFA only fixation (Figure 1D). The values here are averaged from 20 cells measured in one transfection and imaging session. Error bars represent standard errors. Asterisks indicate a significant difference compared with 0 (p<0.05, Wilcoxon signed-rank test).
+
+![Video 1.](https://cdn.elifesciences.org/articles/79903/elife-79903-video1.mp4.jpg)
 
 We next tested how the fixation artifact is dependent on the length of PFA treatment, PFA concentration, and the type of fixatives. We performed real-time imaging of live cells expressing EGFP-FUS(IDR) and found that their morphology and LLPS appearance start to change immediately upon PFA treatment and reach a steady state after ~100 s of treatment (Video 1, Figure 1—figure supplement 2). We treated cells expressing EGFP-EWS(IDR) with different concentrations of PFA (1, 2, 4, and 8%) and observed statistically significant changes to the above three LLPS-describing parameters upon fixation at all the concentrations (Figure 1—figure supplement 3). PFA in combination with glutaraldehyde (GA) has been shown to reduce fixation artifacts in imaging the distribution of cell membrane receptors (Stanly et al., 2016). However, we still observed statistically significant fixation-induced changes to the apparent LLPS behavior of EGFP-EWS(IDR) using 4% PFA and 0.2% GA in combination (Figure 1—figure supplement 4).
 
 We next compared the intracellular distribution of TAF15(IDR) tagged with different fluorescent tags, including, EGFP, DsRed2, and HaloTag, before and after fixation with 4% PFA. The LLPS behavior of DsRed2-TAF15(IDR) is enhanced upon fixation like EGFP-TAF15(IDR) (Figure 2A), but the enhancement has a different appearance. Whereas there is not a significant change to the large preformed DsRed2-TAF15(IDR) puncta, thousands of smaller puncta emerge in the dilute phase within the nucleus (Figure 2B). In contrast, Halo-TAF15(IDR) displays a diminished LLPS behavior after fixation, with its puncta becoming smaller and dimmer or completely disappearing (Figure 2C, Figure 2—figure supplement 1). Quantification of the number of puncta, surface roughness, and punctate percentage of the TAF15(IDR) LLPS systems before and after fixation further confirmed these observations (Figure 2D–F, Figure 2—source data 1). The fact that different phase-separating proteins can have bifurcating behaviors upon fixation is interesting. While it is known that EGFP and DsRed2 can dimerize and HaloTag cannot (Costantini et al., 2012; Sacchetti et al., 2002), it is unclear whether and how the dimerization potential might contribute to the proteins’ bifurcating responses to PFA fixation. We note that the fixation-induced changes to LLPS appearance can affect the physical characterization of in vivo LLPS systems based on fixed-cell imaging, such as the Gibbs energy of transfer between dilute and concentrated phases (Riback et al., 2020) and how far from the critical concentration a system is (Bracha et al., 2018), potentially affecting the interpretation of the functional role of LLPS in cellular processes. Moreover, the fact that PFA fixation can artificially promote puncta formation even in cells without detectable puncta in the live condition presents an important caveat in fixation-based approaches that have been commonly used for characterizing LLPS under physiological conditions, for example, immunofluorescence.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig2-v3.jpg)
+
+**Figure 2.:** U2OS cells expressing (A) EGFP-TAF15(IDR), (B) DsRed2-TAF15(IDR), and (C) Halo-TAF15(IDR), ligated with the JFX549 Halo ligand, are imaged using confocal fluorescence microscopy before and after 10 min of fixation with 4% PFA. Schematics of the protein constructs are shown on the left. Live- and fixed-cell images are compared. (D–F) Quantification of LLPS parameters after fixation. The values are averaged from 24 (D), 23 (E), or 10 (F) cells measured in 2 (D), 2 (E), or 3 (F) independent transfection and imaging sessions. Error bars represent standard errors. Asterisks indicate a significant difference compared with 0 (p<0.05, Wilcoxon signed-rank test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Two U2OS cells expressing Halo-TAF15(IDR) are side-by-side in the same field of view. Puncta formed in live-cell nuclei disappeared after fixation.
+
 Furthermore, to examine whether all phase-separating proteins show the fixation artifact, we compared live- and fixed-cell images of EGFP-tagged full-length FUS (FUS(FL)). Full-length FUS is reported to have a greater LLPS propensity in vitro than its IDR alone (Wang et al., 2018). We found that EGFP-FUS(FL) overexpressed in live U2OS cells forms many small puncta throughout the nucleus, and we did not observe a significant change of this behavior after PFA fixation (Figure 3A, Figure 3—source data 1). We also fused Halo-tagged TAF15(IDR) to FTH1 that forms a 24-mer (Bellapadrona and Elbaum, 2014 and Bracha et al., 2018) to make an artificial protein with a high LLPS propensity. We found that TAF15(IDR)-Halo-FTH1 overexpressed in live U2OS cells forms large droplet-like puncta and the appearance of LLPS does not significantly change after PFA fixation (Figure 3B, Figure 3—source data 1). In addition, we looked into a native IDR-containing protein, EWS::FLI1, an oncogenic TF causing Ewing sarcoma (Grünewald et al., 2018) and known to form local high-concentration hubs at target genes associated with GGAA microsatellites (Chong et al., 2018). Although there is no convincing evidence that EWS::FLI1 undergoes LLPS under physiological conditions, the formation of its hubs is mediated by the homotypic multivalent interactions of EWS(IDR) within the protein. Excessive levels of such multivalent interactions often result in LLPS (Li et al., 2012). We previously Halo-tagged endogenous EWS::FLI1 in an Ewing sarcoma cell line A673 using CRISPR/Cas9-mediated genome editing (Chong et al., 2018). Here, we compared live and fixed A673 cell images of endogenous EWS::FLI1-Halo and did not observe a significant difference in its distribution (Figure 3C, Figure 3—source data 1). This result suggests that PFA fixation does not change the intracellular distribution of all proteins that have a LLPS potential.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig3-v3.jpg)
 
-**Figure 3.:** U2OS cells expressing (A) EGFP-FUS(FL) and (B) TAF15(IDR)-Halo-FTH1, and (C) an A673 cell expressing endogenous EWS::FLI1-Halo are imaged using confocal fluorescence microscopy before and after 10 min of fixation with 4% paraformaldehyde (PFA). Halo-tagged proteins are ligated with the JFX549 Halo ligand before imaging. Schematics of the protein constructs are shown on the left. Live- and fixed-cell images are compared. (D–F) Quantification of puncta parameters after fixation. The values are averaged from 21 (D), 16 (E), or 15 (F) cells measured in 1 (D), 4 (E), or 2 (F) independent transfection and imaging sessions. Error bars represent standard errors. NS: not significant difference compared with 0 (p<0.05, Wilcoxon signed-rank test). None of the examined proteins show significant changes in their liquid–liquid phase separation (LLPS) or hub appearance in the fixed-cell image as compared to the live-cell image.Figure 3—source data 1.
+**Figure 3.:** U2OS cells expressing (A) EGFP-FUS(FL) and (B) TAF15(IDR)-Halo-FTH1, and (C) an A673 cell expressing endogenous EWS::FLI1-Halo are imaged using confocal fluorescence microscopy before and after 10 min of fixation with 4% paraformaldehyde (PFA). Halo-tagged proteins are ligated with the JFX549 Halo ligand before imaging. Schematics of the protein constructs are shown on the left. Live- and fixed-cell images are compared. (D–F) Quantification of puncta parameters after fixation. The values are averaged from 21 (D), 16 (E), or 15 (F) cells measured in 1 (D), 4 (E), or 2 (F) independent transfection and imaging sessions. Error bars represent standard errors. NS: not significant difference compared with 0 (p<0.05, Wilcoxon signed-rank test). None of the examined proteins show significant changes in their liquid–liquid phase separation (LLPS) or hub appearance in the fixed-cell image as compared to the live-cell image.
 
-## Switching between enhancing and diminishing the LLPS appearance depends on fixation kinetics
+### Switching between enhancing and diminishing the LLPS appearance depends on fixation kinetics
 
 To understand what factors are underlying the diverging fixation artifact of in vivo LLPS systems, we performed the above-described fixation imaging assay with glycine added to live cells prior to PFA fixation. Glycine is highly reactive with formaldehyde and is commonly used to quench the formation of protein–protein cross-linked complexes by quickly forming protein–glycine and glycine–glycine cross-linked adducts instead (Hoffman et al., 2015). We thus utilized additional glycine to generate a competitive fixation reaction in the cell against protein–protein fixation. We found that adding 25 mM glycine to live U2OS cells that overexpress DsRed2-TAF15(IDR) increases the starting punctate percentage from 18 ± 1.92 to 36 ± 3.82% (quantified from 23 cells), indicating an increase in the degree of LLPS. Although the underlying mechanism of such increase is unclear, we speculate this might be because hydrophobic intermolecular contacts that play an important role in TAF15(IDR) LLPS (Patel et al., 2017) are enhanced by the presence of hydrophobic glycine. Importantly, addition of glycine dramatically reversed the fixation effect on the LLPS behavior of DsRed2-TAF15(IDR). Whereas PFA fixation in the absence of additional glycine enhances the LLPS appearance (Figure 2B, Figure 4A), in the presence of 25 mM glycine, fixation causes many of the smaller puncta formed in live cells to disappear completely and larger, preformed puncta to turn into a ‘donut’ shape, with the outline of the puncta still visible but the interior devoid of the protein (Figure 4B). None of these fixed-cell images are good representations of live cells, but it appears that glycine affects the critical parameters that control the divergent artifact of PFA fixation. The observation that the appearance of droplet-like puncta in fixed cells can be dramatically modified by the presence of glycine competition emphasizes that the kinetics of fixation can play an essential role in the appearance of LLPS in fixed cells.
 
@@ -48,29 +78,35 @@ To understand what factors are underlying the diverging fixation artifact of in 
 
 **Figure 4.:** (A) Fixing U2OS cells that express DsRed2-TAF15(IDR) in the absence of additional glycine causes many small puncta to appear. (B) Fixing cells in the presence of 25 mM additional glycine results in a reduction in the number of puncta, with large puncta forming ‘donut’ shapes. In both (A) and (B), cells are imaged using confocal fluorescence microscopy before and after 10 min of fixation with 4% paraformaldehyde (PFA).
 
-## Kinetic modeling explains the fixation artifact
+### Kinetic modeling explains the fixation artifact
 
-Given our observation that fixation kinetics are critical to the appearance of LLPS in fixed cells, we numerically simulated a four-state kinetic model (Hoops et al., 2006). As shown in Figure 5A and B, the model focuses on one protein of interest (POI), which before fixation can either be in state S1 – ‘in puncta’ or S2 – ‘out of puncta.’ Because POI molecules are dynamically exchanged in and out of puncta, the in-puncta percentage (punctate percentage) of POI is at an equilibrium determined by the ratio of the binding rate, k1 , and the dissociation rate, k2 (Pollard, 2010). These are the average exchange rates between S1 and S2 and do not concern the potential spatial inhomogeneity in the rates at the molecular level. For example, individual POI molecules at the surface and interior of a punctum might dissociate with different rates, but our model does not differentiate these molecules. We define the moment that PFA is added as time zero (t=0) and introduce two fixed states of POI, which are S3 (POI cross-linked to proteins within puncta) with a fixation rate of k3 and S4 (POI cross-linked to proteins outside puncta) with a fixation rate of k4 . Because fixing to both S3 and S4 states are irreversible, when the cell is fully fixed long after addition of PFA (t=∞), there is no longer any concentration in S1 and S2 . The fixation artifact of an LLPS system can be represented as the absolute change in punctate percentage, or the ratio of in-puncta POI to total POI, after fixation:(1)ΔPunctate Percentage=Final Punctate Percentage−Initial Punctate Percentage=([S3 ]t=∞[S3 ]t=∞+[S4 ]t=∞−[S1 ]t=0[S1 ]t=0+[S2 ]t=0)∗100
+Given our observation that fixation kinetics are critical to the appearance of LLPS in fixed cells, we numerically simulated a four-state kinetic model (Hoops et al., 2006). As shown in Figure 5A and B, the model focuses on one protein of interest (POI), which before fixation can either be in state $S_{1}$ – ‘in puncta’ or $S_{2}$ – ‘out of puncta.’ Because POI molecules are dynamically exchanged in and out of puncta, the in-puncta percentage (punctate percentage) of POI is at an equilibrium determined by the ratio of the binding rate, $k_{1}$ , and the dissociation rate, $k_{2}$ (Pollard, 2010). These are the average exchange rates between $S_{1}$ and $S_{2}$ and do not concern the potential spatial inhomogeneity in the rates at the molecular level. For example, individual POI molecules at the surface and interior of a punctum might dissociate with different rates, but our model does not differentiate these molecules. We define the moment that PFA is added as time zero ($t=0$) and introduce two fixed states of POI, which are $S_{3}$ (POI cross-linked to proteins within puncta) with a fixation rate of $k_{3}$ and $S_{4}$ (POI cross-linked to proteins outside puncta) with a fixation rate of $k_{4}$ . Because fixing to both $S_{3}$ and $S_{4}$ states are irreversible, when the cell is fully fixed long after addition of PFA ($t=∞$), there is no longer any concentration in $S_{1}$ and $S_{2}$ . The fixation artifact of an LLPS system can be represented as the absolute change in punctate percentage, or the ratio of in-puncta POI to total POI, after fixation:
+
+$$
+ΔPunctate Percentage=Final Punctate Percentage−Initial Punctate Percentage=(\frac{[S_{3 }]_{t=∞}}{[S_{3 }]_{t=∞}+[S_{4 }]_{t=∞}}−\frac{[S_{1 }]_{t=0}}{[S_{1 }]_{t=0}+[S_{2 }]_{t=0}})∗100
+$$
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig5-v3.jpg)
 
-**Figure 5.:** (A) Schematic that describes fixation of a phase-separating protein of interest (POI) in the cell. (B) The four-state kinetic model with associated kinetic rates connecting the different states. (C) Simulation of the fixation artifact as a function of the starting punctate percentage and the relative in-puncta fixation rate  , assuming the overall fixation rate as well as overall protein binding and dissociation rates are constant (k3:k4, k3+k4=0.2). Faster in-puncta fixation causes liquid–liquid phase separation (LLPS) behavior to be over-represented (blue). Slower in-puncta fixation causes LLPS behavior to be under-represented (red). (k1+k2=1D) Simulation of the fixation artifact as a function of the starting punctate percentage and the relative overall fixation rate , assuming individual fixation rates are constant ((k3+k4):(k1+k2), k3=1). Fast overall fixation rate compared with protein–protein interaction dynamics decreases the fixation artifact. (k4=2C) and (D) were simulated over starting punctate percentages ranging from 0% (, k1=0) to 100% (k2=1, k1=1). Level curves are marked on (k2=0C) and (D).
+**Figure 5.:** (A) Schematic that describes fixation of a phase-separating protein of interest (POI) in the cell. (B) The four-state kinetic model with associated kinetic rates connecting the different states. (C) Simulation of the fixation artifact as a function of the starting punctate percentage and the relative in-puncta fixation rate $k_{3}:k_{4}$ , assuming the overall fixation rate as well as overall protein binding and dissociation rates are constant ($k_{3}+k_{4}=0.2$, $k_{1}+k_{2}=1$). Faster in-puncta fixation causes liquid–liquid phase separation (LLPS) behavior to be over-represented (blue). Slower in-puncta fixation causes LLPS behavior to be under-represented (red). (D) Simulation of the fixation artifact as a function of the starting punctate percentage and the relative overall fixation rate $(k_{3}+k_{4}):(k_{1}+k_{2})$, assuming individual fixation rates are constant ($k_{3}=1$, $k_{4}=2$). Fast overall fixation rate compared with protein–protein interaction dynamics decreases the fixation artifact. (C) and (D) were simulated over starting punctate percentages ranging from 0% ($k_{1}=0$, $k_{2}=1$) to 100% ($k_{1}=1$, $k_{2}=0$). Level curves are marked on (C) and (D).
 
-We hypothesized that the balance between interaction and fixation dynamics in a LLPS system causes the fixation artifact and tested the hypothesis by calculating Δ Punctate Percentage as a function of various kinetic and equilibrium parameters.
+We hypothesized that the balance between interaction and fixation dynamics in a LLPS system causes the fixation artifact and tested the hypothesis by calculating $Δ Punctate Percentage$ as a function of various kinetic and equilibrium parameters.
 
-It is well-established that the dilute and concentrated phases of an LLPS system have different protein composition and concentrations (Currie and Rosen, 2022; Koga et al., 2011; Nott et al., 2015; Yewdall et al., 2021). The rate of fixation is known to vary with both factors by orders of magnitude, with the timescale of fixation ranging from seconds to hours (Hoffman et al., 2015; Kamps et al., 2019; Metz et al., 2006; Metz et al., 2004). Because protein–protein interactions that drive LLPS are highly dynamic with binding residence times in the range of seconds to tens of seconds (Chong et al., 2018), fixation likely happens with either lower or comparable rates than protein binding and dissociation. We thus first examined whether different fixation rates of POI in and out of puncta can cause a fixation artifact, assuming the overall fixation rates (k3+k4) are slower than protein binding and dissociation, and how the fixation artifact may depend on intrinsic protein–protein interaction equilibrium. Specifically, we calculated ΔPunctate Percentage as a function of the starting punctate percentage and the relative in-puncta fixation rate (k3:k4) when the relative overall fixation rate is constant ((k3+k4):(k1+k2) = 1:5) (Figure 5C). In the scenario where the rate of fixation is the same in and out of the puncta (k3=k4), the live-cell equilibrium is perfectly preserved in fixed cells regardless of the starting punctate percentage (ΔPunctate Percentage~0). However, when one fixation rate is faster than the other, we observe a bifurcating effect. When the fixation rate inside the puncta is greater than outside the puncta (k3 > k4), the fixed cell will have a higher punctate percentage than the live cell, that is, fixation enhances the apparent LLPS behaviors. When the balance is reversed (k4>k3), the fixed cells will have diminished apparent LLPS behaviors than in the live cell. For cases where the starting punctate percentage is near 0% or 100% due to significantly different POI binding and the dissociation rates (k2≫k1 or k1≫k2), no significant change to LLPS appearance happens after fixation (ΔPunctate Percentage~0). In short, our simulation suggests that having unequal fixation rates in and out of puncta is necessary to cause a fixation artifact of LLPS systems and the artifact is dependent on the punctate percentage of POI in living cells.
+It is well-established that the dilute and concentrated phases of an LLPS system have different protein composition and concentrations (Currie and Rosen, 2022; Koga et al., 2011; Nott et al., 2015; Yewdall et al., 2021). The rate of fixation is known to vary with both factors by orders of magnitude, with the timescale of fixation ranging from seconds to hours (Hoffman et al., 2015; Kamps et al., 2019; Metz et al., 2006; Metz et al., 2004). Because protein–protein interactions that drive LLPS are highly dynamic with binding residence times in the range of seconds to tens of seconds (Chong et al., 2018), fixation likely happens with either lower or comparable rates than protein binding and dissociation. We thus first examined whether different fixation rates of POI in and out of puncta can cause a fixation artifact, assuming the overall fixation rates ($k_{3}+k_{4}$) are slower than protein binding and dissociation, and how the fixation artifact may depend on intrinsic protein–protein interaction equilibrium. Specifically, we calculated $ΔPunctate Percentage$ as a function of the starting punctate percentage and the relative in-puncta fixation rate ($k_{3}:k_{4}$) when the relative overall fixation rate is constant ($(k_{3}+k_{4}):(k_{1}+k_{2})$ = 1:5) (Figure 5C). In the scenario where the rate of fixation is the same in and out of the puncta ($k_{3}=k_{4}$), the live-cell equilibrium is perfectly preserved in fixed cells regardless of the starting punctate percentage ($ΔPunctate Percentage~0$). However, when one fixation rate is faster than the other, we observe a bifurcating effect. When the fixation rate inside the puncta is greater than outside the puncta ($k_{3}$ > $k_{4}$), the fixed cell will have a higher punctate percentage than the live cell, that is, fixation enhances the apparent LLPS behaviors. When the balance is reversed ($k_{4}>k_{3}$), the fixed cells will have diminished apparent LLPS behaviors than in the live cell. For cases where the starting punctate percentage is near 0% or 100% due to significantly different POI binding and the dissociation rates ($k_{2}≫k_{1}$ or $k_{1}≫k_{2}$), no significant change to LLPS appearance happens after fixation ($ΔPunctate Percentage~0$). In short, our simulation suggests that having unequal fixation rates in and out of puncta is necessary to cause a fixation artifact of LLPS systems and the artifact is dependent on the punctate percentage of POI in living cells.
 
-Because previous reports have documented that fixation preserves transient interactions worse than stable interactions (Poorey et al., 2013; Schmiedeberg et al., 2009; Teves et al., 2016), we next investigated how fixation rates relative to protein–protein interaction dynamics may impact the observed fixation artifact. Specifically, we calculated ΔPunctate Percentage as a function of both the starting punctate percentage and the relative overall fixation rate, (k3+k4):(k1+k2), assuming a constant relative in-puncta fixation rate (k3:k4=1:2) (Figure 5D). Here, a fast relative overall fixation rate can either be caused by slow protein–protein interaction dynamics (low (k1+k2)) or fast absolute fixation rates (high (k3+k4)). We found when the protein–protein interactions are highly dynamic compared with the overall fixation rates ((k3+k4)≪(k1+k2)), the fixation artifact is the most pronounced as shown by a large value of ΔPunctate Percentage. In contrast, when the protein–protein interactions are stable and less dynamic compared with the overall fixation rate ((k3+k4)≫(k1+k2)), there is a minimal fixation artifact and the punctate percentage in fixed cells is similar to that in living cells (ΔPunctate Percentage ~ 0). In short, our simulation suggests that when the overall fixation rate is fast compared with the dynamics of targeted interactions, fixation artifacts can be minimized even with unequal fixation rates in and out of puncta.
+Because previous reports have documented that fixation preserves transient interactions worse than stable interactions (Poorey et al., 2013; Schmiedeberg et al., 2009; Teves et al., 2016), we next investigated how fixation rates relative to protein–protein interaction dynamics may impact the observed fixation artifact. Specifically, we calculated $ΔPunctate Percentage$ as a function of both the starting punctate percentage and the relative overall fixation rate, $(k_{3}+k_{4}):(k_{1}+k_{2})$, assuming a constant relative in-puncta fixation rate ($k_{3}:k_{4}=1:2$) (Figure 5D). Here, a fast relative overall fixation rate can either be caused by slow protein–protein interaction dynamics (low $(k_{1}+k_{2})$) or fast absolute fixation rates (high $(k_{3}+k_{4})$). We found when the protein–protein interactions are highly dynamic compared with the overall fixation rates ($(k_{3}+k_{4})≪(k_{1}+k_{2})$), the fixation artifact is the most pronounced as shown by a large value of $ΔPunctate Percentage$. In contrast, when the protein–protein interactions are stable and less dynamic compared with the overall fixation rate ($(k_{3}+k_{4})≫(k_{1}+k_{2})$), there is a minimal fixation artifact and the punctate percentage in fixed cells is similar to that in living cells ($ΔPunctate Percentage ~ 0$). In short, our simulation suggests that when the overall fixation rate is fast compared with the dynamics of targeted interactions, fixation artifacts can be minimized even with unequal fixation rates in and out of puncta.
 
-Overall, our kinetic model suggests that the observed fixation artifact of LLPS systems is driven by the interplay of three factors: protein–protein interaction dynamics, the absolute overall fixation rate, and different fixation rates in and out of puncta. Different fixation rates of POI in and out of puncta (k3:k4≠1:1) are required for fixation artifacts to happen and the value of k3:k4 determines whether the LLPS behavior of POI gets over-represented or under-represented in fixed cell images. The intrinsic rates by which POI binds to and dissociates from its puncta impact the magnitude of fixation artifacts by determining both the live-cell equilibrium of LLPS (starting punctate percentage) and the relative overall fixation rate of POI ((k3+k4):(k1+k2)).
+Overall, our kinetic model suggests that the observed fixation artifact of LLPS systems is driven by the interplay of three factors: protein–protein interaction dynamics, the absolute overall fixation rate, and different fixation rates in and out of puncta. Different fixation rates of POI in and out of puncta ($k_{3}:k_{4}\neq1:1$) are required for fixation artifacts to happen and the value of $k_{3}:k_{4}$ determines whether the LLPS behavior of POI gets over-represented or under-represented in fixed cell images. The intrinsic rates by which POI binds to and dissociates from its puncta impact the magnitude of fixation artifacts by determining both the live-cell equilibrium of LLPS (starting punctate percentage) and the relative overall fixation rate of POI ($(k_{3}+k_{4}):(k_{1}+k_{2})$).
 
-## A fast overall fixation rate relative to binding dynamics can minimize fixation artifacts
+### A fast overall fixation rate relative to binding dynamics can minimize fixation artifacts
 
 As discussed above, our model suggests that when the overall fixation rate is fast compared with the dynamics of targeted protein–protein interactions, fixation artifacts can be minimized even with unequal fixation rates in and out of puncta. In order to test this prediction experimentally, we focused on Halo-TAF15(IDR), which exhibits significantly diminished LLPS behavior upon fixation (Figure 2C), and TAF15(IDR)-Halo-FTH1, which does not exhibit a significant fixation artifact (Figure 3B). The fact that fixation of both Halo-TAF15(IDR) and TAF15(IDR)-Halo-FTH1 are completed within 1–2 min suggests comparable overall fixation rates of the two proteins. Thus, our model predicts that TAF15(IDR)-Halo-FTH1 has more stable homotypic interactions than Halo-TAF15(IDR), resulting in a higher relative overall fixation rate of the former than the latter. To test this prediction, we performed live-cell single-molecule imaging of Halo-TAF15(IDR) and TAF15(IDR)-Halo-FTH1 (Video 2) and measured their binding residence times (RTs) at respective droplet-like puncta. Using established single-particle tracking (SPT) analysis (Chong et al., 2018), we found the RTs of TAF15(IDR) and TAF15(IDR)-FTH1 to be 10.23 ± 1.10 and 64.15 ± 11.65 s, respectively (Figure 6, Figure 6—source data 1). This result suggests significantly more stable binding of TAF15(IDR)-FTH1 than TAF15(IDR). Together, these imaging data are consistent with our model’s prediction that a fast overall fixation rate relative to binding dynamics can minimize fixation artifacts.
 
+![Video 2.](https://cdn.elifesciences.org/articles/79903/elife-79903-video2.mp4.jpg)
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/79903/elife-79903-fig6-v3.jpg)
 
-**Figure 6.:** Shown are individual frames from two-color single-molecule movies of (A) Halo-TAF15(IDR) and (B) TAF15(IDR)-Halo-FTH1. Each protein was labeled with a lower concentration of a photoactivatable dye for SPT (20 nM PA-JF646, magenta) and a higher concentration of non-photoactivatable dye for visualization of the droplet-like puncta (100 nM JFX549, yellow). A white dashed line outlines the nucleus. (C) The mean residence time of TAF15(IDR)-Halo-FTH1 in its puncta is significantly longer than that of Halo-TAF15(IDR) in its puncta. The value for each protein is averaged from 20 cells measured in three independent transfection and imaging sessions. Error bars represent standard errors. Asterisk indicates a significant difference between the two proteins (p<0.05, Wilcoxon rank-sum test).Figure 6—source data 1.
+**Figure 6.:** Shown are individual frames from two-color single-molecule movies of (A) Halo-TAF15(IDR) and (B) TAF15(IDR)-Halo-FTH1. Each protein was labeled with a lower concentration of a photoactivatable dye for SPT (20 nM PA-JF646, magenta) and a higher concentration of non-photoactivatable dye for visualization of the droplet-like puncta (100 nM JFX549, yellow). A white dashed line outlines the nucleus. (C) The mean residence time of TAF15(IDR)-Halo-FTH1 in its puncta is significantly longer than that of Halo-TAF15(IDR) in its puncta. The value for each protein is averaged from 20 cells measured in three independent transfection and imaging sessions. Error bars represent standard errors. Asterisk indicates a significant difference between the two proteins (p<0.05, Wilcoxon rank-sum test).
 
 ## Discussion
 
@@ -82,19 +118,120 @@ To understand the factors that can cause fixation-induced changes of LLPS appear
 
 We emphasize that because our four-state model makes no assumptions about any state being phase-separated, the logical implications of our model can extend beyond LLPS to other biomolecular transactions and cellular structures that have been found not well preserved by fixation or immunofluorescence, including localizations of cilia proteins (Hua and Ferland, 2017), clustering of cell membrane receptors (Stanly et al., 2016), splicing speckle formation (Neugebauer and Roth, 1997), and chromatin organization and protein binding (Zarębski et al., 2021; Lorber and Volk, 2022; Lerner et al., 2016; Pallier et al., 2003; Kumar et al., 2008 and Teves et al., 2016). Our model can similarly extend beyond PFA to other fixatives. This is useful because different fixatives have been chosen for studying different types of structures. For example, PFA fixation is often preferable for preserving soluble proteins over dehydration fixatives such as methanol (Stadler et al., 2010 and Schnell et al., 2012), yet methanol fixation can be preferable over PFA for preserving proteins bound to mitotic chromatin (Kumar et al., 2008; Lerner et al., 2016). Generally, our model predicts that fixation artifacts will occur whenever a protein can exist in multiple states that have different rates of fixation, and this artifact is most severe when the fixation is slower than the transition between states. For PFA fixation, because its rate is sensitively dependent on the amino acid sequence of POI, the structure of POI, and POI’s cross-linked partners (Hoffman et al., 2015; Kamps et al., 2019; Metz et al., 2006; Metz et al., 2004), POI in different states likely has different PFA fixation rates regardless of the type of interaction it undergoes.
 
-One distinction between our study and previous studies is that we observe that PFA fixation can enhance apparent protein–protein interactions or LLPS behaviors in the cell, suggesting faster fixation for POI in the bound than dissociated state (k3>k4), whereas fixation has only been reported to diminish protein–DNA interactions, suggesting slower fixation for POI in the bound state (k3<k4) (Poorey et al., 2013; Schmiedeberg et al., 2009; Teves et al., 2016). We hypothesize that this is because fixing the bound state of an LLPS system (within puncta) is dominated by cross-linking reactions between IDRs enriched in puncta, which have reactive residues better exposed to solvent due to lack of well-defined tertiary structures and thereby likely cross-link faster than structured domains cross-linking to DNA (Hoffman et al., 2015). It will be of future interest to measure fixation rates of different biomolecules including IDRs, structured proteins, and nucleic acids to prove the proposed chemical mechanism underlying fixation artifacts. Since our simulated results highlight the role of absolute fixation rates in the outcome of fixation, another future endeavor will be to design novel fixatives with significantly faster cross-linking rates than biomolecular interactions to eliminate fixation artifacts in the cell.
+One distinction between our study and previous studies is that we observe that PFA fixation can enhance apparent protein–protein interactions or LLPS behaviors in the cell, suggesting faster fixation for POI in the bound than dissociated state ($k_{3}>k_{4}$), whereas fixation has only been reported to diminish protein–DNA interactions, suggesting slower fixation for POI in the bound state ($k_{3}<k_{4}$) (Poorey et al., 2013; Schmiedeberg et al., 2009; Teves et al., 2016). We hypothesize that this is because fixing the bound state of an LLPS system (within puncta) is dominated by cross-linking reactions between IDRs enriched in puncta, which have reactive residues better exposed to solvent due to lack of well-defined tertiary structures and thereby likely cross-link faster than structured domains cross-linking to DNA (Hoffman et al., 2015). It will be of future interest to measure fixation rates of different biomolecules including IDRs, structured proteins, and nucleic acids to prove the proposed chemical mechanism underlying fixation artifacts. Since our simulated results highlight the role of absolute fixation rates in the outcome of fixation, another future endeavor will be to design novel fixatives with significantly faster cross-linking rates than biomolecular interactions to eliminate fixation artifacts in the cell.
 
 ## Materials and methods
 
-## Cell line and sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Knock-in A673 cell line</td>
+      <td>Chong et al., 2018</td>
+      <td>N/A</td>
+      <td>Human: A673 carrying HaloTag knock-in at the ews::fli1 locus</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS cell line</td>
+      <td>Chong et al., 2018</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-EWS(IDR)-NLS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-FUS(IDR)-NLS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-TAF15(IDR)-NLS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DsRed2-TAF15(IDR)-NLS</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Halo-TAF15(IDR)-NLS</td>
+      <td>Chong et al., 2018</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-FUS(FL)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NLS-TAF15(IDR)-Halo-FTH1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid encoding the proteinSee materials availability statement</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Fisher Scientific</td>
+      <td>Fischer Scientific: BP381-5</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>VWR</td>
+      <td>VWR: 100503-917</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 340855-25ML</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell line and sample preparation
 
 U2OS cells were grown in 1 g/L DMEM media (Thermo Fisher, 10567014) supplemented with 10% FBS (Fisher Scientific, SH3039603) and 1% penicillin-streptomycin (Thermo Fisher, 15140122). The cells were split onto an imaging plate (Mattek, P35G-1.5-14-C) and transfected with fluorescent protein constructs with Lipofectamine 3000 (Fisher Scientific, L3000001) according to manufacturer’s instructions. One day after transfection, the culture media was changed to phenol-red-free DMEM (Thermo Fisher, 11054001) with 10% FBS and 1% penicillin-streptomycin. For experiments with additional glycine, glycine (Fisher Scientific, BP381-5) was added to the phenol red-free media so that the final concentration was 50 mM (and 25 mM after the addition of 8% PFA, see below). It should be noted that normal DMEM media already contains 0.4 mM glycine. The knock-in A673 cell line expressing endogenous EWS::FLI1-Halo (Chong et al., 2018) was grown in 4.5 g/L DMEM media (Thermo Fisher, 10566016) with 10% FBS (Fisher Scientific, SH3039603) and 1% penicillin-streptomycin (Thermo Fisher, 15140122). The cells were similarly split onto an imaging plate (Mattek, P35G-1.5-14-C) and the culture media was changed to phenol-red-free DMEM (Thermo Fisher, 31053028) just before imaging. The U2OS cell line used here was validated by whole-genome sequencing as described in Hansen et al., 2017. The knock-in A673 cell line was generated by genome editing of the A673 cell line that was comprehensively authenticated by ATCC before distribution (ATCC, CRL-1598). The genomic sequence of the locus encoding EWS::FLI1-Halo in the knock-in A673 cell line was confirmed by Sanger sequencing. The knock-in A673 cell line was further authenticated using Short Tandem Repeat (STR) profiling (ATCC Cell Line Authentication Service) against the following loci: TH01, D5S818, D13S317, D7S820, D16S539, CSF1PO, Amelogenin, vWA, and TPOX. The knock-in A673 cell line showed a 100% match with A673. Both U2OS and A673 cell lines were tested for mycoplasma using PCR-based assays in February 2022.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Confocal fluorescence microscopy was performed on Zeiss LSM 980 in the point-scanning mode with a ×63 oil objective (Zeiss, 421782-9900-000). The pinhole was set to 1 airy unit for different emission wavelengths. The images displayed in the article are maximum z-projections of z-stack images. A673 cell expressing endogenous EWS::FLI1-Halo were imaged in the Airyscan mode of the same Zeiss LSM 980 microscope. All postprocessing parameters in the Airyscan analysis module were kept constant to guarantee a fair comparison between the images taken before and after fixation. The culture dish contained 1 mL of phenol red-free media, so that when 1 mL of 8% PFA (VWR, 100503-917) in PBS buffer was added to the dish, the final concentration of PFA was 4%. To achieve final PFA concentrations of 1, 2, and 8%, 1 mL of 2, 4, and 16% of PFA were diluted in PBS buffer and added to the culture dishes containing 1 mL of phenol red-free media. A final concentration of 0% was achieved by following the same protocol only using 1 mL of PBS buffer in place of PFA. To achieve final concentration of 4% PFA with 0.2% GA (Sigma-Aldrich, 340855-25ML), 1 mL of 8% PFA with 0.4% GA in PBS buffer was added to the culture dishes. After waiting 10 min to allow PFA or PFA/GA fixation to complete, images of the same cells are taken again. For experiments performed with glycine, cells were fixed with a final concentration of 4% PFA and 25 mM glycine. Independent transfection and imaging sessions were performed on different days using different plates of cells.
 
-## LLPS parameter quantification
+### LLPS parameter quantification
 
 The three parameters we quantified were the number of puncta, surface roughness, and punctate percentage. The source code used to analyze the images is provided as a supplementary file ‘Puncta Quantification Processing Scripts.zip.’ To best compare the images of a cell before and after fixation, the two z-projection images were normalized so that the sum of the intensities within the nucleus is equal to 1. The border of the nucleus was manually drawn for each image. All analyses were done on normalized maximum z-projection images except for when calculating punctate percentage. We measured the number of puncta by quantifying the number of peaks within the nucleus. Specifically, the image was exported from MATLAB into ImageJ (Schindelin et al., 2012) using MIJ (Sage et al., 2012), and the ‘find maxima’ processing function was used (Figure 7) with the same noise tolerance for both live- and fixed-cell images.
 
@@ -114,13 +251,13 @@ The punctate percentage was determined with the first few steps identical to mea
 
 **Figure 9.:** The punctate percentage of DsRed2-TAF15(IDR) is compared before and after fixation. The red circles represent the boundary within which the integrated fluorescence is considered ‘in puncta’.
 
-## Kinetic simulation
+### Kinetic simulation
 
-A four-state kinetic model was constructed in COPASI (Hoops et al., 2006) and interfaced using Python. The complete iPython notebook containing the source code used to perform the simulation is provided a supplementary file ‘Kinetic Simulation.zip.’ The four states and kinetic rates are defined in the main text and Figure 5B. We assume a constant total molarity for all species, that is, S1+S2+S3+S4=1 mol/L. At t=0,S3=S4=0, while k1 and k2 together define the equilibrium between S1 and S2 , that is, Keq=k1/k2=S1eq/S2eq . COPASI numerically simulates the four states in the kinetic model utilizing the starting concentrations and rate conditions.
+A four-state kinetic model was constructed in COPASI (Hoops et al., 2006) and interfaced using Python. The complete iPython notebook containing the source code used to perform the simulation is provided a supplementary file ‘Kinetic Simulation.zip.’ The four states and kinetic rates are defined in the main text and Figure 5B. We assume a constant total molarity for all species, that is, $S_{1}+S_{2}+S_{3}+S_{4}=1 mol/L$. At $t=0,$$S_{3}=S_{4}=0$, while $k_{1}$ and $k_{2}$ together define the equilibrium between $S_{1}$ and $S_{2}$ , that is, $K_{eq}=k_{1}/k_{2}=S_{1}_{eq}/S_{2}_{eq}$ . COPASI numerically simulates the four states in the kinetic model utilizing the starting concentrations and rate conditions.
 
-The units used for all the rates were s-1 , set so that fixation occurred on the order of seconds. For the simulations that produced Figure 5C, we varied the values of k3 and k4 but kept the total fixation and POI binding and dissociation rates constant (k3+k4 = 0.2, k1+k2=1), leading to a constant relative overall fixation rate of POI ((k3+k4):(k1+k2)=1:5). For the simulations that produced Figure 5D, we kept the fixation rates constant (k3=1, k4=2) and varied the relative overall fixation rate of POI ((k3+k4):(k1+k2)). In this simulation, the relative overall fixation rate of POI ((k3+k4):(k1+k2)) is set so that the range of interaction rates span values that are an order of magnitude faster and slower than fixation rates.
+The units used for all the rates were $s^{-1}$ , set so that fixation occurred on the order of seconds. For the simulations that produced Figure 5C, we varied the values of $k_{3}$ and $k_{4}$ but kept the total fixation and POI binding and dissociation rates constant ($k_{3}+k_{4}$ = 0.2, $k_{1}+k_{2}=1$), leading to a constant relative overall fixation rate of POI ($(k_{3}+k_{4}):(k_{1}+k_{2})$=1:5). For the simulations that produced Figure 5D, we kept the fixation rates constant ($k_{3}=1$, $k_{4}=2$) and varied the relative overall fixation rate of POI ($(k_{3}+k_{4}):(k_{1}+k_{2})$). In this simulation, the relative overall fixation rate of POI ($(k_{3}+k_{4}):(k_{1}+k_{2})$) is set so that the range of interaction rates span values that are an order of magnitude faster and slower than fixation rates.
 
-## Single-particle tracking (SPT)
+### Single-particle tracking (SPT)
 
 SPT of Halo-tagged TAF15(IDR) and TAF15(IDR)-FTH1 were performed on a Nikon Eclipse Ti2 TIRF microscope with a ×100/NA 1.49 oil-immersion objective (CFI SR HP Apochromat TIRF 100XAC Oil) under highly inclined and laminated optical sheet (HILO) illumination (Tokunaga et al., 2008). PA-JF646 was activated and excited under variable powers by 405 nm and 640 nm laser lines, respectively, while JFX549 was excited by a 561 nm laser line. The incubation chamber was held humidified at a 37°C with 5% CO2 and the objective was also heated to 37°C.
 
@@ -130,16 +267,24 @@ The analysis was performed following Chong et al., 2018 and is briefly described
 
 Binary masks of the droplet-like puncta were generated from the JFX549 channel using custom-written Macros in ImageJ from Chong et al., 2018. Using custom-written MATLAB code also from Chong et al., 2018, single-molecule trajectories were then sorted into in-puncta and out-of-puncta trajectories based on the fraction of time a molecule spent in the punctum, F. A trajectory with F > 50% was considered in-puncta and one with F < 5% was considered out of puncta. We only focused on the in-puncta trajectories.
 
-Survival probability curves were then generated from the in-puncta trajectories and fit to the following two-component exponential model.(2)P(t)=Ae−k1t+(1−A)e−k2t,1/k1=τns,1/k2=τs,
+Survival probability curves were then generated from the in-puncta trajectories and fit to the following two-component exponential model.
 
-with τns and τs as the specific and nonspecific residence times, respectively. Here, we only focused on the specific residence times.
+$$
+P(t)=Ae^{−k_{1}t}+(1−A)e^{−k_{2}t},1/k_{1}=\tau_{ns},1/k_{2}=\tau_{s},
+$$
 
-In order to correct for photobleaching (Hansen et al., 2017), the specific residence time of histone H2B (which is largely immobile on the chromatin) was measured via SPT as described above, except on all trajectories rather than doing the in-puncta and out-of-puncta classification. We used PA-JF646-tagged H2B-Halo that was stably expressed in U2OS cells and imaged under illumination and acquisition parameters identical to those used to image Halo-tagged TAF15 and TAF15-FTH1. The corrected specific residence times of the Halo-tagged TAF15 and TAF15-FTH1 (τcorrected) were computed based on the following model.(3)τcorrected=1/1/τs-1/τH2B,
+with $\tau_{ns}$ and $\tau_{s}$ as the specific and nonspecific residence times, respectively. Here, we only focused on the specific residence times.
 
-with τH2B as the specific residence time of H2B.
+In order to correct for photobleaching (Hansen et al., 2017), the specific residence time of histone H2B (which is largely immobile on the chromatin) was measured via SPT as described above, except on all trajectories rather than doing the in-puncta and out-of-puncta classification. We used PA-JF646-tagged H2B-Halo that was stably expressed in U2OS cells and imaged under illumination and acquisition parameters identical to those used to image Halo-tagged TAF15 and TAF15-FTH1. The corrected specific residence times of the Halo-tagged TAF15 and TAF15-FTH1 $(\tau_{corrected})$ were computed based on the following model.
+
+$$
+\tau_{corrected}=1/1/\tau_{s}-1/\tau_{H2B},
+$$
+
+with $\tau_{H2B}$ as the specific residence time of H2B.
 
 Independent experiments were performed across at least three days for both Halo-tagged TAF15 and TAF15-FTH1. In each session, multiple movies of both constructs were taken along with three movies of Halo-tagged H2B to perform correction for that specific day. We reported the mean corrected residence times.
 
-## Statistical analysis
+### Statistical analysis
 
 Nonparametric tests used throughout because the data were often not normally distributed. Statistical significance of the LLPS parameters was calculated using the Wilcoxon signed-rank test and statistical significance of the residence times from SPT was using the Wilcoxon signed-rank test (Gibbons and Chakraborti, 2014). The Wilcoxon signed-rank test and Wilcoxon rank-sum test were performed using the built-in MATLAB functions signrank and ranksum, respectively.

@@ -42,25 +42,223 @@ Under starvation conditions, DEPTOR binds to mTOR and inhibits its kinase activi
 
 ## Results
 
-## DEPTOR is a partial inhibitor of mTORC1 in vitro, independent of substrate identity
+### DEPTOR is a partial inhibitor of mTORC1 in vitro, independent of substrate identity
 
 To characterize the mechanism of mTORC1 inhibition by DEPTOR, we carried out reconstituted inhibition assays with purified recombinant mTORC1, DEPTOR and two major mTORC1 substrates, 4EBP1 (wild-type) and S6K1 (GST-tagged S6K1367-404 polypeptide). Using immunoblotting with antibodies specific for the phosphorylated substrates, we found that DEPTOR inhibited mTORC1 with half maximal inhibitory concentration (IC50) of 14 µM for wild-type 4EBP1, and 51 µM for S6K1367-404 (Figure 1A). Interestingly, inhibition of mTORC1 by DEPTOR for both substrates appeared to be partial, with mTORC1 having about 50% residual activity at even the highest concentrations of DEPTOR that could be achieved. This residual activity could also be detected using Phos-tag gels, that efficiently separate phosphorylated from non-phosphorylated proteins (Figure 1—figure supplement 1A.B). In contrast, the mTORC1 specific inhibitor PRAS40 showed full inhibition under identical conditions (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig1-v1.jpg)
+
+**Figure 1.:** (A) Inhibition of the mTORC1 kinase activity by DEPTOR. mTORC1 schematic illustrating the two known substrate-binding sites, the TOS-binding site on RAPTOR and the FRB-binding site on mTOR, for 4EBP1 and S6K1 (left panel). Phosphorylation of substrates was analyzed by western blots using anti p-4EBP1 (Thr37/46) or anti p-S6K1 (Thr389) primary antibodies (right panel). Images of western blots with long (L) and short exposures (S) are shown. The S6K1367-404 peptide encompasses only the FRB-binding site of S6K1. The bottom panels show the quantification of the phosphorylation levels of the substrates based on the western blots from three independent experiments (mean ± SD). Band intensities were normalized to the control (0 µM DEPTOR) and data were plotted and fit by non-linear regression to determine IC50 and ymin (the residual activity at high [DEPTOR]) as described in Materials and methods. See Figure 1—figure supplement 1A,B for complementary experiment using Phos-tag SDS PAGE detection. (B) Inhibition of mTORC1 by PRAS40. Inhibition of 4EBP1 phosphorylation is complete under identical reaction conditions as carried out for DEPTOR. (C) DEPTOR has no effect on the apparent KM,4EBP1. The phosphorylation of 4EBP1 in the absence and presence of DEPTOR (25 µM or 50 µM), normalized to the 5 µM 4EBP1 is plotted (mean ± SD, n ≥ 3) and KM values were fit as described in Materials and methods. (D) Inhibition of monomeric mTORΔN-mLST8 (left panel) by DEPTOR (mean ± SD, n ≥ 3). Similar to the wild-type mTORC1 complex, partial inhibition is observed (right panel).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) DEPTOR inhibition of mTORC1 cancer-associated mutant A1459P phosphorylating 4EBP1 measured by Phos-tag SDS PAGE, stained with InstantBlue. A second Phos-tag SDS PAGE was used for a western blot analysis in order to identify all P-4EBP1 bands. (B) The plot of mTORC1-A1459 activity measured by P-4EBP resolved by the Phos-tag gel shown in (A). The plot is representative of three independent replicates. Intensity of all P-4EBP1 bands in one lane was normalized to the P-4EBP1 intensity at the lowest DEPTOR concentration. The IC50 for mTORC1 A1459P inhibition by DEPTOR was also tested via a western blot experiment, resulting in a comparable value (Figure 6B).
 
 Partial enzyme inhibitors bind to the enzyme and decrease its activity, but still allow substrate turnover, even with the inhibitor bound (Grant, 2018). Consequently, a partial inhibitor cannot bind in a manner that completely occludes substrate binding. To test whether DEPTOR influences substrate binding, we measured the KM for 4EBP1 in the presence and absence of DEPTOR (Figure 1C). Previously, two distinct KM,4EBP1 have been detected, which represent independent binding at the TOS motif binding site on the RAPTOR subunit (KM1 = 1.8 µM) and at the FRB-binding site on the mTOR subunit (KM2 = 585 µM) (Figure 1A; Yang et al., 2017). Increasing concentrations of DEPTOR had no apparent effect on the KM,4EBP1 of the TOS motif binding site (KM1), suggesting that DEPTOR is not able to compete with 4EBP1 at this site (Figure 1C). The affinities for the FRB binding were too low to get a reliable kinetic result. Nevertheless, our structural analyses (described below) imply a very similar binding site at the FRB domain for the DEPTOR long-linker and for the 4EBP1/S6K1 substrates, suggesting a partially competitive binding mechanism for this site. The mTORC1 inhibitor PRAS40, which shares the TOS-binding site with 4EBP1, shows full inhibition of 4EBP1 phosphorylation under our assay conditions (Figure 1B). DEPTOR’s inability to compete at the TOS-motif binding site suggested that inhibition of 4EBP1 phosphorylation may be partial because of unhindered binding of 4EBP1 at the high affinity TOS site located on RAPTOR. To examine this proposition, we employed a TOS-less 4EBP1 mutant as a substrate. DEPTOR seemed to compete more effectively with this mutant, since the IC50 was twofold lower with this modified substrate, however, the residual activity remained at about 50% at the maximum DEPTOR concentration (Figure 1A). As 4EBP1 binding has been reported to involve additional sites, like the RAIP motif (Beugnet et al., 2003; Eguchi et al., 2006), we next used a simpler substrate, consisting of a short S6K1 peptide that is expected to exclusively bind to the FRB site (Yang et al., 2013). Residual activity in the presence of DEPTOR was also observed with this substrate (Figure 1A). Based on these observations, we concluded that partial inhibition by DEPTOR is an intrinsic property of DEPTOR, which takes place independently of substrate identity and substrate binding mode.
 
 To test the possibility that the residual activity is caused by half-site reactivity in mTORC1 via allosteric communication across the dimer interface, we tested DEPTOR inhibition of a monomeric form of mTOR (the mTORΔN-mLST8 complex, which lacks the N-terminal 1375 residues of mTOR and the RAPTOR subunit). The IC50 for the monomeric mTORΔN-mLST8 was 0.4 µM, and the residual activity 33% (Figure 1D). Since DEPTOR could still not fully inhibit this monomeric mTOR, we conclude that DEPTOR’s residual activity was not caused by effects related to the dimeric nature of mTORC1.
 
-## The minimal inhibitory unit of DEPTOR is the long-linker-PDZ
+### The minimal inhibitory unit of DEPTOR is the long-linker-PDZ
 
 To determine DEPTOR’s mechanism of inhibition of mTORC1 in more detail, DEPTOR deletion variants as well as a 13 S/T→A mutant with most of the phosphorylation sites in DEPTOR removed (Peterson et al., 2009) were designed to identify the regions that are crucial for inhibition and the role of DEPTOR phosphorylation in the mechanism (Figure 2A). It was reported that DEPTOR’s PDZ domain alone (residues 324–409) was sufficient to inhibit mTOR when transiently overexpressed in cells (Peterson et al., 2009). However, our in vitro assay showed no measurable inhibition by the PDZ domain alone (Figure 2B and C). Furthermore, there was no inhibition by constructs of PDZ preceded by a short section of the linker (short-linker, described below, Figure 2—figure supplement 1A). Unexpectedly, we even observe a slight, but reproducible activation of mTORC1 by these PDZ constructs. In contrast, a DEPTOR construct that includes the entire long-linker region preceding the PDZ in addition to the PDZ domain comprises the minimal inhibitory unit. However, the increased IC50 for the linker-PDZ construct compared with full-length DEPTOR suggests that the N-terminal tandem DEP domain region (DEPt) contributes to inhibition (Figure 2C, D). A mechanism for the inhibitory role of DEPt is suggested by the structural work reported by Wälchli et al., 2021. Overexpression of the DEPTOR PDZ domain alone may have an indirect effect on mTOR signaling in cells. Recently, an interaction of DEPTOR PDZ with the C-terminal portion of pREX2, a PTEN inhibiting protein that includes domains structurally related to DEPTOR, has been identified (Fine et al., 2009; Yen et al., 2012). Considering the intertwined nature of the PI3K/mTOR pathways with numerous feedback loops and crosstalk modes, it is difficult to unambiguously identify the origin of mTOR inhibition by the PDZ domain of DEPTOR in cell-based experiments. The tandem DEP domains alone (residues 1–221) or in combination with the long-linker (residues 1–323) showed no inhibition (Figure 2B and C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig2-v1.jpg)
+
+**Figure 2.:** (A) DEPTOR deletion variants tested as inhibitors and substrates for mTORC1. (B) Immunoblots showing the residual phosphorylation of 4EBP1 in the presence of various DEPTOR deletion variants. Images of western blots with long (L) and short exposures (S) are shown. (C) and (D) quantification of western blots of phosphorylated 4EBP1 plotted as a fraction of the control (0 µM inhibitor) vs. inhibited (mean ± SD, n ≥ 3) and fit to a non-linear regression for all deletion variants to determine IC50. While all experiments were performed at 30°C, inhibition of mTORC1 by the PDZ domain was tested at 20°C for 20 min as the domain stability was low. N-terminally extended PDZ constructs that showed increased temperature stability showed no inhibition of mTORC1 (Figure 2—figure supplement 1A). To demonstrate that the temperature difference had no effect on the inhibition, DEPTOR (WT) was tested at 20°C for mTORC1 inhibition (Figure 2—figure supplement 1B). The data shown for DEPTOR (WT) is also part of Figure 1A. DEPTOR 13A inhibition of the mTORC1 A1459P mutant is shown in Figure 2—figure supplement 1C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The PDZ construct (324-409) was extended at the N-terminus to encompass residues 305–409 or 315–409 in order to obtain a more stable construct that could be used for assays at 30°C. No inhibition of mTORC1 kinase activity was observed in a western blot experiment with these two PDZ constructs at 30°C. (B) DEPTOR inhibition of mTORC1 was tested at 20°C (as compared with the results at 30°C, as shown in Figure 2D) via western blot experiment to allow a direct comparison with the inhibitory properties of temperature-sensitive DEPTOR PDZ domain. The data (mean ± SD, n ≥ 3) were fit by a nonlinear regression to determine IC50. (C) DEPTOR 13A inhibition of the mTORC1-A1459P mutant phosphorylating GST-S6K367-404 peptide measured by western blots. Band intensities were normalized to the control (0 µM DEPTOR). The data (mean ± SD, n = 3) were fitted. (D) The tandem DEPDEP and the PDZ domain are not substrates of mTORC1. No phosphorylation is observed in a Phos-tag SDS PAGE experiment. (E) DEPTOR as an mTORC1 substrate was investigated via Phos-tag SDS PAGE. DEPDEP-linker construct (residues 1–323) is phosphorylated slower than the full-length DEPTOR (WT), suggesting that the PDZ domain helps successful interaction at the FRB and active site (one representative of a triplicate experiment is shown).
 
 DEPTOR is phosphorylated in an mTOR-dependent manner in cells, and phosphorylation sites have been identified in the long-linker region (Duan et al., 2011; Gao et al., 2011; Peterson et al., 2009; Wang et al., 2012b; Zhao et al., 2018). To check the possibility that the inhibition of 4EBP1 and S6K1 phosphorylation by DEPTOR is due solely to DEPTOR acting as an alternative substrate for mTORC1, we tested inhibition of mTORC1 by a previously described DEPTOR mutant in which 13 S/T residues in the long-linker region were mutated to alanine (13A mutant) (Peterson et al., 2009). The IC50 of this DEPTOR mutant was comparable to the wild-type DEPTOR for both the wild-type mTORC1 (Figure 2D) and mTORC1 with an activating cancer-associated mTOR mutation (A1459P, Figure 2—figure supplement 1C), so interaction between these S/T residues and mTORC1 is not important for inhibition by DEPTOR. The 13A mutant is a partial inhibitor, like wild-type DEPTOR, meaning that they bind to mTORC1 without preventing substrate binding and turnover.
 
 We next assayed phosphorylation of full-length DEPTOR and its deletion variants via Phos-tag SDS PAGE. To increase the signal of phosphorylated DEPTOR for reliable detection, we used the hyperactive mTORC1 A1459P. The isolated PDZ as well as tandem DEP domains were not phosphorylated at any detectable rate in an mTOR dependent manner (Figure 2—figure supplement 1D), while the DEPDEP-long-linker was phosphorylated at a reduced rate compared to wild-type DEPTOR at equimolar concentrations (Figure 2—figure supplement 1E). This is an additional indication that the PDZ domain assists the DEPTOR long-linker interaction with mTORC1.
 
-## Cryo-EM structure of mTORC1/DEPTOR reveals a bipartite binding mode of DEPTOR to mTOR
+### Cryo-EM structure of mTORC1/DEPTOR reveals a bipartite binding mode of DEPTOR to mTOR
 
 We determined the structure of mTORC1 bound to full length DEPTOR by electron cryo-microscopy (cryo-EM). Using cross-linked mTORC1/DEPTOR, we generated a 4.3 Å resolution reconstruction of mTORC1 in a complex with DEPTOR (Figure 3A). The overall architecture of the mTORC1 complex bound to DEPTOR resembles the conformation of mTORC1 in the absence of RHEB (PDB 6BCX). However, an additional density can be observed in a crevice between the FAT domain and the N-heat of mTOR, centred at residues 1527–1571 in the FAT domain. The shape and size of this extra density is consistent with the structure of a PDZ domain (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig3-v1.jpg)
+
+**Figure 3.:** (A) Domain organization of mTOR and DEPTOR is shown on the left. The region of interaction between the mTOR FAT domain residues 1527–1571 and the DEPTOR PDZ domain, as well as the mTOR FRB domain and the DEPTOR linker are highlighted with arrows. Surface representation of the model for the mTORC1/DEPTOR complex is shown on the right, color-coded by domains. Only the linker and PDZ domain, not the tandem DEP domain of DEPTOR are visible in the cryo-EM density. See Figure 3—figure supplement 2 and Table 1 for cryo-EM data details. (B) The 10 lowest energy homology models of DEPTOR PDZ produced using CS-Rosetta guided by NMR data, including 14 NOE distance restraints. DEPTOR PDZ construct (324-409) was used. See Figure 5—figure supplement 2A for the assigned 1H-15N BEST-TROSY spectrum of the PDZ domain. (C) A close-up of DEPTOR binding to the mTOR subunit shows DEPTOR PDZ domain in a crevice between the FAT domain and the N-heat of mTOR. DEPTOR long-linker (red) forms interactions at the FRB domain. The dashed line spans the distance of DEPTOR long-linker between the two binding sites. Cryo-EM density for DEPTOR and its binding sites is shown next to the model. The density for mTOR, PDZ, and long-linker are colored in gray, blue, and red, respectively. (D) Three mTOR helices (fα16, fα17, fα18) at the junction of two solenoids (TRD2 and TRD3) in the FAT domain are splayed and form a non-canonical interface with the DEPTOR PDZ domain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Global HDX-MS result for DEPTOR as an indication of structured and flexible regions of DEPTOR. There were 179 reliable peptic peptides, with 94.9% coverage of DEPTOR and a redundancy of about 7.2. Areas of lower solvent exchange rate, suggestive of regions with likely secondary structure (Fowler et al., 2016), agreed with the predicted boundaries of the tandem DEP domains (36–119 and 145–219) and of the PDZ domain (330-409). There is also a region of lower solvent exchange rate observed in the inter-DEP-linker (residues 120–144, deuteration <50% in 3 s). In contrast, there is very rapid exchange for the long-linker (residues 228–323) connecting the tandem DEP domains with the PDZ domain (>50% in 3 s), suggesting that this region is unstructured. See also Supplementary file 1. (B) Secondary structure analysis of the DEPTOR linker construct (residues 228–323) comparing the assigned linker shifts with those that would be expected in a peptide of random coil conformation, revealing no regions of residual secondary structure in the unbound state. In this plot residual structure would be indicated by stretches of the protein with values greater than one for helical residues and greater than −1 for extended residues, which are not present for the DEPTOR linker. (C) A schematic illustrating two possible paths for the DEPTOR linker spanning the FRB and FAT domain binding sites. As DEPTOR is inhibitory for the mTOR monomer (ΔNmTOR/mLST8 construct), FRB and FAT domain binding can occur across the monomer. This does not exclude an interaction across the dimer interface. (D) Structure alignment on the C-lobe of free mTORC1 (pdb ID 6bcx), RHEB-bound mTORC1 (pdb ID 6bcu), and DEPTOR-bound mTORC1 shows similarities of free and DEPTOR-bound mTORC1 in the ATP-binding site.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) A representative cryo-EM micrograph of mTORC1-DEPTOR complex. (B) Power spectrum of the image in (A) showing contrast transfer function rings (Thon rings) (C) Some of the reference-free 2D classes are shown. (D) The angular distribution (Euler angles) of the last 3D auto-refinement indicates some overrepresented views (preferred orientation, red cylinders). Directional resolution of the final 3D reconstruction of EM map density of mTORC1-DEPTOR was calculated using the 3DFSC server (Tan et al., 2017). (E) The local resolution map of the 3D reconstruction is shown for the mTORC1 dimer together with the resolution bar ranging from 4 Å to 5.6 Å (blue to red gradient). (F) Flowchart of cryo-EM data processing. Details are described in Materials and methods. (G) The local resolution map of the 3D reconstruction is shown for the mTORC1 monomer together with the resolution bar ranging from 4 Å to 8 Å (blue to red gradient). (H) The 'gold-standard' FSC curve for the B-factor sharpened post-processed reconstruction suggests a final resolution of the mTORC1/DEPTOR complex refined as a monomer of 4.3 Å. The dashed line indicates the FSC value for 0.143. (I) FSC curves of the final model versus the full map (red), of a same model refined in the first independent half map versus the first half map (orange), and of the same model versus the second independent half map, which was not used for refinement (green). FSC curve for the first half map versus the second half map (blue) is also shown. The dashed line indicates the FSC value for 0.5.
+
+**Table 1.**
+ Cryo-EM data collection and processing of mTORC1 in complex with DEPTOR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Protein details</th>
+      <th>mTORC1 WT/DEPTOR</th>
+      <th>mTORC1 A1459P/DEPTOR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>Titan Krios (FEI)</td>
+      <td>Titan Krios (FEI)</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Gatan K2 Summit</td>
+      <td>Gatan K3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.43</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.6 to −3.2</td>
+      <td>−1.4 to −3.0</td>
+    </tr>
+    <tr>
+      <td>Movies</td>
+      <td>2370</td>
+      <td>4759</td>
+    </tr>
+    <tr>
+      <td>Frames/movie</td>
+      <td>20</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Exposure rate (e– / Å2/ s)</td>
+      <td>2.5</td>
+      <td>22.4</td>
+    </tr>
+    <tr>
+      <td>Total dose (e– / Å2)</td>
+      <td>40</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Number of particles</td>
+      <td>491,404</td>
+      <td>97,314</td>
+    </tr>
+    <tr>
+      <td>Energy filter slit width (eV)</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>28917 (refined as a monomer)</td>
+      <td>28784 (refined as dimer)</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>3640</td>
+      <td>7196</td>
+    </tr>
+    <tr>
+      <td>Ligands/ ions</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Density refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>4.2</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>Sharpening B-factor (Å)</td>
+      <td>283.5</td>
+      <td>145.7</td>
+    </tr>
+    <tr>
+      <td>Model refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Root-mean-square deviation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.0131</td>
+      <td>0.0089</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.73</td>
+      <td>1.76</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>1.47</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Clashscore, all atoms</td>
+      <td>0.95</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>Favored rotamers (%)</td>
+      <td>98.0</td>
+      <td>89.4</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>92.9</td>
+      <td>92.2</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>6.4</td>
+      <td>7.6</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.75</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
 
 The density for the DEPTOR PDZ domain was poorly resolved. As crystallization of the 324–409 construct remained unsuccessful, the structure of the DEPTOR PDZ domain was determined using NMR spectroscopy (Figure 3B). Here, instead of calculating a formal solution structure of the PDZ domain, NMR restraint-based models were created using the ROSETTA software suite. The assigned backbone chemical shifts, which are uniquely sensitive to the secondary structure in which each residue resides, were employed to more accurately select fragments of homologous proteins using the POMONA webserver. These fragments then were used to calculate the PDZ model using CS-RosettaCM that combines both chemical shifts (CS) and comparative modeling (CM) (Shen and Bax, 2015). An ensemble of structures was then further refined using a limited set of NOE distance restraints, resulting in a homology model that also satisfies solution state parameters that we observed. This process is advantageous as it creates data driven models significantly faster than traditional NMR structure calculation techniques. Figure 3B represents an ensemble of the 10 lowest energy structures calculated using this methodology, with the lowest energy model used in the final cryo-EM structure refinement. The PDZ domain binds to three consecutive helices (fα16, fα17, fα18, residues 1525–1580), in the middle of the C-shaped FAT domain at a corkscrew junction between two helical solenoids (previously referred to as TRD2 and TRD3 Yang et al., 2013; Figure 3C and D). The key interactions in this surface are formed by E1530, E1531, C1534, M1535, R1538, and Q1562 on the mTORC1 FAT domain, and residues 336–342 and 354–362 on the DEPTOR PDZ domain.
 
@@ -68,33 +266,65 @@ We identified a second density adjacent to the mTOR FRB domain, covering the lip
 
 When the structures of free mTORC1 (PDB 6BCX), RHEB-bound mTORC1 (PDB 6BCU) and mTORC1 bound to DEPTOR are aligned locally on the C-lobe of the kinase domain, it is clear that the ATP-binding sites of the free mTORC1 and DEPTOR-bound mTORC1 are very similar and both are distinct from the RHEB-bound conformation (Figure 3—figure supplement 1D). Free mTORC1 is present in a continuum of conformations, ranging from an open conformation to a closed conformation that are both very different than the RHEB-bound, activated conformation (Yang et al., 2017). It may be that the predominant conformation captured by cryo-EM for free mTORC1 corresponds to an inhibited conformation that is only capable of slowly turning over substrate and this same conformation is the one predominately bound to DEPTOR.
 
-## DEPTOR PDZ domain binds to mTORC1 in a non-canonical manner
+### DEPTOR PDZ domain binds to mTORC1 in a non-canonical manner
 
 Typically, PDZ domains bind their targets via the C-terminal tail of the target protein binding in the PDZ αB/βB binding groove (Ernst et al., 2014). The cryo-EM density for the DEPTOR PDZ domain bound to mTOR suggests that binding occurs in a non-canonical fashion. The PDZ domain binds to helices in the mTOR FAT domain (Figure 3D). This unique type of interaction was further examined by an NMR-binding experiment using the non-labeled 1 MDa mTORC1 as a binding partner for the isolated 2H,13C,15N DEPTOR PDZ domain. Large protein complexes like mTORC1 would generally severely impair NMR studies due to increased linewidth caused by slower tumbling. The same would apply for any labeled interactor that binds tightly to the complex and shows a slow dissociation rate. Nonetheless, in case of a Kd in the range of 0.1 µM to 1 mM and an excess of the interactor in the NMR experiment, the effects of binding can be imprinted onto the dissociated small interactor (Maurer et al., 2004). In this case, binding effects on the small interactor can be observed in the bulk unbound and labeled protein. The DEPTOR PDZ/mTORC1 interaction showed ideal properties for this experiment and DEPTOR PDZ binding to mTORC1 could be successfully detected from the pool of free PDZ domain. Based on the line broadening, DEPTOR PDZ residues 338–342 and 358–362 form the interface with mTORC1 (Figure 4A, Figure 4—figure supplement 1). While the region 338–342 involves the canonical binding residues, the region 358–362 is part of the PDZ βC/αA structural element and therefore outside the canonical αB/βB binding groove. The binding interface on DEPTOR PDZ is surprisingly similar to the binding mode of the third PDZ domain of the scaffold protein inactivation-no-afterpotential D (INAD) to the TRP channel in Drosophila photoreceptors (Figure 4B), indicating that although this is a rare mode of interaction, it is not unprecedented (Ye et al., 2016).
 
-## A set of linker regions bind to mTOR’s FRB domain
+![Figure 4.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig4-v1.jpg)
+
+**Figure 4.:** (A) Line broadening of isotope-labeled DEPTOR PDZ (residues 324–409) caused by its binding to the full-length mTORC1 is displayed in shades of red on the ribbon diagram of the PDZ domain. The NMR data is consistent with the non-canonical binding mode of DEPTOR PDZ seen with the cryo-EM. See Figure 4—figure supplement 1 for NMR differential line-broadening analysis. (B) A comparison of canonical and non-canonical binding to PDZ domains. The canonical binding mode (PDB 1BE9) is illustrated by the third PDZ domain of postsynaptic density-95 (PSD-95) interacting with the cysteine-rich interactor of PDZ3 (CRIPT). The DEPTOR PDZ binds to the mTOR FAT region in a non-canonical manner. Distinct non-canonical binding is also seen for other PDZ domains, such as the interaction of PDZ3 of inactivation no afterpotential D (INAD) with the transient receptor potential (TRP) channel (PDB 5F67).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Normalized differential line-broadening analysis of deuterated DEPTOR PDZ domain binding to mTORC1. Ratios of the 2H13C15N PDZ (residues 324–409) peak intensity in the 15N-1H HSQC lower than one indicate line broadening and therefore the binding surface of mTORC1 interaction with isolated DEPTOR PDZ domain (residues 324–409). Measured peak intensity was normalized to the peak of the C-terminal residue.
+
+### A set of linker regions bind to mTOR’s FRB domain
 
 Because our cryo-EM structure showed a bipartite binding that included the FRB domain, and because the PDZ domain alone is insufficient for mTORC1 inhibition, we attempted to define the region of DEPTOR interacting with mTOR’s FRB. A small stretch of extra cryo-EM density in mTOR's FRB domain suggested an interaction of DEPTOR with this mTOR domain (Figure 3C). As it has been previously reported that DEPTOR’s long-linker is phosphorylated in an mTOR-dependent manner (Peterson et al., 2009), we proposed that a region in the DEPTOR long-linker binds to the FRB. To verify this interaction, binding of the long-linker-PDZ (residues 228–409) to the isolated FRB domain was characterized by NMR. The chemical shift perturbation in the 1H-15N BEST-TROSY NMR experiments comparing the bound FRB vs. free FRB confirmed that the long-linker interacts with the FRB domain (Figure 5A, Figure 5—figure supplement 1A–C). The two most prominent patches affected by this interaction are located at the FRB residues 2035–2042 in kfα1 and 2103–2109 in kfα4, which is consistent with the cryo-EM density (Figure 5A). This suggests a similar binding location of the DEPTOR linker at the FRB as the substrates S6K1 or 4EBP1 (Yang et al., 2017). Similar to the substrates, binding affinity of the DEPTOR long-linker to the FRB is weak, with a Kd estimated by NMR to be ~500 µM.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig5-v1.jpg)
+
+**Figure 5.:** (A) Mapping the mTOR FRB surface that binds to the DEPTOR linker by the chemical shift perturbations (CSPs) of the FRB (residues 2015–2114) bound to DEPTOR linker-PDZ (residues 228–409) vs. free FRB in a 1H-15N BEST-TROSY experiment. The CSPs are displayed on the ribbon model of mTORC1 that is shown together with the EM density (semitransparent gray) for the FRB region of the mTORC1/DEPTOR complex. The EM density corresponding to DEPTOR is colored purple. See Figure 5—figure supplement 1A–C for NMR spectra and analysis. (B) Mapping the DEPTOR linker regions that interact with the FRB domain by the chemical shift perturbation of the FRB-bound linker vs. free linker in a 1H-15N BEST-TROSY experiment. See Figure 5—figure supplement 1D for NMR spectra. (C) Mapping the DEPTOR regions interacting with the mTOR FRB investigated by HDX-MS. Reduction in HDX in full-length DEPTOR in the presence of the FRB suggests that regions of the linker interact with the FRB. Four different colored lines represent four time points (3 s = orange, 30 s = red, 300 s = blue, 3000 s = black), the gray colored area represents the standard error. See also Supplementary file 2. (D) Interaction of the PDZ domain with a portion of a DEPTOR linker revealed from a comparison of DEPTOR PDZ (residues 324–409) and linker-PDZ (residues 228–409) 1H-15N BEST-TROSY spectra. The weighted chemical shift perturbation is calculated between the nearest linker-PDZ peak to the assigned PDZ peak in the overlaid spectra (see Figure 5—figure supplement 2A). The minimal map colored from green to red shows the interaction of the linker with the surface of the PDZ. (E) Stability of long-linker-PDZ (residues 228–409) and short-linker-PDZ (305-409) is greatly improved over the PDZ domain alone (residues 324–409), as shown by ~10°C increase in the protein melting temperature measured by differential scanning fluorimetry.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The assigned 1H-15N BEST-TROSY spectrum of 13C/15N mTOR-FRB (residues 2015–2114). (B) Overlaid spectra of 15N-labeled FRB with increasing concentrations of DEPTOR linker-PDZ (residues 228–409) (FRB alone, blue; FRB:linker-PDZ = 1:1, green; FRB:linker-PDZ = 1:3, yellow; FRB:linker-PDZ = 1:5, red). (C) The weighted chemical shift perturbation map showing residues of the FRB that bind DEPTOR linker-PDZ. These data were used to create the heat map in Figure 5A. (D) The assigned 1H-15N BEST-TROSY spectrum of DEPTOR-linker (residues 228–323) (left panel) and overlaid spectra of 15N-labeled DEPTOR linker with increasing concentrations of mTOR FRB (right panel: DEPTOR linker alone, red; DEPTOR linker:FRB=1:2, yellow; DEPTOR linker:FRB=1:6, blue). A subset of perturbed peaks has been labeled and the spectrum of 1:6 ratio of DEPTOR linker to FRB was used to create the weighted chemical shift map shown in Figure 5B. The insets show expanded views of two regions, one centered on S244 and one centered on M262. For the M262 inset, two overlays are shown, with either the red or blue contours on top.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) NMR analysis of PDZ and linker-PDZ of DEPTOR. Top left: Assigned 15N-1H BEST-TROSY spectrum of the PDZ domain (residues 324–409) of DEPTOR. TOP right: Comparison of PDZ and linker-PDZ (residues 228–409) 15N-1H BEST-TROSY spectra. Bottom: A minimal chemical shift perturbation map showing the shortest distance between the assigned peaks of the PDZ spectrum and the unassigned peaks of the linker-PDZ of DEPTOR. Relatively large peak perturbation differences are attributed to an interaction of the linker with the folded PDZ domain and are used to make the heat map in Figure 5D. (B) 15N dynamics analysis of 15N/2H-labeled DEPTOR PDZ domain. Top: 15N-1H Heteronuclear NOE, middle: T1 – longitudinal, and bottom: T2 – transverse relaxation times for the PDZ construct (324-409) collected at 700 MHz. The N-terminal region of the PDZ shows increased flexibility.
 
 To map the regions in DEPTOR interacting with the FRB domain, we carried out NMR experiments with the isolated DEPTOR long-linker and HDX-MS experiments with the full-length DEPTOR. The chemical shift perturbation of the DEPTOR long-linker (residues 228–323) bound to FRB vs. DEPTOR long-linker alone in 1H-15N BEST-TROSY NMR experiments revealed four patches, each of five residues in the long-linker that were altered by FRB binding, residues 228–232, 244–249, 261–264, and 280–285 (Figure 5B). Indeed, the regions of increased protection observed in full-length DEPTOR in the presence of the FRB in an HDX-MS experiment were in good agreement with the NMR result, as DEPTOR peptides 230–248, 270–288 and 276–296 were protected from solvent exchange in the presence of the FRB (Figure 5C, Supplementary file 2). Notably, both experiments suggested that there was not one unique FRB-binding motif in the long-linker, but multiple regions capable of interacting. This is not surprising, as it has previously been shown for the mTORC1 substrate 4EBP1 that the FRB-interacting region varies based on the substrate’s individual phosphorylation sites (Yang et al., 2017). This most likely also applies to DEPTOR, and many mTOR-dependent phosphorylation sites have previously been reported in DEPTOR’s long-linker (Duan et al., 2011; Gao et al., 2011; Peterson et al., 2009). In the HDX-MS experiment, there is also protection in the DEPTOR N-terminal region (peptide 2–32 protected) that includes part of the DEPt. Because the linker-PDZ is sufficient for the inhibition of mTORC1, only this region was included in our NMR-based study of the interaction of DEPTOR with the FRB. Interestingly, a structure of the tandem DEP domains that was recently reported, which included a small segment (residues 228–235) of the long linker, showed that this segment forms an α-helix that interacts with the N-terminus of the DEP domain (residues 21–32), in a pocket between the two DEP domains (Weng et al., 2021). It is possible that the protection that we see in the N-terminal region of DEPTOR upon binding the FRB is due to an influence of the FRB on the rigidity of the long-linker, thereby stabilizing the interaction between the linker and the tandem DEP domain region.
 
 All FRB interacting areas in the DEPTOR linker are within 45 residues of the PDZ domain, which could cover a distance of about 160 Å, if in an extended conformation. As most of the linker showed no indication of secondary structure elements, this length should be sufficient for a bipartite mTORC1 binding interaction involving the DEPTOR PDZ and the long-linker binding either a single mTOR subunit or across the dimer interface (Figure 3—figure supplement 1C).
 
-## DEPTOR PDZ forms an interaction with the long-linker that controls domain stability and creates a unique surface on PDZ
+### DEPTOR PDZ forms an interaction with the long-linker that controls domain stability and creates a unique surface on PDZ
 
 Secondary chemical shift analysis of the isolated DEPTOR long-linker suggested that the long-linker has no residual secondary structure (Figure 3—figure supplement 1B). However, the linker unexpectedly contributes significantly to the stability of the PDZ domain by interacting along the PDZ surface, following a patch of mostly uncharged and hydrophobic residues. This interaction could be detected due to a chemical shift perturbation for some PDZ domain residues in the 1H-15N BEST-TROSY spectrum for a construct consisting of the long-linker PDZ when compared to the 1H-15N BEST-TROSY spectrum of the PDZ domain alone (Figure 5D, Figure 5—figure supplement 2A). By N-terminal deletion analysis of the long-linker-PDZ, we identified a small portion of the linker that is sufficient to stabilize the PDZ domain: a construct consisting of residues 305–409 (here referred to as short-linker PDZ) showed an increased melting temperature by about 10°C (Figure 5E). Furthermore, NMR 15N backbone relaxation experiments including T1, T2 and 15N{1H} heteronuclear NOE analyses showed that the PDZ alone (PDZ-only, residues 324–409) has a high flexibility in the N-terminal region, encompassing the first β strand and the subsequent loop (Figure 5—figure supplement 2B). This suggests that the short-linker region significantly adds to the overall stability of the PDZ domain, but the short-linker-PDZ is not an mTORC1 inhibitor (Figure 2—figure supplement 1A).
 
-## DEPTOR inhibits activated mTORC1 more strongly than basal mTORC1
+### DEPTOR inhibits activated mTORC1 more strongly than basal mTORC1
 
 Our structural analysis showed that DEPTOR PDZ binds close to a region on the mTOR FAT domain that undergoes a major conformational change induced by the RHEB-GTP binding (Yang et al., 2017). This suggested that DEPTOR inhibition could be altered as a result of activation. To determine the effect of DEPTOR on activated mTORC1 in our reconstituted system, we tested DEPTOR inhibition of RHEB-GTP- or mutation-activated mTORC1. Surprisingly, the IC50 for DEPTOR inhibition decreased about 400-fold in the presence of RHEB-GTP compared to mTORC1 alone (Figure 6A), suggesting tighter binding of DEPTOR to the activated mTORC1. A similar reduction in DEPTOR IC50 was observed for the cancer-associated mTOR mutant A1459P (Figure 6B). In contrast, the EC50 for RHEB-GTP activating wild-type mTORC1 was not significantly affected by the presence of DEPTOR (Figure 6—figure supplement 1A). Cancer-associated mutations clustering around C1483 were shown to involve structure-stabilizing residues (Yang et al., 2017). These mutations significantly lower the activation energy for the transition from ground state to the RHEB-GTP-bound activated state (Yang et al., 2017). The cancer-associated mutant A1459P is in the middle of a helix fα12 at the major intra-FAT hinge, and our cryo-EM structure of the A1459P mutant bound to DEPTOR (global resolution 4.7 Å) shows this helix becomes disordered (residues 1457–1470) (Figure 6C). This disorder likely increases plasticity of the intra-FAT hinge, thereby improving DEPTOR binding. The structure of mutant mTORC1 bound to DEPTOR reveals a widening of the cleft between the mTOR N-heat and the PDZ-bound FAT domain, relative to this cleft in the structure of DEPTOR bound to wild-type mTORC1 (Figure 6D). This cleft widening might enable easier access for DEPTOR PDZ to bind to the FAT domain. Consistent with this proposal, we observe fast on/off kinetics for PDZ binding to the mTORC1 mutant A1459P with a Kd of 0.6 µM determined by SPR (Figure 6E). For the wild-type mTORC1, the Kd is increased ten-fold (Kd = 7 µM), and we observe slow on/off kinetics, which suggests that there is a rate-limiting conformational change within wild-type mTOR to facilitate binding of PDZ. Furthermore, a multibody refinement of the mTORC1/DEPTOR cryo-EM data set indicates that one of the major motions in the wild-type mTORC1/ DEPTOR complex lies in the N-heat domain (Figure 6—figure supplement 1B). The proposition that the N-heat in wild-type mTOR restricts DEPTOR PDZ binding is further supported by the 40-fold lowered IC50 for DEPTOR inhibition of the mTORΔN-mLST8 (Figure 1D), which does not possess the N-heat domain. Structurally, the interaction of DEPTOR PDZ with the FAT domain does not seem to be significantly altered between mutant and wild-type mTORC1. Despite tight binding of DEPTOR PDZ to the A1459P mutant, there is no inhibition of the mutant by the isolated PDZ domain (without the long linker), even at saturating concentrations (Figure 6—figure supplement 1C). This underlines the need for a bipartite interaction for effective mTORC1 inhibition by DEPTOR.
 
-## Phosphorylated DEPTOR does not inhibit mTORC1
+![Figure 6.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig6-v1.jpg)
+
+**Figure 6.:** (A) Increasing concentrations of RHEB-GTP lead to activated mTORC1 and at the same time result in a decreased DEPTOR IC50 (substrate was 4EBP1). Band intensities reflecting P-4EBP1 were normalized to the control (0 µM DEPTOR) and the data (mean ± SD, n ≥ 3) was fit by a nonlinear regression to determine IC50. (B) Cancer-associated, hyperactive mutant mTORC1-A1459P also shows a decreased DEPTOR IC50. Band intensities reflecting P-4EBP1 were normalized to the control (0 µM DEPTOR) and the data (mean ± SD, n ≥ 3) was fit by a nonlinear regression to determine IC50. (C) Cryo-EM reconstruction of A1459P mTORC1 mutant and DEPTOR reveals the loss of an mTOR helix at the mutation site. The site of mutation lies within the hinges of mTORC1 which are involved in introducing major conformational changes in mTOR upon RHEB-induced activation. (D) Alignment of WT and mutant A1459 mTORC1 on the PDZ-binding site in the FAT domain (shown with green density bound to the PDZ domain illustrated with magenta spheres) reveals a shift of mTOR N-heat domain for mTORC1 A1459P/DEPTOR (yellow density) with respect to mTORC1 WT/DEPTOR (gray density). This shift increases the crevice between the FAT and the N-heat domains in mTORC1 A1459P and creates an easier access for DEPTOR PDZ to its binding site. (E) Comparison of PDZ binding to wild-type and mutant mTORC1 analyzed by SPR. PDZ (construct 305–409) binds to wild-type mTORC1 with slow on/off kinetics and lower affinity, whereas it binds the mutant mTORC1, with fast on/off kinetics and 10-fold greater affinity. The total binding data were fit to a model with one-site specific binding combined with a linear non-specific component.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RHEB activation of mTORC1 occurs in the presence of DEPTOR. RHEB concentration was varied in the presence of 0 and 25 µM DEPTOR. Activation of mTORC1 occurs in the presence of DEPTOR, while the ~60% residual mTORC1 activity over the entire [RHEB] range can be observed. Quantification of western blots of phosphorylated 4EBP1 plotted as a fraction of the control (no DEPTOR/ no RHEB) vs. activated/ inhibited. One representative of three replicates is shown. (B) For multibody refinement, the wild-type mTORC1/ DEPTOR complex was split into four bodies. The refinement revealed that about 33% of variation in rotation and translation is explained by the first three eigenvectors. The first two eigenvectors correspond to a twisting motion in RAPTOR and a slight tilt in mLST8, respectively, while the third shows a rolling motion in the N-heat domain. Histograms of all amplitudes were monomodal, implying continuous motions. We selected and refined ~11,000 particles for which the amplitude along the third eigenvector is ≤ −7 (yielding the density shown in gray) and ~ 14,000 particles with the amplitude > 7 (shown in cyan). These refinements yielded maps with overall resolutions of 8.3 Å and 7.6 Å, respectively, and show the motion in the N-heat and FAT regions. (C) Short-linker PDZ does not inhibit mTORC1 A1459P, as analyzed by Phos-gels. Despite the isolated PDZ domain (short-linker PDZ construct 305–409) binding tighter to mTORC1 A1459P than wild-type mTORC1, no inhibition of the mutant was observed. Quantification of western blots of phosphorylated 4EBP1 plotted as a fraction of the control (0 µM PDZ) vs. PDZ (mean ± SD, n = 3).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A representative cryo-EM micrograph of mTORC1 A1459P-DEPTOR complex. (B) Power spectrum of the image in (A) showing contrast transfer function rings (Thon rings). (C) Some of the 2D classes are shown. (D) The local resolution map of the 3D reconstruction is shown for the mTORC1 dimer together with the resolution bar ranging from 4 Å to 7.5 Å (blue to red gradient). (E) The 'gold-standard' FSC curve for the B-factor sharpened post-processed reconstruction suggests a final resolution of the mTORC1 A1459P/DEPTOR complex of 4.7 Å. (F) Directional resolution of the final 3D reconstruction was calculated using the 3DFSC server (Tan et al., 2017).
+
+### Phosphorylated DEPTOR does not inhibit mTORC1
 
 In order to reconcile our kinetic and binding results suggesting that a cancer-associated, activated mTOR mutant shows increased DEPTOR association, with previous results showing a decrease in the amount of DEPTOR co-immunoprecipitated with exogenously expressed mutant mTOR, we examined the effect of sustained mTORC1 activity on the association of DEPTOR with mTORC1. In our kinetic analysis of the effect of DEPTOR on phosphorylation of S6K1 and 4EBP1 above, we used initial rates of mTORC1 before significant substrate depletion. However, under these conditions, there is also very little phosphorylated DEPTOR produced. To investigate whether mTOR-dependent phosphorylation of DEPTOR alters DEPTOR inhibition, we extensively phosphorylated DEPTOR with the activated mTORC1 mutant A1459P and assayed mTORC1 inhibition by this pre-phosphorylated DEPTOR. We found almost no inhibition of mTORC1 with pre-phosphorylated DEPTOR (Figure 7A). This is consistent with results in cells showing that sustained serum stimulation results in less epitope-tagged, overexpressed wild-type DEPTOR being co-immunoprecipitated with RAPTOR compared with the 13 S/T→A mutant (Peterson et al., 2009). Although previous results also have shown that DEPTOR phosphorylation leads to increased ubiquitylation by the F box protein βTrCP and subsequent degradation (Duan et al., 2011; Gao et al., 2011), our reconstituted system with no degradation machinery, formally establishes that phosphorylation of DEPTOR by mTORC1 results in decreased association of DEPTOR with mTORC1. This supports the previously-proposed mechanism of mTORC1 self-regulation of its inhibition (Figure 7B; Peterson et al., 2009). It suggests that the degradation that is observed in cells happens subsequent to loss of inhibition of mTORC1 by DEPTOR.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/68799/elife-68799-fig7-v1.jpg)
 
-**Figure 7.:** (A) DEPTOR pre-phosphorylated by activated mTORC1 (phospho-DEPTOR) shows no inhibition of mTORC1 activity. Band intensities reflecting P-S6K1367-404 peptide were normalized to the control (0 µM DEPTOR). Each data point from three independent experiments is shown with varied [DEPTOR] in each experiment and results were fit by a nonlinear regression to determine IC50. (B) Negative feedback to PI3K (dashed lines) controls the activity of the two mTORC1 inhibitors PRAS40 and DEPTOR. If mTORC1 inhibition is high, PI3K is activated due to a loss of the negative feedback. Increased p-AKT results in decreased PRAS40 inhibition, with increased mTORC1 activity, which in turn reduces DEPTOR inhibition. mTORC1 activity alone is sufficient to reduce DEPTOR inhibition, without the necessity of DEPTOR’s ubiquitination and subsequent degradation. This increased mTORC1 activity in turn induces negative feedback to PI3K and prevents an overactivation of this pathway, keeping activities balanced. (C) A model for DEPTOR interaction with mTORC1. Taken together, our work and that of Wälchli et al., 2021 suggest that there are two possible modes of DEPTOR bipartite binding, with both modes having the PDZ domain bound to the PDZ-binding site, while the second interaction involves either: (1) the DEPTOR linker binding to the FRB (our work here) or (2) the DEPt binding to the DEPt binding site (Wälchli et al., 2021). The observed inhibition is a sum of the two modes. For the basal mTORC1, bipartite interaction with mTOR via linker and PDZ might predominate. For the RHEB-bound mTORC1, DEPt could play a predominant inhibitory role by preventing allosteric changes necessary for activation. Having two modes of inhibition ensures that the DEPTOR effectively inhibits both mTORC1 (inhibition with both modes) and mTORC2 (presumably only inhibition through the DEPt-PDZ mode), since the FRB site would not be accessible in mTORC2. It is possible that there are hybrid states of the DEPTOR-bound mTORC1. For example, RHEB binding could cause the PDZ binding site to switch to its high-affinity conformation, while the DEPt maintains the active site in its basal conformation.Figure 7—source data 1.Figure 7—source data 2.Figure 7.
+**Figure 7.:** (A) DEPTOR pre-phosphorylated by activated mTORC1 (phospho-DEPTOR) shows no inhibition of mTORC1 activity. Band intensities reflecting P-S6K1367-404 peptide were normalized to the control (0 µM DEPTOR). Each data point from three independent experiments is shown with varied [DEPTOR] in each experiment and results were fit by a nonlinear regression to determine IC50. (B) Negative feedback to PI3K (dashed lines) controls the activity of the two mTORC1 inhibitors PRAS40 and DEPTOR. If mTORC1 inhibition is high, PI3K is activated due to a loss of the negative feedback. Increased p-AKT results in decreased PRAS40 inhibition, with increased mTORC1 activity, which in turn reduces DEPTOR inhibition. mTORC1 activity alone is sufficient to reduce DEPTOR inhibition, without the necessity of DEPTOR’s ubiquitination and subsequent degradation. This increased mTORC1 activity in turn induces negative feedback to PI3K and prevents an overactivation of this pathway, keeping activities balanced. (C) A model for DEPTOR interaction with mTORC1. Taken together, our work and that of Wälchli et al., 2021 suggest that there are two possible modes of DEPTOR bipartite binding, with both modes having the PDZ domain bound to the PDZ-binding site, while the second interaction involves either: (1) the DEPTOR linker binding to the FRB (our work here) or (2) the DEPt binding to the DEPt binding site (Wälchli et al., 2021). The observed inhibition is a sum of the two modes. For the basal mTORC1, bipartite interaction with mTOR via linker and PDZ might predominate. For the RHEB-bound mTORC1, DEPt could play a predominant inhibitory role by preventing allosteric changes necessary for activation. Having two modes of inhibition ensures that the DEPTOR effectively inhibits both mTORC1 (inhibition with both modes) and mTORC2 (presumably only inhibition through the DEPt-PDZ mode), since the FRB site would not be accessible in mTORC2. It is possible that there are hybrid states of the DEPTOR-bound mTORC1. For example, RHEB binding could cause the PDZ binding site to switch to its high-affinity conformation, while the DEPt maintains the active site in its basal conformation.
 
 ## Discussion
 
@@ -112,19 +342,708 @@ We found that phosphorylated DEPTOR no longer inhibits mTORC1. These findings su
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-4EBP1 (T37/46) (Rabbit, polyclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat#9459L; RRID:AB_330985</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-4EBP1 (Rabbit, polyclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat#9452S; RRID:AB_331692</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-p70 S6 Kinase (T389) (Rabbit, monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>Cat#9205L; RRID:AB_330944</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG, HRP-linked Antibody</td>
+      <td>Cell Signalling</td>
+      <td>Cat#7074; RRID:AB_2099233</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>LOBSTR cells</td>
+      <td>KeraFast</td>
+      <td>Cat# EC1001</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Expi293F cells</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A14527; RRID:CVCL_D615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL24 (plasmid)</td>
+      <td>Anandapadamanaban et al., 2019</td>
+      <td></td>
+      <td>2xStrepII-1xFlag-Human_Raptor, in pCAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL25 (plasmid)</td>
+      <td>Anandapadamanaban et al., 2019</td>
+      <td></td>
+      <td>Human_mTOR nontagged, in pCAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL26 (plasmid)</td>
+      <td>Anandapadamanaban et al., 2019</td>
+      <td></td>
+      <td>3xFlag-Human_LST8, in pCAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL95 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human_mLST8 nontagged, in pCAG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL119 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Human_Raptor nontagged, in pCAG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL121 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>2xStrepII(tev)-Human_mTOR, in pCAG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL146 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>2xStrepII(tev)-Human_mTOR_A1459P, in pCAG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL151 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>2xStrepII(tev)-Human_mTOR_1376–2549, in pCAG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL107 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_mTOR_FRB_2015–2114, in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL40 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_Rheb1, in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMA9 (plasmid)</td>
+      <td>Anandapadamanaban et al., 2019 This paper</td>
+      <td></td>
+      <td>HisLIP(tev)-Human_PRAS40,in pOPTL (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAB87 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(PreScission)Human_DEPTOR_1–409 (S204, N389 natural variant) (Full length WT), in pGEX-6P1 (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL111 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_228_409 (Linker-PDZ), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL127 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HisLIP(tev)-Human_DEPTOR_324_409 (PDZ), in pOPTL (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL138 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_1–409 (S204, N389 natural variant) (Full length WT), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL139 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_1-409-13S/T-A mutant (T241A,S244A,T259A,S260A,S263A,S265A,S282A,S283A,S287A, S293A,S297A,S298A,S299A) (Full length 13A), in pOPTG (PCR-ed from Addgene clone 21702) (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL140 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_1–323 (DEP-DEP-linker), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL141 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_1-323-13S/T-A mutant (DEP-DEP-linker 13A), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL143 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_228-409-13S/T-A mutant (linker PDZ 13A), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL157 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_1–220 (DEP-DEP), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL159 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>His(tev)-Human_DEPTOR_228–323 (Linker), in pOPTH(tev) (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL166 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human_DEPTOR_305–409 (extended PDZ), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL167 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human DEPTOR_315–409 (extended PDZ), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOPL163 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(PreScission)-Human_S6K1αII,367–404, in pGEX-6P1 (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOP826 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>in GST(tev)-Human 4EBP1, in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pOP854 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GST(tev)-Human 4EBP1-TOS-less-(114-FEMDI-118/AAAAA), in pOPTG (Available from RLW lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NEBuilder HiFi assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat#E2621S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete EDTA-free protease inhibitor tablets</td>
+      <td>Roche</td>
+      <td>Cat#11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Universal Nuclease</td>
+      <td>Pierce</td>
+      <td>Cat#88702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desthiobiotin</td>
+      <td>IBA</td>
+      <td>Cat#2-1000-005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutathione Sepharose 4B resin</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-0756-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni-NTA agarose resin</td>
+      <td>Qiagen</td>
+      <td>Cat#30230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysozyme</td>
+      <td>Sigma</td>
+      <td>Cat#L6876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCEP (Tris(2-carboxyethyl) phosphine hydrochlorid)</td>
+      <td>Soltec Ventures</td>
+      <td>Cat#M115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#BP1605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEI (Polyethyleneimine‘MAX’, MW 40,000)</td>
+      <td>Polysciences</td>
+      <td>Cat#24765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperSignal West Pico PLUS chemiluminescent substrate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LDS sample buffer</td>
+      <td>NuPAGE</td>
+      <td>Cat#NP0008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat#T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tween 20</td>
+      <td>NBS Biologicals</td>
+      <td>Cat#17767-B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>Jena Bioscience</td>
+      <td>Cat#NU-1010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GTPγS</td>
+      <td>Jena Bioscience</td>
+      <td>Cat#NU-412–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde solution, 25% in water</td>
+      <td>Sigma</td>
+      <td>Cat#G5882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D2O</td>
+      <td>Acros Organics</td>
+      <td>Cat#351430075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>InstantBlue Protein Stain</td>
+      <td>Expedeon</td>
+      <td>Cat#1SB1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Expi293 Expression Medium</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#A1435102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast Nitrogen Base Without Amino Acids and Ammonium Sulfate</td>
+      <td>Sigma</td>
+      <td>Cat#Y1251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium15N chloride</td>
+      <td>Sigma</td>
+      <td>Cat#299251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Glucose (U-13C699%)</td>
+      <td>Cambridge Isotopes Laboratores Inc</td>
+      <td>Cat#CLM-1396–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>99.9% 2H atom D2O</td>
+      <td>Cortecnet</td>
+      <td>Cat#CD5251P1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRA software package for analysis of SEC-MALS data</td>
+      <td>Wyatt</td>
+      <td>http://www.wyatt.com/products/software/astra.html; RRID:SCR_016255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ProteinLynx Global Server</td>
+      <td>Waters</td>
+      <td>720001408EN; RRID:SCR_016664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DynamX</td>
+      <td>Waters</td>
+      <td>720005145EN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/ RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Topspin</td>
+      <td>Bruker</td>
+      <td>https://www.bruker.com/products/mr/nmr/software/topspin.html; RRID:SCR_014227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRFAM-Sparky</td>
+      <td>Lee et al., 2015</td>
+      <td>http://pine.nmrfam.wisc.edu/download_packages.html RRID:SCR_014228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MARS</td>
+      <td>Jung and Zweckstetter, 2004</td>
+      <td>https://www3.mpibpc.mpg.de/groups/zweckstetter/_links/software_mars.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRPipe</td>
+      <td>Delaglio et al., 1995</td>
+      <td>https://www.ibbr.umd.edu/nmrpipe/install.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MDD compressed sensing</td>
+      <td>Kazimierczuk and Orekhov, 2011</td>
+      <td>http://mddnmr.spektrino.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>POMONA</td>
+      <td>Shen and Bax, 2015</td>
+      <td>https://spin.niddk.nih.gov/bax/nmrserver/pomona/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rosetta and NMR restraints</td>
+      <td>Raman et al., 2010</td>
+      <td>https://www.rosettacommons.org/software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Random coil shifts</td>
+      <td>Kjaergaard and Poulsen, 2011; Kjaergaard and Poulsen, 2011; Schwarzinger et al., 2001.</td>
+      <td>https://www1.bio.ku.dk/english/research/bms/sbinlab/randomchemicalshifts1/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION three software package</td>
+      <td>Scheres, 2012</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion; RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>Zhang, 2016</td>
+      <td>RELION three software package</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RELION three software package</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap</td>
+      <td>Kucukelbir et al., 2014</td>
+      <td>RELION three software package</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/ RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Casañal et al., 2020; Emsley and Cowtan, 2004</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/; RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChimeraX</td>
+      <td>Pettersen et al., 2021</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/ RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REFMAC5</td>
+      <td>Brown et al., 2015; Murshudov et al., 1997</td>
+      <td>https://www.ccp4.ac.uk; RRID:SCR_007255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.45 μM Syringe Filter</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#SE2M230I04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 μM Minisart Syringe Filter</td>
+      <td>Sartorius</td>
+      <td>Cat#17594-Q</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 mL StrepTrap HP column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#28-9075-47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 mL HiTrap Q HP column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-1153-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 mL HiTrap Heparin HP column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-0407-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>5 mL HisTrap FF column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-5255-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiLoad 16/60 Superdex 200 column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-1069-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiLoad 16/60 Superdex 75 column</td>
+      <td>GE Healthcare</td>
+      <td>Cat#17-1068-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superose 6 increase10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>Cat#29-0915-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–12% BisTris NuPAGE Protein Gel</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#NP0323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperSep Phos-tag 7.5% precast gels</td>
+      <td>FUJIFILM Wako Chemicals</td>
+      <td>Cat#192–17381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>iBlot 0.2 µM pore size nitrocellulose Transfer Stacks</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#IB301002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15 mL Amicon Ultra-153K Centrifugal Filters</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#UFC900324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15 mL Amicon Ultra-1530K Centrifugal Filters</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#UFC903024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15 mL Amicon Ultra-15100K Centrifugal Filters</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#UFC910024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4 mL Amicon Ultra-4 100K Centrifugal Filters</td>
+      <td>Millipore Sigma</td>
+      <td>Cat#UFC810024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Enzymate Pepsin Column</td>
+      <td>Waters</td>
+      <td>Cat#186007233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acquity UPLC BEH C18 VanGuard Pre-column</td>
+      <td>Waters</td>
+      <td>Cat#186003975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acquity UPLC BEH C18 column</td>
+      <td>Waters</td>
+      <td>Cat#186002346</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Roger L. Williams (rlw@mrc-lmb.cam.ac.uk).
 
 The cryo-EM map and the model are deposited with the EMDB (wild-type mTORC1/DEPTOR complex is entry EMD-13099 and A1459P-mTORC1/DEPTOR complex is entry EMD-13097) and PDB (wild-type mTORC1/DEPTOR complex is entry 7OX0 and A1459P-mTORC1/DEPTOR complex entry 7OWG). Backbone assignments of DEPTOR PDZ, mTOR-FRB and DEPTOR linker have been submitted to the BMRB, Biological Magnetic Resonance Bank with the accession numbers 50324, 50325 and 50326, respectively.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 E. coli C41(DE3)-RIPL cells were used for expression of all DEPTOR constructs as well as for 4EBP1, S6K1, RHEB and the isolated mTOR FRB domain. E. coli LOBSTR cells (EC1001, KeraFast) were used for the expression of PRAS40. For unlabeled proteins, the cells were grown in 2xTY media at 37°C, induced at the OD600 = 0.7 with 0.3 mM isopropyl-d-1-thiogalactopyranoside, followed by 16 hr of growth at 18°C before harvest. To express proteins labeled for NMR studies, cells were grown in supplemented minimal media, as described in the ‘NMR sample preparation’ section of the detailed methods. Expi293F cells (Thermo Fisher A14527, RRID:CVCL_D615) were used for the production of mTORC1 and its mutants. Cells were grown in a Multitron Pro shaker set at 37°C, 8% CO2 and 125 rpm. Cells were transfected at a cell density of 2.5x106 cells/mL by co-transfecting plasmids (1.1 mg total DNA/L cells) using PEI (Polyethyleneimine ‘MAX’, MW 40,000, Polysciences, 24765, total 3 mg PEI/L cells).
 
-## Method detail
+### Method detail
 
-## Recombinant protein expression and purification
+#### Recombinant protein expression and purification
 
 For DEPTOR (WT), DEPTOR 13S/T-A, DEPDEP, DEPDEP linker and linker-PDZ, a cell pellet of a 12 L E. coli culture was resuspended in 75 mL of lysis buffer (50 mM Tris pH 8, 100 mM NaCl, 1 mM TCEP). A description of the growth of constructs labeled for NMR can be found in the 'NMR sample preparation' section below. Two Complete EDTA-free inhibitor tablets (Roche), 500 µL of a 100 mM PEFA solution and 40 mg of lysozyme were added to the cell suspension, which was subsequently sonicated and centrifuged at 35,000 rpm for 35 min. The resulting supernatant was incubated with 3 mL equilibrated Glutathione-Sepharose 4B beads (GE Healthcare) for 45 min at 4°C, while rolling at 18 rpm. Sedimentation of the beads for 2 min at 600 g and the careful removal of the unbound fraction was followed by extensive washing with lysis buffer under gravity flow conditions. Bound DEPTOR was incubated with TEV protease overnight at 4°C. Cleaved DEPTOR protein was then collected and applied to a 5 mL HiTrap Heparin HP column (GE Healthcare) equilibrated with HEP-A buffer (50 mM HEPES pH 8, 100 mM NaCl, 1 mM TCEP). After washing the column with 80 mL of HEP-A buffer, DEPTOR was eluted with a gradient using HEP-B buffer (50 mM HEPES pH 8, 450 mM NaCl, 1 mM TCEP). DEPDEP was purified via a 5 mL HiTrap Q column (GE Healthcare) in place of the Heparin column using identical buffer composition. A final size-exclusion chromatography step on a S75 16/60 column was performed (50 mM HEPES pH 8, 100 mM NaCl, 1 mM TCEP) and fractions were analyzed by SDS-PAGE. DEPTOR-containing fractions were combined and concentrated to 23 mg/mL. The purified DEPTOR protein was flash frozen in liquid nitrogen and stored at −80°C.
 
@@ -134,7 +1053,7 @@ Human RHEB was cloned into a pOPTG vector encoding an N-terminal GST-tag followe
 
 Human PRAS40 was purified as described previously (Anandapadamanaban et al., 2019).
 
-## mTORC1 activity assays
+#### mTORC1 activity assays
 
 All reactions were performed in kinase buffer (KB) consisting of 25 mM HEPES pH 7.4, 75 mM NaCl, 0.9 mM TCEP, 5% glycerol, at 30°C for a duration of 45 min for non-activated mTORC1, 2 to 4 min for activated mTORC1, and at 20°C for 20 min for the unstable DEPTOR PDZ construct using non-activated mTORC1. Reactions were set up by preincubating 100 nM non-activated mTORC1 with either 5 µM 4EBP1, 10 µM TOS-less 4EBP1 or 30 µM GST-S6K1367-404 peptide as substrates and various concentrations of the inhibitors for 10 min on ice. After 30 s temperature equilibration at 30°C, reactions were started by the addition of 75 µM ATP and 10 mM MgCl2. For the activated mTORC1 complexes (mTOR-A1459P mutant or in the presence of RHEB-GTP), 30 µM 4EBP1 or GST-S6K1367-404 peptide and 20 nM mTORC1 were used and the reaction was started with 500 µM ATP and 10 mM MgCl2. For RHEB-activated mTORC1, RHEB was preincubated for 1 hr with a 30-fold molar excess of GTPγS (Jena Bioscience NU-412–20, lot IT008-18). Next, mTORC1, DEPTOR, 4EBP1 and RHEB-GTPγS were mixed in the order of mentioning and preincubated for 10 min on ice. After 30 s temperature equilibration at 30°C, reactions were started by the addition of 500 µM ATP and 10 mM MgCl2. All reactions were quenched with 2x SDS sample buffer and resolved on a 4–12% NuPage Bis-Tris gel. Western blots were performed using a 0.2 µM pore size nitrocellulose membrane (Invitrogen IB301002) and the iBlot dry blotting transfer system (Invitrogen). Blocking was performed using 5% Marvel in TBST buffer (100 mM Tris-HCl, 150 mM NaCl, 0.1% Tween 20). Antibodies were obtained from Cell Signalling (P-4EBP1 (T37/46) Rabbit AB, 9459L, RRID:AB_330985; 4EBP1 Rabbit AB, 9452S, RRID:AB_331692; P-p70 S6 Kinase (T389) Rabbit, 9205L, RRID:AB_330944; Anti-Rabbit IgG, HRP-linked Antibody, 7074, RRID:AB_2099233). Antibody solutions contained 5% BSA in TBST, using 1:1000 dilution for primary antibodies and 1:5000 for the secondary antibody. Detection was performed using the Bio-Rad ChemiDoc-Touch Imaging System.
 
@@ -146,13 +1065,13 @@ To compare the inhibition by DEPTOR vs. phospho-DEPTOR, reactions were set up us
 
 All IC50 were determined by the non-linear regression y=ymin + (ymax-ymin)/(1+([DEPTOR]/IC50)). KM,4EBP1 in the presence of DEPTOR was fit according to the Michaelis Menten equation y = vmax*[4EBP1]/(KM + [4EBP1]). Statistical analysis and curve fitting for IC50 experiments was performed in GraphPad Prism (RRID:SCR_002798). Each individual run was normalized to [inhibitor] = 0 µM. Standard deviation of at least three independent replicates is shown for each data point in the graph. Standard deviation for the fit IC50, for the residual activity (ymin) and for KM,4EBP1 is reported in the figures.
 
-## Cryo-EM sample preparation
+#### Cryo-EM sample preparation
 
 Purified wild-type mTORC1 (0.7 µM) and DEPTOR (1.4 µM) were mixed in ~300 µL and incubated for 30 min on ice. Following the addition of 0.02% glutaraldehyde (Sigma G5882) from a 1% glutaraldehyde stock in GraFix buffer A (50 mM HEPES pH 7.5, 0.1 M NaCl, 1 mM TCEP, 10% glycerol), the sample was immediately subjected to a gradient fixation (GraFix) (Kastner et al., 2008). For that, the sample was loaded on a 12 mL gradient of 10–30% glycerol and 0–0.2% glutaraldehyde in 50 mM HEPES pH 7.5, 0.1 M NaCl, 1 mM TCEP performed in a SW40 rotor tube (Ultra-Clear, Beckman 344060) using a gradient maker (Biocomp Instruments). The sample was centrifuged in a SW40 rotor (Beckman) at 33,000 rpm for 14 hr. After centrifugation, 0.45 mL fractions were collected manually from top of the tube, analyzed by SDS-PAGE, and the fractions containing crosslinked material were pooled, quenched by the addition of final 50 mM Tris pH 7.5 and concentrated to 250 µL using an Amicon Ultra-15 100 kDa concentrator. Cross-linked mTORC1/DEPTOR was further run on a Superose 6i 10/300 column equilibrated in 50 mM HEPES pH7.5, 200 mM NaCl, 0.3% CHAPS and 1 mM TCEP and the peak fractions were concentrated to OD280 = 0.11 used immediately for cryo-EM grid preparation.
 
 Purified mutant mTORC1 A1459P (1.2 µM) and DEPTOR (6.8 µM) were preincubated in the presence of 1 mM MgCl2 and 500 µM AMP-PNP (Jena Biosciences) for 20 min and used for cryo-EM grid preparation.
 
-## Cryo-EM data collection and processing
+#### Cryo-EM data collection and processing
 
 Holey carbon Quantifoil Au R 1.2/1.3 (300 mesh) grids were glow-discharged using an Edwards Sputter Coater S150B for 60 s at 40 mA. The grids were covered with graphene oxide as previously described (Boland et al., 2017). In short, 3 µL of a 0.2 mg/mL graphene oxide dispersion (Sigma, cat number 777676) was added to the carbon side of the grids and incubated for 1 min. Excess of graphene oxide solution was removed by blotting with Whatman No.1 filter paper and washed three times with Milli-Q H2O before air-drying for 5 min at room temperature. Graphene oxide covered grids were stored in a grid box overnight.
 
@@ -160,7 +1079,7 @@ A 3 μL aliquot of freshly-prepared crosslinked mTORC1/DEPTOR complex at OD280 =
 
 A 3 µL aliquot of mutant mTORC1 A1459P/DEPTOR complex was added onto UltrAuFoil R 1.2/1.3 Au 300 mesh (Quantifoil Micro Tools GmbH) after the grid was glow-discharged using an Edwards Sputter Coater S150B for 60 s at 40 mA. Plunge freezing was performed using Vitrobot (Thermo Fisher Scientific) with a blotting time of 2 s at 14°C and 95% humidity and a force of −15. A total of 4759 micrographs of the mutant mTORC1 A1459P /DEPTOR complex were acquired on a FEI Titan Krios electron microscope operated at 300 keV. Zero-energy loss images were recorded on a Gatan K3 Summit direct electron detector operated in super-resolution mode with a Gatan GIF Quantum energy filter (20 eV slit width) using EPU (Thermo Fisher Scientific) for automated collection. Images were recorded at a calibrated magnification of 81,000 (pixel size of ~1.1 Å) with a dose rate of ~1.12 electrons/Å2/s. An exposure time of 3.25 s was fractionated into 50 movie frames adding to a total dose of 56 electrons/Å2. For data collection, a defocus-range was set to −1.4 to −3.0 µm.
 
-## Image processing
+#### Image processing
 
 All image-processing steps were done using the RELION three software package (Scheres, 2012, RRID:SCR_016274), which includes Gctf (Zhang, 2016), MotionCor2 (Zheng et al., 2017), and ResMap (Kucukelbir et al., 2014). Micrographs were processed using GPU-accelerated MotionCor2 to correct for electron beam-induced sample motion, while contrast transfer function (CTF) parameters were determined using Gctf. Reference-based autopicking was performed on the full dataset using Relion3 with initial templates obtained from a previous mTORC1/DEPTOR dataset.
 
@@ -172,7 +1091,7 @@ To improve resolution (especially in the DEPTOR region), we expanded the wild-ty
 
 To improve the density map of DEPTOR PDZ region, we performed another focused classification with signal subtraction on the monomer particles. A mask was applied to the region of interest on the PDZ (DEPTOR residues 324–409) and surrounding mTOR domains (N-heat and FAT domain, 61–903 and 1474–1644, respectively), particles were 3D classified without image alignment, and the best class was selected for further refinement of the original (unmasked) particles. This resulted in smaller subsets of the original 223,576 particles; in which the PDZ density was better defined. A 3D refinement of the above selected particles resulted in a map at an overall 4.3 Å resolution, based on the gold-standard FSC = 0.143 criterion (Figure 3—figure supplement 2H).
 
-## Cryo-EM model building and refinement
+#### Cryo-EM model building and refinement
 
 After correction for the detector modulation transfer function (MTF) and B-factor sharpening, the post-processed map was used for inspection in Chimera (Pettersen et al., 2004) and model building in Coot (Casañal et al., 2020; Emsley and Cowtan, 2004). Superimposing basal-state monomer and RHEB-activated monomer models of mTORC1 taken from previously reported structures (PDB 6BCX and 6BCU, respectively), it was apparent that the 6BCX agreed better with the mTORC1/DEPTOR density. The 6BCX model was broken into domains that were rigidly fit with COOT to the observed density. The model was manually fit to the density using ISOLDE (Croll, 2018) in ChimeraX (Pettersen et al., 2021) (RRID:SCR_015872). The CS-Rosetta model for the DEPTOR PDZ domain was manually fit to the density. Backbone dihedral angles were predicted for each residue using Talos-N (Shen and Bax, 2013). These were used as external torsion angle restraints for real-space refinement in COOT (RRID:SCR_014222) and for REFMAC5 (Brown et al., 2015; Murshudov et al., 1997) (RRID:SCR_007255). The model was refined in REFMAC with external (PDB 6BCX) restraints for mTORC1 from PROSMART (Kovalevskiy et al., 2016; Nicholls et al., 2017) and self, H-bond and Talos-N restraints for the PDZ domain. Manual building and refinement were iterated. A symmetrized dimer map was constructed using the mTORC1/DEPTOR monomer by superimposing two copies of the monomer density onto the dimer density refined with C1 symmetry in Relion 3D. A composite map with the two mTORC1 monomer maps was calculated using EMDA (Warshamanage and Murshudov, 2021). The symmetrized dimer model was adjusted manually and refined with REFMAC5 and ISOLDE to resolve a few minor clashes at the interface between the monomers. One monomer was extracted and submitted to PDB with BIOMT records to reconstruct the biological dimeric assembly. Local resolutions were estimated using ResMap (Figure 3—figure supplement 2E,G).
 
@@ -180,11 +1099,11 @@ For the A1459P mutant mTORC1 in a complex with DEPTOR, the wild-type monomer mTO
 
 The density for the PDZ domain was clearer in the mTORC1-A1459P/DEPTOR structure than it was in the wild-type structure, probably reflecting a greater affinity of this activated construct for the DEPTOR PDZ. To obtain an unbiased verification of the placement of the PDZ domain we masked out all density due to mTORC1, leaving only density in the region between the FAT domain and the N-heat, and this density was about the size that we would expect for the PDZ domain. We used Chimera to do a global search of this density to find the optimal translation and orientation of the PDZ model in the density. We placed the NMR model in 100,000 initial orientations/translations and carried out a local search for each placement. The initial placements were random orientations and random translations, with the translations restricted so that the center of the PDZ model would be within 10 Å of the center of the putative PDZ density. The orientation/translation that yielded the highest correlation coefficient (0.86) corresponded to the placement that we chose when manually fitting the density. Among 100,000 trials carried out in the global search, this placement was located 4873 times. It is likely that this represents the global maximum correlation placement of the NMR model in the cryo-EM density, since the next most common placement had a lower correlation (0.82) and was reached only 874 times. The lowest correlation coefficient observed in the broad search was 0.73 (found one time in 100,000 trials). The results suggest that our model of the PDZ interaction with mTORC1 is unique and optimal.
 
-## Multibody refinement analysis of wild-type mTORC1/DEPTOR particles
+#### Multibody refinement analysis of wild-type mTORC1/DEPTOR particles
 
 Multibody refinement analysis was performed following the protocol described previously (Nakane et al., 2018). The wild-type mTORC1/ DEPTOR complex was split into four bodies of >100 kDa each via the Segger tool in Chimera (Figure 6—figure supplement 1B; Pintilie et al., 2010). They were arbitrarily named ‘mTOR’, ‘RAPTOR’, ‘M-heat’, and ‘N-heat’, although they do not correspond to these exact domain boundaries. Corresponding masks were created using 15 Å lowpass filtered maps and soft-edges with a width of 20 Å. All bodies were set to rotate relative to the ‘mTOR’ body by 10 or 15 degree, ‘mTOR’ was set to rotate relative to the ‘M-heat’, and the standard deviations on the body translations were all set to 2 to 3 pixels (2.8–3.2 Å). With the relion_flex_analyse program two separate STAR files with 10,558 particles and 13,975 particles were created, for which the amplitude along the third eigenvector is less than −7, or greater than 7, respectively (Figure 6—figure supplement 1B). Separate refinements of these subsets yielded maps with overall resolution estimates of 8.3 and 7.6 Å, respectively.
 
-## NMR sample preparation
+#### NMR sample preparation
 
 For NMR experiments, isotopically labeled DEPTOR PDZ and linker-PDZ were expressed in E. coli C41(DE3)-RIPL cells with 100 µg/mL ampicillin. After overnight growth in 50 mL 2xTY media, 20 mL of the starter culture was spun down at 3000 g and washed with water. The cell pellet was resuspended in 1 L M9 minimal media (6 g/l Na2HPO4, 3 g/l KH2PO4, 0.5 g/l NaCl) with 1.7 g/L yeast nitrogen base without amino acids and ammonium sulfate (YNB - Sigma Y1251). 1 g/L 15NH4Cl and 4 g/L 13C-glucose were supplemented for 15N and 13C labeling, respectively. Cells were grown at 220 rpm in a shaking incubator and expression were induced with 1 mM IPTG at OD600 = 0.8 at 23°C for 16 hr.
 
@@ -194,19 +1113,25 @@ The isolated mTOR FRB domain (residues 2015–2114) was purified from a 6 L cult
 
 The DEPTOR linker (residues 228–323) was purified from a 6 L culture of C41(DE3)RIPL cells transformed with plasmid pOPL159, grown to OD600 = 0.8 and induced with 0.3 mM IPTG at 16°C for 18 hr. The His6-tagged protein was purified by affinity chromatography on Ni-NTA agarose beads (Qiagen 30230) and cleaved on beads with TEV protease o/n at 4°C. The cleaved protein was diluted with 1 vol of 50 mM Tris pH8, 1 mM TCEP (to achieve ~ 50 mM NaCl) and loaded on a 5 mL HiTrapQ column equilibrated in 50 mM HEPES pH8, 25 mM NaCl, 1 mM TCEP. The flow-through fraction containing DEPTOR linker was concentrated in a 3K Amicon Ultra-15 concentrator and further purified by gel filtration on Superdex 75 16/60 column equilibrated in 50 mM HEPES pH 8, 100 mM NaCl, 1 mM TCEP.
 
-## DEPTOR PDZ homology model generation by NMR
+#### DEPTOR PDZ homology model generation by NMR
 
 All NMR data sets were collected at 278K using Bruker Avance II+ 700 MHz or 600MHz Avance III spectrometers with TCI triple resonance cryoprobes unless otherwise stated. All samples were prepared with 5% D2O as a lock solvent, at pH 8 with 50 mM HEPES and 200 mM NaCl.
 
 1H-15N BEST-TROSY (band selective excitation short transients-transverse relaxation optimized spectroscopy) were collected for all samples using an optimized pulse sequence (Favier and Brutscher, 2011). The assignment of backbone HN, N and Cα,Cβ resonances of the 190 µM 13C/15N DEPTOR PDZ (residues 324–409) sample was completed using the following 3D datasets acquired as pairs to provide own and preceding carbon connectivities. In most cases the amide proton and nitrogen dimension were taken from the 1H-15N BEST-TROSY experiment: HNCO, HN(CA)CO, CBCA(CO)NH and HNCACB, which were used as experimental pairs with 1024, 64 and 110 complex points in the proton nitrogen and carbon dimensions, respectively. Partial Hα, Hβ side-chain chemical shift assignments were obtained from an HBHA(CO)NH spectrum collected with 1024, 64, and 110 complex points in the proton, nitrogen and the second proton dimensions, respectively. Assignment of the carbon side-chain resonances was completed with HC(C)H- and (H)CCH-TOCSY experiments (also collected with 1024, 64, and 110 points). These assignments enabled the analysis of a limited set of through space connectivities from 15N and 13C edited NOESY experiments both acquired with a mixing time of 120 ms and collected with 2048, 60/80, and 160 points in the proton, nitrogen/carbon, and second proton dimensions, respectively. All data were processed using Topspin 3.1 (Bruker, RRID:SCR_014227) and analyzed using NMRFAM-Sparky (Lee et al., 2015, RRID:SCR_014228). The backbone assignment was aided using MARS (Jung and Zweckstetter, 2004). The assigned backbone chemical shifts were used to guide calculation of a structural model of the PDZ domain using POMONA/CS-RosettaCM (Shen and Bax, 2015). Including a limited number of long-distance NOE restraints further refined the model; these restraints were curated so that they were from amino acids three or more residues apart as previously described (Raman et al., 2010).
 
-## NMR dynamics characterization and binding experiments
+#### NMR dynamics characterization and binding experiments
 
 The dynamic properties of the DEPTOR PDZ protein were investigated using standard Bruker 15N T1, T2 and 15N{1H}NOE [heteronuclearNOE] experiments. T1 relaxation times were calculated using delays of 10, 20, 40, 80, 160, 320, 640, 1280, and 2000 ms and T2 relaxation times with delays of 16.9, 33.8, 67.6, 101.4, 135.2, 169.0, 202.8, and 253.5 ms, collected with 3 s relaxation delays. Peak intensities and curve fitting were calculated using Sparky. The heteronuclearNOE experiment was collected as a pseudo 3D spectrum, using a 120° proton pulse train with a 5 ms delay for a total of 5 s, with interleaved on and off resonance saturation. The hetNOE values were calculated from peak intensities according to the equation Ion /I off.
 
 To observe the interaction of DEPTOR PDZ with mTORC1, 32 µM of 2H,13C,15N DEPTOR PDZ was added to 3.2 µM of the mTORC1 complex, with the excess PDZ shifting the equilibrium towards a higher percentage of bound state. Here, binding is observed as a residual effect in the unbound pool of PDZ and is manifested as line broadening in the 1H-15N HSQC experiment when compared to free DEPTOR PDZ only. The 15N-1H HSQC experiment was used here instead of the 1H-15N BEST-TROSY to avoid potential solvent exchange bias. Peaks heights were normalized to the signal of the C-terminal residue before the ratio calculated. Peaks that had reduced relative intensity define the interaction surface for the PDZ domain.
 
-Structural differences between the DEPTOR PDZ domain and the DEPTOR linker-PDZ construct were first identified by chemical shift perturbations in 1H-15N BEST-TROSY experiments. In the absence of a complete linker-PDZ assignment each signal of the linker-PDZ spectrum from a 114 μM sample was compared with that of the assigned PDZ domain collected under the same conditions, giving a weighted chemical shift perturbation calculated by Amin et al., 2013; Rowe et al., 2009:Δδtotal=δH2+δN520.5with the smallest perturbation reported as a minimal chemical shift perturbation map (Muskett et al., 1998; Williamson et al., 1997).
+Structural differences between the DEPTOR PDZ domain and the DEPTOR linker-PDZ construct were first identified by chemical shift perturbations in 1H-15N BEST-TROSY experiments. In the absence of a complete linker-PDZ assignment each signal of the linker-PDZ spectrum from a 114 μM sample was compared with that of the assigned PDZ domain collected under the same conditions, giving a weighted chemical shift perturbation calculated by Amin et al., 2013; Rowe et al., 2009:
+
+$$
+Δ\deltatotal=\deltaH^{2}+\frac{\deltaN}{5}^{2}^{0.5}
+$$
+
+with the smallest perturbation reported as a minimal chemical shift perturbation map (Muskett et al., 1998; Williamson et al., 1997).
 
 Both the mTOR-FRB domain and the DEPTOR linker construct were assigned in order to identify residues involved in the binding interaction. FRB assignments were obtained at 293K and transferred to the 278K spectra using a temperature titration. The backbone assignment of the 70 µM FRB sample (residues 2015–2114) was completed using 3D HNCO, HN(CA)CO and HNCACB, CBCA(CO)NH experimental pairs - all collected with 1024, 64, and 96 points in the proton, nitrogen and carbon dimensions respectively and with 20–40% non-uniform sampling (NUS). Data were processed using NMRPipe (Delaglio et al., 1995) including compressed sensing for data reconstruction (Kazimierczuk and Orekhov, 2011) and analyzed as above for the PDZ data. A 140 µM 15N/13C DEPTOR linker (228-323) construct was assigned using the same experiment pairs as above, supplemented with HN(COCA)NNH and HN(CA)NNH experiments (2048, 64, and 80 points in the proton, nitrogen, and carbon dimensions, and 25% NUS) to provide sequential N,N connectivities. Carbon-detect 3D experiments, in recent years established for the assignment of disordered proteins due to their superior resolution, allowed the completion of the sequential assignment including proline connectivities. Carbon-detect 3D experiment pairs (HCA)CON and (HCA)NCO were collected with up to 1024, 128, and 80 complex points in the carbonyl-carbon, nitrogen, and indirect aliphatic-carbon dimensions respectively, whereas the CBCACON and CBCANCO pair was acquired with 1024, 72, and 80 points in carbonyl-carbon, nitrogen, and indirect aliphatic-carbon dimensions.
 
@@ -214,14 +1139,26 @@ Secondary chemical shift analysis to describe conformational preferences for the
 
 Binding of the DEPTOR linker to mTORC1 FRB was observed by 1H-15N BEST-TROSY NMR. FRB residues involved in the binding were identified by the addition of up to 220 µM of unlabeled linker-PDZ to 40 µM of 15N-labeled FRB. Similarly, DEPTOR linker residues involved in binding were identified by the addition of up to 320 µM of unlabeled FRB to a 40 µM 15N-labeled DEPTOR linker sample. Data from both titrations were analyzed using the above equation.
 
-## HDX experiments
+#### HDX experiments
 
 Experiments followed suggested standards by the HDX-MS community (Masson et al., 2019). For global exchange, a 5 µL solution of 5 µM DEPTOR (50 mM HEPES pH 8.0, 100 mM NaCl, 1 mM TCEP) was incubated for 3 s with 40 µL of ice-cold D2O buffer of identical composition (92.8% D2O), for a final concentration of 74.24% D2O. The reaction was quenched using 20 µL of 2 M guanidinium chloride and 2.4% v/v formic acid, shock-frozen in liquid nitrogen and stored at −80°C. For measurement of the incorporation of deuterium, samples were thawed and injected onto an M-Class Acquity UPLC with HDX Manager technology (Waters) kept at 0.1°C. Samples were digested on-line using an Enzymate BEH immobilized Pepsin Column (Waters, 186007233) at 15°C for two min, with peptides being eluted onto an Acquity UPLC BEH C18 column (Waters, 186002346), equilibrated in Buffer Pepsin-A (0.1% v/v formic acid), using a 3–43% gradient of Pepsin-B buffer (0.1% v/v formic acid, 99.9% acetonitrile) over 12 min. Data were collected on a Waters Synapt G2 Si using MSe mode (Silva et al., 2005), using an electrospray source (set at 3 kV), from 50 to 1800 m/z. Peptides were identified from non-deuterated samples of DEPTOR in the independent replicates using ProteinLynx Global Server (Waters, RRID:SCR_016664) against a library of DEPTOR and porcine pepsin, and then imported into DynamX (Waters) software using the following criteria for automated selection: Minimum Intensity 7500, minimum sequence length 6, maximum sequence length 30, minimum products 1, minimum products per amino acid 0.11, minimum consecutive products 1, minimum sum Intensity for products 500, maximum MH+ error five ppm, and identification in all three non-deuterated files. 205 peptides were initially identified, reduced to 179 after a manual quality control process (presence of overlapping peptides etc.) was conducted.
 
 The HDX binding study of FRB and DEPTOR was performed by preincubating 100 µM FRB with 100 µM DEPTOR in buffer (50 mM HEPES pH 8.0, 100 mM NaCl, 1 mM TCEP) at room temperature for 1 hr. An aliquot of 5 µL was incubated with 45 µL of D2O buffer at room temperature for 3, 30, 300, and 3000 s, the reaction was quenched and treated as described, with the exception of using a 5–36% gradient of acetonitrile in 0.1% v/v formic acid for elution from Acquity UPLC BEH C18 column. Data were collected from 300 to 2000 m/z, and mass analysis was performed as described above. Deuterium incorporation was not corrected for back-exchange and represents relative, rather than absolute changes in deuterium levels. Changes in H/D amide exchange in any peptide may be due to a single amide or a number of amides within that peptide. All time points in this study were prepared at the same time and individual time points were acquired on the mass spectrometer on the same day.
 
-## Surface plasmon resonance
+#### Surface plasmon resonance
 
 Twin-Strep-tagged wild-type and activated mTORC1 mutant A1459P were purified as described above with the exception that no TEV-protease was added, and the protein was eluted from the Strep-Trap HP columns using 10 mM desthiobiotin in 40 mL elution buffer prior loading onto a 5 mL HiTrap Q column.
 
-SPR was performed using a Biacore T200 using CM5-sensor chips (Cytiva). Both reference control and analyte channels were equilibrated 50 mM HEPES pH 7.5, 100 mM NaCl, 1 mM TCEP. Twin-Strep-tagged mTOR was captured onto a Strep-Tactin XT (IBA Lifesciences) coated surface prepared according to the supplied instructions. SPR runs were performed with analytes injected for 120 s followed by a 300 s dissociation in a 1:2 dilution series with initial concentrations of 20 µM for DEPTOR PDZ (residues 305–409). After reference and buffer signal correction, sensogram data were fitted using GraphPad Prism (RRID:SCR_002798). The equilibrium response (Req) data were fitted to: a single site interaction model to determine Kd:Req=CRmaxC+Kd+NsC+Bwhere C is the analyte concentration and Rmax is the maximum response at saturation, Ns is a linear non-specific binding term and B is the background resonance; or a two-site model:Req=CRmax1C+Kd1+CRmax2C+Kd2+Bwhere Rmax1 and Kd1, and Rmax2 and Kd2 are the maximum response and dissociation constants for site 1 and 2 respectively.
+SPR was performed using a Biacore T200 using CM5-sensor chips (Cytiva). Both reference control and analyte channels were equilibrated 50 mM HEPES pH 7.5, 100 mM NaCl, 1 mM TCEP. Twin-Strep-tagged mTOR was captured onto a Strep-Tactin XT (IBA Lifesciences) coated surface prepared according to the supplied instructions. SPR runs were performed with analytes injected for 120 s followed by a 300 s dissociation in a 1:2 dilution series with initial concentrations of 20 µM for DEPTOR PDZ (residues 305–409). After reference and buffer signal correction, sensogram data were fitted using GraphPad Prism (RRID:SCR_002798). The equilibrium response (Req) data were fitted to: a single site interaction model to determine Kd:
+
+$$
+R_{eq}=\frac{CR_{max}}{C+K_{d}}+N_{s}C+B
+$$
+
+where C is the analyte concentration and Rmax is the maximum response at saturation, Ns is a linear non-specific binding term and B is the background resonance; or a two-site model:
+
+$$
+R_{eq}=\frac{CR_{max1}}{C+K_{d1}}+\frac{CR_{max2}}{C+K_{d2}}+B
+$$
+
+where Rmax1 and Kd1, and Rmax2 and Kd2 are the maximum response and dissociation constants for site 1 and 2 respectively.

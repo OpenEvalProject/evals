@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00jc20583 Department of Physiology and Biophysics, University of Colorado School of Medicine Aurora United States
+1. Department of Physiology and Biophysics, University of Colorado School of Medicine Aurora United States ([ROR:00jc20583](https://ror.org/00jc20583))
 
 † Corresponding author
 
@@ -39,7 +39,7 @@ Due to the challenges associated with examining the relevance of the space-time 
 
 ## Results
 
-## SAC morphology imposes substantial signal attenuation but does not preclude inter-branch interactions
+### SAC morphology imposes substantial signal attenuation but does not preclude inter-branch interactions
 
 Calcium signals occurring in the terminal dendrites of SACs exhibit remarkable DS, both when visual stimulation is focused on the recorded dendrite and when stimuli engage the entire dendritic tree (Chen et al., 2016; Ding et al., 2016; Euler et al., 2002; Koren et al., 2017; Morrie and Feller, 2018; Poleg-Polsky and Diamond, 2016; Poleg-Polsky et al., 2018).
 
@@ -59,11 +59,23 @@ Initially, we activated all the synapses that innervated dendrites sharing a com
 
 Hence, despite the substantial decrease in inter-dendrite signal propagation resulting from the cell’s morphology and passive characteristics, the model predicts significant voltage interaction throughout the cell. This observation can be attributed to the disparity in the number of active inputs between the two conditions. Specifically, the combined length of dendrites sharing a common second-order parent constitutes less than 10% of the entire dendritic tree’s length. This proportion also applies to the number of synapses involved in focal or global stimuli. Thus, although the efficacy of individual focal synapses is considerably more pronounced (Figure 1A and B), the larger number of inputs on other dendrites compensates for the signal attenuation caused by an individual synapse – leading to a comparable response to focal and global activation patterns (Figure 1C).
 
-## Development of a machine-learning model for enhancing DS in BC–SAC interactions
+### Development of a machine-learning model for enhancing DS in BC–SAC interactions
 
 Our findings highlight the existence of long-distance interactions between synaptic inputs that extend beyond the boundaries of a single dendritic compartment. Unless explicitly mentioned otherwise, all subsequent simulations and experiments described below employed full-field moving bars. This choice is physiologically relevant as SACs exhibit a high degree of DS in response to such stimuli (Chen et al., 2016; Ding et al., 2016; Euler et al., 2002; Koren et al., 2017; Poleg-Polsky and Diamond, 2016; Poleg-Polsky et al., 2018). Additionally, full-field stimulation circumvents the nonlinear processing of edges and emerging objects in BCs (Gaynes et al., 2022; Strauss et al., 2022), which could potentially influence the interpretation of responses to stimuli appearing within the SAC RF (see ‘Discussion).
 
 Previous studies suggested that differences in release profiles between proximal and distal BCs could contribute to directional tuning in isolated SAC dendrites, especially if proximal inputs exhibit more sustained and delayed dynamics (Fransen and Borghuis, 2017; Greene et al., 2016; Kim et al., 2014; Srivastava et al., 2022). However, do similar activation profiles promote DS during whole-cell integration? To investigate the impact of spatial differences in input kinetics on directional tuning, we extended the multicompartmental SAC model to include BCs, modeled as point neurons with center-surround RFs, each proving a single excitatory input to the postsynaptic SAC. Following the space-time model, we considered two distinct populations of BCs innervating the proximal and distal postsynaptic regions (Figure 2A and B). BCs within the same population shared identical RF characteristics, but the timing of their responses varied to account for the spatiotemporal progression of the visual stimulus over the simulated circuit.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Schematic representation of the bipolar–SAC circuit model. (B, Left) demonstrates the spatial components of the bipolar RF center (gray) and surround (dashed) components. The spatiotemporal receptive field (RF) components were convolved with horizontally moving bar stimuli (B, center) to generate the inputs for the multicompartmental SAC model (B, right). Two distinct bipolar groups, each with a unique RF formulation, innervated the proximal and more distal SAC dendrites. (B, right) Simulated SAC outputs are color-coded by their direction selectivity index (DSI) levels. The degree of postsynaptic direction selectivity was measured within 30 µm from the horizontal axis (these outputs are highlighted with black strokes). (C) The evolutionary algorithm training process involved iterative selection and mutation steps. Each generation included candidate solutions for bipolar RF templates (top row) that were integrated into SAC dendrites (middle row) and ranked based on the directionality and amplitude of calcium signals (bottom row). The best solutions underwent mutation and were propagated to the next generation. (D) Example response dynamics of the proximal (blue) and distal (orange) bipolar cells (BCs) (top), representative voltage (middle), and calcium (bottom) signals recorded from a SAC dendrite (location as in Figure 1). Dots represent peak response amplitudes in inward (gray) and outward (black) stimulation directions. The model was trained on five velocities (top, units: mm/s). (E) Mean (± SD) directional tuning achieved by the model (solid circles, n = 15). Open circles represent the optimal DSI in a bipolar–SAC model with an identical formulation of proximal and distal BCs. In this scenario, direction selectivity is mediated by voltage filtering in SAC dendrites.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Direction selectivity index (DSI) measured from the best-performing model obtained through evolutionary algorithm training.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Tuning curves of experimentally recorded excitatory inputs in starburst amacrine cells (SACs). (A) Representative excitatory postsynaptic current (EPSC) profile, obtained by averaging three responses from the same cell. (B) The normalized peak EPSC amplitudes (shaded areas – SD, n = 4). (C) Example profiles of presynaptic bipolar release (top), corresponding voltages (middle), and calcium responses (bottom) in SAC dendrite from models trained to maximize the DSI values. (D) Comparison of the peak somatic currents (top), dendritic calcium levels (middle), and DSI (bottom) as a function of stimulus velocity in model formulation presented in Figure 2 (training objective was large DSI and strong calcium responses, black circles) vs. the model trained on maximizing DSI only (as in C, open squares). The model trained solely on DSI fails to capture the observed velocity profiles of the somatic currents and the reported stability of calcium levels.
 
 To investigate which bipolar dynamics promote postsynaptic DS, we employed a machine-learning approach based on evolutionary algorithms (EA, Figure 2C; Ezra-Tsur et al., 2021). This methodology involved a population of models competing to achieve the training objective. In the initial generation or iteration of the algorithm, the parameters describing RF properties of the proximal and distal BC populations were randomly selected. We stimulated the network with horizontally moving bars and recorded calcium signals on terminal SAC dendrites near the horizontal axis. Direction selectivity index (DSI) was computed from the peak calcium values (Figure 2B and C). Initially, DSI levels were very low (mean [± SD] DSI = 7 ± 3%, Figure 2—figure supplement 1), with variations among the models due to random initialization. The next generation of candidate solutions was formed by selecting the highest-scoring models to replace the below-average performers. To avoid overfitting, the models were trained with a range of stimulus velocities. Next, the RF properties of the BC population, as well as the global postsynaptic properties (axial resistance, leak, and voltage-gated calcium channel conductance), were subject to random mutations, and this cycle was repeated for 100 generations.
 
@@ -73,7 +85,7 @@ Notably, the directional tuning profile was found to be dependent on the specifi
 
 In contrast to the predictions of the threshold-based strategy, physiological somatic excitatory currents (Figure 2—figure supplement 2) and dendritic calcium responses in SACs exhibit consistent peak levels across the velocity spectrum (Ding et al., 2016; Koren et al., 2017). Furthermore, the performance of the threshold-based approach, as measured by DSI, only marginally surpassed the standard configuration (Figure 2—figure supplement 2).
 
-## Presynaptic RF parameters influencing optimal directional performance in SACs
+### Presynaptic RF parameters influencing optimal directional performance in SACs
 
 To assess the relative contribution of BC kinetics to the resulting DS, we modified the model such that all presynaptic cells shared the same RF formulation. It is worth noting that even with the requirement of identical properties in the bipolar population, the algorithm could explore a vast parameter space by adjusting both the RF properties of presynaptic cells and the postsynaptic integration parameters. However, despite this flexibility, the resulting simulations achieved only a fraction of the DS observed with spatially varying RFs (Figure 2E). This result, obtained by integrating realistic BC responses with morphologically detailed SACs, suggests that the space-time wiring model could have a major influence on directional computations in biological circuits.
 
@@ -85,7 +97,7 @@ Using a similar approach, we further investigated the contribution of individual
 
 Notably, temporal differences in BC responses were not solely influenced by these parameters; we also found that the spatial extent of the RF could introduce an activation lag, which was inversely proportional to RF size: neurons with wider RFs can respond to a moving object sooner compared to their immediate neighbors with smaller RFs. In line with this observation, the optimal solutions in the full model evolved toward larger RF centers in the distal BCs (42 ± 15 µm vs. 32 ± 9 µm, Figure 3C). The difference in RF size was more pronounced when center width was the only varying RF parameter (97 ± 18 µm vs. 22 ± 3 µm), resulting in a measurable lag (approximately 135 ms for stimulus velocity = 0.5 mm/s, Figure 3). The impact of spatial RF properties on directional tuning was not as pronounced as the temporal RF characteristics but managed to elevate the DS by about twofold over the space-invariant configuration (DSI = 19 ± 4%, p<10–11 vs. identical BCs, Figure 3C).
 
-## The space-time wiring model does not require dendritic isolation
+### The space-time wiring model does not require dendritic isolation
 
 Previous studies investigating the postsynaptic mechanisms underlying DS in SACs have highlighted the importance of electrotonic isolation of terminal dendrites in promoting directional signals (Ding et al., 2016; Koren et al., 2017; Poleg-Polsky et al., 2018). However, since the space-time wiring mechanism primarily operates on presynaptic circuits, it may be less reliant on postsynaptic compartmentalization. To test this hypothesis, we manipulated inter-dendritic signal propagation by modifying the axial and membrane resistance properties of the model in segments around the soma (Figure 4).
 
@@ -97,7 +109,7 @@ As anticipated, increasing the axial resistance led to decreased somatic depolar
 
 Collectively, these findings suggest that the effectiveness of the space-time wiring model relies primarily on BC kinetics, which are influenced by the spatiotemporal properties of their RF organization. In contrast, the specific details of postsynaptic integration appear to play a lesser role in this DS mechanism.
 
-## Diversity of glutamatergic inputs in murine SACs
+### Diversity of glutamatergic inputs in murine SACs
 
 In the previous sections, we examined the theoretical implementation of the space-time wiring hypothesis through detailed simulations of the bipolar–SAC circuit. To investigate the similarity between the RF properties of mouse BCs innervating SACs and the optimal RFs predicted by our models, we conducted glutamate imaging using a two-photon microscope on an ex vivo retina preparation. To specifically target ON- and OFF-SACs, we virally expressed floxed iGluSnFR in ChAT-Cre mice (Figure 5). Then, 3–6 wk after vector introduction, we performed ex vivo experiments using a whole-mount retina preparation. Visual stimuli consisted of full-field flashes and bars moving alternatively either from left to right or in the opposite direction at five different velocities (Figure 5B) and oriented bars used to map RFs using the filtered back-projection approach (Figure 5C).
 
@@ -109,17 +121,53 @@ To analyze the diversity of BC signaling in response to motion, similarly respon
 
 Next, we analyzed common response motifs across recording regions. We identified functional release clusters using hierarchical clustering of the aligned and normalized dF/F waveforms evoked by a single motion velocity (0.5 mm/s). This procedure was performed separately for ON and OFF ROIs (n = 334 and 135 regions, respectively, Figure 6A and C). We determined the optimal number of functional clusters from the curve describing the within-cluster variance (Figure 6—figure supplement 1). The analysis identified seven groups for the ON-SAC population (Figure 6A, Figure 6—figure supplement 1) and six for the OFF-SACs (Figure 6C, Figure 6—figure supplement 1) as providing the optimal separation (Franke et al., 2017; Gaynes et al., 2022; Matsumoto et al., 2021; Matsumoto et al., 2019; Rasmussen et al., 2020; Strauss et al., 2022). As BC dynamics vary systematically with axonal stratification level in the IPL (Franke et al., 2017), we sorted the functional clusters based on their transiency of the response dynamics, with C1 representing the most transient shape (Figure 6B and D).
 
-## Mismatch between response lags measured from flashed and moving stimuli
+![Figure 6.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig6-v1.jpg)
+
+**Figure 6.:** (A, C) Left: the average glutamate signals in functional clusters determined from regions of interest (ROI) responses to motion (speed = 0.5 mm/s, color-coded by cluster identity). Shaded areas mark the standard deviation. The dotted line indicates the time of peak response of cluster C1. Right: heatmaps of the responses from individual ROIs. (B, D) Mean (± SD) waveform characteristics measured from individual ROIs in each cluster. TI, transiency index. Clusters are sorted based on their transiency. SAC, starburst amacrine cells.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The variance between input clusters computed based on the shapes of motion responses in individual regions of interest (ROI) as the function of the number of clusters. The metric was normalized to the levels observed with two clusters. The number of clusters was selected as the threshold required to cross e–1 (~36%) of unexplained variance. (B) The prevalence of the functional clusters across recordings. Color coding indicates the relative frequency of the functional clusters observed within each retina preparation.SACs, starburst amacrine cells.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Functional clusters whose combination was found to lead to the strongest postsynaptic direction selectivity (DS) are highlighted in bold and shaded for emphasis. SACs, starburst amacrine cells.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) A single field of view recorded in ON-SAC dendrites expressing iGluSnFR. Each region of interest (ROI) is color-coded based on its functional cluster identity, displayed in grayscale. (B) Changes in fluorescence for different stimuli speeds (from 0.25 mm/s to 4 mm/s) and directions. Color coding indicates functional cluster; bold traces – average responses across all ROIs belonging to the same cluster. The onset of ON-C2 responses was earlier in both directions. This effect is particularly pronounced at slower velocities. SACs, starburst amacrine cells.
+
+### Mismatch between response lags measured from flashed and moving stimuli
 
 The original ‘space-time’ model identified response delay, also known as ‘lag’, as the primary factor influencing directional tuning (Kim et al., 2014). The interval between the presentation of visual stimuli and the neural response varies systematically among distinct BC subtypes (Baden et al., 2013). Kim et al., 2014, proposed that Hassenstein–Reichardt correlator is implemented in the bipolar–SAC circuit with a combination of delayed proximal and short-lag distal BCs. Lags are typically identified from flash responses. In order to contribute to motion computations, the lag should be an immutable feature of the visual response and persist with moving stimuli. Given the difference in signal transformation between motion and flash responses (Figure 7—figure supplements 1 and 2; Gaynes et al., 2022), we sought to investigate whether the onset of glutamate response also depends on stimulus characteristics. In Figure 7A, we present the correlation between response delay, measured within the same ROIs for all glutamate clusters, for both moving and stationary stimuli. For flashes, the lag was determined as the interval between the appearance of the stimulus and the initiation of the fluorescent response. In the case of moving stimuli, we measured the interval starting from the time the stimulus swept over the position of the cell.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Correlation between the onset of motion responses and the static response lag (A), and RF width (B) color-coded by functional cluster identity. Clusters with the longest lags have wide RFs and earliest responses to motion. (C) Illustration of the interaction between two mechanisms contributing to the time of response onset. Cells with prolonged visual processing delay will respond later to the presentation of a static stimulus (black). When moving bars are presented, response timing depends on the processing time lag, the size of the RF, and stimulus velocity.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Waveform parameters measured from responses recorded in ON-SAC regions of interest (ROIs) to moving bars (speed = 0.5 mm/s) plotted as the function of the dynamics in responses to full-field flashes. Black lines represent linear fits. R is the Pearson correlation coefficient. Clusters with significantly different parameters (p<0.05, paired t-test followed by Bonferroni correction for multiple comparisons) are highlighted with larger circles. Error bars represent SD. SACs, starburst amacrine cells.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** For each ON cluster, the left plot displays a representative RF shape obtained using the filter back-projection technique. The black curves represent the x and y RF profiles measured at the center of mass. On the right, the responses in the same region of interest (ROI) are shown for a series of stimuli consisting of rightward and leftward motion (speed = 0.5 mm/s) and flashes ('f', duration = 2 s) under the following conditions (illustrated schematically at the top): full-field stimulation, masks over the right/left halves of the visual arena, stimuli confined to a region extending 100 µm from the horizontal center of the arena, and right/left masks with edges 50 µm from the horizontal center of the arena. Two examples are shown for the ON-C4 cluster. The responses to flashes generally align with the spatial extent of the RF as determined using the filtered back-projection technique. Note the asymmetry in motion responses near edges.
 
 Unexpectedly, our experimental findings have uncovered a reversed relationship in the response delays (Pearson correlation coefficient, r = –0.98). Functional clusters with the longest lags in response to flashes tended to respond quickest to moving bars (Figure 7A). In certain clusters, we observed negative delays in response to motion, indicating that glutamate release begins before the moving bar reaches the position of the cell (Berry et al., 1999; Trenholm et al., 2013). Negative delays are more likely in cells with wide RFs, leading us to suspect that early responders to motion possess spatially extensive RFs. Our observations supported this hypothesis as we discovered a clear relationship between the lag in response to moving stimuli and the measured RF half-width (r = –0.99, Figure 7B).
 
 Taken together, our results indicate a significant difference between the activation lag following a flashed and moving stimuli. The spatial properties of the RF play a significant role in determining the delay for motion responses but have no impact on the lag seen following the presentation of full-field flashes, which engage the entire RF regardless of its size.
 
-## Determination of RF characteristics from motion responses
+### Determination of RF characteristics from motion responses
 
 To gain deeper insights into the signal processing underlying the glutamatergic signals to SACs, we set to study the RF composition of the functional clusters. Toward this task, we decided to train center-surround RF models to match the shapes of the recorded waveforms. We adapted model formulation described above for simulating BC dynamics, with the addition of a filter to account for iGluSnFR binding and unbinding dynamics, thereby simulating the sensor-mediated filtering of glutamate signals drive (Armbruster et al., 2020; Hain and Moser, 2023; Srivastava et al., 2022). Separate EA models were trained for each functional cluster, utilizing five stimuli with different velocities to drive the model. The objective of the training was to replicate the shape of the recorded fluorescent signals during the presentation of moving bars at corresponding velocities (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig8-v1.jpg)
+
+**Figure 8.:** (A) Center-surround RF model was trained using an evolutionary algorithm to match experimentally recorded waveforms in ON-SACs. Experimental data is color-coded as in Figure 6. The output of the seven models is shown in black. (B) Comparison between experimentally recorded responses to 4-s-long full-field flashes and the predictions of the models (black). (C) Mean (± SD) RF properties measured from each of the models (n = 10 repeats for each cluster) are shown in black. The corresponding parameters determined experimentally are shown in gray. Delay and rise time were measured from flash responses, and the full width at half maximum (FWHM) of the center was analyzed from RF maps. The right panel illustrates the predicted spatial extent of the center (gray) and surround (dotted black) RF components in each functional cluster. SACs, starburst amacrine cells.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) As in Figure 8A, for functional clusters innervating OFF-SACs. (B) As in Figure 8C, for the dataset presented in (A). SACs, starburst amacrine cells.
 
 Using this approach, we were able to faithfully reproduce the empirical glutamate dynamics observed in the training dataset (Figure 8A, Figure 8—figure supplement 1). As an initial validation of the algorithm’s predictive power, we compared glutamate signals to the response of the RF models measured during the presentation of full-field flashes (Figure 8B). Encouragingly, even though these stimuli were not part of the training set, the simulated output reliably replicated experimental waveforms, despite substantially different dynamics in many clusters (Figure 8B, Figure 8—figure supplement 1).
 
@@ -127,11 +175,19 @@ By leveraging the more interpretable stimulus-response dynamics of the full-fiel
 
 As a final validation of the novel RF mapping approach we developed, we examined the spatial characteristics of the glutamate signals. Our models consistently converged on narrow RFs, typically ranging from 50 to 100 µm for the majority of functional clusters, consistent with the classical RF description for retinal BCs (Figure 8C, Figure 8—figure supplement 1; Euler et al., 2014; Franke et al., 2017; Kuo et al., 2016; Schwartz et al., 2012; Strauss et al., 2022; Turner et al., 2018; Wienbar and Schwartz, 2018). Finally, in a close match with experimentally mapped RFs (Figure 7B), the models predicted significantly more extensive RFs for ON-C1 and ON-C4, with half-widths of 379 ± 13 and 198 ± 6.7 µm, respectively (Figure 8C), strongly suggesting that RF formulation derived from motion responses is accurate and could be used to predict signal processing in untrained visual conditions.
 
-## Realistic BC dynamics suggest a modest effect of the space-time wiring on directional tuning in ON- and OFF-SACs
+### Realistic BC dynamics suggest a modest effect of the space-time wiring on directional tuning in ON- and OFF-SACs
 
 After establishing the diversity of excitatory dynamics during visual motion, we proceeded to examine the extent to which their combination could enhance DS in SACs. To achieve this, we replaced the synthetic bipolar description in the bipolar–SAC EA model with fits to experimentally determined glutamatergic waveforms. These fits provided a deconvolved representation of the excitatory drive, which is more likely to approximate the actual presynaptic signals reaching the SACs. We note that the difference between the recorded and deconvolved waveforms was minimal, and utilizing the experimentally recorded shapes did not significantly impact the subsequent results (data not shown).
 
 We first considered a simplified case where two distinct bipolar populations targeted the proximal and more distal postsynaptic regions. The timing of bipolar responses varied to account for the spatiotemporal progression of the visual stimulus over the simulated circuit. Figure 9 illustrates the peak DS index achieved with EAs trained to find the postsynaptic properties (axial resistance, leak, and voltage-gated calcium channel conductance) that lead to optimal directional performance for all possible proximal and distal functional cluster placement combinations. In line with prior work (Fransen and Borghuis, 2017; Kim et al., 2014; Srivastava et al., 2022; Stincic et al., 2016; Wu et al., 2023), the optimal DS was attained when proximal BCs with sustained waveforms were combined with transient distal cells. For ON-SACs, the highest DSI = 17 ± 2% was observed with inputs from ON-C6 (proximal) and ON-C2 (distal). In the case of OFF-SACs, the inputs performed slightly better, with the highest DSI levels (21 ± 3%) associated with OFF-C1 and OFF-C5 (Figure 9). In contrast, SACs innervated by BCs with identical RF formulation had substantially lower directional capabilities (DSI = 5 ± 1% for ON-SACs and 7 ± 1% for OFF-SACs, Figure 9). As in our previous experiments, we permitted the models to adjust both passive and active postsynaptic properties. Our observations yielded a result consistent with what we observed with synthetic BC inputs: the degree of measured DS did not exhibit a significant correlation with the extent of dendritic isolation (Figure 9—figure supplement 1).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig9-v1.jpg)
+
+**Figure 9.:** (A) Schematic representation of the evolutionary algorithm employed to maximize direction selectivity (DS) by utilizing deconvolved waveforms from experimentally recorded clusters as the input. (B) Top: DS achieved by the models when various combinations of input waveforms are targeted toward the proximal and distal SAC dendrites. Squares and dots represent cases where the waveforms are identical for all bipolar cells. Bottom: representative calcium signals obtained from the best (left) and worst (right) combinations of input waveforms.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Directional tuning of each proximal-distal pair shown in Figure 9 as a function of membrane conductance (reciprocal of membrane resistance, left), axial resistance (middle), and the voltage-gated calcium conductance (right) measured in the optimal model. Lines, linear fits. Higher direction selectivity (DS) levels were associated with a leakier membrane and lower internal resistance in starburst amacrine cells (SACs). These parameters have opposite effects on dendritic isolation.
 
 It is possible that the restriction to innervation by two input populations precludes the model from converging on a better solution. To take full advantage of the heterogeneity of the experimentally measured signals, we examined if directional outcomes improve when SACs are allowed to integrate over more presynaptic clusters. Inspired by a previous model (Fransen and Borghuis, 2017), we distributed presynaptic BCs over concentric annuli, preserving input symmetry along the soma-dendritic tip axis (Figure 10A). Specifically, we grouped the inputs into 10-µm-wide bins based on their distance from the postsynaptic soma. Each bin was assigned a single functional cluster RF description drawn at random. Now, the search algorithm evolved to determine the spatial distribution of the recorded functional clusters that produced the most robust directional tuning across a range of stimulus velocities (Figure 10).
 
@@ -142,6 +198,14 @@ It is possible that the restriction to innervation by two input populations prec
 We observed that the simulations converged on similar solutions, irrespective of the initial randomized cluster distribution. Optimal DS was achieved in both ON and OFF circuits when two clusters dominated the proximal and distal innervation regions (Figure 10B). Consequently, the levels of DS obtained in these simulations did not significantly differ from the findings of the simple proximal-distal parameter exploration presented earlier (ON-SACs: DSI = 17 ± 5%, OFF-SACs: DSI = 21 ± 6%, Figure 10C–F). Based on these results, we can conclude that optimal combination of excitatory signals has the potential to triple the level of directional tuning over SAC-intrinsic mechanisms (Figure 10D and F; Tukker et al., 2004; Vlasits et al., 2016; Wu et al., 2023).
 
 Why do the solutions found with experimentally recorded glutamate waveforms underperform compared to the synthetic model? Focusing on the clusters identified by our analysis as contributing to the highest directional tuning, we note that although distal clusters (ON-C2 and OFF-C1) had the shortest duration and fastest delays, their kinetics and RF description were about twofold longer than the optimal synthetic distal inputs (Figure 11, Figure 11—figure supplement 1), with the largest difference being the rise time dynamics of ON-C2 (303 ± 110 ms vs. 45 ± 12 ms for optimal model). Even further pronounced were the differences in recorded vs. optimal proximal solutions. The durations of ON-C6 and OFF-C5 were 1.25 ± 0.49 s/1.28 ± 0.34, respectively, compared to 0.31 ± 0.15 s measured for synthetic RFs. Similarly, the transiency indexes calculated for these clusters were around 0.4, while optimal synthetic waveforms had TI = 0.87 ± 0.09 (Figure 11). Thus, glutamate release in the bipolar–SAC circuit has slow dynamics that can mediate substantial, albeit suboptimal, DS.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig11-v1.jpg)
+
+**Figure 11.:** Waveform parameters, measured for synthetic receptive field (RFs) driving optimal direction selectivity (squares) and for experimentally determined functional clusters (filled circles – ON, open circles – OFF). Color coding as in Figure 6. Clusters identified as best contributors for the Hassenstein–Reichardt correlator (proximal: ON-C2 and OFF-C1; distal: ON-C6 and OFF-C5) are marked with arrows.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/90456/elife-90456-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** (A) The mean (± SD) values measured for RF synthetic and experimental components. Data presented as in Figure 11. (B) Comparison of response waveforms as a function of stimulus velocities produced by optimal synthetic model (top, same data as in Figure 2) and experimentally recorded glutamate signals (middle, bottom, same data as in Figure 10).
 
 ## Discussion
 
@@ -167,7 +231,7 @@ Overall, by combining experimental methods and computational modeling, our study
 
 ## Methods
 
-## NEURON simulation
+### NEURON simulation
 
 Multicompartmental simulations were performed using NEURON 8.2 (https://www.neuron.yale.edu/neuron) on four reconstructed SAC morphologies (https://neuromorpho.org/neuron_info.jsp?neuron_name=185exported, https://neuromorpho.org/neuron_info.jsp?neuron_name=cell8_wt_traces, https://neuromorpho.org/neuron_info.jsp?neuron_name=cell2_wt_traces, https://neuromorpho.org/neuron_info.jsp?neuron_name=cell1_wt_traces). The number of segments varied from 495 to 879. The diameter of branches further than 30 µm from the soma was set to 200 nm. The initial global passive parameters were as follows: passive conductance = 4e–4 S/cm2, membrane capacitance = 1 µF/cm2, reversal potential = –60 mV, and axial resistance = 150 Ω cm. N-type calcium conductance model, adapted without modifications from Benison et al., 2001, was distributed throughout the entire dendritic tree. In order to calculate the internal calcium levels, a calcium diffusion mechanism was incorporated into all dendrites. This mechanism had a time constant of 50 ms, and the resting calcium levels were set to 100 nM.
 
@@ -175,19 +239,51 @@ The SAC received innervation from 200 BC inputs, which were randomly distributed
 
 Stimuli were presented within a 1-mm-wide arena, matching the experimentally presented stimuli (see below). To determine RF activation, the spatial overlap between the Gaussian functions describing the center and surround RF components and the shape of the stimulus was computed separately for each time step (Δt = 1 ms).
 
-Areat corresponds to the normalized fraction of the stimulated RF area at time t, computed for each component. For full-field static flashes, the entire center and surround were activated when the stimulus was presented. For moving stimuli, areat was the sum of the area of the Gaussian function describing the center or surround RF component that spatially overlapped with the stimulus:areat=∑time=1te[−⟮time−arenasizespeed×Δtwidth2ln2×speed×Δt⟯]
+Areat corresponds to the normalized fraction of the stimulated RF area at time t, computed for each component. For full-field static flashes, the entire center and surround were activated when the stimulus was presented. For moving stimuli, areat was the sum of the area of the Gaussian function describing the center or surround RF component that spatially overlapped with the stimulus:
 
-where width is the FWHM of the corresponding RF component. Subsequently, RF center and surround responses at time t were determined from the following equations:RFcenter,t=areacenter,t-RFcenter,t-1/risetimecenter+RFcenter,t-1×adaptationt-1adaptationt=max⁡0,adaptationt-1-RFcenter,t/decaytimecenterRFsurround,t=areasurround,t-RFsurround,t-1/risetimesurround×strengthsurround
+$$
+area_{t}=\sumtime=1te^{[−⟮time−\frac{\frac{arenasize}{speed\timesΔt}}{\frac{width}{2\sqrt{ln2}\timesspeed\timesΔt}}⟯]}
+$$
 
-The integration of center and surround RFs was calculated in a conductance-based model of synaptic integration, determined from the excitatory and inhibitory driving forces:RFfull,t=RFamplitude×RFcenter,t+RFsurround,t×reversalsurroundRFcenter,t+RFsurround,t+R
+where width is the FWHM of the corresponding RF component. Subsequently, RF center and surround responses at time t were determined from the following equations:
 
-where Rin is the input resistance. Because the magnitude of RF activation depended on its size, Rin was set to be proportional to the spatial extent of the center.Rin=0.1×areacenter,∞
+$$
+RF_{center,t}=area_{center,t}-RF_{center,t-1}/risetime_{center}+RF_{center,t-1}\timesadaptation_{t-1}
+$$
 
-RF activation in each BC was temporally adjusted based on stimulus velocity and the spatial position:∆tshift=RFxVelocity
+
+
+$$
+adaptation_{t}=max⁡0,adaptation_{t-1}-RF_{center,t}/decaytime_{center}
+$$
+
+
+
+$$
+RF_{surround,t}=area_{surround,t}-RF_{surround,t-1}/risetime_{surround}\timesstrength_{surround}
+$$
+
+The integration of center and surround RFs was calculated in a conductance-based model of synaptic integration, determined from the excitatory and inhibitory driving forces:
+
+$$
+RF_{full,t}=RF_{amplitude}\times\frac{RF_{center,t}+RF_{surround,t}\timesreversal_{surround}}{RF_{center,t}+RF_{surround,t}+R_{}}
+$$
+
+where Rin is the input resistance. Because the magnitude of RF activation depended on its size, Rin was set to be proportional to the spatial extent of the center.
+
+$$
+R_{in}=0.1\timesarea_{center,∞}
+$$
+
+RF activation in each BC was temporally adjusted based on stimulus velocity and the spatial position:
+
+$$
+\Deltat_{shift}=\frac{RF_{x}}{Velocity}
+$$
 
 The following constraints were imposed: RF amplitude, surround strength, and reversal were permitted to vary between 0 and 1; rise/decay times and RF widths were positive. Overall, RFfull was expressed in unitless units in the [0,1] interval, with values closer to 1 signifying strong activation.
 
-## Training of evolutionary models
+### Training of evolutionary models
 
 During the training of evolutionary models aimed at understanding the contribution of BC dynamics to SAC DS (as shown in Figures 2—4), the bipolar population was equally divided into proximally and distally innervating cells according to their proximity to SAC soma.
 
@@ -195,47 +291,59 @@ For each generation, a total of 16 bipolar–SAC models were executed simultaneo
 
 Likewise, random initial values were chosen for passive conductance (ranging from 1e–5 to 1e–3 S/cm2), axial resistance (constrained between 50 and 300 Ω cm), N-type calcium conductance and voltage offset (limits = ± 30 mV), as well as synaptic conductance (limits = 0.01–1 nS). All models were presented with the same stimuli, consisting of bars moving from left to right and from right to left at five different speeds: 0.25, 0.5, 1, 2, and 4 mm/s. The height of the bar was 1 mm, its duration was 2 s. The intensity of the stimuli was set to 1 and the background was set to zero (AU).
 
-Calcium signals were recorded from SAC sites located on the distal dendrites, specifically those within proximity of less than 30 µm from the horizontal axis. When a single branch was stimulated, only sites on that dendrites were included in the analysis. For each stimulation speed (comprising two different stimulation directions), we computed the DS index of each site as follows:DSI=ROutward-RInwardROutward+RInward
+Calcium signals were recorded from SAC sites located on the distal dendrites, specifically those within proximity of less than 30 µm from the horizontal axis. When a single branch was stimulated, only sites on that dendrites were included in the analysis. For each stimulation speed (comprising two different stimulation directions), we computed the DS index of each site as follows:
 
-where ROutward and RInward are the peak calcium levels recorded for the outward and inward directions from the perspective of the dendrite. To minimize extreme calcium signals, we computed the directional metric:directionalmetric=DSI×e-ROutward-Caopt2Caopt2
+$$
+DSI=\frac{R_{Outward}-R_{Inward}}{R_{Outward}+R_{Inward}}
+$$
+
+where ROutward and RInward are the peak calcium levels recorded for the outward and inward directions from the perspective of the dendrite. To minimize extreme calcium signals, we computed the directional metric:
+
+$$
+directionalmetric=DSI\timese^{\frac{-R_{Outward}-Ca_{opt}^{2}}{Ca_{opt}^{2}}}
+$$
 
 where Caopt was the optimal calcium level in the outward direction, set to 500 nM.
 
 Subsequently, the models were ranked based on the average directional metric calculated over the five stimulation speeds. The two best-performing models were retained without any changes, while the parameters of the rest of the models were randomly selected to match either the best or second-best-performing models and then mutated as follows: for each parameter describing the presynaptic RF and postsynaptic SAC properties, a Gaussian distribution with a mean of 1 and a standard deviation of 5% was used to determine a scaling factor. This scaling factor was multiplied with the parameter value and combined with a random value drawn from a uniform distribution ranging from –0.015 to 0.015. These modified (mutated) models constituted the next generation of candidate solutions. Typically, we evolved the model over 100 generations, as empirical evidence has shown that increasing the number of generations beyond this point does not yield significantly improved results.
 
-## RF estimation from recorded glutamate waveforms
+### RF estimation from recorded glutamate waveforms
 
 To estimate the RF that could mediate the recorded glutamate waveforms presented in Figure 7 and Figure 7—figure supplement 1, we employed an EA for training RF models to match the shape of experimentally observed glutamate release clusters. Each cluster was considered separately during the analysis.
 
-The model contained a single RF, and its parameters were described using the same parameter set as mentioned earlier. It is important to note that the fluorescent signal produced by iGluSnFR represents a temporally filtered version of the original glutamatergic drive (Armbruster et al., 2020; Hain and Moser, 2023; Srivastava et al., 2022). In order to mimic the iGluSnFR waveforms in the models, we applied a filtering process to the output of the simulation. On each time step t0, we convolved the value of the simulated response with a wavelet described as the difference between two exponential functions:filtert0=et-t0Fdecay-et-t0Frise
+The model contained a single RF, and its parameters were described using the same parameter set as mentioned earlier. It is important to note that the fluorescent signal produced by iGluSnFR represents a temporally filtered version of the original glutamatergic drive (Armbruster et al., 2020; Hain and Moser, 2023; Srivastava et al., 2022). In order to mimic the iGluSnFR waveforms in the models, we applied a filtering process to the output of the simulation. On each time step t0, we convolved the value of the simulated response with a wavelet described as the difference between two exponential functions:
+
+$$
+filter_{t0}=e\frac{t-t0}{F_{decay}}-e^{\frac{t-t0}{F_{rise}}}
+$$
 
 where Frise = 10 ms, Fdecay = 50 ms are the rise and decay times of the filter, respectively. The resulting vectors starting at time t0 and lasting till the end of simulation duration were combined to produce the filtered version of the full response.
 
 Following the initial random instantiation, simulated RF responses were calculated for the five different speeds. The fitness of each model was then evaluated based on the mean square error between the simulated waveforms and the experimentally recorded waveforms. The next generation was formed by introducing potentially mutated offspring of models that exhibited the lowest errors. These mutations were performed according to the methodology described above.
 
-## Determination of optimal DS with experimentally recorded glutamatergic waveforms
+### Determination of optimal DS with experimentally recorded glutamatergic waveforms
 
 To investigate the impact of the spatial dependence of the presynaptic innervation waveform on postsynaptic DS, we conducted an initial analysis using a modified version of the bipolar–SAC model. In this derivative model, we systematically replaced the RF descriptions of proximal and distal BCs with fits to experimental data. The focus of the evolution process was on altering postsynaptic parameters to optimize synaptic integration toward the largest directional performance. For the data shown in Figure 9, we employed a different training approach. We divided the input synapses into annuli with a width of 10 µm, centered around the soma. Initially, each annulus was randomly assigned one of the RF fits corresponding to functional clusters.
 
 As the model evolved, its goal was to achieve the best possible directional performance based on the postsynaptic parameters. Additionally, there was a 5% probability for each annulus to replace the assigned functional cluster identity. This allowed for evolution in the spatial configuration of the functional clusters, enabling us to examine what spatial distribution of experimentally recorded waveforms produces the optimal DS.
 
-## Virus expression and imaging procedures
+### Virus expression and imaging procedures
 
 All animal procedures were conducted in accordance with US National Institutes of Health guidelines, as approved by the University of Colorado Institutional Animal Care and Use Committee (IACUC). Mice were housed in a 12 light/12 dark cycle at room temperature (~22°C), 40–60% relative humidity. For intravitreal virus injections, 8–12-week-old ChAT-Cre transgenic mice (Jax strain 031661, https://www.jax.org/strain/031661) were anesthetized with isoflurane; ophthalmic proparacaine and phenylephrine were applied for pupil dilation and analgesia. A small incision at the border between the sclera and the cornea was made with a 30-gauge needle. Then, 1 µl of AAV9.hsyn.FLEX.iGluSnFR.WPRE.SV40 (a gift from Loren Looger, Addgene plasmid # 98931; http://n2t.net/addgene:98931; RRID:Addgene_98931, 1013 vg/ml in water) solution was injected with a blunt tip (30 gauge) modified Hamilton syringe (https://www.borghuisinstruments.com/). Experiments on retinas from all animal groups were performed 2–6 wk following virus injection on 11–17-week-old animals (four males and four females).
 
 Mice were not dark-adapted to reduce rod-pathway activation. Then, 2 hr after enucleation, retina sections were whole mounted on a platinum harp with their photoreceptors facing down, suspended ~1 mm above the glass bottom of the recording chamber. The retina was kept at ~32°C and continuously perfused with Ames media (Sigma-Aldrich, https://www.sigmaaldrich.com/) equilibrated with 95% O2/5% CO2.
 
-## Visual stimulation
+### Visual stimulation
 
 Light stimuli were generated in Igor Pro 8 (Wavemetrics, https://wavemetrics.com/) running in Windows 10 and displayed with a DPL projector (Texas Instruments, https://www.ti.com/, model 4710EVM-G2) connected as a second monitor. Only the blue projector LED was used, and its light was further filtered with a 450 nm low-pass filter (Thorlabs, https://thorlabs.com/, FEL0450). Light from the visual stimulus was focused by the condenser to illuminate the tissue at the focal plane of the photoreceptors (resolution = 10 µm/pixel, background light intensity = 30,000–60,000 R* rod–1). Both vertical and horizontal light stimulus positions were checked and centered daily before the start of the experiments. The following light stimulus patterns were used: static flash covering the entire display (1000 × 1000 µm) presented for 2–4 s. A 1-mm-long bar moving either to the left or the right directions (speeds = 0.25, 0.5, 1, 2, 4 mm/s; dwell time over each pixel = 2 s). These stimuli were repeated three times. Typically, stimulus contrast was set to 60% Michelson contrast. To record glutamate signals to OFF-SACs, we reversed the intensity of the moving bar stimulus and the background. In some experiments, we masked different portions of the display to remain at background light levels (Gaynes et al., 2022). To map the spatial RFs, we flashed 10 × 1000 µm bars for 200 ms every 400 ms. The bars were presented over five evenly spaced (36°) orientations in a pseudorandom sequence over 32 spatial positions in every orientation to densely cover ~300 µm of visual space centered on the imaged region.
 
-## Recording procedures
+### Recording procedures
 
 Glutamate imaging was performed with Throlabs Bergamo galvo-galvo two-photon microscope using the Thorimage 4.1 acquisition software (Throlabs). A pulsed laser light (920 nm, ~1 µW output at the objective; Chameleon Ultra II, Coherent, https://www.coherent.com/) was used for two-photon excitation projected from an Olympus 20× (1 NA) objective. A descanned (confocal) photomultiplier tube (PMT) was used to acquire fluorescence between 500 and 550 nm. The confocal pinhole (diameter = 1 mm) largely prevented stimulus light (focused on a different focal plane), from reaching the PMT, allowing us to present the visual stimulus during two-photon imaging. A photodiode mounted under the condenser sampled transmitted laser light to generate a reference image of the tissue. Fluorescence signals were collected in a rapid bidirectional frame scan mode (128 × 64 pixels; ~50 Hz). The line spacing on the vertical axis was doubled to produce a rectangular imaging window (~164 × 164 µm in size; the corresponding pixel size was 1.28 µm). To reduce shot noise, images were subsampled by averaging 2 × 2 neighboring pixels and filtered by a 20 Hz low-pass filter offline. Horizontal and vertical image drifts were corrected online using a reference z-stack acquired before time-series recordings.
 
 Labeled cells in the Chat-Cre/tdTomato line (Jax strain 007909, https://www.jax.org/strain/007909) were targeted for whole-cell recordings using 4–8 MΩ pipettes filled with 90 mM CsCH3S04, 20 mM TEA-Cl, 10 mM HEPES, 10 mM EGTA, 10 mM phosphocreatine disodium salt hydrate, 5 mM QX-314, 4 mM Mg-ATP, and 0.4 mM Na-GTP. Recordings were obtained in voltage-clamp configuration with a Double IPA amplifier (Sutter, https://www.sutter.com/), low-pass filtered at 2 kHz using a custom acquisition software written in Igor Pro.
 
-## Analysis
+### Analysis
 
 The fluorescence signals were averaged across multiple presentations of the visual protocol using Igor Pro 8. Specifically, pixels with dF/F values >20% were selected for subsequent clustering analysis, which involved two steps.
 
@@ -245,7 +353,11 @@ In the second step, we combined individual ROIs from multiple scan fields and mi
 
 Tests of statistical significance were performed in Igor Pro using built-in functions.
 
-RF mapping was determined from a two-dimensional Gaussian fit to the responses to the oriented bars, as described previously (Johnston et al., 2014; Poleg-Polsky et al., 2018). The FWHM of the RF was calculated along the axis of motion from the spatial time constant generated by the fit (σx) as follows:FWHM=22ln2σx
+RF mapping was determined from a two-dimensional Gaussian fit to the responses to the oriented bars, as described previously (Johnston et al., 2014; Poleg-Polsky et al., 2018). The FWHM of the RF was calculated along the axis of motion from the spatial time constant generated by the fit (σx) as follows:
+
+$$
+FWHM=2\sqrt{2ln2}\sigma_{x}
+$$
 
 The transiency index (TI) was calculated as the ratio between the peak and the mean of the response within the stimulation window. TI = 1 indicates a sharp and transient response, TI close to zero is produced by sustained plateaus.
 

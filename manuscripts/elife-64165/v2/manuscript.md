@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Invasive species represent one of the foremost risks to global biodiversity. Here, we use population genomics to evaluate the history and consequences of an invasion of wild tomato— Solanum pimpinellifolium —onto the Galápagos Islands from continental South America. Using >300 archipelago and mainland collections, we infer this invasion was recent and largely the result of a single event from central Ecuador. Patterns of ancestry within the genomes of invasive plants also reveal post-colonization hybridization and introgression between S. pimpinellifolium and the closely related Galápagos endemic Solanum cheesmaniae . Of admixed invasive individuals, those that carry endemic alleles at one of two different carotenoid biosynthesis loci also have orange fruits—characteristic of the endemic species—instead of typical red S. pimpinellifolium fruits. We infer that introgression of two independent fruit color loci explains this observed trait convergence, suggesting that selection has favored repeated transitions of red to orange fruits on the Galápagos.
+Invasive species represent one of the foremost risks to global biodiversity. Here, we use population genomics to evaluate the history and consequences of an invasion of wild tomato—Solanum pimpinellifolium—onto the Galápagos Islands from continental South America. Using >300 archipelago and mainland collections, we infer this invasion was recent and largely the result of a single event from central Ecuador. Patterns of ancestry within the genomes of invasive plants also reveal post-colonization hybridization and introgression between S. pimpinellifolium and the closely related Galápagos endemic Solanum cheesmaniae. Of admixed invasive individuals, those that carry endemic alleles at one of two different carotenoid biosynthesis loci also have orange fruits—characteristic of the endemic species—instead of typical red S. pimpinellifolium fruits. We infer that introgression of two independent fruit color loci explains this observed trait convergence, suggesting that selection has favored repeated transitions of red to orange fruits on the Galápagos.
 
 ## Introduction
 
@@ -32,13 +32,218 @@ Using genomic sequencing data from 174 plants (representing all four species) fr
 
 ## Results
 
-## Sequencing and collections
+### Sequencing and collections
 
 Sequence data were drawn from 306 individual samples. We performed double-digest RAD (ddRAD) sequencing (using PstI and EcoRI enzymes) of 174 wild collected individuals from 13 populations of endemic and invasive tomatoes from three islands in the Galápagos archipelago: San Cristobal, Santa Cruz, and Isabela (Figure 1; Table 1; Figure 1—figure supplement 1 and Supplementary file 1a). We complemented these data with ddRAD reads from 132 mainland PIM (Figure 2—figure supplement 1 and Supplementary file 1b), previously sequenced in Gibson and Moyle, 2020 using the same enzymes. We recovered 18,573 high-quality RAD loci, each sequenced to an average of 61.4× (s.d. = 35×) in 80% of all 306 samples (Supplementary file 1c and 1d). Average insert size was 192 bp (s.d. = 51.7) after adapter and quality trimming. After filtering for depth (>8 reads), 11,297 SNPs were retained. After filtering for LD (r2 < 0.7), 5767 SNPs were retained. Refer to Supplementary file 1e for a summary of each filtering step and the analyses for which each dataset was used.
 
-## Genetic data support an Ecuadorian origin for most invasive populations
+![Figure 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig1-v2.jpg)
+
+**Figure 1.:** Inset: Photograph of polymorphic (red/orange) PIM fruits representative of populations MG114 and MG117. For simplicity, LYC populations as well as sampling sites with <8 individuals are not included here. Refer to Supplementary file 1a for a full list of collection localities and sample sizes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Refer to Supplementary file 1a for details.
+
+**Table 1.**
+ Diversity statistics for focal population samples (S = number of segregating sites; θW = Watterson’s theta; H = observed heterozygosity; π = genome-wide nucleotide diversity).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxa</th>
+      <th>Population</th>
+      <th>Island</th>
+      <th>Endemic</th>
+      <th>S</th>
+      <th>θW</th>
+      <th>H</th>
+      <th>π</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PIM</td>
+      <td>Peru</td>
+      <td>N</td>
+      <td>N</td>
+      <td>32820</td>
+      <td>6302.96</td>
+      <td>0.00025</td>
+      <td>0.00094</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ecuador</td>
+      <td>N</td>
+      <td>N</td>
+      <td>21773</td>
+      <td>5544.20</td>
+      <td>0.00033</td>
+      <td>0.00130</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG105</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>1520</td>
+      <td>586.23</td>
+      <td>0.00011</td>
+      <td>0.00009</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG107</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>4434</td>
+      <td>1567.36</td>
+      <td>0.0002</td>
+      <td>0.00034</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG111</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>2562</td>
+      <td>787.93</td>
+      <td>0.00012</td>
+      <td>0.00010</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG113</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>3763</td>
+      <td>1330.17</td>
+      <td>0.00015</td>
+      <td>0.00029</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG114</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>4730</td>
+      <td>1454.69</td>
+      <td>0.00016</td>
+      <td>0.00023</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG116</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>4929</td>
+      <td>1632.189</td>
+      <td>0.00024</td>
+      <td>0.00024</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG117</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>4776</td>
+      <td>1581.52</td>
+      <td>0.00016</td>
+      <td>0.00028</td>
+    </tr>
+    <tr>
+      <td>CHS</td>
+      <td>MG115</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>8540</td>
+      <td>2407.17</td>
+      <td>0.00023</td>
+      <td>0.00045</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG120C</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>854</td>
+      <td>314.22</td>
+      <td>0.0001</td>
+      <td>0.00008</td>
+    </tr>
+    <tr>
+      <td>GAL</td>
+      <td>MG120G</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>3282</td>
+      <td>1032.03</td>
+      <td>0.00013</td>
+      <td>0.00014</td>
+    </tr>
+    <tr>
+      <td>GAL×CHS</td>
+      <td>MG120GC</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>2857</td>
+      <td>1166.12</td>
+      <td>0.00023</td>
+      <td>0.00026</td>
+    </tr>
+    <tr>
+      <td>LYC</td>
+      <td>MG125</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>7219</td>
+      <td>2551.81</td>
+      <td>0.00035</td>
+      <td>0.00063</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MG126</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>4567</td>
+      <td>2192.16</td>
+      <td>0.00018</td>
+      <td>0.00052</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic data support an Ecuadorian origin for most invasive populations
 
 Using our ddRAD sequencing data for Galápagos and continental PIM, we analyzed population genetic signatures of colonization and characterized the origin and path of invasion into the archipelago. Nucleotide diversity (π in 100 kb overlapping windows; Figure 2C) was reduced on average 6.6-fold in island populations relative to mainland accessions (Table 1), a pattern consistent with population genetic expectations following colonization.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-v2.jpg)
+
+**Figure 2.:** (A) Map: average genetic distance between Galápagos PIM collections and each of the 132 mainland accessions. Plot: multi-locus principal components analysis (PCA). Squares, diamonds, and circles indicate Peruvian, Ecuadorian, and Galápagos collections, respectively. Inset: Predicted continental origins for Galápagos PIM collections. Colors are same as shown in the multi-locus PCA (†Exact locations vary substantially between runs. Results from a single run are shown). (B) Maximum likelihood relationships among focal populations calculated with Treemix (allowing no migration). Left: inferred trees of 1000 resampled datasets (500 SNPs, with replacement). Right: consensus topology. All trees were rate-smoothed (λ = 1). (C) Diversity and divergence metrics. Left: nucleotide diversity (π) calculated for Galápagos PIM, Ecuador-PIM, and Peru PIM in overlapping 100 kb windows. Invariant windows (π = 0) are truncated and are instead shown in the inset bar plot. Right: average pairwise sequence divergence for three PIM comparisons: Gal×Gal, Gal×Ecu, and Gal×Peru. Each point represents a comparison between individuals, averaged over all loci.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Samples were subset by population (for Galápagos collections, 1–2 individuals/population) and by geographic region (for mainland accessions; 20 individuals from Peru, 14 individuals from Ecuador) to limit redundancy and increase computation speed.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Exact source localities for MG128-1 and LA3123 varied substantially across run.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Row indicated with an asterisk is LA0411, a sample putatively reintroduced to mainland Ecuador from Galápagos.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Colored bars represent 95% CIs. Data were generated from 1000 bootstrap replicates of the site frequency spectrum (SFS).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Red bars indicate the optimum value inferred. Black bars indicate the bootstrapped median value. Results from two optimization algorithms are shown; BFGS (top panels) and Nelder-Mead (bottom panels). TB = length of bottleneck; TF = time since end of bottleneck.
 
 Genetic variation in the native (mainland) range of PIM is highly geographically structured (Gibson and Moyle, 2020; Figure 2—figure supplement 1), allowing us to infer a putative origin of PIM lineages invasive on the Galápagos. To do so, we estimated genome-wide patterns of relatedness between invasive and mainland individuals using several methods. A rate-smoothed maximum likelihood tree constructed in Treemix (Pickrell and Pritchard, 2012) identified Galápagos PIM as monophyletic, and clearly separated island and non-island clades (Figure 2B; Figure 2—figure supplement 2). In general, pairwise sequence divergence was lower in Galápagos-Ecuador comparisons (average dxy = 2.3×103) than between Galápagos-Peru comparisons (average dxy = 3.6×103; Figure 2C), and samples showing low genome-wide divergence were clustered in central Ecuador (similar patterns were observed using FST; Supplementary file 1f).
 
@@ -46,23 +251,154 @@ To investigate potential source localities for invasive populations at a finer s
 
 Together our data support two to three independent introductions of PIM onto the archipelago, each with variable consequences for current invasive populations: (i) a minor event from Peru [LA3123], (ii) a minor event from Ecuador [MG128-1], and (iii) a major event from central Ecuador that is responsible for nearly all sampled populations.
 
-## Demographic reconstruction supports a recent colonization by PIM on the Galápagos
+### Demographic reconstruction supports a recent colonization by PIM on the Galápagos
 
 We used the allele frequency spectrum to model the demographic history of invasive populations. In particular, we evaluated two demographic models using δaδi (Gutenkunst et al., 2010): (i) a neutral model of constant population size and (ii) a two-epoch instantaneous size change model. Since this species is self-fertile (i.e., it lacks genetic self-incompatibility that is present in some wild tomato species; Rick et al., 1977), we simultaneously inferred the inbreeding coefficient (F; Blischak et al., 2020). The two-epoch model thus included five parameters: epoch one population size (NB), epoch two population size (NF), timing of the first size change (TB), timing of second size change (TF), and the inbreeding coefficient. To limit potential confounding effects due to population structure within PIM, we estimated the folded site frequency spectrum (SFS) of a single population (MG114, which was the most deeply sampled of our PIM populations). We also masked regions of inferred introgression (as detected by our hidden Markov model [HMM], see below) as these can spuriously inflate rare variants and thus bias the inference of a bottleneck and subsequent parameter estimation (Appendix 1, section S3). In our masked dataset, we observed a large excess of rare variants (genome-wide Tajima’s D = −0.49 ±0.12; Figure 2—figure supplement 5) more consistent with a bottleneck model (RSSBottle = 0.23; ln(L)=−18.46) than a neutral model (RSSNeutral = 16.61; ln(L)=−26.63).
+
+**Table 2.**
+ Demographic model estimates for PIM population MG114 inferred using BFGS optimization in δaδi.95% CI values were obtained from 1000 bootstrap replicates of the site frequency spectrum (SFS). Each estimate is shown in rescaled units (rescaled by NRef for NB and NF; and by 2NRef for TB and TF).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Optimum</th>
+      <th>Bootstrap median</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NB</td>
+      <td>408.32</td>
+      <td>551.52</td>
+      <td>56.32–9325.16</td>
+    </tr>
+    <tr>
+      <td>NF</td>
+      <td>4041.63</td>
+      <td>2044.06</td>
+      <td>442.09–26614.5</td>
+    </tr>
+    <tr>
+      <td>TB</td>
+      <td>96.52</td>
+      <td>77.15</td>
+      <td>2.37–492.68</td>
+    </tr>
+    <tr>
+      <td>TF</td>
+      <td>105.14</td>
+      <td>123.02</td>
+      <td>29.95–401.15</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>0.23</td>
+      <td>0.17</td>
+      <td>0.01–0.41</td>
+    </tr>
+  </tbody>
+</table>
 
 We used the best-fit bottleneck model to estimate the timing of the introduction by performing a two-step optimization procedure. We inferred a recent bottleneck occurring 201.66 (TB +TF) generations in the past (Table 2). Bootstrapped CIs for TB and TF were relatively small (2–493 gen for TB; 30–401 gen for TF), and medians were in close agreement with optimized estimates (Table 2). The bootstrapped median estimate for the time to bottleneck was 200.17, which is less than two generations away from the optimized estimate. CIs for population size parameters as estimated by a nonparametric bootstrap were larger (Figure 2—figure supplement 6) and median estimates deviated slightly from the optimized estimates (Table 2), although in all cases the optimized size estimates fell within the bootstrapped 95% CIs.
 
 For comparison, we also model the history of an endemic CHS population (MG115) using the same framework as above. The two-epoch model again fit the data better (ln(L)=−44.61) than a neutral model (ln(L)=−74.18). In addition, we infer a large expansion phase occurring between 1114 and 1845 generations ago followed by a very recent and strong contraction (Supplementary file 1g). Compared to our estimate of the timing of the bottleneck in PIM, the inferred expansion in CHS is nearly eight times older. Tajima’s D was also higher in MG115 (D = −0.18 ± 0.08) compared to invasive PIM MG114, which is more consistent with neutral expectations and a larger fraction of intermediate frequency alleles.
 
-## Admixture analyses support the occurrence of inter- and intraspecific gene flow
+### Admixture analyses support the occurrence of inter- and intraspecific gene flow
 
 The close evolutionary relationship of PIM, CHS, and GAL, their similar floral morphologies, and the presence of only a single major pollinator on the islands (Xylocarpii darwini; McMullen, 1999), indicate the potential for interspecific gene flow between tomato species may be high. Key morphological observations also suggest that these species may be exchanging genes (Darwin, 2009). In particular, we have previously described a novel fruit color polymorphism in two Santa Cruz PIM populations (MG114 and MG117; Gibson et al., 2020), where approximately 40% of individuals have orange instead of their ancestrally red fruits. Orange fruits are very rare in mainland PIM (TGRC passport data; http://www.tgrc.ucdavis.edu) but are diagnostic of the two endemic Galápagos species. Accordingly, we used multiple population genomic methods to investigate evidence of hybridization and introgression in the genomes of island plants, paying special attention to patterns of admixture in the polymorphic PIM populations.
 
 We first examined evidence for recent (early generation) hybrids by evaluating genome-wide signatures in fastStructure (Raj et al., 2014) and NewHybrids (Anderson and Thompson, 2002). Interestingly, we find no evidence of early generation CHS×PIM hybrids in either of the polymorphic PIM populations MG114 and MG117 (Figure 3A). However, these analyses did detect variable levels of CHS×PIM admixture at the nearby site MG115 (Figure 3A), a pattern which is also reflected in principal component space (Figure 3—figure supplement 1). Using NewHybrids, we classified 4/6 of these admixed plants as first- or second-generation hybrids (Supplementary file 1h, i and j).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig3-v2.jpg)
+
+**Figure 3.:** (A) fastStructure inference for all Santa Cruz samples (N = 74). K = 3. (B) fastStructure inference for all Isabela samples (N = 57). K = 3. (C) Treemix analysis summary (m = 6; ln[L]=395.08). Solid lines indicate interspecific events and dashed lines indicate intraspecific events. (D) Principal components analysis for samples at site MG120, a hybrid zone between CHS and GAL.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Brown, purple, and blue points correspond to PIM, LYC, and CHS, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig3-figsupp2-v2.jpg)
+
 To complement the above analyses, we employed Treemix (Pickrell and Pritchard, 2012). The most likely topology inferred by Treemix implies three separate admixture events between PIM and CHS: two cases of CHS → PIM admixture and one case of PIM → CHS admixture on Santa Cruz (Figure 3C; Figure 3—figure supplement 2; Supplementary file 1k). This analysis therefore indicates repeated gene flow between PIM and CHS, although how many distinct events were involved is difficult to infer given the high genomic similarity of island PIM populations and recency of the invasion. As independent support for a history of gene flow, we calculated the four taxa D-statistic of Durand et al., 2011 using Solanum pennellii (LA3778) as an outgroup and treating PIM population MG114 and CHS (MG115) as P2 and P3, respectively. We found that D was 0.818 (s.d. = 0.028; bootstrapped p<0.02), indicating an excess of ABBA sites and strong evidence for admixture between island PIM and CHS. D was also significant when other invasive PIM populations—Santa Cruz population MG117 or San Cristobal populations MG107 and MG105—were used as P2, indicating that the detected admixture likely predates the dispersal and differentiation between Santa Cruz and San Cristobal invasive PIM. This is consistent with inferences in the Treemix graph, in which admixture events between PIM and CHS involve internal branches that subtend current San Cristobal and Santa Cruz PIM populations (Figure 3C).
 
 Interestingly, fastStructure and Treemix produced conflicting results regarding evidence for admixture in the polymorphic PIM populations; Treemix appears to support this while fastStructure does not. To evaluate whether this was due to differences in the detection of more subtle—and potentially older—signals of introgression, we implemented a local ancestry assignment algorithm using a Hidden Markov Model (HMM) to probe for evidence of introgression at a finer scale. Doing so, we found evidence for bidirectional gene flow between CHS and PIM (Figure 4; Figure 4—figure supplement 1), with inferred introgression being more common in the CHS → PIM direction and in PIM populations that were polymorphic for fruit color. Our HMM detected clear evidence for CHS ancestry within the polymorphic PIM populations MG114 and MG117, reflecting admixture from CHS → PIM. In contrast, inferred admixture in nonpolymorphic PIM (e.g., MG116) was much more restricted. For MG114, CHS ancestry blocks were large (average = 16,235 kb), of varying size (sd = 139.43 kb), and composed on average 3.64% of the genomes of any given MG114 plant (Figure 4C,D). Shared ancestry between MG114 and MG115 was dominated by two large CHS haplotypes segregating at moderate to high frequencies on chromosome three (40%; mean size = 51.35 Mb) and chromosome six (20%; mean size = 35.3 Mb; Figure 4B). The genomic distribution of CHS ancestry blocks in different individuals indicates they are not independent. For example, on chromosome 3 all but one individual (5/6) carrying the CHS haplotype had identical breakpoints, consistent with them being derived from the same hybridization (and subsequent recombination) event and/or the individuals being closely related (Supplementary file 1l). In MG117, CHS ancestry made up 4.36% (sd = 2.56%) of any given MG117 genome and average block size was 9,687.5 kb (Figure 4C,D; Supplementary file 1m). As with MG114, a large CHS haplotype on chromosome six occurs at a frequency of 0.42. This block varied substantially in size in each individual, and all were discontinuous across the chromosome (i.e., there is an implied double crossover event). Further, two individuals were heterozygous for ancestry at the downstream portion of the haplotype (Figure 4—figure supplement 2, Figure 5—figure supplement 1, Figure 5—figure supplement 2). In comparison to MG114 and MG117, MG116 showed little evidence for shared ancestry. While 3/7 individuals had inferred signals of CHS ancestry, these blocks were generally small compared to MG114 and MG117 (average = 4,450 kb; Figure 5) and made up a substantially smaller fraction of the total genome (average admixture proportion = 0.55%; Figure 4D). No large CHS haplotypes were segregating in MG116, unlike those observed in MG114 and MG117 (Supplementary file 1n).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-v2.jpg)
+
+**Figure 4.:** (A) Patterns of diversity and divergence along chromosome 6 for an MG114 individual. The region of recent coalescence (low divergence; high diversity) with CHS is annotated in gray. This 20.2 kb block segregates at 20% in MG114. (B) Genome-wide HMM predictions for all individuals in MG114. The x-axis is ordered by chromosome and y-axis is ordered by individual. Two large CHS haplotypes segregate at high frequency on chromosomes 3 (40%) and 6 (20%). (C) Visual summary of admixture proportions from CHS into three PIM populations. (D) Summary of HMM assignment for each PIM population. Populations displaying variation in fruit color (MG114 and MG117) have more CHS ancestry than those which are fixed for the ancestral red state (MG116).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** These data represent the opposite direction of gene flow (PIM → CHS) from that shown in Figure 5B (CHS → PIM). Admixture in the PIM → CHS direction was markedly lower than CHS → PIM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 10.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp10-v2.jpg)
+
+**Figure 4—figure supplement 10.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 11.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp11-v2.jpg)
+
+**Figure 4—figure supplement 11.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 12.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp12-v2.jpg)
+
+**Figure 4—figure supplement 12.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 13.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp13-v2.jpg)
+
+**Figure 4—figure supplement 13.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 4—figure supplement 14.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig4-figsupp14-v2.jpg)
+
+**Figure 4—figure supplement 14.:** Each cell represents 1 Mb and colors correspond to median π or dXY (to CHS population MG115). Black dots show regions of CHS ancestry predicted by the hidden Markov model (HMM). HMM predictions were done in 100 kb windows. Annotations here reflect the consensus prediction of all windows within each 1 Mb cell.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig5-v2.jpg)
+
+**Figure 5.:** (A) CHS ancestry at carotenoid biosynthesis gene PSY1 on chromosome 3 correlates with observed fruit color variation in MG114. (B) CHS ancestry at carotenoid biosynthesis gene CYC-B on chromosome 6 correlates with fruit color variation in MG117. Each cell represents 100 kb. Empty cells indicate windows with no sequence data. Empty cells are ghost shaded with each ancestry color based on neighboring assignments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** CHS ancestry at CYC-B (dashed line) in MG117-1 and MG117-4 is heterozygous, as shown by elevated heterozygosity estimates at that location in these individuals.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The hidden Markov model (HMM) correctly classifies intermediately diverged regions as heterozygous.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64165/elife-64165-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Endemic accessions are colored orange. The nonsynonymous substitution which defines the endemic clade is indicated with an orange arrow. Data were obtained from Pease et al., 2016.
 
 The size of detected ancestry blocks contains information regarding the timing of gene flow, because it depends on the number of recombination events (generations) that have occurred since an initial hybridization event. We can broadly estimate the age of these haplotypes using a simple logarithmic relationship (Appendix 1, section S4; Lynch and Walsh, 1998). In MG114 and MG117, age estimates are within the range of 4–12 generations (e.g., the large chromosome 3 and 6 CHS haplotypes in MG114 are estimated at 4.23 and 4.74 generations, respectively). In addition to placing boundaries on when the initial hybridization took place in the past (>4 and up to 12 generations), there is close agreement between age estimates in MG114 and MG117, suggesting that these instances of CHS introgression might have been derived from the same admixture event (Appendix 1, section S4).
 
@@ -70,7 +406,7 @@ Relative to the patterns of gene flow from CHS into polymorphic PIM described ab
 
 In addition to inferred introgression between PIM and CHS, we also found evidence for hybridization/introgression involving the other two taxa: GAL and LYC. In particular, we uncovered a recent history of hybridization between CHS and GAL on Isabela—at la Laguna de Manzanilla (Figure 3B and D). These two species have been reported as co-occurring at this site since 2000, and hybridization has previously been hypothesized based on allozyme and morphological analyses (Darwin, 2009; Gibson et al., 2020; Figure 3D; inset images). Our fastStructure and principal components analyses (PCA) of individuals at this site clearly identify nine samples as admixed (Figure 3B), mostly corresponding with morphological classifications of intermediacy (Figure 3D). Of the nine admixed plants, four appear to be first generation backcrosses, whereas four are F2 (Supplementary file 1i). We also identified putative cases of CHS/GAL×LYC admixture in two populations on Isabela (Figure 3B), although some of these signals might be the product of unmodeled genetic substructure (Appendix 1, section S5). On Santa Cruz, low levels of LYC (domesticated tomato) ancestry were also detected within some PIM populations, including a potential hybrid PIM×LYC population MG118 that was predicted to be entirely first-generation hybrids.
 
-## An introgressed origin for orange fruits in PIM
+### An introgressed origin for orange fruits in PIM
 
 Because introgression from CHS into PIM was most evident in PIM populations that were polymorphic for fruit color (MG114 and MG117), we took an admixture mapping approach to investigate whether introgression influences fruit color variation in these populations. Specifically, we examined the association between local ancestry across the genome and observed fruit color phenotypes, paying special attention to genomic locations of eight known genes involved in carotenoid biosynthesis (Supplementary file 1o and 1p; Paran and van der Knaap, 2007). For MG117, we found that the presence of orange fruits correlated perfectly with CHS ancestry at one carotenoid synthesis gene: CYC-B on chromosome 6 (Figure 5B; Supplementary file 1o). This association is significant based on a χ2 test of independence (χ2 = 8.33; df = 1; p=0.0039). CYC-B is a lycopene beta cyclase and the specific locus known to underlie the lighter (orange) colored fruits observed in the endemic species (Stommel and Haynes, 1994).
 
@@ -80,7 +416,7 @@ In contrast, the similarly sized chromosome six haplotype in MG114 (Figure 4B) 
 
 Biological invasions are one of the foremost threats to global biodiversity, yet we still have a poor understanding of the processes that contribute to invasive colonization success. Here, we studied patterns of genome-wide ancestry and relatedness between endemic, invasive, and continental wild tomato populations in order to reconstruct the history and consequences of a recent biological invasion on the Galápagos. Invasive populations of S. pimpinellifolium (PIM) had low levels of genetic diversity and an excess of rare alleles, and we inferred two to three recent introductions onto the archipelago from Ecuador and Peru. As a consequence of this invasion, we uncovered evidence for recent and ongoing gene flow between PIM and the congeneric endemic species S. cheesmaniae (CHS). Local ancestry at two key carotenoid loci further supported an introgressed (CHS) origin for orange fruits in at least two invasive populations. Together, our results reconstruct the history of invasion, and infer that the source of convergent phenotypic evolution in the invasive populations is introgression of important functional alleles from endemic relatives.
 
-## Genomic data reconstruct the demographic history of invasion onto the Galápagos Islands
+### Genomic data reconstruct the demographic history of invasion onto the Galápagos Islands
 
 Our analyses identify three independent introduction events, yet only a single event from Ecuador comprises 98% of sampled invasives on the archipelago. The other two introductions—each represented by single plant collections—either did not produce large invasive populations or they result from much more recent introductions which have not yet established broadly. Indeed, our PCA (Figure 2A) supports the idea that they are the product of more recent introduction events, as these two collections are more closely related to the mainland PIM populations than plants derived from the primary introduction.
 
@@ -88,7 +424,7 @@ For the primary introduction, although we observed variance in source region pre
 
 Our inferences also clearly implicate humans as the source of PIM introduction. Our demographic reconstruction points to a recent bottleneck and expansion of PIM on the archipelago (Table 2), much more recent than our estimate for CHS. Similarly, our inference that LA0411 (a mainland Ecuador accession) is the product of back migration from the Galápagos underscores the recent and likely substantial human influence on the movement of PIM. We conclude that PIM is most likely the result of a recent, human-mediated expansion on the archipelago. Human introduced species represent upward of 70% of all alien plant species on the Galápagos (Quiroga, 2018), and PIM has similarly been hypothesized to be the product of a human introduction; however the timing and mode of its introduction—including the role of humans—was not previously known.
 
-## Hybridization as a consequence of invasion onto the Galápagos
+### Hybridization as a consequence of invasion onto the Galápagos
 
 One key evolutionary consequence of PIM’s introduction onto the Galápagos that emerges from our analyses is its hybridization with endemic congeneric species—primarily CHS. Hybridization has been hypothesized as a mechanism for promoting invasive colonization success, as it could help overcome the adaptive limits that might otherwise be imposed by genetic bottlenecks during the colonization process (the so-called ‘genetic paradox’ of invasion; Allendorf and Lundquist, 2003; Sakai et al., 2001). These bottlenecks can be especially severe during introductions onto islands (Kolbe et al., 2004; Colautti et al., 2005; Golani et al., 2007). In addition, several factors indicate the high potential for gene flow specifically between the four studied species (CHS, GAL, PIM, LYC), including their very close evolutionary relationships (all are members of the red-fruited Esculentum subclade within the wild tomatoes; Pease et al., 2016), and their incomplete reproductive barriers (Rick, 1956; Rick and Bowman, 1961; Rick and Fobes, 1975). Nonetheless, previous analyses based on handfuls of loci provided conflicting evidence for and against the occurrence of gene flow between species presents on the island (Nuez et al., 2004; Darwin, 2009).
 
@@ -98,7 +434,7 @@ The most prominent signal of gene flow is between PIM and CHS (Figure 3; Figure 
 
 The potential consequences of secondary genetic contact are numerous (Wolf et al., 2001; Todesco et al., 2016). While we do not have direct data on relative fitness of hybrids, the persistence of later generation CHS×PIM hybrids indicates they are not immediately selected against. Indeed, the genomes of most admixed PIM (MG114 and MG117) are consistent with a history of secondary contact and gene flow characterized not by strong hybrid incompatibility, but a less restricted exchange of alleles between species. Furthermore, the nonrandom distribution of CHS ancestry throughout admixed PIM suggests that it may be selectively maintained in certain regions of the genome. Instead of observing a heterogeneous set of CHS alleles in the backcrossed genome of PIM, we find that CHS ancestry is enriched on chromosomes 3 and 6, and absent in much of the rest of the genome, in both MG114 and MG117 (Figure 4B; Figure 4—figure supplement 2). Moreover, our local ancestry predictions provide evidence that these introgressed regions may contain key genes responsible for the emergence of orange fruit color in MG114 and MG117.
 
-## Orange fruit color in island PIM was derived via introgression from CHS
+### Orange fruit color in island PIM was derived via introgression from CHS
 
 A key finding of our analyses is that introgression is likely the source of phenotypic convergence on orange fruits that is observed in invasive Santa Cruz PIM. Orange/yellow fruit color is diagnostic for the endemic species (CHS is typically pale yellow; GAL is typically orange) but extremely rare in PIM. At the genetic level, convergence could be based on three potential sources of variation: ancestrally segregating variation, introgression, or via a de novo transition. Of these, ancestral variation is the least likely: The very few described examples of orange fruits among continental PIM are all located in Peru (e.g., Sifres et al., 2007), and none have been reported in the inferred geographic region of origin of this invasion (TGRC passport data; http://www.tgrc.ucdavis.edu). One goal here was therefore to distinguish between introgressed and novel mutation as the source of phenotypic convergence. We did so by mapping the landscape of introgression throughout the genomes of invasive PIM plants, and evaluating its association with observed fruit color variation, and with loci known to underlie this trait in Solanum (Paran and van der Knaap, 2007). With these data we inferred a unique scenario in which phenotypic transitions to orange fruits in two different invasive PIM populations were each derived from introgression at a distinct carotenoid locus: CYC-B or PSY1.
 
@@ -108,31 +444,31 @@ Unlike CYC-B, PSY1 was first identified in the spontaneous fruit color mutant ye
 
 Finally, the ubiquitous lighter (orange and yellow) fruits of the two endemic species, the appearance of convergence toward endemic-like fruit colors in invasive PIM, and the likely independent recruitment of endemic fruit color alleles at PSY1 and CYC-B in MG114 and MG117, together suggest intriguing evidence that lighter fruits may have a specific selective advantage on the islands. The potential environmental basis of this selection is unknown, however differences in fruit dispersal—including disperser color preference(s) and/or fruit color apparency—on the islands versus the continental mainland could be a likely mechanism. Alternatively, at least in the case of PSY1 which likely involves either a full or partial loss of function, orange pigmentation could arise due to relaxed selection, if it is more costly to produce red fruits and they have no specific advantage in island environments. Future field experiments and fitness measurements will help to distinguish among these selective hypotheses.
 
-## Conclusions
+### Conclusions
 
 Our results reconstruct a complex and recent history of invasion by wild tomato onto the Galápagos Islands, and highlight the potential importance of gene flow during colonization. Our results also add to an emerging phenotypic convergence literature by highlighting how admixture brought on by anthropogenic change can drive convergence over very short time scales. While the adaptive benefit of orange fruits remains to be evaluated, our finding of two separate molecular mechanisms underlying orange coloration each derived from CHS is highly suggestive that lighter fruit pigmentation is favored in the island environment. This study underscores how the long history of research on the Galápagos Islands continues to enrich our understanding of evolutionary processes in the natural world.
 
 ## Materials and methods
 
-## Population sampling and genotyping
+### Population sampling and genotyping
 
 We sampled leaf tissue from 13 wild populations of invasive and endemic tomato taxa on the three largest islands of the Galápagos archipelago: San Cristobal, Santa Cruz, and Isabela (Figure 1; Table S1). Leaf tissue was dried in silica and DNA was extracted using Qiagen Plant Mini Kits (Qiagen, Valencia, CA). Two double-digest restriction site associated DNA sequencing (ddRAD) libraries were prepared using PstI and EcoRI enzymes by the Indiana University Center for Genomics and Bioinformatics. Libraries were sequenced across two Illumina NextSeq flowcells (150 bp, paired-end, mind-output). Raw reads were filtered for quality, trimmed of adapter sequence and low-quality bases using fastp (Chen et al., 2018), and demultiplexed by individual using the process_radtags program in Stacks (version 2; Catchen et al., 2013). Reads were mapped to the S. lycopersicum reference genome version SL3.0 using BWA (Li and Durbin, 2009). Bam files of 132 continental accessions representing the full species range of PIM (Figure 2—figure supplement 1; Supplementary file 1b) were jointly reanalyzed with the new samples in Stacks. Mapped reads were assembled and variants were called with the Stacks ref_map pipeline. Genotype calls made with fewer than eight reads were removed and subsequently we retained only sites having data for at least 80% of all 306 individuals. For all analyses except diversity/divergence calculations (π, Tajima’s D, dXY, FST) and Treemix, we pruned sites in high LD (r2 >0.7) using bcftools. Lastly, we also evaluated our dataset for two possible sources of bias—the potential effects of allele dropout (ADO) on genotype calls (Cariou et al., 2016) and mapping bias arising from using a single reference genome—and confirmed that there is little evidence for either source in our dataset (Appendix 1, section S6). All scripts are available at https://github.com/gibsonMatt/galtom (Gibson, 2021b; copy archived at swh:1:rev:1647969c397c5b13d15ab9b5d408bbbab2f6b4a8).
 
-## Nucleotide diversity and divergence estimates
+### Nucleotide diversity and divergence estimates
 
 Within-population diversity and divergence estimates across the genome were calculated using the Stacks program populations. Windowed π (Figure 1C) was extracted from Stacks output. For pairwise comparisons between the islands, Ecuador and Peru (right panel Figure 1C), we calculate genome-wide pairwise divergence directly from the assembled RAD loci (samples.fa file) using a custom Python script (http://github.com/gibsonmatt/galtom). For each pairwise comparison between samples, we count the total number of sequence differences and total number of sites for which both samples have data. This choice allows us to conveniently model patterns of diversity between diploid samples in our introgression HMM using a binomial. We also calculated the average genetic distance from each accession to all Galápagos PIM across polymorphic sites in the R package adegenet (Jombart and Ahmed, 2011; Figure 1A).
 
-## Phylogenetic reconstruction
+### Phylogenetic reconstruction
 
 We inferred a maximum likelihood tree of population relationships (Figure 1B) using Treemix with no specified migration. The Treemix input file was generated from a VCF using a custom Python script (http://github.com/gibsonmatt/galtom). We expected abundant phylogenetic discordance both within Galápagos PIM (given its recent divergence from Ecuador) and within the red-fruited tomato clade in general (Pease et al., 2016). To this end, we generated 1000 replicate datasets by sampling (with replacement) 500 SNPs from the full dataset. These trees were visualized using densitree as implemented in the R package phangorn (Schliep, 2011). Both the set of replicate trees and the consensus tree were rate-smoothed using r8s (λ = 1), using the chronopl function available in the R package ape (Paradis and Schliep, 2019). In addition to Treemix, we also inferred a maximum likelihood phylogeny of individual sample relationships using RA×ML (Figure 2—figure supplement 2). We subset our dataset to one individual per population for Galápagos collections and to 15–20 samples per geographic region (Peru and Ecuador) for mainland accessions. We ran RA×ML using the GTRCAT approximation of the general time reversible model of substitution allowing for rate heterogeneity. Twenty-five alternative runs from distinct maximum parsimony trees were performed, from which we selected the best single tree.
 
-## Demographic inference
+### Demographic inference
 
 We modeled bottleneck demographic histories from the SFS using δaδi (Gutenkunst et al., 2009), calculating the folded SFS using easySFS (https://github.com/isaacovercast/easySFS, copy archived at swh:1:rev:b866269f5813ef7cd8a12c7727048f993da8e9ff; Gibson, 2021a), 30–14 chromosomes, striking a balance between the number of segregating sites and levels of missing data in frequency bins. We chose this population because the larger number of samples (2N = 30) relative to other PIM populations afforded more statistical power. Prior to calculating the SFS for MG114, we removed regions inferred as introgressed by our HMM, as we found that a large fraction of singleton and doubleton sites in MG114 were shared with CHS (Appendix 1, section S3). These sites would be spuriously interpreted as de novo mutations derived in PIM post-colonization, thereby biasing our parameter estimates. See Appendix 1, section S3 for further discussion of our filtering scheme and its effects on δaδi estimates. For population MG115, we down-sampled to 24 chromosomes. For each population, two models were evaluated: (i) a neutral model of no population size change and (ii) an instantaneous bottleneck model. The parameters of the bottleneck model are described in the results. We used the BFGS algorithm and a two-step optimization procedure to explore the demographic parameter space of the PIM bottleneck model. Step i consisted of 200 replicate runs with twofold parameter perturbation. Step ii then consisted of 100 refinement runs of the optimizer with no perturbation and initial parameter values equal to the maximum likelihood estimates from step i. We used multiple diffusion grid sizes in δaδi (30, 40, and 60) as recommended in the manual to facilitate extrapolation. To estimate confidence intervals for our parameters, we performed a nonparametric bootstrapping procedure (assuming independence among sites) by sampling randomly from the observed SFS 1000 times. Since we filter for LD, we consider this method to be appropriate.
 
 Time in δaδi is represented in units of 2Nref generations. To convert from these coalescent time values to numbers of generations, we estimate Nref as θ/4 μL, where θ is the population scaled mutation parameter (estimated by δaδi; 68.40 for MG114), μ is the per-generation mutation rate (assumed here to be 1 × 10−8 muts/bp/generation), and L is the length of queried sequence (5,806,952 bp; estimated from the data as the total number of bases where at least one sample in the focal population had data). Bottleneck and final effective population sizes were similarly converted from relative to absolute values using Nref.
 
-## Inferring gene flow between contemporary island populations
+### Inferring gene flow between contemporary island populations
 
 We used several independent methods to characterize genetic structure in our dataset. First, we applied Treemix (Pickrell and Pritchard, 2012) to assess evidence for broad signatures of admixture among populations. Because we were interested in understanding the history of PIM, we subset our full SNP dataset to exclude LYC populations since the exact taxonomic status of these samples is unclear and does not help address questions of gene flow between PIM and endemic species. Furthermore, we remove PIM populations with fewer than eight samples. We ran Treemix with several values for m (0–8), the migration parameter which determines how many reticulation branches are allowed. Based on the likelihoods provided by Treemix, we determined that a migration parameter of 6 was most appropriate. Increasing m led us to infer more intraspecific migration within PIM, but no additional interspecific events could be inferred and the increase in data likelihood was marginal (Figure 3—figure supplement 2; Supplementary file 1j).
 
@@ -140,7 +476,7 @@ We also employed model-based (fastStructure; Raj et al., 2014) and non-model-bas
 
 For select populations with evidence for admixture, we ran NewHybrids (Anderson and Thompson, 2002) to identify any early generation hybrid individuals (F1, F2, and backcrosses). NewHybrids was run using the same LD-filtered dataset as in fastStructure and PCA (script for converting from vcf to NewHybrids format is provided at http://github.com/gibsonmatt/galtom). For each NewHybrids run, we specify three groups: a parent population A group, a parent population B group, and an admixed group. For the CHS×PIM interaction on Santa Cruz, parent populations were defined as non-admixed MG115 and MG113 individuals. For the CHS×GAL interaction on Isabela, parent populations were MG120C and MG120G. For each population, we ran the Markov chain for at least 6000 iterations. Individual assignments were not sensitive to the choice of priors. Lastly, four-sample D-statistics (Durand et al., 2011) were calculated using the compD software package (https://github.com/stevemussmann/Comp-D; Mussmann, 2020), using S. pennellii (LA3778) as an outgroup species.
 
-## Introgression analysis
+### Introgression analysis
 
 We implemented an HMM to identify fine-scale genomic signatures of introgression. Although RAD sequencing is not optimal for genome scanning due to lower marker density, recent signatures of introgression should be large and detectable. Nonetheless, we acknowledge the fact that our sequencing methods may not allow for full characterization of the landscape of introgression. In our analysis we leveraged the fact that, in regions of recent introgression, genetic diversity between samples within the destination population (π) should be elevated relative to diversity between samples in the source and destination populations (dXY). In other words, regions of recent interspecific coalescence should resemble individuals from the introgressing population more than individuals in the destination population. For each pairwise comparison between samples, we thus have an estimate of π (if the samples are from the same population) or dXY (if they are from different populations) as well as the raw number of sequence differences and total sites with data.
 

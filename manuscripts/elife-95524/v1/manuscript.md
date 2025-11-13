@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/047rhhm47 Department of Biology, Brigham Young University Provo United States
+1. Department of Biology, Brigham Young University Provo United States ([ROR:047rhhm47](https://ror.org/047rhhm47))
 
 † Corresponding author
 
 ## Abstract
 
-To help maximize the impact of scientific journal articles, authors must ensure that article figures are accessible to people with color-vision deficiencies (CVDs), which affect up to 8% of males and 0.5% of females. We evaluated images published in biology- and medicine-oriented research articles between 2012 and 2022. Most included at least one color contrast that could be problematic for people with deuteranopia (‘deuteranopes’), the most common form of CVD. However, spatial distances and within-image labels frequently mitigated potential problems. Initially, we reviewed 4964 images from eLife , comparing each against a simulated version that approximated how it might appear to deuteranopes. We identified 636 (12.8%) images that we determined would be difficult for deuteranopes to interpret. Our findings suggest that the frequency of this problem has decreased over time and that articles from cell-oriented disciplines were most often problematic. We used machine learning to automate the identification of problematic images. For a hold-out test set from eLife (n=879), a convolutional neural network classified the images with an area under the precision-recall curve of 0.75. The same network classified images from PubMed Central (n=1191) with an area under the precision-recall curve of 0.39. We created a Web application ( https://bioapps.byu.edu/colorblind_image_tester ); users can upload images, view simulated versions, and obtain predictions. Our findings shed new light on the frequency and nature of scientific images that may be problematic for deuteranopes and motivate additional efforts to increase accessibility.
+To help maximize the impact of scientific journal articles, authors must ensure that article figures are accessible to people with color-vision deficiencies (CVDs), which affect up to 8% of males and 0.5% of females. We evaluated images published in biology- and medicine-oriented research articles between 2012 and 2022. Most included at least one color contrast that could be problematic for people with deuteranopia (‘deuteranopes’), the most common form of CVD. However, spatial distances and within-image labels frequently mitigated potential problems. Initially, we reviewed 4964 images from eLife, comparing each against a simulated version that approximated how it might appear to deuteranopes. We identified 636 (12.8%) images that we determined would be difficult for deuteranopes to interpret. Our findings suggest that the frequency of this problem has decreased over time and that articles from cell-oriented disciplines were most often problematic. We used machine learning to automate the identification of problematic images. For a hold-out test set from eLife (n=879), a convolutional neural network classified the images with an area under the precision-recall curve of 0.75. The same network classified images from PubMed Central (n=1191) with an area under the precision-recall curve of 0.39. We created a Web application (https://bioapps.byu.edu/colorblind_image_tester); users can upload images, view simulated versions, and obtain predictions. Our findings shed new light on the frequency and nature of scientific images that may be problematic for deuteranopes and motivate additional efforts to increase accessibility.
 
 ## Introduction
 
@@ -33,23 +33,23 @@ We downloaded images from research articles published in the eLife journal. Not 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig1-v1.jpg)
 
-**Figure 1.:** eLife.The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
+**Figure 1.:** The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig2-v1.jpg)
 
-**Figure 2.:** eLife.The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
+**Figure 2.:** The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig3-v1.jpg)
 
-**Figure 3.:** eLife.The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
+**Figure 3.:** The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig4-v1.jpg)
 
-**Figure 4.:** eLife.The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
+**Figure 4.:** The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig5-v1.jpg)
 
-**Figure 5.:** eLife.The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
+**Figure 5.:** The histogram depicts the frequency distribution of this metric for 64,509 non-grayscale images.
 
 We determined that many images with the highest (or lowest, as would be the case for the ‘Mean Euclidean distance between pixels for high-ration color pairs’) scores for these metrics would be problematic for deuteranopes. However, we noted that certain color pairs were more problematic than others, and the use of effective labels and/or spacing between colors often mitigated potential problems. Thus, to better estimate the extent to which images are problematic for deuteranopes, we manually reviewed a sample of 4964 images and judged whether it would be likely for deuteranopes to recognize the scientific message behind each image. Supplementary file 2 contains a record of these evaluations, along with comments that indicate either problematic aspects of the images or factors that mitigated potential problems. We concluded that 636 (12.8%) of the images were ‘Definitely problematic’, whereas 3865 of the images (77.9%) were ‘Definitely okay’. The remaining images were grayscale (n=179), or we were unable to reach a confident conclusion (n=284). For the images that were ‘Definitely okay’, we visually detected shades of green and red or orange in 2348 (60.8%) images; however, in nearly all (99.3%) of these cases, we deemed that the contrasts between the shades were sufficient that a deuteranope could interpret the images. Furthermore, distance between the colors and/or labels within the images mitigated potential problems in 54.2% and 48.4% of cases, respectively.
 
@@ -57,37 +57,37 @@ We evaluated longitudinal trends and differences among biology subdisciplines. I
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig6-v1.jpg)
 
-**Figure 6.:** eLife articles.For the training set, we summarized our findings per article. This graph shows article counts for the ‘Definitely okay’ and ‘Definitely problematic’ categories for each year evaluated.
+**Figure 6.:** For the training set, we summarized our findings per article. This graph shows article counts for the ‘Definitely okay’ and ‘Definitely problematic’ categories for each year evaluated.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig7-v1.jpg)
 
-**Figure 7.:** eLife articles.For the training set, this graph shows the percentage of articles categorized as ‘Definitely problematic’ for a given subdiscipline, as indicated in the article metadata. In many cases, a single article was associated with multiple subdisciplines; these articles are shown as ‘Multidisciplinary’. We used a χ² goodness-of-fit test to calculate the p-value, with the overall proportion of each discipline as the expected probability.
+**Figure 7.:** For the training set, this graph shows the percentage of articles categorized as ‘Definitely problematic’ for a given subdiscipline, as indicated in the article metadata. In many cases, a single article was associated with multiple subdisciplines; these articles are shown as ‘Multidisciplinary’. We used a χ² goodness-of-fit test to calculate the p-value, with the overall proportion of each discipline as the expected probability.
 
 Despite the benefits of manual review, this process is infeasible on a large scale. Therefore, we evaluated techniques for automating image classification. As an initial test, we used the five image-quantification metrics. We also combined these into a single, ranked-based score for each image. In all cases, the metrics differed significantly between the ‘Definitely okay’ and ‘Definitely problematic’ images (Figure 8; Figure 9; Figure 10; Figure 11; Figure 12; Figure 13). To estimate their predictive performance, we performed cross validation on the training set. Values relatively close to 1.0 indicate relatively high performance. A value of 0.5 indicates that predictions are no better than random guessing. The best-performing metric was number of color pairs that exhibited a high color-distance ratio between the original and simulated images (AUROC: 0.75; AUPRC: 0.34). All the other metrics—except mean, pixel-wise color distance between the original and simulated image—performed better than random guessing (Supplementary file 1A). As an alternative to the combined rank score, we used classification algorithms to make predictions with the five metrics as inputs. In cross-validation on the training set, the best-performing algorithm was Logistic Regression (AUROC: 0.82; AUPRC: 0.43; Supplementary file 1B).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig8-v1.jpg)
 
-**Figure 8.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 8.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig9-v1.jpg)
 
-**Figure 9.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 9.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig10-v1.jpg)
 
-**Figure 10.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 10.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig11-v1.jpg)
 
-**Figure 11.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 11.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig12-v1.jpg)
 
-**Figure 12.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 12.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig13-v1.jpg)
 
-**Figure 13.:** eLife categorized as ‘Definitely okay’ or ‘Definitely problematic’.We used a two-sided Mann-Whitney U test to calculate the p-value.
+**Figure 13.:** We used a two-sided Mann-Whitney U test to calculate the p-value.
 
 Additionally, we created a convolutional neural network (CNN) to make predictions according to visual and spatial patterns in the images. CNNs are highly configurable and often sensitive to model parameters and configurations. Accordingly, we performed multiple iterations of cross validation on the training set and compared a variety of hyperparameters and configurations. All non-default options performed better than Logistic Regression based on the image-quantification metrics (Supplementary file 1C). The best-performing approach used class weighting; early stopping; random flipping and rotation (threshold: 0.2); a dropout rate of 0.5; the ResNet pre-trained model for transfer learning; and model fine tuning.
 
@@ -95,27 +95,27 @@ We manually reviewed a hold-out test set that consisted of 1,000 additional imag
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig14-v1.jpg)
 
-**Figure 14.:** eLife hold-out test set.Each point represents the prediction for an individual image. Relatively high confidence scores indicate that the model had more confidence that a given image was ‘Definitely problematic’ for a person with deuteranopia.
+**Figure 14.:** Each point represents the prediction for an individual image. Relatively high confidence scores indicate that the model had more confidence that a given image was ‘Definitely problematic’ for a person with deuteranopia.
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig15-v1.jpg)
 
-**Figure 15.:** eLife hold-out test set.This curve illustrates tradeoffs between sensitivity and specificity. The area under the curve is 0.82. The dashed, gray line indicates the performance expected by random chance.
+**Figure 15.:** This curve illustrates tradeoffs between sensitivity and specificity. The area under the curve is 0.82. The dashed, gray line indicates the performance expected by random chance.
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig16-v1.jpg)
 
-**Figure 16.:** eLife hold-out test set.This curve illustrates tradeoffs between precision and recall. The area under the curve is 0.49. The dashed, gray line indicates the frequency of the minority class (‘Definitely problematic’ images).
+**Figure 16.:** This curve illustrates tradeoffs between precision and recall. The area under the curve is 0.49. The dashed, gray line indicates the frequency of the minority class (‘Definitely problematic’ images).
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig17-v1.jpg)
 
-**Figure 17.:** eLife hold-out test set.This curve illustrates tradeoffs between sensitivity and specificity. The area under the curve is 0.89. The dashed, gray line indicates the performance expected by random chance.
+**Figure 17.:** This curve illustrates tradeoffs between sensitivity and specificity. The area under the curve is 0.89. The dashed, gray line indicates the performance expected by random chance.
 
 ![Figure 18.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig18-v1.jpg)
 
-**Figure 18.:** eLife hold-out test set.This curve illustrates tradeoffs between precision and recall. The area under the curve is 0.75. The dashed, gray line indicates the frequency of the minority class (‘Definitely problematic’ images).
+**Figure 18.:** This curve illustrates tradeoffs between precision and recall. The area under the curve is 0.75. The dashed, gray line indicates the frequency of the minority class (‘Definitely problematic’ images).
 
 ![Figure 19.](https://cdn.elifesciences.org/articles/95524/elife-95524-fig19-v1.jpg)
 
-**Figure 19.:** eLife hold-out test set.Each point represents the prediction for an individual image. Relatively high confidence scores indicate that the model had more confidence that a given image was ‘Definitely problematic’ for a person with deuteranopia.
+**Figure 19.:** Each point represents the prediction for an individual image. Relatively high confidence scores indicate that the model had more confidence that a given image was ‘Definitely problematic’ for a person with deuteranopia.
 
 For the 92 hold-out images that were misclassified by the CNN model, we compared them against our manual annotations and determined that in 13 cases, the reviewers had missed subtle patterns; we conclude that it would be justified to change these labels (Supplementary file 5). For 31 of the misclassified images, we visually identified patterns that might have confused the CNN; however, upon reevaluation, we maintain that the original labels were valid. For the remaining 48 misclassified images, we were unable to identify patterns that seemed likely to have confused the model.
 
@@ -165,13 +165,13 @@ By summarizing color patterns in more than 66,000 images and manually reviewing 
 
 ## Materials and methods
 
-## Image acquisition
+### Image acquisition
 
 We evaluated images in articles from eLife, an open-access journal that publishes research in ‘all areas of the life sciences and medicine’. Article content from this journal is released under a Creative Commons Attribution license. On June 1, 2022, we downloaded all available images from an Amazon Web Services storage bucket provided by journal staff. We also cloned a GitHub repository that eLife provides (https://github.com/elifesciences/elife-article-xml). This repository contains text and metadata from all articles published in the journal since its inception. For each article, we parsed the article identifier, digital object identifier, article type, article subject, and publication date. We excluded any article that was not published with the ‘Research article’ type. These articles were published between the years 2012 and 2022.
 
 On March 21, 2024, we downloaded a list of articles from the PMC Open Access Subset, 2003. We filtered the articles to those published between 2012 and 2022 that used a CC BY license (https://creativecommons.org) and were categorized as research articles. This filtering resulted in 2,730,256 article candidates.
 
-## Image summarization metrics
+### Image summarization metrics
 
 For each available image, we identified whether the image was either grayscale or contained colors. For each color image, we calculated a series of metrics to summarize the colors, contrasts, and distances between potentially problematic colors. These metrics have similarities to those used to assess recoloring algorithms, including global luminance error (Kuhn et al., 2008), local contrast error (Zhu et al., 2019a), and global chromatic diversity (Chen et al., 2011; Ma et al., 2009). Before calculating the metrics, we sought to make the images more comparable to each other and to reduce the computational demands of analyzing the images. We scaled each image to a height of 300 pixels and generated a quantized version with a maximum of 256 colors. For each image, we then created a second version that simulated how a deuteranope would see the image. To facilitate these simulations, we used the colorspace package (Stauffer et al., 2015) and specified a ‘severity’ value of 0.8. Severity values range between 0 and 1 (with 1 being the most severe). We chose this threshold under the assumption that a mild severity level might not be stringent enough to identify a lack of contrast in the images. However, because many people with deuteranomaly do not have complete deuteranopia, this threshold reflects more moderate cases.
 
@@ -181,7 +181,7 @@ After calculating these metrics for each available image, we calculated a ranked
 
 When analyzing images, calculating metrics, and creating figures and tables, we used the R statistical software (version 4.2.1) (R Development Core Team, 2022) and the following packages:
 
-## Qualitative image evaluation
+### Qualitative image evaluation
 
 We manually reviewed images to assess qualitatively whether visual characteristics were likely to be problematic for deuteranopes. Our intent was to establish a reference standard for evaluating the quantitative metrics we had calculated. Initially, we randomly sampled 1,000 eLife images from those we had downloaded. Two authors of this paper (HPS and AFO) reviewed each of the original (non-quantized, non-resized) images and the corresponding image that was simulated to reflect deuteranopia (severity = 0.8). Neither of these authors has been diagnosed with deuteranopia. This ensured the reviewers could compare the images with and without deuteranopia simulation. To avoid confirmation bias, neither author played a role in defining the quantitative metrics described above. Both authors reviewed the images and recorded observations based on four criteria:
 
@@ -193,7 +193,7 @@ Later, we randomly selected an additional 1000 images from eLife, which we used 
 
 From the candidate articles in the PubMed Central Open Access Subset, we randomly selected 2,000 articles. Two authors (HPS and AFO) manually reviewed these images.
 
-## Classification analyses
+### Classification analyses
 
 We used classification algorithms to discriminate between images that we had manually labeled as either ‘Definitely problematic’ or ‘Definitely okay’. Although it reduced our sample size, we excluded the ‘Probably problematic’ and ‘Probably okay’ images with the expectation that a smaller but more definitive set of examples would produce a more accurate model. Removing these images reduced our training set to 4501 images.
 
@@ -205,6 +205,6 @@ In addition to the baseline configuration, we tested 22 model configurations bas
 
 When training each model configuration, we used AUROC to evaluate the predictive performance on the internal validation sets. After comparing the model configurations via cross validation, we used the full training set to train a model, which we used to make predictions for the hold-out test sets. We calculated the following: true positives, false positives, true negatives, false negatives, accuracy, precision (positive predictive value), recall (sensitivity), AUROC, and AUPRC.
 
-## Web application
+### Web application
 
 We created a Web application using the Node.js framework (OpenJS Foundation, 2024). The application enables researchers to evaluate uploaded images. First, users upload an image in PNG or JPEG format. The application displays the image alongside a deuteranopia-simulated version of the image. For simulation, we implemented the Machado et al., 2009 matrix for deuteranopia in Javascript with a ‘severity’ value of 0.8, the same parameter used in training. If the user requests it, the application predicts whether the image is likely to be problematic for a deuteranope; the prediction includes a probabilistic score so that users can assess the model’s confidence level. With the intent to maximize the generalizability of these predictions, we trained a model using images from the training set and both holdout test sets. To facilitate execution of the CNN within the Web application, we used Tensorflow.js (version 4.0.0) (TensorFlow, 2019).

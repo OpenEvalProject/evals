@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.37701.001 In the hippocampus, the classical pyramidal cell type of the subiculum acts as a primary output, conveying hippocampal signals to a diverse suite of downstream regions. Accumulating evidence suggests that the subiculum pyramidal cell population may actually be comprised of discrete subclasses. Here, we investigated the extent and organizational principles governing pyramidal cell heterogeneity throughout the mouse subiculum. Using single-cell RNA-seq, we find that the subiculum pyramidal cell population can be deconstructed into eight separable subclasses. These subclasses were mapped onto abutting spatial domains, ultimately producing a complex laminar and columnar organization with heterogeneity across classical dorsal-ventral, proximal-distal, and superficial-deep axes. We further show that these transcriptomically defined subclasses correspond to differential protein products and can be associated with specific projection targets. This work deconstructs the complex landscape of subiculum pyramidal cells into spatially segregated subclasses that may be observed, controlled, and interpreted in future experiments.
+In the hippocampus, the classical pyramidal cell type of the subiculum acts as a primary output, conveying hippocampal signals to a diverse suite of downstream regions. Accumulating evidence suggests that the subiculum pyramidal cell population may actually be comprised of discrete subclasses. Here, we investigated the extent and organizational principles governing pyramidal cell heterogeneity throughout the mouse subiculum. Using single-cell RNA-seq, we find that the subiculum pyramidal cell population can be deconstructed into eight separable subclasses. These subclasses were mapped onto abutting spatial domains, ultimately producing a complex laminar and columnar organization with heterogeneity across classical dorsal-ventral, proximal-distal, and superficial-deep axes. We further show that these transcriptomically defined subclasses correspond to differential protein products and can be associated with specific projection targets. This work deconstructs the complex landscape of subiculum pyramidal cells into spatially segregated subclasses that may be observed, controlled, and interpreted in future experiments.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we took a multimodal approach to understanding the organizational logic of
 
 ## Results
 
-## Overview of subiculum scRNA-seq atlas: construction, validation, and extension
+### Overview of subiculum scRNA-seq atlas: construction, validation, and extension
 
 We took two complementary approaches to obtain cells for our subiculum scRNA-seq atlas (overview: Figure 1; initial analysis: Figure 2). In one set of experiments, we microdissected out dorsal, intermediate, and ventral regions of the subiculum from wild-type mice (n = 3 mice total, one mouse per region). We dissociated these subiculum regions and manually selected cells for sequencing. In a second set of experiments, we injected retrograde beads into subiculum targets, labeling specific projection classes of subiculum cells (n = 3 mice total, one mouse per projection class). In these experiments, the subiculum was microdissected and dissociated, and manual selection was used to specifically purify for labeled cells. In both experiments, library preparation, sequencing, and analysis were handled according to previous methods (Cembrowski et al., 2018) (see Materials and methods).
 
@@ -40,7 +40,43 @@ We took two complementary approaches to obtain cells for our subiculum scRNA-seq
 
 **Figure 1.:** (A) Two strategies, based upon geography and projections, were used to select cells for scRNA-seq. (B) Single-cell transcriptomes were constructed and analyzed. (C) Subclasses revealed by scRNA-seq were cross-validated and spatially registered by in situ hybridization. (D) Higher order features (e.g. projection classes) were mapped onto subclasses.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig2-v2.jpg)
+
+**Figure 2.:** (A) Gene expression across cells of the subiculum, visualized by t-SNE. Colors indicate cluster identified by graph-based clustering, with cluster number provided alongside. (B) Expression of control genes and cluster-specific marker genes, summarized across clusters. Results are depicted as violin plots, which illustrate the smoothed distribution of expression across all cells. (C) Heatmap of genes with neuronally relevant ontologies that are enriched or depleted in individual clusters. Marker genes that correspond to specific ontologies are colored according to their respective cluster. Note that some marker genes (specifically Dlk1, Gpc3, Spink8, Ly6g6e) do not correspond to the ontologies shown here.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Projections onto the first three principal components are shown. (B) Random forest classification effectiveness. Here, for each iteration, a random subset of cells was chosen for classification (number of cells denoted by x-axis), and the remaining cells were used to test robustness of classification. One hundred simulations were run for each x value. Results are depicted as mean ± SD. Typically, misclassified cells reflected cells located on the extrema of clusters and/or cells occupying underrepresented clusters.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** For each pairwise comparison across clusters, the number of enriched genes (defined as >3 fold enriched on average between the ‘enriched’ cluster relative to the ‘depleted’ cluster and pADJ <0.05) is shown. Matrix is ordered relative to hierarchical relationship of transcriptomes. For reference, t-SNE visualization of clustered transcriptomes is provided.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Left: t-SNE visualization of cells and clusters identified in an independent dataset of biological replicates. Right: marker genes associated with eight obtained clusters in replicate dataset. (B) Left: t-SNE visualization of cells and clusters used in main text of manuscript (‘original dataset’). Right: expression of replicate marker genes in the original dataset. (C) Visualization of Cbln4 expression, the sole cluster not captured in the replicate dataset. (D) Left: t-SNE visualization of replicate dataset, reflected in y axis and recolored according to cluster correspondence with original dataset. Right: t-SNE visualization of original dataset, for comparison.
+
 This approach obtained high-read-depth, high-quality transcriptomes from 1150 cells (5.6 ± 1.0 thousand expressed genes/cell, mean ± SD). Data from these cells, in conjunction with user-friendly analysis and visualization tools, are available on http://hipposeq.janelia.org. To ensure that the results and conclusions of our scRNA-seq analysis were robust and predicted higher order features, we validated predictions from this dataset with additional biological replicates (Figure 2—figure supplement 3) and cross-validated and extended our findings using in situ hybridization (Figures 3–7), immunohistochemistry (Figure 8), and projection mapping (Figure 9).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig3-v2.jpg)
+
+**Figure 3.:** For each transcriptomic cluster, expression of a corresponding marker gene is shown across the anterior-posterior axis of the subiculum. Arrows indicate example regions of dense expression referred to in main text. Atlas images illustrate subiculum colored in yellow (atlas images, here and elsewhere, modified from Paxinos and Franklin, 2004), with cardinal directions corresponding to dorsal, ventral, medial, and lateral directions. scRNA-seq images illustrate expression colored from white to red on a logarithmic scale. Histological images illustrate coronal sections from the Allen Brain Atlas (Lein et al., 2007). Scale bar: 1 mm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Expression of the distal marker Fn1, shown in coronal sections, as in Figure 3. Arrows denote extent of CA1, as assessed through atlas images and tightly packed cell body layer. Note in this plane of sectioning, Fn1 expression is strongest in posterior sections. Also note that in all sections Fn1 expression is spatially removed from CA1. Scale bar: 1 mm. (B) Schematized expression of Fn1 in a horizontal section, dividing the subiculum into proximal (‘P’) and distal (‘D’).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Left: ISH showing expression of Myo5b in anterior CA1 pyramidal cells. Middle: as at left, but with more posterior section showing CA1/subiculum boundary. Expression is restricted to the tightly packed pyramidal cell group only, consistent with CA1 expression. Right: expression from population-level RNA-seq in dorsal, intermediate, and ventral CA1 PCs. Units are FPKM (Fragments Per Kilobase of exon per Million reads), with data from Cembrowski et al., 2016b. Scale bars: 500 μm. (B) As in A, but for expression of Col5a2. This gene labels loosely packed cell bodies (putative subiculum) and lacks expression in CA1 cells. Scale bars: 500 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) ISH image illustrating expression of Ddit4l in parasubiculum (‘Para’), presubiculum (‘Pre’), and postsubiculum (‘Post’), but not subiculum (‘Sub’). Scale bar: 1 mm. B. Ddit4l is generally not expressed in the scRNA-seq dataset. Inset value denotes maximum CPM in dataset. C,D. As in (A,B), but for the gene Dact2. Scale bar: 1 mm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Top row: names of four genes, and associated protein products, that have been previously shown to occupy spatial subdomains in the subiculum via immunohistochemistry (Ishihara and Fukuda, 2016). Middle row: scRNA-seq expression for all four genes across subclasses. Bottom row: ISH images for each gene in the dorsal subiculum. Asterisks indicate subclass-specific enrichment, defined as >3 fold enriched on average and pADJ <0.05. Scale bar: 400 μm.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig4-v2.jpg)
 
@@ -58,17 +94,45 @@ This approach obtained high-read-depth, high-quality transcriptomes from 1150 ce
 
 **Figure 7.:** Schematized spatial domains are illustrated for scRNA-seq clusters across the anterior-posterior axis of the subiculum. The subiculum contains transcriptomically heterogeneous subclasses that conform to a complex geometry. Note that coloring convention for Ly6g6e has been changed relative to other figures to differentiate this subclass from the S100b-expressing subclass. Scale bar: 1 mm.
 
-## The transcriptomic landscape of the subiculum
+![Figure 8.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig8-v2.jpg)
+
+**Figure 8.:** Top row: gene names, along with associated protein products targeted in IHC. Second row: violin plots of genes that were enriched or depleted in specific clusters. Third row: ISH images of corresponding genes. Black dashed lines illustrate extent of pyramidal cell layer. Colored dashed lines denote spatial domain of associated cluster. Fourth row: immunohistochemical detection of protein products. White dashed lines illustrate extent of pyramidal cell layer. (A) Gene products enriched or depleted in the Fn1-expressing cluster (i.e. cluster 4); namely, Kcnd3 (encoding the potassium channel subunit Kv4.3), Syt2 (encoding synaptotagmin 2, involved in exocytosis), and Slc17a6 (encoding Vglut2, mediating glutamate uptake into synaptic vesicles). (B) Results for S100, expressed in the S100b-expressing cluster (i.e. cluster 1). Note that the antibody recognizes S100 (i.e. both S100B and S100A) and thus labels astrocytes as well as neurons. (C) Results for the gene product Gpc3/Gpc3, enriched in the Gpc3-expressing cluster (i.e. cluster 5). (D) Results for the gene products Pcp4/Pcp4 and Pamr1/Pamr1, enriched in the Ly6g6e-expressing cluster (i.e. cluster 9). All scale bars: 200 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) ISH image depicting Slc17a6 expression (encoding Vglut2) in the dorsal subiculum of the mouse brain. Expression of this gene is located distally, but not proximally. Insert denotes scRNA-seq results, wherein Slc17a6 is enriched in the green population. Black dashed line denotes pyramidal cell layer. (B) ISH image depicting Cre expression in the Slc17a6-ires-cre transgenic mouse line. Black dashed line denotes pyramidal cell layer. Image from Allen Transgenic Characterization. (C) Viral expression following Cre-dependent AAV2/1-CAG-FLEX-EGFP viral injection into the dorsal subiculum. White dashed line denotes pyramidal cell layer. In all panels, green dashed line denotes approximate boundary associated with Slc17a6-enriched cluster. Scale bars: 200 μm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Left: Expansion of S100 protein labeled via immunohistochemistry in the spatial domain of cluster 1. In addition to astrocyte labeling (as expected from astrocyte-marking nature of S100), pyramidal cell bodies and primary dendrites are also apparent (examples denoted by large and small arrows, respectively). Right: As in left, but for a region of subiculum distal to the spatial domain of cluster 1. Note the general decrement in fluorescence, as well as lack of neuronal cell bodies and primary dendrites. Scale bars: 50 μm.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig9-v2.jpg)
+
+**Figure 9.:** (A) Cells corresponding to three downstream projections (prefrontal cortex, ‘PFC’; nucleus accumbens, ‘NA’; amygdala) are highlighted (red). (B) t-SNE plot of single-cell transcriptomes, illustrating cluster identity (as in Figure 2A). (C) Relative occupancy for each of the transcriptomic clusters, defined as the number of cluster-specific cells divided by the total number of projection cells, is shown for each projection class.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) In the replicate dataset, cells corresponding to three downstream projections (prefrontal cortex, ‘PFC’; nucleus accumbens, ‘NA’; amygdala) are highlighted (red). (B) t-SNE plot of single-cell transcriptomes, illustrating cluster identity (as in Figure 2A). (C) Relative occupancy for each of the transcriptomic clusters, as in Figure 9C. (D,E) As in (B,C), but with coloring changed to match conventions of original dataset (as in Figure 2—figure supplement 3).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Left: NA-projecting cells, labeled by AAV-SL1-CAG-tdT (rAAV2-retro: Tervo et al., 2016) following injection into the NA. Middle: expression of Tpbg. Right: overlay. Note that NA-projecting cells largely emerge from more superficial laminae than Tpbg-expressing cells. Overall, 97% of labeled cells were mutually exclusive for Tpbg expression and PFC projections (n = 275 total cells from n = 2 animals). Scale bar: 100 μm.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/37701/elife-37701-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** For the three projection classes examined in this study (PFC, NA, amygdala), projection class strength is shown on a per-subclass basis. Single, double, and triple asterisks denote at least 5%, 20%, and 50% of subiculum projections associated with the corresponding subclass. Dashed lines indicate subclasses with spatial locations at different anterior or posterior sections than that represented in the schematic.
+
+### The transcriptomic landscape of the subiculum
 
 To begin, we computationally pooled all of our transcriptomes, analyzing our datasets agnostic to selection method (i.e. unlabeled WT cells vs. labeled projection cells). We performed clustering using a graph-based clustering approach (Satija et al., 2015) (see Materials and methods), and visualized clusters through t-SNE-based nonlinear dimensionality reduction (Figure 2A; see also Figure 2—figure supplement 1A for principal component analysis). From this analysis, nine clusters were identified that expressed marker genes associated with excitatory neurons (e.g. Camk2a, Slc17a7; Figure 2A,B, Figure 2—figure supplement 1; note 14 putative non-neuronal cells and 13 putative interneurons were excluded from analysis, see Materials and methods). These clusters were robust, as using a supervised random forest classifier illustrated that 400 cells (~36% of dataset; 1103 total cells in dataset) were sufficient for ~80% success in predicting cluster identity (Figure 2—figure supplement 1B).
 
 Remarkably, single genes were largely sufficient to delineate individual clusters (Figure 2B). Relatively large subclasses of cells were delineated by the marker genes S100b, Dlk1, Tpbg, and Fn1. Smaller subclasses, putatively corresponding to rarer subclasses of excitatory cells, showed expression of Gpc3, Cbln4, Lefty1, Spink8, and Ly6g6e. In addition to these marker genes, a host of differentially expressed genes that spanned critical neuronal functions were also identified (e.g. axon guidance and cell adhesion, ion channels and associated subunits, ligands and receptors, regulation of transcription, and calcium handling; Figure 2C). On average, a given cluster exhibited enrichment of 50 ± 32 genes relative to the remaining dataset (defined as >3 fold enriched on average and pADJ <0.05; see Materials and methods), and 114 ± 68 genes when restricting analysis to pairwise cluster comparisons (Figure 2—figure supplement 2; Supplementary file 2 and 3). Notably, our analysis did not rely on any of these functional categories a priori, but rather recovered them from an unbiased approach. In total, these results illustrate that gene expression variation within subiculum excitatory cells is extensive, and likely underpins its functional heterogeneity.
 
-## Replicate cross-validation
+### Replicate cross-validation
 
 To examine the generalization of these results across biological replicates (i.e. animals), we next examined whether the same clusters were recapitulated across additional mice (n = 5 additional animals in total; see Materials and methods). From these animals, we dissected the subiculum and gathered data from a total of 847 excitatory neurons (5.6 ± 0.8 thousand genes expressed/cell; see Materials and methods). We performed analysis of this dataset identically to our previous dataset, and obtained eight clusters (Figure 2—figure supplement 3A). All eight clusters had marker genes associated with clusters obtained from our original dataset (geometric mean pADJ values for cluster-specific markers = 8.7e-40, cf. pADJ = 4.1e-62 from original dataset; Figure 2—figure supplement 3A,B). The single cluster from original dataset that was missed in the replicate dataset, associated with Cbln4 expression, was detected in a subset of cells that separated in t-SNE space but failed to cluster at our predetermined resolution (Figure 2—figure supplement 3C). Importantly, no new clusters emerged from this replicate dataset, illustrating that our original scRNA-seq dataset accurately predicted subpopulation-specific organization in entirely separate animals (Figure 2—figure supplement 3D).
 
-## Spatial deconstruction of the subiculum
+### Spatial deconstruction of the subiculum
 
 The clusters of excitatory neurons likely reflect different subclasses of subiculum pyramidal cells but may also include cell types from neighboring regions (e.g. CA1). To examine the extent to which these clusters corresponded to subiculum subclasses, we next sought to identify spatial patterns associated with each cluster. We identified cluster-specific marker genes for which Allen Mouse Brain Atlas coronal in situ hybridization (ISH) (Lein et al., 2007) images were available, and examined the spatial expression of these marker genes (Figure 3). The marker genes Gpc3, Dlk1, and Tpbg were strongly expressed ventrally in anterior sections, with Dlk1 and Tpbg exhibiting dorsal expression in more posterior sections. Alternatively, Col5a2 and S100b were expressed in disparate populations of dorsal proximal subiculum (i.e., close to CA1), whereas Fn1 was enriched in distal subiculum (i.e. away from CA1) (Cembrowski et al., 2018) (note that in coronal sections, distal subiculum is primarily associated with enrichment in posterior sections; see Figure 3—figure supplement 1). The gene Ly6g6e labeled the deepest layer of cells across the long axis, and Cbln4 corresponding to a layer of cells in the posterior subiculum. Thus, each of these marker genes corresponded to a continuous spatial subregion of the subiculum (Figure 3).
 
@@ -76,17 +140,17 @@ Conversely, expression of Myo5b was enriched in a densely packed group of cells 
 
 Previous work has demonstrated that the subPCs can be subdivided into distinct subregions based upon immunohistochemical (IHC) labeling (Ishihara and Fukuda, 2016). Specifically, it was shown that ZnT3, Nos, and Pcp4 (encoded by Slc30a3, Nos1, and Pcp4, respectively) all conformed to specific proximal laminae, whereas Vglut2 (encoding by Slc17a6) corresponded to the distal subiculum. We verified that expression of these genes corresponded to specific subclasses and obeyed the spatial organization expected by IHC (Figure 3—figure supplement 4). Thus, our work recapitulated and extended this previous work by providing whole-genome and quantitative validation into putative subclasses of subPCs, as well as revealing a host of previously unresolved subclasses.
 
-## Laminar differences in subiculum identity
+### Laminar differences in subiculum identity
 
 Given that we were able to spatially register expression of subPC marker genes across the subiculum, we next investigated these spatial domains in finer detail. We began by studying gene expression associated with subiculum laminae. Inspecting the dorsal subiculum first, we found that Col5a2, Tpbg, and Ly6g6e seemingly corresponded to three distinct laminae, patterning the subiculum in a superficial-to-deep fashion (Figure 4A). Similarly, in the ventral subiculum the combination of Cbln4, Dlk1, Tpbg, and Ly6g6e defined a laminar subiculum organization (Figure 4B).
 
 We sought to directly confirm that this lamina-like organization corresponded to mutually exclusive groups of cells, rather than adhering to continua (Cembrowski and Menon, 2018a). Using two-color ISH, we labeled for the expression of marker genes Tbpg and Gpc3, two genes that were mutually exclusive in scRNA-seq (Figure 3) and seemingly corresponded to abutting lamina in single-color ISH (Figure 4B). Using this strategy, we verified that these laminae corresponded to distinct, abutting but non-overlapping populations of cells (99% of 772 labeled cells exhibited mutual exclusion, n = 2 mice, two sections/mouse; Figure 5A). Similar reciprocal laminar organization could be identified for additional marker genes and associated subclasses (Fn1 vs. Dlk1: 98% of 457 labeled cells exhibited mutual exclusion, Figure 5B; Tpbg vs. Dlk1: 97% of 801 labeled cells exhibited mutual exclusion, Figure 5C; Cbln4 vs. Dlk1: 98% of 489 labeled cells exhibited mutual exclusion, Figure 5D; Tpbg vs. Ly6g6e: 93% of 733 labeled cells exhibited mutual exclusion, Figure 5E; all statistics represent results from n = 2 mice, two sections/mouse). In total, these findings illustrated the discretely separated nature of multiple scRNA-seq clusters, and revealed that the subiculum exhibited abutting laminae that corresponded to transcriptomically distinct subclasses.
 
-## Most transcriptomic subclasses span the long axis
+### Most transcriptomic subclasses span the long axis
 
 As long-axis heterogeneity may underlie the complex functionality of the hippocampus (Strange et al., 2014), we next considered whether transcriptomic cell classes traversed the long axis (Cembrowski et al., 2016a; Cembrowski et al., 2016b; Thompson et al., 2008). For each cluster, we identified the dorsal and ventral extremes of associated marker gene expression. This analysis revealed that most clusters (6/8) exhibited marker gene expression that traversed most or all of the hippocampal long axis (Figure 6, top). The only exceptions to this rule were transcriptomic clusters associated with S100b and Gpc3, which respectively spanned the dorsal and ventral halves of the subiculum (Figure 6, bottom). Thus, in total, the transcriptomically identified subclasses of subPCs produced a complex geometry that exhibited heterogeneity in the dorsal-ventral, superficial-deep, and proximal-distal axes (Figure 7; see also Figure 3—figure supplement 1). However, given that most subclasses traversed the dorsal-ventral axis, the primary axes of variation were superficial-deep and proximal-distal (Witter, 2006).
 
-## Higher order correlates of transcriptomic clusters
+### Higher order correlates of transcriptomic clusters
 
 Having combined scRNA-seq and ISH to deconstruct the transcriptomic landscape of the subiculum, we next sought to understand to what extent transcriptomic subclasses covaried with higher-order properties. First, using immunohistochemistry (IHC), we examined to what extent transcript-level differences corresponded to differential protein products. We found that Kv4.3, a potassium channel pore-forming subunit encoded by Kcnd3, was depleted in distal subiculum (i.e. the Fn1-associated cluster 4) (Figure 8A, left). Conversely, this region was enriched for synaptotagmin-2 (a calcium sensor that mediates vesicular release, encoding by Syt2) and Vglut2 (a glutamate transporter encoded by Slc17a6) (Figure 8A, middle and right) (Ishihara and Fukuda, 2016). Interestingly, we also found that the Slc17a6 expression could be exploited for subclass-specific access of the distal subiculum in transgenic mice (Vong et al., 2011), providing direct evidence that our transcriptomic work can be leveraged to target and manipulate specific cell types (Figure 8—figure supplement 1) (see also Cembrowski et al., 2018; Yamawaki et al., 2018).
 
@@ -98,7 +162,7 @@ Finally, we specifically examined our datasets that were obtained based upon pro
 
 In this study, we examined the organizational rules underlying heterogeneity within the pyramidal cell population of the subiculum. Using scRNA-seq, we identified widespread differential expression of genes within this canonical neuronal type, and mapped this heterogeneity onto specific subclasses of cells. Using in situ hybridization, we identified that these subclasses exhibited mutually exclusive, abutting spatial domains within the subiculum. Furthermore, we found that these transcriptomic classes correlate with protein products and downstream projection targets. Thus, the subiculum can be deconstructed into subfields of principal cells that covary in multiple properties. We have publicly hosted these scRNA-seq data, in conjunction with analysis and visualization tools, to facilitate further study of gene expression and cell types within the subiculum.
 
-## The subiculum as a laminar and columnar structure
+### The subiculum as a laminar and columnar structure
 
 From previous cellular- and circuit-level studies, different conclusions have been reached as to the ultimate spatial organization of the subiculum. In one study employing immunohistochemistry, it was demonstrated that several proteins exhibit different laminar-like spatial domains within the subiculum that covary with morphological differences (Ishihara and Fukuda, 2016). These findings are suggestive of a laminar organization being present in the subiculum; however, it is challenging to extrapolate governing organizational schemes based on the patterning of a select few markers. In addition, such marker-based approaches do not resolve the overall extent of heterogeneity between putative subclasses, nor guarantee that all potential subclasses are resolved.
 
@@ -108,7 +172,7 @@ The scRNA-seq approach used here, providing an unbiased and complete (i.e. whole
 
 To what extent does our work unambiguously resolve the subclass-specific landscape of the subiculum? Here, we directly demonstrated the discrete pairwise separation of five clusters (Figure 5), and the overall nonoverlapping nature of these clusters can be inferred from their relative spatial ordering. Taking these results in combination with previous in situ hybridization (Cembrowski et al., 2018), this demonstrates the existence of at least six discretely separable subclasses of subiculum pyramidal cells. Although not examined directly, it is possible that some remaining scRNA-seq clusters may comprise opposite extremes of a continua. On the other hand, there may be additional subiculum subclasses that may be revealed with greater cell number or sequencing depth. As a result, the eight scRNA-seq subclasses resolved here likely represent an approximation (and potentially, a lower bound) as to the ultimate number of true biological subclasses of subiculum pyramidal cells.
 
-## Transcriptomic heterogeneity as a predictor of functional heterogeneity
+### Transcriptomic heterogeneity as a predictor of functional heterogeneity
 
 Understanding how heterogeneity within the hippocampus underpins function has conventionally been studied by comparing across classical hippocampal cell types (e.g. Kaifosh and Losonczy, 2016; Neunuebel and Knierim, 2014). Complementing this body of across-cell-type work, recent transcriptomic research has illustrated that heterogeneity within each classical hippocampal cell type is also prominent. This heterogeneity encompasses both discrete and continuous variation across dorsal-ventral, proximal-distal, and superficial-deep axes (Cembrowski et al., 2016a; Cembrowski et al., 2018; Cembrowski et al., 2016b; Habib et al., 2016; Thompson et al., 2008). As higher order cellular, circuit, and functional features also vary in related ways (Cembrowski and Spruston, 2018b, in review; Danielson et al., 2016; Knierim et al., 2006; Lee et al., 2015; Lee et al., 2014; Soltesz and Losonczy, 2018; Strange et al., 2014), this suggests that transcriptomic identity can be coherently aligned with specialized functionality (Cembrowski et al., 2018; Yamawaki et al., 2018).
 
@@ -116,15 +180,172 @@ It follows that the transcriptomically defined subclasses identified in this stu
 
 How can such function be identified? In this study, we identified that subPCs can be deconstructed into a collection of discretely separated subclasses based upon disparate gene expression. This approach exploited gene expression heterogeneity as a means of cellular classification and spatial registration. As a consequence, this analysis was performed agnostic to the functional correlates of these genes; however, this work will help to provide a necessary foundation for assessing functional relevance in multiple ways. First, many of the differentially expressed genes in this study are associated with known functional roles in neuronal populations (Figure 2C). Consequently, these findings enable specific hypotheses to be generated and tested across subclasses. Second, as these subclasses can covary with projection target (Figure 9), these predictions can be investigated and understood at the level of neuronal circuits. Third, our analysis provides individual genes as markers (Figures 2 and 3) that will enable these questions to be addressed at a subclass-specific resolution (e.g. via transgenic mice; Figure 8—figure supplement 1). In total, this work will facilitate the coherent interrogation of molecular, cellular, and circuit properties of the specific subclasses of the subiculum.
 
-## Single-cell Hipposeq, a public resource for hippocampal scRNA-seq
+### Single-cell Hipposeq, a public resource for hippocampal scRNA-seq
 
 Due to the data-rich nature of our subiculum scRNA-seq dataset, there are many additional features that can be mined and analyzed in further studies. To facilitate the extended use of these data, we have publicly hosted our scRNA-seq data in conjunction with corresponding analysis and visualization tools. This augments earlier population-level RNA-seq data hosted by our laboratory (‘Hipposeq’: Cembrowski et al., 2016b), providing an accessible and intuitive single-cell extension for dissecting the structural and functional heterogeneity of the subiculum. Thus, our work here provides both an immediate and long-term framework with which subiculum subclasses can be interpreted, targeted, and manipulated in future studies.
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Vglut2-IRES-Cre</td>
+      <td>Jackson</td>
+      <td>RRID: IMSR_JAX:016963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Kv4.3 rabbit polyclonal</td>
+      <td>Alomone</td>
+      <td>APC-017; RRID: AB_2040178</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Syt2 mouse monoclonal</td>
+      <td>DSHB</td>
+      <td>RRID: AB_531910</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Vglut2 mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab79157, RRID: AB_1603114</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S100 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>ab868, RRID: AB_1603114</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gpc3 mouse monoclonal</td>
+      <td>Millipore</td>
+      <td>MABC667</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pcp4 rabbit polyclonal</td>
+      <td>Sigma</td>
+      <td>HPA005792, RRID: AB_1855086</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pamr1 rabbit polyclonal</td>
+      <td>Proteintech</td>
+      <td>55310–1-AP, RRID: AB_11232</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tpbg ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>521061-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dlk1 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>405971-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gpc3 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>418541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fn1 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>310311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cbln4 ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>428471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ly6g6e ISH probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>506391-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org</td>
+      <td>SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>https://satijalab.org/seurat/</td>
+      <td>SCR_007322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom scripts</td>
+      <td>This study</td>
+      <td>DOI:10.6084/m9.figshare.7140350</td>
+      <td>Scripts used to analyze scRNA-seq data</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Retrobeads</td>
+      <td>Lumafluor</td>
+      <td></td>
+      <td>‘Overview of subiculum  scRNA-seq atlas: construction,  validation, and extension’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV-SL1-CAG-tdT</td>
+      <td>Janelia Viral Core</td>
+      <td></td>
+      <td>‘Higher-order correlates of transcriptomic clusters’</td>
+    </tr>
+  </tbody>
+</table>
+
 Experimental procedures were approved by the Institutional Animal Care and Use Committee at the Janelia Research Campus (protocols 14–118 and 17–159). Mice were housed on a 12 hr light/dark cycle with ad libitum food and water access.
 
-## scRNA-seq data generation and analysis
+### scRNA-seq data generation and analysis
 
 An initial single-cell RNA-seq dataset (5.6 ± 1.0 thousand expressed genes/cell, mean ± SD) was generated according to a previously published protocol (Cembrowski et al., 2018). In brief, for animals used in geography-based datasets (dorsal, intermediate, and ventral), mature (>8 weeks) male C57BL/6 mice were used. In these animals, coronal sections were made, and microdissection of the corresponding geographical regions was performed (n = 1 biological replicate, that is animal, for each region). Microdissected regions were dissociated, and manual purification (Hempel et al., 2007) was used to obtain cells. For animals used in projection-based datasets (PFC, NA, and amygdala; n = 1 biological replicate, that is animal, for each region), red or green retrograde beads (Lumafluor, Naples, FL) were injected bilaterally at 200 nL/depth as follows: PFC: A/P, M/L, D/V 2.0, 0.25, (-2.5,–2.25); NA: 2.0, 1.0, (-5.0,–3.8); amygdala: −0.5, 2.8, (-5.0,–4.0). One injection site along the anterior-posterior axis was selected for each site to avoid potential off-target effects associated with injecting large volumes of the brain. Fluorescent cells in the intermediate and ventral subiculum were targeted for manual purification according to previous methods (Cembrowski et al., 2016a), with 175, 139, and 71 cells obtained for the NA, PFC, and amygdala, respectively. To validate this initial scRNA-seq dataset, a second scRNA-seq was constructed and analyzed independently (n = 884 cells, with 5.6 ± 0.8 thousand genes expressed/cell). This dataset contained unlabeled cells selected at random across the full extent of the subiculum (n = 2 biological replicates; i.e., mice), as well as projection-specific datasets (n = 2, 1, and one biological replicates from the NA, PFC, and amygdala, respectively, with n = 116, 64, and 44 labeled projection cells obtained for each respective projection).
 
@@ -136,13 +357,13 @@ When plotting gene expression using t-SNE, color ranges from white (zero express
 
 Raw and processed scRNA-seq datasets have been deposited in the National Center for Biotechnology Information (NCBI) Gene Expression Omnibus under GEO: GSE113069. All analysis scripts are publicly available (DOI:10.6084/m9.figshare.7140350) (Cembrowski and Spruston, 2018c).
 
-## In situ hybridization
+### In situ hybridization
 
 All chromagenic ISH images were obtained from the publicly available Allen Mouse Brain Atlas (AMBA) (Lein et al., 2007) (Supplementary file 3). To cross-validate marker genes associated with scRNA-seq clusters, we identified AMBA coronal image sets for genes that exhibited minimal off-target expression in scRNA-seq datasets. To cross-validate expression of Myo5b in CA1 cells in RNA-seq, previous population-level RNA-seq was used (Cembrowski et al., 2016b).
 
 All multicolor fluorescent ISH processing was performed according to previous protocols (Cembrowski et al., 2016a). All probes were purchased from Advanced Cell Diagnostics (Hayward, CA) and were as follows: Tpbg (521061-C3), Dlk1 (405971-C2), Gpc3 (418541), Fn1 (310311), Cbln4 (428471), Ly6g6e (506391-C2). For combining ISH with circuit mapping, AAV-SL1-CAG-tdTomato (rAAV2-retro: Tervo et al., 2016) was injected into the NA, with the same coordinates used in retrobead injections (200 nL/site; note that retrobeads were not used due to bead labeling being lost during ISH processing). For quantifying colocalization of two-color ISH, cell bodies were counted across at least two optical sections from two animals, with the degree of overlap quantified as the number of colabeled cells divided by the total number of labeled cells in either channel.
 
-## Immunohistochemical and transgenic mouse validation
+### Immunohistochemical and transgenic mouse validation
 
 Male mice (>=2 mice/antibody) were deeply anesthetized with isoflurane and perfused with 0.1M phosphate buffer (PB) followed by 4% paraformaldehyde (PFA) in PB. Brains were dissected and post-fixed in 4% PFA overnight. For most experiments, brain sections (50 – 100 μm) were made using a vibrating tissue slicer (Leica VT 1200S, Leica Microsystems, Wetzlar, Germany; where noted, some experiments used cryostat-sectioned tissue (Leica 3050S, Leica Microsystems, Wetzlar, Germany). Antibodies used in this study were as follows: on rabbit antibody to Kv4.3 (1:200, APC-017, Alomone; RRID: AB_2040178), mouse antibody to Syt2 (1:250, znp-1, DSHB; RRID: AB_531910; performed on cryosectioned tissue), mouse antibody to Vglut2 (1:1000, ab79157, Abcam; RRID: AB_1603114), rabbit antibody to S100 (1:250, ab868, Abcam; RRID: AB_1603114), mouse antibody to Gpc3 (1:250, MABC667, Millipore), rabbit antibody to Pcp4 (1:250, HPA005792, Sigma; RRID: AB_1855086), rabbit antibody to Pamr1 (1:250, 55310–1-AP, Proteintech; RRID: AB_11232034).
 
@@ -150,6 +371,6 @@ Immunohistochemistry was performed on free-floating sections. All tissues were w
 
 For investigating cell-type-specific access predicted by scRNA-seq, Slc17a6-IRES-cre (i.e. Vglut2-IRES-cre; RRID: IMSR_JAX:016963) (Vong et al., 2011) male mice (n = 4) were injected with AAV2/1-CAG-FLEX-EGFP (Janelia Virus Services) in the subiculum (A/P −3.6, M/L 2.5; D/V −2.5 and −1.5 with 80 nL/depth). Mice were sacrificed at least 3 weeks later for histological examination of viral expression.
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 All histological images were acquired with a 20x objective using confocal microscopy (LSM 880, Carl Zeiss Microscopy, Jena, Germany). Single optical sections are shown, with the relevant regions tiled in XY dimensions as needed. In some cases, channels were postprocessed in Fiji (RRID:SCR_002285) (Schindelin et al., 2012), with brightness adjustments applied to the entire image and/or pseudocoloring.

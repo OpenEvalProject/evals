@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.36234.001 Cannabinoids can cross the placenta, thus may interfere with fetal endocannabinoid signaling during neurodevelopment, causing long-lasting deficits. Despite increasing reports of cannabis consumption during pregnancy, the protracted consequences of prenatal cannabinoid exposure (PCE) remain incompletely understood. Here, we report sex-specific differences in behavioral and neuronal deficits in the adult progeny of rat dams exposed to low doses of cannabinoids during gestation. In males, PCE reduced social interaction, ablated endocannabinoid long-term depression (LTD) and heightened excitability of prefrontal cortex pyramidal neurons, while females were spared. Group 1 mGluR and endocannabinoid signaling regulate emotional behavior and synaptic plasticity. Notably, sex-differences following PCE included levels of mGluR1/5 and TRPV1R mRNA. Finally, positive allosteric modulation of mGlu5 and enhancement of anandamide levels restored LTD and social interaction in PCE adult males. Together, these results highlight marked sexual differences in the effects of PCE and introduce strategies for reversing detrimental effects of PCE.
+Cannabinoids can cross the placenta, thus may interfere with fetal endocannabinoid signaling during neurodevelopment, causing long-lasting deficits. Despite increasing reports of cannabis consumption during pregnancy, the protracted consequences of prenatal cannabinoid exposure (PCE) remain incompletely understood. Here, we report sex-specific differences in behavioral and neuronal deficits in the adult progeny of rat dams exposed to low doses of cannabinoids during gestation. In males, PCE reduced social interaction, ablated endocannabinoid long-term depression (LTD) and heightened excitability of prefrontal cortex pyramidal neurons, while females were spared. Group 1 mGluR and endocannabinoid signaling regulate emotional behavior and synaptic plasticity. Notably, sex-differences following PCE included levels of mGluR1/5 and TRPV1R mRNA. Finally, positive allosteric modulation of mGlu5 and enhancement of anandamide levels restored LTD and social interaction in PCE adult males. Together, these results highlight marked sexual differences in the effects of PCE and introduce strategies for reversing detrimental effects of PCE.
 
 ## Introduction
 
@@ -43,11 +43,189 @@ Here, we examined how prenatal cannabinoid exposure (PCE) (to synthetic and plan
 
 ## Results
 
-## Sex differences in the behavioral effects of prenatal cannabinoid exposure in the adult progeny
+### Sex differences in the behavioral effects of prenatal cannabinoid exposure in the adult progeny
 
 In rodent models, the consumption of synthetic or plant-derived cannabinoids during gestation has multiple deleterious consequences on the progeny’s behavior (reviewed in Campolongo et al., 2011; Higuera-Matas et al., 2015; Vargish et al., 2017). In these earlier studies, different drug and treatment regimen were used and multiple behaviors studied in the progeny at various ages. Here, to simplify the analysis/maximize the significance of our comparisons of molecular, synaptic and behavioral measures we first decided to generate a coherent new dataset. Thus, gestating dams were exposed a single daily low dose of the synthetic cannabinoid WIN55,212 – 2 (WIN, 0.5 mg/kg, s.c. or vehicle or SHAM) between GD5 and GD20. Key findings were reproduced with the phytocannabinoid Δ9-Tetrahydrocannabinol, THC (5 mg/kg). This protocol of PCE is clinically relevant, since the doses of WIN and THC used here correspond to a moderate exposure of cannabis in humans, correcting for the differences in route of administration and body weight surface area (Garcia et al., 1998; Mereu et al., 2003). We compared male and female SHAM and cannabinoid-exposed progeny in a series of behavioral tests to explore social behavior, anxiety, locomotion and cognition at the adult stage (PND >90). In accord with international ethical guidelines to reduce the number of animal used and their treatment/manipulations, once we had established that there was no difference between sham and naive animals (Table 1), data from animals in both groups were pooled and naive rat dams were included in the SHAM group.
 
+**Table 1.**
+ Statistical significance of different behavioral tasks in SHAM and Naive animals.Prenatal treatment from GD 5 to GD 20 with vehicle solution in control dams (SHAM group) did not alter sociability (social interaction), anxiety (elevated plus maze), and cognition (temporal order and object recognition memory tasks) in adult rats of either sex. Statistical significance was determined using the unpaired Student’s t-test after outliers were detected and removed from the dataset using Grubbs’ test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Behavior</th>
+      <th>Parameter</th>
+      <th>Treatment</th>
+      <th>Sex</th>
+      <th>n</th>
+      <th>Mean</th>
+      <th>SEM</th>
+      <th>P value (Unpaired t test)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Social Interaction</td>
+      <td rowspan="4"># of contacts</td>
+      <td>NAIVE</td>
+      <td rowspan="2">Male</td>
+      <td>5</td>
+      <td>216.200</td>
+      <td>28.420</td>
+      <td rowspan="2">0.439</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>10</td>
+      <td>235.800</td>
+      <td>10.550</td>
+    </tr>
+    <tr>
+      <td>NAIVE</td>
+      <td rowspan="2">Female</td>
+      <td>4</td>
+      <td>211.800</td>
+      <td>21.600</td>
+      <td rowspan="2">0.85</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>215.100</td>
+      <td>5.713</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Elevated Plus Maze</td>
+      <td rowspan="4">% Time Open</td>
+      <td>NAIVE</td>
+      <td rowspan="2">Male</td>
+      <td>6</td>
+      <td>25.900</td>
+      <td>2.988</td>
+      <td rowspan="2">0.665</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>24.270</td>
+      <td>2.245</td>
+    </tr>
+    <tr>
+      <td>NAIVE</td>
+      <td rowspan="2">Female</td>
+      <td>9</td>
+      <td>25.530</td>
+      <td>2.464</td>
+      <td rowspan="2">0.359</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>9</td>
+      <td>22.540</td>
+      <td>1.978</td>
+    </tr>
+    <tr>
+      <td rowspan="4">% Open Entries</td>
+      <td>NAIVE</td>
+      <td rowspan="2">Male</td>
+      <td>6</td>
+      <td>27.740</td>
+      <td>3.248</td>
+      <td rowspan="2">0.164</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>33.950</td>
+      <td>2.678</td>
+    </tr>
+    <tr>
+      <td>NAIVE</td>
+      <td rowspan="2">Female</td>
+      <td>9</td>
+      <td>33.160</td>
+      <td>2.520</td>
+      <td rowspan="2">0.475</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>9</td>
+      <td>30.230</td>
+      <td>3.111</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Temporal order</td>
+      <td rowspan="4">Discrimination index</td>
+      <td>NAIVE</td>
+      <td rowspan="2">Male</td>
+      <td>8</td>
+      <td>0.320</td>
+      <td>0.085</td>
+      <td rowspan="2">0.702</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>0.366</td>
+      <td>0.078</td>
+    </tr>
+    <tr>
+      <td>NAIVE</td>
+      <td rowspan="2">Female</td>
+      <td>8</td>
+      <td>0.258</td>
+      <td>0.132</td>
+      <td rowspan="2">0.896</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>0.277</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Object Recognition</td>
+      <td rowspan="4">Discrimination Index</td>
+      <td>NAIVE</td>
+      <td rowspan="2">Male</td>
+      <td>10</td>
+      <td>0.547</td>
+      <td>0.087</td>
+      <td rowspan="2">0.792</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>8</td>
+      <td>0.580</td>
+      <td>0.086</td>
+    </tr>
+    <tr>
+      <td>NAIVE</td>
+      <td rowspan="2">Female</td>
+      <td>7</td>
+      <td>0.323</td>
+      <td>0.126</td>
+      <td rowspan="2">0.481</td>
+    </tr>
+    <tr>
+      <td>SHAM</td>
+      <td>7</td>
+      <td>0.421</td>
+      <td>0.045</td>
+    </tr>
+  </tbody>
+</table>
+
 We found that PCE impaired specific components of social interactions in adult male rats. Thus, PCE males had less contact and spent less time interacting with their congeners than those exposed in-utero to vehicle (Figure 1A–B). Detailed exploration of the various parameters of social interaction revealed that sniffing (Figure 1C–D) and playing (Figure 1E) behaviors were impaired in PCE males while the number of attacks remained unchanged (Figure 1F). The low socialization in PCE males was unlikely due to impaired motor locomotion, as we found no significant change in the distance traveled between WIN and SHAM groups during testing (3758 ± 117.8 cm, n = 10; and 3779 ± 228.8 cm, n = 8; t(7) = 0.02, p>0.05, t-test; SHAM- and WIN-exposed rats, respectively).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Adult male progeny from dams exposed during gestation to WIN had less contact (A): F(sex x treat)1,28=15.54, p<0.05, two-way ANOVA) and spent less time interacting with their congeners than SHAM-animals (B): F(sex x treat)1,28=7.09, p<0.05, two-way ANOVA). In contrast, the social behavior of female littermates was normal. During the social session, the number (C): F(sex x treat)1,28=16.30, p<0.05, two-way ANOVA) and the time (D): F(sex x treat)1,28=14.87, p<0.05, two-way ANOVA) of sniffing events and the frequency of play behavior (E): F(sex x treat)1,28=3.217, p>0.05, two-way ANOVA) were exclusively reduced in male rats exposed to WIN during gestation. Prenatal cannabinoid exposure did not induce aggressive behavior in adult rats (F): F(sex x treat)1,28=0.037, p>0.05, two-way ANOVA). Scatter dot plot represents a pair of animals. Error bars indicate SEM. *p<0.05. Student–Newman–Keuls test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A-B) Adult male and female naïve animals not isolated 24 hr before testing showed no difference in contact (A): F(sex x isolation)1,29=0.203, p>0.05, two-way ANOVA) and time to interact with their congeners than male and female SHAM-animals isolated before testing (B): F(sex x isolation)1,29=0.372, p>0.05, two-way ANOVA). During the social session, the number (C): F(sex x isolation)1,29=0.003, p>0.05, two-way ANOVA) and the time (D): F(sex x isolation)1,28=1.253, p>0.05, two-way ANOVA) of sniffing events were unchanged; the frequency of play behavior (E): F(sex x isolation)1,29=1.289, p>0.05, two-way ANOVA) were exclusively reduced in female naïve rats not isolated before testing. Social isolation did not change aggressive behavior in adult naïve rats (F): F(sex x isolation)1,29=0.325, p>0.05, two-way ANOVA). Scatter dot plot represents a pair of animals. Error bars indicate SEM. *p<0.05. Student–Newman–Keuls test.
 
 Interestingly, we discovered that the deleterious effects of PCE on social behavior were specific to male offspring. In PCE adult female rats, social behavior was indistinguishable from that of the SHAM group; there was no difference in the total frequency and time (Figure 1) of social interaction in either group.
 
@@ -61,7 +239,7 @@ Regarding their cognitive abilities, adult SHAM and WIN-exposed animals of both 
 
 Thus, while social interaction was specifically impaired in PCE males, locomotion, anxiety and cognition were spared in both sexes. These data reveal discrete and sex-specific behavioral consequences of PCE at adulthood.
 
-## Prenatal cannabinoid exposure alters synaptic plasticity specifically in the PFC of adult male
+### Prenatal cannabinoid exposure alters synaptic plasticity specifically in the PFC of adult male
 
 In theory, cannabinoid exposure during in-utero neurodevelopment may perturb synaptic functions in most brain areas. The finding of selective impairments of social interaction in the absence of emotional and cognitive deficits does not favor the hypothesis of widespread synaptic deficits. The prefrontal cortex and nucleus accumbens play prominent roles in social behaviors (van Kerkhof et al., 2013) and prefronto-accumbens glutamatergic circuits modulate reward-related behaviors (Floresco, 2015; Mateo et al., 2017). Furthermore, the endogenous cannabinoid (eCB)-system of the accumbens core is instrumental to social interaction behavior (Manduca et al., 2016; Trezza et al., 2012). In-vivo cannabinoid exposure desensitizes CB1R and ablates eCB-mediated synaptic plasticity in the accumbens (Mato et al., 2004; Mato et al., 2005). Thus, we first compared eCB-mediated LTD (eCB-LTD) in our experimental groups. The data indicated that eCB-LTD in the accumbens is not affected by PCE (Figure 3).
 
@@ -71,6 +249,22 @@ In theory, cannabinoid exposure during in-utero neurodevelopment may perturb syn
 
 The extensive repertoire of synaptic plasticity displayed by medial prefrontal synapses is a consistent target of environmental and genetic insults (Iafrati et al., 2014; Kasanetz et al., 2013; Labouesse et al., 2017; Lafourcade et al., 2011; Manduca et al., 2017; Thomazeau et al., 2014). We first established that tetanic stimulation induced a robust eCB-LTD of excitatory synapses onto layer 5 mPFC pyramidal neurons in mPFC slices prepared from adult SHAM male and female rats (Figure 4A–B–C–D). In marked contrast to the accumbens, eCB-LTD in the mPFC was absent in WIN-exposed males (Figure 4A–B). Strikingly, LTD was normal in PCE female littermates (Figure 4C–D). In a second series of experiments a similar sex-specific ablation of eCB-LTD in the progeny of dams exposed to THC, the main psychoactive component of cannabis, was observed (5 mg/kg, s.c. GD5-20; Figure 5).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig4-v2.jpg)
+
+**Figure 4.:** (A) Average time-courses of mea field EPSPs showing that low-frequency stimulation (10 min at 10 Hz, arrow) induced LTD of evoked fEPSPs recorded in the mPFC in SHAM (n = 7; white circles), but not in WIN (n = 17; green circles) prenatally-exposed male rats. Above: example traces, baseline (1) and 40 min post-stimulation (2). (B) Individual experiments (grey) and group average (white represents SHAM; green represents WIN), before (baseline) and after (40 min) LTD induction showing the lack of LTD in the WIN exposed group. In SHAM rats: 0.185 ± 0.006 mV before LTD versus 0.150 ± 0.007 mV after LTD induction (n = 7, p<0.05, paired t-test). In WIN animals: 0.197 ± 0.008 mV before LTD versus 0.189 ± 0.009 mV after LTD induction (n = 17, p>0.05, paired t-test). (C) Average time-courses of mean EPSPs showing similar low-frequency LTD in SHAM (n = 5; white circles) and WIN (n = 13; orange circles) in utero-exposed female rats. Above: example traces, baseline (1) and 40 min post-stimulation (2). (D) Individual experiments (grey) and group average (white represents SHAM; orange represents WIN), before (baseline) and after (40 min) LTD induction showing that prenatal WIN exposure does not alter LTD in the female exposed group. In SHAM female rats: 0.204 ± 0.009 mV before LTD versus 0.168 ± 0.010 mV after LTD induction (n = 5, p<0.05, paired t-test). In WIN female rats: 0.255 ± 0.012 mV before LTD versus 0.214 ± 0.013 mV after LTD induction (n = 13, p<0.05, paired t-test). *p<0.05. n = individual rats. Error bars indicate SEM. Scale bar: 10 ms, 0.1 mV.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Prenatal exposure to cannabinoids does not alter mGlu2/3-LTD. Average time of mean fEPSPs showing that mGlu2/3-agonist induced LTD (bath application of LY379268, 30 nM, 10 min) is identical in SHAM and WIN exposed male (A): SHAM, n = 6, white circles; WIN, n = 6, green circles) and female (B): SHAM, n = 4, white circles; WIN, n = 6, orange circles). (C) Average time-courses of mean fEPSPs showing that theta burst stimulation (indicated by arrow) induces LTP at layer V/VI mPFC synapses in both SHAM- (white circles, n = 8) and WIN- (green circles, n = 8) exposed male rats. (D) Individual averaged fEPSP amplitude measurements before (baseline) and 40 min after LTP induction. Grey, individual experiments; tan, group averages. In SHAM rats: 0.138 ± 0.011 mV before LTP versus 0.185 ± 0.016 mV after LTP induction (n = 8, p<0.05, paired t-test). In WIN male rats: 0.129 ± 0.012 mV before LTP versus 0.177 ± 0.015 mV after LTP induction (n = 13, p<0.05, paired t-test). (E) Identical TBS-LTP induction protocol but recording from female prenatally-exposed animals (SHAM, white circles, n = 8; WIN, orange circles, n = 8). (F) Peak amplitude measurements before (baseline) and after (LTP) stimulation protocol from individual experiments (grey) and group averages in SHAM (white; 0.125 ± 0.014 mV before LTP versus 0.150 ± 0.020 mV after LTP; p<0.05, paired t-test) and WIN (orange; 0.133 ± 0.010 mV before LTP versus 0.167 ± 0.016 mV after LTP; p<0.05, paired t-test) animals. *p<0.05. n = individual rats. Error bars represent SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Average time-courses of mean fEPSPs showing that theta burst stimulation (indicated by arrow) induces LTP at layer V/VI mPFC synapses in both SHAM- (white circles, n = 8) and THC- (green circles, n = 8) exposed male rats. (B) Individual averaged fEPSP amplitude measurements before (baseline) and 40 min after LTP induction. Grey, individual experiments; tan, group averages. In SHAM rats: 0.138 ± 0.011 mV before LTP versus 0.185 ± 0.016 mV after LTP induction (n = 8, p<0.05, paired t-test). In THC male rats: 0.129 ± 0.012 mV before LTP versus 0.177 ± 0.015 mV after LTP induction (n = 13, p<0.05, paired t-test). (C) Identical TBS-LTP induction protocol but recording from female prenatally-exposed animals (SHAM, white circles, n = 8; THC, orange circles, n = 8). (D) Peak amplitude measurements before (baseline) and after (LTP) stimulation protocol from individual experiments (grey) and group averages in SHAM (white, 0.125 ± 0.014 mV before LTP versus 0.150 ± 0.020 mV after LTP; p<0.05, paired t-test) and THC (orange; 0.133 ± 0.010 mV before LTP versus 0.167 ± 0.016 mV after. LTP; p<0.05, paired t-test) animals. *p<0.05. n = individual rats. Error bars represent SEM.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Dose-response curve for the cannabimimetic CP55,940 in SHAM (white symbols, n = 6–9 animals, EC50 = 0.240 μM, top value 42.01%, 95% CI for EC50 = 0.088–0.658) and WIN-exposed (green symbols, n = 5–6, EC50 = 0.085 μM, top value 35.09%, 95% CI for EC50 = 0.025–0.292) male rats. fEPSP amplitudes were measured 30 min after application of CP55,940. Each point is expressed as the percentage of inhibition of its basal value. Error bars indicate SEM.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig5-v2.jpg)
 
 **Figure 5.:** (A) Average time-courses of men field EPSPs showing that low-frequency stimulation (10 min at 10 Hz, arrow) induced LTD of evoked fEPSPs recorded in the mPFC in SHAM (n = 4; white circles), but not in THC (n = 6; green circles) prenatally-exposed male rats. Above: example traces, baseline (1) and 40-min poststimulation (2). (B) Individual experiments (grey) and group average (white represents SHAM; green represents THC), before (baseline) and after (40 min) LTD induction showing the lack of LTD in the THC exposed group. In SHAM rats: 0.239 ± 0.030 mV before LTD versus 0.202 ± 0.028 mV after LTD induction (n = 4, p<0.05, paired t-test). In THC animals: 0.244 ± 0.023 mV before LTD versus 0.236 ± 0.019 mV after LTD induction (n = 6, p>0.05, paired t-test). (C) Average time-courses of mean EPSPs showing similar low-frequency LTD in SHAM (n = 6; white circles) and THC (n = 4; orange circles) in utero-exposed female rats. Above: example traces, baseline (1) and 40 min poststimulation (2). (D) Individual experiments (grey) and group average (white represents SHAM; orange represents THC), before (baseline) and after (40 min) LTD induction showing that prenatal THC exposure does not alter LTD in the female exposed group. In SHAM female rats: 0.211 ± 0.011 mV before LTD versus 0.183 ± 0.010 mV after LTD induction (n = 6, p<0.05, paired t-test). In THC female rats: 0.234 ± 0.030 mV before LTD versus 0.177 ± 0.030 mV after LTD induction (n = 4, p<0.05, paired t-test). *p<0.05. n = individual rats. Error bars indicate SEM. Scale bar: 10 ms, 0.1 mV.
@@ -79,7 +273,7 @@ To test if the effects of PCE extend to other forms of plasticity expressed at e
 
 Together the data reveal eCB-LTD in the mPFC as sex-specific target of in-utero cannabinoid exposure.
 
-## Cannabinoid prenatal exposure causes sex-specific modifications in pyramidal neuron properties
+### Cannabinoid prenatal exposure causes sex-specific modifications in pyramidal neuron properties
 
 Activity-induced modulation of intrinsic excitability is a powerful mean to control cortical circuits (Bacci et al., 2005; Debanne and Poo, 2010) postulated to contribute to disorders of the CNS. To test the hypothesis that PCE altered prefrontal excitability, intrinsic firing properties of pyramidal neurons in our animal groups were compared. Sexual differences to the effects of prenatal exposure to cannabinoids were visible at this cellular level. Specifically, mPFC neurons in WIN-exposed rats showed impaired membrane reaction profiles in response to a series of somatic current steps (Figure 6A and E). Independent of the sex and treatment, the resting potential was similar (Figure 6B and F). While the rheobase (Figure 6C and G) was decreased in males prenatally exposed to WIN, females were spared. Moreover, this hyper-excitability in exposed-males was accompanied by an increased number of action potentials in response to somatic currents steps (Figure 6D). Similar results have been obtained in the rat progeny of dams treated with THC during gestation (Figure 7). Thus, PCE leads to an increased excitability of deep layers mPFC pyramidal cells in male progeny only.
 
@@ -91,7 +285,7 @@ Activity-induced modulation of intrinsic excitability is a powerful mean to cont
 
 **Figure 7.:** (A) Current-voltage (I–V) curves recorded in SHAM (n = 8 cells/5 rats, white circles) and THC-exposed rats (n = 10 cells/5 rats, green circles) showing altered membrane potentials in male after an in utero cannabinoid exposure (F(26, 416)=1.987, p<0.05, two-way ANOVA). (B): In contrast, I-V curves were similar in SHAM group (n = 15 cells/7 rats, white circles) and THC-exposed group (n = 24 cells/7 rats, orange circles; F(26, 962)=0.534, p>0.05, two-way ANOVA). (C,D): The resting membrane potential was similar in both male (C) and female (D) rats after an in utero exposure to THC (p>0.05, Mann-Whitney U test). (E,F): The rheobase was reduced in THC-exposed male rats compared to the SHAM male (E); p<0.05, Mann-Whitney U test) whereas it was not altered in female (F); p>0.05, Mann-Whitney U test). (G): The number of evoked action potentials in response to several depolarizing current steps was higher in THC in utero treated male compared to SHAM animals (F(18, 288)=3.764, p<0.05, two-way ANOVA). (H): The number of action potential was also altered in female after an in utero treatment with THC (F(18, 666)=1.320, p<0.05, two-way ANOVA). Error bars represent SEM.
 
-## Sex-differences in mRNA expression levels
+### Sex-differences in mRNA expression levels
 
 Motivated by the eCB-LTD deficiency in layer 5 mPFC of the male PCE progeny, we surveyed mRNA levels of key components of the endocannabinoid system in adult PCE rats using real time quantitative PCR (Figure 8 and Table 2). Key differences were decreased levels of mRNA for TRPV1, mGlu5, and DAGLα in the female PCE offspring and decreased levels of mGlu5 mRNA in the male offspring (Figure 8). A mild increase was seen in mGlu1 in the PCE males (Table 2). No differences were seen in other endocannabinoid system mRNAs after PCE, including CB1, CB2, DAGLβ, NAPE-PLD, FAAH, ABHD6, or CRIP1a (Table 2).
 
@@ -99,7 +293,212 @@ Motivated by the eCB-LTD deficiency in layer 5 mPFC of the male PCE progeny, we 
 
 **Figure 8.:** CB1, TRPV1, mGlu5, and DAGLα mRNA levels in medial prefrontal cortex at PND90 were determined by real-time PCR in male (A, C, E, and G) and female (B, D, F, and H) rats using Taqman probes and a QuantStudio7 thermocycler. Treatment of dams with WIN from GD5 to GD20 decreased TRPV1, mGlu5, and DAGLα mRNA in female offspring. However, the same treatment decreased only mGlu5 in male offspring. *p<0.05. Error bars represent SEM.
 
-## Positive allosteric modulation of mGlu5 corrects synaptic and behavioral deficits associated with prenatal cannabinoid male exposure
+**Table 2.**
+ Statistical significance of gene expression changes in adult rat medial prefrontal cortex after in utero WIN treatment.The levels of mRNA’s of interest were determined from medical prefrontal cortex punches using qPCR (See Materials and methods for details). Statistical significance was determined using the unpaired Student’s t-test after outliers were detected and removed from the dataset using Grubbs’ test. p-Values of less than 0.05 are identified by bold text in the table. Relative expression levels for CB1, TRPV1, mGluR5 and DAGL-alpha are shown in Figure 10.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">MALE</th>
+      <th colspan="3">Female</th>
+    </tr>
+    <tr>
+      <th>Targets</th>
+      <th>Treatment</th>
+      <th>N</th>
+      <th>p-Value (Unpaired t-test)</th>
+      <th>Treatment</th>
+      <th>N</th>
+      <th>p-Value (Unpaired t-test)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">CB1</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.3279</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.0643</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CB2</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.9379</td>
+      <td>SHAM</td>
+      <td>6</td>
+      <td rowspan="2">0.1427</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TRPV1</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.2281</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.0098</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">mGlu5</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.0273</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.0092</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">mGlu1</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.0400</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.3910</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DAGL alpha</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.4370</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.0024</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DAGL beta</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.4218</td>
+      <td>SHAM</td>
+      <td>6</td>
+      <td rowspan="2">0.3783</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">NAPE-PLD</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.4258</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.7518</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MAGL</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.5097</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.2147</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td rowspan="2">FAAH</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.5505</td>
+      <td>SHAM</td>
+      <td>8</td>
+      <td rowspan="2">0.4096</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>8</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ABHD6</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.2437</td>
+      <td>SHAM</td>
+      <td>6</td>
+      <td rowspan="2">0.6014</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="2">CRIP1a</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.6414</td>
+      <td>SHAM</td>
+      <td>7</td>
+      <td rowspan="2">0.1887</td>
+    </tr>
+    <tr>
+      <td>WIN</td>
+      <td>7</td>
+      <td>WIN</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Positive allosteric modulation of mGlu5 corrects synaptic and behavioral deficits associated with prenatal cannabinoid male exposure
 
 The present data reveal a down-regulation of mGlu5 RNA expression levels in the mPFC of PCE males. Previous work from our group underlies the efficiency of mGlu5 positive allosteric modulation in correcting synaptic and behavioral deficits (Manduca et al., 2017; Martin et al., 2017).
 
@@ -107,11 +506,11 @@ Thus, we tested whether amplification of mGlu5, an effector of eCB-signaling com
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig9-v2.jpg)
 
-**Figure 9.:** 5 restores LTD and normalizes social interaction in male rats prenatally exposed to WIN.(A) Average time-courses of mean field EPSPs showing that, in WIN-exposed males (WIN, n = 17, green circle), LTD can be restored with the mGlu5positive allosteric modulator CDPPB (10 μM, n = 4, blue navy circle). (B) Peak amplitude measurements before (baseline) and after (LTD) stimulation protocol from individual experiments in absence or presence of CDPPB. After 45 min CDPPB preincubation: 0.190 ± 0.004 mV before and 0.147 ± 0.012 after LTD induction (n = 4, p<0.05, paired t-test). (C) Time course of fEPSP during 10 Hz stimulus evoked LTD (arrow, 10 min) in presence of CB1R antagonist SR141716 (SR, 4 μM, n = 5, blue circles) or TRPV1 antagonist Capsazepine (CPZ, 10 μM, n = 3, black circles) in WIN-exposed males. (D) Individual averaged fEPSP amplitude experiments before (baseline) and 40 min after 10 Hz LTD stimulation (LTD). CB1R were necessary for the CDPPB effect on LTD: SR141716A preincubation blocked LTD induction in the presence of CDPPB: 0.206 ± 0.019 mV before and 0.217 ± 0.026 (blue circle, n = 5, p>0.05, paired t-test). Similarly, the TRPV1 antagonist inhibits the restorative effects of CDPPB: 0.220 ± 0.009 mV before LTD and 0.212 ± 0.012 mV after LTD induction (black circle, n = 3, p<0.05, paired t-test). (E–F) Systemic administration of CDPPB (0.75 mg/Kg, i.p.) normalized the altered social behavior in male rats prenatally exposed to WIN (number of contacts: E: F(WIN in utero x CDPPB)1,20=1.867, p=0.187, two-way ANOVA; time interaction: F: F(WIN in utero x CDPPB)1,20=1.607, p=0.219, two-way ANOVA). (G-H) Pre-treatment with SR141716A (1 mg/kg, i.p.) prevents the ameliorative actions of CDPPB (0.75 mg/Kg, i.p.) on social interaction. Similarly, the TRPV1 antagonist blocks the restorative effects of CDPPB on social interaction in adult rats prenatally exposed to WIN (number of contacts: G: F3,30=22.36, p<0.05, one-way ANOVA; time interaction: H: F3,30=25.95, p<0.05, one-way ANOVA). Scatter dot plot represents a pair of animals. Error bars indicate SEM. *p<0.05. Student–Newman–Keuls test.
+**Figure 9.:** (A) Average time-courses of mean field EPSPs showing that, in WIN-exposed males (WIN, n = 17, green circle), LTD can be restored with the mGlu5positive allosteric modulator CDPPB (10 μM, n = 4, blue navy circle). (B) Peak amplitude measurements before (baseline) and after (LTD) stimulation protocol from individual experiments in absence or presence of CDPPB. After 45 min CDPPB preincubation: 0.190 ± 0.004 mV before and 0.147 ± 0.012 after LTD induction (n = 4, p<0.05, paired t-test). (C) Time course of fEPSP during 10 Hz stimulus evoked LTD (arrow, 10 min) in presence of CB1R antagonist SR141716 (SR, 4 μM, n = 5, blue circles) or TRPV1 antagonist Capsazepine (CPZ, 10 μM, n = 3, black circles) in WIN-exposed males. (D) Individual averaged fEPSP amplitude experiments before (baseline) and 40 min after 10 Hz LTD stimulation (LTD). CB1R were necessary for the CDPPB effect on LTD: SR141716A preincubation blocked LTD induction in the presence of CDPPB: 0.206 ± 0.019 mV before and 0.217 ± 0.026 (blue circle, n = 5, p>0.05, paired t-test). Similarly, the TRPV1 antagonist inhibits the restorative effects of CDPPB: 0.220 ± 0.009 mV before LTD and 0.212 ± 0.012 mV after LTD induction (black circle, n = 3, p<0.05, paired t-test). (E–F) Systemic administration of CDPPB (0.75 mg/Kg, i.p.) normalized the altered social behavior in male rats prenatally exposed to WIN (number of contacts: E: F(WIN in utero x CDPPB)1,20=1.867, p=0.187, two-way ANOVA; time interaction: F: F(WIN in utero x CDPPB)1,20=1.607, p=0.219, two-way ANOVA). (G-H) Pre-treatment with SR141716A (1 mg/kg, i.p.) prevents the ameliorative actions of CDPPB (0.75 mg/Kg, i.p.) on social interaction. Similarly, the TRPV1 antagonist blocks the restorative effects of CDPPB on social interaction in adult rats prenatally exposed to WIN (number of contacts: G: F3,30=22.36, p<0.05, one-way ANOVA; time interaction: H: F3,30=25.95, p<0.05, one-way ANOVA). Scatter dot plot represents a pair of animals. Error bars indicate SEM. *p<0.05. Student–Newman–Keuls test.
 
 Strikingly, we found that systemic CDPPB normalized social cognition in the PCE group but remained without effect in the SHAM group, indicating selectivity of the drug's effects to the disease-state (Figure 9E–F). In agreement with the synaptic plasticity experiments, pre-treatment with either SR141716A (Figure 9G–H) or capsazepine prevented the ameliorative actions of CDPPB (Figure 9G–H). Thus, potentiating mGlu5 signaling normalized synaptic and behavioral deficits induced by prenatal exposure to cannabinoids via CB1R and TRPV1 activation.
 
-## TRPV1, not CB1R, mediate LTD in PCE female
+### TRPV1, not CB1R, mediate LTD in PCE female
 
 The observation that PCE did not alter CB1R RNA levels in either sex but lowered TRPV1R in the female PCE progeny (Figure 8, Table 2) drew our attention to the role of these two receptors at PFC synapses. Comparing full dose-response curves for the CB1 agonist CP55,940 in male SHAM vs PCE revealed no differences (Figure 4—figure supplement 3). Thus, the lack of LTD in PCE males cannot readily be attributed to altered sensitivity of presynaptic CB1R. We and others have shown that central excitatory synapses can engage TRPV1R and/or CB1R to trigger LTD (Chávez et al., 2010; Grueter et al., 2010; Martin et al., 2017; Puente et al., 2011). In PCE females, LTD was fully expressed in the presence of a specific CB1R antagonist (SR141716A 5 μM, Figure 10A–B–C) but completely prevented by TRPV1R antagonists (capsazepine 10 µM, Figure 10A–B–C). Thus, TRPV1R rather than CB1R mediates LTD in female PCE. This contribution of TRPV1R to LTD in female PCE could be part of the adaptive response to PCE or a previously unnoticed sexual difference in the mechanism of prefrontal synaptic plasticity. We next investigated the substrate of LTD in naive male and female rats (Figure 11). As expected from over a decade of studies in male rodents (Bender et al., 2006; Chevaleyre et al., 2006; Gerdeman et al., 2002; Iremonger et al., 2011; Lafourcade et al., 2007; Marsicano et al., 2002; Nevian and Sakmann, 2006; Puente et al., 2011; Robbe et al., 2002a) the CB1R antagonist prevented LTD induction in rat male slices (Figure 11D,E,F and Figure 11— figure supplement 1)). Unexpectedly (Rubino et al., 2015), the same treatment was without effect in female slices (Figure 11A–B–C). In contrast, antagonism of TRPV1R was without effect in males (Figure 11A–C) but prevented the induction of eCB-LTD in females (Figure 11D–E–F).
 
@@ -119,9 +518,17 @@ The observation that PCE did not alter CB1R RNA levels in either sex but lowered
 
 **Figure 10.:** (A) Average time course of mean fEPSPs showing that LTD (arrow) is inhibited by the selective TRPV1 antagonist capsazepine (CPZ, black circles, n = 5) but not the CB1R antagonist SR141617A (SR, blue circles, n = 5) in WIN in utero exposed female rats. (B) Summary bar chart of percent LTD calculated from normalized fEPSPs measured 40 min after 10 Hz protocol showing that LTD is blocked by TRPV1 antagonist (black bar) but not by CB1R antagonist (blue bar; p>0.05, one-way ANOVA). Above: example traces, baseline (1) and 40 min poststimulation (2). (C) Plot of individual experiments (grey) showing fEPSP areas before (baseline) and 40 min after stimulation protocol (LTD) in absence (orange, n = 13; p<0.05, paired t-test) and presence of SR141716A (SR, blue, n = 5; p<0.05, paired t-test) or Capsazepine (CPZ, black, n = 5; p>0.05, paired t-test) from WIN-exposed female rats. *p<0.05. n = individual rats. Error bars represent SEM. Scale bar: 10 ms, 0.1 mV.
 
+![Figure 11.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig11-v2.jpg)
+
+**Figure 11.:** (A) Time course of normalized field EPSPs recordings from layer 5 mPFC after 10 Hz stimulation protocol (10 min, arrow) in presence of CB1R antagonist SR141716 (SR, n = 6, blue circles) or TRPV1 antagonist Capsazepine (CPZ, n = 3, black circles) in naïve female rats. Right: example traces, baseline (1) and 40 min poststimulation (2)(B) Individual experiments (grey) and group average (tan circles), before (baseline) and after (40 min) LTD induction (arrow) showing that, in control female rat (CTRL, left), LTD is blocked by the TRPV1 antagonist (CPZ, right) but not by the CB1R antagonist (SR, middle). In control rats: 1.368 ± 0.089 mV.ms before LTD versus 1.205 ± 0.074 after LTD induction (n = 6; p<0.05, paired t-test). After SR141716A preincubation: 1.970 ± 0.160 mV.ms before LTD versus 1.420 ± 0.133 after LTD induction (n = 6; p<0.05, paired t-test). In control female, LTD induction requires activation of TRPV1 receptors: 1.463 ± 0.295 mV.ms before LTD versus 1.497 ± 0.300 after LTD induction (n = 3; p>0.05, paired t-test). (C) Bar chart summary of fEPSP percentage change from baseline 38–40 min after 10 Hz stimulation in control female (white bar) after treatment with CB1R antagonist (SR, blue bar) or TRPV1 antagonist (CPZ, black bar) (F(2, 12)=3.928; p<0.05, one-way ANOVA). (D) Time course of normalized field EPSPS recordings from layer 5 mPFC after 10 Hz stimulation protocol (10 min, arrow) in presence of CB1R antagonist SR141716 (SR, n = 4, blue circles) or TRPV1 antagonist Capsazepine (CPZ, n = 4, black circles) in naive male rats. Right: example traces, baseline (1) and 40 min poststimulation (2). (E) Individual experiments (grey) and group average (colors), before (bsl) and after (40 min) LTD induction showing that LTD in control male rats is CB1R-mediated (middle) rather than TRPV1-mediated (right). Low-frequency stimulation of mPFC slices triggers LTD in male (left, white): 1.704 ± 0.107 mV.ms before 10 Hz stimulation versus 1.367 ± 0.112 after LTD induction (n = 9; p<0.05, paired t-test). This LTD is blocked by CB1R antagonist SR141716A: 1.565 ± 0.185 mV.ms before and 1.480 ± 0.167 after LTD induction (n = 4; p>0.05, paired t-test). In contrast, in male rats, LTD is not blocked by TRPV1 antagonist: 1.917 ± 0.256 mV.ms before LTD versus 1.644 ± 0.204 after LTD induction (n = 4; p<0.05, paired t-test). (F) Bar chart summary of fEPSP percentage change from baseline 38–40 min after LTD induction in control male (white bar) after treatment with CB1R antagonist (SR, blue bar) or TRPV1 antagonist (CPZ, black bar) (F(2, 14)=7.623; p<0.05, one-way ANOVA). mPFC slices were preincubated for 45 min in 5 μM SR141716A and 10 μM Capsazepine. *p<0.05. n = individual rats. Error bars indicate SEM. Scale bar: 10 ms, 0.1 mV.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/36234/elife-36234-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Time course of normalized field EPSPs recordings from layer 5 mPFC after 10 Hz stimulation protocol (10 min, arrow) in presence of the selective CB1R antagonist NESS0327 (n = 7, blue circles) or TRPV1 antagonist AMG9810 (n = 7, grey circles) in naïve male rats. (B) Individual experiments (grey) and group average (tan circles), before (baseline) and after (40 min) LTD induction (arrow) showing that, in control male rats (CTRL, left), LTD is blocked by the CB1R antagonist (NESS0327, middle) but not by the TRPV1 antagonist (AMG9810, right). In control rats: 0.239 ± 0.019 mV before LTD versus 0.175 ± 0.015 after LTD induction (n = 7; p<0.05, paired t-test). After NESS0327 preincubation: 0.223 ± 0.015 mV before LTD versus 0.208 ± 0.024 after LTD induction (n = 7; p>0.05, paired t-test). In naive males, LTD induction did not require activation of TRPV1 receptors: 0.258 ± 0.024 mV before LTD versus 0.204 ± 0.024 after LTD induction (n = 7; p<0.05, paired t-test). (C) Time course of normalized field EPSPs recordings from layer 5 mPFC after 10 Hz stimulation protocol (10 min, arrow) in presence of CB1R antagonist NESS0327 (n = 8, blue circles) or TRPV1 antagonist AMG9810 (n = 6, grey circles) in naive female rats. (D) Individual experiments (grey) and group average (colors), before (baseline) and after (40 min) LTD induction showing that LTD in control female rats is TRPV1R-mediated (right) rather than CB1R-mediated (middle). Low-frequency stimulation of mPFC slices triggers LTD in female (left, white): 0.254 ± 0.034 mV before 10 Hz stimulation versus 0.191 ± 0.031 after LTD induction (n = 5; p<0.05, paired t-test). This LTD is blocked by TRPV1R antagonist AMG9810: 0.216 ± 0.016 mV before and 0.204 ± 0.012 after LTD induction (n = 6; p>0.05, paired t-test). In contrast, in female rats, LTD is not blocked by CB1R antagonist: 0.204 ± 0.013 mV before LTD versus 0.162 ± 0.011 after LTD induction (n = 8; p<0.05, paired t-test). mPFC slices were preincubated for 45 min in 1 μM NESS0327 and 3 μM AMG9810. *p<0.05. n = individual rats. Error bars indicate SEM. Scale bar: 10 ms, 0.1 mV.
+
 We confirmed and extended these findings with two other antagonists: the CB1R selective neutral antagonist NESS0327 (1 μM, Cayman Chemical, Figure 11—figure supplement 1A-B) but not the selective TRPV1R antagonist AMG9810 (3 µM, Tocris, Figure 11—figure supplement 1A-B) prevented LTD induction in naive male rat slices. Conversely, AMG9810 but not NESS0327 prevented the induction of LTD in naive female adult animals (Figure 11—figure supplement 1 C-D ).
 
-## Enhancing anandamide levels corrects synaptic and behavioral deficits associated with prenatal cannabinoid male exposure
+### Enhancing anandamide levels corrects synaptic and behavioral deficits associated with prenatal cannabinoid male exposure
 
 We thought of an additional strategy to reverse PCE-induced deficits based on our finding that TRPV1R mediates LTD in PCE females in spite of a down-regulation of TRPV1R RNA expression levels. Anandamide is an endogenous ligand of TRPV1 (Di Marzo et al., 2002) and we hypothesized that inhibition of anandamide’s main degrading enzyme, fatty acid amid hydrolase (FAAH), would increase anandamide levels to the threshold for LTD induction in the PCE males (Rubino et al., 2015). Indeed, incubation of mPFC slices prepared from PCE male rats with the FAAH inhibitor URB597 effectively restored eCB-LTD (Figure 12A–B). Interestingly, we found that pre-incubation with the specific TRPV1 antagonist capsazepine did not prevent the curative effect of URB597. Rather, the CB1R antagonist SR141716 blocked the URB597 rescue (Figure 12C–D). Previous studies have shown that endocannabinoids, including anandamide, mediate social behavior in rodents (Trezza et al., 2012). We directly tested the hypothesis that elevating circulating levels of a main eCB, anandamide, could normalize social deficits. We found that in vivo treatment with the FAAH inhibitor (URB597, 0.1 mg/kg) normalized social deficits in adult male PCE rats (Figure 12E–F). In line with our mPFC slice results, SR141716A but not capsazepine prevented the curative actions of URB597 (Figure 12G–H). Thus, blocking anandamide degradation normalized social deficits via CB1R.
 
@@ -147,7 +554,7 @@ In conclusion, these results provide compelling evidences for sexual divergence 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The experiments were performed following the ARRIVE (Animals in Research: Reporting In Vivo Experiments) guidelines (Kilkenny et al., 2010). Wistar female rats (Charles River, France) weighing 250 – 280 g were housed at constant room temperature (20 ± 1°C) and humidity (60%), and exposed to a light cycle of 12 hr/day (08:00 a.m. to 08:00 p.m.), with food and water available ad libitum. For mating, pairs of females were placed with single male rat in the late afternoon. Vaginal smears were taken the following morning at 09:00 a.m. The day on which sperm was present was designated as the day 0 of gestation (GD 0).
 
@@ -157,9 +564,127 @@ Animals were treated in compliance with the European Communities Council Directi
 
 Body weights of the dams were taken daily throughout pregnancy and the length of pregnancy was determined. Litter size, weight gain of pups and postnatal vitality were also measured, see Table 3.
 
-## Behavior
+**Table 3.**
+ Reproduction data and pup weight after in utero WIN exposure.Dam weight gain was calculated from GD 1 to GD 21 for n = 10 dams per treatment group. Pup weight at different postnatal days (PND) was calculated for n = 9–10 male and female pups from different litters. Data represent mean values ± SEM. Statistical significance was determined using the one-way ANOVA test.
 
-## All animals were experimentally naïve and used only once
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th rowspan="2"></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th rowspan="3">p-Value (ANOVA)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Naive</th>
+      <th>SHAM</th>
+      <th>WIN</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>mean ± SEM</th>
+      <th>mean ± SEM</th>
+      <th>mean ± SEM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td rowspan="2">Dam weight gain (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>33.8 ± 0.93</td>
+      <td>34.3 ± 1.91</td>
+      <td>33.1 ± 1.42</td>
+      <td>0.745</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td rowspan="2">Pregnancy length (days)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reproduction data</td>
+      <td>22.4 ± 0.14</td>
+      <td>22.6 ± 0.29</td>
+      <td>22.6 ± 0.17</td>
+      <td>0.923</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Litter size</td>
+      <td>13 ± 0.82</td>
+      <td>12.9 ± 0.78</td>
+      <td>12.7 ± 0.67</td>
+      <td>0.854</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PND 1</td>
+      <td>6.8 ± 0.2</td>
+      <td>6.7 ± 0.1</td>
+      <td>6.8 ± 0.2</td>
+      <td>0.965</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PND 10</td>
+      <td>23.5 ± 0.89</td>
+      <td>24.6 ± 0.65</td>
+      <td>22.6 ± 0.72</td>
+      <td>0.207</td>
+    </tr>
+    <tr>
+      <td>Pup weight (grams)</td>
+      <td>PND 13</td>
+      <td>31.8 ± 0.62</td>
+      <td>30.3 ± 0.82</td>
+      <td>30.5 ± 0.75</td>
+      <td>0.339</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PND 25</td>
+      <td>64.5 ± 2.24</td>
+      <td>65.6 ± 0.77</td>
+      <td>66.7 ± 1.55</td>
+      <td>0.647</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PND 90</td>
+      <td>452.7 ± 12.28</td>
+      <td>484.2 ± 12.52</td>
+      <td>481.7 ± 17.33</td>
+      <td>0.261</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavior
+
+#### All animals were experimentally naïve and used only once
 
 Social interaction: Social behavior was assessed as previously described (Manduca et al., 2015). The test was performed in a sound attenuated chamber under dim light conditions. The testing arena consisted of a Plexiglas cage measuring 45 × 45 cm, with 2 cm of wood shavings covering the floor. Rats were individually habituated to the test cage for 5 min on each of the 2 days prior to testing. Before testing, animals were socially isolated for 24 hr to enhance their social motivation and thus facilitate the expression of social behaviors during testing.
 
@@ -169,33 +694,33 @@ Drug treatments were counterbalanced so that cage mates were allocated to differ
 
 The test consisted of placing two similarly treated animals into the test cage for 10 min. The total frequency of active social interactions was obtained as the sum of the frequency of the following behavioral elements scored per 10 min (Manduca et al., 2015; Segatto et al., 2014):
 
-## Open field
+#### Open field
 
 The test was performed as we previously published (Manduca et al., 2017; Jung et al., 2012). The apparatus consisted of a Plexiglas arena 45 × 45 cm, illuminated by fluorescent bulbs at a height of 2 m above the floor of the open field apparatus (light intensity of 30 Lux). The floor was cleaned between each trial to avoid olfactory clues. Each animal was transferred to the open-field facing a corner and was allowed to freely explore the experimental area for 10 min. A video tracking system (Ethovision XT, Noldus Information Technology) recorded the exact track of each rat as well as total distance traveled (Lafourcade et al., 2011; Larrieu et al., 2012).
 
-## Elevated plus-maze
+#### Elevated plus-maze
 
 The elevated plus-maze apparatus comprised two open (50 × 10 × 40 cm) and two closed arms (50 × 10 × 40 cm) that extended from a common central platform (10 × 10 cm). The test was performed as previously described (Manduca et al., 2015). Rats were individually placed on the central platform of the maze for 5 min. Each 5 min session was recorded with a camera positioned above the apparatus for subsequent behavioral analysis carried out an observer, unaware of animal treatment, using the Observer 3.0 software (Noldus, The Netherlands). The following parameters were analyzed:
 
-## Temporal order
+#### Temporal order
 
 Animals were habituated to the experimental arena (40 × 40 cm) without objects for 10 min daily for 2 days before testing. This task consisted of two sample phases and one test trial (Barker et al., 2007). In each sample phase, rats were allowed to explore two copies of an identical object for a total of 4 min. Different objects were used for sample Phases 1 and 2, with a delay between the sample phases of 1 hr. After 3 hr from sample Phase 2, rats performed the test trial (4 min duration) where a third copy of the objects from sample Phase 1 and a third copy of the objects from sample Phase 2 were used. The positions of the objects in the test and the objects used in sample Phase 1 and sample Phase 2 were counterbalanced between the animals. An intact temporal order memory requested the subjects to spend more time exploring the object from Sample 1 (i.e. the object presented less recently) compared with the object from Sample 2 (i.e. the ‘new’ object). The discrimination ratio was calculated as the difference in time spent by each animal exploring the object from sample Phase 1 compared with the object from sample Phase 2 divided by the total time spent exploring both objects in the test phase.
 
-## Novel object recognition
+#### Novel object recognition
 
 After 2 days of 10 min habituation to the experimental arena, rats were exposed to the procedure of an acquisition or sample phase, followed by a preference test after a delay of 30 min (Campolongo et al., 2012). In the sample phase, duplicate copies (A1 and A2) of an object were placed near the two corners at either end of one side of the arena (8 cm from each adjacent wall). Rats were placed into the arena facing the center of the opposite wall and allowed a total of 4 min in the arena. At test (4 min duration), animals were placed in the arena, presented with two objects in the same positions: one object (A3) was a third copy of the set of the objects used in the sample phase, and the other object was a novel object (B). The positions of the objects in the test and the objects used as novel or familiar were counterbalanced between the rats. The discrimination ratio was calculated as the difference in time spent by each animal exploring the novel compared with the familiar object divided by the total time spent exploring both objects. Exploration was scored when the animal was observed sniffing or touching the object with the nose and/or forepaws. Sitting on objects was not considered to indicate exploratory behavior.
 
-## Drug treatment
+### Drug treatment
 
 The CB1 cannabinoid receptor antagonist SR141716A [5-(4-chloro-phenyl)−1-(2,4-dichlorophenyl)−4-methyl-N-1-piperidinyl-1H-pyrazole-3-carboxamide] (National Institute of Mental Health, USA), the positive allosteric modulator of mGlu5 receptors CDPPB (3-cyano-N-(1,3-diphenyl-1H-pyrazol-5-yl) benzamide) (National Institute of Mental Health, USA), the vanilloid TRPV1 antagonist capsazepine (N-[2-(4-Chlorophenyl)ethyl]−1,3,4,5-tetrahydro-7,8-dihydroxy-2H-2-benzazepine-2-carbothioamide) (Tocris) and the FAAH inhibitor URB597 (Cyclohexylcarbamic acid 3'-(Aminocarbonyl)-[1,1'-biphenyl]−3-yl ester) (Tocris) were dissolved in 5% Tween 80/5% polyethylene glycol/saline and given intraperitoneally (i.p.). CDPPB (0.75 mg/kg) or its vehicle were administered 30 min before testing; URB597 (0.1 mg/kg) or its vehicle were administered 2 hr before testing; SR141716A was administered 30 min before CDPPB or URB597 at a dose that did not induce effects by itself (1 mg/kg) in adult rats (Manduca et al., 2015; Sciolino et al., 2011). Capsazepine (5 mg/kg) was injected 30 min before CDPPB and URB597. Drug doses and pre-treatment intervals were based on the literature (Manduca et al., 2015; Ratano et al., 2017) and on pilot experiments. Solutions were freshly prepared on the day of the experiment and were administered in a volume of 1 ml/kg.
 
-## Physiology
+### Physiology
 
-## Slice preparation
+#### Slice preparation
 
 Adult male and female rats were anesthetized with isoflurane and killed as previously described (Martin and Manzoni, 2014; Manduca et al., 2017). The brain was sliced (300 μm) in the coronal plane with a vibratome (Integraslice, Campden Instruments) in a sucrose-based solution at 4°C (in mm as follows: 87 NaCl, 75 sucrose, 25 glucose, 2.5 KCl, 4 MgCl2, 0.5 CaCl2, 23 NaHCO3 and 1.25 NaH2PO4). Immediately after cutting, slices containing the medial prefrontal cortex (PFC) or accumbens were stored for 1 hr at 32°C in a low-calcium ACSF that contained (in mm) as follows: 130 NaCl, 11 glucose, 2.5 KCl, 2.4 MgCl2, 1.2 CaCl2, 23 NaHCO3, 1.2 NaH2PO4, and were equilibrated with 95% O2/5% CO2 and then at room temperature until the time of recording. During the recording, slices were placed in the recording chamber and superfused at 2 ml/min with either low Ca2+ ACSF for mPFC or normal ACSF for the accumbens. All experiments were done at 32°C or room temperature for mPFC and accumbens respectively. The superfusion medium contained picrotoxin (100 µM) to block gamma-aminobutyric acid types A (GABA-A) receptors. All drugs were added at the final concentration to the superfusion medium.
 
-## Electrophysiology
+#### Electrophysiology
 
 Whole cell patch-clamp of visualized layer five pyramidal neurons mPFC and field potential recordings were made in coronal slices containing the mPFC or the accumbens as previously described (Kasanetz and Manzoni, 2009; Kasanetz et al., 2010; Kasanetz et al., 2013). Neurons were visualized using an upright microscope with infrared illumination. The intracellular solution was based on K+ gluconate (in mM: 145 K+ gluconate, 3 NaCl, 1 MgCl2, 1 EGTA, 0.3 CaCl2, 2 Na2+ATP, and 0.3 Na+ GTP, 0.2 cAMP, buffered with 10 HEPES). To quantify the AMPA/NMDA ratio we used a CH3O3SCs-based solution (in mM: 128 CH3O3SCs, 20 NaCl, 1 MgCl2, 1 EGTA, 0.3 CaCl2, 2 Na2+ATP, and 0.3 Na+ GTP, 0.2 cAMP, buffered with 10 HEPES, pH 7.2, osmolarity 290 – 300 mOsm). The pH was adjusted to 7.2 and osmolarity to 290 – 300 mOsm. Electrode resistance was 4 – 6 MOhms.
 
@@ -209,18 +734,143 @@ Field potential recordings were made in coronal slices containing the mPFC or th
 
 Both fEPSP area and amplitude were analyzed. Stimulation was performed with a glass electrode filled with ACSF and the stimulus intensity was adjusted ∼60% of maximal intensity after performing an input–output curve (baseline EPSC amplitudes ranged between 50 and 150 pA). Stimulation frequency was set at 0.1 Hz.
 
-## Data acquisition and analysis
+#### Data acquisition and analysis
 
 The magnitude of plasticity was calculated 35–40 min after induction as percentage of baseline responses. Statistical analysis of data was performed with Prism (GraphPad Software) using tests indicated in the main text after outlier subtraction. All values are given as mean ±SEM, and statistical significance was set at p<0.05.
 
-## Biochemistry qRT-PCR
+#### Biochemistry qRT-PCR
 
 Frozen rat brains were coronally sectioned in a cutting block (Braintree Scientific, Inc., Braintree, MA, Cat.# BS-SS 605C) that had been pre-chilled to −20°C. One-millimeter sections were kept frozen throughout dissection with brain regions stored at −80°C until use. Total RNA was extracted using the RNeasy Plus Micro Kit (Qiagen, Hilden, Germany, Cat.# 74034). RNA was reverse-transcribed using the RevertAid Kit (Thermo Fisher Scientific, Waltham, MA Cat.# K1621) as per manufacturer’s instructions. Taqman primers and probes were obtained through Applied Biosystems. Sequences used in qRT-PCR are as follows:
 
-SenseAnti-SenseProbeFluorophoreQuencherCB1tttcaagcaaggagcacccaggtacggaaggtggtgtctgctttctcagtcaccttgagtctggcctFAMQsysCB2ccacgccgtgcctgagtgagccgccattggagccgttggtcgaggccacccagcaaacatctFAMQsysDAGLalphagggtctgaaaccaaacacgcgacacagtggggagttggagctgcccacttgctctcctggcFAMQsysDAGL-betatacggatggcccctctacatgctcgtacaccttgtcgtgaagcaccactgccacttcgccFAMQsysMAGLccccttcaggggtgtgttctgctttgggccctgtttccattagtcactcgaggctgtggcggtagtFAMQsysFAAHgttcaccttggaccctaccgagaagggaatcagcgtgtggaccatgcccagcccagctatgaFAMQsysNAPE-PLDctgcgtgcagctgttactgtcatgtctttccgtgggaagcttgacaggccctccggtgaggagacFAMQsysTRPV1cctagctggttgcaaattgggtggaggtggcttgcagttagccaccccaagagaactcctgcctFAMQsysmGluR5agacggcaaatcatcgtccgttttccgttggagcttagggtttgccagcagatccagcagcctaFAMQsysmGluR1ggatgctcccggaaggtatgtcagcactccttcatgccagtctgcagtacacagaagctaatcgcFAMQsysCRIP1aaacactgcaggtcgagaacatgatctggatgggttgtcgctggtgtgcttgtcccactggaFAMQsysABHD6cctcggccactgaggtgtcgaagctacgaaggccaggattgtgattgcgggtgggaccctFAMQsysKCC2ccatctacgcaggggtcatcggcgggaggaacagaataggtttgcctcctggggaaccgcFAMQsysGAPDHgacttcaacagcaactcccattcttgctctcagtatccttgctagaaaccctggaccacccagccVicQsys
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sense</th>
+      <th>Anti-Sense</th>
+      <th>Probe</th>
+      <th>Fluorophore</th>
+      <th>Quencher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CB1</td>
+      <td>tttcaagcaaggagcaccca</td>
+      <td>ggtacggaaggtggtgtctg</td>
+      <td>ctttctcagtcaccttgagtctggcct</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>CB2</td>
+      <td>ccacgccgtgcctgagtgag</td>
+      <td>ccgccattggagccgttggt</td>
+      <td>cgaggccacccagcaaacatct</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>DAGLalpha</td>
+      <td>gggtctgaaaccaaacacgc</td>
+      <td>gacacagtggggagttggag</td>
+      <td>ctgcccacttgctctcctggc</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>DAGL-beta</td>
+      <td>tacggatggcccctctacat</td>
+      <td>gctcgtacaccttgtcgtga</td>
+      <td>agcaccactgccacttcgcc</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>MAGL</td>
+      <td>ccccttcaggggtgtgttctg</td>
+      <td>ctttgggccctgtttccattagtc</td>
+      <td>actcgaggctgtggcggtagt</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>FAAH</td>
+      <td>gttcaccttggaccctaccg</td>
+      <td>agaagggaatcagcgtgtgg</td>
+      <td>accatgcccagcccagctatga</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>NAPE-PLD</td>
+      <td>ctgcgtgcagctgttactgtc</td>
+      <td>atgtctttccgtgggaagcttga</td>
+      <td>caggccctccggtgaggagac</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>TRPV1</td>
+      <td>cctagctggttgcaaattggg</td>
+      <td>tggaggtggcttgcagttag</td>
+      <td>ccaccccaagagaactcctgcct</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>mGluR5</td>
+      <td>agacggcaaatcatcgtccg</td>
+      <td>ttttccgttggagcttagggtt</td>
+      <td>tgccagcagatccagcagccta</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>mGluR1</td>
+      <td>ggatgctcccggaaggtatg</td>
+      <td>tcagcactccttcatgccag</td>
+      <td>tctgcagtacacagaagctaatcgc</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>CRIP1a</td>
+      <td>aacactgcaggtcgagaaca</td>
+      <td>tgatctggatgggttgtcgc</td>
+      <td>tggtgtgcttgtcccactgga</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>ABHD6</td>
+      <td>cctcggccactgaggtgtc</td>
+      <td>gaagctacgaaggccaggat</td>
+      <td>tgtgattgcgggtgggaccct</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>KCC2</td>
+      <td>ccatctacgcaggggtcatc</td>
+      <td>ggcgggaggaacagaatagg</td>
+      <td>tttgcctcctggggaaccgc</td>
+      <td>FAM</td>
+      <td>Qsys</td>
+    </tr>
+    <tr>
+      <td>GAPDH</td>
+      <td>gacttcaacagcaactcccat</td>
+      <td>tcttgctctcagtatccttgct</td>
+      <td>agaaaccctggaccacccagcc</td>
+      <td>Vic</td>
+      <td>Qsys</td>
+    </tr>
+  </tbody>
+</table>
 
 TaqMan Gene Expression Master Mix from Applied Biosystems (Foster City, CA Cat.# 4369016) was used in generating expression data on a QuantStudio7 thermal cycler. Duplicates were run for each sample, and changes in gene expression were determined using the ΔΔCt method. Data was analyzed using Excel (Microsoft, Redmond, WA) and Prism 7 (Graphpad, La Jolla, CA) software.
 
-## Statistics
+### Statistics
 
 All the behavioral parameters were expressed as mean ± SEM. Group comparisons used t-test and two-way repeated measures (RM) ANOVA (for different sex and pharmacological treatments), followed by Student-Newman-Keuls post-hoc tests when appropriate.

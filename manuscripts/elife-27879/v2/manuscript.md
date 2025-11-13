@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.27879.001 Affective bias, the tendency to differentially prioritise the processing of negative relative to positive events, is commonly observed in clinical and non-clinical populations. However, why such biases develop is not known. Using a computational framework, we investigated whether affective biases may reflect individuals’ estimates of the information content of negative relative to positive events. During a reinforcement learning task, the information content of positive and negative outcomes was manipulated independently by varying the volatility of their occurrence. Human participants altered the learning rates used for the outcomes selectively, preferentially learning from the most informative. This behaviour was associated with activity of the central norepinephrine system, estimated using pupilometry, for loss outcomes. Humans maintain independent estimates of the information content of distinct positive and negative outcomes which may bias their processing of affective events. Normalising affective biases using computationally inspired interventions may represent a novel approach to treatment development.
+Affective bias, the tendency to differentially prioritise the processing of negative relative to positive events, is commonly observed in clinical and non-clinical populations. However, why such biases develop is not known. Using a computational framework, we investigated whether affective biases may reflect individuals’ estimates of the information content of negative relative to positive events. During a reinforcement learning task, the information content of positive and negative outcomes was manipulated independently by varying the volatility of their occurrence. Human participants altered the learning rates used for the outcomes selectively, preferentially learning from the most informative. This behaviour was associated with activity of the central norepinephrine system, estimated using pupilometry, for loss outcomes. Humans maintain independent estimates of the information content of distinct positive and negative outcomes which may bias their processing of affective events. Normalising affective biases using computationally inspired interventions may represent a novel approach to treatment development.
 
 ## Introduction
 
@@ -36,17 +36,86 @@ However, a number of critical questions concerning this account remain outstandi
 
 30 participants (see Table 1 for demographic information) completed a two option learning task in which, on every trial, one option would be associated with a monetary win and one with a loss (Figure 1). The win and loss outcomes occurred independently which required participants to learn separately which shape was associated with each outcome (Figure 1c). The information content of the outcomes was varied across the three blocks by altering the volatility of the stimulus-outcome associations (Figure 1b). We estimated separate learning rates for the positive and negative outcomes by fitting a computational model (see Materials and methods) to participant choice in each task block. This allowed us to test whether participants independently altered the learning rates they used for the win and loss outcomes in response to how informative that outcome was (i.e. its volatility). Pupilometry data was collected during the task as a measure of activity in the central NE system.
 
-## Do human learners maintain independent estimates of the information content of positive and negative outcomes?
+**Table 1.**
+ Demographic details of participants
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Mean (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>30.52 (9.51)</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>76% Female</td>
+    </tr>
+    <tr>
+      <td>QIDS-16</td>
+      <td>5.03 (3.95)</td>
+    </tr>
+    <tr>
+      <td>Trait-STAI</td>
+      <td>35.79 (10.63)</td>
+    </tr>
+  </tbody>
+</table>
+
+_QIDS-16; Quick Inventory of Depressive Symptoms, 16 item self-report version. Trait-STAI; Speilberger State-Trait Anxiety Inventory, trait form. Note that scores of 6 or above on the QIDS-16 indicate the presence of depressive symptoms. The trait-STAI has no standard cut off scores._
+
+### Do human learners maintain independent estimates of the information content of positive and negative outcomes?
 
 As predicted, participants’ learning rates for positive and negative outcomes reflected the information content of the outcomes in the learning task (block volatility x parameter valence; F(1,28) =27.97, p<0.001; Figure 2). Specifically, learning rates were higher for win (F(1,28) =15.47, p=0.001) and loss (F(1,28) =18.02, p<0.001) outcomes when they were volatile (informative) than when they were stable (not informative). Similarly the learning rate for wins was higher than that for losses when wins were more volatile than losses (F(1,28) =26.02, p<0.001) and the learning rate for losses was higher than for wins when losses were more volatile (F(1,28) =6.74, p=0.015). These results demonstrate that participants maintain independent estimates of the information content of positive and negative outcomes and that it is possible to alter these estimates using a simple volatility manipulation. In contrast to the effects on learning rate there were no significant effects of the task on the inverse temperature parameter of the learning model (Figure 2b; F(1,28) =0.01, p=0.92) indicating that, as intended, the volatility manipulation specifically altered learning rate. See the Figure Supplements for Figure 2 for additional analysis of the behavioural results as well as an additional experiment in which the impact of expected uncertainty was assessed.
 
-## Does activity of the central NE system, as Estimated by Pupil Dilation, Track the Volatility of Positive and Negative Outcomes?
+![Figure 2.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mean (SEM) learning rates for each block of the learning task. As can be seen the win learning rates (light green bars) and loss learning rate (dark red bars) varied independently as a function of the volatility of the relevant outcome F(1,28) =27.97, p<0.001, with a higher learning rate being used when the outcome was volatile than stable (*p<0.05, ***p<0.001 for pairwise comparisons). (B) No effect of volatility was observed for the inverse temperature parameters (F(1,28) =0.01, p=0.92). Source data available as Figure 2—source data 1. See Figure 2—figure supplement 1 for an analysis of this behavioural effect which does not rely on formal modelling and Figure 2—figure supplement 2 for an additional task which examines the behavioural effect of expected uncertainty.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The learning task includes both positive and negative outcomes which are independent of each other. As a result the task contains trials in which both positive and negative outcome encourage the same behaviour in future trials (e.g. when the win is associated with shape A and the loss with shape B, both outcomes encourage selection of shape A in the following trial) as well as trials in which the positive and negative outcomes act in opposition (e.g. when both outcomes are associated with shape A, then the win outcome encourages selection of shape A in the next trial and the loss outcome encourages selection of shape B). This second type of trial provides a simple and sensitive means of assessing how the volatility manipulations alters the impact of win and loss outcomes on choice behaviour in the task blocks. Specifically an increased influence of win outcomes (e.g. when wins are volatile) should lead to: (a) A decreased tendency to change (shift) choice when both win and loss outcomes are associated with the chosen shape in the current trial and (b) An increased tendency to change (shift) choice when both win and loss outcomes are associated with the unchosen shape in the current trial. This analysis does not depend on any formal model and thus can be used to complement the model based analysis reported in the main paper. We calculated the proportion of shift trials separately for trials in which both outcomes were associated with the chosen (‘both’) or unchosen (‘nothing’) shape for each of the three blocks (dark columns = both informative; grey columns = losses informative; white columns = wins informative). Consistent with the model based analysis, there was a significant interaction between trial type and block (F(1,28)=10.52, p=0.003). Participants switched significantly less frequently when both outcomes were associated with the chosen option in the win relative to loss informative blocks (F(1,28)=6.1, p=0.02) and switched significantly more frequently when both outcomes were associated with the unchosen option in the win relative to loss informative blocks (F(1,28)=4.69, p=0.04). This indicates that the results reported in the main paper are unlikely to be dependent on the exact form of the behavioural model used to derive the learning rate parameter. Bars represent mean (SEM) probability of switching choice in subsequent trial. *=p < 0.05 for comparison between win informative and loss informative blocks.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** When learning, a number of different forms of uncertainty can influence behaviour. One form, which is sometimes called ‘unexpected uncertainty’ (Yu and Dayan, 2005) is caused by changes in the associations being learned (i.e. volatility) and is the main focus of this paper (see main text for a description of how volatility influences learning). A second form of uncertainty, sometimes called ‘expected uncertainty’(Yu and Dayan, 2005) arises when an association between a stimulus or action and the subsequent outcome is more or less predictive. For example, this form of uncertainty is lower if an outcome occurs on 90% of the times an action is taken and higher if the outcome occurs on 50% of the time an action is taken. Normatively, expected uncertainty should influence learning rate—a less predictive association (i.e. higher expected uncertainty) leads to more random outcomes which tell us less about the underlying association we are trying to learn, so learners should employ a lower learning rate when expected uncertainty is higher. In the learning task described in this paper both the expected and unexpected uncertainty differ between blocks. Specifically, when an outcome is stable in the task it occurs on 50% of trials, whereas when it is volatile it varies between occurring on 85/15% of trials. Thus the stable outcome is, at any one time, also less predictable (i.e. noisier) than the volatile outcome. This task schedule was used as a probability of 50% for the stable outcome improves the ability of the task to accurately estimate learning rates (it allows more frequent switches in choice). Further both forms of uncertainty would be expected to reduce learning rate in the stable blocks and increase it in the volatile block of the task. However, this aspect of the task raises the possibility that the observed effects on behaviour described in the main paper may arise secondary to differences in expected uncertainty (noise) rather than the unexpected uncertainty (volatility) manipulation. In order to test this possibility we developed a similar learning task in which volatility was kept constant and expected uncertainty was varied. In this magnitude task (panel a), participants again had to choose between two shapes in order to win as much money as possible. On each trial 100 ‘win points’ (bar on top of fixation cross with green fill) and 100 ‘loss points’ (bar under fixation cross with red fill) were divided between the two shapes and participants received money proportional to the number of win points – loss points of their chosen option. Thus, a win and loss outcome occurred on every trial of this task, but the magnitude of these outcomes varied. During the task, participants had to learn the expected magnitude of wins and losses for the shapes rather than the probability of their occurrence. This design allowed us to present participants with schedules in which the volatility (i.e. unexpected uncertainty) of win and loss magnitudes was constant (three change points occurred per block) but the noise (expected uncertainty) varied (Panel b; the standard deviation of the magnitudes was 17.5 for the high noise outcomes and 5 for the low noise outcomes). Otherwise the task was structurally identical to the task reported in the paper with 240 trials split into three blocks. We recruited a separate cohort of 30 healthy participants who completed this task and then estimated their learning rate using a model which was structurally identical (i.e. two learning rates and two inverse temperature parameters) to that used in the main paper (Model 1). As can be seen (Panel c), there was no effect of expected uncertainty on participant learning rate (block information x parameter valence; F(1,28)=1.97, p=0.17) during this task. This suggests that the learning rate effect reported in the paper cannot be accounted for by differences in expected uncertainty and therefore is likely to have arisen due to the unexpected uncertainty (volatility) manipulation. Inverse decision temperature did differ between block (Panel d; F(1,28)=5.56, p=0.026). As can be seen there was a significantly higher win inverse temperature during the block in which the losses had lower noise (F(1,28)=9.26,p=0.005) and when compared to the win inverse temperature when wins had lower noise (F(1,28)=5.35,p=0.028), but no equivalent effect for loss inverse temperature. These results indicate that, if anything, participants were more influenced by noisy outcomes. Interestingly a previous study (Nassar et al., 2012) described a learning tasks in which a normative effect of outcome noise was seen (i.e. a higher learning rate was used by participants when the outcome had lower noise). The task used by Nassar and colleagues differed in a number of respects to that used here (only rewarding outcomes were received and participants had to estimate a number on a continuous scale, based on previous outcomes rather than make a binary choice) which may explain why an effect on learning rate was not observed in the current task. Regardless of the exact reason for the lack of effect of noise in the magnitude task, it suggests that the effect described in the main paper is likely to be driven by an effect of unexpected rather than expected uncertainty.
+
+### Does activity of the central NE system, as Estimated by Pupil Dilation, Track the Volatility of Positive and Negative Outcomes?
 
 Next, we investigated the extent to which central NE activity, as estimated using pupilometry, was related to the information content of positive and negative outcomes in the learning task. Consistent with the behavioural findings a significant interaction between block volatility and outcome valence was found for the degree to which participants’ pupils dilated in response to outcome receipt (Figure 3; F(1,27)=6.16; p=0.02). In other words, participants’ pupils dilated more on receipt of an outcome when that outcome was volatile (informative) relative to when it was stable (not informative). This effect was not further modified by the time bin following outcome (block volatility x outcome valence x time; F(5,135)=1.13, p=0.35). Analysing the positive and negative outcomes separately indicated that the effect of block volatility was significant for the loss outcomes (F(1,27)=10.46, p=0.003), but not for the win outcomes (F(1,27)=0.38, p=0.54). Indeed a direct statistical comparison of the size of the volatility effect between the positive and negative outcomes indicated a greater effect of volatility on the negative relative to positive outcomes (outcome volatility x valance; F(1,27)=4.34, p=0.047). This effect was seen on the background of a generally greater pupil dilation to receipt of a loss relative to a win (main effect of valence; F(1,27)=16.7, p<0.001).
 
-## Are the behavioural and pupilometry measures capturing the same process?
+![Figure 3.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig3-v2.jpg)
+
+**Figure 3.:** Lines illustrate the mean pupil dilation to an outcome when it appears on the chosen relative to the unchosen shape, across the 6 s after outcomes were presented. Light green lines (with crosses and circles) report response to win outcomes, dark red lines report response to loss outcomes. Solid lines report blocks in which the wins were more informative (volatile), dashed lines blocks in which losses were more informative. As can be seen pupils dilated more when the relevant outcome was more informative, with this effect being particularly marked for loss outcomes. Shaded regions represent the SEM. Figure 3—figure supplement 1 plots the timecourses for trials in which outcomes were or were not obtained separately, and Figure 3—figure supplement 2 reports the results of a complimentary regression analysis of the pupil data.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Lines represent the mean and shaded areas the SEM of pupil dilation over the 6 s after outcomes are presented. Figure 3 illustrates the difference in pupil dilation between trials in which an outcome was received and those in which the outcome was not received. In order to further investigate this effect the mean pupil response for trials in which the outcome was and was not received have been separately plotted. As can be seen, whereas there is relatively little difference in pupil response during the win trials, there is a large difference in dilation between trials on which a loss is received and those in which no loss is received. Further, the effect of loss volatility is seen to both increase dilation on receipt of a loss and reduce dilation when no loss is received, suggesting that the effect of the volatility manipulation is to exaggerate the effect of the outcome.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The analysis of pupil data reported in the main text examines the effect of block information content (i.e. win volatile vs. loss volatile) and outcome receipt on the pupil response to win and loss outcomes. However a number of other factors may also influence pupil dilation such as the order in which the outcomes were presented and the surprise associated with the outcome (Browning et al., 2015). In order to ensure that these additional factors could not account for our findings we ran a regression analysis of the pupil data from the learning task. In this analysis we derived, for each participant, trialwise estimates of the outcome volatility and outcome surprise of the chosen option using the Ideal Bayesian Observer reported by Behrens et al. (Behrens et al., 2007). These estimates were entered as explanatory variables alongside variables coding for outcome order (i.e. win displayed first or second), outcome of the trial (outcome received or not) and an additional term coding for the interaction between the outcome volatility and outcome of the trial (i.e. analogous to the pupil effect reported in Figure 3). Separate regression analyses were run for each 2 ms timepoint across the outcome period, for win and loss outcomes and for each participant. This resulted in timeseries of beta weights representing the impact of each explanatory factor, for each participant and for win and loss outcomes. As can be seen, consistent with the results reported in the paper this analysis revealed a significant volatility x outcome interaction for loss outcomes (F(1,27)=6.249, p=0.019), with no effect for wins (F(1,27)=0.215, p=0.646). This result indicates that the pupil effects reported in the main paper are not the result of outcome order or surprise effects on pupil dilation. Lines illustrates mean (SEM) beta weight of the volatility x outcome regressors for win (green) and loss (red) outcomes.
+
+### Are the behavioural and pupilometry measures capturing the same process?
 
 As central NE activity is thought to mediate the effect of outcome information content on participant choice (Yu and Dayan, 2005), there should be a relationship between how much a participant’s pupils differentially dilate in response to an outcome during the informative and non-informative blocks and the degree to which that participant adjusts their learning rate between blocks for the same outcome. We tested this by assessing the correlation between the change in mean pupil response between blocks and the change in behaviourally estimated learning rates, separately for wins and losses. As can be seen (Figure 4) the change in pupil response to loss outcomes between blocks was significantly correlated with the change in loss learning rate (r(28)=0.5, p=0.009) but pupil response to win outcomes was not correlated with change in win learning rate (r(28)=-0.08, p=0.7). This correlation was significantly greater for losses than for wins (Fisher r-to-z transformation z = 2.27, p=0.02).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig4-v2.jpg)
+
+**Figure 4.:** The more an individual altered their loss learning rate between blocks, the more that individual’s pupil dilation in response to loss outcomes differed between the blocks (panel b; p=0.009), however no such relationship was observed for the win outcomes (panel a; p=0.7). Note that learning rates are transformed onto the real line using an inverse logit transform before their difference is calculated and thus the difference score may be greater than ±1. Figure 4—figure supplements 1 and 2 describe the relationship between these measures and baseline symptoms of anxiety and depression.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Although participants in the current study were not selected on the basis of their symptoms of depression or anxiety, baseline questionnaires were completed allowing assessment of the relationship between symptoms and task performance. A correlation was found between trait-STAI and the change in learning rate to losses, with participants with higher scores adjusting their learning rate less than those with a lower score (Panel b; r = −0.36, p=0.048). This is the same effect reported by Browning et al., 2015. We did not observe any relationship between either questionnaire measure and change in the win learning rate or between QIDS score and change in loss learning rate (Panels a, c, d; all p>0.19).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27879/elife-27879-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Consistent with previous work (Browning et al., 2015) symptoms of anxiety, measured using the trait-STAI and depression, measured using the QIDS, correlated significantly negatively with differential pupil response to losses (Panels c, d; all r < −0.43, all p<0.02). That is, the higher the symptom score, the less pupil dilation differed between the loss informative and loss non-informative blocks. These measures did not correlate with pupil response to wins (Panels a, c; all p>0.19).
 
 ## Discussion
 
@@ -70,15 +139,15 @@ The current study demonstrates that human learners maintain separable estimates 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 30 English-speaking, individuals aged between 18 and 65 were recruited from the local community via advertisements. The number of participants recruited for the current cohort was selected to provide >95% power of detecting a similar effect size as that reported in a previous study in which a volatility manipulation was used to influence learning rate (Browning et al., 2015). Potential participants who were currently on a psychotropic medication or who had a history of neurological disorders were excluded from the study.
 
-## General procedure
+### General procedure
 
 The study involved a single experimental session during which participants completed a novel learning task (described below) as well as standard questionnaire measures of depression (Quick Inventory of Depressive Symptoms, QIDS [Rush et al., 2003]) and anxiety (Spielberger State-Trait Anxiety Inventory, trait subscale, STAI [Spielberger et al., 1983]) symptoms. The study was approved by the University of Oxford Central Research Ethics Committee. Written informed consent was obtained from all participants, in accordance with the Declaration of Helsinki.
 
-## The information bias learning task
+### The information bias learning task
 
 The information bias learning task (Figure 1) was adapted from a structurally similar learning task previously reported in the literature (Behrens et al., 2007; Browning et al., 2015). On each trial of the task participants were presented with two abstract shapes (letters selected from the Agathodaimon font) and chose the shape which they believed would result in the best outcome. On each trial, the win and loss outcomes were independently positioned (both had 15 p magnitude) such that a particular shape could be associated with one, both or neither of the win and loss outcomes (Figure 1C). As the two outcomes were independent participants had to separately learn the likely location of the win and the loss in the current trial. This learning was driven by the outcomes of previous trials and was used by participants to determine the most advantageous shape to choose on the current trial. Throughout the task the number and type of stimuli displayed during each phase of the trials was kept constant (Figure 1a) in order to minimise variations in luminance between trials.
 
@@ -86,29 +155,98 @@ In total, the participants completed three blocks of 80 trials each, with a rest
 
 The task was presented on a VGA monitor connected to a laptop computer running Presentation software version 18.3 (Neurobehavioural Systems, Berkeley, CA). Participants’ heads were stabilised using a head-and-chin rest placed 70 cm from the screen on which an eye tracking system was mounted (Eyelink 1000 Plus; SR Research, Ottawa, Canada). The eye tracking device was configured to record the coordinates of both of the eyes and pupil area at a rate of 500 Hz. The abstract shapes of the learning task were drawn on either side of a fixation cross which marked the middle of the screen and were offset by around 7° visual angle. The two outcomes (win and loss) were displayed on the screen in randomised order for a jittered interval of 2–6 (mean 4) seconds. Auditory stimuli lasting 0.7 s were played when participants received a win (‘chi-ching’ sound) or loss (error buzz). Participants’ accumulated total winnings was displayed under the fixation cross and was updated at the beginning of the subsequent trial.
 
-## Behavioural model used in analysis of the learning task
+### Behavioural model used in analysis of the learning task
 
-The primary measure of interest in the learning task is the learning rate for wins and for losses in each of the three blocks. A simple behavioural model, based on that employed in related tasks (Behrens et al., 2007; Browning et al., 2015) was used to estimate learning rate. This model first estimated the separate probabilities that the win and loss would be associated with shape ‘A’ using a Rescorla-Wagner learning rule (Rescorla and Wagner, 1972):rwin(i+1)=rwin(i)+αwin∗(winout(i)−rwin(i))rloss(i+1)=rloss(i)+αloss*(lossouti-rlossi)
+The primary measure of interest in the learning task is the learning rate for wins and for losses in each of the three blocks. A simple behavioural model, based on that employed in related tasks (Behrens et al., 2007; Browning et al., 2015) was used to estimate learning rate. This model first estimated the separate probabilities that the win and loss would be associated with shape ‘A’ using a Rescorla-Wagner learning rule (Rescorla and Wagner, 1972):
 
-In these equations rwin(i), which was initialised at 0.5, is the estimated probability that the win will be associated with shape ‘A’ on trial i (NB the probability that the win is associated with shape ‘B’ is 1-rwin(i)), winout(i) is a variable coding for whether the win was associated with shape ‘A’ (in which case the variable has a value of 1) or shape ‘B’ (giving a value of 0) and αwin is a free parameter, the learning rate for the wins. rloss(i), lossout(i) and αloss are the same variables for the loss outcome. These estimated outcome probabilities were then transformed into a single choice probability using a soft max function:PchoiceA(i)=11+exp−(βwin∗rwin(i)−βloss∗rloss(i))
+$$
+rwin_{(i+1)}=rwin_{(i)}+\alphawin∗(winout_{(i)}−rwin_{(i)})
+$$
 
-Where PchoiceA(i) is the probability of choosing shape ‘A’ on trial i, and βwin and βloss are inverse decision temperatures for wins and losses, respectively. The four free-parameters of this model (learning rates and inverse temperatures for wins and losses) were estimated separately for each task block and each participant by calculating the full joint posterior probability of the parameters, given participants’ choices, and then deriving the expected value of each parameter from their marginalised probability distributions (Behrens et al., 2007; Browning et al., 2015). Choice data from the first 10 trials of each block was not used when estimating the parameters as these trials were excluded from the pupil analysis (due to initial pupil adaption) (Browning et al., 2015; Nassar et al., 2012). Apart from the main behavioural analysis reported in Figure 2, the first block of the task in which both wins and losses had a volatile outcome probability schedule were excluded from subsequent behavioural and pupil analysis. This first block of the task was designed to acclimatise participants to the task.
 
-## Alternative behavioural models and model selection
+
+$$
+rloss_{(i+1)}=rloss_{(i)}+\alphaloss*(lossout_{i}-rloss_{i})
+$$
+
+In these equations $rwin_{(i)}$, which was initialised at 0.5, is the estimated probability that the win will be associated with shape ‘A’ on trial i (NB the probability that the win is associated with shape ‘B’ is 1-$rwin_{(i)}$), $winout_{(i)}$ is a variable coding for whether the win was associated with shape ‘A’ (in which case the variable has a value of 1) or shape ‘B’ (giving a value of 0) and $\alphawin$ is a free parameter, the learning rate for the wins. $rloss_{(i)}$, $lossout_{(i)}$ and $\alphaloss$ are the same variables for the loss outcome. These estimated outcome probabilities were then transformed into a single choice probability using a soft max function:
+
+$$
+PchoiceA_{(i)}=\frac{1}{1+exp^{−(\betawin∗rwin_{(i)}−\betaloss∗rloss_{(i)})}}
+$$
+
+Where $PchoiceA_{(i)}$ is the probability of choosing shape ‘A’ on trial i, and $\betawin$ and $\betaloss$ are inverse decision temperatures for wins and losses, respectively. The four free-parameters of this model (learning rates and inverse temperatures for wins and losses) were estimated separately for each task block and each participant by calculating the full joint posterior probability of the parameters, given participants’ choices, and then deriving the expected value of each parameter from their marginalised probability distributions (Behrens et al., 2007; Browning et al., 2015). Choice data from the first 10 trials of each block was not used when estimating the parameters as these trials were excluded from the pupil analysis (due to initial pupil adaption) (Browning et al., 2015; Nassar et al., 2012). Apart from the main behavioural analysis reported in Figure 2, the first block of the task in which both wins and losses had a volatile outcome probability schedule were excluded from subsequent behavioural and pupil analysis. This first block of the task was designed to acclimatise participants to the task.
+
+### Alternative behavioural models and model selection
 
 The behavioural model used in this study (Referred to as model 1 below) was developed based on the models used in previous studies in which volatility is manipulated (Behrens et al., 2008, Behrens et al., 2007; Browning et al., 2015). However, it is possible that this model does not provide the best fit to participant choice data. In order to assess this possibility we compared the fit of this model against a range of comparator models using the Bayesian Information Criteria (BIC) metric, which includes a penalty term for model complexity.
 
-Model 2: It is possible for participants to perform our task without learning the independent probability of the win and loss outcomes, but rather by taking a model-free (Daw et al., 2011) approach in which the overall value of each shape was learned.v(i+1)A=v(i)A+αvalue∗(out(i)−v(i)A)
+Model 2: It is possible for participants to perform our task without learning the independent probability of the win and loss outcomes, but rather by taking a model-free (Daw et al., 2011) approach in which the overall value of each shape was learned.
 
-Here the value of shape A (vA) initiates at 0 on trial 1, and is updated on every trial based on the joint outcome (i.e. the win – loss for that shape) of the trial (out(i)), which can be −1, 0 or 1 with a single learning rate (αvalue). The estimated relative values of the 2 shapes were then transformed into a choice probability using a softmax function with a single inverse temperature parameter.
+$$
+v_{(i+1)}^{A}=v_{(i)}^{A}+\alphavalue∗(out_{(i)}−v_{(i)}^{A})
+$$
+
+Here the value of shape A $(v^{A})$ initiates at 0 on trial 1, and is updated on every trial based on the joint outcome (i.e. the win – loss for that shape) of the trial $(out_{(i)})$, which can be −1, 0 or 1 with a single learning rate ($\alphavalue$). The estimated relative values of the 2 shapes were then transformed into a choice probability using a softmax function with a single inverse temperature parameter.
 
 Model 3: An alternative approach, described by Behrens and colleagues (Behrens et al., 2007) estimates trialwise volatility within a fully Bayesian framework. For this model we used Behrens’ Bayesian learner to independently estimate the expected probabilities of the win and loss outcomes during the task (note that there are no free parameters for this learner). These estimates were then combined using the same selector model described in the main text with two inverse temperature parameters.
 
 Model 4: This was a slightly simpler version of Model 1 in that it employed only a single inverse temperature parameter allowing assessment of the degree to which using 2 such parameters influenced model fit.
 
-Model 5: Finally, we tested a slightly more complex version of Model 4 by including a risk parameter γ, as used in previous studies, which modulates the estimated probabilities of wins and losses in a non-linear way. Risk parameters have been shown to account for non-normative aspects of human choice (Browning et al., 2015; Prelec, 1998), particularly when outcome probabilities are particularly high or low:rwi˜n(i)=2−(−log2(rwin(i))γ)rlo˜ss(i)=2−(−log2(rloss(i))γ)
+Model 5: Finally, we tested a slightly more complex version of Model 4 by including a risk parameter $\gamma$, as used in previous studies, which modulates the estimated probabilities of wins and losses in a non-linear way. Risk parameters have been shown to account for non-normative aspects of human choice (Browning et al., 2015; Prelec, 1998), particularly when outcome probabilities are particularly high or low:
+
+$$
+rwi˜n_{(i)}=2^{−(−log_{2}(rwin_{(i)})^{\gamma})}rlo˜ss_{(i)}=2^{−(−log_{2}(rloss_{(i)})^{\gamma})}
+$$
 
 A summary of the five models can be found in Table 2 below:
+
+**Table 2.**
+ Description of Comparator Models
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model name</th>
+      <th>Number of learning rate parameters</th>
+      <th>Number of inverse temperature parameters</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>2</td>
+      <td>2</td>
+      <td>Model used in paper</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Model-free learner</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>0</td>
+      <td>2</td>
+      <td>Bayesian learner</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Single inverse temperature model</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Additional risk parameter</td>
+    </tr>
+  </tbody>
+</table>
 
 All models were fitted to participant data using the same procedure described in the main paper. BIC scores for each model are illustrated in Figure 5 below (note that lower scores indicate a better fit). As can be seen the model reported in the main paper (Model 1) fits the data best. The single inverse temperature model (Model 4) performs almost as well, with the other models performing less well.
 
@@ -116,13 +254,13 @@ All models were fitted to participant data using the same procedure described in
 
 **Figure 5.:** Smaller BIC scores indicate a better model fit. BIC scores were calculated as the sum across all three task blocks. Bars represent mean (SEM) of the scores across participants.
 
-## Pupilometry data preprocessing
+### Pupilometry data preprocessing
 
 Blinks were identified using the Eyelink system’s built in filter and were then removed from the data. Missing data points (including blinks) were linearly interpolated. The resulting trace was subjected to a low pass Butterworth filter with a cut-off of 3.75 Hz and then z transformed across the session (Browning et al., 2015; Nassar et al., 2012). The pupil response to the win and the loss outcomes were extracted separately from each trial, using a time window based on the presentation of the outcomes. This included a 1 s baseline period before the presentation of the outcome, and a 6 s period following outcome presentation. Baseline correction was performed by subtracting the mean pupil size during the 1 s baseline period prior to the presentation of each outcome, from each time point in the post outcome period. Individual trials were excluded from the pupilometry analysis if more than 50% of the data from the outcome period had been interpolated (mean = 7% of trials) (Browning et al., 2015). One participant was excluded from the pupilometry analysis as more than 99% of their trials were excluded on this basis. The first 10 trials from each block were not used in the analysis as initial pupil adaption can occur in response to luminance changes in this period (Browning et al., 2015; Nassar et al., 2012). The preprocessing resulted in two sets of timeseries per participant, one set containing pupil dilation data for each included trial when the win outcomes were displayed and the other when the loss outcomes were displayed. A difference timeseries, calculated as the mean pupil response when the outcomes appears on the chosen versus unchosen shape in each block was then calculated which allowed for assessment of how the volatility of a specific outcome influenced dilation in response to receiving vs. not receiving that outcome (See Figure 3—figure supplement 2 for a complementary regression analysis of this data).
 
 Preprocessing resulted in difference timeseries of pupil dilation data which represented the differential pupil dilation occurring during trials when the outcome (win or loss) was received relative to when it was not received over the six seconds after presentation of the outcomes. These timeseries were binned into 1 s bins to facilitate analysis.
 
-## Data analysis
+### Data analysis
 
 Parameters derived from the computational models were transformed before analysis so that they were on the infinite real line (an inverse logit transform was used for learning rates and a log transform for inverse temperatures). Where possible figures illustrate non-transformed parameters for ease of interpretation. The effect of the volatility manipulation on these transformed parameters was tested using a repeated measures ANOVA of data derived from the last two task blocks (i.e. when volatility was manipulated). In this ANOVA block volatility (win volatile block, loss volatile block) and parameter valence (wins, losses) were within subject factors and block order (win volatile first, loss volatile first) was a between subject factor. The critical term of this analysis is the block volatility x parameter valence interaction which tests for a differential effect of the volatility manipulation on the win and loss parameters.
 

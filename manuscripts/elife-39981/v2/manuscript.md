@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.39981.001 The neurodegenerative disorder spinocerebellar ataxia type 1 (SCA1) affects the cerebellum and inferior olive, though previous research has focused primarily on the cerebellum. As a result, it is unknown what molecular alterations are present in the inferior olive, and whether these changes are found in other affected tissues. This study addresses these questions for the first time using two different SCA1 mouse models. We found that differentially regulated genes in the inferior olive segregated into several biological pathways. Comparison of the inferior olive and cerebellum demonstrates that vulnerable tissues in SCA1 are not uniform in their gene expression changes, and express largely discrete but some commonly enriched biological pathways. Importantly, we also found that brain-region-specific differences occur early in disease initiation and progression, and they are shared across the two mouse models of SCA1. This suggests different mechanisms of degeneration at work in the inferior olive and cerebellum.
+The neurodegenerative disorder spinocerebellar ataxia type 1 (SCA1) affects the cerebellum and inferior olive, though previous research has focused primarily on the cerebellum. As a result, it is unknown what molecular alterations are present in the inferior olive, and whether these changes are found in other affected tissues. This study addresses these questions for the first time using two different SCA1 mouse models. We found that differentially regulated genes in the inferior olive segregated into several biological pathways. Comparison of the inferior olive and cerebellum demonstrates that vulnerable tissues in SCA1 are not uniform in their gene expression changes, and express largely discrete but some commonly enriched biological pathways. Importantly, we also found that brain-region-specific differences occur early in disease initiation and progression, and they are shared across the two mouse models of SCA1. This suggests different mechanisms of degeneration at work in the inferior olive and cerebellum.
 
 ## Introduction
 
@@ -32,21 +32,41 @@ The purpose of the present study was to investigate molecular and pathological s
 
 ## Results
 
-## Study design towards understanding the molecular basis of pathogenesis underlying tissue susceptibility in SCA1
+### Study design towards understanding the molecular basis of pathogenesis underlying tissue susceptibility in SCA1
 
 A key question in the field is whether the molecular mechanisms underlying pathogenesis in SCA1 affected tissues are similar or distinct. This led us to conduct a thorough comparison of transcriptional changes in the inferior olive and cerebellum using two different SCA1 mouse models, knockin (KI) and transgenic (Tg) (Figure 1). Two independent time-points were analyzed. The first time-point selected for analysis was 5 weeks of age, which coincides with the earliest time-point of rotarod impairment in both mouse models (Clark et al., 1997; Watase et al., 2002). The second time-point chosen was 12 weeks of age, to assess early disease progression. The 12 week time-point also coincides with the initiation of significant thinning of the molecular layer in ATXN1-82Q Tg mice, but precedes gross PC loss.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig1-v2.jpg)
 
-**Figure 1.:** Transcriptomics data from Atxn1 KI inferior olive and cerebellum were first analyzed individually (1-2) before comparing the two tissues (3). Using the ATXN1-82Q Tg inferior olive, comparison of the 154Q/2QAtxn1 KI and ATXN1-82Q Tg inferior olive was assessed (4) before evaluating similarities and differences between ATXN1-82Q Tg affected tissues (5). Finally, a cerebellar cross-model comparison was conducted (6).154Q/2Q
+**Figure 1.:** Transcriptomics data from Atxn1154Q/2Q KI inferior olive and cerebellum were first analyzed individually (1-2) before comparing the two tissues (3). Using the ATXN1-82Q Tg inferior olive, comparison of the Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive was assessed (4) before evaluating similarities and differences between ATXN1-82Q Tg affected tissues (5). Finally, a cerebellar cross-model comparison was conducted (6).
 
 Since no gender-effects have previously been reported in SCA1 mouse models and to minimize potential gender-effects, if any, three male mice from each genotype were initially used for all RNA-seq experiments. Inferior olive was collected using the decussation of the pyramid and pons as a reference, and the anatomical location was verified under a dissection microscope before processing. RNA-seq data analysis was carried out using the Tuxedo pipeline, using TopHat2 v2.1.0 and Cufflinks v2.2.1 (Kim et al., 2013a; Roberts et al., 2011; Trapnell et al., 2012; Trapnell et al., 2010). Differentially expressed genes with a false-discovery rate (FDR) p-value < 0.05 were used in all subsequent analyses unless otherwise stated. Enrichment analysis for biological pathways and molecular functions, as well as upstream regulators, was carried out using NIH DAVID and Ingenuity Pathway Analysis (IPA) (Huang et al., 2009a; Huang et al., 2009b). Clustering of related biological and molecular pathways was visualized using EnrichmentMap v.3.0 in Cytoscape v.3.6.1 (Merico et al., 2010).
 
 We first analyzed the Atxn1154Q/2Q KI mouse model on a pure C57BL/6J background, which expresses polyQ-expanded mutant mouse Atxn1 in appropriate cell types and tissues under the presence of its endogenous regulatory elements (Watase et al., 2002) (Figure 1). The inferior olive and cerebellum of the Atxn1154Q/2Q KI mouse were first analyzed individually before subsequent temporal and spatial comparisons (Figure 1). Using the ATXN1-82Q Tg mouse model on a pure FVB/NJ background, which expresses polyQ-expanded human ATXN1 in PCs due to the Pcp2 promoter (Burright et al., 1995), we assessed similarities and differences in the inferior olive and cerebellum across these two mouse models (Figure 1). Using NCBI Protein BLAST, mouse and human ATXN1 (NP_001186234 and NP_001121636, respectively) show 89% identity and 92% positive substitution similarity in amino acid sequence lacking the polyQ tract (Altschul et al., 1990).
 
-## SCA1 inferior olive transcriptomics identifies differentially regulated defense response-related genes
+### SCA1 inferior olive transcriptomics identifies differentially regulated defense response-related genes
 
 We first verified that polyQ-expanded Atxn1 is expressed in the inferior olive of Atxn1154Q/2Q KI mice (Figure 2A). A band corresponding to Atxn1-154Q was identified in the inferior olive as well as cerebellar extracts from Atxn1154Q/2Q KI mice (Figure 2A). We then conducted RNA-seq in 5 week old Atxn1154Q/2Q KI inferior olive relative to wild-type (WT) control littermates (n = 3 males per genotype) and analyzed the inferior olive differentially regulated genes (Figure 2—figure supplement 1A). RNA-seq in the 5 week old Atxn1154Q/2Q KI inferior olive identified 143 annotated transcripts differentially regulated relative to WT control littermates (FDR p-value < 0.05; n = 3 males per genotype) (Figure 2—figure supplement 1B). Of these 143 transcripts, 103 were up-regulated (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig2-v2.jpg)
+
+**Figure 2.:** (A) PolyQ-expanded Atxn1 is expressed in the inferior olive of Atxn1154Q/2Q KI mice (n = 2 animals per genotype). * marks Atxn1-2Q and ** marks Atxn1-154Q. (B) Illustration of the brain region examined. (C) Total number of up- and down-regulated genes in the Atxn1154Q/2Q KI inferior olive (FDR p-value < 0.05; n = 3 males per genotype). (D) Biological pathway enrichment for all differentially regulated inferior olive genes. X-axis marks enrichment score, with the significance cut-off marked by the vertical black line (p-value < 0.05), in this and all following graphs unless mentioned otherwise. (E) Interferon Stimulated Genes (ISGs) are significantly up-regulated in Atxn1154Q/2Q KI. Orange coloring marks up-regulated genes. (F) Validation of up-regulated ISGs in 12 week old Atxn1154Q/2Q KI inferior olive using RT-qPCR. All samples normalized to Gapdh and Actb reference genes. n = 3 males per group. *** p-value < 0.001. Error bars indicate SEM in this and all following graphs. (G) Immunofluorescence staining for Iba1-positive cell counts and Gfap fluorescence intensity imaged in the 12 week old Atxn1154Q/2Q KI and WT control inferior olives. Scale bar is 300 µm. (H) Iba1 cell body counts and Gfap fluorescence intensity quantified relative to WT controls as a percentage. *p < 0.05; t-test; n.s. = non significant (n = 3 males and females per genotype). (I) Irf7 mRNA expression is significantly up-regulated in BV2 cells expressing human ATXN1-82Q (*p < 0.05, t-test; n = 4 wells per condition).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in Atxn1154Q/2Q KI inferior olive at 5 weeks of age (FDR p-value < 0.05; n = 3 males per genotype). (C) Biological pathway enrichment for all differentially regulated inferior olive genes. X-axis marks enrichment score, with the significance cut-off marked by the vertical black line (p-value < 0.05). Genes with an FDR p-value < 0.05 were used to generate the enriched pathway list. (D) Response to Organic Substance and (E) Hormone Metabolic Process-related genes are largely up-regulated. Y-axis represents the normalized FPKM expression of each gene relative to control samples as a percentage. (* FDR p-value < 0.05; ** FDR p-value < 0.01; n = 3 males per genotype used in RNA-seq).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Biological pathway enrichment using Qiagen’s IPA in the 12 week old Atxn1154Q/2Q KI inferior olive differentially expressed genes. X-axis marks the enrichment score using a Benjamini-Hochberg corrected p-value. Bars that surpass the vertical threshold at 1.3 indicate significant enrichment for that pathway. Orange coloring indicates IPA-predicted activation of that pathway, while blue suggests possible inhibition based on z-score. Grey is not predicted. (B) Predicted upstream regulators for all differentially expressed Atxn1154Q/2Q KI inferior olive genes at 12 weeks. Orange nodes indicate predicted activation of those transcriptional regulators, blue indicates predicted suppression, and grey has no predicted activation or inhibition. Orange edges connecting transcriptional regulators indicate predicted activation, yellow are findings inconsistent with previous research, and grey is not predicted.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Down-regulated genes within the Neurological System Process pathway (** FDR p-value < 0.01; n = 3 males per genotype used in RNA-seq analysis). (B) Validation of Calb1 down-regulation using RT-qPCR. All samples were normalized to Gapdh and Actb reference genes (** p-value < 0.01 t-test; n = 3 males per genotype).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Schematic of the time-point comparison in Atxn1154Q/2Q KI inferior olive between 5 and 12 weeks. (B) Total number of differentially regulated genes in the Atxn1154Q/2Q KI inferior olive relative to appropriate WT controls that are common, and uniquely altered, across time-points (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Dot plot of log fold changes for genes altered in the 5 and 12 week Atxn1154Q/2Q KI inferior olive. X-axis marks log fold change values in the 5 week Atxn1154Q/2Q KI, and the Y-axis marks log fold change values for the 12 week dataset. Pink nodes mark genes significantly altered only at the 5 week time-point, blue nodes mark genes significantly altered only at the 12 week time-point, and black marks genes significant at both time-points. (C') Log fold change of genes up- or down-regulated at both the 5 week and 12 week time-points only. Linear regression analysis identified the slope and R2 of these log fold changes (slope = 1.03 ± 0.07; R2 = 0.90). A total of 29 genes were plotted in this analysis. (D) Clustering of GO terms identified from the Atxn1154Q/2Q KI inferior olive 5 week and 12 week differentially regulated gene lists relative to the appropriate WT controls. (E) A subset of genes associated with Neuropeptide Hormone Activity were commonly down-regulated at each time-point. (F) A subset of Response to Organic Substance genes were up-regulated, and (G) some System Process-related genes were dysregulated when assessed in the 5 and 12 week time-point. * FDR p-value < 0.05; ** FDR p-value < 0.01.
 
 Pathway analysis was carried out using the NIH DAVID Functional Annotation Clustering algorithm (Huang et al., 2009a; Huang et al., 2009b). Functional Annotation Clustering identifies biological pathways and molecular functions that cluster together based on shared genes, and calculates an enrichment score for each cluster. The top three biological pathway clusters that were significantly enriched in the Atxn1154Q/2Q KI inferior olive at 5 weeks were related to response to organic substance, hormone metabolic process, and neuropeptide hormone activity (Figure 2—figure supplement 1C; Figure 2—source data 1). The response to organic substance GO term encompasses genes that are altered in response to a change in the activity of a cell or organism due to an organic stimulus. This pathway includes nearly 3000 diverse genes. The response to organic substance pathway in the Atxn1154Q/2Q KI inferior olive included Ifi27, which mediates interferon induced apoptosis, and B2m and Ifitm3, two interferon stimulated genes (ISGs) (Figure 2—figure supplement 1D). The Hormone Metabolic Process pathway consisted of a diverse collection of both up- and down-regulated genes, including Gal, Igf2, and Wnt4, representing individual components of galanin, insulin-like growth factor, and Wnt signaling pathways (Figure 2—figure supplement 1E).
 
@@ -54,11 +74,66 @@ Given the number of immune-related genes that were segregated into the response 
 
 In the 12 week Atxn1154Q/2Q KI inferior olive, a total of 204 genes were differentially regulated, with 43 annotated transcripts up-regulated and 161 down-regulated (FDR p-value < 0.05; n = 3 males per genotype) (Figure 2B and C). Functional annotation clustering identified the defense response, which is the molecular response to a foreign body or injury, as the most highly enriched pathway in the 12 week old inferior olive (Figure 2D; Figure 2—source data 2). Other pathways associated with the defense response included the immune response and defense response to virus (Figure 2—source data 2). These findings are consistent with IPA results, which predicted activation of interferon signaling, activation of IRF by cytosolic pattern recognition receptors, and RIG-1 like receptors in antiviral innate immunity (Figure 2—figure supplement 2A). The defense response pathway was composed of a large subset of ISGs, which were largely up-regulated (Figure 2E), and were validated using RT-qPCR (Figure 2F) (Irf7 p < 0.0001; Ifitm3 p = 0.0033; Oasl2 p < 0.0001; Stat1 p = 0.0003; t-test; n = 3 males per genotype). IPA prediction for upstream regulators influencing gene expression changes identified Irf7 as the transcriptional regulator with the highest enrichment of downstream targets (Figure 2—figure supplement 2B; Figure 2—source data 3). This was confirmed after inputting inferior olive differentially regulated gene promoters into the MEME-suite FIMO application and assessing significant enrichment for Irf7 binding site DNA motifs relative to shuffled promoter sequences (Table 1) (Bailey et al., 2009; Grant et al., 2011).
 
+**Table 1.**
+ Enrichment for Irf7 binding site DNA motifs in up-regulated 12 week old Atxn1154Q/2Q inferior olive genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain region</th>
+      <th>Motif occurrence</th>
+      <th>Down-Regulated</th>
+      <th>Shuffled</th>
+      <th>p-value</th>
+      <th>q-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>32</td>
+      <td>26</td>
+      <td rowspan="2">0.468</td>
+      <td rowspan="2">0.123</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>128</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>Brain Region</td>
+      <td>Motif Occurrence</td>
+      <td>Up-Regulated</td>
+      <td>Shuffled</td>
+      <td>p-value</td>
+      <td>q-value</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>27</td>
+      <td>2</td>
+      <td rowspan="2">8.8e-9</td>
+      <td rowspan="2">9.2e-9</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>17</td>
+      <td>42</td>
+    </tr>
+  </tbody>
+</table>
+
+_FDR p-value calculated using the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli (Q 5%)._
+
 Since the defense response was the most significantly enriched biological pathway at the 12 week time-point, and was composed of genes primarily expressed in glial cells, we utilized immunofluorescence staining analyses in 12-week-old Atxn1154Q/2Q KI mice to determine if classical markers of astrogliosis and microgliosis, Gfap and Iba1, respectively, were altered in the inferior olive (Figure 2G). Relative to WT control animals, there was a significant increase in the number of Iba1-positive cell soma in Atxn1154Q/2Q KI inferior olive (n = 3 males and females per genotype; p = 0.0488; t-test), but no significant change in Gfap fluorescence intensity at this time-point (n = 3 males and females per genotype; p > 0.05; t-test) (Figure 2G and H). Since Irf7 is expressed highly in microglia (Zhang et al., 2014), and is the top predicted upstream regulator of inferior olive differentially regulated genes at the 12 week time-point, (Figure 2—figure supplement 2B; Figure 2—source data 3), we assessed if Irf7 expression was altered specifically in microglia in a SCA1 context (Figure 2I). The murine microglial BV2 cell line expressed significantly elevated levels of Irf7 mRNA following overexpression of human ATXN1-82Q (n = 4 wells per experimental group; p = 0.0145; t-test) (Figure 2I).
 
 Neurological system process was the second most enriched pathway in the 12 week old Atxn1154Q/2Q KI inferior olive, and included genes classically associated with behavior and learning (Figure 2D). Some genes from this pathway, including Calb1, Cck, and Kncj10 were down-regulated in the inferior olive (Figure 2—figure supplement 3A), and Calb1 was validated using RT-qPCR (Figure 2—figure supplement 3B) (p < 0.01; t-test; n = 3 males per genotype). These genes have previously been studied in ataxia research in the cerebellum, suggesting that a subset of ataxia-related genes are also significantly altered in the affected inferior olive of Atxn1154Q/2Q KI mice at the 12 week time-point (Barski et al., 2003; Djukic et al., 2007; Ingram et al., 2016; Sala-Rabanal et al., 2010). Collectively, these results indicate that defense response-related genes and neurological system process-related genes are a major feature of the inferior olive transcriptome at the 12 week time-point. Altered expression of defense response-related genes are also found in the 5 week time-point, but they do not represent a significant component.
 
-## Dysregulation of gene expression directionality across two time-points in the Atxn1154Q/2Q KI inferior olive
+### Dysregulation of gene expression directionality across two time-points in the Atxn1154Q/2Q KI inferior olive
 
 Identifying similar gene expression and pathway enrichment across the 5 and 12 week time-points in the Atxn1154Q/2Q KI inferior olive may identify commonly conserved molecular mechanisms that contribute to disease onset and early progression (Figure 2—figure supplement 4A). We first assessed differential gene expression changes in the 5 and 12 week Atxn1154Q/2Q KI inferior olive relative to their appropriate WT controls (Figure 2—figure supplement 4B). Sixty-two annotated transcripts were altered in both the Atxn1154Q/2Q KI 5 week and 12 week inferior olive relative to their WT controls, making up approximately 43.4% of the 5 week differentially regulated gene list and 30.4% of the 12 week differentially regulated gene list (Figure 2—figure supplement 4B). Among the 62 genes, 29 genes were consistently up- or down-regulated across time-points (Figure 2—figure supplement 4B and C). The log fold change of these genes in the Atxn1154Q/2Q KI relative to WT controls remained stable across both time-points, with no obvious difference in their fold change between the 5 and 12 week time-points (slope = 1.03 ± 0.07; R2 = 0.90) (Figure 2—figure supplement 4C). The remaining 33 genes were dysregulated between the two time-points (Figure 2—figure supplement 4B and C). Those 33 genes were significantly up-regulated relative to WT controls at 5 weeks, then down-regulated relative to WT controls at 12 weeks of age (Figure 2—figure supplement 4C).
 
@@ -68,15 +143,174 @@ This methodology found enrichment for defense response, receptor activity, and c
 
 Collectively, this indicates that a common subset of genes are significantly altered at both the 5 and 12 week time-points in the Atxn1154Q/2Q KI inferior olive. Though the defense response is not significantly enriched at the 5 week time-point, several genes that have functions in the defense response are significantly up-regulated at the 5 week time-point. Further, more than one-half of the commonly altered genes across this temporal window switch directionality, with up-regulation of these genes at the 5 week time-point changing to down-regulation at the 12 week time-point.
 
-## SCA1 cerebellum has preferential enrichment for genes associated with synaptic transmission
+### SCA1 cerebellum has preferential enrichment for genes associated with synaptic transmission
 
 We similarly conducted a RNA-seq study in the Atxn1154Q/2Q KI cerebellum at 5 and 12 weeks of age (n = 3 males per genotype) (Figure 3A; Figure 3—figure supplement 1A). Microarrays have previously been used to assess transcriptional alterations in the Atxn1154Q/2Q KI cerebellum, however, to our knowledge, no RNA-seq experiments have been conducted (Crespo-Barreto et al., 2010; Gatchel et al., 2008). To allow for subsequent comparison between the inferior olive and cerebellum transcriptome in our analysis, we analyzed the Atxn1154Q/2Q KI cerebellum at appropriate time-points. For the 5 week analysis, only 25 annotated transcripts were differentially regulated compared to WT controls (FDR p-value < 0.05; n = 3 males per genotype) (Figure 3—figure supplement 1B). The top functional annotation clustering pathways were associated with reproductive process, transcription factor binding, and cell development pathways, though only reproductive process was significantly enriched based on our enrichment threshold (Figure 3—figure supplement 1C; Figure 3—source data 1). The genes linked to reproductive process were a diverse subset of genes with differing functions, and included the phosphatase Dusp1, the IGF binding protein Igfbp5, and the Wnt ligand Wnt4, all of which were down-regulated (Figure 3—figure supplement 1D). Among the transcription factor binding pathway were the transcriptional activator Eomes, as well as Mdfi, which is known to regulate Wnt signaling, and the transcriptional repressor Per1 (Figure 3—figure supplement 1E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig3-v2.jpg)
+
+**Figure 3.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in the 12 week old Atxn1154Q/2Q KI cerebellum (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated cerebellar genes. (D) GABAergic and glutamatergic receptors and receptor subunits are altered in the cerebellum (* FDR p-value < 0.05; ** FDR p-value < 0.01; n = 3 males per group).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in Atxn1154Q/2Q KI cerebellum at 5 weeks of age (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated genes in the 5 week old Atxn1154Q/2Q KI cerebellum. (D) Reproductive Process and (E) Transcription Factor Binding-related genes are largely down-regulated in the 5 week Atxn1154Q/2Q KI cerebellum. * FDR p-value < 0.05 (n = 3 males per genotype used in RNA-seq).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic of the time-point comparison in Atxn1154Q/2Q KI cerebellum. (B) Total number of differentially regulated genes in the Atxn1154Q/2Q KI cerebellum that are commonly altered in both the 5 and 12 week time-point relative to appropriate WT controls (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Dot plot of log fold changes for genes altered in the 5 and 12 week Atxn1154Q/2Q KI cerebellum. (C') Log fold change of genes up- or down-regulated at both the 5 week and 12 week time-points only. Linear regression analysis identified the slope and R2 of these log fold changes (slope = 1.30 ± 0.13; R2 = 0.86). A total of 17 genes were plotted in this analysis. (D) A subset of genes were commonly down-regulated and (E) commonly up-regulated at both time-points. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype for each time-point).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Subset of genes with a nominal p-value < 0.01 that overlapped with a previously published dataset (* nominal p-value < 0.01 but FDR p-value > 0.05; n = 3 males per genotype used in RNA-seq). (B) Total number of up- and down-regulated genes in Atxn1154Q/2Q KI cerebellum at 5 weeks of age (p-value < 0.01; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated cerebellum genes with a nominal p-value < 0.01.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Schematic of the time-point comparison in Atxn1154Q/2Q KI cerebellum. (B) Total number of differentially regulated genes in the Atxn1154Q/2Q KI cerebellum relative to appropriate WT controls that are common, and uniquely altered, in each time-point (nominal p-value < 0.01 for 5 week dataset; FDR p-value < 0.05 for 12 week dataset; n = 3 males per genotype for each time-point for RNA-seq). (C) Dot plot of log fold changes for genes altered in the 5 and 12 week Atxn1154Q/2Q KI cerebellum. Nominal p < 0.01 for the 5 week dataset, FDR p-value < 0.05 for the 12 week dataset. (C') Log fold change of genes up- or down-regulated in both the 5 week and 12 week time-points only. Dysregulated gene were excluded from this analysis. Linear regression analysis identified the slope and R2 of these log fold changes (slope = 1.53 ± 0.10; R2 = 0.78). A total of 73 genes were plotted in this analysis. (D) Clustering of GO terms identified from the Atxn1154Q/2Q KI cerebellum 5 week and 12 week differentially regulated gene lists relative to the appropriate WT controls. For this analysis, genes with a nominal p-value < 0.01 were used to generate the GO list for the 5 week Atxn1154Q/2Q KI cerebellum, and FDR p-value < 0.05 was used for the 12 week cerebellum. (E) A subset of genes associated with CNS Development were commonly up-regulated and (F) a subset of Synaptic Signaling genes were commonly down-regulated when assessed in the 5 and 12 week time-point. * nominal p-value < 0.01; ** FDR p-value < 0.01 (n = 3 males per genotype for each time-point).
 
 In the 12-week-old Atxn1154Q/2Q KI mice cerebella (Figure 3A), a total of 943 genes were differentially expressed, with 214 genes up-regulated and 729 genes down-regulated (FDR p-value < 0.05; n = 3 males per genotype) (Figure 3B). Pathway enrichment for the entire cerebellar differentially expressed gene list revealed enrichment for pathways associated with chemical synaptic transmission, transmembrane receptor activity, and gated channel activity (Figure 3C; Figure 3—source data 2). Since the top GO term of chemical synaptic transmission was composed of 90 genes, we assessed the molecular function of those genes in greater detail. The most enriched molecular function within this grouping of genes was neurotransmitter receptor activity, and included genes linked to GABAergic and glutamatergic signaling, as well as serotonin and acetylcholine signaling (Figure 3D; Figure 3—source data 2). The remaining genes were largely associated with voltage-gated calcium channel activity and calmodulin binding (Figure 3—source data 2).
 
 Upstream regulator prediction for the 12 week Atxn1154Q/2Q KI cerebellum transcriptomics dataset revealed Creb1 as one of the top candidates for regulating downstream targets (Supplementary File 3). However, previous studies have identified the transcriptional repressor Capicua (Cic) as an Atxn1 interactor, and a growing body of evidence suggests that the Atxn1-Cic interaction may be important in driving molecular alterations and pathological and behavioral phenotypes in the SCA1 cerebellum (Fryer et al., 2011; Ingram et al., 2016; Kim et al., 2013b; Lam et al., 2006; Lim et al., 2006; Rousseaux et al., 2018). Since Cic motifs are not found in IPA, we queried whether Cic binding site DNA motifs were also significantly enriched in the promoter region of 12 week Atxn1154Q/2Q KI cerebellum differentially regulated genes (Table 2). Relative to shuffled nucleotide sequences, there was strong enrichment for Cic binding site DNA motifs in the 12 week Atxn1154Q/2Q KI cerebellum among down-regulated genes (Table 2). To determine if Cic binding site motifs were only present in the promoter region of cerebellum differentially regulated genes, the inferior olive was also tested (Table 2). There was enrichment among up-regulated inferior olive genes at 12 weeks of age for Cic binding sites, but the degree of enrichment was not as substantial as in the cerebellum (Table 2).
 
-## Conserved gene expression changes and pathway enrichment in the Atxn1154Q/2Q KI cerebellum across disease progression time-points
+**Table 2.**
+ Enrichment for Cic binding site DNA motifs in down- and up-regulated 12 week old Atxn1154Q/2Q inferior olive and cerebellum.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cic DNA motif</th>
+      <th>Brain region</th>
+      <th>Motif occurrence</th>
+      <th>Down-Regulated</th>
+      <th>Shuffled</th>
+      <th>p-value</th>
+      <th>q-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">TGAATGAA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>31</td>
+      <td>19</td>
+      <td rowspan="2">0.090</td>
+      <td rowspan="2">0.095</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>129</td>
+      <td>141</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>126</td>
+      <td>57</td>
+      <td rowspan="2">5.6e-8</td>
+      <td rowspan="2">2.9e-7</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>604</td>
+      <td>673</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGGA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>35</td>
+      <td>25</td>
+      <td rowspan="2">0.197</td>
+      <td rowspan="2">0.148</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>125</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>157</td>
+      <td>104</td>
+      <td rowspan="2">3.7e-4</td>
+      <td rowspan="2">9.7e-4</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>573</td>
+      <td>626</td>
+    </tr>
+    <tr>
+      <td>Cic DNA Motif</td>
+      <td>Brain Region</td>
+      <td>Motif Occurrence</td>
+      <td>Up-Regulated</td>
+      <td>Shuffled</td>
+      <td>p-value</td>
+      <td>q-value</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGAA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>10</td>
+      <td>4</td>
+      <td rowspan="2">0.143</td>
+      <td rowspan="2">0.125</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>34</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>32</td>
+      <td>19</td>
+      <td rowspan="2">0.073</td>
+      <td rowspan="2">0.095</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>181</td>
+      <td>194</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGGA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>13</td>
+      <td>2</td>
+      <td rowspan="2">0.003</td>
+      <td rowspan="2">0.005</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>31</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>38</td>
+      <td>29</td>
+      <td rowspan="2">0.287</td>
+      <td rowspan="2">0.188</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>175</td>
+      <td>184</td>
+    </tr>
+  </tbody>
+</table>
+
+_FDR p-value calculated using the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli (Q 5%)._
+
+### Conserved gene expression changes and pathway enrichment in the Atxn1154Q/2Q KI cerebellum across disease progression time-points
 
 Despite the few genes altered in the 5 week Atxn1154Q/2Q KI cerebellum, we next assessed whether those genes overlapped with the 12 week cerebellum differentially regulated gene list (Figure 3—figure supplement 2A). Of the 25 genes differentially regulated in the 5 week old Atxn1154Q/2Q KI cerebellum, 17 overlapped with the 12 week cerebellum dataset (Figure 3—figure supplement 2B). The majority of these were commonly down-regulated (Figure 3—figure supplement 2B and C). In fact, all of the genes significantly altered in both the Atxn1154Q/2Q KI 5 week and 12 week cerebellum relative to appropriate WT controls were differentially regulated in the same direction (Figure 3—figure supplement 2B and C). Analysis of these genes found a larger fold change in 12 week Atxn1154Q/2Q KI relative to controls than in the 5 week dataset (slope = 1.3 ± 0.13, R2 = 0.86), indicating a slight progression in the severity of the up- or down-regulation of genes across the temporal window (Figure 3—figure supplement 2C). However, this analysis was conducted with only 17 genes, and the interpretation may change with a larger gene set. The commonly down-regulated genes, which made up the majority of the overlapping gene set, included the transcription factors Eomes and Mdfi, as well as IGF binding protein Igfbp5 (Figure 3—figure supplement 2D). Among the three up-regulated genes shared between the 5 week and 12 week datasets were Ifi203, which responds to interferon-beta, Necab1, a calcium binding protein, and the synaptic vesicle protein Synpr (Figure 3—figure supplement 2E).
 
@@ -86,19 +320,43 @@ The comparison between the 5 week and 12 week Atxn1154Q/2Q KI cerebellum relativ
 
 To determine what pathways were similar, and unique, to each time-point, pathway enrichment was assessed among the Atxn1154Q/2Q KI cerebellum at 5 weeks (nominal p-value < 0.01) and 12 weeks (FDR p-value < 0.05) (Figure 3—figure supplement 4D; Figure 3—source data 4 and 5). There was overlap between the 5 and 12 week time-points for pathways related to synaptic signaling, which could be further broken down into smaller clusters of cell-cell signaling, gated channel activity, and system process (Figure 3—figure supplement 4D; Figure 3—source data 4 and 5). There was also pathway overlap in CNS development (Figure 3—figure supplement 4D; Figure 3—source data 4 and 5). Among the commonly enriched pathways, the majority of the up-regulated genes were associated with the CNS development pathway (Figure 3—figure supplement 4E). Commonly down-regulated genes made up a substantial portion of the cell-cell signaling and gated channel activity pathways, which were subcomponents of the synaptic signaling cluster (Figure 3—figure supplement 4F). This suggests that biological and molecular pathways identified at 12 weeks in the Atxn1154Q/2Q KI cerebellum are already present at 5 weeks, though to a lesser extent. Further, the directionality of the gene expression changes at 5 weeks is largely conserved at 12 weeks in the Atxn1154Q/2Q KI cerebellum.
 
-## Comparison between cerebellum and inferior olive reveals largely divergent pathway enrichment
+### Comparison between cerebellum and inferior olive reveals largely divergent pathway enrichment
 
 Next, we assessed whether molecular alterations found in the inferior olive and cerebellum of Atxn1154Q/2Q KI mice are similar or distinct. To analyze the similarities between these two affected tissues in greater detail, the overlap in the two SCA1 affected tissues was assessed at each time-point (Figure 4; Figure 4—figure supplement 1). In the 5 week old Atxn1154Q/2Q KI inferior olive and cerebellum comparison, 14 genes overlapped, 9 of which were regulated in opposing directions in each tissue (Figure 4—figure supplement 1A and B). Biological and molecular pathway overlap consisted of a single node in the response to organic substance cluster (Figure 4—figure supplement 1C; Figure 4—source data 1 and 2). This pathway consisted of a collection of the up-regulated, down-regulated, and dysregulated genes that were altered in both the inferior olive and cerebellum (Figure 4—figure supplement 1D). These results indicate that minimal pathway and gene expression overlap exists in the 5 week old Atxn1154Q/2Q KI inferior olive and cerebellum, and that gene expression changes in these two tissues at this time-point are brain-region specific.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the cross-tissue comparison conducted. (B) Clustering of GO terms from the 12 week old inferior olive and cerebellum differentially expressed genes lists. In this and all following figures, nodes represent GO terms and edges connect nodes that share common genes. Edge width corresponds to the number of genes shared between nodes, and edge length represents the similarity coefficient between nodes. Color-coded nodes represent GO terms from either the inferior olive (pink), cerebellum (blue), or GO terms shared by both tissues (purple). All GO terms were significantly enriched within the datasets (FDR p-value < 0.05). (C) Total number of differentially regulated genes that are common, and uniquely altered, in the 12 week old Atxn1154Q/2Q KI inferior olive and cerebellum (FDR p-value < 0.05). (D) A subset of genes commonly up-regulated and (E) commonly down-regulated in both the inferior olive and cerebellum relative to WT controls (* FDR p-value < 0.05; ** FDR p-value < 0.01; n = 3 males per genotype for RNA-seq).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the cross-tissue comparison in the 5 week old Atxn1154Q/2Q KI inferior olive and cerebellum. (B) Total number of differentially regulated genes in the Atxn1154Q/2Q KI inferior olive and cerebellum relative to appropriate WT controls that are common, and uniquely altered, in each tissue (nominal p-value < 0.01 for cerebellum dataset; FDR p-value < 0.05 for inferior olive dataset; n = 3 males per genotype for RNA-seq). (C) Clustering of GO terms identified from the Atxn1154Q/2Q KI cerebellum and inferior olive differentially regulated gene lists relative to the appropriate WT controls. For cerebellum, nominal p-value < 0.01 was used to generate the list of enriched pathways, while FDR p-value < 0.05 was used for the inferior olive. (D) Genes differentially regulated in both the inferior olive and cerebellum relative to the appropriate WT controls were up-regulated, dysregulated, and down-regulated. * nominal p-value < 0.01; ** FDR p-value < 0.01 (n = 3 males per genotype for each time-point).
 
 In the 12 week Atxn1154Q/2Q KI inferior olive and cerebellum comparison, GO annotations segregated into biological and molecular functions that were also largely distinct depending on tissue (Figure 4A and B; Figure 4—source data 3 and 4). Node clusters that appeared unique to the inferior olive were composed of pathways associated with the defense response, response to organic substance, neuropeptide hormone activity, and chemical homeostasis (Figure 4B; Figure 4—source data 3). In contrast, node clusters made up entirely of differentially expressed genes originating from the cerebellum included regulation of membrane potential and glutamate receptor signaling pathway (Figure 4B; Figure 4—source data 4). Four node clusters contained a mixture of GO terms enriched in both the inferior olive and cerebellum, including CNS development, blood circulation, behavior, and synaptic signaling (Figure 4B, Figure 4—source data 3 and 4). The synaptic signaling cluster was defined as a large cluster based on our clustering criteria with three minor groups segregating within that cluster (Figure 4B). Those three groups were gated chanel activity, transmembrane receptor activity, and cell-cell signaling (Figure 4B). There was a higher degree of overlap between the inferior olive and cerebellum GO terms enriched within these clusters, indicating a degree of tissue homogeneity. However, the cell-cell signaling cluster only had one node that overlapped between tissues (Figure 4B, Figure 4—source data 3 and 4). While this suggests a degree of overlap between the two tissues in cell-cell signaling, it also indicates that this biological pathway is not a major feature of the inferior olive transcriptome.
 
 In total, 69 common genes were differentially regulated in both tissues relative to appropriate WT controls, with 13 genes commonly up-regulated and 54 down-regulated (Figure 4C). Of the commonly up-regulated genes, four were ISGs (Figure 4D). Among the shared down-regulated genes were those associated with CNS development and cell-cell signaling, collectively indicating that there is a subset of shared genes and pathways between the two tissues that may mediate pathogenesis (Figure 4E).
 
-## Defense response-related pathways are enriched in the inferior olive across SCA1 mouse models
+### Defense response-related pathways are enriched in the inferior olive across SCA1 mouse models
 
 The defining feature of the 12 week Atxn1154Q/2Q KI inferior olive was the defense response, suggesting that the major cell-type undergoing transcriptional alterations in the Atxn1154Q/2Q KI inferior olive may be from a glial origin (Figure 2D, E, G and H). In addition, a subset of ISGs up-regulated at 12 weeks were also up-regulated at 5 weeks of age, indicating that alterations in these genes already occurs at an early symptomatic time-point (Figure 2—figure supplement 1D). This up-regulation of defense response-related genes may be due to a direct effect of polyQ-expanded Atxn1 in glial cells (Figure 2I), or it may occur in response to polyQ-expanded Atxn1 effects in neurons. Consistent with this idea, previous studies have shown an elevation of Gfap and Iba1 proteins in the ATXN1-82Q Tg mouse cerebellum (Cvetanovic et al., 2015). Expression of ATXN1-82Q in these Tg mice is driven by the Pcp2 promoter, thus isolating the expression of polyQ-expanded ATXN1 to PCs (Burright et al., 1995). This model would therefore allow for the identification of non-cell autonomous effects in the inferior olive, and potentially determine if the defense response enrichment in the 12 week Atxn1154Q/2Q KI inferior olive is due to non-cell autonomous effects of polyQ-expanded Atxn1.
 
 The ATXN1-82Q Tg mice exhibit robust overexpression of ATXN1-82Q mRNA in the cerebellum, but show no significant increase relative to WT control littermates in the inferior olive (Figure 5A). Protein quantification of ATXN1-82Q found that, while it is expressed in whole cerebellar lysate, it does not resolve in the inferior olive (Figure 5B). This verified that ATXN1-82Q Tg mice do not express polyQ-expanded ATXN1 in the inferior olive, which is consistent with a previous report (Burright et al., 1995). Further, it indicates that transcriptional alterations identified in the ATXN1-82Q Tg inferior olive, if any, are likely due to non-cell autonomous effects of polyQ-expanded ATXN1 in the cerebellum, and not due to its expression in the inferior olive.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig5-v2.jpg)
+
+**Figure 5.:** (A) ATXN1 mRNA expression in the 12 week old ATXN1-82Q Tg cerebellum and inferior olive (***p < 0.001, t-test; n = 3 males per genotype). (B) PolyQ-expanded ATXN1 is present in the cerebellum, but not in the inferior olive (n = 2 males per genotype). * marks Atxn1-2Q, ** marks ATXN1-82Q.(C) Schematic of the cross-model, 12 week old inferior olive comparison. (D) Total number of differentially regulated genes that are common, and uniquely altered, in the inferior olive of Atxn1154Q/2Q KI and ATXN1-82Q Tg mice (FDR p-value < 0.05). (E) Clustering of GO terms from the Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive differentially expressed genes lists. (F) Heatmap of log fold changes in Defense Response-related genes relative to control littermates from both the 12 week Atxn1154Q/2Q KI and 12 week ATXN1-82Q Tg inferior olive. (G) Total number of differentially regulated genes linked to Defense Response that are common, and uniquely altered, in the 12 week old Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive (FDR p-value < 0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in ATXN1-82Q Tg inferior olive at 5 weeks of age (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated inferior olive genes. (D) Vasculature Development and (E) Enzyme-Linked Receptor Protein Signaling Pathway-related genes are largely up-regulated. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype used in RNA-seq).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in the 12 week old ATXN1-82Q Tg inferior olive (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all ATXN1-82Q Tg differentially regulated inferior olive genes at 12 weeks. (D) Blood Vessel Morphogenesis and Response to Organic Substance-related genes are up- and down-regulated. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype used in RNA-seq).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Schematic of the time-point comparison in ATXN1-82Q Tg inferior olive. (B) Total number of differentially regulated genes in the ATXN1-82Q Tg inferior olive relative to appropriate WT controls that are common, and uniquely altered, across the 5 and 12 week time-points (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Dot plot of log fold changes for genes significantly altered in the 5 and 12 week ATXN1-82Q Tg inferior olive relative to appropriate controls. (C') Log fold change of genes significantly up-regulated at both the 5 week and 12 week time-points only. Linear regression analysis identified the slope and R2 of these log fold changes (slope = 0.91 ± 0.12; R2 = 0.87). A total of 10 genes were plotted in this analysis. Dysregulated genes were excluded from this analysis. (D) Clustering of GO terms identified from the ATXN1-82Q Tg inferior olive 5 week and 12 week differentially regulated gene lists relative to the appropriate WT controls. (E) A subset of genes associated with Response to Organic Substance and Vasculature Development were commonly up-regulated and (F) a subset of Response to Organic ubstance genes were dysregulated when assessed in the 5 and 12 week time-points. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype for each time-point).
 
 Analysis of RNA-seq data from 5 week old ATXN1-82Q Tg inferior olive identified 148 genes that were differentially regulated relative to their WT control littermates (FDR p < 0.05; n = 3 males per genotype) (Figure 5—figure supplement 1A and B). The majority of genes (142 out of 148 genes) were up-regulated (Figure 5—figure supplement 1B). Pathway analysis found enrichment for vasculature development, enzyme-linked receptor protein signaling pathway, and cellular response to organic substance in the ATXN1-82Q Tg inferior olive at 5 weeks of age (Figure 5—figure supplement 1C; Figure 5—source data 1). No significant enrichment for defense response-related pathways was identified at this time-point using NIH DAVID or IPA (Figure 5—source data 1; Supplementary file 4). However, some immune-related genes were segregated into the vasculature development cluster (Figure 5—figure supplement 1D). Lbp and Nov (also known as Ccn3) have immune functions, and were significantly up-regulated at 5 weeks in the ATXN1-82Q Tg inferior olive (Figure 5—figure supplement 1D). Genes associated with enzyme linked receptor protein signaling pathway were also largely up-regulated, and included Bmp7, Folr1, Gdf7, and Kl (Figure 5—figure supplement 1E).
 
@@ -110,7 +368,7 @@ Enrichment for defense response-related genes at the 12 week ATXN1-82Q Tg time-p
 
 The minimal overlap for defense response-related pathways between the Atxn1154Q/2Q KI and ATXN1-82Q Tg 12 week inferior olive suggests that unique genes may be constituting the defense response in each mouse model. To ascertain whether the same genes were driving enrichment for the defense response in the inferior olive, we compared the genes represented in each of the mouse models at 12 weeks of age (Figure 5F and G). An assessment of all defense response-related genes from both mouse models found a marked difference in expression directionality (Figure 5F). Genes up-regulated in the ATXN1-82Q Tg are largely non-significant in the Atxn1154Q/2Q KI, and genes up- or down-regulation in the Atxn1154Q/2Q KI are largely non-significant or regulated in opposing directions (Figure 5F). A total of 12 defense response-related genes were commonly altered in each of the two groups out of a combined total of 101, with all of them commonly down-regulated (Figure 5G). Collectively, this suggests that different transcriptional regulators are driving distinct alterations in defense response-related genes across the SCA1 animal models at 12 weeks of age (Figure 5F and G). Indeed, IPA prediction for upstream regulators of the ATXN1-82Q Tg inferior olive transcriptome at 12 weeks identified Esr1 and Tcl1a as the top potential upstream regulators, and no significant enrichment for Irf7 was observed (Supplementary File 5).
 
-## Distinct, brain region-specific pathway enrichment is conserved in a transgenic mouse model of SCA1
+### Distinct, brain region-specific pathway enrichment is conserved in a transgenic mouse model of SCA1
 
 The over-representation of the defense response in the ATXN1-82Q Tg inferior olive suggests that non-cell autonomous mechanisms may alter astrocyte or microglia reactivity in the SCA1 inferior olive. To determine if enrichment for defense response-related genes is specific to the inferior olive in the ATXN1-82Q Tg mouse model, we conducted RNA-seq in the cerebellum at 5 and 12 weeks of age. Sequencing in the 5 week ATXN1-82Q Tg mouse cerebellum revealed 402 genes significantly different relative to WT control littermates (Figure 6—figure supplement 1A and B). Of the 402 genes differentially regulated, 350 were down-regulated (Figure 6—figure supplement 1B). The biological and molecular pathways these genes made up were chemical synaptic transmission, regulation of cell communication, and cation transmembrane transport (Figure 6—figure supplement 1C; Figure 6—source data 1). The chemical synaptic transmission pathway included genes related to GABAergic signaling, glutamatergic signaling, and scaffolding proteins (Figure 6—figure supplement 1D; Figure 6—source data 1). These were largely down-regulated (Figure 6—figure supplement 1D) Among the regulation of cell communication pathway were the genes Baiap2, Kalrn, and Clstn2, which were also down-regulated (Figure 6—figure supplement 1E; Figure 6—source data 1).
 
@@ -120,17 +378,176 @@ Some pathways identified in the 5 week and 12 week dataset appeared to be quite 
 
 To determine if brain region-dependent gene expression changes and pathway enrichment were occurring in the ATXN1-82Q Tg mouse, a tissue comparison was conducted at both time-points. At the 5 week time-point (Figure 6—figure supplement 4A), 23 annotated transcripts were differentially regulated in both the 5 week inferior olive and cerebellum (Figure 6—figure supplement 4B). However, 15 of the 23 genes were altered in opposing directions (Figure 6—figure supplement 4B). There was minor overlap in terms of enriched biological and molecular pathways between the two tissues, with only one node shared between the two brain regions in the hormone activity cluster (Figure 6—figure supplement 4C). At the 12 week time-point (Figure 6A), 59 genes were commonly altered in both tissues (Figure 6B). There were 15 up-regulated genes, three of which constitute components of the defense response, specifically the complement cascade (i.e. C1qa, C1qb, C1qc) (Figure 6C). However, the majority of the genes commonly altered in both the 12 week ATXN1-82Q Tg cerebellum and inferior olive were altered in opposing directions, some of which were associated with cell growth and development (Figure 6C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of the cross-tissue comparison in ATXN1-82Q Tg mice. (B) Total number of differentially regulated genes that are common, and uniquely altered, in the inferior olive and cerebellum of 12 week old ATXN1-82Q Tg mice (FDR p-value < 0.05; n = 3 males per genotype). (C) A subset of genes commonly up-regulated in the inferior olive and cerebellum, and genes altered in opposing directions (** FDR p-value < 0.01; n = 3 males per genotype for RNA-seq). (D) Clustering of GO terms from the ATXN1-82Q Tg inferior olive and cerebellum differentially expressed genes lists.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in ATXN1-82Q Tg cerebellum at 5 weeks of age (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated 5 week old ATXN1-82Q Tg cerebellum genes (p-value < 0.05). (D) Genes linked to Chemical Synaptic Transmission and (E) Regulation of Cell Communication are largely down-regulated. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype used in RNA-seq).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Illustration of the tissue examined. (B) Total number of up- and down-regulated genes in ATXN1-82Q Tg cerebellum at 12 weeks of age (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Biological pathway enrichment for all differentially regulated cerebellum genes (p-value < 0.05). (D) Genes linked to Synaptic Signaling and (E) Regulation of Signaling are down- and up-regulated. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype used in RNA-seq).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Schematic of the time-point comparison in ATXN1-82Q Tg cerebellum. (B) Total number of differentially regulated genes in the ATXN1-82Q Tg cerebellum relative to appropriate WT controls that are common, and uniquely altered, across the 5 and 12 week time-points (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Dot plot of log fold changes for genes altered in the 5 and 12 week ATXN1-82Q Tg cerebellum. (C') Log fold change of genes significantly up- or down-regulated at both the 5 week and 12 week time-points only. Linear regression analysis identified the slope and R2 of these log fold changes (slope = 1.47 ± 0.03; R2 = 0.89). A total of 316 genes were plotted in this analysis. Dysregulated genes were excluded from this analysis. (D) Clustering of GO terms identified from the ATXN1-82Q Tg cerebellum 5 week and 12 week differentially regulated gene lists relative to the appropriate WT controls. (E) A subset of genes were commonly up-regulated and down-regulated at both time-points relative to WT controls. * FDR p-value < 0.05; ** FDR p-value < 0.01 (n = 3 males per genotype for each time-point).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Schematic of the cross-tissue comparison in ATXN1-82Q Tg inferior olive and cerebellum at 5 weeks of age. (B) Total number of differentially regulated genes in the ATXN1-82Q Tg cerebellum and inferior olive relative to appropriate WT controls that are common, and uniquely altered (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Clustering of GO terms identified from the ATXN1-82Q Tg inferior olive and cerebellum 5 week differentially regulated gene lists relative to the appropriate WT controls.
+
 Comparison of the enriched GO terms from the ATXN1-82Q Tg inferior olive and cerebellum found many biological pathways that are distinct between the tissues, such as nervous system development, ion transport and cell-cell signaling (Figure 6D). The defense response and vasculature development clusters were the only two clusters largely specific to the inferior olive (Figure 6D). Collectively, this indicates that defense response-related genes are not a major feature of the cerebellar transcriptome in ATXN1-82Q Tg mice at 12 weeks of age. This data also supports our findings in Atxn1154Q/2Q KI mice that there are some common, and largely unique, biological pathways over-represented in the inferior olive and cerebellum SCA1 transcriptomics (Figure 4B).
 
 We surveyed our entire ATXN1-82Q Tg cerebellar and inferior olive transcriptomics dataset for Cic binding site DNA motifs at 12 weeks of age, and found significant enrichment for Cic binding sites within the promoter region for up- and down-regulated ATXN1-82Q Tg cerebellar genes (Table 3). Interestingly, weak but significant enrichment for one Cic DNA motif was also identified among down-regulated ATXN1-82Q Tg inferior olive genes at 12 weeks of age (Table 3). Considering that polyQ-expanded ATXN1 is not expressed in inferior olive of ATXN1-82Q Tg mice (Figure 5A and B), this finding suggests that Cic may also function in the inferior olive transcriptome independent of mutant ATXN1 or dependent on endogenous Atxn1.
 
-## Genes are altered in opposing directions in the cerebellum of two SCA1 mouse models
+**Table 3.**
+ Enrichment for Cic binding site DNA motifs in down- and up-regulated genes from 12 week old ATXN1-82Q Tg inferior olive and cerebellum.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cic DNA motif</th>
+      <th>Brain region</th>
+      <th>Motif occurrence</th>
+      <th>Down-Regulated</th>
+      <th>Shuffled</th>
+      <th>p-value</th>
+      <th>q-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">TGAATGAA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>12</td>
+      <td>1</td>
+      <td rowspan="2">0.002</td>
+      <td rowspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>56</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>90</td>
+      <td>48</td>
+      <td rowspan="2">1.9e-4</td>
+      <td rowspan="2">4.0e-4</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>510</td>
+      <td>552</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGGA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>19</td>
+      <td>13</td>
+      <td rowspan="2">0.312</td>
+      <td rowspan="2">0.187</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>49</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>110</td>
+      <td>86</td>
+      <td rowspan="2">0.073</td>
+      <td rowspan="2">0.061</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>490</td>
+      <td>514</td>
+    </tr>
+    <tr>
+      <td>Cic DNA Motif</td>
+      <td>Brain Region</td>
+      <td>Motif Occurrence</td>
+      <td>Up-Regulated</td>
+      <td>Shuffled</td>
+      <td>p-value</td>
+      <td>q-value</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGAA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>10</td>
+      <td>7</td>
+      <td rowspan="2">0.606</td>
+      <td rowspan="2">0.318</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>60</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>97</td>
+      <td>51</td>
+      <td rowspan="2">4.9e-5</td>
+      <td rowspan="2">2.1e-4</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>366</td>
+      <td>412</td>
+    </tr>
+    <tr>
+      <td rowspan="4">TGAATGGA</td>
+      <td rowspan="2">Inferior Olive</td>
+      <td>Present</td>
+      <td>15</td>
+      <td>7</td>
+      <td rowspan="2">0.103</td>
+      <td rowspan="2">0.072</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>55</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cerebellum</td>
+      <td>Present</td>
+      <td>96</td>
+      <td>59</td>
+      <td rowspan="2">0.002</td>
+      <td rowspan="2">0.002</td>
+    </tr>
+    <tr>
+      <td>Absent</td>
+      <td>367</td>
+      <td>404</td>
+    </tr>
+  </tbody>
+</table>
+
+_FDR p-value calculated using the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli (Q 5%)._
+
+### Genes are altered in opposing directions in the cerebellum of two SCA1 mouse models
 
 Enriched GO annotations for the ATXN1-82Q Tg cerebellum appear similar to the Atxn1154Q/2Q KI clusters, and include nervous system development, cell-cell signaling, system process, and response to organic substance (Figures 4B and 6D). However, closer inspection of the gene expression differences suggested that while similar clusters are enriched among all genes altered in these tissues, the directionality of the gene expression changes can vary between mouse models. As a result, we compared the molecular changes between these two mouse models in the cerebellum (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig7-v2.jpg)
 
-**Figure 7.:** (A) Schematic of the cross-model comparison in 12 week old Atxn1 KI and ATXN1-82Q Tg cerebellum. (154Q/2QB) Number and directionality of shared differentially regulated genes in the Atxn1 KI and ATXN1-82Q Tg cerebellum (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (154Q/2QC) Log fold change for genes commonly altered in both the Atxn1 KI and ATXN1-82Q Tg cerebellum, and the proportion of commonly altered genes within each quadrant. (154Q/2QD) Common genes up-regulated or down-regulated in the cerebellum from both mouse models (Quadrant I and III), and genes regulated in opposing directions (Quadrant II and IV) at 12 weeks of age (* FDR p-value < 0.05; ** FDR p-value < 0.01; n = 3 males per genotype for RNA-seq).
+**Figure 7.:** (A) Schematic of the cross-model comparison in 12 week old Atxn1154Q/2Q KI and ATXN1-82Q Tg cerebellum. (B) Number and directionality of shared differentially regulated genes in the Atxn1154Q/2Q KI and ATXN1-82Q Tg cerebellum (FDR p-value < 0.05; n = 3 males per genotype for RNA-seq). (C) Log fold change for genes commonly altered in both the Atxn1154Q/2Q KI and ATXN1-82Q Tg cerebellum, and the proportion of commonly altered genes within each quadrant. (D) Common genes up-regulated or down-regulated in the cerebellum from both mouse models (Quadrant I and III), and genes regulated in opposing directions (Quadrant II and IV) at 12 weeks of age (* FDR p-value < 0.05; ** FDR p-value < 0.01; n = 3 males per genotype for RNA-seq).
 
 Of the genes altered in each tissue, a total of 316 genes overlapped (Figure 7B). The directionality of these changes was largely discordant between mouse models, with 177 genes altered in opposing directions (Figure 7B and C). The majority of these discordant genes were down-regulated in the Atxn1154Q/2Q KI cerebellum and up-regulated in the ATXN1-82Q Tg cerebellum (Figure 7C). Among the commonly up-regulated genes, three of the 13 genes were associated with the regulation of cell death (Figure 7C and D). Among the genes commonly down-regulated, which consisted of 126 annotated genes, a subset were associated with neuron projection and development (Figure 7C and D). There were a total of 151 genes down-regulated in Atxn1154Q/2Q KI and up-regulated in ATXN1-82Q Tg, and many were linked to nervous system development (Figure 7C and D). Synaptic signaling-related genes were largely up-regulated in the Atxn1154Q/2Q KI and down-regulated in ATXN1-82Q Tg (Figure 7D). This suggests that either the level of mutant ATXN1 protein expression, the length of the polyQ repeat, or the cell-type expressing the pathogenic protein may impact gene expression directionality.
 
@@ -140,7 +557,7 @@ Neurodegeneration can affect multiple brain regions, however, many neurodegenera
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/39981/elife-39981-fig8-v2.jpg)
 
-**Figure 8.:** Differentially regulated genes in the 5 week old inferior olive and cerebellum from both SCA1 mouse models are associated with specific biological and molecular pathways, a subset of which are listed. The 5 week old Atxn1 KI cerebellum pathways are derived when using a nominal p-value < 0.01. In the cerebellum, the majority of differentially regulated genes are down-regulated at both the 5 and 12 week time-points (blue arrow). In the SCA1 inferior olive, the majority of genes are up-regulated at 5 weeks of age, which is followed by a shift toward gene down-regulation (orange and blue gradient arrow). In SCA1 mice at 12 weeks of age, there are enriched biological and molecular pathways that are both conserved, and unique, to specific affected tissues.154Q/2Q
+**Figure 8.:** Differentially regulated genes in the 5 week old inferior olive and cerebellum from both SCA1 mouse models are associated with specific biological and molecular pathways, a subset of which are listed. The 5 week old Atxn1154Q/2Q KI cerebellum pathways are derived when using a nominal p-value < 0.01. In the cerebellum, the majority of differentially regulated genes are down-regulated at both the 5 and 12 week time-points (blue arrow). In the SCA1 inferior olive, the majority of genes are up-regulated at 5 weeks of age, which is followed by a shift toward gene down-regulation (orange and blue gradient arrow). In SCA1 mice at 12 weeks of age, there are enriched biological and molecular pathways that are both conserved, and unique, to specific affected tissues.
 
 Response to organic substance and hormone-related pathways were significantly enriched in both the Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive at 5 weeks of age, which coincides with the earliest reported onset of behavioral phenotypes (Figure 2—figure supplement 1; Figure 5—figure supplement 1; Figure 8). A subset of the Atxn1154Q/2Q KI response to organic substance pathway contained ISGs, which are known to contribute to immune-related processes (Figure 2—figure supplement 1D). A small subset of immune-related genes were also identified in the 5 week ATXN1-82Q Tg inferior olive (Figure 5—figure supplement 1D). This suggests that some, but not a significant amount, of Defense Response-related genes are significantly different in the Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive at 5 weeks of age. However, by 12 weeks of age, both the Atxn1154Q/2Q KI and ATXN1-82Q Tg inferior olive differentially regulated gene lists are made up of a substantial portion of defense response, or immune-related, genes (Figures 2D, 5E and 8; Figure 5—figure supplement 2C). The biological and pathological significance of the defense response in the SCA1 inferior olive will require further examination to determine whether this is a component of a pathological pathway or protective response. One interesting finding in this study is that although the defense response was a top significantly enriched pathway in the inferior olive of two distinct SCA1 models, the genes differentially regulated in these models do not strongly overlap (Figure 5F and G). For example, ISGs such as the retinoic acid-inducible genes (RIG-1) like receptors Ddx58 (RIG-1) and Ifih1 (MDA5) are significantly up-regulated in the Atxn1154Q/2Q KI inferior olive, but do not change in the ATXN1-82Q Tg inferior olive. Due to the fundamental difference in the expression of polyQ-expanded mutant ATXN1 protein in the inferior olive between the two different SCA1 models (Figures 2A, 5A and B), the molecular and cellular mechanisms leading to the increased defense response will be different.
 
@@ -162,33 +579,365 @@ In summary, our work shows for the first time that there are specific biological
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, or strain background (Mus musculus, C57BL/6J)</td>
+      <td>Atxn1154Q/2Q KI</td>
+      <td>PMID:12086639</td>
+      <td>RRID:MGI:2429435, backcrossed in house on C57BL/6J background</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, or strain background (Mus musculus, FVB/NJ)</td>
+      <td>ATXN1-82Q Tg</td>
+      <td>PMID:7553854</td>
+      <td>RRID:MGI:2447854 backcrossed in house on FVB/NJ background</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, or strain background (Mus musculus, C57BL/6J)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Lab</td>
+      <td>Stock: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, or strain background (Mus musculus, FVB/NJ)</td>
+      <td>FVB/NJ</td>
+      <td>The Jackson Lab</td>
+      <td>Stock: 001800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>BV2</td>
+      <td>A kind gift from Dr. Katerina Akassoglou (Adams et al., 2007)</td>
+      <td>RRID: CVCL_0182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>human Flag-ATXN1 82Q</td>
+      <td>A kind gift from Dr. Huda Zoghbi</td>
+      <td>Addgene Plasmid #33237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>mammalian expression vector pcDNA3.1+</td>
+      <td>Invitrogen (ThermoFisher Scientific)</td>
+      <td>Cat. # V790-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit polyclonal anti-Atxn111750</td>
+      <td>a kind gift from Huda Zoghbi (Servadio et al., 1995)</td>
+      <td>RRID:AB_2721278</td>
+      <td>(1:1,000) WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Calbindin</td>
+      <td>Sigma</td>
+      <td>Cat. #: C9848 RRID:AB_476894</td>
+      <td>(1:2,000) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Gapdh</td>
+      <td>Sigma</td>
+      <td>Cat. #G8795 RRID:AB_1078991</td>
+      <td>(1:10,000) WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken polyclonal anti-Gfap</td>
+      <td>Abcam</td>
+      <td>Cat. # ab4674 RRID:AB_304558</td>
+      <td>(1:1,000) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Iba1</td>
+      <td>Wako</td>
+      <td>Cat. # 019–19741 RRID:AB_839504</td>
+      <td>(1:2,000) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-chicken Alexa555</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #A21437 RRID:AB_2535858</td>
+      <td>(1:500) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-mouse Alexa488</td>
+      <td>ThermoFisher</td>
+      <td>Cat. # A11001 RRID:AB_2534069</td>
+      <td>(1:500) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-rabbit Alexa568</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #A11011 RRID:AB_143157</td>
+      <td>(1:500) IHC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit</td>
+      <td>GE Healthcare</td>
+      <td>Cat. #NA934 RRID:AB_772206</td>
+      <td>(1:4,000) WB</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse</td>
+      <td>GE Healthcare</td>
+      <td>Cat. #NXA931 RRID:AB_772209</td>
+      <td>(1:4,000) WB</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal Probes Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #1725131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amaxa Cell Line Nucleofector Kit T</td>
+      <td>Lonza</td>
+      <td>Cat. #VCA-1002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Vector Laboratories</td>
+      <td>Cat. #H-1500 RRID:AB_2336788</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Actb probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4352932E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ATXN1 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. # 4331182 Hs00165656_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Calb1 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4331182 Mm00486647_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gapdh probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4352933E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ifitm3 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. # 4331182 Mm00847057_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ifr7 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4331182 Mm00516793_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Oasl2 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. # 4331182 Mm01201449_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stat1 probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. # 4331182 Mm01257286_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis (IPA) (Spring Release 2018)</td>
+      <td>http://www.ingenuity.com/products/pathways_analysis.html</td>
+      <td>RRID:SCR_008653</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIH DAVID v6.8</td>
+      <td>http://david.abcc.ncifcrf.gov/</td>
+      <td>RRID:SCR_001881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat v2.1.0</td>
+      <td>http://tophat.cbcb.umd.edu/</td>
+      <td>RRID:SCR_013035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cufflinks v2.2.1</td>
+      <td>http://cole-trapnell-lab.github.io/cufflinks/</td>
+      <td>RRID:SCR_014597</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 v2.1.0</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td>RRID:SCR_016368</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC v0.11.3</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cummerbund</td>
+      <td>http://compbio.mit.edu/cummeRbund/index.html</td>
+      <td>RRID:SCR_014568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor R with heatmap.2 gplots package</td>
+      <td>https://www.rdocumentation.org/packages/gplots/versions/3.0.1/topics/heatmap.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R project for statistical computing v3.3.3</td>
+      <td>http://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEME Suite - Motif-based sequence analysis tools</td>
+      <td>http://meme-suite.org/</td>
+      <td>RRID:SCR_001783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EnrichmentMap</td>
+      <td>http://baderlab.org/Software/EnrichmentMap</td>
+      <td>RRID:SCR_016052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape v3.5.1</td>
+      <td>http://cytoscape.org</td>
+      <td>RRID:SCR_003032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>http://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.net/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal care procedures were approved by the Yale University Institutional Animal Care and Use Committee. Mice were kept in a 12 hr light/dark cycle with standard chow and ad libitum access to water. Atxn1154Q/2Q KI mice were maintained on a pure C57BL/6J background, and the ATXN1-82Q Tg mice on a FVB/NJ background (Burright et al., 1995). For RNA-sequencing, males at 5 and 12 weeks of age were used. For immunohistochemistry and western blotting, a combination of males and females were used.
 
-## RNA extraction and RNA-sequencing
+### RNA extraction and RNA-sequencing
 
 Cerebella and inferior olive were dissected out, flash frozen in liquid nitrogen, and stored at −80°C until processing. For inferior olive, the brainstem was removed and the inferior olive dissected using the decussation of the pyramid and pons as a reference (Yu et al., 2014). The location of the dissection was verified under a dissection microscope before flash freezing. To eliminate variability in dissection, the same individual performed the macro-dissections of the cerebellum and inferior olive.
 
 RNA was extracted using the Qiagen RNeasy Mini Kit, and DNA was removed with DNase I as described in the manufacturer’s protocol. Total RNA was sent to the Yale Center for Genome Analysis for processing. RNA integrity was measured with capillary electrophoresis (Agilent BioAnalyzer 2100, Agilent Technologies) and RIN values were checked to ensure RNA integrity before proceeding with RNA-seq (Supplementary File 6). Libraries were generated using oligo-dT purification of poly-adenylated RNA, which was then reverse transcribed into cDNA that was fragmented, blunt ended, and ligated to adaptors. Base pair size was determined with capillary electrophoresis, and the library was quantified before pooling and sequencing on a HiSeq 2000 using a 75 bp paired-end read strategy. Sequencing data can be accessed under GEO accession # (GSE122099).
 
-## RNA-sequencing data analysis
+### RNA-sequencing data analysis
 
 TopHat2 v2.1.0 was utilized to align reads to the mouse reference genome (mm10) before quantification and differential expression analysis with cufflinks v2.2.1 (Kim et al., 2013a; Roberts et al., 2011; Trapnell et al., 2012; Trapnell et al., 2010). Cuffnorm was utilized for generating normalized expression values (Trapnell et al., 2010). Annotations with a FDR adjusted p-value (q < 0.05) were considered significant, and genes with less than 0.5 FPKM values in one biological group were not considered in the final analysis. For the 5 week Atxn1154Q/2Q KI cerebellum, a nominal p-value < 0.01 was used for analysis (Figure 3—figure supplements 3 and 4; Figure 4—figure supplement 1). Sample information and quality control was visualized using CummeRbund in R v3.3.3 (Goff et al., 2013). Enrichment analysis was conducted using NIH DAVID 6.8 using the GO_TERM FAT and KEGG annotations, with measurable genes detected in our RNA-sequencing experiments serving as the reference background (Huang et al., 2009a; Huang et al., 2009b). NIH DAVID functional annotation clustering parameters included a minimum of five initial group and final group membership, which preferentially produces larger group sizes. Cluster names on the bar graphs were named based on the most significantly enriched biological pathway in the cluster, unless otherwise specified. The rationale for using the FAT annotations was that it contains a filtered version of the GOTERM ALL category, which includes all GO annotations from level 1 (least specific) to level 5 (most specific). All enriched GO annotations with a FDR p-value cut-off of 0.05 and a minimum of 5 genes in each cluster were included in the analysis. For the 5 week old Atxn1154Q/2Q KI cerebellum, a nominal p-value < 0.01 was used for enrichment analysis cut-off (Figure 3—figure supplement 4D; Figure 4—figure supplement 1C). Networks were visualized using EnrichmentMap in Cytoscape v3.5.1 (Merico et al., 2010). GO annotations that did not relate to neuronal function (for example, terms related to muscle function), were excluded from the EnrichmentMap. Edge width corresponds with the correlation coefficient between nodes, and the similarity cutoff overlap coefficient was set to 0.8. This strict coefficient cutoff allowed for the formation of clusters of nodes with similar GO annotations. Qiagen’s Ingenuity Pathway Analysis (Spring Release 2018) was utilized to identify enriched canonical pathways predicated to be activated or inhibited. Benjamini-Hochberg adjusted p-values were used for identifying enriched pathways. For analyzing upstream regulators, the following parameters were utilized: an activation z-score of absolute value (2+), p-value overlap of 0.01, depth of 2 and breadth of 5, and only direct relationships were included. Heatmaps were generated using normalized read counts and the package ‘gplots’ in R v3.3.3. Prism v7 was used for generating barplots of RNA-seq read counts.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Mice were anesthetized before intracardial perfusion with phosphate buffer saline (PBS) and 4% paraformaldehyde (PFA). Brains were extracted and fixed overnight in 4% PFA before incubation in 20% and 30% sucrose gradient. Samples were frozen in OCT compound (VWR, 4583) and sliced in 30 µm sections on a cryostat. Sections were washed in PBS and PBS with 0.1% Triton-X before incubation in 5% normal goat serum (Jackson Labs 005-000-121) at room temperature. Primary antibody incubation was carried out at 4°C with the following antibodies: mouse anti-Calbindin, rabbit anti-Iba1, and chicken anti-Gfap. Sections were washed before incubation in secondary antibodies goat anti-mouse Alexa488, goat anti-rabbit Alexa568, and goat anti-chicken Alexa555. Sections were mounted and coverslipped with DAPI. Fluorescent images were scanned on a Zeiss LSM800 confocal microscope. Three brain slices were imaged and quantified for each mouse.
 
-## Cell counting and fluorescence intensity
+### Cell counting and fluorescence intensity
 
 ImageJ (National Institutes of Health) was used for all image processing. To measure the fluorescence intensity for Gfap-positive staining, the inferior olive was traced based on calbindin-positive staining, and the area in μm was measured and mean fluorescence intensity measured. To count the total number of Iba1-positive cells, ‘analyze particle’ was used and manually checked by a blinded individual to ensure Iba1-positive staining co-localized with DAPI.
 
-## Western blotting
+### Western blotting
 
 Inferior olive and cerebella were homogenized in buffer (0.5% NP-40, 0.5% Triton-X, 0.1% SDS, 20 mM Tris pH 8.0, 180 mM NaCl, 1 mM EDTA and Roche complete protease inhibitor cocktail). Samples were then sonicated to ensure breakdown of protein aggregates before rotation at 4°C for 10 min and centrifugation for 10 min at 13,000 rpm at 4°C. Supernatant was quantified using a BCA assay (ThermoFisher 23225) and protein from each sample was added to a 8% Tris-HCl gel for western blotting. For Atxn1154Q/2Q KI inferior olive and cerebellum, 70 μg and 20 μg of protein were added per lane, respectively. For ATXN1-82Q Tg inferior olive and cerebellum, 10 μg of protein was added per lane. Protein was transferred onto 0.42 μm nitrocellulose, and blotted with primary antibodies rabbit anti-Atxn1 11750 (a kind gift from Dr. Huda Zoghbi) (Servadio et al., 1995), and mouse anti-Gapdh. Nitrocellulose was washed before incubation in secondary anti-rabbit and anti-mouse, incubated in chemiluminescence substrate (Perkin Elmer NEL103E001) and developed on a Konica SRX-101A tabletop X-ray film processor. Images were quantified using ImageJ.
 
-## Cell culture
+### Cell culture
 
 Murine microglial BV2 cells were a kind gift of Dr. Katerina Akassoglou (Adams et al., 2007). Microglial BV2 cells were cultured in DMEM with 10% heat-inactivated FBS, and maintained at 37°C with 5% CO2. Cells were transfected with pcDNA3.1 and Flag-ATXN1-85Q constructs using an Amaxa Nucleofector (Lonza) and the Amaxa Cell Line Nucleofector Kit T (Lonza) according to manufacturer’s instructions. Cells were maintained post-nucleofection for 48 hr before RNA extraction using the Qiagen RNeasy Mini Kit and subsequent real-time quantitative reverse transcription polymerase chain reaction outlined below.
 
@@ -196,6 +945,6 @@ The microglia-like nature of BV2 cells was verified via immunostaining with Iba1
 
 Real-time quantitative reverse transcription polymerase chain reaction (RT-qPCR) cDNA was synthesized from 100 ng of total RNA from cell lines or mouse models using the iScript cDNA Synthesis Kit following the manufacturer’s protocol (Bio-Rad). Quantitative real-time PCR was run on a C1000 Thermal Cycler (Bio-Rad) using probes for ATXN1, Irf7, Ifitm3, Oasl2, Calb1, Actb, and Gapdh (Applied Biosystems). All samples were run in triplicate and normalized to the Gapdh and Actb expression values for ∆CT calculation and subsequent data analysis.
 
-## Data analysis
+### Data analysis
 
 For Gfap- and Iba1-positive fluorescence intensity and cell counting, fluorescence intensity or total cells counted were normalized to the total area measured to attain an intensity value or cell count value per 1 mm2, then normalized to control samples to obtain a percentage. Immunohistochemistry and western blotting data were analyzed using t-tests in Prism v7. For RT-qPCR, the Bio-Rad CFX Manager v3.1 was utilized for statistical analysis, and data were plotted in Prism v7.

@@ -29,55 +29,167 @@ We found that acute nigericin treatment followed by washout led to the formation
 
 ## Results
 
-## Short nigericin treatment induces enlarged endosomes that undergo Rab conversion
+### Short nigericin treatment induces enlarged endosomes that undergo Rab conversion
 
 Endosomes are highly dynamic and motile organelles and, given their small size and frequently indistinct and changing shape, are highly uncooperative to monitoring over extended periods of time by microscopy. The ability to follow dynamic events, such as Rab conversion, at individual endosome level is pivotal for unravelling the mechanisms of endosome maturation. Therefore, we sought a minimally invasive way to enlarge endosomes to make them more distinct and traceable over time. We discovered that a 20 min nigericin treatment of HeLa cells, stably expressing mApple-Rab5 and GFP-Rab7, followed by washout led to the formation of enlarged Rab5- and Rab7-positive endosomes (Figure 1A). Nigericin is an ionophore known to reversibly permeabilise membranes to protons and K+ ions. Indeed, the short nigericin treatment disrupted the intracellular pH gradient, which re-established within 20 min of washout as visualised by Lysotracker accumulation in treated cells (Figure 1B). The presence of the enlarged Rab5-positive endosomes was often transient but could also last for longer times, whereas enlarged Rab7-positive endosomes persisted until complete recovery of Rab5 and Rab7 morphology by 20 hr (Figure 1A). We hypothesised that the enlarged Rab5-positive early endosomes mature to Rab7-positive late endosomes. Therefore, we followed individual endosomes at 1 min intervals, starting from enlarged spherical compartments devoid of either Rab5 or Rab7, and we could indeed observe transient recruitment of Rab5 and its subsequent displacement by Rab7 (Figure 1C, Figure 1—video 1), consistent with previous descriptions of Rab conversion events (Del Conte-Zerial et al., 2008; Poteryaev et al., 2010; Skjeldal et al., 2021). These Rab conversion events could be initiated as early as 10 min after nigericin washout (Figure 1—figure supplement 1). Hence, acute nigericin treatment leads to enlarged compartments that are capable of recruiting Rab5 and undergoing Rab conversion.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig1-v1.jpg)
+
+**Figure 1.:** Nigericin was added to HeLa cells at 10 μM for 20 min and washed away, and cells were imaged by time-lapse microscopy. Recovery times are specified relative to removal of nigericin. (A,C,D) Cells stably expressing mApple-Rab5 and GFP-Rab7. (A) Images to show enlarged Rab5- (white arrows) and Rab7- (magenta arrows) positive compartments and return to normal morphology by 20 hr. (B) Lysotracker Red (LTR) was added to cells before, during and following nigericin treatment. Images show rapid re-accumulation of Lysotracker in treated cells (bottom row). Untreated cells were tracked in parallel (upper row). (C) The enlarged endosome was selected to show Rab5 recruitment, Rab conversion and endolysosomal maturation. (D) Example of homotypic fusion of two Rab5-positive endosome and subsequent Rab5 removal/weak Rab7 recruitment. (E) Cells stably expressing mApple-Rab7 were imaged in the presence of Lysotracker Green. An enlarged Rab7-positive endosome was selected to show accumulation of Lysotracker concomitant with the loss of spherical shape and a reduction in size of the maturing endolysome. (C–E) Scale bar = 2 μm. Time-lapse videos of the endosomes in (C–E) at 1 min interval are available in Figure 1—video 1, Figure 1—video 2, Figure 1—video 3, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Nigericin was added to HeLa cells, stably expressing mApple-Rab5 and GFP-Rab7 (A,B) or mApple-Rab5 alone (C), for 20 min and washed away, and cells were imaged by time-lapse microscopy. Recovery times are specified relative to removal of nigericin. (A) Example to show asynchronous nature of the transient Rab5-positive endosomes together with the closeup of a Rab5-positive endosome undergoing Rab conversion shortly after nigericin washout. (B) Example to show an enlarged compartment devoid of Rab5 fusing with Rab5-positive endosome to subsequently undergo Rab conversion. (C) Example to show an enlarged Rab5-positive endosome later acquiring Dextran-AF488, which had been pulse-chased into the endolysosomal pathway (4 hr pulse, 1.5 hr chase) prior to nigericin treatment. Recovery times are specified relative to removal of nigericin.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** HeLa cells stably expressing mApple-Rab5 and GFP-Rab7 were treated for 4 hr with ammonium chloride (A) or for 20 min with monensin (B), washed and imaged at specified times after the wash. Representative images of endosomes to show Rab conversion. Homotypic fusion of two Rab5-positive endosomes is evident in (B).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Cells were transiently transfected with mApple-Rab5 and GFP-Rab7, and treated 20 min with nigericin followed by recovery and time-lapse microscopy. (A) HEK293 cells, (B) Neuro2A cells, (C) Cos-1 cells. Images were selected to show Rab conversion in the enlarged endosomes.
 
 We frequently found that Rab5 recruitment was initiated after a Rab5-positive endocytic vesicle or endosome was touching or fusing with an enlarged compartment (Figure 1C; Figure 1—figure supplement 1B), suggesting either kiss-and-run or fusion with a Rab5-positive structure drove Rab5 recruitment. We also observed homotypic Rab5 endosomal fusions, a hallmark of early endosomes, indicating that the enlarged Rab5-positive structures behaved as bona fide early endosomes (Figure 1D, Figure 1—video 2). Following Rab conversion, the spherical Rab7-positive endosomes persisted over a range of several minutes to several hours and remained Lysotracker-negative, with lysosomes seen as Lysotracker-positive puncta circling around the endosomes (Figure 1E, Figure 1—video 3). Once the endosome acidified sufficiently to accumulate Lysotracker, it lost its spherical shape and became smaller until no longer detectable (Figure 1C and E, Figure 1—video 3), which we interpret as endolysosome-to-lysosome maturation. Fusion of the enlarged endosomes with Dextran-AF488-loaded lysosomes was apparent through accumulation of Dextran-AF488 in the enlarged endosomes (Figure 1—figure supplement 1C). Thus, acute nigericin treatment could induce the formation of large early endosomes, which could be observed to mature into late endosomes, and subsequently fuse with lysosomes and undergo endolysosome-to-lysosome maturation. This acute treatment may provide the basis of a powerful assay that could be employed to follow individual maturing endosomes.
 
 How common is this phenomenon of the enlarged endosome induction by acute pharmaceutical treatment? First, we checked whether acute treatment with another ionophore, monensin, or the weak base NH4Cl, which perturbs the pH gradient, would have a similar effect. Indeed, we observed transient Rab5 recruitment and the more extended Rab7 recruitment at the enlarged endosomes of NH4Cl pre-treated cells, and likewise, gradual Rab7 recruitment following acute monensin treatment (Figure 1—figure supplement 2). Therefore, interfering with ion homeostasis and membrane potential appear to solicit a similar stress response as nigericin, resulting in formation of enlarged endosomes. Second, we investigated whether this effect was cell line specific or more generally applicable. We tested the epithelial cell line HEK293, the fibroblast-like cell line COS1 and the neuronal line Neuro2A. In all three cell lines, we could observe enlarged endosomes that were either Rab5 or Rab7 positive (Figure 1—figure supplement 3). Therefore, enlarged endosome induction is not restricted to nigericin treatment of HeLa cells but rather is applicable to a wide range of experimental systems.
 
-## TGN membranes transition into endosomes after acute nigericin treatment
+### TGN membranes transition into endosomes after acute nigericin treatment
 
 Short nigericin treatment led to enlarged endosomes, however, they did not start out as Rab5-positive entities (Figure 1C). Therefore, we investigated the origin of the membranes for these compartments. Electron microscopy images revealed that the enlarged compartments originate at the trans face of the Golgi (Figure 2A), in line with previous reports of ionophore treatment leading to the swelling of the trans-Golgi leaflet (Ledger et al., 1980; Morré et al., 1983; Tartakoff and Vassalli, 1977). We ruled out contribution from the autophagy pathway by staining mApple-Rab7 expressing cells with LC3b antibody and showing no detectable autophagy induction or LC3b presence at the enlarged endosomes at 60 min post nigericin treatment (Figure 2—figure supplement 1A). To determine whether the swollen TGN membranes would enter the endosomal pathway, we performed immuno-electron microscopy with HeLa cells stably expressing trans-Golgi marker GalT-GFP after acute nigericin treatment. The micrographs demonstrate the presence of GalT in the enlarged trans-Golgi network (TGN) compartments and in ILVs of multivesicular bodies at later time points (Figure 2B). Therefore, the membranes that acquire Rab5 and convert to Rab7-positive endosomes are probably derived from the TGN. This swelling of the TGN is likely a transient response to the acute stress because after 48 hr the Golgi had recovered from the treatment (Figure 2C). Consistent with this notion, we occasionally observed swollen Golgi leaflets also in untreated cells signifying a process that occurs naturally in the cell, which we are uniquely amplifying with acute perturbation (Figure 2A). Indeed, the cells continued to grow and divide (Figure 2—figure supplement 1B), and after an initial slow start, the nigericin-treated cells recover their doubling rate within 24 hr (Figure 2—figure supplement 1C). In line with previous reports (Merion and Sly, 1983; Vladutiu, 1984), our findings indicate that short nigericin treatment induces reversible changes and has minimal impact on cell health.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig2-v1.jpg)
+
+**Figure 2.:** Nigericin was added to HeLa cells for 20 min and washed away, and cells were processed for electron microscopy (A–C), imaged by time-lapse microscopy (D) or harvested for counting (E) at specified times after the wash. (A) Cells stained with osmium tetroxide and potassium hexacyanoferrate reveal large spherical compartments (cyan arrows) originating at the trans-face of the Golgi (magenta arrows) in nigericin-treated cells and, occasionally, in untreated cells. (B,C) Cells stably expressing GalT-GFP were stained with anti-GFP and 12 nM Gold-conjugated secondary antibody to reveal GalT-GFP at the Golgi (magenta arrows), the limiting membrane of the enlarged compartments (cyan arrows) as well as in ILVs of the enlarged MVBs at later time points (yellow arrows).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Images of cells stained with LC3b antibody to show absence of autophagy induction or presence of LC3B at the enlarged endosomes of nigericin-treated cells. Bafilomycin-treated cells are shown here as positive control. (B) Images to show cells dividing shortly after nigericin treatment, with recovery times specified. Scale bar = 10 μm. (C) Cells were plated in 12-well plates at 104 cells per well 24 hr prior to nigericin treatment, trypsinised and counted at specified recovery times. Triplicate wells were counted per time point per condition. Actual cells numbers and doubling times are presented. Representative graph of three independent experiments. Source data is available in Figure 2—figure supplement 1—source data 1. (D) Images to reveal extensive formation of GalT-positive enlarged compartments upon either treatment following 2 hr recovery. (E) Images to show Golgi vesiculation and return to ribbon morphology within 48 hr of recovery from nigericin treatment.
+
 To corroborate our results, we monitored HeLa cells stably expressing GalT-GFP by fluorescence microscopy following acute nigericin treatment. Even in cells without nigericin treatment, a portion of GalT-GFP entered the endosomal pathway, as it was present in Rab5 positive vesicles (Figure 3A). Following nigericin treatment, Golgi vesiculation was observed within 15 min of nigericin washout (Figure 3B, Figure 3—video 1). We observed similar Golgi vesiculation when we used monensin as ionophore (Figure 2—figure supplement 1D). A large fraction of these vesicles would adopt early endosomal identity because individual GalT-positive structures acquired Rab5 over time (Figure 3B), as also observed by immuno-electron microscopy (Figure 3C). Moreover, similar to the transiently transfected GalT-GFP, endogenous GalT persisted in the endosomes (Figure 3D), consistent with the observations of its subsequent internalisation into ILVs (Figure 2B and 11D), and Golgi morphology was fully recovered within 48 hr (Figure 2—figure supplement 1E). The contribution of cargo from the endocytic pathway to the enlarged compartments was evidenced by the addition of Dextran-AF488 for 20 min to the cell medium of nigericin-treated cells and its detection in the Rab5-positive enlarged endosomes already within 8 min of Dextran-AF488 washout (Figure 3—figure supplement 1). These Rab5-positive, Dextran-containing endosomes can also undergo Rab conversion and acquire Rab7, retaining the Dextran as they mature to endolysosomes (Figure 3—figure supplement 1B). Moreover, to demonstrate that the enlarged Rab5-positive endosomes can also acquire plasma membrane cargo, we labeled surface Transferrin receptor (TfR-GFP) with mCherry-tagged anti-GFP nanobody and found that it could reach BFP-Rab5 positive enlarged endosomes (Figure 3—figure supplement 2). Taken together, our findings suggest that acute nigericin treatment leads to enlarged Golgi-derived compartments that are able to acquire early endosomal identity, take up endocytic cargo and mature into late endosomes. Thereby, acute nigericin treatment provides us with a means to generate functionally competent enlarged endosomes that can be monitored at individual endosome level by widefield microscopy over extended periods of time to define the kinetics of a wide range of mediators of endosome maturation.
 
-## Rab conversion occurs with anticipated kinetics on enlarged endosomes
+![Figure 3.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig3-v1.jpg)
+
+**Figure 3.:** (A) Images of untreated HeLa cells stably expressing mApple-Rab5 and transiently expressing GalT-GFP. Arrows point to puncta positive for both markers. (B–D) Nigericin was added to HeLa cells for 20 min and washed away, and cells were imaged by time-lapse microscopy (B), processed for electron microscopy (C) or for immunofluorescence (D) at specified times after the wash. (B,C) HeLa cells stably expressing GalT-GFP and transiently transfected with mApple-Rab5. (B) Representative kinetic of Golgi vesiculation post nigericin treatment as visualised with GalT-GFP. The selected vesiculated compartment (arrow), initially negative for Rab5 subsequently becomes positive for both markers. A time-lapse video of the endosome at 2 min interval is available in Figure 3—video 1. (C) Immuno-EM image of a cell at 2 hr post recovery, with 12 nm Gold-labelled GFP (green arrows) and 5 nm Gold-labelled mApple (red arrows) present at the enlarged compartments. Scale bar = 500 nm. (D) Images of cells stained with anti-GalT to reveal endogenous GalT presence at the enlarged compartments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) HeLa cells stably expressing mApple-Rab5 were treated with nigericin, washed and 60 min later treated with 2.5 mg/mL Dextran-AF488 for 20 min. Cells were imaged at indicated times after washing away the Dextran. Images of a representative cell with one Rab5-negative and two of three Rab5-positive enlarged compartments containing endocytosed Dextran. (B) HeLa cells stably expressing mApple-Rab5 and GFP-Rab7 were treated with nigericin, washed and 75 min later treated with 1 mg/mL Dextran-AF647 for 20 min. Cells were imaged at indicated times after washing away the Dextran. Kinetic to show fusion of a Rab5-negative enlarged compartment devoid of Dextran with a large Rab5-positive endosome containing endocytosed Dextran, and the resulting enlarged early endosome acquiring further Dextran, undergoing Rab conversion and maturing into an endolysosome still containing the Dextran.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** HeLa cells transiently transfected with mTagBFP2-Rab5 and TfR-EGFP were treated with nigericin and washed, with mCherry- anti-GFP nanobody added 110 min later to label surface TfR. Times are relative to nanobody addition. (A) Kinetic to show uptake of nanobody, and concomitant acquisition of Rab5 and surface-derived TfR by the endosome. (B) Kinetic to show a Rab5- and surface-derived TfR-positive endosome fuse with the enlarged compartment (arrows) to form an enlarged endosome positive for both markers.
+
+### Rab conversion occurs with anticipated kinetics on enlarged endosomes
 
 Having established a novel assay to study endosome maturation, we used it first to revisit the kinetics of Rab conversion. The formation of enlarged early endosomes was asynchronous and therefore we imaged over several hours without significant loss of fluorescence signal. We captured many events of Rab conversion for further analysis and signal quantification. Endosomes that were initially negative for Rab5 and acquired Rab5 during the time course were chosen for analysis. For quantification purposes, we measured the mean fluorescence intensity of the rim of the enlarged endosome at all time points when the endosome was detectable (Figure 4A). Following transient Rab5 recruitment, all selected endosomes underwent Rab conversion. Initially, Rab5 was recruited uniformly to the rim of the endosome, but could segregate also into distinct domains, before becoming completely displaced by Rab7 (Figure 4B, Figure 4—figure supplement 1). Consistent with previous findings, Rab5 levels dropped when Rab7 reached about 50 % of its maximal level (Figure 4B–D; Del Conte-Zerial et al., 2008; Poteryaev et al., 2010; van der Schaar et al., 2008). Moreover, Rab conversion was completed within 4 min after its initiation, which is similar to previously reported observations (Del Conte-Zerial et al., 2008; Poteryaev et al., 2010; Rink et al., 2005). Once Rab5 was fully removed, Rab7 plateaued off showing stable presence at the late endosome (Figure 4D; Figure 4—figure supplement 1B). Occasionally, Rab5 produced multiple peaks, with Rab7 plateauing off after the latest Rab5 peak (Figure 4—figure supplement 1C and D). Such Rab5 behavior may indicate the reversible nature of endosome maturation and existence of checkpoints to ensure alignment of parallel processes. Our results closely agree with Rab conversion kinetics in other systems and further refine Rab conversion kinetics in human cells. Empowered by this strict sequential kinetics of Rab5 and Rab7 in maturing endosomes, we next explored the kinetics of other mediators of endosome maturation relative to either Rab5 or Rab7 recruitment, using the maximum peak of Rab5 or the 50 % of the maximal fluorescence intensity of Rab7 as reference point for Rab conversion.
 
-## PI(3)P levels peak concomitantly with Rab5 levels
+![Figure 4.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scheme to show experimental flow, starting with transfection of cells of choice with selected markers, followed by short nigericin treatment, and time-lapse microscopy during the recovery phase, with subsequent quantification of mean fluorescence intensity (MFI) of the chosen markers at the rim of the enlarged endosomes, and the resulting kinetic plots of background-subtracted MFI normalised for maximum and minimum values over the entire time course of the endosome. Since endosome maturation is asynchronous, relative time is calculated by using Rab5 peak as a reference for Rab conversion and set to t = 0. The plot shown in the scheme represents the kinetic of the images in Figure 1C (marker one as Rab5 and marker two as Rab7).(B,C,D) HeLa cells, stably expressing mApple-Rab5 and GFP-Rab7 were treated for 20 min with nigericin, washed and imaged over a 3 hr period.(B) Time-lapse images of a representative endosome to show transient Rab5 recruitment and its subsequent displacement by Rab7. (C) Corresponding graph of MFI of Rab5 and Rab7 at the rim of the endosome in (B) during and around the time of Rab conversion. Numerical data for all analyzed endosomes is available in Figure 4—source data 1. (D) Averaged Rab5 and Rab7 kinetics of 27 endosomes. Error bars represent standard deviation. Representative graph of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** HeLa cells, stably expressing mApple-Rab5 and GFP-Rab7 were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A) Time-lapse images of an endosome displaying formation of Rab5 subdomains. (B) Averaged Rab5 and Rab7 kinetics of 21 endosomes. Error bars represent standard deviation. Representative graph of three independent experiments. (C–D) Time-lapse images (C) and a corresponding fluorescence quantification plot (D) of an endosome with multiple waves of Rab5 recruitment and a continuous increase in Rab7 levels.
+
+### PI(3)P levels peak concomitantly with Rab5 levels
 
 Driving early endosome identity, Rab5 recruits the PI(3)P kinase VPS34 and forms a positive feedback loop with PI(3)P (Zerial and McBride, 2001). Coincidence detection of PI(3)P levels and the Rab5GEF Rabex5 by the Rab7 GEF Mon1/CCZ1 was proposed to drive Rab conversion and endosome maturation (Poteryaev et al., 2010) and subsequently trigger the formation of PI(3,5)P2 (Compton et al., 2016; Dove et al., 2009). We analyzed cells expressing mApple-Rab5 and the PI(3)P marker GFP-2xFYVE, which reports on PI(3)P formation. As expected, Rab5 and GFP-FYVE appeared concomitantly on enlarged early endosomes (Figure 5; Figure 5—video 1). However, after Rab5 peaked, we observed a slight delay in the disappearance of GFP-FYVE (Figure 5B and C; Figure 5—figure supplement 1), suggesting that the onset of PI(3)P conversion to either PI or PI(3,5)P2 occurs with some delay. Nevertheless, our data are consistent with a tight temporal and spatial regulation of PI(3)P levels on endosomes during maturation.
 
-## Snx1 recruitment is initiated with Rab5 recruitment and can persist during Rab7 stages
+![Figure 5.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig5-v1.jpg)
+
+**Figure 5.:** HeLa cells, stably expressing mApple-Rab5 and transiently transfected with the PI(3)P marker, GFP-FYVE, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A) Time-lapse images of a representative endosome to show transient Rab5 recruitment accompanied by PI(3)P. A time-lapse video of the endosome at 1 min interval is available in Figure 5—video 1. (B) Corresponding graph of normalised mean fluorescence intensity of Rab5 and FYVE at the rim of the endosome in (A) over the time the endosome was detectable. (C) Averaged Rab5 and PI(3)P kinetics of 19 endosomes. Error bars represent standard deviation. Representative graph of three independent experiments. Numerical data for all analyzed endosomes is available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** HeLa cells, stably expressing mApple-Rab5 and transiently transfected with the PI(3)P marker, GFP-FYVE, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A) Time-lapse images of a representative endosome to show transient Rab5 recruitment accompanied by PI(3)P. (B) Corresponding graph of normalised mean fluorescence intensity of Rab5 and FYVE at the rim of the endosome in (A) over the time the endosome was detectable. (C) Averaged Rab5 and PI(3)P kinetics of 16 endosomes. Error bars represent standard deviation. (D) Averaged Rab5 and PI(3)P kinetics of 15 endosomes. Error bars represent standard deviation. (C) and (D) represent two independent experiments of a total of three.
+
+### Snx1 recruitment is initiated with Rab5 recruitment and can persist during Rab7 stages
 
 A major property of endosomes is their ability to undergo extensive sorting, to recycle components back to the cell surface and to the Golgi and to internalise membrane cargo destined for ILV-mediated degradation. Our electron microscopy data provides evidence that the nigericin-induced enlarged endosomes are capable of ILV formation and internalisation of the GalT marker (Figure 2B). Additionally, the presence of Snx1-GFP in transient punctate microdomains or tubular protrusions at the enlarged endosomes suggests active sorting from the endosome to the plasma membrane and the Golgi (Figure 6A). To determine whether the Snx1-mediated sorting is coordinated with Rab conversion, we analyzed cells co-expressing Snx1-GFP and mApple-Rab5 (Figure 6A), and recorded the presence of Snx1 at the enlarged endosomes as they acquired and removed Rab5. Snx1 assembly on endosomes occurred concomitantly with Rab5 recruitment (Figure 6A–C; Figure 6—video 1; Figure 6—figure supplement 1 A and B), pointing to a potential coordination. Snx1 assembly at the endosomes was highly dynamic, forming one or multiple domains at a time (Figure 6—figure supplement 1 C). We observed weak correlation of Snx1 and Rab5 localization in discrete domains on early endosomes (Figure 6D and E). Moreover, Snx1 levels either declined during Rab conversion or persisted for a while. Our data indicate that Snx1 recruitment on early endosomes occurs simultaneously with Rab5, but that Snx1 microdomains could either co-exist with or exist independently of Rab5 (Cezanne et al., 2020; Gullapalli et al., 2004; Mari et al., 2008; Simonetti et al., 2017; Spang, 2021). This suggests that although Rab5 may promote Snx1 recruitment, presumably through PI3P (Zhong et al., 2005), it is not essential for its maintenance or dynamics at endosomes.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig6-v1.jpg)
+
+**Figure 6.:** HeLa cells, stably expressing mApple-Rab5 and transiently transfected with Snx1-GFP, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A) Time-lapse images of a representative endosome to show Snx1 subdomain formation relative to Rab5 recruitment. A time-lapse video of the endosome at 1 min interval is available in Figure 6—video 1. (B) Corresponding graph of normalised mean fluorescence intensity (MFI) of Rab5 and Snx1 at the rim of the endosome in (A) over the time the endosome was detectable. (C) Averaged Rab5 and Snx1 kinetics of 12 endosomes. Error bars represent standard deviation. Representative graph of three independent experiments. Numerical data for all analyzed endosomes is available in Figure 6—source data 1. (D) Images of Rab5 and Snx1 at an enlarged endosome and a corresponding line profile of normalised fluorescence intensity along the rim to show co-existence as well as independence of subdomains of the two markers. Scale bar = 2 μm. (E) Correlation plot of normalised fluorescence intensity of Rab5 and Snx1 as measured in (D) for 14 endosomes for a total of 118 time points, and a corresponding regression line. Pearson’s correlation r = 0.43. Pooled data from two independent experiments. Numerical data for all analyzed endosomes is available in Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Nigericin was added to HeLa cells for 20 min and washed away, and cells were imaged by time-lapse microscopy, as described in Figure 4A. (A–E) Cells stably expressing mApple-Rab5 (A–C) or mApple-Rab7 (D–E) and transiently transfected with the Snx1-GFP. (A) Example graph of normalised mean fluorescence intensity (MFI) of Rab5 and Snx1 at the rim of the endosome over the time the endosome was detectable. (B) Averaged Rab5 and Snx1 kinetics of 14 endosomes. Error bars represent standard deviation. Representative graph of three independent experiments. Numerical data for all quantified endosomes is available in Figure 6—source data 1. (C) Images and corresponding line profiles of normalised fluorescence intensity of Rab5 and Snx1 along the rim of the maturing endosome at consecutive time points. Rab5 was adjusted for a single maximum and minimum values during the recorded kinetic to highlight its overall signal increase. Snx1 was adjusted for max and min values for each time point to highlight the dynamic nature of Snx1 subdomains. Scale bar = 2 μm. Numerical data for all quantified endosomes is available in Figure 6—figure supplement 1—source data 1. (D) Images of Rab7 and Snx1 at an enlarged endosome and a corresponding line profile of normalised fluorescence intensity along the rim to show co-existence as well as independence of subdomains of the two markers. Scale bar = 1 μm. (E) Correlation plot of normalised fluorescence intensity of Rab7 and Snx1 as measured in (E) for three endosomes for a total of 96 time points, and a corresponding regression line. Pearson’s correlation r = 0.43. Numerical data for all quantified endosomes is available in Figure 6—figure supplement 1—source data 2.
+
 To corroborate the apparent lack of strict coordination between Rab5 removal and Snx1 persistence at the endosomes, we co-expressed Snx1-GFP and mApple-Rab7 (Figure 7A, Figure 7—video 1). Consistent with Snx1 presence during the Rab5 phase, Snx1 recruitment peaked during early stages of Rab7 recruitment, when the endosome is expected to be Rab5-positive (Figure 7B–D). In about one third of all Rab7-positive endosomes analysed, Snx1 recruitment was transient and was no longer present after Rab7 peaked or levelled off to indicate completed Rab conversion (Figure 7B and E). In another third of analysed endosomes, Snx1 initially displayed the same kinetics, but was recruited back again to the late Rab7-positive endosome (Figure 7C and F), suggesting that Rab5 may be dispensable for Snx1 recruitment to late endosomes. In the remaining subset of endosomes, Snx1 peaked and persisted throughout endosome maturation (Figure 7D and G). Since the back-recruitment of Snx1 to the Rab7-positive endosomes occurred at asynchronous times after Rab conversion, the dip in the Snx1 signal is lost during averaging (compare Figure 7C with D and F with G) and highlights the utility of this assay for its ability to track individual endosomes to collect information that might otherwise be undetectable. Analysis of Rab7 and Snx1 domains at the endosome again revealed weak correlation of Rab7 and Snx1 domains (Figure 6—figure supplement 1D and E). Taken together, our data suggest that sorting into recycling pathways is most likely initiated very early on endosomes but can also persist on late endosomes, indicating a continuous process independent of Rab conversion.
 
-## Interaction of early and late endosomes with Rab11 proceeds independently of Rab5 or Rab7
+![Figure 7.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig7-v1.jpg)
+
+**Figure 7.:** HeLa cells, stably expressing mApple-Rab7 and transiently transfected with Snx1-GFP, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A) Time-lapse images of a representative endosome to show Snx1 subdomain formation relative to Rab7 recruitment. A time-lapse video of the endosome at 1 min interval is available in Figure 7—video 1. (B) Corresponding graph of MFI of Rab7 and Snx1 at the rim of the endosome in (A) over the time the endosome was detectable, to show Snx1 peaking during Rab conversion. (C,D) Additional graphs of MFI of Rab7 and Snx1 at the rim of endosomes to show the second Snx1 peak (C) or continuing Snx1 presence (D). (E,F,G) Averaged Rab7 and Snx1 kinetics binned into the three patterns of Snx1 recruitment as observed in (B,C,D), representing 19, 21, and 20 endosomes for the single peak, double peak and continuing presence of Snx1, respectively. Error bars represent standard deviation. Three independent experiments were performed, and data pooled. Numerical data for all analyzed endosomes is available in Figure 7—source data 1.
+
+### Interaction of early and late endosomes with Rab11 proceeds independently of Rab5 or Rab7
 
 To further support our hypothesis that sorting can occur continuously from early to late endosomes, we examined the behaviour of a key component of the recycling pathway to the plasma membrane, Rab11. If our hypothesis were correct, we would expect Rab11 to show a similar behaviour as Snx1. Therefore, we investigated the dynamics of GFP-Rab11 in relation to Rab5 or Rab7-positive endosomes. Rab11 docks on the tubular part of maturing/sorting endosomes and promotes the recycling of cargo to the plasma membrane (Solinger et al., 2020; van Weering et al., 2012). Surprisingly, Rab11-positive vesicles contacted early endosomes even before strong Rab5 recruitment (Figure 8A–C; Figure 8—video 1; Figure 8—video 2). Rab11 vesicles also contacted Rab5-positive endosomes. This contact between Rab11 vesicles and enlarged endosomes was not incidental because Rab11 vesicles probed and sometimes circled around the enlarged endosomes for various times before, during, and after Rab5 recruitment (Figure 8A, Figure 8—videos 2 and 3), almost reminiscent to the kiss-and-run of Rab11 endosomes on sorting endosomes (Solinger et al., 2020). The Rab11 domains on Rab5 endosomes appeared to be independent of each other (Figure 8D; Figure 8—figure supplement 1A and B). Moreover, Rab11 interaction with endosomes appeared not only to be independent of Rab5 but also of Rab7, or Rab conversion as it continued throughout endosome maturation (Figure 8E–H; Figure 8—video 4; Figure 8—figure supplement 1C). Thus, our data indicate that, similar to sorting, Rab11 recruitment to endosomes appears to be largely decoupled from Rab conversion.
 
-## Cargo is selectively recycled from enlarged endosomes
+![Figure 8.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig8-v1.jpg)
+
+**Figure 8.:** HeLa cells, stably expressing mApple-Rab5 (A–D) or mApple-Rab7 (E–H) and transiently transfected with GFP-Rab11, were treated for 20 min with nigericin, washed and imaged over 3 h, as described in Figure 4A. (A,E) Time-lapse images of a representative endosome to show continuous Rab11 interaction with the maturing endosome relative to Rab5 (A) or Rab7 (E) recruitment. Time-lapse videos of the endosomes in (A,E) at 1 min interval are available in Figure 8—videos 1 and 4. Additional videos of endosomes at 2 s interval to show Rab11 circling around the enlarged Rab5 positive compartments are available in Figure 8—videos 2 and 3. (B,F) Corresponding graphs of normalised mean fluorescence intensity of Rab5 (B) or Rab7 (F) and Rab11 at the rim of the endosome in (A) or (E), respectively, over the time the endosome was detectable. (C,G) Averaged Rab5 (C) or Rab7 (G) and Snx1 kinetics of 16 and 15 endosomes, respectively. Error bars represent standard deviation. Representative graphs each of three independent experiments. Numerical data for all analyzed endosomes is available in Figure 8—source data 1 and Figure 8—source data 3. (D,H) Images of Rab5 (D) or Rab7 (H) and Rab11 at an enlarged endosome and corresponding line profiles of normalized fluorescence intensity along the rim to show co-existence as well as independence of subdomains of Rab11 and the two markers. Scale bar = 2 μm. Numerical data for analyzed endosomes is available in Figure 8—source data 2 and Figure 8—source data 4.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** HeLa cells, stably expressing mApple-Rab5 (A,B) or mApple-Rab7 (C) and transiently transfected with GFP-Rab11, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A,C) Images and corresponding line profiles of normalised fluorescence intensity of Rab5 (A) or Rab7 (C) and Rab11 along the rim of the maturing endosome at consecutive time points. Rab5/Rab7 was adjusted for a single maximum and minimum values during the recorded kinetic to highlight its overall signal increase. Rab11 was adjusted for maximum and minimum values for each time point to highlight the dynamic nature of Rab11 interactions with the maturing endosome. Scale bar = 2 μm. (B) Correlation plot of normalised fluorescence intensity of Rab5 and Rab11 as measured in Figure 8D for 14 endosomes for a total of 193 time points, and a corresponding regression line. Pearson’s correlation r = 0.28. Numerical data for all analysed endosomes is available in Figure 8—figure supplement 1—source data 1 and 2.
+
+### Cargo is selectively recycled from enlarged endosomes
 
 The ability of the enlarged endosomes to recruit mediators of recycling, Snx1 and Rab11 vesicles, suggests that our assay can recapitulate recycling pathways. To further probe this possibility, we monitored the fate of three cargoes: TfR-GFP for recycling to the plasma membrane, cation-dependent mannose-6-phosphate receptor (GFP-CDMPR) for recycling to the TGN and GalT-GFP, which we have shown above to remain in the endosome to be transported to the lysosome. All three cargoes were observed on Rab5-positive endosomes (Figure 9; Figure 9—figure supplement 1). While the levels of the recycling cargoes TfR-GFP and GFP-CDMPR promptly decreased at the maturing enlarged endosomes, GalT-GFP levels remained almost constant (Figure 9; Figure 9—videos 1–3). We cannot exclude that some of the GalT-GFP is recycled to the TGN and that some GalT-GFP arrives from the TGN to the enlarged endosomes. Nevertheless, the GalT-GFP kinetics are very distinct to that of CDMPR, which is removed from the endosomes shortly before or during Rab5 recruitment (Figure 9E and H). Additionally, we also observed CDMPR recruitment to the enlarged endosomes, suggesting that both retrograde and anterograde pathways are functional in these endosomes (Figure 9—figure supplement 1). Of note, TfR kinetics were unique in revealing the transient TfR acquisition at the enlarged Rab5-positive endosomes, reflecting the observations that the majority of TfR arrives to the endosome from the plasma membrane (Figure 3—figure supplement 2). This is followed by removal, and presumed recycling back to the plasma membrane, of the TfR from the endosome at the time of Rab conversion (Figure 9D and G). The unique patterns of the three cargoes at the enlarged endosomes indicate that it might be possible to probe distinct cargo transport properties with our assay. Taken together, our data provide strong evidence that the enlarged endosomes are capable of receiving cargo from the plasma membrane and the TGN and can promptly remove it for recycling back to their respective origins.
 
-## GalT-pHlemon is a reliable reporter for pH measurements along the endocytic pathway
+![Figure 9.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig9-v1.jpg)
+
+**Figure 9.:** HeLa cells, stably expressing mApple-Rab5 and transiently transfected with the cargos TfR-GFP (A,D,G), GFP-CDMPR (B,E,H) or GalT-GFP (C,F,I), were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A–C) Time-lapse images of representative endosomes to show cargo acquisition and removal relative to Rab5 recruitment. Time-lapse videos of the endosomes in (A,D,G) at 1 min interval are available in Figure 9—video 1, Figure 9—video 2, and Figure 9—video 3, respectively. (D–F) Corresponding graphs of MFI of Rab5 and specified cargo at the endosome in (A,B,C), respectively, over the time the endosome was detectable, to show prompt removal of TfR and CDMPR, and GalT remaining unchanged. (G–I) Averaged Rab5 and specified cargo acquisition and removal, representing 24, 24, and 17 endosomes, respectively. Error bars represent standard deviation. Three independent experiments were performed. Numerical data for all analyzed endosomes is available in Figure 9—source data 1, Figure 9—source data 2, and Figure 9—source data 3.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** HeLa cells, stably expressing mApple-Rab5 and transiently transfected with CDMPR-GFP, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. Time-lapse images of a representative endosome to show CDMPR acquisition at Rab5-positive enlarged endosome.
+
+### GalT-pHlemon is a reliable reporter for pH measurements along the endocytic pathway
 
 Both, Rab conversion and acidification are essential for endosome maturation but how the two are coordinated is poorly understood. To follow endosomal acidification at individual endosome level, we have tested several available endosomal pH sensors, such as mApple-Lamp1-pHluorin and NHE6-pHluorin2 (Ma et al., 2017); however, we found that these sensors were predominantly retained in the ER following transient transfection in our system. We exchanged the pHluorin tag on Lamp1 and NHE6 with the recently developed pH-responsive ratiometric probe, pHlemon (Burgstaller et al., 2019), but this did not improve the export from the ER. Therefore, we replaced the GFP of the GalT-GFP construct with pHlemon. Since GalT was present at the Golgi-derived enlarged compartments, and later in Rab5-positive endosomes and ILVs (Figures 2B and 3B–C), we hypothesised that the sensor anchored to GalT will illuminate the entire endosome maturation pathway, from early endosomes to endolysosomes. The pHlemon probe consists of yellow and mTurquoise2 fluorescent proteins in tandem, with eYFP reducing and mTurquoise2 slightly increasing fluorescence upon acidification in a reversible manner (Burgstaller et al., 2019). Untreated cells expressing the GalT-pHlemon sensor displayed a characteristic Golgi-ribbon appearance in both YFP and CFP channels as well as punctate appearance of CFP signal alone, indicative of highly acidified lysosomes or endolysosomes (Figure 10A). To confirm the identity of the CFP puncta, we labelled GalT-pHlemon expressing cells with lysotracker. When we detected signal only in the CFP but not in the YFP channel, those structures were mostly positive for lysotracker (Figure 10B). Thus, a fraction of GalT-pHlemon might enter the endosomal degradation pathway even under normal growth conditions. Indeed, in mApple-Rab5-expressing cells, we occasionally observed GalT-pHemon in Rab5-positive endosomes, suggesting the transient GalT-pHlemon trafficking through early endosomes to lysotracker-positive endolysosomes and lysosomes (Figure 10C). We could reliably detect YFP/CFP ratios over the pH 4.0–7.5 range (Figure 10D, Figure 10—figure supplement 1A), allowing for accurate pH measurements of the entire endolysosomal pathway. Our sensor designated pH 6.2 for the Golgi-ribbon structures and pH 4.0–5.7 for the lysosomes and endolysosomes, as detected by the CFP puncta, in untreated cells (Figure 10E). Most importantly, our sensor located to the nigericin-induced enlarged endosomes and indicated a pH range between 5.5 and 6.6 at 50 min washout, reflective of the different stages of maturation (Figure 10E and F, Figure 10—video 1). Therefore, GalT-pHlemon is a useful tool to read-out pH in the endosomal system. The enlarged endosomes indeed undergo fusion with lysosomes, as visualized by the CFP puncta circling around the enlarged endosome and passing the entire CFP content to it (Figure 10—figure supplement 1B; Figure 10—video 2). The resulting endolysosomes shrink over time and increase in CFP signal intensity as they are anticipated to regenerate the lysosome. This makes the GalT-pHlemon sensor particularly useful for illuminating the entire endolysosomal pathway and monitoring its pH.
 
-## Endosomal acidification is most pronounced during Rab conversion
+![Figure 10.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig10-v1.jpg)
+
+**Figure 10.:** HeLa cells were transiently transfected with the ratiometric pH sensor, GalT-pHlemon. (C,F) Cells were stably expressing mApple-Rab5. (B) Cells were incubated with Lysotracker Red (LTR) for 20 min prior to imaging. (A) Images of a representative cell to show Golgi-ribbon distribution of GalT-pHlemon in both YFP and CFP channels as well as cytosolic CFP-filled puncta in CFP channel only, representing highly acidified organelles. (B,C) Images to show CFP puncta mostly positive for LTR (B, arrows) and occasionally positive for Rab5 (C, arrows). (D) Graph to show robust response of GalT-pHlemon sensor to pH 4.5–7.0 range as displayed by YFP/CFP ratio measurements in cells incubated with calibration buffers of specified pH values. Numerical data for all analysed Golgi ROIs is available in Figure 10—source data 1. (E) YFP/CFP measurements of GalT-pHlemon in the Golgi ribbon, endo-/lysosomes (cytosolic CFP puncta), as well as in the enlarged endosomes post 20 min nigericin treatment and 100 min recovery. Numerical data for all analysed organelle ROIs is available in Figure 10—source data 2. (F) Cells were treated with nigericin, washed and imaged over 3 hr. Images show GalT-pHlemon sensor localising to the enlarged transiently Rab5-positive endosome and changing YFP and CFP intensity consistent with endosomal acidification. A time-lapse video of the endosome at 1 min interval is available in Figure 10—video 1.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** HeLa cells were transiently transfected with the ratiometric pH sensor, GalT-pHlemon. (A) Graph to show response of GalT-pHlemon sensor to pH 4.0–9.0 range as displayed by YFP/CFP ratio measurements in cells incubated with calibration buffers of specified pH values as well as the interpolation of sigmoidal dose-response curve. Numerical data for all quantified Golgi ROIs is available in Figure 10—figure supplement 1—source data 1. (B) Cells were treated with nigericin, washed and imaged over 3 hr. Time-lapse images show CFP-filled puncta fuse with the enlarged compartments, which shrink over time to re-obtain near-punctate morphology. A time-lapse video of the endosome at 1 min interval is available in Figure 10—video 1.
+
+### Endosomal acidification is most pronounced during Rab conversion
 
 Equipped with a sensor locating to endosomes and responding to endosomal pH changes, we investigated the kinetics of endosomal acidification relative to Rab5 and Rab7 recruitment, using cells transiently transfected with mApple-Rab5 and GalT-pHlemon, as well as cells stably expressing mApple-Rab7 and transiently transfected with GalT-pHlemon. The nigericin-induced enlarged endosomes showed a dramatic decrease in YFP signal, which always coincided with Rab5-positive stages of endosome maturation (Figure 11A–C, Figure 11—video 1) and with early phases of Rab7 recruitment (Figure 11D–F, Figure 11—video 2). Ratiometric quantifications of intraluminal YFP and CFP signals revealed relatively stable YFP/CFP ratio prior to Rab5 recruitment, followed by a sharp decrease during Rab5 recruitment and Rab conversion, and stabilisation of a new, lower YFP/CFP ratio in Rab7-positive endosomes (Figure 11B, C, E and F). Conversion of YFP/CFP ratios to pH values indicates an average pH of 6.6 in early endosomes prior to Rab5 recruitment and a final pH of 5.7 in Rab7 endosomes. Our data indicate that the biggest pH drop occurs concomitantly with the recruitment of Rab7, pointing to a regulation of acidification during endosome maturation.
 
-## Impaired Rab conversion is associated with slower endosomal acidification
+![Figure 11.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig11-v1.jpg)
+
+**Figure 11.:** HeLa cells, transiently expressing mApple-Rab5 (A–C) or stably expressing mApple-Rab7 (D–F) and transiently transfected with GalT-pHlemon, were treated for 20 min with nigericin, washed and imaged over 3 hr, as described in Figure 4A. (A,D) Time-lapse images of a representative endosome to show association of Rab conversion with acidification, as detected by the decrease in the YFP signal and relatively constant CFP at the rim. Time-lapse videos of the endosomes at 85 s interval are available in Figure 11—videos 1 and 2. (B,E) Corresponding graphs of normalised MFI of Rab5 (B) or Rab7 (E) at the rim and lumenal YFP/CFP ratio of GalT-pHlemon signal of the endosomes in (A) or (D), respectively, during and around the time of Rab conversion. (C,F) Averaged Rab5 (C) or Rab7 (F) and GalT-pH kinetics of 19 and 18 endosomes, respectively. Error bars represent standard deviation. Pooled data from two independent experiments. Numerical data for all analysed endosomes is available in Figure 11—source data 1 and Figure 11—source data 2.
+
+### Impaired Rab conversion is associated with slower endosomal acidification
 
 If endosomal acidification is dependent on the progression of endosome maturation, then blocking endosome maturation by impairing Rab conversion should undermine acidification. To block Rab conversion, we knocked out the Ccz1, a subunit of the Rab7GEF, which has been shown to promote Rab conversion (Figure 12—figure supplement 1A; Nordmann et al., 2010; Poteryaev et al., 2010; van den Boomen et al., 2020). Ccz1 depletion abolished Rab7 recruitment to, and Rab5 removal from, the nigericin-induced enlarged endosomes (Figure 12A, Figure 12—videos 1–3). Ccz1-deficient Rab5-positive endosomes could engage in homotypic fusion and interact with Rab5-positive enlarged compartments but did not mature to classical endolysosomes (Figure 12—figure supplement 1B; Figure 1C; Figure 12A). These perturbations could be efficiently rescued by expression of wild-type Ccz1 in Ccz1 knock-out cell lines (Figure 12A; Figure 12—videos 1–3). To ensure that in rescue experiments we selected for analysis only the cells expressing Ccz1, and not untransfected cells, we appended a far-red fluorophore mNeptune2 via the T2A peptide linker to Ccz1, resulting in expression of the two separate proteins in the transfected cells (Figure 12—figure supplement 2A). The mNeptune2 was tagged with NLS, targeting it to the nucleus, to minimise interference with the mApple signal at the endosomes (Figure 12—figure supplement 2B). Hence, we have generated Ccz1 knock-out cell lines that showed impaired Rab conversion and could be efficiently rescued with the Ccz1 rescue construct.
 
+![Figure 12.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig12-v1.jpg)
+
+**Figure 12.:** HeLa cell lines with wild-type (WT) Ccz1 and knocked-out Ccz1 (KO) were transiently transfected with mApple-Rab5 and either GFP-Rab7 (A) or GalT-pHlemon (B–D). Ccz1 expression plasmid was co-transfected for 72 hr for rescue experiments. Nigericin was added to cells for 20 min and washed away, and cells were imaged by time-lapse microscopy, as described in Figure 4A. (A) Time-lapse images of representative endosomes to show absence of Rab7 recruitment and lack of Rab5 displacement in KO cells, compared to the expected Rab conversion in WT and rescue cells. Scale bar = 1 μm. Time-lapse videos of the endosomes at 1 min interval are available in Figure 12—videos 1–3 for WT, KO and rescue, respectively. (B) Graphs of normalised mean fluorescence intensity of Rab5 and YFP/CFP ratio of the endosomal GalT-pHlemon signal in representative endosomes during and around the time of Rab conversion / Rab5 peak, in WT, KO and rescue cells. (C,D) Averaged kinetics of Rab5 recruitment (C) and corresponding GalT-pHlemon YFP/CFP ratios (D) for WT, KO and rescue cells, in 54, 54, and 56 endosomes, respectively. Error bars represent SEM. Pooled data from three independent experiments using different Ccz1 clones. Numerical data for all analysed endosomes is available in Figure 12—source data 1.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** (A) Ccz1 mRNA expression levels in HeLa cell lines with wild-type (WT) Ccz1 and knocked-out Ccz1 (KO), three clones each, measured by qRT-PCR and normalised for actin. Raw RT-PCR data is available in Figure 12—figure supplement 1—source data 1. (B) HeLa cell lines with wild-type (WT) Ccz1 and knocked-out Ccz1 (KO) were transiently transfected with mApple-Rab5 and GalT-pHlemon. Ccz1 expression plasmid was co-transfected for 72 hr for rescue experiments. Time-lapse images of representative endosomes, corresponding to those quantified in Figure 12B, to show acidification in endosomes recruiting Rab5 in the three cell types.
+
+![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig12-figsupp2-v1.jpg)
+
+**Figure 12—figure supplement 2.:** (A) Western blot of the ccz1 rescue construct expressing NLS-mNeptune2-T2A-Ccz1-myc to show predominant production of two smaller products, NLS-mNeptune2 and ccz1-myc, as visualised by RFP and myc antibodies, respectively. Original uncropped and unformatted images are available in Figure 12—figure supplement 2—source data 1. (B) Immunofluorescence images of NLS-mNeptune2-T2A-Ccz1-myc transiently transfected into HeLa cells to reveal nuclear distribution of the mNeptune2 signal and cytosolic distribution of Ccz1-myc.
+
 To test our hypothesis that impaired Rab conversion compromises endosomal acidification, we expressed mApple-Rab5 and GalT-pHlemon in Ccz1 KO and control cells, and monitored the YFP/CFP ratio kinetics of the pH sensor on Rab5-positive endosomes (Figure 12—figure supplement 1B). While in the control and Ccz1 rescue cells, acidification occurred with similar kinetics as observed above (Figure 11B and C), in Ccz1 KO cells the acidification was strongly delayed (Figure 12B–D). Nevertheless, acidification occurred eventually after a long delay in Ccz1 KO cells. In line with this conclusion, Ccz1 KO cells have grossly enlarged CFP-filled puncta and compartments, reflective of their enlarged lysosomes and acidified hybrid compartments as also observed with Lysotracker staining of Rab5-positive compartments (Figure 13A; Figure 13—figure supplement 1). The CFP-positive compartments in untreated cells showed no differences in pH between Ccz1-replete and Ccz1-deficient cells, ranging from pH 5.7 to pH 4.0, indicative of endolysosomes and lysosomes, respectively (Figure 13A and B). Furthermore, following disruption of pH by nigericin treatment and washout, wild-type cells restored their lysosomal pH, while Ccz1 KO cells displayed a wide range of pH in pHlemon-filled compartments, ranging from pH 6.4 to pH 4.0 (Figure 13C and D). Taken together, our data suggest that Rab conversion is driving efficient endosomal acidification.
+
+![Figure 13.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig13-v1.jpg)
+
+**Figure 13.:** HeLa cell lines with wild-type (WT) Ccz1 and knocked-out Ccz1 (KO) were transiently transfected with GalT-pHlemon. Ccz1 expression plasmid was co-transfected for 72 hr for rescue experiments. WT, KO and rescue cells were left untreated. (A,B) or treated with 20 min nigericin followed by 50 min recovery (C,D). (A) Images of cells showing Golgi and highly acidified organelles as visualised with GalT-pHlemon. Acidified organelles appear as puncta in WT and rescue cells and as larger round CFP-filled compartments in KO cells. Scale bar = 10 μm. (C) Images of cells pre-treated with nigericin have dispersed trans-Golgi and re-acidified organelles as in (A). Scale bar = 10 μm. (B,D) Corresponding measurements of YFP/CFP ratio of the GalT-pHlemon sensor in the acidified organelles. Numerical data for all analysed endosomes is available in Figure 13—source data 1 and Figure 13—source data 2.
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/70982/elife-70982-fig13-figsupp1-v1.jpg)
+
+**Figure 13—figure supplement 1.:** (A) Images of Ccz1 KO cells pre-treated with nigericin, recorded at 150 min recovery, showing Rab5-positive acidified hybrid compartments (arrows). Cells were transiently transfected with mApple-Rab5 and GalT-pHlemon. Scale bar = 10 μm. (B) Images of Ccz1 KO cells pre-treated with nigericin, recorded at 24 hr recovery, showing Rab5-positive acidified hybrid compartments, as visualised with Lysotracker Green (LTG). Cells were transiently transfected with mApple-Rab5. Scale bar = 10 μm. (C) Images of untreated Ccz1 KO cells stained with Lysotracker Red (LTR) to reveal large, acidified compartments. Scale bar = 10 μm.
 
 ## Discussion
 
@@ -93,13 +205,230 @@ In conclusion, we have developed and validated a straightforward live-cell imagi
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HeLa CCL2</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HeLa Kyoto</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_1922</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Neuro-2a</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_6910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (monkey)</td>
+      <td>Cos-1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_305564</td>
+      <td>IEM(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-LC3b (Rabbit polyclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>RRID:AB_2137707</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GalT (Rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_1078254</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mCherry (Goat polyclonal)</td>
+      <td>St John’s laboratory</td>
+      <td>STJ140001</td>
+      <td>IEM(1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-myc (Mouse monoclonal, 9E10)</td>
+      <td>Sigma</td>
+      <td>RRID:AB_2533008</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit coupled to 10 nm Gold (Goat, IgG)</td>
+      <td>BB International</td>
+      <td>RRID:AB_2715527</td>
+      <td>IEM (1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-mouse coupled to 5 nm Gold (Goat, IgG)</td>
+      <td>BB International</td>
+      <td>RRID:AB_1769168</td>
+      <td>IEM (1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-rabbit coupled to 5 nm Gold (Donkey, IgG)</td>
+      <td>Jackson Immuno Research</td>
+      <td>RRID:AB_2340610</td>
+      <td>IEM (1:100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-goat (Mouse, IgG)</td>
+      <td>Jackson Immuno Research</td>
+      <td>RRID:AB_2339054</td>
+      <td>IEM (1:100)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mApple-Rab5a (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_54944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mApple-Rab7a (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_54945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>GalT-mCherry (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_55052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mNeptune2-C1 (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_54836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mApple-Lamp1-pHluorin (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_54918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>GFP-Rab11a (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_12674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>EGFP-2xFYVE (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_140047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Lamp1-GFP (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_34831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pSpCas9(BB)–2A-GFP (pX458) (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_48138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pSpCas9(BB)–2A-puro (pX459) (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_48139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Snx1-turboGFP (Plasmid)</td>
+      <td>Origene</td>
+      <td>Origene # RG201844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Ccz1-myc (Plasmid)</td>
+      <td>Origene</td>
+      <td>Origene # RC222195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mTagBFP2-Rab5 (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_55322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mCherry-tagged anti-GFP (VHH) (Plasmid)</td>
+      <td></td>
+      <td>RRID:Addgene_109421</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HeLa CCL2, HeLa Kyoto-α, HEK293 and Neuro2A cells were grown at 37°C and 5% CO2 in high-glucose Dulbecco’s modified Eagle’s medium (DMEM, Sigma-Aldrich) supplemented with 10% fetal calf serum (FCS, Biowest), 2 mM L-Glutamine, 1 mM Sodium Pyruvate, and 1 x Penicillin and Streptomycin (all from Sigma). Cos-1 cells were grown in low-glucose DMEM supplemented as above. All cell lines were a kind gift of Dr Martin Spiess, with their identities authenticated by STR analysis by Microsynth AG (Balgach, Switzerland), except Cos-1, the identity of which was validated by morphology analysis. All cell lines were confirmed to be mycoplasma-negative by PCR.
 
 For transient cell transfections, cells were plated into 6-well plates to reach 70 % confluency the following day and transfected with 0.5 µg plasmid DNA complexed with Helix-IN transfection reagent (OZ Biosciences). Cells were used in imaging assays at 48 hr post transfection. For the Ccz1 rescue experiments, given the larger size of the plasmid, 2 µg plasmid DNA was used, and cells were transfected for 72 hr.
 
-For cell growth assays, cells were plated into 12-well plates at 10,000 cells per well. The following day, a sample was taken for counting (0 hr time point), and the remaining cells were incubated in complete medium with or without nigericin for 20 min, washed, incubated for specified time periods and collected for counting. Both conditions were reaching 90 % confluency by 72 hr. Three wells were measured per condition. Doubling time was calculating using the formulat1-t2*log2logc2c1
+For cell growth assays, cells were plated into 12-well plates at 10,000 cells per well. The following day, a sample was taken for counting (0 hr time point), and the remaining cells were incubated in complete medium with or without nigericin for 20 min, washed, incubated for specified time periods and collected for counting. Both conditions were reaching 90 % confluency by 72 hr. Three wells were measured per condition. Doubling time was calculating using the formula
+
+$$
+\frac{t1-t2*log2}{log\frac{c2}{c1}}
+$$
 
 where c1 and c2 are cell counts for two consecutive time points t1 and t2.
 
@@ -111,17 +440,17 @@ For Ccz1 rescue experiments, the myc tag was removed from the Ccz1-myc plasmid u
 
 For the pH sensor constructs, we used pHlemon, which consists of mTurquoise2 and EYFP in tandem with a 21 bp linker in between (Burgstaller et al., 2019). Separate constructs for mTurquoise2+ half-the-linker and half-the-linker+ EYFP were synthesized by Twist Bioscience (Supplementary file 1). The two sequences were cloned separately into pCR Blunt II-Topo vectors (Invitrogen). For the GalT-pHlemon plasmid, primers were designed with NEBuilder Assembly Tool (Supplementary file 1) to generate PCR products for the mTurquoise2 and EYFP as well as the GalT backbone without the tag from GalT-mCherry plasmid. Purified PCR products were assembled together using NEBuilder HiFi Assembly cloning kit.
 
-## Fluorescent cell line generation
+### Fluorescent cell line generation
 
 To generate GalT-EGFP stable cell lines, Phoenix Ampho packaging cells (from the Nolan lab, Stanford University) were grown in complete medium supplemented with 1 mM sodium pyruvate and transfected with pQCXIP-GalT-EGFP using FuGENE HD (Promega) to produce viral particles. The viral supernatant was harvested after 48–72 hr, passed through a 0.45 µm filter, supplemented with 15 µg/ml polybrene, and added to target HeLa-α cells. The next day, complete medium with 1.5 µg/ml puromycin was added. Following selection, cells were subjected to cell sorting on a FACSAria III (BD Biosciences) to obtain a cell pool with homogenous expression levels. HeLa-α-GalT-EGFP were maintained in complete medium supplemented with 1.5 µg/ml puromycin at 37 °C in 5 % CO2.
 
 Stable expression of mApple-Rab5 in HeLa cells was achieved by transfection of HeLa CCL2 cells with the mApple-Rab5a plasmid and three rounds of bulk-sorting by FACS at 15, 33 and 61 days post transfection. The cell line stably expressing mApple-Rab7a were generated as previously described (Wu et al., 2020). Briefly, HeLa CCL2 cells were transfected with the mApple-Rab7a plasmid, FACS-sorted for mApple-positive cells at 20 days and into 96-well plates 15 days later for clonal expansion. To generate the cell line with stable expression of both, mApple-Rab5 and GFP-Rab7, stably-expressing mApple-Rab5 cells were transfected with GFP-Rab7 and FACS-sorted at 7 days post transfection for a bulk population of mApple-positive and GFP-positive cells and, a further 11 days later, into 96-well plates for clonal expansion. The doubly-positive colonies were bulk-sorted once again 50 days later to remove cells that were no longer expressing either marker.
 
-## CRISPR-Cas9 knock-out of Ccz1
+### CRISPR-Cas9 knock-out of Ccz1
 
 Ccz1 has a homolog, Ccz1b, which differs by four nucleotides and is identical in amino acid sequence. Guide RNAs (gRNA) were designed to target both genes simultaneously. The CRISPR strategy was described previously (Ran et al., 2013; Solinger et al., 2020). Briefly, based on gRNAs targeting the first and last exons of Ccz1, two double-stranded oligonucleotide sequences were cloned one each into the two plasmids, Px458 (GFP) and Px459 (Puro) and transfected into HeLa CCL2 cells. Plasmids without the inserts were used as controls. After 24 hr of transfection, cells underwent 24 hr selection with puromycin, followed by single-cell FACS sorting of GFP-positive cells for clonal expansion. Clones showing >90% reduction in Ccz1 expression were used for evaluation of endosome maturation. Three different ccz1-deficient (KO) clones and three different control clones (WT) were used in experiments to obtain the three biological replicates.
 
-## Live cell imaging
+### Live cell imaging
 
 Cells were plated into 8-well imaging chambers (Miltenyi) the day before imaging to reach 50–70% confluency on the day of imaging. Just prior to imaging, cell medium was replaced with pre-warmed imaging buffer (5 mM Dextrose, 1 mM CaCl2, 2.7 mM KCl, 0.5 mM MgCl2 in PBS supplemented with 10 % FCS and Penicillin and Streptomycin). Where specified, cells were treated with 10 µM Nigericin (AdipoGen, 10 mM stock in Ethanol) or 5 µM Monensin (Sigma, 50 mM stock in Ethanol) or 10 mM ammonium chloride prior or during imaging. Where specified, 100 nM Lysotracker Green (Molecular Probes, 1 mM stock in DMSO) or 10 nM Lysotracker Red in imaging buffer was added 20 min prior to imaging. For live cell imaging of HEK293, Neuro-2A and Cos-1 cells, imaging chambers were pre-coated with poly-L-lysine to enhance attachment of these three cell types.
 
@@ -133,7 +462,7 @@ For endolysosomal labelling, 0.5 mg/mL Dextran-AF488 (10,000 MW, Molecular Probe
 
 To visualize endocytosis and trafficking of surface transferrin receptor, TfR-EGFP-expressing cells were treated with mCherry-tagged nanobodies against GFP to tag the plasma membrane TfR-EGFP. Nanobodies were produced as previously reported (Buser et al., 2018). Briefly, the nanobody plasmid was transformed into Rosetta DE3 cells and the nanobody expressed at 16 °C overnight with 1 mM IPTG induction. Lysates were purified on a His GraviTrap column, desalted on PD-10 columns and concentrated to 5 mg/mL. HeLa cells were transiently co-transfected with mTagBFP2-Rab5 and TfR-EGFP, to mark early endosomes and early and recycling endosomes, respectively. Cells were transferred to 8-well imaging chambers the day before imaging. Enlarged endosomes were induced following 20 min treatment with 10 μM nigericin and 110 min washout in imaging buffer. mCherry-anti-GFP nanobody was added at 5 μg/mL final concentration to label TfR-EGFP at the plasma membrane. Cells were imaged shortly before and immediately after nanobody addition. Time-lapse images were taken every 1 min for 25 min to capture the uptake of nanobody-labeled surface-derived TfR into the cell, using BFP, GFP and TxRed (excitation 562/20, emission 624/20) filter cubes.
 
-## Single endosome analysis and quantification
+### Single endosome analysis and quantification
 
 Using the time-lapse images, endosomes were selected for analysis with the following criteria. For mApple-Rab5 expressing cells, endosomes initially devoid of Rab5 and later acquiring and subsequently losing Rab5 were identified. For mApple-Rab7 expressing cells, endosomes initially devoid of Rab7 and subsequently acquiring Rab7 and stabilising its expression were identified. This ensured that the entire Rab conversion event was captured in the kinetic.
 
@@ -141,24 +470,24 @@ To quantify the recruitment of markers to the endosome, an oval selection tool i
 
 Endosomal recruitment marker measurements were background-subtracted and adjusted for the minimum and maximum values of the entire measured kinetic, to represent a range from 0 to 1. The pHlemon measurements were kept as background-adjusted YFP/CFP ratios. For averaging, kinetics were aligned for Rab5 peak or for Rab7 at 50 % of its final maximum value, representing the point of Rab conversion (Figure 4C–D). At least 10–20 endosomes from at least 3–10 cells were used in analysis and each experiment was repeated at least three times. Means, standard deviations, SEM, Pearson’s correlation and linear regression were calculated in GraphPad Prism.
 
-## pH calibrations
+### pH calibrations
 
 GalT-pHlemon images provided us with pH-responsive YFP/CFP ratio measurements. To convert YFP/CFP ratios to pH values, GalT-pHlemon expressing cells were incubated in buffers of known pH containing 5 µM Nigericin, 50 µM Monensin and 100 nM Concanamycin A (Sigma, 100 µM stock in DMSO) to disrupt intracellular proton gradients. The buffers consisted of 138 mM NaCl, 5 mM KCl, 2 mM CaCl2, 2 mM MgCl2, 10 mM Glucose, 10 mM HEPES (for pH 5.5–9.0) or 10 mM MES (for pH 4.0–5.0), and pH was adjusted with NaOH or HCl. Images were taken at 15 min after adding the buffers to the cells. Golgi ribbon structures were selected with a segmented line tool in Fiji, and MFI was calculated in both channels and subtracted for background measured in a field devoid of cells. The equation for the line of best fit was generated in GraphPad Prism based on log(dose) response curve with variable slope, where log(dose) is pH and response is YFP/CFP values (sigmoidal four-parameter dose-response curve; Figure 10—figure supplement 1A).
 
-## Electron microscopy
+### Electron microscopy
 
 HeLa CCL2 cells were grown in 10 cm dishes, treated for 20 min with nigericin and left to recover. At specified times, cells were fixed in DMEM containing 2.5 % glutaraldehyde and 3 % formaldehyde for 2 hr at room temperature. Cells were washed with PBS and cell membranes stained with 2 % osmium tetroxide and 1 % potassium hexacyanoferrate in H2O for 1 hr at 4 °C. Following a wash with water, cells were further stained for proteins and nucleic acids with 2 % uranyl acetate in H2O overnight at 4 °C. Samples were subsequently dehydrated in acetone/H2O in stepwise increases in acetone concentration of 20%, 50%, 70%, 90 % and 3 × 100 %. The samples were infiltrated with 50 % epon embedding medium in acetone for 1 hr at room temperature, and subsequently with 100 % epon resin overnight. Next day, fresh epon resin was added and samples were polymerised for 24 hr at 60 °C. Sections of 60–70 nm were collected on carbon-coated Formvar-Ni-grids and were viewed with a Phillips CM100 electron microscope.
 
 To prepare cells for immunolabeling, HeLa cells stably expressing GalT-GFP were prepared as previously described (Beuret et al., 2017). Sections were stained sequentially with rabbit anti-GFP (1:100; Abcam 6556) and goat anti-rabbit coupled to 10 nm gold particles (BB International). For dual labelling, HeLa cells stably expressing mApple-Rab5 were transiently transfected with GalT-EGFP, prepared for immunolabelling as above, and stained sequentially for GalT-GFP and mApple-Rab5. The sections were blocked with PBST (PBS + 0.05 % Tween20) supplemented with 2 % BSA for 20 min, incubated overnight at 4 °C with anti-GFP (1:100, Abcam), washed five times for 5 min with PBS and incubated for 2 hr at room temperature (RT) with donkey anti-rabbit coupled with 12 nm Gold (Jackson Immuno Research). The wash step was repeated and the single-stained sections were subsequently fixed for 2 min with 1 % glutaraldehyde in PBS, washed with PBS and blocked for 10 min with the blocking solution. Following a 2 hr incubation at RT with anti-mCherry (1:100, St John’s Laboratory STJ140001), the sections were washed with PBS, blocked with PBS supplemented with 2 % fish gelatin (Sigma) for 10 min and incubated with mouse anti-goat (1:100, Jackson Immuno Research) for 90 min. The wash and the 2 % fish gelatin block steps were repeated and the sections were incubated with goat anti-mouse coupled with 5 nm Gold (1:100, BBInternational) for 2 hr. The double-stained sections were washed five times for 5 min with PBS and three times for 2 min with H2O, and subsequently stained for 10 min with 2 % uracyl acetate and 2 min Reynold’s solution.
 
-## Immunostaining
+### Immunostaining
 
 HeLa cells were plated onto coverslips 24 hr prior to 20 min nigericin treatment and recovery. At specified times post nigericin treatment, cells were fixed in 2 % paraformaldehyde, permeabilised with 0.1 % Triton X-100, blocked in PBS containing 2 % BSA and 5 % goat serum, and stained with anti-GalT (1:50, Sigma HPA010807) followed by AF594-conjugated goat anti-rabbit and DAPI. HeLa cells stably expressing mApple-Rab5 were plated onto coverslips 24 hr prior to treatment. Cells were left untreated, treated for 16 hr with bafilomycin (100 nM,Enzo Life Sciences, 100 μM stock in DMSO), or treated with nigericin for 20 min followed by a 60 min washout. Following treatment, cells were fixed for 10 min with methanol at –20 °C, blocked in PBS containing 2 % BSA and 5 % goat serum, and stained with anti-LC3b (1:400, Cell Signaling Technology #3868) followed by AF488-conjugated goat anti-rabbit. Coverslips were mounted onto glass slides with Fluoromount G (Southern Biotech) and sealed with nail polish. Following z-stack image acquisition, images were deconvolved using Huygens deconvolution online software tool.
 
-## qRT-PCR
+### qRT-PCR
 
 RNA was extracted and purified from cells using RNeasy kit or using the Trizol-Chloroform extraction and isopropanol precipitation, following manufacturer’s instructions. cDNA was reverse-transcribed using GoScript reverse transcriptase primed with a mix of Oligo(dT)s and random hexamers (Promega). qRT-PCR was performed using GoTaq qPCR master mix (Promega) and primers specific for spanning the intron junction between exons 3 and 4 of ccz1 (ACATTTAGCCCATCAAAACCTGC, CCGAACAACCATGACCATCC). Ccz1 expression was normalized for β-actin expression.
 
-## Western blotting and Antibodies
+### Western blotting and Antibodies
 
 HeLa cells transiently transfected with NLS-mNeptune2-5-T2A-ccz1-myc were lysed in lysis buffer (1% NP-40, 150 mM NaCl, 50 mM Tris pH8.0, protease inhibitors) and denatured in Laemmli buffer at 65 °C for 5 min. Samples were resolved by SDS-PAGE and transferred onto nitrocellulose membrane. Samples were blocked in milk, stained with anti-myc (1:2,000, Sigma 9E10) and HRP-conjugated anti-mouse, and revealed with WesternBright ECL HRP substrate (Advansta).

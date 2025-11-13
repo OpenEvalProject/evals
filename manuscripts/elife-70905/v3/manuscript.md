@@ -66,7 +66,7 @@ Here, we have identified a number of rare alleles specific to ALS patients in Pr
 
 ## Results
 
-## Identification of a cluster of ALS patient-specific SARM1 ARM domain coding variants in Project MinE data freeze 1
+### Identification of a cluster of ALS patient-specific SARM1 ARM domain coding variants in Project MinE data freeze 1
 
 Previous studies have shown that artificial missense mutations and in-frame deletions in the auto-inhibitory ARM domain of SARM1 are more likely to result in pro-degenerative GoF than disruption of its SAM multimerization domains or catalytic TIR domain, which instead is more likely to give rise to protective LoF (Gerdts et al., 2013; Summers et al., 2016; Essuman et al., 2017; Horsefield et al., 2019; Jiang et al., 2020; Sporny et al., 2020; Bratkowski et al., 2020; Figley et al., 2021; Shen et al., 2021). Therefore, if SARM1 contributes to ALS pathogenesis, we predicted that there might be a relative paucity of naturally occurring coding variation in the SAM and TIR domains and/or an enrichment of coding variation in the ARM domain among patients, with the opposite in unaffected individuals.
 
@@ -76,25 +76,388 @@ To explore this, we assessed the distribution of mostly rare SARM1 missense SNP 
 
 **Figure 1.:** Schematic representation of the canonical 724 amino acid human SARM1 protein showing basic domain structure and the approximate locations of the coding variation present in the Project MinE DF1 and Answer ALS datasets. Variants are separated into those seen only in ALS patients, those seen in ALS patients and controls (both), and those seen only in controls. MTS, "mitochondrial" targeting sequence; ARM, HEAT/Armadillo motif domain; SAM, sterile alpha motif domains; TIR, Toll/Interleukin receptor domain. Special note: Variants are annotated according to the canonical 724 amino acid SARM1. Project MinE DF1 currently uses gnomAD v2.1.1, which is based on genome build GRCh37/ hg19, and annotates variants to a 690 amino acid product of a non-canonical reference SARM1 cDNA sequence. This cDNA, and genome build GRCh37, contain single nucleotide substitutions, insertions and deletions at its 5' end when compared to gnomAD v3.1.1 and GRCh38/ hg38 which annotate to the canonical 724 amino acid SARM1. These differences mean that the 690 amino acid "isoform" has a truncated N-terminus, due to use of an alternative ATG codon, and switches frame until it eventually synchronises with 724 amino acid SARM1 at amino acid 107 (73 in the 690 amino acid ‘"isoform"). As such, numbering of SARM1 variants in Project MinE DF1 (and any databases annotated to gnomAD v2.11/ GRCh37) is 34 residues lower than that shown here over the synchronised region and differences more N-terminal to this must be determined individually by lift over from GRCh37 to GRCh38. Notably, the NCBI Single Nucleotide Polymorphism Database (dbSNP, including rsIDs) uses numbering based on the 724 amino acid SARM1 protein.
 
-## Several ALS patient-specific SARM1 ARM domain coding variants in Project MinE DF1 increase NAD+ depletion in transfected HEK 293T cells
+**Table 1.**
+ SARM1 coding variants in Project MinE DF1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">SARM1 domain</th>
+      <th rowspan="2">Coding variant*</th>
+      <th rowspan="2">rsID</th>
+      <th rowspan="2">Chr.17 position and change†</th>
+      <th rowspan="2">EuropeanMAF‡</th>
+      <th colspan="2">Carriers</th>
+    </tr>
+    <tr>
+      <th>Cases (4,366)</th>
+      <th>Controls (1,832)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>T39M</td>
+      <td>rs988047470</td>
+      <td>28372148 C &gt; T</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="18">ARM</td>
+      <td>L76fs</td>
+      <td>-</td>
+      <td>28372255 del</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>V88M</td>
+      <td>rs1555584160</td>
+      <td>28372294 G &gt; A</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>V112I</td>
+      <td>rs1032963037</td>
+      <td>28372366 G &gt; A</td>
+      <td>0.000015</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L223P</td>
+      <td>-</td>
+      <td>28381400 T &gt; C</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Δ229–235 §</td>
+      <td>rs782325355</td>
+      <td>28381417_37 del</td>
+      <td>0.000059</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A240E</td>
+      <td>rs1449836804</td>
+      <td>28381451 C &gt; A</td>
+      <td>0.000015</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R244S</td>
+      <td>-</td>
+      <td>28381462 C &gt; A</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Δ249–252</td>
+      <td>-</td>
+      <td>28381475_86 del</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A250T</td>
+      <td>rs1555585243</td>
+      <td>28381480 G &gt; A</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A275V</td>
+      <td>rs376587698</td>
+      <td>28381556 C &gt; T</td>
+      <td>0.000029</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A301S</td>
+      <td>rs782606059</td>
+      <td>28381633 G &gt; T</td>
+      <td>0.00012</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R310H</td>
+      <td>rs369186722</td>
+      <td>28381661 G &gt; A</td>
+      <td>0.00016</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V331E</td>
+      <td>rs1555585331</td>
+      <td>28381724 T &gt; A</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P332Q</td>
+      <td>rs140811640</td>
+      <td>28381727 C &gt; A</td>
+      <td>0.012</td>
+      <td>107</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>N337D</td>
+      <td>rs375690432</td>
+      <td>28381741 A &gt; G</td>
+      <td>0.00038</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>E340K</td>
+      <td>rs781854217</td>
+      <td>28381750 G &gt; A</td>
+      <td>0.000059</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A341V</td>
+      <td>rs373458416</td>
+      <td>28381754 C &gt; T</td>
+      <td>0.00012</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T385A</td>
+      <td>rs2068039068</td>
+      <td>28384420 A &gt; G</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="10">SAM</td>
+      <td>Q418H</td>
+      <td>rs1194545365</td>
+      <td>28384521 G &gt; T</td>
+      <td>0.000029</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Y429F</td>
+      <td>-</td>
+      <td>28384553 A &gt; T</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>E431G</td>
+      <td>rs1555585662</td>
+      <td>28384559 A &gt; G</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R465T</td>
+      <td>-</td>
+      <td>28385039 G &gt; C</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C482Y</td>
+      <td>-</td>
+      <td>28385090 G &gt; A</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>R484C</td>
+      <td>rs1555585809</td>
+      <td>28385095 C &gt; T</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A488E</td>
+      <td>rs782228906</td>
+      <td>28385108 C &gt; A</td>
+      <td>0.00012</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y501H</td>
+      <td>rs144613221</td>
+      <td>28385146 T &gt; C</td>
+      <td>0.0029</td>
+      <td>32</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>T50211P</td>
+      <td>rs782421919</td>
+      <td>28385149 A &gt; C</td>
+      <td>0.000074</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V518L</td>
+      <td>rs782106973</td>
+      <td>28385197 G &gt; C</td>
+      <td>0.000088</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>S558N</td>
+      <td>-</td>
+      <td>28388216 G &gt; A</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="6">TIR</td>
+      <td>R569C</td>
+      <td>rs571724138</td>
+      <td>28388248 C &gt; T</td>
+      <td>0.000029</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R615H</td>
+      <td>rs782753946</td>
+      <td>28388460 G &gt; A</td>
+      <td>0.000044</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>G624*</td>
+      <td>rs141324431</td>
+      <td>28388486 G &gt; T</td>
+      <td>0.000073</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>D637Y</td>
+      <td>rs1451417529</td>
+      <td>28388525 G &gt; T</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A646S</td>
+      <td>rs782676389</td>
+      <td>28395917 G &gt; T</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q673*</td>
+      <td>-</td>
+      <td>28395998 C &gt; T</td>
+      <td>0</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>A719V</td>
+      <td>rs146812537</td>
+      <td>28396267 C &gt; T</td>
+      <td>0.00050</td>
+      <td></td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>G722V</td>
+      <td>rs1298702390</td>
+      <td>28396276 G &gt; T</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_All ARM domain and other N-terminal variants, barring L76fs, have been tested for function in this study.An additional frameshift variant (corresponding to 28372175dup, G46fs, rs11437592) was reported, but it appears to be an artefact due to sequence discrepancies in the GRCh37 genome build.*numbering based on the canonical 724 amino acid human SARM1.†numbering according to GRCh38 after lift over from GRCh37 which contains sequence discrepancies that result in anomalous numbering (see Figure 1 legend and Materials and Methods).‡minor allele frequency for European (non-Finnish) population in gnomAD v3.1.1 as the best ethnicity match for this dataset.§This variant is reported as Δ226–232 elsewhere (Bloom et al., 2021). At the DNA level the deletion encompasses a 32 bp region with 11 bp identical repeats at each end and, as such, any 21 bp deletion within this region will have an identical effect at both the DNA and protein level. Δ226–232 and Δ229–235 are thus identical proteins. We have used the Δ229–235 nomenclature for consistency with its rsID._
+
+### Several ALS patient-specific SARM1 ARM domain coding variants in Project MinE DF1 increase NAD+ depletion in transfected HEK 293T cells
 
 We first tested the functional consequences of coding variation in the region spanning amino acids 112–385 of the SARM1 ARM domain by assessing the ability of variants to deplete NAD+ in transfected HEK 293T cells. We hypothesised that some of them confer a harmful, and thus potentially pathogenic NADase GoF, but established assay conditions able to detect either GoF or LoF of the exogenously expressed SARM1 (Figure 2—figure supplement 1A). Importantly, any contribution from endogenous SARM1 in these assays was expected to be negligible due to its comparatively very low level of expression in the HEK 293T cell clone used (Figure 2—figure supplement 1B).
 
 Under these conditions, NAD+ levels are approximately halved in cells expressing exogenous WT SARM1 (due to overexpression of a low constitutive NADase activity) but we observed a substantially greater lowering of NAD+ for six of the ALS-specific variants - L223P, Δ229–235 (alternatively named Δ226–232 - see Table 1 legend), Δ249–252, V331E, E340K, and T385A SARM1 - suggestive of strong NADase GoF (Figure 2A). Smaller, but still statistically-significant lowering of NAD+ was also seen for a further three variants - V112I, A275V and A341V SARM1 - suggestive of more modest/moderate GoF. All other variants depleted NAD+ to a similar extent as WT SARM1. The variants that had the strongest effect on NAD+ levels also caused greater depletion of NADP+ and ATP than WT SARM1 (Figure 2B,C), with NADP+ representing an alternative substrate of SARM1 glycohydrolase activity (Essuman et al., 2018; Horsefield et al., 2019; Wan et al., 2019) and ATP loss likely to be a lagging consequence of NAD+ loss.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig2-v3.jpg)
+
+**Figure 2.:** (A–C) Levels of NAD+ (A), NADP+ (B) and ATP (C) in extracts of HEK 293T cells 24 hr after transfection with expression constructs for Flag-tagged WT or variant SARM1 (as listed). 50 ng SARM1 vector combined with 750 ng empty vector (24-well plate format) was transfected for optimal assay conditions (see Figure 2—figure supplement 1). Data are shown as a proportion of levels in cells transfected with empty vector (ev) alone performed in parallel (set at 1, grey dashed line). Means ± SEM with individual data points are plotted (n = 4 or 5). *p < 0.05, **p < 0.01, and ***p < 0.001, multiple pairwise comparisons to WT SARM1 with FDR correction (after log transformation of data in parts A and B). Bars for WT SARM1, and the P332Q and N337D SARM1 variants, which are seen in both patient and control groups in Project MinE, are hatched to differentiate them from patient-specific variants (bold text, filled bars). (D) Representative immunoblots of the extracts described in parts A-C showing Flag-tagged WT or variant SARM1, ZsGreen (co-expressed with the exogenous SARM1 from a bicistronic mRNA) and GAPDH (acting as a loading control). Molecular weight markers (kDa) are shown on the right of each panel. Four times the amount of extract and enhanced detection was needed to detect SARM1 variants that cause the greatest NAD+ depletion (bottom right blot). (E) Representative ZsGeen fluorescence and phase contrast imaging of HEK 293T cells 24 hr after transfection with WT or Δ229–235 SARM1 expression constructs (brightness and contrast have been increased equally in each pair of images to enhance visualisation). Reduced ZsGreen signal intensity, as seen here for Δ229–235 SARM1, was consistently seen (n = 5) for variants that reduced NAD+ levels more than WT SARM1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Standard transfection of HEK 293T cells with a SARM1 expression construct alone (800 ng in a single well of a 24-well plate) results in robust depletion of NAD+ which limits the scope for identification of GoF. We therefore titrated the amount of SARM1 expression construct against empty vector (SARM1 construct plus empty vector maintained at 800 ng) to determine a combination that would result in an intermediate level of NAD+ depletion in order to screen variants for GoF and LoF together. Equal amounts of cell lysates collected 24 hr after transfection were assessed for NAD+ levels, and for levels of C-terminal Flag-tagged SARM1, ZsGreen (co-expressed with SARM1 from a bicistronic cassette) and GAPDH (acting as a loading control) by immunoblotting. Molecular weight markers (kDa) are shown on the right of each panel. Just prior to lysis, the cells were also imaged for ZsGreen fluorescence. 50 ng of SARM1 expression construct with 750 ng of empty vector, which translates to an approximate halving of NAD+ levels relative to empty vector alone, was selected for our screening assay (Figure 2). Notably, ZsGreen expression appears to be suppressed as NAD+ levels decline (see also Figure 2—figure supplement 2). (B) Very low levels of endogenous SARM1 are present in the HEK 293T cell line used for these assays. Equal amounts of HEK 293T cell lysates (5 µg) from cells transfected with empty vector alone or a combination of 50 ng SARM1 expression construct and 750 ng empty vector (SARM1 construct [+ev]), as used in our screening assay, were assessed for levels of endogenous and/or exogenous SARM1, using a SARM1 antibody, as well as for the co-expressed ZsGreen and GAPDH (acting as a loading control). Molecular weight markers (kDa) are shown on the right of each panel. Empty vector transfected cells only express endogenous SARM1 and this is present at substantially lower levels than exogenously-expressed SARM1 seen after transfection with the SARM1 expression construct (the SARM1 blot here has been substantially overexposed relative to the Flag blot in part A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Immunoblots of HEK 293T cell extracts 24 hr after transfection with 800 ng empty vector alone or with 50 ng expression constructs for C-terminal Flag-tagged WT or putative strong GoF variant SARM1 combined with 750 ng empty vector (24-well plate format). Duplicate blots were probed with a Flag antibody (left) or a SARM1 monoclonal antibody raised against amino acids 1-410 (right). No truncated SARM1 proteins are detected with either antibody. Both blots were probed for co-expressed ZsGreen and endogenous GAPDH (as a loading control) to confirm they represent true duplicates. Molecular weight markers (kDa) are shown on the right of each panel. (B) Relative NAD+ levels in HEK 293T cell extracts 24 hr after transfection as in part A and treatment ± 2 mM NR. Data are shown as a proportion of empty vector alone without NR addition (ev untreated). Means ± SEM with individual data points are plotted (n = 3). Bars for empty vector and WT SARM1 are hatched to differentiate them from putative strong GoF variants (bold text, filled bars). Data for empty vector and WT SARM1 show that NR supplementation substantially boosts NAD+ production. The lack of a robust increase in NAD+ levels in cells expressing putative strong GoF SARM1 variants simply indicates that enhanced NAD+ consumption still exceeds the NR-dependent increase in synthesis. Nevertheless, the greater NAD+ synthesis capacity provided by NR should delay the point at which NAD+ and/or ATP becomes limiting for de novo protein synthesis in these cells. (C) Representative immunoblot (of n = 3) of extracts from HEK 293T cells transfected and treated as in part B. The blot was probed with a Flag antibody (to detect the exogenous, Flag-tagged SARM1) and for co-expressed ZsGreen and endogenous GAPDH (as a loading control). Molecular weight markers (kDa) are shown on the right of each panel. Notably, NR supports substantially higher expression of all of the putative strong GoF SARM1 variants and the co-expressed zsGreen. This supports a model in which low expression levels in (untreated) cells is due to limiting NAD+ (and/or ATP) as a result of SARM1 NADase GoF. NR does not boost WT SARM1 or co-expressed zsGreen expression under these conditions presumably because NAD+ levels do not become limiting. However, suppressed expression is seen when more WT SARM1 expression construct is transfected to cause a greater decline in NAD+ (Figure 2—figure supplement 1A) and this can also be rescued by NR (data not shown).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Representative ZsGreen fluorescence, propidium iodide (PI) staining and phase contrast images of HEK 293T cells 24 hr after standard transfection with an expression construct (800 ng construct per well of a 24-well plate) encoding the constitutively active SAM-TIR fragment of SARM1 (amino acids 409-724). The standard density of HEK cells was ~50% confluence at the time of transfection. For this experiment the different cell densities were diluted from the same original cell suspension. A large increase in the number of dead, PI-stained cells is clearly evident even as the total number of cells is reduced. It is likely that cells at lower density are less resistant to the effects of SARM1 activity-dependent NAD+ depletion as they will be dividing more rapidly and thus already under greater metabolic stress. We routinely transfect HEK cells at the standard density shown to avoid significant cell death. The amount of SAM-TIR construct used in this assay is also substantially higher (16x) than that used for screening of the ALS patient variants and we would thus expect very low rates of cell death in the screening assays.
+
 Importantly, the lower level of NAD+ seen for some variants in these assays was not a result of greater variant overexpression. Instead, we found that the variants that caused the greatest NAD+ depletion are barely detectable by immunoblotting (Figure 2D). By using antibodies against either the C-terminal Flag tag or the N-terminus of SARM1, we can rule out any contribution of truncated forms of the variants (Figure 2—figure supplement 2A). This indicates that enhanced NAD+ depletion is achieved by substantially lower levels of full-length versions of some of the variants and suggests very strong GoF. IRES-driven expression of ZsGreen (in a bicistronic cassette with SARM1) was also found to be substantially lower in cells with the greatest NAD+ depletion (Figure 2D). Crucially, fluorescence imaging suggested that this reflected suppressed ZsGreen expression within cells rather than reduced transfection efficiency (Figure 2E), which would anyhow be incompatible with almost complete NAD+ depletion if many cells remained untransfected. However, this appears to be consistent with a previous report showing that overexpression of (WT) SARM1 suppresses de novo synthesis of exogenous proteins in an NADase-dependent manner (Izadifar et al., 2021). In support of this mechanism, we found that the cell permeable NAD+ precursor nicotinamide riboside (NR) allows higher levels of expression of both zsGreen and the putative strong NADase GoF SARM1 variants themselves, presumably by boosting NAD+ synthesis and thus delaying the point at which NAD+ becomes limiting for de novo protein synthesis as a result of enhanced SARM1 NADase activity (Figure 2—figure supplement 2B,C). Even so, we cannot exclude reduced stability as also contributing to the low expression levels of these variants.
 
 Previously, reduced cell viability has been reported in transfected HEK cells expressing active SARM1 mutants (Panneerselvam et al., 2012; Gerdts et al., 2013; Sporny et al., 2019; Sporny et al., 2020), but we did not see any obvious change in cell morphology suggestive of a loss of cell viability in our assays (Figure 2E), even when NAD+ was substantially depleted. While this probably partly reflects that we use a lower amount of SARM1 expression construct in our assays, we also found that SARM1 activity-dependent loss of viability of transfected HEK 293T cells is very dependent on cell density, with the high cell densities we routinely use also conferring substantial protection (Figure 2—figure supplement 3).
 
-## Project MinE DF1 putative GoF SARM1 variants have very high constitutive NADase activity
+### Project MinE DF1 putative GoF SARM1 variants have very high constitutive NADase activity
 
 Our measurements of NAD+ levels in transfected HEK 293T cells indirectly pointed to variable degrees of NADase GoF for a number of the Project MinE patient-specific SARM1 ARM domain coding variants. Therefore, we next directly tested the NADase activity of purified recombinant WT and variant SARM1. Recombinant proteins were purified from transfected HEK 293T cell lysates by immunoprecipitation following NR supplementation of the HEK 293T cell medium to boost expression and maximise yield, particularly of the strong GoF variants (see above) (Figure 3—figure supplement 1).
 
 Constitutive (basal) NADase activity of the purified proteins in reactions containing just NAD+ was assayed first. We used 25 µM NAD+, which is close to the Km for the SARM1 catalytic site (Essuman et al., 2018; Sporny et al., 2020; Angeletti et al., 2021) and obtained an NAD+ consumption rate for WT SARM1 (~1 mol/min/mol enzyme) comparable to that reported in a previous study (Zhao et al., 2019). Importantly, these assays confirmed the hypothesised NADase GoF for most of the variants that increased depletion of NAD+ in transfected HEK 293T cells, but in some cases, their constitutive activity was unexpectedly high: rates for five of the patient-specific variants - L223P, Δ229–235, Δ249–252, V331E and E340K - were found to be up to 20 times higher than WT SARM1 and a sixth - T385A - around 10 times higher (Figure 3A). In fact, these very high per mol constitutive NADase activities are similar to that of SARM1 lacking the extreme N-terminus and auto-inhibitory ARM domain (SAM-TIR fragment, amino acids 409–724) (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig3-v3.jpg)
+
+**Figure 3.:** Each panel is designed to show different statistical comparisons and some of the same data are used in different tests, as described. WT SARM1, and P332Q and N337D SARM1 (seen in both patient and control groups in Project MinE), are shown as hatched bars throughout to differentiate them from patient-specific variants (bold text, filled bars). (A) and (B) Constitutive (basal) NADase activities of immunoprecipitated WT SARM1, variant SARM1, or SAM-TIR fragment (as indicated) in the presence of 25 µM NAD+. In part A, data for variants with high or low NADase activity, obtained in parallel, are plotted separately, against different scales, to more clearly show all differences relative to WT SARM1 (included on both). Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05, **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, multiple pairwise comparisons to WT SARM1 with FDR correction for part A and one-way ANOVA with Tukey’s correction for part B (both after log transformation). (C) Activation of SARM1 NADase by 50 µm NMN (in the presence of 25 µM NAD+). Constitutive activities (no NMN) are as in part A with rates + NMN calculated from assays performed in parallel. High and low NADase activity variants are plotted separately (as in part A). Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05 and **p < 0.01, multiple paired t tests of rates ± NMN with FDR correction (after log transformation). (D) Activation of SARM1 NADase by 10 or 50 µm NMN (in the presence of 25 µM NAD+). NMN-insensitive variants with very high constitutive NADase activity were not tested. Constitutive and +50 µM NMN activities are a subset of those shown in part B and are only those from assays performed in parallel with 10 µM NMN. Means ± SEM with individual data points (n = 4) are plotted. *p < 0.05, **p < 0.01, and ***p < 0.001, two-way ANOVA with Šidák’s correction (after log transformation).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Representative immunoblots of immunoprecipitated WT and ALS patient variant SARM1 (A) and WT SARM1 (full-length) and SAM-TIR fragment (B). Immunoprecipitations were performed as described in the Methods. HEK 293T cells were used to support any mammalian-specific post-translational modification that might be critical for activity. SARM1 bound to the equivalent of 0.625 µl of bead suspension were loaded per lane alongside a dilution series of purified SARM1 to generate a standard curve for quantification. Blots were probed with a polyclonal antibody raised against the SAM domains of human SARM1 as, unlike the WT and ALS patient variant SARM1, the purified SARM1 standard is not Flag-tagged. Molecular weight markers (kDa) are shown on the right of each panel. Faint bands at ~50 kDa in some of the more concentrated strong GoF variant samples likely represent weak, non-specific cross-reaction to the heavy chain of the Flag antibody used for the immunoprecipitation. SAM-TIR fragment retains the SAM domains involved in SARM1 multimerization but, notably, there is no detectable co-immunoprecipitation of endogenous SARM1, presumably because levels of endogenous SARM1 are so low in this HEK 293T cell clone (Figure 2—figure supplement 1B). Endogenous SARM1 is thus unlikely to contribute significant activity in assays of any of the purified proteins.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) and (B) NADase activities of immunoprecipitated WT or variant SARM1 after activation by 50 µM NMN (A) or 10 µM NMN (B) (in the presence of 25 µM NAD+). The data in parts A and B are the same as in Figure 3C,D respectively but are separately presented here to show the results of a different statistical test. In part A, variants with high or low NADase activity are plotted separately, against different scales, to more clearly show all differences relative to WT SARM1 (included on both). Variants with very high basal NADase and no responsiveness to 50 µM NMN were not tested for activation by 10 µM NMN. Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05 and **p < 0.01, multiple pairwise comparisons to WT SARM1 with FDR correction (part A after log transformation). (C) and (D) Fold change in NADase activity of immunoprecipitated WT and ALS patient variant SARM1 by 50 µM NMN (C) or 10 µM NMN (D) relative to their constitutive (basal) activity (NAD+ alone). Strong NADase GoF variants that are not NMN-responsive are not shown. Fold induction is calculated from the data presented in Figure 3C,D. Means ± SEM with individual data points (n = 5 and n = 4 respectively) are plotted. ** p <0.01, multiple pairwise comparisons to WT SARM1 with FDR correction (both after log transformation). Bars for WT SARM1, and P332Q and N337D SARM1 (seen in patient and control groups in Project MinE DF1), are hatched to differentiate them from patient-specific variants (bold text, filled bars).
+
 Of the three other variants that increased NAD+ depletion in transfected HEK 293T cells, V112I SARM1 has a rate a little more than twice as high as WT SARM1, whereas the activities of A275V and A341V SARM1 are not significantly raised (Figure 3A), although we cannot rule out subtle differences in the activities of the recombinant proteins compared to their activities in cells. Interestingly, the constitutive NADase rates calculated for P332Q and N337D, the variants present in both the patient and control groups, and R310H, a patient-specific variant, suggest partial LoF (Figure 3A).
 
-## Project MinE DF1 SARM1 variants with high constitutive NADase activity are not further activated by NMN
+### Project MinE DF1 SARM1 variants with high constitutive NADase activity are not further activated by NMN
 
 The NADase activity of full-length SARM1 can be induced by NMN (Zhao et al., 2019; Loreto et al., 2021; Figley et al., 2021), a nucleotide that plays a critical role in triggering axon degeneration (Di Stefano et al., 2015; Di Stefano et al., 2017). Greater activation by NMN could thus represent an alternative pro-degenerative GoF mechanism. We therefore tested the recombinant SARM1 ARM domain coding variants for NMN-dependent triggering of their NADase activity.
 
@@ -106,17 +469,127 @@ Increased sensitivity to lower concentrations of NMN could represent an alternat
 
 Together, these NADase activity data indicate that six of the exclusively patient-associated SARM1 ARM domain alleles in Project MinE DF1 encode variants with greatly enhanced constitutive activity comparable to that of the fully disinhibited SAM-TIR fragment, and one additional patient-associated variant showed more moderate constitutive NADase GoF. Surprisingly, however, no variants showed enhanced responsiveness to NMN from the normal basal level. Thus, the point mutations and small in-frame deletions that confer the strongest GoF mimic the effects of complete removal of ARM domain auto-inhibition.
 
-## Identification of an additional ALS patient-associated strong GoF SARM1 variant in the Answer ALS project database
+### Identification of an additional ALS patient-associated strong GoF SARM1 variant in the Answer ALS project database
 
 We next extended our search for putative ALS-associated SARM1 GoF alleles to the Answer ALS project database consisting of WGS data for 706 ALS patients and 92 matched controls (Rothstein et al., 2020). Some of the Project MinE DF1 variants were independently found in this new, non-overlapping dataset, including one occurrence of the strong NADase GoF Δ229–235 SARM1 allele in a patient, but we also found three new patient-associated alleles and one new control-associated allele encoding changes within the ARM domain or just N-terminal to it (encompassing amino acids 29–397) (Figure 1 and Table 2). Three additional coding variants are also present in this expanded region in control subjects in Project MinE DF1 (Figure 1 and Table 1). Therefore, given the precise N-terminal boundary of the ARM domain is not well-defined, we assessed the NADase function of all these previously untested coding variants from both databases, with the exception of Project MinE DF1 frameshift variant L76fs that can reasonably be assumed to be a full LoF allele.
+
+**Table 2.**
+ SARM1 coding variants in Answer ALS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">SARM1domain</th>
+      <th rowspan="2">Coding variant*</th>
+      <th rowspan="2">rsID</th>
+      <th rowspan="2">Chr.17 position and change†</th>
+      <th rowspan="2">EuropeanMAF‡</th>
+      <th colspan="2">Carriers</th>
+    </tr>
+    <tr>
+      <th>Cases(706)</th>
+      <th>Controls(92)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>G35E</td>
+      <td>rs1480321233</td>
+      <td>28372136 G &gt; A</td>
+      <td>0.000015</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">ARM</td>
+      <td>R131G</td>
+      <td>rs1389320808</td>
+      <td>28372423 C &gt; G</td>
+      <td>0.000015</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A210V</td>
+      <td>-</td>
+      <td>28381361 C &gt; T</td>
+      <td>0</td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Δ229–235 §</td>
+      <td>rs782325355</td>
+      <td>28381417_37 del</td>
+      <td>0.000059</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R267W</td>
+      <td>rs11658194</td>
+      <td>28381531 C &gt; T</td>
+      <td>0.000015</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A301S §</td>
+      <td>rs782606059</td>
+      <td>28381633 G &gt; T</td>
+      <td>0.00012</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P332Q §</td>
+      <td>rs140811640</td>
+      <td>28381727 C &gt; A</td>
+      <td>0.012</td>
+      <td>16</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>SAM</td>
+      <td>Y501H §</td>
+      <td>rs144613221</td>
+      <td>28385146 T &gt; C</td>
+      <td>0.0029</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>TIR</td>
+      <td>S684F</td>
+      <td>rs782256561</td>
+      <td>28396162 C &gt; T</td>
+      <td>0.000044</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A719V §</td>
+      <td>rs146812537</td>
+      <td>28396267 C &gt; T</td>
+      <td>0.00050</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_All ARM domain and other N-terminal variants have been tested for function in this study.*numbering based on the canonical 724 amino acid human SARM1.†numbering according to genome build GRCh38.‡minor allele frequency for European (non-Finnish) population in gnomAD v3.1.1 as the best ethnicity match for this dataset.§Variants also present in the Project Mine DF1 dataset._
 
 Using the same assays as for the original Project MinE variants, we identified patient-associated Answer ALS variant, R267W SARM1, as an additional strong GoF, with robust NAD+-consuming activity in transfected HEK 293T cells combined with low expression (Figure 4A and B) and a constitutively high, non-inducible NADase activity equivalent to that of the strongest Project MinE GoF variants (Figure 4C,E). Interestingly, two of the control-associated variants, V88M SARM1 (Project MinE DF1) and A210V SARM1 (Answer ALS), also reduced NAD+ levels more than WT SARM1 in transfected HEK 293T cells (Figure 4A), but their constitutive activities in NADase assays were only modestly increased relative to WT SARM1 and far below the 10 times higher activity we define for strong GoF variants (Figure 4D). In addition, both show normal NMN-inducibility (Figure 4F). The remaining patient- and control-associated variants had properties similar to WT SARM1 or appeared to be modest LoF (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig4-v3.jpg)
 
-**Figure 4.:** Bars for WT and variants that are only seen in controls are hatched throughout to differentiate them from patient-specific variants (bold text, filled bars). (A) NAD+ levels in extracts of HEK 293T cells 24 hr after transfection with expression constructs for Flag-tagged WT or variant SARM1 (as listed). Details are as per Figure 2. Means ± SEM with individual data points (n = 7) are plotted. *p < 0.05, **p < 0.01, and ***p < 0.001, multiple pairwise comparisons to WT SARM1 with FDR correction (after log transformation). (B) Representative immunoblots of extracts as described in part A. Blots were probed as in Figure 2D. Four times the amount of extract and enhanced detection was needed to detect R267W SARM1 (right). Molecular weight markers (kDa) are shown on the right of each panel. (C) and (D) Constitutive NADase activities (at 25 µM NAD+) of recombinant WT and variant SARM1, as indicated. Predicted strong GoF R267W SARM1 was compared directly to WT SARM1 and strong NADase GoF Δ229–235 SARM1 in part C, separately from the other variants in part D. Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05, **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation) in part C and multiple pairwise comparisons to WT SARM1 with FDR correction in part D. (E) and (F) Activation of the NADase activity of recombinant WT and variant SARM1, as indicated, by 50 µm NMN (in the presence of 25 µM NAD+). Constitutive activities (no NMN) are as in parts C and D with rates + NMN calculated from assays performed in parallel. Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05 and **p < 0.01, multiple paired t tests of rates ± NMN with FDR correction (after log transformation in part E).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Bars for WT and variants that are only seen in controls are hatched throughout to differentiate them from patient-specific variants (bold text, filled bars). (A) NAD+ levels in extracts of HEK 293T cells 24 hr after transfection with expression constructs for Flag-tagged WT or variant SARM1 (as listed). Details are as per Figure 2. Means ± SEM with individual data points (n = 7) are plotted. *p < 0.05, **p < 0.01, and ***p < 0.001, multiple pairwise comparisons to WT SARM1 with FDR correction (after log transformation). (B) Representative immunoblots of extracts as described in part A. Blots were probed as in Figure 2D. Four times the amount of extract and enhanced detection was needed to detect R267W SARM1 (right). Molecular weight markers (kDa) are shown on the right of each panel. (C) and (D) Constitutive NADase activities (at 25 µM NAD+) of recombinant WT and variant SARM1, as indicated. Predicted strong GoF R267W SARM1 was compared directly to WT SARM1 and strong NADase GoF Δ229–235 SARM1 in part C, separately from the other variants in part D. Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05, **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation) in part C and multiple pairwise comparisons to WT SARM1 with FDR correction in part D. (E) and (F) Activation of the NADase activity of recombinant WT and variant SARM1, as indicated, by 50 µm NMN (in the presence of 25 µM NAD+). Constitutive activities (no NMN) are as in parts C and D with rates + NMN calculated from assays performed in parallel. Means ± SEM with individual data points (n = 4 or 5) are plotted. *p < 0.05 and **p < 0.01, multiple paired t tests of rates ± NMN with FDR correction (after log transformation in part E).
 
-## Strong NADase GoF Δ229-235 SARM1 retains its GoF properties in complexes with WT SARM1
+### Strong NADase GoF Δ229-235 SARM1 retains its GoF properties in complexes with WT SARM1
 
 Given the very low levels of endogenous SARM1 in our HEK 293T cell line, our data so far will largely reflect the properties of each SARM1 variant in isolation. However, ALS patients heterozygous for SARM1 GoF alleles will express the SARM1 variant alongside WT SARM1. Therefore, to mimic heterozygosity, we co-expressed WT and strong GoF SARM1 in HEK 293T cells, using Δ229–235 SARM1 as a representative strong GoF variant as it is most frequently seen in patients.
 
@@ -124,15 +597,27 @@ We found that NAD+ depletion in HEK 293T cells co-transfected with equal amounts
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig5-v3.jpg)
 
-**Figure 5.:** (A) NAD+ levels in extracts of HEK 293T cells 24 hr after transfection with individual expression constructs or mixtures of constructs for HA- or Flag-tagged WT SARM1 and/or Flag-tagged Δ229–235 SARM1. Details as per Figure 2, except that 50 ng SARM1 vector was combined with 750 ng empty vector for single constructs and 25 ng each for mixtures. Means ± SEM with individual data points (n = 5) are plotted. **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation). Only relevant comparisons are shown. (B) Representative immunoblots of extracts as described in part A. Duplicate blots were probed with Flag or HA antibodies to independently assess levels of co-expressed Flag- or HA-tagged WT or Flag-tagged Δ229–235 SARM1. Both blots were probed for ZsGreen and GAPDH (acting as a loading control) to confirm the blots were representative replicates. A faint, non-specific cross-reaction of the HA antibody to Flag-tagged SARM1 was consistently seen under the conditions used (WT-Flag only lane). Molecular weight markers (kDa) are shown on the right of each panel. (C) Representative immunoblots (of n = 3) of reciprocal co-immunoprecipitation of HA-tagged WT SARM1 with Flag-tagged WT or Δ229–235 SARM1. Immunoprecipitations using Flag or HA antibodies or no antibody were performed on the same extracts of transfected HEK 293T cells co-expressing HA-tagged WT SARM1 with Flag-tagged WT or Flag-tagged Δ229–235 SARM1 (from equal amounts of construct), or expressing individual proteins. Duplicate immunoblots of immunoprecipitated proteins, and the original extracts used in the immunoprecipitations (input), were probed with Flag or HA antibodies. A small amount of non-specific binding of tagged proteins to protein A/G beads was consistently seen for inputs with the highest expression levels. Molecular weight markers (kDa) are shown on the right of each panel. (D) Constitutive NADase activity (in the presence of 25 µM NAD+) of immunoprecipitated WT + Δ229–235 SARM1 complexes compared to WT or Δ229–235 SARM1 alone. All proteins were Flag-tagged to ensure complete immunoprecipitation of complexes of WT and Δ229–235 SARM1. Means ± SEM with individual data points (n = 4) are plotted. *p < 0.05 and **p < 0.01, one-way ANOVA with Tukey’s correction (after log transformation). (E) Inducibility of immunoprecipitated WT + Δ229–235 SARM1 complexes and WT or Δ229–235 SARM1 alone by 50 µm NMN (in the presence of 25 µM NAD+). Constitutive activities (no NMN) are as in part D with rates + NMN calculated from assays performed in parallel. Means ± SEM with individual data points (n = 4) are plotted. **p < 0.01, multiple paired t tests of rates ± NMN with FDR correction (after log transformation).Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) NAD+ levels in extracts of HEK 293T cells 24 hr after transfection with individual expression constructs or mixtures of constructs for HA- or Flag-tagged WT SARM1 and/or Flag-tagged Δ229–235 SARM1. Details as per Figure 2, except that 50 ng SARM1 vector was combined with 750 ng empty vector for single constructs and 25 ng each for mixtures. Means ± SEM with individual data points (n = 5) are plotted. **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation). Only relevant comparisons are shown. (B) Representative immunoblots of extracts as described in part A. Duplicate blots were probed with Flag or HA antibodies to independently assess levels of co-expressed Flag- or HA-tagged WT or Flag-tagged Δ229–235 SARM1. Both blots were probed for ZsGreen and GAPDH (acting as a loading control) to confirm the blots were representative replicates. A faint, non-specific cross-reaction of the HA antibody to Flag-tagged SARM1 was consistently seen under the conditions used (WT-Flag only lane). Molecular weight markers (kDa) are shown on the right of each panel. (C) Representative immunoblots (of n = 3) of reciprocal co-immunoprecipitation of HA-tagged WT SARM1 with Flag-tagged WT or Δ229–235 SARM1. Immunoprecipitations using Flag or HA antibodies or no antibody were performed on the same extracts of transfected HEK 293T cells co-expressing HA-tagged WT SARM1 with Flag-tagged WT or Flag-tagged Δ229–235 SARM1 (from equal amounts of construct), or expressing individual proteins. Duplicate immunoblots of immunoprecipitated proteins, and the original extracts used in the immunoprecipitations (input), were probed with Flag or HA antibodies. A small amount of non-specific binding of tagged proteins to protein A/G beads was consistently seen for inputs with the highest expression levels. Molecular weight markers (kDa) are shown on the right of each panel. (D) Constitutive NADase activity (in the presence of 25 µM NAD+) of immunoprecipitated WT + Δ229–235 SARM1 complexes compared to WT or Δ229–235 SARM1 alone. All proteins were Flag-tagged to ensure complete immunoprecipitation of complexes of WT and Δ229–235 SARM1. Means ± SEM with individual data points (n = 4) are plotted. *p < 0.05 and **p < 0.01, one-way ANOVA with Tukey’s correction (after log transformation). (E) Inducibility of immunoprecipitated WT + Δ229–235 SARM1 complexes and WT or Δ229–235 SARM1 alone by 50 µm NMN (in the presence of 25 µM NAD+). Constitutive activities (no NMN) are as in part D with rates + NMN calculated from assays performed in parallel. Means ± SEM with individual data points (n = 4) are plotted. **p < 0.01, multiple paired t tests of rates ± NMN with FDR correction (after log transformation).
 
 SARM1 readily homo-multimerises in solution to form an octameric ring structure (Gerdts et al., 2013; Horsefield et al., 2019; Sporny et al., 2019; Bratkowski et al., 2020; Jiang et al., 2020; Sporny et al., 2020; Figley et al., 2021; Shen et al., 2021) and our finding that (Flag-tagged) Δ229–235 SARM1 efficiently co-immunoprecipitates with (HA-tagged) WT SARM1 from co-expressing cells is indicative that hetero-oligomers of WT and variant SARM1 are also readily formed (Figure 5C). Direct assaying of the NADase activity of hetero-oligomers revealed their constitutive NADase activity to be intermediate between that of each protein alone, but this still represents very strong GoF relative to WT SARM1 alone (Figure 5D). This is consistent with each protein retaining its own individual constitutive activity within the hetero-oligomers, although their lack of NMN-responsiveness suggests that WT SARM1 within the complexes may be altered in that respect (Figure 5E).
 
-## Acute expression of strong GoF Δ229-235 SARM1 reduces viability of sympathetic neurons under stress conditions in an NADase-dependent manner
+### Acute expression of strong GoF Δ229-235 SARM1 reduces viability of sympathetic neurons under stress conditions in an NADase-dependent manner
 
 To test the effects of greatly enhanced constitutive activity in neurons, we used an established method involving microinjection of controlled amounts of expression constructs into cultured sympathetic neurons from the superior cervical ganglion (SCG neurons), a neuronal subtype very amenable to this approach (Gilley and Loreto, 2020).
 
 We first compared the effects of our representative strong GoF SARM1 variant, Δ229–235 SARM1, with those of WT SARM1. We used wild-type SCG neurons for these experiments so that exogenous Δ229–235 SARM1 would be expressed alongside endogenous (WT) SARM1 in order to partially model neurons in individuals heterozygous for the Δ229–235 SARM1 allele. However, we minimised the amount of SARM1 expression vector injected to reduce possible artefacts of high expression, whilst still maintaining levels that are functionally relevant (Figure 6—figure supplement 1), so the endogenous murine SARM1 will likely be in excess of the exogenous SARM1 in these experiments. A DsRed expression construct was co-injected to improve visualisation of the targeted neurons and their neurites (co-expression of ZsGreen from the SARM1 construct being insufficient under these conditions) and we consistently saw substantially fewer DsRed labelled neurons 24 hr after injection with the Δ229–235 SARM1 construct compared to the WT SARM1 construct or empty vector (Figure 6A,B and Figure 6—figure supplement 2A). The intensity of DsRed in the few labelled Δ229–235 SARM1 neurons that were present was also greatly reduced. We found that NR supplementation boosted DsRed expression and visualisation of the Δ229–235 SARM1 neurons (Figure 6A,B) suggesting that strong NADase GoF suppresses DsRed expression in neurons in the same way that it suppresses co-expression of ZsGreen in transfected HEK 293T cells (Figure 2D,E and Figure 2—figure supplement 2B,C), although a separate effect on neuronal viability also cannot be ruled out.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig6-v3.jpg)
+
+**Figure 6.:** (A) Representative images of DsRed-positive wild-type SCG neurons 24 hr after microinjection with expression constructs for WT or Δ229–235 SARM1 and DsRed (at 2.5 ng/µl and 40 ng/µl in the injection mix, respectively), with or without supplementation of the culture medium with 2 mM NR at the time of injection. Equal numbers of neurons were injected. (B) Quantification of DsRed-positive neurons for the conditions described in part A. Means ± SEM with individual data points (n = 5 or 17) are plotted. *p < 0.05 and ***p < 0.001, one-way ANOVA with Tukey’s correction. Only relevant comparisons are shown. (C) Time course of survival of DsRed-positive neurons after manipulation of culture conditions as indicated. Neurons were injected as in part A and maintained in medium containing NR. Manipulations were performed 24 hr after injection which corresponds to time 0 on the graphs. Survival of injected, DsRed-labelled neurons was assessed as described in part D and is expressed as a percentage of those present at time 0. Means ± SEM (n = 4 or 5) are plotted. ***p < 0.001, two-way ANOVA with Šidák’s correction. (D) Representative images for data presented in part C. Only one representative condition is shown for neurons injected with the WT SARM1 construct. Survival of DsRed-positive neurons was assessed by comparing signal intensity and neuron size / shape at different timepoints, a method that provides an accurate reflection of survival rates (Gilley and Coleman, 2010).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Images of transected DsRed-labelled neurites of Sarm1-/- SCG neurons at the time of cut (0h) and 24 hr (24h) after cut. Neurons had been microinjected with a mix containing 2.5 ng/µl of WT or NADase-dead E642A SARM1 expression construct together with a DsRed expression construct (pDsRed2) at 40 ng/µl (to allow visualisation) 48 hr prior to cut. Sarm1-/- SCG neurites are protected for several days after transection but the WT SARM1 expression construct used at this concentration is sufficient to restore degeneration of almost all the cut neurites within 24 hr. In contrast, neurites remain intact after injection of the construct for NADase-defective E642A mutant SARM1. (B) Quantification of neurite survival at 24 hr after cut for experiments described in panel A. The number of intact neurites with continuous DsRed fluorescence at 24 hr is shown as a percentage of intact neurites at 0 hr. Means ± SEM with individual data points (n = 3) are plotted. ***p < 0.001, paired t test. These data establish a low concentration of a WT SARM1 expression construct for injection that still provides a functionally-relevant level of expression, although the exogenous WT SARM1 is below the threshold for detection by immunostaining under these conditions. SARM1 (untagged) was expressed from a pCMV-Tag2 vector backbone in these experiments whereas SARM1 with a C-terminal Flag tag was expressed from a pLVX-IRES-ZsGreen1 vector backbone in experiments in Figure 6. However, in both cases expression is driven by the same CMV promoter and the use of the different vector backbones does not alter the functional outcome (data not shown).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Numbers of DsRed-positive neurons 24 hr after microinjection with empty pLVX-IRES-ZsGreen1 vector (the backbone for the SARM1 constructs used in Figure 6) and DsRed (at 2.5 ng/µl and 40 ng/µl in the injection mix, respectively) ± 2 mM NR addition to the culture medium at the time of injection. Equal numbers of neurons were injected. Means ± SEM with individual data points (n = 3) are plotted. ns (not significant) = p > 0.05, paired t test. (B) Time course of survival of DsRed-positive neurons injected as in part A and maintained in medium containing NR prior to removal of NR and addition of 100 nM FK866 24 hr after injection (corresponding to time 0 on the graphs). Survival of injected neurons was assessed as described in Figure 6D and is expressed as a percentage of those present at time 0. Means ± SEM (n = 3) are plotted.
 
 The greatly improved visualisation of neurons injected with the Δ229–235 SARM1 expression construct in the presence of NR allowed us to next assess their response to various stresses. Intriguingly, we found that the modest stresses associated with changes in culture conditions as a result of media change, even to new NR-containing medium, was sufficient to trigger a substantial loss of the Δ229–235 SARM1 neurons (compared to not changing media), and further manipulations designed to reduce NAD+ biosynthesis – removal of NR, or a combination of NR removal and incubation with NAMPT inhibitor FK866 to block the rate-limiting step in the NAD+ salvage pathway – caused additional, incremental decreases in cell survival (Figure 6C and D). In contrast, neurons injected with the WT SARM1 construct or empty vector were not substantially affected by any of the manipulations (Figure 6C and D and Figure 6—figure supplement 2). Importantly, we could not differentiate the timing of cell death and neurite degeneration in these experiments, suggesting either that the primary effect is on neuronal viability or that separate cell body and neurite death mechanisms occur simultaneously.
 
@@ -140,9 +625,9 @@ In order to assess whether NADase activity is required for the pro-death effects
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig7-v3.jpg)
 
-**Figure 7.:** (A) Relative levels of NAD+ in extracts of HEK 293T cells 24 hr after transfection with expression constructs for WT, E642A, Δ229–235 or Δ229–235/E642A SARM1, as per Figure 2. Means ± SEM with individual data points (n = 4) are plotted. *p < 0.05, **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation). Only relevant comparisons are shown. (B) Representative immunoblots of extracts as described in part A. Blots were probed as in Figure 2D. Molecular weight markers (kDa) are shown on the right of each panel. (C) Numbers of DsRed-positive neurons 24 hr after microinjection with expression constructs for Δ229–235 SARM1 or Δ229–235/E642A SARM1 and DsRed (at 2.5 ng/µl and 40 ng/µl in the injection mix, respectively), with or without supplementation of the culture medium with 2 mM NR at the time of injection. Equal numbers of neurons were injected. Means ± SEM with individual data points (n = 4) are plotted. **p < 0.01, ***p < 0.001 and ns = p > 0.05, one-way ANOVA with Tukey’s correction. Only relevant comparisons are shown. (D) Time course of survival of DsRed-positive neurons injected as in part C and maintained in medium containing NR prior to removal of NR and addition of 100 nM FK866 24 hr after injection (corresponding to time 0 on the graphs). Survival of injected neurons was assessed as described in Figure 5D and is expressed as a percentage of those present at time 0. Means ± SEM (n = 4) are plotted. ***p < 0.001, two-way ANOVA with Šidák’s correction.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Relative levels of NAD+ in extracts of HEK 293T cells 24 hr after transfection with expression constructs for WT, E642A, Δ229–235 or Δ229–235/E642A SARM1, as per Figure 2. Means ± SEM with individual data points (n = 4) are plotted. *p < 0.05, **p < 0.01, ***p < 0.001 and ns (not significant) = p > 0.05, one-way ANOVA with Tukey’s correction (after log transformation). Only relevant comparisons are shown. (B) Representative immunoblots of extracts as described in part A. Blots were probed as in Figure 2D. Molecular weight markers (kDa) are shown on the right of each panel. (C) Numbers of DsRed-positive neurons 24 hr after microinjection with expression constructs for Δ229–235 SARM1 or Δ229–235/E642A SARM1 and DsRed (at 2.5 ng/µl and 40 ng/µl in the injection mix, respectively), with or without supplementation of the culture medium with 2 mM NR at the time of injection. Equal numbers of neurons were injected. Means ± SEM with individual data points (n = 4) are plotted. **p < 0.01, ***p < 0.001 and ns = p > 0.05, one-way ANOVA with Tukey’s correction. Only relevant comparisons are shown. (D) Time course of survival of DsRed-positive neurons injected as in part C and maintained in medium containing NR prior to removal of NR and addition of 100 nM FK866 24 hr after injection (corresponding to time 0 on the graphs). Survival of injected neurons was assessed as described in Figure 5D and is expressed as a percentage of those present at time 0. Means ± SEM (n = 4) are plotted. ***p < 0.001, two-way ANOVA with Šidák’s correction.
 
-## Evidence for enrichment of strong GoF SARM1 variants in ALS, HSP and other motor nerve disorder patients
+### Evidence for enrichment of strong GoF SARM1 variants in ALS, HSP and other motor nerve disorder patients
 
 Among the total of 23 SARM1 ARM domain and other N-terminal coding variants seen in patients and controls in the Project MinE DF1 and Answer ALS databases, we have identified a group of seven of the exclusively patient-associated variants – L223P, Δ229–235, Δ249–252, R267W, V331E, E340K and T385A SARM1 – as having very strong constitutive NADase GoF, with each being 10–20 times more active than WT SARM1. No other variants came close to this level, although V112I (in a patient) and V88M and A210V (in controls) showed more modest increases in constitutive activity to 1.7–2.2 times that of WT SARM1. Therefore, within these datasets, strong NADase GoF SARM1 alleles are only seen in patients and never in controls. This is consistent with our hypothesis that strong SARM1 NADase GoF is a risk factor for ALS.
 
@@ -150,13 +635,449 @@ In order to investigate this association in more depth, we assessed whether any 
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/70905/elife-70905-fig8-v3.jpg)
 
-**Figure 8.:** * Extra samples in Project MinE DF2 that were not part of DF1. † MAFs for the P332Q SARM1 allele in each dataset (in cases plus controls combined) of 0.012 (MinE DF1), 0.012 (Answer ALS), 0.014 (MinE DF2 extras), 0.0055 (GENESIS), 0.0086 (UCL), 0.0010 (LBC) and 0.0083 (HSP study) are, barring the more ethnically-diverse GENESIS cohorts, broadly consistent with each dataset containing predominantly European samples as the European MAF of 0.012 is substantially higher than in other populations (gnomAD v3.1.1).Figure 8—source data 1.Figure 8.
+**Figure 8.:** * Extra samples in Project MinE DF2 that were not part of DF1. † MAFs for the P332Q SARM1 allele in each dataset (in cases plus controls combined) of 0.012 (MinE DF1), 0.012 (Answer ALS), 0.014 (MinE DF2 extras), 0.0055 (GENESIS), 0.0086 (UCL), 0.0010 (LBC) and 0.0083 (HSP study) are, barring the more ethnically-diverse GENESIS cohorts, broadly consistent with each dataset containing predominantly European samples as the European MAF of 0.012 is substantially higher than in other populations (gnomAD v3.1.1).
 
 We next performed statistical analyses on aggregated data from all the datasets to test the strength of the association specifically between SARM1 GoF and motor nerve disorders. Crucially, burden testing of the group of seven strong GoF variant alleles together in the combined datasets revealed a highly significant association with disease (burden test and SKAT-O p = 0.00017), whereas there was no clear association with disease when considering all the other alleles as a group (burden test p = 0.47, SKAT-O p = 0.61). In addition, there is a greater than four times enrichment of the strong GoF alleles among our aggregated patient cohorts compared to European (non-Finnish) non-neuro samples from gnomAD v3.1.1 (Table 3 - MAF of 0.00058 vs 0.00014) and, despite the presence of a few carriers of strong GoF SARM1 alleles in this gnomAD cohort and the uncertainty regarding their health status (see Table 3 legend), their inclusion as additional controls in the statistical tests actually strengthens the association between the SARM1 strong GoF alleles and disease (burden test p = 0.000025, SKAT-O p = 0.000057). Notably, disease-association also remains even when the patient-associated V112I SARM1 allele and control-associated V88M and A210V SARM1 alleles, encoding more modest GoF variants, are grouped with the strong GoF alleles (burden test p = 0.0042, SKAT-O p = 0.0021 excluding gnomAD samples, and burden test p = 0.000047, SKAT-O p = 0.00019 including gnomAD samples). Together, these tests suggest that SARM1 ARM domain coding variation that results in constitutive NADase hyperactivation is very strongly associated with ALS and other motor nerve disorders. Individual-level data were not available for all datasets to identify covariates to correct for population stratification, but the use of broadly matched datasets to minimise the effect of population variation (see Materials and methods) means that results are likely to reflect true disease-associated genetic variation.
 
-## Phenotypic heterogeneity and variable age-of-onset in patients with SARM1 GoF alleles
+**Table 3.**
+ Occurrences and MAFs of SARM1 alleles encoding ARM domain and other N-terminal variants aggregated from all datasets used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Variant</th>
+      <th colspan="2">Study alleles*</th>
+      <th rowspan="2">gnomAD alleles†</th>
+      <th colspan="2">Study MAF*</th>
+      <th rowspan="2">gnomAD MAF†</th>
+    </tr>
+    <tr>
+      <th>Cases</th>
+      <th>Controls</th>
+      <th>Cases</th>
+      <th>Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"></td>
+      <td>/22,234</td>
+      <td>/20,804</td>
+      <td>/63,882</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Strong GoF</td>
+      <td>L223P</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Δ229–235</td>
+      <td>5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.00022</td>
+      <td>0</td>
+      <td>0.000063</td>
+    </tr>
+    <tr>
+      <td>Δ249–252</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R267W</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000090</td>
+      <td>0</td>
+      <td>0.000016</td>
+    </tr>
+    <tr>
+      <td>V331E</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>E340K</td>
+      <td>1</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0.000063</td>
+    </tr>
+    <tr>
+      <td>T385A</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000090</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Combined</td>
+      <td>13</td>
+      <td>0</td>
+      <td>9</td>
+      <td>0.00058</td>
+      <td>0</td>
+      <td>0.00014</td>
+    </tr>
+    <tr>
+      <td rowspan="16">Other</td>
+      <td>G35E</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0.000016</td>
+    </tr>
+    <tr>
+      <td>T39M</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000048</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L76fs</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000048</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>V88M</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000048</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>V112I</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0.000016</td>
+    </tr>
+    <tr>
+      <td>R131G</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0.000016</td>
+    </tr>
+    <tr>
+      <td>A210V</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000048</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A240E</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>R244S</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A250T</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.000045</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A275V</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.000045</td>
+      <td>0.000096</td>
+      <td>0.000031</td>
+    </tr>
+    <tr>
+      <td>A301S</td>
+      <td>6</td>
+      <td>1</td>
+      <td>8</td>
+      <td>0.00027</td>
+      <td>0.000048</td>
+      <td>0.00013</td>
+    </tr>
+    <tr>
+      <td>R310H</td>
+      <td>2</td>
+      <td>2</td>
+      <td>11</td>
+      <td>0.000090</td>
+      <td>0.000096</td>
+      <td>0.00017</td>
+    </tr>
+    <tr>
+      <td>N337D</td>
+      <td>3</td>
+      <td>4</td>
+      <td>26</td>
+      <td>0.00013</td>
+      <td>0.00019</td>
+      <td>0.00041</td>
+    </tr>
+    <tr>
+      <td>A341V</td>
+      <td>3</td>
+      <td>2</td>
+      <td>8</td>
+      <td>0.00013</td>
+      <td>0.000096</td>
+      <td>0.00013</td>
+    </tr>
+    <tr>
+      <td>Combined</td>
+      <td>21</td>
+      <td>15</td>
+      <td>58</td>
+      <td>0.00094</td>
+      <td>0.00072</td>
+      <td>0.00091</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P332Q*</td>
+      <td>198</td>
+      <td>206</td>
+      <td>789</td>
+      <td>0.0089</td>
+      <td>0.010</td>
+      <td>0.012</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Aggregated values for all datasets listed in Figure 8.†Values for the non-neuro European (non-Finnish) population in gnomAD v3.1.1. These values do not include case samples collected as part of a neurologic or psychiatric case/control study. However, that does not guarantee that any carriers of the alleles listed are not already affected or will not go on to develop a motor nerve disorder._
+
+### Phenotypic heterogeneity and variable age-of-onset in patients with SARM1 GoF alleles
 
 Finally, we collated clinical information for all the individuals in our combined datasets that are heterozygous for the SARM1 alleles encoding the strong GoF variants identified in this study (Table 4). Information is also provided for one additional ALS case heterozygous for the Δ229–235 variant SARM1 allele from an independent source, and for the one individual heterozygous for the allele encoding moderate GoF V112I SARM1 for comparison. Intriguingly, as well as confirming there is no patient duplication among the group, this reveals a broad range of clinical presentation and a highly variable age-of-onset among the cases, with no obvious heritability.
+
+**Table 4.**
+ Clinical information for motor nerve disorder patients heterozygous for SARM1 GoF alleles.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical diagnosis(site of onset)</th>
+      <th>SARM1variant</th>
+      <th>Cohort</th>
+      <th>Sex</th>
+      <th>Age-of-onset/ progression</th>
+      <th>Other variants</th>
+      <th>Close relatives affected</th>
+      <th>Other observations / co-morbidities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ALS (bulbar)</td>
+      <td>L223P</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>59 / 3 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (bulbar)</td>
+      <td>Δ229–235</td>
+      <td>Answer ALS</td>
+      <td>F</td>
+      <td>70 / 2 yr. dead</td>
+      <td>None†</td>
+      <td>Not known</td>
+      <td>- No FTD- Hyperlipidaemia</td>
+    </tr>
+    <tr>
+      <td>ALS</td>
+      <td>Δ229–235</td>
+      <td>GENESIS</td>
+      <td>M</td>
+      <td>66 / 1 yr. dead</td>
+      <td>‡SOD1</td>
+      <td>None</td>
+      <td>- Rapid progression</td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>Δ229–235</td>
+      <td>Unattributed</td>
+      <td>F</td>
+      <td>71 / 2 yr. dead</td>
+      <td>Not available</td>
+      <td>None</td>
+      <td>- Lower extremity onset- FTD</td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>Δ229–235</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>42 / 3 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>Δ229–235</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>57 / 3 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (bulbar)</td>
+      <td>Δ249–252</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>65 / 4 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>R267W</td>
+      <td>Answer ALS</td>
+      <td>M</td>
+      <td>58 / 2 yr. dead</td>
+      <td>§FIG4†</td>
+      <td>Not known</td>
+      <td>- Lower limb onset- COPD and Type II diabetes</td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>V331E</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>53 / 5 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>E340K</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>75 / 6 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>T385A</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>69 / 6 yr. alive</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ALS (bulbar)</td>
+      <td>T385A</td>
+      <td>Project MinE</td>
+      <td>F</td>
+      <td>63 / 1 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HSP (pure)</td>
+      <td>Δ229–235</td>
+      <td>GENESIS</td>
+      <td>F</td>
+      <td>5 / 14 yr. alive</td>
+      <td>Not available</td>
+      <td>None</td>
+      <td>- Presented with lower extremity spasticity and hyperreflexia extensor plantar responses- Wheelchair use at 19 yr.- Normal total spine MRI (smallish thoracic cord)</td>
+    </tr>
+    <tr>
+      <td>Upper and lower motor nerve disorder</td>
+      <td>R267W</td>
+      <td>UCL</td>
+      <td>M</td>
+      <td>40 / 25 yr. alive</td>
+      <td>None ¶</td>
+      <td>None</td>
+      <td>- Presented with right leg weakness, thigh fasciculations and slowly progressive wasting- No sensory, bladder, bowel, or bulbar involvement- Mild hand weakness and brisk reflexes by 50 yr.- Lower limb spasticity by 61 yr.- Still ambulates independently- Proximal lower limb denervation&gt; distal upper limb denervation.</td>
+    </tr>
+    <tr>
+      <td>ALS (spinal)</td>
+      <td>V112I</td>
+      <td>Project MinE</td>
+      <td>M</td>
+      <td>52 / 17 yr. dead</td>
+      <td>None *</td>
+      <td>Not known</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_FTD; frontotemporal dementia, COPD; chronic obstructive pulmonary disease.*Screened for variation in C9orf72, FUS, SOD1 and TARDBP.†Screened for variation in ALS2, ATXN2, C9orf72, CCNF, CHCHD10, FUS, OPTN, PFN1, SOD1, TARDBP, TBK1, UBQLN2, VAPB and VCP.‡Heterozygous for the partially-penetrant I114T SOD1 variant associated with sporadic ALS.§Heterozygous for the L17P Figure 4 variant, a variant that has previously only been associated with CMT4J in combination with a null allele.¶Screened for variation in Androgen Receptor expansion, ALS2, ANG, C9orf72, CYP7B1, DCTN1, FA2H, Figure 4, FUS, GJC2, KIAA0196, KIF5A, NIPA1, OPTN, PLP1, PNPLA6, REEP1, RTN2, SPAST, SPG7, SLC52A1, SLC52A2, SLC52A3, SMN, SOD1, TARDBP, UBQLN2, VAPB, VCP, whole mtDNA sequencing in blood._
 
 The lack of any clear and consistent trend in disease severity probably indicates that SARM1 GoF is not the only driver of disease in some or all of these cases. In this respect it is notable that two of the ALS cases are also heterozygous for I114T (previously reported as I113T) SOD1 and L17P FIG4 variant alleles that have previously been linked to ALS or recessive Charcot-Marie-Tooth disease type 4 J (CMT4J). Given that the I114T SOD1 allele shows incomplete penetrance (Lopate et al., 2010) and the L17P FIG4 allele has previously only been associated with CMT4J in combination with a null allele (Nicholson et al., 2011), it raises the possibility that an interaction with the SARM1 GoF alleles is critical for pathogenesis in these ALS cases. Therefore, an interaction between SARM1 GoF alleles and other risk alleles may enhance phenotypic expressivity and underlie some of the variability in clinical presentation.
 
@@ -180,47 +1101,47 @@ In summary, we report seven rare SARM1 alleles encoding variants with constituti
 
 ## Materials and methods
 
-## Constructs and reagents
+### Constructs and reagents
 
 The bicistronic pLVX-IRES-ZsGreen1 vector (Clontech / Takara Bio 632187) was the backbone for all SARM1 expression constructs used in this study, unless stated otherwise. SARM1 and ZsGreen(1) are co-expressed from a bicistronic mRNA transcript under the control of the CMV promoter. The complete open reading frame (ORF) of the canonical 724 amino acid human SARM1 protein was cloned into the first cistron between the EcoRI and SpeI restriction sites. An in-frame Flag tag followed by a stop codon were introduced between the XbaI and BamHI restriction sites immediately 3' to SARM1 ORF at the C-terminus. The expressed SARM1 thus possesses a C-terminal Flag (after a four amino acid linker). ZsGreen occupies the second cistron and undergoes IRES-driven translation. For experiments in Figure 6—figure supplement 1, untagged SARM1 was expressed from a pCMV-Tag4A vector backbone (Agilent Technologies) with the 724 amnio acid ORF, including a consensus Kozak sequence immediately 5' to the ATG codon and a stop codon at the 3' end of the ORF, cloned between the BamHI and XhoI restriction sites of the multiple cloning site. Point mutations were introduced into constructs by QuikChange II site-directed mutagenesis (Stratagene) and microdeletions were introduced using overlap extension PCR (Lee et al., 2010). The presence of the mutations and absence of other PCR errors was confirmed by DNA sequencing (Department of Biochemistry, University of Cambridge). pDsRed2-N1 (Clontech) was used for expression of variant Discosoma red fluorescent protein (DsRed) to label microinjected neurons and their neurites.
 
 PBS without calcium and magnesium (Merck) was used throughout, unless stated otherwise. NAD+ and NMN (both Merck) were dissolved in water and stored frozen as concentrated stocks. Nicotinamide riboside (NR) was prepared as a 100 mM stock from Tru Niagen capsules by dissolving the contents in PBS and passing through a 0.22 µm filter. NAMPT inhibitor FK866 was a kind gift from Prof. Armando Genazzani, University of Novara.
 
-## Cell lines and transfection
+### Cell lines and transfection
 
 Human embryonic kidney (HEK) 293T cells (clone 17, [HEK 293T/17]) were obtained from the American Type Culture Collection (ATCC, CRL-11268, RRID:CVCL_1926) and had been authenticated by STR profiling. Mycoplasma contamination was not detected. Cells were grown in DMEM with 4500 mg/L glucose and 110 mg/L sodium pyruvate (PAA), supplemented with 2 mM glutamine, 1 % penicillin/streptomycin (both Invitrogen), and 10 % fetal bovine serum (PAA). Cells at 50–70% confluence were transfected with expression constructs (as described in the text / figure legends) using Lipofectamine 2000 reagent (Invitrogen) according to the manufacturer’s instructions. Amounts of DNA constructs transfected are described in the figure legends.
 
-## Measurements of nucleotide levels in transfected HEK 293T cell extracts
+### Measurements of nucleotide levels in transfected HEK 293T cell extracts
 
 Transfected HEK 293T cells (from individual wells of 24-well plates) were collected and washed in ice-cold PBS 24 hr after transfection and lysed in ice-cold KHM buffer (110 mM potassium acetate, 20 mM HEPES pH 7.4, 2 mM MgCl2, 0.1 mM digitonin) containing cOmplete, Mini, EDTA-free protease inhibitor cocktail (Roche). Efficient lysis with KHM buffer required an initial trituration by pipetting and intermittent vortexing over a 10 min incubation on ice. Lysates were centrifuged for 5 min at 3000 rpm in a microfuge at 4 °C to pellet insoluble material, and supernatants were then collected on ice and diluted to 0.5 µg/µl in cold KHM buffer after protein concentrations had been determined using the Pierce BCA assay (Thermo Fisher Scientific). The NAD/NADH-Glo and NADP/NADPH-Glo assays (Promega) were used to measure NAD+ and NADP+ in extracts. First, 25 µl of each extract was mixed with 12.5 µl 0.4 M HCl and heated to 60 °C for 15 min to degrade NADH and NADPH before being allowed to cool to room temperature (RT) for 10 min. Reactions were then neutralised by adding 12.5 µl 0.5 M Tris base and 10 µl of each neutralised reaction was mixed with 10 µl of the relevant detection reagent on ice in wells of a 384-well white polystyrene microplate (Corning). Once all reactions had been set up the plate was moved to a GloMax Explorer plate reader (Promega) and incubated for 40 min at 25 °C before reading for luminescence. The CellTiter-Glo assay (Promega) was used to measure ATP in extracts. Here, 10 µl of extract was mixed directly with 10 µl of assay reagent on ice in wells of a 384-well white polystyrene microplate. Luminescence was then read after 10 min at 25 °C using a GloMax Explorer plate reader. Concentrations of nucleotides were determined from standard curves generated from dilution series of the relevant nucleotides and then calculated as proportions of the amount in extracts from cells transfected in parallel with empty vector.
 
-## Immunoprecipitation of recombinant SARM1 from HEK 293T cells
+### Immunoprecipitation of recombinant SARM1 from HEK 293T cells
 
 Recombinant, C-terminal Flag-tagged or HA-tagged human SARM1 (WT or variant) was purified from HEK 293T cells by immunoprecipitation. HEK 293T cells in 10 cm and 6 cm dishes and individual wells of a 6 cm dish were respectively transfected with 24 µg, 10 µg and 4 µg of SARM1 expression construct. Media was supplemented with 2 mM NR at the time of transfection. Cells were lysed in KHM buffer as for the measurements of nucleotide levels in transfected HEK 293T cells (see above) but extracts were instead diluted to 1 µg/µl in cold KHM buffer after determining protein concentration. For immunoprecipitation, extracts were incubated overnight at 4 °C with rotation with 20 µg/ml mouse ANTI-FLAG M2 monoclonal antibody (Sigma-Aldrich F3165, RRID:AB_259529) or 2 µg/ml mouse anti-HA monoclonal antibody, clone 12CA5 (Sigma-Aldrich 11583816001, RRID:AB_514505) and 50 µl/ml of pre-washed Pierce magnetic protein A/G beads (Thermo Fisher Scientific). For co-immunoprecipitations, beads were collected on a magnetic rack and washed 3 x with KHM buffer and 1 x with PBS (with protease inhibitors) and then resuspended in PBS containing 1 µg/µl BSA. Beads were resuspended in 150 µl per ml of the original immunoprecipitation volume for normal yield proteins, or 25–50 µl for low yield proteins. Inclusion of BSA in the re-suspension buffer allowed samples to be frozen without substantial loss of SARM1 activity (activity is almost completely lost after one freeze/thaw cycle without its inclusion). The concentrations of SARM1 proteins in the bead suspension were determined by comparison to a standard curve generated from a dilution series of recombinant SARM1 of known concentration (purified from insect cells) after detection by immunoblotting using a rabbit polyclonal antibody raised against the SAM domains of human SARM1 (both kindly provided by AstraZeneca).
 
 Of particular note, the use of KHM lysis buffer is critical for subsequent assaying of the NADase activity of the purified SARM1 protein. Harsher lysis buffers with high concentrations of strong detergents (e.g. RIPA-based buffers) themselves cause substantial activation of SARM1 NADase and a loss of responsiveness to NMN.
 
-## NADase assays of recombinant purified SARM1
+### NADase assays of recombinant purified SARM1
 
 A series of test assays were first performed to define appropriate concentrations of immunoprecipitated SARM1 proteins and the earliest, reliable assay timepoints to obtain rates as close as possible to the maximal rate under the various reaction conditions used. Optimised reaction conditions were as follows: 25 µl reactions (overall 1 x PBS) contained 1 ng/µl SARM1 protein for strong GoF variants (L223P, Δ229–235, Δ249–252, V331E, E340K and T385A) or SAM-TIR fragment, or 5 ng/µl of WT SARM1 and other variants, together with 25 µM NAD+ ± 10 µM or 50 µM NMN. Reactions were kept on ice until all had been set up. All reactions were performed with the recombinant SARM1 still attached to beads as inefficient elution severely restricted the yield of the poorly expressed GoF variants. Bead suspensions were thoroughly mixed prior to addition to the reactions. Constitutive (basal) NAD+ consumption was measured from reactions containing just NAD+ as the difference between starting levels (0 hr) and levels remaining after a 1 hr (for strong GoF variants) or 2 hr (for all other variants) incubation at 25 °C. NAD+ consumption in the presence of NMN (both 10 µM and 50 µM) was calculated after a 1 hr incubation for all variants. Reactions were each mixed once mid-way through the incubation period to resuspend the beads. To measure NAD+ using the NAD/NADH-Glo assay, 5 µl aliquots of the reaction were removed immediately after setting up (whilst still on ice), to obtain precise starting levels in individual reactions, and after the defined times listed above. Aliquots were then mixed with 2.5 µl of 0.4 M HCl, to stop the reaction, and neutralised by mixing with 2.5 µl 0.5 M Tris base after 10 min. To bring NAD+ concentrations down to the linear range of the NAD/NADH-Gloassay, neutralised samples were subsequently diluted 1 in 50 in a buffer consisting of 50 % PBS, 25 % 0.4 M HCL, 25 % 0.5 M Tris base. Ten µl of the diluted sample was then mixed with 10 µl of detection reagent on ice in wells of a 384-well white polystyrene microplate (Corning). Once all reactions had been set up the plate was moved to a GloMax Explorer plate reader (Promega) and incubated for 40 min at 25 °C before reading for luminescence. NAD+ concentrations were determined from standard curves (as above). NAD+ consumption rates were converted to mol consumed per min per mol of SARM1 protein (mol/min/mol SARM1). This allows a direct comparison of rates between full-length SARM1 and the SAM-TIR fragment. Individual data points for each separate protein preparation are the means of two technical replicates in most cases. Non-specific activity on bead/antibody complexes in control immunoprecipitations (from HEK 293T cells transfected with empty vector) was negligible at less than 0.5 % of the constitutive NAD+ consumption seen for WT SARM1 (average of n = 4 assays).
 
-## Immunoblotting
+### Immunoblotting
 
 Protein extracts from transfected HEK 293T cells used for nucleotide measurements (0.5 µg protein/µl, see above) were diluted 1 in 2 with 2 x SDS-PAGE loading buffer, and bead suspensions of immunoprecipitated recombinant SARM1 proteins were diluted 1 in 16 for immunoblotting. Samples were incubated at 100 °C for 3 min and 10 µl of sample per lane resolved on 4–20% gradient gels (Bio-Rad) before being transferred to Immobilon-P membrane (Millipore). Blots were blocked in TBS (20 mM Tris p.H. 8.3, 150 mM NaCl) containing 5 % skim milk powder for 30 mins at RT before being incubated overnight at 4 °C with primary antibody in TBS containing 0.05 % Tween-20 (Merck) (TBST) and 5 % milk. After 3 × 10 min washes in TBST, blots were incubated for 1–2 hr at RT with appropriate HRP-conjugated secondary antibodies (diluted 1 in 3,000, Bio-Rad) in TBST with 5 % milk. After 3 × 10 min washes in TBST and one rinse in TBS, blots were incubated with Pierce ECL Western Blotting Substrate or SuperSignal West Dura Extended Duration Substrate (both Thermo Fisher Scientific) and imaged using an Alliance chemiluminescence imaging system (UVITEC Cambridge). Relative band intensities on captured digital images were determined from areas under histogram peaks using Fiji software (https://fiji.sc).
 
 The following primary antibodies were used: mouse ANTI-FLAG M2 monoclonal antibody (Sigma-Aldrich F3165, RRID:AB_259529, 2 µg/ml as standard or 0.5 µg/ml for probing immunoblots of co-immunoprecipitations), mouse anti-ZsGreen1 monoclonal antibody, clone OTI2C2 (OriGene TA180002, RRID:AB_2622267, 1 in 1000), mouse anti-GAPDH monoclonal antibody, clone 6C5 (Abcam ab8245, RRID:AB_2107448, 1 in 2000), mouse anti-HA monoclonal antibody, clone 12CA5 (Sigma-Aldrich 11583816001, RRID:AB_514505, 0.2 µg/ml as standard or 0.05 µg/ml for immunoblots of co-immunoprecipitations), a rabbit polyclonal antibody raised against the SAM domains of human SARM1 (kindly provided by AstraZeneca, 1 in 2000) and a mouse anti-SARM1 monoclonal antibody (Chen et al., 2011) (1 in 2,000).
 
-## Primary SCG neuron cultures and microinjection
+### Primary SCG neuron cultures and microinjection
 
 SCG neuron cultures were prepared from wild-type P1-P3 mouse pups (C57BL/6 J, RRID:IMSR_JAX:000664), or Sarm1-/- P1-P3 pups (RRID:MGI:3765957) for Figure 6—figure supplement 1 only, and were microinjected following established protocols (Gilley and Loreto, 2020). Mice were used in accordance with the Home Office Animal Scientific Procedures Act (ASPA), 1986 under project licence P98A03BF9. Dissected SCG ganglia were incubated at 37 °C for 20 min in 0.025 % trypsin (Sigma) dissolved in PBS followed by 20 min in 0.2 % collagenase type II (Gibco) in PBS (with calcium and magnesium). After, ganglia were gently triturated using a pipette tip in SCG culture medium comprising Dulbecco’s Modified Eagle’s Medium (DMEM) (4500 mg/L glucose and 110 mg/L sodium pyruvate, Sigma) supplemented with 2 mM glutamine (Invitrogen), 1 % penicillin/streptomycin (Invitrogen), 10 % fetal bovine serum (Sigma), 2 µg/ml aphidicolin (Calbiochem), and 100 ng/ml 7 S NGF (Invitrogen). After a 1–2 hr pre-plating stage to remove non-neuronal cells, dissociated neurons were plated in a small laminin-coated area on ibidi µ-dishes pre-coated with poly-L-lysine (Thistle Scientific). Cultures were maintained in SCG medium, which was changed every 2–3 days, and were injected after 5–7 days. The inclusion of aphidicolin in the medium suppressed growth and proliferation of any non-neuronal cells.
 
 SCG neurons were microinjected using a Zeiss Axiovert 200 microscope with an Eppendorf 5,171 transjector and 5,246 micromanipulator system and Eppendorf Femtotips. Expression constructs were diluted in 0.5 x PBS and cleared by spinning through a Spin-X filter (Costar). The mix was injected into the nuclei of SCG neurons. The concentrations of expression constructs in the injection mix are listed in figure legends. A total of 40–45 neurons were injected per dish. Although ZsGreen is co-expressed from the SARM1 vector used in these studies, restricting the amount of vector injected to limit SARM1 expression meant that the resulting ZsGreen expression was itself not sufficient for clear visualisation of injected neurons and their neurites. For the purposes of visualisation we thus had to co-inject a DsRed expression construct at a higher concentration.
 
-## Imaging
+### Imaging
 
 Fluorescence and phase contrast images of transfected HEK 293T cells and injected SCG neurons were acquired with a Leica DFC365FX fluorescence monochrome camera attached to a Leica DMi8 inverted fluorescence microscope using 10 x and 20 x objectives.
 
-## Database resources
+### Database resources
 
 The different datasets used in this study are annotated to different genome builds, either Genome Reference Consortium Human Build 37 (GRCh37), also known as hg19 (for Project MinE, GENESIS and the HSP cohort) or GRCh38/ hg38 (for Answer ALS, UCL and the LBC). GRCh37 is annotated to a non-canonical SARM1 cDNA and there are sequence irregularities compared to GRCh38 (see Figure 1 legend). Therefore, throughout this study we only report SARM1 genetic variation using numbering for genome build to GRCh38 and the canonical 724 amino acid SARM1 protein (having converted all GRCh37-based information from datasets that use that build). For this reason, we also use population MAFs reported in gnomAD v3.1.1 in this study as it is referenced to GRCh38 (as opposed to gnomAD v2.1.1 which is referenced to GRCh37 and consequently contains a number of MAF discrepancies and additionally a lack of coverage for some alleles).
 
@@ -234,11 +1155,11 @@ No new datasets or code were generated for this study. The Project MinE initiati
 
 There may be restrictions for commercial companies in some cases.
 
-## Patient details
+### Patient details
 
 This is a retrospective study using anonymised data so specific consent was not obtained by the authors, but consent was obtained at each site that contributed patient information to this study in accordance with their local Institutional Review Boards (IRBs). Patient information for the Answer ALS project patients (patient IDs NEUMA411HJP and NEUBD218YR3) was already publicly available at https://dataportalanswerals.org/search.
 
-## Statistics
+### Statistics
 
 Multiple comparisons, multiple paired t tests and one- or two-way ANOVA were performed using Prism software (GraphPad Software Inc, La Jolla, CA, USA) as described in the figure legends. Log transformation of the data was performed prior to statistical testing where appropriate as indicated in figure legends and source data files; however, non-transformed data were plotted on graphs in all Figures for ease of interpretation. A p value of <0.05 was considered significant and values above this cut-off are considered not significant (ns). For tests applying a false discovery rate (FDR) correction, the adjusted p value we report is the q value.
 

@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.00662.001 Candida albicans is both a member of the healthy human microbiome and a major pathogen in immunocompromised individuals. Infections are typically treated with azole inhibitors of ergosterol biosynthesis often leading to drug resistance. Studies in clinical isolates have implicated multiple mechanisms in resistance, but have focused on large-scale aberrations or candidate genes, and do not comprehensively chart the genetic basis of adaptation. Here, we leveraged next-generation sequencing to analyze 43 isolates from 11 oral candidiasis patients. We detected newly selected mutations, including single-nucleotide polymorphisms (SNPs), copy-number variations and loss-of-heterozygosity (LOH) events. LOH events were commonly associated with acquired resistance, and SNPs in 240 genes may be related to host adaptation. Conversely, most aneuploidies were transient and did not correlate with drug resistance. Our analysis also shows that isolates also varied in adherence, filamentation, and virulence. Our work reveals new molecular mechanisms underlying the evolution of drug resistance and host adaptation. DOI: http://dx.doi.org/10.7554/eLife.00662.001
+Candida albicans is both a member of the healthy human microbiome and a major pathogen in immunocompromised individuals. Infections are typically treated with azole inhibitors of ergosterol biosynthesis often leading to drug resistance. Studies in clinical isolates have implicated multiple mechanisms in resistance, but have focused on large-scale aberrations or candidate genes, and do not comprehensively chart the genetic basis of adaptation. Here, we leveraged next-generation sequencing to analyze 43 isolates from 11 oral candidiasis patients. We detected newly selected mutations, including single-nucleotide polymorphisms (SNPs), copy-number variations and loss-of-heterozygosity (LOH) events. LOH events were commonly associated with acquired resistance, and SNPs in 240 genes may be related to host adaptation. Conversely, most aneuploidies were transient and did not correlate with drug resistance. Our analysis also shows that isolates also varied in adherence, filamentation, and virulence. Our work reveals new molecular mechanisms underlying the evolution of drug resistance and host adaptation.
 
 ## Introduction
 
@@ -47,71 +47,854 @@ Here, we used genome sequencing of isolates sampled consecutively from patients 
 
 ## Results
 
-## Whole genome sequencing of 43 serial clinical isolates from 11 patients
+### Whole genome sequencing of 43 serial clinical isolates from 11 patients
 
-To study the in vivo evolution of azole resistance in
+To study the in vivo evolution of azole resistance in C. albicans, we analyzed 43 longitudinal isolates from 11 HIV-infected patients with oropharyngeal candidiasis (White, 1997a; Perea et al., 2001) (Table 1). The isolates were previously collected during incidences of infection and form a time series from each patient (2–16 isolates per series; Figure 1, Figure 2A). Each isolate was derived from a single colony, and thus, represents a single diploid genotype sampled from the within-host C. albicans population at the respective time point. In each series, the first isolate (‘progenitor’) was collected prior to any treatment with azole antifungals and the remaining isolates were collected at later, typically consecutive, time points, culminating in the final ‘endpoint’ isolate (Table 1).
+
+**Table 1.**
+ Isolate history and sequencing summary
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Publication name</th>
+      <th>PT</th>
+      <th>Strain</th>
+      <th>Entry date</th>
+      <th>Drug treatment</th>
+      <th>Dose (mg/day)</th>
+      <th>E-test MIC (ug/mL)</th>
+      <th>Depth of coverage</th>
+      <th>Reads</th>
+      <th>Percent aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>White, T.C.</td>
+      <td>1</td>
+      <td>1</td>
+      <td>9/10/90</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>0.25</td>
+      <td>111.96</td>
+      <td>9,896,468</td>
+      <td>87.17%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>12/14/90</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>1</td>
+      <td>69.20</td>
+      <td>12,797,328</td>
+      <td>87.43%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>12/21/90</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>92.04</td>
+      <td>16,987,814</td>
+      <td>86.87%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>12/31/90</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>3</td>
+      <td>80.69</td>
+      <td>14,858,710</td>
+      <td>87.81%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+      <td>2/8/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>110.80</td>
+      <td>20,484,584</td>
+      <td>86.75%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6</td>
+      <td>2/22/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>101.94</td>
+      <td>18,837,954</td>
+      <td>86.63%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>7</td>
+      <td>3/25/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>81.65</td>
+      <td>15,123,020</td>
+      <td>86.66%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>8</td>
+      <td>4/8/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>112.53</td>
+      <td>20,778,562</td>
+      <td>86.64%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>9</td>
+      <td>6/4/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>113.18</td>
+      <td>22,223,228</td>
+      <td>83.20%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+      <td>7/15/91</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>4</td>
+      <td>53.28</td>
+      <td>9,896,468</td>
+      <td>87.17%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+      <td>11/26/91</td>
+      <td>Fluconazole</td>
+      <td>200</td>
+      <td>4</td>
+      <td>96.10</td>
+      <td>18,282,472</td>
+      <td>85.54%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+      <td>12/13/91</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>32</td>
+      <td>123.67</td>
+      <td>22,070,518</td>
+      <td>89.13%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+      <td>1/28/92</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>24</td>
+      <td>98.66</td>
+      <td>18,114,916</td>
+      <td>87.41%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15</td>
+      <td>2/21/92</td>
+      <td>Clotriminazole</td>
+      <td>50</td>
+      <td>24</td>
+      <td>120.90</td>
+      <td>22,401,374</td>
+      <td>86.57%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>16</td>
+      <td>4/1/92</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>96</td>
+      <td>87.44</td>
+      <td>16,061,560</td>
+      <td>87.17%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>17</td>
+      <td>8/25/92</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>96</td>
+      <td>97.83</td>
+      <td>18,317,118</td>
+      <td>85.91%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>7</td>
+      <td>412</td>
+      <td>2/15/95</td>
+      <td>Fluconazole</td>
+      <td>0</td>
+      <td>0.25</td>
+      <td>93.15</td>
+      <td>17,417,588</td>
+      <td>86.69%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2307</td>
+      <td>11/22/95</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>0.75</td>
+      <td>95.79</td>
+      <td>18,014,242</td>
+      <td>85.25%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>9</td>
+      <td>1002</td>
+      <td>4/20/95</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td>0.125</td>
+      <td>188.49</td>
+      <td>34,834,970</td>
+      <td>86.74%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2823</td>
+      <td>4/6/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td></td>
+      <td>282.62</td>
+      <td>52,839,288</td>
+      <td>86.30%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3795</td>
+      <td>2/26/97</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>128</td>
+      <td>77.63</td>
+      <td>13,901,062</td>
+      <td>88.78%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>14</td>
+      <td>580</td>
+      <td>3/13/95</td>
+      <td>Fluconazole</td>
+      <td>0</td>
+      <td>1.5</td>
+      <td>77.08</td>
+      <td>14,711,804</td>
+      <td>85.00%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2440</td>
+      <td>1/3/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>1.5</td>
+      <td>82.93</td>
+      <td>15,446,882</td>
+      <td>85.69%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2501*</td>
+      <td>1/4/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>96</td>
+      <td>88.59</td>
+      <td>17,480,274</td>
+      <td>81.98%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>15</td>
+      <td>945</td>
+      <td>4/14/95</td>
+      <td>Fluconazole</td>
+      <td>300</td>
+      <td>4</td>
+      <td>108.59</td>
+      <td>20,591,044</td>
+      <td>85.19%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1619</td>
+      <td>7/11/95</td>
+      <td>Fluconazole</td>
+      <td>500</td>
+      <td>64</td>
+      <td>93.14</td>
+      <td>17,565,080</td>
+      <td>84.69%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>16</td>
+      <td>3107</td>
+      <td>6/5/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>4</td>
+      <td>97.01</td>
+      <td>18,361,266</td>
+      <td>84.84%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3119</td>
+      <td>6/5/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>96</td>
+      <td>87.92</td>
+      <td>16,615,462</td>
+      <td>84.67%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3120</td>
+      <td>6/5/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>96</td>
+      <td>105.95</td>
+      <td>19,442,016</td>
+      <td>86.79%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3184</td>
+      <td>7/1/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td></td>
+      <td>101.89</td>
+      <td>18,487,462</td>
+      <td>87.50%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3281</td>
+      <td>7/16/96</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td></td>
+      <td>76.44</td>
+      <td>14,327,376</td>
+      <td>85.69%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>30</td>
+      <td>5106</td>
+      <td>1/7/98</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>0.5</td>
+      <td>87.21</td>
+      <td>16,466,524</td>
+      <td>84.67%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5108</td>
+      <td>1/7/98</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>0.75</td>
+      <td>82.32</td>
+      <td>17,480,274</td>
+      <td>81.98%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>42</td>
+      <td>1691</td>
+      <td>8/3/95</td>
+      <td>Fluconazole</td>
+      <td>100</td>
+      <td></td>
+      <td>122.60</td>
+      <td>22,072,562</td>
+      <td>88.38%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3731</td>
+      <td>12/27/96</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>256</td>
+      <td>119.90</td>
+      <td>21,436,034</td>
+      <td>88.72%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3733</td>
+      <td>12/27/96</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>256</td>
+      <td>95.51</td>
+      <td>17,295,888</td>
+      <td>88.00%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>43</td>
+      <td>1649</td>
+      <td>7/19/95</td>
+      <td>Fluconazole</td>
+      <td>0</td>
+      <td>0.125</td>
+      <td>102.10</td>
+      <td>19,545,530</td>
+      <td>84.08%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3034</td>
+      <td>5/15/96</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>0.75</td>
+      <td>92.97</td>
+      <td>17,300,040</td>
+      <td>85.64%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>59</td>
+      <td>3917</td>
+      <td>2/19/97</td>
+      <td>Fluconazole</td>
+      <td>800</td>
+      <td>2</td>
+      <td>113.27</td>
+      <td>21,549,704</td>
+      <td>83.86%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4617</td>
+      <td>8/28/97</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>64</td>
+      <td>75.37</td>
+      <td>15,242,904</td>
+      <td>81.42%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4639</td>
+      <td>9/2/97</td>
+      <td>Fluconazole</td>
+      <td>400</td>
+      <td>128</td>
+      <td>115.32</td>
+      <td>25,468,190</td>
+      <td>75.69%</td>
+    </tr>
+    <tr>
+      <td>Perea, S. et al.</td>
+      <td>64</td>
+      <td>4018</td>
+      <td>4/2/97</td>
+      <td>Fluconazole</td>
+      <td>200</td>
+      <td></td>
+      <td>110.16</td>
+      <td>20,118,736</td>
+      <td>86.78%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4380</td>
+      <td>7/14/97</td>
+      <td>Fluconazole</td>
+      <td>200</td>
+      <td></td>
+      <td>18.03</td>
+      <td>20,970,946</td>
+      <td>9.26%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Strains and coverage.(Red) Not clonally derived from progenitor.*isolated on same day from same patient as previously published strain, 2500._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig1-v1.jpg)
 
-**Figure 1.:** (A) Background, persistent, transient, recurrent, and driver mutations in patient time courses. Shown is a schematic illustration of the genomes of isolates (gray bars) from two patient time courses (Patient A and B, left and right panels, respectively), ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Background mutations (purple) exist in the all isolates; persistent mutations (yellow) are not in the progenitor, but found in all subsequent isolates after their first occurrence; transient mutations (pink) are not in the progenitor and only in some later isolates; recurrently polymorphic genes contain persistent mutations that occur in the same gene in more than one patient (black box). LOH events were also evaluated for persistence (light teal bar). Driver mutations, where a new persistent homozygous allele appears (e.g., G/T > A/A), are annotated in association with persistent LOH events (dark teal) and independent of these events (not shown). Each of these can be associated with a change in phenotype, such as drug resistance (boxes, right). (B) Sampling in the context of de novo mutation and selection bottlenecks. Each strain is a single clone (circle) isolated from an evolving population (represented by a phylogenetic tree). The population evolves and undergoes selective sweeps (dashed lines), with phenotypic changes occurring during the course of infection and treatment (i.e., drug resistance, black: high, white: low; gray scale at bottom). Persistent mutations (yellow lightning bolt) have likely swept through the population, whereas transient mutations (pink lightning bolt) have not. (C) Sampling in the context of selection on existing variation. Selection acts to vary the frequency of different pre-existing genotypes in the population. Persistent mutations (yellow lightning bolt) have risen in the population to a frequency that they are repeatedly sampled (large circles) whereas transient mutations (pink lightning bolt) have not (small circle).DOI: http://dx.doi.org/10.7554/eLife.00662.004
+**Figure 1.:** (A) Background, persistent, transient, recurrent, and driver mutations in patient time courses. Shown is a schematic illustration of the genomes of isolates (gray bars) from two patient time courses (Patient A and B, left and right panels, respectively), ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Background mutations (purple) exist in the all isolates; persistent mutations (yellow) are not in the progenitor, but found in all subsequent isolates after their first occurrence; transient mutations (pink) are not in the progenitor and only in some later isolates; recurrently polymorphic genes contain persistent mutations that occur in the same gene in more than one patient (black box). LOH events were also evaluated for persistence (light teal bar). Driver mutations, where a new persistent homozygous allele appears (e.g., G/T > A/A), are annotated in association with persistent LOH events (dark teal) and independent of these events (not shown). Each of these can be associated with a change in phenotype, such as drug resistance (boxes, right). (B) Sampling in the context of de novo mutation and selection bottlenecks. Each strain is a single clone (circle) isolated from an evolving population (represented by a phylogenetic tree). The population evolves and undergoes selective sweeps (dashed lines), with phenotypic changes occurring during the course of infection and treatment (i.e., drug resistance, black: high, white: low; gray scale at bottom). Persistent mutations (yellow lightning bolt) have likely swept through the population, whereas transient mutations (pink lightning bolt) have not. (C) Sampling in the context of selection on existing variation. Selection acts to vary the frequency of different pre-existing genotypes in the population. Persistent mutations (yellow lightning bolt) have risen in the population to a frequency that they are repeatedly sampled (large circles) whereas transient mutations (pink lightning bolt) have not (small circle).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Degree of concordance (Y axis) with Sequenom iPlex genotyping for 1973 SNP X strain combinations overall (leftmost red bar; 93.9%) and in each tested strain (X axis). (B) Shown are the classes of discordant sites by genotype as defined by Illumina (orange) or Sequenome (teal) (X axis) and the prevalence (Y axis) of that genotype call in Sequenom (blue) and Illumina (orange) based discordant calls. The most common discrepancies arose when Sequenom typing classified a site as homozygous, but Illumina sequencing identified it as heterozygous. (C–G) Comparison on distributions of quality features between concordant (blue bars) and discordant (green bars) sites: (C) depth of coverage, (D) RMS Mapping Quality (MQ) score, (E) PHRED scaled quality score for each base call, shown as log-normalized ‘QUAL’ scores, (F) quality by depth (QD) score for each variant site, and (G) the allele balance ratio (AB Score) for each variant site.DOI: http://dx.doi.org/10.7554/eLife.00662.005
+**Figure 1—figure supplement 1.:** (A) Degree of concordance (Y axis) with Sequenom iPlex genotyping for 1973 SNP X strain combinations overall (leftmost red bar; 93.9%) and in each tested strain (X axis). (B) Shown are the classes of discordant sites by genotype as defined by Illumina (orange) or Sequenome (teal) (X axis) and the prevalence (Y axis) of that genotype call in Sequenom (blue) and Illumina (orange) based discordant calls. The most common discrepancies arose when Sequenom typing classified a site as homozygous, but Illumina sequencing identified it as heterozygous. (C–G) Comparison on distributions of quality features between concordant (blue bars) and discordant (green bars) sites: (C) depth of coverage, (D) RMS Mapping Quality (MQ) score, (E) PHRED scaled quality score for each base call, shown as log-normalized ‘QUAL’ scores, (F) quality by depth (QD) score for each variant site, and (G) the allele balance ratio (AB Score) for each variant site.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig2-v1.jpg)
 
-**Figure 2.:** (A) Two possible models of infection may underlie serial isolates. In the ‘clonal model’ (top) each subsequent sample (circle) is related to the other isolates. In the non-clonal model (bottom) isolates in a series are un-related. (B) The phylogenetic relationship of the isolates (black) from 11 patients (blue) was inferred based on 201,793 informative SNP positions using maximum parsimony in PAUP*. Isolates from the same patient separated by a branch distance greater than 20,000 were considered non-clonal (3281, 2823, 3184, 1691, red). Most nodes were supported by 100% of 1000 bootstrap replicates (indicated by *), expect as indicated (in gray). Clade identifiers were included as appropriate.DOI: http://dx.doi.org/10.7554/eLife.00662.00610.7554/eLife.00662.008Figure 2—source data 1.Listed for each series (PT series SNP summary) are the number of filtered (‘Materials and methods’) coding and noncoding SNPs. Coding SNPs are further classified as synonymous or nonsynonymous. Noncoding SNPs are classified as intronic, promoter region (<800 bps from the start of an ORF), or general noncoding. Patient1–Patient 59: Listed is each base that is mutated in at least one isolate in the respective series. For this base, listed are the chromosomal position, the base in the SC5314 reference genome, the base in each isolate in the series (hyphen (‘-’): homozygous, same as reference; upper case: homozygous mutation; lower case: heterozygous mutation), whether the mutation is a background mutation, transient (trans) or persistent (pers), if it is upstream, downstream or within an ORF, and in the latter case, the effect on the amino acid sequence of the encoded protein. (B) Frequency of nonsynonymous SNP occurrence between serial isolates using different filters. All SNP arising aft prev: For each clinical series (PT1-PT59) listed are the number of ORFs in each chromosome (columns) containing for each isolate (rows) all the ‘newly arising’ SNPs, defined as those not present in the immediately preceding isolate (rows). All NS in ORF aft prev: the same as above, but only for NS SNPs. All SNPs are only outside of LOH regions. All instances of Pers NS SNPs: the same as above, but only for those NS SNPs that persist once they arose. All Rec SNP aft Prev: the same as above but restricted to those ORFs that contain persistent mutations in three or more clinical series.DOI: http://dx.doi.org/10.7554/eLife.00662.008
+**Figure 2.:** (A) Two possible models of infection may underlie serial isolates. In the ‘clonal model’ (top) each subsequent sample (circle) is related to the other isolates. In the non-clonal model (bottom) isolates in a series are un-related. (B) The phylogenetic relationship of the isolates (black) from 11 patients (blue) was inferred based on 201,793 informative SNP positions using maximum parsimony in PAUP*. Isolates from the same patient separated by a branch distance greater than 20,000 were considered non-clonal (3281, 2823, 3184, 1691, red). Most nodes were supported by 100% of 1000 bootstrap replicates (indicated by *), expect as indicated (in gray). Clade identifiers were included as appropriate.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** The heterozygosity profiles shows, in chromosomal order (top), each variant locus that exists in at least one strain in the series (white is a heterozygous SNP, blue is homozygous for the SC5314 allele, red is a homozygous SNP relative to SC5314). (A) Patient 1; (B) Patient 7; (C) Patient 9; (D) Patient 14; (E) Patient 15; (F) Patient 16; (G) Patient 30; (H) Patient 42; (I) Patient 43; (J) Patient 59. Only Patient 9 (C), Patient 16 (F), Patient 42 (H), and Patient 64 (not shown**) contain un-related isolates. ** Patient 64 contained an isolate (4380) whose genome aligned poorly to the C. albicans reference, but aligned well to C. dubliniensis.DOI: http://dx.doi.org/10.7554/eLife.00662.007
+**Figure 2—figure supplement 1.:** The heterozygosity profiles shows, in chromosomal order (top), each variant locus that exists in at least one strain in the series (white is a heterozygous SNP, blue is homozygous for the SC5314 allele, red is a homozygous SNP relative to SC5314). (A) Patient 1; (B) Patient 7; (C) Patient 9; (D) Patient 14; (E) Patient 15; (F) Patient 16; (G) Patient 30; (H) Patient 42; (I) Patient 43; (J) Patient 59. Only Patient 9 (C), Patient 16 (F), Patient 42 (H), and Patient 64 (not shown**) contain un-related isolates. ** Patient 64 contained an isolate (4380) whose genome aligned poorly to the C. albicans reference, but aligned well to C. dubliniensis.
 
 The progenitor isolates were more sensitive to fluconazole than subsequent isolates, as defined by the minimum inhibitory concentration (MIC) (Table 1, ‘Materials and methods’). Previous studies with some of these patient isolates identified several genomic alterations that may contribute to azole resistance, including segmental aneuploidy (Selmecki et al., 2006), and LOH across large chromosomal segments (Coste et al., 2006; Dunkel et al., 2008), as well as targeted alterations including increased expression of drug efflux genes (Coste et al., 2006), mutations in ergosterol biosynthetic genes (Asai et al., 1999; Oliver et al., 2007), and buffering by the chaperone heat shock protein 90 (Hsp90) (Cowen and Lindquist, 2005).
 
-We sequenced the genomic DNA of the isolates as well as the C. albicans lab strain, SC5314, using Illumina sequencing (53-283X coverage, 103X on average, ‘Materials and methods’, Table 1) and identified in each series point mutations, LOH events and aneuploidies that were not present in the first strain in that series. By convention, all mutations were defined relative to SC5314, the C. albicans genome reference strain. We validated our pipeline for detection of point mutations using Sequenom iPlex genotyping (Storm et al., 2003) (‘Materials and methods’). We interrogated 1973 SNPs in 27 isolates from nine clinical series and found that the iPlex base calls matched 1853 (93.9%, Figure 1—figure supplement 1A, Table 2) of the calls from our computational analysis of the sequencing data. Evaluation of the discordant sites showed somewhat lower quality scores by certain metrics but did not identify any metrics that could be used to systematically revise filtering in our computational pipeline without a radical reduction in sensitivity (Figure 1—figure supplement 1B–G).10.7554/eLife.00662.009Table 2.Sequenom iPLEX genotyping assay validationDOI: http://dx.doi.org/10.7554/eLife.00662.009PatientIsolateTotal discordantTotal concordantTotal Assayed% ConcordantPatient_1TWTC12313393.94%Patient_1TWTC21323396.97%Patient_1TWTC31323396.97%Patient_1TWTC121323396.97%Patient_1TWTC131323396.97%Patient_1TWTC151323396.97%Patient_1TWTC161313296.88%Patient_1TWTC171323396.97%Patient_74123606395.24%Patient_723074596393.65%Patient_91002169611285.71%Patient_93795910311291.96%Patient_145803495294.23%Patient_1424402272993.10%Patient_1425013333691.67%Patient_15945812112993.80%Patient_1516191012013092.31%Patient_1631072515396.23%Patient_1631193505394.34%Patient_1631202505296.15%Patient_305106321521898.62%Patient_3051081920422391.48%Patient_4316497899692.71%Patient_4330348889691.67%Patient_5939173626595.38%Patient_5946172636596.92%Patient_5946394596393.65%TOTAL1201853197393.92%
+We sequenced the genomic DNA of the isolates as well as the C. albicans lab strain, SC5314, using Illumina sequencing (53-283X coverage, 103X on average, ‘Materials and methods’, Table 1) and identified in each series point mutations, LOH events and aneuploidies that were not present in the first strain in that series. By convention, all mutations were defined relative to SC5314, the C. albicans genome reference strain. We validated our pipeline for detection of point mutations using Sequenom iPlex genotyping (Storm et al., 2003) (‘Materials and methods’). We interrogated 1973 SNPs in 27 isolates from nine clinical series and found that the iPlex base calls matched 1853 (93.9%, Figure 1—figure supplement 1A, Table 2) of the calls from our computational analysis of the sequencing data. Evaluation of the discordant sites showed somewhat lower quality scores by certain metrics but did not identify any metrics that could be used to systematically revise filtering in our computational pipeline without a radical reduction in sensitivity (Figure 1—figure supplement 1B–G).
 
-## Most series are clonal, but there is significant genetic diversity between isolates
+**Table 2.**
+ Sequenom iPLEX genotyping assay validation
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient</th>
+      <th>Isolate</th>
+      <th>Total discordant</th>
+      <th>Total concordant</th>
+      <th>Total Assayed</th>
+      <th>% Concordant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC1</td>
+      <td>2</td>
+      <td>31</td>
+      <td>33</td>
+      <td>93.94%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC2</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC3</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC12</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC13</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC15</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC16</td>
+      <td>1</td>
+      <td>31</td>
+      <td>32</td>
+      <td>96.88%</td>
+    </tr>
+    <tr>
+      <td>Patient_1</td>
+      <td>TWTC17</td>
+      <td>1</td>
+      <td>32</td>
+      <td>33</td>
+      <td>96.97%</td>
+    </tr>
+    <tr>
+      <td>Patient_7</td>
+      <td>412</td>
+      <td>3</td>
+      <td>60</td>
+      <td>63</td>
+      <td>95.24%</td>
+    </tr>
+    <tr>
+      <td>Patient_7</td>
+      <td>2307</td>
+      <td>4</td>
+      <td>59</td>
+      <td>63</td>
+      <td>93.65%</td>
+    </tr>
+    <tr>
+      <td>Patient_9</td>
+      <td>1002</td>
+      <td>16</td>
+      <td>96</td>
+      <td>112</td>
+      <td>85.71%</td>
+    </tr>
+    <tr>
+      <td>Patient_9</td>
+      <td>3795</td>
+      <td>9</td>
+      <td>103</td>
+      <td>112</td>
+      <td>91.96%</td>
+    </tr>
+    <tr>
+      <td>Patient_14</td>
+      <td>580</td>
+      <td>3</td>
+      <td>49</td>
+      <td>52</td>
+      <td>94.23%</td>
+    </tr>
+    <tr>
+      <td>Patient_14</td>
+      <td>2440</td>
+      <td>2</td>
+      <td>27</td>
+      <td>29</td>
+      <td>93.10%</td>
+    </tr>
+    <tr>
+      <td>Patient_14</td>
+      <td>2501</td>
+      <td>3</td>
+      <td>33</td>
+      <td>36</td>
+      <td>91.67%</td>
+    </tr>
+    <tr>
+      <td>Patient_15</td>
+      <td>945</td>
+      <td>8</td>
+      <td>121</td>
+      <td>129</td>
+      <td>93.80%</td>
+    </tr>
+    <tr>
+      <td>Patient_15</td>
+      <td>1619</td>
+      <td>10</td>
+      <td>120</td>
+      <td>130</td>
+      <td>92.31%</td>
+    </tr>
+    <tr>
+      <td>Patient_16</td>
+      <td>3107</td>
+      <td>2</td>
+      <td>51</td>
+      <td>53</td>
+      <td>96.23%</td>
+    </tr>
+    <tr>
+      <td>Patient_16</td>
+      <td>3119</td>
+      <td>3</td>
+      <td>50</td>
+      <td>53</td>
+      <td>94.34%</td>
+    </tr>
+    <tr>
+      <td>Patient_16</td>
+      <td>3120</td>
+      <td>2</td>
+      <td>50</td>
+      <td>52</td>
+      <td>96.15%</td>
+    </tr>
+    <tr>
+      <td>Patient_30</td>
+      <td>5106</td>
+      <td>3</td>
+      <td>215</td>
+      <td>218</td>
+      <td>98.62%</td>
+    </tr>
+    <tr>
+      <td>Patient_30</td>
+      <td>5108</td>
+      <td>19</td>
+      <td>204</td>
+      <td>223</td>
+      <td>91.48%</td>
+    </tr>
+    <tr>
+      <td>Patient_43</td>
+      <td>1649</td>
+      <td>7</td>
+      <td>89</td>
+      <td>96</td>
+      <td>92.71%</td>
+    </tr>
+    <tr>
+      <td>Patient_43</td>
+      <td>3034</td>
+      <td>8</td>
+      <td>88</td>
+      <td>96</td>
+      <td>91.67%</td>
+    </tr>
+    <tr>
+      <td>Patient_59</td>
+      <td>3917</td>
+      <td>3</td>
+      <td>62</td>
+      <td>65</td>
+      <td>95.38%</td>
+    </tr>
+    <tr>
+      <td>Patient_59</td>
+      <td>4617</td>
+      <td>2</td>
+      <td>63</td>
+      <td>65</td>
+      <td>96.92%</td>
+    </tr>
+    <tr>
+      <td>Patient_59</td>
+      <td>4639</td>
+      <td>4</td>
+      <td>59</td>
+      <td>63</td>
+      <td>93.65%</td>
+    </tr>
+    <tr>
+      <td colspan="2">TOTAL</td>
+      <td>120</td>
+      <td>1853</td>
+      <td>1973</td>
+      <td>93.92%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Most series are clonal, but there is significant genetic diversity between isolates
 
 We designated as background those polymorphisms those that are common to all isolates in a series, including the first (‘progenitor’) isolate (Figure 1A, purple) and use them to determine that isolates within most series were clonally related, suggesting a single (primary) infection source (Figure 1B,C, Figure 2, Figure 2—figure supplement 1, ‘Materials and methods’). To distinguish between a single primary (clonal) infection (Figure 2A, top) and repeated, independent infections (Figure 2A, bottom), we determined the distance between every two isolates based on their SNP profile and used as a heuristic a neighbor-joining algorithm to construct a phylogenetic tree from this distance metric (‘Materials and methods’, Figure 2B). Patient 64 contained one C. albicans isolate (4018) and one C. dubliniensis isolate (4380); therefore, we have excluded this series from further analysis. Additionally, we detected at least one non-clonal C. albicans isolate in three of the remaining ten patient series (PT 9,16, 42; Figure 2B, red), indicating that at least ∼36% of the 11 patients sampled carried more than one unrelated Candida strain. We removed the four non-clonal samples (Figure 2B, red) from further consideration, and all subsequent analyses focused on samples from the 10 patients with at least two clonal isolates.
 
 Despite these clonal relationships, the distance between isolates indicated significant genetic diversity within each patient series (Figure 2B), typically with each isolate differing by several thousand SNPs from its ‘progenitor’ isolate (Figure 2—source data 1). These data are consistent with two different evolutionary scenarios: accumulation of de novo mutations followed by selection (Figure 1B), or selection acting on pre-existing variation to vary the frequency of different genotypes in the population (Figure 1C). The large number of SNPs detected suggests that isolates from later time points in a series are not simply direct descendants of the earlier isolate; however, since mutation and mitotic recombination rates can be elevated under stressful conditions (e.g., drug treatment Galhardo et al., 2007; Forche et al., 2011), we cannot rule out the possibility that some of the variation may be due to de novo events occurring between time points. Formally distinguishing between these two models is not possible with the samples and data at hand. However, the role of pre-existing diversity is supported by the observation that different isolates collected on the same day from the same patient (patient 14 [2440 and 2501] and patient 16 [3107 and 3119]) differed by 9668 and 18,291 SNPs, respectively (Figure 2—source data 1) and had very different fluconazole MIC levels (Table 1) and different fitness phenotypes (see below), although in each case the strains were clearly genetically related (Figure 2B). Thus, we conclude that a population of related but divergent genotypes of the same lineage exists within a given patient. We next sought to identify potentially adaptive genetic changes by focusing on large-scale events (LOH and aneuploidies) as well as single-nucleotide polymorphisms.
 
-## Genetic alterations absent from the progenitor isolate, persistent within a patient, and recurrent across patients are likely adaptive
+### Genetic alterations absent from the progenitor isolate, persistent within a patient, and recurrent across patients are likely adaptive
 
 Given the high number of SNPs, LOH events and aneuploidies, we next devised a strategy to identify those changes that are more likely to play an adaptive role in drug resistance and host adaptation. We previously filtered all background polymorphisms, defined as any SNP relative to the reference present in all isolates from a series. Next, we defined alterations as persistent if present within the same patient at all subsequent time points after the ‘non-progenitor’ isolate in which they are first identified. We reasoned that such persistent changes will include those variants that were driven to sufficiently high frequency by selection to ensure repeated sampling (Figure 1B,C, yellow lightning bolt), whereas non-persistent (transient) ones do not (Figure 1B,C, pink lightning bolt). We consider the special case of a genetic change detected only in the endpoint isolate as ‘persistent’ as well, since several of the time courses consist of only two or three isolates. We apply the persistence filter to better identify potentially adaptive aneuploidies, LOH events, and SNPs.
 
 Next, we further focused on non-synonymous polymorphisms in coding regions and employed two different strategies to identify potentially adaptive changes. In the first strategy, to identify potential drivers of adaptation, we focused on non-synonymous SNPs that were homozygous for a genotype not found in the progenitor strain that persisted in the subsequent isolates (e.g., G/T > A/A) consistent with positive selection. In the second strategy, we analyzed genes that were recurrently polymorphic across patients, such that persistent, non-synonymous polymorphisms appeared within the same open reading frame (ORF) in different patient series (Figure 1A and Figure 5—source data 1A). For recurrence, we considered only those that were not included in LOH regions, as these regions artificially inflate the estimates of persistence and recurrence. Recurrence allows us to better handle polymorphisms from the endpoint isolate in a series for which ‘persistence’ does not provide a meaningful filter. Thus, we further considered polymorphisms occurring only in the terminal isolate in one patient if polymorphisms also recurred in the same ORF in a series from two other patients. For example, filtering for both persistence and recurrence across at least three series reduced the number of polymorphisms for patient 1 from 13,562 polymorphisms in 5022 genes to 23 recurrent genes (Figure 2—source data 1, Figure 5—source data 1A).
 
-## LOH events are commonly associated with increased resistance
+### LOH events are commonly associated with increased resistance
 
-LOH events were detected in all of the series and were often persistent, recurrent, and associated with increased drug resistance (
+LOH events were detected in all of the series and were often persistent, recurrent, and associated with increased drug resistance (Figures 3 and 4, Figure 3—source data 1). For example, three of four LOH events in Patient 1 were persistent and associated with an increase in MIC and both of these events were recurrent, such that LOH events in these genomic regions coincided with increases in MIC in other patients. Highly recurrent LOH events occurred on the right arm of chromosome 3 (in Patients 1, 9, 14, 16, 42, and 59; Figure 3A, Figure 4A,B,D,F,H, Figure 3—source data 1) and on the left arm of chromosome 5 (in Patients 1, 14, 15, and 43; Figure 3A, Figure 4B,C,G, Figure 3—source data 1). These regions include key genes implicated in drug resistance: on Chromosome 3, genes encoding the Cdr1 and Cdr2 efflux pumps and the Mrr1 transcription factor that regulates the Mdr1 major facilitator superfamily efflux pump (Schubert et al., 2011), and on Chromosome 5, genes encoding the drug target Erg11, and Tac1, a transcription factor that positively regulates expression of CDR1 and CDR2 (Coste et al., 2006). The extent of persistence and recurrence of these two LOH events is statistically significant under a naïve binary model (p < 5 × 10−4 for the Chr3R LOH; p < 0.01 for the Chr5L LOH). The recurrence of LOH events that coincide with changes in MIC suggests that they have been positively selected to rise in frequency relative to the progenitor strain. Notably, some of the recurrent LOH events may have been difficult to detect previously on SNP arrays (Forche et al., 2008; Forche et al., 2004; Forche et al., 2005) due to the relative paucity of SNPs in those regions in the reference strain, SC5413, itself a clinical isolate.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig3-v1.jpg)
 
-**Figure 3.:** For each time series shown are the genomes of all isolates (rows) from a patient, ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Boxes on right indicate the MIC of the respective strain (black: high, white: low; gray scale at bottom). Persistent LOHs: blue, transient LOHs: pink; trisomies (all transient): green. The sequence coverage along each chromosome is indicated by black tickmarks. (A) Patient 1 has four LOH events, each coinciding with an increase in MIC (gray scale boxes, right). One LOH is transient (isolate 2, chromosome R, pink) and three are persistent (isolate 3, chromosome 3; isolate 13, chromosome 5; and isolate 16, chromosome 5, blue). The ploidy changes (isolates 6, 8, 13) are all transient. (B) Patient 7 has one LOH event (isolate 2307, chromosome 3, blue) which coincides with an increase in MIC.DOI: http://dx.doi.org/10.7554/eLife.00662.01010.7554/eLife.00662.011Figure 3—source data 1.For each isolate (strain column) in each series (patient column), listed are the coordinates of any persistent LOH in that isolate. Coordinates in blue are persistent LOH events, coordinates in red are transient LOH events.DOI: http://dx.doi.org/10.7554/eLife.00662.011
+**Figure 3.:** For each time series shown are the genomes of all isolates (rows) from a patient, ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Boxes on right indicate the MIC of the respective strain (black: high, white: low; gray scale at bottom). Persistent LOHs: blue, transient LOHs: pink; trisomies (all transient): green. The sequence coverage along each chromosome is indicated by black tickmarks. (A) Patient 1 has four LOH events, each coinciding with an increase in MIC (gray scale boxes, right). One LOH is transient (isolate 2, chromosome R, pink) and three are persistent (isolate 3, chromosome 3; isolate 13, chromosome 5; and isolate 16, chromosome 5, blue). The ploidy changes (isolates 6, 8, 13) are all transient. (B) Patient 7 has one LOH event (isolate 2307, chromosome 3, blue) which coincides with an increase in MIC.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig4-v1.jpg)
 
-**Figure 4.:** For each time series shown are the genomes of all isolates (rows), ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Boxes on right indicate the MIC of the respective strain (black: high, white: low, gray scale at bottom). Persistent LOHs: light blue, transient LOHs: pink; trisomies (all transient): green. The coverage along each chromosome is indicated by black tickmarks. (A) Patient 9; (B) Patient 14; (C) Patient 15; (D) Patient 16; (E) Patient 30; (F) Patient 42; (G) Patient 43; (H) Patient 59. Several LOHs are recurrent (right arm of chromosome 3, left arm of chromosome 5, and chromosome 1). Please note: data in Figure 3—source data 1 also applies to this figure.DOI: http://dx.doi.org/10.7554/eLife.00662.01210.7554/eLife.00662.013Figure 4—source data 1.For each isolate (strain column) in each series (patient column), listed are the coordinates of any persistent LOH in that isolate. Coordinates in blue are persistent LOH events, coordinates in red are transient LOH events.DOI: http://dx.doi.org/10.7554/eLife.00662.013
+**Figure 4.:** For each time series shown are the genomes of all isolates (rows), ordered from the first isolate (progenitor, top) to the last (evolved, bottom). Boxes on right indicate the MIC of the respective strain (black: high, white: low, gray scale at bottom). Persistent LOHs: light blue, transient LOHs: pink; trisomies (all transient): green. The coverage along each chromosome is indicated by black tickmarks. (A) Patient 9; (B) Patient 14; (C) Patient 15; (D) Patient 16; (E) Patient 30; (F) Patient 42; (G) Patient 43; (H) Patient 59. Several LOHs are recurrent (right arm of chromosome 3, left arm of chromosome 5, and chromosome 1). Please note: data in Figure 3—source data 1 also applies to this figure.
 
-Putative driver mutations (defined above as non-synonymous SNPs that were homozygous for a genotype not found in the progenitor strain that persisted in the subsequent isolates; e.g.
+Putative driver mutations (defined above as non-synonymous SNPs that were homozygous for a genotype not found in the progenitor strain that persisted in the subsequent isolates; e.g., G/T > A/A) in these regions are suggestive of a point mutation followed by an LOH of the mutant allele that confers an advantage. There were 131 such mutations in 86 ORFs from 18 LOH regions from the 10 clonal patient series (Table 1 and Figure 5; Figure 5—source data 1B,C). Some of the SNPs were in genes that encode proteins with key known roles in drug resistance and were associated with large LOH events. For example, a nonsynonymous homozygous change in the fluconazole drug target ERG11 was associated with the formation of the persistent LOH on the left arm of chromosome 5 in Patient 1 (Figure 3A), consistent with previous reports (White, 1997b), as was TAC1 in Patient 42. In another example, the persistent and recurrent LOH on the right arm of chromosome 3 in Patients 9 and 16 (Figure 4A,D) was associated with the presence of a homozygous mutation in MRR1 (Schubert et al., 2011), a regulator of MDR1 expression. Other mutations were in genes not previously related to fluconazole resistance, including cell adhesion (ALS3,5 and 7 and HYR3; [Hoyer et al., 1998; Sheppard et al., 2004; Hoyer et al., 2008]), filamentous growth (FGR14, FGR28, and EFH, [Uhl et al., 2003; Connolly et al., 2013]), and biofilm formation (BCR1 and YAK1; [Nobile and Mitchell, 2005; Goyard et al., 2008; Noble et al., 2010; Nobile et al., 2012]). Thus, the detection of known genes involved in drug resistance confirms the approach works and that detection of genes involved in processes implicated in virulence, suggests that these process are co-evolving.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig5-v1.jpg)
 
-**Figure 5.:** (A) For each of the recurrently mutated 240 genes (genes in which nonsynonymous persistent SNPs appear in more than three patients and are not within an LOH region), we constructed a patient-by-gene binary vector. We clustered the resulting patient-by-gene matrix using NMF clustering to reveal five coherent clusters (correlation matrix of the clusters left; red: positive correlation; blue: negative correlation; white: no correlation). (B) Co-occurrence clusters. For the genes in each cluster (rows), shown are their mutated occurrences in each patient (columns); green: gene is persistently mutated in patient, white: no persistent mutation, yellow circle: driver mutation. Functional enrichment of clusters was revealed using gene ontology, and genes matching the enriched cluster function are bolded. We have overlaid recurrent driver mutations (e.g., G/T > A/A) (n = 17) occurring outside of LOH regions (yellow circle, green box) and inside LOH regions (yellow circle, white box).DOI: http://dx.doi.org/10.7554/eLife.00662.01410.7554/eLife.00662.016Figure 5—source data 1.Listed are all the ORFs with a persistent nonsynonymous SNPs, the series in which they occur as such (1 in relevant Patient 1-Patient 59 column), and the total number of series in which they recur (SUM column). 2 All Pers NS in LOH: Listed are all the ORFs with a persistent nonsynonymous SNPs within an LOH region. 3 All Pers NS not in LOH: Listed are all the ORFs with a persistent nonsynonymous SNPs NOT within an LOH region. 4 Cluster Rec. genes not in LOH: NMF Clustering of the occurrence matrix from ‘All Pers NS not in LOH’. 5 Cluster GO Enrichment: The GO enrichments for each of the clusters identified in ‘4 Cluster Rec. genes not in LOH’. (B) Driver mutations. Patient 1—59. Shown are all the positions where a nonsynonymous SNP changed from one homozygous genotype to another. Each column represents the base-call in that isolate of a given patient series. The formatting is consistent with Figure 2—source data 1. Drivers Recurrence in genome: for each of the driver candidates identified in the previous tabs, shown are the occurrence of a driver mutation in that ORF across each of the patient series. (C) Driver mutations in LOH regions. As above (Figure 5—source data 1B), but restricted to only driver mutations occurring within LOH regions. (D). Recurrence lists and clusters for MIC associated mutations. As above (Figure 5—source data 1A), but restricted to only recurrent mutations that occur in parallel with changes in MIC.DOI: http://dx.doi.org/10.7554/eLife.00662.016
+**Figure 5.:** (A) For each of the recurrently mutated 240 genes (genes in which nonsynonymous persistent SNPs appear in more than three patients and are not within an LOH region), we constructed a patient-by-gene binary vector. We clustered the resulting patient-by-gene matrix using NMF clustering to reveal five coherent clusters (correlation matrix of the clusters left; red: positive correlation; blue: negative correlation; white: no correlation). (B) Co-occurrence clusters. For the genes in each cluster (rows), shown are their mutated occurrences in each patient (columns); green: gene is persistently mutated in patient, white: no persistent mutation, yellow circle: driver mutation. Functional enrichment of clusters was revealed using gene ontology, and genes matching the enriched cluster function are bolded. We have overlaid recurrent driver mutations (e.g., G/T > A/A) (n = 17) occurring outside of LOH regions (yellow circle, green box) and inside LOH regions (yellow circle, white box).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) For each of the 166 recurrently mutated genes associated with a change in MIC, we constructed a patient-by-gene binary vector. We clustered the resulting patient by gene matrix using NMF clustering to reveal 5 coherent clusters (correlation matrix of the clusters left; red: positive correlation; blue: negative correlation; white: no correlation). (B) Co-occurrence clusters. For the genes in each cluster (rows), shown are their mutated occurrences in each patient (columns); green: gene is persistently mutated in patient, white: no persistent mutation. Functional enrichment of clusters was revealed using gene ontology, and genes matching the enriched cluster function are bolded.DOI: http://dx.doi.org/10.7554/eLife.00662.015
+**Figure 5—figure supplement 1.:** (A) For each of the 166 recurrently mutated genes associated with a change in MIC, we constructed a patient-by-gene binary vector. We clustered the resulting patient by gene matrix using NMF clustering to reveal 5 coherent clusters (correlation matrix of the clusters left; red: positive correlation; blue: negative correlation; white: no correlation). (B) Co-occurrence clusters. For the genes in each cluster (rows), shown are their mutated occurrences in each patient (columns); green: gene is persistently mutated in patient, white: no persistent mutation. Functional enrichment of clusters was revealed using gene ontology, and genes matching the enriched cluster function are bolded.
 
-## Aneuploidies are not predictive of MIC, but may facilitate the appearance of drug resistance
+### Aneuploidies are not predictive of MIC, but may facilitate the appearance of drug resistance
 
 Aneuploidies, either whole chromosomal or segmental, were evident in at least one isolate from 80% (8/10) of the clonal patient series, with the most prevalent aneuploidies involving Chromosome 5 (6 of 8 patients with at least one aneuploid isolate; Figure 3A and Figure 4B–G, green). In contrast to the persistence of most LOH events, persistent aneuploidies were rarer and were not consistently associated with adaptive increases in MIC levels (Figures 3 and 4). This is consistent with the irreversibility of LOH events in the absence of mating highlights the reversible nature (instability) of aneuploidy chromosomes.
 
 While we cannot definitively infer an ordering of events from our singly sampled isolates, we hypothesize that aneuploidy could contribute to the evolution of LOH by increasing the likelihood of its occurrence. For example, in 4 of the 6 patients with a Chromosome 5 LOH, the isolate with an LOH event also harbors a Chromosome 5 trisomy or is preceded by an isolate with a Chromosome 5 trisomy. Thus, the additional copy may increase the likelihood of an LOH event on that chromosome. In three of these cases, ERG11, located on the region of Chromosome 5 with LOH, was mutated. Additionally, isolates in 2 of the 7 patients with a Chromosome 3 LOH were trisomic for this chromosome.
 
-## Persistent SNPs in 240 recurrently polymorphic genes identify targets likely associated with drug resistance and host adaptation
+### Persistent SNPs in 240 recurrently polymorphic genes identify targets likely associated with drug resistance and host adaptation
 
 We identified persistent nonsynonymous coding SNPs within 1470 genes outside LOH tracts, 167 of them harboring 336 driver-like polymorphisms (Figure 5—source data 1B). These again include ERG11 in patients 9, 14, 30, and 59 and TAC1 in patients 1, 7, 14, 15, 30 and 43 (Figure 5). Applying the recurrence filter (i.e., persistent nonsynonymous SNPs that appeared in the same ORFs in three or more patient series), we identified 240 polymorphic genes that are more likely to have contributed to adaptation (Figure 5—source data 1A). This number of genes is higher than expected by chance (empirical p < 10−4 based on a Poisson model of background mutation, ‘Materials and methods’). Though the coding sequence for these 240 recurrent genes is longer than average (2.21 ± 1.53 kb vs 1.83 ± 1.29 kb for non-recurrent persistent genes, p < 3.68 × 10−5, t-test), and thus a larger target for mutation, our simulation accounts for gene length. Notably, 17 persistent recurrently polymorphic genes also had driver-like polymorphisms, eight of which were also homozygosed in an LOH tract in at least one patient series (Figure 5, Figure 5—source data 1A,B,C). Finally, polymorphisms in 166 of the 240 genes appeared together with an increase in MIC and are thus stronger candidates for making a significant functional contribution to resistance (Figure 5—figure supplement 1, Figure 5—source data 1D, empirical p < 10−5 based a binomial model, ‘Materials and methods’).
 
@@ -121,21 +904,21 @@ The most recurrently mutated gene outside of an LOH region was AXL1 that encodes
 
 Next, we partitioned the 240 recurrently mutated genes into 5 ‘co-occurrence clusters’ based on the correlation in their mutation occurrence patterns (Figure 5, Figure 5—source data 1A). These correlations are significantly higher than expected in a null model (p < 5.2 × 10−182, permutation test, ‘Materials and methods’). The characterized genes in most of the clusters have coherent functions. Cluster 1 is enriched for cell wall and cell surface genes, Cluster 2 for cell cycle and stress genes, Cluster 3 for genes involved in drug response, and Cluster 5 for carbohydrate binding (Figure 5, Figure 5—source data 1A). Most of the genes in these clusters are not well characterized and represent new candidates involved drug resistance and adaptation to the host environment. The full list of genes and descriptions is given in Figure 5—source data 1A.
 
-## Changes in virulence phenotypes in evolved drug-resistant isolates
+### Changes in virulence phenotypes in evolved drug-resistant isolates
 
-To explore the possibility that some of the mutations reflect adaptation to other factors besides drug, we next measured phenotypes associated to virulence and interaction with the host (‘Materials and methods’). Adhesion, filamentation, and virulence in a
+To explore the possibility that some of the mutations reflect adaptation to other factors besides drug, we next measured phenotypes associated to virulence and interaction with the host (‘Materials and methods’). Adhesion, filamentation, and virulence in a C. elegans model of infection (Jain et al., 2013) were measured for a large panel of isolates (Figure 6, Figure 6—figure supplement 1, Figure 6—source data 1). Additionally, we measured competitive fitness in standard tissue culture medium (RPMI) with and without drug in vitro (Figure 7).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig6-v1.jpg)
 
-**Figure 6.:** For each pair of consecutive isolates (green preceding blue), shown are the fitness, adhesion, filamentation, and virulence in a worm model of infection (each described in ‘Materials and methods’). A subset of fitness values are duplicated from Figure 7A, with selection coefficient (s) shown on the Y-axis. A subset of adhesion values are plotted from Figure 6—source data 1, with Abs590 nm on the Y-axis. A subset of images showing filamentation on spider media are shown, with the full set found in Figure 6—figure supplement 1. For virulence, shown are Kaplan–Meier plots of survival rates from C.elegans infection with the specified C. albicans isolates (‘Materials and methods’). For each isolate pair, significant changes in virulence were observed between the two isolates (in all cases, p < 0.001, log-rank test), with three of the four evolved isolates being more virulent than their corresponding progenitor. (A) Patient 30 isolates 5106 and 5108; (B) Patient 43 isolates 1649 and 3034; (C) Patient 1 isolates 12 and 13; (D) Patient 59 isolates 3917 and 4617.DOI: http://dx.doi.org/10.7554/eLife.00662.01710.7554/eLife.00662.019Figure 6—source data 1.Adhesion was defined as described in ‘Materials and methods’ and measured eight times to determine the average adherence as measured by Abs590.DOI: http://dx.doi.org/10.7554/eLife.00662.019
+**Figure 6.:** For each pair of consecutive isolates (green preceding blue), shown are the fitness, adhesion, filamentation, and virulence in a worm model of infection (each described in ‘Materials and methods’). A subset of fitness values are duplicated from Figure 7A, with selection coefficient (s) shown on the Y-axis. A subset of adhesion values are plotted from Figure 6—source data 1, with Abs590 nm on the Y-axis. A subset of images showing filamentation on spider media are shown, with the full set found in Figure 6—figure supplement 1. For virulence, shown are Kaplan–Meier plots of survival rates from C.elegans infection with the specified C. albicans isolates (‘Materials and methods’). For each isolate pair, significant changes in virulence were observed between the two isolates (in all cases, p < 0.001, log-rank test), with three of the four evolved isolates being more virulent than their corresponding progenitor. (A) Patient 30 isolates 5106 and 5108; (B) Patient 43 isolates 1649 and 3034; (C) Patient 1 isolates 12 and 13; (D) Patient 59 isolates 3917 and 4617.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** For several patient series, shown are the filamentation assay results after 7 days of growth on Spider Media (‘Materials and Methods’). These data, a subset of which is shown in Figure 6, demonstrate the heterogeneity seen between strains, as well as the general trend for filamentation to increase over time.DOI: http://dx.doi.org/10.7554/eLife.00662.018
+**Figure 6—figure supplement 1.:** For several patient series, shown are the filamentation assay results after 7 days of growth on Spider Media (‘Materials and Methods’). These data, a subset of which is shown in Figure 6, demonstrate the heterogeneity seen between strains, as well as the general trend for filamentation to increase over time.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig7-v1.jpg)
 
-**Figure 7.:** (A) For each patient (panel) shown is the fitness (‘Materials and methods’) of each strain (Y axis, mean ± STDV), ordered from the progenitor to evolved isolates (left to right, X axis). Fitness is calculated relative to an ENO1::YFP SC5314 reference isolate. The MIC of each strain is shown in the gray boxes on top (white: low; black: high, color bar at bottom). Green: isolates with aneuploidies; Blue: euploid isolates. (B) Shown is the mean difference between fitness in the absence and presence of drug (Y axis, error bars are ± STDV; n > 3) for isolates (X axis) that showed a decrease in fitness (Figure 7A) in the absence of drug concomitant with an increase in MIC (asterisks), and flanking isolates in Patient 1 and 59 (ordered from the progenitor to evolved isolates, left to right, X axis). The difference in fitness is calculated as the difference in selection coefficient (s, Y axis) between matching competition experiments in RPMI and those in RPMI with one half the MIC for fluconazole (Table 1) for each isolate tested (X axis). Negative values indicate that the strain had higher fitness in the presence of fluconazole vs assays without fluconazole. For each assay, the fluconazole-resistant isolate 4639 ENO1::YFP was used as the reference strain.DOI: http://dx.doi.org/10.7554/eLife.00662.020
+**Figure 7.:** (A) For each patient (panel) shown is the fitness (‘Materials and methods’) of each strain (Y axis, mean ± STDV), ordered from the progenitor to evolved isolates (left to right, X axis). Fitness is calculated relative to an ENO1::YFP SC5314 reference isolate. The MIC of each strain is shown in the gray boxes on top (white: low; black: high, color bar at bottom). Green: isolates with aneuploidies; Blue: euploid isolates. (B) Shown is the mean difference between fitness in the absence and presence of drug (Y axis, error bars are ± STDV; n > 3) for isolates (X axis) that showed a decrease in fitness (Figure 7A) in the absence of drug concomitant with an increase in MIC (asterisks), and flanking isolates in Patient 1 and 59 (ordered from the progenitor to evolved isolates, left to right, X axis). The difference in fitness is calculated as the difference in selection coefficient (s, Y axis) between matching competition experiments in RPMI and those in RPMI with one half the MIC for fluconazole (Table 1) for each isolate tested (X axis). Negative values indicate that the strain had higher fitness in the presence of fluconazole vs assays without fluconazole. For each assay, the fluconazole-resistant isolate 4639 ENO1::YFP was used as the reference strain.
 
 We found substantial variation in many of these phenotypes between isolates in the same series (Figure 6 and Figure 7), supporting the notion that the isolates are samples from a broad range of genetic variants within clonal (single infection) populations. In general, increased fitness in vitro (in the absence of drug) correlated with an increase in traits associated with virulence (adhesion, filamentation, and virulence in nematode). For example, the later isolates in the series from patients 30 and 43 had increased fitness and higher virulence by all three measures (Figure 6A,B, Figure 7); whereas, a decrease in fitness in isolate 13 of patient 1 was accompanied by a decrease in virulence (Figures 6C and Figure 7). A notable exception was patient 59, where fitness in vitro decreased while virulence phenotypes increased in a later isolate (Figures 6D and Figure 7). This is consistent with the observations of Noble and co-workers that in vitro fitness is not always a reflection of virulence (Noble et al., 2010).
 
@@ -143,17 +926,17 @@ Initially in a series, drug resistance (MIC) and in vitro fitness (in the absenc
 
 In this context, it appears that aneuploidies (Figure 7A, green), while largely transient, may be an important intermediate giving rise to more stable adaptive genotypes in some cases, as was recently demonstrated in budding yeast adapting to a stressful environment in vitro (Yona et al., 2012). For example, in Patient 1 isolate 13, an increase in MIC and a trisomy of 5 of 8 chromosomes accompanies a large decrease in fitness (in the absence of drug) relative to the preceding isolate 12 (Figure 7A) but has increased fitness in the presence of drug (Figure 7B). Isolate 14 has a similar MIC phenotype to isolate 13 but is euploid (Figure 3) and is much more fit (Figure 7A). Consistent with the general negative effect of aneuploidy on fitness (Tang and Amon, 2013), the absence of the extra chromosomes resulted in improved overall fitness.
 
-## Candidate mutated genes associated with drug resistance or virulence
+### Candidate mutated genes associated with drug resistance or virulence
 
 The analysis of clinical isolates identified a range of new candidate genes that may affect drug resistance, fitness, and/or virulence. To test the contribution of some of the recurrently identified genes to specific C. albicans phenotypes, we profiled all 23 recurrently mutated loci for which a homozygous deletion mutant was available from a deletion strain collection (Noble et al., 2010). We measured the MIC of fluconazole and the in vitro fitness in the absence of drug for each of these 23 mutants.
 
 Deletion of one gene (orf19.4658) caused a twofold decrease in MIC, whereas the other 22 mutants tested did have no significant effect on MIC (data not shown). Deletion mutants are loss-of-function mutations, whereas the previously identified mechanisms of fluconazole resistance are ‘gain of function’, resulting in the increase in the amount or activity level of Erg11 (Asai et al., 1999; Oliver et al., 2007) or the efflux of drug transporters (Coste et al., 2006; Dunkel et al., 2008). Therefore, it is possible that the recurrent non-synonymous coding SNPs in the new loci, we identified in the clinical isolates confer resistance. Alternatively, these loci may not be involved in fluconazole resistance per se and may have a more general role in adaptation to the complex host environment.
 
-Consistent with a role in host adaptation, 5 of the 22 deletion mutants reduced in vitro fitness in a culture medium thought to approximate in vivo conditions (
+Consistent with a role in host adaptation, 5 of the 22 deletion mutants reduced in vitro fitness in a culture medium thought to approximate in vivo conditions (Figure 8, ‘Materials and methods’). Three were significantly more fit than the WT parental strain (SN250, red, Figure 8), including CCN1, that encodes a G1 cyclin required for hyphal growth maintenance (Loeb et al., 1999) and orf19.4471, an ortholog of Saccharomyces cerevisiae VPS64, which is required for cytoplasm-to-vacuole targeting of proteins (Bonangelino et al., 2002), is involved in recycling pheromone receptors (Kemp and Sprague, 2003), and is identified as an ‘aneuploidy-tolerating mutant’ (Torres et al., 2010). Among the least fit were cell wall protein genes (HYR1, HYR3, and PIR1; De Groot et al., 2003).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/00662/elife-00662-fig8-v1.jpg)
 
-**Figure 8.:** Shown is the fitness (‘Materials and methods’) for each deletion mutant strain and the corresponding wild-type strain (Y axis, mean ± STDV). The wild-type parental strain (SN250) is on the far left (red bar and dashed line). Fitness is calculated relative to an ENO1::YFP SC5314 reference isolate. Locus names are given for the mutant isolates (X axis). Asterisks denote statistical significance (* < 0.05, ** < 0.01, *** < 0.001, **** < 0.0001) by one-way ANOVA with Holm–Sidak correction for multiple comparisons.DOI: http://dx.doi.org/10.7554/eLife.00662.021
+**Figure 8.:** Shown is the fitness (‘Materials and methods’) for each deletion mutant strain and the corresponding wild-type strain (Y axis, mean ± STDV). The wild-type parental strain (SN250) is on the far left (red bar and dashed line). Fitness is calculated relative to an ENO1::YFP SC5314 reference isolate. Locus names are given for the mutant isolates (X axis). Asterisks denote statistical significance (* < 0.05, ** < 0.01, *** < 0.001, **** < 0.0001) by one-way ANOVA with Holm–Sidak correction for multiple comparisons.
 
 ## Discussion
 
@@ -175,43 +958,43 @@ Finally, our data and analyses provide a rich and novel resource for Candida res
 
 ## Materials and methods
 
-## Isolates
+### Isolates
 
 Isolates were obtained from HIV-infected patients with oropharyngeal candidiasis, as previously described (White, 1997a; Perea et al., 2001). The patients were not on azole antifungal treatment at time of enrollment; subsequent samples were collected during recurrence of infection. Isolates were colony purified at collection and represent a single clone. The isolates are detailed in Table 1.
 
-## Drug susceptibility
+### Drug susceptibility
 
 Minimal inhibitory concentrations (MIC) were determined for each strain (clinical and mutant) using fluconazole E-test strips (0.016–256 μg/ml, bioMérieux, Durham, NC) on RPMI 1640-agar plates (Remel, Lenexa, KS). Overnight YPD cultures were diluted in sterile 0.85% NaCl to an OD600 of 0.01 and 250 μl was plated using beads. After a 30-min pre-incubation, 2–3 E-test strips were applied and plates were incubated at 35°C for 48 hr. The susceptibility endpoint was read at the first growth-inhibition ellipse, and the median value is reported here.
 
-## Illumina sequencing
+### Illumina sequencing
 
 Genomic DNA was prepared from different clinical time courses via a Qiagen Maxiprep kit (Qiagen, Valencia, CA) and sequenced using 101 base paired-end Illumina sequencing (Mardis, 2008). Library preparation included an eight base barcode (Grabherr et al., 2011); 43 samples from 11 patients were sequenced. All reads were mapped to the SC5314 reference genome (Candida Genome Database Assembly 21, gff downloaded on 4 January 2010) using the BWA alignment tool (version 0.5.9) (Li and Durbin, 2009). To minimize false positive SNP calls near insertion/deletion (indel) events, poorly aligning regions were identified and realigned using the GATK RealignerTargetCreator and IndelRealigner (GATK version 1.4-14, [version 1.4-14]) (McKenna et al., 2010). Coverage for each strain is reported in Table 1. Coverage was defined as the total number of bases with BWA mapping quality greater than 10 divided by the total number of sites in the nuclear genome. Isolate 4380 aligned poorly to the SC5314 genome; however, this sequence aligned at high identity to the C. dubliniensis genome and was therefore removed from further analysis. These data can be accessed from a genomics portal hosted by the Broad Institute at: http://www.broadinstitute.org/pubs/candidadrugresistance/. Reads are deposited for access to the NCBI SRA under project accession number PRJNA257929.
 
-## SNP calling
+### SNP calling
 
 SNPs were identified using Unified Genotyper (GATK version 1.4.14) (McKenna et al., 2010), using read alignments to the SC5314 reference sequence. Unreliable SNPs were identified using the GATK Variant Filtration module, with the version 3 best practice recommended annotation filters (QD < 2.0, MQ < 40.0, FS > 60.0, HaplotypeScore >13.0, MQRankSum < −12.5, ReadPosRankSum < −8.0) except that the HaplotypeScore was also filtered if greater than two standard deviations above the mean of all HaplotypeScore values. The combined list of SNP positions across all strains was used to evaluate those matching the reference allele; by emitting all sites using Unified Genotyper, high quality reference matches were identified as positions with quality of 30 or greater, with positions with extremes of read depth (top or bottom 0.5% quantile) eliminated. A matrix of all strains by all positions was created from the SNP calls, with reference calls added where identified. Non-clonal isolates (see below) were removed from further analysis.
 
-## Sequenom iPLEX genotyping assay
+### Sequenom iPLEX genotyping assay
 
 We chose 1973 genetic locus X strain combination (523 unique sites across nine patients) for iPLEX genotyping as either (1) persistent within their time course (605 sites), (2) background mutations (1263 sites), or (3) transient mutations (105 sites). All selected loci were at least 150 bp away from any other SNP in either direction to avoid ambigious iPlex calls. Sites producing multiple iPlex results were eliminated from further consideration. 1,853 predictions were confirmed as correct by Sequenom genotyping and 120 were discordant (Table 2), to a calling accuracy of 93.9%.
 
-## Determination of relatedness to determine clonality
+### Determination of relatedness to determine clonality
 
 We investigated the phylogenetic relationship of all strains using SNP calls to determine relatedness between strains; positions with missing data in 10% or more of strains were eliminated, resulting in a total of 201,793 parsimony informative positions. A distance based tree was estimated using maximum parsimony with PAUP* (4.0) (Swofford, 2002); a step matrix was used to estimate the distance between homozygous and heterozygous positions, where each of the homozygotes is two steps apart from each other and one step from the heterozygote. SNP positions were resampled using 1000 bootstrap replicates, and the phylogeny re-estimated to test the branch support. We define isolates with a branch distance of greater than 20,000 as non-clonal.
 
-## Copy-number determination
+### Copy-number determination
 
 For each strain, we calculated a per-locus depth-of-coverage using GATK (McKenna et al., 2010), with a minimal mapping quality of 10. The number of reads aligning to each 5 kb window across the nuclear genome was calculated and then normalized to the genome median. Each bin was then multiplied to the ploidy for the majority of the genome as determined by a FACS assay (below). We then applied a sliding window across each bin, defining a potential CNV if 70% of 10 consecutive bins had a normalized count >2.5×. Regional amplifications are identified if >15% of the chromosome is identified as having a CNV. Boundaries were confirmed by visual inspection in the Integrative Genome Viewer (Robinson et al., 2011).
 
-## High-resolution ploidy analysis by flow cytometry
+### High-resolution ploidy analysis by flow cytometry
 
 C. albicans cultures were grown to log phase. 200 μl of culture was centrifuged in a round bottom microtiter plate, and pellets were resuspended in 20 μl of 50 mM Tris pH8/50 mM EDTA (50/50 TE). 180 μl of 95% ethanol was added and suspensions were stored overnight at 4°C. Cells were centrifuged and pellets washed twice with 200 μl of 50/50 TE, then resuspended in 50 μl of RNAse A at 1 mg/ml in 50/50 TE and incubated 1 hr at 37°C. Cells were centrifuged and pellets resuspended in 50 μl of Proteinase K at 5 mg/ml in 50/50 TE for 30 min at 37°C. Cells were washed in 50/50 TE and pellets resuspended in 50 μl of a 1:85 dilution SYBR Green I (Invitrogen, Carlsbad, CA) in 50/50 TE and incubated overnight in the dark at 4°C. Cells were centrifuged and pellets were resuspended in 700 μl 50/50 TE and read on a FACS caliber flow cytometer (BD Biosciences, San Jose, CA). Flow data were fitted with a multi-Gaussian cell cycle model to produce estimates for whole genome ploidy.
 
-## LOH determination
+### LOH determination
 
 For each time course, we assembled the high quality SNPs (post-filtering, above) from multi-sample calling into the columns of a matrix, ordered by genome position, with the isolates in rows, ordered temporally. The genetic state of each locus in each sample was coded to distinguish loci homozygous for the haploid reference (−1), heterozygous SNPs (0), and homozygous SNPs for the non-reference state (1). We then applied a sliding window method across each chromosome, only looking at sites in which a SNP call was made in at least one isolate. An LOH event was defined as occurring if (1) at least one isolate had a heterozygosity content >40%, and (2) at least one other isolate had a heterozygosity content <5%. Window sizes were of length 500. Boundaries were trimmed such that if a window terminated in a heterozygous site in the isolate for which the LOH occurred, it was trimmed back until it was homozygous. If two 500+ windows were within 7 KB of each, the region was assessed to determine if the event was actually one event and merged if the heterozygous sites in the inter-window space had homozygosed. If two isolates had LOHs that overlapped but did not have precisely identical boundaries, the LOH regions were combined such that the LOH interval for both isolates was the same. All LOH regions were confirmed by visual inspection and are listed in Figure 3 and Figure 4—source data 1.
 
-## Classification of SNPs
+### Classification of SNPs
 
 For each time course, each SNP was classified for its position in the genome (Figure 2—source data 1). If the SNP fell within an ORF, the reference and altered amino acids were reported. If the SNP fell outside of an ORF, the distance to the closest flanking ORF(s) was reported, as well as the SNP's orientation with respect to these ORFs. SNP genotypes that are common to all isolates (including the ‘progenitor’) were classified as background mutations. Genotypes not present in the progenitor or evolved strain, but that occur in one or more intermediate strain, are classified as transient. Finally, genotypes that occur after the progenitor, and persist through the terminally evolved time point, are classified as persistent.
 
@@ -231,32 +1014,32 @@ hj = log normalized ORF length divided by mean lognormalized ORF length for ORF 
 
 This was repeated 10,000 times to build a distribution, and p (observing x recurrent nsSNPs) was determined by dividing the number of successes in each bin by the cumulative number of trials.
 
-## Analysis of co-occurring mutations
+### Analysis of co-occurring mutations
 
 For co-occurrence analysis we focused only SNPs that (1) had persistent nonsynonymous coding SNPs that did not occur in LOH regions and (2) recurred in three or more time courses. We generated for each such gene a binary patient vector, and we used NMF clustering (Brunet et al., 2004) to identify the optimal number of clusters, based on local maximas. This was accomplished using the ‘NMFConsensus’ module (version 5) in GenePattern (Reich et al., 2006). To determine the most appropriate number of clusters, k was selected such that it was the smallest value for which the cophenetic correlation begins decreasing. We then tested each of the co-occurrence gene clusters for functional enrichment (below). To determine if the degree of co-occurrence would have arisen by chance, we ran 1000 iterations of 1 million edge-pair swaps from the original binary matrix, calculating a Pearson correlation matrix for each of the 1000 iterations. We compared the distribution of Pearson correlations on the real and permuted vectors using a two-sample Kolmogorov–Smirnov (KS) test and Wilcoxon Rank Sum test.
 
-## Functional enrichment
+### Functional enrichment
 
 We calculated the overlap of each co-occurring cluster with Gene Ontology gene sets using the Gene Ontology toolset from the Candida Genome Database (Arnaud et al., 2009; Inglis et al., 2012, 2013). Bonferroni adjusted p-values as well as the False Discovery Rate are reported (Figure 5—source data 1A).
 
-## Competition assay to assess fitness
+### Competition assay to assess fitness
 
 We measured the relative fitness of the progenitor and evolved lines in RPMI Cell Culture medium (Gibco, Grand Island, NY), competing them against a reference strain (SC5314), expressing ENO1::YFP. Isolates stored at −80°C were revived on rich media petri plates and then grown overnight in 3-ml cultures of minimal media in a roller drum at 35°C. An aliquot of cells in each culture was removed, sonicated in a Branson 450 sonifier, and the concentration of cells was determined using a Cellometer M10 (Nexcelom, Lawrence, MA). The reference strain and experimental competitors were added to fresh RPMI medium in a 1:1 ratio and a final cell concentration of 1 × 107 cells/ml. The cultures were grown for 24 hr in a roller drum at 35°C. Cells were then counted as above, and 3 × 106 cells were transferred to fresh RPMI medium grown for 24 hr in a roller drum at 35°C (transfer cycle 1). This procedure was repeated (transfer cycle 2). This protocol represents 5–10 generations of growth, depending on the strain genotype. The ratio of the two competitors was quantified at the initial and final time points by flow cytometry (Accuri, San Jose, CA). 3 to 6 independent replicates for each fitness measurement were performed. The selective advantage, s, or disadvantage of the evolved population was calculated as previously described (Thompson et al., 2006), where E and R are the numbers of evolved and reference cells in the final (f) and initial (i) populations, and T is the number of generations that reference cells have proliferated during the competition.
 
-## Competition assay to assess fitness with and without fluconazole
+### Competition assay to assess fitness with and without fluconazole
 
 Fitness assays were performed as described above except that the reference strain used was a derivative of the drug-resistant isolate 4639 from patient 59 (Table 1) expressing ENO1::YFP and competition experiments were performed in RPMI and in RPMI with one half the MIC for fluconazole (Table 1) initiated from replicate 1:1 mixtures of the same population of cells for each isolate tested.
 
 In order to quantify fitness in the presence of fluconazole, we constructed a derivative of the fluconazole-resistant (128 μg/ml) isolate 3795 from patient 9 (Table 1) that expresses ENO1::YFP to use as the reference for competitive fitness assays in the presence and absence of fluconazole. This strain was chosen since it was a euploid strain with the highest MIC. There were two strains from patient 42 (3731 and 3733) with a higher MIC but these strains are aneuploid and thus the potential loss of additional chromosomes during the course of the competition could alter fitness and confound our results. The addition of the YFP marker reduced the fitness of the strain relative to the unaltered one and slightly reduced the fluconazole MIC as measured by the E-strip test. Fitness assays were performed as described above competition experiments except they were performed in RPMI and in RPMI with one half the MIC for fluconazole (Table 1) initiated from replicate 1:1 mixtures of the same population of cells for each isolate tested.
 
-## C. elegans survival assay
+### C. elegans survival assay
 
 A C. elegans survival assay was performed as previously described (Jain et al., 2009). Briefly, Escherichia coli OP50 and the different C. albicans clinical isolates were grown overnight respectively in LB at 37°C and YPD at 30°C. E. coli was then centrifuged and resuspended to a final concentration of 200 mg/ml, while C. albicans isolates were diluted with sterile water to OD600 = 3. Small petri dishes (3.5 cm) containing NGM agar were spotted with a mixture of 10 μl streptomycin (stock solution 50 mg/ml), 2.5 μl of E. coli, 0.5 μl of C. albicans, and 7 μl of sterile water. The plates were incubated overnight at 25°C and 20 young synchronized N2 C. elegans adults were transferred on the spotted plates. Synchronous populations of adult worms were obtained by plating eggs on NGM plates seeded with E. coli OP50 at 20°C for 2–3 days. In this time frame, the eggs hatch and the larvae reach young adulthood. The survival assay was carried at 20°C, and worms were scored daily by gentle prodding with a platinum wire; dead worms were discarded while live ones were transferred to seeded plates grown overnight at 25°C. Worms accidentally killed while transferring or found dead on the edges of the plates were censored. Statistical analysis was performed using SPSS software; survival curves were obtained using the Kaplan–Meier method and p-values by using the log-rank test.
 
-## Filamentation assay
+### Filamentation assay
 
 Overnight cultures grown in YPD at 30°C were normalized to OD600 = 1 with sterile water and spotted on Spider agar media (1% mannitol, 1% Difco nutrient broth, 0.2% K2HPO4). Plates were incubated at 37°C and colonies were photographed 3, 7, and 10 days post spotting. As a negative control for filamentation cph1/cph1 efg1/efg1 (Lo et al., 1997) double mutant strain was used.
 
-## In vitro adhesion assay
+### In vitro adhesion assay
 
 The in vitro adhesion assay was performed as previously described for S. cerevisiae (Reynolds and Fink, 2001). Briefly, cultures were grown in Synthetic Complete (SC) media + 0.15% glucose at 30°C overnight. Cells were then centrifuged at maximal speed and resuspended to OD600 = 0.5 in fresh media. 200 ml of each culture were dispensed into 8 wells of a flat bottom 96-well plate and incubated at 37°C for 4 hr. The content of the plate was then decanted and 50 ml of crystal violet added to each well. After 45 min of incubation at room temperature, the content of the plate was decanted and the plate was rinsed ten times in DI water by alternate submerging and decanting. 200 ml of 75% methanol was added to each well and absorbance was measured after 30 min at OD590. An edt1/edt1 knockout mutant (Zakikhany et al., 2007) was used as a negative control for adhesion.

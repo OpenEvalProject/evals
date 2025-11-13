@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0534re684 Max Planck Institute for Evolutionary Biology Plön Germany
-2. https://ror.org/04v76ef78 Section of Evolutionary Medicine, Institute for Experimental Medicine, Kiel University Kiel Germany
-3. https://ror.org/04v76ef78 Institute for Clinical Molecular Biology (IKMB), Kiel University Kiel Germany
-4. https://ror.org/00f2yqf98 Institute for Medical Microbiology and Hospital Epidemiology, Hannover Medical School Hannover Germany
-5. https://ror.org/00t3r8h32 Institute of Experimental Dermatology, University of Lübeck Lübeck Germany
+1. Max Planck Institute for Evolutionary Biology Plön Germany ([ROR:0534re684](https://ror.org/0534re684))
+2. Section of Evolutionary Medicine, Institute for Experimental Medicine, Kiel University Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))
+3. Institute for Clinical Molecular Biology (IKMB), Kiel University Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))
+4. Institute for Medical Microbiology and Hospital Epidemiology, Hannover Medical School Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))
+5. Institute of Experimental Dermatology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 6. Sharjah Institute of Medical Research Sharjah United Arab Emirates
-7. https://ror.org/002h8g185 Milner Centre for Evolution, Department of Biology & Biochemistry, University of Bath Bath United Kingdom
+7. Milner Centre for Evolution, Department of Biology & Biochemistry, University of Bath Bath United Kingdom ([ROR:002h8g185](https://ror.org/002h8g185))
 
 † Corresponding author
 
@@ -42,33 +42,176 @@ In this study, we employed a powerful genetic mapping approach using inbred line
 
 ## Results
 
-## Microbial community composition
+### Microbial community composition
 
 To obtain microbial traits for genetic mapping in the G2 mapping population, we sequenced the 16S rRNA gene from caecal mucosa samples of 320 hybrid male mice based on DNA and RNA (cDNA), which reflect bacterial cell number and activity, respectively. After applying quality filtering and subsampling 10,000 reads per sample, we identified a total of 4684 amplicon sequence variants (ASVs). For further analyses, we established a ‘core microbiome’ (defined in Materials and methods), such that analyses were limited to those taxa common and abundant enough to reveal potential genetic signal. The core microbiome is composed of four phyla, five classes, five orders, 11 families, 27 genera, and 90 ASVs for RNA, and four phyla, five classes, six orders, 12 families, 28 genera and 46 ASVs for DNA. A combined total of 98 unique ASVs belong to the core, of which 38 were shared between DNA and RNA (Figure 1—figure supplement 1). The most abundant genus in our core microbiome is Helicobacter (Figure 1—figure supplement 2B), consistent with a previous study of the wild hybrid M. m. musculus/M. m. domesticus mucosa-associated microbiome (Wang et al., 2015).
 
 Importantly, inspection of the taxonomic profiles of the mapping population confirms that key features of the native mouse microbiome were retained in our wild-derived lines, despite multiple generations of breeding in the laboratory. For example, the number, identity, and relative proportions of major bacterial orders are more similar to wild-caught mice than to rederived classical laboratory strains (Figure 1—figure supplement 2A – Order-level bar plot; Fig S4 from Rosshart et al., 2017). This is consistent with a previous study which showed that microbiomes of wild-derived strains maintained their distinctiveness over 10 generations of breeding in the laboratory (Moeller et al., 2018).
 
-## Heritability
+### Heritability
 
 Next, we estimated the narrow-sense heritability (h2) of bacterial traits using lme4QTL (Ziyatdinov et al., 2018). Of the 153 total core taxa, we identified 21 taxa for DNA and 30 taxa for RNA with significant heritability estimates (PRLRT<0.05, Restricted Likelihood Ratio test), with estimates ranging between 39 and 83% (Figure 1A–B and Supplementary file 1). The top values for bacterial abundances are similar to heritability estimates for body weight (87%) and body length (67%). ASV97 (genus Oscillibacter) followed by the genus Paraprevotella, and ASV7 (genus Paraprevotella) showed the highest heritability among DNA-based traits (80.8, 78.6, and 77.4%, respectively; Figure 1A), while ASV97 (genus Oscillibacter), followed by ASV36 (genus Oscillibacter), and ASV135 (unclassified order Bacteroidales) had the highest heritability among RNA-based traits (83.0, 80.2, and 79.3%, respectively; Figure 1B). The heritability estimates for DNA- and RNA-based measurements of the same taxa are significantly correlated (Spearman’s rho = 0.53, p=3.1 × 10–12, Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-v1.jpg)
+
+**Figure 1.:** (A–B) Lollipop chart showing the values of the chip heritability (dark red circles), narrow-sense heritability (green squares), PVE by the additive effect (blue triangles), and additive and dominance effect (yellow diamonds) of all significant single nucleotide polymorphisms (SNPs) within one taxon for DNA-based traits (A) and RNA-based traits (B) Only taxa with a non-zero narrow-sense heritability estimate are shown. Only the outline of non-significant heritability estimates (p<0.05, Restricted Likelihood Ratio test) are shown. Taxa without significant hits have no PVE reported. (C–D) Relationship between the narrow-sense heritability estimates for the relative abundance of bacterial taxa and cospeciation rate for the same genus calculated by Groussin et al., 2017. DNA level (C), and RNA level (D). The blue line represents a linear regression fit to the data and the grey area the corresponding confidence interval. p-Values and the correlation coefficient are calculated using the Spearman’s correlation test. The text labels on the y-axis (A–B) and the text labels in panels (C-D) are coloured according to taxonomic level: amplicon sequence variants (ASV) in black, genus in purple, family in light blue, order in red, class in green, and phylum in yellow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A scatter plot showing the association of average relative abundance of taxa with their prevalence in the G2 mapping population. Taxa retained for analysis are coloured according to the originating core. The size of each dot represents the number of individuals that have a median abundance higher than 0.2% of the taxon. The dashed lines represent the thresholds of the core vertical: median abundance >0.2% and horizontal prevalence of 25%.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Core orders (A) and genera (B) present in the G2 mapping population. Each vertical line represents one individual. Sub-cross (see Figure 1—figure supplement 6) is indicated at the top.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The blue line represents a linear regression fit to the data. Red dashed line represents the identity line with a slope of 1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** DNA level (A) and RNA level (B). The blue line represents a linear regression fit to the data and the grey area the corresponding confidence interval. p-Values and the correlation coefficient are calculated using the Spearman’s correlation test. The text labels in panels are coloured according to taxonomic level: amplicon sequence variants (ASV) in black, genus in purple, family in light blue, order in red, class in green, and phylum in yellow.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Estimates calculated with lme4QTL and heritability estimates reported in Org et al., 2015 (males) (A) and heritability estimates reported in Turpin et al., 2016 (B). Only taxa present in both studies are shown (n=11 and n=28, respectively). The blue line represents a linear regression fit to the data and the grey area the corresponding confidence interval. p-Values and the correlation coefficient are calculated using the Spearman’s correlation test.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** G0 mice are from eight partially inbred lines derived from mice wild-caught in four hybrid zone sites. Hybrid index—the percentage of musculus alleles—is reported as the mean for the G0 mice from each line (top), or mean of 40 G2s from each sub-cross (bottom). We performed eight G1 crosses with one line with hybrid index ~50% (purple shades) and one line with hybrid index >50% (green shades); colour on the left side of mouse diagram indicates dam line and right side indicates sire line. Next, G1 mice were crossed in eight combinations such that each G2 mouse had one grandparent from each of the four breeding stocks, indicated by colours of mouse diagram, and representative chromosomes below. Tail colour indicates Y chromosome strain, and oval indicates mitochondrial strain.
 
 Next, we estimated the ‘chip’ heritability (CH), i.e., the percentage of phenotypic variance in bacterial traits explained by genotyped SNPs (32,625 SNPs; Zhou et al., 2013). We find 23 DNA-based traits and 27 RNA-based traits with significant chip heritability estimates, ranging between 50.0 and 15.9% (Figure 1A, B and Supplementary file 1).
 
 We compared these heritability estimates to estimates from previous studies in other mammals (Supplementary file 1), including mice (O’Connor et al., 2014; Org et al., 2015), humans (Davenport et al., 2015; Goodrich et al., 2016; Turpin et al., 2016; Xu et al., 2020; Ishida et al., 2020; Hughes et al., 2020; Kurilshikov et al., 2021), pigs (Chen et al., 2018), and primates (Grieneisen et al., 2021). DNA-based heritability estimates are positively correlated with DNA-based heritability estimates from male mice (Spearman’s rho = 0.60, p=0.049, n=11; Org et al., 2015; Figure 1—figure supplement 5A) and with DNA-based heritability estimates from one human study (Spearman’s rho = 0.38, p=0.049, n=28; Turpin et al., 2016; Figure 1—figure supplement 5B).
 
-## Heritability estimates are correlated with predicted cospeciation rates
+### Heritability estimates are correlated with predicted cospeciation rates
 
 In an important meta-analysis of the gut microbiome across diverse mammalian taxa, Groussin et al., 2017 estimated cospeciation rates of individual bacterial taxa by measuring the congruence of host and bacteria phylogenetic trees relative to the number of host-swap events. We reasoned that taxa with higher cospeciation rates might also demonstrate higher heritability, as these more intimate evolutionary relationships would provide a greater opportunity for genetic aspects to evolve. Intriguingly, we observe a significant positive correlation for RNA-based traits (h2, p=0.037, Spearman’s rho = 0.47; CH, p=0.012, Spearman’s rho = 0.55; Figure 1D; Figure 1—figure supplement 4D), but not for DNA-based traits (h2, Spearman’s rho = −0.062, p=0.80; CH, Spearman’s rho = −0.091, p=0.70; Figure 1C; Figure 1—figure supplement 4C) for both narrow-sense heritability and chip heritability estimates. To evaluate whether these results may be confounded by taxon abundance, we further used a multiple linear regression model incorporating both taxon abundance and cospeciation rate. The overall regression model was not significant (R2=0.27, F(2,17)=3.202, p=0.067). Furthermore, the cospeciation rate significantly predicts the heritability estimate (p=0.022), while the median abundance does not (p=0.92). Thus, heritability estimates and cospeciation rates are associated independent of taxon abundance. These results support the notion that cospeciating taxa evolved a greater dependency on host genes, and further suggest that bacterial activity may better reflect the underlying biological interactions.
 
-## Genetic mapping of host loci determining microbiome composition
+### Genetic mapping of host loci determining microbiome composition
 
 Next, we performed genome-wide association mapping of the relative abundances of core taxa, in addition to two alpha-diversity measures (Shannon and Chao1 indices), based on 32,625 SNPs. We used a linear mixed model including both additive and dominance terms in the model to enable the identification of underdominance and overdominance in this hybrid mapping population. We included mating pair and the genotype-based genomic relatedness matrix (GRM) as random effects to control for maternal effects and relatedness, respectively (see Materials and methods). While we found no genome-wide significant associations for alpha diversity at either the DNA or RNA level (p>1.53 × 10–6), a total of 1030 genome-wide significant associations were identified for individual taxa (p<1.53 × 10–6, Supplementary file 2), of which 428 achieved study-wide significance (p<1.29 × 10–8). Apart from the X chromosome, all autosomal chromosomes contained study-wide significant associations (Figure 2). Out of the 153 mapped taxa, 120 had at least one significant association (Table 1). For the remainder of our analyses, we focus on the results using the more stringent study-wide threshold, and combined significant SNPs within 10 Mb into significant regions (Supplementary file 3). The median size of significant regions is 1.91 Mb, which harbour a median of 14 protein-coding genes. On average, we observe five significant mouse genomic regions per bacterial taxon.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig2-v1.jpg)
+
+**Figure 2.:** Karotype plot showing the number of significant loci found using a study-wide threshold, where (A) plots the significance intervals and (B) the significant single nucleotide polymorphisms (SNP) markers on the chromosomes. The position of the SNPs on panel (B) has been amplified by 0.5 Mb to visualise it. The position of the genes closest to SNPs with the lowest p-values (Tlr4, and Irak4 and Adamsts20) are indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The complete model (A), the additive effect (B) or the dominance effect (C) are shown. Single nucleotide polymorphisms (SNPs) passing the study-wide significance threshold (solid line) are shown in dark blue, while genome-wide significant SNPs (dashed line) are shown in light blue. In panel (A), the closest gene to the SNP is shown for a subset of significant SNPs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Loci with significant additive effects (add.P), dominance effects (dom.P) or effects in full model (P) are indicated.
+
+**Table 1.**
+ Overview of mapping statistics.Loci with a P-value below the study-wide threshold (P<1.29 × 10–8) are considered significant. ‘Significant loci total P’ are the loci having a significant P-value from the total model (additive and dominance effect), ‘Significant loci additive P’ have a significant additive effect, and ‘Significant loci dominance P’ have a significant dominance effect.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>DNA</th>
+      <th>RNA</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mapped taxa</td>
+      <td>101</td>
+      <td>142</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>Taxa with significant loci</td>
+      <td>65</td>
+      <td>93</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>Median interval size (Mb)</td>
+      <td>1.32</td>
+      <td>2.5</td>
+      <td>1.91</td>
+    </tr>
+    <tr>
+      <td>Total significant SNPs</td>
+      <td>316</td>
+      <td>596</td>
+      <td>782</td>
+    </tr>
+    <tr>
+      <td>Total significant loci</td>
+      <td>443</td>
+      <td>746</td>
+      <td>1184</td>
+    </tr>
+    <tr>
+      <td>Unique significant loci</td>
+      <td>172</td>
+      <td>305</td>
+      <td>428</td>
+    </tr>
+    <tr>
+      <td>Significant loci total P</td>
+      <td>83</td>
+      <td>144</td>
+      <td>204</td>
+    </tr>
+    <tr>
+      <td>Significant loci additive P</td>
+      <td>144</td>
+      <td>244</td>
+      <td>351</td>
+    </tr>
+    <tr>
+      <td>Significant loci dominance P</td>
+      <td>88</td>
+      <td>171</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Median significant loci per trait</td>
+      <td>5</td>
+      <td>5</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Median unique significant loci per trait</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Median unique significant SNPs per locus</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Median number of genes per locus</td>
+      <td>32</td>
+      <td>54</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Median protein coding genes per locus</td>
+      <td>11</td>
+      <td>17</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
+_SNPs: single nucleotide polymorphisms._
 
 Of the significant loci with estimated interval sizes, we find 69 intervals (16.1%) that are smaller than 1 Mb (Supplementary file 4). The smallest interval is only 231 bases and associated with the RNA-based abundance of an unclassified genus belonging to Deltaproteobacteria. It is situated in an intron of the C3 gene, a complement component playing a central role in the activation of the complement system, which modulates inflammation and contributes to antimicrobial activity (Ricklin et al., 2016).
 
 The significant genomic regions and SNPs are displayed in Figure 2A and B, respectively. Individual SNPs were associated with up to 14 taxa, and significant intervals with up to 30 taxa. The SNPs with the lowest p-values were associated with the genus Dorea and two ASVs belonging to Dorea (ASV184 and ASV293; Figure 2—figure supplement 1). At the RNA level this involves two loci: mm10-chr4: 67.07 Mb, where the peak SNP is 13 kb downstream of the closest gene Tlr4 (UNC7414459, p=2.31 × 10–69, additive p=4.48 × 10–118, dominance p=1.37 × 10–111; Figure 2; Figure 2—figure supplement 1), and mm10-chr15: 94.4 Mb, where the peak SNP is found within the Adamts20 gene (UNC26145702, p=4.51 × 10–65, additive p=1.87 × 10–113, dominance p=1.56 × 10–105; Figure 2; Figure 2—figure supplement 1). Interestingly, the Irak4 gene, whose protein product is rapidly recruited after TLR4 activation, is also located 181 kb upstream of Adamts20. The five taxa displaying the most associations were ASV19 (Bacteroides), Dorea, ASV36 (Oscillibacter), ASV35 (Bacteroides), and ASV98 (unclassified Lachnospiraceae) (Figure 2—figure supplement 2).
 
-## Ancestry, dominance, and effect sizes
+### Ancestry, dominance, and effect sizes
 
 A total of 398 significant SNPs were ancestry informative between M. m. musculus and M. m. domesticus (i.e. represent fixed differences between subspecies). To gain further insight into the genetic architecture of microbial trait abundances, we estimated the degree of dominance at each significant locus using the d/a ratio (Falconer, 1996), where alleles with strictly recessive, additive, and dominant effects have d/a values of –1, 0, and 1, respectively. As half of the SNPs were not ancestry informative (Figure 3A), it was not possible to consistently have a associated with one parent/subspecies, hence we report d/|a| such that it can be interpreted with respect to bacterial abundance. For the vast majority of loci (83.79%), the allele associated with higher abundance is recessive or partially recessive (–1.25<d/|a|<–0.75; Figure 3B). On the basis of the arbitrary cutoffs, we used to classify dominance, only a small proportion of alleles are underdominant (0.23%; d/|a|<–1.25). However, for one-third of the significant SNPs, the heterozygotes display transgressive phenotypes, i.e., mean abundances that are either significantly lower (31% of SNPs) or higher (2% of SNPs) than those of both homozygous genotypes. Interestingly, the domesticus allele was associated with higher bacterial abundance in two-thirds of this subset (33.9 vs. 16.5% musculus allele; Figure 3A).
 
@@ -78,9 +221,25 @@ A total of 398 significant SNPs were ancestry informative between M. m. musculus
 
 Next, we estimated phenotypic effect sizes by calculating the percent variance explained (PVE) by the peak SNP of each significant region. Peak SNPs explain between 3 and 64% of the variance in bacterial abundance, with a median effect size of 9.3% (Figure 3C). The combined PVE by the additive effects of all significant markers for each taxon ranged from 0.000018 to 41.6%, with an average of 12% (Figure 1A–B). As expected, the combined additive effects of significant loci are typically much lower than the h2, which is the upper bound as it represents the total additive genetic effect. Interestingly, there are several taxa for which the PVE by additive and dominance effects of all significant SNPs exceeds h2 (e.g. genus Odoribacter and ASV234 [unclassified Ruminococcaceae] for RNA-based traits), indicating there are strong dominance effects. For example, Odoribacter has two significant regions which show overdominance, and ASV234 has seven significant regions which show underdominance.
 
-## Functional annotation of candidate genes
+### Functional annotation of candidate genes
 
 Our mapping procedure involves testing for associations between a given microbial trait and a single SNP marker. However, the true genetic architecture is likely more complex. For example, multiple interacting genes in a common host regulatory pathway could influence a given taxonomic group and/or function, the latter of which could also be distributed among unrelated taxa (i.e. functional redundancy). Thus, in order to reveal potential higher-level biological phenomena among the identified loci, we performed pathway analysis to identify interactions and functional categories enriched among the genes in significant intervals. We used STRING (Szklarczyk et al., 2019) to calculate a protein-protein interaction (PPI) network of 925 protein-coding genes nearest to significant SNPs (upstream and/or downstream). A total of 768 genes were represented in the STRING database, and the maximal network is highly significant (STRING PPI enrichment p-value: 2.15×10–14) displaying 668 nodes connected by 1797 edges and an average node degree of 4.68. After retaining only the edges with the highest confidence (interaction score >0.9), this results in one large network with 233 nodes, 692 edges and ten smaller networks (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig4-v1.jpg)
+
+**Figure 4.:** Network clusters are annotated using STRING’s functional enrichment (Doncheva et al., 2019). Nodes represent proteins and edges their respective interactions. Only edges with an interaction score higher than 0.9 are retained. The width of the edge line expresses the interaction score calculated by STRING. The colour of the nodes describes the expression of the protein in the intestine where yellow is not expressed and purple is highly expressed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The top ten hub genes of the protein-protein interaction (PPI) network of the closest genes to the host single nucleotide polymorphisms (SNPs) significantly associated with bacterial abundances Figure 4. The nodes are coloured according to hub gene rank from 1 (red) to 10 (yellow). Blue nodes are the first neighbours.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** KEGG pathways enriched among closest genes to significant single nucleotide polymorphisms (SNPs) from association analysis. Node colour indicates false discovery rate (FDR)-adjusted p-value of enrichment and node size indicates number of candidate genes in pathway.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig4-figsupp4-v1.jpg)
 
 Next, we functionally annotated clusters using STRING’s functional enrichment plugin. The genes of the largest cluster are part of the G-protein-coupled receptor (GPCR) ligand binding pathway. GPCRs are the largest receptor superfamily and also the largest class of drug targets (Sriram and Insel, 2018). We then calculated the top ten hub proteins from the network based on Maximal Clique Centrality (MCC) algorithm with CytoHubba to predict important nodes that can function as ‘master switches’ (Figure 4—figure supplement 1). The top ten proteins contributing to the PPI network were GNG12, MCHR1, NMUR2, PROK2, OXTR, XCR1, TACR3, CHRM3, PTGFR, and C3, which are all involved in the GPCR signalling pathway.
 
@@ -88,21 +247,41 @@ Furthermore, we performed enrichment analysis on the 925 genes nearest to signif
 
 Finally, due to the observation of a significant enrichment of cospeciating taxa among the bacterial species depleted in early onset IBD (Groussin et al., 2017) and the evidence that IBD is especially associated with a dysbiosis in mucosa-associated communities (Yang et al., 2020a; Daniel et al., 2021), we specifically examined possible overrepresentation of genes involved in IBD (Khan et al., 2021) among the 925 genes neighbouring significant SNPs. We found 14 out of the 289 IBD genes, which was significantly more than expected by chance (10,000 times permuted mean: 2.7, simulated p=00001, Fisher’s exact test; Supplementary file 6). Interestingly, SNPs in 5 out of the 14 genes are associated with ASVs belonging to the genus Oscillibacter, a cospeciating taxon known to decrease during the active state of IBD (Metwaly et al., 2020).
 
-## Comparison of significant loci to published gut microbiome mapping studies
+### Comparison of significant loci to published gut microbiome mapping studies
 
 Host loci that appear in multiple independent studies are more likely to represent true positive associations and/or less dependent on environmental perturbations. We therefore compiled a list of 648 unique confidence intervals of significant associations with gut bacterial taxa from seven previous mouse QTL studies (Benson et al., 2010; McKnite et al., 2012; Leamy et al., 2014; Wang et al., 2015; Org et al., 2015; Snijders et al., 2016; Kemis et al., 2019) and compared this list to our significance intervals for bacterial taxa at both the DNA and RNA level (341 intervals). Regions larger than 10 Mb were removed from all studies. We found 441 overlapping intervals, which is significantly more than expected by chance (10,000 times permuted mean: 372.8, simulated p=0.005, Fisher’s exact test, see Materials and methods). Several of our smaller significant loci overlapped with larger loci from previous studies and removing this redundancy left 190 significant loci with a median interval size of 0.83 Mb (Figure 5). The most frequently identified locus is located on chromosome 2 169–171 Mb where protein coding genes Gm11011, Znf217, Tshz2, Bcas1, Cyp24a1, Pfdn4, 4930470P17Rik, and Dok5 are situated.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig5-v1.jpg)
+
+**Figure 5.:** The genes present in two repeatedly identified regions are depicted in boxes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** STRING (Szklarczyk et al., 2019) protein-protein interaction (PPI) network of proteins that are differentially expressed in the intestine (small intestine and colon) of germ-free (GF) mice compared to conventionally raised mice, found in the present study. The colour of the network nodes indicates whether the quantitative trait loci (QTL) hit was found using the DNA abundances (green), RNA abundances (purple) or was found in both (orange). The shape represents if the gene of the protein was the closest gene to the significant single nucleotide polymorphisms (SNP) (rectangle), if the gene was also found in QTLs of other studies (octagon), a combination of both (diamond), or only differentially expressed in GF mice vs conventionally raised mice. The node size expresses the number of taxa where the gene was found in a QTL. The edges represent PPI, where the line thickness indicates the strength of the data support from text mining, experiments, databases, coexpression, gene-fusion, and co-occurrence.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Visualisation of the top hub genes calculated with the MCC algorithm and their first neighbours from the protein-protein interaction (PPI) network of genes found in intervals in present study that are also differentially expressed in germ-free versus conventionally raised mice (Figure 5—figure supplement 1). Edges represent the protein-protein associations. The red nodes represent genes with a high degree ( = hub genes), and the yellow nodes with a low degree, while the blue nodes represent their first neighbours. All nodes shown are differentially expressed in GF mice. Hexagon shaped nodes are genes/proteins also found associated with gut microbiome abundances in other mouse quantitative trait loci (QTL) studies, and round nodes are ‘only’ differentially expressed in GF mice. The size of the node is an indication of the number of taxa associated with the gene.
+
 Additionally, we collected genes within genome-wide significant regions reported in seven human microbiome GWAS (mGWAS) (Bonder et al., 2016; Turpin et al., 2016; Goodrich et al., 2016; Wang et al., 2016; Hughes et al., 2020; Rühlemann et al., 2021; Kurilshikov et al., 2021). However, no significant overrepresentation of genes was found within our significance intervals (p=0.16, Fisher’s exact test), nor within our list of genes closest to a significant SNP (p=0.62, Fisher’s exact test).
 
-## Proteins differentially expressed in germ-free vs. conventional mice
+### Proteins differentially expressed in germ-free vs. conventional mice
 
 To further validate our results, we compared the list of genes contained within intervals of our study to a list of differentially expressed proteins between germ-free and conventionally raised mice (Mills et al., 2020). This comparison was made based on the general expectation that if a host gene influences microbial abundance, its own expression would be more likely to change according to differences in the microbiome. Thus, we examined the intersection between genes identified in our study and the proteins identified as highly associated (|π|>1) with the colonisation state of the colon and the small intestine (Mills et al., 2020). Out of the 373 overexpressed or underexpressed proteins according to colonisation status, we find 194 of their coding genes to be among our significant loci, of which 17 are the closest genes to a significant marker (Iyd, Nln, Slc26a3, Slc3a1, Myom2, Nebl, Tent5a, Fxr1, Cbr3, Chrodc1, Nucb2, Arhgef10l, Sucla2, Enpep, Prkcq, Aacs, and Cox7c). This is significantly more than expected by chance (simulated p=0.016, 10,000 permutations, Fisher’s exact test). Furthermore, analysing the PPI with STRING results in a significant network (STRING PPI enrichment <i>P-value = 1.73 × 10–14, and average node degree 2.4, Figure 5—figure supplement 1), with Cyp2c65, Cyp2c55, Cyp2b10, Gpx2, Cth, Eif3k, Eif1, Sucla2, and Rpl17 identified as hub genes (Figure 5—figure supplement 2).
 
 Subsequently, we merged the information from Mills et al., 2020 and the seven previous QTL mapping studies discussed above to further narrow down the most promising candidate genes, and found 30 genes overlapping with our study. Of these 30 genes, six are the closest gene to a significant SNP. These genes are myomesine 2 (Myom2), solute carrier family 3 member 1 (Slc3a1), solute carrier family 26 member 3 (Slc26a3), nebulette (Nebl), carbonyl reductase 3 (Cbr3), and acetoacetyl-coA synthetase (Aacs).
 
-## Candidate genes influencing bacterial abundance
+### Candidate genes influencing bacterial abundance
 
 To compile a comprehensive set of promising candidate genes, we combined results from network analysis, overlap with previous mouse QTL studies, and differential expression in GF vs conventional mice (see Materials and methods 'Curation of candidate genes’ and ). Next, we used STRING to construct a PPI network with this curated gene set, which is highly significant (STRING PPI enrichment <i>P-value < 1.0 × 10–16, average node degree = 4.85). We identified genes with the highest connectivity and most supporting information (original network see Figure 6—figure supplement 1), resulting in a final set of 79 candidate genes (Figure 6 and Supplementary file 7). The G-protein, GNG12 and the complement component 3 C3, are the proteins with the most edges in the network (30 and 25, respectively), followed by MCHR1, CXCL12, and NMUR2 with each 18 edges. Of these 79 highly connected genes, 35 are associated with bacteria that are either cospeciating (cospeciation rate >0.5; Groussin et al., 2017) and/or have high heritability (>0.5) suggesting a functionally important role for these bacterial taxa.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig6-v1.jpg)
+
+**Figure 6.:** The nodes represent proteins and are coloured according to a selection of enriched GO terms and pathways: G-protein coupled receptor (GPCR) signalling (red), regulation of the immune system process (blue), response to nutrient levels (light green), fatty acid metabolic process (pink), glucose homeostasis (purple), response to antibiotic (orange), regulation of feeding behaviour (yellow), positive regulation of insulin secretion (dark green), circadian entrainment (brown), and response to vitamin D (turquoise). The colour of the edges represents the interaction type: known interactions from curated databases (turquoise) or experimentally determined (pink); predicted interactions from gene neighbourhood (green), gene fusions (red), gene co-occurrence (blue); other interactions from text-mining (light green), coexpression (black), and protein homology (purple).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75419/elife-75419-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** This network is generated in STRING (Szklarczyk et al., 2019) and Cytoscape. Nodes are coloured according to the intestine expression score (source: STRING).
 
 ## Discussion
 
@@ -134,7 +313,220 @@ In summary, our study provides a number of novel insights into the importance of
 
 ## Materials and methods
 
-## Intercross design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Mus musculus musculus-Mus musculus-domesticus, males)</td>
+      <td>(HZ)A-(HZ)H</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Second generation wild-derived inter-crossed hybrid mouse line, Mus musculus musculus-Mus musculus domesticus originating from four breeding stocks captured in the wild hybrid zone around Freising, Germany.</td>
+    </tr>
+    <tr>
+      <td>biological sample (Mus musculus)</td>
+      <td>Cecum tissue (mucosa)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Collected and stored in RNAlater overnight. After RNAlater removal tissue was stored in –20°C</td>
+    </tr>
+    <tr>
+      <td>biological sample (Mus musculus)</td>
+      <td>Ear clips</td>
+      <td>This paper</td>
+      <td></td>
+      <td>For genotyping</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Allprep DNA/RNA 96-well</td>
+      <td>Qiagen (Hilden, Germany)</td>
+      <td>Cat. No.: 80,284</td>
+      <td>DNA/RNA extraction</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Lysing matrix E</td>
+      <td>MP Biomedical (Eschwege, Germany)</td>
+      <td>SKU:116914050-CF</td>
+      <td>Lysing</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>High-capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems (Darmstadt, Germany)</td>
+      <td>Cat. No.: 368,814</td>
+      <td>cDNA transcription</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>27 F</td>
+      <td>https://doi.org/10.1016/j.ijmm.2016.03.004</td>
+      <td>PCR primers</td>
+      <td>Forward primer V1-V2 hypervariable region</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>338 R</td>
+      <td>https://doi.org/10.1016/j.ijmm.2016.03.004</td>
+      <td>PCR primers</td>
+      <td>Reverse primer V1-V2 hypervariable region</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>DADA2</td>
+      <td>https://doi.org/10.1038/nmeth.3869</td>
+      <td></td>
+      <td>16S rRNA gene processing</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>phyloseq</td>
+      <td>https://doi.org/10.1371/journal.pone.0061217</td>
+      <td></td>
+      <td>16S rRNA gene analysis</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>DNAeasy Blood and Tissue 96-well</td>
+      <td>Qiagen (Hilden, Germany)</td>
+      <td>Cat. No.: 69,504</td>
+      <td>DNA extraction ear clips for genotyping</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GigaMUGA</td>
+      <td>Neogen, Lincoln, NE</td>
+      <td></td>
+      <td>Illumina Infinium II array containing 141,090 SNP probes</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>plink 1.9</td>
+      <td>https://doi.org/10.1186/s13742-015-0047-8</td>
+      <td></td>
+      <td>Quality control genotypes</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GEMMA (v 0.98.1)</td>
+      <td>https://doi.org/10.1038/ng.2310</td>
+      <td></td>
+      <td>Genetic relatedness matrix</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>lme4QTL</td>
+      <td>https://doi.org/10.1186/s12859-018-2057-x</td>
+      <td></td>
+      <td>SNP-based heritability, GWAS</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>exactLRT (RLRsim, v 3.1–6)</td>
+      <td>Scheipl et al., 2008</td>
+      <td></td>
+      <td>Significance heritability estimates</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>inv.logit (Gtools, v 3.9.2)</td>
+      <td>Grieneisen et al., 2021</td>
+      <td></td>
+      <td>Inverse logistic transformation</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>matSpDlite</td>
+      <td>Nyholt, 2019; https://doi.org/10.1038/sj.hdy.6800717</td>
+      <td></td>
+      <td>Study-wide significance threshold</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>biomaRt (mm10)</td>
+      <td>Durinck et al., 2009</td>
+      <td></td>
+      <td>Gene annotation</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>r.squaredGLMM (MuMIn, v 1.37.17)</td>
+      <td>Kamil, 2020</td>
+      <td></td>
+      <td>Percentage of variance explained</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>locateVariants (VariansAnnotation, v 1.34.0)</td>
+      <td>https://doi.org/10.1093/bioinformatics/btu168</td>
+      <td></td>
+      <td>Nearest gene</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>STRING (v 11)</td>
+      <td>https://doi.org/10.1093/nar/gky1131</td>
+      <td></td>
+      <td>Protein-protein interaction networks</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Cytoscape (v 3.8.2)</td>
+      <td>https://doi.org/10.1101/gr.1239303</td>
+      <td></td>
+      <td>Network analysis and visualisation</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MCODE</td>
+      <td>https://doi.org/10.1186/1471-2105-4-2</td>
+      <td></td>
+      <td>Cytoscape plugin for identifying network clusters</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>stringApp</td>
+      <td>https://doi.org/10.1021/acs.jproteome.8b00702</td>
+      <td></td>
+      <td>Cytoscape plugin for functional annotation</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>clusterprofiler (v 3.16.1)</td>
+      <td>https://doi.org/10.1089/omi.2011.0118</td>
+      <td></td>
+      <td>Enrichment analysis</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>poverlap</td>
+      <td>Pedersen and Brown, 2013</td>
+      <td></td>
+      <td>To determine significant overlap between studies</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>R (v 3.5.3)</td>
+      <td>https://www.R-project.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Intercross design
 
 We generated a mapping population using partially inbred strains derived from mice captured in the M. musculus–M. m. domesticus hybrid zone around Freising, Germany, in 2008 (Turner et al., 2012). Originally, four breeding stocks were derived from 8 to 9 ancestors captured from one (FS, HA, TU) or two sampling sites (HO), and maintained with four breeding pairs per generation using the HAN-rotation out-breeding scheme (Rapp, 1972). Eight inbred lines (two per breeding stock) were generated by brother/sister mating of the 8th generation lab-bred mice. We set up the cross when lines were at the 5th–9th generation of brother-sister meeting, with inbreeding coefficients of >82%.
 
@@ -142,39 +534,51 @@ We used power calculations to estimate the optimal cross design and sample size 
 
 This study was performed according to approved animal protocols and in­stitutional guidelines of the Max Planck Institute. Mice were maintained and handled in accordance with FELASA guidelines and German animal welfare law (Tierschutzgesetz § 11, permit from Veterinäramt Kreis Plön: 1401–144/PLÖ–004697).
 
-## Sample collection
+### Sample collection
 
 Mice were kept in the same room and caged together with littermates after weaning before being separated into single cages 1 week prior to dissection (to minimize effects of social dominance on fertility traits for a related study). Mice were sacrificed at 91±5 days by CO2 asphyxiation. We recorded body weight, body length and tail length, and collected ear tissue for genotyping. The caecum was removed and gently separated from its contents through bisection and immersion in RNAlater (Thermo Fisher Scientific, Schwerte, Germany). After overnight storage in RNAlater at 4°C, the RNAlater was removed and tissue stored at –20°C.
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 We simultaneously extracted DNA and RNA from caecum tissue samples using Qiagen (Hilden, Germany) Allprep DNA/RNA 96-well kits. All samples were extracted together in the same extraction round and hence timepoint. We followed the manufacturer’s protocol, with the addition of an initial bead beating step using Lysing matrix E tubes (MP Biomedical, Eschwege) to increase cell lysis. We used caecum tissue because host genetics has a greater influence on the microbiota at this mucosal site than on the lumen contents (Linnenbrink et al., 2013). We performed reverse transcription of RNA with high-capacity cDNA transcription kits from Applied Biosystems (Darmstadt, Germany). We amplified the V1–V2 hypervariable region of the 16S rRNA gene using barcoded primers (27F-338R) with fused MiSeq adapters and heterogeneity spacers following the description in Rausch et al., 2016 and sequenced amplicons with 250bp paired-reads on the Illumina MiSeq platform. Individual sequencing libraries were prepared in parallel for all DNA and RNA samples, respectively, resulting in one MiSeq library each. Accordingly, all individual 16S rRNA gene profiles within a given DNA- or RNA-based mapping analysis were generated by a single sequencing run. Thus, only direct comparisons between DNA- and RNA-based traits could be possibly confounded by sequencing run, and all analyses were performed independently for these two categories.
 
-## 16S rRNA gene analysis
+### 16S rRNA gene analysis
 
 We assigned sequences to samples by exact matches of MID (multiplex identifier, 10 nt) sequences processed 16S rRNA sequences using the DADA2 pipeline, implemented in the DADA2 R package, version 1.16.0 (Callahan et al., 2016). Processing of the raw reads with DADA2 was performed separately for the DNA- and RNA-based libraries. Briefly, raw sequences were trimmed and quality filtered with the maximum two ‘expected errors’ allowed in a read, paired sequences were merged, ASVs were inferred, and chimeras removed. The two libraries were merged and another round of chimera removal was performed. We classified taxonomy using the Ribosomal Database Project (RDP) training set 16 (Cole et al., 2014). Classifications with low confidence at the genus level (<0.8) were grouped in the arbitrary taxon ‘unclassified_group’. For all downstream analyses, we rarefied samples to 10,000 reads each. Due to the quality filtering, we have phenotyping data for 286 individuals on DNA level, and 320 G2 individuals on RNA level.
 
 We used the phyloseq R package (version 1.32.0) to estimate alpha diversity using the Shannon index and Chao1 index, and beta diversity using Bray-Curtis distance (McMurdie and Holmes, 2013). We defined core microbiomes at the DNA- and RNA-level, including taxa present in >25% of the samples and with median abundance of non-zero values > 0.2% for ASV and genus; and >0.5% for family, order, class, and phylum.
 
-## Genotyping
+### Genotyping
 
 We extracted genomic DNA from ear samples using DNAeasy Blood and Tissue 96 well kits (Qiagen, Hilden, Germany), according to the manufacturer’s protocol. We sent DNA samples from 26 G0 mice and 320 G2 mice to GeneSeek (Neogen, Lincoln, NE) for genotyping using the Giga Mouse Universal Genotyping Array (GigaMUGA; Morgan et al., 2015), an Illumina Infinium II array containing 141,090 SNP probes. We quality-filtered genotype data using plink 1.9 (Chang et al., 2015); we removed individuals with call rates < 90% and SNPs that were: not bi-allelic, missing in > 10% individuals, with minor allele frequency < 5%, or Hardy-Weinberg equilibrium exact test <i>P-values < 1e-10. A total of 64,103 SNPs and all but one G2 individual were retained. Prior to mapping, we LD-filtered SNPs with r2 > 0.9 using a window of 5 SNPs and a step size of 1 SNP. We retain 32,625 SNPs for mapping.
 
-## Hybrid index calculation
+### Hybrid index calculation
 
 For each G0 and G2 mouse, we estimated a hybrid index – defined as the percentage of M. m. musculus ancestry. We identified ancestry-informative SNP markers by comparing GigaMUGA data from ten individuals each from two wild-derived outbred stocks of M. m. musculus (Kazakhstan and Czech Republic) and two of M. m. domesticus (Germany and France) maintained at the Max Planck Institute for Evolutionary Biology (L.M. Turner and B. Payseur, unpublished data). We classified SNPs as ancestry informative if they had a minimum of 10 calls per subspecies, the major allele differed between musculus and domesticus, and the allele frequency difference between subspecies was >0.3. A total of 48,361 quality-filtered SNPs from the G0/G2 genotype data were informative, including 8775 SNPs with fixed differences between subspecies samples.
 
-## Estimation of relatedness among individuals
+### Estimation of relatedness among individuals
 
-We computed a centred and a standardised relatedness matrix using the 32,625 filtered SNPs with GEMMA (v 0.98.1; Zhou and Stephens, 2012). The centred relatedness matrix was calculated with the formula:Centered GRM=1p ∑i=1p(xi−1nx¯i)(xi− 1nx¯i)T
+We computed a centred and a standardised relatedness matrix using the 32,625 filtered SNPs with GEMMA (v 0.98.1; Zhou and Stephens, 2012). The centred relatedness matrix was calculated with the formula:
 
-The standardised relatedness matrix was calculated with the formula:Standardized GRM=1p ∑i=1p1vxi(xi−1nx¯i)(xi− 1nx¯i)T
+$$
+Centered GRM=\frac{1}{p} \sumi=1p(x_{i}−1_{n}x¯_{i})(x_{i}− 1_{n}x¯_{i})^{T}
+$$
 
-where X denotes the n×p matrix of genotypes, xi as its ith column representing the genotypes of ith SNP, x¯i as the sample mean and 1n as a n×1 vector of 1’s, and vxi as the sample variance of ith SNP.
+The standardised relatedness matrix was calculated with the formula:
 
-## Heritability of microbial abundances
+$$
+Standardized GRM=\frac{1}{p} \sumi=1p\frac{1}{v_{x_{i}}}(x_{i}−1_{n}x¯_{i})(x_{i}− 1_{n}x¯_{i})^{T}
+$$
 
-We calculated heritabilities for bacterial abundances using linear mixed models implemented in the lme4qtl R package (version 0.2.2; Ziyatdinov et al., 2018). We included mating pair nested within the subcross identifier (Figure 1—figure supplement 6) as random effects to control for maternal effects and population structure, respectively. The narrow-sense heritability (h2) is expressed as:h2=σg2σg2+σm2+σs2+σe2
+where X denotes the n×p matrix of genotypes, $x_{i}$ as its ith column representing the genotypes of ith SNP, $x¯_{i}$ as the sample mean and $1_{n}$ as a n×1 vector of 1’s, and $v_{x_{i}}$ as the sample variance of ith SNP.
+
+### Heritability of microbial abundances
+
+We calculated heritabilities for bacterial abundances using linear mixed models implemented in the lme4qtl R package (version 0.2.2; Ziyatdinov et al., 2018). We included mating pair nested within the subcross identifier (Figure 1—figure supplement 6) as random effects to control for maternal effects and population structure, respectively. The narrow-sense heritability (h2) is expressed as:
+
+$$
+h^{2}=\frac{\sigma_{g}^{2}}{\sigma_{g}^{2}+\sigma_{m}^{2}+\sigma_{s}^{2}+\sigma_{e}^{2}}
+$$
 
 where σg2 is the genetic variance estimated by the centred GRM, σm2 variance of the mating pair component, σs2 the variance due to the subcross identifier, and σe2 the variance due to residual environmental factors.
 
@@ -182,15 +586,19 @@ We also estimated CH using the method from Zhou et al., 2013, which estimates th
 
 We determined significance of the heritability estimates using exact restricted likelihood ratio tests, following Supplementary Note 3 in Ziyatdinov et al., 2018, using the exactRLRT() function of the R package RLRsim (version 3.1–6; Scheipl et al., 2008). Correlation with cospeciation rates was calculated for taxa shared between studies using the Spearman’s correlation test.
 
-## Genome-wide association mapping
+### Genome-wide association mapping
 
 Prior to mapping, we inverse logistic transformed bacterial abundances using the inv.logit function from the R package gtools (version 3.9.2; Grieneisen et al., 2021).
 
-We performed association mapping in the R package lme4qtl (version 0.2.2; Ziyatdinov et al., 2018) with the following linear mixed model:yi=μ+aiXija+diXijd+Wu+e
+We performed association mapping in the R package lme4qtl (version 0.2.2; Ziyatdinov et al., 2018) with the following linear mixed model:
 
-where yi is the phenotypic value of the jth individual; μ is the mean, Xija the additive and Xijd the dominance genotypic index values coded as for individual j at locus i. a and d indicate fixed additive and dominance effects, W indicates random effects mating pair and centred kinship matrix, plus residual error e. For mapping, we used the centred GRM as the SNP effect size does not depend on its minor allele frequency. Moreover, the centred GRM typically provides better control for population structure in lower organisms and both GRMs perform equally in humans (Zhou and Stephens, 2012).
+$$
+y_{i}=\mu+a_{i}X_{ij}^{a}+d_{i}X_{ij}^{d}+Wu+e
+$$
 
-We estimated additive and dominance effects separately because we expected to observe underdominance and overdominance in our hybrid mapping population, as well as additive effects, and aimed to estimate their relative importance. To model the additive effect (i.e. 1/2 distance between homozygous means), genotypes at each locus, i, were assigned additive index values (Xa ∈ 1, 0,–1) for AA, AB, BB, respectively, with A indicating the major allele and B the minor allele. To model dominance effects (i.e. heterozygote mean – midpoint of homozygote means), genotypes were assigned dominance index values (Xd ∈ 0, 1) for homozygotes and heterozygotes, respectively.
+where $y_{i}$ is the phenotypic value of the jth individual; μ is the mean, $X_{ij}^{a}$ the additive and $X_{ij}^{d}$ the dominance genotypic index values coded as for individual j at locus i. a and d indicate fixed additive and dominance effects, W indicates random effects mating pair and centred kinship matrix, plus residual error e. For mapping, we used the centred GRM as the SNP effect size does not depend on its minor allele frequency. Moreover, the centred GRM typically provides better control for population structure in lower organisms and both GRMs perform equally in humans (Zhou and Stephens, 2012).
+
+We estimated additive and dominance effects separately because we expected to observe underdominance and overdominance in our hybrid mapping population, as well as additive effects, and aimed to estimate their relative importance. To model the additive effect (i.e. 1/2 distance between homozygous means), genotypes at each locus, i, were assigned additive index values ($X^{a}$ ∈ 1, 0,–1) for AA, AB, BB, respectively, with A indicating the major allele and B the minor allele. To model dominance effects (i.e. heterozygote mean – midpoint of homozygote means), genotypes were assigned dominance index values ($X^{d}$ ∈ 0, 1) for homozygotes and heterozygotes, respectively.
 
 We included mating pair as a random effect to account for maternal effects and cage effects, as male litter mates are kept together in a cage after weaning. We included kinship coefficient as a random effect in the model to account for population and family structure. To avoid proximal contamination, we used a leave-one-chromosome-out approach, that is, when testing each single-SNP association we used a relatedness matrix omitting markers from the same chromosome (Parker et al., 2014). Hence, for testing SNPs on each chromosome, we calculated a centred relatedness matrix using SNPs from all other chromosomes with GEMMA (v0.98.1; Zhou and Stephens, 2012). We calculated p-values for single-SNP associations by comparing the full model to a null model excluding fixed effects. Code for performing the mapping is available at https://github.com/sdoms/mapping_scripts (copy archived at swh:1:rev:d085e7782e9ac85e264fc6b70a5058a53fd7e9fe, Doms, 2022).
 
@@ -200,15 +608,15 @@ We evaluated significance of SNP-trait associations using two thresholds; first,
 
 To estimate the genomic interval represented by each significant LD-filtered SNP, we report significant regions defined by the most distant flanking SNPs in the full pre-LD-filtered genotype dataset showing r2 >0.9 with each significant SNP. We combined significant regions less than 10 Mb apart into a single region. Genes situated in significant regions were retrieved using biomaRt (Durinck et al., 2009) and the mm10 mouse genome.
 
-## Percentage of variance explained
+### Percentage of variance explained
 
 We estimated the percentage of variance explained by the lead SNP using a linear mixed model with the additive and dominance genotypes of the lead SNP included as a fixed effect and mating pair and kinship matrix as random effects in lme4QTL (Ziyatdinov et al., 2018). We used the r.squaredGLMM function from the MuMIn R package (v 1.37.17; Kamil, 2020) to calculate the marginal R_GLMM², which represents the variance explained by the fixed effects (i.e. the genotype effect). The total variance explained by all significant SNPs was calculated similarly with the exception of including all significant SNPs as fixed effects instead of only the lead SNP. This was performed using the additive genotypes only and both the additive and the dominance genotypes.
 
-## Dominance analyses
+### Dominance analyses
 
 We classified dominance for SNPs with significant associations on the basis of the d/a ratio (Falconer, 1996) where d is the dominance effect, a the additive effect. As the expected value under purely additive effects is 0. As our mapping population is a multiparental-line cross, and not all SNPs were ancestry-informative with respect to musculus/domesticus, the sign of a effects is defined by the major allele within our mapping population, which lacks clear biological interpretation. To provide more meaningful values, we report d/|a|, such that a value of 1=complete dominance of the allele associated with higher bacterial abundance, and a value of –1=complete dominance of the allele associated with lower bacterial abundance. Values above 1 or below –1 indicate over/underdominance. We classified effects of significant regions the following arbitrary d/|a| ranges to classify dominance of significant regions (Burke et al., 2002; Miller et al., 2014): underdominant < −1.25, high abundance allele recessive between –1.25 and –0.75, partially recessive between –0.75 and –0.25, additive between –0.25 and 0.25, partially dominant between 0.25 and 0.75, dominant 0.75 and 1.25, and overdominant > 1.25.
 
-## Gene ontology and network analysis
+### Gene ontology and network analysis
 
 The nearest genes upstream and downstream of the significant SNPs were identified using the locateVariants() function from the VariantAnnotation R package (version 1.34.0; Obenchain et al., 2014) using the default parameters. A maximum of two genes per locus were included (one upstream, and one downstream of a given SNP).
 
@@ -216,10 +624,10 @@ To investigate functions and interactions of candidate genes, we calculated a PP
 
 We identified over represented KEGG pathways and human diseases using the clusterprofiler R package (version 3.16.1; Yu et al., 2012). p-values were corrected for multiple testing using the Benjamini-Hochberg method. Pathways and diseases with an adjusted p-value < 0.05 were considered overrepresented.
 
-## Calculating overlap with other studies and overrepresentation of IBD genes
+### Calculating overlap with other studies and overrepresentation of IBD genes
 
 To test for significant overlap with loci identified in previous mapping studies and for overrepresentation of IBD genes, we used the tool poverlap (Pedersen and Brown, 2013) to compare observed overlap to random expectations based on 10,000 permutations of significant regions. Regio`ping regions using the locateVariants() function from the VariantAnnotation R package (version 1.34.0; Obenchain et al., 2014).
 
-## Candidate gene curation
+### Candidate gene curation
 
 From the total set of 11,618 genes situated within significant regions, we identified a set of high-confidence genes, which met one or more of the following criteria: (1) hub genes or nearest neighbours in the ‘closest gene network’ (Figure 4, Figure 4—figure supplement 1), (2) genes in regions overlapping with QTL from previous mouse studies (Figure 5), (3) genes differentially expressed between germ-free and conventional mice (Figure 5—figure supplement 1 and Figure 5—figure supplement 2; Mills et al., 2020). After filtering, the resulting set of 309 genes were given as input into STRING (Szklarczyk et al., 2019) to construct a PPI network (304/309 genes were represented in the database; Figure 6—figure supplement 1). Finally, we selected one top candidate gene per significant region on the basis of network properties (degree and number of nodes) and/or fitting the most of the above-mentioned criteria. In case of a tie, the gene with the highest intestinal expression score (source: STRING) is chosen. Nodes without any edges were removed.

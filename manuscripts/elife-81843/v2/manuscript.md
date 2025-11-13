@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/0316ej306 Bioinformatics Unit, Department of Life Sciences Core Facilities, Weizmann Institute of Science Rehovot Israel
-3. https://ror.org/04p5ggc03 Developmental Biology/Signal Transduction, Max Delbrueck Center for Molecular Medicine Berlin Germany
-4. https://ror.org/0015ws592 Team of syncytial cell biology, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France
-5. https://ror.org/016476m91 Institute of Medical Sciences, University of Aberdeen Aberdeen United Kingdom
-6. https://ror.org/01v29qb04 Department of Biosciences, Durham University Durham United Kingdom
+1. Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Bioinformatics Unit, Department of Life Sciences Core Facilities, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+3. Developmental Biology/Signal Transduction, Max Delbrueck Center for Molecular Medicine Berlin Germany ([ROR:04p5ggc03](https://ror.org/04p5ggc03))
+4. Team of syncytial cell biology, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France ([ROR:0015ws592](https://ror.org/0015ws592))
+5. Institute of Medical Sciences, University of Aberdeen Aberdeen United Kingdom ([ROR:016476m91](https://ror.org/016476m91))
+6. Department of Biosciences, Durham University Durham United Kingdom ([ROR:01v29qb04](https://ror.org/01v29qb04))
 
 † Corresponding author
 
@@ -42,9 +42,21 @@ To address these knowledge gaps and to provide comprehensive gene expression pro
 
 ## Results
 
-## Transcriptomic analysis provides a molecular characterization of the intact muscle spindle
+### Transcriptomic analysis provides a molecular characterization of the intact muscle spindle
 
 The molecular details of the muscle spindle and the various tissues that compose it are largely missing. To provide a comprehensive molecular characterization of this complex organ, we isolated intact muscle spindles and subjected them to transcriptomic and proteomic analyses. Two major hurdles in studying the muscle spindle are its small size and infrequent occurrence within different muscles. To overcome these hurdles, we isolated intact spindles from the deep masseter muscle, which is known to be rich in these receptors (Lennartsson, 1980). To recognize the spindles inside the masseter belly, we marked them genetically by crossing Piezo2EGFP-IRES-Cre deleter mice with a Rosa26tdTomato reporter line (Madisen et al., 2010; Woo et al., 2014). Piezo2 was previously shown to be expressed by proprioceptive sensory neurons in the spindle (Woo et al., 2015). To verify the specific expression of tdTomato in spindles of Piezo2EGFP-IRES-Cre;Rosa26tdTomato mice, we first examined sections through the masseter and found a strong signal in the spindles (Figure 1A). We then compared Piezo2 expression, as indicated by GFP signal, to the expression of tdTomato (Figure 1—figure supplement 1). As reported previously (Woo et al., 2015), GFP was detected in sensory neuron soma in the DRG and at the proprioceptive neuron endings (Figure 1—figure supplement 1). Interestingly, while tdTomato expression was not detected in the sensory endings, it was expressed in DRG sensory neurons, intrafusal muscle fibers, and capsule cells (Figure 1—figure supplement 1). The expression of tdTomato in the DRG but not in the neuron endings was probably due to lack of transport of the reporter to the terminal ends. Moreover, the expression of tdTomato, but not GFP, in intrafusal fibers and capsule cells suggests that Piezo2 was expressed in the progenitors of these lineages. Nonetheless, this broad tdTomato expression enabled us to manually dissect out the intact spindle from the masseter belly. From each mouse, we obtained intact muscle spindles as well as extrafusal muscles fibers adjacent to the spindle, referred to as muscle. The muscle samples were used as a reference tissue by which to identify spindle-specific genes and to eliminate possible contamination with extrafusal fibers.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal images of longitudinal sections of the deep masseter muscle of adult (>P90) Piezo2EGFP-IRES-Cre;Rosa26tdTomato mice. The expression of TdTomato shows the abundance of muscle spindles in this muscle. White (left) and red, tdTomato; cyan, DAPI; scale bar represents 50 μm. (B) Schematic representation of sample isolation and sequencing. Bulk transcriptomic analysis was performed on intact muscle spindles and adjacent extrafusal muscle fibers (muscle). The table contains the number of genes that were differentially expressed between spindle and muscle samples. (C) Volcano plot depicting differentially expressed (DE) genes between spindle and muscle samples. Gray dots represent all detected genes; blue dots represent DE genes. Other colored dots indicate genes known to be expressed in intrafusal fibers (red), proprioceptive neurons (black), γ-motoneurons (green), and muscle spindle capsule (magenta). Y-axis denotes −log10 (p-values), whereas X-axis shows log2 fold change values. (D) Volcano plot depicting DE genes between spindle and muscle samples. Gray dots represent all detected genes; blue dots represent DE genes; magenta represent DE genes that are located at the extracellular. Y-axis denotes −log10 (p-values), whereas X-axis shows log2 fold change values. (E) Left: A Venn diagram showing DE genes potentially expressed by proprioceptive neurons (orange) and γ-motoneurons (green). The overlap between the two datasets is marked by light green. Right: Gene ontology (GO) analysis for enriched biological processes in each dataset using Metascape (see also Supplementary file 4, Supplementary file 5). (F) A Venn diagram showing the overlap between upregulated genes in our analysis (blue) and intrafusal genes previously reported by Kim et al., 2020 (red). Below are the most enriched biological processes in the shared genes, as indicated by GO analysis using Metascape (see also Supplementary file 6; Supplementary file 7). (G) A Venn diagram of the four groups of DE genes displayed in D–F, namely genes associated with the extracellular space (magenta), proprioceptive neurons (yellow), γ-motoneurons (green), and intrafusal fibers (red).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Confocal images of longitudinal sections through the extensor digitorum longus (EDL) muscle (A), transverse section of a muscle spindle in a forelimb (FL) muscle (B), and dorsal root ganglion (DRG) sections (C) from adult (>P90) Piezo2EGFP-IRES-Cre;Rosa26tdTomato mice. tdTomato (magenta) is expressed in DRG neurons (C) as well as in muscle spindle capsule and intrafusal fibers (A,B). Green, GFP; white, DAPI; scale bar represents 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Principal component analysis of RNA-seq data from isolated muscle spindles (spindle, blue) and adjacent extrafusal muscle fibers (muscle, red). (B) Results of gene ontology (GO) enrichment analysis for the ‘cellular compartment’ term on differentially expressed (DE) upregulated genes performed by Metascape web tool. The X-axis indicates the −log10 (p-values) of statistically enriched terms. The genes associated with each term are listed in Supplementary file 2. (C,D) Gene set enrichment analysis (GSEA) of proprioceptive neurons (Zheng et al., 2019; C) and γ-motoneurons (Blum et al., 2021; D) pre-ranked by expression values, which were run against spindle DE upregulated genes. Y-axes indicate the enrichment score (ES) and X-axes show the genes (vertical black lines) that are represented in both datasets. All the genes contributing to the enrichment score were used for generating the proprioception and the γ-motoneurons dataset in (E) and in Figure 1E. Significance threshold was set at FDR  < 0.05. (E) Heatmap of GO enrichment analysis of biological processes for genes expressed by proprioceptive neurons, by γ-motoneurons and for shared genes (shown in C and D). The −log10 (p-values) of all terms are color-coded (gray is 0 and red is 20). For additional information, see Supplementary file 5. (F) A Venn diagram showing the overlap between our list of spindle afferent genes (prop. neurons, purple) and markers of the three proprioceptive neuron subtypes, muscle spindle afferents Ia (MS-Ia; yellow) and II (MS-II; green) and Golgi tendon organ (GTO) afferents Ib (red), previously reported by Wu et al., 2021. (G) A Venn diagram showing the overlap in gene expression between γ-motoneurons (purple), α-motoneurons (yellow), and proprioceptive neurons (green). (H) Bar graph showing GO enrichment analysis on 187 DE intrafusal genes (shown in Figure 1E). X-axis indicates the −log10 (p-values) of significantly enriched terms. For additional information, see Supplementary file 7.
 
 Next, we performed bulk RNA-sequencing (RNA-seq) of spindle and muscle samples (Figure 1B). Principal components analysis (PCA) indicated different transcriptional states for the two tissue types (Figure 1—figure supplement 2A). Differential expression analysis identified over 3000 genes that were differentially expressed between spindle and muscle samples (Figure 1C; Supplementary file 1; see Materials and methods for details). To verify these results, we searched our dataset for the expression of known muscle spindle markers. We found that markers for intrafusal fibers (Myh3, Myh6, Myh7, and Myh7b) (Lee et al., 2019; Schiaffino et al., 2015; Soukup et al., 1995; Walro and Kucera, 1999), for proprioceptive sensory neurons (Piezo2 and Slc17a7, also known as Vglut1) (Bewick et al., 2005; Woo et al., 2015), as well as for ECM (collagen type IV; Sanes, 1982) and γ-motoneurons (Gfrα1; Shneider et al., 2009), were upregulated in spindles relative to muscle (Figure 1C). To gain more information about upregulated genes, we performed gene ontology (GO) enrichment analysis using the Metascape web tool (https://metascape.org/). We identified enrichment for cellular compartments such as ‘external encapsulating structure’, ‘ECM’, ‘synaptic membrane’, ‘axon’, and ‘axon terminus’ (Figure 1—figure supplement 2B; Supplementary file 2), suggesting that our data include RNA transcripts that originate from capsule cells and neurons. Taken together, the finding of known markers for muscle spindle tissues and the GO analysis results suggest that we successfully obtained comprehensive transcriptomic data from the entire spindle.
 
@@ -60,9 +72,17 @@ Finally, to identify RNA transcripts unique to intrafusal fibers, we compared th
 
 Overall, we have established a database of 2742 genes that are upregulated in muscle spindle relative to adjacent extrafusal fibers. We have demonstrated that this database includes RNA transcripts from all tissues composing the spindle, including intrafusal fibers, neuronal tissues, and capsule cells (Figure 1G), thereby providing molecular characterization of the entire organ.
 
-## Proteomic analysis identified potential markers for the different tissues that compose the muscle spindle
+### Proteomic analysis identified potential markers for the different tissues that compose the muscle spindle
 
 Next, we performed proteomic analysis on intact muscle spindles and adjacent extrafusal fibers isolated from the deep masseter muscle. Because we expected some of the differentially expressed proteins to originate in the neuronal component of the spindle, we also analyzed nerve fibers from the masseter without their nerve termini and cell bodies (nerve; Figure 2A). PCA of the obtained proteomic data revealed three separate populations (Figure 2—figure supplement 1A), indicating that muscle spindles, extrafusal fibers, and nerve fibers display different protein compositions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the analyzed samples. Proteomic analysis was performed on intact muscle spindle, extrafusal muscle fibers (muscle), and nerve fibers deprived of their nerve termini and cell bodies (nerve). (B) Heatmap showing clustering of the differentially expressed proteins between muscle spindle and extrafusal fibers. Each horizontal line denotes the relative expression of a single protein (log2-transformed LFQ intensities with row standardization; proteins not detected are in white). Cluster numbers are indicated by Roman letters on the right. (C) Scatter plot showing the correlation between the fold changes of spindle-muscle differentially expressed (DE) proteins and RNA. The X-axis indicates log2 fold change values for proteins, whereas the Y-axis shows the log2 fold change values for transcripts (shown in Figure 1). Gray dots represent all genes and proteins detected, red dots represent DE molecules at both RNA and protein levels, blue dots represent DE proteins only. DE protein symbols are shown on the plot.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Principal component analysis (PCA) of proteomic data from isolated muscle spindles (spindle, blue) extrafusal muscle fibers (muscle, red) and nerve fibers devoid of nerve termini and cell bodies (nerve, blue). (B) Heatmap showing clustering of the differentially expressed proteins between muscle spindle and nerve fibers. Each horizontal line describes the relative expression of a single protein (log2-transformed LFQ intensities with row standardization; proteins not detected are in white).
 
 To determine which proteins are expressed in each tissue type, we performed differential expression analysis and found over 500 proteins that were differentially expressed between the samples (Figure 2A, Supplementary file 8). To identify proteins that are uniquely expressed by spindles, we compared between spindle and nerve samples and between spindle and muscle samples, and identified 387 and 40 differentially expressed proteins, respectively. To correlate these differentially expressed proteins to the different tissues of the spindle, we examined their expression in all three samples (Figure 2B, Figure 2—figure supplement 1B). Clustering of the 387 spindle-nerve differentially expressed proteins showed that the spindle sample clustered with the muscle sample, suggesting that these proteins are expressed by the muscle tissue of the spindle (Figure 2—figure supplement 1B).
 
@@ -72,9 +92,25 @@ Finally, to correlate between RNA-seq and proteomic data, we compared the lists 
 
 Taken together, our proteomic data identified 40 proteins that are differentially expressed between the muscle spindle and the surrounding muscle tissue. Twenty-four of these proteins were expressed only in the spindle, suggesting them as potential markers for these proprioceptors.
 
-## Myl2, Atp1a3, VCAN, and Glut1 are new markers for different muscle spindle tissues
+### Myl2, Atp1a3, VCAN, and Glut1 are new markers for different muscle spindle tissues
 
 To identify markers for the different tissues of the spindle, we searched for differentially expressed molecules that were found to be upregulated in both our transcriptomic and proteomic analyses (Figure 2C). Next, we associated 16 of the 22 detected molecules to their predicted tissue by crossing them with RNA datasets of proprioceptive neurons, γ-motoneurons, extracellular genes, and intrafusal fibers (Figure 1, Figure 3—figure supplement 1). Four out of the remaining six candidates are contractile proteins, suggesting that they are expressed by intrafusal fibers. The two remaining proteins were classified as ‘other’ (Figure 3A, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the different tissues composing the muscle spindle in a lateral (left) and axial (center) views. Twenty-two potential markers that were found to be upregulated at both RNA and protein levels are listed next to their predicted tissue of expression, namely intrafusal fibers (red), neurons (green), capsule cells (dark blue), and capsule extracellular matrix (light blue). Markers that were further validated are marked with asterisks. (B,C) Confocal images of whole-mount extensor digitorum longus (EDL) muscle from Piezo2EGFP-IRES-Cre mice, in which proprioceptive neurons are fluorescently labeled by GFP (green), which were immunostained for ATP1A3 (B, magenta) or myosin light chain 2 (MYL2) (C, magenta). Anti-ATP1A3 stained proprioceptive neurons (BII) and γ-motoneurons (BIII). (II,III) are high magnifications of the boxed areas in (I). Anti-MYL2 stained intrafusal bag fibers, but not chain fibers (indicated by dashed lines); arrowheads indicate the neuron-muscle interface, where MYL2 staining was absent. Scale bars represent 50 μm. (D,E) Confocal images of transverse sections of forelimb muscles from Piezo2EGFP-IRES-Cre;Rosa26tdTomato mice, in which muscle spindles are fluorescently labeled by tdTomato (green), which were immunostained for versican (VCAN) (D, magenta) or GLUT1 (E, magenta). VCAN was expressed in the extracellular matrix of the capsule, whereas GLUT1 expression was restricted to the outer capsule cells. Scale bars represent 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A Venn diagram of the 22 potential markers that were upregulated at both RNA and protein levels (blue) and the four groups of differentially expressed (DE) upregulated genes shown in Figure 1 (extracellular space, magenta; proprioceptive neurons, yellow; γ-motoneurons, green; intrafusal fibers, red). (B) A Supplementary File of the predicted tissue-specific expression of the 22 potential markers that were upregulated at both RNA and protein levels, color-coded as in (A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Confocal images of longitudinal sections of the deep masseter muscle (A,C,E,G) and of whole-mount extensor digitorum longus (EDL) muscle (B,D,F,H) taken from adult (p>45) mice stained with the indicated antibodies. Muscles in B,D,F,G were taken from mice expressing Thy1-YFP reporter (green) (Feng et al., 2000). ATP1A3 (A,B), myosin light chain 2 (MYL2) (C,D), versican (VCAN) (E,F), GLUT1 (G,H) are in magenta; white is DAPI (D). The boxed area in D is enlarged in D’–D’’’; arrows in D indicate the ends of the bag fibers. Scale bars represent 50 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Confocal images of whole-mount extensor digitorum longus (EDL) muscles from adult (p>45) mice stained with antibodies against ATP1A3 (A), versican (VCAN) (B), and GLUT1 (C; all in magenta). Muscles in (B,C) were taken from mice expressing Thy1-YFP reporter (green). Scale bars represent 50 μm.
 
 To validate our predictions, we studied the expression of several potential markers using immunofluorescence staining on section of deep masseter muscle (Figure 3—figure supplement 2) and on whole extensor digitorum longus (EDL) muscle. Samples were subjected to a clearing protocol that allows visualization and analysis of intact muscle spindles (Figure 3, Figure 3—figure supplement 2).
 
@@ -90,19 +126,31 @@ Finally, as both muscle spindles and GTOs are found in the musculoskeletal syste
 
 Taken together, these results highlight and validate new markers for the different tissues composing the muscle spindle and GTO, which may serve for imaging and studying these tissues.
 
-## Analysis of new markers during development revealed sequential steps of spindle differentiation
+### Analysis of new markers during development revealed sequential steps of spindle differentiation
 
 To date, little is known on the molecular events that take place during muscle spindle development. Having identified new markers for spindle tissues, we proceeded to utilize these markers to study the postnatal development of these proprioceptors. At this stage, proprioceptive neurons, intrafusal fibers, and capsule cells are already present (Milburn, 1973). Using antibodies against these markers, we stained sections of deep masseter muscles from Thy1-YFP reporter mice (Feng et al., 2000), where neuronal tissue is fluorescently labeled, at postnatal days (P) 3, 7, and 25. Examination showed that at P3, only the neuronal marker ATP1A3 was expressed in the spindle (Figure 4A). Further examination showed that ATP1A3 was expressed prenatally as early as E15.5 (Figure 4—figure supplement 1). By P7, the capsule cell marker GLUT1 was prominently expressed in the outer capsule (Figure 4B) and by P25, the capsule ECM marker VCAN was expressed in the extracellular space (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Confocal images of longitudinal sections of the deep masseter muscle from Thy1-YFP mice (YFP, green) stained with the indicated antibodies at P3, P7, and P25. ATP1A3 (A) was expressed by proprioceptive neurons at all examined time points. GLUT1 expression (B) was detected in the outer capsule cells at postnatal day 7 (P7). Versican (VCAN) expression (C) was detected in the extracellular space at P25. Myosin light chain 2 (MYL2) expression (D) was detected in intrafusal fibers at P25. ATP1A3, GLUT1, VCAN, and MYL2 are in magenta. Scale bars represent 50 μm. On the right, schematic representations of adult muscle spindle with the analyzed tissue in magenta.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Confocal images of whole-mount gluteus (A) and extensor digitorum longus (EDL) (B,C) muscles from embryos at the indicated developmental stages stained with anti-ATP1a3 antibody. Scale bars represent 50 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Confocal images of longitudinal sections of the deep masseter muscle from Thy1-YFP mice (green) stained with phalloidin (magenta) at postnatal days (P) P3, P7, and P25. Scale bars represent 50 μm.
+
 The intrafusal marker MYL2 was also first detected at P25 (Figure 4D). To determine if the sarcomeric organization of the intrafusal fibers forms prior to P25, we stained P3, P7, and P25 intrafusal fibers with phalloidin. As seen in Figure 4—figure supplement 2, this organization was observed already at P3, suggesting that the identity of the intrafusal fibers is acquired after the myofiber has been established. Taken together, these results suggest that during spindle development, capsule cells and intrafusal fibers undergo several differentiation steps to reach their mature state.
 
-## Differentiation of muscle spindle capsule cells propagates from the center toward the polar ends
+### Differentiation of muscle spindle capsule cells propagates from the center toward the polar ends
 
 Next, we studied the development of the spindle capsule. It was previously suggested that the outer spindle capsule is part of the perineural sheath in the peripheral nervous system (Shantha et al., 1968). Recently, Gli1 was shown to be expressed by perineural glial cells (Zotter et al., 2022). Examination of our data showed that Gli1 transcripts were significantly upregulated in the muscle spindle samples as compared to the extrafusal fiber samples (log fold change 3.57; Supplementary file 1). To determine whether Gli1 is expressed by capsule cells, we crossed Gli1CreERT2 mice (Ahn and Joyner, 2004) with Rosa26tdTomato reporter (Madisen et al., 2010). We administrated tamoxifen to Gli1CreERT2;Rosa26tdTomato mice at P1 and analyzed tdTomato expression at P3 in whole-mount preparations of the EDL muscle. As seen in Figure 5A, tdTomato was extensively expressed around the spindle, suggesting that at P1, Gli1-positive cells contribute to the developing capsule.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81843/elife-81843-fig5-v2.jpg)
 
-**Figure 5.:** (A,C,E) Confocal images of whole-mount extensor digitorum longus (EDL) muscle taken from Gli1 mice stained for GLUT1 (magenta). CreERT2;Rosa26tdTomatoGli1 were labeled by a single tamoxifen administration at postnatal day 1 (P1) and analyzed at P3 (+A), P7, (C) and P25 (E). Arrows in (A) show the location of the capsule cells, as marked by TdTomato (green). The center of the spindle (boxed area in C) is shown in a single slice (C’) and in an orthogonal view (C’’). The center of the spindle (top boxed area in E) and its edges (bottom boxed area in E) are shown in single slices (E’ and E’’, respectively). (B,D,F) Confocal images of whole-mount EDL muscle from Thy1-YFP mice stained with anti-GLUT1 antibody at P3 (B), P7 (D), and P25 (F). The center of the spindle (boxed area in D) is shown in a single slice (D’) and in an orthogonal view (D’’). (G) Quantification of capsule length, as measured in (A,C,E) based on GLUT1 and tdTomato labeling (nP3 = 7, p = 9.07E-08; nP7 = 10, p = 1.09E-08; nP25 = 10, p = 0.989; two-tailed t-test; data are presented as mean ± SEM; each dot represents one spindle). (H) Schematic representation of the maturation process of the outer capsule throughout postnatal development. Scale bars represent 50 μm in (A–F) and 20 μm in (B’,C’).
+**Figure 5.:** (A,C,E) Confocal images of whole-mount extensor digitorum longus (EDL) muscle taken from Gli1CreERT2;Rosa26tdTomato mice stained for GLUT1 (magenta). Gli1+ were labeled by a single tamoxifen administration at postnatal day 1 (P1) and analyzed at P3 (A), P7, (C) and P25 (E). Arrows in (A) show the location of the capsule cells, as marked by TdTomato (green). The center of the spindle (boxed area in C) is shown in a single slice (C’) and in an orthogonal view (C’’). The center of the spindle (top boxed area in E) and its edges (bottom boxed area in E) are shown in single slices (E’ and E’’, respectively). (B,D,F) Confocal images of whole-mount EDL muscle from Thy1-YFP mice stained with anti-GLUT1 antibody at P3 (B), P7 (D), and P25 (F). The center of the spindle (boxed area in D) is shown in a single slice (D’) and in an orthogonal view (D’’). (G) Quantification of capsule length, as measured in (A,C,E) based on GLUT1 and tdTomato labeling (nP3 = 7, p = 9.07E-08; nP7 = 10, p = 1.09E-08; nP25 = 10, p = 0.989; two-tailed t-test; data are presented as mean ± SEM; each dot represents one spindle). (H) Schematic representation of the maturation process of the outer capsule throughout postnatal development. Scale bars represent 50 μm in (A–F) and 20 μm in (B’,C’).
 
 Next, we analyzed spatially the differentiation sequences of capsule cells by staining whole-mount EDL muscles for GLUT1. We used either Gli1CreERT2;Rosa26tdTomato mice that were administered tamoxifen at P1, or Thy1-YFP mice. At P3, we observed TdTomato expression by capsule cells and YFP expression in proprioceptive neurons at the center of the spindle. However, in agreement with our results in the masseter (Figure 4), we did not detect GLUT1 expression around the spindle (Figure 5A and B). At P7, while TdTomato expression extended to the spindle periphery (Figure 5C, quantified in G), GLUT1 expression was restricted to the central domain of the spindle, covering the coil structure formed by proprioceptive neurons (Figure 5D). Examination of single optical sections of the capsule showed that GLUT1 was co-expressed with tdTomato, suggesting that Gli1-positive capsule cells also express Glut1 (Figure 5C’). By P25, GLUT1 expression extended from the center and covered the polar ends of the spindle in a similar pattern to the tdTomato-positive cells (Figure 5E’, quantified in Figure 5G).
 
@@ -126,7 +174,115 @@ Recent findings show that the proprioceptive system and, specifically, muscle sp
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>B6(SJL)-Piezo2tm1.1(cre)Apat/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #027719RRID:IMSR_JAX:027719</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Gli1tm3(cre/ERT2)Alj/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain #:007913 RRID:IMSR_JAX:007913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain #:007909RRID:IMSR_JAX:007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>B6.Cg-Tg(Thy1-YFP)16Jrs/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain #:003709RRID:IMSR_JAX:003709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP1a3(rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 06-172I, RRID:AB_310066</td>
+      <td>Section 1:100Whole mount 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VERSICAN(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab19345, RRID:AB_444865</td>
+      <td>Section 1:300Whole mount 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MYL2(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab79935, RRID:AB_1952220</td>
+      <td>Section 1:100Whole mount 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLUT1(rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab195020, RRID:AB_2783877</td>
+      <td>Section 1:400Whole mount 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(biotin goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6658RRID:AB_305631</td>
+      <td>Section 1:100Whole mount 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5 conjugated donkey anti-rabbit (polyclonal)</td>
+      <td>Jackson ImmunoResearch Laboratories</td>
+      <td>Cat# 711-175-152RRID:AB_2340607</td>
+      <td>Section 1:100Whole mount 1:200</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phalloidin, synthetic peptide (TRITC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P1951 RRID:AB_2315148</td>
+      <td>Section 2 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Native Streptavidin protein (DyLight 488)</td>
+      <td>Abcam</td>
+      <td>Cat# ab134349</td>
+      <td>Section 1:100Whole mount 1:200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 All experiments involving mice were approved by the Institutional Animal Care and Use Committee (IACUC) of the Weizmann Institute. Mice were housed in a temperature- and humidity-controlled vivarium on a 12 hr light-dark cycle with free access to food and water.
 
@@ -134,76 +290,117 @@ The following strains were used: Piezo2EGFP-IRES-Cre (The Jackson Laboratory, #0
 
 In all experiments, at least three mice from different litters were used. Mice were genotyped by PCR of genomic DNA from ear clips. Primer sequences and amplicon sizes are listed in Table 1.
 
-## Muscle spindle isolation
+**Table 1.**
+ Primer sequences and amplicon sizes used for PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reaction</th>
+      <th>Amplicon (bp)</th>
+      <th>Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cre</td>
+      <td>800</td>
+      <td>F: CCTGGAAAATGCTTCTGTCCGTTTGCCR::GAGTTGATAGCTGGCTGGTGGCAGATG</td>
+    </tr>
+    <tr>
+      <td>Cre-ERT2</td>
+      <td>800</td>
+      <td>F: CCTGGAAAATGCTTCTGTCCGTTTGCCR: GAGTTGATAGCTGGCTGGTGGCAGATG</td>
+    </tr>
+    <tr>
+      <td>tdTomato (wild type)</td>
+      <td>297</td>
+      <td>F: AAG GGA GCT GCA GTG GAG TAR: CCG AAA ATC TGT GGG AAG TC</td>
+    </tr>
+    <tr>
+      <td>tdTomato (tdTomato-flox allele)</td>
+      <td>196</td>
+      <td>F: GGC ATT AAA GCA GCG TAT CCR: CTG TTC CTG TAC GGC ATG G</td>
+    </tr>
+    <tr>
+      <td>YFP (GFP)</td>
+      <td>300</td>
+      <td>F: GACGGCAACATCCTGGGGCACAAGR: CGGCGGCGGTCACGAACTCC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Muscle spindle isolation
 
 To isolate entire muscle spindles, spindles were labeled using the Piezo2EGFP-IRES-Cre reporter driving the expression of tdTomato. Mice were sacrificed and deep masseter muscle was manually exposed and dissected in ice-cold Liley’s solution (Liley, 1956) (NaHCO3 1 g, KCl 0.3 g, KH2PO4 0.13 g, NaCl 0.2 g, CaCl2 1 M 2 ml, all adjusted to 1 l DDW) on a silicone-coated plate (Sylgard 184 silicone elastomer base). Muscle spindle bundles, each containing about 20 spindles, were microdissected under fluorescent microscope.
 
-## Proteomic analysis
+### Proteomic analysis
 
 For proteomic analysis, samples of muscle spindles (fluorescently labeled), adjacent extrafusal muscle (non-florescent), and the nerve bundle innervating the muscle (fluorescently labeled) were isolated. Collected samples were immediately frozen in liquid nitrogen. For each tissue type, six samples were collected from one deep masseter muscle of six different mice.
 
-## Sample preparation
+### Sample preparation
 
 Samples for protein profiling were prepared at the Crown Genomics Institute of the Nancy and Stephen Grand Israel National Center for Personalized Medicine, Weizmann Institute of Science.
 
 Samples were subjected to in-solution tryptic digestion using the suspension trapping (S-trap) as previously described (Elinger et al., 2019). Briefly, tissue was homogenized in the presence of lysis buffer containing 5% SDS in 50 mM Tris-HCl. Lysates were incubated at 96°C for 5 min, followed by six cycles of 30 s of sonication (Bioruptor Pico, Diagenode, USA). Protein concentration was measured using the BCA (Thermo Fisher Scientific, USA). Then, 50 µg of total protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark. Each sample was loaded onto S-trap microcolumns (Protifi, USA) according to the manufacturer’s instructions. After loading, samples were washed with 90:10% methanol/50 mM ammonium bicarbonate. Samples were then digested with trypsin (1:50 trypsin/protein) for 1.5 hr at 47°C. The digested peptides were eluted using 50 mM ammonium bicarbonate. Trypsin was added to this fraction and incubated overnight at 37°C. Two more elutions were made using 0.2% formic acid and 0.2% formic acid in 50% acetonitrile. The three elutions were pooled together and dried by vacuum centrifugation. Samples were kept at −80°C until further analysis.
 
-## Liquid chromatography
+### Liquid chromatography
 
 ULC/MS grade solvents were used for all chromatographic steps. Dry digested samples were dissolved in 97:3% H2O/acetonitrile containing 0.1% formic acid. Each sample was loaded using split-less nano-ultra performance liquid chromatography (nanoUPLC; 10 kpsi nanoAcquity; Waters, Milford, MA, USA). The mobile phase was: (A) H2O with 0.1% formic acid and (B) acetonitrile with 0.1% formic acid. Samples were desalted online using a reversed-phase Symmetry C18 trapping column (180 µm internal diameter, 20 mm length, 5 µm particle size; Waters). The peptides were then separated using a T3 HSS nano-column (75 µm internal diameter, 250 mm length, 1.8 µm particle size; Waters) at 0.35 µl/min. Peptides were eluted from the column into the mass spectrometer using the following gradient: 4–20% B in 155 min, 20–90% B in 5 min, maintained at 90% for 5 min and then back to initial conditions.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Fisher Scientific) using a FlexIon nanospray apparatus (Proxeon). Data were acquired in data-dependent acquisition mode, using a top 10 method. MS1 resolution was set to 120,000 (at 200 m/z), mass range of 375–1650 m/z, AGC of 3e6, and maximum injection time was set to 60 ms. MS2 resolution was set to 15,000, quadrupole isolation 1.7 m/z, AGC of 1e5, dynamic exclusion of 40 s, and maximum injection time of 60 ms.
 
-## Data processing
+### Data processing
 
 Raw data were processed with MaxQuant v1.6.0.16 (Cox and Mann, 2008). The data were searched with the Andromeda search engine against the mouse (Mus musculus) protein database as downloaded from Uniprot (https://www.afternic.com/forsale/uniprot.com?utm_source=TDFS&utm_medium=sn_affiliate_click&utm_campaign=TDFS_Affiliate_namefind_direct8&traffic_type=CL3&traffic_id=Namefind), and appended with common lab protein contaminants. Enzyme specificity was set to trypsin and up to two missed cleavages were allowed. Fixed modification was set to carbamidomethylation of cysteines and variable modifications were set to oxidation of methionines, and deamidation of glutamines and asparagines. Peptide precursor ions were searched with a maximum mass deviation of 4.5 ppm and fragment ions with a maximum mass deviation of 20 ppm. Peptide and protein identifications were filtered at an FDR of 1% using the decoy database strategy (MaxQuant’s ‘Revert’ module). The minimal peptide length was seven amino acids and the minimum Andromeda score for modified peptides was 40. Peptide identifications were propagated across samples using the match-between-runs option checked. Searches were performed with the label-free quantification option selected. Decoy hits were filtered out.
 
-## Analysis of proteomic data
+### Analysis of proteomic data
 
 Bioinformatic analysis of the proteomic data was applied on LFQ intensities of 1100 proteins, detected from all samples. Proteins with at least one razor and unique peptides were considered, removing known contaminants and reversed entries, one outlier sample was excluded from analysis based on PCA. To detect differential proteins, ANOVA test was applied on log2-transformed intensities, following a multiple test correction (FDR step-up) using Partek Genomics Suite 7.0. For each pairwise comparison, we considered proteins with at least three valid measurements (out of five) in both groups that passed the thresholds of |linear fold change|≥2 and FDR ≤0.05. In addition, proteins that were detected in at least three replicates in one group and completely absent in the other group were also considered as qualitatively differential proteins. For visualization of protein expression, heatmaps were generated using Partek Genomics Suite, with log2-transformed LFQ intensities, applying row standardization and partition clustering using the k-means algorithm (Euclidean method). Scatter plots between the fold change of protein and genes were calculated using the imputed protein values.
 
-## Bulk RNA-seq
+### Bulk RNA-seq
 
 For RNA analysis, muscle spindle bundles and adjacent extrafusal muscle fibers were collected and immediately frozen in liquid nitrogen. From each tissue type, six samples from six mice were produced.
 
-## Sample preparation
+### Sample preparation
 
 Total RNA was purified using Qiazol followed by chloroform phase separation and application of RNeasy Micro kit (Qiagen). RNA quality and concentration was measured by NanoDrop and TapeStation. RNA-seq libraries were prepared at the Crown Genomics Institute of the Nancy and Stephen Grand Israel National Center for Personalized Medicine, Weizmann Institute of Science. Libraries were prepared using the INCPM-mRNA-seq protocol. Briefly, the polyA fraction (mRNA) was purified from 500 ng of total input RNA followed by fragmentation and generation of double-stranded cDNA. After Agencourt Ampure XP beads cleanup (Beckman Coulter), end repair, A base addition, adapter ligation, and PCR amplification steps were performed. Libraries were quantified by Qubit (Thermo Fisher Scientific) and TapeStation (Agilent). Sequencing was done on a NextSeq instrument (Illumina) using a single end 84 cycles high output kit, allocating ~20 M reads or more per sample (single read sequencing).
 
-## Analysis of RNA-seq data
+### Analysis of RNA-seq data
 
 Transcriptomic data from five replicates of spindle samples and six muscle samples were analyzed. One spindle sample was omitted from the analysis because of low number of reads uniquely aligned to genes. A user-friendly Transcriptome Analysis Pipeline (UTAP) version 1.10.1 was used for analysis (Kohen et al., 2019). Reads were mapped to the M. musculus genome (Genome Reference Consortium Mouse Build 38 [GRCm38], version M25 Ensembl 100) using STAR (v2.4.2a) (Dobin et al., 2013) and GENECODE annotation. Only reads with unique mapping were considered for further analysis. Gene expression was calculated and normalized using DESeq2 version 1.16.1 (Love et al., 2014), using only genes with a minimum of five reads in at least one sample. Raw p-values were adjusted for multiple testing (Benjamini and Hochberg, 1995). A gene was considered differentially expressed if it passed the following thresholds: minimum mean normalized expression of 5, adjusted p-value ≤0.05, and absolute value of log2 fold change ≥1.
 
-## Ingenuity pathway analysis
+### Ingenuity pathway analysis
 
 Genes were classified according to cell location using QIAGEN Ingenuity Pathway Analysis algorithm (https://digitalinsights.qiagen.com/; Qiagen, Redwood City, CA; USA; Krämer et al., 2014).
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 To identify differentially expressed upregulated spindle genes that were enriched in DRG proprioceptive neurons or γ-motoneurons, pre-ranked GSEA (Subramanian et al., 2005) was performed using default settings against either DRG proprioceptive neurons genes (total of 37,729 genes; Zheng et al., 2019) or γ-motoneurons genes (total of 21,455 genes; Blum et al., 2021) sorted by expression values.
 
-## Gene ontology
+### Gene ontology
 
 Go enrichment analysis was done using Metascape web tool (https://metascape.org/) choosing GO terms with p-value <0.05.
 
-## Immunofluorescence of cryosections
+### Immunofluorescence of cryosections
 
 For immunofluorescence, mice were sacrificed and fixed overnight in 4% paraformaldehyde (PFA)/PBS at 4°C. For longitudinal cryosectioning, the deep masseter muscle was dissected, transferred to 30% sucrose overnight, then embedded in OCT and sectioned by cryostat at a thickness of 10–20 µm. For transverse cryosection immunofluorescence, forelimbs were dissected, incubated with 0.5 mol/l EDTA (pH 7.4) for 2 weeks for decalcification, transferred to 30% sucrose overnight, then embedded in OCT by orienting the humerus at 90° to the plate, and sectioned by cryostat at a thickness of 10 µm.
 
 Cryosections were dried and post-fixed for 10 min in 4% PFA, permeabilized with PBS with 0.3% Triton X-100, washed with PBS with 0.1% Tween-20 (PBST) for 5 min and blocked with 7% goat/horse serum and 1% bovine serum albumin (BSA) dissolved in PBST. Then, sections were incubated with primary antibody (see Key resources table) at 4°C overnight. The next day, sections were washed three times in PBST and incubated for 1 hr with secondary antibody conjugated fluorescent antibody, washed three times in PBST, counterstained with DAPI, and mounted with Immu-mount aqueous-based mounting medium (Thermo Fisher Scientific).
 
-## Whole-mount immunofluorescence
+### Whole-mount immunofluorescence
 
 For whole-mount immunofluorescence, muscles were subjected to optical tissue clearing protocol for mouse skeletal muscle adapted from Williams et al., 2019. Briefly, post-fixed EDL muscle was dissected, washed in PBS, and placed in an A4P0 hydrogel (4% acrylamide, 0.25% 2’-azobis[2-(2-imidazolin-2-yl)propane]dihydrochloride in PBS) shaking at 4°C overnight. Then, hydrogel was allowed to polymerize for 3 hr at 37°C. After polymerization, the samples were washed in PBS, transferred to 5 ml of 10% SDS (pH 8.0) with 0.01% sodium azide, and were shaken gently at 37°C for 3 days to remove lipid.
 
 Cleared samples were washed with wash buffer (PBS containing 0.5% Tween-20) for 20 min, permeabilized with PBST (PBS containing 0.3% Triton X-100) for 20 min and washed again with wash buffer for 20 min, all at room temperature shaking. Then, samples were blocked with 6% BSA dissolved in PBS containing 0.3% Triton X-100 and 0.5% Tween-20 for 2 days at 37°C shaking gently. Samples were subjected to primary antibodies (see Key resources table) for 5 days at 37°C, shaking gently, washed with wash buffer for 2 days at room temperature with frequent solution changes, incubated with secondary antibodies and DAPI for 5 days at 37°C, shaking gently, and washed again with wash buffer for 2 days at room temperature with frequent solution changes. For clearing and mounting, the samples were then incubated in 500 µl refractive index matching solution (RIMS; 74% wt/vol Histodenz in 0.02 M phosphate buffer) for 1 day at room temperature, shaking gently. Samples were mounted in RIMS and imaged using Zeiss LSM800 or LSM900 confocal microscope. Images were processed with ImageJ 1.51 (National Institute of Health).
 
-## Cell lineage analysis
+### Cell lineage analysis
 
 Tamoxifen (Sigma-Aldrich, T-5648) was dissolved in corn oil (Sigma-Aldrich, C-8267) at a final concentration of 50 mg/ml. Cre-mediated recombination was induced at the indicated time points by administration of 125 mg/kg of tamoxifen by oral gavage (Fine Science Tools).
 
-## Quantification of capsule size
+### Quantification of capsule size
 
 Capsule length was measured on confocal Z-stack projections of at least 10 different spindles taken from three different mice using ImageJ 1.51. Differences in length were assessed by two-tailed t-test and statistical significance was defined as a p-value lower than 0.05.

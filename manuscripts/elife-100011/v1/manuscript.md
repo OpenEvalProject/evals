@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01rdg4502 Museum of Vertebrate Zoology and Department of Integrative Biology, University of California, Berkeley Berkeley United States
-2. https://ror.org/00hj54h04 Department of Integrative Biology and Biodiversity Collections, University of Texas at Austin Austin United States
-3. https://ror.org/035jbxr46 Smithsonian Tropical Research Institute Ancón Panama
-4. https://ror.org/0198j4566 Grupo de Investigación en Ecología Evolutiva en los Trópicos (EETROP), Universidad de las Américas Quito Ecuador
-5. https://ror.org/05n911h24 Ecological Networks Lab, Technische Universität Darmstadt Darmstadt Germany
-6. https://ror.org/02mhbdp94 Departamento de Ciencias Biológicas, Universidad de los Andes Bogotá Colombia
-7. https://ror.org/00f54p054 Department of Biology, Stanford University Palo Alto United States
-8. https://ror.org/0534re684 Max Planck Institute for Evolutionary Biology Plön Germany
-9. https://ror.org/00f8man71 Department of Chemistry and Physics, Indiana State University Terre Haute United States
-10. https://ror.org/02qztda51 Museo de Zoología, Escuela de Biología, Facultad de Ciencias Exactas y Naturales, Pontificia Universidad Católica del Ecuador Quito Ecuador
-11. https://ror.org/00bgtad15 Department of Biological Sciences, St John’s University New York United States
+1. Museum of Vertebrate Zoology and Department of Integrative Biology, University of California, Berkeley Berkeley United States ([ROR:01rdg4502](https://ror.org/01rdg4502))
+2. Department of Integrative Biology and Biodiversity Collections, University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+3. Smithsonian Tropical Research Institute Ancón Panama ([ROR:035jbxr46](https://ror.org/035jbxr46))
+4. Grupo de Investigación en Ecología Evolutiva en los Trópicos (EETROP), Universidad de las Américas Quito Ecuador ([ROR:0198j4566](https://ror.org/0198j4566))
+5. Ecological Networks Lab, Technische Universität Darmstadt Darmstadt Germany ([ROR:05n911h24](https://ror.org/05n911h24))
+6. Departamento de Ciencias Biológicas, Universidad de los Andes Bogotá Colombia ([ROR:02mhbdp94](https://ror.org/02mhbdp94))
+7. Department of Biology, Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))
+8. Max Planck Institute for Evolutionary Biology Plön Germany ([ROR:0534re684](https://ror.org/0534re684))
+9. Department of Chemistry and Physics, Indiana State University Terre Haute United States ([ROR:00f8man71](https://ror.org/00f8man71))
+10. Museo de Zoología, Escuela de Biología, Facultad de Ciencias Exactas y Naturales, Pontificia Universidad Católica del Ecuador Quito Ecuador ([ROR:02qztda51](https://ror.org/02qztda51))
+11. Department of Biological Sciences, St John’s University New York United States ([ROR:00bgtad15](https://ror.org/00bgtad15))
 
 † Corresponding author
 
@@ -38,7 +38,7 @@ Understanding the origins of novel, complex phenotypes is a major goal in evolut
 
 ## Introduction
 
-## Overview
+### Overview
 
 Complex phenotypes can evolve by leveraging phenotypic plasticity in existing traits with concerted change in developmental modules (West-Eberhard, 2003). However, the evolutionary trajectory that animals take to traverse an adaptive landscape from one phenotype to another may be difficult to reconstruct given that they often must cross or avoid adaptive valleys, which include phenotypes that are not always readily observed in populations (e.g. Martin and Wainwright, 2013). Nevertheless, phenotype diversity can help us unravel origins of novel traits and reveal the physiological trade-offs associated with their evolutionary trajectory (Tarvin et al., 2017).
 
@@ -46,11 +46,11 @@ Acquired chemical defenses, or the ability to sequester and use chemicals from t
 
 In the following text, we use the terms alkaloid and toxin interchangeably, although the toxicity of each poison frog alkaloid is not always known or very straightforward (Lawrence et al., 2023). Similarly, for simplicity we broadly bin species as defended (high alkaloid content) or undefended (low or zero alkaloid content), although little information exists regarding the defensive efficacy of specific alkaloids. In this context, we use the term alkaloid to refer to compounds with nitrogen-containing rings, specifically the subset of lipophilic alkaloids representing classes previously described in anuran integument, for example ‘N-methyldecahydroquinolines’ or ‘lehmizidines’ (e.g. Daly et al., 2009; Daly et al., 2005).
 
-## The history of research leading to the current paradigm: the diet-toxicity hypothesis
+### The history of research leading to the current paradigm: the diet-toxicity hypothesis
 
 In the 1980s, Toft characterized several types of foraging behaviors in neotropical frogs and found that active foraging for ants was common in poisonous frogs (Dendrobatidae and Bufonidae), while sit-and-wait predation on larger prey was common in non-poisonous species (Toft, 1981; Toft, 1980). Toft hypothesized that chemical defenses protected poisonous species from the greater predation risk incurred by active foraging. At the time, it was thought that poisonous dendrobatids synthesized their own alkaloids (the biosynthetic hypothesis; reviewed by Saporito et al., 2009), so differences in diet were not considered mechanistically relevant to differences in levels of chemical defense. However, Daly et al., 1994a later demonstrated that chemically defended dendrobatid frogs obtained alkaloids from their diet. This dietary hypothesis led researchers to reevaluate the evolutionary importance of active foraging and hypothesize that specialization on ants promoted the evolution of chemical defense in Dendrobatidae (Caldwell, 1996). Later, a more detailed phylogenetic analysis of Dendrobatidae revealed that chemical defense and diet specialization co-evolved independently several times (Santos et al., 2003). The new information helped generate the diet-toxicity hypothesis, which posits that shifts from a generalist to a specialist diet are correlated with origins of alkaloid uptake (Darst et al., 2005; Santos and Cannatella, 2011). Since then, many studies have focused on the diet of poison frogs in an effort to directly connect diet with chemical defense in specific species (e.g. McGugan et al., 2016; Osorio et al., 2015; Sanches et al., 2023; Sánchez-Loja et al., 2024) and to identify sources of poison frog alkaloids (e.g. Saporito et al., 2007b; Saporito et al., 2004). In general, most of the studies of poison-frog ecology since the 1990s emphasize or assume that diet is a primary determinant of defense.
 
-## A new paradigm: the passive-accumulation hypothesis
+### A new paradigm: the passive-accumulation hypothesis
 
 Although in the 1990s Daly and his colleagues proposed that an alkaloid uptake system was present in the ancestor of Dendrobatidae and is overexpressed in aposematic species (Daly, 1998; Daly et al., 1994b; Saporito et al., 2009), no details about this purported system were given, and little focus was placed on the physiological processes of alkaloid sequestration in poison frogs for nearly 20 years. Santos et al., 2016 noted that the study of acquired chemical defenses is ‘essentially a study in pharmacokinetics’. Pharmacokinetics (or toxicokinetics, for toxins; Spurgeon et al., 2020) is the study of how bioactive compounds are processed by animals. Organismal processes are often binned into four categories together known as ADME, which stands for Absorption, or movement into the bloodstream, Distribution, or movement into and out of body compartments, Metabolism, or biotransformation of the compound, and Excretion, or elimination from the body (Ruiz-Garcia et al., 2008). Herein we use similar terms that are more directly relevant to the study of acquired chemical defenses: toxin intake, or the amount of toxin consumed; toxin elimination, or the metabolic detoxification and/or elimination of toxins from the body (equivalent to Metabolism +Excretion); toxin sequestration, or the transport and storage of toxins to a specific location such as the skin (a modified version of Distribution); and toxin accumulation, or the retention of toxins in an animal, whether or not it is by sequestration processes.
 
@@ -66,9 +66,387 @@ To develop and refine this hypothesis, we gathered diet and toxin data from a br
 
 In total, we surveyed 104 animals representing 32 species of Neotropical frogs including 28 dendrobatid species, 2 bufonids, 1 leptodactylid, and 1 eleutherodactylid (see Methods). Each of the major undefended clades in Dendrobatidae (Figure 1, Table 1) is represented in our dataset, with a total of 14 undefended dendrobatid species surveyed. Next, we review old and new evidence from poison frogs in the context of the four-phase model (Phases 1 and 2: Consistent exposure to toxins may select for resistance in poison frog and Phases 3 and 4: Evidence for passive accumulation and sequestration in poison frogs). Then we describe major predictions that need further testing to validate and/or revise the proposed model (Predictions arising from the passive-accumulation hypothesis). Finally, we discuss other factors that might influence the evolution of chemical defenses (Other factors that may shape the evolution of acquired chemical defenses), the passive accumulation phenotype in a broader evolutionary context (The passive-accumulation phenotype in a broader evolutionary context), and possible limitations of this study (Limitations). Overall, we propose that further integrating ideas from pharmacokinetics into studies of acquired chemical defenses will lead to new insight in the field, with clear applications to human and ecosystem health. In that vein, we suggest that evolutionary changes in toxin resistance and metabolism are critical physiological shifts that facilitate origins of acquired chemical defenses in animals.
 
+**Table 1.**
+ Range and median of alkaloid quantity (estimated by the sum of integrated areas) and alkaloid diversity (number of different compounds) by species from the GC-MS assessment.The presumed chemical defense phenotype for poison frogs is given according to Santos and Cannatella, 2011. Purple rows highlight defended species. *From a UHPLC-HESI-MS/MS dataset for which alkaloids were not quantified. Note that the UHPLC-HESI-MS/MS and GC-MS assays differed in both instrument and analytical pipeline, so ‘Alkaloid Number’ values from the two assay types should not be compared to each other directly.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Family</th>
+      <th rowspan="2">Subfamily</th>
+      <th rowspan="2">Species</th>
+      <th rowspan="2">Phenotype</th>
+      <th rowspan="2">Sample Size (frogs)</th>
+      <th colspan="2">Log (Total Integrated Area)</th>
+      <th colspan="2">Alkaloid Number</th>
+    </tr>
+    <tr>
+      <th>Range</th>
+      <th>Median</th>
+      <th>Range</th>
+      <th>Median</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Rheobates palmatus</td>
+      <td>undefended</td>
+      <td>4</td>
+      <td>13.07–14.24</td>
+      <td>14.00</td>
+      <td>1–4</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Allobates insperatus</td>
+      <td>undefended</td>
+      <td>8</td>
+      <td>13.47–15.44</td>
+      <td>14.99</td>
+      <td>1–9</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Allobates juanii</td>
+      <td>undefended</td>
+      <td>1</td>
+      <td>14.10</td>
+      <td>14.10</td>
+      <td>1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Allobates kingsburyi</td>
+      <td>undefended</td>
+      <td>1</td>
+      <td>13.63</td>
+      <td>13.63</td>
+      <td>2</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Allobates talamancae</td>
+      <td>undefended</td>
+      <td>3</td>
+      <td>14.89–16.27</td>
+      <td>15.09</td>
+      <td>2–4</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Aromobatinae</td>
+      <td>Allobates zaparo</td>
+      <td>undefended</td>
+      <td>1</td>
+      <td>16.78</td>
+      <td>16.78</td>
+      <td>8</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Leucostethus fugax</td>
+      <td>undefended</td>
+      <td>8</td>
+      <td>12.57–15.33</td>
+      <td>14.00</td>
+      <td>3–8</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Ameerega bilinguis</td>
+      <td>defended</td>
+      <td>1</td>
+      <td>21.97</td>
+      <td>21.97</td>
+      <td>133</td>
+      <td>133.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Ameerega hahneli</td>
+      <td>defended</td>
+      <td>4</td>
+      <td>20.21–22.29</td>
+      <td>21.68</td>
+      <td>85–140</td>
+      <td>128.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Silverstoneia flotator*</td>
+      <td>undefended</td>
+      <td>12</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0–1</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Silverstoneia aff. gutturalis</td>
+      <td>undefended</td>
+      <td>9</td>
+      <td>11.80–17.33</td>
+      <td>15.40</td>
+      <td>1–10</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Silverstoneia erasmios</td>
+      <td>undefended</td>
+      <td>2</td>
+      <td>14.70–16.11</td>
+      <td>15.41</td>
+      <td>15–15</td>
+      <td>15.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates aff. espinosai</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>18.44–20.20</td>
+      <td>19.32</td>
+      <td>83–131</td>
+      <td>107.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates anthonyi</td>
+      <td>defended</td>
+      <td>1</td>
+      <td>20.54</td>
+      <td>20.54</td>
+      <td>127</td>
+      <td>127.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates boulengeri</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>18.87–19.39</td>
+      <td>19.13</td>
+      <td>77–94</td>
+      <td>85.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates currulao</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>19.49–19.68</td>
+      <td>19.59</td>
+      <td>99–105</td>
+      <td>102.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates espinosai</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>18.82–21.33</td>
+      <td>20.08</td>
+      <td>85–146</td>
+      <td>115.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates machalilla</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>12.98–15.67</td>
+      <td>14.32</td>
+      <td>8–38</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Colostethinae</td>
+      <td>Epipedobates tricolor</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>18.36–19.07</td>
+      <td>18.72</td>
+      <td>91–114</td>
+      <td>102.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Hyloxalinae</td>
+      <td>Hyloxalus awa</td>
+      <td>undefended</td>
+      <td>7</td>
+      <td>0.00–16.05</td>
+      <td>13.58</td>
+      <td>0–12</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Hyloxalinae</td>
+      <td>Hyloxalus shuar</td>
+      <td>undefended</td>
+      <td>1</td>
+      <td>14.92</td>
+      <td>14.92</td>
+      <td>5</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Hyloxalinae</td>
+      <td>Hyloxalus sp. Agua Azul</td>
+      <td>undefended</td>
+      <td>1</td>
+      <td>14.30</td>
+      <td>14.30</td>
+      <td>8</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Hyloxalinae</td>
+      <td>Hyloxalus toachi</td>
+      <td>undefended</td>
+      <td>2</td>
+      <td>0.00–0.00</td>
+      <td>0.00</td>
+      <td>0–0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Dendrobatinae</td>
+      <td>Phyllobates aurotaenia</td>
+      <td>defended</td>
+      <td>4</td>
+      <td>17.72–21.08</td>
+      <td>18.88</td>
+      <td>48–118</td>
+      <td>67.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Dendrobatinae</td>
+      <td>Dendrobates truncatus</td>
+      <td>defended</td>
+      <td>3</td>
+      <td>20.05–23.95</td>
+      <td>20.42</td>
+      <td>111–172</td>
+      <td>115.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Dendrobatinae</td>
+      <td>Oophaga sylvatica</td>
+      <td>defended</td>
+      <td>5</td>
+      <td>22.86–24.85</td>
+      <td>23.76</td>
+      <td>152–189</td>
+      <td>175.0</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Dendrobatinae</td>
+      <td>Andinobates fulguritus</td>
+      <td>defended</td>
+      <td>2</td>
+      <td>20.09–20.51</td>
+      <td>20.30</td>
+      <td>80–85</td>
+      <td>82.5</td>
+    </tr>
+    <tr>
+      <td>Dendrobatidae</td>
+      <td>Dendrobatinae</td>
+      <td>Andinobates minutus</td>
+      <td>defended</td>
+      <td>4</td>
+      <td>16.57–18.77</td>
+      <td>18.07</td>
+      <td>34–80</td>
+      <td>66.0</td>
+    </tr>
+    <tr>
+      <td>Bufonidae</td>
+      <td></td>
+      <td>Amazophrynella siona</td>
+      <td>NA</td>
+      <td>2</td>
+      <td>14.12–14.40</td>
+      <td>14.26</td>
+      <td>1–1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Bufonidae</td>
+      <td></td>
+      <td>Atelopus aff. spurrelli</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>11.58</td>
+      <td>11.58</td>
+      <td>4</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>Eleutherodactylidae</td>
+      <td></td>
+      <td>Eleutherodactylus cystignathoides*</td>
+      <td>NA</td>
+      <td>3</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0–0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Leptodactylidae</td>
+      <td>Leptodactylinae</td>
+      <td>Lithodytes lineatus</td>
+      <td>NA</td>
+      <td>2</td>
+      <td>0.00–0.00</td>
+      <td>0.00</td>
+      <td>0–0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results and discussion
 
-## Phases 1 and 2: Consistent exposure to toxins may select for resistance in poison frogs
+### Phases 1 and 2: Consistent exposure to toxins may select for resistance in poison frogs
 
 Several of the lipophilic alkaloids found in dendrobatid frogs have been traced to arthropod sources, specifically mites (Saporito et al., 2007b), ants (Saporito et al., 2004), and beetles (Dumbacher et al., 2004), although the extent to which such arthropod prey vary in alkaloid diversity and quantity remains relatively unstudied. Regardless, broad-scale shifts in diet content towards a higher proportion of ants and mites have been hypothesized to play an important role in the origin of chemical defense in poison frogs (Darst et al., 2005; Santos and Cannatella, 2011).
 
@@ -76,13 +454,13 @@ We quantified gut contents for 32 species of Neotropical frogs. Both undefended 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/100011/elife-100011-fig2-v1.jpg)
 
-**Figure 2.:** Wan et al., 2023) among sampled species with the three defended poison frog clades highlighted in purple, the undefended clades in dark gray, and non-dendrobatids in light gray (Bufonidae: Amazophrynella siona and Atelopus aff. spurrelli; Leptodactylidae: Lithodytes lineatus).Tile color indicates the log of the total quantity of alkaloids in each class as measured by the sum of integrated areas of alkaloids of that class from GC-MS data per individual. The number in each tile indicates the number of alkaloids (including isomers) detected in each individual for each class. On the right are prey items recovered from the stomach of each individual, colored by arthropod group and scaled to 1 (total number of prey identified are shown under N). Note the large proportion of ants (Formicidae, dark purple) and mites (Acari, light purple) in many of the individuals compared to other prey types. See Supplementary file 1 for raw diet data and Supplementary file 4 for full alkaloid data. Poison-frog genera names are abbreviated as follows: All., Allobates; Ame., Ameerega; And., Andinobates; D., Dendrobates; E., Epipedobates; H., Hyloxalus; Le., Leucostethus; O., Oophaga; P., Phyllobates; R., Rheobates; S., Silverstoneia; Alkaloid class abbreviations are based on Daly et al., 2009; Daly et al., 2005 and are as follows: HTX, histrionicotoxins; PTX, pumiliotoxins; PTXB, pumiliotoxin B; aPTX, allopumiliotoxins; DeoxyPTX, deoxypumiliotoxins; hPTX, homopumiliotoxins; deoxy-hPTX, deoxy-homopumiliotoxins; DHQ, decahydroquinolines; NMeDHQ, N-methyldecahydroquinolines; HO-DHQ, hydroxy-decahydroquinolines; 3,5 P, 3,5-disubstituted pyrrolizidines; HO-3,5-P, hydroxy-3,5-disubstituted pyrrolizidines; 5-I, 5-substituted indolizidines; 3,5-I, 3,5-disubstituted indolizidines; 5,6-I, 5,6-disubstituted indolizidines; 5,8-I, 5,8-disubstituted indolizidines; Dehydro-5,8-I, dehydro-5,8-indolizidines; 5,6,8-I, 5,6,8-trisubstituted indolizidines; HO-5,6,8-I, hydroxy-5,6,8-trisubstituted indolizidines; 1,4-Q, 1,4-disubstituted quinolizidines; 4,6-Q, 4,6-disubstituted quinolizidines; 3,5-Q, 3,5-disubstituted quinolizidines; 1,3,4-Q, 1,3,4-trisubstituted quinolizidines; Lehm, lehmizidines; Epiquinamide, epiquinamide; 2-Pyr, 2-substituted pyrrolidine; 3-Pyr, 3-substituted pyrrolidine; 2,5-Pyr, 2,5-disubstituted pyrrolidines; Pyr, pyrrolizidine of indeterminate substitution; 2,6-Pip, 2,6-disubstituted piperidines; Pip, other piperidines; Pyri, pyridines (including epibatidine); GTX, gephyrotoxins; Tricyclic, coccinelline-like tricyclics; SpiroP, spiropyrrolizidines; Necine, unspecified necine base; Unclass, unclassified alkaloids without known structures.
+**Figure 2.:** Tile color indicates the log of the total quantity of alkaloids in each class as measured by the sum of integrated areas of alkaloids of that class from GC-MS data per individual. The number in each tile indicates the number of alkaloids (including isomers) detected in each individual for each class. On the right are prey items recovered from the stomach of each individual, colored by arthropod group and scaled to 1 (total number of prey identified are shown under N). Note the large proportion of ants (Formicidae, dark purple) and mites (Acari, light purple) in many of the individuals compared to other prey types. See Supplementary file 1 for raw diet data and Supplementary file 4 for full alkaloid data. Poison-frog genera names are abbreviated as follows: All., Allobates; Ame., Ameerega; And., Andinobates; D., Dendrobates; E., Epipedobates; H., Hyloxalus; Le., Leucostethus; O., Oophaga; P., Phyllobates; R., Rheobates; S., Silverstoneia; Alkaloid class abbreviations are based on Daly et al., 2009; Daly et al., 2005 and are as follows: HTX, histrionicotoxins; PTX, pumiliotoxins; PTXB, pumiliotoxin B; aPTX, allopumiliotoxins; DeoxyPTX, deoxypumiliotoxins; hPTX, homopumiliotoxins; deoxy-hPTX, deoxy-homopumiliotoxins; DHQ, decahydroquinolines; NMeDHQ, N-methyldecahydroquinolines; HO-DHQ, hydroxy-decahydroquinolines; 3,5 P, 3,5-disubstituted pyrrolizidines; HO-3,5-P, hydroxy-3,5-disubstituted pyrrolizidines; 5-I, 5-substituted indolizidines; 3,5-I, 3,5-disubstituted indolizidines; 5,6-I, 5,6-disubstituted indolizidines; 5,8-I, 5,8-disubstituted indolizidines; Dehydro-5,8-I, dehydro-5,8-indolizidines; 5,6,8-I, 5,6,8-trisubstituted indolizidines; HO-5,6,8-I, hydroxy-5,6,8-trisubstituted indolizidines; 1,4-Q, 1,4-disubstituted quinolizidines; 4,6-Q, 4,6-disubstituted quinolizidines; 3,5-Q, 3,5-disubstituted quinolizidines; 1,3,4-Q, 1,3,4-trisubstituted quinolizidines; Lehm, lehmizidines; Epiquinamide, epiquinamide; 2-Pyr, 2-substituted pyrrolidine; 3-Pyr, 3-substituted pyrrolidine; 2,5-Pyr, 2,5-disubstituted pyrrolidines; Pyr, pyrrolizidine of indeterminate substitution; 2,6-Pip, 2,6-disubstituted piperidines; Pip, other piperidines; Pyri, pyridines (including epibatidine); GTX, gephyrotoxins; Tricyclic, coccinelline-like tricyclics; SpiroP, spiropyrrolizidines; Necine, unspecified necine base; Unclass, unclassified alkaloids without known structures.
 
 Few if any experiments have been done to quantify the relationship between natural toxin exposure and toxin resistance in poison frogs. Given the broad diversity of alkaloid classes found in poison frogs (Daly et al., 2005), it is very difficult to predict or quantify all possible types or variations of alkaloid resistance that exist across species, or in their ancestors. In animals, the general mechanisms of toxin resistance are avoidance, metabolism, and target modification (Tarvin et al., 2023). If an animal does not or cannot avoid toxin exposure, it will need to survive exposure using toxin metabolism or target modification mechanisms such as biotransformation, elimination, alternative targets, and target-site resistance (see Tarvin et al., 2023 for more details). Given their diet, dendrobatids clearly do not completely avoid toxin exposure, and thus they are likely to survive exposure using some manner of toxin metabolism or target modification. Indeed, target-site resistance to some alkaloids evolved in several defended dendrobatid clades and in some undefended species (Tarvin et al., 2017; Tarvin et al., 2016). A few defended species have alternative target mechanisms including binding proteins like alpha-binding globulin (Alvarez-Buylla et al., 2023) and saxiphilin (Abderemane-Ali et al., 2021) that might prevent alkaloids from accessing their molecular targets (e.g. ion channels). Other mechanisms may also exist. For example, poison frogs may biotransform alkaloids into less toxic forms until they can be eliminated from the body, for example using cytochrome p450s (Caty et al., 2019). The mechanism of resistance employed might differ between undefended and defended species, but more research is necessary to understand these patterns.
 
 Although more data are necessary to understand the evolution of toxin resistance in dendrobatids (Coleman and Cannatella, 2024), existing data suggest that all or nearly all dendrobatids are exposed to alkaloids (Figure 2) and that alkaloid resistance varies among lineages.
 
-## Phases 3 and 4: Evidence for passive accumulation and sequestration in poison frogs
+### Phases 3 and 4: Evidence for passive accumulation and sequestration in poison frogs
 
 To understand the major evolutionary transition from consuming to sequestering toxins, it is essential to characterize the metabolism and sequestration of alkaloids in defended and undefended dendrobatid lineages (Gonzalez and Carazzone, 2023). However, many of the undefended lineages have not been carefully evaluated for the presence or absence of chemical defense. By reviewing existing data, we found that only 31 of the 245 inconspicuous poison frog species described to date AmphibiaWeb, 2023 have been assessed for toxins, sometimes using methods that would not necessarily detect lipophilic alkaloids (Supplementary file 2). Further, prior studies have sometimes misinterpreted or not fully incorporated these data (Supplementary file 2, and see below). Our review and reassessment of these studies suggest that at least 11 undefended species might have lipophilic alkaloids: Allobates femoralis, Allobates kingsburyi, Allobates zaparo, Colostethus ucumari, H. elachyhistus, Hyloxalus nexipus, Hyloxalus vertebralis, Hyloxalus yasuni, Leucostethus fugax, Paruwrobates erythromos, and Silverstoneia punctiventris (Daly et al., 1987; Darst et al., 2005; Gonzalez et al., 2021; Grant, 2007; Moskowitz et al., 2022a; Santos and Cannatella, 2011).
 
@@ -94,29 +472,29 @@ The large number of structures that we identified is in part due to the way we r
 
 Although contamination across samples is possible, it is unlikely to invalidate the identification of alkaloids in undefended species based on the following. (1) At several sites, we only sampled undefended species, and these individuals were found to contain alkaloids (e.g. Las Brisas: R. palmatus; El Valle: S. aff. gutturalis; Santa Maria: H. sp. Agua Azul); that is these cannot possibly have come from contamination by defended species. (2) At one site where we collected both undefended and defended species, the undefended species shows no alkaloids (Lita: Hyloxalus toachi); i.e., the preparation of both types does not imply cross-contamination of samples. (3) At two sites where the undefended species were prepared on a different day from the defended species (Valle Hermoso: H. awa and Epipedobates boulengeri; Canelos: L. fugax and Ameerega hahneli) and could not have been cross-contaminated, the undefended species still show evidence of alkaloids. (4) All chromatograms in the GC-MS sequence and integration data were inspected manually. Peaks with low areas or following samples with high areas and subject to carryover were excluded from further analysis. (5) Data collected by a different team and analyzed with different methods also identify alkaloids in an undefended dendrobatid (S. flotator) from Panama.
 
-## Aromobatinae
+#### Aromobatinae
 
 For Aromobatinae, we surveyed the undefended genera Rheobates and Allobates. Alkaloids were detected in all four R. palmatus individuals sampled, with one individual having at least four classes of compounds represented (4,6-disubstituted quinolizidines, 3,5-disubstituted indolizidines, 3,5-disubstituted pyrrolizidines, and unclassified). We found that five species of Allobates all had detectable levels of alkaloids. Allobates insperatus had a relatively high level of alkaloid diversity, with at least 18 alkaloids from nine classes detected, and at least one class found in each of the eight sampled individuals. In contrast, only one unclassified alkaloid was identified in a single individual of Al. juanii while two were found in one individual of Al. kingsburyi. At least two alkaloids were identified in each of the three sampled individuals of Al. talamancae (including the lehmizidine 277 A and five new alkaloids). Eight alkaloids were identified in the single surveyed Al. zaparo individual (including the spiropyrrolizidines 222–1 and 222–2 as well as six unclassified alkaloids). Prior assessments using thin-layer chromatography suggested the presence of alkaloids in three Al. kingsburyi (Santos and Cannatella, 2011), but none in 12 Al. insperatus (Darst et al., 2005). Four studies (Supplementary file 2) failed to identify any alkaloids in Al. talamancae. Allobates zaparo was shown to possibly have trace alkaloids, although the interpretation of these data was absence of alkaloids (Darst et al., 2005). There are no known defended species from this subfamily, although we note conflicting evidence for the presence of alkaloids in Al. femoralis (Amézquita et al., 2017; Daly et al., 1987; Sanchez et al., 2019; Saporito and Grant, 2018; Supplementary file 2).
 
-## Colostethinae
+#### Colostethinae
 
 Within Colostethinae, we surveyed individuals from two undefended clades, Leucostethus and Silverstoneia, and from two defended clades, Epipedobates and Ameerega. From L. fugax, we identified a total of twelve 5-substituted indolizidine, 5,6-disubstituted indolizidine, pyrrolidine, spiropyrrolizidine, and unclassified alkaloids (196 A, 225 C, 222–1, 222–2, and eight new alkaloids), with three to eight unique compounds detected in each of the eight sampled individuals. Our data are consistent with prior thin-layer chromatography data showing that L. fugax tested positive for skin compounds (Santos and Cannatella, 2011), although prior interpretations of these data were different (Supplementary file 2). We also surveyed two species of Silverstoneia with GC-MS. We found alkaloids in all nine S. aff. gutturalis, with a total of 14 alkaloids identified across seven classes (196 A, 223I, 233 A, 235B, 237 U, three isomers of 239AB, two isomers of 239 CD, and four new alkaloids). In just two individuals of S. erasmios, we detected a total of 26 alkaloids, including some pumiliotoxins (325B, 323B) and pyrrolizidines (225 C). Silverstoneia erasmios and S. aff. gutturalis had not been surveyed for alkaloids previously, but thirteen alkaloids were found in eight individuals of a congener (S. punctiventris; Gonzalez et al., 2021). In addition, in our more conservative UHPLC-HESI-MS/MS analysis of S. flotator, from which we only report compounds with formulae or from classes previously known for lipophilic alkaloids of frogs (Daly et al., 2005), we identified the presence of alkaloids in 5 of 12 sampled individuals (a quinolizidine and epibatidine; Supplementary file 5, Supplementary file 6). When we expand our analysis to include any compound assigned to the ‘alkaloid pathway’ by NPClassifier (>99% alkaloid pathway probability; Supplementary file 5), we identified a total of 67 compounds, some of which were present in each individual (Supplementary file 5). Although the assignments made by this pipeline are broad and include diverse nitrogen-containing metabolites such as biogenic amines (Supplementary file 6), it is possible that some represent additional lipophilic alkaloids whose structures and formulae are undescribed. Note that UHPLC-HESI-MS/MS data should not be directly compared to GC-MS data (see Table 1 legend).
 
 In terms of the defended clades of Colostethinae that we sampled, most of the individual skins of Epipedobates and Ameerega contained dozens to more than one hundred unique alkaloids (see Supplementary file 4 for full details). For Ameerega, we surveyed five individuals representing two species, all of which had integrated areas that were more than 75,000 x greater compared to individuals of its sister clade, Leucostethus (Table 1). Similarly, alkaloid diversity was 10–20 x greater in Ameerega than in Leucostethus. Histrionicotoxins and decahydroquinolines were considered previously to be the dominant alkaloid classes in genus Ameerega Daly et al., 2009; here we also found high levels of indolizidines (Figure 2). Patterns for Epipedobates as compared to sister genus Silverstoneia were similar, although less extreme. We surveyed 13 individuals representing seven species in Epipedobates and identified at least 370 alkaloids, which contrasts with studies using a less sensitive method (thin-layer chromatography) that found mixed evidence for the presence of alkaloids in E. aff. espinosai (then referred to as E. boulengeri) and E. machalilla (Darst et al., 2005; Santos and Cannatella, 2011). However, the quantity and diversity of alkaloids in Epipedobates machalilla was substantially lower than in other Epipedobates species, occurring at levels similar to Silverstoneia spp. (Table 1, Figure 2). Except for E. machalilla, each Epipedobates species had about 10 x greater quantities and diversities of alkaloids compared to members of Silverstoneia. We found trace levels of epibatidine in Epipedobates anthonyi but not in other Epipedobates species. Epibatidines have also been detected in E. espinosai, Ameerega silverstonei, S. flotator (Daly et al., 1999; this study), and Ameerega petersi or a closely related, undescribed species (reported as Dendrobates pictus from Loreto, Peru in Daly et al., 1987, but see taxonomic revision by Guillory et al., 2020).
 
-## Hyloxalinae
+#### Hyloxalinae
 
 Hyloxalinae is generally considered an undefended clade (Supplementary file 2). We surveyed four species of Hyloxalus, three of which had detectable levels of alkaloids. We identified 17 different alkaloids in H. awa (197D, 197 H, 199B, 217B, 221 P, 223AB, 231 A, 231 C, 247E, and eight previously undescribed alkaloids), with the seven sampled individuals having 0–12 alkaloids each. We detected five alkaloids in a single individual of H. shuar (197D, 199B, 237 G, and two isomers of 239 K) and eight alkaloids in a single individual of H. sp. Agua Azul (195 C, 197D, 199B, 251 K, and four new alkaloids). Our detection of low levels of alkaloids in H. awa is consistent with the observations that avian predators consume H. awa (Darst and Cummings, 2006). No alkaloids were detected in two individuals of H. toachi, the only undefended dendrobatid species from which we failed to detect alkaloids. Previously, a GC-MS assessment revealed that P. erythromos contained 5,8-disubstituted indolizidine 251B, allopumiliotoxin 267 A, and unclassified alkaloid 281D (Daly et al., 1987). Hyloxalus azureiventris is also thought be able to accumulate alkaloids (Daly, 1998; Saporito et al., 2009) and thin-layer chromatography suggested the presence of alkaloids in two assessed H. yasuni (previously identified as Hyloxalus maculosus), one of three H. nexipus, and two of five H. vertebralis (Santos and Cannatella, 2011), although prior interpretation of these data differed (Supplementary file 2). Our data support the widespread presence of low levels of alkaloids in this group.
 
-## Dendrobatinae
+#### Dendrobatinae
 
 According to the most recent phylogenetic reconstructions (Santos et al., 2014), the sister clade to Hyloxalinae is Dendrobatinae (Figure 1). Dendrobatinae contains exclusively (or near exclusively) toxic species. From this subfamily, we surveyed 18 individuals representing five species using GC-MS. We identified a total of 187 unique alkaloids from four Phyllobates aurotaenia, 316 alkaloids from five O. sylvatica, and 213 alkaloids from three Dendrobates truncatus. These three species are all relatively large poison frogs (snout-vent lengths 20–35 mm; Supplementary file 3), which may in part explain their high alkaloid diversities and quantities (Jeckel et al., 2015; Saporito et al., 2010). In Andinobates minutus and Andinobates fulguritus, which are members of the same subfamily but are much smaller in size (11–15 mm; Supplementary file 1, Supplementary file 3), we detected 129 and 109 alkaloids, respectively. Three of the An. minutus individuals were juveniles. The total alkaloid quantities (integrated areas) in D. truncatus and O. sylvatica were comparable to those of Ameerega but were higher than quantities detected in Epipedobates. We also report for the first time, to the best of our knowledge, the occurrence of N-methyldecahydroquinolines outside of the genera Adelphobates, Ameerega, Dendrobates, Oophaga, and Ranitomeya (in E. aff. espinosai, E. currulao, S. aff. gutturalis, An. minutus, An. fulguritus, P. aurotaenia, and Al. insperatus; Daly et al., 2009; Hovey et al., 2018; Jeckel et al., 2019; Lawrence et al., 2019; Stuckert et al., 2014). The ability to N-methylate decahydroquinoline (demonstrated experimentally in Adelphobates galactonotus, Dendorbates auratus, and Ranitomeya ventrimaculata Jeckel, 2021; Jeckel et al., 2022) may thus be conserved in dendrobatids, or, non-exclusively, arthropod sources of the alkaloid class (likely myrmicine ants Jones et al., 1999) are widespread.
 
-## Other frog families
+#### Other frog families
 
 Outside of Dendrobatidae, we detected a new unclassified alkaloid, New159, in each of two A. siona (Bufonidae) and four alkaloids in one individual of Atelopus aff. spurrelli (Bufonidae; 3,5-disubstituted pyrrolizidine 237 R-1, decahydroquinoline 243 A-3, 5,8-disubstituted indolizidine 251B-2, and an unclassified alkaloid, New267-2). As far as we know, the detection of a decahydroquinoline and a 3,5-disubstituted pyrrolizidine in a bufonid frog other than Melanophryniscus (Rodríguez et al., 2017) is novel and may provide useful context for understanding the evolution of chemical defense in the family. We detected no alkaloids in two Li. lineatus (Leptodactylidae) individuals, which is surprising because Li. lineatus has been hypothesized to be a Müllerian mimic of poison frogs, although the composition of its chemical defenses may be primarily proteinaceous (Prates et al., 2012). These findings are also interesting in light of the fact that Li. lineatus live and breed in ant colonies using chemical signals that provide camouflage (de Lima Barros et al., 2016). In addition, while we recovered no alkaloids in three sampled individuals of the frog El. cystignathoides (Eleutherodactylidae) with UHPLC-HESI-MS/MS when we applied our stringent search criteria, we identified 55 metabolites assigned to the alkaloid pathway at >99% probability. Forty of these appear to be identical to those identified in S. flotator according to our analyses (Supplementary file 5, Supplementary file 6). Some of these could be widespread byproducts of frog metabolism (or symbiont metabolism). A few species of Eleutherodactylus frogs from Cuba are thought to sequester alkaloids (Rodríguez et al., 2013) and alkaloid sequestration evolved in the bufonid genus Melanophryniscus (Daly et al., 1984; Hantak et al., 2013). The presence of low levels of alkaloids in other (non-sequestering) species of Bufonidae and the possibility of some exogenous but as of yet undescribed alkaloids in El. cystignathoides reflect that passive accumulation may have evolved in an older ancestor shared by the three families, predating convergent origins of sequestration in all three groups.
 
-## Predictions arising from the passive-accumulation hypothesis
+### Predictions arising from the passive-accumulation hypothesis
 
 Data from this and other studies point to the ubiquity of mites and ants in nearly all dendrobatid diets, and possibly more generally in other leaf-litter dwelling frogs (Figure 2). This finding in concert with the detection of low levels of alkaloids in the lineages that putatively lack chemical defenses leads us to hypothesize that dietary shifts are not sufficient to explain the presence or absence of the chemical defense phenotype within Dendrobatidae or possibly in other families (Bufonidae). The total amount of alkaloids accumulated is a result of multiple processes including toxin intake, elimination, and sequestration (Figure 3) — not just intake alone.
 
@@ -128,7 +506,7 @@ For example, dendrobatid species vary in their ability to eliminate alkaloids. S
 
 Here, we propose and discuss three additional predictions arising from the passive-accumulation hypothesis that would help further evaluate the validity of a four-phase model.
 
-## Prediction (1) We predict that some toxin resistance evolves prior to or in concert with passive accumulation, and that it increases or changes once sequestration mechanisms evolve
+#### Prediction (1) We predict that some toxin resistance evolves prior to or in concert with passive accumulation, and that it increases or changes once sequestration mechanisms evolve
 
 Alkaloid resistance is associated with alkaloid sequestration in dendrobatid poison frogs (Tarvin et al., 2017; Tarvin et al., 2016). We anticipate that some alkaloid resistance evolved in the ancestor of Dendrobatidae or in an even older ancestor, but is yet to be described (Darst et al., 2005; Santos et al., 2016; Figure 1). Such resistance may be difficult to characterize using the comparative method if it involves mutations of small effect (Ffrench-Constant et al., 2004), pleiotropic processes, or undescribed physiological adaptations (e.g. Alvarez-Buylla et al., 2023). Regardless, it appears that arthropods likely to contain alkaloids are widespread among the regular diets of defended and undefended dendrobatid poison frogs (Figure 2; Darst et al., 2005; Santos and Cannatella, 2011; Toft, 1995). Short-term alkaloid feeding experiments e.g. Daly et al., 1994b; Sanchez et al., 2019 demonstrate that both defended and undefended frogs can survive the immediate effects of alkaloid intake, although the degree of resistance and the alkaloids that different species can resist vary. An experiment conducted by Abderemane-Ali et al., 2021 showed that both aposematic and (presumably) undefended frogs can withstand several highly toxic alkaloids in quantities greater than what the frogs are likely to experience in nature. Two aposematic dendrobatids (D. tinctorius and Phyllobates terribilis), an aposematic Mantella (Mantella aurantiaca), and the putatively undefended rhacophorid Polypedates leucomystax (a congener is reported to contain TTX Tanu et al., 2001) — recovered from injections of the highly toxic alkaloids batrachotoxin and tetrodotoxin delivered at 20 x the mouse LD50 value. The three aposematic species also survived a third potent alkaloid (saxitoxin), but P. leucomystax did not. Other work revealed no signs of intoxication in two undefended hylids (Hyla cinerea and Boana bandeirantes) after 2 wk of oral administration of histrionicotoxin 235 A and decahydroquinoline (Jeckel, 2021). In an epibatidine-feeding experiment with five aposematic dendrobatid species (E. anthonyi, Ranitomeya variabilis, Ranitomeya imitator, Phyllobates vittatus, and D. tinctorius), Waters et al., 2024 found that E. anthonyi was adversely affected by the initial dose of epibatidine, reflecting either a body-size effect or species-level variation in epibatidine resistance.
 
@@ -136,11 +514,11 @@ Different types of resistance may be important during different evolutionary pha
 
 These data suggest that some dendrobatids and other frog species have a minimal level of resistance to alkaloids, yet more data from undefended frogs will be necessary to reconstruct the evolutionary history of the trait.
 
-## Prediction (2) We predict that in species with passive accumulation the rate of toxin elimination is slower than in those with no accumulation and faster than in those with sequestration
+#### Prediction (2) We predict that in species with passive accumulation the rate of toxin elimination is slower than in those with no accumulation and faster than in those with sequestration
 
 Only a few studies have reviewed toxin metabolism and elimination (clearance from the body) in dendrobatids. One study demonstrated that the undefended Al. femoralis and undefended hylid Hy. cinerea accumulated less than 1% of orally administered alkaloids into the skin, yet the alkaloids were absent (or present in only trace amounts) in the feces (Jeckel, 2021). In the same experiment, the defended dendrobatids Ad. galactonotus and D. tinctorius efficiently sequestered the alkaloids, with only trace quantities detected in the feces. These results hint at an unknown but possibly conserved mechanism for metabolism of alkaloids in anurans. Even among defended dendrobatids, there appears to be species-level variation and plasticity in the metabolism and elimination of alkaloids. Epipedobates anthonyi, Ra. variabilis, and Ra. imitator accumulate more than twice as much ingested epibatidine compared to P. vittatus and D. tinctorius (Waters et al., 2024). Oophaga sylvatica and D. tinctorius upregulate detoxification genes such as cytochrome p450s upon alkaloid consumption (Alvarez-Buylla et al., 2022; Caty et al., 2019). Adelphobates galactonotus sequesters the alkaloids histrionicotoxin 235 A and decahydroquinoline less efficiently at higher doses (Jeckel et al., 2022). Some species metabolically alter the structure of alkaloids: Ad. galactonotus, Ad. castaneoticus, D. auratus, D. tinctorius, and Ra. ventrimaculata can hydroxylate pumiliotoxin 251D (Alvarez-Buylla et al., 2022; Daly et al., 2003; Jeckel, 2021), making it more toxic (to mice); Ad. galactonotus, D. auratus, and Ra. ventrimaculata can also N-methylate decahydroquinoline (Jeckel, 2021; Jeckel et al., 2022). These studies indicate that alkaloid elimination rate and metabolism vary among defended species, but not enough information exists to infer much about elimination rates in undefended lineages with or without passive accumulation. Given the experimental demonstration of less efficient alkaloid uptake in undefended frogs — in combination with our data that show that despite likely ingesting alkaloid-bearing prey regularly in the wild, undefended frogs show much lower levels of alkaloids in the skin (Figure 2) — we hypothesize that toxin elimination rates in undefended lineages are faster or more efficient than rates in defended lineages and are slower than lineages with no accumulation (e.g. Figure 3). More nuanced versions of this model could also be envisioned. For example, elimination rates in defended species could still modulate the amount of toxins ultimately accumulated, with lower elimination rates resulting in a higher proportion of toxin accumulation overall. Additional data are necessary regarding toxicokinetics of consumed alkaloids in several tissues.
 
-## Prediction (3) We predict that sequestration mechanisms are absent in undefended lineages
+#### Prediction (3) We predict that sequestration mechanisms are absent in undefended lineages
 
 Daly, 1998; Daly et al., 1994b hypothesized that there was an alkaloid uptake system present in the ancestor of Dendrobatidae that is “overexpressed” in the defended lineages. This hypothesis remains to be tested. Our model posits that sequestration mechanisms (Figures 1 and 3) are unique to chemically defended species. Alternatively, if the mechanisms of toxin transport and/or storage exist in undefended species, they seem to be expressed at such a low level that they only result in a trace level of toxin accumulation. In order to distinguish between these two possibilities, we first will need to better understand the molecular mechanisms underlying toxin sequestration.
 
@@ -152,7 +530,7 @@ Additional data on potential uptake mechanisms in dendrobatids exist for benzoca
 
 In contrast to sequestration, passive accumulation would be expected to result in the diffusion of alkaloids across many tissues, rather than concentration of alkaloids within a specific tissue. Desorption electrospray ionization mass spectrometry imaging data indicate that alkaloids diffuse across various tissues in the defended dendrobatid D. tinctorius immediately following intake, possibly an evolutionary trace of the low elimination rates that may have initially evolved in an ancestor with the passive accumulation phenotype (Jeckel et al., 2020). It would be beneficial to conduct a time-series study to show how tissue-specific accumulation patterns change after feeding in different species. Clearly, more data will be necessary to evaluate phylogenetic patterns and mechanisms of sequestration, and to test the hypotheses presented here regarding passive accumulation as an intermediate evolutionary phase.
 
-## Other factors that may shape the evolution of acquired chemical defenses
+### Other factors that may shape the evolution of acquired chemical defenses
 
 Many animals occasionally or frequently consume toxins, and a multitude have evolved toxin resistance. Some invertebrate pests resist pesticides (Andreev et al., 1999; Chiu et al., 2008; Daborn et al., 2002; Ffrench-Constant, 2013), many insect herbivores resist plant toxins (Agrawal et al., 2012; Dobler et al., 2011), some predators resist toxic prey (Arbuckle et al., 2017), and many animals resist environmental pollutants (Whitehead et al., 2017). Our model predicts that some or many of these may be on their way towards evolving acquired chemical defenses. Yet, not all toxin-exposed or toxin-resistant species inevitably evolve chemical defenses, presumably because the ecological context or physiology that favors accumulation is absent or because resisting and accumulating toxins is too costly.
 
@@ -162,7 +540,7 @@ Origins of chemical defenses are also shaped by the cost of resisting and accumu
 
 Once chemical defenses evolve, they are often further shaped by co-evolution between the defended prey and their predators (Brodie and Brodie, 1990; Bucciarelli et al., 2022), which can result in the appearance of visual or morphological signals, mimicry, and even the loss of defenses in the prey if the predator evolves sufficient resistance (Brodie and Brodie, 1991; Brown and Trigo, 1994; Crothers et al., 2016). These additional ecological factors in turn shape the physiology of an animal in ways that may further promote evolutionary innovation (Loeffler-Henry et al., 2023; Przeczek et al., 2008; Santos et al., 2014). In sum, various factors interact in a dynamic equilibrium over short and long timeframes to shape chemical defenses.
 
-## The passive-accumulation phenotype in a broader evolutionary context
+### The passive-accumulation phenotype in a broader evolutionary context
 
 Passive accumulation of toxins is not a novel concept, as it has been discussed previously in terms of self-medication (Clayton and Wolfe, 1993; Singer et al., 2009) and bioaccumulation (e.g. of environmental pollutants; Butler, 1978; Spurgeon et al., 2020; Streit, 1992), and we propose that it is also conceptually analogous to some medical treatments in humans such as chemotherapy. Any organism that consumes something toxic might simultaneously suffer from toxin exposure yet benefit from the compound’s effect on disease, infection, parasites, or predators. For example, in the presence of parasitoids, Drosophila suzukii flies preferentially lay their eggs on the insecticide atropine, which protects them from being parasitized but prolongs development (Poyet et al., 2017). Mechanisms that likely underlie passive accumulation may also be analogous to key organismal functions (Duffey, 1980). For example, humans accumulate vitamin E in the liver (Violet et al., 2020) and use a transfer protein abundant in liver cells to shuttle the vitamin into the plasma where it becomes bioavailable (Arita et al., 1995). The transition from passive accumulation to sequestration in poison frogs may similarly rely on the use of proteins that bind to and transport alkaloids (Alvarez-Buylla et al., 2023).
 
@@ -170,21 +548,21 @@ If toxin accumulation is both low-cost and beneficial, slow toxin elimination ra
 
 Are these cases of sequestration? Under our definition they are not, given that these species do not actively transport and store these compounds, as far as we know. Rather, these organisms merely fail to efficiently metabolize and eliminate these compounds, leading to their temporary diffusion in tissues and providing a transient benefit against parasites or predators. Evidence for this passive-accumulation phenotype as an intermediate stage on the path towards toxin sequestration is scarce, but passive accumulation is a pervasive pattern in studies of ecological toxicology and may be more common in lineages that evolved toxin sequestration than we currently know.
 
-## Limitations
+### Limitations
 
 Our study presents a novel alkaloid dataset for dendrobatid frogs and some relatives, yet it is limited in the following ways. For some species we only sampled one or two individuals, which may paint an incomplete picture of toxin diversity, toxin quantity, and diet in the group. Poison frogs vary substantially over time, space, and seasons in their alkaloid profiles and diets (Agudelo-Cantero et al., 2015; Saporito et al., 2007a), yet we did not conduct serial sampling over a broad geographic range for each species. Standards are unavailable for most frog alkaloids and thus we could not measure absolute quantity. Relative quantitation of GC-MS data was performed based on integration of the extracted ion chromatogram of the base peak for each alkaloid for maximum sensitivity and selectivity. The nature of these data means that qualitative comparisons may be meaningful but quantitative comparisons across alkaloid structures could be misleading, especially given our small sample sizes for some species. Finally, batrachotoxin and tetrodotoxin are too heavy to study using GC-MS; we cannot exclude the possibility that they occur in the sampled species.
 
-## Conclusion
+### Conclusion
 
 The large-scale evolutionary transition from consuming to sequestering toxins has occurred in a plethora of invertebrates (Duffey, 1980) and vertebrates (Savitzky et al., 2012). Here, we provide new evidence showing that undefended poison frogs and frogs in a closely related family (Bufonidae) contain measurable amounts of alkaloids, and we confirm that they consume some amount of toxic arthropod prey. We propose that passive accumulation of consumed alkaloids is an ancestral state in Dendrobatidae, and possibly in related taxa, and that selection acts on toxin elimination and resistance to result in toxin accumulation and chemical defense. Future studies of the toxicokinetics of alkaloids in different tissues of both defended and undefended poison frogs will shed light on these putative intermediate evolutionary steps. In turn, insights from poison frog physiology will provide a novel perspective for the development of human therapeutics, which modulate some of the same pharmacokinetic processes.
 
 ## Methods
 
-## Field collection
+### Field collection
 
 Silverstoneia flotator and El. cystignathoides were collected and euthanized with benzocaine in 2022 in Gamboa, Panama (9.1373,–79.723183) and in 2024 in Austin, Texas, USA (30.285,–97.736 and 30.292487,–97.737874), respectively. Dorsal and ventral skins were removed and placed separately in ~1 mL MeOH in 1-dram glass vials for UHPLC-HESI-MS/MS analyses (see below). All other species were collected in 2014 and euthanized with an overdose of lidocaine. Whole skins were removed and placed in ~1 mL MeOH in glass vials with PTFE-lined caps. Stomachs of all species were removed and placed in 95% ethanol. Instruments and dissection surfaces were cleaned with 95% ethanol between dissections. Species were selected with the goal of broad sampling of evolutionary lineages in Dendrobatidae; our protocols followed the ARRIVE guidelines where applicable (Kilkenny et al., 2010). The number of individuals sampled per species was opportunistic. For each Epipedobates species, a subset of total samples available were randomly selected to be included; the full dataset will be published in another paper focused on variation within the genus.
 
-## Alkaloid identification and quantification
+### Alkaloid identification and quantification
 
 For samples from Ecuador and Colombia, a 100 μL aliquot of the MeOH was sampled from each vial and transferred to a 200 μL limited volume insert and analyzed directly by GC-MS. The system used was a Thermo AS-3000 autosampler interfaced to a Trace GC Ultra interfaced to an iTQ 1100 ion trap mass spectrometer autotuned with FC-43 (PFTBA) operating in positive ion mode. AS conditions were as follows: 2 pre-wash cycles of 5 μL MeOH, then 3 plunger strokes and withdrawal of 1.00 μL sample with 1 μL air gap, injection with no pre- or post-injection dwell followed by 3 post wash cycles of 5 μL MeOH. GC conditions were as follows: splitless injection, splitless time 1.00 min with surge (200 kPa for 0.70 min, to sharpen early peaks), split flow 50 mL/min; injector temperature 250°C, oven temperature program 100 °C for 1 min, then ramped at 10 °C/min to 280 °C and held 10 min; transfer line temperature 300 °C. MS conditions were as follows: for electron ionization (EI), collection mode profile, 1 microscan, 25 μsec max ion time, range 35–650 μ, source temperature 250 °C, solvent delay 3.00 min, source voltage 70 eV; for chemical ionization (CI), reagent gas NH3 (1.8 mL/min). Samples for CI were run in ddMS2 mode (3 precursor ions) with 1 microscan, 50ms max ion time, 0.450 μ precursor width and dynamic exclusion duration 0.2 min.
 
@@ -196,14 +574,14 @@ Following UHPLC-HESI-MS/MS, chromatographic data were processed using MZmine 3 (
 
 With respect to the compounds exclusive to the positive reference sample (i.e. not present in the frog skins), at >99% confidence, the algorithms implemented in SIRIUS also predicted annotations consistent with an epibatidine alkaloid for a feature only detected in the positive reference sample, at the levels of most specific class (‘epibatidine analogues’: ClassyFire) and class and superclass (‘pyridine alkaloids’' and ‘nicotinic acid alkaloids’: NPClassifier). The m/z ratio and structural prediction for this feature are consistent with the epibatidine homolog ‘homoepibatidine’ (Supplementary file 6). However, this annotation seems at odds with the true identity of the feature (the retention time is at 0.5 min, the approximate void volume with the highly polar compounds, and the isotope pattern is not correct for Cl, matching better with silicon). Instead, the feature may represent a silicone derivative that, based on results from multiple runs of the instrument (unpublished), we suspect could be an impurity consistently co-occurring with and mistaken for homoepibatidine. In another run, we recovered a feature exclusive to the positive reference sample with annotations identical at all levels to those for our ‘homoepibatidine’ feature, but with epibatidine’s expected m/z ratio (~209) and structure (SMILES). In the run we publish here, what is likely this same feature (with an m/z ratio of ~209 and annotated as (+/-)-epibatidine by GNPS) was also recovered at the 99% confidence level. Assuming this feature is our positive reference — (+/-)-epibatidine — the molecule was annotated as expected at class and superclass levels (‘pyridine alkaloids’' and ‘nicotinic acid alkaloids’, respectively) but annotated incorrectly at the level of most specific class (as a ‘pyrimidinethione’). Our results suggest that SIRIUS sometimes correctly annotates at all pathway levels our (+/-)-epibatidine positive reference.
 
-## Diet identification
+### Diet identification
 
 Stomach contents were inspected under a stereomicroscope and all prey items identified to order (or family, in the case of Formicidae). Given the low sample sizes in many individuals, we did not conduct statistical comparisons of diet composition across species.
 
-## Analyses
+### Analyses
 
 We summarized and plotted data from Ecuadorian and Colombian samples in R v4.3.1 (R Development Core Team, 2023) using the packages ggplot2 (Wickham, 2016), cowplot v1.1.1 (Wilke, 2020), and dplyr v1.1.2 (Wickham et al., 2023). The UHPLC-HESI-MSMS pipeline used on the samples from Panama and Texas allows for higher sensitivity to detect a broader array of compounds compared to our GC-MS methods but has lower retention-time resolution and produces less reliable structural predictions. Furthermore, due to the lack of liquid-chromatography-derived references for poison-frog alkaloids, precise alkaloid annotations from the UHPLC-HESI-MSMS dataset could not be obtained. Therefore, the UHPLC-HESI-MSMS and GC-MS datasets are not directly comparable, and UHPLC-HESI-MSMS data are not included in Figure 2. Phylogenies were subsetted from Wan et al., 2023 using ape v5.7.1 (Paradis and Schliep, 2019) and phytools v1.9.16 (Revell, 2012). Co-eluting compounds in the GC-MS and having the same base peak could not be discerned with the parameters we used in the Xcalibur processing method, so we averaged their quantities across the co-eluting compounds. Corrections for mass were not included; we instead opted to provide data from full skins.
 
-## Use of artificial intelligence (AI) and AI-assisted technologies
+### Use of artificial intelligence (AI) and AI-assisted technologies
 
 No AI or AI-assisted technologies were used in the preparation of this manuscript.

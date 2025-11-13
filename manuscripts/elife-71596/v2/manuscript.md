@@ -54,7 +54,7 @@
 
 ## Abstract
 
-Lung squamous cell carcinoma (LSCC) is a considerable global health burden, with an incidence of over 600,000 cases per year. Treatment options are limited, and patient’s 5-year survival rate is less than 5%. The ubiquitin-specific protease 28 (USP28) has been implicated in tumourigenesis through its stabilization of the oncoproteins c-MYC, c-JUN, and Δp63. Here, we show that genetic inactivation of Usp28 -induced regression of established murine LSCC lung tumours. We developed a small molecule that inhibits USP28 activity in the low nanomole range. While displaying cross-reactivity against the closest homologue USP25, this inhibitor showed a high degree of selectivity over other deubiquitinases. USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and Δp63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion. Thus, USP28 may represent a promising therapeutic target for the treatment of squamous cell lung carcinoma.
+Lung squamous cell carcinoma (LSCC) is a considerable global health burden, with an incidence of over 600,000 cases per year. Treatment options are limited, and patient’s 5-year survival rate is less than 5%. The ubiquitin-specific protease 28 (USP28) has been implicated in tumourigenesis through its stabilization of the oncoproteins c-MYC, c-JUN, and Δp63. Here, we show that genetic inactivation of Usp28-induced regression of established murine LSCC lung tumours. We developed a small molecule that inhibits USP28 activity in the low nanomole range. While displaying cross-reactivity against the closest homologue USP25, this inhibitor showed a high degree of selectivity over other deubiquitinases. USP28 inhibitor treatment resulted in a dramatic decrease in c-MYC, c-JUN, and Δp63 proteins levels and consequently induced substantial regression of autochthonous murine LSCC tumours and human LSCC xenografts, thereby phenocopying the effect observed by genetic deletion. Thus, USP28 may represent a promising therapeutic target for the treatment of squamous cell lung carcinoma.
 
 ## Introduction
 
@@ -68,19 +68,39 @@ Here, we describe the characterization of a novel USP28 inhibitory compound (USP
 
 ## Results
 
-## USP28 is required to maintain protein levels of c-MYC, c-JUN, and Δp63 in LSCC
+### USP28 is required to maintain protein levels of c-MYC, c-JUN, and Δp63 in LSCC
 
 To gain insights into the molecular differences between LADC and LSCC, we investigated the expression of MYC in these common NSCLCs subtypes. MYC was transcriptionally upregulated in human LSCC compared to healthy lung tissue or LADC tumours (Figure 1A). Quantitative polymerase chain reaction (qPCR) analysis on an independent set of primary human lung biopsy samples confirmed that MYC is highly expressed in LSCC tumours compared with normal lung tissue (Figure 1B). Moreover, IHC staining on primary lung tumours confirmed a significant abundance of c-MYC protein in LSCC samples (Figure 1C and D). Also, Δp63 and c-JUN, critical factors in squamous cell identity and tumour maintenance, respectively, showed higher protein levels in LSCC compared to LADC tumours (Figure 1C and D). Individual downregulation of c-MYC, c-JUN, and Δp63 by small interfering RNA (siRNA) resulted in a significant reduction of cell growth in four independent human LSCC cell lines (Figure 1E, Figure 1—figure supplement 1A-C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-v2.jpg)
+
+**Figure 1.:** (A) Expression of MYC in human lung adenocarcinoma (LADC, n = 483), lung squamous cell carcinoma (LSCC, n = 486), and normal non‐transformed tissue (normal LSCC = 338, normal LADC = 347). In box plots, the centre line reflects the median. Data from TCGA and GTEx were analysed using GEPIA software. (B) Relative mRNA expression of MYC in normal lung tissue (n = 5) and LSCC (n = 17) patient samples from the Cordoba Biobank measured by RT-PCR. The p value was calculated using the Student’s two-tailed t test. Plots indicate mean. (C) Representative LADC and LSCC tumours stained with c-MYC, c-JUN, and Δp63 antibodies. Scale bars, 30 μm. (D) Quantification of c-MYC+ (LADC n = 33, LSCC n = 34), c-JUN+ (LADC n = 33, LSCC n = 33), and Δp63+ cells (LADC n = 41, LSCC n = 41) in LADC and LSCC tumours. Plots indicate mean. Student’s two-tailed t test was used to calculate p values. (E) Graph showing the difference in cell proliferation between control and MYC-depleted KF LSCC cells (n = 3). Graph indicates mean ± SEM. Student’s two-tailed t test was used to calculate p values. (F) Genetic alterations in ubiquitin-specific protease 28 (USP28) and FBXW7 genes in human LSCC. Each column represents a tumour sample (n = 178). Data from TCGA were analysed using cBioportal software. (G) Relative mRNA expression of USP28 in normal lung tissue (n = 5) and LSCC (n = 17) patient samples from the Cordoba Biobank measured by RT-PCR. The p value was calculated using the Student’s two-tailed t test. Plots indicate mean. See also Figure 1—figure supplement 1B. (H) shRNA-mediated knockdown of Usp28 decreases c-MYC, c-JUN, and Δp63 protein levels in primary KF LSCC cells. (I) Graph showing the difference in cell proliferation between control and Usp28-depleted KF LSCC cells (n = 3). Graph indicates mean ± SEM. One-way analysis of variance (ANOVA) with Dunnett’s multiple comparisons test was used to calculate p values. Source data for B, D, E, G, and I.
+
+![Figure 1—figure supplement 1](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1:** (A) Graphs showing the difference in cell proliferation between control and siMYC-transfected human lung squamous cell carcinoma (LSCC) cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean ± SEM. p Values calculated using one-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test. (B) Graphs showing the difference in cell proliferation between control and siJUN-transfected human LSCC cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean ± SEM. p Values calculated using one-way ANOVA with Tukey’s multiple comparisons test. (C) Graphs showing the difference in cell proliferation between control and siΔp63-transfected human LSCC cell lines (NCI-H226, NCI-H520, CALU-1, and LUDLU-1). Graphs indicate mean ± SEM. p Values calculated using one-way ANOVA with Tukey’s multiple comparisons test. Source data for A, B, and C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Dot plot showing association between the log2 mRNA expression (Y-axis) and copy-number alterations (X-axis) for ubiquitin-specific protease 28 (USP28) gene. Data from TCGA were analysed using cBioportal software. One-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test was used to calculate p values (n = 2 deep deletion, n = 57 shallow deletion, n = 81 diploid, n = 38 gain). (B) Representative human lung squamous cell carcinoma (LSCC) tumours stained with USP28 and FBW7 antibodies. Scale bars, 100 µm (left panel). Quantification of USP28 and FBW7 protein staining in LSCC tumours (n = 17) (right panel). Source data for A.
+
 As c-MYC, c-JUN, and Δp63 protein levels are controlled by the deubiquitinase USP28 (Popov et al., 2007; Prieto-Garcia et al., 2020), we analysed its expression in publicly available datasets (The Cancer Genome Atlas). We observed that 25% of human LSCC cases show gain-of-function alterations in USP28 (Figure 1F). In addition, a positive correlation between USP28 copy-number and mRNA expression was found in the same datasets (Figure 1—figure supplement 2A). Interestingly, qPCR and IHC analysis on human LSCC samples revealed that low USP28 mRNA levels correlated with low USP28 protein levels and likewise, high/moderate mRNA levels also correlated with high USP28 protein levels (Figure 1G, Figure 1—figure supplement 2B). Since USP28 is involved in Δp63, c-JUN, and c-MYC stabilization and higher expression of USP28 is associated with a significantly shorter survival time (Prieto-Garcia et al., 2020), we targeted its expression. Usp28 downregulation by shRNA resulted in a significant reduction in c-MYC, c-JUN, and Δp63 protein levels in LSCC primary tumour cells and reduced LSCC cell growth (Figure 1H and I). Thus, targeting USP28 in order to destabilize its substrates represents a rational strategy to target tumour cells that rely on oncogenic transcription factors that are currently not druggable by small molecules.
 
-## Generation of a pre-clinical dual recombinase lung cancer mouse model
+### Generation of a pre-clinical dual recombinase lung cancer mouse model
 
 Recently, Usp28 was shown to be required for the initiation of lung tumours in the Rosa26-Cas9 sgRNA KrasG12D; Trp53; Lkb1 model (Prieto-Garcia et al., 2020). However, a meaningful pre-clinical model requires targeting the therapeutic candidate gene in existing growing lung tumours. Thus, to assess the function of Usp28 in established tumours, we developed a new GEM model to temporally and spatially separate tumour development from target deletion by using two independent recombinases: FLP and CreERT. In this model, LSCC and LADC formation is initiated by KrasG12D activation and Fbxw7 deletion using FLP recombinase, and the Cre-loxP system can then be used for inactivation of Usp28flox/flox in established tumours. To allow conditional FRT/FLP-mediated inactivation of Fbxw7 function, we inserted two FRT sites flanking exon 5 of the endogenous Fbxw7 gene in mice to generate a Fbxw7FRT/FRT allele that can be deleted by FLP recombinase (Figure 2—figure supplement 1A and B). Expression of FLP recombinase resulted in the deletion of Fbxw7 exon 5, which could be detected by PCR (Figure 2—figure supplement 1B). The resulting strain, Fbxw7FRT/FRT, was crossed to FRT-STOP-FRT (FSF)-KrasG12D mice to generate KrasFSF-G12D; Fbxw7FRT/FRT (KF-Flp model).
 
-## USP28 is an effective therapeutic target for LSCC, but not KRasG12D; Trp53 mutant LADC tumours
+### USP28 is an effective therapeutic target for LSCC, but not KRasG12D; Trp53 mutant LADC tumours
 
 The KF-Flp strain described above was crossed with Rosa26FSF-CreERT; Usp28flox/flox mice to generate the KFCU model (Figure 2A). KFCU tumour development was monitored by computed tomography (CT) scans. At 10–11 weeks post-infection with FLP recombinase-expressing recombinant adenoviruses, animals displayed lesions in their lungs. At this time point, we confirmed by histology that KFCU mice develop both LADC and LSCC tumours (Figure 2—figure supplement 1C). As expected (Ruiz et al., 2019), KFCU LADC lesions occurred in alveolar tissue and were positive for SFTPC and TTF1. KFCU LSCC tumours occurred mainly in bronchi (rarely manifesting in the alveolar compartment) and expressed CK5 and Δp63. Next, animals displaying lung tumours were exposed to tamoxifen to activate the CreERT protein and delete the conditional Usp28 floxed alleles (Figure 2A, Figure 2—figure supplement 1D). Mice transiently lost body weight during the initial tamoxifen treatment but recovered a few days later (Figure 2—figure supplement 1E). Although the loss of USP28 expression decreased LADC tumour size, it did not reduce the number of LADC tumours (Figure 2B–D). In contrast, histological examination of KFCU mice revealed a clear reduction in the numbers of LSCC lesions in Usp28-deleted lungs (Figure 2F, Figure 2—figure supplement 1D). As well as a significant reduction in tumour number, the few CK5-positive LSCC lesions that remained were substantially smaller than control tumours (Figure 2G). Measurement of the size of 429 individual KFCU LSCC tumours (326 vehicle-treated and 103 tamoxifen-treated) showed an average size of 11.4 × 104 μm2 in the vehicle arm versus 4.6 × 104 μm2 in the tamoxifen arm (Figure 2G). Thus, Usp28 inactivation significantly reduces both the number and the size of LSCC tumours.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of the KFCU (KrasFSF-G12D; Fbxw7FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox) model and experimental approach used to deplete conditional Usp28 alleles in established lung tumours. (B) Lung histology of animals treated as in A, showing both LSCC (CK5+) and lung adenocarcinoma (LADC) (SFTPC+) tumours in mice receiving vehicle but few LSCC lesions in mice receiving tamoxifen. Scale bars, 1000 μm. (C) Quantification of LADC tumours in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (D) Quantification of LADC tumour size in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey’s multiple comparisons test was used to calculate p values (n = 466 vehicle, n = 434 tamoxifen, n = 503 tamoxifen+ FT206). (E) Immunoblot analysis of LADC tumours probed for USP28, c-MYC, c-JUN, SFTPC, cleaved caspase-3 (CC3). VINCULIN is shown as loading control. (F) Quantification of LSCC tumours in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey’s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (G) Quantification of LSCC tumour size in vehicle-, tamoxifen-, and tamoxifen+ FT206-treated KFCU mice. Plots indicate mean. One-way ANOVA with Tukey’s multiple comparisons test was used to calculate p values (n = 326 vehicle, n = 103 tamoxifen, n = 79 tamoxifen+ FT206). (H) Usp28 deletion induces apoptotic cell death (CC3) and decreases c-MYC, c-JUN, and Δp63 protein levels in LSCC lesions. Source data for C, D, F, and G.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gene targeting strategy to generate conditional Fbxw7FRT/FRT animals. Two FRT sites were inserted into the intron 4 and 5 of Fbxw7 through the CRISPR-Cas9 technology. (B) Schematic representation of the conditional allele (left panel). In vitro recombination assay demonstrated efficient ablation of the exon 5 upon Flp recombinase adenovirus infection (right panel). (C) KFCU (KrasFSF-G12D; Fbxw7FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox) mice infected with adeno-CMV-Flp virus develop lung adenocarcinoma (LADC) (SFTPC+ and TTF1+) and lung squamous cell carcinoma (LSCC) (CK5+ and Δp63+) tumours. (D) In situ hybridization of ubiquitin-specific protease 28 (Usp28) and Pppib mRNA expression in vehicle- and tamoxifen-treated KFCU mice. Scale bars, 50 µm. (E) Monitoring tolerability in mice treated with vehicle, tamoxifen (Tam), or tamoxifen+ FT206. Body weights of animals during the course of treatment. Two-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test was used to calculate p values (n = 8 vehicle, n = 7 tamoxifen, n = 7 tamoxifen+ FT206). (F) KFCU tumours stained with c-MYC, c-JUN, and Δp63 antibodies. KFCU mice treated with vehicle (left panel) or tamoxifen (right panel). Inserts showing c-MYC+, c-JUN+, and Δp63+ LSCC tumours in mice receiving vehicle but partial positive or negative LSCC lesions in mice receiving tamoxifen. Scale bars, 50 μm. Source data for E.
 
 To get insights into LSCC tumour regression, we focused on USP28 substrates. Immunoblotting analysis revealed that Usp28 deletion resulted in apoptotic cell death (cleaved caspase-3; CC3). Δp63 protein levels were reduced, but c-JUN and c-MYC protein became undetectable (Figure 2H, Figure 2—figure supplement 1F). Usp28 deletion also decreased c-JUN and c-MYC levels in KFCU LADC lesions, although the reduction in c-MYC protein levels was significantly less pronounced than observed in LSCC (Figure 2E). Strikingly, elimination of Usp28 has little effect, if any, on apoptotic cell death, as determined by its inability to induce CC3 in LADC lesions. Thus, these data suggest that USP28 and its substrates are required for the maintenance of LSCC tumours.
 
@@ -88,27 +108,51 @@ To further investigate the role of USP28 in LADC, we studied the consequences of
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig3-v2.jpg)
 
-**Figure 3.:** G12D; Trp53 mutant tumours.(A) Schematic representation of the KPCU () model and experimental approach used. At 10 weeks post-infection, KPCU mice were treated with vehicle or tamoxifen. (KRasFSF-G12D; Trp53FRT/FRT; Rosa26FSF-; CreERTUsp28flox/flox; Rosa26LSL-mTmGB) Representative images of H&E (left) and GFP (right) stains from mice of the indicated treatments. Scale bar, 1000 µm. (C) Quantification of mouse lung adenocarcinoma (LADC) tumours in the KPCU model. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 10 vehicle, n = 10 tamoxifen). (D) Quantification of LADC tumour size in vehicle- and tamoxifen-treated KPCU mice. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 110 vehicle, n = 130 tamoxifen). (E) Representative images illustrating histological analysis of lung lesions in KPCU mice, treated with vehicle or tamoxifen. H&E, SFTPC, TTF1, GFP immunohistochemistry staining and in situ hybridization of USP28 and PPIB mRNA expression. Scale bars, 50 µm. Source data for C and D.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic representation of the KPCU (KRasFSF-G12D; Trp53FRT/FRT; Rosa26FSF-CreERT; Usp28flox/flox; Rosa26LSL-mTmG) model and experimental approach used. At 10 weeks post-infection, KPCU mice were treated with vehicle or tamoxifen. (B) Representative images of H&E (left) and GFP (right) stains from mice of the indicated treatments. Scale bar, 1000 µm. (C) Quantification of mouse lung adenocarcinoma (LADC) tumours in the KPCU model. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 10 vehicle, n = 10 tamoxifen). (D) Quantification of LADC tumour size in vehicle- and tamoxifen-treated KPCU mice. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 110 vehicle, n = 130 tamoxifen). (E) Representative images illustrating histological analysis of lung lesions in KPCU mice, treated with vehicle or tamoxifen. H&E, SFTPC, TTF1, GFP immunohistochemistry staining and in situ hybridization of USP28 and PPIB mRNA expression. Scale bars, 50 µm. Source data for C and D.
 
-## Generation of a new USP28 inhibitor: selectivity and cellular target engagement
+### Generation of a new USP28 inhibitor: selectivity and cellular target engagement
 
 The finding that USP28 plays a key role in LSCC tumour maintenance prompted us to identify small-molecule inhibitors against this deubiquitinase. A small-molecule discovery campaign based on the ubiquitin-rhodamine cleavable assay (Turnbull et al., 2017) yielded a panel of compounds sharing a thienopyridine carboxamide chemical scaffold with inhibitory selectivity for USP28 and USP25 (Guerin et al., 2017; Guerin et al., 2020; Zablocki et al., 2019). The compound FT206 (Figure 4A) represents a different chemical class from the benzylic amino ethanol-based inhibitors described previously (Wrigley et al., 2017). Quantitative structure-activity relationship was used to develop compound derivative FT206 that was most optimal in terms of drug metabolism and pharmacokinetic properties while preserving potency and selectivity towards USP28/25 (Zablocki et al., 2019). To confirm FT206 cellular target engagement, we used a Ub activity-based probe (ABP) assay (Altun et al., 2011; Clancy et al., 2021; Panyain et al., 2020; Turnbull et al., 2017). ABPs can assess DUB enzyme activity in a cellular context. DUB inhibition leads to displacement of the ABP, resulting in a molecular weight shift measurable by SDS-PAGE and immunoblotting against USP28/25. Using this approach, we found that the compound FT206 interferes with USP28/25 probe labelling (USP-ABP versus USP) in LSCC H520 cell extracts (EC50 ~300–1000 nM, Figure 4B) and intact cells (EC50 ~1–3 μM, Figure 4C). In contrast to FT206, AZ1, a different USP28 inhibitor (Wrigley et al., 2017), based on a benzylic amino ethanol scaffold, appeared to exert lower potency towards USP28 (EC50 >30 μM) and selectivity for USP25 (EC50 ~10–30 μM) (Figure 4—figure supplement 1A). To address compound selectivity more widely, we combined the ABP assay with quantitative mass spectrometry (activity-based probe profiling [ABPP]) to allow the analysis of the cellular active DUBome (Benns et al., 2021; Jones et al., 2021; Pinto-Fernández et al., 2019). When performing such assay in human LSCC cells, we were able to profile 28 endogenous DUBs, revealing a remarkable USP28/25 selectivity for FT206 in a dose-dependent manner (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig4-v2.jpg)
+
+**Figure 4.:** (A) Structure of small-molecular inhibitor FT3951206/CRT0511973 (FT206). (B) Cellular DUB profiling in NCI-H520 lung squamous cell carcinoma (LSCC) cell extracts incubated with the indicated concentrations of FT206 prior to labelling with HA-UbPA, SDS-PAGE, and analysis by Western blotting. Inhibitor potency was reflected by competition with USP28/25-ABP (activity-based probe) adduct formation. (C) Cellular DUB profiling in NCI-H520 LSCC cells incubated with the indicated concentrations of FT206, lysed extracts labelled with HA-UbPA, and analysed as in B. (D) Activity-based probe profiling (ABPP) demonstrating the cellular DUB selectivity profile of cpd FT206 by quantitative mass spectrometry analysis at different inhibitor concentrations. Graph indicates mean ± SEM. (E) USP28 inhibition using FT206 (50 and 100 nM) reduces c-MYC, c-JUN, and Δp63 protein levels in primary KF LSCC cells. (F) USP28 inhibition using FT206 decreases cell proliferation in KF LSCC cells (n = 4). Graph indicates mean ± SEM. Source data for F.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Comparison of ubiquitin-specific protease 28/25 (USP28/25) inhibitor potency by activity-based profiling. Human lung squamous cell carcinoma (LSCC) H520 crude cell extracts were incubated either with AZ1 or FT206 inhibitors at indicated concentrations, followed by HA-UbPA activity-based probe (ABP) labelling. Samples were analysed by SDS-PAGE and immunoblotted using USP28, USP25, HA, and GAPDH antibodies. Inhibitor potency was reflected by competition with USP28/25-ABP adduct formation. (B) TUBE pulldown of endogenous ubiquitylated c-MYC, c-JUN, and USP28 in LSCC cells upon co-treatment with MG132 and FT206. (C) Immunoblot of endogenous USP28, c-JUN, c-MYC, and Δp63 in LSCC cells upon co-treatment with MG132 and FT206. VINCULIN served as loading control. (D) Graphs showing the difference in cell proliferation between control, FT206-treated, and USP28-depleted LSCC cells. Graph indicates mean ± SEM. One-way analysis of variance (ANOVA) with Tukey’s multiple comparisons test was used to calculate p values. VINCULIN is shown as loading control. Source data for D.
 
 To further evaluate the efficacy of FT206 in targeting USP28, we tested its ability to modulate the ubiquitination status of endogenous USP28 substrates. The ubiquitination levels of c-MYC and c-JUN increased upon FT206 and MG132 co-treatment (Figure 4—figure supplement 1B), confirming that FT206 blocks USP28-mediated deubiquitination of its substrates. The ubiquitination level of USP28 also increased upon FT206 treatment (Figure 4—figure supplement 1B), which is consistent with previous observations where the enzymatic activity of DUBs can function to enhance their own stability (de Bie and Ciechanover, 2011). Consequently, treatment of LSCC tumour cells with FT206 resulted in reduced c-MYC, c-JUN, Δp63, and USP28 protein levels, which were restored upon addition of MG132 (Figure 4E, Figure 4—figure supplement 1C).
 
 Finally, FT206 treatment impaired LSCC cell growth (Figure 4F). However, in a USP28-depleted background, FT206 neither affected cell growth nor reduced c-MYC protein levels (Figure 4—figure supplement 1D). Thus, this data suggests that the effects of FT206 are mediated by USP28.
 
-## Pharmacological inhibition of USP28 is well tolerated in mice and induced LSCC tumour regression
+### Pharmacological inhibition of USP28 is well tolerated in mice and induced LSCC tumour regression
 
 We next evaluated the therapeutic potential of the USP28 inhibitor FT206 using the KrasLSL-G12D; Fbxw7flox/flox model (KF mice), which develop both LADC and LSCC tumour types (Ruiz et al., 2019). Nine weeks after adeno-CMV-Cre virus infection, when mice had developed lung tumours, we started treatment with USP28 inhibitor at 75 mg/kg, three times a week for 5 weeks (Figure 5A). FT206 administration had no noticeable adverse effects and treated mice maintained normal body weight (Figure 5—figure supplement 1A and B). Consistent with the effects observed by genetic Usp28 inactivation (Figure 2C), the number of KF LADC lesions was not affected by USP28 inhibition via FT206 treatment (Figure 5B–D). By contrast, we found that FT206 effectively reduced LSCC tumour number by 68% (31–10 LSCC tumours, Figure 5B and E). Moreover, measurement of 252 individual KF LSCC mutant tumours (156 vehicle-treated and 96 FT206-treated lesions) showed a significant reduction of over 45% in tumour size upon FT206 treatment: an average of 8.5 × 104 μm2 in the vehicle arm versus 4.5 × 104 μm2 in the FT206 cohort (Figure 5F). Thus, USP28 inhibition by FT206 leads to a dramatic reduction in the numbers of advanced LSCC tumours, and the small number of remaining LSCC lesions is significantly reduced in size, resulting in a reduction of total LSCC burden of over 85% by single agent treatment.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scheme depicting experimental design for in vivo test of FT206 (75 mg/kg), three times a week for 5 weeks. (B) Lung histology of animals treated as in A, showing both LSCC (CK5+) and lung adenocarcinoma (LADC) (SFTPC+) tumours in KRasLSL-G12D; Fbxw7f/f (KF) mice receiving vehicle but few LSCC lesions in mice receiving FT206. Scale bars, 1000 μm. (C) Quantification of LADC tumours per animal in vehicle- and FT206-treated KF mice. Plots indicate mean. p Values calculated using Student’s two-tailed t test (n = 7 vehicle, n = 10 FT206). (D) Quantification of LADC tumour size in vehicle- and FT206-treated KF mice. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 304 vehicle, n = 481 FT206). (E) Quantification of LSCC tumours per animal in vehicle- and FT206-treated KF mice. Plots indicate mean. p Values calculated using Student’s two-tailed t test (n = 7 vehicle, n = 10 FT206). (F) Quantification of LSCC tumour size in vehicle- and FT206-treated KF mice. Plots indicate mean. Student’s two-tailed t test was used to calculate p values (n = 156 vehicle, n = 96 FT206). (G) LSCC tumours stained with c-MYC, c-JUN, and Δp63 antibodies. KF animals treated with vehicle (left panel) or FT206 (right panel). Inserts showing c-MYC+, c-JUN+, Δp63+ LSCC tumours in mice receiving vehicle (left panel) but partial positive or negative LSCC lesions in mice receiving FT206 (right panel). Scale bars, 50 μm. (H) Scheme depicting experimental design for in vivo test of FT206 (75 mg/kg) for 4 days consecutively (upper panel). Cleaved caspase-3 (CC3) stain shows apoptotic cells (bottom panel). Scale bars, 50 μm. (I) Quantification of CC3-positive cells per field (20×) in LADC (n = 114 vehicle, 203 FT206) and LSCC (n = 94 vehicle, 167 FT206) tumours from KF mice treated as in H. Plots indicate mean. Student’s two-tailed t test was used to calculate p values. Source data for C, D, E, F, and I.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Monitoring tolerability in mice treated with FT206 (75 mg/kg), three times a week for 5 weeks. Body weights of animals during the course of treatment (n = 3 vehicle, n = 3 FT206). (B) Kidney, liver, and spleen sections stained with H&E. Mice treated as in A. Bars, 100 μm. Source data for A.
 
 In line with the effects found by genetic Usp28 deletion, treatment of KF mice with FT206 also resulted in reduced Δp63, c-JUN, and c-MYC protein levels (Figure 5G). Consequently, FT206 treatment led to a substantial increase in the number of CC3-positive cells in LSCC while LADC cells were not significantly affected, indicating that USP28 inhibition causes apoptotic cell death of LSCC tumour cells (Figure 5H and I).
 
 Finally, to further confirm the specificity of FT206, KFCU mice pre-exposed to tamoxifen to delete the conditional Usp28 floxed alleles were further treated with the USP28 inhibitor FT206. In this setting, USP28 inhibition did not result in either a further reduction of LADC and LSCC lesions or body weight loss (Figure 2C and F, Figure 2—figure supplement 1E), suggesting that FT206 targets specifically USP28.
 
-## USP28 inhibition causes dramatic regression of human LSCC xenograft tumours
+### USP28 inhibition causes dramatic regression of human LSCC xenograft tumours
 
 To determine whether the promise of USP28 as a target in mouse lung cancer models can be translated to a human scenario, we established human xenograft tumour models. siRNA-mediated USP28 but not USP25 depletion, and USP28 inhibitor treatment, considerably reduced protein levels of Δp63, c-JUN, and c-MYC and impaired growth in human LSCC tumour cells (Figure 6A–C, Figure 6—figure supplement 1A and B). In contrast, FT206 treatment had marginal effects on c-MYC and c-JUN protein levels in human LADC cells and in USP28 mutant LSCC cells (Figure 6—figure supplement 1C–1E). Crucially, FT206 led to a remarkable growth impairment of xenografts derived from three independent human LSCC cell lines (Figure 6D–I), which was accompanied with a strong reduction of c-MYC protein levels (Figure 6J–L). In summary, these data suggest that USP28 pharmacological intervention is a promising therapeutic option for human LSCC patients.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig6-v2.jpg)
+
+**Figure 6.:** (A) Small interfering RNA (siRNA)-mediated knockdown of USP28 decreases c-MYC, c-JUN, and Δp63 protein levels in human LUDLU-1 LSCC cells. (B) USP28 inhibition using FT206 (0.2 and 0.4 μM) reduces c-MYC, c-JUN, and Δp63 protein levels in human LUDLU-1 LSCC cells. (C) USP28 inhibition using FT206 decreases cell proliferation in human LSCC (NCI-H520, CALU-1, and LUDLU-1) cell lines (n = 8). Graphs indicate mean ± SEM. (D, E, F) In vivo tumour graft growth curves of human LSCC (NCI-H520, CALU-1, and LUDLU-1) cell lines subcutaneously injected in flanks of immunocompromised mice. Animals with palpable tumours were treated with vehicle or FT206 (75 mg/kg) via oral gavage. Plots indicate mean ± SD of the tumour volumes. p Values calculated from two-way analysis of variance (ANOVA) with Bonferroni’s multiple comparisons test (NCI-H520 n = 4 vehicle and 4 FT206; CALU-1 n = 3 vehicle and 3 FT206; LUDLU-1 n = 3 vehicle and 3 FT206). (G, H, I) Mice treated as in D, E, and F, respectively. Plots showing the weight of xenograft tumours at the end point. Student’s two-tailed t test was used to calculate p values (NCI-H520 n = 4 vehicle and 4 FT206; CALU-1 n = 3 vehicle and 3 FT206; LUDLU-1 n = 3 vehicle and 3 FT206). (J, K, L) c-MYC immunohistochemistry stainings of NCI-H520, CALU-1, and LUDLU-1 xenografts in mice treated as in D, E, and F, respectively. Scale bars, 50 μm. Source data for C, D, E, F, G, H, and I.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71596/elife-71596-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunoblot of endogenous ubiquitin-specific protease 25 (USP25), c-JUN, c-MYC, and Δp63 in USP25-depleted lung squamous cell carcinoma (LSCC) cells. VINCULIN served as loading control. (B) Immunoblot of endogenous c-MYC and c-JUN in LSCC cells upon FT206 treatment (IC50 doses display in panel D). VINCULIN served as loading control. (C) Immunoblot of endogenous c-MYC and c-JUN in lung adenocarcinoma (LADC) cells upon FT206 treatment (IC50 doses display in panel D). VINCULIN served as loading control. (D) IC50 values (doses that inhibits 50% of the cell viability) were calculated after exposure of human LADC and LSCC cells to different concentrations of FT206 compound. (E) Immunoblot of endogenous c-MYC and c-JUN in USP28 mutant LSCC cells upon FT206 treatment. The LSCC cell line SKMES contains a nonsense mutation in Usp28 (c.193G > T). VINCULIN served as loading control.
 
 ## Discussion
 
@@ -126,49 +170,224 @@ In summary, our studies demonstrate that USP28 is a key mediator of LSCC mainten
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 The KrasLSL-G12D (Jackson et al., 2001), Fbxw7flox/flox (Jandke et al., 2011), Usp28flox/flox (Diefenbacher et al., 2014), KrasFSF-G12D (Schönhuber et al., 2014), Trp53FRT/FRT (Schönhuber et al., 2014), Rosa26FSF-CreERT (Schönhuber et al., 2014), Rosa26LSL-mTmG (Muzumdar et al., 2007) strains have been previously described. Immunocompromised NSG mice were maintained in-house. All animal experiments were approved by the Francis Crick Institute Animal Ethics Committee and conformed to UK Home Office regulations under the Animals (Scientific Procedures) Act 1986 including Amendment Regulations 2012. All strains were genotyped by Transnetyx. Each group contained at least three mice, which generates enough power to pick up statistically significant differences between treatments, as determined from previous experience (Ruiz et al., 2019). Mice were assigned to random groups before treatment.
 
-## Generation of Fbxw7FRT/FRT mice
+### Generation of Fbxw7FRT/FRT mice
 
 To generate a conditional allele of Fbxw7, we employed the CRISPR-Cas9 approach to insert two FRT sites into the intron 4 and 5 of Fbxw7, respectively. Two guide RNAs targeting the integration sites (gRNA-Int5A: accgtcggcacactggtcca; gRNA-Int4A: cactcgtcactgacatcgat), two homology templates containing the FRT sequences (gRNA-Int5B: agcactgacgagtgaggcgg; gRNA-Int4B: tgcctagccttttacaagat) and the Cas9 mRNA were micro-injected into the fertilized mouse eggs. The offspring were screened by PCR and one line with proper integration of two FRT sites was identified.
 
-## Analysis of public data from cancer genomics studies
+### Analysis of public data from cancer genomics studies
 
 Data from TCGA Research Network (Lung Squamous Cell Carcinoma [TCGA, Firehose Legacy]), including mutations, putative copy-number alterations, and mRNA expression (mRNA expression z-scores relative to diploid samples [RNA Seq V2 RSEM; threshold 2.0]), were analysed using cBioportal software and visualized using the standard Oncoprint output (Cerami et al., 2012). The Onco Query Language (OQL) used was ‘USP28: MUT AMP GAIN EXP ≥ 2’ ‘FBXW7: MUT HOMDEL HETLOSS EXP ≤ –2’. Source data was from GDAC Firehose, previously known as TCGA Provisional. The complete sample set used was (n = 178). Expression analysis was performed using GEPIA (Gene Expression Profiling Interactive Analysis) software (2017).
 
-## Human lung tumour analysis
+### Human lung tumour analysis
 
 Human biological samples were collected, stored, and managed by the Cordoba node belonging to the Biobank of the Andalusian Health Service (Servicio Andaluz de Salud [SAS]) and approved by the Ethics and Clinical Research Committee of the University Hospital Reina Sofia. All subjects gave informed consent. Pathologists assessed all samples before use. mRNA extracted from the samples was analysed by qPCR. Primers are listed in Table 1.
 
-## Tumour induction and tamoxifen treatment
+**Table 1.**
+ Primers for quantitative polymerase chain reaction (qPCR).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="2">Primer (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Forward</td>
+      <td>Reverse</td>
+    </tr>
+    <tr>
+      <td>ACTIN</td>
+      <td>GAAAATCTGGCACCACACCT</td>
+      <td>TAGCACAGCCTGGATAGCAA</td>
+    </tr>
+    <tr>
+      <td>USP28</td>
+      <td>ACTCAGACTATTGAACAGATGTACTGC</td>
+      <td>CTGCATGCAAGCGATAAGG</td>
+    </tr>
+    <tr>
+      <td>MYC</td>
+      <td>TCTCCTTGCAGCTGCTTAG</td>
+      <td>GTCGTAGTCGAGGTCATAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tumour induction and tamoxifen treatment
 
 Induction of NSCLC tumours was carried out in anaesthetized (2–2.5% isoflurane) mice by intratracheal instillation of a single dose of 2.5 × 107 pfu of adenoviruses encoding either the Cre recombinase (adeno-CMV-Cre) or Flp recombinase (adeno-CMV-Flp) (Ruiz et al., 2021). Activation of the inducible CreERT2 recombinase was carried out by intraperitoneal injection of tamoxifen (100 μg/kg body weight) dissolved in peanut oil for 10 days.
 
-## CT image acquisition and processing
+### CT image acquisition and processing
 
 The SkyScan-1176, a high-resolution low-dose X-ray scanner, was used for 3D CT. Mice were anaesthetized with 2–2.5% isoflurane and CT images were acquired at a standard resolution (35 μm pixel size). The raw scan data was sorted using RespGate software, based on the position of the diaphragm, into end expiration bins. 3D reconstruction was performed using NRecon software. 3D data sets were examined using Data Viewer software.
 
-## Mouse treatments with FT206
+### Mouse treatments with FT206
 
 Nine weeks upon Ad5-CMV-Cre infection, KRasLSL-G12D; Fbxw7flox/flox mice were treated with FT206 (75 mg/kg) via oral gavage on days 1, 3, and 5 per week during 5 weeks. Body weights were register every week.
 
-## In vivo pharmacology with subcutaneous graft tumours
+### In vivo pharmacology with subcutaneous graft tumours
 
 Human LSCC tumour cell lines (NCI-H520, CALU-1, and LUDLU-1) were resuspended as single-cell suspensions at 107 cells/ml in PBS:Matrigel; 100 μl (106 cells total) of this suspension was injected into the flanks of immunodeficient NSG mice. When tumours were palpable, treatment with FT206 (75 mg/kg) was initiated with the same schedule on days 1, 3, and 5 per week. Tumour grafts were measured with digital callipers, and tumour volumes were determined with the following formula: (length × width2) × (π/6). Tumour volumes are plotted as means ± SD.
 
-## Histopathology, IHC, and BaseScope analysis
+### Histopathology, IHC, and BaseScope analysis
 
 For histological analysis, lungs were fixed overnight in 10% neutral buffered formalin. Fixed tissues were subsequently dehydrated and embedded in paraffin, and sections (4 μm) were prepared for H&E staining or IHC. Antibodies are given in Table 2. BaseScope was performed following the manufacturer’s protocol. The Usp28-specific probe was custom-designed to target 436–482 of NM_175482.3; Ppib probe was used as a positive control (Bio-Techne Ltd).
 
+**Table 2.**
+ List of reagents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Antibodies</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-CK5</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab52635, RRID:AB_869890</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-c-MYC</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab32072, RRID:AB_731658</td>
+    </tr>
+    <tr>
+      <td>Goat anti-GFP</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab6673, RRID: AB_305643</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Ki67</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab16667, RRID: AB_302459</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-TTF1</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab76013, RRID:AB_1310784</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-USP28</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab126604, RRID:AB_11127442</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-USP25</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab187156</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-ACTIN</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab8227, RRID:AB_2305186</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-USP28</td>
+      <td>Atlas</td>
+      <td>Atlas Antibodies Cat# HPA006779, RRID:AB_1080517</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-Δp63</td>
+      <td>BioLegend</td>
+      <td>BioLegend Cat# 619001, RRID:AB_2256361</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-c-JUN</td>
+      <td>BD Biosciences</td>
+      <td>BD Biosciences Cat# 610326, RRID:AB_397716</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-FBW7</td>
+      <td>Bethyl</td>
+      <td>Bethyl Cat# A301-721A, RRID:AB_1210898</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-USP7</td>
+      <td>Enzo</td>
+      <td>Enzo Life Sciences Cat# BML-PW0540, RRID:AB_224147</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-GAPDH</td>
+      <td>Invitrogen</td>
+      <td>Thermo Fisher Scientific Cat# MA5-15738, RRID:AB_10977387</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-SFTPC</td>
+      <td>Millipore</td>
+      <td>Millipore Cat# AB3786, RRID:AB_91588</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-caspase-3 active</td>
+      <td>R&amp;D Systems</td>
+      <td>R&amp;D Systems Cat# AF835, RRID:AB_2243952</td>
+    </tr>
+    <tr>
+      <td>Rat anti-HA</td>
+      <td>Roche</td>
+      <td>Roche Cat# 11666606001, RRID:AB_514506</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-TUBULIN</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# T5168, RRID:AB_477579</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-VINCULIN</td>
+      <td>Sigma</td>
+      <td>Sigma-Aldrich Cat# V9131, RRID:AB_477629</td>
+    </tr>
+    <tr>
+      <td colspan="3">Virus strains</td>
+    </tr>
+    <tr>
+      <td>Adeno-CMV-Cre</td>
+      <td>UI viral vector core</td>
+      <td>VVC-U of Iowa-5-HT</td>
+    </tr>
+    <tr>
+      <td>Adeno-CMV-Flp</td>
+      <td>UI viral vector core</td>
+      <td>VVC-U of Iowa-530HT</td>
+    </tr>
+    <tr>
+      <td colspan="3">Chemicals, peptides, and recombinant proteins</td>
+    </tr>
+    <tr>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma</td>
+      <td>D9891</td>
+    </tr>
+    <tr>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>T5648</td>
+    </tr>
+  </tbody>
+</table>
+
 Tumour numbers were counted from whole lung sections: LADC and LSCC tumours were identified by SFTPC and CK5 stains, respectively. Tumour areas (μm2) were measured from lung sections using Zen3.0 (blue edition) software. For quantification of tumour cell death, the number of CC3-positive cells was counted in individual tumours per field (20×). The number of ΔP63+, c-MYC+, and c-JUN+ cells was counted in individual tumours/10,000 μm2. All analyses were performed uniformity across all lung sections and the whole lungs were used to derive data.
 
-## Cell culture
+### Cell culture
 
 Primary KF LSCC cells were cultured in N2B27 medium containing EGF (10 ng/ml; Pepro Tech) and FGF2 (20 ng/ml; Pepro Tech) (Ruiz et al., 2019). Human LSCC (NCI-H226, NCI-H520, CALU-1, LUDLU-1, and SKMES) and LADC (NCI-H23, NCI-H441, and NCI-H1650) lines were provided by the Francis Crick Institute Cell Services and cultured in RPMI-1640 medium supplemented with 10% FBS, 1% penicillin/streptomycin, 2 mM glutamine, 1% NEEA, and 1 mM Na pyruvate. All cells were tested Mycoplasma-negative and maintained at 37°C with 5% CO2.
 
-## Cell treatments
+### Cell treatments
 
 Mouse KF LSCC and human LUDLU-1 cells were treated with vehicle or FT206 at different concentrations for 48 hr to analyse c-MYC, c-JUN, and Δp63 protein levels by Western blotting.
 
@@ -178,30 +397,30 @@ Mouse KF LSCC and human cell lines were transfected with specific siRNAs against
 
 For IC50, mouse KF LSCC and human cells were treated with vehicle or FT206 at different concentrations for 72 hr. Cell viability was measured as the intracellular ATP content using the CellTiter-Glo Luminescent Cell Viability Assay (Promega), following the manufacturer’s instructions. IC50 was calculated using GraphPad Prism software.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were lysed in ice-cold lysis buffer (20 mM Tris HCl, pH 7.5, 5 mM MgCl2, 50 mM NaF, 10 mM EDTA, 0.5 M NaCl, and 1% Triton X-100) that was completed with protease, phosphatase, and kinase inhibitors. Protein extracts were separated on SDS-PAGE, transferred to a nitrocellulose membrane, and blotted with antibodies, which are given in Table 2. Primary antibodies were detected against mouse or rabbit IgGs and visualized with ECL Western blot detection solution (GE Healthcare) or Odyssey infrared imaging system (LI-COR, Biosciences).
 
-## USP28 inhibitor synthesis
+### USP28 inhibitor synthesis
 
 Synthesis and characterization of the USP28/25 small-molecule inhibitor FT206, a thienopyridine carboxamide derivative, has been described previously in the patent application WO 2017/139778 Al (Guerin et al., 2017) and more recent updates WO 2019/032863 (Zablocki et al., 2019) and WO 2020/033707, where FT206 is explicitly disclosed as in Guerin et al., 2020.
 
-## Cellular DUB profiling using Ub-based active site directed probes
+### Cellular DUB profiling using Ub-based active site directed probes
 
 Molecular probes based on the ubiquitin scaffold were generated and used essentially as described (Pinto-Fernández et al., 2019; Turnbull et al., 2017). In brief, HA-tagged Ub propargyl probes were synthesized by expressing the fusion protein HA-Ub75-intein-chitin binding domain in Escherichia coli BL21 strains. Bacterial lysates were prepared, and the fusion protein was purified over a chitin binding column (NEB labs, UK). HA-Ub75-thioester was obtained by incubating the column material with mercaptosulfonate sodium salt (MESNa) overnight at 37°C. HA-Ub75-thioester was concentrated to a concentration of ~1 mg/ml using 3000 MW filters (Sartorius) and then desalted against PBS using a PD10 column (GE Healthcare); 500 μl of 1–2 mg/ml of HA-Ub75- thioester was incubated with 0.2 mmol of bromo-ethylamine at pH 8–9 for 20 min at ambient temperature, followed by a desalting step against phosphate buffer pH 8 as described above. Ub probe material was concentrated to ~1 mg/ml, using 3000 MW filters (Sartorius), and kept as aliquots at –80°C until use.
 
-## DUB profiling competition assays with cell extracts and with cells
+### DUB profiling competition assays with cell extracts and with cells
 
 Crude NCI-H520 cell extracts were prepared as described previously using glass-bead lysis in 50 mM Tris pH 7.4, 5 mM MgCl2, 0.5 mM EDTA, 250 mM sucrose, 1 mM DTT. For experiments with crude cell extracts, 50 μg of NCI-H520 cell lysate was incubated with different concentrations of USP28 inhibitor compounds (FT206 and AZ1) for 1 hr at 37°C, followed by addition of 1 μg HA-UbPA and incubation for 10 min (Figure 4B and C) or 30 min (Figure 4—figure supplement 1A comparing FT206 and AZ1) at 37°C. Incubation with Ub probe was optimized to minimize replacement of non-covalent inhibitor FT206 by the covalent probe. Samples were then subsequently boiled in reducing SDS-sample buffer, separated by SDS-PAGE and analysed by Western blotting using anti-HA (Roche, 1:2000), anti-USP28 (Abcam, 1:1000), anti-USP25 (Abcam, 1:1000), anti-GAPDH (Invitrogen, 1:1000), or beta Actin (Abcam, 1:2000) antibodies. For cell-based DUB profiling, 5 × 106 intact cells were incubated with different concentrations of inhibitors in cultured medium for 4 hr at 37°C, followed by glass-bead lysis, labelling with HA-UbPA probe, separation by SDS-PAGE and Western blotting as described above.
 
-## DUB inhibitor profiling by quantitative mass spectrometry
+### DUB inhibitor profiling by quantitative mass spectrometry
 
 Ub probe pulldown experiments in presence of different concentrations of the inhibitor FT206 were performed essentially as described (Pinto-Fernández et al., 2019; Turnbull et al., 2017) with some modifications. In brief, immune precipitated material from 500 μg to 1 mg of NCI-H520 cell crude extract was subjected to in-solution trypsin digestion and desalted using C18 SepPak cartridges (Waters) based on the manufacturer’s instructions. Digested samples were analysed by nano-UPLC-MS/MS using a Dionex Ultimate 3000 nano UPLC with EASY spray column (75 μm × 500 mm, 2 μm particle size, Thermo Scientific) with a 60 min gradient of 0.1% formic acid in 5% DMSO to 0.1% formic acid to 35% acetonitrile in 5% DMSO at a flow rate of ~250 nl/min (~600 bar/40°C column temperature). MS data was acquired with an Orbitrap Q Exactive High Field (HF) instrument in which survey scans were acquired at a resolution of 60,000 @ 400 m/z and the 20 most abundant precursors were selected for CID fragmentation. From raw MS files, peak list files were generated with MSConvert (Proteowizard V3.0.5211) using the 200 most abundant peaks/spectrum. The Mascot (V2.3, Matrix Science) search engine was used for protein identification at a false discovery rate of 1%, mass deviation of 10 ppm for MS1, and 0.06 Da (Q Exactive HF) for MS2 spectra, cys carbamidomethylation as fixed modification, met oxidation, and Gln deamidation as variable modification. Searches were performed against the UniProtKB human sequence database (retrieved 15.10.2014). Label-free quantitation was performed using MaxQuant Software (V1.5.3.8), and data further analysed using GraphPad Prism software (V7) and Microsoft Excel. Statistical test analysis of variance (ANOVA) (multiple comparison; original FRD method of Benjamini and Hochberg) was performed using GraphPad Prism software. The MS data was submitted to PRIDE for public repository with an internal ID of px-submission #469830.
 
-## TUBE pulldown
+### TUBE pulldown
 
 Endogenous poly-Ub conjugates were purified from cells using TUBE affinity reagents (LifeSensors, UM401). Cells were lysed in buffer containing 50 mM Tris-HCl pH 7.5, 0.15 M NaCl, 1 mM EDTA, 1% NP-40, 10% glycerol supplemented with complete protease inhibitor cocktail, PR-619, and 1,10-phenanthroline. Lysate was cleared by centrifugation, Agarose-TUBEs were added, and pulldown was performed for 16 hr at 4°C on rotation. The beads were then washed three times with 1 ml of ice-cold TBS-T, and bound material was eluted by mixing the beads with sample buffer and heating to 95°C for 5 min.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are represented as mean ± SEM. Statistical significance was calculated with the unpaired two-tailed Student’s t test, one-way or two-way ANOVA followed by multiple comparison test using GraphPad Prism software. A p value that was less than 0.05 was considered to be statistically significant for all data sets. Significant differences between experimental groups were: *p < 0.05, **p < 0.01, or ***p < 0.001. Biological replicates represent experiments performed on samples from separate biological preparations; technical replicates represent samples from the same biological preparation run in parallel.

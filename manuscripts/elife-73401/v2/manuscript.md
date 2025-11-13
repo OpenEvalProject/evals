@@ -55,7 +55,7 @@ Direct development has evolved independently multiple times in frogs (Duellman a
 
 Several immediate questions arise about this unique life history: Is early development and patterning (the process by which equivalent cells take on different identities) the same in direct-developing and metamorphosing frogs? To what extent do direct-developing frogs repeat tadpole development within the egg? In coquí, the answer seems to be that development is a mix of conserved and novel features. This unique combination of developmental features has made coquí an important model for the evolution of development, as well as a model for the evolution of the amniote egg, a key innovation in the evolutionary diversification of vertebrates.
 
-## Early development
+### Early development
 
 While fertilization in most frogs is external, fertilization occurs internally in coquí (Townsend et al., 1981; Townsend and Stewart, 1985). Because there is no independently feeding tadpole stage, the egg must contain all the nutrients needed to get the embryo to the juvenile froglet stage. As a result, coquí eggs are large: 3.5 mm as compared to the 1.3 mm eggs of Xenopus laevis.
 
@@ -63,7 +63,7 @@ Frogs in general have holoblastic, or complete, cleavage of the egg. Coquí main
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73401/elife-73401-fig5-v2.jpg)
 
-**Figure 5.:** E.coqui (A, C, E) and X. laevis (B, D, F) development.(A–B) Drawings of embryos after the first horizontal division. This horizontal division divides the embryo into animal (top) and vegetal (bottom) cells. The cap of E. coqui animal cells is much smaller than the animal cells in the early X. laevis embryo. (C) Dorsal view of the E. coqui neurula, which is shifted towards the animal pole compared to the X. laevis neurula (D; dorsal and lateral views shown). (E–F) Morphologically equivalent limb bud stages of the coquí embryo (E) and the X. laevis embryo (F). The coquí embryo is atop a large yolk mass, while limb buds emerge from a free-swimming X. laevis tadpole. Scale bars are 1 mm.
+**Figure 5.:** (A–B) Drawings of embryos after the first horizontal division. This horizontal division divides the embryo into animal (top) and vegetal (bottom) cells. The cap of E. coqui animal cells is much smaller than the animal cells in the early X. laevis embryo. (C) Dorsal view of the E. coqui neurula, which is shifted towards the animal pole compared to the X. laevis neurula (D; dorsal and lateral views shown). (E–F) Morphologically equivalent limb bud stages of the coquí embryo (E) and the X. laevis embryo (F). The coquí embryo is atop a large yolk mass, while limb buds emerge from a free-swimming X. laevis tadpole. Scale bars are 1 mm.
 
 Despite these differences, some early developmental features are conserved with metamorphosing frogs; germ cells are still located at the vegetal pole (Figure 5; Elinson et al., 2011) and neural crest cell migration is similar between E. coqui and metamorphosing frogs (Moury and Hanken, 1995). Xenopus is one of four model organisms (chick, mouse, zebrafish) that together have painted a picture of early vertebrate development in the past sixty years. Thus, coquí offer an important comparison for understanding the evolution of early vertebrate, and especially amphibian, development. Coquí also represents a natural ‘experiment’ in understanding how alterations of early molecular patterning impact later development.
 
@@ -71,7 +71,7 @@ The changes in early development and molecular organization of the coquí egg ha
 
 A final parallel between E. coqui and amniote development involves the nutritional endoderm. In the typical 1–2 mm amphibian egg, the whole egg becomes an embryo. In contrast, the nutritional endoderm is a novel coquí tissue made of cells that do not contribute to the embryonic intestine (as does regular endoderm) but do provide nutrition (Buchholz et al., 2007). This tissue has been proposed as an intermediate step in the evolution of the large amniote egg, as nutritional endoderm is like extraembryonic tissues in amniotes in that some oocyte material is used purely for nutrition and does not contribute to the embryo (Elinson, 2009). Therefore, coquí acts as a “missing link” or “transitional” model system to understand a possible evolutionary path between membranous eggs and the amniote egg.
 
-## Late development
+### Late development
 
 Post-embryonic development (metamorphosis) is shifted prior to hatching in coquí (into the period we call embryogenesis in coquí). Because coquí skip the tadpole stage, there are two potential trajectories of embryonic development: (1) larval structures never form, and adult features form directly, or (2) larval features develop and are remodeled into the adult morphology prior to hatching. Both of these cases are found for different structures in E. coqui.
 
@@ -83,7 +83,7 @@ Some larval features form briefly, and then are remodeled in the final third of 
 
 Finally, it is worth noting features of E. coqui development that are entirely novel and the typical tadpole-specific features that never form. The E. coqui tail is highly vascularized and may be used as a respiratory organ, a hypothesis supported by the observation that embryos undergoing accelerated development, including accelerated tail resorption, die if they cannot access air (ML, personal observation). The cement gland, which secretes a sticky mucus and allows tadpoles to secure themselves to substrate, and the lateral line, sensory cells that detect water movement and vibrations, never form (Schlosser et al., 1999). Altogether these observations inform our understanding of developmental modularity and constraint.
 
-## Endocrine regulation of development
+### Endocrine regulation of development
 
 Given their unique life history, E. coqui are also useful for understanding the evolution of endocrine regulation of development. Thyroid hormone (TH) controls the timing of post-embryonic metamorphosis. Events normally under TH control in metamorphosing frogs appear to be a mixture of TH-independent and TH-dependent in E. coqui. For example, tail resorption and aspects of metabolism are regulated by TH as in metamorphing frogs (Callery and Elinson, 2000; Elinson, 1994), but limb development and growth, dependent on TH in metamorphosing frogs, seems to have both an early TH-independent and a late TH-dependent period in coquí (Callery and Elinson, 2000; Elinson, 1994). The hypothesis that maternally derived TH (Elinson, 2013; Laslo et al., 2019) could influence the early TH-independent period has not yet been directly tested. Other aspects of endocrine regulation of development appear to be conserved in E. coqui and metamorphosing frogs, including interactions of TH and glucocorticoids, and the secretion of pituitary hormones by corticotropin-releasing hormone (Jennings et al., 2015; Kulkarni et al., 2010).
 
@@ -93,11 +93,13 @@ Coquí share many of the traits that make Xenopus species good models for transl
 
 ## Social behavior
 
-## Vocal communication
+### Vocal communication
 
 Vocal communication is central to the lives of most frogs. Among many possible choices, researchers were attracted to E. coqui due to their remarkably loud calls and sheer abundance. This initial choice was fortuitous, and studies of vocal communication in E. coqui have provided key insights.
 
 E. coqui have a rich vocal repertoire, adjusting their namesake call for distinct social and environmental contexts. In the context of territory defense, males increase call rate and volume and vary the number of syllables in their call, sometimes using single ‘co’ notes and sometimes appending additional ‘co’ and ‘qui’ syllables (e.g., ‘co-co-qui-qui’, ‘co-qui-qui-qui’, etc.; Narins and Capranica, 1976; Stewart and Rand, 1991; see Video 1). Vocal escalation progresses to physical attack if an intruder comes within less 50cm (Reyes-Campos, 1971). By contrast, during courtship males reduce call volume and occasionally drop the ‘qui’ syllable (Townsend and Stewart, 1986; see below for additional details of courtship behavior).
+
+![Video 1.](https://cdn.elifesciences.org/articles/73401/elife-73401-video1.mp4.jpg)
 
 Unlike in most frogs, female E. coqui also call. Female calls consist of one long note followed by a series of shorter notes that are of a distinct quality and quieter than male calls (Stewart and Rand, 1991). Females call to defend their daytime retreats and will physically attack intruders of both sexes (Stewart and Rand, 1991). In the wild coquí of any sex are found together in retreats only during courtship, and aggressive calls in both sexes likely allow frogs to appropriately space themselves and avoid costly physical encounters (Stewart and Bishop, 1994).
 
@@ -107,7 +109,7 @@ Taken together these observations are exciting as they provide a mechanism by wh
 
 In brief, the complex interplay of note identity, loudness, and sequence alongside auditory tuning and behavioral adaptations remain fertile ground for investigation of complex, multi-functional vocal communication systems in E. coqui. Excitingly, genomic technologies for quantification and manipulation can now be brought to bear on open questions concerning the mechanisms of both signal production and reception.
 
-## Courtship
+### Courtship
 
 Courtship in E. coqui is lengthy and involves a unique amplexus posture. Once a prospective mate arrives, the male leads the female to a nest site in his territory, moving 10-30cm ahead of the female and calling to encourage her to follow (Townsend and Stewart, 1986). This lead-and-follow continues until the pair reaches and enters a nest site. Once inside, the female inspects the site and – if she accepts – backs herself underneath the male (Townsend, 1989; Townsend and Stewart, 1986).
 
@@ -115,7 +117,7 @@ Unlike many amphibians, males do not clasp females. Instead, a female will lay h
 
 Over the course of oviposition, the female moves out from under the male, such that he comes to rest on the newly laid clutch. While courtship generally commences in the early evening (peak calling in males is between dusk and midnight; Woolbright, 1985), oviposition does not occur until the next morning (Townsend and Stewart, 1986). Both the male and female generally remain in the nest until dusk of the following day (i.e. nearly 24 hours after courtship is initiated), at which time the male becomes aggressive, calling and biting to chase the female out of the nest. Data suggest that extended courtship is required for females to complete ovulation prior to oviposition (Townsend and Stewart, 1986). This research establishes great potential for studying connections between behavior and physiology in coquí.
 
-## Parental care
+### Parental care
 
 Parental care is exhibited by only ~10% of anurans (Wells, 2007), making both the parental care and the direct development from embryo to froglet in E. coqui notable. Indeed, these unique aspects of coquí’s life history may be linked because they eliminate the need for embryos and tadpoles to be in water. Reduced reliance on water for reproduction is favored because it reduces predation risk to embryos and juveniles and allows frogs to take advantage of more varied habitats. Male coquí provide care to their offspring for 17–26 days until embryos hatch, often remaining with hatched froglets for an additional 1–6 days (Townsend et al., 1984). In the wild, males typically provide care to one clutch at a time and seldomly leave the nest during the brooding period (Townsend, 1989; Townsend et al., 1984). Care is critical for offspring survival and clutch failure is ~80% when males are removed due to desiccation, predation, and cannibalism (Townsend et al., 1984).
 

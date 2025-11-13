@@ -46,39 +46,39 @@ Here, we describe that chronic ethanol consumption facilitates pulmonary infecti
 
 ## Results
 
-## Chronic ethanol consumption did not induce systemic inflammation
+### Chronic ethanol consumption did not induce systemic inflammation
 
 To assess the relevance of ethanol chronic consumption, we characterized several parameters during chronic ethanol consumption on host before the infection (Figure 1A). First, we checked weight change, food and liquid consumption during ethanol treatment. We found that there was no weight change in mice during the treatment with ethanol (Figure 1B). Moreover, food and liquid consumption were diminished in ethanol-treated mice compared with control group (Figure 1C and D). Second, blood ethanol levels in mice were about 200 mg of ethanol per deciliter of whole blood while control group ethanol level were not detectable, measured by gas chromatography after 12 weeks of ethanol treatment, (Figure 1E). In order to verify if ethanol consumption affected hematopoiesis we analyzed bone marrow precursors and blood cell counts. Mononuclear and neutrophil counts in peripheral blood did not show differences between groups (Figure 1F). Chronic ethanol consumption did not affect granulocyte progenitors in bone marrow (Supplementary file 1). In addition, no changes were observed in ALT levels in mice serum after the ethanol treatment compared to the control mice group (data not shown). Finally, serum levels of inflammatory mediators, such as TNF-α, IL-1β and CXCL1, have not been changed in ethanol-fed mice (Figure 1G–I).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig1-v2.jpg)
 
-**Figure 1.:** (A) Experimental design: C57BL/6 mice received ethanol 5% (v/v) in the first week, followed by 10% (v/v) in the second week (to help mice acclimate with this intervention) and were treated during 10 weeks with ethanol 20% (v/v) in their drinking water. Control group received water. (B–D) During treatment, weight change, food and liquid consumption were measured. Data are presented as Mean ± SD (15 mice per group) *Significantly different (p<0.05) in t test. After ethanol treatment, blood was collected to evaluate (E) blood ethanol levels, (F) differential cell count and (G) TNF-α, (H) IL-1β and (I) CXCL1 in serum. Data are presented as Mean ± SD (4 to 9 mice per group) and analyzed with ANOVA test. Please, also see Supplementary file 1 and Figure 1—source data 1.Figure 1—source data 1.
+**Figure 1.:** (A) Experimental design: C57BL/6 mice received ethanol 5% (v/v) in the first week, followed by 10% (v/v) in the second week (to help mice acclimate with this intervention) and were treated during 10 weeks with ethanol 20% (v/v) in their drinking water. Control group received water. (B–D) During treatment, weight change, food and liquid consumption were measured. Data are presented as Mean ± SD (15 mice per group) *Significantly different (p<0.05) in t test. After ethanol treatment, blood was collected to evaluate (E) blood ethanol levels, (F) differential cell count and (G) TNF-α, (H) IL-1β and (I) CXCL1 in serum. Data are presented as Mean ± SD (4 to 9 mice per group) and analyzed with ANOVA test. Please, also see Supplementary file 1 and Figure 1—source data 1.
 
-## Chronic ethanol consumption increased lethality and impaired pulmonary fungal clearance after A. fumigatus infection
+### Chronic ethanol consumption increased lethality and impaired pulmonary fungal clearance after A. fumigatus infection
 
 After ethanol treatment, mice were intranasally infected with A. fumigatus conidia (Figure 2A). Ethanol-treated mice showed an increased lethality compared to control mice group (Figure 2B). In addition, weight loss was significantly higher in ethanol treated mice from days 3 to 7 after infection (Figure 2C). These clinical signs were accompanied by higher pulmonary fungal burden in ethanol-fed mice, demonstrating an impaired fungal clearance. Moreover, we were also able to identify hyphae into the airways of infected ethanol-treated mice, showed by red arrows at 24 hr after infection compared to control group (Figure 2D–F). Altogether, these results demonstrate that chronic ethanol consumption increased susceptibility to pulmonary A. fumigatus infection along with an impaired ability to clear the pathogen.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig2-v2.jpg)
 
-**Figure 2.:** A. fumigatus infection.(A) Experimental design: C57BL/6 mice were treated for 12 weeks with ethanol. The next day after the end of the treatment, mice were intranasally infected with 3 × 108 conidia of A. fumigatus. (B) Comparative lethality curves with P = <0.0001 in Log-rank (Mantel-Cox) test. (C) Comparative weight change curves of ethanol-fed group and control group were performed (18 mice per group). Right lungs were collected 24 and 48 hr after the infection. Homogenate from right lungs were plated and CFUs were quantified. Left lungs were fixed with formaldehyde 4% and embedded in paraffin. Sections were stained with GMS and the percentage of germlings was counted (6–16 mice per group) P value indicated in the figure in t test. (D) Representative slides of GMS staining. The insets in 24 hr images represent magnification to show germlings (red arrows) into lung tissue. (E) Fungal load and (F) fungal germination in lungs p=0.0389 in t test. Bars represent 100 µm.
+**Figure 2.:** (A) Experimental design: C57BL/6 mice were treated for 12 weeks with ethanol. The next day after the end of the treatment, mice were intranasally infected with 3 × 108 conidia of A. fumigatus. (B) Comparative lethality curves with P = <0.0001 in Log-rank (Mantel-Cox) test. (C) Comparative weight change curves of ethanol-fed group and control group were performed (18 mice per group). Right lungs were collected 24 and 48 hr after the infection. Homogenate from right lungs were plated and CFUs were quantified. Left lungs were fixed with formaldehyde 4% and embedded in paraffin. Sections were stained with GMS and the percentage of germlings was counted (6–16 mice per group) P value indicated in the figure in t test. (D) Representative slides of GMS staining. The insets in 24 hr images represent magnification to show germlings (red arrows) into lung tissue. (E) Fungal load and (F) fungal germination in lungs p=0.0389 in t test. Bars represent 100 µm.
 
-## Ethanol consumption altered cytokine release in airways in mice after A. fumigatus infection
+### Ethanol consumption altered cytokine release in airways in mice after A. fumigatus infection
 
 Next, we assessed cytokine and chemokine levels by ELISA after A. fumigatus infection to determine whether levels of inflammatory mediators in BALF supernatants were altered after ethanol consumption. We found no significant differences in the levels of neutrophil chemotactic mediator CXCL1 after A. fumigatus infection in BALF of ethanol-treated mice compared to control group (Figure 3A). Interestingly, another CXCR2 agonist and neutrophil chemotactic mediator, CXCL2 were increased at 24 hr of infection in BAL fluid of ethanol-treated mice compared to control mice (Figure 3B). Alcohol consumption declined IL-17 levels after 24 hr of infection (Figure 3C). We also observed no differences in TNF levels between control and ethanol-fed mice group (Figure 3D). Moreover, ethanol consumption was able to down modulate IL-1β and IL-10 levels after fungal infection (Figure 3E and F). These results suggest that chronic ethanol consumption dysregulate cytokine and chemokine release post A. fumigatus infection.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig3-v2.jpg)
 
-**Figure 3.:** A. fumigatus infection.BALF supernatants were harvested at 24 and 48 hr after infection and used for ELISA assay. (A) CXCL1, (B) CXCL2, (C) IL-17, (D) TNF, (E) IL-1β and (F) IL-10 levels in BALF. Experiments were assayed in triplicate. Data are presented as Mean ± SD (3 to 9 mice per group). *p<0.0247 in ANOVA test. Please, also see Figure 3—source data 1.Figure 3—source data 1.A. fumigatus infection.
+**Figure 3.:** BALF supernatants were harvested at 24 and 48 hr after infection and used for ELISA assay. (A) CXCL1, (B) CXCL2, (C) IL-17, (D) TNF, (E) IL-1β and (F) IL-10 levels in BALF. Experiments were assayed in triplicate. Data are presented as Mean ± SD (3 to 9 mice per group). *p<0.0247 in ANOVA test. Please, also see Figure 3—source data 1.
 
-## Ethanol consumption impaired neutrophil and lymphocyte recruitment into the airways during A. fumigatus infection
+### Ethanol consumption impaired neutrophil and lymphocyte recruitment into the airways during A. fumigatus infection
 
 To clarify whether the diminished fungal clearance is due to an impaired inflammatory response, we next observed cell influx into the site of A. fumigatus infection. Although both groups exhibited a large recruitment of total cells into the airways, ethanol-treated mice had a significant reduction of recruited cells, compared to control group 24 hr after infection. However, at 48 hr after infection, there was a similar cell migration into the site of infection in both groups (Figure 4A). We demonstrate that almost all cells migrated to the airways represent neutrophils, one of the most important cells involved in killing and control of A. fumigatus infection (Erwig and Gow, 2016). Neutrophils and lymphocytes into airways were significantly decreased in ethanol-treated mice at 24 hr post infection (Figure 4B and C). In contrast, there were no differences in macrophages and eosinophils recruited to the site of infection (Figure 4D and E). Regarding to inflammatory cells recruited to lung tissue, we also observed a diminished neutrophils migration into the lung parenchyma in ethanol-treated mice, by MPO measurement, at 24 hr after infection (Figure 4F). Similar to alveoli, eosinophils and macrophages in pulmonary tissue exhibited no differences after A. fumigatus infection (Figure 4G and H). In addition, both ethanol-treated and control groups exhibited similar number of leukocytes in blood (Figure 4I). Besides, we characterized the populations of lymphocyte migrating to the airways of infected mice. We assessed CD3+CD4+IL17+ cells and results demonstrate that chronic ethanol consumption strongly reduced lymphocytes and IL-17 production in the site of infection after 24 hr of infection (Figure 4J–L). These results indicate that chronic ethanol consumption mostly affected specifically neutrophils recruitment to airways after A. fumigatus infection.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig4-v2.jpg)
 
-**Figure 4.:** A. fumigatus infection.After ethanol treatment, mice were infected with A. fumigatus. BALF and lungs were harvested at 24 and 48 hr after infection for inflammatory cell infiltrates determination. (A) Total cells, (B) Neutrophil, (C) Macrophage, (D) Lymphocyte, (E) Eosinophil counts in BALF. (F) MPO, (G) NAG and (H) EPO assays in lungs. (I) Blood leukocyte count/mL. BALF cells were labeled with specific antibodies for flow cytometry. (J) Gate strategy for CD3+CD4+ T cells. (K) CD3+CD4+ cells and (L) CD3+CD4+IL-17+ cells in BALF. Experiments were assayed in triplicate. Data are presented as mean ± SD (4 to 7 mice per group). *Significantly different (p<0.01) in ANOVA test. Please, also see Figure 4—source data 1.Figure 4—source data 1.A. fumigatus infection.
+**Figure 4.:** After ethanol treatment, mice were infected with A. fumigatus. BALF and lungs were harvested at 24 and 48 hr after infection for inflammatory cell infiltrates determination. (A) Total cells, (B) Neutrophil, (C) Macrophage, (D) Lymphocyte, (E) Eosinophil counts in BALF. (F) MPO, (G) NAG and (H) EPO assays in lungs. (I) Blood leukocyte count/mL. BALF cells were labeled with specific antibodies for flow cytometry. (J) Gate strategy for CD3+CD4+ T cells. (K) CD3+CD4+ cells and (L) CD3+CD4+IL-17+ cells in BALF. Experiments were assayed in triplicate. Data are presented as mean ± SD (4 to 7 mice per group). *Significantly different (p<0.01) in ANOVA test. Please, also see Figure 4—source data 1.
 
-## Chronic ethanol consumption increased lung pathology after A. fumigatus infection
+### Chronic ethanol consumption increased lung pathology after A. fumigatus infection
 
 We assessed histopathology to determine the effect of ethanol consumption in pulmonary tissue after infection. Tissue sections of infected mice revealed a massive leukocyte recruitment into the lungs at 24 hr after infection, in which the inflammatory infiltrate covers a large part of the pulmonary parenchyma structure, including alveoli and perivascular regions that decreases after 48 hr of infection in the control group. The cellular infiltrate tissue remains more prominent after 48 hr of infection only in ethanol-fed mice (Figure 5A). Histopathology score results showed that both ethanol-treated and control groups had similar levels of inflammatory infiltrate, interstitial and alveolar edema and hemorrhage scores at 24 hr of infection. However, after 48 hr of infection, ethanol consumption showed a remaining cellular infiltrate, higher edema and hemorrhage, which increased the total pathology scores (Figure 5B–D).
 
@@ -86,25 +86,29 @@ We assessed histopathology to determine the effect of ethanol consumption in pul
 
 **Figure 5.:** Lungs were harvested at 24 and 48 hr after infection fixed with formaldehyde 4% and embedded in paraffin. (A) Sections were stained with Hematoxylin and Eosin. Samples were graded on a 0 to 5-point scale score for (B) inflammatory infiltrate, (C) interstitial and alveolar edema, (D) hemorrhage and (E) total histopathologic score. Experiments were assayed in triplicate. Data are presented as mean ± SD (with 2 to 6 mice per group). *p<0.0142 in ANOVA test. Bars represent 100 µm.
 
-## Chronic ethanol consumption reduced leukocyte rolling, adhesion, and chemotaxis in mouse neutrophils
+### Chronic ethanol consumption reduced leukocyte rolling, adhesion, and chemotaxis in mouse neutrophils
 
 In order to investigate the transmigration process of neutrophils upon chemotaxis in vivo, we first performed an intravital microscopy to visualize migratory cells (Figure 6—source data 1) (Figure 6-rich media videos). Intracrostal administration of LPS was not able to induce a strong increase in rolling and adherence of cells to post capillary venules in ethanol-fed group after 2 hr of stimulation, compared to stimulated control group (Figure 6A–D). In addition, to confirm the impaired migratory ability of neutrophils was caused by ethanol consumption in mice, we performed ex vivo chemotaxis assay towards CXCL2, with mouse bone marrow-derived neutrophils (Figure 6E). As we expected because of previously results showed in Figure 4B, neutrophils from ethanol-treated mice had an impaired migration towards the chemokine stimuli compared to neutrophils from control non-treated mice (Figure 6F). Taken together, these results demonstrate that chronic ethanol ingestion can affect neutrophil rolling, adhesion and recruitment in different tissues.
 
-## Chronic ethanol consumption impairs neutrophil’s activation and recruitment by modulation of CD11b, CD62L and down regulation of CXCR2 in these cells during A. fumigatus infection
+![Figure 6.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design: after the chronic ethanol treatment, mice received an intracrostal injection of LPS. After 2 hr, mice cremaster from mouse was exposed to examine the microcirculation by intravital microscopy. Post capillaries venules were recorded. (B) Representative images from the recorded videos (please see the rich media). (C) Number of rolling cells and (D) Number of adherent cells were counted in the videos. (E) Ex vivo neutrophil chemotaxis. Experimental design: after ethanol treatment, BM-derived neutrophils were separated by density gradient and a chemotaxis assay in a Boyden chamber towards CXCL2 was performed. (F) Number of migrated neutrophils in 60 min. Data are presented as Mean ± SD (3 to 5 mice per group) *Significantly different (p<0.0028) in ANOVA test. Please, also see Figure 6—source data 1 and Figure 6-rich media videos.
+
+### Chronic ethanol consumption impairs neutrophil’s activation and recruitment by modulation of CD11b, CD62L and down regulation of CXCR2 in these cells during A. fumigatus infection
 
 Neutrophils chemotaxis and recruitment is a complex process that requires leukocyte-endothelial interactions as well as inflammatory mediators’ release (Kolaczkowska and Kubes, 2013). Moreover, the main regulator of neutrophil migration in acute inflammation is CXCR2. To further investigate whether the impaired neutrophil migration is due a deficient neutrophil activation status during infection, we accessed the expression of the markers CD11b, CD62L and CXCR2 in circulating neutrophils after A. fumigatus infection using flow cytometry. While CD11b is mobilized from specific granules to the cell surface, enzymatic shedding in activated polymorphonuclear (PMN) rapidly down regulates CD62L. Both markers have their constitutive expression in resting PMNs. We found that neutrophils activation status was compromised, with CD62L up regulation and CD11b down regulation, in the peripheral blood neutrophils of infected ethanol-treated mice compared to infected non-treated mice (Figure 7A–C). In sepsis, the reduction of neutrophils migration is related to the down regulation of CXCR2 protein expression on circulating neutrophils surface (Alves-Filho et al., 2009). Indeed, CXCL1 serum levels were strongly augmented in ethanol-treated mice compared to the control group at 24 hr post infection (Figure 7D). We next analyzed the role of chronic ethanol intake in regulating CXCR2 expression in circulating neutrophils. At 24 hr after A. fumigatus infection, ethanol-treated mice exhibited significantly fewer circulating neutrophils expressing CXCR2 in the surface compared to the non-treated group (Figure 7E and F).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig7-v2.jpg)
 
-**Figure 7.:** A. fumigatus infection.After ethanol treatment and A. fumigatus, blood was harvested at 24 hr post infection. Neutrophils were labeled with specific antibodies for flow cytometry. (A) Gate strategy to analyze neutrophils. Neutrophils were gated by size and cellular complexity and then gated again as Ly6G+CD11b+ cells. (B) CD62L (*p=0.001) and (C) CD11b expression in circulating neutrophils (*p=0.0479). (D) Serum levels of CXCL1 were measured by ELISA assay after 24 hr of infection (*p = 0.0001). (E) Ly6G+CXCR2+ cells (*p=0.0489) and (F) MFI of CXCR2 expression in blood (*p=0.007). Experiments were done at least twice. Data are presented as mean ± SD (3 to 8 mice per group). Analysis were made by ANOVA test. Dashed line represents basal levels of non-infected groups. Please, also see Figure 7—source data 1.Figure 7—source data 1.
+**Figure 7.:** After ethanol treatment and A. fumigatus, blood was harvested at 24 hr post infection. Neutrophils were labeled with specific antibodies for flow cytometry. (A) Gate strategy to analyze neutrophils. Neutrophils were gated by size and cellular complexity and then gated again as Ly6G+CD11b+ cells. (B) CD62L (*p=0.001) and (C) CD11b expression in circulating neutrophils (*p=0.0479). (D) Serum levels of CXCL1 were measured by ELISA assay after 24 hr of infection (*p = 0.0001). (E) Ly6G+CXCR2+ cells (*p=0.0489) and (F) MFI of CXCR2 expression in blood (*p=0.007). Experiments were done at least twice. Data are presented as mean ± SD (3 to 8 mice per group). Analysis were made by ANOVA test. Dashed line represents basal levels of non-infected groups. Please, also see Figure 7—source data 1.
 
-## Ethanol consumption decreases neutrophil functions of phagocytosis, killing and oxidative burst after A. fumigatus challenge
+### Ethanol consumption decreases neutrophil functions of phagocytosis, killing and oxidative burst after A. fumigatus challenge
 
 For the proper killing of A. fumigatus, fungal phagocytosis and ROS production by neutrophils are key events (Philippe et al., 2003). In this sense, we accessed phagocytosis and killing of A. fumigatus conidia by bone marrow-derived neutrophils from ethanol-treated and non-treated mice. We found that phagocytosis was significantly reduced in ethanol-treated mice either in vivo, evaluated by BALF recruited cells, or ex vivo, in bone marrow neutrophils, compared to control group (Figure 8A and B). Fungal killing was also reduced in ethanol intake mouse neutrophils (Figure 8C). Moreover, to evaluate the effect of chronic ethanol consumption in the promotion of respiratory burst of bone marrow-derived neutrophils we performed chemiluminescence experiments using luminol, which served as a probe for superoxide (O2●−)49. We observed that neutrophils from ethanol-fed mice produced lower levels of ROS triggered by A. fumigatus conidia compared to neutrophils from non-treated mice (Figure 8D). These results suggest that phagocytosis, killing and ROS production functions in neutrophils were affected by chronic ethanol consumption.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig8-v2.jpg)
 
-**Figure 8.:** A. fumigatus stimuli.(A) Conidial phagocytosis was determined in BALF (*p=0.007). (B–D) After ethanol treatment, BM-derived neutrophils were separated by density gradient and incubated with A. fumigatus conidia. (B) Ex vivo phagocytosis was assessed by cytospin preparations from BALFs (*p=0.0013). (C) Killing assay was evaluated by cell lysis with water, the diluted samples were plated in fungal medium and colony-forming units (CFU) were determined after overnight incubation (*p=0.0238). (D) Luminometry assay was performed to evaluate neutrophil-mediated ROS production and area under curve analysis. (*p=0.057). Data are presented as mean ± SD (3 to 6 mice per group). Analysis were made by t student test.
+**Figure 8.:** (A) Conidial phagocytosis was determined in BALF (*p=0.007). (B–D) After ethanol treatment, BM-derived neutrophils were separated by density gradient and incubated with A. fumigatus conidia. (B) Ex vivo phagocytosis was assessed by cytospin preparations from BALFs (*p=0.0013). (C) Killing assay was evaluated by cell lysis with water, the diluted samples were plated in fungal medium and colony-forming units (CFU) were determined after overnight incubation (*p=0.0238). (D) Luminometry assay was performed to evaluate neutrophil-mediated ROS production and area under curve analysis. (*p=0.057). Data are presented as mean ± SD (3 to 6 mice per group). Analysis were made by t student test.
 
 ## Discussion
 
@@ -124,54 +128,211 @@ To conclude, the findings presented here indicate a new paradigm in how chronic 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/58855/elife-58855-fig9-v2.jpg)
 
-**Figure 9.:** A. fumigatus infection.In normal conditions, infection with A. fumigatus in mice causes a huge inflammatory response, characterized by neutrophil chemokines release. The recruited neutrophils clear the infection by phagocytosis and ROS-mediated killing. In contrast, in a condition of chronic ethanol consumption, despite the correct induction of inflammatory response, there is an increase of CXCR2 ligands in blood flow, causing CXCR2 downregulation. This leads to lower neutrophils recruitment, culminating in substantial fungal burden into the lungs from ethanol-fed mice.
+**Figure 9.:** In normal conditions, infection with A. fumigatus in mice causes a huge inflammatory response, characterized by neutrophil chemokines release. The recruited neutrophils clear the infection by phagocytosis and ROS-mediated killing. In contrast, in a condition of chronic ethanol consumption, despite the correct induction of inflammatory response, there is an increase of CXCR2 ligands in blood flow, causing CXCR2 downregulation. This leads to lower neutrophils recruitment, culminating in substantial fungal burden into the lungs from ethanol-fed mice.
 
 ## Materials and methods
 
-## Ethics statement and mouse model of chronic ethanol consumption
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Multidisciplinary center for Biological Investigation on Laboratory Animal Science (CEMIB) -Unicamp</td>
+      <td>C57BL/6JUnib</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Aspergillus fumigatus)</td>
+      <td>Strain A1163</td>
+      <td>A. fumigatus CEA17 isolate (CEA10 derivative) and converted to pyrG+ via A. niger pyrG gene ectopic insertion Fedorova et al., 2008; Malacco et al., 2019.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Primary bone marrow neutrophils</td>
+      <td>This paper</td>
+      <td>C57BL/6JUnib</td>
+      <td>Freshly isolated from C57BL/6J (M. musculus)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine MIP-2 (CXCL2)</td>
+      <td>PeproTech</td>
+      <td>Cat# 250–15</td>
+      <td>Chemotaxis (20 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified NA/LE CD16/CD32 Clone 2.4G2 - FC Block (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553140</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD3-FITC (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555274</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD4-APC (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553051</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IL-17a-PE (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 559502</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ly6G-BV421 (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562737</td>
+      <td>FACS (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CXCR2-PE (Rat monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# FAB2164P</td>
+      <td>FACS (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD62L-APC (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553152</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD11b-FITC (Rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553310</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNF-a ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-1b ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CXCL1 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse CXCL2 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-17 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-10 ELISA kit</td>
+      <td>R and D Systems</td>
+      <td>Cat# DY417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement and mouse model of chronic ethanol consumption
 
 All animal experiments received prior approval from the Animal Ethics Committee (CEUA) of Universidade Federal de Minas Gerais (UFMG), Brazil (Protocol number: 4/2015). Male C57BL/6J mice were randomly allocated into experimental groups. Mice were maintained in specific pathogen-free conditions. The chronic ethanol consumption model used was previously described (Ceron et al., 2018; Simplicio et al., 2017). Briefly, mice received ethanol 5% (v/v) in the first week, followed by 10% (v/v) in the second week (to help mice acclimate with this intervention) and were treated during 10 weeks with 20% (v/v) of ethanol in their drinking water. Control group received water. This protocol replicates blood ethanol levels after chronic ethanol consumption in human subjects, as described in studies with C57BL/6J or BALB/c mice (Ceron et al., 2018; Simplicio et al., 2017; Urso et al., 1981). Weight change, food and liquid consumption were measured weekly during ethanol treatment.
 
-## Cytokine and chemokine measurement
+### Cytokine and chemokine measurement
 
 Cytokine and chemokine levels (TNF-α, IL-1β, CXCL1, CXCL2, IL-17, IL-10) were quantified in BAL, serum or plasma fluid using DuoSet ELISA kits (R and D Systems), in accordance to the manufacturer’s instructions.
 
-## Determination of blood ethanol levels
+### Determination of blood ethanol levels
 
 The determination of blood ethanol levels was made as previously described (Gonzaga et al., 2015). Briefly, mice were anesthetized and 100 μL of blood was collected and transferred into headspace vials. Blood ethanol levels were measured by gas chromatograph using a gas chromatographer as previously described (Ceron et al., 2018).
 
-## Mice infection
+### Mice infection
 
 To determine the impact of chronic alcohol intake in fungal pulmonary infection, male C57BL/6J mice were treated for 12 weeks. After the last day of treatment, mice were infected intranasally with Aspergillus fumigatus A1163 strain (Fedorova et al., 2008). The fungus was grown in complete media for 48 hr at 37°C (Malacco et al., 2019). Fungal conidia were harvested by washing the media with sterile phosphate-buffered saline (PBS). After filtering, conidia were centrifuged at 1400 x g resuspended and counted in Neubauer chamber. Mice were infected with 3 × 108 conidia/animal, prepared in PBS.
 
-## BAL and tissue extraction
+### BAL and tissue extraction
 
 After 24 or 48 hr of infection, mice were anesthetized with ketamine (100 mg/kg) and xilazine (6 mg/Kg) and blood smear and serum or plasma were collected. After that, mice were euthanized and bronchoalveolar lavage fluid (BALF) was harvested as previously described (Malacco et al., 2019). BALF total cell counts were determined by counting leukocytes in Neubauer chamber. Differential cell count and in vivo phagocytosis count were obtained from cytospin preparations (Shandon III). BALF supernatants were used for cytokines, chemokines and total protein measurements. Protein amounts were quantified in BALF samples using the Bradford assay (Bradford, 1976).
 
-## Lung pathology analysis
+### Lung pathology analysis
 
 At the indicated time points, lungs were collected. The right lobes were removed and frozen for subsequent analysis of myeloperoxidase (MPO) (Huang et al., 2016), N-acetyglucosaminidase (NAG) (Reiner et al., 1981), eosinophil peroxidase (EPO) (Strath et al., 1985) or measurement of fungal burden. The left lobes were fixed in formalin 4% (v/v) for histopathological analysis. Formalin-fixed tissue was dehydrated gradually in ethanol, embedded in paraffin, and 4 µm sections were stained with Hematoxylin and Eosin (H and E) or Grocott’s methenamine silver (GMS). The total histopathology score considered inflammatory infiltrate, interstitial and alveolar edema and hemorrhage (Hubbs et al., 1997). The percentage of germination of A. fumigatus conidia was counted in 200 to 300 fungal conidia in GMS-stained slides at x 100 magnification microscope.
 
-## Flow cytometry
+### Flow cytometry
 
 Leukocytes obtained from BAL or blood samples were subjected to hypotonic lysis to remove residual erythrocytes, as described previously (Russo et al., 2009). Briefly, cells were treated with Fc block (R and D Systems), labeled with relevant antibodies, namely: CD3 - fluorescein isothiocyanate (FITC), CD4 - APC, IL-17 - phycoerythrin (PE), Ly6G - brilliant violet 421 (BV421), CXCR2 - PE, CD62L – APC and CD11b – FITC or isotype control. At least 30,000 events were acquired in a FACScan cytometer, and data were analyzed using FlowJo (Tree Star, Ashland, OR, USA) software. The relevant populations were gated, using accepted criteria for granularity, and sized and evaluated for staining of relevant surface and intracellular markers.
 
-## Intravital microscopy
+### Intravital microscopy
 
 The mouse cremaster preparation was used to study the behavior of leukocytes in the microcirculation and adjacent connective tissue, as previously described (Pinho et al., 2007). Briefly, 2 hr prior the surgery, mouse cremaster muscle were injected with LPS (250 ng/mL) diluted in saline. Then an incision was made in the scrotal skin to expose the cremaster muscle, which was then carefully removed from the associated fascia. A lengthwise incision was made on the ventral surface of the cremaster muscle using a cautery. The testicle and the epididymis were separated from the underlying muscle and were moved into the abdominal cavity. The muscle was then spread out over an optically clear viewing pedestal and was secured along the edges with a 4–0 suture. The exposed tissue was superfused with warm PBS. An intravital microscope (Olympus BX50F4) with x 20 magnification objective lens and x 10 times magnification eyepiece was used to examine the cremasteric microcirculation. A video camera (5100 HS; Panasonic) was used to project the images onto a monitor, and the images were recorded for playback analysis. The numbers of rolling and adherent leukocytes were determined offline during the video playback analyses. Leukocytes were considered adherent to the venular endothelium if they remained stationary for at least 30 s. Rolling leukocytes were defined as white cells moving at a velocity slower than that of the erythrocytes within a given vessel.
 
-## BM-derived neutrophils, phagocytosis and killing of fungal conidia
+### BM-derived neutrophils, phagocytosis and killing of fungal conidia
 
 After isolation of mouse bone marrow (BM) from femur and tibia in RPMI 1640 medium, neutrophils were separated by density gradient centrifugation using Histopaque 1077 (density, 1.077 g/ml) in a 15 ml conical tube. Then, erythrocytes were lysed using ACK lysing buffer and the neutrophils were counted. Neutrophils purity was over than 80% (Swamydas and Lionakis, 2013). Phagocytosis and killing assay were performed by incubation of BM-derived neutrophils from mice treated and non-treated with ethanol with A. fumigatus conidia for 4 hr (phagocytosis) or 6 hr (killing) at 37° with 5% of CO2 in the ratio of 5:1. Phagocytosis was evaluated in cytospin preparations. To determine A. fumigatus killing, cells were lysed with distilled water and the diluted samples were plated in fungal medium and colony-forming units (CFU) were determined after overnight incubation at 37°C, and the percentage of killing was calculated as a percentage of the viability after incubation without neutrophils.
 
-## ROS detection
+### ROS detection
 
 Luminometry assays were performed to evaluate the production of ROS by BM-derived neutrophils (Goes et al., 2016). Neutrophils (1 × 106 cells/well) were resuspended in complete RPMI medium without phenol red. Then the cells were plated in 96 well opaque plates (NUNC, Rochester, NY, USA) with 0.05 mM luminol (5-Amino-2,3-dihydro-1,4-phthalazinedione; Sigma-Aldrich) and A. fumigatus conidia in the proportion of 10 conidia to one neutrophil. Measurements were taken for 60 min with 2 min interval. Production of ROS was assayed by the light intensity generated by the reaction between ROS and luminol and expressed as fluorescent relative units.
 
-## Ex vivo chemotaxis assay
+### Ex vivo chemotaxis assay
 
 A modified Boyden chamber assay to examine the neutrophil chemoattractant response to CXCL-2 (kindly provided by Dr. José Carlos Alves-Filho, Universidade de São Paulo, Ribeirão Preto, Brazil) was performed using a 48-well microchamber (Neuro Probe) as previously described (Pinho et al., 2007). Murine bone marrow neutrophils were isolated as above described and resuspended in RPMI. Recombinant mouse CXCL-2 (20 ng/mL) diluted in running buffer (for wells containing neutrophils) or appropriate buffer control was added to the lower chambers of the apparatus. A 5-µm-pore polycarbonate membrane (Neuro Probe) was placed between the upper and lower chambers, and 5 × 104 cells in a volume of 50 µL were added to the top chambers of the apparatus. Cells were allowed to migrate into the membrane for 1 hr per treatment at 37°C with 5% CO2. Following incubation, the chamber was disassembled and the membrane was scraped and washed three times in PBS to remove nonadherent cells before being fixed in methanol and stained using the Diff-Quik system (Dade Behring). Each well-associated membrane area was scored using light microscopy to count the intact cells present in five random fields.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were made at least twice (biological replication) by independent experiments. The sample size estimation was done with G*Power 3.1 Software (Jacob Cohen's A power primer, 1992 in Psychological Bulletin Journal). Statistical analysis was performed with Graph Pad Prism six software (Graph Pad Prism Software, Inc, Sandiego, CA). Data are presented as the mean ± SD and were analyzed using One-way analysis of variance (ANOVA) followed by Tukey post-test to compare different groups. Student’s t test was used to compare two groups. Survival analysis was made by Log Rank test. Statistical significance was set as < 0.05. For more information, please see the transparent reporting form.

@@ -21,13 +21,13 @@
 
 ## Abstract
 
-10.7554/eLife.39575.001 Fast synaptic inhibition in the nervous system depends on the transmembrane flux of Cl - ions based on the neuronal Cl - driving force. Established theories regarding the determinants of Cl - driving force have recently been questioned. Here, we present biophysical models of Cl - homeostasis using the pump-leak model. Using numerical and novel analytic solutions, we demonstrate that the Na + /K + -ATPase, ion conductances, impermeant anions, electrodiffusion, water fluxes and cation-chloride cotransporters (CCCs) play roles in setting the Cl - driving force. Our models, together with experimental validation, show that while impermeant anions can contribute to setting [Cl - ] i in neurons, they have a negligible effect on the driving force for Cl - locally and cell-wide. In contrast, we demonstrate that CCCs are well-suited for modulating Cl - driving force and hence inhibitory signaling in neurons. Our findings reconcile recent experimental findings and provide a framework for understanding the interplay of different chloride regulatory processes in neurons.
+Fast synaptic inhibition in the nervous system depends on the transmembrane flux of Cl- ions based on the neuronal Cl- driving force. Established theories regarding the determinants of Cl- driving force have recently been questioned. Here, we present biophysical models of Cl- homeostasis using the pump-leak model. Using numerical and novel analytic solutions, we demonstrate that the Na+/K+-ATPase, ion conductances, impermeant anions, electrodiffusion, water fluxes and cation-chloride cotransporters (CCCs) play roles in setting the Cl- driving force. Our models, together with experimental validation, show that while impermeant anions can contribute to setting [Cl-]i in neurons, they have a negligible effect on the driving force for Cl- locally and cell-wide. In contrast, we demonstrate that CCCs are well-suited for modulating Cl- driving force and hence inhibitory signaling in neurons. Our findings reconcile recent experimental findings and provide a framework for understanding the interplay of different chloride regulatory processes in neurons.
 
 ## Introduction
 
 Fast synaptic inhibition in the nervous system is mediated by type A γ-aminobutyric acid receptors (GABAARs) and glycine receptors (GlyRs), which are primarily permeable to chloride (Cl-) (Farrant and Kaila, 2007). Together with the neuronal membrane potential, the transmembrane gradient for Cl- sets the driving force for Cl- flux across these receptors, controlling the properties of inhibitory signaling. Modification of neuronal intracellular Cl- concentration ([Cl-]i) has been shown to play a causative role in multiple neurological diseases including epilepsy, chronic pain, schizophrenia and autism (Rivera et al., 2004; Huberfeld et al., 2007; Price et al., 2009; Hyde et al., 2011; Tyzio et al., 2014). Similarly, intracellular Cl- is thought to be modulated during brain development so that GABAergic transmission contributes optimally to the construction of neural circuits (Ben-Ari, 2002). Given the importance of Cl- for brain function and dysfunction, the cellular mechanisms that control its transmembrane gradient and driving force are of considerable interest.
 
-Plasmalemmal Cl- transporters, in particular cation-chloride cotransporters (CCCs), are understood to be the major mechanism by which neurons regulate the driving force for Cl- permeable anion channels (Kaila et al., 2014). Recently, it has been suggested that in fact impermeant anions control local [Cl-]i and driving force (Glykys et al., 2014), rather than the CCCs. The majority of intracellular anions are impermeant to the neuronal membrane; these include ribo- and deoxynucleotides, intracellular proteins and metabolites (Burton, 1983). Impermeant anions induce what is known as the Donnan (or Gibbs-Donnan) effect (Hill, 1956; Sperelakis, 2012) – an uneven distribution of impermeant molecules across the membrane which is osmotically unstable. Without active ion transport to counter this effect, neurons would swell and burst (Kay, 2017). Animal cells, including neurons, maintain cell volume in the presence of impermeant anions by using the Na+/K+-ATPase to pump Na+ out of the cell and K+ in, along with the passive movement of water and other ions (Tosteson and Hoffman, 1960; Armstrong, 2003; Liang et al., 2007; Kay, 2017). This pump-leak mechanism, whilst stabilizing cell volume, also establishes the negative resting membrane potential and transmembrane Na+ and K+ gradients, which serve as energy sources for the coupled transport of other molecules, including Cl- by CCCs. In the absence of active Cl- transport, [Cl-]i is set by the membrane potential; i.e. the Nernst potential of Cl- (ECl=RTF ln⁡CliClo) equals the transmembrane potential (Vm).
+Plasmalemmal Cl- transporters, in particular cation-chloride cotransporters (CCCs), are understood to be the major mechanism by which neurons regulate the driving force for Cl- permeable anion channels (Kaila et al., 2014). Recently, it has been suggested that in fact impermeant anions control local [Cl-]i and driving force (Glykys et al., 2014), rather than the CCCs. The majority of intracellular anions are impermeant to the neuronal membrane; these include ribo- and deoxynucleotides, intracellular proteins and metabolites (Burton, 1983). Impermeant anions induce what is known as the Donnan (or Gibbs-Donnan) effect (Hill, 1956; Sperelakis, 2012) – an uneven distribution of impermeant molecules across the membrane which is osmotically unstable. Without active ion transport to counter this effect, neurons would swell and burst (Kay, 2017). Animal cells, including neurons, maintain cell volume in the presence of impermeant anions by using the Na+/K+-ATPase to pump Na+ out of the cell and K+ in, along with the passive movement of water and other ions (Tosteson and Hoffman, 1960; Armstrong, 2003; Liang et al., 2007; Kay, 2017). This pump-leak mechanism, whilst stabilizing cell volume, also establishes the negative resting membrane potential and transmembrane Na+ and K+ gradients, which serve as energy sources for the coupled transport of other molecules, including Cl- by CCCs. In the absence of active Cl- transport, [Cl-]i is set by the membrane potential; i.e. the Nernst potential of Cl- ($E_{Cl}=\frac{RT}{F}ln⁡\frac{Cl_{i}}{Cl_{o}}$) equals the transmembrane potential (Vm).
 
 The transmembrane Cl- gradient and the driving force (DF = Vm−ECl) for Cl- permeable ion channels are therefore the outcome of multiple, dynamically interacting mechanisms. This makes experimental investigation of the determinants of Cl- driving force difficult, particularly at a local level. Computational models based on established biophysical first principles are a productive means for exploring the roles of cellular mechanisms in generating local Cl- driving force. Here, we establish numerical and novel analytic solutions for an inclusive model of Cl- homeostasis to elucidate the determinants of the neuronal driving force for Cl-.
 
@@ -35,35 +35,87 @@ We demonstrate that baseline [Cl-]i is a product of the interaction of Na+/K+-AT
 
 ## Results
 
-## A biophysical model based on the pump-leak mechanism demonstrates the importance of the sodium-potassium ATPase for setting transmembrane ion gradients including chloride
+### A biophysical model based on the pump-leak mechanism demonstrates the importance of the sodium-potassium ATPase for setting transmembrane ion gradients including chloride
 
-To compare the effects of impermeant anions and Cl- cotransport on Cl- homeostasis we first developed a single compartment model based on the pump-leak formulation (Tosteson and Hoffman, 1960; Kay, 2017) (Figure 1A). This model, defined by a set of differential equations, incorporated mathematical representations of the three major permeable ion species Cl-, K+, Na+ as well as impermeant ions (Xz) with mean charge z. Permeable ions could move across the cellular membrane via passive conductances according to each ion’s respective electrochemical gradient. Further, active transport of Na+ and K+ by the Na+/K+-ATPase (with a 3:2 stoichiometry) and cotransport of Cl- and K+ (1:1 stoichiometry) by the cation-chloride cotransporter KCC2 with a non-zero conductance gKCC2 of 20 µS/cm2 unless otherwise stated were included. Finally, our formulation accounted for the dynamics of cell volume (w), intracellular osmolarity (Π) and transmembrane voltage (Vm) (see Materials and methods). Importantly, regardless of initial starting concentrations of permeant or impermeant ions, cell volume or Vm, the model converged to stable fixed points without needing to include any means for ‘sensing’ ion concentration, volume or voltage. Initial permeable ion concentrations also did not influence the final cellular volume. For example, despite initiating the model with different starting concentrations of Cl- (1, 15, 40 and 60 mM, respectively, Figure 1B), [Cl-]i always converged to the same stable concentration of 5.2 mM, a typical baseline [Cl-]i for adult neurons, and volume always converged to 2.0 pL, a typical volume for hippocampal neurons (Ambros-Ingerson and Holmes, 2005). The model is robust in the sense that its convergence to a stable steady state does not depend on a narrow set of parameters and initial values. Trying an alternative model of the Na+/K+-ATPase (Hamada et al., 2003) produced similar results (Figure 1—figure supplement 1A-B).
+To compare the effects of impermeant anions and Cl- cotransport on Cl- homeostasis we first developed a single compartment model based on the pump-leak formulation (Tosteson and Hoffman, 1960; Kay, 2017) (Figure 1A). This model, defined by a set of differential equations, incorporated mathematical representations of the three major permeable ion species Cl-, K+, Na+ as well as impermeant ions (Xz) with mean charge z. Permeable ions could move across the cellular membrane via passive conductances according to each ion’s respective electrochemical gradient. Further, active transport of Na+ and K+ by the Na+/K+-ATPase (with a 3:2 stoichiometry) and cotransport of Cl- and K+ (1:1 stoichiometry) by the cation-chloride cotransporter KCC2 with a non-zero conductance gKCC2 of 20 µS/cm2 unless otherwise stated were included. Finally, our formulation accounted for the dynamics of cell volume (w), intracellular osmolarity ($Π$) and transmembrane voltage (Vm) (see Materials and methods). Importantly, regardless of initial starting concentrations of permeant or impermeant ions, cell volume or Vm, the model converged to stable fixed points without needing to include any means for ‘sensing’ ion concentration, volume or voltage. Initial permeable ion concentrations also did not influence the final cellular volume. For example, despite initiating the model with different starting concentrations of Cl- (1, 15, 40 and 60 mM, respectively, Figure 1B), [Cl-]i always converged to the same stable concentration of 5.2 mM, a typical baseline [Cl-]i for adult neurons, and volume always converged to 2.0 pL, a typical volume for hippocampal neurons (Ambros-Ingerson and Holmes, 2005). The model is robust in the sense that its convergence to a stable steady state does not depend on a narrow set of parameters and initial values. Trying an alternative model of the Na+/K+-ATPase (Hamada et al., 2003) produced similar results (Figure 1—figure supplement 1A-B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig1-v3.jpg)
+
+**Figure 1.:** (A) A single-cell compartment was modeled as a cylinder with volume changes equivalent to changes in cylindrical radius. Dynamics of membrane permeable potassium (purple, K+), sodium (pink, Na+) and chloride (green, Cl-) ions were included. Impermeant anions (orange, Xz) had a mean intracellular charge z of -0.85. The KCC2 transporter moved Cl- and K+ in equal parts according to the transmembrane gradient for the two ions. The Na+/ K+ ATPase transported 3 Na+ ions out for 2 K+ ions moved into the cell. (B) Regardless of intracellular starting concentrations of the permeable ions, the model converged to identical steady state values for all parameters without needing to include any means for ‘sensing’ ion concentration, volume or voltage. We show the result for Cl- as a time series of [Cl-]i (top panel) and volume (bottom panel). (C) The ATPase plays a key role in maintaining steady state ion concentration, membrane voltage (Vm) and volume. Switching off the ATPase results in a continuous increase in cell volume (bottom panel), membrane depolarization (middle panel) and ion concentration dysregulation (top panel with colours per ion as in ‘A’). All cellular parameters recovered when the ATPase was reactivated. (D) The model’s analytic solution showed exact correspondence with steady state values generated by numerical, time series runs (dots) for varying ATPase pump rates. Steady state values for the concentrations of the ions with colours as in ‘A’ (top panel); Vm (middle panel) and volume (bottom panel). The dashed line indicates the default ATPase pump rate used in all simulations unless specified otherwise. The result in ‘B’ was replicated with Hamada et al.’s experimentally validated model of the ATPase in Figure 1—figure supplement 1B, and the models’ respective pump fluxes are compared in Figure 1—figure supplement 1A. Note that although sufficient Na+/K+-ATPase activity is critical for steady state ionic gradients these variables are relatively stable near the default pump rate (dashed line), Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Comparison of pump rate of different ATPase models against input sodium concentration. The model by Keener and Sneyd (1998) (solid line) is explained in the main paper methods. The Hamada et al. (2003) method (dashed line) is based on experimental evidence fitted by Hill equations (Hamada et al., 2003). The simplified equation follows: $J_{p}=Q_{scale}\frac{1.62}{1+\frac{6.7mM}{Na^{+}_{i}}^{3}}+\frac{1.0}{1+\frac{67.6mM}{Na^{+}_{i}}^{3}}$, where$Q_{scale}$was set such that the same steady state concentration of Na+ ions (and indeed of all ions) was achieved using either model, with units as for P the pump rate constant. (B) Figure 1B was run using the Hamada et al. (2003) model. As for the standard ATPase model, regardless of intracellular starting concentrations of the permeable ions, the model converged to identical steady state values for all parameters without needing to include any means for ‘sensing’ ion concentration, volume or voltage. We show the result for Cl- as a time series of [Cl-]i (top panel) and volume (bottom panel).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Steady-state EK (purple), ECl (green) and Vm (black, top panel) as well as volume (bottom panel) were calculated for different Na+/K+-ATPase pump rate constants using the analytical solution. Note that these variables are relatively stable near the default Na+/K+-ATPase pump rate (dashed line).
 
 Consistent with previous results (Xiao et al., 2002; Dierkes et al., 2006; Dijkstra et al., 2016), ‘turning off’ the activity of the Na+/K+-ATPase in our model led to a progressive collapse of transmembrane ion gradients, progressive membrane depolarization and continuous and unstable cell swelling. Such effects could be reversed by reactivation of the pump (Figure 1C). The relative activity of the Na+/K+-ATPase sets the final stable values for ion concentrations (of both permeable and impermeant ions), Vm and volume (Figure 1C). When we increased the activity of the Na+/K+-ATPase in our model, the final steady-state concentration for K+ increased, whilst Na+ and Cl- dropped to levels that approximate those observed in mature neurons (Figure 1D). Note that although sufficient Na+/K+-ATPase activity is critical for steady state ionic gradients including that of Cl-, these are relatively stable near the default pump rate (Figure 1—figure supplement 2). At the same time, the final, stable-state membrane potential and cell volume also decreased. Interestingly, as has been observed previously (Fraser and Huang, 2004), beyond a certain level, further increases in Na+/K+-ATPase activity have negligible effects on cell volume and transmembrane voltage. For subsequent analysis, we chose a ‘default’ effective pump rate for the Na+/K+-ATPase of approximately 1.0 × 10−2 C/(dm2.s), that is a pump rate constant of 10−1 C/(dm2.s) (equation (2)), and mean intracellular impermeant anion charge (z) of −0.85 as extrapolated from reasonable cellular ionic concentrations and osmolarity (Lodish et al., 2009; Raimondo et al., 2015). This resulted in steady-state ion concentrations and membrane potentials that approximate those experimentally observed in mature neurons: Cl- 5 mM; K+ 123 mM; Na+ 14 mM; Xz 155 mM; and a Vm of −72.6 mV (Jiang and Haddad, 1991; Diarra et al., 2001; Tyzio et al., 2008). We were able to corroborate the numerical solutions for final steady-state values by developing a parametric-analytic solution (Supplementary file 1). We observed exact correspondence between the numerical and analytic solutions within our model (Figure 1D). In subsequent analyses, this novel analytic solution allowed us to explore rapidly a large parameter space to determine how various cellular attributes might affect Cl- homeostasis.
 
-## Membrane chloride conductance affects steady-state intracellular chloride concentration only in the presence of cation-chloride cotransport
+### Membrane chloride conductance affects steady-state intracellular chloride concentration only in the presence of cation-chloride cotransport
 
 Using the analytic solution, we investigated how changes in baseline ion conductance for the major ions in our model (gK, gNa and gCl) affected Cl- homeostasis. We calculated the steady-state values for the Cl- reversal potential (ECl) and K+ reversal potential (EK), resting membrane potential (Vm) and volume (w) whilst independently manipulating the conductance for each ion (Figure 2). Increasing the baseline K+ conductance (gK) resulted in ECl, EK and Vm converging to similar steady-state values (Figure 2A) without significantly affecting cell volume. We were also able to replicate the classic dependence of membrane potential on log([K+]o) (Figure 2—figure supplement 1). In contrast, increasing the baseline Na+ conductance (gNa) beyond 20 µS/cm2 resulted in a steady increase of ECl, Vm and volume with a minimal increase of EK (Figure 2B). EK is maintained in the face of increased passive K+ efflux accompanying membrane depolarization due to increased active influx of K+ by the Na+-dependent ATPase which increases its effective pump rate due to increased intracellular Na+ concentration with larger gNa (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig2-v3.jpg)
+
+**Figure 2.:** Steady state values for different ionic conductance were calculated using the model’s analytic solution. (A) Steady state ECl (green), EK (purple), Vm (black) and volume w (bottom panel) were calculated at different K+ conductances (gK). Increasing gK resulted in a convergence of steady state ECl and Vm. (B) Increasing Na+ conductance (gNa) resulted in a progressive increase in steady state ECl, Vm and volume with a negligible increase in EK. Figure 2—figure supplement 2 demonstrates how increased K+ flux through the Na+/K+ ATPase matches passive K+ efflux to maintain EK. (C) In the presence of active cation-chloride cotransport (gKCC2 = 20 µS/cm2), increasing Cl- conductance shifted steady state ECl from EK toward Vm. (D) In the absence of KCC2 activity, gCl had no effect on steady state parameters. ECl equals Vm in all instances. Dashed lines indicate the default values for gK, gNa and gCl. In Figure 2—figure supplement 1 the classic dependence of the membrane potential on log([K+]o) is shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The analytical solution was used to explore the dependence of membrane potential on extracellular potassium concentration. In agreement with experimental results, the slope is non-linear at low [K+]o, which is not seen when using a pure Nernst-potential modelling approach.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Varying gNa in the analytical solution caused a reduction in ENa (top panel, pink) and non-zero increases in EK (middle panel, purple). The EK changes with increasing gNa are small because the increased K+ efflux through passive leak membrane channels accompanying membrane depolarisation (bottom panel, solid line) are compensated by increased ATPase K+ influx driven by the Na+ concentration changes (dashed line). KCC2 plays a smaller role (dotted line).
+
 The effect of manipulating Cl- conductance (gCl) depended on the activity of concurrent cation-chloride cotransport by KCC2 (Figure 2C). In the presence of active KCC2 at very low values of gCl, the steady state [Cl-]i is such that ECl approaches EK. This follows because in the absence of alternative Cl- fluxes, KCC2 utilizes the transmembrane K+ gradient to transport Cl- until ECl equals EK. With increasing gCl however, ECl increases, moving away from EK toward Vm, and at very high Cl- conductances ECl and Vm approached similar values in our model. Without the activity of KCC2, any non-zero gCl had no effect on steady state ECl, EK, Vm or volume (Figure 2D). In this instance ECl always equals Vm as the movement of Cl- across the membrane is purely passive. Without the activity of KCC2, there can be no driving force for Cl- flux at steady state (Vm-ECl = 0). Our model therefore behaved in a manner consistent with established theoretical predictions (Kaila et al., 2014).
 
-## Cation-chloride cotransport sets the chloride reversal and driving force for transmembrane chloride flux
+### Cation-chloride cotransport sets the chloride reversal and driving force for transmembrane chloride flux
 
 Next, we used our single-cell unified model to explore how the activity of cation-chloride cotransport affects Cl- homeostasis. In our model, the activity of KCC2 is set by the conductance of KCC2 (gKCC2). Using the numerical formulation with the default values described in Figures 1 and 2, we steadily increased gKCC2 from 20 µS/cm2 to 370 µS/cm2 and tracked changes to ECl, EK, Vm and volume. Increasing KCC2 activity over time caused a steady decrease in [Cl-]i reflected by a hyperpolarization of ECl (Figure 3A). Vm decreased only modestly, resulting in an increase in the driving force for Cl- flux that tracks the increase in gKCC2. This effect saturates as EK constitutes a lower bound on ECl. Importantly, increases in gKCC2 resulted in persistent changes to ECl and the driving force for Cl-. Employing alternate models for KCC2 (Fraser and Huang, 2004; Lewin et al., 2012; Raimondo et al., 2012) and the Na+/K+-ATPase (Hamada et al., 2003) did not change this result when compensation for parameterization was given, although different KCC2 models result in different kinetic rates for Cl- and K+ transport (Figure 3—figure supplements 1 and 2). Using the analytic solution to our model, we calculated how KCC2 activity affects steady state values of ECl, EK, Vm, volume and Cl- driving force (Figure 3B). In confirmation of our findings in Figure 2D, with no KCC2 activity (gKCC2 = 0), ECl equaled Vm and the Cl- driving force was zero. As we increased gKCC2, steady state ECl pulled away from Vm and approached EK. This resulted in an increase in Cl- driving force (Vm-ECl) with steady state values of 11.3 mV at our chosen default value of gKCC2. The results obtained with our model are therefore fully consistent with the view that CCCs, in this case KCC2, establish the driving force for Cl-.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig3-v3.jpg)
+
+**Figure 3.:** (A) Increasing KCC2 activity in our model by increasing gKCC2 from 20 µS/cm2 to 370 µS /cm2 resulted in a persistent decrease in ECl (green), a minimal decrease in EK (purple), Vm (black) and volume w (bottom panel). This resulted in a permanent increase in the DF for Cl- via a change in ECl from −83.9 mV to −93.2 mV (red). (B) The steady state values for ECl, EK, Vm (top panel), volume (middle panel) and Cl- driving force (DF, bottom panel, red) at different KCC2 conductances. Increasing KCC2 activity resulted in a decrease in steady state ECl and an increase in DF. EK represented a lower bound on ECl at high KCC2 conductances. Similar results were noted for other kinetic models of KCC2 (Figure 3—figure supplements 1 and 2). (C) Schematic showing experimental setup. Gramicidin perforated patch-clamp recordings were performed on CA3 pyramidal cells from rat hippocampal organotypic brain slices. (D) Insets depict GABAAR currents elicited by somatic application (20 ms) of muscimol (10 μM) at different voltages. Calibration: 500 ms, 500 pA. Holding current (reflecting membrane current) and total current (reflecting membrane current plus the muscimol-evoked current) were measured at the points indicated by the vertical grey and back lines, respectively. Current-voltage (IV) plots were drawn to calculate changes in Vm, EGABA and DF before (left) and after (right) furosemide (pink) was applied. Voltages were corrected for series resistance error. (E) Top, population data showing significant changes in EGABA and DF but not Vm five minutes after furosemide application. Bottom, changes in DF over time show a significant decrease from baseline once furosemide was introduced. (F) Meta-analysis of experimental studies demonstrates a correlation between KCC2 activity (% change) and Cl- DF (mV, top plot, red) but not membrane potential (mV, bottom plot, grey), confirming the role of KCC2 for establishing the neuronal Cl- gradient in adult tissue. The data and scoring system used to generate the regression can be found in Supplementary file 2 (Tables S2-1 and S2-2 ‘ns’, non-significant; *p<0.05; **p<0.01. The data for ‘C’, ‘D’ and ‘E’ is provided in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The pump rate velocity for different models of KCC2 were compared for differing intracellular chloride concentration. The equation employed in our model was based on Doyon et al. (2016) (solid line) and is described in the main text. Lewin et al. (2012) (dotted line) used the following equation in their computational model:$J_{KCC2}=J_{scale}∙0.3∙\frac{[K^{+}]_{o}∙Cl^{-}_{o}-[K^{+}]_{i}∙[Cl^{-}]_{i}}{k_{K}∙k_{Cl}1+\frac{[K^{+}]_{o}∙Cl^{-}_{o}}{k_{K}∙k_{Cl}}1+\frac{[K^{+}]_{i}}{k_{K}}1+\frac{[Cl^{-}]_{i}}{k_{Cl}}+1+\frac{[K^{+}]_{i}∙Cl^{-}_{i}}{k_{K}∙k_{Cl}}1+\frac{[K^{+}]_{o}}{k_{K}}1+\frac{[Cl^{-}]_{o}}{k_{Cl}}}$, where $k_{K}=9.0mMandk_{Cl}=6.0mM$. The model was based on a model of the renal distal tubule (Lewin et al., 2012). Here, it had a diminished absolute velocity compared to our model. The models of Raimondo et al. (2012) and Fraser and Huang (2004) (dashed and dash-dotted lines respectively) had similar velocities across our range of concentrations. Raimondo et al.’s model is based on a model for KCC2 derived using Michaelis-Menton kinetics and experiments, and incorporates new experimental values:$J_{KCC2}=J_{scale}∙V_{max}∙\frac{Cl^{-}_{i}}{15mM+Cl^{-}_{i}}\frac{ln⁡\frac{[K^{+}]_{o}∙Cl^{-}_{o}}{[K^{+}]_{i}∙Cl^{-}_{i}}}{ln⁡\frac{[K^{+}]_{o}∙Cl^{-}_{o}}{[K^{+}]_{i}∙56mM}}$, where $V_{max}=5mM∙s^{-1}$ (Raimondo et al., 2012). Fraser and Huang based their model on previous experimental evidence (Fraser and Huang, 2004). Their equation for KCC2 follows:$J_{KCC2}=J_{scale}∙P_{K}∙P_{KCC2}[K^{+}]_{o}∙Cl^{-}_{o}-[K^{+}]_{i}∙[Cl^{-}]_{i}$, where $P_{K}$ and $P_{KCC2}$are the permeability constants for potassium and the pump respectively, the latter of which is tuned as needed. $J_{scale}$ for each model was set such that the same steady state concentrations were achieved using any model with the other parameters kept constant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Increasing KCC2 activity in our model using the Raimondo et al. (2012) model by increasing Vmax/JScale resulted in a persistent decrease in ECl (green), a minimal decrease in EK (purple), Vm (black) and volume w (bottom panel). This resulted in a permanent increase in the driving force for Cl-. The change in KCC2 strength was matched so that the final shift is similar to the usual shift in driving force gained using our standard KCC2 pump formulation. (B) When the ATPase model of Hamada et al. (2003) was used in the experimental set up in (A) rather than the usual ATPase model, the resulting driving force differed by only 0.1 mV from the usual value.
 
 To test this theoretical finding, we performed gramicidin perforated patch-clamp recordings from CA3 hippocampal neurons in rat organotypic brain slices whilst activating Cl- permeable GABAA receptors with muscimol (10 µM), in order to measure the GABAAR driving force, which approximates Cl- driving force (Figure 3C). We then tested our model predications by applying the CCC blocker, furosemide (1 mM) (Figure 3D,E). We noted that after furosemide was introduced the EGABA became significantly more depolarized (baseline: −78.8 ± 2.8 mV vs furosemide: −71.6 ± 3.0 mV, n = 10, p=0.01, paired t-test), whilst there was no significant difference in Vm (−69.9 ± 1.8 mV vs −71.5 ± 2.6 mV, n = 10, p=0.36, paired t-test) (Figure 3E). This reflects a significant change in the GABAAR driving force (8.9 ± 3.4 mV vs 0.1 ± 4.6 mV, n = 10, p=0.04, paired t-test). Values were stable prior to baseline recordings with EGABA 5 min prior to furosemide application at −78.4 ± 8.1 mV, Vm−70.1 ± 5.6 mV and DF at 9.1 ± 3.2 (see Figure 3E). We then noted that this change in driving force persisted for at least 15 min post-application of furosemide (Figure 3E). These results are consistent with our model predictions and demonstrate how the application of a CCC blocker reduces the GABAAR driving force (and hence Cl- driving force) by selectively depolarizing EGABA with negligible effects on Vm.
 
 In addition, we sought experimental data from the literature to determine whether changes in KCC2 activity correlate with alterations to steady-state [Cl-]i. We focused on changes in KCC2 expression level, as this is likely to be a strong predictor of changes in KCC2 activity. Indeed, in a meta-analysis of seven studies and eight experiments from our review of 26 studies, weighted for methodological biases and data quality, we observed a significant correlation (R2 = 0.796, p<0.001) between the change in KCC2 expression and Cl- driving force (Figure 3F). Absolute changes in Vm were less than 2 mV in all but one study, meaning that the change in driving force could be ascribed to significant shifts in EGABA (R2 = 0.045, p<0.001). The outlier data point (showing a 8.45 mV change) was from a study into the effects of acute stress, where other factors could have transiently influenced Vm (MacKenzie and Maguire, 2015). The meta-analysis supports the prediction that cation-chloride cotransport by KCC2 is an important determinant of [Cl-]i (R2 = 0.83, p<0.001, nine studies) and driving force (see Supplementary file 2 Table S2-1 for raw data, and the scoring table for weighting in Table S2-2).
 
-## Altering the concentration of intracellular or extracellular impermeant anions, without changing the mean charge of impermeant anions, does not affect the steady state gradient or driving force for chloride
+### Altering the concentration of intracellular or extracellular impermeant anions, without changing the mean charge of impermeant anions, does not affect the steady state gradient or driving force for chloride
 
-To determine the effect of impermeant anions on Cl- homeostasis, we first explored whether adjusting the concentration of impermeant anions ([X]i), while maintaining a constant mean impermeant ion charge (z), had any impact on ECl, EK, Vm or volume. The mean charge (z) is the mean of the charge of all the different species of impermeant molecules in the cell, including uncharged ones, where charge is the difference between the number of protons and electrons of a molecule. Impermeant anions are more abundant than impermeant cations, and so in this manuscript we often refer to the group as impermeant anions rather than impermeant ions or impermeant molecules. For example, were there α impermeant molecules of charge −1 and β impermeant molecules of charge 0, then z would be −αα+β. We initiated the full single-compartment model with different starting concentrations of impermeant anions all with the same mean charge, z = −0.85, and observed that regardless of the initial concentration of impermeant anions, over a period of minutes, the cell adjusted its volume to give an identical steady-state impermeant anion concentration (Figure 4A, [A]i = 155 mM). Analytically, it can be shown that the number of moles of X determines completely the volume of the compartment, while the permeant ions alone cannot be used to predict steady state volume (Kay, 2017). Similarly, all initial impermeant anion concentrations resulted in identical steady state values of ECl (−83.8 mV), EK (−95.1 mV) and Vm (−72.6 mV) (Figure 4B). This shows that simply adjusting the amount of impermeant anions within a cell has no persistent effect on [Cl-]i.
+To determine the effect of impermeant anions on Cl- homeostasis, we first explored whether adjusting the concentration of impermeant anions ([X]i), while maintaining a constant mean impermeant ion charge (z), had any impact on ECl, EK, Vm or volume. The mean charge (z) is the mean of the charge of all the different species of impermeant molecules in the cell, including uncharged ones, where charge is the difference between the number of protons and electrons of a molecule. Impermeant anions are more abundant than impermeant cations, and so in this manuscript we often refer to the group as impermeant anions rather than impermeant ions or impermeant molecules. For example, were there α impermeant molecules of charge −1 and β impermeant molecules of charge 0, then z would be $\frac{−\alpha}{\alpha+\beta}$. We initiated the full single-compartment model with different starting concentrations of impermeant anions all with the same mean charge, z = −0.85, and observed that regardless of the initial concentration of impermeant anions, over a period of minutes, the cell adjusted its volume to give an identical steady-state impermeant anion concentration (Figure 4A, [A]i = 155 mM). Analytically, it can be shown that the number of moles of X determines completely the volume of the compartment, while the permeant ions alone cannot be used to predict steady state volume (Kay, 2017). Similarly, all initial impermeant anion concentrations resulted in identical steady state values of ECl (−83.8 mV), EK (−95.1 mV) and Vm (−72.6 mV) (Figure 4B). This shows that simply adjusting the amount of impermeant anions within a cell has no persistent effect on [Cl-]i.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig4-v3.jpg)
+
+**Figure 4.:** (A) Initiating the model with different starting concentrations of intracellular impermeant anions ([X]i) with the same mean charge z = −0.85 (orange, top panel), led to compensatory volume changes (bottom panel) which resulted in identical steady state concentrations. (B) Steady state ECl (green), EK (purple) and Vm (black) were identical regardless of initial [X]i. Final volume, however, was a linear function of initial [X]i (bottom panel). (C) Addition of impermeant anions of the mean charge (z = −0.85) caused transients shifts in ECl (green, top panel), EK (purple), Vm (black) as well as [X]i (orange, bottom panel) for the duration of the influx, and sustained increases in volume (black, middle panel). No persistent changes in ECl, EK or Vm were observed. The full time-dependent ionic and water fluxes for the experiment are shown in Figure 4—figure supplement 1, which shows that the inward flux of impermeant anions causes fluxes of all other ions. (D) Similarly, the addition of extracellular impermeant anions in an osmoneutral manner causes transient shifts in the permeable ion gradients (top panel, colours as in ‘C’), and sustained changes in cellular volume (black, middle panel) as well as the extracellular X and extracellular and intracellular Cl- concentrations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Detailed fluxes of all ions and changes to volume during addition of impermeant anions of average charge. The flux of ions across the membrane for potassium (purple, K+), sodium (pink, Na+), chloride (green, Cl-) and impermeant anions (orange, (X) are shown in the top panel. Concentration and reversal potential changes are depicted in the second and third panels from the top. Whilst there is a large inward (intracellular) flux of impermeant anions as dictated by the experiment, this is not solely mitigated by fluxes of chloride, the other intracellular anion, but also by potassium and sodium fluxes as well as the movement of water (ie volume changes). The rate of change in volume (representing water movement) is shown in the fourth panel from the top while the bottom panel depicts volume itself.
 
 We then tested the effect of dynamically adding impermeant anions with the default mean charge either intracellularly (Figure 4C) or extracellularly (Figure 4D). While impermeant anions are being added to the cell, the membrane potential hyperpolarizes and ECl decreases. However, following the cessation of impermeant anion influx, ECl, EK, Vm and [X]i return to steady state values due to compensatory changes to cell volume (Figure 4C). There are transient transmembrane fluxes of all ions while anions are added into the cell, and in particular the inward flux of the cations Na+ and K+, such that the sum [X]i + [Cl-]i is not necessarily kept constant during impermeant anion addition (Figure 4—figure supplement 1). Impermeant ions (with the default mean charge) were added to the extracellular space, which is effectively an infinite bath in the model, while proportional decreases in [Cl-]o were applied to correct for the changes to charge and osmotic balance. Additions in the extracellular space, similarly, resulted in a temporary depolarization of ECl and Vm, but no persistent shift in these parameters (Figure 4D). The addition of extracellular impermeant anions did however result in a small compensatory decrease in cell volume secondary to the large shifts in [Cl-]i required to maintain the proportion of [Cl-]i to [Cl-]o according to the Nernst potential. In summary, there is no lasting effect on the reversal potential or driving force for Cl- if only the concentration of a neuron’s intracellular or extracellular impermeant anions is altered. This is because concentration changes alone modulate only osmoneutrality, whereas changes to intracellular charge balance affect electroneutrality and therefore the membrane and ionic potentials, which we tested next.
 
-## Changing the mean charge of impermeant anions can drive substantial shifts in the reversal potential for chloride, but has negligible effects on chloride driving force
+### Changing the mean charge of impermeant anions can drive substantial shifts in the reversal potential for chloride, but has negligible effects on chloride driving force
 
 We next sought to determine how changes in the mean charge of the impermeant ions (z) might influence the driving force for Cl-. Such changes in z could be associated with various cellular processes, including post-translational modifications of proteins that decrease their charge without changing the absolute number of protein molecules. To investigate this parameter, we modified the mean charge (z) of intracellular impermeant anions from −0.85 to −1 whilst measuring accompanying changes in ECl, EK, Vm and cell (Figure 5A). We found that this shift to a more negative z resulted in both a transient and persistent decrease in ECl, EK and V. Importantly, the shifts in ECl were accompanied by broadly matching shifts in EK and V, which resulted in a small change in the driving force for Cl- of <0.2 mV. Both numerical and analytic calculation of steady state values for ECl, EK and Vm in our model showed that changing the mean charge of impermeant anions, while substantially affecting ECl, had very small effects on the driving force for Cl- (Figure 5B). By shifting z within reasonable ranges for mammalian neurons (Lodish et al., 2009; Raimondo et al., 2015), and assuming osmo- and electro-neutrality, only shifts of <1 mV could be generated. In addition, although the absolute number of impermeant anions (moles) remained constant throughout the process of modifying z, cell volume shifted, and as a consequence modest alterations to the concentration of impermeant anions occurred as well.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig5-v3.jpg)
+
+**Figure 5.:** (A) Decreasing the mean charge of impermeant anions from −0.85 (the default value) to −1 (orange, bottom panel), without changing the absolute number of intracellular impermeant anions caused a persistent decrease in ECl (green, top panel), EK (purple) and Vm with moderate increases in volume (middle panel) in our default single compartment model. Negligible changes in Cl- driving force (∆DF = 0.16 mV, red) were observed. (B) Analytic solution (solid lines) for different impermeant anion mean charge (z) exactly matches the steady state values from numerical, time series runs (dots) based on adjusting z as in ‘A’. Steady state ECl, EK, Vm (top panel) and [X]i (middle) increased with increasing z, while changes in z resulted in very small changes in Cl- DF (bottom, red). The vertical dashed line indicates the values at the chosen default z of −0.85. (C) Influx of a species of impermeant anions with a charge of −1.5, that decreased the mean charge z (bottom panel) from −0.85 to −1 and increased the number of impermeant anions also caused persistent decreases of ECl, EK and Vm as in ‘A’, but with larger increases in cell volume (middle panel). Again, very small persistent changes in Cl- DF were observed. The volume changes for different flux amounts and charges are illustrated in Figure 5—figure supplement 1. (D) Top, schematic of the experimental setup where whole-cell recordings were made from CA3 pyramidal cells in mouse organotypic brain slices. Impermeant anions (orange) were delivered via electroporation of the negatively charged fluorescent dextran Alexa Flour 488 via a pipette positioned near the soma of the recorded cell. GABAAR currents were elicited via photo-activation (100 ms, 470 nm LED via objective) of ChR2-expressing GAD2+ interneurons (green cells) in the presence of 5 μM CGP-35348 to block GABABRs. Lower trace, current clamp recording showing Vm changes during electroporation of anionic dextran. Confocal image demonstrating cell-localized fluorescence of the anionic dextran electroporated in ‘E’. (E) Top, widefield images with electroporation pipette (orange dashed lines) and the recording pipette (white dashed lines). Note increased fluorescence in the soma after electroporation. Below, insets show GABAAR currents evoked by photo-activation of GAD2+ interneurons at different holding potentials. Calibration: 1 s, 100 pA. Holding current (reflecting membrane current) and total current (reflecting membrane current plus the GABAAR current) were measured at the points indicated by the vertical grey and black lines, respectively. IV plots were used to calculate Vm, EGABA and DF before (left) and after (right) electroporation. (F) Top, population data showing significant decreases in mean Vm and EGABA but not DF five minutes after electroporation. Below: changes in DF over time. Point at which electroporation occurred marked with orange arrow. ‘ns’, non-significant; *p<0.05. The data for ‘D’, ‘E’ and ‘F’ is provided in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Repeating the methodology in Figure 5C for ion species with different charges (zflux) demonstrates the effect of driving shifts in the average intracellular impermeant charge on cell volume. Generating even small shifts in average z by adding or removing impermeant anions can cause large changes in cell volume.
 
 Next, instead of adjusting the charge of some of the intracellular impermeant anions as described above, we directly added new impermeant anions to the cell, which had a more negative charge than the previous mean charge (Figure 5C and D). This had the effect of both increasing the absolute quantity of impermeant anions and adjusting the mean charge of impermeant anions. The ‘addition’ of impermeant anions in this way models the de novo synthesis of impermeant anion species, or their active transport into the cell. This process also resulted in both transient and persistent changes to ECl, EK and V, which was dependent on the extent that z was altered. Again, whilst the large additions of impermeant anions could substantially alter the Cl- reversal potential, this had a negligible effect on the driving force for Cl- due to matching shifts in Vm. Driving shifts in ECl in this manner also resulted in changes to cell volume (Figure 5—figure supplement 1).
 
@@ -71,15 +123,23 @@ To experimentally test our biophysical modeling predictions, we used photo-activ
 
 Our single-compartment model of Cl- homeostasis, in conjunction with experimental validation, demonstrates that whilst the adjustment of mean impermeant anion charge can significantly affect ECl, this results in negligible changes to the driving force for Cl-. This contrasts with the results shown earlier, where adjusting the activity of cation-chloride cotransport modulates both ECl and the driving force for Cl- substantially.
 
-## Impermeant anions drive small shifts in chloride driving force by modifying the sodium-potassium-ATPase pump rate under conditions of active chloride cotransport
+### Impermeant anions drive small shifts in chloride driving force by modifying the sodium-potassium-ATPase pump rate under conditions of active chloride cotransport
 
 We next set out to determine how, and under what conditions, the modification of impermeant anions could potentially generate the very small persistent shifts in Cl- driving force we observed in our models. Due to their small size (<1 mV) these were not detectable during the experimental validation. First, we repeated the simulation performed in Figure 5A by changing the mean charge of impermeant anions in the cell, but under conditions where the Na+/K+-ATPase effective pump rate (Jp) was either a cubic function of the transmembrane Na+ gradient (default condition) or was fixed at a constant value (Figure 6A). In the case where the pump rate was fixed, adjusting the mean charge of impermeant anions generated no persistent change in Cl- driving force (Figure 6A). Modifying impermeant anions caused a significant change in steady-state intracellular Na+ concentration when Jp was kept constant. However, small shifts in Cl- driving force occurred only when the effective pump rate was variable, in which minor changes to [Na+]i caused significant changes to Jp, which in turn resulted in a small shift in Cl- driving force. There is a direct relationship between the mean charge of impermeant anions (z), [Na+]i, the effective Na+/K+-ATPase pump rate and Cl- driving force. This relationship was abolished when the effective Na+/K+-ATPase pump rate was held constant by removing its dependence on Na+ (Figure 6B). In addition, even large variations in effective pump rate near the default value caused negligible shifts in Cl- driving force of <1 mV. These results were similar when using the experimentally matched ATPase model by Hamada et al. (2003), with slight differences in final values (Figure 6—figure supplement 1A). These small, impermeant anion driven, Na+/K+-ATPase pump-dependent shifts in Cl- driving force are completely dependent on the presence of cation-chloride cotransport. In the absence of KCC2, there is no Cl- driving force as ECl = Vm (Figure 6F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig6-v3.jpg)
+
+**Figure 6.:** (A) ECl (green), EK (purple) and Vm (black) (top panel), [Na+]i (pink, middle panel) and mean impermeant anion charge z (orange, lower panel) over time in the default single compartment model. Changing z from −0.85 to −1 generated small, persistent Cl- driving force (DF) shifts (arrows, red) only when the effective ATPase pump rate (Jp) was variable (solid line) and not when Jp was kept constant (dashed line). (B) Solving analytically across different values of z with either a variable Jp (solid lines) or a constant Jp (dashed line), demonstrates the direct relationship between Na+ (pink), effective pump rate (Jp) (top panel) and DF (lower panel, red). (C) ECl (green), EK (purple) and Vm (black) (top panel), [Na+]i (pink, middle panel) and cell volume (black, lower panel) over time in the default single-compartment model. Impermeant anions of the same charge as the mean charge of the cell were added. A volume constraint was incorporated by adding a hydrostatic force dependent on membrane tension (dashed lines), which resulted in an impermeable anion-induced transmembrane osmotic differential. This caused a small change in DF when Jp was variable (dashed line), but not when Jp was held constant (dotted lines). (D) Solving analytically across osmolarity differences demonstrates the direct relationship between Na+ (pink), effective pump rate (Jp) (top panel) and DF (lower panel). Note, the small changes in DF. (E) Schematic explaining the mechanism through which impermeant anion-induced cell swelling in the presence of volume constraints (i.e. membrane tension) result in steady states with equal but non-zero osmotic (osmoP) and hydrostatic pressures (HP), causing transmembrane osmotic differences (t1). This causes small changes in Na+, and hence Jp. (F) All Na+/K+-ATPase pump rate-related shifts in the DF require KCC2 activity; in the absence of activity (dashes), no shifts in driving force can occur. In Figure 6—figure supplement 1, we show that the results in (A) and (C) are similar when an experimentally-matched model of the Na+/K+-ATPase is used.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39575/elife-39575-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The experiment for Figure 6A was repeated using the usual ATPase model (solid line) compared to Hamada et al. (2003)’s model and is consistent with the results in the main text. ECl (green), EK (purple) and Vm (black) (top panel), [Na+]i (pink, middle panel) and average impermeant anion charge z (orange, lower panel) over time in the default single compartment model. Changing the average z from −0.85 to −1 generated small, persistent Cl- driving force shifts (arrows) only when the effective ATPase pump rate (Jp) was variable (solid and dashed line) for both pump models, and not when Jp was kept constant (dotted line). (B) The experiment for Figure 6C was repeated comparing the usual ATPase model (solid line) with Hamada et al., 2003’s model and is consistent with the results in the main text. ECl (green), EK (purple) and Vm (black) (top panel), [Na+]i (pink, middle panel) and cell volume (black, lower panel) over time in the default single-compartment model. Impermeant anions of the same average charge of the cell were added. A volume constraint on Hamada et al.’s model was incorporated by adding a hydrostatic force dependent on membrane tension (dotted lines), which resulted in an impermeable anion induced transmembrane osmotic differential. This caused a small change in Cl- driving force when Jp was variable (dotted line), but not when Jp was held constant (dash-dotted lines).
 
 We then tested whether relaxing the condition of transmembrane osmoneutrality might also alter impermeant anion induced effects on Cl- driving force. We modeled a situation where increases in cell surface area beyond a certain ‘resting’ surface area generated a hydrostatic pressure (membrane tension), which could balance an osmotic pressure difference of 10 mM between the intra- and extracellular compartments (see Figure 6C, schematic in Figure 6E and Materials and methods). In this case, adding impermeant anions of default charge z resulted in constrained increases in cell volume, which were accompanied by persistent transmembrane differences in osmolarity and intracellular Na+ concentration. This was sufficient to generate small differences in driving force for Cl- of <0.2 mV for reasonable increases in cell surface area (Nichol and Hutter, 1996; Dai et al., 1998). Again, this was entirely due to Na+ driven shifts in the Na+/K+-ATPase effective pump rate. By removing the dependence of Na+/K+-ATPase activity on Na+ concentration, addition of impermeant anions no longer generated persistent shifts in Cl- driving force (Figure 6C). Using the experimentally-matched ATPase model by Hamada et al. (2003) generated similar results (Figure 6—figure supplement 1B) because the model is also directly dependent on [Na+]i. We observed a direct relationship between transmembrane osmotic gradient, [Na+]i, the effective Na+/K+-ATPase pump rate and Cl- driving force. This relationship was removed when the effective Na+/K+-ATPase pump rate was held constant, with no changes in Cl- driving force seen despite the generation of the same shift in the transmembrane osmotic gradient (Figure 6D).
 
 In summary, changes in Cl- driving force generated by changing the ionic contributions to cellular charge (by altering the mean charge of impermeant anions) or osmoneutrality (by increasing the contribution of hydrostatic pressure) are due to the alteration of the dynamics of active ion transport mechanisms in the cell. However, these effects are negligible in magnitude and cannot contribute significantly to setting physiologically observed Cl- driving forces. It is worth reiterating that any non-zero Cl- driving force is entirely dependent on the presence of active Cl- cotransport. In our model, in the absence of KCC2, neither the Na+/K+-ATPase nor impermeable anions can shift Cl- out of equilibrium (Figure 6F).
 
-## Changes in cation-chloride cotransport activity generate local differences in chloride reversal and driving force, which depend on cytoplasmic diffusion rates
+### Changes in cation-chloride cotransport activity generate local differences in chloride reversal and driving force, which depend on cytoplasmic diffusion rates
 
 An important functional question is how Cl- driving force might be modified at a local level within a neuron. We considered local persistent changes of Cl- driving force for the case of active transmembrane Cl- fluxes (Figure 7) and impermeant anions (Figure 8) by extending the single-compartment model described above into a multi-compartment model or ‘virtual dendrite.’ This dendrite was 100 μm in length and consisted of 10 compartments, each of 10 μm length and 1 μm diameter. The compartments contained the same mechanisms and default parameterization as the single compartment model described above. Compartmental volume was changed by altering the radius, while holding the length constant. In addition, all ions, except impermeant anions, could move between compartments by electrodiffusion (Figure 7A and Materials and methods).
 
@@ -93,7 +153,7 @@ An important functional question is how Cl- driving force might be modified at 
 
 To explore the local effects of CCC activity, we increased gKCC2 from our default value of 20 µS/cm2 to 600 µS/cm2 in the second distal compartment of the virtual dendrite exclusively. This resulted in a persistent decrease in ECl, concurrent with a modest decrease in Vm, resulting in a permanent increase in Cl- driving force and minimal change in compartment volume (Figure 7B). The spatial precision of this alteration depended strongly on the diffusion constant for Cl-. With a Cl- diffusion constant of 2.03 × 10−7 dm2.s−1, these alterations spread widely through the virtual dendrite. For example, the change in Cl- driving force was 4.8 mV in the furthermost compartment (90 μm apart) as compared to 5.9 mV in the compartment manipulated. When we decreased the Cl- diffusion constant by one order of magnitude, the change in Cl- driving force was 7.3 mV in the compartment in which KCC2 was adjusted, but only 1.8 mV in the furthermost compartment from the site of manipulation (Figure 7C). These findings suggest that local differences in cation-chloride cotransport activity can drive spatially restricted differences in Cl- driving force under conditions of constrained Cl- diffusion; however, under conditions of typical ionic diffusion the effect of Cl- transport by KCC2 is relatively widespread.
 
-## Local impermeant anions do not appreciably affect the local driving force for chloride
+### Local impermeant anions do not appreciably affect the local driving force for chloride
 
 Following the last result, we considered whether changing impermeant anions in part of a dendrite could create a local area with a different Cl- driving force compared to the rest of the cell. We first added impermeant anions of the default charge (z = −0.85) exclusively to the second-most distal compartment of the virtual dendrite while measuring the Cl- reversal, Vm and Cl- driving force in all compartments. During addition of the impermeant anions, ECl and Vm decreased with an accompanying decrease in Cl- driving force. However, following cessation of impermeant anion influx, all parameters returned to baseline levels, except for the volume of that specific compartment, which showed a modest increase (Figure 8B). This suggests that local addition of impermeant anions of mean charge has no local effect on Cl- homeostasis but can affect the volume of the compartment concerned.
 
@@ -123,43 +183,260 @@ In summary, our theoretical models, which are derived from well-established phys
 
 ## Materials and methods
 
-## Single-compartment model
+### Single-compartment model
 
-The single-compartment model consisted of a cylindrical semipermeable membrane separating the extracellular solution from the intracellular milieu with variable volume (Figure 1 ). The extracellular ionic concentrations were assumed constant (Table 1). Permeable ions in the model were K+, Na+ and Cl- with their usual charges, while impermeant anions X were assumed to be a heterogeneous group of impermeant chemical species with a mean intracellular charge z and a mean extracellular charge -1. The default z (-0.85) was chosen on the basis of known resting intracellular ion concentrations (Lodish et al., 2009; Raimondo et al., 2015) and osmolarity (Π). Bicarbonate ions were not included in our model as a permeant anion as they were assumed to be important for acute depolarizing effects (via GABAARs) rather than the chronic shifts in Cl- driving force, which are the focus of this work (Staley and Proctor, 1999). The model included ionic leak currents for the permeable ions, Na+/K+-ATPase transporters and a CCC, in this case the K+-Cl- cotransporter (KCC2). KCC2 and not NKCC1 is thought to be the most active CCC in mature neurons (Ben-Ari, 2002), therefore, to maintain conceptual simplicity only KCC2 was modeled. Cell volume (w) change was based on osmotic water flux and incorporated a membrane surface area scaling mechanism. An analytical solution to the model at steady state was derived using standard techniques and can be found in Supplementary file 1. The numerical model was initialized assuming conditions close to electroneutrality and an osmotic equilibrium between the intracellular and extracellular compartments. A forward Euler approach was used to update variables at each time step (dt) of 1 ms. Using a smaller dt did not influence the results in Figure 1–5. Code was written in Python 2 and is available on GitHub (Düsterwald and Currin, 2018; copy archived at https://github.com/elifesciences-publications/model-of-neuronal-chloride-homeostasis). The GitHub repository includes a file of Supplementary figures, in which we display transmembrane fluxes of all ions and water for relevant simulations. An example figure displaying ionic flux for all ions is available for Figure 4C in Figure 4—figure supplement 1.
+The single-compartment model consisted of a cylindrical semipermeable membrane separating the extracellular solution from the intracellular milieu with variable volume (Figure 1 ). The extracellular ionic concentrations were assumed constant (Table 1). Permeable ions in the model were K+, Na+ and Cl- with their usual charges, while impermeant anions X were assumed to be a heterogeneous group of impermeant chemical species with a mean intracellular charge z and a mean extracellular charge -1. The default z (-0.85) was chosen on the basis of known resting intracellular ion concentrations (Lodish et al., 2009; Raimondo et al., 2015) and osmolarity ($Π$). Bicarbonate ions were not included in our model as a permeant anion as they were assumed to be important for acute depolarizing effects (via GABAARs) rather than the chronic shifts in Cl- driving force, which are the focus of this work (Staley and Proctor, 1999). The model included ionic leak currents for the permeable ions, Na+/K+-ATPase transporters and a CCC, in this case the K+-Cl- cotransporter (KCC2). KCC2 and not NKCC1 is thought to be the most active CCC in mature neurons (Ben-Ari, 2002), therefore, to maintain conceptual simplicity only KCC2 was modeled. Cell volume (w) change was based on osmotic water flux and incorporated a membrane surface area scaling mechanism. An analytical solution to the model at steady state was derived using standard techniques and can be found in Supplementary file 1. The numerical model was initialized assuming conditions close to electroneutrality and an osmotic equilibrium between the intracellular and extracellular compartments. A forward Euler approach was used to update variables at each time step (dt) of 1 ms. Using a smaller dt did not influence the results in Figure 1–5. Code was written in Python 2 and is available on GitHub (Düsterwald and Currin, 2018; copy archived at https://github.com/elifesciences-publications/model-of-neuronal-chloride-homeostasis). The GitHub repository includes a file of Supplementary figures, in which we display transmembrane fluxes of all ions and water for relevant simulations. An example figure displaying ionic flux for all ions is available for Figure 4C in Figure 4—figure supplement 1.
 
-## Membrane potential
+**Table 1.**
+ Constants, default parameters and usual steady state values for variables used in the biophysical models.
 
-The membrane potential Vm was based on the ‘Charge Difference’ approach (Rybak et al., 1997; Fraser and Huang, 2004) as follows:(1)Vm= F ([Na+]i+[K+]i-[Cl-]i+z[Xz]i) CmAmwhere F is Faraday’s constant, Cm is the unit membrane capacitance and Am is calculated as the ratio of the surface area (of the cylinder) to cell volume. The term in brackets is the sum of all ionic charges within the cell. This approach has the advantage that the initial voltage can be calculated without needing to assume a steady state as is required for by the Goldman-Hodgkin-Katz (GHK) equation.
 
-## Permeable ion concentrations
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Constants</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>96485.33 C/mol</td>
+      <td>Faraday constant</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>8.31446 J/(K.mol)</td>
+      <td>Universal gas constant</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>310.15 K</td>
+      <td>Absolute temperature (=37°C)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Parameters</td>
+    </tr>
+    <tr>
+      <td>Cm</td>
+      <td>2× 10−6 F/cm2</td>
+      <td>Unit membrane capacitance (Qian and Sejnowski, 1989)</td>
+    </tr>
+    <tr>
+      <td>gNa</td>
+      <td>20 µS/cm2</td>
+      <td>Na+ leak conductance (Kager et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>gK</td>
+      <td>70 µS/cm2</td>
+      <td>K+ leak conductance (Kager et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>gCl</td>
+      <td>20 µS/cm2</td>
+      <td>Cl- leak conductance</td>
+    </tr>
+    <tr>
+      <td>gKCC2</td>
+      <td>20 µS/cm2</td>
+      <td>KCC2 conductance (Doyon et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>vw</td>
+      <td>0.018 dm3/mol</td>
+      <td>Partial molar volume of water (Hernández and Cristina, 1998)</td>
+    </tr>
+    <tr>
+      <td>pw</td>
+      <td>0.0015 dm/s</td>
+      <td>Osmotic permeability (Hernández and Cristina, 1998)</td>
+    </tr>
+    <tr>
+      <td>km</td>
+      <td>25 N/dm</td>
+      <td>Variable for membrane tension (higher than reported (Dai et al., 1998): used in this paper to accentuate differences in osmolarity)</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>0.1 C/(dm2.s)</td>
+      <td>Default pump rate constant</td>
+    </tr>
+    <tr>
+      <td>[Na+]o</td>
+      <td>145 mM</td>
+      <td>Extracellular Na+ concentration</td>
+    </tr>
+    <tr>
+      <td>[K+]o</td>
+      <td>3.5 mM</td>
+      <td>Extracellular K+ concentration</td>
+    </tr>
+    <tr>
+      <td>[Cl-]o</td>
+      <td>119 mM</td>
+      <td>Extracellular Cl- concentration</td>
+    </tr>
+    <tr>
+      <td>[X-]o</td>
+      <td>29.5 mM</td>
+      <td>Extracellular impermeant anion (X) concentration (Lodish et al., 2009; Raimondo et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>DNa</td>
+      <td>1.33 × 10−7 dm2/s</td>
+      <td>Na+ diffusion constant (Hille, 2001)</td>
+    </tr>
+    <tr>
+      <td>DK</td>
+      <td>1.96 × 10−7 dm2/s</td>
+      <td>K+ diffusion constant (Hille, 2001)</td>
+    </tr>
+    <tr>
+      <td>DCl</td>
+      <td>2.03 × 10−7 dm2/s</td>
+      <td>Cl- diffusion constant (Hille, 2001)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Variables (default steady state)</td>
+    </tr>
+    <tr>
+      <td>Vm</td>
+      <td>−72.6 mV</td>
+      <td>Membrane potential</td>
+    </tr>
+    <tr>
+      <td>[Na+]i</td>
+      <td>14.0 mM</td>
+      <td>Intracellular Na+ concentration</td>
+    </tr>
+    <tr>
+      <td>[K+]i</td>
+      <td>122.9 mM</td>
+      <td>Intracellular K+ concentration</td>
+    </tr>
+    <tr>
+      <td>[Cl-]i</td>
+      <td>5.2 mM</td>
+      <td>Intracellular Cl- concentration</td>
+    </tr>
+    <tr>
+      <td>[Xz]i</td>
+      <td>154.9 mM</td>
+      <td>Intracellular impermeant anion (X) concentration</td>
+    </tr>
+    <tr>
+      <td>z</td>
+      <td>−0.85</td>
+      <td>Mean charge of intracellular X (Lodish et al., 2009; Raimondo et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>2.0 pL (single compartment) 0.078 pL (multi-compartment)</td>
+      <td>Volume</td>
+    </tr>
+  </tbody>
+</table>
 
-Intracellular concentrations of the permeable ions Na+, K+ and Cl- were updated individually by summing trans-membrane fluxes. Leak currents were calculated using Ohm's Law, I=g(Vm-E). In addition, Na+ and K+ were transported actively by the Na+/K+-ATPase, with pump rate Jp, which was approximated by a cubic function dependent on the transmembrane sodium gradient, following (Keener and Sneyd, 1998):(2)Jp=P[Na+]i[Na+]o3,where P is the pump rate constant. Because it is a function of the sodium gradient, Jp decreases as [Na+]i depletes. This formulation has been shown to be similar to more accurate kinetic models reliant on both the Na+ gradient and ATP concentration (Keener and Sneyd, 1998). To switch the ATPase pump on or off (Figure 1C), P was decreased/increased exponentially over 10–20 min, consistent with previous reports of the dynamics of inhibition of the ATPase by ouabain and in turn the inhibition of ouabain’s effects by potassium canrenoate (Baker and Willis, 1972; Yeh and Lazzara, 1973). The ATPase pumps 2 K+ ions into the cell for every 3 Na+ ions out and these constants must be multiplied by Jp for each ion, respectively. K+ and Cl- were also modified by flux through the type 2 K-Cl cotransporter (KCC2), which has a stoichiometry of 1:1 and transports both ions in the same direction. Flux though KCC2, JKCC2 (Doyon et al., 2016), was modeled as follows:(3)JKCC2=gKCC2EK-ECl,where gKCC2 is a fixed conductance and EK and ECl are the Nernst potentials for K+ and Cl- respectively. JKCC2 is 0 when EK=ECl. The rate of change of the intracellular concentration of the three permeant ions was given by the following equations, with the Nernst potentials for each ion given by Eion=RTzFln⁡([ion]o[ion]i), w indicating the cell volume, and dwdt as described in Equation 7 (Figure 1–5,6A,B,7 and 8 or 9 or Equation 9 (Figure 6C–E):(4)d[Na+]idt=-AmFgNaVm-ENa+3Jp-1wdwdt[Na+]i(5)d[K+]idt=-AmFgKVm-EK-2Jp-JKCC2-1wdwdt[K+]i(6)d[Cl-]idt=AmFgClVm-ECl+JKCC2-1wdwdt[Cl-]i.
+### Membrane potential
 
-## Volume
+The membrane potential Vm was based on the ‘Charge Difference’ approach (Rybak et al., 1997; Fraser and Huang, 2004) as follows:
 
-In most calculations, because the osmotic flux of water is expected to be faster than ion fluxes, the volume of the cell (w) was adjusted to reduce the difference between Πi (intracellular osmolarity) and Πo (extracellular osmolarity) at each time step by explicitly modelling water flux, where vw is the partial molar volume of water, pw the osmotic permeability of a biological membrane and SA the surface area (Hernández and Cristina, 1998):dwdt=vw∙pw∙SA∙(Πi-Πo).
+$$
+V_{m}=\frac{F([Na^{+}]_{i}+[K^{+}]_{i}-[Cl^{-}]_{i}+z[X^{z}]_{i})}{C_{m}A_{m}}
+$$
 
-In some calculations (Figure 6C–E) in which we allowed transmembrane differences in osmolarity to develop, we assumed that at rest the cylindrical cell had a radius of ra and zero pressure across the membrane, and that the tension (T) in the membrane followed Hooke’s law such that the tension was proportional to the difference between the dynamic circumference of the cell and that of the resting state. From Laplace’s law the hydrostatic pressure in the cell was given by:(8)Hp={4πkm(1−rar)r>ra0,otherwisewhere km is the spring constant of the membrane (Sachs and Sivaselvan, 2015). Equation 7 was thus reformulated:(9)dwdt=vw∙pw∙SA∙Πi-Πo-HpRT.
+where F is Faraday’s constant, Cm is the unit membrane capacitance and Am is calculated as the ratio of the surface area (of the cylinder) to cell volume. The term in brackets is the sum of all ionic charges within the cell. This approach has the advantage that the initial voltage can be calculated without needing to assume a steady state as is required for by the Goldman-Hodgkin-Katz (GHK) equation.
+
+### Permeable ion concentrations
+
+Intracellular concentrations of the permeable ions Na+, K+ and Cl- were updated individually by summing trans-membrane fluxes. Leak currents were calculated using Ohm's Law, $I=g(V_{m}-E)$. In addition, Na+ and K+ were transported actively by the Na+/K+-ATPase, with pump rate Jp, which was approximated by a cubic function dependent on the transmembrane sodium gradient, following (Keener and Sneyd, 1998):
+
+$$
+J_{p}=P\frac{[Na^{+}]_{i}}{[Na^{+}]_{o}}^{3},
+$$
+
+where P is the pump rate constant. Because it is a function of the sodium gradient, Jp decreases as [Na+]i depletes. This formulation has been shown to be similar to more accurate kinetic models reliant on both the Na+ gradient and ATP concentration (Keener and Sneyd, 1998). To switch the ATPase pump on or off (Figure 1C), P was decreased/increased exponentially over 10–20 min, consistent with previous reports of the dynamics of inhibition of the ATPase by ouabain and in turn the inhibition of ouabain’s effects by potassium canrenoate (Baker and Willis, 1972; Yeh and Lazzara, 1973). The ATPase pumps 2 K+ ions into the cell for every 3 Na+ ions out and these constants must be multiplied by Jp for each ion, respectively. K+ and Cl- were also modified by flux through the type 2 K-Cl cotransporter (KCC2), which has a stoichiometry of 1:1 and transports both ions in the same direction. Flux though KCC2, JKCC2 (Doyon et al., 2016), was modeled as follows:
+
+$$
+J_{KCC2}=g_{KCC2}E_{K}-E_{Cl},
+$$
+
+where gKCC2 is a fixed conductance and EK and ECl are the Nernst potentials for K+ and Cl- respectively. JKCC2 is 0 when EK=ECl. The rate of change of the intracellular concentration of the three permeant ions was given by the following equations, with the Nernst potentials for each ion given by $E_{ion}=\frac{RT}{zF}ln⁡(\frac{[ion]_{o}}{[ion]_{i}})$, w indicating the cell volume, and $\frac{dw}{dt}$ as described in Equation 7 (Figure 1–5,6A,B,7 and 8 or 9 or Equation 9 (Figure 6C–E):
+
+$$
+\frac{d[Na^{+}]_{i}}{dt}=-\frac{A_{m}}{F}g_{Na}V_{m}-E_{Na}+3J_{p}-\frac{1}{w}\frac{dw}{dt}[Na^{+}]_{i}
+$$
+
+
+
+$$
+\frac{d[K^{+}]_{i}}{dt}=-\frac{A_{m}}{F}g_{K}V_{m}-E_{K}-2J_{p}-J_{KCC2}-\frac{1}{w}\frac{dw}{dt}[K^{+}]_{i}
+$$
+
+
+
+$$
+\frac{d[Cl^{-}]_{i}}{dt}=\frac{A_{m}}{F}g_{Cl}V_{m}-E_{Cl}+J_{KCC2}-\frac{1}{w}\frac{dw}{dt}[Cl^{-}]_{i}.
+$$
+
+### Volume
+
+In most calculations, because the osmotic flux of water is expected to be faster than ion fluxes, the volume of the cell (w) was adjusted to reduce the difference between $Π_{i}$ (intracellular osmolarity) and $Π_{o}$ (extracellular osmolarity) at each time step by explicitly modelling water flux, where vw is the partial molar volume of water, pw the osmotic permeability of a biological membrane and SA the surface area (Hernández and Cristina, 1998):
+
+$$
+\frac{dw}{dt}=v_{w}∙p_{w}∙SA∙(Π_{i}-Π_{o}).
+$$
+
+In some calculations (Figure 6C–E) in which we allowed transmembrane differences in osmolarity to develop, we assumed that at rest the cylindrical cell had a radius of ra and zero pressure across the membrane, and that the tension (T) in the membrane followed Hooke’s law such that the tension was proportional to the difference between the dynamic circumference of the cell and that of the resting state. From Laplace’s law the hydrostatic pressure in the cell was given by:
+
+$$
+H_{p}={4\pik_{m}(1−\frac{r_{a}}{r})r>r_{a}0,otherwise
+$$
+
+where km is the spring constant of the membrane (Sachs and Sivaselvan, 2015). Equation 7 was thus reformulated:
+
+$$
+\frac{dw}{dt}=v_{w}∙p_{w}∙SA∙Π_{i}-Π_{o}-\frac{H_{p}}{RT}.
+$$
 
 In order to simulate extreme conditions of constrained volume, a larger km was employed than is realistic (Dai et al., 1998). Intracellular ion concentrations were updated again after volume change at each time step. Volume changes were manifested in the cylindrical compartment as change in the radius. In Figures 1–6, the cell was initialised with diameter 10 μm and length 25 μm.
 
-## Anion flux
+### Anion flux
 
 Impermeant anions were manipulated in the compartment in Figures 4–6 and Figure 8 through several mechanisms. Anions could be added to the compartment at a constant rate and have either the default intracellular X charge z = −0.85 (Figures 4C, 6C and 8B), or a different charge (Figures 5C, 6A and 8C). In these cases, the number of moles of X in the compartment was increased. Alternatively, the charge of a species of intracellular X was slowly changed imitating a charge-carrying trans-membrane reaction (Figures 5A and 6A). In this case, the number of moles of intracellular X did not change and it was assumed charge imbalance was compensated by the extracellular milieu. Finally, extracellular X- was changed in Figure 4D by removing as much Cl- as X- was added, thus maintaining osmolarity and electroneutrality in the extracellular space.
 
-## Multi-compartment model
+### Multi-compartment model
 
 The single-compartment dendrite model was incorporated in a multi-compartment model by allowing electrodiffusion to occur between individual compartments operating as described above. Compartments were initialised with a radius of 0.5 μm and length of 10 μm. Compartments were linked linearly without branching; 10 connected compartments in total were used. The time step dt was decreased to 10−3 ms for simulations in multiple compartments. Code was written in Python 3 and is available on GitHub (Düsterwald and Currin, 2018).
 
-Electrodiffusion. The Nernst-Planck equation (NPE) was used to model one-dimensional electrodiffusion, based on Qian and Sejnowski (1989). The NPE incorporates fluxes because of diffusion and drift (i.e. the movement of ions driven by an electric field). It has been shown to be more accurate than using Jdiffusion alone in small structures like dendrites (Qian and Sejnowski, 1989). The NPE for J the flux density of ion C is calculated as:(10)J=-DzF2RTCdVmdx-DFdCdx,where D is the diffusion constant of ion C (Table 1), z is its charge, [C] is its concentration and x is the distance along the longitudinal axis over which electrodiffusion occurs. The NPE was implemented between compartments i and i + 1, assuming the i→i + 1 direction was positive, using a forward Euler approach. The midpoints of the compartments were used to calculate dx, i.e.dx=hi+hi+12, and the concentrations of C in each compartment were averaged to obtain Jdrift, ensuring that Ji→i+1 = Ji+1→i, where the fluxes had units of mol/(s.dm2):(11)Ji→i+1=-D zFRTCi+Ci+12dVmdx+d[C]dx.
+Electrodiffusion. The Nernst-Planck equation (NPE) was used to model one-dimensional electrodiffusion, based on Qian and Sejnowski (1989). The NPE incorporates fluxes because of diffusion and drift (i.e. the movement of ions driven by an electric field). It has been shown to be more accurate than using Jdiffusion alone in small structures like dendrites (Qian and Sejnowski, 1989). The NPE for J the flux density of ion C is calculated as:
 
-The flux was multiplied by the surface area between compartments and then divided by compartment volume to determine the flux in terms of molar concentration (M/s), i.e. πr2πr2hi=1hi,and finally implemented numerically with a forward Euler approach. The implementation mirrored that in Qian and Sejnowski (1989) for non-branching dendrites, but was adjusted for compartments whose volumes can change:(12)Ci→i+1=-dthiD zFRTCi+Ci+12Vmi-Vmi+1dx+Ci-Ci+1dx.
+$$
+J=-D\frac{zF^{2}}{RT}C\frac{dV_{m}}{dx}-DF\frac{dC}{dx},
+$$
 
-## Systematic review
+where D is the diffusion constant of ion C (Table 1), z is its charge, [C] is its concentration and x is the distance along the longitudinal axis over which electrodiffusion occurs. The NPE was implemented between compartments i and i + 1, assuming the i→i + 1 direction was positive, using a forward Euler approach. The midpoints of the compartments were used to calculate dx, i.e.$dx=\frac{h_{i}+h_{i+1}}{2}$, and the concentrations of C in each compartment were averaged to obtain Jdrift, ensuring that Ji→i+1 = Ji+1→i, where the fluxes had units of mol/(s.dm2):
+
+$$
+J_{i→i+1}=-D\frac{zF}{RT}\frac{C_{i}+C_{i+1}}{2}\frac{dV_{m}}{dx}+\frac{d[C]}{dx}.
+$$
+
+The flux was multiplied by the surface area between compartments and then divided by compartment volume to determine the flux in terms of molar concentration (M/s), i.e. $\frac{\pir^{2}}{\pir^{2}h_{i}}=\frac{1}{h_{i}},$and finally implemented numerically with a forward Euler approach. The implementation mirrored that in Qian and Sejnowski (1989) for non-branching dendrites, but was adjusted for compartments whose volumes can change:
+
+$$
+C_{i→i+1}=-\frac{dt}{h_{i}}D\frac{zF}{RT}\frac{C_{i}+C_{i+1}}{2}\frac{V_{m_{i}}-V_{m_{i+1}}}{dx}+\frac{C_{i}-C_{i+1}}{dx}.
+$$
+
+### Systematic review
 
 A literature search was performed to identify experimental studies that aimed to correlate a change in KCC2 expression with changes in [Cl-]i. The MEDLINE database was used and accessed via the PubMed online platform. Search terms included ‘chloride’, ‘Cl’, ‘intracellular’, ‘KCC2’, ‘cotransporter’, ‘neuronal’, ‘GABA’ using appropriate Boolean operators. All 26 studies that demonstrated changes in KCC2 expression and EGABA were considered for the meta-analysis. As there is a well-described differential expression of KCC2 and NKCC1 at different stages of development, with KCC2 expression increasing and NKCC1 expression decreasing across development, only studies that used tissue older than postnatal day seven were included (eight included data from younger animals). Other exclusion criteria included: reporting a significant change in NKCC1 (five studies); use of non-rodent tissue (two studies); no quantification of the change in KCC2 (two studies). Nine experiments from eight studies met all criteria and were included (Coull et al., 2003; Lagostena et al., 2010; Lee et al., 2011; Ferrini et al., 2013; Campbell et al., 2015; MacKenzie and Maguire, 2015; Mahadevan et al., 2015; Tang et al., 2015). However, one study did not report the change in Vm and hence was excluded from the figure (Mahadevan et al., 2015). Data used in regression can be seen in Supplementary file 2 (Table S2-1) and includes the analysis for regression against change in [Cl-]i. To accommodate varied experimental preparations and techniques influencing data quality and biases, a 34-point scoring system was designed to weight the studies (Table S2-2). A weighted least squares regression model was then used to correlate the percentage (%) change in KCC2 expression versus change in Cl-d driving force.
 
-## Slice preparation and electrophysiology
+### Slice preparation and electrophysiology
 
 For all experiments, organotypic slices were prepared from rodent brain tissue. Wistar rats were used for the experiments testing the effects of CCC blockade. However, to allow for optogenetic manipulation, a crossed mouse strain on a C57BL/6 background was used. This mouse strain was a cross between mice expressing cre-recombinase in glutamic acid decarboxylase 2 (GAD2) positive interneurons (GAD2-IRES-cre, Jax Lab strain 010802) and mice with a loxP-flanked STOP cassette preventing transcription of the red-fluorescent protein tdTomato (a cre-reporter strain, Ai4, Jax Lab strain 007914). This created the GAD2-cre-tdTomato strain which resulted in cre-recombinase and tdTomato expression in all GABAergic interneurons (Taniguchi et al., 2011). The use of all animals was approved by either the University of Oxford (rat) or the University of Cape Town (mouse) animal ethics committees.
 

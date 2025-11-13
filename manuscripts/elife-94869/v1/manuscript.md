@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/04ydmy275 Medical Scientist Training Program, T.H. Chan School of Medicine, University of Massachusetts Boston United States
-3. https://ror.org/0464eyp60 Interdisciplinary Graduate Program, Morningside Graduate School of Biomedical Sciences, University of Massachusetts Chan Medical School Worcester United States
-4. https://ror.org/04p491231 Center for Eukaryotic Gene Regulation, Department of Biochemistry and Molecular Biology, Pennsylvania State University University Park United States
-5. https://ror.org/0443cwa12 Department of Chemistry and Biotechnology, Tallinn University of Technology Tallinn Estonia
+1. Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Medical Scientist Training Program, T.H. Chan School of Medicine, University of Massachusetts Boston United States ([ROR:04ydmy275](https://ror.org/04ydmy275))
+3. Interdisciplinary Graduate Program, Morningside Graduate School of Biomedical Sciences, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Center for Eukaryotic Gene Regulation, Department of Biochemistry and Molecular Biology, Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+5. Department of Chemistry and Biotechnology, Tallinn University of Technology Tallinn Estonia ([ROR:0443cwa12](https://ror.org/0443cwa12))
 
 † Corresponding author
 
@@ -37,9 +37,25 @@ Here, we investigate the role of the nucleosome acidic patch in dimer exchange b
 
 ## Results
 
-## Dimer exchange by SWR1C requires the nucleosomal acidic patch
+### Dimer exchange by SWR1C requires the nucleosomal acidic patch
 
 To investigate the role of the nucleosomal acidic patch on dimer exchange by SWR1C, a fluorescence-based assay was initially employed. Recombinant nucleosomes were assembled with octamers containing wildtype Saccharomyces cerevisiae H2A/H2B (AB) dimers and Xenopus laevis H3/H4 tetramers or with S. cerevisiae H2A/H2B dimers containing eight alanine substitutions for residues that comprise the nucleosomal acidic patch (AB-apm, see Method section for residue list). The DNA template for nucleosome reconstitutions was a 224-bp fragment containing a ‘601’ nucleosome positioning sequence and an asymmetric, 77 bp linker DNA to mimic the structure of a promoter-proximal nucleosome located next to a nucleosome-depleted region (77N0) (Lowary and Widom, 1998). These substrates contain a Cy3 fluorophore conjugated to the linker distal end of the nucleosomal DNA, and a Cy5 fluorophore attached to an engineered cysteine residue (H2A-119) within the histone H2A C-terminal domain. The Cy3 and Cy5 fluorophores are within an appropriate distance to function as an FRET pair, such that excitation of the Cy3 donor leads to efficient energy transfer to the Cy5 acceptor, as evidenced by the fluorescence emission peak at 670 nm. The dimer exchange activity of SWR1C is monitored by following the decrease in the 670 nm FRET signal due to eviction of the Cy5-labeled AB-Cy5 dimer (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of SWR1C-mediated dimer exchange. Cylinder is representative of a nucleosome; light gray area of cylinder represents H3/H4 tetramer, dark gray area of cylinder represents AB heterodimer, yellow star represents Cy5, pink star represents Cy3, and solid black line represents DNA. The nucleosome undergoes two rounds of SWR1C-mediated dimer eviction where ZB heterodimers (orange) replace AB heterodimers. (B) 77N0-Cy3 nucleosomes were remodeled by SWR1C under single turnover conditions (30 nM SWR1C, 10 nM 77N0-Cy3 nucleosomes, 70 nM ZB dimers, 1 mM ATP or AMP-PNP). Dimer eviction is monitored by measuring Cy5 emission at 670 nm. SWR1C was able to perform dimer exchange on an AB-Cy5/AB-Cy5 nucleosome (red line) but was unable to exchange dimers on an AB-apm-Cy5/AB-apm-Cy5 nucleosome (black line). The AMP-PNP reaction contained the AB-apm-Cy5/AB-apm-Cy5 nucleosomal substrate. (C) Asymmetrically assembled 77N0-Cy3 and Cy3-0N77 nucleosomes were remodeled by SWR1C under single turnover conditions (50 nM SWR1C, 10 nM nucleosomes, 50 nM ZB dimers, 1 mM ATP) and one-phase eviction rates were calculated in Prism 9 and plotted. The dimer labels are listed in linker proximal (LP), linker distal (LD) order (see inset for template nucleosome represented as a cylinder with H3/H4 tetramer in light gray, LP dimer in green, LD dimer in dark blue, DNA as a solid black line with Cy3 (pink star) on the 0bp-linker side). Nucleosomes with a ZB dimer contralateral to the dimer being evicted had significantly faster rates for both linker distal (first two bars) and linker proximal (second two bars). Linker distal eviction was also significantly faster than linker proximal eviction. Rates for nucleosomes containing an AB-apm dimer contralateral to the dimer being evicted (fifth and sixth bars) were not significantly different from no enzyme controls (last bar) in either orientation. SWR1C was also unable to evict a dimer with an acidic patch mutant (seventh bar). (D) Asymmetrically assembled 0N0-Cy3 nucleosomes were remodeled by SWR1C under single turnover conditions (50 nM SWR1C, 10 nM nucleosomes, 50 nM ZB dimers, 1 mM ATP) and one-phase eviction rates were calculated in Prism 9 and plotted. Nucleosomes contained a single AB-Cy5 dimer and a contralateral AB or ZB dimer (see inset for template nucleosome represented as a cylinder with H3/H4 tetramer in light gray, AB-Cy5 dimer in dark gray, contralateral AB or ZB dimer represented by dark gray to orange gradient, 0N0-Cy3 DNA as a solid black line with Cy3 (pink star) label on one side). AB-Cy5/ZB 0N0-Cy3 nucleosomes had significantly faster eviction than AB-Cy5/AB 0N0-Cy3 nucleosomes. At least three independent nucleosome preparations were used for substrate, and error bars reflect 95% confidence intervals from at least three replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** SWR1C-mediated ZB deposition was measured by incorporation of H2AZ3x-FLAG/H2B dimers at various time points on 77N0 AB/AB (A) or 77N0 AB-apm/AB-apm (B) nucleosomes. SWR1CSwc5∆+rSwc5RRKR-4A-mediated ZB deposition on 77N0 AB/AB nucleosomes was also measured (C). Percent of remodeled nucleosome in each condition was quantified using ImageQuant and plotted in (D).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of assembly of asymmetric nucleosomes from purified hexasomes. Hexasomes (represented by partial cylinder, H3/H4 tetramer in light gray, AB dimer in dark gray, Cy5 yellow star, 77N0 DNA by thick black line, and Cy3 by pink star) spontaneously assemble into nucleosomes upon addition of free dimer (AB-apm, shown added in light blue). (B–D) give representative examples of the checkpoints performed during assembly of asymmetric nucleosomes. (B) For each hexasome needed for biochemical assays, the ratio of dimer to tetramer was varied during reconstitution to optimally bias the reaction toward hexasomes and assessed by native-PAGE with a tetramer:DNA ratio of 1.4 and a dimer:DNA ratio of 1.4, 1.8, and 2.4. (C) After purification of hexasomes, contralateral dimer to be placed was titrated to determine optimal conversion to nucleosome and assessed by native-PAGE with a canonically reconstituted 77N0 or 0N0 nucleosome as appropriate added for comparison with a ratio of dimer to hexasome of 0.9, 1, 1.1, and 1.2. (D) As a final check before performing biochemical assays, each hexasome was run on a native-PAGE gel with nucleosomes formed by dimer addition and a canonically assembled nucleosome for comparison.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–I) Graphs of dimer eviction data used to calculate rates in Figure 1C and D. Reactions were carried out under single turnover conditions (50 nM SWR1C, 10 nM nucleosomes, 60 nM ZB dimers) in the presence of ATP (blue) or AMP-PNP (red) for each of the asymmetric nucleosome (listed linker proximal/ linker distal/DNA template at top left of each graph) and loss of FRET was measured over time. (A–F) Rates for ATP reactions differed significantly from AMP-PNP while in (G–I) there was no significant difference. (A, D, F) have six replicates while the rest are done in triplicate. Note that the AMP-PNP reactions in panels A and D showed higher rates of FRET loss compared to all other substrates. This was reproducible in three different nucleosome preparations and in all replicates. This loss of FRET was not observed in the no enzyme control, indicating enzyme-dependent destabilization (see source data file). These higher ‘background’ rates are not observed when this same DNA template is reconstituted with Cy5-labeled octamers; thus, the apparent instability of these nucleosomes seems inherent to the hexosome assembly method.
 
 Reactions to measure dimer exchange by SWR1C were performed under single turnover conditions (excess enzyme to nucleosomal substrate) and contained free H2A.Z/H2B (ZB) dimers which act as an essential co-substrate. Addition of SWR1C to a wildtype nucleosome led to a rapid drop in FRET, showing the biphasic kinetics consistent with the sequential exchange of the two nucleosomal H2A/H2B (AB) dimers (Fan et al., 2022; Singh et al., 2019).  Incubation of SWR1C with a nucleosome that lacks an intact acidic patch (AB-apm/AB-apm nucleosome) showed little decrease in the FRET signal, indicating that an intact nucleosomal acidic patch is essential for SWR1C to catalyze H2A/H2B eviction (Figure 1B).
 
@@ -51,17 +67,33 @@ First, we monitored H2A.Z deposition with nucleosomes harboring an unlabeled H2A
 
 Previously, we and others reported that SWR1C preferentially exchanges the linker distal H2A/H2B dimer, as monitored by either ensemble or single molecule FRET analyses (Fan et al., 2022; Poyton et al., 2022). The asymmetric nucleosome substrates, harboring only a single, labeled H2A/H2B dimer were leveraged to further investigate this preferential exchange. Consistent with previous results, a substrate with a labeled, linker distal heterodimer is exchanged at a ~threefold faster rate by SWR1C compared to the linker proximal dimer (Figure 1C, compare AB/AB-Cy5 to AB-Cy5/AB; Figure 1—figure supplement 3A, B). To rule out the possibility that this preferential exchange was influenced by the unlabeled H2A/H2B dimer on the opposing nucleosomal face, nucleosomes harboring an unlabeled ZB dimer were also reconstituted. In these cases as well, the linker distal H2A/H2B dimer was exchanged at a more rapid rate, compared to the linker proximal heterodimer (Figure 1C, compare ZB/AB-Cy5 to AB-Cy5/ZB; Figure 1—figure supplement 3D, E). Surprisingly, incorporation of the ZB heterodimer on the contralateral (opposite to the dimer being evicted) nucleosome face stimulated H2A.Z deposition, irrespective of linker orientation (Figure 1C; purple bars). The stimulatory effect of contralateral ZB heterodimer placement remained even after elimination of the linker DNA (Figure 1D, Figure 1—figure supplement 3C, F). Interestingly, these assays also confirmed that linker DNA has a stimulatory impact on the H2A.Z deposition reaction, with both linker distal and linker proximal eviction occurring at a faster rate than eviction from a nucleosome core particle (Ranjan et al., 2013). To test whether the stimulation by linker DNA was due to differences in nucleosome-binding affinity, we ensured the experiment was done under saturating enzyme levels by repeating it at a fourfold increase in the concentration of SWR1C. At this higher concentration of SWR1C, the rates were unchanged, and the stimulatory impact of linker DNA remained (Figure 2—figure supplement 1A). Thus, both linker DNA and nucleosomal ZB dimers appear to stimulate H2A.Z deposition.
 
-## Intact nucleosomal acidic patches are required for SWR1C ATPase activity
+### Intact nucleosomal acidic patches are required for SWR1C ATPase activity
 
 The ATPase activity of SWR1C is stimulated by both its nucleosomal substrate and free ZB dimers (Luk et al., 2010).  Notably, the ATPase activity of SWR1C is not stimulated by a ZB/ZB nucleosome, implying that SWR1C can distinguish product from substrate (Luk et al., 2010).  To investigate the role of the nucleosomal acidic patch in the stimulation of SWR1C ATPase activity, SWR1C ATPase activity was measured in the presence or absence of different 77N0-Cy3 nucleosomes.  Consistent with previous results (Luk et al., 2010), SWR1C ATPase activity was stimulated by AB/AB nucleosomes as compared to the basal level. However, ATPase activity was not stimulated by either of the asymmetric acidic patch mutant nucleosomes (AB-apm/AB, AB/AB-apm) or by a nucleosome lacking both acidic patches (AB-apm/AB-apm), demonstrating the essential role of dual acidic patch engagement by SWR1C for stimulation of ATPase activity (Figure 2—figure supplement 1B).
 
-## The nucleosomal acidic patch is a key driver of SWR1C-binding affinity
+### The nucleosomal acidic patch is a key driver of SWR1C-binding affinity
 
 The inability of APM nucleosomes to stimulate the ATPase activity of SWR1C could be due to a defect in binding or the inability to form an active complex post-binding. To explore whether disruption of each acidic patch might impact the nucleosome-binding affinity of SWR1C for nucleosomes, we leveraged an FP assay. Using a Cy3-labeled 77N0 nucleosome, we determined a Kd of 13.6 nM for an AB/AB nucleosome (Figure 2A), similar to prior studies (Fan et al., 2022). However, disruption of even a single nucleosomal acidic patch severely weakened SWR1C binding, such that a Kd was unable to be determined (Figure 2B–D). Given the range of SWR1C concentrations that could be used in this assay, we estimate that alteration of one or both nucleosomal acidic patches decreases binding affinity by at least 10-fold. These data indicate that the inability of APM nucleosomes to stimulate SWR1C ATPase activity is most likely due to a defect at the nucleosome-binding step (Km), rather than Kcat, though an impact at this latter step cannot be eliminated as yet.
 
-## Swc5 interacts with the nucleosomal acidic patch
+![Figure 2.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig2-v1.jpg)
+
+**Figure 2.:** Asymmetrically assembled 77N0-Cy3 nucleosomes were incubated with SWR1C serially diluted in concentration from approximately 1 µM to 1 nM. Fluorescence polarization (FP) values were collected and plotted by concentration for each nucleosome type. Each graph has a representative nucleosome at the top left (represented by a cylinder with H3/H4 tetramer in light gray, AB dimer in dark gray, AB-apm dimer in light blue, 77N0-Cy3 DNA as a solid black line with Cy3 (pink star) label on the 0bp-linker side). FP data were normalized between experiments by translation, which does not effect the binding curve fit so that plots can be compared at a glance. (A) AB/AB 77N0-Cy3 nucleosomes showed a Kd as determined by a fit to the Morrison equation (blue line). The Kd calculated for each individual replicate was 13.55, 13.32, 13.94, and 13.75. The average of those individual values is 13.64. The standard deviation is 0.27. A Kd was unable to be calculated for nucleosomes with a linker proximal acidic patch mutant (B), a linker distal acidic patch mutant (C), or both acidic patches mutated (D) at the range of concentrations of SWR1C tested suggesting at least a 10-fold reduction in binding affinity. Error bars reflect 95% confidence intervals from at least three replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Graph of dimer eviction data carried out at high enzyme concentrations (200 nM SWR1C, 10 nM nucleosomes, 250 nM ZB dimers, 1 mM ATP) on AB/AB-Cy5 0N0-Cy3 nucleosomes (maroon) or AB/AB-Cy5 77N0-Cy3 nucleosomes (blue). SWR1C evicted AB-Cy5 dimers significantly faster in the presence of linker DNA. (B) ATPase activity of SWR1C was measured by phosphate-binding protein assay in the presence of various asymmetrically assembled 77N0 nucleosomes and normalized to basal activity. AB/AB nucleosomes (green bar) stimulated the ATPase rate as compared to basal SWR1C activity (blue bar). SWR1C activity in the presence of nucleosomes containing a linker proximal (yellow), distal (salmon) acidic patch mutant, or both (orange) acidic patches mutated did not differ significantly from basal SWR1C rates. (C) Nucleosomal stimulation of SWR1C ATPase activity with (purple bars) or without (green bars) ZB dimers added was measured for SWR1C, SWR1CSwc5∆+rSwc579–303, and SWR1CSwc5∆+rSwc5LDW-3A using a phosphate sensor assay. Calculated rates were normalized to basal SWR1C activity (blue bar). Stimulation of ATPase activity was restored to the Swc5Δ complex by the Swc579–303 derivative, but not by the Swc5LDW-3A derivative.
+
+### Swc5 interacts with the nucleosomal acidic patch
 
 Recently, a potential arginine anchor domain, the archetypal motif for proteins interacting with the nucleosomal acidic patch, was identified within the N-terminal, acidic domain of the SWR1C subunit, Swc2. However, removal of this domain (Swc2-ZN) has only a modest impact on the dimer exchange activity of SWR1C, and these data, combined with the essential nature of the nucleosomal acidic patches for SWR1C activity, suggest that additional subunits must contribute to acidic patch recognition (Dai et al., 2021). The Swc5 subunit is one candidate, as loss of Swc5 eliminates H2A.Z deposition and nucleosome-stimulated ATPase activity (Wu et al., 2005; see Figure 3B, C). Furthermore, removal of the Swc5 subunit from SWR1C crippled nucleosome binding, as measured by FP (Figure 3D). Previous studies of Swc5 identified an acidic N-terminal domain that interacts preferentially with AB dimers, and a conserved C-terminal domain, termed BCNT, that is essential for dimer exchange by SWR1C (Sun and Luk, 2017; Huang et al., 2020). An alignment of Swc5 homologs revealed a region adjacent to the BCNT domain, containing multiple arginine residues in a conserved basic region (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig3-v1.jpg)
+
+**Figure 3.:** (A) Alignment of SWR1C subunit Swc5 homologs reveals a conserved arginine in a region we named the RRKR motif in S. cerevisiae adjacent to the essential BCNT region and conserved LDW residues (asterisks are used to denote residues mutated in RRKR-4A and LDW-3A mutants). A linear schematic of this gene with the acidic N-terminal domain in orange, gene body in gray, RRKR motif in red, and BCNT region in purple shows relative locations of these domains. (B) Swc5 and Swc5 derivatives were reconstituted into SWR1CSwc5∆ complexes to measure their activity on dimer exchange using Förster-resonance energy transfer (FRET) at single turnover conditions (30 nM SWR1C, 10 nM 77N0-Cy3 AB-Cy5/AB-Cy5 nucleosomes, 70 nM ZB dimers, 1 mM ATP). The relative fluorescence unit (RFU) for each reaction was normalized and plotted as a function of time. SWR1CSwc5∆ was unable to carry out dimer exchange (black triangles), and recombinant Swc5 (rSwc5) rescued activity (red circles). SWR1CSwc5∆ reconstituted with Swc5 containing mutations in the LDW (rSwc5LDW-3A) or RRKR motifs (rSwc5RRKR-4A) showed no dimer eviction activity (purple and blue circles, respectively), while an N-terminal truncation of Swc5 (rSwc579–303) had a reduction in activity compared to full-length Swc5 (yellow triangles). (C) Asymmetrically assembled 77N0-Cy3 nucleosomes were incubated with SWR1CSwc5∆ serially diluted in concentration from approximately 1 µM to 1 nM. Fluorescence polarization values were collected and plotted by concentration. A representative nucleosome is shown at the top left (represented by a cylinder with H3/H4 tetramer in light gray, AB dimer in dark gray, 77N0-Cy3 DNA as a solid black line with Cy3 (pink star) label on the 0bp-linker side). (D) Nucleosomal stimulation of SWR1C ATPase activity with (purple bars) or without (green bars) ZB dimers added was measured for complexes containing SWR1C, SWR1CSwc5∆, SWR1CSwc5∆+rSwc5, and SWR1CSwc5∆+rSwc5RRKR-4A using a phosphate sensor assay. Calculated rates were normalized to basal SWR1C activity (blue bar). Stimulation of ATPase activity was lost in the SWR1CSwc5∆ complex and reduced in the SWR1CSwc5∆+rSwc5RRKR-4A complex. Error bars reflect 95% confidence intervals from at least three replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel showing wildtype SWR1C, SWR1CSwc5∆, and SWR1CSwc5∆ with various recombinant Swc5 reincorporated (Swc5 denoted by asterisk).
 
 To investigate the role of this Swc5 arginine-rich domain, alanine substitutions were created in four basic residues (RRKR), and this derivative was recombinantly expressed and reconstituted into a SWR1C complex purified from a swc5 deletion strain (SWR1Cswc5∆). In addition, SWR1C was reconstituted with wildtype Swc5, a Swc5 derivative lacking the acidic N-terminal domain (Swc579–303), and a Swc5 derivative harboring alanine substitutions in the essential BCNT domain (Swc5LDW-3A). In all cases, derivatives were incorporated into SWR1C complexes with equal efficiencies (Figure 3—figure supplement 1). Consistent with previous studies, reconstitution with wildtype Swc5 fully restored dimer exchange activity to SWR1Cswc5∆ (Figure 3B, red curve). In contrast, SWR1C harboring Swc5LDW-3A had no detectable exchange activity, and the complex that lacks the N-terminal, acidic domain of Swc5 (Swc579–303) exhibited a modest defect, as expected from previous studies (Figure 3B; Sun and Luk, 2017). Strikingly, SWR1C that contained the Swc5RRKR-4A derivative showed minimal activity in the FRET-based exchange assay (Figure 3B), and this complex exhibited only ~10% the activity of wildtype SWR1C in the gel-based H2A.Z deposition assay (Figure 1—figure supplement 1A, C, D). Dimer exchange activity for each SWR1C complex was also mirrored by their ATPase activity (Figure 3D). SWR1C swc5∆ lost nucleosome-stimulated ATPase activity, with or without free ZB dimers, as compared to wildtype. As expected, reconstitution of SWR1C swc5∆ with recombinant Swc5 rescued ATPase activity. Underscoring the importance of the arginine-rich domain, reconstitution of SWR1C swc5∆ with Swc5RRKR-4A showed a large defect in nucleosome-stimulated ATPase activity, revealing its importance in both dimer exchange and ATPase activity. Additionally, we reinforced prior findings that the ATPase activity of the Swc5LDW-3A complex was not stimulated by either nucleosomes or free ZB dimers, while the complex harboring Swc579–303 had wildtype levels of ATPase activity (Figure 2—figure supplement 1C).
 
@@ -69,31 +101,39 @@ To further investigate whether the arginine-rich domain within Swc5 binds to the
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig4-v1.jpg)
 
-**Figure 4.:** Gel mobility shift assays were performed with 5 nM 0N0 nucleosomes and recombinant Swc5 ranging in concentration from 0 to 500 nM, in 50 nM increments. Swc5 was able to bind AB/AB nucleosomes (A) but showed reduced binding of AB-apm/AB-apm nucleosomes (B). Swc5LDW-3A bound AB/AB nucleosomes (C) whereas Swc5RRKR-4A showed reduced binding (D). Percent of nucleosomes bound for each condition was calculated using ImageQuant and plotted by Swc5 concentration (E) and specific binding Kd values were predicted along with 95% confidence intervals (CIs) predicted in Prism 9 (F).Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4.
+**Figure 4.:** Gel mobility shift assays were performed with 5 nM 0N0 nucleosomes and recombinant Swc5 ranging in concentration from 0 to 500 nM, in 50 nM increments. Swc5 was able to bind AB/AB nucleosomes (A) but showed reduced binding of AB-apm/AB-apm nucleosomes (B). Swc5LDW-3A bound AB/AB nucleosomes (C) whereas Swc5RRKR-4A showed reduced binding (D). Percent of nucleosomes bound for each condition was calculated using ImageQuant and plotted by Swc5 concentration (E) and specific binding Kd values were predicted along with 95% confidence intervals (CIs) predicted in Prism 9 (F).
 
 A time-resolved FRET assay (TR-FRET) was employed (Figure 5A) as an additional solution approach to monitor the binding of Swc5 to nucleosomes (Wesley et al., 2022). In this assay, increasing concentrations of recombinant, 6His-tagged Swc5 were incubated with a 31N1 nucleosome. The 6His-Swc5 protein were labeled with a ULight alpha-6xHIS acceptor antibody, and biotinylated nucleosomal DNA was labeled with a Eu-streptavidin donor fluorophore (Figure 5A). The binding of Swc5 to the nucleosome was monitored by quantitative measurements of the time-resolved FRET signal between the ULight alpha acceptor and the Eu fluorophore. Binding curves for wildtype Swc5 yielded an apparent Kd of 133 ± 12 nM, a value that agrees well with the Kd measured by the nucleosome gel shift assay. Binding experiments performed in parallel with the Swc5RRKR-4A derivative yielded a Kd of 593 ± 28 nM, confirming that the arginine-rich motif within Swc5 plays a key role in nucleosome recognition (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig5-v1.jpg)
 
-**Figure 5.:** (A) Schematic of the TR-FRET assay. Recombinant 6His-Swc5 is labeled with a ULight alpha 6His acceptor antibody, and biotinylated nucleosomal DNA is labeled with an Eu-streptavidin acceptor fluorophore. The Förster-resonance energy transfer (FRET) signal increases as 6His-Swc5 binds to the nucleosome. (B) TR-FRET assay was performed with 2 nM 31N1 nucleosomes and recombinant Swc5 or Swc5RRKR-4A ranging in concentration from 0.6 to 6000 nM. Recombinant wildtype Swc5 bound with an apparent Kd of ~133 nM, while the Swc5RRKR-4A derivative bound with an apparent Kd of ~592 nM. Note that the Swc5RRKR-4A assays did not reach full saturation, and thus the measured Kd is likely an under-estimate of the reported value. Kd values were determined from triplicate titrations of each Swc5 variant and are reported as means ± standard error of the mean.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Schematic of the TR-FRET assay. Recombinant 6His-Swc5 is labeled with a ULight alpha 6His acceptor antibody, and biotinylated nucleosomal DNA is labeled with an Eu-streptavidin acceptor fluorophore. The Förster-resonance energy transfer (FRET) signal increases as 6His-Swc5 binds to the nucleosome. (B) TR-FRET assay was performed with 2 nM 31N1 nucleosomes and recombinant Swc5 or Swc5RRKR-4A ranging in concentration from 0.6 to 6000 nM. Recombinant wildtype Swc5 bound with an apparent Kd of ~133 nM, while the Swc5RRKR-4A derivative bound with an apparent Kd of ~592 nM. Note that the Swc5RRKR-4A assays did not reach full saturation, and thus the measured Kd is likely an under-estimate of the reported value. Kd values were determined from triplicate titrations of each Swc5 variant and are reported as means ± standard error of the mean.
 
 While the gel shift and TR-FRET assays establish that Swc5 can bind to nucleosomes, data from these assays can only indirectly link the nucleosomal acidic patch to the Swc5 arginine-rich domain. To probe for more direct interactions, a fluorescence quenching assay was employed. These assays exploit nucleosomes harboring a site-specific, Oregon Green fluorophore whose emission is sensitive to the chemical environment whereby fluorescence is quenched by protein binding (McGinty et al., 2014; Winkler et al., 2012). Nucleosome core particles were reconstituted that contained an Oregon Green fluorophore covalently attached to either the histone H4 N-terminal domain (H4-tail) (Figure 6A, top) or to a residue directly adjacent to the nucleosomal acidic patch (Figure 6A, bottom). Titration of wildtype Swc5 led to the concentration-dependent quenching of the Oregon Green fluorophore positioned at the acidic patch, but little quenching was observed for the fluorophore located on the H4-tail (Figure 6B) demonstrating the sensitivity of this assay. Importantly, Swc5 did not quench the acidic patch probe when this substrate also harbored alanine substitutions within the acidic patch (Figure 6B). Examined in the same titration of concentrations, we found that the Swc5LDW-3A derivative also showed specific quenching of the acidic patch probe (Figure 6C), but the Swc5RRKR-4A derivative was defective for quenching the acidic patch probe (Figure 6D). Together these results are consistent with a direct interaction between the arginine-rich domain of Swc5 and the nucleosomal acidic patch, an interaction that is essential for dimer exchange by SWR1C.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schematic of Oregon green based fluorescence quenching assay. Top shows a nucleosome (represented as a cylinder with H3/H4 tetramer in light gray, AB dimers in dark gray, and 0N0 DNA as a solid black line) with an Oregon green label (green star) on H4. Oregon green is exquisitely sensitive to changes in its local environment. Binding of an acidic patch interacting protein (pink) does not interact with Oregon green label on H4, resulting in no change in fluorescence intensity. A label on H2B near the acidic patch (bottom) is affected by an acidic patch interacting protein, resulting in decreased fluorescence intensity. (B) Swc5 was added to 10 nM H4-OG AB/AB 0N0 nucleosomes (orange squares), H2B-OG AB/AB 0N0 nucleosomes (blue circles), and H2B-OG AB-apm/AB-apm 0N0 nucleosomes (black circles) resulting in quenching of the AB/AB H2B-OG 0N0 nucleosomes but not the H4-OG AB/AB 0N0 nucleosomes or the H2B-OG AB-apm/AB-apm 0N0 nucleosomes. (C) Swc5LDW-3A similarly quenched H2B-OG AB/AB 0N0 nucleosomes with no change in H4-OG AB/AB 0N0 nucleosomes while Swc5RRKR-4A (D) did not show significant quenching in either condition. Error bars reflect standard deviations from at least three replicates.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schematic of Oregon green based fluorescence quenching assay. Top shows a nucleosome (represented as a cylinder with H3/H4 tetramer in light gray, AB dimers in dark gray, and 0N0 DNA as a solid black line) with an Oregon green label (green star) on H4. Oregon green is exquisitely sensitive to changes in its local environment. Binding of an acidic patch interacting protein (pink) does not interact with Oregon green label on H4, resulting in no change in fluorescence intensity. A label on H2B near the acidic patch (bottom) is affected by an acidic patch interacting protein, resulting in decreased fluorescence intensity. (B) Swc5 was added to 10 nM H4-OG AB/AB 0N0 nucleosomes (orange squares), H2B-OG AB/AB 0N0 nucleosomes (blue circles), and H2B-OG AB-apm/AB-apm 0N0 nucleosomes (black circles) resulting in quenching of the AB/AB H2B-OG 0N0 nucleosomes but not the H4-OG AB/AB 0N0 nucleosomes or the H2B-OG AB-apm/AB-apm 0N0 nucleosomes. (C) Swc5LDW-3A similarly quenched H2B-OG AB/AB 0N0 nucleosomes with no change in H4-OG AB/AB 0N0 nucleosomes while Swc5RRKR-4A (D) did not show significant quenching in either condition. Error bars reflect standard deviations from at least three replicates.
 
-## Structure of a Swc5–nucleosome complex
+### Structure of a Swc5–nucleosome complex
 
 We analyzed the structure of Swc579–303 in complex with a 147-bp nucleosome core particle using cryo-EM (Figure 7). We collected over 13,000 micrographs of the cross-linked sample and were able to easily resolve the nucleosome structure to 3 Å resolution (Figure 7—figure supplement 1L–O). On the other hand, the moiety corresponding to Swc5 displayed severe structural heterogeneity, hindering our ability to build an atomic model for Swc5. The protein appears to be flexible on the nucleosome, with continuous conformational dynamics apparent (Figure 7A–D, Figure 7—video 1). Nevertheless, reconstructions of particle subsets obtained by local 3D classification show that Swc5 forms multivalent interactions with the nucleosome via the nucleosome acidic patch, the H4 N-terminal histone tail, and the C-terminal helix of H2B (Figure 7E–G). In the majority of 3D reconstructions, we observe additional density at the nucleosome acidic patch attributable to an arginine residue, like in other complexes with arginine anchor interactions (Makde et al., 2010; McGinty and Tan, 2015). Unfortunately, the low local resolution precludes the determination of the precise Swc5 arginine residue involved in this interaction (Figure 7—figure supplement 1D–G). In contrast, the 3 Å resolution of the nucleosome core allows the identification of H2B-K123 as an interacting residue with Swc5. In most 3D classes, Swc5 forms either a partial or a complete bridge between H2B C-terminal helix including K123 and the N-terminal tail of H4.
 
-## The Swc5 arginine-rich domain is required for SWR1C function in vivo
+![Figure 7.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig7-v1.jpg)
+
+**Figure 7.:** (A–D) Reconstructions of selected particle subsets obtained from 3D classification that was focused on the Swc5 moiety (purple) illustrate the dynamic nature of Swc5 binding to the nucleosome. Three interactions persist among the 3D classes: (E) Swc5 interaction with the N-terminal tail of histone H4 (green), (F) Swc5 interaction with the C-terminal helix of histone H2B including K123, and (G) an Arginine anchor bound into the acidic patch of the histone core. The gray circles and arrows denote the reconstructions and locations from where the cut-out panels originate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Flowchart of data processing and particle classification. The 3D classes marked with letters E–G correspond to the four selected reconstructions in the panels below and in Figure 6. (B) Representative cryo-EM micrograph. (C) Selected class averages from 2D classification of the 1,846,495 nucleosomal particles obtained after the first round of heterogenous 3D refinement. (D–G) Selected 3D reconstructions (the same as in Figure 6) colored by local resolution. (H–K) Euler angle distributions of the particles used in the reconstructions in panels D–G. The view angle is the same as in panels D–G. (L–O) Fourier shell correlation plots of independently refined half maps corresponding to reconstructions in panels D–G. Resolution is determined at FSC = 0.143.
+
+### The Swc5 arginine-rich domain is required for SWR1C function in vivo
 
 Previous studies have shown that yeast lacking functional SWR1C grow poorly on media containing formamide (Kobor et al., 2004; Sun and Luk, 2017). To investigate the functional role of the Swc5 arginine-rich domain in vivo, growth assays were performed with isogenic swc5∆ strains that harbor low copy vectors that express different Swc5 derivatives (Figure 8). As expected, the swc5∆ strain grew well on rich media, but was impaired on formamide media (vector), while cells expressing wildtype Swc5 grew well on both media (SWC5). Consistent with a previous study, a strain expressing the derivative with a disrupted BCNT domain showed slow growth on formamide media (Swc5LDW-3A), and the Swc579–303 derivative that lacks the acidic N-terminal domain showed a moderate growth defect (Sun and Luk, 2017). Importantly, a strain expressing the Swc5RRKR-4A derivative had a severe growth defect on formamide media, consistent with an important role of the arginine-rich region for SWR1C function.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/94869/elife-94869-fig8-v1.jpg)
 
-**Figure 8.:** Genetic complementation using a swc5∆ strain (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 swc5Δ::kanMX4) transformed with an empty pRS416 CEN/ARS URA3 vector (top row in both panels) or the same vector with various alleles of SWC5. Cultures were grown to an OD of 1 and spotted with serial dilution onto plates with synthetic complete media lacking uracil without (left) or with (right) 2% formamide.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Genetic complementation using a swc5∆ strain (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 swc5Δ::kanMX4) transformed with an empty pRS416 CEN/ARS URA3 vector (top row in both panels) or the same vector with various alleles of SWC5. Cultures were grown to an OD of 1 and spotted with serial dilution onto plates with synthetic complete media lacking uracil without (left) or with (right) 2% formamide.
 
 ## Discussion
 
@@ -113,31 +153,286 @@ The human homolog of Swc5 is Craniofacial development protein 1 (Cfdp1), althoug
 
 ## Materials and methods
 
-## Yeast strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>W1588-4C swr1::SWR1– 3xFLAG-P-kanMx-P htz1Δ::natMX</td>
+      <td>Ed Luk (SUNY Stony Brook)</td>
+      <td>yEL190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>W1588-4C swr1::SWR1– 3xFLAG-P-kanMx-P htz1Δ::natMX swc5Δ::hphMX</td>
+      <td>This paper</td>
+      <td>CY2535</td>
+      <td>Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 YBR231c::kanMX4</td>
+      <td>Euroscarf</td>
+      <td>Y03371</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta 2 (DE3)</td>
+      <td>Novagen</td>
+      <td>70954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5alpha</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>EC0112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ULight alpha-6xHIS acceptor antibody</td>
+      <td>Perkin Elmer</td>
+      <td>TRF0134-D</td>
+      <td>Mouse monoclonal anti poly Histidine tag used at 1:20 molar ratio to His-tagged Swc5 variants</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS416 (plasmid)</td>
+      <td>ATCC</td>
+      <td>87521</td>
+      <td>CEN/ARS/URA3 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1566 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SWC5 version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1567 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 R219A version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1568 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 R214A, R215A version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1569 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 K218A, R219A version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1579 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 RRKR-4A version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1580 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 LDW-3A version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CP1581(plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>swc5 79–303 version of pRS416Available from Peterson lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQE80L (plasmid)</td>
+      <td>QIAGEN</td>
+      <td></td>
+      <td>6x-HIS tag expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p601</td>
+      <td>Widom lab</td>
+      <td></td>
+      <td>Lowary, P. T. &amp; Widom, J. New DNA sequence rules for high affinity binding to histone octamer and sequence-directed nucleosome positioning. J. Mol. Biol. 276, 19–42 (1998).</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>77 w-N</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTACCCGGGGATCCTCTAGAGTGOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>0 w-N</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACAGGATGTATATATCTGACACGTGCCOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cy3-0w-N</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Cy3-ACAGGATGTATATATCTGACACGTGCCOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N-77s</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATCCTAATGACCAAGGAAAGCATGATTCOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N-0s</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGGAGAATCCCGGTGCCGAOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N-0s-Cy3</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Cy3-CTGGAGAATCCCGGTGCCGAOrdered from Integrated DNA technologies (IDT)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3x-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>F4799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phusion high-fidelity DNA polymerase</td>
+      <td>New England Biolabs</td>
+      <td>M0530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-Eu</td>
+      <td>Perkin Elmer</td>
+      <td>1244-360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 maleimide</td>
+      <td>Lumiprobe</td>
+      <td>41080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy5 maleimide</td>
+      <td>Lumiprobe</td>
+      <td>43080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Oregon green 488 maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>O6034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Phosphate sensor</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PV4406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism 9</td>
+      <td>GraphPad Software, LLC</td>
+      <td>Version 9.2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>cryoSPARC</td>
+      <td>Structura Biotechnology Inc</td>
+      <td>Version 4</td>
+      <td>Punjani, A., Rubinstein, J. L., Fleet, D. J. &amp; Brubaker, M. A. CryoSPARC: Algorithms for rapid unsupervised cryo-EM structure determination. Nat. Methods 14 (2017).</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ChimeraX</td>
+      <td>UCSF</td>
+      <td></td>
+      <td>Pettersen, E. F. et al. UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Protein Sci. 30 (2021).</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Planetary ball mill</td>
+      <td>Retsch</td>
+      <td>PM-100</td>
+      <td>See Method section for SWR1C preparation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mini-prep cell apparatus</td>
+      <td>Bio-Rad</td>
+      <td>1702908</td>
+      <td>See Method section for nucleosome reconstitution</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and culture conditions
 
 The yeast strain W1588-4C swr1::SWR1– 3xFLAG-P-kanMx-P htz1Δ::natMX (yEL190) was a gift from Ed Luk (SUNY Stony Brook). Deletion of SWC5 was constructed by standard gene replacement with a Hygromycin B cassette (pAG32) (Goldstein and McCusker, 1999), and used to make W1588-4C swr1::SWR1– 3xFLAG-P-kanMx-P htz1Δ::natMX swc5Δ::hphMX (CY2535). The swc5∆ strain MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 YBR231c::kanMX4 (Y03371) used for spot assays was purchased from Euroscarf.
 
 Spot assays were performed with the swc5∆ strain (Y03371) transformed with an empty CEN/ARS/URA3 vector pRS416, or ones containing WT and mutant SWC5. Cultures were diluted to an OD600 of 1 and then serially diluted 1:10. A dilution (7 μl) was spotted onto synthetic complete media lacking uracil with and without 2% formamide. Plates were incubated for 3 days before imaging.
 
-## Plasmid construction
+### Plasmid construction
 
 The vector (pQE80L) was used for recombinant Swc5 expression. The SWC5 gene and SWC579–303 were inserted in frame with the N-terminal 6x histidine tag through Gibson assembly (Gibson et al., 2009) after digesting the vector with BamHI and SphI. Once WT and truncated Swc5 were in frame, the alanine mutants [swc5 (RRKR-4A) and swc5 (LDW-3A)] were generated using QuickChange site-directed mutagenesis. The pRS416 CEN/ARS/URA3 vector was digested with XbaI and SacI to allow for insertion of the SWC5 gene with 500 bp upstream of the start site and 500 bp downstream of the stop. This region was initially PCR amplified from a W303 strain where the primers had homology to the XbaI and SacI cut sites of the vector. Gibson assembly was used to ligate the vector and insert (CP1566) (Gibson et al., 2009). Once the WT SWC5 gene was inserted, site-directed mutagenesis was used on CP1566 to make swc5 RRKR-4A (CP1579) and swc5 LDW-3A (CP1580). swc5 79–303 construct was generated using CP1566 to PCR amplify the 500 bp upstream stretch of DNA and start site of SWC5 and PCR amplifying another DNA fragment starting from Swc5 K79 to 500 bp downstream of the stop. Primers were designed so each PCR fragment had homology to each other and the pRS416 vector at XbaI and SphI so that the two fragments and the pRS416 vector could be ligated together by Gibson assembly. Site-directed mutagenesis was used to generate cysteine mutants used for Oregon Green labeling, as well as for single amino acid substitution used for assembly of acidic patch mutant (AB-apm) dimers – H2A-apm (H2A-E63A, H2A-E65A, H2A-D74A, H2A-D92A, H2A-D93A, H2A-E94A) and H2B-apm (H2B-E109A, H2B-E117A).
 
-## Protein purification for in vitro assays
+### Protein purification for in vitro assays
 
-## Histones
+#### Histones
 
 Histones were generated as described previously (Singh et al., 2019; Luger et al., 1999a). For experiments in this paper, we produced histones H2A, H2B, H2A-K119C, H2A-apm, H2B-apm, H2B-S115C, H2B-apm-S115C, H2A.Z, and H2A.Z-3xFLAG from S. cerevisiae, as well as histones H3, H4, and H4-Q27C from X. laevis. Fluorescent labels for histones were conjugated on an as needed basis prior to nucleosome or hexasome reconstitution as described previously (Zhou and Narlikar, 2016).
 
-## SWR1C
+#### SWR1C
 
 Swr1-3xFlag yeast strains were grown in 6 × 2 l of YEPD, supplemented with adenine at 30°C until reaching an OD600 of 3. Cultures were centrifuged and pellets were noodled into liquid nitrogen and stored at −80°C. SWR1C was purified as previously described (Luk et al., 2010; Singh et al., 2019) with minor modifications. A PM 100 cryomill was used to lyse the harvested yeast noodles with 6 × 1 min cycles at 400 rpm then stored at −80°C. Lysed cell powder (~200 ml) were resuspended in 200 ml 1× HC lysis buffer (25 mM (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid)HEPES–KOH pH 7.6, 10% glycerol, 1 mM EDTA(Ethylenediaminetetraacetic acid), 300 mM KCl, 0.01% NP40, 10 mM β-glycerophosphate, 1 mM Na-butyrate, 0.5 mM NaF, 1 mM DTT plus 1× protease inhibitors [PI 1 mM PMSF(phenylmethylsulfonyl fluoride), 1 mM benzamidine, 0.1 mg/ml pepstatin A, 0.1 mg/ml leupeptin, 0.1 mg/ml chymostatin]) in a 1 l beaker with a stir bar at 4°C. Thawed cells were centrifuged for 2 hr at 35,000 rpm in a Ti45 rotor at 4°C then whole-cell extract was transferred to a 250-ml falcon tube along with anti-Flag M2 agarose resin (1 ml bed volume) and nutated at 4°C for 4 hr. Resin and extract mixture was transferred in 25 ml increments to a 25-ml gravity column. After flow through of extract, the resin was washed with 4 × 25 ml B-0.5 buffer (25 mM HEPES, pH 7.6, 1 mM EDTA, 2 mM MgCl2, 10 mM β-glycerophosphate, 1 mM Na-butyrate, 0.5 mM NaF, 500 mM KCl, 10% glycerol, 0.01% NP40, and 1× PI) followed by 3 × 10 ml B-0.1 buffer (25 mM HEPES, pH 7.6, 1 mM EDTA, 2 mM MgCl2, 10 mM β-glycerophosphate, 1 mM Na-butyrate, 0.5 mM NaF, 100 mM KCl, 10% glycerol, 0.01% NP40, and 1× PI). For purification of SWR1Cswc5∆ where recombinant Swc5 is added back, rSwc5 would be diluted to 5 μM in 2 ml of B-0.1 and added to resin for 15 min at 4°C followed by 2 × 5 ml B-0.5 washes then 2 × 5 ml B-0.1 washes. SWR1C was eluted by nutating resin in 1 ml B-0.1 with 0.5 mg/ml recombinant 3xFlag peptide (Genscript) for 1 hr twice in series. Collected eluant was combined and concentrated using a 100-kDa cutoff Amicon Ultra-0.5 ml centrifugal filter (Millipore). After concentrating down to ~150 μl, 3xFlag peptide is removed by serial dilution with fresh B-0.1 four more times in the concentrator. The subsequently concentrated SWR1C was aliquoted, flash frozen, and stored at −80°C. SWR1C concentration was determined by sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) using a BSA(bovine serum albumin) (NEB) standard titration followed by SYPRO Ruby (Thermo Fisher Scientific) staining and quantification using ImageQuant 1D gel analysis.
 
-## Recombinant Swc5
+#### Recombinant Swc5
 
 Swc5 and variants were first cloned into a pQE80L expression vector in frame with a six histidine N-Terminal tag through Gibson assembly. Plasmids were transformed into Rosetta 2 DE3 competent cells (Novagen). 1 l cultures of 2× YT (Yeast extract, tryptone) were grown at 37°C to OD600 of 0.5–0.7 before adding 0.4 mM IPTG(Isopropyl β-d-1-thiogalactopyranoside). After adding IPTG, cells continued to shake at room temperature for 3 hr. Cells were harvested by centrifugation at 4°C and 1 l of Swc5 bacterial pellet was resuspended in 20 ml lysis buffer (10 mM imidazole, 50 mM Tris pH 8.0, 300 mM NaCl, 1 mM PMSF, 1 mM DTT) before being flash frozen in liquid nitrogen and stored at −80°C. Pellets were thawed in a 37°C water bath then fresh 0.5 mM PMSF and 1 mM benzamidine were added. Cells were sonicated 5 × 30 s at 15% power, incubating on ice for 1 min between sonication intervals. Lysate was then centrifuged at 14,000 rpm in a JA-17 rotor at 4°C for 25 min. Whole-cell extract was incubated with 800 μl of HisPur Ni-NTA resin slurry, that had been prewashed with lysis buffer, for 2 hr at 4°C on nutator. The resin and whole-cell extract mixture was centrifuged at 750 rcf for 5 min. The supernatant was aspirated, and the resin was placed in a 25-ml gravity column and washed with 5 × 10 ml wash buffer (500 mM NaCl, 10 mM imidazole, 50 mM Tris pH 8.0). Swc5 was eluted by capping the gravity column and adding 400 μl elution buffer (500 mM NaCl, 300 mM imidazole, 50 mM Tris pH 8.0) to resin and incubating at 4°C for 10 min then collecting the flow through. The Swc5 eluate was dialyzed against 2 × 250 ml of storage buffer (50 mM NaCl, 50 mM Tris pH 7.4, 10% glycerol) then flash frozen and stored at −80°C. Concentration was determined by BSA standard on an SDS–PAGE gel.
 
-## Nucleosome reconstitution
+### Nucleosome reconstitution
 
 These experiments utilized a variety of nucleosomes, both in terms of histone variants, labels, and mutations. Broadly, all nucleosomes contained a tetramer of X. laevis H3 and H4, along with S. cerevisiae H2A/H2B heterodimers, with mutations or variant substitutions as appropriate, reconstituted on DNA containing the Widom 601 positioning sequence with or without linkers and/or fluorescent labels. We refer to the Widom 601 sequence as a 147-bp element, though structural studies have indicated that this sequence assembles a 145-bp nucleosome core particle (Vasudevan et al., 2010). We decided to use X. laevis H3/H4 tetramers due to slightly increased stability of nucleosomal product in solution. These histones show high sequence conservation with S. cerevisiae H3 and H4 and we have previously demonstrated there is no difference in SWR1C eviction activity on full yeast or hybrid yeast-xenopus nucleosomes (Singh et al., 2019). Furthermore, the H4 tail region that interacts with Swc5 in our cryo-EM models is virtually identical in the orthologs.
 
@@ -151,21 +446,35 @@ Six types of asymmetric nucleosomes for dimer exchange assays were produced in t
 
 For FP and ATPase studies, unlabeled dimers were used to produce hexasomes containing linker distal AB or AB-apm dimers on 77N0-Cy3. These hexasomes were then used to generate nucleosomes with dimers (listed here and throughout the manuscript in linker proximal/linker distal order) AB/AB, AB/AB-apm, AB-apm/AB, or AB-apm/AB-apm, all on the 77N0-Cy3 template.
 
-## Nucleosome dimer exchange assays
+### Nucleosome dimer exchange assays
 
-FRET-based dimer exchanges assays were performed as previously described (Singh et al., 2019) using an ISS PC1 spectrofluorometer, a Tecan Infinite M1000 PRO microplate reader, or a Tecan Spark microplate reader. The nucleosome remodeling reactions (50–100 μl) were performed in remodeling buffer at room temperature with 30–60 nM SWR1C, 10 nM 77N0-Cy3 and at least one dimer-Cy5 containing nucleosome, 60–70 nM ZB dimers, and 1 mM ATP (to start reaction). Dimer exchange was observed by exciting the Cy3 fluorophore at 530 nm and monitoring the Cy5 emission 670. Data for nucleosomes with both dimers labeled were fit to the two-phase decay equation (Equation 1; where Y denotes RFU, Yi the initial RFU, Yp the final RFU, Pf the fast phase expressed as a fraction, Ps the slow phase expressed as a fraction, kf the rate constant of the fast phase, ks the rate constant of the slow phase, and t is time) while data for reactions with only one dimer labeled were fit to the one-phase decay equation (Equation 2; where Y denotes RFU, Yi the intial RFU, Yp the final RFU, k is the rate constant, and t is time).(1)Y=PfYi-Yp-kft+PsYi-Yp-kst+Yp(2)Y=Yi-Yp-kt+Yp
+FRET-based dimer exchanges assays were performed as previously described (Singh et al., 2019) using an ISS PC1 spectrofluorometer, a Tecan Infinite M1000 PRO microplate reader, or a Tecan Spark microplate reader. The nucleosome remodeling reactions (50–100 μl) were performed in remodeling buffer at room temperature with 30–60 nM SWR1C, 10 nM 77N0-Cy3 and at least one dimer-Cy5 containing nucleosome, 60–70 nM ZB dimers, and 1 mM ATP (to start reaction). Dimer exchange was observed by exciting the Cy3 fluorophore at 530 nm and monitoring the Cy5 emission 670. Data for nucleosomes with both dimers labeled were fit to the two-phase decay equation (Equation 1; where Y denotes RFU, $Y_{i}$ the initial RFU, $Y_{p}$ the final RFU, $P_{f}$ the fast phase expressed as a fraction, $P_{s}$ the slow phase expressed as a fraction, $k_{f}$ the rate constant of the fast phase, $k_{s}$ the rate constant of the slow phase, and t is time) while data for reactions with only one dimer labeled were fit to the one-phase decay equation (Equation 2; where Y denotes RFU, $Y_{i}$ the intial RFU, $Y_{p}$ the final RFU, k is the rate constant, and t is time).
+
+$$
+Y=P_{f}Y_{i}-Y_{p}^{-k_{f}t}+P_{s}Y_{i}-Y_{p}^{-k_{s}t}+Y_{p}
+$$
+
+
+
+$$
+Y=Y_{i}-Y_{p}^{-kt}+Y_{p}
+$$
 
 Gel-based dimer exchange assays used a modified protocol from a previous study (Mizuguchi et al., 2004; Ranjan et al., 2013). A 150-μl dimer exchange reaction contained 30 nM SWR1C, 10 nM 77N0 nucleosomes (WT or APM), and 70 nM H2A.Zflag/H2B in remodeling buffer with 0.1 mg/ml BSA. The reaction was performed at room temperature and 20 μl of the reaction was taken at each time point (time 0 is before 1 mM ATP is added) and quenched with 1 μg of plasmid DNA to separate SWR1C and dimers from the nucleosome. Each time point was stored on ice until last sample was quenched. Each time point was loaded onto a 6% 0.5× TBE Native PAGE gel (29:1 Acrylamide/Bis) and electrophoresed for 90 min at 120 V. Gels were stained with SYBR gold and imaged on a GE Typhoon.
 
-## FP assay
+### FP assay
 
-FP assays were performed as previously described (Baier and Peterson, 2022) using a CLARIOstar microplate reader. The affinity of SWR1C for various nucleosomal substrates was tested by mixing 10 nM 77N0-Cy3 nucleosomes with SWR1C serially diluted in concentration from approximately 1 μM to 1 nM in remodeling buffer. The dimensionless value of polarization was plotted for each concentration of SWR1C and the Morrison equation (Equation 3; where Bmax is maximum observed binding, [F] is the concentration of the labeled nucleosomes, [E] is the concentration of SWR1C, and Kd,app is the apparent dissociation constant) was used determine the binding affinity for substrates where binding was observed.(3)Y=Bmax[F]+[E]+Kd,app-[F]+[E]+Kd,app2-4[F][E]2[F]
+FP assays were performed as previously described (Baier and Peterson, 2022) using a CLARIOstar microplate reader. The affinity of SWR1C for various nucleosomal substrates was tested by mixing 10 nM 77N0-Cy3 nucleosomes with SWR1C serially diluted in concentration from approximately 1 μM to 1 nM in remodeling buffer. The dimensionless value of polarization was plotted for each concentration of SWR1C and the Morrison equation (Equation 3; where Bmax is maximum observed binding, [F] is the concentration of the labeled nucleosomes, [E] is the concentration of SWR1C, and $K_{d,app}$ is the apparent dissociation constant) was used determine the binding affinity for substrates where binding was observed.
 
-## ATPase assay
+$$
+Y=Bmax\frac{[F]+[E]+K_{d,app}-\sqrt{[F]+[E]+K_{d,app}^{2}-4[F][E]}}{2[F]}
+$$
+
+### ATPase assay
 
 ATPase activity was measured using a phosphate-binding protein reporter assay. For the phosphate sensor assay (Luk et al., 2010; Brune et al., 1994), 50 μl reactions were prepared with 8 nM SWR1C mixed with 0.5 μM phosphate sensor (fluorophore-conjugated phosphate-binding protein, Thermo Fisher) in remodeling buffer. Reactions containing nucleosome and ZB dimers had concentrations of 20 and 30 nM, respectively. Reactions were initiated by adding 100 μM ATP and monitored by the measuring the fluorescence of the MDCC fluorophore on a Tecan Spark by exciting at 430 nm and setting the emission filter to 450 nm. All reagents and the microplate were pre-treated with a ‘Pi Mop’ to remove free phosphate as previously described (Luk et al., 2010; Brune et al., 1994). FI was monitored over time and the linear range of intensity change was plotted to calculate the rate in reciprocal seconds.
 
-## Swc5-binding assays
+### Swc5-binding assays
 
 Gel shifts with recombinant WT or Swc5 derivatives were performed in 15 μl reactions. Reactions contained varying amounts of Swc5 in a total volume of 5 μl of storage buffer (10% glycerol, 50 mM Tris pH 7.4, 50 mM NaCl), 0.25 μl 300 nM 0N0 nucleosomes, 6.15 μl water, 0.6 μl 50% glycerol, and 3 μl 5× binding buffer (125 mM HEPES pH 7.3, 250 mM NaCl, 25 mM MgCl2, 0.05% Tween 20, 0.5 mg/ml BSA, 5 mM DTT). Reaction incubated in the dark at room temp for 30 min. Samples were loaded onto 6% native-PAGE gels (29:1 Acrylamide/Bis) and electrophoresed at 230 V for 1 hr. Gels were imaged on a GE typhoon imager and binding was calculated by measuring the disappearance of the free nucleosome band. GraphPad Prism 8 was used to generate binding curves.
 
@@ -173,11 +482,11 @@ Swc5 fluorescent quenching assays were assembled similar to the gel shift assays
 
 Time-resolved FRET nucleosome-binding assays were performed as described by Wesley et al., 2022. Acceptor mixtures were prepared by mixing ULight alpha-6xHIS acceptor antibody (PerkinElmer) with 6xHIS-tagged Swc5 variants at a ratio of 1:20 and serially diluting across 13 concentrations in H66 buffer (20 mM HEPES pH 7.5, 66 mM NaCl, 5 mM MgCl2, 5 mM DTT, 5% glycerol, 0.01% NP-40, 0.01% CHAPS, and 100 µg/ml BSA). 2× donor mixtures were prepared by mixing 4 nM streptavidin-Eu (PerkinElmer) with or without 2 nM yeast nucleosomes containing 177 bp of Widom 601 DNA (31 + 145 + 1) with a 5′ biotin group on the 31 bp extension and incubating for 30 min at room temperature. Samples were prepared in 384-well plates by mixing 5 µl of 2× donor mixtures with 5 µL of acceptor mixtures at each dilution. Fluorescence signals were acquired at room temperature in a Victor Nivo multimode fluorescent plate reader (PerkinElmer) using an excitation filter at 320 nm and emission filters at 615 and 665 nm. Emission signals at 615 and 665 nm were measured simultaneously following a 100 μs delay. Kd values were determined from triplicate titrations of each Swc5 variant and are reported as means ± standard error of the mean.
 
-## Cryo-EM sample preparation
+### Cryo-EM sample preparation
 
 Swc579–303 was mixed with 147 bp Widom 601 sequence-containing nucleosomes at a 2.5:1 molar ratio in H50 buffer (10 mM HEPES pH 7.5, 50 mM NaCl, 1 mM DTT(Dithiothreitol)). Precipitated material was removed by centrifugation at 16,000 × g for 10 min. The sample was chemically cross-linked using the GraFix method in a 10–30% glycerol gradient (Stark, 2010), prepared with a Gradient Master instrument (Biocomp) from top (H50 + 10% vol/vol glycerol) and bottom (H50 + 30% vol/vol glycerol, 0.15% vol/vol glutaraldehyde) solutions. The sample was applied on top of the gradient and centrifuged in a SW40Ti rotor (Beckman-Coulter) at 35,000 rpm, 4°C for 16 hr. Fractions were collected manually by pipetting from the top, and the reaction was quenched by adding Tris pH 7.5 to each fraction to 50 mM. Fractions were analyzed using a 6% native gel (29:1 Acrylamide/Bis) stained with ethidium bromide and negative-stain EM with uranyl formate to select for monodisperse particles of the complex. Selected fractions were dialyzed into H50 buffer supplemented with 0.1 mM PMSF and concentrated to ~1 mg/ml.
 
-## Cryo-EM data collection and analysis
+### Cryo-EM data collection and analysis
 
 Swc5/nucleosome complex was prepared at 0.9 mg/ml. Quantifoil R1.2/1.3 holey carbon, 300 mesh, copper grids (Electron Microscopy Sciences) were glow discharged for 45 s at 15 mA with an easiGlow device (PELCO). After glow discharge, 3 µl of sample was pipetted onto the grid and Grade 595 filter paper (Ted Pella) was used to blot the grid for 3 s, at 4°C and 100% humidity. The grid was plunge-frozen in liquid ethane cooled to the temperature of liquid nitrogen with a Vitrobot Mark IV instrument (Thermo Scientific). A Krios G3i microscope (Thermo Scientific) operating at 300 kV was used in conjunction with a K3 direct electron detector camera (Gatan) to collect data in super-resolution mode at the Pacific Northwest Cryo-EM Center. 13,855 movies were collected at a nominal magnification of 29,000× with a physical pixel size of 0.788 Å (super-resolution, 0.394 Å). The total dose per exposure was 50 e−/Å2 at a dose rate of ~18.5 e−/pix/s and each exposure was fractioned into 50 subframes. Data were recorded in the defocus range of −0.8 to −2.8 µm.
 

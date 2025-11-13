@@ -14,4 +14,4 @@
 
 ## Abstract
 
-The response of S. pombe , also known as fission yeast, to misfolded proteins involves mechanisms that have not been observed in other species.
+The response of S. pombe, also known as fission yeast, to misfolded proteins involves mechanisms that have not been observed in other species.

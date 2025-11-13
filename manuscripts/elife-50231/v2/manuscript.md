@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.50231.001 Cultured mouse peritoneal macrophages release large numbers of ~30-nm cholesterol-rich particles. Here, we show that those particles represent fragments of the plasma membrane that are pulled away and left behind during the projection and retraction of filopodia and lamellipodia. Consistent with this finding, the particles are enriched in proteins found in focal adhesions, which attach macrophages to the substrate. The release of particles is abolished by blocking cell movement (either by depolymerizing actin with latrunculin A or by inhibiting myosin II with blebbistatin). Confocal microscopy and NanoSIMS imaging studies revealed that the plasma membrane–derived particles are enriched in ‘accessible cholesterol’ (a mobile pool of cholesterol detectable with the modified cytolysin ALO-D4) but not in sphingolipid-sequestered cholesterol [a pool detectable with ostreolysin A (OlyA)]. The discovery that macrophages release cholesterol-rich particles during cellular locomotion is likely relevant to cholesterol efflux and could contribute to extracellular cholesterol deposition in atherosclerotic plaques.
+Cultured mouse peritoneal macrophages release large numbers of ~30-nm cholesterol-rich particles. Here, we show that those particles represent fragments of the plasma membrane that are pulled away and left behind during the projection and retraction of filopodia and lamellipodia. Consistent with this finding, the particles are enriched in proteins found in focal adhesions, which attach macrophages to the substrate. The release of particles is abolished by blocking cell movement (either by depolymerizing actin with latrunculin A or by inhibiting myosin II with blebbistatin). Confocal microscopy and NanoSIMS imaging studies revealed that the plasma membrane–derived particles are enriched in ‘accessible cholesterol’ (a mobile pool of cholesterol detectable with the modified cytolysin ALO-D4) but not in sphingolipid-sequestered cholesterol [a pool detectable with ostreolysin A (OlyA)]. The discovery that macrophages release cholesterol-rich particles during cellular locomotion is likely relevant to cholesterol efflux and could contribute to extracellular cholesterol deposition in atherosclerotic plaques.
 
 ## Introduction
 
@@ -39,25 +39,81 @@ In the current study, we used live-cell microscopy and SEM, along with proteomic
 
 ## Results
 
-## Macrophages release plasma membrane–derived particles during the movement of filopodia and lamellipodia
+### Macrophages release plasma membrane–derived particles during the movement of filopodia and lamellipodia
 
 In the current studies, we again found that particles are released from macrophage filopodia and lamellipodia onto the surrounding substrate by a process that resembles budding (Figure 1—figure supplement 1). Because the released particles remain adherent to the substrate, we suspected that the particles might represent fragments of the plasma membrane that were affixed to the underlying substrate but then pulled away and left behind during movement of filopodia/lamellipodia. To explore this idea, we plated mouse peritoneal macrophages onto gridded glass-bottom dishes and recorded images of cells by live-cell microscopy (Figure 1—videos 1–2), making it possible to visualize the projection and retraction of filopodia/lamellipodia. The same cells were then fixed and imaged by SEM. Lawns of ~30-nm particles were present on the substrate surrounding macrophages, generally at the lagging pole of the cell and invariably where we had observed, by live-cell imaging, the extension and retraction of filopodia/lamellipodia (Figure 1, Figure 1—videos 1–2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig1-v2.jpg)
+
+**Figure 1.:** Cells were plated onto poly-D-lysine–coated gridded glass-bottom Petri dishes, and videos were recorded for 24 hr at 5 min intervals (see Figure 1—videos 1–2). The ‘Live cell’ images show the final frame of the videos. The imaging of cells by SEM made it possible to visualize a lawn of particles that had been released onto the substrate during the projection and retraction of filopodia/lamellipodia. The red boxed region in the live-cell image and in the low-magnification SEM image is shown in the SEM image on the far right. Three independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Upper left, scanning electron micrograph (SEM) of a mouse peritoneal macrophage (yellow arrow), revealing a lawn of ~30-nm particles on the surrounding substrate. A higher magnification image of the region in the white box is shown in the upper right image, centered on macrophage filopodia. Higher magnification images of the regions in the yellow and blue boxes are shown in the lower two images. (B) Upper left, SEM of a mouse peritoneal macrophage (yellow arrow), revealing a lawn of ~30-nm particles on the surrounding substrate. A higher magnification image of the region in the white box is shown in the image on the upper right, centered on the lamellipodium of the macrophage. Higher magnification images of the regions in the blue and yellow boxes are shown in the images below. For both panels, red arrows show the formation and release of particles from macrophage filopodia and lamellipodia. Three independent experiments were performed; representative images are shown. Scale bar for the top two images, 2 μm. Scale bar for the bottom two images, 500 nm.
+
 To determine whether the extension and retraction of filopodia/lamellipodia are required for particle release, cell movement was blocked by treating macrophages with an actin-depolymerizing agent (latrunculin A) or a myosin II inhibitor (blebbistatin). Live-cell imaging revealed that the drug-treated macrophages were unable to project and retract filopodia/lamellipodia (Figure 2—videos 1–6). Macrophages were incubated with latrunculin A or blebbistatin in suspension for 1 hr (‘pre-treatment’) and then plated onto poly-D-lysine–coated silicon wafers and incubated with the drugs overnight (Figure 2). Both latrunculin A and blebbistatin abolished particle release from ‘pre-treatment’ macrophages (Figure 2A–B). Other macrophages were allowed to adhere to the substrate for 1 hr before initiating drug treatment (‘post-adherence’) (Figure 2A–B). In latrunculin A–treated ‘post-adherence’ macrophages, a circumferential ring of particles was left behind on the substrate as the cell retracted with actin depolymerization (Figure 2A). Blebbistatin eliminated particle release in post-adherence cells (Figure 2B). Macrophages treated with vehicle alone (DMSO) released large numbers of particles onto the surrounding substrate (Figure 2A–B). As an additional control, macrophages that had been incubated with drugs overnight were washed and incubated for an additional 18 hr without drugs. In the absence of the drugs, the morphology of the cells returned to normal and particle release resumed, with numerous particles appearing on the surrounding substrate (Figure 2A–B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig2-v2.jpg)
+
+**Figure 2.:** Scanning electron micrographs (SEMs) of mouse peritoneal macrophages that had been treated with latrunculin A (A) or blebbistatin (B). Macrophages were treated with latrunculin A, blebbistatin, or vehicle alone (DMSO) overnight; the drug treatments were initiated when the cells were in suspension 1 h before plating ('pre-treatment') or 1 h after adherence to the substrate ('post-adherence'). Macrophages treated with vehicle alone (DMSO) released particles onto the substrate. No particles were visible on the substrate in cells that had been pre-treated with latrunculin A or blebbistatin—or in the blebbistatin post-adherence cells. In the latrunculin A post-adherence cells, a circumferential ring of particles was observed around cells. Latrunculin A and blebbistatin were removed from some dishes after the overnight incubation, and the cells were incubated for an additional 18 h without drugs. After removing the drugs, the release of particles onto the substrate resumed. Four independent experiments were performed; representative images are shown. Scale bars for images on the left in each panel are 4 µm; scale bars for the images in the middle and right are 1 µm.
 
 To determine if the particles that are released during the projection and retraction of lamellipodia contain ‘accessible cholesterol’ (a mobile pool of cholesterol that is not sequestered by sphingolipids), we performed live-cell imaging of RAW 264.7 macrophages (Figure 3—videos 1–2) and then incubated the cells with [15N]ALO-D4. The macrophages were then processed for SEM and NanoSIMS imaging. The lawn of particles around macrophages, visible by SEM, was enriched in 15N, as revealed by NanoSIMS imaging (Figure 3). Of note, the degree of 15N enrichment was greater in the lawn of particles than on the plasma membrane covering the macrophage cell body or macrophage filopodia (Figure 3).
 
-## Macrophage particles contain plasma membrane proteins
+![Figure 3.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig3-v2.jpg)
+
+**Figure 3.:** RAW 264.7 macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes. Videos were recorded for 24 hr at 5 min intervals (see Figure 3—videos 1–2). The ‘Live cell’ images in this figure show the final frame of the videos, with the white arrows pointing to the cells that were subsequently visualized by SEM and NanoSIMS. After live-cell imaging, cells were incubated with [15N]ALO-D4 (a modified cytolysin that binds to ‘accessible cholesterol’). The same cells that were imaged by live-cell imaging were subsequently imaged by SEM (to visualize particles) and NanoSIMS (to visualize [15N]ALO-D4 binding). The particles left behind on the substrate during movement of lamellipodia and filopodia bound [15N]ALO-D4 avidly. 12C14N– NanoSIMS images were used to visualize cell morphology; the 15N/14N images show 15N enrichment (i.e., binding of [15N]ALO-D4). The boxed region in the SEM and NanoSIMS images is shown at higher magnification in the ‘HM-SEM’ image, providing definition of individual particles. 15N enrichment was ~twofold higher in the macrophage particles than on the plasma membrane over the cell body and the filopodia. Two independent experiments were performed; representative images are shown. Quantification of 15N/14N ratios were performed on the cell body and macrophage particles [25 distinct regions of the cell body, filopodia, and particles (20 pixels in diameter) were circled on the 12C14N– image, followed by calculation of 15N/14N ratios in each region]. Images from six macrophages were used for the quantification. Graph shows the mean and standard deviation of the fold change of 15N enrichment in particles and filopodia, normalized to the macrophage cell body. **p<0.001. Scale bar, 2 μm.
+
+### Macrophage particles contain plasma membrane proteins
 
 Given that the particles on the substrate were derived from the plasma membrane, we suspected that they would contain plasma membrane proteins. Two findings lent credence to our suspicion. First, after biotinylating cell-surface proteins of macrophages with Sulfo-NHS-SS-biotin, the lawn of particles surrounding macrophages could be detected with fluorescent streptavidin (colocalizing with fluorescently labeled ALO-D4, which binds ‘accessible cholesterol’) (Figure 4A). Also, by SEM, streptavidin-conjugated 40-nm gold nanoparticles bound to both macrophages and to the surrounding particles (Figure 4B). There was no binding of the gold nanoparticles to non-biotinylated macrophages (Figure 4—figure supplement 1). Second, by NanoSIMS analyses, the lawn of particles outside macrophages contained 14N and 32S (as well as accessible cholesterol, detectable with [15N]ALO-D4) (Figure 4—figure supplement 2). In light of these findings, we prepared both particle and plasma membrane preparations from RAW 264.7 mouse macrophages (see Materials and methods) for shotgun proteomics. By negative-stain transmission electron microscopy (TEM), the size of particles in the particle preparation (Figure 5—figure supplement 1B) was similar to particles in the SEM images (Figure 5—figure supplement 1A). TEM images of the plasma membrane preparations revealed aggregates of membranous material (Figure 5—figure supplement 1B). Proteomic studies on three independent particle and plasma membrane preparations revealed that both were enriched in focal adhesion proteins and cytoskeletal components (Figure 5A–B). When analyses were confined to the top 75th percentile of proteins by spectral count, we identified 653 proteins in the particle preparations and 715 proteins in the plasma membrane preparations, with 502 proteins in common (Figure 5C). The top 15 focal adhesion–related proteins, as annotated by Gene Ontology, were found in both the particle and the plasma membrane preparations, but the majority of those proteins were relatively more abundant in the particle preparations (Figure 5D).
 
-## Inhibition of focal adhesion disassembly increases release of particles
+![Figure 4.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig4-v2.jpg)
+
+**Figure 4.:** (A) Biotinylated macrophage particles can be detected with fluorescently labeled streptavidin as judged by confocal microscopy. Macrophages in suspension were biotinylated with Sulfo-NHS-SS-biotin. After plating the cells onto glass coverslips and incubating the cells in macrophage growth medium containing 10% FBS, the cells were washed and then incubated with Atto 647N–labeled streptavidin (red) and Alexa Fluor 488–labeled [15N]ALO-D4 (green). Cells were then fixed with 3% PFA and imaged by super-resolution stimulated emission depletion (STED) microscopy. Streptavidin and ALO-D4 bound to the macrophages as well as the lawn of particles on the surrounding substrate. Scale bar, 5 µm. (B) Biotinylated macrophage particles can be detected with streptavidin-conjugated gold nanoparticles, as judged by scanning electron microscopy (SEM). After biotinylating the plasma membrane of mouse peritoneal macrophages with Sulfo-NHS-SS-biotin, cells were plated onto glass-bottom Petri dishes. On the following day, the cells were incubated with streptavidin-conjugated 40-nm gold nanoparticles. Cells were then fixed with 1% glutaraldehyde and processed for SEM. Secondary electron (SE) and backscattered electron (BSE) images revealed gold nanoparticles on the macrophage cell body, filopodia, and on macrophage particles that had been released onto the substrate. Higher magnification images of the blue and yellow boxes are shown on the right. Composite images (gray, SE; red, BSE) images show colocalization of gold nanoparticles with the particles on the substrate. Higher magnification image of the white box is shown on the right. White arrows point to gold nanoparticles binding to macrophage particles. Three independent experiments were performed; representative images are shown. Scale bar, 1 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Non-biotinylated macrophages were plated onto glass-bottom Petri dishes. On the following day, the cells were incubated with streptavidin-conjugated 40-nm gold nanoparticles. Cells were then fixed with 1% glutaraldehyde and processed for SEM. Secondary electron (SE) and backscattered electron (BSE) images revealed no binding of gold nanoparticles to the macrophage cell body, filopodia, or on particles that had been released onto the substrate. Higher magnification images of the boxed region are shown on the right. Three independent experiments were performed; representative images are shown. Scale bar, 1 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Mouse peritoneal macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes and incubated in medium containing 10% FBS for 24 hr. Cells were then incubated with [15N]ALO-D4 for 2 hr, washed, and prepared for NanoSIMS imaging. The lawn of particles on the surrounding substrates was detectable on 12C–, 12C14N–, and 32S– NanoSIMS images. There was strong binding of the [15N]ALO-D4 to the lawn of particles surrounding cells, evident in the 15N/14N ratio image. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig5-v2.jpg)
+
+**Figure 5.:** The most abundant proteins (the top 75th percentile by spectral counts) were analyzed by Enrichr and categorized by GO Cellular Components 2018. (A–B) Analysis of proteins in macrophage particles (n = 653) and macrophage plasma membranes (n = 715) by GO categories. The top 10 cellular component categories were ordered by level of statistical significance. (C) Venn diagram depicting numbers of proteins present in the particle preparation only, the plasma membrane preparation only, or both. (D) Bar graph showing the top 15 focal adhesion–related proteins by the normalized spectral abundance factor (NSAF), multiplied by 10,000. The particle fraction is shown in blue; the plasma membrane fraction is shown in orange. The bar graph shows the mean ± SD for three independent experiments. *p<0.05; **p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SEM images of RAW 264.7 macrophages plated onto poly-D-lysine–coated silicon wafers, revealing large numbers of particles on the substrate surrounding the macrophages. Higher magnification images of the red boxed regions are shown in the image below. Scale bar, 1 μm. (B) Negative stained transmission electron micrographs (TEMs) of the particle and plasma membrane preparations from RAW macrophages. Macrophages were plated in tissue culture flasks, and both macrophages and macrophage-derived particles were biotinylated with Sulfo-NHS-SS-biotin. After releasing the cells and the particles from the substrate with 5 mM EDTA, preparations of macrophage particles and plasma membranes were isolated as described in the Materials and methods. Particle and plasma membrane preparations were placed on carbon/formar TEM grids, negatively stained with 2% uranyl acetate, and visualized by TEM. Particles were 20–80-nm in diameter (red arrows). Images of the plasma membrane fractions revealed aggregated membranous material (red arrows). A blank grid, which was also subjected to negative staining, contained no particles or membranes. Three independent experiments were performed; representative images are shown. Scale bar, 100 nm.
+
+### Inhibition of focal adhesion disassembly increases release of particles
 
 Focal adhesions are macromolecular assemblies that link the actin cytoskeleton inside cells to the extracellular substrate (Lauffenburger and Horwitz, 1996; Burridge and Fath, 1989). The presence of focal adhesion proteins and cytoskeletal proteins in the particles is consistent with the observation that particles are released when small segments of the plasma membrane are pulled away and left behind during movement of filopodia/lamellipodia. We suspected that particle release might be increased by interfering with disassembly of focal adhesions. Focal adhesion kinase (FAK) is important for focal adhesion disassembly. Phosphorylation of Tyr-397 in FAK is one of the events in initiating focal adhesion disassembly (Hamadi et al., 2005; Nagano et al., 2012), and that step can be blocked with an FAK inhibitor. In macrophages treated with an FAK inhibitor, the filopodia and lamellipodia remain mobile (Figure 6—videos 1–2). In four different experiments, the lawn of particles surrounding macrophages appeared larger in cells treated with an FAK inhibitor (Figure 6—figure supplement 1). Indeed, the lawns of particles outside of FAK inhibitor–treated macrophages were ~twice the size of the macrophage cell body, whereas they were only ~40% as large as the cell body in DMSO-treated macrophages (10 macrophages were analyzed per group). Cholesterol-loaded macrophages (loaded with an incubation with acetylated low-density lipoproteins) retained their mobility, as judged by live-cell imaging (Figure 6—videos 3–4), and lawns of particles were present on the substrate surrounding cholesterol-loaded cells (Figure 6—figure supplement 1). When cholesterol-loaded macrophages were treated with an FAK inhibitor, large lawns of particles were observed around almost every cell (Figure 6—figure supplement 1).
 
-## Macrophage-derived particles are enriched in accessible cholesterol but not sphingolipid-sequestered cholesterol
+### Macrophage-derived particles are enriched in accessible cholesterol but not sphingolipid-sequestered cholesterol
 
 Next, we asked whether the particles surrounding macrophages were enriched in sphingomyelin-sequestered cholesterol. Initially, we used super-resolution microscopy to compare the binding of ALO-D4 (which binds to accessible cholesterol) (Gay et al., 2015) and OlyA (which binds to sphingomyelin-bound cholesterol) (Endapally et al., 2019) to macrophages and to particles on the surrounding substrate. Mouse peritoneal macrophages were plated onto glass-bottom MatTek dishes and incubated in medium containing an FAK inhibitor or vehicle alone (DMSO). After 24 hr, the cells were incubated at 4°C with Alexa Fluor 488–labeled [15N]ALO-D4 and Atto 647N–labeled [13C]OlyA. Stimulated emission depletion (STED) microscopy revealed avid ALO-D4, but not OlyA, binding to the lawn of particles around macrophages (Figure 6). The lawn of particles surrounding cells was larger in cells that had been treated with an FAK inhibitor, consistent with the SEM findings in Figure 6—figure supplement 1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig6-v2.jpg)
+
+**Figure 6.:** Mouse peritoneal macrophages were plated onto poly-D-lysine–coated glass coverslips and incubated overnight in medium containing 10% FBS and either an FAK inhibitor (CAS 4506-66-5, 2 μM) or vehicle (DMSO) alone. On the next day, the cells were incubated with Alexa Fluor 488–labeled [15N]ALO-D4 (green), which binds to accessible cholesterol, and Atto 647N–labeled [13C]OlyA (red), which binds to sphingomyelin-bound cholesterol (both at 20 μg/ml). Cells were then washed, fixed with 3% PFA, and imaged by STED microscopy. STED images were obtained from the bottom of the macrophage (optical section of ~200 nm). The lawn of particles surrounding macrophages was readily detectable with ALO-D4, but the binding of OlyA to particles was negligible. Two independent experiments were performed; representative images are shown. Scale bar, 5 µm. Higher magnification images of the boxed regions are shown on the right. Scale bar, 2 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Macrophages were plated onto poly-D-lysine–coated glass-bottom Petri dishes and incubated with a focal adhesion kinase (FAK) inhibitor, 2 μM)] or vehicle (DMSO) alone. In some experiments, macrophages were loaded with acetyl-LDL (AcLDL, 50 μg/ml). The lawn of particles surrounding macrophages was imaged by SEM. Higher magnification images of the white boxed areas are shown on the right. Four independent experiments were performed, with a minimum of 20 cells visualized per experiment. The lawns of particles outside of FAK inhibitor–treated macrophages were ~twice the size of the macrophage cell body, whereas the lawns were only ~40% of the area of the cell body in DMSO-treated macrophages. Scale bars for the images in the left and middle columns, 5 μm. Scale bars for images in the right column, 2 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Macrophages were plated onto poly-D-lysine–coated glass coverslips and incubated with latrunculin A (5 μM) or vehicle alone (DMSO control). The incubation of latrunculin A was initiated either 1 hr prior to plating the cells (‘pre-treatment’) or after the cells had been plated and were adherent to the substrate (‘post-adherence’). On the next day, cells were incubated with Alexa Fluor 488–labeled ALO-D4 and Atto 647N–labeled OlyA (20 μg/ml each). Cells were then fixed with 3% PFA and imaged by STED microscopy. The lawn of particles surrounding macrophages was readily detectable with ALO-D4 but not with OlyA. In post-adherence cells, a circumferential ring of ALO-D4 binding was detected, reflecting ALO-D4 binding to particles released onto the substrate during retraction of the macrophage cell body. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Mouse peritoneal macrophages were plated onto poly-D-lysine–coated glass coverslips and incubated overnight in medium containing 10% FBS and either a focal adhesion kinase (FAK) inhibitor (2 μM) or vehicle (DMSO) alone. On the next day, macrophages were incubated with Alexa Fluor 488–labeled [15N]ALO-D4, a marker of accessible cholesterol (green, 20 μg/ml), and a mCherry–lysenin fusion protein, which binds to sphingomyelin (red, 10 μg/ml). Cells were then washed, fixed with 3% PFA, and imaged by STED microscopy. STED images were obtained from the bottom of the macrophage (optical section of ~200 nm). The lawn of particles around macrophages could be detected by ALO-D4 but not by the mCherry–lysenin fusion protein. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Sphingomyelinase markedly reduces OlyA binding to the macrophage plasma membrane. Mouse peritoneal macrophages were plated onto poly-D-lysine–coated glass coverslips and incubated overnight in medium containing 10% FBS. On the next day, cells were incubated for 30 min at 37°C in the presence or absence of sphingomyelinase (SMase) from Staphylococcus aureus (100 milliunits/ml). After washing, cells were incubated with Alexa Fluor 488–labeled ALO-D4, a marker of accessible cholesterol (green, 20 μg/ml), and Atto 647N–labeled OlyA, which detects sphingomyelin-bound cholesterol (red, 20 μg/ml). Scale bar, 5 μm. (B) Sphingomyelinase treatment abolishes OlyA and lysenin binding to CHO-K1 cells. CHO-K1 cells were plated onto poly-D-lysine–coated glass coverslips and incubated overnight in Ham’s F-12 medium containing 10% FBS. On the next day, cells were incubated for 30 min at 37°C in the presence or absence of sphingomyelinase (SMase) (100 milliunits/ml). After washing, the cells were incubated for with Alexa Fluor 488–labeled OlyA, a marker of sphingomyelin-bound cholesterol (green, 20 μg/ml), or with the mCherry–lysenin fusion protein, which binds to sphingomyelin (red, 10 μg/ml). Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
 
 In related experiments, we examined macrophages that had been incubated with latrunculin A for 1 hr in suspension and subsequently plated on poly-D-lysine–coated silicon wafers and incubated in drug-containing medium for 24 hr (‘pre-treatment’). Because latrunculin A blocks particle release from macrophages, neither ALO-D4 nor OlyA detected particles on the substrate around macrophages (Figure 6—figure supplement 2). However, when latrunculin A was added to the medium after allowing the cells to adhere to the substrate (‘post-adherence’), a circumferential ring of ALO-D4 binding, but not OlyA binding, was observed on the substrate surrounding macrophages (Figure 6—figure supplement 2), corresponding to the circumferential ring of particles detected by SEM in Figure 2A. In cells treated with DMSO alone, we observed ALO-D4, but not OlyA, binding to the lawn of particles around macrophages (Figure 6—figure supplement 2), similar to the results in Figure 6.
 
@@ -65,13 +121,69 @@ We suspected that the binding of lysenin (a cytolysin that binds sphingomyelin) 
 
 Next, we performed correlative live-cell, SEM, and NanoSIMS imaging, with the goal of comparing [15N]ALO-D4 and [13C]OlyA binding to the lawn of particles outside macrophages. The live-cell imaging allowed us to visualize the projection and retraction of lamellipodia (Figure 7—videos 1–2), and the SEMs revealed the expected lawn of particles outside cells (Figure 7, Figure 7—figure supplements 1–2). NanoSIMS images revealed that [15N]ALO-D4 bound strongly to the lawn of particles around macrophages; 15N enrichment was ~twofold higher in the lawn of particles than over the cell body (Figure 8D). 13C enrichment in the lawn of particles (from [13C]OlyA binding) was very low (Figures 7 and 8D, Figure 7—figure supplements 1–2). We also observed differences in the patterns of [15N]ALO-D4 and [13C]OlyA binding to the cell body. In the case of [15N]ALO-D4, we observed a fine linear band of 15N enrichment at the extreme outer edge of the cell (~40% greater 15N enrichment than over the cell body) (Figures 7 and 8B–D, Figure 7—figure supplements 1–2). In the case of [13C]OlyA, a broad band of 13C enrichment was observed close to the outer edge of the cell (~60% higher 13C enrichment than over the main body of the cell) (Figures 7 and 8B–D, Figure 7—figure supplements 1–2). The broad band of 13C enrichment corresponded to the lamellipodia of macrophages, visible in the SEM images (Figure 7, Figure 7—figure supplements 1–2) as well as in the 12C–, 12C14N–, and 32S– NanoSIMS images (Figure 8A). By confocal microscopy, the binding of OlyA at the outer edge of the cell overlapped with the binding of phalloidin to the actin cytoskeleton–rich lamellipodia (Figure 7—figure supplement 3). Interestingly, the fine linear band of 15N enrichment at the outer edge of the cell extended beyond the broad band of 13C enrichment, as shown by composite images formed from 15N/14N and 13C/12C ratio images (Figure 8B–C). We also performed correlative live-cell/SEM/NanoSIMS studies with macrophages that had been incubated with an FAK inhibitor (Figure 7—figure supplements 4–6, Figure 7—videos 3–4). The FAK inhibitor did not induce any changes to the patterns of [15N]ALO-D4 and [13C]OlyA binding to particles on the substrate or the macrophage cell body (Figure 7—figure supplement 4–6).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-v2.jpg)
+
+**Figure 7.:** Macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes, and videos of cell movement were recorded for 24 h at 5-min intervals (see Figure 7—video 1). The red arrow in the video points to an area of lamellipodia projection/retraction; the white box depicts the area that was later visualized by SEM and NanoSIMS. The 'Live cell' image in this figure shows the final frame of the video. After live-cell imaging, the cells were then incubated with [15N]ALO-D4 (which binds to accessible cholesterol) and [13C]OlyA (which binds to sphingomyelin-sequestered cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to visualize [15N]ALO-D4 and [13C]OlyA binding. The NanoSIMS images were created from secondary ions released from the top of the macrophage plasma membrane and the surrounding macrophage particles. Thus, the image differs from confocal fluorescence images in Figure 6, where we focused on the bottom surface of the macrophage (optical section of ~200 nm). The particles released onto the substrate were enriched in accessible cholesterol but not sphingomyelin-sequestered cholesterol. 12C14N– images were useful for cell morphology; 15N/14N images depict binding of [15N]ALO-D4; 13C/12C images depict binding of [13C]OlyA. Here, the 13C/12C and 15N/14N scales were adjusted for visualization of macrophage-derived particles. Additional NanoSIMS images of this cell, with different scales, are shown in Figure 8A. Two independent experiments were performed; representative images are shown. Scale bar, 5 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes, and videos of cell movement were recorded for 24 hr at 5 min intervals (see Figure 7—video 2). The red arrow in the video points to an area of lamellipodia projection/retraction; the white box depicts the area that was later visualized by SEM and NanoSIMS. The ‘Live cell’ image in this figure shows the final frame of the video. After live-cell imaging, the cells were then incubated with [15N]ALO-D4 (which binds to accessible cholesterol) and [13C]OlyA (which binds to sphingomyelin-bound cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to visualize [15N]ALO-D4 and [13C]OlyA binding. The NanoSIMS images were created from secondary ions released from the top surface of the macrophage plasma membrane and the surrounding macrophage particles. Thus, the image differs from confocal fluorescence images in Figure 6, where we focused on the bottom surface of the macrophage (optical section of ~ 200 nm). 12C14N– images were useful for cell morphology; 15N/14N images depict binding of [15N]ALO-D4; 13C/12C images depict binding of [13C]OlyA. In this figure, the scales for the 13C/12C and 15N/14N NanoSIMS images were adjusted for optimal visualization of macrophage-derived particles. Other NanoSIMS images of this cell (with different scales) are shown in Figure 8A. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Mouse peritoneal macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes. Cells were then incubated at 4°C with [15N]ALO-D4 (which binds accessible cholesterol) and [13C]OlyA (which binds sphingomyelin-bound cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to quantify [15N]ALO-D4 and [13C]OlyA binding. The particles released onto the substrate were enriched in accessible cholesterol but not sphingomyelin-bound cholesterol. 12C14N– images were useful for cell morphology; 15N/14N images show binding of [15N]ALO-D4; 13C/12C images show binding of [13C]OlyA. In this figure, the scales for the 13C/12C and 15N/14N NanoSIMS images were adjusted for optimal visualization of macrophage-derived particles. Other NanoSIMS images of this cell (with different scales) are shown in Figure 8B. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Mouse peritoneal macrophages were plated onto poly-D-lysine–coated glass coverslips and incubated in macrophage growth medium containing 10% FBS. On the next day, cells were incubated at 4°C with Atto 647N–labeled OlyA (20 μg/ml). Cells were then fixed with 3% PFA, permeabilized with 0.2% Triton X-100, and stained with Alexa Fluor 546–labeled phalloidin. Images were recorded using STED microscopy. OlyA binding (red) to cells largely colocalized with phalloidin binding (green) to the actin cytoskeleton. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Mouse peritoneal macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes and incubated in medium containing an FAK inhibitor (2 μM). Videos of cell movement were recorded for 24 hr at 5 min intervals (see Figure 7—video 3). The red arrow in the video points to an area of lamellipodia projection/retraction; the white box depicts the area that was later visualized by SEM and NanoSIMS. The ‘Live cell’ image in this figure shows the final frame of the video. After live-cell imaging, the cells were then incubated with [15N]ALO-D4 (which binds to accessible cholesterol) and [13C]OlyA (which binds to sphingomyelin-bound cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to visualize [15N]ALO-D4 and [13C]OlyA binding. The NanoSIMS images were created from secondary ions released from the top surface of the macrophage plasma membrane and the surrounding macrophage particles. Thus, the image differs from confocal fluorescence images in Figure 6, where we focused on the bottom surface of the macrophage (optical section of ~ 200 nm). 12C14N– images were useful for cell morphology; 15N/14N images depict binding of [15N]ALO-D4; 13C/12C images depict binding of [13C]OlyA. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Mouse peritoneal macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes and incubated in medium containing an FAK inhibitor (2 μM). Videos of cell movement were recorded for 24 hr at 5 min intervals (see Figure 7—video 4). The red arrow in the video points to an area of lamellipodia projection/retraction; the white box depicts the area that was later visualized by SEM and NanoSIMS. The ‘Live cell’ image in this figure shows the final frame of the video. After live-cell imaging, the cells were then incubated with [15N]ALO-D4 (which binds to accessible cholesterol) and [13C]OlyA (which binds to sphingomyelin-bound cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to visualize [15N]ALO-D4 and [13C]OlyA binding. The particles released onto the substrate were enriched in accessible cholesterol but not sphingomyelin-bound cholesterol. 12C14N– images were useful for cell morphology; 15N/14N images depict binding of [15N]ALO-D4; 13C/12C images depict binding of [13C]OlyA. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig7-figsupp6-v2.jpg)
+
+**Figure 7—figure supplement 6.:** (A) Mouse peritoneal macrophages were plated onto iridium- and poly-D-lysine–coated gridded glass-bottom Petri dishes and incubated in medium containing an FAK inhibitor (2 μM). Cells were then incubated at 4°C with [15N]ALO-D4 (which binds accessible cholesterol) and [13C]OlyA (which binds sphingomyelin-bound cholesterol). The cells were then imaged by SEM (to visualize particles) and then by NanoSIMS to quantify [15N]ALO-D4 and [13C]OlyA binding. The particles released onto the substrate were enriched in accessible cholesterol but not sphingomyelin-bound cholesterol. 12C14N– images were useful for cell morphology; 15N/14N images show binding of [15N]ALO-D4; 13C/12C images show binding of [13C]OlyA. Two independent experiments were performed; representative images are shown. Scale bar, 5 μm. (B) Quantification, by NanoSIMS, of [15N]ALO-D4 and [13C]OlyA binding to macrophages that had been incubated with the FAK inhibitor and to the surrounding particles on the substrate. 15N/14N ratios were quantified for the cell body, macrophage-derived particles, and the thin line of 15N enrichment at the edge of the cell. 13C/12C ratios were quantified for the cell body, macrophage particles, and the broad lamellipodia near the edge of the plasma membrane. For each category, twenty-five regions, 20 pixels in diameter areas were circled, and the 15N/14N and 13C/12C ratios in each circle were calculated. A minimum of 6 macrophage images were used. Graph shows the mean and standard deviation of the fold change of 15N or 13C enrichment, normalized to the macrophage cell body. **p<0.001.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig8-v2.jpg)
+
+**Figure 8.:** Mouse peritoneal macrophages were plated onto poly-D-lysine–coated MatTek dishes and incubated in medium containing 10% FBS. On the next day, cells were incubated with [15N]ALO-D4 and [13C]OlyA (20 μg/ml each) and then imaged by NanoSIMS. (A) Distributions of [15N]ALO-D4 and [13C]OlyA binding to the plasma membrane. 13C/12C NanoSIMS images revealed a broad band of 13C enrichment near the outer edge of the cell (corresponding to the flat lamellipodia of cells, apparent in the 12C–, 12C14N–, and 32S– NanoSIMS images). The 15N/14N images revealed a thin band of 15N enrichment at the far outer edge of the cells and in the lawn of particles on the surrounding substrate. Additional NanoSIMS images of these cells are shown (with different scales) in Figure 7 and Figure 7—figure supplement 1. (B) Composite 12C14N– (blue), 13C/12C (green), and 15N/14N (red) NanoSIMS images, revealing 15N enrichment at the outer edge of the plasma membrane and in the lawn of particles on the surrounding substrate. Of note, the 15N enrichment at the outer edge of the cell extended beyond the thick band of 13C enrichment. In this figure, the scales for the 13C/12C and 15N/14N NanoSIMS images were adjusted for optimal visualization of the lamellipodia of macrophages. Also, 12C– and 32S– images were included to visualize the lamellipodia. Scale bar, 5 μm. Additional NanoSIMS images of the cell in the top row of this panel are shown in Figure 8A and Figure 7—figure supplement 1; additional NanoSIMS images of the cell in the bottom row of this panel is shown in Figure 7—figure supplement 2. Two independent experiments were performed; representative images are shown. (C) Line scans comparing the 15N/14N and 13C/12C isotope ratios over the outer edge of the plasma membrane (white line in the upper and lower right images of panel B). (D) Quantification, by NanoSIMS, of [15N]ALO-D4 and [13C]OlyA binding to macrophages and to the surrounding particles on the substrate. 15N/14N ratios were quantified for the cell body, macrophage-derived particles, and the thin line of 15N enrichment at the edge of the cell. 13C/12C ratios were quantified for the cell body, macrophage particles, and the broad lamellipodia near the edge of the plasma membrane. For each category, twenty-five regions, 20 pixels in diameter areas were circled on the 12C14N– images, and the 15N/14N and 13C/12C ratios in each circle were calculated. A minimum of six macrophage images were used. Graph shows the mean and standard deviation of the fold change of 15N or 13C enrichment, normalized to the macrophage cell body. **p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Mouse peritoneal macrophages were loaded with [3H]cholesterol (1 μCi/ml) and acLDL (20 μg/ml) in macrophage growth media containing 1% lipoprotein-deficient serum (LPDS) for 24 hr. On the next day, the cells were washed and the cells were released with 5 mM EDTA. The cells were then re-plated in six-well plates (1 × 106 cells/well) in medium containing blebbistatin (30 μM), an LXR agonist (1 μM), or vehicle (DMSO) alone. After 24 hr, the macrophages were washed, and both the macrophages and the particles were released from the plates by incubating the cells with 5 mM EDTA. (The complete release of particles and cells from the substrate was documented by SEM). Radioactivity in macrophages (A) and particles (B) was measured by scintillation counting. Graph shows the mean and standard deviation of radioactive counts normalized to the protein content from three independent experiments. **p<0.001 or *p<0.01 compared to cells incubated with DMSO alone.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Mouse peritoneal macrophages were loaded with [3H]cholesterol (1 μCi/ml) and acLDL (20 μg/ml) in macrophage growth media containing 1% LPDS for 24 hr. On the next day, cells were washed, released from the plate with 5 mM EDTA, and then re-plated on a 6-well plate (1 × 106 cells/well) in serum-free macrophage growth medium containing blebbistatin (30 μM), an LXR agonist (1 μM), or vehicle (DMSO) alone. In some samples, HDL (20 μg/ml) was included in the medium. Cells were grown for 24 hr and then released with EDTA. The cell culture media was removed, centrifuged to remove cellular debris, and the radioactivity in the cell culture medium was measured by scintillation counting. Graph shows the mean and standard deviation of radioactive counts normalized to the protein content from two independent experiments. **p<0.001.
+
 The fact that macrophages release cholesterol-rich particles inspired us to explore whether the efflux of [3H]cholesterol from [3H]cholesterol-loaded macrophages would be reduced when the release of particles was blocked with blebbistatin. To test this possibility, [3H]cholesterol-loaded macrophages were plated on 6-well plates and incubated in serum-free medium (i.e., no cholesterol acceptors) containing blebbistatin, an LXR agonist, or vehicle (DMSO) alone. After 24 hr, both the macrophages and macrophage-derived particles on the substrate were released with 5 mM EDTA. Both macrophage and particle fractions were prepared, and [3H]cholesterol was quantified by scintillation counting. Compared with cells that had been incubated with DMSO alone, more [3H]cholesterol was retained within the blebbistatin-treated macrophages (Figure 8—figure supplement 1A), and there was less [3H]cholesterol in the particle fraction (Figure 8—figure supplement 1B). The LXR agonist had the opposite effect, reducing the amount of [3H]cholesterol in macrophages and increasing the amount of [3H]cholesterol in the particle fraction (Figure 8—figure supplement 1A–B). As an additional control, we tested whether adding HDL to the culture medium would increase [3H]cholesterol efflux from [3H]cholesterol-loaded macrophages. As expected, HDL markedly increased efflux of [3H]cholesterol into the cell culture medium (Figure 8—figure supplement 2).
 
-## Macrophages release cholesterol-rich particles onto a collagen matrix and onto dead cells
+### Macrophages release cholesterol-rich particles onto a collagen matrix and onto dead cells
 
 We also plated biotinylated mouse peritoneal macrophages onto glass-bottom MatTek dishes that were coated with polymerized collagen IV. The macrophages released biotinylated particles, detectable with streptavidin-conjugated 40-nm gold nanoparticles, onto the collagen fibers (Figure 9A, Figure 9—figure supplement 1). To test whether the particles were enriched in accessible cholesterol, we plated biotinylated macrophages onto glass coverslips coated with PFA-fixed Alexa Fluor 647–labeled collagen IV and then incubated the cells with Alexa Fluor 488–labeled ALO-D4 and Alexa Fluor 568–labeled streptavidin. By STED microscopy, binding of ALO-D4 to the lawn of particles on the collagen matrix surrounding macrophages colocalized with streptavidin binding (Figure 9B). The amount of collagen beneath the lawn of particles was depleted, likely reflecting digestion of the collagen IV by the filopodia/lamellipodia of the macrophage.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig9-v2.jpg)
+
+**Figure 9.:** After biotinylating the cell-surface proteins of macrophages with Sulfo-NHS-SS-biotin, the cells were plated onto glass-bottom Petri dishes that had been coated with polymerized Alexa Fluor 647–labeled collagen IV and then fixed with 0.1% glutaraldehyde (for SEM) or 1% paraformaldehyde (for fluorescence microscopy). (A) SEM images show binding of streptavidin-conjugated 40-nm gold nanoparticles to macrophages as well as particles on the collagen IV substrate. Secondary electron (SE) and backscattered electron (BSE) images show macrophage-derived particles on the collagen fibers and the binding of gold nanoparticles to the macrophage cell body, filopodia, and the plasma membrane–derived particles. BSE images were helpful to identify gold nanoparticles. Higher magnification images of the yellow and blue boxed regions are shown on the right. Scale bar, 2 μm. (B) Fluorescent microscopy studies of mouse peritoneal macrophages that had been plated for 24 hr on a polymerized Alexa Fluor 647–labeled collagen IV substrate and then incubated with Alexa Fluor 488–labeled ALO-D4 and Alexa Fluor 568–labeled streptavidin. The cells were then fixed with 3% PFA and images recorded by STED microscopy. ALO-D4 (green) and streptavidin (blue) were visualized on a lawn of particles on the collagen IV matrix (red). Four independent experiments were performed; representative images are shown. Scale bar, 5 μm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** After biotinylating the cell-surface proteins of macrophages with Sulfo-NHS-SS-biotin, the cells were plated onto glass-bottom Petri dishes coated with polymerized collagen IV. SEM images show binding of streptavidin-conjugated 40-nm gold nanoparticles to both macrophages and macrophage-derived particles. Secondary electron (SE) images show plasma membrane–derived particles on the collagen fibers as well as the binding of gold nanoparticles to macrophage cell body, the filopodia, and plasma membrane–derived particles. Backscattered electron (BSE) images were helpful for identifying gold nanoparticles. Higher magnification images of the blue boxed region are shown below. Higher magnification images of the yellow and red boxed regions are shown to the right. Yellow arrows point to gold nanoparticles binding to macrophage particles on the collagen IV substrate. Four independent experiments were performed; representative images are shown. Scale bar, 2 μm.
+
 Macrophages also release particles onto dead cells. By live-cell microscopy, we observed a live macrophage ‘carrying’ a dead macrophage, allowing us to observe the projection and retraction of lamellipodia/filopodia over the surface of the dead macrophage (Figure 10—video 1). We then imaged the cells by SEM. By SEM, we observed release of particles onto both the substrate surrounding the live macrophage and to the surface of the dead macrophage (Figure 10—figure supplement 1). In follow-up studies, we plated biotinylated macrophages onto a confluent monolayer of dead endothelial cells (fixed with 0.1% glutaraldehyde). As expected, we observed binding of streptavidin-conjugated gold nanoparticles to the cell body and filopodia of macrophages; however, we also observed binding of streptavidin-conjugated gold nanoparticles to the surface of adjacent endothelial cells (Figure 10). Although we could easily find gold nanoparticles on the endothelial cells in these studies, we were unable to identify with confidence macrophage-derived membrane particles on the surface of endothelial cells (because of the complicated topography of the plasma membrane of glutaraldehyde-fixed endothelial cells). Nevertheless, the distribution of gold nanoparticles on the endothelial cells (adjacent to one pole of the macrophage) suggested that plasma membrane–derived biotinylated particles had been released onto the surface of endothelial cells.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig10-v2.jpg)
+
+**Figure 10.:** Mouse brain endothelial cells (bEnd.3) were plated onto glass- bottom Petri dishes and allowed to grow to confluency. After fixing the endothelial cells with 0.1% glutaraldehyde in PBS, they were washed extensively with PBS. Next, biotinylated macrophages (i.e., macrophages in which the cell-surface proteins had been biotinylated with Sulfo-NHS-SS-biotin) were plated onto bEnd.3 cells. Secondary electron (SE) and backscattered electron (BSE) images were obtained with a scanning electron microscope. As expected, the SEM images revealed binding of the streptavidin- conjugated gold nanoparticles to both the cell body and filopodia of macrophages. In addition, gold nanoparticles were observed on the surface of adjacent endothelial cells. BSE images were helpful in identifying gold nanoparticles. Higher magnification images of the blue and red boxed regions in each image are shown below. As an experimental control, bEnd.3 cells without macrophages were fixed and incubated with streptavidin-conjugated gold nanoparticles. Higher magnification images of the red boxed regions are shown on the right. No binding of gold nanoparticles was detected. Three independent experiments were performed; representative images are shown. Scale bar, 2 µm.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/50231/elife-50231-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** RAW 264.7 macrophages were plated onto poly-D-lysine–coated gridded glass-bottom Petri dishes, and videos of cell movement were recorded for 20 hr at 5 min intervals (see Figure 10—video 1). Live-cell microscopy revealed a live macrophage extending its lamellipodium (red arrow in the video) over both the surrounding substrate and over the dead macrophage (white arrow in the video). The white box in the video shows the region that was imaged by SEM. The SEM revealed that vesicular particles had been released onto both the surrounding substrate and onto the surface of the dead macrophage. Scale bar for the SEM on the top right, 5 μm. The region encompassed by a red box in the SEM on the top right is shown at higher magnification in the SEM on the lower left. Scale bar for the lower left SEM, 5 μm. The red boxed areas in the lower left and lower middle SEMs are shown at higher magnification on the right. Images shown are from one experiment. Scale for lower middle and lower right images, 500 nm.
 
 ## Discussion
 
@@ -89,62 +201,226 @@ Our studies revealed that cultured macrophages release large numbers of choleste
 
 ## Materials and methods
 
-## Mouse peritoneal macrophages
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RAW 264.7</td>
+      <td>ATCC</td>
+      <td>Catalog No. TIB-71 RRID: CVCL_0493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>bEnd.3</td>
+      <td>ATCC</td>
+      <td>Catalog No. CRL-2299 RRID: CVCL_0170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ALO-D4 plasmid</td>
+      <td>PMID: 25809258</td>
+      <td></td>
+      <td>Dr. Arun Radhakrishnan (UT Southwestern)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>OlyA plasmid</td>
+      <td>PMID: 30712872</td>
+      <td></td>
+      <td>Dr. Arun Radhakrishnan (UT Southwestern)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-(3-Dimethylaminopropyl)-N′-ethylcarbodiimide hydrochloride (carbodiimide)</td>
+      <td>Millipore-Sigma</td>
+      <td>Catalog No. 03449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde25% solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Catalog No. 16220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide4% solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Catalog No. 18459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde16% solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Catalog No. 15170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EMbed 812</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Catalog No. 14120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium cacodylate trihydrate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Catalog No. 12300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>SPI-Chem</td>
+      <td>Catalog No. 02624AB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin A</td>
+      <td>Sigma</td>
+      <td>Catalog No. L5163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Abcam</td>
+      <td>Catalog No. ab120425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FAK inhibitor</td>
+      <td>Calbiochem</td>
+      <td>Catalog No. CAS 4506-66-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LXR agonist</td>
+      <td>Sigma</td>
+      <td>Catalog No. G6295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HDL</td>
+      <td>Alfa Aesar</td>
+      <td>Catalog No. J64903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]cholesterol</td>
+      <td>PerkinElmer</td>
+      <td>Catalog No. NET139250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gold–streptavidin conjugation reagent</td>
+      <td>Abcam</td>
+      <td>Catalog No. ab186864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link Sulfo-NHS-SS-biotin</td>
+      <td>ThermoFisher</td>
+      <td>Catalog No. 21331</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sphingomyelinase from Staphylococcus aureus</td>
+      <td>Sigma</td>
+      <td>Catalog No. S8633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>35 mm glass-bottom gridded MatTek dish</td>
+      <td>MatTek</td>
+      <td>Catalog No. P35G-1.5–14-CGRD</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse peritoneal macrophages
 
 Wild-type C57BL/6 mice were injected intraperitoneally with 1 ml of 3% Difco Fluid Thioglycollate Medium (Becton Dickinson). Three days later, macrophages were harvested by peritoneal lavage with 10 ml of Dulbecco’s Phosphate Buffered Saline (PBS). Cells were centrifuged at 400 × g for 5 min at 4°C, incubated with red blood cell lysing buffer (Sigma), and washed two times with cold PBS. Macrophages were plated onto fetal bovine serum (FBS)-coated Petri dishes (8 × 106 cells/dish) and incubated overnight in macrophage growth medium [Dulbecco’s Minimal Eagle Medium (Gibco) supplemented with 1% sodium pyruvate and 1% glutamine] containing 10% FBS (Gemini GemCell). On the following day, macrophages were released from the dish by incubating the cells with PBS containing 5 mM ethylenediaminetetraacetic acid (EDTA) for 30 min at 4°C. For fluorescence microscopy, cells were plated onto glass coverslips in 24-well plates (75,000 cells/well). For scanning electron microscopy (SEM) and NanoSIMS studies, cells were plated onto 0.5 cm2 silicon wafers in 24-well plates (75,000 cells/well). All substrates were sterilized and coated with 0.1 mg/ml of poly-D-lysine (Sigma).
 
-## Preparation of ALO-D4 and OlyA
+### Preparation of ALO-D4 and OlyA
 
 ALO-D4 and OlyA were produced in Escherichia coli using plasmids from Dr. Arun Radhakrishnan (UT Southwestern) (Gay et al., 2015; Endapally et al., 2019). 15N-labeled ALO-D4 and 13C-labeled OlyA were prepared as described previously (He et al., 2018; He et al., 2017). Briefly, ALO-D4 and OlyA were expressed in BL21(DE3) pLysS E. coli (Invitrogen) in 1 L of minimal medium containing 20.2 mM 15NH4Cl (for 15N-labeled ALO-D4) or minimal medium containing 10% D-Glucose-13C6 (for 13C-labeled OlyA) at 18°C for 16 hr. Expression was induced by adding 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) to the medium. Cells were pelleted, sonicated, and the lysate was centrifuged at 4°C. The supernatant fluid was mixed with 4 ml of HisPur Cobalt resin (50% bed volume; ThermoFisher). The mixture was loaded into a column and allowed to flow through by gravity. The column was washed, and [15N]ALO-D4 and [13C]OlyA were eluted with a buffer containing 300 mM imidazole. Eluates were concentrated to 1 ml with an Amicon 10 kDa cut-off filter (Millipore). The [13C]OlyA was further purified by gel filtration on a Superdex 200 10/300 column (GE Healthcare). The purified preparations of [15N]ALO-D4 and [13C]OlyA were stored at 4°C.
 
-## Correlative light microscopy, SEM, and NanoSIMS imaging
+### Correlative light microscopy, SEM, and NanoSIMS imaging
 
 35-mm glass-bottom gridded Petri dishes (MatTek) were sputter-coated with ~4 nm of iridium with an ion-beam sputtering system (South Bay Technologies). Dishes were then washed three times for 5 min with 100% ethanol, air dried, and then coated with 0.1 mg/ml poly-D-lysine overnight at 4°C. On the next day, the dish was rinsed three times with sterile water; after drying, peritoneal macrophages were plated at 50,000 cells/dish. Live-cell videos were captured with a Zeiss LSM800 confocal microscope with a Plan Apochromat 20×/0.80 objective. The incubation chamber was maintained at 37°C and 5% CO2 with TempModule S1 (Zeiss) and CO2 Module S1 (Zeiss). Images were captured at 5 min intervals for 24 hr. Next, the cells were washed with PBS containing Ca2+ and Mg2+ (PBS/Ca/Mg) containing 0.2% bovine serum albumin (BSA) three times for 2 min and then incubated with [15N]ALO-D4 (20 μg/ml in PBS + 0.2% BSA) for 2 hr at 4°C. In some experiments, [13C]OlyA (20 μg/ml in PBS + 0.2% BSA) was also included in the medium. Next, cells were washed three times for 2 min with PBS/Ca/Mg + 0.2% BSA and then fixed with 4% paraformaldehyde and 2.5% glutaraldehyde (both from Electron Microscopy Sciences) in 0.1 M sodium cacodylate (pH 7.4; Sigma) for 1 hr on ice. Cells were washed with 0.1 M sodium cacodylate (pH 7.4) three times for 5 min, then fixed with 2% OsO4 (Electron Microscopy Sciences) in 0.1 M sodium cacodylate on ice for 1 hr. Samples were rinsed three times for 5 min with distilled water, dehydrated with increasing amounts of ethanol (30, 50, 70, 85, 95, and 100%; 3 × 10 min), and air dried. The glass coverslip attached to the bottom of the Petri dish was removed with Coverglass Removal Fluid (MatTek) and placed onto a pin stub with Pelco colloidal silver (Ted Pella) and then coated with ~5 nm of iridium. Taking advantage of the gridded coverglass, the very same cells imaged by live-cell imaging were imaged with a Zeiss Supra 40VP scanning electron microscope with a 3-KeV incident beam. Next, the same cells were imaged with a NanoSIMS 50L instrument (CAMECA). Samples were scanned with a 16-KeV 133Cs+ beam, and secondary electrons (SEs) and secondary ions (12C–, 13C–, 12C14N–, 12C15N–, 32S–) were collected. For NanoSIMS imaging on RAW 264.7 macrophages, a 50 × 50-μm region of the section was pre-sputtered with a ∼1-nA beam current (primary aperture D1 = 1) for 26 s (to remove the iridium coating). A 40 × 40-μm region was imaged with an ∼1.3-pA beam current (primary aperture D1 = 2) and a dwell time of ~2.5 ms/pixel/frame for five frames. 512 × 512–pixel images were obtained. For NanoSIMS imaging on peritoneal macrophages, a 25 × 25-μm region was imaged with an ∼3-pA beam current (primary aperture D1 = 2) and a dwell time of ~0.5 ms/pixel/frame for 18–20 frames. 512 × 512–pixel images were obtained. Images were prepared with the OpenMIMS plugin in ImageJ. [The last 15 frames of image sets were used to avoid any possibility of signals from surface contaminants and coating materials.] 15N/14N and 13C/12C ratios images were used to identify areas of stable isotope enrichment (from [15N]ALO-D4 and [13C]OlyA binding).
 
-## Macrophage particle isolation
+### Macrophage particle isolation
 
 RAW 264.7 macrophages were plated onto ten T175 cell culture flasks (Corning) and grown overnight to ~80% confluency in macrophage growth medium containing 1% lipoprotein-deficient serum (LPDS; Alfa Aesar). On the next day, cells were washed two times with ice-cold PBS and then incubated for 30 min at 4°C in PBS containing 10 mM EZ-link Sulfo-NHS-SS-biotin (ThermoFisher). The biotinylation reaction was stopped with Quenching Buffer (ThermoFisher). Cells were then washed three times for 5 min with PBS, lifted by incubating the cells in PBS containing 5 mM EDTA, and centrifuged at 300 × g for 5 min. The supernatant fluid containing particles was centrifuged again at 3000 ×g for 10 min to remove membrane debris and subsequently filtered through a 0.22-μm filter. The cell pellet was sonicated at low power (1.5) on ice for five cycles of 45 s on and 30 s off. The pellet was added to PBS containing 250 mM sucrose and centrifuged at 3000 × g for 10 min at 4°C. The supernatant fluid (containing the particles) and the plasma membrane extracts were incubated with 1 ml of NeutrAvidin beads (ThermoFisher) for 1 hr at 4°C. The beads containing particles or plasma membranes were then loaded onto 2 ml columns, and the samples were allowed to flow though. The columns were then washed three times (4 ml each) with PBS containing 0.2% Triton X-100. The particles and plasma membranes were eluted with 500 μl of PBS containing 50 mM dithiothreitol (DTT).
 
-## Negative-stain transmission electron microscopy
+### Negative-stain transmission electron microscopy
 
 PBS containing 50 mM DTT (5 μl) was pipetted directly onto a freshly glow-discharged copper grid that had been coated with formvar and carbon (Electron Microscopy Sciences); the PBS was then blotted off with Whatman #1 filter paper. Next, 5 μl of particle preparation, the plasma membrane preparation, or PBS alone was pipetted onto the grid and allowed to adsorb for 1 min before blotting off with filter paper. Next, 5 μl of 2% uranyl acetate was pipetted onto the grid and blotted off, followed by another 5 μl of 2% uranyl acetate, which was allowed to incubate for 1 min before being blotted off. Grids were imaged using an FEI Tecnai T12 set to 120 kV accelerating voltage equipped with a Gatan 2k × 2 k CCD detector.
 
-## Drug treatment of cultured macrophages
+### Drug treatment of cultured macrophages
 
 Thioglycollate-elicited peritoneal macrophages were plated onto FBS-coated Petri dishes in macrophage growth medium containing 10% FBS overnight at 37°C. On the next day, macrophages were released by incubating the cells with PBS containing 5 mM EDTA. Macrophages were then incubated for 1 hr in suspension in macrophage growth medium containing 10% FBS and 5 μM latrunculin A (Sigma), 30 μM blebbistatin (Abcam), or 2 μM focal adhesion kinase (FAK) inhibitor (CAS 4506-66-5; Calbiochem). All drugs were diluted in DMSO. After 1 hr, macrophages were plated in drug-containing culture medium onto poly-D-lysine–coated substrates (silicon wafers or glass-bottom MatTek dishes for SEM and NanoSIMS imaging; glass coverslips for confocal fluorescence microscopy) and incubated for 24 hr. In some experiments, macrophages were plated onto poly-D-lysine–coated substrate and allowed to adhere for 1 hr in macrophage medium in the absence of drugs. After removing the medium, the cells were then incubated in drug-containing medium for 24 hr.
 
-## Shotgun proteomics
+### Shotgun proteomics
 
 Protein samples were resuspended in 8 M urea in 100 mM Tris, pH 8.5 and reduced, alkylated, and digested by sequential addition of lys-C and trypsin proteases as described (Kaiser and Wohlschlegel, 2005; Wohlschlegel, 2009). The sample was fractionated using reversed-phase chromatography and then eluted into a Fusion Lumos tribrid mass spectrometer (ThermoFisher). MS/MS spectra were collected and analyzed with ProLuCID and DTASelect algorithms (Xu et al., 2006; Tabb et al., 2002). Database searches were performed against a mouse database. Protein and peptide identifications were filtered with a false-positive rate of <5%, as judged by a decoy database strategy. Normalized spectral abundance factor (NSAF) values were calculated as described (Florens et al., 2006). Analysis of other background contaminants was performed using CRAPome (Mellacheruvu et al., 2013). Gene-annotation enrichment analyses were performed with Enrichr (Chen et al., 2013; Kuleshov et al., 2016).
 
-## Immunogold SEM studies
+### Immunogold SEM studies
 
 Mouse peritoneal macrophages were grown on FBS-coated Petri dishes overnight in macrophage growth medium containing 10% FBS. On the next day, cells were washed and then released by incubating the cells in PBS containing 5 mM EDTA for 30 min at 4°C. The cells were washed three times with PBS before incubating in PBS containing 0.25 mg/ml of Sulfo-NHS-SS-Biotin (ThermoFisher) for 20 min at 4°C (1.0 ml for each 1 × 106 cells). Cells were pelleted at 300 × g for 5 min and washed three times with 10 ml of PBS before plating onto glass-bottom MatTek dishes at 50,000 cells/dish. The cells were incubated for 24 hr in macrophage growth media containing 10% FBS. On the next day, cells were washed three times with PBS/Ca/Mg and fixed with 4% PFA and 0.1% glutaraldehyde in PBS for 1 hr at 4°C. Cells were washed three times for 5 min with PBS/Ca/Mg containing 0.2% BSA, blocked with blocking buffer [PBS/Ca/Mg containing 5% donkey serum, 5% BSA, and 0.1% cold water fish skin gelatin (Electron Microscopy Sciences)] for 1 hr at room temperature, and then incubated with streptavidin-conjugated gold nanoparticles (1/50, diluted in blocking buffer; Abcam) for 2 hr at 4°C. The samples were then washed three times with blocking bluffer (5 min each); fixed with 1% glutaraldehyde in 0.1 M sodium cacodylate for 10 min on ice; washed five times with 0.1 M sodium cacodylate (2 min each); incubated with 2% osmium tetroxide in 0.1 M sodium cacodylate for 45 min on ice; washed three times (5 min each) with ice-cold water; and dehydrated with a series of graded concentrations of ethanol. Secondary electron and backscattered electron images were recorded with a Zeiss Supra 40VP scanning electron microscope with a 5-KeV incident beam with a backscatter detector.
 
-## Immunocytochemistry of macrophage particles
+### Immunocytochemistry of macrophage particles
 
 Peritoneal macrophages were plated onto glass coverslips coated with 0.1 mg/ml poly-D-lysine. Cells were incubated for 24 hr in macrophage growth medium containing 10% FBS. In some experiments, the 10% FBS in the medium was replaced with 1% LPDS (Alfa Aesar) with or without 50 μg/ml of acetylated low-density lipoproteins (acLDL, Alfa Aesar). In other experiments, the cells (after 24 hr of growth in medium containing 10% FBS) were treated with sphingomyelinase from Staphylococcus aureus (100 milliunits/ml) for 30 min at 37°C. On the next day, cells were washed three times for 5 min with PBS/Ca/Mg containing 0.2% BSA and then incubated for 2 hr at 4°C with Alexa Fluor 488–labeled [15N]ALO-D4 and Atto 647N–labeled [13C]OlyA (both at 20 μg/ml, diluted in PBS/Ca/Mg + 0.2% BSA). In some experiments, cells were incubated with Alexa Fluor 488–labeled [15N]ALO-D4 (20 μg/ml) and Atto 647N–labeled streptavidin (Sigma; 1/100). In other experiments, cells were incubated with Alexa Fluor 488–labeled [15N]ALO-D4 (20 μg/ml) and an mCherry–lysenin fusion protein (10 μg/ml). After these incubations, the cells were washed three times for 2 min with PBS/Ca/Mg containing 0.2% BSA; fixed with 3% PFA; and mounted onto glass slides with Prolong Gold mounting media (ThermoFisher). Images were recorded with a Leica TCS SP8 STED 3X confocal microscope using a 100×/1.4 objective. Alexa Fluor 488 images were obtained with a 488 nm white light laser and a 592 nm depletion laser. Atto 647N images were obtained with a 647 nm white light laser and a 775 nm depletion laser. mCherry images were obtained with a 587 nm white light laser. Sequential scans were recorded at 2048 × 2048 pixels.
 
-## Plating macrophages on collagen
+### Plating macrophages on collagen
 
 Collagen IV from human placenta (Sigma) was labeled with an Alexa Fluor 647 fluorophore (ThermoFisher). The fluorescently labeled collagen IV (1 mg/ml) was added to glass-bottom MatTek dishes on ice. Dishes were incubated overnight at 37°C and 5% CO2 to induce polymerization. On the next day, the excess collagen was removed, and the dishes were rinsed three times with PBS before fixing the collagen with 0.1% glutaraldehyde in PBS (for SEM) or 1% PFA in PBS (for confocal microscopy) for 10 min at room temperature. Dishes were washed ten times for 6 min with PBS. Macrophage were then plated onto the collagen IV–coated dishes (50,000 cell/dish) in macrophage growth medium containing 10% FBS for 24 hr. On the next day, cells were either incubated with streptavidin-conjugated gold nanoparticles for SEM or Alexa Fluor 568–labeled streptavidin and Alexa Fluor 488–labeled [15N]ALO-D4 for confocal fluorescence microscopy.
 
-## Immunogold SEM of macrophages plated on fixed endothelial cells
+### Immunogold SEM of macrophages plated on fixed endothelial cells
 
 Mouse brain microvascular endothelial cells (bEnd.3; ATCC #CRL-2299) were plated onto glass-bottom MatTek dishes in DMEM (ATCC) containing 10% FBS (ATCC), 1% sodium pyruvate, and 1% glutamine. The cells were allowed to grow to 100% confluency. Next, the cells were rinsed with PBS and fixed with 0.1% glutaraldehyde in PBS for 10 min at room temperature. Cells were then washed ten times with PBS (6 min each). Macrophages that had been biotinylated (50,000 cells/dish) were plated onto the bEnd.3 cells and incubated in macrophage growth medium containing 10% FBS (Gemini GemCell) for 24 hr. On the next day, the cells were processed for immunogold SEM, as described earlier.
 
-## Efflux of [3H]cholesterol from macrophages
+### Efflux of [3H]cholesterol from macrophages
 
 Mouse peritoneal macrophage were plated on FBS-coated Petri dishes overnight in macrophage growth medium containing 10% FBS. On the next day, cells were washed three time with PBS and then incubated for 24 hr in macrophage growth medium containing 1% LPDS, [3H]cholesterol (1 μCi/ml, PerkinElmer), and acetyl-LDL (20 μg/ml). On the following day, cells were washed three times (5 min each) with PBS and then released from the plate with PBS containing 5 mM EDTA. Cells were then plated onto 6-well plates (1 × 106 cells/well) and incubated for 24 hr in serum-free macrophage growth medium containing blebbistatin (30 µM), an LXR agonist (1 μM), or vehicle (DMSO) alone. As an additional control, the cells in one study were incubated with HDL (20 μg/ml, Alfa Aesar). On the next day, the medium was removed and saved for scintillation counting. The cells were then washed three times (5 min each) with PBS and released from the plate with PBS containing 5 mM EDTA. Cells were pelleted by centrifugation (300 × g for 5 min), washed, and resuspended in 500 μl of PBS. The supernatant fluid was centrifuged again (3000 × g for 10 min) to remove debris and then filtered through a 0.22-μm filter to obtain the particle preparation. Samples of the cells, the particles, and the medium (100 μl) were mixed with 4 ml of scintillation fluid (Optiphase Hisafe 3), and 3H dpm were recorded with a scintillation counter.
 
-## Cell lines
+### Cell lines
 
 RAW 264.7 and bEnd.3 cells were obtained from ATCC with proper ‘certificate of analysis’. All cell lines were negative for mycoplasma contamination.
 
-## Statistics
+### Statistics
 
 Statistical analyses of data were performed with GraphPad Prism 7.0 software. Quantitative data are reported as mean ± standard deviation. Differences were assessed with a Student’s t-test with Welch’s correction.
 
-## Study approval
+### Study approval
 
 Animal housing and experimental protocols were approved by UCLA’s Animal Research Committee. The animals were housed in an AAALAC (Association for Assessment and Accreditation of Laboratory Animal Care International)-approved facility and cared for according to guidelines established by UCLA’s Animal Research Committee. The mice were fed a chow diet and housed in a barrier facility with a 12 hr light-dark cycle.

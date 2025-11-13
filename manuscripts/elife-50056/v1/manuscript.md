@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.50056.001 Human papillomaviruses (HPVs) are the most common sexually transmitted infectious agents. Because of the species specificity of HPVs, study of their natural transmission in laboratory animals is not possible. The papillomavirus, MmuPV1, which infects laboratory mice ( Mus musculus ), can cause infections in the female cervicovaginal epithelium of immunocompetent mice that progress to cancer. Here, we provide evidence that MmuPV1 is sexually transmitted in unmanipulated, immunocompetent male and female mice. Female 'donor' mice experimentally infected with MmuPV1 in their lower reproductive tract were housed with unmanipulated male mice. The male mice were then transferred to cages holding 'recipient' female mice. One third of the female recipient mice acquired cervicovaginal infections. Prolonged infections were verified by histopathology and in situ hybridization analyses of both male and recipient female mice at the study endpoint. These findings indicate that MmuPV1 is a new model animal papillomavirus with which to study sexually transmission of papillomaviruses.
+Human papillomaviruses (HPVs) are the most common sexually transmitted infectious agents. Because of the species specificity of HPVs, study of their natural transmission in laboratory animals is not possible. The papillomavirus, MmuPV1, which infects laboratory mice (Mus musculus), can cause infections in the female cervicovaginal epithelium of immunocompetent mice that progress to cancer. Here, we provide evidence that MmuPV1 is sexually transmitted in unmanipulated, immunocompetent male and female mice. Female 'donor' mice experimentally infected with MmuPV1 in their lower reproductive tract were housed with unmanipulated male mice. The male mice were then transferred to cages holding 'recipient' female mice. One third of the female recipient mice acquired cervicovaginal infections. Prolonged infections were verified by histopathology and in situ hybridization analyses of both male and recipient female mice at the study endpoint. These findings indicate that MmuPV1 is a new model animal papillomavirus with which to study sexually transmission of papillomaviruses.
 
 ## Introduction
 
@@ -23,7 +23,7 @@ The recent discovery of a murine papillomavirus (MmuPV1 or MusPV1) (Ingle et al.
 
 ## Results and discussion
 
-## Rationale and experimental design for MmuPV1 sexual transmission studies
+### Rationale and experimental design for MmuPV1 sexual transmission studies
 
 By 4 months following experimental infection with MmuPV1 in their lower reproductive tract and treatment with E2 and UVB, immunocompetent FVB/N female mice develop high-grade precancerous cervicovaginal lesions and SCCs (Spurgeon et al., 2019). These lesions were associated with highly productive MmuPV1 infections throughout the cervicovaginal epithelia, as evidenced by strongly positive immunohistochemical staining for the major viral capsid protein L1 within the female reproductive tract (Spurgeon et al., 2019) (see also Figure 1A). This observation prompted us to test whether MmuPV1 can be sexually transmitted. Cohorts of female mice (referred to as ‘Donors’) that were either mock-infected or experimentally infected with MmuPV1+UV+E2 were held for 4 months (Figure 1B). The female Donors were then used to establish monogamous breeding pairs with uninfected male mice (referred to as ‘male Breeders’) and breeding allowed for at least 3 weeks. Male Breeders were then transferred into a cage with an uninfected female mouse (referred to as a ‘Recipient’) for at least 3 weeks. While the female Donors were treated with medroxyprogesterone acetate (Depo-Provera) and nonoxynol-9 to potentiate MmuPV1 infection (Spurgeon et al., 2019; Roberts et al., 2007), it is important to emphasize that none of the male Breeders were experimentally manipulated prior to or during matings and the female Recipients were not experimentally manipulated unless indicated below. We performed four separate transmission experiments summarized in Figure 1B and Table 1 using various conditions. In Experiments 1 and 2, breeding occurred for 3 weeks with both the Donor and Recipient, and Recipient female mice were treated with E2 for 2 months starting at 8 weeks post-breeding. In Experiment 3, a fraction of Recipients (n = 4) were pretreated with Depo-provera 5 days prior to breeding, and in Experiment 4, male Breeders remained with Donors and Recipients for 8 weeks each instead of 3 weeks. For Experiment 4, the Donors from Experiment 3 were used as the source of MmuPV1. All experiments were conducted with wild-type FVB/N mice, totaling 9 mock-infected and 22 MmuPV1 Donor-positive breeding pairs. Prior to housing with male Breeders, we first assessed whether the female Donors harbored infections in their reproductive tracts by performing cervicovaginal lavage (CVL). DNA recovered from the CVLs were subjected to PCR to detect MmuPV1 DNA and the host gene, p53, as a positive control (Figure 1C). All female Donors were found to have MmuPV1 infections based upon the CVL/PCR tests. This confirmed our previously published results that MmuPV1+UV+E2-infected mice efficiently establish infections that persist for at least 4 months (Spurgeon et al., 2019). Indeed the infections of these female Donors persisted for up to 10 months post-infection (Figure 1C).
 
@@ -31,7 +31,292 @@ By 4 months following experimental infection with MmuPV1 in their lower reproduc
 
 **Figure 1.:** (A) A full-slide scan of a representative H and E-stained female reproductive tract from a Donor infected for 4 months with MmuPV1+UV+E2 with anatomical regions labeled. On the right, higher magnification images of the cervicovaginal fornix (inset) stained with H and E (left) or immunofluorescence for keratin (KRT; red) and MmuPV1 L1 capsid protein (L1; green). (B) Schematic of MmuPV1 sexual transmission experimental design. Mice infected or potentially infected are indicated in red. (C) DNA was isolated from cervicovaginal lavage samples from a group of representative MmuPV1+UV+E2-infected females that were used as Donors in Experiments 3 and 4. Lavages were conducted at the onset of Experiment 3 (4 months post-infection), the onset of Experiment 4 (8 months post-infection) and Experiment four endpoint (10 months post-infection. DNA was analyzed by PCR for the MmuPV1 E2 gene (top) or for the p53 gene (bottom) to verify DNA presence/quality.
 
-## Evidence for sexual transmission: Assessment of MmuPV1 infection status in female Recipient reproductive organs
+**Table 1.**
+ Overview of MmuPV1 sexual transmission experiments and results
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Expt.</th>
+      <th>Experimental Conditions</th>
+      <th>Treatment of DONOR Female</th>
+      <th>DONOR pregnancy</th>
+      <th>Infection status of MALE BREEDER</th>
+      <th>Infection status of RECIPIENT female</th>
+      <th>RECIPIENT pregnancy (# if &gt; 1)</th>
+      <th># Positive CVL (total # of CVLs) in RECIPIENT Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">1</td>
+      <td rowspan="3">3 weeks breeding; Recipients untreated prior to breeding, placed on E2 8 weeks after introduction of male.</td>
+      <td>No Virus #1</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>No Virus #2</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>No Virus #3</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">3</td>
+      <td rowspan="3">3 weeks breeding; Recipients untreated prior to breeding.</td>
+      <td>No Virus #4</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>No Virus #5</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>No</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>No Virus #6</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>No</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">4</td>
+      <td rowspan="3">Prolonged Donor and Recipient breeding with male (8 weeks). Recipients untreated prior to breeding.</td>
+      <td>No Virus #7</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>No Virus #8</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>No Virus #9</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">1</td>
+      <td rowspan="3">3 weeks breeding, Recipients untreated prior to breeding, placed on E2 8 weeks after introduction of male.</td>
+      <td>MmuPV1+UV+E2 #1</td>
+      <td>No</td>
+      <td>Positive</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #2</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #3</td>
+      <td>Yes</td>
+      <td>Positive</td>
+      <td>Positive (Prolonged)</td>
+      <td>Yes</td>
+      <td>3 (4)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">2</td>
+      <td rowspan="6">3 weeks breeding, Recipients untreated prior to breeding, placed on E2 8 weeks after introduction of male.</td>
+      <td>MmuPV1+UV+E2 #4</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (5)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #5</td>
+      <td>No</td>
+      <td>Positive</td>
+      <td>Positive (Transient)</td>
+      <td>Yes</td>
+      <td>1 (5)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #6</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (5)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #7</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (5)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #8</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (5)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #9</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Positive (Transient)</td>
+      <td>Yes</td>
+      <td>1 (5)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">3</td>
+      <td rowspan="3">3 weeks breeding; Recipients untreated prior to breeding, not treated with E2.</td>
+      <td>MmuPV1+UV+E2 #10</td>
+      <td>No</td>
+      <td>Positive</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #11</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #12</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">3*</td>
+      <td rowspan="4">3 weeks breeding; female Recipients treated with Depo-Provera 5d prior to breeding, not treated with E2.</td>
+      <td>MmuPV1+UV+E2 #13</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>No</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #14</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>No</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #15</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>No</td>
+      <td>0 (3)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #16</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Positive (Prolonged)</td>
+      <td>No</td>
+      <td>2 (3)</td>
+    </tr>
+    <tr>
+      <td rowspan="6">4</td>
+      <td rowspan="6">Prolonged Donor and Recipient breeding with male (8 weeks). Recipients untreated prior to breeding, not treated with E2.</td>
+      <td>MmuPV1+UV+E2 #17</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #18</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes (2)</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #19</td>
+      <td>Yes</td>
+      <td>Negative</td>
+      <td>Positive (Prolonged)</td>
+      <td>Yes (3)</td>
+      <td>3 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #20</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Negative</td>
+      <td>Yes</td>
+      <td>0 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #21</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Positive (Transient)</td>
+      <td>Yes (3)</td>
+      <td>1 (4)</td>
+    </tr>
+    <tr>
+      <td>MmuPV1+UV+E2 #22</td>
+      <td>No</td>
+      <td>Negative</td>
+      <td>Positive (Prolonged)</td>
+      <td>Yes (2)</td>
+      <td>2 (4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Evidence for sexual transmission: Assessment of MmuPV1 infection status in female Recipient reproductive organs
 
 To monitor for evidence for sexual transmission, we monitored the MmuPV1 infection status of the reproductive tracts of the female Recipient mice. CVL/PCR was performed on these mice starting approximately 3 weeks following introduction of the male Breeder mouse and approximately every month thereafter (Figure 2A). All female Recipient mice whose matings resulted in pregnancy were allowed to deliver offspring prior to their first CVL/PCR screen. Using this screening method, we identified 32% (n = 7/22) of female Recipient mice to harbor infections within their reproductive tracts (Figure 2B). These infections were observed across all four experiments (Table 1). Of the MmuPV1-positive female Recipient mice, 57% (n = 4/7) established prolonged MmuPV1 infections (MmuPV1 positive for at least 2 CVLs) while 43% (n = 3/7) had transient infections (MmuPV1 positive for only one CVL) (Figure 2B, Table 1). Prolonging the exposure of male Breeders to both the female Donors and female Recipients from 3 weeks to 8 weeks in Experiment 4 resulted in a higher percentage of MmuPV1-positive Recipients (50%; n = 3/6) than observed in Experiments 1 (33%; n = 1/3), 2 (33%; n = 2/6), or 3 and 3* (14%; n = 1/7). Preconditioning female recipient mice with Depo-Provera, a contraceptive drug, did not appear to influence susceptibility of mice to MmuPV1 infection (25% MmuPV1 positive: n = 1/4).
 
@@ -45,7 +330,7 @@ One obvious positive readout for sexual activity is pregnancy. Of the 7 Recipien
 
 To confirm that the MmuPV1-positive PCR results from the CVLs reflect persistent infections of the cervical/vaginal epithelium, we performed endpoint histopathological and MmuPV1-specific in situ hybridization (RNAscope) analyses on the reproductive tract of a female Recipient mouse (Recipient #3), which was MmuPV1-positive at the endpoint by CVL/PCR (Figure 2A and D). RNAscope used probes to detect viral transcripts containing the E4 region because that region is present in most early and late transcripts (Xue et al., 2017). Several discrete regions of epithelia were positive for MmuPV1 viral transcripts. These regions correlated with histopathological signs of MmuPV1 infection (Spurgeon et al., 2019), including disorganization of the stratified epithelium, areas of hyperkeratinization, karyomegaly, perinuclear halos similar to koilocytes, and condensed chromatin. We also observed evidence for a productive viral infection as indicated by cells staining positively for the viral capsid protein L1 by immunofluorescence (Figure 2D), albeit at levels of detection that are much lower than that afforded by RNAscope-based detection of viral transcripts. The infected regions of epithelia were pathologically scored as having low-grade or mild dysplasia. This particular mouse was MmuPV1-positive by 6 weeks post-breeding, and treated for 2 months with estrogen starting at 8 weeks post-breeding. Our previous results indicate that neoplastic disease worsens in MmuPV1 and MmuPV1+E2-infected mice upon extended duration (4 or 6 months) (Spurgeon et al., 2019). It is therefore possible that MmuPV1-infected female Recipients may develop moderate to high-grade disease or even SCC if the infection is allowed to proceed for a longer period of time. We analyzed the reproductive tracts of additional Recipient female mice that were positive for MmuPV1 by CVL/PCR at the endpoint and found them to have sites of infections based upon MmuPV1 E4-specific in situ hybridization (data not shown). These results confirm that sexual transmission of MmuPV1 can lead to persistent infections in the absence of genetic or environmental manipulation.
 
-## Male Breeders harbor infections in their reproductive organs
+### Male Breeders harbor infections in their reproductive organs
 
 Because many female Recipient mice contracted MmuPV1 infections of their reproductive organs after being housed with male Breeders (Figure 2), we evaluated the reproductive organs of the male Breeders for the presence of MmuPV1. Attempts to detect the MmuPV1 by lavage of the male genitalia were not successful (insufficient DNA was retrieved based upon an inability to detect mouse p53 DNA by PCR; data not shown). Therefore we resorted to in situ hybridization analysis of male reproductive organs obtained at the time of euthanasia. We identified several male Breeders with MmuPV1-positive foci of infection by RNAscope (Figure 3A). All foci of infections were detected in epithelia of the penis, including the glans epithelium, mump ridge groove, and prepuce (foreskin)/preputial space (Phillips et al., 2015; Rodriguez et al., 2011) (Figure 3B and C). Notably, many of these sites are anatomical locations infected by HPV in men (Giuliano et al., 2007). We also observed evidence for productive viral infections in the penis using L1 immunofluorescence (Figure 3B). Similar to our observation in the MmuPV1-positive Recipient females (Figure 2D), L1 was detected albeit at a lower level than that observed for E4 transcripts, which uses the sensitive RNAscope technology. Two of the male Breeders (Male #3 and Male #5) that had detectable MmuPV1 infections on their penis by the endpoint RNAscope analysis were associated with MmuPV1-positive female Recipients (Table 1). The other two males that had detectable MmuPV1 infections on their penis did not appear to have transmitted MmuPV1 to Recipient females, based upon CVL/PCR. It remains possible that they did transmit, but the infections in the female Recipients were transient in nature and not caught by the intermittent CVL/PCR tests. Other males that were negative for MmuPV1-infections based upon endpoint RNAscope analysis did transmit MmuPV1 to female Recipients, suggesting they either had transient infections or else their foci of persistent infections were missed by the RNAscope analysis, which is very possible as only one section per male mouse was subjected to in situ hybridization. Of the 4 MmuPV1-positive male Breeders we identified using in situ hybridization, only 1 Donor-Breeder mating resulted in pregnancy, whereas all 4 Breeder-Recipient matings resulted in pregnancies (Table 1).
 
@@ -53,36 +338,207 @@ Because many female Recipient mice contracted MmuPV1 infections of their reprodu
 
 **Figure 3.:** (A) Incidence of MmuPV1 infection via sexual transmission in male Breeders as determined by staining tissue for MmuPV1 E4 transcript using RNAscope. (B) Various regions of the penis in MmuPV1-positive male Breeders stained with H and E or RNAscope for MmuPV1 E4 viral transcripts. Lower magnification images on the left for Male #1 include inset boxes (red) indicating the region staining positive for E4, which is shown on the far right. Higher magnification H and E-stained image of the region is shown in the center. Top: Male #1 (did not transmit to Recipient) with MmuPV1-positive region in the glans penile epithelium (red inset). Bottom: Male #5 (transmitted to Recipient) with MmuPV1-positive region in the glans penile epithelium stained for L1 (green) and K14 (KRT; red) (white inset; left), H and E (red inset; middle), and E4 by RNAscope (red inset; right). (C) Tissue from Male #3 (transmitted to Recipient #3 shown in Figure 2C) is stained with H and E (left two columns) or for the MmuPV1 E4 viral transcript using RNAscope (right) three panels). Lower magnification images on the left include inset boxes (red) indicating the region staining positive for E4. Higher magnification images of the infected regions of epithelia are shown stained with H and E and RNAscope for the MmuPV1 E4 transcript (bottom). In the RNAscope analysis, slides were left untreated, treated with DNase to remove any signal from viral DNA, and with DNase+RNase to verify signal is specific for viral RNA transcripts. Top: Male #3 (transmitted to Recipient) with MmuPV1-positive region in the mump ridge groove of the glans penis (red inset). Bottom: Male #3 (transmitted to Recipient) with MmuPV1-positive region in the prepuce (foreskin)/inner preputial space (red inset). All scale bars = 100 µM.
 
-## Conclusions and significance
+### Conclusions and significance
 
 The data presented in this study provide strong evidence that MmuPV1 is sexually transmitted. MmuPV1 becomes the first model for studying sexual transmission of papillomaviruses in laboratory mice (Mus musculus). Our immediate goals are to use this natural sexual transmission model in immunocompetent mice to study the dynamics of sexual transmission, the role of host immunity, and methods for prevention and treatment.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>FVB/N</td>
+      <td>Taconic Biosciences</td>
+      <td>RRID:IMSR_TAC:fvb</td>
+      <td>Males (n = 31) Females (n = 31)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>MmuPV1</td>
+      <td>Joh et al., 2012 Uberoi et al., 2016</td>
+      <td>GenBank: GU808564.1</td>
+      <td>In-lab stock ‘AU 11/13’, pAU.4</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MusPV1 L1 (rabbit polyclonal immune serum)</td>
+      <td>Chris Buck, NCI/NIH</td>
+      <td></td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-K14 (rabbit polyclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat#905301; RRID:AB_2565048</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MmuPV1_E2_1</td>
+      <td>Hu et al., 2015 Cladel et al., 2017a Spurgeon et al., 2019</td>
+      <td>PCR primers</td>
+      <td>GCCCGAAGACAACACCGCCACG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>MmuPV1_E2_2</td>
+      <td>Hu et al., 2015 Cladel et al., 2017a Spurgeon et al., 2019</td>
+      <td>PCR primers</td>
+      <td>CCTCCGCCTCGTCCCCAAATGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>p53-1</td>
+      <td>Spurgeon et al., 2019</td>
+      <td>PCR primers</td>
+      <td>TATACTCAGAGCCGGCCT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>p53-2</td>
+      <td>Spurgeon et al., 2019</td>
+      <td>PCR primers</td>
+      <td>ACAGCGTGGTGGTACCTTAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>p53-3</td>
+      <td>Spurgeon et al., 2019</td>
+      <td>PCR primers</td>
+      <td>TCCTCGTGCTTTACGGTATC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>MusPV-E4</td>
+      <td>Xue et al., 2017</td>
+      <td>RNAscope probe Cat#473281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 2.5 HD Detection Kit Brown</td>
+      <td>ACDBio</td>
+      <td>Cat# 322300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tyramide signal amplification (TSA)-related reagents</td>
+      <td>Online protocol: https://doi.org/10.17504/protocols.io.i8cchsw</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>medroxyprogesterone acetate</td>
+      <td>Amphastar Pharmaceuticals</td>
+      <td>Depo-Provera</td>
+      <td>3 mg/animal, subcutaneous injection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nonoxynol-9 (4%)</td>
+      <td>Options Conceptrol</td>
+      <td>Cat#247149</td>
+      <td>50 µl/mouse, intravaginal</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carboxyl methylcellulose (4%)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# C4888</td>
+      <td>25 µl/mouse, intravaginal</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>17β-estradiol pellet, 0.05 mg/60 days</td>
+      <td>Innovative Research of America</td>
+      <td>Cat#SE-121</td>
+      <td>0.05 mg/60 days, subcutaneous pellet</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin QS</td>
+      <td>Vector</td>
+      <td>Cat#H-3404</td>
+      <td>Counterstain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Shandon Instant Hematoxylin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#6765015</td>
+      <td>H and E stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#E4382</td>
+      <td>H and E stain</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNase I</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#EN0521</td>
+      <td>20 units/sample</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNase A</td>
+      <td>Qiagen</td>
+      <td>Cat#1006657</td>
+      <td>500 µg/sample</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNase T1</td>
+      <td>Fermentas</td>
+      <td>Cat#EN0542</td>
+      <td>2000 units/sample</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Immunocompetent, wild-type FVB/N mice (Taconic Biosciences; Albany, NY) mice were used in this study. All animal experiments were performed in full compliance with standards outlined in the ‘Guide for the Care and Use of Laboratory Animals’ by the Laboratory Animal Resources (LAR) as specified by the Animal Welfare Act (AWA) and Office of Laboratory Animal Welfare (OLAW) and approved by the Governing Board of the National Research Council (NRC). Mice were housed at McArdle Laboratory Animal Care Unit in strict accordance with guidelines approved by the Association for Assessment of Laboratory Animal Care (AALAC), at the University of Wisconsin Medical School. All protocols for animal work were approved by the University of Wisconsin Medical School Institutional Animal Care and Use Committee (IACUC, Protocol number: M005871).
 
-## MmuPV1 cervicovaginal infection and treatment of Donor females
+### MmuPV1 cervicovaginal infection and treatment of Donor females
 
 At 6–8 weeks of age, female virgin FVB/N mice were infected with MmuPV1 virus as described previously (Spurgeon et al., 2019). Briefly, mice were injected subcutaneously with 3 mg medroxyprogesterone acetate (Amphastar Pharmaceuticals, Rancho Cucamongo, CA) 4–7 days prior to MmuPV1 infection to induce diestrus. On the day of the infection, mice were pre-treated vaginally with 50 µL Conceptrol (Options, #247149) containing 4% nonoxynol-9 to induce chemical injury to the cervicovaginal epithelium. At 4 hr post-treatment with Contraceptrol, mice were infected intravaginally with 108 VGE (viral genome equivalents) MmuPV1 virions suspended in 25 µL 4% carboxyl methylcellulose (Sigma, #C4888). The MmuPV1 virus stock used for infection was generated by isolating virions from papillomas arising on infected FoxN1nu/nu mice. To treat mice with estrogen, a continuous-release estrogen (E2) tablet (17β-estradiol; 0.05 mg/60 days; Innovative Research of America, Sarasota, FL) was inserted subcutaneously in the shoulder fat pads of the dorsal skin. For those mice receiving estrogen, treatment began 5 days following MmuPV1 infection. A new tablet was inserted every 2 months as needed. Infection and estrogen treatment were performed while mice were anesthetized with 5% isoflurane. Animals were exposed to a single dose of UVB at 1000 mJ/cm2. UVB was administered using a custom designed Research Irradiation Unit (Daavlin, Bryan, OH) with lamps controlled using Daavlin Flex Control Integrating Dosimeters.
 
-## MmuPV1 sexual transmission
+### MmuPV1 sexual transmission
 
 Donors were lavaged prior to breeding to confirm infection, and then introduced to male FVB/N to establish monogamous breeding pairs. After breeding with infected female Donor mice, the males were isolated for 2–5 days, then introduced to uninfected female Recipient mice. In all experiments except Experiment 3, female recipient mice were 6–8 weeks old virgin mice that were not treated with depoprovera or nonoxynol-9. In Experiment 3, female Recipient mice were pre-treated with depoprovera 5 days prior to introduction of Male Breeder. Male breeding with female Recipient mice was allowed to proceed for 3 weeks in Experiments 1–3. In Experiment 4, breeding with female Donors and Recipients was allowed to proceed for 8 weeks.
 
-## Vaginal lavage and detection of MmuPV1 by PCR
+### Vaginal lavage and detection of MmuPV1 by PCR
 
 The method for detecting MmuPV1 DNA by PCR in vaginal lavages was modified from that described in Hu et. al. and Cladel et. al. (Hu et al., 2015; Cladel et al., 2017b). Briefly, 25 µL of sterile PBS was introduced intravaginally with a pipette tip, triturating 4–5 times prior to retrieval using the pipetteman. The vaginal lavages were stored at −20° C and DNA isolated using spin-columns (DNeasy Blood and Tissue Kit; Qiagen #69506, Hilden, Germany). Eluted DNA was analyzed by PCR using primers specific to the MmuPV1 E2 gene: MmuPV1_E2_1 (5’-GCCCGAAGACAACACCGCCACG-3’) and MmuPV1_E2_2 (5’-CCTCCGCCTCGTCCCCAAATGG-3’) and analyzed using agarose gel electrophoresis. The presence of DNA suitable for PCR amplification was verified by performing PCR for the p53 gene. The primers for the p53 gene were as follows: p53-1 (5′-TATACTCAGAGCCGGCCT-3′), p53-2 (5′-ACAGCGTGGTGGTACCTTAT-3′), and p53-3 (5′-TCCTCGTGCTTTACGGTATC-3′).
 
-## Tissue procurement, Processing, and Histopathological Analysis
+### Tissue procurement, Processing, and Histopathological Analysis
 
 Reproductive organs were harvested, fixed in 4% paraformaldehyde, and paraffin-embedded. Serial sections (5 μm) were cut and every 10th section was stained with H and E and evaluated by histopathology. The scoring system for worst stage of disease has been described previously (Spurgeon et al., 2019).
 
-## MmuPV1 L1- cytokeratin dual immunofluorescence and RNA in situ hybridization
+### MmuPV1 L1- cytokeratin dual immunofluorescence and RNA in situ hybridization
 
 A detailed protocol for detecting MmuPV1 L1 using a tyramide-based signal amplification (TSA) method is available at: dx.doi.org/10.17504/protocols.io.i8cchsw. MmuPV1 viral transcripts were detected using RNAscope 2.5 HD Assay-Brown (Advanced Cell Diagnostics, Newark, CA) according to manufacturer instructions with probes specific for MmuPV1 E4 (Catalog #473281) as described previously (Spurgeon et al., 2019; Xue et al., 2017). Tissue sections were treated following protease treatment and prior to probe hybridization with 20 units of DNase I (Thermo Fisher Scientific, #EN0521), or DNase I combined with 500 ug RNase A (Qiagen, #1006657) plus 2000 units RNase T1 (Fermentas, Waltham, MA, #EN0542) for 30 min at 40°C. Slides were counterstained with hematoxylin before mounting and coverslipping.
 
-## Image acquisition
+### Image acquisition
 
 High resolution wide-field fluorescent images were acquired using Leica SP8 3X STED microscope (Xue et al., 2017) by means of a 20X objective lens (Specifications: HC PL APO 20x/0.75 CS2, Dry)LAS-X suite (version: 2.0.1). Full slide scans of tissues were performed using Aperio ScanScope XT Slide Scanner using 20x/0.75 Plan Apo objective. All other images were captured using a Zeiss AxioImager M2 microscope and AxioVision software version 4.8.2 (Jena, Germany).

@@ -21,9 +21,9 @@
 
 ### Affiliations
 
-1. https://ror.org/037zgn354 Ludwig Center for Cancer Genetics and Therapeutics, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/037zgn354 Department of Pediatrics, Johns Hopkins University School of Medicine Baltimore United States
-3. https://ror.org/00za53h95 Department of Oncology, Sidney Kimmel Comprehensive Cancer, Johns Hopkins University Baltimore United States
+1. Ludwig Center for Cancer Genetics and Therapeutics, Sidney Kimmel Comprehensive Cancer Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+2. Department of Pediatrics, Johns Hopkins University School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+3. Department of Oncology, Sidney Kimmel Comprehensive Cancer, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 4. Department of Neurology, Johns Hopkins University School of Medicine, MD School of Medicine Baltimore United States
 5. Department of Pathology, Johns Hopkins University School of Medicine Baltimore United States
 6. Department of Neurosurgery, Johns Hopkins University School of Medicine Baltimore United States
@@ -32,7 +32,7 @@
 
 ## Abstract
 
-Malignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with neurofibromatosis and account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year. Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes. PN develop in nearly 30–50% of patients with neurofibromatosis type 1 (NF1) and most often grow rapidly in the first decade of life. One of the most important aspects of clinical care for NF1 patients is monitoring PN for signs of malignant transformation to MPNST that occurs in 10–15% of patients. We perform aneuploidy analysis on ctDNA from 883 ostensibly healthy individuals and 28 patients with neurofibromas, including 7 patients with benign neurofibroma, 9 patients with PN and 12 patients with MPNST. Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%, and analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity to 50% while retaining a high specificity of 97%. In addition, we performed mutation analysis on plasma cfDNA for a subset of patients and identified mutations in NF1 , NF2 , RB1 , TP53BP2 , and GOLGA2 . Given the high throughput and relatively low sequencing coverage required by our assay, liquid biopsy represents a promising technology to identify incipient MPNST.
+Malignant peripheral nerve sheath tumors (MPNST) are the deadliest cancer that arises in individuals diagnosed with neurofibromatosis and account for nearly 5% of the 15,000 soft tissue sarcomas diagnosed in the United States each year. Comprised of neoplastic Schwann cells, primary risk factors for developing MPNST include existing plexiform neurofibromas (PN), prior radiotherapy treatment, and expansive germline mutations involving the entire NF1 gene and surrounding genes. PN develop in nearly 30–50% of patients with neurofibromatosis type 1 (NF1) and most often grow rapidly in the first decade of life. One of the most important aspects of clinical care for NF1 patients is monitoring PN for signs of malignant transformation to MPNST that occurs in 10–15% of patients. We perform aneuploidy analysis on ctDNA from 883 ostensibly healthy individuals and 28 patients with neurofibromas, including 7 patients with benign neurofibroma, 9 patients with PN and 12 patients with MPNST. Overall sensitivity for detecting MPNST using genome wide aneuploidy scoring was 33%, and analysis of sub-chromosomal copy number alterations (CNAs) improved sensitivity to 50% while retaining a high specificity of 97%. In addition, we performed mutation analysis on plasma cfDNA for a subset of patients and identified mutations in NF1, NF2, RB1, TP53BP2, and GOLGA2. Given the high throughput and relatively low sequencing coverage required by our assay, liquid biopsy represents a promising technology to identify incipient MPNST.
 
 ## Introduction
 
@@ -54,11 +54,11 @@ In the present study, we perform aneuploidy analysis on 883 ostensibly healthy i
 
 ## Results
 
-## Patient characteristics
+### Patient characteristics
 
 The primary objective of this pilot study was to differentiate MPNST from PN using genome wide and focal aneuploidy analysis of cfDNA isolated from plasma. To quantify the rate of genome wide copy number alterations (CNAs) detected in plasma cfDNA of healthy persons, we analyzed 883 samples from a previously published study (Douville et al., 2020) using a revised RealSeqS algorithm and a median of 10,223,275 UIDs per sample (Supplementary file 1). Our patient cohort included 28 patients with NF, including 7 patients with neurofibromas, 9 patients with PN, and 12 patients with MPNST, analyzed in the same manner as healthy controls with a median of 11,240,762 UIDs per sample (Supplementary file 2). All samples had matched leukocyte analysis to exclude germline CNAs. For patients with biopsy-confirmed MPNST, 58% (7/12) had positive PET scans, 17% (2/12) had prior chemotherapy, 17% (2/12) had prior chemotherapy and radiation, 8% (1/12) had prior radiation only, 17% (2/12) had prior surgery only, and 8% (1/12) had prior surgery, chemotherapy, and radiation. Median length of follow up was 523 days.
 
-## Analysis of genome wide aneuploidy
+### Analysis of genome wide aneuploidy
 
 Ninety-six percent (27/28) of patients enrolled onto our study met the criteria for NF1 diagnosis. RealSeqS, which amplifies approximately 750,000 loci across 39 chromosome arms, was used to calculate a genome wide aneuploidy score (GAS) to call plasma samples positive or negative at 97% specificity as determined by the 883 healthy controls. The inclusion of the large number of healthy controls is especially important because it allows for a realistic estimation of specificity and a comparison between healthy persons, patients with neurofibromas, as those with MPNST, as would be done in a real-world setting. The median GAS score in healthy controls was 0.008 ± 0.102, and 0.005 ± 0.249 and 0.018 ± 0.652 in benign/plexiform neurofibromas and MPNST, respectively (Figure 1). At 97% specificity in healthy controls, at the time of blood draw, the false positive rate among benign/plexiform neurofibromas was 6.3% (1/16, p = 0.42 compared to healthy controls), while the sensitivity for detecting MPNST was 33% (4/12, p < 0.001 compared to healthy controls). GAS score did not correlate with tumor volume (R2 = 0.09), history of prior adjuvant therapy (p = 0.64) or PET positivity (p = 0.25), but patients who were alive at the time of last follow up had lower GAS scores (p = 0.045).
 
@@ -68,11 +68,17 @@ Ninety-six percent (27/28) of patients enrolled onto our study met the criteria 
 
 Interestingly, the one patient with the plexiform neurofibroma deemed to be a false positive at the time of blood draw (INDIA 1283, Supplementary file 3) had a GAS score of 0.997. Biopsy at the time of blood draw confirmed diffuse and atypical changes in the PN. Upon later review, this patient progressed to MPNST 25 months after blood draw, suggesting that aneuploidy analysis significantly pre-dated clinical progression.
 
-## Analysis of focal copy number alterations
+### Analysis of focal copy number alterations
 
 In addition to assessing genome wide aneuploidy, RealSeqS can detect focal amplifications and deletions across 39 chromosome arms. We profiled sub-chromosomal changes across 13 chromosome arms commonly altered in MPNST (Figure 2), including 4q (PDGFRA), 5p (TERT), 6q (TBX1), 7p (EGFR), 7q (BRAF), 8q (EXT1), 9p (CDKN2A and CDKN2B), 10q (PTEN), 11p (EXT2), 11q (EED), 15q (IDH2), 17p (TP53), and 17q (NF1 and SUZ12) (Supplementary file 4). In benign/plexiform NF, only one patient had a focal deletion across all loci assayed. Interestingly, this patient (INDIA 1283) had a deletion in TERT and was the same patient that had a GAS score of 0.997 that later progressed to MPNST. Among the 12 patients with MPNST, 17% (2/12) had losses in TERT, 8% (1/12) had a loss at TP53, and 50% (6/12) had losses on 17q at SUZ12 (Figure 2—figure supplement 1). These data suggest that focal changes may be useful biomarkers of progression to MPNST.
 
-## ctDNA mutation analysis
+![Figure 2.](https://cdn.elifesciences.org/articles/74238/elife-74238-fig2-v2.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74238/elife-74238-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot represents a sub-chromosomal locus covered by RealSeqS.
+
+### ctDNA mutation analysis
 
 Enough banked plasma was available from six patients, two with benign neurofibromas and four with MPNST, to assay ctDNA for mutations using ddPCR (Supplementary files 1 and 5). Three patients had positive ctDNA results, including one patient (INDIA 1280) with a benign neurofibroma of the right femoral nerve that had a GOLGA2 splice site acceptor mutation at a mutant allele frequency (MAF) of 0.19%, and two MPNST patients (INDIA 1244 and INDIA 1281) that a RB1 R787Qfs*23 mutation at 2.55% and a TP53BP2 A324V mutation at 0.04%, respectively.
 
@@ -88,11 +94,11 @@ Main limitations of our study include the relatively small number of patients, t
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 All individuals participating in the study provided written informed consent after approval by the institutional review board at The Johns Hopkins IRB00075499. The study complied with the Health Insurance Portability and Accountability Act and the Deceleration of Helsinki.
 
-## Library construction and whole exome sequencing buffer and PCR conditions
+### Library construction and whole exome sequencing buffer and PCR conditions
 
 Tumor and matched lymphocytic normal DNA library preparation was performed as previously described (Bettegowda et al., 2013). Genomic DNA from tumor and normal samples were fragmented and used for Illumina TruSeq library construction (Illumina, San Diego, CA) according to the manufacturer’s instructions. DNA was purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0–0.9 of PCR product to beads. Purified, fragmented DNA was mixed with 36 µl of H2O, 10 µl of End Repair Reaction Buffer, 5 µl of End Repair Enzyme Mix (cat# E6050, NEB, Ipswich, MA). The 100 µl end-repair mixture was incubated at 20°C for 30 min, and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0–1.25 of PCR product to beads. 42 µl of end-repaired DNA was mixed with 5 µl of 10 X dA Tailing Reaction Buffer and 3 µl of Klenow (exo-)(cat# E6053, NEB, Ipswich, MA). The 50 µl mixture was incubated at 37°C for 30 min and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0–1.0 of PCR product to beads. 25 µl of A-tailed DNA was mixed with 6.7 µl of H2O, 3.3 µl of PE-adaptor (Illumina), 10 µl of 5 X Ligation buffer and 5 µl of Quick T4 DNA ligase (cat# E6056, NEB, Ipswich, MA). The ligation mixture was incubated at 20°C for 15 min and purified using Agencourt AMPure XP beads (Beckman Coulter, IN) in a ratio of 1.0–0.95 and 1.0 of PCR product to beads.
 
@@ -100,20 +106,20 @@ To obtain an amplified library, twelve PCRs of 25 µl each were set up, each inc
 
 Plasma preparation: Peripheral blood was collected in K2-EDTA tubes after informed consent was obtained, and plasma was isolated as previously described (Diehl et al., 2008). cfDNA from each of the plasma samples was purified using a BioChain cfDNA Extraction Kit (BioChain, cat #K5011610) using the manufacturer’s recommended protocol.
 
-## Processing of next generation sequencing data
+### Processing of next generation sequencing data
 
 Somatic mutations were identified using VariantDx custom software for identifying mutations in matched tumor and normal samples from whole exome sequencing (WES). Prior to mutation calling, primary processing of sequence data for both tumor and normal samples were performed using Illumina CASAVA software (v1.8), including masking of adapter sequences. Sequence reads were aligned against the human reference genome (version hg19) using ELAND software. Candidate somatic mutations, consisting of point mutations, insertions, and deletions were then identified using VariantDx. In brief, an alignment filter was applied to exclude quality failed reads, unpaired reads, and poorly mapped reads in the tumor. A base quality filter was applied to limit inclusion of bases with reported phred quality score >30 for the tumor and >20 for the normal. A mutation in the tumor was identified as a candidate somatic mutation only when (i) distinct paired reads contained the mutation in the tumor; (ii) the number of distinct paired reads containing a particular mutation in the tumor was at least 10% of the total distinct read pairs; (iii) the mismatched base was not present in >1% of the reads in the matched normal sample as well as not present in a custom database of common germline variants derived from dbSNP; and (iv) the position was covered in both the tumor and normal. Mutations arising from misplaced genome alignments, including paralogous sequences, were identified and excluded by searching the reference genome.
 
 Candidate somatic mutations were further filtered based on gene annotation to identify those occurring in protein coding regions. Functional consequences were predicted using snpEff and a custom database of CCDS, RefSeq and Ensembl annotations using the latest transcript versions available on hg19 from UCSC (https://genome.ucsc.edu/). Predictions were ordered to prefer transcripts with canonical start and stop codons and CCDS or Refseq transcripts over Ensembl when available. Finally, mutations were filtered to exclude intronic and silent changes, while retaining mutations resulting in missense mutations, nonsense mutations, frameshifts, or splice site alterations. A manual visual inspection step was used to further remove artifactual changes.
 
-## ddPCR
+### ddPCR
 
 Cell-free DNA was extracted using the QIAGEN circulating nucleic acid kit (Catalog# 55114). Extracted cell-free DNA was analyzed with custom designed droplet digital PrimePCR assays using the BioRad QX200 droplet digital PCR system to determine the number of wild-type and mutant genomic equivalents following the manufacturer’s recommendations. A mutation was selected for each tumor based on the results of the WES results. ddPCR was then performed in triplicate on DNA derived from the plasma and ctDNA levels were quantified. These data were used to calculate the overall MAF for each somatic mutation, defined as the number of mutant counts divided by the total number of counts for a given amplicon.
 
-## RealSeqS
+### RealSeqS
 
 RealSeqS uses a single primer pair to amplify about 750,000 loci scattered throughout the genome (Douville et al., 2020). After massively parallel sequencing, gains or losses of each of the 39 chromosome arms covered by the assay were determined using a bespoke statistical learning method (Douville et al., 2018). A support vector machine (SVM) was used to discriminate between aneuploid and euploid samples. The SVM was trained using 2,651 aneuploid samples and 1,348 euploid plasma samples. Samples were scored as positive when the genome wide aneuploidy score was >0.28. Code is available at https://zenodo.org/record/3656943#.YaZZCdDMKUk.32 (Douville, 2020).
 
-## Statistical analysis methods
+### Statistical analysis methods
 
 Comparison of GAS at 97% specificity was conducted with a one-way ANOVA with post-hoc Tukey’s correction. Clinicopathological data were compared using a (add symbol) test or linear regression with Spearman’s correlation. A p ≤ 0.05 was considered significant.

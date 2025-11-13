@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.36395.001 Extensive evidence suggests that people use base rate information inconsistently in decision making. A classic example is the inverse base rate effect (IBRE), whereby participants classify ambiguous stimuli sharing features of both common and rare categories as members of the rare category. Computational models of the IBRE have posited that it arises either from associative similarity-based mechanisms or from dissimilarity-based processes that may depend on higher-level inference. Here we develop a hybrid model, which posits that similarity- and dissimilarity-based evidence both contribute to the IBRE, and test it using functional magnetic resonance imaging data collected from human subjects completing an IBRE task. Consistent with our model, multivoxel pattern analysis reveals that activation patterns on ambiguous test trials contain information consistent with dissimilarity-based processing. Further, trial-by-trial activation in left rostrolateral prefrontal cortex tracks model-based predictions for dissimilarity-based processing, consistent with theories positing a role for higher-level symbolic processing in the IBRE.
+Extensive evidence suggests that people use base rate information inconsistently in decision making. A classic example is the inverse base rate effect (IBRE), whereby participants classify ambiguous stimuli sharing features of both common and rare categories as members of the rare category. Computational models of the IBRE have posited that it arises either from associative similarity-based mechanisms or from dissimilarity-based processes that may depend on higher-level inference. Here we develop a hybrid model, which posits that similarity- and dissimilarity-based evidence both contribute to the IBRE, and test it using functional magnetic resonance imaging data collected from human subjects completing an IBRE task. Consistent with our model, multivoxel pattern analysis reveals that activation patterns on ambiguous test trials contain information consistent with dissimilarity-based processing. Further, trial-by-trial activation in left rostrolateral prefrontal cortex tracks model-based predictions for dissimilarity-based processing, consistent with theories positing a role for higher-level symbolic processing in the IBRE.
 
 ## Introduction
 
@@ -49,7 +49,7 @@ In addition to our multivoxel analysis, we also test whether using dissimilarity
 
 ## Results
 
-## Behavioral results and model fit
+### Behavioral results and model fit
 
 Learning curves over the 12 learning blocks for common and rare disease item pairs are shown in Figure 2. All subjects reached greater than 90% accuracy over the last four blocks (M = 98.1%, SD = 2.4%, range = 93.5–100%). Mean choice performance in the first block was above chance (25%) for both common (M = 63.6%) and rare (M = 43.2%) feature pairs. Consistent with previous IBRE studies, a linear mixed effects model revealed a significant block by trial type interaction (F (1, 262)=20.7, p<0.001), suggesting that the common diseases were learned more quickly than the rare diseases. Paired t-tests revealed that participants were significantly more accurate on common compared with rare disease trials in the first (t (21)=2.26, p=0.034), second (t (21)=2.85, p=0.010), third (t (21)=2.72, p=0.013), fourth (t (21)=2.46, p=0.023), and 12th blocks (t (21)=2.23, p=0.037).
 
@@ -61,11 +61,236 @@ For the test phase, participants were asked to categorize the original category 
 
 Choice probabilities and dissGCM-derived predictions for each of the test items are summarized in Table 1. Consistent with an inverse base rate effect, participants were numerically more likely to classify ambiguous test stimuli (combinations of rare and common features) as members of the relevant rare category (M = 49.8%) than the relevant common category (M = 43.5%) combined across object-scene, scene-scene, and object-object pairs. A one-sample t-test revealed that the percentage of rare responding on ambiguous trials was significantly higher than the 1/4 base rate for the rare category (t (21)=8.11, p<0.001). Likewise, participants chose the rare category for ambiguous pairs significantly more often than for the imperfect predictors (faces: M = 30.0%), (t (21)=3.85, p<0.001).
 
+**Table 1.**
+ Observed and dissGCM-predicted response probabilities for the test phase.The feature combinations presented at test are listed in the leftmost column: F = face, S = scene, O = object. In the headings, D1–D4 correspond to the four possible category responses (diseases). Bold, italicized values indicate results for the key ambiguous stimuli in which a scene was paired with an object.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Behavior</th>
+      <th colspan="4">dissGCM</th>
+    </tr>
+    <tr>
+      <th>Test item</th>
+      <th>D1</th>
+      <th>D2</th>
+      <th>D3</th>
+      <th>D4</th>
+      <th>D1</th>
+      <th>D2</th>
+      <th>D3</th>
+      <th>D4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F1 + S1</td>
+      <td>.972</td>
+      <td>.018</td>
+      <td>.008</td>
+      <td>.003</td>
+      <td>.971</td>
+      <td>.014</td>
+      <td>.008</td>
+      <td>.008</td>
+    </tr>
+    <tr>
+      <td>F1 + O1</td>
+      <td>.031</td>
+      <td>.962</td>
+      <td>.008</td>
+      <td>0.</td>
+      <td>.063</td>
+      <td>.901</td>
+      <td>.018</td>
+      <td>.018</td>
+    </tr>
+    <tr>
+      <td>F2 + O2</td>
+      <td>.005</td>
+      <td>0.</td>
+      <td>.987</td>
+      <td>.008</td>
+      <td>.008</td>
+      <td>.008</td>
+      <td>.972</td>
+      <td>.013</td>
+    </tr>
+    <tr>
+      <td>F2 + S2</td>
+      <td>.023</td>
+      <td>.008</td>
+      <td>.069</td>
+      <td>.901</td>
+      <td>.018</td>
+      <td>.018</td>
+      <td>.059</td>
+      <td>.905</td>
+    </tr>
+    <tr>
+      <td>F1</td>
+      <td>.667</td>
+      <td>.295</td>
+      <td>.023</td>
+      <td>.015</td>
+      <td>.667</td>
+      <td>.283</td>
+      <td>.025</td>
+      <td>.025</td>
+    </tr>
+    <tr>
+      <td>F2</td>
+      <td>.107</td>
+      <td>.038</td>
+      <td>.550</td>
+      <td>.305</td>
+      <td>.027</td>
+      <td>.027</td>
+      <td>.640</td>
+      <td>.307</td>
+    </tr>
+    <tr>
+      <td>S1</td>
+      <td>.848</td>
+      <td>.061</td>
+      <td>.008</td>
+      <td>.083</td>
+      <td>.955</td>
+      <td>.015</td>
+      <td>.015</td>
+      <td>.015</td>
+    </tr>
+    <tr>
+      <td>O1</td>
+      <td>.008</td>
+      <td>.908</td>
+      <td>.069</td>
+      <td>.015</td>
+      <td>.040</td>
+      <td>.880</td>
+      <td>.040</td>
+      <td>.040</td>
+    </tr>
+    <tr>
+      <td>O2</td>
+      <td>.008</td>
+      <td>.069</td>
+      <td>.908</td>
+      <td>.015</td>
+      <td>.012</td>
+      <td>.012</td>
+      <td>.965</td>
+      <td>.012</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td>.023</td>
+      <td>.053</td>
+      <td>.008</td>
+      <td>.916</td>
+      <td>.032</td>
+      <td>.032</td>
+      <td>.032</td>
+      <td>.904</td>
+    </tr>
+    <tr>
+      <td>S1 + O1</td>
+      <td>.414</td>
+      <td>.487</td>
+      <td>.073</td>
+      <td>.027</td>
+      <td>.419</td>
+      <td>.496</td>
+      <td>.042</td>
+      <td>.042</td>
+    </tr>
+    <tr>
+      <td>O2 + S2</td>
+      <td>.035</td>
+      <td>.047</td>
+      <td>.453</td>
+      <td>.465</td>
+      <td>.038</td>
+      <td>.038</td>
+      <td>.460</td>
+      <td>.464</td>
+    </tr>
+    <tr>
+      <td>F1 + O2</td>
+      <td>.131</td>
+      <td>.238</td>
+      <td>.631</td>
+      <td>0.</td>
+      <td>.156</td>
+      <td>.174</td>
+      <td>.658</td>
+      <td>.013</td>
+    </tr>
+    <tr>
+      <td>F1 + S2</td>
+      <td>.264</td>
+      <td>.062</td>
+      <td>.008</td>
+      <td>.667</td>
+      <td>.178</td>
+      <td>.237</td>
+      <td>.023</td>
+      <td>.563</td>
+    </tr>
+    <tr>
+      <td>F2 + S1</td>
+      <td>.608</td>
+      <td>.031</td>
+      <td>.138</td>
+      <td>.223</td>
+      <td>.657</td>
+      <td>.013</td>
+      <td>.155</td>
+      <td>.175</td>
+    </tr>
+    <tr>
+      <td>F2 + O1</td>
+      <td>.008</td>
+      <td>.674</td>
+      <td>.302</td>
+      <td>.016</td>
+      <td>.024</td>
+      <td>.567</td>
+      <td>.170</td>
+      <td>.239</td>
+    </tr>
+    <tr>
+      <td>O1 + O2</td>
+      <td>.008</td>
+      <td>.514</td>
+      <td>.475</td>
+      <td>.004</td>
+      <td>.040</td>
+      <td>.444</td>
+      <td>.477</td>
+      <td>.040</td>
+    </tr>
+    <tr>
+      <td>S1 + S2</td>
+      <td>.397</td>
+      <td>.065</td>
+      <td>.011</td>
+      <td>.527</td>
+      <td>.400</td>
+      <td>.040</td>
+      <td>.040</td>
+      <td>.520</td>
+    </tr>
+  </tbody>
+</table>
+
 In addition to response probabilities, we tested whether reaction times differed on the ambiguous test trials depending on whether a rare or common response was made. On these trials of interest, a linear mixed effects model revealed that RTs were slower when participants made rare responses (M = 1.47 s) than common responses (M = 1.27 s), (t (21)=10.48, p<0.001). The observation of slowed RTs on ambiguous trials receiving rare responses suggests that rare selections may be more cognitively demanding relative to common selections, consistent with previous dissimilarity-based theories of IBRE that posit a role of higher-level, inferential reasoning in base rate neglect.
 
-## Multivoxel results
+### Multivoxel results
 
-## Test phase
+#### Test phase
 
 The primary goal of the multivoxel analysis was to decode, for the ambiguous stimuli, whether participants were activating information consistent with the common or rare category when they make the choice to classify the stimulus as rare. Specifically, for the bold italicized stimuli listed in Table 1, we tested whether participants’ activation patterns were more similar to localizer activation patterns associated with scenes when a scene was the common feature (and object was rare) and more similar to those of objects when an object was the common feature (and scene was rare). Participants encountered 24 examples of these key object-scene pairings over the course test phase, and the choice patterns for each subject are detailed in Supplementary file 1.
 
@@ -75,13 +300,21 @@ For this analysis, multivoxel pattern estimates were anatomically restricted to 
 
 Multivoxel pattern similarity results for the ambiguous test trials are depicted in Figure 3. Consistent with the dissGCM’s predictions, a linear mixed effects model with BOLD pattern similarity as the outcome variable and categorical predictors for response, stimulus dimension (common vs. rare), and visual stimulus category (objects vs. scenes) revealed a significant interaction between response and pattern similarity to common and rare features, whereby participants tended to more strongly activate patterns associated with common features only when they made a rare response (F (1, 42)=4.92, p=0.032). Specifically, when participants chose the rare category, their activation patterns were most similar to whichever visual stimulus category (scenes or objects) was associated with the common category (t (21)=2.78, p=0.011). Interestingly, there was no significant difference between pattern similarity for rare and common features when participants made a common response (t (21)=0.45, p=0.653). Visual stimulus category was not found to interact with response (F (1, 72)=0.229, p=0.634), or whether an item was rare or common (F (1, 72)=0.241, p=0.625), in the pattern similarity model, and thus the results in Figure 3 are collapsed across objects and scenes. A depiction of the test phase results including means for each distinct item in the model can be found in Figure 3—figure supplement 1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36395/elife-36395-fig3-v2.jpg)
+
+**Figure 3.:** Purple squares correspond to the objects/scenes associated with the common category, while green squares correspond to the objects/scenes associated with the rare category in a given trial. Gray squares depict mean pattern similarity to the non-present face dimension for both response types. *p < 0.05. No error bars are included for the gray bars because face dimensions were not included in the overall mixed effects model.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36395/elife-36395-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Purple corresponds to objects/scenes associated with the common category, while green corresponds to the objects/scenes associated with the rare category on a given trial. Triangles indicate objects, and circles indicate scenes. Gray squares depict mean pattern similarity to the non-present face dimension for both response types. *p < 0.05. No error bars are included for the gray bars because face dimensions were not included in the overall mixed effects model.
+
 Because faces were off-screen for the key test trials and pattern similarity to the face dimension could represent information associated with either common or rare exemplars, no a priori predictions were made regarding pattern similarity to faces on ambiguous trials. However, a one-sample t-test revealed no significant differences in pattern similarity to the face dimension across responses (t (21)=0.22, p=0.828). Mean pattern similarity to faces on the ambiguous test trials is depicted by the gray squares in Figure 3.
 
 To summarize, our multivoxel findings for the test phase suggest that people more strongly activate information associated with common categories when engaging in base rate neglect, consistent with dissGCM’s prediction that dissimilarity to the common category exemplar contributes more to rare decisions than similarity to the rare category exemplar. Although the model’s evidence weighting predictions and our multivoxel results provide a reasonable account for why participants tend to choose rare categories for ambiguous stimuli, the dissGCM does not address the question of whether a separate mechanism or strategy may contribute to trials in which the common category is chosen. Like the dissGCM, previous dual-process theories of IBRE (Juslin et al., 2001; Winman et al., 2005) propose that rare responses tend to be a byproduct of dissimilarity-based processing, but hypothesize that common responses are more likely a result of a ‘strategic guessing’ strategy that is engaged when a probe fails to elicit a strong match with learned category rules.
 
 To more explicitly test whether our multivoxel results on the ambiguous trials support the representational assumptions of distinct mechanisms that contribute to common versus rare responses, we computed Bayes factors to evaluate the strength of evidence for and against the null hypothesis in both cases. According to the predictions of dual-process accounts, no differences in mean pattern similarity to rare versus common stimulus dimensions would be expected for common responses, as participants are expected to retrieve weak or competing representations of the category exemplars in these cases and thus respond in a way consistent with the category base rates. Alternatively, enhanced pattern similarity to common stimulus dimensions would be expected in the case of rare responses, in line with dissGCM’s explanation of the IBRE. Bayes factors for each of these hypotheses were tested using the BIC approximation method, computing exp(ΔBIC/2) between the null and alternative models (Wagenmakers, 2007). The resulting Bayes factors suggested positive evidence in favor of the null hypothesis for pattern similarity on common response trials (BF01 = 7.54), and conversely, positive evidence in favor of the alternative hypothesis that common features would be more strongly represented on rare response trials (BF10 = 4.36). Accordingly, beyond revealing that a dissimilarity-based process contributes to rare responding in an IBRE task, our multivoxel results point to the existence of a distinct process for common responses that is, on average, less dependent on the activation of common or rare category exemplars. Our behavioral findings provide additional evidence for such a dissociation, as reaction times were found to be significantly slower for rare relative to common responses.
 
-## Learning phase
+#### Learning phase
 
 Beyond our primary questions about test phase activation, multivoxel analysis of the learning phase can provide additional information about how participants processed stimuli in the present task. Generally, both similarity-based models and dissimilarity-based models such as the dissGCM predict that features which are most informative about the correct category will contribute more to categorization decisions during learning. With respect to multivoxel predictions, this means that activation patterns elicited during learning should contain more information about the predictive features (objects or scenes) than non-predictive features (faces), and both of these types of information should be activated more strongly than non-present features. Figure 4 depicts mean pattern similarities for predictive, non-predictive, and non-present visual stimulus categories during the learning phase for both common and rare disease trials. As anticipated, a linear mixed effects model collapsed across trial type revealed that pattern similarity to the visual category was the strongest for perfectly predictive features (M = .065), followed by the non-predictive but present features (M = −0.050) and the non-present features (M = −0.145), (F (2, 42)=54.8, p<0.001). This finding, whereby activation patterns elicited for stimuli during learning are most similar to predictive features, is consistent with recent studies using MVPA to measure dimensional selective attention in categorization and reinforcement learning (Mack et al., 2013, Mack et al., 2016; Leong et al., 2017; O'Bryan et al., 2018). For common trials, pairwise comparisons revealed significant differences between pattern similarity to perfect and imperfect predictors (t (21)=3.38, p=0.003), perfect predictors and non-present features (t (21)=5.71, p<0.001), and between imperfect predictors and non-present features (t (21)=4.27, p<0.001). Likewise, for rare trials we found significant differences between pattern similarity to perfect and imperfect predictors (t (21)=5.69, p<0.001), perfect predictors and non-present features (t (21)=9.11, p<0.001), and between imperfect predictors and non-present features in the expected directions (t (21)=3.11, p=0.005) (see Figure 4).
 
@@ -99,7 +332,7 @@ Figure 5 depicts the associations between BOLD pattern similarity to common and 
 
 **Figure 5.:** For each graph, the y-axis depicts the proportion of rare responses made by each subject on ambiguous test trials, while the x-axis depicts subjects’ mean BOLD pattern similarity to a respective stimulus dimension over the course of learning. **p < 0.01.
 
-## Model-based univariate results
+### Model-based univariate results
 
 By revealing a link between activation of common feature patterns and the IBRE, our multivoxel results suggest that dissimilarity-based evidence against unchosen categories contributes to choice behavior in the present task. However, it remains an open question whether such dissimilarity processes involve distinct neural or cognitive mechanisms beyond those thought to underlie basic similarity processes. Importantly, similarity-based theories propose that a single, non-inferential cognitive process is responsible for generalization patterns across trials in the IBRE task (Medin and Edelson, 1988; Kruschke, 1996, Kruschke, 2001), and thus it is anticipated that a network of brain regions associated with similarity-based generalization underlies choice across task contexts in the present study. Although the dissGCM is agnostic as to whether using dissimilarity as evidence is more cognitively demanding than relying on similarity alone, previous theories of IBRE positing dissimilarity processes propose that the use of contrastive evidence is inherently inferential (Juslin et al., 2001; Winman et al., 2005). Accordingly, the latter account would predict a unique neural topography associated with dissimilarity-based evidence, including regions known to be involved in higher-level, symbolic reasoning.
 
@@ -110,6 +343,233 @@ Our analysis showed that greater similarity-based contributions to the winning c
 ![Figure 6.](https://cdn.elifesciences.org/articles/36395/elife-36395-fig6-v2.jpg)
 
 **Figure 6.:** (A) Depicts activation that tracks similarity-based contributions to choice (summed similarity to the winning category). Red depicts activation positively correlated with similarity-based contributions and blue depicts negatively correlated activation. (B) Depicts brain regions that are positively correlated with dissimilarity-based contributions to choice (summed dissimilarity to the non-winning category).
+
+**Table 2.**
+ Activated clusters and peaks for the fMRI results in Figure 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Contrast</th>
+      <th>Regions</th>
+      <th>Peak t-value</th>
+      <th>Peak MNI coordinates (x,y,z)</th>
+      <th>Number of voxels</th>
+      <th>Cluster P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Similarity &gt; 0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rostral and ventral medial prefrontal cortex</td>
+      <td>7.76</td>
+      <td>0, 54, –2</td>
+      <td>2268</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle temporal gyrus</td>
+      <td>5.74</td>
+      <td>64, –6, −14</td>
+      <td>1050</td>
+      <td>p=0.016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral gyrus</td>
+      <td>7.65</td>
+      <td>42, –16, 62</td>
+      <td>1031</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral gyrus</td>
+      <td>4.81</td>
+      <td>0, –30, 58</td>
+      <td>463</td>
+      <td>p=0.008</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle temporal gyrus</td>
+      <td>4.98</td>
+      <td>−62, –2, −16</td>
+      <td>322</td>
+      <td>p=0.016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parietal operculum cortex</td>
+      <td>5.74</td>
+      <td>−34, –30, 18</td>
+      <td>282</td>
+      <td>p=0.027</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampus</td>
+      <td>5.25</td>
+      <td>−22, –18, −16</td>
+      <td>271</td>
+      <td>p=0.019</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Lateral occipital cortex (inferior)</td>
+      <td>4.68</td>
+      <td>50, –72, 12</td>
+      <td>157</td>
+      <td>p=0.039</td>
+    </tr>
+    <tr>
+      <td>Similarity &lt; 0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Superior parietal and lateral occipital cortex (superior)</td>
+      <td>8.43</td>
+      <td>−44, –46, 58</td>
+      <td>5123</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle frontal gyrus</td>
+      <td>7.01</td>
+      <td>−52, 12, 36</td>
+      <td>2491</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Dorsal medial PFC</td>
+      <td>9.00</td>
+      <td>−2, 18, 46</td>
+      <td>917</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cerebellum</td>
+      <td>6.11</td>
+      <td>28, –64, −28</td>
+      <td>769</td>
+      <td>p=0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle frontal gyrus</td>
+      <td>6.23</td>
+      <td>32, 2, 62</td>
+      <td>730</td>
+      <td>p=0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle frontal gyrus</td>
+      <td>5.89</td>
+      <td>44, 36, 30</td>
+      <td>391</td>
+      <td>p=0.009</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inferior temporal gyrus</td>
+      <td>6.09</td>
+      <td>−54, –52, −12</td>
+      <td>375</td>
+      <td>p=0.009</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inferior temporal gyrus</td>
+      <td>6.53</td>
+      <td>60, –52, −10</td>
+      <td>271</td>
+      <td>p=0.016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cerebellum</td>
+      <td>6.08</td>
+      <td>−28, –60, −32</td>
+      <td>186</td>
+      <td>p=0.031</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Thalamus</td>
+      <td>4.88</td>
+      <td>−10, –18, 10</td>
+      <td>175</td>
+      <td>p=0.038</td>
+    </tr>
+    <tr>
+      <td>Dissimilarity &gt; 0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Occipital cortex</td>
+      <td>7.55</td>
+      <td>12, –78, 12</td>
+      <td>1372</td>
+      <td>p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusiform and lateral occipital cortex (inferior)</td>
+      <td>6.82</td>
+      <td>42, –60, −18</td>
+      <td>865</td>
+      <td>p=0.002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fusiform and lateral occipital cortex (inferior)</td>
+      <td>5.97</td>
+      <td>−36, –52, −18</td>
+      <td>575</td>
+      <td>p=0.003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Middle frontal gyrus</td>
+      <td>5.00</td>
+      <td>54, 16, 34</td>
+      <td>255</td>
+      <td>p=0.020</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Frontal pole (rostrolateral PFC)</td>
+      <td>5.93</td>
+      <td>−42, 52, –6</td>
+      <td>130</td>
+      <td>p=0.047</td>
+    </tr>
+  </tbody>
+</table>
 
 The dlPFC, dorsomedial PFC, and posterior parietal cortex were found to be negatively correlated with similarity-based evidence for the chosen category (Figure 6A, depicted in blue; Table 2). This fronto-parietal network is generally associated with rule-based category learning (Filoteo et al., 2005; Seger and Cincotta, 2006; Soto et al., 2013), and is thought to play a critical role in representing the uncertainty associated with categorization decisions (DeGutis and D'Esposito, 2007; Seger et al., 2015; Davis et al., 2017). Thus, our results are consistent with these findings, and moreover, suggest that dlPFC and functionally related fronto-parietal regions may be engaged in cases where probes fail to elicit a strong similarity-based match with stored category exemplars.
 
@@ -143,7 +603,7 @@ In conclusion, using model-based fMRI analysis, we found evidence that extreme c
 
 Twenty-four healthy right-handed volunteers (age range 18–58; 13 women) participated in the study for $35. All protocols were approved by the Texas Tech University IRB. Two participants were excluded, one for falling asleep and the other for registration failures in the first five scanning runs.
 
-## Behavioral protocol
+### Behavioral protocol
 
 The study consisted of three phases: localizer, learning, and test. The localizer phase consisted of two scanning runs (run length = 5 min 10 s) in which participants classified images based on whether they contained a face, an object, or a scene. Each image was presented for 2.5 s during which participants were asked to respond ‘Scene (1), Face (2), or Object (3)?' Each trial was separated with random fixation drawn from a truncated exponential distribution with mean = 3 s. Over the duration of the localizer phase, subjects categorized 38 examples of each stimulus type. The face, object, and scene images used were black-and-white squares presented on a white background with black text. The stimuli used during the localizer runs were presented in a random order, and did not include any of the images used for the experimental task.
 
@@ -151,33 +611,67 @@ In the learning phase, participants learned a classic IBRE category structure (M
 
 During the test phase, participants completed trials with both new and old exemplars and classified them as ‘Disease 1, 2, 3, or 4?', but no longer received feedback. New items included all possible single and two-feature combinations of the perfectly predictive features (see Table 1, Results). Trials were 3 s and separated by random fixation as described above. Like the learning phase, the test phase occurred over three consecutive scanning runs (run length = 5 min 10 s). Each item in the stimulus set was encountered twice per run, with the exception of the ambiguous perfect predictor pairs which were repeated four times per run. This resulted in 24 instances of ambiguous scene-object pairs, and 48 instances of the ambiguous trials overall for each participant. Presentation order of the test items was randomized for each of the three runs, with participants rating two test sets per run, resulting in a total of 156 test trials.
 
-## Model
+### Model
 
-The dissimilarity generalized context model (dissGCM; Stewart and Morin, 2007) is an extension of the generalized context model (Nosofsky, 1986) that accounts for choice using a combination of similarity- and dissimilarity-based evidence. Like the original GCM, stimuli are represented as points in a multidimensional feature space. The model computes distances in this space between probe stimuli Si and stored exemplars Sj along each dimension k:(1)dij=(∑k=1Kwk|Sik−Sjk|r)1/r,where r defines the metric of the space, here assumed to be one (city-block). The wk indicates dimensional attention weights, which have the function of stretching the distance along strongly attended dimensions, and are constrained to sum to one.
+The dissimilarity generalized context model (dissGCM; Stewart and Morin, 2007) is an extension of the generalized context model (Nosofsky, 1986) that accounts for choice using a combination of similarity- and dissimilarity-based evidence. Like the original GCM, stimuli are represented as points in a multidimensional feature space. The model computes distances in this space between probe stimuli Si and stored exemplars Sj along each dimension k:
 
-Distances are converted to similarities via an exponential transform:(2)simij=e−cdij,where c is a specificity parameter that controls the rate at which similarity decays as a function of distance.
+$$
+d_{ij}=(\sumk=1Kw_{k}|S_{ik}−S_{jk}|^{r})^{1/r},
+$$
 
-The first contribution of evidence for a given category comes from the summed similarity between a probe and all stored exemplars for that category, consistent with the original GCM. DissGCM then combines this similarity-based contribution with the summed dissimilarity between a probe and the exemplars from all other categories. The overall evidence, v, for a category CA, given stimulus Si is:(3)viA=s∑sj∈CAtjsimij+(1−s)∑sj∈¬CAtj(1−simij),where s is a free parameter that determines how much the model weights similarity versus dissimilarity. The parameter tj reflects exemplar-specific memory strength, which we fix at each exemplar’s true base rate during learning (1 for rare category exemplars, 3 for common category exemplars). Here, we also make the assumption that exemplars only contribute evidence (similarity or dissimilarity) if they have at least one positive feature match with a probe stimulus.
+where r defines the metric of the space, here assumed to be one (city-block). The wk indicates dimensional attention weights, which have the function of stretching the distance along strongly attended dimensions, and are constrained to sum to one.
 
-The model makes a prediction for how likely an item is to be classified as a member of a given category CA by:(4)pr(resp=CA|Si)=viA+b∑viC+4b,where b is a free parameter that reflects the baseline level of similarity for a category that has 0 positive feature matches. More generally, this parameter ensures that no predicted probabilities are 0 or 1, which interferes with the maximum likelihood-based model fits.
+Distances are converted to similarities via an exponential transform:
+
+$$
+sim_{ij}=e^{−cd_{ij}},
+$$
+
+where c is a specificity parameter that controls the rate at which similarity decays as a function of distance.
+
+The first contribution of evidence for a given category comes from the summed similarity between a probe and all stored exemplars for that category, consistent with the original GCM. DissGCM then combines this similarity-based contribution with the summed dissimilarity between a probe and the exemplars from all other categories. The overall evidence, v, for a category CA, given stimulus Si is:
+
+$$
+v_{iA}=s\sums_{j}\inC_{A}t_{j}sim_{ij}+(1−s)\sums_{j}\in¬C_{A}t_{j}(1−sim_{ij}),
+$$
+
+where s is a free parameter that determines how much the model weights similarity versus dissimilarity. The parameter tj reflects exemplar-specific memory strength, which we fix at each exemplar’s true base rate during learning (1 for rare category exemplars, 3 for common category exemplars). Here, we also make the assumption that exemplars only contribute evidence (similarity or dissimilarity) if they have at least one positive feature match with a probe stimulus.
+
+The model makes a prediction for how likely an item is to be classified as a member of a given category CA by:
+
+$$
+pr(resp=C_{A}|S_{i})=\frac{v_{iA}+b}{\sumv_{iC}+4b},
+$$
+
+where b is a free parameter that reflects the baseline level of similarity for a category that has 0 positive feature matches. More generally, this parameter ensures that no predicted probabilities are 0 or 1, which interferes with the maximum likelihood-based model fits.
 
 The model was fit to the group response frequencies for each option by minimizing the −2 * Log Likelihood using a differential evolution function optimizer. The overall fit was 4,314.588. The best fitting parameters for each of the dimension weights were w1 (face 1)=0.277, w2 (common scene)=0.665, w3 (rare object)=0.887, w4 (face 2)=0.170, w5 (common object)=0.712, and w6 (rare scene)=0.879); c = 9.05; s = 0.946; b = 0.023.
 
-## Image acquisition
+### Image acquisition
 
 Imaging data were acquired on a 3.0 T Siemens Skyra MRI scanner at the Texas Tech Neuroimaging Institute. Structural images were acquired in the sagittal plane using MPRAGE whole-brain anatomical scans (TR = 1.9 s; TE = 2.44 ms; θ = 9°; FOV = 250 × 250 mm; matrix = 256 × 256 mm; slice thickness = 1.0 mm, slices = 192). Functional images were acquired using a single-shot T2*-weighted gradient echo EPI sequence (TR = 2.5 s; TE = 25 ms; θ = 75°; FOV = 192 × 192 mm; matrix = 64 × 64; slice thickness = 3 mm).
 
-## fMRI analysis and preprocessing
+### fMRI analysis and preprocessing
 
 Functional data were preprocessed and analyzed using FSL (www.fmrib.ox.ac.uk/fsl). Anatomical images were preprocessed using Freesurfer (autorecon1). Functional images were skull stripped, motion corrected, prewhitened, and high-pass filtered (cutoff: 60 s). For the model-based univariate analysis, functional images were spatially smoothed using a 6 mm FWHM Gaussian kernel. No smoothing was performed on functional data used for the multivoxel analysis. First-level statistical maps were registered to the Montreal Neurological Institute (MNI)−152 template using 6-DOF boundary-based registration to align the functional image to the Freesurfer-processed high-resolution anatomical image, and 12-DOF affine registration to the MNI-152 brain.
 
-## Model-based univariate analysis
+### Model-based univariate analysis
 
-The model-based univariate analysis employed a standard three-level mixed effects model carried out in FSL’s FEAT program. The first-level model included an EV for stimulus presentation and two model-based parametric modulators: similarity- and dissimilarity-based evidence, computed from the dissGCM. Specifically, these regressors were obtained on a trial-by trial basis using equation 3 (see Model section), where the evidence contribution of summed similarity to the winning category (CA; most probable category according to the model) is calculated as:(5)s∑Sj∈CAtjsimij,and the evidence contribution of summed dissimilarity to non-winning categories with a positive feature match is calculated as:(6)(1−s)∑Sj∈¬CAtj(1−simij),
+The model-based univariate analysis employed a standard three-level mixed effects model carried out in FSL’s FEAT program. The first-level model included an EV for stimulus presentation and two model-based parametric modulators: similarity- and dissimilarity-based evidence, computed from the dissGCM. Specifically, these regressors were obtained on a trial-by trial basis using equation 3 (see Model section), where the evidence contribution of summed similarity to the winning category (CA; most probable category according to the model) is calculated as:
+
+$$
+s\sumS_{j}\inC_{A}t_{j}sim_{ij},
+$$
+
+and the evidence contribution of summed dissimilarity to non-winning categories with a positive feature match is calculated as:
+
+$$
+(1−s)\sumS_{j}\in¬C_{A}t_{j}(1−sim_{ij}),
+$$
 
 Both parametric modulators were centered and scaled (z-scored) within run. Additional explanatory variables (EVs) of no interest included motion parameters, their temporal derivatives, EVs to censor volumes exceeding a framewise displacement of 0.9 mm (Siegel et al., 2014), and an EV to account for trials in which participants failed to make a behavioral response. Final statistical maps were corrected for multiple comparisons using a non-parametric cluster-mass-based correction with a cluster-forming threshold of t (21)=3.52 (p<0.001, one-tailed).
 
-## Multivoxel pattern analysis
+### Multivoxel pattern analysis
 
 RSA was conducted using the PyMVPA toolbox (Hanke et al., 2009) and custom Python routines. To obtain trial-by-trial estimates of the hemodynamic response, we computed a β-map (Rissman et al., 2004) for each stimulus onset using an LS-A procedure (Mumford et al., 2012), simultaneously modeling the trials of interest as separate regressors in a GLM. These estimates were anatomically restricted to three ventral temporal ROIs that were maximally responsive to scene, object, and face information in the localizer data. Specifically, pattern estimates were spatially localized in visual stimulus category-specific ROIs by creating 6 mm spheres around subjects’ peak activation within anatomically defined regions in the Harvard-Oxford Atlas associated with category selectivity (objects: left inferior posterior temporal gyrus; scenes: bilateral parahippocampal gyrus; faces: right temporal occipital fusiform gyrus; Ishai et al., 1999; Lewis-Peacock and Postle, 2008; Lewis-Peacock et al., 2012; Grill-Spector and Weiner, 2014). The last trial of each run was automatically discarded from the multivoxel analysis to ensure stable estimation of the activation patterns for all trials. Additional explanatory variables (EVs) of no interest included motion parameters, their temporal derivatives, and EVs to censor volumes exceeding a framewise displacement of 0.9 mm.
 

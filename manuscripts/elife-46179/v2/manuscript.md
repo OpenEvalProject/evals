@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.46179.001 In humans, a first-degree family history of dementia (FH) is a well-documented risk factor for Alzheimer’s disease (AD); however, the influence of FH on cognition across the lifespan is poorly understood. To address this issue, we developed an internet-based paired-associates learning (PAL) task and tested 59,571 participants between the ages of 18–85. FH was associated with lower PAL performance in both sexes under 65 years old. Modifiers of this effect of FH on PAL performance included age, sex, education, and diabetes. The Apolipoprotein E ε4 allele was also associated with lower PAL scores in FH positive individuals. Here we show, FH is associated with reduced PAL performance four decades before the typical onset of AD; additionally, several heritable and non-heritable modifiers of this effect were identified.
+In humans, a first-degree family history of dementia (FH) is a well-documented risk factor for Alzheimer’s disease (AD); however, the influence of FH on cognition across the lifespan is poorly understood. To address this issue, we developed an internet-based paired-associates learning (PAL) task and tested 59,571 participants between the ages of 18–85. FH was associated with lower PAL performance in both sexes under 65 years old. Modifiers of this effect of FH on PAL performance included age, sex, education, and diabetes. The Apolipoprotein E ε4 allele was also associated with lower PAL scores in FH positive individuals. Here we show, FH is associated with reduced PAL performance four decades before the typical onset of AD; additionally, several heritable and non-heritable modifiers of this effect were identified.
 
 ## Introduction
 
@@ -42,31 +42,43 @@ To overcome challenges associated with underpowered studies, we created MindCrow
 
 As of August 15, 2018, MindCrowd, has recruited 59,571 qualified participants (see Data Quality Control in Materials and methods) from around the world (Figure 1A). The sample was 62.46% female and 37.54% male (Figure 1B). An overrepresentation of women has been previously described in studies drawn from the general population (Krokstad et al., 2013) as well as for AD (Roberts et al., 2004). The breakdown of race was American Indian or Alaska Native = 0.62%, Asian = 5.13%, Black/African American = 1.75%, Native Hawaiian/Pacific Islander = 0.39%, Mixed = 0.0009%, and White = 92.03%. In terms of years of education, we collapsed across education milestones for visualization purposes. Here we found that 10.78% reported ≤12 y, 29.64% reported ≤14 y, 35.32% ≤ 16 y, and 24.25% reported ≥20 y (Figure 1C). Across the entire sample, a FH of AD is present in 22.76% with the overall percentage swelling with age (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig1-v2.jpg)
+
+**Figure 1.:** (A) World map displaying a red dot (i.e., one dot = one IP address) at the location of a participant completing the paired-associates learning (PAL) task. (B) Line plot showing the percent of males and females from 18 to 85 years old. (C) Line plot displaying the percent of participants with 12, 14, 16, or 20 years of education for each year of age from 18 to 85 years old. (D) Line plot showing the percent of participants reporting a first-degree family history of Alzheimer’s disease (FH) for each year of age from 18 to 85 years old.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A plot of the residuals versus fitted values. This plot suggests that the assumptions of linearity, equality of variances, and no outliers are met. (B) A plot of quantiles of the data versus quantiles of a normal distribution. This plot suggests that there is a violation from normality in residuals and thus the error terms; however, this violation should not cause major problems because of the large number of participants in this study. (C) A plot of the square root of the standardized residuals versus the fitted values. Like plot A., this plot suggests that the variability of the residuals does not change much over the range of the dependent variable. (D) A plot of the residuals versus leverage. This plot suggests that there are no influential cases as all case fall within Cook’s distance (i.e., red dashed line not visible on the plot).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The effect of error in self-reported FH-AD status was simulated by adding additional error to the MindCrowd cohort by re-assigning individual FH responses between 1-30%. and re-running the full statistical model. This was repeated 10,000 times for each error rate. Boxplots representing the distribution of p-values for the re-analysis under the new error model are illustrated. This demonstrates that even with 8% additional error added to the self-report FH question, we would still have identified a significant association with FH in all 10,000 cases. Even with 24% additional FH self-report error we would have still reported a significant association between FH and PAL over 50% of the time (better than by chance alone). Therefore, this simulation suggests that even with significant levels of additional error in FH self-report the association between FH and PAL performance would still have been noted by our study.
+
 In women and men 18–85 years old, our general linear model (GLM, see Figure 1—figure supplement 1 for regression diagnostic plots and Supplementary file 1 for a table all coefficient ns) revealed a significant Age coefficient (BAge = −0.20 word pairs, pAge <2e-16). Age was associated with a lowered PAL performance of two word-pairs per decade of life (Figure 2). Sex was also a significant predictor of PAL scores (BSex = −1.82, pSex <2e-16). Women were associated with nearly a two word-pair higher PAL score compared to men (Figure 2). Propensity score matching (PSM, see Statistical Methods in Materials and methods) revealed that the associated disparity between women and men’s PAL scores markedly grew around the 5th decade of life. PSM revealed an estimated effect size (i.e., average treatment effect among treated, ATT) of being a woman grew from the 5th to the 6th decade of life (50 s: 2.68ATT ±0.35 SD-word pairs, 60 s: 3.72ATT ±0.32 SD-word pairs). Educational Attainment was another significant predictor of PAL scores (BEducation = 0.31, pEducation <2e-16, Figure 3). For both women and men, each milestone of Educational Attainment was associated with around a third of a word pair higher PAL score. In women and men, PSM revealed an approximate effect size of one-word pair higher performance across each level of Educational Attainment (e.g., Male 12y vs. 14y [ATT0.72 ± SD0.28], Female 12y vs. 14y=[ATT1.06 ± SD0.24]). However, the magnitude of this effect was not consistent for men and women across levels of Educational Attainment. Indeed, PSM estimated that women have a higher PAL score related to education than men, at all except the highest level of Educational Attainment (16y vs. 20y: Women=[ATT0.97 ± SD0.12], Men=[ATT1.29 ± SD0.16]).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig2-v2.jpg)
 
-**Figure 2.:** Linear regression fit (line fill ±95% confidence interval [CI], error bars ± standard error of the mean [SEM]) of the PAL total number of correct from 18 to 85 years old. Lines were split by Sex. Women performed better than men with an amplified disparity from 50 to 70 years old (B = −1.82, Sexp <2e-16, women Sexn = 40572, and men n = 24381).
+**Figure 2.:** Linear regression fit (line fill ±95% confidence interval [CI], error bars ± standard error of the mean [SEM]) of the PAL total number of correct from 18 to 85 years old. Lines were split by Sex. Women performed better than men with an amplified disparity from 50 to 70 years old (BSex = −1.82, pSex <2e-16, women n = 40572, and men n = 24381).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig3-v2.jpg)
 
-**Figure 3.:** Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 85 years old. Lines were split by Educational Attainment level, and the figure was faceted by Sex. For women and men, there were heightened PAL scores per level of Educational Attainment (B = 0.31, Educationp <2e-16, 6 years Educationn = 282, 8 years n = 181, 10 years n = 1177, 12 years n = 5367, 14 years n = 19256, 16 years n = 22942, and 20 years n = 15752).
+**Figure 3.:** Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 85 years old. Lines were split by Educational Attainment level, and the figure was faceted by Sex. For women and men, there were heightened PAL scores per level of Educational Attainment (BEducation = 0.31, pEducation <2e-16, 6 years n = 282, 8 years n = 181, 10 years n = 1177, 12 years n = 5367, 14 years n = 19256, 16 years n = 22942, and 20 years n = 15752).
 
 Notably, there was a significant main effect of FH (BFH = −2.39, pFH = 3.47e-06, Figure 4A.). This coefficient indicated that for women and men, having FH was associated with nearly a two-and-a-half-word pair lower PAL scores when compared to FH- participants. Further our model revealed a significant Age x Diabetes (BAge*Diabetes = 0.03, pAge*Diabetes = 0.03) and Age x FH (BAge*FH = 0.02, pAge*FH <0.01, Figure 4A) interaction. The significant interactions between Age and Diabetes as well as Age and FH indicate a greater association between Diabetes and FH with lower PAL scores at younger ages as compared to older ages. Indeed, the linear trend lines for diabetes cross at 50 years of age (data not shown) and at age 65 for FH (Figure 4A). Due to the significant Age x FH interaction, our analyses evaluating interactions with FH included only participants ≤ 65 years old. A significant Sex x FH interaction (BSex*FH = −0.79, pSex*FH = 7.97e-06, Figure 4B) was found. Follow-up analyses of the estimated marginal mean (EMM, see Statistical Methods in Materials and methods) revealed that FH +women and men had lower PAL scores compared to FH- women and men (women: EMM = 1.01, t(53763) = 4.18, p<0.01; men: EMM = 1.58, t(53763) = 6.03, p<0.001); however, the magnitude of this effect was different between women and men. Indeed, PSM revealed that the estimated word pair reduction in PAL scores associated with FH status was larger in men (e.g., 20 s: ATT1.93 ± SD0.60) as compared to women (e.g., 20 s:ATT0.60 ± SD0.67), except for the 6th decade of life (60 s: Women[ATT-0.50 ± SD0.18], Men[ATT0.09 ± SD−0.36], Figure 4 Inset).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig4-v2.jpg)
 
-**Figure 4.:** (A) Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 85 years old. FH led to lower PAL performance before 65 years of age (B = −2.39, FHp = 3.47e-06, FH FH+n = 14739, and FH- n = 50011). (B) Linear regression fits of the PAL total number of correct from 18 to 85 years old. Lines split by Sex and FH status. FH led to lower PAL performance, an effect that was exacerbated in men (B = −0.79, Sex*FHp = 7.97e-06, FH +Women Sex*FHn=11119, FH- Women n = 29332, FH +Men n=3617, and FH- Men n = 20678). The inset figure displays PSM box and whisker plots, split by sex, across each decade of life. The black bar through each box and whisker plot represents the median ATT for FH. Men had worse PAL scores when compared to women at each decade of life except for the sixth (60 s: Women[-0.50 ± ATT0.18], Men[SD0.09 ± ATT−0.36], women SDn = 40572, and men n = 24381).
+**Figure 4.:** (A) Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 85 years old. FH led to lower PAL performance before 65 years of age (BFH = −2.39, pFH = 3.47e-06, FH +n = 14739, and FH- n = 50011). (B) Linear regression fits of the PAL total number of correct from 18 to 85 years old. Lines split by Sex and FH status. FH led to lower PAL performance, an effect that was exacerbated in men (BSex*FH = −0.79, pSex*FH = 7.97e-06, FH +Women n=11119, FH- Women n = 29332, FH +Men n=3617, and FH- Men n = 20678). The inset figure displays PSM box and whisker plots, split by sex, across each decade of life. The black bar through each box and whisker plot represents the median ATT for FH. Men had worse PAL scores when compared to women at each decade of life except for the sixth (60 s: Women[ATT-0.50 ± SD0.18], Men[ATT0.09 ± SD−0.36], women n = 40572, and men n = 24381).
 
 There was a significant Educational Attainment x FH interaction (BEducation*FH = 0.08, pEducation*FH <0.01). Follow-up analyses of the EMMs showed that FH was associated with lower PAL score at each milestone of educational attainment (ts(53758) > 3.45, ps <0.01); the magnitude of the associated decline in PAL scores attributed to FH was greater at lower milestones of educational attainment as compared to higher milestones (e.g., 12y [High school diploma]: FH- EMM = 16.4, FH +EMM = 14.8, difference = 1.6; 20y [Post graduate degree]: FH- EMM = 20.8, FH +EMM = 19.6, difference = 1.2). In FH +or FH- women and men 18–65 years old, our model revealed a significant FH x Diabetes (BFH*Diabetes = −0.71, pFH*Diabetes = 0.04, Figure 5) interaction. Follow-up analyses of the EMM revealed that participants with FH and diabetes were associated with lower PAL scores compared to participants with FH but no diabetes (FH +Diabetes + EMM = 16.9, FH +Diabetes- EMM = 18.1, t(53763) = 2.73, p=0.03). Lastly, two models which included either: 1) the Number of APOE ε4 alleles (i.e., 0, 1, or two copies) or 2) APOE Genotype (e.g., ε2-ε2, ε2-ε3, ε4-ε4, etc.) were evaluated. There was a significant main effect for the Number of APOE ε4 Alleles variable (Bε4Allele = −1.30, pε4Allele = 0.02, Figure 6). These data indicated that in FH +participants, there was an association of one and a third word pair lower PAL score per each ε4 allele. Moreover, there was a significant main effect in the model comparing the ε4-ε4 to the ε2-ε3 genotype (Bε4-ε4 vs.ε2-ε33−5.32, pε4-ε4 vs.ε2-ε330.03). Similarly, FH +participants with the ε4-ε4 genotype were associated with a five-word pair lower PAL scores compared to FH +participants with the ε2-ε3 genotype.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig5-v2.jpg)
 
-**Figure 5.:** Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct in FH- Diabetes+, FH +Diabetes-, and FH +Diabetes + participants from 18 to 65 years old. Regardless of sex, diabetes in FH +participants led to lower PAL scores (B = −0.71, FH*Diabetesp = 0.04, AD- DI- FH*Diabetesn = 47970, AD- DI +n = 2041, AD +DI n=13841, and AD +DI + n=898).
+**Figure 5.:** Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct in FH- Diabetes+, FH +Diabetes-, and FH +Diabetes + participants from 18 to 65 years old. Regardless of sex, diabetes in FH +participants led to lower PAL scores (BFH*Diabetes = −0.71, pFH*Diabetes = 0.04, AD- DI- n = 47970, AD- DI +n = 2041, AD +DI n=13841, and AD +DI + n=898).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/46179/elife-46179-fig6-v2.jpg)
 
-**Figure 6.:** (A) Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 65 years old. Lines were split by the Number of APOE ε4 Alleles. For women and men, there was a dose-dependent-like decrease in the PAL scores per each copy of the ε4 allele (B = −1.30, ε4Allelep = 0.03, ε2/ε2 ε4Allelen = 2, ε2/ε3 n = 31, ε2/ε4 n = 46, ε3/ε3 n = 174, ε3/ε4 n = 382, and ε4/ε4 n = 35).
+**Figure 6.:** (A) Linear regression fits (line fill ±95% CI, error bars ± SEM) of the PAL total number of correct from 18 to 65 years old. Lines were split by the Number of APOE ε4 Alleles. For women and men, there was a dose-dependent-like decrease in the PAL scores per each copy of the ε4 allele (Bε4Allele = −1.30, pε4Allele = 0.03, ε2/ε2 n = 2, ε2/ε3 n = 31, ε2/ε4 n = 46, ε3/ε3 n = 174, ε3/ε4 n = 382, and ε4/ε4 n = 35).
 
 ## Discussion
 
@@ -86,30 +98,159 @@ Collectively, this study supports recommendations underscoring the importance of
 
 ## Materials and methods
 
-## Study participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Apolipoprotein E)</td>
+      <td>APOE</td>
+      <td>PMCID: PMC6106945</td>
+      <td>HGNC:HGNC:613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>APOE PCR Primers</td>
+      <td>Integrated DNA Technologies, Inc (IDT)</td>
+      <td>F 5'-ACA-GAA-TTG-GCC-CCG-GCC-TGG-TAC-3', R 5'-TAA-GCT-TGG-CAC-GGC-TGT-CCA-AGG-A-3'</td>
+      <td>0.5 μL of each 50 μM Primer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FailSafe PCR Enzyme and 2X PreMix Buffers</td>
+      <td>Lucigen</td>
+      <td>FSP995J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HHA1</td>
+      <td>NEB</td>
+      <td>R0139S</td>
+      <td>0.5 μL/20 μL of PCR product</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Whatman 903 Protein Saver Card</td>
+      <td>VWR</td>
+      <td>05-715-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultrapure Agarose</td>
+      <td>Thermo</td>
+      <td>16500500</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GelStar Gel Stain</td>
+      <td>Lonza</td>
+      <td>50535</td>
+      <td>7 μL/300 mL of gel mix</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultra-Low Range DNA Ladder</td>
+      <td>Invitrogen</td>
+      <td>10597012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amplitaq Gold Fast Master Mix</td>
+      <td>Thermo</td>
+      <td>4390941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oragene Saliva Kit</td>
+      <td>DNAGenotek</td>
+      <td>OGR-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris-Acetate-EDTA (TAE) 50 X (20L)</td>
+      <td>Fisher</td>
+      <td>BP1332-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>The R Foundation</td>
+      <td>Version 3.5.1 RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package, ggplot2</td>
+      <td>Comprehensive R Archive Network (CRAN)</td>
+      <td>Version 3.1.1 RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package, emmeans</td>
+      <td>Comprehensive R Archive Network (CRAN)</td>
+      <td>Version 1.3.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package, Zelig</td>
+      <td>Comprehensive R Archive Network (CRAN)</td>
+      <td>Version 5.1.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package, MatchIt</td>
+      <td>Comprehensive R Archive Network (CRAN)</td>
+      <td>Version 3.0.2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Study participants
 
 In January 2013, Phase I began with the launch of our internet-based study site at www.mindcrowd.org. Website visitors, who were 18 years or older, were asked to consent to our study before any data collection via an electronic consent form. As of 8-15-2018, we have had 256,674 non-duplicate or unique visitors to the website. Of these unique visitors, over 139,740 consented to participate. The final data set contained 59,571 participants who completed the paired associates learning (PAL) task and answered 22 demographic, lifestyle, and health questions (see Supplementary file 2). In addition, 973 participants, who completed Phase I and indicated they had a first-degree relative with Alzheimer’s disease (FH), consented to provide a self-collected biospecimen (either dried blood or saliva) via the mail. Over 742 participants returned the biospecimen collection kits. Approval for this study was obtained from the Western Institutional Review Board (WIRB study number 1129241).
 
-## Phase I: PAL test and demographic, medical, health, and lifestyle questions
+### Phase I: PAL test and demographic, medical, health, and lifestyle questions
 
 After consenting to the study and answering an initial five demographic questions (age, sex, years of education, primary language, and country), participants were asked to complete a web-based paired-associates learning (PAL) task. For this cognitive task, during the learning phase, participants were presented 12 word-pairs, one word-pair at a time (2 s/word-pair). During the recall phase, participants were presented with the first word of each pair and were asked to use their keyboard to type (i.e., recall) in the missing word. This learning-recall procedure was repeated for two additional trials. Prior to beginning the task, each participant received one practice trial consisting of three word-pairs not contained in the 12 used during the test. Word-pairs were presented in different random orders during each learning and each recall phase. The same word pairs and orders of presentation were used for all participants. The dependent variable/criterion was the total number of correct word pairs entered across the three trials (i.e., 12 × 3 = 36, a perfect score).
 
 Upon completing the PAL task, participants were directed to a webpage asking them to fill out an additional 17 demographic and health/disease risk factor questions. These questions included: marital status, handedness, race, ethnicity, number of daily prescription medications, a first-degree family history of dementia, and yes/no responses to the following: seizures, dizzy spells, loss of consciousness (more than 10 min), high blood pressure, smoking, diabetes, heart disease, cancer, stroke, alcohol/drug abuse, brain disease and/or memory problems). Next, participants were shown their results and provided with different comparisons to other test takers based on the average scores across all participants, as well as across sex, age, education, etc. On this same page of the site, the participants were also provided with the option to be recontacted for future research or not.
 
-## Phase II: Biospecimen collection
+### Phase II: Biospecimen collection
 
 Biospecimen collection: 4961 participants who completed phase I and had a FH of AD were solicited via email to self-collect and ship back either dried blood spots (DBS) on a 903 Protein Saver Card (Whatman, Little Chalfont, United Kingdom) or a saliva sample using an Oragene Discover kit (DNA Genotek Inc, Ottawa, Canada). Consenting participants (N = 973, 19.7%) were sent kits containing easy to use instructions and everything they needed to collect, and ship DBS or stabilized saliva back to our laboratory. Received DBS were stored at 4°C. Participants who unable to collect enough blood for adequate DBS were sent the saliva kit instead. For saliva, DNA was extracted and purified as per the Oragene Discover kit’s instructions. Extracted DNA was stored at −20°C.
 
 Apolipoprotein E (APOE) genotyping: DBS or extracted DNA was assayed via polymerase chain reaction (PCR, F 5'-ACA-GAA-TTG-GCC-CCG-GCC-TGG-TAC-3', R 5'-TAA-GCT-TGG-CAC-GGC-TGT-CCA-AGG-A-3') and restriction fragment length polymorphism (RFLP). For DBS, PCR was performed directly from a 1 mm punch of a DBS and the FailSafe PCR System using PreMix J and the above primers (Epicentre, Madison, WI). For extracted DNA from saliva, approximately 100 ng of DNA was added to AmpliTaq Gold Fast PCR Master Mix (Applied Biosystems: Thermo Fisher Scientific, Waltham, MA) with the above primers. After PCR, for RFLP, each sample was incubated with 0.5 mL of the HhaI (New England BioLabs, Ipswich, MA) restriction enzyme for 16 hr at 37°C. RFLP samples were run for approximately ~4 hr at 100V on a 4% agarose gel (Invitrogen, Carlsbad, CA), using GelStar Nucleic Acid Gel Stain (Lonza, #50535) and Ultra Low Range DNA Ladder (Invitrogen). Images of the gel were acquired using a Canon G15 digital (Canon, Tokyo, Japan) camera using a DarkReader transilluminator (Clare Chemical Research Inc, Dolores, CO). APOE genotypes were then called according to previously published methods (Oh et al., 1997). A total of 743 FH +participants were APOE genotyped. After filtering a total of 673 were used for the final analyses. The variables were the presence or absence of an APOE ε4 allele (Carriers vs. Non-Carriers) and the Total Number of APOE ε4 alleles (i.e., 0, 1, or 2).
 
-## Data quality control
+### Data quality control
 
 The final dataset was filtered prior to analysis to remove participants: a) with duplicate email addresses (only 1 st entry kept), b) who did not complete all three rounds of the PAL test, c) whose primary language was not English, d) who was not between 18–85 years old, e) who did not report FH status, f) who reported a history of brain disease or memory problems, and g) whose Educational Attainment in years was not less than or equal to participants self-reported chronological age minus four.
 
-## Statistical methods
+### Statistical methods
 
 Statistical analysis was conducted using R (version 3.5.1). For all analyses, the general linear model (GLM)/multiple regression analysis was used to model the Total Word Pairs Correct (criterion/dependent variable) as a function of our Demographic, Health, and Lifestyle Questions as well as APOE status (predictor/independent variables). Regression fit and GLM assumptions were evaluated by plotting residuals, testing: if these data were normally distributed, the presence of outliers and highly influential data points, the autocorrelation of the residuals, and the presence of multicollinearity (Figure 1—figure supplement 1). All measurements were taken from distinct samples. The demographic variables used for analysis were: Age, Biological Sex, Race, Ethnicity, Educational Attainment, Marital Status, Handedness, Number of Daily Prescription Medications, Seizures, Dizziness, Loss of Consciousness, Hypertension, Smoking, Heart Disease, Stroke, Alcohol/Drug Abuse, Diabetes, Cancer, and FH. For APOE analyses, the variables were the Number of APOE ε4 alleles and APOE Genotype. Due to low APOE sample size (n = 519) in relation to the overall study (N = 59,571), two GLMs (one per APOE variable), including only FH +participants, were evaluated. It is important to note that each of the above demographic variables and indicated interaction terms were included in every analysis unless stated otherwise due to model limitations. All plots were created with the R package, ggplot2. Since at age 65, the FH +and FH- performance converged, primary FH modifier analyses were conducted in participants ≤ 65. Categorical by categorical interactions were estimated using the R package, emmeans (version 1.3.0) R package. Adjustments for multiple comparisons were evaluated using Tukey’s method via the emmeans package. Preprocessing with propensity score matching (PSM) was used before statistical modeling to reduce bias and variance (Ho et al., 2007; Ho et al., 2011). Matching was performed using the R package, MatchIt (version 3.0.2). Effect sizes were estimated from the matched cohort using the R package, Zelig (version 5.1.6). Zelig uses least squares regression on matched data to estimate the partial effect on an outcome of interest, in our case, total word pairs correct (Imai et al., 2008; Imai et al., 2009).
 
-## Availability of the materials and resources
+### Availability of the materials and resources
 
 All reagents, programs/software, and other materials described herein are publicly or commercially available. A description of procedures necessary to conduct an independent replication of this research is available upon request from the corresponding author.

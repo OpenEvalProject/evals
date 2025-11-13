@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03r0ha626 Division of Infectious Disease, Department of Internal Medicine, University of Utah Salt Lake City United States
-2. https://ror.org/03r0ha626 Division of Microbiology & Immunology, Department of Pathology, University of Utah Salt Lake City United States
-3. https://ror.org/03r0ha626 Department of Surgery, School of Medicine, University of Utah Salt Lake City United States
+1. Division of Infectious Disease, Department of Internal Medicine, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+2. Division of Microbiology & Immunology, Department of Pathology, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+3. Department of Surgery, School of Medicine, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
@@ -36,29 +36,266 @@ Given the knowledge gap around the role of T cells in human burn injury, our pri
 
 ## Results
 
-## Conventional CD8+ T cell populations are lower and conventional CD4+ T cell populations are higher in burn tissue compared to non-burn tissue
+### Conventional CD8+ T cell populations are lower and conventional CD4+ T cell populations are higher in burn tissue compared to non-burn tissue
 
 We used flow cytometry to determine the phenotype and frequency of T cell populations in burn tissue (12 samples, 11 subjects, 11.0% ± 7.4% TBSA), and non-burn tissue (7 samples, 7 subjects, 10.4%±4.7 TBSA; Figure 1A, Table 1, Figure 1—figure supplement 2A). Acute burn tissue samples (discarded tissue via tangential excision) were collected from patients within 7 days of initial injury, while late phase burn tissue was collected beyond 7 days of initial injury. Five non-burn tissue samples were collected from discarded split thickness autografts of acute burn patients (labeled ‘acute non-burn’ in Table 1), whereas two non-burn tissue samples were from patients who were undergoing surgeries not related to acute burn injuries (labeled ‘non-burn’ in Table 1). CD3+ T cells’ frequency as proportion of live cells (Figure 1B and C) and total cell counts (Figure 1D), were not significantly different in any tissue comparison. We found a significantly higher proportion of CD4+ T cells in burn tissue (median 62.3% [interquartile range, IQR, 46.2%–70.9%]) compared to non-burn tissue (35.4% [18.6%–41.2%]; Figure 1E, p=0.02), while we saw lower proportion of CD8+ T cells in burn tissue (23.0% [18.9%–26.0%], p<0.0001) compared to non-burn tissue (53.4% [44.5%–69.6%]) (Figure 1F). We did not see any significant differences in absolute numbers of CD4+ or CD8+ T cells between burn and non-burn skin. (Figure 1—figure supplement 2B, C). In unconventional CD3+ T cell populations, there were no significant differences in proportions of Vα24-Jα18+ iNKT cells (Figure 1G and H), TCRγδ+ T cells (Figure 1G1), and MR1-5-OP-RU-tetramer+TRAV1-2+ MAIT cells (Figure 1J and K), between burn tissue and non-burn tissue. We analyzed separately the ‘acute burn’ and ‘acute non-burn’ groups, and showed similar differences between these groups for both CD8+and CD4+ populations (Figure 1—figure supplement 1). Taken together, we found a markedly lower proportion of conventional CD8+ T cells and a higher proportion of CD4+ T cells in burn tissue compared to non-burn tissue, but no differences were seen in the proportions of unconventional T cells.
 
-## Conventional CD4+ and CD8+ T cells in burn tissue show lower CD69 expression and produce more IFN-γ upon stimulation compared to T cells from non-burn tissue
+![Figure 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig1-v1.jpg)
+
+**Figure 1.:** Overview of the processing and analysis of T cells in burn and non-burn skin tissue for flow cytometry (A). Representative gating of CD3+, CD4+ and CD8+ T cells from live cells from non-burn tissue and burn tissue (B). Frequency of CD3+ T cells from live cells in burn or non-burn tissue measured by flow cytometry (C). Absolute count of CD3+ T cells from specific volume of burn or non-burn tissue measured by flow cytometry (D). Frequency of CD8+ and CD4+ T cells by flow cytometry (E–F). Frequency and gating strategy of unconventional T cell populations: iNKT (G,H), γδ T cells (G,I), or MAIT cells (J,K). Error bars shown are of median with interquartile range. Differences between burn and non-burn were calculated using Mann-Whitney U test with *p<0.05, ** p<0.01, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Frequency of CD3+ T cells from live cells in burn or non-burn tissue measured by flow cytometry (A). Absolute count of CD3+ T cells from specific volume of burn or non-burn tissue measured by flow cytometry (B). Frequency of CD8+ and CD4+ T cells by flow cytometry (C,D). Frequency and gating strategy of unconventional T cell populations: iNKT (E), γδ T cells(F), or MAIT cells (G). Error bars shown are of median with interquartile range. Differences between groups were calculated using Mann-Whitney U test with *p<0.05, **p<0.01.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Gating strategy used in this paper, from forward scatter by side scatter, of conventional and unconventional T cells (A). Absolute number of live CD4+ and CD8+ T cells per mm3 in burn and non-burn tissues (B–C). Error bars shown are of median with interquartile range. Differences between burn and non-burn were calculated using Mann-Whitney U test.
+
+**Table 1.**
+ Demographics of patients used in this study.n/a implies the skin sample came from a patient who was not a severe burn patient or several years past initial burn injury.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age group</th>
+      <th>Sex</th>
+      <th>Type</th>
+      <th>TBSA</th>
+      <th>Days sample taken after burn</th>
+      <th>Type of injury</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>70–79</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>16</td>
+      <td>4</td>
+      <td>Flame</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>9</td>
+      <td>11</td>
+      <td>Scald</td>
+      <td>Late Phase Burn</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>2</td>
+      <td>4</td>
+      <td>Electrical</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>20–29</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>10</td>
+      <td>6</td>
+      <td>Flame</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>13</td>
+      <td>7</td>
+      <td>Flash</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>10–19</td>
+      <td>F</td>
+      <td>Burn*</td>
+      <td>2</td>
+      <td>25</td>
+      <td>Flame</td>
+      <td>Late Phase Burn</td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>14</td>
+      <td>5</td>
+      <td>Flame</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>5–9</td>
+      <td>F</td>
+      <td>Burn*</td>
+      <td>11</td>
+      <td>9</td>
+      <td>Scald</td>
+      <td>Late Phase Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>M</td>
+      <td>Burn*</td>
+      <td>26</td>
+      <td>7</td>
+      <td>Scald</td>
+      <td>Acute Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>M</td>
+      <td>Burn</td>
+      <td>16</td>
+      <td>11</td>
+      <td>Flame</td>
+      <td>Late Phase Burn</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>F</td>
+      <td>Burn</td>
+      <td>1</td>
+      <td>27</td>
+      <td>Contact</td>
+      <td>Late Phase Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>M</td>
+      <td>Non-Burn</td>
+      <td>9</td>
+      <td>9</td>
+      <td>Flame</td>
+      <td>Acute Non-Burn</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>F</td>
+      <td>Non-Burn†</td>
+      <td>10</td>
+      <td>n/a</td>
+      <td>Burn scar</td>
+      <td>Non-Burn</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>M</td>
+      <td>Non-Burn</td>
+      <td>0</td>
+      <td>n/a</td>
+      <td>Necrotizing fasciitis</td>
+      <td>Non-Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>F</td>
+      <td>Non-Burn*</td>
+      <td>0</td>
+      <td>n/a</td>
+      <td>Necrotizing fasciitis</td>
+      <td>Non-Burn</td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>M</td>
+      <td>Non-Burn*</td>
+      <td>26</td>
+      <td>14</td>
+      <td>Scald</td>
+      <td>Acute Non-Burn</td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>M</td>
+      <td>Non-Burn*</td>
+      <td>13</td>
+      <td>16</td>
+      <td>Electrical and flame</td>
+      <td>Acute Non-Burn</td>
+    </tr>
+    <tr>
+      <td>40–39</td>
+      <td>F</td>
+      <td>Non-Burn</td>
+      <td>49</td>
+      <td>9</td>
+      <td>Flame</td>
+      <td>Acute Non-Burn</td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td>M</td>
+      <td>Non-Burn</td>
+      <td>2</td>
+      <td>4</td>
+      <td>Electrical</td>
+      <td>Acute Non-Burn</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes sample was used for scRNA-seq. Acute non-burn = autograft tissue from acute burn patients.†Denotes sample was used for data analysis in Figure 1—figure supplements 1 and 2, Figure 2—figure supplement 1 only._
+
+### Conventional CD4+ and CD8+ T cells in burn tissue show lower CD69 expression and produce more IFN-γ upon stimulation compared to T cells from non-burn tissue
 
 Focusing on conventional T cells using flow cytometry, we found that burn tissue CD4+ T cells showed significantly lower expression of the T cell residency marker CD69 (p=0.0002) (Figure 2A and B, Mackay et al., 2013; Gebhardt et al., 2009; Kumar et al., 2017) and significantly higher expression of CD38, a marker of chronic activation (p=0.002) compared to non-burn CD4 +T cells (Figure 2A and B; Song et al., 2020). We then looked at the expression of specific intracellular cytokines suggested by prior studies to be important in burn tissue immune environment (Blears et al., 2020). After treatment for 2 hr with PMA-ionomycin, we saw significantly higher expression of IFN-γ (p=0.0019) and TNF-α (p=0.0068) in CD4+ T cells in burn tissue compared to non-burn tissue (Figure 2C–E). Lastly, we saw significantly higher proportion of IL-10+CD4+ T cells in unstimulated burn tissue compared to unstimulated non-burn tissue (p=0.017, Figure 2F). We had similar findings in CD8+ T cells, where CD69 expression was significantly lower (p<0.0001) and CD38 significantly higher (p=0.015) in burn tissue and compared to non-burn tissue (Figure 2G and H), and upon stimulation, we saw in burn tissue higher expression of IFN-γ (p=0.0003) and TNF-α (p=0.0002) (Figure 2J–L) compared to non-burn tissue. We did not see any differences in IL-10 production or pro-inflammatory cytokine production in unstimulated conditions in CD8+ T cells from burn tissue (Figure 2I–L). When comparing ‘acute burn’ and ‘acute non-burn’ we saw similar differences in CD69 expression and pro-inflammatory cytokine output in CD4 +and CD8+T cells following stimulation (Figure 2—figure supplement 1). Taken together, we found that conventional CD4+ and CD8+ T cells from burn tissue have lower CD69 expression and produce higher pro-inflammatory cytokines IFN-γ and TNF-α upon stimulation compared to non-burn tissue.
 
-## Unconventional T cells in burn tissue have lower CD69 expression and produce more IFN-γ and TNF-α upon stimulation compared to non-burn tissue
+![Figure 2.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig2-v1.jpg)
+
+**Figure 2.:** Representative gating of CD69 and CD38 of CD4+ T cells and frequency of CD69+ and CD38+ CD4+ T cells in burn and non-burn tissue (A,B). Representative gating of IFN-γ+and TNF-α+ CD4+ T cells in unstimulated conditions and after 2 hr PMA-ionomycin stimulation in burn tissue and non-burn tissue (C). Quantification of frequency of IFN-γ+, TNF-α+, and IL-10+ CD4+T cells between burn and non-burn tissue in unstimulated conditions and after 2 hr PMA-ionomycin stimulation (D–F). Representative gating of CD69 and CD38 of CD8+ T cells and frequency of CD69+ and CD38+ CD8+T cells in burn and non-burn tissue (G,H). Representative gating of IFN-γ+ and TNF-α+ CD8+T cells in unstimulated conditions and after 2 hr PMA-ionomycin stimulation in burn tissue and non-burn tissue (J). Quantification of frequency of IFN-γ+, TNF-α+, and IL-10+ CD8+T cells between burn and non-burn tissue in unstimulated conditions and after 2 hr PMA-ionomycin stimulation (I, K, L). Error bars shown are of median with interquartile range. Differences between burn and non-burn were calculated using Mann-Whitney U test with *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Frequency of CD69 +and CD38+CD4+T cells in burn and non-burn tissue (A). Quantification of frequency of IFN-γ+, TNF-α+, and IL-10 +CD4+T cells between burn and non-burn tissue in unstimulated conditions and after 2 hr PMA-ionomycin stimulation (B–D). Frequency of CD69 +and CD38+CD8+T cells in burn and non-burn tissue (E). Quantification of frequency of IFN-γ+, TNF-α+, and IL-10 +CD8+T cells between burn and non-burn tissue in unstimulated conditions and after 2 hr PMA-ionomycin stimulation (F–H). Error bars shown are of median with interquartile range. Differences between groups were calculated using Mann-Whitney U test with *p<0.05, **p<0.01.
+
+### Unconventional T cells in burn tissue have lower CD69 expression and produce more IFN-γ and TNF-α upon stimulation compared to non-burn tissue
 
 We then examined unconventional T cells, including γδ T cells and MAIT cells using flow cytometry. As seen in conventional T cells, CD69 expression in MAIT cells was significantly lower (p=0.0002) in burn tissue than non-burn tissue (Figure 3A and B). Burn tissue MAIT cells had significantly higher CD38 expression compared to non-burn tissue (p=0.01) (Figure 3B). With 2 hr PMA-Ionomycin stimulation, we saw a significantly higher expression of IFN-γ (p=0.0002) and TNF-α (p=0.003) in burn tissue MAIT cells compared to non-burn tissue MAIT cells (Figure 3C–E), but no differences were seen in IL-10 and IL-17A between these tissues (Figure 3F and G), nor in any examined cytokines in unstimulated conditions. In γδ T cells, there was significantly lower CD69 expression in burn tissue compared to non-burn tissue (p=0.006), although CD38 expression was not significantly different (Figure 3H1). Following PMA-Ionomycin stimulation, we saw significantly higher IFN-γ (p=0.01) and TNF-α (p=0.007) production in burn tissue γδ T cells compared to non-burn tissue (Figure 3K and L). In unstimulated conditions, significantly higher TNF-α (p=0.015) in burn tissue γδ T cells was noted compared to non-burn tissue, while there were no other significant differences in cytokine production (Figure 3J–M). When comparing ‘acute burn’ and ‘acute non-burn’ we saw similar differences in CD69 expression and IFN-γ and TNF-α output following stimulation in MAIT cells and γδ T cells (Figure 3—figure supplement 1). Overall, like conventional CD4+ and CD8+ T cells, MAIT cells and γδ T cells in burn tissue have a higher capacity to express the pro-inflammatory cytokines IFN-γ and TNF-α upon stimulation.
 
-## Conventional T cells in burn tissue are transcriptionally distinct from those in non-burn tissue
+![Figure 3.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig3-v1.jpg)
+
+**Figure 3.:** Representative gating of CD69+ and CD38+ MAIT cells in burn tissue and non-burn tissue (A) Frequency of CD69 +and CD38+ MAIT cells in burn tissue and non-burn tissue (B). Representative gating of IFN-γ+ and TNF-α+ of unstimulated MAIT cells and stimulated MAIT cells following 2 hr PMA-ionomycin stimulation in burn tissue and non-burn tissue (C). Frequency of IFN-γ+, TNF-α+, IL-10+, and IL-17A+ in unstimulated and stimulated MAIT cells after 2 hr PMA-ionomycin in burn tissue and non-burn tissue (E–G). Representative gating of CD69+ and CD38+ γδ T cells and quantification of frequency of CD69+ and CD38+ γδ T cells in burn tissue and non-burn tissue (H,I). Frequency of IL-17A+ in unstimulated and stimulated γδ T cells after 2 hr PMA-ionomycin in burn tissue and non-burn tissue (J). Representative gating of IFN-γ+ and TNF-α+ of unstimulated γδ T cells and stimulated γδ T cells and quantification of frequency of IFN-γ+ and TNF-α+ γδ T cells in burn tissue and non-burn tissue (K–M). Error bars shown are of median with interquartile range. Differences between burn and non-burn were calculated using Mann-Whitney U test with *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Frequency of CD69+ and CD38+M AIT cells in burn tissue and non-burn tissue (A). Frequency of IFN-γ+, TNF-α+, IL-10+, and IL-17A+ in unstimulated and stimulated MAIT cells after 2 hr PMA-ionomycin in burn tissue and non-burn tissue (B–E). Quantification of frequency of CD69+ and CD38+ γδ T cells in burn tissue and non-burn tissue (F). Frequency of IL-17A+, IFN-γ+, and TNF-α+in unstimulated and stimulated γδ T cells after 2 hr PMA-ionomycin in burn tissue and non-burn tissue (G–I).Error bars shown are of median with interquartile range. Differences between groups were calculated using Mann-Whitney U test with*p<0.05, **p<0.01, ***p<0.001.
+
+### Conventional T cells in burn tissue are transcriptionally distinct from those in non-burn tissue
 
 To get a broader view of the effects of burn trauma on human skin CD3 +T cells, we performed targeted single-cell RNA-sequencing (scRNA-seq), using the BD Rhapsody platform, on three burn tissues and three non-burn tissue samples (Table 1). Dimensional reduction and visualization using Uniform Manifold Approximation and Projection (UMAP) demonstrated that non-burn and burn T cells cluster separately in fifteen different populations (Figure 4A and B). The differentially expressed genes in the largest cluster, cluster 0, which primarily consisted of non-burn T cells, include IL7R (log2 fold change comparing burn to non-burn tissue L2FC = 1.1, p.adj <9e-330), LGALS1 (L2FC = 1.1, p.adj=2.8e-320) and CD69 (L2FC = 1.3, p.adj=6.6e-269) (Figure 4C and D). Cluster 1, a large population consisting mostly of burn tissue, had significantly higher expression of genes encoding for homing receptors compared to non-burn T cells, including SELL (L2FC = 2.8, p.adj <9e-330) and S1PR1 (L2FC = 2.9, p.adj <9e-330) (Figure 4C and D). When we look at the top 8 genes differentiating burn from non-burn samples, we saw that T cells in burn tissue have higher expression of SELL, CCR7 and S1PR1 and have lower CD69 expression compared to non-burn samples (Figure 4E). When comparing protein expression using antibody-oligonucleotide conjugates (AbSeq), we found lower protein expression of PD-1 and CD25 in the burn tissue T cells compared to non-burn (Figure 4F). We confirmed our previous findings from flow cytometry, finding a lower proportion of CD8+ T cells (39% vs 63% CD8A expression, p.adj=5.4e-103) in burn tissue (Figure 4G). We also confirmed the differences in gene expression of ITGAE (encoding CD103) and CD69 by flow cytometry, finding that there are significantly lower frequencies of CD103+CD69+CD3+ T cells in burn tissue compared to non-burn tissue (Figure 4H).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig4-v1.jpg)
+
+**Figure 4.:** UMAP analysis using resolution = 0.8 in Seurat of 15 different clusters of T cells (A). Identification of burn and non-burn tissue T cells using Sample Tag calling from BD Rhapsody workflow (B). The key genes found that discriminate the 15 clusters (C). Heatmap of the top 5 differentially expressed genes using MAST that identify clusters associated with T cells in burn or non-burn tissue (D). Heatmap of the top 8 differentially expressed genes between the three burn and three non-burn samples (E). Violin plot of AbSeq expression of receptors between burn and non-burn CD3+ T cells (F). Sunplot of the proportion of T cell subsets of CD4+, CD8+, MAIT (TRAV1-2+and CD161+), and γδ T cells (TRDC +TRGC+) between burn and non-burn tissues, definitions of CD4+ and CD8+ subsets were taken from Mair et al., 2020 (G). Flow cytometry showing gating strategy and frequency of CD69+CD103+ of CD3+T cells in burn and non-burn tissue (H). Error bars shown are of median with interquartile range. Differences between burn and non-burn were calculated using Mann-Whitney U test with *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Volcano plot of differentially expressed genes between burn and non-burn CD3+ T cells with cytokines and effector molecules labeled (A). Violin plots of selected genes from burn and non-burn CD3+ T cells and significantly differentially expressed genes from volcano plot (B–C). Gene ontology pathway analysis of GO Biological Processes 2021 using R package enrichR showing the positively and negatively enriched pathways associated with burn tissue CD3+ T cells compared to non-burn tissue CD3+ T cells (D). KEGG 2021 Human pathway analysis using R package enrichR showing the positively and negatively enriched pathways associated with burn tissue CD3+ T cells compared to non-burn tissue CD3+ T cells (E).
 
 Lastly, we see that expression of effector molecules IFNG, TNF, NAMPT, GZMB, GZMH, and PRF1 is lower in burn compared to non-burn CD3+ T cells (Figure 4—figure supplement 1A-C). Gene ontology (GO) analysis shows that T cell activation and positive regulation of cytokine production are positively associated with burn T cells while apoptotic processes are negatively associated with burn T cells. (Figure 4—figure supplement 1D). Lastly, KEGG analysis of CD3+ T cells shows Th17, Th1, and Th2 cell differentiation are positively associated with burn T cells while cytokine-cytokine receptor interactions and T cell receptor signaling pathways are negatively associated with burn T cells (Figure 4—figure supplement 1E).
 
 On closer examination of conventional T cell subsets, we found that CD4+ T cells from burn and non-burn tissue comprised of 11 clusters and had distinctly separate clustering based on UMAP analysis (Figure 5A and B). Cluster 0, which consisted mostly of non-burn CD4+ T cells, has high expression of IL7R, CD69, and LGALS1 suggesting a tissue residency signature (Figure 5A–C). Meanwhile, cluster 1, primarily burn CD4+ T cells, expressed high S1PR1, CCR7, and SELL levels (Figure 5A–C). Cluster 2, situated in non-burn tissue, highly expressed FOXP3 and CTLA4, suggesting an enriched Treg population (Figure 5A–C). When we look at the highly differentially expressed receptors in CD4+ cells, we see that S1PR1, CCR7, SELL, and ITGA4 were exclusively expressed in burn tissue (Figure 5D). Confirming our findings with flow cytometry, the AbSeq showed that CD4+ T cells in burn tissue express significantly lower CD69 and higher CD38, compared to non-burn tissue (Figure 5E). A closer look at effector molecules shows that burn CD4+ T cells have lower expression of NAMPT, GZMA, PRF1, TNF, and CCL5 compared to non-burn CD4+ T cells (Figure 5—figure supplement 1A, B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig5-v1.jpg)
+
+**Figure 5.:** Differentially expressed genes define the 10 clusters of CD4+ T cells within burn and non-burn tissue and separate based on tissue origin (A,B). Heatmap of the top 8 genes that significantly differentiate CD4+ T cells in burn and non-burn samples (C). Violin plot of highly significantly differentially expressed genes relating to tissue residency and homing between burn and non-burn CD4+ T cells (D). Violin plot of AbSeq protein expression of receptors between burn and non-burn CD4+ T cells (E). UMAP analysis define 10 clusters of CD8+ T cells that clustering separately based on tissue origin (F,G). Heatmap of the top 8 genes that significantly differentiate CD8+ T cells in burn and non-burn samples (H). Violin plot of T cell homing markers and residency markers of CD8+ T cells in burn and non-burn tissue (I). Violinplot of AbSeq protein expression of receptors between CD8+ T cells in burn and non-burn tissue (J).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82626/elife-82626-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Volcano plot of differentially expressed genes between burn and non-burn CD4+ T cells with cytokines and effector molecules highlighted (A). Violin plots of selected genes from burn and non-burn CD4+ T cells and significantly differentially expressed genes from volcano plot (B). Volcano plot of differentially expressed genes between burn and non-burn CD8+ T cells with cytokines and effector molecules highlighted (C). Violin plots of selected genes from burn and non-burn CD8+ T cells and significantly differentially expressed genes from volcano plot (D).
+
 When we examined CD8+ T cells, we saw similar clustering as CD4+ T cells based on burn status (Figure 5F and G). The large cluster 0 situated in non-burn tissue show upregulation of several cytotoxic molecules, including GZMK, GZMH, and GNLY (Figure 5F–H). A similar cytotoxic CD8+ T cell cluster was seen in burn tissue found at cluster 4 (Figure 5F and H). We also saw that expression of NAMPT, TNF, IFNG, CCL4, and IL32 were significantly lower in burn tissue CD8+ T cells compared to non-burn CD8+ T cells (Figure 5—figure supplement 1C, D). Similar to CD4+ T cells from the scRNA-seq data, we saw a burn tissue CD8+ population in clusters 3, 4, and 8, which highly expresses homing markers SELL and S1PR1 (Figure 5H). Overall, we observed a significant higher expression of ITGA4, SELL, CCR7, SELPLG, and S1PR1 and lower expression of CD69 in burn tissue CD8+ T cells compared to non-burn tissue (Figure 5I). The AbSeq of CD8+ T cells shows a lower expression of PD1, CD25, and CD69 in CD8+ T cells in burn tissue and higher expression of CD38 in comparison to non-burn tissue (Figure 5K). A closer examination of effector molecules shows that burn CD8+ T cells have lower expression of NAMPT, GZMB, GZMH, TNF, and IL32 and higher expression off CCL5 and GZMA compared to non-burn CD8+ T cells (Figure 5—figure supplement 1C, D).
 
-## Unconventional T cells in burn tissue comprise a highly cytotoxic population not seen in non-burn tissue
+### Unconventional T cells in burn tissue comprise a highly cytotoxic population not seen in non-burn tissue
 
 Similar to our findings with conventional T cells, MAIT cells (defined in AbSeq as Vα7.2+and CD161+) from burn tissue clustered separately from those in non-burn tissue by UMAP analysis (Figure 6A and B). Cluster 0, positioned in burn tissue, showed highly upregulated cytotoxic genes, including PRF1, GZMK, and NKG7 (Figure 6B and C). Cluster 1, positioned in non-burn tissue, exhibited upregulation of CD4, ICOS, and TIGIT, suggesting a MAIT Treg lineage; notably, we also identified FOXP3+ MAIT cells in this cluster (Figure 6B and D; Vorkas et al., 2022). A further look into transcription factors associated with burn tissue MAIT cells showed a high proportion of RORC, while TBX21 (encoding for T-bet) and ZBTB16 (encoding for PLZF) had similar expression across tissues (Figure 6D). As expected, burn tissue MAIT cells had lower expression of CD69, and higher expression of S1PR1 and CCR7, like our findings in conventional T cell populations, compared to non-burn tissue (Figure 6E). Notably, we also saw a significantly higher expression of CXCR6 in burn tissue (Figure 6E), suggesting this may be a potential mechanism of MAIT cell trafficking. Taken together, burn tissue MAIT cells are highly cytotoxic and express markers for egress from tissue compared to non-burn MAIT cells.
 
@@ -86,23 +323,23 @@ In conclusion, we used flow cytometry, scRNA-seq, and AbSeq methods to show that
 
 ## Methods
 
-## Human subjects and enzymatic processing of skin tissue
+### Human subjects and enzymatic processing of skin tissue
 
 Samples of discarded non-burn (7 donors) and burn tissue (11 donors) were obtained from through the University of Utah Burn Center, under a protocol (IRB#150686) reviewed by the University of Utah IRB and determined to be non-human subjects research. Discarded tissue was placed into RPMI-1640 media immediately after removal in the surgical suite and brought to laboratory for immediate processing. The skin was washed 1 x with RPMI-1640 and then stamped 16 times with a 3 mm biopsy punch. Four 3 mm pieces were placed in a gentleMACS C tube (Miltenyi Biotech) with 500 µL of RPMI-1640. For a 2 hr digestion, the Tumor Dissociation Kit was used (Miltenyi Biotech) with 100 µL of enzyme M, 25 µL of enzyme R, and 12.5 µL of enzyme A was added to each tube. After digestion 500 µL of cold RPMI-1640 was added and the tubes were placed on a gentleMACS dissociator (Miltenyi Biotech) and set to the h_skin_01 program at room temperature to shear the samples. The tubes were briefly spun down to get any remaining samples and washed with RPMI-1640 twice through a 70 µM strainer. The cells were frozen at –80 °C for no more than 2 months.
 
-## Flow cytometry
+### Flow cytometry
 
 For phenotypic analysis of skin mononuclear cells, samples were thawed from –80 °C and treated with human Fc block (BD Biosciences, Cat#564220) for 20 minutes and were stained for surface markers: Zombie UV fixable viability dye (Biolegend, Cat#423107), anti-CD3-BUV395 (BD Biosciences, Cat# 563546), anti-CD8-PE-Cy5.5 (Molecular Probes, Cat#MHCD0818), anti-CD4-BUV496 (BD Biosciences, Cat# 612936), anti-Vα7.2-BV711 (Biolegend, Cat# 351731), anti-LAG3-BV785 (Biolegend, Cat# 369321), anti-CD69-BUV563 (BD Biosciences, Cat#748764), anti-TCRγδ-BV480 (BD Biosciences, Cat# 566076), anti-TCR Vα24-Jα18-APC-Fire 750 (Biolegend, Cat# 342927), anti-CTLA-4-PE-Cy5 (BD Biosciences, Cat#555854), anti-CD103-PE-Cy7 (Biolegend, Cat#350211), anti-CD25-BV650 (Biolegend, Cat# 02037), anti-PD-1-BV605 (Biolegend, Cat# 329923), anti-CD161-BV605 (Biolegend, Cat#339915), anti-TIM3-BV421 (Biolegend, Cat# 345007), anti-CD38-APC-Fire-810 (Biolegend, Cat# 303549), and anti-human MR1 5-OP-RU Tetramer (NIH Tetramer Core Facility). Skin mononuclear cells were stimulated with PMA-Ionomycin and extracellular transport blocked by brefeldin A for 3hr were stained for surface markers: anti-human MR1-5-OP-RU Tetramer (NIH Tetramer Core Facility), anti-CD3-BUV395 (BD Biosciences, Cat# 563546), anti-CD8-PE-Cy5.5 (Molecular Probes, Cat#MHCD0818), anti-CD4-BUV496 (BD Biosciences, Cat# 612936), anti-Vα7.2-BV711 (Biolegend, Cat# 351731), anti-TCRγδ-BV480 (BD Biosciences, Cat# 566076), anti-TCR Vα24-Jα18-APC-Fire 750 (Biolegend, Cat# 342927) and intracellularly stained for: anti-IL-17A-BV650 (BD Biosciences, Cat# 563746), anti-IL-10-PerCp-Cy5.5 (Biolegend, Cat# 501417), anti-IL-6-FITC (Biolegend, Cat# 501103), anti-IFN-γ-Alexa Fluor 700 (Biolegend, Cat#506515), anti-TNFα-ef450 (Invitrogen, Cat#48-7349-42). Sample data were acquired using a 5-laser Cytek Aurora flow cytometer (Cytek) and analyzed using FlowJo software v10 (Tree Star, Inc Ashland, OR).
 
-## Targeted T cell single-cell mRNA sequencing and analysis
+### Targeted T cell single-cell mRNA sequencing and analysis
 
 Three samples each of discarded non-burn and burn tissue were processed as previously stated. The skin mononuclear cells were treated with human Fc block (BD Biosciences, Cat#564220) for 20 minutes and were stained with eFlour 780 fixable viability dye (Invitrogen, Cat# 65-2860-40) and anti-CD3-Alexa Fluor 700 (Biolegend, Cat#300423) and CD3 +T cells were sorted on a 4-laser BD FACSAria 3. Cells were incubated with BD AbSeq Ab-oligo Vα7.2 and CD161 to identify MAIT cells within the CD3 +T cell populations. Single cells were isolated using Single Cell Capture system (BD Biosciences) and analyzed for live cells and amount of total single cells captured with the BD Rhapsody Single-cell Analysis System. Sequencing libraries of mRNA and cDNA of AbSeq were doing simultaneously using BD Rhapsody targeted mRNA and AbSeq amplification kits and protocol. The final libraries of the AbSeq and mRNA were analyzed using Agilent 2200 TapeStation. The AbSeq-oligos, Sample Multiplex Tags, and T cell mRNA targeted libraries were pooled together before sequencing on a NovaSeq6000 instrument (Illumina). For sequencing, 12,000 reads/cell were dedicated toward the targeted mRNA library, 10,000 reads/AbSeq-oligo, and 200 reads/Sample Tag. The FASTQ files were uploaded to Seven Bridges Genomics, and a workflow designed by BD Biosciences was used to analyze the data to demultiplex, identify cells based on AbSeq-oligo, and analyze the single-cell mRNA data. For specific instructions, refer to BD Single Cell Genomics Bioinformatics Handbook, Doc ID: 54169, Rev. 6.0 (Mair et al., 2020). Analysis of the final count matrix was done with Seurat v4.0.3 in R v4.1.2. Using the Seurat object, gene ontology (database: GO_Molecular_Function_2021) and KEGG (database: KEGG_2021_Human) were performed through enrichR v3.1 package in R v4.1.2.
 
-## Statistical analysis
+### Statistical analysis
 
 For comparisons of non-burn tissue with burn tissue flow cytometric data, a Mann-Whitney U test was used. GraphPad Prism 8.3.0 software was used for statistical analysis of the flow cytometry data and p<0.05 was considered statistically significant. For comparisons of scRNA-seq data between burn and non-burn, Seurat function FindMarkers with test MAST was used with min.pct=0.10 (Finak et al., 2015). Volcano plots showing differentially expressed genes between burn and non-burn T cells were generated using EnhancedVolcano v1.12.0 package in R v4.1.2.
 
-## Datasets Generated
+### Datasets Generated
 
 scRNA-seq of sorted human CD3+ T cells from discarded burn and non-burn skin: Daniel Labuz and Daniel Leung, 2021, https://www.ncbi.nlm.nih.gov/sra/SRR23092707, SRA, SRR23092707.
 

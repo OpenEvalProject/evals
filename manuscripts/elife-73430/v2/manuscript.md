@@ -53,19 +53,27 @@
 
 ## Abstract
 
-As part of the Reproducibility Project: Cancer Biology , we published Registered Reports that described how we intended to replicate selected experiments from 29 high-impact preclinical cancer biology papers published between 2010 and 2012. Replication experiments were completed and Replication Studies reporting the results were submitted for 18 papers, of which 17 were accepted and published by eLife with the rejected paper posted as a preprint. Here, we report the status and outcomes obtained for the remaining 11 papers. Four papers initiated experimental work but were stopped without any experimental outcomes. Two papers resulted in incomplete outcomes due to unanticipated challenges when conducting the experiments. For the remaining five papers only some of the experiments were completed with the other experiments incomplete due to mundane technical or unanticipated methodological challenges. The experiments from these papers, along with the other experiments attempted as part of the Reproducibility Project: Cancer Biology, provides evidence about the challenges of repeating preclinical cancer biology experiments and the replicability of the completed experiments.
+As part of the Reproducibility Project: Cancer Biology, we published Registered Reports that described how we intended to replicate selected experiments from 29 high-impact preclinical cancer biology papers published between 2010 and 2012. Replication experiments were completed and Replication Studies reporting the results were submitted for 18 papers, of which 17 were accepted and published by eLife with the rejected paper posted as a preprint. Here, we report the status and outcomes obtained for the remaining 11 papers. Four papers initiated experimental work but were stopped without any experimental outcomes. Two papers resulted in incomplete outcomes due to unanticipated challenges when conducting the experiments. For the remaining five papers only some of the experiments were completed with the other experiments incomplete due to mundane technical or unanticipated methodological challenges. The experiments from these papers, along with the other experiments attempted as part of the Reproducibility Project: Cancer Biology, provides evidence about the challenges of repeating preclinical cancer biology experiments and the replicability of the completed experiments.
 
 ## Introduction
 
 The Reproducibility Project: Cancer Biology (RP:CB) was a collaboration between the Center for Open Science and Science Exchange that sought to address concerns about reproducibility in scientific research by conducting replications of selected experiments from a number of high-profile papers in the field of cancer biology (Errington et al., 2014). For each of these papers, a Registered Report detailing the proposed experimental designs and protocols for the replications was peer reviewed and published prior to data collection. When all experiments from a Registered Report were completed with interpretable data they were submitted and published as a Replication Study. However, there were numerous replication attempts that were not fully completed for various reasons as efforts were balanced attempting to complete as many experiments as possible across multiple Registered Reports, which were starting, finishing, and navigating challenges simultaneously over the course of the project. The decision to stop any individual experiment was influenced partly by the mundane technical or unanticipated methodological challenges unique to that experiment, and partly by factors related to time and cost estimates across all the replications that were ongoing as part of the Reproducibility Project: Cancer Biology as a whole. This includes four Registered Reports (Blum and LaBarge, 2014; Evans and Griner, 2015; Greenfield and Griner, 2014; Incardona et al., 2015) where experimental work was initiated but ultimately stopped without results, one Registered Report (Bhargava et al., 2016b) where the results were submitted as a Replication Study and rejected (which has been posted as a preprint [Pelech et al., 2021]), two Registered Reports (Haven et al., 2016; Raouf et al., 2015) where experimental work began with preliminary outcomes although experiments were not completed, and five Registered Reports (Bhargava et al., 2016a; Chroscinski et al., 2015; Richarson et al., 2016; Sharma et al., 2016a; Sharma et al., 2016b) where some experiments were completed. The present paper reports the preliminary outcomes and completed experiments for those seven partially completed attempts.
 
-## Partial replication: a chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations
+### Partial replication: a chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations
 
 There has been an increase in using quantitative bioinformatic approaches to model and understand the evolution of drug resistance. For example, to inform more effective clinical outcomes, there is a growing understanding of how tumors, the microenvironment, the immune system, and the epigenome interact and evolve (McCoach and Bivona, 2019). This is complicated by the challenges persister cell populations pose to therapy, drawing parallels to similar challenges in fighting microbial infections, with new bioinformatic approaches to decipher the complexities of heterogeneous cell populations, with a focus on drug-tolerant cells in cancers needed (Vallette et al., 2019). As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Haven et al., 2016) that described how we intended to replicate selected experiments from the paper ‘A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations’ (Sharma et al., 2010).
 
 We attempted to independently replicate experiments that tested the phenotype of a small subpopulation of ‘drug-tolerant persister’ cells (DTPs) that are generated when PC9 cells, a protein-tyrosine kinase inhibitor (TKI)-sensitive non-small cell lung cancer cell line, is exposed to high concentrations of TKIs. As described in Protocol 1 in the Registered Report (Haven et al., 2016), we first attempted to determine the growth characteristics of DTPs. When attempting to determine the percentage of erlotinib-treated PC9 cells that became DTPs we used the same concentration (2 µM) and timing (9 days with media and drug replaced every 3 days) as the original study. We found ~6% of the cells remained viable and continued to proliferate, compared to vehicle-treated cells (Figure 1A, B), which was much higher than the ~0.3 % reported in the original study (Sharma et al., 2010). We confirmed the PC9 cells used in the replication attempt had a deletion in exon 19, which confers epidermal growth factor receptor(EGFR) TKI sensitivity (Arao et al., 2004), and did not contain a T790M mutation, which has been shown to confer erlotinib resistance (Kobayashi et al., 2005; Pao et al., 2005). We also performed a survival assay (Figure 1C) and checked EGFR kinase activation (Figure 1D), which both required higher concentrations of erlotinib to achieve a half-maximal inhibitory concentration (survival: ~0.15 µM; EGFR: >1 µM) compared to what was reported in the original study (survival: ~0.0085 µM; EGFR: <0.01 µM) (Sharma et al., 2010). Finally, we also observed similar results with erlotinib hydrochloride (HCl) (Figure 1—figure supplement 1), which was used in a paper that reported DTPs from PC9 cells (Ramirez et al., 2016). These preliminary outcomes indicated that while the PC9 cells retained their sensitivity to erlotinib, the exposure of the cells to erlotinib was not at a similar ~100 times the IC50 concentration reported in the original study. This could be due to differences, such as variations of the cells used (e.g., PC9 cells used in this attempt were less resistant than those of the original study) or the potency of erlotinib (e.g., differing compound potency resulting from different stock solutions). To test a similar relative concentration we increased the concentration to 20 µM erlotinib and observed ~1 % of the cells remained viable after 9 days (Figure 1A). This indicates that DTPs were generated when PC9 cells were exposed to high concentrations of TKIs, similar to the original study; however, this raised questions for replicating the proposed experiments in the Registered Report. For example, how do the results differ when experiments are performed using the same dose as the original study (2 µM) compared to the higher concentration suggested in these preliminary results (20 µM), or is a different set of conditions necessary (e.g., is it necessary to achieve ~0.3% cell survival after 9 days?). We did not continue this experiment beyond this point and instead focused our efforts toward attempting to complete other replication experiments. Importantly, conducting experiments under different conditions could help provide insight into what conditions are necessary to obtain the original results. Interestingly, this was a point discussed during review of the Registered Report (Haven et al., 2016). To summarize, this replication attempt obtained preliminary outcomes although the experiments were not continued and thus these data do not address whether DTPs maintained viability through IGF-1 receptor signaling and an altered chromatin state dependent on the histone demethylase KDM5A.
 
-## Partial replication: tumor vascularization via endothelial differentiation of glioblastoma stem-like cells
+![Figure 1.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig1-v2.jpg)
+
+**Figure 1.:** Growth characteristics of PC9 cells treated with various doses of erlotinib. (A) PC9 cells were plated at equal density and treated with dimethyl sulfoxide(DMSO) or the indicated dose of erlotinib (2 or 20 µM) for 9 days (fresh erlotinib was added every 3 days). Representative microscopic images of conditions on day 9. (B) Percent of drug-tolerant persisters (DTPs) as a percentage of DMSO control cells. PC9 cells were plated at various densities (cells/cm2) and treated with DMSO or the indicated concentrations of erlotinib. (C) Survival curve of PC9 cells treated with various doses of erlotinib for 72 hr. Percent survival is relative to DMSO-treated cells. The dashed line corresponds to 50% cell killing (absolute IC50 = 0.15 µM). Data plotted from one independent biological repeat. (D) Representative Western blots of lysates from PC9 cells treated with increasing concentrations of erlotinib (0.01, 0.1, 1, and 10 µM) or DMSO (0.01%). Membranes were probed with phospho-EGFR (pEGFR)-specific antibodies. Glyceraldehyde 3-phosphate dehydrogenase (GAPDH) served as loading control. Relative expression of pEGFR (to DMSO) for each concentration (0.01, 0.1, 1, and 10 µM erlotinib) is: 1.1, 1.2, 0.8, and 0.2, respectively. Each experiment was performed independently twice. Additional details can be found at https://osf.io/xbign/.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PC9 cells were plated at equal density and treated with DMSO or the indicated dose of erlotinib HCl (2 or 20 µM) for 9 days (fresh erlotinib was added every 3 days). Representative microscopic images of conditions on day 9. (B) Percent of drug-tolerant persisters (DTPs) as a percentage of DMSO control cells. PC9 cells were plated at various densities (cells/cm2) and treated with DMSO or the indicated concentrations of erlotinib HCl. (C) Survival curve of PC9 cells treated with various doses of erlotinib for 72 hr. Percent survival is relative to DMSO-treated cells. The dashed line corresponds to 50% cell killing (absolute IC50 = 0.15 µM). Each experiment was performed once. Additional details can be found at https://osf.io/xbign/.
+
+### Partial replication: tumor vascularization via endothelial differentiation of glioblastoma stem-like cells
 
 Of the handful of ways tumors acquire blood supply, transdifferentiation of tumor cells into blood vessel cells is a growing area of investigation. It has been reported that glioblastoma cells transdifferentiate into tumor endothelial cells, supporting the idea that glioblastoma stem cells contribute to the endothelial angiogenic properties of these tumors (Ricci-Vitiani et al., 2010; Wang et al., 2010). However, it has also been reported that glioblastoma stem cells transdifferentiate into pericytes rather than endothelial cells (Cheng et al., 2013). As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Chroscinski et al., 2015) that described how we intended to replicate selected experiments from the paper ‘Tumour vascularization via endothelial differentiation of glioblastoma stem-like cells’ (Ricci-Vitiani et al., 2010).
 
@@ -73,11 +81,11 @@ We independently replicated an experiment to determine the expression of the end
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig2-v2.jpg)
 
-**Figure 2.:** Ricci-Vitiani et al., 2010.(A) Tie2 expression in patient-derived glioblastoma neurospheres (GSC83), a glioblastoma cell line (U87MG), and an endothelial cell line (human dermal microvascular endothelial cells, HMVEC). Real-time quantitative reverse transcription PCR (qRT-PCR) was performed to detect Tie2 and 18S rRNA expression. Relative expression (Tie2/18S rRNA) is presented for each cell type. Means reported and error bars represent SD from two (GSC83) or three (U87MG and HMVEC) independent biological repeats. One-way analysis of variance (ANOVA) of all groups: F(2, 5) = 5.90, p = 0.0484. Planned contrasts between HMVEC and GSC83: t(5) = 2.78, p = 0.040; U87MG and HMVEC: t(5) = 3.06, p = 0.028; GSC83 and U87MG: t(5) = 0.017, p = 0.987. (B) Meta-analysis of each effect. Effect size and 95 % confidence intervals are presented for Ricci-Vitiani et al., 2010, this replication study (Reproducibility Project: Cancer Biology, RP:CB), and a random-effects meta-analysis of those two effects. Cohen’s d is a standardized difference between the two indicated measurements where a larger value indicates a difference in relative Tie2 expression between the two cell types. Random-effects meta-analysis: HMVEC and GSC83: p = 0.531; U87MG and HMVEC: p = 0.532; GSC83 and U87MG: p = 0.695. Sample sizes used in Ricci-Vitiani et al., 2010 and RP:CB are reported under the study name. Additional details can be found at https://osf.io/mpyvx/.
+**Figure 2.:** (A) Tie2 expression in patient-derived glioblastoma neurospheres (GSC83), a glioblastoma cell line (U87MG), and an endothelial cell line (human dermal microvascular endothelial cells, HMVEC). Real-time quantitative reverse transcription PCR (qRT-PCR) was performed to detect Tie2 and 18S rRNA expression. Relative expression (Tie2/18S rRNA) is presented for each cell type. Means reported and error bars represent SD from two (GSC83) or three (U87MG and HMVEC) independent biological repeats. One-way analysis of variance (ANOVA) of all groups: F(2, 5) = 5.90, p = 0.0484. Planned contrasts between HMVEC and GSC83: t(5) = 2.78, p = 0.040; U87MG and HMVEC: t(5) = 3.06, p = 0.028; GSC83 and U87MG: t(5) = 0.017, p = 0.987. (B) Meta-analysis of each effect. Effect size and 95 % confidence intervals are presented for Ricci-Vitiani et al., 2010, this replication study (Reproducibility Project: Cancer Biology, RP:CB), and a random-effects meta-analysis of those two effects. Cohen’s d is a standardized difference between the two indicated measurements where a larger value indicates a difference in relative Tie2 expression between the two cell types. Random-effects meta-analysis: HMVEC and GSC83: p = 0.531; U87MG and HMVEC: p = 0.532; GSC83 and U87MG: p = 0.695. Sample sizes used in Ricci-Vitiani et al., 2010 and RP:CB are reported under the study name. Additional details can be found at https://osf.io/mpyvx/.
 
 We also attempted to replicate an experiment that tested if glioblastoma stem-like cells (GSCs) that derive into endothelial cells contribute to tumor growth in vivo. As described in Protocol 2 in the Registered Report (Chroscinski et al., 2015) we first attempted to generate stable cells that expressed the herpes simplex virus thymidine kinase (tk) under the control of the transcription regulatory elements of Tie2, a vector conferring constitutive expression (i.e., PGK), or empty vector. A necessary requirement before proceeding with the xenograft experiment was achieving at least 80 % expression of the genes based on a GFP reporter. However, after multiple attempts, including obtaining new cells, plasmids, and incorporating changes to the protocol to improve infection efficiency and to enrich GFP expressing cells, we were unable to achieve this level for all cell populations. We did not continue this experiment beyond this point and instead focused our efforts toward attempting to complete other replication experiments. Importantly, this does not indicate the original result is unattainable, rather additional experimentation optimization is necessary. To summarize, this experiment was not completed and thus these data are unable to address whether selectively targeting endothelial cells generated by GSCs in a mouse xenograft model results in tumor reduction and degeneration.
 
-## Partial replication: diverse somatic mutation patterns and pathway alterations in human cancers
+### Partial replication: diverse somatic mutation patterns and pathway alterations in human cancers
 
 As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Sharma et al., 2016a) that described how we intended to replicate selected experiments from the paper ‘Diverse somatic mutation patterns and pathway alterations in human cancers’ (Kan et al., 2010). Since then, GNAO1, which encodes the Gαo subunit of heterotrimeric guanine-binding proteins (G-proteins), has been identified as having a hypermethylated promoter region and being downregulated in colorectal cancer (Hauptman et al., 2019; Hua et al., 2017; Yang et al., 2017) and hepatoma carcinoma (Xu et al., 2018). Also, consistent with the understanding that decreased protein kinase activity leads to carcinogenesis, micro-RNAs (miR-141, miR-802, and miR-27A) have been found to inhibit MAP2K4 in colon, tongue, and prostate carcinoma, respectively (Ding et al., 2017; Wan et al., 2016; Wu et al., 2017). Similarly, it has been reported that copy number loss of MAP2K4 was observed in ductal carcinoma (Pang et al., 2017).
 
@@ -85,11 +93,11 @@ We independently replicated an experiment to test whether a somatic mutation in 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig3-v2.jpg)
 
-**Figure 3.:** Kan et al., 2010.(A) Anchorage-independent growth of human mammary epithelial cells (HMECs). HMECs were left uninfected or stably expressing empty vector (EV), wild-type (WT) GNAO1, or GNAO1-R243H. Number of colonies formed after 3 weeks. PC9 cells treated with various doses of erlotinib. Means reported and error bars represent SEM from three independent biological repeats. Student’s t test: t(4) = 5.29, p = 0.0061. (B) Representative Western blots of lysates from HMEC cells expressing the indicated conditions. Membranes were probed with FLAG-specific antibodies to detect FLAG-tagged GNAO1. B-ACTIN served as loading control. (C) Meta-analysis of each effect. Effect size and 95 % confidence intervals are presented for Kan et al., 2010, this replication study (Reproducibility Project: Cancer Biology, RP:CB), and a random-effects meta-analysis of those two effects. Cohen’s d is a standardized difference between the two indicated measurements where a larger value indicates a difference in the number of colonies between the two conditions. Random-effects meta-analysis: p = 0.016. Sample sizes used in Kan et al., 2010 and RP:CB are reported under the study name. Additional details can be found at https://osf.io/jpeqg/.
+**Figure 3.:** (A) Anchorage-independent growth of human mammary epithelial cells (HMECs). HMECs were left uninfected or stably expressing empty vector (EV), wild-type (WT) GNAO1, or GNAO1-R243H. Number of colonies formed after 3 weeks. PC9 cells treated with various doses of erlotinib. Means reported and error bars represent SEM from three independent biological repeats. Student’s t test: t(4) = 5.29, p = 0.0061. (B) Representative Western blots of lysates from HMEC cells expressing the indicated conditions. Membranes were probed with FLAG-specific antibodies to detect FLAG-tagged GNAO1. B-ACTIN served as loading control. (C) Meta-analysis of each effect. Effect size and 95 % confidence intervals are presented for Kan et al., 2010, this replication study (Reproducibility Project: Cancer Biology, RP:CB), and a random-effects meta-analysis of those two effects. Cohen’s d is a standardized difference between the two indicated measurements where a larger value indicates a difference in the number of colonies between the two conditions. Random-effects meta-analysis: p = 0.016. Sample sizes used in Kan et al., 2010 and RP:CB are reported under the study name. Additional details can be found at https://osf.io/jpeqg/.
 
 We also attempted to replicate experiments that tested whether various somatic mutations in MAP2K4, a component of a kinase cascade that activates downstream MAP kinases, led to increased anchorage-independent growth and whether the mutations impair kinase activity in an in vitro kinase assay. This was described in Protocols 4 and 5 in the Registered Report (Sharma et al., 2016a). However, the soft agar assay was uninterpretable most likely due to a technical issue of the cells growing on the dish surface under the agar. We did not continue this experiment beyond this point and instead focused our efforts toward attempting to complete other replication experiments. Importantly, this does not indicate the original result is unattainable, rather additional experimentation optimization is necessary. To summarize, this experiment was not completed and thus these data are unable to address whether stable expression of MAP2K4 somatic mutations in NIH3T3 cells results in increased anchorage independent growth and reduced kinase activity.
 
-## Partial replication: kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF
+### Partial replication: kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF
 
 The Ras–Raf–MEK–ERK signal transduction cascade is one of the most common signaling pathways in human cancers. It has been reported that some RAF inhibitors paradoxically activate this pathway in the context of wild-type BRAF (Halaban et al., 2010; Hatzivassiliou et al., 2010; Heidorn et al., 2010; Holderfield et al., 2013; Joseph et al., 2010; Lavoie et al., 2013; Poulikakos et al., 2010). Consistent with this paradoxical activation, a kinase-dead BRAF was found to induce lung adenocarcinoma (Nieto et al., 2017). Similarly, kinase-impaired or kinase-dead (class 3) BRAF mutants were shown to be more dependent on CRAF for pathway activation and were susceptible to inhibition of activated Ras (Yao et al., 2017). Studies also reported effective inhibition of this pathway using pan-RAF inhibitors (Vakana et al., 2017) or a combination of RAF and MEK inhibitors (Johannessen et al., 2010; Merchant et al., 2017; Molnár et al., 2018; Whittaker et al., 2015). As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Bhargava et al., 2016a) that described how we intended to replicate selected experiments from the paper ‘Kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF’ (Heidorn et al., 2010).
 
@@ -97,21 +105,29 @@ We independently replicated an experiment to test the paradoxical activation of 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig4-v2.jpg)
 
-**Figure 4.:** Heidorn et al., 2010.ERK activation following treatment with BRAF inhibitors in A375 cells (mutant BRAF; wild-type NRAS) and D04 cells (wild-type BRAF; mutant NRAS). (A) A375 cells were treated with DMSO, sorafenib (10 µM), SB590885 (1 µM), or PD184352 (1 µM), or left untreated. Cells were harvested 4 hr later for Western blot analysis. Relative pERK1/2 expression are presented for each condition. Western blot bands were quantified, pERK1/2 was normalized to total ERK1/2, then for each biological repeat value was normalized to the untreated condition with expression presented relative to DMSO. Dot plot of independent biological repeats (n = 3). Data reported in Figure 1A of Heidorn et al., 2010 displayed as a single point (red triangle) for comparison. Planned comparison (two-tailed Wilcoxon–Mann–Whitney test) between DMSO and all other conditions: U = 2.40, uncorrected p = 0.0091, Bonferroni corrected p = 0.027, Cliff’s delta = 0.93, 95% confidence interval (CI) [0.63, 0.99]. (B) D04 cells were treated like in A and presented in the same way. Graph is separated at a dashed line to accommodate a value higher than the others. Data reported in Figure 1A of Heidorn et al., 2010 displayed as a single point (red triangle) for comparison. Planned comparisons (two-tailed Wilcoxon–Mann–Whitney tests) between DMSO and sorafenib and PD184352: U = 2.36, uncorrected p = 0.024, Bonferroni corrected p = 0.071, Cliff’s delta = 1.00, 95% CI [0.75, 1.00]; between DMSO and SB590885: U = 1.96, uncorrected p = 0.10, Bonferroni corrected p = 0.30, Cliff’s delta = 0.11, 95% CI [−0.71, 80]. (C) Representative Western blots probed with pERK1/2 (T202/Y204)-specific antibodies. Total ERK1/2 served as loading control. Additional details can be found at https://osf.io/b1aw6/.
+**Figure 4.:** ERK activation following treatment with BRAF inhibitors in A375 cells (mutant BRAF; wild-type NRAS) and D04 cells (wild-type BRAF; mutant NRAS). (A) A375 cells were treated with DMSO, sorafenib (10 µM), SB590885 (1 µM), or PD184352 (1 µM), or left untreated. Cells were harvested 4 hr later for Western blot analysis. Relative pERK1/2 expression are presented for each condition. Western blot bands were quantified, pERK1/2 was normalized to total ERK1/2, then for each biological repeat value was normalized to the untreated condition with expression presented relative to DMSO. Dot plot of independent biological repeats (n = 3). Data reported in Figure 1A of Heidorn et al., 2010 displayed as a single point (red triangle) for comparison. Planned comparison (two-tailed Wilcoxon–Mann–Whitney test) between DMSO and all other conditions: U = 2.40, uncorrected p = 0.0091, Bonferroni corrected p = 0.027, Cliff’s delta = 0.93, 95% confidence interval (CI) [0.63, 0.99]. (B) D04 cells were treated like in A and presented in the same way. Graph is separated at a dashed line to accommodate a value higher than the others. Data reported in Figure 1A of Heidorn et al., 2010 displayed as a single point (red triangle) for comparison. Planned comparisons (two-tailed Wilcoxon–Mann–Whitney tests) between DMSO and sorafenib and PD184352: U = 2.36, uncorrected p = 0.024, Bonferroni corrected p = 0.071, Cliff’s delta = 1.00, 95% CI [0.75, 1.00]; between DMSO and SB590885: U = 1.96, uncorrected p = 0.10, Bonferroni corrected p = 0.30, Cliff’s delta = 0.11, 95% CI [−0.71, 80]. (C) Representative Western blots probed with pERK1/2 (T202/Y204)-specific antibodies. Total ERK1/2 served as loading control. Additional details can be found at https://osf.io/b1aw6/.
 
 We also attempted to replicate experiments testing the mechanism of the paradoxical activation through depletion of NRAS or CRAF or immunoprecipitation of ectopically expressed wild-type or mutant CRAF or BRAF. However, we did not continue this experiment beyond an initial attempt that was unsuccessful at consistently expressing the constructs as described in the Registered Report, thus requiring further optimization, and instead focused our efforts toward attempting to complete other replication experiments.
 
-## Partial replication: COT drives resistance to RAF inhibition through MAP kinase pathway reactivation
+### Partial replication: COT drives resistance to RAF inhibition through MAP kinase pathway reactivation
 
 As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Sharma et al., 2016b) that described how we intended to replicate selected experiments from the paper ‘COT drives resistance to RAF inhibition through MAP kinase pathway reactivation’ (Johannessen et al., 2010). Since then it has been reported that while targeting multiple components of the RAF–MEK–ERK pathway yield initial tumor regression in most patients with BRAF(V600E) mutation, resistance often still occurs (Chatterjee and Bivona, 2019; Yu et al., 2019). Recent literature highlights the success of combining druggable targets with immunotherapy (Yu et al., 2019).
 
 We independently replicated an experiment to test if BRAF(V600E) cell lines expressing elevated levels of MAP3K8 are resistant to cellular growth inhibition by the RAF inhibitor PLX4720. This is comparable to what was reported in Figure 3D of Johannessen et al., 2010 and described in Protocols 2 and 3 in the Registered Report (Sharma et al., 2016b). We intended to use OUMS-23 colon cancer cells, but were unable to propagate the cells despite troubleshooting with the supplier, so we switched to HT-29 colon cancer cells, which have high expression of MAP3K8 (Rouillard et al., 2016; Johannessen, personal communication). We intended to confirm MAP3K8 protein expression in the cell lines, but were unable to use the same antibody used in the original study, which was discontinued from Santa Cruz Biotechnology, and we observed many nonspecific bands when two different anti-MAP3K8 antibodies were tested (see methods). We found while A375 cells exhibited a robust response to PLX4720, the two cell lines with high MAP3K8 expression, RPMI-7951 and HT-29 resulted in half-maximal growth inhibition (GI50) values of 5 µM or higher (Figure 5A, Figure 5—figure supplement 1A), similar to the original study. To summarize, we found results that were in the same direction as the original study and statistically significant where predicted.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cellular dose–response curves for RAF inhibitor (PLX4720) in BRAF(V600E) cell lines, A375, HT29, and RPMI-7951. Absolute half-maximum growth inhibition (GI50) values (µM) were determined for each biological repeat. GI50 values unable to be accurately estimated are reported as either >10 µM, which was the highest dose tested. Data reported in Figure 3D of Johannessen et al., 2010 displayed as a single point (red triangle) for comparison. Where possible the mean and 95 % confidence interval (CI) of the replication data are shown. Planned comparison (Student’s t-test) between A375 and HT29 GI50 values: t(4) = 5.90, p = 0.0041; Cohen’s d = 4.82, 95% CI [1.21, 8.36]. (B) Quantification of Western blots of lysates from RPMI-7951 cells treated with DMSO or the indicated doses of MAP3K8 kinase inhibitor for 1 hr. Membranes were probed with phospho-MEK- (pMEK), total ERK- (ERK), phospho-ERK- (pERK), or total MEK (MEK)-specific antibodies. pMEK levels were normalized to ERK, and pERK levels were normalized to MEK, and then to DMSO for each biological repeat [n = 8]. Note: Normalization of pMEK to ERK and pERK to MEK was a recommendation made by reviewers of the Registered Report (Sharma et al., 2016b). Box and whisker plots with median represented as the line through the box and whiskers representing values within 1.5 interquartile range (IQR) of the first and third quartiles. Data reported in Figure 3I of Johannessen et al., 2010 is displayed as a single point (red triangle) for comparison. One-way analysis of variance (ANOVA) on pMEK/ERK data: F(3,28) = 1.93, uncorrected p = 0.147, Bonferroni corrected p = 0.295; pERK/MEK data: F(3,28) = 1.04, uncorrected p = 0.392, Bonferroni corrected p = 0.784. Planned one-sample t-test between 20 µM and a constant of 1 (DMSO-treated cells) on pMEK/ERK data: t(7) = 2.83, uncorrected p = 0.025, Bonferroni corrected p = 0.051; Cohen’s d = −1.00, 95% CI [−1.84, −0.12]; pERK/MEK data: t(7) = 2.65, uncorrected p = 0.033, Bonferroni corrected p = 0.066; Cohen’s d = −0.94, 95% CI [−1.76, −0.07]. Additional details can be found at https://osf.io/lmhjg/.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) This is the same experiment as in Figure 5A. The dose–response curve of each biological repeat [n = 3] for A375, HT29, and RPMI-7951 cells treated with PLX4720 for this replication attempt are plotted. (B) This is the same experiment as in Figure 5B with the indicated doses of MAP3K8 kinase inhibitor. Representative Western blots probed with pMEK- (S217/S221), pERK- (T202/Y204), total ERK-, or total MEK-specific antibodies. Vinculin (VINC) served as loading control. Relative pMEK/ERK and pERK/MEK expressions are reported below pMEK and pERK images, respectively. Additional details can be found at https://osf.io/lmhjg/.
+
 To test if MAP3K8 contributes to MEK/ERK activation in BRAF(V600E) cells, we treated RPMI-7591 cells with a small molecule MAP3K8 kinase inhibitor. This is comparable to what was reported in Figure 3I of Johannessen et al., 2010 and described in Protocol 4 in the Registered Report (Sharma et al., 2016b). We found a dose-dependent activation of MEK and ERK phosphorylation, while the original study reported a dose-dependent suppression of MEK and ERK phosphorylation (Figure 5B, Figure 5—figure supplement 1B). To summarize, we found results that were in the opposite direction as the original study and not statistically significant.
 
 We also attempted to replicate experiments further integrating the impact of ectopically expressed MAP3K8 in A375 cells to test if combinatorial MAPK pathway inhibition can override resistance to single agents. However, due to resource constraints we suspended the continuation of this replication attempt after an initial attempt was unsuccessful at expressing the constructs as described in the Registered Report, thus requiring further optimization.
 
-## Partial replication: senescence surveillance of premalignant hepatocytes limits liver cancer development
+### Partial replication: senescence surveillance of premalignant hepatocytes limits liver cancer development
 
 As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Raouf et al., 2015) that described how we intended to replicate selected experiments from the paper ‘Senescence surveillance of pre-malignant hepatocytes limits liver cancer development’ (Kang et al., 2011). Since then a study reported tumor-specific CD8 T cells arose independently of CD4 T cells, but needed Th1-polarized CD4 T cells to effectively suppress tumorigenesis supporting the crucial role CD4 T cells play in tumor suppression by immunosurveillance (Knocke et al., 2016).
 
@@ -119,23 +135,549 @@ We attempted to independently replicate experiments that tested the immune clear
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig6-v2.jpg)
 
-**Figure 6.:** Kang et al., 2011.(A–F) Quantification of Nras-, p21-, and p16-positive cells on liver sections from C.B-17 or C.B-17 SCID/beige mice six or 30 days after intrahepatic delivery of Nras or G12VNras. Percent positive cells were determined for each mouse. Five mice per group, except C.B-17 with G12V/D38ANras at 6 days and C.B-17 SCID/beige with G12VNras at 6 days, which had 6 mice per group. (G12V/D38AG) Quantification of Nras-positive cells on liver sections from wild-type (BL/6) or CD4−/− mice 12 days after intrahepatic delivery of Nras or G12VNras. Percent positive cells were determined for each mouse (n = 5 per group). Additional details can be found at G12V/D38Ahttps://osf.io/82nfe/.
+**Figure 6.:** (A–F) Quantification of Nras-, p21-, and p16-positive cells on liver sections from C.B-17 or C.B-17 SCID/beige mice six or 30 days after intrahepatic delivery of NrasG12V or NrasG12V/D38A. Percent positive cells were determined for each mouse. Five mice per group, except C.B-17 with NrasG12V at 6 days and C.B-17 SCID/beige with NrasG12V/D38A at 6 days, which had 6 mice per group. (G) Quantification of Nras-positive cells on liver sections from wild-type (BL/6) or CD4−/− mice 12 days after intrahepatic delivery of NrasG12V or NrasG12V/D38A. Percent positive cells were determined for each mouse (n = 5 per group). Additional details can be found at https://osf.io/82nfe/.
 
-## Partial replication: isocitrate dehydrogenase mutation impairs histone demethylation and results in a block to cell differentiation
+### Partial replication: isocitrate dehydrogenase mutation impairs histone demethylation and results in a block to cell differentiation
 
 Increases in methylation and blocks in differentiation caused by mutant isocitrate dehydrogenase (IDH) proteins have been described in human carcinogenesis (Han et al., 2019; Waitkus et al., 2018). As part of the Reproducibility Project: Cancer Biology, we published a Registered Report (Richarson et al., 2016) that described how we intended to replicate selected experiments from the paper ‘IDH mutation impairs histone demethylation and results in a block to cell differentiation’ (Lu et al., 2012).
 
 We independently replicated an experiment to test if expression of IDH mutations are associated with increased levels of various methylation markers and correlated with increased intracellular levels of the oncometabolite 2HG. HEK293T cells expressing ectopic wild-type IDH1, R132H mutant IDH1, wild-type IDH2, R172K mutant IDH2, or vector control were analyzed for accumulation of the metabolite 2HG by gas chromatography–mass spectrometry (GC–MS) and histone extracts were analyzed by Western blot for methylation status. This experiment is similar to what was reported in Figure 1B and Supplemental Figure 1 of Lu et al., 2012 and described in Protocol 1 in the Registered Report (Richarson et al., 2016). We found 2HG levels in cells expressing mutant IDH to be ~200 times the levels detected in wild-type IDH (Figure 7A, Figure 7—figure supplement 1B). This compares to the original study, which reported an ~10–50 times increase in intracellular 2HG levels in cells expressing mutant compared to wild-type IDH (Lu et al., 2012). We also found a small, and not statistically significant, increase in histone methylation (Figure 7B, Figure 7—figure supplement 1A) that was not correlated with the observed 2HG levels. For comparison, the original study reported mutant IDH led to increased histone methylation compared to wild-type enzymes that were correlated with the intracellular 2HG levels (Lu et al., 2012). A meta-analysis using a random-effects model was performed for the histone methylation levels and the correlation with 2HG levels. The direction of the effects in the original study and this replication were in the same direction; however, the effect size point estimate of each study was not within the 95 % confidence interval (CI) of the other study, except for the comparison of H3K36me3 (Figure 7—figure supplement 2). The meta-analyses were not statistically significant. To summarize, we found results that were in the same direction as the original study and not statistically significant where predicted.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig7-v2.jpg)
+
+**Figure 7.:** (A) HEK293T cells transfected with wild-type (WT) or the indicated mutant of IDH1 or IDH2, or empty vector, were analyzed for intracellular metabolites 72 hr after transfection by gas chromatography–mass spectrometry (GC–MS). Quantitation of 2HG single intensity relative to glutamate was determined using total ion chromatograms (TIC) for each biological repeat (n = 6). Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 interquartile range (IQR) of the first and third quartiles. Means as black dot and bold error bars represent 95% CI. Data estimated from the representative experiment reported in Figure 1B of Lu et al., 2012 is displayed as a single point (red circle) for comparison. Statistical analysis was performed on log10-transformed data generated during this replication attempt. One-way analysis of variance (ANOVA) of IDH1 and IDH2 groups: F(3, 20) = 56.8, p = 5.73 × 10−10. Planned contrasts between IDH1 WT and IDH1 R132H: t(20) = 8.33, uncorrected p = 6.23 × 10−8, Bonferroni corrected p = 1.25 × 10−7, Cohen’s d = 4.81, 95% CI [2.42, 7.15]; IDH2 WT and IDH2 R172K: t(20) = 9.35, uncorrected p = 9.71 × 10−9, Bonferroni corrected p = 1.94 × 10−8, Cohen’s d = 5.40, 95% CI [2.79, 7.96]. (B) Western blot analysis for HEK293T cells transfected with WT or the indicated mutant of IDH1 or IDH2, or empty vector. Methylation status from histone extracts of the indicated markers were normalized to H3 and then to vector for each biological repeat (n = 6). Box and whisker plot with median represented as the line through the box and whiskers representing values within 1.5 IQR of the first and third quartiles. For each marker a one-way analysis of variance (ANOVA; or Kruskal–Wallis) was performed on IDH1 and IDH2 groups and the correlation with 2HG levels in A was performed. H3K4me2: H(3) = 0.367, uncorrected p = 0.947, Bonferroni corrected p > 0.99; correlation with 2HG: t(12) = 1.12, uncorrected p = 0.275, Bonferroni corrected p > 0.99. H3K9me2: F(3,20) = 0.793, uncorrected p = 0.512, Bonferroni corrected p > 0.99; correlation with 2HG: t(12) = 1.53, uncorrected p = 0.140, Bonferroni corrected p = 0.699. H3K9me3: F(3,20) = 0.515, uncorrected p = 0.676, Bonferroni corrected p > 0.99; correlation with 2HG: t(12) = 1.35, uncorrected p = 0.191, Bonferroni corrected p = 0.957. H3K36me3: F(3,20) = 0.248, uncorrected p = 0.862, Bonferroni corrected p > 0.99; correlation with 2HG: t(12) = 0.725, uncorrected p = 0.476, Bonferroni corrected p > 0.99. H3K79me2: H(3) = 1.55, uncorrected p = 0.672, Bonferroni corrected p > 0.99; correlation with 2HG: t(12) = 0.752, uncorrected p = 0.460, Bonferroni corrected p > 0.99. Planned contrasts for H3K9me2 between IDH1 WT and IDH1 R132H: t(20) = −0.238, uncorrected p = 0.815, Bonferroni corrected p > 0.99; IDH2 WT and IDH2 R172K: t(20) = 1.31, uncorrected p = 0.203, Bonferroni corrected p > 0.99. (C) 3T3-L1 cells were transduced to express the indicated proteins and analyzed and presented in the same way as A. Number of independent biological repeats (n = 5). Data estimated from the representative experiment reported in Figure 2A of Lu et al., 2012 is displayed as a single point (red circle) for comparison. Statistical analysis was performed on log10-transformed data generated during this replication attempt. Student’s t-test of IDH2 WT and IDH2 R172K: t(8) = 14.3, p = 5.49 × 10−7, Cohen’s d = 9.06, 95% CI [4.53, 13.57]. Additional details can be found at https://osf.io/vfsbo/.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) This is the same experiment as in Figure 7B. Representative Western blots (experiment performed independently six times) of histone extractions from HEK293T cells transfected with the indicated plasmids. Membranes were probed with the indicated antibodies (total H3 served as loading control). (B) This is the same experiment as in Figure 7A. Representative total ion chromatograms (TIC) from samples harvested 72 hr after transfection for the indicated transfected HEK293T cells. The detection of 2HG and glutamate are shown and based on spectra of derivatized commercial standards. (C) This is the same experiment as in Figure 7C. Representative Western blots (experiment performed independently six times) of histone extractions from 3T3-L1 cells transduced to express the indicated proteins. Membranes were probed with IDH1 and IDH2. (D) This is the same experiment as in Figure 7C. Representative TIC from samples harvested 7 days after transduction to express the indicated proteins in 3T-L1 cells. The detection of 2HG and glutamate are shown and based on spectra of derivatized commercial standards. Additional details can be found at https://osf.io/vfsbo/.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73430/elife-73430-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Meta-analysis of each effect reported in Figure 7. Effect size and 95 % confidence intervals are presented for Lu et al., 2012, this replication study (Reproducibility Project: Cancer Biology, RP:CB), and a random-effects meta-analysis of those two effects. The effect size r is a standardized measure of the correlation (strength and direction) of the association between two variables and Cohen’s d is a standardized difference between the two indicated measurements where a larger value indicates a difference in expression between the two conditions. (A) Meta-analysis p values: H3K4me3 expression (p = 0.235), H3K9me2 expression (p = 0.117), H3K9me3 expression (p = 0.135), H3K36me3 expression (p = 0.133), and H3K79me2 expression (p = 0.090). (B) Meta-analysis p values: H3K9me2 expression between IDH1 WT and IDH1 R132H (p = 0.398), and H3K9me2 expression between IDH2 WT and IDH2 R172K (p = 0.202). (C) Meta-analysis p values: correlation of H3K4me3 expression and 2HG (p = 0.122), correlation of H3K9me2 expression and 2HG (p = 0.092), correlation of H3K9me3 expression and 2HG (p = 0.081), correlation of H3K36me3 expression and 2HG (p = 0.181), and correlation of H3K79me2 expression and 2HG (p = 0.185). Sample sizes used in Lu et al., 2012 and RP:CB are reported under the study name. Additional details can be found at https://osf.io/vfsbo/.
+
 We also attempted to replicate an experiment to test if expression of mutant IDH2 in 3T3-L1 cells is associated with a block in differentiation to adipocytes. This is similar to what was reported in Figure 2A, B of Lu et al., 2012 and described in Protocol 2 in the Registered Report (Richarson et al., 2016). We found 2HG levels in cells expressing mutant IDH2 to be ~1000 times the levels detected in wild-type IDH2 (Figure 7C, Figure 7—figure supplement 2C, D). This compares to the original study, which reported an ~50 times increase in intracellular 2HG levels in cells expressing mutant compared to wild-type IDH2 (Lu et al., 2012). The evaluation of differentiation, by Oil-Red-O staining and adipocyte marker expression, was uninterpretable though due to a lack of differentiation induced in control conditions, potentially due to the cells having lost their potential to differentiate (despite a successful pilot assay that resulted in differentiation by Oil-Red-O staining), or other methodological factors such as timing and staining procedure. We did not continue this experiment, or another experiment that tested the impact of the histone demethylase KDM4C on methylation and differentiation (Protocol 3 in the Registered Report), beyond this point and instead focused our efforts toward attempting to complete other replication experiments. To summarize, this replication attempt was not further continued and thus these data are unable to address whether mutant IDH2 is correlated with a block in differentiation and if this effect was mediated by the histone demethylase KDM4C.
 
-## Conclusion
+### Conclusion
 
 The details of attempting to replicate the experiments described above were combined with the rest of the experiments attempted as part of the Reproducibility Project: Cancer Biology to summarize the process of conducting this project and the challenges confronted (Errington et al., 2021a). Similarly, the outcomes from the completed experiments were aggregated with those from other replications from the project to examine the replicability of cancer biology research (Errington et al., 2021b). Not all replication experiments attempted were completed as resources were balanced while attempting to complete as many replication experiments as possible as part of the Reproducibility Project: Cancer Biology. A decision to stop an experiment does not necessarily indicate the original results are not replicable, as it is possible that devoting more project resources to any one experiment would have ultimately resolved the challenges. This includes overcoming mundane technical challenges such as optimization of techniques (e.g., transfection conditions) or overcoming unanticipated methodological challenges such as changing the protocol or reagents to account for an experimental model system producing unexpected outcomes (e.g., low expression level of an exogenous protein). Likewise, a decision to end an experiment does not indicate the original finding is replicable as it is possible that the challenges indicate an underappreciation of the conditions necessary for repeating the finding. While not all of the replication experiments attempted were completed, and thus are unable to provide outcomes to compare with the original published findings, sharing these incomplete experiments might provide useful information, such as preventing duplication by enabling others to build on these attempts and to extract the implicit information entwined with the observations. Sharing these outcomes also provides transparency of what was attempted and observed for the experiments described in the Registered Reports that were not fully completed and submitted as a Replication Study. Additionally, while some experiments were uninterpretable, because the outcomes were unexpected due to methodological challenges, it is all too easy to conflate an experiment as ‘not working’ when unexpected or null results are observed. This can be addressed by predefining the outcome-independent criteria for whether an experiment should be included, or excluded, such as in a preregistration (Neves and Amaral, 2020). However, this requires that all outcomes are shared, which is less common for null or incomplete findings (Franco et al., 2014). The Registered Reports publication format is one way to accomplish this, as are a growing number of publication and reporting platforms (e.g., preprints) enabling researchers to disseminate their research outcomes regardless of whether it was an exciting finding or a perplexing attempt (Bespalov et al., 2019; Sarabipour et al., 2019). Much can be learned by openly sharing not only what we found, but what we tried along the way.
 
 ## Materials and methods
 
-## Partial replication: a chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>PC9</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# 90071810;RRID:CVCL_B260</td>
+      <td>lot# 14A030</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>erlotinib</td>
+      <td>Cayman Chemical</td>
+      <td>cat# 10,483</td>
+      <td>lot# 0459700-31</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>erlotinib-HCl</td>
+      <td>LC Laboratories</td>
+      <td>cat# E-4007</td>
+      <td>lot# BBE-108</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellometer Auto T4 Software</td>
+      <td>Nexcelom Bioscience</td>
+      <td>RRID:SCR_021656</td>
+      <td>Version 3.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Software</td>
+      <td>LI-COR Biosciences</td>
+      <td>RRID:SCR_015795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit-anti-phospho-EGFR (Y1068)</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 3777; clone D7A5;RRID:AB_2096270</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GAPDH</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>cat# MA5-15738; clone GA1R; RRID:AB_10977387</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD-conjugated donkey anti-mouse</td>
+      <td>LI-COR Biosciences</td>
+      <td>cat# 926-68072;RRID:AB_10953628</td>
+      <td>1:15,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW-conjugated donkey anti-rabbit</td>
+      <td>LI-COR Biosciences</td>
+      <td>cat# 926-32213;RRID:AB_621848</td>
+      <td>1:15,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>2,100 Bioanalyzer Software</td>
+      <td>Agilent Technologies</td>
+      <td>RRID:SCR_019389</td>
+      <td>Version 1.03</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>U87MG</td>
+      <td>ATCC</td>
+      <td>cat#HTB-14; RRID:CVCL_0022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>HMVEC</td>
+      <td>Lonza</td>
+      <td>CC-2516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>GSC83</td>
+      <td>doi:10.1038/nature09557</td>
+      <td>RRID:CVCL_A9TL</td>
+      <td>Shared by Ricci-Vitiani lab, Istituto Superiore di Sanità</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>HMEC</td>
+      <td>Applied Biological Materials</td>
+      <td>cat# T0454; RRID:CVCL_B0CI</td>
+      <td>lot# RZ824921; infected with SV40 large T and small T antigen</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRetroX-IRES-ZsGreen1-empty vector</td>
+      <td>Clontech</td>
+      <td>cat# 632,520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRetroX-FLAG-GNAO1WT-IRES-ZsGreen1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRetroX-FLAG-GNAO1R243H-IRES-ZsGreen1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>Phoenix</td>
+      <td>ATCC</td>
+      <td>cat# CRL-3213; RRID:CVCL_H716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# F1804; clone M2; RRID:AB_262044</td>
+      <td>1:500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-β-ACTIN</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# A5441; clone AC-15; RRID:AB_476744</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated rabbit anti-mouse</td>
+      <td>Abcam</td>
+      <td>cat# ab6728; RRID:AB_955440</td>
+      <td>1:10,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FACSDiva</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_016722</td>
+      <td>Version 6.1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>doi:10.1038/nmeth.2089</td>
+      <td>RRID:SCR_003070</td>
+      <td>Version 1.51p</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>D04</td>
+      <td>ABN Cell Line Bank, QIMR Berghofer Medical Research Institute</td>
+      <td>RRID:CVCL_H604</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>A375</td>
+      <td>ATCC</td>
+      <td>cat# CRL-1619; RRID:CVCL_0132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>sorafenib</td>
+      <td>Selleckchem</td>
+      <td>cat# S7397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB590885</td>
+      <td>Selleckchem</td>
+      <td>cat# S2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PD184352</td>
+      <td>Selleckchem</td>
+      <td>cat# S1020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-phospho-ERK1/2 (T202/Y204)</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 9106; clone E10; RRID:AB_331768</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-ERK1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 9102; RRID:AB_330744</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>RPMI-7951</td>
+      <td>ATCC</td>
+      <td>cat# HTB-66; RRID:CVCL_1666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>OUMS-23</td>
+      <td>JCRB</td>
+      <td>cat# JCRB1022; RRID:CVCL_3088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>HT-29</td>
+      <td>ATCC</td>
+      <td>cat# HTB-38; RRID:CVCL_0320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PLX4720</td>
+      <td>Selleckchem</td>
+      <td>cat# S1152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MAP3K8 kinase inhibitor</td>
+      <td>EMD Millipore</td>
+      <td>cat# 616,373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-phospho MEK1/2 (S217/221)</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 9154; clone 41G9; RRID:AB_2138017</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-ERK1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 4696; clone L34F12; RRID:AB_390780</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-MEK1/2</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 8727; clone D1A5; RRID:AB_10829473</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Vinculin</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# V4139; RRID:AB_262053</td>
+      <td>1:20,000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-rabbit</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 7074; RRID:AB_2099233</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated horse anti-mouse</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 7076; RRID:AB_330924</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C.BKa-lghb/lcrCrl, female)</td>
+      <td>C.B-17 wild-type</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_CRL:251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, CB17.Cg-PrkdcscidLystbg/Crl, female)</td>
+      <td>SCID/beige</td>
+      <td>Charles River</td>
+      <td>RRID:IMSR_CRL:250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, C57BL/6 J, female)</td>
+      <td>BL/6 wild-type</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, B6.129S2-Cd4tm1Mak/J, female)</td>
+      <td>CD4−/−</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002663</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPGK-SB13</td>
+      <td>doi:10.1038/nature10599</td>
+      <td></td>
+      <td>Shared by Zender lab, University of Tuebingen</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT/CaggsNrasG12V</td>
+      <td>doi:10.1038/nature10599</td>
+      <td></td>
+      <td>Shared by Zender lab, University of Tuebingen</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT/CaggsNrasG12V/D38A</td>
+      <td>doi:10.1038/nature10599</td>
+      <td></td>
+      <td>Shared by Zender lab, University of Tuebingen</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-p16</td>
+      <td>Abcam</td>
+      <td>cat# ab54210; clone 2D9A12; RRID:AB_881819</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-p21</td>
+      <td>BD Biosciences</td>
+      <td>cat# 556431; clone SXM30; RRID:AB_396415</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Nras</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>cat# sc-31; clone F155; RRID:AB_628041</td>
+      <td>1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse IgG1 isotype control</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat# M5284; clone MOPC21; RRID:AB_1163685</td>
+      <td>1:50 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotinylated goat anti-mouse</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ted goat anti-mouse (Thermo Fisher Scientific)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CaseViewer</td>
+      <td>3DHISTECH</td>
+      <td>RRID:SCR_017654</td>
+      <td>Version 2.2</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, female)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>cat# CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus, male)</td>
+      <td>3T3-L1</td>
+      <td>ATCC</td>
+      <td>cat# CL-173; RRID:CVCL_0123</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPC empty vector</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPC-IDH1 wildtype</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPC-IDH1R132H</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPC-IDH2 wildtype</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPC-IDH2R172K</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3</td>
+      <td>Cell Signaling Technology,</td>
+      <td>cat# 4499; clone D1H2; RRID:AB_10544537</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3K4me3</td>
+      <td>Millipore</td>
+      <td>cat# 17–614; RRID:AB_11212770</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3K36me3</td>
+      <td>Abcam</td>
+      <td>cat# ab9050; RRID:AB_306966</td>
+      <td>1 µg/ml dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3K79me2</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 9757; RRID:AB_2118448</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3K9me2</td>
+      <td>Cell Signaling Technology</td>
+      <td>cat# 9753; RRID:AB_659848</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-H3K9me3</td>
+      <td>Abcam</td>
+      <td>cat# ab8898; RRID:AB_306848</td>
+      <td>1 µg/ml dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-IDH1</td>
+      <td>Proteintech</td>
+      <td>cat# 12332-1-AP; RRID:AB_2123159</td>
+      <td>1:1500 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-IDH2</td>
+      <td>Abcam</td>
+      <td>cat# ab55271; clone 5F11; RRID:AB_943793</td>
+      <td>1 µg/ml dilution</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R project for statistical computing</td>
+      <td>https://www.r-project.org</td>
+      <td>RRID:SCR_001905</td>
+      <td>Version 4.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>metafor</td>
+      <td>doi:10.18637/jss.v036.i03</td>
+      <td>RRID:SCR_003450</td>
+      <td>Version 3.0-2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Partial replication: a chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations
 
 A detailed description of all protocols can be found in the Registered Report (Haven et al., 2016) with detailed protocol information for attempted experiments available on OSF (https://osf.io/xbign/). A summary of methodological details of results reported are described below.
 
@@ -147,13 +689,13 @@ Cell viability assays were performed after plating cells at 2500 cells/well in a
 
 Western blot analysis was performed on lysate from cells treated with various doses of erlotinib for 2 hr. Cells were harvested in ice-cold radioimmunoprecipitation assay (RIPA) buffer (Sigma-Aldrich, cat# R0278) supplemented with 1× Complete Mini Protease Inhibitor Cocktail (Roche Diagnostics, cat# 11836153001), 1× Halt Phosphatase Inhibitor Cocktail (Thermo Scientific, cat# 1862495), and 1 mM PMSF (Sigma-Aldrich, cat# 93482). 25 µg of cell lysate was separated in a 4–12% Bis-Tris gel using 1× MOPS Running Buffer as described in the Registered Report. Gels were transferred to nitrocellulose, blocked for 1 hr at room temperature with 5% wt/vol nonfat dry milk in 1× Tris-buffered saline (TBS) with 0.1% Tween-20 (TBST). Membranes were probed overnight at 4℃ with rabbit anti-phospho-EGFR (Y1068) (Cell Signaling Technology, cat# 3777, clone D7A5, RRID:AB_2096270) at 1:1000 dilution or mouse anti-GAPDH (Thermo Fisher Scientific, cat# MA5-15738, clone GA1R, RRID:AB_10977387) at 1:2000 dilution in 1% bovine serum albumin (BSA)/TBST. Following 3× 5 min washes with TBST, membranes were incubated with the appropriate secondary antibody for 1 hr at room temperature: IRDye 680RD-conjugated donkey anti-mouse (LI-COR, cat# 926-68072, RRID:AB_10953628) or IRDye 800CW-conjugated donkey anti-rabbit (LI-COR, cat# 926-32213, RRID:AB_621848) at 1:15,000 dilution in 1% wt/vol BSA/TBST. Membranes were scanned with an Odyssey CLx Infrared Imaging System and Image Studio Software (LI-COR Biosciences).
 
-## Partial replication: tumor vascularization via endothelial differentiation of GSCs
+### Partial replication: tumor vascularization via endothelial differentiation of GSCs
 
 A detailed description of all protocols can be found in the Registered Report (Chroscinski et al., 2015) with detailed protocol information for attempted experiments available on OSF (https://osf.io/mpyvx/). A summary of methodological details of results reported are described below.
 
 U87MG cells (ATCC, cat#HTB-14, RRID:CVCL_0022) were grown in DMEM supplemented with 4.5 g/l glucose, 10% FBS, and 1% penicillin/streptomycin at 37℃ in a humidified atmosphere at 5% CO2. HMVEC cells (Lonza, cat# CC-2516) were grown in endothelial growth medium-2 microvascular (Lonza, cat# CC-3202). GSC83 cells (RRID:CVCL_A9TL), which were used in the original study were shared by Dr. Lucia Ricci-Vitiani (Istituto Superiore di Sanità) and were grown in stem cell medium as specified in the Registered Report. All cells were confirmed to be free of mycoplasma contamination (Sigma-Aldrich, cat# MP0035) as well as confirmed to be the indicated cells by STR DNA profiling using tests performed by DDC Medical (Fairfield, OH). Total RNA was extracted from cells using TRI reagent and reverse transcribed to cDNA using a First-strand cDNA synthesis Kit (GE Healthcare, cat# GE27-9261-01) following the manufacturer’s instructions. qPCR reactions were performed in technical triplicate with the TaqMan probes and cycling conditions described in the Registered Report using a 7,500 Fast Real-Time PCR system (Applied Biosystems, RRID:SCR_018051).
 
-## Partial replication: diverse somatic mutation patterns and pathway alterations in human cancers
+### Partial replication: diverse somatic mutation patterns and pathway alterations in human cancers
 
 A detailed description of all protocols can be found in the Registered Report (Sharma et al., 2016a) with detailed protocol information for attempted experiments available on OSF (https://osf.io/jpeqg/). A summary of methodological details of results reported are described below.
 
@@ -161,7 +703,7 @@ HMEC cells (Applied Biological Materials, cat# T0454, RRID:CVCL_B0CI) are a hTER
 
 Western blot analysis was performed as described in the Registered Report and probed with mouse anti-FLAG (Sigma-Aldrich, cat# F1804, clone M2, RRID:AB_262044) at 1:500 dilution or mouse anti-β-ACTIN (Sigma-Aldrich cat# A5441, clone AC-15, RRID:AB_476744) at 1:1000 dilution. Followed by incubation with the appropriate secondary antibody: horseradish peroxidase (HRP)-conjugated rabbit anti-mouse (abcam, cat# ab6728, RRID:AB_955440) at 1:10,000 dilution. Anchorage-independent colony formation assays were performed as described in the Registered Report using ImageJ software (RRID:SCR_003070), version 1.51 p (Schneider et al., 2012).
 
-## Partial replication: kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF
+### Partial replication: kinase-dead BRAF and oncogenic RAS cooperate to drive tumor progression through CRAF
 
 A detailed description of all protocols can be found in the Registered Report (Bhargava et al., 2016a) with detailed protocol information for attempted experiments available on OSF (https://osf.io/b1aw6/). A summary of methodological details of results reported are described below.
 
@@ -169,7 +711,7 @@ D04 cells (ABN Cell Line Bank, QIMR Berghofer Medical Research Institute, RRID:C
 
 A375 or D04 cells were treated either with DMSO, 10 µM sorafenib (Selleckchem, cat# S7397), 1 µM SB590885 (Selleckchem, cat# S2220), or 1 µM PD184352 (Selleckchem, cat# S1020) for 4 hr and then harvested for Western blot analysis. Western blot analysis was performed as described in the Registered Report and 7–12 µg of lysate were probed with mouse anti-phospho-ERK1/2 (T202/Y204) (Cell Signaling Technology, cat# 9106, clone E10, RRID:AB_331768) at 1:1000 dilution or rabbit anti-ERK1/2 (Cell Signaling Technology, cat# 9102, RRID:AB_330744) at 1:1000 dilution. Followed by incubation with the appropriate HRP-conjugated secondary antibody. Quantification was performed using ImageJ software (RRID:SCR_003070), version 1.51 p (Schneider et al., 2012).
 
-## Partial replication: COT drives resistance to RAF inhibition through MAP kinase pathway reactivation
+### Partial replication: COT drives resistance to RAF inhibition through MAP kinase pathway reactivation
 
 A detailed description of all protocols can be found in the Registered Report (Sharma et al., 2016b) with detailed protocol information for attempted experiments available on OSF (https://osf.io/lmhjg/). A summary of methodological details of results reported are described below.
 
@@ -179,7 +721,7 @@ Cellular dose–response assays were performed with empirically determined seedi
 
 RPMI-7951 cells were treated either with DMSO or various doses of MAP3K8 kinase inhibitor (EMD Millipore, cat# 616373) for 1 hr and then harvested for Western blot analysis as described in the Registered Report. 20 µg of lysate was probed with mouse anti-phospho-ERK1/2 (T202/Y204) (Cell Signaling Technology, cat# 9106, clone E10, RRID:AB_331768) at 1:1000 dilution, rabbit anti-phospho MEK1/2 (S217/221) (Cell Signaling Technology, cat# 9154, clone 41G9, RRID:AB_2138017) at 1:1000 dilution, mouse anti-ERK1/2 (Cell Signaling Technology, cat# 4696, clone L34F12, RRID:AB_390780) at 1:1000 dilution, rabbit anti-MEK1/2 (Cell Signaling Technology, cat# 8727, clone D1A5, RRID:AB_10829473) at 1:1000 dilution, or rabbit anti-Vinculin (Sigma-Aldrich, cat# V4139, RRID:AB_262053) at 1:20,000 dilution. Followed by incubation with the appropriate secondary antibody: HRP-conjugated goat anti-rabbit (Cell Signaling Technology, cat# 7074, RRID:AB_2099233) at 1:1000 or HRP-conjugated horse anti-mouse (Cell Signaling Technology, cat# 7076, RRID:AB_330924) at 1:1000. Quantification was performed using ImageJ software (RRID:SCR_003070), version 1.51 p (Schneider et al., 2012). RPMI-7951, A375, and HT-29 cells were also attempted to be probed with two rabbit anti-MAP3K8 antibodies (Signalway Antibody, cat# 33235, RRID:AB_2893080 and Thermo Fisher Scientific, cat# 701352, clone 3H18L5, RRID:AB_2532473), but many nonspecific bands were observed.
 
-## Partial replication: senescence surveillance of premalignant hepatocytes limits liver cancer development
+### Partial replication: senescence surveillance of premalignant hepatocytes limits liver cancer development
 
 A detailed description of all protocols can be found in the Registered Report (Raouf et al., 2015) with detailed protocol information for attempted experiments available on OSF (https://osf.io/82nfe/). A summary of methodological details of results reported are described below.
 
@@ -189,7 +731,7 @@ A pilot study was performed on seven mice. Due to difficulty in the smoothness o
 
 Following the pilot study, a total of 38 C.B-17 wild-type, 30 SCID/beige, 14 BL/6 wild-type, and 26 CD4−/− mice were randomized (stratified into strain-based groups and cohoused so that mice of the same strain receiving the same injections were housed together) to receive the pPGK-SB13 transposase vector and pT/CaggsNrasG12V or pT/CaggsNrasG12V/D38A transposon vector, which were used in the original study and shared by Dr. Lars Zender (University of Tuebingen), by hydrodynamic tail vein injection as described in the Registered Report. Injections were conducted blinded to the treatment (genotype and vectors) and occurred on nine separate days with between 3 and 14 mice injected on any given day. The following number of mice was excluded (C.B-17 wild-type injected with NrasG12V = 5, C.B-17 wild-type injected with NrasG12V/D38A = 12, SCID/beige injected with NrasG12V = 5, SCID/beige injected with NrasG12V/D38A = 4, BL/6 wild-type injected with NrasG12V = 2, BL/6 wild-type injected with NrasG12V/D38A = 2, CD4−/− injected with NrasG12V = 11, CD4−/− injected with NrasG12V/D38A = 5) because of unsuccessful injections (e.g., resistance) or death (n = 3). Mice were monitored and euthanized at 6, 12, or 30 days postinjection to harvest liver tissue, which were cleaned with phosphate-buffered aline (PBS) before fixation in 4 % paraformaldehyde at 4℃. Samples were shipped at 4℃ for immunohistochemistry and imaging and processed within 2 days of harvest. Immunohistochemistry was performed blinded to the sample condition (protocol: https://osf.io/4zsku/) with the following antibodies and stains: mouse anti-p16 (abcam, cat# ab54210, clone 2D9A12, RRID:AB_881819) at 1:50 dilution, mouse anti-p21 (BD Biosciences, cat# 556431, clone SXM30, RRID:AB_396415) at 1:50 dilution, mouse anti-Nras (Santa Cruz Biotechnology, cat# sc-31, clone F155, RRID:AB_628041) at 1:100 dilution, mouse IgG1 isotype control (Sigma-Aldrich, cat# M5284, clone MOPC21, RRID:AB_1163685) at 1:50 dilution, biotinylated goat anti-mouse (Thermo Fisher Scientific, cat# TM-060-BN, RRID:AB_716945), streptavidin–HRP conjugate (Sigma-Aldrich, cat# RPN1231VS), 3,3′ diaminobenzidine (DAB) substrate kit (Abcam, cat# ab64238), and Mayer’s hematoxylin (Electron Microscopy Sciences, cat# 26043-05). Five random fields from two stained liver sections from each mouse liver and staining condition were blindly evaluated to count the number of positive cells using CaseViewer (3DHISTECH, RRID:SCR_017654), version 2.2.
 
-## Partial replication: IDH mutation impairs histone demethylation and results in a block to cell differentiation
+### Partial replication: IDH mutation impairs histone demethylation and results in a block to cell differentiation
 
 A detailed description of all protocols can be found in the Registered Report (Richarson et al., 2016) with detailed protocol information for attempted experiments available on OSF (https://osf.io/vfsbo/). A summary of methodological details of results reported are described below.
 
@@ -201,6 +743,6 @@ To generate retrovirus, HEK293T cells were transfected with pLPC vector, pLPC-ID
 
 Metabolites were extracted from cells after washing with ice-cold PBS by adding ice-cold 80 % methanol containing 20 µM L-norvaline and incubating for 20 min (1.0 ml for a 10 cm dish). Plates were thawed at room temperature and cells were scraped and extracts transferred to microcentrifuge tubes. Chloroform was added (0.5 ml) and samples were spun at 14,000 × g for 20 min at 4 °C. The upper phase was collected and samples were dried using a MiVac. Dried extracts were redissolved in a 1:1 mixture of acetonitrile and N-methyl-N-tert-butyl dimethyl silyl trifluoroacetamide (MTBSTFA) (60 µl). Samples were heated for 75 min at 75 °C. GC–MS analysis was conducted as described in the Registered Report. In parallel to the samples, a standard curve of known amounts of 2HG, L-glutamate, and L-norvaline were dried, derivatized, and run. 2HG m/z 433 and glutamate m/z 432 peaks were integrated using A GCMS-QP2010 Plus (Shimadzu Scientific Instruments), and the 2HG/glutamate peak area ratio was calculated. The metabolomics data are available at the NIH Common Fund’s Data Repository and Coordinating Center (supported by NIH grant, U01-DK097430) website (http://www.metabolomicsworkbench.org), where it has been assigned a Metabolomics Workbench Project ID: ST000904. The data can be accessed directly via its Project DOI: http://dx.doi.org/10.21228/M8H10W.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis and figure generation were performed with R software (RRID:SCR_001905), version 4.1.0 (R Development Core Team, 2021). All data, csv files, and analysis scripts are available on the OSF for each attempted replication (see figure legends for links). Confirmatory statistical analyses were preregistered before the experimental work began as outlined in the Registered Reports. Data were checked to ensure assumptions of statistical tests were met. When described in the results, the Bonferroni correction, to account for multiple testings, was applied to the alpha error or the p value. The Bonferroni corrected value was determined by dividing the uncorrected value (0.05) by the number of tests performed. Although the Bonferroni method is conservative, it was accounted for in the power calculations to ensure sample size was sufficient. A meta-analysis of a common original and replication effect size was performed with a random-effects model and the metafor R package (RRID:SCR_003450), version 3.0-2 (Viechtbauer, 2010). The original study data were extracted a priori from the published figures by estimating the value reported or shared by the original authors. The original summary data were published in the Registered Reports and were used in the power calculations to determine the sample size for this study.

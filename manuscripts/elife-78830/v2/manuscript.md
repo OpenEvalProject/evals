@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 College of Information Sciences and Technology, The Pennsylvania State University University Park United States
-2. https://ror.org/05d5mza29 Center for Open Science Charlottesville United States
-3. https://ror.org/04p491231 Department of Psychology and the Social Life and Engineering Sciences Imaging Center, The Pennsylvania State University University Park United States
+1. College of Information Sciences and Technology, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+2. Center for Open Science Charlottesville United States ([ROR:05d5mza29](https://ror.org/05d5mza29))
+3. Department of Psychology and the Social Life and Engineering Sciences Imaging Center, The Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
@@ -24,7 +24,38 @@ The “replication crisis” in various areas of research has been widely discus
 
 In this article we discuss scientific progress in the clinical neurosciences, and focus on an example related to traumatic brain injury (TBI). Using this example, we argue that the rapid pace of work in this field, coupled with a failure to directly test and eliminate (falsify) hypotheses, has resulted in an expansive literature that lacks the precision necessary to advance science. Instead, we suggest that falsification – where one develops a strong hypothesis, along with methods that can test and refute this hypothesis – should be used more widely by researchers. The strength of a hypothesis refers to how specific and how refutable it is (Popper, 1963; see Table 1 for examples). We also argue for greater emphasis on testing and refuting strong hypotheses through a “team science” framework that allows us to address the heterogeneity in samples and/or methods that makes so many published findings tentative (Cwiek et al., 2021; Bryan et al., 2021).
 
-## Hyperconnectivity hypothesis in brain connectomics
+**Table 1.**
+ Examples of hypotheses of different strength.Exploratory research does not generally involve testing a hypothesis. A Testable Association is a weak hypothesis as it is difficult to refute. A Testable/Falsifiable Position is stronger, and a hypothesis that is Testable/Falsifiable with Alternative Finding is stronger still.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of research/hypothesis</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Exploratory</td>
+      <td>“We examine the neural correlates of cognitive deficit after brain injury implementing graph theoretical measures of whole brain neural networks”</td>
+    </tr>
+    <tr>
+      <td>Testable Association</td>
+      <td>“We hypothesize that graph theoretical measures of whole brain neural networks predict cognitive deficit after brain injury”</td>
+    </tr>
+    <tr>
+      <td>Testable/Falsifiable Position(offers possible mechanism and direction/magnitude of expected finding)</td>
+      <td>“We hypothesize that memory deficits during the first 6 months post injury are due to white matter connection loss and maintain a linear and positive relationship with increased global network path length”</td>
+    </tr>
+    <tr>
+      <td>Testable/Falsifiable with Alternative Finding(indicates how the hypothesis would and would not be supported)</td>
+      <td>“We hypothesize that memory deficits during the first 6 months post injury are due to white matter connection loss and maintain a linear and positive relationship with increased global network path length. Diminished global path length in individuals with greatest memory impairment would challenge this hypothesis”</td>
+    </tr>
+  </tbody>
+</table>
+
+### Hyperconnectivity hypothesis in brain connectomics
 
 To provide a specific example for the concerns outlined in this critique, we draw from the literature using resting-state fMRI methods and network analysis (typically graph theory, see Caeyenberghs et al., 2017 to examine systems-level plasticity in TBI). Beginning with one of the first papers combining functional neuroimaging and graph theory to examine network topology (Nakamura et al., 2009), an early observation in the study of TBI was that physical disruption of pathways due to focal and diffuse injury results in regional expansion (increase) in strength or number of functional connections. This initial finding was observed in a small longitudinal sample, but then similar effects were observed in other samples (Mayer et al., 2011; Bharath et al., 2015; Hillary et al., 2015; Johnson et al., 2012; Sharp et al., 2011; Iraji et al., 2016) and animal models of TBI (Harris et al., 2016). These findings were summarized in a paper by one of the current authors (FGH) outlining potential mechanisms for hyperconnectivity and its possible long-term consequences, including elevated metabolic demand, abnormal protein aggregation and, ultimately, increased risk for neurodegeneration (see Hillary and Grafman, 2017). The “hyperconnectivity response” to neurological insult was proposed as a possible biomarker for injury/recovery in a review summarizing findings in TBI brain connectomics (Caeyenberghs et al., 2017).
 
@@ -44,13 +75,13 @@ Overall, the TBI connectomics literature presents a clear example of a failure t
 
 The challenges outlined here, where there is a general failure to test and refute strong hypotheses, are not isolated to the TBI literature. Similar issues have been expressed in preclinical studies of stroke (Corbett et al., 2017) in the translational neurosciences where investigators maintain flexible theory and predictions to fit methodological limitations (Macleod et al., 2014; Pound and Ritskes-Hoitinga, 2018; Henderson et al., 2013), and in cancer research where only portions of published data sets provide support for hypotheses (Begley and Ellis, 2012). These factors have likely contributed to the repeated failure of clinical trials to move from animal models to successful Phase III interventions in clinical neuroscience (Tolchin et al., 2020). This example in the neurosciences also mirrors the longstanding problems of co-existing yet inconsistent theories in other disciplines like social psychology (see Watts, 2017).
 
-## Big data and computational methods as friend and foe
+### Big data and computational methods as friend and foe
 
 The big data revolution and advancement of computational modeling powered by enhanced computing infrastructure, on the one hand, has magnified concerns about scientific reliability through unprecedented flexibility in data exploration and analysis. Sufficiently large datasets provably contain spurious correlations and the number of these coincidental regularities increases as the dataset size increases (Calude and Longo, 2017; Graham and Spencer, 1990). Adding flexibility, predictive algorithms built on top of these large datasets typically involve a great number of investigator decisions – the combined effects of which undermine reliability of findings [for an example in connectivity modeling see Hallquist and Hillary, 2019]. Results of machine learning models, for example, are sensitive to model specification and parameter tuning (Pineau, 2021; Bouthillier et al., 2019; Cwiek et al., 2021). Computational approaches permit systematically combing through a great number of potential variables of interest and their statistical relationships (specifically, at scales which would be manually infeasible). Consequently, the burden of reliability falls upon the existence of strong, well-founded hypotheses with sufficient power and clear pre-analysis plans. It has even been suggested that null hypothesis significance testing should only be used in the neurosciences in support of pre-registered hypotheses based on strong theory (Szucs and Ioannidis, 2017).
 
 So, while there is concern that Big Data moves too fast and without the necessary constraints of theory, there is also emerging sentiment that the tremendous computational power coupled with unparalleled data access has the potential to transform some of the most basic scientific tenets, including introduction of a “third scientific pillar” to be added to theory and experimentation (see National Science Foundation, 2010). While this latest position received criticism (Andrews, 2012), computational methods have been reliably demonstrated to offer novel tools to address the replication crisis – an issue addressed in greater detail in “solutions” below.
 
-## Operating without anchors in a sea of high-volume science
+### Operating without anchors in a sea of high-volume science
 
 One challenge then is to determine where the bedrock of our field (our foundational knowledge) ends, and where areas of discovery that show promise (but have yet to be established) begin. By some measure neurology is a fledgling field in the biological sciences: the publication of De humani corporis fabrica by Vesalius in 1543 is often taken to mark the start of the study of human anatomy (Vesalius, 1555) Jean-Martin Charcot – often referred to as the “founder of neurology” – arrived approximately 300 years later (Zalc, 2018). If we simplify our task and start with the work of Milner, Geschwind and Luria in the 1950s, it is still a challenge to determine what is definitively known and what remains conjectural in the field. This challenge is amplified by the pressure on researchers to publish or perish (Macleod et al., 2014; Kiai, 2019; Lindner et al., 2018). The number of papers published per year continues to increase without asymptote (Bornmann and Mutz, 2015). When considering all papers published in the clinical neurosciences since 1900, more than 50% of the entire literature has been published in the last 10 years and 35% in the last five years (see supplementary figures S1a,b in Priestley et al., 2022). In the most extreme examples, “hyperprolific” lab directors publish a scientific paper roughly every 5 days (Ioannidis et al., 2018). It is legitimate to ask if the current proliferation of published findings has been matched by advances in scientific knowledge, or if the rate of publishing is outpacing scientific ingenuity (Sandström and van den Besselaar, 2016) and impeding the emergence of new theories (Chu and Evans, 2021).
 
@@ -64,17 +95,17 @@ There have even been efforts internationally to make science more deliberate thr
 
 ## Accelerating science by falsifying strong hypotheses
 
-## In praise of strong hypotheses
+### In praise of strong hypotheses
 
 Successful refutation of hypotheses ultimately depends upon a number of factors, not the least of which is the specificity of the hypothesis (Earp and Trafimow, 2015). A simple, but well-specified, hypothesis, brings greater leverage to science than a hypothesis that is far reaching with broad implications but cannot be directly tested or refuted. Even Popper wrote about concerns in the behavioral sciences regarding the rather general nature of hypotheses (Bartley, 1978), a sentiment that has recently been described as a “crisis” in psychological theory advancement (Rzhetsky et al., 2015). As discussed in the TBI connectomics example, hypotheses may have been broad and "exploratory" because authors remained conservative in their claims and conclusions because studies have been systematically under-powered (one report estimating power at 8%; Button et al., 2013). While exploration is a vital part of science (Figure 2), it must be recognized as scientific exploration as opposed to an empirical test of a hypothesis. Under-developed hypotheses have been argued to be at least one contributor to repeated failure of clinical trials in acute neurological interventions (Schwamm, 2014) yet, paradoxically, strong hypotheses may offer increased sensitivity to subtle effects even in small samples (Lazic, 2018).
 
 If we appeal to Popper, the strongest hypotheses make “risky predictions”, therefore prohibiting alternative explanations (see Popper, 1963). Moreover, the strongest hypotheses make clear at the outset the findings that would support the prediction, and also those that would not. Practically speaking this could take the form of teams of scientists developing opposing sets of hypotheses and then agreeing on both the experiments and the outcomes that would falsify one or both positions (what Nosek and Errington refer to as precommitment; Nosek and Errington, 2020b). This creates scenarios a priori where strong hypotheses are matched with methods that can provide clear tests. This approach is currently being applied in the “accelerating research on consciousness” programme funded by the Templeton World Charity Foundation. Strong hypotheses must be matched with methods that can provide clear tests, a coupling that cannot be overstated. In the brain imaging literature alone, there are poignant examples where flawed methods (or misunderstanding of their applications) has resulted in the repeated substantiation of spurious results (in structural covariance analysis see Carmon et al., 2020 in resting-state fMRI see Satterthwaite et al., 2012; Van Dijk et al., 2012).
 
-## Addressing heterogeneity to create strong hypotheses
+### Addressing heterogeneity to create strong hypotheses
 
 One approach to strengthen hypotheses is to address sample and methodological heterogeneity which plagues the clinical neurosciences (Benedict and Zivadinov, 2011; Bennett et al., 2019; Schrag et al., 2019; Zucchella et al., 2020; Yeates et al., 2019). To echo a recent review of work in the social sciences, the neurosciences require a “heterogeneity revolution” (Bryan et al., 2021). Returning again to the TBI connectomics example, investigators relied upon small datasets heterogeneous with respect to age of injury, time post injury, injury severity, and other factors that could critically influence the response of the neural system to injury. Strong hypotheses determine the influence of sample characteristics by directly modeling the effects of demographic and clinical factors (Bryan et al., 2021) as opposed to statistically manipulating the variance accounted for by them – including the widespread and longstanding misapplication of covariance statistics to “equilibrate” groups in case-control designs (Miller and Chapman, 2001; Zinbarg et al., 2010; Storandt and Hudson, 1975). Finally, strong hypotheses leverage the pace of our current science as an ally, where studies designed specifically to address sample heterogeneity can test the role of clinical and demographic predictors in brain plasticity and outcome.
 
-## Open science and sharing to bolster falsification efforts
+### Open science and sharing to bolster falsification efforts
 
 Addressing sample heterogeneity requires large diverse samples, and one way to achieve this is via data sharing. While data-sharing practices and availability differ across scientific disciplines (Tedersoo et al., 2021), there are enormous opportunities for sharing data in the clinical neurosciences (see, for example the Alzheimer’s Disease Neuroimaging Initiative (ADNI) and the Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) initiative), even in cases where data were not collected with identical methods (such as the Enhancing NeuroImaging Genetics through Meta-Analysis (ENIGMA) Consortium; see Olsen et al., 2021 for more on severe brain injury, and Thompson et al., 2020 for a broad summary of work in clinical neuroscience). However, data aggregation and harmonization approaches remain largely untested as a solution to science-by-volume problems in the neurosciences.
 
@@ -90,7 +121,7 @@ A newer thread of ongoing efforts within the metascience community is working to
 
 Lines of research have also emerged using creative assembly of experts (e.g., prediction markets; Dreber et al., 2015; Camerer et al., 2016; Camerer et al., 2018; Gordon et al., 2020 and AI-driven approaches Altmejd et al., 2019; Pawel and Held, 2020; Yang et al., 2020) to estimate confidence in specific research hypotheses and findings. These too have been facilitated by advances in information extraction, natural language processing, machine learning, and larger training datasets. The DARPA-funded Systematizing Confidence in Open Research and Evidence (SCORE) program, for example, is nearing the end of coordinated three-year long effort to develop technologies to predict and explain replicability, generalizability and robustness of published claims in the social and behavioral sciences literatures (Alipourfard et al., 2012). As it continues to advance, the metascience community may serve to revolutionize the research process resulting in a literature that is readily interrogated and upon which strong hypotheses can be built.
 
-## Falsification for scaffolding convergence research
+### Falsification for scaffolding convergence research
 
 Advances in computing hold the promise of richer datasets, AI-driven meta-analyses, and even automated hypothesis generation. However, thus far, efforts to harness big data and emerging technologies for falsification and replication have been relatively uncoordinated, with the aforementioned Big Mechanism and SCORE programs amongst a few notable exceptions.
 

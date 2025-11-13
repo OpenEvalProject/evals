@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/026axqv54 State Key Laboratory of Pharmaceutical Biotechnology, Department of Vascular Surgery, The Affiliated Drum Tower Hospital of Nanjing University Medical School Nanjing China
-2. https://ror.org/01rxvg760 Jiangsu Key Laboratory of Molecular Medicine, Medical School of Nanjing University Nanjing China
+1. State Key Laboratory of Pharmaceutical Biotechnology, Department of Vascular Surgery, The Affiliated Drum Tower Hospital of Nanjing University Medical School Nanjing China ([ROR:026axqv54](https://ror.org/026axqv54))
+2. Jiangsu Key Laboratory of Molecular Medicine, Medical School of Nanjing University Nanjing China ([ROR:01rxvg760](https://ror.org/01rxvg760))
 3. The Second Affiliated Hospital, School of Public Health, State Key Laboratory of Experimental Hematology, Zhejiang University School of Medicine Hangzhou China
-4. https://ror.org/03qryx823 Faculty of Biotechnology and Food Engineering, Technion Israel Institute of Technology Haifa Israel
+4. Faculty of Biotechnology and Food Engineering, Technion Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
 5. Department of Physiology, Biophysics and Neuroscience, Cinvestav Mexico Mexico
 
 † Corresponding author
 
 ## Abstract
 
-Postmenopausal atherosclerosis (AS) has been attributed to estrogen deficiency. However, the beneficial effect of hormone replacement therapy (HRT) is lost in late postmenopausal women with atherogenesis. We asked whether aging-related iron accumulation affects estrogen receptor α (ERα) expression, thus explaining HRT inefficacy. A negative correlation has been observed between aging-related systemic iron deposition and ERα expression in postmenopausal AS patients. In an ovariectomized Apoe mouse model, estradiol treatment had contrasting effects on ERα expression in early versus late postmenopausal mice. ERα expression was inhibited by iron treatment in cell culture and iron-overloaded mice. Combined treatment with estradiol and iron further decreased ERα expression, and the latter effect was mediated by iron-regulated E3 ligase Mdm2. In line with these observations, cellular cholesterol efflux was reduced, and endothelial homeostasis was disrupted. Consequently, AS was aggravated. Accordingly, systemic iron chelation attenuated estradiol-triggered progressive AS in late postmenopausal mice. Thus, iron and estradiol together downregulate ERα through Mdm2-mediated proteolysis, providing a potential explanation for failures of HRT in late postmenopausal subjects with aging-related iron accumulation. This study suggests that immediate HRT after menopause, along with appropriate iron chelation, might provide benefits from AS. -/-
+Postmenopausal atherosclerosis (AS) has been attributed to estrogen deficiency. However, the beneficial effect of hormone replacement therapy (HRT) is lost in late postmenopausal women with atherogenesis. We asked whether aging-related iron accumulation affects estrogen receptor α (ERα) expression, thus explaining HRT inefficacy. A negative correlation has been observed between aging-related systemic iron deposition and ERα expression in postmenopausal AS patients. In an ovariectomized Apoe-/- mouse model, estradiol treatment had contrasting effects on ERα expression in early versus late postmenopausal mice. ERα expression was inhibited by iron treatment in cell culture and iron-overloaded mice. Combined treatment with estradiol and iron further decreased ERα expression, and the latter effect was mediated by iron-regulated E3 ligase Mdm2. In line with these observations, cellular cholesterol efflux was reduced, and endothelial homeostasis was disrupted. Consequently, AS was aggravated. Accordingly, systemic iron chelation attenuated estradiol-triggered progressive AS in late postmenopausal mice. Thus, iron and estradiol together downregulate ERα through Mdm2-mediated proteolysis, providing a potential explanation for failures of HRT in late postmenopausal subjects with aging-related iron accumulation. This study suggests that immediate HRT after menopause, along with appropriate iron chelation, might provide benefits from AS.
 
 ## Introduction
 
@@ -39,43 +39,180 @@ Estrogen also regulates systemic iron homeostasis through hepcidin, an antimicro
 
 ## Results
 
-## ERα protein abundance correlates inversely with systemic and local plaque iron content in the tested aging postmenopausal women with AS
+### ERα protein abundance correlates inversely with systemic and local plaque iron content in the tested aging postmenopausal women with AS
 
 To build the link between iron content and ERα levels in different postmenopausal stages, we collected 8 plaques and 20 blood samples from postmenopausal AS patients (Table 1), divided a half into early (55–65 years old, n = 4/10, plaque/blood samples) and another half into late (>66 years old, n = 4/10) postmenopausal groups (EPM and LPM), respectively. Tissue ferritin was evaluated by immunohistochemistry (IHC) (Figure 1A) and immunoblotting (Figure 1B), serum ferritin by ELISA (Figure 1C), tissue iron by DAB-enhanced Prussian blue staining (Figure 1A), and serum iron by ferrozine assays (Figure 1D). The results showed that ferritin and iron levels were significantly increased in plaques and serum in the LPM compared to that in the EPM (Figure 1A–D). Consistently, serum hepcidin levels increased in the LPM group (Figure 1E). By contrast, plaque ERα expression was lower in the LPM than in the EPM (Figure 1B). In addition, serum cholesterol and triglycerides were elevated in the LPM (Figure 1F). These results confirm the iron accumulation with age post menopause (Cheng et al., 2017; Jian et al., 2009; Milman et al., 2000; Milman et al., 1992) and suggest a negative correlation between iron and ERα levels.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig1-v1.jpg)
 
-**Figure 1.:** (A) Ferritin (Ft-L), revealed by immunohistochemistry (IHC), and iron content, revealed by DAB-enhanced Prussian blue staining, in plaque paraffin sections of eight postmenopausal patients. Upper panel: the early postmenopausal (EPM) group (P1–P4,<65 years old); lower panel: the late postmenopausal (LPM) group (P5–P8, >65 years old). (B) ERα and Ft-L expression in plaques measured by western blotting. The samples are the same as in (A) except for the lane switch between lane 6 (P6) and lane 7 (P7) by chance. (C) Serum ferritin levels in EPM (blue) and LPM (magenta) patients, detected by ELISA. n = 10/group, ***p<0.001. (D) Serum iron measured by using an autochemical analyzer (Beckman Coulter AU5421, CA). n = 10/group, ***p<0.001. (E) Serum hepcidin levels detected by ELISA. n = 10/group, ****p<0.0001. (F) Serum total cholesterol (left) and total triglyceride (right) levels. n = 10/group, *p<0.05, **p<0.01. Student’s t-test analysis was used for (C–F).Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Ferritin (Ft-L), revealed by immunohistochemistry (IHC), and iron content, revealed by DAB-enhanced Prussian blue staining, in plaque paraffin sections of eight postmenopausal patients. Upper panel: the early postmenopausal (EPM) group (P1–P4,<65 years old); lower panel: the late postmenopausal (LPM) group (P5–P8, >65 years old). (B) ERα and Ft-L expression in plaques measured by western blotting. The samples are the same as in (A) except for the lane switch between lane 6 (P6) and lane 7 (P7) by chance. (C) Serum ferritin levels in EPM (blue) and LPM (magenta) patients, detected by ELISA. n = 10/group, ***p<0.001. (D) Serum iron measured by using an autochemical analyzer (Beckman Coulter AU5421, CA). n = 10/group, ***p<0.001. (E) Serum hepcidin levels detected by ELISA. n = 10/group, ****p<0.0001. (F) Serum total cholesterol (left) and total triglyceride (right) levels. n = 10/group, *p<0.05, **p<0.01. Student’s t-test analysis was used for (C–F).
 
-## AS aggravates in E2-treated LPM Apoe-/- mice with reduced ERα expression and accumulation of body iron
+**Table 1.**
+ Clinical data of 20 patients with atherosclerosis (AS).Table 1—source data 1.Patient clinical information.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>EPM</th>
+      <th>LPM</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>59.3 ± 3.7</td>
+      <td>77.5 ± 4.5</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Risk factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smoking history</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.232</td>
+    </tr>
+    <tr>
+      <td>Hypercholesterolemia</td>
+      <td>4</td>
+      <td>8</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>7</td>
+      <td>8</td>
+      <td>0.334</td>
+    </tr>
+    <tr>
+      <td>Coronary artery disease</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0.241</td>
+    </tr>
+    <tr>
+      <td>Cerebral infarction</td>
+      <td>4</td>
+      <td>5</td>
+      <td>0.548</td>
+    </tr>
+    <tr>
+      <td>Cholesterol-lowering drug usage</td>
+      <td>5</td>
+      <td>8</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Symptoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chest distress</td>
+      <td>5</td>
+      <td>6</td>
+      <td>0.548</td>
+    </tr>
+    <tr>
+      <td>Dizzy</td>
+      <td>6</td>
+      <td>8</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>Plaque type</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stable plaque</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0.207</td>
+    </tr>
+    <tr>
+      <td>Vulnerable plaque</td>
+      <td>5</td>
+      <td>7</td>
+      <td>0.207</td>
+    </tr>
+  </tbody>
+</table>
+
+_EPM, early postmenopausal; LPM, late postmenopausal._
+
+### AS aggravates in E2-treated LPM Apoe-/- mice with reduced ERα expression and accumulation of body iron
 
 To determine whether the effect of HRT was atheroprotective in postmenopausal females, OVX was performed to mimic postmenopause in Apoe-/- female mice at 8 wk of age (Figure 2A). The mice started to be fed high-fat chow 1 wk post OVX. Ages of 17 wk (9 wk after OVX) and 29 wk (21 wk after OVX) were considered as EPM and LPM stages, respectively. Peritoneal E2 injection was performed and the serum E2 was measured at the end points (Figure 2—figure supplement 1A). Although E2 administration in the EPM significantly reduced plaque formation and mouse weight, it remarkably promoted atherosclerotic development and weight gain in late application (Figure 2B and C, Figure 2—figure supplement 1B), exactly as observed in humans (Hlatky et al., 2002; Rossouw et al., 2002). We then detected aortic ERα expression to evaluate whether ERα was responsive to E2 treatment. The results showed markedly lower ERα protein levels in the LPM mice than in the EPM mice (Figure 2D). More strikingly, ERα expression was further reduced in LPM mice after E2 treatment but remained constantly high in EPM mice (Figure 2D). It has been reported that ERα protects against atherosclerosis by promoting lipid efflux and endothelial homeostasis (Wang et al., 2021; Zhao et al., 2021). Hence, we assessed three ERα downstream proteins, ABCA1, a lipid exporter whose gene promoter is predicted to have ERE, VEGF, an activator of angiogenesis, and eNOS, a modulator of vasoconstriction and vascular repair. They were all positively correlated with ERα expression (Figure 2D). Macrophage-derived foam cell formation is crucial in the development of atherogenesis (Xu et al., 2021). We, therefore, isolated peritoneal macrophages from early and late OVX mice after E2 treatment and found that ABCA1 expression responded to E2 treatment similarly as observed in aortic tissue, with no change in ERα and VEGF, but keeping at high levels (Figure 2E). In line with this observation, serum cholesterol and triglycerides negatively correlated with ABCA1 (Figure 2F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig2-v1.jpg)
+
+**Figure 2.:** (A) Flow diagram of mouse modeling. Early E2-treatment group: ovariectomy (OVX) at 8 weeks old, 1-wk recovery, E2 treatment for 8 wk; late E2-treatment group: OVX at 8 weeks old, E2 treatment from 21 weeks old to 29 weeks old for 8 wk. Saline is vehicle control. Mice were fed high-fat chow from 9 weeks old. (B) Oil red O-stained aortic lesions in Apoe-/- mice after E2 treatment for 8 wk in the early postmenopausal (EPM) or late postmenopausal (LPM) group. (C) Statistical analysis of the area of atherosclerotic plaque in the aorta. n = 4/group, *p<0.05, **p<0.01. (D) The expression of iron-related or ERα-targeted proteins in the aorta, detected by western blotting. (E) Protein expression in peritoneal macrophages detected by western blotting. Macrophages were isolated from four mouse groups (early/late ± E2, for details see ‘Materials and methods’). (F) Serum total cholesterol and total triglyceride levels in the four mouse groups. Pre: serum samples before OVX as a control group. n = 6/group, *p<0.05, **p<0.01. (G) Iron content in aorta and liver, detected by ferrozine assays. n = 6/group, ****p<0.0001, **p<0.01, *p<0.05. (H) Serum iron in different groups, detected by using an autochemical analyzer (Beckman Coulter AU5421). n = 6/group, ***p<0.001, **p<0.01. Student’s t-test analysis was used for (C, F–H).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Serum E2 levels after peritoneal E2 administration (3 μg/kg daily for 8 wk, n = 4) with Student’s t-test analysis. (B) Body weight of Apoe-/- mice after E2 treatment for 8 wk in the early postmenopausal (EPM) or late postmenopausal (LPM) groups (n = 6).
+
 Our previous data have demonstrated that macrophage iron plays a critical role in the development of AS (Cai et al., 2020); therefore, iron-related proteins were monitored. In the isolated macrophages, ferritin was reduced in the EPM group, while Fpn1 was elevated in both stages in response to E2 treatment (Figure 2E). These responses in tissue were very mild except Fpn1 in the early stage (Figure 2D), which suggests that not all cell types are responsive to E2 in aorta tissue, particularly the disrupted iron homeostasis in the late stage. Iron levels in tissues, aorta and liver, were significantly higher in the LPM mice (Figure 2G, LPM vs. EPM without E2 treatment). Interestingly, E2 treatment elevated serum iron while lowering tissue iron in both EPM and LPM stages (Figure 2G, H and E treatment vs. saline), suggesting impaired iron homeostasis in the plaque area, particularly in macrophages (Figure 2E) and confirming that estrogen modulates iron homeostasis as previously suggested (Yang et al., 2012).
 
-## E2 downregulates ERα expression in an iron-dependent manner
+### E2 downregulates ERα expression in an iron-dependent manner
 
 Next, we aimed to identify whether aging or iron overload alone could trigger a decrease in ERα expression in vivo. To address this question, myeloid-specific Fpn1 knockout mice (Fpn1Lyz2/Lyz2) were used as a macrophage-iron overload model in the Apoe-/- background (Cai et al., 2020). This double knockout (KO) model is considered relevant for AS studies due to the accumulation of a large number of macrophages in plaques, which contributes to the progression of atherosclerosis (Moore et al., 2013). The Fpn1-KO efficiency was determined (Figure 3—figure supplement 1A). OVX was performed in female mice fed standard chow at 16 wk or 40 wk of age, and E2 was injected to model HRT, as illustrated in Figure 3A. Figure 3B and C show the severity of AS, which was significantly enhanced in the E2-treated groups at both ages compared to the saline groups of Apoe-/- Fpn1Lyz2/Lyz2. Notably, macrophage Fpn1 KO mice displayed a larger lesion area after E2 treatment at the EPM and LPM stages (Figure 3C), suggesting a dominant influence of iron on the effects of the E2 treatment. In particular, the specific iron overload in macrophages, characteristic of the mouse model used, was sufficient to cause a significant increase in the lesion area in the LPM group (Figure 3C, lower panel), reproducing previous observations (Cai et al., 2020). We then examined the iron status in tissues and serum. Iron levels in tissues (aorta/liver) were higher in Apoe-/- Fpn1Lyz2/Lyz2 compared to Apoe-/- mice, as revealed by ferrozine assays (Figure 3—figure supplement 1B for EPM groups and Figure 3D for LPM groups) and further supported by higher ferritin content (Figure 3—figure supplement 1B for EPM and Figure 3E for LPM). On the contrary, serum iron was lower in Apoe-/-Fpn1Lyz2/Lyz2 mice at the EPM and LPM stages (Figure 3F and Figure 3—figure supplement 1C). However, E2 administration did not significantly lower the iron and ferritin levels in the aorta and liver (Figure 3D and E, Figure 3—figure supplement 1B), confirming that Fpn1 acts as an iron exporter and that macrophages play a crucial role in response to E2 treatment. E2 administration significantly increased serum iron levels in the LPM group (Figure 3F) and mildly increased serum iron levels in the EPM group (Figure 3—figure supplement 1C), suggesting that other factors may contribute to the aging-related response to estrogen. Of note, ERα was downregulated in the aorta of the Fpn1Lyz2/Lyz2 mice and further downregulated by E2 treatment, accompanied by reduced expression of ABCA1 and VEGF (Figure 3E, Figure 3—figure supplement 1D), suggesting that both iron alone and iron plus E2 could downregulate ERα expression in macrophages. Consistent with the severity of atherosclerosis and the alteration of ERα and its target gene ABCA1, serum cholesterol and triglycerides were increased in the Fpn1Lyz2/Lyz2 mice and further increased by E2 treatment (Figure 3G).
 
-## E2 treatment potentiates iron-induced downregulation of ERα in both macrophages and endothelial cells
+![Figure 3.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig3-v1.jpg)
+
+**Figure 3.:** (A) Flow diagram of mouse modeling. Early groups: ovariectomy (OVX) at 16 weeks old, 1-wk recovery, ± E2 treatment for 8 wk; late groups: OVX at 40 weeks old, 1-wk recovery, ± E2 treatment for 8 wk. Saline is vehicle control. The mice were fed with normal chow. (B) Oil red O-stained aortic lesions in Apoe-/- and Apoe-/- Fpn1Lyz2/Lyz2 mice after E2 treatment for 8 wk in the early postmenopausal (EPM) or late postmenopausal (LPM) groups as indicated. (C) The lesion area in the aorta. n = 4/group, **p<0.01, *p<0.05. (D) The iron content of the aorta and liver detected by ferrozine assays. n = 6/group, ***p<0.001, **p<0.01. (E) The expression of iron-related or ERα-targeted proteins in the aorta, detected by western blotting. (F) Serum iron level in different groups. n = 6/group, ***p<0.001, **p<0.01. (G) Serum total cholesterol and total triglyceride levels. n = 6/group, *p<0.05, **p<0.01. The samples for (D–G) were from 49-week-old Apoe-/- and Apoe-/- Fpn1Lyz2/Lyz2 mice. Student’s t-test analysis was used for (C, D, F, G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fpn1 KO efficiency in peritoneal macrophages was validated. (B) Iron content of aorta and liver detected by ferrozine assays. n = 4, ****p<0.0001. (C) Serum iron in different groups. n = 6, *p<0.05. (D) ABCA-1, ERα, VEGF, and Ft-L protein expression of aorta were detected. Student’s t-test analysis was used for (B, C).
+
+### E2 treatment potentiates iron-induced downregulation of ERα in both macrophages and endothelial cells
 
 To further validate the interaction between iron and E2 on ERα downregulation in different cell types, we used the macrophage-like cell line J774a.1, primary peritoneal macrophages from C57BL/6 female mice, and human umbilical vein endothelial cells (HUVECs). The cells were treated with E2, ferric ammonium citrate (FAC, an iron source), and/or deferiprone (DFP, an iron chelator). Downregulation of ERα expression triggered by FAC with or without E2 was observed in time- and concentration-dependent manners (Figure 4A, B). Such downregulation was confirmed in all tested cell types and could be partially suppressed by iron chelation (Figure 4C–F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig4-v1.jpg)
 
-**Figure 4.:** 2 treatment potentiates iron-induced downregulation of estrogen receptor α (ERα) in vitro.(A, B) Left: ERα expression in the presence or absence of E2 under different iron concentration conditions (A) or in the time course (B). Right: quantification data using ImageJ analysis. Two-way ANOVA was used. (C) Left: the rescue effect of iron chelation on the downregulation of ERα by FAC or FAC plus E2. Right: quantification data using ImageJ analysis. Two-way ANOVA was used for the former four groups. (D) The intracellular iron content in J774a.1 under different iron-concentration conditions in the presence or absence of E2, detected by ferrozine assays. n = 4, *p<0.05. (E, F) ERα expression in peritoneal macrophages (E) and human umbilical vein endothelial cells (HUVECs) (F) under the indicated iron and E2 conditions. (A–C, E, F) are data from western blotting. The quantification is indicated as a relative intensity of ERα (n = 4). (G) Oil red O-stained J774a.1 cells after treatment with FAC and/or E2 (left) followed by oxidized LDL uptake, quantified by the area of droplets (right). scale bar = 25 μm, n = 4, ***p<0.001. (H) HUVEC angiogenesis assays, revealed by the number of branch points (left) and capillary length (right). n = 4, *p<0.05, **p<0.01. (I) eNOS level in HUVEC, assessed by ELISA. n = 4, *p<0.05, **p<0.01, ***p<0.001. Two-way ANOVA was used for (A–C). Student’s t-test analysis was used for (D, G–I).Figure 4—source data 1.Figure 4A–F and I.Figure 4—source data 2.Figure 4G.Figure 4—source data 3.Figure 4G.Figure 4—source data 4.Figure 4H.
+**Figure 4.:** (A, B) Left: ERα expression in the presence or absence of E2 under different iron concentration conditions (A) or in the time course (B). Right: quantification data using ImageJ analysis. Two-way ANOVA was used. (C) Left: the rescue effect of iron chelation on the downregulation of ERα by FAC or FAC plus E2. Right: quantification data using ImageJ analysis. Two-way ANOVA was used for the former four groups. (D) The intracellular iron content in J774a.1 under different iron-concentration conditions in the presence or absence of E2, detected by ferrozine assays. n = 4, *p<0.05. (E, F) ERα expression in peritoneal macrophages (E) and human umbilical vein endothelial cells (HUVECs) (F) under the indicated iron and E2 conditions. (A–C, E, F) are data from western blotting. The quantification is indicated as a relative intensity of ERα (n = 4). (G) Oil red O-stained J774a.1 cells after treatment with FAC and/or E2 (left) followed by oxidized LDL uptake, quantified by the area of droplets (right). scale bar = 25 μm, n = 4, ***p<0.001. (H) HUVEC angiogenesis assays, revealed by the number of branch points (left) and capillary length (right). n = 4, *p<0.05, **p<0.01. (I) eNOS level in HUVEC, assessed by ELISA. n = 4, *p<0.05, **p<0.01, ***p<0.001. Two-way ANOVA was used for (A–C). Student’s t-test analysis was used for (D, G–I).
 
 To examine the capacity of lipid export when ERα was downregulated, we loaded J774a.1 with oxidized low-density lipoprotein (oxLDL) and observed significantly more lipid accumulation in the E2-treated plus iron overload group than in the other groups (Figure 4G), suggesting a tendency of macrophages to be converted into foam cells. Angiogenesis assays were also performed and showed that E2, together with iron, inhibited angiogenesis (Figure 4H), which has been demonstrated to increase the risk of macrophage adhesion and intraplaque hemorrhage (Chang and Nguyen, 2021; Mao et al., 2020). The reduced levels of eNOS were also revealed by ELISA in HUVECs treated with E2 and iron (Figure 4I). Overall, our data strongly support that both macrophages and endothelial cells are the effectors of E2 in iron-mediated worsening by downregulation of ERα in the development of AS.
 
-## Proteasome-mediated ERα degradation results from the interactive effects of iron overload and E2 treatment mediated by the E3 ligase Mdm2
+### Proteasome-mediated ERα degradation results from the interactive effects of iron overload and E2 treatment mediated by the E3 ligase Mdm2
 
 We wondered how excess iron and E2 together downregulated ERα expression. To elucidate the underlying mechanism, we first searched for what regulates ERα expression. It was reported that the downregulation of ERα could be attributed to the methylation of its promoter region, which could be induced by oxidative stress (Lung et al., 2020). Because iron overload has been strongly correlated with oxidative stress, two relevant antioxidative enzymes, catalase (CAT) and superoxide dismutase (SOD) 2, were evaluated. The results showed no significant difference between the control and E2/FAC treatments (Figure 5—figure supplement 1A, B). In addition, the mRNA level of ERα was examined and barely showed significant changes after FAC and E2 treatment (Figure 5—figure supplement 1C), suggesting that post-transcriptional regulation of ERα better explained the decreased presence of the receptor after iron and/or E2 treatment.
 
 As stated, ERα may be regulated through an estrogen-ERα binding-dependent ubiquitination signaling pathway for degradation and estrogen recycling. To test this possibility, we treated J774a.1 cells with MG132, a proteasome inhibitor, and observed that ERα protein levels were significantly elevated in the presence of E2 and excess iron (Figure 5A). Treatment with cycloheximide (CHX), an inhibitor of eukaryotic translation, showed that the half-life of ERα was shortened in the E2 + FAC group (Figure 5B), suggesting a faster turnover rate of ERα in the presence of E2 plus excess iron, verifying the activation of ERα proteasome degradation pathway (Zhou and Slingerland, 2014). We then detected the ubiquitination levels of ERα by immunoprecipitation and immunoblotting. The results showed much more ubiquitinated and degraded ERα in the presence of E2 and excess iron than in other conditions (Figure 5C), further supporting the proteolysis-dependent pathway for ERα degradation. We then tested a few E3 ligases (BRCA1, AHR, and Mdm2) in J774a.1, which were supposed to regulate ERα (Fan et al., 2001; Khan et al., 2006; Saji et al., 2001), and did not find a negative correlation between BRCA1/AHR and ERα in response to FAC or E2 + FAC treatments (Figure 5—figure supplement 2). However, Mdm2 was upregulated in the FAC and E2 + FAC groups (Figure 5D). Treatment of the J774a.1 cells and HUVECs with the Mdm2 inhibitor Nutlin-3 demonstrated iron-dependent Mdm2-mediated degradation of ERα (Figure 5E and F). Importantly and consistently, Mdm2 expression was upregulated at the LPM stage compared with the EPM stage both in female mice’s aorta and in AS patients' plaques (Figure 5G and H), which is precisely opposite to ERα expression (Figure 1B), and this effect was significantly enhanced at the LPM stage mice when E2 was administrated (Figures 2D and E and 5G). Our results indicate that Mdm2 is responsible for E2-triggered ERα deficiency under iron overload conditions or in LPM women.
 
-## Iron restriction therapy restores ERα levels and attenuates E2-triggered progressive atherosclerosis in late postmenopausal mice
+![Figure 5.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig5-v1.jpg)
+
+**Figure 5.:** (A) Evaluation of ERα proteasome-dependent degradation in J774a.1 cells by western blotting. MG132: 10 μM. n = 4. (B) ERα turnover rate in J774a.1 cells under FAC or E2 + FAC conditions, detected by western blotting after 20 μM cycloheximide (CHX) treatment. *p<0.05 using two-way ANOVA. (C) Ubiquitination of ERα, evaluated by western blotting (anti-ubiquitin) following immunoprecipitation against ERα antibody. n = 3, *p<0.05. (D) Relative Mdm2 mRNA expression in J774a.1 cells, assessed by qPCR, n = 4, **p<0.01. (E) The protein levels of ERα in the presence of FAC or FAC plus E2 in J774a.1 cells after treatment of Nutlin-3, a specific antagonist of Mdm2. n = 3. (F) The protein levels of ERα in the presence of FAC or FAC plus E2 in human umbilical vein endothelial cells (HUVECs) after treatment of Nutlin-3. n = 3. (G) Mdm2 protein expression in the aortas of mice in the early postmenopausal (EPM) or late postmenopausal (LPM) stage, as detected by western blotting. n = 3/group. (H) MDM2 protein levels in patient plaques, detected by western blotting and quantified with ImageJ. n = 4/group, ***p<0.001. Two-way ANOVA was used for (B). Student’s t-test analysis was used for (C, D H).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) SOD2 protein levels of J774a.1 post treatments with FAC/DFP in the presence/absence of E2. (B) The enzymatic activity of catalase in J774a.1. n = 4. (C) Relative ERα mRNA expression of J774a.1 treated with different concentrations of FAC in the presence/absence of E2, assessed by qPCR. n = 5. Student’s t-test analysis was used for (B, C).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) BRCA1 and AHR protein expressions in J774a.1 were detected. (B) The protein expression of ERα and its related E3 ligase, BRCA1 and AHR, was detected in MCF-7 cell line. n = 4.
+
+### Iron restriction therapy restores ERα levels and attenuates E2-triggered progressive atherosclerosis in late postmenopausal mice
 
 To further verify whether iron overload is responsible for the E2-induced downregulation of ERα and progressive atherosclerosis in LPM mice, we evaluated the effects of iron restriction. 21-week-old female Apoe-/- mice, OVX-ed at 8 wk of age, received iron chelation therapy through peritoneal injection of DFP (80 mg/kg) daily for 8 wk (Figure 6A). Similar to the definition used in Figure 2, 13 wk after OVX was considered as the LPM stage. Indeed, iron chelation attenuated the plaque-accelerated development of AS (Figure 6B, C). The contents of serum cholesterol and triglycerides compared with those in the E2-only group were significantly diminished (Figure 6D). Consistent with previous data (Figures 2 and 3), ferrozine assays proved decreased iron deposition in tissues but increased iron in serum post E2 application (Figure 6E, F). Although DFP administration reduced the tissue and serum iron levels, it did not induce anemia (Figure 6F, Figure 6—figure supplement 1), which was comparable to the mice at EPM (Figure 2H). We then detected aortic ERα expression and found significant upregulation by iron restriction, along with the upregulation of ABCA1 and VEGF (Figure 6G). In contrast, iron chelation by DFP significantly reduced Mdm2 expression (Figure 6G). In agreement with our previous findings in cell-based assays, these results corroborate the concept that late postmenopausal HRT-induced ERα deficiency is, at least partially, iron overload-mediated. Thus, the non-atheroprotective effects of E2 in the LPM result from aging-mediated iron accumulation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig6-v1.jpg)
+
+**Figure 6.:** (A) Flow diagram of mouse modeling. The mice were ovariectomized (OVX) at 8 weeks old and E2, DFP or E2 + DFP treated from 21 weeks old to 29 weeks old for 8 wk. Saline is vehicle control. Mice were fed high-fat chow one week after OVX. 13 wk post-OVX is considered as late postmenopause. (B) Oil red O-stained aortic lesions in Apoe-/- mice treated with E2, DFP or E2 + DFP as indicated. (C) The quantified lesion area of atherosclerotic plaques in the aorta from (B). n = 3, **p<0.01, *p<0.05. (D) Serum total cholesterol and total triglyceride levels. n = 6, *p<0.05, **p<0.01. (E) The iron content in the aorta and liver, detected by ferrozine assays. n = 4, **p<0.01, *p<0.05. (F) Determination of serum iron in different groups. n = 6, ***p<0.001, **p<0.01, *p<0.05. (G) Protein expression in the aorta, detected by western blotting (left) and quantified with ImageJ (right). n = 3. ****p<0.0001, ***p<0.001, *p<0.05. Student’s t-test analysis was used for (C–G).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80494/elife-80494-fig6-figsupp1-v1.jpg)
 
 ## Discussion
 
@@ -97,68 +234,68 @@ In summary, this study demonstrates the impact of iron overload in E2-mediated E
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Participants in this study included 20 postmenopausal (at least 1 y since menopause, without HRT) AS patients aged 54–84 y, recruited from the Vascular Surgery Department, The Affiliated Drum Tower Hospital, Nanjing University Medical School (Table 1). Patients were divided into early (55–65 years old) and late (>65 years old) groups since menopause for over 10 y was defined as late postmenopause. 20 fasting serum samples were collected at the outpatient service. Of them, eight patients undergoing carotid endarterectomy were recruited, and plaque samples were collected immediately after separation. All patients provided written informed consent. Exclusion criteria included the current use of oral contraceptives or other medications. Further details on the exclusion criteria were referenced (Wactawski-Wende et al., 2009). This study complies with the Declaration of Helsinki, and the Institutional Review Board of Nanjing Drum Tower Hospital, the Affiliated Hospital of Nanjing University Medical School, approved the study.
 
-## Animals
+### Animals
 
 Apoe-/- mice were obtained from the Model Animal Research Center of Nanjing University (Nanjing, China). Apoe-/- Fpn1Lyz2/Lyz2 mice on the C57BL/6J background were generated in our previous study. For the control experiments in ‘E2-treated LPM Apoe-/- mice with reduced ERα expression and accumulation of body iron’ and ‘Iron restriction therapy restores ERα levels and attenuates E2-triggered progressive atherosclerosis in late postmenopausal mice’, female Apoe-/- mice at the age of 8 wk (defined as premenopausal) were anesthetized and bilaterally ovariectomized through a 1 cm dorsal incision. After surgery, mice were allowed to recover for 1 wk and randomly divided into early and late groups. For each group, mice were fed a high-fat diet (0.2% cholesterol and 20% fat) and injected with saline, E2 (3 μg/kg every other day, Solarbio, Beijing, China), or E2 + DFP (80 mg/kg daily, Sigma–Aldrich, St. Louis, MO) for 8 wk from week 9 as the early OVX group or week 21 as the late OVX group.
 
 For the control experiments included in Result 3, female Apoe-/- and Apoe-/- Fpn1Lyz2/Lyz2 mice were ovariectomized at the age of 16 or 40 wk. E2 injection (3 μg/kg every other day) was performed 1 wk after surgery for 8 wk. All animals were housed and fed standard chow in the SPF animal facility with an average 12 hr light-and-dark cycle and under controlled temperature conditions (25°C). The mice were anesthetized with an intraperitoneal injection of pentobarbital sodium (40 mg/kg) and euthanized by cervical dislocation for sample collection. The protocols were approved by the Animal Investigation Ethics Committee of The Affiliated Drum Tower Hospital of Nanjing University Medical School and were performed according to the Guidelines for the Care and Use of Laboratory Animals published by the National Institutes of Health, USA.
 
-## Cell culture
+### Cell culture
 
 J774a.1 cells, HUVECs, and MCF-7 cells were purchased from Cellcook (Guangzhou, China) with STR profiling report and cultured in DMEM (Gibco, Life Technologies, UK) supplemented with 10% fetal bovine serum (FBS). No mycoplasma contamination was found during experiment. Peritoneal macrophages were collected from peritoneal exudates 3 d after injecting 8-week-old mice with 0.3 ml of 4% BBL thioglycollate, Brewer modified (BD Biosciences, Shanghai, China), and then cultured in RPMI 1640 medium supplemented with 10% (FBS) for 8 hr. Macrophages were cultured in a medium containing 50 μg/ml human oxidized low-density lipoprotein (oxLDL) in the presence of 1 μM E2, 100 μM ferric ammonium citrate (FAC), 350 μM DFP, or indicated combination for 48 hr as needed.
 
 Oil Red O staining was performed to evaluate foam cell formation. The quantification was carried out with the following formula: relative average area of the fat droplet (%) = Target (Area of fat droplets/Numbers of cells)/Control (Area of fat droplets/Number of cells) * 100%. The area was analyzed using ImageJ software. Angiogenesis assays were performed to evaluate angiogenic capacity. Cellular iron levels were estimated using ferrozine assays. The protein levels of ERα, ABCA1, VEGF, TfR1, and Ft-L were determined by western blot analysis.
 
-## Isolation of peritoneal macrophages from mice
+### Isolation of peritoneal macrophages from mice
 
 The mice were intraperitoneally injected with 4% starch broth (NaCl 0.5 g, beef extract 0.3 g, peptone 1.0 g, and starch 3.0 g in 100 ml of distilled H2O) 3 d before euthanasia. After anesthesia, the abdominal skin was carefully cut to 1 cm, and 5–8 ml PBS with 3% FBS was injected into the enterocoele. After 10 min of massage, the liquid was extracted and centrifuged (1000 × g, 5 min). The sediment was then plated into 6-well plates for attachment or cryopreserved for further assays.
 
-## Blood samples/tests and tissue collection
+### Blood samples/tests and tissue collection
 
 The mice were fasted for 1 d, then anesthetized with an intraperitoneal injection of pentobarbital sodium (40 mg/kg), and euthanized by cervical dislocation. Blood was drawn from the inferior vena cava and collected in heparinized tubes. Hemoglobin was measured by routine blood tests. Plasma was prepared by centrifugation (1200 × g) for 15 min at 4°C and then stored at –80°C for the determination of serum iron, lipid estrogen, and cytokine levels. The mice were then perfused with 4°C saline through the left ventricle. After perfusion, the arteries, hearts, livers, and spleens were harvested. The samples were fixed in 4% paraformaldehyde or quickly frozen at –80°C for further analysis.
 
-## Serum lipid content and lesion area in the aorta and the aortic root
+### Serum lipid content and lesion area in the aorta and the aortic root
 
 Lipid content was determined with Oil Red O to stain the aorta. To assess the atherosclerotic lesion area, the aorta was analyzed from the aorta arch to the abdominal aortic bifurcation. The quantification of lesion area and size was performed using ImageJ software. Serum cholesterol and triglycerides were measured by the clinical laboratory of Nanjing Drum Tower Hospital using an autochemical analyzer (Beckman Coulter AU5421, CA).
 
-## Immunohistochemistry (IHC) and Prussian blue staining
+### Immunohistochemistry (IHC) and Prussian blue staining
 
 Sections of mouse aortic valve or patient carotid artery plaques were used to assess the plaque iron composition by IHC staining for Ft-L and Prussian blue staining with DAB enhancement for ferric iron. The primary antibody against Ft-L was made using recombinant human Ft-L subunit as antigen by GenScript (Nanjing, China).
 
 Images were captured under a light microscope (Leica, Germany). For quantitative analysis of images, three sections per animal at intervals of 30 μm were analyzed. The intensity of positive staining was analyzed using ImageJ software.
 
-## Iron assays
+### Iron assays
 
 As previously described, deparaffinized tissue sections were stained with Prussian blue staining for nonheme iron (Wang et al., 2016). Serum iron was measured by the clinical laboratory of Nanjing Drum Tower Hospital using an autochemical analyzer (Beckman Coulter AU5421, CA). Total nonheme iron in the tissues was measured by colorimetric ferrozine-based assays as previously described (Li et al., 2018). Briefly, 22 μl concentrated HCl (11.6 M) was added to 100 μl of homogenized tissue samples (approximately 500 μg total protein). The sample was then heated at 95°C for 20 min, followed by centrifugation at 12,000 × g for 10 min. The supernatant was transferred into a clean tube. Ascorbate was added to reduce the Fe3+ into Fe2+. After 2 min of incubation at room temperature, ferrozine and saturated ammonium acetate (NH4Ac) were sequentially added to each tube, and the absorbance was measured at 570 nm (BioTek ELx800, Shanghai, China) within 30 min.
 
-## Determination of eNOS, serum hepcidin, and ferritin by ELISA
+### Determination of eNOS, serum hepcidin, and ferritin by ELISA
 
 eNOS (Abcam, Cambridge, MA), serum hepcidin (Solarbio), and ferritin (US Biological, #F4015-11, Swampscott, MA) were detected by ELISA according to the manufacturer’s protocols.
 
-## Western blotting
+### Western blotting
 
 Protein lysates were run in gels and transferred to membranes, as previously reported (Cai et al., 2018). The membranes were probed using antibodies directed against ERα, eNOS, and VEGF purchased from Servicebio (Wuhan, China), ABCA1, BRCA1, AHR, and SOD2 from Abcam, TfR1 from ProteinTech Group Inc (Chicago, IL), MDM2 from Abcam, GAPDH from Bioworld Tech. (St. Louis Park, MN), and ferritin L (Ft-L) made by using purified human ferritin L subunit as antigen by GenScript.
 
-## Detection of catalase enzymatic activity
+### Detection of catalase enzymatic activity
 
 The catalase activities were measured following the manufacturer’s protocols of the CAT assay kit (Jiancheng Bioengineering, Nanjing, China).
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
 Total cellular RNA was isolated from peritoneal macrophages using TRIzol (Invitrogen, Carlsbad, CA) and reversely transcribed to cDNA. qRT–PCR experiments were performed with SYBR Green PCR master mixture (Thermo Fisher Scientific). The primer sequences were as follows: 5'-TTATGGGGTCTGGTCCTGTG-3' and 5'- CATCTCTCTGACGCTTGTGC-3' for Esr1, 5'-GCCACTGCCGCATCCTCTTC-3' and 5'- AGCCTCAGGGCATCGGAACC-3' for Actin, and 5'-TGTCTGTGTCTACCGAGGGTG-3' and 5'-TCCAACGGACTTTAACAACTTCA-3' for Mdm2.
 
-## Immunoprecipitation (IP) and detection of ubiquitin
+### Immunoprecipitation (IP) and detection of ubiquitin
 
 ERα proteins were immunoprecipitated from J774a.1 cell lysates according to the manufacturer’s protocols (11204D, Invitrogen). The ERα antibody was the same as that used for western blotting and was purchased from Santa Cruz (1:200 dilution). Western blotting was used to detect the efficiency of IP and the level of ubiquitin.
 
-## Angiogenesis assays
+### Angiogenesis assays
 
 Matrigel (50 μl/well) was transferred to a 96‐well plate, followed by inoculation of HUVECs (2 × 104 cells) and treatment with the medicines described in the cell culture. After 8 hr, images were captured with an inverted microscope. The extent of tube formation was assessed by measuring branch points and capillary length using the ‘Angiogenesis Analyser’ plug-in designed by Gilles Carpentier with ImageJ software.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiments were randomized and blinded. All experiments were technically and biologically replicated for at least three times. All the data are presented as the mean ± SD. A two-tailed Student’s t-test (for two groups comparison) or one-way/two-way ANOVA followed by multiple-comparisons test with Bonferroni correction (for more than two groups comparison) was performed using SPSS 17.0 (SPSS Inc, Chicago, IL). p<0.05 indicates statistical significance.

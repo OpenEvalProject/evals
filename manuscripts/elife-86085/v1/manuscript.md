@@ -20,32 +20,32 @@
 
 ### Affiliations
 
-1. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine, Brain & Behaviour (INM-7), Research Centre Jülich Jülich Germany
-2. https://ror.org/024z2rq82 Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf Düsseldorf Germany
-3. https://ror.org/0387jng26 Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. Institute of Neuroscience and Medicine, Brain & Behaviour (INM-7), Research Centre Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+2. Institute of Systems Neuroscience, Medical Faculty, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+3. Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 4. LVR-Klinikum Düsseldorf Düsseldorf Germany
-5. https://ror.org/05591te55 Medical Faculty, Ludwig-Maximilians-Universität München Germany
-6. https://ror.org/028hv5492 Department for Nuclear Medicine, University Hospital Leipzig Leipzig Germany
-7. https://ror.org/01jdpyv68 Department of Neurology, Saarland University Hospital Homburg Germany
-8. https://ror.org/01xnwqx93 Department of Psychiatry and Psychotherapy, University Hospital Bonn Bonn Germany
-9. https://ror.org/043j0f473 German Center for Neurodegenerative Diseases (DZNE) Bonn Germany
-10. https://ror.org/0030f2a11 Department of Psychiatry and Psychotherapy, University Hospital Erlangen, Friedrich-Alexander-University Erlangen-Nuremberg Erlangen Germany
-11. https://ror.org/04dm1cm79 Department of Neurology, University Medicine Rostock Rostock Germany
-12. https://ror.org/04zzwzx41 Department of Neurodegenerative Diseases, Center of Neurology, Hertie Institute for Clinical Brain Research Tübingen Germany
-13. https://ror.org/021ft0n22 Department of Psychiatry and Psychotherapy, University Medical Center Göttingen (UMG), Medical University Göttingen Göttingen Germany
-14. https://ror.org/00nt41z93 Neurosciences and Signaling Group, Institute of Biomedicine (iBiMED), Department of Medical Sciences, University of Aveiro Aveiro Portugal
-15. https://ror.org/02kkvpp62 Department of Psychiatry and Psychotherapy, Technical University of Munich Munich Germany
-16. https://ror.org/02sk64d67 kbo-Inn-Salzach-Klinikum, Clinical Center for Psychiatry, Psychotherapy, Psychosomatic Medicine, Geriatrics and Neurology Wasserburg/Inn Germany
-17. https://ror.org/032000t02 Department of Neurology, Ulm University Ulm Germany
-18. https://ror.org/05gqaka33 Department of Neurology, Martin-Luther-University Halle-Wittenberg Halle Germany
-19. https://ror.org/0387jng26 Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-20. https://ror.org/028hv5492 Clinic for Cognitive Neurology, University Hospital Leipzig Leipzig Germany
+5. Medical Faculty, Ludwig-Maximilians-Universität München Germany ([ROR:05591te55](https://ror.org/05591te55))
+6. Department for Nuclear Medicine, University Hospital Leipzig Leipzig Germany ([ROR:028hv5492](https://ror.org/028hv5492))
+7. Department of Neurology, Saarland University Hospital Homburg Germany ([ROR:01jdpyv68](https://ror.org/01jdpyv68))
+8. Department of Psychiatry and Psychotherapy, University Hospital Bonn Bonn Germany ([ROR:01xnwqx93](https://ror.org/01xnwqx93))
+9. German Center for Neurodegenerative Diseases (DZNE) Bonn Germany ([ROR:043j0f473](https://ror.org/043j0f473))
+10. Department of Psychiatry and Psychotherapy, University Hospital Erlangen, Friedrich-Alexander-University Erlangen-Nuremberg Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))
+11. Department of Neurology, University Medicine Rostock Rostock Germany ([ROR:04dm1cm79](https://ror.org/04dm1cm79))
+12. Department of Neurodegenerative Diseases, Center of Neurology, Hertie Institute for Clinical Brain Research Tübingen Germany ([ROR:04zzwzx41](https://ror.org/04zzwzx41))
+13. Department of Psychiatry and Psychotherapy, University Medical Center Göttingen (UMG), Medical University Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+14. Neurosciences and Signaling Group, Institute of Biomedicine (iBiMED), Department of Medical Sciences, University of Aveiro Aveiro Portugal ([ROR:00nt41z93](https://ror.org/00nt41z93))
+15. Department of Psychiatry and Psychotherapy, Technical University of Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+16. kbo-Inn-Salzach-Klinikum, Clinical Center for Psychiatry, Psychotherapy, Psychosomatic Medicine, Geriatrics and Neurology Wasserburg/Inn Germany ([ROR:02sk64d67](https://ror.org/02sk64d67))
+17. Department of Neurology, Ulm University Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))
+18. Department of Neurology, Martin-Luther-University Halle-Wittenberg Halle Germany ([ROR:05gqaka33](https://ror.org/05gqaka33))
+19. Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+20. Clinic for Cognitive Neurology, University Hospital Leipzig Leipzig Germany ([ROR:028hv5492](https://ror.org/028hv5492))
 
 † Corresponding author
 
 ## Abstract
 
-Aside to clinical changes, behavioral variant frontotemporal dementia (bvFTD) is characterized by progressive structural and functional alterations in frontal and temporal regions. We examined if there is a selective vulnerability of specific neurotransmitter systems in bvFTD by evaluating the link between disease-related functional alterations and the spatial distribution of specific neurotransmitter systems and their underlying gene expression levels. Maps of fractional amplitude of low-frequency fluctuations (fALFF) were derived as a measure of local activity from resting-state functional magnetic resonance imaging for 52 bvFTD patients (mean age = 61.5 ± 10.0 years; 14 females) and 22 healthy controls (HC) (mean age = 63.6 ± 11.9 years; 13 females). We tested if alterations of fALFF in patients co-localize with the non-pathological distribution of specific neurotransmitter systems and their coding mRNA gene expression. Furthermore, we evaluated if the strength of co-localization is associated with the observed clinical symptoms. Patients displayed significantly reduced fALFF in frontotemporal and frontoparietal regions. These alterations co-localized with the distribution of serotonin (5-HT1b and 5-HT2a) and γ-aminobutyric acid type A (GABAa) receptors, the norepinephrine transporter (NET), and their encoding mRNA gene expression. The strength of co-localization with NET was associated with cognitive symptoms and disease severity of bvFTD. Local brain functional activity reductions in bvFTD followed the distribution of specific neurotransmitter systems indicating a selective vulnerability. These findings provide novel insight into the disease mechanisms underlying functional alterations. Our data-driven method opens the road to generate new hypotheses for pharmacological interventions in neurodegenerative diseases even beyond bvFTD. This study has been supported by the German Consortium for Frontotemporal Lobar Degeneration, funded by the German Federal Ministry of Education and Research (BMBF; grant no. FKZ01GI1007A).
+Background:Aside to clinical changes, behavioral variant frontotemporal dementia (bvFTD) is characterized by progressive structural and functional alterations in frontal and temporal regions. We examined if there is a selective vulnerability of specific neurotransmitter systems in bvFTD by evaluating the link between disease-related functional alterations and the spatial distribution of specific neurotransmitter systems and their underlying gene expression levels.Methods:Maps of fractional amplitude of low-frequency fluctuations (fALFF) were derived as a measure of local activity from resting-state functional magnetic resonance imaging for 52 bvFTD patients (mean age = 61.5 ± 10.0 years; 14 females) and 22 healthy controls (HC) (mean age = 63.6 ± 11.9 years; 13 females). We tested if alterations of fALFF in patients co-localize with the non-pathological distribution of specific neurotransmitter systems and their coding mRNA gene expression. Furthermore, we evaluated if the strength of co-localization is associated with the observed clinical symptoms.Results:Patients displayed significantly reduced fALFF in frontotemporal and frontoparietal regions. These alterations co-localized with the distribution of serotonin (5-HT1b and 5-HT2a) and γ-aminobutyric acid type A (GABAa) receptors, the norepinephrine transporter (NET), and their encoding mRNA gene expression. The strength of co-localization with NET was associated with cognitive symptoms and disease severity of bvFTD.Conclusions:Local brain functional activity reductions in bvFTD followed the distribution of specific neurotransmitter systems indicating a selective vulnerability. These findings provide novel insight into the disease mechanisms underlying functional alterations. Our data-driven method opens the road to generate new hypotheses for pharmacological interventions in neurodegenerative diseases even beyond bvFTD.Funding:This study has been supported by the German Consortium for Frontotemporal Lobar Degeneration, funded by the German Federal Ministry of Education and Research (BMBF; grant no. FKZ01GI1007A).
 
 ## Introduction
 
@@ -61,37 +61,311 @@ Based on the above findings, we hypothesize that the spatial distribution of fAL
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We included 52 Caucasian patients with bvFTD (mean age = 61.5 ± 10.0 years; 14 females) and 22 Caucasian age-matched healthy controls (HC) (mean age = 63.6 ± 11.9 years; 13 females) examined in nine centers of the German Consortium for Frontotemporal Lobar Degeneration (http://www.ftld.de; Otto et al., 2011) into this study. Details regarding the distribution of demographic characteristics across centers are reported in Supplementary file 1a. Diagnosis was based on established international diagnostic criteria (Rascovsky et al., 2011). Written informed consent was collected from each participant. The study was approved by the ethics committees of all universities involved in the German Consortium for Frontotemporal Lobar Degeneration (Ethics Committee University of Ulm approval number 20/10) and was in accordance with the latest version of the Declaration of Helsinki. The clinical and neuropsychological test data included the Mini Mental State Exam (MMSE), Verbal Fluency (VF; animals), Boston Naming Test (BNT), Trail Making Test B (TMT-B), Apathy Evaluation Scale (AES) (companion-rated) (Glenn, 2005), Frontal Systems Behavior Scale (FrSBe) (companion-rated) incl. subscales (executive function [EF], inhibition, and apathy) (Grace and Malloy, 2001), and Clinical Dementia Rating-Frontotemporal Lobar Degeneration scale‐modified (CDR-FTLD) (Knopman et al., 2008). Demographic and neuropsychological test information for both groups is displayed in Table 1.
 
-## MRI acquisition and preprocessing of imaging data
+**Table 1.**
+ Demographic and clinical information for bvFTD patients and HC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">bvFTD</th>
+      <th colspan="2">HC</th>
+      <th colspan="2">Group comparison</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>61.5 ± 10.0</td>
+      <td>N = 52</td>
+      <td>63.6 ± 11.9</td>
+      <td>N = 22</td>
+      <td>t = −0.78</td>
+      <td>p = 0.44</td>
+    </tr>
+    <tr>
+      <td>Sex (male/female)</td>
+      <td>38/14</td>
+      <td>N = 52</td>
+      <td>9/13</td>
+      <td>N = 22</td>
+      <td>Χ² = 6.90</td>
+      <td>p = 0.009*</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>13.7 ± 3.19</td>
+      <td>N = 50</td>
+      <td>13.5 ± 2.56</td>
+      <td>N = 22</td>
+      <td>t = 0.21</td>
+      <td>p = 0.84</td>
+    </tr>
+    <tr>
+      <td>Disease duration (years)</td>
+      <td>3.98 ± 5.22</td>
+      <td>N = 49</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Verbal Fluency (number of animals)</td>
+      <td>12.2 ± 6.48</td>
+      <td>N = 49</td>
+      <td>27.5 ± 4.77</td>
+      <td>N = 19</td>
+      <td>t = −9.30</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+    <tr>
+      <td>Boston Naming Test (total score)</td>
+      <td>12.9 ± 2.79</td>
+      <td>N = 49</td>
+      <td>15.0 ± 0.22</td>
+      <td>N = 20</td>
+      <td>t = −3.28</td>
+      <td>p = 0.002*</td>
+    </tr>
+    <tr>
+      <td>Mini Mental State Exam (total score)</td>
+      <td>25.2 ± 4.48</td>
+      <td>N = 50</td>
+      <td>29.3 ± 0.64</td>
+      <td>N = 20</td>
+      <td>t = −4.03</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test B (s)</td>
+      <td>179 ± 84.4</td>
+      <td>N = 36</td>
+      <td>78.5 ± 22.0</td>
+      <td>N = 19</td>
+      <td>t = 5.09</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+    <tr>
+      <td>Apathy Evaluation Scale (total score)</td>
+      <td>32.7 ± 11.0</td>
+      <td>N = 35</td>
+      <td>9.50 ± 5.26</td>
+      <td>N = 4</td>
+      <td>t = 4.13</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+    <tr>
+      <td>Frontal Systems Behavior Scale(companion-rated, total frequency)</td>
+      <td>72.7 ± 16.1</td>
+      <td>N = 34</td>
+      <td>38.8 ± 12.3</td>
+      <td>N = 5</td>
+      <td>t = 4.49</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+    <tr>
+      <td>Frontal Systems Behavior Scale(companion-rated, total distress)</td>
+      <td>66.9 ± 21.0</td>
+      <td>N = 29</td>
+      <td>32 ± 9.56</td>
+      <td>N = 4</td>
+      <td>t = 3.25</td>
+      <td>p = 0.003*</td>
+    </tr>
+    <tr>
+      <td>Frontal Systems Behavior Scale: Executive Function(companion-rated, total distress)</td>
+      <td>23.6 ± 7.39</td>
+      <td>N = 34</td>
+      <td>11.8 ± 4.50</td>
+      <td>N = 4</td>
+      <td>t = 3.11</td>
+      <td>p = 0.004*</td>
+    </tr>
+    <tr>
+      <td>Clinical Dementia Rating-Frontotemporal Lobar Degeneration (total score)</td>
+      <td>8.06 ± 3.92</td>
+      <td>N = 45</td>
+      <td>0.05 ± 0.16</td>
+      <td>N = 19</td>
+      <td>t = 5.07</td>
+      <td>p &lt; 0.001*</td>
+    </tr>
+  </tbody>
+</table>
+
+_bvFTD – behavioral variant frontotemporal dementia, HC – healthy controls.*Significant at p < 0.05._
+
+### MRI acquisition and preprocessing of imaging data
 
 Structural T1-weighted magnetization-prepared rapid gradient-echo MRI and rsfMRI (TR = 2000 ms, TE = 30 ms, FOV = 64 × 64 × 30, voxel size = 3 × 3 × 5 mm, 300 volumes) were acquired on 3T devices. Table 2 reports center-specific imaging parameters confirming a high level of harmonization.
 
+**Table 2.**
+ Center-specific imaging parameters for structural and functional imaging.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Center</th>
+      <th colspan="5">rsfMRI</th>
+      <th colspan="4">Structural MRI</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>TE (ms)</th>
+      <th>TR (ms)</th>
+      <th>FOV(X, Y, Z)</th>
+      <th>Voxel size (mm)</th>
+      <th>Volumes</th>
+      <th>TE (ms)</th>
+      <th>TR (ms)</th>
+      <th>FOV(X, Y, Z)</th>
+      <th>Voxel size (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bonn</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>3.06</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Erlangen</td>
+      <td>34</td>
+      <td>3000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>2.98</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Göttingen</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 6</td>
+      <td>300</td>
+      <td>2.96</td>
+      <td>2300</td>
+      <td>256 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Homburg</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>2.98</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Leipzig</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>2.98</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>München (TU)</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 x 3 × 5</td>
+      <td>300</td>
+      <td>2.98</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Rostock</td>
+      <td>30</td>
+      <td>2200</td>
+      <td>64 × 64 × 34</td>
+      <td>3.5 × 3.5 × 3.5</td>
+      <td>300</td>
+      <td>4.82</td>
+      <td>2500</td>
+      <td>256 × 256 × 192</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Tübingen</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>2.96</td>
+      <td>2300</td>
+      <td>240 × 256 × 176</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+    <tr>
+      <td>Ulm</td>
+      <td>30</td>
+      <td>2000</td>
+      <td>64 × 64 × 30</td>
+      <td>3 × 3 × 5</td>
+      <td>300</td>
+      <td>2.05</td>
+      <td>2300</td>
+      <td>240 × 256 × 192</td>
+      <td>1 × 1 × 1</td>
+    </tr>
+  </tbody>
+</table>
+
+_rsfMRI – resting-state functional magnetic resonance imaging, MRI – magnetic resonance imaging, TE – echo time, TR – repetition time, FOV – field of view.Bonn – University of Bonn, German Center for Neurodegenerative Diseases (DZNE), University Hospital Bonn.Erlangen – University Hospital Erlangen.Göttingen – Medical University Göttingen.Homburg – Saarland University Hospital.Leipzig – Max-Planck-Institute for Human Cognitive and Brain Sciences.TU München – Technical University of Munich.Rostock – University Hospital Rostock, German Center for Neurodegenerative Diseases (DZNE).Tübingen – University Hospital Tübingen, Centre for Neurology, Hertie-Institute for Clinical Brain Research.Ulm – Ulm University._
+
 All initial preprocessing of imaging data was performed using SPM12 (Penny et al., 2011). To calculate voxel-wise GM volume (GMV), structural images were segmented, spatially normalized to MNI space, modulated, and smoothed by a Gaussian convolution kernel with 6 mm full-width at half maximum (FWHM). RsfMRI images were realigned, unwarped, co-registered to the structural image, spatially normalized to MNI space, and smoothed with a Gaussian convolution kernel with 6 mm FWHM. A GM mask was applied to reduce all analyses to GM tissue. Images were further processed in the REST toolbox (Song et al., 2011) version 1.8. Mean white matter and cerebrospinal fluid signals as wells as 24 motion parameters (Friston-24) were regressed out before computing voxel-based measures of interest. fALFF was calculated at each voxel as the root mean square of the blood oxygen level-dependent signal amplitude in the analysis frequency band (here: 0.01–0.08 Hz) divided by the amplitude in the entire frequency band (Song et al., 2011). fALFF is closely linked to FDG-PET and other measures of local metabolic activity as has been shown in healthy participants but also for example in Alzheimer’s disease (Deng et al., 2022; Marchitelli et al., 2018).
 
-## Contrast analyses of fALFF and GMV
+### Contrast analyses of fALFF and GMV
 
 To test for fALFF alterations, group comparisons were performed in SPM12 using a flexible-factorial design with group (bvFTD or HC) as a factor and age, sex, and site (i.e. one dummy variable per site) as covariates (Huotari et al., 2019). To test for group differences in GMV, the same design with addition of total intracranial volume (TIV) was used. Pairwise group t-contrasts (i.e. HC > bvFTD, bvFTD > HC) were evaluated for significance using an exact permutation-based cluster threshold (1000 permutations permuting group labels, p < 0.05) to control for multiple comparisons combined with an uncorrected voxel-threshold of p < 0.001. A permutation-based cluster threshold combined with an uncorrected voxel-threshold was used since standard correction methods such as a family wise error rate of 5% may lead to elevated false-positive rates (Eklund et al., 2016).
 
-## Spatial correlation with neurotransmitter density maps
+### Spatial correlation with neurotransmitter density maps
 
 Confounding effects of age, sex, and site were regressed out from all images prior to further spatial correlation analyses. To test if fALFF alterations in bvFTD patients (relative to HC) are correlated with specific neurotransmitter systems, the JuSpace toolbox (Dukart et al., 2021) was used. The JuSpace toolbox allows for cross-modal spatial correlations of different neuroimaging modalities with nuclear imaging derived information about the relative density distribution of various neurotransmitter systems. All neurotransmitter maps were derived as averages from an independent healthy volunteer population and processed as described in the JuSpace publication including rescaling and normalization into the Montreal Neurological Institute space. More specifically, we wanted to test if the spatial structure of fALFF maps in patients relative to HC is similar to the distribution of nuclear imaging derived neurotransmitter maps from independent healthy volunteer populations included in the toolbox (5-HT1a receptor [Savli et al., 2012], 5-HT1b receptor [Savli et al., 2012], 5-HT2a receptor [Savli et al., 2012], serotonin transporter [5-HTT; Savli et al., 2012], D1 receptor [Kaller et al., 2017], D2 receptor [Sandiego et al., 2015], dopamine transporter [DAT; Dukart et al., 2018], Fluorodopa [FDOPA; García Gómez et al., 2018], γ-aminobutyric acid type A [GABAa] receptors [Dukart et al., 2018; Myers et al., 2012], μ-opioid [MU] receptors [Aghourian et al., 2017], and norepinephrine transporter [NET; Hesse et al., 2017]). Detailed information about the publicly available neurotransmitter maps is provided in Supplementary file 1c. In contrast to standard analyses of fMRI data, this analysis might provide novel insight into potential neurophysiological mechanisms underlying the observed correlations (Dukart et al., 2021). Using the toolbox, mean values were extracted from both neurotransmitter and fALFF maps using GM regions from the Neuromorphometrics atlas. Extracted mean regional values of the patients’ fALFF maps were z-transformed relative to HC. Spearman correlation coefficients (Fisher’s z-transformed) were calculated between these z-transformed fALFF maps of the patients and the spatial distribution of the respective neurotransmitter maps. Exact permutation-based p-values as implemented in JuSpace (10,000 permutations randomly assigning group labels using orthogonal permutations) were computed to test if the distribution of the observed Fisher’s z-transformed individual correlation coefficients significantly deviated from zero. Furthermore, adjustment for spatial autocorrelation was performed by computing partial correlation coefficients between fALFF and neurotransmitter maps adjusted for local GM probabilities estimated from the SPM12-provided TPM.nii (Dukart et al., 2021). All analyses were false discovery rate (FDR) corrected for the number of tests (i.e. the number of neurotransmitter maps). To further test if and how the observed fALFF co-localization patterns are explained by the underlying global atrophy, we repeated the co-localization analysis (p < 0.05) for the significant fALFF–neurotransmitter associations after controlling for total GMV. Additionally, the receiver operating characteristic (ROC) curves and corresponding areas under the curve (AUC) were calculated for patients (Fisher’s z-transformed Spearman correlations) vs. HC (leave-one-out Z-score maps) to examine discriminability of the resulting fALFF–neurotransmitter correlations.
 
-## Correlation with structural data
+### Correlation with structural data
 
 To test if the significant correlations observed between fALFF and neurotransmitter maps were driven by structural alterations (i.e. partial volume effects), the JuSpace analysis using the same parameters was repeated with local GMV incl. a correction for confounding effects of age, sex, site, and TIV. For further exploration, fALFF and GMV Fisher’s z-transformed Spearman correlations as computed by the JuSpace toolbox were correlated with each other for each patient over all neurotransmitters. The median of those correlation coefficients was squared to calculate the variance in fALFF explained by GMV.
 
-## Correlation with clinical data
+### Correlation with clinical data
 
 To test if fALFF–neurotransmitter correlations are related to symptoms of bvFTD, we calculated Spearman correlation coefficients between significant fALFF–neurotransmitter correlations (Fisher’s z-transformed Spearman correlation coefficients from JuSpace toolbox output) and clinical scales and neuropsychological test data (see Table 1). All analyses were FDR corrected for the number of tests. In addition, to test for the specificity of these associations we examined the direct associations between fALFF and the neuropsychological tests by computing Spearman correlations with the Eigenvariates extracted from the largest cluster of the HC > bvFTD SPM contrast.
 
-## Association with gene expression profile maps
+### Association with gene expression profile maps
 
 Furthermore, to test if fALFF alterations in bvFTD patients associated with specific neurotransmitter systems in the JuSpace analysis were also spatially correlated with their underlying mRNA gene expression profile maps, the MENGA toolbox (Rizzo et al., 2016; Rizzo et al., 2014) was used. Z-scores were calculated for the patients relative to HC using the confound-corrected images. The analyses were performed using 169 regions of interest and genes corresponding to each significantly associated neurotransmitter from the JuSpace analysis (5-HT1b: HTR1B; 5-HT2a: HTR2A; GABAa (19 subunits): GABRA1–6, GABRB1–3, GABRG1–3, GABRR1–3, GABRD, GABRE, GABRP, GABRQ; NET: SLC6A2). More specifically, Spearman correlation coefficients were calculated between the genomic values and re-sampled image values in the regions of interest for each patient and for each mRNA donor from the Allen Brain Atlas (Hawrylycz et al., 2012) separately. The Fisher’s z-transformed correlation coefficients were averaged over the six mRNA donors. Bonferroni-corrected one-sample t-tests were performed for each neurotransmitter to examine, whether the correlation coefficient differed significantly from zero.
 
-## Neurotransmitter-genomic correlations and gene differential stability
+### Neurotransmitter-genomic correlations and gene differential stability
 
 To further examine the association of fALFF–neurotransmitter correlations and mRNA gene expression profile maps, we explored the relationship between neurotransmitter maps included in the JuSpace toolbox and mRNA maps provided in the MENGA toolbox. The MENGA analysis was repeated using the same parameters to obtain Fisher’s z-transformed Spearman correlation coefficients between the neurotransmitter maps and the mRNA gene expression profile maps.
 
@@ -99,21 +373,49 @@ To evaluate the robustness of the mRNA maps between donors, gene differential st
 
 ## Results
 
-## Contrast analysis of fALFF and GMV
+### Contrast analysis of fALFF and GMV
 
 First, we tested for group differences in fALFF between HC and patients. Compared to HC, bvFTD patients showed a significantly reduced fALFF signal in frontoparietal and frontotemporal regions (Figure 1A). Furthermore, patients also showed reduced GMV in medial and lateral prefrontal, insular, temporal, anterior caudate, and thalamic regions in comparison to HC (Figure 1B). For a detailed representation of the thresholded fALFF and GMV t-maps, see Figure 1—figure supplement 1. Cluster size, peak-level MNI coordinates, and corresponding anatomical regions incl. the additional fALFF analysis with correction for total GMV are reported in Supplementary file 1d. For the distribution of Eigenvariates for the two groups in both modalities, see Figure 1—figure supplement 2.
 
-## Spatial correlation with neurotransmitter maps
+![Figure 1.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig1-v1.jpg)
+
+**Figure 1.:** Thresholded fALFF t-map (A) and thresholded GMV t-map (B) for healthy control (HC; N = 22) > behavioral variant frontotemporal dementia (bvFTD; N = 52) using a permutation-based threshold (1000 permutations permuting group labels) at cluster-level p < 0.05 and voxel-level p < 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Thresholded fALFF t-map (A) and thresholded GMV t-map (B) for healthy control (HC; N = 22) > behavioral variant frontotemporal dementia (bvFTD; N = 52) using a permutation-based threshold (1000 permutations permuting group labels) at cluster-level p < 0.05 and voxel-level p < 0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Eigenvariates were derived from the largest cluster in the healthy control (HC; N = 22) > behavioral variant frontotemporal dementia (bvFTD; N = 52) contrasts for fALFF (A) and GMV (B). Means are represented by white circles.
+
+### Spatial correlation with neurotransmitter maps
 
 We performed correlation analyses to test if fALFF alterations in bvFTD significantly co-localize with the spatial distribution of specific neurotransmitter systems. fALFF alterations in bvFTD as compared to HC were significantly associated with the spatial distribution of 5-HT1b (mean r = −0.21, p < 0.001), 5-HT2a (mean r = −0.16, p = 0.0014), GABAa (mean r = −0.12, p = 0.0149), and NET (mean r = −0.13, p = 0.0157) (pFDR = 0.0157; Figure 2A). The directionality of these findings (i.e. a negative correlation) suggest bvFTD displayed stronger reductions in fALFF relative to HC in areas which are associated with a higher non-pathological density of respective receptors and transporters. When controlling for total GMV, the co-localization findings remained significant except for the co-localization with GABAa. The AUC resulting from the ROC curves between Spearman correlation coefficients of patients and controls revealed a good discrimination for 5-HT1b (AUC = 0.74) and 5-HT2a (AUC = 0.71) and a fair discrimination for GABAa (AUC = 0.68) and NET (AUC = 0.67) (Figure 3A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig2-v1.jpg)
+
+**Figure 2.:** Correlation of fractional amplitude of low-frequency fluctuation (fALFF) (A) and gray matter volume (GMV) (B) with spatial distribution of neurotransmitter systems incl. 95% confidence intervals. Correlations of Verbal Fluency (N = 49) (C) and Mini Mental State Exam (N = 50) (D) with fALFF–neurotransmitter strength of association incl. bootstrapped 95% confidence intervals. Correlations of fALFF with mRNA gene expression maps (N = 52) (E). Statistically significant correlations in (A), (B), and (E) are marked in red and means are represented by white circles. Black circles in (A), (B), and (E) represent individual Fisher’s z-transformed Spearman correlation coefficients for each patient (N = 52) relative to controls with each neurotransmitter map. Colored circles in (C) and (D) represent individual Fisher’s z-transformed Spearman correlation coefficients between fALFF–neurotransmitter correlations and each neuropsychological scale. The statistical significance of all correlation coefficients was evaluated at p < 0.05 including FDR correction for (A), (B), and (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Spearman correlation coefficients of mRNA gene expression maps with fALFF for all GABAa subunits (N = 52) (A) and their corresponding correlation matrix (B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig3-v1.jpg)
+
+**Figure 3.:** ROC curves for healthy controls (HC) vs. behavioral variant frontotemporal dementia (bvFTD) patients are displayed for significant fALFF–neurotransmitter correlations (NbvFTD = 52, NHC = 22) (A). Spearman correlation coefficients of fALFF–neurotransmitter and GMV–neurotransmitter correlations are displayed for each patient and each significant neurotransmitter (N = 52) (B). Spearman correlation coefficients of neurotransmitter and mRNA gene expression maps (C) and autocorrelations of mRNA gene expression maps averaged across mRNA donors (N = 6) (D) are displayed for significant fALFF–neurotransmitter associations incl. 95% confidence intervals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86085/elife-86085-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Spearman correlation coefficients of mRNA gene expression maps with the GABAa neurotransmitter map (N = 6) (A) and their mRNA autocorrelations (N = 6) (B). The genes encoding the 19 GABAa subunits include GABRA1–6, GABRB1–3, GABRG1–3, GABRR1–3, GABRD, GABRE, GABRP, and GABRQ. Means are represented by white circles.
+
 Next, we tested if similar co-localization patterns are observed with GMV. GMV alterations in bvFTD were not significantly associated with any of the neurotransmitter systems (Figure 2B). fALFF–neurotransmitter and GMV–neurotransmitter correlations displayed a positive yet weak association with structural alterations explaining only 10% of variance in the fALFF alterations (Figure 3B). All correlations and their corresponding permutation-based p-values incl. the analysis utilizing fALFF images additionally corrected for total GMV are provided in Supplementary file 1c. To exclude a potential bias caused by the collection of imaging data at different sites, we performed a Kruskal–Wallis test to examine differences on the Fisher’s z-transformed correlations coefficients across sites. No significant differences (X² = 6.34, p = 0.50, df = 7) were found among the sites.
 
-## Relationship to clinical symptoms
+### Relationship to clinical symptoms
 
 Furthermore, we tested if the significant fALFF–neurotransmitter correlation coefficients are also associated with symptoms or test results of bvFTD. After FDR correction (p = 0.0085), the strength of fALFF co-localization with NET distribution was significantly associated with VF (mean r = 0.37, p = 0.0086; N = 49; Figure 2C) and MMSE (mean r = 0.40, p = 0.0039; N = 50; Figure 2D). The positive correlation coefficients suggest that more negative correlations between fALFF and neurotransmitter maps were associated with lower test performance, that is the higher/more fALFF reductions in areas with high neurotransmitter density, the lower the test performance. Associations with other neuropsychological tests were not significant (Supplementary file 1c). We also tested if Eigenvariates extracted from the largest cluster of the HC > bvFTD contrast correlated with the specific symptoms of bvFTD (Supplementary file 1f). None of the correlations remained significant after correction for multiple comparisons.
 
-## Association with gene expression profile maps
+### Association with gene expression profile maps
 
 Next, we evaluated if co-localization of fALFF is also observed with mRNA gene expression underlying the significantly associated neurotransmitter systems. For genes encoding the 19 GABAa subunits, we first evaluated the variability between the subunits regarding their fALFF–mRNA correlations, their correlation with GABAa density and their mRNA autocorrelations (see Figure 2—figure supplement 1 and Figure 3—figure supplement 1). As the variability between the genes was high, we limited the analyses to genes encoding the three main subunits (GABRA1, GABRB1, and GABRG1).
 

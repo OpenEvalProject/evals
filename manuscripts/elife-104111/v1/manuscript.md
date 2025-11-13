@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02wn5qz54 School of Psychology and Neuroscience and Centre of Biophotonics, University of St Andrews St Andrews United Kingdom
+1. School of Psychology and Neuroscience and Centre of Biophotonics, University of St Andrews St Andrews United Kingdom ([ROR:02wn5qz54](https://ror.org/02wn5qz54))
 
 † Corresponding author
 

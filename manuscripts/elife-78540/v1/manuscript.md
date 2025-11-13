@@ -19,12 +19,12 @@
 
 ### Affiliations
 
-1. https://ror.org/013czdx64 Institute of Pathology, University Hospital Heidelberg Heidelberg Germany
-2. https://ror.org/04rcqnp59 Department of Modeling of Biological Processes, COS Heidelberg/BioQuant, Heidelberg University Heidelberg Germany
-3. https://ror.org/02tzt0b78 Institute of Biomedicine (IBIOMED), University of León León Spain
-4. https://ror.org/00ca2c886 Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBERehd), Instituto de Salud Carlos III Madrid Spain
-5. https://ror.org/05cj29x94 Leibniz Research Centre for Working Environment and Human Factors, Department of Toxicology, Technical University Dortmund Dortmund Germany
-6. https://ror.org/00jxshx33 Department of Forensic Medicine and Toxicology, Faculty of Veterinary Medicine, South Valley University Qena Egypt
+1. Institute of Pathology, University Hospital Heidelberg Heidelberg Germany ([ROR:013czdx64](https://ror.org/013czdx64))
+2. Department of Modeling of Biological Processes, COS Heidelberg/BioQuant, Heidelberg University Heidelberg Germany ([ROR:04rcqnp59](https://ror.org/04rcqnp59))
+3. Institute of Biomedicine (IBIOMED), University of León León Spain ([ROR:02tzt0b78](https://ror.org/02tzt0b78))
+4. Centro de Investigación Biomédica en Red de Enfermedades Hepáticas y Digestivas (CIBERehd), Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+5. Leibniz Research Centre for Working Environment and Human Factors, Department of Toxicology, Technical University Dortmund Dortmund Germany ([ROR:05cj29x94](https://ror.org/05cj29x94))
+6. Department of Forensic Medicine and Toxicology, Faculty of Veterinary Medicine, South Valley University Qena Egypt ([ROR:00jxshx33](https://ror.org/00jxshx33))
 
 † Corresponding author
 
@@ -44,11 +44,19 @@ Our study comprises a quantitative and mechanistic analysis of YAP/TAZ dynamics 
 
 ## Results
 
-## Establishment of an in vitro model for measuring time-resolved spatial localization of YAP and TAZ in hepatocellular cells
+### Establishment of an in vitro model for measuring time-resolved spatial localization of YAP and TAZ in hepatocellular cells
 
 Due to technical limitations, primary human hepatocytes are not suitable for the analysis of dynamic YAP/TAZ shutting in vitro: they rapidly undergo trans-differentiation in culture and different human donors exhibit genomic/epigenetic variability, which diminish reproducibility. We therefore selected the hepatocyte-derived liver cancer cell line Hep3B that was characterized by a prominent YAP/TAZ and cytochrome P450 2E1 (CYP2E1) expression (Figure 1—figure supplement 1A; Weiler et al., 2020). Detectable CYP2E1 levels are required for the enzymatic transformation of APAP to toxic N-acetyl-p-benzoquinone imine (NAPQI) (Lee et al., 1996).
 
 Since we were interested in cell-to-cell variability and spatial localization information of YAP and TAZ, we established a cell line that allowed the quantitative and spatiotemporal investigation of subcellular YAP/TAZ distribution near the single-cell resolution. For this, we generated Hep3B cells that stably express mVenus-tagged YAP (mVenus-YAP) and mCherry-tagged TAZ (mCherry-TAZ) (Figure 1A). In addition, mCerulean-tagged histone H2B (mCerulean-H2B) allowed the spatial allocation of YAP/TAZ. These chosen fluorophores facilitated optimal discrimination between emission spectra by live cell microscopy (Figure 1—figure supplement 1B). Subcellular localization changes of tagged YAP and TAZ under variable cell density conditions illustrated functionality of both proteins regarding nuclear–cytoplasmic shuttling (Figure 1B). However, we observed a high degree of intracellular variability.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig1-v1.jpg)
+
+**Figure 1.:** (A) The hepatocyte-derived cell line Hep3B was transduced using three lentiviral vectors coding for mCerulean-tagged H2B (pLentiPGK-mCerulean-H2B), mVenus-tagged YAP (pRRLN-EF1α-mVenus-YAP), and mCherry-tagged TAZ (pRRLN-EF1α-d2mCherry-TAZ). Combined treatment with the antibiotics hygromycin, geneticin, and blasticidin selected for triple-positive cells. Cells were confocally imaged in three channels: 445 nm (CFP, mCerulean), 514 nm (YFP, mVenus), and 561 nm (RFP, mCherry). Scale bar: 250 µm. (B) Exemplary pictures illustrating the subcellular localization of H2B, YAP, and TAZ proteins under low (left) and high (right) cell density conditions. Scale bar: 50 µm. (C) Automatic image analysis workflow depicts analysis of nuclear (left) and cytoplasmic (right) fluorescence intensity in confocal images of living cells. The acquired images were prescreened for imaging artifacts (e.g., out-of-focus images were excluded) and subjected to the image analysis pipeline in Fiji. Object classification (Weka algorithm), thresholding, and object counting were performed. Object masks were overlaid with original data and the nuclear/cytoplasmic ratio (NCR) was calculated by dividing average fluorescent signal intensity of YAP/TAZ in the nucleus with the fluorescence intensity in the cytoplasm. Scale bar: 50 µm. (D) Quantification of YAP and TAZ NCR under increasing cell density conditions. One of four representative experiment is depicted. Left: the NCR of YAP (yellow, n = 310) and TAZ (red, n = 310) was plotted against cell count per visual field (0.4 mm2). A high NCR value indicates predominant nuclear localization. Dashed line shows mean cell count. Right: violin plots summarize shift in NCR between low (below mean cell count) and high (above mean cell count) cell density for YAP and TAZ.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western immunoblotting of cell lines HepG2, SNU182, HLF, and Hep3B, which were tested for the abundance of cytochrome P450 2E1 (CYP2E1/Cyp450), a liver enzyme which metabolizes APAP. Hep3B cells show a prominent CYP2E1 expression. GAPDH serves as a loading control. (B) Emission and excitation spectra of mVenus, mCerulean, and mCherry fluorophores. Dotted line represents the wavelength of lasers, which were used for the confocal microscopy setup. (C) Exemplary segmentation results of the image analysis pipeline for nuclei, YAP and TAZ localization under low and high cell density conditions are shown. Yellow lines represent outlines of the segmented areas for the cytoplasmic positivity (either YAP-mVenus or TAZ-mCherry) or nuclear positivity (defined by H2B-mCerulean). Images are gamma corrected (γ = 0.5). Scale bar: 100 µm.
 
 For analysis of variable high-throughput data, we developed an algorithm for the semiquantitative measurement of tagged YAP and TAZ in nuclei and cytoplasm. In brief, spatial image data were classified based on the expression of mVenus-YAP and mCherry-TAZ using the Weka segmentation algorithm (Figure 1C, Figure 1—figure supplement 1C; Arganda-Carreras et al., 2017). The fluorophore intensity measurements were used to calculate the nuclear/cytoplasmic ratio (NCR), which characterized the relative nuclear enrichment of YAP or TAZ. Therefore, this approach allowed us to simultaneously define slightest subcellular changes of YAP and TAZ in small cell populations (field of view, FOV) as well as individual cells under live cell conditions.
 
@@ -56,11 +64,23 @@ Subsequently, the fluorophore-expressing cells were grown under variable cell de
 
 Together, the confocal imaging and image processing pipeline efficiently detects subtle differences in the dynamic subcellular changes of YAP and TAZ.
 
-## Mathematical modeling predicts nuclear phosphorylation of YAP and TAZ
+### Mathematical modeling predicts nuclear phosphorylation of YAP and TAZ
 
 To investigate why Hippo pathway effectors YAP and TAZ differently respond to a low cell density and which Hippo pathway topology can explain the observed localization differences, we mathematically modeled the Hippo pathway using a PDE modeling framework (for detailed description of the PDE modeling approach refer to Materials and methods and Appendix 1).
 
 First, we investigated a canonical Hippo pathway model, where phosphorylation takes place in the cytoplasm and where unphosphorylated YAP/TAZ shuttle to the nucleus (Figure 2A). However, this mathematical model was not able to reproduce the localization patterns which were observed in the experimental data (Figure 2B). For example, the model cannot sufficiently explain the distribution of YAP and TAZ in cell nuclei or at the nuclear membrane. In detail, the cell area around the nuclear envelope on the cytoplasmic side strongly underrepresented the concentration of YAP/TAZ, as indicated by the blue pixels in the residual image (experimental data minus model simulation). Moreover, the simulated YAP/TAZ distribution pattern of the canonical model showed a decreased protein concentration in the center of the nucleus, with increasing gradient toward the nuclear envelope. This indicates that the experimental observation is dominated by a protein that is disseminated from the nucleus and undergoes diffusion and degradation. The canonical Hippo pathway cannot explain this effect, illustrated by residuals (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig2-v1.jpg)
+
+**Figure 2.:** (A) The model reaction scheme of the canonical Hippo pathway. Only unphosphorylated YAP/TAZ can enter the nucleus, whereas pYAP and pTAZ are exclusively localized to the cytosol. The phosphorylation of YAP/TAZ takes place exclusively outside nuclei. (B) Partial differential equation (PDE) model simulation of the canonical Hippo pathway compared to the experimentally measured YAP/TAZ localization. The residuals (experimental data minus model simulation) indicate low spatial accordance of the model simulation with the experimentally measured subcellular localization of YAP/TAZ. Images were normalized to the maximal value within each image. Nuclear outline is indicated in black. (C) The model reaction scheme of the alternative Hippo pathway model. Phosphorylation and dephosphorylation of YAP/TAZ take place in the nucleus. Unphosphorylated YAP/TAZ is imported in the nucleus and phosphorylated YAP/TAZ is rapidly exported to the cytoplasm. (D) PDE simulation of the alternative model compared to experimental data. Residuals for the subcellular localization (e.g., nuclear distribution) sufficiently reflect results from confocal microscopy. Nuclear outline is indicated in black. (E) Simulated impact of the nuclear phosphorylation to dephosphorylation ratio on subcellular localization of YAP in the alternative Hippo pathway model. Left: model simulation of two phosphorylation/dephosphorylation rates (0.17 and 0.75). Right: summarized residuals with respect to experimental data of YAP and TAZ as a function of phosphorylation to dephosphorylation ratio in the nucleus. (F) Western immunoblot after nuclear and cytoplasmic protein fractionation under low cell density conditions. The central Hippo pathway kinases LATS1/2 were detectable in the nuclear fraction. As expected, high pYAP levels are detectable in the cytoplasm, illustrating that the protein is transported outside the nucleus upon phosphorylation. PARP and Tubulin serve as loading controls for nuclear and cytoplasmic fractions, respectively. Equal amounts of cytoplasmic and nuclear proteins were loaded (n = 4; one representative experiment shown). (G) Proximity ligation assay (PLA) for phosphorylated LATS1/2 (pLATS1/2) and YAP (top row). Red dots indicate physical interaction between pLATS1/2 and YAP. DAPI (4′,6-diamidino-2-phenylindole)-stained nuclei are indicated in cyan. Individual pLATS and YAP antibodies serve as assay controls. Bottom row: computational segmentation of nuclei (empty circles) and dots (black spots). Scale bar: 50 µm. (H) Quantification of the PLA assay. Each dot represents an individual image. Left: quantification of interactions between YAP and pLATS1/2 in the nucleus (n = 18) compared to the negative controls (pLATS1/2 and YAP antibodies alone, n = 16 and n = 17, respectively). Right: the number of PLA dots of pLATS1/2 and YAP interaction in cytoplasm and in nuclei (n = 18). Statistical test: two-tailed paired t-test (p value = 0.01) **p ≤ 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Best value of the objective function of all fitted YAP and TAZ alternative models. Orange and red dots indicate best 30 models for YAP and TAZ, respectively. (B) Distribution of parameter values for each fitted parameter of alternative Hippo pathway models for YAP (orange) and TAZ (red) proteins. Here, 200 models were obtained by parameter estimation method with particle swarm algorithm (200 iterations, 20 particles). Obtained parameters are plotted within the min and max values of the evaluated parameter space boundaries. Black dots indicate parameter values obtained from the 30 best models for YAP and TAZ. (C) Steady-state values of YAP/TAZ and pYAP/pTAZ concentrations in nuclei and cytoplasm of an exemplary alternative model for YAP and TAZ (model simulation depicted in Figure 2D). (D) Alternative model simulations with respect to changes in phosphorylation to dephosphorylation ratio (phos./dephos. ratio). Increasing phos./dephos. ratio drives YAP protein from mainly nuclear localization to the cytoplasm, mirroring the differences between YAP and TAZ localization under low cell density conditions in a steady-state.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) First steps of the image analysis pipeline involve generation of probability maps by applying trained Weka segmentation model onto images of nuclei and PLA dots. Further, by setting a threshold to the probability maps, masked images of nuclei and dots are generated. IF: immunofluorescence. (B) The number of dots within the area of nuclear and cytoplasmic mask is counted. Cytosolic mask was obtained by expanding the nuclear area for 30 iterations using ImageJ’s dilate function. This generated a cytoplasmic area comparable to the respective nuclear area for each cell.
 
 This let us conclude that alternative model topologies must be considered to explain the experimental data. We therefore generated an alternative PDE model, which precisely described YAP/TAZ localization as observed in the image data. In this model, a phosphorylation and dephosphorylation reaction of YAP and TAZ in the nucleus was included (Figure 2C,D, Figure 2—figure supplement 1A, B). Moreover, the alternative model describes that unphosphorylated YAP/TAZ are transported to the nucleus and pYAP/pTAZ are rapidly excluded from the nucleus, which agrees with the general consensus that phosphorylated YAP and TAZ predominantly localize in the cytoplasm (Figure 2—figure supplement 1C). Using well-fitting parametrization of the model, the simulated concentration pattern was dominated by phosphorylated YAP/TAZ disseminating from the nucleus, which now matched the observed experimental data well (Figure 2D).
 
@@ -72,11 +92,23 @@ The results of the alternative mathematical model required that major components
 
 In summary, our findings suggest that nuclear YAP/TAZ phosphorylation contributes to their inactivation and nuclear exclusion. Moreover, variable phosphorylation rates of YAP and TAZ explain the subcellular shuttling differences between both factors.
 
-## APAP regulates YAP protein localization and activity
+### APAP regulates YAP protein localization and activity
 
 To test if our findings are of relevance under conditions where YAP and TAZ are actively regulated, we decided to use a drug-induced liver injury (DILI) model. For this, we treated Hep3B cells expressing tagged mVenus-YAP and mCherry-TAZ with APAP (10 nM) (Barbier-Torres et al., 2017), and quantitatively investigated the dynamic shuttling of both factors.
 
 Image quantification revealed that APAP led to a gradual and time-dependent nuclear enrichment of YAP after 48 hr, while TAZ only weakly responded to APAP (Figure 3A,B). This APAP-induced nuclear shuttling effect was clearly detectable under high cell density culture conditions, which is characterized by nuclear YAP/TAZ exclusion. Effects on YAP were less pronounced 24 hr after APAP administration (Figure 3—figure supplement 1A,B). No obvious response was detectable for YAP and TAZ at earlier time points post APAP treatment (data not shown). Severe effects of APAP on cell toxicity and apoptosis in the chosen experimental setup were excluded by measuring cell viability and PARP cleavage (data not shown).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig3-v1.jpg)
+
+**Figure 3.:** (A) Live cell confocal imaging of H2B-mCerulean, YAP-mVenus, and TAZ-mCherry in Hep3B cells. Upper row: control treatment (phosphate-buffered saline, PBS). Lower row: APAP treatment (10 mM) induces nuclear enrichment of YAP, but not TAZ protein after APAP treatment within 48 hr (n = 4; one representative experiment shown). Scale bar: 50 µm. (B) Live cell confocal microscopy image quantification. Nuclear/cytoplasmic ratio (NCR) of YAP and TAZ with APAP (10 mM for 48 hr; yellow and red circles, n = 180 per channel) and control (PBS; gray circles, n = 180 per channel) treatment under increasing cell density conditions (represented as mean cell count per visual field). Each dot represents a single visual field. Dashed line: mean cell density. (C) Western immunoblot of YAP and pYAP after APAP treatment (10 mM) in Hep3B cells (n = 6; one representative experiment shown). GAPDH served as a loading control. (D) Relative expression of the YAP target genes ANKRD1 and CYR61 24 hr after APAP (10 mM) treatment in HLF cells (n = 2; one out of two biological replicates shown). (E) Rescue experiment: relative expression of YAP and its target genes CYR61 and ANKRD1 with and without siRNA-mediated YAP inhibition (for 24 hr) with or without APAP (10 mM) treatment for 24 hr (n = 2; one out of two biological replicates shown).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The subcellular localization of YAP and TAZ 24 hr after and APAP 10 (mM) treatment in comparison to untreated cells (ctrl). Scale bar: 100 µm. (B) Quantification of the YAP and TAZ nuclear/cytoplasmic ratio (NCR) dynamics in relation to cell density changes 24 hr after APAP (10 mM) treatment. (C) Time-dependent dynamics of YAP and pYAP expression after APAP (10 mM) treatment in HepG2 cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The pYAP to YAP and pAKT to AKT ratio was quantified. Panel A corresponds to Figure 3C; B – 4A; C – 4C, D – 4D, E – 4E, F – 4F.
 
 The APAP-induced nuclear enrichment of YAP was confirmed with cell population-based Western immunoblotting followed by detection of total and phosphorylated YAP (Figure 3C, for quantification of all western blots see Figure 3—figure supplement 2). Notably, at early time points YAP hyperphosphorylation indicated protein inactivation (up to 3 hr after APAP administration). However, between 24 and 48 hr after APAP treatment, a clear YAP dephosphorylation was detectable (Figure 3C). Similar results were observed for another hepatocyte-derived cell line (Figure 3—figure supplement 1C).
 
@@ -84,7 +116,7 @@ To test if APAP-dependent dephosphorylation/activation of YAP at later time poin
 
 Together, these data demonstrate that APAP predominantly acts on the Hippo pathway effector YAP in a bimodal manner. Upon APAP treatment an immediate phosphorylation/inactivation of YAP is followed by its late dephosphorylation/activation.
 
-## APAP controls YAP phosphorylation via ROS and AKT
+### APAP controls YAP phosphorylation via ROS and AKT
 
 Based on previous data, we hypothesized a mechanistic connection between APAP-induced ROS (Barbier-Torres et al., 2017; Shuhendler et al., 2014) and AKT-driven YAP phosphorylation (Basu et al., 2003; Romano et al., 2010). This mechanistic link was investigated at early time points after APAP treatment (up to 3 hr) to exclude unspecific effects caused by APAP at later time points (e.g., due to secondary and/or unspecific APAP effects).
 
@@ -92,7 +124,7 @@ Western immunoblotting showed that both YAP and AKT were phosphorylated early af
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig4-v1.jpg)
 
-**Figure 4.:** (A) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT after APAP (10 mM) administration in Hep3B cells after 1 hr (Hep3B). The concentration of pYAP and pAKT is induced after APAP treatment in comparison to phosphate-buffered saline (PBS)-treated cells (ctrl); n = 2. (B) Spectrophotometric ROS measurement after APAP (10 mM), hydrogen peroxide (H2O2, 2 mM), and tert-butyl hydroperoxide (TBHP, 300 µM) treatment in Hep3B cells after 6 hr (n = 8 technical replicates, one out of two biological replicates is shown). APAP as well as H2O2 and TBHP induce ROS formation in living cells. Statistical test: one-way analysis of variance (ANOVA) with Geisser–Greenhouse correction (adjusted p value = 0.001) ***p-value ≤ 0.001. Whiskers depict min and max of the dataset. (C) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT after H2O2 (2 mM) and APAP (10 mM) treatment for 1 hr. APAP, as well as H2O2 induce YAP and AKT phosphorylation compared to untreated cells (ctrl); n = 4. (D) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT dynamics after TBHP (300 µM) and APAP (10 mM) treatment for 2 hr (Hep3B). APAP and TBHP induce AKT and YAP phosphorylation as compared to respective controls (ctrl). (E) Western immunoblot analysis of pAKT, AKT, pYAP, and YAP after hepatocyte growth factor (HGF) treatment (10 ng/µl) for 10 min (Hep3B). The cells were pretreated with an AKT inhibitor VIII (AKTi, 1, 5, and 10 µM) and starved for 3 hr prior HGF administration. Data illustrate that AKT inhibition prevents HGF-induced AKT and YAP phosphorylation. (F) Western immunoblot of pAKT, AKT, pYAP, and YAP after APAP (10 mM) administration for 1 hr (Hep3B). Cells were starved in Fetal calf serum (FCS)-free medium and pretreated with AKTi (5 µM) before APAP treatment for 3 hr. Results demonstrate that AKT inhibition reduces YAP phosphorylation early after APAP treatment. (G) Proximity ligation assay (PLA) of the protein combinations YAP/AKT and pYAP/pAKT. Red dots indicate interactions between YAP/AKT and pYAP/pAKT, respectively. DAPI-stained nuclei are depicted in cyan. Single YAP, AKT, pYAP, and pAKT stains serve as assay controls. Bottom row: segmentation of the nuclei (empty circles) and dots (black spots). One out of two representative experiment is shown. Scale bar: 50 µm. (H) Quantification of the interactions between YAP/AKT and pYAP/pAKT in the nucleus (experiment shown in G). One symbol represents one image (YAP = 17, AKT = 16, YAP-AKT = 22, pYAP = 24, pAKT = 25, pYAP-pAKT = 23). (I) PLA showing YAP–AKT interaction units per nuclei of untreated (ctrl, n = 12) and APAP-treated cells (10 mM, for 2 hr, n = 20). APAP treatment induces nuclear interaction between YAP and AKT. Statistical test: unpaired two-tailed parametric t-test (p value = 0.0155). For A and C–F, actin served as loading control.Figure 4—source data 1.Figure 4A,C-F.
+**Figure 4.:** (A) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT after APAP (10 mM) administration in Hep3B cells after 1 hr (Hep3B). The concentration of pYAP and pAKT is induced after APAP treatment in comparison to phosphate-buffered saline (PBS)-treated cells (ctrl); n = 2. (B) Spectrophotometric ROS measurement after APAP (10 mM), hydrogen peroxide (H2O2, 2 mM), and tert-butyl hydroperoxide (TBHP, 300 µM) treatment in Hep3B cells after 6 hr (n = 8 technical replicates, one out of two biological replicates is shown). APAP as well as H2O2 and TBHP induce ROS formation in living cells. Statistical test: one-way analysis of variance (ANOVA) with Geisser–Greenhouse correction (adjusted p value = 0.001) ***p-value ≤ 0.001. Whiskers depict min and max of the dataset. (C) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT after H2O2 (2 mM) and APAP (10 mM) treatment for 1 hr. APAP, as well as H2O2 induce YAP and AKT phosphorylation compared to untreated cells (ctrl); n = 4. (D) Western immunoblot analysis of pYAP, YAP, pAKT, and AKT dynamics after TBHP (300 µM) and APAP (10 mM) treatment for 2 hr (Hep3B). APAP and TBHP induce AKT and YAP phosphorylation as compared to respective controls (ctrl). (E) Western immunoblot analysis of pAKT, AKT, pYAP, and YAP after hepatocyte growth factor (HGF) treatment (10 ng/µl) for 10 min (Hep3B). The cells were pretreated with an AKT inhibitor VIII (AKTi, 1, 5, and 10 µM) and starved for 3 hr prior HGF administration. Data illustrate that AKT inhibition prevents HGF-induced AKT and YAP phosphorylation. (F) Western immunoblot of pAKT, AKT, pYAP, and YAP after APAP (10 mM) administration for 1 hr (Hep3B). Cells were starved in Fetal calf serum (FCS)-free medium and pretreated with AKTi (5 µM) before APAP treatment for 3 hr. Results demonstrate that AKT inhibition reduces YAP phosphorylation early after APAP treatment. (G) Proximity ligation assay (PLA) of the protein combinations YAP/AKT and pYAP/pAKT. Red dots indicate interactions between YAP/AKT and pYAP/pAKT, respectively. DAPI-stained nuclei are depicted in cyan. Single YAP, AKT, pYAP, and pAKT stains serve as assay controls. Bottom row: segmentation of the nuclei (empty circles) and dots (black spots). One out of two representative experiment is shown. Scale bar: 50 µm. (H) Quantification of the interactions between YAP/AKT and pYAP/pAKT in the nucleus (experiment shown in G). One symbol represents one image (YAP = 17, AKT = 16, YAP-AKT = 22, pYAP = 24, pAKT = 25, pYAP-pAKT = 23). (I) PLA showing YAP–AKT interaction units per nuclei of untreated (ctrl, n = 12) and APAP-treated cells (10 mM, for 2 hr, n = 20). APAP treatment induces nuclear interaction between YAP and AKT. Statistical test: unpaired two-tailed parametric t-test (p value = 0.0155). For A and C–F, actin served as loading control.
 
 To confirm the rapid and AKT-dependent phosphorylation of YAP, liver cells were treated with hepatocyte growth factor (HGF), which activates/phosphorylates AKT kinases via binding the receptor c-MET within 10 min (Xiao et al., 2001). HGF administration led to a clear phosphorylation of AKT but not YAP, which might be caused by saturation effects (no further YAP phosphorylation possible under given culture conditions) (Figure 4E). However, simultaneous inhibition of AKT kinase activity by the specific inhibitor AKTi (Adlung et al., 2017; Barnett et al., 2005), not only abolished AKT phosphorylation but also reduced YAP phosphorylation (Figure 4E). As expected, upon AKTi administration concomitantly with APAP, the phosphorylation of both AKT and YAP decreased (Figure 4F).
 
@@ -100,11 +132,19 @@ Since our alternative PDE model predicted that the nuclear YAP phosphorylation i
 
 In summary, our data show that APAP affects YAP activity and shuttling behavior by enhancing cellular ROS followed by nuclear AKT/YAP binding and YAP phosphorylation.
 
-## Sequential activation of ROS, AKT, and Hippo/YAP in mouse livers after APAP intoxication
+### Sequential activation of ROS, AKT, and Hippo/YAP in mouse livers after APAP intoxication
 
 The results of our mathematical model (Figure 2) and the in vitro experiments (Figure 3 and Figure 4) demonstrated a distinct sequence of molecular events that control YAP activity after APAP exposure: ROS induction is followed by AKT activation and YAP phosphorylation/inactivation (early events – up to 6 hr). This is followed by phase, where YAP is dephosphorylated and transcriptionally active (late events – 24 to 48 hr).
 
 To confirm this in vivo, mice were injected with a hepatotoxic dose of APAP (300 mg/kg) and liver tissues were collected up to 16 days (in total at nine time points). Subsequently, liver specimens were subjected to expression profiling and results were investigated regarding the presence of gene signatures specific for ROS, AKT, and Hippo/YAP activity (De Marco et al., 2017; Han et al., 2008; Wang et al., 2018). The experimental results showed that gene expression of ROS, AKT, and Hippo/YAP target genes in livers was altered and prominently activated between 6 hr and 2 days after APAP treatment (Figure 5A–C). To compare the temporal dynamic of the gene signatures, z-scores of genes in the signature per time point were summarized and normalized to the number of genes in the signature. As indicated by the results from the cell culture experiments, the expression index illustrated a specific order of signature activation starting with ROS (6–12 hr), followed by AKT (12 hr to 1 day) and Hippo/YAP signature genes (1–2 days) (Figure 5D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig5-v1.jpg)
+
+**Figure 5.:** Gene expression profiling over time of mouse livers after APAP treatment (A–C) was performed for up to 16 days (3–5 animals/group, 300 mg/kg). Abundance of gene signatures characteristic for the activity of ROS consisting of 23 genes (Han et al., 2008) (A), AKT (B) with 28 genes (De Marco et al., 2017) and YAP (C) consisting of 23 genes (Wang et al., 2018) were analyzed. In A–C, gene expression values are z-score normalized. (D) Summarized gene expression scores (expression index) over time illustrate the timely order of ROS (max values between 6 and 12 hr), AKT (max values between 12 hr and 1 day) and YAP (max values between 1 and 2 days) target gene signatures after APAP treatment. (E) Mouse liver tissue sections stained for YAP (top tow) and total AKT (bottom row) under control condition and at 6 hr as well as 1, 2, 6, and 16 days after APAP treatment (300 mg/kg). Arrows indicate high YAP and AKT positivity in nuclei. Scale bar: 50 µm. (F) Automatic quantification of nuclei with YAP and AKT positivity in mouse liver tissues. Each dot represents the count of stained nuclei in one image (a tile, 1 mm2) for YAP (n = 733) and AKT (n = 520). (G) Quantification of YAP and AKT nuclear positivity 6 hr and 2 days after APAP treatment. One dot represents the average count of positive nuclei in one animal (n = 4).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78540/elife-78540-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Exemplary quantification workflow for YAP-positive nuclei in mouse liver tissues. Top row: Immunohistochemistry (IHC) stain for YAP in untreated tissue samples and after APAP treatment (300 mg/kg). The respective time after APAP treatment is indicated above. Middle row: probability maps obtained by the trained model. Bottom row: detected nuclei after applying threshold on the probability maps.
 
 To confirm the findings from the gene expression analysis, we performed immunohistochemical staining of liver tissues isolated at five time points after APAP treatment. Staining for total YAP illustrated not only a general increase of YAP positivity in the cytoplasm of surviving hepatocytes, but also its prominent nuclear accumulation after 1–2 days (Figure 5E, arrows). Moreover, nuclear AKT enrichment was already detectable 6 hr after APAP treatment. Interestingly, nuclear AKT accumulation in hepatocytes remained high for the rest of the experiment compared to untreated mice (Figure 5E, arrows).
 
@@ -138,9 +178,376 @@ In our manuscript, we show that APAP administration induces a chain of molecular
 
 ## Materials and methods
 
-## In vitro experiments
+**Key resources table**
 
-## Cell culture and the establishment of genetically modified cells
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>YAP</td>
+      <td>Prof. Loewer(TU Darmstadt)</td>
+      <td>ENSG00000137693</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TAZ</td>
+      <td>Cloned</td>
+      <td>ENSG00000018408</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>Hep3B</td>
+      <td>DSMZ</td>
+      <td>#ACC93</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>HepG2</td>
+      <td>LGC</td>
+      <td>ATCC-HB-8065</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>HLF</td>
+      <td>JCRB</td>
+      <td>JCRB0405</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>SNU182</td>
+      <td>ATCC</td>
+      <td>CRL-2235</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pRRLN-EF1α-mVenus-YAP</td>
+      <td>Prof. Loewer(TU Darmstadt)</td>
+      <td>End-to-end sequencing</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pRRLN-EF1α-d2mCherry-TAZ</td>
+      <td>This paper</td>
+      <td>End-to-end sequencing</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pLentiPGK-mCerulean-H2B</td>
+      <td>Addgene</td>
+      <td>90234</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AKT inhibitor VIII</td>
+      <td>Merck Millipore</td>
+      <td>124018</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA YAP#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CCACCAAGCUAGAUAAAGA-dT-dT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA YAP#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGUCAGAGAUACUUCUUAA-dT-dT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>control siRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>UGGUUUACAUGUCGACUAA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2650491</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pYAP (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2218913</td>
+      <td>WB (1:400)PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAKT (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2315049</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AKT (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_329827</td>
+      <td>WB (1:1000)PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (mouse monoclonal)</td>
+      <td>MP Biomedicals, Solon</td>
+      <td>RRID:AB_2335127</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LATS1 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-398560</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LATS2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-515579</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pLATS1/2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_10971635</td>
+      <td>WB (1:500)PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CYP2E1 (rabbit unknown)</td>
+      <td>Novus Biologicals</td>
+      <td>RRID:AB_11021447</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PARP (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2160739</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Tubulin (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_2288090</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (chicken polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>RRID:AB_10615768</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_10612397</td>
+      <td>PLA (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAKT (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_331158</td>
+      <td>PLA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_2650491</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AKT (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>RRID:AB_329827</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROS assay kit</td>
+      <td>Abcam</td>
+      <td>ab287839</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>YAP (human) – forward</td>
+      <td>This paper</td>
+      <td>NM_006106</td>
+      <td>CCTGCGTAGCCAGTTACCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>YAP (human) – reverse</td>
+      <td>This paper</td>
+      <td>NM_006106</td>
+      <td>CCATCTCATCCACACTGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANKRD1 (human) – for</td>
+      <td>This paper</td>
+      <td>NM_014391.3</td>
+      <td>AGTAGAGGAACTGGTCACTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ANKTD1 (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_014391.3</td>
+      <td>TGGGCTAGAAGT GTCTTCAGA T</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CYR61 (human) – for</td>
+      <td>This paper</td>
+      <td>NM_001554.5</td>
+      <td>AGCCTCGCATCCTATACAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CYR61 (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_001554.5</td>
+      <td>TTCTTTCACAAGGCGGCACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH (human) – for</td>
+      <td>This paper</td>
+      <td>NM_002046.7</td>
+      <td>CTGGTAAAGTGGATATTGTTGCCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_002046.7</td>
+      <td>TGGAATCATATTGGAACATGTAAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL41 (human) – for</td>
+      <td>This paper</td>
+      <td>NM_001035267</td>
+      <td>AAACCTCTGCGCCATGAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL41 (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_001035267</td>
+      <td>AGCGTCTGGCATTCCATGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SRDF4 (human) – for</td>
+      <td>This paper</td>
+      <td>NM_005626</td>
+      <td>TGCAGCTGGCAAGACCTAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SRSF4 (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_005626</td>
+      <td>TTTTTGCGTCCCTTGTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2M (human) – for</td>
+      <td>This paper</td>
+      <td>NM_004048</td>
+      <td>CACGTCATCCAGCAGAGAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B2M (human) – rev</td>
+      <td>This paper</td>
+      <td>NM_004048</td>
+      <td>TGCTGCTTACATGTCTCGAT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASAP software</td>
+      <td>https://github.com/computationalpathologygroup/ASAP</td>
+      <td>v1.6</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Rueden et al., 2017</td>
+      <td>v1.53f51</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Weka segmentation</td>
+      <td>Arganda-Carreras et al., 2017</td>
+      <td>v3.3.1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilastik</td>
+      <td>Berg et al., 2019</td>
+      <td>v1.3.3</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spatial Model Editor</td>
+      <td>https://spatial-model-editor.github.io</td>
+      <td>v1.2.1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>sme-contrib</td>
+      <td>https://spatial-model-editor.github.io</td>
+      <td>v0.014</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+### In vitro experiments
+
+#### Cell culture and the establishment of genetically modified cells
 
 The hepatocyte-derived cell lines Hep3B (#ACC93, DSMZ, Braunschweig, Germany), HLF (JCRB, Japan), HepG2, and SNU182 (ATCC/LGC Standards, Wesel, Germany) were cultured in Minimum Essential Medium (MEM), Dulbeccos Modified Eagle Medium (DMEM), and Roswell Park Memorial Institute (RPMI) medium, respectively. The media were supplemented with 10% FCS and 1% penicillin–streptomycin (Sigma-Aldrich, Taufkirchen, Germany). Cells were maintained at 37°C in a 5% CO2 atmosphere. Hep3B cells were transduced with vectors carrying cDNAs for human histone H2B, YAP, and TAZ/WWTR1 genes, fused with mCerulean, mVenus, and mCherry genes, respectively. The plasmid pRRLN-EF1α-mVenus-YAP was kindly provided by Prof. Dr. Alexander Loewer (TU Darmstadt), pLentiPGK-mCerulean-H2B was purchased (Addgene, Watertown, USA; No. 90234). The pRRLN-EF1α-d2mCherry-TAZ was cloned. Correctness of vectors was verified by end-to-end sequencing.
 
@@ -150,74 +557,74 @@ The APAP stock solution (100 mM) was freshly prepared by dissolving 0.3 g APAP c
 
 AKT1/2 phosphorylation was inhibited with InSolution Akt Inhibitor VIII (1–10 µM, Merck KGaA, Darmstadt, Germany) in FCS-free medium for 3 hr prior to treatment with HGF (10 ng/µl).
 
-## Gene silencing by RNAi
+#### Gene silencing by RNAi
 
 RNAi was performed to inhibit YAP gene expression. For this, 2 × 105 cells were seeded per well in a 6-cm-well plate and incubated overnight. Oligofectamine (Invitrogen, Carlsbad, CA, USA) and Opti-MEM (Gibco Life Technologies Ltd, Paisley, UK) were used for transfection of the siRNA (final concentration: 5 nM) according to the manufacturer’s instructions. A random sequence oligonucleotide was used as a control treatment (control siRNA: ctrl siRNA). The following siRNA sequences were used: YAP siRNA #1 (5′–3′): CCA CCA AGC UAG AUA AAG A-dT-dT and YAP siRNA #2 (5′–3′): GG UCA GAG AUA CUU CUU AA-dT-dT, and ctrl siRNA (5′–3′): UGG UUU ACA UGU CGA CUA A. YAP siRNA #1 and #2 were pooled to achieve an optimal gene knockdown. Twenty-four hours after siRNA transfection, cells were treated with APAP (10 mM) for 24 hr.
 
-## Live cell imaging
+### Live cell imaging
 
 Stably transduced Hep3B cells were seeded on 24-well glass-bottom black wall plates (MoBiTec GmbH, Goettingen, Germany) in a phenol red-free RPMI 1640 medium (Gibco/Life Technologies Corporation, Paisley, UK). Dynamic protein localization in living cells was measured using confocal laser scanning microscope (Nikon A1R on an inverted Nikon Ti2 microscope), which was supplemented with an on-stage incubator (TokaiHit) to maintain 37°C and 5% CO2 at all stages of the experiments. Selected images were acquired with additional Nikon AxR microscope system.
 
 Three lasers were employed: 445 nm (mCerulean, PMT detector), 514 nm (mVenus, GaAsP detector), and 561 nm (mCherry, GaAsP detector) to obtain highly resolved live cell images. Two channels – 445 and 514 nm – were acquired simultaneously. The employed pinhole size was 17.9 µm (445 nm: 1.5 a.u., 514 nm: 1.3 a.u., 561 nm: 1.2 a.u.). Images were acquired using a galvano-scanner of size 512 × 512 px (FOV 0.64 × 0.64 mm, pixel resolution of 1.24 µm). The objectives Plan Apo λ 20× (NA 0.75, working distance 1 mm, FOV 0.64 × 0.64 mm) or Plan Apo λ 40× (NA 0.95, working distance 0.21 mm, FOV 0.435 × 0.435 mm) were used.
 
-## Western immunoblotting
+### Western immunoblotting
 
 Western immunoblotting was performed as previously described (Weiler et al., 2017). In brief, for total protein fraction preparation, cultured cells were harvested using 1× Cell Lysis Buffer (Cell Signaling Technology, Danvers, USA) supplemented with 1× Protease Inhibitor Mix G (Serva, Heidelberg, Germany) and 1× PhosSTOP (Roche Diagnostics Deutschland GmbH, Mannheim, Germany). For protein fractionation, the NE-PER Nuclear and Cytoplasmic Extraction kit was used (Thermo Scientific, Rockford, USA). The following antibodies were used for western immunoblotting experiments: YAP XP (1:1000, Cell Signaling Technology, Danvers, USA, #14074, RRID:AB_2650491), pYAP (1:400, Cell Signaling Technology, #4911, RRID:AB_2218913), pAKT (1:1’000, Cell Signaling Technology, #4060, RRID:AB_2315049), AKT (1:1’000, Cell Signaling Technology, #9272, RRID:AB_329827), β-actin (1:10,000, MP Biomedicals, Solon, USA, #08691001, RRID:AB_2335127), LATS1 (1:200, Santa Cruz Biotechnology, Dallas, USA, sc-398560), LATS2 (1:200, Santa Cruz Biotechnology, sc-515579), and pLATS1/2 (1:500, Cell Signaling Technology, #8654, RRID:AB_10971635) and Cytochrome P450 2E1 (1:500, Novus Biologicals, Centennial, USA, NVP1-85367, RRID:AB_11021447). PARP (1:10,000, Cell Signaling Technology, #9542, RRID:AB_2160739), β-tubulin (1:200, Santa Cruz Biotechnology, sc-5274, RRID:AB_2288090), and GAPDH (1:10,000, Merck Millipore, Darmstadt, Germany, ab2302, RRID:AB_10615768) were used as loading controls.
 
 Western blot detection and quantification were performed using the Odyssey-CLx Infrared Imaging system with the ImageStudio software (LI-COR Biosciences, Bad Homburg, Germany). Phosphorylated protein band intensity was measured and normalized to total protein concentrations. Equal amount of protein was loaded for each line, as measured by the Bradford reagent (Millipore Sigma, Saint Louis, USA). Raw unedited image files and uncropped blots are available as source data files of this manuscript.
 
-## RNA isolation, reverse transcription, and quantitative real-time PCR (qPCR)
+### RNA isolation, reverse transcription, and quantitative real-time PCR (qPCR)
 
 RNA was isolated using Extractme kit (Blirt, Gdańsk, Poland) according to the manufacturer’s protocol. Reverse transcription was performed using the RevertAid kit (Thermo Scientific). Semiquantitative real-time PCR reactions were set up using the primaQuant 2× qPCR-SYBR-Green-Mastermix (Steinbrenner Laborsysteme, Wiesenbach, Germany) and analyzed with the QuantStudio 3 real-time PCR system (Applied Biosystems, Thermo Fisher Scientific, Singapore). The following cycling conditions were applied: 95°C for 15 min, followed by 40 cycles of 95°C for 15 s, and 60°C for 60 s. Product specificity was confirmed by melting curve analysis (95°C for 15 s, 60°C for 30 s, 60–95°C with 0.5°C/s).
 
 The mRNA levels were normalized to glyceraldehyde-3-phosphate dehydrogenase (GAPDH), 60S ribosomal protein L41 (RPL41), serine/arginine-rich splicing factor (SRSF4), and β2-microglobulin (B2M). The following primers for human cDNAs were used: YAP-for: 5′-CCT GCG TAG CCA GTT ACC AA-3′; YAP-rev: 5′-CCA TCT CAT CCA CAC TGT TC-3′; ANKRD1-for: 5′-AGT AGA GGA ACT GGT CAC TGG-3′; ANKRD1-rev: 5′-TGG GCT AGA AGT GTC TTC AGA T-3′; CYR61-for: 5′-AGC CTC GCA TCC TAT ACA ACC-3′; CYR61-rev: 5′-TTC TTT CAC AAG GCG GCA CTC-3′; GADPH-for: 5′-CTG GTA AAG TGG ATA TTG TTG CCA T-3′; GAPDH-rev: 5′-TGG AAT CAT ATT GGA ACA TGT AAA CC-3′; RPL41-for: 5′-AAA CCT CTG CGC CAT GAG AG-3′; RPL41-rev: 5′-AGC GTC TGG CAT TCC ATG TT-3′; SRSF4-for: 5′-TGC AGC TGG CAA GAC CTA AA-3′; SRSF4-rev: 5′-TTT TTG CGT CCC TTG TGA GC-3′; B2M-for: 5′-CAC GTC ATC CAG CAG AGA AT-3′; B2M-rev: 5′-TGC TGC TTA CAT GTC TCG AT-3′. For the analysis of gene expression in tissue samples, a panel of housekeeping genes was analyzed using the geNorm algorithm to find the most stable reference gene (Vandesompele et al., 2002).
 
-## In situ PLA
+### In situ PLA
 
 The DuoLink in situ PLA was performed according to the manufacturer’s instructions (Sigma-Aldrich). Briefly, cells were seeded on glass coverslips and prior to APAP administration cells were grown under FCS-free conditions for 1 day, then incubated with APAP (10 mM) or PBS. After treatment, cells were washed three times with 2 mM MgCl2 in PBS and fixed with 4% paraformaldehyde for 10 min at room temperature. Fixed cells were washed four times with PBS for 5 min, permeabilized with 0.2% Triton X-100 in PBS for 5 min at room temperature, and washed again twice with PBS for 5 min. Subsequently, cells were blocked with Blocking solution (Sigma-Aldrich) for 30 min at room temperature and incubated with the following primary antibodies diluted in Antibody Diluent (Sigma-Aldrich) overnight at 4°C: anti-YAP (1:25, Santa Cruz Biotechnology, sc-271134, RRID:AB_10612397), anti-AKT (1:200, Cell Signaling Technology, #9272, RRID:AB_329827), anti-pYAP (1:200, Cell Signaling Technology, #4911, RRID:AB_2218913), anti-pAKT (1:200, Cell Signaling Technology, #4051, AB_331158), and anti-pLATS1/2 (1:200, Cell Signaling Technology, #8654, RRID:AB_10971635). Subsequently, cells were washed twice with Wash Buffer A (Sigma-Aldrich) and incubated with prediluted rabbit PLUS and mouse MINUS probes (Sigma-Aldrich) in Antibody Diluent for 1 hr at 37°C. After incubation, cells were washed twice with Wash Buffer A and then incubated with ligation solution (Sigma-Aldrich) for 30 min at 37°C. After ligation, samples were again washed twice with Wash Buffer A for 2 min at room temperature and incubated with amplification solution, and detection reagent Orange (Sigma-Aldrich) for 100 min at 37 °C. Finally, cells were washed twice with Wash Buffer B (Sigma-Aldrich) for 10 min at room temperature, once with 0.01× Wash Buffer B for 1 min at room temperature and coverslips were mounted on the slide with DAPI Fluoromount-G mounting medium (SouthernBiotech, Birmingham, USA).
 
 Fluorescence images were captured using an inverted Nikon Ti2 microscope with Nikon S Plan Fluor ELWD ×40 NA 0.60 objective in a widefield fluorescence mode using Lumencor Sola SE II lamp. Images were captured in DAPI and TRITC channels (460 and 580 nm) with Nikon DS-Qi2 monochrome camera (image size 2404 × 2404 px, pixel resolution of 0.18 µm/px).
 
-## ROS activity measurement
+### ROS activity measurement
 
 Measurements of the intracellular ROS levels were performed using the DCFDA/H2DCFDA cellular ROS assay kit (Abcam, Amsterdam, Netherlands) according to the manufacturer’s protocol. In brief, cells were seeded on white clear-bottom 96-well plate (Corning, Corning, USA) and incubated overnight. Cells were treated with 10 mM APAP, 2 mM H2O2, or 300 µM TBHP (H2O2 and TBHP served as positive controls for ROS induction) for 6 hr in FCS-free cell culture medium. Fluorescence was measured using a microplate reader (FluoStar Omega, BMG Labtech GmbH, Ortenberg, Germany). Buffer solution without cells served as a background control.
 
-## In vivo experiments and sample analyses
+### In vivo experiments and sample analyses
 
-## Housing and treatment of mice and induction of acute liver injury by acetaminophen
+#### Housing and treatment of mice and induction of acute liver injury by acetaminophen
 
 Male C57BL/6N mice (8- to 10-week-old) were bought from Janvier Labs (Janvier Labs, Le Genest-Saint-Isle, France). Animals were housed under 12 hr light/dark cycles at controlled ambient temperature of 25°C with free access to water and were fed ad libitum with a standard diet (Ssniff, Soest, Germany) before starting the experiments. Induction of acute liver injury with APAP was done as previously described (Schneider et al., 2021). Briefly, the mice were fasted overnight, then challenged with a dose of 300 mg/kg APAP intraperitoneally. APAP was dissolved in warm PBS with an application volume of 30 ml/kg. Control group was treated with PBS only. The mice were fed ad libitum after APAP administration. All animals were included for further analyses. All experiments were approved by the local animal welfare committee (LANUV, North Rhine-Westphalia, Germany, application number: 84-02.04.2016.A279). Hydrodynamic gene delivery experiments in mice were performed as recently described (Luiken et al., 2020).
 
-## Liver tissue sample collection, processing, and staining
+#### Liver tissue sample collection, processing, and staining
 
 Tissues were collected time dependently after APAP injection from the left liver lobe. The tissues were fixed and embedded in paraffin as previously described (Ghallab et al., 2016). YAP and AKT immunostaining were performed using 4-µm-thick paraffin-embedded tissue sections. For immunohistochemistry, an anti-YAP antibody (1:50, Cell Signaling Technology, #14074, RRID:AB_2650491) and anti-AKT (1:50, Cell Signaling Technology, #9272, RRID:AB_329827) were used. Embedded tissue sections were pretreated with a heat-induced epitope retrieval method (pH 6, DAKO, Hamburg, Germany). As secondary antibody anti-rabbit Polymer-AP (Enzo Life Sciences, Farmingdale, USA, ENZ-ACC110-0150) was used. Detection was performed with Permanent AP (Zytomed Systems GmbH, Berlin, Germany). Following staining, the whole slides were digitally documented using a slide scanner (Aperio AT2, Leica Mikrosysteme Vertrieb GmbH, Wetzlar, Germany).
 
-## Expression profiling and bioinformatics
+#### Expression profiling and bioinformatics
 
 RNA isolation and gene array analysis were performed as published before (Campos et al., 2020) and bioinformatic analysis was done as described (Holland et al., 2022). The gene expression data are available under ArrayExpress accession number GSE167032. The expression data were applied to three known signatures that are informative for ROS activity (Han et al., 2008), AKT activity (De Marco et al., 2017), and YAP/TAZ activity (Wang et al., 2018). Due to the high number of AKT signature genes, only genes whose response to APAP treatment was larger than fold change of 2 (compared to control animals) were considered. The expression data were z-score normalized and clustered with seborn clustermap python module (v0.11.0). The signature score was obtained by summarizing z-scored expression values at the given time point if the z-scored value was greater than 0.5. The summarized expression values were normalized to the number of genes in the signature.
 
-## Computational methods
+### Computational methods
 
-## Analysis of the live cell images
+#### Analysis of the live cell images
 
 The confocal images of the living cells were analyzed in a high-throughput manner using ImageJ (v1.53f51) platform (Rueden et al., 2017). Images were first manually selected with respect to the quality criteria: images with insufficient sharpness or with artifacts were discarded from the analysis. The image processing pipeline was based on Weka segmentation (v3.3.1) (Arganda-Carreras et al., 2017) of foreground and background areas, and subsequent thresholding, object detection, and counting. After object detection and counting, the respective masks were overlaid on the initial images to acquire YAP and TAZ intensity values for nuclei and cytoplasm. Mean pixel intensity from nuclear areas of the cells was divided by the mean pixel intensity of cytoplasmic regions, thus obtaining an NCR.
 
-## Analysis of PLA images
+#### Analysis of PLA images
 
 PLA slides were analyzed using ImageJ (v1.53f51). First, nuclei and dots were classified using the Weka segmentation algorithm (v3.3.1) (Arganda-Carreras et al., 2017), thresholded, and counted. The pseudo-cytoplasmic (ring-shaped) area was created using the ImageJ’s binary mask option dilate for 30 iterations on nuclear masks to obtain nuclear and cytoplasmic area for a comparative analysis. The thresholded nuclei or cytoplasmic masks were overlaid with detected dots to obtain the information on the subcellular localization of the protein interaction.
 
-## Analysis of IHC images
+#### Analysis of IHC images
 
 Stained tissue samples were digitalized using Aperio slide scanner with ×40 magnification and pixel resolution of 0.253 µm/px (Aperio AT2, Leica Mikrosysteme Vertrieb GmbH, Wetzlar, Germany). The selected time points (6 hr and 1, 2, 6, 16 days) and control treatment were quantified using a pipeline, which consisted of python scripts (modules PIL v5.3.0, matplotlib v2.2.3), ASAP software (v1.6, https://github.com/computationalpathologygroup/ASAP) and Ilastik software (v1.3.3) (Berg et al., 2019).
 
 First, digital images of the tissue sections were divided in tiles (1 mm2, 400 × 400 pixels), which were binned (to reduce processing time and storage load) using ASAP and python modules. Some images were excluded due to staining and/or scanning artifacts. Tiles, which displayed tissue for at least 50% of their area, were kept for further processing. Machine-learning model, which was based on a random forest algorithm, was trained on a selected set of training tiles for YAP or AKT using Ilastik software. The algorithm was trained to detect positively stained nuclei, excluding necrotic areas and staining artifacts. Ilastik software was further used to export probability maps, which were possessed with ImageJ. In ImageJ, probability maps were thresholded and positive nuclei were counted and normalized to the area of the tile, which was occupied by the tissue.
 
-## PDE modeling
+#### PDE modeling
 
 Spatial modeling aimed at describing the variations in space of fluorescently labeled YAP and TAZ distribution within living Hep3B cells. The mathematical model is based on a system of PDEs. PDE modeling and parameter estimation were performed with the Spatial Model Editor (SME) software (v1.2.1) and sme-contrib (v0.0.14) python module (https://spatial-model-editor.github.io/). SME is graphical user interface-based model editing and simulation software compatible with systems biology markup language (SBML) standards. Models were simulated using simple Forward Time Centered Space (FTCS) solver.
 
 In the demonstrated models, all reactions were defined by first-order kinetics (for PDEs see Appendix 1). For the parameter estimation, the model behavior was evaluated at steady state, that is the model was simulated until the concentration distribution did not change over time. Parameter estimation was performed using the particle swarm algorithm (20 particles, 200 iterations) to minimize a cost function consisting of the weighted sum of two terms: the squared per pixel differences between model and the target image, and the sum of squares of species concentration rates of change. In total 200 fitted parametrizations for each tested model were generated. The parameter space for the optimization algorithm was defined based on published data (Appendix 1). The parameter ranges of our canonical and alternative models were selected in a way to describe biologically meaningful value ranges and to avoid numeric instability during PDE simulations of the canonical model. The mathematical models were uploaded to the BioModels repository under the model identifier number MODEL2202080001. PDE model equations and parameters can be found in Supplementary Information (Appendix 1—Tables 1–6; Ege et al., 2018; Jack et al., 1990). Tables showing all fitted parameters for YAP and TAZ are provided (Supplementary file 1, Supplementary file 2).
 
-## Statistics
+#### Statistics
 
 Statistical analysis was performed using GraphPad Prism 9.2.0. Statistical tests are indicated in figure legends. Error bars depict standard deviation. Significance levels are as follows: *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001.

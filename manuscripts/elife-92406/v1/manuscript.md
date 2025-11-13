@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01kg8sb98 Department of Chemistry, Indiana University Bloomington United States
-2. https://ror.org/02dqehb95 The James Tarpo Jr. and Margaret Tarpo Department of Chemistry, Purdue University West Lafayette United States
-3. https://ror.org/01kg8sb98 Center for Genomics and Bioinformatics, Indiana University Bloomington United States
-4. https://ror.org/02vm5rt34 Department of Chemistry, Vanderbilt University Nashville United States
-5. https://ror.org/02vm5rt34 Chemical and Physical Biology Program, Vanderbilt University Nashville United States
-6. https://ror.org/03s7gtk40 Institute for Drug Discovery, Leipzig University Leipzig Germany
+1. Department of Chemistry, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+2. The James Tarpo Jr. and Margaret Tarpo Department of Chemistry, Purdue University West Lafayette United States ([ROR:02dqehb95](https://ror.org/02dqehb95))
+3. Center for Genomics and Bioinformatics, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+4. Department of Chemistry, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+5. Chemical and Physical Biology Program, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+6. Institute for Drug Discovery, Leipzig University Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
 
 † Corresponding author
 
@@ -34,11 +34,19 @@ Mutational effects on protein stability have important consequences for evolutio
 
 Unlike water-soluble proteins, membrane proteins must be cotranslationally inserted into lipid bilayers (stage I folding) in order to fold into their native structure (stage II folding, see Figure 1A; Popot and Engelman, 1990). In eukaryotes, stage I folding is primarily facilitated by Sec61 and a spectrum of various other translocon complexes (Marinko et al., 2019; Smalinskaitė and Hegde, 2023). Ribosomes translating membrane proteins are targeted to this translocon complex at the endoplasmic reticulum (ER) membrane, where the nascent transmembrane domains (TMDs) partition into the lipid bilayer and establish their native topology relative to the membrane (stage I) (Pfeffer et al., 2016; Popot and Engelman, 1990; Van den Berg et al., 2004). After translation is complete, membrane proteins fold and assemble (stage II) in a manner that is coupled to their passage through the secretory pathway to the plasma membrane and/or other destination organelles (Marinko et al., 2019; Popot and Engelman, 1990; Wiseman et al., 2007). Though they are governed by distinct physicochemical constraints, failures in either stage I or II folding are capable of increasing the proportion of nascent membrane proteins that are retained in the ER and prematurely degraded (Marinko et al., 2019; Wiseman et al., 2007). We therefore expect that epistatic interactions can arise from the cumulative energetic effects of mutations on either of these processes. Given that three-dimensional protein structures are stabilized by similar energetic principles in water and lipid bilayers, mutations that modify the fidelity of stage II folding energetics should potentially generate long-range epistatic interactions that are comparable to those observed in soluble proteins (Marinko et al., 2019). By comparison, the topological transitions that happen during the early stages of membrane protein synthesis may be coupled to neighboring loops and helices in a manner that can play a decisive role in the formation of the native topology (Hessa et al., 2007; Ojemalm et al., 2012; White and von Heijne, 2008). Based on these mechanistic distinctions and their association with different components of the proteostasis network, we reason that the effects of mutations on these two processes could potentially create complex and/or high-order epistatic interactions (Morrison et al., 2021; Sailer and Harms, 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig1-v1.jpg)
+
+**Figure 1.:** (A) A cartoon depicts the manner in which nascent polytopic membrane proteins are synthesized and folded at the endoplasmic reticulum (ER) membrane. The nascent protein first passes from a ribosome (gray) to a translocon (yellow), which facilitates its cotranslational membrane integration (stage I folding). Once the protein establishes its topology with respect to the membrane, it can fold into its native tertiary structure (stage II folding). (B) A homology model of M. musculus GnRHR (mGnRHR, green) is aligned with a crystal structure of H. sapiens GnRHR (hGnRHR, PDB 7BR3, gray). (C) A cross section of the mGnRHR model depicts the structural context of the V276 side chain (red). This side chain is located in transmembrane domain 6 and is exposed to the lipid bilayer. (D) A side view of the mGnRHR model depicts the structural context of the W107 side chain within extracellular loop 1. A hydrogen bond network between the W107 side chain indole, the backbone carbonyl oxygen of G110, and the backbone amide hydrogen from C114 is shown with dashes for reference.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Chimeric Lep proteins containing either the wild type mGnRHR TM domain 6 or the V276T mutant, with the guest TM domain flanked by two glycosylation sites, were translated in vitro and analyzed by SDS-PAGE. Misintegration of the guest TM domain results in doubly glycosylated protein, while successful membrane integration results in singly glycosylated protein. Negative control translation reactions without RNA (first lane) and without rough microsomes (second lane) are included. The positions of the untargeted protein that is not associated with the membrane (no glycosylation), singly glycosylated form of the protein in which TMD6 is integrated into the membrane (G1), and doubly glycosylated form of the protein in which TMD6 is not integrated into the membrane (G2) are indicated for reference.
+
 To gain insights into the mechanistic basis of epistatic interactions in membrane proteins, we surveyed the effects of single and double mutants on the plasma membrane expression (PME) of the gonadotropin-releasing hormone receptor (GnRHR), a G-protein coupled receptor (GPCR) involved in reproductive steroidogenesis across many species (Janovick et al., 2013; Janovick et al., 2006). We have previously demonstrated that various evolutionary sequence modifications within mammalian GnRHRs have tuned its fitness by compromising the fidelity of stage I folding (Chamness et al., 2021). Nevertheless, it remains unclear how the inefficient cotranslational folding of GnRHR reshapes its tolerance of secondary mutations. Here, we utilize deep mutational scanning (DMS) to carry out a focused analysis of 251 mutations in the background of two mouse GnRHR (mGnRHR) variants that selectively compromise either stage I or II folding. Our results show that mutations which generate stage I and II folding defects form distinct epistatic interactions throughout this receptor. An unsupervised learning analysis reveals how these interactions depend on both changes in stability and the topological context of the mutation. Together, these findings suggest that the distinct biosynthetic mechanisms of integral membrane proteins may differentially shape their fitness landscapes. The general implications of our findings for the role of protein folding and stability in protein evolution are discussed.
 
 ## Results
 
-## Mutational library design
+### Mutational library design
 
 To compare how perturbations of stage I and II folding shape epistatic interactions, we first identified and characterized two individual mutations that are likely to selectively disrupt either the cotranslational membrane integration (V276T) or the native tertiary structure (W107A) of mGnRHR. We previously showed that T277 in TMD6 of human GnRHR (hGnRHR) contributes to the inefficient translocon-mediated membrane integration of TMD6, which decreases the receptor’s PME (Chamness et al., 2021). A recent crystallographic structure of hGnRHR confirms that the polar side chain of T277, which corresponds to V276 in the mouse receptor (89.3% sequence identity), is exposed to the lipid bilayer and does not appear to make interhelical contacts that stabilize the native structure (Figure 1B and C; Yan et al., 2020). Thus, mutations at this position modify the hydrophobicity of TMD6 without perturbing the native tertiary contacts that stabilize the native fold. Indeed, replacing the native valine residue in TMD6 of the mouse receptor with the threonine residue found in hGnRHR reduces the efficiency of its translocon-mediated membrane integration in vitro (Figure 1—figure supplement 1, Supplementary file 1). Furthermore, this substitution decreases the PME of the mouse receptor by 65 ± 4% relative to that of wild-type mGnRHR (WT, Figure 2). Consistent with previous findings, these results confirm that the inefficient translocation of this helix promotes cotranslational GnRHR misfolding (Chamness et al., 2021). In contrast, substitutions at W107 within extracellular loop 1 (ECL1) preserve the hydrophobicity of TMDs and their topological energetics while disrupting a conserved hydrogen bond network that is found in a wide array of GPCR structures (Figure 1D; Jones et al., 2020). Mutating this conserved tryptophan to alanine (W107A) reduces the PME of mGnRHR by 88 ± 4% relative to WT (Figure 2), which suggests that disrupting this hydrogen bond network destabilizes mGnRHR in a manner that promotes its cellular misfolding. Comparing how these mutations modify the proteostatic effects of secondary mutations will therefore reveal how changes in the fidelity of stage I (V276T) and stage II (W107A) folding differentially impact mutational epistasis.
 
@@ -48,17 +56,33 @@ To compare how perturbations of stage I and II folding shape epistatic interacti
 
 To survey the epistatic interactions formed by these mutations, we generated a series of genetic libraries consisting of 1615 missense variants in the background of V276T, W107A, and WT mGnRHR. To ensure adequate dynamic range in the downstream assay, we created these variants in the cDNA of mGnRHR, which exhibits intermediate, tunable expression (Chamness et al., 2021). Briefly, we used a structural homology model of mGnRHR to select 85 residues distributed across the loops and helices of mGnRHR. We included all 19 amino acid substitutions at the 3 most solvent-accessible and the 3 most buried residues in each TMD (Figure 3—figure supplement 1, Supplementary file 2). We also included mutations encoding all 19 amino acid substitutions at positions that are evenly distributed across each soluble domain. We then generated a mixed array of mutagenic oligonucleotides that collectively encode this series of substitutions (Supplementary file 3) and used nicking mutagenesis to introduce these mutations into the V276T, W107A, and WT mGnRHR cDNAs (Medina-Cucurella et al., 2019), which produced three mixed plasmid pools. We generated each of these one-pot plasmid libraries in the context of vectors that contain a randomized ten-base region within the backbone. Unique ten-base plasmid identifiers that could be matched to a specific mGnRHR variant were used to score variants in the downstream assay using Illumina sequencing. Using whole plasmid PacBio sequencing of each library, we matched 1383 of the 1615 possible variants to one or more ten-base unique molecular identifier (UMI) in at least one of the three libraries, 320 of which were found in all three genetic backgrounds (see ‘Materials and methods’ for details).
 
-## Plasma membrane expression of GnRHR mutant libraries
+### Plasma membrane expression of GnRHR mutant libraries
 
 To identify secondary mutations that form epistatic interactions with V276T and W107A, we measured the relative PME of single and double mutants within each genetic library by DMS as previously described (Penn et al., 2020). Briefly, we first used the genetic libraries described above to generate three recombinant, pooled HEK293T cell lines in which the individual cells each express one of the single or double mGnRHR mutants of interest. A comparison of the mGnRHR surface immunostaining profiles of these cellular populations that recombinantly express this collection of variants in context of the V276T, W107A, or an otherwise WT genetic background reveals striking context-dependent differences in their proteostatic effects. Recombinant cells expressing these variants in the WT background exhibit a bimodal distribution of mGnRHR surface immunostaining, where 59% of cells exhibit immunostaining that is comparable to WT and 41% of cells exhibit reduced expression relative to WT (Figure 3A). Although cells expressing this same collection of variants in the V276T background also exhibit bimodal surface immunostaining, 48% of the population exhibit diminished expression relative to the V276T variant (Figure 3B). This observation suggests many of these variants synergistically decrease mGnRHR expression in combination with the V276T mutation. Unlike the WT and V276T libraries, cells expressing this same collection of variants in combination with the W107A mutation exhibit a continuous range of surface immunostaining intensities that are only slightly lower, on average, relative to cells expressing the W107A single mutant (Figure 3C). The lack of dispersion likely reflects a compression of the distribution that arises as the folding efficiency of these variants approaches zero (see ‘Discussion’). Cells expressing this library of W107A double mutants do, however, still contain cellular subpopulations with surface immunostaining intensities that are well above or below that of the W107A single mutant, which suggests that this fluorescence signal is sensitive enough to detect subtle differences in the PME of these variants (Figure 3C). Indeed, the mean fluorescence intensity associated with the surface immunostaining of the WT, V276T, and W107A mutant libraries were respectively 33.5-fold, 13.5-fold, and 2.6-fold higher than the background, on average, across the two biological replicates. Overall, these results suggest that none of the secondary mutations can fully compensate for the proteostatic effects of the W107A mutation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig3-v1.jpg)
+
+**Figure 3.:** mGnRHR mutant libraries, as well as their respective controls (WT or V276T/W107A single mutants, black) were expressed in mammalian cells, and the amount of mGnRHR expressed at the plasma membrane was measured during fluorescence-activated cell sorting. Histograms show the distributions of plasma membrane expression for mGnRHR mutants in the (A) WT library (gray), (B) V276T library (red), and (C) W107A library (blue).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Residues selected for mutation are displayed as spheres on the homology model of M. musculus GnRHR. Spheres are colored according to solvent accessible surface area of the residue, with red representing exposed residues and blue representing buried residues.
 
 To compare the PME of these variants in each genetic background, we fractionated each of the three mixed cell populations into quartiles based on the relative surface immunostaining of their expressed mGnRHR variants using fluorescence-activated cell sorting (FACS), then extracted the genomic DNA from each cellular fraction. We then used Illumina sequencing to track the relative abundance of the recombined UMIs and their associated variants within each fraction and used these measurements to estimate the corresponding PME of each variant. A series of filters relating to the quality of the reads, the sampling of each mutation, and the similarity of variant scores across replicates were used to remove poorly sampled variants with unreliable scores (see ‘Materials and methods’). Briefly, to restrict our analysis to variants that can be reliably scored, we removed variants that did not have at least 50 counts across the four bins in each replicate. Additionally, we compared the percentile rank of each variant across replicates and discarded variant scores for which the difference in percentile rank across the two replicates was greater than 25%. The relative PME of the remaining variants was averaged across two biological replicates. Overall, we measured the relative PME of 1004 missense variants in the WT background, 338 missense variants in the V276T background, and 1179 missense variants in the W107A background (Supplementary file 4). Out of the 320 variants identified in all three plasmid libraries by PacBio sequencing, 251 mutations passed these quality filters in the Illumina sequencing of the cellular isolates (Supplementary file 4). The intensity values for these variants were highly correlated across independent biological replicates, which demonstrates that these measurements exhibit precision despite variations in the signal-to-noise associated with their surface immunostaining (Figure 4—figure supplement 1). In the following, we will focus on the comparison of the effects of these 251 mutations in each background in order to determine how their proteostatic effects are modified by secondary mutations.
 
 To facilitate the comparison of estimated immunostaining intensities for each variant across the three genetic backgrounds, we normalized the raw immunostaining intensity values for each variant relative to that of the measured intensity values for the corresponding reference sequence (V276T, W107A, or WT mGnRHR). Relative intensity values of 1.0 correspond to no effect, whereas values over 1.0 correspond to mutations that enhance surface expression in that genetic background, and vice versa. A histogram of the relative intensity values for the 251 variants measured in all three backgrounds generally recapitulates the trends in the cellular immunostaining histograms (Figures 3 and 4A). Most of these mutations decrease the PME of mGnRHR in all three backgrounds, which reflects the limited mutational tolerance of membrane proteins (Figure 4A; Telenti et al., 2016). Notably, only a modest fraction of mutations measurably enhance the surface expression of WT mGnRHR (51 mutations, 20%) and V276T mGnRHR (21 mutations, 8% Figure 4A). Mutations in the V276T background tend to decrease surface expression more than they do in the WT background, and this trend persists across most domains of the protein (Figure 4A and B). In contrast, a larger proportion of these mutations (100 mutants, 40%) enhance the surface expression of W107A (Figure 4A), though these increases in immunostaining are relatively modest (Figure 3C). Furthermore, the mutations tend to be better tolerated with respect to surface expression in combination with W107A relative to their effects on expression in the WT background (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig4-v1.jpg)
+
+**Figure 4.:** (A) A histogram shows the distribution of plasma membrane expression measurements relative to their respective controls (WT or V276T/W107A single mutants) for the WT (black), V276T (red), and W107A (blue) mutational libraries. A dashed line at the normalized plasma membrane expression value of 1.0, representing no mutational effect relative to the control, is displayed for reference. (B, C) The average relative intensities across each domain are compared between the V276T (B, red) and W107A (C, blue) double mutant libraries and the single mutant library (black). The size of each dot represents the number of variants measured. (D–F) Average relative intensities for the (D) WT library, (E) V276T library, and (F) W107A library were projected onto a homology model of mGnRHR. Scores represent the average value from two biological replicates. Residues 276 and 107 are displayed in green for reference. Individual variant scores can be found in Supplementary file 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The intensity values for the surface immunostaining of the 251 mutants scored the (A) WT, (B) V276T, and (C) W107A backgrounds determined from two independent biological replicates are plotted against one another. A linear fit (dashes) is shown for reference, along with the Pearson’s R2 value. These data demonstrate the precision of these measurements despite variations in the signal to noise that arises from variations in surface immunostaining intensity.
+
 Projecting the average relative intensities for the mutations at each residue onto the structure reveals that most positions exhibit similar trends in the mutational tolerance in each background, with loop residues being generally more permissive than those within TMDs (Figure 4D–F). Nevertheless, there are subdomains where the quantitative mutagenic effects deviate in a context-dependent manner. Variants bearing mutations within the C-terminal regions including ICL3, TMD6, and TMD7 fare consistently worse in the V276T background relative to WT (paired Wilcoxon signed rank test p-values of 0.0001, 0.02, and 0.005, respectively) (Figure 4B and E). Given that V276T perturbs the cotranslational membrane integration of TMD6 (Figure 1—figure supplement 1, Supplementary file 1), this directional bias potentially suggests that the apparent interactions between these mutations manifest during the late stages of cotranslational folding. In contrast, mutations that are better tolerated in the context of W107A mGnRHR are located throughout the structure but are particularly abundant among residues in the middle of the primary structure that form ICL2, TMD4, and ECL2 (paired Wilcoxon signed rank test p-values of 0.0005, 0.0001, and 0.004, respectively) (Figure 4C and F). Together, these observations show how the proteostatic effects of mGnRHR mutations are modified by secondary mutations that differentially affect the fidelities of stage I and II folding.
 
-## Distinct pairwise epistasis in V276T and W107A GnRHR
+### Distinct pairwise epistasis in V276T and W107A GnRHR
 
 To compare epistatic trends in these libraries, we calculated epistasis scores (Ɛ) for the interactions that these 251 mutations form with V276T and W107A by comparing their relative effects on PME of the WT, V276T, and W107A variants using a previously described epistasis model (product model, see ‘Materials and methods’; Olson et al., 2014). Positive Ɛ values denote double mutants that have greater PME than would be expected based on the effects of single mutants. Negative Ɛ values denote double mutants that have lower PME than would be expected based on the effects of single mutants. Pairs of mutations with Ɛ values near zero have additive effects on PME. For most double mutants, epistasis scores are near zero, suggesting that many of the 251 random mutations have additive effects on PME in each background. This result is consistent with evidence that epistatic interactions are typically rare in the context of stable proteins (Starr and Thornton, 2016). Nevertheless, the distributions of epistasis scores for the two double mutant libraries are shifted in opposite directions. The mutations generally form positive epistatic interactions with W107A and negative epistatic interactions with V276T (Figure 5). Interestingly, the difference in the epistasis scores for the interactions these variants form with W107A and V276T was at least 1.0 for 98 of the 251 variants (Supplementary file 4). Notably, these 98 variants are enriched with TMD variants (65% TMD) relative to the overall set of 251 variants (45% TMD, Fisher’s exact test p=0.0019). These findings suggest random mutations form epistatic interactions in the context of unstable mGnRHR variants in a manner that depends on the specific folding defect (V276T vs. W107A) and topological context.
 
@@ -66,7 +90,7 @@ To compare epistatic trends in these libraries, we calculated epistasis scores (
 
 **Figure 5.:** A histogram depicts the distribution of epistasis scores (Ɛ) for interactions the subset of 251 high-quality secondary mutations form with V276T (red) and W107A (blue).
 
-## Molecular basis for the observed epistatic interactions
+### Molecular basis for the observed epistatic interactions
 
 To identify general trends in the observed epistatic interactions, we utilized unsupervised learning to elucidate patterns among the relative PME values of variants across each genetic background. We first utilized uniform manifold approximation projection (UMAP) (McInnes et al., 2018) to identify mutations that have similar expression profiles across these conditions. A projection of the variants onto a resulting two-dimensional coordinate reveals that most variants fall into one of approximately three groups (Figure 6A). Using a density-based hierarchical clustering analysis (HDBSCAN), we unambiguously assigned 182 variants into three distinct clusters based on their expression profiles alone (Figure 6A, Supplementary file 4; Campello et al., 2013). An analysis of the structural context of these mutants reveals that one of the largest clusters (cluster 3, n = 76) primarily consists of mutations of soluble loop residues that have little impact on expression and exhibit minimal epistasis (Figure 6A–C). This analysis also identified a smaller cluster of loop mutations (cluster 2, n = 30) that moderately decrease expression and exhibit a greater propensity to form epistatic interactions with V276T and/ or W107A relative to the neutral loop mutations in cluster 3 (Figure 6A–C). Nevertheless, most of the mutations that exhibit strong positive epistatic interactions with W107A fell into cluster 1 (n = 76), which primarily consists of mutations within TMDs that significantly decrease expression in all three genetic backgrounds (Figure 6A–C). A comparison across these clusters suggests positive epistatic interactions with W107A primarily stems from the fact that mutations that compromise expression can only cause a relatively modest reduction in the PME of W107A GnRHR (Figure 6B and C), which is already predominantly misfolded. In contrast, the moderately disruptive loop mutations in cluster 2 tend to exhibit more pronounced negative epistatic interactions with V276T than do the highly disruptive TMD mutations in cluster 1 (Figure 6C). The divergent epistatic interactions that disruptive loop and TMD mutations form with V276T potentially arise from differences in the mechanistic basis for the destabilization caused by these two classes of mutations (see ‘Discussion’).
 
@@ -78,7 +102,7 @@ Many epistatic interactions arise from the additive energetic effects of mutatio
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92406/elife-92406-fig7-v1.jpg)
 
-**Figure 7.:** Line plots depict the relationship between the equilibrium fraction of folded protein (f) and the free energy of unfolding (ΔGfoldunf). (A) A moderately stable protein (ΔGunf = +2 kcal/mol) exhibits a greater change in f after acquiring one or more destabilizing mutations (total ΔΔGfoldunf = –2 kcal/mol, red) than after acquiring one or more mutations that stabilize the protein to the same extent (total ΔΔGunf = +2 kcal/mol, blue). (B) A moderately unstable protein (ΔGunf = –2 kcal/mol) exhibits a greater change in f after acquiring one or more stabilizing mutations (total ΔΔGfoldunf = +2 kcal/mol, blue) than after acquiring one or more mutations that destabilize the protein to the same extent (total ΔΔGunf = –2 kcal/mol, red).
+**Figure 7.:** Line plots depict the relationship between the equilibrium fraction of folded protein (ffold) and the free energy of unfolding (ΔGunf). (A) A moderately stable protein (ΔGunf = +2 kcal/mol) exhibits a greater change in ffold after acquiring one or more destabilizing mutations (total ΔΔGunf = –2 kcal/mol, red) than after acquiring one or more mutations that stabilize the protein to the same extent (total ΔΔGunf = +2 kcal/mol, blue). (B) A moderately unstable protein (ΔGunf = –2 kcal/mol) exhibits a greater change in ffold after acquiring one or more stabilizing mutations (total ΔΔGunf = +2 kcal/mol, blue) than after acquiring one or more mutations that destabilize the protein to the same extent (total ΔΔGunf = –2 kcal/mol, red).
 
 ## Discussion
 
@@ -92,7 +116,157 @@ Together, our results reveal divergent, mechanism-dependent patterns of pairwise
 
 ## Materials and methods
 
-## Plasmid preparation and characterization of genetic libraries
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>GnRHR</td>
+      <td>GenBank</td>
+      <td>L01119</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>GnRHR</td>
+      <td>GenBank</td>
+      <td>L03380</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 10-β</td>
+      <td>New England Biolabs</td>
+      <td>C3020K</td>
+      <td>Electrocompetent</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Tet-Bxb1-BFP HEK293T</td>
+      <td>Laboratory of Doug Fowler</td>
+      <td>-</td>
+      <td>Clone 37 described in Jones et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Canis familiarus)</td>
+      <td>Pancreatic rough microsomes</td>
+      <td>tRNA probes</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Oryctolagus cuniculus)</td>
+      <td>Reticulocyte lysate</td>
+      <td>Promega</td>
+      <td>L4960</td>
+      <td>Nuclease-treated</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hemagglutinin Antibody (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>26183-D550</td>
+      <td>2–2.2.14, DyLight 550 conjugate</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM- Lep- TMD6</td>
+      <td>Hessa et al., 2007</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5 CMV-HA-mGnRHR-IRES-eGFP</td>
+      <td>Chamness et al., 2021</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA5 attB-HA-mGnRHR-IRES-eGFP</td>
+      <td>This paper</td>
+      <td>-</td>
+      <td>A plasmid described in Chamness et al., 2021 was further modified as is described in ‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom mGnRHR primer pool</td>
+      <td>Agilent Technologies Inc</td>
+      <td>-</td>
+      <td>See Supplementary file 3 for sequences</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom 10- base randomization primer</td>
+      <td>Integrated DNA Technologies</td>
+      <td>-</td>
+      <td>gcatgaagaatctgcttagggttaggcgnnnnnnnnnncttcgcgatgtacgggccagat</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PrimeSTAR HS DNA Polymerase</td>
+      <td>Takara Bio Inc</td>
+      <td>R010B</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KAPA HiFi HotStart Ready Mix</td>
+      <td>Roche Diagnostics</td>
+      <td>07958927001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>InFusion HD Cloning</td>
+      <td>Takara Bio Inc</td>
+      <td>638944</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GenElute Mammalian gDNA Miniprep Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>G1N70</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo X</td>
+      <td>Treestar</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginLab 2023</td>
+      <td>OriginLab</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid preparation and characterization of genetic libraries
 
 The expression of transiently expressed single mutants was carried out using a previously described pcDNA5 FRT expression vector containing mGnRHR cDNA with an N-terminal hemagglutinin (HA) epitope and bicistronic eGFP (Figure 2; Chamness et al., 2021). Mutations were introduced by site-directed mutagenesis with PrimeSTAR HS DNA Polymerase (Takara Bio, Shiga, Japan). Biochemical measurements of the membrane integration of TMD6 were carried out using a previously described pGEM vector containing modified leader peptidase (Lep), with TMDs of interest cloned into the H-segment (Figure 1—figure supplement 1; Chamness et al., 2021; Hessa et al., 2007). Mutations were introduced into the H-segment by site-directed mutagenesis with PrimeSTAR HS DNA Polymerase (Takara Bio). Plasmids were purified using a ZymoPURE Midiprep Kit (Zymo Research, Irvine, CA). DMS experiments were carried out using a previously described pcDNA5 FRT vector containing mGnRHR cDNA bearing an N-terminal influenza hemagglutinin (HA) epitope, followed by an internal ribosome entry site (IRES) and eGFP sequence, which was further modified to be compatible with recombination-based DMS approaches (Chamness et al., 2021). First, an attB recombination site was inserted in place of the CMV promoter by InFusion HD Cloning (Takara Bio). To facilitate the creation of these libraries using nicking mutagenesis, a BbvCI restriction site was introduced by site-directed mutagenesis using PrimeSTAR HS DNA Polymerase (Takara Bio). The V276T and W107A mutations were also introduced by site-directed mutagenesis with PrimeSTAR HS DNA Polymerase (Takara Bio).
 
@@ -102,7 +276,7 @@ To associate each UMI with its corresponding GnRHR variant, the final plasmid li
 
 The sequence of each plasmid-derived fragment containing mGnRHR variants and their corresponding UMIs was determined by reconstructing the circular consensus sequences (CCS) for each independent well in the PacBio readout. mGnRHR libraries were sequenced to a depth of 1,825,010 wells for WT, 1,545,151 wells for V276T, and 1,497,359 wells for W107A. A minimum coverage of five passes around each circular fragment (subread) was required for incorporation of sequencing data from an individual well into the analysis. CCS were mapped to the reference open reading frame using minimap2. CCS that did not contain a complete 10-base UMI sequence or fully cover the target ORF were excluded from the analysis. Variations in the mGnRHR sequence of individual fragments were called using SAMtools. Reads were then grouped according to their UMI sequences. Given that insertion and deletion (indel) artifacts are prevalent within PacBio sequencing data, we only removed UMIs from the analysis if indels were detected at a specific position within the UMI in at least 10% of the subreads. Indels observed within the open-reading frame were only called if their occurrence was judged to be statistically significant relative to the background indel rate for the reads according to a binomial test (p≤0.05). Codon substitutions encoded in our primer library (Supplementary file 3) were called within the mGnRHR open-reading frame only if they were detected in at least 75% of the individual subreads. Only UMIs that were found to be associated with a single mGnRHR variant were included in the final analysis. Our final ‘dictionaries’ for the WT, V276T, and W107A libraries contained 3,261, 531, and 4962 unique UMIs, respectively, that could be indexed to a corresponding mGnRHR variant.
 
-## Preparation of cellular libraries and cell sorting
+### Preparation of cellular libraries and cell sorting
 
 A previously described HEK293T cell line with a genomic Tet-Bxb1-BFP landing pad was obtained from D. Fowler (Matreyek et al., 2017). Short tandem repeat profiling was carried out to confirm that these cells are derived from HEK293T cells and PCR-based mycoplasma testing was carried out to ensure cultures were not contaminated (American Type Culture Collection, Manassas, VA). Cells were grown at 37°C and 5.0% CO2 in complete media, made of Dulbecco’s Modified Eagle’s medium (DMEM, Gibco, Grand Island, NY) supplemented with 10% fetal bovine serum (FBS, Gibco), 0.5% penicillin (Gibco), and 0.5% streptomycin (Gibco). Two million cells were plated in 10 cm tissue culture plates and co-transfected the next day with 475 ng of plasmid encoding bxb1 recombinase and 7125 ng of the plasmid library using Lipofectamine 3000 (Invitrogen). Cells were grown at 33°C for 4 days after transfection. Two days after transfection, the cells were induced with 2 µg/mL doxycycline. All cells were expanded into 15 cm tissue culture plates 6 days after transfection, and 10 million cells were re-plated into new 15 cm tissue culture plates 3 days later.
 
@@ -110,38 +284,46 @@ Twelve days after transfection, the cells were washed with 1× phosphate-buffere
 
 Seven days after sorting for eGFP-positive cells, cells were sorted again according to the surface expression of GnRHR variants. Briefly, cells were first washed with 1× PBS (Gibco) and harvested with TrypLE Express protease (Gibco). GnRHRs expressed at the cell surface were immunostained for 30 min in the dark with DyLight 550-conjugated anti-HA antibody (Invitrogen). Cells were then washed twice with PBS containing 2% FBS, and sorted on a BD FACS Aria II (BD Biosciences). Forward and side scatter profiles were used to gate for intact live cells, and eGFP fluorescence was used to gate for recombined cells. Cells were then sorted into even quartiles based on the amount of DyLight 550 fluorescence (561 nm laser, 585/15 nm emission filter). Sorted cells were collected in complete media supplemented with 10% FBS (Gibco) and plated in 10 cm tissue culture plates. Cells were allowed to grow to confluency and then were washed with 1 X PBS (Gibco) and harvested with TrypLE Express protease (Gibco). Cell pellets were frozen for subsequent analysis.
 
-## Extraction of genomic DNA and next-generation sequencing
+### Extraction of genomic DNA and next-generation sequencing
 
 Genomic DNA (gDNA) was extracted from cell pellets using the Sigma GenElute Mammalian gDNA Miniprep Kit (Sigma-Aldrich). DNA amplicons for Illumina sequencing were produced from the gDNA using a previously described semi-nested polymerase chain reaction (PCR) technique (Matreyek et al., 2017). In order to selectively amplify recombined DNA, the first PCR utilized a primer which anneals upstream of the 10N UMI and a primer that anneals in the BFP-encoding region of the landing pad. Eight replicate PCRs were carried out with 2.5 µg of gDNA and HiFi HotStart Ready Mix (Kapa Biosystems, Wilmington, MA). These PCRs were limited to seven cycles to avoid PCR bias. PCR products were purified using a ZR-96 DNA Clean & Concentrator-5 kit (Zymo Research), and replicate products were then pooled. 10 µL of this first PCR product was then used as the template for a second PCR, which utilized primers that incorporate Illumina adapter sequences to both ends of the 10N UMI. To avoid PCR bias, these reactions were monitored by real-time PCR on a StepOne RT-PCR instrument (Applied Biosystems, Waltham, MA) and terminated during mid-log amplification (17 or 18 cycles). Four replicate PCRs were carried out with HiFi HotStart Ready Mix (Kapa Biosystems) and SYBR Green fluorescent dye (Applied Biosystems). Replicate PCR products were then combined and purified with a Zymoclean Gel DNA Recovery Kit (Zymo Research). To further improve the yield and quality of the amplicons, an additional six-cycle PCR was carried out with the HiFi HotStart Ready Mix (Kapa Biosystems) and primers that preserve the DNA sequence. These PCR products were then purified using a Zymo DNA Clean & Concentrator-5 kit (Zymo Research). Finally, amplicon yield and quality were assessed using an Agilent 2200 TapeStation with D1000 tape (Agilent Technologies, Santa Clara, CA) and a Synergy Neo2 microplate reader (BioTek). Amplicons were sequenced using an Illumina NextSeq150 flow cell, paired end, with 50% PhiX content.
 
-## Plasma membrane expression and epistasis measurements
+### Plasma membrane expression and epistasis measurements
 
-Illumina sequencing of the recombined UMIs within each sorted cell fraction were matched to the corresponding GnRHR mutants using the PacBio sequencing data and subjected to previously described quality filtering (Penn et al., 2020). Estimations of PME for each mutant were then calculated as previously described (Penn et al., 2020). PME measurements were averaged across two biological replicates. Within each library, the average fluorescence intensity values of the mutants were ranked and converted into a percentile. Mutants that differed in their percentile values by more than 25% across the two replicates were excluded from analysis. The use of percentile-based filtering overcomes intrinsic limitations associated with the distinct dynamic range constraints that occur because of the distinct surface immunostaining profiles of these three cellular libraries (Figure 3). Intensity values that meet these criteria are highly correlated across the two biological replicates (average Spearman’s ρ = 0.936 across the three libraries, Figure 4—figure supplement 1). To facilitate the comparison of epistatic interactions within a common set of secondary mutations, we excluded mutants that did not pass quality filtering in all three libraries from our analysis. After data filtering, we obtained PME measurements for 251 mutants in all three libraries (Supplementary file 4). These PME measurements were then utilized to calculate epistasis scores for the double mutants in the V276T and W107A libraries using the following equation:ε=ln(ωab)−ln(ωa)−ln(ωb)
+Illumina sequencing of the recombined UMIs within each sorted cell fraction were matched to the corresponding GnRHR mutants using the PacBio sequencing data and subjected to previously described quality filtering (Penn et al., 2020). Estimations of PME for each mutant were then calculated as previously described (Penn et al., 2020). PME measurements were averaged across two biological replicates. Within each library, the average fluorescence intensity values of the mutants were ranked and converted into a percentile. Mutants that differed in their percentile values by more than 25% across the two replicates were excluded from analysis. The use of percentile-based filtering overcomes intrinsic limitations associated with the distinct dynamic range constraints that occur because of the distinct surface immunostaining profiles of these three cellular libraries (Figure 3). Intensity values that meet these criteria are highly correlated across the two biological replicates (average Spearman’s ρ = 0.936 across the three libraries, Figure 4—figure supplement 1). To facilitate the comparison of epistatic interactions within a common set of secondary mutations, we excluded mutants that did not pass quality filtering in all three libraries from our analysis. After data filtering, we obtained PME measurements for 251 mutants in all three libraries (Supplementary file 4). These PME measurements were then utilized to calculate epistasis scores for the double mutants in the V276T and W107A libraries using the following equation:
+
+$$
+\epsilon=ln(\omega_{ab})−ln(\omega_{a})−ln(\omega_{b})
+$$
 
 where Ɛ is the epistasis score, ωab is the fluorescence intensity of the double mutant relative to WT mGnRHR, ωa is the fluorescence intensity of the single mutant in the WT library relative to WT mGnRHR, and ωb is the fluorescence intensity of the background mutation (either V276T or W107A) relative to WT mGnRHR, as previously described (Olson et al., 2014).
 
-## Expression measurements of individual GnRHR variants
+### Expression measurements of individual GnRHR variants
 
 HEK283T cells were obtained from ATCC and grown under the same conditions described above. GnRHR variants were transiently expressed in these cells, and the plasma membrane and intracellular expression of these variants was measured by flow cytometry, as previously described (Chamness et al., 2021). The reported expression levels represent measurements from three biological replicates.
 
-## In vitro translation of chimeric Lep proteins
+### In vitro translation of chimeric Lep proteins
 
-Messenger RNA (mRNA) of chimeric Lep proteins was generated and used for in vitro translation reactions as previously described (Chamness et al., 2021). Translation products were then analyzed by SDS-PAGE as previously described (Chamness et al., 2021). The intensities of singly (G1) and doubly (G2) glycosylated protein were quantified by densitometry in ImageJ software. Apparent transfer free energy values representing transfer of the TMDs of interest from the translocon to the membrane were then calculated using the following equation:ΔGapp=−RTln(Kapp)=−RTln(G1G2)
+Messenger RNA (mRNA) of chimeric Lep proteins was generated and used for in vitro translation reactions as previously described (Chamness et al., 2021). Translation products were then analyzed by SDS-PAGE as previously described (Chamness et al., 2021). The intensities of singly (G1) and doubly (G2) glycosylated protein were quantified by densitometry in ImageJ software. Apparent transfer free energy values representing transfer of the TMDs of interest from the translocon to the membrane were then calculated using the following equation:
+
+$$
+ΔG_{app}=−RTln(K_{app})=−RTln(\frac{G1}{G2})
+$$
 
 where ΔGapp is the free energy for transfer of the TMD into the membrane, R is the universal gas constant, T is the temperature, Kapp is the equilibrium constant for transfer of the TMD into the membrane, G1 is the intensity of the singly glycosylated band, and G2 is the intensity of the doubly glycosylated band, as previously described (Hessa et al., 2005). The reported transfer free energy values represent the average of three experimental replicates.
 
-## Structural modeling of Mus musculus GnRHR
+### Structural modeling of Mus musculus GnRHR
 
 The sequence of mGnRHR was obtained from UniProt (accession number Q01776) and a homology model in the inactive state was generated as previously described (Chamness et al., 2021). Images were generated by structurally aligning this mGnRHR model to an experimentally determined inactive-state human GnRHR crystal structure (GNRHR, PDB 7BR3, 2.79 Å) using the Super command in PyMol (Schrödinger, Inc, New York, NY) (Yan et al., 2020).
 
-## Computational estimates for the stability of mGnRHR variants
+### Computational estimates for the stability of mGnRHR variants
 
 Structural estimates for the effects of mutations on the stability of mGnRHR were determined using a previously described Rosetta based protocol featuring a membrane protein optimized energy function (Alford et al., 2015; Barlow et al., 2018). Briefly, the homology model of mGnRHR described above was used as the starting structure for computational stability estimates. A spanfile describing the transmembrane regions was created for mGnRHR using OCTOPUS predictions from Topcons (Bernsel et al., 2009; Viklund and Elofsson, 2008). The homology model was transformed into membrane coordinates using the mp_transform application. An ensemble of structures of each variant and wildtype (50 iterations) was generated from the homology model. For variants containing two mutations, the mutations were both introduced at the same time. The ΔΔG for each variant was calculated by subtracting the average score of the three lowest scoring variant models from the average score of the three lowest scoring WT models (ΔΔG = ΔGmut - ΔGwt).
 
-## Unsupervised learning
+### Unsupervised learning
 
 To classify mGnRHR variants based on their expression profiles, we first standardized their scores using the Standard Scaler tool from Python’s scikit-learn library in order to ensure that the clustering algorithms are not affected by the scale of the data. Next, we then reduced the dimensionality of the standardized data using UMAP (McInnes et al., 2018). We then used a density-based clustering algorithm (HDBSCAN) to cluster variants based on their expression profiles (McInnes et al., 2017). Unsupervised learning analyses were carried out based on deep mutational scanning measurements alone and did not incorporate any structural and/ or energetic parameters.
 
-## Quantification and analysis
+### Quantification and analysis
 
 Flow cytometry data were analyzed in FlowJo software (Treestar, Ashland, OR), and in vitro translation data were analyzed in ImageJ software. PME measurements were analyzed in Origin software (OriginLab, Northampton, MA) and mapped onto the mGnRHR homology model in PyMol (Schrödinger, Inc).

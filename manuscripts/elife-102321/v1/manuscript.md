@@ -11,13 +11,13 @@
 
 1. Institut für Populationsgenetik, Vetmeduni Vienna Vienna Austria
 2. Vienna Graduate School of Population Genetics, Vetmeduni Vienna Vienna Austria
-3. https://ror.org/052r2xn60 Department of Applied Statistics, Johannes Kepler University Linz Linz Austria
+3. Department of Applied Statistics, Johannes Kepler University Linz Linz Austria ([ROR:052r2xn60](https://ror.org/052r2xn60))
 
 † Corresponding author
 
 ## Abstract
 
-The phenomenon of parallel evolution, whereby similar genomic and phenotypic changes occur across replicated pairs of populations or species, is widely studied. Nevertheless, the determining factors of parallel evolution remain poorly understood. Theoretical studies have proposed that pleiotropy, the influence of a single gene on multiple traits, is an important factor. In order to gain a deeper insight into the role of pleiotropy for parallel evolution from standing genetic variation, we characterized the interplay between parallelism, polymorphism, and pleiotropy. The present study examined the parallel gene expression evolution in 10 replicated populations of Drosophila simulans , which were adapted from standing variation to the same new temperature regime. The data demonstrate that the parallel evolution of gene expression from standing genetic variation is positively correlated with the strength of pleiotropic effects. The ancestral variation in gene expression is, however, negatively correlated with parallelism. Given that pleiotropy is also negatively correlated with gene expression variation, we conducted a causal analysis to distinguish cause and correlation and evaluate the role of pleiotropy. The causal analysis indicated that both direct (causative) and indirect (correlational) effects of pleiotropy contribute to parallel evolution. The indirect effect is mediated by historic selective constraint in response to pleiotropy. This results in parallel selection responses due to the reduced standing variation of pleiotropic genes. The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits, which in turn gives rise to synergistic effects and higher parallelism.
+The phenomenon of parallel evolution, whereby similar genomic and phenotypic changes occur across replicated pairs of populations or species, is widely studied. Nevertheless, the determining factors of parallel evolution remain poorly understood. Theoretical studies have proposed that pleiotropy, the influence of a single gene on multiple traits, is an important factor. In order to gain a deeper insight into the role of pleiotropy for parallel evolution from standing genetic variation, we characterized the interplay between parallelism, polymorphism, and pleiotropy. The present study examined the parallel gene expression evolution in 10 replicated populations of Drosophila simulans, which were adapted from standing variation to the same new temperature regime. The data demonstrate that the parallel evolution of gene expression from standing genetic variation is positively correlated with the strength of pleiotropic effects. The ancestral variation in gene expression is, however, negatively correlated with parallelism. Given that pleiotropy is also negatively correlated with gene expression variation, we conducted a causal analysis to distinguish cause and correlation and evaluate the role of pleiotropy. The causal analysis indicated that both direct (causative) and indirect (correlational) effects of pleiotropy contribute to parallel evolution. The indirect effect is mediated by historic selective constraint in response to pleiotropy. This results in parallel selection responses due to the reduced standing variation of pleiotropic genes. The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits, which in turn gives rise to synergistic effects and higher parallelism.
 
 ## Introduction
 
@@ -39,11 +39,11 @@ We observed significant interplays between pleiotropy, ancestral variation, and 
 
 ## Methods
 
-## Estimating gene pleiotropy
+### Estimating gene pleiotropy
 
 We approximated the pleiotropy of each gene with two alternative estimators, network connectivity, and tissue specificity (τ).
 
-τ indicates how specific the expression of a gene is across different tissues. τ was estimated for each gene using the adult male expression profiles on flyatlas2 (Leader et al., 2018) as: τ=∑i[1−geneexpressionigeneexpressionmax]N−1, where N is the number of tissues examined and i indicates each of them (Dean and Mank, 2016). If a gene is only expressed in one tissue, τ will equal to 1 while it equals 0 when a gene is expressed at the same level across all tissues. The relationship between τ and pleiotropy is based on the idea that the genes expressed in many tissues are more likely to affect multiple traits than genes expressed in fewer tissues (McShea, 2000; Mank et al., 2008; Allen et al., 2018; Watanabe et al., 2019). Hence, we used 1-τ to indicate the pleiotropic effect of a gene.
+τ indicates how specific the expression of a gene is across different tissues. τ was estimated for each gene using the adult male expression profiles on flyatlas2 (Leader et al., 2018) as: $\tau=\frac{\sumi[1−\frac{geneexpression_{i}}{geneexpression_{max}}]}{N−1}$, where N is the number of tissues examined and i indicates each of them (Dean and Mank, 2016). If a gene is only expressed in one tissue, τ will equal to 1 while it equals 0 when a gene is expressed at the same level across all tissues. The relationship between τ and pleiotropy is based on the idea that the genes expressed in many tissues are more likely to affect multiple traits than genes expressed in fewer tissues (McShea, 2000; Mank et al., 2008; Allen et al., 2018; Watanabe et al., 2019). Hence, we used 1-τ to indicate the pleiotropic effect of a gene.
 
 Network connectivity has also been used as a proxy for pleiotropy, as more connected genes are likely to be more pleiotropic (Josephs et al., 2017; Proulx et al., 2005; He and Zhang, 2006; Hämälä et al., 2020a). We used published information about the transcriptional regulatory network of Drosophila, which was inferred from several sources, including genome-wide chromatin immuno-precipitation, conserved transcription factor binding motifs, gene expression profiles across different development stages, and chromatin modification profiles among several cell types (Marbach et al., 2012). The connectivity for each gene was estimated as the sum of adjacencies between the focal gene and other genes in the network.
 
@@ -51,7 +51,7 @@ The significant positive correlation (rho = 0.54) between 1-τ and network conne
 
 We note that approximating pleiotropic effects in D. simulans by using data-rich estimates from the close relative Drosophila melanogaster could potentially compromise the interpretability of our results. However, comparative analyses of tissue-specific gene expression have shown an extremely high consistency across species in animals (Mao et al., 2024) and plants (Davidson et al., 2012; Julca et al., 2021). Hence, these data suggest that at least for tissue specificity, one of the pleiotropy measures used, estimates from one species can be safely used for close relatives.
 
-## Experimental evolution and common garden experiment
+### Experimental evolution and common garden experiment
 
 The procedures of the evolution and common garden experiments were described in Barghi et al., 2019; Hsu et al., 2020; Jakšić et al., 2020. Briefly, 202 isofemale lines collected from Florida, USA were used to constitute 10 outbred Drosophila simulans populations, which have been exposed for more than 100 generations to a laboratory experiment at 28/18 °C with 12 hr light/12 hr dark photoperiod. The census population size of each replicate population is 1000–1250 adult flies.
 
@@ -61,83 +61,143 @@ The collection of samples for RNA-Seq was preceded by two generations of common 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig1-v1.jpg)
 
-**Figure 1.:** a) and the variation in parallel gene expression evolution across genes (b,c).(a) Experimental Evolution: ten replicated populations seeded from one common founder population have been evolving for >100 generations in a hot laboratory environment at 18 and 28°C. Common Garden Experiment: at the 103rd generation of the evolution experiment, the ten evolved populations (each with three biological replicates) were maintained together with the reconstituted ancestral population (with five biological replicates) for two generations in the same environment as in the evolution experiment. After two generations in the common garden, 50 males from each biological replicates were pooled and subjected to RNA-Seq. (b) Replicate frequency spectrum. Number of populations (x-axis) in which a given gene experienced a significant change in gene expression. The y-axis indicates the number of genes in each category. Most of the genes experienced a significant change in gene expression in a few evolved populations while much fewer genes were significant in all 10 populations. This pattern suggests that the parallelism in gene expression evolution differs across genes. (c) The distribution of gene expression evolution parallelism (log(1 /F)) across genes. Larger log(1 /F) values indicate more parallel evolution of a gene. The exhibit variation suggests that genes varied in their parallelism of its expression evolution.
+**Figure 1.:** (a) Experimental Evolution: ten replicated populations seeded from one common founder population have been evolving for >100 generations in a hot laboratory environment at 18 and 28°C. Common Garden Experiment: at the 103rd generation of the evolution experiment, the ten evolved populations (each with three biological replicates) were maintained together with the reconstituted ancestral population (with five biological replicates) for two generations in the same environment as in the evolution experiment. After two generations in the common garden, 50 males from each biological replicates were pooled and subjected to RNA-Seq. (b) Replicate frequency spectrum. Number of populations (x-axis) in which a given gene experienced a significant change in gene expression. The y-axis indicates the number of genes in each category. Most of the genes experienced a significant change in gene expression in a few evolved populations while much fewer genes were significant in all 10 populations. This pattern suggests that the parallelism in gene expression evolution differs across genes. (c) The distribution of gene expression evolution parallelism (log(1 /F)) across genes. Larger log(1 /F) values indicate more parallel evolution of a gene. The exhibit variation suggests that genes varied in their parallelism of its expression evolution.
 
-## Quantifying the evolutionary parallelism in gene expression across ten replicate populations
+### Quantifying the evolutionary parallelism in gene expression across ten replicate populations
 
-The raw RNA-Seq count table of five replicates of the reconstituted ancestral population and 10 independently evolved populations, each with three biological samples, was taken from Jakšić et al., 2020. The raw read counts of each gene were normalized with the TMM method implemented in edgeR (Robinson et al., 2010). Only genes with at least 0.1 normalized counts per million base (CPM) across all samples were considered for further analysis. Because we are interested in the evolutionary response in each independently evolved population, we contrasted the three biological samples from each evolved population to the five biological samples from the ancestral population. The differential expression (DE) analysis was done separately in each of the ten evolved populations. For DE analysis, we utilized negative binomial generalized linear modeling implemented in edgeR to fit the expression to the model Y=E+ε, in which Y stands for gene expression, E is the effect of evolution and ε is the random error. Likelihood ratio tests were performed to test the effect of evolution. p-values were adjusted using Benjamini-Hochberg false discovery rate (FDR) correction (Benjamini and Hochberg, 1995). After we identified DE genes in each evolved population, we constructed a replicate-frequency spectrum (RFS; Barghi et al., 2019). We considered genes with significant changes in the same direction in at least three evolved populations as putatively adaptive genes.
+The raw RNA-Seq count table of five replicates of the reconstituted ancestral population and 10 independently evolved populations, each with three biological samples, was taken from Jakšić et al., 2020. The raw read counts of each gene were normalized with the TMM method implemented in edgeR (Robinson et al., 2010). Only genes with at least 0.1 normalized counts per million base (CPM) across all samples were considered for further analysis. Because we are interested in the evolutionary response in each independently evolved population, we contrasted the three biological samples from each evolved population to the five biological samples from the ancestral population. The differential expression (DE) analysis was done separately in each of the ten evolved populations. For DE analysis, we utilized negative binomial generalized linear modeling implemented in edgeR to fit the expression to the model $Y=E+\epsilon$, in which Y stands for gene expression, E is the effect of evolution and $\epsilon$ is the random error. Likelihood ratio tests were performed to test the effect of evolution. p-values were adjusted using Benjamini-Hochberg false discovery rate (FDR) correction (Benjamini and Hochberg, 1995). After we identified DE genes in each evolved population, we constructed a replicate-frequency spectrum (RFS; Barghi et al., 2019). We considered genes with significant changes in the same direction in at least three evolved populations as putatively adaptive genes.
 
-To quantify the degree of parallel gene expression evolution, we calculated the expression changes in response to evolution (log2FC; fold change in expression between ancestral and evolved sample; see below) of each putatively adaptive gene (n=1775) in each evolved sample.(1)log2⁡FC=log⁡(yevoyanc¯),
+To quantify the degree of parallel gene expression evolution, we calculated the expression changes in response to evolution (log2FC; fold change in expression between ancestral and evolved sample; see below) of each putatively adaptive gene (n=1775) in each evolved sample.
 
-where yevo is the expression value (CPM) per gene per evolved sample, and yanc¯ is the overall mean expression value (CPM) per gene across five ancestral samples.
+$$
+log_{2}⁡FC=log⁡(\frac{y_{evo}}{y_{anc}¯}),
+$$
 
-We calculated the ratio of between-evolution population variation (MSpop) and residual (MSe) among the expression changes (log2FC), which is denoted as F.(2)F=MSpopMSe(3)MSpop=∑i=110(X¯i−X¯)210−1MSe=∑i=110∑j=13(Xij−X¯i)230−10
+where $y_{evo}$ is the expression value (CPM) per gene per evolved sample, and $y_{anc}¯$ is the overall mean expression value (CPM) per gene across five ancestral samples.
 
-Where Xij represent the log2FC value for the jth biological sample in the ith evolution population. i=1, 2, …,10, j=1, 2, 3.
+We calculated the ratio of between-evolution population variation (MSpop) and residual (MSe) among the expression changes (log2FC), which is denoted as F.
+
+$$
+F=\frac{MS_{pop}}{MS_{e}}
+$$
+
+
+
+$$
+MS_{pop}=\frac{\sumi=110(X¯_{i}−X¯)^{2}}{10−1}
+$$
+
+
+
+$$
+MS_{e}=\frac{\sumi=110\sumj=13(X_{ij}−X¯_{i})^{2}}{30−10}
+$$
+
+Where $X_{ij}$ represent the log2FC value for the jth biological sample in the ith evolution population. i=1, 2, …,10, j=1, 2, 3.
 
 As F reflects the heterogeneity of the evolutionary response for a gene across 10 evolutionary populations, we used the reciprocal of F (i.e. 1 /F) to quantify the degree of parallelism in gene expression evolution.
 
-## Estimating gene expression variation in an outbred ancestral population
+### Estimating gene expression variation in an outbred ancestral population
 
 The variation in expression of each gene within an outbred ancestral population was estimated from 20 adult males sampled from an outbred ancestral population (Lai and Schlötterer, 2022). We distinguished biological variation and measurement error of each gene using the statistical method implemented in edgeR Robinson et al., 2010, where the biological variance across individual (biological coefficient of variation; BCV; defined in Robinson et al., 2010) of each gene can be estimated (tag-wised dispersion). BCV2 was used to represent the expression variance relative to the mean of each gene within the population. To illustrate that the gene expression variation is not explained by random measurement error, we took the data from two ancestral population replicates, which are considered to be genetically identical, and calculated BCV2 of expression levels across individuals for each population replicates separately. We found that both mean and variance in expression for each gene were similar in two ancestral population replicates (mean: rho >0.99; variance: rho = 0.8, p-value <2.2e-16), suggesting that sequencing noise does not mask the biological variability.
 
-## Causal analysis
+### Causal analysis
 
-To infer the causal relationship between three factors: pleiotropy (Pl), ancestral variation (A), and parallelism (Pa), we applied causal analysis. The causal analysis is built upon a previously published statistical framework (Schadt et al., 2005). We consider five possible causal relationships between pleiotropic effects, ancestral variation, and parallelism (Figure 5). Our goal is to determine which of the five models is best supported by the data. The selection is based on Bayesian information criteria (BIC) which are calculated from the maximum likelihood of the respective models. The likelihood of each model is represented as:(5)L(ModelI)=p(Pa|A)p(A|Pl)p(Pl)(6)L(ModelII)=p(Pa|Pl)p(A|Pl)p(Pl)(7)L(ModelIII)=p(Pa|A,Pl)p(A|Pl)p(Pl)(8)L(ModelIV)=p(Pa|A,Pl)p(A)p(Pl)(9)L(ModelV)=p(Pa)p(A)p(Pl)
+To infer the causal relationship between three factors: pleiotropy (Pl), ancestral variation (A), and parallelism (Pa), we applied causal analysis. The causal analysis is built upon a previously published statistical framework (Schadt et al., 2005). We consider five possible causal relationships between pleiotropic effects, ancestral variation, and parallelism (Figure 5). Our goal is to determine which of the five models is best supported by the data. The selection is based on Bayesian information criteria (BIC) which are calculated from the maximum likelihood of the respective models. The likelihood of each model is represented as:
+
+$$
+L(ModelI)=p(Pa|A)p(A|Pl)p(Pl)
+$$
+
+
+
+$$
+L(ModelII)=p(Pa|Pl)p(A|Pl)p(Pl)
+$$
+
+
+
+$$
+L(ModelIII)=p(Pa|A,Pl)p(A|Pl)p(Pl)
+$$
+
+
+
+$$
+L(ModelIV)=p(Pa|A,Pl)p(A)p(Pl)
+$$
+
+
+
+$$
+L(ModelV)=p(Pa)p(A)p(Pl)
+$$
 
 p(Pl) is the probability distribution of the pleiotropic effect. To utilize the normal probability density function in the derivation of the likelihoods for each joint probability distribution, we transformed the random variables Pa and A to be normally distributed (natural log transformation on 1 /F and BCV2). The exact forms of these likelihoods are given in the Appendix.
 
 For each model, we maximized the likelihood and estimated the parameters using standard maximum likelihood methods. Based on the maximum likelihood, we computed the BICs for each model; the model with the smallest BIC is the one best supported by the data.
 
-BIC is calculated as:(10)BIC=−2ln⁡(Li)+kiln⁡(n)
+BIC is calculated as:
 
-Where Li is the likelihood for model I-V, ki is the corresponding number of free parameters and n is the total number of putatively selected genes. The analysis was performed independently on two measures of pleiotropy (tissue specificity and network connectivity).
+$$
+BIC=−2ln⁡(L_{i})+k_{i}ln⁡(n)
+$$
 
-## Estimating the sizes of direct and indirect pleiotropic effects on parallelism
+Where $L_{i}$ is the likelihood for model I-V, $k_{i}$ is the corresponding number of free parameters and n is the total number of putatively selected genes. The analysis was performed independently on two measures of pleiotropy (tissue specificity and network connectivity).
+
+### Estimating the sizes of direct and indirect pleiotropic effects on parallelism
 
 We used path analysis to estimate the effect sizes of direct and indirect pleiotropic effects on parallelism (Wright, 1920). We standardized all three transformed variables (Parallelism (Pa), Pleiotropy (Pl), and Ancestral variation (A); see Appendix) by subtracting the mean and dividing by the standard deviation for the following analysis.
 
-First, we fit the regression model for all three variables across all putatively adaptive genes:(11)yPa=β1xA+β2xPl+ε
+First, we fit the regression model for all three variables across all putatively adaptive genes:
 
-where yPa stands for parallelism, xA is ancestral variation, xPl is pleiotropy measure and ε is a random error. β1 and β2 are the regression coefficients corresponding to xA and xPl, respectively.
+$$
+y_{Pa}=\beta_{1}x_{A}+\beta_{2}x_{Pl}+\epsilon
+$$
 
-Second, we fit another regression model for ancestral variation and pleiotropy measure across all putatively adaptive genes:(12)yA=β3xPl+ε
+where $y_{Pa}$ stands for parallelism, $x_{A}$ is ancestral variation, $x_{Pl}$ is pleiotropy measure and $\epsilon$ is a random error. $\beta_{1}$ and $\beta_{2}$ are the regression coefficients corresponding to $x_{A}$ and $x_{Pl}$, respectively.
 
-where yA stands for ancestral variation, xPl is pleiotropy measure and ε is a random error. β3 is the regression coefficient corresponding to xpl.
+Second, we fit another regression model for ancestral variation and pleiotropy measure across all putatively adaptive genes:
 
-The sizes of the direct effect of pleiotropy on parallelism will be β2. The size of the indirect effect of pleiotropy on parallelism via ancestral variation will then be the product of β1×β3.
+$$
+y_{A}=\beta_{3}x_{Pl}+\epsilon
+$$
+
+where $y_{A}$ stands for ancestral variation, $x_{Pl}$ is pleiotropy measure and $\epsilon$ is a random error. $\beta_{3}$ is the regression coefficient corresponding to $x_{pl}$.
+
+The sizes of the direct effect of pleiotropy on parallelism will be $\beta_{2}$. The size of the indirect effect of pleiotropy on parallelism via ancestral variation will then be the product of $\beta_{1}\times\beta_{3}$.
 
 The analysis was performed independently on two different measures of pleiotropy.
 
-## Computer simulations
+### Computer simulations
 
 In our interpretation of the indirect effect of pleiotropy on parallelism, we assumed that ancestral variation in gene expression is negatively correlated with its parallel evolution. Because this has not been previously demonstrated, we used computer simulations to illustrate how the level of standing genetic variation impacts the parallelism of adaptive responses after a shift in trait optimum. For simplicity, we considered four redundant genes equally contributing to a fitness-associated trait. The phenotype (expression level) of each gene is controlled by a different number of genetic loci (5, 15, 30, and 50) with equal effect. The underlying assumption is that these four genes are redundant in terms of their fitness effect during the experimental evolution, but they exhibit different levels of pleiotropy and thus have historically experienced different levels of purifying selection, leaving different levels of genetic variation at the start of the experiment. Using mimicrEE2 (Vlachos and Kofler, 2018), we evolved 10 replicate populations (N=300) derived from the same set of 189 natural Drosophila haplotypes (Barghi et al., 2019) in the same selection regime with a shift in trait optimum of one standard deviation relative to the ancestral phenotypic distribution. After 100 generations, we determined the evolutionary parallelism of the four genes using the same approach as for the empirical data. Each simulation was repeated 100 times and one out of four genes was randomly picked from each simulation run to generate Figure 4 (i.e. we estimated variance in the ancestral population and parallelism for the evolved replicate populations).
 
 ## Results
 
-## The parallelism of expression evolution differs among genes
+### The parallelism of expression evolution differs among genes
 
 We investigated the degree of parallelism in gene expression evolution, using an RNA-Seq dataset from an experimental evolution study in which 10 replicated populations with the same genetic variation were exposed to the same environment for more than 100 generations (Hsu et al., 2021; Jakšić et al., 2020; Lai and Schlötterer, 2022; Figure 1a). While previous studies have focused on the shared parallel response across replicated populations (Hsu et al., 2021; Jakšić et al., 2020; Lai and Schlötterer, 2022), we re-analyzed the RNA-Seq data to quantify the degree of evolutionary parallelism across different genes. We identified 1775 putatively selected genes with a significant change in gene expression in the same direction in response to the novel environment in at least three populations. This conditioning on multiple replicate populations with a significant change in the same direction reduces false positives due to drift (Rennison and Peichel, 2022; Bohutínská et al., 2021). Relaxing the threshold of responding populations provides qualitatively similar results.
 
 Barghi et al., 2019 introduced the replicate frequency spectrum to describe the parallel genomic selection response in replicate populations. The replicate frequency spectrum of DE genes shows considerable heterogeneity among populations, with many genes displaying significant gene expression changes only in a few populations (Figure 1b). The replicate frequency spectrum is strongly influenced by the significance threshold used and provides an incomplete quantitative measure of parallelism. To obtain a more quantitative measure of parallelism, we evaluated the between-population variation in the evolutionary response (log2FC) of each putatively adaptive gene (n=1775) while controlling for measurement error (F). The parallelism of evolution for each gene is then quantified as 1 /F (Figure 1b; see Materials and Methods). A higher value of 1 /F indicates a more parallel evolutionary response among replicated populations (Appendix 1—figure 2). Importantly, the measure of parallelism varies between genes (Figure 1c) and is positively correlated with the number of populations in which a significant change in gene expression is observed for each gene (Appendix 1—figure 3).
 
-## Pleiotropy is positively associated with the degree of parallelism in gene expression evolution
+### Pleiotropy is positively associated with the degree of parallelism in gene expression evolution
 
 Pleiotropy is one of the factors that influence the degree of parallel evolution (Bolnick et al., 2018; Conte et al., 2015; Rennison and Peichel, 2022; Stern, 2013). Therefore, we tested whether and how the pleiotropic effect of a gene influences the degree of parallelism of its expression evolution in a new environment. We correlated two different measures of pleiotropy (1-τ (tissue specificity) and network connectivity; see materials and methods) of each putatively adaptive gene (n=1775) with the parallelism of its evolutionary responses (1 /F). We observed a significant positive correlation between the parallelism and the degree of pleiotropy, (rho = 0.26, p-value <2.2e-16 for 1-τ and rho = 0.11, p-value <5.6e-07 for network connectivity) (Figure 2 and Appendix 1—figure 4a). This suggests that pleiotropy may enhance parallel changes in gene expression during evolution.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig2-v1.jpg)
 
-**Figure 2.:** The distribution of evolution parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of pleiotropy (1-). Overall, the strength of pleiotropy was positively correlated with evolution parallelism (spearman correlation coefficient; τ=0.26; p-value <2.2e-16).ρ
+**Figure 2.:** The distribution of evolution parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of pleiotropy (1-$\tau$). Overall, the strength of pleiotropy was positively correlated with evolution parallelism (spearman correlation coefficient; $ρ$=0.26; p-value <2.2e-16).
 
-## Pleiotropy constrains the ancestral (natural) variation in gene expression
+### Pleiotropy constrains the ancestral (natural) variation in gene expression
 
-The negative effect of pleiotropy on genetic variation over longer time scales, mostly between species, is well documented (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017), but it is not yet clear whether the same effect is seen for adaptation from standing genetic variation. We reconstituted the ancestral population from 189 isofemale lines (Lai and Schlötterer, 2022) and estimated the expression variance (BCV2; see materials and methods) of each putatively adaptive gene (n=1775) in two replicate sets of 20 individuals. Since the variance in gene expression is positively correlated with genetic variation in cis-regulatory regions (Hämälä et al., 2020b) and the heritability of gene expression is high (Ayroles et al., 2009), we assumed that the observed variation in gene expression has a genetic basis, rather than being noise (see discussion). We observed a highly significant negative correlation between the level of pleiotropy and the magnitude of ancestral variation in gene expression (Figure 3a and Appendix 1—figure 4b; rho = −0.34, p-value <2.2e-16 for 1-τ and rho = −0.37, p-value <2.2e-16 for network connectivity). To exclude that this correlation was driven by our filtering for significant expression changes in at least three populations, we repeated these analyses with all genes (n=9,882) and also observed a significant correlation (rho = −0.45, p-value <2.2e-16 for 1-τ and rho = −0.38, p-value <2.2e-16 for network connectivity, data not shown). Hence, we suggest that the negative relationship between pleiotropy and polymorphism/diversity (Lemos et al., 2004; Mähler et al., 2017) (i.e. reduced variants, lower frequencies, and/or lower allelic effects) can be extended to gene expression.
+The negative effect of pleiotropy on genetic variation over longer time scales, mostly between species, is well documented (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017), but it is not yet clear whether the same effect is seen for adaptation from standing genetic variation. We reconstituted the ancestral population from 189 isofemale lines (Lai and Schlötterer, 2022) and estimated the expression variance (BCV2; see materials and methods) of each putatively adaptive gene (n=1775) in two replicate sets of 20 individuals. Since the variance in gene expression is positively correlated with genetic variation in cis-regulatory regions (Hämälä et al., 2020b) and the heritability of gene expression is high (Ayroles et al., 2009), we assumed that the observed variation in gene expression has a genetic basis, rather than being noise (see discussion). We observed a highly significant negative correlation between the level of pleiotropy and the magnitude of ancestral variation in gene expression (Figure 3a and Appendix 1—figure 4b; rho = −0.34, p-value <2.2e-16 for 1-$\tau$ and rho = −0.37, p-value <2.2e-16 for network connectivity). To exclude that this correlation was driven by our filtering for significant expression changes in at least three populations, we repeated these analyses with all genes (n=9,882) and also observed a significant correlation (rho = −0.45, p-value <2.2e-16 for 1-$\tau$ and rho = −0.38, p-value <2.2e-16 for network connectivity, data not shown). Hence, we suggest that the negative relationship between pleiotropy and polymorphism/diversity (Lemos et al., 2004; Mähler et al., 2017) (i.e. reduced variants, lower frequencies, and/or lower allelic effects) can be extended to gene expression.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig3-v1.jpg)
 
-**Figure 3.:** ) (τa) and with the evolution parallelism (b).(a) The distribution of gene expression variation in the ancestral population (log (BCV2)) of putatively evolved genes (n=1,775) is shown in boxplots binned by their strength of pleiotropy (1-). Overall, the strength of pleiotropy was negatively correlated with ancestral variation in gene expression (spearman correlation coefficient; τ=−0.34, p-value <2.2e-16). (ρb) The distribution of evolutionary parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of ancestral variation. The strength of parallelism is negatively correlated with the ancestral variation in gene expression (spearman correlation coefficient; ρ=−0.22, p-value <2.2e-16).
+**Figure 3.:** Association between ancestral variation in gene expression with the strength of pleiotropy (1- $\tau$) (a) and with the evolution parallelism (b).(a) The distribution of gene expression variation in the ancestral population (log (BCV2)) of putatively evolved genes (n=1,775) is shown in boxplots binned by their strength of pleiotropy (1-$\tau$). Overall, the strength of pleiotropy was negatively correlated with ancestral variation in gene expression (spearman correlation coefficient; $ρ$=−0.34, p-value <2.2e-16). (b) The distribution of evolutionary parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of ancestral variation. The strength of parallelism is negatively correlated with the ancestral variation in gene expression (spearman correlation coefficient; ρ=−0.22, p-value <2.2e-16).
 
-## Evolutionary parallelism is negatively associated with ancestral variation
+### Evolutionary parallelism is negatively associated with ancestral variation
 
 For a better understanding of the factors determining parallel evolution, we examined the influence of ancestral variation in gene expression on the parallel evolution of gene expression. We observed a significant negative correlation between ancestral variation and parallelism of the evolutionary response (rho = −0.22, p-value <2.2e-16; Figure 3b). We suggest that this pattern could be explained by genetic redundancy (Barghi et al., 2019; Láruson et al., 2020), which describes the phenomenon that a polygenic trait can shift its phenotypic value through different combinations of contributing loci: When the diversity of the contributing loci is reduced (either through fewer loci, lower ancestral frequencies or smaller variation in effect size), fewer combinations of the contributing loci are available for adaptation, resulting in more parallel adaptive responses. To confirm this, we performed computer simulations of replicated polygenic adaptation and found that lower ancestral phenotypic (i. e. expression) variation leads to more parallel trait evolution (Figure 4). Hence, that natural variation in the ancestral population could be one of the factor determining the parallel adaptive response in replicate populations. Although we focused on the phenotypic response to match gene expression, it is interesting to note that a similar result was obtained for parallelism at the genetic level with different levels of standing genetic variation (Thompson et al., 2019). If pleiotropy reduces variation, the positive correlation between pleiotropy and parallelism may be an indirect (correlative) effect, rather than a direct consequence of pleiotropy.
 
@@ -145,15 +205,84 @@ For a better understanding of the factors determining parallel evolution, we exa
 
 **Figure 4.:** Computer simulations assume a fitness-related trait determined by the expression of four genes. The expression of these four genes is determined by a different number of genetic loci, reflecting the influence of pleiotropy on ancestral genetic variation. A shift in trait optimum was used to illustrate the connection between ancestral variation in expression (x-axis) and parallelism of expression change across ten evolved populations (y-axis). The negative correlation between them (ρ = –0.26, p-value <1.77e-07) suggests that the genes with less ancestral variation are resulting in more parallel responses.
 
-## Testing causality
+### Testing causality
 
 Our previous analyses indicated that parallelism is affected by pleiotropy and ancestral variation. Because pleiotropy is negatively correlated with ancestral variation for both pleiotropy measures (Figure 3a and Appendix 1—figure 4b), it is not clear whether pleiotropy affects parallelism directly or indirectly through the negative correlation with ancestral variation. We used causal analysis, which is based on a Bayesian statistical framework (Schadt et al., 2005), to disentangle the causal relationship between the three different parameters. Since the directionality of pleiotropic effects on ancestral variation has been previously demonstrated, and ancestral variation is unlikely to influence the pleiotropy of a gene, we considered five possible causal relationships between pleiotropic effects, ancestral variation, and parallelism (Figure 5). In the first model, parallelism is determined by ancestral variation, which is shaped by pleiotropic, but pleiotropy has no direct effect on parallelism. In model II, the pleiotropic effect affects ancestral variation and parallelism independently, but ancestral variation has no causal effect on parallelism. In model III, pleiotropy affects both ancestral variation and parallelism, and ancestral variation also determines parallelism. In model IV, parallelism is determined by ancestral variation and pleiotropy, but pleiotropic effects are assumed to have no effect on the ancestral variation. This serves as a null model to confirm the indirect effect of pleiotropy on parallelism via ancestral variation. We also add a global null model with no correlation between these three factors (model V, Figure 5). The analysis was performed independently for two measures of pleiotropy (tissue specificity and network connectivity).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig5-v1.jpg)
 
-**Figure 5.:** Five possible relationships between pleiotropic effects, ancestral variation, and evolutionary parallelism.  denotes the likelihood of each model given the data. P is the probability or conditional probability of the measurements for each gene; LPa is the parallelism level and A is the level of ancestral variation in gene expression. Pl is the pleiotropic effects. See materials and methods for a more detailed description.
+**Figure 5.:** Five possible relationships between pleiotropic effects, ancestral variation, and evolutionary parallelism. $L$ denotes the likelihood of each model given the data. P is the probability or conditional probability of the measurements for each gene; Pa is the parallelism level and A is the level of ancestral variation in gene expression. Pl is the pleiotropic effects. See materials and methods for a more detailed description.
 
 For tissue specificity, our data were better explained by model III (i.e. model III has the lowest BIC, Table 1), suggesting that both direct and indirect effects of pleiotropy determine the degree of parallelism of adaptive gene expression evolution. On the other hand, when pleiotropy was estimated by network connectivity, model I had a slightly lower BIC than model III (Table 1). Thus, our causal analysis does not provide evidence for a direct effect of network connectivity. We further quantified the strength of the direct and indirect effects of pleiotropy on parallelism using a path analysis (see materials and methods). The path analysis confirmed the significant direct effect of tissue specificity, but network connectivity has no statistically significant direct effect on the parallelism of gene expression evolution (Table 2, Appendix 1—table 1). Although the relevance of the direct effects of pleiotropy on parallel gene expression evolution differs for the two pleiotropy estimates, the similarity of the indirect effect sizes for both pleiotropy measures is striking (Table 2). Taken together, these results suggest that pleiotropy may enhance the parallel evolutionary response of gene expression directly and indirectly through its influence on ancestral variation.
+
+**Table 1.**
+ Bayesian Information Criteria (BIC) value for Model I-V.The model with the smallest BIC is the one best support by the data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>BIC value (Network connectivity)</th>
+      <th>BIC value (Tissue specificity)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>9258.395</td>
+      <td>8958.125</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>9316.852</td>
+      <td>8972.626</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>9264.769</td>
+      <td>8939.342</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>9490.017</td>
+      <td>9162.090</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>9550.309</td>
+      <td>9247.540</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ The size of direct and indirect pleiotropic effects on the evolutionary parallelism.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Direct effect</th>
+      <th>Indirect effect</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1-τ</td>
+      <td>0.127</td>
+      <td>0.055 (−0.181, –0.332) *</td>
+    </tr>
+    <tr>
+      <td>Network connectivity</td>
+      <td>0.026</td>
+      <td>0.068 (−0.210, –0.337) *</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Coefficient estimates (β2,β3) whose product provides the indirect effect._
 
 ## Discussion
 

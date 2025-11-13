@@ -39,6 +39,14 @@ Here we present a novel model of breast tumorigenesis where only single cells ex
 
 For modeling tumorigenesis in breast tissue, we use an inducible mouse model of breast cancer (TetO-MYC/TetO-Neu/MMTV-rtTA transgenic mice) (Fry et al., 2016; Moody et al., 2002; Podsypanina et al., 2008) that has been shown to recapitulate hallmarks of human breast disease (Havas et al., 2017; Jechlinger et al., 2009; Figure 1a). In this tractable transgenic mouse model, the activity of two potent oncogenes – MYC and Neu (the rodent homolog for the human ERBB2 gene used in this mouse model)– are under the control of a Tet-O promoter that can only be activated in the presence of both the rtTA (reverse tetracycline-controlled transactivator) protein and the doxycycline compound. This three-part inducible system allows for temporal control of oncogenic expression by regulating doxycycline in the medium or animal diet and spatial control by the MMTV promoter that confines expression of the rtTA protein to the cells of the mammary lineage (Bockamp et al., 2002). We modify this tissue wide tumorigenesis model (tri-transgenic (T) model; Figure 1a, upper panels) to generate a stochastic system by retaining only the oncogenic constructs, making them TetO-MYC/TetO-Neu mice (bi-transgenic (B) model; Figure 1a, lower panels). The rtTA inducer gene is then lentivirally delivered to single cells within luminal epithelial acini derived from the bi-transgenic (B) mouse glands, granting only this subset of cells the competence to express transforming oncogenes and thereby preventing tissue wide transformation. Hence, this novel (B) model should allow acini to present with two cell populations –tumorigenic and non-tumorigenic– and could be used to study the dynamics of early tumorigenesis in an otherwise normal epithelium (Figure 1a, lower right panels).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic representation of the mouse models and the in vitro culture methods used. Acini are grown from single cells harvested from the mammary glands of either bi-trangenic (B) or tri-trangenic (T) mice, transduced with lentiviral particles in solution and re-seeded into 3D cultures. Doxycycline is added to the medium to induce the expression of oncogenes in cells expressing rtTA. B mice have the MYC and Neu oncogene constructs in their genome. These oncogenes are activated in single cells infected with the Inducer-reporter (pLenti-rtTA-GFP) lentiviral particles in the presence of doxycycline, modeling stochastic breast tumorigenesis (right panel). T mice have the rtTA transducer construct along with the oncogenes and all cells in T acini can be induced to express oncogenes in 3D culture in the presence of doxycycline. T mice infected with Reporter (pLenti-NULL-GFP) lentiviral particles are used as infection controls (left panel). Both viral particles mark single cells in the acini with H2B-GFP. (b) Representative immunofluorescence staining images of fixed 3D gels with B acini transduced with Inducer-reporter virus or T acini transduced with Reporter virus before induction (top), 24 hr post induction and (middle) and 72 hr post induction (bottom) with doxycycline. GFP expressing transduced cells (green), MYC oncoprotein (magenta), DAPI nuclear stain (blue). Scale bar, 10 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Fold changes in the mRNA expression of transgenes, MYC and Neu, in transduced mammary epithelial cells of B mice (n = 2) infected with Inducer-reporter virus or T mice (n = 2) with Reporter virus. The doxycycline dosage of 800 ng/ml (T800) is well established in the T cells and was used as control to normalize the gene expression, and to determine the dose for transduced B cells (600 ng/ml). Data represented as mean ± SEM; *p<0.05.
+
 Primary mammary epithelial cells derived from transgenic mice were seeded in 3D matrigel as single cells to be grown for 48 hr to form small acini consisting of around 15 cells that arrange around a small lumen. A small number of single cells in these acini were then transduced with lentiviral particles (Figure 1a, middle panel). In the tissue-wide tumorigenesis model(T), acini were transduced with the reporter virus (pLv-pGK-H2B-GFP) that marks a subset of cells with H2B-GFP, while tissue wide rtTA expression is driven in all cells (Figure 1a, left panels). To achieve stochastic tumorigenesis, bi-transgenic (B) acini were transduced with the inducer-reporter virus (pLv-pGK-rtTA-p2A-H2B-GFP) that expresses rtTA and reporter H2B-GFP in only these single cells within the normal epithelium (Figure 1a, right panels). Then, doxycycline was supplemented in the medium to induce tumorigenic growth in rtTA expressing cells. Immunofluorescent staining of 3D matrigel cultures, for both sets of doxycycline-induced transduced acini, was used to validate transgene specific protein expression of the MYC oncogene (human) in only the transduced cells of (B) acini as opposed to all cells of (T) acini (Figure 1b, anti-human MYC specific antibody). We FACS sorted H2B-GFP marked cells from both systems respectively for qPCR analysis of transgene specific MYC and Neu mRNA expression. This way we normalized doxycycline dosage in both systems to obtain the same mRNA expression levels of oncogenes using 800 ng/ml doxycycline in the tissue wide (T) system and 600 ng/ml doxycycline in the stochastic (B) system (Figure 1—figure supplement 1).
 
 To verify oncogene induction patterns and to understand the impact on epithelial morphology in the acini, 3D matrigel cultures of both doxycycline-induced (T) and (B) transduced acini were analyzed by immunofluorescent staining for polarity marker distribution. Lentivirus-transduced structures from the tissue wide induction system (T) presented with filled lumens that contained both infected (GFP positive) as well as non-infected oncogene-expressing cells. These structures exhibited overall disrupted epithelial polarity and some random microlumen, as reported previously (Jechlinger et al., 2009; Figure 2a). For the stochastic tumor induction system (B), we observed 2 phenotypes after 96 hr of oncogene expression; some of the (B) acini showed exclusively H2B-GFP marked cells in hyperplastic areas that also displayed double cell rim morphology and disturbed epithelial polarity (Figures 2a and 96 hours ON DOX, left panels), while the other (B) acini did not show expansion of the few H2B-GFP positive cells (Figures 2a and 96 hours ON DOX, right panels). Intrigued by these 2 distinct phenotypes, we analyzed transduced (H2B-GFP expression) (B) acini for their oncogenic MYC expression (Figure 2b). We verified that multi layered regions in acini contained mainly H2B-GFP positive cells that expectedly stained for MYC (Figure 2b, middle panels). For normal appearing regions, this analysis showed that the inability of single H2B-GFP positive, transduced cells to expand over 96 hr was not due to the lack of MYC expression (Figure 2b, lower panels).
@@ -49,7 +57,35 @@ To verify oncogene induction patterns and to understand the impact on epithelial
 
 To follow up these observations in more detail over time, we bred the nuclear reporter H2B-mCherry into the T and B mice to mark all the cells in the acinus for inverted light-sheet microscopy (Luxendo InVi SPIM, Figure 3—figure supplement 1). The InVI SPIM was adjusted for non-phototoxic, long-term imaging (up to 4 days, every 10 min with 1 µm z-spacing). The T/H2B-mCherry acini transduced with reporter virus proliferated swiftly upon doxycycline addition showing expansion of both the marked and unmarked cells (Figure 3a); a sturdy tumor phenotype developed, manifested by multi-cell-layered rims and pronounced proliferation-associated-apoptosis in all acini (Figure 3—Video 1). In contrast, B/H2B-mCherry acini transduced with inducer-reporter virus, displayed phenotypic variation upon induction of oncogenes in the transduced cells. Some acini showed fast clonal expansion of oncogene-expressing cells that form multilayer clusters in the acinus rim. This proliferative phenotype seems to stem from several transduced cells in vicinity to each other at the start of time-lapse imaging (Figure 3b, upper panel; Figure 3—Video 2). Again, more sparsely infected acini, did not sustain proliferation of the oncogene-expressing cells (Figure 3b, lower panel; Figure 3—Video 3). Taken together, the phenotypes for (B) and (T) acini are consistent with the respective behavior observed with the 96 hr end point immunofluorescent analysis (Figure 2a and b), verifying these prior observations and excluding phototoxic effects due to longitudinal SPIM imaging.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-v1.jpg)
+
+**Figure 3.:** (a) or B acini transduced with Inducer-reporter virus (b). All cells in the acini express H2B-mCherry (magenta) and only cells transduced with lentiviral particles express H2B-GFP (green). Imaging was started 24 hr after oncogenic induction with doxycycline. In (b) the upper panel shows the proliferative phenotype seen with stochastic transformation, whereas the lower panel shows the non-proliferative phenotype observed in some stochastically transformed acini. (Imaging conditions: H2B-mCherry 594 nm Ex, 610 LP Em; H2B-GFP 488 nm Ex and 497–554 nm Em). Scale bar, 20 µm. (c) Schematic representation of the big-image data analysis pipeline developed to analyze the light sheet microscopy images. Images are acquired in two channels (H2B-mCherry in magenta and H2B-GFP in green) at 10 min intervals for 3–4 days. Big Data Processor Fiji plugin is used to pre-process the raw images and CATS Fiji plugin is used for generation of pixel probability maps (Figure 3—figure supplement 2). Image pixels of the H2B-GFP images are classified into background (black), nucleus center (green), nucleus boundary (blue) classes by manual training. Processed raw images along with the probability maps from the nucleus center channel (green) are exported to Imaris for 3D visualization, nuclear segmentation and single-cell tracking.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The FEP membrane is glued onto the sample holder (a) with the help of a mold and biocompatible glue (b). Gel slivers are transferred to the FEP sheet trough in the sample holder (c) and overlaetO-Neu (B). Reporter H2B-mCherry was crossed into the B and T lines using a R26-H2B-mCherry line (Abe and Fujimori, 2013) (RIKEN, CDB0239K). All ten mammary glands were harvested (from virgin female mice between 8 and 10 weeks old), digested and singularized for establishing acinar cultures. All mice used in this study were housed according to the guidelines of the Federation of European Laboratory Animal Science Associations (FELASA). .
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) The Big Data Processor Fiji plugin was employed for pre-processing light-sheet microscopy images. Two-channel raw images were lazily loaded in 2D slice mode for visual inspection. Channel shift correction was performed to align the two channels. Then, the whole dataset was cropped in x,y,z to remove black pixels and empty planes. The cropped dataset was then saved in an 8-bit Imaris format with 3 × 3 binning applied in x and y. (b) The CATS Fiji plug-in was used to generate pixel probability maps for H2B-GFP images. Left panel shows the manual training done by drawing labels on the dataset to classify pixels into 3 classes: background (grey), nucleus boundary (red) and nucleus center (green). The right panel shows the pixel probability output for all three classes overlaid on the intensity data. Only the pixel probabilities from the nucleus center class were exported from CATS and linked to the Imaris dataset for further segmentation and tracking on Imaris.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Segmentation accuracy was assessed, counting: True Positives (correctly segmented cells, highlighted in green), False Merges (two cells merged as one, highlighted in orange), and False Splits (one cell split in two, highlighted in purple). Unidentified cells are indicated as False Negatives and Ground Truth indicates the actual number of cells at each timepoint. The average True Positive to Ground Truth ratio for the four timepoints is 0.92. Scale bar, 20 μm.
+
 To analyze the dual-color light-sheet movies (H2B-mCherry—all cells in the acinus , H2B-GFP—transduced cells within the acinus) on a single-cell level, we developed a big image data compatible image analysis pipeline that allows efficient visualization of longitudinal big image data, nuclear segmentation and single-cell tracking in 3D (Figure 3c, Figure 3—figure supplement 3 and Figure 4—figure supplement 2). The Big Data Tools plugin (Big Data Processor (Tischer, Norlin, and Pepperkok)) for Fiji (Schindelin et al., 2012) was used to visualize the 2D image stacks recorded over time. It uses lazy loading to stream the image files, which can be up to a few terabytes in size per acinus over 3–4 days of imaging. It also allows for easy cropping, binning, chromatic shift correction between channels and file format conversion to Imaris compatible formats. Once the raw data have been pre-processed, the CATS plug-in from Fiji (Tischer and Pepperkok) was used for segmenting the cell nuclei in the green channel images. The CATS plug-in uses machine learning algorithms to predict the probabilities of all pixels in the image and classify them into pre-defined classes. Three classes — background, nucleus, boundary — were trained manually on the CATS tool and the segmented images were exported to the commercially available Imaris software (Bitplane AG, 2020, Software available at http://bitplane.com) for 3D rendering and tracking. The nucleus class channel from the CATS tool was used for surface rendering and the surfaces in all time points were tracked over the course of the movie. Cell tracking allowed us to follow the clonal evolution for each transduced cell in the acinus over 3 days. Single transduced cells within one acinus show a difference in proliferation and cell fate as indicated in representative tracks (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-v1.jpg)
+
+**Figure 4.:** (a) Single-cell tracking results for every cell in a representative B acinus transduced with the Inducer-reporter virus. Top panel shows the acinus at the beginning of the time-lapse (24 hr post induction) with each transduced cell surface rendered with Imaris. The middle panel shows the lineage trees of each individual cell over the time-lapse recording. Lineage trees of single cells are grouped into proliferative (highlighted in red, orange) and non-proliferative (highlighted in blue) cell clusters. The bottom panel shows the acinus at the end of the time-lapse (~76 hr post induction with doxycycline). Color coding of each cell maintained in all panels. Scale bar, 15 µm. (b) Schematic representation of the 9 features of stochastically transformed cells extracted at the beginning of time-lapse imaging. These features were assessed for their impact on tumor cell proliferation within B acini transduced with the Inducer-reporter virus using logistic regression. Lower right panel: Coefficients (represented as odds ratios) of the three features included in the best logistic regression model, colored horizontal bars represent the 95% confidence interval of the estimate. ** indicates p-value (of having no effect)<0.01, * indicates p-value<0.05. The vertical grey line indicates the position of no effect. (c) Representative B mammary acini stochastically transduced with the Inducer-reporter virus and induced with doxycycline. Left panels show acini 24 hr post induction. Color highlights indicate clusters of transduced cells identified from hierarchical clustering (shown in middle panels) with proliferative clusters highlighted in orange and non-proliferative clusters highlighted in blue. Right panels show the same acini ~ 72–76 hr post induction. Scale bar, 20 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Comparison of acinus level features including numbers of cells (all, transduced and normal cells), cell proliferation rate (transduced and normal cells), acinus volume and acinus cell density for B acini grouped by the presence (blue) of at least one proliferative cluster or non-proliferative clusters (orange). (b) Mixed model regression analysis to identify features linked to tumorigenic outcome (using an Odds Ratio), including the three most important fixed effect features (Feature 5, 4 and 9) with random effect for each acinus and interaction terms for the Feature 1 (comparable to acinus size).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54066/elife-54066-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Single-cell tracking results are presented for every cell in representative B acini transduced with the Induced-reporter virus starting at 24 hr post doxycycline induction. (a) Acinus with differential outcome for 2 cell clusters – one with a single transduced cell (red) and the other with 3 transduced cells (blue). The cluster containing 3 cells shows heightened cell proliferation and establishment of a multi-layered neoplastic region, while the single cell fails to substantially expand. This demonstrates differential outgrowth of clusters within the same acinus, similar to the example shown in Figure 3a. (b) Acinus with a non-proliferative phenotype is similar in size to (a) and has 4 single cell clusters. None of these clusters show heightened proliferation of transduced cells, but either display normal cell division rates over 64 hr (turquoise), no proliferation at all (red, purple) or inability to survive following a division (grey). (a,b) Images show selected timepoints (0, 16, 32, 48 and 64 hr) of the time-lapse recording. Each transduced cell surface is rendered with Imaris and color coded according to the lineage. Lineage trees of single cells are grouped into proliferative and non-proliferative cell clusters. Color coding is maintained in all panels. Scale bar, 15 μm.
 
 To better understand the parameters that positively affect a transduced cell in the stochastic tumorigenesis model to start proliferating and establishing a tumor within a normal epithelium, we extracted the center of mass coordinates of all cells in the acinus at the start of the imaging and represented them as dots in a 3D space: depicted as magenta for normal cells and green for transduced cells in Figure 4b (upper right panel). Equipped with the tumor formation success of each stochastically transduced acinus, we hypothesized that tumors originate from groups of independently transduced oncogene-expressing cells in closer vicinity within the acinus. To explore this in detail, we defined clusters of cells in the stochastic model as a group of oncogene-expressing cells that are closer to each other than to other oncogene-expressing cells of the same acinus. Notably, these clusters contain both oncogene-expressing cells as well as normal cells of the acinus. The cluster volume was described as the sphere located at the center of mass of a cluster with a diameter equal to the distance between the two farthest oncogene-expressing cells of the cluster. Next, we extracted 9 features that represent reasonable factors that could influence tumor establishment in the epithelium such as size of the acinus (represented by number of cells in the acinus), density of cells in the acinus, infection efficiency (represented by number of infected cells in the acinus), number of cells in a defined cluster volume, number of independently transduced cells in a cluster volume, distances between all cells in a cluster volume, distances between transduced cells in a cluster volume, fraction of transduced cells in the cluster volume and number of cell-cell contacts between transduced cells in a cluster volume (Figure 4b, left panel).
 
@@ -75,17 +111,216 @@ Taken together, we strongly believe that our integration of a true stochastic tu
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>
+      <td>TetO-MYC/TetO-Neu/MMTV-rtTA</td>
+      <td>Moody et al., 2002 Havas et al., 2017</td>
+      <td>Tri-transgenic (T) strain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>
+      <td>TetO-MYC/TetO-Neu</td>
+      <td>Moody et al., 2002 Havas et al., 2017</td>
+      <td>Bi-transgenic (B) strain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, FVB/NJ strain)</td>
+      <td>R26-H2B-mCherry</td>
+      <td>Abe and Fujimori, 2013</td>
+      <td>RIKEN, CDB0239K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pWPXL plasmid</td>
+      <td>Didier Trono; Addgene</td>
+      <td>RRID:Addgene_12257</td>
+      <td>2nd generation lentiviral transfer plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVPT-GDNF-rtTR-KRAB-2SM2</td>
+      <td>Patrick Aebischer and Didier Trono; Addgene</td>
+      <td>RRID:Addgene_11647</td>
+      <td>Template for pGK promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Bob Weinberg; Addgene</td>
+      <td>RRID:Addgene_8454</td>
+      <td>Envelope protein for producing lentiviral and MuLV retroviral particles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Didier Trono; Addgene</td>
+      <td>RRID:Addgene_12260</td>
+      <td>2nd generation lentiviral packaging plasmid</td>
+    </tr>
+    <tr>
+      <td>Tranfectedconstruct (M. musculus)</td>
+      <td>pLv-pGK-H2B-GFP</td>
+      <td>This paper</td>
+      <td>Reporter Virus</td>
+      <td>Drives expression of Reporter-GFP</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pLv-pGK-rtTA-p2A-H2B-GFP</td>
+      <td>This paper</td>
+      <td>Inducer-reporter Virus</td>
+      <td>Drives expression of rtTA and Reporter-GFP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-MYC (D84C12) (Rabbit monoclonal)</td>
+      <td>Cell signalling Technologies</td>
+      <td>Cat. # 5605; RRID:AB_1903938</td>
+      <td>IF dilution (1:900)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha6-integrin (clone NKI-GoH3) (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. # MAB1378; RRID:AB_2128317</td>
+      <td>IF dilution (1:80)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ZO1 (61–7300) (rabbit polyclonal)</td>
+      <td>Life Technologies</td>
+      <td>Cat. # 61–7300; RRID:AB_2533938</td>
+      <td>IF dilution (1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Neu Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGTTTTGTGGTCATCCAGAACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Neu Rv</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTCAGCGTCTACCAGGTCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYC Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCGACTCTGAGGAGGAACAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MYC Rv</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGCAGAAGGTGATCCAGACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCherry Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGGCTGAAGCTGAAGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mCherry Rv</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATGGTGTAGTCCTCGTTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUM11 Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATGTGTGGCCGGATCTTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PUM11 Rv</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCACAGTGCCTTATACACCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA PureLink Mini Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # 12183018A</td>
+      <td>RNA Extraction Kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA Synthesis Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. # 11754050</td>
+      <td>cDNA Synthesis Kit</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Big Data Processor (plugin)</td>
+      <td>Fiji; Tischer et al., 2019a</td>
+      <td>RRID:SCR_018484</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATS (plugin)</td>
+      <td>Fiji; Tischer and Pepperkok, 2019b</td>
+      <td>RRID:SCR_018486</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Imaris x64</td>
+      <td>Bitplane; RRID:SCR_007370</td>
+      <td>Software available at: http://bitplane.com</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 62248; RRID:AB_2307445</td>
+      <td>(1 mg/mL), (1:1000 dilution)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The mouse strains TetO-MYC/MMTV rtTA (D'Cruz et al., 2001) and TetO-Neu/MMTV rtTA (Moody et al., 2002), that have been previously described, were bred in order to establish the tri-transgenic strain TetO-MYC/TetO-Neu/MMTV rtTA (T) or bi-transgenic strain TetO-MYC/TetO-Neu (B). Reporter H2B-mCherry was crossed into the B and T lines using a R26-H2B-mCherry line (Abe and Fujimori, 2013) (RIKEN, CDB0239K). All ten mammary glands were harvested (from virgin female mice between 8–10 weeks old), digested and singularized for establishing acinar cultures. All mice used in this study were housed according to the guidelines of the Federation of European Laboratory Animal Science Associations (FELASA).
 
 Rational for the use of these oncogenes: ERBB2 is overexpressed in ~20% of breast cancers (Arteaga et al., 2012), MYC in 15–50% of human breast cancer (Blancato et al., 2004). The combination of MYC and ERBB2 is found in highly aggressive human breast cancer (Al-Kuraya et al., 2004):and - in fact- Neu (the rodent homolog for the human ERBB2 gene used in this mouse model) and MYC strongly accelerate tumor onset In the combined transgenic animals (average 45 days) as compared to single transgenic animals (MYC 155 days, Neu 99 days), In all cases tumors regress rapidly to non-palpable state following oncogene silencing.
 
-## Lentivirus cloning and production
+### Lentivirus cloning and production
 
 The lentivirus design is based on pWPXL backbone, which was a gift from Didier Trono (Addgene #12257). The coding region from the original plasmid was excised using ClaI and NdeI in order to insert a new multiple cloning site (MCS). The pGK promoter was PCR amplified from pLVPT-GDNF-rtTR-KRAB-2SM2, which was a gift from Patrick Aebischer and Didier Trono (Addgene #11647) and cloned using XhoI and EcoRI restriction sites. For the plasmid pLenti-rtTA-GFP the synthetic region rtTA-p2A-H2B-GFP was cloned downstream of the pGK promoter using EcoRI and NheI sites. The plasmid pLenti-Null-GFP is derived from the pLenti-rtTA-GFP by removing the rtTA sequence, using the restriction sites EcoRI and BamHI, and retaining H2B-GFP in the coding region. For production of lentivirus particles, we seeded 1.6 × 107 HEK-293T cells (Lenti-X - Clontech Cat. # 632180) in 500 cm2 square dishes (Corning Cat. # 431110). After 24 hr, the cells were supplemented with medium containing 25 µM of chloroquine diphosphate (Sigma-Aldrich Cat. # C6628). After a 5 hr incubation, using 360 µg of polyethyleneimine (4 µg for each µg of plasmid), we transfect the cells with a mixture of endotoxin free plasmids: 20 µg pCMV-VSV-G (Addgene #8454); 30 µg psPAX2 (Addgene #12260); 40 µg transfer plasmids pLenti-rtTA-GFP or pLenti-Null-GFP. We harvested the medium after 48 hr, 72 hr and 96 hr after transfection. Concentration of the lentivirus from the collected medium was performed using an ultracentrifuge (Beckman Sw32 rotor) at 25,000 rpm for 2 hr at 4°C. The lentivirus pellet was resuspended in 1000 µl of HBBS buffer, aliquoted and stored at −80°C. The lentivirus titer was measured using FACS analysis as described by Kutner and colleagues (Kutner et al., 2009).
 
-## 3D acinus cultures
+### 3D acinus cultures
 
 Mammary glands harvested from mice (see above), were digested in order to prepare a single-cell solution. For this, the tissue was divided in four loosely capped 50 ml falcon, each supplemented with 5 ml serum-free media (DMEM/F12 supplemented with 25 mM HEPES and 1% Pen Strep(100 U/ml Penicillin; 100 µg/ml Streptomycin; ThermoFisher Cat. # 15140122)) and 750 U of Collagenase Type 3 (Worthington Biochemical Corp Cat. # LS004183), 20 µg of Liberase (Roche Cat. # 5401020001) and incubated overnight at 37°C and 5%CO2. The glands were then mechanically disrupted using a 5 ml pipette, and washed in PBS before being pelleted at 1000 rpm for 5 min. The cell pellet was resuspended in 5 ml of 0.25% Trypsin-EDTA and incubated for 45 min at 37°C and 5%CO2. The enzymatic reaction was then neutralized using 40 ml of serum supplemented medium (DMEM/F12 with 25 mM HEPES, 1% Pen Strep and 10% FBS Tetracycline Free certified (Biowest Cat. # S181T). The cells were pelleted again, resuspended in Mammary Epithelial Cell Basal Medium (PromoCell Cat. # C-21210) and seeded in collagen coated plates (Corning Cat. # 354400) overnight at 37°C and 5%CO2. This allows for epithelial cells to adhere to the surface of the plates while the other cell types float on top in the medium and can be easily removed by vacuum suction. The epithelial cells were detached from the collagen coated plates by incubating them with 0.25% Trypsin-EDTA for 5–7 min at 37°C and 5%CO2, following inactivation with serum supplemented media. The single-cell solution was pelleted, resuspended in MEBM and counted. We mixed 50,000 cells with 90 µl of Matrigel Matrix basement Membrane growth factor reduced phenol red free (Corning Cat. # 356231), and seeded this mixture into a 12 well plate (Corning Cat. # 3336) and incubated it for 30–40 min until the matrigel solidified. The gels were supplemented with 1.5 ml MEBM and allowed to grow at 37°C and 5%CO2.
 
@@ -93,29 +328,29 @@ For transduction, after 3 days of growth, the gels were mechanically disrupted a
 
 For induction of oncogenes in the cells of the acini, doxycycline (Sigma Cat. # D9891) was supplemented in the media. 800 ng/ml of doxycycline was used to induce T acini and 600 ng/ml was used for B acini. qPCR analysis was used to standardize the doxycycline dosage for B acini (see below).
 
-## qPCR analysis
+### qPCR analysis
 
 The qPCR technique was performed following the MIQE guidelines, where the total RNA was isolated from the mammary gland acini using RNA PureLink Mini Kit (ThermoFisher Cat. # 12183018A) and 2.5 ug was reverse transcribed to cDNA using SuperScript VILO cDNA Synthesis Kit (ThermoFisher Cat. # 11754050). Using Primer3 software we designed specific primers for DNA intercalating fluorescent dye approach for the transgenes Neu (Forward: CGTTTTGTGGTCATCCAGAACG and Reverse: CTTCAGCGTCTACCAGGTCACC) and c- MYC (Forward: GCGACTCTGAGGAGGAACAAGA and Reverse: CCAGCAGAAGGTGATCCAGACT). As endogenous controls, mCherry (Forward: GAGGCTGAAGCTGAAGGAC and Reverse: GATGGTGTAGTCCTCGTTGTG) and Pum1 (Forward: AATGTGTGGCCGGATCTTGT and Reverse: CCCACAGTGCCTTATACACCA) were used. Primer efficiency was verified and established between 95% and 105% Each sample was analyzed in duplicate and non-template controls were used in each qPCR run. Analyses were carried out using a StepOne device (Applied Biosystems, USA). Analysis of relative gene expression data was performed according to the 2−ΔΔCq method and the results were expressed as fold change of ΔΔCq values obtained from the reference T800 acini (Figure 1—figure supplement 1).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Matrigel cultures were grown as described above and plated on Nunc Lab-Tek II (Thermo Cat. # 155382) chambers. At pre-defined timepoints, the gels were fixed using 4% PFA for 2–3 min, following 3 washes with PBS. The gels were blocked with 10% goat serum for 2 hr at room temperature, followed by incubation with primary antibodies was done overnight at 4°C. The remaining immunofluorescence staining was performed as per standard protocol for c-MYC (Cell Signaling Technologies, Cat. # D84C12, 1:900), alpha6-integrin (Millipore Cat. # MAB1378, dilution 1:80) and ZO1 (Life Technologies Cat. # 61–7300, dilution 1:500). The nuclei were counter stained with 1:1000 DAPI (ThermoFisher Cat. # 62248, 1 mg/ml, dilution 1:1000) and mounted in anti-fading mounting medium (VECTASHIELD Mounting Medium with DAPI (Vecto Cat. # H1500-10)). Please note that the c-MYC antibody (Cell Signaling Technologies, Cat. # D84C12) recognizes specifically the human protein, which is transgenically expressed and does not recognize endogenous mouse MYC protein.
 
 Stained gels were imaged on Leica SP5 confocal microscope using 63x water lens and the LAS AF imaging software.
 
-## Light sheet microscopy
+### Light sheet microscopy
 
-## Sample holder preparation and mounting
+#### Sample holder preparation and mounting
 
 Imaging was performed on the InVi SPIM inverted light-sheet microscope (Luxendo Light-Sheet, Bruker Corporation). Sample mounting for the InVi SPIM is suitable for 3D matrigel cultures that are used to grow and transduce mammary acini (see above). The sample holder is made of medical grade plastic (PEEK). A 25 μm thin membrane (FEP; Luxendo) with a refractive index matching that of water is glued to the upper surface of a groove in the sample holder with a biocompatible silicone glue (Silpuran 4200; Wacker), forming a trough with transparent bottom (Figure 3—figure supplement 1). Matrigel cultures were carefully cut with a scalpel into rectangular slivers and transferred onto the FEP membrane’s trough. Once the gel sliver was aligned in place, 20–30 µl of fresh matrigel drops were poured onto the gel sliver in the sample holder until there was a thin layer of liquid matrigel on top of the gel sliver. The setup was incubated for 20 min at 37°C in a 5% CO2 incubator to allow the matrigel layer on top to solidify. Once the gel was solidified, 600–800 µl of MEBM supplemented with/without doxycycline was added to the sample holder’s FEP sheet trough. Preferably, freshly mounted sample gels were allowed to settle overnight in the incubator to prevent any gel drift during imaging, when the holder is placed into the imaging chamber of the microscope. The imaging chamber acts as an incubator with environmental control and it has a reservoir for immersion medium, which is filled with water so that both objective lenses and the bottom of the sample holder are below the water surface (Figure 3—figure supplement 1).
 
-## Imaging configuration and conditions
+#### Imaging configuration and conditions
 
 The InVi SPIM is equipped with a Nikon CFI 10x/0.3NA water immersion lens for illumination and a Nikon CFI-75 25x/1.1NA water immersion lens for detection. For excitation of GFP and mCherry, 488 nm and 594 nm laser lines were used, respectively, while emission was selected using a 497–554 nm band pass filter and a 610 nm long pass filter, respectively. 3D image stacks were acquired with a light-sheet thickness of 4 µm, a final magnification of 62.5x, resulting in 104 nm pixel size. The In-Vi SPIM environmental control was set to 37°C, 5% CO2 and 95% humidity. A series of optimization experiments, involving different laser powers, exposure times and z-step sizes yielded laser powers of 13 µW for 488 nm and 36 µW for 594 nm, 100 millisecond exposure time per frame and 1 µm z-spacing between frames to be optimal for long-term imaging (96–120 hr) without photo-bleaching or photo-toxic effects on growth.
 
 Images were recorded as 2D planes ranging from 100 to 500 in number, depending on the acinus size. Each 3D stack of planes was recorded in 2 channels - mCherry (all cells) and GFP (transduced cells). Depending on the duration of the time lapse imaging, 450–600 image stacks (equivalent to ~72–96 hr) were recorded per acinus at 10 min intervals.
 
-## Image analysis
+### Image analysis
 
 Big Data Processor (Tischer et al., 2019a), a Fiji plugin for lazy loading of big image data, was used to visualize the images in 2D slicing mode, crop stacks in x, y, z, and t, bin images (3 × 3×1 in x, y, z), perform chromatic shift correction between channels and convert. h5 files from the InVi SPIM into an Imaris compatible multi-resolution file format (.ims) for further analysis (Figure 3—figure supplement 3).
 
@@ -125,7 +360,7 @@ The data were then loaded into Imaris (Bitplane AG, 2020, Software available at 
 
 Center of mass coordinates of each cell were measured and exported from Imaris for subsequent feature analysis (Figure 4b).
 
-## Feature analysis
+### Feature analysis
 
 Observations suggest that tumors in acini originate from clusters of oncogene-expressing cells produced by independent transduction events. To identify these clusters, we computed the pairwise Euclidean distances between all oncogene-expressing cells in an acinus at the start of the experiment and applied hierarchical clustering with complete linkage. Clusters were identified automatically by cutting the branches of the trees using the dynamic tree cut algorithm (Langfelder et al., 2008). This defined a cluster as a group of oncogene-expressing cells that are closer to each other than to other oncogene-expressing cells of the same acinus. Note that a cluster can be composed of a single cell if this cell is comparatively isolated from other transduced cells. For each cluster we identified the following features as possibly linked to tumor formation: (1) number of cells in the acinus (2) cell density expressed as the ratio of number of cells to acinus surface area computed by assuming the acinus is a sphere with diameter equal to the distance between the two most distant cells (3) number of oncogene-expressing cells in the acinus (4) number of cells (including both oncogene-expressing and normal cells) in the cluster volume defined as the sphere centered at the center of mass of the cluster with diameter equal to the distance between the two farthest oncogene-expressing cells of the cluster (5) number of oncogene-expressing cells in the cluster (6) average pairwise distance between all cells in the cluster volume (7) average pairwise distance between oncogene-expressing cells in the cluster (8) fraction of oncogene-expressing cells in the cluster volume (9) number of contacts between oncogene-expressing cells in the cluster. Two cells are presumed in contact if they are less than the average cell diameter + 2 standard deviation apart.
 

@@ -81,13 +81,13 @@ In contrast, machine learning techniques such as text mining of published abstra
 
 When we use data science techniques to design and analyse experiments, we need to ensure that the techniques we use are transparent and interpretable. And when we use robot scientists to design, perform and analyse experiments, we need to ensure that science continues to explore a broad range of scientific questions. Other challenges include avoiding positive feedback loops and algorithmic bias, equipping scientists with the skills they need to thrive in this new multidisciplinary environment, and ensuring that scientists in the global south are not left behind. We discuss all these points in more detail below.
 
-## Interpreting experimental outcomes
+### Interpreting experimental outcomes
 
 When data science is used to make decisions about how to perform an experiment, we need to ensure that scientists calibrate their level of trust appropriately. On one hand, biologists will need to relinquish some level of control and to trust the computer program to make important decisions for them. On the other hand, we must make sure that scientists do not trust the algorithms so much that they stop thinking critically about the outcomes of their experiments and end up misinterpreting their results. We also want to ensure that scientists remain creative and open to serendipitous discoveries.
 
 We discussed above the importance of having a formal (machine-readable) language that can be used to describe both scientific ideas and experimental protocols to robots. However, it is equally important that the results and conclusions of these experiments are expressed in a human-understandable format. Ultimately, the goal of science is not just to be able to predict natural phenomenon, but also to give humans a deeper insight into the mechanisms driving the observed processes. Some machine learning methods, such as deep learning, while excellent for predicting an outcome, suffer from a lack of interpretability (Angermueller et al., 2016). How to balance predictability and interpretability for the human reader is an open question in machine learning.
 
-## Positive feedback loops and algorithmic bias
+### Positive feedback loops and algorithmic bias
 
 As with all applications of data science to new disciplines, there are risks related to algorithmic bias (Hajian et al., 2016). Recently there have been some concerns over algorithmic bias related to face-recognition of criminals – the face-recognition software was more likely to report a false-positive of a black face than a white face due to biases in the dataset that the software was trained on (Snow, 2017; Buolamwini and Gebru, 2018). Societal parameters shape the input data that is fed into machine learning models, and if actions are taken on the basis of their output, these societal biases will only be amplified.
 
@@ -95,19 +95,19 @@ There are parallel issues with data science for experimental biology – for ins
 
 We need to be careful to ensure that any attempt to design experiments has the correct balance between exploring new research ideas and exploiting the existing data and experimental tools available in well-established sub-disciplines.
 
-## Implementation and training
+### Implementation and training
 
 According to Chris Mellingwood (University of Edinburgh), some biologists are amphibious and fluidly move between "wet" laboratories and "dry" computing (Mellingwood, 2017). However, many biologists do not know how to code or do not have the required mathematical background to be able to reframe their research questions as data science problems, so it may be difficult for biologists to find ways of using these new tools to design experiments in their own laboratories. They might not even realise that there is a tool available to help them resolve the experimental design problems that they face. Researchers may need specialised training in order to learn how to interact with data science tools in a efficient and effective way.
 
 Reproducible data analysis alone requires an understanding of version control, at least one, if not multiple, programming languages, techniques such as testing, containerisation and continuous integration. Machine learning and optimisation algorithms require detailed statistical knowledge along with the technical expertise – sometimes including high performance computing skills – to implement them. Requiring all these skills along with the robotics engineering expertise to build an automated lab is outside of the capacity of most researchers trained by the current system.
 
-## Infrastructure and accessibility
+### Infrastructure and accessibility
 
 Even once a system is built, it needs to be constantly adapted as science progresses. There is a risk that by the time a platform is developed, it might be out of date. Sarah Abel (University of Iceland) discussed how university incentive systems do not always reward the types of activities that would be required for incorporating data science into a laboratory, such as interdisciplinary collaborations or maintenance of long-term infrastructure.
 
 Furthermore, due to the burden of developing and maintaining the infrastructure needed for this new approach to science, some researchers may be left behind. Louise Bezuidenhout (University of Oxford) explained that even though one of the goals of "data science for experimental design" is to have open and "accessible" data available around the world, scientists in the global south might not have access to computing resources needed for this approach (Bezuidenhout et al., 2017). Therefore, we need to consider how the benefits of data science and laboratory automation techniques are felt around the world.
 
-## Augmentation, not automation
+### Augmentation, not automation
 
 As we discuss the role of data science in the cycle of research, we need to be aware that these technologies should be used to augment, not replace, human researchers. These new tools will release researchers from the tasks that a machine can do well, giving them time and space to work on the tasks that only humans can do. Humans are able think "out-of-the-box", while the behaviour of any algorithm will inherently be restricted by its code.
 

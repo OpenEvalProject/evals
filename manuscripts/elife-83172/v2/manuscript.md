@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Biological Sciences, Columbia University New York United States
-2. https://ror.org/052gg0110 Department of Statistics, University of Oxford Oxford United Kingdom
-3. https://ror.org/052gg0110 The Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom
-4. https://ror.org/00hj8s172 Department of Systems Biology, Columbia University New York United States
+1. Department of Biological Sciences, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Department of Statistics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. The Wellcome Centre for Human Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+4. Department of Systems Biology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
@@ -34,13 +34,13 @@ As these considerations also make clear, however, estimates of hs and proxies li
 
 ## Results
 
-## Our estimation approach
+### Our estimation approach
 
 For each of 18,282 autosomal and X-linked genes, we estimated the posterior distribution of the fitness cost for heterozygous carriers (hs) of LOF alleles using a sequential Monte Carlo Approximate Bayesian Computation (ABC-SMC) approach (Figure 1A; see Supplementary file 2 for these estimates, and analogous ones for the X-chromosome). To this end, we simulated a Wright–Fisher population forward in time in order to generate the frequency of LOF at a gene and compare it to the frequency observed in the Non-Finnish European (NFE) sample of 55,855 individuals in gnomAD (Karczewski et al., 2020). We assumed that LOF alleles arise at a mutation rate μ per gene per generation (as described in Samocha et al., 2014; Karczewski et al., 2020) and that any high-confidence LOF mutation in a gene has the same fitness cost (Agarwal and Przeworski, 2021). We also assumed a demographic history for the population, based on the Schiffels and Durbin, 2014 model (Schiffels and Durbin, 2014), which we modified slightly to better match neutral polymorphism levels observed in the NFE sample (see 'Materials and methods'). Proposed values of the dominance coefficient, h, and the strength of selection in homozygotes, s, were sampled from a uniform and log-uniform prior distribution, respectively (see 'Materials and methods'). Although on autosomes only the compound hs parameter can be estimated, we sample h and s instead of hs to enable comparisons between autosomes and the X chromosome. The resulting posterior distribution of hs for a gene thus represents the probability of hs given the observed LOF frequency, a mutation rate, and a realistic demographic history.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83172/elife-83172-fig1-v2.jpg)
 
-**Figure 1.:** hs for loss-of-function (LOF) across human genes.(A) Schematic of the approach to infer heterozygous selection coefficients (hs) for each gene. We assume prior distributions log10(s)~U(–6,0) and h~U(0,1). We further assume a mutation rate μ to LOF alleles per gene and a demographic model specified by parameters , which describe changes in the effective population size θN at time points in the past. These parameters are used in forward population genetic simulations based on a Wright–Fisher model of selection (see 'Materials and methods'). For each iteration ei, the simulation generates a frequency q of LOF alleles, which is then compared to the observed LOF frequency iq for a given gene. The proposed value of (hs) is retained if within a tolerance ε, which is decreased over time, or rejected otherwise. For each ε, this procedure is repeated until there are 50,000 acceptances, providing a sample from the posterior distribution of the probability of ihs given the observed frequency q of LOF variants for a gene (as well as the mutation rate and demographic model). (B) The cumulative distribution of the estimated heterozygous selection coefficient hs for each autosomal gene. Black dots represent the point estimate of hs for each gene, based on the maximum a posteriori estimate (i.e., the mode) of the posterior distribution. Horizontal lines represent the 95% credible intervals for each gene and are colored according to the width of the interval on a log10 scale. (C) A similar plot, but for non-pseudoautosomal region (PAR) X-linked genes, with sex-averaged selection on the loss of a copy on the X calculated as the average of s and hs (see 'Materials and methods').
+**Figure 1.:** (A) Schematic of the approach to infer heterozygous selection coefficients (hs) for each gene. We assume prior distributions log10(s)~U(–6,0) and h~U(0,1). We further assume a mutation rate μ to LOF alleles per gene and a demographic model specified by parameters $\theta$, which describe changes in the effective population size Ne at time points in the past. These parameters are used in forward population genetic simulations based on a Wright–Fisher model of selection (see 'Materials and methods'). For each iteration i, the simulation generates a frequency qi of LOF alleles, which is then compared to the observed LOF frequency q for a given gene. The proposed value of (hs)i is retained if within a tolerance ε, which is decreased over time, or rejected otherwise. For each ε, this procedure is repeated until there are 50,000 acceptances, providing a sample from the posterior distribution of the probability of hs given the observed frequency q of LOF variants for a gene (as well as the mutation rate and demographic model). (B) The cumulative distribution of the estimated heterozygous selection coefficient hs for each autosomal gene. Black dots represent the point estimate of hs for each gene, based on the maximum a posteriori estimate (i.e., the mode) of the posterior distribution. Horizontal lines represent the 95% credible intervals for each gene and are colored according to the width of the interval on a log10 scale. (C) A similar plot, but for non-pseudoautosomal region (PAR) X-linked genes, with sex-averaged selection on the loss of a copy on the X calculated as the average of s and hs (see 'Materials and methods').
 
 We verified that our choices of mutation and demographic models provide a good fit to observed de novo mutation rates and patterns of neutral polymorphism (Appendix 1—figures 1–3, 'Materials and methods'), and that our inference approach allowed us to get robust estimates of simulated posterior distributions (Appendix 1—figure 4).
 
@@ -50,7 +50,7 @@ Inferred MAP values of hs span several orders of magnitude, however, ranging fro
 
 As is clear from the posterior distributions, the 95% credible interval of hs often spans multiple orders of magnitude. In other words, there is substantial uncertainty around our estimates for any given gene, arising from sampling noise as well as the effects of genetic drift (Figure 1B). Even for genes with large point estimates, there can be substantial probability mass on much weaker selection (e.g., hs < 10–4): for example, of the 9987 genes for which the point estimate is indicative of strong selection (hs > 10–2), ~35% have at least 5% of their probability mass on quite weak selection (hs < 10–4). As a result, whereas based on point estimates alone, it appears that over two-thirds of all autosomal genes in humans are under strong constraint (Figure 1B; Weghorn et al., 2019), based on summing posterior probabilities of hs > 1% for each gene, only half (48%) are estimated to be highly constrained. Nonetheless, this number is still much higher than the prior likelihood of a gene being highly constrained (of 26%).
 
-## Extension to the X chromosome
+### Extension to the X chromosome
 
 The X chromosome plays an important role in a number of human developmental disorders (Lubs et al., 2012; Martin et al., 2021). Because the number of copies differs between the sexes (outside the pseudoautosomal regions (PARs)), the standard autosomal models for mutation, selection, and drift are not directly applicable to all genes on the X chromosome. On autosomes, all heterozygotes can be modeled as having a fitness cost, hs, for the loss of a single gene copy. In contrast, for genes on the X without a functional homolog on the Y chromosome, the mode of selection is sex-specific since LOF of one copy generates a full knockout in males: the fitness cost of the loss of a single gene copy is thus hs in females and s in males.
 
@@ -60,13 +60,13 @@ All else being equal, we might expect the sex-averaged strength of selection to 
 
 Less expected are our findings for 16 non-PAR X genes with a Y-chromosome homolog (San Roman et al., 2021; see 'Materials and methods'): 93% are estimated to be under strong selection. The loss of one copy of these genes appears to be even more deleterious on average than the rest of the non-PAR X (see also Appendix 1—figure 8A; p=9.2 × 10–4). Thus, the fitness cost of the loss of a gene is higher on X than autosomes whether or not the X-linked gene has a Y chromosome homolog and biallelic expression. As noted by San Roman et al., 2021, and suggested by others (e.g., Park et al., 2010; Slavney et al., 2016), one interpretation may be that rather than sex-biased expression and X-inactivation being the source of greater selective constraint on X-linked genes, differences in gene dosage may be the consequence of selection for a sex-specific function.
 
-## The distribution of fitness effects for LOF mutations
+### The distribution of fitness effects for LOF mutations
 
 Under our assumption that LOF mutations within the same gene have the same hs, we can obtain the distribution of fitness effects (DFE) for all possible de novo LOF mutations in the genome by weighting the posterior for each gene by its mutational opportunities to an LOF (see 'Materials and methods'). The area under the DFE indicates that more than 56% of all possible autosomal LOF mutations have an estimated hs > 1%, while 20% have an hs of 10% or greater (Figure 2A shows the result for all autosomal LOF mutations, and Appendix 1—figure 8B for the X chromosome).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83172/elife-83172-fig2-v2.jpg)
 
-**Figure 2.:** hs for each gene with the fraction of potential or observed LOF variants in the gene (see 'Materials and methods').(A) The estimated DFE of all possible de novo LOF mutations in autosomes. The weight assigned to each gene is the fraction of total genome-wide LOF mutational opportunities it contains. (B) The estimated DFE of observed de novo LOF mutations (blue curve) in Goldmann et al., 2016, obtained by weighting the posterior distribution of hs for each gene with the fraction of observed LOF variants it contains, compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 37 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray). (C) The estimated DFE of observed de novo LOF mutations (blue curve) in the Simons Simplex controls (i.e., unaffected siblings of autism probands), compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 64 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray). (D) The estimated DFE of new LOF mutations seen in spermatogonial stem cells (blue curve), compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 14 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray).
+**Figure 2.:** (A) The estimated DFE of all possible de novo LOF mutations in autosomes. The weight assigned to each gene is the fraction of total genome-wide LOF mutational opportunities it contains. (B) The estimated DFE of observed de novo LOF mutations (blue curve) in Goldmann et al., 2016, obtained by weighting the posterior distribution of hs for each gene with the fraction of observed LOF variants it contains, compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 37 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray). (C) The estimated DFE of observed de novo LOF mutations (blue curve) in the Simons Simplex controls (i.e., unaffected siblings of autism probands), compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 64 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray). (D) The estimated DFE of new LOF mutations seen in spermatogonial stem cells (blue curve), compared to the DFE of all possible LOF mutations (black curve), and 100 bootstrapped DFEs of a set of 14 DNMs randomly sampled from the full set of LOF mutational opportunities (in gray).
 
 De novo mutations (DNMs) to LOF are sampled from the set of all possible mutations to an LOF. Therefore, the DFE of de novo LOF mutations identified in a representative sample of human pedigrees should approximate the inferred DFE of all mutational opportunities, other than those at which mutations lead to embryonic lethality. With this in mind, we examined the DFE of de novo LOF mutations in a hospital cohort of newborns not ascertained for any disease (Goldmann et al., 2016) as well as in unaffected siblings in the Simon Simplex autism study (An et al., 2018). Since neither study reported DNMs on the X, we focused on the autosomal DFE, weighting the posterior for each gene by the fraction of observed de novo LOF mutations in that gene. In both cohorts, the DFE of DNMs does not differ significantly from the DFE of all possible LOF mutations (Figure 2B and C). The same is observed for the set of LOF mutations seen in spermatogonial stem cells (Moore et al., 2021; Figure 2D); as these mutations are not ascertained on viability of embryos, they should even more faithfully reflect the set of all possible DNMs.
 
@@ -82,7 +82,7 @@ For the set of genes with no LOF variants observed in the UK Biobank sample, mut
 
 **Figure 3.:** (A) The DFE of all possible mutational opportunities in genes that do not have a single loss-of-function (LOF) mutation in ~160K UK Biobank individuals. (B) The DFE of segregating LOF variants in ~160K UK Biobank individuals, by allele frequency threshold, compared to the DFE of all possible LOF mutations (black curve). (C) The distribution of the age (in generations) of a strongly selected LOF allele segregating in the population at present, obtained using forward simulations at an autosomal locus under a demographic model for population growth in Europe (see 'Materials and methods'), for a heterozygous selection coefficient of hs = 1%; hs = 10% or hs = 50%. The median value in each case is indicated with a red dashed line.
 
-## The realized fitness burden of LOF alleles underlying severe disease phenotypes
+### The realized fitness burden of LOF alleles underlying severe disease phenotypes
 
 One approach to mapping mutations with a large effect on disease risk is to resequence families with offspring ascertained on the basis of a disease and unaffected parents, and identify DNMs. For severe diseases, LOF mutations are often disproportionately represented among the exonic DNMs identified (e.g., Deciphering Developmental Disorders Study, 2017; Jin et al., 2017; Kaplanis et al., 2020; Krumm et al., 2015; Satterstrom et al., 2020). A priori, it is unclear what the fitness costs of such LOF mutations should be: notably, they may vary in their penetrance, depending on genetic background and environmental exposures.
 
@@ -104,7 +104,7 @@ Genes reported as having mutations in multiple probands or studies are more like
 
 We further considered case-control studies of autism, schizophrenia, developmental epilepsy, and bipolar disorder (Feng et al., 2019; Palmer et al., 2022; Satterstrom et al., 2020; Singh et al., 2022) to examine the DFEs of rare variants in cases and controls (where rarity is defined by the original study; Appendix 1—figure 11). Among such variants, cases show only a small enrichment of highly deleterious variants over controls, which is statistically significant for autism, epilepsy, and schizophrenia. These findings are expected: given that a non-negligible fraction of controls harbor highly deleterious alleles (~6.5% in a relatively healthy cohort; Appendix 1—figure 9A and 11), a large fraction of cases would have to carry such mutations for the enrichment to be appreciable. Moreover, almost all of the mutations compared between cases and controls are inherited rather than de novo, so have lower hs on average (see Figure 3). These findings underscore that for a given disease, the DFE of the mutations discovered depends on the design of the mapping study.
 
-## The impact of study design on the DFE of disease mutations
+### The impact of study design on the DFE of disease mutations
 
 The fitness effects of mutations that underlie a disease phenotype may differ depending on the sex of the proband and the parental background. We examined whether the DFEs of mapped mutations reveal such differences, focusing first on developmental disorders (DD), which have well-defined diagnostic criteria, and where most cases are sporadic rather than familial (Deciphering Developmental Disorders Study, 2017; Kaplanis et al., 2020). We considered the 7500 trios in the DDD study for which we had information about the sex of the proband (see 'Materials and methods'). The DFE for de novo LOF mutations in affected males is very similar to the DFE for mutations seen in affected females (Figure 5A and B), and to the DFE for the full sample of 24K trios with developmental disorders (Figure 4A).
 
@@ -142,31 +142,41 @@ Moving forward, estimates of fitness costs such as the ones reported here for LO
 
 We inferred the strength of selection acting on the LOF of each gene. To this end, we compared the frequency of LOF variants expected given a plausible demographic model and mutation rate to the observed frequency of such variants in extant individuals (see Figure 1 for a schematic). Below, we first describe how observed data are obtained and processed from gnomAD (Karczewski et al., 2020), followed by an outline of our model and the inference scheme.
 
-## Estimating hs
+### Estimating hs
 
-## Mutation rates
+#### Mutation rates
 
 As in previous studies (Cassa et al., 2017; Weghorn et al., 2019), we made the simplifying assumption that after some filtering (see below), all LOF mutations in a gene have identical selection coefficients and thus each gene can be modeled as a single biallelic locus with a single mutation rate μ. Values of μ for each gene were obtained from the 'high-confidence' LOF mutation rates for autosomes and the X chromosome provided as part of the gnomAD 2.1.1 release. The underlying methodology is detailed in Karczewski et al., 2020. We excluded 507 genes that had μ = 0, i.e., did not have a (known) mutation rate to LOF.
 
 We checked the validity of the gnomAD mutation model by gauging its fit to DNM data for the X chromosome and autosomes (Appendix 1—figure 1). To this end, we categorized autosomal genes by quartiles of the mutation rate estimates μtotal (over synonymous, missense, and LOF sites in a gene) from gnomAD. We summed μtotal over all genes within each quartile and divided by μtotal over all genes in the exome to obtain the per-quartile haploid mutation rate for the gnomAD mutation model. For comparison, we calculated the DNM rate in each group of genes: exonic DNMs on the X and autosomes were obtained from the DDD (Kaplanis et al., 2020) and Decode studies (Halldorsson et al., 2019; Jónsson et al., 2017). Although the individuals in the former study, and some in the latter, were ascertained for severe disease, and there may be some expected enrichment of LOF mutations as a result, the exonic mutation rate in these studies is comparable. We also used exonic DNMs from Goldmann et al., 2016 that are not ascertained on a disease phenotype, and similarly comparable to the ascertained sets in the overall mutation rate; however, no data for the X were available. We obtained 95% Poisson confidence intervals for the DNM counts in each quartile. Because of much smaller amounts of DNM data for the X chromosome, we categorized X chromosome genes into two groups instead of four.
 
-## Observed frequency of LOF variants
+#### Observed frequency of LOF variants
 
 We downloaded whole-exome polymorphism data for 141,456 individuals made available as part of gnomAD 2.1.1 (Karczewski et al., 2020). These data are polarized to the reference genome (hg19) and annotated with variant consequences using Variant Effect Predictor (v85, Gencode V19) and the LOFTEE tool to flag high-confidence ('HC') LOF variants.
 
 We excluded genes with duplicate IDs or conflicting names between Gencode and gnomAD (n = 46). We excluded a variant if (i) it did not pass quality control in gnomAD (using the 'Filter' column in the vcf files); (ii) it was an indel; (iii) it was not 'high-confidence' LOF, per the criteria enumerated in Karczewski et al., 2020, in the canonical transcript of the gene, and (iv) if the total number of (reference and alternate) alleles for the variant was lower than 2 standard deviations below the mean allele number in the NFE sample, calculated separately for autosomes and the PAR, and the non-PAR X. We then summed the allele frequencies of the remaining variants within each gene in the NFE sample of 56,855 individuals to obtain the observed frequency of LOF mutations per gene. We excluded 793 genes for which fewer than 50% of 'high-confidence' LOF mutations met the above threshold on allele number.
 
-## Forward simulations on autosomes and the pseudoautosomal region
+#### Forward simulations on autosomes and the pseudoautosomal region
 
 To model LOF mutations in a gene, we used a forward population genetic simulation framework initially described in Simons et al., 2014, and adapted for LOF mutations in Fuller et al., 2019. Briefly, a gene is modeled as a single non-recombining biallelic locus that undergoes mutation to an LOF allele each generation at rate 2Nμ in a panmictic diploid population of size N; we further assume new mutations can arise only on a background free of other LOF variants and that back mutations occur at a rate of 0.01μ. Assuming identical fitness effects for all LOF mutations in a gene as described in the 'Mutation rates' section, compound heterozygotes implicitly have the same fitness effect as homozygotes. We assume that mutations are not fully recessive, where fully recessive is defined as 2Nhs << 1 and 2Ns >> 1.
 
 Given μ for the gene of interest and an appropriate demographic model, we simulate the evolution of this locus forward in time under a single dominance coefficient (h) and selection coefficient (s) to obtain the frequency of LOF at present (i.e., the sum of the frequencies of any LOF alleles in the gene). Each generation is formed by Wright–Fisher sampling with selection, with parents chosen according to their fitness. As a starting demographic model, we use the Schiffels–Durbin model for population size changes in Europe over the past ~55,000 years (Schiffels and Durbin, 2014), preceded by an ~10N generation burn-in period of neutral evolution at an initial population size N of 14,448 (following Simons et al., 2014; Simons et al., 2018). In the last generation, i.e., at present, we sample 2n chromosomes from the simulated population, to match the size of the NFE samples with good coverage for the gene in gnomAD. The simulations are implemented in C++ and available online at https://github.com/zfuller5280/MutationSelection (Agarwal, 2023 copy archived at swh:1:rev:847d659a71a0f8bd04bcd68fa26a18b0b99ad255).
 
-## Forward simulations on the non-PAR X chromosome
+#### Forward simulations on the non-PAR X chromosome
 
 On the autosomes, we do not need to model the two sexes separately, and all parameters can be specified as averages across sexes. In contrast, on the X chromosome (outside of the PAR), we need to incorporate sex-specific mutation rates, mating with two sexes, and different modes of selection in males and females (because males are hemizygous for the X chromosome, and because there is X-inactivation in females). To this end, we alter the above simulation framework in the following ways.
 
-First, we introduce mutations in males at the rate μm and in females at the rate μf, where the sex-specific mutation rates can be expressed in terms of the sex-averaged mutation rate μ on the X chromosome, and α, the ratio of the male mutation rate to the female mutation rate, as follows:μm=3μ∗α/(2+α)μf=3μ∗1/(2+α)
+First, we introduce mutations in males at the rate μm and in females at the rate μf, where the sex-specific mutation rates can be expressed in terms of the sex-averaged mutation rate μ on the X chromosome, and α, the ratio of the male mutation rate to the female mutation rate, as follows:
+
+$$
+\mu_{m}=3\mu∗\alpha/(2+\alpha)
+$$
+
+
+
+$$
+\mu_{f}=3\mu∗1/(2+\alpha)
+$$
 
 The sex-averaged LOF mutation rate for genes on the X are obtained as for genes on the autosomes (see the 'Mutation rates' section above). Unless otherwise specified, we use an α of 3.5 (see Figure 2B in Gao et al., 2019). Although there could potentially be differences in the male bias in mutation rate across genes (e.g., due to sex differences in transcription rates and replication timing), in practice these effects are expected to be small (Aggarwala and Voight, 2016; Seplyarskiy and Sunyaev, 2021).
 
@@ -178,37 +188,37 @@ Third, on autosomes, female heterozygotes for an LOF allele experience a fitness
 
 As is standard, selection in our Wright–Fisher implementation implicitly operates on fertility (i.e., in the parental generation) and not on viability of embryos. Under the simplifying assumption that selection pressures are the same in gametogenic and embryonic stages, this implementation correctly proxies viability selection on autosomes. Viability and fertility selection cannot be treated as equivalent on the X chromosome, however, because the X chromosome is passed from father to daughter and from mother to son, and the mode of selection is different in the two sexes. New mutations arising on the X in the female germline experience fertility selection in the heterozygous state, then viability selection in the hemizygous state in the male offspring; mutations arising on the X in the male germline undergo fertility selection in hemizygous males followed by viability selection in a female embryo in the heterozygous state. Thus, under the standard implementation, newly arising mutations on the X in males would experience on average more selection than they would under a model of true viability selection. To better approximate viability selection on newly arising mutations on the X, we altered our implementation such that mutations arising on the X in the male germline undergo selection in the heterozygous state, as they would in female embryos, and mutations arising on the X in the female germline undergo hemizygous selection, as they would on the X chromosome in a male embryo. This is expected to have only a small effect; we verified that it makes no discernible difference to the results (see Appendix 1—figure 7).
 
-## Testing the demographic model in forward simulations
+#### Testing the demographic model in forward simulations
 
 The Schiffels–Durbin model includes an Ne of 613,285 over the last 124 generations (Schiffels and Durbin, 2014). To assess how well this period of recent population growth explains variation in the observed data, we compared two different measures of neutral polymorphism in the NFE sample to simulations with hs = 0: (i) the proportion of segregating synonymous sites in each gene and (ii) following Weghorn et al., 2019, the frequency spectrum of all synonymous non-CpG transversions, a mutation type that occurs at low rate and thus should include few multiple hits at a site. Specifically, for modeling synonymous variants in each gene, we took the per gene synonymous mutation rate reported by gnomAD and divided by the total number of synonymous mutational opportunities to obtain a mean per site mutation rate μ for the forward simulations described above. Simulating under hs = 0, we then generated the expected proportion of segregating sites for each gene. For modeling non-CpG transversions, we used μ = 3.8 × 10–9 (Kong et al., 2012; Weghorn et al., 2019) and compared the simulated frequency spectrum from 106 simulations under hs = 0 to the observed spectrum for all non-CpG synonymous transversions in the NFE sample. The standard Schiffels–Durbin demographic model underestimated the proportion of segregating synonymous sites in simulations for nearly all genes on both the autosomes and X chromosome (Appendix 1—figure 2). Moreover, the simulated frequency spectrum was shifted away from rare variants relative to the observed data and the fraction of singletons was substantially lower in simulations (0.373) than in the NFE sample (0.637) (Appendix 1—figure 3).
 
 We therefore modified the Schiffels–Durbin model to include an additional epoch of growth over the last 50 generations with an Ne of 5 million and again compared measures of neutral polymorphism between simulations and observed data in the NFE sample. Using this modified demographic model, we observed improved agreement between the proportion of segregating synonymous sites in simulations and the observed data for autosomal and X-linked genes (Appendix 1—figure 2). Additionally, the frequency spectrum for synonymous non-CpG transversions appeared more similar and the fraction of singletons in simulations (0.677) more closely matched that of the NFE sample (Appendix 1—figure 3). Thus, for all subsequent analyses and simulations, we relied on this modified Schiffels–Durbin demographic model.
 
-## Expected frequency of LOF variants under neutrality
+#### Expected frequency of LOF variants under neutrality
 
 We first obtained the expected frequency of LOF variants in each gene under neutrality (i.e., hs = 0). For each per gene LOF mutation rate μ, we performed 50,000 simulations and estimated where the observed LOF frequency in the NFE sample fell within the resulting distribution. Genes where the observed LOF frequency was ≥90% of the simulated frequencies under neutrality were classified as cases where our model of purifying selection is misspecified. We note there are several, nonmutually exclusive, alternative explanations for cases where the observed LOF frequency greatly exceeds that of the neutral expectation, including an incorrect mutational model, balancing selection, annotation errors. In total, we classified 285 such genes (Supplementary file 1). These were removed from further analysis.
 
-## Selection parameter (hs) inference
+#### Selection parameter (hs) inference
 
 We estimated the posterior distribution of hs given the LOF allele frequency and mutation rate μ for a gene under a sensible demographic model for the NFE population.
 
-To estimate hs, we used an Approximate Bayesian Computation (ABC) approach, which consists of three basic steps: (i) proposing parameters from a prior distribution, (ii) simulating data under a generative model using the proposed parameters, and (iii) retaining parameters that closely match the observed data, within some tolerance. Specifically, for each iteration i in our ABC implementation, we proposed a value of hs for autosomes by sampling from log10s∼U-6,0 , and h ∼U0,1 ; for the X chromosome, we proposed hs for females and s for males, with h and s sampled separately as above (as a result, we have the same prior on hs for the X and autosomes). We then generated an allele frequency qi using the forward simulations described above. This simulated allele frequency is compared to the observed allele frequency q in gnomAD data for the gene, and accepted if |qi-q| < ε, where ε is the tolerance. When |qi-q| = 0, the retained parameters are a sample from the posterior distribution of hs given the allele frequency of LOF mutations in the gene. For small ε values, however, the acceptance rates can become too low, thus making ABC computationally inefficient. To alleviate this issue, we used an ABC based on a Sequential Monte Carlo algorithm (ABC-SMC), with the idea of gradually moving from sampling the entire prior for proposal values to sampling from the target posterior distribution, through a sequence of intermediary distributions based on a decreasing schedule of ε values (Sisson et al., 2007). We implemented an ABC-SMC approach using the modular C++ library ‘pakman’ (Pak et al., 2020) and set a tolerance schedule for allele frequencies as ε = 102n,52n,22n,0 . At each ε, we obtained 50,000 samples from the distribution. We report per gene point estimates of hs obtained from the MAP estimate of the posterior and uncertainty measured by the 95% credible interval (CI) (Supplementary file 2). For the X chromosome outside the PAR, we report the sex-averaged strength of selection on the loss of a copy, calculated as (hs + s)/2.
+To estimate hs, we used an Approximate Bayesian Computation (ABC) approach, which consists of three basic steps: (i) proposing parameters from a prior distribution, (ii) simulating data under a generative model using the proposed parameters, and (iii) retaining parameters that closely match the observed data, within some tolerance. Specifically, for each iteration i in our ABC implementation, we proposed a value of hs for autosomes by sampling from $log_{10}s∼U-6,0$ , and h $∼U0,1$ ; for the X chromosome, we proposed hs for females and s for males, with h and s sampled separately as above (as a result, we have the same prior on hs for the X and autosomes). We then generated an allele frequency qi using the forward simulations described above. This simulated allele frequency is compared to the observed allele frequency q in gnomAD data for the gene, and accepted if |qi-q| < ε, where ε is the tolerance. When |qi-q| = 0, the retained parameters are a sample from the posterior distribution of hs given the allele frequency of LOF mutations in the gene. For small ε values, however, the acceptance rates can become too low, thus making ABC computationally inefficient. To alleviate this issue, we used an ABC based on a Sequential Monte Carlo algorithm (ABC-SMC), with the idea of gradually moving from sampling the entire prior for proposal values to sampling from the target posterior distribution, through a sequence of intermediary distributions based on a decreasing schedule of ε values (Sisson et al., 2007). We implemented an ABC-SMC approach using the modular C++ library ‘pakman’ (Pak et al., 2020) and set a tolerance schedule for allele frequencies as ε = $\frac{10}{2n},\frac{5}{2n},\frac{2}{2n},0$ . At each ε, we obtained 50,000 samples from the distribution. We report per gene point estimates of hs obtained from the MAP estimate of the posterior and uncertainty measured by the 95% credible interval (CI) (Supplementary file 2). For the X chromosome outside the PAR, we report the sex-averaged strength of selection on the loss of a copy, calculated as (hs + s)/2.
 
 We verified the reliability of our ABC-SMC approach by simulations under a range of selection coefficients, comparing it to the true posterior distribution and to the posterior distribution inferred using rejection-ABC for 50,000 samples with ε = 0 for simulated genes (Appendix 1—figure 4).
 
-## Estimating the age of LOF alleles segregating at present
+#### Estimating the age of LOF alleles segregating at present
 
 We modified the forward simulations described above so that at most one mutation could arise each generation and only if the site is not segregating. We simulated evolution forward in time at an autosomal locus as above, under the same demographic model, and hs = 1%, 10%, or 50%. In each simulation, conditional on the site segregating at present, we recorded the last generation in which the locus was invariant in the population, and thus obtained the distribution of the age of an allele sampled in the population at present.
 
-## Analyzing the fitness effects of possible and observed LOF mutations
+### Analyzing the fitness effects of possible and observed LOF mutations
 
-## Data sources and processing
+#### Data sources and processing
 
-## Mutational opportunities on the X and autosome
+##### Mutational opportunities on the X and autosome
 
 We obtained the total number of possible 'high-confidence' LOF mutations for each gene on the X and Autosome provided as part of the gnomAD 2.1.1 release (Karczewski et al., 2020).
 
-## De novo mutations in unaffected individuals
+##### De novo mutations in unaffected individuals
 
 We obtained publicly available DNMs in a hospital cohort of ~800 newborns not ascertained for any disease (Goldmann et al., 2016). We annotated variants using Variant Effect Predictor (v85, Gencode v19) and kept only exonic variants.
 
@@ -218,7 +228,7 @@ In addition to DNMs seen in surviving offspring, we also downloaded mutations se
 
 Only autosomal variants were available for all three sources.
 
-## Segregating variants in the population
+##### Segregating variants in the population
 
 We downloaded the population-level plink files with exome-wide genotype information for ~200,000 individuals released by the UK Biobank (Szustakowski et al., 2020). We excluded exome samples that did not pass variant or sample quality control criteria in the previously released genotyping array data. Specifically, we excluded samples that have a discrepancy between reported sex and inferred sex from genotype data, a large number of close relatives in the database, or are outliers based on heterozygosity and missing rate, as detailed in Bycroft et al., 2018. We excluded individuals who withdrew from the UK Biobank by the time of analysis. This left us with 199,930 individuals that are included among the high-quality subset of genotyped individuals. We additionally limited our analysis to the ~166K individuals designated as 'White British' in the original study, and to the list of ~38 million exonic sites with an average of 20× sequence coverage provided by UK Biobank, for which variants met the QC criteria described in Szustakowski et al., 2020. We excluded the small subset of variants for which the number of homozygotes and heterozygotes are not consistent with Hardy–Weinberg proportions (p-value cutoffs of ~10–5 vs. 10–2 made no difference to the results).
 
@@ -228,7 +238,7 @@ For each individual in this sample, we also obtained a list of all genes with he
 
 We also obtained the above information for the subset of 110,667 individuals who self-report no long-standing illness, disability or infirmity (Field ID 2188) in the UK Biobank.
 
-## De novo mutations and rare segregating variants mapped in severe complex diseases
+##### De novo mutations and rare segregating variants mapped in severe complex diseases
 
 We obtained published DNMs from various sources. For each study, we retained only LOF mutations (annotated as 'stop-gained,' 'splice donor,' 'splice acceptor,' 'esplice,' 'nonsense,' or 'LGD'). For the MSSNG dataset, we annotated mutations using Variant Effect Predictor (v85, Gencode v19). Where available, we also retained information about the siblings, disease status of family members, age of onset, and age and sex of probands.
 
@@ -242,18 +252,22 @@ We also downloaded rare segregating variants in cases and controls, available pu
 
 Data sources are summarized in Appendix 1—table 2.
 
-## Obtaining the DFE from hs estimates
+### Obtaining the DFE from hs estimates
 
 Using the inferred posterior distributions of hs for the LOF of each gene, we obtained the DFE for all possible de novo LOF mutations in the genome by weighting the posterior for each gene by its contribution to genome-wide mutational opportunities to an LOF allele. Consistent with our modeling assumption, all possible LOF mutations within the same gene are assumed to have the same posterior distribution of hs. Similarly, the DFE for any sample of LOF mutations is obtained by weighing the posterior density of hs for each gene with the fraction of observed LOF mutations in the gene.
 
-## Comparing DFEs of observed mutations to those expected by chance
+### Comparing DFEs of observed mutations to those expected by chance
 
 For n DNMs in a disease cohort, we bootstrapped 1000 DFEs of a set of n DNMs randomly sampled (with replacement) from the full set of LOF mutational opportunities in the genome. In other words, each bootstrapped distribution is a sample from the distribution of fitness effects over all possible LOF mutational opportunities in the genome. p-Values were calculated using the rank of the mean of the distribution for each disease compared to the means of the 1000 bootstrapped distributions.
 
-## Comparing DFEs of disease mutations for enrichment of highly deleterious mutations
+### Comparing DFEs of disease mutations for enrichment of highly deleterious mutations
 
 We bootstrapped 500 samples each from the two DFEs with replacement and calculated the area in the interval (0.1,1) in each sampled DFE. We compared the distributions of sampled areas for the two diseases; p-values were obtained from a Kolmogorov–Smirnov test.
 
-## Calculating the probability of being causal
+### Calculating the probability of being causal
 
-The probability of hs > 10% is calculated as the area under the DFE in the interval (0.1,1). The probability that a mutations with hs > 10% is causal for a disease is calculated as1−(P(hs>10%inapopulationsample)/P(hs>10%inthediseasecohort))
+The probability of hs > 10% is calculated as the area under the DFE in the interval (0.1,1). The probability that a mutations with hs > 10% is causal for a disease is calculated as
+
+$$
+1−(P(hs>10%inapopulationsample)/P(hs>10%inthediseasecohort))
+$$

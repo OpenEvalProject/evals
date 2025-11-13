@@ -16,21 +16,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03xk60j79 Department of Crystallography and Structural Biology, Institute of Physical-Chemistry 'Blas Cabrera', CSIC Madrid Spain
-2. https://ror.org/0078xmk34 Center for Biomolecular Structure and Dynamics, and Division of Biological Sciences, University of Montana Missoula United States
-3. https://ror.org/012a91z28 Institute for Biocomputation and Physics of Complex Systems (BIFI) and Laboratorio de Microscopías Avanzadas (LMA), University of Zaragoza Zaragoza Spain
-4. https://ror.org/03fftr154 Department of Neurobiology, Instituto Ramón y Cajal de Investigación Sanitaria, Hospital Universitario Ramón y Cajal Madrid Spain
+1. Department of Crystallography and Structural Biology, Institute of Physical-Chemistry 'Blas Cabrera', CSIC Madrid Spain ([ROR:03xk60j79](https://ror.org/03xk60j79))
+2. Center for Biomolecular Structure and Dynamics, and Division of Biological Sciences, University of Montana Missoula United States ([ROR:0078xmk34](https://ror.org/0078xmk34))
+3. Institute for Biocomputation and Physics of Complex Systems (BIFI) and Laboratorio de Microscopías Avanzadas (LMA), University of Zaragoza Zaragoza Spain ([ROR:012a91z28](https://ror.org/012a91z28))
+4. Department of Neurobiology, Instituto Ramón y Cajal de Investigación Sanitaria, Hospital Universitario Ramón y Cajal Madrid Spain ([ROR:03fftr154](https://ror.org/03fftr154))
 5. AFFINImeter Scientific & Development team, Software 4 Science Developments Santiago de Compostela Spain
-6. https://ror.org/030eybx10 Departamento de Física Aplicada, Universidad de Santiago de Compostela Santiago de Compostela Spain
-7. https://ror.org/03xk60j79 Department of Biological Physical-Chemisty, Institute of Physical-Chemistry 'Blas Cabrera', CSIC Madrid Spain
-8. https://ror.org/00ca2c886 Ciber of Respiratory Diseases, ISCIII Madrid Spain
-9. https://ror.org/04pmn0e78 Department of Systems Biology, Universidad de Alcala Madrid Spain
+6. Departamento de Física Aplicada, Universidad de Santiago de Compostela Santiago de Compostela Spain ([ROR:030eybx10](https://ror.org/030eybx10))
+7. Department of Biological Physical-Chemisty, Institute of Physical-Chemistry 'Blas Cabrera', CSIC Madrid Spain ([ROR:03xk60j79](https://ror.org/03xk60j79))
+8. Ciber of Respiratory Diseases, ISCIII Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
+9. Department of Systems Biology, Universidad de Alcala Madrid Spain ([ROR:04pmn0e78](https://ror.org/04pmn0e78))
 
 † Corresponding author
 
 ## Abstract
 
-The neuronal calcium sensor 1 (NCS-1), an EF-hand Ca 2+ binding protein, and Ric-8A coregulate synapse number and probability of neurotransmitter release. Recently, the structures of Ric-8A bound to Gα have revealed how Ric-8A phosphorylation promotes Gα recognition and activity as a chaperone and guanine nucleotide exchange factor. However, the molecular mechanism by which NCS-1 regulates Ric-8A activity and its interaction with Gα subunits is not well understood. Given the interest in the NCS-1/Ric-8A complex as a therapeutic target in nervous system disorders, it is necessary to shed light on this molecular mechanism of action at atomic level. We have reconstituted NCS-1/Ric-8A complexes to conduct a multimodal approach and determine the sequence of Ca 2+ signals and phosphorylation events that promote the interaction of Ric-8A with Gα. Our data show that the binding of NCS-1 and Gα to Ric-8A are mutually exclusive. Importantly, NCS-1 induces a structural rearrangement in Ric-8A that traps the protein in a conformational state that is inaccessible to casein kinase II-mediated phosphorylation, demonstrating one aspect of its negative regulation of Ric-8A-mediated G-protein signaling. Functional experiments indicate a loss of Ric-8A guanine nucleotide exchange factor (GEF) activity toward Gα when complexed with NCS-1, and restoration of nucleotide exchange activity upon increasing Ca 2+ concentration. Finally, the high-resolution crystallographic data reported here define the NCS-1/Ric-8A interface and will allow the development of therapeutic synapse function regulators with improved activity and selectivity.
+The neuronal calcium sensor 1 (NCS-1), an EF-hand Ca2+ binding protein, and Ric-8A coregulate synapse number and probability of neurotransmitter release. Recently, the structures of Ric-8A bound to Gα have revealed how Ric-8A phosphorylation promotes Gα recognition and activity as a chaperone and guanine nucleotide exchange factor. However, the molecular mechanism by which NCS-1 regulates Ric-8A activity and its interaction with Gα subunits is not well understood. Given the interest in the NCS-1/Ric-8A complex as a therapeutic target in nervous system disorders, it is necessary to shed light on this molecular mechanism of action at atomic level. We have reconstituted NCS-1/Ric-8A complexes to conduct a multimodal approach and determine the sequence of Ca2+ signals and phosphorylation events that promote the interaction of Ric-8A with Gα. Our data show that the binding of NCS-1 and Gα to Ric-8A are mutually exclusive. Importantly, NCS-1 induces a structural rearrangement in Ric-8A that traps the protein in a conformational state that is inaccessible to casein kinase II-mediated phosphorylation, demonstrating one aspect of its negative regulation of Ric-8A-mediated G-protein signaling. Functional experiments indicate a loss of Ric-8A guanine nucleotide exchange factor (GEF) activity toward Gα when complexed with NCS-1, and restoration of nucleotide exchange activity upon increasing Ca2+ concentration. Finally, the high-resolution crystallographic data reported here define the NCS-1/Ric-8A interface and will allow the development of therapeutic synapse function regulators with improved activity and selectivity.
 
 ## Introduction
 
@@ -42,13 +42,21 @@ The structure of NCS-1 consists of two pairs of EF-hand motifs, of which only th
 
 The structures of several NCS proteins bound to their corresponding targets have shown that these Ca2+ sensors use a surface-exposed hydrophobic crevice to recognize their targets, which generally present short helical motifs that bind to the N- or C-terminal part of this large cavity (Figure 1A). It has been proposed that the structural determinants of target specificity are based on the shape and size of the hydrophobic crevice. NCS proteins contain a dynamic C-terminal helix (the so-called helix H10) that can insert into the crevice, thus contributing to its shape (Figure 1A). Since Ca2+ binding promotes structural rearrangements (Figure 1A), the occupancy of the three Ca2+ binding sites also determines affinity for protein partners. Also, the presence of hydrophilic residues at the border of the crevice contributes to target specificity and they constitute hot spots for interactions with the different targets (Burgoyne et al., 2019; Mansilla et al., 2017).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ribbon representation of NCS protein structures bound to their targets. NCS-1/D2R (PDB: 5AER, Pandalaneni et al., 2015), NCS-1/Grk1 (PDB: 5AFP, Pandalaneni et al., 2015), Frq1/Pik1 (PDB: 2JU0, Strahl et al., 2007), KChIP1/Kv4.3 (PDB: 2I2R, Pioletti et al., 2006), Recoverin/RK25 (PDB: 2I94, Ames et al., 2006), Frq2 (PDB: 4BY4, Romero-Pozuelo et al., 2014). The N and C-terminal pairs of EF-hands (EF-1–2 and EF-3–4) are shown in cyan and purple respectively. The C-terminal helix H10 is shown in pink and target proteins in yellow. Ca2+ is shown as hot pink spheres. (B) Top: Cryo-EM structure of the rRic-8A/Gαi1 complex (PDB: 6UKT, McClelland et al., 2020). Gαi1 is depicted in silver. Ric-8A ARM-HEAT repeats 1–8 in blue and repeat 9 in green and helices H10 (rH10) and H11 (rH11) in orange and gold respectively. The C-terminal coiled regions are shown in magenta. Phosphorylated residues S435 and T440 are depicted as spheres. Bottom: rRic-8A sequence from residue 400 to the end. Helices are squared following the same color code used above. Phosphorylation sites are indicated as red spheres. P1, P2, and P3 brackets indicate the boundaries of the synthesized Ric-8A peptides.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Superposition of NCS-1/Ric-8A-P (only Ric-8A is shown in pink ribbons) with other NCS-1 structures in complex with regulatory ligands, the protein-protein interaction (PPI) inhibitor FD-44 (Mansilla et al., 2017) and the PPI stabilizer 3b (Canal-Martín et al., 2019). The molecular surface of NCS-1 is represented except the helix H10 (ribbon). FD-44 and 3b compounds are represented in stick mode and yellow arrows indicate their position. (C) Superposition of the structure of hNCS-1 (light purple) bound to Ric-8A-P (pink) with that of hNCS-1 (light blue; helix H10 in dark blue) bound to 3b regulator (cyan sticks). Yellow arrows indicate the NCS-1 regions that rearrange to accommodate Ric-8A. (D) Superposition of the hNCS-1/Ric-8A-P (light purple/pink) complex with that of the KChIP1/Kv4.3 (orange/green) complex (PDB: 2I2R (52)). N- and C-terminal end of the different polypeptide chains are indicated following the same color code.
+
 Interestingly, NCS-1 is an important regulator of G-protein signaling since it binds to proteins such as GPCRs including the dopamine D2, adenosine 2A, and cannabinoid CB1 receptors (Kabbani et al., 2002; Navarro et al., 2012; Pandalaneni et al., 2015; Angelats et al., 2018); and the molecular chaperone and GEF Ric-8A (Romero-Pozuelo et al., 2014). Although little is known of the regulatory activity of NCS-1 on GPCR function and the cellular and physiological consequences, Romero-Pozuelo et al., 2014, showed that the NCS-1/Ric-8A complex is implicated in the regulation of synapse number and probability of neurotransmitter release. In fact, the regulation of this protein-protein interaction (PPI) using small-molecule modulators allows synapse function control under pathological conditions. In neurodevelopmental disorders, where synapse number is abnormally high, the inhibition of the NCS-1/Ric-8A complex formation reduces synapse number and improves learning in Fragile X syndrome animal models (Cogram et al., 2022; Mansilla et al., 2017). In contrast, the stabilization of the PPI prevents synapse loss and the consequent impairment in locomotion in a Drosophila model of Alzheimer’s disease neurodegeneration at the motor neurons (Canal-Martín et al., 2019).
 
 Ric-8A is an ubiquitously expressed cytosolic protein with two main functions: it constitutes a molecular chaperone that allows heterotrimeric Gα subunit biogenesis (Gabay et al., 2011) and additionally, works as a guanine exchange factor for Gi, Gq, and G12/13 families (Tall et al., 2003; Chan et al., 2011; Van Eps et al., 2015). Both activities are stimulated by casein kinase II (CK2) phosphorylation (Papasergi-Scott et al., 2018). Ric-8A has been shown to regulate asymmetric cell division and is essential for embryonic development (Miller and Rand, 2000; Afshar et al., 2004; Couwenbergs et al., 2004; Tõnissoo et al., 2010; Woodard et al., 2010). Work in Drosophila has shown the relevance of Ric-8A in activating Gs for in vivo synaptogenesis and that this activity is downregulated by NCS-1 (Romero-Pozuelo et al., 2014). Recently, the structure of several Ric-8A/Gα or Gα fragment complexes have been solved at atomic level (Srivastava and Artemyev, 2019; McClelland et al., 2020; Seven et al., 2020). These works revealed the structural basis of Ric-8A as a Gα chaperone and GEF and showed how phosphorylation of Ric-8A residues S435 and T440 stabilizes a conformation that is competent for Gα recognition. However, there is scarce information on the molecular function of NCS-1 on Ric-8A activity. Based on genetic studies, it has been proposed that NCS-1 interacts with Ric-8A and prevents the Ric-8A/Gα interaction (Romero-Pozuelo et al., 2014). Here, we have combined biochemical, biophysical, and crystallographic studies to reveal the structural determinants of NCS-1/Ric-8A recognition and the mechanism of NCS-1-mediated downregulation of Ric-8A activity. This work shows how NCS-1 and Ric-8A constitute a hub that integrates Ca2+, phosphorylation, and G-protein signaling. The emergent picture indicates that Ric-8A activity is under NCS-1 control and that a Ca2+ signal triggers the disassembly of the NCS-1/Ric-8A complex, which in turn allows phosphorylation of Ric-8A, which stabilizes the Ric-8A/Gα complex.
 
 ## Results
 
-## The NCS-1 interacting region of Ric-8A and the role of Ca2+
+### The NCS-1 interacting region of Ric-8A and the role of Ca2+
 
 To identify potential NCS-1 binding regions, we exploited the high-resolution structural information available on Ric-8A and NCS-1. An analysis of the different reported Ric-8A structures was performed to find potential NCS-1 binding regions (McClelland et al., 2020; Zeng et al., 2019). First, we took into account that NCS protein targets generally employ one or two short helical motifs to recognize the N- or C-terminal pair of EF-hands (Figure 1A; Burgoyne et al., 2019). Second, we considered that the potential interacting helix or helices may have hydrophobic character, since Ric-8A interacts with NCS-1 through its surface-exposed hydrophobic crevice (Mansilla et al., 2017; Romero-Pozuelo et al., 2014). Third, NCS-1 and G-proteins compete for Ric-8A binding and thus, could share certain interaction surfaces (Figure 1B; Romero-Pozuelo et al., 2014). Using these criteria, we evaluated the hydrophobic character of the HEAT repeat 9 of the ARM/HEAT repeat domain of Ric-8A, which is composed of a two-helix bundle (called a9 and b9), as well as two C-terminal helical motifs (rH10 and rH11), all of them involved in Gα recognition (Figure 1B). The marked hydrophobic character of the a9-b9 two-helix bundle led us to hypothesize that a9 and/or b9 helices could be implicated in the interaction with NCS-1.
 
@@ -56,17 +64,252 @@ To test our hypothesis, we carried out the in vitro reconstitution of the protei
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig2-v2.jpg)
 
-**Figure 2.:** (A) Ca2+ dependency of the interaction of the rat complex. Size exclusion chromatograms after assemblies: (i) in Ca2+-free conditions (gray), (ii) with Ca2+-preloaded NCS-1ΔH10 (magenta), and (iii) with a dialysis from EGTA to Ca2+ (green). 12% SDS-PAGE gels analyzing elution of NCS-1ΔH10 (N) and rRic-8A-452 (R) after Assembly (i) and the NCS-1/rRic-8A-452 complex (C) after Assembly (iii). (B) Representative nano-differential scanning fluorimetry (nano-DSF) curves of the different samples during Assembly (iii). The ratio between the emission fluorescence at 350 nm and 330 nm vs the temperature is shown and dots indicate the inflexion temperature (Ti). Curves corresponding to the EGTA-purified NCS-1 (NCS-1 2 mM EGTA), the fully Ca2+ saturated protein (NCS-1 2 mM Ca2+) and rRic-8A-452 are shown as references in yellow, brown, and gray, respectively. The mixture of proteins before dialysis (0.6 mM EGTA) and afterward (assembled complex, 2 mM CaCl2) are shown in magenta and blue, respectively. NCS-1 refers to NCS-1ΔH10, while Ric-8A to Ric-8A-452 construct. Three independent measurements were acquired and the inset table summarizes the mean Ti and standard error of the mean (SEM) values of each sample. (C) Co-IP protein-protein interaction assay in HEK293 cells of full-length human NCS-1 and V5-tagged hRic-8A constructs: full-length (hRic-8A-FL) and C-terminally truncated hRic-8A-424 (residues 1–424) and hRic-8A-433 (residues 1–433). (D) Representative nano-DSF curves of hNCS-1 bound to different Ric-8A peptides. NCS-1 refers to NCS-1ΔH10, P2 and P3 refer to Ric-8A peptides P2 (purple) and P3 (green). Three independent measurements were acquired and the inset table shows the mean Ti and SEM values of each sample.Figure 2—source data 1.
+**Figure 2.:** (A) Ca2+ dependency of the interaction of the rat complex. Size exclusion chromatograms after assemblies: (i) in Ca2+-free conditions (gray), (ii) with Ca2+-preloaded NCS-1ΔH10 (magenta), and (iii) with a dialysis from EGTA to Ca2+ (green). 12% SDS-PAGE gels analyzing elution of NCS-1ΔH10 (N) and rRic-8A-452 (R) after Assembly (i) and the NCS-1/rRic-8A-452 complex (C) after Assembly (iii). (B) Representative nano-differential scanning fluorimetry (nano-DSF) curves of the different samples during Assembly (iii). The ratio between the emission fluorescence at 350 nm and 330 nm vs the temperature is shown and dots indicate the inflexion temperature (Ti). Curves corresponding to the EGTA-purified NCS-1 (NCS-1 2 mM EGTA), the fully Ca2+ saturated protein (NCS-1 2 mM Ca2+) and rRic-8A-452 are shown as references in yellow, brown, and gray, respectively. The mixture of proteins before dialysis (0.6 mM EGTA) and afterward (assembled complex, 2 mM CaCl2) are shown in magenta and blue, respectively. NCS-1 refers to NCS-1ΔH10, while Ric-8A to Ric-8A-452 construct. Three independent measurements were acquired and the inset table summarizes the mean Ti and standard error of the mean (SEM) values of each sample. (C) Co-IP protein-protein interaction assay in HEK293 cells of full-length human NCS-1 and V5-tagged hRic-8A constructs: full-length (hRic-8A-FL) and C-terminally truncated hRic-8A-424 (residues 1–424) and hRic-8A-433 (residues 1–433). (D) Representative nano-DSF curves of hNCS-1 bound to different Ric-8A peptides. NCS-1 refers to NCS-1ΔH10, P2 and P3 refer to Ric-8A peptides P2 (purple) and P3 (green). Three independent measurements were acquired and the inset table shows the mean Ti and SEM values of each sample.
 
 The Ric-8A construct used in the in vitro reconstitution of the rat NCS-1/Ric-8A complex (rRic-8A-452) includes the two-helix bundle a9-b9 (HEAT repeat 9) and rH10 (Figure 1B). To determine whether elements beyond a9-b9 (e.g. rH10 and rH11) are implicated in NCS-1 recognition and also determine if the interaction occurs in the context of the human proteins, a co-immunoprecipitation assay was performed using both full-length human Ric-8A (hRic-8A-FL) and a C-terminally truncated construct lacking rH10 and rH11, and ending at G424 (hRic-8A-424, residues 1–424) (Figure 2C). The human Ric-8A sequence is one residue longer than the rat variant due to the insertion of a proline in a loop at position 208. Therefore, G424 in human corresponds to rat G423 (Figure 1B). Compared with hRic-8A-FL (Figure 2C), hRic-8A-424 has significantly higher affinity for NCS-1, suggesting that the HEAT repeat 9, but not the rH10 or rH11 helices, is implicated in the PPI. This supports a model in which two helices of Ric-8A are bound to NCS-1, similar to the case found for yeast NCS-1 bound to Pik1 (Figure 1A; Strahl et al., 2007). Also, this model is consistent with a reported crystal structure of Drosophila NCS-1 (also known as Frq2) in its apo form (Romero-Pozuelo et al., 2014), in which its hydrophobic crevice is occupied by two C-terminal NCS-1 H10 helices, one belonging to the same protein and an additional helix belonging to another molecule of the asymmetric unit, thus mimicking a protein/target complex (Figure 1A).
 
-## The crystal structure of hNCS-1 bound to Ric-8A peptides
+### The crystal structure of hNCS-1 bound to Ric-8A peptides
 
 Attempts to crystallize the assembled in vitro reconstituted NCS-1ΔH10/rRic-8A complex were made with different rRic-8A constructs (ending at different positions between Ric-8A-423 and Ric-8A-452), without success. Therefore, we decided to work with peptides spanning the a9 and b9 helices (Figure 1B) to produce a minimal complex (named NCS-1/Ric-8A-P) and perform crystallographic studies. Three different peptides were synthesized starting at residue 400 and ending at positions 423 (P1), 429 (P2), and 432 (P3) (Figure 1B). These peptides include a region of Ric-8A that is 100% identical in both the human and rat variants. As indicated above, the human Ric-8A sequence is one residue longer than the rat variant due to the insertion of a proline in a loop at position 208. However, for easier comparison with previous structural studies carried out with the rat variant (McClelland et al., 2020; Zeng et al., 2019) we have decided to maintain the rat numbering.
 
 The assembly of the minimal complex was performed using conditions similar to those used to form Assembly (iii) as described above. hNCS-1ΔH10 was incubated with the Ric-8A peptides in a 1:10 molar ratio and introducing Ca2+ by dialysis, starting at 1.7 mM EGTA and ending with a 0.5 mM Ca2+ concentration (see Materials and methods). No crystals were obtained with the shortest peptide (P1). However, crystals were obtained with the complexes assembled with peptides P2 and P3. The crystals obtained with hNCS-1ΔH10/Ric-8A-P2 grew using microseeding techniques in conditions containing 0.5 mM Ca2+, 100 mM Mg2+, and 100 mM Na+ (see Materials and methods section). hNCS-1ΔH10/Ric-8A-P3 crystals grew under similar conditions to those found for Ric-8A-P2. In addition, peptide P3 produced crystals in a second condition containing only Ca2+ and Na+ (see Materials and methods section). Diffraction data sets were collected at the Spanish ALBA synchrotron (Table 1). All crystals belonged to the tetragonal space group P41212 and displayed similar cell dimensions. The structure was solved by molecular replacement, using the Ric-8A-P2 data set (Structure 1, Table 1).
 
+**Table 1.**
+ Diffraction data collection and refinement statistics of hNCS-1/Ric-8A-P crystals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>Structure 1</th>
+      <th>Structure 2</th>
+      <th>Structure 3</th>
+    </tr>
+    <tr>
+      <th>PDB code</th>
+      <th>8ALH</th>
+      <th>8AHY</th>
+      <th>8ALM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide</td>
+      <td>P2</td>
+      <td>P3</td>
+      <td>P3</td>
+    </tr>
+    <tr>
+      <td>Ions in solution</td>
+      <td>Mg2+, Ca2+, Na+</td>
+      <td>Mg2+, Ca2+, Na+</td>
+      <td>Ca2+, Na+</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P41212</td>
+      <td>P41212</td>
+      <td>P41212</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>56.86, 56.86, 134.61</td>
+      <td>56.64, 56.64, 135.30</td>
+      <td>56.64, 56.64, 134.53</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00, 90.00, 90.00</td>
+      <td>90.00, 90.00, 90.00</td>
+      <td>90.00, 90.00, 90.00</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>52.38–1.86 (1.93-1.86)*[a*, b*=1.846, c*=1.917]</td>
+      <td>52.24–1.70 (1.79-1.70)*[a*, b*=1.681, c*=1.891]</td>
+      <td>52.20–1.85 (1.94-1.85)*[a*, b*=1.854, c*=1.920]</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.044 (0.803)</td>
+      <td>0.036 (0.659)</td>
+      <td>0.028 (0.616)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.998 (0.445)</td>
+      <td>0.997 (0.551)</td>
+      <td>0.999 (0.467)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>16.8 (1.2)</td>
+      <td>13.5 (1.4)</td>
+      <td>15.2 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spherical (%)</td>
+      <td>92.7 (41)</td>
+      <td>88.0 (34.1)</td>
+      <td>91.2 (36.1)</td>
+    </tr>
+    <tr>
+      <td>Ellipsoidal (%)</td>
+      <td>94.9 (51.5)</td>
+      <td>95.9 (65.4)</td>
+      <td>94.0 (45.7)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>31.12</td>
+      <td>26.90</td>
+      <td>37.80</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>25.2 (26.5)</td>
+      <td>25.5 (27.7)</td>
+      <td>8.7 (9.8)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>52.38–1.86</td>
+      <td>52.24–1.70</td>
+      <td>52.20–1.85</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>18029</td>
+      <td>22008</td>
+      <td>17665</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>19.58/23.13(26.31/28.49)</td>
+      <td>18.64/20.76(34.65/45.00)</td>
+      <td>20.98/25.25(36.89/46.21)</td>
+    </tr>
+    <tr>
+      <td>Asymetric unit content</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>3454</td>
+      <td>3403</td>
+      <td>3374</td>
+    </tr>
+    <tr>
+      <td>Protein (no. residues)</td>
+      <td>171</td>
+      <td>171</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <td>Peptide (no. residues)</td>
+      <td>28</td>
+      <td>28</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>PEG/GOL</td>
+      <td>3/1</td>
+      <td>2/1</td>
+      <td>2/2</td>
+    </tr>
+    <tr>
+      <td>Ca2+/Cl-/Mg2+/Na+ ions</td>
+      <td>2/1/1/1</td>
+      <td>2/1/1/1</td>
+      <td>2/1/0/2</td>
+    </tr>
+    <tr>
+      <td>Water molecules</td>
+      <td>141</td>
+      <td>144</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>B-factor (Å)2</td>
+      <td>31.27</td>
+      <td>27.28</td>
+      <td>37.18</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations protein</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.44</td>
+      <td>0.36</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.63</td>
+      <td>0.56</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations peptide</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.45</td>
+      <td>0.57</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.70</td>
+      <td>0.63</td>
+      <td>0.61</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parenthesis are for highest resolution shell._
+
 Crystals of Ric-8A-P2 and -P3 each contain one complex in the asymmetric unit and both the 2Fo-Fc and the Fo-Fc electron density maps clearly indicated the presence of electron density corresponding to two helical segments (R1 and R2) of the peptide that completely occupy the NCS-1 hydrophobic crevice and protrude from its surface (Figure 3 and Figure 3—figure supplement 1A). The quality of the data allowed the unambiguous modeling of Ric-8A-P2 residues 402–429; no density was found for the N-terminal residues S400 and E401 and the density corresponding to residues S402 to R405 was very weak (Figure 1B and Figure 3—figure supplement 1A). The structures solved with Ric-8A-P3 (Structures 2 and 3, Table 1) were virtually identical with the exception that the Mg2+ ion is present only in Structures 1 and 2. Compared with Structure 2, the Cα RMSD for the protein and peptide in Structures 1 and 3 were 0.090 and 0.227, and 0.103 and 0.117, respectively. The greatest differences are found between Structures 1 and 2 at the N-terminus of the Ric-8A peptides (Figure 3—figure supplement 1B), which make few contacts with NCS-1, and for which the temperature factors are high (Figure 3—figure supplement 1C). Although Ric-8A-P3 contains three extra residues at its C-terminus (Figure 1B) no electron density was found for the C-terminal residues P430, E431, and G432 suggesting that they are disordered, exposed to the solvent and do not participate in protein-protein recognition (Figure 3—figure supplement 1A). In fact, the thermal stability of NCS-1 bound to Ric-8A-P2 or Ric-8A-P3 is very similar (Figure 2D). The following discussion focuses on Structure 2, which is determined at the highest resolution and statistical quality (Table 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig3-v2.jpg)
+
+**Figure 3.:** (A) Ribbon representation of the hNCS-1ΔH10/Ric-8A-P3 complex. Two views are displayed. The NCS-1 structure is shown in light purple, while Ric-8A-P3 is shown in light pink. The N- and C-termini are indicated. Ca2+, Na+, and Cl- ions are shown in hot pink, yellow, and cyan, respectively. R1 and R2 helices, and EF-hands 2, 3, and 4 are indicated. The orange square represents a zoomed view of the R1-R2 loop in stick mode, Cl- coordination and H-bonds are displayed as yellow and gray dashes, respectively. Residues participating in R1-R2 contacts are displayed in hot pink (triad 1: I407-T410-A415), magenta (F406-L418), and purple (triad 2: K408-Y409-N414). (B) rRic-8A sequence from 400 to 442 residues. The helix boundaries of Ric-8A sequence encompassing a9 and b9 in different structural contexts (NCS-1/Ric-8A-peptide [PDB: 8AHY], Ric-8A/Gα [PDB: 6UKT, McClelland et al., 2020] and uncomplexed Ric-8A [PDB: 6NMG, Zeng et al., 2019]) are indicated as pink boxes and labeled. Coiled regions are shown in pink. Disordered regions are shown in gray, while phosphorylated sites are shown as red spheres. The interacting residues shown in panel (A) are indicated with dots in the same color code as in A. (C) Electrostatic surface potential of rRic-8A-P3. NCS-1 is shown as yellow ribbons. Positive and negative potentials are represented in blue and red, respectively. On the right, the Ric-8A region that faces and contacts NCS-1 is shown with NCS-1 removed for proper visualization. (D) Representative co-immunoprecipitation assay in HEK293 cells transfected with full-length hNCS-1 and V5-tagged hRic-8A mutants. Mutations on NCS-1 and Ric-8A are indicated in blue and pink, respectively. The numbering of the rat Ric-8A sequence has been maintained for proper comparison with A and B. Quantifications of each lane from three independent experiments (mean ± SD) are shown on the right. Mean differences were analyzed by two-tailed, paired Student’s t-test, comparing with wild-type NCS-1 and Ric-8A. **p=0.01; *p=0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Structure 1 showing the 2Fo-Fc electron density map (green) of Ric-8A-P2 (stick mode, pink). The molecular surface of NCS-1 is depicted. Squares represent magnifications of R1 and R2 regions. (B) Left: Superimposition of Structures 1 and 2. NCS-1 and Ric-8A peptide threads in blue and in pink tones, respectively. The gray arrow indicates the main differences found in Ric-8A peptide structures. (C) Temperature factor representation of Structure 2 (blue and red, high and low values, respectively) in two rotated views.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Ribbon representation of NCS-1. Helices are labeled and residues implicated in Ric-8A recognition are displayed as light purple sticks. (B) H-bonds (black dashes) between NCS-1 (gray) and Ric-8A (pink). Interacting residues are shown as pink sticks and light-purple sticks, respectively. Water molecules are displayed as red spheres. (C) H-bonds found in the R1-R2 loop. A rotated and zoomed view of that shown in B is depicted. (D) Ric-8A residues implicated in van der Waals interactions are displayed in sticks and labeled. Ric-8A is shown as pink ribbon and the molecular surface of NCS-1 is represented. Residues that were mutated to alanine to verify the protein-protein interaction (PPI) interface (Figure 3D) are indicated in purple in A–D.
 
 The structure of Ric-8A-P bound to NCS-1ΔH10 can be described as a coiled region followed by a short helical motif (R1) that is connected to a long helix (R2) through a loop (Figure 3A). The two helical elements are interconnected through the loop by an H-bond and van der Waals contacts (triad 1: I407-T410-A415) (Figure 3A, B) and also with helix-helix van der Waals interactions (F406-L418 and triad 2: K408-Y409-N414) (Figure 3A, B). Polar contacts with a chloride ion appear to stabilize the conformation of the turn between the two helical segments (Figure 3A). A calculation of the surface electrostatic potential of Ric-8A-P shows that the helices are amphipathic and expose positive charges to the solvent, except for the C-terminal tip, which shows a negative potential due to the carboxylic end of the peptide (Figure 3C).
 
@@ -76,9 +319,64 @@ Using Ric-8A peptides of different lengths to generate crystal structures, toget
 
 To further validate the PPI interface and the relevance of the interactions observed in the presented crystal structures, several Ric-8A and NCS-1 full-length human mutant proteins were generated (Figure 3 and Figure 3—figure supplement 2B) and co-immunoprecipitations were conducted to analyze their impact on the recognition of the proteins (Figure 3D). Most of the strong and directional interactions, hydrogen bonds, between NCS-1 and Ric-8A peptides are mediated by NCS-1 side chains oxygens and Ric-8A main chain carbonyl oxygens (Figure 3—figure supplement 2B). Therefore, we introduced mutations in NCS-1 and tested the interaction with wild-type hRic-8A. To disrupt H-bonds found in the upper, middle, and/or bottom of the NCS-1 cavity, two double mutants (NCS-1 D37A, Y52A and NCS-1 R148A, R151A) a triple mutant (NCS-1 D37A, R148A, R151A) and a quadruple mutant including the previous double mutants (NCS-1 D37A, Y52A, R148A, R151A) were generated. The location and interacting residues of mutated amino acids are shown in Figure 3—figure supplement 2B and summarized in Table 2. The co-immunoprecipitation assays show that mutations R148A, R151A in NCS-1 do not alter Ric-8A binding, despite three H-bonds are lost at the bottom of the crevice. When the recognition of Ric-8A R2 helix is affected at the middle and C-terminus of NCS-1 crevice (Y52A and D37A, respectively), differences in binding are not significant either. The combination of mutations at the top and bottom of NCS-1 crevice (triple mutant; D37A, R148A, R151A), which would affect the recognition of both Ric-8A helices and the R1-R2 loop, has a statistically significant impact on the interaction (40% binding loss). As expected, the quadruple mutant (D37A, Y52A, R148A, R151A) shows the deepest impact on the interaction (more than 60% binding loss), since H-bonds are disrupted at the top, middle, and bottom of the PPI. To further understand the relevance of the R1-R2 loop (Table 2 and Figure 3—figure supplement 2C–D), a Ric-8A triple mutant, T410A, Y412A, N414A (which would correspond to T411A, Y413A, N415A in the human protein), was tested in the PPI binding assay showing no changes in NCS-1 binding. This is in agreement with the previous NCS-1 double mutant designed in that area (R148A, R151A). Finally, we designed mutants in NCS-1 and Ric-8A to test the relevance of the interactions of the C-terminal half of Ric-8A R2 helix, which acquires a extended coiled structure in the presence of Gα (McClelland et al., 2020; Seven et al., 2020) and becomes helical for NCS-1 recognition. Mutations include NCS-1 W30 (W30A) and two Ric-8A residues close to NCS-1 W30, L424, and M425 (L425 and M426 in the human protein) (Table 2 and Figure 3—figure supplement 2A and D). Despite these residues only mediate long-range hydrophobic contacts, and no H-bond is affected, the impact on the PPI is relevant and binding is reduced more than 50%. The effect is similar to that found when disrupting H-bonds all along the PPI (NCS-1 quadruple mutant).
 
-## The Ca2+ binding sites of hNCS-1 in complex with Ric-8A-P
+**Table 2.**
+ Residues mutated to alanine to validate the NCS-1/Ric-8A PPI interface.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Residue</th>
+      <th>Position and interacting residues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NCS-1 D37</td>
+      <td>Upper part of the crevice. Interacts with Ric-8A R429, which is located at the C-terminal end of R2 helix</td>
+    </tr>
+    <tr>
+      <td>NCS-1 Y52</td>
+      <td>Middle of the crevice. Recognizes Ric-8A L419, which is found at the middle of R2 helix</td>
+    </tr>
+    <tr>
+      <td>NCS-1 R148</td>
+      <td>Bottom of the crevice. Interacts with Ric-8A K408 (N-terminus of R1 helix) and Ric-8A T410 (R1-R2 loop)</td>
+    </tr>
+    <tr>
+      <td>NCS-1 R151</td>
+      <td>Bottom of the crevice. Interacts with Ric-8A K408 (N-terminus of R1 helix) and Ric-8A Y412 (R1-R2 loop, water-mediated H-bond)</td>
+    </tr>
+    <tr>
+      <td>Ric-8A T410, Y412, N414</td>
+      <td>R1-R2 loop. Mediate several water-mediated H-bonds and van der Waals contacts with the bottom surface of NCS-1 crevice</td>
+    </tr>
+    <tr>
+      <td>NCS-1 W30A</td>
+      <td>Upper part of the cavity. Important in the recognition of R2 helix. Establish van der Waals interactions with residues such as Ric-8A L424 and M425</td>
+    </tr>
+    <tr>
+      <td>Ric-8A L424 and M425</td>
+      <td>C-terminal part of helix R2. Interact with NCS-1 W30 and the hydrophobic environment that surrounds these residues</td>
+    </tr>
+  </tbody>
+</table>
+
+### The Ca2+ binding sites of hNCS-1 in complex with Ric-8A-P
 
 The analysis of the structure of the hNCS-1ΔH10/Ric-8A-P complexes presented in this work, together with electron density map calculations, indicate that the three Ca2+ binding sites, EF-2, EF-3, and EF-4, are occupied, showing a pentagonal-bipyramidal coordination (Figure 4A). However, the in vitro reconstitution assays presented above (Figure 2A) show that the fully Ca2+ saturated protein does not efficiently generate the NCS-1/Ric-8A complex. Therefore, some out of the three sites are not occupied with Ca2+. NCS-1 Ca2+ occupancy has been addressed previously with the calculation of anomalous difference maps since Ca2+ but not Mg2+ or Na+ shows anomalous signal at typical protein-diffraction wavelengths (Mansilla et al., 2017). In fact, at 0.979 Å wavelength, the anomalous scattering coefficients (f’’) for Ca2+, Na+, and Mg2+ are 0.616, 0.049, and 0.073 electrons, respectively. Therefore, to identify the Ca2+ ions bound to the EF-hands, anomalous difference maps were calculated as a 10-fold increased anomalous signal is expected if Ca2+ is present. We used the best quality data set (Structure 2), in which Ca2+, Na+, and Mg2+ were present in the crystallization solution. The anomalous difference map shows 6σ peaks at EF-2 and EF-3 metal sites while no signal is observed in EF-4, indicating unambiguously the presence of Ca2+ at sites EF-2 and EF-3 (Figure 4A). EF-4 shows a residual anomalous signal when reducing the σ level, which could indicate a low occupancy of Ca2+ at EF-4, consistent with the observation that a fully saturated NCS-1 does not recognize Ric-8A properly (Figure 2A). We have not modeled Mg2+ at any of the metal binding sites since it has been reported that EF-4 is unable to bind this metal (Aravind et al., 2008). Furthermore, the metal-oxygen distances observed (2.3–2.4 Å) are higher than those characteristic of Mg2+ coordination (2.1 Å) (Harding, 2001; Harding, 2002). We did observe a Mg2+ ion at the surface of the NCS-1, close to EF-3 (Figure 4A) and located at a special position where atoms from two symmetry-related molecules participate in the coordination sphere. In this case, Mg2+ exhibits typical octahedral coordination and metal-oxygen distances (2.1 Å), as well as the absence of an anomalous signal. Taking these observations together, a Na+ ion was modeled at EF-4 (Figure 4A), since Na+ was present in the crystallization solution, does not scatter X-rays anomalously, and is structurally undistinguishable from Ca2+. Their similar ionic radii allow equivalent heptahedral geometry, distances, and angles (Harding, 2002; Groom et al., 2016).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig4-v2.jpg)
+
+**Figure 4.:** (A) Identification of Ca2+, Mg2+, and Na+ ions in the hNCS-1ΔH10/Ric-8A-P3 complex (Structure 2, see Table 1). Top: Electron density at EF-hands EF-2, -3 and -4. The 2Fo-Fc electron density map (contoured at 1.0σ) and the anomalous difference map (contoured at 6.0σ) are shown in green and blue, respectively. NCS-1 is shown in stick mode (light purple), Ca2+ and Na+ ions as hot pink and yellow spheres, respectively, and water molecules (w) as red spheres. Bottom: The Mg2+ ion (green sphere) found in Structures 1 and 2 (see Table 1). NCS-1 symmetry-related molecule is depicted in yellow. (B) The binding of Na+ to hNCS-1 in solution. Representation of the normalized fluorescence emission (mean ± standard error of the mean [SEM]; n=3) of full-length hNCS-1 at increasing concentrations of NaCl or KCl. The curves are the least squares fitting of the experimental data to a 1:1 stoichiometry equilibrium. Na+ and K+ titrations are shown in blue and magenta, respectively. (C) Assembly of the NCS-1ΔH10/rRic-8A-452 complex in the presence of 200 mM Na+ (blue) or K+ (magenta). Size exclusion chromatograms indicating the elution of the assembled complexes (C). (D) Isothermal titration calorimetry (ITC) binding isotherm at 25°C for Ca2+ to NCS-1 in 20 mM Tris pH 7.9 supplemented with 150 mM Na+ (blue) or 150 mM K+ (magenta). Solid lines show the best fits of the titration data in terms of a three-site sequential binding model using the thermodynamic parameters shown in Table 4. Θ is the fraction of sites available for each class of Ca2+ sites. (E) The binding of full-length His-NCS-1 to Ric-8A-P3 peptide at increasing Ca2+ concentrations. Representative biolayer interferometry (BLI) sensograms showing association and dissociation of Ric-8A-P3 over the time. Data are represented as the wavelength shift, △λ (nm), during the association and dissociation phases (s).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Thermodynamics of Ca2+ binding to NCS-1 in Na+ (top panels) or K+ (bottom panels) containing buffers. Experimental conditions as in Figure 4D. Raw data (left panels) and binding isotherms (central panels) in both conditions are shown, together with the NCS-1 population containing one, two, or three sites occupied with Ca2+ as a function of the [Ca 2+]/[NCS-1] molar ratio (right panels). Best fits of titration isotherms using the three-site sequential binding model are shown as solid curves.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Nano-differential scanning fluorimetry (nano-DSF) curve of the His-NCS-1 sample used in the BLI assay. (B) Representative BLI sensogram of the binding of His-NCS-1 to the Ni-NTA biosensor and negative control showing that Ric-8A-P3 peptide does not bind to the biosensor in the absence of NCS-1. (C) BLI sensograms at increasing concentrations of Ric-8A-P3 peptide.
 
 EF-hand containing proteins, for example, parvalbumin, are able to bind Na+ at their Ca2+ binding sites (Grandjean et al., 1977). Using tryptophan emission fluorescence experiments, we studied the ability of full-length hNCS-1 to bind Na+ in solution (Figure 4B). As a control, we also studied the binding to K+. Our data show that an increase in Na+ concentration produces an enhancement of the emission fluorescence intensity that achieves saturation at 300 mM NaCl. Considering a 1:1 equilibrium, it is possible to estimate the apparent dissociation constant from these data, which is 123.4±26.6 mM (Mansilla et al., 2017). Compared with Na+, the addition of K+ promotes smaller changes in the emission intensity, which varied linearly with the cation concentration up to 500 mM KCl, with no sign of saturation. This suggests that NCS-1 is unable to bind K+ at physiologically relevant concentrations (Figure 4B). Therefore, the tryptophan emission fluorescence experiments support the binding of Na+ to NCS-1. The changes observed upon Na+ binding may reflect variations in the environment of W103 (EF-3 helix H6), which is the tryptophan residue closer to the EF-4 Na+ binding site. In fact, the EF-4 helix H9 is connected to EF-3 helix H6 through multiple hydrophobic contacts (Figure 3—figure supplement 2), so that the structural rearrangement that occurs upon Na+ binding at EF-4 could be transmitted to W103. Indeed, EF-hand motifs always occur in pairs and upon Ca2+ binding, EF-hands communicate with each other through the Ca2+ binding loops and helix-helix contacts, in order to orchestrate structural rearrangement and transmit the Ca2+ signal (Grabarek, 2006). Here, we show that Na+ binding to a Ca2+ binding loop is also transmitted between EF-hands.
 
@@ -88,17 +386,113 @@ Given that NCS-1 EF-4 binds Ca2+ (Bourne et al., 2001) but also Na+, we used iso
 
 Taking into account the Ca2+ affinity measured for the regulatory EF-hand (Table 4) and the fact that the Ca2+ saturated protein does not recognize NCS-1, we performed biolayer interferometry (BLI) experiments to study the Ca2+-dependent affinity of NCS-1 for Ric-8A, using the full-length NCS-1 and the Ric-8A-P3 peptide (see Materials and methods section, Figure 4E, Figure 4—figure supplement 2 and Table 3). Our data show that when the regulatory EF-4 Ca2+ binding site is empty (0 nM Ca2+ and 125 mM Na+ experimental conditions), the apparent dissociation constant of the NCS-1/Ric-8A-P3 complex is in the hundreds of the µM range. However, at high cellular Ca2+ concentrations (250 nM), the affinity is decreased 1.5 times. At 425 nM Ca2+, when Ca2+ concentrations are above the Kd of the regulatory EF-4 Ca2+ binding site (see Table 4, site 3), NCS-1 affinity for Ric-8A-P3 is greatly reduced to the mM range.
 
-## Ric-8A phosphorylation in the context of the NCS-1/Ric-8A complex
+**Table 3.**
+ The Ca2+-dependent affinity of full-length NCS-1 for Ric-8A-P3 peptide.Calculated apparent Kd and standard error of the mean (SEM) using biolayer interferometry. Three independent experiments were performed at each [Ca2+].
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">[Ca2+] (nM)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>0</th>
+      <th>250</th>
+      <th>375</th>
+      <th>425</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kd (μM)</td>
+      <td>140</td>
+      <td>344</td>
+      <td>381</td>
+      <td>98620</td>
+    </tr>
+    <tr>
+      <td>SEM</td>
+      <td>29</td>
+      <td>14</td>
+      <td>18</td>
+      <td>16310</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Thermodynamic parameters of Ca2+ binding to full-length hNCS-1 in the presence of K+ or Na+.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>C (150 mM)</th>
+      <th>Kd1 (nM)</th>
+      <th>ΔH1 (kcal/mol)</th>
+      <th>Kd2 (nM)</th>
+      <th>ΔH2 (kcal/mol)</th>
+      <th>Kd3 (nM)</th>
+      <th>ΔH3 (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Na+</td>
+      <td>265±6</td>
+      <td>–7.7±0.1</td>
+      <td>758±16</td>
+      <td>3.0±0.1</td>
+      <td>379±17</td>
+      <td>–9.1±0.3</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>165.6±0.3</td>
+      <td>–7.66±0.01</td>
+      <td>362.3±0.6</td>
+      <td>1.00±0.01</td>
+      <td>253±1</td>
+      <td>–9.44±0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Subscripts 1, 2, and 3 correspond to sites 1, 2, and 3, respectively._
+
+### Ric-8A phosphorylation in the context of the NCS-1/Ric-8A complex
 
 Phosphorylation of rRic-8A at S435 and T440 residues promotes Gα subunits binding, since the interaction of the phosphorylated residues with a basic groove found at the ARM-HEAT repeat domain of Ric-8A creates a structural platform that allows Gα recognition (Figure 1B; Srivastava and Artemyev, 2019; McClelland et al., 2020; Seven et al., 2020). Here, we have shown that in vitro, the NCS-1ΔH10/rRic-8A complex assembly occurs with unphosphorylated rRic-8A. Thus, we have generated the corresponding non-phosphorylatable human full-length Ric-8A mutant (S436A, T441A; Ric-8A-P-Mut) and tested the binding to full-length hNCS-1 in a cell-based PPI assay (Figure 5A). The co-immunoprecipitation of the protein complex shows that the non-phosphorylatable version of hRic-8A retains its ability to interact with hNCS-1. Interestingly, the binding is increased with respect to the wild-type version, which would suggest that Ric-8A is partly phosphorylated in vivo and this might hinder the interaction with NCS-1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig5-v2.jpg)
+
+**Figure 5.:** (A) Co-IP protein-protein interaction assay of hNCS-1 and V5-tagged full-length hRic-8A wild-type (WT) (hRic-8A-WT) and a non-phosphorylatable mutant (Ric-8A-P-Mut; S436A, T441A) in HEK293 cells. (B) Anionic exchange chromatograms of casein kinase II (CK2)-treated samples eluted in a salt gradient. On the left, phosphorylated and unphosphorylated rRic-8A-452 prRic-8A-452 (orange) and urRic-8A-452 (green), respectively. On the right, CK2 treated (pink) or untreated (blue) NCS-1ΔH10/rRic-8A samples. Conductivity (mS/cm) is shown as gray lines. (C) Size exclusion chromatograms of the resulting samples after the assembly of NCS-1ΔH10 with unphosphorylated (green) and phosphorylated (orange) rRic-8A-452. C stands for assembled complex.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** MS/MS fragmentation spectra (top) and Mascot phospho-site assignment confidence (bottom) of the two phosphorylated peptides (A and B) detected at S435. Red and yellow signals correspond to the indicated y/b ion fragments. Those corresponding to phosphorylated fragments (labeled -98 due to the release of the phosphate molecule) are shown in yellow.
 
 To show whether NCS-1 has an influence on Ric-8A phosphorylation, we attempted to phosphorylate the NCS-1ΔH10/rRic-8A-452 complex using CK2 following a protocol similar to that described by McClelland et al., 2020. A control experiment was performed with the uncomplexed rRic-8A-452 protein. Protein phosphorylation was evaluated by anion exchange chromatography after incubation with CK2. The phosphorylated species elute at higher salt concentration since their anionic character is increased with the incorporation of the phosphate groups. As shown in Figure 5B, while uncomplexed rRic-8A-452 is phosphorylated after CK2 treatment, rRic-8A-452 is not phosphorylated when complexed with NCS-1, since the anionic exchange elution profile of the NCS-1ΔH10/rRic-8A-452 complex is the same regardless of CK2 treatment. To further verify the phosphorylation state of Ric-8A in the CK2-treated samples, we used LC-MS/MS with the aim of identifying phosphopeptides from a trypsin-digested sample (see Materials and methods). While phosphopeptides were found in the rRic-8A-452 control sample (Figure 5—figure supplement 1) no phosphopeptides were found in NCS-1ΔH10/rRic-8A-452, even though a phosphopeptide enrichment protocol was performed, supporting the hypothesis that the binding of NCS-1 precludes CK2-mediated phosphorylation of Ric-8A.
 
 Finally, we asked whether phosphorylated Ric-8A can interact with NCS-1. An assembly experiment was performed similarly to that described for the unphosphorylated protein (control). Our data show that phosphorylated rRic-8A-452 does not efficiently interact with NCS-1ΔH10 (Figure 5C).
 
-## NCS-1/Ric-8A nucleotide exchange functional assays
+### NCS-1/Ric-8A nucleotide exchange functional assays
 
 To directly measure the effect of NCS-1 on Ric-8A GEF activity, nucleotide exchange assays were performed in the presence of increasing concentrations of CaCl2. With the aim to approximate physiological conditions, full-length NCS-1 and a more native-like rRic-8A construct (residues 1–491) were used. The change in tryptophan fluorescence of rat ΔN31Gαi1 upon exchange of GDP for GTPγS was measured for the intrinsic exchange activity of ΔN31Gαi1 and for exchange activity following incubation with either rRic-8A-491, His-NCS-1/rRic-8A-491, or His-NCS-1 in the presence of 0–500 µM CaCl2 (Figure 6 and Figure 6—figure supplement 1). Nucleotide exchange rates were determined by fitting data to a single exponential curve, or in the case of rRic-8A-491 not complexed with NCS-1, a double exponential curve in which the slower of these two rates (Figure 6) corresponds to Ric-8A-491-catalyzed nucleotide exchange. The fast phase corresponds to GTPγS binding to an intermediary complex of Ric-8A with nucleotide-free ΔN31Gαi1 that is generated after GDP is released from ΔN31Gαi1 upon binding to Ric-8A during incubation of the two proteins. This intermediary complex was not observed in assays using the NCS-1/Ric-8A complex, possibly because Ric-8A is partially kinetically trapped in that complex and unable to interact with ΔN31Gαi1. The extensive conformational changes that must occur in order to disengage the a9-b9 HEAT repeat helices of Ric-8A from NCS-1 and, subsequently, rearrange to quickly accommodate binding to Gαi1, likely imposes a substantial kinetic barrier. Also, in vitro and in the absence of other NCS-1 interacting targets, NCS-1/Ric-8A complex formation is thermodynamically favored since the complete NCS-1 hydrophobic crevice is occluded from the solvent.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig6-v2.jpg)
+
+**Figure 6.:** (A) GTP binding rates were measured by following the increase in rΔN31Gαi1 tryptophan fluorescence following addition of 10 µM GTPγS. Prior to GTPγS addition, rΔN31Gαi1 (1 µM final concentration) was incubated with either rRic-8A-491 (0.5 µM final concentration), His-NCS-1/rRic-8A-491 complex (0.5 µM final concentration), or His-NCS-1 (0.5 µM final concentration) and 0–500 µM CaCl2 for 5 min before addition of GTPγS (buffer: 50 mM HEPES pH 8, 200 mM NaCl, 2 mM MgCl2, and 1 mM TCEP). In all cases means and standard error of the mean (SEM) are reported for a minimum of six experimental replicates. (B) GTP binding rates of rRic-8A-491, His-NCS-1/rRic-8A-491, and His-NCS-1 after subtraction of intrinsic binding rates of rΔN31Gαi1 at each corresponding CaCl2 concentration.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Representative traces of progress curves in determining nucleotide exchange rates shown in Figure 6. Change in fluorescence intensity is measured at excitation/emission = 295 nm/345 nm, which is sensitive to GTPγS binding ΔN31Gαi1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** GTP binding rates of His-NCS-1/rRic-8A-491 plotted vs CaCl2 concentration after subtraction of intrinsic binding rates of rΔN31Gαi1 at each corresponding CaCl2 concentration (red triangles). In all cases means and standard error of the mean (SEM) are reported for a minimum of six experimental replicates Data were fit to a one-site binding model (GraphPad Prism, 2023).
 
 In the absence of Ca2+, Ric-8A-491 increases the rate of nucleotide exchange at ΔN31Gαi1 almost fourfold over the intrinsic rate, whereas His-NCS-1/Ric-8A-491 does not significantly affect the exchange rate (Figure 6). We found that Ca2+ increases the intrinsic and Ric-8A-catalyzed rates of nucleotide exchange at ΔN31Gαi1 in equal measure (Figure 6A). However, after correcting for this effect, it is evident that Ca2+ produces a concentration-dependent enhancement of the exchange rate in the presence of His-NCS-1/Ric-8A-491 (Figure 6B). At 25 µM CaCl2, ~35% of the nucleotide exchange rate is restored to levels similar to that observed in the presence of Ric-8A-491 alone (Figure 6B). Thus, NCS-1 complexed to Ric-8A effectively inhibits the GEF activity of Ric-8A whereas addition of CaCl2 restores GEF activity. From these data, it is possible to calculate the apparent activation constant for Ca2+-induced enhancement of the intrinsic and Ric-8A-catalyzed nucleotide exchange rates at ΔN31Gαi1 (Ka-EXC=29 ± 8 µM, Figure 6—figure supplement 2). In addition, it is possible to estimate a Ca2+-induced apparent activation constant for its action on the NCS-1/Ric-8A complex, which disassembles upon Ca2+ binding to NCS-1 EF-4, enabling Ric-8A to catalyze Gαi1 nucleotide exchange (Ka-NCS-1=61 ± 35 µM). It is noteworthy that this apparent constant is in the tens of micromolar range and higher than the submicromolar Ca2+ affinity calculated for the regulatory EF-4 Ca2+ binding site (Table 4). These differences may be due to different issues. First, the experimental conditions were different in each experiment: Na+ concentration was 50 mM and 200 mM in the ITC and nucleotide exchange assays, respectively. Second, the nucleotide exchange assay requires 2 mM MgCl2, and Mg2+ competes with Ca2+ for binding (Burgoyne et al., 2019; Aravind et al., 2008). Third, the apparent activation constant Ka-NCS-1 includes at least three different events: Na+ dissociation from NCS-1 EF-4 (200 mM NaCl experimental conditions), dissociation of Ric-8A from the NCS-1/Ric-8A complex, and finally, binding of Ca2+ to NCS-1. Na+ dissociation from EF-4 and the disassembly of NCS-1 from Ric-8A are unfavorable contributions to NCS-1 Ca2+ binding.
 
@@ -113,6 +507,10 @@ The combination of the crystallographic work using Ric-8A peptides of different 
 ![Figure 7.](https://cdn.elifesciences.org/articles/86151/elife-86151-fig7-v2.jpg)
 
 **Figure 7.:** (A) The structure of the rRic-8A/G⍺i1 complex (PDB: 6UKT, McClelland et al., 2020). Electrostatic potential surface representation of ARM-HEAT domain (repeats 1–8). The repeat 9 is shown as ribbons. The Ric-8A region present in the NCS-1/Ric-8A-P crystal structure is shown in green and side chains of the corresponding residues in stick mode. Phosphorylated S435 and T440 are indicated. (B) Superposition of the structures of Ric-8A bound to G⍺ (magenta and green, PDB: 6UKT, McClelland et al., 2020), uncomplexed rRic-8A (yellow, PDB: 6NMG, Zeng et al., 2019), Ric-8A peptide (light purple) bound to hNCS-1. Ric-8A helix R2 of the complex with NCS-1 was superposed with helix b9 of uncomplexed Ric-8A. (C) Schematic representation of Ric-8A ARM/HEAT repeat domain (repeats 1–9 are indicated) explaining the detachment of 9 for NCS-1/Ric-8A assembly. The redistribution of charged (blue) and hydrophobic residues (green) in Ric-8A repeat 9 generates the platform for NCS-1 recognition. Repeats 1–8 have been colored in different gray tonalities since previous studies have shown global changes within the ARM-HEAT repeat domain of unphosphorylated Ric-8A compared to the phosphorylated version (Zeng et al., 2019).
+
+![Video 1.](https://cdn.elifesciences.org/articles/86151/elife-86151-video1.mp4.jpg)
+
+**Video 1.:** Ric-8A residues 402–429 are shown starting at the Gα-bound and ending at the NCS-1-bound conformations. The view is the same as that in Figure 7A. Side chains are displayed in stick mode. While in the Ric-8A/Gα structure hydrophobic residues are at the back, facing the ARM-HEAT repeat domain (not shown), they rearrange and expose to the solvent to recognize NCS-1. The resulting structure is amphipathic and positively charged residues concentrate at the opposite side.
 
 The dramatic increase in thermal stability experienced by unphosphorylated Ric-8A upon binding to NCS-1 (>20°C in Ti; Figure 2B) is indicative of the strong interactions established in the complex between the two proteins. It also means that the free energy of binding would be high enough as to pay the energy penalty derived from the structural changes experienced by Ric-8A to give rise to the complex with NCS-1. Currently, it is unknown if the impact of NCS-1 binding to Ric-8A extends beyond the structural rearrangement that takes place at repeat 9 and its detachment from repeat 8. Nonetheless, it is worth noting that global changes within Ric-8A ARM-HEAT repeat domain have been observed when comparing the phosphorylated and unphosphorylated forms of Ric-8A-452 (Zeng et al., 2019). The combination of the crystallographic data with low-resolution SAXS data suggested that there were quasi-rigid body angular displacements of three subdomains (constituted by repeats 1–4, 5–6, and 7–9) of the ARM-HEAT repeat domain (Figure 7C). Therefore, interactions between the phosphorylated residues and the C-terminal repeat 9 (Figure 7A) are translated into different contacts between the subdomains, along with a different global shape and curvature of the ARM-HEAT repeat domain (Zeng et al., 2019). The structure solution of the complete Ric-8A ARM-HEAT repeat domain bound to NCS-1 will allow to understand the extent of the rearrangement that Ric-8A suffers upon NCS-1 binding.
 
@@ -134,7 +532,7 @@ Small-molecule PPI modulators with therapeutic potential have been discovered in
 
 ## Materials and methods
 
-## Cloning, expression, and purification of proteins
+### Cloning, expression, and purification of proteins
 
 NCS-1 constructs: Human full-length NCS-1 (100% protein sequence identity with the rat variant) was cloned in the pETDuet vector (Canal-Martín et al., 2019). A stop codon was introduced after residue P177 to generate the NCS-1ΔH10 construct and using the IVA cloning strategy (García-Nafría et al., 2016; Watson and García-Nafría, 2019). The proteins were overexpressed in Escherichia coli (BL-21*) as reported (Canal-Martín et al., 2019; Baños-Mateos et al., 2014). Briefly, cells were resuspended in lysis buffer (50 mM HEPES pH 7.4, 100 mM KCl, 1 mM 1,4-dithiothreitol (DTT), 0.1 mM phenylmethylsulfonyl fluoride (PMSF), 10 µg/ml DNAse) and disrupted by sonication. The lysate was centrifuged at 16,000 rpm in a SS-34 rotor (4°C, 45 min). One mM CaCl2 was added to the clarified supernatant and the resulting solution was injected into a Hi Trap Phenyl FF hydrophobic column (Cytiva) preequilibrated with lysis buffer plus 1 mM CaCl2. The column was washed with 5 column volumes of HIC-A buffer (20 mM Tris pH 7.9, 1 mM CaCl2, 1 mM DTT). Protein elution was achieved applying a EGTA gradient with HIC-B buffer (20 mM Tris pH 7.9, 2 mM EGTA, 2 mM DTT). NCS-1ΔH10 elution occurred at 1.2 mM EGTA, while full-length NCS-1 elution occurred at 1.4 mM EGTA. Protein quality was evaluated by nano-DSF (see below) and SDS-PAGE. Fully Ca2+-loaded protein was prepared by dialyzing the EGTA-eluted sample against HIC-A buffer. Then, the sample was loaded in an anion exchange HP Q column (Cytiva) and eluted with a NaCl gradient using QB buffer (20 mM Tris pH 7.9, 1 mM CaCl2, 500 mM NaCl, 1 mM DTT). NCS-1 elution occurred at 175 mM NaCl.
 
@@ -146,27 +544,27 @@ N-terminally hexahistidine-tagged rat Ric-8A residues 1–491, Ric-8A-491, was e
 
 Gα construct: N-terminally glutathione-S-transferase tagged rat Gαi1 with a 31 residue N-terminal truncation (ΔN31Gαi1) was expressed from a pDest15 vector in BL21(DE3) RIPL E. coli and purified as previously described (Thomas et al., 2011; Thomas et al., 2008).
 
-## Assembly of protein complexes
+### Assembly of protein complexes
 
-## NCS-1ΔH10/rRic-8A-452 complexes
+#### NCS-1ΔH10/rRic-8A-452 complexes
 
-## Ca2+-free conditions (Assembly (i))
+##### Ca2+-free conditions (Assembly (i))
 
 Pure rat His-Ric-8A-452 (50 mM Tris pH 8, 250 mM NaCl, 5% glycerol, 2 mM beta-mercaptoethanol) was mixed with NCS-1ΔH10 (20 mM Tris pH 7.9, 1.2 mM EGTA, 1 mM DTT) in a 1:1.9 (Ric-8A:NCS-1) molar ratio. Final NaCl and EGTA concentrations were adjusted to 125 mM and 0.6 mM, respectively. To ensure absence of Ca2+, the mixture was dialyzed against buffer 50 mM Tris pH 8, 200 mM NaCl, 2 mM EGTA, 1 mM TCEP, with and without 1 mM MgCl2 (2 changes, first after 4 hr and second for 16 hr). The final sample was concentrated and subjected to a SEC in the same buffer and using a Superdex 200 HR 10/300 column (Cytiva). 12% SDS-PAGE gels were run to identify the composition of eluted samples.
 
-## High Ca2+ conditions (Assembly (ii))
+##### High Ca2+ conditions (Assembly (ii))
 
 Protein mixture was performed as above but the purified fully Ca2+-loaded NCS-1ΔH10 (20 mM Tris pH 7.9, 2 mM CaCl2, 1 mM DTT) was used instead. The final NaCl and CaCl2 concentrations in the protein mixture were 125 mM and 2 mM, respectively. After 1 hr incubation, the sample was concentrated and subjected to a SEC. as described above, but the column was equilibrated in buffer 50 mM Tris pH 8, 200 mM NaCl, 2 mM CaCl2, 1 mM TCEP.
 
-## Dialysis from EGTA to Ca2+ conditions (Assembly (iii))
+##### Dialysis from EGTA to Ca2+ conditions (Assembly (iii))
 
 Protein mixture was the same as that for Ca2+-free conditions and the resulting sample (at 0.6 mM EGTA) was dialyzed against buffer containing 50 mM Tris pH 8, 200 mM NaCl, 2 mM CaCl2, 1 mM TCEP. This assembly was performed with both the un-phosphorylated and phosphorylated variants of His-Ric-8A-452. The same assembly was also performed in a K+ containing buffer. For this, unphosphorylated His-Ric-8A-452 was first dialyzed against buffer containing 50 mM Tris pH 8, 250 mM KCl, 5% glycerol, 2 mM beta-mercaptoethanol, to replace KCl for NaCl. Protein mixture, dialysis, and gel filtration were carried out substituting KCl for NaCl.
 
-## His-NCS-1/rRic-8A-491 complex
+### His-NCS-1/rRic-8A-491 complex
 
 Complexes used for guanine nucleotide exchange assays were prepared as described in Assembly (iii) and purified by SEC on a HiLoad 16/600 Superdex 200 pg in 50 mM HEPES pH 8, 200 mM NaCl, 1 mM TCEP. NCS-1/rRic-8A-491 complexes prepared for assays conducted at less than or equal to 1 μM Ca2+ were formulated, purified, and assayed using buffers made with HPLC-grade water (RPI).
 
-## Assembly, crystallization, diffraction data collection, and structure solution of hNCS-1ΔH10/Ric-8A-P complexes
+### Assembly, crystallization, diffraction data collection, and structure solution of hNCS-1ΔH10/Ric-8A-P complexes
 
 Three highly pure (>95%) HPLC-verified Ric-8A peptides were purchased from GenicBio for structural studies. They ranged from residue 400 to residues 423 (P1), 429 (P2), and 432 (P3) (Figure 1B). Lyophilized peptides were solubilized in HIC-B buffer and mixed with purified NCS-1ΔH10 in a 1:10 (protein:peptide) molar ratio (final EGTA concentration 1.7 mM). The mixture was dialyzed against a buffer containing 20 mM Tris pH 8, 0.5 mM CaCl2, 0.5 mM DTT (2 changes, first after 4 hr, second for 16 hr). Thermal stability of the final samples was evaluated by nano-DSF. The final sample was concentrated to 20 mg/ml with a Vivaspin 2 device (2 kDa cutoff, Sartorius).
 
@@ -174,19 +572,19 @@ Crystallization screenings were set with an Oryx8 robot (Douglas Instruments) at
 
 Diffraction data were collected at 100 K and 0.979 Å wavelength at ALBA synchrotron radiation source (BL13 beamline) (Table 1). Data were processed with AutoPROC using the extended anisotropic method (Vonrhein et al., 2011). The first structure was solved by molecular replacement with Phaser (McCoy et al., 2007), using with data from P2 peptide crystals (Structure 1). As search model, the structure of hNCS-1 (PDB: 6QI4), lacking the C-terminal helix H10, was used (Canal-Martín et al., 2019). Successive cycles of automatic refinement with Phenix (Adams et al., 2010) and manual building with Coot (Emsley and Cowtan, 2004) were performed. The refined structure was used to solve Structures 2 and 3, using Fourier differences calculations. The final models were validated with Molprobity (Williams et al., 2018). Details on data processing and refinement are shown in Table 1. The structures were analyzed using different programs from the CCP4 package (Winn et al., 2011) and the PISA server (Krissinel and Henrick, 2007). Images were prepared with PyMOL (Schrödinger, 2015). The final structures were deposited in the PDB with codes: Structure 1 (8ALH), Structure 2 (8AHY), Structure 3 (8ALM).
 
-## Thermal shift assay
+### Thermal shift assay
 
 Label-free thermal shift assays with hNCS-1 full-length, hNCS-1ΔH10, rRic-8A-452, NCS-1ΔH10/rRic-8A-452, NCS-1ΔH10/Ric-8A-P2 peptide, and NCS-1ΔH10/Ric-8A-P3 peptide were performed using a Tycho NT.6 instrument (NanoTemper Technologies). This nano-DSF instrument records the protein’s intrinsic fluorescence at 330 nm and 350 nm while heating the sample from 35°C to 95°C at a rate of 30°C/min. Tycho NT.6 automatically generates thermal unfolding profiles by representing the fluorescence ratio (350/330 nm) as a function of increasing temperature, giving insights on the thermal stability of the protein and allowing the analysis of interactions effects on relative stability. Tycho NT.6 software detects and identifies the inflection temperature (Ti) of the unfolding transition/s. A peak in the first derivative view corresponds to the detected Ti of the test sample.
 
 Proteins at 10 μM in their corresponding final buffers (see above) were measured using NanoTemper capillaries. Three independent replicates were performed for each sample. The mean Ti and standard error of the mean (SEM) values were calculated for each sample.
 
-## Phosphorylation assays
+### Phosphorylation assays
 
 Purified rRic-8A-452 and NCS-1ΔH10/rRic-8A-452 were phosphorylated with CK2 (New England Biolabs) as previously described by McClelland et al., 2020. Briefly, 2 mg of each were dialyzed (2 changes, 2 hr and o/n, 4°C) in prephosphorylation buffer (50 mM Tris pH 8, 150 mM NaCl, 2 mM CaCl2, 1 mM TCEP). Samples were mixed 1:1 in 2× reaction buffer (100 mM Tris pH 8, 200 mM NaCl, 20 mM MgCl2, 2 mM EGTA, 1 mM DTT). Half of the samples was subjected to phosphorylation by adding 300 U CK2 and 5 mM ATP. Reactions were allowed to proceed for 16 hr and 18°C. The other half of samples were treated similarly but CK2 and ATP were not added (non-phosphorylated sample; controls).
 
 To distinguish between phosphorylated and non-phosphorylated proteins, anion exchange chromatography was performed with the non-phosphorylated samples (controls) and those subjected to CK2 treatment. Samples were dialyzed in RV buffer (50 mM Tris pH 8, 125 mM NaCl, 1 mM CaCl2, 1 mM DTT) and injected into an anion exchange HiTrap Q HP column (Cytiva) preequilibrated with QA buffer (50 mM Tris-HCl pH 8, 75 mM NaCl, 1 mM CaCl2, 1 mM DTT). Protein elution was achieved with a gradient using QB buffer (50 mM Tris-HCl pH 8, 500 mM NaCl, 1 mM CaCl2, 1 mM DTT). Fractions from each peak were collected and analyzed by SDS-PAGE. Presence of phosphorylation in rRic-8A-452 and NCS-1ΔH10/rRic-8A-452 complex was additionally verified in a phosphoprotein assay by LC-MS/MS.
 
-## Phosphoprotein analysis by LC-MS/MS
+### Phosphoprotein analysis by LC-MS/MS
 
 The phosphoprotein assay was divided into three different steps: (1) in-gel sample digestion; (2) phosphopeptide purification; and (3) protein identification by tandem mass spectrometry.
 
@@ -198,24 +596,28 @@ Protein identification by tandem mass spectrometry (LC–MS/MS Exploris 240): Th
 
 MS and MS/MS raw data were translated to mascot general file (mgf) format using Proteome Discoverer (PD) version 2.5 (Thermo Fisher Scientific), and searched using an in-house Mascot Server v. 2.7 (Matrix Science, London, UK) against an in-house database including Ric-8A protein sequence along with common laboratory protein contaminants. Search parameters considered fixed carbamidomethyl modification of cysteine, and the following variable modifications: methionine oxidation, phosphorylation of serine/threonine/tyrosine, and deamidation of asparagine/glutamine. Peptide mass tolerance was set to 10 ppm and 0.02 Da, in MS and MS/MS mode, respectively, and three missed cleavages were allowed. The Mascot confidence interval for protein identification was set to ≥95% (p<0.05) and only peptides with a significant individual ion score of at least 30 were considered.
 
-## Binding of NCS-1 to Na+, K+, and Ca2+
+### Binding of NCS-1 to Na+, K+, and Ca2+
 
 Intrinsic fluorescence titration assay: Because NCS-1 contains two tryptophan residues, W30 and W103, the protein shows intrinsic fluorescence when excited at 295 nm. These residues are located at EF-1 (W30) and EF-3 (W103). The latter is located at helix H6, which is in contact with helix H9, part of the EF-4 motif, where Na+ binds (Figure 3—figure supplement 2). Tryptophan emission fluorescence is very sensitive to the 3D environment and even subtle structural rearrangements have an effect on both the emission intensity and the spectra’s maximum wavelength. This technique has been used previously to study the binding of different ligands to NCS-1 by monitoring changes in the fluorescence emission intensity at increasing amounts of the compound under study (Mansilla et al., 2017; Canal-Martín et al., 2019; Roca et al., 2018). Tryptophan emission fluorescence of EGTA-purified full-length NCS-1 was recorded at 10 μM in buffer containing 20 mM Tris pH 8, 100 μM EGTA, 1 mM DTT, and 0–300 mM NaCl or 0–300 mM KCl. Data were acquired with a Tycho NT.6 equipment (NanoTemper Technologies). The emission fluorescence intensity was recorded at 330 nm and 35°C. Fluorescence intensities were normalized as (I0 − I)/I0. Three independent experiments were performed. Mean ± SEM values were represented at different Na+ and K+ concentrations. The apparent dissociation constant was calculated by using a least squares algorithm to fit the experimental data to a 1:1 stoichiometry model (Mansilla et al., 2017). The fitting was performed with KaleidaGraph Data Analysis Program (Tellinghuisen, 2000).
 
-ITC: Ca2+ binding was characterized by ITC at 25°C using a VP-ITC microcalorimeter (GE Healthcare, Northampton, MA, USA) with a cell volume of 1.4619 ml in Na+ or K+ containing buffers (20 mM Tris pH 7.9, 2 mM EGTA, 150 mM NaCl, or 150 mM KCl). Before measurements, EGTA-purified full-length hNCS-1 (25 μM) was dialyzed in parallel against the above buffers (3×300 ml; 2 hr, 2 hr, and 20 hr) and then against the same buffers without EGTA. Protein solutions at 110 μM were loaded into the calorimetric cell and titrated by stepwise injections of a 1.5 mM CaCl2 solution prepared in the final dialysate. Dilution heats, evaluated separately, were found to be negligible. The binding isotherms were fit by nonlinear regression analysis using the AFFINImeter software (Pineiro et al., 2019) using the model builder to create a sequential binding model with three different binding sites:M+L+L⇄K1ML1+L⇄K2ML2+L⇄K3ML3
+ITC: Ca2+ binding was characterized by ITC at 25°C using a VP-ITC microcalorimeter (GE Healthcare, Northampton, MA, USA) with a cell volume of 1.4619 ml in Na+ or K+ containing buffers (20 mM Tris pH 7.9, 2 mM EGTA, 150 mM NaCl, or 150 mM KCl). Before measurements, EGTA-purified full-length hNCS-1 (25 μM) was dialyzed in parallel against the above buffers (3×300 ml; 2 hr, 2 hr, and 20 hr) and then against the same buffers without EGTA. Protein solutions at 110 μM were loaded into the calorimetric cell and titrated by stepwise injections of a 1.5 mM CaCl2 solution prepared in the final dialysate. Dilution heats, evaluated separately, were found to be negligible. The binding isotherms were fit by nonlinear regression analysis using the AFFINImeter software (Pineiro et al., 2019) using the model builder to create a sequential binding model with three different binding sites:
+
+$$
+M+L+L⇄K_{1}ML_{1}+L⇄K_{2}ML_{2}+L⇄K_{3}ML_{3}
+$$
 
 where M and L refer to NCS-1 and Ca2+, respectively. Values of Ki and ΔHi, the stoichiometric dissociation constant and the enthalpy change for step i (i=1–3), were directly determined from data fitting. The free energy change of binding was calculated as ΔGi = −RT ln (1/Ki) (R=1.986 cal/mol/K).
 
-## Biolayer interferometry
+### Biolayer interferometry
 
 The Ca2+ dependence of NCS-1 binding to Ric-8A was assessed by BLI in a single-channel BLItz system (ForteBio). This optical label-free technique allows the measurement of macromolecular interactions by analyzing interference patterns of white light reflected from the surface of a biosensor tip, where one of the molecules is immobilized. The high concentration of immobilized molecules at the tip allows the detection of low-affinity binders and therefore the study of weak interactions. Changes in the number of molecules interacting with the immobilized molecules bound to the biosensor tip cause a shift in the interference pattern (Δλ) that is measured in real time. An apparent equilibrium constant, Kd, can be calculated from the dissociation and association rate constants obtained from the experimental profiles (Sultana and Lee, 2015).
 
 N-terminally His-tagged NCS-1 was immobilized in Ni-NTA biosensors (Sartorius) and binding to Ric-8A-P3 peptide was tested at increasing concentrations of Ca2+. To avoid Ca2+ loading of the functional Ca2+ binding site, buffers were prepared with decalcified milli-Q water to avoid any Ca2+ traces (LiChrosolv, Merck). EGTA-purified His-NCS-1 (1.9 mM EGTA) was diluted to 110 μM EGTA with Ca2+-free buffer (50 mM Tris pH 7.9, 125 mM NaCl). Next, the protein was concentrated to 2 mg/ml and dialyzed against Ca2+-free buffer to remove EGTA. To verify that the functional EF-4 Ca2+ binding site was empty, a nano-DSF assay of the final His-NCS-1 protein was performed (Figure 4—figure supplement 2), showing a Ti similar to that of NCS-1ΔH10 in EGTA (Figure 2B). Ric-8A-P3 peptide was solubilized in Ca2+-free buffer. The final concentration of protein and peptide were set to 5 μM and 30–150 μM. CaCl2 was added to protein, peptide, and buffer to achieve final Ca2+ concentrations of 250, 375, and 425 nM to study the Ca2+ dependence of the protein-peptide interaction. NCS-1 immobilization sequence was as follows: (1) baseline (buffer, 30 s), (2) loading (His-NCS-1 in buffer, 300 s), and (3) equilibration (buffer, 300 s) (Figure 4—figure supplement 2). A control experiment was performed previously to verify that Ric-8A-P3 peptide does not bind to the Ni-NTA biosensor in the absence of NCS-1 (Figure 4—figure supplement 2). Also, the interaction of NCS-1 and Ric-8A-P3 was tested at different peptide concentrations to verify the specific binding of the peptide to the protein (Figure 4—figure supplement 2). For the NCS-1/Ric-8A interaction assay, and once His-NCS-1 was bound to the tip, the sequence was: (1’) baseline (buffer, 30 s), (2’) association (Ric-8A-P3 in buffer, 300 s), and (3’) dissociation (buffer, 300 s). A concentration of 50 μM Ric-8A-P3 was selected to study the protein-peptide interaction at increasing concentrations of Ca2+. Three independent experiments were performed for each Ca2+ concentration. Sensograms were analyzed and fit with the BLItz Pro software and apparent dissociation constant Kd was calculated from fitted data and considering 1:1 equilibrium with the same software. Apparent Kd values are represented as mean ± SEM in Table 3.
 
-## Co-immunoprecipitations
+### Co-immunoprecipitations
 
 Human NCS-1 and V5-tagged Ric-8A construct were previously described (Mansilla et al., 2017). Using the IVA cloning strategy (García-Nafría et al., 2016; Watson and García-Nafría, 2019) deletion constructs were prepared ending at residues G424 (hRic-8A-424, which corresponds to G423 in the rat variant) and G433 (hRic-8A-433, in rat, G432). Furthermore, a full-length hRic-8A mutant (S436A and T441A) was prepared to avoid phosphorylation of the protein at these sites. To verify the NCS-1/Ric-8A PPI interface, several hNCS-1 ((1) D37A, Y52A; (2) R148A, R151A; (3) D37A, R148A, R151A; (4) D37A, Y52A, R148A, R151A; and (5) W30A) and hRic-8A ((1) T411A, Y413A, N415A and (2) L425A, M426A) mutant proteins were generated. The numbering of the rat Ric-8A sequence has been maintained in Figure 3D for proper structural comparison. Constructs were cotransfected into HEK293 cells using Lipofectamin 2000 (Thermo) following the manufacturer’s instructions. HEK293T cells were purchased from ATCC and authentication was provided by manufacturer. HEK293T cells were negative in mycoplasma contamination, as tested regularly. 48 hr after transfection cells were lysed in lysis buffer (150 mM NaCl, 1.0% Nonidet P-40, 50 mM Tris pH 8.0). Lysates were then incubated overnight (12 hr) at 4°C with mouse anti-NCS-1 (1:500; Cell Signaling). Samples were subsequently incubated for 2 hr with Protein-G-Sepharose (Sigma-Aldrich). After three washes with lysis buffer, proteins were eluted from the Sepharose and analyzed by western blot following standard procedures; 10% of the lysate before immunoprecipitation was run as input. Mouse anti-V5 (1:5000; Thermo) and rabbit anti-NCS-1 (1:2000; Cell Signaling) antibodies were used for western blot. The immunoprecipitation blot was incubated with anti-mouse TrueBlot (Rockland) as secondary antibody to avoid heavy-/light-chain antibody interference. Input blots were incubated with anti-mouse or anti-rabbit HRP-conjugated antibodies (Sigma 1:5000). HRP activity from the secondary antibodies was revealed with ECL (Promega) and pictures were taken with Chemidoc (Bio-Rad). Bands densitometry was performed using ImageJ (Schneider et al., 2012). A paired Student’s t-test was used to compare mean values of three independent experiments. Graph and statistical analysis were performed using GraphPad Prism (GraphPad Software, Inc, USA).
 
-## Guanine nucleotide exchange assays
+### Guanine nucleotide exchange assays
 
 Nucleotide exchange assays were carried out at 20°C using a LS55 luminescence spectrometer (Perkin Elmer) with 5 nm slit widths (Ex/Em 295 nm/345 nm). Assays were conducted by measuring the change in rat ΔN31Gαi1 tryptophan fluorescence in the presence or absence of rRic-8A-491, His-NCS-1/rRic-8A-491, or His-NCS-1 as previously described (McClelland et al., 2020; Kant et al., 2016). All assays were conducted in 50 mM HEPES pH 8, 200 mM NaCl, 2 mM MgCl2, 1 mM TCEP. His-NCS-1/rRic-8A-491 was preincubated with rΔN31Gαi1 and 0, 0.25, 0.375, 0.425, 1, 10, 25, 50, and 500 µM CaCl2 in a quartz fluorescent cuvette prior to addition of GTPγS (guanosine 5’-O-[gamma-thio]-triphosphate). Assays with rRic-8A-491 and His-NCS-1 were also performed at 0, 1, 10, 25, 50, and 500 µM CaCl2 for reference. Final concentrations were as follows: 0.5 µM rRic-8A-491, His-NCS-1/rRic-8A-491 complex, or His-NCS-1, 1 µM rΔN31Gαi1, and 10 µM GTPγS in a reaction volume of 500 µl. Buffers for Ca2+ concentrations of 1 µM or less were prepared with HPLC-grade water (RPI). For each assay a minimum of six technical repeats were performed. Progress curves were fit to a single or double exponential rate model using GraphPad Prism (GraphPad Prism, 2023). GTP binding rates of rΔN31Gαi1 in the presence or absence of His-NCS-1/rRic-8A-491 were represented vs CaCl2 concentration. Data were fit to a one-site-total binding velocity model, v=vo + vmax [Ca2+]/(Ka +[Ca2+]) using GraphPad Prism (GraphPad Prism, 2023) to estimate an apparent Ca2+ activation constant (Ka; mean ± SEM).

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.39813.001 Eukaryotes thought to have evolved clonally for millions of years are referred to as ancient asexuals. The oldest group among these are the arbuscular mycorrhizal fungi (AMF), which are plant symbionts harboring hundreds of nuclei within one continuous cytoplasm. Some AMF strains (dikaryons) harbor two co-existing nucleotypes but there is no direct evidence that such nuclei recombine in this life-stage, as is expected for sexual fungi. Here, we show that AMF nuclei with distinct genotypes can undergo recombination. Inter-nuclear genetic exchange varies in frequency among strains, and despite recombination all nuclear genomes have an average similarity of at least 99.8%. The present study demonstrates that AMF can generate genetic diversity via meiotic-like processes in the absence of observable mating. The AMF dikaryotic life-stage is a primary source of nuclear variability in these organisms, highlighting its potential for strain enhancement of these symbionts.
+Eukaryotes thought to have evolved clonally for millions of years are referred to as ancient asexuals. The oldest group among these are the arbuscular mycorrhizal fungi (AMF), which are plant symbionts harboring hundreds of nuclei within one continuous cytoplasm. Some AMF strains (dikaryons) harbor two co-existing nucleotypes but there is no direct evidence that such nuclei recombine in this life-stage, as is expected for sexual fungi. Here, we show that AMF nuclei with distinct genotypes can undergo recombination. Inter-nuclear genetic exchange varies in frequency among strains, and despite recombination all nuclear genomes have an average similarity of at least 99.8%. The present study demonstrates that AMF can generate genetic diversity via meiotic-like processes in the absence of observable mating. The AMF dikaryotic life-stage is a primary source of nuclear variability in these organisms, highlighting its potential for strain enhancement of these symbionts.
 
 ## Introduction
 
@@ -43,7 +43,240 @@ As expected for an AMF dikaryon, the SL1 assembly contains two putative MAT-loci
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/39813/elife-39813-fig1-v3.jpg)
 
-**Figure 1.:** MAT-locus of R. irregularis dikaryon isolate SL1.(B) Genome-wide allele frequency of homokaryons and dikaryons. R. irregularis SL1 shows the hallmark 50:50 ratio reference to alternate allele frequency of dikaryotic isolates. The R. irregularis plots for A1, A4, A5 and C2 represent new analyses of publicly available genome sequence data obtained by (Ropars et al., 2016). The homokaryotic isolates R. irregularis A1 and C2, and R. cerebriforme and R. diaphanus are also shown as comparison. Blue dashed line highlights the 0.5 allele frequency.
+**Figure 1.:** (B) Genome-wide allele frequency of homokaryons and dikaryons. R. irregularis SL1 shows the hallmark 50:50 ratio reference to alternate allele frequency of dikaryotic isolates. The R. irregularis plots for A1, A4, A5 and C2 represent new analyses of publicly available genome sequence data obtained by (Ropars et al., 2016). The homokaryotic isolates R. irregularis A1 and C2, and R. cerebriforme and R. diaphanus are also shown as comparison. Blue dashed line highlights the 0.5 allele frequency.
+
+**Table 1.**
+ Summary statistics of genomes and nuclei analyzed in this study. * Values from (Ropars et al., 2016).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="5">Rhizophagus irregularis</th>
+      <th rowspan="2">Rhizophagus cerebriforme</th>
+      <th rowspan="2">Rhizophagus diaphanus</th>
+    </tr>
+    <tr>
+      <th>SL1</th>
+      <th>A1</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>C2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A. Genome Assembly Statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Assembly Coverage</td>
+      <td>136x</td>
+      <td>68x</td>
+      <td>95x</td>
+      <td>76x</td>
+      <td>96x</td>
+      <td>150x</td>
+      <td>120x</td>
+    </tr>
+    <tr>
+      <td>Number of Scaffolds</td>
+      <td>29,279</td>
+      <td>11,301*</td>
+      <td>11,380*</td>
+      <td>14,626*</td>
+      <td>10,857*</td>
+      <td>15,087</td>
+      <td>15,496</td>
+    </tr>
+    <tr>
+      <td>Assembly Size (Kb)</td>
+      <td>211,501</td>
+      <td>125,869*</td>
+      <td>138,327*</td>
+      <td>131,461*</td>
+      <td>122,873*</td>
+      <td>171,896</td>
+      <td>170,781</td>
+    </tr>
+    <tr>
+      <td>Assembly SNP/Kb</td>
+      <td>0.50</td>
+      <td>0.25</td>
+      <td>0.74</td>
+      <td>0.79</td>
+      <td>0.35</td>
+      <td>0.41</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>B. Single Nucleus Statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of Nuclei Analyzed</td>
+      <td>16.0</td>
+      <td>12.0</td>
+      <td>14.0</td>
+      <td>8.0</td>
+      <td>9.0</td>
+      <td>15.0</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <td>Average Assembly Coverage</td>
+      <td>14.08%</td>
+      <td>57.30%</td>
+      <td>46.84%</td>
+      <td>58.40%</td>
+      <td>61.42%</td>
+      <td>22.39%</td>
+      <td>11.45%</td>
+    </tr>
+    <tr>
+      <td>Average Position Depth</td>
+      <td>11.8</td>
+      <td>18.1</td>
+      <td>22.1</td>
+      <td>22.7</td>
+      <td>22.9</td>
+      <td>15.4</td>
+      <td>12.3</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of SNPs Against Reference</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>-- Total SNPs</td>
+      <td>346,382</td>
+      <td>241,294</td>
+      <td>423,166</td>
+      <td>291,025</td>
+      <td>251,648</td>
+      <td>262,030</td>
+      <td>101,681</td>
+    </tr>
+    <tr>
+      <td>-- Average SNPs Per Nuclei - basic filtering</td>
+      <td>35,473</td>
+      <td>51,435</td>
+      <td>73,349</td>
+      <td>76,055</td>
+      <td>58,158</td>
+      <td>30,534</td>
+      <td>10,554</td>
+    </tr>
+    <tr>
+      <td>-- Average Divergence with reference - basic filtering</td>
+      <td>0.12%</td>
+      <td>0.07%</td>
+      <td>0.12%</td>
+      <td>0.10%</td>
+      <td>0.08%</td>
+      <td>0.08%</td>
+      <td>0.06%</td>
+    </tr>
+    <tr>
+      <td>Average - Inter-Nucleus Divergence - basic filtering</td>
+      <td>0.38%</td>
+      <td>0.13%</td>
+      <td>0.24%</td>
+      <td>0.16%</td>
+      <td>0.14%</td>
+      <td>0.24%</td>
+      <td>0.21%</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ BUSCO and K-mer assembly size estimation
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">BUSCO analysis</th>
+      <th>K-mer estimation</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Genes found</th>
+      <th>Completeness</th>
+      <th>Predicted genome size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A. R. irregularis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A1</td>
+      <td>268</td>
+      <td>92.41%</td>
+      <td>131.7 Mb</td>
+    </tr>
+    <tr>
+      <td>C2</td>
+      <td>263</td>
+      <td>90.69%</td>
+      <td>148.6 Mb</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>262</td>
+      <td>90.34%</td>
+      <td>143.5 Mb</td>
+    </tr>
+    <tr>
+      <td>A5</td>
+      <td>267</td>
+      <td>92.07%</td>
+      <td>130.1 Mb</td>
+    </tr>
+    <tr>
+      <td>SL1</td>
+      <td>265</td>
+      <td>91.38%</td>
+      <td>146.5 Mb</td>
+    </tr>
+    <tr>
+      <td>B. R. cerebriforme</td>
+      <td>267</td>
+      <td>92.07%</td>
+      <td>119.7 Mb</td>
+    </tr>
+    <tr>
+      <td>C. R. diaphanus</td>
+      <td>267</td>
+      <td>92.07%</td>
+      <td>121.1 Mb</td>
+    </tr>
+  </tbody>
+</table>
 
 To find direct evidence of inter-nuclear recombination in AMF, we obtained and compared partial genome sequences from 86 single nuclei – that is single haploid genotypes – isolated from R. irregularis dikaryons (SL1, n = 15; A4, n = 14; A5, n = 8), R. irregularis homokaryons (A1, n = 12; C2, n = 9), and from the species R. diaphanus (n = 12) and R. cerebriforme (n = 15). Nuclei were isolated and analysed using a combination of fluorescence-activated cell sorting (FACS), whole genome amplification (WGA) (Ropars et al., 2016), and Illumina sequencing. Each nucleus was genotyped by mapping paired-end Illumina reads obtained from WGA-based DNA against their respective genome reference. The combination of PCR-based WGA and Illumina sequencing methods results in variation in average depth position and reference coverage among nuclei and isolates (Table 1). Using basic filtering methodologies (see Material and Methods), we find that nuclear genomes diverge from their respective reference from 0.06% for R. diaphanus, to a maximum of 0.12% for SL1 and A4 (Table 1). Using this method, pairwise nuclear genome comparisons show a high average inter-nuclear similarity ranging from 99.62% in SL1 to a maximum of 99.87% in A1 (Supplementary file 2). When present, variability is scattered across the genome (Supplementary file 3).
 
@@ -73,7 +306,7 @@ Our analyses of single nuclei data also supports the hypothesis that essentially
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39813/elife-39813-fig4-v3.jpg)
 
-**Figure 4.:** Rhizophagus irregularis.Left: Most AMF analyzed using genome analysis and PCR targeted to the MAT-locus have been found to carry nuclei with the same MAT-locus. In these isolates, genetic variability is lower than dikaryotic relatives, and recombination is undetectable. Middle: The R. irregularis isolates A4 and A5 carry nuclei with two distinct MAT-loci. Evidence of recombination is very rare, and two divergent genotypes appear to co-exist in the cytoplasm. Right: In some cases, strains can harbour nuclei with two distinct MAT-loci that undergo frequent karyogamy. The frequency of karyogamy increases nuclear diversity within the mycelium.
+**Figure 4.:** Left: Most AMF analyzed using genome analysis and PCR targeted to the MAT-locus have been found to carry nuclei with the same MAT-locus. In these isolates, genetic variability is lower than dikaryotic relatives, and recombination is undetectable. Middle: The R. irregularis isolates A4 and A5 carry nuclei with two distinct MAT-loci. Evidence of recombination is very rare, and two divergent genotypes appear to co-exist in the cytoplasm. Right: In some cases, strains can harbour nuclei with two distinct MAT-loci that undergo frequent karyogamy. The frequency of karyogamy increases nuclear diversity within the mycelium.
 
 In fungi, diploid nuclei can undergo recombination either through meiosis, in a sexual cycle, or through aneuploidization, in a parasexual cycle involving nuclear fusion followed by random chromosomal loss. Parasexuality is rare in fungi (Paccola-Meirelles and Azevedo, 1991; Rosada et al., 2010; Seervai et al., 2013; Bennett, 2015), and this process drives recombination via mitotic events (as opposed to meiosis in a sexual cycle). It also requires the stable division of diploid nuclei for many generations to produce recombination through mitosis (Clutterbuck, 1996). To date, flow cytometry data has found that AMF nuclei are haploid (Ropars et al., 2016; Sedzielewska et al., 2011; Hosny et al., 1998) and evidence of widespread diploidy, as evidenced by the mapping of both alternate and reference reads along large portions of genome, could not be found in this study. In contrast, all AMF, including those investigated here, harbor a complete set of meiosis-related genes (Halary et al., 2011) and there is recurring evidence that conspecific isolates can exchange and recombine genetic material, presumably through sex (Riley et al., 2014; Croll and Sanders, 2009; den Bakker et al., 2010; Chen et al., 2018) . For these reasons, we argue that the inter-nuclear recombination we observed in this study is likely driven by meiotic events - that is conventional fungal sexual processes - although it is possible that parasexuality has also been at play in creating some of the observed nuclear diversity.
 
@@ -83,11 +316,11 @@ In conclusion, our findings demonstrate that arbuscular mycorrhizal fungi can ge
 
 ## Materials and methods
 
-## Single nucleus sorting, WGA, and Illumina sequencing
+### Single nucleus sorting, WGA, and Illumina sequencing
 
 FACS-based sorting of single nuclei and WGA were performed according to Ropars et al., 2016 (Ropars et al., 2016). DNA concentration of the WGA samples was measured by fluorometric quantification using Qubit dsDNA HS Assay Kit (Thermo Fisher Scientific). Subsequently, sequencing libraries were constructed using Nextera XT DNA Library Preparation Kit (Illumina). Library quality and quantity were checked with a Bioanalyzer and the High Sensitivity DNA Analysis Kit (Agilent Technologies) and a Qubit with the DNA HS Assay Kit (Invitrogen). Samples were sequenced on a HiSeq1500 (Illumina) using 100 bp paired-end sequencing in rapid-run mode at LAFUGA (LMU Genecenter, Munich), resulting in 2,020,347,187 reads. Single nuclei sequencing and genome reads are available in NCBI under the following bioproject: PRJNA477348.
 
-## Genome assembly, read mapping and SNP prediction and filtering
+### Genome assembly, read mapping and SNP prediction and filtering
 
 SPAdes v. 3.10 was used to assemble the SL1, R. diaphanus (MUCL 43196), and R. cerebriforme (DAOM227022) genomes using default parameters (Bankevich et al., 2012), and the resulting contigs were then scaffolded using SSPACE (Boetzer et al., 2011). Reads from single nucleus sequencing were cleaned using trim_galore with default parameters and were then mapped to the respective genome assembly using BWA-Mem with –M parameter (bwa mem –M) (Li, 2013). SPAdes assemblies are publicly available on NCBI (R. diaphanus: QZLH00000000, R. cerebrifrome: QZLG00000000, SL1 SPAdes: QZCD00000000, and SL1 ALLPATH-LG: QZCC00000000) along with the core meiosis SL1 genes (RAD21/Rec8: MH974797, MND1: MH974798, DMC1: MH974799, Spo11: MH974800, HOP2: MH974801, MSH4: MH974802, MSH5: MH974803).
 
@@ -97,14 +330,14 @@ Two filtering methods were used to detect variants, which are referred to here a
 
 The strict filtering method was built on top of the basic filtering procedures and includes three additional criteria. The first criterion was the coverage of the reference assembly from the original reads. Specifically, reads were mapped to the reference assembly and only candidate SNP positions with coverage that ranged between 69% and 131% of average coverage along the genome reference (close to 50/50 ratio) were kept. The second criterion was that the remaining candidate SNP positions also needed to keep a proportion of reference allele to alternate allele between 26% to 74% in the SNP calling via original assembly reads. Finally, the third criterion was confirming the single copy nature of the SNP using BLAST procedures. In this case, the 100 bp upstream and downstream regions overlapping the scored SNPs were BLAST against the reference genome. If BLAST results returned more than two good hits (e-value of better than 0.001) this region was considered to be a multi-copy region and thus discarded from downstream analyses.
 
-## Distance matrix comparisons
+### Distance matrix comparisons
 
 To detect inter-nuclear sequence divergence, pairwise comparison of SNP data was performed for co-existing nuclei of all isolates. In this analysis, two datasets were created. The first dataset includes only all variable regions, as defined by the total number of filtered SNP positions shared between the nuclei (Supplementary file 6). The other dataset includes the number of covered positions shared between the nuclei (Supplementary file 2).
 
-## SNP dispersion analysis
+### SNP dispersion analysis
 
 Raw SNP predictions from single nucleus reads were cleaned by removing SNP that were longer than length one. Each SNP position was converted into percent of total length of scaffold one and then plotted with an alpha value of 0.2.
 
-## Validation of SNPs and MAT-loci via PCR and Sanger sequencing using DNA from single nuclei
+### Validation of SNPs and MAT-loci via PCR and Sanger sequencing using DNA from single nuclei
 
 PCR-reactions were run with 0.13 ng/µL to 0.33 ng/µL of single nucleus DNA as a template, 0.5 µM forward and reverse primers each (Supplementary file 13 and 0.2 mM dNTPs. For reactions performed with Phusion HF Polymerase, 1x Phusion HF Buffer and 0.02 U/µL Phusion HF Polymerase and for reactions with GoTaq Hot-Start Polymerase, 1x Green Buffer, 2.5 mM MgCl2 and 0.025 U/µL GoTaq Hot-Start Polymerase were used. The reactions were performed in a total volume of 15 µL or 30 µL. The amplification was run with a touchdown PCR program: 95°C/2 min - [95°C/30 s; T1/30 s (T1 declining by 0.5°C every cycle) -; 72°C/30 s]x10 - [95°C/30 s; T2/30 s; 72°C/30 s]x35–72°C/5 min. T1 and T2 are specific annealing temperatures for different primer combinations (see Supplementary file 9). PCR cleanup was performed with 2.9 U/µL Exonuclease I (New England Biolabs) and 0.14 U/µL Shrimp Alkaline Phosphatase (rSAP, New England Biolabs) at 37°C for 5 min and heat inactivated at 85°C for 10 min. Sanger sequencing reactions were performed at the Genomics Service Unit (LMU).

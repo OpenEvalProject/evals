@@ -29,7 +29,7 @@
 
 ## Abstract
 
-CRAC channel regulator 2 A (CRACR2A) is a large Rab GTPase that is expressed abundantly in T cells and acts as a signal transmitter between T cell receptor stimulation and activation of the Ca 2+ -NFAT and JNK-AP1 pathways. CRACR2A has been linked to human diseases in numerous genome-wide association studies, however, to date no patient with damaging variants in CRACR2A has been identified. In this study, we describe a patient harboring biallelic variants in CRACR2A [paternal allele c.834 gaG> gaT (p.E278D) and maternal alelle c.430 Aga > Gga (p.R144G) c.898 Gag> Tag (p.E300*)], the gene encoding CRACR2A. The 33-year-old patient of East-Asian origin exhibited late onset combined immunodeficiency characterised by recurrent chest infections, panhypogammaglobulinemia and CD4+ T cell lymphopenia. In vitro exposure of patient B cells to a T-dependent stimulus resulted in normal generation of antibody-secreting cells, however the patient’s T cells showed pronounced reduction in CRACR2A protein levels and reduced proximal TCR signaling, including dampened SOCE and reduced JNK phosphorylation, that contributed to a defect in proliferation and cytokine production. Expression of individual allelic mutants in CRACR2A-deleted T cells showed that the CRACR2A E278D mutant did not affect JNK phosphorylation, but impaired SOCE which resulted in reduced cytokine production. The truncated double mutant CRACR2A R144G/E300* showed a pronounced defect in JNK phosphorylation as well as SOCE and strong impairment in cytokine production. Thus, we have identified variants in CRACR2A that led to late-stage combined immunodeficiency characterized by loss of function in T cells.
+CRAC channel regulator 2 A (CRACR2A) is a large Rab GTPase that is expressed abundantly in T cells and acts as a signal transmitter between T cell receptor stimulation and activation of the Ca2+-NFAT and JNK-AP1 pathways. CRACR2A has been linked to human diseases in numerous genome-wide association studies, however, to date no patient with damaging variants in CRACR2A has been identified. In this study, we describe a patient harboring biallelic variants in CRACR2A [paternal allele c.834 gaG> gaT (p.E278D) and maternal alelle c.430 Aga > Gga (p.R144G) c.898 Gag> Tag (p.E300*)], the gene encoding CRACR2A. The 33-year-old patient of East-Asian origin exhibited late onset combined immunodeficiency characterised by recurrent chest infections, panhypogammaglobulinemia and CD4+ T cell lymphopenia. In vitro exposure of patient B cells to a T-dependent stimulus resulted in normal generation of antibody-secreting cells, however the patient’s T cells showed pronounced reduction in CRACR2A protein levels and reduced proximal TCR signaling, including dampened SOCE and reduced JNK phosphorylation, that contributed to a defect in proliferation and cytokine production. Expression of individual allelic mutants in CRACR2A-deleted T cells showed that the CRACR2AE278D mutant did not affect JNK phosphorylation, but impaired SOCE which resulted in reduced cytokine production. The truncated double mutant CRACR2AR144G/E300* showed a pronounced defect in JNK phosphorylation as well as SOCE and strong impairment in cytokine production. Thus, we have identified variants in CRACR2A that led to late-stage combined immunodeficiency characterized by loss of function in T cells.
 
 ## Introduction
 
@@ -41,15 +41,311 @@ The human CRACR2A (formerly EFCAB4B) gene is located on chromosome 12. Associati
 
 ## Results
 
-## Case presentation and immunological work up
+### Case presentation and immunological work up
 
 We evaluated a 33-year-old male of East-Asian origin. He originally presented to gastroenterology services at the age of 19 years with chronic diarrhea. Following initial assessment, which included normal colonoscopy and negative coeliac screen, he was found to have severe panhypogammaglobulinaemia and was referred to clinical immunology for further investigations. On further questioning the patient reported a 5-year long history of recurrent lower respiratory tract infections requiring treatment with antibiotics. He also reported having a left lower lobe pneumonia at 15 years of age. He had no other significant infection history and reported being generally well during his childhood. His only other past medical history of note was appendicectomy at the age of 10 years. He had no history of developmental difficulties, dental, skin or any musculoskeletal abnormalities. He was an only child from non-consanguineous parents with no family history of PID. Shortly after presenting to immunology, he developed a left hip and iliac fossa pain and was found to have multiloculated left psoas abscess which required a computerized tomography (CT) guided drainage and prolonged antibiotic treatment. This infective episode was complicated by pulmonary embolism (incidental finding on a repeat CT scan) for which he was anticoagulated for a period of 6 months. He had no subsequent history of thromboembolic events. A detailed CT scan of his chest showed cylindrical bronchiectasis of the left lower lobe, lingua and R middle lobe. This appearance remains unchanged as shown on a repeat scan 11 years later in 2016 (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig1-v1.jpg)
+
+**Figure 1.:** (A) A computerized tomography scan of the chest showing area of cylindrical bronchiectasis at the basal segment of the left lower lobe. (B) TCR repertoire as assessed by T receptor spectraphenotyping. Data are representative of one independent assay. (C) Phytohaemagglutinin (PHA) and (D) anti-CD3 T cell proliferation. CPM (counts per minute). Data are representative of three independent assays.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) T-helper (Th) 1, Th2 and Th17 cell distribution among CD4+ T cells in the peripheral blood. Grey bars healthy controls (N = 6), blue bars patient (two separate evaluations). (B) Representative dot plot shows the gating strategy. Whole EDTA blood was stained with a combination of CD3-V500, CD4-BV421, CCR6-Pe, and CXCR3-Alexa-Fluoro 647.
+
 The initial immunological investigations showed profound panhypogammaglobulinaemia with drastically reduced IgG and undetectable IgA and IgM levels (Table 1). The basic lymphocyte profiling showed mild CD4+ T cell lymphopenia with adequate numbers of B and NK cells. Subsequent detailed phenotyping revealed reduced proportion of naïve T cells and seemingly adequate percentages of central and effector memory T cells. The proportion of TH1/TH2 and TH17 T cells was comparable to healthy controls (Figure 1—figure supplement 1) and TCR phenotyping showed a normal TCR repertoire (Figure 1B). The patient also had reduced proportion of class switched memory B cells (Table 1). Functional testing showed reduced T cell proliferation to both PHA and anti-CD3 stimulation (Figure 1C and D). Over the next 15 years, there was evidence of progressive CD4+ T cell and B cell lymphopenia. Interestingly, biopsy of his large bowel, which was performed in 2011 for investigation of intermittent diarrhoea, showed mild non-specific inflammatory changes, but also absence of the plasma cells.
+
+**Table 1.**
+ Immunological characteristics of patient with variants in EFCAB4B.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Date/year</th>
+      <th>2005</th>
+      <th>2011</th>
+      <th>2017</th>
+      <th>2019</th>
+      <th>2021 (Feb)</th>
+      <th>2021 (Nov)</th>
+      <th>Ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Total lymphocyte count</td>
+      <td>2,880</td>
+      <td>990</td>
+      <td>1,201</td>
+      <td>1,572</td>
+      <td>1,472</td>
+      <td>1,268</td>
+      <td>1000–2800 cells/µl</td>
+    </tr>
+    <tr>
+      <td>CD3+ T cells</td>
+      <td></td>
+      <td>2,505</td>
+      <td>733</td>
+      <td>891</td>
+      <td>990</td>
+      <td>952</td>
+      <td>846</td>
+      <td>700–1200 cells/µl</td>
+    </tr>
+    <tr>
+      <td>CD4+ T cell</td>
+      <td>Total</td>
+      <td>216</td>
+      <td>235</td>
+      <td>148</td>
+      <td>165</td>
+      <td>122</td>
+      <td>112</td>
+      <td>300–1400 cells/µl</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ CD45RA+ (naïve)%</td>
+      <td></td>
+      <td></td>
+      <td>20.92</td>
+      <td>12.65</td>
+      <td>25.5</td>
+      <td></td>
+      <td>14–65%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ CD45RA- (memory)%</td>
+      <td></td>
+      <td></td>
+      <td>42.34</td>
+      <td>47.04</td>
+      <td>42.9</td>
+      <td></td>
+      <td>15–52%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27-CD45RA- (memory effector) %</td>
+      <td></td>
+      <td></td>
+      <td>36.01</td>
+      <td>37.67</td>
+      <td>20.5</td>
+      <td></td>
+      <td>8–35%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ CD45RA-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2.64</td>
+      <td>11.1</td>
+      <td></td>
+      <td>0–22%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD25+ CD127- (Treg)%</td>
+      <td></td>
+      <td></td>
+      <td>0.73</td>
+      <td>1.6</td>
+      <td>2.9</td>
+      <td>3.5</td>
+      <td>3–10%</td>
+    </tr>
+    <tr>
+      <td>CD8+ T cells</td>
+      <td>Total</td>
+      <td>2080</td>
+      <td>475</td>
+      <td>738</td>
+      <td>840</td>
+      <td>772</td>
+      <td>689</td>
+      <td>200–900 cells/µl</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ CD45RA+ (naïve)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>17.69</td>
+      <td>31.3</td>
+      <td></td>
+      <td>1.5–65.5%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ CD45RA- (memory)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>25.16</td>
+      <td>19.1</td>
+      <td></td>
+      <td>3.5–28.6%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27- CD45RA- (memory effector)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>16.09</td>
+      <td>11.1</td>
+      <td></td>
+      <td>0.7–72.6%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27- CD45RA+ (effector)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>41.07</td>
+      <td>38.6</td>
+      <td></td>
+      <td>1.6–53%</td>
+    </tr>
+    <tr>
+      <td>CD19+ (B cells)</td>
+      <td>Total</td>
+      <td>245</td>
+      <td>102</td>
+      <td>73</td>
+      <td>77</td>
+      <td>87</td>
+      <td>71</td>
+      <td>100–500 cells/µl</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27- IgM+ IgD + (naïve) %</td>
+      <td></td>
+      <td></td>
+      <td>63.1</td>
+      <td>89.18</td>
+      <td>67.7</td>
+      <td>78</td>
+      <td>44–84%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD24hi CD38hi (Transitional) %</td>
+      <td></td>
+      <td></td>
+      <td>6.7</td>
+      <td>10.3</td>
+      <td>8.2</td>
+      <td>11</td>
+      <td>2–14%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ IgM + IgD+ (non-switched) %</td>
+      <td></td>
+      <td></td>
+      <td>15.4</td>
+      <td>3.69</td>
+      <td>22.5</td>
+      <td>11</td>
+      <td>5–32%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CD27+ IgM- IgD- (switched memory) %</td>
+      <td></td>
+      <td></td>
+      <td>14.7</td>
+      <td>7.15</td>
+      <td>5.7</td>
+      <td>5</td>
+      <td>5–33%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Plasmablasts %</td>
+      <td></td>
+      <td></td>
+      <td>0.2</td>
+      <td>0.4</td>
+      <td>1.1</td>
+      <td>1</td>
+      <td>0.2–5%</td>
+    </tr>
+    <tr>
+      <td colspan="2">CD56+ CD16+ (NK cells)</td>
+      <td>144</td>
+      <td>139</td>
+      <td>290</td>
+      <td>486</td>
+      <td>429</td>
+      <td>340</td>
+      <td>90–600 cells/µl</td>
+    </tr>
+    <tr>
+      <td colspan="7">Immunoglobulin profile</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgG</td>
+      <td></td>
+      <td>1.4</td>
+      <td>8.4</td>
+      <td>10.3</td>
+      <td>8.3</td>
+      <td>9.9</td>
+      <td></td>
+      <td>6–16 g/l</td>
+    </tr>
+    <tr>
+      <td>IgA</td>
+      <td></td>
+      <td>&lt; 0.06</td>
+      <td>&lt; 0.06</td>
+      <td>&lt; 0.06</td>
+      <td>&lt; 0.06</td>
+      <td>&lt; 0.06</td>
+      <td></td>
+      <td>0.8–4 g/l</td>
+    </tr>
+    <tr>
+      <td>IgM</td>
+      <td></td>
+      <td>&lt; 0.05</td>
+      <td>&lt; 0.05</td>
+      <td>&lt; 0.05</td>
+      <td>&lt; 0.05</td>
+      <td>&lt; 0.05</td>
+      <td></td>
+      <td>0.5–2 g/l</td>
+    </tr>
+    <tr>
+      <td>IgE</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt; 0.2</td>
+      <td></td>
+      <td></td>
+      <td>1–120 ku/l</td>
+    </tr>
+  </tbody>
+</table>
 
 Following the initial assessment, the patent was given a provisional diagnosis of common variable immunodeficiency (CVID) and treated with regular intravenous immunoglobulin (IVIG) replacement therapy. His clinical progress since the diagnosis has been uncomplicated. His chronic diarrhoea resolved following commencement of IVIG and the ongoing treatment with IVIG has resulted in excellent control of respiratory infections.
 
-## A rare biallelic variants in CRACR2A identified by exome sequencing
+### A rare biallelic variants in CRACR2A identified by exome sequencing
 
 The patient was consented for genetic testing and whole-exome sequencing was performed. Full details regarding candidate variant selection are provided in methods. Three potentially damaging rare variants were identified in CRACR2A GRCh37 12:3715799–3873985 ENSG00000130038 ENST00000440314 (c.430A > G; p.R144G, c.898G > T; p.E300*, exons 6/20 and 10/20), which were maternal and c.834G > T; p.E278D in exon 9/20 on the other allele. Only c.834G > T is present in the gnomAD database, though it is considered rare (heterozygous only; 0.00095 in East Asian). All three amino acids are highly conserved in other species.
 
@@ -61,7 +357,7 @@ The variants were confirmed in the genomic DNA by Sanger sequencing the proband 
 
 To check whether the mutant proteins are expressed, we performed immunoblot analyses using T cells from patient and healthy control. Peripheral blood mononuclear cells (PBMCs) harvested from the patient and healthy control were stimulated with plate-coated anti-CD3 and anti-CD28 antibodies for 48 hr, following which they were further expanded for a further 4 days and then harvested for making cellular lysates. Western blot analysis using anti-CRACR2A antibodies detected reduced amounts of only the higher molecular weight band (corresponding to the long isoform) in patient samples (Figure 2D, left panel). The antibody was targeting the N-terminal 160 amino acids of CRACR2A, and hence it should detect the ~30 KDa truncated form of the p.E300* variant, if expressed. However, we could not detect presence of any band at ~30 KDa, suggesting possibly degradation of the truncated form. To check for CRACR2A transcript levels, we used primers that were common to both isoforms, however, we detected pronounced reduction in CRACR2A transcript levels from patient samples (Figure 2D, right panel). Further, in healthy control samples, expression of CRACR2A transcripts increased after stimulation with PMA and ionomycin by more than two-fold, but it was not upregulated in patient T cells. These data suggest possible nonsense-mediated mRNA decay for CRACR2A transcripts.
 
-## Patient B cells exhibit intact plasma cell generation
+### Patient B cells exhibit intact plasma cell generation
 
 Since the patient exhibited profound panhypogammaglobulinaemia and a relative decline in memory B and plasma cell populations, we next checked whether patient B cells were functional. To test if the panhypogammaglobulinaemia is due to an intrinsic B cell defect, we set up an in vitro culture system with a T cell-dependent (TD) stimulus that enables the generation of mature plasma cells from primary B cells (Figure 3A; Cocco et al., 2012). The capacity of the patient’s B cells to differentiate into plasma cells was comparable to healthy controls, as judged by the acquisition of CD38 and CD138 surface expression, which is associated with the transition to an antibody-secreting state (Figure 3B). Furthermore, assessment of immunoglobin levels in cell culture showed adequate production of IgM and IgG (Figure 3C), suggesting that the failure of antibody production in this case might be secondary to inadequate in vivo T cell help.
 
@@ -69,17 +365,33 @@ Since the patient exhibited profound panhypogammaglobulinaemia and a relative de
 
 **Figure 3.:** (A) Schematic representation of the culture conditions used to assess plasma cell differentiation in vitro. PBs – Plasmablasts, PCs – Plasma cells (B) Representative flow plots showing CD38 and CD138 expression profile following TD stimulation with F(ab’)two anti-IgG/M and CD40L. Percentages are indicated within individual quadrants. Data are representative of 2 independent assays. (C) Secreted levels of IgM (left) and IgG (right) from the cells in (B) at indicated time points. HC1-5 (Healthy control) represents data from five independent healthy donor cells.
 
-## Patient T cells show reduced cytokine expression due to decreased Ca2+ influx and JNK activation
+### Patient T cells show reduced cytokine expression due to decreased Ca2+ influx and JNK activation
 
 Since the patient B cells produced antibodies in vitro, in response to TD antigen, we surmised that panhypogammaglobulinaemia is likely due to defect in T cell function. Previously we showed that Cracr2a KO mice had a defect in effector of T cell functions (Woo et al., 2018). Hence, we further analyzed phenotypes of patient T cells, including TCR-proximal signaling events and cytokine production. Patient CD4+ cells produced less IFN-γ than the ones isolated from a representative healthy donor (Figure 4A). We extended our findings using cells from multiple healthy donors and different batches of the patient cells by checking expression of IFN-γ, IL-2, and TNF using quantitative RT-PCR (Figure 4B) and ELISA (Figure 4C). Expression of all these cytokines was impaired in patient T cells compared to control T cells derived from multiple different healthy donors. Since CRACR2A is known to interact with ORAI1 and STIM1, to regulate SOCE and JNK phosphorylation (Srikanth et al., 2010a; Srikanth et al., 2016), we measured SOCE after anti-CD3 cross-linking as well as passive depletion of the ER Ca2+ stores using thapsigargin, a SERCA blocker. In both these analyses, patient cells showed significant reduction in SOCE, when compared to those from representative healthy controls (Figure 4D and E). Further, patient T cells also showed a profound defect in JNK phosphorylation upon TCR cross-linking (Figure 4F). To confirm that reduced SOCE in patient cells is not due to altered expression of CRAC channel subunits, we checked expression of ORAI1 and STIM1 in lysates of T cells from healthy controls and patient. Expression of ORAI1 and STIM1 were similar between control and patient T cells as judged by immunoblotting as well as real-time quantitative RT-PCR measurements (Figure 4—figure supplement 1). Together, these results show the conserved role of CRACR2A in effector T cell responses by regulating the Ca2+ and JNK pathways in human effector T cells, consistent with the previous finding in murine T cells (Woo et al., 2018).
 
-## Mutations of E278D and R144G/E300* lead to reduced cytokine production in T cells
+![Figure 4.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative flow plots showing expression of IFN-γ in human PBMCs from a healthy donor and the patient. PBMCs were stimulated with anti-CD3 and anti-CD28 antibodies for 48 hr and cultured for further 4 days in the presence of IL-2 before re-stimulation with PMA plus ionomycin for 5 hr for cytokine analysis. Cells were gated for CD4+ T cells. (B) Quantitative mRNA expression analysis (± s.d.m.) of indicated cytokines from human PBMCs (cultured as mentioned above) with or without stimulation with PMA plus ionomycin for 5 hr. (C) Levels of IL-2 and TNF in human PBMCs from culture supernatants of cells stimulated as described above (B) were determined by ELISA. (D) Representative traces showing averaged (± SEM) SOCE responses from healthy control and patient PBMCs (cultured as indicated in A), after transient stimulation with anti-CD3 antibody cross-linking, or ionomycin (0.5 µM) in the presence of external solution containing 2 mM Ca2+ (left) as indicated. Bar graphs show baseline subtracted ratio values for anti-CD3 antibody cross-linking or ionomycin (average± SEM) from six independent experiments (right). (E) Representative traces showing averaged (± SEM) SOCE responses from healthy control and patient PBMCs (cultured as indicated in A), after store-depletion with thapsigargin (1 µM) stimulation in Ca2+-free Ringer’s solution. SOCE was measured by addition of 2 mM Ca2+-containing Ringer’s solution as indicated (left). Bar graph shows baseline subtracted ratio values at the peak of SOCE (average± SEM) from four independent experiments (right). (F) Phosphorylated JNK levels in CD4+ T cells from healthy control and patient PBMCs (cultured as indicated in A), stimulated with anti-CD3 antibody for indicated times. Bar graphs show average± SEM from three independent experiments. ** p < 0.005, *** p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative immunoblot showing expression of indicated proteins in PBMC lysates from control and patient. (B) Relative transcript expression of indicated genes from PBMCs of healthy control and patient using real-time quantitative RT-PCR measurements.
+
+### Mutations of E278D and R144G/E300* lead to reduced cytokine production in T cells
 
 To gain insight into the phenotypes of mutants derived from individual CRACR2A alleles in the patient, we first cloned the mutant cDNA in a lentiviral vector. When overexpressed in HEK293 cells, E278D and R144G/E300* mutants migrated at the expected molecular weights of ~90 and ~ 30 kDa, respectively (Figure 5—figure supplement 1A). To check their expression without interference from endogenous CRACR2A proteins, we generated CRACR2A KO Jurkat T cells using the lentivirus-based CRISPR/Cas9 system and found that sgRNA#1 and #2 had a great deletion efficiency (Figure 5—figure supplement 1B). When we stably expressed E278D and R144G/E300* mutants in CRACR2A KO Jurkat cells (sgRNA#2), these mutants migrated at their expected molecular weights, similarly with HEK293 cells. Notably, even after repeated transduction the expression of R144G/E300* mutant protein was much lower than WT or E278D CRACR2A, suggesting that the transcripts of this double mutant may be unstable, similar to our observation with patient cells (Figure 2D).
 
 Similar to patient T cells, CRACR2A KO Jurkat T cells showed reduced IL-2 production (Figure 5A). Stable expression of WT CRACR2A in these cells substantially rescued the IL-2 production defect, validating that the decrease was caused due to loss of CRACR2A. However, expression of E278D or R144G/E300* mutants showed very marginal rescue of IL-2 expression in CRACR2A KO Jurkat T cells under the same condition. We also validated these results with primary human CD4+ cells. We found that transduction with lentiviral vectors encoding sgRNA to delete CRACR2A resulted in reduced IFN-γ production in primary cells, which was completely rescued by expression of WT CRACR2A (Figure 5B). However, both E278D and R144G/E300* mutants did not rescue cytokine production in the KO primary T cells, similar to our observations with Jurkat T cells. Exogenous expression of WT CRACR2A in primary T cells from healthy donors (in the presence of WT CRACR2A) slightly enhanced IFN-γ production while the mutants did not (Figure 5C). On the contrary, overexpression of the R144G/E300* showed significant reduction in cytokine production, suggesting that this mutant may impair function of endogenous CRACR2A. Overall, our cytokine analysis suggested that expression of mutants derived from each of the CRACR2A alleles could not rescue cytokine production in CRACR2A KO T cells.
 
-## Mutations of E278D and R144G/E300* lead to reduced Ca2+ influx and JNK activation
+![Figure 5.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative flow plots showing expression of IL-2 in control or CRACR2A KO Jurkat T cells stably expressing FLAG-tagged WT CRACR2A, CRACR2AE278D (E278D), or CRACR2AR144G/E300* (DM) after stimulation with PMA plus ionomycin for 16 hr (left). Bar graph shows means ± s.e.m. of pooled technical replicates from two independent experiments (right). (B) Representative flow plots showing expression of IFN-γ in primary human CD4+ T cells transduced with lentiviruses encoding CRACR2A-targeting sgRNA and those encoding cDNAs of WT or indicated mutants of CRACR2A after stimulation with anti-CD3 and anti-CD28 antibodies for 5 hr (left). Bar graph (right) shows means ± s.e.m. of pooled technical replicates from three independent experiments. (C) Representative flow plots showing expression of IFN-γ in primary human CD4+ T cells purified from healthy donors and transduced with lentiviruses encoding cDNAs for WT or indicated mutant of CRACR2A after stimulation with anti-CD3 and anti-CD28 antibodies for 5 hr (left). Bar graph (right) shows means ± s.e.m. of pooled technical replicates from three independent experiments. * p < 0.05, *** p < 0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72559/elife-72559-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Lysates of HEK293 cells stably expressing N-terminally FLAG-tagged WT or indicated mutants of CRACR2A were immunoblotted with anti-FLAG antibody. (B) Representative immunoblot showing endogenous CRACR2A expression in lysates of Jurkat T cells expressing control sgRNA or three different CRACR2A-targeting sgRNAs (# 1, #2, and #3). (C) Lysates of CRACR2A KO Jurkat T cells (sgRNA#2) stably expressing N-terminally FLAG-tagged WT or mutant CRACR2A were immunoblotted for detection of indicated proteins. β-actin – loading control.
+
+### Mutations of E278D and R144G/E300* lead to reduced Ca2+ influx and JNK activation
 
 We next checked whether individual mutants could rescue TCR-proximal events in CRACR2A KO T cells. Earlier we showed that loss of CRACR2A impaired TCR stimulation-induced SOCE and JNK phosphorylation in T cells (Srikanth et al., 2016). Accordingly, CRACR2A KO Jurkat T cells showed reduced Ca2+ entry triggered by TCR stimulation (Figure 6A). Expression of WT CRACR2A fully rescued the decreased level of Ca2+ entry in KO cells while that of R144G/E300* and E278D mutants did not. We observed similar results when SOCE was triggered by passive depletion of intracellular Ca2+ stores using thapsigargin (Figure 6B). Interestingly, these two mutants behaved differently in activation of the JNK signaling pathway. While WT and the E278D mutant rescued phosphorylation of JNK, R144G/E300* mutant failed to do so (Figure 6C). These results indicate that while R144G/E300* mutant has a defect in both Ca2+ entry and JNK activation due to truncation of the coiled coil, proline-rich and Rab GTPase domains, E278D mutant has a selective defect in Ca2+ signaling.
 
@@ -87,7 +399,7 @@ We next checked whether individual mutants could rescue TCR-proximal events in C
 
 **Figure 6.:** (A) Representative traces showing averaged SOCE from control (48 cells) or CRACR2A-KO Jurkat T cells (KO) transduced with an empty vector (55 cells) or those encoding FLAG-tagged WT CRACR2A (45 cells), CRACR2AE278D (E278D, 40 cells), or CRACR2AR144G/E300* (DM, 50 cells) mutants (left). Cells were stimulated with anti-CD3 antibodies, followed by ionomycin treatment in the presence of external solution containing 2 mM Ca2+. Bar graphs show averaged baseline subtracted peak SOCE (± s.e.m.) from anti-CD3 antibody and ionomycin treatments, from three independent experiments (right). (B) Representative traces showing averaged SOCE induced by thapsigargin (TG) treatment from control (52 cells) or CRACR2A-KO Jurkat T cells (KO) transduced with empty vector (46 cells) or those encoding FLAG-tagged WT CRACR2A (49 cells), CRACR2AE278D (E278D, 51 cells), or CRACR2AR144G/E300* (DM, 50 cells) mutants (top). Cells were stimulated with thapsigargin in Ca2+-free solution to deplete the intracellular stores and exposed to external solution containing 2.0 mM Ca2+. Bar graphs below show averaged baseline subtracted SOCE levels (± s.e.m.) at the peak (center) or later time point (sustained – 900 s, bottom) from three independent experiments. (C) Phosphorylated JNK levels in control or CRACR2A KO Jurkat T cells stably expressing WT and indicated mutants of CRACR2A, stimulated with anti-CD3 antibody for indicated times. Graphs show average± SDM from three independent experiments. * p < 0.05, ** p < 0.005, *** p < 0.0001.
 
-## CRACR2AR144G/E300* has defect in the interaction with downstream regulators and shows abnormal cytoplasmic distribution
+### CRACR2AR144G/E300* has defect in the interaction with downstream regulators and shows abnormal cytoplasmic distribution
 
 The C-terminal Rab GTPase domain of CRACR2a contains the conserved residues required for GTP binding and hydrolysis as well as a prenylation site for membrane anchoring (Figure 2C). The N-terminal EF-hand motif and coiled-coil domains are involved in sensing intracellular Ca2+ levels and stabilizing ORAI1-STIM1 interaction (Srikanth et al., 2010a). Also, the longer isoform, CRACR2A, which localizes to intracellular vesicles, translocates to the immunological synapse, and interacts with a signaling adaptor molecule, Vav1, through its proline-rich domain (PRD) (Srikanth et al., 2016).
 
@@ -111,13 +423,667 @@ In this study, we performed extensive characterization of CRACR2A variants and c
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CRACR2A</td>
+      <td>NCBI</td>
+      <td>Gene ID: 84,766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>Thermo fisher Scientific</td>
+      <td>Cat# 18265017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat E6-1 T cells</td>
+      <td>ATCC</td>
+      <td>Not tested for mycoplasma</td>
+      <td>Cat# TIB-152</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Not tested for mycoplasma</td>
+      <td>Cat# CRL-3216</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>CD40L-expressing L cell fibroblasts</td>
+      <td>Diehl et al., 2008</td>
+      <td></td>
+      <td>Irradiated at 50 Gy for 50 minutes prior to use</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>M2-10B4 bone marrow stromal cells</td>
+      <td>Lemoine et al., 1988</td>
+      <td></td>
+      <td>Irradiated at 57 Gy for 57 minutes prior to use</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Primers for plasmid construction</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo-sapiens)</td>
+      <td>Primary human peripheral blood mononuclear cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Isolated from the patient and healthy controls</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Phospho JNK (mouse monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 9,255</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human STIM1(rabbit)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 5,668 S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His-tag(rabbit)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 12,698 S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG tag(mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# F3040</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ORAI1(rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# AB9868</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vav1(rabbit)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>Cat# 2,502</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin(mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-47778</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CD3 antibody (mouse monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Clone OKT-3</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 antibody (mouse monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Cat. #: BE0921Clone CD28.2</td>
+      <td>1 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4-FITC(mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone OKT-4</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IFN-gama-PE-Cy7</td>
+      <td>eBioscience</td>
+      <td>Clone 45.B3</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ant-IL2-PE</td>
+      <td>eBioscience</td>
+      <td>Cat# MQ1-17H12</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,CD19-BV421(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 562,440Clone HIB19</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD27-PE (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: No:555,441Clone: M-T271</td>
+      <td>FACS20 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,IgD-FITC(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 561,490Clone IA6-2</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,IgM-Perc-cy5.5(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 561,285Clone G20-R7</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD24-FITC (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 555,427Clone ML-5</td>
+      <td>FACS20 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,CD38-Pecy7(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 335,825CloneHB-7</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,CD3-V500(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 561,416Clone UCHT-1</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD4-BV421(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 562,424Clone RPA-T4</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD25-Pecy7monoclonal</td>
+      <td>BD</td>
+      <td>Cat. #: 335,824Clone 2A3</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD127-PrcP Cy5.5(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 560,551Clone HIL-7R-M21</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, FoxP3-Alexa 488(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 566,526Clone 2632/E7</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human, CD196-PE(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 559 562Clone 11A9</td>
+      <td>FACS10 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human,CD-183-APC(mouse monoclonal)</td>
+      <td>BD</td>
+      <td>Cat. #: 550,967</td>
+      <td>FACS20 μl/test</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal F(ab′)two goat anti-human IgM/IgG/IgA</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 109-006-129</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD138-APC(mouse monoclonal)</td>
+      <td>Miltenyi Biotech</td>
+      <td>Cat. #: 130-117-395</td>
+      <td>FACS2 μl/test</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FGllF</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmCherry-N1</td>
+      <td>Clontech</td>
+      <td>Clontech plasmid#632,523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid #12,259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid #12,260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCas9-blasticidin</td>
+      <td>Addgene</td>
+      <td>Addgene plasmid #52,962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiguide-puro_hCRACR2Asg#1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiguide-puro_hCRACR2Asg#2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiguide-puro_hCRACR2Asg#3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiguide-puro_hORAI1sg</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FG11F CRACR2A WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FG11F CRACR2AE278D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FG11F CRACR2AR144G</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FG11F CRACR2AR144G,E300*</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Details in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SureSelect XT Human All Exon V5</td>
+      <td>Agilent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 6_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATGATTCCTGGCAGGTGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 6_R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ATTCCAGTGCAGGGACCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 9_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGCCCTGATGTTGAGTAGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 9_R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GTGAATGGCAGGGAAAGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 10_F</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AAACAAGGTGAGGCCAGGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRACR2AExon 10_R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>AGCCCAAATCCTCTTTTCACAG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-2</td>
+      <td>Roche</td>
+      <td>Cat. #: HIL2-RO</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-21</td>
+      <td>Peprotech</td>
+      <td>Cat. #: 200–21</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-2</td>
+      <td>Peprotech</td>
+      <td>Cat# 200–02</td>
+      <td>20 units/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>aCD3 plates</td>
+      <td>Corning</td>
+      <td>Cat. #:354,725</td>
+      <td>10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>B cell isolation kit</td>
+      <td>Miltenyi Biotech,</td>
+      <td>Cat. #:130-091-151</td>
+      <td>100 U/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Blood kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #:61,104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IgG ELISA Quantitation Set</td>
+      <td>Bethyl Laboratories Inc,</td>
+      <td>Cat. #: E80-104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IgM ELISA Quantitation Set</td>
+      <td>Bethyl Laboratories Inc,</td>
+      <td>Cat. #: E80-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MagniSort human naïve CD4+ T cell enrichment kit</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat. #: 8804-6814-74</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FOXP3/Transcription Factor staining Buffer set</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat. #: 2229155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PHA-L</td>
+      <td>Sigma</td>
+      <td>Cat. #:L-4144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3HThymidine</td>
+      <td>Perkin Elmer</td>
+      <td>Cat. #: 027001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LymphoPrep</td>
+      <td>Axis Shield</td>
+      <td>Cat. #:1114547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-AAD-PerCP-Cy5</td>
+      <td>BD</td>
+      <td>Cat. #: 559,925</td>
+      <td>FACS5 μl/test</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura 2-AM</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat# F1221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A</td>
+      <td>Thermofisher Scientific</td>
+      <td>Cat# 00-4506-51</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 80055–474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 5.00582.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 407,951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# TR-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Invivogen</td>
+      <td>Cat# ant-pr-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>Invivogen</td>
+      <td>Cat# ant-bl-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-Lysine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A003E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fixable Viability Dye eFluor 780</td>
+      <td>eBioscience</td>
+      <td>Cat# 65-0865-14</td>
+      <td>1 μl/ml of cells</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10</td>
+      <td>TreeStar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slidebook software</td>
+      <td>Intelligent Imaging Innovations, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro</td>
+      <td>Originlab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fluoview FV10i Confocal Microscope</td>
+      <td>Olympus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fluoview software</td>
+      <td>FlowJo, LLC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Exome sequence analysis (various)</td>
+      <td></td>
+      <td></td>
+      <td>Please see methods section</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LAS-3000 LCD camera</td>
+      <td>FujiFilm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECM 830 electroporator</td>
+      <td>BTX</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD Fortessa flow cytometer</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cytoflex LX flow cytometer</td>
+      <td>Beckman Coulter</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiSeq 3,000</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Ethical approval for this study was obtained from Leeds East Yorkshire Research ethics Committee (18/YH/0070). Written consent to conduct and publish this study was obtained from all participants.
 
-## Exome sequence preparation
+### Exome sequence preparation
 
 Genomic DNA was purified from whole blood using QIAamp DNA Blood kit (Qiagen) with quality and concentration assayed using a TapeStation (Agilent). Exome sequence data was produced by batch sequencing with other non-related samples. Samples were sonicated using a Covaris E220 Focused-ultrasonicator to fragment the DNA to a median size of approximately 250–300 bp. Libraries were generated using Agilent SureSelect XT Human All Exon V5, using a standard protocol, receiving a unique index sequence and were then pooled to form equimolar pools. These were sequenced on a 150 bp paired end Illumina HiSeq 3,000 (Illumina, San Diego, CA, United States) with an average depth of coverage of x30.
 
-## Candidate variant selection
+### Candidate variant selection
 
 Exome sequences were trimmed and checked for quality control using CutAdapt (Andrews, 2010) and FastQC (Andrews, 2010) via Trim-galore (Krueger, 2015). Reads were aligned to GrCh37 using BWA-MEM (Li and Durbin, 2009). GATKv3 best practices were applied for genomic analysis. Reads were sorted and marked with Picard SortSam and MarkDuplicates (Broad Institute), respectively. The read alignments were readjusted for optimal local alignment using IndelRealigner (GATK), Base Quality Score Recalibration (GATK) was used to estimate base call accuracy by detecting systematic sequencing errors, followed by (GATK) PrintReads. HaplotypeCaller was used to produce gVCFs via local re-assembly of haplotypes. GenotypeGVCFs (GATK) was used for joint genotyping with other non-related samples and in-house controls for an analysis group size of 34 (Auwera et al., 2018). Variant Quality Score Recalibration (GATK) was used to filter out probable artifacts from the callset. A total of 719,868 variants were present for the combined cohort, with 49,891 of these variants occurring in the proband sample.
 
@@ -129,46 +1095,46 @@ The top gene candidate, calcium release activated channel regulator 2 A (CRACR2A
 
 Two candidate variants were also identified in UNC13D, a gene reported as causal for the recessive PID Familial hemophagocytic lymphohistiocytosis syndromes (as reported in Genomics England panelapp). However, one variant was present at ~1% in the patient genetic ancestry population and not considered as potentially damaging. Variant 1: ENST00000207549.4 p.Arg411Gln, Polyphen - benign, SIFT – tolerated. East Asian allele frequency 0.008. gnomAD link 1; variant 2: East Asian allele frequency 0. gnomAD link 2 ENST00000207549.4 HGVSpc.753 + 1 G> T, pLoF - high-confidence, East Asian allele frequency 0, gnomAD link 2. No other candidate biallelic variants were considered causal bases on annotation or variant effect. No dominant gain-of-function variants were considered as causal candidates.
 
-## Chemicals and antibodies
+### Chemicals and antibodies
 
 Fura 2-AM was purchased from Invitrogen (Carlsbad, CA). Thapsigargin, PMA (Phorbol 12-myristate 13-acetate), and ionomycin were purchased from EMD Millipore. Brefeldin A was purchased from eBioscience. Antibody for detection of CRACR2A (15206–1-AP) was purchased from Proteintech. Antibodies for detection of Vav1 (2502), STIM1 (5668) and His tag (12,698 S) were purchased from Cell Signaling Technologies. Antibodies for detection of FLAG tag (F3040) and ORAI1 (AB9868) were purchased from Millipore Sigma. Antibody for detection of β-actin (sc-47778) was obtained from Santa Cruz Biotechnology.
 
-## Plasmids and cells
+### Plasmids and cells
 
 Full-length cDNA of human CRACR2A-a (NCBI Reference Sequence: NM_001144958.1) was cloned into a lentiviral vector, FGllF (kind gift from Dr. Dong Sun An, UCLA) with a N-terminal FLAG tag as previously described (Srikanth et al., 2010a; Srikanth et al., 2016). Various mutants of CRACR2A-a were generated by PCR amplification and site-directed mutagenesis using primers described in Supplementary file 1. All the clones were verified by sequencing. Myc-ORAI1 and Myc-STIM1 plasmids had been described previously (Gwack et al., 2007; Srikanth et al., 2019). Vav1-GFP clone was purchased from Addgene. HEK293 and Jurkat E6-1 T cell lines were obtained from American Type Culture Collection Center (ATCC, Manassas, VA).
 
-## Human B cell culture, staining, and analysis
+### Human B cell culture, staining, and analysis
 
 PBMCs were isolated from peripheral blood by density dependent centrifugation with Lymphoprep (Axis Shield, Norway). Total B cells were isolated by negative selection with a memory B cell isolation kit according manufacturer’s instructions (Miltenyi Biotech, USA). B cells were cultured as previously described (Cocco et al., 2012) using gamma-irradiated CD40L-L cells and 2 µg/ml F(ab′)two goat anti-human IgM/IgG/IgA (Jackson ImmunoResearch) supplemented with 20 U/ml IL-2 (Roche) and 50 ng/ml IL-21 (Peprotech) as the initial T-depedent stimulus. Cells were monitored for changes in cell surface antigen expression using anti-CD38-APC-Cy7 (HB-7; BD Biosciences), anti-CD138-APC (44F9; Miltenyi Biotec), as well as 7-AAD-PerCP-Cy5 (BD Biosciences) to identify live cells. Flow cytometry was performed using a or a CytoFLEX S or LX (Beckman Coulter). Analysis was performed using FlowJo v10 (TreeStar). Supernatants were collected at day 6 and day 13 from the differentiation assays and assessed for Ig levels using human IgM ELISA Quantitation Set (E80-100) or Human IgG ELISA Quantitation Set (E80-104) (Bethyl Laboratories Inc, USA) according to manufacturer’s instructions on a Berthold 96-well plate reader. ELISA absorbance values were analyzed at 450 nm and Ig concentrations calculated from standard curves.
 
-## Generation of CRACR2A-KO Jurkat T cells using CRISPR-Cas9 system
+### Generation of CRACR2A-KO Jurkat T cells using CRISPR-Cas9 system
 
 To generate lentiviruses for transduction, HEK293T cells were transfected with plasmid(s) encoding sgRNA and packaging vectors (pMD2.G and psPAX2 – from Addgene) using calcium phosphate transfection method. Cas9 encoding lentivirus was generated using the same technique. Culture supernatants were harvested at 48 and 72 hr post transfection and used for infection (50% of cas9-encoding virus +50% of sgRNA-encoding virus) of Jurkat T cells together with polybrene (8 µg/ml) using the spin-infection method. Cells were selected with puromycin (1 µg/ml) and blasticidin (5 µg/ml) 48 hrs post infection. The sgRNA sequences are described in Supplementary file 1.
 
-## Single-cell Ca2+ imaging and confocal microscopy
+### Single-cell Ca2+ imaging and confocal microscopy
 
 Jurkat or human PBMCs were loaded at 1 × 106 cells/ml with 1 μM Fura 2-AM for 30 min at 25 °C and attached to poly-D-lysine-coated coverslips. Intracellular [Ca2+] measurements were performed using essentially the same methods as previously described (Srikanth et al., 2010b). Confocal laser scanning microscopy was performed using Fluoview FV10i Confocal Microscope (Olympus), images were captured with a 60 x oil objective. Images were processed for enhancement of brightness or contrast using Fluoview software.
 
-## Immunoprecipitation and immunoblotting
+### Immunoprecipitation and immunoblotting
 
 For immunoprecipitation, 6 x His-tagged ORAI1 and 6xHis-tagged STIM1 or Vav1-GFP together with empty vector or FLAG-tagged WT CRACR2A-a, FLAG-tagged CRACR2AE278D or CRACR2AR144G, E300* was transfected into HEK293T cells. Transfected cells (2 × 107) were lysed in lysis buffer (20 mM Tris-Cl, 2 mM EDTA, 135 mM NaCl, 10% (vol/vol) glycerol, 0.5% Igepal CA-630, protease inhibitor mixture, pH 7.5) and centrifuged at 100,000 x g for 1 hr before preclearing with protein G-Sepharose. Lysates were immunoprecipitated with anti-FLAG antibody-conjugated resin for 6 hr. Immunoprecipitates were washed five times in lysis buffer and analyzed by immunoblotting. For detection of CRACR2A-a, 5 × 106 HEK293 or CRACR2A-deficient Jurkat T cells stably expressing empty vector, FLAG-tagged WT CRACR2A-a, CRACR2AE278D, or CRACR2AR144G, E300* were lysed in in RIPA buffer (10 mM Tris-Cl pH 8.0, 1% Triton X-100, 0.1% SDS, 140 mM NaCl, 1 mM EDTA, 0.1% sodium deoxycholate and protease inhibitor cocktail [Roche]) and centrifuged to remove debris. For immunoblot analyses, lysates were separated on 10% SDS-PAGE and proteins were transferred to nitrocellulose membranes and subsequently analyzed by immunoblotting with relevant antibodies. Chemiluminescence images were acquired using an Image reader LAS-3000 LCD camera (FujiFilm).
 
-## Human T cell culture, staining, and analysis
+### Human T cell culture, staining, and analysis
 
 Peripheral blood mononuclear cells (PBMCs) were obtained under federal and state regulations from the CFAR Virology core Laboratory at UCLA that were prepared from buffy coats from healthy, unidentified adult donors using Ficoll-PAQUE gradients. PBMCs from healthy control and patient were activated for 48 hr on a plate coated with 10 µg/ml of anti-CD3 antibody (OKT3, Bio X Cell) and cultured in T cell media (DMEM containing 20% fetal bovine serum and 1% Pen-Strep) supplemented with 5 µg/ml of anti-CD28 antibody (Bio X cell), and 20 U/ml IL-2 (Peprotech) for ThN differentiation. The cells were expanded for a further 4 days with IL-2 and on day 6, cells were extensively washed and activated with 20 nM of PMA, 1 µM of ionomycin, and Brefeldin A (3 µg/ml) for 5 hr, surface stained with anti-CD4-FITC, and intracellularly stained with anti-IFN-γ-PE. CD4-FITC-positive cells were gated for analysis. For reconstitution of CRACR2A-a in CRACR2A-a-deficient PBMCs, naive CD4+ T cells were enriched by magnetic sorting from single-cell suspensions using MagniSort naive CD4+ T cell enrichment kit (catalog # 8804-6814-74) according to manufacturer’s instructions (ThermoFisher Scientific). Cells were activated and cultured as described above. Cells were infected with lentiviruses encoding cas9 together with those encoding sgRNAs targeting CRACR2A-a on day 1 and with lentiviruses encoding WT CRACR2A-a, CRACR2AE278Dor CRACR2AR144G, E300* together with empty vector on day 2. 48 hr after infection, cells were selected with 1 µg/ml of puromycin and 5 µg/ml blasticidin for 16 hr and then expanded for further 2 days with fresh media. On day 7, cells were stimulated with 10 µg/ml of anti-CD3 antibody, 5 µg/ml of anti-CD28 antibody and Brefeldin A (3 µg/ml) for 5 hr, intracellularly stained with anti-IFN-γ-PE (4 S.B3). For cytokine staining, 1 × 106 Jurkat T cells were fixed with 4% p-formaldehyde for 15 mins, permeabilized with 0.5% saponin, blocked and stained with anti-IL-2-PE antibody from Thermofisher Scientific. For flow cytometry, the following human specific antibodies were used: CD4-FITC (OKT4, eBioscience), IFN-γ-PE-Cy7 (45.B3, eBioscience) and IL-2-PE (MQ1-17H12, eBioscience). Data were acquired using FACSCalibur (Becton Dickinson) or BD LSRFortessa cell analyzers and analyzed using FlowJo software (Tree Star). ELISA was performed on human PBMCs harvested from healthy control and patient for detection of IL-2 (ThermoFisher, #88-7025-88) and TNF (ThermoFisher, # 88-7324-88).
 
-## T-(Helper) cell phenotyping
+### T-(Helper) cell phenotyping
 
 Whole EDTA blood was stained with a combination of CD3-V500, CD4-BV421, CCR6-Pe and CXCR3-Alexa-Fluoro 647 (all antibodies from Becton Dickinson, UK) at room temperature protected from light. Erythrocytes were subsequently lysed using BD red cell lysis solution and following a further 10 min incubation the samples were washed by centrifugation (1500 rmp for 6 min) using PBS/1% FBS. Following the final wash, cells were resuspended in 400 µl of PBS + 0.5% formaldehye and cells analysed using a FACSCanto II flow cytometer (BD) using FACSDIVA software. The gating strategy is show in Figure 1—figure supplement 1B.
 
-## RNA isolation, cDNA synthesis, and real-time quantitative PCR
+### RNA isolation, cDNA synthesis, and real-time quantitative PCR
 
 Total RNA from cells harvested in TRIzol Reagent (Thermofisher Scientific) was isolated using the Direct-zol RNA isolation kit (Zymo Research). RNA quantity and quality were confirmed with a NanoDrop ND-1000 spectrophotometer. cDNA was synthesized using 1–2 µg of total RNA using oligo(dT) primers and Maxima Reverse Transcriptase (Thermofisher Scientific). Real-time PCR was performed using iTaq Universal SYBR Green Supermix (Bio-Rad) and an iCycler IQ5 system (Bio-Rad) using gene-specific primers described in Supplementary file 1. Threshold cycles (CT) for all the candidate genes were normalized to those of 36B4 to obtain ΔCT. The specificity of primers was examined by melt-curve analysis and agarose gel electrophoresis of PCR products.
 
-## Measurement of JNK phosphorylation by intracellular staining
+### Measurement of JNK phosphorylation by intracellular staining
 
 CRACR2A-deficient Jurkat T cells stably expressing empty vector, FLAG-tagged CRACR2A-a, CRACR2AE278D, or CRACR2AR144G, E300* were left untreated or stimulated with 10 µg/ml anti-CD3 antibody (OKT3) for indicated times. Human PBMCs isolated from healthy control and patient were stimulated as described above. Cells were fixed with 4% PFA, permeabilized with ice-cold methanol and stained with phospho-SAPK/Jnk mAb (Cell Signaling, #9257). Cells were washed twice with PBS and analyzed with a FACSCalibur flow cytometer (Becton Dickinson) and FlowJo software.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using the Origin2018b software (OriginLab, Northampton, MA, USA). Data are presented as mean  ±  s.e.m. Statistical significance to compare two quantitative groups was evaluated using two-tailed/unpaired t-test. A critical value for significance of p  <  0.05 was used throughout the study, and statistical thresholds of 0.05, 0.005 as well as 0.0005 are indicated on the figures by stars (see legends for detail).

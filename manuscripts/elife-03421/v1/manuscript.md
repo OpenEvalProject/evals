@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.03421.001 Protein folding homeostasis in the endoplasmic reticulum (ER) requires efficient protein thiol oxidation, but also relies on a parallel reductive process to edit disulfides during the maturation or degradation of secreted proteins. To critically examine the widely held assumption that reduced ER glutathione fuels disulfide reduction, we expressed a modified form of a cytosolic glutathione-degrading enzyme, ChaC1, in the ER lumen. ChaC1 CtoS purged the ER of glutathione eliciting the expected kinetic defect in oxidation of an ER-localized glutathione-coupled Grx1-roGFP2 optical probe, but had no effect on the disulfide editing-dependent maturation of the LDL receptor or the reduction-dependent degradation of misfolded alpha-1 antitrypsin. Furthermore, glutathione depletion had no measurable effect on induction of the unfolded protein response (UPR); a sensitive measure of ER protein folding homeostasis. These findings challenge the importance of reduced ER glutathione and suggest the existence of alternative electron donor(s) that maintain the reductive capacity of the ER. DOI: http://dx.doi.org/10.7554/eLife.03421.001
+Protein folding homeostasis in the endoplasmic reticulum (ER) requires efficient protein thiol oxidation, but also relies on a parallel reductive process to edit disulfides during the maturation or degradation of secreted proteins. To critically examine the widely held assumption that reduced ER glutathione fuels disulfide reduction, we expressed a modified form of a cytosolic glutathione-degrading enzyme, ChaC1, in the ER lumen. ChaC1CtoS purged the ER of glutathione eliciting the expected kinetic defect in oxidation of an ER-localized glutathione-coupled Grx1-roGFP2 optical probe, but had no effect on the disulfide editing-dependent maturation of the LDL receptor or the reduction-dependent degradation of misfolded alpha-1 antitrypsin. Furthermore, glutathione depletion had no measurable effect on induction of the unfolded protein response (UPR); a sensitive measure of ER protein folding homeostasis. These findings challenge the importance of reduced ER glutathione and suggest the existence of alternative electron donor(s) that maintain the reductive capacity of the ER.
 
 ## Introduction
 
@@ -40,37 +40,37 @@ To critically examine the role of ER glutathione in the reductive re-shuffling o
 
 ## Results
 
-## A glutathione-degrading enzyme suited to the oxidizing conditions of the endoplasmic reticulum
+### A glutathione-degrading enzyme suited to the oxidizing conditions of the endoplasmic reticulum
 
-Kumar et al. recently reported that the mammalian pro-apoptotic gene
+Kumar et al. recently reported that the mammalian pro-apoptotic gene ChaC1 encodes a glutathione-specific γ-glutamyl cyclotransferase that efficiently degrades glutathione (Kumar et al., 2012). We confirmed their observations by measuring the ability of purified murine ChaC1 (expressed in E. coli) to degrade glutathione in vitro: At submicromolar enzyme concentrations, recombinant ChaC1 was able to degrade a 10 mM solution of reduced glutathione within 1 hr (Figure 1A). The enzymatic activity was selective towards reduced glutathione (GSH) (Figure 1B). The inability of oxidized glutathione (GSSG) to serve as a substrate for degradation correlated with its inability to bind a Chac1-based optical probe whose fluorescent resonance energy transfer (FRET) signal reflects substrate binding (Figure 1C–D and Figure 1—figure supplement 1). An E116Q mutation abolished all enzymatic activity (Figure 1E), as observed previously (Kumar et al., 2012).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig1-v1.jpg)
 
-**Figure 1.:** (A) A bar-graph representation of residual glutathione levels following incubation of 10 mM glutathione with the indicated concentrations of bacterially expressed mouse ChaC1. Varying concentrations of enzymes were assayed at a single time point (left panel) and varying initial concentrations of glutathione were assayed at different time points (right panel). (B) Comparison of the ability of ChaC1 to eliminate reduced (GSH) and oxidized glutathione (GSSG). Note that ChaC1 effectively eliminated reduced glutathione, but had no effect on oxidized glutathione. (C) Cartoon of the fluorescent resonance energy transfer (FRET) probe, OG-ChaC1-Cherry, used to detect substrate binding to ChaC1. Shown is a model of murine ChaC1 (UniProt Q8R3J5) residues 31–204, created by Phyre2 (Kelley and Sternberg, 2009) based on the crystal structure of γ-glutamyl cyclotransferase (PDB 2RBH). The side chain of Cys 92, which has been modified with the Oregon Green (OG) donor, is highlighted, as is the C-terminus of the protein, site of the fused mCherry fluorescent acceptor. (D) Time-resolved FRET signal (expressed as the ratio of the emission signal at 532 nm and 670 nm upon excitation at 480 nm) of the OG-ChaC1-Cherry probe [2.5 µM] following exposure to 10 mM reduced (GSH) or oxidized glutathione(GSSG). Where indicated, the sample was injected with dithiotreitol (DTT) to reduce the GSSG and convert it to a substrate for ChaC1. The biphasic change in FRET signal upon exposure to GSH is consistent with binding followed by breakdown of GSH by the probe, which retains its enzymatic activity. (E) Comparison of glutathione elimination by purified bacterially expressed wild-type and E116Q mutant ChaC1 in vitro.DOI: http://dx.doi.org/10.7554/eLife.03421.003
+**Figure 1.:** (A) A bar-graph representation of residual glutathione levels following incubation of 10 mM glutathione with the indicated concentrations of bacterially expressed mouse ChaC1. Varying concentrations of enzymes were assayed at a single time point (left panel) and varying initial concentrations of glutathione were assayed at different time points (right panel). (B) Comparison of the ability of ChaC1 to eliminate reduced (GSH) and oxidized glutathione (GSSG). Note that ChaC1 effectively eliminated reduced glutathione, but had no effect on oxidized glutathione. (C) Cartoon of the fluorescent resonance energy transfer (FRET) probe, OG-ChaC1-Cherry, used to detect substrate binding to ChaC1. Shown is a model of murine ChaC1 (UniProt Q8R3J5) residues 31–204, created by Phyre2 (Kelley and Sternberg, 2009) based on the crystal structure of γ-glutamyl cyclotransferase (PDB 2RBH). The side chain of Cys 92, which has been modified with the Oregon Green (OG) donor, is highlighted, as is the C-terminus of the protein, site of the fused mCherry fluorescent acceptor. (D) Time-resolved FRET signal (expressed as the ratio of the emission signal at 532 nm and 670 nm upon excitation at 480 nm) of the OG-ChaC1-Cherry probe [2.5 µM] following exposure to 10 mM reduced (GSH) or oxidized glutathione(GSSG). Where indicated, the sample was injected with dithiotreitol (DTT) to reduce the GSSG and convert it to a substrate for ChaC1. The biphasic change in FRET signal upon exposure to GSH is consistent with binding followed by breakdown of GSH by the probe, which retains its enzymatic activity. (E) Comparison of glutathione elimination by purified bacterially expressed wild-type and E116Q mutant ChaC1 in vitro.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Absorbance spectrum of ChaC1-mCherry, Oregon Green (OG), and Oregon green-labeled ChaC1-mCherry. (B) Absorbance profile of size-exclusion chromatogram of Oregon green-labeled ChaC1 mCherry. Note the coincidence of the absorption peak for protein (280 nm), Oregon Green (496 nm) and mCherry (587 nm) (C) FRET signal of an enzymatically inactive OG-ChaC1E116Q-Cherry probe upon exposure to varying concentrations of reduced glutathione. Note the mono-phasic change in FRET signal, consistent with inability of the mutant enzyme to break down glutathione and the contrast with wild-type OG-ChaC1-mCherry (Figure 1D). (D) Graph of the relationship between the steady-state FRET signal of the OG-ChaC1E116Q-Cherry probe and the concentration of reduced glutathione (GSH).DOI: http://dx.doi.org/10.7554/eLife.03421.004
+**Figure 1—figure supplement 1.:** (A) Absorbance spectrum of ChaC1-mCherry, Oregon Green (OG), and Oregon green-labeled ChaC1-mCherry. (B) Absorbance profile of size-exclusion chromatogram of Oregon green-labeled ChaC1 mCherry. Note the coincidence of the absorption peak for protein (280 nm), Oregon Green (496 nm) and mCherry (587 nm) (C) FRET signal of an enzymatically inactive OG-ChaC1E116Q-Cherry probe upon exposure to varying concentrations of reduced glutathione. Note the mono-phasic change in FRET signal, consistent with inability of the mutant enzyme to break down glutathione and the contrast with wild-type OG-ChaC1-mCherry (Figure 1D). (D) Graph of the relationship between the steady-state FRET signal of the OG-ChaC1E116Q-Cherry probe and the concentration of reduced glutathione (GSH).
 
-To exploit ChaC1 as a tool to purge the ER of glutathione, we targeted expression of this cytosolic enzyme to the ER, by fusing the coding sequence to an N-terminal cleavable signal peptide and a C-terminal KDEL ER retention signal. An N-terminal FLAG-M1 peptide tag was included, to facilitate detection of the enzyme. Cells transfected with a plasmid encoding ER-FLAG-ChaC1 expressed a protein of the expected mobility on reducing SDS-PAGE that reacted with the anti-FLAG antibody (
+To exploit ChaC1 as a tool to purge the ER of glutathione, we targeted expression of this cytosolic enzyme to the ER, by fusing the coding sequence to an N-terminal cleavable signal peptide and a C-terminal KDEL ER retention signal. An N-terminal FLAG-M1 peptide tag was included, to facilitate detection of the enzyme. Cells transfected with a plasmid encoding ER-FLAG-ChaC1 expressed a protein of the expected mobility on reducing SDS-PAGE that reacted with the anti-FLAG antibody (Figure 2A) and resulted in a granular staining pattern that overlapped with that of the ER marker calreticulin (Figure 2B). However, unlike cytosolic ChaC1, which migrates at a position expected of the reduced monomer on non-reducing SDS-PAGE (Figure 2—figure supplement 1), ER-localized ChaC1 migrated as a heterogenous collection of species, consistent with inappropriate disulfide bond formation (compare the reducing and non-reducing SDS-PAGE in Figure 2A and Figure 2—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig2-v1.jpg)
 
-**Figure 2.:** (A) Immunoblot of FLAG M1-tagged ER-localized wild type (WT), cysteine-free (CtoS), and compound CtoS; E116Q enzymatically dead ChaC1 in N-ethyl maleimide-blocked lysates of transfected HeLa cells. Lanes 1–4 are from a reducing and lanes 5–8 are from a non-reducing SDS-PAGE. Note the presence of high-molecular weight disulfide linked FLAG-tagged ChaC1 in cells transfected with the WT ER-targeted protein that is absent from those transfected with the cysteine-free, CtoS mutants. (B) Fluorescent photomicrographs of HeLa cells transfected with the indicated expression plasmids and immunostained for the FLAG tag (marking ChaC1) and calreticulin (CALR) as an ER marker. The merge panels show an overlap of the FLAG, CALR, and Hoechst 33,258 signal (to reveal the nuclei) at 630X with a close-up view in the right-most panel. (C) A bar-graph representation of residual glutathione levels following 60-min incubation of 10 mM glutathione with the indicated concentrations of bacterially expressed wild-type ChaC1, its cysteine free derivative, ChaC1CtoS, and its inactive mutant ChaC1CtoS;E116Q.DOI: http://dx.doi.org/10.7554/eLife.03421.005
+**Figure 2.:** (A) Immunoblot of FLAG M1-tagged ER-localized wild type (WT), cysteine-free (CtoS), and compound CtoS; E116Q enzymatically dead ChaC1 in N-ethyl maleimide-blocked lysates of transfected HeLa cells. Lanes 1–4 are from a reducing and lanes 5–8 are from a non-reducing SDS-PAGE. Note the presence of high-molecular weight disulfide linked FLAG-tagged ChaC1 in cells transfected with the WT ER-targeted protein that is absent from those transfected with the cysteine-free, CtoS mutants. (B) Fluorescent photomicrographs of HeLa cells transfected with the indicated expression plasmids and immunostained for the FLAG tag (marking ChaC1) and calreticulin (CALR) as an ER marker. The merge panels show an overlap of the FLAG, CALR, and Hoechst 33,258 signal (to reveal the nuclei) at 630X with a close-up view in the right-most panel. (C) A bar-graph representation of residual glutathione levels following 60-min incubation of 10 mM glutathione with the indicated concentrations of bacterially expressed wild-type ChaC1, its cysteine free derivative, ChaC1CtoS, and its inactive mutant ChaC1CtoS;E116Q.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Immunblot of FLAG-tagged authentic, cytosolic mouse ChaC1, ER-localized ChaC1 and ER-localized cysteine-free ChaC1CtoS in lysates of stably-transfected Flp-In T-REx HEK 293T cells expressing the proteins under the control of a tetracycline-inducible promoter. Shown are samples blocked with N-ethyl maleimide at the time of lysis and resolved by reducing and non-reducing SDS-PAGE. Where indicated the cells had been exposed to doxycycline to induce expression of the heterologous protein.DOI: http://dx.doi.org/10.7554/eLife.03421.006
+**Figure 2—figure supplement 1.:** Immunblot of FLAG-tagged authentic, cytosolic mouse ChaC1, ER-localized ChaC1 and ER-localized cysteine-free ChaC1CtoS in lysates of stably-transfected Flp-In T-REx HEK 293T cells expressing the proteins under the control of a tetracycline-inducible promoter. Shown are samples blocked with N-ethyl maleimide at the time of lysis and resolved by reducing and non-reducing SDS-PAGE. Where indicated the cells had been exposed to doxycycline to induce expression of the heterologous protein.
 
 A model of mouse ChaC1, based on the crystal structure of the homologous γ-glutamyl cyclotransferase (PDB 2RBH) (Kumar et al., 2012), suggested that none of its four cysteines is likely to play an important role in substrate recognition or catalysis. As expected, conversion of all four cysteines to serines resulted in a protein that no longer formed disulfides when introduced into the ER (Figure 2A, compare lanes 6 and 7 and Figure 2—figure supplement 1). Importantly, the cysteine-free enzyme (ChaC1CtoS) purified from E. coli retained its enzymatic activity (Figure 2C) and specificity for reduced glutathione (Figure 1D and Figure 1—figure supplement 1C). There are no predicted N-linked glycosylation sites in ChaC1CtoS to further corrupt protein structure when targeted to the ER, therefore, it seemed possible that ER-localized ChaC1CtoS might retain its enzymatic activity and breakdown glutathione in the ER.
 
-## Purging the ER of glutathione
+### Purging the ER of glutathione
 
-Measuring the impact of ER-ChaC1
+Measuring the impact of ER-ChaC1CtoS on glutathione levels required an assay that would be selectively sensitive to the ER pool of glutathione. Glutaredoxin (Grx1) has been shown to dramatically accelerate the interaction of a linked redox-sensitive green fluorescent protein (roGFP) with glutathione, both in vivo and in vitro (Gutscher et al., 2008; Birk et al., 2013) (cartooned Figure 3A). We confirmed the reported ability of a linked Grx1 to accelerate the equilibration of roGFP with a glutathione buffer: alone, reduced roGFP2 was only slowly oxidized by glutathione (Figure 3B), but the linked Grx1 markedly accelerated the oxidation of Grx1-roGFP2 (Figure 3, compare the red traces in panels B and C). The rate of probe oxidation by glutathione was concentration-dependent, with half-saturation (Kmax0.5) attained at ∼18 µM GSSG (Figure 3D). Importantly, the presence of oxidized PDI had a minor role in further accelerating the oxidation of Grx1-roGFP2, but dominated the oxidation kinetics of roGFP2 alone (Figure 3B,C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig3-v1.jpg)
 
-**Figure 3.:** .(A) Cartoon contrasting the slow coupling of roGFP2 with the glutathione redox buffer (dashed lines) and the rapid coupling of Grx1-roGFP2 with the glutathione redox buffer (after Gutscher et al., 2008). (B) Trace of time-dependent changes in the ratio of reduced to oxidized roGFP2 detected optically as the ratio between the emission signal (at 535 nm) upon excitation at 405 nm vs 488 nm (ex 405/488) following introduction of the fully reduced probe into the indicated solutions of oxidized glutathione (GSSG) or PDI and GSSG. (C) Similar trace of reduced Grx1-roGFP2. Note the indifference of roGFP2 and the marked responsiveness of Grx1-roGFP to oxidized glutathione. (D) Graph of the initial velocity of Grx1-roGFP2 oxidation as a function of GSSG concentration, fitted to Linweaver–Burk plot. Half-maximal velocity is observed at 18 µM GSSG. (E) Trace of time-dependent changes in the ratio of oxidized and reduced roGFP2 and Grx1-roGFP2 probes expressed in the ER of HeLa cells following a brief (1 min) reductive pulse with dithiothreitol (DTT, 2 mM) followed by a washout. (F) Bar diagram of the half-time to recovery of oxidized roGFP2 and Grx1-roGFP2 following the reductive DTT pulse. Shown are means ±SD (N = 4, *p<0.01). (G) Trace of time-dependent changes in the ratio of oxidized to reduced probes expressed in the ER of HeLa cells alongside active or inactive ChaC1 (tagged at its C-terminus with mCherry to allow visualization of cells co-expressing the redox probes and the glutathione-depleting enzyme) following a brief reductive pulse with dithiothreitol and a washout. Note that the expression of active ChaC1 in the ER eliminates the kinetic advantage of Grx1-roGFP2 over roGFP2 in re-oxidation during the recovery from a DTT reductive pulse. (H) Bar diagram of the half-time to recovery of oxidized roGFP2 and Grx1-roGFP2 following the reductive DTT pulse in cells co-expressing active or inactive CHaC1. Shown are means ±SEM (N = 20, *p<0.01). (I) Bar diagram of cellular glutathione levels following 36 hr of doxycycline (DOX) induction of cytosolic and ER localized active and inactive ChaC1 in the absence and presence of concomitant exposure to buthionine-sulfoxide (BSO, 50 µM). Also shown is a time course of total cellular glutathione following induction of active and inactive mCherry-KDEL-tagged ChaC1.DOI: http://dx.doi.org/10.7554/eLife.03421.007
+**Figure 3.:** (A) Cartoon contrasting the slow coupling of roGFP2 with the glutathione redox buffer (dashed lines) and the rapid coupling of Grx1-roGFP2 with the glutathione redox buffer (after Gutscher et al., 2008). (B) Trace of time-dependent changes in the ratio of reduced to oxidized roGFP2 detected optically as the ratio between the emission signal (at 535 nm) upon excitation at 405 nm vs 488 nm (ex 405/488) following introduction of the fully reduced probe into the indicated solutions of oxidized glutathione (GSSG) or PDI and GSSG. (C) Similar trace of reduced Grx1-roGFP2. Note the indifference of roGFP2 and the marked responsiveness of Grx1-roGFP to oxidized glutathione. (D) Graph of the initial velocity of Grx1-roGFP2 oxidation as a function of GSSG concentration, fitted to Linweaver–Burk plot. Half-maximal velocity is observed at 18 µM GSSG. (E) Trace of time-dependent changes in the ratio of oxidized and reduced roGFP2 and Grx1-roGFP2 probes expressed in the ER of HeLa cells following a brief (1 min) reductive pulse with dithiothreitol (DTT, 2 mM) followed by a washout. (F) Bar diagram of the half-time to recovery of oxidized roGFP2 and Grx1-roGFP2 following the reductive DTT pulse. Shown are means ±SD (N = 4, *p<0.01). (G) Trace of time-dependent changes in the ratio of oxidized to reduced probes expressed in the ER of HeLa cells alongside active or inactive ChaC1 (tagged at its C-terminus with mCherry to allow visualization of cells co-expressing the redox probes and the glutathione-depleting enzyme) following a brief reductive pulse with dithiothreitol and a washout. Note that the expression of active ChaC1 in the ER eliminates the kinetic advantage of Grx1-roGFP2 over roGFP2 in re-oxidation during the recovery from a DTT reductive pulse. (H) Bar diagram of the half-time to recovery of oxidized roGFP2 and Grx1-roGFP2 following the reductive DTT pulse in cells co-expressing active or inactive CHaC1. Shown are means ±SEM (N = 20, *p<0.01). (I) Bar diagram of cellular glutathione levels following 36 hr of doxycycline (DOX) induction of cytosolic and ER localized active and inactive ChaC1 in the absence and presence of concomitant exposure to buthionine-sulfoxide (BSO, 50 µM). Also shown is a time course of total cellular glutathione following induction of active and inactive mCherry-KDEL-tagged ChaC1.
 
 Oxidized glutathione levels recover rapidly following a reductive pulse in cultured mammalian cells (Appenzeller-Herzog et al., 2010). Therefore, the aforementioned in vitro observations indicating tight coupling of Grx1-roGFP2 to glutathione (and relative indifference to PDI) suggested that the rate of re-oxidation of an ER-localized Grx1-roGFP2 probe following a reductive pulse might be affected by the presence of glutathione in the ER lumen. To examine this further, we first compared the rate of re-oxidation of ER-localized roGFP2 with that of ER-localized Grx1-roGFP2 following a reductive pulse of dithiothreitol (DTT) and its washout. At steady-state both probes were highly oxidized and both were similarly reduced by the DTT pulse. However the recovery of ER-Grx1-roGFP2 was accelerated compared with ER-roGFP2 alone, with a half-time to recovery of 75.3 ± 7.7 s in case of the former and 167.3 ± 16.8 s in case of the latter (Figure 3E,F). This observation is consistent with a direct contribution of lumenal glutathione to the kinetics of ER-Grx1-roGPF2 re-oxidation in vivo.
 
@@ -78,37 +78,37 @@ Next, we compared the effect of ER-localized enzymatically-active ER-ChaC1CtoS a
 
 We were unable to reproducibly measure glutathione concentrations in microsomal fractions of cultured cells; however, the effect of ChaC1 over-expression on total cellular glutathione was quantifiable. At similar levels of over-expression, cytosolic ChaC1 led to a marked depletion of total cellular glutathione levels, whereas ER-localized ChaC1CtoS had a more modest effect. However, ER-localized ChaC1CtoS markedly enhanced glutathione depletion by low concentrations of buthionine-sulfoxide (BSO, an inhibitor of the rate limiting step of glutathione biosynthesis, Figure 3I). To avoid the corrupting effect of an untransfected pool of cells, these ensemble measurements were conducted in stable clones homogenously and conditionally-expressing ChaC1 from a doxycycline-inducible transgene. They point to relatively slow equilibration of cytosolic and ER pools of glutathione in mammalian cells. Given that Grx1-roGFP2 reacts with glutathione with a Kmax0.5 in the 10−5 M range (Figure 3D) the effacement of its kinetic advantage over roGFP2 in the DTT washout experiment, indicated a profound and selective depletion of lumenal glutathione by the ER-targeted expression of active ChaC1, with modest effects on other cellular pools of glutathione.
 
-## Lumenal glutathione is dispensable to the reductive facets of ER protein folding
+### Lumenal glutathione is dispensable to the reductive facets of ER protein folding
 
 Maturation of the LDL-R in the ER entails significant rearrangement of its 30 disulfide bonds (Jansens et al., 2002) and involves the reduced form of the PDI family member ERdj5 (Oka et al., 2013). Maturation of the LDL-R can be tracked by the conversion of the relatively high mobility, glycosylated, ER form, to the lower-mobility post-ER form (reflective of Golgi sugar modifications) in pulse-chase labeling followed by immunoprecipitation. We thus compared the effects of ER expression of active ChaC1CtoS and the catalytically inactive ChaC1CtoS;E116Q mutant on the rate of maturation of co-expressed LDL-R tagged on its C-terminal, cytosolic facing domain, with a triple FLAG-tag.
 
-Conversion of the LDL-R from its ER to post-ER form was unaffected by the presence of either active or inactive form of ER-ChaC1 and proceeded with a half-life of ∼1 hr in presence or absence of an active glutathione-depleting enzyme in the ER (
+Conversion of the LDL-R from its ER to post-ER form was unaffected by the presence of either active or inactive form of ER-ChaC1 and proceeded with a half-life of ∼1 hr in presence or absence of an active glutathione-depleting enzyme in the ER (Figure 4A). The non-reducing gel revealed identical accelerated mobility of LDL-R at the earliest time point, regardless of expression of ChaC1, indicating that glutathione depletion also had no drastic effect on the earlier oxidative phase of LDL-R maturation (Figure 4A,B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig4-v1.jpg)
 
-**Figure 4.:** (A) Autoradiograph of metabolically labeled LDL receptor (LDL-R) immunopurified from HeLa cells co-expressing the FLAG-tagged LDL-R and ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) and resolved on a reducing SDS-PAGE. Cells were lysed at the end of a 30-min labeling pulse (lanes 1 and 6) or after an additional chase period (indicated). The mobility of the ER and Golgi forms of the LDL-R on reducing (left) and non-reducing (right) SDS-PAGE is indicated, as is the labeled ChaC1, which is also recovered in this anti-FLAG immunoprecipitation. (B) Graphic presentation of the conversion of the ER to Golgi form of the LDL-R from ‘A’ above. Shown is a representative experiment reproduce three times with similar outcome. (C) Autoradiograph of an experiment similar in layout to that depicted in ‘A’ above. Where indicated, the cells were exposed to the glutathione synthesis inhibitor buthionine-sulfoxide (BSO, 100 µM, 20 hr) before the pulse-chase labeling. (D) Graphic presentation of the conversion of the ER to Golgi form of the LDL-R from ‘C’ above. Shown is a representative experiment reproduce three times with similar outcome. (E) Bar graph of total cellular glutathione in cells manipulated as in the experiment described in ‘C’ (shown is the mean ±SD, n = 3, *p<0.05). (F) Trace of time-dependent changes in the ratio of oxidized and reduced roGFP2 expressed in the ER of mouse embryonic fibroblasts with genetic lesions compromising disulfide bond formation (Ero1am/m; Ero1bm/m; Prdx4m/y) following a brief reductive pulse with dithiothreitol followed by a washout. The cells co-expressed ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) marked at its C-terminus with an mCherry fluorescent probe. (G) Bar diagram of the half-time to recovery of oxidized roGFP2 following the reductive DTT pulse in ‘F’ above. Note that expression of active ChaC1 in the ER did not affect the rate of recovery of the sentinel disulfide in ER-localized roGFP2.DOI: http://dx.doi.org/10.7554/eLife.03421.008
+**Figure 4.:** (A) Autoradiograph of metabolically labeled LDL receptor (LDL-R) immunopurified from HeLa cells co-expressing the FLAG-tagged LDL-R and ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) and resolved on a reducing SDS-PAGE. Cells were lysed at the end of a 30-min labeling pulse (lanes 1 and 6) or after an additional chase period (indicated). The mobility of the ER and Golgi forms of the LDL-R on reducing (left) and non-reducing (right) SDS-PAGE is indicated, as is the labeled ChaC1, which is also recovered in this anti-FLAG immunoprecipitation. (B) Graphic presentation of the conversion of the ER to Golgi form of the LDL-R from ‘A’ above. Shown is a representative experiment reproduce three times with similar outcome. (C) Autoradiograph of an experiment similar in layout to that depicted in ‘A’ above. Where indicated, the cells were exposed to the glutathione synthesis inhibitor buthionine-sulfoxide (BSO, 100 µM, 20 hr) before the pulse-chase labeling. (D) Graphic presentation of the conversion of the ER to Golgi form of the LDL-R from ‘C’ above. Shown is a representative experiment reproduce three times with similar outcome. (E) Bar graph of total cellular glutathione in cells manipulated as in the experiment described in ‘C’ (shown is the mean ±SD, n = 3, *p<0.05). (F) Trace of time-dependent changes in the ratio of oxidized and reduced roGFP2 expressed in the ER of mouse embryonic fibroblasts with genetic lesions compromising disulfide bond formation (Ero1am/m; Ero1bm/m; Prdx4m/y) following a brief reductive pulse with dithiothreitol followed by a washout. The cells co-expressed ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) marked at its C-terminus with an mCherry fluorescent probe. (G) Bar diagram of the half-time to recovery of oxidized roGFP2 following the reductive DTT pulse in ‘F’ above. Note that expression of active ChaC1 in the ER did not affect the rate of recovery of the sentinel disulfide in ER-localized roGFP2.
 
 LDL-R maturation was also unaffected by further global depletion of cellular glutathione, effected by the combined expression of ER-ChaC1CtoS and exposure to buthionine sulfoxide (BSO), which depleted glutathione globally (Figure 4C–E). These experiments, conducted in HeLa cells, where reductive editing of LDL-R disulfides was first discovered (Jansens et al., 2002), reinforces the dispensability of glutathione to that process.
 
 To further explore the potential role of ER glutathione in the early oxidative steps of protein folding, we used highly sensitized mouse cells genetically deficient in the upstream thiol oxidases ERO1 and PRDX4 (Zito et al., 2010b, 2012) Expression of active ChaC1 in their ER had no effect on the kinetics of disulfide re-formation on ER-localized roGFP2 following a reductive DTT pulse (Figure 4F–G), further attesting to the dispensability of glutathione to thiol oxidation in the mammalian ER.
 
-The degradation of misfolded NHK-A1AT requires the action of the reduced form of a specialized PDI, ERdj5 (
+The degradation of misfolded NHK-A1AT requires the action of the reduced form of a specialized PDI, ERdj5 (Ushioda et al., 2008; Hagiwara et al., 2011). To determine if an ER pool of glutathione contributes to this process, we compared the half-life of C-terminally FLAG-tagged NHK-A1AT in cells expressing active ER-ChaC1CtoS and the catalytically inactive ER-ChaC1CtoS;E116Q. The stability of NHK-A1AT was unaffected by ChaC1 both in HeLa cells (Figure 5A,D) and in 293T cells (Figure 5B,E). Furthermore, depletion of total cellular pools of glutathione by coincidental exposure to BSO had no effect on NHK-A1AT half-life (Figure 5C,F), complementing the evidence for the dispensability of glutathione for ER-associated degradation of this redox-dependent substrate.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig5-v1.jpg)
 
-**Figure 5.:** (A) Autoradiograph of metabolically labeled NHK-A1AT immunopurified from HeLa cells co-expressing C-terminally FLAG-tagged NHK-A1AT and ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) and resolved on a reducing or non-reducing SDS-PAGE. Cells were lysed at the end of a 30-min labeling pulse (lanes 1 and 5) or after an additional chase period (indicated). The mobility of the labeled NHK-A1AT, and the ER-chaperone BiP that co-purifies with it, are indicated, as is the labeled ChaC1, which is also recovered in this anti-FLAG immunoprecipitate. (B) Autoradiograph of samples recovered from 293T cells in an experimental design as in ‘A’. (C) Autoradiograph of samples recovered from HeLa cells in an experimental design as in ‘A’. Where indicated, cells were exposed to the glutathione synthesis inhibitor buthionine-sulfoxide (BSO, 100 µM, 20 hr) before the pulse-chase labeling. (D–F) Plot of time-dependent change in NHK-A1AT (monomer) signal from the reducing gels A–C above. Shown are representative experiments reproduced twice with similar outcome.DOI: http://dx.doi.org/10.7554/eLife.03421.009
+**Figure 5.:** (A) Autoradiograph of metabolically labeled NHK-A1AT immunopurified from HeLa cells co-expressing C-terminally FLAG-tagged NHK-A1AT and ER-localized enzymatically active (ER-ChaC1CtoS) or inactive ChaC1 (ER-ChaC1CtoS;E116Q) and resolved on a reducing or non-reducing SDS-PAGE. Cells were lysed at the end of a 30-min labeling pulse (lanes 1 and 5) or after an additional chase period (indicated). The mobility of the labeled NHK-A1AT, and the ER-chaperone BiP that co-purifies with it, are indicated, as is the labeled ChaC1, which is also recovered in this anti-FLAG immunoprecipitate. (B) Autoradiograph of samples recovered from 293T cells in an experimental design as in ‘A’. (C) Autoradiograph of samples recovered from HeLa cells in an experimental design as in ‘A’. Where indicated, cells were exposed to the glutathione synthesis inhibitor buthionine-sulfoxide (BSO, 100 µM, 20 hr) before the pulse-chase labeling. (D–F) Plot of time-dependent change in NHK-A1AT (monomer) signal from the reducing gels A–C above. Shown are representative experiments reproduced twice with similar outcome.
 
 Thiol redox reactions contribute to protein folding homeostasis in the endoplasmic reticulum. This is reflected in enhanced signaling in the endoplasmic reticulum unfolded protein response (UPR) in cells impaired in ER thiol redox (Frand and Kaiser, 1998; Pollard et al., 1998). Therefore, to gain a more global view on the impact of ER glutathione depletion on ER protein folding homeostasis, we compared the effect on UPR activity of ER-targeted active and inactive ChaC1. These experiments made use of mCherry-tagged ChaC1CtoS, which retains its enzymatic activity, purges the ER of glutathione (Figures 1D and 3G) and marks the ChaC1-expressing cells.
 
-Dual-channel FACS analysis revealed that neither active nor inactive ER-ChaC1
+Dual-channel FACS analysis revealed that neither active nor inactive ER-ChaC1CtoS-mCherry-KDEL measurably affected the basal activity of a stably integrated mammalian UPR reporter, CHOP::GFP (Novoa et al., 2001) (reflected in the absence of a shift to the right in the mCherry positive population of cells, Figure 6A, left column). Furthermore, the activity of the CHOP::GFP reporter, which was increased by tunicamycin, a toxin that perturbs protein folding homeostasis in the ER, was unaffected by ChaC1 (Figure 6A). The indifference of the UPR to ER-ChaC1CtoS is observed over a broad range of unfolded protein stress and over a broad range of ER-ChaC1CtoS-mCherry-KDEL expression, and suggests that the lesson learned from the sentinel proteins, LDL-R and NHK-A1AT likely extend to the bulk of proteins that fold oxidatively in the ER under normal cell culture conditions.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig6-v1.jpg)
 
-**Figure 6.:** (A) Two-dimensional plots (FACScans) of fluorescent intensity of individual CHO cells containing a stably-integrated UPR reporter, CHOP::GFP (Novoa et al., 2001), following transfection with plasmids encoding ER-localized, active (ER-ChaC1CtoS-mCherry-KDEL) or inactive ChaC1 (ER-ChaC1CtoS;E116Q-mCherry-KDEL). GFP fluorescent intensity, reporting on the activity of the UPR (X-axis), was detected at 530 ± 30 nm following excitation at 488 nm, whereas mCherry fluorescent intensity, reporting on the level of ChaC1-mCherry-KDEL in the ER (Y axis), was detected at 610 ± 20 nm following excitation at 561 nm. Where indicated the cells were exposed to the ER stress-inducing agent tunicamycin for the indicated period of time. (B) Three-color FACScans as in ‘A’ of CHOP::GFP cells co-transfected with expression plasmids for a hyperactive mutant of ERO1 (C104A, C133A; ERO1*) tagged by the cell-surface marker CD2 (decorated with an AF647-tagged antibody and detected by excitation at 640 nm and emission at 670 nm) with a wildtype or inactive mutants of ChaC1 fused to mCherry, as noted above. The axis of the scans are labeled with the cognate signals and panels numbered for ease of reference in the text.DOI: http://dx.doi.org/10.7554/eLife.03421.010
+**Figure 6.:** (A) Two-dimensional plots (FACScans) of fluorescent intensity of individual CHO cells containing a stably-integrated UPR reporter, CHOP::GFP (Novoa et al., 2001), following transfection with plasmids encoding ER-localized, active (ER-ChaC1CtoS-mCherry-KDEL) or inactive ChaC1 (ER-ChaC1CtoS;E116Q-mCherry-KDEL). GFP fluorescent intensity, reporting on the activity of the UPR (X-axis), was detected at 530 ± 30 nm following excitation at 488 nm, whereas mCherry fluorescent intensity, reporting on the level of ChaC1-mCherry-KDEL in the ER (Y axis), was detected at 610 ± 20 nm following excitation at 561 nm. Where indicated the cells were exposed to the ER stress-inducing agent tunicamycin for the indicated period of time. (B) Three-color FACScans as in ‘A’ of CHOP::GFP cells co-transfected with expression plasmids for a hyperactive mutant of ERO1 (C104A, C133A; ERO1*) tagged by the cell-surface marker CD2 (decorated with an AF647-tagged antibody and detected by excitation at 640 nm and emission at 670 nm) with a wildtype or inactive mutants of ChaC1 fused to mCherry, as noted above. The axis of the scans are labeled with the cognate signals and panels numbered for ease of reference in the text.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/03421/elife-03421-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** FACScans as in ‘6B’ of CHO cells stably transduced with an XBP1 splicing reporter linked to the expression of the fluorescent protein Venus (Iwawaki et al., 2004). Where indicated cells were co-transfected with expression plasmids for a hyperactive mutant of ERO1 (C104A, C133A; ERO1*) tagged by the cell-surface marker CD2 and wild-type or inactive mutants of ChaC1 fused to mCherry. The axis of the scans is labeled with the cognate signals.DOI: http://dx.doi.org/10.7554/eLife.03421.011
+**Figure 6—figure supplement 1.:** FACScans as in ‘6B’ of CHO cells stably transduced with an XBP1 splicing reporter linked to the expression of the fluorescent protein Venus (Iwawaki et al., 2004). Where indicated cells were co-transfected with expression plasmids for a hyperactive mutant of ERO1 (C104A, C133A; ERO1*) tagged by the cell-surface marker CD2 and wild-type or inactive mutants of ChaC1 fused to mCherry. The axis of the scans is labeled with the cognate signals.
 
 The role of ER glutathione was further explored under conditions in which ER redox balance was perturbed by co-expression of a deregulated allele of the ER oxidase ERO1 (Sevier et al., 2007), which has been shown to hyper-oxidize the mammalian ER (Baker et al., 2008) and modestly activate the UPR (Hansen et al., 2012). Introduction of the C104A; C133A human ERO1L (ERO1*), expressed from a plasmid tagged with the CD2 surface marker indeed modestly activated the UPR, whether measured in cells stably expressing the CHOP::GFP transcriptional reporter (Figure 6B, reflected in the higher GFP levels of cells co-expressing the CD2 marker which tags the ERO1*-expressing cells, panels 2, 4, and 7) or an XBP1::Venus splicing reporter (Iwawaki et al., 2004) (Figure 6—figure supplement 1). However, co-expression of active ChaC1CtoS had no evident synergistic effect with ERO1* on UPR activity beyond that observed with the enzymatically inactive E116Q mutant enzyme. This is evident by first noting that in this co-transfection experiment most ERO1* expressing cells (CD2 positive) are also co-expressing the Cherry-tagged ChaC1CtoS (Figure 6B, panels 3 and 6) and then noting that the relationship between ERO1* expression (for which CD2 is a surrogate) and the CHOP::GFP signal is indistinguishable in cells co-expressing wild-type and enzymatically inactive ChaC1CtoS (Figure 6B panels 4 and 7). Similarly, the co-expression of ERO1* does not impart sensitivity to active ChaC1, as reflected by the observation that CHOP::GFP levels are unaffected by ChaC1CtoS in these double positive cells (Figure 6B panels 5 and 8). These findings indicate that glutathione is dispensable for the function of the ER even under hyperoxidizing conditions.
 
@@ -130,9 +130,212 @@ In mammalian cells too, glutathione stands to impact the maturation of some secr
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
-Table 1 lists the plasmids used, their lab names, description, published reference, and a notation of their appearance in the figures.10.7554/eLife.03421.014Table 1.List of the plasmids used in this study, their unique lab identifier, lab name, description, PMID of the relevant reference (if available), figure in which they first appear and cognate label in figure legendDOI: http://dx.doi.org/10.7554/eLife.03421.014IDPlasmid nameDescriptionReferenceFirst appearanceLabel in figure15pFLAG-CMV1Mammalian expression bovine trypsinogen signal peptide-FLAGM1 fusionPMID: 80247962AER-FLAG_vector242roGFP2_pRSETBBacterial expression of 6X His-tagged roGFP2PMID: 147220623AroGFP2836mChac1_1-224-H6-pET30aBacterial expression of mouse Chac1 C-terminal His-taggedThis paper1AChaC1888pFLAG_mCherry_KDEL_CMV1ER localised FLAGM1-mCherry-KDEL in pFLAG-CMV1This paper6AER-vector915mChaC1_1-224_CtoS_pET30aBacterial expression mouse Chac1 CtoS (C92S, C169S, C190S, C212S) C-terminal His-taggedThis paper2CChaC1_CtoS932mChaC1_1-224_E116Q_pET30aBacterial expression of E116Q mutant mouse Chac1 C-terminal His-taggedThis paper1EChaC1_E116Q934mChaC1_3XFLAG_pCDNA5_FRT_TOMammalian expression of C-term FLAG-tagged mouse ChaC1This paper3HCyto-ChaC1937mChaC1_CtoS_E116_pET30aBacterial expression of E116Q cysteine to serine mutant mouse Chac1 C-terminal His-taggedThis paper2CChaC1_CtoS_E116Q945mChaC1_E116Q_3XFLAG_pCDNA5_FRT_TOMammalian expression of C-term FLAG-tagged mouse ChaC1 E116Q mutant (Cyto-ChaC1_E116Q)This paper3HCyto-ChaC1_E116Q950FLAGM1_mChaC1_CtoS_pCDNA5_FRT_TOMammalian expression ER-localised FLAG M1 tagged mouse CHAC1 CtoS (C92S, C169S, C190S, C212S) KDELThis paper2AER-FLAG_ChaC1_CtoS951FLAGM1_mChaC1_CtoS_E116Q_pCDNA5_FRT_TOMammalian expression ER-localised FLAG M1 tagged mouse CHAC1 CtoS (C92S, C169S, C190S, C212S) E116Q KDELThis paper2AER-FLAG_ChaC1_CtoS_E116Q974FLAGM1_mChaC1_WT_pCDNA5_FRT_TOMammalian expression ER-localised FLAG M1 tagged mouse CHAC1 KDELThis paper2AER-FLAG_ChaC1988FLAGM1_mChaC1_CtoS_mCherry_pCDNA5_FRT_TOMammalian expression ER-localised FLAG M1 tagged mouse CHAC1 mCherry-KDEL, CtoS (C92S, C169S, C190S, C212S)This paper3FER-ChaC1_CtoS_mCherry993mChaC1_CtoS_92C_mCherry-pET30aBacterial expression of mouse ChaC1-mCherry fusion, C-terminal His-tagged, (C169S, C190S, C212S)This paper1DOG-ChaC1-Cherry probe1028FLAGM1_mChaC1_CtoS_E116Q_mCherry_pCDNA5Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 mCherry-KDEL, CtoS, E116QThis paper3FER-ChaC1_CtoS_E116Q_mCherry1037mChaC1_CtoS_S92C_E116Q_mCherry-pET30aBacterial expression of mouse ChaC1-mCherry fusion, C-terminal His-tagged, (C169S, C190S, C212S), E116QThis paperS1COG-ChaC1_E116Q-Cherry1052ER_roGFP2_pCDNA3.1ER localized roGFP2 KDELThis paper3DER-roGFP21063ER_Grx1_roGFP2_KDEL_pCDNA3.1ER localized Grx1 fused to roGFP2 KDELPMID:234241943DER-Grx1-roGFP21181hLDLR_3XFLAG_pCDNA5_FRTMammalian expression plasmid of human LDL receptor, cytosolic tail tagged with a 3X FLAG tagPMID:124939184AFLAG-tagged LDL-R1204A1AT_NHK_3XFLAG_pCDNA5_FRT_TOMammalian expression plasmid of null Hong-Kong mutant a1-antitrypsin C-terminally tagged with 3XFLAGPMID:127362545AFLAG-tagged NHK-A1AT1206Grx1_roGFP2_pET30aBacterial expression of Grx1-roGFP2 fusion proteinPMID: 184698223BGrx1-roGFP21239pCAX-F-XBP1ΔDBD-venusXBP1 mini-cDNA with Venus fused the post-IRE1 spliced open reading framePMID: 147026396CXBP1-Venus1273hERO1A_C104A_C131A_pCDNA3-CD2Mammalian expression plasmid encoding human hyperactive ERO1L (ERO1a) and a co-expressed human CD2 FACS markerPMID: 230278706BERO1*
+Table 1 lists the plasmids used, their lab names, description, published reference, and a notation of their appearance in the figures.
+
+**Table 1.**
+ List of the plasmids used in this study, their unique lab identifier, lab name, description, PMID of the relevant reference (if available), figure in which they first appear and cognate label in figure legend
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Plasmid name</th>
+      <th>Description</th>
+      <th>Reference</th>
+      <th>First appearance</th>
+      <th>Label in figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15</td>
+      <td>pFLAG-CMV1</td>
+      <td>Mammalian expression bovine trypsinogen signal peptide-FLAGM1 fusion</td>
+      <td>PMID: 8024796</td>
+      <td>2A</td>
+      <td>ER-FLAG_vector</td>
+    </tr>
+    <tr>
+      <td>242</td>
+      <td>roGFP2_pRSETB</td>
+      <td>Bacterial expression of 6X His-tagged roGFP2</td>
+      <td>PMID: 14722062</td>
+      <td>3A</td>
+      <td>roGFP2</td>
+    </tr>
+    <tr>
+      <td>836</td>
+      <td>mChac1_1-224-H6-pET30a</td>
+      <td>Bacterial expression of mouse Chac1 C-terminal His-tagged</td>
+      <td>This paper</td>
+      <td>1A</td>
+      <td>ChaC1</td>
+    </tr>
+    <tr>
+      <td>888</td>
+      <td>pFLAG_mCherry_KDEL_CMV1</td>
+      <td>ER localised FLAGM1-mCherry-KDEL in pFLAG-CMV1</td>
+      <td>This paper</td>
+      <td>6A</td>
+      <td>ER-vector</td>
+    </tr>
+    <tr>
+      <td>915</td>
+      <td>mChaC1_1-224_CtoS_pET30a</td>
+      <td>Bacterial expression mouse Chac1 CtoS (C92S, C169S, C190S, C212S) C-terminal His-tagged</td>
+      <td>This paper</td>
+      <td>2C</td>
+      <td>ChaC1_CtoS</td>
+    </tr>
+    <tr>
+      <td>932</td>
+      <td>mChaC1_1-224_E116Q_pET30a</td>
+      <td>Bacterial expression of E116Q mutant mouse Chac1 C-terminal His-tagged</td>
+      <td>This paper</td>
+      <td>1E</td>
+      <td>ChaC1_E116Q</td>
+    </tr>
+    <tr>
+      <td>934</td>
+      <td>mChaC1_3XFLAG_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression of C-term FLAG-tagged mouse ChaC1</td>
+      <td>This paper</td>
+      <td>3H</td>
+      <td>Cyto-ChaC1</td>
+    </tr>
+    <tr>
+      <td>937</td>
+      <td>mChaC1_CtoS_E116_pET30a</td>
+      <td>Bacterial expression of E116Q cysteine to serine mutant mouse Chac1 C-terminal His-tagged</td>
+      <td>This paper</td>
+      <td>2C</td>
+      <td>ChaC1_CtoS_E116Q</td>
+    </tr>
+    <tr>
+      <td>945</td>
+      <td>mChaC1_E116Q_3XFLAG_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression of C-term FLAG-tagged mouse ChaC1 E116Q mutant (Cyto-ChaC1_E116Q)</td>
+      <td>This paper</td>
+      <td>3H</td>
+      <td>Cyto-ChaC1_E116Q</td>
+    </tr>
+    <tr>
+      <td>950</td>
+      <td>FLAGM1_mChaC1_CtoS_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 CtoS (C92S, C169S, C190S, C212S) KDEL</td>
+      <td>This paper</td>
+      <td>2A</td>
+      <td>ER-FLAG_ChaC1_CtoS</td>
+    </tr>
+    <tr>
+      <td>951</td>
+      <td>FLAGM1_mChaC1_CtoS_E116Q_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 CtoS (C92S, C169S, C190S, C212S) E116Q KDEL</td>
+      <td>This paper</td>
+      <td>2A</td>
+      <td>ER-FLAG_ChaC1_CtoS_E116Q</td>
+    </tr>
+    <tr>
+      <td>974</td>
+      <td>FLAGM1_mChaC1_WT_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 KDEL</td>
+      <td>This paper</td>
+      <td>2A</td>
+      <td>ER-FLAG_ChaC1</td>
+    </tr>
+    <tr>
+      <td>988</td>
+      <td>FLAGM1_mChaC1_CtoS_mCherry_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 mCherry-KDEL, CtoS (C92S, C169S, C190S, C212S)</td>
+      <td>This paper</td>
+      <td>3F</td>
+      <td>ER-ChaC1_CtoS_mCherry</td>
+    </tr>
+    <tr>
+      <td>993</td>
+      <td>mChaC1_CtoS_92C_mCherry-pET30a</td>
+      <td>Bacterial expression of mouse ChaC1-mCherry fusion, C-terminal His-tagged, (C169S, C190S, C212S)</td>
+      <td>This paper</td>
+      <td>1D</td>
+      <td>OG-ChaC1-Cherry probe</td>
+    </tr>
+    <tr>
+      <td>1028</td>
+      <td>FLAGM1_mChaC1_CtoS_E116Q_mCherry_pCDNA5</td>
+      <td>Mammalian expression ER-localised FLAG M1 tagged mouse CHAC1 mCherry-KDEL, CtoS, E116Q</td>
+      <td>This paper</td>
+      <td>3F</td>
+      <td>ER-ChaC1_CtoS_E116Q_mCherry</td>
+    </tr>
+    <tr>
+      <td>1037</td>
+      <td>mChaC1_CtoS_S92C_E116Q_mCherry-pET30a</td>
+      <td>Bacterial expression of mouse ChaC1-mCherry fusion, C-terminal His-tagged, (C169S, C190S, C212S), E116Q</td>
+      <td>This paper</td>
+      <td>S1C</td>
+      <td>OG-ChaC1_E116Q-Cherry</td>
+    </tr>
+    <tr>
+      <td>1052</td>
+      <td>ER_roGFP2_pCDNA3.1</td>
+      <td>ER localized roGFP2 KDEL</td>
+      <td>This paper</td>
+      <td>3D</td>
+      <td>ER-roGFP2</td>
+    </tr>
+    <tr>
+      <td>1063</td>
+      <td>ER_Grx1_roGFP2_KDEL_pCDNA3.1</td>
+      <td>ER localized Grx1 fused to roGFP2 KDEL</td>
+      <td>PMID:23424194</td>
+      <td>3D</td>
+      <td>ER-Grx1-roGFP2</td>
+    </tr>
+    <tr>
+      <td>1181</td>
+      <td>hLDLR_3XFLAG_pCDNA5_FRT</td>
+      <td>Mammalian expression plasmid of human LDL receptor, cytosolic tail tagged with a 3X FLAG tag</td>
+      <td>PMID:12493918</td>
+      <td>4A</td>
+      <td>FLAG-tagged LDL-R</td>
+    </tr>
+    <tr>
+      <td>1204</td>
+      <td>A1AT_NHK_3XFLAG_pCDNA5_FRT_TO</td>
+      <td>Mammalian expression plasmid of null Hong-Kong mutant a1-antitrypsin C-terminally tagged with 3XFLAG</td>
+      <td>PMID:12736254</td>
+      <td>5A</td>
+      <td>FLAG-tagged NHK-A1AT</td>
+    </tr>
+    <tr>
+      <td>1206</td>
+      <td>Grx1_roGFP2_pET30a</td>
+      <td>Bacterial expression of Grx1-roGFP2 fusion protein</td>
+      <td>PMID: 18469822</td>
+      <td>3B</td>
+      <td>Grx1-roGFP2</td>
+    </tr>
+    <tr>
+      <td>1239</td>
+      <td>pCAX-F-XBP1ΔDBD-venus</td>
+      <td>XBP1 mini-cDNA with Venus fused the post-IRE1 spliced open reading frame</td>
+      <td>PMID: 14702639</td>
+      <td>6C</td>
+      <td>XBP1-Venus</td>
+    </tr>
+    <tr>
+      <td>1273</td>
+      <td>hERO1A_C104A_C131A_pCDNA3-CD2</td>
+      <td>Mammalian expression plasmid encoding human hyperactive ERO1L (ERO1a) and a co-expressed human CD2 FACS marker</td>
+      <td>PMID: 23027870</td>
+      <td>6B</td>
+      <td>ERO1*</td>
+    </tr>
+  </tbody>
+</table>
 
 The mouse ChaC1 cDNA (IMAGE clone 4483043) was purchased from Source Bioscience. Bacterial expression vectors encoding C-terminally His 6X tagged wild type and E116Q mutant ChaC1 were constructed by PCR amplification. A mutant ChaC1 in which all four cysteines were converted to serines, CtoS (C92S, C169S, C190S, C212S), was synthesized as an artificial gene and shuttled into the mammalian and bacterial expression plasmids described in Table 1.
 
@@ -142,7 +345,7 @@ Mammalian expression plasmids encoding ER localized FLAG M1-tagged ChaC1 with a 
 
 The hyperactive C104A: C133A allele of human ERO1L (ERO1A) was expressed from a modified pCDNA3 plasmid in which the coding sequence of the Neor marker had been replaced by human CD2.
 
-## Protein purification and in vitro enzymatic assays
+### Protein purification and in vitro enzymatic assays
 
 C-terminally 6X His-tagged mouse ChaC1 was expressed in BL21 pLysS E. coli at 30°C with 4 hr of induction with 1 mM IPTG and purified from the lysate by nickel affinity chromatography followed by size exclusion chromatography on Superdex 200 (GE Healthcare, Chalfont St Giles, United Kingdom) in 20 mM Tris pH7.4, 100 mM NaCl, 10% Glycerol, 1 mM Tris(2-carboxyethyl)phosphine hydrochloride (TCEP).
 
@@ -156,7 +359,7 @@ Human PDI (PDIA1 18–508) and roGFP variants were expressed in the E. coli BL21
 
 Reduced PDI (5 μM) was equilibrated in 100 mM Tris–HCl, 150 mM NaCl, pH 7.5 degassed buffer before being added to samples containing roGFP variants in the reduced state followed by oxidized glutathione (100 μM; Sigma). The ratio of fluorescence emission at 535 nm of samples sequentially excited at 405 nm and 488 nm was measured using a Synergy 4 microplate reader (BioTek Instruments). Kinetic parameters were extracted by fitting the data to a Linweaver–Burk plot.
 
-## Cell culture, transfection
+### Cell culture, transfection
 
 HeLa and HEK293T cells were cultured in DMEM supplemented with 10% FBS and maintained at 37°C with 5% CO2. Cells were electroporated with the indicated plasmids (5 μg of DNA/1 × 106 cells) utilizing the Neon transfection system or Lipofectamine LTX (both from Life Technologies) following the manufacturer's protocols.
 
@@ -164,20 +367,20 @@ The effects of cytosolic and ER-localized ChaC1 on cellular glutathione pools we
 
 The effects of ChaC1 on the activity of the unfolded protein response were studied by transient transfection of stable CHOP::GFP reporter Chinese Hamster Ovary cells (C30 clone of CHO K1 cells [Novoa et al., 2001]) or a stable clone of CHO K1 cells (XV8-1) expressing a Venus reporter of XBP1 splicing activity (Iwawaki et al., 2004) followed by multi-channel FACS analysis on an LSRFortessa (BD Bioscience) of the GFP or Venus signals, which reports on the intensity of the unfolded protein response and mCherry expression that reports on the level of expression of ER localized ChaC1. Where indicated, a CD2-marked expression plasmid encoding a hyper-active mutant of human ERO1L (C104A; C133A, Hansen et al., 2012) or CD2-marked empty vector was co-transfected and CD2 expression detected by surface staining with an AlexaFluor 647 conjugated mouse anti-human CD2 antibody, clone LT2 (MCA1194A647, AbD Serotec/Biorad).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 24 hr after transfection, cells were washed twice with PBS and lysed for 30 min on ice in 1% Triton X-100, 20 mM Tris–HCl (pH 7.4), 150 mM NaCl, 1 mM EDTA, 0.1 mM PMSF, 3–7 TIU/L aprotinin, and 20 mM N-ethylmaleimide (NEM). The cellular lysate was centrifuged at 15,000 ×g for 15 min, and the supernatant was used for protein assay using a BCA protein assay reagent. Total proteins (30 μg) were separated on 12% SDS–polyacrylamide gels and electroblotted onto PVDF membrane. Primary antibodies to the FLAG tag (Sigma Cat #F1804, 1:1000 dilution) or a rabbit antiserum to bacterially expressed H6-tagged mouse ChaC1 (residues 1–224, lab number UC8166, 1:1000 dilution) followed by IR800 conjugated secondary antibody and by scanning on a Licor Odyssey scanner.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Transfected HeLa cells were grown on coverslips. 24 hr after transfection, the cells were washed with PBS, fixed with 4% paraformaldehyde for 30 min at room temperature, permeabilized in PBS containing 0.1% Triton X-100 for 30 min at room temperature, and blocked in 1% BSA in PBS for 30 min at room temperature. Anti-FLAG antibodies (1:1000 dilution in PBS) in combination with rabbit anti-calreticulin antibodies (a gift of Steven High, University of Manchester, 1:1000 dilution in PBS) followed by goat anti-mouse and goat anti-rabbit secondary antibodies conjugated with DyLight 543 and DyLight 488 (1:1000 dilution in PBS, Jackson ImmunoResearch Laboratories), respectively. Nuclei were counter stained with Hoechst 33,342 (2 μg/ml in PBS) for 30 min at room temperature for counter-staining.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Cells co-transfected with the redox reporter (roGFP) and ChaC1-mCherry were analyzed by laser-scanning confocal microscopy system (510 Meta; Carl Zeiss) with a Plan-Apo- chromat 63× oil immersion lens (NA 1.4), coupled to a microscope incubator, maintaining standard tissue culture conditions (Okolab). Fluorescence ratiometric intensity images (512 × 512 points, 16 bit) of live cells were acquired. A diode 405 nm and Argon 488 nm lasers (2 and 0.5% output respectively) were used for excitation of the ratiometric probes in the multitrack mode with an HFT 488/405 beam splitter, the signal was detected with 518–550 nm filters, the detector gain was arbitrary adjusted to yield an intensity ratio of the two channels approximating one.
 
-The recovery half-time was extracted from fitting the intensity ratio changes over time to an exponential equation  I(t)=A(1−e−τt), where I is intensity, t is time, τ is recovery half-time.
+The recovery half-time was extracted from fitting the intensity ratio changes over time to an exponential equation $ I(t)=A(1−e^{−τt})$, where I is intensity, t is time, τ is recovery half-time.
 
-## Metabolic labeling and pulse-chase analysis
+### Metabolic labeling and pulse-chase analysis
 
 Cells were co-transfected with ER_mChaC1 and the FLAG-tagged LDL receptor or mutant alpha1 antitrypsin NHK plasmids. 24 hr later, pulse-chase labeled, followed by anti-FLAG immunoprecipitation (Sigma A2220), SDS-PAGE and autoradiography were conducted as previously described (Zito et al., 2010a). Where indicated, the glutathione synthesis inhibitor buthionine-sulfoxide (BSO, 100 µM, 20 hr) was added before the pulse-chase labeling. Purified protein intensities were quantified using ImageJ software. Images of gels were scaled to fit the page dimensions.

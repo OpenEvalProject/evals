@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Replication and repair of genomic DNA requires the actions of multiple enzymatic functions that must be coordinated in order to ensure efficient and accurate product formation. Here, we have used single-molecule FRET microscopy to investigate the physical basis of functional coordination in DNA polymerase I (Pol I) from Escherichia coli , a key enzyme involved in lagging-strand replication and base excision repair. Pol I contains active sites for template-directed DNA polymerization and 5’ flap processing in separate domains. We show that a DNA substrate can spontaneously transfer between polymerase and 5’ nuclease domains during a single encounter with Pol I. Additionally, we show that the flexibly tethered 5’ nuclease domain adopts different positions within Pol I-DNA complexes, depending on the nature of the DNA substrate. Our results reveal the structural dynamics that underlie functional coordination in Pol I and are likely relevant to other multi-functional DNA polymerases.
+Replication and repair of genomic DNA requires the actions of multiple enzymatic functions that must be coordinated in order to ensure efficient and accurate product formation. Here, we have used single-molecule FRET microscopy to investigate the physical basis of functional coordination in DNA polymerase I (Pol I) from Escherichia coli, a key enzyme involved in lagging-strand replication and base excision repair. Pol I contains active sites for template-directed DNA polymerization and 5’ flap processing in separate domains. We show that a DNA substrate can spontaneously transfer between polymerase and 5’ nuclease domains during a single encounter with Pol I. Additionally, we show that the flexibly tethered 5’ nuclease domain adopts different positions within Pol I-DNA complexes, depending on the nature of the DNA substrate. Our results reveal the structural dynamics that underlie functional coordination in Pol I and are likely relevant to other multi-functional DNA polymerases.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ In this study, we have developed an smFRET system to identify separate subpopula
 
 ## Results
 
-## Experimental design
+### Experimental design
 
 We designed a series of model DNA substrates containing elements expected to engage the 5’ nuc domain of Pol I. The substrates are shown in schematic form in Figure 2 and the complete sequences of the constituent oligonucleotides are listed in Appendix 1. One substrate contains a single-stranded 5’ flap on the downstream strand, referred to as downstream flap DNA (Figure 2A). Another substrate contains the downstream flap and a single unpaired 3’ terminal base on the primer strand (referred to as double flap DNA, Figure 2B). A third substrate can potentially exist as a mixture of downstream flap and double flap forms (referred to as mixed flap DNA, Figure 2C). We also examined DNA substrates containing a nick or gap of various sizes (Figure 2D) or lacking a downstream strand entirely (Figure 2E). In all cases, the template contains a dT10 spacer and biotin group at the 3’ end for surface attachment. Individual encounters between Pol I, present in solution, and the surface-immobilized DNA substrates were visualized by smFRET microscopy. Two different FRET labeling schemes were employed (Figure 2F and Figure 2G), as described in more detail in the following sections.
 
@@ -45,9 +45,29 @@ We designed a series of model DNA substrates containing elements expected to eng
 
 **Figure 2.:** (A) Substrate containing a 5’ flap on the downstream strand (designated downstream flap DNA). (B) Substrate containing the same 5’ flap as in A, plus a single unpaired base at the primer 3’ terminus (designated double flap DNA). Because of the base sequences of the strands (Appendix 1), the structures shown in A and B are ‘locked in’. (C) Substrate that can exist as a mixture of the structures shown in A and B (designated mixed flap DNA). (D) Substrates containing a nick (n = 0) or gaps of various size (n = 1–4). (E). Primer/template substrate. (F) Schematic illustration of donor (green) and acceptor (red) labeling sites for the first FRET scheme. Pol I is depicted in cartoon form, with the core colored grey and the 5' nuc domain colored blue. (G) Schematic illustration of donor (yellow) and acceptor (blue) labeling sites for the second FRET scheme.
 
-## Movement of DNA between pol and 5’ nuc domains of Pol I
+### Movement of DNA between pol and 5’ nuc domains of Pol I
 
-The first FRET system was designed to probe the location of the DNA substrates relative to the enzyme core. A base located within the primer strand was labelled with an Alexa Fluor 488 (A488) FRET donor and Pol I was labeled at position 550 in the thumb region with a complementary Alexa Fluor 594 (A594) FRET acceptor (Figure 3A and Appendix 1—table 1). To achieve site-specific labeling of Pol I, the two native cysteines were removed via C262S and C907S mutations, and a single cysteine was introduced at the desired labeling site via a K550C mutation. The Pol I construct also contained D424A and D116A mutations to eliminate 3’–5’ exonuclease and 5’ nuclease activities, respectively (Derbyshire et al., 1991; Xu et al., 2001). Pol I was expressed and purified as described in the Materials and methods section and each step of the purification process was monitored by PAGE (Appendix 2). Overall Kd values for binding of Pol I to the flap-containing DNA substrates (Appendix 3—table 1) are similar to values reported for KF interacting with primer/template substrates (Christian et al., 2009; Kuchta et al., 1988; Polesky et al., 1990), indicating that the mutations within our Pol I construct do not disrupt the DNA-binding ability of the protein.
+The first FRET system was designed to probe the location of the DNA substrates relative to the enzyme core. A base located within the primer strand was labelled with an Alexa Fluor 488 (A488) FRET donor and Pol I was labeled at position 550 in the thumb region with a complementary Alexa Fluor 594 (A594) FRET acceptor (Figure 3A and Appendix 1—table 1). To achieve site-specific labeling of Pol I, the two native cysteines were removed via C262S and C907S mutations, and a single cysteine was introduced at the desired labeling site via a K550C mutation. The Pol I construct also contained D424A and D116A mutations to eliminate 3’–5’ exonuclease and 5’ nuclease activities, respectively (Derbyshire et al., 1991; Xu et al., 2001). Pol I was expressed and purified as described in the Materials and methods section and each step of the purification process was monitored by PAGE (Appendix 2). Overall $K_{d}$ values for binding of Pol I to the flap-containing DNA substrates (Appendix 3—table 1) are similar to values reported for KF interacting with primer/template substrates (Christian et al., 2009; Kuchta et al., 1988; Polesky et al., 1990), indicating that the mutations within our Pol I construct do not disrupt the DNA-binding ability of the protein.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic representation of the donor (green, attached to primer strand) and acceptor (magenta, attached to thumb region of Pol I) labeling sites. Pol I is depicted in cartoon form, with the core colored gray and the 5’ nuc domain colored blue. (B) Representative smFRET trajectory (blue) and donor (green) and acceptor (magenta) emission trajectories, for Pol I interacting with mixed flap substrate. The bold line is the idealized state path determined from Hidden Markov modeling. (C) Composite FRET efficiency histograms for states P and N, compiled from n individual FRET trajectories (n value indicated in each plot), for various combinations of DNA substrate and protein. The proteins, from top to bottom, are WT Pol I, Pol I L361A, and KF L361A. The corresponding populations of states P and N are indicated. (D) Transition density plots for Pol I interacting with flap-containing DNA substrates, compiled from a total of n transitions. From left to right: double flap DNA, mixed flap DNA and downstream flap DNA. (E) Rate constants for intramolecular transfer of DNA substrates from pol domain to 5’ nuc domain (P→N) or from 5’ nuc domain to pol domain (N→P).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The bold lines are idealized state paths from Hidden Markov modeling.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic illustration of mismatched primer/template. (B) FRET efficiency histogram for Pol I interacting with mismatched primer/template. (C) FRET efficiency histogram for Pol I containing L361A mutation interacting with mismatched primer/template. The fractional populations of states E and P are indicated in each case.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The single peak centered at ∼350 a.u. indicates that only one enzyme molecule binds to the DNA. The peak at ∼0 a.u. corresponds to periods during which Pol I is not bound to the DNA.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The solid lines are best fits to a single exponential function, with the rate constants indicated.
 
 A representative set of donor, acceptor and FRET efficiency trajectories depicting a series of encounters between Pol I and immobilized DNA (mixed flap in this example) is shown in Figure 3B. During each encounter, the donor intensity abruptly drops, and an acceptor signal appears at the same instant, reflecting binding of Pol I to the DNA, while at a later time point the acceptor signal disappears and the donor signal increases correspondingly, reflecting dissociation of Pol I from the DNA. The anti-correlation of the donor and acceptor signals confirms that the intensity changes are due to FRET. During the binding periods, the FRET efficiency alternates between two distinct levels at ∼0.8 or ∼0.6 efficiency. Additional examples of smFRET trajectories are presented in Figure 3—figure supplement 1. Multiple FRET trajectories for each DNA substrate interacting with Pol I were analyzed globally using a Hidden Markov model, confirming that two distinct bound states are sufficient to account for all data sets. The resulting composite FRET efficiency histograms for each state are shown in Figure 3C. Note that each histogram is accumulated during the global HMM analysis, not by Gaussian fitting of final envelopes, ensuring clean separation of the two states and accurate quantification of the state populations.
 
@@ -65,19 +85,31 @@ Rate constants for overall decay of states P and N were determined for each DNA 
 
 Kinetic analysis also reveals significant variations in the rates of intramolecular transfer from the 5' nuc domain to the pol domain among the various DNA substrates (Figure 3E and Appendix 3—table 3). The downstream flap substrate exhibits the fastest transfer. In contrast, transfer of the double flap substrate is much slower, showing the importance of the unpaired primer base for stable engagement with the 5’ nuc domain. The structure of FEN1 (homologous to the 5’ nuc domain of Pol I) with DNA reveals that the unpaired primer base is sequestered in a binding pocket, making contacts with a network of surrounding protein residues (Tsutakawa et al., 2011). A similar arrangement in Pol I would account for the prolonged residence time of DNA in state N and the slow return to state P.
 
-## Role of downstream strand and 5’ flap for binding to the 5’ nuc domain
+### Role of downstream strand and 5’ flap for binding to the 5’ nuc domain
 
 To investigate whether the presence of a downstream strand is required to engage the 5’ nuc domain, we examined a DNA substrate containing only primer and template strands (Figure 2E and Appendix 1—table 1). This substrate exhibits a single FRET state at ∼0.8 efficiency, corresponding to state P, while interacting with Pol I (Figure 4A and B, bottom panels). Likewise, no cross peaks are observed in the TDP (Figure 4C). State N is absent in this case, showing that the downstream DNA must be in duplex form to engage the 5’ nuc domain and promote movement of the upstream DNA out of the pol domain.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative smFRET trajectories for DNA substrates interacting with Pol I, as indicated. Schematic representations of DNA substrates are shown in Figure 2. Bold lines are idealized state paths determined from Hidden Markov modeling. (B) Composite FRET efficiency histograms for states P and N compiled from n individual FRET trajectories, for various DNA substrates interacting with Pol I, as indicated. The corresponding populations of states P and N are indicated. (C) Transition density plots for Pol I interacting with various DNA substrates compiled from a total of n transitions, as indicated. (D) Rate constants for intramolecular transfer of various DNA substrates between pol domain and 5’ nuc domain (P→N, grey) or between 5’ nuc domain and pol domain (N→P, blue).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Composite FRET efficiency histograms (left) and transition density plots (right) for Pol I L361A (top panels) and KF (bottom panels) interacting with 1nt gap substrate. The numbers of trajectories or transitions used to compile each plot are indicated.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The solid lines are best fits to a single-exponential function, with the rate constants indicated.
+
 To test whether the presence of a 5’ flap on the downstream strand is also required to engage the 5’ nuc domain, we examined DNA substrates containing a nick or single-stranded gaps of various sizes (Figure 2D and Appendix 1—table 1). These substrates reveal reversible transitions between ∼0.6 and ∼0.8 FRET states when interacting with Pol I (Figure 4A, upper three panels), similar to the substrates containing 5’ flaps. Moreover, the hallmarks of the 0.6 FRET state are indicative of DNA engaging the 5’ nuc domain (state N, Figure 4—figure supplement 1). The populations of state N for the nicked and single-nucleotide gap substrates (26% and 23%, respectively, Figure 4B) are similar to the downstream flap substrate (23%, Figure 3C), indicating that the presence of a downstream strand is sufficient to engage the 5’ nuc domain, regardless of whether that strand contains a 5’ flap or not. Moreover, the 5’ nuc domain can engage a downstream strand even when it is separated from the primer strand by a 4nt gap (Figure 4A and B), which is likely a consequence of the flexible 16 aa linker tethering the 5’ nuc domain to the body of the enzyme. The flexibility of the single-stranded gap region could also facilitate docking of the 5’ nuc domain with the downstream DNA strand. The presence of prominent cross peaks in the TDP shows that a gapped DNA substrate can transfer reversibly between pol and 5’ nuc domains during a single encounter with Pol I (Figure 4C). Rate constants for state-to-state transitions were determined by combining overall decay rates of states P and N (Figure 4—figure supplement 2) and transition frequencies (Appendix 3—table 4), as described above. Transfer from the pol domain to the 5’ nuc domain becomes progressively slower as the gap size increases (Figure 4D and Appendix 3—table 5). Return of all DNAs from the 5’ nuc domain to the pol domain is more rapid (Figure 4D and Appendix 3—table 5). Overall Kd values for binding of Pol I to primer/template, nicked and gapped DNA substrates are listed in Appendix 3—table 6. Interestingly, dissociation of Pol I from nicked DNA (from either state P or state N) is significantly faster than from any of the gapped DNAs (Appendix 3—table 5), suggesting that Pol I is kinetically tuned to dissociate from a nicked substrate, allowing a ligase enzyme to access the DNA.
 
-## Movement of the 5’ nuc domain during docking with downstream DNA
+### Movement of the 5’ nuc domain during docking with downstream DNA
 
 The second FRET system is designed to probe the proximity of the 5’ nuc domain to the downstream portion of the DNA substrates. In this case, an A488 donor was attached to a cysteine residue introduced at position 213 in the 5’ nuc domain of Pol I (via a T213C mutation) and an A594 acceptor was attached to a base in the downstream portion of the template strand (Figure 5A and Appendix 1—table 2). The DNA substrates were otherwise analogous to those used in scheme 1. The A594 acceptor was placed in the template, rather than downstream strand, to avoid any possible steric interference with binding of Pol I. The Pol I construct also contained C262S, C907S, D424A, and D116A mutations, as described above. A representative set of donor, acceptor and FRET efficiency trajectories for the mixed flap DNA substrate is shown in Figure 5B. For this labeling scheme, there is no signal from either donor or acceptor during the periods when Pol I is not present on the DNA. Upon binding of Pol I, both donor and acceptor signals appear simultaneously and their relative magnitudes reflect the FRET efficiency during the encounter. Upon dissociation of Pol I, both signals disappear at the same instant (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig5-v1.jpg)
 
-**Figure 5.:** 5’ nuc domain within Pol I bound to flap substrates.(A) Schematic representation of donor (yellow, attached to 5’ nuc domain) and acceptor (cyan, attached to downstream template strand) labeling sites. (B) Representative set of donor, acceptor and FRET trajectories for mixed flap DNA substrate. The bold lines are idealized state paths from Hidden Markov modeling. (C) FRET efficiency histograms compiled from n individual FRET trajectories. (D) Transition density plots compiled from a total of n transitions. Since the FRET efficiency is not defined during periods when Pol I is not bound to DNA, the FRET efficiency is set to −0.2. The quadrant enclosed by the dotted lines corresponds to periods during which Pol I is bound to DNA.
+**Figure 5.:** (A) Schematic representation of donor (yellow, attached to 5’ nuc domain) and acceptor (cyan, attached to downstream template strand) labeling sites. (B) Representative set of donor, acceptor and FRET trajectories for mixed flap DNA substrate. The bold lines are idealized state paths from Hidden Markov modeling. (C) FRET efficiency histograms compiled from n individual FRET trajectories. (D) Transition density plots compiled from a total of n transitions. Since the FRET efficiency is not defined during periods when Pol I is not bound to DNA, the FRET efficiency is set to −0.2. The quadrant enclosed by the dotted lines corresponds to periods during which Pol I is bound to DNA.
 
 Multiple FRET trajectories for each DNA substrate (containing 5’ flap) interacting with Pol I were analyzed globally using a Hidden Markov model, showing that two distinct states were sufficient to account for all data sets. The resulting FRET efficiency histograms for each state are centred at ∼0.8 and ∼0.6 efficiency (Figure 5C). Notably, the fractional populations of the high-FRET and mid-FRET peaks are similar to the fractional populations of states N and P, respectively, observed with the first labeling scheme (compare Figure 5C and Figure 3C). This is true across all three substrates containing 5’ flaps, which partition differently between states N and P. Accordingly, the high-FRET and mid-FRET species observed with the present labeling scheme are assigned to states N and P, respectively. The high FRET efficiency of state N indicates that the donor and acceptor sites are relatively close in space (donor-acceptor distance ∼40 Å), confirming that state N arises from engagement of the 5’ nuc domain with the downstream DNA. The lower FRET efficiency of state P indicates that the 5’ nuc domain is somewhat further from the downstream DNA when the primer 3’ terminus occupies the pol domain (donor-acceptor distance ∼49 Å). Direct transitions between the mid-FRET and high-FRET states are observed in individual FRET trajectories (Figure 5B) and in composite TDPs (Figure 5D), indicating that Pol I can switch between states P and N without dissociation. This conclusion is consistent with the observations from the first labeling scheme (Figure 3D).
 
@@ -85,7 +117,7 @@ In striking contrast, the primer/template substrate mostly populates a single FR
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62046/elife-62046-fig6-v1.jpg)
 
-**Figure 6.:** 5’ nuc domain within Pol I bound to primer/template substrate.(A) Schematic representation of donor (yellow) and acceptor (cyan) labeling sites. (B) Representative set of donor, acceptor and FRET trajectories. (C) FRET efficiency histograms compiled from n individual FRET trajectories. (D) Transition density plot compiled from a total of n transitions. Same presentation as Figure 5D.
+**Figure 6.:** (A) Schematic representation of donor (yellow) and acceptor (cyan) labeling sites. (B) Representative set of donor, acceptor and FRET trajectories. (C) FRET efficiency histograms compiled from n individual FRET trajectories. (D) Transition density plot compiled from a total of n transitions. Same presentation as Figure 5D.
 
 ## Discussion
 
@@ -113,38 +145,157 @@ DNA polymerases from many organisms also possess distinct enzymatic activities t
 
 ## Materials and methods
 
-## Oligonucleotides
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>CJ803</td>
+      <td>Yale coli genetic stock center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>pXS67</td>
+      <td>Yale coli genetic stock center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 site-directed mutagenesis kit</td>
+      <td>New England Biolabs</td>
+      <td>#E0554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Quik Change kit</td>
+      <td>Agilent</td>
+      <td>200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Alexa Fluor 488 NHS ester</td>
+      <td>Thermo Fisher</td>
+      <td>A20000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alexa Fluor 488 C5 maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alexa Fluor 594 NHS ester</td>
+      <td>Thermo Fisher</td>
+      <td>A20004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Alexa Fluor 594 C5 maleimide</td>
+      <td>Thermo Fisher</td>
+      <td>A10256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit_learn</td>
+      <td>other</td>
+      <td></td>
+      <td>public domain</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>other</td>
+      <td></td>
+      <td>public domain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oligonucleotides
 
 All DNA oligonucleotides were purchased from IDT in purified form and used as delivered. Oligonucleotides containing an amino-modified dT were labeled with either Alexa Fluor 488 or Alexa Fluor 594 NHS ester (ThermoFisher Scientific) according to the manufacturer’s protocol. Template strands contained a biotin group at the 3’ end for immobilization on neutravidin-coated microscope slides. All oligonucleotide sequences and modifications are listed in Appendix 1—table 1 and Appendix 1—table 2.
 
-## Expression of Pol I derivatives
+### Expression of Pol I derivatives
 
 A Pol I expression vector was generated from the plasmid pXS67 (Yale Coli Genetic Stock Center, Strain CJ803) by site-directed mutagenesis using a QuikChange kit (Agilent) according to the manufacturer’s protocol. This construct, referred to as wild-type (WT) in the text, also carried C262S and C907S mutations to remove the two native cysteines in Pol I, a D424A mutation to suppress 3’–5’ exonuclease activity, a D116A mutation to suppress 5’ nuclease activity and a 6× histidine tag attached to the C-terminus of the protein by a Gly-Pro-Gly linker. A Pol I construct containing an additional L361A mutation was generated from the WT construct by site-directed mutagenesis using a Q5 site-directed mutagenesis kit (NEB) according to the manufacturer’s protocol. KF carrying K550C, D424A, and C907S mutations (and L361A, as indicated) was produced from a previously described plasmid (Berezhna et al., 2012; Lamichhane et al., 2013). Expression and purification of KF was carried out as previously described (Berezhna et al., 2012; Joyce and Derbyshire, 1995). Pol I was expressed in the same manner and purified as detailed below.
 
-## Purification of Pol I derivatives
+### Purification of Pol I derivatives
 
 E. coli cells expressing Pol I were lysed by sonication in HisTrap Buffer A (50mM Tris-HCl, pH 7.5, 10 mM-mercaptoethanol, 10 mM imidazole) supplemented with 20 μM phenylmethylsulfonyl fluoride (PMSF). Cellular debris was removed by centrifugation at 7500×g for 15 min at 4° C, and the clarified cell extract was loaded onto a 5 mL HisTrap HP column (GE Life Sciences) equilibrated in HisTrap Buffer A. The column was washed with five column volumes of HisTrap Buffer A, and protein was eluted with HisTrap Buffer B (50 mM Tris-HCl, pH 7.5, 10 mM-mercaptoethanol, 250 mM imidazole). Fractions containing Pol I were then loaded onto a 5 mL HiTrap Heparin HP column (GE Life Sciences) equilibrated in Heparin Buffer A (50 mM Tris-HCl, pH 7.5, 1 mM DTT). Protein was eluted over a 0–50% gradient of Heparin Buffer B (50 mM Tris-HCl, pH 7.5, 1 mM DTT, 2 M NaCl). All purification steps were monitored by PAGE analysis (Appendix 2). Fractions containing Pol I were combined and exchanged into 50 mM sodium phosphate buffer, pH 7, using an Econo-Pac 10DG column (Bio-Rad) prior to labeling.
 
-## Fluorophore labeling
+### Fluorophore labeling
 
-Pol I or KF constructs were labeled with Alexa Fluor A594 or Alexa Fluor A488 C5 maleimide (ThermoFisher Scientific) and purified as described previously (Berezhna et al., 2012). Protein concentrations and labeling efficiency were calculated based on optical absorption using an extinction coefficient of ε280 = 86,180 M-1 cm-1, ε590 = 90,000 M-1 cm-1, and ε495 = 71,000 M-1 cm-1 for Pol I, A594, and A488 respectively. Labeling efficiency was typically between 65 and 100%. Purified labelled protein was concentrated using a 50 kDa MWCO centrifugal filter (EMD Millipore) and stored at −80° C in buffer containing 10 mM Tris-HCl, pH 7.5, 1 mM EDTA, 1 mM DTT, and 50% (v/v) glycerol.
+Pol I or KF constructs were labeled with Alexa Fluor A594 or Alexa Fluor A488 C5 maleimide (ThermoFisher Scientific) and purified as described previously (Berezhna et al., 2012). Protein concentrations and labeling efficiency were calculated based on optical absorption using an extinction coefficient of $\epsilon_{280}$ = 86,180 M-1 cm-1, $\epsilon_{590}$ = 90,000 M-1 cm-1, and $\epsilon_{495}$ = 71,000 M-1 cm-1 for Pol I, A594, and A488 respectively. Labeling efficiency was typically between 65 and 100%. Purified labelled protein was concentrated using a 50 kDa MWCO centrifugal filter (EMD Millipore) and stored at −80° C in buffer containing 10 mM Tris-HCl, pH 7.5, 1 mM EDTA, 1 mM DTT, and 50% (v/v) glycerol.
 
-## smFRET data acquisition
+### smFRET data acquisition
 
 smFRET data collection was performed using a custom built prism-based TIRF microscope as described previously (Berezhna et al., 2012). Briefly, a sample chamber was assembled with quartz slides passivated with polyethylene glycol and coated with neutravidin (Lamichhane et al., 2010). Biotinylated DNA substrates (20 pM) were flowed into the sample chamber and allowed to equilibrate for 5 min. The sample chamber was washed to remove unbound substrate, and 5 nM Pol I supplemented with 1 mM propyl gallate was introduced into the chamber. All solutions were prepared in imaging buffer (50 mM Tris-HCl, pH 7.5, 10 mM MgCl2, 1 mM DTT, 50 mM NaCl, and 2 mM Trolox). Data were collected with 100 ms integration time using a custom single-molecule data acquisition program that controlled the CCD camera. Single-molecule donor and corresponding acceptor time trajectories were extracted from movies using custom scripts written in IDL. The software packages to control the CCD camera and extract time trajectories were kindly provided by the laboratory of Dr. Taekjip Ha. All measurements were repeated at least six times by recording fluorescence data from different areas of the slide surface.
 
-## smFRET data analysis
+### smFRET data analysis
 
-All data analyses were carried out using custom software written in-house using Python and supporting packages. Individual donor and corresponding acceptor intensity versus time traces were corrected for background signal by subtracting the median signal in each channel after photobleaching. Acceptor intensity traces were also corrected for leakage from the donor channel, as determined previously (Berezhna et al., 2012). FRET efficiency trajectories were calculated as(1)E=IAIA+IDwhere E is the apparent FRET efficiency at each time point and ID and IA are the corresponding corrected donor and acceptor intensities, respectively. Traces exhibiting anti-correlated fluctuations in the donor and acceptor intensities, constant total intensity (sum of donor and acceptor), and single-step photobleaching events were selected for further analysis.
+All data analyses were carried out using custom software written in-house using Python and supporting packages. Individual donor and corresponding acceptor intensity versus time traces were corrected for background signal by subtracting the median signal in each channel after photobleaching. Acceptor intensity traces were also corrected for leakage from the donor channel, as determined previously (Berezhna et al., 2012). FRET efficiency trajectories were calculated as
 
-Multiple FRET trajectories were analyzed globally using a Hidden Markov Model (HMM). The model was trained on all selected traces for a particular protein/substrate combination simultaneously using an expectation-maximization method (Rabiner, 1989). For each model, the minimum number of states that adequately fit individual traces was determined by manual inspection. Once the model was trained, the Viterbi algorithm (Rabiner, 1989) was used to determine the most likely hidden state path for each trajectory. This labelled state path was then used to aggregate all data points belonging to a particular state in order to compile composite histograms of FRET efficiency, using a Kernel Density estimation (KDE) algorithm (scikit-learn) with a Gaussian kernel and a bandwidth of 0.04. The relative populations of distinct FRET states were directly obtained during compilation of the corresponding histograms. Transition density plots (McKinney et al., 2006) were constructed using a KDE (Gaussian kernel, 0.04 bandwidth), where 2D points in the training data set were defined as the median FRET efficiency in the initial and final states. Dwell-time histograms were constructed with equal bin widths across the entire data range. The optimal bin width for each histogram was estimated using the Freedman-Diaconis rule(2)w=2 IQR⁢(x)⁢N-13where w is the bin width, x is the array of dwell times, N is the number of data points in x and IQR is the interquartile range of the data.
+$$
+E=\frac{I_{A}}{I_{A}+I_{D}}
+$$
 
-Kinetic rate constants for overall decay of state P (ko⁢b⁢sP) were determined by fitting dwell-time histograms with a single-exponential function (SciPy). This observed rate constant is the sum of the microscopic rate constants for all available transitions (kP→N and kP→U):(3)ko⁢b⁢sP=kP→N+kP→Uwhere state U denotes unbound DNA.
+where E is the apparent FRET efficiency at each time point and $I_{D}$ and $I_{A}$ are the corresponding corrected donor and acceptor intensities, respectively. Traces exhibiting anti-correlated fluctuations in the donor and acceptor intensities, constant total intensity (sum of donor and acceptor), and single-step photobleaching events were selected for further analysis.
 
-The ratio of these rate constants is governed by the statistical frequencies of the corresponding transitions (fP→N and fP→U):(4)kP→NkP→U=fP→NfP→U
+Multiple FRET trajectories were analyzed globally using a Hidden Markov Model (HMM). The model was trained on all selected traces for a particular protein/substrate combination simultaneously using an expectation-maximization method (Rabiner, 1989). For each model, the minimum number of states that adequately fit individual traces was determined by manual inspection. Once the model was trained, the Viterbi algorithm (Rabiner, 1989) was used to determine the most likely hidden state path for each trajectory. This labelled state path was then used to aggregate all data points belonging to a particular state in order to compile composite histograms of FRET efficiency, using a Kernel Density estimation (KDE) algorithm (scikit-learn) with a Gaussian kernel and a bandwidth of 0.04. The relative populations of distinct FRET states were directly obtained during compilation of the corresponding histograms. Transition density plots (McKinney et al., 2006) were constructed using a KDE (Gaussian kernel, 0.04 bandwidth), where 2D points in the training data set were defined as the median FRET efficiency in the initial and final states. Dwell-time histograms were constructed with equal bin widths across the entire data range. The optimal bin width for each histogram was estimated using the Freedman-Diaconis rule
 
-The values of the transition frequencies and their associated uncertainties were estimated using a bootstrapping method. The number of relevant transitions were counted for a sample of 50 randomly selected traces from the total dataset. This process was repeated 50 times and the mean values of fP→N and fP→U, and their associated standard deviations, were obtained. Equations 3 and 4 were then solved to determine the microscopic rate constants, with errors propagated accordingly. The same analysis was applied to state N.
+$$
+w=2 IQR⁢(x)⁢N^{-\frac{1}{3}}
+$$
 
-Overall Kd values for binding of Pol I to DNA substrates were calculated according to(5)Kd=[Pol]TfB-[Pol]Twhere [Pol]T is the total concentration of Pol I and the fraction of bound DNA, fB, is defined as(6)fB=# framesinanyboundstatetotal# offrames
+where w is the bin width, x is the array of dwell times, N is the number of data points in x and IQR is the interquartile range of the data.
 
-The mean value of fB and its uncertainty were determined using a similar bootstrapping method to that described above.
+Kinetic rate constants for overall decay of state P ($k_{o⁢b⁢s}^{P}$) were determined by fitting dwell-time histograms with a single-exponential function (SciPy). This observed rate constant is the sum of the microscopic rate constants for all available transitions ($k_{P→N}$ and $k_{P→U}$):
+
+$$
+k_{o⁢b⁢s}^{P}=k_{P→N}+k_{P→U}
+$$
+
+where state U denotes unbound DNA.
+
+The ratio of these rate constants is governed by the statistical frequencies of the corresponding transitions ($f_{P→N}$ and $f_{P→U}$):
+
+$$
+\frac{k_{P→N}}{k_{P→U}}=\frac{f_{P→N}}{f_{P→U}}
+$$
+
+The values of the transition frequencies and their associated uncertainties were estimated using a bootstrapping method. The number of relevant transitions were counted for a sample of 50 randomly selected traces from the total dataset. This process was repeated 50 times and the mean values of $f_{P→N}$ and $f_{P→U}$, and their associated standard deviations, were obtained. Equations 3 and 4 were then solved to determine the microscopic rate constants, with errors propagated accordingly. The same analysis was applied to state N.
+
+Overall $K_{d}$ values for binding of Pol I to DNA substrates were calculated according to
+
+$$
+K_{d}=\frac{[Pol]_{T}}{f_{B}}-[Pol]_{T}
+$$
+
+where $[Pol]_{T}$ is the total concentration of Pol I and the fraction of bound DNA, $f_{B}$, is defined as
+
+$$
+f_{B}=\frac{# framesinanyboundstate}{total# offrames}
+$$
+
+The mean value of $f_{B}$ and its uncertainty were determined using a similar bootstrapping method to that described above.

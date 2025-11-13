@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Biochemistry, University of Cambridge Cambridge United Kingdom
+1. Department of Biochemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -23,6 +23,30 @@ The transfer of genetic information between DNA molecules promoted by homologous
 
 In eukaryotic cells, the reaction of HR is performed by RAD51 (Baumann et al., 1996; Sung, 1994), a member of a highly conserved family of ATPases that includes bacterial RecA and archaeal RadA (Lin et al., 2006; Chintapalli et al., 2013). RAD51 polymerises on the single-stranded (ss) DNA overhangs that form upon long-range resection of DNA ends (Cejka and Symington, 2021). The RAD51 nucleoprotein filament invades the donor DNA duplex and searches for sequence homology within a three-stranded synaptic filament intermediate (Renkawitz et al., 2014; Greene, 2016). When homology is found, the invading strand of the filament becomes stably paired to the complementary sequence of the donor DNA, yielding a structure known as a displacement loop (D-loop) (Shibata et al., 1979; Jain et al., 1995; Piazza et al., 2019; Figure 1A), which ultimately progresses to strand exchange. Although cellular HR is controlled by a complex network of recombination mediators such as BRCA2 (Bell et al., 2023), the RAD51 paralogues (Greenhough et al., 2023; Taylor et al., 2015; Rawal et al., 2023), and FIGNL1 (Ito et al., 2023; Carver et al., 2025), RAD51 can catalyse the biochemical reaction of strand exchange independently.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic drawing of RAD51 D-loop formation during double-strand DNA break repair by homologous recombination. (B) CryoEM map of the RAD51 D-loop, coloured according to local resolution. (C) Drawing of the RAD51 D-loop structure. The nine RAD51 protomers in the filament are shown as cylinder cartoons, coloured alternatively in lavender and pink. The DNA strands of the D-loop are represented as light yellow tubes for the phosphoribose backbone, and the nucleotides are drawn in stick representation with filled rings. (D) D-loop drawing that highlights the trajectories of the DNA strands of the donor DNA and the invading DNA. The complementary and exchanged strands of the donor DNA are coloured light green and orange; the invading strand of the filament is coloured as the exchanged strand to emphasise that they would share sequence homology in vivo. The protein filament is drawn as a transparent surface in light blue. (E) Nucleotide sequences and observed base pairing of the D-loop DNA. Sequences are coloured as in panel D. (F) Cartoon drawing of the DNA strands at the 5’-arm junction. The phosphoribose backbone is shown as a narrow tube, the nucleotide bases as filled rings. DNA strands are coloured as in panel D. The Watson-Crick hydrogen bonds between base pairs are drawn as dashed purple lines. (G) Cartoon drawing of the DNA strands at the 3’-arm junction, coloured and annotated as in panel F.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequences and designed base pairing of oligonucleotides used in D-loop reconstitution for cryoEM analysis. Nucleotides in lower case were not included in the final atomic model. (B, C) Electrophoretic mobility shift assays (EMSAs), shown as composite fluorescent images: the Cy5-labelled (B) or SYBR Gold-stained single-stranded DNA (ssDNA) (B) is coloured red, while the Cy3-labelled strand in double-stranded DNA (dsDNA) is green. Schematic drawings of the DNA substrates coloured according to the fluorescence label are shown above each experiment. (B) RAD51 titration on ssDNA only or ssDNA and complementary dsDNA. (C) RAD51 binding to doubly biotinylated ssDNA only or to doubly biotinylated ssDNA and complementary doubly biotinylated duplex DNA, in the presence of mono-streptavidin (mSA).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 3D reconstructions in light grey were used for further processing. (A) Representative micrograph with superimposed particles from final particle set. (B) Processing workflow. (C) Fourier shell correlation (FSC) curve with 0.143 threshold line (top) and conical FSC curve for directional resolution analysis (bottom).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** 3D reconstructions in light grey were used for further processing. (A) Representative micrograph with superimposed particles from final particle set. (B) Processing workflow. (C) Fourier shell correlation (FSC) curve with 0.143 threshold line (left) and conical FSC curve for directional resolution analysis (right).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Superposition of D-loop, pre-synaptic (PDB ID: 8BQ2) and post-synaptic (PDB ID: 8BR2) filament structures. Only the DNA is shown, as a tube ribbon coloured white (D-loop), grey (post-synaptic DNA), and dark grey (pre-synaptic DNA). The centroid positions of the RAD51 protomers in each structure are joined to generate a trajectory representative of the filament pitch for each structure. (B) Details of the cryoEM map for the D-loop DNA, with superimposed atomic model of the DNA strands. (C) Superposition of D-loop and post-synaptic DNA, oriented and coloured as in panel A, showing the base pairs in the homologous pairing sequence of the D-loop and post-synaptic double-stranded DNA (dsDNA). (D) Orientation of the axes of the arms of the donor dsDNA relative to the filament axis. The axes are drawn as cylinders and were fitted based on the centroid positions of the base pairs (for the donor arms) or the nucleotides of single-stranded DNA (ssDNA) in the filament. The tilt angles of the dsDNA arms relative to the filament axis are indicated.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Details of the cryoEM map for the base pairs formed by the invading strand (is) of the filament DNA with the complementary strand (cs) of the donor DNA. Nucleotides designed to base pair in the displacement loop (D-loop) structure are in bold. (A) Homologous base pairing. (B) Base conformation for the designed C8is:G26cs pair. Occupancy values for the two G26 conformations are reported in the panel.
+
 The RAD51/Reca/RadA protein family has been extensively investigated to elucidate the mechanistic basis for the reaction of strand exchange. Low-resolution electron microscopy (EM) and X-ray crystallography have demonstrated conservation in the helical parameters of the nucleoprotein filament (Ogawa et al., 1993; Yu et al., 2001), the structure of the ATPase domain (Story et al., 1992; Pellegrini et al., 2002), and the protomer self-association into a filament (Conway et al., 2004; Wu et al., 2004). CryoEM analysis of the RAD51 nucleoprotein filament has revealed further conservation with RecA in the mode of interaction with DNA, such as the observation that DNA stretching results from its separation into B-form nucleotide triplets (Short et al., 2016; Xu et al., 2017; Appleby et al., 2023a; Chen et al., 2008). Furthermore, single-molecule experiments have determined the kinetic parameters of filament nucleation and growth (Galletto et al., 2006; Candelli et al., 2014), have shown that a minimum length of eight homologous nucleotides is required for the formation of stable synaptic joints (Hsieh et al., 1992; Qi et al., 2015) and that homologous pairing takes place in steps of three nucleotides (Ragunathan et al., 2011; Lee et al., 2015).
 
 High-resolution information about the RAD51 synaptic state is still missing, limiting our mechanistic understanding of the strand-exchange reaction. In this study, we have carried out the biochemical reconstitution, cryoEM structure, and biophysical validation of a D-loop of human RAD51. The structure elucidates the key steps of strand exchange, including the mechanism of filament engagement with the donor DNA, strand invasion and pairing with the complementary strand, and capture of the exchanged strand. Comparison with the synaptic state of RecA filaments (Yang et al., 2020) reveals both conserved and distinct features of the strand-exchange reaction, shedding light on the molecular evolution of the biochemical reaction of HR.
@@ -33,19 +57,19 @@ EM analysis of filamentous RAD51 relies normally on helical averaging, which is 
 
 We collected an initial cryoEM dataset of 2792 movies of the RAD51 D-loop sample and processed the data by single-particle analysis. 2D classification showed clear evidence of the presence of synaptic particles and yielded a D-loop reconstruction at 3.31 Å resolution (Figure 1—figure supplement 2 and Supplementary file 2). To improve data homogeneity and resolution, we collected a larger dataset of 8960 movies of a D-loop sample with ss- and dsDNA that had been biotinylated at both ends and capped with monomeric streptavidin (Figure 1—figure supplement 1C; Appleby et al., 2023b), yielding a structure of the D-loop at 2.64 Å (Figure 1—figure supplement 3 and Supplementary file 2). The final single-particle reconstruction based on 102,596 particles comprises a nucleoprotein filament of 9 RAD51 protomers and 26 nucleotides of ssDNA, bound to a dsDNA containing the central bubble region flanked by 15- and 16-bp-long segments of donor DNA. The cryoEM map ranges in resolution between 2.5 Å and 2.9 Å for the homologous pairing region of the D-loop and 3 Å and 6 Å for the flanking dsDNA arms (Figure 1B).
 
-## D-loop structure
+### D-loop structure
 
 In the D-loop structure, RAD51 maintains the right-handed helical arrangement of protomers observed in pre- and post-synaptic filaments (Short et al., 2016; Xu et al., 2017), with the same helical twist and a slightly compressed pitch relative to the pre-synaptic filament (Figure 1C, Figure 1—figure supplement 4A, and Figure 1—video 1). Continuous density for the exchanged strand (es), that becomes excluded upon homologous pairing of the invading strand (is) with the complementary strand (cs) of the donor DNA, connects the arms of the donor DNA (Figure 1—figure supplement 4B). The filament-bound esDNA follows a peripheral path along the filament groove that runs parallel to the isDNA (Figure 1D). The conformation of the duplex formed by pairing of the isDNA and csDNA strands resembles closely that of the dsDNA in the post-synaptic filament (Figure 1—figure supplement 4C; Xu et al., 2017; Appleby et al., 2023a), with sharp bends at the junctions where the donor DNA enters and exits the filament (Figure 1C and D).
 
 The arms of the donor DNA flanking the complementary sequence project away from the filament in opposite directions and with different tilt angles relative to the filament axis: the dsDNA arm closer to the 5’-end of the filament, hereinafter referred to as the 5’-arm, is almost perpendicular to the filament axis, with its filament-proximal end pointing slightly towards the 3’-end of the filament (3’-tilt), whereas the dsDNA arm closer to the 3’-end of the filament, hereinafter referred to as the 3’-arm, exhibits a more pronounced tilt in the opposite direction, towards the 5’-end of the ssDNA (5’-tilt) (Figure 1D and Figure 1—figure supplement 4D). The opposite tilt of the donor arms favours their connection via the esDNA strand in the D-loop structure.
 
-## Homologous pairing
+### Homologous pairing
 
 A continuous span of 10 base-pair interactions is present between the isDNA and csDNA (Figure 1E and Figure 1—figure supplement 5A). Base pairing includes the entirety of the csDNA sequence designed to be homologous to the invading strand, with the exception of G26cs (Figure 1E and F and Figure 1—figure supplement 5A): its guanine base adopts a minor-occupancy conformation in the direction of C8 in the isDNA but too distant for Watson-Crick hydrogen bonding, while the predominant conformation is pointing away (Figure 1—figure supplement 5B).
 
 Base pairing is fully maintained in the transition between the csDNA:isDNA duplex and the flanking arms of the donor DNA (Figure 1F and G), with the exception of the aforementioned G26cs. Unexpectedly, an additional, mismatched base pair is formed at the junction of the csDNA:isDNA duplex with the 3’-arm of the donor DNA, where T18is becomes base paired with G16cs (Figure 1E, G and Figure 1—figure supplement 5A). Thus, the complementary pairing observed in the D-loop structure does not entirely follow our experimental design, with one unrealised G26cs:C8is base pair and one mismatched G16cs:T18is base pair (Figure 1—figure supplement 5). This observation indicates that factors in addition to hydrogen-bonding potential contribute to determining pairing between the donor DNA and the invading strand of the filament.
 
-## Unwinding and strand invasion of donor DNA
+### Unwinding and strand invasion of donor DNA
 
 Biochemical and structural analyses of pre- and post-synaptic filaments have revealed that RAD51 loops L1 and L2 mediate DNA binding, with prominent roles for amino acids L1 R235 and L2 V273 in partitioning filament DNA into nucleotide triplets (Xu et al., 2017; Matsuo et al., 2006). However, L2 residues Q272 to P283 remained disordered in these filament structures (Figure 2A).
 
@@ -61,7 +85,7 @@ The L2 loop acts as a physical spacer, directly separating the unwound strands o
 
 The asymmetric binding of RAD51-H and -E L2 loops at the boundaries between the arms of the donor DNA and the three-stranded synaptic DNA suggests that strand invasion and pairing follows a preferred direction. Thus, invasion by filament DNA likely begins at the 3’-end of the homology region in the complementary strand of the donor DNA and extends in the 5’-direction, as incrementally more nucleotides of csDNA are exposed by L2-loop insertions and become available for homologous pairing.
 
-## Capture of the exchanged strand
+### Capture of the exchanged strand
 
 Strand invasion leads to displacement of the exchanged strand in the donor DNA. The structure of the D-loop shows that the esDNA is sequestered in a basic channel running parallel to the ssDNA-binding groove of the RAD51 nucleoprotein filament (Figure 3A and B). One side of the channel is formed by RAD51 residues 303–313 (Figure 3C), that fold in a beta hairpin on the inside of the filament groove, whereas the opposite side is formed by the C-terminal half of the L2-loop sequence (Figure 3B and D). In the filament, the beta hairpins of successive protomers align to generate a continuous ssDNA-binding stripe (Figure 3D). The esDNA is bound in the basic channel so that its aromatic bases remain largely exposed to solvent whereas the phosphodiester backbone faces the protein (Figure 3B and D).
 
@@ -75,7 +99,7 @@ Of the three RAD51 protomers F, G, and H that bind the esDNA, RAD51-G makes the 
 
 In total, the filament interacts with 9 of the 11 nucleotides of unpaired esDNA via contiguous interactions of the two RAD51 protomers G and H (5 and 4 nt, respectively). This compares with donor DNA opening by L2-loop insertion, which progresses by exposure of three nucleotides per RAD51 protomer.
 
-## Filament binding of donor DNA arms
+### Filament binding of donor DNA arms
 
 The D-loop structure shows that the nucleoprotein filament interacts with the double-stranded arms of the donor DNA via the N-terminal domains of RAD51 protomers A and D (Figure 4A and B). Although the position of the RAD51-A and -D NTDs relative to the donor DNA is broadly similar, their DNA-binding interfaces differ significantly in the extent and mode of their engagement with the 3’- and 5’-arm duplexes, respectively.
 
@@ -87,9 +111,29 @@ The RAD51-D NTD engages the minor groove of the 5’-arm DNA (Figure 4C). The si
 
 The interaction of the NTD with the arms of the donor DNA highlights a lack of direct contacts with the bases and the predominantly electrostatic nature of the association. Such plasticity in the NTD-DNA interaction might be required for effective D-loop formation, as the direction at which the 3’-arm exits the filament upon D-loop formation is a function of the number of nucleotides involved in homologous pairing.
 
-## Structure-based mutagenesis of RAD51 residues important for D-loop formation
+### Structure-based mutagenesis of RAD51 residues important for D-loop formation
 
 The atomic model of the RAD51 D-loop has revealed several new protein-DNA interfaces, including those involved in strand separation, capture of the exchanged strand, and anchoring of the flanking DNA arms to the filament. To assess the relative importance and contribution of RAD51 residues involved in D-loop formation, we performed alanine mutagenesis of F279 (strand separation); R303, K304, R306, K313 (esDNA capture); K39, K40, K64, K70, and K73 (arm duplex binding) (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ribbon drawing of RAD51, highlighting residues targeted for alanine mutagenesis, colour-coded according to their role in D-loop formation (F279 in pink; R303, K304, R306, K313 in magenta; K39, K40, K64, K70, K73 in light blue). (B) Strand-exchange assay showing the change in fluorescence for each RAD51 mutant following injection of the complementary strand after 9 min, with traces coloured according to amino acid as in panel A. Error bars denote the standard deviation of three independent replicates. The upper panel shows a diagrammatic representation of the assay, with DNA shown as light or dark brown lines and the fluorophore and quencher represented as in the key. (C) Schematic drawing of the experimental setup for single molecule analysis of RAD51 D-loop formation. (D) Kymograph of a representative D-loop formation event. The upper panel shows a time-lapse fluorescence intensity scan of the λ DNA, with a stable binding event at the expected target site (10.6 kb, indicated by the arrow). The white dashed line marks the first 60 s interval that was used in frame acquisition. The lower panel shows a summed projection of the fluorescence signal over the acquisition time. (E) Quantification of RAD51 filament binding events. The left-side histogram displays the binding profile of wild-type RAD51 (0.5 μM), showing a Gaussian distribution of binding events centred on the expected position of the complementary sequence (~10.6 kb), consistent with specific single-stranded DNA (ssDNA) pairing and D-loop formation. The right-side histogram shows the binding profile of the KK39,40AA RAD51 double mutant (2.5 μM). (F) Mechanism of D-loop formation by RAD51 nucleoprotein filaments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** For each mutant, increasing protein concentrations (0.5, 1, 2, 4, 6, 8, 10 µM) were titrated against a fixed amount of DNA (0.5 µM).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Traces for the wild-type RAD51 filaments. (B) Traces for KK39,40AA RAD51 mutant filaments, at 0.5 mM (left) and 2.5 mM (right). (C) Gaussian peak fitting for a representative trace of wild-type RAD51.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Side-by-side transparent surface representation of RAD51 (left, in light blue) and RecA (right, in light pink) D-loops, with DNA strands drawn as purple tubes. (B) Superposition of RAD51 and RecA protomers, coloured according to the colour key. (C) Side-by-side cylinder representation of RAD51 (left) and RecA (right) D-loops. The DNA-binding RAD51-NTD and RecA-CTD are coloured blue and magenta, respectively. The RAD51-NTD and RecA-CTD that contact the DNA are highlighted with dashed circles. The PDB accession code for the RecA D-loop is 7JY9.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/107114/elife-107114-fig5-figsupp5-v1.jpg)
 
 The designed mutations are distant from the binding site of ssDNA in filamentous RAD51 and therefore are not predicted to reduce the ability of the mutant protein to form nucleoprotein filaments on ssDNA. As expected, EMSA analysis showed that the F279 and NTD mutants retained wild-type ability to form filaments on ssDNA (Figure 5—figure supplement 1A). However, RAD51 mutants R303A, K304A, R306A, and K313A showed a clear decrease in ssDNA binding (Figure 5—figure supplement 1A), suggesting that, in addition to their role in esDNA capture, they might mediate the initial contact of the incoming ssDNA during pre-synaptic filament nucleation. All RAD51 mutants showed a moderate decrease in affinity for dsDNA, with the exception of K304 (Figure 5—figure supplement 1B).
 
@@ -117,11 +161,11 @@ Altogether, the available evidence suggests that the ability to perform DNA-stra
 
 ## Materials and methods
 
-## RAD51 expression and purification
+### RAD51 expression and purification
 
 Human RAD51 was expressed and purified as described (Brouwer et al., 2018). Briefly, RAD51 was co-expressed with a HisTag-MBP (Maltose Binding Protein)-BRCA2 BRC4 fusion protein in Rosetta BL21(DE3) Escherichia coli cells, and purified over successive steps of Ni2+ chromatography, heparin chromatography, and size-exclusion chromatography. The purified protein was concentrated and stored in small aliquots at –70°C. Structure-based RAD51 mutations were introduced according to standard protocols, and the mutant RAD51 proteins were purified as for the wild-type protein.
 
-## DNA substrate preparation
+### DNA substrate preparation
 
 DNA oligos were purchased from Integrated DNA Technologies (IDT). Unmodified or biotinylated oligos were supplied PAGE-purified. Fluorescently labelled oligos were HPLC-purified. All oligos were resuspended to 100 μM in TE buffer (10 mM Tris pH 7.5, 1 mM EDTA). dsDNA reagents were prepared at a concentration of 10 μM duplex in TE buffer, by mixing equimolar concentrations of the constituent complementary ssDNA oligos and heating at 95°C for 5 min before slowly cooling to room temperature.
 
@@ -129,7 +173,7 @@ For the strand-exchange assay, a duplex DNA 60mer in which one strand was 5’-l
 
 All DNA sequences can be found in Supplementary file 1.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 EMSA reactions were prepared in buffer: 25 mM HEPES pH 7.5, 150 mM NaCl, 2 mM DTT, 5 mM CaCl2, and 2 mM ATP, by mixing fluorescein-labelled ss- or dsDNA 60mer at 250 nM concentration with increasing concentrations of wild-type or mutant RAD51 (0.5, 1.0, 2.0, 4.0, 6.0, 8.0, and 10.0 µM) in a 20 µL volume, and incubated at room temperature for 10 min. 10 µL of 50% sucrose (wt/vol) was added to each reaction mixture prior to electrophoresis, and samples were resolved on a 0.5% agarose gel in TB buffer (45 mM Tris, 45 mM boric acid) at 45 V for 2 hr at 4°C.
 
@@ -137,27 +181,27 @@ For D-loop reconstitution experiments, EMSA reactions were prepared in the same 
 
 In experiments where unlabelled DNA was used, the gel was stained in a 2× SYBR Gold solution made up in milliQ water (10 min, 25°C) and then destained in milliQ water. Gels were visualised using a Typhoon FLA 9000 fluorescent gel imager, by excitation at 473 nm for fluorescein-labelled DNA or SYBR Gold staining, 532 nm excitation for Cy3-labelled DNA or 635 nm excitation for Cy5-labelled DNA.
 
-## DNA strand-exchange assay
+### DNA strand-exchange assay
 
 Strand-exchange assays were performed using a PHERAstar FS instrument (BMG Labtech) equipped with a fluorescence intensity optic module (excitation at 485 nm, emission at 520 nm, 10 nm bandwidth). The gain was calibrated to 80% of the maximum fluorescence intensity using a 25 nM sample of fluorescein-labelled ssDNA in strand-exchange buffer: 150 mM NaCl, 25 mM HEPES pH 7.5, 2 mM DTT, 2 mM CaCl2, 2 mM ATP, 0.1 mg/mL BSA.
 
 Reactions were prepared in 50 µL volumes of strand-exchange buffer containing 500 nM RAD51 and 50 nM ssDNA 60mer, corresponding to a 1:2 ratio of RAD51 to RAD51-binding sites in the DNA. RAD51 was incubated with ssDNA at 30°C for 9 min prior to initiation of the strand-exchange reaction by 50 µL injection of dsDNA labelled with fluorescein at the 5’-end of one strand and with the Iowa Black quencher at the 3’-end of the complementary strand, using the PHERAstar FI Slow Kinetics mode. Fluorescence measurements began 2 s after duplex injection, and data were collected at 1 min intervals for an additional 30 min. As a specificity control for strand exchange, the reaction was performed with an oligo(dT) ssDNA 60mer. Blank measurements were performed by injecting dsDNA into strand-exchange buffer lacking both ssDNA and RAD51. All reactions were performed in triplicate.
 
-## CryoEM
+### CryoEM
 
-## Sample preparation
+#### Sample preparation
 
 5 μM RAD51 was first incubated with 250 nM ssDNA in buffer: 150 mM NaCl, 25 mM HEPES pH 7.5, 2 mM DTT, 2 mM ATP, 5 mM CaCl2, for 10 min to assemble a nucleoprotein filament; 250 nM dsDNA was then added to the sample and incubated for a further 10 min. In experiments with mSA-capped DNA, mSA was first added to the DNA at 5× molar excess over biotin labels and incubated for 15 min before the addition of other components.
 
-## Vitrification protocol
+#### Vitrification protocol
 
 UltrAuFoil R1.2/R1.3 300 mesh gold grids (Quantifoil) were glow-discharged twice for 1 min using a PELCO easiGlow system (0.38 mBar, 30 mA, negative polarity). 3 μL of sample was applied to the mesh side of each grid before plunge-freezing in liquid ethane using a Vitrobot Mark IV robot (FEI), set to 100% humidity, 4°C, 2 s blot time, and –3 blot force.
 
-## Grid screening and data collection
+#### Grid screening and data collection
 
 Grids were screened using a Talos Arctica 200 keV transmission electron microscope fitted with a Falcon III direct electron detector (Thermo Fisher). Data were collected using a Titan Krios G3 300 keV transmission electron microscope (Thermo Fisher) fitted with a K3 (Gatan) direct electron detector, using the EPU package (Thermo Fisher). Two datasets were collected: a first dataset with free-end DNA (#1; 2792 movies in super-resolution mode at 0.326 Å/pixel) and a second dataset with mSA-capped ss- and dsDNA (#2, 8960 movies in super-resolution mode at 0.326 Å/pixel and 2× binned). All data were recorded at the cryoEM facility of the University of Cambridge in the Department of Biochemistry. Data collection parameters are reported in Supplementary file 2.
 
-## Data processing
+#### Data processing
 
 Data was processed using cryoSPARC 4.4.1 (Punjani et al., 2017). Micrographs were motion-corrected with Patch Motion Correction with output F-crop factor set to ½. The contrast transfer function (CTF) was estimated using Patch CTF Estimation, and exposures were manually curated to remove outliers.
 
@@ -165,11 +209,11 @@ Dataset #1 1477 particles were manually picked from 2711 micrographs and, after 
 
 Dataset #2 The final 3D reconstruction obtained from dataset #1 processing was low-pass filtered at 8 Å and used to generate templates for particle picking. 2,940,045 particles were picked from 8834 micrographs, 2,680,398 particles were selected after manual curation, and 2,245,379 particles extracted with a 208-pixel box. After multiple rounds of 2D classification, classes from a 19,116 particle set showed clear synaptic features and were used for ab initio reconstruction and homogenous refinement of a 3D volume from 13,626 particles, which presented the expected filament shape and D-loop features such as density attributable to the dsDNA arms of the target DNA. These particles were used for Topaz training and picking of 415,845 particles, of which 413,320 particles were extracted with a 208-pixel box. The extracted particles were fed directly into ab initio reconstruction and heterogeneous refinement, which yielded a 3D volume of a filament with recognisable D-loop features at lower map contouring for 328,724 extracted particles. 3D classification into 10 classes identified a single class of 43,824 particles of a complete D-loop structure, which refined in non-uniform refinement to 2.96 Å. This particle set was used in a second round of Topaz training and picking that yielded 922,204 particles, of which 900,213 were extracted with a 208-pixel box and used directly in ab initio reconstruction and heterogenous refinement of a filament volume of 711,480 particles with recognisable D-loop features at lower map contouring. 3D classification of this particle set over 10 classes identified one class of 74,483 particles corresponding to a high-quality D-loop structure, which was improved by further classification and refinement by heterogenous refinement. The resulting set of 102,679 particles was subject to non-uniform refinement to yield a 3D reconstruction at 2.72 Å, followed by reference-based motion correction of 102,596 particles and another step of non-uniform refinement, to yield a final reconstruction at 2.64 Å resolution.
 
-## Model building and refinement
+#### Model building and refinement
 
 An atomic model comprising nine RAD51-ATP protomers, 26 nucleotides of ssDNA and 41 nucleotides for each strand of the ‘mismatch bubble’ dsDNA was built into the 3D volume of the final dataset #2 reconstruction at 2.64 Å resolution using Coot (Emsley and Cowtan, 2004). Fitting of the model to the map was improved by real-space refinement in Phenix (Afonine et al., 2018) and model rebuilding in Coot (Emsley and Cowtan, 2004). In the later stages of refinement, map fitting and model stereochemistry were improved using ISOLDE (Croll, 2018). The register of the DNA sequence in the structure could be unambiguously assigned based on fitting of the nucleoside bases in the homologous dsDNA region, where the map resolution was highest.
 
-## Optical tweezers-based single-molecule fluorescence imaging
+### Optical tweezers-based single-molecule fluorescence imaging
 
 To reconstitute RAD51 D-loop formation at the single-molecule level, we used a C-Trap (LUMICKS) instrument that combines optical tweezers and confocal fluorescence microscopy. The experimental setup featured a microfluidic chip with four distinct flow channels separated by laminar flow: one for streptavidin-coated polystyrene beads (Spherotech, 4.43 μm diameter), one for biotinylated λ DNA, and two for buffer exchange or RAD51 nucleoprotein filaments reservoirs.
 
@@ -177,7 +221,7 @@ Doubly biotinylated λ DNA molecules (48.5 kbp) prepared as previously described
 
 RAD51 D-loop formation reactions were examined by incubating 20 µM RAD51 with 1 µM Alexa 488-labelled ssDNA 49mer in buffer: 25 mM HEPES pH 7.5, 150 mM NaCl, 2 mM ATP, 2 mM CaCl2, 2 mM DTT at room temperature for 20 min, 40-fold diluted in the same buffer and injected into the microfluidic flow cell for analysis of the interaction with the λ DNA. The 49-nt-long sequence of the ssDNA is complementary to nucleotides 10,617–10,666 of λ DNA, to promote D-loop formation at a single, specific site on the DNA tether. During imaging, the DNA tether tension was maintained at 20 pN, ensuring optimal conditions for detecting RAD51 interactions along the DNA substrate.
 
-## Data extraction and analysis
+### Data extraction and analysis
 
 Two-dimensional (2D) fluorescence scans (300×50 pixels) of individual λ DNA molecules were recorded for a total acquisition time of 180 s at a temporal resolution of one frame every 2 s. Given that RAD51 binding induces DNA extension (Hilario et al., 2009; van Mameren et al., 2009), leading to drift of the D-loop position under the constant applied force regime, only the initial 30 frames were considered for analysis to ensure accurate localisation. The stack of frames was summed using the open-source image processing package FIJI (ImageJ), to enhance fluorescence signal detection by summing pixel intensity values across all frames in a stack (Finkelstein et al., 2010). Fluorescence intensity profiles were extracted by applying a linear scan along the DNA contour and bead peripheries, excluding regions near the bead peripheries to minimise fluorescence distortion, enabling precise quantification of binding events.
 

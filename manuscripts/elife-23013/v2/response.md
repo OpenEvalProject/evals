@@ -87,9 +87,7 @@ We’ve tried to paraphrase this in the caption to Figure 4.
 
 In particular, it is a little strange that the fits are so tight, but so poor.
 
-This is an interesting point and is an artefact of bootstrapping residuals (because we’re working with time series) and not the data themselves. The empirical bootstrap distributions of parameters are used to generate the confidence envelopes on the fits; but strictly this procedure is only precisely valid if the underlying model is correct. An illustration is in Author response image 1: generate a noisy sine wave and fit a straight line to it. Then resample residuals and generate a confidence envelope – which is clearly not very useful.10.7554/eLife.23013.026Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.23013.026
-
-DOI: http://dx.doi.org/10.7554/eLife.23013.026
+This is an interesting point and is an artefact of bootstrapping residuals (because we’re working with time series) and not the data themselves. The empirical bootstrap distributions of parameters are used to generate the confidence envelopes on the fits; but strictly this procedure is only precisely valid if the underlying model is correct. An illustration is in Author response image 1: generate a noisy sine wave and fit a straight line to it. Then resample residuals and generate a confidence envelope – which is clearly not very useful.10.7554/eLife.23013.026Author response image 1.
 
 If one were to use the ‘true’ bootstrapping of the observations themselves, these envelopes would be larger, and would give a truer reflection of the sensitivity of parameter estimates to noise in the data. This is what the envelopes in the KH fits show more meaningfully, since it is clearly the better model.
 

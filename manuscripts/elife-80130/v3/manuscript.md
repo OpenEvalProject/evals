@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Chemical Engineering, Stanford University, School of Engineering Stanford United States
-2. https://ror.org/00f54p054 Departments of Structural Biology and Molecular & Cellular Physiology, School of Medicine, Stanford University Stanford United States
+1. Department of Chemical Engineering, Stanford University, School of Engineering Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Departments of Structural Biology and Molecular & Cellular Physiology, School of Medicine, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -31,39 +31,298 @@ Adherens junctions are essential intracellular adhesion sites in epithelial tiss
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig2-v3.jpg)
 
-**Figure 2.:** (A) Comparison of isolated (red, pdb 6dv1) and actin-bound (blue, pdb 6upv) αE-catenin ABDs. In the actin-bound structure, H0 and H1 become disordered and H2–H5 rearrange (yellow arrows). The C-terminal extension (CTE), which is disordered in the isolated structure, forms an extended peptide and interacts with actin. (B) Two-state catch bond model. αE-catenin ABD interacts with F-actin in either the weak or strong conformational state, denoted as states 1 and 2, respectively. The unbound state is represented as state 0. The association of H0 and H1 with the four-helix bundle in the weak state (1) inhibits the ABD from rearranging into the strong state (2) conformation. The transitions between states are force dependent, and dissociation rates  and k1→0 increase exponentially with respect to applied load. Force also increases k2→0 , the transition rate from states 1 to 2, but decreases k1→2 . Tension applied to state 1 promotes the dissociation of H0 and H1 and the structural rearrangement of H2–H5 into state 2.k2→1
+**Figure 2.:** (A) Comparison of isolated (red, pdb 6dv1) and actin-bound (blue, pdb 6upv) αE-catenin ABDs. In the actin-bound structure, H0 and H1 become disordered and H2–H5 rearrange (yellow arrows). The C-terminal extension (CTE), which is disordered in the isolated structure, forms an extended peptide and interacts with actin. (B) Two-state catch bond model. αE-catenin ABD interacts with F-actin in either the weak or strong conformational state, denoted as states 1 and 2, respectively. The unbound state is represented as state 0. The association of H0 and H1 with the four-helix bundle in the weak state (1) inhibits the ABD from rearranging into the strong state (2) conformation. The transitions between states are force dependent, and dissociation rates $k_{1→0}$ and $k_{2→0}$ increase exponentially with respect to applied load. Force also increases $k_{1→2}$ , the transition rate from states 1 to 2, but decreases $k_{2→1}$ . Tension applied to state 1 promotes the dissociation of H0 and H1 and the structural rearrangement of H2–H5 into state 2.
 
 Here, we test the structural model for catch bond formation with optical trapping measurements, which demonstrate that H0 and H1 of the αE-catenin ABD are required to confer directional catch bond behavior between the ternary cadherin–catenin complex and F-actin. Our findings are consistent with the structural model in which H0 and H1 reversibly undock from the remainder of the ABD to enable a transition between weak and strong actin-binding states. We further show that although the catch bond interaction is principally attributed to conformational changes in the ABD, the N and M domains of αE-catenin also regulate force sensitive binding.
 
 ## Results
 
-## αE-catenin ABD and full-length monomer form a catch bond with F-actin
+### αE-catenin ABD and full-length monomer form a catch bond with F-actin
 
 Previous investigations of the force-dependent binding of αE-catenin to F-actin have employed either the ternary E-cadherin/β-catenin/αE-catenin complex (Bax et al., 2022; Buckley et al., 2014), a binary β-catenin/αE-catenin complex, or αE-catenin alone (Arbore et al., 2022). The proposed molecular mechanism of the catch bond between αE-catenin and F-actin, however, is based upon structural data of the isolated and actin-bound αE-catenin ABD (Xu et al., 2020). To confirm that the catch bond behavior is truly associated with the ABD itself, we measured binding interactions between F-actin and the wild-type ABD (residues 666–906) under load with a constant-force assay in an optical trap, and compared our results to prior data (Bax et al., 2022) on the ternary complex obtained with the same instrument.
 
 In the optical trap experiments, a taut actin filament is suspended between two trapped beads and positioned over αE-catenin ABD immobilized on microspheres that are attached to a coverslip surface (Figure 3A). To exert load on the ABD, the stage is oscillated in a square wave parallel to the long axis of the filament. When a binding event occurs, the trapped beads are displaced from their equilibrium positions, resulting in a restoring force that can be measured with pN and ms resolutions. Stage motion pauses when bead displacement is detected, thereby applying a constant load to the bond between ABD molecules and F-actin (Figure 3B). As with wild-type ternary complex (Bax et al., 2022; Buckley et al., 2014), force on the beads commonly decreased in several discrete steps (‘multi-step’), with each step corresponding to the release of a load-bearing molecule from the filament (Figure 3—figure supplement 1). The plateau of the final detachment step corresponds to the binding lifetime for the last remaining load-bearing molecule. Following full detachment, stage oscillation begins again, allowing us to collect multiple binding events from the same set of molecules.
 
-The two-state catch bond model is described by the interconversion between a strongly bound state, a weakly bound state, and the unbound state (Figure 2B). The force-dependent interconversion rate between these states is given by the Bell–Evans model (Bell, 1978; Evans and Ritchie, 1997): ki→j(F→)=ki→j0eFxi→j/kbT, where ki→j0 is the transition rate under no load, F→ is the force vector, and xi→j is the distance between the initial state, i, with the transition state between i and j projected along F→ . We used maximum likelihood estimation (MLE) to determine ki→j0 and xi→j parameters from observed binding lifetimes corresponding to the measured force. All binding lifetimes included in the analysis are derived from the final detachment plateau from multi-step data.
+![Figure 3.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig3-v3.jpg)
+
+**Figure 3.:** (A) (Top) GFP-haloligand and fusion protein Halotag-ABD (red) complexes are immobilized on silica microspheres attached to a microscope coverslip. A taut actin filament is suspended between two optically trapped beads and held over the assembled complexes. The stage is translated parallel to the actin filament, and when at least one protein complex binds to F-actin, the trapped beads are pulled out of their equilibrium position. The restoring force of the optical trap (black arrows) applies tension on a bound complex while bystander complexes (pale) bind and unbind transiently. (B) A representative force versus time series for the constant-force assay. (Top) Plotted are the forces summed from both traps versus time, decimated from 40 to 4 kHz. We observe traces characterized either by rupture of a single bound molecule (left) or by sequential rupture of multiple bound molecules (right). Traces colored in black are regions used for force baseline determination, and vertical lines indicate step boundaries. (Bottom) If summed forces surpass a threshold, stage motion halts until detachment of the final bound molecule. (C) αE-catenin ABD forms a catch bond with F-actin (N = 900). Areas of all circles are proportional to the number of events measured in each equal-width bin. These data are represented here without depicting the direction of force applied relative to the polar actin filament.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The probability of observing single- versus multi-step events is comparable between ternary wild type and ternaryΔH1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Structures of isolated ABD (PDB entries 6dv1, 4igg chain A, 4igg chain B) were superimposed on the actin-bound ABD (PDB entry 6UPV), and minimized while docked to actin (red), or in the absence of actin (pink). Energy minimization of these ABDs bound to actin resulted in minor structural changes (RMSD <0.7 Å) and resolved clashes with overlapping atoms. (D) Structures of the actin-bound ABD (PDB entry 6UPV) minimized in the presence (navy) and absence (light blue) of actin.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) GFP-haloligand and fusion protein Halotag-ABD (red) complexes are immobilized on silica microspheres and interact with a taut actin filament. This figure is the same as Figure 3A. (B) Force-dependent binding lifetimes of αE-catenin ABD to F-actin, for the last detachment step in multi-step events. This figure is the same Figure 3C. (C) Force-dependent binding lifetimes of αE-catenin ABD to F-actin in single-step events. (D) Computed lifetime ratios (LRs) between ABD and the ternary complex with a 4 pN sliding window across 0–13 pN. The ABD:F-actin-binding interaction is fourfold longer than that of the ternary complex (mean LR = 4.27, 90% confidence interval [CI] = 2.55–6.67). (E) GFP-haloligand and fusion protein Halotag-αE-catenin (pink) complexes are immobilized on silica microspheres and interact with a taut actin filament. (F) Force-dependent binding lifetimes of αE-catenin monomer to F-actin, for the last detachment step in multi-step events (N = 442). (G) Force-dependent binding lifetimes of αE-catenin monomer to F-actin in single-step events (N = 140). (H) Computed LRs between αE-catenin monomer and the ternary complex with a 4 pN sliding window across 0–13 pN. The αE-catenin:F-actin-binding interaction is comparable to the ternary complex (mean LR = 1.34, 90% CI = 0.77–2.20).
+
+The two-state catch bond model is described by the interconversion between a strongly bound state, a weakly bound state, and the unbound state (Figure 2B). The force-dependent interconversion rate between these states is given by the Bell–Evans model (Bell, 1978; Evans and Ritchie, 1997): $k_{i→j}(F→)=k_{i→j}^{0}e^{Fx_{i→j}/k_{b}T}$, where $k_{i→j}^{0}$ is the transition rate under no load, $F→$ is the force vector, and $x_{i→j}$ is the distance between the initial state, i, with the transition state between i and j projected along $F→$ . We used maximum likelihood estimation (MLE) to determine $k_{i→j}^{0}$ and $x_{i→j}$ parameters from observed binding lifetimes corresponding to the measured force. All binding lifetimes included in the analysis are derived from the final detachment plateau from multi-step data.
 
 Our data revealed that the αE-catenin ABD forms a catch bond with F-actin, in which the lifetime of binding interactions increased with the application of mechanical force (Figure 3C and Table 1). The observation that the ABD forms a two-state catch bond to F-actin supports the structural model that the five- and four-helix conformation represents the weak and strong bound states, respectively. Previous modeling done by superimposing crystal structures of the isolated ABD on the actin-bound ABD structure showed few clashes with actin, suggesting that a similar five-helix structure may form a subset of interactions observed in the stably bound conformation (Xu et al., 2020). To quantify the possible differences in F-actin contacts between the proposed weak and strong state structures, we compared interactions between energy-minimized actin-bound ABD models and F-actin (Figure 3—figure supplement 2, Supplementary file 1). Energy minimization of the five-helix, ABD models resulted in approximately 0.5Å RMSD (root-mean-square deviation) compared to the undocked minimized structure, with the loop connecting H4 and H5 slightly repositioned to relieve minor clashes. The actin-bound four-helix ABD structure had a higher surface contact area than all three models of the docked ABD structures analyzed (Supplementary file 1), in part due to the CTE, which forms numerous interactions with actin in the bound structure (pdb 6UPV) but is otherwise disordered, as well as several residues in the extended H4 present in the actin-bound structure (Mei et al., 2020; Xu et al., 2020). Other residues in H4 and H5 observed to interact with actin in the actin-bound structure adopt similar positions in the five-helix bundle conformations. These observations are consistent with the proposal that a five-helix conformation similar to that of the isolated ABD can weakly interact with actin (Xu et al., 2020).
 
-## H0 and H1 regulate the catch bond interaction between cadherin–catenin complexes and F-actin
+**Table 1.**
+ Kinetic parameters for the two-bound-state catch bond model for αE-catenin actin-binding domain (ABD) (top) and monomer (bottom).State 0 is the unbound state, state 1 is the weak bound state, and state 2 is the strong bound state. The 95% confidence interval (CI) was determined for each parameter via empirical bootstrapping. The transition rate between state i and j under no load is indicated by $k_{i→j}^{0}$ , whereas the distance between the initial state, i, and the transition state between i and j is given by $x_{i→j}$ . A negative distance parameter indicates that the transition rate is decreased by force.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">ABD multi-step: two-state catch bond, nondirectional fit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>2 → 0</td>
+      <td>2 → 1</td>
+      <td>1 → 0</td>
+      <td>1 → 2</td>
+    </tr>
+    <tr>
+      <td>ki→j0</td>
+      <td>0.051</td>
+      <td>15.02</td>
+      <td>1.40</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>CI (s−1)</td>
+      <td>(0.02, 0.10)</td>
+      <td>(1.33, 1000)</td>
+      <td>(1.00, 2.46)</td>
+      <td>(0.18, 1.50)</td>
+    </tr>
+    <tr>
+      <td>xi→j</td>
+      <td>0.17</td>
+      <td>9.69</td>
+      <td>0.002</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td>(0.01, 0.62)</td>
+      <td>(5.35, 21.42)</td>
+      <td>Fixed</td>
+      <td>(0.004, 0.145)</td>
+    </tr>
+    <tr>
+      <td colspan="5">αE-catenin monomer multi-step: two-state catch bond, nondirectional fit</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2 → 0</td>
+      <td>2 → 1</td>
+      <td>1 → 0</td>
+      <td>1 → 2</td>
+    </tr>
+    <tr>
+      <td>ki→j0</td>
+      <td>0.046</td>
+      <td>0.72</td>
+      <td>4.97</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>CI (s−1)</td>
+      <td>(0.003, 0.39)</td>
+      <td>(0.40, 1000)</td>
+      <td>(3.41, 6.94)</td>
+      <td>(0.25, 2.75)</td>
+    </tr>
+    <tr>
+      <td>xi→j</td>
+      <td>0.64</td>
+      <td>0.66</td>
+      <td>0.002</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td>(0.008, 2.29)</td>
+      <td>(0.08, 16.38)</td>
+      <td>Fixed</td>
+      <td>(0.004, 1.66)</td>
+    </tr>
+  </tbody>
+</table>
+
+### H0 and H1 regulate the catch bond interaction between cadherin–catenin complexes and F-actin
 
 To examine whether conformational changes in H0 and H1 of the ABD suffice to confer catch bond behavior to the interaction between the ternary cadherin–catenin complex and F-actin, we expressed and purified αE-cateninΔH1, in which residues corresponding to ABD H0 and most of helix H1 (residues 666–696) are deleted from the full-length protein (Figure 4). H2–H5 of the ABD is connected to αE-catenin N and M domains by the endogenous flexible linker, residues 633–665, consistent with the observation that H0 and H1 are disordered when the ABD is bound to F-actin (Figure 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig4-v3.jpg)
+
+**Figure 4.:** (A) Optical trap setup used in constant- and low-force assays. Ternary GFP-E-cadherin cytoplasmic tail (green), β-catenin (yellow), and αE-cateninΔH1 (blue) complexes are immobilized on silica microspheres attached to a microscope coverslip. (Inset) The actin-binding domain (ABD), which confers the catch bond interaction between cadherin–catenin complexes and F-actin, is attached to the M domain of αE-catenin by a flexible linker. The four-helix H2–H5 binds to actin directly in the purported strong state conformation. (B) Representative trace from the constant-force assay. (C) Low-force assay. (Top) A representative force versus time series (gray). Plotted are the forces summed from both traps versus time, decimated from 40 to 4 kHz. Binding lifetimes at low force were defined by the duration during which the positional variance of trapped beads exceeded the baseline variance of control experiments. Traces colored in black are regions used for force baseline determination. When a binding event occurs, stage motion is translated to the trapped beads. (Bottom) The stage oscillates in a high-frequency, low-amplitude sinusoidal waveform to enable binding event detection at low forces.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Binding event lifetimes measured below ~2.5 pN from the low-force assay (gray, N = 145) and constant-force assay (blue, N = 117). (B) Survival probability versus binding lifetime for low-force (LF) (N = 145) and constant-force (CF) data (N = 117) between 0 and 2.5 pN. The distribution of binding lifetimes between the two assays is not statistically different (p = 0.30 > 0.01, in a two-sample Kolmogorov–Smirnov [KS]).
 
 The structural hypothesis that undocking of H0 and H1 in the ABD is required to switch from the weak to strong-binding state predicts that αE-cateninΔH1 occupies a constitutively strong-binding state (Xu et al., 2020). To test this hypothesis directly, we performed optical trapping experiments to compare the force-dependent F-actin-binding lifetimes of the E-cadherin/β-catenin/αE-cateninΔH1 complex (ternaryΔH1) with those of the wild-type ternary complex. Here, αE-cateninΔH1 was assembled in a complex with full-length β-catenin and E-cadherin cytoplasmic domain tethered to the surface of the coverslip (Figure 4A). The same concentration of proteins used in the experiments with the wild-type complex caused all actin filaments in the flow cell chamber to absorb to the coverslip surface, so the ternaryΔH1 complex data were collected at a lower concentration. We note that the distribution in the number of steps observed in binding events is comparable between ternary wild-type and ternaryΔH1 complex datasets (Figure 3—figure supplement 1).
 
 Two different optical trapping assays were employed to study the force-dependent binding of ternaryΔH1 complexes to F-actin. First, we used the constant-force assay described above to compare binding lifetimes for the ternary complexes assembled with wild-type αE-catenin and αE-cateninΔH1 (Figure 4B). Binding times for the wild-type ternary complex peak at ~6 pN, indicative of a catch bond (Figure 5A). In contrast, for αE-cateninΔH1, average binding times were highest at the lowest forces assayed and decreased with increasing load (Figure 5B). This latter observation is consistent with a simple Bell–Evans slip bond, in which load accelerates detachment from a single bound state.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig5-v3.jpg)
+
+**Figure 5.:** (A) Mean binding lifetimes (red filled circles) from constant-force assay measurements from previously reported (Bax et al., 2022) wild-type E-cadherin/β-catenin/αE-catenin complex data (N = 700). These data are represented here without depicting the direction of force applied relative to the polar actin filament, and fit to a nondirectional two-state catch bond (red curve). Unfilled circles represent the mean lifetime of events collected in the low-force assay (N = 90). Envelopes indicate 95% confidence intervals for the fit, obtained by empirical bootstrapping. Areas of all circles are proportional to the number of events measured in each equal-width bin. (B) Mean binding lifetimes (blue filled circles) from pooled low- (N = 145) and constant-force assay (N = 856) measurements for ternaryΔH1 complexes. These data were fit to a one-state slip bond model (blue curve). (C) The one-state slip bond model. The conformation of a bound actin-binding domain (ABD) missing H1, denoted state B, is comparable to the strong state of the two-state catch bond model. Molecules transition between bound (B) and unbound (U) states, where the dissociation rate, $k_{B→U}$ , increases exponentially with force.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** In this model, the ternaryΔH1 complex interacts with F-actin in a moderately strong bound state (B1) and strongly bound state (B2), such that that the deletion of H0 and H1 hinders the transition between B1 and B2 to impart biphasic binding lifetimes. However, Akaike information criterion (AIC) and Bayesian information criterion (BIC) suggest a single-state slip bond model better represents the data (see text).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Survival probability versus binding lifetime from constant-force measurements for each 2 pN bin width. (A) Survival lifetimes are more likely to be longer for ternaryΔH1 (blue) than wild-type ternary (red) between 0 and 2 pN. (B) The ternaryΔH1 complex survival probability distribution is qualitatively more monophasic when compared to wild-type ternary. (C) Binding lifetimes for ternaryΔH1 are more likely to be shorter than wild-type ternary complex between 4 and 6 pN. The ternaryΔH1 complex is qualitatively more monophasic than wild type. (D–F) Above 6 pN, ternary wild-type and ternaryΔH1 complex survival probability distributions at these force bins are not statistically different (p < 0.01, two-sample Kolmogorov–Smirnov [KS] test).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Force on actin (gray arrow) directed in the (−) direction of ternary wild type. When force is applied in the (−) direction, H1 is moved away from H2–H5 and oriented such that reassociation of H0/H1 to the H2–H5 bundle is disfavored (dotted lines). (B) Force on actin (gray arrow) directed in (+) direction of ternary wild type. When force is applied in the (+) direction, H1 is predicted to be positioned relatively closer to the H2–H5 bundle, where the bound actin-binding domain (ABD) may more likely adopt conformations similar to the five-helix weak state (dotted lines). Also see Xu et al., 2020.
+
 Because the constant-force assay most frequently measured interactions between 4 and 8 pN, we employed a low-force assay in which the stage is moved sinusoidally at a low amplitude to measure binding under minimal load (Huang et al., 2017; Figure 4C). When a binding interaction occurs, the oscillation of the stage is transferred to the trapped beads, resulting in a detectable increase in its positional variance. The time-averaged force experienced by the optically trapped beads depends on the point at which binding occurs in the oscillation cycle, resulting in a distribution of forces between 0 and ~2.5 pN. Relative to the constant-force assay, measurements in the low-force assay may result in an overestimation of single-molecule-binding lifetimes due to the difficulty of resolving rupture events of multiple bound complexes. However, we found that the survival probability distribution from low-force assay measurements was not statistically different from that of constant-force measurements between 0 and 2.5 pN (Figure 4—figure supplement 1). Strikingly, the mean F-actin-binding lifetime for the ternaryΔH1 complex measured in the low-force assay is 2.4 s (N = 145, 95% confidence interval [CI] = 1.9–3.0 s), 39 times longer than that of the wild-type complex (0.062 s; N = 90, 95% CI = 0.036–0.095 s).
 
-We used MLE to obtain kU→B0 and xU→B single-state Bell–Evans slip bond model parameters, where U and B are the unbound and bound states, from the ternaryΔH1 force-lifetime data (Figure 5C). Because the comparison of survival lifetime distributions indicates that the data from low-force assay measurements likely represent single-bond interactions, they were included in our analysis so that binding observations were sampled more evenly across the 0–8 pN range. Parameters kU→B0 and xU→B estimated for the ternaryΔH1 single-state slip bond model are consistent with strong-to-unbound parameters k2→00 and x2→0 estimated for the wild-type two-state catch bond model (Table 2). We also tested a model in which ternaryΔH1 complexes dissociate from two distinct bound states, B1 and B2, but goodness-of-fit assessed using both the Akaike information criterion (AIC) (Akaike, 1974) and Bayesian information criterion (BIC) (Schwarz, 1978) showed that the single-state slip bond model better represented the data (Figure 5—figure supplement 1, Supplementary file 2). Thus, our analysis indicates that the deletion of H0 and H1 of the αE-catenin ABD eliminates the weak state conformation of the cadherin–catenin complex when bound to F-actin.
+We used MLE to obtain $k_{U→B}^{0}$ and $x_{U→B}$ single-state Bell–Evans slip bond model parameters, where U and B are the unbound and bound states, from the ternaryΔH1 force-lifetime data (Figure 5C). Because the comparison of survival lifetime distributions indicates that the data from low-force assay measurements likely represent single-bond interactions, they were included in our analysis so that binding observations were sampled more evenly across the 0–8 pN range. Parameters $k_{U→B}^{0}$ and $x_{U→B}$ estimated for the ternaryΔH1 single-state slip bond model are consistent with strong-to-unbound parameters $k_{2→0}^{0}$ and $x_{2→0}$ estimated for the wild-type two-state catch bond model (Table 2). We also tested a model in which ternaryΔH1 complexes dissociate from two distinct bound states, B1 and B2, but goodness-of-fit assessed using both the Akaike information criterion (AIC) (Akaike, 1974) and Bayesian information criterion (BIC) (Schwarz, 1978) showed that the single-state slip bond model better represented the data (Figure 5—figure supplement 1, Supplementary file 2). Thus, our analysis indicates that the deletion of H0 and H1 of the αE-catenin ABD eliminates the weak state conformation of the cadherin–catenin complex when bound to F-actin.
+
+**Table 2.**
+ Kinetic parameters describing force-dependent models for ternary wild type versus ternaryΔH1.95% confidence intervals (CIs) for each parameter are obtained through empirical bootstrapping. Bound to unbound B → U single-state slip bond parameters for ternaryΔH1 correspond to the strong to unbound 2 → 0 two-state catch bond parameters for ternary wild type. Akaike information criterion (AIC) and Bayesian information criterion (BIC) indicated that the single-state slip bond model represented ternaryΔH1 data better than the two-state slip bond model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">TernaryΔH1: one-state slip bond</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="4">B → U</td>
+    </tr>
+    <tr>
+      <td>ki→j0</td>
+      <td colspan="4">0.49</td>
+    </tr>
+    <tr>
+      <td>CI (s−1)</td>
+      <td colspan="4">(0.41, 0.58)</td>
+    </tr>
+    <tr>
+      <td>xi→j</td>
+      <td colspan="4">0.48</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td colspan="4">(0.36, 0.60)</td>
+    </tr>
+    <tr>
+      <td>AIC</td>
+      <td colspan="4">6.4</td>
+    </tr>
+    <tr>
+      <td>BIC</td>
+      <td colspan="4">16.21</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ternary wild type: two-state catch bond</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2 → 0</td>
+      <td>2 → 1</td>
+      <td>1 → 0</td>
+      <td>1 → 2</td>
+    </tr>
+    <tr>
+      <td>ki→j0</td>
+      <td>0.22</td>
+      <td>6.27</td>
+      <td>13.57</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>CI (s−1)</td>
+      <td>(0.15, 0.35)</td>
+      <td>(1.61, 369.66)</td>
+      <td>(13.27, 14.21)</td>
+      <td>(0.05, 0.39)</td>
+    </tr>
+    <tr>
+      <td>xi→j(−)</td>
+      <td>0.55</td>
+      <td>3.46</td>
+      <td>0</td>
+      <td>4.72</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td>(0.28, 0.78)</td>
+      <td>(1.30, 18.30)</td>
+      <td>Fixed</td>
+      <td>(3.92, 5.70)</td>
+    </tr>
+    <tr>
+      <td>xi→j(+)</td>
+      <td>0.98</td>
+      <td>15</td>
+      <td>0</td>
+      <td>2.73</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td>(0.74, 1.19)</td>
+      <td>Fixed</td>
+      <td>Fixed</td>
+      <td>(2.11, 3.40)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ternary wild type: two-state catch bond, non-directional fit</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2 → 0</td>
+      <td>2 → 1</td>
+      <td>1 → 0</td>
+      <td>1 → 2</td>
+    </tr>
+    <tr>
+      <td>ki→j0</td>
+      <td>0.19</td>
+      <td>884.52</td>
+      <td>13.28</td>
+      <td>1.17</td>
+    </tr>
+    <tr>
+      <td>CI (s−1)</td>
+      <td>(0.05, 0.40)</td>
+      <td>(5.18, 1000.0)</td>
+      <td>(13.26, 14.37)</td>
+      <td>(0.08, 5.39)</td>
+    </tr>
+    <tr>
+      <td>xi→j</td>
+      <td>0.76</td>
+      <td>15.20</td>
+      <td>0</td>
+      <td>2.17</td>
+    </tr>
+    <tr>
+      <td>CI (nm)</td>
+      <td>(0.37, 1.43)</td>
+      <td>(2.44, 17.53)</td>
+      <td>Fixed</td>
+      <td>(1.22, 4.55)</td>
+    </tr>
+  </tbody>
+</table>
 
 The observed binding lifetime distributions lend additional support to the model that the four-helix ABD bundle observed in the cryo-EM structures represents the strong F-actin-binding state. In the wild-type dataset, bond survival probabilities derived from constant-force measurements for each 2 pN force bin show biphasic distributions (Figure 5—figure supplement 2, Supplementary file 3), consistent with the two-state catch bond model (Barsegov and Thirumalai, 2005; Chakrabarti et al., 2017; Thomas et al., 2006). In contrast, the distribution of survival probabilities for ternaryΔH1 complexes bound to F-actin appear monophasic below 6 pN, which likely indicates the presence of a single state in this force regime (Figure 5—figure supplement 2, Supplementary file 3). We noted no statistically distinguishable difference between ternaryΔH1 and wild type for survival likelihood distributions above 6 pN (Supplementary file 4), consistent with the idea that with wild-type complex predominantly occupies the strongly bound state at these forces.
 
-The wild-type cadherin–catenin complex forms a directional catch bond with F-actin, where a higher binding frequency and larger extent of strong-state stabilization encoded by xi→j is observed when force is applied toward the pointed (−) end of actin filament (Bax et al., 2022). In previous work, we hypothesized that the orientation of H1 could impart directionality: H1 would be pulled away from the H2–H5 bundle more readily when force was directed toward the (−) end of F-actin but would be relatively more aligned with purported weak state when force was directed toward the barbed (+) end (Xu et al., 2020; Figure 5—figure supplement 3). Likewise, reassociation of H1 with the rest of the ABD bundle would be less likely when subjected to (−) end directed force. To examine the maximum possible directional asymmetry present in the ternaryΔH1 complex dataset, we tabulated events for each actin filament as corresponding to either F > 0 or F < 0 in the reference frame of the optical trap, and assigned the inferred barbed (+) end to the group with the shorter mean lifetime. We then compared this upper bound on directionality for ternaryΔH1 with the assigned directionality of the wild-type ternary complex (Bax et al., 2022). For the ternary wild-type complex, the ratio of mean lifetimes between the implied (−) end versus (+) end is 3.78 (95% CI: 2.74–5.31), but 1.69 (95% CI: 1.38–2.09) for the ternaryΔH1 complex. Furthermore, the ratio of the number of binding events observed when force is oriented toward the implied (−) versus (+) end is 1.90 for the ternary wild-type complexes, but 1.13 for the ternaryΔH1 complex. These differences in lifetimes and numbers of observed events indicate that directionality is reduced in the ternaryΔH1 complex, consistent with the idea that the directional interaction between cadherin–catenin complexes and F-actin is largely attributable to the effect of force on the association/dissociation of H0 and H1.
+The wild-type cadherin–catenin complex forms a directional catch bond with F-actin, where a higher binding frequency and larger extent of strong-state stabilization encoded by $x_{i→j}$ is observed when force is applied toward the pointed (−) end of actin filament (Bax et al., 2022). In previous work, we hypothesized that the orientation of H1 could impart directionality: H1 would be pulled away from the H2–H5 bundle more readily when force was directed toward the (−) end of F-actin but would be relatively more aligned with purported weak state when force was directed toward the barbed (+) end (Xu et al., 2020; Figure 5—figure supplement 3). Likewise, reassociation of H1 with the rest of the ABD bundle would be less likely when subjected to (−) end directed force. To examine the maximum possible directional asymmetry present in the ternaryΔH1 complex dataset, we tabulated events for each actin filament as corresponding to either F > 0 or F < 0 in the reference frame of the optical trap, and assigned the inferred barbed (+) end to the group with the shorter mean lifetime. We then compared this upper bound on directionality for ternaryΔH1 with the assigned directionality of the wild-type ternary complex (Bax et al., 2022). For the ternary wild-type complex, the ratio of mean lifetimes between the implied (−) end versus (+) end is 3.78 (95% CI: 2.74–5.31), but 1.69 (95% CI: 1.38–2.09) for the ternaryΔH1 complex. Furthermore, the ratio of the number of binding events observed when force is oriented toward the implied (−) versus (+) end is 1.90 for the ternary wild-type complexes, but 1.13 for the ternaryΔH1 complex. These differences in lifetimes and numbers of observed events indicate that directionality is reduced in the ternaryΔH1 complex, consistent with the idea that the directional interaction between cadherin–catenin complexes and F-actin is largely attributable to the effect of force on the association/dissociation of H0 and H1.
 
-## αE-catenin N and M domains allosterically regulate F-actin interactions
+### αE-catenin N and M domains allosterically regulate F-actin interactions
 
 Binding of β-catenin to the αE-catenin N domain weakens the affinity of αE-catenin for F-actin (Drees et al., 2005; Miller et al., 2013; Pokutta et al., 2014; Yamada et al., 2005), and crosstalk between the ABD and the remainder of αE-catenin was detected in cysteine labeling experiments (Terekhova et al., 2019). These observations indicate that allosteric coupling of the αE-catenin N, M, and ABD domains may affect actin-binding behavior. To assess whether such allostery affects the binding interactions with F-actin under force, we computed lifetime ratios (LRs) between the ABD, full-length αE-catenin monomer, and the ternary complex over a 4 pN sliding window force bin across 0–13 pN from our trap measurements. Strikingly, the ABD interaction with F-actin is fourfold longer than that of the ternary complex across all applied forces (mean LR = 4.28, 90% CI = 2.55–6.67), indicating that the N and M domains effectively destabilize actin binding (Figure 3—figure supplement 3A–D). The actin-binding lifetimes of monomeric αE-catenin (Figure 3—figure supplement 3E–H, Table 1) were comparable to those of the ternary complex (mean LR = 1.34, 90% CI = 0.77–2.20), demonstrating that β-catenin and the E-cadherin cytoplasmic domain do not impart the observed inhibitory contributions under load.
 
@@ -72,6 +331,14 @@ In the ternary complex experiments, multi-step events were still detected at the
 Given that cooperative interactions between neighboring ABDs enhance binding lifetimes (Buckley et al., 2014), we hypothesized that the presence of a stably bound neighbor might strengthen binding interactions of a given complex and F-actin. Previous data indicate that one cadherin–catenin complex experiences most of the applied load while several other neighboring ‘bystanders’ transiently bind and unbind (Bax et al., 2022; Figure 3A). Thus, binding events that yield single-step observations likely reflect a load-bearing complex that is proximal to neighboring complexes that interact only transiently with actin. In contrast, the final load-bearing complex in a multi-step binding event is necessarily proximal to one or more complexes positioned such that they could form stable, force-bearing interactions with actin, implying an opportunity for cooperative binding interactions that could, in principle, influence binding lifetimes.
 
 To determine whether neighboring protein complexes influenced F-actin binding, we compared the LRs for the last step of multi-step events versus single-step events across 0–13 pN with a 4 pN sliding window. Binding lifetimes from multi-step data are longer than single-step data for the ABD (mean LR = 3.54, 90% CI = 1.69–9.83) and αE-catenin monomer (mean LR = 3.04, 90% CI = 1.46–7.73) (Figure 6A, Figure 6—figure supplement 1A). These LR values are consistent with differences in two-state catch bond fits derived from single- versus multi-step binding events (Figure 3—figure supplement 3, Supplementary file 5). In contrast, differences in binding lifetimes between single- and multi-step data for the ternary complex (mean LR = 1.11, 90% CI = 0.78–1.67) and ternaryΔH1 complex (mean LR = 1.69, 90% CI = 1.34–2.15) were less pronounced (Figure 6B, Figure 6—figure supplement 1B). These observations suggest that force-induced proximal bystanders may allow the ABD to adopt conformations with more stable actin-binding characteristics (Figure 6C), but that interactions involving the N and M domains of αE-catenin, as well as β-catenin, inhibit cooperative binding interactions between neighboring complexes (Figure 6D; see Discussion).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig6-v3.jpg)
+
+**Figure 6.:** (A) Computed lifetime ratios (LRs) with a 4 pN sliding window across 0–13 pN showing that lifetimes from actin-binding domain (ABD) multi-step events are longer than single-step events (mean LR = 3.54). Envelopes represent 90% confidence intervals (CIs), obtained via empirical bootstrapping mean (90% CI = 1.69–9.83). (B) Wild-type ternary lifetimes from multi- and single-step events have similar binding lifetimes (mean LR = 1.15, 90% CI = 0.68–1.78). (C) Upon stable binding with actin, a loaded ABD could enable stronger binding to actin by neighbors by allosteric coupling of involving contacts of the C-terminal extension (CTE) and the H2–H5 bundle. (D) The loaded ternary complex may interact with its neighbor differently than the ABD. Allosteric regulation of the ABD by the other αE-catenin domains, steric effects of the large N–M region, and/or differences in force propagation could prevent rearrangements in the ABD that would enhance its load-bearing capacity.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80130/elife-80130-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) αE-catenin monomer data (mean lifetime ratio [LR] = 3.04, 90% confidence interval [CI] = 1.46–7.73) from multi-step yielded longer binding lifetimes than single-step observations across all force ranges, and particularly at the low-force range. (B) TernaryΔH1 multi-step data show a modest lifetime enhancement over single step (mean LR = 1.69, 90% CI = 1.34–2.15).
 
 ## Discussion
 
@@ -91,17 +358,132 @@ Whereas the directional catch bond mechanism for structurally similar actin-bind
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-TEV</td>
+      <td>Choi et al., 2012</td>
+      <td></td>
+      <td>Ampicillin resistance; expression in bacterial cultures; pGEX-KG plasmid (ATCC) with a new TEV protease siteContact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3) Codon-Plus RIL</td>
+      <td>Agilent</td>
+      <td>230245</td>
+      <td>Strain for expressing recombinant proteins</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halo-tag ligand Succinimidyl Ester O4</td>
+      <td></td>
+      <td>P6741</td>
+      <td>Used for labeling GFP to attach to halotag constructs</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-NHS</td>
+      <td>Millipore Sigma</td>
+      <td>P203118</td>
+      <td>Labeling actin filaments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine phallodin</td>
+      <td>Cytoskeleton</td>
+      <td>PHDR1</td>
+      <td>Visualizing actin filaments</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trolox</td>
+      <td>Fischer Scientific</td>
+      <td>AC218940010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine serum albumin, BSA</td>
+      <td>MCLAB</td>
+      <td>UBSA-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin-coated polystyrene microspheres</td>
+      <td>Bangs Laboratories, Inc</td>
+      <td>CP01004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera 1.14</td>
+      <td>Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Python 3.9.1</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>NumPy (v. 1.20.2)</td>
+      <td>https://numpy.org</td>
+      <td>RRID:SCR_008633</td>
+      <td>Python library</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Pandas(v.1.3.1)</td>
+      <td>https://pandas.pydata.org</td>
+      <td>RRID:SCR_018214</td>
+      <td>Python library</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>SciPy(v.1.6.2)</td>
+      <td>https://scipy.org</td>
+      <td>RRID:SCR_008058</td>
+      <td>Python library</td>
+    </tr>
+    <tr>
+      <td>Software algorithm</td>
+      <td>Matplotlib(v.3.5.1)</td>
+      <td>http://matplotlib.sourceforge.net</td>
+      <td>RRID:SCR_008624</td>
+      <td>Python library</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Mouse GFP-E-cadherin cytoplasmic domain, and zebrafish β-catenin used in the optical trap assay were purified as described (Bax et al., 2022; Buckley et al., 2014; Yamada et al., 2005). αE-cateninΔH1 was constructed by inserting DNA encoding zebrafish αE-catenin with deleted H0 and H1 domains (aa 1–666 and 698–906) into the pPROEX HTb bacterial expression vector. αE-cateninΔH1 was expressed in E. coli BL21 (DE3) cells in 2 l LB media culture. Cells were grown at 37°C to an OD600 of 0.8 before induced with 0.5 mM isopropyl-1-thio-β-d-galactopyranoside. After induction, cells were grown for 16 hr at 18°C, harvested by centrifugation, and resuspended in 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM β-mercaptoethanol. Cell pellets were lysed with an Emulsiflex (Avastin) in the presence of protease inhibitor cocktail Mixture Set V (Calbiochem) and DNAse (Millipore Sigma). The lysate was clarified by centrifugation at 37,000 × g for 30 min, and incubated with 10 ml of TALON Superflow resin (GE Healthcare Life Sciences) for 1 hr on a rotator at 4°C. Resin was washed with 5 bed volumes of 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM β-mercaptoethanol, 4 bed volumes of phosphate-buffered saline pH 8.0, 1 M NaCl, 0.005% Tween 20, and 3 bed volumes of 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM β-mercaptoethanol, 5 mM imidazole. Protein was eluted from TALON resin in 20 ml of 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM β-mercaptoethanol, 150 mM imidazole. The eluate was passed through a 0.22-μm PES syringe filter and diluted with 20 mM Tris pH 8.0, 1 mM DTT (Dithiothreitol) to a final volume of 70 ml. Filtered eluate was further purified on an anion exchange column (MonoQ 10/100, GE Healthcare) in 20 mM Tris pH 8.0, 1 mM DTT buffer with a 0–1 M NaCl gradient, followed by size exclusion chromatography (Superdex S200, GE Healthcare) in 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM DTT. Proteins were stored at −80°C and never underwent more than one freeze/thaw cycle.
 
 αE-catenin ABD and αE-catenin monomer measurements with F-actin in the optical trap assay were performed with a Halotag-ABD construct. The halotag-ABD and halotag-αE-catenin monomer construct was constructed by inserting DNA encoding HaloTag, an 18 residue linker (SGGGGSGGGGSGGGGSGG) and either the ABD domain (aa 666–906) or full sequence (aa 2–906) of zebrafish αE-catenin into the pPROEX HTb bacterial expression vector. Halotag-ABD was expressed and purified as described for αE-cateninΔH1. eGFP was purified and labeled with halotag Succinimidyl Ester (O4) ligand as previously described (Huang et al., 2017) (Promega).
 
-## Preparation of fluorescent biotinylated F-actin
+### Preparation of fluorescent biotinylated F-actin
 
 Actin was purified from rabbit skeletal muscle, stored and biotinylated using biotin-NHS (Sigma) as previously described. The biotinylated actin was flash frozen at 24 μM in G-buffer (5 mM Tris pH 8.0, 0.2 mM CaCl2, and 0.2 mM ATP) with 1 mM DTT and stored in −80°C. G-actin was thawed on ice for 30 min and centrifuged in a Beckman TLA100 rotor at 60 k rpm for 10 min in 4°C to remove aggregates. Polymerization of G-actin was induced upon addition of 10× F-buffer (100 mM pH 7.5 Tris, 500 mM KCl, 20 mM MgCl2, 10 mM ATP, 10 mM DTT) and incubated for 1 hr at room temperature while on a rotator. F-actin was diluted to 3.5 µM with F-buffer (20 mM Tris 8, 50 mM KCl, 2 mM MgCl2, 0.2 mM CaCl2, 1 mM DTT, 1 mM ATP). Lyophilized rhodamine phalloidin (Cytoskeleton) was resuspended with methanol (ACS Spectrophotometric Grade, ≥99.9%, Honeywell) and added to F-actin in equimolar amounts. Fluorescent biotinylated F-actin was kept on ice at 4°C for at least 1 day before use in experiments to allow rhodamine phalloidin to incorporate into filaments and used in optical trapping experiments within 10 days. Aliquots from the same batch of biotinylated actin were used in all single-molecule experiments.
 
-## Flow cell preparation
+### Flow cell preparation
 
 Nitrocellulose-coated coverslips with attached 1.5-μm silica microspheres (Bangs Laboratories) and flow cell chambers were prepared as described previously for all optical trap experiments (Huang et al., 2017; Bax et al., 2022). All injection volumes were 10 μl. The flow cell channel was injected with F-buffer. GFP-E-cadherin was injected and allowed to nonspecifically absorb onto the coverslip and silica microsphere surfaces before being washed out with F-buffer following a 2-min incubation. For surface passivation, 5% (wt/vol) pluronic F-127 (Sigma, P2443) in F-buffer was injected and incubated for 5 min, twice. F-buffer was injected into the channel to wash out excess pluronic, twice. β-Catenin was injected into the channel and incubated for 2 min. Excess protein not bound to immobilized E-cadherin was washed out twice with F-buffer. αE-catenin was subsequently injected and incubated for 2 min, where excess protein was washed out twice with F-buffer. 1 mg/ml ultrapure bovine serum albumin (BSA; MCLAB, UBSA-100) in F-buffer was injected and incubated for 2 min, twice. The channel was finally filled with a trapping solution of 1 mg/ml BSA, 2 mM protocatechuic acid (Sigma-Aldrich), 50 nM protocatechuate-3,4-dioxygenase (Sigma-Aldrich), 1 µM Trolox (Sigma-Aldrich), 20 μM phallodin, 1 μm streptatvidin-coated polystyrene beads (Bangs Laboratories), and 0.2 nM fluorescently labeled biotinylated actin filaments. After the final solution was injected into the flow cell, the open ends of the channel were sealed with vacuum grease (Dow Corning).
 
@@ -109,11 +491,11 @@ While surface functionalization of wild-type cadherin–catenin complexes was pr
 
 Flow cell chambers for αE-catenin ABD experiments were prepared by described above, but with subsequent injection of 10 μM haloligand-eGFP and 2 μM halotag-ABD. Measurements αE-catenin monomer were similarly carried out but with 1 μM halotag-αE-catenin.
 
-## Optical trap instrument
+### Optical trap instrument
 
 The optical trap instrument used was described previously (Bax et al., 2022; Buckley et al., 2014; Huang et al., 2017; Owen et al., 2022). Bead displacement was calibrated within the linear region of the quadrant photodiode voltage response for position detection. A stiffness calibration for each trap was performed using power spectral analysis according to previously established methods (Berg-Sørensen and Flyvbjerg, 2004; Hansen et al., 2006). The trap was operated at a stiffness of 0.1–0.15 pN/nm.
 
-## Constant-load optical trap assay
+### Constant-load optical trap assay
 
 The dual-beam optical trap assay was carried out as described (Bax et al., 2022; Buckley et al., 2014; Huang et al., 2017; Owen et al., 2022). Two optically trapped streptavidin-coated polystyrene beads (1 μm, Bangs Laboratories) were moved apart until 1–3 pN of tension was applied to a tethered biotinylated F-actin filament. The F-actin filament was centered near a surface immobilized silica microsphere (1.5 μm, Bangs Laboratories) functionalized with ternaryΔH1 complexes. The instrument stage was then oscillated in a trapezoidal waveform with 20–75 nm amplitude, 10 nm/ms rise/fall rate, and a 150-ms pause to check for displacement of either trapped bead from binding of cadherin–catenin complexes to F-actin. If a binding event was detected, the stage paused oscillation until trap signal returned to baseline values when all bound complexes released from the filament. Bead position data were collected from each trap at a sampling rate of 40 kHz, and down sampled to 1 kHz for force-lifetime analysis. Binding events that did not survive the 5-ms loading phase or resulted in dumbbell slackening of over 1.5 pN were excluded from further analysis. Control experiments in which surface-functionalized silica microspheres were functionalized with E-cadherin/β-catenin resulted in no binding activity.
 
@@ -121,24 +503,24 @@ Binding events were annotated with custom software (Python) by edge detection an
 
 Force associated with each binding event was calculated as previously described (Bax et al., 2022; Huang et al., 2017).
 
-## Low-force optical trap assay
+### Low-force optical trap assay
 
 Assembly of suspended F-actin filaments, and binding activity determination of cadherin–catenin complexes to F-actin was performed as for a constant-load optical trap assay. After verifying binding activity of ternaryΔH1 complexes functionalized on silica microspheres, the instrument stage was oscillated in a sinusoidal waveform with 20–30 nm amplitude and 150 Hz frequency without force-feedback control. Data collected where the positioning of microspheres relative to F-actin resulted in no binding activity was used to establish a baseline in event detection analysis.
 
 Signal from each trap collected at 40 kHz was down sampled to 1 kHz. A power spectrum of the sum of bead positions from both traps was computed using a Fourier transform with a moving window of 256 points. The cumulative power from frequencies higher than 300 Hz was calculated at each point and used to determine low-force binding events, as described previously (Huang et al., 2017). Deviations of the summed high-frequency power above 180% of the mean were labeled as a binding event. Binding was often accompanied by a change in the mean position of the trapped beads, resulting in a net force ranging from 0.2 to 2.5 pN exerted on the F-actin filament. Control experiments where silica microspheres were functionalized with E-cadherin/β-catenin resulted in no binding activity.
 
-## Model fitting and CIs
+### Model fitting and CIs
 
-All binding lifetime data fits were derived from the last step of multi- or single-step data from the constant-force assay. Best-fit parameters for slip bond models were determined by MLE on the individual force-lifetime ternaryΔH1 measurements, pooled from constant- (N = 856) and low-force (N = 145) observations. All objective function minimizations were performed using the SciPy optimize minimization routine with a L-BFGS-B algorithm. The likelihood function for a slip bond model was: L(θ|F,τ)=kB→U(F)e−kB→U(F)τ, where τ and F represent the bond lifetimes with respect to force measured in single-molecule experiments and θ are best-fit parameters. The likelihood function for a two-state slip bond was: L(θ|F,τ)=P1kB1→Ue−kB1→U(F)τ+(1−P1)kB2→U(F)e−kB2→U(F)τ where B1 and B2 represent the two distinct bound states and P1 represents the probability of observing a binding event in state 1. All ki→j(F) parameters were described by the Bell model, ki→j(F)=ki→j0eFxi→j/kbτ. CIs were determined by empirical bootstrapping, where each of the 10,000 synthetic datasets were constructed by drawing N = 1001 force versus lifetime observations from the ternaryΔH1 dataset with replacement and fit to a model by MLE.
+All binding lifetime data fits were derived from the last step of multi- or single-step data from the constant-force assay. Best-fit parameters for slip bond models were determined by MLE on the individual force-lifetime ternaryΔH1 measurements, pooled from constant- (N = 856) and low-force (N = 145) observations. All objective function minimizations were performed using the SciPy optimize minimization routine with a L-BFGS-B algorithm. The likelihood function for a slip bond model was: $L(\theta|F,\tau)=k_{B→U}(F)e^{−k_{B→U}}(F)\tau$, where $\tau$ and F represent the bond lifetimes with respect to force measured in single-molecule experiments and $\theta$ are best-fit parameters. The likelihood function for a two-state slip bond was: $L(\theta|F,\tau)=P_{1}k_{B_{1→U}}e^{−k_{B_{1→U}}}(F)\tau+(1−P_{1})k_{B_{2→U}}(F)e^{−k_{B_{2→U}}}(F)\tau$ where B1 and B2 represent the two distinct bound states and P1 represents the probability of observing a binding event in state 1. All $k_{i→j}(F)$ parameters were described by the Bell model, $k_{i→j}(F)=k_{i→j}^{0}e^{Fx_{i→j}/k_{b}\tau}$. CIs were determined by empirical bootstrapping, where each of the 10,000 synthetic datasets were constructed by drawing N = 1001 force versus lifetime observations from the ternaryΔH1 dataset with replacement and fit to a model by MLE.
 
 MLE objective function minimizations were similarly performed for the two-state catch bond model, and as described previously (Bax et al., 2022; Huang et al., 2017). With a Matlab implementation of the genetic algorithm,100 epochs were used to find a global minima for each dataset and the eight-parameter fits were constrained such that the mean lifetime at zero force was less than or equal to 100 s.
 
-95% CIs on the parameters were determined by identifying parameter values in the 2.5th and 97.5th percentile. CI bounds on the model were determined as 95% CIs of binding lifetimes,<τ> , at each force predicted by the fits from the 10,000 synthetic datasets, evaluated as <τ>=∫0∞t×L(θ|F,τ)dt. For bootstrapped fits of a two-state catch bond model, 20 epochs of the genetic algorithm were used to find the minima of each synthetic dataset.
+95% CIs on the parameters were determined by identifying parameter values in the 2.5th and 97.5th percentile. CI bounds on the model were determined as 95% CIs of binding lifetimes,$<\tau>$ , at each force predicted by the fits from the 10,000 synthetic datasets, evaluated as $<\tau>=\int_{0}^{∞}t\timesL(\theta|F,\tau)dt$. For bootstrapped fits of a two-state catch bond model, 20 epochs of the genetic algorithm were used to find the minima of each synthetic dataset.
 
-## Structure minimization and analysis
+### Structure minimization and analysis
 
-Maestro (Schrödinger) was used to perform energy minimization (OPLS 2005 force field) on isolated ABD structures and actin-docked structures. C α RMSD to 6UPV ABD was calculated for aa 711–842. Surface area of actin-binding interfaces was calculated in PyMOL, and RMSD and binding interaction analysis were carried out in ChimeraX for all energy-minimized structures. Structural figures were prepared with UCSF ChimeraX version 1.3.
+Maestro (Schrödinger) was used to perform energy minimization (OPLS 2005 force field) on isolated ABD structures and actin-docked structures. C $\alpha$ RMSD to 6UPV ABD was calculated for aa 711–842. Surface area of actin-binding interfaces was calculated in PyMOL, and RMSD and binding interaction analysis were carried out in ChimeraX for all energy-minimized structures. Structural figures were prepared with UCSF ChimeraX version 1.3.
 
-## Materials availability
+### Materials availability
 
 Requests for resources and reagents should be directed to the corresponding author, William I. Weis (bill.weis@stanford.edu). All reagents generated in this study are available without restriction.

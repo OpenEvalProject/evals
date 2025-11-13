@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.41723.001 Men and women may use alcohol to regulate emotions differently, with corresponding differences in neural responses. We explored how the viewing of different types of emotionally salient stimuli impacted brain activity observed through functional magnetic resonance imaging (fMRI) from 42 long-term abstinent alcoholic (25 women) and 46 nonalcoholic (24 women) participants. Analyses revealed blunted brain responsivity in alcoholic compared to nonalcoholic groups, as well as gender differences in those activation patterns. Brain activation in alcoholic men (ALC M ) was significantly lower than in nonalcoholic men (NC M ) in regions including rostral middle and superior frontal cortex, precentral gyrus, and inferior parietal cortex, whereas activation was higher in alcoholic women (ALC W ) than in nonalcoholic women (NC W ) in superior frontal and supramarginal cortical regions. The reduced brain reactivity of ALC M , and increases for ALC W , highlighted divergent brain regions and gender effects, suggesting possible differences in the underlying basis for development of alcohol use disorders.
+Men and women may use alcohol to regulate emotions differently, with corresponding differences in neural responses. We explored how the viewing of different types of emotionally salient stimuli impacted brain activity observed through functional magnetic resonance imaging (fMRI) from 42 long-term abstinent alcoholic (25 women) and 46 nonalcoholic (24 women) participants. Analyses revealed blunted brain responsivity in alcoholic compared to nonalcoholic groups, as well as gender differences in those activation patterns. Brain activation in alcoholic men (ALCM) was significantly lower than in nonalcoholic men (NCM) in regions including rostral middle and superior frontal cortex, precentral gyrus, and inferior parietal cortex, whereas activation was higher in alcoholic women (ALCW) than in nonalcoholic women (NCW) in superior frontal and supramarginal cortical regions. The reduced brain reactivity of ALCM, and increases for ALCW, highlighted divergent brain regions and gender effects, suggesting possible differences in the underlying basis for development of alcohol use disorders.
 
 ## Introduction
 
@@ -40,13 +40,21 @@ Emotional processing is associated with activity within well-characterized netwo
 
 According to this model, when an emotionally salient stimulus is perceived, Emotional Event Integration and Evaluation takes place, and a response occurs in widespread and focal dynamic corticolimbic neural networks (Figure 1—figure supplement 1). These circuitries embody different functional systems that amalgamate cognitive with feeling aspects of emotions: (1) Attention and orientation to a salient stimulus occurs in insular, anterior cingulate, prefrontal, and posterior parietal cortices. (2) Emotional event appraisal, integration, and evaluation (as influenced by the ongoing emotional context and the perceiver’s personality), takes place in posterior cingulate, orbital and medial prefrontal cortex, and other neocortical sites (e.g., fusiform gyrus and superior temporal sulcus), and limbic structures (e.g., hippocampus and amygdala). (3) Volition and decisions, which determine response choice, are generated in cingulate, precentral, premotor, and supplementary cortices.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig1-v1.jpg)
+
+**Figure 1.:** As described in the text, participants were shown pictures from the International Affective Picture System (Lang et al., 1988) and asked to report how the pictures made them feel (good, bad, or neutral). Note the pictures in this figure are not the exact pictures shown to participants from the International Affective Picture System as these are not to be made available online (https://csea.phhp.ufl.edu/media/iapsmessage.html). The erotic (https://www.flickr.com/photos/103039225@N05/14964085720) and happy (https://www.flickr.com/photos/moonjazz/2684228420) images are in the public domain and are reproduced here under a Public Domain Mark 1.0 licence (https://creativecommons.org/publicdomain/mark/1.0/). The gruesome (https://commons.wikimedia.org/wiki/File:Amputation_surgery_01.JPG) and neutral (https://commons.wikimedia.org/wiki/File:Herstal_Y1944_med_tiltbar_skjerm-1.JPG) images are in the public domain and are reproduced here under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication (https://creativecommons.org/publicdomain/zero/1.0/deed.en). The aversive image was taken from the National Archives Catalog (https://catalog.archives.gov/id/6366489) where it was made available with no restrictions on its use.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Widespread and focal dynamic corticolimbic neural networks embody a broad scope of circuitries linked to distinct functional systems for amalgamating cognitive with feeling aspects of emotions: Attention and orientation to a salient stimulus occurs in insular, anterior cingulate, prefrontal, and posterior parietal cortices; Emotional event appraisal, integration, and evaluation (as influenced by the ongoing emotional context and the perceiver’s personality), takes place in posterior cingulate, orbital and medial prefrontal cortex, and other neocortical sites (e.g., fusiform gyrus and superior temporal sulcus), and limbic structures (hippocampus and amygdala); Volition and decisions, which determine response choice, are generated in cingulate, precentral, premotor, and supplementary cortices.
+
 Using the above model as a guide, we analyzed brain activation and behavioral responses within a psychological task structure aimed to assess the subjective appraisal of valence of specific emotional categories. We chose to do this in order to disentangle how brain activity during the process of evaluation and interpretation of emotional content distinguished ALC from NC groups. To engage the Emotional Integration and Evaluation System, we asked participants to view complex, emotionally meaningful pictures (aversive, erotic, gruesome, happy – and neutral for comparison), and to rate how the pictures made them feel (good, bad, or neutral). We chose stimuli representing the contrasting valences, because findings from previous research indicated that one or more of those emotional categories were sensitive to deficits in emotional processing by abstinent ALC groups compared to NC groups (Heinz et al., 2007; Marinkovic et al., 2009; Padula et al., 2015; Salloum et al., 2007). It should be noted that the behavioral task is not, explicitly, either an emotion judgment task nor an emotion regulation measure. Instead, we expected the data to reflect neural responsivity as indirect measures of emotion processing and/or emotion regulation to a variety of emotionally salient stimuli.
 
 We were especially interested in responses to happy and aversive stimuli, because (a) they have been shown to be sensitive to gender effects in brain activation levels in abstinent ALC participants who viewed faces with different emotional expressions (Padula et al., 2015), and (b) abnormalities in the evaluation of aversive stimuli (which are associated with negative feelings such as fear, pain, and stress), play a crucial role in the transition to AUD or alcohol relapse (Maleki and Oscar-Berman, 2019; Witkiewitz et al., 2015). Whereas brain activation alterations in emotional processes have been studied in relation to AUD (Beck et al., 2009; Chanraud-Guillermo et al., 2009; Gilman and Hommer, 2008; Heinz et al., 2007), gender differences have not been explored in depth, and there is a need for more research in this domain (Nixon et al., 2014; Ruiz and Oscar-Berman, 2013). Therefore, in accordance with the primary aim of the present exploratory study, we sought to determine how gender differences are manifested in the brain networks outlined by our conceptual model (Event Integration and Evaluation). We hypothesized that AUD-related abnormalities in emotional evaluation (i.e., ratings and reaction times) would differ by gender, and these processes would be reflected by gender differences in brain activity during emotional evaluation. Overall, we expected that the same brain regions as in the well-characterized system involved in emotion processing, as described above, would be involved in emotional processes; however, they would not be impacted in the same way for men and women. We hypothesized that ALCM would show dampened corticolimbic activation to stimuli from most of the emotional valence categories, thereby reflecting muted affect. For women, we postulated that the pattern of abnormalities associated with AUD would differ from that of men, by showing increased activation to emotional stimuli, indicative of hyper-sensitivity to affective input.
 
 ## Results
 
-## Participant characteristics
+### Participant characteristics
 
 Demographics, alcoholism indices, neuropsychological and clinical assessment scores of the 88 participants are presented in Figure 2 (and Appendix 1—tables 1 and 2). Although the Hamilton Rating Scale for Depression (HRSD; Hamilton, 1960) scores for the ALC men and women were higher than for the NC men and women (p<0.01), both groups’ scores were very low (mean 3.6 vs. 1.1): HRSD scores of 8, 16, and 25 or above indicate mild, moderate, or severe depression, respectively (Zimmerman et al., 2013). The average number of daily drinks (DD) was significantly higher in ALCM compared to ALCW (p<0.05). The alcoholic participants were abstinent for extended lengths, on average for seven years. The ALCW and NCW had higher delayed memory scores than the ALCM and NCM (Wechsler Memory Scale Delayed (General) Memory Index, p<0.01).
 
@@ -54,9 +62,17 @@ Demographics, alcoholism indices, neuropsychological and clinical assessment sco
 
 **Figure 2.:** The boxplot represents participant characteristics. Appendix 1—table 1 shows the means, standard deviations, and significant differences. In the boxplot above, blue diamonds indicate mean values. Age, education, DHD, and LOS are expressed in years and DD is in ounces of ethanol per day (approximating daily drinks). LOS values were not applicable for two nonalcoholic control men and four nonalcoholic control women who reported never drinking. Abbreviations: DHD = Duration of Heavy Drinking (>21 drinks per week) in years; DD = Daily drinks; LOS = Length of sobriety in years. HRSD = Hamilton Rating Scale for Depression (Hamilton, 1960); VIQ = Wechsler Adult Intelligence Scale, 3rd ed. Verbal Intelligence Quotient; PIQ = Wechsler Adult Intelligence Scale, 3rd ed. Performance Intelligence Quotient; WMS_DMI = Wechsler Memory Scale, 3rd ed. Delayed (General) Memory Index.
 
-## Behavioral ratings
+### Behavioral ratings
 
 Of the 88 participants included in fMRI analyses, 12 were excluded from the analysis of behavioral ratings because of technical problems or incomplete data, leaving 76 subjects for the final analyses (21 ALCW, 15 ALCM, 21 NCW, 19 NCM). Overall, participants’ percentage ratings of good, bad, and neutral were generally consistent among ALC and NC men and women (Figure 3) for the various conditions (aversive, erotic, gruesome, happy, neutral). That is, the participants rated erotic pictures as mostly neutral and good; gruesome pictures as almost entirely bad; aversive pictures as bad, with a few neutral; happy pictures as mostly good, with some neutral; and neutral pictures as mostly neutral, with some good (altogether representing a significant condition x rating interaction, Appendix 1—table 3). While all groups (ALC and NC men and women) had a similar pattern, a significant group x condition x rating interaction revealed that the ALC group rated erotic pictures as good less frequently than the NC group. The gender x condition x rating interaction revealed that more men than women rated erotic pictures as good.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig3-v1.jpg)
+
+**Figure 3.:** The boxplot represents the significant condition x rating x group interaction, and the significant condition x rating x gender interaction, for percentage rating of the pictures p<0.05 (Appendix 1—table 3). The group interaction is most clearly evident for the difference in the good and neutral ratings of the erotic pictures, with the alcoholic participants rating the pictures good less frequently; other picture types were rated more similarly by both the alcoholic and control groups. The gender interaction indicated that men rated erotic pictures as good more frequently than women. Blue diamonds indicate mean values. Figure 3—figure supplement 1 shows the reaction times. Abbreviations: ALC = Alcoholic participants; NC = Nonalcoholic Control participants.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The boxplot represents the significant rating x gender interaction for reaction times of the pictures p<0.05 (Appendix 1—table 4). The difference in the good rating of the erotic pictures by alcoholics vs. nonalcoholic controls. The ratings for other conditions were qualitatively similar for alcoholics and nonalcoholic control subjects. Blue diamonds indicate mean values. Figure 3 shows the reaction times. ALC = alcoholic participants; NC = nonalcoholic control participants.
 
 As with the percentage ratings, evaluation times also were generally comparable for the four groups (Figure 3—figure supplement 1 and Appendix 1—table 4). There were significant interaction effects of condition x rating, rating x gender, and main effects of condition and rating (p<0.001 for all). The evaluation time for gruesome and aversive stimuli were approximately 0.5 s longer than other conditions. The evaluation time for bad ratings were similarly shorter for gruesome and aversive stimuli. Women took approximately 0.25 s longer (14%) to evaluate the good ratings than men, while the evaluation times for neutral and bad ratings were similar for men and women.
 
@@ -64,13 +80,220 @@ Percentage ratings were significantly predicted by the interaction of Profile of
 
 For the ‘caudal middle frontal cluster 1’ and ‘superior frontal cluster’ obtained through analysis of the aversive contrast, percentage ratings were significantly predicted by the interaction of group x gender x rating x contrast effect size. However, post-hoc comparisons of the slopes of contrast effect size for each rating did not identify significant differences between the subgroups. That is, while we identified a different pattern in the relationships of percentage ratings to brain activity among the four subgroups, it was not clear how these relationships differed between the ALCW vs. NCW, and ALCM vs. NCM.
 
-## Neuroimaging
+### Neuroimaging
 
 The brain activity observed during the neutral condition was subtracted from aversive, erotic, happy, and gruesome conditions, yielding four main comparisons from the study. Overall, the ALC group exhibited lower brain activation values than the NC group for all four contrasts, but significant interactions of group x gender indicated striking differences in these abnormalities. That is, the general observation of lower activation values was evident for ALCM, while ALCW exhibited a different pattern; the values for each emotion vs. neutral contrast were shifted higher for ALCW. Table 1 identifies regions with significant group x gender interactions for each of the four contrasts. Because the pattern of these significant group x gender interactions was similar for all contrasts, we have chosen to exemplify the two most salient contrasts: erotic vs. neutral (Figure 4) and aversive vs. neutral (Figure 5). A summary figure (Figure 6) shows the group x gender interactions for all four contrasts.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig4-v1.jpg)
+
+**Figure 4.:** A significant group x gender interaction in response to erotic vs. neutral stimuli was identified and is displayed as a green outline indicated by arrows. All inferior arrows designate the amygdala. Group mean contrast values are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. Contrast values are overlaid on coronal cross sections. Images are displayed in radiological convention with the right hemisphere shown on the left. (Sagittal and axial views are shown in Figure 4—figure supplement 1 and Figure 4—figure supplement 2; Figure 4—figure supplement 3 shows the magnitude of cluster differences.) Abbreviations: ALCM = Alcoholic men; ALCW = Alcoholic women; NCM = Nonalcoholic men; NCW = Nonalcoholic women.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A group x gender interaction in response to erotic vs. neutral stimulation was identified and is displayed as a green outline. Group mean values are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. Contrast effect sizes are overlaid on sagittal cross sections. (Coronal and axial views are shown in Figure 4 and Figure 4—figure supplement 2; Figure 4—figure supplement 3 shows the magnitude of cluster differences.) Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** A group x gender interaction in response to erotic vs. neutral stimulation was identified and is displayed as a green outline. Group mean values are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. Contrast effect sizes are overlaid on axial cross sections. Images are displayed in radiological convention with the right hemisphere shown on the left. (Coronal and sagittal views are shown in Figure 4 and Figure 4—figure supplement 1; Figure 4—figure supplement 3 shows the magnitude of cluster differences.) Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The split violin plot represents the Contrast Effect Size (CES; equivalent to ‘CON’ in SPM or ‘COPE’ in FSL) for the cluster in which a significant group x gender interaction was identified for the erotic vs. neutral contrast (p<0.05 after correction for multiple comparisons). Positive values indicate erotic >neutral, while negative values indicate erotic <neutral. Each point represents a single participant’s average CES for vertices within the cluster. This figure is meant to convey the variability in CES across participants that is not visible in Figure 4. Nonalcoholic control men had greater activation to erotic stimuli than neutral stimuli, and the contrast was more positive than was observed for alcoholic men. The pattern was reversed for women: Alcoholic women had lower contrast values than nonalcoholic women. Abbreviations: ALC = alcoholic participants; NC = nonalcoholic control participants.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-v1.jpg)
+
+**Figure 5.:** A significant group x gender interaction revealed several clusters (see Appendix 1—table 6), which are indicated by arrows on the lateral surface of the left hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean contrast values (for aversive vs. neutral) are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. (Figure 5—figure supplement 1 shows the medial surface, while the right hemisphere is shown in Figure 5—figure supplement 2 for the lateral and Figure 5—figure supplement 3 for the medial surface; Figure 5—figure supplement 4 shows the magnitude of cluster differences.) Although not shown here, the activation patterns across the four subgroups for contrasts of other emotional stimuli (i.e., happy, gruesome, and erotic) with neutral stimuli were similar to those shown above, and likewise, the general locations of the activation regions were similar for the four subgroups. Abbreviations: ALCM = Alcoholic men; ALCW = Alcoholic women; NCM = Nonalcoholic men; NCW = Nonalcoholic women.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** A group x gender interaction revealed several clusters (see Appendix 1—table 6), which are displayed as outlines and indicated by arrows on the medial surface of the left hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean values (for aversive vs. neutral) are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. (Figure 5 shows the lateral surface, while the right hemisphere is shown in Figure 5—figure supplement 2 for the lateral and Figure 5—figure supplement 3 for the medial surface; Figure 5—figure supplement 4 shows the magnitude of cluster differences.) Although not shown here, the activation patterns across the four subgroups for contrasts of other emotional stimuli (i.e., happy, gruesome, and erotic) with neutral stimuli were similar to those shown above, and likewise, the general locations of the activation regions were similar for the four subgroups. Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** A group x gender interaction revealed several clusters (see Appendix 1—table 6), which are displayed as outlines and indicated by arrows on the lateral surface of the right hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean values (for aversive vs. neutral) are displayed in the brain images located in the four corners of the figure, and group comparisons are indicated by minus signs. (Figure 5 and Figure 5—figure supplement 1 show the lateral and medial surfaces of the left hemisphere, while the medial surface of the right hemisphere is shown in Figure 5—figure supplement 3; Figure 5—figure supplement 4 shows the magnitude of cluster differences.) Although not shown here, the activation patterns across the four subgroups for contrasts of other emotional stimuli (i.e., happy, gruesome, and erotic) with neutral stimuli were similar to those shown above, and likewise, the general locations of the activation regions were similar for the four subgroups. Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** A group x gender interaction revealed several clusters (see Appendix 1—table 6), which are displayed as outlines and indicated by arrows on the medial surface of the right hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean values (for aversive vs. neutral) are displayed in the brain images located in the four corners of the figure, and group comparisons are indicated by minus signs. (Figure 5 and Figure 5—figure supplement 1 show the lateral and medial surfaces of the left hemisphere, while the lateral surface of the right hemisphere is shown in Figure 5—figure supplement 2; Figure 5—figure supplement 4 shows the magnitude of cluster differences.) Although not shown here, the activation patterns across the four subgroups for contrasts of other emotional stimuli (i.e., happy, gruesome, and erotic) with neutral stimuli were similar to those shown above, and likewise, the general locations of the activation regions were similar for the four subgroups. Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The split violin plot represents the Contrast Effect Size (CES; equivalent to ‘CON’ in SPM or ‘COPE’ in FSL) for left hemisphere clusters in which a significant group x gender interaction was identified for the aversive vs. neutral contrast (p<0.05 after correction for multiple comparisons). Positive values indicate aversive >neutral, while negative values indicate aversive <neutral. Each point represents a single participant’s average CES for vertices within the cluster. This figure is meant to convey the variability in CES across participants that is not visible in Figure 5. In each of the four clusters, nonalcoholic control men had greater activation to aversive stimuli than neutral stimuli, and the contrast was more positive than was observed for alcoholic men. The pattern was reversed for women: Alcoholic women had higher contrast values than nonalcoholic women. Abbreviations: ALC = alcoholic participants; NC = nonalcoholic participants.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** A group x gender interaction revealed two clusters (see Appendix 1—table 8), which are displayed as outlines and indicated by arrows on the lateral surface of the left hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean values (for aversive vs. neutral) are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. (The lateral surface of the right hemisphere is shown in Figure 5—figure supplement 6; no clusters were visible on medial surfaces). Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** A group x gender interaction revealed two clusters (see Appendix 1—table 8), which are displayed as outlines and indicated by arrows on the lateral surface of the right hemisphere, overlaid on contrast values between aversive and neutral stimuli. Group mean values (for aversive vs. neutral) are displayed in the four brain images located in the corners of the figure, and group comparisons are indicated by minus signs. (The lateral surface of the left hemisphere is shown in Figure 5—figure supplement 5; no clusters were visible on medial surfaces). Abbreviations: ALCM = alcoholic men; ALCW = alcoholic women; NCM = nonalcoholic men; NCW = nonalcoholic women.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/41723/elife-41723-fig6-v1.jpg)
 
 **Figure 6.:** Significant clusters are indicated by arrows shown on interaction maps of contrast values for each of the four emotions vs. neutral (similar to the center image in Figure 4 and Figure 5). All four brain surfaces are shown (from left: left lateral, left medial, right lateral, and right medial). Blue regions indicate less activation contrast (emotion vs. neutral) for ALCM relative to NCM vs. ALCW relative to NCW. Abbreviations: RH = Right Hemisphere; LH = Left Hemisphere.
+
+**Table 1.**
+ Peak voxel or vertex labels of significant clusters for group contrasts of each emotion vs. neutral condition.Significant clusters (p<0.05 after correction for multiple comparisons) were observed for comparisons between alcoholic and control groups (for the entire sample and for men and women separately), along with group x gender interactions, for each of the four contrasts between each emotion condition compared to the neutral condition. Cortical regions were determined from the peak voxel or vertex. Overall, the table shows that the ALCM had widespread abnormalities in response to emotional stimuli, and that these effects were significantly different than the effects for the ALCW. Details are described in the text, Figure 4, Figure 5, and Figure 6, and in Appendix 1—tables 5, 6 and 7. Abbreviations: ACC = anterior cingulate cortex; L = left hemisphere; R = right hemisphere; ALCW = alcoholic women; ALCM = alcoholic men; NCW = nonalcoholic control women; NCM = nonalcoholic control men; ns = not significant; BanksSTS = banks, superior temporal sulcus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lobe</th>
+      <th>Region at peak</th>
+      <th>ALC vs. NC</th>
+      <th>ALCW vs. NCW</th>
+      <th>ALCM vs. NCM</th>
+      <th>Interaction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Frontal</td>
+      <td>Caudal Middle Frontal</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>aversive (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Medial Orbitofrontal</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &gt; NCM: aversive (R)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rostral ACC</td>
+      <td>ALC &gt; NC: aversive (L)</td>
+      <td>ns</td>
+      <td>ALCM &gt; NCM: aversive (L)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rostral Middle Frontal</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: happy (R)</td>
+      <td>happy (L,R), aversive (R)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precentral</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: aversive (L,R), happy (L,R), erotic (R)</td>
+      <td>aversive (L), happy (L,R), erotic (R)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Superior Frontal</td>
+      <td>ns</td>
+      <td>ALCW &gt; NCW: happy (L)</td>
+      <td>ALCM &lt; NCM: aversive (R), erotic (R)</td>
+      <td>aversive (L), happy (R)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Caudal ACC</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>happy (L)</td>
+    </tr>
+    <tr>
+      <td>Parietal</td>
+      <td>Inferior Parietal</td>
+      <td>ALC &lt; NC: happy (L)</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: aversive (L,R), happy (L)</td>
+      <td>aversive (L), happy (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Postcentral</td>
+      <td>ALC &gt; NC: erotic (L)</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Precuneus</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>happy (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Superior Parietal</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: happy (R)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Supramarginal</td>
+      <td>ns</td>
+      <td>ALCW &gt; NCW: aversive (L)</td>
+      <td>ns</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Temporal</td>
+      <td>BanksSTS</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: gruesome (L)</td>
+      <td>gruesome (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Parahippocampal</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>erotic (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cuneus</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>happy (R)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pericalcarine</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>happy (L)</td>
+    </tr>
+    <tr>
+      <td>Subcortical</td>
+      <td>Thalamus</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ALCM &lt; NCM: happy (R)</td>
+      <td>ns</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>Cerebellum</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>ns</td>
+      <td>happy (L), aversive (L)</td>
+    </tr>
+  </tbody>
+</table>
 
 The contrast of erotic vs. neutral (i.e., erotic minus neutral) is presented in Figure 4, which shows that brain activity was greater in most subcortical brain regions for erotic than for neutral images (for ALCW, ALCM, NCW, and NCM). The group x gender interaction revealed a significant cluster that encompassed limbic brain regions including the amygdala, thalamus, hippocampus, and parahippocampal cortex, as well as much of the cerebellum. The erotic and neutral pictures elicited less activation difference for ALCM than for NCM; this alcoholism-related abnormality was not observed for women.
 
@@ -82,11 +305,11 @@ For ALCW compared to NCW, significantly more positive brain activation contrasts
 
 ## Discussion
 
-## Alcoholism and emotional processing
+### Alcoholism and emotional processing
 
 Research on the relationship between AUD and emotional dysfunction has shown impairments in self-regulation of emotions, as well as deficits in the perception, identification, evaluation, and understanding of emotions of self and others. However, because little is known about the brain responses to emotional stimuli in ALCW as compared to ALCM, the present study combined fMRI neuroimaging with a sophisticated experimental design and advanced data analysis methods, to explore the relationship between gender and alcoholism in functional activation of brain regions as participants processed emotional stimuli of varying valences (International Affective Picture System). As indicated in Table 1, with the exception of two ventromedial prefrontal regions, our results showed consistently blunted brain activation responses to emotional stimuli vs. neutral stimuli in the ALC group compared to the NC group for men; this general pattern was not observed for women. Further, a significant interaction between gender and alcoholism indicated that the affective pictures elicited lower activation contrasts in ALCM relative to NCM, abnormalities that were significantly lower and more pervasive than those observed between ALCW and NCW. That is, by comparison, ALCW showed more positive activation contrasts than found for NCW, in regions including the superior frontal and supramarginal cortex. In the ALCM, the significant differences appeared in areas throughout the brain, including the inferior parietal gyrus, anterior cingulate gyrus, and postcentral gyrus. Table 1 (and Appendix 1—tables 5, 6 and 7) and Figures 4, 5 and 6 show the extent and spread of the differences among ALCM, NCM, ALCW, and NCW.
 
-## Gender and alcoholism interaction in emotional processing regions in the brain
+### Gender and alcoholism interaction in emotional processing regions in the brain
 
 Emotional processing involves engaging multiple brain regions (Davidson et al., 1999). In vivo neuroimaging studies as well as post-mortem pathological studies have shown that cortical loss in the frontal lobes is the most common damage observed both in association with AUD (Oscar-Berman and Marinkovic, 2003) and in individuals having emotional disorders unrelated to AUD (Bechara et al., 2000; Young et al., 2010). Padula et al. (2015) used fMRI to compare gender effects in affective processing by abstinent alcohol dependent and healthy nonalcoholic individuals. Their stimuli were pictures of individual faces that displayed positive (happy) and negative (sad, fearful) emotional expressions. Similar to our approach, they examined contrasts in activation provoked by the emotion stimuli vs. the neutral stimuli. Of note, our present results are congruent with those reported by Padula et al. (2015), who found significant group x gender interactions in frontal brain activation levels to positive and to negative emotional stimuli. Despite differences in experimental methods, results of both studies are consistent with the notion of gender-specific and alcoholism-related effects in affective processing, with an emphasis on frontal brain involvement.
 
@@ -100,7 +323,7 @@ Inferior parietal cortex was another region that showed a significant interactio
 
 There also were significant interactions between gender and alcoholism in limbic and subcortical structures: In ALCM, brain activity for erotic and neutral pictures were relatively similar, leading to decreased differential activation, while NCM had stronger activity for erotic than neutral pictures, for parahippocampal cortex, hippocampus, amygdala, other limbic structures, and the cerebellum. This alcoholism-related abnormality was not observed for women: The ALCW had a slightly larger (although not significant) positive contrast between erotic and neutral pictures compared to NCW.
 
-## Limitations
+### Limitations
 
 The results of this exploratory study are to be considered in the context of several limitations. First, our results are based upon cross-sectional data, and as such, it is impossible to determine if chronic alcohol usage caused, or resulted from, the observed dysregulated emotional reactivity, or perhaps a combination of both. Further, these deficits could reflect differences in brain structure that influenced the emotional activity we observed. In that regard, our alcoholic participants were abstinent for extended lengths, on average for seven years, a variable that speaks to the persistent nature of emotion processing deficits in AUD populations. While it remains unclear whether these deficits predate or result from heavy drinking, or whether emotion processing deficits recover over the course of abstinence, a study of accuracy of decoding emotional facial expressions by short- and long-term abstinent alcoholic men and women (Kornreich et al., 2001) indicated that deficits in decoding accuracy for anger and disgust, and to a lesser degree sadness, continued with long-term abstinence. Nonetheless, the topic of persistence vs. recovery remains a promising direction for future studies. Second, we had limited information about the potentially confounding variable of smoking status, and therefore, it was not included in the analyses. Smoking abstinence has been associated with increased emotional reactivity in response to unpleasant stimuli (Versace et al., 2012) and interactions with alcoholism (Durazzo et al., 2013; Luhar et al., 2013), and therefore, may have influenced the results of the present study. Third, while there were peak regions of activation differences, these were observed against a background of broad regions identified that were different between each of the emotional conditions and the neutral condition, and the significant group x gender interactions reflected these broad differences in brain activity. We chose not to artificially suppress the display of these widespread effects in our figures by restricting the thresholds. Fourth, the erotic stimuli shown were identical for all participants in order to maintain a consistent experimental paradigm, while at the same time maximizing arousal. To do this, we selected erotic imagery based upon findings from studies measuring arousal levels to erotic stimuli in men and women (Bradley et al., 2001; Israel and Strassberg, 2007). In those studies, men’s behavioral and electrophysiological responses to erotic photographs of women were, on average, much stronger than to erotic photographs of men, whereas responses by women to erotic imagery were similar for photographs of men and women. Therefore, of the 48 erotic pictures presented to the participants in our study, 23 were photographs of women, and 25 were photographs of men and women together. However, participants’ sexual orientation was not assessed, and tailoring the photographs to each individual participant might be more effective.
 
@@ -110,7 +333,7 @@ Finally, as described in the Methods, the p-value thresholds used in this study 
 
 Despite the above considerations, the findings from the present exploratory study highlight the need for continued research on the overlap between gender differences in processing of emotional stimuli and the development or maintenance of pathological alcohol consumption.
 
-## Conclusions
+### Conclusions
 
 While blunted emotional reactivity had been observed previously in alcoholics, earlier studies had focused either exclusively on men or had collapsed data across genders (Gilman et al., 2010; Marinkovic et al., 2009; Salloum et al., 2007). Therefore, the present study provides additional insights into emotional processing in alcoholism by examining the influence of gender on brain activation. In our previous studies (Rivas-Grajales et al., 2018; Sawyer et al., 2018; Sawyer et al., 2017; Sawyer et al., 2016; Seitz et al., 2017), we had reported gender differences in morphometry of cerebral and cerebellar subregions, and white matter integrity, in association with alcoholism history in men and women. In the current study, we reported functional abnormalities in cortical, subcortical, and cerebellar regions involved in emotional processing that were different in alcoholic men and women. Significant interactions between alcoholism and gender in several cortical regions in response to emotional stimuli were observed for the aversive and happy stimuli, as well as large differences between ALCM and NCM. Areas within the frontal lobes were among the brain regions evidencing the most profound alcoholism-related gender differences.
 
@@ -118,7 +341,7 @@ The brain activity contrasts related to affective vs. neutral stimuli were dampe
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Prior to conducting the experiment, we computed estimates of sample size based upon Cohen’s d, which suggested approximately 20 participants per group were required to detect a medium to large effect size (Cohen, 1988), a number confirmed by fMRI-specific research (Thirion et al., 2007). A total of 88 participants (25 ALCW, 17 ALCM, 24 NCW, and 22 NCM) were included in the analyses. The characteristics of the participants, including alcoholism indices and neuropsychological test scores are presented in Figure 2 (and Appendix 1—tables 1 and 2) of the Results section; data and code are available from Dryad (https://doi.org/10.5061/dryad.5fn0224) and GitLab (https://gitlab.com/kslays/sawyer-iaps; copy archived at https://github.com/elifesciences-publications/sawyer-iaps). All participants were right-handed English speakers recruited from the Boston, MA (USA) area through flyers placed in facilities and in public places (e.g., churches, stores), and advertisements placed with local newspapers and websites. Selection procedures included an initial structured telephone interview to determine age, level of education, health history, and history of alcohol and drug use.
 
@@ -128,11 +351,11 @@ Participants underwent medical history interview and vision testing, plus a seri
 
 Participants received a structured interview regarding their drinking patterns, including length of abstinence and duration of heavy drinking, that is more than 21 drinks per week (one drink: 355 ml beer, 148 ml wine, or 44 ml hard liquor). For each participant, we calculated a Quantity Frequency Index (Cahalan et al., 1969), which factors the amount, type, and frequency of alcohol usage (ounces of ethanol per day, roughly corresponding to number of drinks per day) over the last six months (for the NC group), or over the six months preceding cessation of drinking (for the ALC group). The ALC participants met criteria for alcohol abuse or dependence, and had over 21 drinks per week for at least five years in their lifetime; all had abstained from alcohol for at least 21 days. Importantly, to ensure stability in the sequelae of AUD, we investigated long-term abstinent participants with a history of heavy drinking and whose participation was independent of current drinking or withdrawal. None of the NC participants drank heavily (21 or more per week), except for one man who drank while serving in the army decades before the scan, but did not meet the criteria for alcohol dependence; social drinking patterns of the NC participants are reported in Figure 2 and Appendix 1—table 1. We examined the group x gender interaction within a regression model for the demographics, alcoholism indices, neuropsychological and clinical assessment scores. We also conducted Welch’s t-tests to examine gender differences for each measure for the ALC and NC groups separately, and group differences for the men and women separately.
 
-## MRI acquisition
+### MRI acquisition
 
 Imaging data were acquired using a 3T Siemens (Erlangen, Germany) Trio Tim magnetic resonance scanner. Following automated shimming and scout image acquisition, two eight-minute 3D T1-weighted MP-RAGE sequences were obtained: TR = 2530 msec, TE = 3.45 msec, flip angle = 70, FOV = 256 mm, 128 sagittal slices with in-plane resolution 1 × 1 mm, slice thickness = 1.33 mm. These two structural volumes were used for functional slice prescription, spatial normalization, and cortical surface reconstruction. Due to time constraints, only one MP-RAGE sequence was obtained for 23 subjects (11 NCM, 8 ALCM, 2 NCW, 2 ALCW). Functional whole-brain blood oxygen level-dependent (BOLD) images were obtained with a gradient echo T2*-weighted sequence: TR = 2 s, TE = 30 msec, flip angle = 900, FOV = 200 mm, slice thickness = 3.0 mm, spacing = 1.0 mm, 32 interleaved axial-oblique slices aligned to the anterior-commissure/posterior-commissure line (voxel size: 3.1 × 3.1 × 4.0 mm). The scans covered the entire cerebrum and the superior portion of the cerebellum.
 
-## Behavioral task
+### Behavioral task
 
 Participants were presented with blocks of pictures chosen to evoke emotional responses (Figure 1). The picture stimuli were from the International Affective Picture System (Lang et al., 1988). Participants completed five runs (except one NCW who completed only four runs), each including five conditions: aversive, erotic, gruesome, happy, and neutral pictures. As depicted in Figure 1, each run contained three 24 s blocks of fixation plus eight 24 s blocks that each consisted of six pictures of one of the emotional conditions (e.g., happy pictures), for a total of 11 blocks per run. The five runs included a total of 40 blocks of emotional pictures with eight blocks for each of the five emotional picture conditions. Stimuli were presented only once, totaling 48 pictures per 264 s run (240 pictures in 22 min in total across the five runs).
 
@@ -142,7 +365,7 @@ Behavioral response data were analyzed using R software mixed models (Bates et a
 
 Full-factorial mixed models were employed to examine the relationships of percentage ratings and evaluation times to selected neuropsychological measures (Wechsler Verbal and Performance IQ scores, and the Delayed Memory Index), affective measures (the POMS Depression scale, and the Multiple Affect Adjective Check List [MAACL] Anxiety and Sensation Seeking scales), and brain activity (i.e., contrast effect size) within the clusters identified to have significant group x gender interactions for aversive vs. neutral and erotic vs. neutral contrasts (the two most salient contrasts). Separate mixed models were used for each measure (three neuropsychological measures, three affect measures, and five clusters, for percentage rating and evaluation times, resulting in a total of 22 models). Outliers (outside three standard deviations from the mean) were removed prior to analyses; this resulted in the exclusion of 1 ALCW and 1 ALCM for POMS Depression, and 2 ALCW and 1 NCW for MAACL Anxiety. Models were examined for significant (p<0.05) interactions of the measures with group or gender, and followed by planned comparisons: ALC vs. NC for group interactions, and subgroup differences (ALCW vs. NCW, ALCM vs. NCM) for group x gender interactions. Post-hoc comparisons examined the slope of each measure with percentage ratings or evaluation times, and Bonferroni correction was applied for the number of contrasts examined within the model.
 
-## MRI analyses
+### MRI analyses
 
 The imaging data were analyzed using FreeSurfer and FS-FAST v6.0 (http://surfer.nmr.mgh.harvard.edu) analysis packages (Dale et al., 1999; Fischl et al., 1999a). Individual cortical surfaces were reconstructed using automatic gray and white matter segmentation, tessellation, and inflation. Images were registered with a canonical brain surface (fsaverage) based on sulcal and gyral patterns (Fischl et al., 1999b), and registered with a canonical brain volume (MNI305) using a 12 degrees of freedom nonlinear transform. Gray and white matter surface accuracy was individually examined using automatically-generated quality control figures (https://github.com/poldracklab/niworkflows), and no errors were detected for any of the subjects included in the analyses that would be likely to influence the outcomes of this project (Waters et al., 2018).
 

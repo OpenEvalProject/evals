@@ -36,7 +36,7 @@
 
 ## Abstract
 
-10.7554/eLife.37349.001 Generating a comprehensive description of cortical networks requires a large-scale, systematic approach. To that end, we have begun a pipeline project using multipatch electrophysiology, supplemented with two-photon optogenetics, to characterize connectivity and synaptic signaling between classes of neurons in adult mouse primary visual cortex (V1) and human cortex. We focus on producing results detailed enough for the generation of computational models and enabling comparison with future studies. Here, we report our examination of intralaminar connectivity within each of several classes of excitatory neurons. We find that connections are sparse but present among all excitatory cell classes and layers we sampled, and that most mouse synapses exhibited short-term depression with similar dynamics. Synaptic signaling between a subset of layer 2/3 neurons, however, exhibited facilitation. These results contribute to a body of evidence describing recurrent excitatory connectivity as a conserved feature of cortical microcircuits.
+Generating a comprehensive description of cortical networks requires a large-scale, systematic approach. To that end, we have begun a pipeline project using multipatch electrophysiology, supplemented with two-photon optogenetics, to characterize connectivity and synaptic signaling between classes of neurons in adult mouse primary visual cortex (V1) and human cortex. We focus on producing results detailed enough for the generation of computational models and enabling comparison with future studies. Here, we report our examination of intralaminar connectivity within each of several classes of excitatory neurons. We find that connections are sparse but present among all excitatory cell classes and layers we sampled, and that most mouse synapses exhibited short-term depression with similar dynamics. Synaptic signaling between a subset of layer 2/3 neurons, however, exhibited facilitation. These results contribute to a body of evidence describing recurrent excitatory connectivity as a conserved feature of cortical microcircuits.
 
 ## Introduction
 
@@ -52,9 +52,214 @@ The data reported here demonstrate that sparse recurrent connectivity is present
 
 We performed in vitro whole-cell recordings from up to eight excitatory neurons simultaneously. We probed 2836 putative connections in mouse V1 from excitatory cell classes defined by transgenic labeling, morphology, and cortical layer (Tasic et al., 2016). We further probed 616 putative connections in human frontal and temporal cortex from excitatory cell classes defined by morphology and cortical layer (Table 1). Recurrent connectivity was tested and observed in layer 2/3 through layer 6 of mouse primary visual cortex and layer 2 through layer 6 of the human cortex. To assess connectivity, trains of action potentials were evoked in each cell, one at a time, while recording synaptic responses in all other cells. Connections were identified by the presence of excitatory postsynaptic potentials (EPSPs) evoked with a short latency and low jitter following the presynaptic spike, consistent with monosynaptic connections (Figure 1—figure supplement 1). We encountered no examples of EPSPs eliciting spikes in any recorded pyramidal cells, further indicating that evoked polysynaptic activity should be rare in these experiments.
 
-## Properties of intralaminar excitatory synaptic signaling in mouse cortex
+**Table 1.**
+ The number of connections probed and the number of connections used in subsequent analyses per the analysis flow diagram in Figure 1—figure supplement 1C–G.For each column, the Figure 1—figure supplement 1 letter indicates the end level in the analysis flow diagram while the main figure reference indicates n connections included in that figure. For example, the ‘Strength’ column indicates the number of connections for each type used to measure the strength (or amplitude) of the connection as shown in Figure 1F. The inclusion criteria for these connections can be followed in the diagram in Figure 1—figure supplement 1E. Similarly, these data are provided for kinetics (rise time and latency) and short-term plasticity (STP).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer/Cell Type</th>
+      <th>Total probed (Figure 1—figure supplement 1C)</th>
+      <th>Total connected (Figure 1—figure supplement 1C)</th>
+      <th>Total connection probability (%)</th>
+      <th>Strength (Figure 1—figure supplement 1E, Figure 1F)</th>
+      <th>Kinetics (Figure 1—figure supplement 1F, Figure 1F)</th>
+      <th>Connection probability (%) w/in 100 µm (Connected/probed, Figure 1—figure supplement 1D, Figure 4A,C)</th>
+      <th>STP (Figure 1—figure supplement 1G, Figures 5 and 6)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse L2/3</td>
+      <td>180</td>
+      <td>15</td>
+      <td>8.3</td>
+      <td>12</td>
+      <td>9</td>
+      <td>13/130 (10.0)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Rorb</td>
+      <td>315</td>
+      <td>20</td>
+      <td>6.3</td>
+      <td>13</td>
+      <td>13</td>
+      <td>18/247 (7.3)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Tlx3</td>
+      <td>1108</td>
+      <td>39</td>
+      <td>3.5</td>
+      <td>17</td>
+      <td>14</td>
+      <td>36/746 (4.8)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Sim1</td>
+      <td>783</td>
+      <td>55</td>
+      <td>7.0</td>
+      <td>18</td>
+      <td>18</td>
+      <td>41/527 (7.8)</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Ntsr1</td>
+      <td>450</td>
+      <td>2</td>
+      <td>0.4</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0/313 (0.0)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Human L2</td>
+      <td>132</td>
+      <td>22</td>
+      <td>16.7</td>
+      <td>18</td>
+      <td>18</td>
+      <td>13/69 (18.8)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Human L3</td>
+      <td>249</td>
+      <td>37</td>
+      <td>14.9</td>
+      <td>33</td>
+      <td>29</td>
+      <td>20/106 (18.9)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Human L4</td>
+      <td>123</td>
+      <td>4</td>
+      <td>3.3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1/51 (2.0)</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Human L5</td>
+      <td>112</td>
+      <td>13</td>
+      <td>11.6</td>
+      <td>6</td>
+      <td>6</td>
+      <td>6/49 (12.2)</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Properties of intralaminar excitatory synaptic signaling in mouse cortex
 
 Layer and projection-specific classes of excitatory neuron populations were identified either by post-hoc morphologic evaluation in layer 2/3 (animals n = 11) or transgenic labelling to target layers 4–6 (layer 4: Rorb (n = 28), layer 5: Tlx3 (n = 57), Sim1 (n = 20), layer 6: Ntsr1 (n = 13); Figure 1A). Layer 5 recordings were subdivided into subcortical projecting cells (Sim1; http://connectivity.brain-map.org) or corticocortical projecting cells (Tlx3; Kim et al., 2015). In layer 6, only the subcortically projecting cells were targeted (Ntsr1; Vélez-Fort et al., 2014). We probed 2836 potential connections (layer 2/3: 180, Rorb: 315, Tlx3: 1108, Sim1: 783, Ntsr1: 450) across these excitatory populations in mouse cortex (Table 1). Connections were detected between 131 putative pre- and post-synaptic partners (layer 2/3: 15, Rorb: 20, Tlx3: 39, Sim1: 55, Ntsr1: 2; Table 1). For >75% of the recorded cells, we recovered a biocytin fill (Figure 1A) and for all cells we obtained an epifluorescent image stack (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig1-v1.jpg)
+
+**Figure 1.:** (A) Cartoon illustrating color, Cre-line, and cortical layer mapping in slice recording region (V1). Example maximum intensity projection images of biocytin-filled pyramidal neurons for L2/3 and each Cre line. (B) Example epifluorescent images of neurons showing Cre-dependent reporter expression and/or dye-filled recording pipettes. Connection map is overlaid on the epifluorescent image (colored: example connection shown in C). (C) Spike time aligned EPSPs induced by the first AP of all ≤ 50 Hz stimulus trains for a single example connection (individual pulse-response trials: grey; average: colored). (D) First pulse average, like in C., for all connections within the synaptic type; grey: individual connections; thin-colored: connection highlighted in C; thick-colored: grand average of all connections. (E) Overlay of grand average for each connection type. (F) EPSP amplitude (in log units), CV of amplitude, latency, and rise time of first-pulse responses for each Cre-type (small circles) with the grand median (large). See Figure 1—figure supplement 1 for data processing and analysis diagrams.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example connected pair showing the stimulation pulses (top) and action potentials (middle) in the presynaptic cell; monosynaptically evoked EPSPs (bottom) in the postsynaptic cell. Traces represent every fifth sweep from the 50 Hz protocol used to measure recovery from STP at a delay of 250 ms. (B) Following repeated stimulation, the response to the first spike in each train of current pulsess was used for EPSP feature analysis. Spikes are shown aligned to the pulse time to illustrate jitter in spike timing. Spike time was defined as the region of maximum dV/dt in the spike trace, as shown in the raster plot corresponding to spike timing of individual spikes. Below, EPSPs are aligned to the spike time prior to fitting the average EPSP (see Equation 1; individual sweeps in grey, average response in blue, fit shown in red). The rise time was calculated as the interval between 20% and 80% of the peak amplitude of the fit. Spike-aligned EPSPs were deconvolved (see Equation 2, shown in figure), and the peak amplitudes of the deconvolved traces were used to measure changes in response amplitude of the course of a spike train. Responses were corrected to the baseline by subtracting the mode of the region between 10 ms and 50 µs prior to stimulus onset (baseline window). Responses were measured as the peak response during a 4 ms window beginning 1 ms after the spike time (response window shown is aligned to mean spike time). (C–G) Subsets of total connectivity data were used in subsequent analysis. Flowchart shows sweep (green) and connection (grey) level inclusion criteria for data included in each figure. See Table 1 for total number of cells in each criterion.
+
+**Table 2.**
+ Properties of mouse EPSPs.Median, mean, and standard deviation of EPSP properties plotted in Figure 1F for each layer and Cre-type. Number of connections used in the amplitude and CV analysis are found in Table 1 ‘Strength’, or for latency and rise time in Table 1 ‘Kinetics’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Amp median (mV)</th>
+      <th>Amp mean (mV)</th>
+      <th>Amp SD (mV)</th>
+      <th>Latency median (ms)</th>
+      <th>Latency mean (ms)</th>
+      <th>Latency SD (ms)</th>
+      <th>Rise Time median (ms)</th>
+      <th>Rise Time mean (ms)</th>
+      <th>Rise Time SD (ms)</th>
+      <th>CV median</th>
+      <th>CV mean</th>
+      <th>CV SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L2/3</td>
+      <td>0.26</td>
+      <td>0.34</td>
+      <td>±0.32</td>
+      <td>1.48</td>
+      <td>1.87</td>
+      <td>±1.0</td>
+      <td>1.24</td>
+      <td>1.45</td>
+      <td>±0.57</td>
+      <td>0.55</td>
+      <td>0.56</td>
+      <td>±0.15</td>
+    </tr>
+    <tr>
+      <td>Rorb</td>
+      <td>0.31</td>
+      <td>0.54</td>
+      <td>±0.49</td>
+      <td>1.31</td>
+      <td>1.50</td>
+      <td>±0.6</td>
+      <td>1.32</td>
+      <td>1.63</td>
+      <td>±0.94</td>
+      <td>0.59</td>
+      <td>0.55</td>
+      <td>±0.24</td>
+    </tr>
+    <tr>
+      <td>Sim1</td>
+      <td>0.33</td>
+      <td>0.52</td>
+      <td>±0.51</td>
+      <td>1.86</td>
+      <td>2.05</td>
+      <td>±0.82</td>
+      <td>1.91</td>
+      <td>1.86</td>
+      <td>±1.1</td>
+      <td>0.36</td>
+      <td>0.43</td>
+      <td>±0.2</td>
+    </tr>
+    <tr>
+      <td>Tlx3</td>
+      <td>0.14</td>
+      <td>0.24</td>
+      <td>±0.24</td>
+      <td>1.81</td>
+      <td>2.07</td>
+      <td>±0.74</td>
+      <td>1.44</td>
+      <td>1.35</td>
+      <td>±1.1</td>
+      <td>0.51</td>
+      <td>0.51</td>
+      <td>±0.18</td>
+    </tr>
+  </tbody>
+</table>
 
 We first characterized the strength and kinetics in recurrent connections of each Cre-type and layer (Figure 1). To measure these features with minimal influence of STP, only the first response on each sweep (inter-trial interval (ITI) = 15 s) was included for this analysis. For each connection, individual sweeps were included based on a number of criteria, namely a maximum autobias current to reach a holding potential of −70 ± 5 mV, a stable baseline, and absence of spontaneous spiking (see Materials and methods; Figure 1—figure supplement 1E,F). A minimum of 5 QC-passed sweeps were required for each connection to be included. Figure 1C shows EPSPs recorded from one example connection found in each of the chosen excitatory cell groups. For the large majority of connections, it was not possible to unequivocally distinguish synaptic failures from detection failures, thus we used the mean response from all sweeps (Figure 1C) to evaluate the EPSP features.
 
@@ -62,17 +267,103 @@ Consistent with previous reports that recurrent connectivity is weak (Song et al
 
 We could not directly quantify synaptic failures and thus calculated the coefficient of variation of synaptic amplitudes (CV; Figure 1F) to assess release probability. The CV of each connection describes the variability in a particular response in relation to the mean (ratio of standard deviation to mean) and is negatively correlated with release probability (Markram, 1997). The range of coefficient of variation in our data suggests differences in release probability between cell classes and is consistent with STP modeling results (see Figure 6).
 
-## Properties of intralaminar excitatory synaptic signaling in human cortex
+### Properties of intralaminar excitatory synaptic signaling in human cortex
 
 To what extent is recurrent connectivity in mouse V1 representative of connectivity in other regions and species? To make this comparison, we performed multipatch recordings from human frontal and temporal cortex. Specimens were collected during surgical resection of epileptic or tumorous tissue, but were distal to the site of pathology. We sampled recurrent intralayer connectivity in all layers containing pyramidal cells. Pyramidal cells were identified by their morphology visualized via biocytin (Figure 2A) or fluorescent dye (Figure 2B). We found 22 connections between layer 2 pyramidal cells (132 probed), 37 connections between layer 3 pyramidal cells (249 probed), four connections between layer 4 pyramidal cells (123 probed), and 13 connections between layer 5 pyramidal cells (112 probed). We found 1 connection in layer 6 (16 probed connections) but have not yet probed this layer sufficiently to make confident measurements of connection probability or synaptic properties. We selected 1.3 mM [Ca++]e for our human experiments because of reports that synaptic strength is higher than in mouse and to minimize the complex events that can be initiated by individual spikes in human tissue (Molnár et al., 2008) that make identifying monosynaptic connectivity challenging. Indeed we found that human cortex had a higher connectivity rate and mean amplitude (Figure 2C,D) compared to mouse cortex (despite a higher [Ca++]e in mouse), consistent with previous reports (Molnár et al., 2008). Layers 2, 3, and 5 had a sufficient number of connections to characterize strength and kinetics. However, we found no differences in response properties among these three layers (amplitude p=0.22, latency p=0.51, rise time p=0.22, Table 3). We did observe differences in CV between layers 2, 3, and 5 (p=0.0004, Table 3) suggesting layer-specific differences in release probability of recurrent connections, similar to findings in mouse V1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig2-v1.jpg)
 
-**Figure 2.:** (A) Cartoon illustrating color and cortical layer mapping in slice recording region (temporal or frontal cortex). Example maximum intensity projection images of biocytin-filled pyramidal neurons for layers 2–5. (B) Example epifluorescent images of neurons showing dye-filled neurons and recording pipettes. Connection map is overlaid on the epifluorescent image (colored: example connection shown in C). (C) Spike time aligned EPSPs induced by the first AP of all ≤ 50 Hz stimulus trains for a single example connection (individual pulse-response trials: grey; average: colored). (D) First pulse average, like in C., for all connections within the synaptic type; grey: individual connections; thin-colored: connection highlighted in C; thick-colored: grand average of all connections. (E) Overlay of grand average for each connection type. (F) EPSP amplitude, CV of amplitude, latency, and rise time of first-pulse responses for each layer (small circles) with the grand mean (large circles). See Figure 1—figure supplement 1 for data processing and analysis diagrams.10.7554/eLife.37349.009Figure 2—source data 1.
+**Figure 2.:** (A) Cartoon illustrating color and cortical layer mapping in slice recording region (temporal or frontal cortex). Example maximum intensity projection images of biocytin-filled pyramidal neurons for layers 2–5. (B) Example epifluorescent images of neurons showing dye-filled neurons and recording pipettes. Connection map is overlaid on the epifluorescent image (colored: example connection shown in C). (C) Spike time aligned EPSPs induced by the first AP of all ≤ 50 Hz stimulus trains for a single example connection (individual pulse-response trials: grey; average: colored). (D) First pulse average, like in C., for all connections within the synaptic type; grey: individual connections; thin-colored: connection highlighted in C; thick-colored: grand average of all connections. (E) Overlay of grand average for each connection type. (F) EPSP amplitude, CV of amplitude, latency, and rise time of first-pulse responses for each layer (small circles) with the grand mean (large circles). See Figure 1—figure supplement 1 for data processing and analysis diagrams.
+
+**Table 3.**
+ Properties of human EPSPs.Median, mean, and standard deviation of EPSP properties plotted in Figure 1F for each layer and Cre-line. Number of connections used in the amplitude and CV analysis are found in Table 1 ‘Strength’, for latency and rise time in Table 1 ‘Kinetics’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Amp median (mV)</th>
+      <th>Amp mean (mV)</th>
+      <th>Amp SD (mV)</th>
+      <th>Latency median (ms)</th>
+      <th>Latency mean (ms)</th>
+      <th>Latency SD (ms)</th>
+      <th>Rise time median (ms)</th>
+      <th>Rise time mean (ms)</th>
+      <th>Rise time SD (ms)</th>
+      <th>CV median</th>
+      <th>CV mean</th>
+      <th>CV sd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L2</td>
+      <td>0.22</td>
+      <td>0.30</td>
+      <td>±0.22</td>
+      <td>1.84</td>
+      <td>1.79</td>
+      <td>±0.78</td>
+      <td>1.47</td>
+      <td>1.53</td>
+      <td>±0.59</td>
+      <td>0.80</td>
+      <td>0.64</td>
+      <td>±0.29</td>
+    </tr>
+    <tr>
+      <td>L3</td>
+      <td>0.34</td>
+      <td>0.54</td>
+      <td>±0.68</td>
+      <td>1.57</td>
+      <td>1.58</td>
+      <td>±0.97</td>
+      <td>1.60</td>
+      <td>2.07</td>
+      <td>±1.36</td>
+      <td>0.39</td>
+      <td>0.44</td>
+      <td>±0.23</td>
+    </tr>
+    <tr>
+      <td>L4</td>
+      <td>0.97</td>
+      <td>0.97</td>
+      <td>±1.05</td>
+      <td>2.70</td>
+      <td>2.70</td>
+      <td>±1.80</td>
+      <td>2.02</td>
+      <td>2.02</td>
+      <td>±0.47</td>
+      <td>0.37</td>
+      <td>0.37</td>
+      <td>±0.20</td>
+    </tr>
+    <tr>
+      <td>L5</td>
+      <td>0.62</td>
+      <td>0.80</td>
+      <td>±0.69</td>
+      <td>1.64</td>
+      <td>1.75</td>
+      <td>±0.59</td>
+      <td>1.16</td>
+      <td>1.23</td>
+      <td>±0.46</td>
+      <td>0.29</td>
+      <td>0.34</td>
+      <td>±0.10</td>
+    </tr>
+  </tbody>
+</table>
 
 It is reasonable to question if the recurrent connectivity we see in tissue from epilepsy and tumor patients differs from that of healthy individuals. Although we cannot rule this out, we saw no significant differences in overall connectivity between tumor and epilepsy-derived specimens (p=0.833, Fisher’s Exact Test). We also found recurrent connections within multiple cortical regions and disease states in the human. Taken together, this may indicate that our results capture a common architecture of the mouse and human microcircuit.
 
-## Detection limit of synaptic responses
+### Detection limit of synaptic responses
 
 When using whole cell recordings to characterize synaptic connectivity, a major limitation is that some EPSPs may be too weak to be detected at the postsynaptic soma. Detection limits are influenced by several factors including the kinetics of EPSPs, the amplitude and kinetics of background noise, the frequency and properties of spontaneous EPSPs, and the number of evoked presynaptic spikes. One consequence is that we expect to generally underestimate connectivity, and in some cases, cell class differences in synaptic strength can be misinterpreted as differences in connectivity. Another consequence is that it may not be possible to obtain an accurate measurement of the distribution of synaptic weights, since the weakest synapses are undetectable.
 
@@ -80,23 +371,100 @@ To address these issues, we characterized the sensitivity of our experiments by 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig3-v1.jpg)
 
-**Figure 3.:** (A) Scatter plot showing measured EPSP amplitude versus minimum detectable amplitude for each tested pair. Detected synapses (manually annotated) are shown as blue diamonds; pairs with no detected EPSPs are grey dots. The region under the red dashed line denotes the region in which synaptic connections are likely to be misclassified as unconnected. Three example putative connections are highlighted in A and described further in panels B-D. One connection (top row) was selected for its large amplitude PSP and low background noise. Another connection (middle row) is harder to detect (PSP onset marked by yellow arrowhead) due to low amplitude and high background noise. The bottom row shows a recorded pair that was classified as unconnected. (B) A selection of postsynaptic current clamp recordings in response to presynaptic spikes. Each row contains recordings from a single tested pair. The vertical line indicates the time of presynaptic spikes, measured as the point of maximum dV/dt in the presynaptic recording. Yellow triangles indicate the onset of the EPSP. (C) Histograms showing distributions of peak response values measured from deconvolved traces (see Materials and methods). Red area indicates measurements made on background noise; blue area indicates measurements made immediately following a presynaptic spike. (D) Characterization of detection limits for each example. Plots show the probability that simulated EPSPs would be detected by a classifier, as a function of the rise time and mean amplitude of the EPSPs. Each example has a different characteristic detection limit that depends on the recording background noise and the length of the experiment. (E) An estimate of the total number of false negatives across the entire dataset. The measured distribution of EPSP amplitudes is shown in light grey (smoothed with a Gaussian filter with σ = 1 bin). The estimated correction show in dark grey is derived by dividing the measured distribution by the overall probability of detecting a synapse (red dashed line) at each amplitude. See Supplementary file 1 for features included in classifier.10.7554/eLife.37349.012Figure 3—source data 1.
+**Figure 3.:** (A) Scatter plot showing measured EPSP amplitude versus minimum detectable amplitude for each tested pair. Detected synapses (manually annotated) are shown as blue diamonds; pairs with no detected EPSPs are grey dots. The region under the red dashed line denotes the region in which synaptic connections are likely to be misclassified as unconnected. Three example putative connections are highlighted in A and described further in panels B-D. One connection (top row) was selected for its large amplitude PSP and low background noise. Another connection (middle row) is harder to detect (PSP onset marked by yellow arrowhead) due to low amplitude and high background noise. The bottom row shows a recorded pair that was classified as unconnected. (B) A selection of postsynaptic current clamp recordings in response to presynaptic spikes. Each row contains recordings from a single tested pair. The vertical line indicates the time of presynaptic spikes, measured as the point of maximum dV/dt in the presynaptic recording. Yellow triangles indicate the onset of the EPSP. (C) Histograms showing distributions of peak response values measured from deconvolved traces (see Materials and methods). Red area indicates measurements made on background noise; blue area indicates measurements made immediately following a presynaptic spike. (D) Characterization of detection limits for each example. Plots show the probability that simulated EPSPs would be detected by a classifier, as a function of the rise time and mean amplitude of the EPSPs. Each example has a different characteristic detection limit that depends on the recording background noise and the length of the experiment. (E) An estimate of the total number of false negatives across the entire dataset. The measured distribution of EPSP amplitudes is shown in light grey (smoothed with a Gaussian filter with σ = 1 bin). The estimated correction show in dark grey is derived by dividing the measured distribution by the overall probability of detecting a synapse (red dashed line) at each amplitude. See Supplementary file 1 for features included in classifier.
 
 This analysis provides, for every connection that we probed, an estimate of the minimum detectable EPSP amplitude (Figure 3A). Recordings with low background noise and adequate averaging will generally allow the detection of very small EPSPs (Figure 3D, top panel has a detection limit of 10–20 µV), whereas lower quality recordings will have higher detection thresholds and will report lower connectivity rates (Figure 3D, bottom panel has a poor detection limit near 100 µV). Likewise, EPSPs with shorter rise time (or other properties that distinguish the EPSP from background) are more likely to be detected (Figure 3D). These results confirm that the differences in experimental protocol between studies (for example, the number of presynaptic spikes evoked for each connection) can have a substantial impact on the apparent connectivity reported, but also suggests that future studies could reconcile these differences by carefully characterizing their detection limits.
 
 The results of this analysis also suggest a means of estimating the shape of the underlying distribution of synapse strengths at the low end, where synapses become more difficult to detect. Figure 3E shows the distribution of EPSP amplitudes across all detected synapses (light grey area) as well as the curve representing the probability that synapses would be detected as a function of EPSP amplitude (red line). Dividing the measured distribution by the probability of detection yields a corrected distribution (dark grey) with an overall 10% increase in connectivity. Although this estimate becomes unstable as the detection probability nears zero, an interesting result is that the left edge of the distribution trends downward even in the region where detection probability is high, suggesting that the sensitivity of our experiments is adequate to capture the majority of synapses and that we have accurately represented the underlying distribution of synaptic strengths. We are cautious, however, in our interpretation of this result--the analysis relies on several assumptions about the behavior of the classifier and the realism of the simulated EPSPs. Ultimately, the approach must be validated against a larger dataset.
 
-## Connection probability of excitatory synapses
+### Connection probability of excitatory synapses
 
 Estimates of connectivity vary widely across studies, in part due to methodological differences. In addition to the effects of detection sensitivity described above, estimated connection probability is affected by the intersomatic distances over which connections are sampled. This spatial distribution of connections may also offer insight into the organization of functional microcircuits. In mouse, connectivity in layer 2/3, Rorb, and Sim1 neurons within 100 µm was similar (~10%; Figure 4, left; connected/probed, L2/3: 13/130, Rorb: 18/247, Sim1: 41/527). However, within this range, Tlx3 connectivity was markedly lower (~5%; Tlx3: 36/746). Consistent with previous experiments in rat L6 CT neurons (West et al., 2006), Ntsr1 connectivity was very sparse as only two connections were detected (out of 313 probed) and were relatively far apart (intersomatic distance of 163 and 127 µm; Bonferroni corrected p<0.01 relative to all other groups). Most connectivity versus distance profiles (Figure 4B) showed a progressive reduction in the connection probability with increasing distance. We did not carry out an analysis of reciprocal (bi-directional) connectivity because we lacked the statistical power to detect differences between our classes. Furthermore, measuring reciprocal connectivity at the cell class level can yield misleading results (Hoffmann and Triesch, 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig4-v1.jpg)
+
+**Figure 4.:** (A) Recurrent connection probability and distribution of connections for mouse -linesand layer 2/3. Mean connection probability (filled circles) and 95% confidence intervals (bars) for connections probed within 100 µm (n connections in Table 1). (B) Connection probability over distance for mouse Cre-lines and layer 2/3. Top: Histogram of putative connections probed. Bottom: Mean connection probability (thick line) with 95% confidence intervals (shading) binned in 40 µm increments. (C) Like-to-like connection probability and distribution of connections between human pyramidal neurons. Mean connection probability (filled circles) and 95% confidence intervals (bars) for connections probed within 100 µm. (D) Connection probability over distance for human pyramidal neurons, formatted as in panel B. (E) Tlx3-Tlx3 connection probability measured by two-photon mapping. X-Y distance distribution of connections probed onto a postsynaptic cell (black triangle), detected presynaptic neurons (filled circles), no connection detected (empty circles), and direct event artifact due to undesired activation of opsin in the dendritic arbor of the recorded cell (red circles). (F) Connection probability and stimulation artifact over distance measured by two-photon mapping. Mean connection probability vs. distance (blue line; starting at 50 µm) with 95% confidence intervals (shading) and direct event artifact amplitude vs. distance (dotted red line) for Tlx3-Tlx3 connections probed with two-photon stimulation. See Figure 4—figure supplement 3 for distribution of connectivity as a function of cortical slice position and cell depth. See Figure 4—figure supplements 1,2 for details on two-photon connectivity experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Connectivity rate was assessed as a function of slice number, spanning a total sampled region across experiments of 3.5 mm of cortex (350 µm per slice). (B) The observed synaptic connectivity (open circles) and 95% CI (grey region) are shown relative to overall average connectivity (dotted line). (C) Connectivity was not influenced by depth from the slice surface between −40 and −200 µm. Sampling frequency and connectivity as a function of depth from slice surface are shown in D.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cartoon illustrating loose-seal recording configuration utilized to test photostimulation parameters. Example recording of repeated photostimulation or a ReaChR-positive cell. (B) Cumulative probability plot of minimum power necessary to reliably evoke action potentials for 13 cells. Blue dashed lines indicate light power utilized in mapping experiments and the fraction of cells reliably activated. (C) Average latency of light-evoked action potentials plotted against photostimulation intensity for individual neurons (grey dashed lines). Filled black circle and error bars represent the mean and standard deviation of latency measured across all cells at a power used for mapping. (D) Average jitter of light-evoked action potentials plotted against photostimulation intensity. Data from individual cells and population average plotted as in panel C. (E) Left: Example experiment illustrating the radial grid pattern used to measure the lateral resolution of photostimulation and example traces recorded during the photostimulation at indicated locations. Right: Probability of generating light-evoked action potentials plotted against lateral distance from the center of the cell. (F) Left: example of responses resulting from photostimulation at indicated axial offsets. Right: Probability of generating light-evoked action potentials plotted against axial distance from the center of the cell.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Maximum intensity projection of Tlx3-Cre:Ai136 slice and a recorded neuron. Blue circle denotes location of stimulated presynaptic neuron. (B) Top: Electrophysiological recording of postsynaptic response to 10 photostimulations of the presynaptic neuron in panel A. Timing of photostimulation indicated by pink shading. Synaptic events detected by exponential deconvolution are indicated by inverted triangles. Events used to produce average synaptic response are show in blue. Bottom: Peri-stimulus event histogram. (C) Individual events aligned by the timing of event detection (grey) and average EPSP (blue). (D) Signal versus noise plot for all optogenetically-probed presynaptic neurons. (E) Cumulative probability plot of signal-to-noise ratios for stimulus trials scored as no connection, connection, or containing a direct stimulation artifact. Dashed grey line indicates signal-to-noise ratio = 1.
 
 In human cortex, layers 2 and 3 had a similar connection probability (~15%; layer 2: 22/132; layer 3: 37/249; Figure 4C), while layer 4 recurrent connectivity was much smaller (3.3%, 4/123, Bonferroni corrected p<0.02 relative to all other layers). More data are needed to accurately resolve the distance dependence of recurrent connectivity in the human (Figure 4D).
 
 Utilizing a multipatch technique limits our ability to probe connectivity at high density and long distances. We used two-photon optogenetic stimulation to overcome these limitations, which allows for focal stimulation of many (mean = 56 cells, range = 8–117 cells) presynaptic cells in a single experiment, and critically, allows probing distances greater than is generally feasible with multipatch experiments. ReaChR expressing Tlx3-Cre neurons in layer 5 were photo-stimulated with a two-photon laser while one or two putative postsynaptic cells were monitored in whole-cell current clamp configuration (Figure 4—figure supplement 1; Figure 4—figure supplement 1A).; With this technique, using 12 mice, we found a similar connection probability over the distance range of multipatch experiments (4/136, 2.15%) and reduced connectivity at extended distances up to 785 µm (Figure 4E; 13/1594, 0.82%) with the furthest connection found at 459 µm.
 
-## Short-term plasticity of excitatory synapses
+### Short-term plasticity of excitatory synapses
 
 For a subset of synaptic connections in mouse cortex (Figure 1—figure supplement 1G, Table 1 STP), we characterized and modeled short-term synaptic dynamics. We probed short-term dynamics with stimulus trains consisting of 8 pulses to induce STP, followed by a variable delay and 4 more pulses to measure recovery (Figure 5A, left). The 8 initial pulses allowed responses to reach a steady state, from which we could characterize the extent of depression (or facilitation) at frequencies from 10 to 100 Hz. The 50 Hz stimulation protocol had additional recovery intervals ranging from 250 to 4000 ms (Figure 5A, right). Although typical experiments use a single delayed pulse to measure recovery, we used a short train of 4 pulses to improve sensitivity in modeling the recovered state of the synapse. Figure 5B shows average synaptic responses to a 50 Hz stimulus with eight initial pulses followed by four pulses at a 250 ms delay from individual Sim1-Sim1 connections shown in grey, with the grand average overlaid (blue). We used exponential deconvolution (Figure 5B, middle; Equation 2) to estimate the amplitudes of individual PSPs in the absence of temporal summation (arising from the relatively long cell membrane time constant).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of STP and STP recovery stimuli. (B) Sim1-Cre EPSPs in response to a 50 Hz stimulus train (top; eight induction pulses and four recovery pulses delayed 250 ms; individual connection: gray traces; blue: Sim1-Cre average EPSP at 50 Hz). Exponential deconvolution followed by lowpass filter of EPSPs above (middle, filled circles: pulse amplitudes in C). Exponential deconvolution of 50 Hz stimulus with all five recovery time points in A (bottom, filled circles: pulse amplitudes in C). (C) The mean normalized amplitude of deconvolved response versus pulse number at multiple stimulation frequencies for Sim1-Cre (top). Normalized amplitude of the deconvolved response at 50 Hz with first recovery pulse at each interval for each Cre-line and L2/3 connections (bottom). (D) The depth of depression during 50 Hz induction (left) as measured by the amplitude ratio of the 8th to 1st pulse for each Cre-line and layer (small circles) and grand mean (large circles). Amount of recovery at 250 ms latency (right) for each Cre-line and layer (small circles) and grand mean (large circles). See Figure 5—figure supplement 1 for results of STP at different EGTA concentrations and Figure 1—figure supplement 1 for data analysis diagram.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Normalized response amplitude during a 50 Hz train in Tlx3 (cyan) and Sim1 (blue) connections with 0.3 mM EGTA present in the internal solution (filled) and in the absence of EGTA (open). Data are grand average of all connections within each type. (B) Ratio of the last (8th) pulse in the train to the first for each connection within each type (small circles) and the grand mean (large circle); colors and fill follow as in A. (C) Paired-pulse ratio for each connection within each type (small circles) and the grand mean (large circles); colors and fill follow as in A.
+
+**Table 4.**
+ Mean and standard deviation of 8:1 ratio at 50 Hz and 9:1 ratio at 50 Hz and 250 ms delay for individual synapses.Unless noted, EGTA was 0.3 mM and n’s are listed in Table 1, STP.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>8:1 pulse ratio (50 Hz) mean ± SD</th>
+      <th>Recovery (9:1) ratio (250 ms) mean ± SD</th>
+      <th>Paired-pulse ratio (50 Hz) mean ± SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L2/3</td>
+      <td>0.92 ± 0.57</td>
+      <td>0.76 ± 0.48</td>
+      <td>1.14 ± 0.63</td>
+    </tr>
+    <tr>
+      <td>Rorb</td>
+      <td>0.39 ± 0.14</td>
+      <td>0.55 ± 0.26</td>
+      <td>0.66 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>Sim1</td>
+      <td>0.37 ± 0.18</td>
+      <td>0.46 ± 0.26</td>
+      <td>0.73 ± 0.17</td>
+    </tr>
+    <tr>
+      <td>Tlx3</td>
+      <td>0.48 ± 0.32</td>
+      <td>0.72 ± 0.24</td>
+      <td>0.8 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>Sim1 (0 EGTA), n = 6</td>
+      <td>0.27 ± 0.17</td>
+      <td>N/A</td>
+      <td>0.68 ± 0.22</td>
+    </tr>
+    <tr>
+      <td>Tlx3 (0 EGTA), n = 2</td>
+      <td>0.51 ± 0.12</td>
+      <td>N/A</td>
+      <td>1.15 ± 0.03</td>
+    </tr>
+  </tbody>
+</table>
 
 We measured the peak amplitude of the deconvolved response for every pulse (blue dots) and normalized to the first pulse in the train in order to characterize short-term dynamics across four frequencies. Figure 5C (top) highlights frequency dependent depression in recurrent Sim1 connections. Across cell classes we saw depression in Rorb, Tlx3, and Sim1 synapses, whereas layer 2/3 synapses showed modest facilitation on average (Figure 5C, bottom left). The two Ntsr1 connections (data not shown) also showed facilitation as has been previously reported for layer 6 CT neurons (West et al., 2006). The amplitude ratio of the last pre-recovery pulse (8) to the first, for individual connections (Figure 5D, left), highlights the heterogeneity in layer 2/3 dynamics where some synapses depressed strongly (ratio < 1) and others facilitated (ratio > 1). Individual dynamics in Rorb, Tlx3, and Sim1 generally showed more depression than layer 2/3 (KW p=0.04). In addition to probing induction of short-term plasticity, we also measured recovery from short-term effects at various time delays (Figure 5B, bottom, blue dots) for layer 2/3, Rorb, Sim1, and Tlx3 connections (Figure 5C, bottom). All types showed a similar time-course of recovery as measured by the ratio of the first recovery pulse (9) to the first induction pulse (Figure 5D, right).
 
@@ -106,7 +474,62 @@ To more fully capture the dynamic processes contributing to short-term plasticit
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37349/elife-37349-fig6-v1.jpg)
 
-**Figure 6.:** n in Table 1 ‘STP’).(A) Sim1 average dynamic response; Same data as in Figure 5C, top plotted on a log-X time scale with modeling fits overlaid. (B) Results of model for parameters P0 and 𝜏r0. Values are means with standard error of the covariance matrix. Paired Z-scores (Equation 6) in Table 5.
+**Figure 6.:** (A) Sim1 average dynamic response; Same data as in Figure 5C, top plotted on a log-X time scale with modeling fits overlaid. (B) Results of model for parameters P0 and 𝜏r0. Values are means with standard error of the covariance matrix. Paired Z-scores (Equation 6) in Table 5.
+
+**Table 5.**
+ Model parameter values and statistics for Rorb, Sim1, and Tlx3 recurrent connections.Parameter values are from the model performed on the grand mean for each connection type with the standard error of the covariance matrix. The Z-score was computed following Equation 6; the Z-score between each possible pair should be read as a matrix with the corresponding Cre-line in the row. Number of connections used in this analysis in Table 1 ‘STP’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Connection type/Model Parameter</th>
+      <th>𝜏r0 (sec ± SE)</th>
+      <th>P0 (±SE)</th>
+      <th>𝜏FDR (ms ± SE)</th>
+      <th>αFDR (±SE)</th>
+      <th>r2</th>
+      <th>Rorb Z-score</th>
+      <th>Sim1 Z-score</th>
+      <th>Tlx3 Z-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rorb</td>
+      <td>1.26 ± 0.29</td>
+      <td>0.30 ± 0.03</td>
+      <td>130.6 ± 56.8</td>
+      <td>0.85 ± 0.09</td>
+      <td>0.836</td>
+      <td>N/A</td>
+      <td>P0 = 2.02</td>
+      <td>P0 = 3.55</td>
+    </tr>
+    <tr>
+      <td>Sim1</td>
+      <td>3.55 ± 0.93</td>
+      <td>0.22 ± 0.02</td>
+      <td>269.4 ± 128.2</td>
+      <td>0.77 ± 0.12</td>
+      <td>0.836</td>
+      <td>𝜏r0 = 2.31</td>
+      <td>N/A</td>
+      <td>P0 = 2.12</td>
+    </tr>
+    <tr>
+      <td>Tlx3</td>
+      <td>1.20 ± 0.62</td>
+      <td>0.16 ± 0.02</td>
+      <td>276.3 ± 213.2</td>
+      <td>0.47 ± 0.09</td>
+      <td>0.737</td>
+      <td>𝜏r0 = 1.12</td>
+      <td>𝜏r0 = 2.79</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -130,7 +553,7 @@ Ultimately, we seek a description of the cortical circuit from which mechanistic
 
 ## Materials and methods
 
-## Animals and tissue preparation
+### Animals and tissue preparation
 
 Adult mice of either sex (mean age P46.7 ± 6.4; SD) were housed and sacrificed according to protocols approved by the Institutional Animal Care and Use Committee at the Allen Institute (Seattle, WA), in accordance with the National Institutes of Health guidelines. Transgenic mouse lines were used for experimentation and chosen based on cortical layer specific expression and/or known projection patterns. In the following mouse lines, subpopulations of excitatory neurons are selectively labeled with fluorescent reporters (tdTomato or GFP): Tlx3-Cre_PL56;Ai14 (n = 57, mean age ± SD P45.8±5.7), Sim1-Cre_KJ18;Ai14 (n = 20, P50.8 ± 8.2), Rorb-T2A-tTA2;Ai63 (n = 28, P45.8 ± 3.4), Ntsr1-Cre_GN220;Ai140 (n = 13, P43.5 ± 2.8) (Allen Institute; see also http://connectivity.brain-map.org/transgenic). Two drivers, Sim1-Cre (subcortical projecting; CS or PT type; Allen Brain Atlas, http://connectivity.brain-map.org/) and Tlx3-Cre, (corticocortical projecting; CC or IT type; Kim et al., 2015), were used to label layer 5 pyramidal cells, in order to sample projection-specific subpopulations. We did not utilize transgenic labeling for targeting layer 2/3 pyramidal cells (n = 11, P47.8 ± 8), but instead relied on post-hoc morphological analysis. For optogenetic experiments, Tlx3-Cre driver mice were bred with ROSA26-ZtTA/J mice (Jackson Laboratory) and Ai136 mice (Daigle et al., 2018), in which a fusion of the ReaChR opsin (Lin et al., 2013) with EYFP is expressed from the TIGRE locus (Zeng et al., 2008) in a Cre- and tTA-dependent manner. Previous studies have emphasized the differences in cortical connectivity particularly at older ages. To assess whether age impacted the results reported here, a subset of experiments were repeated for Sim1 connections in older mice (mean age 61 ± 1; SD, n = 10). We saw no difference in recurrent connectivity rate (<100 µm; P40-60: 36/423,>P60: 15/269, Fisher’s p=0.23) or response amplitude (P40-60: 0.53 ± 0.12 mV,>P60: 0.59 ± 0.2 mV, p=0.98 KS test) among across the two time points.
 
@@ -142,7 +565,7 @@ Human tissue surgically resected from adult cortex was obtained from patients un
 
 Resected human tissue specimens were trimmed to isolate specific regions of interest, and larger specimens were cut into multiple pieces before trimming. Specimens were trimmed and mounted in order to best preserve intact cortical columns (spanning pial surface to white matter) before being sliced in aCSF 3 using a Compresstome. Slices were then transferred to oxygenated aCSF 3 maintained at 34°C for 10 min. Slices were kept in room temperature oxygenated aCSF holding solution (aCSF 4) containing, in mM: 92 NaCl, 30 NaHCO3, 25 D-Glucose, 20 HEPES, 5 Na-L-Ascorbate, 3 Na Pyruvate, 2.5 KCl, 2 CaCl2, 2 MgSO4, 2 Thiourea, 1.2 NaH2PO4·H2O for a minimum of one hour prior to recording.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Recording slices from mouse and human tissue were processed in largely the same manner, with a key difference being the external calcium concentration used for recording. Human slices were held in aCSF containing 1.3 mM calcium while mouse slices utilized 2.0 mM calcium. Below we discuss the full preparation for slice processing as well as the rationale for this calcium difference.
 
@@ -154,25 +577,33 @@ Recording pipettes were pulled from thick-walled filamented borosilicate glass (
 
 In experiments on human tissue and wild-type mice, clusters of up to eight excitatory neurons were selected based on cortical layer, somatic appearance, and depth from the surface of the slice; Neurons deep in the tissue (depth from slice surface ≥ 40 µm; Figure 4—figure supplement 2D) were patched with the assistance of automated pipette control. Tissue distortion and damage was minimized by moving through the tissue on a trajectory that was collinear with long axis of the pipette with minimal positive pressure. In transgenic mice, cells were also targeted based on fluorescent reporter expression. All cells were confirmed as excitatory post-experiment either by their EPSPs onto other recorded neurons (Figure 1—figure supplement 1A) or by their pyramidal morphology, visualized using either biocytin (Figure 1A) or fluorescent dye from the pipette (Figure 1B). Cell intrinsic fluorescence was confirmed post-hoc via manual inspection of image stacks to evaluate signal overlap of the transgenic fluorescent reporter and the fluorescent dye introduced via pipettes (Figure 1B). Whole-cell patch clamp electrophysiological recordings were performed at −70 mV to preferentially measure excitatory inputs. Resting membrane potential was maintained within 2 mV of −70 mV using automated bias current injection during the inter-trial interval. Custom software, Multi-channel Igor Electrophysiology Suite (MIES; https://github.com/AllenInstitute/MIES), written in Igor Pro (WaveMetrics), was used for data acquisition and pipette pressure regulation. A brief, 10 ms test pulse was used to monitor access (24.18 ± 9.24 MΩ) and input (166.59 ± 84.0 MΩ) resistance over the duration of the recording. During recordings, cells were stimulated using brief current injections (1.5 or 3 ms) to drive trains of 12 action potentials (Figure 1—figure supplement 1A) at frequencies of 10, 20, 50, or 100 Hz to induce short-term plasticity (STP). Stimulus amplitudes (mean ± SD, 1.2 ± 0.5 nA) were adjusted to ensure spiking on every pulse across a range of cell types and frequencies. A delay period inserted between the 8th and 9th pulses allowed testing of recovery from STP. In most recordings this delay period was 250 ms; for 50 Hz stimulation, longer delay periods (500, 1000, 2000, and 4000 ms) were used as well (see Figure 5A). Connectivity was first evaluated in voltage clamp (holding at −70 mV), prior to entering the experimental workflow shown in Figure 1—figure supplement 1C–G in the current clamp recording configuration. Individual recordings were assessed against standardized quality control metrics in order to be included in each subsequent analysis (see Figure 1—figure supplement 1C–G and Table 1). Experimental protocols were repeated five times for each stimulation frequency and delay interval. Stimuli were interleaved between cells such that only one cell was spiking at a time, and no two cells were ever evoked to spike within 150 ms of each other.
 
-## Data analysis
+### Data analysis
 
 Postsynaptic recording traces were aligned to the time of the presynaptic spike evoked from the stimuli described above (Figure 1—figure supplement 1B). Postsynaptic potentials (PSPs) were identified by manual inspection of spike-aligned and averaged recordings in response to evoked spikes, as well as a parallel inspection of background noise. A classifier (described below) was later used to highlight possible identification errors, which were then manually corrected. Connection probabilities within 100 µm intersomatic distance were compared between cell types using Fisher’s exact test of 2 × 2 contingency tables (connected, unconnected). The relationship between connectivity and intersomatic distance (measured from 3D cell positions) was analyzed by binning connections in 40 µm windows and calculating the 95% Jeffreys Bayesian confidence interval for each bin.
 
-Subsets of the 131 mouse and 76 human connections found in this study were analyzed for strength, kinetics, and STP based on specific quality control criteria Figure 1—figure supplement 1C–G, Table 1). EPSP strength, kinetics, and coefficient of variance (CV) measurements (Figures 1 and 3) were conducted on the first-pulse response from 10, 20, and 50 Hz stimulation trains which were time-aligned to the presynaptic spike and averaged for each connection. Connections were included for strength and kinetics analysis according to the analysis flowchart in Figure 1—figure supplement 1E and F. Briefly, the postsynaptic cell had an auto bias current less than 800 pA (mean bias current −95 ± 182 pA), there was no spontaneous spiking, the stimulus artifact was minimal (<30 µV), and the PSP was positive. Individual recording sweeps were included if the baseline potential drift was smaller than ±5 mV from holding (−70 mV) and the mean baseline 10 ms preceding stimulation was less than three standard deviations of the mean baseline across sweeps. In the QC passed data, strength and kinetics were measured from a double exponential fit that approximates the shape of the PSP:(1)y(t) = A (1-e-(t-t0)/τr)2 * e-(t-t0)/τd
+Subsets of the 131 mouse and 76 human connections found in this study were analyzed for strength, kinetics, and STP based on specific quality control criteria Figure 1—figure supplement 1C–G, Table 1). EPSP strength, kinetics, and coefficient of variance (CV) measurements (Figures 1 and 3) were conducted on the first-pulse response from 10, 20, and 50 Hz stimulation trains which were time-aligned to the presynaptic spike and averaged for each connection. Connections were included for strength and kinetics analysis according to the analysis flowchart in Figure 1—figure supplement 1E and F. Briefly, the postsynaptic cell had an auto bias current less than 800 pA (mean bias current −95 ± 182 pA), there was no spontaneous spiking, the stimulus artifact was minimal (<30 µV), and the PSP was positive. Individual recording sweeps were included if the baseline potential drift was smaller than ±5 mV from holding (−70 mV) and the mean baseline 10 ms preceding stimulation was less than three standard deviations of the mean baseline across sweeps. In the QC passed data, strength and kinetics were measured from a double exponential fit that approximates the shape of the PSP:
+
+$$
+y(t)=A(1-e^{-(t-t_{0})/\tau_{r}})^{2}*e^{-(t-t_{0})/\tau_{d}}
+$$
 
 Best fit parameters were obtained using the Non-Linear Least-Squares Minimization and Curve-Fitting package for Python (LMFIT; Newville and Allen, 2014). To improve the quality of fitting, the root mean square error was weighted (WRMSE) differently throughout the trace. The rising phase of the PSP was most heavily weighted, the baseline and decay regions were intermediately weighted, and the region of the presynaptic stimulus, which often contained crosstalk artifacts was masked. Amplitude was measured as the peak of the PSP fit (Figure 1—figure supplement 1B). Kinetics were measured from connections in which the WRMSE of the fit was less than 8. Latency is reported as the duration from the point of maximum dV/dt in the presynaptic spike until the foot of the PSP (Figure 1—figure supplement 1B), taken from the x-offset in the double exponential fit. Rise time is reported as the duration from 20% of the peak until 80% of the peak of the PSP (Figure 1—figure supplement 1B). Significance of differences in PSP amplitude, latency, and rise time across layers or Cre-lines were assessed with a Kruskal-Wallis test.
 
-STP (Figures 5 and 6) was measured from a similar subset of connections that included the quality control criteria above and also excluded responses smaller than 0.5 mV in amplitude to minimize the effect of noise on mean response which might impact the model (Figure 1—figure supplement 1G, Equations 4 and 5). Connections or individual sweeps that had a baseline holding potential of −55 mV (±5 mV) were reintroduced for this analysis if they met the QC criteria. Normalized PSP amplitudes (relative to the first pulse) were estimated using an exponential deconvolution (τ = 15 ms; Richardson and Silberberg, 2008) to compensate for summation from prior PSPs and to increase signal-to-noise in measuring PSP amplitudes:(2)D(t) =V+ τdVdt
+STP (Figures 5 and 6) was measured from a similar subset of connections that included the quality control criteria above and also excluded responses smaller than 0.5 mV in amplitude to minimize the effect of noise on mean response which might impact the model (Figure 1—figure supplement 1G, Equations 4 and 5). Connections or individual sweeps that had a baseline holding potential of −55 mV (±5 mV) were reintroduced for this analysis if they met the QC criteria. Normalized PSP amplitudes (relative to the first pulse) were estimated using an exponential deconvolution (τ = 15 ms; Richardson and Silberberg, 2008) to compensate for summation from prior PSPs and to increase signal-to-noise in measuring PSP amplitudes:
+
+$$
+D(t)=V+\tau\frac{dV}{dt}
+$$
 
 Although the fixed deconvolution time constant of 15 ms may differ significantly from the actual time constant of each cell, in practice this has little effect on the normalized amplitudes used in STP measurements (for example, using this time constant to measure amplitudes from a simulated 100 Hz train with a cell time constant of 30 ms only resulted in 3% error in the measurement of PSP amplitudes relative to the first pulse; data not shown). The peak amplitudes from the deconvolved traces were used to measure the change in response magnitude over the course of stimulus trains. We measured the magnitude of short-term depression or facilitation using the ratio between the first and last (eighth) pulses in an induction pulse train, whereas recovery from depression or facilitation was measured by the ratio between the first pulse and the ninth pulse, which followed a recovery delay. Kruskal-Wallis tests were used to assess significance of STP between multiple layers. A descriptive model was used to capture features of short-term depression in Rorb, Sim1, and Tlx3 connections (Equations 4 and 5).
 
-## Automatic synapse detection
+### Automatic synapse detection
 
 To aid in the detection of synaptic connections, a support vector machine classifier (implemented with the ‘sklearn’ python package, Pedregosa et al., 2012) was trained to discriminate between experiments in which EPSPs were either visible or not visible to a human annotator. The classifier required a diverse set of features (Supplementary File 1) that were pre-processed from the raw postsynaptic recordings immediately surrounding each evoked presynaptic spike. Averaged responses were characterized by curve fitting (Equation 1; Figure 1—figure supplement 1B) and the fit parameters as well as the normalized RMS error were provided as features to the classifier. Additionally, individual response recordings were analyzed by measuring the amplitude and time of the peak of each exponentially deconvolved response over a 3 ms window beginning 1 ms after the presynaptic spike, compared to a 10 ms window preceding the stimulus pulse (Figure 1—figure supplement 1B, bottom). Although these individual measurements were often noisy (average background RMS noise 607 ± 419 µV), their distribution over hundreds of trials could be compared to similar distributions measured from background noise (e.g. Figure 4C). Distributions were compared using a Kolmogorov-Smirnov test (from the ‘scipy.stats’ Python package) and the p values were used as input features for the classifier.
 
 After training on 1854 manually labeled examples, the classifier was tested against a withheld set of 2642 examples and achieved an overall accuracy of 95% (56/61 true positive, connected; 2457/2581 true negative, not connected). False positives and negatives were manually reassessed and the annotations corrected when appropriate. Whereas false negatives were usually the result of a classifier failure, false positives were frequently found to have been misclassified during the initial manual annotation.
 
-## Analysis of synapse detection sensitivity
+### Analysis of synapse detection sensitivity
 
 To measure the minimum detectable PSP size for each connection probed, artificial PSPs were added to recordings of background noise taken from the postsynaptic cell. PSPs were generated using Equation 1 with a foot-to-peak rise time of 2 ms (except where specified in Figure 3D). PSP latencies were selected from a gaussian distribution centered at 2 ms with a 200 µs standard deviation. PSP amplitudes were generated by the product of two random variables: one binomially distributed (p=0.2, n = 24) to mimic stochastic vesicle release, and the other normally distributed (mean = 1, SD = 0.3) to account for differences in vesicle size and receptor efficacy. PSPs were then scaled uniformly to achieve a specific mean amplitude. The resulting simulated responses were qualitatively similar to typical synaptic responses encountered in our dataset, although they lacked the synapse-to-synapse variability in CV, due to the selection of fixed distribution parameters listed above.
 
@@ -180,19 +611,37 @@ For each connection probed, the number of simulated PSPs generated was the same 
 
 By repeating this process for several different values of mean PSP amplitude, we could identify, for each putative connection probed, a plausible minimum detectable PSP amplitude. This minimum detectable amplitude was defined as the PSP amplitude at which the classifier would detect the synapse in 50% of trials (interpolated from adjacent amplitudes).
 
-## EPSP amplitude run-down over duration of experiment
+### EPSP amplitude run-down over duration of experiment
 
 The amplitude of the EPSPs initiated by the first pulse of the stimulus trains through-out the duration of the experiment were characterized by fitting the exponential fit (Equation 1) to individual EPSPs. Individual EPSPs are often noisy, thus, only connections where individual EPSPs looked well fit were used to assess rundown. In order to further discount variations in the measurements of individual responses, the run-down was characterized via a linear regression of EPSP amplitude versus time for sweeps with a holding potential between −75 and −65 mV. We observed run-down in all synapse types in percent per minute as follows: layer 2/3 to layer 2/3: median 1.9, average 3.7, std 3.8, Rorb to Rorb: median 4.0, average 3.9, std 0.81, Sim1 to Sim1: median 1.4, average 0.61, std 3.2, Tlx3 to Tlx: median 1.5, average 1.9, std 5.3.
 
-## Theoretical synaptic modeling
+### Theoretical synaptic modeling
 
-Among the wealth of mechanisms described to contribute to short-term plasticity, we chose to focus on depression and use-dependent replenishment, as these models provide the best fits when corrected for the number of parameters used. The standard depression model (Hennig, 2013; Mongillo et al., 2008; Richardson et al., 2005) was not sufficient to account for changes during multiple stimulating frequencies, thus we included use-dependent replenishment. The PSP, w = A·n · P0, is modeled as being proportional to the fraction of vesicles (n) and the release probability (P0); the constant A determines the strength of the connection. Synaptic depression was modelled via depletion of vesicles (Hennig, 2013; Mongillo et al., 2008; Richardson et al., 2005),(4)dndt = 1−n τr−P0nδ(t−tk)where tk is the time of presynaptic spike and 𝜏r is the time constant for vesicle replenishment. The speed of replenishment can vary over time depending on the history of presynaptic spikes, which can be captured by time constant 𝜏r evolving according to Equation 5 (Fuhrmann et al., 2002; Hennig, 2013),(5)dτrdt = τr0−τr τFDR− aFDRτrδ(t−tk)    where τFDR is the time constant of use-dependent replenishment, aFDR represents the amount of updates elicited by a presynaptic spike and τr0  is the baseline time constant.
+Among the wealth of mechanisms described to contribute to short-term plasticity, we chose to focus on depression and use-dependent replenishment, as these models provide the best fits when corrected for the number of parameters used. The standard depression model (Hennig, 2013; Mongillo et al., 2008; Richardson et al., 2005) was not sufficient to account for changes during multiple stimulating frequencies, thus we included use-dependent replenishment. The PSP, w = A·n · P0, is modeled as being proportional to the fraction of vesicles (n) and the release probability (P0); the constant A determines the strength of the connection. Synaptic depression was modelled via depletion of vesicles (Hennig, 2013; Mongillo et al., 2008; Richardson et al., 2005),
 
-For Rorb, Sim1, and Tlx3 synapses, we optimized the parameters (P0, τr0, τ FDR and aFDR) to account for time courses of PSPs. To characterize the short-term synaptic plasticity of synapse classes, we averaged PSPs over all available synapses depending on stimulation frequencies and delays between 8th and 9th presynaptic pulses and fitted to the model. We used LMFIT (Newville and Allen, 2014) to perform non-linear least-square minimization and report the optimal values and standard errors estimated from the covariance matrix.
+$$
+\frac{dn}{dt} = \frac{1−n }{\tau_{r}}−P_{0}n\delta(t−t_{k})
+$$
 
-Paired Z-scores for P0 and τ r0 were calculated from the standard error returned during parameter optimization according to Equation 6,(6)Z−score=|X1− X2|SE12+ SE22where X1 and X2 are P0 or τ r0 for two groups and their associated standard error.
+where tk is the time of presynaptic spike and 𝜏r is the time constant for vesicle replenishment. The speed of replenishment can vary over time depending on the history of presynaptic spikes, which can be captured by time constant 𝜏r evolving according to Equation 5 (Fuhrmann et al., 2002; Hennig, 2013),
 
-## Histology and morphology
+$$
+\frac{d\tau_{r}}{dt} = \frac{\tau_{r0}−\tau_{r} }{\tau_{FDR}}− a_{FDR}\tau_{r}\delta(t−t_{k})    
+$$
+
+where $\tau$FDR is the time constant of use-dependent replenishment, aFDR represents the amount of updates elicited by a presynaptic spike and $\tau_{r0}$ is the baseline time constant.
+
+For Rorb, Sim1, and Tlx3 synapses, we optimized the parameters (P0,$\tau_{r0}$, $\tau$ FDR and aFDR) to account for time courses of PSPs. To characterize the short-term synaptic plasticity of synapse classes, we averaged PSPs over all available synapses depending on stimulation frequencies and delays between 8th and 9th presynaptic pulses and fitted to the model. We used LMFIT (Newville and Allen, 2014) to perform non-linear least-square minimization and report the optimal values and standard errors estimated from the covariance matrix.
+
+Paired Z-scores for P0 and τ r0 were calculated from the standard error returned during parameter optimization according to Equation 6,
+
+$$
+Z−score=\frac{|X_{1}− X_{2}|}{\sqrt{SE_{1}^{2}+ SE_{2}^{2}}}
+$$
+
+where X1 and X2 are P0 or τ r0 for two groups and their associated standard error.
+
+### Histology and morphology
 
 After completing electrophysiological recordings, slices were transferred from the recording chamber and fixed in solution containing 4% PFA and 2.5% glutaraldehyde for 2 days (>40 hr) at 4°C. After fixation, slices were transferred and washed in phosphate buffer saline (PBS) solution for 1–7 days.
 
@@ -200,7 +649,7 @@ Sections were processed using 3,3’-diaminobenzidine (DAB) peroxidase substrate
 
 Slides were imaged on an AxioImager Z2 microscope (Zeiss) equipped with an Axiocam 506 camera (Zeiss) and acquired via the Zeiss Efficient Navigation software. Tiled mosaic images of whole slices were acquired via automated scanning and stitching of several 20X images to generate both biocytin-labeled images (used to assess cell morphology) and DAPI-labeled images (used to identify cortical layer boundaries) of the entire slice.
 
-## Two-photon optogenetic experiments
+### Two-photon optogenetic experiments
 
 Connectivity mapping experiments were performed on a two-photon laser scanning microscope (Bruker Corp) with a tunable pulsed Ti:Sapphire laser (Chameleon Ultra, Coherent) for imaging, and a fixed wavelength (1060 nm) pulsed laser (Fidelity Femtosecond, Coherent) for stimulation. A 63x, 1.0 NA water immersion objective (Zeiss) was used for all experiments. Two-photon images were acquired with PrairieView software (Bruker Corp), and stimulation targets were manually placed on these reference images to target ReaChR-positive cells. Photoactivation stimuli were triggered by a TTL pulse generated within MIES acquisition software. The voltage output controlling the photoactivation Pockels cell was recorded within MIES for post-hoc alignment of physiological recordings with the timing of photoactivation. To characterize the effectiveness and specificity of stimulation parameters, we made loose seal recordings on to EYFP/ReaChR-labelled neurons (Figure 4—figure supplement 2A). For all data presented here, the photostimulation pattern consisted of a spiral 5 μm in diameter with five revolutions traced over a 25 ms duration. We first determined the minimum light power necessary to evoke reliable firing of action potentials. This minimum power varied across cells from 2.6 to 20.3 mW (Figure 4—figure supplement 2B). A photostimulus of 18 mW intensity was sufficient to evoke spiking in 92% of cells tested (12/13 cells). The average latency of firing at this power was 12.9 ± 6.1 ms and the associated jitter was 0.98 ± 0.58 ms (Figure 4—figure supplement 2C,D).
 

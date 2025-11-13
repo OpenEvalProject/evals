@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03v76x132 Department of Cellular and Molecular Physiology, Yale University School of Medicine New Haven United States
-2. https://ror.org/03v76x132 Department of Neuroscience, Yale University School of Medicine New Haven United States
-3. https://ror.org/03v76x132 Program in Cellular Neuroscience, Neurodegeneration and Repair, Yale University School of Medicine New Haven United States
-4. https://ror.org/03v76x132 Kavli Institute for Neuroscience, Yale University School of Medicine New Haven United States
+1. Department of Cellular and Molecular Physiology, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+2. Department of Neuroscience, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+3. Program in Cellular Neuroscience, Neurodegeneration and Repair, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
+4. Kavli Institute for Neuroscience, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -33,13 +33,13 @@ We acquired patch-clamp recordings from the afferent terminal within the Grandry
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/84179/elife-84179-fig1-v2.jpg)
 
-**Figure 1.:** (A) Illustrated representation of the experimental setup. (B) The mechanical step stimulus applied with a glass probe (top), representative mechanically activated (MA) current responses in the terminal while voltage-clamped at –60 mV (middle), and simultaneous extracellular voltage signal from the connected afferent (bottom). (C) The mechanical stimulus (top), voltage responses and action potentials (APs) in the terminal in current-clamp (middle), and APs measured further along the afferent (bottom). (D) The current injection stimulus (top), voltage responses and action potentials in the terminal in current-clamp (middle), and APs measured in the afferent (bottom). (E) Example bright-field image of the experimental setup. (F) Quantification of the kinetics of MA current inactivation, (G) activation, (H) peak MA current-indentation relationship (n=7/6 afferent terminals for onset [ON]/offset [OFF], respectively), and (I) AP threshold measured in the dynamic ON phase of the stimulus and the dynamic OFF phase of the stimulus. Only the difference in inactivation τ between the ON and OFF phase was statistically significant (p<0.05). Statistics: Mann-Whitney U test (F, G, and I) or two-way ANOVA (H). Symbols indicate data from individual cells. Data in F–I were obtained from at least three independent skin preparations and shown as mean ± SEM.Figure 1—source data 1.Figure 1F–I.
+**Figure 1.:** (A) Illustrated representation of the experimental setup. (B) The mechanical step stimulus applied with a glass probe (top), representative mechanically activated (MA) current responses in the terminal while voltage-clamped at –60 mV (middle), and simultaneous extracellular voltage signal from the connected afferent (bottom). (C) The mechanical stimulus (top), voltage responses and action potentials (APs) in the terminal in current-clamp (middle), and APs measured further along the afferent (bottom). (D) The current injection stimulus (top), voltage responses and action potentials in the terminal in current-clamp (middle), and APs measured in the afferent (bottom). (E) Example bright-field image of the experimental setup. (F) Quantification of the kinetics of MA current inactivation, (G) activation, (H) peak MA current-indentation relationship (n=7/6 afferent terminals for onset [ON]/offset [OFF], respectively), and (I) AP threshold measured in the dynamic ON phase of the stimulus and the dynamic OFF phase of the stimulus. Only the difference in inactivation τ between the ON and OFF phase was statistically significant (p<0.05). Statistics: Mann-Whitney U test (F, G, and I) or two-way ANOVA (H). Symbols indicate data from individual cells. Data in F–I were obtained from at least three independent skin preparations and shown as mean ± SEM.
 
 As expected, the addition of tetrodotoxin (TTX) to the bill-skin preparation blocked APs and voltage-gated sodium current in the afferent terminal (Figure 2A–D). In some voltage-clamp experiments, mechanical stimulation resulted in large (>1000 pA) depolarizing currents (Figure 2C) which did not follow the expected current-indentation relationship (Figure 1H). These currents were blocked by TTX and therefore were voltage-gated sodium currents resulting from a brief loss of voltage clamp, likely due to the complex geometry of the afferent.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/84179/elife-84179-fig2-v2.jpg)
 
-**Figure 2.:** (A) A suprathreshold mechanical stimulus (top), action potentials (APs) in the terminal (middle), and propagated APs from the connected afferent (bottom). (B) A suprathreshold mechanical stimulus applied in 1 μM tetrodotoxin (TTX; top), AP-absent voltage responses in the terminal in current-clamp (middle), and extracellular receptor potentials in the afferent (bottom). (C) A suprathreshold mechanical stimulus (top), current responses in the terminal while voltage-clamped at –60 mV without 1 μM TTX (middle), and with 1 μM TTX (bottom). (D) Voltage-indentation relationship in the absence or presence of 1 μM TTX (n=5 for each group). (E) The number of APs from increasing current injections in lamellar cells and afferent terminals (n=5 for each group). Inset shows exemplar action potentials from a lamellar cell (blue) and afferent (black). (F) Resting membrane potential (RMP), (G) peak AP amplitude, (H) AP width at the half-maximum, and (I) the maximum slope of the AP rise or decay in the afferent terminal versus lamellar cells of the corpuscle. The AP-current injection relationship, RMP, width at half-maximum, max rise slope, and max decay slope were significantly different between the afferent terminal and lamellar cells (p<0.05). Statistics: Mann-Whitney U test (F–I) or two-way ANOVA with Holm-Sidak post-hoc test (D and E). **p=0.0084, ***p=0.0004, ****p<0.0001. Symbols indicate data from individual cells. Data in D–I were obtained from at least three independent skin preparations and shown as mean ± SEM.Figure 2—source data 1.Figure 2D–I.
+**Figure 2.:** (A) A suprathreshold mechanical stimulus (top), action potentials (APs) in the terminal (middle), and propagated APs from the connected afferent (bottom). (B) A suprathreshold mechanical stimulus applied in 1 μM tetrodotoxin (TTX; top), AP-absent voltage responses in the terminal in current-clamp (middle), and extracellular receptor potentials in the afferent (bottom). (C) A suprathreshold mechanical stimulus (top), current responses in the terminal while voltage-clamped at –60 mV without 1 μM TTX (middle), and with 1 μM TTX (bottom). (D) Voltage-indentation relationship in the absence or presence of 1 μM TTX (n=5 for each group). (E) The number of APs from increasing current injections in lamellar cells and afferent terminals (n=5 for each group). Inset shows exemplar action potentials from a lamellar cell (blue) and afferent (black). (F) Resting membrane potential (RMP), (G) peak AP amplitude, (H) AP width at the half-maximum, and (I) the maximum slope of the AP rise or decay in the afferent terminal versus lamellar cells of the corpuscle. The AP-current injection relationship, RMP, width at half-maximum, max rise slope, and max decay slope were significantly different between the afferent terminal and lamellar cells (p<0.05). Statistics: Mann-Whitney U test (F–I) or two-way ANOVA with Holm-Sidak post-hoc test (D and E). **p=0.0084, ***p=0.0004, ****p<0.0001. Symbols indicate data from individual cells. Data in D–I were obtained from at least three independent skin preparations and shown as mean ± SEM.
 
 Importantly, APs in the afferent terminal are physiologically distinct from APs fired by Grandry lamellar cells (Figure 2E–I). Lamellar cell APs are mediated by voltage-gated calcium channels, which are insensitive to TTX (Nikolaev et al., 2020). Lamellar cells fire multiple APs in response to large current injections, whereas the afferent terminal fires a maximum of one AP during the same stimuli (Figure 2E). Additionally, there were significant differences in resting membrane potential, AP width at half-maximum, and maximum slope of rise and decay between the two cell types. These results, along with the single-fiber afferent voltage data which mirrors the terminal voltage (Figure 1B–D), demonstrate that the recordings acquired here are unequivocally from the afferent terminal within the corpuscle.
 
@@ -47,18 +47,56 @@ Here, we have shown that mechanical stimulation evokes MA current in the afferen
 
 ## Materials and methods
 
-## Ex vivo bill-skin preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample</td>
+      <td>Duck bill skin (Anas platyrhynchos domesticus)</td>
+      <td>Metzer Farms</td>
+      <td></td>
+      <td>Embryonic day E25-E27, Sex undetermined</td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID: SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and algorithm</td>
+      <td>GraphPad Prism 9.4.1</td>
+      <td>GraphPad Software, LLC</td>
+      <td>RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ex vivo bill-skin preparation
 
 Experiments with duck embryos (Anas platyrhynchos domesticus) were approved by and performed in accordance with guidelines of the Institutional Animal Case and Use Committee of Yale University, protocol 11526. The bill-skin preparation was slightly modified from previously published methods (Nikolaev et al., 2020). Intact skin was carefully removed from the bill of duck embryos (aged embryonic day 25–27, sex not determined) using a sharp scalpel tip in ice-cold L-15 media. The bill-skin was placed upside-down (epidermis on bottom) in the recording chamber under a slice anchor. Corpuscles and afferents in the dermis were visualized on an Olympus BX51WI upright microscope with an ORCA-Flash 4.0 LT camera (Hamamatsu). At room temperature (22–23°C), the bill-skin preparation was treated for 5 min with 2 mg/mL collagenase P (Roche) in Krebs solution containing (in mM) 117 NaCl, 3.5 KCl, 2.5 CaCl2, 1.2 MgCl2, 1.2 NaH2PO4, 25 NaHCO3, and 11 glucose, saturated with 95% O2 and 5% CO2 (pH = 7.3–7.4), then washed with fresh Krebs solution.
 
-## Patch-clamp electrophysiology
+### Patch-clamp electrophysiology
 
 Recordings were acquired at room temperature using a MultiClamp 700B amplifier, Digidata 1550 A digitizer, and pClamp 10 software (Molecular Devices). Standard-wall, 1.5 mm diameter borosilicate pipettes with tip resistances of 2–5 MΩ were pulled using a P-1000 micropipette puller (Sutter Instruments). Pipettes were filled with intracellular solution containing (in mM) 135 K-gluconate, 5 KCl, 0.5 CaCl2, 2 MgCl2, 5 EGTA, 5 HEPES, 5 Na2ATP, and 0.5 Na2GTP (pH 7.3 with KOH). All experiments were performed in Krebs solution at room temperature. Data were sampled at 20 kHz and low-pass filtered at 2 kHz. Terminals were recorded in whole-cell mode and were held at –60 mV during voltage-clamp experiments. Resting membrane potential was measured in current-clamp mode shortly after breaking in. In both voltage- and current-clamp, mechanical stimuli were applied to a single corpuscle using a blunt glass probe (2–10 μm tip diameter) mounted on a piezoelectric-driven actuator (Physik Instrumente GmbH). A mechanical step stimulus was applied to corpuscles starting at 1 μm and increasing by 1 μm after each indentation. The static plateau of the step stimulus lasted 150 ms, while the ramp had a duration of 3 ms for both the ON and OFF phases. For both phases in each terminal, the inactivation rate (τ) of the MA current was calculated by fitting a single exponential function (I = I0×exp^(− t/τ), where I0 is the baseline-subtracted peak current amplitude, t is the time from the peak current, and τ is the inactivation constant) to the decaying portion of the largest three MA current responses and averaging the fitted τ values. The activation τ was calculated similarly using the rise portion of the response (Nikolaev et al., 2020). The threshold was measured in current-clamp as the smallest indentation which elicited an AP. In current-clamp, depolarizing current steps (from 10 to 100 pA in 10 pA increments) were applied to elicit APs in the afferent terminal and lamellar cells. The first AP in these recordings was used to calculate the peak amplitude, width at half-maximum, and maximum slope of rise and decay for the terminal versus lamellar cells. Experiments were not corrected for liquid-junction potential.
 
-## Single-fiber recording
+### Single-fiber recording
 
 Recordings from single afferent fibers of corpuscles were acquired simultaneously with patch-clamp recordings for three corpuscles, using the second channel of the MultiClamp 700B amplifier. Single-fiber recording pipettes were manufactured from thin-wall, 1.5 mm diameter borosilicate glass capillaries using a P-1000 micropipette puller (Sutter Instruments) to create tip diameters of 5–30 μm, then filled with Krebs solution. Pipettes were placed on an electrode headstage connected to a High-Speed Pressure Clamp (ALA Scientific Instruments). Light (1–20 mmHg) positive pressure was applied from the recording electrode to clear away tissue from a corpuscle-associated afferent. Negative pressure was then applied until a large section (~5 μm) of the afferent was sucked into the pipette. Extracellular afferent voltage was recording in current-clamp mode, sampled at 20 kHz and low-pass filtered at 1 kHz.
 
-## Data analysis
+### Data analysis
 
 Data from afferent terminals and lamellar cells were acquired from separate, individual preparations from different animals. Data were analyzed and plotted in GraphPad Prism 9.4.1 (GraphPad Software, LLC) as individual data points or means ± SEM unless otherwise indicated.

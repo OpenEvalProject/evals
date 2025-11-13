@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.40032.001 Listeria monocytogenes hijacks host actin to promote its intracellular motility and intercellular spread. While L. monocytogenes virulence hinges on cell-to-cell spread, little is known about the dynamics of bacterial spread in epithelia at a population level. Here, we use live microscopy and statistical modeling to demonstrate that L. monocytogenes cell-to-cell spread proceeds anisotropically in an epithelial monolayer in culture. We show that boundaries of infection foci are irregular and dominated by rare pioneer bacteria that spread farther than the rest. We extend our quantitative model for bacterial spread to show that heterogeneous spreading behavior can improve the chances of creating a persistent L. monocytogenes infection in an actively extruding epithelium. Thus, our results indicate that L. monocytogenes cell-to-cell spread is heterogeneous, and that rare pioneer bacteria determine the frontier of infection foci and may promote bacterial infection persistence in dynamic epithelia. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Listeria monocytogenes hijacks host actin to promote its intracellular motility and intercellular spread. While L. monocytogenes virulence hinges on cell-to-cell spread, little is known about the dynamics of bacterial spread in epithelia at a population level. Here, we use live microscopy and statistical modeling to demonstrate that L. monocytogenes cell-to-cell spread proceeds anisotropically in an epithelial monolayer in culture. We show that boundaries of infection foci are irregular and dominated by rare pioneer bacteria that spread farther than the rest. We extend our quantitative model for bacterial spread to show that heterogeneous spreading behavior can improve the chances of creating a persistent L. monocytogenes infection in an actively extruding epithelium. Thus, our results indicate that L. monocytogenes cell-to-cell spread is heterogeneous, and that rare pioneer bacteria determine the frontier of infection foci and may promote bacterial infection persistence in dynamic epithelia.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -32,17 +32,59 @@ Here, we combine live microscopy and statistical modeling to study the dynamics 
 
 ## Results
 
-## L. monocytogenes spreads anisotropically through a polarized, confluent MDCK cell monolayer
+### L. monocytogenes spreads anisotropically through a polarized, confluent MDCK cell monolayer
 
 To explore the dynamics of L. monocytogenes cell-to-cell spread in an epithelial monolayer, we developed a live video microscopy assay to track the progression of a bacterial infection over tens of hours. As a model host cell, we chose Madin-Darby canine kidney (MDCK) epithelial cells because they form polarized and homogeneous monolayers in culture (Mays et al., 1995) and have been widely used to study L. monocytogenes infection (Robbins et al., 1999; Pentecost et al., 2006; Pentecost et al., 2010). We infected confluent MDCK monolayers with a wild-type 10403 S L. monocytogenes strain that contains an mTagRFP open reading frame under the actA promoter, which becomes transcriptionally active when the bacterium enters the host cell cytosol (Moors et al., 1999; Zeldovich et al., 2011). We then imaged the progression of the infection as described in Materials and Methods. The presence of gentamicin, a bacteriostatic antibiotic that cannot cross the host cell plasma membrane (Portnoy et al., 1988), during live imaging ensured that only intracellular bacteria contributed to the growth and spread of the infection focus. Starting at approximately 6 hr post-infection, the earliest time point at which we could detect mTagRFP protein expression, we imaged bacterial foci for up to 22 hr post-infection (first three panels of Figure 1A, and Video 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig1-v1.jpg)
+
+**Figure 1.:** (A) On the left three panels, micrographs show nuclei (Hoechst, blue) and intracellular bacteria (mTagRFP, red) at three different time points post-infection. Green boundaries fully enclose all bacteria. On the fourth panel, boundaries (shades of green) depict the progression of the infection focus boundaries at nine evenly-spaced time points (see colorbar). (B) Examples of four different foci boundaries through time. (C) Quantification of total bacterial fluorescence intensity as a function of time for five different foci. Semi-log plot in inset. (D) Quantification of mean squared displacement (MSD) as a function of time for five different foci. Log-log plot in inset where short solid line indicates linear scaling. For C and D, each focus is represented by a different color.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Data quantifying the total bacterial fluorescence intensity as a function of time. Data points were fit to an exponential function (solid black line). Growth rate was estimated from the exponential fit. Semi-log plot in inset: log-transformed data in red and linear fit in black. (B) Data quantifying the log of MSD as a function of the log of time. Log-transformed data points, from start to ~2.95 log time, were fit to a linear function (solid black line). Effective diffusion coefficient was calculated by dividing the slope of the linear fit by 4. Short solid line indicates linear scaling. (C) Data plotting effective diffusion coefficients versus doubling times, which were calculated by dividing the natural log of 2 by the growth rate. Each data point represents an independent time-lapse movie. Each shape represents an independent experiment. Red data point corresponds to the data shown in panels A and B.
+
+![Video 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse microscopy data showing intracellular wild-type bacteria (mTagRFP, red) and host cell nuclei (Hoechst, blue). Images were collected every 5 min for a total of 1000 min. Time shown in minutes post-infection.
 
 Given that bacterial invasion of a polarized MDCK monolayer is a rare event (Pentecost et al., 2006), each infection focus most likely began with a single bacterium entering a host cell’s cytosol. Due to the clonal nature of the replicating bacteria, and the homogeneity of the host monolayer, we were surprised to find behavioral heterogeneity within the bacterial population; the edges of the boundary of the infection focus, determined by the smallest boundary that completely encloses all bacteria, were dominated by a small number of bacteria that spread farther than the rest (Figure 1A, white arrows in third panel). Indeed, this was a common phenomenon that could be observed in most infection foci. Although each focus may have started out roughly circular, far-spreading bacteria, which we refer to as ‘pioneers’, nearly always created irregular boundaries by the end of the experiment (Figure 1B).
 
 Despite boundary irregularity, intracellular bacterial replication was approximately exponential (Figure 1C), and the growth rate could be modeled with a one-term exponential function (Figure 1—figure supplement 1A) with an average doubling time of approximately 180 min (Figure 1—figure supplement 1C). This doubling time is comparable to what has been previously reported in other epithelial host cell types using gentamicin protection assays (Gaillard et al., 1987). Between 360 and 960 min post-infection, the mean squared displacement (MSD) of the bacterial positions (defined here as the second moment of the fluorescence intensity distribution) appeared linear (Figure 1C), which is consistent with a random walk (Berg, 1993). However, the slope of the MSD was not always constant, but instead increased with time (Figure 1—figure supplement 1B), which is consistent with the appearance of fast-spreading organisms within a migrating population (Shigesada et al., 1995). We found no correlation between bacterial growth rate and MSD (Figure 1—figure supplement 1C), enabling us to treat these two parameters as independent in the quantitative model described below.
 
-## Stochastic simulations of cell-to-cell spread via random walks are inconsistent with observed shapes of infection foci
+### Stochastic simulations of cell-to-cell spread via random walks are inconsistent with observed shapes of infection foci
 
-What then is the expected range of shapes resulting from the random movement and exponential growth seen in L. monocytogenes cell-to-cell spread? From the literature, it is expected that, when starting from a point source, random movement and growth should yield isotropic shapes (Holmes et al., 1994). To formalize this null hypothesis, we solved the reaction-diffusion equation (Equation 1):(1)∂ϕ∂t=D∂2ϕ∂r2+kϕwhere Φ represents the bacterial concentration as a function of position and time, t refers to time, r refers to the position of the bacteria in polar coordinates, D is the effective diffusion coefficient, and k is the exponential growth rate. Variations of this partial differential equation have been used to model dynamic biological processes such as morphogen pattern formation (Gordon et al., 2011) and animal migration (Skellam, 1951). Because Equation 1 is radially isotropic, its solutions correspond to circular infection foci that grow in size and intensity over time (Figure 2A and Video 2). Such a continuum model cannot account for the experimentally observed heterogeneous focus shapes.
+What then is the expected range of shapes resulting from the random movement and exponential growth seen in L. monocytogenes cell-to-cell spread? From the literature, it is expected that, when starting from a point source, random movement and growth should yield isotropic shapes (Holmes et al., 1994). To formalize this null hypothesis, we solved the reaction-diffusion equation (Equation 1):
+
+$$
+\frac{∂ϕ}{∂t}=D\frac{∂^{2}ϕ}{∂r^{2}}+kϕ
+$$
+
+where Φ represents the bacterial concentration as a function of position and time, t refers to time, r refers to the position of the bacteria in polar coordinates, D is the effective diffusion coefficient, and k is the exponential growth rate. Variations of this partial differential equation have been used to model dynamic biological processes such as morphogen pattern formation (Gordon et al., 2011) and animal migration (Skellam, 1951). Because Equation 1 is radially isotropic, its solutions correspond to circular infection foci that grow in size and intensity over time (Figure 2A and Video 2). Such a continuum model cannot account for the experimentally observed heterogeneous focus shapes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig2-v1.jpg)
+
+**Figure 2.:** (A) On the left three panels, images depict the solution of the reaction-diffusion equation at three different time steps. Green boundaries enclose the brightest 90% of pixels. On the fourth panel, boundaries (shades of green) depict the progression of the shape of the differential equation solution at nine evenly-spaced time steps (see colorbar). (B) Schematic of stochastic simulation. Each bacterium, depicted by a different color, is represented by a location in Cartesian coordinates, age, and replication time. A bacterium replicates when its age catches up with its replication time. Bacteria take steps that are normally distributed and scaled by an effective diffusion coefficient D, and they replicate according to a replication rate k. (C) The left three panels depict three time steps of a random walk stochastic simulation where D = 1 and k = 1. Each simulated bacterium is depicted by a data point. Green boundaries fully enclose all data points. On the fourth panel, boundaries (shades of green) depict the progression of a simulated focus boundaries at nine evenly-spaced time steps. (D) Representative simulated focus convolved with the L. monocytogenes point spread function (left). Representative experimental focus (right). Green boundaries fully enclose all bacteria. Circular dashed lines represent the smallest circles that fully enclose green boundaries. Colorbar indicates bacterial density. (E) Data quantifying infection foci circularity of simulated data versus experimental data. For experimental data, each shape depicts an independent experiment. Horizontal bars indicate the mean. p-Value was calculated with the non-parametric Wilcoxon rank sum test. The red and cyan data points correspond to the simulated and experimental foci, respectively, from panel D.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Data quantifying the number of bacteria as a function of simulation steps. Data points were fit to an exponential function plotted as a solid black line. The value of ktrue refers to the exponential growth rate used as an input for the simulation. The value of kestimated was calculated from the exponential fit. (B) Data quantifying the mean squared displacement as a function of simulation steps. Data points were fit to a linear function plotted as a solid black line. The value of Dtrue refers to the value of the effective diffusion coefficient used as an input for the simulation. The value of Destimated was calculated by dividing the slope of the mean squared displacement by 4. (C) Data plotting kestimated versus ktrue. (D) Data plotting Destimated versus Dtrue. For C and D, each data point represents the average estimated value for 1000 independent simulations. Vertical error bars represent the standard deviation. Horizontal axes show the true diffusion coefficient or growth rate value used as an input for the simulations. All simulations from panels A-D were run until 105 bacteria had been accumulated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Quantification of the radial speed of the leading edge of simulated infection foci. Speed was calculated from the slope of the square root of the focus area as a function of time. Each data point represents an independent simulation. For these simulations, D = 1 and k = 1. Simulations were run for an indicated number of steps. Horizontal bars indicate the mean. Dashed line shows the speed expected from analytical calculations, that is 2 times the square root of Dk.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of three simulated foci. Each color represents a different infection focus simulated with an effective diffusion coefficient set to 1 (blue), 10 (red), and 100 (green). (B) Quantification of the circularity of simulated infection foci with three diffusion coefficients used in panel A. Fifty independent simulations were run for each effective diffusion coefficient, and each data point represents an independent simulation. For these simulations, k = 1. Horizontal bars indicate the mean. p-value comparing all three groups was calculated with the non-parametric Kruskal-Wallis test.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Data quantifying the circularity of simulated infection foci generated by a random walk and a random walk including host cell boundaries and motility persistence. Each data point refers to an independent simulation where D equals 1, k equals 1, the side length of the square host cells equals 1. A total of 100 simulations were run per condition. Each simulation was run until 105 bacteria had been accumulated. Dashed line around 0.58 refers to the mean of the experimental circularity. Solid horizontal bars refer to the mean. p-value was calculated with the non-parametric Wilcoxon rank sum test. (B) Data quantifying circularity of infection foci as a function of probability of crossing host boundaries. Each data point represents the average of 1000 independent simulations each of which was run as described for panel A. Vertical bars, too short to be seen, indicate the standard deviation. Each simulation was run until 104 (black) or 105 (red) bacteria had been accumulated. Dashed line represents the mean circularity of experimental foci.
+
+![Video 2.](https://cdn.elifesciences.org/articles/40032/elife-40032-video2.mp4.jpg)
+
+**Video 2.:** Solution as defined in Equation 2. Effective diffusion coefficient and replication rate were each set to 1. Time steps were set to 0.01.
 
 It is important to note that treating the bacterial concentration Φ as a continuous variable constitutes a mean-field approximation, which is valid only in the limit of high bacterial counts, and which neglects correlations in the positions of individual bacteria. However, because each bacterium behaves as a discrete entity and because the number of bacteria at the start of each infection focus is very small, the mean-field model breaks down in describing the shape of individual foci. Stochastic variation in the trajectories of individual bacteria, amplified by exponential growth, could in principle lead to more irregular focus shapes such as those observed in Figure 1A–B. We thus turned to simulations with finite numbers of discrete bacterial agents to examine the effect of such stochastic fluctuations.
 
@@ -50,19 +92,55 @@ Agent-based simulations have been used to study discrete biological phenomena su
 
 In these simulations, individual bacteria execute an isotropic random walk in two dimensions (Video 3), with the step in each dimension selected from a normal distribution with mean zero and variance 2D∆t where ∆t is the simulation time-step. Each bacterium replicates at a preset time interval after its initial birth, resulting in an overall replication rate k (Figure 2B and Video 4). The MSD and total counts of simulated bacteria accurately reflect the input parameters of diffusivity D and replication rate k (Figure 2—figure supplement 1). As expected, the speed of the infection focus boundary, defined as the square root of the area of the boundary, approaches the theoretical limit of 2 times the square root of Dk (Liebhold and Tobin, 2008) at long times (Materials and Methods; Figure 2—figure supplement 2).
 
+![Video 3.](https://cdn.elifesciences.org/articles/40032/elife-40032-video3.mp4.jpg)
+
+**Video 3.:** First 425 steps of a stochastic simulation that starts with a single bacterium and ends when 100 bacteria have accumulated. Effective diffusion coefficient and replication rate equal 1.
+
+![Video 4.](https://cdn.elifesciences.org/articles/40032/elife-40032-video4.mp4.jpg)
+
+**Video 4.:** Stochastic simulation that starts with 25 bacteria and ends when 105 bacteria have accumulated. Effective diffusion coefficient and replication rate equal 1.
+
 While not perfectly isotropic, the stochastic simulations generated foci that were approximately circular and thus differed significantly from the experimental foci (Figure 2C). To quantify the circularity of the experimental and simulated foci, we calculated the ratio of the area of a focus over the area of the smallest circle that fully encloses the focus (Figure 2D). For a perfect circle, this metric would be equal to 1, and for a square, this metric would be equal to 2/π (Zheng and Hryciw, 2015). Importantly, this metric is not dependent on the focus size (Figure 2—figure supplement 3). For all measurements, simulated foci were convolved with the point spread function of individual bacterial cells to match the empirically determined resolution of our microscope system, so that simulation outputs could be directly compared to experimental observations (Materials and Methods). The data showed that simulated foci are substantially more circular than experimental foci (Figure 2E).
 
 It is known that intracellular L. monocytogenes does not undergo truly uncorrelated random walks as was assumed in our simulations. Instead, intracellular L. monocytogenes motility, aided by ActA-dependent actin comet tails, exhibits directional persistence over time-scales of a few minutes (Lacayo and Theriot, 2004; Soo and Theriot, 2005). In addition, our initial simulations ignored the presence of host cell boundaries, which L. monocytogenes encounters as they spread from cell to cell. In fact, it has been shown that L. monocytogenes can ricochet off MDCK host cell boundaries at a frequency dependent on monolayer age (Robbins et al., 1999). To test the possibility that bacterial motility persistence and the presence of host cell boundaries could affect the circularity of the simulated foci, we updated our simulations to include both of these effects (Materials and Methods, and Video 5). We found that neither of these two conditions affects circularity significantly; specifically, foci simulated with these features are only about 3% less circular than foci simulated by a random walk alone (Figure 2—figure supplement 4A). Overall, changing the probability with which the bacteria cross host cell boundaries had a minimal effect on the circularity of the simulated foci (Figure 2—figure supplement 4B).
 
+![Video 5.](https://cdn.elifesciences.org/articles/40032/elife-40032-video5.mp4.jpg)
+
+**Video 5.:** Directional persistence equals 0.3 and the probability of crossing a host cell boundary equals 0.10. Host cell boundaries are drawn in gray. The trailing points behind a bacterium represent the last ten positions of that bacterium. Effective diffusion coefficient and replication rate equal 1.
+
 Taken together, our experimental and simulated data show that L. monocytogenes cell-to-cell spread cannot be modeled with only a random walk and exponential growth, and that the presence of host cell boundaries and the persistence of bacterial motility do not have a significant effect on the circularity of infection foci. We therefore decided to look more closely at the influence and significance of pioneer bacteria.
 
-## Allowing simulated bacteria to interconvert between pioneer and non-pioneer behavior recapitulates the non-circular phenotype of experimental foci
+### Allowing simulated bacteria to interconvert between pioneer and non-pioneer behavior recapitulates the non-circular phenotype of experimental foci
 
 Pioneer bacteria, which spread unusually far compared to the overall bacterial population (Figure 3A and Video 6), have the potential to substantially alter the shape and isotropy of infection foci. For our experiments performed in the presence of extracellular gentamicin, L. monocytogenes only replicates in a host cell’s cytoplasm. We also know from direct observation that at least one round of division must take place before bacteria can resume actin-based motility in the recipient cell (Robbins et al., 1999). Therefore, the simplest explanation consistent with our direct observation of events such as the one shown in Figure 3A, is that the bacterium travels from a donor cell directly to a non-adjacent recipient through a long protrusion (approximately 15–20 µm in the example shown). Once inside the cytoplasm of this non-adjacent recipient cell, the bacterium replicates. Importantly, this bacterium can reach a non-adjacent recipient host cell in less than 30 min even though it takes an MDCK cell approximately 45 min to complete the process of taking up a bacterium-containing protrusion (Robbins et al., 1999). In contrast, non-pioneer bacteria typically move about 1–2 µm in 5-min intervals in our assay (Video 6).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig3-v1.jpg)
+
+**Figure 3.:** (A) On the left nine panels, micrographs show nuclei (Hoechst, blue) and intracellular bacteria (mTagRFP, red). Green lines, which serve as an approximation of host cell boundaries, depict the Voronoi tessellation of the centroids of the host nuclei. White arrows track a single pioneer and its two daughters through time. Start time (leftmost panel) refers to 1255 min post-infection. The right panel shows nuclei (Hoechst, blue) and the pioneer path throughout 180 min. Dots indicate the position of the pioneer at a given time point. Shades of red depict progression of time. Black arrow indicates start position. Orange arrows indicate the location and time of two bacterial replication events. (B) The left three panels depict three time steps of a stochastic simulation where Dslow = 1, Dfast = 100, P = 0.10, and k = 1. Each simulated bacterium is depicted by a data point. Green boundaries fully enclose all data points. On the fourth panel, boundaries (shades of green) depict the progression of a simulated focus boundaries at nine evenly-spaced time steps. (C) Images depicting 105 simulated bacteria at step 800 of stochastic simulations where Dslow = 1, Dfast = 100, k = 1, and probability of becoming a pioneer is depicted in cyan. Green boundaries fully enclose all data points. Circular dashed lines represent the smallest circles that fully enclose the green boundaries. (D) Data quantifying the circularity of experimental (red) and simulated (black) foci at step 800, which, normalized by the replication rate (0.006 min−1), is equivalent to approximately 1360 min of experimental time. For experimental data, each shape depicts an independent experiment. Dashed line at circularity of 0.58 refers to the mean of the experimental circularity. Horizontal bars indicate the mean for each condition. (E) Data quantifying circularity of simulated infection foci as a function of probability of becoming a pioneer. Each data point represents the average of 100 independent simulations. Vertical bars represent the standard deviation. Each color represents a different value of Dfast/Dslow ratio. Dashed line around 0.58 refers to the mean of the experimental circularity. For all simulations, replication rate k equals 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Simulated data (red) quantifying the log mean squared displacement as a function of the log of simulation steps where Dslow = 1, Dfast = 100, and P = 0.01. Dashed magenta line indicates the analytical solution for a population initially composed of non-pioneers, with probability P of becoming a pioneer at each replication event set by the growth rate k. For this expression, Davg equals the average of Dfast and Dslow weighed by P, and ∆D equals Dfast – DSlow. Blue and green dashed lines show the short time asymptotic limit (diffusive spreading with D = 1) and the long time asymptotic limit (diffusive spreading with D = Dslow*(1–P) + Dfast*P = 1.96), respectively. (B) Data quantifying the number of bacteria that either have a fast ancestor or are fast themselves as a function of probability of becoming a pioneer. Each data point represents an independent simulation. A total of 100 simulations were run per condition. Each simulation started with 25 bacteria and was run until 105 bacteria had been accumulated. Dashed line gives analytic solution: 1–(1–P)N where N is the typical number of generations in the simulation (N equals approximately 12). (C) Data quantifying the infection foci circularity as a function of number of bacteria simulated for a random walk (black) or heterogeneous spread where Dfast/Dslow = 100 and probability of becoming a pioneer is 0.10 (red). Each data point represents an independent simulation. For B and C, horizontal bars indicate the mean. For all simulations, replication rate k equals 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Data quantifying the circularity of simulated infection foci as a function of time. Different colors represent independent simulations with distinct values of P, the probability of the becoming a pioneer. For all simulations, replication rate k equals 1. (B) Data quantifying the circularity of experimental infection foci as a function of time. Each color represents a different focus. The effective time scales for parts A and B are comparable.
+
+![Video 6.](https://cdn.elifesciences.org/articles/40032/elife-40032-video6.mp4.jpg)
+
+**Video 6.:** Single pioneer spreading through a polarized monolayer of MDCK cells. Images were collected every 5 min. White arrow indicates the initial position of pioneer bacterium.
+
 For a few of these pioneer events, the pioneer bacterium went transiently out of focus in our widefield imaging setup, consistent with the possibility that this long protrusion extended above the apical surface of the monolayer (Video 7). However, such long protrusions reaching non-adjacent cells could in principle also extend beneath the basal surface of the monolayer or indeed even between cell-cell junctions. For MDCK cells, the tight junctions which presumably would occlude lateral extension of long protrusions between neighboring cells only comprise the top 5–10% of the lateral face of the cells in culture (Nelson and Veshnock, 1986), so there is ample space for long protrusions to extend between cells in the monolayer prior to protrusion uptake by a non-adjacent recipient host.
 
+![Video 7.](https://cdn.elifesciences.org/articles/40032/elife-40032-video7.mp4.jpg)
+
+**Video 7.:** Single pioneer briefly goes out of focus as it spreads through a polarized monolayer of MDCK cells. Images were collected every 5 min. White arrow indicates the initial position of pioneer bacterium.
+
 Pioneers, which appear to determine the frontier of the infection focus boundary (Figure 1A–B), can be incorporated into the stochastic simulation by allowing bacteria to sample from an alternate distribution of step sizes. For simplicity, we thus include pioneers in our model by allowing all bacteria to move in a purely diffusive fashion, with either a slow (non-pioneer) diffusivity Dslow or a fast (pioneer) diffusivity Dfast. Pioneer behavior in the simulations is then characterized by the ratio of Dfast/Dslow (i.e. how much further pioneers spread as compared to non-pioneers) and the probability with which a bacterium becomes a pioneer. When a bacterium replicates, each daughter has a probability P of spreading according to Dfast and probability 1–P of spreading according to Dslow (Video 8). We assume the assignment of each individual bacterium as either a pioneer or non-pioneer persists until a bacterium’s next replication event.
+
+![Video 8.](https://cdn.elifesciences.org/articles/40032/elife-40032-video8.mp4.jpg)
+
+**Video 8.:** Stochastic simulations where Dslow = 1, Dfast = 100, and k = 1. Each simulation starts with 25 bacteria and ends when 105 bacteria have accumulated. Colors depict whether a bacterium has never been a pioneer (black), has a pioneer ancestor (orange), or is currently a pioneer (magenta). Green boundaries fully enclose all bacteria.
 
 We first simulated cell-to-cell spread by setting the probability of becoming a pioneer to 0.10 and the Dfast/Dslow ratio to 100. These are reasonable parameters because (1) a relatively small number of bacteria spread much farther than the rest throughout a live microscopy assay, and (2) an effective diffusion coefficient ratio of 100 translates to pioneer steps that are an order of magnitude longer than non-pioneer steps, which is consistent with what we observe experimentally (Figure 3A). As expected, the presence of pioneers caused the simulated boundaries to become anisotropic, particularly in the early steps of the simulation (Figure 3B). Additionally, these simulations recapitulated the increase in the MSD slope during the later time points of the experimental data (Figure 3—figure supplement 1A). The transition to a larger MSD occurs at a time when the bacterial population stabilizes to contain a larger fraction of pioneers. A probability of 0.10 allowed, on average, approximately 75% of bacteria to have a pioneer ancestor or be pioneers themselves by the end of the simulation (Figure 3—figure supplement 1B). It is likely that the approach towards a pioneer majority explains why simulated foci boundaries tended to be more anisotropic during earlier steps of the simulation, and why they became more circular as simulation time increased (Figure 3—figure supplement 1C). Circularity of simulated foci would sometimes drop precipitously if the probability of becoming a pioneer was less than 0.001 (Figure 3—figure supplement 2A). We also observed a general time-dependent increase in infection focus circularity in experimental data, which also sometimes exhibited rapid decreases in infection focus circularity (Figure 3—figure supplement 2B). The observed kinetics of changes in circularity over time for both the experimental data and the simulations are consistent with the proposition that the overall focus size and shape become more strongly dominated by the pioneers at later time points, as also illustrated by the transition in MSD slope described above. Overall, less circular foci shapes were observed when the pioneer probability was low enough so that only a few bacteria in each focus exhibited pioneer behavior (Figure 3C).
 
@@ -70,19 +148,43 @@ We confirmed these findings quantitatively and showed that experimental circular
 
 Together our findings suggest that L. monocytogenes cell-to-cell spread is consistent with individual bacteria having a low but non-zero probability of becoming pioneers, while the majority of the bacteria spread locally. We refer to this form of L. monocytogenes dissemination as heterogeneous cell-to-cell spread following terminology from the ecological study of animal dispersion (Shigesada et al., 1986). We next investigated whether L. monocytogenes entering straight long protrusions could form the basis of heterogeneous spread.
 
-## Decreasing the persistence of bacterial motility leads to more circular infection foci
+### Decreasing the persistence of bacterial motility leads to more circular infection foci
 
 During L. monocytogenes cell-to-cell spread, it is known that intracellular bacteria create protrusions that can be taken up by a recipient cell directly adjacent to the donor cell. In this case, donor and recipient cells are connected to one another by the protein-protein interactions of constituents of adherens and tight junctions (Hartsock and Nelson, 2008). However, to explain the pioneer phenomenon, we propose that a few bacteria will create longer protrusions that will allow them to reach a more distant recipient cell that is not adjacent to the donor cell. In other words, this spreading event takes place between two cells that do not form junctions directly with each other (Figure 4A). This is a reasonable hypothesis because L. monocytogenes can form long protrusions that are tens of microns in length, sufficient to allow them to reach non-adjacent host cells (Pust et al., 2005). L. monocytogenes’ ability to create long, pioneer-containing protrusions thus would be critical for the complex, non-circular boundaries observed in experimental data.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig4-v1.jpg)
+
+**Figure 4.:** (A) Micrograph showing phalloidin staining of MDCK cell monolayer (left), and a cartoon representation of host cell boundaries based on phalloidin staining and L. monocytogenes spreading from cell to cell. (B) Data quantifying the circularity of foci generated by wild-type and GRR L. monocytogenes. Horizontal bars indicate the mean. p-value was calculated using the non-parametric Wilcoxon rank sum test. The orange and cyan data points correspond to the foci on the right. Green boundaries fully enclose all bacteria. Circular dashed lines represent the smallest circles that fully enclose green boundaries.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Data quantifying the circularity of simulated infection foci as a function persistence. Each data point represents the average of 100 independent simulations. Vertical bars represent the standard deviation. Each color represents a different value of Dfast/Dslow ratio. For all simulations, replication rate k equals 1.
 
 To test this model, we infected confluent MDCK cell monolayers with either wild-type L. monocytogenes or an L. monocytogenes strain where the proline residues in three proline-rich regions of the ActA protein have been mutated to glycine (Skoble et al., 2001). This mutant, known as the glycine-rich repeat (GRR) mutant, is less persistent than wild-type bacteria, which means that it loses its original direction more quickly than wild-type bacteria. The GRR mutant is also characterized by two-fold shorter actin comet tails (Auerbuch et al., 2003). These characteristics make the GRR mutant likely to enter protrusions at a lower frequency than wild-type bacteria and to form protrusions that are less straight. Upon quantifying the circularity of GRR foci, we found that they were significantly more circular than foci created by wild-type L. monocytogenes (Figure 4B). This was likely a consequence of a decrease in the probability of forming long, straight protrusions, which then decreased the probability of bacteria exhibiting pioneer behavior. Indeed, changing the directional persistence in simulations including pioneers had little effect in circularity (Figure 4—figure supplement 1), thus supporting the idea that pioneer behavior, that is making long straight protrusions, has a stronger effect in circularity than intracellular directional persistence. Because pioneer behavior in wild-type bacteria is expected to occur quite rarely, decreasing the pioneer probability still further should result in more circular infection foci as very few pioneering events occur over the observation period (Figure 3D).
 
 Our findings suggest that L. monocytogenes cell-to-cell spread is heterogeneous as it proceeds via local non-pioneers and far-spreading pioneers, each of which can be modeled with a random walk. In addition, we have shown that pioneer behavior is probably based on L. monocytogenes’ ability to spread directly to non-adjacent host cells via long extracellular protrusions. However, because of the intrinsic limitations of our wide-field imaging methodology, we cannot tell whether these long, straight protrusions extend above, below, or between host cells as they are reaching their destination.
 
-## Simulations predict that heterogeneous spread increases the chance of a persistent Listeria monocytogenes infection in the intestinal epithelium
+### Simulations predict that heterogeneous spread increases the chance of a persistent Listeria monocytogenes infection in the intestinal epithelium
 
 In considering the possible biological significance of pioneer behavior, we next asked whether heterogeneous cell-to-cell spread would promote L. monocytogenes intracellular survival and growth in a more physiological setting. To answer this question, we updated our simulations to more closely mimic the physiology of the tip of an intestinal villus by including host cell extrusion events, which could terminate bacterial infections in vivo (Figure 5A). Given L. monocytogenes’ ability to spread away from an actively extruding villus tip, the rate of host cell extrusion and the rate of L. monocytogenes cell-to-cell spread together determine the fate of an intestinal infection. In the updated simulations, after a pre-determined period of time, a circular host cell at the center of the simulated monolayer is removed (extruded), taking with it the bacteria found inside. The monolayer then contracts to replace the extruded host cell and moves all other bacteria radially inward (Figure 5B). As before, simulated bacteria spread via a random walk and replicate exponentially. The simulation keeps track of both the number of bacteria in the monolayer and the number of bacteria that have been extruded.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematic of the topology of the intestinal epithelium and L. monocytogenes cell-to-cell spread originating at the tip of intestinal villi. Image of intestinal villi was adapted from ‘Structure of villi and microvilli present on the epithelial cells of the small intestine.’ https://commons.wikimedia.org/wiki/File:Esquema_del_epitelio_del_intestino_delgado.png. License: CC BY-SA 4.0. Villus side view image was adapted from Figure 3 of Pizarro-Cerdá et al. (2012). (B) Schematic of the steps of the host cell extrusion simulation. Host cell boundary of next cell to be extruded is depicted as a cyan dashed line. Extruding host cell is depicted as an orange boundary. Black arrows inside host cell in the second panel indicate monolayer retraction after extrusion. (C) Phase diagram of simulated data depicting the outcomes of host cell extrusion random walk simulations with only a single effective diffusion coefficient (no pioneers) for different combinations of host cell extrusion periods and effective diffusion coefficients. A total of 100 simulations were run for each combination. For these simulated data, the radius of extrusion equals 1, and the bacterial replication rate equals 1. Units are normalized by the replication rate, 0.006 min−1, and radius of an extruded cell, 7 µm (Ho et al., 2017). The white dashed line represents the analytic approximation for extrusion steady state. (D) Simulated data showing the outcomes of host cell extrusion simulations where extrusion period equals 0.15, extrusion radius equals 1, Dslow equals 2, and Dfast varies. Vertical axis depicts the fraction of simulations with indicated outcome for 100 simulations per value of Dfast/Dslow ratio.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Data quantifying the fraction of simulations with indicated outcome (bacterial clearance in red, uncontrolled growth in green, stable steady state in blue) as a function of effective diffusion coefficient. A total of 100 simulations were run for each effective diffusion coefficient. For these simulated data, the radius of extrusion equals 1, the extrusion period equals 0.15, and the bacterial replication rare equals 1 Uncontrolled growth occurs when the number of simulated bacteria in the monolayer reaches 105, stable steady state occurs when the number of simulated extruded bacteria reaches 2 × 105, and bacterial clearance occurs if the number of simulated bacteria in the monolayer reaches zero.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40032/elife-40032-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Data quantifying the fraction of simulations that reached a stable steady state for three combinations of Dslow and host cell extrusion period E as a function of Dfast/Dslow ratio. The bacterial replication rate equals 1. A total of 100 simulations were run for each Dfast/Dslow ratio for each curve. Uncontrolled growth occurs when the number of simulated bacteria in the monolayer reaches 105, stable steady state occurs when the number of simulated extruded bacteria reaches 2 × 105, and bacterial clearance occurs if the number of simulated bacteria in the monolayer reaches zero.
+
 Unlike previous simulations, which we terminated at the point at which 105 total bacteria had accumulated, we ended host cell extrusion simulations in one of three ways: (1) no bacteria left in the monolayer, called bacterial clearance (Video 9, left); (2) too many bacteria, for example 105, have accumulated in the monolayer, called uncontrolled growth (Video 9, right); (3) the number of bacteria extruded from the monolayer has reached a pre-determined threshold, for example 2 × 105, without accumulating too many bacteria in the monolayer. This third outcome, which we term a stable steady state, is equivalent to a persistent infection that allows L. monocytogenes to actively replicate and spread in the epithelium while being kept in check by the animal’s host cell extrusion (Video 9, center). Stable steady state does not harm the host, and it allows L. monocytogenes to exit the animal via feces and infect other animals, which benefits the pathogen (Begley et al., 2005; Roldgaard et al., 2009).
+
+![Video 9.](https://cdn.elifesciences.org/articles/40032/elife-40032-video9.mp4.jpg)
+
+**Video 9.:** Bacterial clearance is triggered when the number of bacteria in epithelium reaches zero. Uncontrolled growth is triggered when the number of bacteria in epithelium reaches 105. Stable steady state is triggered when the number of extruded bacteria reaches 2 × 105 before the number of bacteria in epithelium reaches 105. Extrusion radius equals 1, extrusion period equals 0.2, and replication rate equals 1. Effective diffusion coefficients are 1 (bacterial clearance), 3 (stable steady state), and 9 (uncontrolled growth ) respectively.
 
 To learn about the relationship between the rate of L. monocytogenes cell-to-cell spread and the rate of host cell extrusion, we ran random walk simulations and varied both the effective diffusion coefficient (D) and the host cell extrusion period (E). Specifically, we ran 100 independent simulations for each combination of D and E and quantified the outcomes. We found that small values of E, indicative of an actively extruding monolayer, favored bacterial clearance, and that large values of E, indicative of a more quiescent monolayer, favored uncontrolled growth, as expected. Similarly, small values of D favored bacterial clearance and large values of D favored uncontrolled growth. Stable steady state, on the other hand, was only reached by a narrow set of intermediate values of D and E (Figure 5C), corresponding to parameters where the rate of bacterial removal by extrusion was precisely balanced by the rate of replication (as derived in Materials and Methods).
 
@@ -118,25 +220,161 @@ In addition to L. monocytogenes, other pathogens have evolved strategies to crea
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (L. monocytogenes)</td>
+      <td>10403S; JAT607;wild-type + actAp::mTagRFP</td>
+      <td>Bishop and Hinrichs, 1987 PMID: 3114382</td>
+      <td></td>
+      <td rowspan="2">Strains were conjugated with actAp::mTagRFP ORF as described previously (Ortega et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. monocytogenes)</td>
+      <td>DP-L4032; JAT1348; GRR + actAp::mTagRFP</td>
+      <td>Skoble et al., 2001 PMID: 11581288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. familiaris)</td>
+      <td>Madin-Darby canine kidney type II G cells</td>
+      <td>Mays et al., 1995 PMID: 7657695</td>
+      <td>RRID:CVCL_0424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Alexa Fluor 488 phalloidin</td>
+      <td></td>
+      <td>Thermo Fisher A12379; RRID:AB_2315147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamicin sulfate</td>
+      <td></td>
+      <td>MP Biomedicals 194530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rat-tail collage type I</td>
+      <td></td>
+      <td>Thermo Fisher A1048301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td></td>
+      <td>Mathworks; RRID:SCR_001622</td>
+      <td>Used image processing toolbox</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circularity measurement</td>
+      <td>Zheng and Hryciw, 2015 DOI: 10.1680/geot.14.P.192</td>
+      <td>Mathworks; RRID:SCR_001622</td>
+      <td>Written in MATLAB</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM low glucose, no sodium bicarbonate, no phenol red</td>
+      <td></td>
+      <td>Sigma D5921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leibovitz's L-15 medium, no phenol red</td>
+      <td></td>
+      <td>Thermo Fisher 21083027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Foundation Fetal Bovine Serum</td>
+      <td></td>
+      <td>Gemini Bio-Prod 900108</td>
+      <td>Lot: A37C48A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phosphate buffered saline (PBS), no calcium, no magnesium</td>
+      <td></td>
+      <td>Fisher SH30028FS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Brain heart infusion (BHI)</td>
+      <td></td>
+      <td>BD 211059</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 All 10403S Listeria monocytogenes strains used in this study are summarized in Table 1. The plasmid pMP74RFP (Ortega et al., 2017) was stably integrated into the genome of GRR L. monocytogenes via conjugation with E. coli SM10 λpir as previously described (Lauer et al., 2002). Three days before carrying out infection assays, bacteria were streaked out onto BHI agar plates containing 200 µg/mL streptomycin and 7.5 µg/mL chloramphenicol. Bacteria were inoculated and grown in liquid cultures overnight as previously described (Ortega et al., 2017).
 
-## Mammalian cell culture
+**Table 1.**
+ Bacterial strains expressing mTagRFP under the actA promoter used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Strain designation</th>
+      <th>Parental strain designation</th>
+      <th>Parental strain reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type</td>
+      <td>JAT607</td>
+      <td>10403S</td>
+      <td>Bishop and Hinrichs, 1987</td>
+    </tr>
+    <tr>
+      <td>GRR</td>
+      <td>JAT1348</td>
+      <td>DP-L4032</td>
+      <td>Skoble et al., 2001</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell culture
 
 Madin-Darby canine kidney (MDCK) type II G cells (Mays et al., 1995) were grown in DMEM with low glucose and no phenol red (Sigma D5921) and low sodium bicarbonate (1.0 g/L) in the presence of 10% fetal bovine serum (FBS) and 1% penicillin-streptomycin. For live microscopy assays, 24-well plastic-bottom plates (Ibidi 82406) were coated with 50 µg/mL rat-tail collagen-I (Thermo Fisher A1048301), diluted in 0.2 N acetic acid, for 2 hr at 37°C and air-dried for 24 hr. Wells were washed with DPBS once before seeding. MDCK cells were cultured and seeded as instant-confluent monolayers as previously described (Ortega et al., 2017).
 
-## Infection assay
+### Infection assay
 
 Flagellated bacteria (OD600 of 0.8) were washed twice with DPBS and diluted in DMEM. Host cells were washed once with DMEM, and bacteria were added at a multiplicity of infection (MOI) of 200–300 bacteria per host cell in a volume of 500 µL/well. Bacteria and host cells were incubated together at 37°C for 10 min. Host cells were washed three times with DMEM to remove non-adherent bacteria and were incubated at 37°C for 15–20 min to allow a small number of adherent bacteria to invade host cells. It was important to keep the number of invading bacteria low because it prevents foci from merging with others. Media was replaced for DMEM +10% FBS+50 µg/mL gentamicin, and host cells were incubated at 37°C for 20 min to kill adherent bacteria. Media was replaced for DMEM +10% FBS+10 µg/mL gentamicin, and host cells were incubated for approximately 4 hr. The total time starting with the three DMEM washes until the end of the incubation is 5 hr.
 
-## Microscopy
+### Microscopy
 
 For live microscopy assays, MDCK cells were cultured on rat-tail collagen-I-coated 24-well plates (Ibidi 82406) for 48 hr as described above. Five hours post-infection, host cells were washed with Leibowitz’s L-15 once and incubated with 1 µg/mL Hoechst, diluted in L-15, for 10 min at 37°C. Cells were washed with L-15 three times and media was replaced with L-15 +10% FBS+10 µg/mL gentamicin. MDCK cells and L. monocytogenes were imaged every 5 min with a 20X air objective (NA = 0.75) in an inverted Eclipse Ti-E microscope using µManager’s autofocus feature. Red channel (bacteria), blue channel (nuclei), and phase (MDCK monolayers) were imaged. Environmental chamber was equilibrated to 37°C for at least 2 hr prior to imaging.
 
 For fixed microscopy assays, MDCK cells and L. monocytogenes were co-incubated for 22 hr after the addition of gentamicin. Host cells were washed once with DPBS and fixed with 4% formaldehyde for 10 min at room temperature. Paraformaldehyde was removed and quenched with 50 mM NH4Cl for 10 min. Membranes were permeabilized with 0.03% Triton-X100, diluted in DPBS, for 7 min. Samples were incubated with 0.2 µM AlexaFluor488 phalloidin, diluted in DPBS, for 20 min at room temperature.
 
-## Image analysis
+### Image analysis
 
 All image TIFF files were imported into MATLAB and processed with the image processing toolbox (MathWorks). To process experimental microscopy data, images were read in as 1024 × 1024 matrices, converted to double-precision numbers, and normalized to intensities ranging from 0 to 1. Images were thresholded using Otsu’s method (Sezgin and Sankur, 2004). Bacterial debris was excluded from the thresholded mask by inspection.
 
@@ -152,7 +390,7 @@ To use the Voronoi tessellation to estimate the position of host cell boundaries
 
 To calculate the L. monocytogenes point spread function (PSF), twenty 9 × 9 pixeled images containing individual bacterial cells, obtained from live microscopy experiments, were interpolated and aligned at subpixel resolution according to their center of mass. Images were averaged to create the PSF. Simulated data in Cartesian coordinates were binned in a 1024 × 1024 matrix and convolved with the PSF to generate data that matched the resolution of our microscope system.
 
-## Simulation methodology
+### Simulation methodology
 
 All data were generated from simulations written in MATLAB (Ortega, 2018; copy archived at https://github.com/elifesciences-publications/Listeria_spread_simulations).
 
@@ -168,26 +406,64 @@ For host cell extrusion simulations, a circular host cell (of size R = 1) is c
 
 Any combination of the above parameters (simple random walk, two effective diffusion coefficients, persistence, host cell boundaries, and host cell extrusion) can be used for any given simulation.
 
-## Random walk theory
+### Random walk theory
 
-The reaction-diffusion equation we used to formalize the null hypothesis of an isotropic random walk is defined as follows:(1)∂ϕ∂t=D∂2ϕ∂r2+kϕis a differential equation where Φ represents the bacterial concentration as a function of position and time, t refers to time, r refers to the position of the bacteria in polar coordinates or their radial distance to the center of mass, D is the effective diffusion coefficient, and k is the exponential growth rate. Its analytical solution (Shigesada et al., 1995) is:(2)ϕ(r,t)=ϕ04πDtexp(−r24Dt+kt)where ϕ0 represents the initial concentration of bacteria located at the source (0,0).
+The reaction-diffusion equation we used to formalize the null hypothesis of an isotropic random walk is defined as follows:
 
-To calculate the radial speed, that is how fast the focus grows after long periods of time, we set the above equation equal to some threshold concentration Φ and solved for the radial distance r at which this threshold concentration is reached, as a function of time. We take the derivative with respect to time, and solve for the limit of dr/dt as time approaches infinity to obtain:(3)limt→∞drdt=2Dk
+$$
+\frac{∂ϕ}{∂t}=D\frac{∂^{2}ϕ}{∂r^{2}}+kϕ
+$$
+
+is a differential equation where Φ represents the bacterial concentration as a function of position and time, t refers to time, r refers to the position of the bacteria in polar coordinates or their radial distance to the center of mass, D is the effective diffusion coefficient, and k is the exponential growth rate. Its analytical solution (Shigesada et al., 1995) is:
+
+$$
+ϕ(r,t)=\frac{ϕ_{0}}{4\piDt}exp(\frac{−r^{2}}{4Dt}+kt)
+$$
+
+where $ϕ_{0}$ represents the initial concentration of bacteria located at the source (0,0).
+
+To calculate the radial speed, that is how fast the focus grows after long periods of time, we set the above equation equal to some threshold concentration Φ and solved for the radial distance r at which this threshold concentration is reached, as a function of time. We take the derivative with respect to time, and solve for the limit of dr/dt as time approaches infinity to obtain:
+
+$$
+limt→∞\frac{dr}{dt}=2\sqrt{Dk}
+$$
 
 The step-by-step derivation has been previously described (Andow et al., 1990). Equation 3 then predicts that stochastic simulations where D = 1 and k = 1 will generate infection foci that move a constant speed of 2 at long times (Figure 2—figure supplement 2).
 
 We calculated the radial speed of simulated data by assuming that the area of the boundary is circular and thus can be approximated by πr2. We divided the area of the boundary by π and took the square root to obtain the average value of the radial distance, r, from the boundary to the origin of the simulation at (0,0). We plotted r as a function of time and took the slope of the linear fit to approximate dr/dt (Liebhold and Tobin, 2008).
 
-## Analytic approximation for extrusion steady state
+### Analytic approximation for extrusion steady state
 
 Here we derive an approximate relation between diffusivity and extrusion rate that yields a steady state in the case of bacteria spreading homogeneously as a random walk. The existence of a steady state requires that the rate at which new bacteria appear through replication equals the average rate at which bacteria are removed by extrusion, and that the spatial spreading of the focus in each extrusion period is balanced by contraction of the monolayer after removal of the extruded cell.
 
-We assume that in steady state, the bacterial distribution just before an extrusion event can be approximated by a Gaussian distribution with variance σ2. Each bacterium replicates at a rate krep, and is extruded at an effective rate 1/E*[1 − exp(−R2/σ2)] corresponding to the extrusion rate times the probability of the bacterium being found within radius R of the center. In order for these two rates to be precisely balanced, we must have:(4)σ2=R2−log(1−Ekrep)
+We assume that in steady state, the bacterial distribution just before an extrusion event can be approximated by a Gaussian distribution with variance σ2. Each bacterium replicates at a rate krep, and is extruded at an effective rate 1/E*[1 − exp(−R2/σ2)] corresponding to the extrusion rate times the probability of the bacterium being found within radius R of the center. In order for these two rates to be precisely balanced, we must have:
 
-When a contraction operation corresponding to the extrusion event is performed on the steady-state Gaussian distribution, the new radial bacterial distribution is given by:(5)P(r)=1𝒩(r+R)e−(r+R)2σ2where 𝒩 is a normalization constant. The mean squared radial displacement for such a distribution can be calculated as:(6)⟨r2⟩post−ext=σ2−πRσeR2σ2erfc(Rσ)
+$$
+\sigma^{2}=\frac{R^{2}}{−log(1−Ek_{rep})}
+$$
 
-To achieve steady state, we must have ⟨r2⟩post-ext +4 DE = σ2, as additional spreading during the extrusion period should return the assumed variance σ2 before the next extrusion event. This allows a solution for D in terms of σ which, together with Equation 4, yields the following equality for maintaining steady state:(7)D=R2πerfc(−log(1−Ekrep))4E(1−Ekrep)−log(1−Ekrep)
+When a contraction operation corresponding to the extrusion event is performed on the steady-state Gaussian distribution, the new radial bacterial distribution is given by:
 
-## Calculation of fraction of bacteria with pioneer ancestors
+$$
+P(r)=\frac{1}{𝒩}(r+R)e^{−\frac{(r+R)^{2}}{\sigma^{2}}}
+$$
 
-The fraction of bacteria with at least one pioneer ancestor in their family tree can be calculated in a straight-forward manner by noting that each replication event in the chain of ancestors preceding the bacterium resulted in a pioneer with probability P and that each of these choices of pioneer or non-pioneer identity are made independently of each other. Therefore, the probability that none of a bacterium’s ancestors are pioneers is given by (1 − P)N, where N is the number of generations preceding the bacterium. The probability of at least one pioneer ancestor is consequently:(8)1−(1−P)N
+where $𝒩$ is a normalization constant. The mean squared radial displacement for such a distribution can be calculated as:
+
+$$
+⟨r^{2}⟩_{post−ext}=\sigma^{2}−\sqrt{\pi}R\sigmae^{\frac{R^{2}}{\sigma^{2}}}erfc(\frac{R}{\sigma})
+$$
+
+To achieve steady state, we must have ⟨r2⟩post-ext +4 DE = σ2, as additional spreading during the extrusion period should return the assumed variance σ2 before the next extrusion event. This allows a solution for D in terms of σ which, together with Equation 4, yields the following equality for maintaining steady state:
+
+$$
+D=\frac{R^{2}\sqrt{\pi}erfc(\sqrt{−log(1−Ek_{rep})})}{4E(1−Ek_{rep})\sqrt{−log(1−Ek_{rep})}}
+$$
+
+#### Calculation of fraction of bacteria with pioneer ancestors
+
+The fraction of bacteria with at least one pioneer ancestor in their family tree can be calculated in a straight-forward manner by noting that each replication event in the chain of ancestors preceding the bacterium resulted in a pioneer with probability P and that each of these choices of pioneer or non-pioneer identity are made independently of each other. Therefore, the probability that none of a bacterium’s ancestors are pioneers is given by (1 − P)N, where N is the number of generations preceding the bacterium. The probability of at least one pioneer ancestor is consequently:
+
+$$
+1−(1−P)^{N}
+$$

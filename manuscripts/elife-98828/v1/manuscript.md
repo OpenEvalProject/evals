@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/050850526 Department of Veterinary Medicine, Michael Okpara University of Agriculture Umuahia Nigeria
+1. Department of Veterinary Medicine, Michael Okpara University of Agriculture Umuahia Nigeria ([ROR:050850526](https://ror.org/050850526))
 
 † Corresponding author
 

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Department of Geosciences and Natural Resource Management, Copenhagen University Copenhagen Denmark
+1. Department of Geosciences and Natural Resource Management, Copenhagen University Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
 
 † Corresponding author
 

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.34861.001 Recent evidence suggests that capillary pericytes are contractile and play a crucial role in the regulation of microcirculation. However, failure to detect components of the contractile apparatus in capillary pericytes, most notably α-smooth muscle actin (α-SMA), has questioned these findings. Using strategies that allow rapid filamentous-actin (F-actin) fixation (i.e. snap freeze fixation with methanol at −20°C) or prevent F-actin depolymerization (i.e. with F-actin stabilizing agents), we demonstrate that pericytes on mouse retinal capillaries, including those in intermediate and deeper plexus, express α-SMA. Junctional pericytes were more frequently α-SMA-positive relative to pericytes on linear capillary segments. Intravitreal administration of short interfering RNA (α-SMA-siRNA) suppressed α-SMA expression preferentially in high order branch capillary pericytes, confirming the existence of a smaller pool of α-SMA in distal capillary pericytes that is quickly lost by depolymerization. We conclude that capillary pericytes do express α-SMA, which rapidly depolymerizes during tissue fixation thus evading detection by immunolabeling.
+Recent evidence suggests that capillary pericytes are contractile and play a crucial role in the regulation of microcirculation. However, failure to detect components of the contractile apparatus in capillary pericytes, most notably α-smooth muscle actin (α-SMA), has questioned these findings. Using strategies that allow rapid filamentous-actin (F-actin) fixation (i.e. snap freeze fixation with methanol at −20°C) or prevent F-actin depolymerization (i.e. with F-actin stabilizing agents), we demonstrate that pericytes on mouse retinal capillaries, including those in intermediate and deeper plexus, express α-SMA. Junctional pericytes were more frequently α-SMA-positive relative to pericytes on linear capillary segments. Intravitreal administration of short interfering RNA (α-SMA-siRNA) suppressed α-SMA expression preferentially in high order branch capillary pericytes, confirming the existence of a smaller pool of α-SMA in distal capillary pericytes that is quickly lost by depolymerization. We conclude that capillary pericytes do express α-SMA, which rapidly depolymerizes during tissue fixation thus evading detection by immunolabeling.
 
 ## Introduction
 
@@ -33,9 +33,29 @@ When Rouget first discovered pericytes in 1873, he observed that these cells mig
 
 ## Results
 
-## Pericytes on retinal capillaries express α-smooth muscle actin
+### Pericytes on retinal capillaries express α-smooth muscle actin
 
 To elucidate the current controversy on the presence of α-SMA in capillary pericytes and to test the hypothesis that low α-SMA immunoreactivity in pericytes could stem from a preparation artifact (Figure 1), we first examined F-actin protein expression in capillary pericytes using fluorescently-tagged phalloidin. Intriguingly, we found substantial F-actin in pericyte processes surrounding capillaries (Figure 1—figure supplement 1A–D). Encouraged by this observation, we tested several fixation methods to enhance α-SMA detection. Snap freeze fixation of retinas with methanol at −20°C, yielded almost twice as many α-SMA-immunopositive microvessels compared to paraformaldehyde (PFA) fixation (Methanol: 441 ± 28 vessels, PFA: 254 ± 63 vessels, p=0.023; ANOVA) (Supplementary file 1; Figures 1A–B, 2A, C–D and 3A–C). The number of α-SMA-labeled microvessels significantly increased in fourth order capillaries (Methanol: 144 ± 19 vessels, PFA: 60 ± 28 vessels, p=0.003; ANOVA) (Figures 1A–B, 2A, C–D and 3A–C). Ethanol fixation did not improve α-SMA immunostaining (Figure 1—figure supplement 2A–B), suggesting that the effect of methanol was likely due to a faster fixation and not the result of a nonspecific response (e.g. protein denaturation). No immunoreactivity was observed in negative controls when the anti-α-SMA primary antibody was omitted (Figure 2—figure supplement 1A–B). In addition to their typical bump-on-a-log appearance detected by lectin, the α-SMA-positive pericytes on capillaries were identified by NG2 or PDGRFβ co-immunolabeling (Figure 2B–C), or by their red fluorescence in NG2-DsRed mice, a transgenic line that allows selective visualization of pericytes (Figure 2D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig1-v1.jpg)
+
+**Figure 1.:** (A–C) The panoramic montage of confocal images of whole–mount retinas illustrate α-SMA immunolabeling of the retinal vessels after PFA (A) or −20°C methanol fixation (B), or using specific F-actin fixing agent, jasplakinolide (C). Each microvessel is numbered corresponding to its branching order. Insets show the microvessels in the boxed areas in detail. Faster fixation of retinas with methanol at −20o or inhibition of actin depolymerization shows clear α-SMA immunoreactivity (red fluorescence) in sixth order microvessels, whereas with PFA fixation, α-SMA expression could be visualized only down to fourth order branches. Scale bars, 40 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) F-actin identified with fluorescent-tagged phalloidin (red, B, D) co-localized with pericyte soma (arrowhead) and processes (arrows) on the abluminal side of seventh order capillaries labeled with lectin (white, (A, C,) arrows). Scale bar in A,B: 10 um; scale bar in C,D: 5 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Retinas fixed with another alcohol, ethanol (A) did not disclose the α-SMA immunostaining in higher order microvessels contrary to the methanol fixation (B). Panoramic pictures of the retina were generated by tiling individual 40x-pictures. Scale bars: 40 μm.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig2-v1.jpg)
+
+**Figure 2.:** (A) α-SMA expression in the intermediate plexus capillaries after methanol fixation. Note circular pattern of α-SMA staining wrapping a capillary in a junctional pericyte (see the Figure 2—video 1 for z-stacks of this image). Scale bar: 10 μm. (B) Prevention of α-SMA depolymerization in vivo with phalloidin treatment revealed robust α-SMA expression in NG2 positive pericytes also on the deeper plexus capillaries. Note circular α-SMA staining in junctional pericytes, wrapping the capillary wall (arrow). Scale bar: 10 μm. (C) Colocalization of α-SMA with PDGFRβ immunoreactivity in a deeper plexus capillary pericyte. Scale bar: 5 μm. D) Colocalization of α-SMA immunoreactivity with DsRed fluorescence in several deeper plexus capillary pericytes (arrows) in a retina from an NG2-DsRed transgenic mouse. The focus was adjusted to visualize the deep layer in this image; hence the superficial vessels lack morphological details and appear diffuse. C and D were captured from retinas fixed with methanol. Scale bar: 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) After preventing F-actin depolymerization with phalloidin, immunoreactivity was not detected (A) if the α-SMA primary antibody was omitted on microvessels identified with lectin (B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34861/elife-34861-fig3-v1.jpg)
 
@@ -47,7 +67,7 @@ To assess the potential contribution of γ-actin cross-reactivity to α-SMA immu
 
 **Figure 4.:** (A–C) γ-actin immunostaining (green) ran longitudinally parallel to the pericyte plasma membrane unlike α-SMA, which showed a circular immunostaining pattern outlining the pericyte processes around the capillaries (red). F-actin fixation with methanol (A–C) or phalloidin (fluorescent-tagged, gray, D) did not change γ-actin and α-SMA distribution in vessels (E–G). Phalloidin was injected into vitreous 2 hr before sacrificing the mouse. Despite phalloidin stabilization of F-actin filaments, γ-actin remained detectable only ≤4th order branches unlike α-SMA. Scale bars: 20 µm.
 
-## Prevention of F-actin depolymerization in vivo allows α-SMA detection in capillary pericytes
+### Prevention of F-actin depolymerization in vivo allows α-SMA detection in capillary pericytes
 
 Phalloidin or jasplakinolide binding to F-actin prevents depolymerization and fixes F-actin in the polymerized state (Auinger and Small, 2008; Cooper, 1987; Lee et al., 2010), thus we reasoned that this strategy might enhance detection of α-SMA in retinal capillary pericytes. To test this, retinas were treated with phalloidin or jasplakinolide followed by fixation with methanol. We found that jasplakinolide or phalloidin treatment (Figures 1C, 2B, 3A–D and 5A–C) significantly increased the number of α-SMA-labeling on capillaries of 5th and 6th order compared to PFA fixation (5th order: jasplakinolide = 225 ± 28 vessels, phalloidin = 80 ± 19 vessels, PFA = 15 ± 7 vessels; 6th order: jasplakinolide = 123 ± 30 vessels, phalloidin = 23 ± 9 vessels, PFA = 0 ± 0 vessels, p=0.0001, ANOVA) (Figure 3A). Besides this treatment revealed additional α-SMA-immunolabeling on 7th order capillaries (Figures 2B and 5C) compared to methanol or PFA fixation (jasplakinolide: 31 ± 12 vessels, phalloidin: 20 ± 6 vessels, methanol: 0 ± 0 vessels; PFA: 0 ± 0 vessels, p=0.002; ANOVA) (Figure 3A). α-SMA-positive pericytes identified by methanol fixation or phalloidin treatment also expressed NG2 and their number was significantly higher compared to PFA-fixed retinas (PFA: 509 ± 30 vessels, methanol: 883 ± 56 vessels, phalloidin: 890 ± 138 vessels, p=0.035, ANOVA) (Figure 3B).
 
@@ -57,7 +77,7 @@ Phalloidin or jasplakinolide binding to F-actin prevents depolymerization and fi
 
 Administration of phalloidin combined with methanol fixation also confirmed abundant α-SMA expression in capillary pericytes of the intermediate (PFA: 97 ± 23 pericytes, methanol: 424 ± 72 pericytes, phalloidin: 509 ± 79 pericytes, jasplakinolide: 497 ± 99 pericytes, p=0.03; ANOVA) and deeper (PFA: 4 ± 2.7 pericytes, methanol: 119 ± 27 pericytes, phalloidin: 260 ± 30 pericytes, jasplakinolide: 359 ± 96 pericytes, p=0.01; ANOVA) retinal plexus (Figures 2A–D and 3C–D, Figure 2—video 1). The vast majority of the α-SMA-positive capillary pericytes could only be visualized after methanol fixation at −20°C (Figures 2A, C–D and 3C–D; Figure 2—video 1) or upon in vivo administration of jasplakinolide or phalloidin (Figures 1C, 2B, 3A and C–D). Of interest, we found that pericytes at the junction of two capillaries (i.e. junctional pericytes) were more frequently α-SMA-positive and exhibited a characteristic circular staining pattern wrapping microvessels. In contrast, pericytes on the linear segment of the capillary, which displayed a helical strand-like staining pattern as reported by other groups (Nehls and Drenckhahn, 1991; Hartmann et al., 2015; Sims, 1986), were less often α-SMA-positive.
 
-## Short interfering RNA suppresses α-SMA expression in capillary pericytes
+### Short interfering RNA suppresses α-SMA expression in capillary pericytes
 
 To further confirm α-SMA expression in pericytes, we sought to selectively reduce α-SMA expression using short interfering RNA (siRNA). α-SMA-siRNA significantly suppressed α-SMA expression in capillary pericytes 48 hr after intravitreal administration, while α-SMA expression in pericytes on upstream capillary branches and arterioles was less affected (Figure 6A–F). These results are in agreement with the idea that a small pool of α-SMA in capillary pericytes is quickly lost by depolymerization, hence making its histological detection difficult relative to α-SMA-rich pericytes on pre-capillary arterioles and vascular smooth muscle cells.
 
@@ -75,27 +95,94 @@ In conclusion, we identify key components of the contractile machinery in a larg
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Seventy three Swiss albino (21–35 g), eleven NG2-DsRed (Schallek et al., 2013) mice were housed under diurnal lighting conditions (12 hr darkness and 12 hr light) and fed ad libitum. The number of animals used in each experiment is indicated in the corresponding legend and the Table 1, Supplementary file 1.
 
-## Study approval
+**Table 1.**
+ Agents administered to mice.The table summarizes all agents injected to mice including company, injection site, volume, concentration, vehicle, and number of mice used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Agent</th>
+      <th>Company</th>
+      <th>Injection route</th>
+      <th>Volume</th>
+      <th>Concentration (Vehicle)</th>
+      <th>N of mice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Non-fluorescent phalloidin</td>
+      <td>Merck Millipore</td>
+      <td>Intra-vitreous</td>
+      <td>2 μl</td>
+      <td>5 µg/µl (water)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Fluorescent phalloidin</td>
+      <td>Biotium</td>
+      <td>Intra-vitreous</td>
+      <td>2 μl</td>
+      <td>200 U/ml (water)</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Jasplakinolide</td>
+      <td>Abcam</td>
+      <td>Intra-vitreous</td>
+      <td>2 μl</td>
+      <td>10 μM (saline)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Scrambled (control) siRNA</td>
+      <td>Ambion LifeTech</td>
+      <td>Intra-vitreous</td>
+      <td>3 μl</td>
+      <td>0.5 mg/ml (10% Glucose, nuclease free water, in vivo-jetPEI®)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>α-SMA-siRNA</td>
+      <td>Ambion LifeTech</td>
+      <td>Intra-vitreous</td>
+      <td>3 μl</td>
+      <td>0.5 mg/ml (10% Glucose, nuclease free water, in vivo-jetPEI®)</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>BLOCK-iTTM Alexa Fluor® 555 Fluorescent control</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Intra-vitreous</td>
+      <td>3 μl</td>
+      <td>0.5 mg/ml (10% Glucose, nuclease free water, in vivo-jetPEI®)</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study approval
 
 Animal housing, care, and application of experimental procedures were all carried out in accordance with the institutional guidelines and approved by the Hacettepe University Animal Experiments Local Ethics Committee (2012/63), committee guidelines on animal resources at the University of Rochester (Rochester, New York), and the guidelines of the Canadian Council on Animal Care and the Centre de Recherche du Centre Hospitalier de l’Université de Montréal (CRCHUM, Montreal, Quebec, Canada).
 
-## Retinal immunohistochemistry
+### Retinal immunohistochemistry
 
 Eyes were collected, fixed for 1 hr in 4% PFA at room temperature, and the retinas prepared as flattened whole-mounts by making four radial cuts (Alarcón-Martínez et al., 2010). Whole retinas were labeled with lectin (20 μg/ml in PBS containing 0.5% Triton X-100 (PBST), Vector Laboratories, Burlingame, CA) or antibodies against neural glial antigen-2 (NG2) (Cspg4) (Millipore, Burllington, MA) and platelet-derived growth factor receptor beta (PDGRFβ) (Pdgrfb) (Abcam, Cambridge, UK). Secondary antibody was anti-rabbit IgG conjugated to Cy2 (Jackson ImmunoResearch, West Grove, PA). Briefly, retinas were permeabilized by freezing and thawing in PBST (−80°C for 15 min, room temperature for 15 min), washed 3 times for 10 min, and incubated in 2% PBST at 4°C overnight. The retinas were washed in PBST 3 times for 5 min, incubated in blocking solution (10% fetal bovine serum or normal goat serum in PBST) for 1 hr at room temperature, and then, incubated with each primary antibody diluted in blocking solution (5 μg/ml) at 4°C overnight. The following day, samples were washed in PBST 3 times for 5 min and incubated with secondary antibody diluted in blocking solution (3 μg/ml) for 4 hr at room temperature. We mounted retinas, vitreal side up, on slides and covered them with anti-fade reagent containing Hoechst-33258 to label cellular nuclei (Molecular Probes, Eugene, OR). Retinas were imaged under a light microscope (400x, Eclipse E600, Nikon Instruments Inc., Melville, NY) equipped with a manually controlled specimen stage for X, Y, and Z-axis, a color camera (model DXM1200, Nikon Instruments Inc.), a fluorescent light source (HB-10104AF, Nikon Instruments Inc.), and an image analysis software (NIS-Elements, Version 3.22, Nikon Instruments Inc.). Confocal images of the stained sections were obtained with a Zeiss LSM-510 confocal laser-scanning microscope equipped with a diode laser 488 nm and 561 nm source for fluorescence illumination, and a Leica TCS SP8 DLS (Leica, Wetzlar, Germany) confocal laser-scanning microscope, with a X-, Y-, and Z-movement controller, and a high-resolution PMT (Zeiss, Oberkochen, Germany) and HyD (Leica) detectors. Panoramic pictures of retina were generated by tiling individual images (20x). Samples were visualized with an Apotome fluorescent microscope (Apotome 2, Zeiss) that allowed optical sectioning and was equipped with an automatic controlled specimen stage for X, Y, and Z-axis, a color camera (Axiocam 509 mono, Zeiss), a fluorescent LED source (X-cite 120LEDmini, Excelitas, Waltham, MA), and an image analysis software (Zen, Zeiss) for image acquisition.
 
-## α-SMA immunolabeling
+### α-SMA immunolabeling
 
 After sacrificing the animals, eyes were fixed in PFA at room temperature or −20°C in 100%-methanol for 1 hr. Retinas were collected and permeabilized as described above. Tissue was blocked in 10% normal goat serum in PBST at room temperature. Since anti-α-SMA antibodies are commonly generated in mice (Arnold et al., 2012; Taylor et al., 2010; Cao et al., 2010) to avoid non-specific binding to mouse epitopes of the tissue, first we incubated primary antibody against α-smooth muscle actin (α-SMA) (Acta2) (Sigma, San Louis, MO) separately with monofragments of the secondary antibody (Jackson Immunoresearch, West Grove, PA) for 2 hr (goat anti-mouse, for one retina: 2 µg of primary antibody with 1.5 µg of secondary antibody in 10 µl PBS). Then, we blocked the potential unbound monofragments by adding 200 µl of 10% normal mouse serum in PBS. Then, tissue was blocked (10% normal goat serum in PBS), and by incubation in the customized primary and secondary antibody mixture overnight at 4°C. Retinas were washed and mounted for visualization as described below.
 
-## Actin depolymerization blockade and analysis of α-SMA-positive pericytes
+### Actin depolymerization blockade and analysis of α-SMA-positive pericytes
 
 To prevent actin depolymerization, F-actin was fixed in vivo by 2 µl intravitreal injection of fluorescence phalloidin (200 U/ml, Biotium, Freemont, CA), non-fluorescent phalloidin oleate (5 µg/µl, Millipore, USA), or Jasplakinolide (10 µM, Abcam, UK). Two hrs later, animals were sacrificed and the eyes were collected and fixed in −20°C methanol for 1 hr. Retinas were harvested and subjected to the α-SMA immunostaining protocol described above. Under 200x magnification, we assigned an order number to each vessel segment before branching, starting from arterioles to capillaries, and the total number and the order of α-SMA-positive vessels was determined for each experimental condition. Under 400x magnification and for each fixation method, the number of α-SMA-positive microvessels in each retinal plexus and the total number of α-SMA+/NG2+ pericytes were quantified using a stereological approach. Thus, we analyzed an average of 140 disectors (field of view: 400 × 300 µm along Z-axis) per retina (same area between animal cohorts). The number of α-SMA-positive pericytes in each retinal plexus and the total number of α-SMA+/NG2+ pericytes were calculated using the fractionator equation as follows: total number of elements = Σ quantified elements/ssf X asf X tsf, where ssf is the section-sampling fraction (ssf = number of sections sampled/total sections), asf is the area-sampling fraction (asf = [a(frame)]/area x-y step between disectors), and tsf is the thick-sampling fraction (tsf = frame height/section thickness) (Leal-Campanario et al., 2017).
 
-## Short interfering RNA (siRNA) in vivo knockdown
+### Short interfering RNA (siRNA) in vivo knockdown
 
 A custom-designed, in vivo specific, HPLC purified α-SMA-siRNA (siRNA directed against Acta2) and a scrambled silencer select negative control siRNA were purchased (4457308 and 4404020, respectively, Ambion LifeTech, Carlsbad, CA). This α-SMA-siRNA was previously characterized in wound healing experiments in the murine liver (Rockey et al., 2013). Each siRNA was injected into the vitreous using a 34-gauge Hamilton syringe (0.5 mg/ml siRNAs, total volume: 3 µl). Prior to injection, siRNAs were mixed with a transfection reagent to facilitate cell entry in vivo. Briefly, a transfection mixture composed of 3 µl In vivo-jetPEI (PolyPlus transfection, 201–10G, Illkirch-Graffenstaden, France) and 12.5 µl of 10% glucose in 9.5 µl of nuclease free water was added to the nucleic acid mixture (3.76 µl from 25 µg siRNA, 12.5 µl of 10% Glucose in 8.74 µl of nuclease free water), and incubated for 15 min at room temperature. Transfection mixture was prepared fresh before each knockdown experiment. Forty-eight hrs after intraocular siRNA delivery, mice were sacrificed. To check whether or not siRNAs were taken up by the cells, a fluorescent dye conjugated siRNA (BLOCK-iTTM Alexa Fluor 555 Fluorescent control; Thermo Fisher Scientific, Waltham, MA) was mixed with In vivo-jetPEI and delivered to retina as described above.
 
@@ -105,6 +192,6 @@ Western blot analysis siRNA-treated retinas were removed and protein homogenates
 
 After extraction of whole-mount retinas, they were immunostained for α-SMA. Microvessels exhibiting continues α-SMA positivity in the superficial layer of whole mount retinas were counted based on capillary order. Counts were normalized compared to the α-SMA positive microvessel counts from scrambled-siRNA delivered retinas.
 
-## Statistical analysis
+### Statistical analysis
 
 All values are provided as the mean ±standard error of the mean (SEM). We evaluated all cohorts with normality (Shapiro-Wilk test) and variance (F-test) tests. For multiple comparisons of values of the stereological quantifications, we used Analysis of Variance (ANOVA) followed by Dunnett’s or Tukey’s test where appropriate. p≤0.05 was considered significant. For Western blot and qRT-PCR, two-tailed Student’s t-test was applied for statistical analysis. To analyze the α-SMA expression relative to capillary order, we used the specific non-parametric Jonckheere-terpstra test for trend analysis.

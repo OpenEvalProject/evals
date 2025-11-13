@@ -46,9 +46,9 @@ To summarize, TDLM is a general, and flexible, tool for measuring neural sequenc
 
 ## Results
 
-## Temporal delayed linear modelling
+### Temporal delayed linear modelling
 
-## Overview of TDLM
+#### Overview of TDLM
 
 Our primary goal is to test for temporal structure of neural representations in humans. However, to facilitate cross-species investigation (Barron et al., 2021), we also want to extend this method to enable measurement of sequences in other species (e.g. rodents). Consequently, this sequence detection method has to be domain general. We chose to measure sequences in a decoded state space (e.g. posterior estimated locations in rodents [Grosmark and Buzsáki, 2016] or time course of task-related reactivations in humans [Liu et al., 2019]) as this makes results from different data types comparable.
 
@@ -56,53 +56,83 @@ Ideally, a general sequence detection method should (1) uncover structural regul
 
 The starting point of TDLM is a set of n time series, each corresponding to a decoded neural representation of a task variable of interest. This is what we call the state space, X, with dimension of time by states. These time series could themselves be obtained in several ways, described in detail in a later section (‘Getting the states’). The aim of TDLM is to identify task-related regularities in sequences of these representations.
 
-Consider, for example, a task in which participants have been trained such that n = 4 distinct sensory objects (A, B, C, and D) appear in a consistent order :A→B→C→D (Figure 1a, b). If we are interested in replay of this sequence during subsequent resting periods (Figure 1c, d), we might want to ask statistical questions of the following form: 'Does the existence of a neural representation of A, at time T, predict the occurrence of a representation of B at time T+ ∆t?' and similarly for B→C and C→D.
+Consider, for example, a task in which participants have been trained such that n = 4 distinct sensory objects (A, B, C, and D) appear in a consistent order $:A→B→C→D$ (Figure 1a, b). If we are interested in replay of this sequence during subsequent resting periods (Figure 1c, d), we might want to ask statistical questions of the following form: 'Does the existence of a neural representation of A, at time T, predict the occurrence of a representation of B at time T+ $\Deltat$?' and similarly for $B→C$ and $C→D$.
 
-In TDLM, we ask such questions using a two-step process. First, for each of the n2 possible pairs of variables Xi and Xj, we find the linear relation between the Xi time series and the ∆t-shifted Xj time series. These n2 relations comprise an empirical transition matrix, describing how likely each variable is to be succeeded at a lag of ∆t by each other variable (Figure 1e). Second, we linearly relate this empirical transition matrix with a task-related transition matrix of interest (Figure 1f). This produces a single number that characterizes the extent to which the neural data follow the transition matrix of interest, which we call ‘sequenceness’. Finally, we repeat this entire process for all ∆t of interest, yielding a measure of sequenceness at each possible lag between variables and submit this for statistical inference (Figure 1g).
+![Figure 1.](https://cdn.elifesciences.org/articles/66917/elife-66917-fig1-v2.jpg)
 
-Note that, for now, this approach decomposes a sequence (such as A→B→C→D) into its constituent transitions and sums the evidence for each transition. Therefore, it does not require that the transitions themselves are sequential: A→B and B→C could occur at unrelated times, so long as the within-pair time lag was the same. For interested readers, we address how to strengthen the inference by looking explicitly for longer sequences in Appendix 1: Multi-step sequences.
+**Figure 1.:** (a) Task design in both simulation and real MEG data. Assuming there is one sequence, A->B->C->D, indicated by the four objects at the top. During the task, participants are shown the objects and asked to figure out a correct sequence for these objects while undergoing MEG scanning. A snapshot of MEG data is shown below. It is a matrix with dimensions of sensors by time. (b) The transitions of interest are shown, with the red and blue entries indicating transitions in the forward and backward direction, respectively. (c) The first step of TDLM is to construct decoding models of states from task data, and (d) then transform the data (e.g. resting-state) from sensor space to the state space. TDLM works on the decoded state space throughout. (e) The second step of TDLM is to quantify the temporal structure of the decoded states using multiple linear regressions. The first-level general linear modelling (GLM) results in a state*state regression coefficient matrix (empirical transition matrix), $\beta$, at each time lag. (f) In the second-level GLM, this coefficient matrix is projected onto the hypothesized transition matrix (black entries) to give a single measure of sequenceness. Repeating this process for the number of time lags of interest generates sequenceness over time lags (right panel). (g) The statistical significance of sequenceness is tested using a non-parametric state permutation test by randomly shuffling the transition matrix of interest (in grey). To control for multiple comparisons, the permutation threshold is defined as the 95th percentile of all shuffles on the maximum value over all tested time lags. (h) The second-level regressors $T_{auto}$, $T_{const}$, $T_{F}$, and $T_{B}$, as well as two examples of the permuted transitions of interest, $T_{permute}$(for constructing permutation test), are shown.
 
-## Constructing the empirical transition matrix
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66917/elife-66917-fig1-figsupp1-v2.jpg)
 
-In order to find evidence for state-to-state transitions at some time lag ∆t, we could regress a time-lagged copy of one state, Xj, onto another, Xi (omitting residual term ε in all linear equations):(1)Xjt+∆t=Xitβij
+In TDLM, we ask such questions using a two-step process. First, for each of the n2 possible pairs of variables Xi and Xj, we find the linear relation between the Xi time series and the $\Deltat$-shifted Xj time series. These n2 relations comprise an empirical transition matrix, describing how likely each variable is to be succeeded at a lag of $\Deltat$ by each other variable (Figure 1e). Second, we linearly relate this empirical transition matrix with a task-related transition matrix of interest (Figure 1f). This produces a single number that characterizes the extent to which the neural data follow the transition matrix of interest, which we call ‘sequenceness’. Finally, we repeat this entire process for all $\Deltat$ of interest, yielding a measure of sequenceness at each possible lag between variables and submit this for statistical inference (Figure 1g).
 
-Instead, TDLM chooses to include all states in the same regression model for important reasons, detailed in section ‘Moving to multiple linear regression’:(2)Xjt+∆t=∑k=1nXktβkj
+Note that, for now, this approach decomposes a sequence (such as $A→B→C→D$) into its constituent transitions and sums the evidence for each transition. Therefore, it does not require that the transitions themselves are sequential: $A→B$ and $B→C$ could occur at unrelated times, so long as the within-pair time lag was the same. For interested readers, we address how to strengthen the inference by looking explicitly for longer sequences in Appendix 1: Multi-step sequences.
 
-In this equation, the values of all states Xk at time t are used in a single multilinear model to predict the value of the single state Xj at time t+∆t.
+### Constructing the empirical transition matrix
 
-The regression described in Equation 2 is performed once for each Xj, and these equations can be arranged in matrix form as follows:(3)X∆t=Xβ
+In order to find evidence for state-to-state transitions at some time lag $\Deltat$, we could regress a time-lagged copy of one state, $X_{j}$, onto another, $X_{i}$ (omitting residual term ε in all linear equations):
 
-Each row of X is a time point, and each of the n columns is a state. X∆t is the same matrix as X, but with the rows shifted forwards in time by ∆t. βij is an estimate of the influence of Xit on Xjt+∆t. β is an n×n matrix of weights, which we call the empirical transition matrix.
+$$
+X_{j}t+\Deltat=X_{i}t\beta_{ij}
+$$
 
-To obtain β, we invert Equation 3 by ordinary least squares regression:(4)β=(XTX)-1XTX∆t
+Instead, TDLM chooses to include all states in the same regression model for important reasons, detailed in section ‘Moving to multiple linear regression’:
 
-This inversion can be repeated for each possible time lag ( ∆t=1,2,3,…), resulting in a separate empirical transition matrix β at every time lag. We call this step the first-level sequence analysis.
+$$
+X_{j}t+\Deltat=\sum_{k=1}^{n}X_{k}t\beta_{kj}
+$$
 
-## Testing the hypothesized transitions
+In this equation, the values of all states $X_{k}$ at time t are used in a single multilinear model to predict the value of the single state $X_{j}$ at time $t+\Deltat$.
 
-The first-level sequence analysis assesses evidence for all possible state-to-state transitions. The next step in TDLM is to test for the strength of a particular hypothesized sequence, specified as a transition matrix,T. Therefore, we construct another GLM which relates T to the empirical transition matrix, β. We call this step the second-level sequence analysis:(5)β=∑r=1rZ(r)∗Tr
+The regression described in Equation 2 is performed once for each $X_{j}$, and these equations can be arranged in matrix form as follows:
 
-As noted above, β is the empirical transition matrix obtained from first-stage GLM. It has dimension of n by n, where n is the number of states. Each entry in β reflects the unique contribution of state i to state j at given time lag. Effectively, the above equation models this empirical transition matrix β as a weighted sum of prespecified template matrices, Tr. Thus, r is the number of regressors included in the second-stage GLM, and each scalar valued Z(r) is the weight assigned to the r th template matrix. Put in other words, Tr constitutes the regressors in the design matrix, each of which has a prespecified template structure, for example, Tauto, Tconst, TF, and TB (Figure 1h).
+$$
+X\Deltat=X\beta
+$$
 
-TF and TB are the transpose of each other (e.g. red and blue entries in Figure 1b), indicating transitions of interest in forward and backward direction, respectively. In 1D physical space, TF and TB would be the shifted diagonal matrices with ones on the first upper and lower off diagonals. Tconst is a constant matrix that models away the average of all transitions, ensuring that any weight on TF and TB reflects its unique contribution. Tauto is the identity matrix. Tauto models self-transitions to control for autocorrelation (equivalently, we could simply omit the diagonal elements from the regression).
+Each row of X is a time point, and each of the n columns is a state. $X\Deltat$ is the same matrix as X, but with the rows shifted forwards in time by $\Deltat$. $\beta_{ij}$ is an estimate of the influence of $X_{i}t$ on $X_{j}t+\Deltat$. $\beta$ is an $n\timesn$ matrix of weights, which we call the empirical transition matrix.
 
-Z is the weights of the second-level regression, which is a vector with dimension of 1 by r. Each entry in Z reflects the strength of the hypothesized transitions in the empirical ones, that is, sequenceness. Repeating the regression of Equation 5 at each time lag (Δt=1,2,3,…) results in time courses of the sequenceness as a function of time lag (e.g. the solid black line in Figure 1f). ZF, ZB are the forward and backward sequenceness, respectively (e.g. red and blue lines in Figure 1g).
+To obtain $\beta$, we invert Equation 3 by ordinary least squares regression:
 
-In many cases, ZF and ZB will be the final outputs of a TDLM analysis. However, it may sometimes also be useful to consider the quantity:(6)D=ZF−ZB
+$$
+\beta=(X^{T}X)^{-1}X^{T}X\Deltat
+$$
 
-D contrasts forward and backward sequences to give a measure that is positive if sequences occur mainly in a forward direction and negative if sequences occur mainly in a backward direction. This may be advantageous if, for example, ZF and ZB are correlated across subjects (due to factors such as subject engagement and measurement sensitivity). In this case, D may have lower cross-subject variance than either ZF or ZB as the subtraction removes common variance.
+This inversion can be repeated for each possible time lag ( $\Deltat=1,2,3,…$), resulting in a separate empirical transition matrix β at every time lag. We call this step the first-level sequence analysis.
+
+### Testing the hypothesized transitions
+
+The first-level sequence analysis assesses evidence for all possible state-to-state transitions. The next step in TDLM is to test for the strength of a particular hypothesized sequence, specified as a transition matrix,T. Therefore, we construct another GLM which relates T to the empirical transition matrix, β. We call this step the second-level sequence analysis:
+
+$$
+\beta=\sumr=1rZ(r)∗T_{r}
+$$
+
+As noted above, $\beta$ is the empirical transition matrix obtained from first-stage GLM. It has dimension of $n$ by $n$, where $n$ is the number of states. Each entry in $\beta$ reflects the unique contribution of state i to state j at given time lag. Effectively, the above equation models this empirical transition matrix $\beta$ as a weighted sum of prespecified template matrices, $T_{r}$. Thus, $r$ is the number of regressors included in the second-stage GLM, and each scalar valued $Z(r)$ is the weight assigned to the $r$ th template matrix. Put in other words, $T_{r}$ constitutes the regressors in the design matrix, each of which has a prespecified template structure, for example, $T_{auto}$, $T_{const}$, $T_{F}$, and $T_{B}$ (Figure 1h).
+
+$T_{F}$ and $T_{B}$ are the transpose of each other (e.g. red and blue entries in Figure 1b), indicating transitions of interest in forward and backward direction, respectively. In 1D physical space, $T_{F}$ and $T_{B}$ would be the shifted diagonal matrices with ones on the first upper and lower off diagonals. $T_{const}$ is a constant matrix that models away the average of all transitions, ensuring that any weight on $T_{F}$ and $T_{B}$ reflects its unique contribution. $T_{auto}$ is the identity matrix. $T_{auto}$ models self-transitions to control for autocorrelation (equivalently, we could simply omit the diagonal elements from the regression).
+
+Z is the weights of the second-level regression, which is a vector with dimension of 1 by $r$. Each entry in Z reflects the strength of the hypothesized transitions in the empirical ones, that is, sequenceness. Repeating the regression of Equation 5 at each time lag ($Δt=1,2,3,…$) results in time courses of the sequenceness as a function of time lag (e.g. the solid black line in Figure 1f). $Z_{F}$, $Z_{B}$ are the forward and backward sequenceness, respectively (e.g. red and blue lines in Figure 1g).
+
+In many cases, ZF and ZB will be the final outputs of a TDLM analysis. However, it may sometimes also be useful to consider the quantity:
+
+$$
+D=Z_{F}−Z_{B}
+$$
+
+$D$ contrasts forward and backward sequences to give a measure that is positive if sequences occur mainly in a forward direction and negative if sequences occur mainly in a backward direction. This may be advantageous if, for example, $Z_{F}$ and $Z_{B}$ are correlated across subjects (due to factors such as subject engagement and measurement sensitivity). In this case, $D$ may have lower cross-subject variance than either $Z_{F}$ or $Z_{B}$ as the subtraction removes common variance.
 
 Finally, to test for statistical significance, TDLM relies on a non-parametric permutation-based method. The null distribution is constructed by randomly shuffling the identities of the n states many times and re-calculating the second-level analysis for each shuffle (Figure 1g). This approach allows us to reject the null hypothesis that there is no relationship between the empirical transition matrix and the task-defined transition of interest. Note that there are many incorrect ways to perform permutations, which permute factors that are not exchangeable under the null hypothesis and therefore lead to false positives. We examine some of these later with simulations and real data. In some cases, it may be desirable to test slightly different hypotheses by using a different set of permutations; this is discussed later.
 
-If the time lag Δt at which neural sequences exist is not known a priori, then we must correct for multiple comparisons over all tested lags. This can be achieved by using the maximum ZF across all tested lags as the test statistic (see details in section 'Correcting for multiple comparisons'). If we choose this test statistic, then any values of ZF exceeding the 95th percentile of the null distribution can be treated as significant at α=0.05 (e.g. the grey dotted line in Figure 1g).
+If the time lag $Δt$ at which neural sequences exist is not known a priori, then we must correct for multiple comparisons over all tested lags. This can be achieved by using the maximum ZF across all tested lags as the test statistic (see details in section 'Correcting for multiple comparisons'). If we choose this test statistic, then any values of ZF exceeding the 95th percentile of the null distribution can be treated as significant at $\alpha=0.05$ (e.g. the grey dotted line in Figure 1g).
 
-## TDLM steps in detail
+### TDLM steps in detail
 
-## Getting the states
+#### Getting the states
 
 As described above, the input to TDLM is a set of time series of decoded neural representations or states. Here, we provide different examples of specific state spaces (X, with dimension of time by states) that we have worked with using TDLM.
 
-## States as sensory stimuli
+### States as sensory stimuli
 
 The simplest case, perhaps, is to define a state in terms of a neural representation of sensory stimuli, for example, face, house. To obtain their associated neural representation, we present these stimuli in a randomized order at the start of a task and record whole-brain neural activity using a non-invasive neuroimaging method, for example, Magnetoencephalography (MEG) or Electroencephalography (EEG). We then train a model to map the pattern of recorded neural activity to the presented image (Figure 1—figure supplement 1). This could be any of the multitude of available decoding models. For simplicity, we used a logistic regression model throughout.
 
@@ -112,41 +142,63 @@ In MEG/EEG, neural activity is recorded by multiple sensor arrays on the scalp. 
 
 Ideally, we would like to select a time point where the neural activity can be most truthfully read out. This can be indexed as the time point that gives the peak decoding accuracy. If the state is defined by the sensory features of stimuli, we can use a classical leave-one-out cross-validation scheme to determine the ability of classifiers to generalize to unseen data of the same stimulus type (decoding accuracy) at each time point (see Appendix 2 for its algorithm box). In essence, this cross-validation scheme is asking whether the classifier trained on this sensory feature can be used to classify the unseen data of the same stimuli (Figure 2a, b).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66917/elife-66917-fig2-v2.jpg)
+
+**Figure 2.:** (a) Assuming we have two abstract codes, each abstract code has two different sensory codes (left panel). The MEG/EEG data corresponding to each stimulus is a conjunctive representation of sensory and abstract codes (right panel). The abstract code can be operationalized as the common information in the conjunctive codes of two stimuli. (b) Training decoding models for stimulus information. The simplest state is defined by sensory stimuli. To determine the best time point for classifier training, we can use a classical leave-one-out cross-validation scheme on the stimuli-evoked neural activity. (c) Training decoding models for abstracted information. The state can also be defined as the abstractions. To extract this information, we need to avoid a confound of sensory information. We can train the classifier on the neural activity evoked by one stimulus and test it on the other sharing the same abstract representation. If neural activity contains both a sensory and abstract code, then the only information that can generalize is the common abstract code. (d) The state can also be defined as the sequence event itself.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66917/elife-66917-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Illustration of the relationship between sensory code and (abstract) structural code. Structural code cannot be accessed directly but can be indirectly obtained from the conjunctive code (overlapping representation of sensory and structural code). In this simulation, there is sequence of sensory code but not of structural code. (b) We show the importance of controlling for sensory (stim) information when looking for sequences of abstract code: If sensory information is not controlled, we would observe significant sequences of structural code, while, in fact, it is not present, that is, false positive.
+
 After we have identified the peak time point based on the cross-validation, we can train the decoding models based on the multivariate sensor data at this given time.
 
-Specifically, let us denote the training data, M, with dimension of number of observations, b, by number of sensors, s. The labels, Y, have dimension of b by 1. The aim here is to obtain the classifier weights, W, so that Y≈σ(MW). σ is the logistic sigmoid function.
+Specifically, let us denote the training data, $M$, with dimension of number of observations, $b$, by number of sensors, $s$. The labels, Y, have dimension of $b$ by 1. The aim here is to obtain the classifier weights, W, so that $Y≈\sigma(MW)$. $\sigma$ is the logistic sigmoid function.
 
-Normally we apply L1 regularization on the inference of weights (we will detail the reasons in section ‘Regularization’):(7)W=argmaxW[log(P(Y|M,W))+bλL1||W|​|1]
+Normally we apply L1 regularization on the inference of weights (we will detail the reasons in section ‘Regularization’):
 
-Next, we translate the data at testing time (e.g. during rest), R, from sensor space to the decoded state space:(8)X=σ(RW)where R is the testing data, with dimension of time by sensors, and X is the decoded state space, with dimension of time by states.
+$$
+W=argmaxW[log(P(Y|M,W))+b\lambda_{L1}||W|​|_{1}]
+$$
 
-## States as abstractions
+Next, we translate the data at testing time (e.g. during rest), R, from sensor space to the decoded state space:
+
+$$
+X=\sigma(RW)
+$$
+
+where R is the testing data, with dimension of time by sensors, and X is the decoded state space, with dimension of time by states.
+
+### States as abstractions
 
 As well as sequences of sensory representations, it is possible to search for replay of more abstract neural representations. Such abstractions might be associated with the presented image (e.g. mammal vs. fish), in which case analysis can proceed as above by swapping categories for images (Wimmer et al., 2020). A more subtle example, however, is where the abstraction pertains to the sequence or graph itself. In space, for example, grid cells encode spatial coordinates in a fashion that abstracts over the sensory particularities of any one environment, and therefore can be reused across environments (Fyhn et al., 2007). In human studies, similar representations have been observed for the location in a sequence (Liu et al., 2019; Dehaene et al., 2015). For example, different sequences have shared representations for their second items (Figure 2). These representations also replay (Liu et al., 2019). However, to measure this replay we need to train decoders for these abstract representations. This poses a conundrum as it is not possible to elicit the abstract representations in the absence of the concrete examples (i.e., the sensory stimuli). Care is required to ensure that the decoders are sensitive to the abstract code rather than the sensory representations (see Appendix 2 for algorithm box of selecting time point for training abstract code). Useful strategies include training classifiers to generalize across stimulus sets and ensuring the classifiers are orthogonal to sensory representations (Figure 2—figure supplement 1; details in Liu et al., 2019). One way that excludes the possibility of sensory contamination is if the structural representations can be shown to sequence before the subjects have ever seen their sensory correlates (Liu et al., 2019).
 
 TDLM can also be used iteratively to ask questions about the ordering of different types of replay events (Figure 2d). This can provide for powerful inferences about the temporal organization of replay, such as the temporal structure between sequences, or the repeating pattern of the same sequence. This more sophisticated use of TDLM merits its own consideration and is discussed in Appendix 3: Sequences of sequences.
 
-## Controlling confounds and maximizing sensitivity in sequence detection
+### Controlling confounds and maximizing sensitivity in sequence detection
 
 Here, we motivate the key features of TDLM.
 
-## Temporal correlations
+### Temporal correlations
 
 In standard linear methods, unmodelled temporal autocorrelation can inflate statistical scores. Techniques such as autoregressive noise modelling are commonplace to mitigate these effects (Colclough et al., 2015; Deodatis and Shinozuka, 1988). However, autocorrelation is a particular burden for analysis of sequences, where it interacts with correlations between the decoded neural variables.
 
-To see this, consider a situation where we are testing for the sequence Xi→Xj. TDLM is interested in the correlation between Xi and lagged Xj (see Equation 1). But if the Xi and Xj time series contain autocorrelations and are also correlated with one another, then Xi(t) will necessarily be correlated with Xj(t+Δt). Hence, the analysis will spuriously report sequences.
+To see this, consider a situation where we are testing for the sequence $X_{i}→X_{j}$. TDLM is interested in the correlation between $X_{i}$ and lagged $X_{j}$ (see Equation 1). But if the $X_{i}$ and $X_{j}$ time series contain autocorrelations and are also correlated with one another, then $X_{i}(t)$ will necessarily be correlated with $X_{j}(t+Δt)$. Hence, the analysis will spuriously report sequences.
 
 Correlations between states are commonplace. Consider representations of visual stimuli decoded from neuroimaging data. If these states are decoded using an n-way classifier (forcing exactly one state to be decoded at each moment), then the n states will be anti-correlated by construction. On the other hand, if states are each classified against a null state corresponding to the absence of stimuli, then the n states will typically be positively correlated with one another.
 
-Notably, in our case, because these autocorrelations are identical between forward and backward sequences, one approach for removing them is to compute the difference measure described above (D=ZF−ZB). This works well as shown in Kurth-Nelson et al., 2016. However, a downside is it prevents us from measuring forward and backward sequences independently. The remainder of this section considers alternative approaches that allow for independent measurement of forward and backward sequences.
+Notably, in our case, because these autocorrelations are identical between forward and backward sequences, one approach for removing them is to compute the difference measure described above ($D=Z_{F}−Z_{B}$). This works well as shown in Kurth-Nelson et al., 2016. However, a downside is it prevents us from measuring forward and backward sequences independently. The remainder of this section considers alternative approaches that allow for independent measurement of forward and backward sequences.
 
-## Moving to multiple linear regression
+### Moving to multiple linear regression
 
-The spurious correlations above are induced because Xj(t) mediates a linear relationship between Xi(t) and Xj(t+Δt). Hence, if we knew Xj(t), we can solve the problem by simply controlling for it in a linear regression, as in Granger causality (Eichler, 2007):(9)Xj(t+Δt)=β0+Xi(t)βij+Xj(t)βjj
+The spurious correlations above are induced because $X_{j}(t)$ mediates a linear relationship between $X_{i}(t)$ and $X_{j}(t+Δt)$. Hence, if we knew $X_{j}(t),$ we can solve the problem by simply controlling for it in a linear regression, as in Granger causality (Eichler, 2007):
 
-Unfortunately, we do not have access to the ground truth of X because these variables have been decoded noisily from brain activity. Any error in Xj(t) but not Xi(t) will mean that the control for autocorrelation is imperfect, leading to spurious weight on βij, and therefore spurious inference of sequences.
+$$
+X_{j}(t+Δt)=\beta_{0}+X_{i}(t)\beta_{ij}+X_{j}(t)\beta_{jj}
+$$
 
-This problem cannot be solved without a perfect estimate of X, but it can be systematically reduced until negligible. It turns out that the necessary strategy is simple. We do not know ground truth Xj(t), but what if we knew a subspace that included estimated Xj(t)? If we control for that whole subspace, we would be on safe ground. We can get closer and closer to this by including further co-regressors that are themselves correlated with estimated Xj(t) with different errors from ground truth Xj(t). The most straightforward approach is to include the other states of X(t), each of which has different errors, leading to the multiple linear regression of Equation 2.
+Unfortunately, we do not have access to the ground truth of $X$ because these variables have been decoded noisily from brain activity. Any error in $X_{j}(t)$ but not $X_{i}(t)$ will mean that the control for autocorrelation is imperfect, leading to spurious weight on $\beta_{ij}$, and therefore spurious inference of sequences.
+
+This problem cannot be solved without a perfect estimate of X, but it can be systematically reduced until negligible. It turns out that the necessary strategy is simple. We do not know ground truth $X_{j}(t)$, but what if we knew a subspace that included estimated $X_{j}(t)$? If we control for that whole subspace, we would be on safe ground. We can get closer and closer to this by including further co-regressors that are themselves correlated with estimated $X_{j}(t)$ with different errors from ground truth $X_{j}(t)$. The most straightforward approach is to include the other states of $X(t)$, each of which has different errors, leading to the multiple linear regression of Equation 2.
 
 Figure 3a shows this method applied to the same simulated data whose correlation structure induces false positives in the simple linear regression of Equation 1, and by the same logic, so too in cross-correlation. This is why previous studies based on a cross-correlation (Eldar et al., 2018; Kurth-Nelson et al., 2016) cannot look for sequenceness in forward and backward directions separately, but have to rely on their asymmetry. The multiple regression accounts for the correlation structure of the data and allows correct inference to be made. Unlike the simple subtraction method proposed above (Figure 3a, left panel), the multiple regression permits separate inference on forward and backward sequences.
 
@@ -154,19 +206,19 @@ Figure 3a shows this method applied to the same simulated data whose correlation
 
 **Figure 3.:** (a) Simple linear regression or cross-correlation approach relies on an asymmetry of forward and backward transitions; therefore, subtraction is necessary (left panel). TDLM instead relies on multiple linear regression. TDLM can assess forward and backward transitions separately (right panel). (b) Background alpha oscillations, as seen during rest periods, can reduce sensitivity of sequence detection (left panel), and controlling alpha in TDLM helps recover the true signal (right panel). (c) The spatial correlation between the sensor weights of decoders for each state reduces the sensitivity of sequence detection. This suggests that reducing overlapping patterns between states is important for sequence analysis. (d) Adding null data to the training set increases the sensitivity of sequence detection by reducing the spatial correlations of the trained classifier weights. Here, the number indicates the ratio between null data and task data. ‘1’ means the same amount of null data and the task data. ‘0’ means no null data is added for training. (e) L1 regularization helps sequence detection by reducing spatial correlations (all red dots are L1 regularization with a varying parameter value), while L2 regularization does not help sequenceness (all blue dots are L2 regularization with a varying parameter value) as it does not reduce spatial correlations of the trained classifiers compared to the classifier trained without any regularization (green point).
 
-## Oscillations and long timescale autocorrelations
+### Oscillations and long timescale autocorrelations
 
-Equation 2 performs multiple regression, regressing each Xj(t+Δt) onto each Xi(t) whilst controlling for all other state estimates at time t. This method works well when spurious relationships between Xi(t) and Xj(t+Δt) are mediated by the subspace spanned by the other estimated states at time t (in particular, Xj(t)). One situation in which this assumption might be challenged is when replay is superimposed on a large neural oscillation. For example, during rest (which is often the time of interest in replay analysis), MEG and EEG data often express a large alpha rhythm, at around 10 Hz.
+Equation 2 performs multiple regression, regressing each $X_{j}(t+Δt)$ onto each $X_{i}(t)$ whilst controlling for all other state estimates at time t. This method works well when spurious relationships between $X_{i}(t)$ and $X_{j}(t+Δt)$ are mediated by the subspace spanned by the other estimated states at time t (in particular, $X_{j}(t)$). One situation in which this assumption might be challenged is when replay is superimposed on a large neural oscillation. For example, during rest (which is often the time of interest in replay analysis), MEG and EEG data often express a large alpha rhythm, at around 10 Hz.
 
-If all states experience the same oscillation at the same phase, the approach correctly controls false positives. The oscillation induces a spurious correlation between Xi(t) and Xj(t+Δt), but, as before, this spurious correlation is mediated by Xj(t).
+If all states experience the same oscillation at the same phase, the approach correctly controls false positives. The oscillation induces a spurious correlation between $X_{i}(t)$ and $X_{j}(t+Δt)$, but, as before, this spurious correlation is mediated by $X_{j}(t)$.
 
 However, this logic fails when states experience oscillations at different phases. This scenario may occur, for example, if we assume there are travelling waves in cortex (Lubenov and Siapas, 2009; Wilson et al., 2001) because different sensors will experience the wave at different times and different states have different contributions from each sensor. MEG sensors can be seen as measures of local field potential on the scalp, which contain background neural oscillations. In humans, this is dominantly alpha during rest.
 
-In this case, Xi(t) predicts Xj(t+Δt) over and above Xj(t). To see this, consider the situation where Δt is 14τ (where τ is the oscillatory period) and the phase shift between Xi(t) and Xj(t) is pi/2. Now every peak in Xj(t+Δt) corresponds to a peak in Xi(t) but a zero of Xj(t).
+In this case, $X_{i}(t)$ predicts $X_{j}(t+Δt)$ over and above $X_{j}(t)$. To see this, consider the situation where $Δt$ is $\frac{1}{4}\tau$ (where $\tau$ is the oscillatory period) and the phase shift between $X_{i}(t)$ and $X_{j}(t)$ is pi/2. Now every peak in $X_{j}(t+Δt)$ corresponds to a peak in $X_{i}(t)$ but a zero of $X_{j}(t)$.
 
-To combat this, we can include phase-shifted versions/more time points of X(t). If dominant background oscillation is at alpha frequency (e.g. 10 Hz), neural activity at time T would be correlated with activity at time T + τ. We can control for that by including X(t+τ), as well as X(t), in the GLM (Figure 3b). Here, τ = 100 ms if assuming the frequency is 10 Hz. Applying this method to the real MEG data during rest, we see much diminished 10 Hz oscillation in sequence detection during rest (Liu et al., 2019).
+To combat this, we can include phase-shifted versions/more time points of $X(t)$. If dominant background oscillation is at alpha frequency (e.g. 10 Hz), neural activity at time T would be correlated with activity at time T + $\tau$. We can control for that by including $X(t+\tau)$, as well as $X(t)$, in the GLM (Figure 3b). Here, $\tau$ = 100 ms if assuming the frequency is 10 Hz. Applying this method to the real MEG data during rest, we see much diminished 10 Hz oscillation in sequence detection during rest (Liu et al., 2019).
 
-## Spatial correlations
+### Spatial correlations
 
 As mentioned above, correlations between decoded variables commonly occur. The simplest type of decoding model is a binary classifier that maps brain activity to one of two states. These states will, by definition, be perfectly anti-correlated. Conversely, if separate classifiers are trained to distinguish each state’s representation from baseline (‘null’) brain data, then the states will often be positively correlated with each other.
 
@@ -174,29 +226,39 @@ Unfortunately, positive or negative correlations between states reduce the sensi
 
 Ideally, the state decoding models should be as independent as possible. We have suggested the approach of training models to discriminate one state against a mixture of other states and null data (Liu et al., 2019; Kurth-Nelson et al., 2016). This mixture ratio can be adjusted. Adding more null data causes the states to be positively correlated with each other, while less null data leads to negative correlation. We adjust the ratio to bring the correlation between states as close to zero as possible. In Figure 3d, we show in simulation the ensuing benefit for sequence detection. An alternative method is penalizing covariance between states in the classifier’s cost function (Weinberger et al., 1988).
 
-## Regularization
+### Regularization
 
 A key parameter in training high-dimensional decoding models is the degree of regularization. In sequence analysis, we are often interested in spontaneous reactivation of state representations, as in replay. However, our decoding models are typically trained on task-evoked data because this is the only time at which we know the ground truth of what is being represented. This poses a challenge insofar as the models best suited for decoding evoked activity at training may not be well suited for decoding spontaneous activity at subsequent tests. Regularizing the classifier (e.g. with an L1 norm) is a common technique for increasing out-of-sample generalization (to avoid overfitting). Here, it has the added potential benefit of reducing spatial correlation between classifier weights.
 
-During classifier training, we can impose L1 or L2 constraints over the inference of classifier coefficients, W. This amounts to finding the coefficients, W, that maximize the likelihood of the data observations under the constraint imposed by the regularization term. L1 regularization can be phrased as maximizing the likelihood, subject to a regularization penalty on the L1 norm of the coefficient vector:(10)W=argmaxW[log(P(Y|M,W))+bλL1||W||1]
+During classifier training, we can impose L1 or L2 constraints over the inference of classifier coefficients, $W.$ This amounts to finding the coefficients, $W$, that maximize the likelihood of the data observations under the constraint imposed by the regularization term. L1 regularization can be phrased as maximizing the likelihood, subject to a regularization penalty on the L1 norm of the coefficient vector:
 
-L2 regression can be viewed as a problem of maximizing the likelihood, subject to a regularization penalty on the L2 norm of the coefficient vector:(11)W=argmaxW[log(P(Y|M,W))+bλL2||W||2]where M is the task data, with dimension of number of observations, b, by number of sensors, s. Y is the label of observations, a vector with dimension of b by 1. P(Y|M,W)=σ(MW), and σ is the logistic sigmoid function.
+$$
+W=argmaxW[log(P(Y|M,W))+b\lambda_{L1}||W||_{1}]
+$$
+
+L2 regression can be viewed as a problem of maximizing the likelihood, subject to a regularization penalty on the L2 norm of the coefficient vector:
+
+$$
+W=argmaxW[log(P(Y|M,W))+b\lambda_{L2}||W||_{2}]
+$$
+
+where M is the task data, with dimension of number of observations, $b$, by number of sensors, $s$. Y is the label of observations, a vector with dimension of $b$ by 1. $P(Y|M,W)=\sigma(MW)$, and $\sigma$ is the logistic sigmoid function.
 
 We simulate data with varying numbers of true sequences at 40 ms lag and find that the beta estimate of sequence strength at 40 ms positively relates to the number of sequences. We also find that L1 weight regularization is able to detect sequences more robustly than L2 regularization, while L2 performs no better than an unregularized model (Figure 3e). The L1 models also have much lower spatial correlation, consistent with L1 achieving better sequence detection by reducing the covariances between classifiers.
 
 In addition to minimizing spatial correlations, as discussed above, it can also be shown that L1-induced sparsity encodes weaker assumptions about background noise distributions into the classifiers as compared to L2 regularization (Higgins, 2019). This might be of special interest to researchers who want to measure replay during sleep. Here, the use of sparse classifiers is helpful as background noise distributions are likely to differ more substantially from the (awake state) training data.
 
-## Statistical inference
+### Statistical inference
 
 So far, we have shown how to quantify sequences in representational dynamics. An essential final step is assessing the statistical reliability of these quantities.
 
 All the tests described in this section evaluate the consistency of sequences across subjects. This is important because even in the absence of any real sequences of task-related representations spontaneous neural activity is not random but follows repeating dynamical motifs (Vidaurre et al., 2017). Solving this problem requires a randomized mapping between the assignment of physical stimuli to task states. This can be done across subjects, permitting valid inference at the group level.
 
-At the group level, the statistical testing problem can be complicated by the fact that sequence measures do not in general follow a known distribution. Additionally, if a state-to-state lag of interest (Δt) is not known a priori, it is then necessary to perform tests at multiple lags, creating a multiple comparisons problem over a set of tests with complex interdependencies. In this section, we discuss inference with these issues in mind.
+At the group level, the statistical testing problem can be complicated by the fact that sequence measures do not in general follow a known distribution. Additionally, if a state-to-state lag of interest ($Δt$) is not known a priori, it is then necessary to perform tests at multiple lags, creating a multiple comparisons problem over a set of tests with complex interdependencies. In this section, we discuss inference with these issues in mind.
 
-## Distribution of sequenceness at a single lag
+### Distribution of sequenceness at a single lag
 
-If a state-to-state lag of interest (Δt) is known a priori, then the simplest approach is to compare the sequenceness against zero, for example, using either a signed-rank test or one-sample t test (assuming Gaussian distribution). Such testing assumes the data are centred on zero if there were no real sequences. We show this approach is safe in both simulation (assuming no real sequences) and real MEG data where we know there are no sequences.
+If a state-to-state lag of interest ($Δt$) is known a priori, then the simplest approach is to compare the sequenceness against zero, for example, using either a signed-rank test or one-sample t test (assuming Gaussian distribution). Such testing assumes the data are centred on zero if there were no real sequences. We show this approach is safe in both simulation (assuming no real sequences) and real MEG data where we know there are no sequences.
 
 In simulation, we assume no real sequences, but state time courses are autocorrelated. At this point, there is no systematic structure in the correlation between the neuronal representations of different states (see later for this consideration). We then simply select the 40 ms time lag and compare its sequenceness to zero using either a signed-rank test or one-sample t test. We compare false-positive rates predicted by the statistical tests with false-positive rates measured in simulation (Figure 4a). We see the empirical false positives are well predicted by theory.
 
@@ -210,39 +272,51 @@ To obtain many examples, we randomly permute the eight different stimuli 10,000 
 
 An alternative to making assumptions about the form of the null distribution is to compute an empirical null distribution by permutation. Given that we are interested in the sequence of states over time, one could imagine permuting either state identity or time. However, permuting time uniformly will typically lead to a very high incidence of false positives as time is not exchangeable under the null hypothesis (Figure 4c, blue colour). Permuting time destroys the temporal smoothness of neural data, creating an artificially narrow null distribution (Liu et al., 2019; Kurth-Nelson et al., 2016). This false positive also exists if we circular shift the time dimension of each state. This is because the signal is highly non-stationary. Replays come in bursts, as recently analysed (Higgins et al., 2021), and this will break a circular shift (Harris, 2020). State permutation, on the other hand, only assumes that state identities are exchangeable under the null hypothesis, while preserving the temporal dynamics of the neural data represents a safer statistical test that is well within 5% false-positive rate (Figure 4c, purple colour).
 
-## Correcting for multiple comparisons
+### Correcting for multiple comparisons
 
 If the state-to-state lag of interest is not known, we have to search over a range of time lags. As a result, we then have a multiple comparison problem. Unfortunately, we do not as yet have a good parametric method to control for multiple testing over a distribution. It is possible that one could use methods that exploit the properties of Gaussian random fields, as is common in fMRI (Worsley et al., 1996), but we have not evaluated this approach. Alternatively, we could use Bonferroni correction, but the assumption that each computed time lag is independent is likely false and overly conservative.
 
-We recommend relying on state identity-based permutation. To control for the family-wise error rate (assuming α=0.05), we want to ensure there is a 5% probability of getting the tested sequenceness strength (Stest) or bigger by chance in *any* of the multiple tests. We therefore need to know what fraction of the permutations gives Stest or bigger in any of their multiple tests. If any of the sequenceness scores in each permutation exceed Stest, then the maximum sequenceness score in the permutation will exceed Stest, so it is sufficient to test against the maximum sequenceness score in the permutation. The null distribution is therefore formed by first taking the peak of sequenceness across all computed time lags of each permutation. This is the same approach as used for family-wise error correction for permutations tests in fMRI data (Nichols, 2012), and in our case it is shown to behave well statistically (Figure 4d).
+We recommend relying on state identity-based permutation. To control for the family-wise error rate (assuming $\alpha=0.05$), we want to ensure there is a 5% probability of getting the tested sequenceness strength ($S_{test}$) or bigger by chance in *any* of the multiple tests. We therefore need to know what fraction of the permutations gives $S_{test}$ or bigger in any of their multiple tests. If any of the sequenceness scores in each permutation exceed $S_{test}$, then the maximum sequenceness score in the permutation will exceed $S_{test}$, so it is sufficient to test against the maximum sequenceness score in the permutation. The null distribution is therefore formed by first taking the peak of sequenceness across all computed time lags of each permutation. This is the same approach as used for family-wise error correction for permutations tests in fMRI data (Nichols, 2012), and in our case it is shown to behave well statistically (Figure 4d).
 
-## What to permute
+### What to permute
 
-We can choose which permutations to include in the null distribution. For example, consider a task with two sequences, Seq1:A→B→C→D and Seq2:E→F→G→H. We can form the null distribution either by permuting all states (e.g. one permutation might be E →F→A→B, H →C→E→D), as implemented in Kurth-Nelson et al., 2016. Alternatively, we can form a null distribution which only includes transitions between states in different sequences (e.g. one permutation might be D →G→A→E, H →C→F→B), as implemented in Liu et al., 2019. In each case, permutations are equivalent to the test data under the assumption that states are exchangeable between positions and sequences. The first case has the advantage of many more possible permutations, and therefore may make more precise inferential statements in the tail. The second case may be more sensitive in the presence of a signal as the null distribution is guaranteed not to include permutations which share any transitions with the test data (Figure 4e). For example, in Figure 4e, the blue swaps are the permutations that only exchange state identity across sequences, as in Liu et al., 2019, while the red swaps are the permutations that permit all possible state identity permutations, as in Kurth-Nelson et al., 2016. Note that there are many more different state permutations in red swaps than in blue swaps. We can make different levels of inferences by controlling the range of the null distributions in the state permutation tests.
+We can choose which permutations to include in the null distribution. For example, consider a task with two sequences, $Seq1:A→B→C→D$ and $Seq2:E→F→G→H$. We can form the null distribution either by permuting all states (e.g. one permutation might be E $→F→A→B$, H $→C→E→D$), as implemented in Kurth-Nelson et al., 2016. Alternatively, we can form a null distribution which only includes transitions between states in different sequences (e.g. one permutation might be D $→G→A→E$, H $→C→F→B$), as implemented in Liu et al., 2019. In each case, permutations are equivalent to the test data under the assumption that states are exchangeable between positions and sequences. The first case has the advantage of many more possible permutations, and therefore may make more precise inferential statements in the tail. The second case may be more sensitive in the presence of a signal as the null distribution is guaranteed not to include permutations which share any transitions with the test data (Figure 4e). For example, in Figure 4e, the blue swaps are the permutations that only exchange state identity across sequences, as in Liu et al., 2019, while the red swaps are the permutations that permit all possible state identity permutations, as in Kurth-Nelson et al., 2016. Note that there are many more different state permutations in red swaps than in blue swaps. We can make different levels of inferences by controlling the range of the null distributions in the state permutation tests.
 
-## Cautionary note on exchangeability of states after training
+### Cautionary note on exchangeability of states after training
 
-Until now, all non-parametric tests have assumed that state identity is exchangeable under the null hypothesis. Under this assumption, it is safe to perform state identity-based permutation tests on ZF and ZB. In this section, we consider a situation where this assumption is broken.
+Until now, all non-parametric tests have assumed that state identity is exchangeable under the null hypothesis. Under this assumption, it is safe to perform state identity-based permutation tests on $Z_{F}$ and $Z_{B}$. In this section, we consider a situation where this assumption is broken.
 
-More specifically, take a situation where the neural representation of states A and B is related in a systematic way or, in other words, the classifier on state A is confused with state B, and we are testing sequenceness of A→B. Crucially, to break the exchangeability assumption, representations of A and B have to be systematically more related than other states, for example, A and D. This cannot be caused by low-level factors (e.g. visual similarity) because states are counterbalanced across subjects, so any such bias would cancel at the population level. However, such a bias might be induced by task training.
+More specifically, take a situation where the neural representation of states $A$ and $B$ is related in a systematic way or, in other words, the classifier on state $A$ is confused with state $B$, and we are testing sequenceness of $A→B$. Crucially, to break the exchangeability assumption, representations of $A$ and $B$ have to be systematically more related than other states, for example, $A$ and $D$. This cannot be caused by low-level factors (e.g. visual similarity) because states are counterbalanced across subjects, so any such bias would cancel at the population level. However, such a bias might be induced by task training.
 
-In this situation, it is, in principle, possible to detect sequenceness of A→B even in the absence of real sequences. In the autocorrelation section above, we introduced protections against the interaction of state correlation with autocorrelation. These protections may fail in the current case as we cannot use other states as controls (as we do in the multiple linear regression) because A has systematic relationship with B, but not other states. State permutation will not protect us from this problem because state identity is no longer exchangeable.
+In this situation, it is, in principle, possible to detect sequenceness of $A→B$ even in the absence of real sequences. In the autocorrelation section above, we introduced protections against the interaction of state correlation with autocorrelation. These protections may fail in the current case as we cannot use other states as controls (as we do in the multiple linear regression) because $A$ has systematic relationship with $B$, but not other states. State permutation will not protect us from this problem because state identity is no longer exchangeable.
 
 Is this a substantive problem? After extensive training, behavioural pairing of stimuli can indeed result in increased neuronal similarity (Messinger et al., 2001; Sakai and Miyashita, 1991). These early papers involved long training in monkeys. More recent studies have shown induced representational overlap in human imaging within a single day (Kurth-Nelson et al., 2015; Barron et al., 2013; Wimmer and Shohamy, 2012). However, when analysed across the whole brain, such representational changes tend to be localized to discrete brain regions (Schapiro et al., 2013; Garvert et al., 2017), and as a consequence may have limited impact on whole-brain decodeability.
 
 Whilst we have not yet found a simulation regime in which false positives are found (as opposed to false negatives), there exists a danger in cases where, by experimental design, the states are not exchangeable.
 
-## Source localization
+### Source localization
 
 Uncovering temporal structure of neural representation is important, but it is also of interest to ask where in the brain a sequence is generated. Rodent electrophysiology research focuses mainly on the hippocampus when searching for replay. One advantage of whole-brain non-invasive neuroimaging over electrophysiology (despite many known disadvantages, including poor anatomical precision, low signal-noise ratio) is in its ability to examine neural activity in multiple other brain regions. Ideally, we would like a method that is capable of localizing sequences of more abstract representation in brain regions beyond hippocampus (Liu et al., 2019).
 
-We want to identify the time when a given sequence is very likely to unfold, so we can construct averages of independent data over these times. We achieve this by transforming from the space of original states, Xorig, to the space of sequence events, Xseq. First, based on the transition of interest, T, we can obtain the projection matrix, Xproj:(12)Xproj=Xorig×T
+We want to identify the time when a given sequence is very likely to unfold, so we can construct averages of independent data over these times. We achieve this by transforming from the space of original states, $X_{orig}$, to the space of sequence events, $X_{seq}$. First, based on the transition of interest, $T$, we can obtain the projection matrix, $X_{proj}$:
 
-If we know the state lag within sequence, Δt (e.g. the time lag give rise to the strongest sequenceness), or have it a priori, we can obtain the time-lagged matrix, Xlag:(13)Xlag=Xorig(t−Δt)
+$$
+X_{proj}=X_{orig}\timesT
+$$
 
-Then, we obtain state space with sequence event as states by element-wise multiply Xproj and Xlag:(14)Xseq=Xlag.∗Xproj
+If we know the state lag within sequence, $Δt$ (e.g. the time lag give rise to the strongest sequenceness), or have it a priori, we can obtain the time-lagged matrix, $X_{lag}$:
 
-Each element in Xseq indicates the strength of a (pairwise) sequence at a given moment in time. At this stage, Xseq is a matrix with number of time points as rows (same as Xorig), and with number of pairwise sequences (e.g. A->B; B->C; etc.) as columns. Now on this matrix, Xseq, we can either look for sequences of sequences (see Appendix 3), or sum over columns (i.e. average over pairwise sequence events), and obtain a score at each time point reflecting how likely it is to be a sequence member (Figure 5a).
+$$
+X_{lag}=X_{orig}(t−Δt)
+$$
+
+Then, we obtain state space with sequence event as states by element-wise multiply $X_{proj}$ and $X_{lag}$:
+
+$$
+X_{seq}=X_{lag}.∗X_{proj}
+$$
+
+Each element in $X_{seq}$ indicates the strength of a (pairwise) sequence at a given moment in time. At this stage, $X_{seq}$ is a matrix with number of time points as rows (same as $X_{orig}$), and with number of pairwise sequences (e.g. A->B; B->C; etc.) as columns. Now on this matrix, $X_{seq}$, we can either look for sequences of sequences (see Appendix 3), or sum over columns (i.e. average over pairwise sequence events), and obtain a score at each time point reflecting how likely it is to be a sequence member (Figure 5a).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66917/elife-66917-fig5-v2.jpg)
 
@@ -252,11 +326,11 @@ We can use this score to construct averages of other variables that might co-var
 
 This approach is similar to spike-triggered averaging (Sirota et al., 2008; Buzsáki et al., 1983). Applying this to real MEG data during rest, we can detect increased hippocampal power at 120–150 Hz, at replay onset (Figure 5b, c). Source reconstruction in the current analysis was performed using linearly constrained minimum variance (LCMV) beamforming, a common method for MEG source localization. This is known to suffer from distal correlated sources (Hincapié et al., 2017). A better method may be Empirical Bayesian Beamfomer for accommodating correlated neural source as a priori (O'Neill, 2021).
 
-## TDLM for rodent replay
+### TDLM for rodent replay
 
 So far, we have introduced TDLM in the context of analysing human MEG data. Relatedly, its application on human EEG data was also explored (Appendix 4: Apply TDLM to human whole-brain EEG data). Historically, replay-like phenomena have been predominantly studied in rodents with electrophysiology recordings in the hippocampal formation (Davidson et al., 2009; Grosmark and Buzsáki, 2016; Tingley and Peyrache, 2020). This raises interesting questions: how does TDLM compare to the existing rodent replay methods, can TDLM be applied to spiking data for detecting rodent replays, and what are the pros and cons? In this section, we address these questions.
 
-## Generality of graph- vs. line-based replay methods
+### Generality of graph- vs. line-based replay methods
 
 Given that TDLM works on the decoded state space, rather than sensor (with analogy to cell) level, we compared TDLM to rodent methods that work on the posterior decoded position (i.e., state) space, normally referred to as Bayesian-based methods (Tingley and Peyrache, 2020). (Note that these methods are typically Bayesian in how position is decoded from spikes [Zhang et al., 1998] but not in how replay is measured from decoded position.) Two commonly used methods are Radon transform (Davidson et al., 2009) and linear weighted correlation (Grosmark and Buzsáki, 2016).
 
@@ -272,17 +346,23 @@ Both methods are applied to decoded positions, where they are sorted based on th
 
 This is a key difference between TDLM and these popular existing techniques. To reiterate, the latter rely on a continuous parametric embedding of behavioural states and time. TDLM is fundamentally different as it works on a graph and examines the statistical likelihood of some transitions happening more than others. This is therefore a more general approach that can be used for sequences drawn from any graph (e.g. 2D maze, Figure 6d), not just graphs with simple embeddings (like a linear track). For example, in a non-spatial decision-making task (Kurth-Nelson et al., 2016), all states lead to two different states and themselves can be arrived at from two other different states (Figure 6e). Existing ‘line search’ methods will not work because there is no linear relationship between time and states (Figure 6f).
 
-## Multi-scale TDLM
+### Multi-scale TDLM
 
 While continuous spaces can be analysed in TDLM by simply chunking the space into discrete states, TDLM in its original form may potentially be less sensitive for such analyses than techniques with built-in assumptions about the spatial layout of the state space, such as the linear relationship between time and reactivated states (Appendix 5 ‘Less sensitivity of TDLM to skipping sequences’). In essence, because TDLM works on a graph, it has no information about the Euclidean nature of the state space, while techniques that make assumptions about the linear relationship between space and time benefit from these assumptions. For example, detecting state 1 then state 5 then state 10 counts as replay in these techniques, but not in TDLM.
 
 However, TDLM can be extended to address this problem. For continuous state spaces, we first need to decide how to best discretize the space. If we choose a large scale, we will miss replays that occur predominantly within a spatial bin. If we choose a small scale, we will miss transitions that jump spatial bins. A simple solution is to apply TDLM at multiple different scales and take an (variance-weighted) average of the sequenceness measures across different scales. For example, when measuring replay at the same speed, we can average events that travel 5 cm in 10 ms together with events that travel 10 cm in 20 ms.
 
-Specifically, to perform multi-scale TDLM, we discretize position bins at multiple widths. This generates rate maps at multiple scales (e.g. 5 cm, 10 cm, 20 cm, 40 cm), and hence a multi-scale state space. For each replay speed of interest, we apply TDLM separately at each scale, and then take a variance-weighted average of replay estimates over all scales.(15)βM=∑i=1nβi/Vi∑i=1n1/Viwhere βi is the sequence strength of given speed (i.e. state-to-state lag) measured at scale i, Vi is the variance of its βi estimator, and n is the number of scales. In the end, statistical testing is performed on the precision weighted averaged sequence strength, βM, in the same way as we do in the original TDLM.
+Specifically, to perform multi-scale TDLM, we discretize position bins at multiple widths. This generates rate maps at multiple scales (e.g. 5 cm, 10 cm, 20 cm, 40 cm), and hence a multi-scale state space. For each replay speed of interest, we apply TDLM separately at each scale, and then take a variance-weighted average of replay estimates over all scales.
+
+$$
+\beta_{M}=\frac{\sumi=1n\beta_{i}/V_{i}}{\sumi=1n1/V_{i}}
+$$
+
+where $\beta_{i}$ is the sequence strength of given speed (i.e. state-to-state lag) measured at scale $i$, $V_{i}$ is the variance of its $\beta_{i}$ estimator, and $n$ is the number of scales. In the end, statistical testing is performed on the precision weighted averaged sequence strength, $\beta_{M}$, in the same way as we do in the original TDLM.
 
 It is easy to see why this addresses the potential concerns raised above as some scales will capture the 1 -> 2 -> 3 transitions, whilst others will capture the 1 -> 10 -> 20 transitions: because the underlying space is continuous, we can average results of the same replay speed together, and this will reinstate the Euclidean assumptions.
 
-## Applying multi-scale TDLM to real rodent data (place cells in CA1)
+### Applying multi-scale TDLM to real rodent data (place cells in CA1)
 
 We demonstrate the applicability of multi-scale TDLM by analysing CA1 place cell spiking data from Ólafsdóttir et al., 2016. In Ólafsdóttir et al., 2016, rats ran multiple laps on a 600 cm Z maze and were then placed in a rest enclosure for 1.5 hr (Figure 7a). The Z maze consists of three tracks, with its ends and corners baited with sweetened rice to encourage running from one end to the other. The animal’s running trajectory was linearized, dwell time and spikes were binned into 2 cm bins and smoothed with a Gaussian kernel (σ = 5 bins). We generated rate maps separately for inbound (track 1 -> track 2 -> track 3) and outbound (track 3 -> track 2 -> track 1) running (see details in section ‘Rodent replay dataset’).
 
@@ -300,23 +380,27 @@ Note that TDLM is applied directly to the concatenated rather than individual r
 
 During the whole sleep period, TDLM identified a significant forward sequence for the outbound map with a wide speed range around from 1 to 10 m/s (Figure 7d, left panel), consistent with recent findings from Denovellis, 2020 on varying replay speed (similar results were obtained for inbound map, not shown here for simplicity). In our analysis, the fastest speed is up to 10 m/s, which is around 20× faster than its free running speed, representing approximately half a track-arm in a typical replay event, consistent with previous work (Lee and Wilson, 2002; Davidson et al., 2009; Karlsson and Frank, 2009; Nádasdy et al., 1999).
 
-## Second-order inferences
+### Second-order inferences
 
 As pointed out by van der Meer et al., 2020, there are two types of statistical questions: a ‘first-order’ sequence question, which concerns whether an observed sequenceness is different from random (i.e. do replays exist?); and a ‘second-order’ question, which requires a comparison of sequenceness across conditions (i.e. do replays differ?). Because it is embedded in a linear regression framework, TDLM is ideally placed to address such questions. There are two ways of asking such questions in linear modelling: contrasts and interactions. We explain them with examples here.
 
-## Linear contrasts
+### Linear contrasts
 
 After fitting a regression model, resulting in coefficients for different regressors, we can test hypotheses about these coefficients by constructing linear combinations of the coefficients that would be zero under the null hypothesis. For example, if we want to test whether effect A is greater than effect B, then we can compute the linear contrast A – B (which would be zero under the null hypothesis) and perform statistics on this new measure. If we want to test whether replay increases linearly over five conditions [A, B, C, D, E], we can compute the linear contrast −2*A – B + 0*C + D + 2*E (which would be zero under the null hypothesis) and perform statistics on this new measure. Statistics (within or across animals) can operate with these contrasts in exactly the same way as with the original coefficients from the linear model. Here, we demonstrate this by showing in our example dataset that there was a greater preponderance for forward than backward replay. We construct the contrast (forwards – backwards) and test it against zero using a multiple-comparison-controlled permutation test (Figure 7d, right panel, pink line). By constructing a different contrast (forwards + backwards), we can also show that the total replay strength across both types of replays was significant (Figure 7d, right panel, green line).
 
-## Interactions
+### Interactions
 
-A second method for performing second-order tests is to introduce them into the linear regression as interaction terms, and then perform inference on the regression weights for these interactions. This means changing Equation 2 to include new regressors. For example, if interested in how reactivations change over time, one could build new regressors (Xtimek(t)), obtained by element-wise multiplying the state regressor, e.g. Xk(t) with time indices (Xtimek(t)=Xk(t).∗time). Now the first-level GLM is constructed as (omitting residual term ε, same as Equation 2):(16)Xj(t+Δt)=∑k=1nXk(t)βkj+Xtimek(t)βtkj
+A second method for performing second-order tests is to introduce them into the linear regression as interaction terms, and then perform inference on the regression weights for these interactions. This means changing Equation 2 to include new regressors. For example, if interested in how reactivations change over time, one could build new regressors ($Xtime_{k}(t)$), obtained by element-wise multiplying the state regressor, e.g. $X_{k}(t)$ with time indices ($Xtime_{k}(t)=X_{k}(t).∗time$). Now the first-level GLM is constructed as (omitting residual term ε, same as Equation 2):
 
-Example regressors in the design matrix can be seen in Figure 7e. The first regressor, Xk(t), is one of the state reactivation regressors used in standard TDLM. The second regressor, Xtimek(t), is the same as Xk(t) multiplied by time. (There are k regressors of each form in regressor matrix.) Here, we chose to demean the time regressor before the interaction, so the early half of the regressor is negative and the late half is positive. This has no effect on the regression coefficients of the interaction term, but, by rendering the interaction approximately orthogonal to Xk(t), it makes it possible to estimate the main effect and the interaction in the same regression.
+$$
+X_{j}(t+Δt)=\sumk=1nX_{k}(t)\beta_{kj}+Xtime_{k}(t)\betat_{kj}
+$$
+
+Example regressors in the design matrix can be seen in Figure 7e. The first regressor, $X_{k}(t)$, is one of the state reactivation regressors used in standard TDLM. The second regressor, $Xtime_{k}(t)$, is the same as $X_{k}(t)$ multiplied by time. (There are k regressors of each form in regressor matrix.) Here, we chose to demean the time regressor before the interaction, so the early half of the regressor is negative and the late half is positive. This has no effect on the regression coefficients of the interaction term, but, by rendering the interaction approximately orthogonal to $X_{k}(t)$, it makes it possible to estimate the main effect and the interaction in the same regression.
 
 Note that the interaction regressor is orthogonal to the state reactivation regressor, so it will have no effect on the first-order regression terms. If we include such regressors for all states, then we can get two measures for each replay direction (sequence effect and time effect). The first tells us the average amount of replay throughout the sleep period (first order). The second tells us whether replay increases or decreases as time progresses through the sleep period (second order).
 
-## Orthogonal tests in regions of interest
+### Orthogonal tests in regions of interest
 
 When examining forward–backward replay above, we did separate inference for each replay speed, and then performed multiple comparison testing using the max-permutation method (see section 'Statistical inference'). We now take the opportunity to introduce another method common in human literature.
 
@@ -330,9 +414,13 @@ For visualization purposes, we have first plotted the estimated strength for eac
 
 **Figure 8.:** (a) Within each scale, strengths of each pairwise forward sequences in the region of interest (ROI) (significant replay speeds, compare with Figure 7d, green shading) are ordered from the start of maze to the end of the maze; alongside that, the mean sequence strength across all of these valid pairwise transitions is plotted (red) in comparison to the mean of all control transitions (grey). This is for visualization purpose only and is included in the red rectangle. (b) The contrast defining a linear change in forward sequenceness across the track (spatial modulation) is shown (red line), both separately for each scale, and average across scales, and compared to permutations. On average, forward replay is stronger at the beginning of the track. (c) Same as panel (b), but this is for the backward sequences. Unlike forward replay, backward replay is stronger at the end of the track. Note that both panels (b) and (c) are about spatial modulation effect, which is orthogonal to overall sequence strength, allowing valid inference. They are therefore included in green boxes. (d) The difference of this spatial modulation effect between forward and backward sequence is also significant. The black dotted lines indicate the 2.5th and 97.5th percentile of the permutation samples. The red solid line indicates the estimate of the true contrast effect.
 
-To formally test the spatial modulation effect, we can use the exact same approach as outlined above in section 'Linear contrasts'. Here, we test a linear increase or decrease across different transitions. We take the linear contrast weight vector, c ([-2,-1,0,1,2] for the largest scale, [-3:3] for the next scale, [-5:5] for the next scale, and [-12:12] for the smallest scale), and multiply these by the beta estimates of the transitions:(17)contrast=cTβ
+To formally test the spatial modulation effect, we can use the exact same approach as outlined above in section 'Linear contrasts'. Here, we test a linear increase or decrease across different transitions. We take the linear contrast weight vector, $c$ ([-2,-1,0,1,2] for the largest scale, [-3:3] for the next scale, [-5:5] for the next scale, and [-12:12] for the smallest scale), and multiply these by the beta estimates of the transitions:
 
-If this new measure, contrast, is different from zero, then there is a linear increase/decrease from one end of the track to the other. Note that this new contrast is no longer biased by the ROI selection as each transition contributed equally to the ROI selection, but we are now comparing between transitions. Inference on this contrast is therefore valid. We have therefore put them in green boxes to match Figure 7f (Figure 8b, c).
+$$
+contrast=c^{T}\beta
+$$
+
+If this new measure, $contrast$, is different from zero, then there is a linear increase/decrease from one end of the track to the other. Note that this new contrast is no longer biased by the ROI selection as each transition contributed equally to the ROI selection, but we are now comparing between transitions. Inference on this contrast is therefore valid. We have therefore put them in green boxes to match Figure 7f (Figure 8b, c).
 
 Within the larger two scales, these contrasts are significantly negative (tested against permutations in exactly the same way as the ‘mean’ contrasts). Since we are still in the linear domain, we can now just average these contrasts across the four scales and get a single measure for spatial modulation of replay. This average measure is significantly negative (Figure 8b). Hence, on average, forward replay is stronger at the beginning of the track.
 
@@ -342,17 +430,17 @@ Notably, extra care needs to be exercised for second-order questions (compared t
 
 Such approaches are not yet common in rodent electrophysiology and may not be practical in some instances. In such cases, it remains important to be vigilant to guard against these biases with TDLM as with other techniques. If these approaches are feasible, the machinery for computing second-order inferences is straightforward in a linear framework like TDLM.
 
-## Generality of TDLM
+### Generality of TDLM
 
 We have now discussed the applicability of TDLM in relation to human MEG, as well as in rodent electrophysiology (with comparisons to standard replay detection methods). A preliminary attempt at detecting replay in human EEG is also shown in Appendix 4. We believe that this establishes TDLM as a domain-general sequence analysis method: TDLM works at the level of decoded state space, rather than the sensor/cell level of the data. It can be applied to a wide range of data types and settings in both humans and rodents, stimulating cross-fertilization across disciplines. It is based on the GLM framework, and this lends it flexibility for regressing out potential confounds while offering an intuitive understanding of the overall approach.
 
 In this section, we discuss the generality of TDLM.
 
-## States
+#### States
 
 TDLM assesses the statistical likelihood of certain transitions on a graph. In its original form, TDLM works on discrete states (i.e. nodes in the graph). Continuous spaces can be incorporated by chunking them into discrete spaces. Furthermore, by averaging the same replay speeds measured at multiple scales of discretization (see section ‘TDLM for rodent replay’), the statistical benefits of an assumption of a Euclidean geometry can be recovered.
 
-## Time length
+#### Time length
 
 The longer the time length, the more accurate the estimates in TDLM. This is because TDLM assesses sequence evidence based on a GLM framework, where time length is the sample size. Higher sample size will lead to more accurate estimates. In the case of rodent analysis, we recommend applying TDLM to aggregated replay events rather than to a single event because this results in (1) more time samples for estimation and (2) more activated states in the analysis time framework. Unlike other techniques which search for a single replay in a single event, this aggregation can be implemented without losing generality as TDLM is able to handle multiple sequences in the same data with respect to different directions, contents, or speeds. Furthermore, by aggregating linearly across all replay events of the same condition, it provides a natural measure for comparing replay strength, speed, and direction across different experimental conditions.
 
@@ -376,15 +464,15 @@ Together, we believe that TDLM opens doors for novel investigations of human co
 
 ## Materials and methods
 
-## Simulating MEG data
+### Simulating MEG data
 
 We simulate the data so as to be akin to human MEG.
 
-## Task data for obtaining state patterns
+#### Task data for obtaining state patterns
 
 We generate ground truth multivariate patterns (over sensors) of states. We then add random Gaussian noise on the ground truth state patterns to form the task data. We train a logistic regression classifier on the task data so as to obtain a decoding model for each of the state patterns. Later we use this decoding model to transform the resting-state data from sensor space (with dimension of time by sensors) to the state space (with dimension of time by states).
 
-## Rest data for detecting sequences
+#### Rest data for detecting sequences
 
 First, to imitate temporal autocorrelations and spatial correlations commonly seen in human neuroimaging data, we generate the rest data using an autoaggressive model with multivariate (over sensors) Gaussian noise and add a dependence among sensors. In some simulations, we also add a rhythmic oscillation (e.g. 10 Hz).
 
@@ -394,13 +482,13 @@ Lastly, we project the rest data to the decoding model of states obtained from t
 
 An example of the MATLAB implementation is called ‘Simulate_Replay’ from the Github link: https://github.com/yunzheliu/TDLM (copy archived at swh:1:rev:015c0e90a14d3786e071345760b97141700d6c85), Liu, 2021b.
 
-## Human replay dataset
+### Human replay dataset
 
-## Task design
+#### Task design
 
 Participants were required to perform a series of tasks with concurrent MEG scanning (see details in Liu et al., 2019). The functional localizer task was performed before the main task and was used to train a sensory code for eight distinct objects. Note that the participants were provided with no structural information at the time of the localizer. These decoding models, trained on the functional localizer task, capture a sensory-level neural representation of stimuli (i.e. stimulus code). Following that, participants were presented with the stimuli and were required to unscramble the ‘visual sequence’ into a correct order, that is, the ‘unscrambled sequence’ based on a structural template they had learned the day before. After that, participants were given a rest for 5 min. At the end, stimuli were presented again in random order, and participants were asked to identify the true sequence identity and structural position of the stimuli. Data in this session are used to train a structural code (position and sequence) for the objects.
 
-## MEG data acquisition, preprocessing, and source reconstruction
+#### MEG data acquisition, preprocessing, and source reconstruction
 
 We follow the same procedure that has been reported in Liu et al., 2019. We have copied it here for references.
 
@@ -408,17 +496,17 @@ We follow the same procedure that has been reported in Liu et al., 2019. We have
 
 All source reconstruction was performed in SPM12 and FieldTrip. Forward models were generated on the basis of a single shell using superposition of basis functions that approximately corresponded to the plane tangential to the MEG sensor array. LCMV beamforming (Van Veen et al., 1997) was used to reconstruct the epoched MEG data to a grid in MNI space, sampled with a grid step of 5 mm. The sensor covariance matrix for beamforming was estimated using data in either broadband power across all frequencies or restricted to ripple frequency (120–150 Hz). The baseline activity was the mean neural activity averaged over −100 ms to −50 ms relative to sequence onset. All non-artefactual trials were baseline corrected at source level. We looked at the main effect of the initialization of sequence. Non-parametric permutation tests were performed on the volume of interest to compute the multiple comparison (whole-brain corrected) p-values of clusters above 10 voxels, with the null distribution for this cluster size being computed using permutations (n = 5000 permutations)'.
 
-## Rodent replay dataset
+### Rodent replay dataset
 
-## Data description
+#### Data description
 
 This data is from Ólafsdóttir et al., 2016. We analysed one full recording session (track running for generating rate map, post-running resting for replay detection) from Rat 2192.
 
-## Task description
+#### Task description
 
 In Ólafsdóttir et al., 2016, rats ran multiple laps on a Z maze and were then placed in a rest enclosure. The two parallel sections of the Z (190 cm each) were connected by a diagonal section (220 cm). Animals were pretrained to run on the track. At the recording session, rats were placed at one end of the Z-track. The ends and corners of the track were baited with sweetened rice to encourage running from one end to the other. In each session, rats completed 20 full laps (30–45 min). Following the track session, rats were placed in the rest enclosure for 1.5 hr.
 
-## Preprocessing
+#### Preprocessing
 
 Following Ólafsdóttir et al., 2016, when generating rate maps we excluded data from both the ends and corners because the animals regularly performed non-perambulatory behaviours there. Periods when running speed was less than 3 cm/s were also excluded. Running trajectories were then linearized, dwell time and spikes were binned into 2 cm bins and smoothed with a Gaussian kernel (σ = 5 bins). We generated rate maps separately for inbound (track 1 -> track 2 -> track 3) and outbound (track 3 -> track 2 -> track 1) running.
 
@@ -426,10 +514,10 @@ As in Ólafsdóttir et al., 2016, cells recorded in CA1 were classified as place
 
 We analysed data from one full recording session (track running for generating rate map, post-running resting for replay detection) of Rat 2192 reported in Ólafsdóttir et al., 2016. Following the procedure described above, we have identified 58 place cells and 1183 putative replay events. Replay analysis was then performed on the putative replay events, separately for inbound and outbound rate maps.
 
-## Code availability
+### Code availability
 
 Source code of TDLM can be found at https://github.com/yunzheliu/TDLM.
 
-## Data availability
+### Data availability
 
 Data are also available at https://github.com/yunzheliu/TDLM.

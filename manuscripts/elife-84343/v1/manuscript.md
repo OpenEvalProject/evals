@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04kwvgz42 Department of Anthropology, Hacettepe University Ankara Turkey
+1. Department of Anthropology, Hacettepe University Ankara Turkey ([ROR:04kwvgz42](https://ror.org/04kwvgz42))
 
 † Corresponding author
 

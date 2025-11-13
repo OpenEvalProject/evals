@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03efmqc40 Department of Physics and Center for Biological Physics, Arizona State University Tempe United States
-2. https://ror.org/00kx1jb78 Institute for Genomics and Evolutionary Medicine, Temple University Philadelphia United States
-3. https://ror.org/00kx1jb78 Department of Biology, Temple University Philadelphia United States
-4. https://ror.org/02ma4wv74 Center for Genomic Medicine Research, King Abdulaziz University Jeddah Saudi Arabia
+1. Department of Physics and Center for Biological Physics, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+2. Institute for Genomics and Evolutionary Medicine, Temple University Philadelphia United States ([ROR:00kx1jb78](https://ror.org/00kx1jb78))
+3. Department of Biology, Temple University Philadelphia United States ([ROR:00kx1jb78](https://ror.org/00kx1jb78))
+4. Center for Genomic Medicine Research, King Abdulaziz University Jeddah Saudi Arabia ([ROR:02ma4wv74](https://ror.org/02ma4wv74))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ With this evolutionary-dynamics unified approach, we aim to answer the following
 
 ## Results and discussion
 
-## Candidate adaptive mutations in the S protein are recognized via EPs
+### Candidate adaptive mutations in the S protein are recognized via EPs
 
 SARS-CoV-2 is part of a family of coronaviruses, many of which infect mainly animals and are less capable of infecting humans (Dicken et al., 2021). Therefore, to identify the most likely mutations responsible for the infection of human hosts (i.e., putative adaptive mutations for humans), we estimated the (neutral) EP scores of mutations found within the S protein (Liu et al., 2016). EP scores of the amino acid variants of the S protein were obtained using a maximum likelihood phylogeny (Kumar et al., 2018) built from 19 orthologous coronavirus sequences. Sequences were selected by examining available non-human sequences with a sequence identity of 70% or above to the human SARS CoV-2’s S protein sequence. This cutoff allows for divergence over evolutionary history such that each amino acid position had ample time to experience purifying selection, whilst limiting ourselves to closely related coronaviruses. (Figure 1A). The likelihood of finding a particular amino acid in the sequence is then determined using a Bayesian framework, with calculations carried out by MEGA X software (Kumar et al., 2018). As apparent in the name, EP scores obtained for the amino acids in the sequence provide information regarding the likelihood of finding them at their position, given the history of the sequence. Amino acid residues receiving low EP scores (<0.05) at a position are less likely to be found in a given position within the sequence because they are non-neutral. Generally, positions with low EP amino acids are far less common than those containing mutations with high EP, a trend also realized in the CoV-2 S protein (Figure 1B).
 
@@ -48,7 +48,7 @@ Of particular interest is an observed evolutionary change where an amino acid wi
 
 Interestingly, most of the CAP residues are at functionally critical sites, including the RBD and the Furin cleavage site (Figure 1C). As mentioned earlier, the RBD plays a key role in initiating the infection of a healthy cell by binding with the host organism’s ACE2 protein. Before ACE2 binding, one chain of the homotrimer comprising the S protein must open to expose the RBD (Kirchdoerfer et al., 2016; Henderson et al., 2020; Hoffmann et al., 2020; Sztain et al., 2021). The Furin cleavage site plays a key role in the opening process as the binding of host cell protease Furin aids in the cleavage of the S protein into two domains: S1 and S2 (Wrobel et al., 2020: 13). Another host cell protease, TMPRSS2, facilitates viral attachment to the surface of target cells upon binding either to sites Arg815/Ser816, or Arg685/Ser686 which overlap with the Furin cleavage site 676–689, further emphasizing the importance of this area (; Fraser et al., 2022). Similar cleavage sites have been found in related coronaviruses, including HKU1 and Middle East respiratory syndrome coronavirus (MERS-CoV), which infects humans (Chan et al., 2008: 1; Millet and Whittaker, 2014; Millet and Whittaker, 2015), and the acquisition of similar cleavage sites is associated with increased pathogenicity in other viruses such as the influenza virus (Steinhauer, 1999). Interestingly, however, CAPs do not display such an overwhelming tendency to occur at well-known critical sites within human proteins studied with similar methods (Ose et al., 2022b), yet mutations at those sites are associated with disease, indicating their critical role in inducing functional change. Therefore, the identified CAPs in the S protein, which are signs of recent evolution, can provide mechanistic insights regarding the molecular adaptation of the virus. In particular, we aimed to analyze how these CAP positions in the S protein modulate the interaction with hACE2 using our protein dynamics-based analysis (Gerek and Ozkan, 2011; Nevin Gerek et al., 2013; Larrimore et al., 2017; Kumar et al., 2015).
 
-## Asymmetry in communications among the network of interactions in spike describes how CAPs regulate the dynamics of the S protein
+### Asymmetry in communications among the network of interactions in spike describes how CAPs regulate the dynamics of the S protein
 
 A mutation at a given amino acid position inevitably not only alters local interactions, but this change cascades through the residue–residue interaction network, which gives rise to a variation in native ensemble dynamics to modulate function (Dror et al., 2012; Labbadia and Morimoto, 2015; Sekhar and Kay, 2019; Campitelli et al., 2020.). Many groups have already examined the conformational dynamics of the S protein using normal mode analysis to explore mutation sites and interactions with different receptors (Zhou et al., 2020; Majumder et al., 2021; Teruel et al., 2021a; Verkhivker, 2022). However, our study will focus mainly on the role of CAPs, of which F486 and Q498 have already been identified through perturbation response scanning (PRS) as potential allosteric sites (Verkhivker, 2022). Thus, we analyze the internal dynamics of the system to understand the functional role of CAPs in S proteins. This analysis allows us to gain a mechanistic understanding of the relationship between CAP mutations and biophysical outcomes (Teruel et al., 2021b). First, we implement the dynamic coupling index (DCI) approach to study long-distance coupling between the CAPs and the hACE2 binding sites emerging from the 3D network of interactions across the S protein system. DCI calculation combines PRS and linear response theory (LRT) to capture the strength of a displacement response for position i upon perturbation of position j, relative to the average fluctuation response of position i to all other positions in the protein. It represents the strength of dynamic coupling between positions i and j upon perturbation to j (Larrimore et al., 2017; Kumar et al., 2015).
 
@@ -64,7 +64,7 @@ Similarly, it is possible that mutations to such residue positions within the S 
 
 Moreover, as a control, we performed the same analysis on the S protein with the RBDs of all chains in the closed configuration. In this case, we observed that the DCIasym of the CAPs residue positions with respect to the hACE2 interface in the other chains yields a largely symmetric distribution about 0 (Figure 2B, green bars). This verifies that the asymmetry in the coupling of CAPs with the exposed binding site interface in pre-fusion configuration results from one of the RBDs opening up and further suggests the allosteric role played by CAPs in locking the S protein in the RBD open state.
 
-## Dynamics analysis shows that rigid sites tend to be more highly conserved than flexible sites
+### Dynamics analysis shows that rigid sites tend to be more highly conserved than flexible sites
 
 CAPs represent important S protein amino acid changes between related coronaviruses across multiple species and the Wuhan-Hu-1 reference sequence (MN908947). Since SARS-CoV-2 first spread to humans, it has continued to mutate and evolve rapidly, particularly regarding the S protein (Amicone et al., 2022; Liu et al., 2022; Tay et al., 2022). Just as mutations leading to the Wuhan strain caused an increase in binding affinity to hACE2, continued evolution in human hosts has resulted in further altered binding affinities as well as different phenotypic outcomes for those infected (Ali et al., 2021; Barton et al., 2021; Ozono et al., 2021).
 
@@ -72,7 +72,7 @@ We explore whether protein dynamics has played a role in the selection of mutati
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig3-v1.jpg)
 
-**Figure 3.:** Residues were sorted into one of five bins based on flexibility. Then, the average number of variants for residues within that bin was calculated. Here, the number of variants is defined as the number of different amino acid varieties found at that site. Mutational data was calculated across approximately 24,000 SARS-CoV-2 S protein sequences from the NCBI Datasets Project (Brister et al., 2015). Residue flexibility, as reported here via %DFI, was computed using PDB id 6vsb from the Protein DataBank (Berman et al., 2000). More rigid residues tend to have fewer variants (r = 0.94).Figure 3—source data 1.Sequence MN90894.3 is used as the wild-type (reference) sequence. For each different variant, residue positions matching the reference sequence are shown in blue, while locations where the residue differs from the reference sequence are shown in yellow. For S protein locations not shown here, all variants presented have the same amino acid type as the reference sequence.
+**Figure 3.:** Residues were sorted into one of five bins based on flexibility. Then, the average number of variants for residues within that bin was calculated. Here, the number of variants is defined as the number of different amino acid varieties found at that site. Mutational data was calculated across approximately 24,000 SARS-CoV-2 S protein sequences from the NCBI Datasets Project (Brister et al., 2015). Residue flexibility, as reported here via %DFI, was computed using PDB id 6vsb from the Protein DataBank (Berman et al., 2000). More rigid residues tend to have fewer variants (r = 0.94).
 
 Continued mutations within human hosts have resulted in a multitude of variants. Indeed, by fitting various molecular clock models to genome sequence data, VOC emergence is punctuated by an episodic period of rapid evolution, with a substitution rate of up to fourfold greater than the background substitution rate (Kumar et al., 2021; Tay et al., 2022). With such an aggressive evolutionary rate, we are finding VOCs to consist of a number of different characteristic mutations, almost all of which are CAPs. Sequence differences between the various VOCs used in this article can be found in Figure 3—source data 1.
 
@@ -82,7 +82,7 @@ To explore the dynamic effects of the evolution of the spike in humans, we exami
 
 **Figure 4.:** (A) DCIasym with low evolutionary probability (EP) characteristic mutation sites of Delta or Omicron strains in the closed chains and the binding interface of receptor-binding domain (RBD) in the open chain. Delta displays a second peak closer to zero, suggesting that Delta mutation sites (M = –0.98, SD = 0.80) have less allosteric control over the hACE2 binding sites than Omicron mutation sites (M = –1.74, SD = 1.00) (p<0.001). However, both sets of sites have far more control over hACE2 binding sites than expected, based on a random control group (M = 0.03, SD = 0.85) (p<0.001). (B) S protein structure showing binding interface sites (transparent gray), Delta mutation sites (magenta), Omicron mutation sites (cyan), and sites mutated in both Omicron and Delta (blue).
 
-## Experimental results motivate the use of EpiScore within the SARS-CoV-2 S protein
+### Experimental results motivate the use of EpiScore within the SARS-CoV-2 S protein
 
 The fact that the identified CAPs in the reference protein and the more recently evolved CAPs of Delta and Omicron variants both show a high degree of control over the functional sites begs the question: what is the complex interaction between these previous and new CAP sites? Motivated by this concept, we explore the interplay of mutational pairs to understand the effects of the specific amino acid backgrounds associated with these two predominant variants. Some CAP sites in Delta and Omicron have already been considered adaptive (Kemp et al., 2021; Kistler et al., 2022; Maher et al., 2022; Neher, 2022).
 
@@ -96,25 +96,53 @@ To computationally capture and interpret the pairwise effects of mutations, we h
 
 Many studies have confirmed epistasis between residues within the S protein (Moulana et al., 2022; Starr et al., 2022a; Moulana et al., 2023; Witte et al., 2023). These epistatic residues can have various effects on hACE2 or antibody binding. Within SARS-CoV-2, here we calculate the EpiScore (Figure 5B) of a set of mutation pairs used by Moulana et al., 2022 and compare our results to quantified epistatic effects determined by the experimental hACE2 binding affinity of ‘first-order’ single mutation variants compared to ‘second-order’ mutation pairs. Our EpiScore results and the experimentally determined epistasis both captured highly epistatic behavior among residues 493, 496, 498, 501, and 505, as well as a lack of epistatic behavior for residues 339, 371, 373, and 375; however, EpiScore generally showed higher epistasis values than experiment for residues 417, 440, 446, 477, 478, and 484.
 
-## EpiScore highlights the epistatic relationship between the recent adaptive mutations in VOCs and the CAPs of the Wuhan reference
+### EpiScore highlights the epistatic relationship between the recent adaptive mutations in VOCs and the CAPs of the Wuhan reference
 
 Seeking further to understand the role of epistasis within S protein variants, we explored the possibility of epistatic relationships between the CAPs of the Wuhan variant and the new CAPs in VOCs. Thus, we computed the EpiScore of these CAP positions in the closed RBDs (i.e., chains B and C) with respect to functional hACE2 binding interface sites of the open RBD chain (chain A) (Figure 5B) and obtained EpiScore distributions.
 
 To contrast these variants, Omicron (Figure 6, cyan) shows a high proportion of additive mutations compared to the Delta variant (Figure 6, magenta), with a peak centered on 1. The comparatively more pathogenic Delta variant exhibited many non-additive mutations with EpiScores below one. This again suggests that the cross-communication between the open and closed chain of the S protein is important for regulating the function. Four out of seven low EP Delta mutation sites used in this analysis often resulted in EpiScores below 1. Each of those is found in the N-terminal domain (NTD) on or near the N3 loop and is implicated in antibody escape in recent studies (Chi et al., 2020; Weisblum et al., 2020; Harvey et al., 2021; Klinakis et al., 2021; Cantoni et al., 2022). The low EpiScores of NTD mutations suggest that they dampen the control of Wuhan variant CAPs over the hACE2 binding sites in addition to their effects on antibody binding. It is possible that what the Delta variant gained in transmission rate also came with being more harmfully pathogenic due in part to negatively epistatic interactions. In contrast, the mutations leading to the development of the Omicron strain were additive with respect to Wuhan variant CAPs, possibly leading to a lower pathogenicity and higher effective immune escape, resulting in an overall higher transmission rate. Another possible explanation for the higher transmission rate of Omicron comes from a different normal mode analysis study, which found that despite reduced binding affinity with hACE2, Omicron showed increased occupancy of the open state compared to the closed state, which would increase chances of interaction with hACE2 (Teruel et al., 2021b). It is worth noting that other variants contain NTD mutations which result in low EpiScores; however, the proportion of these mutations within the set is considerably less than in Delta (Figure 6—figure supplement 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig6-v1.jpg)
+
+**Figure 6.:** Here, i = low evolutionary probability (EP) Delta mutation sites (magenta), low EP Omicron mutation sites (cyan), and a random selection of sites (gray), j = low EP sites in the Wuhan variant, and k = the binding interface of the open chain. EpiScores using sites of either variant (Delta: M = 0.70, SD = 0.50, Omicron M = 0.86, SD = 0.46) are significantly different (p<0.001) from a set of EpiScores using random sites (M = 0.84, SD = 0.41), but the distribution for Delta variants differs much more from the other two. EpiScores for other variants can be found in Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** EpiScores with i = characteristic mutation sites, j = low evolutionary probability (EP) sites, and k = the binding interface of the open chain. EpiScores using variant sites are significantly different (p<0.001) from a set of EpiScores using random sites.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** EpiScores with i = characteristic mutation sites within the NTD, j = low evolutionary probability (EP) sites, and k = the binding interface of the open chain. NTD mutation sites result in markedly lower EpiScores compared to elsewhere (p<0.001).
+
 One of the more notable features of generated EpiScore distributions is the presence of a tail of values upward of 2.0, indicating highly epistatic behavior. Interestingly, these tails are largely due to three different CAPs: 346R, 486F, and 498Q. Those residues are nearby one another within the protein structure and have been reported to play a role in antibody binding, either being known antibody binding sites (346R and 486F) or having received very high antibody accessibility scores (498Q) (Harvey et al., 2021; Raghuvamsi et al., 2021). These observed high EpiScore values also support other studies indicating the epistatic interactions between these CAPs and the mutations of the VOCs within the S protein are crucial for maintaining binding affinity of hACE2 whilst evading immunity (Hong et al., 2022; Starr et al., 2022b).
 
 Inspection of EpiScores of Delta and Omicron potentially adaptive mutation sites with only CAP site 486F (a binding site for both hACE2 and antibodies) (Huang et al., 2020; Ali et al., 2021; Harvey et al., 2021; Raghuvamsi et al., 2021) shows highly epistatic interactions at other hACE2 binding sites (Figure 6). However, within a recent and rapidly spreading subvariant of Omicron, XBB 1.5, we see a mutation of S to P, a rare double nucleotide mutation, at site 486 (preceding Omicron variants included mutation F486S from the original CAP). This new variant has unprecedented immune escape capabilities, resisting neutralizing antibodies almost entirely (Qu et al., 2023). EpiScores of other XBB 1.5-specific mutation sites with 486P are almost entirely greater than 1, showing an even higher degree of epistasis with the binding sites of RBD (Figure 7). These results present a threefold importance for the S486P mutation: not only does this residue alter antibody (i.e., immune escape) and hACE2 binding by directly modifying a binding site, but it may also be responsible for modifying hACE2 binding via epistatic cooperation with other co-occurring mutations.
 
-## Change in flexibility of RBD binding site correlates with experimental binding affinities for Omicron and Omicron XBB variants
+![Figure 7.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig7-v1.jpg)
+
+**Figure 7.:** Here, i = low evolutionary probability (EP) Delta mutation sites (magenta), low EP Omicron mutation sites (cyan), and a random selection of sites (gray), j = site 486, and k = the binding interface of the open chain. CAP and hACE2 and antibody binding site 486 displays epistasis with almost all XBB 1.5 variant sites at almost every hACE2 binding site (M = 1.40, SD = 0.46) and presents a significantly different profile from other variant sites (p<0.01). EpiScores involving 486 for other variants can be found in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** EpiScores with i = characteristic mutation sites, j = site 486, and k = the binding interface of the open chain. CAP and hACE2 and antibody binding site 486 displays epistasis with almost all XBB 1.5 variant sites at almost every hACE2 binding site. EpiScores using variant sites are significantly different (p<.001) from a set of EpiScores using random sites.
+
+### Change in flexibility of RBD binding site correlates with experimental binding affinities for Omicron and Omicron XBB variants
 
 Experimental studies have tracked hACE2 binding for different variants since the virus first spread (Ali et al., 2021; Barton et al., 2021; Ozono et al., 2021; Wu et al., 2022). Within the Omicron variant, for example, characteristic mutations on the RBD are shown to increase the overall binding affinity of the virus to the ACE2 receptor, which is suspected to allow it to spread more easily (Kim et al., 2021). Furthermore, the new Omicron XBB and Omicron XBB 1.5 variants contain additional mutations in the RBD and antibody binding residues, which may further impact their dynamics and interactions with the host.
 
 To gain deeper insights into the impact of dynamics on the binding affinity of hACE2 and antibodies with the recent Omicron XBB variants, we conducted molecular dynamics (MD) simulations. By analyzing the resulting trajectories, we investigated how these mutations influence the flexibility and rigidity of the RBD and antibody binding residues, consequently affecting their binding affinity and potential for immune evasion (Figure 8). To understand the overall flexibility changes, we measured the sum of DFI of the ACE2 binding residues, as well as the sum of DFI of the antibody binding residues, calculated from the MD trajectories and compared them with experimental viral binding (disassociation constants) and immunity evasion antibody IC50 values (Yue et al., 2023).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig8-v1.jpg)
+
+**Figure 8.:** (A) %DFI profile of the variants are plotted in the same panel. The gray shaded areas and dashed lines indicate the ACE2 binding regions, whereas the red dashed lines show the antibody binding residues. (B) The sum of %DFI values of RBD-ACE2 interface residues. The trend of total %DFI with the log of Kd values overlaps with the one seen with the experiments (r = 0.97). (C) The receptor-binding domain (RBD) antibody binding residues are used to calculate the sum of %DFI. The ranking captured with the total %DFI agrees with the log of IC50 values from the experiments.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92063/elife-92063-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Three critical mutations that emerged quickly and were frequently observed in other dominant variants are S477N, T478K, and N501Y. EpiScores of sites 477, 478, and 501 with one another are shown (with k = the binding interface of the open chain). These residues are highly epistatic, producing higher responses than expected when perturbed together. (B) The difference in the dynamic flexibility profiles between the single mutants and the most common variants for the hACE2 binding residues of the receptor-binding domain (RBD). The dynamic flexibility index (DFI) profiles exhibit significantly different flexibility in each background variant, highlighting the critical non-additive interactions of the other mutation in the given background variant. Thus, these three binding affinity-impacting mutations do not contribute only their own effects to the binding interface, there are epistatic interactions with the other mutations in variants of concern (VOCs) that shape the dynamics of the binding interface to modulate binding.
+
 This investigation elucidated the impact of mutations in the RBD and antibody binding residues on the binding affinity of the S protein and immune evasion by modulating their flexibility and rigidity (Figure 8A). The Omicron XBB variant exhibits heightened flexibility in hACE2 and antibody binding residues, reducing infectivity and enhancing immune evasion. Conversely, the Omicron XBB 1.5 variant induces distinct dynamics in these regions, rendering the RBD-ACE2 interface more rigid while increasing flexibility in antibody binding residues. These effects indicate that Omicron XBB 1.5 retains its antibody escape capabilities while regaining ACE2 binding affinity comparable to previous Omicron variants, in accordance with experimental findings (Yue et al., 2023). These findings suggest that mutations in the RBD and antibody binding residues can have complex effects on the dynamics of the protein and, ultimately, on the virus’s ability to infect and evade the host immune system through an alteration of binding site dynamics. However, we do note that the effect of mutations will heavily depend on the genetic background in which they are mutated. The effects of a mutation on a Delta variant protein may differ entirely from the effects of a mutation on an Omicron variant protein (Figure 8—figure supplement 1).
 
-## Conclusion
+### Conclusion
 
 We analyzed the evolutionary trajectory of the CoV-2 S protein in humans to understand the dynamic and epistatic interactions of the mutations defining specific VOCs. We first obtain the phylogenetic tree of the COV-2 S protein and identify the sites of certain recent mutations known as CAPs. CAPs are considered adaptive because mutations rarely tolerated in closely related sequences have suddenly become fixed, implying a degree of functional importance or evolution (Liu et al., 2016). In addition, our earlier work has shown that CAPS can also be compensatory; multiple CAPs may dynamically compensate for one another, changing the dynamic landscape and allowing for different mutations (Ose et al., 2022b). We then explored the mechanistic insights and epistatic relationship between the observed mutations in different VOCs and CAP sites, and, particularly, the relationship between CAP sites and the functionally critical RBD using our dynamic coupling analysis (Kumar et al., 2015).
 
@@ -126,37 +154,75 @@ Long-ranged interactions between different sites within a given protein are crit
 
 ## Methods
 
-## Dynamic flexibility and dynamic coupling
+### Dynamic flexibility and dynamic coupling
 
-The DFI utilizes a PRS technique that combines the elastic network model (ENM) and LRT (Gerek and Ozkan, 2011; Nevin Gerek et al., 2013). In ENM, the protein is considered as a network of beads at Cα positions interacting with each other via a harmonic spring potential. Using LRT, ∆R is calculated as the fluctuation response vector of residue j due to unit force’s F perturbation on residue i, averaged over multiple unit force directions to simulate an isotropic perturbation. (1)[ΔR]3N×1=[H]3N×3N−1[F]3N×1
+The DFI utilizes a PRS technique that combines the elastic network model (ENM) and LRT (Gerek and Ozkan, 2011; Nevin Gerek et al., 2013). In ENM, the protein is considered as a network of beads at Cα positions interacting with each other via a harmonic spring potential. Using LRT, ∆R is calculated as the fluctuation response vector of residue j due to unit force’s F perturbation on residue i, averaged over multiple unit force directions to simulate an isotropic perturbation.
 
-where H is the Hessian, a 3N × 3N matrix that can be constructed from 3-D atomic coordinate information and is composed of the second derivatives of the harmonic potential with respect to the components of the position’s vectors of length 3N. The Hessian inverse in this equation may be replaced with the covariance matrix G obtained from MD simulations as follows: (2)[ΔR]3N×1=[G]3N×3N[F]3N×1
+$$
+[ΔR]_{3N\times1}=[H]_{3N\times3N}^{−1}[F]_{3N\times1}
+$$
 
-MD simulations were used to obtain the DFI profiles of Omicron, Omicron XBB, and Omicron XBB 1.5. In order to obtain DFI, each position in the structure was perturbed sequentially to generate a Perturbation Response Matrix A(3)AN×N=[|ΔR1|1⋯|ΔRN|1⋮⋱⋮|ΔR1|N⋯|ΔRN|N]
+where H is the Hessian, a 3N × 3N matrix that can be constructed from 3-D atomic coordinate information and is composed of the second derivatives of the harmonic potential with respect to the components of the position’s vectors of length 3N. The Hessian inverse in this equation may be replaced with the covariance matrix G obtained from MD simulations as follows:
 
-where ΔRji=∆R2 is the magnitude of fluctuation response at position i due to perturbations at position j. The DFI value of position i is then treated as the displacement response of position i relative to the net displacement response of the entire protein, which is calculated by sequentially perturbing each position in the structure.(4)DFIi=∑j=1NΔRji∑i=1N∑j=1NΔRji
+$$
+[ΔR]_{3N\times1}=[G]_{3N\times3N}[F]_{3N\times1}
+$$
+
+MD simulations were used to obtain the DFI profiles of Omicron, Omicron XBB, and Omicron XBB 1.5. In order to obtain DFI, each position in the structure was perturbed sequentially to generate a Perturbation Response Matrix A
+
+$$
+A_{N\timesN}=[|ΔR^{1}|_{1}⋯|ΔR^{N}|_{1}⋮⋱⋮|ΔR^{1}|_{N}⋯|ΔR^{N}|_{N}]
+$$
+
+where $ΔR^{j}_{i}=\sqrt{\DeltaR^{2}}$ is the magnitude of fluctuation response at position i due to perturbations at position j. The DFI value of position i is then treated as the displacement response of position i relative to the net displacement response of the entire protein, which is calculated by sequentially perturbing each position in the structure.
+
+$$
+DFI_{i}=\frac{\sum_{j=1}^{N}ΔR^{j}_{i}}{\sum_{i=1}^{N}\sum_{j=1}^{N}ΔR^{j}_{i}}
+$$
 
 It is also often useful to quantify position flexibility relative to the flexibility ranges unique to individual structures. To that end, DFI can be presented as a percentile rank, %DFI. All %DFI calculations present in this work used the DFI value of every residue of the full spike structure for ranking. The DFI parameter can be considered a measure of a given amino acid position’s ability to explore its local conformational space.
 
-## Dynamic coupling index
+### Dynamic coupling index
 
-Similar to DFI, the DCI (Larrimore et al., 2017; Kumar et al., 2015) also utilizes PRS with the ENM and LRT. DCI captures the strength of displacement response of a given position i upon perturbation to a single functionally important position (or subset of positions) j, relative to the average fluctuation response of position i when all of the positions within a structure are perturbed. (5)DCIji=∑jNfunctional|ΔRj|i/Nfunctional∑j=1N|ΔRj|i/N
+Similar to DFI, the DCI (Larrimore et al., 2017; Kumar et al., 2015) also utilizes PRS with the ENM and LRT. DCI captures the strength of displacement response of a given position i upon perturbation to a single functionally important position (or subset of positions) j, relative to the average fluctuation response of position i when all of the positions within a structure are perturbed.
 
-When only positional pairs are concerned, this expression reduces to(6)DCIji=ΔRji∑j=1NΔRji/N
+$$
+DCI_{ji}=\frac{\sumjN_{functional}|ΔR^{j}|_{i}/N_{functional}}{\sumj=1N|ΔR^{j}|_{i}/N}
+$$
+
+When only positional pairs are concerned, this expression reduces to
+
+$$
+DCI_{ji}=\frac{ΔR^{j}_{i}}{\sum_{j=1}^{N}ΔR^{j}_{i}/N}
+$$
 
 As such, this parameter represents a measure of the dynamic coupling between i and j upon a perturbation to j. As with DFI, DCIji can also be presented as a percentile-ranked %DCIji.
 
 One of the most important aspects of DCI is that the entire network of interactions is explicitly included in subsequent calculations without the need for dimensionality reduction techniques. If one considers interactions such as communication directionality or dynamic coupling regulation between position pairs as inherent properties of an anisotropic interaction network, it is critical to include the interactions of the entire network to accurately model the effect one residue can have on another.
 
-Here, we present two further extensions of DCI, which allow us to uniquely model coupling directionality and epistatic effects: DCIasym and EpiScore, respectively. Interestingly, we can capture asymmetry between different residues within a protein through DCI, as a coupling in and of itself is asymmetric within an anisotropic network. That is, each amino acid has a set of positions to which it is highly coupled, and this anisotropy in connections gives rise to unique differences in coupling between a given i j pair of amino acids which do not have direct interactions (Figure 2A). DCIasym, then, is simply DCIij (the normalized displacement response of position j upon a perturbation to position i) − DCIji (Equation (7)). Using DCIasym, we can determine a cause–effect relationship between the i j pair in terms of force/signal propagation between these two positions.(7)DCIasym=DCIij−DCIji(8)%DCIasym=%DCIij−%DCIji
+Here, we present two further extensions of DCI, which allow us to uniquely model coupling directionality and epistatic effects: DCIasym and EpiScore, respectively. Interestingly, we can capture asymmetry between different residues within a protein through DCI, as a coupling in and of itself is asymmetric within an anisotropic network. That is, each amino acid has a set of positions to which it is highly coupled, and this anisotropy in connections gives rise to unique differences in coupling between a given i j pair of amino acids which do not have direct interactions (Figure 2A). DCIasym, then, is simply DCIij (the normalized displacement response of position j upon a perturbation to position i) − DCIji (Equation (7)). Using DCIasym, we can determine a cause–effect relationship between the i j pair in terms of force/signal propagation between these two positions.
+
+$$
+DCI_{asym}=DCI_{ij}−DCI_{ji}
+$$
+
+
+
+$$
+%DCI_{asym}=%DCI_{ij}−%DCI_{ji}
+$$
 
 where a positive DCIasym value indicates communication from position i to position j.
 
-EpiScore can identify or describe potential non-additivity in substitution behavior between residue pairs. This metric can capture the differences in a normalized perturbation response to a position k when a force is applied at two residues i and j simultaneously versus the average additive perturbation response when each residue i, j, is perturbed individually (Figure 5A, Equation 9).(9)EpiScore=%DCI[ij]k12(%DCIik+%DCIjk)
+EpiScore can identify or describe potential non-additivity in substitution behavior between residue pairs. This metric can capture the differences in a normalized perturbation response to a position k when a force is applied at two residues i and j simultaneously versus the average additive perturbation response when each residue i, j, is perturbed individually (Figure 5A, Equation 9).
+
+$$
+EpiScore=\frac{%DCI_{[ij]k}}{\frac{1}{2}(%DCI_{ik}+%DCI_{jk})}
+$$
 
 EpiScore values <1 (>1) indicate that the additive perturbations of positions i and j generate a greater (lesser) response at position k than the effect of a simultaneous perturbation. This means that, when treated with a simultaneous perturbation at both sites i and j, the displacement response of k is lower (higher) than the average effect of individual perturbations to i and j, one at a time. As EpiScore is a linear scale, the further the value from 1, the greater the effect described above.
 
-## Molecular dynamics (MD)
+### Molecular dynamics (MD)
 
 The production simulations for the Omicron variants, including Omicron, Omicron XBB, and Omicron XBB 1.5, were performed with the AMBER software package. These variants, each characterized by specific mutations, were modeled based on the template PDB structure 6M0J. The initial protein configurations in the simulations were parameterized using the ff14SB force field (Maier et al., 2015). In order to create an appropriate solvation environment for the proteins, a solvation box was defined around them, maintaining a minimum separation distance of 16 Å from the protein to the box boundaries. This was accomplished by employing the explicit TIP3P water model (Sun and Kollman, 1995), with the addition of sodium and chloride ions to maintain overall charge neutrality.
 
@@ -168,6 +234,6 @@ To ensure the reliability of the simulations and assess their convergence, a con
 
 To calculate DFI, covariance matrix data were computed over different time windows as discussed above. By default, utilizing the Hessian implies a restriction to a harmonic potential, assuming that the data are sampled from a Gaussian distribution. Ergodicity in both simulation time and initial structures sampled in each time interval ensures two key conditions: (i) consistency of potential energy across conformations sampled from the same distribution. (ii) The sampling of different initial conformations while computing covariance matrices at various time windows eliminates global motions and accurately captures equilibrium coordinates. Consequently, the final average DFI profiles are independent of time window size, resulting in consistent results across different time window sizes (e.g., 50 ns vs. 75 ns) and enabling the acquisition of statistically significant DFI values.
 
-## Statistical tests
+### Statistical tests
 
 Pearson correlation coefficients (r) were used to demonstrate linear relationships between continuous variables in Figures 3 and 8. Student’s independent t-tests were performed to demonstrate a significant difference between distributions in Figures 2, 4 and 6 (and Figure 3—source data 1, Figure 6—figure supplements 1 and 2), and Figure 7 (and Figure 7—figure supplement 1), as demonstrated by the p-value.

@@ -33,9 +33,25 @@ These considerations led us to revisit the effect of ER Ca2+ depletion on BiP fu
 
 ## Results
 
-## Divergent effects of ER Ca2+ depletion and ER proteostatic challenge on trafficking of a model BiP substrate protein
+### Divergent effects of ER Ca2+ depletion and ER proteostatic challenge on trafficking of a model BiP substrate protein
 
 To gauge the effect of ER Ca2+ depletion on trafficking of a model BiP substrate protein through the secretory pathway to the plasma membrane, we chose the T-cell antigen receptor α (TCRα) chain. In absence of other components of the TCR complex, the luminal part of this orphan transmembrane protein interacts with BiP as a substrate and is retained in the ER (Suzuki et al., 1991). The reporter consisted of a cleavable, N-terminal ER targeting signal sequence fused to a FLAG-M1 sequence and the ectoplasmic/luminal domain of murine TCRα, followed by a transmembrane domain and a cytosolically localised turquoise fluorescent protein (Tq) (Figure 1A). The transmembrane domain of TCRα contains a motif that leads to rapid ER-associated degradation of the orphan subunit (Bonifacino et al., 1990). Therefore, it was replaced in this reporter by the transmembrane domain of the interleukin-2 receptor α subunit (Bonifacino et al., 1991). We anticipated that reporter transport would expose FLAG-M1 on the cell surface, making it accessible for immunostaining on non-permeabilised cells. Further stringency is imparted by the primary FLAG-M1 antibody that only recognises the epitope on the free N-terminus of TCRα following signal sequence removal. The turquoise fluorescence signal is thus a measure of reporter expression, while the FLAG-M1 signal is specific to the surface-exposed fraction.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of reporter proteins and detection principles. Signal sequence (SS); FLAG-M1 epitope tag; mouse T-cell antigen receptor α chain (mTCRα); transmembrane domain of the interleukin-2 receptor α subunit (TMIL2Rα); monomeric Turquoise (Tq); endoplasmic reticulum (ER); plasma membrane (PM). (B) Flow cytometry analysis of TCRα cell surface exposure. CHO-K1 cell lines stably expressing TCRα or glycosylation-deficient TCRα-N/Q were left untreated or exposed to Thapsigargin (Tg) for 3 hr before analysis. Dot plots of a representative experiment are shown, along vertical and horizontal guides to facilitate comparisons between the different plots. Graph: reporter surface exposure is plotted as the ratio between the FLAG-M1 and Turquoise median fluorescence signal (derived from all the cells scanned, relative to a data point of TCRα in untreated cells arbitrarily set to 1). Bars represent mean ± SD of the median signal from three independent experiments. Figure 1—source data 1. (C) Co-immunoprecipitation (IP) of TCRα reporter proteins with BiP from stable CHO-K1 cell lines (as in ‘B') analysed by SDS-PAGE and immunoblotting. Where indicated cells were treated with Tg for 3 hr prior to lysis. ATP was depleted from samples during lysis to stabilise BiP-substrate interactions except from the sample marked with ‘ATP’ to which additional ATP was added instead. Graph: quantification of TCRα and TCRα-N/Q signals normalised to BiP after IP from untreated (-Tg) and Tg-treated (+Tg) cells and mean of differences ± SD from four independent experiments. A two-tailed, paired, parametric t-test was performed. (D–E) Flow cytometry analysis as in ‘B’. (D) Cells were treated for 3 hr, as indicated, before analysis [untreated (Unt); tunicamycin (Tm); 2-deoxyglucose (2DG)]. Figure 1—source data 2. (E) Cells were exposed to the compounds indicated. After 3 hr, the medium was replaced by medium containing the same compounds without (red) or with additional Tg (blue) for further 3 hr before analysis. Samples 9 and 10 (yellow bars) contained the same amount of Tg before and after medium exchange. PERK inhibitor (PERKi). Bars: mean ± SD from three independent experiments. Figure 1—source data 3. (F) Flow cytometry analysis of a UPR reporter CHO-K1 cell line (S21) carrying a predominantly PERK-controlled CHOP::GFP marker and a predominantly IRE1-controlled XBP1::Turquoise marker. The cells were treated for 6 hr, as indicated. Median fluorescence signals relative to untreated cells are shown. Bars: mean ± SD from three independent experiments. Figure 1—source data 4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Dot plots of a representative flow cytometry analysis of CHO-K1 cells stably expressing TCRα or TCRα-N/Q after treatment with thapsigargin (Tg) and brefeldin A (BFA) for 3 hr, as indicated.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Dot plots of a representative flow cytometry analysis of CHO-K1 cells stably expressing TCRα or TCRα-N/Q after treatment with thapsigargin (Tg) for indicated periods. Graph: reporter surface exposure is given as the ratio between the FLAG-M1 and turquoise median fluorescence signal relative to untreated cells. Bars: mean ± SD bars are shown from three independent experiments. Source data are provided in Supplementary file 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Dot plots of a representative flow cytometry experiment using CHO-K1 CHOP::GFP XBP1::Tq cells (S21). The cells were treated for 6 hr, as indicated. Related to Figure 1F.
 
 Treatment of a CHO-K1 cell line stably expressing the TCRα reporter with thapsigargin (Tg; an agent that causes selective loss of ER Ca2+ by inhibiting the ER Ca2+ pump SERCA; Sagara and Inesi, 1991; Thastrup et al., 1990) led to a conspicuous increase of the FLAG-M1 signal, consistent with retention of the reporter in the ER under normal conditions and its Ca2+ depletion-induced migration to the cell surface (Figure 1B), as previously noted (Suzuki et al., 1991).
 
@@ -49,11 +65,19 @@ Next, we examined whether reporter display on the plasma membrane could also ari
 
 To further address the relationship between proteostatic challenge, ER Ca2+ depletion, and TCRα-N/Q trafficking, we temporally separated the perturbation to ER protein folding from ER Ca2+ depletion. Treatment of cells with Tm before addition of Tg diminished ER Ca2+ depletion-induced reporter exposure on the cell surface (Figure 1E, compare bars 2 and 4). Furthermore, pharmacological inhibition of basal PERK activity, which increases substrate protein load in the ER by dysregulating the influx of newly synthesised proteins (Harding et al., 2012), had a similar effect. The combined application of Tm and PERK inhibitor almost fully blocked subsequent Tg-induced reporter trafficking (Figure 1E, bar 6). Thus, ER stress caused by accumulation of unfolded proteins seems to disfavour reporter export upon Ca2+ release. However, despite their divergent effects on reporter redistribution, both Ca2+-depleting agents and glycosylation inhibitors robustly activated the UPR (Figure 1F and Figure 1—figure supplemnet 3). These findings hint at a qualitative difference between UPR induction caused by proteostatic challenge and ER Ca2+ depletion.
 
-## Ca2+ decelerates BiP’s ATPase cycle
+### Ca2+ decelerates BiP’s ATPase cycle
 
 The dissociation of BiP from model substrates emerges as an intriguing feature that distinguishes ER Ca2+ depletion from manipulations that are known to primarily pose a proteostatic challenge. BiP has been shown to bind Ca2+ (Lamb et al., 2006; Lièvremont et al., 1997; Macer and Koch, 1988), but a designated Ca2+-binding site has not been identified (see below). We therefore set out to investigate the effect of Ca2+ on BiP function using cell-free approaches.
 
 Like typical Hsp70s, BiP consists of an N-terminal nucleotide binding domain (NBD) and C-terminal substrate binding domain (SBD) connected by a hydrophobic linker peptide (Figure 2A). The binding of BiP to its substrates is subject to an ATP binding- and hydrolysis-dependent allosteric chaperone cycle. In the ATP-bound state, the NBD and SBD are docked against each other and the SBD adopts an open conformation, allowing fast exchange of substrates. ATP hydrolysis to ADP causes domain undocking and closure of the SBD, leading to tight substrate binding. Nucleotide exchange resets the cycle and triggers substrate release. Under physiological conditions (i.e. in excess of ATP), ATP hydrolysis is considered the rate-limiting step of the cycle due to BiP’s low intrinsic ATPase activity. However, ER-resident J-domain proteins (JDP) enhance BiP’s ATP hydrolysis rate, whereas nucleotide exchange factors (NEF) stimulate ADP release (Behnke et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic representation of BiP’s chaperone cycle. Unfolded substrate protein (red); nucleotide binding domain (NBD); substrate binding domain (SBD); interdomain linker (grey); orthophosphate (Pi); J-domain protein (JDP); nucleotide exchange factor (NEF). (B) ATP hydrolysis by purified BiP measured with a NADH-based ATPase assay. All samples contained 10 mM MgCl2 and 1 µM BiP. Where indicated CaCl2 (3 mM) and wild-type (J) or mutant J-domain (JQPD) were added (both at 2 µM). Bars: mean ± SD from four independent experiments. ****p<0.0001, 95% CI −0.002605 to −0.001912; two-tailed, unpaired, parametric t-test. Figure 2—source data 1. (C) ATPase activity of BiP measured by detection of ATP hydrolysis product (Pi) accumulation using a malachite green-based assay. All samples contained 3 mM MgCl2 and 2 mM ATP. CaCl2 was titrated (0–1.6 mM). Where indicated samples contained 0.5 mM (red) and 1 mM (blue) ADP. Bold symbols represent mean values ± SD derived from individual data points (staggered dots). Best-fit lines are shown. Figure 2—source data 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** ATP hydrolysis by purified BiP measured with a NADH-based ATPase assay that detects ADP production. All samples contained 10 mM MgCl2. Where indicated CaCl2 (3 mM) and wild-type (J) or mutant J-domain (JQPD) were added. (A) Same as Figure 2B but with higher protein concentrations. Bars: mean ± SD from three independent experiments. (B) Slopes of time-dependent NADH signals (absorbance at 340 nm; A340) of experiments shown in ‘A’ and Figure 2B. The value of the ‘buffer only’ control reaction was subtracted in each experiment. Bars: mean ± SD from at least three independent experiments. Note: the reaction velocity correlates with the BiP concentration.
 
 ATP turnover is a global measure of BiP’s activity and is reflected in rates of ADP production. A kinetic assay detecting oxidation of nicotinamide adenine dinucleotide (NADH) that is enzymatically coupled to ADP production, confirmed BiP’s known low basal ATPase activity and its stimulation by wild-type JDP cofactor, whereas a non-functional version, JDPQPD, carrying a H-to-Q mutation in the conserved HPD motif of the J-domain (Wall et al., 1994), did not stimulate BiP’s ATPase activity (Figure 2B). Reaction velocity scaled with BiP concentration, confirming that the assays were performed under non-saturating conditions (Figure 2—figure supplement 1). Addition of CaCl2 (to reactions containing magnesium; Mg2+) did not significantly alter BiP’s basal ATPase rate but inhibited its JDP-stimulated activity by ∼30% (Figure 2B). The latter may be explained by competition between Ca2+ and Mg2+ for nucleotides — a CaATP pool is more likely to expose its competitive effect on productive MgATP binding to BiP at JDP-accelerated ATPase rates. This is consistent with the requirement of Mg2+ for BiP’s ATPase activity (Kassenbrock and Kelly, 1989).
 
@@ -61,9 +85,17 @@ These observations seemingly disagree with earlier reports of inhibition of BiP�
 
 We therefore turned to an assay that detects orthophosphate production and allows measurement of ATPase activity in the presence of ADP. The basal ATPase activity of BiP (at 3 mM MgCl2 and 2 mM ATP) was only slightly affected when up to 1.6 mM CaCl2 was added (Figure 2C). However, in the presence of 0.5 mM ADP ([ATP]/[ADP]=4) titration of CaCl2 showed a clear inhibitory effect, lowering the average ATPase rate of BiP by ∼44% at the highest [CaCl2]. Ca2+-dependent inhibition was slightly enhanced at 1 mM ADP ([ATP]/[ADP]=2), with a reduction by ∼51%. This was observed in the context of generally lower ATPase rates measured in the presence of ADP, which directly competes with ATP for binding to BiP. The dependence of Ca2+-mediated inhibition on ADP suggested an important effect of Ca2+ on the nucleotide exchange phase of BiP’s ATPase cycle.
 
-## Ca2+ favours binding of ADP over ATP to BiP
+### Ca2+ favours binding of ADP over ATP to BiP
 
 Based on the above observations, we investigated the effect of Ca2+ on ADP release from BiP — the first step of nucleotide exchange (Figure 2A). Complexes between BiP and MABA-ADP (an ADP analogue whose fluorescence intensity is enhanced when bound to Hsp70s; Theyssen et al., 1996), were allowed to form, and the decrease in fluorescence as MABA-ADP dissociated (in the presence of an excess of competing non-fluorescent nucleotides) was measured. In the presence of 3 mM MgCl2, the basal rate of MABA-ADP release from BiP (koff 0.0865 ± 0.0045 s−1) was similar to values reported earlier (Figure 3A; Mayer et al., 2003; Preissler et al., 2017). When added during the dissociation phase, CaCl2 (up to 1 mM) had little effect on MABA-ADP release. However, when included alongside the MABA-ADP (and 3 mM MgCl2) during the loading phase, Ca2+ strongly inhibited release in the subsequent dissociation step (decreasing the koff to 0.0171 ± 0.0004 s−1) (Figure 3A, compare traces 2 and 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative plot of fluorescence against time of pre-formed complexes of MABA-ADP and BiP (each 1.3 µM) challenged at t = 0 with excess of MgATP (1.5 mM) to reveal nucleotide release. All solutions contained 3 mM MgCl2. CaCl2 (1 mM) and Grp170 (1.3 µM) were added at t = −1 hr or t = 0 as indicated. Graph: mean MABA-ADP dissociation rate constants (koff) ± SD from three independent experiments (the curved lines connecting conditions 1 and 4 as well as 3 and 5 emphasise the effect of Ca2+ on the activity of Grp170). Figure 3—source data 1. (B) MABA-ADP dissociation rates from BiP plotted against [CaCl2] of a representative experiment. The experiment was performed as in ‘A’. All samples contained MgCl2 (3 mM). CaCl2 was present at increasing concentrations during nucleotide binding (solution A). The half maximal inhibitory concentration (IC50) of CaCl2 (mean ± SD) was calculated from three independent experiments. **p=0.0036, 95% CI −0.02899 to −0.01086; ****p<0.0001, 95% CI −0.07659 to −0.06222; two-tailed, unpaired, parametric t-test. Figure 3—source data 2. (C) Effect of Ca2+ on affinities of nucleotides for BiP. The dissociation rates of MABA-ADP and MABA-ATP from wildtype or ATPase-impaired T229A mutant BiP were measured as in ‘A’, whereby either MgCl2 or CaCl2 (1 mM) were present throughout the experiment (solutions A and B). The association rate constants (kon) were measured upon addition of MABA-labelled nucleotides to BiP in the presence of either divalent cation. The dissociation constants (KD) were calculated based on the rate constants (koff/kon). Nucleotide-free proteins were used. Bars: mean ± SD. All the data points from ≥3 independent experiments are shown. Source data and a summary of the calculated values are presented in Figure 3—source data 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative plot of fluorescence against time of complexes of MABA-ADP and BiP (each 1.3 µM) formed in the presence of either MgCl2 or CaCl2 (each 3 mM). Excess of MgATP (1.5 mM) without or with Grp170 (1.3 µM) was added at t = 0 to reveal nucleotide release. Graph: mean MABA-ADP dissociation rate constants (koff) ± SD from three independent experiments. Final concentrations after mixing are given. Note: the stronger stimulatory effect of Grp170 compared to Figure 3A may be due to variations in the experimental conditions. Source data are provided in Supplementary file 2.
 
 Importantly, titrating CaCl2 during MABA-ADP binding to BiP (in the presence of 3 mM MgCl2) yielded a half maximal inhibitory concentration (IC50) of 82.3 ± 16.4 µM (Figure 3B). This value fits well into the estimated range of physiological free Ca2+ fluctuations in the ER (from >100 µM to low micromolar concentrations) and suggests that this effect could indeed be relevant to BiP function in vivo.
 
@@ -73,13 +105,13 @@ To explore the affinities of BiP for nucleotides in the presence of Mg2+ or Ca2+
 
 It has been proposed, based on differential scanning and isothermal titration calorimetry data, that Ca2+ and Mg2+ bind cooperatively with ADP or ATP to BiP (each in a 1:1 stoichiometry) and that both cations occupy the same or overlapping sites in the NBD (Lamb et al., 2006). Our findings agree with these conclusions and suggest that Ca2+ and Mg2+ compete for cooperative binding with either nucleotide to BiP. Moreover, the nucleotide release experiments presented here indicate that Ca2+’s effect is played out during BiP•nucleotide complex formation rather than by cation swap on existing BiP•nucleotide complexes. In the presence of large excess of Mg2+ and ATP, productive binding of MgATP to Hsp70s is fast and does not limit the rate of re-entering another round of ATP hydrolysis. However, our observations suggest that in the presence of competing ADP and Ca2+, cooperative binding of Ca2+ with ADP extends the ADP-bound state of BiP during futile ADP-to-ADP exchange, attenuating the chaperone cycle. Increased levels of CaATP, which will also compete with and bind more slowly to BiP than MgATP (Figure 3C), may further potentiate BiP exchanging MgADP for CaADP . Thus, at expected physiological ATP:ADP ratios in the ER, Ca2+ has a substantial impact on the kinetics of BiP’s ATPase cycle and stands to influence its chaperone activity.
 
-## Ca2+ stabilises interactions between BiP and substrates
+### Ca2+ stabilises interactions between BiP and substrates
 
 The rate of ADP-to-ATP exchange limits the kinetics with which BiP dissociates from its substrates (Figure 2A). This implies that non-productive ADP exchange cycles, favoured by Ca2+, might also affect BiP-substrate interactions. We used Bio-Layer interferometry (BLI) to monitor the JDP-mediated binding of BiP to immobilised substrate on the surface of a sensor. This approach tracks transient BiP-substrate interactions in real-time (Preissler et al., 2017). A biotinylated J-domain (from ERdJ6) was co-immobilised together with a substrate peptide (P15; Misselwitz et al., 1998) on streptavidin-coated BLI sensors (Figure 4A). These were then transferred to solutions containing BiP to detect its association, followed by introduction into solutions without BiP to detect its dissociation. The large number and heterogeneity of potential BiP binding sites on protein-coated sensors provides a good means to study the substrate binding characteristics of BiP (Preissler et al., 2017). Fast recruitment of BiP was observed in the presence of ATP and Mg2+ (Figure 4A, traces 1–5). This interaction was dependent on J-domain-stimulated ATP hydrolysis, as the BiP binding signal was weak in the presence of a non-functional J-domain (JQPD) (Figure 4A, trace six and Preissler et al., 2017). Although slightly slower, BiP recruitment was also efficient in the presence of Ca2+ ([MgCl2]/[CaCl2]=3), suggesting that Ca2+ competes only weakly with Mg2+ under these conditions (Figure 4A, trace 2); consistent with slower cooperative binding of CaATP to BiP, compared to MgATP, and the absence of an allosteric effect of Ca2+ on ATP binding- and hydrolysis-dependent substrate interactions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig4-v2.jpg)
 
-**Figure 4.:** 2+ affects ATP-dependent dissociation of substrates from BiP.(A) A representative plot of the Bio-Layer interferometry (BLI) signal against time. The individual steps of the experiment (I-VII) are indicated: following an initial equilibration step (I) biotinylated wild-type or QPD mutant J-domain protein was immobilised corresponding to an interference signal difference of ∼0.4 nm (II). After a wash step (III) the sensors were saturated with biotinylated P15 BiP substrate peptide (IV). After a stable baseline signal was established (V) the sensors were transferred into solutions containing BiP to measure association in the presence of ATP (VI). Dissociation of BiP from the sensor was measured in protein-free solutions containing either ADP or ATP (VII). The composition of solutions in steps VI and VII as well as the concentrations of the variable components are indicated. (A) MgCl2 and/or CaCl2 were present where indicated. Dashed lines represent single exponential fit curves. Graph: mean dissociation rate constants ± SD from three independent experiments. Figure 4—source data 1. (B) Same as ‘A’ but with identical solutions for all sensors in step VI and varying solution compositions in step VII. In the additional step (VIII) the sensors were introduced into solutions containing ATP and MgCl2. ****p<0.0001, 95% CI −0.00198822 to −0.00174311, two-tailed, unpaired, parametric t-test. Figure 4—source data 2. (C) Same as ‘B’ (reactions 3 and 4) with Grp170 present in step VII where indicated. Figure 4—source data 3.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.Figure 4—source data 3.Figure 4C.
+**Figure 4.:** (A) A representative plot of the Bio-Layer interferometry (BLI) signal against time. The individual steps of the experiment (I-VII) are indicated: following an initial equilibration step (I) biotinylated wild-type or QPD mutant J-domain protein was immobilised corresponding to an interference signal difference of ∼0.4 nm (II). After a wash step (III) the sensors were saturated with biotinylated P15 BiP substrate peptide (IV). After a stable baseline signal was established (V) the sensors were transferred into solutions containing BiP to measure association in the presence of ATP (VI). Dissociation of BiP from the sensor was measured in protein-free solutions containing either ADP or ATP (VII). The composition of solutions in steps VI and VII as well as the concentrations of the variable components are indicated. (A) MgCl2 and/or CaCl2 were present where indicated. Dashed lines represent single exponential fit curves. Graph: mean dissociation rate constants ± SD from three independent experiments. Figure 4—source data 1. (B) Same as ‘A’ but with identical solutions for all sensors in step VI and varying solution compositions in step VII. In the additional step (VIII) the sensors were introduced into solutions containing ATP and MgCl2. ****p<0.0001, 95% CI −0.00198822 to −0.00174311, two-tailed, unpaired, parametric t-test. Figure 4—source data 2. (C) Same as ‘B’ (reactions 3 and 4) with Grp170 present in step VII where indicated. Figure 4—source data 3.
 
 BiP molecules bound to the sensor via high-affinity substrate interactions are, by definition, in a post-hydrolysis state — either ADP-bound or nucleotide-free (apo). Thus, BiP dissociation is subordinate to nucleotide exchange events and is accelerated by ATP binding. Accordingly, in Mg2+-containing solutions, BiP dissociation was slow in the presence of ADP and fast in the presence of ATP. When present in the dissociation phase, the combination of Mg2+ and Ca2+ ([MgCl2]/[CaCl2]=3) did not affect the rate of ATP-induced BiP dissociation from sensors (Figure 4A, trace 3). Dissociation of BiP was also fast in a solution containing ATP and Ca2+ as the only divalent cation, indicating that CaATP is able to allosterically trigger BiP dissociation from its substrates (Figure 4A, trace 5). Given that Ca2+ slows down the binding of ATP to BiP (Figure 3C), it seemed surprising that the average dissociation rate was slightly higher compared to MgATP-induced BiP dissociation. This finding might be explained by poor hydrolysis of CaATP, countering the contribution of ATP-hydrolysis-dependent re-establishment of a stable BiP•substrate complex to the BLI signal arising in the presence of the hydrolysable MgATP.
 
@@ -89,7 +121,7 @@ To dissect this further, BiP•substrate complexes were assembled on J-domain- a
 
 These observations suggest that changes in [Ca2+] (within the physiological range) regulate BiP’s chaperone activity by modulating the kinetics of productive nucleotide exchange, and thus the rates of substrate release and entry into the next ATPase cycle. These findings propose a mechanism for the decline in BiP-substrate interactions observed upon ER Ca2+ depletion. All other things being equal, at high [Ca2+]ER (resting state) substrate dissociation is slower. Release of Ca2+ from the ER accelerates ATP binding and substrate dissociation, whereas the rate at which ATP hydrolysis-dependent substrate interactions are formed remains largely unaffected. The acceleration of productive nucleotide exchange and substrate dissociation, relative to substrate binding, partitions BiP from its substrates.
 
-## Selective responsiveness of ER-localised Hsp70s to Ca2+
+### Selective responsiveness of ER-localised Hsp70s to Ca2+
 
 Ca2+ excursions within the range shown here to affect BiP activity are unique to the ER. Therefore, we deemed it of interest to determine if regulation by Ca2+ is a feature selective to ER-localised Hsp70 (i.e. BiP) or common to all Hsp70s, regardless of the Ca2+ environment in which they operate. To this end, we produced and purified bacterial DnaK, the Drosophila melanogaster homologue of BiP, as well as human cytosolic Hsp70 (HSPA1A) and Hsc70 (HSPA8).
 
@@ -97,13 +129,216 @@ As before, MABA-ADP complexes with the different Hsp70s were formed in the prese
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig5-v2.jpg)
 
-**Figure 5.:** 2+ selectively stabilises BiP•ADP compared with cytoplasmic Hsp70s.(A) Representative plot of fluorescence against time of complexes of MABA-ADP and indicated full-length Hsp70 chaperones (each 1.3 µM) formed without or with CaCl2 (1 mM) (dBiP, Drosophila BiP). All solutions contained MgCl2 (3 mM). Excess of MgATP (1.5 mM) was added at t = 0 to reveal MABA-ADP release. Final concentrations are given. Graph: mean MABA-ADP dissociation rate constants ± SD from four independent experiments. Figure 5—source data 1. (B–C) A representative plot of the Bio-Layer interferometry (BLI) signal against time. The experiments were performed as in Figure 4A with the indicated Hsp70s. Dissociation of Hsp70s from the sensor was measured in protein-free solutions (VII). The composition of solutions in steps VI and VII as well as the concentrations of the variable components are indicated. (B) Analysis of eukaryotic Hsp70s. Dashed lines represent single exponential fit curves. Graph: mean dissociation rate constants ± SD from three independent experiments. Figure 5—source data 2. (C) Same as ‘B’ but with E. coli DnaK. Figure 5—source data 3.Figure 5—source data 1.Figure 5A.Figure 5—source data 2.Figure 5B.Figure 5—source data 3.Figure 5C.
+**Figure 5.:** (A) Representative plot of fluorescence against time of complexes of MABA-ADP and indicated full-length Hsp70 chaperones (each 1.3 µM) formed without or with CaCl2 (1 mM) (dBiP, Drosophila BiP). All solutions contained MgCl2 (3 mM). Excess of MgATP (1.5 mM) was added at t = 0 to reveal MABA-ADP release. Final concentrations are given. Graph: mean MABA-ADP dissociation rate constants ± SD from four independent experiments. Figure 5—source data 1. (B–C) A representative plot of the Bio-Layer interferometry (BLI) signal against time. The experiments were performed as in Figure 4A with the indicated Hsp70s. Dissociation of Hsp70s from the sensor was measured in protein-free solutions (VII). The composition of solutions in steps VI and VII as well as the concentrations of the variable components are indicated. (B) Analysis of eukaryotic Hsp70s. Dashed lines represent single exponential fit curves. Graph: mean dissociation rate constants ± SD from three independent experiments. Figure 5—source data 2. (C) Same as ‘B’ but with E. coli DnaK. Figure 5—source data 3.
 
 We also analysed JDP-mediated substrate interactions of the different Hsp70 proteins using the BLI assay. Dissociation was performed in the presence of Mg2+, ATP, and ADP ([ATP]/[ADP]=2). Further addition of Ca2+ had the strongest inhibitory effect on the dissociation of mammalian BiP (∼43% decreased dissociation rate) and Drosophila BiP (∼53% decrease), whereas dissociation of the other chaperones was less affected (Hsp70 ∼16%, Hsc70 ∼16%, DnaK ∼9% decrease; Figure 5B and C). These observations suggest that sensitivity of nucleotide exchange and substrate interactions to Ca2+ is a feature that is relatively selective to BiP homologues, perhaps having evolved as an adaptation to the ER environment.
 
-## CaADP binding selectively affects BiP’s structural stability
+### CaADP binding selectively affects BiP’s structural stability
 
 To establish if the selective effect of Ca2+ on ADP binding to BiP is reflected in the structure of the complex, we purified the NBDs of mammalian BiP, Hsp70, and Hsc70 and co-crystallised them with Ca2+ and ADP. High-resolution X-ray crystal structures were obtained for all three NBDs (Table 1). In each case, additional density in the nucleotide-binding cleft indicated occupancy by ADP (Figure 6—figure supplement 1A) and the overall conformations of the three NBDs were very similar (Figure 6A). Overlay of the BiP(NBD) structure with the Hsp70(NBD) and Hsc70(NBD) structures revealed root-mean-squared deviations (RMSD) of 0.769 Å and 0.734 Å over the Cα alignment, respectively. Moreover, in each structure, Ca2+ was identified in the nucleotide- binding cleft, where it formed contacts to both phosphate groups (α and β) of the nucleotide as well as indirect contacts to protein residues via several water molecules (Figure 6A, inset). The position of the Ca2+ ion and the coordinated water molecules were nearly identical in all three complexes and similar to a previously reported lower resolution structure of human BiP bound to CaADP (Wisniewska et al., 2010). In contrast, the Mg2+ ion in an earlier Hsc70(NBD)•Mg2+•ADP structure coordinates only the β-phosphate of ADP directly (Figure 6B, upper panel), which may contribute to the lower affinity of MgADP compared to CaADP for NBD binding. The BiP(NBD)•Ca2+•ADP complex also resembled the structures of BiP(NBD)apo and the NBD of BiPapo containing both its NBD and SBD (Figure 6—figure supplement 1B). The location of Ca2+ is slightly shifted with respect to the position of Mg2+ in structures that likely reflect the post-hydrolysis state, where the cation coordinates orthophosphate (Pi) and the β-phosphate of ADP (Figure 6B, lower panel). The latter is more similar to the configuration of Hsp70•MgATP complexes, where the Mg2+ is located between the β- and γ-phosphate groups of ATP (Figure 6—figure supplement 1C). The Ca2+ ion in a structure of human Hsp70(NBD) in complex with Ca2+, ADP, and Pi occupies the same position as Mg2+ in a post-hydrolysis state NBD structure (Figure 6—figure supplement 1D). Together, these findings reveal that Ca2+ participates in the coordination of ADP in the NBD, which is consistent with cooperative binding of Ca2+ and nucleotide to BiP. The structures also imply that binding of Ca2+ and Mg2+ is mutually exclusive. This is consistent with evidence against replacement of Mg2+ by Ca2+ in the post-hydrolysis complex and with evidence that Ca2+ binds together with ADP after release of the hydrolysis products (i.e. to the apo NBD) in cycles of ADP rebinding.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig6-v2.jpg)
+
+**Figure 6.:** (A) Ribbon diagram of the aligned crystal structures of BiP (yellow), Hsp70 (blue), and Hsc70 (pink) NBDs in complex with Ca2+ and ADP. The subdomains IA-IIB are indicated. Inset: coordination of Ca2+ ions (green) by water (small spheres) and ADP in the nucleotide binding cleft. (B) Nucleotide and metal ion ligands of BiP(NBD)•Ca2+•ADP (as in ‘A’) and bovine Hsc70(NBD) •Mg2+•ADP (PDB 1BA1) or human Hsp70-2(NBD)•Mg2+•ADP•Pi (PDB 3I33) based on nucleotide alignment. ADP, inorganic phosphate (Pi), Ca2+ (green sphere), and Mg2+ (grey sphere) are shown. (C) MABA-ADP dissociation rates from the indicated NBDs plotted against [CaCl2] of a representative experiment. The experiment was performed as in Figure 3A. All samples contained MgCl2 (3 mM). CaCl2 was present at increasing concentrations during NBD•MABA-ADP complex formation. Bars: the half maximal inhibitory concentration (IC50) of CaCl2 (mean ± SD) was calculated from three independent experiments. Figure 6—source data 1. (D) Melting temperatures (Tm) of the indicated NBDs (at 5 µM) were measured by differential scanning fluorimetry (DSF) in the presence of MgCl2 or CaCl2 (each 6 mM) without or with ADP (4 mM). Top: representative melt curves with their negative first derivatives (RFU, relative fluorescence units). Left bar graph: mean Tm ± SD of three independent experiments. Right bar graph: difference in Tm (ΔTm) between MgADP and CaADP containing samples. Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Polder OMIT maps (grey mesh) of BiP, Hsp70, and Hsc70 NBD ligands omitting ADP (sticks), Ca2+ (green sphere), and water molecules (red spheres) contoured at 3.80 RMSD and including density within 1.6 Å of all atoms shown. (B) Ribbon diagram of NBDs of (i) BiP(NBD)•Ca2+•ADP aligned with (ii) BiP(NBD)apo (PDB 3LDN) (RMSD i vs. ii 0.75 over 336 Cα) and (iii) BiP(28-549)apo (PDB 6HAB) (RMSD i vs. iii 0.776 over 311 Cα). The nucleotide is shown in surface representation and the Ca2+ ion (green sphere) is indicated. (C) Nucleotide and metal ion ligands of BiP(NBD)•Ca2+•ADP and DnaK•Mg2+•ATP (PDB 4B9Q) based on nucleotide alignment. ADP, ATP, Ca2+ (green sphere), and Mg2+ (grey sphere) are shown. (D) Nucleotide and metal ion ligands of human Hsp70-2(NBD)•Mg2+ADP•Pi (PDB 3I33) and human Hsp70(NBD)•Ca2+•ADP•Pi (PDB 1S3X) based on nucleotide alignment. ADP, Ca2+ (green sphere), and Mg2+ (grey sphere) are shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) MABA-ADP dissociation rates from the indicated NBDs plotted against [CaCl2] of a representative experiment. The experiment was performed as in Figure 3A. All samples contained MgCl2 (3 mM). CaCl2 was present at increasing concentrations during NBD•MABA-ADP complex formation. Graph: the half maximal inhibitory concentration (IC50) of CaCl2 (mean ± SD) was calculated from three independent experiments. Source data are provided in Supplementary file 3. (B) Melting temperatures (Tm) of the indicated NBDs (at 5 µM) were measured by differential scanning fluorimetry (DSF) in the presence of MgCl2 or CaCl2 (each 6 mM) without or with ADP (4 mM). Top: representative melt curves with their negative first derivatives (RFU, relative fluorescence units). Left bar graph: mean Tm ± SD of three independent experiments. Right bar graph: difference in Tm (ΔTm) between MgADP- and CaADP-containing samples. Source data are provided in Supplementary file 4.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Ribbon diagram showing coordination of a surface-bound Ca2+ ion (green sphere) in the BiP(NBD) structure, involving contacts to the crystallographic neighbouring molecule (chain B; grey). Relevant water molecules (red spheres) as well as ADP (surface representation) and Ca2+ within the nucleotide binding cleft are indicated. A Ca2+ ion was also identified at the corresponding surface position in structures of Hsp70(NBD) and Hsc70(NBD). In neither case does this Ca2+ ion participate in coordination of the nucleotide. (B) Dissociation of pre-formed complexes of MABA-ADP (1.3 µM) and wild-type BiP or BiP mutants (each 1.3 µM) after exposure to excess of MgATP (1.5 mM) without or with Grp170 (1.3 µM). All solutions contained 3 mM MgCl2. Where indicated CaCl2 (1 mM) was present during complex formation. Mean MABA-ADP dissociation rate constants (koff) ± SD from four independent experiments. Source Data.
+
+**Table 1.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>BiP(NBD)</th>
+      <th>Hsp70(NBD)</th>
+      <th>Hsc70(NBD)</th>
+      <th>Apo BiP oligomer</th>
+      <th>ADP BiP oligomer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Data collection</td>
+    </tr>
+    <tr>
+      <td>Synchrotron stations (DLS)</td>
+      <td>I03</td>
+      <td>I04</td>
+      <td>I04</td>
+      <td>I24</td>
+      <td>I24</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P1</td>
+      <td>P212121</td>
+      <td>P1211</td>
+      <td>P1211</td>
+      <td>P1211</td>
+    </tr>
+    <tr>
+      <td>a,b,c; Å</td>
+      <td>48.36, 51.86, 93.08</td>
+      <td>46.17, 63.71, 144.50</td>
+      <td>73.68, 78.04, 75.38</td>
+      <td>50.33, 51.29, 119.72</td>
+      <td>50.18, 51.25, 188.80</td>
+    </tr>
+    <tr>
+      <td>α, β, γ; ⁰</td>
+      <td>78.07, 86.72, 62.28</td>
+      <td>90.00, 90.00, 90.00</td>
+      <td>90.00, 101.26, 90.00</td>
+      <td>90.00, 100.17, 90.00</td>
+      <td>90.00, 99.77, 90.00</td>
+    </tr>
+    <tr>
+      <td>Resolution, Å*</td>
+      <td>29.14-1.88 (1.92-1.88)</td>
+      <td>29.53-1.52 (1.54-1.52)</td>
+      <td>73.73-1.85 (1.89-1.85)</td>
+      <td>59.92-1.77 (1.81-1.77)</td>
+      <td>29.27-1.94 (1.99-1.94)</td>
+    </tr>
+    <tr>
+      <td>Rmerge*</td>
+      <td>0.063 (0.989)</td>
+      <td>0.065 (0.703)</td>
+      <td>0.120 (1.005)</td>
+      <td>0.054 (0.844)</td>
+      <td>0.047 (0.533)</td>
+    </tr>
+    <tr>
+      <td>&lt;I/σ(I)&gt;*</td>
+      <td>18.2 (1.8)</td>
+      <td>14.0 (2.3)</td>
+      <td>8.9 (1.4)</td>
+      <td>9.9 (1.1)</td>
+      <td>13.7 (2.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2*</td>
+      <td>0.999 (0.669)</td>
+      <td>0.998 (0.814)</td>
+      <td>0.998 (0.633)</td>
+      <td>0.975 (0.531)</td>
+      <td>0.999 (0.717)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections*</td>
+      <td>62200 (3792)</td>
+      <td>66932 (3125)</td>
+      <td>71566 (4400)</td>
+      <td>58872 (3347)</td>
+      <td>43705 (2937)</td>
+    </tr>
+    <tr>
+      <td>Completeness, %*</td>
+      <td>97.4 (90.4)</td>
+      <td>99.7 (95.1)</td>
+      <td>100.0 (100.0)</td>
+      <td>99.9 (99.8)</td>
+      <td>99.1 (94.5)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>8.9 (7.5)</td>
+      <td>6.7 (6.3)</td>
+      <td>6.7 (5.7)</td>
+      <td>3.2 (3.2)</td>
+      <td>3.3 (3.2)</td>
+    </tr>
+    <tr>
+      <td colspan="6">Refinement</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.209/0.225</td>
+      <td>0.196/0.212</td>
+      <td>0.218/0.247</td>
+      <td>0.185/0.217</td>
+      <td>0.184/0.226</td>
+    </tr>
+    <tr>
+      <td>No. of atoms (non H)</td>
+      <td>6137</td>
+      <td>3417</td>
+      <td>6399</td>
+      <td>4432</td>
+      <td>4327</td>
+    </tr>
+    <tr>
+      <td>Average B-factors</td>
+      <td>32.5</td>
+      <td>18.6</td>
+      <td>22.9</td>
+      <td>32.8</td>
+      <td>34.4</td>
+    </tr>
+    <tr>
+      <td>RMS bond lengths Å</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>0.006</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>RMS bond angles,⁰</td>
+      <td>1.163</td>
+      <td>1.163</td>
+      <td>1.172</td>
+      <td>1.341</td>
+      <td>1.338</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favoured region, %</td>
+      <td>99.34</td>
+      <td>99.17</td>
+      <td>98.28</td>
+      <td>98.66</td>
+      <td>98.27</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers, %</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MolProbity score†</td>
+      <td>0.78 (100)</td>
+      <td>0.83 (100)</td>
+      <td>0.80 (100)</td>
+      <td>0.96 (100)</td>
+      <td>0.99 (100)</td>
+    </tr>
+    <tr>
+      <td>PDB code</td>
+      <td>6ZYH</td>
+      <td>6ZYI</td>
+      <td>6ZYJ</td>
+      <td>7A4U</td>
+      <td>7A4V</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell.†100thpercentile is the best among structures of comparable resolutions. 0thpercentile is the worst._
 
 The highly similar CaADP binding mode does not explain the stronger effect of Ca2+ on BiP function compared to the other Hsp70s. However, the IC50 values for Ca2+-dependent inhibition of MABA-ADP release from the NBDs of Hsp70 (444.7 ± 80.5 µM) and Hsc70 (345.5 ± 71.1 µM) were much higher than from the NBD of BiP (57.1 ± 7.4 µM) (Figure 6C). The latter was similar to the IC50 values of full-length BiP and the Drosophila BiP(NBD) (52.4 ± 8.1 µM) (Figure 3B and Figure 6—figure supplement 2A). In contrast, the IC50 for inhibition of MABA-ADP release from DnaK(NBD) by Ca2+ was so high (>8 mM) that saturation was not reached over the titration range (Figure 6—figure supplement 2A). Given that concentrations of Ca2+ in the cytoplasm are in the nanomolar range, these results imply that the effect of Ca2+ on ADP binding to cytoplasmic Hsp70s has limited physiological relevance. We also tested the NBD of Kar2, the ER Hsp70 chaperone of yeast (Saccharomyces cerevisiae), which had a high IC50 of 888.0 ± 233.6 µM (Figure 6—figure supplement 2A). Thus, regulation by Ca2+ seems specific to metazoan BiP.
 
@@ -111,9 +346,21 @@ The NBD structures also revealed a second, surface-exposed Ca2+ ion that is coor
 
 Despite their nearly identical CaADP-bound structures, BiP(NBD), Hsp70(NBD), and Hsc70(NBD) share only 70% sequence identity. We speculated that structural variation that is inapparent in the low-energy, crystallised state may nonetheless lead to functionally important differences in thermodynamic stabilisation by Ca2+ and ADP. Differential scanning fluorimetry (DSF) measurements revealed that binding of ADP to all NBDs substantially elevated their melting temperatures (Tm), as observed previously for full-length BiP (Lamb et al., 2006). The Tm increased further in the presence of Ca2+ (Figure 6D and Figure 6—figure supplement 2B). Importantly, the stabilising effect of Ca2+ was greatest for mammalian and Drosophila BiP(NBD), compared to the cytosolic Hsp70(NBD)s. These findings suggest that the larger decrease in structural flexibility imparted by CaADP binding to the NBD of ER-localised Hsp70s contributes to the relatively stronger inhibition of ADP release by Ca2+.
 
-## Differential sensitivity of BiP oligomers and BiP•substrate complexes to Ca2+
+### Differential sensitivity of BiP oligomers and BiP•substrate complexes to Ca2+
 
 The activity of BiP in the ER is subject to post-translational regulatory mechanisms, one of which is the transient sequestration of substrate-free BiP into inactive oligomeric assemblies. These homomeric BiP complexes are based on typical substrate interactions between the SBD of one protomer and the interdomain linker of another protomer (Preissler et al., 2015). As a consequence, all BiP molecules of an oligomer are in a post-hydrolysis, domain-undocked state typical of ADP-bound or apo Hsp70s (Figure 7A). These features entail a chain-like configuration where only the first BiP molecule (A) can bind substrate, whereas the SBDs and linkers of all internal protomers (B) are occupied. Apart from the last molecule (C), which exposes a free linker, all other protomers are conformationally locked and therefore functionally inactive. This model also predicts that oligomer assembly and disassembly occur mainly on one end and involve the ‘C’ protomer because it provides a binding site for another BiP molecule (in assembly) and is the only protomer able to undergo ATP-induced domain docking (required for dissociation). We define this end of BiP oligomers as the ‘plus’ (+)-end in analogy to the more dynamic end of cytoskeletal filaments (Figure 7A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic representation of BiP oligomers. Unfolded substrate protein (red) and the distinct types of BiP protomers (A, B, and C) are shown. Oligomers are directional assemblies with minus (-) and plus (+) ends. The cleavage site for the BiP linker-specific protease SubA (scissors) is only accessible on (+)-end protomer (C). The predicted inert BiP oligomer lacking the C protomer nucleotide binding domain (NBD; a result of SubA cleavage) is shown on the right. (B) Ribbon diagram of apo BiPT229A-V461F oligomers formed by typical substrate interactions between protomers. Three protomers (labelled A-C according to ‘A’) are presented in different colours. Note the unusual C- to N-terminal engagement of BiP’s interdomain linker as a substrate bound to the substrate binding domain (SBD) of an adjacent BiP molecule. (C) Size-exclusion chromatography (SEC) elution profile of BiP. BiP was incubated with ADP (1 mM) and where indicated treated with SubA before SEC. Monomeric (M), dimeric (D), and trimeric BiP (T) is indicated. Heterogenous high-molecular weight (HMW) BiP complexes elute early as a shoulder. Note that the peaks of proteolytic cleavage products originating from trimers and dimers (*) are shifted to later elution times. Also note the disappearance of BiP monomers and a new peak of the individual NBD and SBD after treatment with SubA. Figure 7—source data 1. (D) SEC elution profile as in ‘C’ of BiP and substrate peptide. BiP was incubated with trace amounts of fluorescently labelled substrate peptide (NR; Pep*) in the presence of ADP at indicated concentrations. Where indicated the samples were exposed at t = 0 to SubA for 30 min before SEC. Where indicated excess of ATP was added 10 min before SEC. Peptide bond absorbance at 230 nm (A230) and the fluorescence signal of the labelled peptide were recorded separately. Figure 7—source data 2. (E) Representative plot of fluorescence against time of complexes of MABA-ADP and BiP or purified, stabilised BiP oligomers (each 1.3 µM) formed in the presence of either MgCl2 or CaCl2 (each 3 mM). Excess of ATP (1.5 mM) without or with Grp170 (1.3 µM) was added at t = 0 to reveal nucleotide release. Graph: mean MABA-ADP dissociation rate constants (koff) ± SD from three independent experiments. Final concentrations are given. Figure 7—source data 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Superposition of the asymmetric unit of a lid-truncated, ADP-bound oligomeric BiP (pink) onto the biological (dimeric) assembly of oligomeric apo-BiP protomers (light blue and green, as in Figure 7B) reveals a highly similar conformation. ADP is shown in stick form with its coordinating K+ ion (yellow sphere) in the nucleotide binding domain (NBD). The isolated substrate binding domain (SBD) of DnaK, including the C-terminal lid structure in the closed conformation (dark blue; PDB 1DKZ), is also aligned and reveals only minor conformational differences to the lid-truncated SBD of oligomeric BiP. (B) Close-up view of the interdomain linker of one BiP protomer (green) bound to the SBDβ subdomain of another BiP protomer as in ‘A’. The surface of the linker-binding SBD is shown with translucent coulombic surface colouring. All residues participating in trans-protomer interactions are shown as sticks. Hydrogen bonds are highlighted with solid magenta pseudo bonds and van der Waals interactions are represented by cyan dashed pseudo bonds. Note that the majority of the linker side chains occupy the hydrophobic surface of the substrate- binding groove and most polar bonds are to mainchain amide atoms of the β-sheet scaffold of the SBD. Moreover, the protomer whose SBD-bound linker is shown forms a number of additional interactions with the surface of the SBDβ, in which it is engaged, outside of the canonical substrate- binding groove. These peripheral contacts may contribute to the orientation and stabilisation of the oligomeric BiP structure.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Size-exclusion chromatography (SEC) elution profile of BiP or purified BiP oligomers. BiP oligomers were isolated after cleavage by SubA and frozen. Thawed samples were exposed to ATP for indicated times before SEC analysis. As a control, uncleaved BiP was loaded. Note that purified BiP oligomers were stable in the presence of ATP. Source data are provided in Supplementary file 6. Panels ‘ii – iv’ represent different detailed views of the chromatogram shown in ‘i’.
 
 The strong propensity of BiP to form oligomers and their architecture is further supported by structural data: despite being C-terminally truncated beyond helix A of the flexible SBD lid structure and containing a substrate binding-weakening V461F mutation, we obtained crystals of BiP in multi-component mixtures formed by substrate interactions between the SBD and the interdomain linker of adjacent molecules in the crystal lattice (Figure 7B and Figure 7—figure supplement 1).
 
@@ -132,6 +379,14 @@ These results indicate (i) that passive nucleotide exchange occurs with normal r
 ## Discussion
 
 The roles of BiP as an abundant effector chaperone and feedback regulator of the UPR render it an essential guardian of ER physiology. Both functions converge on conventional Hsp70 substrate-binding interactions and are subordinate to the kinetics of nucleotide turnover by BiP’s ATPase activity. The finding that BiP’s ATPase cycle is modulated by Ca2+ fluctuations within the physiological range suggests a defined mechanism that links changes in [Ca2+]ER to protein homeostasis. In the Ca2+-depleted ER, BiP-substrate interactions are destabilised (Figure 8). The partitioning of substrates away from the only luminal Hsp70 favours trafficking of those substrates that would otherwise have been retained by BiP, whilst promoting de-repression of the UPR transducers, themselves BiP substrates. The perturbation to ER proteostasis is compounded by the polarity of BiP oligomers, which specifies their relative inertness to Ca2+ fluctuations, thus kinetically driving BiP to oligomerise and depleting the pool of active monomers. Alongside the direct role played by Ca2+ in the folding of certain secreted proteins, and the role of Ca2+ binding to low-affinity sites in regulating the in vivo activity of parallel ER chaperones, the aforementioned mechanism goes some way to explain the well-established relationship between ER Ca2+ depletion and the activation of ER stress signalling.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig8-v2.jpg)
+
+**Figure 8.:** (A) High [Ca2+]ER stabilises BiP•ADP•substrate complexes. The interaction of BiP with its substrates is driven by an ATPase-dependent chaperone cycle, whereby ATP binding triggers substrate release and ATP hydrolysis (to ADP and orthophosphate; Pi) induces high-affinity substrate binding (right cycle). ADP competes with ATP for binding to BiP during post-hydrolysis nucleotide exchange, causing ADP-to-ADP exchange cycles that delay substrate release. Because Ca2+ enhances the affinity of ADP for BiP, the substrate interaction-stabilising ADP-bound state of BiP is kinetically favoured by high [Ca2+]ER, whereas a decline in [Ca2+]ER accelerates ADP-to-ATP exchange and substrate release. A decrease in the ATP:ADP ratio also promotes ADP-to-ADP exchange and extension of BiP-substrate interactions. (B) Observed redistribution of BiP upon ER Ca2+ depletion. At high [Ca2+]ER (resting state; left panel), the concentration of unfolded proteins governs the formation of BiP-substrate interactions and competing oligomerisation. BiP oligomers are conformationally locked (functionally inactive) assemblies formed by ATP hydrolysis-dependent substrate interactions amongst BiP proteins. BiP also participates (both indirectly and by direct interaction with UPR signal transducers) in repression of UPR signalling. The restricted ability of oligomeric BiP to respond allosterically to ATP binding (and the resistance of oligomeric BiP to NEF-stimulated ADP release; not shown) kinetically stabilises oligomers at the expense of heterodimeric BiP-substrate complexes in the Ca2+-depleted ER (right panel). Faster substrate release from BiP at low [Ca2+]ER and lower BiP availability (due to enhanced sequestration into oligomers) likely favours de-repression of UPR signalling.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/62601/elife-62601-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Upper panel: Bursts of physiologically entrained cellular activity (e.g. secretion; blue trace) triggered by bursts of signal-regulated ER Ca2+ depletion (orange trace) are coupled by BiP’s special features to UPR activity (red trace). Whilst UPR activity is transient in such circumstances, the stability of the proteins encoded by many UPR target genes converts fleeting UPR signals to maintenance of a sustained increase in ER capacity (green trace). ER capacity is thus matched to organellar activity by a process that responds to a physiological stimulus without or with minimal perturbation to ER protein folding homeostasis (unfolded protein load; black dotted line).
 
 Comparison of cytosolic and ER Hsp70s suggests that regulation of BiP by Ca2+ co-evolved with the functions of the mammalian ER in Ca2+ storage and signalling. This is reflected in the relative insensitivity of cytosolic and bacterial Hsp70s to Ca2+ and in apparent tuning of metazoan BiP to the range of physiological ER Ca2+ fluctuations. In this vein, the yeast ER Hsp70 Kar2 is of special interest, as we found it to be much less sensitive to Ca2+ than its metazoan counterparts, despite sharing ∼72% sequence identity in the NBD. This correlates with the yeast vacuole, not the ER, serving as the major intracellular Ca2+ store responsible for regulating Ca2+ release (Denis and Cyert, 2002; Halachmi and Eilam, 1989; Strayle et al., 1999).
 
@@ -155,71 +410,368 @@ Changes in BiP’s substrate interaction kinetics are observed within minutes of
 
 ## Materials and methods
 
-## DNA plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>M15</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Recombinant protein expression</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 T7 Express lysY/Iq cells</td>
+      <td>New England Biolabs</td>
+      <td>Cat. #: C3013</td>
+      <td>Recombinant protein expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1 CHOP::GFP XBP1::Turquoise (clone S21)</td>
+      <td>PMID:27812215</td>
+      <td>CHO-K1 S21</td>
+      <td>CHO CHOP::GFP, XBP1s::Turquoise dual UPR reporter cell line; a derivative of RRID:CVCL_0214</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1 TCRα (clone 24)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Derivative of CHO-K1 cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-K1 TCRα-N/Q (clone 12)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Derivative of CHO-K1 cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG M1; ANTI-FLAG M1</td>
+      <td>Sigma</td>
+      <td>Cat. #: F3040</td>
+      <td>Flow cytometry (1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG; Alexa Fluor 488 AffiniPure Goat Anti-Mouse IgG (H+L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat. #: 115-545-146</td>
+      <td>Flow cytometry (1:750)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-BiP IgY</td>
+      <td>PMID:23589496</td>
+      <td></td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal anti-chicken IgY; IRDye 800CW Donkey anti-Chicken Secondary Antibody</td>
+      <td>Li-Cor</td>
+      <td>Cat. #: 926–32218</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG (H+L); IRDye 800CW Goat anti-Mouse IgG Secondary Antibody</td>
+      <td>Li-Cor</td>
+      <td>Cat. #: 926–32210</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>P15; ALLLSAPRRGAGKK</td>
+      <td>GenScript (custom synthesis)</td>
+      <td></td>
+      <td>Biotinylated on the C-terminal lysine</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NR; NRLLLTG</td>
+      <td>GenScript (custom synthesis)</td>
+      <td></td>
+      <td>Carrying a fluorescein moiety at the N-terminus</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tunicamycin; Tm</td>
+      <td>Melford</td>
+      <td>Cat. #: T2250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin; Tg</td>
+      <td>Calbiochem</td>
+      <td>Cat. #: 586005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A23187</td>
+      <td>Sigma</td>
+      <td>Cat. #: C7522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Deoxy-D-glucose; 2DG</td>
+      <td>ACROS Organics</td>
+      <td>Cat. #: D6134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PERK inhibitor; PERKi</td>
+      <td>GSK</td>
+      <td>Cat. #: GSK2606414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A; BFA</td>
+      <td>LC Laboratories</td>
+      <td>Cat. #: B-8500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. #: 13884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TransIT-293 Transfection Reagent</td>
+      <td>Mirus</td>
+      <td>Cat. #: MIR 2704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexokinase Type F-300</td>
+      <td>Sigma</td>
+      <td>Cat. #: H4502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MABA-ADP; 8-[(4-Amino)butyl]-amino-ADP-MANT</td>
+      <td>Jena Bioscience</td>
+      <td>Cat. #: NU-893-MNT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MABA-ATP; 8-[(4-Amino)butyl]-amino-ATP-MANT</td>
+      <td>Jena Bioscience</td>
+      <td>Cat. #: NU-806-MNT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYPRO orange protein gel stain</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: S6651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XIA2</td>
+      <td>DOI: 10.1107/S0021889809045701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mosflm</td>
+      <td>PMID:21460445</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>PMID:20124692</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pointless</td>
+      <td>PMID:21460446</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Aimless</td>
+      <td>PMID:21460441</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>PMID:19461840</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>PMID:20383002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>refmac5</td>
+      <td>PMID:11134934</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phenix.refine</td>
+      <td>PMID:31588918</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID:15264254</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL</td>
+      <td></td>
+      <td>Version 1.3 educational</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CheckMyMetal</td>
+      <td>PMID:28291757</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phenix.polder</td>
+      <td>PMID:28177311</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA plasmids
 
 The plasmids used in this study have been described previously or were generated by standard molecular cloning techniques and are listed in Supplementary file 7.
 
-## Mammalian cell lines
+### Mammalian cell lines
 
 CHO-K1 cells (ATCC CCL-61) were phenotypically validated as proline auxotrophs and their Chinese hamster (Cricetulus griseus) origin was confirmed by genomic sequencing. The cells were grown on cell culture dishes or multi-well plates (Corning) at 37°C and 5% CO2 in Nutrient mixture F-12 Ham (Sigma-Aldrich) supplemented with 10% (v/v) serum (FetalClone II; HyClone), 1 × penicillin–streptomycin (Sigma-Aldrich), and 2 mM L-glutamine (Sigma-Aldrich). Cell lines were randomly tested for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza). All experiments were performed at cell densities of 60–90% confluence. Where indicated, cells were treated with 0.5 µM thapsigargin (Tg; Calbiochem), 2.5 µg/ml tunicamycin (Tm; Melford), 10 µM A23187 (Sigma, C7522), 3 mM 2-deoxy-D-glucose (2DG; ACROS Organics), 2 µM PERK inhibitor (PERKi; gift from GSK, GSK2606414), and 10 µg/ml brefeldin A (BFA; LC Laboratories, B-8500). All compounds were diluted freshly in pre-warmed medium and applied to the cells by medium exchange.
 
 The UPR reporter cell line CHO-K1 CHOP::GFP XBP1::Turquoise (clone S21) has been described previously (Sekine et al., 2016). Cell lines stably expressing TCRα and TCRα-N/Q were generated by targeting CHO-K1 cells with puromycin-resistant retrovirus. For that, HEK293T cells (ATCC CRL‐3216) were cultured in Dulbecco's modified Eagle's medium (Sigma) supplemented as described above. The cells were split onto 6-cm dishes 24 hr prior to co-transfection of pBABE Puro plasmids encoding TCRα or TCRα-N/Q (plasmids UK2469 and UK2520, respectively; Supplementary file 7) with VSV-G retroviral packaging vectors, using TransIT-293 Transfection Reagent (Mirus) according to the manufacturer’s instructions. Sixteen hours after transfection, medium was changed to medium supplemented with 1% BSA (Sigma). Retroviral infections were performed following a 24 hr incubation period by diluting 0.45 μm filter-sterilised cell culture supernatants at a 1:1 ratio with CHO-K1 cell medium supplemented with 10 μg/ml polybrene (8 ml final volume) and adding this preparation to target CHO-K1 cells (1 × 106 cells seeded onto 10-cm dishes 24 hr prior to infection). After 8 hr, the viral supernatants were replaced with fresh medium. The cells were split 48 hr later into medium supplemented with 6 μg/ml puromycin (Calbiochem). After further 24 hr, the medium was changed to medium supplemented with 8 μg/ml puromycin. The medium was changed every third day until puromycin-resistant colonies were visible. Individual clones were isolated and tested for reporter expression. CHO-K1 TCRα (clone 24) and CHO-K1 TCRα-N/Q (clone 12) were used for all experiments shown.
 
-## Flow cytometry
+### Flow cytometry
 
 To analyse expression of TCRα and TCRα-N/Q reporters on the cell surface, stable CHO-K1 clones (see above) or parental cells were grown on six-well plates to 80–90% confluence and treated as indicated. The cells were then washed with 1 ml PBS and incubated in 0.5 ml PBS + 2 mM EDTA for 5 min at 37°C. Afterwards, the cells were transferred to a 1.2 ml tube (STARLAB, cat. # I1412-7400) and pelleted for 3 min in a swing-out rotor at 1000 rpm in a tabletop centrifuge (Allegra X-30R, Beckman Coulter). The supernatant was aspirated and cells were suspended in the remaining liquid to 1 × 105 – 1 × 107 cells/100 μl. The cells were washed with 1 ml ice-cold TBS solution [TBS + 3% bovine serum albumin (BSA) + 2 mM CaCl2 + 0.1% NaN3] and pelleted as above. The supernatant was removed entirely and cells were suspended in 100 µl of the same TBS solution containing mouse monoclonal ANTI-FLAG M1 antibodies (Sigma, cat. # F3040) at a 1:500 dilution. The cells were incubated 30 min on ice while gently mixing every 10 min. After the incubation time, cells were washed twice in 1 ml TBS solution and suspended in TBS solution containing Alexa Fluor 488 Goat anti-mouse IgG (Jackson ImmunoResearch, cat. # 115-545-146; 0.75 mg/ml stock in 50% glycerol) at a 1:750 dilution for 30 min on ice in the dark as above. The cells were pelleted, washed with TBS solution and suspended in 400 µl TBS solution for flow cytometry analysis. For analysis of UPR reporter induction, CHO-K1 S21 cells were treated as indicated, washed with PBS and collected in PBS containing 4 mM ethylenediaminetetraacetic acid (EDTA).
 
 Single‐cell fluorescence signals (20,000/sample) were analysed by dual‐channel flow cytometry with an LSRFortessa cell analyser (BD Biosciences). GFP fluorescence and Alexa Fluor 488 fluorescence was detected with excitation laser 488 nm and a 530/30 emission filter and Turquoise fluorescence was detected with excitation laser 405 nm and a 450/50 emission filter. Gating for live cells was based on FSC-A/SSC-A and for singlets was based on FSC-W/SSC-A. Data were processed using FlowJo and median reporter analysis was performed using Prism 6.0e (GraphPad). All events displayed were considered for analysis.
 
-## Immonoprecipitation (IP) and immunoblotting
+### Immonoprecipitation (IP) and immunoblotting
 
 Mammalian cells were grown on 10-cm dishes and treated as indicated. The dishes were then placed on ice and washed with ice‐cold PBS, and cells were detached in PBS containing 1 mM EDTA using a cell scraper. The cells were sedimented for 5 min at 370 × g at 4°C and lysed in HG lysis buffer (20 mM HEPES‐KOH pH 7.4, 150 mM NaCl, 2 mM MgCl2, 10 mM D‐glucose, 10% glycerol, 1% Triton X‐100) containing protease inhibitors [2 mM phenylmethylsulphonyl fluoride (PMSF), 4 μg/ml pepstatin, 4 μg/ml leupeptin, 8 μg/ml aprotinin] with 100 U/ml hexokinase (from Saccharomyces cerevisiae type F‐300; Sigma) for 10 min on ice. To release BiP from substrates, hexokinase was replaced by 1 mM ATP during lysis. The lysates were cleared for 10 min at 21,000 × g at 4°C and Bio‐Rad protein assay reagent (Bio‐Rad) was used to determine the protein concentrations of lysates. Equal volumes of normalised lysates were incubated for 2 hr at 4°C with 20 µl UltraLink Hydrazine Resin (Pierce, 53149) on which hamster BiP-specific chicken IgY antibodies had been covalently immobilised (Preissler et al., 2015). The beads were recovered by centrifugation for 1 min at 1,000 × g and washed three times (for 5 min) with HG lysis buffer. The proteins were eluted in 2 × SDS sample buffer and denatured for 10 min at 70°C. Equal volumes of the samples were applied to SDS-PAGE and proteins were transferred onto PVDF membranes. The membranes were blocked with 5% (w/v) dried skimmed milk in TBS and incubated with primary antibodies followed by IRDye fluorescently labelled secondary antibodies (LiCor). The membranes were scanned with an Odyssey near-infrared imager (LiCor). Primary antibodies against hamster BiP [chicken anti-BiP IgY; (Avezov et al., 2013)] and ANTI-FLAG M1 (see above) were used. The relevant signals were quantified with ImageJ (NIH) and analysed with Prism 8.4 (GraphPad).
 
-## Protein purification
+### Protein purification
 
-## BiP and stabilised oligomers
+#### BiP and stabilised oligomers
 
 Wild-type (UK173) and mutant (UK838, UK2819, UK2820) Chinese hamster BiP proteins with an N‐terminal His6‐tag were expressed in M15 E. coli cells (Qiagen). The bacterial cultures were grown in LB medium with 100 μg/ml ampicillin and 50 μg/ml kanamycin at 37°C to an OD600 nm of 0.8 and expression was induced with 1 mM isopropylthio β‐D‐1‐galactopyranoside (IPTG). The cells were further grown for 6 hr at 37°C, collected and lysed with a high‐pressure homogeniser (EmulsiFlex‐C3; Avestin) in buffer A (50 mM Tris–HCl pH 8, 500 mM NaCl, 1 mM MgCl2, 10% glycerol, 20 mM imidazole) containing protease inhibitors (1 mM PMSF, 2 µg/ml pepstatin, 8 µg/ml aprotinin, 2 µM leupeptin) and 0.1 mg/ml DNaseI. The lysates were cleared for 30 min at 45,000 × g at 4°C and incubated with 1 ml of Ni‐NTA agarose beads (Qiagen) per 1 l of expression culture for 2 hr rotating at 4°C. Afterwards, the beads was transferred to a gravity‐flow Econo column (49 ml volume; Bio‐Rad) and washed with two column volumes (CV) buffer B (50 mM Tris–HCl pH 8.0, 500 mM NaCl, 10% glycerol, 30 mM imidazole), 2 CV buffer C (50 mM Tris–HCl pH 8.0, 300 mM NaCl, 10 mM imidazole, 5 mM β‐mercaptoethanol) and buffer C sequentially supplemented with (i) 1 M NaCl, (ii) 10 mM MgCl2 + 3 mM ATP, (iii) 0.5 M Tris–HCl pH 7.4, or (iv) 35 mM imidazole (2 CV each). The BiP proteins were then eluted with buffer D (50 mM Tris–HCl pH 8.0, 300 mM NaCl, 5 mM β‐mercaptoethanol, 250 mM imidazole), dialysed against HKM (50 mM HEPES‐KOH pH 7.4, 150 mM KCl, 10 mM MgCl2) and concentrated with 30‐kDa MWCO centrifugal filters (Amicon Ultra, Merck Millipore). The proteins were flash‐frozen in aliquots and stored at −80°C. To obtain nucleotide-free preparations, the purified proteins were additionally dialysed 24 hr at 4°C against 50 mM HEPES-KOH pH 7.4, 150 mM KCl, 4 mM EDTA and twice against 50 mM HEPES-KOH pH 7.4, 150 mM KCl before concentration and freezing.
 
 Stabilised BiP oligomers were generated from purified BiP protein (UK173). The proteins were concentrated in HKM buffer to ∼16 mg/ml and SubA protease (produced in-house) (Paton et al., 2006) was added at 50 ng/µl. After incubation for 40 min at 26°C to allow for complete cleavage, the sample was cooled on ice for 5 min. The solution was then cleared through a 0.22 µm pore size centrifuge tube filter (Spin-X, Corning) and injected onto a Superdex 200 Increase 10/300 GL column (GE Healthcare) equilibrated in 50 mM HEPES-KOH pH 7.4, 150 mM KCl. The early eluting peak fractions containing oligomeric BiP species were immediately pooled, concentrated and frozen in aliquots.
 
-## Grp170 and authentic Hsp70s
+#### Grp170 and authentic Hsp70s
 
 Full-length human Grp170 (UK2225), BiP from Drosophila melanogaster (UK2354) as well as human Hsp70 (UK2510) and Hsc70 (UK2511) were expressed as fusion proteins with an N-terminal His6-Smt3 in E. coli BL21 T7 Express lysY/Iq cells (New England BioLabs, cat. # C3013). The cells were grown in LB medium containing 50 µg/ml kanamycin at 37°C until OD600 nm 0.5. The cells were then transferred to 20°C and expression was induced after 20 min with 0.5 mM IPTG. After incubation for 14 hr, the cells were collected by centrifugation and suspended in lysis buffer E (50 mM Tris-HCl pH 8, 500 mM NaCl, 20 mM imidazole, 10% glycerol) containing protease inhibitors (1 mM PMSF, 2 µg/ml pepstatin, 8 µg/ml aprotinin, 2 µM leupeptin). Before lysis 1 mM MgCl2, 0.1 mM tris(2‐carboxyethyl)phosphine (TCEP), and 0.1 mg/ml DNaseI were added and lysis was performed with an EmulsiFlex‐C3 high-pressure homogeniser. The lysates were cleared for 30 min at 45,000 × g at 4°C and incubated with 0.6 ml of Ni‐NTA agarose beads (Qiagen) per 1 l of expression culture (1 ml beads per 1 l expression culture was used in case of Drosophila BiP, Hsp70 and Hsc70) for 1 hr rotating at 4°C. Afterwards, the beads were transferred to a 49 ml gravity‐flow column and washed with 2 CV lysis buffer E, 2 CV buffer F (25 mM Tris–HCl pH 8, 150 mM NaCl, 10 mM imidazole, 5 mM β‐mercaptoethanol), and buffer F sequentially supplemented with (i) 1 M NaCl, (ii) 10 mM MgCl2 + 3 mM ATP + 0.01 mg/ml RNaseA, or (iii) 0.5 M Tris–HCl pH 8 + 1 mM TCEP (2 CV each), followed by 2 CV buffer F. Proteins were eluted by on‐column cleavage with 1.5 µg/ml Ulp1 protease carrying a C‐terminal StrepII‐tag in 2.5 bed volumes buffer TNT-Iz15 (25 mM Tris–HCl pH 8, 150 mM NaCl, 1 mM TCEP, 15 mM imidazole) overnight at 4°C. The eluate was collected, retained cleavage products were washed off the beads with TNT-Iz15, and all fractions were pooled. The combined eluate was diluted 1:3 in 25 mM Tris-HCl pH 8 + 0.1 mM TCEP, passed through a 0.22 µm filter, and further purified by anion exchange chromatography using a 6-ml RESOURCE Q column (GE Healthcare) equilibrated in 95% AEX‐A (25 mM Tris–HCl pH 8, 25 mM NaCl, 0.1 mM TCEP) and 5% AEX‐B (25 mM Tris–HCl pH 8, 1 M NaCl, 0.1 mM TCEP). Proteins were eluted by applying a gradient from 5% to 50% AEX‐B in 25 CV at 6 ml/min. The elution peak fractions corresponding to Grp170 were pooled and 1 mM TCEP was added. After buffer exchange to HKT (50 mM HEPES-KOH pH 7.4, 150 mM KCl, 1 mM TCEP) and concentration using 30-kDa MWCO centrifugal filters, the proteins were frozen in aliquots and stored at −80°C. BiP from Drosophila melanogaster (UK2354) and human Hsp70 (UK2510; natural variant E110D) and Hsc70 (UK2511) were all expressed as fusion proteins with an N-terminal His6-Smt3 and purified likewise.
 
 DnaK (from Escherichia coli) with an N-terminal His6-Smt3 (UK2243) was expressed and purified likewise, except that after anion exchange chromatography the pooled eluate was adjusted to 500 mM NaCl and 40 mM imidazole. The eluate was then incubated with 1 ml Ni-NTA agarose for 1 hr rotating at 4°C (to remove traces of uncleaved protein). The beads were then collected by centrifugation at 100 × g for 2 min and the supernatant was transferred to a 30-kDa MWCO centrifugal filter for buffer exchange to HKT and protein concentration.
 
-## NBDs of BiP, Hsp70, and Hsc70 for crystallisation
+#### NBDs of BiP, Hsp70, and Hsc70 for crystallisation
 
 All NBDs were expressed as fusion proteins with a N-terminal His6-Smt3. The NBD of hamster BiP (UK2039) was produced in M15 E. coli cells grown in LB medium containing 50 µg/ml kanamycin and 100 mg/ml ampicillin. The NBDs of human Hsp70 (UK2532; natural variant E110D) and human Hsc70 (UK2533) were produced in E. coli BL21 T7 Express lysY/Iq cells grown in LB medium containing 50 µg/ml kanamycin. The cells were grown at 37°C to OD600 nm 0.5, transferred to 22°C for 20 min, and expression was induced with 0.5 mM IPTG. After incubation for 14 hr at 22°C, the cells were collected by centrifugation and suspended in lysis buffer G (50 mM Tris-HCl pH 8, 500 mM NaCl, 20 mM imidazole) containing protease inhibitors (1 mM PMSF, 2 µg/ml pepstatin, 8 µg/ml aprotinin, 2 µM leupeptin), 1 mM MgCl2, 0.1 mM TCEP, and 0.1 mg/ml DNaseI. The cells were lysed with an EmulsiFlex‐C3 high-pressure homogeniser and lysates were centrifuged for 30 min at 45,000 × g at 4°C. The cleared lysates were incubated with 1 ml Ni-NTA agarose beads per 1 l expression culture for 30 min rotating at 4°C. The beads were then transferred to a 49-ml gravity-flow column, washed in 2 CV lysis buffer G, 2 CV buffer H (50 mM Tris-HCl pH 8, 500 mM NaCl, 30 mM imidazole, 5 mM β‐mercaptoethanol), 2 CV buffer I (50 mM Tris-HCl pH 8, 300 mM NaCl, 10 mM imidazole, 5 mM β‐mercaptoethanol), and with buffer I supplemented sequentially with (i) 1 M NaCl, (ii) 10 mM MgCl2 + 3 mM ATP + 0.01 mg/ml RNaseA, or (iii) 0.5 M Tris–HCl pH 8 + 1 mM TCEP (2 CV each), followed by 2 CV buffer TNT-Iz10 (25 mM Tris–HCl pH 8, 150 mM NaCl, 1 mM TCEP, 10 mM imidazole). Proteins were eluted by on‐column cleavage with 3.7 µg/ml Ulp1 protease carrying a C‐terminal StrepII‐tag in one bed volume buffer TNT-Iz10 overnight at 4°C. The eluate was collected, retained cleavage products were washed off the beads with buffer TNT-Iz10, and all fractions were pooled. To remove bound nucleotide, the proteins were dialysed for 6 hr against buffer J (25 mM Tris-HCl pH 8, 150 mM NaCl, 5 mM EDTA, 5 mM β‐mercaptoethanol), 16 hr against fresh buffer J, 6 hr against buffer K (25 mM Tris-HCl pH 8, 100 mM NaCl, 5 mM β‐mercaptoethanol), and 16 hr against fresh buffer K. The protein solutions were then diluted 1:2 with 25 mM Tris-Hcl pH 8 + 0.2 mM TCEP, filtered (0.22 µm filter), and applied to anion exchange chromatography using a 6-ml RESOURCE Q column equilibrated in 100% AEX‐A1 (25 mM Tris–HCl pH 8, 75 mM NaCl, 0.2 mM TCEP). The flow-through fractions were collected and bound proteins were eluted by applying a gradient from 0% to 50% AEX‐B1 (25 mM Tris–HCl pH 8, 1 M NaCl, 0.2 mM TCEP) in 25 CV at 5 ml/min. The fractions corresponding to the NBD proteins were pooled and further purified. In case of the NBDs of Hsp70 (UK2532) and Hsc70 (UK2533) the unbound material (flow-through of the loading step) was used for further purification. The proteins were concentrated, applied to gel-filtration using a Superdex 75 prep grade HiLoad 16/60 column (GE Healthcare) equilibrated in buffer K (10 mM Tris-HCl pH 8, 150 mM KCl, 0.2 mM TCEP), and proteins were eluted at 0.75 ml/min. The elution peak fractions were pooled, supplemented with 1 mM TCEP, and proteins were concentrated in 10-kDa MWCO centrifugal filter to ∼1–1.5 mM. The protein preparations were frozen in aliquots and stored at −80°C for crystallisation and functional experiments.
 
-## NBDs of Drosophila BiP, DnaK, and Kar2
+#### NBDs of Drosophila BiP, DnaK, and Kar2
 
 The NBDs were expressed as fusion proteins with a N-terminal His6-Smt3. The NBD of Drosophila BiP (UK2534) was produced in M15 E. coli cells grown in LB medium containing 50 µg/ml kanamycin and 100 mg/ml ampicillin. The NBDs of DnaK (UK2531) and yeast Kar2 (UK2606) were produced in E. coli BL21 T7 Express lysY/Iq cells grown in LB medium containing 50 µg/ml kanamycin. The cells were grown at 37°C to OD600 nm 0.5, transferred to 22°C for 20 min, and expression was induced with 0.5 mM IPTG. After incubation for 14 hr at 22°C, the cells were collected by centrifugation and suspended in lysis buffer E (50 mM Tris-HCl pH 8, 500 mM NaCl, 20 mM imidazole, 10% glycerol) containing protease inhibitors (1 mM PMSF, 2 µg/ml pepstatin, 8 µg/ml aprotinin, 2 µM leupeptin), 1 mM MgCl2, 0.1 mM TCEP, and 0.1 mg/ml DNaseI. The cells were lysed with an EmulsiFlex‐C3 high-pressure homogeniser and lysates were centrifuged for 30 min at 45,000 × g at 4°C. The cleared lysates were incubated with 1 ml Ni-NTA agarose beads per 1 l expression culture for 30 min rotating at 4°C. The beads were then transferred to a 49-ml gravity-flow column, washed in 2 CV lysis buffer E, 2 CV buffer H (50 mM Tris-HCl pH 8, 500 mM NaCl, 30 mM imidazole, 5 mM β‐mercaptoethanol), 2 CV buffer I (50 mM Tris-HCl pH 8, 300 mM NaCl, 10 mM imidazole, 5 mM β‐mercaptoethanol) and with buffer I supplemented sequentially with (i) 1 M NaCl, (ii) 10 mM MgCl2 + 3 mM ATP + 0.01 mg/ml RNaseA, or (iii) 0.5 M Tris–HCl pH 8 + 1 mM TCEP (2 CV each), followed by 2 CV buffer TNT-Iz10 (25 mM Tris–HCl pH 8, 150 mM NaCl, 1 mM TCEP, 10 mM imidazole). Proteins were eluted by on‐column cleavage with 3.7 µg/ml Ulp1 protease carrying a C‐terminal StrepII‐tag in one bed volume buffer TNT-Iz10 overnight at 4°C. The eluate was collected, retained cleavage products were washed off the beads with buffer TNT-Iz10, and all fractions were pooled. After buffer exchange to HKT (50 mM HEPES-KOH pH 7.4, 150 mM KCl, 1 mM TCEP) and concentration using 10 kDa MWCO centrifugal filters, the proteins were frozen in aliquots and stored at −80°C for functional experiments.
 
-## BiP for oligomer crystallisation
+#### BiP for oligomer crystallisation
 
 Chinese hamster BiPT229A-V461F (residues 28–549) was expressed as an N-terminal His6-Smt3-tagged protein (UK2090). The purification protocol was the same as used for His6-Smt3-FICD purification described in Perera et al., 2019 with minor modifications. The protein was expressed in M15 E. coli cells grown in LB medium supplemented with 100 μg/ml ampicillin and 50 μg/ml kanamycin. After anion exchange chromatography the protein was exchanged into 10 mM HEPES-KOH pH 7.4, 150 mM KCl, 2 mM MgCl2, and 1 mM TCEP by gel filtration and concentrated to 21 mg/ml.
 
 For crystallisation, BiP and an equimolar amount of human FICDL258D-H363A [residues 104–445; UK2093], purified as in Perera et al., 2019 were diluted to 150 µM with TNKM (10 mM Tris-HCl pH 8.0, 100 mM NaCl, 50 mM KCl and 2 mM MgCl2) and supplemented with 175 µM ATP. Note: FICD was excluded from the resulting crystals of oligomeric BiP (see below).
 
-## Biotinylated J-domains
+#### Biotinylated J-domains
 
 The J-domain of E. coli DnaJ (amino acids 1–72; UK2470) as well as the wild-type (UK1965; J) and H422Q mutant (UK1966; JQPD) J-domain of mammalian ERdj6 (amino acids 390–455) were expressed with an AviTag-His6 sequence at the C-terminus in BL21 T7 Express lysY/Iq cells grown in LB medium containing 50 µg/ml kanamycin. The cells were grown at 37°C to OD600 nm 0.5, transferred to 18°C for 20 min, and expression was induced with 0.5 mM IPTG. The cells were incubated for 16 hr at 18°C during which the recombinant proteins were biotinylated on the AviTag to sufficient degree by the endogenous E. coli BirA biotin ligase. Afterwards, the cells were collected by centrifugation and lysed in buffer G (50 mM Tris-HCl pH 8, 500 mM NaCl, 20 mM imidazole) containing protease inhibitors (1 mM PMSF, 2 µg/ml pepstatin, 8 µg/ml aprotinin, 2 µM leupeptin), 1 mM MgCl2, 0.1 mM TCEP, 0.1 mg/ml DNaseI, and 0.02 mg/ml RNaseA using an EmulsiFlex‐C3 high-pressure homogeniser. The lysates were cleared for 30 min at 45,000 × g at 4°C and the supernatants were incubated with 1 ml Ni-NTA agarose beads per 1 l expression culture for 2 hr rotating at 4°C. The beads were then transferred to a 49 ml gravity-flow column, washed with 1 CV buffer I (50 mM Tris-HCl pH 8, 300 mM NaCl, 10 mM imidazole, 5 mM β‐mercaptoethanol) and with buffer I supplemented sequentially with (i) 1 M NaCl, (ii) 10 mM MgCl2 + 3 mM ATP, or (iii) 0.5 M Tris–HCl pH 8 + 1 mM TCEP (2 CV each), followed by 2 CV buffer I containing 35 mM imidazole. Proteins were eluted in buffer J (50 mM Tris-HCl pH 8, 300 mM NaCl, 250 mM imidazole) and dialysed against TNM (50 mM Tris-HCl pH 8, 150 mM NaCl, 2 mM MgCl2) for 16 hr at 4°C and for further 6 hr against fresh TNM. The protein solutions were frozen in aliquots and stored at −80°C for Bio-Layer interferometry experiments.
 
-## X-ray crystallography
+### X-ray crystallography
 
 Concentrated NBD protein preparations (see above) of hamster BiP (UK2039), human Hsp70 (UK2532), and human Hsc70 (UK2533) were adjusted to ∼50 mg/ml. The preparations were supplemented with an additional 7 mM CaCl2 and 2 mM ADP. Crystallisation of NBDs was performed in 96-well sitting drop plates by combining 200 nl protein solution with 200 nl reservoir solution and equilibration at 20°C against 70 µl reservoir solution. Crystallisation of lid-truncated BiP oligomers was achieved by mixing 100 nl of protein solution and 100 nl reservoir solution. Diffraction quality crystals grew in the following solutions: BiP(NBD) — 26% PEG6000, 0.2 M CaCl2, 0.1 M NaOAc pH 5; Hsp70(NBD) — 10% PEG8000, 0.1 M Tris pH 8.4, 0.2 M CaCl2; Hsc70(NBD) — 24% PEG3350, 0.2 M CaOAc; apo BiP oligomer — 20% PEG3350, 0.1 M Bis-Tris Propane pH 7.5, 0.2 M Na3Citrate; ADP-bound BiP oligomer — 20% PEG3350, 0.2 M K3Citrate. Crystals were soaked in cryosolution (the well solutions containing additional 25% [v/v] glycerol) and snap frozen in liquid nitrogen. Diffraction data were collected at the Diamond Light Source beamlines i03, i04, and i24 (Diamond Light Source, United Kingdom; see Table 1) and processed by the XIA2 pipeline (Winter, 2010) implementing Mosflm (Battye et al., 2011) or XDS (Kabsch, 2010) for indexing and integration, Pointless (Evans, 2011) for space group determination, and Aimless (Winn et al., 2011) for scaling and merging. All structures were solved by molecular replacement in Phaser (McCoy et al., 2007). NBD datasets were solved by using BiP nucleotide binding domain (PDB 3IUC) as the search model. BiP oligomer structures were solved by searching for an ensemble of apo BiP’s NBD and SBD, taken from PDB 6HAB. Manual model building was carried out in COOT (Emsley et al., 2010) and further refinements were performed in refmac5 (Winn et al., 2001) and phenix.refine (Liebschner et al., 2019). The final refinement statistics are summarised in Table 1. The structural graphs were generated with UCSF Chimera (Pettersen et al., 2004) and Pymol (version 1.3 educational). CheckMyMetal (Zheng et al., 2017) has been used for metal validation. The polder maps in Figure 6—figure supplement 1A were calculated using phenix.polder (Liebschner et al., 2017) by omitting ADP, Ca2+, and Ca2+-coordinated water molecules.
 
-## NADH ATPase assay
+### NADH ATPase assay
 
 BiP (UK173), J (UK1965), and JQPD (UK1966) proteins were diluted from concentrated stocks and exposed to ATP and β-NADH to start the reactions. Proteins were used at final concentrations as indicated. The reactions were performed in HK solution (50 mM HEPES-KOH pH 7.4, 100 mM KCl) containing 10 mM MgCl2, 0.05% Triton X-100, 1 mM TCEP. The reactions also contained 4 mM ATP, 3 mM Phospho(enol)pyruvic acid (PEP; Sigma, cat. # P0564), 0.25 mM β-NADH (Sigma, cat. # N8129), and pyruvate kinase/lactic dehydrogenase enzyme mix (diluted final 1:45; Sigma, cat. # P0294). Where indicated 3 mM CaCl2 was present. The reactions were carried out in a final volume of 110 µl in 384-well microplates (µClear; Grainer bio-one, cat. # 781096) and β-NADH absorbance at 340 nm (A340) was measured over time at 25°C with a Clariostar plate reader (BMG Labtech). Linear regression analysis was performed with Prism 8 (GraphPad) and the ATP hydrolysis activity was calculated using the molar extinction coefficient of β-NADH (ε = 6220 M−1 cm−1).
 
-## Malachite green ATPase assay
+### Malachite green ATPase assay
 
 Malachite green (MG) reaction solution was prepared freshly by combining stock solutions of MG dye (0.111% malachite green, 6 N sulphuric acid), 7.5% ammonium molybdate, and 11% Tween 20 in a 5:1.25:0.1 ratio. Samples of BiP protein (UK173) at 5 µM were prepared in HK solution containing 3 mM MgCl2 and 3 mM ATP in a final volume of 20 µl. Where indicated ADP and CaCl2 was added. The samples were incubated for 1.5 hr at 26°C. Afterwards, 15 µl of each sample were diluted with 135 µl water on a 96-well plate, mixed with 50 µl MG reaction solution, and incubated for 2 min at room temperature. Twenty µl of a 34% sodium citrate solution were added to each well. After further 30 min incubation at room temperature, the absorbance at 623 nm (A623) was measured with a plate reader (SpectraMax, Molecular Devices). Standard curves from serial dilutions of KH2PO4 served as a reference to calculate the specific ATPase activity.
 
-## Nucleotide- binding assays
+### Nucleotide- binding assays
 
 Nucleotide release and binding measurements were performed using the fluorescent nucleotide analogues MABA-ADP (Jena Bioscience, cat. # NU-893-MNT) and MABA-ATP (Jena Bioscience, cat. # NU-806-MNT) carrying a MANT moiety whose fluorescence increases upon binding to Hsp70s (Theyssen et al., 1996). The measurements were started by manually adding 55 µl of solution A to 5 µl of solution B (specified below) in a quartz cuvette (Hellma Analytics) and fluorescence (excitation 360 nm, emission 420 nm) was detected over time with a fluorescence spectrometer (Perkin Elmer LS55) at 26°C. The dead time between sample mixing and signal recording was ∼ 1 s. All solutions contained 50 mM HEPES-KOH pH 7.4, 100 mM KCl.
 
@@ -227,15 +779,15 @@ To measure nucleotide release, 1.42 µM fluorescent nucleotide analogues were in
 
 The association rate constants (Figure 3C) were determined by combining nucleotide-free BiP (UK173) or BiPT229A (UK838) proteins (in solution A) with MABA-ADP or MABA-ATP (in solution B) at the start of the measurement. Solutions A and B contained either 1 mM MgCl2 or CaCl2. Each association rate was calculated from six individual measurements, covering a final protein concentration range from 1.3 µM to 7.8 µM. For that, the data were fitted to a one phase exponential function and the observed rates (kobs) were plotted against the protein concentration to calculate association rate constants (kon) with the equation kobs = kon[protein] + koff using the dissociation rate constants (koff) determined separately under the same conditions.
 
-## Bio-Layer interferometry (BLI)
+### Bio-Layer interferometry (BLI)
 
 BLI experiments were performed on the FortéBio Octet RED96 System (Pall FortéBio) in buffer solution containing 50 mM HEPES-KOH pH 7.4, 100 mM KCl, 0.2 mM TCEP, and 0.05% Triton X-100 (HKTTx). Nucleotide and divalent cations were added as indicated. Streptavidin (SA)‐coated biosensors (Pall FortéBio) were hydrated in HKTTx solution for at least 10 min prior to use. Experiments were conducted at 28°C and 700 rpm shake speed and binding signals were recorded at an acquisition rate of 10 Hz. BLI reactions were prepared in 200 μl volumes in 96‐well microplates (greiner bio‐one, cat. # 655209). The following assay steps were performed: After an initial equilibration step in HKTTx solution (I), JDPs (J, UK1965 or JQPD, UK1966) carrying a biotinylated Avi-tag (each at 5 µM in HKTTx) were loaded until a binding signal of ∼0.4 nm was reached. After a brief wash step in assay solution (III) the binding sites on the sensors were saturated with P15 peptide (ALLLSAPRRGAGKK, biotinylated on the C-terminal lysine; custom synthesised by GenScript, Piscataway, NJ) solubilised at 100 nM in HKTTx solution (IV). The sensors were then washed in HKTTx until a stable baseline signal was established (V). Association of BiP or other Hsp70s was performed in HKTTx solution containing 3 mM MgCl2, 1.5 mM ATP and the indicated proteins at 5 µM (VI). To allow for dissociation, the sensors were transferred to protein-free assay solution with variable components as indicated (VII). The data were processed in Prism 8.4 (GraphPad) and dissociation rate constants were obtained by fitting to a one phase exponential function. When DnaK was analysed (Figure 5C), a JDP containing the J-domain of DnaJ was immobilised (UK2470).
 
-## Differential scanning fluorimetry (DSF)
+### Differential scanning fluorimetry (DSF)
 
 DSF measurements were performed on a Bio-Rad CFX96 Touch Real-Time PCR Detection System in 96-well plates (Bio-Rad Hard-Shell, cat. # HSP9601) sealed with transparent adhesive film (Bio-Rad Microseal ‘B’ Adhessive Sealer, cat. # MSB1001). Samples were prepared in a volume of 25 µl. The solutions contained 50 mM HEPES–KOH pH 7.4, 100 mM KCl, 1 mM TCEP and SYPRO orange protein gel stain at a 1:500 dilution of the manufacturer’s stock (Invitrogen, cat. # S6651). The samples also contained 5 µM NBD protein, 4 mM ADP, and 6 mM MgCl2 or CaCl2 as indicated. The plates were centrifuged for 1 min at 150 × g before the experiment. Temperature scanning was performed in 0.5°C intervals from 20°C to 95°C and SYPRO orange fluorescence was detected. The data were then analysed in Prism 8.4 (GraphPad) and the melting temperature (Tm) was determined as the temperature corresponding to the global minimum of the negative first derivatives of the melt curves.
 
-## Size-exclusion chromatography (SEC)
+### Size-exclusion chromatography (SEC)
 
 Samples for analytical SEC were prepared in SEC buffer (50 mM HEPES-KOH pH 7.4, 150 mM KCl, 10 mM MgCl2) in a final volume of 25 µl. The samples were incubated for at least 20 min at 25°C before 10 µl were injected onto a SEC-3 HPLC column (300 Å pore size; Agilent Technologies, Santa Clara, CA) equilibrated with SEC buffer. The runs were performed at a flow rate of 0.3 ml/min at 26°C and peptide bond absorbance at 230 nm (A230) was detected and plotted against the elution time. A gel filtration standard (Bio-Rad, cat. # 151–1901) was applied as a size reference and the elution peaks of Thyroglobulin (670 kDa), γ-globulin (158 kDa), Ovalbumin (44 kDa), and Myoglobulin (17 kDa) are indicated.
 
@@ -245,6 +797,6 @@ For the experiment shown in Figure 7D, BiP at 50 µM was incubated for 6 hr at 2
 
 For the experiment shown in Figure 7—figure supplement 2, untreated BiP protein or SubA-treated, purified BiP oligomers (both at 20 µM) were incubated without or with 4 mM ATP in SEC buffer solution at 26°C as indicated. The BiP oligomers had been thawed from frozen stocks before the experiment.
 
-## t-tests
+### t-tests
 
 Unless stated otherwise, unpaired, parametric, t-tests were applied where indicated using GraphPad Prism 8.

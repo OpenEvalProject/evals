@@ -46,13 +46,13 @@ However, due to patient and tumor heterogeneity, there is no clear indication of
 
 ## Results
 
-## Relationship between tumor structure and tumor mechanical properties in different preclinical carcinoma mouse models
+### Relationship between tumor structure and tumor mechanical properties in different preclinical carcinoma mouse models
 
 One key aspect when testing immunotherapeutic agents is the use of relevant preclinical models that closely mimic the properties of human solid tumors. Human carcinomas derive from epithelial cells and therefore harbor a typical though heterogeneous structure with tumor cells forming compact islets or nests surrounded by the stroma, enriched in ECM proteins, fibroblasts, blood vessels, and immune cells. To unravel the relationship between tumor growth, ECM remodeling, stiffening, and immune infiltration, we characterized the tumor structure and the mechanical properties of five different preclinical models, recapitulating the structural heterogeneity of different carcinomas (Supplementary file 1): a subcutaneous model of cholangiocarcinoma (EGI-1), a subcutaneous (MET-1) and a transgenic model (MMTV-PyMT) of mouse breast carcinoma, and an orthotopic (mPDAC) and a subcutaneous (KPC) model of mouse PDAC. A multiscale evaluation of the mechanical properties of the tumors was performed. At the macroscale, we measured tumor stiffness during tumor growth using SWE, a non-invasive imaging technique that allows the quantification and mapping of tumor stiffness (Figure 1A, Supplementary file 2). The presence of very stiff regions, defined as areas with an elastic modulus > 40 kPa (Marangon et al., 2017), in the tumor was quantified together with the average stiffness of the tumor (Figure 1B, Supplementary file 2). At the micron-scale, we evaluated tumor organization and fibrosis using hematoxylin–eosin–Safran (HES) (Figure 1C) and Sirius Red staining (Supplementary file 2). Sirius Red is a highly specific stain for collagen fibers that combined with polarizing microscopy allows differentiating thin collagen fibrils from thick and densely packed collagen fibers (Rittié, 2017). Under polarized light, thin fibers show a greenish-yellow birefringence, whilst thicker and densely packed fibers give an orange-red birefringence. By separating these two colors, it is possible to quantify the amount of thick and densely packed fibers present in the tumor (Supplementary file 2). The fibrillar collagen network was determined using second-harmonic generation (SHG) imaging, which allows to analyze the architecture and density of fibrillar collagen without having to use detection antibodies (Figure 1D, Supplementary file 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig1-v2.jpg)
 
-**Figure 1.:** (A) Tumor volume and tumor mean stiffness relationship. Tumor volume was measured using a caliper or ultrasound, whilst tumor mean stiffness was measured using SWE. (B) The percentage of stiff regions in relation to tumor volume. The presence of very stiff regions with an elastic modulus > 40 kPa was quantified using data from the stiffness map extracted from the SWE images. (C) Comparison of the histological diversity within the tumor models. Representative images of each tumor model (scale bar = 100 µm). (D) SHG images of the collagen network in each of the models at the end point of the experiment. Scale bar = 20 µm. EGI-1 (n = 30 mice from three independent experiments); KPC (n = 34 mice from three independent experiments); MMTV-PyMT (n = 5 mice, 10 tumors per mouse from two independent experiments); mPDAC (n = 7 mice from two independent experiments); and MET-1 (n = 12 mice from two independent experiments).Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Tumor volume and tumor mean stiffness relationship. Tumor volume was measured using a caliper or ultrasound, whilst tumor mean stiffness was measured using SWE. (B) The percentage of stiff regions in relation to tumor volume. The presence of very stiff regions with an elastic modulus > 40 kPa was quantified using data from the stiffness map extracted from the SWE images. (C) Comparison of the histological diversity within the tumor models. Representative images of each tumor model (scale bar = 100 µm). (D) SHG images of the collagen network in each of the models at the end point of the experiment. Scale bar = 20 µm. EGI-1 (n = 30 mice from three independent experiments); KPC (n = 34 mice from three independent experiments); MMTV-PyMT (n = 5 mice, 10 tumors per mouse from two independent experiments); mPDAC (n = 7 mice from two independent experiments); and MET-1 (n = 12 mice from two independent experiments).
 
 In the EGI-1 cholangiocarcinoma model, tumor stiffening and tumor growth have a strong positive correlation (Figure 1A). The stiffness distribution is highly heterogeneous, presenting 20% of stiff regions (>40 kPa) on average that goes up to 50–60% in tumors with higher volume. In terms of architecture, the tumor and its extensive stroma compartment, occupying around 20% of the tumor, are well separated. This is a typical trait of desmoplastic tumors and the model accurately reproduces the architecture of human cholangiocarcinoma. Its collagen network is characterized by long (85.9 ± 42.0 µm) and thick (7.4 ± 2.2 µm) collagen fibers that are densely packed (6% of the tumor) (Figure 1D, Supplementary file 2).
 
@@ -64,15 +64,51 @@ The orthotopic murine PDAC (mPDAC) model has a very different profile compared 
 
 In human breast cancer, a significant correlation between tumor stiffness and tumor size was demonstrated (Evans et al., 2012; Song et al., 2018). Here, our analysis enabled us to confirm such correlation in different mouse tumor models covering three types of carcinomas. In addition, we show a correlation between tumor stiffness measured non-invasively with collagen accumulation associated with a segregated architecture of thick and densely packed collagen fibers (Sirius red positive) surrounding tumor nests. In contrast, tumors with an entangled and thin mesh of collagen fibers present lower rigidity despite overall high collagen content. Particularly the appearance of stiff regions > 40 kPa is seen as a physical biomarker of intratumor heterogeneity and ECM segregation. This analysis maps out potentially relevant preclinical tumor models, which might reproduce the diverse fibrotic evolutions of human breast, pancreatic, and bile duct tumors and their architecture heterogeneity.
 
-## LOX modulates tumor stiffness and the ECM organization
+### LOX modulates tumor stiffness and the ECM organization
 
 The panel of tumor stroma structures reported above allows us to investigate the direct effects of ECM modulating agents in situations mimicking the heterogeneity observed in human carcinoma. Thus, we sought to determine whether beta-aminopropionitrile (BAPN), an inhibitor for LOX enzymatic activity, could modulate tumors’ mechanical properties in concert with the stroma architecture (Levental et al., 2009). For these experiments, BAPN was administered in the drinking water of mice upon tumor cell implantation and until their sacrifice for most models, except for the MMTV-PyMT model that was treated approximately at the time that tumors start to spontaneously develop. LOX stabilizes collagen fibers by enzymatic reactions that culminate in the formation of trivalent mature crosslinks including pyridinoline (PYD) and deoxypyridinoline (DPD) (Yamauchi et al., 2018). PYD and DPD have an intrinsic fluorescence (Richards-Kortum and Sevick-Muraca, 1996), which can be measured by two-photon microscopy (Ex 720 nm, Em 400 nm) on tissue sections (Marturano et al., 2014). Here, we adopted a similar strategy and assessed these two LOX-generated crosslinks in tumor slices from control and BAPN-treated KPC-bearing mice. Our data indicate that the average fluorescence signals of PYD and DPD, measured in SHG-positive regions, were significantly decreased in BAPN as compared to control conditions (Figure 2—figure supplement 1). These results suggest that BAPN specifically blocks LOX enzymatic activity. We then examined the effect of LOX inhibition on tumor stiffness (Figure 2A,C) and on the presence of stiff regions (Figure 2B). Results show that all models, except for MET-1, undergo a reduction in mean stiffness when LOX is inhibited. EGI-1 and KPC models both show the most striking differences (Figure 2A,C). Changes are mainly perceived at late stages of tumor developments since, in these models, tumor stiffness is positively correlated with tumor growth. In the MMTV-PyMT model, however, significant differences were noted throughout the development of the tumor. For the mPDAC model, tumor stiffness was only evaluated at the end of the BAPN treatment. A significant decrease in mean tumor stiffness is seen in BAPN-treated mPDAC tumors.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-v2.jpg)
+
+**Figure 2.:** (A) Tumor stiffness measured by SWE in control and BAPN-treated (LOX inhibitor) tumors in relation to tumor volume for EGI-1, MMTV-PyMT, and KPC tumor models. For the mPDAC tumor model, stiffness was only measured at the endpoint of the experiment (*p-value<0.05, **p-value<0.01, ***p-value<0.001 Student’s t-test). (B) Percentage of tumor area with stiffness > 40 kPa at three different time points in the late stages of tumor development. (C) Illustrative examples of SWE images of each on the tumors at the last time point of the experiment (EGI-1 – day 30, KPC – day 41, MMTV-PyMT – day 55, mPDAC – day 21). EGI-1 (n = 30 mice/group from three independent experiments); KPC (n = 34 mice/group from three independent experiments); MMTV-PyMT (n = 5 mice/group, 10 tumors per mouse from two independent experiments); mPDAC (n = 7 mice/group from two independent experiments), and MET-1 (n = 12 mice/group from two independent experiments).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Two-photon images of fibrillar collagen (SHG) and collagen crosslinks (720 nm excitation, 400 nm emission) in a KPC tumor. Boxed areas are represented at higher magnification at the right. SHG-positive regions are delineated with yellow lines. (B) Quantification of collagen crosslink density in control and BAPN-treated conditions. Average fluorescence signals were measured in collagen-positive regions. Results are from two tumors of each condition. Student’s t-test: ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Evolution of tumor growth in control and treated tumors (n = 30 mice/group from three independent experiments). (B) Correlation of tumor mean stiffness and tumor volume for control and treated tumors (***p-value<0.01 ANCOVA, n = 30 mice/group from three independent experiments). (C) Representative SWE images of control and BAPN-treated tumors at days 7, 21, and 30 of treatment. (D) Percentage of the tumor with stiffness > 40 kPa in tumors at days 18, 22, 26, and 30 of treatment. (E) Representative histogram of stiffness distribution in a control and a BAPN-treated tumor at day 30.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Evolution of tumor growth in control and treated tumors (n = 34 mice/group from three independent experiments). (B) Correlation of mean tumor stiffness and tumor volume for control and treated tumors (***p-value<0.01 ANCOVA, n = 34 mice/group from three independent experiments). (C) Representative SWE images of control and BAPN-treated tumors at days 29, 34, and 41 of treatment. (D) Percentage of the tumor with stiffness > 40 kPa in tumors at days 34, 37, and 41 of treatment. n = 34 mice/group from three independent experiments. (E) Representative histogram of stiffness distribution in a control and a BAPN-treated tumor at day 41. n = 34 mice/group from three independent experiments. (F) Representative SWE images of stiff regions (>40 kPa) in control and treated tumors.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Evolution of tumor growth in control and treated tumors (n = 5 mice/group, 10 tumors per mouse from two independent experiments). (B) Correlation of mean tumor stiffness and tumor volume for control and treated tumors. n = 5 mice/group, 10 tumors per mouse from two independent experiments. (C) Representative SWE images of control and BAPN-treated tumors at day 42 of treatment. (D) Percentage of the tumor with stiffness > 40 kPa in tumors at days 39, 47, and 55 of treatment. n = 5 mice/group, 10 tumors per mouse from two independent experiments. (E) Representative histogram of stiffness distribution in a control and a BAPN-treated tumor at day 55.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Tumor volume measured by ultrasound imaging, at day 21 of treatment (**p-value<0.01, Student’s t-test, n = 7 mice/group). (B) Representative SWE images of control and BAPN-treated tumors at day 21. (C) Percentage of the tumor with stiffness > 40 kPa in tumors at day 21. (D) Representative histogram of stiffness distribution in a control and a BAPN-treated tumor at day 21.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Evolution of tumor growth in control and treated tumors (n = 12 mice/group). (B) Correlation of tumor mean stiffness and tumor volume for control and treated tumors. (C) Representative SWE images of control and BAPN-treated tumors at day 26 of treatment.
 
 Notably, BAPN treatment did not affect tumor growth in most models (Figure 2—figure supplements 2A–6A), except for mPDAC (Figure 2—figure supplement 5A). To verify that the variation in tumor stiffness was not due to a difference in tumor volume, the mean tumor stiffness of control and treated mice were compared at different tumor volumes (Figure 2—figure supplements 2C–6C). In both KPC and EGI-1 tumors, a clear difference in mean tumor stiffness can be seen in tumors with a volume > 400 mm3 (Figure 2—figure supplements 2C–3C).
 
 We also explored whether the presence and proportion of stiff regions was reduced when LOX was inhibited (Figure 2B). The percentage of control tumor area with a mean stiffness > 40 kPa increased with time (and with tumor volume) within the non-treated tumor indicating that there is not only an increase of overall mean stiffness but also an increase of the heterogeneity of stiff regions. However, this percentage was significantly reduced in BAPN-treated tumors with marked differences observed in the KPC model and to a lesser extent in EGI-1 and MMTV-PyMT models. In mPDAC, BAPN-treated tumors did not display stiff regions (Figure 2—figure supplement 5B–D). The only model that does not respond to LOX inhibition by stiffness reduction is MET-1 (Figure 2—figure supplement 6B–C), in line with our previous data showing an absence of tumor stiffening during tumor growth. Overall, our results clearly illustrate: (1) the heterogeneity of tumor response to an ECM-targeting agent, (2) the potential of non-invasive SWE elastography to measure a macroscopic physical marker – stiffness – that predicts this response.
 
 Given the effects of LOX inhibition at a macro scale, we decided to delve into the changes induced at the level of the collagen fiber network through an in-depth quantitative evaluation of collagen fiber width (Figure 3A), orientation (Figure 3B,C), curvature (Figure 3D), and the presence of regions with thick and densely packed fibers (Figure 3E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig3-v2.jpg)
+
+**Figure 3.:** (A) Collagen fiber width distribution measured from SHG images (***p-value<0.001, Student’s t-test, 50–70 images/tumor, n = 3 mice/group from three independent experiments). (B) Fiber orientation defined by the coefficient of variation (CV) (***p-value<0.001, Student’s t-test, 40–50 images/tumor, n = 3 mice/group from three independent experiments). (C) Representative example of fiber orientation distribution. (D) Collagen fiber curvature defined by the curvature ratio (***p-value<0.001, Student’s t-test, 40–50 images/tumor, n = 3 mice/group from three independent experiments). (E) Percentage of red-orange birefringent fibers combining Red Sirius staining and polarized microscopy, orange-red fibers correspond to thick and packed regions (*p-value<0.05, ***p-value<0.001, Student’s t-test, 20–30 images/tumor, n = 3 mice/group from three independent experiments). (F) SHG images of collagen networks in EGI-1, MMTV-PyMT, mPDAC, and KPC control and BAPN-treated tumors. Illustrative scheme indicating the changes in width, orientation and curvature of collagen fibers induced by BAPN treatment. Scale bar = 50 µm. Images are representative of three experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Surface covered by red-orange birefringent fibers that correspond to thick and packed regions in EGI-1 MMTV-PyMT, mPDAC, and KPC tumor models. Scale bar = 100 µm.
 
 A significant reduction of collagen fiber width distribution was observed in EGI-1, KPC, and mPDAC models, whilst fibers in the MMTV-PyMT tumor model did not display a significant change in their width (Figure 3A). The most substantial difference was seen in the EGI-1 model, where collagen fiber width was decreased by 9.4% on average (6.7 µm versus 7.4 µm). Changes in mPDAC and KPC were less pronounced, with a reduction of 4.4% and 5%, respectively (Supplementary file 3). The inhibition of LOX did not affect collagen fiber length in any of the models (Supplementary file 3).
 
@@ -84,17 +120,45 @@ Finally, LOX inhibition also significantly decreased the surface covered by thic
 
 In vivo stiffness imaging and ex vivo characterization of the ECM structure were completed by ex vivo mechanical evaluation of isolated tissue samples with atomic force microscopy (AFM) nanomechanical measurements and plate shear rheometry at the tissue level in the KPC model. Figure 4 shows the mean values of storage modulus (G’) of control and BAPN-treated tumors. It can be noted that tumors treated with BAPN were softer than control ones, with mean stiffness of 1.80 ± 0.51 kPa compared to 4.15 ± 1.92 kPa for the control. These results are in line with SWE measurements in vivo confirming a significant reduction in the mean stiffness of KPC tumors treated with a LOX inhibitor. In contrast to bulk rheometry, AFM reveals the spatial heterogeneity of Young’s moduli at the sub-cellular level measured on six controls (Figure 4—figure supplement 1) and six BAPN-treated tumors (Figure 4—figure supplement 2). For each sample, high heterogeneity in tumor stiffness can be observed, as previously seen in other types of solid tumors like breast cancer (Plodinec et al., 2012). AFM measurements indicated that treatment of mice with BAPN leads to a narrower Young’s modulus distributions shifted to lower values of elastic modulus in comparison to the control samples (mean Young's modulus of 0.82 ± 1.58 kPa versus 1.70 ± 1.66 kPa, respectively) (Figure 4B). This confirms that the high heterogeneity in local tissue mechanical properties of KPC tumor can be reduced upon treatment with a LOX inhibitor. Both local and global measurements confirm the normalization of tumor tissue mechanical properties mediated by LOX inhibition with a drastic reduction in the linearized tightly packed collagen fibers that contribute to tumor stiffness heterogeneity and global enhancement in non-treated KPC tumors.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig4-v2.jpg)
+
+**Figure 4.:** (A) Rheological properties of tumor samples measured using a plate shear rheometer. Mean storage modulus (G’) for all control and BAPN-treated samples ± SD are presented (for 5% sample compression). (B) The Young’s modulus values distributions obtained for all control and treated tumor samples using the AFM indentation technique. Inset in (B) shows tissues’ Young’s modulus mean values ± standard deviation to highlight the difference between control and BAPN tissues. Statistical significance was determined using a two-tailed Student’s t-test for overall values (***p-value<0.001, Student’s t-test, n = 6 tumors/group from three AFM experiments; *p-value<0.05, Student’s t-test, n = 5 tumors/group from three rheometer experiments).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** KPC tumor model (control) using AFM indentation technique with maximal indentation depth by AFM probe equal 2 µm. Distributions were fitted with the probability density function of the log-normal distribution and corresponding mean ± SD values are presented on the right side of each distribution.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** KPC tumor model (BAPN) using AFM indentation technique with maximal indentation depth by AFM probe equal 2 µm. Distributions were fitted with the probability density function of the log-normal distribution and corresponding mean ± SD values are presented on the right side of each distribution.
+
 Overall, our results demonstrate the rationale of targeting LOX enzymatic activity for normalizing tumor mechanical properties and ECM structure (mostly collagen fibers compaction, segregation, and linearity) in tumors exhibiting high tumor stiffness together with mechanical and structural heterogeneity.
 
-## LOX inhibition increased intratumoral T cell migration and infiltration
+### LOX inhibition increased intratumoral T cell migration and infiltration
 
 Previous studies performed in our group have proved that the density and orientation of the ECM can have an important impact on T cell behavior and their displacement in fresh human lung and ovarian tumor slices (Salmon et al., 2012; Bougherara et al., 2015). Motile T cells were mainly found in loose ECM stromal regions, whereas fibrotic areas were devoid of lymphocytes. Based on this, we hypothesized that LOX-dependent tumor stiffness could consequently affect T cell migration in tumors and eventually predict the T cell behavior in the various ECM environments. To test this, we performed dynamic imaging of T cell migration on fresh tumor slices from mice treated or not with BAPN. The tumor slice assay that we have established preserves the original tissue microenvironment and permits monitoring with confocal microscopy the behavior of either ex vivo purified and plated T cells or endogenous T cells labeled with directly coupled fluorescent antibodies (Peranzoni et al., 2018). EGI-1 is a xenografted tumor model, with implantation of human carcinoma cells into immune-suppressed mice that lack resident T cells. Thus, in order to evaluate T cell migration in this model we isolated human peripheral blood T cells (PBT) and activated them in vitro. We then added the activated PBT onto fresh tumor slices and analyzed their migration using real-time confocal microscopy. As the MMTV-PyMT tumor model is poorly infiltrated in host T cells (Guerin et al., 2019), we investigated the migration of exogenously purified murine-activated PBTs in the same manner as for the human EGI-1 model. In both mPDAC and KPC mice tumor models, resident tumor-infiltrating T lymphocytes were monitored after staining with directly coupled anti-CD8 antibodies (Peranzoni et al., 2018). The three parameters analyzed to assess T cell migration were cell migration speed (mean cell migration speed over 20 min), cell displacement (displacement vector between starting and final position), and straightness (ratio of cell displacement to the total length of the trajectory) of the migration trajectory (Figure 5 and Supplementary file 4).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig5-v2.jpg)
+
+**Figure 5.:** Migration of activated PBT plated onto fresh tumor slices was analyzed in EGI-1 and MMTV-PyMT tumor model, whilst resident tumor-infiltrating T lymphocytes were analyzed in mPDAC and KPC tumor model. Illustrative images of T cell migration tracks in EGI-1, MMTV-PyMT, mPDAC, and KPC tumor models. Tumor stroma (fibronectin) in red, tumor cells (EpCAM in EGI-1, MMTV-PyMT, and KPC tumor models, CD44 in mPDAC tumor models), in blue and T cells (CD8 in mPDAC and KPC, Calcein in MMTV-PyMT, and EGI-1 tumor models) in green. Tracks are color-coded to illustrate track displacement. Scale bar = 100 µm. T cell migration speed, T cell displacement, and trajectory straightness in all tumor models. ***p-value>0.001, p-value>0.05, Student’s t-test. Results are shown as mean ± SD.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of Control and BAPN-treated KPC tumors. Tumor cells (EpCAM) in blue, tumor stroma (fibronectin) in red, and T cells (CD8) in green. Scale bar = 100 µm. (B) Quantification of CD8+ T cells per mm2 in tumor islets and stroma regions in control and BAPN (*p<0.01, Student’s t-test, n = 2–3 mice/group).
+
 In control untreated tumors, T cells migrated slowly with average velocities which were relatively homogeneous in the different models except in the mPDAC model (Video 1). Average velocities ranged from 2.3 µm/min in the EGI-1 model to 4.1 µm/min in the MMTV-PyMT model. These values are in line with a number of studies including ours showing a poor migration of T cells in tumors as compared to other organs (e.g. in lymph nodes) where T cells actively migrate (Peranzoni et al., 2018). For example, the mean velocity of CD8 T cells in human lung tumors approaches 3 µm/min (Peranzoni et al., 2018). Analysis of T cell track straightness gives indices close to 0.4 consistent with previous reports on T cell displacements in tumors.
+
+![Video 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-video1.mp4.jpg)
+
+**Video 1.:** The slices stained with calcein for the T cells (green), anti-EpCAM (blue), anti-fibronectin (red) were imaged with a spinning disk confocal microscope. Tracks are color-coded according to T cell displacement length. Frame interval 30 s. The animations represent 3D reconstructions of sequential z series. A still image is shown in Supplementary file 4.
 
 The mPDAC model differs from the others since T cells were almost static during the 20 min recording (average speed of 1 µm/min and straightness of 0.1).
 
 In every tested model, LOX inhibition resulted in an overall increase in T cell migration as compared to control conditions (Figure 5, Supplementary file 4 and Video 2). However, different parameters were altered in each model depending on the nature of the T cells that were monitored. In EGI-1 BAPN-treated tumors, activated PBT cells displayed longer displacement lengths compared to untreated tumors. This was also true for MMTV-PyMT tumors. Since activated PBT are not specific to the tumor, the effects observed are due to LOX inhibition and not due to T cells engaging in stable conjugates with cancer cells through antigen recognition. In EGI-1 tumors, the trajectory straightness of activated PBTs was also significantly increased upon LOX inhibition.
+
+![Video 2.](https://cdn.elifesciences.org/articles/58688/elife-58688-video2.mp4.jpg)
+
+**Video 2.:** The slices stained with calcein for the T cells (green), anti-EpCAM (blue), and anti-fibronectin (red) were imaged with a spinning disk confocal microscope. Tracks are color-coded according to T cell displacement length. Frame interval 30 s. The animations represent 3D reconstructions of sequential z series. A still image is shown in Supplementary file 4.
 
 Effects of BAPN on the dynamics of endogenous T cells infiltrated into KPC and mPDAC tumors were then evaluated (Figure 5 and Supplementary file 4). We found that in both models, LOX inhibition leads to an increase in the displacement of T cells with a fivefold increase in the mPDAC model. In terms of cell speed, enhancements were observed only in the mPDAC model. Likewise, the trajectory straightness was increased in mPDAC models, but not in KPC tumors. In addition, we also evidenced an increased infiltration of resident T cells in KPC tumors when treated with BAPN. In control conditions, an identical number of T cells (around 100 per mm2) were found in the stroma and tumor cell regions. By comparison, BAPN treatment resulted in a threefold to fourfold increase of CD8+ T cells in both the stroma and tumor islets (Figure 5—figure supplement 1).
 
@@ -102,13 +166,25 @@ Results reported in Figure 5 have been obtained with data pooled from all mice e
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig6-v2.jpg)
 
-**Figure 6.:** (A) Correlation between mean tumor stiffness and mean T cell velocity. (B) Correlation between mean tumor stiffness and mean T cell displacement. Averaged T cell velocity and displacement were calculated from at least 50 individual cells. Each point represents values from an individual mouse. EGI-1 (n = 8 mice/group); KPC (n = 4 mice/group); MMTV-PyMT (n = 6–7 mice/group); and mPDAC (n = 4 mice/group) from two to three experiments.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Correlation between mean tumor stiffness and mean T cell velocity. (B) Correlation between mean tumor stiffness and mean T cell displacement. Averaged T cell velocity and displacement were calculated from at least 50 individual cells. Each point represents values from an individual mouse. EGI-1 (n = 8 mice/group); KPC (n = 4 mice/group); MMTV-PyMT (n = 6–7 mice/group); and mPDAC (n = 4 mice/group) from two to three experiments.
 
 Overall, these results suggest that the excessive accumulation and linearization of collagen in ECM limits T cell migration within several rigid tumors with desmoplastic evolution and that LOX-inhibiting BAPN treatment can both reverse tumor stiffening and improve T cell infiltration and migration to tumor cells. We also identify SWE tissue stiffness as a predictive physical marker of T cell motility and infiltration in desmoplastic tumors.
 
-## LOX inhibition improves response to anti-PD-1 therapy
+### LOX inhibition improves response to anti-PD-1 therapy
 
 Even though the inhibition of LOX was followed by an increase in CD8 T cell number and migration, this finding was not accompanied by major effects on tumor growth in four of the five tumor models tested (Figure 2—figure supplements 2–6). In different settings, an increase in intratumoral T cell motility is not sufficient to reduce tumor growth if T cells are still impaired in their capacity to respond to tumor antigens (Peranzoni et al., 2018). Consequently, we decided to assess whether LOX inhibition could improve the response to immune checkpoint inhibitors. The KPC model was chosen for these experiments as tumors are stiff, respond to LOX inhibition in terms of ECM normalization, and are infiltrated with T cells. KPC tumor-bearing mice were treated with BAPN combined with anti-PD-1 antibodies. Mice were treated or not with BAPN from tumor cell injection up to their sacrifice and were treated with anti-PD-1 antibodies when the tumor volume was around 80–150 mm3. At this point, the mice received four doses i.p. injection of anti-PD-1 or isotype control antibody at 4 days intervals (i.p. injection). Unlike BAPN, PD-1 blockade did not affect tumor stiffness (Figure 7—figure supplement 1A,B) nor collagen organization including fiber orientation and curvature (Figure 7—figure supplement 1C–E). Moreover, the combination therapy was similar to that of BAPN alone on all of these parameters. We then investigated the consequences of these treatments on tumor growth. As shown in Figure 7A, while treatment with single agents alone only shows non-significant reduction in tumor growth, the combination of BAPN with the checkpoint inhibitor significantly delays tumor progression. We then profiled the immune cell population in these tumors using flow cytometry and a gating strategy shown in Figure 7—figure supplement 2. We found that BAPN treatment alone significantly decreases the number of polymorphonuclear neutrophils (Figure 7B), but increases the presence of MHCII+ tumor-associated macrophages (TAMs) (Figure 7C), while the combination therapy expanded the percentage of GrzmB CD8+ T cells (Figure 7D) and the ratio of CD8+ to Treg cells (Figure 7E). We also analyzed the amount of cytokines in supernatants of whole-tumor slices derived from these experiments. Results show that the combination therapy led to an increase in TNFα and RANTES, supporting further the increase of T cell activation and infiltration and activation in this condition (Figure 7F–G). In both BAPN and BAPN combined with anti-PD-1 conditions, we observed an increase of GrzmB+ levels compared to the control condition (Figure 7H). Of note, BAPN and anti-PD-1 alone also showed a similar tendency for an increase in TNFα and RANTES, which prompted us to study the consequences of these treatments on the intratumoral T cell motility. Consistent with the data in Figure 5, LOX inhibition leads to an increase in T cell displacement within the KPC tumor (Figure 7—figure supplement 1F). We also found that PD-1 blockade alone produced a similar increase in T cell motility, whereas the combination therapy showed the same effects as treatments alone (Figure 7—figure supplement 1F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig7-v2.jpg)
+
+**Figure 7.:** (A) Tumor volume fold change after combination therapy of BAPN with anti-PD-1. n = 8 mice/group from two independent experiments. (B) CD11b+, Ly6G+, Ly6C+PMN/mg of tissue. (C) CD64+F4/80+MHCII+TAMs/mg of tissue. (D) CD8+ T cells/mg tissue. (E) CD8+ to FoxP3+Treg ratio. (F–H) Multiplex analysis of inflammatory chemokines (TNFα, RANTES, and GrzmB) produced by fresh KPC tumor slices kept in culture for 18 hr (*** p-value<0.001, * p-value<0.05, one-way ANOVA, Krustal Walis, n = 8 slices per condition from two independent experiments).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Tumor stiffness measured by SWE in control, BAPN, anti-PD1, and combination of BAPN and anti-PD1 treated tumors (**p-value<0.01, *p-value<0.05, one-way ANOVA, Kruskal–Walis, n = 8 mice/group from two independent experiments). (B) Illustrative examples of SWE of each of the conditions at day 17 post-treatment (experiment endpoint). (C) Fiber orientation defined by the coefficient of variation (CV) (***p-value<0.001, one-way ANOVA, Kruskal–Walis, 40–50 images/tumor, n = 3 mice/group). (D) Collagen fiber curvature defined by the curvature ratio (***p-value<0.001, one-way ANOVA, Kruskal–Walis, 40–50 images/tumor, n = 3 mice/group). (E) SHG images of collagen networks of KPC tumor models for the different conditions: control, BAPN, anti-PD1, combination BAPN, and anti-PD1. Scale bar = 50 µm. (F) Displacement of endogenous CD8 T cells in KPC tumor slices (n = 3 mice/group from two independent experiments). ***p-value>0.001, p-value>0.05, Student’s t-test. Results are shown as mean ± SD.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/58688/elife-58688-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Tumor immune infiltrating cells in KPC tumors were identified after exclusion of doublets and dead cells (live/deadneg;CD45+). Sequential gating allows for identification of CD4 and CD8 T cells (live/deadneg;CD45+;TCR+;CD4+; or CD8+) including GrzmB+, FoXP3, and PD-1 subsets (A) and TAM (live/deadneg;CD45+;CD11b+;Ly6C+/Ly6G+; CD64+/F480+), including MHC II + TAM subset (B).
 
 Overall, while ECM and stiffness normalization achieved through LOX inhibition increases T cell infiltration and migration, this strategy also improves the efficacy of anti-PD-1 blockade on tumor growth.
 
@@ -134,7 +210,325 @@ Although the clinical use of BAPN has been impeded by concerns regarding toxicit
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>FVB/N</td>
+      <td>Janvier Labs</td>
+      <td>FVB/N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57Bl/6J</td>
+      <td>Janvier Labs</td>
+      <td>C57Bl/6J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>MMTV-PyMT</td>
+      <td>Guy et al., 1992</td>
+      <td></td>
+      <td>Spontaneous mammary carcinoma mouse model</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>NMRI-nu (nu/nu)</td>
+      <td>Envigo</td>
+      <td>NMRI nude</td>
+      <td>HsdCpb:NMRI-Foxn1nu</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>EGI-1</td>
+      <td>German Collection of Microorganisms and Cell Cultures</td>
+      <td>ACC385</td>
+      <td>Human bile duct carcinoma cell line</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>KPC</td>
+      <td>Kind gift from Corinne Bousquet, Université Toulouse III</td>
+      <td></td>
+      <td>Cell line derived from a pancreatic tumor obtained from KrasLSL_G12D, Trp53R172H/+ mice.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>mPDAC</td>
+      <td>Kind gift from Douglas Hanahan, Swiss Institute for Experimental Cancer Research</td>
+      <td></td>
+      <td>Cell line derived from a pancreatic tumor obtained from KrasLSL_G12D; Trp53R172H/+, Cdkn2a−/+mice.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>MET-1</td>
+      <td>Kind gift from Robert Cardiff, the University of California Research (Borowsky et al., 2005)</td>
+      <td></td>
+      <td>Cell line derived from a mammary carcinoma in FVB/N-Tg (MMTV-PymT).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b (monoclonal rat anti-mouse/human, clone M1/70)</td>
+      <td>Biolegend</td>
+      <td>101201 RRID:AB_312784</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11c (monoclonal rat anti-mouse, clone N418)</td>
+      <td>Biolegend</td>
+      <td>117333 RRID:AB_11204262</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 (monoclonal rat anti-mouse, clone 30-F11)</td>
+      <td>Biolegend</td>
+      <td>103127 RRID:AB_493714</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6C (monoclonal rat anti-mouse, clone HK1.4)</td>
+      <td>Biolegend</td>
+      <td>128025 RRID:AB_10643867</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6G (monoclonal rat anti-mouse, 1A8)</td>
+      <td>Biolegend</td>
+      <td>127633 RRID:AB_2562937</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4 (monoclonal rat anti-mouse, clone GK1.5)</td>
+      <td>BD Biosciences</td>
+      <td>563050 RRID:AB_2737973</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8a (monoclonal rat anti-mouse, clone 53–6.7)</td>
+      <td>eBioscience</td>
+      <td>46-0081-82 RRID:AB_1834433</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- TCRβ (monoclonal hamster anti-mouse, clone H57-597)</td>
+      <td>BD Biosciences</td>
+      <td>562840 RRID:AB_2687544</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nkp46 (monoclonal rat anti-mouse, clone 29A1.4)</td>
+      <td>eBioscience</td>
+      <td>50-3351-82 RRID:AB_10598664</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PD-1 (monoclonal rat anti-mouse, clone 29F.1A12)</td>
+      <td>Biolegend</td>
+      <td>135221 RRID:AB_2562568</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC II (monoclonal rat anti-mouse, clone M5/114.15.2)</td>
+      <td>Biolegend</td>
+      <td>107645 RRID:AB_2565977</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD80 (monoclonal hamster anti-mouse, clone 16-10A1)</td>
+      <td>Biolegend</td>
+      <td>104705 RRID:AB_313126</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD64 (monoclonal mouse anti-mouse, clone X54-5/7.1)</td>
+      <td>Biolegend</td>
+      <td>139303 RRID:AB_10613467</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD206 (monoclonal rat anti-mouse, clone CO68C2)</td>
+      <td>Biolegend</td>
+      <td>141721 RRID:AB_2562340</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 (monoclonal rat anti-mouse, clone CI:A3-1)</td>
+      <td>BIO-RAD</td>
+      <td>MCA497SBV670 RRID:AB_323806</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FoxP3 (monoclonal rat anti-mouse, clone MF-14)</td>
+      <td>Biolegend</td>
+      <td>126405 RRID:AB_1089114</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GrzmB (monoclonal rat anti-mouse, clone QA16A02)</td>
+      <td>Biolegend</td>
+      <td>372207 RRID:AB_2687031</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fibronectin (monoclonal mouse anti-human/mouse, clone HFN7.1)</td>
+      <td>Acris Antibodies</td>
+      <td>AM00389AF-N RRID:AB_981328</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Podoplanin (monoclonal Hamster anti- mouse, clone 8.1.1)</td>
+      <td>Biolegend</td>
+      <td>127407 RRID:AB_2161929</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM (monoclonal mouse anti-human, clone 9C4)</td>
+      <td>Biolegend</td>
+      <td>324219 RRID:AB_11124342</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM (monoclonal rat anti-mouse, clone G8.8)</td>
+      <td>Biolegend</td>
+      <td>118225 RRID:AB_2563983</td>
+      <td>(10 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PD-1 (monoclonal rat anti-mouse, clone RMP1-14)</td>
+      <td>BioXcell</td>
+      <td>BE0146 RRID:AB_10949053</td>
+      <td>(200 µg)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IL-7</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-095-361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IL-15</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-095-762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Milliplex map Mouse cytokine/chemokine detection</td>
+      <td>Merck Millipore</td>
+      <td>MCYTOMAG-70K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human CD8 + T Cell Isolation Kit</td>
+      <td>Stemcell technologies</td>
+      <td>17953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD8a + T Cell Isolation Kit, mouse</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-104-075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human T cell activation kit, TransAct</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-111-160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Mouse T-Activator CD3/CD28</td>
+      <td>ThermoFischer</td>
+      <td>11456D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>beta-aminopropionitrile (BAPN)</td>
+      <td>Sigma</td>
+      <td>A3134</td>
+      <td>(3 mg/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellTrace Calcein Red-Orange</td>
+      <td>ThermoFischer</td>
+      <td>C34851</td>
+      <td>(125 nM)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J/FIJI</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>imagej.net</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 7.4</td>
+      <td>Oxford Instruments</td>
+      <td></td>
+      <td>imaris.oxinst.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism GraphPad Software version 8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo, LLC</td>
+      <td></td>
+      <td>flowjo.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 The KPC cell line was derived from a pancreatic tumor obtained from KrasLSL_G12D, Trp53R172H/+ mice (C57BL/6 background, a generous gift from Corinne Bousquet, Université Toulouse III).
 
@@ -152,27 +546,27 @@ Human CD8+ T cells were isolated from cytapheresis rings (obtained from Establi
 
 Mouse CD8+ T cells were isolated from FVB mouse spleen and lymph nodes using CD8α+ T Cell Isolation Kit (Miltenyi Biotech) following the manufacturer’s protocol. Isolated T cells were activated using the Dynabeads Mouse T-Activator CD3/CD28 for T-Cell Expansion and Activation (Thermo Fischer) following the manufacturer’s protocol. On 7 seven after activation, T cells were used for migration experiments.
 
-## In vivo studies
+### In vivo studies
 
 Mouse tumor models used in this study were as follows:
 
-## EGI-1 subcutaneous model
+#### EGI-1 subcutaneous model
 
 2 × 106 cells suspended in 60 μL of PBS were mixed with 60 μL of Matrigel growth factor reduced (Corning) and implanted subcutaneously into the flank of 5-week-old female NMRI-nu (nu/nu) mice (Envigo, France).
 
-## KPC subcutaneous model
+#### KPC subcutaneous model
 
 3 × 106 cells suspended in 50 μL of PBS were mixed with 50 μL of Matrigel growth factor reduced (Corning) and implanted subcutaneously into the flank of 6-week-old female C57BL/6J mice (Janvier, France).
 
-## MET-1 subcutaneous model
+#### MET-1 subcutaneous model
 
 106 cells suspended in 50 μL of PBS were injected subcutaneously into the flank of a 6-week-old female FVB mouse (Janvier France).
 
-## MMTV-PyMT model
+#### MMTV-PyMT model
 
 FVB MMTV-PyMT model is maintained at the Cochin Institute specific-pathogen-free- animal facility in accordance with the University Paris Descartes ethical guidelines.
 
-## mPDAC orthotopic model
+#### mPDAC orthotopic model
 
 103 cells suspended in 50 μL of PBS were injected orthotopically in the pancreas of 6-week-old FVB/n mice (Janvier, France). Tumor growth was followed through ultrasound imaging using a VEVO2100 (Visualsonics).
 
@@ -184,13 +578,13 @@ Experiments combining LOX inhibition and anti-PD1 were conducted in the KPC mode
 
 All animal experiments were performed in agreement with institutional animal use and care regulations after approval by the animal experimentation ethics committee of Paris Descartes University (CEEA 34, 16–063).
 
-## Shear wave elastography
+### Shear wave elastography
 
 SWE measurements were performed every 3–4 days during the entire follow-up of the tumor growth. Images were acquired with the ultrasound device Aixplorer (SuperSonic Imagine, Aix-en-Provence, France) using a 15 MHz superficial probe dedicated to research (256 elements, 0.125 µm pitch).
 
 The mice were anesthetized with 2% isoflurane, and their body temperature was maintained at a physiological level using a heating plate. B-mode images and SWE images were acquired simultaneously. The B-mode image allowed us to manually determine the region of interest (ROI) corresponding to the tumor contours. SWE mode was performed using the penetration mode with a color scale ranging from 0 (blue) to 40 kPa (red); this cut-off was chosen based on the results from a previous study performed by our group (Marangon et al., 2017). The area, the diameter, and a set of stiffness values (mean, minimum, maximum, and standard deviation) were recorded for the ROI as previously defined. SWE images were also analyzed using an in-house MATLAB code to recover the stiffness map. Once the stiffness map was recovered, the percentage of pixels within the ROI with stiffness values > 40 kPa with respect to the total number of pixels in the region was calculated in order to analyze the percentage of stiff regions. The normalized tumor stiffness was calculated by normalizing each time point measurement with that of the initial time point (Stiffness tn/Stiffness t0).
 
-## Tumor slice imaging
+### Tumor slice imaging
 
 Tumor slices were prepared following the protocol described previously (Peranzoni et al., 2018). Briefly, samples were embedded in 5% low-gelling-temperature agarose (type VII-A; Sigma-Aldrich) prepared in PBS. Slices (350 μm) were cut with a vibratome (VT 1000S; Leica) in a bath of ice-cold PBS.
 
@@ -200,48 +594,178 @@ To evaluate resident T cell migration in KPC and mPDAC model, tumor slices were 
 
 T cells were imaged with a DM500B upright microscope equipped with an upright spinning disk confocal microscope (Leica) equipped with a 37°C thermostatic chamber. For dynamic imaging, tumor slices were secured with a stainless steel slice anchor (Warner Instruments) and perfused at a rate of 0.8 mL/min with a solution of RPMI without Phenol Red, bubbled with 95% O2 and 5% CO2. Ten minutes later, images from a first microscopic field were acquired with a 25× water immersion objective (20×/0.95 N.A.; Olympus). For four-dimensional analysis of cell migration, stacks of 10–12 sections (z step = 5 μm) were acquired every 30 s for 20 min at depths up to 80 μm. Regions were selected for imaging when tumor parenchyma, stroma, and T cells were simultaneously present in the same microscopic field. For most of the tumors included in the study, between two and four microscopic fields were selected for time-lapse experiments.
 
-## Dynamic imaging analysis
+### Dynamic imaging analysis
 
 A 3D image analysis was performed on x, y, and z planes using Imaris 7.4 (Oxford Instruments). First, superficial planes from the top of the slice to 15 μm in depth were removed to exclude T cells located near the cut surface. Cellular motility parameters were then calculated. Tracks of >10% of the total recording time were included in the analysis.
 
-## SHG microscopy
+### SHG microscopy
 
 The images were obtained using an inverted stand Leica SP5 microscope (Leica Microsystems GmbH, Wetzlar, Germany) coupled with a femtosecond Ti:sapphire laser (Chameleon, Coherent, Saclay, France) tuned at a wavelength of 810 or 850 nm for all experiments. The laser beam was circularly polarized and a Leica Microsystems HCX IRAPO 25×/0.95 W objective was used. SHG (collagen structure) signal was detected in epi-collection through a 405/15 nm bandpass filters, respectively, by NDD PMT detectors (Leica Microsystems) with a constant voltage supply, at constant laser excitation power, allowing direct comparison of SHG intensity values. All images were then analyzed using CT-FIRE software to obtain the width and the length of the collagen fibers. To calculate the curvature ratio, line regions were drawn along the length of the fibers (A) and along the linear distance between the start and the end of the fibers (B), the curvature ratio was calculated CR = A/B. For each image at least, 15 fibers were analyzed. Fiber alignment was determined using the directionality plugin in Image J. The fiber alignment was defined by the CV of the angle for all fibers per image. The smaller the CV is, the more aligned the fibers are.
 
-## Detection of collagen crosslinks using two-photon microscopy
+### Detection of collagen crosslinks using two-photon microscopy
 
 An upright stand Leica SP5 multiphoton microscope (Leica Microsystems) was used to assess PYD and DPD natural fluorescence within tumor slices of KPC tumors. Samples were illuminated at a wavelength of 720 nm using a Ti:Sa Chameleon Ultra II (Coherent, Saclay, France) as a laser source. Fluorescence emissions were measured at a wavelength of 400 ± 25 nm. Mean fluorescent signals were measured in SHG-positive regions. The background noise of each region was subtracted.
 
-## Histology
+### Histology
 
 For most of the tumors, half of the biopsy was fixed overnight at 4°C in a periodate–lysine–paraformaldehyde solution (0.05 M phosphate buffer containing 0.1 M l-lysine [pH 7.4], 2 mg/mL NaIO4, and 10 mg/mL paraformaldehyde). After fixation, tumors were dehydrated in graded solutions of ethanol and embedded in paraffin. Five micrometer tissue sections were stained with HES and Sirius Red. For Sirius Red-stained slices, linear polarized light or bright field microscopy was performed using full-field microscopy (Statif Axio Observer Z.1, Zeiss) equipped with a linear polarizer and a 20× dry objective (Plan Achromatic [NA = 0.7]). Under polarized light, thin fibers show a greenish-yellow birefringence, whilst thicker and densely packed fibers give an orange-red birefringence. The percentage of Sirius Red staining defined the amount of thick and densely packed fibers, to do so images were split in the RGB channel and the signal in the red channel was quantified.
 
-## Atomic force microscopy and shear rheometry
+### Atomic force microscopy and shear rheometry
 
 Mechanical measurements of the control and BAPN mice tumors were performed ex vivo at the nanoscopic and macroscopic scale using AFM and shear rheometer.
 
-AFM experiments were made maximally 3 hr after sample thawing, and tissues were stored and kept in culture medium during the experiment at room temperature. Millimeter-scale samples of mice KPC model tumors were measured with a JPK Bruker NanoWizard 4 BioScience atomic force microscope working in the force spectroscopy mode. Force vs. indentation curves were collected using a silicon nitride cantilever with a spring constant of 0.6 N/m and a 4.5 μm diameter bead attached. Each sample was indented in multiple locations to account for possible heterogeneity in tissue mechanical properties. Briefly, up to nine maps consisting of 64 points corresponding to the scan area of 10 × 10 µm (for one map) per sample were made. Final Young’s modulus values were derived from the Hertz–Sneddon model applied to force vs. indentation curves (Pogoda et al., 2012), assuming the spherical shape of the probe and Poisson’s ratio equal 0.5. Distributions of Young’s modulus values for each control and treated sample, as well as the mean values along with standard deviations, were prepared.
+AFM experiments were made maximally 3 hr after sample thawing, and tissues were stored and kept in culture medium during the experiment at room temperature. Millimeter-scale samples of mice KPC model tumors were measured with a JPK Bruker NanoWizard 4 BioScience atomic force microscope working in the force spectroscopy mode. Force vs. indentation curves were collected using a silicon nitride cantilever with a spring constant of 0.6 $N/m$ and a 4.5 μm diameter bead attached. Each sample was indented in multiple locations to account for possible heterogeneity in tissue mechanical properties. Briefly, up to nine maps consisting of 64 points corresponding to the scan area of 10 × 10 µm (for one map) per sample were made. Final Young’s modulus values were derived from the Hertz–Sneddon model applied to force vs. indentation curves (Pogoda et al., 2012), assuming the spherical shape of the probe and Poisson’s ratio equal 0.5. Distributions of Young’s modulus values for each control and treated sample, as well as the mean values along with standard deviations, were prepared.
 
-For the macroscopic rheological tests, HAAKE Rheostress 6000 rheometer (Thermo Fisher Scientific), fitted with an 8 mm diameter parallel plate system, was used. Tissues were firstly cut into disk-shaped samples using an 8 mm punch. To avoid tissue slippage during the tests, samples were arranged in sand paper glued inside the Petri dishes and fixed to the rheometer bottom plate. Rheological experiments were made maximally 3 hr after tissue thawing, and all the samples were kept in humid conditions during the experiment. The rheological evaluation consisted of the oscillating shear deformation with 2% shear amplitude and frequency of 1 Hz. Final results are presented as the mean values of storage modulus (G’) of control and treated tumors ± standard deviation (SD) values.
+For the macroscopic rheological tests, HAAKE Rheostress 6000 rheometer (Thermo Fisher Scientific), fitted with an 8 mm diameter parallel plate system, was used. Tissues were firstly cut into disk-shaped samples using an 8 mm punch. To avoid tissue slippage during the tests, samples were arranged in sand paper glued inside the Petri dishes and fixed to the rheometer bottom plate. Rheological experiments were made maximally 3 hr after tissue thawing, and all the samples were kept in humid conditions during the experiment. The rheological evaluation consisted of the oscillating shear deformation with 2% shear amplitude and frequency of 1 Hz. Final results are presented as the mean values of storage modulus ($G’$) of control and treated tumors ± standard deviation (SD) values.
 
-## Flow cytometry
+### Flow cytometry
 
 Immune cells in tumors were stained as described previously (Peranzoni et al., 2018). In brief, tumors were mechanically dissociated and digested for 45 min at 37°C in RPMI 1640 with 37.5 µg/mL Liberase TM (Roche) and 8,000 U/mL DNase I from bovine pancreas (Merck Millipore). The resulting digestion was filtered through a 70 µm cell stainer and centrifuged. Red blood cell lysis with ACK buffer was performed on the remaining pellet and subsequently filtered on a 40 µm cell strainer. The cell suspension was then rinsed in PBS and stained in 96-well round-bottom plates with a LIVE/DEAD Fixable Blue Dead Cell Stain Kit (Invitrogen) for 20 min at 4°C. Cells were then washed and stained with Abs against surface proteins at a concentration of 10 µg/mL for 20 min at 4°C.
 
 The anti-mouse antibodies used were the following:
 
-AntigenFluorophoreCloneCompany CD11bPE-Cy7M1/70Biolegend CD11bBV421M1/70BD Biosystems CD11cBV605N418Biolegend CD45AF70030-F11Biolegend Ly-6CAPC-Cy7HK1.4Biolegend Ly-6GBV5101A8Biolegend CD4BV 711GK1.5BD Biosciences CD8aPerCP-e71053–6.7eBioscience TCRβBV605H57-597BD Biosciences Nkp46eFluor66029A1.4eBioscience PD-1BV42129F.1A12Biolegend MHC IIBV785M5/114.15.2Biolegend CD80FITC16-10A1Biolegend CD64PEX54-5/7.1Biolegend CD206BV605CO68C2Biolegend F4/80StarBright Violet 670CI:A3-1BIO-RAD
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CD11b</td>
+      <td>PE-Cy7</td>
+      <td>M1/70</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD11b</td>
+      <td>BV421</td>
+      <td>M1/70</td>
+      <td>BD Biosystems</td>
+    </tr>
+    <tr>
+      <td>CD11c</td>
+      <td>BV605</td>
+      <td>N418</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD45</td>
+      <td>AF700</td>
+      <td>30-F11</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>Ly-6C</td>
+      <td>APC-Cy7</td>
+      <td>HK1.4</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>Ly-6G</td>
+      <td>BV510</td>
+      <td>1A8</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD4</td>
+      <td>BV 711</td>
+      <td>GK1.5</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td>CD8a</td>
+      <td>PerCP-e710</td>
+      <td>53–6.7</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td>TCRβ</td>
+      <td>BV605</td>
+      <td>H57-597</td>
+      <td>BD Biosciences</td>
+    </tr>
+    <tr>
+      <td>Nkp46</td>
+      <td>eFluor660</td>
+      <td>29A1.4</td>
+      <td>eBioscience</td>
+    </tr>
+    <tr>
+      <td>PD-1</td>
+      <td>BV421</td>
+      <td>29F.1A12</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>MHC II</td>
+      <td>BV785</td>
+      <td>M5/114.15.2</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD80</td>
+      <td>FITC</td>
+      <td>16-10A1</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD64</td>
+      <td>PE</td>
+      <td>X54-5/7.1</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>CD206</td>
+      <td>BV605</td>
+      <td>CO68C2</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>F4/80</td>
+      <td>StarBright Violet 670</td>
+      <td>CI:A3-1</td>
+      <td>BIO-RAD</td>
+    </tr>
+  </tbody>
+</table>
 
 After surface staining, cells were fixed with BD fixation and permeabilization solution for 20 min at 4°C. In the case of intracellular staining, cells were incubated overnight with the following anti-mouse antibodies. All antibodies were used at a concentration of 10 µg/mL:
 
-AntigenFluorophoreCloneCompany FoxP3AF488MF-14Biolegend GrzmBPEQA16A02Biolegend
+<table>
+  <thead>
+    <tr>
+      <th>Antigen</th>
+      <th>Fluorophore</th>
+      <th>Clone</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FoxP3</td>
+      <td>AF488</td>
+      <td>MF-14</td>
+      <td>Biolegend</td>
+    </tr>
+    <tr>
+      <td>GrzmB</td>
+      <td>PE</td>
+      <td>QA16A02</td>
+      <td>Biolegend</td>
+    </tr>
+  </tbody>
+</table>
 
 After washing in PBS, cells were resuspended in PBS 2% FBS and analyzed with a BDFortessa flow cytometer (BD Bioscience). Data were analyzed by FlowJo software.
 
-## Cytokine detection in tumor slice supernatants
+### Cytokine detection in tumor slice supernatants
 
 Fresh KPC tumor slices were prepared as previously described and kept at 37°C in 24-well plates with 0.5 mL RPMI per well. Four to five slices were put in culture for each mouse. Eighteen hours later supernatants were collected and centrifuged at 300 × g to eliminate suspension cells. Cell-free supernatants were frozen and stored at 80°C. Granzyme B, TNFα, and RANTES (CCL5) release was assayed by Luminex technology (Bio-Plex 200 from Bio-Rad) with a customized Milliplex kit (Merck Millipore).
 
-## Statistical analysis
+### Statistical analysis
 
 Results were analyzed using the GraphPad Prism 5.0 statistical software. Data are shown as means ± standard error of the mean (SEM). For comparisons between two groups, parametric Student’s t-test or non-parametric Mann–Whitney test were used. For comparisons between more than two groups, a parametric one-way analysis of variance (ANOVA) test was followed by a posteriori Kruskal–Walis test.

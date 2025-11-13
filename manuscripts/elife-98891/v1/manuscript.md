@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01kj2bm70 School of Biomedical, Nutritional and Sport Sciences, Newcastle University Newcastle United Kingdom
-2. https://ror.org/01ee9ar58 Mixed Reality Laboratory, University of Nottingham Nottingham United Kingdom
+1. School of Biomedical, Nutritional and Sport Sciences, Newcastle University Newcastle United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))
+2. Mixed Reality Laboratory, University of Nottingham Nottingham United Kingdom ([ROR:01ee9ar58](https://ror.org/01ee9ar58))
 
 † Corresponding author
 

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Ants use debris as tools to collect and transport liquid food to the nest. Previous studies showed that this behaviour is flexible whereby ants learn to use artificial material that is novel to them and select tools with optimal soaking properties. However, the process of tool use has not been studied at the individual level. We investigated whether workers specialise in tool use and whether there is a link between individual personality traits and tool use in the ant Aphaenogaster senilis . Only a small number of workers performed tool use and they did it repeatedly, although they also collected solid food. Personality predicted the probability to perform tool use: ants that showed higher exploratory activity and were more attracted to a prey in the personality tests became the new tool users when previous tool users were removed from the group. This suggests that, instead of extreme task specialisation, variation in personality traits within the colony may improve division of labour.
+Ants use debris as tools to collect and transport liquid food to the nest. Previous studies showed that this behaviour is flexible whereby ants learn to use artificial material that is novel to them and select tools with optimal soaking properties. However, the process of tool use has not been studied at the individual level. We investigated whether workers specialise in tool use and whether there is a link between individual personality traits and tool use in the ant Aphaenogaster senilis. Only a small number of workers performed tool use and they did it repeatedly, although they also collected solid food. Personality predicted the probability to perform tool use: ants that showed higher exploratory activity and were more attracted to a prey in the personality tests became the new tool users when previous tool users were removed from the group. This suggests that, instead of extreme task specialisation, variation in personality traits within the colony may improve division of labour.
 
 ## Introduction
 
@@ -39,15 +39,366 @@ In Experiment 3, we studied the possible link between individual personality tra
 
 ## Results
 
-## Experiment 1: tool use process in whole colonies
+### Experiment 1: tool use process in whole colonies
 
 To characterise the entire tool using process, the plastic box housing the ant colony was connected to a foraging arena with a detachable bridge. At the beginning of the experiment, we placed 10 tools (small pieces of sponge) and then liquid food (diluted honey) in the foraging arena. Next, we removed the bridge so that ants in the foraging arena could not go back in the ant colony. This way we could quantify the number of workers transporting tools to the bait over the total number of workers that were present in the foraging arena. After 30 min, the connecting bridge was replaced, giving the possibility to the ants to transport tools from the bait to the nest (see Materials and methods). We used three colonies and five replicates each (one replicate = 1 trial with food and tools). The results show that the number of workers present in the foraging arena before replacing the bridge had a positive effect on the latency to drop the first tools into the bait (LMM t = −2.22, N = 15, p=0.047), meaning that the higher the number of workers present, the shorter the latency. Also, the shorter was the latency to drop the first tool into the bait, the shorter the total time needed to transport all the tools to the bait (t = 2.26, N = 15, p=0.043). However, the number of workers involved in tool use did not have any effect on the latency to drop the first tool to the bait (t = 1.34, N = 15, p=0.20) nor on the total time of tool transport to the bait (t = −0.46, N = 15, p=0.65).
 
 The latency to transport the first tool inside the nest did not depend on the dynamics of the tool transport to the bait. In particular, the latency for the first tool transport to the nest was not influenced by the latency to drop the first tool into the bait (LMM t = 0.99, N = 15, p=0.34), nor by the total time to transport all tools to the bait (t = −1.35, N = 15, p=0.21), nor by the number of workers involved in tool transport to the bait (t = −0.44, N = 15, p=0.67). The transport to the nest started always well after (124.4 ± 15.3 min, mean ± SE; Table 1) the completion of the tool transport to the bait.
 
+**Table 1.**
+ Experiment 1: tool use process in whole colonies.Summary table showing the number of workers present in the arena (# workers in arena), the latency to drop the first tool on the bait (First tool on bait), the total time devoted to tool transport to the bait (Tot. time tool transport), the number of tools transported to the bait (# tools on bait), the latency to transport the first tool to the nest from the start of the experiment (First tool to nest) and the number of workers involved in tool transport to the bait (# workers transp. tools to bait). Five replicates (R1-R5) for each colony are shown. The last column shows the number of tools transported by each worker to the bait (# tools transp. by each worker); for instance, in R1 there were two tool users, one transported nine tools and the other 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony</th>
+      <th># Workers in arena</th>
+      <th>First tool on bait (min)</th>
+      <th>Total time tool transport (min)</th>
+      <th># Tools on bait</th>
+      <th>First tool to nest (min)</th>
+      <th># Workers transp. tools to bait</th>
+      <th># Tools transp. by each worker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 R1</td>
+      <td>19</td>
+      <td>9</td>
+      <td>21</td>
+      <td>10</td>
+      <td>174</td>
+      <td>2</td>
+      <td>9; 1</td>
+    </tr>
+    <tr>
+      <td>1 R2</td>
+      <td>43</td>
+      <td>19</td>
+      <td>19</td>
+      <td>10</td>
+      <td>-</td>
+      <td>2</td>
+      <td>5; 5</td>
+    </tr>
+    <tr>
+      <td>1 R3</td>
+      <td>16</td>
+      <td>23</td>
+      <td>15</td>
+      <td>10</td>
+      <td>201</td>
+      <td>3</td>
+      <td>1; 8; 1</td>
+    </tr>
+    <tr>
+      <td>1 R4</td>
+      <td>23</td>
+      <td>13</td>
+      <td>37</td>
+      <td>9</td>
+      <td>-</td>
+      <td>2</td>
+      <td>7; 2</td>
+    </tr>
+    <tr>
+      <td>1 R5</td>
+      <td>29</td>
+      <td>4</td>
+      <td>23</td>
+      <td>10</td>
+      <td>-</td>
+      <td>2</td>
+      <td>5; 5</td>
+    </tr>
+    <tr>
+      <td>2 R1</td>
+      <td>6</td>
+      <td>26</td>
+      <td>22</td>
+      <td>10</td>
+      <td>111</td>
+      <td>5</td>
+      <td>1; 2; 1; 4; 2</td>
+    </tr>
+    <tr>
+      <td>2 R2</td>
+      <td>14</td>
+      <td>7</td>
+      <td>20</td>
+      <td>10</td>
+      <td>96</td>
+      <td>2</td>
+      <td>2; 8</td>
+    </tr>
+    <tr>
+      <td>2 R3</td>
+      <td>40</td>
+      <td>1</td>
+      <td>15</td>
+      <td>8</td>
+      <td>-</td>
+      <td>3</td>
+      <td>3; 1; 4</td>
+    </tr>
+    <tr>
+      <td>2 R4</td>
+      <td>30</td>
+      <td>3</td>
+      <td>25</td>
+      <td>10</td>
+      <td>144</td>
+      <td>2</td>
+      <td>5; 5</td>
+    </tr>
+    <tr>
+      <td>2 R5</td>
+      <td>71</td>
+      <td>2</td>
+      <td>10</td>
+      <td>10</td>
+      <td>126</td>
+      <td>3</td>
+      <td>7; 2; 1</td>
+    </tr>
+    <tr>
+      <td>3 R1</td>
+      <td>16</td>
+      <td>45</td>
+      <td>20</td>
+      <td>10</td>
+      <td>-</td>
+      <td>3</td>
+      <td>1; 4; 5</td>
+    </tr>
+    <tr>
+      <td>3 R2</td>
+      <td>9</td>
+      <td>7</td>
+      <td>6</td>
+      <td>10</td>
+      <td>172</td>
+      <td>2</td>
+      <td>8; 2</td>
+    </tr>
+    <tr>
+      <td>3 R3</td>
+      <td>23</td>
+      <td>7</td>
+      <td>7</td>
+      <td>10</td>
+      <td>222</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3 R4</td>
+      <td>4</td>
+      <td>18</td>
+      <td>24</td>
+      <td>10</td>
+      <td>178</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3 R5</td>
+      <td>7</td>
+      <td>120</td>
+      <td>31</td>
+      <td>9</td>
+      <td>214</td>
+      <td>2</td>
+      <td>5; 4</td>
+    </tr>
+  </tbody>
+</table>
+
 We then investigated further the workers that used tools. Compared to the number of workers present in the foraging arena (23.33 ± 6.04 workers, mean ± SE), only a few workers performed the tool use behaviour (2.33 ± 0.35 workers, mean ± SE; Table 1). We observed workers repeatedly transporting tools within the same trial and between trials (Table 2). Some workers participated in both parts of the task (transport of tools to the bait and also from the bait to the nests) and repeated transports by the same worker were observed in both parts of the tool use process (Table 2). In the next step, we asked whether the tool users were simply those workers that were the first to discover the location of the food and the tools. This was not the case. Indeed, an average of 11.35 ± 6.49 workers (mean ± SE, min = 3, max = 33 workers; see Table 3 for further details) contacted the tools and the food before the first tool user dropped the first tool into the bait. Paint marked tool users (N = 18) took on average 388 ± 134.16 sec (mean ± SE) to locate the tools after contacting the food for the first time. Once they had the information about the location of both the food and tools, the latency to drop the first tool into the bait was 385.67 ± 128.30 sec (mean ± SE). However, these two latencies were not correlated (rs = −0.006, N = 18, p=0.98), meaning that those workers that located the tools earlier did not necessarily start the transport of tools to the bait faster.
 
-## Experiment 2: is there specialisation in tool use?
+**Table 2.**
+ Experiment 1: tool use process in whole colonies.The tool use behaviour is composed of two parts: transport of tools to the food source (bait) and transport of imbibed tools inside the nest. The table shows the total number of tool users that participated (Particip.) in both parts of the tool use process and those that transported tools to the bait (# tool users), tool users that were marked (Marked tool users), number of workers that transported more than one tool within a trial (>1 tool within trial), and that transported more than one tool among trials (>1 tool among trials). Shown is the total for the three experimental colonies (sum of five trials each).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4">Transport to bait</th>
+      <th colspan="2">Transport to nest</th>
+    </tr>
+    <tr>
+      <th>Colony</th>
+      <th># particip. in both parts</th>
+      <th># Tool users</th>
+      <th>Marked tool users</th>
+      <th>&gt;1 tool within same trial</th>
+      <th>&gt;1 tool across trials</th>
+      <th>Marked tool users</th>
+      <th>&gt;1 tool within same trial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>11</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>15</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>9</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0</td>
+      <td>9</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Experiment 1: tool use process in whole colonies.The tool users were not the first workers obtaining information about the presence of food and tools. The table shows the number of workers that contacted both the tools and the food before the first tool was dropped into the bait; the latency (Lat.) for the first worker to obtain information (info.) about the presence of both the tools and the food and the latency for the first tool user to obtain information about the tools and the food.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony</th>
+      <th># Workers contacting tools and food before the first tool was dropped on the bait</th>
+      <th></th>
+      <th>Lat. first worker having info. about both tools and food (min)</th>
+      <th>Lat. first tool user having info. about both tools and food (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 R1</td>
+      <td>10</td>
+      <td></td>
+      <td>2.61</td>
+      <td colspan="2">7</td>
+    </tr>
+    <tr>
+      <td>1 R2</td>
+      <td>17</td>
+      <td></td>
+      <td>0.17</td>
+      <td colspan="2">17</td>
+    </tr>
+    <tr>
+      <td>1 R3</td>
+      <td>11</td>
+      <td></td>
+      <td>0.55</td>
+      <td colspan="2">23</td>
+    </tr>
+    <tr>
+      <td>1 R4</td>
+      <td>18</td>
+      <td></td>
+      <td>0.38</td>
+      <td colspan="2">2</td>
+    </tr>
+    <tr>
+      <td>1 R5</td>
+      <td>8</td>
+      <td></td>
+      <td>0.7</td>
+      <td colspan="2">3</td>
+    </tr>
+    <tr>
+      <td>2 R1</td>
+      <td>5</td>
+      <td></td>
+      <td>18.03</td>
+      <td colspan="2">25</td>
+    </tr>
+    <tr>
+      <td>2 R2</td>
+      <td>5</td>
+      <td></td>
+      <td>0.98</td>
+      <td colspan="2">7</td>
+    </tr>
+    <tr>
+      <td>2 R3</td>
+      <td>3</td>
+      <td></td>
+      <td>0.75</td>
+      <td colspan="2">1</td>
+    </tr>
+    <tr>
+      <td>2 R4</td>
+      <td>4</td>
+      <td></td>
+      <td>0.87</td>
+      <td colspan="2">2</td>
+    </tr>
+    <tr>
+      <td>2 R5</td>
+      <td>5</td>
+      <td></td>
+      <td>0.18</td>
+      <td colspan="2">1</td>
+    </tr>
+    <tr>
+      <td>3 R1</td>
+      <td>27</td>
+      <td></td>
+      <td>0.75</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>3 R2</td>
+      <td>4</td>
+      <td></td>
+      <td>1.92</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3 R3</td>
+      <td>11</td>
+      <td></td>
+      <td>1.05</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>3 R4</td>
+      <td>4</td>
+      <td></td>
+      <td>1.85</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3 R5</td>
+      <td>33</td>
+      <td></td>
+      <td>1.75</td>
+      <td>106</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experiment 2: is there specialisation in tool use?
 
 In this experiment, we investigated whether ants specialise in tool use or also transport solid food items (here cricket legs). We also tested the effect of a familiarisation-trial (pre-trial) with food and tools on naive workers. In this experiment, we focused only on the transport of tools to the bait. For the pre-trial, a group of sub-colonies (sub-colonies 1) was familiarised with the food (diluted honey) and the tools (10 pieces of sponge) separately, while the other group (sub-colonies 2) was familiarised with the tools and the food simultaneously. Therefore, workers of sub-colonies two could perform the tool use behaviour while workers of sub-colonies one could not. Immediately after this pre-trial, workers that performed tool use in sub-colonies two were removed so that we could see whether the fact of observing nestmates using tools during this pre-trial would facilitate tool use in naive workers by social learning.
 
@@ -55,9 +406,378 @@ The day after, each sub-colony was tested with liquid food and 10 tools, then wi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61298/elife-61298-fig1-v1.jpg)
 
-**Figure 1.:** Each sub-colony received honey and tools in steps 1 and 3. The yellow items represent the tools (small pieces of sponge,~1 mm3), below is shown the plate with diluted honey (0.25 ml). In step 2, the ants received five cricket legs (Acheta domestica). On day 5, the ants received 20 tools and the honey bait (A). For individual workers that transported four consecutive tools to the bait, the time needed to transport one tool significantly decreased within one trial (B). For individual workers that transported at least two consecutive tools in different trials, the time needed to transport one tool to the bait did not change among trials (C). Box plots show medians, quartiles, min-max values, outliers (black dots) and individual data points (empty circles). NS – non-significant, *: p<0.05, ****: p<0.0001.Figure 1—source data 1.The time required for the transport of each tool during consecutive transports by the same worker within a trail was analysed with LMM (Gaussian error, maximum likelihood fit). Only workers that performed four consecutive transports were included in the analysis (N = 54; second-third tool: p=0.03, second-fourth tool: p<0.001).Figure 1—source data 2.The average time needed to transport one tool by the same worker between the trials was analysed with LMM (Gaussian error, maximum likelihood fit). Up to three trials were included (N = 29; first-second trial: p=0.99; first-third trials: p=0.32).
+**Figure 1.:** Each sub-colony received honey and tools in steps 1 and 3. The yellow items represent the tools (small pieces of sponge,~1 mm3), below is shown the plate with diluted honey (0.25 ml). In step 2, the ants received five cricket legs (Acheta domestica). On day 5, the ants received 20 tools and the honey bait (A). For individual workers that transported four consecutive tools to the bait, the time needed to transport one tool significantly decreased within one trial (B). For individual workers that transported at least two consecutive tools in different trials, the time needed to transport one tool to the bait did not change among trials (C). Box plots show medians, quartiles, min-max values, outliers (black dots) and individual data points (empty circles). NS – non-significant, *: p<0.05, ****: p<0.0001.
 
 Of the 40 individually marked workers per sub-colony involved in this experiment, about 20% performed tool use during at least one of the four trials with 10 tools (Table 4). The average number of individuals per sub-colony showing tool use was 8.25 (CI95% [6.47, 10.03]). This was notably lower than 10.2 (CI95% [10.18, 10.22]), which is the average number of tool users obtained by randomly assigning the same number of observed tool use events to a simulated ant population based on the same number of individuals, sub-colonies and trials (see Simulation data of experiment 2, Supplementary file 1), and the confidence intervals do not overlap. This indicates that the individual distribution of tool use events was not random in our experiments. Of the 99 tool users in total, 64.7% performed several tool transports within the same trial and 33.3% participated repetitively in more than one trial (Table 4). The majority of these ants that performed multiple tool transport across trials (26 over 31 workers) participated in two trials (2.89 ± 0.42 per trial, mean ± SE), three workers participated in three trials and two workers in four trials (Table 5). It is important to note that the occurrences of tool use were repeatable across trials at the individual level (RICC = 0.22, N = 1880, p=0.001). Half of the workers (50.38%) that performed tool use in the final trial with 20 tools, also participated in at least one of the previous trials with 10 tools (Table 6), thus confirming that the same ants use tools over and over again, including across trials.
+
+**Table 4.**
+ Experiment 2: Is there specialisation in tool use?The total number of tool users and cricket leg transporters (transp.) and the percentage of workers that performed repeated tool use within or between trials or that participated also in the transport of cricket legs. The last column shows the number of very active workers, which participated in at least two tool use trials and one leg transport.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony/ subcolony</th>
+      <th>Total tool users</th>
+      <th>Repeats within (%)</th>
+      <th>Repeats between (%)</th>
+      <th>Transporting also legs (%)</th>
+      <th>Total leg transp.</th>
+      <th>% tool users among leg transp.</th>
+      <th>≥2 trials, ≥1 leg (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/1</td>
+      <td>6</td>
+      <td>4 (66.7)</td>
+      <td>1 (16.7)</td>
+      <td>2 (33.3)</td>
+      <td>6</td>
+      <td>33.3</td>
+      <td>1 (16.7)</td>
+    </tr>
+    <tr>
+      <td>1/2</td>
+      <td>4</td>
+      <td>3 (75)</td>
+      <td>1 (25)</td>
+      <td>1 (25)</td>
+      <td>5</td>
+      <td>20</td>
+      <td>1 (25)</td>
+    </tr>
+    <tr>
+      <td>2/1</td>
+      <td>12</td>
+      <td>7 (58.3)</td>
+      <td>2 (16.7)</td>
+      <td>1 (8.3)</td>
+      <td>1</td>
+      <td>100</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2/2</td>
+      <td>10</td>
+      <td>8 (80)</td>
+      <td>4 (40)</td>
+      <td>2 (20)</td>
+      <td>5</td>
+      <td>40</td>
+      <td>2 (20)</td>
+    </tr>
+    <tr>
+      <td>3/1</td>
+      <td>6</td>
+      <td>6 (100)</td>
+      <td>5 (83.3)</td>
+      <td>1 (16.7)</td>
+      <td>7</td>
+      <td>14.3</td>
+      <td>1 (16.7)</td>
+    </tr>
+    <tr>
+      <td>3/2</td>
+      <td>12</td>
+      <td>8 (66.7)</td>
+      <td>3 (25)</td>
+      <td>3 (25)</td>
+      <td>3</td>
+      <td>100</td>
+      <td>2 (16.7)</td>
+    </tr>
+    <tr>
+      <td>4/1</td>
+      <td>8</td>
+      <td>5 (62.5)</td>
+      <td>2 (25)</td>
+      <td>3 (37.5)</td>
+      <td>6</td>
+      <td>50</td>
+      <td>1 (12.5)</td>
+    </tr>
+    <tr>
+      <td>4/2</td>
+      <td>10</td>
+      <td>7 (70)</td>
+      <td>4 (40)</td>
+      <td>3 (30)</td>
+      <td>6</td>
+      <td>50</td>
+      <td>2 (20)</td>
+    </tr>
+    <tr>
+      <td>5/1</td>
+      <td>6</td>
+      <td>3 (50)</td>
+      <td>3 (50)</td>
+      <td>2 (33.3)</td>
+      <td>4</td>
+      <td>50</td>
+      <td>2 (33.33)</td>
+    </tr>
+    <tr>
+      <td>5/2</td>
+      <td>5</td>
+      <td>2 (40)</td>
+      <td>2 (40)</td>
+      <td>1 (20)</td>
+      <td>4</td>
+      <td>25</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6/1</td>
+      <td>14</td>
+      <td>8 (57.1)</td>
+      <td>3 (21.4)</td>
+      <td>4 (28.6)</td>
+      <td>7</td>
+      <td>57.1</td>
+      <td>2 (14.29)</td>
+    </tr>
+    <tr>
+      <td>6/2</td>
+      <td>6</td>
+      <td>3 (50)</td>
+      <td>1 (16.7)</td>
+      <td>2 (33.3)</td>
+      <td>5</td>
+      <td>40</td>
+      <td>1 (16.7)</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>8.25</td>
+      <td>5.33 (64.7)</td>
+      <td>2.58 (33.3)</td>
+      <td>2.08 (25.9)</td>
+      <td>4.92</td>
+      <td>48.31</td>
+      <td>1.25 (15.15)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Experiment 2: is there specialisation in tool use?Number of workers participating in more than one trial and the average number of tools they transported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony/ subcolony</th>
+      <th>Two trials</th>
+      <th># Tools</th>
+      <th>Three trials</th>
+      <th># Tools</th>
+      <th>Four trials</th>
+      <th># Tools</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/1</td>
+      <td>1</td>
+      <td>9.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1/2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>2/1</td>
+      <td>2</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2/2</td>
+      <td>4</td>
+      <td>3.12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/1</td>
+      <td>5</td>
+      <td>3.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/2</td>
+      <td>2</td>
+      <td>1.75</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>4/1</td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4/2</td>
+      <td>4</td>
+      <td>1.75</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/1</td>
+      <td>3</td>
+      <td>3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5/2</td>
+      <td>2</td>
+      <td>3.25</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6/1</td>
+      <td>3</td>
+      <td>1.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6/2</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>8.33</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>2.89</td>
+      <td>3.46</td>
+      <td>1.50</td>
+      <td>5.67</td>
+      <td>1.00</td>
+      <td>3.75</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Experiment 2: is there specialisation in tool use?The total number of workers using tools in the last trial (trial with 20 tools) and the number of workers that performed tool use also in previous trials (10 tools).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Colony/ subcolony</th>
+      <th>Total # tool users</th>
+      <th># Using tools in previous trials (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1/1</td>
+      <td>4</td>
+      <td>2 (50%)</td>
+    </tr>
+    <tr>
+      <td>1/2</td>
+      <td>4</td>
+      <td>1 (25%)</td>
+    </tr>
+    <tr>
+      <td>2/1</td>
+      <td>5</td>
+      <td>3 (60%)</td>
+    </tr>
+    <tr>
+      <td>2/2</td>
+      <td>5</td>
+      <td>1 (20%)</td>
+    </tr>
+    <tr>
+      <td>3/1</td>
+      <td>4</td>
+      <td>3 (75%)</td>
+    </tr>
+    <tr>
+      <td>3/2</td>
+      <td>3</td>
+      <td>2 (66.7%)</td>
+    </tr>
+    <tr>
+      <td>4/1</td>
+      <td>2</td>
+      <td>1 (50%)</td>
+    </tr>
+    <tr>
+      <td>4/2</td>
+      <td>2</td>
+      <td>1 (50%)</td>
+    </tr>
+    <tr>
+      <td>5/1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>5/2</td>
+      <td>5</td>
+      <td>3 (60%)</td>
+    </tr>
+    <tr>
+      <td>6/1</td>
+      <td>5</td>
+      <td>3 (60%)</td>
+    </tr>
+    <tr>
+      <td>6/2</td>
+      <td>8</td>
+      <td>3 (37.5%)</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td>4.27</td>
+      <td>2.09 (50.38%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Workers that performed tool use were not necessarily specialised in foraging for liquid food; they also transported cricket legs to the nest. About half (48.31%) of the workers that transported cricket legs were also tool users in at least one trial (Table 4). Among the 99 tool users, 15 workers (15.15%) showed a particularly high activity by participating in at least two tool use trials and at least one cricket leg transport (Table 4).
 
@@ -67,15 +787,15 @@ We analysed the effect of the single pre-trial -in which the sub-colonies two re
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/61298/elife-61298-fig2-v1.jpg)
 
-**Figure 2.:** There was no significant difference between the different groups of sub-colonies in the latency to transport the first tool to the bait (A) and the total time needed to transport the 10 tools to the bait (B). Sub-colonies 2: had a pre-trial (liquid food and tools simultaneously); Sub-colonies 1: without a pre-trial (received first food and then tools in absence of the food). Workers manipulating tools during the pre-trial were removed (see Materials and methods). Box plots show median, quartiles, min-max values and outliers (black dot).Figure 2—source data 1.The effect of the pre-trial on the latency to bring the first tool to the bait in the first trial was analysed with LMM (Gaussian error, maximum likelihood fit). All colonies (N = 6) and subcolonies (N = 12) were included (p=0.64).Figure 2—source data 2.The effect of the pre-trial on the total transport time observed during the subsequent first trial was analysed with LMM (Gaussian error, maximum likelihood fit). All colonies (N = 6) and subcolonies (N = 12) were included (p=0.42).
+**Figure 2.:** There was no significant difference between the different groups of sub-colonies in the latency to transport the first tool to the bait (A) and the total time needed to transport the 10 tools to the bait (B). Sub-colonies 2: had a pre-trial (liquid food and tools simultaneously); Sub-colonies 1: without a pre-trial (received first food and then tools in absence of the food). Workers manipulating tools during the pre-trial were removed (see Materials and methods). Box plots show median, quartiles, min-max values and outliers (black dot).
 
-## Experiment 3: does worker personality predict tool use?
+### Experiment 3: does worker personality predict tool use?
 
 We created eight sub-colonies each with 20 individually marked workers, which were characterised for personality traits using two tests, open-field and reaction to prey (Figure 3A,B), repeated after two days (see Materials and methods). Ants showed significant consistency over time in their behavioural responses. In the open-field test, the time spent walking in the periphery (RICC = 0.27, N = 154, CI95% [0.11, 0.41], p<0.001) and the total time spent in the central area were significantly repeatable across the two sessions (RICC = 0.43, N = 154, CI95% [0.31, 0.56], p<0.0001; Figure 3C, Source code 1). In the reaction to prey test, the time spent in contact with the prey was also highly repeatable (RICC = 0.61, N = 154, CI95% [0.49, 0.71], p<0.0001; Figure 3D, Source code 2). The time spent in contact with the prey was negatively correlated with the time spent walking in the periphery (rs = −0.30, N = 154, p<0.001) and positively correlated with the total time spent in the central area (rs = 0.33, N = 154, p<0.001), indicating that the more exploratory ants were also those more interested in the prey.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/61298/elife-61298-fig3-v1.jpg)
 
-**Figure 3.:** A) and the reaction to prey tests (B).The ant is in the acclimatisation tube for 1 min and the test starts when the tube is removed (see Materials and methods). The consistency across the two sessions of the open-field test regarding the time spent in the central area (C) and the consistency across the two sessions of the reaction to prey test (D). The black line with confidence band (grey) is plotted based on the Pearson correlation of the two variables.Figure 3—source data 1.Repeatability across the two sessions, for each individual ant, concerning the time spent walking in the central area was assessed with intra-class correlation (Lessells and Boag, 1987) by using LMM (Nakagawa and Schielzeth, 2010). The total time spent in the central area were significantly repeatable across the two sessions (N = 154; p<0.0001). Six ants died between the two sessions of the personality tests, therefore the sample size is 154 ants instead of 160 (20 ants in each of the eight sub-colonies).Figure 3—source data 2.Repeatability across the two sessions, for each individual ant, concerning the time spent in contact with the prey was assessed with intra-class correlation (Lessells and Boag, 1987) by using LMM (Nakagawa and Schielzeth, 2010). The time spent in contact with the prey was highly repeatable (N = 154; p<0.0001). Six ants died between the two sessions of the personality tests, therefore the sample size is 154 ants instead of 160 (20 ants in each of the eight sub-colonies).
+**Figure 3.:** The ant is in the acclimatisation tube for 1 min and the test starts when the tube is removed (see Materials and methods). The consistency across the two sessions of the open-field test regarding the time spent in the central area (C) and the consistency across the two sessions of the reaction to prey test (D). The black line with confidence band (grey) is plotted based on the Pearson correlation of the two variables.
 
 Ants were observed in seven tool use trials (each with liquid food and 10 tools) over 4 consecutive days (Figure 4). After each trial, the ants that used tools were removed from the sub-colony. In this way, we could test whether personality would predict which ants will become tool users in the next trial. We used Principal Component Analysis based on the variables of the personality tests to calculate a ‘personality score’ (see Materials and methods and Figure 5A,B, Source code 1).
 
@@ -85,7 +805,7 @@ Ants were observed in seven tool use trials (each with liquid food and 10 tools)
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61298/elife-61298-fig5-v1.jpg)
 
-**Figure 5.:** Correlation circle of the variables: TWalk.Out (time spent walking in the periphery), TotT.Center (total time spent in the central area); TContact.Prey (time in contact with the prey) (A). Projection of individuals on the PCA factorial space: red dots refer to ants that used tools, black dots refer to ants that did not use tools; the confidence ellipses representing individuals using tools (red arrow) or not (green arrow) show significant difference (no overlap) (B). The probability of using tools is linked to the individual personality score. The mean and CI of the personality score and the individual data points (empty circles) for the non-tool users (mean = −0.33, CI [−0.56,–0.09]) and tool users (mean = 0.57, CI [0.26, 0.88]) is plotted (C). The ants’ personality score significantly predicted the probability of using tools (***: p<0.001).Figure 5—source data 1.A ‘personality score’ for each ant was calculated with a Principal Component Analysis based on (a) total time spent in the central area of the open field, (b) time spent walking in the periphery, (c) time spent in contact with the prey (average of the two sessions for each variable). The figures show the average values of the two sessions used to study the behaviours observed in the two personality tests: open-field and reaction to prey (N = 154). Six ants died between the two sessions of the personality tests, therefore the sample size is 154 ants instead of 160 (20 ants in each of the eight sub-colonies).Figure 5—source data 2.The personality score of a given ant is represented by its individual value related to the first principal component, accounting for the 59.14% of the total variance, normalised by subtracting the mean value for its colony. The link between personality score and tool use behaviour (tool user or not) was analysed with a GLMM, binomial error structure (logit-link). The ants’ personality score significantly predicted the probability to use tools in at least one trial (N = 154, p<0.001). Six ants died between the two sessions of the personality tests, therefore the sample size is 154 ants instead of 160 (20 ants in each of the eight sub-colonies).
+**Figure 5.:** Correlation circle of the variables: TWalk.Out (time spent walking in the periphery), TotT.Center (total time spent in the central area); TContact.Prey (time in contact with the prey) (A). Projection of individuals on the PCA factorial space: red dots refer to ants that used tools, black dots refer to ants that did not use tools; the confidence ellipses representing individuals using tools (red arrow) or not (green arrow) show significant difference (no overlap) (B). The probability of using tools is linked to the individual personality score. The mean and CI of the personality score and the individual data points (empty circles) for the non-tool users (mean = −0.33, CI [−0.56,–0.09]) and tool users (mean = 0.57, CI [0.26, 0.88]) is plotted (C). The ants’ personality score significantly predicted the probability of using tools (***: p<0.001).
 
 The ants’ personality score significantly predicted the probability of using tools in at least one trial (GLMM z = 3.97, N = 154, p<0.001). Moreover, the confidence intervals of the personality score of tool users (mean = 0.57, CI95% [0.26, 0.88]) and non-tool users (mean = −0.33, CI95% [−0.56,–0.09]) did not overlap (Figure 5C, Source code 2). A positive personality score characterised those ants that spent more time exploring the central area in the open field test and that spent more time in contact with the prey (Figure 5A,B).
 
@@ -119,15 +839,15 @@ In conclusion, our work shows that instead of extreme task specialisation, the i
 
 ## Materials and methods
 
-## Study species and housing
+### Study species and housing
 
 Twelve colonies of the monogynous Mediterranean ant species, Aphaenogaster senilis, were used. This species occurs in open and sunny locations (e.g. forest edges, lawns, fields, sand dune areas), and colony size varies between a few hundred to a few thousand workers (Boulay et al., 2007). Ants were collected in the Doñana National Park (Spain) in March 2019 and kept at the Laboratory of Experimental and Comparative Ethology (University Sorbonne Paris Nord, France) under standard conditions (temperature 24 ± 4°C; relative humidity 50–60%; natural light cycle). Each colony was housed in a circular plastic box (14.5 cm diameter) with a regularly moistened plaster floor (representing the nest) placed inside a larger plastic box (18 × 25.5 × 7.7 cm) constituting the foraging arena. The standard diet consisted of dead crickets (Acheta domestica) and apple/honey mix provided twice a week. Two weeks before the experiments, to increase the motivation for carbohydrates, the standard diet was reduced to crickets only; water was always provided ad libitum.
 
-## Experiment 1: tool use process in whole colonies
+### Experiment 1: tool use process in whole colonies
 
 The tool use process is composed of two parts: the transport of tools to the bait and the transport of tools from the bait to the nest (Maák et al., 2017). The aim of this experiment was to characterise the behaviour of ants during the entire process. We used three colonies containing the queen, brood, and around 1000 workers and we marked individually 100 workers in each colony with small dots of enamel paint. The day before the experiment, the plastic box housing the colony was connected to a separate foraging arena of the same size (18 × 25.5 × 7.7 cm) with the help of a detachable bridge allowing the workers to circulate. On the day of the experiment, 10 tools (small pieces of firm sponge, ~1 mm3) were placed in this foraging arena. After 10 min, the food bait (0.25 ml of diluted honey) was placed in the arena at 5 cm distance from the tools and the bridge was removed, so that the ants present in the foraging arena with the food and the tools could not go back to the nest. This was considered as the start of the experiment. The number of ants in the foraging arena was counted and the presence of paint marked workers noted, we could thus quantify the number of workers transporting tools to the bait over the total number of workers that were present in the foraging arena. After 30 min, the connecting bridge was replaced, giving the possibility to the ants to circulate both ways and to transport tools from the bait to the nest. The experiment was repeated five times for each colony, with an interval of 1 day between two trials. Each trial was video recorded for 4 hr. We noted the latency (from the start of the experiment) of every tool dropped into the bait, the latency (from the start of the experiment) of the first tool transported from the bait to the nest (in most of the cases, the transport of all tools inside the nest was not completed in 4 hr) and the individual identity of workers performing the task if these were marked.
 
-## Experiment 2: is there specialisation in tool use?
+### Experiment 2: is there specialisation in tool use?
 
 In this experiment, we focused on the first part of the tool use process, the transport of tools to the bait, and we investigated whether ants specialise in tool use or whether ants that use tools to collect liquid food are also involved in the transport of solid food items (here cricket legs). We also tested the effect of a familiarisation-trial with food (diluted honey) and tools on naive workers. From each of the six source colonies (different from those used in Experiment 1), we created two sub-colonies, each with 10 larvae and 40 workers (30 foragers from outside and 10 nurses from inside the nest), individually marked with dots of enamel paint. Each sub-colony was housed in a separate plastic box (28 × 28 × 8 cm) containing a dark plastic tube with a water reservoir acting as a nest. Workers readily transported the larvae inside the nest and were left undisturbed for 1 day.
 
@@ -137,33 +857,33 @@ The day after, each sub-colony was tested in three steps (Figure 1). Step 1: pre
 
 The following day, each sub-colony was tested again with the three steps procedure. After 2 days of rest, each sub-colony received honey and 20 tools (instead of 10), to give the possibility to more workers to transport tools (Figure 1). We noted the latency to transport each tool to the bait and the identity of the transporting workers.
 
-## Experiment 3: does worker personality predict tool use?
+### Experiment 3: does worker personality predict tool use?
 
 In this experiment, we investigated the possible link between personality traits and tool use. Workers were tested twice for two different personality traits and observed in tool use trials. Each sub-colony underwent seven tool use trials (Figure 4). After each trial, the ants that used tools were removed from the sub-colony. In this way, we could test whether personality would predict which ants will become tool users in the next trial. All tests were video-recorded. From each of the eight source colonies, we created two sub-colonies: (1) one ‘test-sub-colony’ with 20 individually marked workers (15 outside and five inside workers) and six larvae placed in a plastic box (25 × 18 × 9 cm) containing a dark plastic tube with a water reservoir acting as a nest; (2) one ‘host-sub-colony’, with 10 workers and five larvae placed in a plastic box (16 × 12 × 9 cm) with a nest tube. This host-sub-colony (2) housed the workers removed for the test-sub-colony (1) during the experiments (see below).
 
 All the 20 workers of the test-sub-colonies (1) were individually characterised for their personality traits using two tests (open-field and reaction to prey), each repeated after a 2-day interval to assess individual consistency over time.
 
-## Open-field
+#### Open-field
 
 This is an adaptation of the classical open-field test developed to test exploratory behaviour and anxiety in rodents (e.g., Prut and Belzung, 2003) and already used with ants (d'Ettorre et al., 2017; Udino et al., 2017; Carere et al., 2018). An ant was individually placed in an acclimatisation tube (Ø 2.7 cm) for 1 min at the centre of a circular arena (Ø 11.5 cm) with a floor of clean filter paper (replaced after each trial), in which an area of 9.5 cm diameter was considered as the central zone and the external part as the periphery (Figure 3A). Then, the tube was removed and the behaviour of the ant was observed for 3 min. More exploratory ants are expected to spend more time in the central area, while less exploratory ants will spend more time walking along the edges of the arena, where they are protected by the walls. We measured the time spent walking and resting in the central area (total time in the central area) and the time spent walking in the peripheral area with the help of a behavioural transcription software (Ethoc version 1.2, CNRS Research Centre on Animal Cognition, Toulouse).
 
-## Reaction to prey
+#### Reaction to prey
 
 A similar circular arena with clean filter paper as a floor (but without the delimitation between central and peripheral zone) was used for this test. An ant was placed in the acclimatisation tube for 1 min and one fruit fly (Drosophila hydei) freshly killed by freezing was placed 4 cm away from the ant (Figure 3B). After the removal of the tube, the ant could interact with the prey for 3 min. We recorded the duration of the contact with the prey using the software Ethoc.
 
-## Tool use
+#### Tool use
 
 In each trial, the test-sub-colony (1) received 0.25 ml of diluted honey and 10 tools. We recorded the latency to transport each tool to the bait and the identity of workers using tools for a maximum of 45 min. Each test-sub-colony underwent seven trials: two trials on day 1 (one in the morning, one in the afternoon), two trials on day 2, two trials on day 3 and one trial on day 4 (Figure 4). After each trial, the ants that transported tools to the bait were removed from the test-sub-colony and placed in the host-sub-colony. In the afternoon of day 4, those workers were returned to the test-sub-colony, which had a rest of 2 days. Afterwards, a last trial was performed with 20 tools instead of 10 (Figure 4).
 
-## Statistical analysis
+### Statistical analysis
 
 If necessary, the variables were log-transformed prior to the analyses to meet the normality and homogeneity of residuals. Statistical analyses were carried out in R (version 3.6.1) Statistical Environment (R Development Core Team, 2019). In all models, the colony (or sub-colony) identity (ID) was included as a random factor.
 
-## Experiment 1: tool use process in whole colonies
+#### Experiment 1: tool use process in whole colonies
 
 We used linear mixed-effects models (LMM, Gaussian error, maximum likelihood fit) to analyse: (i) the effect of the number of workers in the arena (before reconnecting the bridge) and of the number of workers involved in tool use on the latency of the first tool to the bait (sec); (ii) the effect of the latency of the first tool to the bait and of the number of workers involved in tool use on the total time of tool transport to the bait. In both models, the number of workers involved in tool use was included as explanatory variable, whereas the number of workers in the arena or the latency of the first tool to the bait were included as covariates. A similar model (LMM, Gaussian error, maximum likelihood fit) was built to analyse the effect of (a) latency of the first tool to the bait, (b) total transport time, (c) number of workers involved in tool use on the latency of transport the first tool to the nest. Trial number was included as a random factor. The correlation between the latency to locate the tools after contacting the food and the latency to drop the first tool into the bait was tested with Spearman rank correlation.
 
-## Experiment 2: is there specialisation in tool use?
+#### Experiment 2: is there specialisation in tool use?
 
 Number of ants using tools: to compare our empirical results to randomised data, we tested them against the null-model (any ant with sufficient information has the same probability of performing tool use) by randomly assigning the same number of observed tool use events to a simulated ant population based on the same number of individuals, sub-colonies, and trials as in experiment 2. The 95% confidence interval (CI95%) was calculated based on the random model with 1000 simulations performed with the help of a Macro function of Microsoft Excel (see Supplementary file 1).
 
@@ -177,7 +897,7 @@ Sometimes another worker started transporting tools to the bait while the first 
 
 The effect of the pre-trial on the (a) latency of the first tool to the bait, (b) total transport time, (c) number of workers involved in tool use in the first trial was analysed with LMMs (Gaussian error, maximum likelihood fit). The type of sub-colony was included as a fixed factor, whereas colony ID as a random factor.
 
-## Experiment 3: does worker personality predict tool use?
+#### Experiment 3: does worker personality predict tool use?
 
 Six ants died between the two sessions of the personality tests, therefore the sample size is 154 ants instead of 160 (20 ants in each of the eight sub-colonies). Repeatability across the two sessions of the open-field and the reaction to prey test was assessed with intra-class correlations (Lessells and Boag, 1987) by using LMM calculations (Nakagawa and Schielzeth, 2010) with individual identity (ID) as a random factor. The correlations between the time spent in contact with the prey (average of the two tests) and the two traits measured during the open-field test (average of the total time spent in the central area and time spent walking in the periphery) were performed with Spearman rank correlation because of the non-normal distribution of the reaction to prey data.
 
@@ -187,6 +907,6 @@ The link between personality score and tool use behaviour (tool user or not) was
 
 The effect of the removal of the workers on (a) latency of the first tool on bait, (b) total transport time, (c) number of workers involved in tool use was analysed with LMMs (Gaussian error, maximum likelihood fit) and GLMM (Poisson error, maximum likelihood fit), respectively, with the order of the trials as a fixed factor. In this analysis, we used data up to the first four trials because only few sub-colonies performed more than four trials.
 
-## General details on function and packages
+#### General details on function and packages
 
 GLMs were performed using the ‘glm’ function from the Stats package. LMMs and GLMMs were performed using lmer and glmer functions from the lme4 package (Bates and Maechler, 2013). Poisson models were checked for overdispersion. The repeatability was calculated with the rpt function (rptR package, Stoffel et al., 2017). We assessed 95% confidence intervals (CI95%) by 1000 bootstraps and p values by 1000 permutations (alpha level = 0.05). For the PCA, the confidence ellipses around the categories of two factors (tool user or not) were drawn with plotellipses function from the FactoMineR package (Le et al., 2008).

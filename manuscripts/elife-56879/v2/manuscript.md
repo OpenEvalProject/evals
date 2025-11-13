@@ -43,9 +43,37 @@ Another challenge that the RAPID algorithm was designed to address was the need 
 
 ## Results
 
-## RAPID identifies stratifying cell subsets in an automatic and unsupervised manner
+### RAPID identifies stratifying cell subsets in an automatic and unsupervised manner
 
 The RAPID algorithm workflow is depicted in Figure 1 using results from Dataset 1. Following patient-specific identification of major cell types (Figure 1a), the algorithm (Figure 1b) randomly sampled an equal number of glioblastoma cells from each patient’s tumor and analyzed the cells on a single, common t-SNE. This even sampling was conducted to generate a t-SNE analysis where each patient contributed equally. Subsequent statistical testing (Figure 1c) included repeated subsampling to ensure that sampled cells were representative of the original tumors. After multiple statistical tests, the most robust and reproducible cell types identified by RAPID were validated biologically, including using a new data type and a larger cohort (Figure 1d).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-v2.jpg)
+
+**Figure 1.:** (a) Graphic of tumor processing and data collection. After data collection and standard pre-processing, non-immune, non-endothelial glioblastoma cells were computationally isolated for analysis by RAPID. (b) RAPID workflow on glioblastoma cells identified from 28 patients and computationally pooled for t-SNE analysis. Cell subsets were automatically identified by FlowSOM and were systematically assessed for association with patient overall or progression-free survival. 43 glioblastoma cell subsets were identified and were color-coded based on hazard ratio of death and p-values (HR >1, red; HR <1, blue). Cell density, FlowSOM clusters, and cluster significance are depicted on t-SNE plots. (c) RAPID results were tested for stability. Each tumor was randomly subsampled for 4,710 cells multiple times. Each of these cell subsampling runs was subject to 100 iterative FlowSOM analyses and an F-measure was calculated for each cluster. Only clusters with an F-measure of greater than 0.5 were considered stable. Then, the phenotypes of stable clusters associated with patient outcome were assessed via RMSD and used to determine stable phenotypes. (d) Validation of the findings from the mass cytometry data was done using lower dimensional gating strategies and an orthogonal technology to confirm the biological findings.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) t-SNE plots of cell density (left) and major cell types in a patient tumor (LC26) colored by expert gating (right) for antigen presenting cells (APC, blue), other immune cells (non-APC, orange), endothelial cells (Endo, red), and glioblastoma cells (green) using CD45, CD31, and HLA-DR to identify cells. Pink lines indicate where expert gates were drawn. (b) MEM protein enrichment scores for populations indicated by color in (a), using the other three populations as reference. (c) Per-cell expression levels of 21 identity proteins, (d) 9 phosphorylated signaling effectors, proliferation marker cyclin B1, apoptotic signaling factor cleaved caspase 3 (cCASP3), and DNA damage marker γH2AX in LC26 are depicted. Heat indicates protein or phospho-protein expression per cell; scale is specific to each measured feature.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Enrichment of identity proteins (P) and phosphorylated signaling effectors (S) of glioblastoma cell subsets identified by RAPID was quantified using MEM. GNP and GPP cells are labeled in red and blue, respectively. Populations detected in every patient sample (abundances ranging from 0.02% to 28.05%) are outlined in bold. Populations deemed unstable (either by F-measure <0.5 or representing phenotypes displayed in less than 50% of cell subsampling runs) are faded.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Forty-three glioblastoma cell subsets automatically identified by FlowSOM are arranged according to their associations with overall survival (HR >1, left; HR <1, right) and statistical significance of that association (p-values). The heatmap represents the MEM values of glioblastoma cell subsets (columns). GNP cells are labeled in red, while GPP cells are labeled in blue. Hierarchical clustering was performed based on MEM values and is depicted on the left of the heatmap for measured features. HR = hazard ratio of death. Asterisks (*) above indicate that clusters are not stable (F-measure of <0.5 or phenotypes identified in less than 50% of cell subsampling runs).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Enrichment (upwards arrowhead) or lack (downwards arrowhead) of identity proteins (P) and phosphorylated signaling effectors (S) on Glioblastoma Negative Prognostic cell subsets was quantified using MEM. Average MEM scores are shown for three GNP subsets ± the standard deviation. (b) Combined GNP cell subsets (density contours) were mapped over biaxial plots of all other tumor cells (black contours). (c) Overall survival of patients for high (>2.96%) total GNP content compared to patients with low (<2.96%) GNP content. (d) Histogram plots of GNP cells (red) and all other glioblastoma cells (gray) illustrate the expression of identity proteins and phosphorylated signaling effectors. (e) Enrichment (upwards arrowhead) or lack (downwards arrowhead) of identity proteins (P) and phosphorylated signaling effectors (S) on Glioblastoma Positive Prognostic cell subsets was quantified using MEM. Average MEM scores are shown for three GNP subsets ± the standard deviation. (f) Combined GPP cell subsets (density contours) were mapped over biaxial plots of all other tumor cells (black contours). (g) Overall survival of patients for high (>8.65%) total GPP content compared to patients with low (<8.65%) GPP content. (h) Histogram plots of each GPP cell subset (blue) and all other glioblastoma cells (gray) illustrate the expression of proteins and phosphorylated signaling effectors.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Box and whisker plot of immune abundance (%, log10 scale) on the y-axis and patients divided into three groups: GNP high (red,>2.96% GNP cells), GPP high (blue,>8.65% GPP), or GNP and GPP low (gray). Box encompasses the 25th to 75th percentile, gray horizontal line indicates the median, and whiskers extend to the minimum and maximum values. ***p=0.0008, two-tailed t-test.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/56879/elife-56879-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Enrichment of identity proteins (P) and phosphorylated signaling effectors (S) of GNP cell subsets revealed by analysis of disease progression (GNPPFS) was quantified using MEM. (b) Histogram plots of each GNPPFS cell subset (red) and all other glioblastoma cells (gray) illustrate the expression of proteins and phosphorylated signaling effectors. (c) Combined GNPPFS cell subsets (red circles) were mapped over biaxial plots of all other tumor cells (black contours). (d) For each subset, PFS was compared between patients with high vs low cell abundance (see Materials and methods). (e) Enrichment of identity proteins (P) and phosphorylated signaling effectors (S) of the GPPPFS cell subset was quantified using MEM. (f) PFS was compared between patients with high vs low GPPPFS cell abundance (g) Histogram plots of the GPPPFS cell subset (blue) and all other glioblastoma cells (gray) illustrate the expression of proteins and phosphorylated signaling effectors. (h) The GPPPFS cell subset (blue circles) was mapped over biaxial plots of all other tumor cells (black contours).
 
 The RAPID algorithm was unsupervised and included two key statistical decisions. The first decision was the automation of the number of target clusters sought at the clustering step (Figure 1b, middle). This was achieved through repeated analysis with the chosen clustering tool, in this case FlowSOM (Van Gassen et al., 2015), followed by statistical analysis. RAPID iteratively tested a range (cluster number 5–50) of unsupervised self-organizing maps from FlowSOM to identify an appropriate number of stable clusters containing phenotypically homogenous cells. The minimum number of clusters that minimized intra-cluster variance for each feature was calculated after all iterations were completed and set as the optimized target cluster number (see Materials and methods). Clustering with other tools, such as DBSCAN, or clustering on untransformed axes, was both slower and less accurate in identifying stable, phenotypically distinct clusters, consistent with published observations (data not shown and Weber and Robinson, 2016). The second decision was in assessing cluster abundance in patients (Figure 1b, right). RAPID assigned patients to high or low abundance for each automatically identified cluster based on a statistical cut point, set as the interquartile range of the population abundance across the samples (see Materials and methods). These two decisions resulted in automation of steps that are typically manual in cytometry analysis.
 
@@ -53,7 +81,7 @@ After finding clusters in an unsupervised manner and determining which patients�
 
 The output of RAPID includes a PDF containing a color-coded, 2D t-SNE plot depicting all FlowSOM clusters, a 2D t-SNE plot colored by clusters which were significantly associated with patient outcome, and Kaplan-Meier survival plots of patients for each subset (additional files described in Materials and methods) (Figure 1b). To compactly report and depict the phenotype of algorithmically identified cell subsets, RAPID used Marker Enrichment Modeling (MEM) labels (Diggins et al., 2017). Thus, feature enrichment was reported on a +10 to −10 scale, where +10 indicated that the feature was especially enriched in those cells and −10 indicated that the feature was specifically excluded from those cells, relative to all other cells in other clusters. The MEM label here was thus an objective description of what made each population distinct from the other clusters identified by RAPID. In summary, RAPID provided an unsupervised, automated, statistical approach to revealing and characterizing clinically significant cells.
 
-## Identification of risk stratifying glioblastoma cells in Dataset 1
+### Identification of risk stratifying glioblastoma cells in Dataset 1
 
 RAPID was designed for datasets like Dataset 1, a pilot glioblastoma mass cytometry dataset including cells collected from 28 patients with isocitrate dehydrogenase (IDH) wild-type glioblastoma at the time of primary surgical resection (Supplementary file 3). This dataset is currently available online (https://flowrepository.org/id/FR-FCM-Z24K). The median PFS and overall survival (OS) after diagnosis were 6.3 and 13 months, respectively, typical of the trajectory of this disease (Stupp et al., 2005). Resected tissues were immediately dissociated into single cell suspensions as previously reported (Leelatian et al., 2017b) and the resulting cells were stained with a customized antibody panel, which was designed to capture the expression of known cell surface proteins, intracellular proteins, and phospho-signaling events (Supplementary file 4). Collectively, the antigens included in this panel positively identified >99% of viable single cells within any given tumor sample (see Materials and methods). To identify glioblastoma cells prior to RAPID, as in Figure 1a, a patient-specific t-SNE was created using 26 of the measured markers for the tumor and stromal cells from each patient’s tumor (Amir et al., 2013; Figure 1—figure supplement 1 and Supplementary file 4). Patient-specific t-SNE maps revealed non-glioblastoma populations of immune (CD45+) and endothelial (CD45-CD31+) cells, consistent with prior mass cytometry and sequencing studies of gliomas (Diggins et al., 2017; Greenplate et al., 2019; Leelatian et al., 2017a; Neftel et al., 2019; Patel et al., 2014). Immune and endothelial cells from each individual patient were computationally excluded prior to subsequent downstream analysis (Figure 1, Figure 1—figure supplement 1), and CD45-CD31- cells were labeled as glioblastoma cells.
 
@@ -65,7 +93,7 @@ The RAPID algorithm identified four Glioblastoma Negative Prognostic (GNP) clust
 
 Non-malignant cells, including immune and endothelial cells, were excluded from initial RAPID analyses and subsequent biaxial gating confirmed that the GNP and GPP subsets were not unexpected residual CD45+ or CD31+ cells (Figure 1—figure supplement 4). However, infiltrating immune cells can comprise a large proportion of non-cancer cells in glioblastomas and have highly variable overall abundance across patients (Hussain et al., 2006). Notably, GPP-high (n = 7) patients’ tumors all contained more than 9% CD45+ cells (median %=25.3 ± 13.8), whereas all GNP-high (n = 8) patients’ tumors contained less than 9% CD45+ cells (median %=3.3 ± 2.4, p<0.001, Figure 1—figure supplement 5, Supplementary file 2).
 
-## Identification of risk stratifying B-cell leukemia cells in Dataset 2
+### Identification of risk stratifying B-cell leukemia cells in Dataset 2
 
 FCS files from a previously published mass cytometry study of B-cell precursor acute lymphoblastic leukemia (BCP-ALL) by an independent lab were input into the RAPID workflow to test whether the RAPID algorithm could re-discover prognostic cell subsets in other disease settings (Good et al., 2018). Dataset 2 is available online (originally: https://github.com/kara-davis-lab/DDPR/releases, in this study: https://github.com/cytolab/RAPID). This dataset contained almost twice the number of patients (n = 54) but less than half the number of total cells compared to Dataset 1 (48,600) because of a single patient with only 900 live, lineage-negative blast cells (Good et al., 2018). A total of 47 clusters were identified by RAPID, 3 of which were negative prognostic cell subsets that were associated with time to relapse (Figure 2). Importantly, features identified in the original publication as part of the signature associated with relapse (black text, Figure 2) were re-identified using RAPID. In the protein feature MEM values, enrichment of CD38 and CD34 was consistent with previously reported trends in pre-pro B cell-like phenotypes in BCP-ALL. Most notably, the signaling features p-S6, p-SYK, and p-4EBP1, which were important features positively associated with relapse in the DDPR model, were enriched in the negative prognostic populations identified by RAPID. Thus, RAPID was able to identify cells and features associated with time to relapse in another disease setting, generating a signature of negative-prognostic cells consistent with the original findings by another research group.
 
@@ -73,11 +101,11 @@ FCS files from a previously published mass cytometry study of B-cell precursor a
 
 **Figure 2.:** (a) t-SNE plot of 54 B-cell leukemia patient samples with negative prognostic populations (A, B, C) colored in red. (b) MEM labels for three negative prognostic cell subsets (NP_A, NP_B, NP_C). Features important in the original discovery of predictors of relapse are colored in black. (c) Kaplan-Meier Curve comparing time to relapse in patients with high abundance of negative prognostic cells (identified by RAPID) to patients with low abundance of negative prognostic cells.
 
-## Statistical validation 1: Clusters identified by RAPID were statistically robust
+### Statistical validation 1: Clusters identified by RAPID were statistically robust
 
 To determine the stability of the clusters identified by RAPID, 99 additional runs of FlowSOM were performed within the RAPID workflow (Figure 1c). Due to the stochastic nature of FlowSOM, the clusters identified in each subsequent run could contain different cells. For each of the clusters, an F-measure was calculated, based on the accuracy of cell assignment within a cluster in subsequent iterations of FlowSOM (see Methods, Supplementary file 2). Of the original 43 clusters, five had an average F-measure of less than 0.5 (average F-measure of all clusters = 0.75). These five clusters, including cluster 33, previously identified as a GNP cluster, were considered unstable and were not included in subsequent analyses (indicated by shading in Figure 1 and Figure 1—figure supplement 2, and asterisks in Figure 1—figure supplement 3 and Supplementary file 2).
 
-## Statistical validation 2: Clusters identified by RAPID were not dependent on individual patients or sub-samplings
+### Statistical validation 2: Clusters identified by RAPID were not dependent on individual patients or sub-samplings
 
 A key design decision in RAPID was the use of an equal number of cell events from each patient to avoid tumors disproportionately impacting the analysis based on the number of cells collected. However, this decision limits a given RAPID analysis run to a number of cells equal to the smallest collected from any one patient. For the tumors studied here, the number of live glioblastoma cells ranged from 4,710 to 330,000 cells per patient. To test whether the cells subsampled for RAPID were representative of the total tumor sample and eliminate the possibility that randomly subsampled cells from larger samples are not representative, 9 additional t-SNE analyses were generated, each with a different sample of 4,710 cells selected at random, with replacement, from each patient. Each of these 9 t-SNE projections was then used in a new RAPID analysis, creating 10 total analyses (the original and 9 new tests). Of these, a total of 55 clusters from the 10 runs were considered stable (F-measure >0.5) and prognostic (see Methods, Figure 3). An F-measure could not be calculated on a cell-by-cell basis because the cells varied between analyses, but the average F-measure based on patient categorization (GNP-high, GPP-high, and GNP and GPP low) was 0.79 between t-SNE runs.
 
@@ -87,7 +115,7 @@ A key design decision in RAPID was the use of an equal number of cell events fro
 
 To quantify the degree of similarity between the 47 newly identified prognostic clusters and the 8 representative GNP (34, 37, 42) and GPP (2, 3, 4, 5, 41) clusters, the root-mean-square deviation (RMSD) in the MEM enrichment values was calculated (Diggins et al., 2018; Diggins et al., 2017). GNP subsets from subsequent runs were highly similar to the GNP subsets identified by the initial analysis described above, and the same was observed for GPP subsets (Figure 3; GNP v GNP average RMSD = 92.8, GPP v GPP average RMSD = 88.9, and GNP v GPP average RMSD = 80.9). However, some phenotypes were only observed in a small number of t-SNE runs. For example, the phenotype representing cluster 41 was only seen in one other t-SNE. Because this cell type was not observed in at least 50% of the cell sub-samplings, it was considered phenotypically unstable and removed from subsequent analyses (indicated by shading in Figure 1 and Figure 1—figure supplement 2, and asterisks in Figure 1—figure supplement 3 and Supplementary file 2).
 
-## Statistical validation 3: Comparable clusters were identified by RAPID using UMAP instead of t-SNE
+### Statistical validation 3: Comparable clusters were identified by RAPID using UMAP instead of t-SNE
 
 To test the modularity of RAPID, the algorithm was implemented using different dimensionality reduction values as input parameters, replacing t-SNE with UMAP, a tool that emphasizes both local and global data structure (Becht et al., 2019). RAPID identified 31 populations using UMAP input; 4 of these were prognostic and significantly associated with OS (1 GNPUMAP and 3 GPPUMAP) (Figure 4). GNPUMAP MEM scores reflected the characteristic S100B and SOX2 co-expression observed in the GNP populations along with an active pro-survival basal signaling status. GPPUMAP subsets were similarly defined by co-expression of EGFR and CD44 and a general lack of the measured phosphorylated signaling effectors (Figure 4). When the cells identified using t-SNE were overlaid on the UMAP axes, they occupied similar phenotypic space as UMAP-identified clusters, and vice versa (F-measure for cell assignment to GNP, GPP, or neither = 0.87, Figure 4). Thus, when UMAP was used in the RAPID algorithm, GNP and GPP populations were identified that had comparable phenotypes to those identified previously in t-SNE analyses, confirming that RAPID is not dependent upon a specific dimensionality reduction tool (Figure 4).
 
@@ -95,17 +123,17 @@ To test the modularity of RAPID, the algorithm was implemented using different d
 
 **Figure 4.:** (a) UMAP analysis of 131,880 cells from 28 patients. Upper left plot - heat on cell density; lower left plot – colored by FlowSOM cluster; right plot – colored by GNP(red)/GPP(blue) designation and p-value. (b) Per-cell expression levels of 5 identity proteins, 3 phosphorylated signaling effectors, and proliferation marker cyclin B1 are depicted. (c) Enrichment of identity proteins (P) and phosphorylated signaling effectors (S) of glioblastoma cell subsets was quantified using MEM. GNP and GPP cells are labeled in red and blue, respectively. (d) Histogram analysis depicts the expression of key identity proteins and phosphorylation signaling effectors of GNP (red) and GPP (blue) compared to all glioblastoma (GBM) cells (gray, top row). (e) Overall survival curves for four UMAP-identified populations associated with survival. Cox-proportional hazard model was used to determine a hazard ratio (HR) of death. Censored patients are indicated by vertical ticks. (f) GNP (red) and GPP (blue) cells identified via t-SNE (‘t-SNE GNP’ or ‘t-SNE GPP’) and UMAP (‘UMAP GNP’ or ‘UMAP GPP’) are overlaid on either UMAP or t-SNE axes. (g) Categorization of each patient (dots) based on GNP high (red), GPP high (blue), or neither (gray) according to abundance based on RAPID using t-SNE or RAPID using UMAP (F-measure = 0.86).
 
-## Statistical validation 4: Risk stratifying cells were continuously associated with outcomes and independent of other glioblastoma stratifying features
+### Statistical validation 4: Risk stratifying cells were continuously associated with outcomes and independent of other glioblastoma stratifying features
 
 At the conclusion of the RAPID analysis, to ensure that results were not an artifact of the high-low cut point choice and to determine if the effect of cell subset abundance was continuous and independent of other features known to stratify glioblastoma survival, a multivariate Cox proportional-hazards model analysis was performed incorporating known predictive features and GNP or GPP cell abundance. The included known predictors were age (Ohgaki et al., 2004; Shapiro et al., 1989), O6-alkylguanine DNA alkyltransferase (MGMT) promoter methylation status (Brown et al., 2016a; Hegi et al., 2005), and treatment variables including the extent of surgical resection (Brown et al., 2016b; Grabowski et al., 2014), therapy with temozolomide (Stupp et al., 2005), and radiation (Mirimanoff et al., 2006; Walker et al., 1980). Multivariate survival analysis of GNP cell abundance on a continuous scale, keeping the other predictors constant, indicated that each 1% increase in GNP cells was associated with an approximately 7% increase in mortality compared to baseline (OS HR = 1.07 [95% CI 1.02–1.12], p=0.003). Similarly, a 1% increase in GPP cells was associated with an approximately 7% decrease in mortality rate (OS HR = 0.93 [0.87–1.0], p=0.05) and an approximately 4% increase in time to tumor progression, as compared to baseline (PFS HR = 0.96 [0.93–0.998], p=0.04). When GNP and GPP were assessed simultaneously, abundance of GNP cells was the primary predictor of mortality (OS HR = 1.05 [1.00–1.10], p=0.04), while abundance of GPP cells was the primary predictor of time to tumor progression (PFS HR = 0.96 [0.92–1.00]; p=0.03). Thus, the abundances of GNP and GPP cell subsets were associated with distinct and contrasting patient outcomes (Figure 1—figure supplement 4), and their predictive value was independent of each other and known prognostic factors of patient survival.
 
 Since assessing progression-free survival (PFS) can be especially useful in the clinic for cancers with longer median survival, RAPID was also used for the identification of glioblastoma cell clusters with differential PFS, as opposed to OS. Of the 43 subsets identified by RAPID, 4 subsets were significantly associated with PFS (subsets 20, 33, and 43 with unfavorable PFS (GNPPFS) and subset 3 was associated with favorable PFS (GPPPFS), Figure 1—figure supplement 6).
 
-## Tumors are mosaics of multiple subsets but number of subsets does not correlate with outcome
+### Tumors are mosaics of multiple subsets but number of subsets does not correlate with outcome
 
 In the representative t-SNE run (Figure 1), RAPID identified 43 phenotypically distinct glioblastoma cell subsets within the tumors analyzed by mass cytometry in this study (Figure 1, Figure 1—figure supplement 4). The abundance of the 43 clusters varied extensively across patients (Supplementary file 2). Tumors contained a median of 14 clusters at >1% with a range from 5 cell clusters in LC06 to a maximum of 27 cell clusters represented in LC25 (Supplementary file 2, per-patient maps in Supplementary file 6). Although intra-tumor diversity has been hypothesized to contribute to poor response to treatment and survival, here, the number of glioblastoma cell clusters present within a tumor at >1% abundance (a surrogate for intra-tumor diversity) was not observed to be associated with differential survival (ρ = 0.047, p=0.812). In contrast, the abundance of each of the 7 stable and prognostic glioblastoma cell clusters was closely correlated with overall survival (Figure 1—figure supplement 4).
 
-## Biological validation 1: A transparent algorithm enables creation of a simple cell identification strategy that captures the cells identified in Dataset 1
+### Biological validation 1: A transparent algorithm enables creation of a simple cell identification strategy that captures the cells identified in Dataset 1
 
 After patterns are recognized by a machine learning approach, it is useful to learn from key features and create a straightforward test using alternative technologies or simpler models. One such model is a decision tree using one- or two-dimensional cytometry gating (Gandelman et al., 2019), consistent with traditional strategies in immunology and hematopathology. Therefore, a two-dimensional prognostic strategy was designed based on the MEM labels generated from the mass cytometry data. As described above (and Figure 1—figure supplements 2, 3 and 4), MEM labels were generated for each GNP and GPP population, as well as the combined subsets (GNP_Total and GPP_Total), reflecting enriched proteins in each population. These quantitative labels highlighted the most enriched proteins and were used to select S100B (enriched in GNP cells and largely absent from GPP cells) and EGFR (enriched in GPP cells and largely absent from GNP cells) for two-parameter analysis (Figure 5). Using only these two proteins, patients could be grouped as GNP-like, GPP-like or GNP and GPP Low, and these groups again exhibited stratified clinical outcomes (HR = 6.56, GNP-like median OS = 111.5 days, GPP-like median OS = 896 days, Figure 5). Thus, a simple gating model based on the two most divergent features identified by RAPID was able to meaningfully separate patients into clinically distinct groups.
 
@@ -113,7 +141,7 @@ After patterns are recognized by a machine learning approach, it is useful to le
 
 **Figure 5.:** (a) Biaxial plot of S100B (y-axis) and EGFR (x-axis). Gray contours depict all 131,880 cells from all patients. Density contour overlays depict GNP (top) or GPP (bottom) cells identified by the RAPID algorithm. (b) Biaxial plot of S100B (y-axis) and EGFR (x-axis). Gray contours depict all 131,880 cells from all patients as in (a). Red box indicates gate for S100B+/EGFR- cells, called GNP-like. Blue box indicates gate for EGFR+ cells, called GPP-like. (c) Kaplan Meier curve comparing overall survival (in days) of patients with high percentages of GNP-like cells in red (red gate in a, >65.7% = high) and patients with high percentages of GPP-like cells in blue (blue gate in a, >31.2% = high). The hazard ratio of death, calculated using a Cox proportional hazards model, is 6.56 (p=0.0007). (d) Example TMA cores stained for S100B (left) or EGFR (right). Brown signal is from 3,3′-Diaminobenzidine (DAB). (e) Graph depicting DAB signal intensity for S100B (y-axis) or EGFR (x-axis) from tissue microarray immunohistochemistry on 73 glioblastoma patient samples. The red box outlines patients described as GNP-like (S100Bhigh/EGFRlow) and the blue box outlines patients designated GPP-like (EGFRhigh). All other patients are shown in gray. (f) A Kaplan-Meier curve showing overall survival (in days) of patients in the GNP-like (red) or GPP-like (blue) groups. The hazard ratio of death, calculated using a Cox proportional hazards model, is 2.3 (p-value=0.03).
 
-## Biological validation 2: A larger cohort of glioblastoma samples was stratified using IHC based on phenotypes discovered by RAPID
+### Biological validation 2: A larger cohort of glioblastoma samples was stratified using IHC based on phenotypes discovered by RAPID
 
 Unlike fluorescence or mass flow cytometry, IHC is routinely used in surgical pathology. To confirm the ability of S100B and EGFR in separating clinically distinct patient populations using an orthogonal approach, a tissue microarray (TMA) of 73 glioblastoma patient samples was developed. Serial TMA sections were stained with antibodies against S100B and EGFR and the overall signal intensity was determined using QuPath software for each feature (see Methods). By comparing S100B and EGFR staining intensity, patients were scored as GNP-like, GPP-like, or GNP and GPP Low (Figure 5). A Kaplan-Meier analysis comparing overall survival between patients enriched with GNP-like cells to those with GPP-like cells confirmed that GNP-like cell enrichment is associated with a shorter overall survival (HR = 2.3, GNP-like median OS = 298 days, GPP-like median OS = 560 days, Figure 5). These results validated the suspension mass cytometry findings and demonstrated that once revealed by RAPID, GNP-like and GPP-like cells could be identified in new samples by complementary approaches used in laboratory and clinical settings.
 
@@ -135,78 +163,459 @@ When applied to a new glioblastoma dataset as well as a previously published stu
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo Sapien)</td>
+      <td>Primary glioblastoma tumors</td>
+      <td>Vanderbilt University Medical Center</td>
+      <td></td>
+      <td>Freshly isolated from primary glioblastoma resections</td>
+    </tr>
+    <tr>
+      <td>Reagent</td>
+      <td>Rhodium</td>
+      <td>Fluidigm</td>
+      <td>Cat# 201103A</td>
+      <td>MC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cyclin B1 (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_395287 Cat#554176 Clone: GNS-1</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TUJ1 (mouse-monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2313773 Cat#801201 Clone: TUJ1</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cCasp3 (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847863 Cat#3142004A Clone: 5A1E</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD117 (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847864 Cat#3143001B Clone:104D2</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-S100B (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_647296 Cat#612376 Clone: 19/S100B</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2737262 Cat#3145004B Clone: WM59</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ɣH2AX (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847865 Cat# 3147016A Clone: JBW301</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD34 (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2810243 Cat#3148001B Clone: 581</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-4E-BP1 (T37/T46)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847866 Cat# 3149005A Clone: 236B4</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-STAT5 (Y694) (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2744690 Cat#3150005A Clone:47</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BMX (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2290762 Cat# 610793 Clone: 40/BMX</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-AKT (S473) (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2811246 Cat#3152005A Clone: D9E</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-STAT1 (Y701) (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2811248 Cat#3153003A Clone: 58D6</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2810854 Cat# 3154001B Clone: HI30</td>
+      <td>MC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NCAM/CD56 (mouse-monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_604092 Cat# 318302 Clone: HCD56</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-p38 (T180/Y182) (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2661826 Cat# 3156002A Clone: D3F9</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-STAT3 (Y705) (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2811100 Cat# 3158005A Clone: 4/P-STAT3</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ITGα6/CD49F (rat-monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_345296 Cat# 313602 Clone: GoH3</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD133 (mouse-monoclonal)</td>
+      <td>Miltenyi Biotech</td>
+      <td>RRID:AB_244339 Cat# 130-090-422 Clone: AC133</td>
+      <td>MC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRα (mouse-monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_755996 Cat#323502 Clone: 16A1</td>
+      <td>MC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_10694256 Cat# 561469 Clone: O30-678</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SSEA-1/CD15 (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2810970 Cat# 3164001B Clone: W6D3</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EGFR (mouse-monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10945161 Cat# 352902 Clone:AY13</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-NFκB p65 (S529) (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847867 Cat# 3166006A Clone: K10-895.12.50</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-L1CAM (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_395337 Cat#554273 Clone: 5G3</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nestin (mouse-monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2251134 Cat# MAB5326 Clone:10C2</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44 (mouse- monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_1501199 Cat# 338802 Clone: BJ18</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (mouse-monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_396366 Cat# 556328 Clone: 1B4</td>
+      <td>MC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-ERK1/2 (T202/Y204) (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2811250 Cat#3171010A Clone: D13.14.4E</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-S6 (S235/S236) (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2811251 Cat#3172008A Clone: N7-548</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti SOX10 (mouse-monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_10844002 Cat#sc-365692 Clone: A-2</td>
+      <td>MC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HLA-DR (mouse-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2665397 Cat# 3174001B Clone: L243</td>
+      <td>MC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-HH3 (rat-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847869 Cat# 3175012A Clone: HTA28</td>
+      <td>MC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (rabbit-monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>RRID:AB_2847870 Cat# 3176016A Clone: D1H2</td>
+      <td>MC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S100B (rabbit-polyclonal)</td>
+      <td>Dako</td>
+      <td>RRID:AB_2811056 Cat#GA50461-2</td>
+      <td>IHC (RTU)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EGFR</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_10920395 Cat# sc-373746 Clone: A-10</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RAPID</td>
+      <td>https://github.com/cytolab/RAPID</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Data files</td>
+      <td>FCS data files</td>
+      <td>https://flowrepository.org/id/FR-FCM-Z24K</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for datasets and materials should be addressed to jonathan.irish@vanderbilt.edu.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Patient samples
+#### Patient samples
 
 Surgical resection specimens of 28 IDH-wildtype glioblastomas collected at Vanderbilt University Medical Center between 2014 and 2016 were processed into single cell suspensions following an established protocol (Leelatian et al., 2017b). Only samples that were confirmed to be IDH-wildtype glioblastomas by standard pathological diagnosis were used. All samples were collected with patient informed consent in compliance with the Vanderbilt Institutional Review Board (IRBs #030372, #131870, #181970), and in accordance with the declaration of Helsinki.
 
-## Patient characteristics and collection of clinical data
+#### Patient characteristics and collection of clinical data
 
 Additional patient characteristics are included in Supplementary file 3 for all samples in this study. All patients were adults (≥18 years of age) at the time of their maximal safe surgical resection of their cerebral (supratentorial) glioblastomas. Extent of surgical resection was independently classified as either gross total or subtotal resection by a neurosurgeon and a neuroradiologist. Gross total resection was defined as agreement by both viewers of no significant residual tumor enhancement on patients’ gadolinium-enhanced magnetic resonance imaging (MRI) of the brain obtained within 24 hr after surgery. All patients were considered for treatment with postoperative chemotherapy (temozolomide) and radiation according to the standard of care (Stupp et al., 2005), after determination of MGMT promoter methylation status by pyrosequencing (Cancer Genetics, Inc, Los Angeles, CA, USA). Multiplex polymerase chain reaction (PCR) was used to determine IDH1/2 mutational status. Patients’ postoperative course was followed until February 2019, noting time to first, definitive radiographic progression or recurrence of glioblastoma as agreed upon by the treating neuro-oncologist and neuroradiologist, and the time to patients’ death. All deaths were deemed to be due to the natural course of patients’ glioblastoma. Median overall survival of the analyzed 28 patients with IDH wild-type glioblastoma was 388.5 days (13 months) and median PFS was 187.5 days (6.3 months), which is typical for the disease (Ostrom et al., 2017; Stupp et al., 2005).
 
-## Method details
+### Method details
 
-## Mass cytometry analysis
+#### Mass cytometry analysis
 
 Cells derived from patient samples were prepared as previously described (Leelatian et al., 2017b). A multi-step staining protocol was used, which included 1) live surface stain, 2) 0.02% saponin permeabilization intracellular stain, and 3) intracellular stain after permeabilization with ice-cold methanol. All antibodies used, including clone information, and the steps when used are given in Supplementary file 4. After staining, cells were resuspended in deionized water containing standard normalization beads (Fluidigm) (Finck et al., 2013), and collected on a CyTOF 1.0 instrument located in the Cancer and Immunology Core facility at Vanderbilt University. Mass cytometry standardization beads were used to remove batch effects and to set the variance stabilizing arcsinh scale transformation for each channel following field-standard protocols (Greenplate et al., 2019; Leelatian et al., 2015; Leelatian et al., 2017b). Rhodium viability stain and cleaved caspase-3 antibody were included in staining to exclude non-viable and apoptotic cells, respectively. Detection of total histone H3 was used to identify intact, nucleated cells (Leelatian et al., 2017a). A 34-dimensional mass cytometry antibody panel was used to analyze over 2 million viable cells from 28 tumors (ranging from 4860 to 336,284 cells per tumor). Data were normalized with MATLAB-based normalization software (Finck et al., 2013), and were arcsinh transformed (cofactor 5), prior to analysis using the Cytobank platform (Kotecha et al., 2010). Positively identified cells were defined by having signal above 10 on any channel on which an antibody was used to detect antigen. A patient-specific t-SNE view was generated, using 26 of the measured markers for all tumor and stromal cells from each patient’s tumor (Amir et al., 2013; Supplementary file 4). Immune (CD45+) and endothelial cells (CD31+) were computationally excluded from each individual patient prior to subsequent downstream analysis. Remaining CD45-CD31- cells were included in a common t-SNE analysis, generated using 24 of 34 measured markers (Supplementary file 4). Distribution of each of the 28 patients’ cells on the common t-SNE axes and mass intensity for each marker are shown in Supplementary file 6. This common t-SNE analysis was used for automated analysis of risk stratifying cell subsets in RAPID (below).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Implementation of RAPID in R
+#### Implementation of RAPID in R
 
 FCS files for each patient sample (28) containing only cells of interest (non-immune, non-endothelial cells) were input in R (4,710 cells from each patient, 131,880 cells total). Cell subset identification was performed using the previously published FlowSOM R package (Van Gassen et al., 2015). t-SNE values (t-SNE1_glioblastoma and t-SNE2_glioblastoma) from t-SNE (or UMAP values from UMAP) analysis of CD45-CD31- glioblastoma cells from 28 patients were used as parameters for cell subset clustering. Within the RAPID workflow, the optimal number of clusters was determined by first identifying, for each feature, the smallest number of clusters that minimizes the intra-cluster signal variance for that feature. Then, the optimal cluster number of the data set was determined by taking the median of the optimal numbers for each individual feature. Once the cluster number was determined, the abundance of cell subsets and their clinical significance was assessed using outcome-guided analysis. Patients were divided into Low and High groups, based on the distribution (interquartile variance, IQR) of the abundance of a given cell subset across the cohort. A univariate Cox regression analysis was then used to estimate the effect size (hazard ratio, HR, of death) on survival and quantify its statistical significance with a p-value. The RAPID program output included: 1) a PDF containing two color coded, 2D t-SNE (or UMAP) plots (.png), one depicting all FlowSOM clusters and one depicting prognostic status and p-value, Kaplan-Meier survival plots of patients for each subset; 2) MEM outputs including a PDF of the MEM heatmap as well as. txt files of MEM and Median values for each feature, enrichment scores, and IQR values; 3) a .txt file of the FlowSOM cluster value for prognostic subsets, a .txt file of survival statistics for each FlowSOM cluster, and a .csv file with subset abundance information per patient;and 4) new FCS files with added columns for cluster and prognostic status for each cell. In this study, abundance of Glioblastoma Negative Prognostic (GNP) and Glioblastoma Positive Prognostic (GPP) cells in each tumor was quantified as percentages per total glioblastoma cells (i.e. immune and endothelial cells were already excluded). Total GNP and GPP cell abundance was determined for each patient by adding the events in all GNP (or GPP subsets, respectively) together. GNP high patients were identified as containing more GNP cells than the IQR of total GNP abundance (3.1%). GPP high patients were defined in the same manner (total GPP cell abundance IQR = 8.58%). MEM analysis was performed in R, using the previously published R package (Diggins et al., 2017). In short, MEM captured and quantified cell subset-specific feature enrichment by scaling the magnitude (median) differences between clusters, depending on the spread (IQR) of the data. These values were then computed in comparison to the remaining cells in a given dataset. MEM values were interpreted as either being positively enriched (▲, UP positive values) or negatively enriched (▼, DN negative values). The variation of a given cellular feature across GNP or GPP cell subsets was quantified as ± standard deviations (SD). For the primary data set used in this study (131,880 cells), RAPID ran in 15 min from start to finish after dimensionality reduction.
 
-## Cluster stability testing
+#### Cluster stability testing
 
 Ten independent t-SNE analyses were performed on equal numbers of randomly sampled cells from each patient (4,710 cells per patient, 131,880 total cells). RAPID was used to analyze each of these ten t-SNE runs. For each sub-sampling of cells and the respective t-SNE, an additional 99 FlowSOM clusterings were performed without setting a seed for reproducible results. After each analysis, an F-measure was calculated per cluster, measuring both the precision and recall of cell assignment. After 100 total FlowSOM runs, each of the original clusters had an average F-measure, interpreted here as a measure of cluster stability.
 
-## Survival and statistical analysis
+#### Survival and statistical analysis
 
 Time from surgical resection to death (overall survival, OS) and time from surgical resection to the initial radiographic recurrence or death before radiographic assessment (PFS) were depicted using right-censored Kaplan-Meier curves and analyzed in R. Survival time points were censored if, at last follow up, the patient was known to be alive or had not had radiographic progression. Differences in the survival curves of groups were compared using the Cox univariate regression model, reporting a hazard ratio (HR) with 95% confidence intervals between the survival curves.
 
-A Cox proportional-hazards regression model was created to assess the influence of GNP and GPP cells on OS and PFS as continuous variables while accounting for other factors known to affect survival, including age at diagnosis, MGMT promoter methylation status, extent of surgical resection (EOR), treatment with temozolomide (TMZ), and radiation (XRT). The hazard model can be written as:HR=h(t)h0(t)=e(bGNPGNP+bageAge+bMGMTMGMT+bEOREOR+bXRTXRT+bTMZTMZ)where h(t)h0(t) represents the ratio of hazard comparing the risk of death at time t to the baseline hazard (obtained when all variables are equal to zero) and ebx represents the hazard ratio of variable x. The data were fit using R software, version 3.5 (R foundation for Statistical Computing, Vienna, Austria). The proportional-hazards assumption was tested in all multivariate models and supported by a non-significant relationship between Schoenfeld residuals and time for each covariate included in the model (p > 0.38; degree of freedom = 1) and the overall model (p = 0.96; degrees of freedom = 6 and 7). Statistical significance α was set at 0.05 for all statistical analyses, one- or two-tailed noted in figure legends.
+A Cox proportional-hazards regression model was created to assess the influence of GNP and GPP cells on OS and PFS as continuous variables while accounting for other factors known to affect survival, including age at diagnosis, MGMT promoter methylation status, extent of surgical resection (EOR), treatment with temozolomide (TMZ), and radiation (XRT). The hazard model can be written as:
+
+$$
+HR=\frac{h(t)}{h_{0}(t)}=e^{(b_{GNP}GNP+b_{age}Age+b_{MGMT}MGMT+b_{EOR}EOR+b_{XRT}XRT+b_{TMZ}TMZ)}
+$$
+
+where $\frac{h(t)}{h_{0}(t)}$ represents the ratio of hazard comparing the risk of death at time t to the baseline hazard (obtained when all variables are equal to zero) and $e^{b_{x}}$ represents the hazard ratio of variable $x$. The data were fit using R software, version 3.5 (R foundation for Statistical Computing, Vienna, Austria). The proportional-hazards assumption was tested in all multivariate models and supported by a non-significant relationship between Schoenfeld residuals and time for each covariate included in the model (p > 0.38; degree of freedom = 1) and the overall model (p = 0.96; degrees of freedom = 6 and 7). Statistical significance α was set at 0.05 for all statistical analyses, one- or two-tailed noted in figure legends.
 
 An F-measure was used to quantify the level of agreement between classifications of patients or cells between alternative analysis strategies as wells as multiple RAPID iterations. The F-measure is the harmonic mean of the precision and recall given by the equation F = 2 * (Precision * Recall) / (Precision + Recall) where Precision = True Positive / (True Positive + False Positive) and Recall = True Positive / (True Positive + False Negative). An F-measure of 1 indicates perfect agreement between two different strategies or iterations as opposed to an F-measure of 0 which would mean no agreement between classifications of patients or cells from two strategies or iterations. Patients could be classified as GNP high, GNP and GPP low, or GPP high, while cells were classified as GNP, GPP, or neither. None of the patients in this study were classified as both GNP high and GPP high. To calculate the F-measure of patient categorization, the classification of the 28 patients into the three prognostic groups from the t-SNE implementation of RAPID was used as the reference point from which to compare patient classification resulting from the UMAP implementation of RAPID. Similarly, the stability of the RAPID workflow in assigning cells to GNP, GPP, or non-significant clusters was tested by using the t-SNE implementation of RAPID (FlowSOM seed 38) as the reference from which to compare 100 iterations of RAPID (random FlowSOM seed per iteration). Calculation of the F-measure was implemented using R software, version 3.5.
 
-## Computer specifications
+#### Computer specifications
 
 R was downloaded from https://cran.r-project.org/bin/ and implemented using the R Studio GUI https://www.rstudio.com/products/rstudio/download/#download. PC users also needed to download R Tools https://cran.r-project.org/bin/windows/Rtools/ and MAC users needed to download X11 Quartz https://www.xquartz.org/. RAPID was implemented, using these tools, on several personal computers. It was developed on a Dell Precision 7820 with a solid state hard drive and 64 GB RAM.
 
-## Tissue microarray construction and analysis
+### Tissue microarray construction and analysis
 
-## TMA sample selection
+#### TMA sample selection
 
 Formalin-fixed paraffin-embedded (FFPE) glioblastoma specimens were identified using the Vanderbilt Surgical Pathology database. The absence of IDH mutation was determined by multiplex PCR coupled with base extension assay (SNaPshot reaction mixture, Life Technologies, Carlsad, CA, USA), followed by capillary electrophoresis on an ABI Genetic Analyzer 3130XL and GeneMapper v.4.1. Following confirmation of the previously rendered histologic diagnosis, hematoxylin and eosin stained slides were scanned on the Panoramic P250 (3DHistech) whole slide scanner. Areas containing viable tumor were identified and circled by two pathologists (BM, NL).
 
-## TMA construction and staining
+#### TMA construction and staining
 
 Blocks were delivered to the Vanderbilt University Medical Center TPSR (Translational Pathology Shared Resource), where cores were extracted from the encircled areas. Donor blocks and recipient blocks were loaded into the Tissue Microarray Grandmaster (3DHistech). The virtual slide images were aligned and overlaid on the tissue block and cores were removed from the donor block based on the pathologist annotation. Three 1 mm core samples were collected from each tumor and placed in the recipient block. IHC of serial sections of two TMA blocks (<10 μm thick) were stained with primary antibodies conjugated to HRP and 3,3′-Diaminobenzidine (DAB) detection for EGFR and S100B, and counter stained with Hematoxylin by the Translational Pathology Shared Resource (TPSR) at Vanderbilt University. Digital images were obtained with an Ariol SL-50 automated scanning microscope and the Leica SCN400 Slide Scanner from VUMC Digital Histology Shared Resource.
 
-MarkerCloneCompanyS100BpolyclonalDakoEGFRA-10Santa Cruz Biotechnology
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th>Clone</th>
+      <th>Company</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S100B</td>
+      <td>polyclonal</td>
+      <td>Dako</td>
+    </tr>
+    <tr>
+      <td>EGFR</td>
+      <td>A-10</td>
+      <td>Santa Cruz Biotechnology</td>
+    </tr>
+  </tbody>
+</table>
 
-## TMA imaging and analysis
+#### TMA imaging and analysis
 
 Whole slide imaging was performed in the Digital Histology Shared Resource at Vanderbilt University Medical Center (www.mc.vanderbilt.edu/dhsr). For each marker, a QuPath project was created and all slide images were uploaded to be processed in batch. In QuPath, regions of interest (ROI’s) were designated by circling each tumor core. Each ROI was computationally linked to the patient by a unique identifier, allowing cores from the same patient to be grouped. For each marker, the ‘Estimate Stain Vectors’ function in QuPath was used to find the appropriate deconvolution parameters to isolate the signal intensity contribution from Hematoxylin and DAB respectively. The deconvolution parameters are listed below:
 
-MarkerHematoxylinDABBackgroundS100B0.604840.675320.4220440.209960.502340.83879224223221EGFR0.723530.637370.265080.249520.523840.81445221219220
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th colspan="3">Hematoxylin</th>
+      <th colspan="3">DAB</th>
+      <th colspan="3">Background</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S100B</td>
+      <td>0.60484</td>
+      <td>0.67532</td>
+      <td>0.422044</td>
+      <td>0.20996</td>
+      <td>0.50234</td>
+      <td>0.83879</td>
+      <td>224</td>
+      <td>223</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>EGFR</td>
+      <td>0.72353</td>
+      <td>0.63737</td>
+      <td>0.26508</td>
+      <td>0.24952</td>
+      <td>0.52384</td>
+      <td>0.81445</td>
+      <td>221</td>
+      <td>219</td>
+      <td>220</td>
+    </tr>
+  </tbody>
+</table>
 
 For each ROI, nuclear segmentation on the Hematoxylin Optical Density (OD) was optimized using the ‘Watershed cell detection’ function in QuPath, and the cytoplasm around each nucleus was estimated by performing a 3 μm expansion from the nuclear outline. All measurements from all detections were exported for analysis in R. In R, specific parameters (Name, Cell.DAB.OD.mean, Cytoplasm.DAB.OD.mean, and Nucleus.DAB.OD.mean) were extracted for every detection (cell) from every patient. These parameters identify the ROI/core from which the cell was segmented, its corresponding patient ID, the mean optical density of the deconvoluted DAB signal in each entire segmented cell, the DAB signal in only the cytoplasm, and the signal exclusively in the nucleus respectively. The full TMA map linking QuPath IDs, Patient_IDs, Block, and Core_IDs was also imported. In addition, for each marker, the median DAB intensity was calculated for each patient (averaged over three cores). The thresholds and measurements on which these thresholds were applied are summarized below:
 
-MarkerMeasurementThreshold - Block AThreshold - Block BS100BCell_DAB0.40.4EGFRCell_DAB0.20.2
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th>Measurement</th>
+      <th>Threshold - Block A</th>
+      <th>Threshold - Block B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S100B</td>
+      <td>Cell_DAB</td>
+      <td>0.4</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>EGFR</td>
+      <td>Cell_DAB</td>
+      <td>0.2</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
 
 Patients were categorized as GNP-like if their TMA cores had S100B staining intensity above the first quartile of S100B intensities (>0.6728) and had EGFR staining below the 50th percentile (<0.4199). Patients were categorized as GPP-like if their TMA cores scored in the top tertile of EGFR intensity (>0.6929).
 
-## Data and code availability
+### Data and code availability
 
-## Data availability
+#### Data availability
 
 Annotated flow data files are available at the following link https://flowrepository.org/id/FR-FCM-Z24K. FCS files that contain the cells from the representative t-SNE can also be found on the GitHub page: https://github.com/cytolab/RAPID. Patient-specific views of population abundance and channel mass signals for all analyzed patients in this study are found in Supplementary file 6.
 
-## Code availability
+#### Code availability
 
 RAPID code is currently available on Github, along with FCS files from Dataset 1 and 2 for analysis, at: https://github.com/cytolab/RAPID ‘2020-01-15 RAPID Workflow Script on Davis Dataset.Rmd’ contains RAPID code for a single run as presented in Figure 1b. ‘2020-04-21 RAPID Stability Tests.Rmd’ contains RAPID code for repeated stability tests as presented in Figure 1c.

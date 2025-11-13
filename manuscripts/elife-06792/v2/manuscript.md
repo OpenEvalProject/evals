@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.06792.001 Salmonella PhoQ is a histidine kinase with a periplasmic sensor domain (PD) that promotes virulence by detecting the macrophage phagosome. PhoQ activity is repressed by divalent cations and induced in environments of acidic pH, limited divalent cations, and cationic antimicrobial peptides (CAMP). Previously, it was unclear which signals are sensed by salmonellae to promote PhoQ-mediated virulence. We defined conformational changes produced in the PhoQ PD on exposure to acidic pH that indicate structural flexibility is induced in α-helices 4 and 5, suggesting this region contributes to pH sensing. Therefore, we engineered a disulfide bond between W104C and A128C in the PhoQ PD that restrains conformational flexibility in α-helices 4 and 5. PhoQ W104C-A128C is responsive to CAMP, but is inhibited for activation by acidic pH and divalent cation limitation. phoQ W104C-A128C Salmonella enterica Typhimurium is virulent in mice, indicating that acidic pH and divalent cation sensing by PhoQ are dispensable for virulence. DOI: http://dx.doi.org/10.7554/eLife.06792.001
+Salmonella PhoQ is a histidine kinase with a periplasmic sensor domain (PD) that promotes virulence by detecting the macrophage phagosome. PhoQ activity is repressed by divalent cations and induced in environments of acidic pH, limited divalent cations, and cationic antimicrobial peptides (CAMP). Previously, it was unclear which signals are sensed by salmonellae to promote PhoQ-mediated virulence. We defined conformational changes produced in the PhoQ PD on exposure to acidic pH that indicate structural flexibility is induced in α-helices 4 and 5, suggesting this region contributes to pH sensing. Therefore, we engineered a disulfide bond between W104C and A128C in the PhoQ PD that restrains conformational flexibility in α-helices 4 and 5. PhoQW104C-A128C is responsive to CAMP, but is inhibited for activation by acidic pH and divalent cation limitation. phoQW104C-A128C Salmonella enterica Typhimurium is virulent in mice, indicating that acidic pH and divalent cation sensing by PhoQ are dispensable for virulence.
 
 ## Introduction
 
@@ -41,75 +41,205 @@ Acidic pH and CAMP additively activate PhoQ suggesting that the PD has distinct 
 
 ## Results
 
-## Residues in the PhoQ PD that are dynamic during pH-titration localize proximal to the interface between α-helices 4 and 5 and the α/β-core
+### Residues in the PhoQ PD that are dynamic during pH-titration localize proximal to the interface between α-helices 4 and 5 and the α/β-core
 
-PhoQ is activated in acidic conditions in vitro and within the acidified environment of the
+PhoQ is activated in acidic conditions in vitro and within the acidified environment of the Salmonella-containing vacuole (SCV) after phagocytosis (Alpuche Aranda et al., 1992; Martin-Orozco et al., 2006; Prost et al., 2007). However, the mechanism by which the PhoQ PD senses acidic pH is not well characterized. Previously, we reported that the (1H, 15N)-HSQC-NMR spectrum of the S. enterica Typhimurium PhoQ PD is highly sensitive to changes in pH (Prost et al., 2007). Therefore, to further understand PhoQ dynamics during activation by acidic pH we collected a series of (1H, 15N)-HSQC-NMR spectra of the PhoQ PD as a function of pH (Figure 1A). To extract residue information from the spectra, resonance assignments were determined for the PhoQ PD at pH 3.5, the condition that yielded the greatest number of observable resonances. Of the 138 residues that can yield HSQC signals, 120 resonances could be assigned in the spectrum at pH 3.5 (Figure 1B). The remarkably well dispersed spectrum indicates that the PD remains stably folded, even at pH of 3.5.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig1-v2.jpg)
 
-**Figure 1.:** 1H, 15N)-HSQC-NMR spectrum reveals significant peak shifting and broadening during pH titration.(A) (1H, 15N)-HSQC-NMR spectra of neutral to acidic pH-titration of the PhoQ PD. The pH-titration is represented as a magenta (pH 6.5) to black (pH 3.5) color gradient. The pH-titration spectra include pH 6.5, 6.0, 5.5, 4.9, 4.1, and 3.5. (B) The assigned (1H, 15N)-HSQC-NMR spectra of the S. enterica Typhimurium PhoQ PD at pH 3.5. Residue numbers are labeled proximal to their corresponding peak.DOI: http://dx.doi.org/10.7554/eLife.06792.003
+**Figure 1.:** (A) (1H, 15N)-HSQC-NMR spectra of neutral to acidic pH-titration of the PhoQ PD. The pH-titration is represented as a magenta (pH 6.5) to black (pH 3.5) color gradient. The pH-titration spectra include pH 6.5, 6.0, 5.5, 4.9, 4.1, and 3.5. (B) The assigned (1H, 15N)-HSQC-NMR spectra of the S. enterica Typhimurium PhoQ PD at pH 3.5. Residue numbers are labeled proximal to their corresponding peak.
 
 In the absence of other pH-dependent processes, resonances that arise from residues that undergo a protonation/deprotonation event will shift in a continuous manner. Such processes will appear in the so-called ‘fast-exchange’ NMR regime due to the rapid on/off rate of protons. Many resonances in the PD spectra exhibited pH-dependent fast-exchange behavior, consistent with ionization of the many histidine and acidic residues. In addition, some resonances broadened and disappeared from the spectrum as a function of pH. This behavior corresponds to intermediate-to-slow exchange and is indicative of a conformational change or the existence of multiple states that interconvert slowly. Thus, pH-dependent changes in the PhoQ PD HSQC spectra reveal regions of the domain that experience changes in functional group ionization and conformational dynamics.
 
-Spectra, collected at pH 3.5 and pH 6.5, were compared to identify regions in the PhoQ PD that are sensitive to changes in pH (
+Spectra, collected at pH 3.5 and pH 6.5, were compared to identify regions in the PhoQ PD that are sensitive to changes in pH (Figure 2A). Resonances that experienced significant pH-dependent chemical shift perturbations (CSPs > 0.08 ppm) or broadened beyond detection, localize to regions of the protein that contain ionizable functional groups and/or experience conformational dynamics; thereby defining pH-responsive regions in the domain. Of the 120 assigned residues in the PhoQ PD, resonances from 42 residues were affected by transition from pH 6.5 to 3.5 (Figure 2B). Due to resonance overlap and broadening, it is difficult to partition the two spectroscopic effects throughout the comparison. Approximately, 20 affected resonances broadened beyond detection at pH 6.5, consistent with pH-dependent conformational dynamics in the PhoQ PD. Furthermore, 66 resonances were relatively unaffected, indicating that the PhoQ PD has pH-insensitive regions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig2-v2.jpg)
 
-**Figure 2.:** (A) Comparison of (1H, 15N)-HSQC-NMR spectra of the PhoQ PD at pH 6.5 (magenta) and pH 3.5 (black). (B) Residues that experience CSPs >0.08 ppm and/or peak broadening determined from the spectral comparison in panel A are mapped onto the S. enterica Typhimurium PhoQ PD (residues 45–188) primary and secondary structures (pH-sensitive residues, magenta; pH-insensitive residues, teal; ambiguous or non-assigned residues, no color). The locations of activating mutations from Figure 2—figure supplement 1 are indicated with asterisks. (C) pH-sensitive residues from panel A mapped onto the PhoQ PD structure (PDB 1YAX); pH-sensitive residues (magenta), pH-insensitive residues (teal), and ambiguous or non-assigned residues (black). pH-sensitive secondary structural features are labeled with yellow circles (NT, N-termini; CT, C-termini). (D) Continuous surface representation (1.4 Å probe) of pH-sensitive (magenta) and pH-insensitive (teal) residues from panel C mapped onto the PhoQ PD crystal structure.DOI: http://dx.doi.org/10.7554/eLife.06792.004
+**Figure 2.:** (A) Comparison of (1H, 15N)-HSQC-NMR spectra of the PhoQ PD at pH 6.5 (magenta) and pH 3.5 (black). (B) Residues that experience CSPs >0.08 ppm and/or peak broadening determined from the spectral comparison in panel A are mapped onto the S. enterica Typhimurium PhoQ PD (residues 45–188) primary and secondary structures (pH-sensitive residues, magenta; pH-insensitive residues, teal; ambiguous or non-assigned residues, no color). The locations of activating mutations from Figure 2—figure supplement 1 are indicated with asterisks. (C) pH-sensitive residues from panel A mapped onto the PhoQ PD structure (PDB 1YAX); pH-sensitive residues (magenta), pH-insensitive residues (teal), and ambiguous or non-assigned residues (black). pH-sensitive secondary structural features are labeled with yellow circles (NT, N-termini; CT, C-termini). (D) Continuous surface representation (1.4 Å probe) of pH-sensitive (magenta) and pH-insensitive (teal) residues from panel C mapped onto the PhoQ PD crystal structure.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Mutations identified by random and site-directed mutagenesis confer increased PhoQ-dependent phoN::TnphoA alkaline phosphatase activity when grown in N-mm supplemented with 10 mM MgCl2. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD. (B) Activating mutations from panel A (magenta) mapped onto the S. enterica Typhimurium PhoQ PD primary and secondary structures (residues 45–188). (C) The locations of activating mutations from panel A (magenta sticks) mapped onto the PhoQ PD structure (PDB 1YAX). Secondary structural features with activating mutations are labeled with yellow circles (NT, N-termini; CT, C-termini). (D) Continuous surface representation (1.4 Å probe) of activating mutations from panel C mapped onto the PhoQ PD crystal structure.DOI: http://dx.doi.org/10.7554/eLife.06792.005
+**Figure 2—figure supplement 1.:** (A) Mutations identified by random and site-directed mutagenesis confer increased PhoQ-dependent phoN::TnphoA alkaline phosphatase activity when grown in N-mm supplemented with 10 mM MgCl2. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD. (B) Activating mutations from panel A (magenta) mapped onto the S. enterica Typhimurium PhoQ PD primary and secondary structures (residues 45–188). (C) The locations of activating mutations from panel A (magenta sticks) mapped onto the PhoQ PD structure (PDB 1YAX). Secondary structural features with activating mutations are labeled with yellow circles (NT, N-termini; CT, C-termini). (D) Continuous surface representation (1.4 Å probe) of activating mutations from panel C mapped onto the PhoQ PD crystal structure.
 
 Assignments for the HSQC spectrum allowed us to identify residues in the PhoQ PD structure that experience pH-dependent changes (Figure 2C). A majority of residues affected by pH localize to α1, α2, α4, and α5 and proximal regions, including β5, β6, and β7. As an independent approach, we randomly mutagenized the PD to identify mutations that activate PhoQ in the presence of repressing concentrations of divalent cations (Figure 2—figure supplement 1). pH-sensitive regions identified in the NMR experiments overlap or are proximal to many of the mutations identified in our screen for activating mutations in the PhoQ PD (Figure 2B, asterisks). Similar to the activating mutations, a majority of the pH-sensitive residues form an interconnected network which spans α4 and α5 and the α/β-core (Figure 2D). These data suggested that PhoQ PD residues and structural features important for activation and repression undergo conformational change during pH titration. A majority of the residues that were unaffected by changes in pH mapped distally to α4 and α5, providing support for the hypothesis that the detection and response to pH is contained within localized structural elements of the PD. Altogether, these observations are consistent with a model where fluctuations in pH promote local conformational dynamics between α4 and α5 and the α/β-core as part of the pH sensing mechanism.
 
-## A disulfide bond between α-helices 2 and 4 within the PhoQ PD inhibits activation by acidic pH and divalent cation limitation, but does not restrict activation by CAMP
+### A disulfide bond between α-helices 2 and 4 within the PhoQ PD inhibits activation by acidic pH and divalent cation limitation, but does not restrict activation by CAMP
 
 The NMR and mutagenesis data suggested that α4 and α5 are dynamic and that the relationship between the two helices and the α/β-core of the PD likely plays a role in activation. To test this hypothesis, we engineered a PhoQ PD mutant that contains an internal disulfide bond predicted to restrict conformational dynamics between α4 and α5 and the α/β-core. Cysteine residues were introduced at positions W104 (on α2) and A128 (on α4) based on their side-chain surface exposure, relative geometries, and Cβ distance (∼6 Å) observed in the S. enterica Typhimurium PhoQ PD structure (PDB 1YAX). Non-reducing SDS-PAGE and western blotting of membranes harvested from phoQW104C-A128C S. enterica Typhimurium revealed a faster migrating PhoQ species relative to wild type, suggesting W104C and A128C form an intramolecular disulfide bond when expressed in bacteria (Figure 3—figure supplement 1A). When treated with sample buffer supplemented with β-mercaptoethanol to reduce the disulfide bond, PhoQW104C A128C migrated similarly to the wild-type protein. Membranes harvested from phoQW104C-A128C S. enterica Typhimurium grown in N-minimal media (N-mm) at pH 7.5 or pH 5.5, supplemented with 10 micromolar or 1 millimolar MgCl2, or CAMP showed no observable differences in PhoQW104C-A128C disulfide bond formation by SDS-PAGE, suggesting formation of the W104C-A128C disulfide bond is not dependent on growth conditions or PhoQ activation state (data not shown). These data indicated that the disulfide bond formed between W104C-A128C is stably maintained within the S. enterica Typhimurium periplasm.
 
-The PhoQ
+The PhoQW104C-A128C disulfide mutant was designed to inhibit motion between α2 and α4, allowing us to determine whether the dynamics of α4 and α5 play a critical role in activation. When exposed to acidic pH or low divalent cation growth media, activation of the PhoQ-dependent phoN::TnphoA reporter in S. enterica Typhimurium was significantly reduced in phoQW104C-A128C relative to wild type (Figure 3A). Additionally, the previously identified T48I activating mutation in the T48 D179 K186 (TDK) network in the PhoQ PD (Miller and Mekalanos, 1990; Garcia Vescovi et al., 1996; Sanowar et al., 2003; Cho et al., 2006) was suppressed by the W104C-A128C disulfide bond, supporting the hypothesis that α4 and α5 and the TDK network are an interconnected signaling element (Figure 3B). Interestingly, the T48I mutation potentiates CAMP activation in the phoQT48I W104C-A128C background by an unknown mechanism. Importantly, CAMP still activated the phoN::TnphoA reporter in phoQW104C-A128C and phoQT48I W104C-A128C S. enterica Typhimurium at or above wild-type levels, indicating that these mutant proteins are functional (Figure 3A,B). Chromosomal phoQW104C-A128C had a similar phenotype to phoQW104C-A128C expressed from the pBAD24 vector, indicating the phenotype is not an artifact of expression in trans (Figure 3—figure supplement 1B). Furthermore, the phoQW104C-A128C phenotype does not appear to be exclusive to phoN as other PhoQ-regulated genes—pagD, pagO, and phoP—are significantly reduced for induction by acidic pH and divalent cation limitation, but are induced by exposure to CAMP, similar to wild-type bacteria (Figure 3—figure supplement 2). Serine substitutions at W104 and A128 did not recapitulate the phenotype observed for phoQW104C-A128C, but rather resulted in increased phoN::TnphoA reporter activity relative to wild type (Figure 3—figure supplement 1C). Additionally, neither single cysteine nor single serine substitutions at W104 or A128 recapitulated the phoQW104C-A128C phenotype (Figure 3—figure supplement 1D). These results confirmed that a disulfide bond is required for the phoQW104C-A128C phenotype. Similar to residues identified in our screen for activating mutations, the replacement of partially buried, hydrophobic residues at positions W104 and A128 with smaller, polar side-chains promoted activation. Altogether, these data confirmed that restricting conformational flexibility or movement of α4 and α5 inhibits activation by acidic pH, divalent cation limitation, and activating mutations in the TDK network. These data suggest that CAMP activates PhoQ by a mechanism that is distinct and separable from the mechanism by which acidic pH or divalent cation limitation activate PhoQ.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig3-v2.jpg)
 
-**Figure 3.:** PhoQ-dependent phoN::TnphoA alkaline phosphatase activity of (A) wild-type and phoQ or (W104C-A128CB) phoQ and T48IphoQ T48I W104C-A128CS. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, or CAMP) N-mm. (A and B) The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD. Unpaired Student's t-test was performed between wild type and phoQ or W104C-A128CphoQ and T48IphoQ for all conditions; (*) p ≤ 0.05, (NS) not significantly different.T48I W104C-A128CDOI: http://dx.doi.org/10.7554/eLife.06792.006
+**Figure 3.:** PhoQ-dependent phoN::TnphoA alkaline phosphatase activity of (A) wild-type and phoQW104C-A128C or (B) phoQT48I and phoQT48I W104C-A128C S. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, or CAMP) N-mm. (A and B) The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD. Unpaired Student's t-test was performed between wild type and phoQW104C-A128C or phoQT48I and phoQT48I W104C-A128C for all conditions; (*) p ≤ 0.05, (NS) not significantly different.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** W104C-A128C disulfide forms in the Salmonella periplasm and individual mutations at W104 or A128 do not inhibit activation by acidic pH or divalent cation limitation.(A) Non-reducing SDS-PAGE and Western blotting of wild-type and phoQ membranes with an anti-PhoQ PD antibody. Membranes were treated with or without sample buffer containing β-mercaptoethanol to show the effect of disulfide reduction on migration rate. (W104C-A128CB, C, and D) PhoQ-dependent phoN::TnphoA alkaline phosphatase activity of S. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, CAMP) N-mm. (B) Chromosomal wild-type and phoQ W104C-A128CS. enterica Typhimurium. (C) Wild-type and phoQ W104S-A128SS. enterica Typhimurium. (B and C) Unpaired Student's t-test was performed between wild type and phoQ or W104C-A128CphoQ for all conditions; (*) p ≤ 0.05. (W104S-A128SD) Single cysteine or serine mutations at position W104 and A128 in PhoQ. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.DOI: http://dx.doi.org/10.7554/eLife.06792.007
+**Figure 3—figure supplement 1.:** (A) Non-reducing SDS-PAGE and Western blotting of wild-type and phoQW104C-A128C membranes with an anti-PhoQ PD antibody. Membranes were treated with or without sample buffer containing β-mercaptoethanol to show the effect of disulfide reduction on migration rate. (B, C, and D) PhoQ-dependent phoN::TnphoA alkaline phosphatase activity of S. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, CAMP) N-mm. (B) Chromosomal wild-type and phoQW104C-A128C S. enterica Typhimurium. (C) Wild-type and phoQW104S-A128S S. enterica Typhimurium. (B and C) Unpaired Student's t-test was performed between wild type and phoQW104C-A128C or phoQW104S-A128S for all conditions; (*) p ≤ 0.05. (D) Single cysteine or serine mutations at position W104 and A128 in PhoQ. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** phoQ W104C-A128CSalmonella are induced by CAMP, but not by acidic pH or divalent cation limitation.PhoQ-dependent gene expression from S. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, or CAMP) N-mm. Gene expression was normalized to rpoD and represented as fold-induction relative to ΔphoQ. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.DOI: http://dx.doi.org/10.7554/eLife.06792.008
+**Figure 3—figure supplement 2.:** PhoQ-dependent gene expression from S. enterica Typhimurium strains grown in basal (pH 7.5) or activating (pH 5.5, 10 µM MgCl2, or CAMP) N-mm. Gene expression was normalized to rpoD and represented as fold-induction relative to ΔphoQ. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.
 
-## The PhoQW104C-A128C PD is structurally similar to wild type and has increased stability
+### The PhoQW104C-A128C PD is structurally similar to wild type and has increased stability
 
-A disulfide bond spanning helices α2 and α4 inhibits activation of PhoQ
+A disulfide bond spanning helices α2 and α4 inhibits activation of PhoQW104C-A128C by acidic pH and divalent cation limitation. Given the remarkable phenotype of this mutant, we sought to ascertain whether the PhoQW104C-A128C PD maintains a similar structure to the wild-type PD. A crystal structure of the S. enterica Typhimurium PhoQW104C-A128C PD (PDB 4UEY) was solved at 1.9 Å resolution (Figure 4A and Table 1). As predicted, the PhoQW104C-A128C PD formed an intramolecular disulfide bond between W104C and A128C, covalently linking α2 and α4 (Figure 4A, inset). The protomers in the PhoQW104C-A128C PD structure are highly similar to each other, with an average root mean squared deviation (r.m.s.d.) of 0.3. Furthermore, the disulfide mutant structure is similar to previously solved structures of wild-type S. enterica Typhimurium (PDB 1YAX) and Escherichia coli (PDB 3BQ8) PhoQ PD, with an average r.m.s.d. value of 1.07 Å (Figure 4B). These data further demonstrate that the PhoQW104C-A128C PD forms an intramolecular disulfide bond and a structure similar to the wild-type PhoQ PD.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig4-v2.jpg)
 
-**Figure 4.:** W104C-A128C PD is structurally similar to wild type and has increased stability.(A) 1.9 Å crystal structure of the S. enterica Typhimurium PhoQW104C-A128C PD (PDB 4UEY). The W104C-A128C disulfide bond (inset) is located between α2 and α4. Secondary structural features are annotated with yellow circles (NT, N-termini; CT, C-termini). (B) Structural comparison of the PhoQW104C-A128C PD (blue), the wild-type S. enterica Typhimurium PhoQ PD (PDB 1YAX, teal), and the wild-type E. coli PhoQ PD (PDB 3BQ8, purple). (C) Thermal denaturation of wild-type S. enterica Typhimurium PhoQ PD and PhoQW104C-A128C PD treated with or without TCEP reducing agent monitored by CD spectroscopy at 212 nm. Raw data were normalized to give the fraction unfolded protein assuming a two-state denaturation process. A sigmoidal curve was fit to the processed data. The data shown are representatives from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.06792.009
+**Figure 4.:** (A) 1.9 Å crystal structure of the S. enterica Typhimurium PhoQW104C-A128C PD (PDB 4UEY). The W104C-A128C disulfide bond (inset) is located between α2 and α4. Secondary structural features are annotated with yellow circles (NT, N-termini; CT, C-termini). (B) Structural comparison of the PhoQW104C-A128C PD (blue), the wild-type S. enterica Typhimurium PhoQ PD (PDB 1YAX, teal), and the wild-type E. coli PhoQ PD (PDB 3BQ8, purple). (C) Thermal denaturation of wild-type S. enterica Typhimurium PhoQ PD and PhoQW104C-A128C PD treated with or without TCEP reducing agent monitored by CD spectroscopy at 212 nm. Raw data were normalized to give the fraction unfolded protein assuming a two-state denaturation process. A sigmoidal curve was fit to the processed data. The data shown are representatives from three independent experiments.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** W104C-A128C PD have similar secondary structure.(A) Non-reducing SDS-PAGE of purified wild-type S. enterica Typhimurium PhoQ PD and PhoQW104C-A128C PD treated with or without TCEP reducing agent. (B) CD wavelength scan of the wild-type PhoQ PD, PhoQW104C-A128C PD, and PhoQW104C-A128C PD treated with TCEP at 25°C buffered to pH 5.5.DOI: http://dx.doi.org/10.7554/eLife.06792.010
+**Figure 4—figure supplement 1.:** (A) Non-reducing SDS-PAGE of purified wild-type S. enterica Typhimurium PhoQ PD and PhoQW104C-A128C PD treated with or without TCEP reducing agent. (B) CD wavelength scan of the wild-type PhoQ PD, PhoQW104C-A128C PD, and PhoQW104C-A128C PD treated with TCEP at 25°C buffered to pH 5.5.
 
-We hypothesize that the W104C-A128C disulfide may stabilize conformational dynamics between α4 and α5 and the α/β-core, preventing acidic pH from promoting a flexible, active state. This hypothesis was tested by performing thermal melts on purified PhoQ PD and PhoQW104C-A128C PD at pH 5.5 by following the CD signal of each protein as a function of temperature. We first confirmed that purified PhoQW104C-A128C PD forms a disulfide as visualized as a shift in SDS-PAGE migration rate relative to PhoQ PD and TCEP-reduced PhoQW104C-A128C (Figure 4—figure supplement 1A). The CD spectra revealed that the PhoQ PD and PhoQW104C-A128C PD with or without TCEP are folded and have relatively similar secondary structure at pH 5.5 and 25°C (Figure 4—figure supplement 1B). Thermal denaturation of the PhoQ PD at pH 5.5 proved to be irreversible. Therefore, we reported the apparent transition temperatures (Tmapp). While the wild-type PhoQ PD unfolded with a Tmapp of 56°C in the presence and absence of TCEP (Figure 4C), the PhoQW104C-A128C PD had a significantly increased Tmapp of 75°C. When reduced with TCEP, the PhoQW104C-A128C PD was slightly destabilized relative to the wild type, with a Tmapp 52°C. Therefore, the W104C-A128C disulfide increased the intrinsic stability of the PD at pH 5.5 relative to wild type. Furthermore, the observations that reduced PhoQW104C A128C PD is less stable than wild type and that phoQW104S A128S bacteria had increased PhoQ-dependent gene reporter activity relative to wild type (Figure 3—figure supplement 1C) suggests that substituting small polar side-chains at these positions in the PD results in decreased stability and increased PhoQ activity. Combined, these results suggest that the mechanism by which the W104C-A128C disulfide bond inhibits PhoQ activation by acidic pH and divalent cation limitation involves a loss of conformational flexibility between α4 and α5 and the α/β-core.
+**Table 1.**
+ Crystallographic data collection and refinement
 
-## Salmonella strains with the phoQW104C-A128C allele are competent for survival during systemic virulence in mice and within cultured macrophage
 
-Prior to this study, the contribution of specific stimuli to PhoQ-mediated bacterial virulence was difficult to ascertain as mutants that only respond to individual signals were not available. With the construction of
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PhoQW104C-A128C PD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>128.04, 45.37, 81.37</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 102.53, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>31.3–1.9 (2.01–1.90)*</td>
+    </tr>
+    <tr>
+      <td>Rsym or Rmerge</td>
+      <td>0.05 (0.51)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>12.9 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.8 (93.8)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>3.6 (3.2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>31.3–1.90 (1.95–1.90)*</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>35,633</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.23/0.26 (0.38/0.44)</td>
+    </tr>
+    <tr>
+      <td colspan="2">No. atoms (all)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>3391</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <td>Ca2+</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td colspan="2">B-factors</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>44.8</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>40.6</td>
+    </tr>
+    <tr>
+      <td colspan="2">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td colspan="2">Ramachandran statistics</td>
+    </tr>
+    <tr>
+      <td>Residues in favored region no (%)</td>
+      <td>409 (98.3)</td>
+    </tr>
+    <tr>
+      <td>Residues in allowed region no (%)</td>
+      <td>7 (1.7)</td>
+    </tr>
+    <tr>
+      <td>Residues in outlier region no (%)</td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td>PDB-entry</td>
+      <td>4UEY</td>
+    </tr>
+    <tr>
+      <td>Crystallization conditions</td>
+      <td>0.1 M Bis-Tris pH 6.5, 200 mM MgCl2, 25% Peg3350</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest-resolution shell._
+
+We hypothesize that the W104C-A128C disulfide may stabilize conformational dynamics between α4 and α5 and the α/β-core, preventing acidic pH from promoting a flexible, active state. This hypothesis was tested by performing thermal melts on purified PhoQ PD and PhoQW104C-A128C PD at pH 5.5 by following the CD signal of each protein as a function of temperature. We first confirmed that purified PhoQW104C-A128C PD forms a disulfide as visualized as a shift in SDS-PAGE migration rate relative to PhoQ PD and TCEP-reduced PhoQW104C-A128C (Figure 4—figure supplement 1A). The CD spectra revealed that the PhoQ PD and PhoQW104C-A128C PD with or without TCEP are folded and have relatively similar secondary structure at pH 5.5 and 25°C (Figure 4—figure supplement 1B). Thermal denaturation of the PhoQ PD at pH 5.5 proved to be irreversible. Therefore, we reported the apparent transition temperatures ($T_{m}^{app}$). While the wild-type PhoQ PD unfolded with a $T_{m}^{app}$ of 56°C in the presence and absence of TCEP (Figure 4C), the PhoQW104C-A128C PD had a significantly increased $T_{m}^{app}$ of 75°C. When reduced with TCEP, the PhoQW104C-A128C PD was slightly destabilized relative to the wild type, with a $T_{m}^{app}$ 52°C. Therefore, the W104C-A128C disulfide increased the intrinsic stability of the PD at pH 5.5 relative to wild type. Furthermore, the observations that reduced PhoQW104C A128C PD is less stable than wild type and that phoQW104S A128S bacteria had increased PhoQ-dependent gene reporter activity relative to wild type (Figure 3—figure supplement 1C) suggests that substituting small polar side-chains at these positions in the PD results in decreased stability and increased PhoQ activity. Combined, these results suggest that the mechanism by which the W104C-A128C disulfide bond inhibits PhoQ activation by acidic pH and divalent cation limitation involves a loss of conformational flexibility between α4 and α5 and the α/β-core.
+
+### Salmonella strains with the phoQW104C-A128C allele are competent for survival during systemic virulence in mice and within cultured macrophage
+
+Prior to this study, the contribution of specific stimuli to PhoQ-mediated bacterial virulence was difficult to ascertain as mutants that only respond to individual signals were not available. With the construction of phoQW104C-A128C S. enterica Typhimurium, the significance of acidic pH and divalent cation sensing by PhoQ to virulence could be directly determined independently of CAMP sensing. Thus, BALB/c mice were infected by the intraperitoneal (IP) route with wild-type, phoQW104C-A128C, or phoQ null (ΔphoQ) bacteria and splenic bacterial burden was determined at 48- and 96-hpi (Figure 5A, solid lines). Similar to infection with wild-type bacteria, mice infected with phoQW104C-A128C bacteria had increased splenic bacterial burden relative to those infected with ΔphoQ bacteria. The equivalent experiment was performed in resistant A/J mice to determine if the virulence phenotype observed for mice infected with phoQW104C-A128C bacteria was due to the susceptible BALB/c mouse genetic background and to determine whether a subtle fitness defect would be exposed on infection of a relatively resistant inbred mice. Infecting A/J mice revealed the same relative phenotypes for wild-type, phoQW104C-A128C, and ΔphoQ bacteria, although, as expected, bacterial burden was lower compared to infected BALB/c mice (Figure 5A, dotted lines). These results indicate that PhoQ sensing of acidic pH and divalent cation limitation are dispensable for systemic virulence of S. enterica Typhimurium in susceptible and relatively resistant inbred mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig5-v2.jpg)
 
-**Figure 5.:** phoQ Salmonella survive within host organisms and exhibits PhoQ-dependent gene expression within macrophage.W104C-A128C(A) Individual S. enterica Typhimurium strains administered IP to BALB/c (solid lines) or A/J (dotted lines) mice. The inoculum is shown at T = 0 hpi. Spleens were harvested and bacterial burden quantified. (B) Competition between S. enterica Typhimurium strains administered IP to BALB/c mice. Spleens were harvested, bacteria quantified 48-hpi and CI determined. (A and B) The data shown are representatives from at least three independent experiments performed in quintuplet and presented as the mean ± SD. (C) BALB/c BMMΦ infected with strains of S. enterica Typhimurium. Bacteria were harvested and quantified at the indicated time-points. The inoculum is shown at T = 0 hpi. The data shown are representatives from at least three independent experiments performed in triplicate and presented as the mean ± SD. (D) PhoQ-dependent gene expression from S. enterica Typhimurium strains within BALB/c BMMΦ 4-hpi. Gene expression was normalized to rpoD and presented as fold-induction relative to ΔphoQ. The data shown are representatives from at least three independent experiments and presented as the mean ± SD. (A, B, C, and D) Unpaired Student's t-test was performed between all strains (bar) for each time-point or gene. Symbols for significant difference; (¤) wild type and phoQ are not significantly different from each other (p ≥ 0.05), but are significantly different from W104C-A128CΔphoQ (p ≤ 0.05), (*) all strains are significantly different from each other (p ≤ 0.05).DOI: http://dx.doi.org/10.7554/eLife.06792.012
+**Figure 5.:** (A) Individual S. enterica Typhimurium strains administered IP to BALB/c (solid lines) or A/J (dotted lines) mice. The inoculum is shown at T = 0 hpi. Spleens were harvested and bacterial burden quantified. (B) Competition between S. enterica Typhimurium strains administered IP to BALB/c mice. Spleens were harvested, bacteria quantified 48-hpi and CI determined. (A and B) The data shown are representatives from at least three independent experiments performed in quintuplet and presented as the mean ± SD. (C) BALB/c BMMΦ infected with strains of S. enterica Typhimurium. Bacteria were harvested and quantified at the indicated time-points. The inoculum is shown at T = 0 hpi. The data shown are representatives from at least three independent experiments performed in triplicate and presented as the mean ± SD. (D) PhoQ-dependent gene expression from S. enterica Typhimurium strains within BALB/c BMMΦ 4-hpi. Gene expression was normalized to rpoD and presented as fold-induction relative to ΔphoQ. The data shown are representatives from at least three independent experiments and presented as the mean ± SD. (A, B, C, and D) Unpaired Student's t-test was performed between all strains (bar) for each time-point or gene. Symbols for significant difference; (¤) wild type and phoQW104C-A128C are not significantly different from each other (p ≥ 0.05), but are significantly different from ΔphoQ (p ≤ 0.05), (*) all strains are significantly different from each other (p ≤ 0.05).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** S. enterica Typhimurium.Competition between S. enterica Typhimurium strains administered PO to BALB/c mice. Spleens were harvested, bacteria quantified 96-hpi and CI determined. The data shown are from three independent experiments and presented as the mean ± SD. Data points on the x-axis represent samples with a CI of zero.DOI: http://dx.doi.org/10.7554/eLife.06792.013
+**Figure 5—figure supplement 1.:** Competition between S. enterica Typhimurium strains administered PO to BALB/c mice. Spleens were harvested, bacteria quantified 96-hpi and CI determined. The data shown are from three independent experiments and presented as the mean ± SD. Data points on the x-axis represent samples with a CI of zero.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Salmonella is decreased relative to phoQ and W104C-A128CΔphoQ when grown at pH 5.5.S. enterica Typhimurium strains were grown in N-mm buffered to pH 7.5 (closed symbols) or pH 5.5 (open symbols) supplemented with 1 mM MgCl2. Bacterial growth was monitored by OD600 at the indicated time-points. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.DOI: http://dx.doi.org/10.7554/eLife.06792.014
+**Figure 5—figure supplement 2.:** S. enterica Typhimurium strains were grown in N-mm buffered to pH 7.5 (closed symbols) or pH 5.5 (open symbols) supplemented with 1 mM MgCl2. Bacterial growth was monitored by OD600 at the indicated time-points. The data shown are representatives from at least three independent experiments performed in duplicate and presented as the mean ± SD.
 
 The importance of PhoQ activation by acidic pH and divalent cation limitation for systemic infection was also assessed by competing phoQW104C-A128C bacteria with wild-type S. enterica Typhimurium in IP or peroral (PO) infections of BALB/c mice. The splenic bacterial competitive index (CI) for wild-type, phoQW104C-A128C, and ΔphoQ bacteria was determined for both IP and PO infections at 48-hpi or 96-hpi, respectively (Figure 5B and Figure 5—figure supplement 1). Consistent with the single strain infections, phoQW104C-A128C demonstrated no reduction in CI and, in contrast, was more competitive than wild type. ΔphoQ showed the expected reduction in CI. Altogether, these data indicate that PhoQ activation by acidic pH and divalent cation limitation are dispensable for S. enterica Typhimurium to out compete strains with these capabilities during systemic infection of susceptible mice. Furthermore, the observation that IP and PO administered phoQW104C-A128C S. enterica Typhimurium have similar competitive indices suggests that acidic pH and divalent cation sensing by PhoQ are not required for survival or spread from the gastrointestinal tract to deep tissue sites.
 
@@ -117,7 +247,7 @@ S. enterica Typhimurium is growth restricted in cultured fibroblasts and nonphag
 
 The contribution of acidic pH and divalent cation limitation as signals for PhoQ-mediated bacterial intracellular survival within macrophages was evaluated by measuring S. enterica Typhimurium survival after infection of bone-marrow derived macrophages (BMMΦ) from BALB/c mice. BMMΦ were infected with-wild type, phoQW104C-A128C, or ΔphoQ S. enterica Typhimurium strains and bacterial burden was determined at 2-, 4-, 8-, and 24-hpi (Figure 5C). No difference in bacterial burden was observed between wild type, phoQW104C-A128C, and ΔphoQ at 2- or 4-hpi. At 8- and 24-hpi, bacterial burden for ΔphoQ was decreased relative to wild type and phoQW104C-A128C. Importantly, bacteria with the phoQW104C-A128C allele maintained at or above wild-type bacterial levels throughout infection. These data indicate that activation of PhoQ by acidic pH and divalent cation limitation are dispensable for S. enterica Typhimurium survival within BMMΦ from inbred mice.
 
-## PhoQ-dependent gene expression is induced in phoQW104C-A128C Salmonella within cultured macrophages
+### PhoQ-dependent gene expression is induced in phoQW104C-A128C Salmonella within cultured macrophages
 
 The discovery of the phoQW104C-A128C phenotype allowed for the unique opportunity to examine the contribution of acidic pH and divalent cation sensing to PhoQ-dependent gene expression during infection of macrophages. Therefore, BMMΦ from BALB/c mice were infected with wild-type, phoQW104C-A128C, or ΔphoQ S. enterica Typhimurium. Following incubation, PhoQ-dependent gene expression was determined for intracellular S. enterica Typhimurium (Figure 5D). Wild-type bacteria experienced 41-, 29-, 36-, and 51-fold increases in gene expression for pagD, pagO, phoN, and phoP, whereas phoQW104C-A128C experienced increases of 12-, 9-, 9-, and 33-fold, respectively, relative to ΔphoQ bacteria. These data may indicate that wild-type acidic pH or divalent cation sensing contribute an approximate threefold to fourfold increase in PhoQ-dependent gene expression relative to phoQW104C-A128C; however, a significant amount of gene expression (≥ninefold) appeared to be independent of acidic pH or divalent cation sensing. These findings are consistent with in vitro results which show that acidic pH and CAMP are additive signals for PhoQ (Prost et al., 2007). These data indicate that maximal PhoQ-dependent gene expression in macrophages requires acidic pH or divalent cation sensing. Furthermore, these findings reveal that the phoQW104C-A128C allele promotes significant induction of PhoQ-dependent gene expression, suggesting CAMP or alternative host factors, other than acidic pH and divalent cation limitation, are a major signal for S. enterica Typhimurium within BMMΦ vacuoles.
 
@@ -125,11 +255,11 @@ The discovery of the phoQW104C-A128C phenotype allowed for the unique opportunit
 
 Salmonellae encounter changing environments within the macrophage phagosome and other mammalian host sites during infection. These environments include a variety of antimicrobial factors for which the bacteria must regulate inducible resistance mechanisms in order to survive. These bacterial resistance mechanisms are essential for successful infection, necessitating tight regulation by sensors such as PhoQ. Our study defines α4 and α5 in the PhoQ PD as a pH-responsive structural element that experiences a change in its dynamic behavior upon transition to acidic pH. Furthermore, mutations within the PhoQ PD, predicted to destabilize hydrophobic packing and hydrogen bonding between the α/β-core and α4 and α5, resulted in loss of PhoQ repression. Limiting flexibility between these structural elements by introduction of a disulfide bond inhibited PhoQ activation by acidic pH and divalent cation limitation. We suggest that PhoQ has evolved α4 and α5 as a unique pH-responsive structural element within the PD, effectively replacing the ligand-binding site that is often found in a similar location in other structurally related PDC sensor domains (Cho et al., 2006; Cheung and Hendrickson, 2008).
 
-This study provides insights for a refined model of PhoQ activation (
+This study provides insights for a refined model of PhoQ activation (Figure 6). At neutral pH and millimolar divalent cation concentration (Figure 6, left), the PhoQ PD is anchored to the inner membrane in a repressed state via cation-bridges, a rigid α/β-core and TDK network, and quiescent α4 and α5. Acidic pH or divalent cation limitation promotes a change in α4 and α5 from a stable to a dynamic state (Figure 6, middle). Acidic pH-induced flexibility in α4 and α5 may destabilize divalent cation salt-bridges between the inner membrane and acidic patch, thereby promoting a loss of divalent cation-mediated repression. Lack of divalent cation salt-bridges between the PhoQ PD acidic patch and inner membrane due to divalent cation limitation may result in electrostatic repulsion between the acidic patch and inner membrane, releasing α4 and α5, and favoring a more flexible state in this structural element. Changes in the relationship between α4 and α5 and the α/β-core surrounding H157 are transmitted to the dimerization interface and TDK network proximal to the membrane resulting in alterations of the transmembrane domain, cytoplasmic HAMP domain, and ultimately resulting in increased PhoQ kinase activity.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06792/elife-06792-fig6-v2.jpg)
 
-**Figure 6.:** (Left) At neutral pH and millimolar divalent cation concentration, the PhoQ PD is maintained in a repressed conformation due to rigidified interactions between the α/β-core (yellow spheres), α4 and α5, and salt-bridges (bronze spheres) formed between the acidic patch (red spheres) and inner membrane. (Middle) Transition to a mildly acidic (left protomer) or divalent cation limited (right protomer) environment promotes flexibility in α4 and α5 (bent arrows) and conformational dynamics in the α/β-core surrounding H157 (teal spheres). Movement in α4 and α5 due to acidic pH or divalent cation limitation destabilizes salt-bridges between the acidic patch and inner membrane perturbing the TDK network (blue spheres) resulting in activation. (Right) CAMP (magenta helices) intercalates into the inner membrane and promotes PhoQ activation by directly interacting with the PhoQ transmembrane domains and/or by disrupting local phospholipid packing (left protomer) and/or by overcoming constraints in α4 and α5 (right monomer, bent arrow).DOI: http://dx.doi.org/10.7554/eLife.06792.015
+**Figure 6.:** (Left) At neutral pH and millimolar divalent cation concentration, the PhoQ PD is maintained in a repressed conformation due to rigidified interactions between the α/β-core (yellow spheres), α4 and α5, and salt-bridges (bronze spheres) formed between the acidic patch (red spheres) and inner membrane. (Middle) Transition to a mildly acidic (left protomer) or divalent cation limited (right protomer) environment promotes flexibility in α4 and α5 (bent arrows) and conformational dynamics in the α/β-core surrounding H157 (teal spheres). Movement in α4 and α5 due to acidic pH or divalent cation limitation destabilizes salt-bridges between the acidic patch and inner membrane perturbing the TDK network (blue spheres) resulting in activation. (Right) CAMP (magenta helices) intercalates into the inner membrane and promotes PhoQ activation by directly interacting with the PhoQ transmembrane domains and/or by disrupting local phospholipid packing (left protomer) and/or by overcoming constraints in α4 and α5 (right monomer, bent arrow).
 
 Our model of PhoQ activation and repression has similarities to a recently proposed two-state computational model in which the PD is predicted to experience broad conformational changes within the periplasmic dimerization interface and acidic patch (Molnar et al., 2014). This model is consistent with predictions previously made in relation to the discovery of the divalent cation bridges between the PhoQ acidic patch and negatively charged membrane phospholipids (Bader et al., 2005; Cho et al., 2006). Molnar et al suggest that the PhoQ PD assumes alternative conformations as the acidic patch moves away from the membrane in the absence of divalent cation. Our findings that restricting movement in α4 and α5 inhibits PhoQ activation by acidic pH and divalent cation limitation supports the model that the acidic patch and α4 and α5 must remain dynamic for proper signaling. Furthermore, our observations that PhoQ activation by acidic pH and divalent cation limitation are separable from CAMP-mediated activation may indicate that distinct conformational states exist for each of the unique PhoQ-activating and -repressing stimuli.
 
@@ -149,58 +279,504 @@ In summary, we provide novel detail to the mechanism by which S. enterica Typhim
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
-Bacterial strains, plasmids, and primers used in this study can be found in Tables 2, 3. S. enterica Typhimurium strain 14028s was the wild-type strain used in this study and all subsequent strains and mutants were derived from this strain. Unless otherwise stated, all alkaline phosphatase activity assays were performed in the CS1081 background with CS1084 as the wild-type control and various alleles of phoQ basally expressed from pBAD24. Alkaline phosphatase activity assays were also performed on wild type (KH127) and phoQW104C-A128C (KH130) recombined on to the chromosome of CS1081. Bacterial strains were grown in either LB broth or modified N-mm as indicated. Activation of the phoN::TnphoA reporter was utilized as previously described (Bader et al., 2005; Prost et al., 2007). Briefly, bacterial strains were grown overnight in modified N-minimal media pH 7.5 containing 1 mM MgCl2. In the morning, cultures were washed once in the appropriate media and diluted 1:100 in to fresh modified N-minimal media containing either 10 μM, 1 mM, or 10 mM MgCl2 and buffered with either 0.1 M Tris or 0.1 M MES to pH 7.5 or pH 5.5, respectively. Unless stated otherwise, the base growth media is N-minimal media pH 7.5 supplemented with 1 mM MgCl2 and 100 μg∙ml−1 ampicillin. Following dilution into fresh media, cultures were grown for 5 hr shaking at 37°C. To study phoN::TnphoA reporter activation in the presence of CAMP, overnight cultures were washed once in N-minimal media pH 7.5 containing 1 mM MgCl2 and diluted 1:100 into the same growth media. Cultures were then grown to OD600 0.2, treated with 5 μg∙ml−1 of C18G peptide (Anaspec, Fremont, CA), and grown shaking at 37°C for 90 min. Following incubation, alkaline phosphatase activity was measured. Alkaline phosphatase activity assays were performed according to standard protocol on cultures grown in duplicate and repeated on at least three independent occasions.10.7554/eLife.06792.016Table 2.Strains and plasmids used in this studyDOI: http://dx.doi.org/10.7554/eLife.06792.016StrainDescriptionSourceCS09314028s wild type S. enterica TyphimuriumATCCCS1081CS093 phoQ::TPOP phoN::TnphoABader et al., 2005CS1083CS1081 pBAD24Bader et al., 2005CS1084CS1081 pBAD24-phoQBader et al., 2005CS1399CS1081 pBAD24-phoQI88NThis workCS1400CS1081 pBAD24-phoQY89NThis workKH45CS1081 pBAD24-phoQI102CThis workKH140CS1081 pBAD24-phoQL105DThis workCS1402CS1081 pBAD24-phoQT124NThis workCS1403CS1081 pBAD24-phoQV126EThis workCS1404CS1081 pBAD24-phoQT129IThis workCS1405CS1081 pBAD24-phoQT131PThis workCS1406CS1081 pBAD24-phoQL132PThis workKH28CS1081 pBAD24-phoQL133CThis workCS1407CS1081 pBAD24-phoQD150GThis workCS1408CS1081 pBAD24-phoQA153PThis workCS1409CS1081 pBAD24-phoQM155VThis workCS1410CS1081 pBAD24-phoQV178DThis workCS1374CS1081 pBAD24-phoQW104CThis workCS1386CS1081 pBAD24-phoQA128CThis workCS1382CS1081 pBAD24-phoQW104C-A128CThis workKH48CS1081 pBAD24-phoQW104SThis workKH49CS1081 pBAD24-phoQA128SThis workKH50CS1081 pBAD24-phoQW104S A128SThis workCS1101BL21 pET11a-phoQ 45-190-(His)6Bader et al., 2005KH85NEB SHuffle T7 express pET11a-phoQW104C-A128C 45-190-(His)6This workKH23phoQ::tetRAThis workKH163phoQW104C-A128CThis workCS1350ΔphoQProst et al., 2008KH127phoQ phoN105::TnphoAThis workKH130phoQW104C-A128C phoN105::TnphoAThis workKH111CS093 pWSK129KanThis workKH112CS093 pWSK29AmpThis workKH113phoQW104C-A129C pWSK29AmpThis workKH114ΔphoQ pWSK29AmpThis work10.7554/eLife.06792.017Table 3.Primer sequences used in this studyDOI: http://dx.doi.org/10.7554/eLife.06792.017Primer # (name)Sequence (5′–3′)LP135 (RM_Fwd)CTGGTCGGCTATAGCGTAAGTTTTGLP136 (RM_Rev)CACGTATACGAACCAGCTCCACACLP178 (I88N_Fwd)CGACCATGACGCTGAATTACGATGAAACGGLP179 (I88N_Rev)CCGTTTCATCGTAATTCAGCGTCATGGTCGLP180 (Y89N_Fwd)CCATGACGCTGATTAACGATGAAACGGGCLP181 (Y89N_Rev)GCCCGTTTCATCGTTAATCAGCGTCATGGKH81 (I102C_Fwd)GACGCAGCGCAACTGTCCCTGGCTGATTAAAAGKH82 (I102C_Rev)CTTTTAATCAGCCAGGGACAGTTGCGCTGCGTCLP184 (T124N_Fwd)CTTCCATGAAATTGAAAACAACGTAGACGCCACCLP185 (T124N_Rev)GGTGGCGTCTACGTTGTTTTCAATTTCATGGAAGLP186 (V126E_Fwd)GAAATTGAAACCAACGAAGACGCCACCAGCACLP187 (V126E_Rev)GTGCTGGTGGCGTCTTCGTTGGTTTCAATTTCLP188 (T129I_Fwd)CAACGTAGACGCCATCAGCACGCTGTTGLP189 (T129I_Rev)CAACAGCGTGCTGATGGCGTCTACGTTGKH192 (L105D_Fwd)GCGCAACATTCCCTGGGATATTAAAAGCATTCAACKH193 (L105D_Rev)GTTGAATGCTTTTAATATCCCAGGGAATGTTGCGCLP190 (L131P_Fwd)CAACGTAGACGCCACCAGCCCACTGTTGAGCGAAGACCATTCLP191 (L131P_Rev)GAATGGTCTTCGCTCAACAGTGGGCTGGTGGCGTCTACGTTGLP192 (L132P_Fwd)GACGCCACCAGCACGCCATTGAGCGAAGACCATTCLP193 (L132P_Rev)GAATGGTCTTCGCTCAATGGCGTGCTGGTGGCGTCKH85 (L133C_Fwd)CACCAGCACGCTGTGTAGCGAAGACCATTCKH86 (L133C_Rev)GAATGGTCTTCGCTACACAGCGTGCTGGTGLP194 (D150G_Fwd)GTACGTGAAGATGGCGATGATGCCGAGLP195 (D150G_Rev)CTCGGCATCATCGCCATCTTCACGTACLP196 (A153P_Fwd)GAAGATGACGATGATCCCGAGATGACCCACLP197 (A153_Rev)GTGGGTCATCTCGGGATCATCGTCATCTTCLP198 (M155V_Fwd)GACGATGATGCCGAGGTAACCCACTCGGTAGCLP199 (M155V_Rev)GCTACCGAGTGGGTTACCTCGGCATCATCGTCLP200 (V178D_Fwd)CCATCGTGGTGGACGATACCATTCCGLP201 (V178D_Rev)CGGAATGGTATCGTCCACCACGATGGLP141 (W104C_Fwd)GCGCAACATTCCCTGCCTGATTAAAAGCATTCLP142 (W104C_Rev)GAATGCTTTTAATCAGGCAGGGAATGTTGCGCLP145 (A128C_Fwd)GAAACCAACGTAGACTGCACCAGCACGCTGTTGLP146 (A128C_Rev)CAACAGCGTGCTGGTGCAGTCTACGTTGGTTTCKH61 (W104S_Fwd)CAGCGCAACATTCCCAGCCTGATTAAAAGCATTCKH62 (W104S_Rev)GAATGCTTTTAATCAGGCTGGGAATGTTGCGCTGKH63 (A128S_Fwd)GAAACCAACGTAGACAGCACCAGCACGCTGTTGKH64 (A128S_Rev)CAACAGCGTGCTGGTGCTGTCTACGTTGGTTTCLP164 (T48C_Fwd)GTAAGTTTTGATAAAACCTGCTTTCGTTTGCTGCGCGLP165 (T48C_Rev)CGCGCAGCAAACGAAAGCAGGTTTTATCAAAACTTACLP168 (K186C_Fwd)CCATTCCGATAGAACTATGCCGCTCCTATATGGTGTGLP169 (K186C_Rev)CACACCATATAGGAGCGGCATAGTTCTATCGGAATGGKH35 (T48S_Fwd)GTTTTGATAAAACCAGCTTTCGGCTGCGKH36 (T48S_Rev)CGCAGCAAACGAAAGCTGGTTTTATCAAAAKH39 (K186S_Fwd)CATTCCGATAGAACTAAGTCGCTCCTATATGGTGKH40 (K186S_Rev)CACCATATAGGAGCGACTTAGTTCTATCGGAATGKH45 (PhoQ_tetRA_knock-in_Fwd)GAATAAATTTGCTCGCCATTTTCTGCCGCTGTCGCTGCGGTTAAGACCCACTTTCACAKH46 (PhoQ_tetRA_knock-in_Rev)CCTCTTTCTGTGTGGGATGCTGTCGGCCAAAAACGACCTCCTAAGCACTTGTCTCCTGKH93 (ST-PhoQ_N-term_Fwd)ATGAATAAATTTGCTCGCCATTTTCKH94 (ST-PhoQ_N-term_Rev)TTATTCCTCTTTCTGTGTGGGKH265 (ST-rpoD_Fwd_qRT)GGGATCAACCAGGTTCAATGKH266 (ST-rpoD_Rev_qRT)GGACAAACGAGCCTCTTCAGKH269 (ST-pagD_Fwd_qRT)GTTCAGGCCATTGTTCTGGTKH270 (ST-pagD_Rev_qRT)TAATCTGCCTGGCTTGCTTTKH273 (ST-pagO_Fwd_qRT)CGGGCTTAACTATCGCAATCKH274 (ST-pagO_Rev_qRT)CAGCAGAAATAAGCGCAGTGKH275 (ST-phoP_Fwd_qRT)TGCCAGGGAAGCTGATTACTKH276 (ST-phoP_Rev_qRT)CAGCGGCGTATTAAGGAAAGKH277 (ST-phoN_Fwd_qRT)CCGGCTTACCGCTATGATAAKH278 (ST-phoN_Rev_qRT)CGCTTACATCTGCATCCTCA
+Bacterial strains, plasmids, and primers used in this study can be found in Tables 2, 3. S. enterica Typhimurium strain 14028s was the wild-type strain used in this study and all subsequent strains and mutants were derived from this strain. Unless otherwise stated, all alkaline phosphatase activity assays were performed in the CS1081 background with CS1084 as the wild-type control and various alleles of phoQ basally expressed from pBAD24. Alkaline phosphatase activity assays were also performed on wild type (KH127) and phoQW104C-A128C (KH130) recombined on to the chromosome of CS1081. Bacterial strains were grown in either LB broth or modified N-mm as indicated. Activation of the phoN::TnphoA reporter was utilized as previously described (Bader et al., 2005; Prost et al., 2007). Briefly, bacterial strains were grown overnight in modified N-minimal media pH 7.5 containing 1 mM MgCl2. In the morning, cultures were washed once in the appropriate media and diluted 1:100 in to fresh modified N-minimal media containing either 10 μM, 1 mM, or 10 mM MgCl2 and buffered with either 0.1 M Tris or 0.1 M MES to pH 7.5 or pH 5.5, respectively. Unless stated otherwise, the base growth media is N-minimal media pH 7.5 supplemented with 1 mM MgCl2 and 100 μg∙ml−1 ampicillin. Following dilution into fresh media, cultures were grown for 5 hr shaking at 37°C. To study phoN::TnphoA reporter activation in the presence of CAMP, overnight cultures were washed once in N-minimal media pH 7.5 containing 1 mM MgCl2 and diluted 1:100 into the same growth media. Cultures were then grown to OD600 0.2, treated with 5 μg∙ml−1 of C18G peptide (Anaspec, Fremont, CA), and grown shaking at 37°C for 90 min. Following incubation, alkaline phosphatase activity was measured. Alkaline phosphatase activity assays were performed according to standard protocol on cultures grown in duplicate and repeated on at least three independent occasions.
 
-## Genetic techniques
+**Table 2.**
+ Strains and plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CS093</td>
+      <td>14028s wild type S. enterica Typhimurium</td>
+      <td>ATCC</td>
+    </tr>
+    <tr>
+      <td>CS1081</td>
+      <td>CS093 phoQ::TPOP phoN::TnphoA</td>
+      <td>Bader et al., 2005</td>
+    </tr>
+    <tr>
+      <td>CS1083</td>
+      <td>CS1081 pBAD24</td>
+      <td>Bader et al., 2005</td>
+    </tr>
+    <tr>
+      <td>CS1084</td>
+      <td>CS1081 pBAD24-phoQ</td>
+      <td>Bader et al., 2005</td>
+    </tr>
+    <tr>
+      <td>CS1399</td>
+      <td>CS1081 pBAD24-phoQI88N</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1400</td>
+      <td>CS1081 pBAD24-phoQY89N</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH45</td>
+      <td>CS1081 pBAD24-phoQI102C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH140</td>
+      <td>CS1081 pBAD24-phoQL105D</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1402</td>
+      <td>CS1081 pBAD24-phoQT124N</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1403</td>
+      <td>CS1081 pBAD24-phoQV126E</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1404</td>
+      <td>CS1081 pBAD24-phoQT129I</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1405</td>
+      <td>CS1081 pBAD24-phoQT131P</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1406</td>
+      <td>CS1081 pBAD24-phoQL132P</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH28</td>
+      <td>CS1081 pBAD24-phoQL133C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1407</td>
+      <td>CS1081 pBAD24-phoQD150G</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1408</td>
+      <td>CS1081 pBAD24-phoQA153P</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1409</td>
+      <td>CS1081 pBAD24-phoQM155V</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1410</td>
+      <td>CS1081 pBAD24-phoQV178D</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1374</td>
+      <td>CS1081 pBAD24-phoQW104C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1386</td>
+      <td>CS1081 pBAD24-phoQA128C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1382</td>
+      <td>CS1081 pBAD24-phoQW104C-A128C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH48</td>
+      <td>CS1081 pBAD24-phoQW104S</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH49</td>
+      <td>CS1081 pBAD24-phoQA128S</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH50</td>
+      <td>CS1081 pBAD24-phoQW104S A128S</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1101</td>
+      <td>BL21 pET11a-phoQ 45-190-(His)6</td>
+      <td>Bader et al., 2005</td>
+    </tr>
+    <tr>
+      <td>KH85</td>
+      <td>NEB SHuffle T7 express pET11a-phoQW104C-A128C 45-190-(His)6</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH23</td>
+      <td>phoQ::tetRA</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH163</td>
+      <td>phoQW104C-A128C</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>CS1350</td>
+      <td>ΔphoQ</td>
+      <td>Prost et al., 2008</td>
+    </tr>
+    <tr>
+      <td>KH127</td>
+      <td>phoQ phoN105::TnphoA</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH130</td>
+      <td>phoQW104C-A128C phoN105::TnphoA</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH111</td>
+      <td>CS093 pWSK129Kan</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH112</td>
+      <td>CS093 pWSK29Amp</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH113</td>
+      <td>phoQW104C-A129C pWSK29Amp</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KH114</td>
+      <td>ΔphoQ pWSK29Amp</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Primer sequences used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer # (name)</th>
+      <th>Sequence (5′–3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LP135 (RM_Fwd)</td>
+      <td>CTGGTCGGCTATAGCGTAAGTTTTG</td>
+    </tr>
+    <tr>
+      <td>LP136 (RM_Rev)</td>
+      <td>CACGTATACGAACCAGCTCCACAC</td>
+    </tr>
+    <tr>
+      <td>LP178 (I88N_Fwd)</td>
+      <td>CGACCATGACGCTGAATTACGATGAAACGG</td>
+    </tr>
+    <tr>
+      <td>LP179 (I88N_Rev)</td>
+      <td>CCGTTTCATCGTAATTCAGCGTCATGGTCG</td>
+    </tr>
+    <tr>
+      <td>LP180 (Y89N_Fwd)</td>
+      <td>CCATGACGCTGATTAACGATGAAACGGGC</td>
+    </tr>
+    <tr>
+      <td>LP181 (Y89N_Rev)</td>
+      <td>GCCCGTTTCATCGTTAATCAGCGTCATGG</td>
+    </tr>
+    <tr>
+      <td>KH81 (I102C_Fwd)</td>
+      <td>GACGCAGCGCAACTGTCCCTGGCTGATTAAAAG</td>
+    </tr>
+    <tr>
+      <td>KH82 (I102C_Rev)</td>
+      <td>CTTTTAATCAGCCAGGGACAGTTGCGCTGCGTC</td>
+    </tr>
+    <tr>
+      <td>LP184 (T124N_Fwd)</td>
+      <td>CTTCCATGAAATTGAAAACAACGTAGACGCCACC</td>
+    </tr>
+    <tr>
+      <td>LP185 (T124N_Rev)</td>
+      <td>GGTGGCGTCTACGTTGTTTTCAATTTCATGGAAG</td>
+    </tr>
+    <tr>
+      <td>LP186 (V126E_Fwd)</td>
+      <td>GAAATTGAAACCAACGAAGACGCCACCAGCAC</td>
+    </tr>
+    <tr>
+      <td>LP187 (V126E_Rev)</td>
+      <td>GTGCTGGTGGCGTCTTCGTTGGTTTCAATTTC</td>
+    </tr>
+    <tr>
+      <td>LP188 (T129I_Fwd)</td>
+      <td>CAACGTAGACGCCATCAGCACGCTGTTG</td>
+    </tr>
+    <tr>
+      <td>LP189 (T129I_Rev)</td>
+      <td>CAACAGCGTGCTGATGGCGTCTACGTTG</td>
+    </tr>
+    <tr>
+      <td>KH192 (L105D_Fwd)</td>
+      <td>GCGCAACATTCCCTGGGATATTAAAAGCATTCAAC</td>
+    </tr>
+    <tr>
+      <td>KH193 (L105D_Rev)</td>
+      <td>GTTGAATGCTTTTAATATCCCAGGGAATGTTGCGC</td>
+    </tr>
+    <tr>
+      <td>LP190 (L131P_Fwd)</td>
+      <td>CAACGTAGACGCCACCAGCCCACTGTTGAGCGAAGACCATTC</td>
+    </tr>
+    <tr>
+      <td>LP191 (L131P_Rev)</td>
+      <td>GAATGGTCTTCGCTCAACAGTGGGCTGGTGGCGTCTACGTTG</td>
+    </tr>
+    <tr>
+      <td>LP192 (L132P_Fwd)</td>
+      <td>GACGCCACCAGCACGCCATTGAGCGAAGACCATTC</td>
+    </tr>
+    <tr>
+      <td>LP193 (L132P_Rev)</td>
+      <td>GAATGGTCTTCGCTCAATGGCGTGCTGGTGGCGTC</td>
+    </tr>
+    <tr>
+      <td>KH85 (L133C_Fwd)</td>
+      <td>CACCAGCACGCTGTGTAGCGAAGACCATTC</td>
+    </tr>
+    <tr>
+      <td>KH86 (L133C_Rev)</td>
+      <td>GAATGGTCTTCGCTACACAGCGTGCTGGTG</td>
+    </tr>
+    <tr>
+      <td>LP194 (D150G_Fwd)</td>
+      <td>GTACGTGAAGATGGCGATGATGCCGAG</td>
+    </tr>
+    <tr>
+      <td>LP195 (D150G_Rev)</td>
+      <td>CTCGGCATCATCGCCATCTTCACGTAC</td>
+    </tr>
+    <tr>
+      <td>LP196 (A153P_Fwd)</td>
+      <td>GAAGATGACGATGATCCCGAGATGACCCAC</td>
+    </tr>
+    <tr>
+      <td>LP197 (A153_Rev)</td>
+      <td>GTGGGTCATCTCGGGATCATCGTCATCTTC</td>
+    </tr>
+    <tr>
+      <td>LP198 (M155V_Fwd)</td>
+      <td>GACGATGATGCCGAGGTAACCCACTCGGTAGC</td>
+    </tr>
+    <tr>
+      <td>LP199 (M155V_Rev)</td>
+      <td>GCTACCGAGTGGGTTACCTCGGCATCATCGTC</td>
+    </tr>
+    <tr>
+      <td>LP200 (V178D_Fwd)</td>
+      <td>CCATCGTGGTGGACGATACCATTCCG</td>
+    </tr>
+    <tr>
+      <td>LP201 (V178D_Rev)</td>
+      <td>CGGAATGGTATCGTCCACCACGATGG</td>
+    </tr>
+    <tr>
+      <td>LP141 (W104C_Fwd)</td>
+      <td>GCGCAACATTCCCTGCCTGATTAAAAGCATTC</td>
+    </tr>
+    <tr>
+      <td>LP142 (W104C_Rev)</td>
+      <td>GAATGCTTTTAATCAGGCAGGGAATGTTGCGC</td>
+    </tr>
+    <tr>
+      <td>LP145 (A128C_Fwd)</td>
+      <td>GAAACCAACGTAGACTGCACCAGCACGCTGTTG</td>
+    </tr>
+    <tr>
+      <td>LP146 (A128C_Rev)</td>
+      <td>CAACAGCGTGCTGGTGCAGTCTACGTTGGTTTC</td>
+    </tr>
+    <tr>
+      <td>KH61 (W104S_Fwd)</td>
+      <td>CAGCGCAACATTCCCAGCCTGATTAAAAGCATTC</td>
+    </tr>
+    <tr>
+      <td>KH62 (W104S_Rev)</td>
+      <td>GAATGCTTTTAATCAGGCTGGGAATGTTGCGCTG</td>
+    </tr>
+    <tr>
+      <td>KH63 (A128S_Fwd)</td>
+      <td>GAAACCAACGTAGACAGCACCAGCACGCTGTTG</td>
+    </tr>
+    <tr>
+      <td>KH64 (A128S_Rev)</td>
+      <td>CAACAGCGTGCTGGTGCTGTCTACGTTGGTTTC</td>
+    </tr>
+    <tr>
+      <td>LP164 (T48C_Fwd)</td>
+      <td>GTAAGTTTTGATAAAACCTGCTTTCGTTTGCTGCGCG</td>
+    </tr>
+    <tr>
+      <td>LP165 (T48C_Rev)</td>
+      <td>CGCGCAGCAAACGAAAGCAGGTTTTATCAAAACTTAC</td>
+    </tr>
+    <tr>
+      <td>LP168 (K186C_Fwd)</td>
+      <td>CCATTCCGATAGAACTATGCCGCTCCTATATGGTGTG</td>
+    </tr>
+    <tr>
+      <td>LP169 (K186C_Rev)</td>
+      <td>CACACCATATAGGAGCGGCATAGTTCTATCGGAATGG</td>
+    </tr>
+    <tr>
+      <td>KH35 (T48S_Fwd)</td>
+      <td>GTTTTGATAAAACCAGCTTTCGGCTGCG</td>
+    </tr>
+    <tr>
+      <td>KH36 (T48S_Rev)</td>
+      <td>CGCAGCAAACGAAAGCTGGTTTTATCAAAA</td>
+    </tr>
+    <tr>
+      <td>KH39 (K186S_Fwd)</td>
+      <td>CATTCCGATAGAACTAAGTCGCTCCTATATGGTG</td>
+    </tr>
+    <tr>
+      <td>KH40 (K186S_Rev)</td>
+      <td>CACCATATAGGAGCGACTTAGTTCTATCGGAATG</td>
+    </tr>
+    <tr>
+      <td>KH45 (PhoQ_tetRA_knock-in_Fwd)</td>
+      <td>GAATAAATTTGCTCGCCATTTTCTGCCGCTGTCGCTGCGGTTAAGACCCACTTTCACA</td>
+    </tr>
+    <tr>
+      <td>KH46 (PhoQ_tetRA_knock-in_Rev)</td>
+      <td>CCTCTTTCTGTGTGGGATGCTGTCGGCCAAAAACGACCTCCTAAGCACTTGTCTCCTG</td>
+    </tr>
+    <tr>
+      <td>KH93 (ST-PhoQ_N-term_Fwd)</td>
+      <td>ATGAATAAATTTGCTCGCCATTTTC</td>
+    </tr>
+    <tr>
+      <td>KH94 (ST-PhoQ_N-term_Rev)</td>
+      <td>TTATTCCTCTTTCTGTGTGGG</td>
+    </tr>
+    <tr>
+      <td>KH265 (ST-rpoD_Fwd_qRT)</td>
+      <td>GGGATCAACCAGGTTCAATG</td>
+    </tr>
+    <tr>
+      <td>KH266 (ST-rpoD_Rev_qRT)</td>
+      <td>GGACAAACGAGCCTCTTCAG</td>
+    </tr>
+    <tr>
+      <td>KH269 (ST-pagD_Fwd_qRT)</td>
+      <td>GTTCAGGCCATTGTTCTGGT</td>
+    </tr>
+    <tr>
+      <td>KH270 (ST-pagD_Rev_qRT)</td>
+      <td>TAATCTGCCTGGCTTGCTTT</td>
+    </tr>
+    <tr>
+      <td>KH273 (ST-pagO_Fwd_qRT)</td>
+      <td>CGGGCTTAACTATCGCAATC</td>
+    </tr>
+    <tr>
+      <td>KH274 (ST-pagO_Rev_qRT)</td>
+      <td>CAGCAGAAATAAGCGCAGTG</td>
+    </tr>
+    <tr>
+      <td>KH275 (ST-phoP_Fwd_qRT)</td>
+      <td>TGCCAGGGAAGCTGATTACT</td>
+    </tr>
+    <tr>
+      <td>KH276 (ST-phoP_Rev_qRT)</td>
+      <td>CAGCGGCGTATTAAGGAAAG</td>
+    </tr>
+    <tr>
+      <td>KH277 (ST-phoN_Fwd_qRT)</td>
+      <td>CCGGCTTACCGCTATGATAA</td>
+    </tr>
+    <tr>
+      <td>KH278 (ST-phoN_Rev_qRT)</td>
+      <td>CGCTTACATCTGCATCCTCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic techniques
 
 All PhoQ alleles with point-mutations were generated on pBAD24-phoQ or pET11a-phoQ using the appropriate primers pairs (Table 3) and a standard site-directed mutagenesis protocol or Gibson assembly (Gibson et al., 2009). To generate phoQW104C-A128C on the S. enterica Typhimurium 14028s chromosome, lambda red allelic exchange methods were utilized (Gerlach et al., 2007). Briefly, to engineer phoQW104C-A128C on the S. enterica Typhimurium chromosome, a tetracycline resistant cassette (tetRA) was amplified using primers KH45 and KH46. The resulting phoQ::tetRA amplicon was recombined into CS093 generating phoQ::tetRA (KH23). Primers KH93 and KH94 were used to amplify phoQW104C-A128C from pBAD24-phoQW104C-A128C (CS1382). The phoQW104C-A128C amplicon was recombined into phoQ::tetra (KH23). Positive clones for phoQW104C-A128C recombination were identified via Bochner selection (Bochner et al., 1980). Chromosomal phoQW104C-A128C was then transduced into a clean S. enterica Typhimurium 14028s background via P22 phage transduction. phoQW104C-A128C positive clones were confirmed via DNA sequencing.
 
 To identify residues in the PhoQ PD that when mutated result in increased phoN::TnphoA activity, we performed a random mutagenesis screen as previously described (Cho et al., 2006). Briefly, pBAD24-phoQ was randomly mutagenized using primers LP135 and LP136 to introduce one mutation per 500 bp in the phoQ PD using the GeneMorph II EZClone Domain Mutagenesis Kit (Agilent Technologies, Santa Clara, CA). The resulting mutagenized pBAD24-phoQ plasmids were transformed into CS1081 and grown overnight on LB plates containing XP substrate (Sigma 104, Sigma-Aldrich Corp., St. Louis, MO), ampicillin 100 μg∙ml−1, and 10 mM MgCl2. In the morning, plates were screened for blue colonies indicative of phoN::TnphoA alkaline phosphatase activity and PhoQ activation by divalent cation limitation. Approximately, 50,000 colonies were screened. 103 blue colonies were chosen and sequenced, yielding 26 single amino acid substitutions. Mutations identified in the screen were independently engineered in a clean pBAD24-phoQ background using the appropriate primers pairs (Table 3) and a standard site-directed mutagenesis protocol. Phenotypes were confirmed by alkaline phosphatase activity assays in duplicate on at least three separate occasions.
 
-## Protein expression and purification
+### Protein expression and purification
 
 The PhoQ PD (strain CS1101) was purified as previously described (Bader et al., 2005). PhoQW104C-A128C PD (strain KH85) was purified from SHuffle T7 Express E. coli (NEB, Ipswich, MA). Purification and storage of PhoQW104C-A128C PD was performed according to the same methods as wild-type PhoQ PD. Disulfide bond formation in PhoQW104C-A128C PD was confirmed by SDS-PAGE. Briefly, strain CS1101 or KH85 were grown in LB media supplemented with 100 mg∙l−1 ampicillin for all non-labeling experiments. For 15N-labeling and NMR experiments, strain CS1101 was grown in MOPS minimal medium supplemented with 100 mg∙l−1 ampicillin and 1 g∙l−1 15N-ammonium chloride. Expression strains were grown to mid-log phase and IPTG was added to 0.5 mM. Cultures were induced for 4–6 hr, harvested by centrifugation and lysed using a French Pressure Cell. Inclusion bodies were isolated by centrifugation, washed once in 50 mM sodium phosphate pH 8.0 300 mM NaCl, resuspended in 20 mM sodium phosphate pH 8.0 100 mM NaCl 7 M urea, and incubated on ice for 1 hr. Samples were then ultracentrifuged at 50,000 rpm for 30 min. The supernatant was rapidly diluted into ice cold 20 mM sodium phosphate pH 8.0. Samples were filtered and purified using a 5 ml HisTrap HP nickel column (GE Healthcare Bio-Sciences, Pittsburgh, PA) according to standard protocol. Purified protein was then applied to a Superdex-200 gel filtration column (GE Healthcare Bio-Sciences) equilibrated with 20 mM sodium phosphate pH 6.5 150 mM NaCl 0.1 mM EDTA. PhoQ containing fractions were pooled, concentrated to approximately 0.25 mM and stored at −80°C in 10% glycerol. PhoQW104C-A128C PD was expressed by growing strain KH85 at 37°C to mid log phase in LB medium supplemented with 100 mg∙l−1 ampicillin. IPTG was added to 0.5 mM and protein expression was maintained overnight at 20°C.
 
-## NMR spectroscopy and analysis
+### NMR spectroscopy and analysis
 
 (1H, 15N)-HSQC-NMR spectra of PhoQ PD were collected as a function of pH previously (Prost et al., 2007). Briefly, uniformly 15N- and 13C-labeled PhoQ PD was prepared to 1.2 mM in 20 mM sodium phosphate buffer pH 6.5, 150 mM NaCl, 20 mM MgCl2, 0.1 mM EDTA, and 10% (vol/vol) D2O. The pH was lowered by approximately 0.5 units at a time by addition of microliter aliquots of 500 mM DCl. HSQC spectra from the pH-titration were collected at pH 6.5, 6.0, 5.5, 4.9, 4.1, and 3.5. Standard triple-resonance experiments were collected a pH 3.5 for assignments. Assignments from pH 3.5 were translated to higher pH conditions by tracking chemical shifts through the titration series. NMR experiments were performed at 25°C on a Bruker DMX 500 MHz spectrometer equipped with a triple-resonance, triple-axis gradient probe. Data were processed and analyzed using the programs NMRPipe/NMRDraw (Delaglio et al., 1995) and NMRView (Johnson and Blevins, 1994).
 
 To identify regions of the PhoQ PD affected by pH, (1H,15N)-HSQC-NMR spectra of the PhoQ PD were compared at pH 6.5 and 3.5. Resonances that experienced a chemical shift perturbation (CSP) greater than 0.08 ppm and/or that broadened beyond detection were considered significantly affected by pH. CSPs were calculated using the formula ((Δ1H) + (Δ15N/5))1/2. Resonances that did not meet these criteria were considered unaffected. 36 residues within the PhoQ PD could not be unambiguously categorized into these groups because of missing/ambiguous assignments and/or crowding in the spectra.
 
-## Bacterial gene expression from growth in N-minimal media
+### Bacterial gene expression from growth in N-minimal media
 
 Wild-type (CS093), phoQW104C-A128C (KH163), and ΔphoQ (CS1350) S. enterica Typhimurium were grown overnight in N-mm 1 mM MgCl2 pH 7.5. In the morning, the cultures were normalized to OD600 2.0 and diluted 1:50 into fresh N-mm 1 mM MgCl2 pH 7.5 and grown at 37°C, 250 rpm. At approximately OD600 0.2, the cultures were normalized to OD600 0.2∙ml−1, washed once, and resuspended in 1 ml of either N-mm pH 7.5 1 mM MgCl2, pH 5.5 1 mM MgCl2, pH 7.5 10 μM MgCl2, or pH 7.5 1 mM MgCl2 5 μg∙ml−1. The cultures were grown shaking at 37°C, 250 rpm. After 1 hr, the cultures were immediately pelleted at 4°C, the media was aspirated, and placed on ice. RNA was collected using the Trizol Max Bacterial RNA Isolation Kit (Ambion, Thermo Fisher Scientific, Grand Island, NY) and RNeasy mini kit (Qiagen, Netherlands). cDNA was generated using SuperScript III First-Strand (Invitrogen, Thermo Fisher Scientific, Grand Island, NY).
 
 Synthesis Supermix for qRT-PCR (Invitrogen). Quantitative RT-PCR was performed using SYBR GreenER qPCR SuperMix Universal (Invitrogen) and a BioRad CFX96 thermocycler for S. enterica Typhimurium rpoD, pagD, pagO, phoN, and phoP target transcripts using the appropriate qRT primers (Table 3). Relative gene expression was determined using the 2−Δ ΔCT method (Livak and Schmittgen, 2001). rpoD was used as the calibrator and gene expression was normalized to ΔphoQ.
 
-## Protein crystallization, data collection, and structure determination
+### Protein crystallization, data collection, and structure determination
 
 The S. enterica Typhimurium PhoQW104C-A128C PD structure (PDB 4UEY) was acquired by crystallizing the purified protein using a Mosquito crystallization robot (TTP Labtech, United Kingdom) and Nextal Classic Suite, Nextal Classic Suite II, Protein complex Suite (Qiagen) and JBScreen Classic HTS II (Jena Bioscience, Germany). The progress of crystallization at 20°C was monitored using a temperature controlled robot (Rock imager system, Formulatrix, Bedford, MA). Crystals appeared after 2 weeks. Optimized crystals of the PhoQW104C-A128C PD were formed in 0.1 M Bis-Tris pH 6.5 200 mM Magnesium chloride 25% (wt/vol) PEG3350. Crystals of the PhoQW104C-A128C PD were mounted in nylon loops (Hampton Research, Aliso Viejo, CA) and directly frozen in liquid nitrogen. Diffraction data of the crystals were collected at ALBA synchrotron (BL13 XALOC, Barcelona, Spain). Crystals were kept at 100 K and 200 diffraction images at 1° were recorded on a Pilatus 6M detector (Dectris, Baden, Switzerland). Diffraction data were processed and scaled using the XDS software package (Kabsch, 2010). Data were truncated at lower resolution according to the recently defined CC* correlation factor (Karplus and Diederichs, 2012). Molecular replacement trials were performed using the program MOLREP and the model of the S. enterica Typhimurium PhoQ PD from the PDB databank (PDB 1YAX) (Cho et al., 2006; Vagin and Teplyakov, 2010). The structure was refined using the PHENIX program package (Afonine et al., 2012) after rebuilding the structure in COOT (Emsley et al., 2010). Structure details and PDB entries are given in Table 1. Model quality was assessed using the Molprobity server (http://molprobity.biochem.duke.edu/).
 
-## Circular dichroism
+### Circular dichroism
 
 Prior to CD data collection, purified PhoQ PD and PhoQW104C-A128C PD were exchanged into 20 mM sodium phosphate buffer pH 5.5 150 mM NaCl 1 mM MgCl2 using a 5 ml HiTrap desalting column (Amersham) and treated with or without an approximate 1000 molar excesses of TCEP hydrochloride (Sigma) pH 5.5 for 4 hr to reduce the disulfide bond formed between W104C and A128C. Following TECP treatment, protein samples were exchanged in to 20 mM sodium phosphate buffer pH 5.5 150 mM NaCl 1 mM MgCl2, with or without 1 mM TCEP and equilibrated overnight at 4°C. Following buffer exchange and equilibration, protein samples were concentrated and prepared to 17 μM for CD analysis. Disulfide bond reduction was monitored by SDS-PAGE prior to performing CD experiments. All CD data collection was performed on an Aviv model 420 spectrometer fitted with a total fluorescence accessory module and thermoelectric cuvette holder using a 1 mm pathlength quartz cuvette. Wavelength scans were performed for each sample prior to thermal denaturation from 260 to 195 nm at 25°C, sampling every 1 nm, with a 3 s averaging time per reading. CD-monitored thermal denaturation data was collected at 212 nm, from 25°C to 95°C, in 1°C increments, with a 3 s averaging time per reading, and 30 s temperature equilibration between readings. Raw thermal denaturation data were normalized to give the fraction unfolded protein assuming a two-state denaturation process (Kamal et al., 2002). All CD experiments were reproduced on at least three separate occasions.
 
-## Mouse infections
+### Mouse infections
 
 BALB/c or A/J mice were ordered from Jackson Laboratories and virulence phenotypes for strains of S. enterica Typhimurium were determined by competition or single-strain inoculation. Competition experiments were performed similarly to previously described (Freeman et al., 2003). Briefly, cultures of KH111, KH112, KH113, and KH114 were grown overnight in LB media with the appropriate antibiotic and prepared by serial dilution in PBS. The inoculum for IP competition experiments was prepared by equally mixing 2.5 × 105 cfu of KH111 (strain A) with 2.5 × 105 cfu of KH112, KH113, or KH114 (strain B) in 2 ml PBS. The inoculum for PO competition experiments was prepared by equally mixing 5 × 107 cfu of KH111 (strain A) with 5 × 107 cfu of KH112, KH113, or KH114 (strain B) in 2 ml PBS. 6- to 8-week old female BALB/c mice were administered 0.2 ml of the mixture, for a total inoculation of 1 × 105 bacteria for IP infections or 5 × 108 bacteria for PO infections. For PO competition experiments, mice were deprived food for 5 hr prior to administering bacteria by oral gavage. The inoculum was confirmed for each experiment by plating dilutions on LB media supplemented with either 50 µg∙ml−1 kanamycin or 100 µg∙ml−1 ampicillin. Mice were euthanized by CO2 asphyxiation at 48-hpi (IP) or 96-hpi (PO) and spleens were harvested and homogenized in PBS. Homogenized spleens were serial diluted and plated on LB media supplemented with either 50 µg∙ml−1 kanamycin or 100 µg∙ml−1 ampicillin in order to determine the cfu∙ml−1 bacterial burden for each strain. The competitive index (CI) for each strain was calculated using the following formula: CI = (strain B cfu∙ml−1 spleen/strain A cfu∙ml−1 spleen)/(strain B cfu∙ml−1 inoculum/strain A cfu∙ml−1 inoculum).
 
 For single-strain experiments, cultures of CS093, KH163, and CS1350 were grown overnight in LB media and prepared by serial dilution in PBS. The inoculum was confirmed for each experiment by plating dilutions on LB media. 6- to 8-week old female BALB/c or A/J mice were infected IP with approximately 1 × 103 cfu in 0.2 ml PBS. Mice were euthanized by CO2 asphyxiation at 48- and 96-hpi and spleens were harvested and homogenized in PBS. Homogenized spleens were serial diluted and plated on LB media in order to determine the cfu∙ml−1 bacterial burden for each strain. All mouse experiments were performed with IACUC approval.
 
-## Bacterial growth curve
+### Bacterial growth curve
 
 Wild type (CS093), phoQW104C-A128C (KH163), and ΔphoQ (CS1350) were grown overnight in N-mm pH 7.5 1 mM MgCl2. The following morning, the strains were washed in the appropriate N-mm, normalized, and diluted to 0.05 OD600 in either N-mm pH 7.5 or pH 5.5 supplemented with 1 mM MgCl2. The strains were grown in a rolling drum at 37°C. At the indicated time-points, the bacterial strains were diluted 1:10 in PBS and their OD600 was monitored.
 
-## Macrophage growth conditions and infections
+### Macrophage growth conditions and infections
 
 Bone marrow was isolated from the femurs of BALB/c mice obtained from Jackson Laboratories and differentiated for 7 days in RPMI 1640 media (Gibco #22400-089, Thermo Fisher Scientific, Grand Island, NY) supplemented with 10% FBS and L-929 cell supernatant following standard protocols. Following differentiation, bone-marrow derived macrophages were seeded into 24-well plates and incubated overnight. Bone-marrow derived macrophages were infected in triplicate with CS093, KH163, or CS1350 S. enterica Typhimurium and bacterial survival determined using a standard gentamicin-protection assay. Briefly, CS093, KH163, and CS1350 were grown overnight in LB media. The following morning, bacterial cultures are washed in PBS and suspended in RPMI 1640 at the appropriate concentration. BALB/c bone-marrow derived macrophages in 24-well plates (2 × 105 per well) were washed with PBS and infected in triplicate with CS093, KH163, or CS1350 (M.O.I. of 10) in RPMI 160 supplemented with 10% FBS, synchronized by centrifugation at 1000 rpm for 5 min at RT, and incubated for 30 min. Following incubation, infected macrophage monolayers were washed with PBS, incubated with media supplemented with 100 µg∙ml gentamicin−1 (Sigma) for 90 min and maintained at 15 µg∙ml−1 gentamicin for the duration of the experiment. Bacterial intracellular survival was determined by lysing infected macrophage with 1% Triton X-100 in PBS at the indicated time-points and plating serial dilutions on LB media for cfu counting.
 
-## Bacterial gene expression from within infected macrophage
+### Bacterial gene expression from within infected macrophage
 
 BALB/c bone marrow-derived macrophages were seeded into 6-well plates (1 × 107 per well) and infected in triplicate with CS093, KH163, or CS1350 S. enterica Typhimurium using a standard gentamicin-protection protocol. 30 min post-infection, extracellular bacteria were harvested, lysed in Max Bacterial Enhancement Reagent (Ambion) and RNA was stabilized with Trizol (Ambion). 4 hr post-infection, media was aspirated, infected macrophages were solubilized in Trizol to stabilize total RNA and triplicates where pooled. Trizol samples were stored at −80°C. RNA was prepared according to the Trizol Reagent protocol, treated with TURBO DNA-free DNase (Ambion), and RNA quality was monitored using a 2200 TapeStation (Agilent Technologies). cDNA was generated using SuperScript III First-Strand Synthesis Supermix for qRT-PCR (Invitrogen). Quantitative RT-PCR was performed using SYBR GreenER qPCR SuperMix Universal (Invitrogen) and a BioRad CFX96 thermocycler for S. enterica Typhimurium rpoD, pagD, pagO, phoN, and phoP target transcripts using the appropriate qRT primers (Table 3). Relative gene expression was determined using the 2−Δ ΔCT method (Livak and Schmittgen, 2001). rpoD cDNA generated from extracellular bacteria harvested 30 min post-infection was used as the calibrator.
 
-## Three-dimensional structural analysis
+### Three-dimensional structural analysis
 
 Analysis and modeling of the three-dimensional protein structures was carried out using the PyMOL molecular viewer (Schrodinger, 2010).

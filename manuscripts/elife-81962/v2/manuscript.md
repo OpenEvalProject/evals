@@ -17,23 +17,23 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 School of Biological Sciences, Institute of Molecular Plant Sciences, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/01nrxwf90 Centre for Synthetic and Systems Biology, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/01nrxwf90 School of Engineering, Institute for Integrated Micro and Nano Systems, University of Edinburgh Edinburgh United Kingdom
-4. https://ror.org/052gg0110 Department of Plant Sciences, University of Oxford Oxford United Kingdom
-5. https://ror.org/00vtgdb53 James Watt School of Engineering, University of Glasgow Glasgow United Kingdom
-6. https://ror.org/00vtgdb53 Laboratory of Plant Physiology and Biophysics, Bower Building, University of Glasgow Glasgow United Kingdom
-7. https://ror.org/04pp8hn57 Ecology & Biodiversity group, Utrecht University Utrecht Netherlands
-8. https://ror.org/01nrxwf90 School of Engineering, Institute for Energy Systems, University of Edinburgh Edinburgh United Kingdom
-9. https://ror.org/00pggkr55 UK Centre for Ecology & Hydrology Wallingford United Kingdom
-10. https://ror.org/01nrxwf90 Centre for Science at Extreme Conditions, University of Edinburgh Edinburgh United Kingdom
-11. https://ror.org/041kmwe10 Department of Bioengineering, Imperial College London South Kensington United Kingdom
+1. School of Biological Sciences, Institute of Molecular Plant Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Centre for Synthetic and Systems Biology, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. School of Engineering, Institute for Integrated Micro and Nano Systems, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+4. Department of Plant Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+5. James Watt School of Engineering, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+6. Laboratory of Plant Physiology and Biophysics, Bower Building, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+7. Ecology & Biodiversity group, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+8. School of Engineering, Institute for Energy Systems, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+9. UK Centre for Ecology & Hydrology Wallingford United Kingdom ([ROR:00pggkr55](https://ror.org/00pggkr55))
+10. Centre for Science at Extreme Conditions, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+11. Department of Bioengineering, Imperial College London South Kensington United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 
 † Corresponding author
 
 ## Abstract
 
-Animal migration is highly sensitised to environmental cues, but plant dispersal is considered largely passive. The common dandelion, Taraxacum officinale , bears an intricate haired pappus facilitating flight. The pappus enables the formation of a separated vortex ring during flight; however, the pappus structure is not static but reversibly changes shape by closing in response to moisture. We hypothesised that this leads to changed dispersal properties in response to environmental conditions. Using wind tunnel experiments for flow visualisation, particle image velocimetry, and flight tests, we characterised the fluid mechanics effects of the pappus morphing. We also modelled dispersal to understand the impact of pappus morphing on diaspore distribution. Pappus morphing dramatically alters the fluid mechanics of diaspore flight. We found that when the pappus closes in moist conditions, the drag coefficient decreases and thus the falling velocity is greatly increased. Detachment of diaspores from the parent plant also substantially decreases. The change in detachment when the pappus closes increases dispersal distances by reducing diaspore release when wind speeds are low. We propose that moisture-dependent pappus-morphing is a form of informed dispersal allowing rapid responses to changing conditions.
+Animal migration is highly sensitised to environmental cues, but plant dispersal is considered largely passive. The common dandelion, Taraxacum officinale, bears an intricate haired pappus facilitating flight. The pappus enables the formation of a separated vortex ring during flight; however, the pappus structure is not static but reversibly changes shape by closing in response to moisture. We hypothesised that this leads to changed dispersal properties in response to environmental conditions. Using wind tunnel experiments for flow visualisation, particle image velocimetry, and flight tests, we characterised the fluid mechanics effects of the pappus morphing. We also modelled dispersal to understand the impact of pappus morphing on diaspore distribution. Pappus morphing dramatically alters the fluid mechanics of diaspore flight. We found that when the pappus closes in moist conditions, the drag coefficient decreases and thus the falling velocity is greatly increased. Detachment of diaspores from the parent plant also substantially decreases. The change in detachment when the pappus closes increases dispersal distances by reducing diaspore release when wind speeds are low. We propose that moisture-dependent pappus-morphing is a form of informed dispersal allowing rapid responses to changing conditions.
 
 ## Introduction
 
@@ -57,9 +57,25 @@ To understand the biological significance of pappus morphing, we examined the fl
 
 The dandelion diaspore consists of an achene attached to a pappus comprising around 100 hair-like filaments (Cummins et al., 2018). The pappus is found closed in wetting conditions such as mist or rain (Rothert, 1895; Taliev, 1894; Figure 1a–c). In contrast, when dry, hairs are approximately horizontal, when measured from µCT scans at a 2 mm radius from the centre of the pappus (Figure 1—figure supplement 1a).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig1-v2.jpg)
+
+**Figure 1.:** (a) Image of a dry dandelion infructescence, (b) image of a wet dandelion infructescence, (c) schematic of a dandelion diaspore indicating features, and (d) image of dry dandelion pappus (scale bar: 2 mm). (e) Image of dandelion pappus after 1 hr in moisture chamber with a 20 min humidifier treatment (scale bar: 2 mm). (f) Time course of change in pappus angle between outermost hairs with 10 or 20 min humidifier treatment, n = 10 and n = 12 samples for 10 and 20 min treatments, respectively; error bars are s.e.m.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The angle of individual hairs of dandelion pappi. Angle is calculated relative to horizontal in which the dandelion diaspore beak (see Figure 1c) forms the vertical axis, n = 10 pappi, n = 932 hairs. Red dashed line indicates the median value. (b) High relative humidity partially closes the dandelion pappus. Change in pappus angle at stable relative humidity (after 10 hr in chamber with saturated salt solutions), n = 7 for 39.8% relative humidity and n = 6 for 71.8% and 87.0% treatments.
+
 To capture pappus closure dynamics, we imaged dandelion diaspores in an enclosed, water-tight chamber with moisture added via an ultrasonic humidifier for 10 or 20 min (Figure 1d–f). For both treatments, the pappus angle (the angle between outermost hairs, see Figure 1c) rapidly decreased (4.0 ± 1.4 degree min–1) during moisture treatments, which is consistent with previous experiments (Meng et al., 2016). This continued for 5–15 min after moisture addition ceased with a final change in angle of 60°–90° (Figure 1f). To test the effect of relative humidity (RH) below 100%, samples were placed in a chamber with stable RH. At RH of 71.8 and 87.0%, modest angles changes of around 10° and 24° were observed, respectively (Figure 1—figure supplement 1b). Together, these results indicate that the dandelion pappus partially closes at high RH and rapidly closes when fully wet.
 
 We hypothesised that pappus shape changes would modify diaspore flight and indeed found a strong effect on the falling velocity of the diaspore (Figure 2a). A decrease in pappus angle of around 100–150°, associated with wetting for 1 hr, resulted in double to triple the falling velocity (Figure 2a). This is consistent with a change in projected pappus area that occurs when the pappus closes (Figure 2—figure supplement 1a). Additionally, a small increase in mass due to the added water resulted in a 0.7 μN increase in drag for the wetted samples.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig2-v2.jpg)
+
+**Figure 2.:** (a) Falling speed at varying pappus angles, before and after wetting for 1 hr in moisture chamber, asterisks indicate statistically significant difference at p<0.0001, n = 20; (b) relationship between Reynolds number (Re) and drag coefficient (CD) for dry and wet samples, open red circles indicate data from weighted/clipped dry diaspores from Cummins et al., 2018, n = 10 diaspores, filled circles are same data as (a), n = 20 diaspores; (c) estimated porosity at varying pappus angles; (d) schematic illustrating axes and direction of flow; (e) flow visualisation of dandelion fruit with open pappus, contrast adjusted to illustrate vortex more clearly (scale bar: 2 mm); (f) flow visualisation of dandelion fruit with a partially closed pappus, contrast adjusted to illustrate vortex more clearly (scale bar: 2 mm); (g) distance of the region of minimum uz from the pappus centre at varying pappus angle, position is nondimensionalised for each sample by the diameter of the pappus when dry, n = 12 diaspores; and (h) longitudinal length of the separated vortex ring (SVR) non-dimensionalised by the diameter of the pappus when dry, at varying pappus angles, n = 12 diaspores.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Falling velocity reduces as projected area reduces. Projected area calculated using measured pappus angles and assuming hair lengths of 7.41 mm and diameters of 16 μm according to Cummins et al., 2018; (b) vorticity along the r axis of vortex images at calculated position of minimal uz flow. The r position is non-dimensionalised by dividing by the dry pappus diameter for each sample, with 0 indicating the centre of the pappus. Plot for a single sample at three different pappus angles, representative of n = 10 samples. (c) The minimum uz flow velocity in the separated vortex ring at varying pappus angles.
 
 To understand further how the pappus shape change affects the drag and falling velocity of the dandelion diaspore, we calculated the drag coefficient (CD) and Reynolds numbers (Re) from our drop test data. The coefficient CD is a nondimensionalised parameter indicating the drag on an object for a given projected area (in our case, the area given by the pappus hairs). For dry diaspores, we examined CD and Re alongside data from weighted/clipped diaspores from Cummins et al., 2018 (Figure 2b). For dry diaspores, higher Re is associated with rapidly decreasing CD before reaching a plateau. The wet diaspores with closed pappi, however, exhibit a different CD-Re relationship with substantially lower CD for a given Re compared to dry (weighted) diaspores with open pappi (Figure 2c). Closing the pappus therefore has two simultaneous effects: Re is increased as falling velocity increases, and the drag per unit of projected pappus area is decreased relative to a hypothetical open pappus of the same projected area. Therefore, pappus morphing is associated with shifting to a different region of the CD-Re parameter space (Figure 2c).
 
@@ -71,9 +87,29 @@ In the region of space directly behind the centre of the pappus, the maximum mag
 
 From our data, it is clear that pappus morphology considerably affects the falling velocity of the diaspore and the fluid mechanics of the pappus. We also expected that the pappus shape might affect detachment of the diaspore from the parent plant. This is important because, as noted before, force thresholds on detachment are an important mechanism by which plants can bias timing of dispersal in favour of increased wind speeds (Greene, 2005; Greene et al., 2008; Schippers and Jongejans, 2005; Skarpaas et al., 2006; Soons and Bullock, 2008; Thompson and Katul, 2013; Treep et al., 2018) and is thought to promote long distance dispersal (Schippers and Jongejans, 2005; Soons and Bullock, 2008; Thompson and Katul, 2013). We placed dandelion infructescences in a wind tunnel (Figure 3—figure supplement 1a) and assessed the number of diaspores detaching at varying wind speeds (Figure 3). Hydrating samples for 1 hr by mist application significantly (p<0.001, X2 = 341, df = 1) reduced detachment for the range of wind speeds tested (Figure 3c, Figure 3—figure supplement 1b). In flow with 9.1% turbulent intensity, 24% of dry diaspores remained attached at the maximum wind speed (9.8 m s–1) compared to 50% of wet diaspores (Figure 3c). Reducing the turbulent intensity of the flow also reduced diaspore detachment (Figure 3—figure supplement 1b, c). These data indicate that hydration and air flow impact on the initiation of dispersal. This observation is consistent with detachment data for thistles (Jongejans et al., 2007; Marchetto et al., 2012; Skarpaas et al., 2006).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig3-v2.jpg)
+
+**Figure 3.:** (a) Snapshots of detachment dynamics at 8 m s–1 wind speed for a dry capitulum, air flow direction is from right to left of the images; (b) snapshots of detachment at 8 m s–1 wind speed for a wet capitulum; and (c) survival plot of percentage of fruits attached to capitula at varying wind speeds for 9.1% turbulent intensity flow in dry and wet conditions, tested 10–14 days after opening of capitula, n = 20 capitula per treatment corresponding to 3001 and 2654 diaspores for dry and wet conditions, respectively; shading around lines indicates s.e.m.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Schematic illustrating experimental setup for detachment assays; (b) survival plot of percentage of fruits attached to capitula at varying wind speeds for 1.7% turbulent intensity flow in dry and wet conditions, tested 3 days after opening of capitula, n = 21 capitula per treatment corresponding to 3736 and 3652 diaspores for dry and wet conditions, respectively, shading around lines indicates s.e.m. (c) Survival plot of percentage of fruits attached to capitula at varying wind speeds for dry conditions with turbulent intensities of 1.7% and 9.1%, tested 3 days after opening of capitula (data for 1.7% turbulent intensity are the same as for dry capitula in panel b), n = 20 capitula for the 9.1% turbulent intensity treatment corresponding to 2677 diaspores, shading around lines indicates s.e.m.
+
 As drag, falling velocity, and diaspore detachment are strongly affected by moisture-dependent pappus morphing, we expected pappus closure would influence dispersal distances. We tested this hypothesis by numerically modelling the dispersal distance in dry or wet conditions corresponding to the open or closed state of the pappus. We first separately tested the effects of pappus closure on diaspore flight, then diaspore detachment, and finally combined these phenomena together to understand how pappus morphing affects dispersal.
 
 We simulated wind dispersal trajectories using the Markov chain synthetic turbulence generation (STG) model previously developed and used for grassland species (Pazos et al., 2013; Soons et al., 2004). This model simulates diaspore dispersal according to instantaneous calculation of wind trajectories. Importantly, the model can be generalised to new settings using measured (or estimated) parameters and is able to capture long-distance dispersal in a realistic manner. Long-distance dispersal relies on uplifting of diaspores at early stages in the dispersal process and is primarily achieved within the model by incorporating autocorrelated horizontal and vertical turbulence generated from properties of the canopy vegetation. We used wind velocity values from the Edinburgh meteorological data separating it into two groups: dry conditions (RH < 90%) or wet conditions (RH ≥ 90%). There is a consistent negative correlation between wind speed and RH (Figure 4a, Figure 4—figure supplement 1). At high RH, when dandelion pappi are more likely to be closed, wind speeds are relatively low, although still variable (Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-v2.jpg)
+
+**Figure 4.:** (a) Relationship between relative humidity and wind speed in Edinburgh, UK. (b) Model descriptions indicating whether dry (relative humidity < 90%), or wet (relative humidity ≥ 90%) weather conditions were used, whether the pappus was simulated to be open or closed during detachment, and whether the simulated diaspore falling velocity during flight was based on an open or closed pappus. (c) Modelled kernel density estimate of predicted dispersal distances for diaspores with open or closed pappi and for different weather conditions (see b for model details). (d) Median dispersal distance for each model. (e) Percent of 10,0000 dispersal simulation events that travelled further than 100 m. (f) Percent of time in which diaspores successfully detached after 172,800 simulations (representing the number of seconds in a 48 hr period). (g) Mean wind speed for time points (172,800 simulations) when detachment occurred.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Manchester, (b) Nottingham, (c) Norwich, and (d) Exeter.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/81962/elife-81962-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Full dispersal kernel with distance plotted on a log10 scale. (b) Dispersal kernel portion from 0 to 10 m dispersal distance, dashed vertical lines indicate medians for the entire dispersal kernel. (c) Median dispersal distance. (d) Percent seeds dispersing further than 100 m.
 
 We ran five different model simulations to explore the different functional aspects of pappus morphology on dispersal. For each model, we simulated 10,000 dispersal events and computed kernel density estimates normalised such that the integral over distance equalled one. Firstly, we simulated dispersal of dandelion diaspores with open pappi in dry weather conditions (Model 1), when wind speeds tend to be higher. As expected, most diaspores would disperse a short distance (median: 4.3 m) from the parent plant, but the model generated dispersal distances with a right-skewed tail, indicating some diaspores will disperse much longer distances (Figure 4c). It is worth noting that extremely long distances (>10,000 km) are observed in a very small number of cases. Some, though not all, of these individual simulations occurred because the diaspores hit the top of the atmospheric boundary layer during trajectory simulation, but we found that omitting such individuals from the analysis made very little difference to the kernel density estimate. The accuracy of the model at this range cannot be verified due to the impracticality of tracking such events empirically. Without a clear rationale for a specific cut-off distance, we decided to leave the model distribution unchanged to avoid misrepresentation of the model’s results.
 
@@ -107,39 +143,43 @@ Considering how prevalent environmentally induced plasticity is in plant structu
 
 ## Materials and methods
 
-## Plant growth and samples
+### Plant growth and samples
 
 Taraxacum officinale agg. diaspores were collected and grown as described previously (Cummins et al., 2018). Briefly, plants were collected in Edinburgh, UK (55.922684°N, 3.170703°W), and grown in a peat/sand mix compost in greenhouses supplemented with light where necessary to ensure a 16 hr day, 8 hr night and kept at 18–21°C. All samples were the progeny of plants grown in the greenhouse for two generations originating from the same individual. As this subspecies reproduces apomictically, all diaspores used were considered to be genetically identical.
 
 For the detachment assay, stems with capitula were harvested once the inflorescence had closed but before the infructescence (capitulum) had opened. Polypropylene tubes of 15 ml capacity were filled with water and covered by a piece of parafilm with a small hole in. Stems of samples placed through the hole. These samples were transported to the site of the wind tunnel experiment and then placed in a greenhouse (ambient conditions except for day length, which is artificially extended with electric lighting to ensure at least 16 hr of daylight) to allow the infructescence to fully mature and open.
 
-## Pappus angle measurements
+### Pappus angle measurements
 
 Angles of each hair from the horizontal axis were calculated at a 2 mm radius from the centre of the pappus, with the beak aligned to the vertical axis. Source data and analysis of 3D micro-tomography CT scans were identical to the ones used in Cummins et al., 2018.
 
 For all other pappus angle measurements, the angle was measured from 2D microscope or macro-camera images. The pappus was aligned perpendicular to the objective/lens and pappus angle measured as the angle between the outermost hairs.
 
-## Moisture chamber imaging
+### Moisture chamber imaging
 
 The bespoke moisture chamber consisted of a 70 l airtight plastic box (Solent Plastics, UK). A hole was made in the box to pass cables through and the space around sealed with silicone sealant. Two USB microscopes (Maozua, USB001) were positioned horizontally to image dandelion diaspore samples, which were fixed in place by embedding in plasticine or individual pieces of foil shaped around the achene. An ultrasonic humidifier (Bottle Caps) was filled with distilled water and placed next to the dandelion samples. The ultrasonic humidifier releases small droplets of liquid water into the chamber meaning that RH reaches 100% within the first few minutes. Samples were imaged each minute for the duration of the experiment.
 
 For RHs < 100%, dishes of saturated salt solutions were placed into the chamber to maintain defined, stable humidity levels (Wexler and Hasegawa, 1954). RH was monitored with a datalogger (Lascar, Easylog EL-GFX-2). Samples were imaged at 0 hr and 10 hr when RH had long reached equilibrium.
 
-## Falling velocity assays
+### Falling velocity assays
 
 Drop tests were carried out using a modified version of the protocol described in Cummins et al., 2018. Diaspore samples were tested in two batches (n = 10 and n = 11). First, all diaspores were weighed together to obtain the mean weight per sample. Each sample was dropped three times and video recorded with a DSLR camera (Canon EOS 70D). Samples were then imaged in the moisture chamber while still dry. The humidifier was switched on for 1 hr and samples re-imaged. Diaspores were removed from the chamber one by one and dropped three times before placing back inside the humid chamber to prevent further drying. After all samples were dropped, all were weighed together again. The mean increase in weight after wetting was 70 µg, which corresponds to approximately 10% greater weight when wet compared to dry. Falling velocity was determined from the video frames using a particle detection script (Cummins et al., 2018).
 
-## Calculated variables for fluid mechanics analysis
+### Calculated variables for fluid mechanics analysis
 
 The projected area of the pappus was calculated according to the pappus angle, assuming 100 straight, non-overlapping hairs of length 7.41 mm and diameter 16 µm according to previous measurements (Cummins et al., 2018). The apical plate at the centre of the structure (where the hairs attach) was not included in these calculations. Porosity was calculated as the ratio of empty space between hairs (i.e. 1 – the projected area) to the total area of the circle that would enclose the projected area.
 
-The Reynolds number is defined as Re= uD/ν , where u is the flow velocity (the falling velocity, that is, the undisturbed velocity of the fluid with respect to the pappus), D is the characteristic length scale (in our case, this is the diameter of the pappus assuming hair length of 7.41 mm and varies according to pappus angle), and ν is the kinematic viscosity of the fluid at 20°C for which we used 15.06 × 10–6 m2 s–1.
+The Reynolds number is defined as $Re= uD/ν$ , where $u$ is the flow velocity (the falling velocity, that is, the undisturbed velocity of the fluid with respect to the pappus), $D$ is the characteristic length scale (in our case, this is the diameter of the pappus assuming hair length of 7.41 mm and varies according to pappus angle), and $ν$ is the kinematic viscosity of the fluid at 20°C for which we used 15.06 × 10–6 m2 s–1.
 
-The drag coefficient was calculated as follows:CD= mg12 ρu2A
+The drag coefficient was calculated as follows:
+
+$$
+C_{D}= \frac{mg}{\frac{1}{2} ρu^{2}A}
+$$
 
 where ρ = 1.0241 kg m–3 is the density of air, A is the projected area of the pappus, taking the porosity into account, and g = 9.81 m s–1 is gravitational acceleration. Additionally, m is the mass of the diaspore, for which a mean measured value of 0.614 mg was used for all dry samples and 0.684 mg for all wet samples.
 
-## PIV and flow visualisation
+### PIV and flow visualisation
 
 Samples were fixed in place inside a vertical wind tunnel for flow visualisation and PIV (Cummins et al., 2018). Long-exposure images were obtained using a Canon DSLR camera (EOS 70D). The raw experimental images were processed to distinguish the region of interest (i.e. the SVR) from the reflective pappus. To do this, we applied a digital graduated neutral density filter using the ‘Curves’ contrast adjust tool and the ‘Blend’ tool within the open-source software GNU Image Manipulation Program (GIMP version 2.8.22).
 
@@ -149,7 +189,11 @@ For each video, 100 frames were analysed in PIVlab (MATLAB; Thielicke and Stamhu
 
 Noisy rows of data from the images were excluded from further analysis. The first row of the image (row size defined by the window size), which was always noisy, was removed. Other noisy rows were identified by fitting an autoregressive integrated moving-average model (R package ‘tsoutliers’) to the profiles of streamwise velocity (uz) across the r direction of the image. The velocity profiles with outliers were considered noisy. A z portion of the image with no more than one consecutive noisy row was considered to form the vortex region and was used for further analysis. Analysis was also limited in the r direction by excluding regions of data that fell outside of the limits of the dandelion pappus width. The coordinates of the central point of the pappus and the pappus angle were measured from images. The pappus limits were calculated assuming the pappus formed a triangular shape with hairs that were 7.41 mm long (Cummins et al., 2018).
 
-The point P of minimal flow was determined by finding where uz along the z-axis was minimal at the r location of the centre of the pappus. Let zp be the z-coordinate of P, D the diameter of the pappus and τ the pappus angle. We found thatzpD=0.24+0.0039 τ,
+The point P of minimal flow was determined by finding where uz along the z-axis was minimal at the r location of the centre of the pappus. Let zp be the z-coordinate of P, D the diameter of the pappus and τ the pappus angle. We found that
+
+$$
+\frac{z_{p}}{D}=0.24+0.0039 \tau,
+$$
 
 p=0.001, R2 = 0.34.
 
@@ -157,7 +201,7 @@ Using this relationship (Figure 2f), we identified a nominal z-coordinate of min
 
 The flow structure was not well resolved beyond the limits of the vortex, so it was not possible to identify the downstream stagnation point where the velocity vanishes. Instead, the nominal vortex length was determined by obtaining the point beyond the centre of the pappus at which uz = 0.02 m s–1. This does not give the actual length of the vortex but gives an indicative value to compare between samples and treatments.
 
-## Detachment assays
+### Detachment assays
 
 A modified version of the method in Jongejans et al., 2007 was used to assess detachment of diaspores from the capitulum. Tests were conducted in a bespoke horizontal, open-circuit wind tunnel set up in a greenhouse at the University of Glasgow, UK (Zhdanov et al., 2021). The test section was 1 m long with a rectangular cross-section of 450 mm × 400 mm (Figure 3—figure supplement 1a). Either 3 days (Figure 3—figure supplement 1b, c) or 10–14 days after opening (Figure 3c), samples were placed in the middle of the test section and were subjected to a flow speed of 2 m s–1 for 30 s. Samples were held in place by passing an aluminium rod (rod diameter was 1.5 mm or 3 mm in length depending on stem diameter) through the hollow stem attached to the capitulum. For older samples, in which the stem had degraded, stem remnants were clamped to the rod. Detached diaspores were collected in a mesh at the end of the test section (Figure 3—figure supplement 1a) and counted. This was repeated for 4, 6, 8 and 10 m s–1.
 
@@ -165,11 +209,11 @@ After the maximum wind speed, the number of diaspores remaining on the capitulum
 
 Wet capitula were treated by placing in the moisture chamber with the humidifier switched on for 1 hr before placing in the wind tunnel.
 
-## Meteorological data
+### Meteorological data
 
 Hourly meteorological data was obtained from the Integrated Surface Database from the National Centers for Environmental Information (USA). We compared meteorological data from five locations across the UK (Edinburgh, Manchester, Nottingham, Norwich, and Exeter) and found the wind speed profiles to be largely similar (Figure S4). For all further analysis and modelling, we used the meteorological data from Edinburgh. Hourly data for a 30-year period (1987–2017) were acquired for Edinburgh (55.950–3.373) and filtered according the following criteria: entries were excluded if hourly wind speed, dewpoint, or temperature were missing; data were only used from the beginning of April to the end of October in each year (the period of dandelion reproduction); occasional data measured between hours were excluded. RH was calculated from the dewpoint and temperature. The hourly wind speeds varied around a mean of 4.0 m s–1 (Figure 4a; measured 10 m reference height). RH ranged between 14 and 100% with a mean value of 80%.
 
-## Dispersal modelling
+### Dispersal modelling
 
 Using the above meteorological data, we simulated the dispersal of dandelion diaspores using a mechanistic trajectory model (the CELC Markov chain STG model; details as in Soons et al., 2004). This model simulates the dispersal of individual diaspores based on mean horizontal wind speeds, vegetation characteristics, and plant traits, and a resulting modelled vertical wind speed and turbulence distribution. Wind speeds at infructescence height were inferred as described by Soons et al., 2004, assuming a logarithmic vertical wind profile.
 
@@ -177,8 +221,8 @@ For a representative environmental setting, we assumed the release height of dan
 
 Detachment probabilities for dry and wet weather were based on the wind tunnel detachment assays described above. Alternative parametric models were fitted to the detachment data using the R package ‘flexsurv’ (Jackson, 2016). According to the Akaike information criteria (AIC), a generalised gamma model fit the data best and performed better than Weibull, exponential, log-normal, log-logistic, generalised F, and Gompertz models. The fitted generalised gamma model was extrapolated beyond the original limit of 10 m s–1, and the probability of detachment for each humidity condition was used in the implementation of the dispersal model simulations.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 All measurements were carried out on separate individual diaspores from different infructescences except detachment assays, in which multiple diaspores from each infructescence were counted.
 
-Detachment assays were analysed by fitting Kaplan–Meier survival models to the data, with log-rank tests used to compare treatments (R package ‘survival’). For falling velocity tests, the following model was fitted to the data where the falling velocity is proportional to cos-2/3⁡ τ, similarly to Meng et al., 2016, and dry and wet groups were compared using Student’s two-sided two-sample t-test. For PIV data, linear regression models were fit to the data. For the plot of the relationship between CD and Re, loess regression with a span of 0.8 was used to illustrate the trends in the data. For boxplots, the centre line is the median, hinges indicate first and third quartiles, and whiskers extend to largest value no further than 1.5 times the interquartile range.
+Detachment assays were analysed by fitting Kaplan–Meier survival models to the data, with log-rank tests used to compare treatments (R package ‘survival’). For falling velocity tests, the following model was fitted to the data where the falling velocity is proportional to $cos^{-2/3}⁡ \tau,$ similarly to Meng et al., 2016, and dry and wet groups were compared using Student’s two-sided two-sample t-test. For PIV data, linear regression models were fit to the data. For the plot of the relationship between CD and Re, loess regression with a span of 0.8 was used to illustrate the trends in the data. For boxplots, the centre line is the median, hinges indicate first and third quartiles, and whiskers extend to largest value no further than 1.5 times the interquartile range.

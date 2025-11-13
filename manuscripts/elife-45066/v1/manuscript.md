@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.45066.001 Influenza A viruses (IAV) are subject to species barriers that prevent frequent zoonotic transmission and pandemics. One of these barriers is the poor activity of avian IAV polymerases in human cells. Differences between avian and mammalian ANP32 proteins underlie this host range barrier. Human ANP32A and ANP32B homologues both support function of human-adapted influenza polymerase but do not support efficient activity of avian IAV polymerase which requires avian ANP32A. We show here that the gene currently designated as avian ANP32B is evolutionarily distinct from mammalian ANP32B, and that chicken ANP32B does not support IAV polymerase activity even of human-adapted viruses. Consequently, IAV relies solely on chicken ANP32A to support its replication in chicken cells. Amino acids 129I and 130N, accounted for the inactivity of chicken ANP32B. Transfer of these residues to chicken ANP32A abolished support of IAV polymerase. Understanding ANP32 function will help develop antiviral strategies and aid the design of influenza virus resilient genome edited chickens.
+Influenza A viruses (IAV) are subject to species barriers that prevent frequent zoonotic transmission and pandemics. One of these barriers is the poor activity of avian IAV polymerases in human cells. Differences between avian and mammalian ANP32 proteins underlie this host range barrier. Human ANP32A and ANP32B homologues both support function of human-adapted influenza polymerase but do not support efficient activity of avian IAV polymerase which requires avian ANP32A. We show here that the gene currently designated as avian ANP32B is evolutionarily distinct from mammalian ANP32B, and that chicken ANP32B does not support IAV polymerase activity even of human-adapted viruses. Consequently, IAV relies solely on chicken ANP32A to support its replication in chicken cells. Amino acids 129I and 130N, accounted for the inactivity of chicken ANP32B. Transfer of these residues to chicken ANP32A abolished support of IAV polymerase. Understanding ANP32 function will help develop antiviral strategies and aid the design of influenza virus resilient genome edited chickens.
 
 ## Introduction
 
@@ -41,23 +41,67 @@ Here we demonstrate that the avian ANP32B clade is evolutionarily distinct from 
 
 ## Results
 
-## Phylogenetic analysis identifies that avian ANP32B is a paralog of mammalian ANP32B
+### Phylogenetic analysis identifies that avian ANP32B is a paralog of mammalian ANP32B
 
 To examine the relatedness of ANP32 proteins from different species, we constructed a phylogenetic tree using vertebrate ANP32 protein sequences using Drosophila mapmodulin protein as an outgroup. ANP32A and E homologues formed well-supported monophyletic clades which included multiple avian and mammalian species (Figure 1, Figure 1—figure supplement 1). Most vertebrate ANP32B proteins formed a monophyletic clade but this clade did not include avian ANP32B proteins. Rather, avian ANP32B proteins were strongly supported as members of a distinct clade with ANP32C from Xenopus and unnamed predicted proteins from non-placental mammals. This suggests that avian ANP32B and mammalian ANP32B are paralogues: birds have lost the protein orthologous to human ANP32B and eutherian mammals have lost the protein orthologous to avian ANP32B. Synteny provides further evidence to support the evolutionary relationship between avian ANP32B, Xenopus ANP32C, and the unnamed marsupial gene as they are all found adjacent to ZNF414 and MYO1F on their respective chromosomes (Figure 1—figure supplement 2). In humans, we found a short stretch of sequence between ZNF414 and MY01F which appears homologous to avian ANP32B (Figure 1—figure supplement 2). This provides further evidence that a functional gene orthologous to avian ANP32B has been lost in placental mammals.
 
-## Chicken ANP32B does not support IAV polymerase activity
+![Figure 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig1-v1.jpg)
+
+**Figure 1.:** The best maximum-likelihood tree was calculated from a set of ANP32 proteins with mapmodulin from Drosophila melanogaster as an outgroup using RAxML with 100 bootstraps. This figure is a cladogram showing the relationships between mammalian ANP32s, avian ANP32s and ANP32s from Xenopus tropicalis. Selected bootstrap values show the relationship between different ANP32 protein clades. Avian ANP32B clade is shown in green. The full tree is shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Full tree used to make the cladogram in Figure 1. This tree was made using RAxML with 100 bootstraps and mapmodulin as an outgroup.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Chromosome locations of ANP32 family members A, B, C and E from coelacanth (Latimeria chalumnae), Xenopus (Xenopus tropicalis), chicken (Gallus gallus), zebra finch (Taeniopygia guttata), opossum (Monodelphis domestica), mouse (Mus musculus) and Human (Homo sapiens).
+
+### Chicken ANP32B does not support IAV polymerase activity
 
 We and others have previously shown that both human ANP32A and B proteins support activity of a human-adapted IAV polymerase in human cells (Long et al., 2016; Sugiyama et al., 2015; Watanabe et al., 2014). Using CRISPR/Cas9, we generated human eHAP1 cells that lacked expression of both human ANP32A and ANP32B protein (Staller et al. in review). In WT eHAP1 cells, human-adapted IAV polymerase (PB2 627K), derived from an H5N1 virus A/turkey/England/50-92/1991 (50-92), was active, whereas the WT avian polymerase (PB2 627E) was not. Exogenous expression of C-terminally FLAG-tagged chANP32A could rescue the activity of avian IAV polymerase whereas expression of chANP32B-FLAG, which naturally lacks the 33 amino acid insertion, did not (Figure 2a). In double knockout cells, neither human-adapted nor avian-origin polymerase were active. Expression of chANP32A-FLAG rescued activity of both polymerases but expression of chicken ANP32B-FLAG rescued neither, despite confirmation of robust expression by western blot (Figure 2b and c). This suggests that chicken ANP32B is not functional for IAV polymerase and that the IAV polymerase activity relies on ANP32A in chicken cells. To confirm this in chicken cells, we used CRISPR/Cas9 gene editing to generate chicken DF-1 cells which lacked chANP32B but retained chANP32A expression (Figure 2—figure supplement 1). Wild type DF-1 cells had mRNAs for chANP32A, B and E (Figure 2—figure supplement 1) and supported activity of avian IAV polymerase bearing either PB2 627E or 627K. Overexpression of chANP32B-FLAG did not affect activity (Figure 2d). DF-1 bKO cells also supported activity of both polymerases and again, exogenous expression of chANP32B had no effect. Since chicken cells lacking expression of chANP32B did not demonstrate any loss of IAV polymerase activity compared to WT, this implied that chANP32B is not functional for IAV polymerase and that IAV polymerase uses solely ANP32 family member A in chicken cells.
 
-## Chicken cells lacking intact ANP32A do not support avian IAV polymerase activity
+![Figure 2.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig2-v1.jpg)
+
+**Figure 2.:** Cells were transfected with avian H5N1 50–92 polymerase (PB2 627E or 627K) together with NP, firefly minigenome reporter, Renilla expression control, either Empty vector (control) or ANP32 expression plasmid and incubated at 37°C for 24 hr. (a) Minigenome assay in human eHAP1 cells with co-expressed Empty vector, FLAG-tagged chANP32A or chANP32B. (b) Minigenome assay in double knockout (dKO) eHAP1 cells. (c) Western blot analysis of dKO eHAP1 cell minigenome assay confirming expression of PB2 and FLAG-tagged chANP32A and B. (d) Minigenome assay in WT DF-1 cells with either co-expressed Empty vector or chANP32B. (e) Minigenome assay in DF-1 ANP32B knockout (bKO) cells with either co-expressed Empty vector or chANP32B. Data shown are firefly activity normalised to Renilla, plotted as mean ± SEM (n = 3 biological replicates). Two-way ANOVA with Dunnet’s multiple comparisons to Empty vector. ns = not significant, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) DNA sequence analysis of ANP32B from genomic DNA of DF-1 WT and ΔB clones, showing the target sequence of the gRNA pair used in the CRISPR/Cas9 reaction. Allele A had a 16 bp deletion and allele B a 40 bp deletion, resulting in premature stop codons in the ANP32B sequence. (b) qRT-PCR analysis of mRNA isolated from WT and bKO DF-1 cells. Data are Δct of RPL30, ANP32A, B or E to RS17. Data are Δct of RS17, ANP32A, B or E to RPL30. Annotated alignments generated using Geneious R6 software.
+
+### Chicken cells lacking intact ANP32A do not support avian IAV polymerase activity
 
 To investigate the function of ANP32A in chicken cells we utilised a cell type that is more amenable to genome editing and clonal growth. Primordial germ cells (PGCs) are the lineage restricted stem cells which form the gametes in the adult animal. PGCs from the chicken embryo can be easily isolated and cultured indefinitely in defined medium conditions (van de Lavoir et al., 2006; Whyte et al., 2015). Chicken PGCs can be edited using artificial sequence-specific nucleases and subsequently used to generate genome edited offspring (Park et al., 2014; Oishi et al., 2016). Under appropriate in vitro conditions PGCs can acquire pluripotency and be subsequently differentiated into multiple cell types (Matsui et al., 1992; Shim et al., 1997; Shamblott et al., 1998; Park and Han, 2000). Chicken PGC cells were genome edited using CRISPR/Cas9 and a single guide RNA which generated chANP32A knock-out cells (aKO) containing a biallelic deletion of 8 nucleotides in exon 1. PGCs lacking the 33 amino acid insertion in chANP32A were generated using a pair of guide RNAs to remove exon five resulting in chicken cells with a mammalian-like ANP32A (Δ33) (Figure 3a). The precise deletions were confirmed by Sanger sequence analysis of subcloned PCR products from genomic DNA, and both found to be homozygous at both alleles (Figure 3—figure supplement 1). We differentiated the edited chicken PGCs into fibroblast-like cells using serum induction with the aim of generating cell lines to test avian IAV polymerase activity (Figure 3—figure supplement 2). The predicted alterations of ANP32A protein in these cells were confirmed by western blot analysis of the PGC-derived fibroblast cells (Figure 3b). WT, Δ33, and aKO and PGC-derived cell lines were tested for the functional effects of alteration or loss of chANP32A expression on IAV polymerase activity measured by reconstituted minigenome assay. Both avian (PB2 627E) and human-adapted polymerase (PB2 627K) were active in WT fibroblast cells (Figure 3c). Removal of the 33 amino acids from ANP32A resulted in restriction of the 627E polymerase but not the 627K polymerase, mirroring the avian IAV polymerase phenotype observed in mammalian cells (Long et al., 2016). Both polymerases were restricted in cells lacking chANP32A (aKO). Expression of exogenous chANP32A in Δ33 and aKO cells rescued avian IAV polymerase activity (Figure 3d & e) demonstrating the specificity of the genetic alterations. The lack of polymerase activity in the aKO PGC cell line supports the hypothesis that, in the absence of chANP32A, the remaining ANP family members including chANP32B or chANP32E could not support IAV polymerase activity in chicken cells, even though ANP32B and E mRNAs were readily detected in both DF-1 and PGC cells (Figure 2—figure supplement 1 and Figure 3—figure supplement 1).
 
-## Functional differences between chicken ANP32A and ANP32B map to the LRR domain sequence
+![Figure 3.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig3-v1.jpg)
+
+**Figure 3.:** (a) Schematic of CRISPR/Cas9 RNA guide targets used to generate aKO (exon1) and Δ33 (exon 5) PGC cell lines. (b) Western blot analysis of ANP32A and β-actin expression in WT, KO and Δ33 PGC-derived fibroblast cells. (c) Minigenome assay in WT, Δ33 or aKO PGC derived fibroblast cells with either PB2627E (black) or 627K (grey) polymerase derived from avian H5N1 50–92 virus. (d) Minigenome assay in WT, Δ33 or aKO cells with avian H5N1 50–92 PB2 627E polymerase co-transfected with Empty vector (black) or FLAG-tagged chANP32A (grey). (e) Western blot analysis of PB2, FLAG and Histone 3. Data shown are firefly activity normalised to Renilla, plotted as mean ± SEM (n = 3 biological replicates). Two-way ANOVA with Dunnet’s multiple comparisons to WT. ns = not significant, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Alignment of DNA sequence from WT, Δ33 and KO PGCs, showing the target sequence of the gRNAs used in the CRISPR/Cas9 reaction. (a) Comparison between WT and KO PGCs showed an 8 bp deletion in exon 1 of ANP32A in KO PGC cells, resulting in a truncated ANP32A protein. (b) Intron and exon five sequence comparison of WT and Δ33 cells revealed a 400 bp deletion resulting in the loss of exon 5. (c) qRT-PCR analysis of mRNA isolated from WT, Δ33 or aKO PGC derived fibroblast cells. Data are Δct of RS17, ANP32A, B or E to RPL30. Annotated alignments generated using Geneious R6 software.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Diagram describing the method to differentiate PGCs from day three chicken embryos. (b) Fluorescent images of live cells demonstrating the differentiation of GFP+ PGCs into fibroblast-like cells.
+
+### Functional differences between chicken ANP32A and ANP32B map to the LRR domain sequence
 
 ANP32 proteins share a common domain organisation in which an N terminal domain consisting of 5 consecutive leucine rich repeats (LRR 1–5) is followed by a cap and central domain and a C terminal low complexity acidic region (LCAR). In avian ANP32A proteins (except some flightless birds) a sequence duplication, derived in part from nucleotides that encode 27 amino acids (149-175), has resulted in an additional exon and an insertion of up to 33 amino acids between the central domain and the LCAR (Figure 4a). We previously showed that insertion of the 33 amino acids from the central domain of chANP32A into the equivalent region of the human ANP32A or huANP32B proteins conferred the ability to rescue the activity of a restricted avian IAV polymerase in human cells. The equivalent 33 amino acid insertion into chANP32B (chANP32B33) did not support avian IAV polymerase activity (Figure 4b). In order to ascertain the domains of chANP32B that rendered it non-functional for IAV polymerase activity, we generated chimeric constructs between human and chicken ANP32B. To measure the rescue of avian IAV polymerase in human 293 T cells, all chimeric constructs had the 33 amino acid sequence derived from chANP32A inserted between the LRR and LCAR domains. Western blot analysis and immunofluorescence confirmed that all chimeric constructs were expressed and localised to the cell nucleus as for the wild type ANP32 proteins. (Figure 4b and Figure 4—figure supplement 1). Swapping the LCAR domain of chANP32B into huANP32B33 did not prevent the rescue of avian IAV polymerase (huANP32B33LCAR). Introduction of the central domain of chANP32B into huANP32B (huANP32B33CENT) significantly reduced rescue efficiency and swapping the LRR domain of chANP32B (huANP32B33LRR) rendered the protein non-functional to avian IAV polymerase (Figure 4b). By sequential swapping of each LRR repeat, the 5th LRR of chANP32B was found to be the domain that prevented rescue of avian IAV polymerase (Figure 4b). The fifth LRR contains five amino acid differences between human and chicken ANP32B, highlighted on the crystal structure of huANP32A, plus an additional one difference to chANP32A (Figure 4d and Figure 4—figure supplement 2). Swapping chANP32B’s fifth LRR into chANP32A also prevented rescue of avian IAV polymerase activity in human cells (chANP32ALRR5) (Figure 4c). Introduction of the single amino acid changes derived from the chANP32B LRR5 sequence into chANP32A revealed that mutations N129I and D130N significantly reduced the ability of chANP32A to rescue avian IAV polymerase activity in human cells (Figure 4c). Minigenome assays with co-expressed chANP32A or chANP32AN129I in aKO chicken fibroblast cells confirmed that the 129I mutation significantly reduced the ability of chANP32A to support avian-origin (PB2 627E) or human-adapted (PB2 627K) IAV polymerase activity (Figure 4e).
 
-## Sequence of amino acids 149–175 of the central domain of chANP32A are required to support activity of both avian and human-adapted IAV polymerase
+![Figure 4.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic of chicken ANP32A protein highlighting the different domains and LRR sequences (LRR 1–5). (b) Human 293 T cells were transfected with avian H5N1 50–92 polymerase (PB2 627E) together with NP, pHOM1-firefly minigenome reporter, Renilla expression control, either Empty vector or FLAG-tagged ANP32 expression plasmid and incubated at 37°C for 24 hr. Western blot analysis shown below (FLAG and Vinculin). (c) Minigenome assay in 293 T cells (PB2 627E) with FLAG-tagged WT or mutant chANP32A expression plasmids with associated western blot (FLAG and PCNA). (d) huANP32A crystal structure (PDB 4 × 05) with residues K116, N127, N129, D130 and K137 highlighted using UCSF Chimaera (Pettersen et al., 2004). (e) Minigenome assay of avian H5N1 50–92 polymerase with either PB2 627E or 627K in PGC-derived fibroblast aKO cells, together with co-expressed Empty vector, chANP32A or chANP32AN129I. Data shown are firefly activity normalised to Renilla, plotted as mean ± SEM (n = 3 biological replicates). One-way ANOVA with Tukey’s comparison to chANP32A (b and c) or two-way ANOVA with Dunnet’s multiple comparisons to chANP32A (e). ns = not significant, *p<0.05, **p<0.01, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Immunofluorescent images of 293 T cells expressing ANP32 constructs fixed and stained with DAPI to highlight the nucleus. (a) FLAG-tagged ANP32A constructs were imaged by probing with mouse α-FLAG antibody and detected by α-mouse AlexaFluor-568: Empty vector(1), huANP32B(2), huANP32B33(3), chANP32B(4), chANP32B33(5), huANP32B33LRR(6), huANP32B33CENT(7), huANP32B33LCAR(8), huANP32B33N+LRR1(9), huANP32B33LRR2+3 (10), huANP32B33LRR4+5 (11), chANP32A(12), chANP32Ascr149-175(13), chANP32Ascr176-208(14). (b) ANP32A with mCherry fused to the C-terminus: Empty Vector(1), chANP32A(2), chANP32B(3), chANP32AK116H(4), chANP32AN127M(5), chANP32AN129I(6), chANP32AD130N(7), chANP32AK137T(8). All images were prepared using ImageJ (Rueden et al., 2017) and Microsoft PowerPoint.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Alignment comparing sequence of LRR5 from chicken ANP32A and ANP32B sequences from Homo sapiens and 22 avian species (residues 115 to 141). Protein sequences downloaded from NCBI and aligned using Geneious R6 software.
+
+### Sequence of amino acids 149–175 of the central domain of chANP32A are required to support activity of both avian and human-adapted IAV polymerase
 
 As chANP32A KO PGC-derived fibroblast cells did not support of IAV polymerase despite expressing chANP32B, we were able to use these cells to understand in more detail the sequences in chANP32A required for IAV polymerase activity. The results above showed that the 33 amino acid insertion, fifth LRR and central domain are important for the ability of chANP32A to support function of avian IAV polymerase. We performed the minigenome assay in aKO cells with polymerases containing either PB2 627E and 627K with co-expression of further chANP32 mutants including: chANP32A in which the 27 amino acids in the central domain preceding the 33 amino acid insertion were scrambled (chANP32Ascr149-175) or chANP32A with the 33 amino acid insertion scrambled (chANP32Ascr176-208) (Figure 5a). Both mutants were expressed and localised to the nucleus (Figure 5c and Figure 4—figure supplement 1). The first mutant, chANP32Ascr149-175, did not support either PB2 627E or 627K polymerase, suggesting the sequence of the central domain is important for function of IAV polymerase. The second mutant, chANP32A scr176-208, only supported PB2 627K function, confirming that the sequence of the 33 amino acid insertion, not just the extended length is required for avian IAV polymerase (PB2 627E) (Figure 5b).
 
@@ -65,13 +109,21 @@ As chANP32A KO PGC-derived fibroblast cells did not support of IAV polymerase de
 
 **Figure 5.:** (a) Schematic of chANP32A showing the sequence of amino acids in the central domain (149–175 or 33 amino acid insertion (176-208) and the randomly scrambled sequence in red. (b) Minigenome assay of avian H5N1 50–92 polymerase with either PB2 627E or 627K in PGC-derived fibroblast aKO cells with co-expressed Empty plasmid or FLAG-tagged WT chANP32A, chANP32Ascr149-175 or chANP32Ascr176-208 expression plasmids. (c) Western blot analysis of PB2 (627E), lamin B1 and FLAG. Data shown are firefly activity normalised to Renilla, plotted as mean ± SEM (n = 3 biological replicates). Two-way ANOVA with Dunnet’s multiple comparisons to chANP32A. ns = not significant, ****p<0.0001.
 
-## A single amino acid difference between chANP32B and chANP32A abrogates binding of chANP32A to IAV polymerase
+### A single amino acid difference between chANP32B and chANP32A abrogates binding of chANP32A to IAV polymerase
 
 An interaction between ANP32A and IAV polymerase was demonstrated previously that is dependent on the presence of all three polymerase subunits (Mistry et al. in preparation & Baker et al., 2018; Domingues and Hale, 2017). To examine the interaction between IAV polymerase and chANP32 proteins we employed a split luciferase complementation assay as a quantitative measure of binding (Munier et al., 2013; Cassonnet et al., 2011). The C-terminus of the PB1 subunit of avian origin IAV polymerase was fused with one half of gaussia luciferase (PB1luc1) and the C-terminus of chicken ANP32A or B with the second half (chANP32Aluc2 and chANP32Bluc2) (Figure 6a). Reconstitution of PB1luc1, PB2 and PA together with chANP32Aluc2 in human 293 T cells gave a strong Normalised Luciferase Ratio (NLR) (Figure 6—figure supplement 1) with polymerases containing either PB2 627E or 627K (Figure 6b). Luciferase complementation was significantly less between polymerase and chANP32Bluc2, and even insertion of the 33 amino acids from chANP32A did not restore the signal (chANP32B33luc2) (Figure 6b). When chANP32A carried the single N129I mutation (chANP32AN129Iluc2), luciferase complementation was reduced 22-fold for PB2 627E polymerase and 52-fold forPB2 627K polymerase (Figure 6c and Figure 6—figure supplement 1). These results suggest that the loss of support of polymerase function by chANP32AN129I was due to a disruption of binding to IAV polymerase.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig6-v1.jpg)
+
+**Figure 6.:** (a) Diagram of the split Gaussia luciferase system, demonstrating how ANP32 fused to luciferase fragment luc2 may bind to polymerase containing PB1 fused to luciferase fragment luc1 and complement full luciferase, which then reacts with substrate to generate a measurable bioluminescent signal. (b) Human 293 T cells were transfected with PB1 fused to luc1 (PB1luc1), PB2 (627E or K), PA and either chANP32A, chANP32B or chANP32B33 fused to luc2 (control wells were transfected with all components but with unfused PB1 and luc1 or chANP32 and luc2). (c) As (b) but with either chANP32Aluc2 or chANP32AN129Iluc2. (d) 293 T cells transfected with either chANP32Aluc2 or chANP32AN129Iluc2 and histone four fused to luc1 (or with unfused controls) or with H4luc1 and histone three fused to luc2. All data are Normalised Luciferase Ratio (n = 3 biological replicates) (Figure 6—figure supplement 1). One-way ANOVA (d) or two-way ANOVA with Dunnet’s multiple comparisons to chANP32A (b and c). ns = not significant, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45066/elife-45066-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Normalised luciferase Ratio was calculated by the equation described in this diagram, whereby the bioluminescence measured by interacting partners A and B fused to luc1 and luc2 are divided by the sum of the bioluminescence of the unfused controls. (b) Western blot analysis of luc-fused constructs (α-Vinculin, PB1, Gaussia luciferase and histone 3).
+
 ANP32A proteins bind to histones as part of their role in chromatin regulation (Reilly et al., 2014). To measure if the mutation N129I had any effect on this cellular interaction, we generated expression plasmids that encoded human histone four with luc1 fused to the C-terminus (H4luc1) and histone 3.1 with luc2 fused to the C terminus (H3luc2). As expected, H4luc1 and H3luc2 generated a strong NLR, reflecting their interaction in the nucleosome (Luger et al., 1997). The ability of chANP32A to bind histone four was not impaired by mutation N129I, suggesting chANP32N129I was not altered in this cellular role, despite abrogation of its support of IAV polymerase (Figure 6d).
 
-## Viral replication is abrogated in chicken cells lacking ANP32A
+### Viral replication is abrogated in chicken cells lacking ANP32A
 
 The data above suggest that chANP32B cannot substitute for chANP32A in support of IAV polymerase in chicken cells. Since chicken cells that completely lack expression of chANP32A show no polymerase activity in the minigenome assay, they might be refractory to IAV infection. Multi-cycle growth kinetics of recombinant influenza A viruses were measured in WT and aKO PGC-derived fibroblast cells (Figure 7). To ensure robust infection, recombinant viruses were generated carrying H1N1 vaccine strain PR8 haemagglutinin (HA), neuraminidase (NA) and M genes; this also mitigated the risks of working with avian influenza viruses with novel antigenicity. Infectious titres of recombinant virus with internal genes of avian H5N1 virus 50–92 were not detected in the chicken cells lacking ANP32A infected at low MOI (Figure 7a). At higher MOI virus titres were significantly reduced compared to WT chicken cells, almost 325-fold less at 8 hr post infection and 16-fold less by 24 hr (Figure 7c). Similarly, at low MOI, a recombinant virus with internal genes from the H7N9 virus A/Anhui/1/2013, had limited virus growth in aKO cells but replicated efficiently in WT fibroblasts (Figure 7b). At the higher MOI, peak viral titres were 1365-fold less than in WT cells at 8 hr post infection and 100-fold less by 24 hr (Figure 7d). Since virus growth in aKO cells was observed at the higher MOI, we sequenced the PB2 gene of virus progeny to determine if this replication was due to adaptation in PB2. At 24 hr post infection the sequence of the PB2 gene from virus in supernatants of cells infected at high MOI was determined. Virus recovered from aKO and WT cells was found to be identical and contained no sequence changes compared with the inoculum, suggesting adaptation in PB2 was not required for the low level of replication seen in the aKO cells. In conclusion, PGC derived fibroblast cells lacking chANP32A were resilient to IAV replication, particularly at lower multiplicities of infection.
 
@@ -91,29 +143,312 @@ In summary, we provide evidence that specific domains of ANP32 proteins are impo
 
 ## Materials and methods
 
-## Animal use
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (G. gallus)</td>
+      <td>GFP+/Hyline cross</td>
+      <td>Roslin Institute</td>
+      <td></td>
+      <td>Fertile heterozygous eggs for PGC derivations (Pettersen et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>Primary cells (G. gallus)</td>
+      <td>Primordial Germ Cells (PGCs)</td>
+      <td>G. gallus GFP+/Hyline cross, Roslin Institute (This study)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (G. gallus)</td>
+      <td>DF-1 fibroblasts</td>
+      <td>American Type Culture Collection</td>
+      <td>CRL-12203; RRID:CVCL_0570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. sapiens)</td>
+      <td>MDCK</td>
+      <td>American Type Culture Collection</td>
+      <td>CCL- 34; RRID:CVCL_0422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T</td>
+      <td>American Type Culture Collection</td>
+      <td>CRL-3216; RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>eHAP1</td>
+      <td>Horizon Discovery</td>
+      <td>C669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal α-ANP32A</td>
+      <td>Sigma-Aldrich</td>
+      <td>AV40203; RRID:AB_1844874</td>
+      <td>Dilution 1:500-1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal α-β-actin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2228; RRID:AB_476697</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal α-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804; RRID:AB_262044</td>
+      <td>Dilution 1:1000 (WB), 1:300 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal α-Lamin B1</td>
+      <td>Merck</td>
+      <td>MAB5492; RRID:AB_2085944</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal α-PCNA</td>
+      <td>Santa Cruz</td>
+      <td>sc-25280, RRID:AB_628109</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal α-Histone 3</td>
+      <td>Abcam</td>
+      <td>AB1791; RRID:AB_302613</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal α-vinculin</td>
+      <td>Abcam</td>
+      <td>AB129002; RRID:AB_11144129</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal α-Gaussia Luc</td>
+      <td>NEB</td>
+      <td>E80235</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal α-PB1</td>
+      <td>Invitrogen</td>
+      <td>PA5-34914; RRID:AB_2552264</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal α-PB2</td>
+      <td>GeneTex</td>
+      <td>GTX125926; RRID:AB_11162999</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-rabbit HRP</td>
+      <td>CST</td>
+      <td>7074</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Horse polyclonal anti-mouse HRP</td>
+      <td>CST</td>
+      <td>7076</td>
+      <td>Dilution 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep polyclonal α-rabbit HRP</td>
+      <td>Merck</td>
+      <td>AP510P</td>
+      <td>Dilution 1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal α-mouse HRP</td>
+      <td>AbD Serotec</td>
+      <td>STAR117P; RRID:AB_323839</td>
+      <td>Dilution 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyconal α-mouse AlexaFluor-568</td>
+      <td>Invitrogen</td>
+      <td>A11031; RRID:AB_144696</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM-T Easy vector</td>
+      <td>Promega</td>
+      <td>A1360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-Puro PX459 V2.0 vector</td>
+      <td>Gift from Dr. Feng Zhang</td>
+      <td>RRID:Addgene_62988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9n(BB)−2A-GFP PX461 vecotr</td>
+      <td>addgene</td>
+      <td>Plasmid 48140; RRID:Addgene_48140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS vector</td>
+      <td>Belgium Co-ordinated Collections of Microorganisms (BCCM), University of Ghent, Belgium</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H5N1 A/turkey/England/50-92/1991 polI plasmids</td>
+      <td>APHA, Weybridge, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H7N9 Anhui/1/2013 pHW2000 plasmids</td>
+      <td>Pirbright Institute, UK</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>H1N1 A/PR/8/34 (PR8) polI or pHW2000 plasmids</td>
+      <td>(Neumann et al., 1999)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Start Bradford Protein Assay Kit</td>
+      <td>Biorad</td>
+      <td>5000202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-luciferase Reporter assay system</td>
+      <td>Promega</td>
+      <td>E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Renilla luciferase kit</td>
+      <td>Promega</td>
+      <td>E2810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp Viral RNA Mini Kit</td>
+      <td>Qiagen</td>
+      <td>52906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000</td>
+      <td>Invitrogen</td>
+      <td>L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>version 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>Geneious https://www.geneious.com</td>
+      <td>R6</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal use
 
 The GFP+ PGCs used in the experiments were obtained by crossing the Roslin Green (ubiquitous GFP) line of transgenic chickens with a flock of commercial Hyline layer hens maintained at the Roslin Institute to produce heterozygous fertile eggs for PGC derivations (Pettersen et al., 2004). Commercial and transgenic chicken lines were maintained and bred under UK Home Office License. All experiments were performed in accordance with relevant UK Home Office guidelines and regulations. The experimental protocol and studies were reviewed by the Roslin Institute Animal Welfare and Ethical Review Board (AWERB) Committee. Chickens for egg production were maintained under the HO code of practice (ISBN 9781474112390).
 
-## Plasmid constructs
+### Plasmid constructs
 
 ANP32A guide RNAs (gRNA) were designed using CHOPCHOP gRNA web tool (http://chopchop.cbu.uib.no/) (Montague et al., 2014; Labun et al., 2016). gRNA 5’-CGGCCATGGACATGAAGAAA-3’ targeting ANP32A exon1, and gRNAs: 5’-AGCTGGAAGCAATATGTACT-3’ and 5’-CATTCCCCTCGCTCCTTCAA-3’ targeting either side of exon 5 (Δ33 PGC cells) were cloned into pSpCas9(BB)−2A-Puro (pX459 v2.0; a gift from Dr. Feng Zhang) using Materials and methods described by previously (Ran et al., 2013a). For DF-1 ANP32B gRNAs, the guides 5’-TTCAGATGATGGGAAGATCG-3’ and 5’-GGTTCTCAAAATCTGAAGAG-3’ were cloned into the double ‘nickase’ vectors pSpCas9n(BB)−2A-GFP (pX461) and pSpCas9n(BB)−2A-Puro (pX462) respectively (Ran et al., 2013a ; Ran et al., 2013b).
 
 Gaussia luc1 and luc2 were generated by gene synthesis (GeneArt, ThermoFisher) using the sequence previously described (Cassonnet et al., 2011). Homo sapiens Histone 4 (NP_003533.1) and 3.1 (NP_003520.1) were generated gene synthesis (GeneArt, ThermoFisher). Luc1 or luc2 were added to the C-termini of ANP32, PB1, H4 or H3.1 using the linker sequence, AAAGGGGSGGGGS, by overlapping PCR. The 33 amino acid insertion was added to huANP32B after residue 173 and to chANP32B after residue 181 (preserving an acid region before SIM motif [Domingues and Hale, 2017]). The LRR (amino acids 1–149), central domain (amino acids 150–175) or LCAR (amino acids 176–262) from chANP32B were swapped into huANP32B33 to generate chimeric constructs. ANP32 constructs were made by overlapping PCR or by gene synthesis (GeneArt, ThermoFisher) with either a FLAG tagged fused to the C-terminus with a GSG linker or to mCherry with a GSGGGSGG linker.
 
-## Cells and cell culture
+### Cells and cell culture
 
 Human embryonic kidney (293T) (ATCC) and Madin-Darby canine kidney (MDCK) cells (ATCC) were maintained in cell culture media (Dulbecco’s modified Eagle’s medium (DMEM; Invitrogen) supplemented with 10% fetal calf serum (FCS) (Biosera), 1% non-essential amino acids (NEAA) and with 1% penicillin-streptomycin (Invitrogen)) and maintained at 37°C in a 5% CO2 atmosphere. Human eHAP1 cells (Horizon Discovery) were cultured in Iscove’s Modified Dulbecco’s Medium (IMDM) supplemented with 10% fetal bovine serum (FBS), 1% NEAAs, and 1% penicillin/streptomycin. Chicken fibroblast (DF-1) (ATCC) cells were maintained in DF-1 cell culture media (DMEM supplemented with 10% FCS, 5% tryptose phosphate broth (Sigma-Aldrich), 1% NEAAs and 1% penicillin-streptomycin and maintained at 39°C in a 5% CO2 atmosphere. Cell line authentication: DF-1, eHAP1 and 293 T cells were authenticated by mRNA analysis confirming the relevant species. All continuous cell lines were routinely screened for mycoplasma contamination and were mycoplasma free.
 
-## PGC, DF-1 and eHAP1 cell line generation
+### PGC, DF-1 and eHAP1 cell line generation
 
 PGCs were derived and cultured in FAOT medium as previously described (Whyte et al., 2015). PGCs were transiently transfected with 1.5 µg of PX459 V2.0 vector using Lipofectamine 2000 (Invitrogen) and treated with puromycin as previously described (Idoko-Akoh et al., 2018). Subsequently, single cell cultures of puromycin-resistant cells were established to generate clonal populations for downstream experiments as previously described in Idoko-Akoh et al. (2018). To identify an ANP32A Δ33 PGC cell line, PCR products were directly sequenced using PCR primers to analyse mutation genotypes of isolated single cell clones. To identify an ANP32A KO PGC cell line, PCR products were cloned into pGEM-T Easy vector (Promega) and sequenced using T7 promoter forward primer by Sanger sequencing. DF-1 cells were transfected with the described CRISPR/Cas9 constructs using Lipofectamine 2000 (Invitrogen) and subject to puromycin selection. Single cell clones were expanded and analysed by PCR of genomic DNA and Sanger sequencing using primers (5’-TTTTTGCTTACATCTGAGGGC-3’, 5’-CCTCCGCAGTTATCAGGTTAGT-3’) for ANP32A exon1, (5’-GCTCCCTGGTCTGCTAGTTAT-3’, 5’-GGTCTACGCAACCACACATAC-3’) for ANP32A exon five and (5’-CCCTTAAGGTGAGCACAGGG-3’, 5’-AACATAGCACCACTCCCAGC-3’) for ANP32B exon2. eHAP1 dKO cells were generated as described (Staller et al. in review).
 
-## Differentiation of PGCs into adherent fibroblast-like cells (PGC derived fibroblasts)
+### Differentiation of PGCs into adherent fibroblast-like cells (PGC derived fibroblasts)
 
 PGCs were cultured in 500 µl of high calcium FAOT medium containing 1.8 mM CaCl2 in fibronectin-coated wells (24-well plate) for 48 hr (Figure 3—figure supplement 2) (Whyte et al., 2015). Subsequently, PGCs were transferred into PGC fibroblast medium and then refreshed every 48 hr by removing and replacing with 300 µl of PGC fibroblast cell culture medium. Adherent fibroblast-like cells were observed within 72 hr. Cells were then refed every two days and split 1:4 every four days. PGC fibroblast cell cultures were expanded to 85–90% confluency in 24-well plates before using for transfection, infection or western blot analysis. PGC fibroblast cells were maintained in cell culture media (Knockout DMEM (10829018, Gibco) with 10% ES grade FBS (16141061, Invitrogen), 1% chicken serum (Biosera), 0.1% 100xNEAA (Gibco), 0.1% Pyruvate (11360070, Gibco), 0.1% 100xGlutamax (Gibco: 35050–038), 0.5 mg ml−1 ovotransferin (C7786, Sigma)) and 1% penicillin-streptomycin at 37°C with 5% CO2.
 
-## Influenza A virus infection
+### Influenza A virus infection
 
 Recombinant influenza A PR8 (A/PR/8/34 (H1N1)) 3:5 reassortant virus (PR8 HA, NA and M genes with PB1, PB2, PA, NP and NS genes from A/Anhui/1/13 (H7N9) was generated by reverse genetics at The Pirbright Institute, UK. Reverse genetics virus rescue was performed by transfection of Human Embryonic Kidney (HEK) 293 T cells (ATCC) with eight bi-directional pHW2000 plasmids containing the appropriate influenza A virus segments and co-culture in MDCK cells (ATCC) with addition of 2 µg ml−1 of TPCK treated Trypsin (Sigma-Aldrich). Rescued viruses were passaged once in embryonated hen’s eggs to generate working stocks. Recombinant PR8 3:5 reassortant 50–92 (A/turkey/England/50-92/1991 (H5N1) was described previously [Long et al., 2013]).
 
@@ -121,27 +456,27 @@ Virus was diluted in Knockout DMEM and incubated on PGC fibroblast cells for 1 h
 
 vRNA extraction from cell supernatants was performed using QIAamp Viral RNA Mini Kit (Qiagen 52906). First strand synthesis was performed using SuperScript IV reverse transcriptase with primer 5’-GCAGGTCAAATATATTCAATATGG-3’. cDNA was amplified using KOD Hot Start DNA polymerase (Merck 71086) using primers 5’-GCAGGTCAAATATATTCAATATGG-3’ and 5’-GGTCGTTTTTAAACAATTCGAC-3’ and the PCR product was sequenced by Sanger sequencing.
 
-## Minigenome assay
+### Minigenome assay
 
 Influenza polymerase activity was measured by use of a minigenome reporter which contains the firefly luciferase gene flanked by the non-coding regions of the influenza NS gene segment, transcribed from a species-specific polI plasmid with a mouse terminator sequence. The human and chicken polI minigenomes (pHOM1-Firefly and pCOM1-Firefly) are described previously (Moncorgé et al., 2013). pCAGGS expression plasmids encoding each polymerase component and NP for 50–92 (H5N1 A/Turkey/England/50–92/91) are described previously (Long et al., 2013). To measure influenza polymerase activity, 293 T cells were transfected in 48-well plates with pCAGGS plasmids encoding the PB1 (20 ng), PB2 (20 ng), PA (10 ng) and NP (40 ng) proteins, together with 20 ng species-specific minigenome reporter, either Empty pCAGGS or pCAGGS expressing ANP32 (50 ng) and, as an internal control, 10 ng Renilla luciferase expression plasmid (pCAGGS-Renilla), using Lipofectamine 3000 transfection reagent (Invitrogen) according to manufacturers’ instructions. DF-1 and PGC fibroblast cells were transfected as 293 T cells but with twice the concentration of DNA. Cells were incubated at 37°C. 20–24 hr after transfection, cells were lysed with 50 μl of passive lysis buffer (Promega), and firefly and Renilla luciferase bioluminescence was measured using a Dual-luciferase system (Promega) with a FLUOstar Omega plate reader (BMG Labtech).
 
-## Split luciferase assay
+### Split luciferase assay
 
 293 T cells were transfected with PB1luc1 (25 ng), either PB2 627E or PB2 627K (25 ng), PA (12.5 ng) and chANP32Aluc2, chANP32AN129Iluc2, chANP32Bluc2 or chANP32B33luc2 (12.5 ng). For split luciferase assays measuring histone interaction, 50 ng of either chANP32Aluc2, chANP32AN129Iluc2, H4luc1 or H3luc2 were transfected into 293 T cells. Control samples assessed the interaction between H4 or PB1luc1 and an untagged luc2 construct or the appropriate ANP32Aluc2 construct and an untagged luc1 construct. All other components transfected into control samples remained consistent with those transfected in with the interacting proteins of interest. 24 hr after transfection, cells were lysed in 50 ul Renilla lysis buffer (Promega) for one hour at room temperature. Gaussia luciferase activity was then measured from 10 ul of lysate using the Renilla luciferase kit (Promega) with a FLUOstar Omega plate reader (BMG Labtech). Normalised luminescence ratios were calculated by dividing the luminescence measured from the interacting partners by the sum of the interaction measured from the two controls for each sample (Figure 6—figure supplement 1) as previously described (Cassonnet et al., 2011).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 For analysis of PGC derived fibroblasts (Figure 3b), at least 300,000 cells were lysed in 60 µl of 1X RIPA lysis buffer (sc-24948, Santa Cruz Biotechnology) according to the manufacturer’s instruction. Protein concentration was determined using the Bradford method with the Quick Start Bradford Protein Assay Kit (#5000202, BIORAD) according to the manufacturer’s instruction (Bradford, 1976) Denaturing electrophoresis and western blotting were performed using the NuPAGE electrophoresis system (Invitrogen) following the manufacturer’s protocol. For all other Western blots, cells were lysed in lysis buffer (50 mM Tris-HCl pH 7.8 (Sigma Aldrich), 100 mM NaCl, 50 mM KCl and 0.5% Triton X-100 (Sigma Aldrich), supplemented with cOmplete EDTA free Protease inhibitor cocktail tablet (Roche)) and prepared in Laemmli 2 × buffer (Sigma-Aldrich). Cell proteins were resolved by SDS–PAGE using Mini-PROTEAN TGX Precast Gels (Bio-Rad). Immunoblotting was carried out using the following primary antibodies: rabbit α-ANP32A (Sigma-Aldrich AV40203), mouse α-β-actin (Sigma-Aldrich A2228), mouse α-FLAG (F1804, Sigma-Aldrich), mouse α-Lamin B1 (MAB5492, Merck), mouse α-PCNA (sc-25280, Santa Cruz), rabbit α-Histone 3 (AB1791, Abcam), rabbit α-vinculin (AB129002, Abcam), rabbit α-Gaussia Luc (E80235, NEB), rabbit α-PB1 (PA5-34914, Invitrogen) and rabbit α-PB2 (GTX125926, GeneTex). The following secondary antibodies were used: goat anti-rabbit HRP (CST #7074), anti-mouse HRP (CST #7076), goat α-mouse AlexaFluor-568 (A11031, Invitrogen), sheep α-rabbit HRP (AP510P, Merck) and goat α-mouse HRP (STAR117P, AbD Serotec). Protein bands were visualised by chemiluminescence (ECL +western blotting substrate, Pierce) using a FUSION-FX imaging system (Vilber Lourmat).
 
-## Quantification of chANP32A, B and E mRNA levels
+### Quantification of chANP32A, B and E mRNA levels
 
 Total RNA from PGC fibroblast and DF-1 cells were extracted using an RNeasy mini kit (Qiagen), following manufacturer’s instructions. During extraction of RNA, RNeasy columns were treated with RNase-Free DNase (Qiagen). RNA samples were quantified using a Nanodrop Spectrophotometer (Thermo Scientific). Equal concentrations of RNA were subject to first strand synthesis using RevertAid (Thermo Scientific) with Oligo(dT) (Thermo Scientific). This product was then quantified with Fast SYBR Green Master Mix (Thermo Scientific) using the following sequence-specific primer pairs: RS17, (5’-ACACCCGTCTGGGCAACGACT-3’ and 5’-CCCGCTGGATGCGCTTCATCA-3’), RPL30 (5’-CCAACAACTGTCCTGCTTT-3’ and 5’-GAGTCACCTGGGTCAATAA-3’), chANP32A (5′-GTTTGCAACTGAGGCTAAGC-3′ and 5’-CAACTGTAGGTCATACGAAGGC-3’), chANP32B (5′- GGTGGCCTTGAAGTTCTAGC-3′, and 5’-ATGAGCATCGTCACCTCGC-3’), chANP32E (5’- GAACTAGAGTTTCTTAGCATGG-3’ and 5’- TCTCTCTGCAAGGACCTCCAG-3’). Real-time quantitative PCR analysis was performed (Applied Biosystems ViiA 7 Real-Time PCR System).
 
-## Safety/biosecurity
+### Safety/biosecurity
 
 All work with infectious agents was conducted in biosafety level two facilities, approved by the Health and Safety Executive of the UK and in accordance with local rules, at Imperial College London, UK.
 
-## Bioinformatics
+### Bioinformatics
 
 ANP32 sequences were downloaded from Ensembl (Gene Trees ENSGT00940000153254 and ENSGT00940000154305.) Amino acid sequences were aligned using MUSCLE (Edgar, 2004) and the maximum likelihood tree was constructed using RAxML-HPC2 v.8.2.10 (Stamatakis, 2014) (GTRGAMMA model, 100 bootstraps) on XSEDE run on CIPRES (Miller et al., 2010). Mapmodulin from Drosophila melanogaster was used as an outgroup.
 

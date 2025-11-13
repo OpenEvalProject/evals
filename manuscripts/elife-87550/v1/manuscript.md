@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/047426m28 Department of Evolution, Ecology and Behavior, University of Illinois Urbana-Champaign United States
+1. Department of Evolution, Ecology and Behavior, University of Illinois Urbana-Champaign United States ([ROR:047426m28](https://ror.org/047426m28))
 
 † Corresponding author
 

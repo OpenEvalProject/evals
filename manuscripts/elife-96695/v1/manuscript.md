@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03zwxja46 Institute of Molecular Life Sciences, HUN-REN Research Centre for Natural Sciences Budapest Hungary
-2. https://ror.org/01jsq2704 Doctoral School of Biology and Institute of Biology, ELTE Eötvös Loránd University Budapest Hungary
-3. https://ror.org/02w42ss30 Department of Applied Biotechnology and Food Science, Budapest University of Technology and Economics Budapest Hungary
+1. Institute of Molecular Life Sciences, HUN-REN Research Centre for Natural Sciences Budapest Hungary ([ROR:03zwxja46](https://ror.org/03zwxja46))
+2. Doctoral School of Biology and Institute of Biology, ELTE Eötvös Loránd University Budapest Hungary ([ROR:01jsq2704](https://ror.org/01jsq2704))
+3. Department of Applied Biotechnology and Food Science, Budapest University of Technology and Economics Budapest Hungary ([ROR:02w42ss30](https://ror.org/02w42ss30))
 
 † Corresponding author
 
 ## Abstract
 
-The sustained success of Mycobacterium tuberculosis as a pathogen arises from its ability to persist within macrophages for extended periods and its limited responsiveness to antibiotics. Furthermore, the high incidence of resistance to the few available antituberculosis drugs is a significant concern, especially since the driving forces of the emergence of drug resistance are not clear. Drug-resistant strains of Mycobacterium tuberculosis can emerge through de novo mutations, however, mycobacterial mutation rates are low. To unravel the effects of antibiotic pressure on genome stability, we determined the genetic variability, phenotypic tolerance, DNA repair system activation, and dNTP pool upon treatment with current antibiotics using Mycobacterium smegmatis . Whole-genome sequencing revealed no significant increase in mutation rates after prolonged exposure to first-line antibiotics. However, the phenotypic fluctuation assay indicated rapid adaptation to antibiotics mediated by non-genetic factors. The upregulation of DNA repair genes, measured using qPCR, suggests that genomic integrity may be maintained through the activation of specific DNA repair pathways. Our results, indicating that antibiotic exposure does not result in de novo adaptive mutagenesis under laboratory conditions, do not lend support to the model suggesting antibiotic resistance development through drug pressure-induced microevolution.
+The sustained success of Mycobacterium tuberculosis as a pathogen arises from its ability to persist within macrophages for extended periods and its limited responsiveness to antibiotics. Furthermore, the high incidence of resistance to the few available antituberculosis drugs is a significant concern, especially since the driving forces of the emergence of drug resistance are not clear. Drug-resistant strains of Mycobacterium tuberculosis can emerge through de novo mutations, however, mycobacterial mutation rates are low. To unravel the effects of antibiotic pressure on genome stability, we determined the genetic variability, phenotypic tolerance, DNA repair system activation, and dNTP pool upon treatment with current antibiotics using Mycobacterium smegmatis. Whole-genome sequencing revealed no significant increase in mutation rates after prolonged exposure to first-line antibiotics. However, the phenotypic fluctuation assay indicated rapid adaptation to antibiotics mediated by non-genetic factors. The upregulation of DNA repair genes, measured using qPCR, suggests that genomic integrity may be maintained through the activation of specific DNA repair pathways. Our results, indicating that antibiotic exposure does not result in de novo adaptive mutagenesis under laboratory conditions, do not lend support to the model suggesting antibiotic resistance development through drug pressure-induced microevolution.
 
 ## Introduction
 
@@ -35,13 +35,144 @@ We systematically investigated the effects of currently used TB drugs on genome 
 
 ## Results
 
-## Adapting stress conditions and assessing their impact on cell viability and morphology
+### Adapting stress conditions and assessing their impact on cell viability and morphology
 
 For an efficient TB treatment, first-line antituberculotics are used in combination in the clinics (isoniazid – INH; ethambutol – EMB; rifampicin – RIF; pyrazinamide - PZA) (Trauner et al., 2017). To model this drug pressure in our study, we also combined the four first-line drugs in addition to applying them one by one. We added a second-line antibiotic, CIP. MitomycinC (MMC) and ultraviolet (UV) irradiation were used as positive controls for direct DNA damage (Crowley et al., 2006; O’Sullivan et al., 2008). We optimized the drug concentration for all applied treatments. First- and second-line antituberculosis drugs were used in sublethal concentrations to convey a measurable phenotypic effect while allowing to keep an adequate number of cells for the MA experiments on a plate and for the downstream measurements in liquid culture (Figure 1—figure supplement 1; Figure 1—figure supplement 2 and Table 1). In the first-line combination treatment, a 10-fold reduced concentration of each separately adjusted drug had to be applied in both liquid and agar media to allow the survival of enough cells for the analyses (Table 1). The fact that a lower dose of antibiotics applied in combination resulted in higher CFU reduction indicates the synergistic effect of the first-line antibiotics on M. smegmatis growth inhibition (Table 1). After an 8 hr drug treatment, we determined the viable cell count by CFU measurements (Table 1). The bacteriostatic drugs INH and EMB caused moderate CFU decrease in liquid cultures compared to the control (Table 1, Figure 1—figure supplement 1), consistent with their mechanism of action (Alland et al., 2000). To quantify the phenotypic effect of the applied drug treatments in liquid cultures, we analyzed the cellular dimensions using microscopy (Figure 1 and Table 1). The observed morphological changes provided evidence of the treatments' effectiveness (Figure 1 and Table 1). Specifically, following RIF, CIP, and MMC treatments, we observed cells elongating by more than twofold, whereas INH and EMB treatments led to a reduction in cell length. The combination treatment did not affect the cell size (Figure 1 and Table 1).
 
+**Table 1.**
+ Summary of the applied drug treatments and their phenotypic consequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Treatment</th>
+      <th colspan="4">Liquid culture experiments</th>
+      <th colspan="2">Agar plate experiments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Category</td>
+      <td>Long name</td>
+      <td>Abbreviation</td>
+      <td>Mechanism of action</td>
+      <td>Subinhinitory concentration</td>
+      <td>CFU compared to control</td>
+      <td>Cell length [μm]</td>
+      <td>Cell width [μm]</td>
+      <td>Subinhinitory concentration</td>
+      <td>CFU compared to control</td>
+    </tr>
+    <tr>
+      <td rowspan="4">First line antibiotics</td>
+      <td>Isoniazid</td>
+      <td>INH</td>
+      <td rowspan="2">Cell wall synthesis inhibitor</td>
+      <td>150 μg/ml</td>
+      <td>80%</td>
+      <td>1.8±0.5</td>
+      <td>0.41±0.07</td>
+      <td>2 μg/ml</td>
+      <td>2.2 %</td>
+    </tr>
+    <tr>
+      <td>Ethambutol</td>
+      <td>EMB</td>
+      <td>100 μg/ml</td>
+      <td>70%</td>
+      <td>2.0±0.8</td>
+      <td>0.55±0.17</td>
+      <td>0.2 μg/ml</td>
+      <td>10.5 %</td>
+    </tr>
+    <tr>
+      <td>Rifampicin</td>
+      <td>RIF</td>
+      <td>RNA synthesis inhibitor</td>
+      <td>3 μg/ml</td>
+      <td>60%</td>
+      <td>6.6±2.4</td>
+      <td>0.68±0.09</td>
+      <td>25 μg/ml</td>
+      <td>0.00052 %</td>
+    </tr>
+    <tr>
+      <td>Combination treatment</td>
+      <td>COMBO</td>
+      <td>WHO first line therapy</td>
+      <td>10 μg/ml PZA, 15 μg/mL INH, 10 μg/ml EMB, 0.3 μg/mL RIF</td>
+      <td>6%</td>
+      <td>2.8±0.7</td>
+      <td>0.47±005</td>
+      <td>1 μg/ml PZA, 0.2 μg/mL INH, 0.02 μg/ml EMB, 2.5 μg/mL RIF</td>
+      <td>0.39 %</td>
+    </tr>
+    <tr>
+      <td>Second line antibiotics</td>
+      <td>Ciprofloxacin</td>
+      <td>CIP</td>
+      <td>Gyrase inhibitor</td>
+      <td>0.3 μg/ml</td>
+      <td>20%</td>
+      <td>11.1±4.0</td>
+      <td>0.59±0.1</td>
+      <td>0.3 μg/ml</td>
+      <td>0.00018 %</td>
+    </tr>
+    <tr>
+      <td rowspan="2">DNA damage controls</td>
+      <td>Mitomycin-C</td>
+      <td>MMC</td>
+      <td>DNA alkylation</td>
+      <td>0.01 μg/ml</td>
+      <td>20%</td>
+      <td>9.8±4.6</td>
+      <td>0.68±0.11</td>
+      <td>0.0005 μg/ml</td>
+      <td>0.96 %</td>
+    </tr>
+    <tr>
+      <td>Ultraviolet radiation</td>
+      <td>UV</td>
+      <td>Pyr dimers, DSBs</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>150 J/m2</td>
+      <td>11 %</td>
+    </tr>
+    <tr>
+      <td>N/A</td>
+      <td>Non-treated</td>
+      <td>Mock</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>100%</td>
+      <td>2.8±0.9</td>
+      <td>0.44±0.08</td>
+      <td>N/A</td>
+      <td>100 %</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig1-v1.jpg)
+
+**Figure 1.:** Horizontal lines represent the mean of the plotted data points (n=84–212). The inset shows the fold changes in cell length compared to the untreated control on a log2 axis, highlighting the phenotypic effect of each treatment. * indicates data significantly different from the control at p=0.0001. Numerical values and additional statistical parameters are provided in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Effects of treatment on Mycobacterium smegmatis mc2-155 wild-type liquid cultures during the exponential growth phase. Relative growth inhibition is expressed as the % OD600 ratio between treated and control liquid cultures for isoniazid (INH), ethambutol (EMB), ethambutol (RIF), and pyrazinamide (PZA) (latter grown in pH 5.5 acidic media). For ciprofloxacin (CIP) and mitomycinC (MMC), it is represented as the % ratio of colony-forming units (CFUs) following an 8 hr treatment.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Relative viability is calculated based on the colony-forming unit (CFU) counting of exponentially growing wild-type M. smegmatis cultures on control and selective plates containing the corresponding antibiotic at different concentrations. Incubation: 60 hr at 37°C.
+
 We also assayed the clinically relevant drug PZA. However, M. smegmatis was reported to exhibit an intrinsic resistance to PZA (Zhang et al., 1999). Indeed, PZA treatment alone, even at high concentrations in acidic conditions, did not affect cell viability in our experiments (Figure 1—figure supplement 1). Regardless of its inefficacy as a monotherapy, we included PZA in the combination treatment, as we could not rule out the possibility that PZA interacts with the other three drugs or that PZA elimination mechanisms are equally active in M. smegmatis under this regimen.
 
-## The genome of M. smegmatis remains stable even under antibiotic pressure
+### The genome of M. smegmatis remains stable even under antibiotic pressure
 
 16 independent M. smegmatis MC2 155 lineages for each stress treatment condition and 56 lineages for the mock control were initiated and cultured from single colonies. The stress-treated lines and some of the mock lines were maintained through 60 days on agar plates. The rest of the mock lines were maintained through 120 days on agar plates. Drug-treated lineages were maintained for shorter times as more mutations were expected to arise under drug pressure. We measured an average generation time of 6.3±0.35 hr on the plate within the timeframe of a single passage. Therefore, bacteria produced on average 230 generations during the 60 day treatment. Following the treatment on solid plates, we expanded each lineage in a liquid culture without drug pressure and isolated genomic DNA. All lineages were sent to WGS to reveal the mutational events induced by the drug treatments. We set conditions to obtain at least 30–60 x sequencing depth for all positions per independent lineage. The ancestor colony was also sent for sequencing to detect already existing variations compared to the reference genome. According to the WGS results, our M. smegmatis ancestor strain carried 151 various mutations compared to the M. smegmatis reference genome deposited in the GenBank. These mutation hits were also found in all treated and untreated lineages and were omitted from further calculations as these are specific variations of our laboratory strain. We also removed those mutation hits that were found in any other independent lineage at the same position in any depth.
 
@@ -49,29 +180,388 @@ A surprisingly few new mutations were detected after carefully cross-checking th
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig2-v1.jpg)
 
-**Figure 2.:** M.smegmatis mc strains under antibiotic pressure. (2155A) Experimental design. (B) Mutation rates determined through genome sequencing of the drug-treated cells as an output of the MA process. UV(+) serves as a control reference for DNA damage. Columns represent averages, and error bars indicate the standard deviations of three individually sequenced samples. Statistical significance is marked by an asterisk (*), with a p-value of 0.05. For numerical data see Figure 2—source data 1. (C) Phenotypic drug sensitivity in drug-treated strains. Three individual minimal inhibitory concentration (MIC) determinations are presented, with the mean indicated by a horizontal line. For numerical data see Figure 2—source data 2.Figure 2—source data 1.M. smegmatis mc2155 strains under antibiotic pressure.Figure 2—source data 2.
+**Figure 2.:** smegmatis mc2155 strains under antibiotic pressure. (A) Experimental design. (B) Mutation rates determined through genome sequencing of the drug-treated cells as an output of the MA process. UV(+) serves as a control reference for DNA damage. Columns represent averages, and error bars indicate the standard deviations of three individually sequenced samples. Statistical significance is marked by an asterisk (*), with a p-value of 0.05. For numerical data see Figure 2—source data 1. (C) Phenotypic drug sensitivity in drug-treated strains. Three individual minimal inhibitory concentration (MIC) determinations are presented, with the mean indicated by a horizontal line. For numerical data see Figure 2—source data 2.
 
 We analyzed each mutation except those obtained following the UV treatment and found no sign of adaptive changes (Table 2). The Excel file containing the positions of all obtained mutations, including those of the UV sample, is provided in the archive deposited for the article (https://doi.org/10.6084/m9.figshare.25028186).
 
+**Table 2.**
+ Analysis of the genomic changes detected in the mutation accumulation experiment using whole genome sequencing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chromosome position</th>
+      <th>Sample</th>
+      <th>Reference</th>
+      <th>Mutation</th>
+      <th>AA mutation</th>
+      <th>Gene code</th>
+      <th>UniProt protein name</th>
+      <th>Gene ontology (GO)</th>
+      <th>Experiment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5214897</td>
+      <td>cip_b</td>
+      <td>A</td>
+      <td>AG</td>
+      <td>Leu87 frameshift 148stop</td>
+      <td>MSMEG_5116</td>
+      <td>Uncharacterized protein</td>
+      <td>N/A</td>
+      <td rowspan="22">Mutation accumulation (MA)</td>
+    </tr>
+    <tr>
+      <td>3614832</td>
+      <td>cip_b</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Pro139Leu</td>
+      <td>MSMEG_3554</td>
+      <td>N5,N10-methylene-tetrahydromethanopterin reductase</td>
+      <td>xidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen [GO:0016705]</td>
+    </tr>
+    <tr>
+      <td>2208516</td>
+      <td>cip_b</td>
+      <td>G</td>
+      <td>GA</td>
+      <td>Leu282 frameshift 283stop</td>
+      <td>MSMEG_2133</td>
+      <td>Uncharacterized protein</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>5861538</td>
+      <td>cip_c</td>
+      <td>G</td>
+      <td>GC</td>
+      <td>Leu168 frameshift</td>
+      <td>MSMEG_5792</td>
+      <td>UPF0678 fatty acid-binding protein-like protein MSMEG_5792/MSMEI_5639</td>
+      <td>intracellular transport [GO:0046907]</td>
+    </tr>
+    <tr>
+      <td>3415264</td>
+      <td>cip_c</td>
+      <td>T</td>
+      <td>TC</td>
+      <td>Leu206 frameshift 257stop</td>
+      <td>MSMEG_3338</td>
+      <td>Oxidoreductase, FAD/FMN-binding</td>
+      <td>FMN binding [GO:0010181]; oxidoreductase activity [GO:0016491]</td>
+    </tr>
+    <tr>
+      <td>2033295</td>
+      <td>cip_c</td>
+      <td>A</td>
+      <td>AG</td>
+      <td>Leu72 frameshift 258stop</td>
+      <td>MSMEG_1954</td>
+      <td>ABC1 family protein</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1988098</td>
+      <td>cip_c</td>
+      <td>A</td>
+      <td>AG</td>
+      <td>N/A</td>
+      <td>Intergenic region</td>
+      <td>intergenic</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1533730</td>
+      <td>inh_b</td>
+      <td>C</td>
+      <td>CTCG</td>
+      <td>Asp201_INSERTION</td>
+      <td>MSMEG_1431</td>
+      <td>Cytochrome P450-terp (EC 1.14.-.-)</td>
+      <td>heme binding [GO:0020037]; iron ion binding [GO:0005506]; monooxygenase activity [GO:0004497]; oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen [GO:0016705]</td>
+    </tr>
+    <tr>
+      <td>994997</td>
+      <td>inh_C</td>
+      <td>G</td>
+      <td>A</td>
+      <td>N/A</td>
+      <td>intergenic</td>
+      <td></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>5777585</td>
+      <td>inh_C</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Val99Met</td>
+      <td>MSMEG_5688</td>
+      <td>Regulatory protein, MarR</td>
+      <td>GO:0003700 DNA-binding transcription factor activity; GO:0006355 regulation of DNA-templated transcription</td>
+    </tr>
+    <tr>
+      <td>1508883</td>
+      <td>mmc_a</td>
+      <td>C</td>
+      <td>G</td>
+      <td>Ala300Ala (neutral)</td>
+      <td>MSMEG_1407</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>4598387</td>
+      <td>mmc_a</td>
+      <td>C</td>
+      <td>G</td>
+      <td>Ala371Arg</td>
+      <td>MSMEG_4513</td>
+      <td>Polyketide synthase</td>
+      <td>transferase activity, transferring acyl groups [GO:0016746]</td>
+    </tr>
+    <tr>
+      <td>6786854</td>
+      <td>mmc_a</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Trp104stop</td>
+      <td>MSMEG_6740</td>
+      <td>1-aminocyclopropane-1-carboxylate deaminase (EC 3.5.99.7)</td>
+      <td>1-aminocyclopropane-1-carboxylate deaminase activity [GO:0008660]; pyridoxal phosphate binding [GO:0030170]; amine catabolic process [GO:0009310]</td>
+    </tr>
+    <tr>
+      <td>5313643</td>
+      <td>mmc_c</td>
+      <td>C</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>intergenic</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>1865825</td>
+      <td>mock_b</td>
+      <td>G</td>
+      <td>GC</td>
+      <td>Ala351 frameshift</td>
+      <td>MSMEG_1780</td>
+      <td>Natural resistance-associated macrophage protein</td>
+      <td>metal ion transmembrane transporter activity; metal ion transport; membrane;</td>
+    </tr>
+    <tr>
+      <td>3722101</td>
+      <td>mock_b</td>
+      <td>A</td>
+      <td>C</td>
+      <td>Asn185Thr</td>
+      <td>MSMEG_3656</td>
+      <td>ABC transporter, permease/ATP-binding protein</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>58213</td>
+      <td>mock_c</td>
+      <td>T</td>
+      <td>TC</td>
+      <td>N/A</td>
+      <td>MSMEG_0037</td>
+      <td>tRNA-Leu</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>4104684</td>
+      <td>mock_c</td>
+      <td>T</td>
+      <td>C</td>
+      <td>Val70Ala</td>
+      <td>MSMEG_4033</td>
+      <td>TetR-family protein transcriptional regulator</td>
+      <td>GO:0006350, Sequence-specific dna binding transcription factor activity, Regulation of transcription, dna-dependent</td>
+    </tr>
+    <tr>
+      <td>5118524</td>
+      <td>mock_c</td>
+      <td>C</td>
+      <td>CG</td>
+      <td>Asp89 frameshift 143stop</td>
+      <td>MSMEG_5021</td>
+      <td>Alcohol dehydrogenase, zinc-containing</td>
+      <td>Oxidoreductase activity, Zinc ion binding, Oxidation-reduction process</td>
+    </tr>
+    <tr>
+      <td>5217666</td>
+      <td>mock_g</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Thr200Thr (neutral)</td>
+      <td>MSMEG_5119</td>
+      <td>L-glutamate gamma-semialdehyde dehydrogenase</td>
+      <td>Mitochondrial matrix, Oxidation-reduction process, Proline biosynthetic process, 1-pyrroline-5-carboxylate dehydrogenase activity</td>
+    </tr>
+    <tr>
+      <td>2970975</td>
+      <td>mock_i</td>
+      <td>T</td>
+      <td>C</td>
+      <td>Arg155Gly</td>
+      <td>MSMEG_2908</td>
+      <td>2-Keto-3-deoxy-gluconate kinase</td>
+      <td>kinase activity [GO:0016301]</td>
+    </tr>
+    <tr>
+      <td>2970982</td>
+      <td>mock_i</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Arg153Glu</td>
+      <td>MSMEG_2908</td>
+      <td>2-Keto-3-deoxy-gluconate kinase</td>
+      <td>kinase activity [GO:0016301]</td>
+    </tr>
+    <tr>
+      <td>3306164</td>
+      <td>mock_i</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Glu1151Glu (neutral)</td>
+      <td>MSMEG_3225</td>
+      <td>Ferredoxin-dependent glutamate synthase 1 (EC 1.4.7.1)</td>
+      <td>3 iron, 4 sulfur cluster binding [GO:0051538]; glutamate synthase (ferredoxin) activity [GO:0016041]; metal ion binding [GO:0046872]; glutamate biosynthetic process [GO:0006537]; glutamine metabolic process [GO:0006541]</td>
+      <td rowspan="8">Mutation accumulation (MA)</td>
+    </tr>
+    <tr>
+      <td>5805844</td>
+      <td>mock_i</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Val237Val (neutral)</td>
+      <td>MSMEG_5721</td>
+      <td>Acetyl-CoA acetyltransferase</td>
+      <td>transferase activity, transferring acyl groups other than amino-acyl groups [GO:0016747]</td>
+    </tr>
+    <tr>
+      <td>4987517</td>
+      <td>mock_j</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Leu30Leu (neutral)</td>
+      <td>MSMEG_4890</td>
+      <td>Alkyl hydroperoxide reductase AhpD (EC 1.11.1.28) (Alkylhydroperoxidase AhpD)</td>
+      <td>alkyl hydroperoxide reductase activity [GO:0008785]; hydroperoxide reductase activity [GO:0032843]; peroxidase activity [GO:0004601]; peroxiredoxin activity [GO:0051920]; response to oxidative stress [GO:0006979]</td>
+    </tr>
+    <tr>
+      <td>6406902</td>
+      <td>mock_j</td>
+      <td>T</td>
+      <td>TG</td>
+      <td>N/A</td>
+      <td>intergenic</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>491016</td>
+      <td>mock_k</td>
+      <td>C</td>
+      <td>T</td>
+      <td>N/A</td>
+      <td>intergenic</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>2287781</td>
+      <td>mock_k</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Gly199Asp</td>
+      <td>MSMEG_2207</td>
+      <td>Beta-ketothiolase</td>
+      <td>transferase activity, transferring acyl groups other than amino-acyl groups [GO:0016747]</td>
+    </tr>
+    <tr>
+      <td>3438752</td>
+      <td>rif_a</td>
+      <td>A</td>
+      <td>AC</td>
+      <td>Arg17 frameshift 175stop</td>
+      <td>MSMEG_3366</td>
+      <td>Isonitrile hydratase, putative</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>5773058</td>
+      <td>rif_a</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Glu67Lys</td>
+      <td>MSMEG_5682</td>
+      <td>Uncharacterized protein</td>
+      <td>integral component of membrane [GO:0016021]</td>
+    </tr>
+    <tr>
+      <td>6220187</td>
+      <td>CIPB0.3</td>
+      <td>G</td>
+      <td>T</td>
+      <td>Trp53Cys</td>
+      <td>MSMEG_6151</td>
+      <td>Alpha/beta hydrolase fold-1</td>
+      <td>epoxide hydrolase activity [GO:0004301]</td>
+      <td>Fluctuation assay with CIP treatment</td>
+    </tr>
+  </tbody>
+</table>
+
 We assessed the drug sensitivity of the MA strains by measuring the MIC of each drug on three randomly selected strains from both the mock-treated and stressed MA groups. Contrary to the mutation rate results obtained from genomic sequencing data, the MIC values for the MA strains were higher than those of the mock-treated strains (comparable data in line with Nyinoh, 2019), indicating phenotypic adaptation to the applied drugs (Figure 2C, Figure 2—source data 2). However, for the EMB treatment, we observed no increase in MIC, despite repeating the experiment several times.
 
-## The DNA repair system shows a treatment-specific activation pattern
+### The DNA repair system shows a treatment-specific activation pattern
 
 To investigate a possible reason for detecting so few newly generated mutations under antibiotic pressure, we studied whether the DNA repair pathways and other elements of the stress response potentially involved (Romero et al., 2011) were activated under drug pressure. The mycobacterial DNA repair system is highly redundant, many of its enzymes have overlapping functions (Malshetty et al., 2010; Singh, 2017; Srinath et al., 2007). Although canonical mismatch repair proteins are thought to be missing, a recently described protein, NucS is encoded with a similar function (Castañeda-García et al., 2017). We investigated the expression pattern of DNA repair genes in all known DNA repair pathways in mycobacteria including NucS using RT-qPCR, a method suitable to accurately show changes in transcript levels. The measured relative expression levels are presented in Figure 3, grouped by functional relevance, with consistent heatmap coloring across all measurements. Figure 3—figure supplement 3 shows a clustered heatmap without prior functional grouping. Numerical data for expression level changes are provided in Figure 3—source data 1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig3-v1.jpg)
+
+**Figure 3.:** Gene expression changes are normalized to the mock-treated control using the SigA and Ffh reference genes. Upregulation is numerically interpreted as fold change; downregulation is interpreted as –1/ (fold change) in the heatmap. *p<0.1; **p<0.05. For raw data see Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Stability, denoted as 1/ln(M), where M represents the average pair-wise variation among the tested reference genes across all samples (including six treatments and controls, with three biological and three technical replicates each). M values were computed using the BioRad CFX Maestro software. Reference gene stability is considered acceptable within the 0–1 stability range and deemed unstable below 0, as determined by the software. ProC was excluded from the study due to its demonstrated instability. (B) Pairwise comparison of the two accepted reference genes.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Melt curve analysis of amplicons generated from target genes in the Mycobacterium smegmatis genome. The sequences of both forward and reverse primers are detailed in Supplementary file 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The color scale is based on the mean relative gene expression changes compared to nontreated controls (fold change for upregulation and –1/fold change for downregulation). The color intensity in this heatmap is relative within each row and is not comparable to the color scale in Figure 3. Hierarchical clustering was performed using the one-minus Pearson correlation metric and the average linkage method. The figure was created using the Morpheus online heatmap generating tool (https://software.broadinstitute.org/morpheus/).
+
 Treatments with the two antibiotics affecting cell wall synthesis (INH and EMB) show similar patterns in the expression levels with an overall downregulation of DNA repair genes. On the contrary, CIP and MMC, drugs directly targeting DNA integrity induce a pattern marked by a moderate to strong overexpression of nucleotide excision and double-strand break (DSB) repair genes, respectively (Figure 3 and Figure 3—figure supplement 3). DNA polymerases DinB2 and DnaE2 involved in these DNA repair pathways are also strongly overexpressed (Figure 3 and Figure 3—figure supplement 3). RIF, the DNA-dependent RNA polymerase inhibitor does not seem to induce any change in the expression pattern of the investigated genes except for the Ahp peroxiredoxin (Figure 3 and Figure 3—figure supplement 3). As a result of the first line combination (COMBO) treatment, 14 out of 38 investigated genes are significantly (p<0.05) upregulated. More than fourfold upregulation can be measured for 5 members of the base excision repair pathway. In addition, the MutT2 dNTP pool sanitization enzyme and the error-prone DNA polymerases are also strongly upregulated. (Figure 3 and Figure 3—figure supplement 3). Interestingly, however, the DSB repair enzymes are exempt from this overall upregulation tendency (Figure 3 and Figure 3—figure supplement 3). The strongest measured effect of all is the 17-fold expression increase of the KatG1 peroxidase (Figure 3). When the first line antibiotics were used one by one, significant expression change could only be observed upon the INH treatment (4/38 genes) and in the opposite direction (downregulation).
 
-## All but the combination treatment alters the size and balance of dNTP pools
+### All but the combination treatment alters the size and balance of dNTP pools
 
 It was shown that dNTP pools are crucial for genome maintenance and proper DNA synthesis (Kumar et al., 2010; Mathews, 2006; Nordman and Wright, 2008; Yao et al., 2013). Imbalanced or altered levels of dNTPs could cause an increased rate of DNA lesions and, therefore, may play a role in the development of drug resistance. Therefore, we measured cellular dNTP concentrations and ratios in the function of the applied drug treatments using a fluorescent detection-based method optimized in our lab (Szabó et al., 2020). We used MMC treatment as a positive control as this is a generally used positive control for DNA damage (Kurthkoti et al., 2008; O’Sullivan et al., 2008). To calculate cellular concentrations, we used the cellular volumes determined from measured cell dimensions Figure 1—source data 1. Interestingly, we found altered dNTP pools upon most treatments (Figure 4 and Figure 4—source data 1). The CIP treatment resulted in the most remarkable differences in particular for dATP and dTTP concentrations which increased ~ sevenfold accompanied by a decrease in the dGTP concentration (Figure 4F and H). RIF and MMC treatments promoted an increase in the dGTP and dCTP pools (Figure 4D–E). The INH treatment coincided with a decreased concentration of purine nucleotides (Figure 4B), while in EMB-treated cells we could measure very low levels of all dNTPs (Figure 4C and H). In the combination treatment, we could not measure significant differences (Figure 4A). The dGTP pool decreased in both absolute and relative terms across all treatments where dNTP pool changes were observed (Figure 4B–F and G, respectively). A smaller cell size coincides with a lower cellular dNTP concentration, while no clear correlation is observed between drug-induced cell length increase and dNTP pool expansion (Figure 4I).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig4-v1.jpg)
 
-**Figure 4.:** (A–F) Cellular dNTP concentrations in drug-treated M. smegmatis. dNTP levels were measured in cellular extracts and normalized to the average cell volume for each treatment, yielding the concentrations shown. Each drug treatment and dNTP quantification included a corresponding control to account for potential fluctuations in growth and experimental conditions. Note the different scales on the y-axis. Data bars represent the averages of three biological replicates each carried out in three technical replicates; error bars represent SE. The p-values from the t-tests calculated for the measured differences are provided in Figure 1—source data 1, with significance indicated in the figure by asterisks as follows (**) for p<0.04 and (*) for p<0.07. (G) dNTP pool compositions of drug-treated bacteria. The large error bars in the control data arise from the combination of individual controls measured for each treatment. (H) Summed molar concentration of all four dNTPs compared to the control for each treatment. The y-axis is on a log2 scale to equally represent both increases and decreases. (I) Correlation of relative cell size (determined from cell lengths, compared to control cells) to relative total dNTP concentration for each treatment.Figure 4—source data 1.
+**Figure 4.:** (A–F) Cellular dNTP concentrations in drug-treated M. smegmatis. dNTP levels were measured in cellular extracts and normalized to the average cell volume for each treatment, yielding the concentrations shown. Each drug treatment and dNTP quantification included a corresponding control to account for potential fluctuations in growth and experimental conditions. Note the different scales on the y-axis. Data bars represent the averages of three biological replicates each carried out in three technical replicates; error bars represent SE. The p-values from the t-tests calculated for the measured differences are provided in Figure 1—source data 1, with significance indicated in the figure by asterisks as follows (**) for p<0.04 and (*) for p<0.07. (G) dNTP pool compositions of drug-treated bacteria. The large error bars in the control data arise from the combination of individual controls measured for each treatment. (H) Summed molar concentration of all four dNTPs compared to the control for each treatment. The y-axis is on a log2 scale to equally represent both increases and decreases. (I) Correlation of relative cell size (determined from cell lengths, compared to control cells) to relative total dNTP concentration for each treatment.
 
-## Stress-induced drug tolerance is developed upon pretreatment with the sublethal concentration of CIP
+### Stress-induced drug tolerance is developed upon pretreatment with the sublethal concentration of CIP
 
 To compare the result of the mutation accumulation experiment to a phenotype-based drug resistance assay, we chose the fluctuation assay generally used in the literature (Krašovec et al., 2019). Mutation rates in these tests are calculated based on the difference in the number of CFU values between cultures grown in regular broth compared to those in selecting broths. These assays assume that the resistance exclusively occurs upon one mutation event. Since the genetic background of a drug-tolerant colony is not confirmed, this presumption potentially leads to a significant misinterpretation of the actual mutation rate. For clarity, we refer to the mutation rate estimations in our phenotype-based resistance assay as the tolerance rate. For a valid comparison with the results of our mutation accumulation assay, we installed similar experimental conditions. Specifically, culturing was done on agar plates, the applied drug concentrations were in the same range as used during the mutation accumulation process, then colonies were washed off and CFU counting plates were streaked from the resuspended bacteria (Figure 5A). We found that the estimated rate of emergence of the tolerance for CIP is three orders of magnitude higher than the mutation rate calculated based on WGS (10–7 vs. 10–10, Figure 2B). Furthermore, following a 24–96 hr exposure to a sublethal 0.3 μg/ml dose of CIP, a phenotypic tolerance appears in a significant portion of the cells to an otherwise lethal 0.5 μg/ml dose (Figure 5B). The tolerant cell population increased with the length of the preincubation time before reaching a maximum (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig5-v1.jpg)
+
+**Figure 5.:** (A) Scheme of the fluctuation test used in the study. (B) Development of phenotypic resistance to a selecting CIP concentration following preincubation with a sublethal CIP concentration for various time periods. Data bars represent the averages of three biological replicates each carried out in three technical replicates; error bars represent SE.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96695/elife-96695-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type (WT) M. smegmatis colony was cultivated in LEMCO broth to reach OD = 0.4–0.5, then striked onto plates containing 0.5 µg/ml CIP; 0.3 µg/ml CIP or onto non-selecting plates and grown for 4 days at 37 °C. Data bars represent the averages of three biological replicates each carried out in three technical replicates; error bars represent SE.
 
 To confirm that the rapid increase in drug tolerance following short-term exposure to CIP is linked to non-genetic factors, we repeated the experiment using the 96 hr preincubation time for DNA isolation and WGS. After pretreatment, DNA was isolated from colonies on five parallel plates for each of the three biological replicates, followed by WGS (Figure 5A, Figure 5—figure supplement 1). In all measured samples, we detected a single mutation in a gene encoding an uncharacterized protein probably involved in lipid metabolism (MSMEG_6151; Table 2).
 
@@ -81,21 +571,21 @@ We also sequenced the genomes of colonies grown at the higher CIP concentration 
 
 One of the reasons TB is still a great medical challenge is the frequent incidence of resistant cases. The main goal of our research was to get a better understanding of the molecular mechanisms of drug resistance development in mycobacteria. We started with the hypothesis that long-term exposure to first-line antitubercular drugs increases mutability.
 
-## Drug resistance in M. smegmatis does not arise from increased mutation rates under antibiotic pressure
+### Drug resistance in M. smegmatis does not arise from increased mutation rates under antibiotic pressure
 
 Measured and estimated mycobacterial mutation rates in the earlier literature are in the order of 10–10 /bp/generation (Ragheb et al., 2013, Kucukyildirim et al., 2016, Ford et al., 2011, Colangeli et al., 2014). This low constitutive mutation rate by itself does not explain the biological diversity observed in clinical isolates (Sun et al., 2012). This diversity might result from an elevated mutagenesis rate or the accumulation of different strains from the environment. We conducted a modelling study in M. smegmatis to investigate whether exposure to first-line antibiotics generates such biological diversity and if yes, by what possible molecular mechanism. We measured the appearance of drug-induced mutations in the genome in a mutation accumulation assay using WGS. We also examined the rapid occurrence of phenotypic tolerance. The difference between the results of the phenotypic and the mutation accumulation studies was surprisingly large. Even without pretreatment, a tolerance rate on the order of 10–7/generation was observed for CIP, consistent with literature data from fluctuation assays (Bergval et al., 2012; David, 1970). However, in the mutation accumulation assay, the number of mutations did not change significantly compared to the untreated control. The mutation rate increase was only significant in the case of the UV treatment serving as a positive control for the experiments (Figure 2B). Previous studies claiming mutation rate increase upon antibiotics treatment assessed mutation rates using fluctuation assays and no direct evidence of the change in the genetic material was shown (Gillespie et al., 2005; Kohanski et al., 2010). However, it should be noted that David’s study, which automatically classified bacteria growing in fluctuation assays as mutants without confirming genetic changes, also suggested that the term ‘acquired resistance’ in tubercle bacilli has only practical meaning and lacks experimental foundation (David, 1970). Our findings imply that the emergence of drug resistance in this study is solely attributed to phenotypic factors. Phenotypic changes upon antibiotic treatment have widely been investigated (Briffotaux et al., 2019) including potential bistability (Dubnau and Losick, 2006) and/or the upregulation of efflux pumps (Calgin et al., 2013; Machado et al., 2012). It is noteworthy that spontaneous mutagenesis is easily induced through UV treatment. Considering that mycobacterial species spread through air droplets, it is conceivable that the exposure of these droplets to environmental UV radiation could potentially lead to the generation of new mutations.
 
-## The combination treatment with frontline drugs induces an overall upregulation in the DNA repair pathways aimed at eliminating misincorporations
+### The combination treatment with frontline drugs induces an overall upregulation in the DNA repair pathways aimed at eliminating misincorporations
 
 The intracellular lifestyle of the TB pathogen implies that these bacteria must face various stress conditions and damaging agents including reactive oxygen and nitrogen species inside macrophages. Therefore, stress-induced transcriptional changes in mycobacteria have been studied on genome-wide scales (Briffotaux et al., 2019, Li et al., 2017) and one study found a specific activation of the DNA repair system in response to CIP similar to ours (O’Sullivan et al., 2008). Although M. smegmatis is not an intracellular pathogen, it shares the DNA repair pathways with M. tuberculosis and is often used to study how mycobacteria deal with DNA lesions (Singh, 2017). We focused our investigation on stress-induced transcriptional changes that may account for the protection of genomic integrity under the drug pressure of first-line antituberculotic drugs.
 
 Redox potential change is a well-known and common phenotypic response to INH in mycobacteria (Niki et al., 2012). The downregulation of KatG1 and Nei2 in response to our INH treatment (Figure 3) is in line with this and might indicate a reduced cellular redox potential. KatG1 is the enzyme that activates the prodrug INH (Niki et al., 2012), therefore, the downregulation of this enzyme decreases the active drug concentration and increases the tolerance of M. smegmatis against INH. In the case of the first-line combination treatment, however, KatG1 was highly upregulated, indicating high ROS levels in the cell (Wayne and Diaz, 1986). High ROS levels are known to cause damage to nucleobases and the nucleotide pool is a major effector of oxidative stress-induced genotoxic damage (Rai, 2010). In line with this, we observed upregulation in dNTP pool sanitation, base- and nucleotide-repair pathways which play crucial roles in preventing and repairing DNA damage caused by oxidative stress. The observed synergistic effect clearly results from the combination of first-line drugs, as we did not observe this effect when applying the drugs individually. The observed upregulation of the relevant DNA repair enzymes might account for the low mutation rate even under drug pressure. Notably, error-prone polymerases DinB2 and DnaE2 exhibited significant upregulation without inducing a mutator phenotype. This indicates that error-prone and error-free repair mechanisms are coactivated, predominantly resulting in error-free repairs.
 
-## dNTP pool alterations induced by frontline drugs neutralize each other in the combination treatment resulting in normal DNA precursor pools
+### dNTP pool alterations induced by frontline drugs neutralize each other in the combination treatment resulting in normal DNA precursor pools
 
 The building blocks of DNA constitute a critical component within the molecular aspects of mutability. It has been shown that increased or imbalanced dNTP pools induce mutagenesis in prokaryotes Gon et al., 2011 and eukaryotes (Pai and Kearsey, 2017). To assess the impact of drug treatment on dNTP pools and its correlation with genome stability, we quantified the concentrations of dNTPs in cell extracts obtained from the drug-treated cells. When treating the cells with frontline drugs EMB and INH individually, the observed reductions in dNTP pool sizes and cell size (as illustrated in Figure 4H–I) aligned well with the concurrent downregulated transcript levels (Figure 3). Resting states of bacteria have also been characterized by a decrease in cell size and dATP levels (Rittershaus et al., 2013; Wu et al., 2016). These observations thus probably reflect the bacteriostatic effect of these drugs causing metabolic processes to enter a dormant state, accompanied by the downregulation of enzymes involved in dNTP synthesis. The combined treatment yielded the least significant alteration from the untreated control compared to all monotreatments (Figure 4). An elevation in the dNTP pools during cytostatic or cytotoxic treatment is more unexpected and suggests elevated DNA repair activity. This observation, particularly in the case of CIP treatment, aligns with the substantial increase in the expression of DNA repair synthesis genes, as depicted in Figure 3. Among all administered treatments, only the CIP treatment led to a notable dNTP imbalance and a substantial overall rise in dNTP pools, due to elevated levels of dTTP and dATP. This coincides with the largest changes in the expression of DNA repair genes, particularly those associated with the SOS response and homologous recombination (Figure 3). Interestingly, the dGTP level decreased with all drug treatments. This finding suggests that dGTP may play a role in a general stress response. It is noteworthy that not all dNTP imbalances are created equal. Specifically, an excess of dGTP has been identified as a significant contributor to mutations (Martomo and Mathews, 2002; Schmidt et al., 2019). It must be noted that in these (and most) organisms dGTP is the least abundant among dNTPs. However, in mycobacteria, a unique scenario exists where dGTP is the most abundant dNTP species (Pancsa et al., 2022) and mycobacterial genomes are characterized by a high GC content (Andersson and Sharp, 1996). A reduction in dGTP levels in this context may contribute to minimizing DNA lesions by enhancing proofreading efficiency.
 
-## Our results do not support drug resistance acquisition through drug-induced microevolution
+### Our results do not support drug resistance acquisition through drug-induced microevolution
 
 Our hypothesis that systematic antibiotics treatment induces mutation rate increase in M. smegmatis failed, as we did not observe any significant impact of antibiotics on mutability in laboratory conditions. Only in the case of CIP treatment, a second-line TB drug known for directly inducing DNA damage, could we detect a slightly (but not significantly) elevated mutation rate. The treatment of M. smegmatis with the clinically used combination therapy drugs did not induce a mutator effect, quite the opposite. The observed activation of DNA repair processes likely mitigates mutation pressure, ensuring genome stability. However, to confirm this hypothesis, these investigations should be conducted using genetically modified DNA repair mutant strains.
 
@@ -105,70 +595,377 @@ We acknowledge the limitations of using M. smegmatis as a model for the intracel
 
 ## Materials and methods
 
-## Bacterial strains, media, and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mycobacterium smegmatis)</td>
+      <td>mc2-155</td>
+      <td>Snapper et al., 1990</td>
+      <td>GenBank: NC_008596.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma</td>
+      <td>D9542</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoniazid</td>
+      <td>Sigma</td>
+      <td>I3377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethambutol</td>
+      <td>Sigma</td>
+      <td>E4630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rifampicin</td>
+      <td>Sigma</td>
+      <td>R3501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyrazinamide</td>
+      <td>Sigma</td>
+      <td>40751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ciprofloxacin</td>
+      <td>Sigma</td>
+      <td>17850</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mytomicin-C</td>
+      <td>Sigma</td>
+      <td>10107409001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>phenol:chloroform:IAA (25:24:1)</td>
+      <td>Sigma</td>
+      <td>Sigma: 3803</td>
+      <td>For genomic DNA extraction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Whole genome sequencing</td>
+      <td>Novogene Ltd., Beijing, China</td>
+      <td></td>
+      <td>Executed on Illumina 1.9 instruments with 600-basepair fragments as 2 × 150  bp paired-end sequencing</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen: 74524</td>
+      <td>Used with RNA protect bacteia reagent (Qiagen: 76506) and DNAse I (Qiagen: 79254)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Applied Biosystems: 4374967</td>
+      <td>95–105 ng total RNA was used for each reaction</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mytaq PCR premix</td>
+      <td>Bioline</td>
+      <td>Bioline: 25046</td>
+      <td>For qPCR measurements</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EvaGreen</td>
+      <td>VWR</td>
+      <td>VWR: #31000</td>
+      <td>For qPCR measurements</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NucleoTIDY</td>
+      <td>Szabó et al., 2020;http://nucleotidy.enzim.ttk.mta.hu</td>
+      <td>V1.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TEMPase Hot Start DNA Polymerase</td>
+      <td>VWR</td>
+      <td>VWR: 733–1838</td>
+      <td>For dNTP measurements</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>methanol</td>
+      <td>Sigma</td>
+      <td></td>
+      <td>For dNTP isolation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NDP-1</td>
+      <td>Szabó et al., 2020</td>
+      <td>Primer for dNTP measurement</td>
+      <td>CCGCCTCCACCGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM-dTTP</td>
+      <td>Szabó et al., 2020</td>
+      <td>Probe for dTTP measurement</td>
+      <td>6-FAM/ AGGACCGAG/ZEN/GCAAGAGCGAGCGA /IBFQ</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM-dATP</td>
+      <td>Szabó et al., 2020</td>
+      <td>Probe for dTATP measurement</td>
+      <td>6-FAM/ TGGTCCGTG/ZEN/GCTTGTGCGTGCGT /IBFQ</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM-dGTP</td>
+      <td>Szabó et al., 2020</td>
+      <td>Probe for dTGTP measurement</td>
+      <td>6-FAM/ ACCATTCAC/ZEN/CTCACACTCACTCC /IBFQ</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FAM-dCTP</td>
+      <td>Szabó et al., 2020</td>
+      <td>Probe for dTCTP measurement</td>
+      <td>6-FAM/ AGGATTGAG/ZEN/GTAAGAGTGAGTGG /IBFQ</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dTTP-DT1</td>
+      <td>Szabó et al., 2020</td>
+      <td>Template oligo for dTTP measurement</td>
+      <td>TCGCTCGCTCTTGCCTCGGTCCTTTATTTGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dATP-DT1</td>
+      <td>Szabó et al., 2020</td>
+      <td>Template oligo for dATP measurement</td>
+      <td>ACGCACGCACAAGCCACGGACCAAATAAAGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dCTP-DT1 template</td>
+      <td>Szabó et al., 2020</td>
+      <td>Template oligo for dCTP measurement</td>
+      <td>CCACTCACTCTTACCTCAATCCTTTGTTTGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dGTP-DT2 template</td>
+      <td>Szabó et al., 2020</td>
+      <td>Template oligo for dATP measurement</td>
+      <td>GGAGTGAGTGTGAGGTGAATGGTTTCTTTCTTTGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformaticshttps://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td>v.0.11.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Trimmomatic</td>
+      <td>Bolger et al., 2014;http://www.usadellab.org/cms/?page=trimmomatic</td>
+      <td>Trimmomatic-0.38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Bowtie2</td>
+      <td>Langmead and Salzberg, 2012;https://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td>2.5.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Samblaster</td>
+      <td>Faust and Hall, 2014;https://github.com/GregoryFaust/samblaster</td>
+      <td>0.1.26RRID:SCR_000468</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Samtools</td>
+      <td>Li et al., 2009;https://www.htslib.org/</td>
+      <td>1.20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Picard</td>
+      <td>https://github.com/broadinstitute/picard</td>
+      <td>2.23.3RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GATK</td>
+      <td>McKenna et al., 2010;https://gatk.broadinstitute.org/hc/en-us</td>
+      <td>4.1.8.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains, media, and growth conditions
 
 M. smegmatis mc2155 (Snapper et al., 1990) strains were grown in Lemco broth (5 g/l Lab-Lemco, 5 g/l NaCl, 10 g/l Bacto peptone, 0.05% Tween-80) or on solid Lemco plates (6.25 g/l Lab-Lemco, 6.25 g/l NaCl, 12.5 g/l Bacto peptone, 18.75 g/l Bacto agar).
 
-## Optimization of stress treatment conditions in liquid cultures and agar plates
+### Optimization of stress treatment conditions in liquid cultures and agar plates
 
 The applied concentrations of drugs were optimized using serial dilutions of the compounds. In the case of liquid cultures, we monitored growth on a logarithmic scale by measuring the number of colony-forming units (CFU) or the optical density (OD) at 600 nm (Figure 1—figure supplement 1). The PZA treatments were done in acidic broth (pH = 5.5 set using HCl). For agar plates, we determined the CFU of untreated mid-exponential phase (OD = 0.4–0.5) liquid cultures on both non-selective and drug-containing agar plates (Figure 1—figure supplement 2). We also monitored cell morphology in response to drug treatment. For further experiments, sublethal concentrations of drugs were chosen to obtain an adequate quantity of research material (DNA, RNA, dNTP) for downstream analysis while the effect of the treatment was clearly indicated by a decrease of viability and/or change in cell size and morphology. The concentrations of applied drugs and stress conditions are compiled in Table 1.
 
-## Stress treatment in liquid cultures
+### Stress treatment in liquid cultures
 
-Cells were grown in 100 ml liquid culture until an OD (600)=0.1±0.02 was reached, then the appropriate quantity of drug (Table 1) was added to half of the cultures. The other half of the same culture was used as a control. We conducted the treatments for 8 hr. The cultures were then centrifuged (20 min, 3220 g, 4 °C) and the resulting pellets were used for downstream analysis. The total CFUs were determined for each culture. The generation time after the treatments was calculated using the formula:Td=t/log2(Nt/N0),
+Cells were grown in 100 ml liquid culture until an OD (600)=0.1±0.02 was reached, then the appropriate quantity of drug (Table 1) was added to half of the cultures. The other half of the same culture was used as a control. We conducted the treatments for 8 hr. The cultures were then centrifuged (20 min, 3220 g, 4 °C) and the resulting pellets were used for downstream analysis. The total CFUs were determined for each culture. The generation time after the treatments was calculated using the formula:
+
+$$
+T_{d}=t/log_{2}(N_{t}/N_{0}),
+$$
 
 where Td is the generation time, t is the time interval between measurements, and Nt and N0 are the final and initial population sizes, respectively.
 
-## Microscopic analysis of cell morphology upon treatments
+### Microscopic analysis of cell morphology upon treatments
 
 For morphological studies, 200–200 µl stress-treated and control cells were retrieved before RNA or dNTP extraction and washed with PBS containing 0.1% Triton X-100. The cells were then fixed in 4% PFA dissolved in PBS for 30 min at 37 °C. Cells were stained with 10 µg/ml DAPI for 30 min at 37 °C, then streaked onto microscopy slides covered with 0.1% low melting agarose (Sigma). Imaging was done using phase-contrast and fluorescent modes on a Leica DM IL LED (Leica) microscope. The cell size and volume were quantified using the automated recognition of the BacStalk software (https://drescherlab.org/data/bacstalk/; Hartmann et al., 2020). The cell length distribution diagram was prepared using OriginPro 2018 (OriginLab Corporation, Northampton, MA, USA.). The sample size, calculated means, and standard deviations are compiled in Figure 1—source data 1.
 
-## Mutation accumulation (MA) experiments
+### Mutation accumulation (MA) experiments
 
 Sixteen independent M. smegmatis mc2 155 MA lines were initiated from a single colony for every treatment. The ancestor cell colony was generated by streaking a new single colony from plate to plate five times before the beginning of the treatments to ensure a single common ancestor. Lemco agar medium was used for the MA line transfers. The specific stress treatment conditions are summarized in Table 1. All MA lines were incubated at 37 °C. Every 3 days, a single isolated colony from each MA line was transferred by streaking to a new plate, ensuring that each line regularly passed through a single-cell bottleneck (Kibota and Lynch, 1996). Treatments were performed for 60 days. We calculated 6.3±0.35 hr of generation time on the plate in this experimental setup. Thus, each line passed through ∼230 cell divisions. Some mock treatments were performed for 120 days to ensure a presumably sufficient number of mutational events without stress treatment. Following the MA procedure, a single colony was transferred from all strains to a new plate without stress treatment and grew for another 3 days for expansion. Frozen stocks of all lineages were prepared in 20% glycerol at −80 °C.
 
-## Assessment of drug tolerance following MA experiments
+### Assessment of drug tolerance following MA experiments
 
 The development of tolerance to the applied treatment was assessed by measuring the minimal inhibitory concentration (MIC) of both the mock-treated and stressed MA strains. Three randomly chosen strains from both the mock-treated and stress-treated groups were resuscitated on plates containing the same stress conditions as those used in the MA experiment. Liquid cultures were inoculated and diluted to an OD(600) of 0.001 in sterile, round-bottom 96-well plates (Sarstedt). The wells contained the specific drug in serial dilution for both the stressed strains and control samples. Cells were grown at 37 °C without agitation. Plates were scanned and analyzed, and MIC values were determined based on the last well in which cell growth was observed.
 
-## DNA extraction
+### DNA extraction
 
 A single colony was inoculated into 10 ml liquid culture from all lineages, was grown until OD600 = 0.8–1.0, and harvested. For genomic DNA purification, five or six grown cultures of individual lineages from the same treatment with identical estimated cell numbers (based on OD measurements) were pooled before isolation. For cell disruption, the cells were resuspended in 1 ml of 10 mM Tris, pH 7.5, and 0.1 mm glass beads were added to a final volume of 1.5 ml. The cells were disrupted using a cell disruptor (Scientific Industries SI-DD38 Digital Disruptor Genie Cell Disruptor) in a cold room (at 4 °C). After centrifugation for 10 min at 3220 g, and at room temperature, DNA was extracted from the supernatant by phenol:chloroform:IAA (25:24:1) extraction followed by isopropanol precipitation. The quality and quantity of the extracted DNA was evaluated using UV photometry in a Nanodrop-2000 instrument and by agarose gel electrophoresis.
 
-## DNA library preparation and whole genome sequencing
+### DNA library preparation and whole genome sequencing
 
 The DNA library preparation and whole genome sequencing (WGS) was done at Novogene Ltd., Beijing, China. Sequencing was executed on Illumina 1.9 instruments with 600-basepair (bp) fragments as 2×150  bp paired-end sequencing. An average read depth of 267 was achieved across all samples.
 
-## WGS analysis and mutation identification
+### WGS analysis and mutation identification
 
 Three parallel pooled samples were sequenced for every treatment, each contained five or six individually treated MA lineages that add up to a subtotal of 15–18 individual lineages. FastQC was used to analyse the quality of the raw reads. In case if adapters and low-quality bases (Phred score <20) were present in the samples, bases were trimmed with Trimmomatic (Bolger et al., 2014). We mapped our paired-end reads to M. smegmatis mc2 155 reference genome (GenBank accession number: NC_008596.1) by Bowtie2 (Langmead and Salzberg, 2012). PCR duplicates were removed with the use of Samblaster (Faust and Hall, 2014). We converted SAM files to BAM files, and sorted them with SAM tools (Li et al., 2009). Read groups were replaced by the Picard tool. Single nucleotide variations (SNVs), insertions, and deletions were called from each alignment file using the HaplotypeCaller function of the Genome Analysis Toolkit (McKenna et al., 2010). We analyzed the frequency of occurrence (% of all reads of a pooled sample) of each SNV, insertions, and deletions (hits) with our in-house Python scripts and compared it to the frequency of occurrence of the same hits in every other lineage. We considered mutations as spontaneously generated mutations only in case if no other lineages carried that variant in any depth and if hits reached at least 6% frequency of the reads at the corresponding position (theoretically, a spontaneously generated mutation in a pooled sample emerges with 20% or 16.7% frequency when five or six lineages are pooled, respectively, however, we allowed some variety when choosing 6% as a lower limit and 39.9% as an upper limit). Sequencing data are available at European Nucleotide Archive (ENA) with PRJEB71590 project number. Please note that we incorporated some of our additional sequencing data into the analysis, curated under the umbrella project at the ENA along with the present dataset.
 
-## RNA isolation and cDNA synthesis
+### RNA isolation and cDNA synthesis
 
 For RNA extraction, cell pellets were resuspended in 2 ml RNA protect bacteria reagent (Qiagen; cat. no.:76506), incubated for 5 min at room temperature, and centrifuged for 20 min at 3220 g and at 4 °C before storage at –80 °C. Total RNA extraction was performed with the Qiagen RNeasy Mini kit (cat. no.: 74524). To disrupt cells, 5×1 min of vortexing with glass beads in the manufacturer’s lysis buffer was performed followed by 1 min poses on ice. DNase digestion was performed on a column with Qiagen DNase I (cat. no.: 79254), for 90 min at room temperature. For quantitative and qualitative RNA analysis, spectrometry by Nanodrop 2000 and non-denaturing 1% agarose gel electrophoresis (50 min/100 V) were performed, respectively. cDNA synthesis was performed using the Applied Biosystems High-Capacity cDNA Reverse Transcription Kit with RNase Inhibitor (cat. no.: 4374967). 95–105 ng total RNA was used for each reaction.
 
-## Choosing the reference genes for the study
+### Choosing the reference genes for the study
 
 We tested SigA (MSMEG_2758), Ffh (MSMEG_2430), and ProC (MSMEG_0943) as possible reference gene candidates. SigA is a widely used reference gene in prokaryotes (Hirmondo et al., 2017; Madikonda et al., 2020; Milano et al., 2004) Ffh and ProC genes are shown to be stably expressed in other pathogenes (Gomes et al., 2018). Using GeNorm (Fu et al., 2020; Sundaram et al., 2019) analysis, SigA and Ffh proved to be stably expressed in our experimental system (Figure 3—figure supplement 1).
 
-## Gene expression quantification
+### Gene expression quantification
 
 qPCR measurements were performed on a Bio-Rad CFX96 Touch Real-Time PCR Detection System. Primers were designed using IDT DNA oligo customizer (https://eu.idtdna.com/), and were produced by Sigma Aldrich (for sequences, see Supplementary file 1). The qPCR reaction mixtures contained 7–7 nmoles of forward and reverse primers, 0.25 µl of the cDNA, Bioline Mytaq PCR premix (cat. no.: 25046), and VWR EvaGreen (cat. no.: #31000) in a total reaction volume of 10 µl. The thermal profile was as follows: 95 °C/10 min, 50 x (95 °C/10 s; 62 °C/10 s; 72 °C/10 s). Melting curves were registered between 55 °C and 95 °C with an increment of 0.5 °C (Figure 3—figure supplement 2). The applied primers and their measured efficiencies are compiled in Supplementary file 1. The qPCR data were analyzed using the Bio-Rad CFX Maestro software and numerically shown in Figure 3—source data 1. Non-reverse transcribed controls and no-template controls were used to account for any irrelevant DNA contamination. three technical, and three biological replicates were used for all measurements.
 
-## dNTP extraction
+### dNTP extraction
 
 dNTP extraction and measurement were performed according to (Szabó et al., 2020). Briefly, the cell pellets were extracted in precooled 0.5 ml 60% methanol overnight at −20 °C. After 5 min of boiling at 95 °C, the cell debris was removed by centrifugation (20 min, 13,400 g, 4 °C). The methanolic supernatant containing the soluble dNTP fraction was vacuum-dried (Eppendorf) at 45 °C. Extracted dNTPs were dissolved in 50 μl nuclease-free water and stored at –20 °C until use.
 
-## Determination of the cellular dNTP pool size
+### Determination of the cellular dNTP pool size
 
 Determination of the dNTP pool size in each extract was as follows: 10 pmol template oligo (Sigma), 10 pmol probe (IDT), and 10 pmol NDP1 primer (Sigma) (see sequences in key resources table and Table 3) was present per 25 μl reaction. The concentration of each non-specific dNTP was kept at 100 μM. VWR TEMPase Hot Start DNA Polymerase (VWR) was used at 0.9 unit/reaction in the presence of 2.5 mM MgCl2. To record calibration curves, the reaction was supplied with 0–12 pmol specific dNTP. Fluorescence was recorded at every 13 s in a Bio-Rad CFX96 Touch Real-Time PCR Detection System or in a QuantStudio 1 qPCR instrument. The thermal profile was as follows: 95 °C 15 min, (60 °C 13 s)×260 cycle for dATP measurement, and 95 °C 15 min, (55 °C 13 s)×260 cycle for dTTP, dCTP, and dGTP measurements. Results were analyzed using the nucleoTIDY software (http://nucleotidy.enzim.ttk.mta.hu/; Szabó et al., 2020;). Results were given in molar concentrations for better comparison. To this end, cell volumes were calculated using the BacStalk software based on microscopic images for every treatment. Besides the graphical presentation of the result, numerical data can be found in Figure 4—source data 1.
 
-## Tolerance assay
+**Table 3.**
+ Oligonucleotides used for the dNTP measurements.
 
-We used a modified version of fluctuation assays (Krašovec et al., 2019) for the estimation of the rate of emergence of tolerant cells upon preincubation with a sublethal dose of CIP (0.3 μg/ml). An initial 100 ml culture was grown to OD =0.4–0.5 (three biological replicates), was centrifuged for 30 min at 800 g and at 4 °C, then resuspended in 5 ml Lemco. 100 μL from this stock solution was streaked and cultured on a normal Bacto Agar plate, and Bacto Agar containing 0.3 μg/ml CIP. Parallel plates were incubated for 4, 24, 48, 72, and 96 hr at 37 °C. Colonies were washed off the plate with 6 ml Lemco broth by incubation for 30 min on a rocking shaker. Then CFU was determined on Bacto agar plates containing 0.5 μg/ml CIP, and non-selective Bacto agar plates. Tolerance rates were calculated using the following formula:tolerancet=CFUres.t-CFUres.0CFUtotalt-CFUtotal0tlog2CFUtotal;tCFUtotal;01generationtimeh
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence (5'→3')</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NDP-1 primer</td>
+      <td>CCGCCTCCACCGCC</td>
+    </tr>
+    <tr>
+      <td>FAM-dTTP probe</td>
+      <td>6-FAM/AGGACCGAG/ZEN/GCAAGAGCGAGCGA/IBFQ</td>
+    </tr>
+    <tr>
+      <td>FAM-dATP probe</td>
+      <td>6-FAM/TGGTCCGTG/ZEN/GCTTGTGCGTGCGT/IBFQ</td>
+    </tr>
+    <tr>
+      <td>FAM-dGTP probe</td>
+      <td>6-FAM/ACCATTCAC/ZEN/CTCACACTCACTCC/IBFQ</td>
+    </tr>
+    <tr>
+      <td>FAM-dCTP probe</td>
+      <td>6-FAM/AGGATTGAG/ZEN/GTAAGAGTGAGTGG/IBFQ</td>
+    </tr>
+    <tr>
+      <td>dTTP-DT1 template</td>
+      <td>TCGCTCGCTCTTGCCTCGGTCCTTTATTTGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>dATP-DT1 template</td>
+      <td>ACGCACGCACAAGCCACGGACCAAATAAAGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>dCTP-DT1 template</td>
+      <td>CCACTCACTCTTACCTCAATCCTTTGTTTGGCGGTGGAGGCGG</td>
+    </tr>
+    <tr>
+      <td>dGTP-DT2 template</td>
+      <td>GGAGTGAGTGTGAGGTGAATGGTTTCTTTCTTTGGCGGTGGAGGCGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tolerance assay
+
+We used a modified version of fluctuation assays (Krašovec et al., 2019) for the estimation of the rate of emergence of tolerant cells upon preincubation with a sublethal dose of CIP (0.3 μg/ml). An initial 100 ml culture was grown to OD =0.4–0.5 (three biological replicates), was centrifuged for 30 min at 800 g and at 4 °C, then resuspended in 5 ml Lemco. 100 μL from this stock solution was streaked and cultured on a normal Bacto Agar plate, and Bacto Agar containing 0.3 μg/ml CIP. Parallel plates were incubated for 4, 24, 48, 72, and 96 hr at 37 °C. Colonies were washed off the plate with 6 ml Lemco broth by incubation for 30 min on a rocking shaker. Then CFU was determined on Bacto agar plates containing 0.5 μg/ml CIP, and non-selective Bacto agar plates. Tolerance rates were calculated using the following formula:
+
+$$
+tolerance_{t}=\frac{\frac{CFU_{res.}^{t}-CFU_{res.}^{0}}{CFU_{total}^{t}-CFU_{total}^{0}}}{\frac{t}{log_{2}\frac{CFU_{total;t}}{CFU_{total;0}}}}\frac{1}{generationtimeh}
+$$
 
 The tolerance assay was repeated on 15 parallel plates for each biological replicate to obtain enough cells for genomic DNA extraction for WGS. Plates containing 0.3 μg/ml CIP were incubated for 96 hr at 37 °C. Colonies were washed off the plates with 6 ml of Lemco broth. Genomic DNA was isolated and sent to WGS. CFU was also determined on Bacto Agar plates containing 0.5 μg/ml CIP and non-selective Bacto Agar plates (Figure 5—figure supplement 1).
 
-## Statistics
+### Statistics
 
 We used an initial F-test to test the equality of variances of the tested groups. If the F-test hypothesis was accepted (p<0.05), we used the two-way homoscedastic t-probe; if rejected, we used the two-way Welch’s t-probe to assess differences at a significance level p<0.05 if not stated otherwise. F- and t-statistics were counted for the ΔCt values (Yuan et al., 2006) of the qPCR results and for the concentrations normalized to the cell volume in the case of the dNTP measurements. For the statistical analysis of the mutation rates, we used the t-test on the natural logarithm of the obtained mutation rate values.

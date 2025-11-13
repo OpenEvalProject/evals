@@ -21,7 +21,7 @@
 
 ## Abstract
 
-During meiosis, homologous chromosomes pair and recombine, enabling balanced segregation and generating genetic diversity. In many vertebrates, double-strand breaks (DSBs) initiate recombination within hotspots where PRDM9 binds, and deposits H3K4me3 and H3K36me3. However, no protein(s) recognising this unique combination of histone marks have been identified. We identified Zcwpw1 , containing H3K4me3 and H3K36me3 recognition domains, as having highly correlated expression with Prdm9 . Here, we show that ZCWPW1 has co-evolved with PRDM9 and, in human cells, is strongly and specifically recruited to PRDM9 binding sites, with higher affinity than sites possessing H3K4me3 alone. Surprisingly, ZCWPW1 also recognises CpG dinucleotides. Male Zcwpw1 knockout mice show completely normal DSB positioning, but persistent DMC1 foci, severe DSB repair and synapsis defects, and downstream sterility. Our findings suggest ZCWPW1 recognition of PRDM9-bound sites at DSB hotspots is critical for synapsis, and hence fertility.
+During meiosis, homologous chromosomes pair and recombine, enabling balanced segregation and generating genetic diversity. In many vertebrates, double-strand breaks (DSBs) initiate recombination within hotspots where PRDM9 binds, and deposits H3K4me3 and H3K36me3. However, no protein(s) recognising this unique combination of histone marks have been identified. We identified Zcwpw1, containing H3K4me3 and H3K36me3 recognition domains, as having highly correlated expression with Prdm9. Here, we show that ZCWPW1 has co-evolved with PRDM9 and, in human cells, is strongly and specifically recruited to PRDM9 binding sites, with higher affinity than sites possessing H3K4me3 alone. Surprisingly, ZCWPW1 also recognises CpG dinucleotides. Male Zcwpw1 knockout mice show completely normal DSB positioning, but persistent DMC1 foci, severe DSB repair and synapsis defects, and downstream sterility. Our findings suggest ZCWPW1 recognition of PRDM9-bound sites at DSB hotspots is critical for synapsis, and hence fertility.
 
 ## Introduction
 
@@ -41,9 +41,17 @@ In humans, ZCWPW1 is expressed in testis (Carithers et al., 2015; Uhlén et al.,
 
 ## Results
 
-## ZCWPW1 co-evolves with PRDM9
+### ZCWPW1 co-evolves with PRDM9
 
 Based on publicly available databases, we identified likely ZCWPW1 orthologues in 167 species (Materials and methods, Figure 1—source data 1), aligned each to the human reference ZCWPW1 protein sequence, and compared against a previous analysis of PRDM9 (Baker et al., 2017). The regions containing the CW and PWWP domains are well-conserved (Figure 1A,B), while other parts of the protein appear absent in some species. Additionally, there is a region of moderate conservation downstream of the PWWP domain, not overlapping any known domain. Further, an SYCP1 (SCP1) domain is annotated in the mouse protein only which, although only suggestive, is notable given that SYCP1 physically connects homologous chromosomes in meiosis. The C-terminal end of ZCWPW1 may include a methyl-CpG-binding domain (Materials and methods, Lobley et al., 2009), at least in some species.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig1-v2.jpg)
+
+**Figure 1.:** (A) Protein domains in the human and mouse proteins (source: UniProt). Amino acid start and end positions of each domain are shown above and below the rectangles, respectively. Prediction of SCP-1 (SYCP1) domain from Marchler-Bauer and Bryant, 2004 and of MBDs (methyl-CpG binding domain) from Lobley et al., 2009 (Materials and methods). (B) Conservation of human amino acids, normalised Jensen-Shanon divergence normalised to mean of 0 and standard deviation of 1 is shown on the y-axis (a measure of sequence conservation, see Capra and Singh, 2007 and Johansson and Toh, 2010) computed from using multiple alignment of 167 orthologues (Materials and methods). (C) All species we identified as possessing ZCWPW1 copies were phylogenetically grouped into clades as previously (Baker et al., 2017) (x-axis) and each clade divided (stacked bars) according to whether ZCWPW1-possessing species within it also possess PRDM9 (‘Species’, red) or instead their closest PRDM9-possessing relative is respectively in the same genus/family, order, clade or order/phylum, with colours as given in the ‘Closest PRDM9’ legend. (D) As (C), but now showing the closest relative possessing ZCWPW1 (‘Closest ZCWPW1’ legend) for species possessing complete, partial or no identified PRDM9 copies. As in (C), the x-axis groups species into clades, now further divided based on data from Baker et al., 2017 into subclades according to the domains of PRDM9 lost or mutated across that subclade in all observed copies, reflecting multiple partial losses of particular PRDM9 domains, or complete loss of all PRDM9 copies (Main text). The x-axis labels are ordered and coloured according to the PRDM9 domains present (‘PRDM9 domains’ legend, where ‘SET’ refers to PRDM9’s PR/SET domain and the KRAB and SSXRD domains are grouped as ‘non-SET’, and ‘partial’ losses are seen in some but not all PRDM9 copies in that species). Further details are presented in Materials and methods, and the raw data in Figure 1—source datas 1 and 2.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Data Source: GTEx Analysis Release V7 (dbGaP Accession phs000424.v7.p2). (A) Total expression by human tissue type. (B) Isoforms of ZCWPW1 expressed in human testis.
 
 Incomplete currently available DNA and protein sequences mean we are almost certain to miss some species where either ZCWPW1 and/or PRDM9 (Baker et al., 2017) are present. Despite this, we see extremely high overlap between PRDM9 and ZCWPW1 occurrence (Figure 1C,D). ZCWPW1 appears to mainly occur in species possessing PRDM9 (and even more clearly in groups of species possessing PRDM9). Furthermore, with the exception of a small number of amphibians, ZCWPW1 orthologues are only identified in clades previously identified to possess PRDM9 (Baker et al., 2017), and the majority of species (78% of 167) possessing ZCWPW1 also possess a close relative (species or family) where PRDM9 is identified (Figure 1C).
 
@@ -53,33 +61,133 @@ Previously (Baker et al., 2017), three independent groups of species have been i
 
 In conclusion, among vertebrates at least, it appears the set of species with ZCWPW1 is extremely similar to those species possessing PRDM9 with an intact PR/SET domain, with considerable evidence of co-evolution of gain/loss events for each protein. In some species with apparently intact PR/SET domains (for example Tasmanian Devil, Mexican Tetra, Platypus), it is hypothesised that PRDM9 does not position DSBs due to loss of other N-terminal domains and/or the PRDM9 zinc-finger array (Baker et al., 2017). These example species still possess identified ZCWPW1 orthologues (Figure 1—source data 1), so it does not seem that PRDM9’s ability to position DSBs is essential for retention of ZCWPW1. Instead, our results are consistent with ZCWPW1’s main function involving recognition of the histone modifications catalysed by PRDM9-SET during early meiosis, in agreement with the functional evidence from ZCWPW1’s CW and PWWP domains.
 
-## Localisation of ZCWPW1 in meiosis and analysis of asynapsis in infertile Zcwpw1−/− male mice
+### Localisation of ZCWPW1 in meiosis and analysis of asynapsis in infertile Zcwpw1−/− male mice
 
 We previously detected Zcwpw1 transcript expression in pre-leptotene to leptotene spermatocytes of adult WT mice (Jung et al., 2019). To investigate the role of ZCWPW1 during meiosis in vivo, we produced and validated the specificity of an antibody against the full-length recombinant mouse protein (Figure 2—figure supplement 1), and studied the phenotype of a newly generated knockout (KO) mouse line for Zcwpw1, with a particular focus on fertility and meiotic recombination.
 
 In testes from WT mice, we observe a dynamic localisation of ZCWPW1 protein (Figure 2), similar but non-identical to that reported in a recent study (Li et al., 2019a). ZCWPW1 shows a strong, punctate nuclear staining excluding the pericentromeric regions (clustered into chromocenters brightly stained with DAPI) in zygotene and early pachytene cells. In mid-pachytene cells, ZCWPW1 levels drop, with the protein now mainly localised in the XY body and as bright foci at the ends of the synaptonemal complex labeled by SYCP3, not previously observed using an antibody raised against a 174 amino acid C-terminal region of the protein (Li et al., 2019a). By diplotene, little expression is visible. Using fluorescent in-situ hybridisation (FISH) to label centromeric and telomeric (distal and proximal to centromeres) regions of chromosomes, we established that these discrete foci of ZCWPW1 are consistently positioned at the ends of the synaptonemal complex, with the majority at both ends simultaneously, lying close to telomeres and centromeres themselves (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig2-v2.jpg)
+
+**Figure 2.:** Nuclear spreads from 9 to 10 weeks old WT mice were immunostained with antibodies against ZCWPW1 (red) and the synaptonemal complex protein SYCP3 (green) which labels the chromosome axis, and counterstained with DAPI (blue) to visualise nuclei. Developmental stages are indicated above and below. Yellow arrows point to ZCWPW1 foci clearly visible at both ends of the synaptonemal complex in mid-late pachytene. Additional evidence is provided in Figure 2—figure supplement 2. The dashed circle shows staining in the XY body. Images for the individual channels are provided in Figure 3—figure supplement 1. These images are representative of the results obtained in three mice. Scale bar: 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression and purification of full-length recombinant mouse ZCWPW1 (mZCWPW1) in E. Coli. Left panel: SDS-PAGE analysis and Coomassie blue staining of bacterial lysates before (pre-IPTG) and after (post-IPTG) induction of protein expression with IPTG, the soluble protein fraction (after cell sonication) used for purification, the flow through (incompletely depleted from the target protein) after incubating the soluble fraction with Talon resin beads to bind His-tagged mZCWPW1, the wash containing 5mM imidazole, the protein eluate from the beads using 300mM imidazole, and the purified recombinant protein after further purification from low molecular weight (MW) contaminants by size exclusion. Right panel: Western blot detection of purified His-tagged mZCWPW1 using an anti-His and a mouse polyclonal antibody raised against the human protein (previously tested positively against mouse ZCWPW1 overexpressed in HEK293T cells). *Indicates degradation fragments (likely C-terminal). The purified protein was used to immunise rabbits and produce an antiserum against mZCWPW1. (B-E) Validation of the rabbit ZCWPW1 antiserum by immunofluorescence staining (IF), immunoprecipitation (IP) and western blotting (WB) in B6 testis (B,C) and transfected HEK293T cells (D,E). (B) Testis nuclear spreads from 10 weeks old B6 mice were immunostained with the ZCWPW1 antiserum or the pre-immune serum (red), and chromosome axes were labeled with SYCP3 (green). Representative mid-zygotene and early pachytene cells are shown. No signal is detected by the pre-immune serum. Scale bar: 10μm. (C) IP-WB detection of mZCWPW1 from 10 weeks old B6 mouse testis. Left panel: Lane 1, 100 µg protein extract; Lanes 2–3, IP from 2.6 mg protein extract using ZCWPW1 antiserum (lane 2) or the pre-immune serum (lane 3). The ZCWPW1 antibody detects a unique protein band within the expected MW range (predicted at 70.5 KDa) both by direct WB (lane 1) and IP-WB (lane 2). No signal is detected by the pre-immune serum (lane 3). Right panel: the testis protein extract was resolved on a higher (4–20%) SDS-PAGE gel; no detection of ZCWPW2 is observed by WB at the 38KDa MW range predicted for mouse ZCWPW2, only a single band is present within the expected MW range for ZCWPW1. The images in (B–C) are representative of the results obtained in two mice. (D) Specific IP-WB and WB detection of FLAG-tagged mZCWPW1 over ZCWPW2 from transfected HEK293T cells. Lanes 1,3: protein extracts from untransfected cells; Lanes 2,4: protein extracts from cells transfected with mZCWPW1-FLAG (lane 2) or mZCWPW2-FLAG (lane 4). Lanes 1–2, 5 µg extracts; lanes 3–4: 50 µg extracts. The ZCWPW1 antiserum detects the same protein band as the anti-FLAG antibody in the expected MW range (74 KDa) both by direct WB and by IP-WB, but does not show any reactivity against mZCWPW2-FLAG. The preimmune serum does not detect the mZCWPW1-FLAG protein band. Detection of beta-actin serves as a loading control. The asterisk indicates degradation fragments typically observed, as in (A). (E) Specific IF detection of FLAG-tagged mZCWPW1 over ZCWPW2 from transfected HEK293T cells. Cells were co-immunostained with ZCWPW1 antiserum or the pre-immune serum (green), and a FLAG antibody (red). The ZCWPW1 antiserum detects mZCWPW1-FLAG (precisely overlapping the signal detected by the FLAG antibody results in yellow fluorescence in the merged image), but not mZCWPW2-FLAG protein. No signal is detected with the pre-immune serum.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Testis chromosome spreads from 10-week-old WT mice were immunostained for SYCP3 and ZCWPW1, and hybridised by FISH with distal telomeric (Tel) and proximal centromeric (Cen) probes. To aid the visualisation of each signal, the bottom right merged image was decomposed into multiple combinations of two to three individual channels, as indicated. Note that the ZCWPW1 foci do not exactly co-localize with the FISH signals, and generally lie more internally (subtelomerically and subcentromerically) on the chromosome axis. These images are representative of the results obtained for three mice. Scale bar: 10 μm. (B) The localisation of ZCWPW1 foci to either Tel or Cen end, or both ends, of the synaptonemal complex was quantified in mid-Pachytene to late-Diplotene cells. Chromosomes that did not show any ZCWPW1 foci were recorded as ‘not labeled’. Error bars represent 95% confidence intervals using the Wilson method. n = 3–25 cells of each stage from one mouse. Raw data in Figure 2—source data 1.
+
 We next studied mice from a constitutive Zcwpw1 KO line (Materials and methods), carrying a ~ 1.5 kb frameshift deletion encompassing exons 5 to 7 upstream of the CW and PWWP domains. This creates a premature stop codon that would produce a predicted heavily truncated 492bp (vs 1893bp for WT) transcript lacking either of these domains (Figure 3A), and a candidate for nonsense-mediated mRNA decay (Kurosaki et al., 2019). Indeed, we observed a complete lack of detectable ZCWPW1 protein expression in testis protein extracts (Figure 3—figure supplement 1A) and chromosome spreads from Zcwpw1−/− mice, in zygotene cells (Figure 3B) and all other meiotic stages of prophase I where expression is detected in WT mice (Figure 3—figure supplement 1B). Confirming recent findings in a different Zcwpw1−/− mouse (Li et al., 2019a), we observed no overt fertility phenotype in either sex in the heterozygous Zcwpw1+/− mice (data not shown). However, Zcwpw1−/− male mice were sterile with complete azoospermia and reduced testis size and weight (Figure 3C,D, Figure 3—source data 1), while female mice retained fertility until around 7–8 months of age (Figure 3—source data 2), and otherwise both sexes develop normally. As in Li et al., 2019a, in male mice we observe no meiotic progression beyond (pseudo)pachytene with widespread asynapsed chromosomes marked by γ-H2AX and HORMAD2, failure to form the sex body (Figure 3B, Figure 3—figure supplement 2A), a complete absence of MLH1 foci marking recombination crossover sites (Figure 3—figure supplement 2B), and persistent DMC1 foci marking unrepaired DSBs (Figure 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the Zcwpw1 knockout (KO) mouse line. E: Exon. gRNA: guideRNA. Sanger sequencing DNA chromatograms of wild-type (WT) and KO mice encompassing the deletion are shown. The intron-exon organisation is not to scale. (B) Immunofluorescence staining of testis nuclear spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice for ZCWPW1 or HORMAD2 (red) which marks asynapsed chromosomes, and the synaptonemal complex protein SYCP3 (green) which labels the chromosome axis. Cells were counterstained with DAPI (blue) to visualise nuclei (top images). These images are representative of the data obtained for three mice per genotype. Scale bar: 10 μm. (C) Representative testes from 9- to 10-week-old WT (+/+), Het (+/−) and Hom (−/−) Zcwpw1 KO mice are shown. (D) Paired testes weight was normalised to lean body weight. Each datapoint represents one mouse. The p-value is from Welch’s two sided, two sample t-test. Raw data in Figure 3—source data 1. (E) Synapsis quantification in testis chromosome spreads immunostained with HORMAD2, as in (B). The percentage of mid-Pachytene (WT) or pseudo-Pachytene (Zcwpw1−/− and Prdm9−/−) cells with all autosomes fully synapsed is plotted by genotype; each datapoint represents one mouse, each with n≥ 49 cells analysed. Vertical lines are 95% Wilson binomial confidence intervals. Raw data in Figure 3—figure supplement 2—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Testis protein extracts from adult (10–12 weeks old) B6 wild-type (WT), Zcwpw1−/− and Prdm9−/− were immunoprecipitated with an anti-ZCWPW1 antibody (2.7mg/IP), followed by western blot detection with the same antibody. Detection of beta-actin from protein extracts (100µg) shows equal input for IP. (B) Testis chromosome spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice were immunostained with antibodies against the synaptonemal complex protein SYCP3, and ZCWPW1, and counterstained with DAPI to visualise nuclei. Developmental stages are indicated at the top. The top row of panels shows merged signals, and the bottom rows individual signals. For ease of comparison, the boundaries of the mid-Leptotene cell in the Zcwpw1+/+ sample are marked by a rectangle. Red arrows point to ZCWPW1 foci at the ends of the synaptonemal complex (white arrows in the single-channel image). The yellow arrow points to the XY body. These images are representative of the results obtained for three mice per genotype. Scale bar: 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Testis chromosome spreads from 9- to 12-week-old WT, Zcwpw1−/− and Prdm9−/− mice were immunostained with antibodies against SYCP3 (A–B), γ-H2AX (phosphorylated form) and HORMAD2 (A), or MLH1 and DMC1 (B), and counterstained with DAPI (A–B). WT Pachytene cells show full synapsis of all autosomes, an XY body strongly labeled by γ-H2AX and at least one (obligate) crossover site per chromosome labeled by MLH1. In contrast, many chromosomes are asynapsed and the XY body is absent in pseudopachytene cells from Zcwpw1−/− and Prdm9−/− mice; in the Zcwpw1−/− mutant, no MLH1 foci are observed either, and many DMC1 foci persist on asynapsed chromosomes. In the Prdm9−/− mutant, mispairing of homologues is evident by the formation of branched structures referred to as ‘tangled’ chromosomes in the text and Figure 3—figure supplement 2—source data 1. These images are representative of the results obtained for two (Prdm9−/−) to three mice (WT and Zcwpw1−/−) per genotype. Scale bar: 10 μm.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig4-v2.jpg)
+
+**Figure 4.:** (A) Testis chromosome spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice were immunostained for DMC1 and SYCP3. Late (pseudo)-Pachytene cells are shown. These images are representative of the data obtained for three mice per genotype. Scale bar: 10 μm. (B) The number of DMC1 foci in cells from the indicated stages of prophase I were counted; see Figure 4—source data 1 for number of cells per stage per mouse. p-values are from Welch’s two sided, two sample t-test. L: Leptotene, Z: Zygotene, P: Pachytene. n = 3 mice for Zcwpw1−/− and wild-type, n = 2 for Prdm9−/−. Raw data in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Testis chromosome spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice were immunostained with antibodies against the synaptonemal complex protein SYCP3 and the recombinase RAD51, and counterstained with DAPI to visualise nuclei. Developmental stages are indicated at the top. These images are representative of the results obtained for three mice per genotype. Scale bar: 10 μm. (B) The number of RAD51 foci in cells from the indicated stages of prophase I were counted; see Figure 4—source data 1 for the number of cells per stage per mouse. p-values are from Welch’s two sided, two sample t-test. L: Leptotene, Z: Zygotene, P: Pachytene. n = 2 mice per genotype (Zcwpw1−/− and WT), n = 1 for Prdm9−/− (Raw data in Figure 4—source data 1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Testis chromosome spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice were immunostained with antibodies against SYCP3 and RPA2, and counterstained with DAPI to visualise nuclei. Developmental stages are indicated on the side. These images are representative of the results obtained for three mice per genotype. Scale bar: 10 μm. (B) The number of RPA2 foci in cells from the indicated stages of prophase I were counted; see Figure 4—source data 1 for the number of cells per stage per mouse. p-values are from Welch’s two sided, two sample t-test. Z: Zygotene, P: Pachytene. n = 3 mice per genotype (Raw data in Figure 4—source data 1).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Testis chromosome spreads from 9- to 10-week-old Zcwpw1+/+ and Zcwpw1−/− mice were immunostained for DMC1, HORMAD2, and SYCP3. Representative images of two mutant pseudo-pachytene cells show accumulation of DMC1 foci on HORMAD2-positive asynapsed chromosomes. In contrast wild-type pachytene cells only show residual DMC1 foci on partially synapsed XY sex chromosomes. Note that in mutant cells, even synapsed chromosomes abnormally retain some level of DMC1. These images are representative of the results obtained for three mice per genotype. Scale bar: 10 μm.
 
 Each of these properties resembles observations in the Prdm9−/− mutant (Hayashi et al., 2005), and so we compared to this mutant. In our Zcwpw1−/− male mice, >98% of pachytene cells failed to properly synapse at least one pair of chromosomes (Figure 3B,E), similar to Prdm9−/− males. However, the nature of the synaptic defects observed differed (Figure 3—figure supplement 2—source data 1). In the Prdm9−/− mutant, 63.2% of the pseudo-pachytene cells showed mispairing of non-homologous chromosomes in a typical branched structure (referred to as ‘tangled’, Figure 3—figure supplement 2—source data 1). In contrast, we only observed 24.8% of Zcwpw1−/− pseudo-pachytene cells with this type of error, while the majority (74.5%) of cells contained multiple bundles of HORMAD2-positive asynapsed chromosomes, which resemble the XY body and may merge with the sex chromosomes (thus referred to as ‘multibodies’, Figure 3—figure supplement 2). These results imply that the Prdm9−/− mutant often mispairs chromosomes, while Zcwpw1−/− spermatocytes mainly fail to pair a subset of chromosomes at all. The expression levels and staining pattern of ZCWPW1 were not visibly altered in testis nuclear spreads (data not shown) and protein extracts (Figure 3—figure supplement 1A) from Prdm9−/− mice. However, since the Zcwpw1 KO and Prdm9 KO lines are on a different genetic background (C57/BL6N and B6×129, respectively), we cannot rule out the possibility that this explains partly or fully the differences in meiotic defects observed between the two mutants.
 
 Comparing levels of DMC1 foci as a proxy for DSB repair, or a potential cause for the asynapsis in Zcwpw1−/− males, in both Zcwpw1−/− and Prdm9−/− mice foci count was significantly elevated from zygotene onwards, indicating delayed repair of DSBs (Figure 4). However, we observed a wider spread for Zcwpw1−/− males. A similar increase was observed at pachytene stage in the levels of RAD51 (Figure 4—figure supplement 1), a strand exchange protein which functions in concert with DMC1, with the large majority of RAD51 and DMC1 foci co-localising (Brown et al., 2015; Tarsounas et al., 1999). Like DMC1, RPA2 levels were also significantly elevated in the Zcwpw1−/− mouse from zygotene onwards (Figure 4—figure supplement 2). In Zcwpw1−/− males, like in the Prdm9−/− mutant, DSBs form and recruit RPA2, RAD51 and DMC1 in similar numbers (Huang et al., 2020; Li et al., 2019a; Mahgoub et al., 2020), but fail to repair efficiently, accompanied by asynapsis and meiotic arrest at pseudo-pachytene. Indeed, we observe late unrepaired DMC1 foci mainly on HORMAD2-positive asynapsed chromosomes (Figure 4—figure supplement 3).
 
-## ZCWPW1 is recruited to PRDM9-binding sites in an allele-specific manner
+### ZCWPW1 is recruited to PRDM9-binding sites in an allele-specific manner
 
 We previously studied the binding properties of human PRDM9 and established a genome-wide map in transfected human mitotic (HEK293T) cells by ChIP-seq (Altemose et al., 2017), observing binding to the majority of human meiotic recombination hotspots. Based on the presence of H3K4me3 and H3K36me3 recognition domains in ZCWPW1, we hypothesised that it would be recruited to PRDM9-bound genomic sites, where these marks are deposited upon binding in HEK293T cells (Altemose et al., 2017).
 
 To test this, we co-transfected HEK293T cells with full-length human HA-tagged ZCWPW1 and either no other protein, or full-length PRDM9 alleles carrying the human or chimpanzee zinc finger array, as studied previously (Altemose et al., 2017), and then performed ChIP-seq against the ZCWPW1 tag (the endogenous levels of these proteins in HEK293T cells, and of the closely related family member ZCWPW2, are extremely low so unlikely to confound the analysis - see Figure 5—source data 1). Confirming the recruitment hypothesis, in the presence of human PRDM9 and compared to cells lacking human PRDM9, ZCWPW1 shows a strong enrichment at human PRDM9-binding sites with higher enrichment at sites with higher PRDM9 enrichment (Figure 5A,B, Pearson’s correlation = 0.43 - Figure 5—figure supplement 1). Notably, even without PRDM9 we observed many ZCWPW1 binding peaks across the genome, some coinciding with PRDM9-binding sites (Figure 5C and Figure 5—figure supplement 2). However, upon co-transfection with PRDM9, 92% of the strongest 10,000 ZCWPW1 peaks are at PRDM9-bound sites (98% of the strongest 3,000 vs 7% expected overlap with randomised peaks, and only 47% overlap for the strongest 3,000 ZCWPW1 peaks in cells without PRDM9 transfection). Hence, PRDM9 is able to strongly reprogram ZCWPW1 binding (Figure 5C, see also Figure 5—figure supplement 3), suggesting that loci with peaks in cells without PRDM9 transfection are bound more weakly. Because our transfection has <100% efficiency (Figure 5—figure supplement 4), some cells containing ZCWPW1 will not possess PRDM9, and so it is possible that an even greater fraction of ZCWPW1 is redirected to PRDM9 binding sites in cells where both proteins are present.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-v2.jpg)
+
+**Figure 5.:** (A) Enrichment of ZCWPW1 (with vs without PRDM9) at PRDM9-binding sites when co-transfected with PRDM9 with either Human or Chimp Zinc Finger (Materials and methods section ‘Enrichment Profiles’). Q = quartile. Human PRDM9 sites are centered and stranded by the motif. Y-axis is log10 scale (y-axis labels remaining in linear space). (B) Profiles and heatmaps of reads from cells co-transfected with human (h) or chimp (c) PRDM9 around the top 25% of individual human PRDM9-binding sites (rows). Heatmaps: log-fold change of target (indicated in column titles, Materials and methods) vs input, for various labelled target proteins, ordered by human PRDM9. ZCWPW1, H3K4me3 and H3K36me3 each become enriched at human PRDM9 sites, following (co-)transfection with human PRDM9. Profiles: Sum of all target coverage divided by sum of all input coverage for all regions shown in the heatmap, shown on a linear scale. w\o, without. (C) ChIP-seq data and annotation in a genome plot illustrate the behaviour of ZCWPW1 and other factors. ChIP-seq tracks show fragment coverage. Tracks where PRDM9 is present are labeled ‘w/PRDM9’, and below, corresponding tracks without PRDM9. ZCWPW1 binds to Alus, CpG islands and other CpG-rich sequences even in the absence of PRDM9. On addition of PRDM9, ZCWPW1 becomes strongly enriched at PRDM9 binding locations (center left peak within DIO1). mCpG, methylated CpG.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** ZCWPW1 binding with vs without PRDM9 was force called at sites with PRDM9 peaks (Materials and methods). Peaks were excluded if PRDM9 input coverage was ≤10 or ZCWPW1 input coverage was ≤3. Additionally, the top 10 peaks (out of 8,373) by enrichment for each of PRDM9 and ZCWPW1 were excluded to remove outliers. The red dashed line shows the fit of a linear model (log(ZCWPW1+0.1)~a + b*log(PRDM9+0.1)) and the blue line and grey error shows a Generalised Additive Model smooth. For plotting, each axis is displayed with a log10 scale (with break values shown in linear space) and 0.1 was added to all values (x and y) to avoid infinite values.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** For example dark green peaks are those which overlap with ZCWPW1 peaks when transfected alone, but not overlapping Human PRDM9 peaks, and not overlapping pre-existing H3K4me3 peaks but do overlap with Alu repeats. Pre-existing H3K4me3 refers to H3K4me3 peaks found without PRDM9 or ZCWPW1 transfection. The three plots show results for peaks in HEK293T cells with ZCWPW1 transfected alone (Left), PRDM9+ZCWPW1 co-transfection (Middle), and peaks whose ZCWPW1 occupancy increases in PRDM9+ZCWPW1 vs ZCWPW1 transfected alone (Right, Materials and methods). In cells expressing ZCWPW1 in the presence (middle plot) but not in the absence (left plot) of PRDM9, the strongest peaks are dominated by PRDM9-bound sites marked by H3K4me3 (pink), while ZCWPW1 occupancy increases occur nearly exclusively at these sites, following co-transfection with PRDM9 (right plot).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Enrichment was force called in 100bp windows across all autosomes. Data is conditioned on having input coverage of >5 and enrichment >0.01 for both axes. Hexagons are coloured if at least three data points are present. Solid lines show density contours estimated by MASS::kde2d() in R.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Cells were co-transfected with human (h) or chimp (c) PRDM9-YFP-V5 (hPRDM9-YFP-V5 or cPRDM9-YFP-V5, respectively) and ZCWPW1-HA, or mock transfected (untransfected). (A) Direct microscopic observation of transfected cells shows high and comparable levels of YFP fluorescence emitted from hPRDM9-YFP-V5 and cPRDM9-YFP-V5. (B) Immunofluorescence staining against the protein tags (HA and V5) shows high and comparable expression levels of each protein across transfected samples, and a reasonable proportion of co-expressing cells with merged overlapping signals (ranging from light green to yellow and light red depending on the expression ratio of the two proteins).
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Profiles and heatmaps of reads at locations of chimp PRDM9 (cPRDM9) binding. Heatmaps show log fold change of sample (as indicated in the title of each column, Materials and methods) vs input, for the top ¼ of cPRDM9 peaks, for various samples, ordered by cPRDM9. ZCWPW1 is found at sites of cPRDM9 peaks, when co-transfected with cPRDM9, but not at human PRDM9 (hPRDM9) peaks. w\o, without. (B) Profiles and heatmaps of reads at locations of ZCWPW1 binding co-transfected with human PRDM9 (hPRDM9). Heatmaps show log fold change of sample (as indicated in the title of each column, Materials and methods) vs input, for the top ¼ of ZCWPW1 peaks when co-transfected with PRDM9, for various samples, ordered by first column. Note that H3K4me3, H3K36me3 and hPRDM9 are found at ZCWPW1 peaks when co-transfected with hPRDM9.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig5-figsupp6-v2.jpg)
+
+**Figure 5—figure supplement 6.:** Lines with greater area under the curve (those higher up) represent greater predictive ability (models better able to classify/separate PRDM9 sites into those with DMC1 binding and those without). Black dotted lines show a baseline of random prediction. TPR: True positive rate, FPR: False positive rate. PPV: positive predictive value (proportion of predicted positives that are true positives). Estimated PRDM9-dependent ZCWPW1 enrichment (green) provides a better predictor than does PRDM9 binding strength (blue).
+
 Importantly, when co-transfecting with a modified version of PRDM9 in which the zinc finger array is replaced with that from chimp (which binds different locations in the genome [Altemose et al., 2017]), we find that the enrichment at human binding sites disappears, but instead ZCWPW1 is enriched at chimp PRDM9-binding sites (Figure 5A and Figure 5—figure supplement 5). This perturbation experiment provides strong evidence that PRDM9 causes recruitment of ZCWPW1 (as opposed to for example independent recruitment of both proteins). Notably, the strength of ZCWPW1 binding in HEK293T cells at human PRDM9-binding sites provides a better predictor of human meiotic DMC1 binding status (a proxy for DSB formation) than does human PRDM9 binding strength itself (Figure 5—figure supplement 6). We show (see below) that ZCWPW1 is not directly involved in DSB positioning, this result might therefore instead suggest that similar features to those ZCWPW1 recognises are involved in recruiting DSB formation machinery.
 
 We tested whether the recruitment of ZCWPW1 to sites bound by PRDM9 might be mediated by the dual histone modifications H3K4me3 and H3K36me3. Consistent with this idea, ZCWPW1 binding is positively associated with levels of both H3K4me3 and H3K36me3 marks (Figure 6—figure supplements 1 and 2, tested separately, not necessarily ‘dual’ marks coincident within an individual cell, although locations of these marks in meiotic cells are rarely coincident except at hotspots [Powers et al., 2016]). While we cannot rule out a direct interaction between ZCWPW1 and PRDM9, others have shown that dual modified peptides have a greater affinity to ZCWPW1 than peptides carrying the single modifications, supporting that the marks themselves are responsible for ZCWPW1’s recruitment (Mahgoub et al., 2020). We examined transcription start sites, which possess H3K4me3 at high levels, but lack H3K36me3, observing some ZCWPW1 signal at these sites, but with a uniformly lower mean ZCWPW1 enrichment compared to those with evidence of PRDM9 binding (and hence both histone marks) (Figure 6). Although it is not possible to measure H3K4me3 presence/absence in individual cells in our system, even the most weakly bound PRDM9 sites – which must therefore possess H3K4me3 in only a fraction of cells – show stronger ZCWPW1 enrichment than the strongest promoters, which are likely to have near 100% H3K4me3 marking, and possess >2 fold more H3K4me3 than even the strongest PRDM9-binding sites. We conclude that H3K4me3 alone endows only relatively weak binding, while PRDM9 is therefore able to recruit ZCWPW1 with a much greater efficiency than sites marked by H3K4me3 alone, suggesting that both histone modifications might aid efficient binding. While the increase in ZCWPW1 enrichment at sites with pre-existing H3K4me3 is consistent with both marks contributing to recruitment, we have no evidence that these weaker binding sites serve a functional role, and indeed concurrent investigations did not find strong evidence of ZCWPW1-driven transcriptional changes (Huang et al., 2020).
 
-## DSBs occur at their normal locations in Zcwpw1−/− mice but show increased DMC1 levels
+![Figure 6.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig6-v2.jpg)
+
+**Figure 6.:** For any given level of H3K4me3 (x-axis), ZCWPW1 enrichment (y-axis) is higher at PRDM9-bound regions (red) than regions with pre-existing H3K4me3 (promoters, blue). H3K4me3 and ZCWPW1 were force called in 100bp windows across all autosomes. These windows were split into two sets defined as indicated in the legend (where ‘p’ is the p-value from peak-calling required for a window to be included in the subset) with the additional constraint of requiring input fragment coverage >5 for ZCWPW1 and >15 for H3K4me3. p: p-value for non-zero level of input corrected coverage in that bin. ‘pre-existing H3K4me3’ refers to H3K4me3 that is present without transfection (of either PRDM9 or ZCWPW1), which is mainly found at promoter regions. For each subset, H3K4me3 was split into 25 bins with equal number of data points. Horizontal bars: two standard errors of the mean. Vertical dotted bars: upper and lower quartiles. Grey ribbons show two standard errors for a Generalized additive model on log(mean H3K4me3 enrichment + 0.1). Dashed black horizontal line highlights that the mean enrichment of the highest bin for promoters is similar to that of the lowest bin for PRDM9-bound sites.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Fraction of ZCWPW1 peaks (co-transfected with PRDM9 with input coverage of at least 5) that overlap either (A) H3K4me3 or (B) H3K36me3 peaks, for different bins of ZCWPW1 enrichment (100 equal sample size bins of increasing ZCWPW1 enrichment). Error bars show ±2 s.e. of the proportion. ‘Randomised’ shows expected proportions when x-axis regions are randomly shifted within a range of 100 million bases (or the chromosome size if lower). Dotted lines show overall means for each colour.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) H3K4me3 or (B) H3K36me3 levels, and mean enrichment of ZCWPW1 co-transfected with PRDM9 is plotted for each bin (error bars show ±2 s.e. of the mean). This is in some sense opposite (but complementary) to Figure 6—figure supplement 1 in which the subject of the axis is reversed. Windows with evidence of PRDM9-independent H3K4me3 have been removed from the H3K4me3 plot. Additionally, x-axis regions were removed if input reads were <15 and y-axis regions if <5. 0.01 has been added to the x-axis values in order to display enrichment estimates of zero on the log scale.
+
+### DSBs occur at their normal locations in Zcwpw1−/− mice but show increased DMC1 levels
 
 Previous work has shown that Prdm9−/− mice use a new set of DSB hotspots, localising at CpG islands and/or promoter regions (Brick et al., 2012). Given that PRDM9 recruits ZCWPW1, one possible function of ZCWPW1 may be that, in turn, it recruits the DSB machinery and hence forms part of the causal chain in normal positioning of DSBs at PRDM9-specified hotspots. Alternatively, the Zcwpw1−/− mutant phenotypes we observe might reflect a more downstream role. To distinguish these hypotheses, we gathered data on DSB positioning and repair dynamics genome-wide, by carrying out single ssDNA sequencing (SSDS) by ChIP-seq against DMC1 (Khil et al., 2012).
 
 In the Zcwpw1−/− mutant males, we observed normal localisation of DMC1 at the expected B6 WT hotspots for this background, with no signal at Prdm9−/− hotspots (Figure 7A). We only fail to see evidence of DMC1 signal in a subset of the weakest hotspots, where we are likely to lack statistical power (Figure 7—figure supplement 1). Thus, DSBs occur in unchanged hotspot regions in Zcwpw1−/− males, relative to WT. To check if they occur at the same locations within hotspot regions, we leveraged data for SPO11-mapped DSB sites (Lange et al., 2016). Specifically, we identified three sets of hotspots whose respective mapped breaks occur mainly upstream, central, or downstream of the PRDM9-binding site (Materials and methods), and compared their DMC1 ChIP-seq signal profiles, as well as their SPO11 signals (Figure 7—figure supplement 2). This revealed that in the Zcwpw1−/− males, as in the WT, DMC1 signals mirror this break positioning. Therefore, ZCWPW1 is not required to specify hotspot locations, and neither does it strongly influence where DSBs occur within hotspots.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig7-v2.jpg)
+
+**Figure 7.:** (A) DSBs occur at normal hotspot locations in the Zcwpw1−/− male mouse. Average coverage of reads from DMC1 SSDS ChIP-seq in a 10-week-old mouse at previously mapped regions (Materials and methods) in B6 WT (left) and Prdm9−/− (right) mice is shown, centered at the PRDM9 motif (left). DMC1 profiles from a WT mouse are shown in red, data from Brick et al., 2012. (B) Normalised DMC1 profile (both strands combined) is plotted for WT and Zcwpw1−/−, stratified by H3K4me3 (a proxy for PRDM9 binding). Low: <50th percentile cumulative enrichment, High: >75th percentile cumulative enrichment, with Medium being the remaining data. Greyed out lines show the alternative genotype for comparison. (C) Relationship between WT SPO11-oligos (measuring the number of DSBs) vs DMC1 (a measure of the number and persistence of DSBs) at each B6 hotspot for WT and Zcwpw1−/−. Unlike WT mice, DMC1 signals in Zcwpw1−/− mice are approximately linearly associated with WT SPO11. The DMC1 enrichment was force called at the positions of B6 WT hotspots. Black dashed line is y = x for reference. SPO11 and DMC1 enrichment have been scaled by dividing by the mean autosomal enrichment. Large dark blue and dark red points show mean DMC1 signal, binned into groups containing equal numbers of hotspots by WT SPO11 signal (vertical lines: corresponding 95% CIs), for X (10 bins) and autosomal data (100 bins) respectively (smaller lighter dots represent individual hotspots).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Black bars along the top of the plot show the heat of individual hotspots relative to the hottest, according to the DMC1 data, in the WT male mouse. Y-axis values at x = 0 show the fraction of all hotspots falling into the buckets shown in the inset colour legend. As the x-axis increases the y-axis values show the same thing, but only for those hotspots with a heat greater than or equal to the x-axis value, that is those black bars further to the right. Therefore, almost all WT hotspots with activity >20% of the hottest hotspot are observed, and non-observed hotspots show only weak activity in WT, and so our power to detect them is expected to be reduced. ‘DMC1>0’ refers to the hotspot locations at which DMC1 signal is observed in Zcwpw1−/− DMC1 ChIP-seq, but with significance level (p-value) greater than or equal to 0.05, ‘p<0.05’ refers to the locations at which this significance level is less than 0.05 but greater or equal to 0.001, and ‘p<0.001’ refers to locations at which the p-value is less than 0.001.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Hotspots relative to PRDM9 binding motif: upstream (red), downstream (black), central (green). For DMC1 hotspots with an identified PRDM9-binding motif (Materials and methods), we measured positions relative to this motif and identified hotspots in three groups according to SPO11 signal: Green: active hotspots (top 30%) with >90% of the SPO11 signal in the central 300bp region. Red: >90% upstream of the PRDM9 binding motif (position <0) and <50% central. Black: >90% downstream of the PRDM9 binding motif and <50% central. We then plotted the average profiles of DMC1 in wild-type (WT) (left), DMC1 in Zcwpw1−/− (KO) mice (middle) and SPO11 (right), normalised to have unit area. Hotspots with more upstream/downstream DSB sites (SPO11) also show more upstream/downstream DMC1 signals, in both WT and KO mice.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Similarly to Figure 7C, the DMC1 enrichment was force called at the positions of B6 WT hotspots, in the Hop2−/− data from GSM851661 (Khil et al., 2012). SPO11 and DMC1 enrichment have been scaled by dividing by the mean autosomal enrichment. Blue points are X chromosome data, orange points are autosomal. Large blue and black points show mean DMC1 signal binned into groups containing equal numbers of hotspots by WT SPO11 signal (vertical lines: corresponding 95% CIs), for X and autosomal data, respectively. Other details as for Figure 7C. Hop2−/− (A) and Zcwpw1−/− (B) mouse KO mutants show a similar linear relationship of DMC1 ChIP-seq vs SPO11.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** The DMC1 signal in the KO relative to the WT increases as H3K4me3 (~PRDM9) increases. We calculated the ratio of KO to WT DMC1 force-called enrichment at each autosomal B6 mouse hotspot not overlapping pre-existing H3K4me3. We excluded weak hotspots whose estimated SPO11 or DMC1 WT heats were in the bottom 10% (because accurate ratio estimation is not possible for these hotspots). Dots: the force-called signal strength (of either H3K4me3, SPO11 or WT DCM1), vs the ratio, for each of the resulting hotspots. Blue dashed line, linear regression line of best fit (fit in linear space, displayed in log space). Red line: Generalised Additive model (able to fit non-linear effects if present, again fit in linear space).
 
 One perhaps important difference between the Zcwpw1−/− and WT DMC1 profiles is that the latter signal is slightly wider (up to ~200bp) in hotspots with increasing PRDM9-induced H3K4me3 (Figure 7B), while this effect is absent in the Zcwpw1−/− case. This might be explained by small differences in chromatin accessibility subtly impacting SPO11 locations, DNA end resection which generates the 3’ ssDNA tail to which DMC1 binds, or downstream processing differences altering DMC1 span in the mutant mice.
 
@@ -89,9 +197,17 @@ However, we see a striking departure in the Zcwpw1−/− mouse, where the X-chr
 
 These results are consistent with, and extend, our microscopy observations (Figure 4) that many DSBs persist in the Zcwpw1−/− mouse, and some may never repair. We are unable to say whether DSB repair involves the homologue or not in this mouse, but the partial synapsis we observe suggests some repair does likely occur. To further understand DMC1 persistence at individual hotspots, we estimated the relative DMC1 heat of autosomal hotspots in the Zcwpw1−/− mouse, compared to the WT mouse. The best individual predictor of this ratio among H3K4me3, DMC1, and SPO11 in WT was the level of H3K4me3 (r = 0.60 Generalised Additive Model; Figure 7—figure supplement 4, while r = 0.63 when using all three predictors together). The average KO:WT DMC1 ratio increases around ninefold from the most weakly to the most strongly H3K4me3-marked hotspots. Therefore, if DMC1 signal changes are indeed explained by slower DSB processing in the Zcwpw1−/− mouse at hotspots bound strongly by PRDM9, then this implies a very strong effect of PRDM9’s ‘assistance’ in aiding repair. Whatever the cause, the overall strong correlation implies perturbation of DMC1 behaviour is widespread, rather than impacting any small subset of hotspots. Moreover, it appears to be mainly controlled by local levels of PRDM9 histone modification, in keeping with the evidence that ZCWPW1 recognises this mark at PRDM9-bound sites, on either the broken or (identical) homologous chromosome.
 
-## ZCWPW1 binds CpG dinucleotides
+### ZCWPW1 binds CpG dinucleotides
 
 In addition to the strong PRDM9-dependent ZCWPW1 peaks described earlier, there are many locations in HEK293T cells at which ZCWPW1 binds, typically more weakly, and independently of PRDM9. Indeed we identified over 800,000 ZCWPW1 peaks. Surprisingly, a large proportion of these binding sites overlap Alu repeats (Figure 8A, Figure 5C, and Figure 5—figure supplement 2) (of which there are 1.1 million in the human genome [Deininger, 2011]). The weakest ZCWPW1 peaks overlap Alus most frequently, whilst the strongest peaks are depleted of Alus relative to chance overlap (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig8-v2.jpg)
+
+**Figure 8.:** (A) Fraction of overlap of ZCWPW1 binding peaks, , with Alusin HEK293T cells transfected with ZCWPW1 alone, ordered by enrichment in ZCWPW1 binding. ZCWPW1 peaks are binned into 25 bins with equal number of data points, and means of both enrichment and overlap are plotted. Solid ribbons: prediction from GAM logistic regression. Dotted lines: overall means. Red points show actual observed peaks, blue points the same number of peaks placed at random genomic positions. (B) Rate of overlap of Alu repeats with ZCWPW1 peaks, for Alus with different numbers of CpG dinucleotides. Other details as A. (C) The probability of a 300bp window on an autosome overlapping a ZCWPW1 peak increases with increasing CpG count in that window. Windows overlapping (by 10bp or more) Alus, other repeats, or CpG islands have been excluded. Methylated CpG regions (full colour) are those with a methylated to unmethylated reads ratio of >0.75, and unmethylated <0.25 (semi-transparent, Materials and methods). (D) Relative proportion of peaks with given numbers of CpGs (stacked bars) +/− 150bp from peak center, within peaks binned by ZCWPW1 enrichment (x-axis). ZCWPW1 peaks are enriched in CpGs compared to random peak locations (leftmost bar). ‘Meth’, methylated; ‘UnMeth’, unmethylated.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/53392/elife-53392-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Error bars show ±2 s.e. of the mean.
 
 Because Alus are rich in CpGs (containing >23% of human CpG dinucleotides, with deamination depleting CpGs in older Alus [Luo et al., 2014]), we tested if binding correlates with CpG presence/absence. Indeed, the binding of ZCWPW1 to Alus depends on the presence of CpGs, which are mainly methylated (Xie et al., 2011). Alus with no CpGs were bound at a rate lower than by chance, but almost all Alus containing 10–20 CpGs are bound (Figure 8B). This dependence is not Alu-specific: even outside genomic repeats, 300bp regions with zero CpGs have negligible probability of overlapping a ZCWPW1 binding site, while the overlap probability rises to >50% for regions containing 10 or more CpGs, suggesting CpGs are essential for PRDM9-independent ZCWPW1 binding (Figure 8C,D and Figure 8—figure supplement 1). ZCWPW1 appears to have greater affinity for methylated CpG pairs, but retains some affinity even for non-methylated regions. This binding mode was unexpected a priori, and does not appear to be easily explained by patterns of H3K4me3/H3K36me3 in the genome, which do not concentrate as strongly in these regions.
 
@@ -121,7 +237,535 @@ In this study, we have shown that ZCWPW1 co-evolves with PRDM9, binds to sites m
 
 ## Materials and methods
 
-## Orthologue alignment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (167 species)</td>
+      <td>ZCWPW1</td>
+      <td>This paper using BlastP and tBLASTn (www.blast.ncbi.nlm.nih.gov), NCBI (www.ncbi.nlm.nih.gov) and Ensembl (www.ens.embl.org)</td>
+      <td>Details in Materials and methods</td>
+      <td>Also see Figure 1—source data 1</td>
+    </tr>
+    <tr>
+      <td>Gene (225 species)</td>
+      <td>PRDM9</td>
+      <td>Baker et al., 2017 (doi: 10.7554/eLife.24133)</td>
+      <td></td>
+      <td>Also see Figure 1—source data 2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Zcwpw1-/-</td>
+      <td>Toronto Centre for Phenogeno-mics (Canada)</td>
+      <td>RRID:IMSR_CMMR:ADVN; Strain name C57BL/6N-Zcwpw1em1(IMPC)Tcp</td>
+      <td>Constitutive knock out for Zcwpw1 carrying a 1485bp CRISPR/Cas9-induced deletion (chr5:137799545–13780101029)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Prdm9-/-</td>
+      <td>RIKEN BioResource Research Center (Japan)</td>
+      <td>RRID:MGI:3624989; Strain name B6.129P2-Prdm9 &lt; tm1Ymat&gt;, strain number RBRC05145</td>
+      <td>Originating article Hayashi et al., 2005.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Embryonic Epithelial Kidney</td>
+      <td>ATCC</td>
+      <td>Cat. CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>hPRDM9-V5-YFP</td>
+      <td>Altemose et al., 2017 (doi: 10.7554/eLife.28383)</td>
+      <td></td>
+      <td>Human PRDM9 B allele cloned into pLENTI CMV/TO Puro DEST vector (Addgene plasmid #17293; Campeau et al., 2009) in frame with a Twin-strep tag, a V5 tag, and a self-cleaving YFP tag due to the presence of an upstream P2A sequence</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens/Pan troglodyte hybrid)</td>
+      <td>cPRDM9-V5-YFP</td>
+      <td>Altemose et al., 2017 (doi: 10.7554/eLife.28383)</td>
+      <td></td>
+      <td>hPRDM9-V5-YFP construct where Exon 10 encoding the human zinc finger array was replaced with the equivalent sequence from the chimpPRDM9 w11a allele</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>hZCWPW1-HA</td>
+      <td>GenScript</td>
+      <td>Clone ID OHu16813</td>
+      <td>ZCWPW1, transcript variant 1, mRNA (NM_017984.5) cloned into pCDNA3.1+/C-HA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>hZCWPW2-HA</td>
+      <td>GenScript</td>
+      <td>Clone ID OHu31001C</td>
+      <td>ZCWPW2, transcript variant 1, mRNA (NM_001040132.3) cloned into pCDNA3.1+/C-HA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>mZCWPW1-FLAG</td>
+      <td>OriGene</td>
+      <td>Clone ID MR209594</td>
+      <td>Zcwpw1, Transcript variant 2 mRNA (NM_001005426) cloned with a C-terminal Myc-DDK(FLAG) tag</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>mZCWPW2-FLAG</td>
+      <td>This paper</td>
+      <td>pCMV6-Entry (OriGene, Cat. PS100001)</td>
+      <td>Generated by cloning custom-synthesised mZCWPW2 into pCMV6-Entry</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>mZCWPW1-His</td>
+      <td>This paper</td>
+      <td>pET22b(+) Novagen (Sigma-Aldrich, Cat. 69744)</td>
+      <td>Generated by sub-cloning mZCWPW1 from clone ID MR209594 (OriGene) into pET22b(+) in frame with a C-terminal 6-histidines tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mZCWPW2</td>
+      <td>Origene</td>
+      <td>Mouse Zcwpw2-206; Transcript ID ENSMUST00000238919.1</td>
+      <td>Custom synthesis of full-length cDNA sequence</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. C600003</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mZCWPW1-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to produce a rabbit polyclonal antibody against mouse ZCWPW1 by immunisation (Eurogentec)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse ZCWPW1 antiserum, and pre-immune serum (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>Custom generation (Eurogentec)</td>
+      <td>IF (1:100), WB (1:1000), IP (5 μl on transfected cells, 10 μl on mouse testis)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human ZCWPW1 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. SAB1409478</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP3 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. sc-74569, RRID:AB_2197353</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SYCP3 (biotinylated, rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>Cat. NB300-232, RRID:AB_2087193</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DMC1 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. sc-22768, RRID:AB_2277191, Discontinued</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DMC1 2H12/4 (mouse monoclonal)</td>
+      <td>Novus</td>
+      <td>Cat. NB100-2617, RRID:AB_2245859</td>
+      <td>ChIP (5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HORMAD2 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. sc-282192, RRID:AB_2121124</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAD51 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. ab88572, RRID:AB_2042762</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPA2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. ab10359, RRID:AB_297095</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-H2AX (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat 05–636, RRID:AB_309864</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho γ-H2AX (chicken polyclonal)</td>
+      <td>Biorbyt</td>
+      <td>Cat. orb195374 Discontinued</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG Alexa Fluor 488 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-11008, RRID:AB_143165</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Alexa Fluor 488 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-11001, RRID:AB_2534069</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG Alexa Fluor 594 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-11012, RRID:AB_141359</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Alexa Fluor 594 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-11005, RRID:AB_141372</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG Alexa Fluor 647 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-21235, RRID:AB_2535804</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken IgY Alexa Fluor 647 secondary (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. A-21449, RRID:AB_2535866</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin, Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. S32357</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-poly-His (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. H1029, RRID:AB_260015</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. ab9110, RRID:AB_307019</td>
+      <td>IF (1:100), WB (1:1000), IP (2 μg), ChIP (5 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. H3663, RRID:AB_262051</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. ab9116, RRID:AB_307024</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. F3165, RRID:AB_259529</td>
+      <td>IF (1:500), WB (1:2000), IP (3 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. A1978, RRID:AB_476692</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ECL Rabbit IgG, HRP-linked whole Ab (donkey polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat. NA934, RRID:AB_772206</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ECL Mouse IgG, HRP-linked whole Ab (sheep polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat. NA931, RRID:AB_772210</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pIRESMinor</td>
+      <td>Chan et al., 2017</td>
+      <td>biotin labelled minor satellite probe</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_002046</td>
+      <td>GCTCCTCTGACTTCAACAGCGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_002046</td>
+      <td>ACCACCCTGTTGCTGTAGCCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PRDM9_F (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_020227</td>
+      <td>ACGAAGAGGCAGCCAACAATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PRDM9_R (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_020227</td>
+      <td>GCCACCAGGTTCTGCTCTTCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZCWPW1_F (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_017984</td>
+      <td>GATGGCTCAAGAGGCAGAACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZCWPW1_R (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_017984</td>
+      <td>TGGGCTGTTCAAACCAGAGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZCWPW2_F (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_001040432</td>
+      <td>AAGAGCTGGAGCAAATGCTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ZCWPW2_R (Human)</td>
+      <td>OriGene</td>
+      <td>PCR primers, transcript detection, NM_001040432</td>
+      <td>CAGGAGCTTCTGGGCTGCATTT</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Telomere PNA FISH Kit/Cy3</td>
+      <td>Agilent</td>
+      <td>Cat. K5326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA protein assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. 23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Prime Western Blotting Detection Reagent</td>
+      <td>GE Healthcare</td>
+      <td>Cat. 10308449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Minelute Reaction Cleanup Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat. 28204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. I5502</td>
+      <td>0.5 mM final</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. 4385610</td>
+      <td>RNA extraction and RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads M-280 Sheep anti-Rabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. 11203D, RRID:AB_2783009</td>
+      <td>IP and ChIP experiments; IP (25–75 ul), ChIP (65 ul)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads M-280 Sheep anti-Mouse IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. 11202D, RRID:AB_2783640</td>
+      <td>IP and ChIP experiments; IP (25 ul), ChIP (65 ul)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TALON Metal Affinity Resin</td>
+      <td>Takara</td>
+      <td>Cat. 635502</td>
+      <td>Expression and purification of ZCWPW1 recombinant protein; 2 ml per L of IPTG-induced bacterial culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRI Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. T9424</td>
+      <td>RNA extraction and RT-qPCR</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. P8340</td>
+      <td>IP and WB detection; 1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Complete Mini Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. 11697498001</td>
+      <td>ChIP; 1 tablet in 10 ml volume</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Novex WedgeWell 4%to 20%, Tris-Glycine, Protein Gel</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. XP04200BOX</td>
+      <td>IP and WB detection</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Novex WedgeWell 8%, Tris-Glycine, Protein Gel</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. XP00080BOX</td>
+      <td>IP and WB detection</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MAPeakCaller</td>
+      <td>Altemose et al., 2017 (doi: 10.7554/eLife.28383)</td>
+      <td>https://github.com/MyersGroup/PeakCaller/ (archived at https://doi.org/10.5281/zenodo.3783600)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>BWA MEM</td>
+      <td>Li, 2013 (arXiv:1303.3997)</td>
+      <td>bwa mem (version 0.7.17-r1188)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>bwtool</td>
+      <td>Pohl and Beato, 2014 (doi:10.1093/bioinformatics/btu056)</td>
+      <td>RRID:SCR_003035; v1.0</td>
+      <td>https://github.com/CRG-Barcelona/bwtool</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Picard</td>
+      <td>‘Picard Toolkit.’ 2019. Broad Institute, GitHub Repository. http://broadinstitute.github.io/picard/; Broad Institute</td>
+      <td>RRID:SCR_006525; version 2.20.4-SNAPSHOT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>SAMtools</td>
+      <td>PMID:19505943</td>
+      <td>RRID:SCR_002105; v1.9</td>
+      <td>https://www.htslib.org/download/</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>BEDtools</td>
+      <td>Quinlan and Hall, 2010 (doi:10.1093/bioinformatics/btq033)</td>
+      <td>RRID:SCR_006646; v2.28.0</td>
+      <td>bedtools.readthedocs.io</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>SEQkit</td>
+      <td>Shen et al., 2016 (doi:10.1371/journal.pone.0163962)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>IGV</td>
+      <td>Thorvaldsdóttir et al., 2013 (doi: 10.1093/bib/bbs017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Orthologue alignment
 
 We identified ZCWPW1 orthologues across species using four data sources: first, we used BlastP (blast.ncbi.nlm.nih.gov), against the full-length human reference ZCWPW1 sequence (identifier NP_060454.3, against nr_v5 database) storing the top 1000 hits using the default parameters (set 1). Secondly, we downloaded the two sets of Ensembl identified ZCWPW1 orthologues (against ENSMUSG00000037108.13; ensembl.org, 105 orthologues), and identified NCBI ZCWPW1 protein orthologues (146 species, www.ncbi.nlm.nih.gov). Initial examination of identified orthologues revealed conservation among orthologues mainly of the CW and PWWP domains; therefore, to find additional orthologous sequences we performed tBLASTn (against the nr/nt nucleotide collection 17th July 2019; top 1000 hits) to identify orthologues in the NCBI nucleotide database, to the partial sequence (amino acids 256–339 of the reference sequence NP_060454.3), corresponding to the CW and PWWP domains of ZCWPW1. Protein sequences were then aligned against full-length human ZCWPW1 (NP_060454.3) using BLASTP2.9 (Altschul et al., 2005; Altschul et al., 1997). We obtained taxonomy information from the NIH classification https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/, for comparisons among species and between ZCWPW1 and PRDM9.
 
@@ -131,13 +775,13 @@ Using this initial set, we identified additional orthologous sequences and refin
 
 Our analyses revealed a relationship between ZCWPW1 predicted functional domains and PRDM9 histone modifications. Therefore, we identified additional potential conserved sites by identifying perfectly conserved bases among those species possessing both ZCWPW1 and PRDM9 orthologues, and where three key SET domain catalytic amino acids within PRDM9 are intact, meaning PRDM9 is predicted to have normal histone modification activity (Baker et al., 2017). This identified a slightly larger number of conserved amino acids (37). Only eight of these varied in any of the 167 species with a potential ZCWPW1 orthologue: 260, 404 and 411 (in two Xenopus frogs, with 411 also in white-headed capuchin), 19 and 22 (in three canines), 25 (in Ocelot gecko), 257 (in Anolis lizard and in Wombat), 325 (in elephantfish). While these changes might alter ZCWPW1 function, the true behaviour of ZCWPW1 is uncertain in these cases, although it is interesting that canids and frogs represent clades that all appear to have lost PRDM9, and possess multiple, clustered, amino acid changes.
 
-## Domain search
+### Domain search
 
 pDomThreader (Lobley et al., 2009) was used via the PSIPRED server (http://bioinf.cs.ucl.ac.uk/psipred/) on the following uniProt amino acid sequences (Q9H0M4|ZCPW1_HUMAN, Q6IR42|ZCPW1_MOUSE, E2RFJ2|E2RFJ2_CANLF, M3XJ39_LATCH, A0A3S5ZP38_BOVIN, M3WDY6_FELCA, and G3ULT5|G3ULT5_LOXAF) all of which identified a match to 1ub1A00 in the C terminal section after the PWWP domain, except in LOXAF in which this match was slightly below the p-value threshold of 0.001.
 
 SCP1 prediction used NCBI conserved domain search server (https://www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi?) with the uniProt amino acid sequences Q9H0M4|ZCPW1_HUMAN and Q6IR42|ZCPW1_MOUSE.
 
-## Mice and genotyping
+### Mice and genotyping
 
 KO mice for Zcwpw1 (C57BL/6N-Zcwpw1em1(IMPC)Tcp) were generated by the Toronto Centre for Phenogenomics (Canada). A 1485bp deletion on chromosome 5 spanning exons 5 to 7 of Zcwpw1 (chr5:137799545–13780101029) was engineered by CRISPR/Cas9 using guide RNAs 5’-GACTGCACTCACGGCCATCT-3’ and 5’-GCCCGGTTCTTCATCCAATT-3’. The frameshift deletion introduces a stop codon in Exon 8, leading to a predicted unstable short truncated 492bp transcript. Mice were genotyped at the Zcwpw1 locus using the following primers, and standard cycling conditions: KO allele-Forward, 5’-CACAGGCTCATGTATGTTTGTCTC-3’; KO allele-Reverse, 5’-CTGCTTCGTCCTCTTTCCTTATCTC-3’; WT allele-Forward, 5’-TGCCACCACACTTCATTTGT-3’; WT allele-Reverse CCTGTTTCCTTCCCAACTCA-3’. The deletion was verified by direct Sanger sequencing of the KO genotyping PCR product (Source Bioscience, UK), following purification with the QIAquick PCR Purification Kit (Qiagen). Sequence analysis was carried out using Chromas LITE (version 2.1.1).
 
@@ -145,57 +789,57 @@ KO mice for Prdm9 were described previously (Hayashi et al., 2005; Mihola et al.
 
 All animal experiments received local ethical review approval from the University of Oxford Animal Welfare and Ethical Review Body (Clinical Medicine board) and were carried out in accordance with the UK Home Office Animals (Scientific Procedures) Act 1986.
 
-## Fertility measurements
+### Fertility measurements
 
 Fertility was assessed in mice ranging from 9 to 12 weeks of age, either by mating with WT littermates and recording the average litter size and frequency, or by measuring paired testes weight (normalized to lean body weight), sperm count (per paired epididymides) and chromosome synapsis rate (by immunostaining of pachytene spermatocytes) in males. Lean body weight was measured using the EchoMRI-100 Small Animal Body Composition Analyzer.
 
-## Immunostaining of spermatocytes
+### Immunostaining of spermatocytes
 
 Mouse testis chromosome spreads were prepared using surface spreading (Barchi et al., 2008; Peters et al., 1997) and immunostained as previously described (Davies et al., 2016). The following primary antibodies were used: custom ZCWPW1 rabbit antiserum (1:100 dilution), mouse anti-SYCP3 (Santa Cruz Biotechnology sc-74569, RRID:AB_2197353) or biotinylated rabbit anti-SYCP3 (Novus NB300-232, RRID:AB_2087193), rabbit anti-DMC1 (Santa Cruz Biotechnology sc-22768, RRID:AB_2277191, discontinued; 1:100 dilution), rabbit anti-HORMAD2 (Santa Cruz Biotechnology sc-82192, RRID:AB_2121124; 1:300 dilution), mouse anti-RAD51 (Abcam ab88572, RRID:AB_2042762; 1:50 dilution), rabbit anti-RPA2 (Abcam ab10359, RRID:AB_297095; 1:1000 dilution), mouse (Sigma-Aldrich 05–636, RRID:AB_309864; 1:250 dilution) or chicken (Biorbyt orb195374, discontinued; 1:1000 dilution) anti-phospho γ-H2AX and Alexa Fluor 488-, 647- or 594-conjugated secondary antibodies against rabbit, mouse or chicken IgG/Y (A-11008, RRID:AB_143165; A-11001, RRID:AB_2534069; A11012, RRID:AB_141359; A-1105, RRID:AB_141372; A-21235, RRID:AB_2535804; A-21449, RRID:AB_2535866; Thermo Fisher Scientific; 1:250 dilution), as well as streptavidin Alexa Fluor 647 (Thermo Fisher Scientific) were used to detect the primary antibodies. Images were acquired using either a BX-51 upright wide-field microscope equipped with a JAI CVM4 B and W fluorescence CCD camera and operated by the Leica Cytovision Genus software, or a Leica DM6B microscope for epifluorescence, equipped with a DFC 9000Gt B and W fluorescence CCD camera, and operated via the Leica LASX software. Image analysis was carried out using Fiji (ImageJ-win64). The specificity of the ZCWPW1 signal was verified using the pre-immune serum from the same rabbit: no staining was visible at any stage of prophase I (Figure 2—figure supplement 1B shows representative images of mid-zygotene and early pachytene cells). Staging and sub- (early, mid and late) staging of spermatocytes during prophase I was carried out according to defined staining patterns against SYCP1, SYCP3, and DAPI-stained DNA appearance, and morphological criteria previously published (Gaysinskaya et al., 2014). Briefly, cells showing large chromocentres (brightly stained by DAPI and corresponding to pericentromeric regions) with short tracts of SYCP3 were assigned as (mid-)leptotene. Cells with larger pooled chromocentres, associated with longer tracts of SYCP3 were identified as early zygotene. Cells where some synapsis was initiated (with more than two paired SYCP3 tracts, resulting in a thicker synaptonemal complex region), were assigned as (mid-)zygotene. Cells where the majority of chromosomes were synapsed, with three or less completely or partially asynapsed, were identified as late zygotene.
 
-## Fluorescent in-situ hybridisation (FISH)
+### Fluorescent in-situ hybridisation (FISH)
 
 Following immunostaining of spermatocytes, centromeres and telomeres were labelled using a biotin labelled minor satellite probe (pIRESMinor, Chan et al., 2017) together with the Telomere PNA FISH Kit/Cy3 (Agilent), following the manufacturer’s instructions, but without protease treatment. The hybridisation and signal detection were carried out using standard techniques.
 
-## Plasmids
+### Plasmids
 
 Constructs encoding full-length human PRDM9 (B allele) in frame with a C-terminal V5 tag and a self-cleaving YFP tag (hPRDM9-V5-YFP), or the chimp construct (cPRDM9-V5-YFP) where the sequence that encodes the human zinc finger array in hPRDM9-V5-YFP was replaced with the equivalent sequence from the chimp PRDM9 w11a allele, for expression in mammalian cells (pLENTI CMV/TO Puro DEST backbone vector) were described previously (Altemose et al., 2017). Constructs encoding full-length human (h) and mouse (m) ZCWPW1 or ZCWPW2 for expression in mammalian cells were purchased from GenScript (hZCWPW1 and hZCWPW2 cDNA with a C-terminal HA tag in pCDNA3.1 clones ID OHu16813 and OHu31001C, respectively) and OriGene (mZCWPW1 cDNA with a FLAG-Myc dual tag in pCMV6-Entry; clone ID MR209594), respectively. mZCWPW2 cDNA was synthesised by GenScript and subcloned into pCMV6-Entry in-frame with a C-terminal FLAG tag. For expression in E. coli, full-length mZCWPW1 cDNA was subcloned into the pET22b(+) vector (Novagen) with a C-terminal poly-His tag.
 
-## ZCWPW1 antibody production and validation
+### ZCWPW1 antibody production and validation
 
 pET22b-mZCWPW1-His construct was transformed into BL21 (DE3) E. coli cells (Thermo Fisher Scientific). Bacterial cultures were grown to a density with O.D600 ~0.7, and expression of recombinant His-tagged ZCWPW1 protein was induced overnight at 20°C by addition of IPTG to 0.5 mM. The protein was purified using TALON metal affinity resin, according to the manufacturer’s instructions (Takara 635502). Further purification was carried out by size exclusion chromatography (Superdex HiLoad 200 16/60, GE Life Sciences). WB validation was carried out as described previously (Altemose et al., 2017), using mouse anti-human ZCWPW1 (Sigma-Aldrich SAB1409478; 1:2000 dilution) and mouse anti-polyhistidine (Sigma-Aldrich H1029, RRID:AB_260015; 1:2000 dilution) antibodies. The purified protein was used to immunise two rabbits (Eurogentec, Belgium), and the resulting immune antisera (and pre-immmune sera from the same rabbits) were tested against the recombinant antigen by ELISA (Eurogentec), the overexpressed FLAG-tagged mouse ZCWPW1 protein (and the closely related ZCWPW2 protein to address specificity) in transfected HEK293T cells, and the endogenous protein in mouse testes (Figure 2—figure supplement 1). Both antisera showed high titers and similar reactivity by IP, WB and IF staining. The antiserum with the lowest level of background (corresponding to the signal detected by the pre-immune serum) was chosen to carry out the experiments.
 
-## Cell line, transfection and immunofluorescence staining
+### Cell line, transfection and immunofluorescence staining
 
 Human embryonic kidney (HEK) 293 T cells were purchased from the ATCC (ATCC CRL-3216), with a certificate of analysis confirming cell line identity by Short Tandem Repeat profiling and lack of mycoplasma contamination. All experiments were carried out on cells cultured for less than five passages from the purchased stock reference strain. Cells were cultured and transfected using Fugene HD as previously described (Altemose et al., 2017). High and comparable expression of the target proteins across all samples was verified by IF staining of duplicate transfected cultures before proceeding to ChIP (Figure 5—figure supplement 4). PRDM9 expression was visualised either directly from live cells through YFP fluorescence, or by IF staining of fixed cells using rabbit anti-V5 (Abcam ab9116, RRID:AB_307024; 1:500 dilution) as described previously (Altemose et al., 2017). ZCWPW1-HA was detected by immunostaining as above, using mouse anti-HA (Sigma-Aldrich H3663, RRID:AB_262051, 1:500 dilution). The fraction of cells co-expressing ZCWPW1-HA and PRDM9-V5 was determined by co-staining with both antibodies, as above (Figure 5—figure supplement 4). To assess the specificity of the ZCWPW1 antiserum, cells transfected with FLAG-tagged mZCWPW1 or mZCWPW2 were co-immunostained with the antiserum (1:100 dilution) and a mouse anti-FLAG (Sigma-Aldrich F3165, RRID:AB_259529; 1:500 dilution). Images were acquired using a ZOE fluorescent cell imager (Bio-Rad).
 
-## RNA extraction and reverse transcription-quantitative PCR (RT-qPCR)
+### RNA extraction and reverse transcription-quantitative PCR (RT-qPCR)
 
 RT-qPCR analysis of human PRDM9, ZCWPW1 and ZCWPW2 transcript expression in HEK293T cells was performed as previously described (Altemose et al., 2017), with minor modifications listed here. RNA was extracted from one biological replicate per sample using TRI Reagent (Sigma-Aldrich T9424), following the manufacturer’s guidelines. For qPCR, each sample was analysed in triplicate (technical replicates) using primer sets from Origene: GAPDH (NM_002046) forward 5’-GCTCCTCTGACTTCAACAGCG-3’ and reverse 5’-ACCACCCTGTTGCTGTAGCCAA-3’; PRDM9 (NM_020227) forward 5’-ACGAAGAGGCAGCCAACAATGG-3’ and reverse 5’-GCCACCAGGTTCTGCTCTTCAT-3’; ZCWPW1 (NM_017984) forward 5’-GATGGCTCAAGAGGCAGAACAG-3’ and reverse 5’-TGGGCTGTTCAAACCAGAGAGC-3’; ZCWPW2 (NM_001040432) forward 5’- AAGAGCTGGAGCAAATGCTGCAG-3’ and reverse 5’-CAGGAGCTTCTGGGCTGCATTT-3’. PCR reactions were carried out in triplicate (three technical replicates per sample), using Fast SYBR Green Master Mix according to the manufacturer’s instructions (Applied Biosystems 4385610). Relative gene expression was calculated using the ΔΔCt method after averaging the technical replicates for each sample and normalising to the GAPDH gene. Raw Ct values and detailed calculations are given in Figure 5—source data 1.
 
-## Immunoprecipitation and western blot detection
+### Immunoprecipitation and western blot detection
 
 Cell and testes protein extracts were prepared in lysis buffer containing 50 mM Tris-HCl pH8.0, 150 mM NaCl, 1% Triton X-100 and a cocktail of protease inhibitors (Sigma-Aldrich P8340), followed by gentle rotation at 4°C for 30 to 45 min, respectively. Cell debris were pelleted by centrifugation at 4°C for 20 min at 20,000 g. Protein extracts were quantified using the Pierce BCA protein assay kit (Thermo Fisher Scientific 23227) and equal quantities were incubated overnight at 4°C with 5 or 10 µl (on transfected cells and mouse testis, respectively) of rabbit ZCWPW1 immune antiserum or pre-immune serum, or 3 µg of mouse anti-FLAG antibody (Sigma-Aldrich F3165, RRID:AB_259529), setting aside 5–100 µg of protein extract for direct western blot detection. Immunocomplexes were pulled down with 25–75 µl of Dynabeads M-280 sheep anti-rabbit (11203D, RRID:AB_2783009) or anti-mouse (11202D, RRID:AB_2783009) IgG (Thermo Fisher Scientific) for 2 hr at 4°C with gentle rotation. After five washes in lysis buffer, they were eluted from the beads by boiling in Laemmli sample buffer for 5 min. Immunocomplexes and total protein extracts were resolved on either 8% or 4–20% Novex Tris-Glycine precast gels (Thermo Fisher Scientific XP00080BOX, XP04200BOX). Proteins were transferred onto PVDF membranes and the proteins of interest were detected by western blotting following standard procedures. Blots were blocked for 1 hr at room temperature (RT) in PBS containing 0.2% Tween-20 (PBS-T) and 5% milk, and incubated for 1 hr at RT with rabbit ZCWPW1 immune antiserum or pre-immune serum (1:1000 dilution), mouse anti-β-actin (Sigma-Aldrich A1978, RRID:AB_476692, 1:2000 dilution), or mouse anti-FLAG antibody (Sigma-Aldrich F3165, RRID:AB_259529; 1,2000 dilution), washed three times in PBS-Tween buffer and incubated for 1 hr at RT with HRP-conjugated donkey anti-rabbit (NA934, RRID:AB_772206) or sheep anti-mouse (NA931, RRID:AB_772210) IgG antibody (1:10,000 dilution; GE Healthcare). Protein signals were revealed using the ECL Prime western blotting detection reagent according to the manufacturer’s recommendations (GE Healthcare 10308449). The specificity of the ZCWPW1 signal observed in B6 testis extract was verified by immunoprecipitation using the pre-immune serum from the same rabbit: no signal was detected (Figure 2—figure supplement 1C). No cross-reactivity was observed with ZCWPW2 in either B6 testis extract or transfected HEK293T cells overexpressing FLAG-tagged ZCWPW2 (Figure 2—figure supplement 1C,D).
 
-## ChIP-seq
+### ChIP-seq
 
-## ChIP
+#### ChIP
 
 ChIP against ZCWPW1-HA was carried out from transfected HEK293T cells as follows. Cells were crosslinked for 10 min in 1% formaldehyde, the reaction was quenched for 5 min by the addition of glycine to a final concentration of 125 mM, and the cells were washed twice in cold PBS. The cell pellet was resuspended in cold sonication buffer (50 mM Tris-HCl pH8, 10 mM EDTA, 1% SDS) supplemented with Complete Mini protease inhibitor cocktail (Sigma-Aldrich 11697498001), and chromatin was sheared to an average size of 200–500bp by sonication for 35 cycles (30 s ON/30 s OFF) using a Bioruptor Twin (Diagenode). After centrifugation for 10 min at 20,000 g, 4°C, the sonicate was diluted 10 fold in ChIP buffer (16.7 mM Tris pH8 1.2 mM EDTA, 167 mM NaCl, 1.1% Triton X-100) supplemented with protease inhibitors, pre-cleared for 2 hr at 4°C with 65 μl of Dynabeads M-280 sheep anti-rabbit IgG (Thermo Fisher Scientific 11203D, RRID:AB_2783009) and a 1% input chromatin sample was set aside. The rest of the sample was incubated overnight at 4°C with 5 μg of rabbit anti-HA antibody (Abcam ab9110, RRID:AB_307019). Immunocomplexes were washed once with each of low salt buffer (20 mM Tris pH8, 150 mM NaCl, 1% Triton X- 100, 0.1% SDS, 2 mM EDTA), high salt buffer (20 mM Tris pH8, 500 mM NaCl, 1% Triton X-100, 0.1% SDS, 2 mM EDTA), LiCl buffer (10 mM Tris pH8, 0.25 M LiCl, 1% NP-40, 1% sodium deoxycholate, 1 mM EDTA) and TE buffer (10 mM Tris pH8, 1 mM EDTA) and eluted from the beads in 100 mM NaHCO3, 1% SDS for 30 min at 65°C with shaking. Both input and ChIP samples were reverse crosslinked overnight at 65°C in the presence of 200 mM NaCl, and proteins were digested for 90 min at 45°C by addition of proteinase K (0.3 mg/ml final concentration). DNA was purified using the MinElute Reaction Cleanup Kit (QIAGEN, 28204), and quantified using the Qubit dsDNA HS Assay Kit (Q32851) and a Qubit 2.0 Fluorometer (Thermo Fisher Scientific).
 
 ChIP against DMC1 was performed from Zcwpw1−/− testes using the published method by Khil et al., 2012 with some modifications listed here. Chromatin shearing was carried out in 20 mM Tris-HCl pH8, 2 mM EDTA, 0.1% SDS using a Bioruptor Pico sonicator (Diagenode) for 4 cycles of 15 s ON/45 s OFF. ChIP was performed in 10 mM Tris-HCl pH8, 1 mM EDTA, 0.1% Sodium Deoxycholate, 1% Triton X-100, 500 mM NaCl using 5 μg of mouse anti-DMC1 2H12/4 (Novus NB100-2617, RRID:AB_2245859) pre-bound to 50 μl of Dynabeads M-280 sheep anti-mouse IgG (Thermo Fisher Scientific 11202D, RRID:AB_772210).
 
-## Sequencing
+#### Sequencing
 
 ZCWPW1 ChIP and input libraries from transfected cells were prepared by the Oxford Genomics Centre at the Wellcome Centre for Human Genetics (Oxford, UK) using the Apollo Prep System (Wafergen, PrepX ILMN 32i, 96 sample kit) and standard Illumina multiplexing adapters following the manufacturer’s protocol up to pre-PCR amplification, and sequenced on a HiSeq 4000 platform (75bp paired end reads, 48 million reads/sample). DMC1 ChIP libraries from Zcwpw1−/− testes were prepared and sequenced as described previously (Davies et al., 2016) on an Illumina HiSeq2500 platform (Rapid Run, 51bp paired end reads, 110 million reads/sample).
 
-## Read mapping
+### Read mapping
 
 For the HEK293T experiments, reads were mapped to either hg38 (NCBI’s GCA_000001405.15_GRCh38_no_alt_plus_hs38d1_analysis_set.fna.gz) using bwa mem (version 0.7.17-r1188) (Li, 2013). Duplicates were removed using picard’s markDuplicates (version 2.20.4-SNAPSHOT). Unmapped, mate unmapped, non primary alignment, failing platform, and low MAPQ reads were removed using samtools with parameters ‘-q 30 F 3852 f 2 u’ (version 1.9 (using htslib 1.9)). Other unmapped reads and secondary alignments were removed using samtools fixmate. Fragment position bed files were created using bedtools bamtobed (v2.28.0).
 
 For the DMC1 mouse experimental data, we processed the data following the algorithm provided by Khil et al., 2012 to map the reads to the mouse mm10 reference genome (Lunter and Goodson, 2011), and obtain type I reads.
 
-## Peak calling
+### Peak calling
 
 We called DMC1 peaks, as described previously (Davies et al., 2016). For the HEK293T experiments, peaks for ZCWPW1, PRDM9, H3K4me3, and H3K36me3 were called using a peak caller previously described (Davies et al., 2016) and available at https://github.com/MyersGroup/PeakCaller (archived at https://doi.org/10.5281/zenodo.3783600). Single base peaks were called with parameters pthresh 10−6 and peakminsep 250 on 22 autosomes. For each experiment, we used available IP replicates, and sequenced input DNA to estimate background, in calling peaks.
 
@@ -205,34 +849,34 @@ The peak calling algorithm allows for calculation of enrichment and p-values at 
 
 Note that the enrichment values from peak calling represent coverage due to signal, after subtracting coverage due to background, relative to background coverage. Hence a value less than one does not imply depletion — any value greater than 0 is enriched. For more details see Altemose et al., 2017.
 
-## Enrichment profiles for HEK293T experiments
+### Enrichment profiles for HEK293T experiments
 
 Peaks were filtered if: center within 2.5kb of PRDM9-independent H3K4me3 (promoters), input coverage ≤5, in top five by likelihood, greater than 99.9 percentile input coverage. For human PRDM9 peaks the PRDM9 motif position (Altemose et al., 2017) was inferred using the getmotifs function in MotifFinder within the 300bp region around the peak (with parameters alpha = 0.2, maxits = 10, seed = 42, stranded_prior = T), and peaks were recentered and stranded at these locations. Peaks within 4kb of one another are removed to avoid double counting. Mean coverage was calculated with bwtool 1.0 using the aggregate command with parameters ‘-fill = 0 -firstbase’ at a width of +/− 2kb. Each profile was normalised by the total coverage of all of the fragments and the normalised sample profile was divided by the relevant normalised comparison/control dataset to calculate enrichment. Random profiles were created using bedtools random with 10,000 locations, with seed 72346, and were also filtered such that none were within 4kb of one another.
 
-## DSB profiles
+### DSB profiles
 
 Mapped type one reads were filtered by removing non-canonical chromosomes (with underscores in names), sex chromosomes, and mitochondrial reads. Bedgraphs were converted to bigWig format using UCSC bedGraphToBigWig v4. Profiles were created using bwtool 1.0 using the aggregate command with parameters 5000:2000 and -fill = 0. B6 WT hotspot locations were filtered to remove non-autosomal chromosomes, retain only B6 allele hotspots, and remove hotspots with PRDM9-independent H3K4me3. Prdm9−/− hotspots were filtered to remove the X chromosome. Motif centered coordinates were used for WT hotspots where the motif positions were inferred using the MotifFinder software and PRDM9 position weight matrices from Altemose et al., 2017. To normalise background signal, the mean signal between −5000 and −3000 was subtracted from each strand-mouse combination. Mean coverage was normalised by the sum of coverage over each strand-mouse combination across both WT and KO locations.
 
-## Mapping of alu CpGs
+### Mapping of alu CpGs
 
 Alu locations were downloaded from UCSC tables and filtered for Alu repeats with a width between 250 and 350bp. DNA sequence was extracted from the genome (Ensembl 95 h38 primary assembly) at these locations using the bedtools getfasta command and CpG dinucleotides were counted using ‘stringr::str_locate_all’ command in R.
 
-## CpG methylation
+### CpG methylation
 
 Data is from Libertini et al., 2015 (GSE51867), non CpG methylated sites were removed, and the two strands were summed. High copy number (>1.5) CpGs were removed.
 
-## DMC1 prediction using ZCWPW1 and PRDM9 binding strength
+### DMC1 prediction using ZCWPW1 and PRDM9 binding strength
 
 PRDM9-dependent ZCWPW1 enrichment was force-called at the human PRDM9 peaks. Human testis DMC1 sites are from Pratto et al., 2014 (GSE59836) and were subsetted to ‘A or B’ autosomal peaks with a width less than 3kb. These peaks were then trimmed to a maximum of 800bp before overlapping with PRDM9 peaks to create a binary target variable. Regions with input coverage ≤5 in either predictor were removed in addition to outliers with input >200 and/or ZCWPW1 enrichment >10. A binomial generalised linear model with a logit link (logistic regression) was fitted using the ‘glm’ function from the ‘stats’ package in R (3.6.0). Chromosomes 1, 3, and 5 were used as the test data with the remaining autosomes being the training data.
 
-## Heatmaps
+### Heatmaps
 
 Regions were extracted from bigWig using bwtool matrix-fill = 0 -decimals = 1 -tiled-averages=5, and width parameters 2000. Coverage was normalised by total coverage (scaled by 1010). A pseudocount of 1 was added to both input and sample, and the sample was then normalised by the input for each region. Values outside the quantile range 0.01–0.99 were thresholded. The profile plots are created by taking the ratio of the mean coverage of the sample and input separately. Ordering of the regions was determined by the mean coverage of a 200bp window centered on the peak center.
 
-## Software
+### Software
 
 Computational analysis was performed using R (R Development Core Team, 2018) and snakemake (Köster and Rahmann, 2012). BigWig aggregations by bwtool (Pohl and Beato, 2014), BED manipulation with BEDtools (Quinlan and Hall, 2010), and FASTA processing with seqkit (Shen et al., 2016). We also used BigWig tools (Kent et al., 2010), IGV (Thorvaldsdóttir et al., 2013), and GNU parallel (Tange, 2018). Plots were created using the ggplot2 package (Wickham, 2016) and extensions ggforce (Pedersen, 2016), RColorBrewer (Neuwirth, 2014), viridis (Garnier, 2018), drawProteins (Brennan, 2018), and cowplot (Wilke, 2018). In addition, the following R packages were used: data.table (Dowle and Srinivasan, 2019), mgcv (Wood, 2011), PRROC (Grau et al., 2015), sangerseqR (Hill et al., 2014), and ComplexHeatmap (Gu et al., 2016).
 
-## External datasets summary
+### External datasets summary
 
 DMC1 SSDS ChIP-seq in human testis is from Pratto et al., 2014 (GSE59836). DMC1 SSDS ChIP-seq (Brick et al., 2012) (GSE35498), H3K4me3 ChIP-seq (Davies et al., 2016) (GSE73833), and SPO11 oligo-seq (Lange et al., 2016) (GSE84689) are in WT B6 mouse testis. PRDM9 (h/c-V5 tagged), H3K4me3, and H3K36me3 ChIP-seq in HEK293T cells is from Altemose et al., 2017 (GSE99407). Whole-genome bisulfite sequencing (BS-seq) of HEK293 cells is from Libertini et al., 2015 (GSE51867).

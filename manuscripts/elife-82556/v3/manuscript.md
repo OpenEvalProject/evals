@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biomedical Engineering, Johns Hopkins School of Medicine and Whiting School of Engineering Baltimore United States
-2. https://ror.org/00za53h95 Center for Computational Biology, Johns Hopkins University Baltimore United States
-3. https://ror.org/04h9pn542 School of Biological Sciences, Seoul National University Seoul Republic of Korea
-4. https://ror.org/04h9pn542 Artificial Intelligence Institute, Seoul National University Seoul Republic of Korea
-5. https://ror.org/00za53h95 Department of Computer Science, Johns Hopkins University Baltimore United States
-6. https://ror.org/04h9pn542 Institute of Molecular Biology and Genetics, Seoul National University Seoul Republic of Korea
-7. https://ror.org/00za53h95 Department of Biostatistics, Johns Hopkins University Baltimore United States
+1. Department of Biomedical Engineering, Johns Hopkins School of Medicine and Whiting School of Engineering Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Center for Computational Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. School of Biological Sciences, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+4. Artificial Intelligence Institute, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+5. Department of Computer Science, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+6. Institute of Molecular Biology and Genetics, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+7. Department of Biostatistics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ Here, we describe our use of protein folding predictions from ColabFold (Mirdita
 
 ## Results
 
-## Scoring the transcriptome
+### Scoring the transcriptome
 
 Using CHESS, a large set of transcripts assembled from nearly 10,000 human RNA-seq experiments, we identified all protein-coding gene isoforms that were 1000aa or less in length (see Materials and methods). The 233,973 transcripts at 20,666 gene loci that fit this description encoded 127,398 distinct protein isoforms, and we predicted structures for all of them. Additionally, we included 3302 structure predictions for proteins with length >1000aa from the AlphaFold Protein Structure Database (Varadi et al., 2022) for isoforms with an exact protein sequence match in CHESS 3. This resulted in a total of 237,295 transcripts at 20,817 gene loci encoding 130,700 distinct protein isoforms. As shown in Figure 1, we observe no strong trend in the relationship between predicted local distance difference test (pLDDT) and either protein length or overall transcript expression in the GTEx data. The lack of a clear linear relationship implies protein structure prediction may provide an orthogonal source of useful information for genome annotation efforts.
 
@@ -56,11 +56,11 @@ In total, 22,644 transcripts (9.7% of all examined transcripts) encoded an isofo
 
 Gene identifiers for all predicted protein isoforms as well as pLDDT scores and evolutionary conservation data from mouse can be found in Supplementary file 1. Predicted scores and GTEx expression data for all isoforms overlapping a MANE locus can be found in Supplementary file 2. All predicted protein structures as well as data for all tables in this paper are publicly available at our website, isoform.io.
 
-## Exemplary predictions
+### Exemplary predictions
 
 To illustrate the improvements in human gene annotation that can be obtained using accurate structure prediction, we describe a small set of proteins, selected from Supplementary file 3, where an alternate isoform appears to be superior to the isoform chosen for inclusion in MANE. For these examples, the alternative isoform is clearly functional based on structure as well as evolutionary conservation and, in some cases, additional expression evidence from RNA-seq data. For some of these examples, the MANE isoform is missing critical structural elements and may not be functional at all.
 
-## Acetylserotonin O-methyltransferase
+#### Acetylserotonin O-methyltransferase
 
 Acetylserotonin O-methyltransferase (ASMT, alternatively HIOMT) is responsible for the final catalytic step in the production of melatonin, a critical hormone in sleep, metabolism, immune response, and neuronal development (Melke et al., 2008). Depressed levels of circulating melatonin have been associated with autism spectrum disorder, and clinical studies have classified ASMT as a susceptibility gene due to the highly significant association between ASMT activity and autism (Melke et al., 2008; Rossignol and Frye, 2011).
 
@@ -68,7 +68,7 @@ The CHESS and GENCODE gene databases contain a 345aa isoform of ASMT (CHS.57426.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82556/elife-82556-fig2-v3.jpg)
 
-**Figure 2.:** O-methyltransferase (ASMT) isoform comparison.Comparison of predicted structures of ASMT, showing the 373aa isoform from Matched Annotation from NCBI and EMBL-EBI (MANE) (CHS.57426.2, RefSeq NM_001171038.2, GENCODE ENST00000381241.9) on the left, and a 345aa alternate isoform from Comprehensive Human Expressed SequenceS (CHESS) (CHS.57426.4, GENCODE ENST00000381229.9) on the right. The CHESS 345aa isoform closely matches the experimentally determined X-ray crystal structure of the biologically active protein (Botros et al., 2013), shown at the bottom.
+**Figure 2.:** Comparison of predicted structures of ASMT, showing the 373aa isoform from Matched Annotation from NCBI and EMBL-EBI (MANE) (CHS.57426.2, RefSeq NM_001171038.2, GENCODE ENST00000381241.9) on the left, and a 345aa alternate isoform from Comprehensive Human Expressed SequenceS (CHESS) (CHS.57426.4, GENCODE ENST00000381229.9) on the right. The CHESS 345aa isoform closely matches the experimentally determined X-ray crystal structure of the biologically active protein (Botros et al., 2013), shown at the bottom.
 
 We hypothesized that the highest scoring isoform of ASMT according to AlphaFold2 corresponds to the biologically active version of the protein. The score we use for these comparisons is the pLDDT score, which has been demonstrated to be a well-calibrated, consistent measure of protein structure prediction accuracy (Jumper et al., 2021; Tunyasuvunakool et al., 2021). A pLDDT score above 70 (the maximum is 100) indicates that a predicted structure can generally be trusted, while a score below 70 may indicate folding prediction failure or intrinsic disorder within a protein. Scores above 90 imply structure predictions accurate enough for highly shape-sensitive tasks such as chemical binding site characterization. The structure of the 345aa isoform has a very high pLDDT score of 94.7, versus the somewhat lower score of 87.1 for the 373aa MANE isoform.
 
@@ -76,7 +76,7 @@ Because melatonin is primarily synthesized within the human pineal gland at nigh
 
 Further evidence for the functionality of the 343aa isoform is shown in Figure 2. An ectopic exon in the MANE ASMT protein creates an unstructured loop that bulges out from the primary structure. The alternate isoform, missing this ectopic exon, closely matches the experimentally determined ASMT X-ray crystal structure of the biologically active protein. Furthermore, as reported in Botros et al., 2013, the insertion of exon 6, corresponding to the ectopic exon in the MANE isoform, distorts the structure and destroys its ability to bind S-adenosyl-L-methionine and to synthesize melatonin. Thus, the structural comparison, the expression evidence, and a melatonin synthesis activity assay all combine to support our hypothesis that the 345aa isoform represents the primary biologically functional isoform of ASMT.
 
-## Gamma-N crystallin
+#### Gamma-N crystallin
 
 Gamma-N crystallin (CRYGN) is a highly conserved member of the crystallin family of proteins, responsible for the transparency of the lens and cornea in vertebrate eyes (Andley, 2007). The intron-exon structure of CRYGN has been conserved across at least 400 million years of vertebrate evolution, with close orthologs present in the genomes of chimpanzees, mice, frogs, and the white-rumped snowfinch. Given this extensive evolutionary history, Wistow et al., 2005, were surprised to observe that the primate CRYGN gene has lost its canonical stop codon, leading them to conclude ‘the human gene has clearly changed its expression and may indeed be heading for extinction’.
 
@@ -88,13 +88,17 @@ As shown in Figure 3a, the MANE isoform (CHS.52273.5, RefSeq NM_144727.3, GENCOD
 
 Both the MANE and alternate isoforms are exactly the same length despite having different C-terminal sequence content. Visual comparison of the predicted structure for the alternate isoform reveals a marked improvement in the structure in the β domain and a clear recovery of CRYGN’s dimer-like characteristic, with two structurally similar domains as shown in Figure 3b and Video 1. Ramachandran plots (Figure 3c and d) also support the structure of the alternate CHESS isoform.
 
+![Video 1.](https://cdn.elifesciences.org/articles/82556/elife-82556-video1.mp4.jpg)
+
+**Video 1.:** A three-dimensional (3D) animation comparing the predicted protein structure of the Matched Annotation from NCBI and EMBL-EBI (MANE) isoform (CHS.52273.5, RefSeq NM_144727.3, GENCODE ENST00000337323.3) of gamma-N crystallin (CRYGN) versus the predicted protein structure for the highest-scoring CRYGN alternate isoform (CHS.52273.9, GENCODE ENST00000644350.1).
+
 Encouraged by the substantially improved folding of this alternate isoform, we examined the intron-exon structure of CRYGN in human to determine how it recovered its functional shape despite losing its original stop codon. We found that the common vertebrate four-exon structure of CRYGN has changed to a five-exon structure in humans, as shown in Figure 4. In the well-folded alternate isoform, a novel primate-specific splice site removes the last four amino acids as compared to other vertebrates, but the new primate-specific fifth exon contains a downstream stop codon that adds four residues. The poorly folding MANE isoform (Figure 4, bottom), in contrast, entirely skips the fourth exon, resulting in a frameshift that adds 43 C-terminal amino acids which have no similarity to any CRYGN sequence outside of primates.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82556/elife-82556-fig4-v3.jpg)
 
 **Figure 4.:** Comparison of gamma-N crystallin (CRYGN) transcript structures in frog, mouse, and human. Exons 1, 2, and 3 are highly conserved across all species. Exon 4 is missing from the poorly folding Matched Annotation from NCBI and EMBL-EBI (MANE) isoform, while exon 5 shows no homology to any species outside of primates. The loss of a stop codon in human exon 4 appears to be balanced by the inclusion of a short novel exon that adds only four amino acids to the final protein. Coding portions of exons are shown with thicker rectangles in teal. Intron lengths are reduced proportionately for the purpose of display.
 
-## Thioredoxin domain-containing protein 8
+#### Thioredoxin domain-containing protein 8
 
 The thioredoxin protein family represents an ancient group of highly conserved small globular proteins found in all forms of life (Modi et al., 2018). Thioredoxin domain-containing protein 8 (TXNDC8, alternatively PTRX3) is a testis-specific enzyme responsible for catalyzing redox reactions via the oxidation of cysteine from dithiol to disulfide forms (Jiménez et al., 2004).
 
@@ -110,7 +114,7 @@ All isoforms of TXNDC8 shown in Figure 5 were assembled from RNA-seq data during
 
 Assemblies of RNA-seq experiments typically reveal thousands of un-annotated gene isoforms, as was illustrated by the use of GTEx to discover more than 100,000 new isoforms when building the original CHESS gene database (Pertea et al., 2018). The approach used here, computationally folding each distinct protein encoded by alternate isoforms, allows us to compare the structure of these predicted proteins to the ‘best’ structure for each protein-coding gene locus. For those proteins with at least one high-confidence structure, this strategy may allow us to identify and remove potentially non-functional isoforms.
 
-## Interleukin 36 beta
+#### Interleukin 36 beta
 
 Interleukin 36 beta (IL36B, alternatively IL1F8, FIL1-ETA, or IL1H2) mediates inflammation as part of a signaling system in epithelial tissue. The pro-inflammatory properties of IL36B have been implicated in the pathogenesis of psoriasis (Carrier et al., 2011), a common disease characterized by scaly rashes on the skin. In vitro and in vivo studies have found consistently increased expression of IL36B in psoriatic lesions, making the gene a potential target for future anti-psoriatic drugs (Uppala et al., 2021).
 
@@ -122,7 +126,7 @@ The ColabFold structure of the IL36B MANE isoform (CHS.30565.1, RefSeq NM_014438
 
 Further probing the functionality of our high-scoring isoform, we aligned the predicted 3D structures for IL36B in human, mouse, and rat. As expected, the mouse and rat proteins aligned to each other remarkably well, with an RMSD of 0.60 Å. We found the low-scoring MANE protein aligned poorly to the structures for mouse and rat, averaging a distance of 2.74 Å, while the alternate isoform aligned far better with an RMSD of 0.76 Å. This close similarity in both sequence and structure to conserved orthologs in distant species strongly reinforces the argument that the alternate isoform represents the functional version of the protein in human.
 
-## Post-GPI attachment to proteins 2
+#### Post-GPI attachment to proteins 2
 
 The protein known as post-GPI attachment to proteins 2 (PGAP2, alternatively FRAG1 or CWH43N) is required for stable expression of glycosylphosphatidylinositol (GPI)-anchored proteins (Tashima et al., 2006) attached to the external cellular plasma membrane via a post-translational modification system ubiquitous in eukaryotes (Englund, 1993). Mutations in GPI pathway proteins have been linked to a wide variety of rare genetic disorders (Bellai-Dussault et al., 2019), while mutations in PGAP2 specifically have been shown to cause to intellectual disability, hyperphosphatasia, and petit mal seizures (Hansen et al., 2013).
 
@@ -134,7 +138,7 @@ Out of 85 GTEx-assembled transcripts for PGAP2 produced during the latest build 
 
 RNA-seq data from GTEx also showed that the higher scoring isoform, CHS.7860.59, was expressed in 8776 samples with an average expression level of 2.6 TPM, compared to only 4116 samples with a 0.9 TPM average for the MANE isoform. Comparing their intron-exon structure revealed that the MANE transcript has one extra exon (the second exon out of six). On average, across all 31 tissues in the GTEx data, five times more spliced reads supported skipping that exon, as in CHS.7860.59, rather than including it.
 
-## Functional splice variants may not fold well
+### Functional splice variants may not fold well
 
 Alternative splicing allows genes to code for multiple functional protein products (Matlin et al., 2005). Thus, rejecting all but the top-scoring isoform based on predicted structure may eliminate lower-scoring yet functional proteins. The risk of discarding functional transcripts by relying too heavily on the pLDDT score is well-illustrated by vascular endothelial growth factor B (VEGFB), a growth factor implicated in cancer and diabetes-related heart disease (Lal et al., 2018). The human VEGFB gene encodes two well-characterized protein isoforms: VEGFB-167 and VEGFB-186. Alternative splicing that skips part of the sixth exon in VEGFB-167 leads to sequestration of the protein to the cell surface due to a highly basic C-terminal heparin binding domain. Full inclusion of exon six in VEGFB-186 results in a soluble protein freely transported to the blood stream (Li, 2010).
 
@@ -144,7 +148,7 @@ Both isoforms shown in Figure 8 represent highly expressed and similarly functio
 
 **Figure 8.:** VEGFB isoforms VEGFB-186 (a) and VEGFB-167 (b). The inclusion of a heparin binding domain in VEGFB-167 results in sequestration to the cell surface while VEGFB-186 remains freely soluble. Relying solely on predicted local distance difference test (pLDDT) comparisons in this case would be misleading, as both isoforms represent well-understood functional protein products.
 
-## A novel protein-coding transcript in mouse
+### A novel protein-coding transcript in mouse
 
 While examining the evolutionary conservation of the 3D structure of TXNDC8 in human, we noticed that the predicted structure for the same gene in Mus musculus (house mouse) seemed to contain a poorly folded region similar to CHS.56446.6, a low-scoring human protein. Further inspection of TXNDC8 in the mouse genome revealed that the primary RefSeq transcript contains a misfolding fifth exon, while the alternate RefSeq transcript skips the misfolding exon, similar to the functional human isoform, shown in Figure 9. Interestingly, both mouse transcripts contain a third exon homologous to the sequence missing in the human MANE isoform. A BLASTP search of the misfolding exon resulted in only a single significant hit outside the order Rodentia to an unnamed protein product. In contrast, a BLASTP search of the third exon present in all mouse transcripts, homologous to the missing exon in the human MANE transcript, revealed significant hits to at least 31 homologs outside Rodentia.
 
@@ -160,7 +164,7 @@ In a further investigation of mouse TXNDC8 transcription, we aligned 8 gigabases
 
 We believe this represents the first experimentally confirmed novel isoform in any organism discovered due to a hypothesis derived from comparison of computationally predicted protein structures. All in all, the structure-guided identification and subsequent experimental confirmation of a novel functional TXNDC8 isoform in mouse demonstrates the potential of 3D protein structure prediction to enhance functional annotation in any genome.
 
-## A resource for human annotation
+### A resource for human annotation
 
 The examples discussed here are only a small subset of the 130,700 unique protein structures we generated at 20,817 human gene loci. These structures and associated pLDDT scores have already been used to avoid filtering out transcripts encoding functional, clinically relevant isoforms while building the latest version of the CHESS human gene catalog. We provide all of these structures as a searchable and downloadable database, at isoform.io, to create a public resource for improving the annotation of the human genome. The large majority of CHESS isoforms in this collection have direct support from RNA-seq data, as they were assembled from the large GTEx collection, a high-quality set of deep RNA-seq experiments across dozens of human tissues. A very small number of MANE proteins were not assembled from GTEx data, but structures of these too are included in this analysis so that no MANE genes would be omitted.
 
@@ -176,38 +180,38 @@ We expect computational protein structure prediction to become an indispensable 
 
 Although we restricted our analysis to whole-protein comparisons, comparing local structural portions of a protein, potentially near shape-sensitive ligand binding sites (Greer et al., 1994), may enable similar analysis in these proteins. Further advances in predicting structures for multi-chain protein complexes (Evans et al., 2022), as well as improvements in prediction efficiency in large proteins, may expand the range of genes that may be analyzed. An important caveat is that in some cases, truly functional isoforms may receive low predicted folding scores relative to well-folded functional alternate isoforms within the same gene. Thus, structure prediction alone is not always sufficient to make functional claims about any individual protein isoform.
 
-## Ideas and speculation
+### Ideas and speculation
 
 Though the complete sequence of the human genome has been revealed (Nurk et al., 2022), the annotation of the human genome, by far the most comprehensively studied, remains far from finished. The use of accurate predicted protein structures for gene annotation, as we have done here, represents a new paradigm, not only for human gene discovery but for all other species as well. For decades, the scientific community has relied principally on two methods to discover and validate protein-coding genes at the genome scale: sequencing of transcripts (or cDNAs), and alignment of DNA and protein sequences to detect evolutionary conservation in other species. Protein structure holds valuable information regarding biological functionality, providing an independent and powerful tool to complement these methods. The analysis described here takes a first step toward improving genome annotation of humans using structure prediction, but specific methods deploying this powerful new tool on a broader scale will require fundamentally new computational strategies. As such, development of comprehensive genome annotation protocols incorporating protein structure prediction will remain an area of active investigation for years to come.
 
 ## Materials and methods
 
-## Protein structure prediction
+### Protein structure prediction
 
 We folded all transcripts in the CHESS annotation less than 1000 amino acids in length. Similar to the initial effort to fold the human proteome (Tunyasuvunakool et al., 2021), the length limit was chosen to make the overall computational runtime feasible. This yielded 233,973 transcripts representing 127,398 unique protein-coding sequences at 20,666 loci. Coding sequences for CHESS transcripts were determined with ORFanage (Varabyou et al., 2021). For each protein sequence, we generated a multiple sequence alignment by aligning them with ColabFold’s MMseqs2 (Steinegger and Söding, 2017) workflow (colabfold_search) against the UniRef100 (Suzek et al., 2015) (2021/03) and ColabFoldDB (2021/08) database. Structure predictions were made with ColabFold (commit 3398d3) using AlphaFold2 and MMseqs2 version 13.45111. To speed up the search, we set the sensitivity setting to 7 (-s 7). We predicted each structure using colabfold_batch and stopped the process early if a pLDDT of at least 85 was reached by any model (--stop-at-score 85) or if a model produced a pLDDT less than 70 (--stop-at-score-below 70). All models were ranked by pLDDT in descending order. Runtime was estimated from a sample of 500 proteins randomly selected from the 127,398 structures. Prediction of all structures on 8 × A5000 GPUs required 34 days. Multiple sequence alignment took 34 hr using MMseqs2 on an AMD EPYC 7742 CPU with 64 cores.
 
-## Filtering MANE comparisons
+### Filtering MANE comparisons
 
 To generate the 940 protein isoforms in Supplementary file 3, we used the following filtering criteria and procedures. For each isoform with a distinct coding sequence located at a MANE v1.0 locus and with coding sequence overlapping a MANE annotated protein, we compared the pLDDT score to that of the associated MANE protein. As described previously, pLDDT is a reliable measure of the confidence in a structure, where predictions with 70 ≤ pLDDT ≤ 90 are confident, those with pLDDT >90 are highly confident, and those below 50 represent low-confidence structures and may be disordered proteins (Varadi et al., 2022). We only considered alternative isoforms that had a pLDDT score ≥70, indicating a generally well-folded protein, to avoid including any intrinsically disordered proteins (Ruff and Pappu, 2021). Filtering and general analysis was performed in Colab (https://colab.research.google.com) with Python version 3.8.15.
 
 We selected isoforms that, when compared to the MANE isoform for the same gene, scored at least 5% higher as measured by pLDDT and were at least 90% as long. Additionally, to capture cases where the MANE transcript might be missing functional sequence elements, we selected alternate isoforms that were at least 5% longer than the MANE isoform, that had equal or higher pLDDT scores, and that were assembled in an equal or higher number of GTEx samples. Finally, to capture cases where an alternate isoform might be functional despite being substantially shorter than the MANE protein, we selected isoforms at least 50% as long as the MANE protein where the alternate isoform scored at least 5% higher and was assembled in an equal or higher number of GTEx samples. After applying these filters, we observed that in some cases, a processed pseudogene (Zhang et al., 2002) contained within an intron outscored the associated primary transcript. To eliminate such cases, we used GFFcompare (Pertea and Pertea, 2020) to ensure that isoforms overlapped their MANE transcript’s coding sequence. When multiple alternate isoforms contained the same coding sequence, and thus received the same pLDDT score, we selected the isoform assembled in the highest number of GTEx samples.
 
-## Annotation sources
+### Annotation sources
 
 Transcript annotations for MANE, CHESS, RefSeq, and GENCODE were retrieved from the following sources. The MANE v1.0 database was downloaded from NCBI at https://www.ncbi.nlm.nih.gov/refseq/MANE. Annotations from the CHESS v3.0 database were retrieved from http://ccb.jhu.edu/chess. Additional CHESS annotations came from an unpublished set of transcript assemblies created as part of the process of building CHESS v3.0; these were assembled from approximately 10,000 GTEx RNA-seq experiments across 31 tissues using StringTie2 (Kovaka et al., 2019). Transcripts from this set were given a CHESS ID starting in ‘hypothetical’ if the locus was missing from CHESS v3.0, or else given an ID ending in ‘altN’ if the locus was present in CHESS v3.0 but the exact isoform was not. Note that many of these, particularly those with a poor protein folding score, were not retained in the final CHESS v3.0 database. RefSeq annotations (releases 109 and 110) were downloaded from https://www.ncbi.nlm.nih.gov/projects/genome/guide/human/index.shtml. GENCODE (v38, v39, v40) annotations were collected from https://www.gencodegenes.org/human/.
 
-## Visualization and atomic alignment
+### Visualization and atomic alignment
 
 All visualizations and 3D protein structure atomic alignments were performed in PyMol (Schrödinger, 2015) version 2.5.2 using non-orthoscopic view, white background, and ray trace 1200,1200. RMSD were calculated without excluding any outliers. Ramachandran plots were created using PyRAMA version 2.0.2 with Richardson (Lovell et al., 2003) standard psi and phi values for all amino acids excluding glycine and proline. Intron-exon structure plots were produced with MISO (Katz et al., 2010) (commit b714021) and TieBrush (Varabyou et al., 2021) (commit e986d64).
 
-## RNA-seq quantification of the human ASMT gene
+### RNA-seq quantification of the human ASMT gene
 
 RNA-seq data were downloaded from NCBI for run SRR5756467 from BioSample SAMN07278516, a pineal gland from a patient who died at midnight. A detailed summary of the experimental protocol used to generate these data can be found in NCBI BioProject PRJNA391921. Isoform-level quantification was performed using Salmon (Patro et al., 2017) version 1.8.0.
 
-## RNA-seq assembly of mouse TXNDC8
+### RNA-seq assembly of mouse TXNDC8
 
 RNA-seq data were downloaded for run SRR18337982 from BioSample SAMN26725167, a tissue sample from the testis of a control mouse. A detailed summary of the experimental protocol used to generate these data can be found in NCBI BioProject PRJNA816862. cDNA reads were aligned to the mm39 reference genome using HISAT2 (Kim et al., 2019) version 2.1.0 then assembled into transcripts using StringTie2 (Kovaka et al., 2019) version 2.2.1.
 
-## Intron conservation in human and mouse
+### Intron conservation in human and mouse
 
 We assessed the conservation of GT-AG intron boundaries between CHESS human transcripts and transcripts from the GRCm38 mouse reference genome. Data for the human-mouse alignment was extracted from a 30-species alignment anchored on GRCh38 that was downloaded from the UCSC genome browser (Navarro Gonzalez et al., 2021). We used MafIO in BioPython (Cock et al., 2009) version 1.71 to check if all intron boundaries were conserved between mouse and human transcripts. In the supplementary files, a value of ‘TRUE’ in the ‘introns in mouse’ column indicates that all boundaries were conserved, while ‘FALSE’ means that at least one splice site (either a GT at a donor site or an AG at an acceptor site) was not conserved in the alignment.

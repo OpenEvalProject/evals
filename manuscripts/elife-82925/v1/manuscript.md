@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00f7hpc57 Friedrich-Alexander-Universität Erlangen-Nürnberg, Institute of Applied Mechanics Erlangen Germany
-2. https://ror.org/0030f2a11 University Hospitals Erlangen, Institute of Neuropathology Erlangen Germany
+1. Friedrich-Alexander-Universität Erlangen-Nürnberg, Institute of Applied Mechanics Erlangen Germany ([ROR:00f7hpc57](https://ror.org/00f7hpc57))
+2. University Hospitals Erlangen, Institute of Neuropathology Erlangen Germany ([ROR:0030f2a11](https://ror.org/0030f2a11))
 
 † Corresponding author
 
@@ -53,67 +53,284 @@ To numerically study the effect of the VZ and the OSVZ on the resulting folding 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig2-v1.jpg)
 
-**Figure 2.:** The reference configuration  represents the initial state of the brain at gestational week (GW) 11. The spatial configuration ℬ0 represents the state of the brain at any time ℬt during development. The stress-free (intermediate) growth configuration t is inserted between reference and spatial configurations. (ℬgA) Simulation domain representing a part of the human brain’s frontal lobe. (B) Distribution of model parameters () along the brain’s radial direction r1c,r2c,v,anddccr from the ventricular surface to the outer cortical surface.i
+**Figure 2.:** The reference configuration $ℬ_{0}$ represents the initial state of the brain at gestational week (GW) 11. The spatial configuration $ℬ_{t}$ represents the state of the brain at any time $t$ during development. The stress-free (intermediate) growth configuration $ℬ_{g}$ is inserted between reference and spatial configurations. (A) Simulation domain representing a part of the human brain’s frontal lobe. (B) Distribution of model parameters ($r_{1}^{c},r_{2}^{c},v,andd^{cc}$) along the brain’s radial direction ri from the ventricular surface to the outer cortical surface.
 
-## Kinematics
+### Kinematics
 
-To mathematically describe brain growth, we use the theory of nonlinear continuum mechanics supplemented by the theory of finite growth (Rodriguez et al., 1994; Göktepe et al., 2010). The initial state of the brain at an early stage of development, around gestational week 11, is represented by the reference configuration ℬ0. The state of the brain at time t later during development is represented by the spatial configuration Bt. The deformation map x=φ(X,t) maps a reference point X∈B0⊂R3 to its new position x∈Bt⊂R3 at a specific time t, as illustrated in Figure 2. The derivative of the deformation map with respect to reference point position vector is called deformation gradient F=∇Xφ. The local volume change of a volume element is described by the Jacobian J=detF.
+To mathematically describe brain growth, we use the theory of nonlinear continuum mechanics supplemented by the theory of finite growth (Rodriguez et al., 1994; Göktepe et al., 2010). The initial state of the brain at an early stage of development, around gestational week 11, is represented by the reference configuration $ℬ_{0}$. The state of the brain at time $t$ later during development is represented by the spatial configuration $B_{t}$. The deformation map $x=\phi(X,t)$ maps a reference point $X\inB_{0}⊂R^{3}$ to its new position $x\inB_{t}⊂R^{3}$ at a specific time $t$, as illustrated in Figure 2. The derivative of the deformation map with respect to reference point position vector is called deformation gradient $F=∇_{X}\phi$. The local volume change of a volume element is described by the Jacobian $J=detF$.
 
-Following the theory of finite growth (Rodriguez et al., 1994; Göktepe et al., 2010), we introduce a stress-free configuration between the reference and spatial configuration, the growth configuration Bg. Accordingly, the deformation gradient is multiplicatively decomposed into an elastic deformation tensor Fe and a growth tensor Fg, such that,(1)F=Fe⋅Fg.
+Following the theory of finite growth (Rodriguez et al., 1994; Göktepe et al., 2010), we introduce a stress-free configuration between the reference and spatial configuration, the growth configuration $B_{g}$. Accordingly, the deformation gradient is multiplicatively decomposed into an elastic deformation tensor $F^{e}$ and a growth tensor $F^{g}$, such that,
+
+$$
+F=F^{e}⋅F^{g}.
+$$
 
 The elastic deformation tensor describes the purely elastic deformation of the brain under the effect of external forces or forces generated internally to preserve tissue continuity. On the other hand, the growth tensor controls the amount and directions of unconstrained expansion. We note that the elastic deformation tensor is reversible, while the growth tensor is not.
 
-To not only predict brain growth but also its relation to cellular processes during brain development, we introduce the spatial cell density c(x,t) as an additional scalar independent field that depends on the spatial point position and time. It represents the number of neurons per unit area (de Rooij and Kuhl, 2018) in 2D and per unit volume in 3D. The corresponding balance equation describes cell division – resulting in newborn cells – through appropriate source terms and cell migration – the directed movement of neurons – through appropriate flux terms.
+To not only predict brain growth but also its relation to cellular processes during brain development, we introduce the spatial cell density $c(x,t)$ as an additional scalar independent field that depends on the spatial point position and time. It represents the number of neurons per unit area (de Rooij and Kuhl, 2018) in 2D and per unit volume in 3D. The corresponding balance equation describes cell division – resulting in newborn cells – through appropriate source terms and cell migration – the directed movement of neurons – through appropriate flux terms.
 
 For the two unknown fields, the deformation and the cell density, we introduce not only balance but also constitutive equations in the following that then allow us to compute their evolution in space and time through numerical simulations. We explain how we mathematically describe the mechanical (growth) problem and cellular processes as well as how those are linked to capture feedback mechanisms between cellular processes, mechanics, and growth.
 
-## Mechanical problem
+### Mechanical problem
 
-To govern the mechanical problem, we use the balance of linear momentum given in the spatial configuration Bt,(2)∇x⋅σ=0withσ=σ(Fe),
+To govern the mechanical problem, we use the balance of linear momentum given in the spatial configuration $B_{t}$,
 
-where ∇x is the spatial gradient operator and σ is the Cauchy stress tensor formulated in terms of the elastic deformation tensor, as only the elastic deformation induces stresses. The Cauchy stress describes the 3D stress state in the spatial (grown and deformed) configuration and is computed by deriving the strain energy function ψg with respect to elastic deformation tensor,(3)σ(Fe)=1Je∂ψg(Fe)∂Fe⋅FeT,
+$$
+∇_{x}⋅\sigma=0with\sigma=\sigma(F^{e}),
+$$
 
-where Je=detFe. The strain energy function describes the material behavior of brain tissue mathematically. In our case, we consider a nonlinear hyperelastic material model as viscous effects, which have been observed for higher strain rates, become less relevant in the case of a slow process like brain development occurring over the course of weeks and months, as discussed in Budday et al., 2020. Our previous studies have shown that the isotropic neo-Hookean constitutive model best represents the material behavior of brain tissue during cortical folding (Budday et al., 2020). The corresponding strain energy function ψg is given as(4)ψg(Fe)=12λIn2(Je)+12μ(ri)[Fe:Fe−3−2In(Je)],
+where $∇_{x}$ is the spatial gradient operator and $\sigma$ is the Cauchy stress tensor formulated in terms of the elastic deformation tensor, as only the elastic deformation induces stresses. The Cauchy stress describes the 3D stress state in the spatial (grown and deformed) configuration and is computed by deriving the strain energy function $ψ_{g}$ with respect to elastic deformation tensor,
 
-where μ and λ are the Lamé parameters. We use the nonlinear Heaviside function that is given in the general form as H(x;γ)=eγx/(1+eγx) to guarantee a smooth transition from the cortex to the subcortical plate with distinct mechanical parameters,(5)μ(ri)=μs+[[μc−μs]×H(ri−rcp;20)],
+$$
+\sigma(F^{e})=\frac{1}{J^{e}}\frac{∂ψ_{g}(F^{e})}{∂F^{e}}⋅F^{e}^{T},
+$$
 
-where the Heaviside function exponent γ equals 20. Please note that we will later use a different value of γ to serve numerical and geometrical requirements regarding the nature of the transition: higher values will lead to sharper transitions, lower values to smaller transitions. A more detailed discussion on the role of the value of γ can be found in Zarzor et al., 2021. Our recent numerical simulation study suggested that the cortical stiffness continuously changes during human brain development due to the changes in the local microstructure (Zarzor et al., 2021). Accordingly, we formulate the cortical shear modulus μc as a function of the cell density,(6)μc(c)={μ∞ifc≥cmax,μs+mc(c−cmin)ifcmax>c>cmin,μsifc≤cmin.
+where $J^{e}=detF^{e}$. The strain energy function describes the material behavior of brain tissue mathematically. In our case, we consider a nonlinear hyperelastic material model as viscous effects, which have been observed for higher strain rates, become less relevant in the case of a slow process like brain development occurring over the course of weeks and months, as discussed in Budday et al., 2020. Our previous studies have shown that the isotropic neo-Hookean constitutive model best represents the material behavior of brain tissue during cortical folding (Budday et al., 2020). The corresponding strain energy function $ψ_{g}$ is given as
 
-It increases with increasing cell density in the range μc⁢(c)∈[μs,μ∞], while the subcortical shear modulus μs remains constant. The slope is defined as mc=μ∞-μs/cmax-cmin and the stiffness ratio as βμ=μ∞/μs. Through Equation 6, the cell density problem controls the effective stiffness ratio between cortex and subcortex (as the cortical stiffness changes while the subcortical stiffness remains constant) and thus also the emerging cortical folding pattern (Budday et al., 2014; Zarzor et al., 2021).
+$$
+ψ_{g}(F^{e})=\frac{1}{2}\lambdaIn^{2}(J^{e})+\frac{1}{2}\mu(r_{i})[F^{e}:F^{e}−3−2In(J^{e})],
+$$
 
-## Mechanical growth problem
+where μ and $\lambda$ are the Lamé parameters. We use the nonlinear Heaviside function that is given in the general form as $H(x;\gamma)=e^{\gammax}/(1+e^{\gammax})$ to guarantee a smooth transition from the cortex to the subcortical plate with distinct mechanical parameters,
 
-The growth tensor introduced in the Kinematics section is a key feature in our model that links the cell density problem with the mechanical problem. As it controls the amount and direction of growth, we need to consider how cellular processes affect the physiological growth behavior in order to find an appropriate formulation. During cellular migration, the subcortical layers expand isotropically. Then, under the effect of neuronal connectivity, the cortex grows – more pronounced in circumferential than in radial direction – as illustrated in Figure 2. Thus, we introduce the growth tensor as(7)Fg=ϑ⊥[I−N⊗N]+ϑ∥N⊗N,
+$$
+\mu(r_{i})=\mu_{s}+[[\mu_{c}−\mu_{s}]\timesH(r_{i}−r_{cp};20)],
+$$
 
-where N is the normal vector in the reference configuration B0 (it is linked to the spatial normal vector through N=F−1⋅n), while ϑ⊥ and ϑ∥ denote the growth multipliers in circumferential and radial direction, respectively. Those multipliers control the amount of growth as a function of the cell density,(8)ϑ⊥=[1+κ⊥(ri)c]αandϑ∥=[1+κ∥(ri)c]α,
+where the Heaviside function exponent $\gamma$ equals 20. Please note that we will later use a different value of $\gamma$ to serve numerical and geometrical requirements regarding the nature of the transition: higher values will lead to sharper transitions, lower values to smaller transitions. A more detailed discussion on the role of the value of $\gamma$ can be found in Zarzor et al., 2021. Our recent numerical simulation study suggested that the cortical stiffness continuously changes during human brain development due to the changes in the local microstructure (Zarzor et al., 2021). Accordingly, we formulate the cortical shear modulus $\mu_{c}$ as a function of the cell density,
 
-where κ⊥ and κ∥ are the growth factors in the circumferential and radial direction, respectively, and α is the growth exponent. To ensure isotropic growth in the subcortical layers, we formulate those factors as a function of the radius ri, such that(9)κ⊥(ri)=κs+[κs[βκ−1]×H(ri−rcp;20)]and(10)κ∥(ri)=κs+[κs[1βκ−1]×H(ri−rcp;20)],
+$$
+\mu_{c}(c)={\mu_{∞}ifc\geqc_{max},\mu_{s}+m_{c}(c−c_{min})ifc_{max}>c>c_{min},\mu_{s}ifc\leqc_{min}.
+$$
 
-where κs is the growth factor in the subcortical layers, and βκ is the growth ratio between κ⊥ and κs (Zarzor et al., 2021). Through Equation 8, the amount of growth is directly related to the cell density – the higher the cell density, the more growth.
+It increases with increasing cell density in the range $\mu_{c}⁢(c)\in[\mu_{s},\mu_{∞}]$, while the subcortical shear modulus $\mu_{s}$ remains constant. The slope is defined as $m_{c}=\mu_{∞}-\mu_{s}/c_{max}-c_{min}$ and the stiffness ratio as $\beta_{\mu}=\mu_{∞}/\mu_{s}$. Through Equation 6, the cell density problem controls the effective stiffness ratio between cortex and subcortex (as the cortical stiffness changes while the subcortical stiffness remains constant) and thus also the emerging cortical folding pattern (Budday et al., 2014; Zarzor et al., 2021).
 
-## Cell density problem
+### Mechanical growth problem
 
-We formulate the balance equation of the cell density problem in such a way that we can mathematically describe the different cellular processes occurring at the microscopic scale. Temporal changes in the cell density field are kept in balance by source and flux terms. The balance equation given in the spatial configuration ℬt follows as(11)J˙Jc+c˙=−∇x⋅[v^(c,x)c−dcc(x)⋅∇xc]+r1c(x,s)+r2c(x,s),
+The growth tensor introduced in the Kinematics section is a key feature in our model that links the cell density problem with the mechanical problem. As it controls the amount and direction of growth, we need to consider how cellular processes affect the physiological growth behavior in order to find an appropriate formulation. During cellular migration, the subcortical layers expand isotropically. Then, under the effect of neuronal connectivity, the cortex grows – more pronounced in circumferential than in radial direction – as illustrated in Figure 2. Thus, we introduce the growth tensor as
 
-where the first flux term v^(x)c represents the migration in the subcortical plate, the second flux term dcc(x)⋅∇xc represents the neuronal connectivity in the cortex, the first source term r1c(x,s) represents cell proliferation in the VZ, and the second source term r2c(x,s) cell proliferation in the OSVZ. The migration velocity vector v^(x) guides the cells along radial glial cell fibers and controls their speed,(12)v^(x)=H(c−c0;γc)v(ri)n/∥n∥.
+$$
+F^{g}=ϑ^{⊥}[I−N⊗N]+ϑ^{∥}N⊗N,
+$$
 
-The vector n represents the normalized orientation of radial glial cell fibers in the spatial configuration and controls the migration direction of neurons. As the brain grows and folds, the fiber direction changes. Through this feedback mechanism, the mechanical growth problem affects how neurons migrate and the cell density evolves locally. The nonlinear regularized Heaviside function ℋ⁢(c-c0;γc) with the Heaviside exponent γc links the migration speed with the cell density field. Accordingly, the cells start to migrate only when their density exceeds the critical threshold c0. The value v specifies the maximum migration speed of each individual cell in the domain. To ensure that this value vanishes smoothly at the cortex boundary rcp, we formulate it as a function of the radial position ri, as shown in Figure 2B, such that (13)v(ri)=v[1−H(ri−rcp;10)].
+where $N$ is the normal vector in the reference configuration $B_{0}$ (it is linked to the spatial normal vector through $N=F^{−1}⋅n$), while $ϑ^{⊥}$ and $ϑ^{∥}$ denote the growth multipliers in circumferential and radial direction, respectively. Those multipliers control the amount of growth as a function of the cell density,
 
-After the cells reach the cortex, they diffuse isotropically, as described by the diffusion tensor dcc(x)=(dcc(ri)+vc(c)) I with the diffusivity dcc, the artificial viscosity vc(c), and the second order unit tensor I. The artificial viscosity term vc(c) serves as a numerical stabilization to avoid numerical oscillations associated with the advection-diffusion equation. It only acts when the actual cell density does not satisfy the balance equation and ensures more reliable results without having a particular physical meaning. The diffusivity is defined as a function of the radial position ri to act only in the cortex, (14)dcc(ri)=dccH(ri−rcp;10).
+$$
+ϑ^{⊥}=[1+κ^{⊥}(r_{i})c]^{\alpha}andϑ^{∥}=[1+κ^{∥}(r_{i})c]^{\alpha},
+$$
 
-The first source term r1c represents the radial glial cell proliferation in the VZ, as demonstrated in Figure 2B, and is given as (15)r1c(x,s)=Gvzs(s)[1−H(ri−rvz;50)]with(16)G{∙}s(s)=G{∙}−{(s−1)G{∙}ifs<1.80.8G{∙}else
+where $κ^{⊥}$ and $κ^{∥}$ are the growth factors in the circumferential and radial direction, respectively, and $\alpha$ is the growth exponent. To ensure isotropic growth in the subcortical layers, we formulate those factors as a function of the radius ri, such that
 
-where rvz is the outer radial boundary of the VZ and Gvzs is the division rate in the VZ as a function of the maximum stretch s in the domain. By applying Equation 16 for the VZ, we ensure that the division rate decreases from its initial value Gvz to a smaller value as the maximum stretch value s in the domain increases, i.e., with increasing gestational age. This constitutes an additional feedback mechanism between the mechanical growth problem and the cell density problem: As the maximum stretch and thus the deformation increases due to constrained cortical growth, the division rate in the VZ decreases, resulting in less newborn cells.
+$$
+κ^{⊥}(r_{i})=κ_{s}+[κ_{s}[\beta_{κ}−1]\timesH(r_{i}−r_{cp};20)]and
+$$
 
-Besides the proliferation of radial glial cells around the cerebral ventricles in the VZ, the ORGCs proliferate in the OSVZ. To capture this effect, we add a second source term r2c, as demonstrated in Figure 2B. The second source term is given as(17)r2c(x,s)=Gosvzs(s)[H(ri−risvz;50)−H(ri−rosvz(t);50)],
 
-where risvz is the outer radial boundary of the inner subventricular zone and Gosvzs is the division rate in the OSVZ that again decreases with increasing maximum stretch s in the domain. To numerically capture the expansion of the OSVZ under the effect of MST of ORGCs, we formulate the outer radial boundary of the OSVZ as a function of time, such that,rosvz=risvz+mmstt, where mmst is introduced as the MST factor. Again, we apply Equation 16 for the OSVZ, but in this case with the initial division rate G{osvz}.
 
-## Model parameters and boundary conditions
+$$
+κ^{∥}(r_{i})=κ_{s}+[κ_{s}[\frac{1}{\beta_{κ}}−1]\timesH(r_{i}−r_{cp};20)],
+$$
 
-In this work, we will consider two different cases regarding the mechanical model: The first case considers a varying cortical stiffness as introduced in the Mechanical problem section, while the second case assumes a constant cortical stiffness, i.e., μc=μ∞=constant. While our previous study had suggested that the simulations with varying cortical stiffness lead to morphologies that better agree with those in the actual human brain (Zarzor et al., 2021), we still consider both cases in the following, varying stiffness and constant stiffness, as the situation might change when including the OSVZ and we aim to investigate corresponding interdependency effects. Table 1 summarizes the model parameters that are used in the simulation for the 2D case. We will refer to the parameters changes in the 3D case later when we present the corresponding results to avoid confusion. The mechanical and diffusion parameters are adapted from the literature (Budday et al., 2020; de Rooij and Kuhl, 2018), while the geometry parameters are estimated based on histologically stained human brain sections and magnetic resonance images. For instance, to determine the MST factor, we measured the relative distance between the inner subventricular zone and OSVZ in histologically stained images. The final value adopted is the result of dividing the measured distance by the expected time. When determining the growth problem parameters, numerical stability and algorithm convergence were major criteria.
+where $κ_{s}$ is the growth factor in the subcortical layers, and $\beta_{κ}$ is the growth ratio between $κ^{⊥}$ and $κ_{s}$ (Zarzor et al., 2021). Through Equation 8, the amount of growth is directly related to the cell density – the higher the cell density, the more growth.
 
-We have previously thoroughly studied the effect of the stiffness ratio on the resulting folding pattern (Zarzor et al., 2021). Here, we choose a stiffness ratio of 8 for the constant stiffness case and a ratio of 3 for the varying stiffness case. Those values led to the best agreement of simulation results with data from stained histological sections regarding the local gyrification index value and the thickness ratio between gyri and sulci. For more details, we refer to Zarzor et al., 2021. We note that the tissue shows a stiffer behavior in the case of constant stiffness than in the case of varying stiffness for the same value of the stiffness ratio. For that reason, a higher stiffness ratio (lower stiffness in the subcortical layers since the final cortical stiffness μ∞ is constant in both cases) is required in the case of constant stiffness to achieve a similar level of folding.
+### Cell density problem
+
+We formulate the balance equation of the cell density problem in such a way that we can mathematically describe the different cellular processes occurring at the microscopic scale. Temporal changes in the cell density field are kept in balance by source and flux terms. The balance equation given in the spatial configuration $ℬ_{t}$ follows as
+
+$$
+\frac{J˙}{J}c+c˙=−∇_{x}⋅[v^(c,x)c−d^{cc}(x)⋅∇_{x}c]+r_{1}^{c}(x,s)+r_{2}^{c}(x,s),
+$$
+
+where the first flux term $v^(x)c$ represents the migration in the subcortical plate, the second flux term $d^{cc}(x)⋅∇_{x}c$ represents the neuronal connectivity in the cortex, the first source term $r_{1}^{c}(x,s)$ represents cell proliferation in the VZ, and the second source term $r_{2}^{c}(x,s)$ cell proliferation in the OSVZ. The migration velocity vector $v^(x)$ guides the cells along radial glial cell fibers and controls their speed,
+
+$$
+v^(x)=H(c−c_{0};\gamma_{c})v(r_{i})n/∥n∥.
+$$
+
+The vector $n$ represents the normalized orientation of radial glial cell fibers in the spatial configuration and controls the migration direction of neurons. As the brain grows and folds, the fiber direction changes. Through this feedback mechanism, the mechanical growth problem affects how neurons migrate and the cell density evolves locally. The nonlinear regularized Heaviside function $ℋ⁢(c-c_{0};\gamma_{c})$ with the Heaviside exponent $\gamma_{c}$ links the migration speed with the cell density field. Accordingly, the cells start to migrate only when their density exceeds the critical threshold c0. The value v specifies the maximum migration speed of each individual cell in the domain. To ensure that this value vanishes smoothly at the cortex boundary $r_{cp}$, we formulate it as a function of the radial position ri, as shown in Figure 2B, such that
+
+$$
+v(r_{i})=v[1−H(r_{i}−r_{cp};10)].
+$$
+
+After the cells reach the cortex, they diffuse isotropically, as described by the diffusion tensor $d^{cc}(x)=(d^{cc}(r_{i})+v_{c}(c))$ I with the diffusivity dcc, the artificial viscosity $v_{c}(c)$, and the second order unit tensor I. The artificial viscosity term $v_{c}(c)$ serves as a numerical stabilization to avoid numerical oscillations associated with the advection-diffusion equation. It only acts when the actual cell density does not satisfy the balance equation and ensures more reliable results without having a particular physical meaning. The diffusivity is defined as a function of the radial position ri to act only in the cortex,
+
+$$
+d^{cc}(r_{i})=d^{cc}H(r_{i}−r_{cp};10).
+$$
+
+The first source term $r_{1}^{c}$ represents the radial glial cell proliferation in the VZ, as demonstrated in Figure 2B, and is given as
+
+$$
+r_{1}^{c}(x,s)=G_{vz}^{s}(s)[1−H(r_{i}−r_{vz};50)]with
+$$
+
+
+
+$$
+G_{{∙}}^{s}(s)=G_{{∙}}−{(s−1)G_{{∙}}ifs<1.80.8G_{{∙}}else
+$$
+
+where $r_{vz}$ is the outer radial boundary of the VZ and $G_{vz}^{s}$ is the division rate in the VZ as a function of the maximum stretch $s$ in the domain. By applying Equation 16 for the VZ, we ensure that the division rate decreases from its initial value $G_{vz}$ to a smaller value as the maximum stretch value $s$ in the domain increases, i.e., with increasing gestational age. This constitutes an additional feedback mechanism between the mechanical growth problem and the cell density problem: As the maximum stretch and thus the deformation increases due to constrained cortical growth, the division rate in the VZ decreases, resulting in less newborn cells.
+
+Besides the proliferation of radial glial cells around the cerebral ventricles in the VZ, the ORGCs proliferate in the OSVZ. To capture this effect, we add a second source term $r_{2}^{c}$, as demonstrated in Figure 2B. The second source term is given as
+
+$$
+r_{2}^{c}(x,s)=G_{osvz}^{s}(s)[H(r_{i}−r_{isvz};50)−H(r_{i}−r_{osvz}(t);50)],
+$$
+
+where $r_{isvz}$ is the outer radial boundary of the inner subventricular zone and $G_{osvz}^{s}$ is the division rate in the OSVZ that again decreases with increasing maximum stretch $s$ in the domain. To numerically capture the expansion of the OSVZ under the effect of MST of ORGCs, we formulate the outer radial boundary of the OSVZ as a function of time, such that,$r_{osvz}=r_{isvz}+m_{mst}t$, where $m_{mst}$ is introduced as the MST factor. Again, we apply Equation 16 for the OSVZ, but in this case with the initial division rate $G_{{osvz}}$.
+
+### Model parameters and boundary conditions
+
+In this work, we will consider two different cases regarding the mechanical model: The first case considers a varying cortical stiffness as introduced in the Mechanical problem section, while the second case assumes a constant cortical stiffness, i.e., $\mu_{c}=\mu_{∞}=constant$. While our previous study had suggested that the simulations with varying cortical stiffness lead to morphologies that better agree with those in the actual human brain (Zarzor et al., 2021), we still consider both cases in the following, varying stiffness and constant stiffness, as the situation might change when including the OSVZ and we aim to investigate corresponding interdependency effects. Table 1 summarizes the model parameters that are used in the simulation for the 2D case. We will refer to the parameters changes in the 3D case later when we present the corresponding results to avoid confusion. The mechanical and diffusion parameters are adapted from the literature (Budday et al., 2020; de Rooij and Kuhl, 2018), while the geometry parameters are estimated based on histologically stained human brain sections and magnetic resonance images. For instance, to determine the MST factor, we measured the relative distance between the inner subventricular zone and OSVZ in histologically stained images. The final value adopted is the result of dividing the measured distance by the expected time. When determining the growth problem parameters, numerical stability and algorithm convergence were major criteria.
+
+**Table 1.**
+ Model parameters in the two-dimensional case.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">Geometry parameters</th>
+      <th colspan="4">Cell density problem parameters</th>
+    </tr>
+    <tr>
+      <th colspan="2">Parameter</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th colspan="2">Parameter</th>
+      <th>Value</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Outer brain radius</td>
+      <td>R</td>
+      <td>2</td>
+      <td>mm</td>
+      <td>Division rate in VZ</td>
+      <td>Gvz</td>
+      <td>[30-120]</td>
+      <td>mm–2d–1</td>
+    </tr>
+    <tr>
+      <td>Inner brain radius</td>
+      <td>r</td>
+      <td>0.4</td>
+      <td>mm</td>
+      <td>Division rate in OSVZ</td>
+      <td>Gosvz</td>
+      <td>[10-30]</td>
+      <td>mm–2d–1</td>
+    </tr>
+    <tr>
+      <td>VZ radius</td>
+      <td>rvz</td>
+      <td>0.5</td>
+      <td>mm</td>
+      <td>Migration speed</td>
+      <td>v</td>
+      <td>5</td>
+      <td>mm d–1</td>
+    </tr>
+    <tr>
+      <td>ISVZ radius</td>
+      <td>risvz</td>
+      <td>0.8</td>
+      <td>mm</td>
+      <td>Migration threshold</td>
+      <td>c0</td>
+      <td>500</td>
+      <td>mm–2</td>
+    </tr>
+    <tr>
+      <td>Cortex radius</td>
+      <td>rcp</td>
+      <td>1.8</td>
+      <td>mm</td>
+      <td>Heaviside exponent</td>
+      <td>γc</td>
+      <td>0.008</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>MST factor</td>
+      <td>mmst</td>
+      <td>0.02</td>
+      <td>mm d–1</td>
+      <td>Diffusivity</td>
+      <td>dc⁢c</td>
+      <td>0.11</td>
+      <td>mm–2d–1</td>
+    </tr>
+    <tr>
+      <td colspan="4">Mechanical problem parameters</td>
+      <td colspan="4">Mechanical growth problem parameters</td>
+    </tr>
+    <tr>
+      <td colspan="2">Parameter</td>
+      <td>Value</td>
+      <td>Unit</td>
+      <td colspan="2">Parameter</td>
+      <td>Value</td>
+      <td>Unit</td>
+    </tr>
+    <tr>
+      <td>Cortex shear modulus</td>
+      <td>μ∞</td>
+      <td>2.07</td>
+      <td>kPa</td>
+      <td>Growth parameter</td>
+      <td>κs</td>
+      <td>4.07⁢e-4</td>
+      <td>mm2</td>
+    </tr>
+    <tr>
+      <td>Poisson ratio</td>
+      <td>ν</td>
+      <td>0.38</td>
+      <td>–</td>
+      <td>Growth exponent</td>
+      <td>α</td>
+      <td>1.65</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Stiffness ratio</td>
+      <td>βμ</td>
+      <td>3,8</td>
+      <td>–</td>
+      <td>Growth ratio</td>
+      <td>βκ</td>
+      <td>1.5,3</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Maximum threshold</td>
+      <td>cmax</td>
+      <td>700</td>
+      <td>mm–2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Minimum threshold</td>
+      <td>cmin</td>
+      <td>200</td>
+      <td>mm–2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+We have previously thoroughly studied the effect of the stiffness ratio on the resulting folding pattern (Zarzor et al., 2021). Here, we choose a stiffness ratio of 8 for the constant stiffness case and a ratio of 3 for the varying stiffness case. Those values led to the best agreement of simulation results with data from stained histological sections regarding the local gyrification index value and the thickness ratio between gyri and sulci. For more details, we refer to Zarzor et al., 2021. We note that the tissue shows a stiffer behavior in the case of constant stiffness than in the case of varying stiffness for the same value of the stiffness ratio. For that reason, a higher stiffness ratio (lower stiffness in the subcortical layers since the final cortical stiffness $\mu_{∞}$ is constant in both cases) is required in the case of constant stiffness to achieve a similar level of folding.
 
 Finally, we use homogenized Dirichlet boundary conditions on the inner brain surface and homogenized Neumann boundary conditions on the outer surface. Furthermore, in the 2D case, we constrain the right edge in the x direction and the bottom edge in the y direction. In the 3D case, we constrain the bottom surface in the y direction and keep it free to extend in the x and z directions. For more details about boundary conditions and numerical details, we refer to Zarzor et al., 2021.
 
@@ -125,67 +342,67 @@ We validate our computational model by comparing the simulation results with his
 
 **Figure 3.:** (A) Annotated area with final cell density distribution. (B) Example of cell detection by using Qupath. Red cells depict neurons and blue cells glial cells. (C) Procedure to determine the cell density.
 
-Figure 3 shows the cell density distribution around gestational week 17 and demonstrates the densely packed VZ due to the high proliferation rate of radial glial cells, with about 13,600cells/mm2. In addition, we can locate the other zones introduced in Figure 1. The OSVZ shows a higher cell density (approximately 9550cell/mm2) than both the inner subventricular and the intermediate zone. This zone is composed of several types of cells, the original intermediate progenitor cells that migrated from the VZ, migrated neurons, ORGCs that produce more intermediate progenitor cells, and newborn neurons that are produced through the intermediate progenitor cells’ asymmetric division. Our analysis of the histologically stained sections of the human fetal brain (see Figure 3) also shows that the OSVZ is 1.5 times thicker than the inner subventricular zone, even though it did not emerge at an earlier stage of development (the inner subventricular zone emerges around gestational week 7 and the OSVZ around gestational week 11). This implies that the thickness of the OSVZ increases with time. The intermediate zone is characterized by a low cell density with about 1600cells/mm2. Still, it is a transit area for the migrating neurons. The higher cell density in the inner subventricular zone 4800cells/mm2 corroborates the presence of another type of cell besides migrating neurons, i.e., intermediate progenitor cells. The migration process in gestational week 17 is still ongoing – the cortex is not yet fully developed and filled with neurons with only about 12,000cells/mm2. Therefore, at this stage of development, the VZ still has the highest cell density in the brain. Figure 4 compares the cell density distribution along a line from the ventricular surface to the outer cortical surface in the human fetal brain at gestational week 17 (indicated by line L in Figure 3) with different simulation results. For better comparability and to avoid differences in the dimensions between the histologically stained sections of the human fetal brain and the simulation domain, we normalize the domain’s radius according to the extension from the ventricular to the outer cortical surface in the stained sections. In addition, we normalize the cell density with respect to its maximum value in the cortex. According to our previous work (Zarzor et al., 2021), we include a varying stiffness in the cortex during human brain development in our simulations, adopt a stiffness ratio of 3, and a division rate in the VZ of 120.
+Figure 3 shows the cell density distribution around gestational week 17 and demonstrates the densely packed VZ due to the high proliferation rate of radial glial cells, with about $13,600cells/mm^{2}$. In addition, we can locate the other zones introduced in Figure 1. The OSVZ shows a higher cell density (approximately $9550cell/mm^{2}$) than both the inner subventricular and the intermediate zone. This zone is composed of several types of cells, the original intermediate progenitor cells that migrated from the VZ, migrated neurons, ORGCs that produce more intermediate progenitor cells, and newborn neurons that are produced through the intermediate progenitor cells’ asymmetric division. Our analysis of the histologically stained sections of the human fetal brain (see Figure 3) also shows that the OSVZ is 1.5 times thicker than the inner subventricular zone, even though it did not emerge at an earlier stage of development (the inner subventricular zone emerges around gestational week 7 and the OSVZ around gestational week 11). This implies that the thickness of the OSVZ increases with time. The intermediate zone is characterized by a low cell density with about $1600cells/mm^{2}$. Still, it is a transit area for the migrating neurons. The higher cell density in the inner subventricular zone $4800cells/mm^{2}$ corroborates the presence of another type of cell besides migrating neurons, i.e., intermediate progenitor cells. The migration process in gestational week 17 is still ongoing – the cortex is not yet fully developed and filled with neurons with only about $12,000cells/mm^{2}$. Therefore, at this stage of development, the VZ still has the highest cell density in the brain. Figure 4 compares the cell density distribution along a line from the ventricular surface to the outer cortical surface in the human fetal brain at gestational week 17 (indicated by line L in Figure 3) with different simulation results. For better comparability and to avoid differences in the dimensions between the histologically stained sections of the human fetal brain and the simulation domain, we normalize the domain’s radius according to the extension from the ventricular to the outer cortical surface in the stained sections. In addition, we normalize the cell density with respect to its maximum value in the cortex. According to our previous work (Zarzor et al., 2021), we include a varying stiffness in the cortex during human brain development in our simulations, adopt a stiffness ratio of 3, and a division rate in the VZ of 120.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig4-v1.jpg)
 
-**Figure 4.:** The simulation results correspond to the varying cortical stiffness case with a stiffness ratio of 3, and a ventricular zone (VZ) division rate . The stained human brain sections results correspond to line L in Gvz=120Figure 3.
+**Figure 4.:** The simulation results correspond to the varying cortical stiffness case with a stiffness ratio of 3, and a ventricular zone (VZ) division rate $G_{vz}=120$. The stained human brain sections results correspond to line L in Figure 3.
 
-The simulation results for an initial division rate in the OSVZ of Gosvz=10 well capture the trends observed in the histologically stained sections of the human fetal brain. The cell density shows a first local peak representing the VZ for a normalized radius of approximately 0.05. It then gradually decreases to reach its first local minimum in the inner subventricular zone for a normalized radius of 0.3. This effect is less pronounced in the simulations than in the actual human fetal brain. The curves start to rise again in the OSVZ to reach the second peak for a normalized radius of 0.4. Again, the simulation results capture this peak quite accurately, with a difference of only 3%. The second local minimum represents the intermediate zone for a normalized radius of 0.7, while the third peak represents the cortex. The simulation results for Gosvz=20 and 30 result in a higher cell density in the OSVZ than in the actual human fetal brain. In contrast, the curve for Gosvz=0 (i.e., without including the effect of the OSVZ) shows a significantly decreased cell density in the OSVZ and intermediate zone.
+The simulation results for an initial division rate in the OSVZ of $G_{osvz}=10$ well capture the trends observed in the histologically stained sections of the human fetal brain. The cell density shows a first local peak representing the VZ for a normalized radius of approximately 0.05. It then gradually decreases to reach its first local minimum in the inner subventricular zone for a normalized radius of 0.3. This effect is less pronounced in the simulations than in the actual human fetal brain. The curves start to rise again in the OSVZ to reach the second peak for a normalized radius of 0.4. Again, the simulation results capture this peak quite accurately, with a difference of only 3%. The second local minimum represents the intermediate zone for a normalized radius of 0.7, while the third peak represents the cortex. The simulation results for $G_{osvz}=20$ and 30 result in a higher cell density in the OSVZ than in the actual human fetal brain. In contrast, the curve for $G_{osvz}=0$ (i.e., without including the effect of the OSVZ) shows a significantly decreased cell density in the OSVZ and intermediate zone.
 
 ## Results and discussion
 
-In this section, we apply our computational model to answer some of the major questions regarding the role of the OSVZ for cortical folding during human brain development. As mentioned above, we consider both cases, constant and varying cortical stiffness. Before addressing the individual questions, we would like to first highlight some general features of the mechanical instability problem as the underlying mechanism of cortical folding. Figure 5 shows an exemplary temporal course of both sulcus depth and folding evolution – defined as the ratio between the outer perimeter at time step t and the initial perimeter (see Figure 6) – for the varying stiffness case with Gvz=120 and Gosvz=20. The outer brain maintains its smooth surface until the first instability point, where compressive stresses in the cortex induced by cell-density-driven cortical growth reach a critical value, the cortex starts to fold and sulci deepen rapidly and uniformly. At the instability point, the curve of the folding evolution shows a kink, as the outer brain surface now expands more rapidly. After a second instability point, where a secondary instability occurs and we see a pitchfork-like bifurcation in Figure 5, only every second sulcus continues to deepen, while those in between become shallower again. We refer to the resulting folding pattern as period doubling pattern. For a detailed discussion of secondary instabilities, period doubling, and even period tripling patterns and their role in cortical folding, we refer to our previous works in Budday et al., 2015a and Budday et al., 2015c.
+In this section, we apply our computational model to answer some of the major questions regarding the role of the OSVZ for cortical folding during human brain development. As mentioned above, we consider both cases, constant and varying cortical stiffness. Before addressing the individual questions, we would like to first highlight some general features of the mechanical instability problem as the underlying mechanism of cortical folding. Figure 5 shows an exemplary temporal course of both sulcus depth and folding evolution – defined as the ratio between the outer perimeter at time step $t$ and the initial perimeter (see Figure 6) – for the varying stiffness case with $G_{vz}=120$ and $G_{osvz}=20$. The outer brain maintains its smooth surface until the first instability point, where compressive stresses in the cortex induced by cell-density-driven cortical growth reach a critical value, the cortex starts to fold and sulci deepen rapidly and uniformly. At the instability point, the curve of the folding evolution shows a kink, as the outer brain surface now expands more rapidly. After a second instability point, where a secondary instability occurs and we see a pitchfork-like bifurcation in Figure 5, only every second sulcus continues to deepen, while those in between become shallower again. We refer to the resulting folding pattern as period doubling pattern. For a detailed discussion of secondary instabilities, period doubling, and even period tripling patterns and their role in cortical folding, we refer to our previous works in Budday et al., 2015a and Budday et al., 2015c.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig5-v1.jpg)
 
-**Figure 5.:** The temporal courses of the depth of two sulci (red and blue curve) and the folding evolution (green curve), as denoted in Figure 6, indicate the mechanical instability points. Initially, the brain surface is smooth, the sulcus depth is zero, and the folding evolution increases only gradually. At the first instability point, the cortex starts to fold into wrinkles (w), where the sulci deepen uniformly. Due to the transition from a smooth to a wrinkled surface, the folding evolution now shows a more rapid increase. At the second instability point, a pitchfork-like bifurcation occurs, where every second sulcus continues to deepen while those in between become shallower. This results in a period doubling (pd) pattern, which is well visible and fully established at state c. The results correspond to the varying stiffness case with , Gvz=120, and a stiffness ratio Gosvz=20.βμ=3
+**Figure 5.:** The temporal courses of the depth of two sulci (red and blue curve) and the folding evolution (green curve), as denoted in Figure 6, indicate the mechanical instability points. Initially, the brain surface is smooth, the sulcus depth is zero, and the folding evolution increases only gradually. At the first instability point, the cortex starts to fold into wrinkles (w), where the sulci deepen uniformly. Due to the transition from a smooth to a wrinkled surface, the folding evolution now shows a more rapid increase. At the second instability point, a pitchfork-like bifurcation occurs, where every second sulcus continues to deepen while those in between become shallower. This results in a period doubling (pd) pattern, which is well visible and fully established at state c. The results correspond to the varying stiffness case with $G_{vz}=120$, $G_{osvz}=20$, and a stiffness ratio $\beta_{\mu}=3$.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig6-v1.jpg)
 
-**Figure 6.:** and the initial perimeter.t
+**Figure 6.:** Quantification of the depth of two sulci (sulcus 1 and sulcus 2) and the folding evolution, defined as the ratio between the outer perimeter at time step $t$ and the initial perimeter.
 
-## How does cell proliferation in the OSVZ affect cortical folding patterns?
+### How does cell proliferation in the OSVZ affect cortical folding patterns?
 
-Many previous studies have tried to address this point (Hansen et al., 2010). However, through purely experimental approaches, it is difficult to answer this question. In our model, we can apply different values of the division rate in the OSVZ (Gosvz) to show how ORGC proliferation affects cortical folding. Figure 7 shows the folding patterns emerging at gestational week 36 for both varying and constant stiffness cases and different values of the initial division rate in the OSVZ Gosvz. In the case of constant stiffness, the effect is marginal. In the case of varying stiffness, there is a more noticeable change in the folding patterns. In general, the distance between neighboring sulci decreases with increasing Gosvz, as marked in Figure 7. For the displayed cases, the distance decreases from d = 8.796mm for Gosvz=0 to d = 8.67mm for Gosvz=10 and d = 8.2mm for Gosvz=20. Interestingly, the cortical thickness and effective stiffness ratio at the first instability point (denoted by w in Figure 5) are the same for all these cases. Therefore, we attribute the observed differences to the faster increase in the cell density and thus cortical growth, cortical stiffness, and the effective stiffness after the instability has been initiated. In addition, we observe period doubling patterns emerge (Budday et al., 2015a; Budday et al., 2015c), which are most pronounced at a value of Gosvz=20. This indicates that the proliferation in the OSVZ enhances secondary mechanical instabilities and leads to more complex folding patterns earlier.
+Many previous studies have tried to address this point (Hansen et al., 2010). However, through purely experimental approaches, it is difficult to answer this question. In our model, we can apply different values of the division rate in the OSVZ ($G_{osvz}$) to show how ORGC proliferation affects cortical folding. Figure 7 shows the folding patterns emerging at gestational week 36 for both varying and constant stiffness cases and different values of the initial division rate in the OSVZ $G_{osvz}$. In the case of constant stiffness, the effect is marginal. In the case of varying stiffness, there is a more noticeable change in the folding patterns. In general, the distance between neighboring sulci decreases with increasing $G_{osvz}$, as marked in Figure 7. For the displayed cases, the distance decreases from d = $8.796mm$ for $G_{osvz}=0$ to d = $8.67mm$ for $G_{osvz}=10$ and d = $8.2mm$ for $G_{osvz}=20$. Interestingly, the cortical thickness and effective stiffness ratio at the first instability point (denoted by w in Figure 5) are the same for all these cases. Therefore, we attribute the observed differences to the faster increase in the cell density and thus cortical growth, cortical stiffness, and the effective stiffness after the instability has been initiated. In addition, we observe period doubling patterns emerge (Budday et al., 2015a; Budday et al., 2015c), which are most pronounced at a value of $G_{osvz}=20$. This indicates that the proliferation in the OSVZ enhances secondary mechanical instabilities and leads to more complex folding patterns earlier.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig7-v1.jpg)
 
-**Figure 7.:** for the constant (top) and varying (bottom) cortical stiffness cases.GosvzThe remaining parameters are fixed as follows: division rate in the ventricular zone (VZ) , stiffness ratio Gvz=120 for constant stiffness, and βμ=8 for varying stiffness. The marked distance between sulci βμ=3d decreases with increasing .Gosvz
+**Figure 7.:** Final folding patterns at gestational week 36 for different values of the division rate in the outer subventricular zone (OSVZ) $G_{osvz}$ for the constant (top) and varying (bottom) cortical stiffness cases.The remaining parameters are fixed as follows: division rate in the ventricular zone (VZ) $G_{vz}=120$, stiffness ratio $\beta_{\mu}=8$ for constant stiffness, and $\beta_{\mu}=3$ for varying stiffness. The marked distance between sulci d decreases with increasing $G_{osvz}$.
 
-Figure 8 demonstrates that the observed trends also hold true when extending the model to 3D. For the case of varying stiffness with a stiffness ratio of 3, a growth ratio of 3, and an initial division rate in the VZ Gvz=600, the folding complexity increases with increasing initial division rate in the OSVZ Gosvz.
+Figure 8 demonstrates that the observed trends also hold true when extending the model to 3D. For the case of varying stiffness with a stiffness ratio of 3, a growth ratio of 3, and an initial division rate in the VZ $G_{vz}=600$, the folding complexity increases with increasing initial division rate in the OSVZ $G_{osvz}$.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig8-v1.jpg)
 
-**Figure 8.:** .Gvz=600The folding complexity increases with increasing initial division rate in the outer subventricular zone (OSVZ) .Gosvz
+**Figure 8.:** Final folding patterns at gestational week 36 for the hree-dimensional (3D) model with varying cortical stiffness, a stiffness ratio of 3, a growth ratio of 3, and an initial division rate in the ventricular zone (VZ) $G_{vz}=600$.The folding complexity increases with increasing initial division rate in the outer subventricular zone (OSVZ) $G_{osvz}$.
 
 Besides the direct relation between the proliferation in the OSVZ and the folding morphology, there are indirect effects and other aspects concerning ORGC proliferation, which will be discussed in more detail in the following sections.
 
-## How does cell proliferation in the OSVZ affect the cell density and folding evolution?
+### How does cell proliferation in the OSVZ affect the cell density and folding evolution?
 
-After we have assessed the effect of cell proliferation in the OSVZ on the final folding pattern, we investigate its effect on the evolution of both cell density and folding morphology. Figure 9 shows the temporal evolution of the maximum cell density in the domain and the folding evolution between time steps 260 and 380 for different initial division rates in the OSVZ Gosvz and a constant division rate in the VZ Gvz=120. Again, we consider both cases, constant and varying cortical stiffness. Increasing the initial division rate in the OSVZ leads to a significant increase in both the cell density and folding evolution. Consequently, for the case of Gosvz=30, the cell density reaches the highest value of 1100mm−2, corresponding to a folding evolution of 1.25. For the case of Gosvz=0, in contrast, the cell density does not even exceed the migration threshold. Comparing the cases Gosvz=20 and Gosvz=30 shows that the instability occurs earlier with increasing initial division rate in the OSVZ Gosvz. Thus, the ORGC proliferation decreases the time required to reach the final folding pattern. In general, the differences between the results for the constant and varying cortical stiffness case are minor. However, the curves for the varying cortical stiffness case rise faster than for the constant case. We note that we could not generate results for the initial division rate in the OSVZ Gosvz=30 and the constant cortical stiffness case due to numerical issues.
+After we have assessed the effect of cell proliferation in the OSVZ on the final folding pattern, we investigate its effect on the evolution of both cell density and folding morphology. Figure 9 shows the temporal evolution of the maximum cell density in the domain and the folding evolution between time steps 260 and 380 for different initial division rates in the OSVZ $G_{osvz}$ and a constant division rate in the VZ $G_{vz}=120$. Again, we consider both cases, constant and varying cortical stiffness. Increasing the initial division rate in the OSVZ leads to a significant increase in both the cell density and folding evolution. Consequently, for the case of $G_{osvz}=30$, the cell density reaches the highest value of $1100mm^{−2}$, corresponding to a folding evolution of 1.25. For the case of $G_{osvz}=0$, in contrast, the cell density does not even exceed the migration threshold. Comparing the cases $G_{osvz}=20$ and $G_{osvz}=30$ shows that the instability occurs earlier with increasing initial division rate in the OSVZ $G_{osvz}$. Thus, the ORGC proliferation decreases the time required to reach the final folding pattern. In general, the differences between the results for the constant and varying cortical stiffness case are minor. However, the curves for the varying cortical stiffness case rise faster than for the constant case. We note that we could not generate results for the initial division rate in the OSVZ $G_{osvz}=30$ and the constant cortical stiffness case due to numerical issues.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig9-v1.jpg)
 
-**Figure 9.:** Figure 6) at a constant division rate in the ventricular zone (VZ)  and different initial division rates in the outer subventricular zone (OSVZ) Gvz=120.GosvzThe results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.
+**Figure 9.:** Temporal evolution of the maximum cell density and the folding evolution (the current outer perimeter divided by the initial perimeter, as indicated in Figure 6) at a constant division rate in the ventricular zone (VZ) $G_{vz}=120$ and different initial division rates in the outer subventricular zone (OSVZ) $G_{osvz}$.The results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.
 
-## Which proliferation zone is more influential for fetal human brain development?
+### Which proliferation zone is more influential for fetal human brain development?
 
-To answer the question which one of the proliferation zones (VZ or OSVZ) is more important for cellular brain development and cortical folding, we have implemented four sets of division rates. The first set assumes a high initial division rate in the VZ Gvz and a low initial division rate in the OSVZ Gosvz. For the following parameter sets, we gradually decrease Gvz, while we increase Gosvz. Figure 10 shows the corresponding results for the maximum cell density in the domain and the folding evolution between time steps 250 and 450 for both cases, constant and varying cortical stiffness. Unexpectedly, the cell density for the set (Gvz=30,Gosvz=30) rises faster than the one for the set (Gvz=120,Gosvz=0). Indeed, not only the cell density is affected by increasing the division rate in the OSVZ (at the expense of decreasing it in the VZ), but also convolutions (cortical folds) appear earlier, as illustrated by the curve for the folding evolution (Figure 10, right). Our results thus indicate an unproportionally strong effect of ORGC proliferation in the OSVZ on cellular brain development and cortical folding. We attribute this observation to the larger volume occupied by the OSVZ compared to the VZ. Concerning the difference between the results for the constant and varying cortical stiffness case, the curves for a varying stiffness rise faster than for a constant stiffness.
+To answer the question which one of the proliferation zones (VZ or OSVZ) is more important for cellular brain development and cortical folding, we have implemented four sets of division rates. The first set assumes a high initial division rate in the VZ $G_{vz}$ and a low initial division rate in the OSVZ $G_{osvz}$. For the following parameter sets, we gradually decrease $G_{vz}$, while we increase $G_{osvz}$. Figure 10 shows the corresponding results for the maximum cell density in the domain and the folding evolution between time steps 250 and 450 for both cases, constant and varying cortical stiffness. Unexpectedly, the cell density for the set ($G_{vz}=30,G_{osvz}=30$) rises faster than the one for the set ($G_{vz}=120,G_{osvz}=0$). Indeed, not only the cell density is affected by increasing the division rate in the OSVZ (at the expense of decreasing it in the VZ), but also convolutions (cortical folds) appear earlier, as illustrated by the curve for the folding evolution (Figure 10, right). Our results thus indicate an unproportionally strong effect of ORGC proliferation in the OSVZ on cellular brain development and cortical folding. We attribute this observation to the larger volume occupied by the OSVZ compared to the VZ. Concerning the difference between the results for the constant and varying cortical stiffness case, the curves for a varying stiffness rise faster than for a constant stiffness.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig10-v1.jpg)
 
-**Figure 10.:** and outer subventricular zone (OSVZ) Gvz.GosvzThe results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.
+**Figure 10.:** Temporal evolution of the maximum cell density and the folding evolution for different division rates in the ventricular zone (VZ) $G_{vz}$ and outer subventricular zone (OSVZ) $G_{osvz}$.The results in the top row correspond to the varying cortical stiffness case with a stiffness ratio of 3. The results in the bottom row correspond to the constant cortical stiffness case with a stiffness ratio of 8.
 
-## How does the MST behavior of ORGCs affect brain development?
+### How does the MST behavior of ORGCs affect brain development?
 
-We have introduced a specific simulation parameter to capture the MST behavior of ORGCs, which now allows us to study the effect of the MST factor on cortical folding. For this parameter study, we limit ourselves to the varying cortical stiffness case with an initial division rate in the VZ Gvz=30 and an initial division rate in the OSVZ Gosvz=30. Figure 11 shows the temporal evolution of the maximum cell density and the folding evolution between time steps 250 and 430 for different values of the MST factor. Our simulations indicate that with increasing MST factor, the value of the maximum cell density in the domain increases exponentially. Since the MST factor incorporates the expansion of the OSVZ with time, these results are consistent with the observation in the previous section, showing an increasing spatial expansion of the OSVZ.
+We have introduced a specific simulation parameter to capture the MST behavior of ORGCs, which now allows us to study the effect of the MST factor on cortical folding. For this parameter study, we limit ourselves to the varying cortical stiffness case with an initial division rate in the VZ $G_{vz}=30$ and an initial division rate in the OSVZ $G_{osvz}=30$. Figure 11 shows the temporal evolution of the maximum cell density and the folding evolution between time steps 250 and 430 for different values of the MST factor. Our simulations indicate that with increasing MST factor, the value of the maximum cell density in the domain increases exponentially. Since the MST factor incorporates the expansion of the OSVZ with time, these results are consistent with the observation in the previous section, showing an increasing spatial expansion of the OSVZ.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig11-v1.jpg)
 
-**Figure 11.:** The results correspond to the varying cortical stiffness case with a stiffness ratio of 3, a division rate in the ventricular zone (VZ) , and an initial division rate in the outer subventricular zone (OSVZ) Gvz=30.Gosvz=30
+**Figure 11.:** The results correspond to the varying cortical stiffness case with a stiffness ratio of 3, a division rate in the ventricular zone (VZ) $G_{vz}=30$, and an initial division rate in the outer subventricular zone (OSVZ) $G_{osvz}=30$.
 
-## Is the OSVZ affected by cortical folding?
+### Is the OSVZ affected by cortical folding?
 
 After we have discussed the effect of the OSVZ on the formation of cortical folds, we will now discuss the opposite – the effect of cortical folding on the OSVZ. Although the OSVZ has a constant thickness in our model throughout the entire domain in the intermediate stage of human brain development (before cortical folds emerge), as demonstrated in red in Figure 12, left, the simulations show that this quickly changes after the first folds start to emerge. The thickness of the OSVZ starts to show spatial variations and becomes thicker beneath gyri and thinner beneath sulci, as shown in Figure 12, right. This result is consistent with what was previously observed experimentally in the human brain (Kostović et al., 2002). While it is to date not clear whether this phenomenon is rather the cause or the result of cortical folding, our study clearly indicates that the (mechanics-driven) process of cortical folding is sufficient to induce OSVZ variations. The forces generated by the mechanical growth problem not only fold the cortical layer but also lead to undulations in the deeper zones. Still, the deeper proliferating zones (i.e., inner subventricular zone and VZ) remain equally smooth as the ventricular surface.
 
@@ -193,17 +410,17 @@ After we have discussed the effect of the OSVZ on the formation of cortical fold
 
 **Figure 12.:** While the OSVZ has a constant thickness before cortical folds emerge (left), it later becomes thicker beneath gyri than beneath sulci (right).
 
-## Are cortical folds affected by regional proliferation variations in the OSVZ?
+### Are cortical folds affected by regional proliferation variations in the OSVZ?
 
-Previous studies have emphasized the existence of variations in the ORGC proliferation rate in different brain regions (Hansen et al., 2010). Some of those have suggested that the proliferation rate is higher beneath gyri than beneath sulci (Borrell, 2018). Similarly, in the ferret brain, where a region close in structure to the primate’s OSVZ was found, this region shows a unique mosaic-like structure (Fietz et al., 2010; Reillo and Borrell, 2012). In this section, we aim to assess the effect of regional proliferation variations in the OSVZ on the emerging cortical folding pattern. We discuss two different heterogeneous patterns here, but have included more variations online through our user interface on GitHub, as described in the Data availability section. In the first case, the OSVZ division rate gradually decreases along the circumferential direction. In the second case, the division rate varies in a more random pattern. Figures 13 and 14 show how cortical folds develop in both cases for the varying cortical stiffness case, an initial division rate in the VZ Gvz=120, and an initial division rate in the OSVZ Gosvz=20. As expected, the evolving folding patterns slightly differ. In both cases, the first folds appear where the cell proliferation rate is highest. As expected, those regions also show a higher cell density in the cortex than regions nearby. However, both cases lead to final patterns with similar distances between sulci and folding complexity (one period doubling pattern). In addition, gyri and sulci are distributed equally – regardless of the division rate. Therefore, we may conclude that inhomogeneous cell proliferation in the OSVZ controls the location of first gyri and sulci but does not necessarily affect the distance between sulci (also referred to as folding wavelength) and the overall complexity of the emerging folding pattern. This agrees well with our previous finding that the characteristic wavelength of folding remains relatively stable for inhomogeneous cortical growth patterns (Budday and Steinmann, 2018). The simulation results are also consistent with the previously found remarkable surface expansion above the regions with higher proliferation in the OSVZ (Llinares-Benadero and Borrell, 2019).
+Previous studies have emphasized the existence of variations in the ORGC proliferation rate in different brain regions (Hansen et al., 2010). Some of those have suggested that the proliferation rate is higher beneath gyri than beneath sulci (Borrell, 2018). Similarly, in the ferret brain, where a region close in structure to the primate’s OSVZ was found, this region shows a unique mosaic-like structure (Fietz et al., 2010; Reillo and Borrell, 2012). In this section, we aim to assess the effect of regional proliferation variations in the OSVZ on the emerging cortical folding pattern. We discuss two different heterogeneous patterns here, but have included more variations online through our user interface on GitHub, as described in the Data availability section. In the first case, the OSVZ division rate gradually decreases along the circumferential direction. In the second case, the division rate varies in a more random pattern. Figures 13 and 14 show how cortical folds develop in both cases for the varying cortical stiffness case, an initial division rate in the VZ $G_{vz}=120$, and an initial division rate in the OSVZ $G_{osvz}=20$. As expected, the evolving folding patterns slightly differ. In both cases, the first folds appear where the cell proliferation rate is highest. As expected, those regions also show a higher cell density in the cortex than regions nearby. However, both cases lead to final patterns with similar distances between sulci and folding complexity (one period doubling pattern). In addition, gyri and sulci are distributed equally – regardless of the division rate. Therefore, we may conclude that inhomogeneous cell proliferation in the OSVZ controls the location of first gyri and sulci but does not necessarily affect the distance between sulci (also referred to as folding wavelength) and the overall complexity of the emerging folding pattern. This agrees well with our previous finding that the characteristic wavelength of folding remains relatively stable for inhomogeneous cortical growth patterns (Budday and Steinmann, 2018). The simulation results are also consistent with the previously found remarkable surface expansion above the regions with higher proliferation in the OSVZ (Llinares-Benadero and Borrell, 2019).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig13-v1.jpg)
 
-**Figure 13.:** along the circumferential direction between time steps 325 and 450 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) Gosvz, and varying division rates in the OSVZ with an initial value of 20.Gvz=120The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.
+**Figure 13.:** Temporal evolution of cortical folds for a gradually decreasing outer subventricular zone (OSVZ) division rate $G_{osvz}$ along the circumferential direction between time steps 325 and 450 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) $G_{vz}=120$, and varying division rates in the OSVZ with an initial value of 20.The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/82925/elife-82925-fig14-v1.jpg)
 
-**Figure 14.:** between time steps 450 and 670 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) Gosvz, and varying division rates in the OSVZ with an initial value of 20.Gvz=120The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.
+**Figure 14.:** Temporal evolution of cortical folds for a random distribution of the outer subventricular zone (OSVZ) division rate $G_{osvz}$ between time steps 450 and 670 for the varying cortical stiffness case, an initial division rate in the ventricular zone (VZ) $G_{vz}=120$, and varying division rates in the OSVZ with an initial value of 20.The top row shows the cell density distribution and the bottom row the actual division rate in the OSVZ.
 
 ## Conclusion
 

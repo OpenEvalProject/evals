@@ -40,11 +40,19 @@ One amino acid biosynthesis pathway that remains largely unexplored for herbicid
 
 Due to the central role of DHDPS in lysine production in plants, this enzyme has been proposed as a potential target for the development of herbicides (Griffin et al., 2012; Soares da Costa et al., 2018). Indeed, the lysine analogue, S-(2-aminoethyl)-l-cysteine, halts rooting of potato tuber discs at mid-micromolar concentrations (Perl et al., 1993; Ghislain et al., 1995). However, given its poor in vitro potency against plant DHDPS, it is believed that this analogue inhibits plant growth by competing with lysine for incorporation into proteins rather than inhibition of the DHDPS enzyme (Ghislain et al., 1995; Perl et al., 1993). Plants typically have two annotated DHDPS-encoding genes (DHDPS) (Figure 2—figure supplement 1; Craciun et al., 2000; Sarrobert et al., 2000; Vauterin and Jacobs, 1994). In Arabidopsis thaliana, these genes are At3G60880 (DHDPS1) and At2G45440 (DHDPS2), which encode chloroplast-targeted AtDHDPS1 and AtDHDPS2, respectively (Jones-Held et al., 2012). RNA sequencing data have elucidated that both DHDPS-encoding genes are expressed at all stages of A. thaliana development, with the most prominent expression at the seed development stages, in the dry seeds and during germination (Klepikova et al., 2016). Interestingly, maximal DHDPS2 expression is approximately 3-fold greater than that of DHDPS1 (Klepikova et al., 2016). Moreover, upon comparison to the known glyphosate herbicide target, 5-enolpyruvyl-shikimate 3-phosphate synthase (At1G48860), expression of DHDPS1 is considerably lower at almost all developmental stages, while expression of DHDPS2 is comparable at all stages, except in the dry seeds (Klepikova et al., 2016). This is a key consideration in target validation as low expressing targets will require less inhibitor to achieve phytotoxicity. Double knockouts of DHDPS1 and DHDPS2 result in non-viable embryos even after exogenous supplementation with lysine, indicating that DHDPS activity is essential (Jones-Held et al., 2012). AtDHDPS enzymes exist as homotetramers (Figure 2A), with the active site located within the (β/α)8-barrel (Figure 2B) and the allosteric cleft in the tight-dimer interface located in the interior of the structure (Figure 2C; Griffin et al., 2012; Hall et al., 2021).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon structure of Arabidopsis thaliana (At) DHDPS1 (PDB: 6VVI) in the unliganded form illustrating the ‘back-to-back’ homotetramer conformation. (B) Cartoon structure of AtDHDPS1, with residues critical for catalysis shown as sticks. (C) Multiple sequence alignment of residues important for catalysis. (D) Cartoon structure of AtDHDPS1, with residues important for lysine binding and allosteric regulation shown as sticks. Residues are coloured by nitrogen (blue), oxygen (red), and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schrödinger). (E) Multiple sequence alignment of residues involved in allosteric lysine binding. Sequences are AtDHDPS1 (At1; UNIPROT ID: Q9LZX6), AtDHDPS2 (At2; UNIPROT ID: Q9FVC8), Arabidopsis lyrata DHDPS1 (Al1; UNIPROT ID: D7LRV3), Nicotiana tabacum DHDPS (Nt; UNIPROT ID: Q42948), Oryza sativa DHDPS1 (Os1; UNIPROT ID: A0A0K0K9A6), Solanum lycopersicum DHDPS1 (Sl1; UNIPROT ID: A0A3Q7IMG0), Triticum aestivum DHDPS1 (Ta1; UNIPROT ID: P24846), Vitis vinifera DHDPS1 (Vv1; UNIPROT ID: A0A438E022), Zea mays DHDPS1 (Zm1; UNIPROT ID: P26259), and Escherichia coli (Ec) DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to AtDHDPS1 with dots (.) representing interspacing residues. Sequences were aligned in BioEdit (v 7.2.5) (Hall, 1999) using the ClustalW algorithm (Thompson et al., 1994).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Arabidopsis thaliana DHDPS1 (UNIPROT ID: Q9LZX6) and DHDPS2 (UNIPROT ID: Q9FVC8), Arabidopsis lyrata DHDPS1 (UNIPROT ID: D7LRV3) and DHDPS2 (UNIPROT ID: D7LCJ3), Nicotiana tabacum DHDPS (UNIPROT ID: Q42948), Oryza sativa DHDPS1 (UNIPROT ID: A0A0K0K9A6) and DHDPS2 (UNIPROT ID: Q9LWB9), Solanum lycopersicum DHDPS1 (UNIPROT ID: A0A3Q7IMG0) and DHDPS2 (UNIPROT ID: A0A3Q7FJL9), Triticum aestivum DHDPS1 (UNIPROT ID: P24846) and DHDPS2 (UNIPROT ID: P24847), Vitis vinifera DHDPS1 (UNIPROT ID: A0A438E022) and DHDPS2 (UNIPROT ID: D7U7T8), Zea mays DHDPS1 (UNIPROT ID: P26259) and DHDPS2 (UNIPORT ID: B4FLW2), and Escherichia coli DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to AtDHDPS1; identical residues are shown as dots (.), gaps are shown as dashes (-), and similar residues are highlighted in grey. Sequences were aligned in BioEdit (v 7.2.5) using the ClustalW algorithm.
+
 In this study, we describe a new class of plant DHDPS inhibitors. We show that these compounds display micromolar potency in vitro and in planta against A. thaliana using a combination of enzyme kinetics, seedling, and soil assays, whilst exhibiting no cytotoxic effects in bacterial or human cell lines at equivalent concentrations. Furthermore, we employ X-ray crystallography to show that these compounds target a previously unexplored binding site within DHDPS, which is highly conserved amongst plant species. Thus, this study provides proof-of-concept that lysine biosynthesis represents a promising pathway to target for the development of herbicides with a new mode of action and highlights a novel DHDPS binding pocket to assist in the discovery of herbicide candidates.
 
 ## Results
 
-## High-throughput chemical screen for inhibitor discovery
+### High-throughput chemical screen for inhibitor discovery
 
 A high-throughput screen of a library of 87,648 compounds was conducted against recombinant DHDPS enzyme by the Walter and Eliza Hall Institute High Throughput Chemical Screening Facility (Melbourne, Australia). The o-aminobenzaldehyde (o-ABA) colourimetric assay was used to estimate DHDPS activity via the formation of a purple chromophore that can be measured at 520–540 nm (Yugari and Gilvarg, 1965). Using a cut-off equal to the mean ± 3× standard deviation for classification as a hit compound, 435 compounds out of 87,648 were identified as hits at 20 mM (hit rate = 0.50%). The activity of these 435 compounds was confirmed at the same concentration as the primary screen, resulting in 38 compounds demonstrating >40% inhibition of the DHDPS enzymatic reaction (confirmation rate = 8.7%). A counter screen was employed to exclude false-positive compounds i.e., compounds that interacted with o-ABA detection or absorbance quantification. The compounds that displayed confirmed DHDPS inhibition were subsequently progressed to full dose response titration assays using recombinant DHDPS. One promising compound from the screen was (Z)−2-(5-(4-fluorobenzylidene)−2,4-dioxothiazolidin-3-yl)acetic acid (FBDTA). The characterisation of two thiazolidinedione analogues containing methoxy substituents, MBDTA-1 and MBDTA-2, will be discussed here (Figure 3, Supplementary file 1).
 
@@ -52,39 +60,242 @@ A high-throughput screen of a library of 87,648 compounds was conducted against 
 
 **Figure 3.:** Chemical structures of the hit compound, (Z)−2-(5-(4-fluorobenzylidene)−2,4-dioxothiazolidin-3-yl)acetic acid (FBDTA), and two analogues, (Z)−2-(5-(2-methoxybenzylidene)−2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-1) and (Z)−2-(5-(4-methoxybenzylidene)−2,4-dioxothiazolidin-3-yl)acetic acid (MBDTA-2).
 
-## Efficacy of inhibitors on recombinant DHDPS
+### Efficacy of inhibitors on recombinant DHDPS
 
 The inhibitory activity of MBDTA-1 and MBDTA-2 against both recombinant A. thaliana DHDPS proteins was quantitated using a DHDPS–DHDPR coupled assay (Atkinson et al., 2013). This was achieved by titrating different concentrations of each compound with substrates fixed at previously determined Michaelis–Menten constant values (Griffin et al., 2012; Hall et al., 2021). The IC50 values of MBDTA-1 and MBDTA-2 against AtDHDPS1 were 126 ± 6.50 µM and 63.3 ± 1.80 µM, respectively (Figure 4A). Similarly, the dose–response curves for AtDHDPS2 yielded IC50 values of 116 ± 5.20 µM and 64.0 ± 1.00 µM for MBDTA-1 and MBDTA-2, respectively (Figure 4B). As these compounds represent a novel class of inhibitors of plant DHDPS, we set out to assess the mechanism of inhibition by examining the binding of MBDTA-2 to DHDPS using X-ray crystallography.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig4-v2.jpg)
 
-**Figure 4.:** In vitro potency of DHDPS inhibitors.Dose responses of MBDTA-1 (● or ■) and MBDTA-2 (○ or □) against recombinant (A) AtDHDPS1 and (B) AtDHDPS2. Initial enzyme rates were normalised against a vehicle control (1% [v/v] DMSO). Normalised data (% activity remaining) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean ± S.E.M. (N = 3).Figure 4—source data 1.
+**Figure 4.:** Dose responses of MBDTA-1 (● or ■) and MBDTA-2 (○ or □) against recombinant (A) AtDHDPS1 and (B) AtDHDPS2. Initial enzyme rates were normalised against a vehicle control (1% [v/v] DMSO). Normalised data (% activity remaining) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean ± S.E.M. (N = 3).
 
-## Molecular basis for inhibitor binding
+### Molecular basis for inhibitor binding
 
 To probe the molecular determinants for inhibition, recombinant AtDHDPS1 was co-crystallised with MBDTA-2 using the same crystallisation conditions as for the apo enzyme with the addition of inhibitor (Hall et al., 2021). Diffraction data were obtained at a maximal resolution of 2.29 Å, phases solved by molecular replacement and repeating rounds of model building and refinement were performed that allowed us to generate an atomic inhibitor-bound model (Figure 5A, Table 1). We initially found several MBDTA-2 molecules at the crystal contact formed between protein molecules at chains B and D. Specifically, two parallel MBDTA-2 molecules were bound to H187 (of the symmetry mate) and F210 with complete occupancy (Figure 5—figure supplement 1). However, given that these molecules were found solely at the crystal interface and were absent in chains A and C, they were assumed to be a result of non-specific binding.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cartoon view of overall AtDHDPS1 quaternary (tetrameric) structure, illustrating the binding sites for MBDTA-2 at the centre of the tetramer. (B) Overlay of the lysine-bound (PDB: 6VVH) and MBDTA-2-bound structures. (C) Close-up of inhibitor binding pocket, with interacting residues shown as sticks. Lysine and MBDTA-2 are shown as green sticks and coloured by nitrogen (blue), oxygen (red), and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schrödinger). (D) Sequence alignment of residues involved in MBDTA-2 binding from A. thaliana DHDPS1 (At1; UNIPROT ID: Q9LZX6), A. thaliana DHDPS2 (At2; UNIPROT ID: Q9FVC8), A. lyrata DHDPS1 (Al1; UNIPROT ID: D7LRV3), N. tabacum DHDPS (Nt; UNIPROT ID: Q42948), O. sativa DHDPS1 (Os1; UNIPROT ID: A0A0K0K9A6), S. lycopersicum DHDPS1 (Sl1; UNIPROT ID: A0A3Q7IMG0), T. aestivum DHDPS1 (Ta1; UNIPROT ID: P24846), V. vinifera DHDPS1 (Vv1; UNIPROT ID: A0A438E022), Z. mays DHDPS1 (Zm1; UNIPROT ID: P26259), and E. coli (Ec) DHDPS (UNIPROT ID: P0A6L2). Residues are numbered according to A. thaliana DHDPS1 with dots (.) representing interspacing residues. Sequences were aligned in BioEdit (v 7.2.5) using the ClustalW algorithm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Surface view of symmetry mates of MBDTA-2 bound toAtDHDPS1, highlighting chains A (blue), B (purple), C (cyan), and D (turquoise). (B) Close up of MBDTA-2 molecules bound to the surface of the protein on chains B (top inlay) and D (bottom inlay) and wedged between chains C and A, respectively, of the symmetry mates. MBDTA-2 is shown as green sticks and coloured by nitrogen (blue), oxygen (red) and sulfur (yellow). Images were generated using PyMOL v 2.2 (Schrödinger).
+
+**Table 1.**
+ Summary of MBDTA-2-bound AtDHDPS1 crystallographic data collection, processing, and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>AtDHDPS1 + MBDTA-2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P41212</td>
+    </tr>
+    <tr>
+      <td>Unit-cell parameters (Å)</td>
+      <td>94.47, 94.47, 181.41</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>20–2.29 (2.43–2.29)</td>
+    </tr>
+    <tr>
+      <td>No. of observations</td>
+      <td>491,320 (74,297)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections</td>
+      <td>37,390 (5768)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.4 (96.6)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>13.1 (12.8)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)</td>
+      <td>9.9 (39.1)</td>
+    </tr>
+    <tr>
+      <td>Rmeas (%)</td>
+      <td>10.0 (40.7)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>99.9 (97.8)</td>
+    </tr>
+    <tr>
+      <td>Average I/σ(I)</td>
+      <td>27.9 (7.9)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R (%)</td>
+      <td>18.3</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>22.6</td>
+    </tr>
+    <tr>
+      <td>No. (%) of reflections in test set</td>
+      <td>1071</td>
+    </tr>
+    <tr>
+      <td>No. of protein molecules per asu</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d bond length (Å)</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>r.m.s.d bond angle (°)</td>
+      <td>1.415</td>
+    </tr>
+    <tr>
+      <td>Average B-factors (Å2)*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein molecules</td>
+      <td>44.52</td>
+    </tr>
+    <tr>
+      <td>Ligand molecules</td>
+      <td>60.01</td>
+    </tr>
+    <tr>
+      <td>Water molecules</td>
+      <td>40.33</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot†</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residues other than Gly and Pro in:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Most favored regions (%)</td>
+      <td>98.0</td>
+    </tr>
+    <tr>
+      <td>Additionally allowed regions (%)</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Disallowed regions (%)</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>PDB code</td>
+      <td>7MDS</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses are for the highest-resolution shell.*Calculated by BAVERAGE in CCP4 Suite (Winn et al., 2011).†Calculated using MolProbity (Chen et al., 2010)._
+
 Closer inspection of the crystal structure revealed the presence of four MBDTA-2 molecules bound at the centre of the homotetrameric protein (Figure 5A), in antiparallel pairs with each molecule, which were stabilised by interactions across three of the monomers (Figure 5B). Interestingly, this pocket, albeit distinct to the lysine binding site, shares two residues with it, namely W116 and E147 (Figure 2C). Specifically, the methoxy group of MBDTA-2 interacts with W116, E147, and H150 from chain B, while the pendant carboxylic acid interacts with S115 from chain A as well as H150 and Q154 from chain C (Figure 5C). Additionally, we observed that upon binding, MBDTA-2 forces D117 to adopt a different rotamer conformation, which in turn, results in W116 assuming a different conformation. It must be noted that the four MBDTA-2 molecules were present with 50% occupancy. Consequently, each of the two moving residues, D117 and W116, adopt two distinct rotamer conformations, one of the apo- and ligand-bound states of AtDHDPS1. Given that no major rotamer changes or movement of catalytically important residues were noted, the exact mechanism of inhibition remains elusive. Nevertheless, this indicates the presence of a novel DHDPS allosteric pocket that has not been previously exploited for inhibitor discovery. Moreover, an alignment of the primary structure of several DHDPS enzymes from plant species indicates that the residues involved in MBDTA-2 binding are highly conserved across both monocotyledons and dicotyledons (Figure 5D) and therefore should allow for broad-spectrum inhibition.
 
-## Specificity of DHDPS inhibitors
+### Specificity of DHDPS inhibitors
 
 Following determination of the binding site, we examined the specificity of MBDTA-1 and MBDTA-2 to determine whether any future applications would have off-target effects. First, the cytotoxicity of the inhibitors was examined against the human cell lines, HepG2 and HEK293, using the 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) assay (Figure 6A,B). At the highest concentration assessed (400 μM), treatment with the inhibitors did not affect the viability of either cell line relative to the vehicle control. Second, the effect of the inhibitors on several bacterial species commonly found in the human flora and soil microbiome was assessed by measuring their minimum inhibitory concentrations. No inhibition of bacterial growth was observed up to 128 µg·mL−1 (equivalent to ~400 µM) (Table 2), indicating that these DHDPS inhibitors have specificity directed towards plants.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig6-v2.jpg)
 
-**Figure 6.:** Toxicity of MBDTA-1 (black) and MBDTA-2 (grey), compared to the positive control defensin (white), assessed against (A) HepG2 and (B) HEK293 human cell lines using the MTT assay. Data were normalised against a vehicle control (1% [v/v] DMSO) and plotted against inhibitor concentration. Data represents mean ± S.E.M. (N = 3).Figure 6—source data 1.
+**Figure 6.:** Toxicity of MBDTA-1 (black) and MBDTA-2 (grey), compared to the positive control defensin (white), assessed against (A) HepG2 and (B) HEK293 human cell lines using the MTT assay. Data were normalised against a vehicle control (1% [v/v] DMSO) and plotted against inhibitor concentration. Data represents mean ± S.E.M. (N = 3).
 
-## Herbicidal efficacy
+**Table 2.**
+ Minimum inhibitory concentration (MIC) values for MBDTA-1 and MBDTA-2 against several bacterial strains.Table 2—source data 1.Minimum inhibitory concentration(MIC) values for MBDTA-1 and MBDTA-2 against several bacterial strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>MBDTA-1 MIC (µg·mL−1)</th>
+      <th>MBDTA-2 MIC (µg·mL−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human flora</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enterococcus spp.</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Staphylococcus aureus</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Soil bacteria</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Enterobacter ludwigii</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Arthrobacter sp.</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Enterobacter cancerogenus</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Cedecea davisae</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+    <tr>
+      <td>Rhodococcus erthropolis</td>
+      <td>&gt;128</td>
+      <td>&gt;128</td>
+    </tr>
+  </tbody>
+</table>
+
+### Herbicidal efficacy
 
 Given the promising in vitro properties of the inhibitors, we determined their herbicidal efficacy against A. thaliana, initially using seedling agar assays. At high micromolar concentrations of both MBDTA-1 and MBDTA-2, growth was completely attenuated, and most seeds were unable to germinate. Upon quantitation of root lengths, we determined an IC50 of 98.1 ± 4.34 µM and 47.4 ± 0.450 µM for MBDTA-1 (Figure 7A) and MBDTA-2 (Figure 7B), respectively. Based on these results, we examined their pre-emergence effect on soil-grown A. thaliana. Specifically, compounds were dissolved in a solution containing a non-ionic organic surfactant (Agral) and seeds were treated immediately after sowing on soil. The vehicle control-treated plants (Figure 8A) were used as a benchmark to visually assess the effects of inhibitors. The growth of A. thaliana in the presence of MBDTA-1 (Figure 8B) or MBDTA-2 (Figure 8C) at 300 mg·L−1 was severely impeded as evidenced by the growth area relative to the DMSO control (Figure 8D), wherein few seeds were able to germinate. This is consistent with the results observed at the highest concentrations of inhibitor on agar. Furthermore, the A. thaliana seeds capable of germinating in the presence of 300 mg·L−1 MBDTA-2 were halted at the cotyledon stage before the generation of true leaves. As such, our newly discovered MBDTA compounds represent the first DAP pathway inhibitors with soil efficacy against plants.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig7-v2.jpg)
 
-**Figure 7.:** A. thaliana.A thaliana root lengths after treatment with increasing concentrations of either (A) MBDTA-1 or (B) MBDTA-2. Root lengths were determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Normalised data (●) (% root length) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean ± S.E.M. (N = 3).Figure 7—source data 1.A. thaliana.
+**Figure 7.:** A thaliana root lengths after treatment with increasing concentrations of either (A) MBDTA-1 or (B) MBDTA-2. Root lengths were determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Normalised data (●) (% root length) is plotted as a function of log10[inhibitor] and fitted to a nonlinear regression model (solid line) (R2 = 0.99). Data represents mean ± S.E.M. (N = 3).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/69444/elife-69444-fig8-v2.jpg)
 
-**Figure 8.:** A. thaliana grown in soil.Treatments of (A) vehicle control (1% [v/v] DMSO), (B) 300 mg·L−1 MBDTA-1, and (C) 300 mg·L−1 MBDTA-2 given at day 0 (first day under controlled environment room conditions). A representative in triplicate of the biological replicates is shown vertically. (D) Leaf area of MBDTA-1/2-treated A. thaliana. Area was determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Data represents mean ± S.D. (n = 3).Figure 8—source data 1.A. thaliana grown in soil.
+**Figure 8.:** Treatments of (A) vehicle control (1% [v/v] DMSO), (B) 300 mg·L−1 MBDTA-1, and (C) 300 mg·L−1 MBDTA-2 given at day 0 (first day under controlled environment room conditions). A representative in triplicate of the biological replicates is shown vertically. (D) Leaf area of MBDTA-1/2-treated A. thaliana. Area was determined using ImageJ v 1.53b and normalised against a vehicle control (1% [v/v] DMSO). Data represents mean ± S.D. (n = 3).
 
 ## Discussion
 
@@ -96,38 +307,89 @@ Developing enzyme inhibitors into a commercial product is an arduous and costly 
 
 ## Materials and methods
 
-## High-throughput chemical screen and analogue synthesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPS1</td>
+      <td>TAIR</td>
+      <td>At3G60880</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>DHDPS2</td>
+      <td>TAIR</td>
+      <td>At2G45440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>ATCC: HB-8065 RRID:CVCL_0027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>ATCC:ACS-4500 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### High-throughput chemical screen and analogue synthesis
 
 A high-throughput screen of a library of 87,648 compounds was conducted against recombinant DHDPS enzyme by the Walter and Eliza Hall Institute High Throughput Chemical Screening Facility (Melbourne, Australia). The o-ABA colourimetric assay employed assesses DHDPS activity via the formation of a purple chromophore that can be measured at 520–540 nm (Yugari and Gilvarg, 1965). The assay was miniaturised, so it could be performed in 384-well plates. For the primary screen, reactions comprised 0.5 mg·mL−1 DHDPS, 0.5 mM sodium pyruvate, and 0.5 mM ASA. Library compounds were added at final concentrations of 20 mM, with DMSO concentrations kept at 0.4% (v/v). After ASA addition, reactions were incubated at 25°C for 15 min, before a final concentration of 350 mM HCl was added to stop the reaction. o-ABA was subsequently added to a final concentration of 0.44 mg·mL−1, plates incubated at room temperature for 1 hr, and absorbance quantified at 540 nm. Vehicle (DMSO) was used as positive controls, and negative controls lacked ASA. For the secondary screen, 11-point dose–response curves were generated using the same reactions as described above. A counter screen was conducted using the same set-up albeit without the inclusion library compounds before the addition of 350 mM HCl. Library compounds were then added after the reaction was stopped, followed by o-ABA to a final concentration of 0.44 mg·mL−1. The plates were subsequently incubated at room temperature for 1 hr, and absorbance was quantified at 540 nm. Analogues were designed and synthesised using the methods described in previous and contemporary work (Perugini et al., 2018).
 
-## Expression and purification of A. thaliana DHDPS enzymes
+### Expression and purification of A. thaliana DHDPS enzymes
 
 Both DHDPS isoforms from A. thaliana were expressed and purified as previously described (Hall et al., 2021). Briefly, AtDHDPS isoforms were expressed in Escherichia coli BL21 (DE3) cells, with AtDHDPS2 requiring the GroEL/ES chaperone complex to facilitate correct folding. Purification was performed using immobilised metal affinity chromatography. Lastly, fusion tags were cleaved by human rhinovirus 3C or tobacco etch virus protease for AtDHDPS1 and AtDHDPS2, respectively, whilst simultaneously dialysing into storage buffer (20 mM Tris, 150 mM NaCl, 0.5 mM TCEP, pH 8.0).
 
-## Enzyme kinetics
+### Enzyme kinetics
 
-DHDPS enzyme activity was determined using the DHDPS–DHDPR coupled assay as previously described by measuring the oxidation of NADPH (Atkinson et al., 2013; Hall et al., 2021). Assays were carried out in a Cary 4000 UV/Vis spectrophotometer at 30°C with substrates fixed at the previously determined Michaelis–Menten constant values (Griffin et al., 2012; Hall et al., 2021). Inhibitor was titrated against AtDHDPS enzymes, and reactions were incubated at 30°C for 12 min before initiation with ASA. Initial velocity data were normalised against a vehicle (DMSO) control and analysed using Equation 1 (log(inhibitor) vs. normalised response – variable slope, GraphPad Prism v 8.3). Dose responses were performed with three technical replicates for each concentration of compound. Dose responses were repeated with three biological replicates, each using a new stock of reagents.(1)Y = 100/(1+10((LogIC50−X)×HillSlope))where Y is the normalised rate, logIC50 is the logarithmic concentration of ligand resulting in 50% activity, X is the concentration of ligand, and Hill Slope is the steepness of the curve.
+DHDPS enzyme activity was determined using the DHDPS–DHDPR coupled assay as previously described by measuring the oxidation of NADPH (Atkinson et al., 2013; Hall et al., 2021). Assays were carried out in a Cary 4000 UV/Vis spectrophotometer at 30°C with substrates fixed at the previously determined Michaelis–Menten constant values (Griffin et al., 2012; Hall et al., 2021). Inhibitor was titrated against AtDHDPS enzymes, and reactions were incubated at 30°C for 12 min before initiation with ASA. Initial velocity data were normalised against a vehicle (DMSO) control and analysed using Equation 1 (log(inhibitor) vs. normalised response – variable slope, GraphPad Prism v 8.3). Dose responses were performed with three technical replicates for each concentration of compound. Dose responses were repeated with three biological replicates, each using a new stock of reagents.
 
-## X-ray crystallography
+$$
+Y = 100/(1+10^{((LogIC_{50}−X)\timesHillSlope)})
+$$
+
+where Y is the normalised rate, logIC50 is the logarithmic concentration of ligand resulting in 50% activity, X is the concentration of ligand, and Hill Slope is the steepness of the curve.
+
+### X-ray crystallography
 
 AtDHDPS1 was co-crystallised as previously described in the presence of MBDTA-2 (Hall et al., 2021). Briefly, protein (8.5 mg·mL−1) was incubated at 20°C with MBDTA-2 at a final concentration of 1 mM (in 2% [v/v] DMSO) before being added in a 1:1 ratio to a reservoir solution containing 1.4 M (NH4)2SO4, 0.1 M NaCl, 0.1 M HEPES (pH 7.5), and 1 mM MBDTA-2 (in 2% [v/v] DMSO). Plates were incubated at 20°C. Crystals were briefly dipped in cryo-protectant (1.4 M (NH4)2SO4, 0.1 M NaCl, 0.1 M HEPES [pH 7.5], 1 mM MBDTA-2 [in 2% (v/v) DMSO], and 20% [v/v] glycerol) and flash frozen in liquid nitrogen. Data were collected at the Australian Synchrotron using the MX2 beamline (Aragão et al., 2018). A total of 1800 diffraction images were collected with 0.1° oscillation using an EIGER 16M detector at a distance of 350 mm, with 20% beam attenuation for a total exposure time of 18 s. X-ray data were integrated using XDS (Kabsch, 2010) and scaled with AIMLESS (Evans and Murshudov, 2013) before phases were determined by molecular replacement through Auto-Rickshaw (Panjikar et al., 2005) with AtDHDPS1 (PDB ID: 6VVI) used as a search model (Hall et al., 2021). Manual building was performed in COOT Emsley et al., 2010 followed by refinement employing REFMAC5 in the CCP4i2 (v7.0) software suite (Emsley et al., 2010; Murshudov et al., 2011; Winn et al., 2011). SMILES string of the inhibitor (MBDTA-2) was processed through AceDRG to generate the coordinate and cif file (Long et al., 2017). Validation was completed using MolProbity (Chen et al., 2010). The structure of MBDTA-2 bound to AtDHDPS1 is deposited in the Protein Data Bank as 7MDS.
 
-## Cell lines
+### Cell lines
 
 Cell lines used were sourced from the American Type Culture Collection and were authenticated using STR DNA profiling, and no mycoplasma contamination was detected.
 
-## Toxicity assays
+### Toxicity assays
 
 The toxicity of inhibitors against human HepG2 and HEK293 cell lines was assessed using the MTT viability assay as previously described (Soares da Costa et al., 2012). In brief, the cells were suspended in Dulbecco-modified Eagle’s medium containing 10% (v/v) fetal bovine serum and then seeded in 96-well tissue culture plates at 5000 cells per well. After 24 hr, cells were treated with 50–400 µM of MBDTA-1 or MBDTA-2, such that the DMSO concentration was consistent at 1% (v/v) in all wells. Alternatively, cells were treated with the cytotoxic defensin protein at 100 µM (Baxter et al., 2017). After treatment for 48 hr, MTT cell proliferation reagent was added to each well and incubated for 3 hr at 37°C. The percentage viability remaining reported is relative to the vehicle control of 1% (v/v) DMSO. Assays were performed in three biological replicates, using a different batch of reagents and cells.
 
-## Antibacterial assays
+### Antibacterial assays
 
 The minimum inhibitory concentration (MIC) for MBDTA-1 and MBDTA-2 was determined against a panel of Gram-positive and Gram-negative bacteria using a broth microdilution method according to guidelines defined by the Clinical Laboratory Standards Institute (National Committee for Clinical Laboratory Standards, 2004; National Committee for Clinical Laboratory Standards, 2003). An inoculum of 1 × 105 colony forming units/mL was used, and the testing conducted using tryptic soy broth in 96-well plates. Growth was assessed after incubation at 37°C for 20 hr by measuring the absorbance at 600 nm. The MIC value is defined as the lowest concentration of inhibitor where no bacterial growth is observed. Experiments were performed in three biological replicates, using a different stock of reagents and bacterial culture.
 
-## Seedling assays
+### Seedling assays
 
 Inhibitors were dissolved in 1× Gamborg modified/Murashige Skoog (GM/MS) media to final concentrations of 8–1000 µM. Specifically, media were prepared with 0.8% (w/v) plant grade agar and 1% (w/v) sucrose before sterilisation (Lindsey et al., 2017). A. thaliana seeds were surface sterilised by soaking in 80% (v/v) ethanol for 5 min, followed by a 15 min incubation in bleach solution containing 1% (v/v) active NaClO and rinsed in excess sterile water before placing onto agar-containing inhibitors (Boyes et al., 2001). A. thaliana seeds were stratified at 4°C for 72 hr in the dark prior to relocation to a controlled environment room (CER), where seeds were grown at 22 ± 0.5°C at 60 ± 10% humidity with light produced by cool white fluorescent lights at a rate of ~110 µmol·m−2·s−1 over long-day conditions (16 hr light:8 hr dark) (Boyes et al., 2001). Plates were positioned upright to allow roots to grow downwards, and after 7 days, images were taken, and root length was determined using ImageJ (v 1.53b) (Rasband, 2011). Outliers were identified using the 1.5× interquartile range method (Tukey, 1977). Resulting data were analysed using Equation 1 (log(inhibitor) vs. normalised response – variable slope, GraphPad Prism v 8.3). No DMSO and vehicle (1% [v/v] DMSO) controls were also employed. Assays were carried out with 20 technical replicates (i.e. seeds) per experiment and were repeated in three biological replicates, with each biological replicate using a different stock of reagents and batch of seeds.
 
-## Soil assays
+### Soil assays
 
 Inhibitors were prepared in DMSO and diluted to 300 mg·L−1 (1% [v/v] DMSO) in H2O containing 0.01% (v/v) Agral (Syngenta, North Ryde, NSW, Australia). A. thaliana seeds were surface sterilised as above and resuspended in 0.1% (w/v) agar before stratification. Subsequently, ~30 seeds were sown into a small indentation (depth ~1 cm) in moist seed raising soil (pH 5.5) (Biogro, Dandenong South, VIC, Australia), supplemented with 0.22% (w/w) Nutricote N12 Micro 140 day-controlled release fertiliser (Yates, Sydney, NSW, Australia). Seeds were treated with 1 mL (equivalent to 1200 g·ha−1) of compound or vehicle control by pipetting and covered with soil just prior to transfer to a CER and images taken after 7 days. Area analysis was performed using colour thresholding in ImageJ (v 1.53b) and normalised against the DMSO control (Corral et al., 2017; Rasband, 2011). Assays were carried out across three technical replicates (i.e. pots) using the same batch of reagents and seed stock.

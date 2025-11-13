@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.25727.001 Sleep is an essential and phylogenetically conserved behavioral state, but it remains unclear to what extent genes identified in invertebrates also regulate vertebrate sleep. RFamide-related neuropeptides have been shown to promote invertebrate sleep, and here we report that the vertebrate hypothalamic RFamide neuropeptide VF (NPVF) regulates sleep in the zebrafish, a diurnal vertebrate. We found that NPVF signaling and npvf -expressing neurons are both necessary and sufficient to promote sleep, that mature peptides derived from the NPVF preproprotein promote sleep in a synergistic manner, and that stimulation of npvf -expressing neurons induces neuronal activity levels consistent with normal sleep. These results identify NPVF signaling and npvf -expressing neurons as a novel vertebrate sleep-promoting system and suggest that RFamide neuropeptides participate in an ancient and central aspect of sleep control.
+Sleep is an essential and phylogenetically conserved behavioral state, but it remains unclear to what extent genes identified in invertebrates also regulate vertebrate sleep. RFamide-related neuropeptides have been shown to promote invertebrate sleep, and here we report that the vertebrate hypothalamic RFamide neuropeptide VF (NPVF) regulates sleep in the zebrafish, a diurnal vertebrate. We found that NPVF signaling and npvf-expressing neurons are both necessary and sufficient to promote sleep, that mature peptides derived from the NPVF preproprotein promote sleep in a synergistic manner, and that stimulation of npvf-expressing neurons induces neuronal activity levels consistent with normal sleep. These results identify NPVF signaling and npvf-expressing neurons as a novel vertebrate sleep-promoting system and suggest that RFamide neuropeptides participate in an ancient and central aspect of sleep control.
 
 ## Introduction
 
@@ -41,9 +41,25 @@ Here we address the role of NPVF in regulating vertebrate sleep using the zebraf
 
 ## Results
 
-## Overexpression of NPVF promotes sleep in zebrafish larvae
+### Overexpression of NPVF promotes sleep in zebrafish larvae
 
 Recent studies using Drosophila melanogaster (Drosophila) and Caenorhabditis elegans (C. elegans) demonstrated that several RFamide peptides, as well as the neurons that produce them, are necessary and sufficient to promote invertebrate sleep (He et al., 2013; Iannacone et al., 2017; Lenz et al., 2015; Nath et al., 2016; Nelson et al., 2014; Shang et al., 2013; Trojanowski et al., 2015; Turek et al., 2016). A library of peptides was previously used to screen for zebrafish sleep phenotypes, but the library did not include RFamide peptides (Chiu et al., 2016). We therefore set out to test the hypothesis that RFamide peptides can also promote sleep in vertebrates. One C. elegans sleep-promoting RFamide peptide, FLP-13, is sufficient to induce sleep (Nath et al., 2016; Nelson et al., 2014) and is necessary for sleep in response to cellular stress (Nelson et al., 2014). The vertebrate RFamide whose mature peptide sequences most closely resemble those of FLP-13 is NPVF. The three mature peptides derived from NPVF (RFRP1-3) contain a conserved C-terminal LPXRF motif (where X = L or Q) (Figure 1A) that is critical for peptide function (Findeisen et al., 2011). The nine peptides derived from FLP-13 contain a similar C-terminal PXIRF motif (where X = L or F) (Figure 1—figure supplement 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig1-v2.jpg)
+
+**Figure 1.:** (A) Multiple sequence alignment of human (Hs), mouse (Mm), and zebrafish (Dr) NPVF preproproteins. Colored boxes demarcate identified or predicted mature peptide sequences. Note that the mouse NPVF protein lacks RFRP2. (B–I) NPVF overexpression decreased locomotor activity (B,D) and increased sleep (C,E) in transgenic animals compared to WT siblings and to pre-HS. Yellow bar indicates heat shock. Pre- and Post-HS data is calculated for the day of HS. White and black bars under behavioral traces indicate day (14 h) and night (10 h), respectively. NPVF overexpression decreased wake activity (F), decreased sleep latency (time to first sleep bout following lights on in the morning Pre-HS, or following HS in post-HS measurement) (H) and increased sleep bout number (I), and also caused a trend of increased sleep bout length (G). Mean ± SEM from one representative experiment (B,C), or three pooled experiments (D–I) are shown. n = number of animals. ***p<0.0001 by Two-way ANOVA with Holm-Sidak test. See also Figure 1—figure supplements 1–3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Multiple sequence alignment of mature peptides derived from C. elegans FLP-13 (nine peptides) compared to zebrafish RFRP1-3 peptides derived from its NPVF precursor. Amino acids are colored to indicate residues with similar properties. (B,C) Average activity and sleep behavioral traces and bar graphs of Tg(hs:FLP-13) animals and their WT siblings. Larvae tested were progeny from a Tg(hs:FLP-13) stable transgenic founder in which ~25% of the germline contained the transgene. Yellow bar indicates heat shock. Pre- and Post-HS data is calculated for the day of HS. White and black bars under behavioral traces indicate day (14 h) and night, respectively. Mean ± SEM are shown. n = number of animals. *p<0.05, ***p<0.005 by Two-way ANOVA with Holm-Sidak post-hoc test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Following heat shock from 9:45-10:45 p.m., Tg(hs:NPVF) animals were less active (A,B) and slept more (C,D) during the subsequent day and night compared to WT sibling controls. These phenotypes are due primarily to an increase in the number of sleep bouts during the day (F) and the length of sleep bouts at night (G), and were associated with a decrease in wake activity during the night and day (H) and a decrease in sleep latency (time to first sleep bout) after light transitions (E). Yellow bars indicate heat shock. White and black bars under behavioral traces indicate day (14 h) and night (10 h), respectively. Pre- and post-HS data was calculated from day and night periods before and after HS. Mean ± SEM are shown. n = number of animals. *p<0.05, ***p<0.0001 by Two-way ANOVA with Holm-Sidak test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A,B) Larval zebrafish were raised on a 14:10 h light:dark cycle at 28.5°C with lights on at 9 a.m. and off at 11 p.m. (A) FISH using a npvf-specific probe in animals fixed at the indicated times revealed no obvious circadian pattern of npvf expression. Representative images are shown. (B) At the indicated time points, total RNA was collected from 20-pooled larvae, and npvf mRNA levels were quantified by qPCR normalized to the reference gene ribosomal protein l13a, and then normalized to the sample with the lowest npvf expression level. Results from six combined experiments are shown. There is no significant difference in npvf mRNA level at any time point (p>0.05 by One-way ANOVA). (C–I) Zebrafish larvae raised and tested in constant light (LL) do not exhibit circadian locomotor activity or sleep rhythms (C,F). NPVF overexpression decreased locomotor activity (C,D) and increased sleep (F,G). This phenotype was due to an increase in the number of sleep bouts (H) and was associated with a decrease in wake activity (E). (J–P) Zebrafish larvae raised and tested in constant dark (DD) do not exhibit circadian locomotor activity or sleep rhythms (J,M). NPVF overexpression decreased locomotor activity (J,K) and increased sleep (M,N). This phenotype was due to an increase in the length of sleep bouts (P) and was associated with a decrease in wake activity (L). Yellow bars indicate heat shock. White and black bars below line graphs indicate developmental time periods. Bar graphs represent mean ± SEM for twelve hours pre- and post-HS. n = number of animals. n.s. = not significant. *p<0.05, ***p<0.005 by Two-way ANOVA with Holm-Sidak post-hoc test.
 
 To determine whether NPVF overexpression affects sleep, we generated a stable transgenic zebrafish line in which a heat shock-inducible promoter regulates expression of the zebrafish npvf open reading frame. After heat shock-induced overexpression of NPVF, we found that these animals were 71% less active, had 62% less wake activity (amount of activity while awake), and slept 350% more during the day compared to their non-transgenic wild-type (WT) siblings (Figure 1B–1F) (activity, wake activity and sleep: p<0.0001, Two-way ANOVA, Holm-Sidak test). The increase in sleep was primarily due to an increase in the number of sleep bouts (+331%, p<0.0001, Two-way ANOVA, Holm-Sidak test), along with a modest increase in the length of sleep bouts (+21%) that did not reach statistical significance (Figure 1G and I). NPVF overexpression also drove the transition from wake-to-sleep by 2850% compared to WT siblings, with the average transgenic animal falling asleep in 3.7 ± 0.4 min immediately following heat shock compared to 108.9 ± 16.0 min for WT siblings (p<0.0001, Two-way ANOVA, Holm-Sidak test, Figure 1H).
 
@@ -53,23 +69,47 @@ To further test whether NPVF-induced sleep is regulated by circadian cues, we ra
 
 These results indicate that the ability of RFamide neuropeptides to promote sleep is conserved in invertebrates (He et al., 2013; Iannacone et al., 2017; Lenz et al., 2015; Nath et al., 2016; Nelson et al., 2014; Shang et al., 2013; Trojanowski et al., 2015; Turek et al., 2016) and vertebrates. We next asked whether the C. elegans sleep-promoting RFamide FLP-13 is sufficient to affect behavior in zebrafish. To answer this question, we generated transgenic zebrafish in which expression of the C. elegans flp-13 open reading frame is regulated by a heat shock-inducible promoter. We found that overexpression of FLP-13 decreased locomotor activity by 26% compared to WT siblings (Figure 1—figure supplement 1B) (p<0.0001, Two-way ANOVA, Holm-Sidak test). However, FLP-13 overexpression did not significantly affect sleep (Figure 1—figure supplement 1C). These results are consistent with the notion that RFamide peptides have an evolutionarily conserved role in suppressing motor behaviors, even though the behavioral effect of overexpressing FLP-13 in zebrafish is weaker than that of its potential zebrafish homolog NPVF.
 
-## Mature peptides derived from NPVF synergistically promote sleep
+### Mature peptides derived from NPVF synergistically promote sleep
 
 In humans and zebrafish, npvf encodes for a preproprotein that contains three mature peptides (RFRP1-3) (Ubuka and Tsutsui, 2014). To determine whether individual mature peptides are sufficient to promote sleep, we generated transgenic zebrafish that contained heat-shock inducible transgenes in which the amino acid sequence of one or more mature peptides was scrambled to abolish its function (Figure 2). Heterozygous transgenic animals were mated to WT animals, and their heterozygous transgenic and WT larval progeny were assayed for locomotor activity and sleep phenotypes. Overexpression of a transgene in which all three peptides were scrambled had no behavioral effect (Figure 2D–F and N), indicating that one or more peptides are required for NPVF overexpression-induced sleep. Compared to their WT siblings, overexpression of transgenes containing only RFRP1 or RFRP3 decreased activity by 18% or 14%, respectively (both: p<0.0001, One-way ANOVA, Holm-Sidak test), but had no significant effect on sleep (Figure 2D, E, G, I, O and Q). Overexpression of RFRP2 (present in the human but not rodent npvf ortholog) had a stronger effect, decreasing locomotor activity by 56% and increasing sleep by 120% (activity and sleep: p<0.0001, One-way ANOVA, Holm-Sidak test) (Figure 2D, E, H and P). Compared to their WT siblings, overexpression of transgenes containing any combination of two RFRP peptides induced significantly larger activity and sleep phenotypes, similar to overexpression of WT NPVF, with >70% decreased locomotor activity and >200% increased sleep (activity and sleep: p<0.0001, One-way ANOVA, Holm-Sidak test) (Figure 2D, E, J–M and R–U).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagram of the NPVF preproprotein and its three RFRP peptides. (B) Eight heat shock-inducible transgenes containing all possible combinations of one, two or three scrambled RFRP peptides tested. Colors correspond to those used in panels (C–U). (C) Amino acid sequences of zebrafish Tg(hs:NPVF) transgenes containing single or multiple scrambled RFRP peptides. RFRP peptide sequences are predicted based on conservation with peptides isolated in other species and on the location of glycine amidation signals and lysine or arginine endoproteolytic cleavage sites. The C-terminus of each predicted peptide contains a LPXRF motif, where X = L or Q. Gray shading indicates scrambled sequences. Daytime activity (D) and sleep (E) of transgenic animals normalized to their WT siblings following afternoon heat-shock-induced transgene overexpression are shown as mean ± SEM for two pooled experiments, with at least 64 animals per genotype. Examples of activity and sleep data for each transgene are shown in (F–U). Yellow bars indicate heat shock. White and black bars under behavioral traces indicate day (14 hr) and night, respectively. n = number of animals. n.s. = not significant, ***p<0.0001 by One-way ANOVA compared to scrambled NPVF peptide control (black) using Dunnett’s multiple comparison test. See also Figure 2—figure supplements 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Locomotor activity and sleep assayed for WT, heterozygous transgenic and homozygous transgenic animals. Representative behavioral traces of daytime activity (A,E,I) and sleep (B,F,J) following afternoon heat-shock induced transgene overexpression are shown as mean ± SEM. Yellow bars indicate heat shock. Pre- and Post-HS data is calculated for the day of HS. Two (C,D,K,L) or four (G,H) pooled experiments are quantified as mean ± SEM. Red bracketed post-hoc comparisons demonstrate that RFRP-induced sleep is not due to a dose-response of individual RFRP peptides. White and black bars under behavioral traces indicate day (14 hr) and night, respectively. n.s. = not significant. *<p<0.05, ***p<0.005 by Two-way ANOVA with Holm-Sidak post-hoc test. Comparisons are between WT and heterozygous transgenic siblings, and their homozygous transgenic cousins, because it was not possible to distinguish heterozygous and homozygous transgenic animals by PCR.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** One hour after heat-shock, sleep is significantly increased in Tg(hs:RFRP1-3) animals compared to their WT siblings (A, arrow) but there is no effect on sleep in Tg(hs:RFRPscr) animals compared to their WT siblings (D, arrow). We assayed neuronal activity at this time point in animals overexpressing different RFRP peptides by performing c-fos ISH. In animals overexpressing RFRP1-3, we observed prominent c-fos expression along the brain ventricular lining from the hypothalamus to the hindbrain (C), four blue arrowheads) that was absent in WT siblings (B, four white arrowheads). Overexpression of specific RFRP peptides affected c-fos expression in a manner that correlated with their effects on behavior (Figure 2E). No c-fos expression was observed in animals overexpressing RFRPscr, in which all 3 RFRP peptides are scrambled (F, four white arrowheads), weak c-fos expression was observed in animals overexpressing either RFRP1 or RFRP3 (G,I, 2 blue and two white arrowheads), and strong c-fos expression was observed in animals overexpressing RFRP2, or RFRP1 and RFRP3 (H,J, four blue arrowheads), similar to overexpression of RFRP1-3 (C). Yellow bars indicate heat shock. White and black bars under behavioral traces indicate day (14 h) and night, respectively. Scale: 50 μm.
 
 To test whether the behavioral effects induced by overexpression of two or more RFRP peptides is due to a dosage effect, we compared sleep in animals containing 0 (WT), 1 (heterozygous transgenic) or 2 (homozygous transgenic) copies of the hs:RFRP1, hs:RFRP3 or hs:RFRP1-3 transgenes. Following heat-shock induced overexpression, we observed no difference in locomotor activity or sleep amount between WT, Tg(hs:RFRP1)/+ and Tg(hs:RFRP1)/Tg(hs:RFRP1) animals (Figure 2—figure supplement 1A–D). Similarly, we observed no difference in amount of locomotor activity or sleep between Tg(hs:RFRP3)/+ and Tg(hs:RFRP3)/Tg(hs:RFRP3) animals (Figure 2—figure supplement 1F and H). We observed a small decrease in locomotor activity in Tg(hs:RFRP3)/Tg(hs:RFRP3) compared to +/+ animals (Figure 2—figure supplement 1E and G), but the effect was much smaller than that observed for Tg(hs:RFRP1,3)/+ compared to +/+ animals (Figure 2K and S). Finally, we compared +/+, Tg(hs:RFRP1-3)/+, and Tg(hs:RFRP1-3/hs:RFRP1-3) animals and observed that RFRP1-3 overexpression increased sleep and decreased locomotor activity to a similar extent in heterozygous and homozygous transgenic animals compared to +/+ siblings (Figure 2—figure supplement 1I–L). Taken together, these results suggest that the larger phenotypes observed following overexpression of 2 or more different RFRP peptides compared to single peptides is due to the synergistic action of these peptides rather than a dosage effect.
 
 To compare the effect of overexpressing different RFRP peptides on neuronal activity in the brain, we performed ISH using a probe specific for c-fos, which can be used as a marker of neuronal activity (Guzowski et al., 2005). One hour after heat shock, we observed robust induction of c-fos expression along the brain ventricular lining in transgenic animals that overexpressed WT npvf, whereas their non-transgenic siblings lacked c-fos expression in this region (Figure 2—figure supplement 2A–C). In several vertebrates, including fish, hypothalamic RFamidergic neurons have been described as cerebrospinal fluid (CSF)-contacting neurons (Castro et al., 2001), suggesting that activation of cells along the brain ventricle by RFRP peptides could drive behavioral state changes by inducing signals in the CSF to promote sleep, as has been described for several sleep regulators (Krueger et al., 2007). Consistent with the behavioral phenotypes induced by overexpression of different RFRP peptides, we observed robust ventricular c-fos expression in animals that overexpressed any combination of two RFRP peptides (Figure 2—figure supplement 2J and data not shown) or RFRP2 alone (Figure 2—figure supplement 2H), reduced c-fos expression in animals that overexpressed RFRP1 or RFRP3 (Figure 2—figure supplement 2G and I), and no c-fos expression in animals that overexpressed a transgene in which all three peptides were scrambled (Figure 2—figure supplement 2F). Taken together with the behavioral data (Figure 2 and Figure 2—figure supplement 1), these changes in c-fos expression suggest that NPVF overexpression-induced sleep results from synergistic effects of RFRP peptides.
 
-## Loss of NPVF signaling results in reduced sleep
+### Loss of NPVF signaling results in reduced sleep
 
 We next tested the hypothesis that NPVF signaling is required for normal sleep levels. Using CRISPR/Cas9, we generated a zebrafish npvf mutant that contains a 7 bp deletion after the first amino acid of RFRP2 (Figure 3—figure supplement 1A). This mutation results in a shift in the translational reading frame and produces a protein that contains RFRP1 but lacks RFRP2 and RFRP3. Consistent with the NPVF overexpression phenotype, we found that npvf -/- animals were 27% more active and slept 10% less than their npvf +/+ siblings at night (sleep: p<0.05; activity: p<0.005, One-way ANOVA, Holm-Sidak Test) (Figure 3A–D). These effects were due to a 10% reduction in sleep bout length and a 19% increase in wake activity in npvf -/- animals compared to their npvf +/+ siblings (p<0.01 and p<0.005, respectively, One-way ANOVA, Holm-Sidak test) (Figure 3—figure supplement 1B–E). npvf +/- animals exhibited an intermediate sleep phenotype that was not significantly different from that of their npvf -/- siblings (night: p=0.3, One-way ANOVA, Holm-Sidak test) (Figure 3C and D). This result suggests that NPVF signaling is required for normal sleep levels.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) npvf -/- animals are more active during the day and night (A,B), and sleep less at night (C,D) compared to their npvf +/+ siblings. npvf +/- animals show an intermediate sleep phenotype that is not significantly different than npvf -/- siblings. (E–L) Pharmacological inhibition of NPVF signaling by the NPFFR1/2 antagonists RF9 and GJ-14 increased locomotor activity (E,F,I,J) and decreased sleep (G,H,K,L) during the day and night compared to DMSO control-treated siblings. Mean ± SEM from one representative experiment (A,C,E,G,L,K), three pooled experiments (F,H,J,L), or six pooled experiments (B,D) are shown. White and black bars under behavioral traces indicate day (14 h) and night (10 h), respectively. n = number of animals. *p<0.05; ***p<0.005 by One-way ANOVA with Holm-Sidak test (B,D) and Student’s t-test (F,H,J,L). See also Figure 3—figure supplements 1 and 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sequence alignment of WT and mutant zebrafish NPVF preproproteins. Colored boxes demarcate predicted mature peptide sequences. The mutation results in a reading frame change after amino acid 108 (gray shading) and a premature stop codon after amino acid 146, resulting in a mutant protein lacks the RFRP2 and RFRP3 peptide sequences. (B–M) Sleep/wake architecture of npvf -/- animals (B–E) and WT animals treated with RF9 (F–I) or GJ-14 (J–M). npvf -/- animals displayed altered sleep/wake architecture compared to their npvf +/+ siblings. Similar, but more pronounced, effects were observed in RF9 or GJ-14 treated larvae compared to their DMSO treated siblings. Bar graphs show mean ± SEM from six pooled experiments (B–E) or four pooled experiments (F–M), with measurements of sleep latency (time to first sleep bout after light transitions) (B,F,J), sleep bouts per hour (C,G,K), sleep bout length (D,H,L), and wake activity (E,I,M). n = number of animals. n.s. = not significant. **p<0.01, ***p<0.005 by One-way ANOVA with Holm-Sidak test (B–E) or Student’s t-test (F–M).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A,B,E,F) Following DMSO vehicle treatment, RFRP1,3 overexpression increased sleep in transgenic animals compared to WT siblings and to pre-HS (red bracket comparison). Following treatment with either RF9 (C,D) or GJ-14 (G,H), RFRP1,3 overexpression had no sleep effect post-HS compared to pre-HS (red bracket comparison). Yellow bars indicate heat shock. Pre- and Post-HS data is calculated for the day of HS. White and black bars under behavioral traces indicate day (14 h) and night, respectively. Mean ± SEM from one representative experiment (A,C,E,F,G), or two (H) or three (B,D) pooled experiments are shown. n = number of animals. DMSO vehicle and drug treated siblings were from the same clutch (A–D, E–H), but were tested in different videotrackers due to the numerous comparisons being made. n.s. = not significant. **p<0.01, ***p<0.005 by Two-way ANOVA with Holm-Sidak test.
 
 Because the behavioral phenotype of npvf -/- animals, which chronically lack NPVF signaling, is relatively mild, we used pharmacology as an alternative approach to acutely inhibit NPVF signaling. We tested two pharmacological inhibitors of NPFFR1 and NPFFR2, the GPCRs that bind RFRP1 and RFRP3 in vitro (Hinuma et al., 2000; Liu et al., 2001). Treatment of WT animals with the dipeptide antagonist RF9 (Simonin et al., 2006) resulted in more activity (day: 28%; night: 20%) and less sleep (day: −47%; night: −24%) than animals treated with DMSO vehicle control during both the day and night (p<0.0001, Student’s t-test) (Figure 3E–3H). Changes in sleep were associated with fewer and shorter sleep bouts at night, but only to fewer sleep bouts during the day (Figure 3—figure supplement 1G and H). RF9 also significantly increased wake activity during the day (21%) and night (7%), and sleep latency after lights off at night (74%) compared to DMSO-treated controls (p<0.0001, Student’s t-test) (Figure 3—figure supplement 1F and I). Similarly, treatment of WT animals with GJ-14, an additional dipeptide antagonist of NPFFR1 and NPFFR2 (Kim et al., 2015), resulted in significantly increased locomotor activity (day: 9%; night: 43%) and decreased sleep (day: −36%; night: −24%) during the day and night (p<0.0001, Student’s t-test) (Figure 3I–3L). Although the effects of GJ-14 were smaller than those of RF9, GJ-14 had similar effects on sleep architecture as RF9 (Figure 3—figure supplement 1K and L). These results suggest that NPVF signaling is required for both the initiation and maintenance of normal levels of sleep during the day and night.
 
 To confirm that RF9 and GJ-14 are acting by inhibiting NPFFR receptors, we tested whether these antagonists block sleep induced by overexpression of RFRP1,3, the cognate ligands of these receptors. In independent behavioral experiments, Tg(hs:RFRP1,3) animals and their WT siblings were treated with either RF9, GJ-14, or DMSO vehicle control in clutch matched controls. RFRP1,3 overexpression induced sleep post-HS compared to pre-HS in DMSO vehicle treated animals (Figure 3—figure supplement 2A, B, E and F). In contrast, RFRP1,3 overexpression-induced sleep was suppressed post-HS compared to pre-HS in animals treated with RF9 (Figure 3—figure supplement 2C and D) and completely blocked by GJ-14 treatment (Figure 3—figure supplement 2G and H). These results are consistent with in vitro data showing that RFRP1 and RFRP3 bind NPFFR1 and NPFFR2 (Hinuma et al., 2000; Liu et al., 2001). These data suggest that decreased sleep due to treatment with these drugs can be attributed to inhibition of NPVF signaling.
 
-## NPVF signaling affects arousal threshold
+### NPVF signaling affects arousal threshold
 
 Sleep is distinguished from quiet wakefulness by an increased arousal threshold, which we assayed by delivering mechano-acoustic stimuli of variable intensities to zebrafish larvae while monitoring their behavior (Gandhi et al., 2015). We monitored the fraction of animals that responded to the stimulus at several intensities and used this data to construct dose-response curves. Based on these curves, we calculated the tapping intensity at which the half-maximal response occurred (effective tap power 50, ETP50). We observed that the ETP50 for NPVF-overexpressing larvae was 227% higher than that of their WT siblings (Figure 4A) (p<0.0001 by extra sum-of-squares F test). Conversely the ETP50 for RF9- or GJ-14-treated animals was 46% or 66% lower than that of their DMSO-treated siblings, respectively (Figure 4B and C) (both: p<0.0001 by extra sum-of-squares F test). These results demonstrate that NPVF overexpression increases arousal threshold, whereas inhibition of NPVF signaling decreases arousal threshold.
 
@@ -77,33 +117,118 @@ Sleep is distinguished from quiet wakefulness by an increased arousal threshold,
 
 **Figure 4.:** Representative stimulus response curves generated using a mechano-acoustic stimulus in Tg(hs:NPVF) animals and their WT siblings following heat shock (A), in RF9 and DMSO vehicle treated WT larvae (B), and in GJ-14 and DMSO vehicle treated WT larvae (C). Each data point indicates mean ± SEM. Dashed lines mark the ETP50 value for each genotype or drug treatment. (A) Tg(hs:NPVF) animals had an ETP50 value of 20.3 vs. 6.2 for WT siblings (227% increase, F(1,834)=16.05, p<0.0001 by extra sum-of-squares F test). (B) RF9-treated animals had an ETP50 of 2.5 vs. 4.7 for DMSO-treated siblings (46% decrease, F(1,834)=24.19, p<0.0001 by extra sum-of-squares F test). (C) GJ14-treated animals had an ETP50 of 2.8 vs. 8.2 for DMSO-treated siblings (65% decrease, F(1,834)=49.47, p<0.0001 by extra sum-of-squares F test). n = number of animals.
 
-## Identification of a genomic element that drives gene expression in NPVF neurons
+### Identification of a genomic element that drives gene expression in NPVF neurons
 
 In mammalian brains, npvf is highly enriched in the dorsomedial hypothalamus (Hinuma et al., 2000; Liu et al., 2001; Ubuka et al., 2009). Similarly, using ISH we found that npvf is exclusively expressed in the zebrafish dorsomedial hypothalamus at 5 days post-fertilization (dpf) (Figure 5A–C), similar to previous observations (Madelaine et al., 2017; Yelin-Bekerman et al., 2015). However, zebrafish larvae only have ~15 NPVF neurons per brain hemisphere, over an order of magnitude fewer than the number of NPVF neurons in mice (Poling et al., 2012). Using fluorescent in situ hybridization (FISH), we observed that npvf-expressing neurons also express the glutamatergic markers vglut2a (Figure 5D, 95 ± 3%, n = 4) and vglut2b (83 ± 3%, n = 6), and do not express the GABAergic marker gad67 (data not shown, n = 3), suggesting that this neuronal population is excitatory in nature. We further identified a 4 kb genomic region directly 5’ to the npvf open reading frame that is sufficient to drive expression of enhanced green fluorescent protein (EGFP) specifically in npvf-expressing neurons, with 98 ± 1% (n = 12) of EGFP positive cells expressing npvf mRNA, and 97 ± 1% (n = 12) of npvf-positive cells expressing EGFP (Figure 5B and C, Table 1). This neuronal population sends dense projections within the hypothalamus and to the raphe nuclei of the hindbrain (Madelaine et al., 2017), and sparse projections to the forebrain, tectum, and spinal cord (Figure 5—figure supplement 1), suggesting that it may regulate neurons in these regions (Madelaine et al., 2017).
 
-## Optogenetic stimulation of NPVF neurons promotes sleep
+![Figure 5.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig5-v2.jpg)
+
+**Figure 5.:** (A) ISH of NPVF neurons (arrowhead) in a 5-dpf brain. Ventral (A) and side (A’) views are shown. a, anterior; p, posterior; d, dorsal. (B) Live image of a 5-dpf Tg(npvf:EGFP) zebrafish with brightfield and EGFP overlay. White box demarcates region shown in subsequent images. (C) EGFP and npvf coexpression shown using EGFP immunohistochemistry (IHC) and npvf FISH in a 43.4 µm thick image stack. (D) npvf and vglut2a coexpression shown using FISH in a 2.7 µm thick image stack. (E) mCitrine and npvf coexpression in a Tg(npvf:ReaChR-mCitrine) zebrafish shown using EGFP IHC and npvf FISH in a 2.7 µm thick image stack. (F–H) Tg(npvf:ReaChR-mCitrine) and WT siblings were exposed to the same blue light stimulus used in (I–L). (G,H) 75.1 ± 4.1% of NPVF neurons expressed c-fos in Tg(npvf:ReaChR-mCitrine) animals (***p<0.0001; One-way ANOVA with Dunnett’s test to sham), in contrast to similarly stimulated WT siblings (~1%, n.s., not significant) (F,H), or to sham-treated transgenic animals (~1%). (I–L) Optogenetic stimulation of NPVF neurons decreased locomotor activity and increased sleep in transgenic animals compared to WT siblings. Data are from one representative experiment (I,K), or three pooled experiments (J,L). Activity and sleep of transgenic animals are normalized to WT and represented as mean ± SEM (J,L). n = number of animals. ***p<0.0001 by Student’s t-test. Scale: 50 μm (A,B), 20 μm (C,D), 10 μm (G). See also Table 1 and Figure 5—figure supplements 1,2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A 101 μm thick maximum intensity projection image of a 5-dpf Tg(npvf:EGFP) brain. Imaging plane is denoted in blue in schematic at bottom left. Bracketed areas are magnified in (B,C). NPVF neurons have dense projections within the hypothalamus (red arrowheads) (B), sparse projections to the forebrain (A,A’) and tectum (A’), projections that converge on the raphe nuclei in the hindbrain (green arrowhead) (C), and sparse projections that extend down the spinal cord (yellow arrowhead) (A). Scale: 50 μm (A), 20 μm (B,C). Te = telencephalon; TeO = tectum; Hyp = hypothalamus; MB = midbrain; Hb = hindbrain; A = anterior; p=posterior; L = lateral; D = dorsal; V = ventral.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) TRPV1-TagRFP-T expression in NPVF neurons of a 5-dpf Tg(npvf:EGFP);Tg(npvf:KalTA4);Tg(UAS:TRPV1-TagRFP-T) animal shown using IHC for EGFP and TagRFP-T in a 1.1 μm thick image stack. Locomotor activity and sleep in 6–8-dpf Tg(npvf:KalTA4) and Tg(npvf:KalTA4);Tg(UAS:TRPV1-TagRFP-T) siblings treated with DMSO vehicle (B–E) or 2 μM Csn (H–K) starting at 100-hpf until the end of the experiment. Mean ± SEM for one representative experiment (B,C,H,I) or 4 (D,E) or 5 (J,K) pooled experiments are shown. White and black bars under behavioral traces indicate day (14 h) and night (10 h), respectively. (F) Following 48 hr of treatment with 2 μM Csn, 100% more c-fos expression is observed in NPVF neurons of 6-dpf Tg(npvf:EGFP);Tg(npvf:KalTA4);Tg(UAS:TRPV1-TagRFP-T) animals than their Tg(npvf:EGFP);Tg(npvf:KalTA4) siblings, shown using EGFP IHC and c-fos FISH in a representative 2.6 µm thick image stack, and quantified in (G). Yellow and white arrowheads indicate NPVF neurons with and without bright c-fos puncta, respectively. (L) npvf ISH in a 2.4 µm thick image stack of animals treated with 2 μM Csn for 48 h. There was no significant difference in the number of EGFP-positive neurons between Tg(npvf:EGFP);Tg(npvf:KalTA4) and Tg(npvf:EGFP);Tg(npvf:KalTA4);Tg(UAS:TRPV1-TagRFP-T) siblings, assayed using EGFP IHC. Data presented as mean ± SEM. n = number of animals. n.s. = not significant. **p<0.01,***p<0.005 by Student’s t-test. Scale: 20 μm (A), 5 μm (F,L).
+
+**Table 1.**
+ Specificity of transgenic lines used in this study.Specificity of transgenic lines was confirmed by FISH and/or IHC on dissected whole mount 5-dpf zebrafish brains. Each brain hemisphere contains ~15 NPVF neurons. All neurons were counted in each hemisphere and percentage of co-expression is displayed as mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Transgenic line</th>
+      <th>Sample size (brain hemispheres)</th>
+      <th>Fluorescent-neurons co-expressing npvf</th>
+      <th>npvf neurons co-expressing fluorescent-tagged transgene</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tg(npvf:EGFP)</td>
+      <td>12</td>
+      <td>98.2 ± 1.0%</td>
+      <td>97.2 ± 1.1%</td>
+    </tr>
+    <tr>
+      <td>Tg(npvf:ReaChR-mCitrine)</td>
+      <td>12</td>
+      <td>97.1 ± 1.4%</td>
+      <td>94.1 ± 2.3%</td>
+    </tr>
+    <tr>
+      <td>Tg(npvf:mTagYFP-T2A-eNTR)</td>
+      <td>6</td>
+      <td>96.9 ± 2.3%</td>
+      <td>97.7 ± 1. 6%</td>
+    </tr>
+    <tr>
+      <td>Transgenic Line</td>
+      <td>Sample size (brain hemispheres)</td>
+      <td>Red fluorescent neurons co-expressing EGFP</td>
+      <td>EGFP-expressing NPVF neurons co-expressing red fluorescence</td>
+    </tr>
+    <tr>
+      <td>Tg(npvf:KalTA4); Tg(UAS:nfsb-mCherry); Tg(npvf:EGFP)</td>
+      <td>16</td>
+      <td>100 ± 0.0%</td>
+      <td>100 ± 0.0%</td>
+    </tr>
+    <tr>
+      <td>Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T); Tg(npvf:EGFP)</td>
+      <td>4</td>
+      <td>88.8 ± 4.5%</td>
+      <td>92.3 ± 4.4%</td>
+    </tr>
+  </tbody>
+</table>
+
+### Optogenetic stimulation of NPVF neurons promotes sleep
 
 To test the hypothesis that NPVF neurons are sufficient to promote sleep, we generated transgenic animals in which these neurons express the channelrhodopsin variant ReaChR (Lin et al., 2013) fused to mCitrine (Figure 5E and Table 1). To determine whether this transgene can stimulate NPVF neurons, we used a non-invasive, large-scale assay (Singh et al., 2015) in which freely-moving 5 dpf animals were exposed to blue light (470 nm at ~400 μW) for 30 min, and then performed double FISH using probes specific for npvf and c-fos. We observed that 75% of npvf-expressing neurons were c-fos positive in Tg(npvf:ReaChR-mCitrine) animals compared to ~1% in identically treated WT siblings or in transgenic animals not exposed to blue light (sham; Figure 5F–H).
 
 We next tested the behavioral effect of stimulating NPVF neurons using the same behavioral assay. Tg(npvf:ReaChR-mCitrine) animals and their WT siblings exhibited similar baseline locomotor activity levels. Upon blue light exposure, both transgenic and WT siblings responded with an approximately 30 s burst of activity that we exclude from analysis, followed by a return to near baseline activity levels, and a gradual increase in activity that plateaus after ~15 min (Figure 5I). During blue light stimulation, locomotor activity was 27% lower (Figure 5I and J) and sleep was 55% higher (Figure 5K and L) for Tg(npvf:ReaChR-mCitrine) animals compared to their WT siblings (activity and sleep: p<0.0001, Student’s t-test). Thus, stimulation of NPVF neurons suppresses locomotor activity and promotes sleep compared to non-transgenic controls, consistent with the NPVF overexpression phenotype.
 
-## Chemogenetic stimulation of NPVF neurons promotes sleep
+### Chemogenetic stimulation of NPVF neurons promotes sleep
 
 As an alternative method to stimulate NPVF neurons that does not require a light stimulus, we used an approach in which neurons expressing the rat TRPV1 channel are activated following addition of its small molecule agonist capsaicin (Csn) to the water (Chen et al., 2016c). We generated Tg(npvf:KalTA4) transgenic animals, in which NPVF neurons express an optimized form of the transcriptional activator Gal4 (Distel et al., 2009), and Tg(UAS:TRPV1-TagRFP-T) transgenic animals, in which TRPV1 expression is induced in KalTA4-expressing cells (Figure 5—figure supplement 1A, Table 1) (Chen et al., 2016c). Following treatment with 2 μM Csn, Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T); Tg(npvf:EGFP) animals displayed higher levels of c-fos expression in NPVF neurons compared to identically treated Tg(npvf:KalTA4); Tg(npvf:EGFP) siblings (Figure 5—figure supplement 1F G), consistent with previous results demonstrating that Csn stimulates TRPV1-expressing neurons in vivo (Chen et al., 2016c). Because higher concentrations of Csn (≥10 μM) can result in apoptosis (Chen et al., 2016c), we compared the number of NPVF neurons in Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals to their Tg(npvf:KalTA4) siblings after treatment with 2 μM Csn. We observed the same number of NPVF neurons for both genotypes, indicating that 2 μM Csn did not result in the loss of TRPV1-expressing NPVF neurons (Figure 5—figure supplement 1L M).
 
 We next tested the behavioral effect of stimulating TRPV1-expressing NPVF neurons. Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4) siblings treated with DMSO vehicle control displayed no differences in locomotor activity or sleep (Figure 5—figure supplement 1B–E). In contrast, upon treatment with 2 μM Csn, Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals exhibited 20% more sleep and 13% less locomotor activity at night compared to Tg(npvf:KalTA4) siblings (both p<0.001; Student’s t-test) (Figure 5—figure supplement 1H–K). While the behavioral phenotype induced using optogenetic stimulation of NPVF neurons was larger than that using TRPV1, optogenetic stimulation induced more robust c-fos expression than TRPV1-dependent stimulation (Figure 5G and Figure 5—figure supplement 2F), suggesting that more robust stimulation of NPVF neurons was achieved using optogenetics. The different level of stimulation might result from different transgene expression levels, acute stimulation with ReaChR versus prolonged stimulation with TRPV1, or different effects of ReaChR and TRPV1 on neuronal physiology. Taken together, these data show that chemogenetic stimulation of NPVF neurons promotes sleep, consistent with both the NPVF optogenetic and overexpression data.
 
-## Chemogenetic ablation of NPVF neurons promotes wakefulness
+### Chemogenetic ablation of NPVF neurons promotes wakefulness
 
 To determine whether NPVF neurons are required for normal sleep levels, we generated Tg(npvf:mTagYFP-T2A-eNTR) transgenic animals, in which NPVF neurons express membrane targeted TagYFP and enhanced nitroreductase (eNTR) (Mathias et al., 2014; Tabor et al., 2014), which converts the inert pro-drug metronidazole (MTZ) into a DNA cross-linking agent that induces cell-autonomous death (Figure 6A and Table 1). MTZ treatment of Tg(npvf:mTagYFP-T2A-eNTR) animals resulted in nearly complete loss of NPVF neurons (Figure 6B and C). During both the day and night, MTZ-treated transgenic animals were more active (+29% and +44%, respectively, both: p<0.005, Student’s t-test) and slept less (−49% and −10%, respectively, both: p<0.005, Student’s t-test) than their MTZ-treated non-transgenic siblings (Figure 6D–6G). NPVF neuron-ablated animals exhibited fewer sleep bouts (day: −43%; night: −9%, both: p<0.0001, Student’s t-test), increased wake activity (day: +22%; night: +20%, both: p<0.0001, Student’s t-test), and increased sleep latency at night (+25%, p<0.005, Student’s t-test) compared to non-transgenic sibling controls (Figure 6—figure supplement 1A–D). These results indicate that NPVF neurons are necessary for both the initiation and maintenance of normal sleep levels during the day and night, consistent with the phenotype resulting from pharmacological inhibition of NPVF signaling (Figure 3 and Figure 3—figure supplement 1F–I).
 
-## NPVF neuronal stimulation results in neuronal activity levels similar to those normally observed at night
+![Figure 6.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig6-v2.jpg)
+
+**Figure 6.:** (A) mTagYFP and npvf coexpression in a 5-dpf Tg(npvf:mTagYFP-T2A-eNTR) zebrafish shown using YFP IHC and npvf FISH. (B–G) Tg(npvf:mTagYFP-T2A-eNTR) and WT siblings were treated with 5 mM MTZ for 60 h. Behavior was monitored from 6 to 8 dpf. (B) npvf ISH in 7-dpf Tg(npvf:mTagYFP-T2A-eNTR) zebrafish treated with DMSO or MTZ. Scale: 10 μm. NPVF neuronal loss is quantified as mean ± SEM in (C). (D–G) Transgenic animals treated with MTZ were more active (D,E) and slept less (F,G) than their identically treated WT siblings. Mean ± SEM for one representative experiment (D,F), or three pooled experiments (E,G) are shown. White and black bars under behavioral traces indicate day (14 h) and night (10 h), respectively. n = number of animals. ***p<0.005 by Two-way ANOVA with Holm-Sidak test (C) or Student’s t-test (E,G). See also Table 1 and Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Tg(npvf:mTagYFP-T2A-eNTR) animals and their WT siblings were treated with 5 mM MTZ. Bar graphs show mean ± SEM from three pooled experiments, with measurements of sleep latency (time to first sleep bout after light transitions) (A), sleep bouts per hour (B), sleep bout length (C) and wake activity (D). n = number of animals. n.s. = not significant. *p<0.05, ***p<0.0001 by Student’s t-test.
+
+### NPVF neuronal stimulation results in neuronal activity levels similar to those normally observed at night
 
 As an independent demonstration that NPVF neurons promote sleep, we developed an intravital imaging assay of neuronal activity in the brain during normal sleep/wake states and in response to stimulation of NPVF neurons. Two-photon selective plane illumination microscopy (2P-SPIM) (Truong et al., 2011) was used to image neuronal activity in Tg(elavl3:H2B-GCaMP6s) animals, which express the genetically encoded calcium indicator GCaMP6s in most neurons (Vladimirov et al., 2014). 2P-SPIM combines the high-speed and low photodamage of light sheet microscopy with the high penetration depth and invisibility of 2P excitation light, which avoids visible light-induced perturbation of sleep. We entrained the animals in 13:11 h light:dark conditions until 5 dpf, and then imaged GCaMP6s fluorescence in constant dark for over 36 h (at 1 Hz for 2 min every 15 min); GCaMP6s fluorescence was measured in a region of the tectum due to its accessibility and suitability for long-term imaging (Figure 7A, rectangle). To measure arousal, during each 2 min imaging trial we applied an ambient red light of increasing intensity (on: t = 32 s; off: t = 93 s) (Figure 7B). Thus, during each trial we imaged intrinsic activity (t = 0–31 s), as well as responses evoked by lights on (t = 32 s) and lights off (t = 93 s). Both intrinsic and evoked activity followed the subjective day/night cycle, with higher levels during subjective day (Figure 7B and C), and correlated magnitudes of intrinsic and evoked responses (Figure 7D). This pattern of intrinsic activity is consistent with sleep/wake oscillations. The decreased responsiveness to a stimulus during subjective night is consistent with the increased arousal threshold that occurs during sleep, although it could also result from processes regulated by the circadian clock (Emran et al., 2010). Thus, this assay allows long-term monitoring of neuronal activity in the brain during what appear to be normal day/night patterns of neuronal activity and arousal levels.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative 2P-SPIM image of a 6 dpf Tg(elavl3:H2B-GCaMP6s) animal, ~70 μm from the dorsal surface. The white box indicates the region of the optic tectum analyzed in subsequent panels. The white oval indicates the location of NPVF neurons. The inset shows a GCaMP6s image superimposed on a brightfield image. Scale: 50 μm. (B) Neural activity, recorded as GCaMP6s fluorescence, of a representative animal during >36 h of imaging in DD. Imaging sessions were performed for 2 min at 1 Hz every 15 min. No light perturbation was applied during the first 31 s of each trial to record intrinsic brain activity. To assess arousal, a red light was turned on at t = 32 s, gradually increased in intensity until t = 93 s, then turned off. We observed increased neural activity at light onset and offset, with habituation in between. Signal is calculated as ΔF = F – F0 where F0 = lowest signal measured during the recording period. (C) Normalized neural activity, plotted as function of time, smoothed over a 5-trial sliding window, and averaged over 5–25, 32–37, and 93–98 s time windows, representing intrinsic, On-flash evoked response and Off-flash evoked response, respectively. Signal is normalized by FN = average intrinsic activity during subjective day. (D) Correlation of evoked activity to intrinsic activity. (E,F) During subjective day, animals were imaged for 15 trials, each consisting of 2 min of imaging at 1 Hz every 5 min. Conditions were identical to those used in (B). Representative neural activity recorded for individual ReaChR- and ReaChR+ animals are shown. Optogenetic stimulation began after trial 5. Signal for each animal is calculated with baseline F0 = averaged signal over the first five trials, then normalized by FN = peak of signal after red light is turned on, for the same animal. (G) Mean ± SEM of the normalized neural activity for four Tg(elavl3:H2B-GCaMP6s); Tg(npvf:ReaChR-mCitrine) larvae (red) and three Tg(elavl3:H2B-GCaMP6s) siblings (blue). (H) Mean ± SEM steady-state normalized neural activity after optogenetic activation, averaged over trials 10–15, shows 68% lower activity for ReaChR+ animals than their ReaChR- siblings (p<0.001, two-sample t-test). See also Figure 7—figure supplements 1 and 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Neural activity recorded for individual Tg(elavl3:H2B-GCaMP6s) (A) and Tg(elavl3:H2B-GCaMP6s); Tg(npvf:ReaChR-mCitrine) (B) animals that are quantified in (Figure 7G). Grey lines represent individual animals. Blue and red lines represent the averaged normalized value of all animals tested. Signal is calculated as ΔF = F – F0 with baseline F0 = averaged signal over the first five trials. The normalization is done with FN = peak of signal after red light is turned on (after trial 5), for the same animal. Averaging is carried out after normalization.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/25727/elife-25727-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Representative image of fluorescence signal from an optical plane ~70 μm from the dorsal surface of a Tg(elavl3:H2B-GCaMP6s) brain at 6 dpf. Scale bar = 100 μm. (B) Automatic segmentation of active neurons, represented by cyan dots, using PCA/ICA. Typically 500–800 active neurons were extracted per animal. Some false positives were extracted from skin auto-fluorescence, contributing about 5% of the total segmented cells, which did not significantly affect subsequent analysis. (C,D) Neural activity (as reported by GCaMP6s fluorescence in Tg(elavl3:H2B-GCaMP6s) animals), averaged over all segmented active neurons, during the day/night cycle for representative Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals. Animals were treated with 2 μM Csn starting at 4 dpf, and imaging began at 6 dpf. Imaging consisted of 2 min sessions at 1 Hz every 15 min for 20–24 hr. ΔF = F – F0, where the baseline F0 is determined as described in the Materials and methods. (E) Normalized neural activity for representative Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals is lower at night, consistent with increased sleep. Each animal’s activity was normalized to FN = average activity during the 2 day periods of the same animal. (F) Neural activity during the day, averaged across the 2 day periods. Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals had the same level of neural activity (p=0.86, two-sample t-test). (G) Comparison of normalized neural activity at night. The night value for each animal is normalized to FN = averaged activity during the day of the same animal. Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) and Tg(UAS:TRPV1-TagRFP-T) animals had decreased neural activity at night (25% and 7%, p=0.022 and p=0.023, respectively, one-sample t-test). The larger difference between day and night activity for Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) compared with Tg(UAS:TRPV1-TagRFP-T) animals (p=0.028, two-sample t-test) is consistent with the increased sleep at night observed upon chemogenetic activation of NPVF neurons (Figure 5—figure supplement 2). Black and white bars in (C–E) indicate day and night. Data for 1 (C–E) or 4 (F,G) animals of each genotype are shown.
+
 To test whether sleep induced by activating NPVF neurons produces similar effects on neuronal activity, we stimulated these neurons using ReaChR with focused red light while imaging GCaMP6s fluorescence in a region of the tectum during subjective day. As expected for a visual response to red light, fluorescence in the tectum of ReaChR-negative animals increased during the period of light exposure (Figure 7E and G and Figure 7—figure supplement 1A). In contrast, after a transient response to the focused red light, Tg(npvf:ReaChR-mCitrine) animals displayed a suppression of neuronal activity to levels approaching those normally observed at night (Figure 7F–H and Figure 7—figure supplement 1B). Suppression of tectal neuronal activity in the absence of visual stimuli during subjective night, and in response to NPVF neuron stimulation, is surprising because vertebrate sensory systems are thought to be activated similarly during sleep and wake states, with the thalamus limiting responses to these stimuli during sleep (Coulon et al., 2012). Our data suggest that sleep-promoting mechanisms may act upstream of the thalamus to inhibit brain regions that receive direct input from sensory systems.
 
-## Chemogenetic stimulation of NPVF neurons suppresses neuronal activity throughout the brain
+### Chemogenetic stimulation of NPVF neurons suppresses neuronal activity throughout the brain
 
 As an alternative approach to stimulate NPVF neurons while monitoring neuronal activity in the brain using 2P-SPIM, we compared GCaMP6s fluorescence in Tg(elavl3:H2B-GCaMP6s) animals that expressed TRPV1 in NPVF neurons (Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T)) to siblings that did not (Tg(UAS:TRPV1-TagRFP-T)) during exposure to 2 μM Csn in 13:11 h light:dark conditions. To analyze neuronal responses in a more comprehensive manner, we used principal component and independent component analysis (PCA/ICA) to automatically segment 500–800 spontaneously active neurons throughout a single optical section of the brain (Figure 7—figure supplement 2A and B). Using this approach, we observed lower average levels of neuronal activity at night compared to the day for Tg(UAS:TRPV1-TagRFP-T) control animals (7% decrease, p=0.023, one-sample t-test) (Figure 7—figure supplement 2C and E–G), similar to the results described above in the optic tectum (Figure 7B and C). Stimulation of NPVF neurons in Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals had no significant effect on neuronal activity during the day compared to Tg(UAS:TRPV1-TagRFP-T) sibling controls (p=0.68, two-sample t-test) (Figure 7—figure supplement 2F). However, stimulation of NPVF neurons in Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) animals dramatically suppressed neuronal activity at night compared to the day (25% decrease, p=0.023, one-sample t-test) (Figure 7—figure supplement 2D–G), and compared to Tg(UAS:TRPV1-TagRFP-T) siblings at night (~3 fold difference, p=0.028, two-sample t-test) (Figure 7—figure supplement 2G). This result indicates that stimulation of NPVF neurons using TRPV1 suppresses neuronal activity in the brain at night, consistent with the increased sleep at night observed upon stimulation of NPVF neurons using TRPV1 (Figure 5—figure supplement 2), and with our results using optogenetic stimulation of NPVF neurons (Figure 5). We conclude that stimulation of NPVF neurons is sufficient to both increase sleep and decrease neuronal activity in the brain.
 
@@ -131,97 +256,436 @@ In summary, we have shown that NPVF signaling and NPVF neurons comprise a novel 
 
 ## Materials and methods
 
-## Zebrafish genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Danio rerio)</td>
+      <td>npvf</td>
+      <td>PMID: 26687719</td>
+      <td>ZDB-GENE- 070424–226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Caenorhabditis elegans)</td>
+      <td>flp-13</td>
+      <td>PMID: 19910365</td>
+      <td>CELE_F33D4.3; WBGene00001456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:NPVF)</td>
+      <td>this paper</td>
+      <td>ct846Tg; RRID: ZDB-ALT-170927-2</td>
+      <td>zebrafish npvf open reading frame cloned downstream of the zebrafish hsp70c promoter</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRP1)</td>
+      <td>this paper</td>
+      <td>ct854Tg; RRID: ZDB-ALT-171004-1</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP2 and RFRP3 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hsp:RFRP2)</td>
+      <td>this paper</td>
+      <td>ct855Tg; RRID: ZDB-ALT-171004-2</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP1 and RFRP3 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRP3)</td>
+      <td>this paper</td>
+      <td>ct856Tg; RRID: ZDB-ALT-171004-3</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP1 and RFRP2 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRP1,2)</td>
+      <td>this paper</td>
+      <td>ct857Tg; RRID: ZDB-ALT-171004-4</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP3 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRP1,3)</td>
+      <td>this paper</td>
+      <td>ct858Tg; RRID: ZDB-ALT-171004-5</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP2 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRP2,3)</td>
+      <td>this paper</td>
+      <td>ct859Tg; RRID: ZDB-ALT-171004-6</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP1 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:RFRPscr)</td>
+      <td>this paper</td>
+      <td>ct860Tg; RRID: ZDB-ALT-171004-7</td>
+      <td>NPVF transgene cloned downstream of the zebrafish hsp70c promoter, but with the amino acid sequence of RFRP1, RFRP2, and RFRP3 scrambled to abolish peptide function</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(hs:FLP-13)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>C. elegans flp-13 open reading frame cloned downstream of the zebrafish hsp70c promoter</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>npvf mutant</td>
+      <td>this paper</td>
+      <td>ct845; RRID: ZDB-ALT-170927-1</td>
+      <td>mutant contains a 7 bp deletion after nucleotide 324 of the open reading frame; premature stop codon after amino acid 146</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(npvf:EGFP)</td>
+      <td>this paper</td>
+      <td>ct847Tg; RRID: ZDB-ALT-170927-3</td>
+      <td>npvf promoter cloned upstream of enhanced green fluorescent protein (EGFP)</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(npvf:KalTA4)</td>
+      <td>this paper</td>
+      <td>ct848Tg; RRID: ZDB-ALT-170927-4</td>
+      <td>npvf promoter cloned upstream of KalTA4</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(npvf:ReaChR- mCitrine)</td>
+      <td>this paper</td>
+      <td>ct849Tg; RRID: ZDB-ALT-170927-5</td>
+      <td>npvf promoter cloned upstream of ReaChR-mCitrine</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(npvf:mTagYFP- T2A-eNTR)</td>
+      <td>this paper</td>
+      <td>ct850Tg; RRID: ZDB-ALT-170927-6</td>
+      <td>npvf promoter cloned upstream of mTagYFP-T2A- enhanced nitroreductase</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(UAS:TRPV1- TagRFP-T; cmlc2:EGFP)</td>
+      <td>this paper</td>
+      <td>ct851Tg; RRID: ZDB-ALT-170927-7</td>
+      <td>UAS promoter cloned upstream of TRPV1-TagRFP-T</td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(elavl3:H2B- GCaMP6s)</td>
+      <td>PMID: 25068735</td>
+      <td>jf5Tg; RRID: ZDB-ALT-141023-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP (Chicken polyclonal)</td>
+      <td>Aves Laboratories</td>
+      <td>Cat#: GFP-1020; RRID: AB_10000240</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TagRFP (Rabbit polyclonal)</td>
+      <td>Evrogen</td>
+      <td>Cat#: AB233 RRID: AB_2571743</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-dsRed (Rabbit polyclonal)</td>
+      <td>Takara Clonetech</td>
+      <td>Cat#: 645496</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-digoxigenin Fab fragments (Sheep polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 11093274910; RRID: AB_514497</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa 488- or 568- secondaries</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primers for genotyping</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primers for qPCR</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Primers for riboprobe synthesis</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Oligonucleotides used to generate npvf CRISPR mutant</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>RF9</td>
+      <td>Tocris</td>
+      <td>Cat #: 3672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>GJ-14</td>
+      <td>PMID: 26259035</td>
+      <td>Anaspec, Inc; custom synthesis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Normal Goat Serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# NC9660079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>DIG RNA Labeling Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 11175025910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>TSA Plus Cyanine 3 and Fluorescein System</td>
+      <td>PerkinElmer</td>
+      <td>Cat#: NEL753001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>FirstChoice RLM-RACE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: AM1700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>16% paraformaldehyde</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NBT/BCIP Stock Solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 11681451001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>SYBR Green PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 4364346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>https://office.microsoft.com/excel/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID: 22732772</td>
+      <td>https://fiji.sc; RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GraphPad Prism6</td>
+      <td>GraphPad Software</td>
+      <td>http://www.graphpad.com/; RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Principal Component and Independent Component Analysis</td>
+      <td>PMID: 19778505</td>
+      <td></td>
+      <td>Automated analysis of cellular signals from large-scale calcium imaging data.</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Videotracking script for behavioral analysis</td>
+      <td>PMID: 17182791</td>
+      <td></td>
+      <td>Source code attached</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Arousal threshold script for behavioral analysis</td>
+      <td>PMID: 26374985</td>
+      <td></td>
+      <td>Source code attached</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>96-well plate for behavioral experiments</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>Cat#: 7701–1651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>MicroAmp Optical Adhesive Film</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 4311971</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish genetics
 
 Zebrafish were raised on a 14:10 h light:dark cycle at 28.5°C, with lights on at 9 a.m. and off at 11 p.m., unless specified otherwise. Wild-type (WT), transgenic, and mutant stocks come from a background of TL X AB strains. All experiments were performed using standard protocols (Westerfield, 1993) in accordance with the California Institute of Technology and University of Southern California Institutional Animal Care and Use Committee guidelines.
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
-## Tg(hs:NPVF)
+#### Tg(hs:NPVF)
 
 Full-length zebrafish npvf cDNA was isolated using 5’ and 3’ RACE (FirstChoice RLM-RACE, Ambion) and the open reading frame was cloned downstream of the zebrafish hsp70c promoter (Halloran et al., 2000) in a vector containing flanking I-SceI meganuclease sites. We generated stable transgenic animals by injecting plasmids with I-SceI (New England Biolabs Inc.) into the cell of embryos at the one-cell stage (Thermes et al., 2002). To identify transgenic founders, we outcrossed potential founders, performed a heat shock on their larval progeny at 5 dpf, and then performed npvf ISH. At least three lines that produced strong and ubiquitous overexpression, and lacked pre-heat shock expression, were selected and tested for behavioral phenotypes. Tg(hs:NPVF) transgenic animals (ct846Tg, RRID: ZDB-ALT-170927-2) were identified by PCR using the primers 5’-GCACACCTGAATCACCATCA-3’ and 5’-GGTTTGTCCAAACTCATCAATGT-3’ with a product size of 206 bp.
 
-## Heat-shock inducible npvf transgenes containing scrambled RFRP peptides
+#### Heat-shock inducible npvf transgenes containing scrambled RFRP peptides
 
 We identified RFRP peptides based on homology to the mammalian (Ubuka and Tsutsui, 2014) and goldfish (Sawada et al., 2002) peptides. We generated transgenes in which the amino acid sequence of one or more peptide was scrambled to abolish peptide function. We verified that scrambled peptides were distinct from endogenous zebrafish peptides using BLASTp (Altschul et al., 1997) and selected codons based on codon usage frequencies in the zebrafish genome (Horstick et al., 2015). Transgenes were assembled using double-stranded DNA gBlocks (Integrated DNA Technologies) and Gibson assembly (Gibson et al., 2009). Stable lines for Tg(hs:RFRP1) (ct854Tg, RRID: ZDB-ALT-171004-1), Tg(hs:RFRP2) (ct855Tg, RRID: ZDB-ALT-171004-2), Tg(hs:RFRP3) (ct856Tg, RRID: ZDB-ALT-171004-3), Tg(hs:RFRP1,2) (ct857Tg, RRID: ZDB-ALT-171004-4), Tg(hs:RFRP1,3) (ct858Tg, RRID: ZDB-ALT-171004-5), Tg(hs:RFRP2,3) (ct859Tg, RRID: ZDB-ALT-171004-6), and Tg(hs:RFRPscr) (ct860Tg, RRID: ZDB-ALT-171004-7) were generated and isolated as described for Tg(hs:NPVF). The presence of any npvf transgene was confirmed by PCR using the NPVF primers 5’-GCACACCTGAATCACCATCA-3’ and 5’-GGTTTGTCCAAACTCATCAATGT-3’ with a product size of 206 bp. Fish containing transgenes with specific scrambled RFRP peptides were identified by PCR using the primers: RPRP1 scrambled: 5’-CTTCGCTCTTCTTTCTTTAGCC-3’ and 5’-AGTGAAGTGGAGCGTGCAAT-3’ (266 bp product); RFRP2 scrambled: 5’-CTTCGCTCTTCTTTCTTTAGCC-3’ and 5’-GATCTTCGTGGACGCGTCGAA-3’ (349 bp product); RFRP3 scrambled: 5’-CTTCGCTCTTCTTTCTTTAGCC-3’ and 5’-TGCAGGGGTTGAGAACTGA-3’ (415 bp product). As an example, a Tg(hs:RFRP2) animal would produce PCR products using NPVF primers (206 bp), RFRP1 scrambled primers (266 bp), and RFRP3 scrambled primers (415 bp), and would not produce a PCR product using RFRP2 scrambled primers.
 
-## Tg(hs:FLP-13)
+#### Tg(hs:FLP-13)
 
 The C. elegans flp-13 open reading frame was amplified from a cDNA library from the C. elegans strain PS6845, and cloned downstream of the zebrafish hsp70c promoter (Halloran et al., 2000) in a vector containing flanking I-SceI meganuclease sites. We generated stable transgenic animals by injecting plasmid with I-SceI (New England Biolabs, Inc.) into the cell of embryos at the one-cell stage (Thermes et al., 2002). To identify transgenic founders, we outcrossed potential founders, performed a heat shock on their larval progeny at 5 dpf, and then performed ISH using a flp-13 specific probe. A line that produced strong and ubiquitous overexpression in the brain was used for behavioral phenotypes. Transgenic animals were identified by PCR using the primers 5’-ATGATGACGTCACTGCTCACTATC−3’ and 5’-GGTTTGTCCAAACTCATCAATGT−3’ with a product size of 554 bp.
 
-## npvf mutant
+#### npvf mutant
 
 The npvf mutant (ct845Tg, RRID: ZDB-ALT-170927-1) was generated using CRISPR/Cas9 as described (Hwang et al., 2013), with the sgRNA target sequence 5’-GGGAGGTTGATGGTAGACTT-3’. The mutant contains a 7 bp deletion (CCCAAGT) after nucleotide 324 of the open reading frame. The mutation results in a change in reading frame after amino acid 108 and a premature stop codon after amino acid 146, compared to 198 amino acids for the WT protein. The predicted mutant protein lacks the RFRP2 and RFRP3 peptide sequences. Mutant animals were genotyped using the primers 5’-CAGTGGTGGTGCGAGTTCT-3’ and 5’-GCTGAGGGAGGTTGATGGTA-3’, which produce a 151 bp or 144 bp band for the WT or mutant allele, respectively. npvf heterozygous mutants were outcrossed to the parental TLAB strain for three generations before use in behavioral experiments. npvf mutants are homozygous viable and fertile, and are morphologically indistinguishable from WT animals.
 
-## Tg(npvf:EGFP) and Tg(npvf:KalTA4)
+#### Tg(npvf:EGFP) and Tg(npvf:KalTA4)
 
 A 3.9 kb region of genomic DNA immediately 5’ to the npvf start codon was amplified from zebrafish genomic DNA using the primers 5’-TGACTGAAGTAGAAAATCAGCCTTT-3’ and 5’-CTTACAATCGGTCACTGAAGGC-3’ and Pfu Ultra II Fusion HS DNA Polymerase (Agilent Technologies). This sequence was subcloned downstream of 2 copies of a neuron-restrictive silencing element (NRSE) (Bergeron et al., 2012; Xie et al., 2012) and upstream of enhanced green fluorescent protein (EGFP) or KalTA4 (Distel et al., 2009) in a vector containing flanking I-SceI meganuclease sites using Gibson assembly to generate Tg(npvf:EGFP) (ct847Tg, RRID: ZDB-ALT-170927-3) and Tg(npvf:KalTA4) (ct848Tg,RRID:ZDB-ALT-170927-4) animals. Stable transgenic lines were generated using the I-SceI method (Thermes et al., 2002). Tg(npvf:KalTA4) animals were identified by PCR using the primers 5’-ATGCAAAGCTGTGAGTGCAT-3’ and 5’-TTGTGAGTGGACTTCGCTTG-3’ (270 bp product).
 
-## Tg(npvf:ReaChR-mCitrine) and Tg(npvf:mTagYFP-T2A-eNTR)
+#### Tg(npvf:ReaChR-mCitrine) and Tg(npvf:mTagYFP-T2A-eNTR)
 
 Using Gibson assembly (Gibson et al., 2009), the 3.9 kb npvf promoter was cloned upstream of ReaChR (Lin et al., 2013) fused to mCitrine, and upstream of mTagYFP-T2A-enhanced nitroreductase (eNTR) (Mathias et al., 2014; Tabor et al., 2014), in a vector containing NSRE elements and flanking I-SceI meganuclease sites. The npvf:mTagYFP-T2A-eNTR transgene contains a Gap43 palmitoylation sequence that targets TagYFP to the membrane, and a T2A sequence, which generates a self-cleaving peptide (Donnelly et al., 2001), was inserted between mTagYFP and eNTR to produce stoichiometric levels of each protein. Stable transgenic lines were generated using the I-SceI method (Thermes et al., 2002). Transgenic animals were identified using fluorescence or by PCR using the primers: ReaChR: 5’-CACGAGAGAATGCTGTTCCA-3’ and 5’-CCATGGTGCGTTTGCTATAA-3’ (450 bp product); eNTR: 5’-ATGCAAAGCTGTGAGTGCAT-3’ and 5’-CTCGCCTTTGCTAACCATTG-3’ (227 bp product). For simplicity, Tg(npvf:ReaChR-mCitrine) (ct849Tg, RRID: ZDB-ALT-170927-5) is referred to as Tg(npvf:ReaChR), and Tg(npvf:mTagYFP-T2A-eNTR) (ct850Tg, RRID: ZDB-ALT-170927-6) is referred to as Tg(npvf:eNTR), in the figures.
 
-## Tg(UAS:TRPV1-TagRFP-T;cmlc2:EGFP)
+#### Tg(UAS:TRPV1-TagRFP-T;cmlc2:EGFP)
 
 We generated the Tg(UAS:TRPV1-TagRFP-T;cmlc2:EGFP) transgenic line (ct851Tg, RRID: ZDB-ALT-170927-7) using the Tol2kit (Kwan et al., 2007) and multisite Gateway Technology (Invitrogen). The middle entry clone (pME-TRPV1-TagRFP-T) was generated using a BP reaction by combining a donor vector (pDONR221) and TRPV1-TagRFP-T (Chen et al., 2016c). The LR reaction was performed by combining the 5’ (p5E-UAS), middle (pME-TRPV1-TagRFP-T), and 3’ (p3E-polyA) entry clones into the destination vector (pDestTol2CG2). Stable transgenic lines were generated by injecting the plasmid and tol2 transposase mRNA into embryos at the 1 cell stage. Transgenic animals were identified by EGFP expression in the heart or by PCR using the primers 5’-CAGCCTCACTTTGAGCTCCT-3’ and 5’-TCCTCATAAGGGCAGTCCAG-3’ (349 bp product). For simplicity, Tg(UAS:TRPV1-TagRFP-T;cmlc2:EGFP) is referred to as Tg(UAS:TRPV1) in the figures.
 
 Tg(elavl3:H2B-GCaMP6s); nacre fish were a kind gift from Misha Ahrens (Vladimirov et al., 2014).
 
-## Zebrafish behavioral assays
+### Zebrafish behavioral assays
 
-## Locomotor activity assay
+#### Locomotor activity assay
 
 Individual larvae were placed into each well of a 96-well plate (7701–1651, Whatman) containing 650 μL of E3 embryo medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4, pH 7.4). The only exception was the chemogenetic ablation experiment, in which animals were placed into the 96-well plate after metronidazole treatment. Plates were sealed with an optical adhesive film (4311971, Applied Biosystems) to prevent evaporation. The sealing process introduces air bubbles in some wells, which are discarded from analysis. Animals were blindly assigned a position in the plate and were genotyped by PCR after the behavioral experiment was complete. The only exception to this setup was the experiment in which +/+, Tg(hs:RFRP)/+, and Tg(hs:RFRP)/Tg(hs:RFRP) animals were compared. Because we could not distinguish between heterozygous and homozygous transgenic animals using the PCR genotyping assay, homozygous Tg(hs:RFRP) cousins were placed into interleaving rows of a plate that also contained blindly assigned +/+ and Tg(hs:RFRP)/+ siblings, which were identified by PCR following the experiment. Locomotor activity was monitored using an automated videotracking system (Viewpoint Life Sciences) with a Dinion one-third inch monochrome camera (Dragonfly 2, Point Grey) fitted with a fixed-angle megapixel lens (M5018-MP, Computar) and infrared filter. For heat shock-induced overexpression experiments, larvae were heat shocked at 37°C for 1 hr starting at 12 p.m., 3 p.m., 4 p.m., or 9:45 p.m. at 5 dpf. The movement of each larva was captured at 15 Hz and recorded using the quantization mode with 1 min time bins. The 96-well plate and camera were housed inside a custom-modified, Zebrabox (Viewpoint Life Sciences) that was continuously illuminated with infrared LEDs, and illuminated with white LEDs from 9 a.m. to 11 p.m., except as noted in LL or DD experiments. The 96-well plate was housed in a chamber filled with recirculating water to maintain a constant temperature of 28.5°C. The parameters used for detection were: detection threshold, 15; burst, 29; freeze, 3, which were determined empirically. Data were processed using custom PERL and Matlab (The Mathworks, Inc.) scripts, and statistical tests were performed using Prism (GraphPad) for ANOVA analysis and Excel (Microsoft) for two-tailed Student’s t-test.
 
 A movement was defined as a pixel displacement between adjacent video frames preceded and followed by a period of inactivity of at least 67 ms (the limit of temporal resolution). Any one-minute period with no movement was defined as one minute of sleep based on arousal threshold changes (Prober et al., 2006). A sleep bout was defined as a continuous string of sleep minutes. Sleep latency was defined as the length of time from lights on or off to the start of the first sleep bout. Average activity was defined as the average amount of activity in seconds/hour, including sleep bouts. Average wake activity was defined as the average amount of activity in seconds/hour, excluding sleep bouts.
 
-## Arousal threshold assay
+#### Arousal threshold assay
 
 We modified the videotracking system by adding an Arduino-based automated driver to control two solenoids (28P-I-12, Guardian Electric) that delivered a tap to a 96-well plate containing larvae (Singh et al., 2015). This setup allowed us to drive the solenoids with voltage ranging from 0 V to 20 V over a range of 4095 settings (from 0.01 to 40.95). We used taps ranging from a power setting of 1–36.31. Taps of 14 different intensities were applied in a random order with an inter-trial-interval of 1 min during the day and night for Tg(hs:NPVF) and RF9/GJ-14 experiments, respectively. Previous studies showed that a 15 s interval between repetitive stimuli is sufficient to prevent behavioral habituation (Burgess and Granato, 2007; Woods et al., 2014). The background probability of movement was calculated by identifying for each genotype the fraction of larvae that moved 5 s prior to all stimuli delivered during an experiment (14 different tap powers x 30 trials per experiment = 420 data points per larva). This value was subtracted from the average response fraction value for each tap event. The response of larvae to the stimuli was monitored using the videotracking software and was analyzed using Matlab and Excel. Statistical analysis was performed using the Variable Slope log(dose) response curve fitting module of Prism.
 
-## Optogenetic behavioral assay
+#### Optogenetic behavioral assay
 
 The videotracking system was modified to include a custom array containing blue LEDs (470 nm, MR-B0040-10S, Luxeon V-star) mounted 15 cm above and 7 cm away from the center of the 96-well plate to ensure uniform illumination (Singh et al., 2015). The LEDs were controlled using a custom-built driver and software written in BASIC stamp editor. A power meter (1098293, Laser-check) was used before each experiment to verify uniform blue light intensity (~400 μW at the surface of the 96-well plate). During the afternoon of 5 dpf, single larvae were placed into each well of a 96-well plate as described above and placed in the videotracker in the dark for 7 h. Larvae were then exposed to blue light for 30 min, starting at 12 a.m. Three trials were performed during the night, with an inter-trial interval of 3 hr. Total activity for each larva was monitored for 30 min before and after light onset, with data collected in 10 s bins. Light onset caused a burst of locomotor activity lasting for ~30 s for all genotypes, so data obtained during the minute before and after light onset was excluded from analysis. A large burst of locomotor activity was also observed for all genotypes when the lights were turned off after the 30 min illumination period. This data was excluded from analysis and is not shown in the figures. The total amount of locomotor activity of each larva during the 30 min of light exposure, excluding the minute after light onset, was divided by the average baseline locomotor activity for all larvae of the same genotype. The baseline period was defined as 30 min before light onset, excluding the minute before light onset. Data from three independent experiments were pooled and converted to percentage of WT larvae.
 
-## Chemogenetic behavioral assay
+#### Chemogenetic behavioral assay
 
 Neuronal activation using TRPV1 was performed as described (Chen et al., 2016c) with some modifications. Animals generated by mating homozygous Tg(npvf:KalTA4) to heterozygous Tg(UAS:TRPV1-TagRFP-T) fish were immersed in either DMSO (4948–02, Macron Chemicals) vehicle control or 2 μM capsaicin at 100 h post-fertilization (hpf). Capsaicin powder (M2028, Sigma) was dissolved in DMSO to prepare a 100 mM stock solution that was stored in aliquots at −20°C. Capsaicin working solutions were prepared just before each experiment by diluting the stock solution in E3 medium. All treatments contained a final concentration of 0.002% DMSO. Behavioral analysis was performed from 6 dpf until 8 dpf. Larvae were then genotyped by PCR to identify Tg(npvf:KalTA4); Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4) animals.
 
-## Metronidazole (MTZ) induced neuronal ablation
+#### Metronidazole (MTZ) induced neuronal ablation
 
 Neuronal ablation using eNTR was performed as described (Gandhi et al., 2015) with some modifications. Heterozygous fish from a Tg(npvf:mTagYFP-T2A-eNTR) line that exhibits strong YFP fluorescence in NPVF neurons were outcrossed to WT fish. Embryos were raised in E3 medium until 60 hpf, at which point they were treated with 5 mM MTZ (46461, Sigma Aldrich) in 0.2% DMSO in E3 medium for 60 h (60–120 hpf), with the MTZ solution refreshed every ~20 h. Larvae were then rinsed twice with E3 medium (120–122 hpf) and maintained in E3 medium for ~8 hr. MTZ treated Tg(npvf:mTagYFP-T2A-eNTR) and WT siblings were then placed into 96-well plates and allowed to recover from MTZ treatment for 24 h. Behavioral analysis was performed from 6 dpf at night until 8 dpf at night. Larvae were then genotyped by PCR to identify transgenic and WT animals. To quantify MTZ-induced neuronal ablation, Tg(npvf:mTagYFP-T2A-eNTR) and WT siblings were fluorescently sorted at 2 dpf, treated with either MTZ or DMSO vehicle as described above, and then processed at 7 dpf for ISH using a DIG-labeled npvf-specific probe as described below.
 
-## Scripts used for analysis of behavioral data
+#### Scripts used for analysis of behavioral data
 
 sort_fish_sttime_192.pl is a Perl script (Prober et al., 2006) that converts data acquired by the Viewpoint videotracker system to a format that is useful for analysis using Matlab and removes notations that are not relevant to behavioral analysis. perl_batch_192well.m is a Matlab script that allows the sort_fish_sttime_192.pl script to run on the Matlab platform. TapAnalysis.m is a Matlab script that analyzes tapping assay data and generates a table that lists the number of larvae that moved during each tapping event. VT_analysis.m is a Matlab script (modified from [Prober et al., 2006]) that analyzes data collected by the Viewpoint videotracker system to quantify several metrics, including locomotor activity, wake activity, sleep, sleep architecture and sleep latency. These scripts and detailed instructions on their use will be provided upon request.
 
-## Histology
+### Histology
 
-## In situ hybridization (ISH)
+#### In situ hybridization (ISH)
 
 Samples were fixed in 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS) for approximately 16 h at room temperature. ISH was performed using digoxygenin (DIG) labeled antisense riboprobes (DIG RNA Labeling Kit, Roche) as previously described (Thisse and Thisse, 2008). Double-fluorescent ISH (FISH) was performed using DIG- and fluorescein-labeled riboprobes and the TSA Plus Fluorescein and Cyanine 3 Systems kit (Perkin Elmer). Probes specific for npvf (Tessmar-Raible et al., 2007), vesicular glutamate transporter 2a (vglut2a), vglut2b, and glutamate decarboxylase 67 (gad67) (Higashijima et al., 2004) have been described. The c-fos probe was transcribed using a PCR product amplified from a zebrafish cDNA library using the primers Forward: 5’-CAGCTCCACCACAGTGAAGA-3’ and Reverse: 5’-TGCAAACAATTCGCAAGTTC-3’, and then serially amplified with the same forward primer and a T7 sequence added to the Reverse Primer: 5’-GAATTGTAATACGACTCACTATAGGGTGCAAACAATTCGCAAGTTC-3’.
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Samples were fixed in 4% PFA in PBS overnight at 4°C and then washed with 0.25% Triton X-100/PBS (PBTx). Brains were manually dissected and blocked for at least 1 h in 2% goat serum/2% DMSO/PBTx at room temperature or overnight at 4°C. Antibody incubations were performed in blocking solution overnight at 4°C using chicken anti-GFP (1:400, GFP-1020, Aves Labs), rabbit anti-TagRFP (1:100, AB233, Evrogen), or rabbit anti-dsRed (1:400, 643496, Takara Clontech) primary antibodies, and Alexa Fluor 488 and 568 secondary antibodies (1:500, Life Technologies). Samples were mounted in 50% glycerol/PBS and imaged using a Zeiss LSM 780 confocal microscope. Quantification of neurons (Figure 5—figure supplement 2M and Figure 6C) and c-fos intensity per NPVF neuron (Figure 5—figure supplement 2G) was performed blind prior to genotyping.
 
-## Pharmacology
+### Pharmacology
 
 RF9 (3672; Tocris) was dissolved in DMSO and then added to E3 medium for a final concentration of 0.1% DMSO and 10 μM RF9. Drug solution was freshly prepared prior to each experiment. Controls were exposed to 0.1% DMSO alone. RF9 and DMSO vehicle were loaded into separate sides of a 96-well plate with an empty row in between. WT larvae from the same clutch were added to the plate, and plates were sealed with an optical adhesive film (4311971, Applied Biosystems) to prevent evaporation.
 
 GJ-14 (Diphenylacetamide-D-Arg-D-Phg-NH2) was custom synthesized by AnaSpec, Inc. (Fremont, CA) as previously described (Kim et al., 2015). Residual TFA was removed and exchanged with acetate salt. Purity was verified by HPLC, found to be 99% around the peak area, and subsequently lyophilized. GJ-14 was reconstituted in DMSO, and then added to E3 medium for a final concentration of 0.05% DMSO and 10 μM GJ-14. Drug solution was freshly prepared prior to each experiment and behavioral experiments were performed as described for RF9.
 
-## qPCR
+### qPCR
 
 Larval zebrafish were raised on a 14:10 h light:dark cycle at 28.5°C with lights on at 9 a.m. and off at 11 p.m. At 5 dpf, total RNA was collected using Trizol reagent (15596–026, Life Technologies) from 20 pooled larvae every 6 h for 36 h. cDNA was synthesized from 5 μg of total RNA using Superscript III Reverse Transcriptase (18080–051, Invitrogen) and quantitative PCR was carried out using SYBR green master mix (4364346, Life Technologies) in an ABI PRISM 7900HT (Life Technologies) instrument using the primers 5’-GGCTCTCAGATTGCCACTTT-3’ and 5’-GGGGCCACATTAAGAGTGAA-3’. ribosomal protein l13a (rpl13a) was used as a reference gene, using the primers 5’-TCTGGAGGACTGTAAGAGGTATGC-3’ and 5’-AGACGCACAATCTTGAGAGCAG-3’. Relative expression levels were determined by using the ΔΔCt method (Livak and Schmittgen, 2001), normalized to the highest Ct value for each gene.
 
-## Imaging
+### Imaging
 
-## Confocal and brightfield imaging
+#### Confocal and brightfield imaging
 
 Dissected brains were coverslip mounted in Vectashield (H-1000, Vector Labs) or 80% glycerol in PBS and imaged using a compound microscope (Axioimager with EC Plan-Neofluar 10x/0.30 NA air objective or Plan-Apochromat 20x/0.8 NA air objective, Zeiss) for chromogenic ISH samples, or for double fluorescent ISH samples, a confocal microscope (LSM 780 with Plan-Apochromat 10x/0.45 NA air objective, LD LCI Plan-Apochromat 25x/0.8 NA Imm Corr objective, or LD C-Apochromat 40x/1.1 NA water objective, Zeiss). Fluorescein and cyanine were imaged in separate channels with 488 nm and 561 nm lasers, respectively. Confocal images are displayed as the maximum intensity z-projection of a stack of optical sections of approximately one airy unit (A.U.) thickness.
 
-## Two-photon selective plane illumination microscopy (2P-SPIM)
+#### Two-photon selective plane illumination microscopy (2P-SPIM)
 
 Live imaging was performed using a custom built 2P-SPIM microscope (Truong et al., 2011) with 940 nm excitation pulsed laser light (Chameleon Ultra 2, Coherent), focused by spherical optics (Nikon MRH07120, 10x, NA = 0.3), yielding a focused beam waist of approximately 4 μm, with total power of 50 mW. Fluorescence signal was collected by a water-immersion objective (Nikon MRD77220, 25x, NA = 1.1 for data shown in Figure 7 and Figure 7—figure supplement 1, Olympus XLUMPLFLN-W, 20x, NA = 1.0 for data shown in Figure 7—figure supplement 2), sCMOS camera (Hamamatsu ORCA-Flash 4.2), and appropriate spectral filters (Semrock). To increase the signal-to-noise ratio, we used a tube lens of focal length = 100 mm (Thorlabs AC508-1000-A-NK) to yield a 2x de-magnification. Image acquisition was performed using MicroManager software (Edelstein et al., 2014), with 2x binning, 950 ms exposure time.
 
@@ -237,6 +701,6 @@ For results presented in Figure 7—figure supplement 2, in order to test the hy
 
 Image analysis for Figure 7—figure supplement 2 was performed using Matlab. After background signal was subtracted, we performed standard Principal Component and Independent Component Analysis (PCA/ICA) (Mukamel et al., 2009) to automatically segment neurons that exhibited spiking activity. We typically utilized the first 15 principal components (covering ~75% of the total signal variance), as higher order components started to be noise-dominated (determined by visual inspection of components plotted onto the raw data time series). From raw images, we found that neuronal nuclei have nominal diameter = 5 μm, hence ICA was performed with spatial filter of that size. Typically, 500–800 active neurons were extracted from each 2 min imaging session. Some false positives were extracted from skin auto-fluorescence, contributing about 5% of the total segmented neurons, which did not contribute significantly to subsequent quantitative analysis. To establish the baseline signal F0 for each segmented neuron, the temporal signal trace for each 2 min imaging trial was smoothed with a sliding window of 5 s, then the minimum of the resulting signal trace was set to be F0. ΔF = F – F0 was then calculated for each segmented neuron, for each time step. Figure 7—figure supplement 2C and D show ΔF during the day and night, averaged over all segmented neurons. In Figure 7—figure supplement 2E, F and G, day activity values were calculated as the average of both day periods (before and after the night). In Figure 7—figure supplement 2E, ΔF/FN is shown during the day and night, averaged over all segmented neurons, where FN = average day activity of the same animal. In Figure 7—figure supplement 2F, we compare the non-normalized day neural activity, in units of fluorescence counts, and found that day neural activity was not statistically different between Tg(UAS:TRPV1-TagRFP-T) and Tg(npvf:KalTA4);Tg(UAS:TRPV1-TagRFP-T) animals. Thus, in order to compare neural activity between the two genotypes at night, we normalized night activity by FN = average day activity of the same animal (Figure 7—figure supplement 2G). Image rendering was performed using ImageJ. Graphs were generated and statistical analysis was performed using MATLAB.
 
-## Statistical analysis
+### Statistical analysis
 
 Line graphs in Figures 1–3 and 6, Figure 1—figure supplements 1–3, Figure 2—figure supplements 1–2, Figure 3—figure supplement 2, Figure 5—figure supplement 2 were generated from raw data and smoothed over 1 hr bins in 10 min intervals to show underlying behavioral trends. Line and bar graphs show mean ± standard error of the mean (SEM). In all statistical tests, the significance threshold was set to p<0.05, and P values were adjusted for multiple comparisons where appropriate. Parametric analyses were applied because the data followed an approximately normal distribution. Unpaired two-tailed Student’s t-test was performed using Excel. One-way and Two-way analysis of variance (ANOVA) and post hoc tests to correct for multiple comparisons were performed using Prism. The Holm-Sidak post hoc test was used to correct for multiple comparisons and to allow pairwise comparison of means for all samples. In Figure 2, Dunnett’s post hoc test was used to compare each of a number of treatments (RFRP transgene variants) with a single control (transgenic animal where all RFRP peptides were scrambled). In Figure 7H and Figure 7—figure supplement 2F and G, appropriateness of a t-test was confirmed by the Kolmogorov-Smirnov normality test (p>0.8). Then, either a one- or two-sampled t-test was carried out as described. Asterisks in figures denote statistics for pairwise or multiple comparisons as indicated.

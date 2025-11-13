@@ -58,7 +58,7 @@
 
 ## Abstract
 
-Amino-terminal acetylation is catalyzed by a set of N-terminal acetyltransferases (NATs). The NatA complex (including X-linked Naa10 and Naa15) is the major acetyltransferase, with 40–50% of all mammalian proteins being potential substrates. However, the overall role of amino-terminal acetylation on a whole-organism level is poorly understood, particularly in mammals. Male mice lacking Naa10 show no globally apparent in vivo amino-terminal acetylation impairment and do not exhibit complete embryonic lethality. Rather Naa10 nulls display increased neonatal lethality, and the majority of surviving undersized mutants exhibit a combination of hydrocephaly, cardiac defects, homeotic anterior transformation, piebaldism, and urogenital anomalies. Naa12 is a previously unannotated Naa10 -like paralog with NAT activity that genetically compensates for Naa10 . Mice deficient for Naa12 have no apparent phenotype, whereas mice deficient for Naa10 and Naa12 display embryonic lethality. The discovery of Naa12 adds to the currently known machinery involved in amino-terminal acetylation in mice.
+Amino-terminal acetylation is catalyzed by a set of N-terminal acetyltransferases (NATs). The NatA complex (including X-linked Naa10 and Naa15) is the major acetyltransferase, with 40–50% of all mammalian proteins being potential substrates. However, the overall role of amino-terminal acetylation on a whole-organism level is poorly understood, particularly in mammals. Male mice lacking Naa10 show no globally apparent in vivo amino-terminal acetylation impairment and do not exhibit complete embryonic lethality. Rather Naa10 nulls display increased neonatal lethality, and the majority of surviving undersized mutants exhibit a combination of hydrocephaly, cardiac defects, homeotic anterior transformation, piebaldism, and urogenital anomalies. Naa12 is a previously unannotated Naa10-like paralog with NAT activity that genetically compensates for Naa10. Mice deficient for Naa12 have no apparent phenotype, whereas mice deficient for Naa10 and Naa12 display embryonic lethality. The discovery of Naa12 adds to the currently known machinery involved in amino-terminal acetylation in mice.
 
 ## Introduction
 
@@ -74,15 +74,132 @@ To elucidate the functional role of Naa10 during development in mice, we used tw
 
 ## Results
 
-## Naa10 KO mice can be born, but display pleiotropic developmental defects
+### Naa10 KO mice can be born, but display pleiotropic developmental defects
 
 To explore the role of Naa10 in development, most analyses were carried out using our Naa10 KO model mice that had been generated previously (Yoon et al., 2014) using a targeting vector deleting Exon1, including the start codon, and Exon2 to Exon4 containing the GNAT domain including the acetyl-CoA binding motif, which is crucial for Naa10 function. We also generated another Naa10-deficient mouse, which we called Naa10tm1a, expressing β-galactosidase rather than the Naa10 gene (Figure 1—figure supplement 1A). Naa10 expression was deficient in Naa10tm1a mice (Figure 1—figure supplement 1B, C). Especially strong β-gal staining was observed during embryonic stages in the brain, heart, and spinal cord (Figure 1—figure supplement 1D). Male Naa10 KO (Naa10-/Y) embryos displayed mild to severe developmental defects compared to wildtype (WT) (Naa10+/Y) embryos. Some Naa10-/Y mice had lower levels of somites and developmental delay. Additionally, some Naa10-/Y embryos had a normal number of somites but were retarded in growth (Figure 1A). Some of the embryos underwent lysis or remained arrested at an earlier stage than embryonic day 10.5 (E10.5), with no turning, an abnormal trunk, and underdeveloped facial features. These phenotypes also reproduced in Naa10tm1a/Y embryos. Next, we assessed whether Naa10 is essential for viability and counted the Mendelian ratios. Both Naa10-/Y and Naa10tm1a/Y mice were under-represented after birth, while there was no significant reduction in the embryonic stage in both mouse lines (Supplementary file 1a, b). We monitored the pups daily at postnatal day 0 (P0) to postnatal day 3 (P3) and beyond, and the survival rate of Naa10-/Y mice dramatically decreased relative to either WT (Naa10+/Y and Naa10+/+) or heterozygous female (Naa10+/-) mice after the first few days of life (Figure 1B), and a few Naa10-/Y mice with postnatal lethality exhibited severe developmental defects such as craniofacial anomaly, an undeveloped lower body, whole-body edema, and ocular malformations (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig1-v3.jpg)
+
+**Figure 1.:** (A) Naa10+/Y, Naa10-/Y, and Naa10tm1a/Y embryos at E10.5. Growth retardation (5/33, more than five somites lower or undersized compared to littermate controls), kinky trunk, and developmental arrest are shown in Naa10-/Y (4/33) and Naa10tm1a/Y (1/5). Scale bars: 500 μm. (B) The percentage lethality in newborns, comparing Naa10 wildtype (WT) (Naa10+/Y and Naa10+/+), Naa10-/+ and Naa10-/Y pups until P3, derived from matings between heterozygous females and WT males. Approximately 11.6% (10/86) of WT, 24% (13/54) of Naa10+/-, and 76.3% (29/38) of Naa10-/Y mice were found dead before P3. (C) Representative images of Naa10-/Y pups during early postnatal days compared with Naa10+/Y. Severe developmental defects such as malformations of head and lower body (one leg; black arrowheads), whole-body edema, and anophthalmia (black arrows) are shown (N = 1 each). (D) Hematoxylin and eosin (H&E)-stained heart transverse section at E14.5 and vertical section at E18.5, comparing Naa10+/Y and Naa10-/Y embryos. Naa10-/Y embryo shows a ventricular septal defect (VSD) at E14.5 and E18.5. Also, at E18.5, Naa10-/Y embryo shows atrial septal defect (ASD). Arrow indicates VSD, ASD, and double outlet right ventricle (DORV). Scale bars: 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic illustration of the Naa10tm1a mice. (B) PCR confirmation of Naa10 deficiency. (C) Confirmation of Naa10 protein in kidney tissue by western blot. Naa10 protein is not detected in Naa10-/Y mouse. (D) Expression pattern of Naa10 in the embryo. β-Gal staining represents Naa10 localization.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Wildtype male heart outflow tract region indicating separate aorta and pulmonary trunks nestled between left and right atria. (B) Naa10-/- female heart from dying P0 pup only has a single outflow tract emerging from the right ventricle, resulting in persistent truncus arteriosus. (C) Naa10-/y male heart from dying P0 pup has separate outflow tracts but both emerge from the right ventricle, resulting in double outlet right ventricle. (D) Normal histology from wildtype male heart of pulmonary artery exiting the right ventricle. (E) Histology from Naa10-/- heart of single outflow tract exiting the right ventricle with tricuspid valve leaflets. (F) Histology from Naa10-/y heart of both pulmonary and aortic arteries emerging from right ventricle within the same plane. (G) Naa10-/- histology showing membranous ventricular septal defect (VSD). (H) Naa10-/y histology showing muscular VSD. (I) Normal heart revealing closed ductus arterious. (J) Naa10-/- histology showing open ductus arterious leading to pulmonary overload and likely lethality.
 
 Congenital heart defects are one of the main causes of infant lethality, and cardiac diseases are a common developmental anomaly in OS patients (Casey et al., 2015), with some OS males dying in infancy with cardiac arrhythmias (Rope et al., 2011). Therefore, we investigated whether Naa10 KO affects cardiac development. Development of a four-chambered septated heart is normally complete at E14.5; therefore, we examined the cardiovascular system at E14.5. We identified ventricular septal defects (VSDs) in several Naa10-/Y embryos, as well as concomitant double outlet right ventricle (DORV) at E14.5 (Figure 1D, upper). VSDs and atrial septal defects (ASDs) were also observed at E18.5 (Figure 1d, bottom), and persistent truncus arteriosus (PTA) or DORV, along with concomitant membranous and muscular VSDs, were found in several of the mice that died in the first day of life (n = 6/28 examined). Given the presence of outflow tract defects and VSDs, we examined whether the ductus arteriosus had closed appropriately or not at birth. Significantly, both Naa10-/Y and Naa10-/- females (n = 3/28 examined) exhibited a patent ductus arteriosus, meaning that there is a failure of the mutant in utero cardiovascular system to adapt to adult life (birth) and close the interatrial and aorta-pulmonary trunk shunts that are required for normal fetal life (Conway et al., 2003). As murine outflow tract and VSDs are not compatible with postnatal survival (Conway et al., 2003), these data suggest that congenital heart defects in Naa10-/Y mice may explain some of their neonatal lethality (Figure 1—figure supplement 2). We also examined surviving adult mice for any possible situs inversus, but we did not observe this in any adult (>4 weeks) Naa10-/Y mice examined (n = 19). Combined, these data suggest that Naa10 mutant CHDs are mainly confined to aberrant remodeling of the great vessels of the heart, leading to pulmonary overload at birth resulting in lethality.
 
 Some of the surviving homozygous mice (Naa10-/Y and Naa10-/-) had reduced body weight (Figure 2A). This reduced body weight continued through weaning, and some mice lost more weight as they developed progressive hydrocephaly. We observed that the smallest weight animal between the Naa10+/Y and one Naa10-/Y genotypes was almost always the Naa10-/Y genotype when the analysis was restricted to only include litters in which there was at least one of each of those genotypes living beyond 4 days of life. For example, 13 litters met this criteria from the mating (Naa10+/- × Naa10+/Y), and 12/13 of the litters had the Naa10-/Y as the lower weight (Fisher's exact test, two-tailed, p-value<0.0001). Five litters met this criteria from the mating (Naa10+/- × Naa10-/Y), and of these, all of them had the Naa10-/Y as the lower weight (Fisher's exact test, two-tailed, p-value=0.0079). Therefore, despite the known variability in weight data as a function of genetic background, environment, and stochastic variation (Pun et al., 2013), it does appear at least for ‘within-litter’ analysis that Naa10-/Y males are born at a smaller weight than Naa10+/Y males and on average remained the smallest male in the litter throughout their life.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig2-v3.jpg)
+
+**Figure 2.:** (A–C) Representative images of abnormalities in Naa10-/Y compared with Naa10+/Y. (A) Body weight of male (left) and female (right) versus ages was monitored from 2 weeks. The weight of Naa10-/Y and Naa10-/- mice is markedly reduced compared with that of the wildtype (WT) mice. Asterisks indicate a statistical difference calculated by Student’s t-test: *p<0.05. (B) Representative images of completely penetrant phenotypes. Hypopigmentation (Naa10+/Y, n = 243; Naa10-/Y, n = 121; Naa10tm1a/Y, n = 17) and supernumerary ribs (Naa10+/Y, n = 3; Naa10-/Y, n = 6; Naa10tm1a/Y, n = 2; E18.5) were found 100% in Naa10-deficient mice. (C) Naa10-/Y is smaller in size and has round-shaped head (Naa10+/Y 0/59, Naa10-/Y 7/33). Over time, hydrocephaly became apparent (N = 14/29 [~48%] for >P7 male Naa10-Y; N = 7/19 [~36%] for >P7 female Naa10-/-). Hydronephrosis (red arrow, Naa10+/Y 0/23, Naa10-/Y 14/29, Naa10+/+ 0/5, Naa10-/- 7/19) and abnormal genitalia (black arrow) of male (middle, Naa10+/Y 0/23, Naa10-/Y 16/29) and female (bottom, hydrometrocolpos, Naa10+/+ 0/5, Naa10-/- 7/19) are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) In wildtype (WT) mice, 13 thoracic vertebrae and ribs are numbered, whereas 14 thoracic vertebrae and ribs are counted in mutants (Naa10-/Y) (WT on the left, mutant on the right). n = 11 CT scans for Naa10-/Y compared to n = 18 Naa10+/Y. (B–D) Different number of ribs are linking the sternum between in Naa10-/Y, Naa10-/-, and WT. (B) Seven ribs linking the sternum in WT. (C) Eight ribs linking the sternum (the white arrow shows the eighth rib) in Naa10-/Y. (D) Seven on one side plus seven and one almost linking on the other side. In two mice, an asymmetrical link was observed. White arrow shows the eighth asymmetrical rib. (E, F) Abnormalities in the cervical phenotype. (E) Cervical WT/morphology. (F) Partial fusion of C1 and C2 dorsal arch in one mutant mouse.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images and histology of renal defects at E18.5 (n = 6 out of 39 examined) and P3 (n = 4 out of 11 examined). (B) Hydrocephaly (n = 3 CT scans for Naa10-/Y mice with hydrocephaly compared to n = 3 Naa10-/Y mice without hydrocephaly). (C) Kaplan–Meier survival curve of the Naa10+/Y and Naa10-/Y male mice starting at 4 days of life, thus not including any mice that died in the first three days of life.
+
 Although piebaldism has never been reported in humans with OS, all (100%) of the Naa10-/Y and Naa10tm1a/Y mice exhibited hypopigmentation on their belly (Figure 2B, upper), with this piebaldism quite varied in its extent but not appearing to correlate in any way with other phenotypes, such as hydrocephaly. Another phenotype with complete penetrance was bilateral supernumerary ribs (14 pairs of ribs instead of 13) in all Naa10-/Y and Naa10tm1a/Y mice (Figure 2B, middle and bottom, Table 1). This extra pair of ribs linking to the sternum transforms the T8 vertebrae into an anterior T7-like phenotype (Figure 2—figure supplement 1, Table 1).
+
+**Table 1.**
+ Skeletal analyses for ribs, sternebrae, and vertebrae.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Naa10+/Y (n = 50)</th>
+      <th colspan="2">Naa10+/+ (n = 10)</th>
+      <th colspan="2">Naa10+/- (n = 17)</th>
+      <th colspan="2">Naa10-/Y (n = 17)</th>
+      <th colspan="2">Naa10-/- (n = 1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4 sternebrae</td>
+      <td colspan="2">7 (14.0%)</td>
+      <td colspan="2">1 (10%)</td>
+      <td colspan="2">3 (17.6%)</td>
+      <td colspan="2">9 (52.9%)</td>
+      <td colspan="2">1 (100%)</td>
+    </tr>
+    <tr>
+      <td>3 sternebrae</td>
+      <td colspan="2">27 (54.0%)</td>
+      <td colspan="2">8 (80%)</td>
+      <td colspan="2">11 (64.7%)</td>
+      <td colspan="2">5 (29.4%)</td>
+      <td colspan="2">0 (0%)</td>
+    </tr>
+    <tr>
+      <td>4 sternebrae but with 3/4 fusion</td>
+      <td colspan="2">16 (32%)</td>
+      <td colspan="2">1 (10%)</td>
+      <td colspan="2">3 (17.6%)</td>
+      <td colspan="2">3 (17.6%)</td>
+      <td colspan="2">0 (0%)</td>
+    </tr>
+    <tr>
+      <td>14 ribs total bilaterally</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">1 (100%)</td>
+    </tr>
+    <tr>
+      <td>13 ribs total bilaterally</td>
+      <td colspan="2">50 (100%)</td>
+      <td colspan="2">10 (100%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+    </tr>
+    <tr>
+      <td>8 ribs attached to sternum bilaterally</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">1 (100%)</td>
+    </tr>
+    <tr>
+      <td>7 ribs attached to sternum bilaterally</td>
+      <td colspan="2">50 (100%)</td>
+      <td colspan="2">10 (100%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+    </tr>
+    <tr>
+      <td>14 thoracic vertebrae</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">1 (100%)</td>
+    </tr>
+    <tr>
+      <td>13 thoracic vertebrae</td>
+      <td colspan="2">50 (100%)</td>
+      <td colspan="2">10 (100%)</td>
+      <td colspan="2">17 (100%)</td>
+      <td colspan="2">0 (0%)</td>
+      <td colspan="2">0 (0%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Tabulation regarding the number of sternebrae found in skeletons, including ones in which there was partial fusions between the third and fourth sternebrae._
 
 A majority of the Naa10-/Y and Naa10-/- mice also had four instead of the usual three sternebrae, which were sometimes fused (Table 1). Cervical vertebrae fusion was also demonstrated in Naa10-/Y mice, particularly involving C1 and C2, suggesting possible anteriorization of C2 into a C1-like phenotype (Figure 2—figure supplement 1E, F, Supplementary file 1c). The number of lumbar vertebrae remained the same, thus suggesting an anterior transformation of the first sacral vertebra to a lumbar-like phenotype. These combined observations suggest possible anterior transformations in the Naa10 mutant skeletal phenotype, with an anteriorization of C2, a T8 transformation to a T7-like phenotype with ribs connecting to the sternum, an extra pair of ribs on L1 likely due to an L1 transformation to a T13-like phenotype, and an anterior transformation of the first sacral vertebra to a lumbar-like phenotype with loss of fusion to the sacral wings.
 
@@ -90,13 +207,21 @@ Out of 32 Naa10-/Y that survived past the third day of life and which were then 
 
 Litter sizes and offspring from other matings were also investigated, as shown in Supplementary file 1d. Matings were setup between Naa10-/- females and C57bl6J WT (Naa10+/Y) males, involving 11 mating pairs with seven unique females and seven unique males. Of a total of 127 pups that were born, 37 died in the first day of life and were degraded and/or cannibalized prior to any tail sample being retrieved, thus not being genotyped. This was a relatively high death rate in the first 24 hr of life (29%), more so than with the other matings, except for the one between Naa10-/- females and Naa10-/Y males (Supplementary file 1d). However, this is substantially less than the death rate of 90% (46/51) reported for the same mating in the Lee et al., 2017 paper, and we currently do not have an explanation for this discrepancy. Of the remaining 90 pups that could be genotyped, 59 of these were Naa10+/- females and 31 were Naa10-/Y males. 7 of the 59 Naa10+/- females and 2 of the 31 Naa10-/Y males died in the first three days of life (for a total death rate in the first three days for all born pups of 46/127, or 36%), and after this time, none of the remaining Naa10+/- females died in the first 10 weeks of life (52/59, or 88% overall survival), whereas 10 of the remaining 29 Naa10-/Y males developed hydrocephaly and died in the first 10 weeks of life, for an overall survival of (19/31, or 61%). The death rate for all pups of 36% in the first three days of life is similar to the rate of 42.4% seen with the mating of Naa10-/- females with Naa10-/Y males (Supplementary file 1d), whereas this rate is higher than that seen for Naa10+/- females mated with Naa10+/Y males (15.8%) or with Naa10-/Y males (13.6%).
 
-## Naa10-deficient mice have a functionally active NatA complex
+### Naa10-deficient mice have a functionally active NatA complex
 
 Prior experiments showed reduced in vivo protein amino-terminal acetylation of a few putative targets in patient cells (Myklebust et al., 2015). Reduced Nt-acetylomes were also observed in the Naa10 mutant yeast models (Van Damme et al., 2014). Given these prior reports, we hypothesized that pleiotropic phenotypes in Naa10-deficient mice are due to a decrease in global N-terminal acetylation. To test our hypothesis, integrated N-terminal peptide enrichment method (iNrich) (Ju et al., 2020) was used to analyze the level of protein amino-terminal acetylation in mouse embryonic fibroblast (MEF) lysates of Naa10+/Y and Naa10-/Y. Since the samples are treated with deuterated acetic anhydride prior to MS, unacetylated N-terminal site appears with +3 Da mass shift in the MS spectrum of the corresponding acetylated N-terminal site (Van Damme et al., 2011a). The peak intensity ratios of acetyl/heavy acetyl pairs represent the degree of acetylation of the N-terminal site. We found 765 acetyl/heavy acetyl pairs of N-termini throughout five replicates of Naa10+/Y and five replicates of Naa10-/Y MEFs. Except for the sites detected only in either WT or mutant, 533 N-terminal sites could be compared (see tabs called ‘N-term’ and ‘Header Key’ in Supplementary file 2a, c). Approximately 98% (n = 522) of N-termini sites showed less than 10% variation in the degree of terminal acetylation, indicating that there is no major difference in amino-terminal acetylation between Naa10-/Y and Naa10+/Y MEFs (Figure 3A). A more stringent analysis was also conducted in which peptides had to be detected in all 10 samples (i.e., tabs marked ‘N-term detected in all samples’ and ‘Header Key’ in Supplementary file 2b, c), and this resulted in 152 N-termini sites, of which only 3 (Rpl27, PPia, and Histone H1.0) had a slightly greater than 10% difference in the degree of acetylation between Naa10+/Y and Naa10-/Y. Although this was not a significant result statistically (p=0.09), it is worth noting that peptidyl-prolyl cis–trans isomerase A (PPIA), having a 10.3% decrease in amino-terminal acetylation, was previously identified with decreased amino-terminal acetylation in patient-derived B cells and fibroblasts in boys with the S37P mutation in NAA10 (Myklebust et al., 2015), along with being decreased in siNatA knockdown HeLa cells (Arnesen et al., 2009). PPIA also had decreased amino-terminal acetylation in one sample from homozygous null NAA15L314*/L314*-induced pluripotent stem cells (Ward et al., 2021).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig3-v3.jpg)
+
+**Figure 3.:** (A) Correlation of Naa10 alteration state on amino-terminal acetylation in mouse embryonic fibroblasts (MEFs). Each dot (n = 533) represents the average amino-terminal acetylation percentage of five replicates of Naa10+/Y and Naa10-/Y, respectively. Dashed lines are the borders of ±10% difference. Except for the 10 dots, 522 of the 533 dots are within the borders. The marginal histograms show the distribution of amino-terminal acetylation data points. (B) Immunoprecipitation of Naa15. Liver tissue from WT and Naa10 KO mouse was lysed and incubated with anti-Naa15 antibody to retrieve NatA complexes. Proteins were separated by SDS-PAGE and immunoblots probed with anti-Naa15 antibody and anti-NAA10 antibody. (C) Catalytic activity of immunoprecipitated NatA. The catalytic activity of NatA precipitated from WT and Naa10 KO mouse liver tissue by anti-Naa15 was measured towards the NatA substrate peptide SESS24 in an in vitro [14C]-Ac-CoA–based acetylation assay. Control reactions were performed with no enzyme or no peptide to account for background signal. The immunoprecipitation (IP) and activity measurements were performed in three independent setups, each with three technical replicates per assay. One representative setup is shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Construction of Naa10 Southern blot probe. (B) Southern blot membrane after hybridization with a Naa10 probe. Expected size band, restricted with Apa I and Xba I, are shown. (C) Ribosome profiling traces for the potential Naa10 paralog (Gm16286, UniProt: Q9CQX6). Picture was modified from GWIPS genome browser, Chr 18, 80206601–80212942.
+
 Overall, given the very minor differences with amino-terminal acetylation, we measured the in vitro amino-terminal acetylation activity of NatA via immunoprecipitation of the large auxiliary subunit Naa15 from mouse tissues. This analysis showed normal expression of Naa15 in Naa10 KO liver tissue as in WT tissues (Figure 3B), and we isolated a physical complex composed of Naa15 and undefined partners that retains NatA activity from Naa10 KO tissues (Figure 3C). These data suggest that despite the loss of Naa10 in mice the NatA complex remains active, thus explaining the lack of major differences with amino-terminal acetylation.
 
-## A Naa10 paralog exists in mice
+### A Naa10 paralog exists in mice
 
 Naa10 disruption is lethal in a variety of organisms, including Drosophila melanogaster (Wang et al., 2010), C. elegans (Chen et al., 2014), and Trypanosoma brucei (Ingram et al., 2000). Given the relatively mild phenotype and no reduction of the Nt-acetylome in Naa10 KO mice, we hypothesized that there might be a yet unidentified paralog of Naa10, which can compensate for loss of function in mice. A Blast search for genomic sequences with homology to Naa10 exposed several Naa10 pseudogenes on chromosomes 2, 3, 7, 12, 15, and 18. Additionally, Southern blot analysis from C57BL/6J DNA with Naa10 cDNA probe detected bands of the expected sizes on the X chromosome (Figure 3—figure supplement 1A, B), while other bands of unexpected sizes appeared on other chromosomes 2, 5, 15, and 18. The previously identified Naa10 paralog Naa11 is located on chromosome 5; however, this paralog is only expressed in testes (Pang et al., 2011). We found a predicted gene (Gm16286, UniProt: Q9CQX6) on chromosome 18, with high similarity to Naa10, which we name Naa12, and RiboSeq and mRNA traces of this region suggest possible transcription and translation of this gene (Figure 3—figure supplement 1C). The protein sequence of Naa12 is >80% identical to Naa10 and almost 90% identical with Naa11 (Figure 4—figure supplement 1C).
 
@@ -104,29 +229,240 @@ Quantitative PCR (q-PCR) analysis also confirmed the expression of this transcri
 
 To test whether Naa12 has a similar enzymatic activity as Naa10, we performed a radioactive-based acetyltransferase assay using synthetic peptides (Figure 4A). Since monomeric Naa10 preferentially acetylates N-termini with acidic side chains (Foyn et al., 2013; Van Damme et al., 2011b; Liszczak et al., 2013), we used peptides representing the N-termini of γ-actin (starting DDDIA-) and γ-actin (starting EEEIA-), which are two known Naa10 in vitro substrates. Additionally, we used a peptide starting with SESSSKS-, representing an in vitro NatA complex substrate high-mobility group protein A1. As expected for the monomeric proteins, we could not detect any activity towards the SESSSKS substrate. Importantly, both Naa10 and Naa12 significantly Nt-acetylated the acidic N-terminal peptides, demonstrating the intrinsic capacity of Naa12 to catalyze amino-terminal acetylation (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig4-v3.jpg)
+
+**Figure 4.:** (A) In vitro N-terminal acetyltransferase radioactive-based assay. Comparison of mouse Naa10 and Naa12 towards Naa10 peptide substrates, beta-actin (DDDIA-) and gamma-actin (EEEIA-), and the optimal NatA complex peptide substrate, SESSS-. Background control reactions were performed in the absence of either peptide or enzyme. Assays were performed in triplicate; error bars represent SEM. (B) Co-immunoprecipitation assay. HEK293 cells were transfected as indicated and lysed after 48 hr. Cell lysates were incubated with 1 μg anti-V5 antibody to precipitate V5-tagged Naa15. The isolated complexes were separated on SDS-PAGE and probed with the indicated antibodies. (C) Recombinant mouse Naa12/human Naa15 chimera complex activity. Radioactive acetyltransferase activity assay evaluating the activity of mNaa12-hNaa15 towards peptide (closed circles, ‘mNaa12-hNaa15’) and peptide chemical acetylation in the absence of enzyme (closed circles, ‘Buffer’) as well as chemical acetylation of the enzyme in the absence of peptide (open circles) assay and background (open circles). Error bars represent SD of two technical replicates. These are the same results from fraction #14 (both SESSS- and No Peptide) and both Buffer and Background used to illustrate the size-exclusion-purified mNaa12-hNaa15 complex activity in Figure 4—figure supplement 1F.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) qPCR analyses of mouse NATs (mNATs) in Naa10 wildtype (WT) and knockout (KO) adult mouse tissue. (B) Sequence alignment of mNaa10 isoforms and paralogs, including the potential Naa10 paralog mNaa12 (Gm16286, UniProt: Q9CQX6) using Clustal Omega (EMBL-EBI). The peptide used for immunization of rabbits to generate a specific antibody is indicated in red. (C) Full-length mNAT cDNA from mouse was amplified and cloned into pGEX-4T1. Proteins were expressed in E. coli BL21 (DE3) and purified via GSH-Sepharose. Shown is a Coomassie stain of fraction 1–4. (D) Cross-reactivity and sensitivity of the used NAT antibodies. 1–20 pmol of GST-mNAT proteins were separated on SDS-PAGE followed by western blot, probed with the indicated antibodies. (E) Recombinant mouse Naa12/human Naa15 chimera complex. Silver-stained denaturing SDS-PAGE (left) containing fractions (#10–20) eluted from an S200 size-exclusion chromatography (SEC) column with fractions evaluated for NatA-type activity indicated (asterisks, below gel) with (F) corresponding radioactive acetyltransferase activity assay comparing the activity of indicated fractions and buffer control (chemical acetylation) towards the SESSS- peptide (filled circles), in the absence of peptide (open circles), and assay background (x). Error bars represent SD of two technical replicates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Expression of Naa10 and Naa12 in wildtype (WT), Naa10 KO and Naa12 KO tissues, adult mice 13 weeks of age, (brain, heart, kidney, and testis) by RT-PCR. Expression of GAPDH was analyzed as an endogenous control. (B) Phenotypes in Naa12 KO mice. Lack of hypopigmentation (upper; N = 29) and lack of supernumerary ribs (middle and bottom; E18.5; N = 7) in Naa12 KO mouse.
+
 Across species, Naa10 is bound to its auxiliary subunit, Naa15, which links the catalytic subunit to the ribosome to facilitate co-translational amino-terminal acetylation of proteins as they emerge from the exit tunnel (Mullen et al., 1989; Sugiura et al., 2003; Park and Szostak, 1992; Gautschi et al., 2003; Magin et al., 2017; Varland and Arnesen, 2018). Due to its high sequence similarity (Figure 4—figure supplement 1B), we suspected that Naa12 may also interact with Naa15. To test this hypothesis, we performed co-immunoprecipitation assays in HEK 293 cells. Apart from Naa10 (isoform 1, Naa10235) and Naa12, we also included the second isoform of mNaa10, mNaa10225 that has been described earlier (Arnesen et al., 2005; Park and Szostak, 1992; Kim et al., 2006) as well as Naa11. Both Naa10 isoforms as well as Naa11 and Naa12 co-precipitated with V5-Naa15 but not V5 alone, suggesting that all tested proteins could form a stable complex with Naa15 in mouse (Figure 4B). As we have previously purified the human NatA complex composed of truncated human Naa10 (residues 1–160) and full-length human Naa15 complexes that had been expressed in insect cells (Gottlieb and Marmorstein, 2018), we attempted to co-express a chimeric truncated mouse Naa12 (residues 1–160) with full-length human Naa15 complex in insect cells (human and mouse Naa15 are highly conserved with a sequence conservation of 98.2%). The complex was purified by a combination of affinity, ion exchange, and size-exclusion chromatography, and size-exclusion fractions harboring a clearly detectable band of Naa15 and a lighter band for Naa12, as determined by silver staining, were analyzed for activity towards a SESSSKS- peptide (Figure 4C, Figure 4—figure supplement 1E, F). This analysis revealed that peak fractions containing the Naa12-Naa15 complex harbored detectable amino-terminal acetylation activity towards the SESSSKS- peptide (Figure 4C, Figure 4—figure supplement 1F), thus demonstrating catalytic activity of a NatA complex with mouse Naa12.
 
 In a mass spectrometry analysis of a similar setup to that shown in Figure 3B, NAA15 immunoprecipitates from WT or Naa10-KO mouse livers were analyzed by mass spectrometry. We found five distinct peptides derived from Naa12 (Table 2 and Supplementary file 2d). Three of these derive from the same part of the peptide sequence, RDLSQMADELRR, and all of these three peptides had one or two missed trypsin cleavages (DLSQMADELRR, RDLSQMADELR, and RDLSQMADELRR). The other two peptides, AMIENFSAK and ENQGSTLPGSEEASQQENLAGGDSGSDGK, are not the results of missed cleavages. None of these peptides are found in other sequences in the mouse genome and thus unambiguously identify Naa12 in our experiments. They have higher intensities in Naa15 IPs compared to Ctrl IPs, indicating that Naa12 is selectively enriched by Naa15 IP. Some peptides are additionally assigned to the Naa10/Naa11/Naa12 protein group as a large part of their sequences are identical. As expected, no unique Naa10 peptides are identified in the IPs from Naa10-KO mice. 12 peptides were ambiguously assigned to Naa12 or to major urinary proteins (Mup9, Mup8, Mup1, Mup17, Mup5, or Mup2), but these are as likely to be derived from Mups as from Naa12, as they have comparable intensities between Ctrl and Naa15 IPs.
 
-## Naa12 rescues loss of Naa10 in mice
+**Table 2.**
+ Naa10, Naa11, and Naa12 peptides identified by LC-MS/MS analysis in Naa15 IP samples from WT and Naa10-KO mouse.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene name</th>
+      <th rowspan="2">Peptide sequence</th>
+      <th colspan="2">Log2 LFQ intensity Naa15-IP</th>
+    </tr>
+    <tr>
+      <th>WT mouse</th>
+      <th>Naa10-KO mouse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Naa12</td>
+      <td>AMIENFSAK</td>
+      <td>23.8144</td>
+      <td>27.5563</td>
+    </tr>
+    <tr>
+      <td>Naa12</td>
+      <td>DLSQMADELRR</td>
+      <td>25.2637</td>
+      <td>28.38</td>
+    </tr>
+    <tr>
+      <td>Naa12</td>
+      <td>ENQGSTLPGSEEASQQENLAGGDSGSDGK</td>
+      <td>21.299</td>
+      <td>22.09</td>
+    </tr>
+    <tr>
+      <td>Naa12</td>
+      <td>RDLSQMADELR</td>
+      <td>-</td>
+      <td>22.20</td>
+    </tr>
+    <tr>
+      <td>Naa12</td>
+      <td>RDLSQMADELRR</td>
+      <td>-</td>
+      <td>27.77</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>AALHLYSNTLNFQISEVEPK</td>
+      <td>26.7672</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>AMIENFNAK</td>
+      <td>27.3981</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>DLTQMADELRR</td>
+      <td>25.5107</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>GNVLLSSGEACREEK</td>
+      <td>25.0717</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>HMVLAALENK</td>
+      <td>25.5293</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>NARPEDLMNMQHCNLLCLPENYQMK</td>
+      <td>25.8928</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa10</td>
+      <td>YYFYHGLSWPQLSYIAEDENGK</td>
+      <td>26.5915</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11</td>
+      <td>AALHLYSNTLNFQVSEVEPK</td>
+      <td>-</td>
+      <td>27.3833</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11</td>
+      <td>YYFYHGLSWPQLSYIAEDEDGKIVGYVLAK</td>
+      <td>-</td>
+      <td>25.2517</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>IVGYVLAK</td>
+      <td>28.0873</td>
+      <td>25.7753</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>MEEDPDDVPHGHITSLAVK</td>
+      <td>29.1069</td>
+      <td>29.265</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>MEEDPDDVPHGHITSLAVKR</td>
+      <td>24.7605</td>
+      <td>21.7784</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>YVSLHVR</td>
+      <td>22.8611</td>
+      <td>23.7383</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>YYADGEDAYAMK</td>
+      <td>-</td>
+      <td>27.2083</td>
+    </tr>
+    <tr>
+      <td>Naa12;Naa11;Naa10</td>
+      <td>YYADGEDAYAMKR</td>
+      <td>27.2319</td>
+      <td>27.1689</td>
+    </tr>
+  </tbody>
+</table>
+
+_Samples were run in technical duplicates and the average log2 LFQ intensity of the peptides is presented.IP: immunoprecipitation; WT: wildtype; KO: knockout; LFQ: label-free quantification._
+
+### Naa12 rescues loss of Naa10 in mice
 
 To investigate whether Naa12 can rescue the loss of the function of Naa10 in vivo, Naa12 KO mice were generated using CRISPR technology (Singh et al., 2015). One 95-base pair deletion Δ131–225 in Naa12 was characterized in depth (Figure 5A). This mutation introduces a frameshift, leading to a termination codon at amino acid 67, which should either result in complete KO of the protein or, at best, the expression of a truncated mini-protein that would be far shorter than the usual 220 amino acid Naa12. We confirmed the deletion by PCR with genomic DNA (Figure 5B). QPCR further showed deletion of Naa12 in the tested tissues of Naa12 KO mice (Figure 5C); however, it seemed that Naa12 might be slightly expressed in testis. Due to the high similarity between Naa11 and Naa12, the expression shown in Naa12 KO testis could actually be Naa11 rather than Naa12, and this was confirmed by RT-PCR showing definite deletion (Figure 4—figure supplement 2A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig5-v3.jpg)
 
-**Figure 5.:** Naa12 knockout (KO) mice.(A) Scheme of Naa12 (Gm16286, UniProt: Q9CQX6) deletion used to generate Naa12 KO mouse. 95 base pairs (131–225) were deleted. F′: genomic DNA forward primer; F′′: cDNA forward primer; R: reverse primer. (B) Genotyping of Naa12 KO mice by PCR. Wildtype (WT) allele size was 381 bp and targeted allele size was 287 bp. (C) mRNA level of Naa12 was analyzed in selected tissues by qPCR. Relative expression level of WT (white bars) and Naa12 KO (black bars) after normalizing to that of GAPDH.Figure 5—source data 1.Naa12KO mice.
+**Figure 5.:** (A) Scheme of Naa12 (Gm16286, UniProt: Q9CQX6) deletion used to generate Naa12 KO mouse. 95 base pairs (131–225) were deleted. F′: genomic DNA forward primer; F′′: cDNA forward primer; R: reverse primer. (B) Genotyping of Naa12 KO mice by PCR. Wildtype (WT) allele size was 381 bp and targeted allele size was 287 bp. (C) mRNA level of Naa12 was analyzed in selected tissues by qPCR. Relative expression level of WT (white bars) and Naa12 KO (black bars) after normalizing to that of GAPDH.
 
 Paralogs are homologous genes that originate from the intragenomic duplication of an ancestral gene. Homologs that play a compensatory role can sometimes show similar phenotypes to each other when one of them is deficient (Peng, 2019), whereas other homologs might only offer partial compensation when the primary gene is more widely expressed or has higher activity levels. We analyzed Naa12 KO mice to see if they produced similar developmental defects to those in Naa10 KO mice. KO mice for this gene were viable (Supplementary file 1e). Although there was initially a question of decreased fertility for the male mice, larger numbers of matings and litters did not bear this out (Supplementary file 1d), and necropsy and inspection of testes and seminal vesicles under a stereomicroscope did not reveal any macroscopic differences. Furthermore, the phenotypes (piebaldism and bilateral supernumerary ribs, Figure 2B) observed in Naa10 KO mice with complete penetrance were not present in Naa12 KO mice (Figure 4—figure supplement 2B). Overall, there were not any obvious phenotypes in these mice.
 
 Matings between Naa10+/- Naa12+/+ female mice and either Naa10+/y Naa12+/- or Naa10+/y Naa12-/- males produced zero male Naa10-/y Naa12+/- progeny, while also suggesting that compound heterozygous (Naa10+/- Naa12) female mice are produced at a rate much less than predicted by Mendelian ratios (Supplementary file 1f, g). Matings between surviving compound heterozygous (Naa10+/- Naa12+/-) females and Naa10+/Y Naa12+/- males demonstrate that no live births occurred for Naa10 Naa12 double-knockout (DKO) males (Naa10-/Y Naa12-/-) (Figure 6). In addition, the average litter size was small when compared to the control (WT × WT) matings, suggesting embryonic lethality (Table 3). In order to determine whether lethality occurs during the embryonic stage, we genotyped E18.5 litters – just before birth. Consistent with our previous observations, we could not obtain any Naa10-/Y Naa12-/- embryos, and many embryos could not be genotyped because they were already in the midst of resorption (n = 23) (Figure 6). We checked an even earlier stage at E10.5 and also found zero Naa10-/Y Naa12-/- embryos, and also with far fewer resorptions at this stage (N = 3). Interestingly, we did observe Naa10-/Y Naa12+/- embryos where two of them displayed delayed developmental stage (appearing younger than E10.5) and another two embryos were lysed and had already begun degenerating (but despite this, we could at least genotype these embryos). This helps explain why only one Naa10-/Y Naa12+/- embryo was observed at E18.5. Furthermore, Naa10+/- Naa12-/- female embryos were also lysed/degenerating at E10.5 and were not observed from that day onward. Matings between compound heterozygous females and Naa10+/Y Naa12-/- males also did not yield any Naa10-/Y Naa12-/- male mice at any embryonic stage examined, and only a couple of Naa10+/- Naa12-/- female mice at early stages of development (Figure 6—figure supplement 1), and the litter sizes were even smaller, suggesting increased embryonic lethality (Table 3). Consistent with this, we noted many resorptions at E12.5 and E18.5 that could not be genotyped. The number of living postnatal compound heterozygous female mice was also considerably lower than the predicted Mendelian ratios (Figure 6, Figure 6—figure supplement 1) and the surviving Naa10+/- Naa12+/- females were smaller in size than littermate controls (Figure 7D).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-v3.jpg)
+
+**Figure 6.:** Naa10 Naa12 DKO exhibit embryonic lethality. Pedigree and genotypes of pups and embryos at E10.5 and E18.5 from Naa10+/- Naa12+/- female mice crossed to the Naa10+/Y Naa12+/- male mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Naa10 Naa12 double-knockout (DKO) exhibit embryonic lethality. Pedigree of mating and genotypes of pups and embryos at E8.5, E10.5, E12.5, and E18.5.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-figsupp2-v3.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-figsupp3-v3.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-figsupp4-v3.jpg)
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig6-figsupp5-v3.jpg)
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/65952/elife-65952-fig7-v3.jpg)
 
 **Figure 7.:** (A) Male body weight for the Naa10 mice on inbred genetic background (eight backcrosses to C57bl6/J). (B) Female body weight for the Naa10 mice on inbred genetic background (eight backcrosses to C57bl6/J). (C) Male body weight for the Naa10 and Naa12 mice on mixed genetic background. (D) Female body weight for the Naa10 and Naa12 mice on mixed genetic background.
 
+**Table 3.**
+ Litter size of Naa10 × Naa12 matings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotypes of Naa10; Naa12 breeders (♀ x ♂)</th>
+      <th>Total number of pups</th>
+      <th>Total number of litters</th>
+      <th>Average litter size (pups/litters)</th>
+      <th>SD of litter size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Naa10+/+ Naa12+/+ × Naa10+/Y Naa12+/+</td>
+      <td>206</td>
+      <td>24</td>
+      <td>8.6</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Naa10+/- Naa12+/- × Naa10+/Y Naa12+/-</td>
+      <td>157</td>
+      <td>32</td>
+      <td>4.9</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Naa10+/- Naa12+/- × Naa10+/Y Naa12-/- *</td>
+      <td>225</td>
+      <td>63</td>
+      <td>3.6</td>
+      <td>1.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This mating was performed at IBR in Staten Island, New York, whereas the other two matings were performed at Ewha Womans University, Seoul, Republic of Korea.SD: standard deviation._
+
 Due to the severe embryonic lethality observed in the Naa10 Naa12 DKO male mice and the Naa10+/- Naa12-/- female mice, which was not seen in each single KO (Naa10 KO or Naa12 KO), it seems likely that, without compensation by Naa12, amino-terminal acetylation is disrupted in Naa10 Naa12 DKO mice. Together, these data support the compensatory role of Naa12 in vivo.
 
-## Genotype distribution modeling of Naa10- and Naa12-deficient offspring
+### Genotype distribution modeling of Naa10- and Naa12-deficient offspring
 
 The discrepancies we noted between the observed offspring genotype distributions and the expected Mendelian frequencies prompted us to examine the results from four matings (Supplementary file 1h–m) with the goal of understanding the effects of combined Naa10 and Naa12 mutations on embryonic and postnatal mortality. We created mathematical models to predict the observed genotype distribution at each age based on successive incorporation of assumptions of the lethality of specific offspring genotypes. Embryonic genotype data was obtained from two matings for which embryonic genotype data were obtained (Supplementary file 1h, i). Those matings were (1) Naa10+/Y; Naa12+/- males crossed with Naa10+/-; Naa12+/- females (Figure 6, Supplementary file 1h) and (2) Naa10+/Y; Naa12-/- males crossed with Naa10+/-; Naa12+/- females (Figure 6—figure supplement 1, Supplementary file 1i). The genotype numbering shown in Supplementary file 1h was used throughout this analysis, and the corresponding genotypes for all other crosses are aligned to have the same numbers. Each model described below adjusted the expected observed genotype frequencies at each age to account for loss of embryos or pups due to the predicted lethal effects of one or more genotypes by the method described in Materials and methods. Three stages of models (B–D) were compared with the expected Mendelian distribution (model A).
 
@@ -136,9 +472,85 @@ Model C was developed from model B in two stages by incorporating separately obs
 
 Model D incorporated the assumptions of models B and C and added adjustments to the survival rates of genotype 5 (Naa10+/-; Naa12+/-) and genotype 10 (Naa10-/Y; Naa12+/+) based on the observations that these genotypes were underrepresented at late fetal ages or early postpartum. Genotype 5 was overrepresented during embryogenesis (31 identified but only 18.4 expected for all embryonic ages) but was underrepresented at P3 (17 of 42 expected) based on the expected Mendelian frequencies. A better analysis was achieved by comparing the observed genotype frequencies with those predicted by model C because the expected distributions are significantly affected by the lethal effects of the three genotypes considered in that model. In that case, the genotype overrepresentation during embryogenesis is somewhat less (31 identified but only 22.1 expected) but the underrepresentation at P3 is significantly increased (17 identified of 62 expected, or 27%). Using a model (D3) that incorporated adjusted survival rates for genotypes 12, 11, 6, and 5, we found that genotype 10 remained underrepresented in the observed postnatal offspring counts. The subsequent model (D4) incorporated adjustments to genotype 10 survival rates at E18.5 and P3 to account for this and then was slightly refined by adjusting other genotype survival rates to maximize the fit of all genotypes at all ages. The survival values for model D4 are shown in Table 4. A comparison of the observed offspring numbers with those predicted by the Mendelian distribution and model D4is shown in Figure 6—figure supplements 2–5.
 
+**Table 4.**
+ Model D4 genotype survival by age.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#*</th>
+      <th>Genotype</th>
+      <th>E8.5 (%)</th>
+      <th>E10.5 (%)</th>
+      <th>E12.5 (%)</th>
+      <th>E18.5 (%)</th>
+      <th>Postnatal (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>Naa10-/Y; Naa12-/-</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Naa10-/Y; Naa12+/-</td>
+      <td>40</td>
+      <td>35</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Naa10+/-; Naa12-/-</td>
+      <td>40</td>
+      <td>33</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Naa10+/-; Naa12+/-</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Naa10-/Y; Naa12+/+</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>55</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>All Others</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Genotype number according to Supplementary file 1h.E: embryonic day._
+
 The observations of reduced survival for selected Naa10/Naa12 mutants suggests that Naa10 is the more dominant function (e.g., is able to provide Naa12 functions more successfully than Naa12 can provide Naa10 functions) but that two copies of Naa10 are required to replace complete loss of Naa12 in females, possibly due to X-linked inactivation of Naa10 during development. The stochastic nature of X-linked inactivation in time and space may make Naa10 functionality somewhat unpredictable during development in a background having a mixture of Naa10 and Naa12 mutations.
 
-## Statistical examination of weight data in Naa10- and Naa12-deficient mice
+### Statistical examination of weight data in Naa10- and Naa12-deficient mice
 
 To determine whether Naa10 and Naa12 are essential for viability and development, we examined the survival, weights, and growth rates of 688 Naa10 and Naa12 KO and WT mice. The genotypes of mice examined are listed in Supplementary file 1n. To avoid potential survival biases, only weights taken during the first 180 days were included. Growth curves are shown in Figure 7. Age and age-squared (the quadratic term) are both entered in the analyses; the quadratic term shows the degree to which the effect of age itself changes with age.
 
@@ -168,89 +580,400 @@ In conclusion, our study provides strong evidence that Naa10, the catalytic subu
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Naa10</td>
+      <td>GenBank</td>
+      <td>MGI:MGI:1915255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Naa15</td>
+      <td>GenBank</td>
+      <td>MGI:MGI:1922088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Naa11</td>
+      <td>GenBank</td>
+      <td>MGI:MGI:2141314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Naa12</td>
+      <td>This paper</td>
+      <td>Gm16286, UniProt: Q9CQX6</td>
+      <td>Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Naa10-/-</td>
+      <td>Nature Communication Yoon et al., 2014</td>
+      <td></td>
+      <td>Provided by corresponding author, Goo Taeg Oh</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Naa12-/-</td>
+      <td>This paper</td>
+      <td>Gm16286, UniProt: Q9CQX6</td>
+      <td>Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 (normal, embryonic kidney cells)</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Primary mouse embryonic fibroblasts</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from mouse embryos (E13.5)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa10 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab155687</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa10 (rabbit polyclonal)</td>
+      <td>Protein Tech</td>
+      <td>Cat# 14803-1-AP</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa10 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 13357</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa10 (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-33256</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa10 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-33820</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa11 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat# NBP1-90853</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa15/NARG1 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab60065</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NAA15 (rabbit polyclonal)</td>
+      <td>Biochemical Journal (reference 12 in this paper) Arnesen et al., 2005</td>
+      <td></td>
+      <td>(1:2000) Provided by author Thomas Arnesen,</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NAA50 (rabbit polyclonal)</td>
+      <td>LifeSpan BioSciences</td>
+      <td>Cat# LS-C81324-100</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F7425</td>
+      <td>(2 μg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9484</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# 1615</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GST (mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>Cat# A00865</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (mouse monoclonal)</td>
+      <td>Life Technologies</td>
+      <td>Cat# R960-25</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Naa12 (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>Gm16286, UniProt: Q9CQX6</td>
+      <td>C-terminus (aa191-205: QENLAGGDSGSDGKD-C) conjugated to OVA by PrimmBiotech Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa10-Exon2/3_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ctcttggccccagctttctt Provided by corresponding author, Goo Taeg Oh</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa10-Exon3/4_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>tcgtctgggtcctcttccat Provided by corresponding author, Goo Taeg Oh</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa11_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>accccacaagcaaagacagtg Provided by corresponding author, Goo Taeg Oh</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa11_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>agcgatgctcaggaaatgctct Provided by corresponding author, Goo Taeg Oh</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa12(Gm16286)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>acgcgtatgctatgaagcga Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa12(Gm16286)__R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ccaggaagtgtgctaccctg Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa15_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gcagagcatggagaaaccct Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa15_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>tctcaaacctctgcgaacca Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa50_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>taggatgccttgcaccttacc Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mNaa50_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>gtcaatcgctgactcattgct Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAPDH_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>aggtcggtgtgaacggatttg Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mGAPDH_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>tgtagaccatgtagttgaggtca Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mACTB_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ggctgtattcccctccatcg Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mACTB_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ccagttggtaacaatgccatgt Provided by corresponding author, Gholson J. Lyon</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen 3.0 SR</td>
+      <td>ZEISS</td>
+      <td>Version 16.0.1.306</td>
+      <td>Black 64bit edition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alcian Blue 8GX</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5268</td>
+      <td>0.03%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alizarin Red</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5533</td>
+      <td>0.05%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# MHS80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# HT110116</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All experiments were performed in accordance with guidelines of International Animal Care and Use Committee (IACUC) of Ewha Womans University (protocol #18-012), Cold Spring Harbor Laboratory (CSHL) protocol #579961-18, and Institute for Basic Research in Developmental Disabilities (IBR) (protocol #456). At CSHL and IBR, any matings that required genotyping were screened on a daily basis by animal husbandry staff, with notation of how many newborn pups were present each morning, but with paw tattoo and tail genotyping not being performed until day 3 of life, so as to not disturb the litters and thus to not increase the risk for maternal rejection of the litter. The stock of C57BL/6J was replenished annually from Jackson Laboratory so as to avoid genetic drift from the JAX inbred line.
 
-## Generation of Naa10-deficient mice
+### Generation of Naa10-deficient mice
 
 The Naa10 KO mice were generated as previously described (Yoon et al., 2014). Naa10tm1a [B6;129P2-Ard1tm1a(Eucomm)Gto/J] (Naa10tm1a) mice, used for Naa10 reporter mouse, were generated using standard method based on a standard gene-targeting in E14 embryonic stem (ES) cells (129/Sv) by using a targeting vector from EUCOMM. Correctly targeted ES clones were used for blastocyst microinjection and generation of chimeric mice. Chimeric mice were crossed to C57BL/6J mice, and then the progeny were backcrossed to C57BL/6J for more than 10 generations. The Naa10-deficient mice used in the weight analyses were derived from mice backcrossed eight times to a C57BL/6J inbred genetic background, and this was confirmed with genome scanning at the Jackson Laboratory, showing heterozygosity for only one marker for 129S1/SvImJ out of 290 autosomal markers tested, thus giving a percentage of C57BL/6J of 99.66%.
 
-## Generation of Naa12 (Gm16286, UniProt: Q9CQX6) KO mice
+### Generation of Naa12 (Gm16286, UniProt: Q9CQX6) KO mice
 
 The mice were made using standard methods by microinjection of CRISPR reagent mix into zygotes obtained from the mating of B6D2F1 females (i.e., 50% C57BL/6J, 50% DBA/2J [D2]) females to inbred C57BL/6J males. The guide RNA was produced and validated from Sigma using a Cel1-nuclease assay, and the most active guide was selected, which was Naa12_0_125 (C9587), with a target sequence of GAGCGTTTCACAGCCAGCG and including the targeting cr-RNA sequence and the tracrRNA portion. The indels were transmitted by breeding again to inbred C57BL/6J males, and the resulting progeny were interbred on a mixed genetic background of approximately 12.5% DBA/2J (D2)/87.5% C57BL/6J, for use in the reported experiments, including the weight analyses. Progeny from these mice have been backcrossed to C57BL/6J for more than 10 generations, with no discernible new phenotypes emerging. Genomic DNA was isolated from paw and tail. DNA was screened for mutations using PCR and Surveyor assay (Qiu et al., 2004), followed by Sanger sequencing of selected clones and the use of CRISP-ID (Dehairs et al., 2016) to identify putative deletions.
 
-## Primers for mice genotyping
+### Primers for mice genotyping
 
 The primers used for Naa10 KO and Naa10tm1a genotyping were Naa10-F: 5′-cctcacgtaatgctctgcaa-3′, Naa10-neo-F: 5′-acgcgtcaccttaat-atgcg-3′, Naa10-R: 5′-tgaaagttgagggtgttgga-3′, Naa10tm1a-F: 5′-gcacactctctgaattggac-3′, Naa10tm1a-neo-F: 5′-ggccgcttttctggattcat-3′, and Naa10tm1a-R: 5′-gcaggggaataaggcattgg-3′. The primers used for Naa12 KO were Naa12 Surveyor F: 5′-gctccacctcgctaacctgg-3′, Naa12 Surveyor R: 5′-gccagatgacctgatgaacatgc-3′ and HEX-Naa12 Surveyor F: 5′-gctccacctcgctaacctgg-3′.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: rabbit anti-Naa10 (Abcam #ab155687), rabbit anti-Naa10 (Protein Tech #14803-1-AP), rabbit monoclonal anti-NAA10 (Cell Signaling, #13357), goat anti-Naa10 (Santa Cruz, #sc-33256), rabbit anti-Naa10 (Santa Cruz, #sc-33820), rabbit anti-Naa11 (Novus Biologicals; #NBP1-90853), mouse anti-Naa15/NARG1 (Abcam; #ab60065), rabbit polyclonal anti-NAA15 (Arnesen et al., 2005), rabbit anti-Naa50 (LifeSpan BioSciences; #LS-C81324-100), rabbit anti-FLAG (Sigma; #F7425), mouse anti-GAPDH (Abcam; #ab9484), goat anti-actin (Santa Cruz, #1615), mouse anti-GST (GenScript; #A00865), and mouse anti-V5 (Life Technologies; #R960-25). The antibody against the potential mNaa10 paralog mNaa12 (Gm16286, UniProt: Q9CQX6) was raised in rabbits after immunization with a synthetic peptide of the Naa12 C-terminus (aa191-205: QENLAGGDSGSDGKD-C) conjugated to OVA by PrimmBiotech.
 
-## Alcian Blue and Alizarin Red co-staining of skeletons
+### Alcian Blue and Alizarin Red co-staining of skeletons
 
 After the skin and internal organs were removed, embryos were fixed in 95% ethanol (EtOH) for 4 hr, then in 100% acetone for overnight. Embryos were stained with 0.03% Alcian Blue 8GX in ethanol/acetic acid (4:1 v/v) for overnight and kept in 1% KOH for 2 days until they became clearly visible, followed by staining with 0.05% Alizarin Red in 1% KOH for 4 hr. After washing with 100% glycerol/1% KOH (1:1 v/v), skeletons were kept in 100% glycerol.
 
-## Isolation and imaging of mouse embryos
+### Isolation and imaging of mouse embryos
 
 Timed matings were performed either by using the presence of a vaginal plug to assess fertilization. The morning vaginal plug was designated E0.5. Pregnant mice were sacrificed at several time points after conception. The embryos were isolated in ice-cold PBS with 1% FBS and washed three times in ice-cold PBS. Embryos were imaged using a Zeiss Axiozoom V16 with Zen software and merged 50 slides between Z-stack intervals.
 
-## β-Galactosidase staining
+### β-Galactosidase staining
 
 Isolated E10.5 embryos were incubated in fixation solution (4% paraformaldehyde) at 4°C for 25 min. Samples were washed in ice-cold PBS and then incubated in permeabilization solution (PBS containing 0.01% Na deoxycholate, 0.02% Nonidet-P40, 2 mM MgCl2) for 20 min at 4°C. Subsequently, samples were incubated in β-gal staining solution (PBS containing 1 mg/mL X-Gal, 5 mM potassium ferrocyanide, 5 mM potassium ferricyanide, 0.02% Nonidet-P40, 2 mM MgCl2) at 37°C overnight. Following β-gal staining, samples were washed with PBS and incubated in fixation solution at 4°C for storage.
 
-## Hematoxylin and eosin staining
+### Hematoxylin and eosin staining
 
 Isolated kidney tissues at E18.5 and P3 were fixed with 4% paraformaldehyde at 4°C for overnight and embedded in paraffin. Samples were sectioned at 8 μm thick and stained with hematoxylin (MHS80, Sigma) and eosin (HT110116, Sigma) for morphology.
 
-## Cloning
+### Cloning
 
 Full-length mouse Naa10 and Naa12 (Gm16286, UniProt: Q9CQX6) expression vectors were separately constructed using a pMAL-c5x vector. In both cases, the catalytic subunit contained an N-terminal uncleavable MBP-tag. Bacterial expression vectors of mNATs were cloned from cDNA generated from mouse liver or testes. mRNA was isolated using the Oligotex direct mRNA kit (Qiagen) according to the manufacturer's recommendations. 1 µg RNA was reverse transcribed with Superscript IV reverse transcriptase (Thermo Fisher) and Oligo dT(18) primer. The PCR product was digested and cloned into BamHI restriction sites of pGEX-4T1 (GE Healthcare), pMAL-p5X and p3xFLAG-CMV10 (Sigma-Aldrich) using standard techniques. All constructs were sequenced to validate correct insert and orientation.
 
-## Primers for cloning
+### Primers for cloning
 
 cDNA was amplified using the primers CCG GGA TCC ATG AAC ATC CGC AAT and CTG GGA TCC CTA GGA GGC AGA GTC AGA for mNaa10 variants, CCG GGA TCC ATG AAC ATC CGC AAT GC and CTG GGA TCC CTA GGA GAT GGA ATC CAA GTC for mNaa11, CCG GGA TCC ATG AAC ATC CGC CGG and CTG GGA TCC CTA GGA GGC GGA CCC TAG for mNaa12.
 
-## Peptide competition assay
+### Peptide competition assay
 
 To determine the specificity of the mNaa12 antibody, a peptide competition assay was performed using the same peptide as used for immunization (aa 191–205: QENLAGGDSGSDGKD-C). 100 µg antibody were bound to 50 mg peptide-coupled CNBr-Sepharose (10 mg peptide/g Sepharose) in PBS + 0.2% Triton X-100 for 1 hr at 4° C on an orbital shaker. The beads were pelleted by centrifugation at 2.700 × g for 3 min at 4°C and 250 µL of the antibody-depleted supernatant diluted in 5 mL TST for detection (1:100 final antibody dilution). Western blots of mouse lysates were probed with the depleted antibody or untreated antibody as control (1:100 dilution in TST).
 
-## Cell lines
+### Cell lines
 
 HEK293 cells were purchased from ATCC, authenticated via STR profiling, and confirmed mycoplasma free.
 
-## Co-immunoprecipitation assay
+### Co-immunoprecipitation assay
 
 Protein-protein interaction studies were performed in HEK293 cells. Briefly, 8 × 105 cells were seeded per well in 6-well plates. After 24 hr, cells were co-transfected with pcDNA3.1/V5-His-mNaa15 and p3xFLAG-CMV10-Naa10235 (isoform 1), -Naa10225 (isoform 2), -Naa11, or -Naa12 or the corresponding empty vectors. Cells were lysed after 48 hr in 200 µL PBS-X per well and cellular debris pelleted at 20.800 × g for 10 min at 4°C. 350 µL of the generated lysate was incubated with 1 µg anti-V5 antibody for 1 hr at 4°C, followed by a 30 min incubation with 30 µL protein-A Sepharose (Sigma-Aldrich). Protein complexes were washed three times by centrifugation (2.700 × g, 2 min) and eluted in 30 µL 2×SDS sample buffer.
 
 Proteins were separated by SDS-PAGE and transferred onto a nitrocellulose membrane (Amersham Protran 0.2 µM NC) by immunoblotting. The membrane was blocked in 5% non-fat dry milk and incubated overnight with rabbit polyclonal anti-NAA15 (Arnesen et al., 2005) (1:2000, BioGenes) and rabbit monoclonal anti-NAA10 (anti-ARD1A, 1:1000, Cell Signaling, #13357) diluted in 1× PBS containing 1% non-fat dry milk and 0.1% Tween. The immunoblots were washed and incubated for 1 hr at room temperature (RT) with HRP-linked secondary antibody donkey anti-rabbit IgG (GE Healthcare, NA934). The HRP-signal was detected using SuperSignalTM West Pico PLUS Chemiluminescent Substrate Kit (Thermo Scientific) and ChemiDocTM XRS+ system (Bio-Rad) and visualized by ImageLab Software (Bio-Rad).
 
-## Immunoprecipitation of Naa15 to form NatA complex
+### Immunoprecipitation of Naa15 to form NatA complex
 
 For immunoprecipitation of Naa15, 90–120 mg liver tissue from a WT- and Naa10 KO mouse was lysed in 500 µL IPH lysis buffer (50 mM Tris-HCl pH 8.0, 150 mM) NaCl, 5 mM EDTA, 0.5% NP-40, 1× complete EDTA-free protease inhibitor cocktail (Roche) using Kontes Pellet Pestle Motor and incubated on ice for 40 min. Cell debris was pelleted by centrifugation (17,000 × g, 4°C, 10 min) and the supernatants transferred to new Eppendorf tubes. The protein concentration was determined by BCA Protein Assay Kit (Thermo Scientific) and the tissue lysates were subsequently diluted with IPH lysis buffer to an equal protein concentration of 25 µg/µL. The WT- and Naa10 KO tissue lysates were then divided in two, whereof one half was mixed with 15 µg of anti-Naa15 antibody and the other half with 15 µg of anti-V5 antibody as a negative control. The mixtures were incubated at 4°C for 3 hr on a rotator. Afterwards, 180 µL of Protein A/G magnetic beads (Millipore) pre-washed in IPH lysis buffer was added to each sample and incubated overnight. Then, the magnetic beads were washed three times in IPH lysis buffer and two times in 1× acetylation buffer (100 mM Tris-HCl pH 8.5, 2 mM EDTA, 20% glycerol) prior to being resuspended in 90 µL of 2× acetylation buffer and used in a [14C]-Ac-CoA-based acetylation assay.
 
-## [14C]-Ac-CoA-based acetylation assay of immunoprecipitated samples
+### [14C]-Ac-CoA-based acetylation assay of immunoprecipitated samples
 
 Three positive replicates were prepared for each IP sample containing 10 µL IP beads, 200 µM synthetic oligopeptide SESS24 (BioGenes), 100 µM [14C]-Ac-CoA (Perkin-Elmer), and dH2O to a final volume of 25 µL. In addition, two replicates for each IP sample were prepared without synthetic oligopeptide as negative controls. The samples were incubated at 37°C for 45 min in a thermomixer with shaking at 1400 rpm. Finally, the magnetic beads were isolated and 23 µL of the supernatant transferred to P81 phosphocellulose filter disks (Millipore). The filter disks were washed three times for 5 min in 10 mM HEPES buffer (pH 7.4) and air dried. To determine the amount of incorporated [14C]-Ac, the filter disks were added to 5 mL Ultima Gold F scintillation mixture (Perkin-Elmer) and analyzed by a Perkin-Elmer TriCarb 2900TR Liquid Scintillation Analyzer.
 
-## Proteomics sample preparation
+### Proteomics sample preparation
 
 Immunoprecipitation of Naa15 from a WT- and Naa10 KO mouse was performed as described above. Bound proteins were eluted from the magnetic beads using 60 µL of elution buffer (2% SDS, 100 mM Tris-HCl pH 7.6, 0.1 M DTT) and heated for 5 min at 95°C. The eluates were processed for LC-MS/MS analysis using filter-aided sample preparation (FASP) method (Wiśniewski et al., 2009). The eluted protein mixtures were mixed with UA buffer (8 M urea, 100 Mm Tris-HCl pH 8.0) and centrifuged through Microcon 30 kDa MWCO filters followed by Cys-alkylation with 50 mM iodoacetamide dissolved in UA buffer. Afterwards, the buffer was exchanged with 50 mM ammonium bicarbonate through sequential centrifugation, proteins were trypsinized (Sequencing Grade Modified Trypsin, Promega), and digested peptides were collected by centrifugation. Peptides were acidified using 5% formic acid and desalted using C18-stagetips according to protocol (Rappsilber et al., 2007). Briefly, 40 µg peptides from each sample were loaded onto C18-stagetips pre-conditioned with buffer A (1% formic acid). The C18-stagetips were then washed with buffer A, before peptides were eluted with buffer B (80% acetonitrile [ACN], 1% formic acid). The final eluate was concentrated by Speedvac to evaporate ACN and diluted to desired volume with 5% formic acid.
 
-## Mass spectrometric analysis for immunoprecipitate
+### Mass spectrometric analysis for immunoprecipitate
 
 1 µg of the peptide samples were injected into an Ultimate 3000 RSLC system (Thermo Scientific) connected to a Q-Exactive HF mass spectrometer (Thermo Scientific) equipped with EASY-spray nano-electrospray ion source (Thermo Scientific). Trapping and desalting was performed with 0.1% TFA (flow rate 5 µL/min, 5 min) on a pre-column (Acclaim PepMap 100, 2 cm × 75 µm ID nanoViper column, 3 µm C18 beads). Peptides were separated on an analytical column (PepMap RSLC, 50 cm × 75 µm i.d. EASY-spray column, 2 µm C18 beads) during a biphasic ACN gradient with a flow rate of 200 nL/min. Solvent A (0.1% FA [vol/vol] in water) and B (100% ACN) were used for the following gradient composition: 5% B for 5 min, 5–8% B for 0.5 min, 8–24% B for 109.5 min, 24–35% B for 25 min and 35–80% B for 15 min, 80% B for 15 min, and conditioning with 5% B for 20 min. The mass spectrometer was operated in data-dependent mode to automatically switch between full-scan MS and MS/MS acquisition. MS spectra (m/z 375–1500) were acquired with a resolution of 120,000 at m/z 200, automatic gain control (AGC) target of 3 × 106, and maximum injection time (IT) of 100 ms. The 12 most intense peptides above an intensity threshold (50,000 counts, charge states 2–5) were sequentially isolated to an AGC target of 1 × 105 and maximum IT of 100 ms and isolation width maintained at 1.6 m/z, before fragmentation at a normalized collision energy of 28%. Fragments were detected in the orbitrap at a resolution of 15,000 at m/z 200, with first mass fixed at m/z 100. Dynamic exclusion was utilized with an exclusion time of 25 s and ‘exclude isotopes’ enabled. Lock-mass internal calibration (m/z 445.12003) was used. Raw files were processed with MaxQuant v. 1.6.17.0 (Cox and Mann, 2008) and searched against a database of Swiss-Prot annotated mouse protein sequences (retrieved 22.06.2018) in which the NAA12 sequence was added manually, and with a reverse decoy database. MaxQuant was run with default settings. Peptide and protein identifications were filtered to a 1% false discovery rate (FDR). Minimum peptide length was set to 7. Modifications included in protein quantification were oxidation (M), Nt-acetylation, acetylation (K), and phosphorylation (STY). Other parameters: match between runs – true, matching time window – 0.7 min, alignment time window – 20 min, find dependent peptides – true, mass bin size – 0.0065. Protein and peptide intensities were quantified by label-free quantification (LFQ) (Cox et al., 2014). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD026684.
 
-## Whole-body CT scanning
+### Whole-body CT scanning
 
 CT scans were acquired on a Nanoscan PET/CT scanner from Mediso using Nucline v2.01 software. All mice were kept sedated under isoflurane anesthesia for the duration of the scan. Scans were acquired with an X-ray tube energy and current of 70 kVp and 280 uA, respectively. 720 projections were acquired per rotation, for three rotations, with a scan time of approximately 11 min, followed by reconstruction with a RamLak filter and voxel size 40 × 40 × 122 µm. For ex vivo analyses, mouse heads were fixed in 10% formalin buffered saline, followed by scanning and reconstruction with 1440 projections per revolution. Cranial volume was measured using VivoQuant software (v2.50patch2) using the spline tool to manually and accurately draw around the circumference of the cranium on multiple stepwise 2D slices.
 
-## Integrated N-terminal peptide enrichment (iNrich) assay
+### Integrated N-terminal peptide enrichment (iNrich) assay
 
 iNrich assays were performed as described (Ju et al., 2020). MEFs were made from E13.5 embryos, using standard techniques, with DMEM media supplemented with 10% fetal bovine serum (FBS), L-glutamine, and penicillin/streptomycin. Cells were harvested by trypsinization, washed twice with ice-cold phosphate-buffered saline (PBS, pH 7.4; Gibco), and resuspended in ice-cold lysis buffer containing 0.2 M EPPS (pH 8.0), 6 M guanidine, 10 mM TCEP (Thermo Fisher Scientific), and 40 mM 2-chloroacetamide (Sigma-Aldrich). After 10 min of incubation on 95°C, cells were lysed by ultrasonication by a BranSonic 400B. The proteins from the cell lysate were isolated by transferring supernatant after centrifugation at 12,000 g for 10 min at 4°C. The protein concentration of the collected supernatant was determined by bicinchoninic acid (BCA) protein assay. After enrichment of the N-terminal peptides, the peptide samples were analyzed by LC–MS/MS on an LTQ-Orbitrap XL mass spectrometer (Thermo Fisher Scientific) without further fractionation. Mass spectrometry data were uploaded to PRIDE under project name: Naa10 mutant mouse N-terminome LC-MS, project accession: PXD026410. Data analysis used unpaired, equal variance algorithm for Student’s t-test.
 
-## RNA and protein isolation and assays
+### RNA and protein isolation and assays
 
 70–120 mg tissues were lysed in 5 μL/mg tissue RIPA buffer (Sigma) with 1× Complete protease inhibitors and 1 U/μL Superase In RNase inhibitor (Thermo Scientific) using Fisherbrand Pellet Pestle Cordless Motor. Afterwards, homogenization debris was removed by centrifugation at 20.800 × g for 10 min at 4°C. Protein concentration was determined using APA assay (Cytoskeleton Inc) and 50 μg total protein were separated on SDS-PAGE followed by western blot. Membranes were stained with anti-Naa10, anti-Naa15, and anti-GAPDH antibodies (all Abcam).
 
@@ -258,23 +981,23 @@ For RNA purification, 30 μL clarified lysates were mixed with 70 μL RNase free
 
 For the characterization of the mNaa12 antibody, tissue was lysed in 2 µL per mg tissue PBS-X (PBS + 0.2% [v/v] Triton X-100 + 1× Complete protease inhibitor cocktail). 10–200 µg lysate were subjected to SDS-PAGE and western blot.
 
-## Primers for mice qPCR
+### Primers for mice qPCR
 
 The following primers pairs were used: mNaa10-Exon2/3 F: 5′-ctcttggccccagctttctt-3′ and mNaa10-Exon3/4 R: 5′- tcgtctgggtcctcttccat-3′, mNaa11-F: 5′-accccacaagcaaagacagtg-3′ and mNaa11-R: 5′-agcgatgctcaggaaatgctct-3′, mNaa12(Gm16286)-F: 5′-acgcgtatgctatgaagcga-3′ and mNaa12(Gm16286)-R: 5′-ccaggaagtgtgctaccctg-3′, mNaa15-F: 5′-gcagagcatggagaaaccct-3′ and mNaa15-R: 5′-tctcaaacctctgcgaacca-3′, mNaa50-F: 5′-taggatgccttgcaccttacc-3′ and mNaa50-R: 5′-gtcaatcgctgactcattgct-3′, mGAPDH-F: 5′-aggtcggtgtgaacggatttg-3′ and mGAPDH-R: 5′-tgtagaccatgtagttgaggtca-3′, mACTB-F: 5′-ggctgtattcccctccatcg-3′ and mACTB-R: 5′-ccagttggtaacaatgccatgt-3′.
 
-## Expression and purification of WT mouse, Naa10, and Naa12
+### Expression and purification of WT mouse, Naa10, and Naa12
 
 All constructs were expressed in Rosetta (DE3)pLysS competent Escherichia coli cells. Cells were grown in LB-media to OD600 0.6–0.7 prior to inducing protein expression with 0.5 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) at 18°C for ~16 hr. All subsequent purification steps were carried out at 4°C. Cells were isolated by centrifugation and lysed in lysis buffer containing 25 mM Tris, pH 8.0, 150 mM NaCl, 10 mM β-mercaptoethanol (β-ME), 10 µg/mL phenylmethanesulfonylfluoride (PMSF), and DNase. The lysate was clarified by centrifugation and incubated with amylose agarose resin (New England Biolabs) for 1 hr before washing the resin with ≥100 column volumes of lysis buffer and then eluted with 10-column volumes of lysis buffer supplemented with 20 mM maltose. The resulting eluent was pooled and concentrated to ~10 mg/mL (30 kDa concentrator; Amicon Ultra, Millipore) such that 500 µL was loaded onto a Superdex 200 Increase 10/300 GL gel filtration column (GE Healthcare). The gel filtration run was performed in sizing buffer containing 25 mM HEPES, pH 7.0, 200 mM NaCl, and 1 mM TCEP. After confirming the purity of the peak fractions at ~14 mL by denaturing SDS-PAGE (15% acrylamide), peak fractions were concentrated to 0.6 (6.1 µM) WT mouse Naa10 and 0.3 mg/mL (3.5 µM) WT mouse Naa12, as measured by UV280 (Nanodrop 2000; Thermo Fisher Scientific), and stored at 4°C.
 
-## Expression and purification of recombinant mNaa12 (1–160)-hNaa15 constructs
+### Expression and purification of recombinant mNaa12 (1–160)-hNaa15 constructs
 
-## Subcloning
+#### Subcloning
 
 Both full-length and truncated (1–160) mouse Naa12 were amplified from the pMAL-c5x Naa12 plasmid using Q5 HF Master Mix (NEB), AAAACCCGGGTATGAACATCCGCCGGGCTCGGC as the forward primer, and either AAAAGGTACCCTAGGAGGCGGACCCTAGGGTCTG (full-length) or AAAAGGTACCTCACCGTCTCAGCTCATCGGCCATCTG (1-160) as the reverse primer. An Spodoptera frugiperda (Sf9) pFastBac dual vector containing the sequence for the N-terminally 6xHis-tagged human Naa15 and truncated human Naa10 (residues 1–160) sequences was digested using KpnI-HF (NEB) and XmaI (NEB) to remove the human Naa10 sequence. The PCR product was also digested using the same restriction enzymes and ligated into the corresponding restriction sites using Mighty mix (Takara) using standard techniques. Both constructs were sequenced to validate the insert sequence and directionality.
 
 Sf9 cells were grown to a density of 1 × 106 cells/ml and infected using the amplified baculoviruses to a multiplicity of infection (MOI) of ~1–2. Because the full-length mNaa12 construct did not produce protein, cells transfected with mNaa121-160/hNaa15 were grown at 27°C and harvested 48 hr post infection. All subsequent purification steps were carried out at 4°C. Following centrifugation of the cells, the pellet was resuspended and lysed in buffer containing 25 mM Tris, pH 8.0, 500 mM NaCl, 10 mM Imidazole, 10 mM β-ME, 10 µg/mL PMSF, DNase, and complete, EDTA-free protease inhibitor tablet (Roche). The lysate was clarified by centrifugation and incubated with nickel resin (Thermo Scientific) for 1 hr before washing the resin with ~125 column volumes of lysis buffer and then eluted with 10-column volumes of elution buffer (25 mM Tris, pH 8.0, 500 mM NaCl, 200 mM imidazole, 10 mM β-ME). Eluted protein was diluted to a final salt concentration of 200 mM NaCl and loaded onto a 5 mL HiTrap SP ion-exchange column (GE Healthcare). The protein was eluted in the same buffer with a salt gradient (200 mM to 1 M NaCl) over the course of 20 column volumes. Using the resulting peak fractions, the remainder of the purification was performed as described for the recombinant monomeric mNaa10 and mNaa12. However, resulting size-exclusion fractions were analyzed by denaturing SDS-PAGE using a 12% acrylamide gel, which was then silver stained (Bio-Rad) according to the manufacturer's instructions.
 
-## In vitro radioactive acetyltransferase assays with recombinant protein
+### In vitro radioactive acetyltransferase assays with recombinant protein
 
 For recombinant mNaa12 and mNaa10 constructs, the assays were carried out in 40 mM HEPES, pH 7.5, 200 mM NaCl, where reactions were incubated with 150 nM of the gel-filtration purified WT mouse Naa10 or Naa12 in a 30 µL reaction volume containing each 250 µM substrate peptide and radiolabeled [14C]acetyl-CoA (4 mCi/mmol; PerkinElmer Life Sciences) for 12 min (Naa12) or 13 min (Naa10) at 25°C. Respective time points were selected to ensure detection of sufficient activity within the linear range as determined by a time-course experiment. The substrate peptides used in the assay correspond to the first seven amino acids of β-actin (DDDIAAL-), γ-actin (EEEIAAL-), or the in vivo NatA complex substrate high-mobility group protein A1 (SESSS-), along with C-terminal positively charged residues for capture to the anion exchange paper. Background control reactions were performed in the absence of enzyme or in the absence of substrate peptide to ensure that any possible signal due to chemical acetylation was negligible. Each reaction was performed in triplicate.
 
@@ -284,19 +1007,25 @@ Full peptide sequences:
 
 For mNaa12-hNaa15, reactions were carried out similar to the monomeric mNaa12 and mNaa10, with the following exceptions: reactions were prepared by combining 21 µL of the respective fraction or sizing buffer with 5 µL of 10X buffer (500 mM HEPES, pH 7.5) to yield a buffer composed of 50 mM HEPES, pH 7.5, 140 mM NaCl, 0.7 mM TCEP, and 250 µM of each substrate upon reaction initiation. The reactions were allowed to incubate overnight at ambient temperatures (~25°C) and then quenched as described above. Control reactions were conducted in parallel as described above without conversion to molar units. Two technical replicates of the reactions were performed.
 
-## Statistical analyses
+### Statistical analyses
 
 Significant differences (p<0.05) are indicated by asterisks. Weight analyses were performed using generalized estimating equations (GEEs) (Zeger and Liang, 1986), an extension of generalized linear models that adjusts for the effects of autocorrelation resulting from multiple measurements, and implemented within version 15.1 of Stata (StataCorp 2017).
 
-## Genotype distribution analyses and modeling
+### Genotype distribution analyses and modeling
 
 Genotype distributions for several Naa10/Naa12 KO crosses were analyzed and models were created to estimate the number of the live (or at least intact) embryos or pups that are expected to be observed based on the assumptions and rules that follow. (1) Genotype survival rates are the fractional value, from 0 to 1 (or 0–100%), of the expected Mendelian fraction for that genotype in the cross being evaluated. (2) Genotype survival rates cannot exceed 1 (or 100%). (3) Genotype survival rates can decrease with age but not increase. (4) WT genotypes (Naa10+/Y; Naa12+/+ and Naa10+/+; Naa12+/+) are expected to have 100% survival at all ages because the models predict the number of embryos or pups relative to WT survival. Reductions in overall in litter sizes for crosses were estimated through other calculations. (5) The biological basis for a reduced survival rate assumes that loss of one or more copies of either Naa10 or Naa12 removes or reduces functions that are required for successful embryonic development or postnatal life. Reduced survival rates for non-WT genotypes were estimated based on differences (delta) between the expected number of embryos or pups based on the Mendelian proportion (or the current best model) and the observed number of embryos or pups. Separate comparisons were made using deltas for each specific age and for the cumulative numbers at each age. (6) Genotype frequencies for each model were calculated as described in the section below. (7) The fit between a model and the observed data was determined by calculating the relative standard deviation (SD) for the deltas across all genotypes, for example, the SD across genotypes divided by the number of animals observed (either age-specific or cumulative). Each model was evaluated at each age by minimizing the relative SD for all genotypes at that age and over all ages. The final model (D4) was created by refining the assumptions for model D3 in a sequential series of comparisons of survival rates for genotypes 12, 11, 6, 10, and 5 in that order.
 
-## Genotype frequency calculations
+### Genotype frequency calculations
 
 The models described adjust the expected observed genotype frequencies at each age to account for loss of embryos or pups due to the presumed lethal effects of one or more genotypes. The models account directly for the effect of genotype-specific mortality by reducing the number (or frequency) observed for that genotype in the sample and thus increasing the expected proportion of other genotypes. This also indirectly implies a larger theoretical litter size at conception, which can be used to determine the theoretical litter sizes had there been no mortality in the affected genotypes. The predicted proportion for each genotype is calculated at each age as the genotype Mendelian frequency multiplied by the fractional genotype survival at that age divided by the expected total fractional survival (i.e., one minus the sum of all genotype fractional losses). The formula is
 
-For all ‘n’ possible genotypes:Gx=Mx∗Sx/(1–[(1–S1)∗M1+(1–S2)∗M2+…+(1–Sn)∗Mn)]where
+For all ‘n’ possible genotypes:
+
+$$
+G_{x}=M_{x}∗S_{x}/(1–[(1–S_{1})∗M_{1}+(1–S_{2})∗M_{2}+…+(1–S_{n})∗M_{n})]
+$$
+
+where
 
 (1 – Sn) * Mn is the fractional reduction due to survival < 100% for genotype ‘n’, for example, when Sn = 1 (e.g., 100% survival), the loss is zero; when Sn = 0 (e.g., 0% survival), the loss is Mn or the entire Mendelian fraction.
 

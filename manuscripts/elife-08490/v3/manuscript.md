@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.08490.001 The ecological importance of viruses is now widely recognized, yet our limited knowledge of viral sequence space and virus–host interactions precludes accurate prediction of their roles and impacts. In this study, we mined publicly available bacterial and archaeal genomic data sets to identify 12,498 high-confidence viral genomes linked to their microbial hosts. These data augment public data sets 10-fold, provide first viral sequences for 13 new bacterial phyla including ecologically abundant phyla, and help taxonomically identify 7–38% of ‘unknown’ sequence space in viromes. Genome- and network-based classification was largely consistent with accepted viral taxonomy and suggested that (i) 264 new viral genera were identified (doubling known genera) and (ii) cross-taxon genomic recombination is limited. Further analyses provided empirical data on extrachromosomal prophages and coinfection prevalences, as well as evaluation of in silico virus–host linkage predictions. Together these findings illustrate the value of mining viral signal from microbial genomes. DOI: http://dx.doi.org/10.7554/eLife.08490.001
+The ecological importance of viruses is now widely recognized, yet our limited knowledge of viral sequence space and virus–host interactions precludes accurate prediction of their roles and impacts. In this study, we mined publicly available bacterial and archaeal genomic data sets to identify 12,498 high-confidence viral genomes linked to their microbial hosts. These data augment public data sets 10-fold, provide first viral sequences for 13 new bacterial phyla including ecologically abundant phyla, and help taxonomically identify 7–38% of ‘unknown’ sequence space in viromes. Genome- and network-based classification was largely consistent with accepted viral taxonomy and suggested that (i) 264 new viral genera were identified (doubling known genera) and (ii) cross-taxon genomic recombination is limited. Further analyses provided empirical data on extrachromosomal prophages and coinfection prevalences, as well as evaluation of in silico virus–host linkage predictions. Together these findings illustrate the value of mining viral signal from microbial genomes.
 
 ## Introduction
 
@@ -36,57 +36,57 @@ Here, we applied a recently developed and automated virus discovery pipeline, Vi
 
 ## Results and discussion
 
-## New viruses detected in public microbial genomic data sets with VirSorter
+### New viruses detected in public microbial genomic data sets with VirSorter
 
 VirSorter is designed to predict bacterial and archaeal virus sequences in isolate or single-cell draft genomes, as well as complete genomes (Roux et al., 2015a). Briefly, VirSorter identifies viral sequences through (i) statistical enrichment in viral gene content, using a reference database composed of viral genomes of archaeal and bacterial viruses from RefSeq (hereafter named RefSeqABVir for ‘RefSeq Archaea and Bacteria Viruses’) and assembled from viral metagenomes (database ‘Viromes’ in VirSorter), or (ii) a combination of viral ‘hallmark’ gene(s) that code for virion-related functions such as major capsid proteins or terminases (Koonin et al., 2006; Roux et al., 2014), and at least one viral-like genomic feature: statistical depletion in genes with a hit in the PFAM database, statistical enrichment in uncharacterized genes, short genes, or strand bias (i.e., consecutive genes which tend to be coded on the same strand).
 
-Applied to 14,977 publicly available microbial genomes (
+Applied to 14,977 publicly available microbial genomes (Figure 1—source data 1), VirSorter identified 12,498 high-confidence viral sequences representing either long genome fragments (>10 kb when linear) or complete genomes (contigs detected as circular). These viral sequences were found in 5492 of the microbial genomes (∼30%). Simply scanning the identified viruses for novel hosts extended the host range of common viral families to now include several recently described phyla like Caldiserica (formerly known as candidate phylum OP5), Marinimicrobia (SAR406 also known as Marine Group A), or Omnitrophica (OP3), in addition to other understudied groups such as Poribacteria, Nitrospinae, Cloacimonetes (WWE1), and Chloroflexi-type SAR202 (Figure 1, Figure 1—source data 2, Figure 1—source data 3). Uncovering the first viruses infecting these major microbial groups is critical given that many candidate phyla are abundant in understudied ecosystems and play substantial roles in coupled biogeochemical cycling (Wright et al., 2012; Wrighton et al., 2012; Castelle et al., 2013; Kamke et al., 2013; Rinke et al., 2013; Allers et al., 2013b; Emerson et al., 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig1-v3.jpg)
 
-**Figure 1.:** For each bacteria or archaea phylum (or phylum-level group), corresponding viruses in RefSeq (gray) and VirSorter curated data set (red) are indicated with circles proportional to the number of sequences available. Groups for which no viruses were available in RefSeq are highlighted in black.DOI: http://dx.doi.org/10.7554/eLife.08490.00310.7554/eLife.08490.004Figure 1—source data 1.Bacterial and archaeal genomes searched with VirSorter for viral sequences originated from NCBI Refseq and WGS, as well as the Microbial Dark Matter data set (MDM, Rinke et al., 2013) and the SUP05 SAGs data set (Roux et al., 2014).DOI: http://dx.doi.org/10.7554/eLife.08490.00410.7554/eLife.08490.005Figure 1—source data 2.The star (*) marks the questionable detection of an Inoviridae genome in a Caldiserica SAG, which could originate from another bacterium contaminating MDA reagents (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.08490.00510.7554/eLife.08490.006Figure 1—source data 3.All sequences currently identified as plasmids on NCBI and which did not display any viral gene in the automatic annotation from NCBI are gathered at the bottom of the table and highlighted in orange. ‘Detection tag’ column indicates how the sequence was detected as viral by VirSorter: ‘hallmark’ for the presence of viral hallmark gene(s), ‘refseq’ for an enrichment in bacterial and archalea virus genes, ‘noncaudo’ for an enrichment in non-Caudovirales genes, and ‘vdb’ for an enrichment in virome-like genes.DOI: http://dx.doi.org/10.7554/eLife.08490.006
+**Figure 1.:** For each bacteria or archaea phylum (or phylum-level group), corresponding viruses in RefSeq (gray) and VirSorter curated data set (red) are indicated with circles proportional to the number of sequences available. Groups for which no viruses were available in RefSeq are highlighted in black.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** The best BLAST hits of predicted proteins along each sequence (i.e., within 75% of the best BLAST hit for this sequence) were used in a Lowest Common Ancestor affiliation (here displayed at the family level). ‘Unclassified Caudovirales’ gathers viruses only affiliated to the Caudovirales level without confident affiliation to the Myo-, Sipho-, or Podoviridae. The number and percentage of sequences affiliated is indicated next to each family.DOI: http://dx.doi.org/10.7554/eLife.08490.007
+**Figure 1—figure supplement 1.:** The best BLAST hits of predicted proteins along each sequence (i.e., within 75% of the best BLAST hit for this sequence) were used in a Lowest Common Ancestor affiliation (here displayed at the family level). ‘Unclassified Caudovirales’ gathers viruses only affiliated to the Caudovirales level without confident affiliation to the Myo-, Sipho-, or Podoviridae. The number and percentage of sequences affiliated is indicated next to each family.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig1-figsupp2-v3.jpg)
 
-**Figure 1—figure supplement 2.:** A) and recruitment plot (B) of Bacteroidia virus sequences from a putative new order.Replication-associated, Relaxase, and hypothetical proteins are depicted in blue, orange, and gray respectively. The recruitment plot includes two viromes from human feces samples from two different studies (Human gut assembly, Minot et al., 2012, and Human feces, Kim et al.). Identity percentage is based on a blastn between virome contigs and the reference genome., 2011DOI: http://dx.doi.org/10.7554/eLife.08490.008
+**Figure 1—figure supplement 2.:** Replication-associated, Relaxase, and hypothetical proteins are depicted in blue, orange, and gray respectively. The recruitment plot includes two viromes from human feces samples from two different studies (Human gut assembly, Minot et al., 2012, and Human feces, Kim et al., 2011). Identity percentage is based on a blastn between virome contigs and the reference genome.
 
 BLAST-based family-level affiliations suggested that 90.45% of these 12,498 sequences correspond to Caudovirales, 6.82% to ssDNA viruses (predominantly Inoviridae family), and 2.73% could not be confidently assigned (Figure 1—figure supplement 1). Among the unassigned group, 7 sequences lacked any hit to a viral reference genome. These 7 short (4.1 kb) near-identical circular contigs from Bacteroides draft genomes were detected as viral based on sequence similarity with human gut viromes, but contained two genes associated with plasmid replication (Figure 1—figure supplement 2A). This could suggest a plasmid origin, but the high and even coverage of these genomes across several CsCl-purified viromes from different studies (Kim et al., 2011; Minot et al., 2012) suggests that they are derived from encapsidated particles typical of viruses (Figure 1—figure supplement 2B). If confirmed, these sequences would represent the first complete genomes for an entirely new viral order.
 
-## 264 new putative viral genera identified through genome-based network clustering
+### 264 new putative viral genera identified through genome-based network clustering
 
 To better determine relationships between viral genomes and host range, we next built a network based on shared gene content to quantify genetic relatedness between the 12,498 sequences identified with VirSorter and the 1,240 taxonomically curated genomes available in RefSeqABVir (Figure 2—figure supplement 1 and see ‘Materials and methods’). Despite the absence of a universal marker gene, a long history of organizing viral sequence space through genome-to-genome comparison exists using either gene content (Rohwer and Edwards, 2002; Lima-Mendez et al., 2008b) or nucleotide composition (Sims and Jun, 2009; Labonté and Suttle, 2013). We used MCL (Markov Cluster Algorithm) based on the number of shared genes between sequence pairs as it had been previously shown to accurately recapitulate taxonomic relationships in the Caudovirales, which dominated our data set (Enright et al., 2002; Lima-Mendez et al., 2008b).
 
-Most (99.3% of 12,498) sequences affiliated to one of 614 virus clusters (VCs), of which 535 contained at least one complete genome or large genomic fragment (>30 kb), and approximately half (271 of 535 VCs) included RefSeqABVir sequences (
+Most (99.3% of 12,498) sequences affiliated to one of 614 virus clusters (VCs), of which 535 contained at least one complete genome or large genomic fragment (>30 kb), and approximately half (271 of 535 VCs) included RefSeqABVir sequences (Figure 2A, Figure 2—source data 1). Those VCs with RefSeqABVir sequences provided the opportunity to evaluate whether a VC corresponded to any particular taxonomic level of ICTV classification. Of 43 RefSeq-curated viral genera, 27 have all their sequences in the same VC, 12 were spread across two VCs, and 4 were spread across >2 VCs—these latter genera included the Spouna-like viruses (3 VCs), N4-like viruses (4 VCs), Lambda-like viruses (9 VCs), and Inoviruses (11 VCs). Consistent with previous applications of this method, VCs identified in this analysis were thus approximately equivalent to a RefSeq-curated viral genus (Lima-Mendez et al., 2008b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig2-v3.jpg)
 
-**Figure 2.:** (A) Viral clusters (VCs) are considered as putative new genera when including at least one sequence larger than 30 kb, circular, or known to be a complete genome (from RefSeq). These putative genera were considered as ‘new’ when the VC did not include any RefSeq sequence, and ‘known’ otherwise. (B) The proportion of new VCs (containing no RefSeqABVir), VCs with only one RefSeqABVir sequence, and VCs with more than one RefSeqABVir sequence is displayed for host classes associated with more than 10 virl sequences. Only ‘putative genera’ VCs were considered (i.e., clusters containing a RefSeqABVir genome, a circular sequence, or a sequence with more than 30 predicted genes).DOI: http://dx.doi.org/10.7554/eLife.08490.00910.7554/eLife.08490.010Figure 2—source data 1.Cluster affiliation is based on the combination of BLAST-based taxonomic affiliation of its members. For VCs with more than 10 proteins, those composed only of VirSorter sequences are highlighted in green and those with only one sequence from RefSeqABVir are marked in blue. Cases where sequences affiliated to both ssDNA and dsDNA viruses are clustered together are highlighted in red. ‘Detection tags’ lists the different detection tags for the cluster members, with ‘NCBI_RefSeq’ for complete genomes from the RefSeq database. These NCBI RefSeq sequences are counted as ‘complete’ in the ‘type of sequences’ column.DOI: http://dx.doi.org/10.7554/eLife.08490.010
+**Figure 2.:** (A) Viral clusters (VCs) are considered as putative new genera when including at least one sequence larger than 30 kb, circular, or known to be a complete genome (from RefSeq). These putative genera were considered as ‘new’ when the VC did not include any RefSeq sequence, and ‘known’ otherwise. (B) The proportion of new VCs (containing no RefSeqABVir), VCs with only one RefSeqABVir sequence, and VCs with more than one RefSeqABVir sequence is displayed for host classes associated with more than 10 virl sequences. Only ‘putative genera’ VCs were considered (i.e., clusters containing a RefSeqABVir genome, a circular sequence, or a sequence with more than 30 predicted genes).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig2-figsupp1-v3.jpg)
 
-**Figure 2—figure supplement 1.:** Network of virus clusters (VCs) based on gene content comparison between viral genome sequences from RefSeqABVir and VirSorter data set. VCs including only VirSorter sequences are highlighted with a black outline. The size of nodes is proportional to the number of sequences in the cluster and the color of the node corresponds to the BLAST-based affiliation (at the family level) of its members when consistent (i.e., agreement between >75% of the cluster members, otherwise clusters are indicated as ‘unaffiliated’).DOI: http://dx.doi.org/10.7554/eLife.08490.011
+**Figure 2—figure supplement 1.:** Network of virus clusters (VCs) based on gene content comparison between viral genome sequences from RefSeqABVir and VirSorter data set. VCs including only VirSorter sequences are highlighted with a black outline. The size of nodes is proportional to the number of sequences in the cluster and the color of the node corresponds to the BLAST-based affiliation (at the family level) of its members when consistent (i.e., agreement between >75% of the cluster members, otherwise clusters are indicated as ‘unaffiliated’).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig2-figsupp2-v3.jpg)
 
-**Figure 2—figure supplement 2.:** For each pair of values (inflation and significance threshold), the genome network was computed and its overall shape evaluated with ICCC (intra-cluster clustering coefficient). The chosen values are highlighted in green in the table and with a star on the associated plot.DOI: http://dx.doi.org/10.7554/eLife.08490.012
+**Figure 2—figure supplement 2.:** For each pair of values (inflation and significance threshold), the genome network was computed and its overall shape evaluated with ICCC (intra-cluster clustering coefficient). The chosen values are highlighted in green in the table and with a star on the associated plot.
 
 Given this level of taxonomic resolution and ignoring the 79 VCs that lacked large (>30 kb) genome sequences, we identified a total of 264 new candidate viral genera (i.e., 264 VCs with no sequences from RefSeqABVir, Figure 2—source data 1). These 264 candidate genera were derived from both understudied and well-studied hosts (e.g., Gammaproteobacteria and Bacilli, Figure 2B) and included 5 of the 30 highest-membership VCs (Figure 2—source data 1), which confirms that our knowledge of viral diversity is limited even in well-studied hosts and with prevalent viruses.
 
-## VirSorter curated data set includes extrachromosomal genomes and improves virome affiliation
+### VirSorter curated data set includes extrachromosomal genomes and improves virome affiliation
 
-Of the 12,498 sequences, 5,232 were prophages (i.e., a viral genome integrated into a microbial contig) and 1,756 were either complete (circularized) or large (>30 kb) genome fragments assembled outside of the host chromosome (i.e., no microbial gene was detected on the contig,
+Of the 12,498 sequences, 5,232 were prophages (i.e., a viral genome integrated into a microbial contig) and 1,756 were either complete (circularized) or large (>30 kb) genome fragments assembled outside of the host chromosome (i.e., no microbial gene was detected on the contig, Figure 3A, Figure 1—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig3-v3.jpg)
 
-**Figure 3.:** (A) The distribution of VirSorter curated data set as ‘integrated’ (i.e., prophages integrated in the host chromosome), ‘extrachromosomal’ (i.e., >30 kb or circular sequences with no microbial genes), or ‘undetermined’ (<30 kb linear with no microbial genes) is indicated for each host class with at least five VirSorter curated data set sequences. The number of sequences associated with each host class in indicated above the histogram. (B) Improvement in the proportion of affiliated genes from viromes with VirSorter data set. Predicted genes from the Pacific Ocean Viromes (Hurwitz and Sullivan, 2013), Tara Ocean Viromes (Brum et al., 2015), and Human Gut Viromes (Minot et al., 2012) were compared to RefSeqVirus (May 2015) and the VirSorter data set (BLASTp, threshold of 50 on bit score and 0.001 on e-value). Predicted proteins affiliated to VirSorter (in blue) did not display any significant similarity to a RefSeq sequence.DOI: http://dx.doi.org/10.7554/eLife.08490.013
+**Figure 3.:** (A) The distribution of VirSorter curated data set as ‘integrated’ (i.e., prophages integrated in the host chromosome), ‘extrachromosomal’ (i.e., >30 kb or circular sequences with no microbial genes), or ‘undetermined’ (<30 kb linear with no microbial genes) is indicated for each host class with at least five VirSorter curated data set sequences. The number of sequences associated with each host class in indicated above the histogram. (B) Improvement in the proportion of affiliated genes from viromes with VirSorter data set. Predicted genes from the Pacific Ocean Viromes (Hurwitz and Sullivan, 2013), Tara Ocean Viromes (Brum et al., 2015), and Human Gut Viromes (Minot et al., 2012) were compared to RefSeqVirus (May 2015) and the VirSorter data set (BLASTp, threshold of 50 on bit score and 0.001 on e-value). Predicted proteins affiliated to VirSorter (in blue) did not display any significant similarity to a RefSeq sequence.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig3-figsupp1-v3.jpg)
 
-**Figure 3—figure supplement 1.:** Contig Spirochaetia_gi_359585655 represent a complete genome (the contig was detected as circular) from a new genus (affiliated to a VC with no RefSeqABVir sequence). Functional affiliation of predicted genes is indicated on the map, with notably two genes (ParA/ParB) indicative of extrachromosomal prophages, as well as two genes (in orange) affiliated to the ACR_tran efflux pump family, of which some members are involved in antiobiotic resistance phenotypes. This contig belongs to the virus cluster VC_61, composed of 35 new putative extrachromosomal prophages from different Spirochetes genomes.DOI: http://dx.doi.org/10.7554/eLife.08490.014
+**Figure 3—figure supplement 1.:** Contig Spirochaetia_gi_359585655 represent a complete genome (the contig was detected as circular) from a new genus (affiliated to a VC with no RefSeqABVir sequence). Functional affiliation of predicted genes is indicated on the map, with notably two genes (ParA/ParB) indicative of extrachromosomal prophages, as well as two genes (in orange) affiliated to the ACR_tran efflux pump family, of which some members are involved in antiobiotic resistance phenotypes. This contig belongs to the virus cluster VC_61, composed of 35 new putative extrachromosomal prophages from different Spirochetes genomes.
 
 To estimate how often a large (>30 kb) genome fragment could be an integrated prophage and not capture the microbial gene content, we simulated the process for 22 different prophage-containing bacterial genomes ‘sequenced’ (in silico) at coverage of 5, 25, 50, 75, and 100× (see ‘Material and methods’). These analyses suggested that only 2.3% of large (>30 kb) prophage-originating contigs lacked any identifiable microbial genes. Thus, these latter 1,756 sequences must largely be extrachromosomal sequences and so represent a unique data source for quantifying the prevalence of under-studied viral infection modes including chronic infections, lytic viruses, or extrachromosomal prophages.
 
@@ -96,69 +96,196 @@ Beyond this glimpse into under-studied viral infection modes, these new referenc
 
 Finally, both the detection of non-integrated viral genomes and the improved virome affiliation suggest that the VirSorter curated data set includes not only integrated prophage data, but also viruses actively infecting these microbes (i.e., not integrated in the host chromosome and producing virions) with under-studied infection modes.
 
-## Long-term evolutionary patterns of bacterial and archaeal virus genomes
+### Long-term evolutionary patterns of bacterial and archaeal virus genomes
 
 Examination of the VCs network beyond classification revealed additional higher order patterns. First, bacterial and archaeal viruses clustered separately in >99% of VCs; the exception (VC_89) included a single and unique (Garrett et al., 2010) archaeal virus (Hyperthermophilic Archaeal Virus 2, NC_014321) that clustered with 21 bacterial viruses, presumably due to poor archaeal virus representation. Second, >95% of these VCs contained exclusively one nucleic acid type (e.g., DNA or RNA, and dsDNA or ssDNA, Figure 2—figure supplement 1), although RNA viral representation is low because only RefSeq-curated families Cystoviridae and Leviviridae were available (no RNA viruses were detected with VirSorter, presumably because DNA-based data sets were analyzed). The 15 VCs including both ssDNA and dsDNA viral genomes are either associated with archaeal viruses for which composite ssDNA/dsDNA genomes were already described (2 VCs; Sencilo et al., 2012) or more surprisingly with ssDNA Inoviridae, which clustered with Caudovirales in 13 VCs (Figure 2—source data 1). For 9 of these 13 Inoviridae–Caudovirales VCs, some of the sequences were wrongly affiliated due to genes shared by both viral families such as integrases, exonucleases, and replication-associated proteins. Two other VCs corresponded to prophage sequences that include genes similar to Inoviridae and Caudovirales and could actually be two different viruses integrated at the same genome location. However, the 2 remaining mixed VCs (VC_128 and VC_215) include sequences displaying a mix of Caudovirales and Inoviridae genes (VC_215 sequences also included Corticoviridae genes). We posit that these might represent new composite genomes beyond the ones already described for archaea viruses (Sencilo et al., 2012) and the recently discovered RNA–DNA chimeric viruses (Diemer and Stedman, 2012; Roux et al., 2013; Krupovic et al., 2015).
 
-We next evaluated the scale and range of viral co-infection, a phenomenon critical to viral genome evolution and thought to blur this vertical gene inheritance signal used to classify genomes into VCs. Indeed, the fact that super-infection of prophage-containing bacteria would provide genomic proximity for gene acquisition via illegitimate recombination was posited more than a decade ago (
+We next evaluated the scale and range of viral co-infection, a phenomenon critical to viral genome evolution and thought to blur this vertical gene inheritance signal used to classify genomes into VCs. Indeed, the fact that super-infection of prophage-containing bacteria would provide genomic proximity for gene acquisition via illegitimate recombination was posited more than a decade ago (Mosig, 1998). However, viral co-infection rates remain unconstrained with the only data for natural systems derived from a single large-scale single-cell genomic data set where ∼35% of infected cells contained multiple viruses (Roux et al., 2014). Here, in the 5492 microbial genomes with detectable viral signal, nearly half (2445) contained more than one detectable virus (Figure 4). Most (∼82%) of these co-infections involved multiple Caudovirales, as previously observed (Casjens, 2003), and likely provides mechanism for viral gene exchange and may be more common in some phages displaying rampant mosaicism (e.g., the Siphoviridae, Hendrix et al., 1999) than others. The second most commonly observed co-infections (9%) occurred between ssDNA Inoviridae and dsDNA Caudovirales (Figure 4). These genomes represented the mixed VCs from the network analyses and putative new composite genomes described above. Mechanistically, Inoviridae might be more prone to such co-infection due to their long infection cycle whereby they extrude their filamentous virions without killing their host (Rakonjac et al., 2011), with a dsDNA replication stage (Salim et al., 2008) that could increase genomic exchanges with co-infecting dsDNA viruses.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig4-v3.jpg)
 
-**Figure 4.:** (A) Number of different viral sequences detected by host genome. Numbers are based on the set of microbial genomes with at least one viral sequence detected (5492 genomes). (B) Affiliation of viruses involved in multiple infections of the same host. Affiliations are deduced from best BLAST hits alongside the viral sequences, as in Figure 1. Co-infections involving dsDNA and ssDNA viruses are highlighted in bold.DOI: http://dx.doi.org/10.7554/eLife.08490.015
+**Figure 4.:** (A) Number of different viral sequences detected by host genome. Numbers are based on the set of microbial genomes with at least one viral sequence detected (5492 genomes). (B) Affiliation of viruses involved in multiple infections of the same host. Affiliations are deduced from best BLAST hits alongside the viral sequences, as in Figure 1. Co-infections involving dsDNA and ssDNA viruses are highlighted in bold.
 
 Together, these findings suggest that genome-based network analyses could be used to identify novel viruses, as well as to infer host domain (archaeal or bacterial, >99% accuracy) and nucleic acid type (ssDNA or dsDNA, >95% accuracy). Evolutionarily, we posit that while co-infection by multiple viruses appears common, the consistency of so many VCs with ICTV taxonomy suggests that most phage genomes harbor a largely vertically inherited core gene set as detected for marine T4-like populations (Ignacio-Espinoza and Sullivan, 2012; Marston et al., 2012; Deng et al., 2014) rather than the rampant mosaicism paradigm largely derived from Siphoviridae genomes (Hendrix et al., 1999). While data remain limited to a subset of the known microbial phyla, it might be that viral infection modes influence the tempo of their genome evolution. Specifically, we posit that horizontal gene transfer is more prevalent in phages that occupy host cells longer due to lysogenic or chronic infection stages and/or infect densely packed hosts (e.g., biofilms or clumped life stages) as these parameters would increase the probability of co-infection. Perhaps then, at least for more highly lytic viral groups, genome-based clustering approaches can now be leveraged for their taxonomic predictive value as suggested over a decade ago (Rohwer and Edwards, 2002).
 
-## Global virus–host network is confirmed as modular
+### Global virus–host network is confirmed as modular
 
-Beyond charting diversity and taxonomic affiliation of viral sequence space, the VirSorter data set provided a unique opportunity to explore virus–host interactions. Beyond the above-noted expansion of viruses to novel hosts, we next examined these patterns on a global scale by constructing a virus–host interaction network based on database-available taxa. When considering viral diversity at the genus level, the network displays a modular topology (
+Beyond charting diversity and taxonomic affiliation of viral sequence space, the VirSorter data set provided a unique opportunity to explore virus–host interactions. Beyond the above-noted expansion of viruses to novel hosts, we next examined these patterns on a global scale by constructing a virus–host interaction network based on database-available taxa. When considering viral diversity at the genus level, the network displays a modular topology (Figure 5 and Figure 5—figure supplement 1). Such modularity in virus–host interaction networks suggests that hosts are specifically associated with particular viruses (Weitz et al., 2012), probably reflecting long-term coevolution between microbial hosts and their viruses. Such modular structure was expected, but not observed in previous virus–host interaction network studies, likely due to the short phylogenetic distances between hosts evaluated in available data sets (Flores et al., 2011). The modular network presented here derives from a data set spanning 18 phyla across bacterial and archaeal domains. These results confirmed the prediction that ‘at macroevolutionary scales, host–phage interaction matrices should be typified by a modular structure’ (Flores et al., 2011), as also had been observed across 215 phage types against 286 host types of unknown diversity (Flores et al., 2013).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig5-v3.jpg)
 
-**Figure 5.:** A cell in the matrix is colored when at least one virus from a virus cluster (VC, rows) was retrieved in a genome from a host class (columns). This virus–host network is detected as significantly modular by lp-Brim (modularity Q = 0.45; the same index computed from 99 randomly permuted matrices ranged from 0.02 to 0.17, with an average of 0.08). The different modules are highlighted in color, with inter-module links in gray. Virus clusters are identified by their number and their family-level affiliation (based on BLAST-based affiliation of the cluster members) is indicated next to each cluster when available (virus clusters with inconsistent members affiliation are considered as ‘unclassified’, affiliations are spread along the x-axis for spacing purpose). Host phylum and class are indicated for each host column, with domains indicated above the corresponding hosts.DOI: http://dx.doi.org/10.7554/eLife.08490.016
+**Figure 5.:** A cell in the matrix is colored when at least one virus from a virus cluster (VC, rows) was retrieved in a genome from a host class (columns). This virus–host network is detected as significantly modular by lp-Brim (modularity Q = 0.45; the same index computed from 99 randomly permuted matrices ranged from 0.02 to 0.17, with an average of 0.08). The different modules are highlighted in color, with inter-module links in gray. Virus clusters are identified by their number and their family-level affiliation (based on BLAST-based affiliation of the cluster members) is indicated next to each cluster when available (virus clusters with inconsistent members affiliation are considered as ‘unclassified’, affiliations are spread along the x-axis for spacing purpose). Host phylum and class are indicated for each host column, with domains indicated above the corresponding hosts.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** An edge is displayed between a virus cluster (VC) and a host class when at least one virus from this cluster was retrieved in a genome from the host class. This network is detected as significantly modular by lp-Brim (modularity Q = 0.45; the same index computed from 99 randomly permuted matrices ranged from 0.02 to 0.17, with an average of 0.08). The different modules are highlighted in color, with inter-module links in gray. VCs are identified by their number and their family-level affiliation (based on BLAST-based affiliation of the cluster members) is indicated below each cluster when available (VCs with inconsistent members affiliation are considered as ‘unclassified’). Host phylum and class are indicated for each host node, with phyla (when multiple class from the same phylum are included in the network) and domains indicated above the corresponding host nodes.DOI: http://dx.doi.org/10.7554/eLife.08490.017
+**Figure 5—figure supplement 1.:** An edge is displayed between a virus cluster (VC) and a host class when at least one virus from this cluster was retrieved in a genome from the host class. This network is detected as significantly modular by lp-Brim (modularity Q = 0.45; the same index computed from 99 randomly permuted matrices ranged from 0.02 to 0.17, with an average of 0.08). The different modules are highlighted in color, with inter-module links in gray. VCs are identified by their number and their family-level affiliation (based on BLAST-based affiliation of the cluster members) is indicated below each cluster when available (VCs with inconsistent members affiliation are considered as ‘unclassified’). Host phylum and class are indicated for each host node, with phyla (when multiple class from the same phylum are included in the network) and domains indicated above the corresponding host nodes.
 
-## Virus–host adaptation signals detected at the genome composition and codon usage level
+### Virus–host adaptation signals detected at the genome composition and codon usage level
 
-Finally, given the number of virus–host linkages revealed by VirSorter, we evaluated the adaptation of viral genome composition within the host milieu—an idea practiced in the literature with limited genomic information (
+Finally, given the number of virus–host linkages revealed by VirSorter, we evaluated the adaptation of viral genome composition within the host milieu—an idea practiced in the literature with limited genomic information (Pride et al., 2006; Carbone, 2008; Cardinale and Duffy, 2011). To this end, we computed the distance between viral and microbial genomes in terms of mono-, di-, tri-, tetra-nucleotide frequency and codon usage, and compared the distances between the virus and its host vs non-hosts in the data set. Every metric tested displayed a smaller distance between viruses and their hosts than with non-host genomes, with tetranucleotide frequency (TNF) maximizing the host to non-host distances (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig6-v3.jpg)
 
-**Figure 6.:** K–S distances between distributions of virus–host distances and virus–non-host distances for each metrics (in color) and different subsets of the viral sequences (all sequences, by type, and by taxonomy). Only families with more than 5 genomes are displayed (although it should be noted that the VirSorter data set includes only 6 Microviridae sequences). The number of sequences in each category is indicated in brackets. Distributions used to compute distances are displayed in Figure 6—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.08490.018
+**Figure 6.:** K–S distances between distributions of virus–host distances and virus–non-host distances for each metrics (in color) and different subsets of the viral sequences (all sequences, by type, and by taxonomy). Only families with more than 5 genomes are displayed (although it should be noted that the VirSorter data set includes only 6 Microviridae sequences). The number of sequences in each category is indicated in brackets. Distributions used to compute distances are displayed in Figure 6—figure supplement 1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig6-figsupp1-v3.jpg)
 
-**Figure 6—figure supplement 1.:** A) K–S distances between distributions of virus–host distances and virus–non-host distances for each metrics (in color) and different subsets of the viral sequences (based on the number of tRNA genes detected).The number of sequences in each category is indicated below the number of tRNA. (B) Distribution of k-mer distances between viral and cellular genomes and codon usage adaptation index for host, host genus, host family, and non-host (different order) genomes. For each viral genome, the distance to the host is displayed, as well as 10 randomly taken distances to genomes from each category and different subsets of the viral sequences (by taxonomy on the left column, and by number of tRNA genes on the rigth column).DOI: http://dx.doi.org/10.7554/eLife.08490.019
+**Figure 6—figure supplement 1.:** The number of sequences in each category is indicated below the number of tRNA. (B) Distribution of k-mer distances between viral and cellular genomes and codon usage adaptation index for host, host genus, host family, and non-host (different order) genomes. For each viral genome, the distance to the host is displayed, as well as 10 randomly taken distances to genomes from each category and different subsets of the viral sequences (by taxonomy on the left column, and by number of tRNA genes on the rigth column).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/08490/elife-08490-fig6-figsupp2-v3.jpg)
 
-**Figure 6—figure supplement 2.:** Caudovirales.Viral genomes (1000) were randomly sub-sampled at different sizes (from 2000 to 20,000 bp). Only Caudovirales genomes were selected for this subsample analysis. For each size of k-mer, the result of a linear regression of distance between host or non-host and viral subsample size is indicated. The same distances for the Microviridae and Inoviridae (taken from Figure 6A) are indicated for comparison, and associated with the size of the reference genome of each group (Enterobacteria phage phiX174 and Enterobacteria phage M13). For clarity's sake, the almost-identical values for 2-mer, 3-mer, and 4-mer for Microviridae are slightly horizontally shifted.DOI: http://dx.doi.org/10.7554/eLife.08490.020
+**Figure 6—figure supplement 2.:** Viral genomes (1000) were randomly sub-sampled at different sizes (from 2000 to 20,000 bp). Only Caudovirales genomes were selected for this subsample analysis. For each size of k-mer, the result of a linear regression of distance between host or non-host and viral subsample size is indicated. The same distances for the Microviridae and Inoviridae (taken from Figure 6A) are indicated for comparison, and associated with the size of the reference genome of each group (Enterobacteria phage phiX174 and Enterobacteria phage M13). For clarity's sake, the almost-identical values for 2-mer, 3-mer, and 4-mer for Microviridae are slightly horizontally shifted.
 
 Among dsDNA viruses, host-correlated genome composition patterns were robust across integrated prophages and extrachromosomal genomes (i.e., viral sequences assembled outside of the main host chromosome, Figure 6A, Figure6—figure supplement 1). Our expectations were that prophages would be largely optimized towards the genome of their host, but that genome composition of the extrachromosomal category would be less correlated. Particularly, as cyanophage host range breadth scales with the number of tRNA genes encoded by the virus (Enav et al., 2012), we expected that genome composition of viral genomes with many tRNA genes might have poor correlation to that of their host genomes, assuming that the viral-encoded tRNA genes could compensate for codon mismatches across hosts. However, these latter expectations were not met as viral and host genome composition correlations were strong regardless of the number of viral-encoded tRNA genes (Figure 6—figure supplement 1), which suggests that host-optimized viral genome composition may be beneficial even when the virus encodes its own tRNA genes.
 
 Among ssDNA viruses, nucleotide composition of viral genomes was also correlated to host genomes, but less so than for dsDNA viruses (Figure 6A). This contrasts with a previous analysis of 500 phage genomes that did not detect any difference between dsDNA and ssDNA genomes adaptations to their host's genome (Cardinale and Duffy, 2011). One ssDNA viral group, the Microviridae, had a reduced signal for genome composition metrics except for codon usage where its signal was comparable to that of the dsDNA viruses (Figure 6A). Although this could indicate a bias linked to the small genome size of these viruses (around 5 kb), dsDNA viruses' genomes subsampled to similar sizes displayed a minimal signal loss (Figure 6—figure supplement 2), which suggests other mechanisms may be driving this lower genome composition adaptation in Microviridae. Another ssDNA group, the Inoviridae had reduced genome composition and codon usage adaptation signals. Again, because Inoviridae release virions without killing their hosts, it is possible that the virus is exposed to host resources over a much longer time interval, lowering the selection pressure toward transcription and translation speed and efficiency, which is the main mechanism thought to drive genome composition and codon usage adaptation of viral genomes (Cardinale and Duffy, 2011).
 
-Pragmatically, to assess whether this signal could be used to predict the host of a new virus, we calculated the distance based on TNF vectors between each VirSorter curated data set sequence and the 14,977 microbial genomes. The taxonomy of the microbial genome with the lowest distance to the viral sequence (i.e., the predicted host) was then compared to the taxonomy of the actual host (i.e., the genomic data set in which the viral sequence was identified). When the host database included all host genomes, this host prediction was 99% accurate at both the family and genus level for virus–host TNF distances lower than 4.10−04, 88%/51% (family/genus level) for TNF distances ranging between 4.10−04 and 1.10−03, and 70%/37% for distances greater than 10−03 (Table 1). When genomes from the actual host species are excluded, the accuracy of host prediction drops slightly (95%, 83%/30%, 67%/30% for the same distance ranges), and even more when all genomes from the host genus are excluded (70% and 37% at the family level, no correct genus could be predicted in that case, and only one distance lower than 4.10−04 was observed, Table 1). Hence, TNF comparison provides a promising in silico approach to link new viral genomes to hosts at different levels of accuracy within the taxonomic hierarchy when the suitable host reference genome is available.10.7554/eLife.08490.021Table 1.Accuracy of host prediction based on distance (d) between tetranucleotide frequencies of viral and microbial genomesDOI: http://dx.doi.org/10.7554/eLife.08490.021PredictedHost orderHost familyHost genusCorrectRatio (%)CorrectRatio (%)CorrectRatio (%)All reference sequences d < 4 × 10−04989798.989798.989798.98 4 × 10−04 ≤ d < 1 × 10−0310,173936192.02897188.18526151.72 1 × 10−03 ≤ d2508187274.64175770.0691736.56Host species excluded d < 4 × 10−04212095.242095.242095.24 4 × 10−04 ≤ d < 1 × 10−0310,003906790.64837283.69299229.91 1 × 10−03 ≤ d2755198171.91184066.7981829.69Host genus excluded d < 4 × 10−04100.0000.0000.00 4 × 10−04 ≤ d < 1 × 10−039085730380.39618168.0400.00 1 × 10−03 ≤ d3693176847.87138837.5800.00For each viral genome, the order, family, and genus of its host were predicted from the taxonomy of the closest microbial genome (based on the mean absolute difference between tetranucleotide frequency vectors) and compared to the order, family, and genus of the actual host (i.e., the taxonomy of the genome with which the virus was identified). These predictions were computed with (i) all microbial genomes, (ii) excluding specifically all genomes from the host species, and (iii) excluding all genomes from the host genus. Cases with over 75% of prediction accuracy are highlighted in gray.
+Pragmatically, to assess whether this signal could be used to predict the host of a new virus, we calculated the distance based on TNF vectors between each VirSorter curated data set sequence and the 14,977 microbial genomes. The taxonomy of the microbial genome with the lowest distance to the viral sequence (i.e., the predicted host) was then compared to the taxonomy of the actual host (i.e., the genomic data set in which the viral sequence was identified). When the host database included all host genomes, this host prediction was 99% accurate at both the family and genus level for virus–host TNF distances lower than 4.10−04, 88%/51% (family/genus level) for TNF distances ranging between 4.10−04 and 1.10−03, and 70%/37% for distances greater than 10−03 (Table 1). When genomes from the actual host species are excluded, the accuracy of host prediction drops slightly (95%, 83%/30%, 67%/30% for the same distance ranges), and even more when all genomes from the host genus are excluded (70% and 37% at the family level, no correct genus could be predicted in that case, and only one distance lower than 4.10−04 was observed, Table 1). Hence, TNF comparison provides a promising in silico approach to link new viral genomes to hosts at different levels of accuracy within the taxonomic hierarchy when the suitable host reference genome is available.
 
-## Data set availability
+**Table 1.**
+ Accuracy of host prediction based on distance (d) between tetranucleotide frequencies of viral and microbial genomes
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Predicted</th>
+      <th colspan="2">Host order</th>
+      <th colspan="2">Host family</th>
+      <th colspan="2">Host genus</th>
+    </tr>
+    <tr>
+      <th>Correct</th>
+      <th>Ratio (%)</th>
+      <th>Correct</th>
+      <th>Ratio (%)</th>
+      <th>Correct</th>
+      <th>Ratio (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">All reference sequences</td>
+    </tr>
+    <tr>
+      <td>d &lt; 4 × 10−04</td>
+      <td>98</td>
+      <td>97</td>
+      <td>98.98</td>
+      <td>97</td>
+      <td>98.98</td>
+      <td>97</td>
+      <td>98.98</td>
+    </tr>
+    <tr>
+      <td>4 × 10−04 ≤ d &lt; 1 × 10−03</td>
+      <td>10,173</td>
+      <td>9361</td>
+      <td>92.02</td>
+      <td>8971</td>
+      <td>88.18</td>
+      <td>5261</td>
+      <td>51.72</td>
+    </tr>
+    <tr>
+      <td>1 × 10−03 ≤ d</td>
+      <td>2508</td>
+      <td>1872</td>
+      <td>74.64</td>
+      <td>1757</td>
+      <td>70.06</td>
+      <td>917</td>
+      <td>36.56</td>
+    </tr>
+    <tr>
+      <td colspan="8">Host species excluded</td>
+    </tr>
+    <tr>
+      <td>d &lt; 4 × 10−04</td>
+      <td>21</td>
+      <td>20</td>
+      <td>95.24</td>
+      <td>20</td>
+      <td>95.24</td>
+      <td>20</td>
+      <td>95.24</td>
+    </tr>
+    <tr>
+      <td>4 × 10−04 ≤ d &lt; 1 × 10−03</td>
+      <td>10,003</td>
+      <td>9067</td>
+      <td>90.64</td>
+      <td>8372</td>
+      <td>83.69</td>
+      <td>2992</td>
+      <td>29.91</td>
+    </tr>
+    <tr>
+      <td>1 × 10−03 ≤ d</td>
+      <td>2755</td>
+      <td>1981</td>
+      <td>71.91</td>
+      <td>1840</td>
+      <td>66.79</td>
+      <td>818</td>
+      <td>29.69</td>
+    </tr>
+    <tr>
+      <td colspan="8">Host genus excluded</td>
+    </tr>
+    <tr>
+      <td>d &lt; 4 × 10−04</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>4 × 10−04 ≤ d &lt; 1 × 10−03</td>
+      <td>9085</td>
+      <td>7303</td>
+      <td>80.39</td>
+      <td>6181</td>
+      <td>68.04</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>1 × 10−03 ≤ d</td>
+      <td>3693</td>
+      <td>1768</td>
+      <td>47.87</td>
+      <td>1388</td>
+      <td>37.58</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_For each viral genome, the order, family, and genus of its host were predicted from the taxonomy of the closest microbial genome (based on the mean absolute difference between tetranucleotide frequency vectors) and compared to the order, family, and genus of the actual host (i.e., the taxonomy of the genome with which the virus was identified). These predictions were computed with (i) all microbial genomes, (ii) excluding specifically all genomes from the host species, and (iii) excluding all genomes from the host genus. Cases with over 75% of prediction accuracy are highlighted in gray._
+
+### Data set availability
 
 As evidenced by the improvement in virome taxonomic affiliation (Figure 3B), VirSorter curated data set should represent a useful reference data set for future virome studies. This data set also likely harbor novel biology beyond the global patterns of viral diversity and virus–host interactions presented in this manuscript, to be revealed through analyses targeted toward specific viral or host subgroups. To facilitate these follow-up studies, VirSorter curated data set is made available through two complementary websites: MetaVir and iVirus. MetaVir (project ‘VirSorter’, data set ‘VirSorter curated data set’) provides an automatic annotation of each sequence, with multiple visualization tools to explore and compare genome maps, as well as multiple ways of searching the data (by host, by phage affiliation, by taxonomic or functional affiliation of predicted genes, etc) and extract a specific subset of interest (these tools are under the tab ‘Contig maps’). Nucleotide sequences from the VirSorter curated data set are also hosted at iVirus, alongside the viral clusters annotation and network (as cytoscape-ready text files), the virus–host matrix, and the complete list of viral sequence predictions in the 14,977 archaeal and bacterial genomic data sets including the category 3 predictions that are not in VirSorter curated data set (http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/ivirus/VirSorter_curated_dataset). Finally, a summary of the sequences and clusters is provided as Figure 1—source data 1 and Figure 2—source data 1, and a Data Dryad package including all annotated genbank files from the VirSorter curated data set is available (http://dx.doi.org/10.5061/dryad.b8226; Roux et al., 2015b).
 
-## Conclusion
+### Conclusion
 
 While recent advances in high-throughput sequencing and viral metagenomics continue to expand the bounds of viral sequence space (e.g., Reyes et al., 2012; Mizuno et al., 2013; Brum and Sullivan, 2015), such viruses are typically unlinked to cognate hosts, severely limiting ecological and evolutionary inferences. Concurrently, emerging methods provide new virus–host linkage capabilities, but do not scale well with increasing data set size and complexity (e.g., Andersson and Banfield, 2008; Tadmor et al., 2011; Allers et al., 2013a; Deng et al., 2014). Here, the mining of publicly available microbial genomic data proved to be a useful complement to these approaches as it enables the exploration of host-linked viral diversity. The resulting viral sequences hidden in microbial genomes represent a powerful data set, increasing the number of known, host-linked viruses by an order of magnitude, with analyses of these data elucidating viral dark matter in ocean and human gut viromes, as well as augmenting our understanding of viral taxonomy, viral genome evolution, and virus–host interactions on multiple fronts. While this current VirSorter data set remains limited by the cultivation bias inherent in the publicly available complete and draft microbial genomes, such bias will progressively be eliminated as SAGs are used to better map microbial dark matter (e.g., Rinke et al., 2013). Such a drastically improved map of the virosphere, together with advances in experimental approaches and theory (Brum and Sullivan, 2015), will help reveal the eco-evolutionary forces shaping virus–host interactions across diverse ecosystems and eventually shift our inference capability from observation to prediction.
 
 ## Materials and methods
 
-## Application of VirSorter to public bacterial and archaeal genomes
+### Application of VirSorter to public bacterial and archaeal genomes
 
 A total of 14,977 bacterial and archaeal genomes (complete and draft) included in RefSeq and WGS databases (Pruitt et al., 2009) were downloaded from the NCBI ftp website in March 2014 (RefSeq release 64). The 264 new candidate phyla (‘Microbial Dark Matter’) SAGs' (Rinke et al., 2013) raw reads were downloaded from the JGI portal page and assembled with SPAdes Genome Assembler (Bankevich et al., 2012) (default parameters). Finally, 127 SUP05 SAGs that we previously analyzed manually were added to the cellular genome pool (Roux et al., 2014). This data set included 4240 complete genomes and 10,547 draft genomes (as there is no clear annotation of a genome as ‘draft’ or ‘complete’ at the NCBI, we identified as ‘draft’ genomes all genome projects including more than 5 different sequences, to avoid considering genomes split into different chromosomes or including one or several plasmids as ‘draft’).
 
 Genomes were processed with VirSorter (Roux et al., 2015a) separately for each class (except for Cyanobacteria, SUP05 SAGs, and the Microbial Dark Matter data set that were all processed together), first using the RefSeqABVir database, and then using the Viromes database, yielding 89,301 total predicted viral sequences. Among these, 938 correspond to Enterobacteria phage PhiX174, which is used for quality control during Illumina sequencing, and were thus discarded.
 
-## Selection of a relevant subset of viral sequences: the VirSorter data set
+### Selection of a relevant subset of viral sequences: the VirSorter data set
 
 We focused on a subset of the putative viral sequences extracted from RefSeq, WGS and the Microbial Dark Matter and SUP05 SAGs (89,301 sequences), and targeted the active prophages and lytic virus signatures. To this end, we discarded all predictions lacking a viral hallmark gene or a viral gene enrichment (i.e., category 3 predictions, Roux et al., 2015a), and all prophage detections displaying viral gene enrichment only and lacking viral hallmark genes, as these are likely defective prophages for which boundaries are difficult to predict in silico and that often include bacterial genes. We next removed all linear sequences shorter than 10 kb except for sequences detected with the non-Caudovirales score where a threshold of 5 kb was used, as these viruses can frequently have genomes smaller than 10 kb. We also discarded all circular contigs (which should represent complete genomes) smaller than 3 kb as these are likely short repeat regions (the smallest known genome for a bacteria or archaea virus is ∼5 kb). The resulting 13,391 sequences were then manually curated to remove false positives. These false positives corresponded to defective prophages (wherein most are expected to be smaller than 10 kb), plasmid-like sequences, GTA gene clusters, and low complexity regions. In addition, this manual curation step allowed us to adjust the boundaries of some prophage predictions and/or modify the prophage vs complete viral contig automatic prediction. Consequently, 892 sequences were discarded (false-positive rate of 6.7%), leaving 12,498 curated sequences.
 
@@ -166,7 +293,7 @@ Among these, 7266 sequences were entirely viral (thus potentially represent lyti
 
 Finally, one additional ambiguous sequence, considered as entirely viral by VirSorter, was detected in the Caldiserica SAG (Caldiserica_bacterium_sp_JGI_0000059-M03_ID_3757). Even though this sequence looks indeed like a complete Inoviridae genome, it displayed a high level of similarity (99% identity) to the complete genome of Delftia acidovorans SPH-1 (gi:160361034, from coordinates 2300885 to 2307389). Such high similarity with another virus is suspicious, as well as the fact that the matching genome is Delftia, a bacterium known to contaminate some MDA reagents. This sequence was maintained in the VirSorter data set as there is no definite proof of the contamination, but the existence of a Caldiserica-infecting Inoviridae should be considered as uncertain until further evidence is available (and is displayed as such in Figure 2—source data 2).
 
-## Protein and virus clustering of the VirSorter curated data set
+### Protein and virus clustering of the VirSorter curated data set
 
 The pool of 450,047 proteins predicted from the 12,498 viral sequences was clustered with all proteins from RefSeq and the viral metagenomes (i.e., sequences from the Viromes database) with MCL based on reciprocal best BLAST hit (threshold of 50 on score and 0.001 on e-value, Enright et al., 2002). Most of these sequences (423,618) could be included in 22,460 protein clusters (PCs). About a third (7742) of these PCs also contained sequences from the RefSeqABVir database, and the remainder formed new PCs.
 
@@ -174,7 +301,7 @@ This protein clustering was then used to cluster genomes as in Lima-Mendez et al
 
 We used ICCC (intracluster clustering coefficient, which estimates cluster homogeneity by measuring around each node how many of its neighbors are part of the same cluster) to determine the best inflation value (from 1.5 to 5 by 0.25 increments) and significance threshold (i.e., which minimum significance was required to draw an edge between two sequences, from 1 to 50). As expected, the number of VCs formed increased with inflation and with significance. ICCC was clearly higher with the lowest threshold in significance (sig ≥ 1), regardless of the inflation value used. For the lowest significance threshold, ICCC increased with inflation, usually with a first small peak around 2 and plateau around 4. These different values of inflation did not have a major impact on the clustering though, as 95–99% of pairs of sequences were clustered similarly using inflations values of 2.75, 3, 3.25, 3.5, 3.75, 4, 4.25, 4.5, 4.75, or 5. We eventually settled for the combination yielding the highest ICCC: a significance threshold of 1 and inflation of 4 (Figure 2—figure supplement 2).
 
-## Taxonomic and functional affiliation of sequences and VCs
+### Taxonomic and functional affiliation of sequences and VCs
 
 Taxonomic affiliation of sequences was based on hits to the RefSeqABVir database. Each profile in the database was first affiliated based on the origin of its members, with a 75% majority rule: at each taxonomic level, a profile is affiliated to a taxon if more than 75% of the profile sequences are affiliated to this taxon. Then, for each of the 12,498 viral sequences identified by VirSorter, a set of relevant hits was selected: (i) first the profile with the best hit across all genes along the sequence, and (ii) the best hit from other genes with a score close to this ‘absolute’ best hit in the sequence (>75% of the score of the first best hit). The sequence was then affiliated to the Lowest Common Ancestor (LCA) of this set of relevant hits. Hence, a predicted protein will only be affiliated if pointing toward sequences or profiles typical of a viral group, and a sequence detected by VirSorter will only be affiliated if its best hits are consistent. Functional affiliation for each PC was based on the comparison of its members (predicted proteins) with PFAM (v. 27, threshold of 50 on score). VCs were affiliated based on its members affiliations if >75% were consistent.
 
@@ -182,13 +309,13 @@ For the detection of new genera in the VCs, we chose to ignoring the 79 VCs that
 
 The 7 short circular sequences from Bacteroidia only detected with the Viromes database (gi 319430465, 298484481, 329959038, 423221334, 423242675, 423298785, 345651594) were targeted for further examination. Hits to PFAM domains could be found on two proteins: a relaxase (PF03432.9, score ∼170), and one replication initiator protein (PF01051.16, score ∼80). Genome organization was compared with Easyfig (Sullivan et al., 2011) after aligning all genomes to the same starting point (one base before the start of the Rep-domain protein). Recruitment plots of virome contigs (extracted from Kim et al., 2011; Minot et al., 2012) were generated with ggplot2 and based on blastn comparison.
 
-## Host range and co-infection
+### Host range and co-infection
 
 The virus–host network was assessed considering only VCs with more than 10 sequences. Hosts were grouped at the class level. The modularity Q value of the virus–host matrix was computed with the lp-BRIM module in R software (https://github.com/tpoisot/lp-brim). The virus–host matrix had a modularity of 0.45. The same index computed from 99 randomly permuted matrices ranged from 0.02 to 0.17, with an average of 0.07.
 
 Co-infection was defined as the detection of several distinct viruses in one genome project (one complete genome or one SAG). However, different viral contigs in a single draft genome could also originate from a single viral genome mis-assembled in several different contigs. This will be especially true for Caudovirales that are the most detected viruses as well as the ones with the largest genomes. To limit the over-estimation of co-infection due to mis-assembled Caudovirales genomes, co-infection was only considered in the cases where multiple copies of the large subunit of the terminase were detected, because this gene is present in single copy in Caudovirales genomes, and usually detected even in new viruses (due to a high level of sequence conservation).
 
-## Evaluation of virus–host genome adaptation
+### Evaluation of virus–host genome adaptation
 
 Relative frequencies of k-mers (mono-, di-, tri-, and tetra-nucleotide) were computed with Jellyfish (Marçais and Kingsford, 2011) for every VirSorter sequence and every bacterial and archaeal genome initially mined. Mean absolute error (i.e. average of absolute differences) between k-mer frequency vectors were then computed with an in-house perl script for each pair of VirSorter sequence and cellular genome, and used as a distance metric between viruses and putative hosts. For each VirSorter sequence, a set of distances that included its host (i.e., the genome with which the sequence was initially associated) alongside 10 randomly selected sequences from the same genus, the same family, and a different order than the host were factored into in the distance distribution (Figure 6—figure supplement 1).
 
@@ -200,7 +327,7 @@ To evaluate the effect of small genome size on distance between k-mer frequencie
 
 The prediction of the host taxonomy for each viral sequence was based on the microbial genome with the lowest tetramer frequency distance to the viral sequence. A prediction was considered as ‘correct’ when this closest microbial genome taxonomy was the same as the original genome in which the viral sequence was detected. This prediction was computed using (i) all microbial genomes, (ii) only genomes from a different species than the actual host (i.e., the genome in which the viral sequence was originally detected), and (iii) only genomes from a different genus than the actual host.
 
-## Estimation of virome affiliation improvement and prophage assembly efficiency
+### Estimation of virome affiliation improvement and prophage assembly efficiency
 
 Protein sequences predicted from the POV (Hurwitz and Sullivan, 2013), TOV (Brum et al., 2015), and human gut viromes (Minot et al., 2012) data sets were compared to RefSeqABVir (Jan. 2014) using BLAST (blastp, threshold of 50 on bit score and 0.001 on e-value). Those proteins that did not affiliate at >50 bit score and <0.001 e-value thresholds were considered ‘unclassified’ and then used as queries in a secondary BLAST (blastp with the same thresholds) against the predicted proteins from the VirSorter curated data set. Any unclassified proteins matching the VirSorter data set better were considered newly affiliated.
 

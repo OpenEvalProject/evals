@@ -17,24 +17,24 @@
 
 ### Affiliations
 
-1. https://ror.org/02sc3r913 Griffith Centre for Social and Cultural Research, Griffith University Southport Australia
-2. https://ror.org/02sc3r913 Australian Research Centre for Human Evolution, Griffith University Southport Australia
-3. https://ror.org/04a9tmd77 Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai New York United States
-4. https://ror.org/00rqy9422 School of the Environment, The University of Queensland Brisbane Australia
-5. https://ror.org/01nse6g27 Centro Nacional de Investigación sobre la Evolución Humana (CENIEH) Burgos Spain
-6. https://ror.org/01rxfrp27 Palaeoscience Labs, Department of Archaeology and History, La Trobe University Melbourne Australia
-7. https://ror.org/00rzspn62 Department of Geology, Universiti Malaya Kuala Lumpur Malaysia
-8. https://ror.org/04s1nv328 School of Archaeology and Anthropology, The Australian National University Canberra Australia
-9. https://ror.org/0566bfb96 Department of Geology, Naturalis Biodiversity Center Leiden Netherlands
-10. https://ror.org/019wvm592 Research School of Earth Sciences, The Australian National University Canberra Australia
-11. https://ror.org/00rqy9422 Radiogenic Isotope Facility, School of the Environment, The University of Queensland Brisbane Australia
-12. https://ror.org/03vek6s52 Department of Human Evolutionary Biology, Harvard University Cambridge United States
+1. Griffith Centre for Social and Cultural Research, Griffith University Southport Australia ([ROR:02sc3r913](https://ror.org/02sc3r913))
+2. Australian Research Centre for Human Evolution, Griffith University Southport Australia ([ROR:02sc3r913](https://ror.org/02sc3r913))
+3. Department of Environmental Medicine and Public Health, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+4. School of the Environment, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+5. Centro Nacional de Investigación sobre la Evolución Humana (CENIEH) Burgos Spain ([ROR:01nse6g27](https://ror.org/01nse6g27))
+6. Palaeoscience Labs, Department of Archaeology and History, La Trobe University Melbourne Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
+7. Department of Geology, Universiti Malaya Kuala Lumpur Malaysia ([ROR:00rzspn62](https://ror.org/00rzspn62))
+8. School of Archaeology and Anthropology, The Australian National University Canberra Australia ([ROR:04s1nv328](https://ror.org/04s1nv328))
+9. Department of Geology, Naturalis Biodiversity Center Leiden Netherlands ([ROR:0566bfb96](https://ror.org/0566bfb96))
+10. Research School of Earth Sciences, The Australian National University Canberra Australia ([ROR:019wvm592](https://ror.org/019wvm592))
+11. Radiogenic Isotope Facility, School of the Environment, The University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+12. Department of Human Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
 ## Abstract
 
-Studies of climate variation commonly rely on chemical and isotopic changes recorded in sequentially produced growth layers, such as in corals, shells, and tree rings, as well as in accretionary deposits—ice and sediment cores, and speleothems. Oxygen isotopic compositions (δ 18 O) of tooth enamel are a direct method of reconstructing environmental variation experienced by an individual animal. Here, we utilize long-forming orangutan dentitions ( Pongo spp.) to probe recent and ancient rainfall trends on a weekly basis over ~3–11 years per individual. We first demonstrate the lack of any consistent isotopic enrichment effect during exclusive nursing, supporting the use of primate first molar teeth as environmental proxies. Comparisons of δ 18 O values (n=2016) in twelve molars from six modern Bornean and Sumatran orangutans reveal a high degree of overlap, with more consistent annual and bimodal rainfall patterns in the Sumatran individuals. Comparisons with fossil orangutan δ 18 O values (n=955 measurements from six molars) reveal similarities between modern and late Pleistocene fossil Sumatran individuals, but differences between modern and late Pleistocene/early Holocene Bornean orangutans. These suggest drier and more open environments with reduced monsoon intensity during this earlier period in northern Borneo, consistent with other Niah Caves studies and long-term speleothem δ 18 O records in the broader region. This approach can be extended to test hypotheses about the paleoenvironments that early humans encountered in southeast Asia.
+Studies of climate variation commonly rely on chemical and isotopic changes recorded in sequentially produced growth layers, such as in corals, shells, and tree rings, as well as in accretionary deposits—ice and sediment cores, and speleothems. Oxygen isotopic compositions (δ18O) of tooth enamel are a direct method of reconstructing environmental variation experienced by an individual animal. Here, we utilize long-forming orangutan dentitions (Pongo spp.) to probe recent and ancient rainfall trends on a weekly basis over ~3–11 years per individual. We first demonstrate the lack of any consistent isotopic enrichment effect during exclusive nursing, supporting the use of primate first molar teeth as environmental proxies. Comparisons of δ18O values (n=2016) in twelve molars from six modern Bornean and Sumatran orangutans reveal a high degree of overlap, with more consistent annual and bimodal rainfall patterns in the Sumatran individuals. Comparisons with fossil orangutan δ18O values (n=955 measurements from six molars) reveal similarities between modern and late Pleistocene fossil Sumatran individuals, but differences between modern and late Pleistocene/early Holocene Bornean orangutans. These suggest drier and more open environments with reduced monsoon intensity during this earlier period in northern Borneo, consistent with other Niah Caves studies and long-term speleothem δ18O records in the broader region. This approach can be extended to test hypotheses about the paleoenvironments that early humans encountered in southeast Asia.
 
 ## Introduction
 
@@ -46,7 +46,7 @@ Open woodland and savannah environments are unfavorable for slow-moving oranguta
 
 Detailed climate records prior to the era of human-induced climate change are somewhat limited for island southeast Asia, but they are directly relevant to understanding the recent distribution of orangutans, and the arrival and dispersal of modern humans in the region during the Late Pleistocene (e.g. Piper, 2016; Bae et al., 2017; Spehar et al., 2018). A small number of studies of fossil corals, molluscs, marine sediments, and speleothems have provided insights into the last interglacial and glacial periods (e.g. Hughen et al., 1999; Tudhope et al., 2001; Stephens et al., 2016; Yang et al., 2016; Buckingham et al., 2022). For example, oxygen isotopes in fossil corals from seven periods during the last 130,000 years suggest that ENSO activity in the western Pacific over that time was comparable to modern records, although there was variation in the intensity of such activity at different timepoints (Tudhope et al., 2001). This study was also able to resolve bimodal annual rainfall peaks in modern corals, yet such detailed subannual records are extremely uncommon, particularly from terrestrial environments where early humans once lived alongside orangutans and other mammals.
 
-## Oxygen isotope studies for paleoenvironmental reconstruction
+### Oxygen isotope studies for paleoenvironmental reconstruction
 
 Oxygen isotope values (δ18O) in water vary with latitude, altitude, temperature, and precipitation cycles, and are also impacted by precipitation sources. In tropical regions the primary determinant of rainfall isotope compositions is rainfall amount (Dansgaard, 1964; Rozanski et al., 1993; Belgaman et al., 2017). During wet seasons, rainfall δ18O values are relatively low, while the opposite pattern is evident in periods with less rain, although other meteorological factors can influence isotope values as well (Belgaman et al., 2016). This primary tropical pattern influences isotopic variation in meteoric, surface, and leaf waters, which may show further elevations in δ18O values during dryer periods due to preferential evaporative loss of the lighter isotope, 16O (da Silveira et al., 1989; Bowen, 2010; Roberts et al., 2017).
 
@@ -64,31 +64,377 @@ Here, we first assess whether wild orangutans show elevated δ18O values in earl
 
 **Figure 1.:** Figure modified from https://www.waterisotopes.org based on data from the Online Isotopes in Precipitation Calculator (3.0). See Table 1 for the location of particular individuals. Sibrambang Cave has yet to be relocated since Eugene Dubois’ original excavations, but it is known to be in the general vicinity of Lida Ajer in the Padang Highlands, possibly near to the modern village of a similar name (Louys et al., 2024).
 
+**Table 1.**
+ Modern and fossil orangutan teeth employed in the current study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxon</th>
+      <th>Accession</th>
+      <th>Origin</th>
+      <th>Sex</th>
+      <th>Age (years)</th>
+      <th>Teeth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pongo pygmaeus</td>
+      <td>ZSM 1981/48</td>
+      <td>Skalau, Borneo</td>
+      <td>F</td>
+      <td>~8.4</td>
+      <td>RUM1, LLM2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/87</td>
+      <td>Skalau, Borneo</td>
+      <td>F</td>
+      <td>&gt;9</td>
+      <td>LUM1, RUM2, RLM3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MCZ 5290</td>
+      <td>Borneo (location unspecified)</td>
+      <td>n/a</td>
+      <td>4.5</td>
+      <td>RUM1</td>
+    </tr>
+    <tr>
+      <td>Pongo abelii</td>
+      <td>ZSM 1981/246</td>
+      <td>Aceh, Sumatra</td>
+      <td>M</td>
+      <td>~8.5</td>
+      <td>LLM1, LUM2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/248</td>
+      <td>Aceh, Sumatra</td>
+      <td>F</td>
+      <td>adult</td>
+      <td>LUM1, LUM2, LLM3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZMB 83508</td>
+      <td>Sumatra (location unspecified)</td>
+      <td>n/a</td>
+      <td>8.8</td>
+      <td>RLM1</td>
+    </tr>
+    <tr>
+      <td>Fossil Pongo spp.</td>
+      <td>11564.5</td>
+      <td>Sibrambang, Sumatra</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>RUM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11565.162</td>
+      <td>Sibrambang, Sumatra</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>LUM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11594.12</td>
+      <td>Lida Ajer, Sumatra</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>RLM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11595.105</td>
+      <td>Lida Ajer, Sumatra</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>LLM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>US/22</td>
+      <td>Niah Caves, Malaysia</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>RLM</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y/F4</td>
+      <td>Niah Caves, Malaysia</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>LLM</td>
+    </tr>
+  </tbody>
+</table>
+
+_Numerous taxonomic assignments have been made for fossil orangutans (Pongo spp.), some of which have not been based on clear morphological characteristics (Tshen, 2016), and are not relevant for the focus of this paper._
+
 ## Results
 
-## Modern orangutans
+### Modern orangutans
 
 The δ18O ranges of twelve modern and six fossil orangutan molars, representing 2971 near-weekly measurements spanning 57.6 years of tooth formation, are listed in Table 2. Prior to making comparisons between individuals, geographic regions, or time periods, we first consider the potential intra-individual effect of isotopic enrichment from maternal milk on δ18O values. Comparisons of δ18O values during the first, second, and third years of life in five modern orangutan first molars (M1) do not show consistently elevated values during their first year (Figure 2). Mean yearly δ18O values in the first year are elevated by only 0.3‰ compared to the second year. While three of the five M1s showed first year δ18O values higher than second year values (p≤0.05), only two individuals showed mean values that were ~1–2‰ higher during year 1; one individual showed no difference from the first to the second year, and one individual showed lower values during the first year than during the second year (p≤0.05) (Table 3). A sixth individual was only sampled from 193 days of age, but maximum values from this point onward were similar across more than 3 years of life. Similarly variable patterns were observed for the six putative fossil orangutan M1s (Appendix 1—figure 1).
 
+**Table 2.**
+ Modern and fossil orangutan molar δ18O values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxon</th>
+      <th>Accession</th>
+      <th>Tooth</th>
+      <th>Cusp</th>
+      <th>Spots</th>
+      <th>Time (days)</th>
+      <th>dO18 range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P. pygmaeus</td>
+      <td>ZSM 1981/48</td>
+      <td>RUM1</td>
+      <td>dl</td>
+      <td>151</td>
+      <td>1241</td>
+      <td>13.6–19.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/48</td>
+      <td>LLM2</td>
+      <td>mb</td>
+      <td>107</td>
+      <td>804</td>
+      <td>13.0–18.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/87</td>
+      <td>LUM1</td>
+      <td>ml</td>
+      <td>131</td>
+      <td>869</td>
+      <td>13.7-17.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/87</td>
+      <td>RUM2</td>
+      <td>ml</td>
+      <td>196</td>
+      <td>1195</td>
+      <td>12.7–20.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/87</td>
+      <td>RLM3</td>
+      <td>mb</td>
+      <td>220</td>
+      <td>1350</td>
+      <td>13.7–19.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MCZ 5290</td>
+      <td>RUM1</td>
+      <td>ml</td>
+      <td>150</td>
+      <td>1002</td>
+      <td>13.8–18.1</td>
+    </tr>
+    <tr>
+      <td>P. abelii</td>
+      <td>ZSM 1981/246</td>
+      <td>LLM1</td>
+      <td>mb</td>
+      <td>136</td>
+      <td>1425</td>
+      <td>12.3–18.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/246</td>
+      <td>LUM2</td>
+      <td>ml</td>
+      <td>229</td>
+      <td>1376</td>
+      <td>12.6–18.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/248</td>
+      <td>LUM1</td>
+      <td>db</td>
+      <td>177</td>
+      <td>1072</td>
+      <td>11.3–19.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/248</td>
+      <td>LUM2</td>
+      <td>db</td>
+      <td>193</td>
+      <td>1374</td>
+      <td>13.5–20.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZSM 1981/248</td>
+      <td>LLM3</td>
+      <td>db</td>
+      <td>191</td>
+      <td>1461</td>
+      <td>14.8–19.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZMB 83508</td>
+      <td>RLM1</td>
+      <td>db</td>
+      <td>135</td>
+      <td>1029</td>
+      <td>13.4–20.4</td>
+    </tr>
+    <tr>
+      <td>Fossil Pongo spp.</td>
+      <td>11564.5</td>
+      <td>RUM</td>
+      <td>mb</td>
+      <td>178</td>
+      <td>1387</td>
+      <td>15.3–20.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11565.162</td>
+      <td>LUM</td>
+      <td>ml</td>
+      <td>143</td>
+      <td>1144</td>
+      <td>14.7–20.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11594.12</td>
+      <td>RLM</td>
+      <td>ml</td>
+      <td>154</td>
+      <td>1081</td>
+      <td>15.1–19.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11595.105</td>
+      <td>LLM</td>
+      <td>mb</td>
+      <td>197</td>
+      <td>1312</td>
+      <td>15.7–20.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>US/22</td>
+      <td>RLM</td>
+      <td>mb</td>
+      <td>149</td>
+      <td>1023</td>
+      <td>15.9–24.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Y/F4</td>
+      <td>LLM</td>
+      <td>db</td>
+      <td>134</td>
+      <td>869</td>
+      <td>14.2–22.9</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/90217/elife-90217-fig2-v1.jpg)
 
-**Figure 2.:** 18O values across multiple years of first molar formation in five modern orangutans from Borneo and Sumatra.Bornean individuals: MCZ 5290, ZSM 1981/48, ZSM 1981/87; Sumatran individuals: ZMB 83508, ZSM 1981/248. The width of each curve is a kernel density estimate (KDE) corresponding to the distribution of δ18O values. First year data (Y1) is shown with a purple violin plot, second year data (Y2) with a green plot, and third year data (Y3) with a yellow plot where complete/available. Actual data are plotted as black circles.
+**Figure 2.:** Bornean individuals: MCZ 5290, ZSM 1981/48, ZSM 1981/87; Sumatran individuals: ZMB 83508, ZSM 1981/248. The width of each curve is a kernel density estimate (KDE) corresponding to the distribution of δ18O values. First year data (Y1) is shown with a purple violin plot, second year data (Y2) with a green plot, and third year data (Y3) with a yellow plot where complete/available. Actual data are plotted as black circles.
+
+**Table 3.**
+ Comparisons of first and second year δ18O values in five first molars.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th>Adjusted p-values</th>
+      <th>Higher δ18O values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MCZ 5290</td>
+      <td>p=0.010</td>
+      <td>Year 1</td>
+    </tr>
+    <tr>
+      <td>ZMB 83508</td>
+      <td>p=0.006</td>
+      <td>Year 1</td>
+    </tr>
+    <tr>
+      <td>ZSM 1981/48</td>
+      <td>p=0.161 (NS)</td>
+      <td>Year 1</td>
+    </tr>
+    <tr>
+      <td>ZSM 1981/87</td>
+      <td>p&lt;0.001</td>
+      <td>Year 2</td>
+    </tr>
+    <tr>
+      <td>ZSM 1981/248</td>
+      <td>p&lt;0.001</td>
+      <td>Year 1</td>
+    </tr>
+  </tbody>
+</table>
 
 Comparisons across serial molars in four modern orangutans show no consistent trend of elevated δ18O values in M1s relative to successive molars (Figure 3). Only two individuals showed maximum δ18O values in their M1s relative to M2s; in both instances M3s were unavailable due to their lack of development prior to death. The other two individuals showed higher δ18O values in M2s or M3s than in their respective M1s. In the case of the oldest individual (ZSM 1981/248), the highest δ18O values appeared at approximately 5.8 years of age, well past the age when exclusive nursing ends.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90217/elife-90217-fig3-v1.jpg)
 
-**Figure 3.:** 18O values across multiple years of serial molar formation in two modern orangutans from Borneo (top) and two from Sumatra (bottom).Individual in upper left: ZSM 1981/48; upper right: ZSM 1981/87; lower left: ZSM 1981/246; lower right: ZSM 1981/248. Developmental overlap was determined through registration of trace elements as in Smith et al., 2017.
+**Figure 3.:** Individual in upper left: ZSM 1981/48; upper right: ZSM 1981/87; lower left: ZSM 1981/246; lower right: ZSM 1981/248. Developmental overlap was determined through registration of trace elements as in Smith et al., 2017.
 
 Comparison of the δ18O values in the full datasets of modern Bornean and Sumatran orangutans reveals a high degree of overlap. Values from the three Bornean individuals ranged from 12.7‰ to 20.0‰ (n=955 near weekly measurements), while the three Sumatran individuals ranged from 11.3‰ to 20.6‰ (n=1061 measurements). Comparisons of periodic trends via spectral power distribution analysis revealed more consistent bimodal patterns in the Sumatran individuals; three of the six Bornean molars were aperiodic (statistical power of 0.1 or less), while all six of the Sumatran molars revealed annual or semiannual cycles with greater power (Appendix 1—figure 2). Rapid oxygen isotopic shifts on the order of ~6–8‰ are evident in the single Bornean and Sumatran individuals with δ18O measurements spanning M1 to M3, which may represent one or more supra-annual ENSO events captured during the ~9–11 years these molars were forming.
 
-## Fossil orangutans—oxygen isotopes
+### Fossil orangutans—oxygen isotopes
 
 Concurrently forming teeth (molar specimens 11594.12 and 11595.105) from same individual at Lida Ajer, Sumatra, are nearly isotopically identical; δ18O values range from 15.1‰ to 19.9‰ and 15.7‰ to 20.0‰, respectively, supporting the biogenic fidelity of these records. The δ18O values of two individuals from the nearby Sibrambang site (15.3–20.4‰, 14.7–20.8‰) are very similar to those of the Lida Ajer individual. These Sumatran fossils all fall at the upper end of the range of modern Sumatran orangutans (Figure 4), and reveal approximately annual δ18O periodicities (0.9–1.3 years), as well as strong bimodal distribution patterns in one instance (11565.162).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90217/elife-90217-fig4-v1.jpg)
+
+**Figure 4.:** Violin plots show kernel density estimates representing the distribution of δ18O values in modern individuals (left plot) and in fossil individuals (right plot). Actual δ18O measurements are shown as black circles.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90217/elife-90217-fig4-figsupp1-v1.jpg)
+
 The two fossils from the Niah Caves were excavated from different regions and stratigraphic depths; δ18O values in the tooth from grid US/22 ranged from 15.9‰ to 24.8‰ and, unlike the three modern Bornean individuals, yielded an annual periodicity (1.0 years). The δ18O in the tooth from grid Y/F4 ranged from 14.2‰ to 22.9‰ and showed a stronger bimodal trend than an annual one, although its short formation time may have prohibited identification of longer trends. The range of values from these two fossil molars (14.2–24.8‰) markedly exceeds the range of modern Bornean orangutans (12.7–20.0‰) (Figure 4), with the mean δ18O value at least 2‰ heavier. This suggests possibly drier conditions with greater seasonality during fossil molar formation (Figure 4—figure supplement 1).
 
-## Fossil orangutans—U-series age estimates
+### Fossil orangutans—U-series age estimates
 
 The six fossil teeth have very low uranium concentrations in their enamel (<0.5 ppm), regardless of their origin (Supplementary file 1). These enamel values are very close to the detection limit of the Nu Plasma II MC-ICP-MS, and thus are not useful for estimating minimum ages. The dentine of Lida Ajer specimen 11595.105 shows a spatial gradient of increasing uranium concentration from ~41 to 66 ppm, and decreasing age estimates from ~51 to 40 ka (Supplementary file 1). This trend might result from a preferential uranium leaching overprint near the end of the root. Spot DE10, positioned near the enamel-dentine junction (EDJ), is less likely to be impacted (Appendix 1—figure 3), and is thus assumed to provide the most reliable minimum age for the tooth, ~40 ka. Uranium values from Lida Ajer specimen 11594.12 show a similar trend of concentrations decreasing from ~31 to 24 ppm toward the root tip. However, the U-series age estimates remain constant within the range 31–34 ka across the dentine (Supplementary file 1; Appendix 1—figure 3). No evidence for a recent overprint is observed, supporting a minimum age of 33 ka. In summary, this individual’s age is at least 33 ka, and possibly >40 ka.
 
@@ -98,7 +444,7 @@ The uranium concentration measured across the dentine of the Niah Caves specimen
 
 ## Discussion
 
-## Primate oxygen isotope compositions do not reveal a clear milk enrichment effect
+### Primate oxygen isotope compositions do not reveal a clear milk enrichment effect
 
 Half of our modern sample, and potentially all of our fossil sample, are composed of M1s. These begin forming around birth and continue growing for 3 or more years (Smith, 2016). Orangutan infants rely exclusively on maternal milk during their first year of life, supplementing this with solid foods in the second year, which are increased until suckling ceases prior to 9 years of age (van Noordwijk et al., 2013; Smith et al., 2017). Our developmentally guided sampling approach allows us to examine fine-scaled trends in δ18O values during birth, exclusive nursing, supplemental feeding, and also after nursing ends (in those individuals with available serial molar teeth).
 
@@ -106,7 +452,7 @@ We find that five modern orangutans show only minor and inconsistently elevated 
 
 Comparisons of serially forming teeth in four wild orangutans also fail to show a consistent elevation of δ18O values in M1s versus M2s (or M3s in two cases). Comparisons of M1 δ18O values with subsequent-forming teeth in four baboons, two tantalus monkeys, and one mona monkey (from Green et al., 2022: SI Dataset S1) also largely fail to support the enriched ‘Pattern 1’ trend modeled by Bryant et al., 1996: Figure 4, p. 401. This is also the case in comparisons of δ18O values from bulk samples of human teeth—Wright and Schwarcz, 1999, demonstrated that M1s have higher δ18O values than later-forming teeth in only four of seven individuals. In summary, the data from a range of primates including humans do not support the exclusion of early-forming primate teeth from the assessment of environmental seasonality.
 
-## Modern orangutans show similar isotopic values across the islands of Borneo and Sumatra
+### Modern orangutans show similar isotopic values across the islands of Borneo and Sumatra
 
 The two Bornean juveniles from the Munich collection (ZSM 1981/48, ZSM 1981/87) reflect the environmental conditions of the late 1880s and early 1890s in Skalau—a region where orangutans might now be locally extinct. Similarly, the teeth from the two Sumatran individuals from the Munich collection (ZSM 1981/246, ZSM 1981/248) were collected prior to 1939 in northern Aceh, from where orangutans also have since disappeared (Spehar et al., 2018). While the individuals from northernmost Sumatra might have inhabited somewhat higher elevations than those from western Borneo, there does not appear to be an evident altitude effect (lower isotopic values at higher altitudes), as these four individuals show similar isotopic values, save for a single brief excursion below 12‰ in ZSM 1981/248 (Table 1, Figure 3). It is unknown to what extent local rainfall may have been isotopically distinct at the time the teeth were forming.
 
@@ -118,7 +464,7 @@ Another potential source of isotopic variability derives from dietary variation,
 
 While differences in enamel δ18O values are apparent in comparisons of sympatric arboreal and terrestrial mammals (reviewed in Lowry et al., 2021; Green et al., 2022), it remains to be seen whether primates with broadly similar diets and habitats show meaningful differences in δ18O values, and to what degree plant physiology influences the pattern and amplitude of seasonality relative to rainfall. Oxygen isotope compositions in the six modern individuals from the islands of Borneo and Sumatra are very similar. Orangutans from both islands prefer ripe fruit when available, with some differences in the consumption of bark, leaves, unripe fruits, and insects—which varies between sites and across seasons (reviewed in Smith et al., 2012). Seasonal variation in diets and the stratification of food within the canopy may also contribute to enamel oxygen isotope variation within individuals, in addition to the seasonal rainfall trends we observe in our datasets. Orangutan δ18O values are also quite similar to the δ18O values from five humans from Flores, Indonesia (14.8–21.0‰) dated at ~2.2–3.0 ka (Vaiglova et al., 2024). This is remarkable given the major dietary differences between frugivorous orangutans and omnivorous coastal-dwelling humans, and suggests that their enamel δ18O values are predominantly influenced by regional precipitation.
 
-## Fossil orangutan isotope values suggest different ancient climates in Sumatra and Borneo
+### Fossil orangutan isotope values suggest different ancient climates in Sumatra and Borneo
 
 Dating studies at Lida Ajer have established the presence of the oldest human remains in insular Southeast Asia, ~63–73 ka (Westaway et al., 2017), and a broad survey of the cave has reconfirmed an age of MIS 4 (59–76 ka) for the mammalian fauna (Louys et al., 2022). This is consistent with the minimum age of ~33–40 ka estimated for the two molars examined in the current study. The Sumatran Sibrambang Cave has been regarded as roughly contemporaneous to Lida Ajer given broad faunal similarities (de Vos, 1983). Recent U-series dating of two fossil orangutans from the Sibrambang assemblage yielded minimum ages of >56 ka and >85 ka (Louys et al., 2024), which bracket the apparent U-series minimum ages of ~60–70 ka in the current study. Sibrambang primates appear similar to, or slightly older than, those from Lida Ajer, given the minimum U-series age estimates for teeth from both sites, but this is not definitive given the absence of finite numerical ages for the fossils. Our analysis of δ18O values in Sumatran orangutan fossil molars reveals a close similarity across sites and with modern Sumatran individuals, although the fossil compositions fall at the upper end of the modern range. This may indicate a slightly dryer and less variable climate during the late Pleistocene; elevated tooth δ18O values are also indicative of elevated values in hydrological systems globally, resulting from increased ice volumes in glaciers and at the poles.
 
@@ -130,17 +476,17 @@ Our approach has the potential to contribute to reconstructions of ancient paleo
 
 ## Materials and methods
 
-## Orangutan samples
+### Orangutan samples
 
 Thin (histological) sections of twelve molar teeth from six modern orangutans and six molar teeth from five fossil orangutans were employed (Table 1). These sections were previously prepared for studies of incremental tooth development, enamel thickness, elemental chemistry, and Asian hominoid taxonomy (Smith, 2016; Smith et al., 2011; Smith et al., 2012; Smith et al., 2017; Smith et al., 2018b). Four modern individuals were sourced from the Munich State Anthropological Collection (ZSM): two were collected in 1893–1894 from Skalau (north of the Kapuas River and south of the Klingkang Mountains in eastern West Borneo), and two were collected prior to 1939 from Aceh (northwest Sumatra) (Röhrer-Ertl, 1988: Figure 3, p. 14) (Figure 1). It was not possible to determine from which specific regions or time periods the two other modern individuals derive—collection notes were not available for these specimens from the Harvard Museum of Natural History (MCZ) or the Humboldt Museum (ZMB). Ages at death were determined for five of six individuals from assessments of incremental features and elemental registration of serially forming molars (detailed in Smith, 2016; Smith et al., 2017).
 
 We also studied four Sumatran fossil orangutan teeth that were collected more than a century ago from the Lida Ajer and Sibrambang Caves in the Padang Highlands by Eugene Dubois (de Vos, 1983). Right and left lower molars from Lida Ajer (11594.12, 11595.105) show identical trace element patterns in their dentine (Appendix 1—figure 6), as well as similar occlusal fissure patterns and light wear, consistent with their attribution to the same individual. Two Bornean fossil orangutan teeth from Niah Caves (Malaysia) were also included in this study. The caves have yielded significant late Pleistocene and early Holocene human remains since the Harrissons began excavations in the 1950s (Barker et al., 2007). These lower molars were derived from two different entrances to the cave system, Gan Kira (grid square Y/F4) and Lobang Angus/Hangus (grid square US/22), with burial depths of 12–18″ and 30–36″, respectively (Hooijer, 1961). Although Hooijer, 1948, Hooijer, 1961, identified all six of these fossil teeth as M1s, we regard this as tentative, given that isolated orangutan molars are notoriously difficult to seriate (Grine and Franzen, 1994).
 
-## Dating of fossil samples
+### Dating of fossil samples
 
 Preliminary assessments at the Australian National University Radiocarbon Dating Laboratory confirmed that collagen preservation in the six fossil orangutans was insufficient for radiocarbon dating, a common limitation in tropical environments (e.g. Wood et al., 2016). Laser ablation uranium series (U-series) analyses were carried out on longitudinal sections of teeth at the Radiogenic Isotope Facility of the University of Queensland using an ASI RESOlution SE laser ablation system connected to a Nu Plasma II MC-ICP-MS. A succession of several rasters (<2 min linear ablations) was made in a transect across the dentine and enamel of each tooth (Appendix 1—figures 3–5) following Grün et al., 2014. The 230Th/238U and 234U/238U activity ratios of the samples were normalized to bracketing analyses of a homogeneous rhino tooth standard that has been precisely calibrated by isotope dilution (Grün et al., 2014). Importantly, dental tissues are known to behave as open systems for U-series elements; provided there is no occurrence of uranium leaching, age estimates should therefore be regarded as minimum age constraints since uranium uptake into dental tissues may be significantly delayed after death.
 
-## Tooth formation and oxygen isotope analyses
+### Tooth formation and oxygen isotope analyses
 
 Thin sections were first imaged with transmitted light microscopy. Enamel daily secretion rates were measured between sequential accentuated growth lines to yield the time of formation (see Smith, 2016: Figure 1, p. 94), and enamel extension rates were calculated between accentuated lines to guide placement of the analyzed spots at approximately weekly intervals of growth from the dentine horn tip to the enamel cervix (Smith et al., 2018a; Green et al., 2022). Following the removal of cover slips by immersion in xylene, each thin section was analyzed for δ18O at the SHRIMP Laboratory at the Australian National University according to methods detailed in Vaiglova et al., 2024.
 

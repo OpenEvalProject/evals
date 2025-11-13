@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05k9skc85 Univ. Lille, CNRS, Inserm, CHU Lille, Institut Pasteur de Lille, UMR9020 – UMR1277 - Canther – Cancer Heterogeneity, Plasticity and Resistance to Therapies Lille France
+1. Univ. Lille, CNRS, Inserm, CHU Lille, Institut Pasteur de Lille, UMR9020 – UMR1277 - Canther – Cancer Heterogeneity, Plasticity and Resistance to Therapies Lille France ([ROR:05k9skc85](https://ror.org/05k9skc85))
 
 † Corresponding author
 
@@ -32,6 +32,224 @@ Once the MET receptor interacts with its ligand, it undergoes phosphorylation on
 ## Multiple mechanisms of MET activation in cancer
 
 To date, four main genomic events have been described that lead to MET activation and oncogene-driven tumorigenesis (Duplaquet et al., 2018). First, MET gene amplification or copy number gain (CNG), leading to MET overexpression and its ligand-independent activation, has been identified as responsible for carcinogenesis in several tumour types including glioblastoma (Cancer Genome Atlas Research Network, 2023), lung adenocarcinoma (LUAD) (Collisson et al., 2014), gastric cancer (GC) (Asaoka et al., 2010), colorectal cancer (CRC) (Umeki et al., 1999), and medulloblastoma (Tong et al., 2004). The phenomenon was observed for the first time in gastric carcinoma, where MET overexpression caused by gene amplification led to its activation and to the transformation of several cell lines (Ponzetto et al., 1991). Second, HGF overexpression has been observed in breast, gastric, colon, and lung cancers and leads to aberrant MET activation through establishment of an autocrine loop (Ujiie et al., 2012). The third mechanism, found in a limited number of tumours, is chromosomal rearrangement leading to MET fusion with another gene. This leads notably to constitutive MET activation or overexpression and involves fusions including KIF5B-MET in LUAD and BAIAP2L1-MET and C8ORF34-MET in RCC (Stransky et al., 2014). The fourth type of genomic event responsible for MET activation is MET-activating mutations, which constitute the main focus of this review. Since the first MET mutation was discovered in HPRC in 1997 (Schmidt et al., 1997), many MET mutations have been identified. The majority of MET mutations were found in papillary renal cancer and are located in the tyrosine kinase domain of MET. Over the last decade, however, other mutations have been identified outside the kinase domain. In NSCLC, for instance, missense mutations have been found in the SEMA and JM domains, in addition to a large panel of mutations leading to exon 14 skipping (Tovar and Graveel, 2017; Ma et al., 2005; Ma et al., 2003; Krishnaswamy et al., 2009; Schrock et al., 2016; Figure 1 and Table 1). Despite all the MET mutations already identified, novel MET mutations are constantly being discovered (Sebai et al., 2022).
+
+**Table 1.**
+ Recording of MET mutations found in cancers (Tovar and Graveel, 2017; Ma et al., 2005; Ma et al., 2003; Liu et al., 2015; Jardim et al., 2014; Stella et al., 2011; Jagadeeswaran et al., 2006; Moon et al., 2000; Park et al., 1999; Bahcall et al., 2016).In this table, recording the MET mutations characterized by functional studies, subdomain localization of MET mutations were indicated as well as their sensitivity to hepatocyte growth factor (HGF) stimulation and the cancer type in which they were identified. The type of functional assay performed to identify them as activating mutations is indicated.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Domain</th>
+      <th>Subdomain</th>
+      <th>AA</th>
+      <th>Cancer</th>
+      <th>Functional assay</th>
+      <th>Sensitivity to HGF</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Extracellular</td>
+      <td>SEMA</td>
+      <td>H150Y</td>
+      <td>CUP</td>
+      <td>Anchorage-independent growth assay</td>
+      <td></td>
+      <td>Stella et al., 2011</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>E168D</td>
+      <td>NSCLC, SCLC, BC, CUP</td>
+      <td>BaF3 cells, soft agar colony assay SCLC H446</td>
+      <td></td>
+      <td>Ma et al., 2003</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>N375S</td>
+      <td>NSCLC, SCLC, BC, CRC</td>
+      <td>Cell migration, invasion, and colony-forming assay, tumor growth study after cell xenograft</td>
+      <td></td>
+      <td>Ma et al., 2005; Jardim et al., 2014</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>C385Y</td>
+      <td>CUP</td>
+      <td>Anchorage-independent growth assay</td>
+      <td></td>
+      <td>Stella et al., 2011</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>M431V</td>
+      <td>Malignant pleural mesothelioma (MPM)</td>
+      <td>Cell migration and motility assay</td>
+      <td></td>
+      <td>Jagadeeswaran et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Juxtamembrane</td>
+      <td></td>
+      <td>R988C</td>
+      <td>NSCLC, SCLC</td>
+      <td>BaF3 cells, soft agar colony assay SCLC H446</td>
+      <td></td>
+      <td>Ma et al., 2003; Montagne et al., 2017</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P1009S</td>
+      <td>GC</td>
+      <td>Focus formation NIH3T3</td>
+      <td></td>
+      <td>Lee et al., 2000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>T1010I</td>
+      <td>NSCLC, SCLC, BC, CRC, CUP</td>
+      <td>Focus formation NIH3T3</td>
+      <td></td>
+      <td>Lee et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Kinase N-lobe</td>
+      <td></td>
+      <td>H1086L</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Sebai et al., 2022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P-Loop</td>
+      <td>I1102T</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Sebai et al., 2022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P-Loop</td>
+      <td>N1118Y</td>
+      <td>Metastasis</td>
+      <td>Cell migration and invasion assay</td>
+      <td>Yes</td>
+      <td>Lorenzato et al., 2002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P-Loop</td>
+      <td>C1125G</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Sebai et al., 2022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>P-Loop</td>
+      <td>L1130S</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Sebai et al., 2022</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>M1149T</td>
+      <td>HPRC/SPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Kinase C-lobe</td>
+      <td></td>
+      <td>V1206L</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>L1213V</td>
+      <td>SPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Activation Loop (1231–1262)</td>
+      <td>V1238I</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Activation Loop (1231–1262)</td>
+      <td>D1246N/H/V</td>
+      <td>HPRC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999; Bahcall et al., 2016</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Activation Loop (1231–1262)</td>
+      <td>Y1248C/D/H</td>
+      <td>HPRC, SPRC, OSCC, HNSCC</td>
+      <td>Focus formation NIH3T3</td>
+      <td>Yes</td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Activation Loop (1231–1262)</td>
+      <td>Y1253D</td>
+      <td>OSCC, HNSCC, BC</td>
+      <td>Focus formation NIH3T3</td>
+      <td></td>
+      <td>Jeffers et al., 1997; Bardelli et al., 1998; Liu et al., 2015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>COOH-terminal lobe of the kinase domain</td>
+      <td>M1268T/I</td>
+      <td>HPRC, SPRC, HCC</td>
+      <td>Focus formation NIH3T3</td>
+      <td></td>
+      <td>Jeffers et al., 1997; Michieli et al., 1999</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>V1312I</td>
+      <td>CUP</td>
+      <td>Anchorage-independent growth assay</td>
+      <td></td>
+      <td>Stella et al., 2011</td>
+    </tr>
+  </tbody>
+</table>
 
 ## MET kinase domain mutations in papillary renal cancer
 
@@ -89,6 +307,10 @@ Over the last few years and as a consequence of the efficacy of MET TKIs in pati
 
 The following mutated amino acids have been clinically described after treatment with a MET TKI in patients harbouring MET exon 14 skipping mutations: H1112, G1181, L1213, F1218, D1246, and Y1248, which usually emerge after only a few months of treatment with crizotinib, glesatinib, or capmatinib (Figure 3A and B; Awad et al., 2018; Dong et al., 2016; Guo et al., 2019; Heist et al., 2016; Jin et al., 2019; Li et al., 2017; Ou et al., 2017; Recondo et al., 2020; Rotow et al., 2018; Zhang et al., 2017). The presence of multiple mutations in the kinase domain has also been observed (Awad et al., 2018; Li et al., 2017; Recondo et al., 2020; Rotow et al., 2018; Dong et al., 2016). For example, D1246N/H has been found with Y1248H (Dong et al., 2016) and G1181R can be present with L1213V, D1246H/N, and Y1248H/S (Recondo et al., 2020) in a patient’s circulating DNA.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92762/elife-92762-fig3-v1.jpg)
+
+**Figure 3.:** (A) Upon treatment of MET exon 14 skipping NSCLC patients with a type I MET TKI (able to bind the active form of MET kinase) or a type II MET TKI (able to bind the inactive form of MET kinase), secondary resistance mutations were identified. Some of them (*) were already known as activating mutations in papillary renal cancer. Note that the amino acid positions are annotated from MET transcript variant NM_000245.3 (Schmidt et al., 1997; Tovar and Graveel, 2017). (B) Secondary activating MET mutations were placed on the 3D structure of the MET kinase domain, along with crizotinib (https://doi.org/10.2210/pdb2WGJ/pdb) or merestinib (https://doi.org/10.2210/pdb4EEV/pdb). MET mutations were inserted into the raw PDB data for MET (Research Collaboratory for Structural Bioinformatics Protein Data Bank DOI: 10.2210/pdb2WGJ/pdb and 10.2210/pdb4EEV/pdb).
+
 In the recent study of Recondo et al., among 20 patients with MET exon 14-skipping mutations who showed resistance to a MET TKI, seven (35%) displayed on-target resistances due to MET mutations, the other resistances being off-target ones (Recondo et al., 2020).
 
 Most of the MET mutations recently found associated with resistance to TKIs were already known as MET-activating mutations, notably in renal cancer (Jeffers et al., 1997; Jeffers and Vande Woude, 1999; Maritano et al., 2000). Detection of these mutations in tumours suggests that they may play a direct role in resistance through ligand-independent MET activation.
@@ -97,7 +319,7 @@ Resistance to MET TKIs has also been investigated in cell models displaying MET 
 
 On-target resistance has also been described in the context of MET gene amplification. A case report describes a patient with an initial EGFR-activating mutation, who developed primary resistance to an EGFR TKI through MET amplification (Bahcall et al., 2016). Co-treatment with an EGFR TKI and the MET TKI savolitinib led to a dramatic positive clinical response, but after several months of co-treatment, the patient experienced a relapse associated with detection of an additional MET D1246V mutation, previously described as an activating mutation (Jeffers et al., 1997). In the same study, interestingly, the authors demonstrated with reconstituted MET mutations in cell lines that the D1246V mutant is resistant to type I TKIs (including savolitinib), but not to type II MET inhibitors. This finding led to adapting the treatment: the EGFR TKI was used with cabozantinib, a type II MET TKI. To this treatment, the progressive lung disease responded very well (Bahcall et al., 2016). In a recent study on patients displaying MET gene amplification (following or not treatment with EGFR TKI), treatments with various TKIs led to the appearance of potential resistance mutations, including substitutions at D1246 and Y1248. Interestingly, similar mutations have been found in the context of exon 14 skipping (Yao et al., 2023), suggesting that at least the main on-target resistances are common between the WT MET receptor and the METex14Del variant.
 
-## Conclusion
+### Conclusion
 
 MET mutations are viewed as drivers if functional data have demonstrated their ability to induce cell transformation and/or experimental tumour growth. To date, several dozen different residues are known to be affected by amino acid substitutions leading to MET activation. Such mutations were first found in the kinase domain and recorded mainly in renal cancers. They lead to kinase domain activation and to induction of downstream intracellular pathways contributing to cell transformation. In various other cancers, other amino acid substitutions have been described within the extracellular domain and the regulatory juxtamembrane domain, but their mechanisms of action remain elusive. The vast majority of MET mutations recorded in lung cancer, in contrast to renal cancer, lead to exon 14 skipping: about 160 different mutations having been recorded (; Ma et al., 2003; Schrock et al., 2016; Frampton et al., 2015; Lee et al., 2017). Mutations leading to amino acid substitutions within the MET kinase have also been found, but to our knowledge none of them have been identified as activating mutations. Thus, although both types of mutation lead to MET receptor activation, their strict differential distribution among cancers (kinase domain for renal cancer and MET exon 14 for NSCLC) suggests that specific organ contexts favour specific transformation mechanisms. For example, it has been shown that METex14Del, in contrast to kinase-domain-mutated MET variants, induces sustained downstream signalling, including RAS-ERK signalling, well known to be activated in lung cancer. In addition, exon 14 skipping leads to loss of the caspase regulatory site and hence to resistance to apoptosis, a property that could also favour tumorigenesis in the lung. An in-depth description of the downstream signalling, transcriptional programs, and biological responses induced by MET kinase mutations and exon 14 skipping would be important in understanding the organ distribution of these MET alterations.
 

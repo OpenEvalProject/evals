@@ -11,19 +11,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Department of Anthropology, Princeton University Princeton United States
-2. https://ror.org/051m4vc48 Department of Anthropology, Appalachian State University Boone United States
-3. https://ror.org/04m01e293 Department of Archaeology, University of York York United Kingdom
-4. https://ror.org/03rp50x72 Centre for the Exploration of the Deep Human Journey, School of Anatomical Sciences, University of the Witwatersrand Johannesburg South Africa
-5. https://ror.org/01y2jtd41 Department of Anthropology, University of Wisconsin Madison United States
-6. https://ror.org/04bqh5m06 The National Geographic Society Washington DC United States
-7. https://ror.org/04jr01610 The Carnegie Institution for Science Washington DC United States
+1. Department of Anthropology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+2. Department of Anthropology, Appalachian State University Boone United States ([ROR:051m4vc48](https://ror.org/051m4vc48))
+3. Department of Archaeology, University of York York United Kingdom ([ROR:04m01e293](https://ror.org/04m01e293))
+4. Centre for the Exploration of the Deep Human Journey, School of Anatomical Sciences, University of the Witwatersrand Johannesburg South Africa ([ROR:03rp50x72](https://ror.org/03rp50x72))
+5. Department of Anthropology, University of Wisconsin Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+6. The National Geographic Society Washington DC United States ([ROR:04bqh5m06](https://ror.org/04bqh5m06))
+7. The Carnegie Institution for Science Washington DC United States ([ROR:04jr01610](https://ror.org/04jr01610))
 
 † Corresponding author
 
 ## Abstract
 
-Explorations in the Dinaledi Subsystem of the Rising Star cave system have yielded some of the earliest evidence of a mortuary practice in hominins. Because the evidence is attributable to the small-brained Homo naledi , these analyses call into question several assumptions about behavioral and cognitive evolution in Pleistocene hominins. The evidence from the Dinaledi Subsystem, and at other locations across the Rising Star cave system may widen the phylogenetic breadth of mortuary, and possibly funerary, behaviors. These discoveries may also associate the creation of meaning-making and increased behavioral complexity with a small-brained hominin species, challenging certain assertions about the role of encephalization and cognition in hominin and human evolution. We suggest that the hominin socio-cognitive niche is more diverse than previously thought. If true, technological, meaning-making activities, and cognitive advances in human evolution are not associated solely with the evolution of larger-brained members of the genus Homo .Evidence for complex behaviors associated with a small-brained hominin suggests that large brains are not solely responsible for the manifestation of human-like behavioral complexity.
+Explorations in the Dinaledi Subsystem of the Rising Star cave system have yielded some of the earliest evidence of a mortuary practice in hominins. Because the evidence is attributable to the small-brained Homo naledi, these analyses call into question several assumptions about behavioral and cognitive evolution in Pleistocene hominins. The evidence from the Dinaledi Subsystem, and at other locations across the Rising Star cave system may widen the phylogenetic breadth of mortuary, and possibly funerary, behaviors. These discoveries may also associate the creation of meaning-making and increased behavioral complexity with a small-brained hominin species, challenging certain assertions about the role of encephalization and cognition in hominin and human evolution. We suggest that the hominin socio-cognitive niche is more diverse than previously thought. If true, technological, meaning-making activities, and cognitive advances in human evolution are not associated solely with the evolution of larger-brained members of the genus Homo.Evidence for complex behaviors associated with a small-brained hominin suggests that large brains are not solely responsible for the manifestation of human-like behavioral complexity.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Currently, a broad set of data demonstrates that some of these complex behaviors
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/89125/elife-89125-fig1-v1.jpg)
 
-**Figure 1.:** Dots represent different sites and the error bars are the maximum and minimum dates when available. This table is a sampling of archaeological sites that have been suggested to show signs of what some call ‘symbolic behavior.’ Delimitating what is and what is not symbolic has been the source of contention for many decades now (Habgood and Franklin, 2008; Mcbrearty and Brooks, 2000; Wadley, 2001; Hopkinson, 2013; Deacon, 1997; Anderson, 2012). Traditionally, archaeologists have defined symbols as objects that have meanings embedded in them. Yet a symbol, by its very nature, must be interpreted within a system of meaning and discerning if something is symbolic becomes difficult without knowing the cultural context within which it has been created (Kissel and Fuentes, 2017). We created this table from the published literature to demonstrate that no matter what we choose to call it, culturally-mediated behaviors predate contemporary humans. Such behaviors are found with Homo erectus (Joordens et al., 2014), Neandertals (Radovčić et al., 2015) and other archaic populations (d’Errico and Nowell, 2000; Sirakov et al., 2010; Li et al., 2019). Data is taken from Jaubert et al., 2016; Chazan and Horwitz, 2009; Martí et al., 2021; Li et al., 2019; Sirakov et al., 2010; Joordens et al., 2014; Mania and Mania, 1988; Texier et al., 2013; Radovčić et al., 2016; Hovers et al., 1997; Raynal and Seguy, 1986; Bednarik, 2006; Bischoff et al., 2007; Ronen, 1976; Pettitt, 2002; Vandermeersch and Bar-Yosef, 2019; Toro-Moyano et al., 2013; d’Errico and Nowell, 2000; Bednarik, 1998; Bednarik, 2003; Radovčić et al., 2015; Clark and Kurashina, 1979; Ronen et al., 1998; Watts et al., 2016; Roebroeks et al., 2012; Bednarik, 2005; d’Errico et al., 2009; Wadley et al., 2020; Deino and McBrearty, 2002; Berger et al., 2023a; and Berger et al., 2023b.Figure 1—source data 1.Figure 1.
+**Figure 1.:** Dots represent different sites and the error bars are the maximum and minimum dates when available. This table is a sampling of archaeological sites that have been suggested to show signs of what some call ‘symbolic behavior.’ Delimitating what is and what is not symbolic has been the source of contention for many decades now (Habgood and Franklin, 2008; Mcbrearty and Brooks, 2000; Wadley, 2001; Hopkinson, 2013; Deacon, 1997; Anderson, 2012). Traditionally, archaeologists have defined symbols as objects that have meanings embedded in them. Yet a symbol, by its very nature, must be interpreted within a system of meaning and discerning if something is symbolic becomes difficult without knowing the cultural context within which it has been created (Kissel and Fuentes, 2017). We created this table from the published literature to demonstrate that no matter what we choose to call it, culturally-mediated behaviors predate contemporary humans. Such behaviors are found with Homo erectus (Joordens et al., 2014), Neandertals (Radovčić et al., 2015) and other archaic populations (d’Errico and Nowell, 2000; Sirakov et al., 2010; Li et al., 2019). Data is taken from Jaubert et al., 2016; Chazan and Horwitz, 2009; Martí et al., 2021; Li et al., 2019; Sirakov et al., 2010; Joordens et al., 2014; Mania and Mania, 1988; Texier et al., 2013; Radovčić et al., 2016; Hovers et al., 1997; Raynal and Seguy, 1986; Bednarik, 2006; Bischoff et al., 2007; Ronen, 1976; Pettitt, 2002; Vandermeersch and Bar-Yosef, 2019; Toro-Moyano et al., 2013; d’Errico and Nowell, 2000; Bednarik, 1998; Bednarik, 2003; Radovčić et al., 2015; Clark and Kurashina, 1979; Ronen et al., 1998; Watts et al., 2016; Roebroeks et al., 2012; Bednarik, 2005; d’Errico et al., 2009; Wadley et al., 2020; Deino and McBrearty, 2002; Berger et al., 2023a; and Berger et al., 2023b.
 
 There is substantive evidence that approximately 250–350,000 years ago, Homo naledi, a small-brained hominin, transported deceased conspecifics into difficult to access locations in the Rising Star Cave system in what would, in humans, be described as a mortuary behavior (Berger et al., 2025a). The use of deep areas of the Rising Star cave system for these behaviors implies considerable social collaboration, coordination, and planning. In the context of the subterranean Dinaledi Subsystem, these activities likely also required a light source, again implicating a depth of planning and coordination. What stands out as a possible contradiction is that Homo naledi fossil crania are small. With endocranial volumes ranging between 450 ml and 610 ml, this species overlaps in brain size with australopithecines, having smaller brains on average than Homo erectus and much smaller than modern humans or Neanderthals (See Figure 2 and section Reconsidering brain size).
 
@@ -43,7 +43,7 @@ There is substantive evidence that approximately 250–350,000 years ago, Homo n
 
 The information from H. naledi cannot be considered in isolation; it joins the broad array of data for meaning-making in Pleistocene hominins (Kissel and Fuentes, 2018; Kissel and Fuentes, 2021; Malafouris, 2013, Colagè and d’Errico, 2025). These behaviors reflect social groups that maintained solidarity, social coordination, and cooperation in a mode not evident in living great apes but characteristic of contemporary humans. Here, we offer an analysis of the reported complex behavior in the small-brained Homo naledi and suggest a suite of implications this has for our understanding of the relationships between brain size, cognition, complex behavior, and the evolution of the genus Homo across the Pleistocene. These implications also query the driving forces behind encephalization and its relationship to the emergence of complex behaviors in hominins and other animals (see Tattersall, 2023).
 
-## Mortuary behavior as meaning-making
+### Mortuary behavior as meaning-making
 
 Mortuary behavior has been defined as actions by individuals relating to the death of other individuals. Many kinds of non-human animals have been observed to engage in mortuary behavior upon the death of another individual in the same social group (Piel and Stewart, 2015; Gonçalves and Carvalho, 2019; Pettitt and Anderson, 2020). Mortuary behavior may include the manipulation, inspection, or movement of dead bodies or body parts, or modifying behavior in proximity to dead or dying individuals. Species which manifest strong emotional bonds between individuals, including many primates, elephants, and cetaceans, may continue to interact with a corpse for a period of time after the individual’s death. Many such examples involve mothers who continue to carry a dead infant, often for up to a week after death (Goodall, 1977; Boesch and Boesch-Acherman, 2000; Biro et al., 2010; Fashing et al., 2011), and in some cases other individuals such as unrelated males have been observed to carry or interact with dead infants (Merz, 1978). Species with strong social bonds often exhibit emotional responses to dead or dying individuals, ranging from surprise and fear to prolonged grief (King, 2013). Cannibalism is also a form of mortuary behavior observed in some non-human primates.
 
@@ -53,7 +53,7 @@ There are clear differences between the mortuary behavior repertoire of humans a
 
 To the extent that human behaviors surrounding death are different from non-human primates, those differences reflect primarily two mechanisms. One dynamic underlying human mortuary behavior is the shared, learned cultural traditions concerning death. These traditions vary extensively across human cultures and may include an understanding of the permanence of death, religious beliefs and practices concerning death, and scientific and practical knowledge about the causes of death. When anthropologists examine funerary practices, they often describe this kind of cultural knowledge (Engelke, 2019; Silverman et al., 2021). Another dynamic involved is an evolved emotional cognition, including emotional self-awareness and regulation. In human cultures, these two dynamics are interconnected: religious rituals help grieving individuals by providing social support for emotional regulation and for processing and resolving relational trauma. Superficially similar instances of mortuary behavior in different cultures or species may sometimes involve different proximate mechanisms. For example, ritual and funerary behavior both involve the learned repetition of behavioral and emotional states (Pettitt, 2018; Silverman et al., 2021). In effect, a shared capacity for culture integrates with complex emotional cognition, involving a depth of emotional bonds, capacities for emotional commitments (which necessarily come alongside grief at loss, and a need to process relational trauma), and complex emotional regulation. Both have been practiced by people with entirely different or even incommensurable cultural traditions concerning death, which differ widely, yet fulfil similar emotional needs. Hence, the interpretation of physical evidence for mortuary behavior should consider the range of cultural and cognitive mechanisms that may be at play and how they interact, which may give rise to different equally plausible explanations for the pattern of evidence.
 
-## Rising star evidence and context
+### Rising star evidence and context
 
 The findings from the Rising Star system strongly support a scenario where members of the H. naledi community carried the bodies of dead conspecifics to more than 30 meters below the surface, over more than 80 meters of underground passages in a difficult and dangerous subterranean environment (Berger et al., 2025a; Elliott et al., 2021; van Rooyen et al., 2025). The available evidence demonstrates some aspects of mortuary behavior manifested by H. naledi. Multiple lines of material evidence show that corpses were manipulated, both at the time of death and afterwards. The distribution of skeletal parts across the Dinaledi Subsystem could not have arisen from deposition at a single point of entry to the subsystem with gravity-driven movement of bodies or bones (Berger et al., 2025a; van Rooyen et al., 2025). Both the spatial arrangements of skeletal material and the form and composition of sediments rule out water flow or mud flow as mechanisms for transport (Dirks et al., 2015; Wiersma et al., 2020; Brophy et al., 2021; Berger et al., 2025a). Movement of remains by Homo naledi is the current best hypothesis for the emplacement of bodies or remains. The rapid emplacement of some bodies into sediment prior to decomposition and continued support by sediment through the process of decomposition, together with evidence of disruption of surrounding sediment layering, all suggest that some bodies were interred within shallow holes and covered before soft tissue decomposition occurred (Berger et al., 2025a). Some bodies were manipulated after deposition, as evidenced by the selective reworking of the Puzzle Box area of the Dinaledi Chamber, leading to fragmentation of some skeletal elements, disaggregation of body parts, and commingling of elements from different individuals (Berger et al., 2025a). The presence of young children and infants within the sample likely also reflects the manipulation of bodies by other, presumably older, individuals (Berger et al., 2025a, Delezene et al., 2024).
 
@@ -73,7 +73,288 @@ Some form of mortuary behavior by H. naledi is a supported hypothesis (Berger et
 
 In addition to the above, the locations, contexts, and the inferred behavior associated with the H. naledi remains most likely demonstrate shared meaning-making activity (Kissel and Fuentes, 2017, Kissel and Fuentes, 2018). Certainly, if the remains are post-depositionally reworked, and/or do represent burials, and one accepts the correlational association, and validity, of engravings near the interment sites with H. naledi (e.g. Berger, 2025b), they do. But even if one only accepts the transport to and placement of bodies in the Dinaledi Chamber and Hill Antechamber locations (and the Lesedi Chamber, Hawks et al., 2017; Berger et al., 2025a) there remains a robust argument for mortuary behavior and the assignation of shared meaning to it. Most documented mortuary and funerary practices have been attributed to Homo sapiens and Neanderthals, and aside from the Sima de los Huesos site (Carbonell and Mosquera, 2006) and Dinaledi, most such evidence is later in the Pleistocene (Figure 1 and Table 1). Evidence of funerary behavior is generally assumed to require human-like cognitive capability (Pettitt, 2018). If such behavior is indeed present in a small-brained hominin, it suggests that increases in brain size/EQ are not a necessary precursor for the appearance of complex meaning-making behavior in hominins.
 
-## A role for emotional cognition?
+**Table 1.**
+ Table of evidence of potential mortuary behavior in hominins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Site</th>
+      <th>Type of site</th>
+      <th>Multiple bodies</th>
+      <th>Type</th>
+      <th>Skeletal age of specimen(s)</th>
+      <th>Age Estimate (in ka)</th>
+      <th>Species</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Krems-Wachtberg</td>
+      <td>open air</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>infants</td>
+      <td>31</td>
+      <td>Homo sapiens</td>
+      <td>Teschler-Nicola et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Lake Mungo</td>
+      <td>open air</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>adults</td>
+      <td>40</td>
+      <td>Homo sapiens</td>
+      <td>Bowler et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Taramsa hills</td>
+      <td>open air</td>
+      <td>no</td>
+      <td>burial</td>
+      <td>child (8–10 yrs old)</td>
+      <td>45</td>
+      <td>Homo sapiens</td>
+      <td>Vermeersch et al., 1998</td>
+    </tr>
+    <tr>
+      <td>La Ferrasie</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>children?</td>
+      <td>45</td>
+      <td>Neandertal</td>
+      <td>Gómez-Olivencia et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Shanidar</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>adults, infants, 2–3 yr old</td>
+      <td>45</td>
+      <td>Neandertal</td>
+      <td>Pomeroy et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Mezmaiskaya Cave,</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>burial</td>
+      <td>infant</td>
+      <td>45</td>
+      <td>Neandertal</td>
+      <td>Golovanova et al., 1999</td>
+    </tr>
+    <tr>
+      <td>La Chapelle-aux-Saints 1</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>burial</td>
+      <td>adult</td>
+      <td>50</td>
+      <td>Neandertal</td>
+      <td>Rendu et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Dederiyeh Cave,</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>children</td>
+      <td>50</td>
+      <td>Neandertal</td>
+      <td>Akazawa et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Régourdou Cave</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>burial</td>
+      <td>adult</td>
+      <td>50</td>
+      <td>Neandertal</td>
+      <td>Maureille et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Kebara</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>child and adult</td>
+      <td>55</td>
+      <td>Neandertal</td>
+      <td>Pettitt, 2011</td>
+    </tr>
+    <tr>
+      <td>Amud</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>infant and adults</td>
+      <td>60</td>
+      <td>Neandertal</td>
+      <td>Hovers et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Roc de Marsal</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>Burial?</td>
+      <td>child</td>
+      <td>70</td>
+      <td>Neandertal</td>
+      <td>Maureille and Knüsel, 2022</td>
+    </tr>
+    <tr>
+      <td>Panga ya Saidi</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>burial</td>
+      <td>2.5–3 yrs old</td>
+      <td>78</td>
+      <td>Homo sapiens</td>
+      <td>Martinón-Torres et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Qafzeh</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>children and adults</td>
+      <td>100</td>
+      <td>Homo sapiens</td>
+      <td>Vandermeersch and Bar-Yosef, 2019</td>
+    </tr>
+    <tr>
+      <td>Skhul</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>adults and children</td>
+      <td>110</td>
+      <td>Homo sapiens</td>
+      <td>Ronen, 1976</td>
+    </tr>
+    <tr>
+      <td>Tabun</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>adult (maybe neonate?)</td>
+      <td>120</td>
+      <td>Neandertal</td>
+      <td>Pettitt, 2002</td>
+    </tr>
+    <tr>
+      <td>Border Cave</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>burial</td>
+      <td>adult and infants</td>
+      <td>74</td>
+      <td>Homo sapiens</td>
+      <td>d’Errico and Backwell, 2016</td>
+    </tr>
+    <tr>
+      <td>Sima de los huesos</td>
+      <td>pit</td>
+      <td>yes</td>
+      <td>caching/mortuary behavior</td>
+      <td>adults and children</td>
+      <td>500</td>
+      <td>Neandertal</td>
+      <td>Bischoff et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Moula-Guercy</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adults and children</td>
+      <td></td>
+      <td></td>
+      <td>Defleur et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Herto</td>
+      <td>open air</td>
+      <td>no</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adult</td>
+      <td>160</td>
+      <td>Homo sapiens</td>
+      <td>White et al., 2003</td>
+    </tr>
+    <tr>
+      <td>El Sidron</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adults and children</td>
+      <td>480</td>
+      <td>Neandertal</td>
+      <td>Rosas et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Bodo</td>
+      <td>open air</td>
+      <td>no</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adult</td>
+      <td>600</td>
+      <td>Homo sapiens</td>
+      <td>White, 1986</td>
+    </tr>
+    <tr>
+      <td>Gran Dolina</td>
+      <td>cave</td>
+      <td>na</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adult and children</td>
+      <td>800</td>
+      <td>Homo sapiens</td>
+      <td>Fernández-Jalvo et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Sterkfontein</td>
+      <td>cave</td>
+      <td>no</td>
+      <td>modification/mortuary behavior?</td>
+      <td>adult</td>
+      <td>1635</td>
+      <td>Australopithecus</td>
+      <td>Pickering et al., 2000</td>
+    </tr>
+    <tr>
+      <td>Krapina</td>
+      <td>cave</td>
+      <td>yes</td>
+      <td>mortuary behavior</td>
+      <td>many age ranges</td>
+      <td>130</td>
+      <td>Neandertal</td>
+      <td>Russell, 1987</td>
+    </tr>
+    <tr>
+      <td>AL-333</td>
+      <td>open air</td>
+      <td>yes</td>
+      <td>mortuary behavior?</td>
+      <td>adults, juveniles and infants</td>
+      <td>3200</td>
+      <td>Australopithecus afarensis</td>
+      <td>Pettitt, 2011</td>
+    </tr>
+  </tbody>
+</table>
+
+### A role for emotional cognition?
 
 The achievement of social collaboration and social solidarity in humans relies upon emotional cognition and emotional regulation. A broad array of data supports the hypothesis that emotional regulation and self-awareness were prerequisites of human social behaviors involving solidarity and cooperation, including cultural learning, language, and provision of extended care (Spikins et al., 2019).
 
@@ -89,7 +370,7 @@ That complex emotional cognition is not unique to Homo sapiens should not be sur
 
 The anatomical data alone do not answer when human-like emotional self-awareness and emotional regulation first evolved. Some have suggested that hominins would have been under selection for these traits early in their evolutionary history because of the need for cooperating, cohesive groups in open habitats with high predation (Turner, 2014). Others have suggested that such behavior is a hallmark of the genus Homo, or that abilities such as technical learning or the routine use of fire (Twomey, 2019) could only have been manifested in species with emotional cognition that was similar in ways to recent humans. Green and Spikins, 2020 specifically pointed to several aspects of Early Stone Age artifacts like Acheulean handaxes as possible indicators of self-control, including inhibition and conscious regulation of emotions. The reported H. naledi behavioral activities may have depended on emotional commitments to others combined with a set of cultural beliefs/practices, a high level of emotional awareness to manage these, and in turn, collaboration with extensive coordination.
 
-## Homo naledi behavior in a broader perspective
+### Homo naledi behavior in a broader perspective
 
 The behavior patterns manifested in the Rising Star cave system have a distinctive place within a broader global context of mortuary behavior. The repeated mortuary behavior involving more than 30 individuals from Sima de los Huesos, Spain, is substantially earlier than evidence from the Dinaledi Subsystem (Carbonell and Mosquera, 2006; Arsuaga et al., 2014; Vives, 2015; Sala et al., 2024). Cutmarks on hominin individuals such as the Bodo 1 skull from Bodo, Ethiopia, and the StW 53 skull from Sterkfontein, South Africa, may result from even earlier mortuary activity by hominins (White, 1986; Pickering et al., 2000). In the case of StW 53, the evidence is associated with a skull that many researchers attribute to Australopithecus, although the claim of hominin-produced cutmarks has been disputed (Hanon et al., 2018). Curation of hominin skeletal remains was part of mortuary behavior at Herto, Ethiopia, before 160,000 years ago (White et al., 2003; Clark et al., 2003). Archaeological evidence of mortuary behavior becomes increasingly common in later contexts, and within the Late Pleistocene, burials and other kinds of funerary behavior have been attributed to both modern humans and Neanderthals. Within this broader pattern, the Rising Star evidence stands out in two ways: the early possible occurrence of burials (Berger et al., 2025a; Dirks et al., 2015), and the position of H. naledi as a phylogenetic outgroup when compared to modern humans and Neanderthals (Dembo et al., 2016; Argue et al., 2017; Caparros and Prat, 2021).
 
@@ -103,7 +384,7 @@ Use of ochre and other pigments is another category of behavior linked to meanin
 
 This pattern of evidence shows that H. naledi and other populations of the genus Homo overlap temporally in the expression of meaning-making behavior. The material evidence indicates some degree of shared socioemotional and cognitive processes. Middle Pleistocene hominins varied in brain sizes and cranial and post-cranial morphologies, and many of these varied populations share increased evidence for meaning-making (Figure 1). Such behavior is neither ‘modern’ nor exclusive to larger-brained Homo sapiens (and Neanderthals). Whilst this adds further evidence to our understanding of the emergence of hominin cognition, there are also wider evolutionary implications. Much like the evolution of social-emotional abilities in other primates (Nieuwburg et al., 2021), the behavioral evidence for small-brained H. naledi may suggest that some degree of analogous and homologous, evolution underlies social emotional complexity in humans.
 
-## Reconsidering brain size
+### Reconsidering brain size
 
 Since the nineteenth century, ideas about the evolution of human behavior have tended to emphasize that larger brains evolved to enable more complex behavior. In the most general sense, this is surely correct. Large brains are expensive to maintain and grow (Isler and Schaik, 2009). Considering these costs, the large brain sizes manifested in some hominin lineages would not have evolved if they were not reliably correlated with survival or reproduction. It is often assumed that a large brain was an essential step towards a uniquely human cognition, social relationships, and culture (Dunbar, 2003; Muthukrishna et al., 2018). Several hominin lineages during the Pleistocene did experience evolution of larger overall and relative brain size, as measured by endocranial volume (Figure 2) and body size. Nothing in the Pleistocene behavioral record refutes the basic idea that such lineage-specific increases in brain size evolved alongside some behavioral adaptations.
 
@@ -113,6 +394,6 @@ It is also important to be precise about what the small sample of fossils really
 
 Different hominin lineages manifested differences in brain organization, and these do not always correspond to changes in brain size (Holloway et al., 2018; Hurst, 2017; Hurst et al., 2024; Ponce de León et al., 2021). Endocast evidence from across the genus Homo suggests that humanlike frontal cortex development and morphology occurs across a broader array of species than large brain size (Falk et al., 2005; Holloway et al., 2018; Ponce de León et al., 2021). Homo floresiensis and Homo naledi both share some humanlike aspects of frontal lobe organization, while they both have brain sizes within the range of Australopithecus (Falk et al., 2005; Holloway et al., 2018; Hurst et al., 2024). Early Homo erectus is argued to be polymorphic in frontal lobe organization (Ponce de León et al., 2021), and as noted above, many fossil crania attributed to this species have endocranial volumes smaller than 650 ml (Lordkipanidze et al., 2013; Ponce de León et al., 2021; Herries et al., 2020; Semaw et al., 2020).
 
-## Looking forward
+### Looking forward
 
 The initial rise of complex social behaviors in hominins may have been fueled by evolution of emotional cognition alongside other cognitive processes. Meaning-making by hominins includes a variety of categories of behavior that are joined together by the role of shared intention, repetition, and social collaboration. Mortuary behavior is one of these. Varied expressions of mortuary behavior are present in other social mammals, and hominins are distinct in the extent of repetition, social collaboration, and shared meaning in the process. Rather than relying on increased encephalization and its relation to complex behavior as a Cognitive Rubicon in human evolution (see Meneganzin and Currie, 2022), we suggest that a distinctive cultural, empathetic, collaborative niche dependent on increasingly complex and robust relationships between individuals has also been a primary driver in the development of key aspects of human, or human-like, behavior (Galway‐Witham et al., 2019; Mcbrearty and Brooks, 2000; Kissel and Fuentes, 2021; Fuentes, 2017; Spikins, 2022; DeCasien et al., 2022). The increasing data for complex behavior and meaning-making across the Pleistocene should play a major element in structuring how we investigate, explain, and model the origins and patterns of hominin and human evolution (Kissel and Fuentes, 2021; Spikins, 2022; Spikins et al., 2019). The current evidence for H. naledi in the Rising Star system pushes back the origins of mortuary, and possibly funerary behaviors, challenges our assumptions about the role and importance of encephalization in human evolution, and suggests that the hominin emotional, socio-cognitive niche is more significant than previously thought.

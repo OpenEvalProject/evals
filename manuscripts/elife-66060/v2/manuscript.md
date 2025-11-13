@@ -46,25 +46,57 @@ Here, we characterize Rab25, an epithelial specific membrane recycling protein t
 
 ## Results
 
-## Fluorescently tagged Rab25 localizes near the plasma membrane, centrosomes and cytokinetic midbody
+### Fluorescently tagged Rab25 localizes near the plasma membrane, centrosomes and cytokinetic midbody
 
 In zebrafish, rab25a and rab25b transcripts are maternally deposited and their levels increase during gastrulation (https://www.ebi.ac.uk/gxa/home). Whole-mount in situ hybridization revealed ubiquitous expression of both genes in the blastoderm prior to epiboly initiation, followed by EVL restricted expression during epiboly (Figure 1A). No expression was detected using sense control probes (Figure 1—figure supplement 1A). EVL expression is consistent with reported epithelial-specific function of Rab25 in mammals (Goldenring et al., 1993).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig1-v2.jpg)
+
+**Figure 1.:** (A) Bright field images of whole-mount in situ hybridizations for rab25a (top row) and rab25b (bottom row), in WT embryos; lateral views with animal pole positioned to the top. (A’) Section of a WT embryo showing rab25a expression restricted to the EVL (arrow, top row far right panel); transcripts absent from the deep cells (DEL) and yolk cell (YC). (B) Confocal z-projections of Venus-Rab25a and eGfp-Rab25b subcellular localization in WT embryos; red arrowheads denote perinuclear aggregates. Scale bar 20 μm. (C) Confocal z-projections of stills from time-lapse movies of transgenic Tubulin-GFP (green) embryos expressing mCherry-Rab25b (magenta). Arrowheads denote co-localization of mCherry-Rab25b at centrosomes. Scale bar 20 μm. (D) Confocal z-projections of eGfp-Rab25b (white) and mCherry-Mklp1 (teal) localization in WT embryos; box highlights enrichment of eGfp-Rab25b adjacent to the midbody. Scale bar 20 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Lateral views of WT embryos at 6hpf hybridized with sense probes for rab25a (left panel) and rab25b (center panel), no staining was observed. Positive control using antisense ntla probe shown on the right. Scale bar 100 μm.
+
 To examine the dynamic subcellular distribution of Rab25a and Rab25b in the EVL, N-terminally fluorescently tagged Rab25a and Rab25b constructs were expressed in WT embryos by RNA injection at the one-cell stage. By live confocal microscopy, Venus-Rab25a and eGfp-Rab25b were observed at the plasma membrane and in motile cytoplasmic puncta (Figure 1B; Video 1). Between dome and 50% epiboly, when the EVL is most proliferative, Venus-Rab25a and eGfp-Rab25b appeared to localize near centrosomes during mitosis and then moved toward the opposing poles of dividing cells (Figure 1B, arrowheads; Video 1). Injection of mcherry-rab25b mRNA into transgenic animals expressing Tubulin-Gfp (Fei et al., 2019) confirmed that mCherry-Rab25b localized near centrosomes and dissipated following cell division (Figure 1C; arrows). During cytokinetic abscission, co-expression of eGfp-Rab25b with the midbody marker mCherry-Mklp1 demonstrated that eGfp-Rab25b dynamically localized within intercellular bridges adjacent to the midbody (Figure 1D), the sites of bridge scission.
+
+![Video 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-video1.mp4.jpg)
+
+**Video 1.:** WT embryo expressing Venus-Rab25a (left panel) and eGfp-Rab25b (right panel) beginning at 30% epiboly; Scale bar 20 μm.
 
 Proliferation in the EVL largely subsides during late epiboly progression stages (Campinho et al., 2013). Consequently, both eGfp-Rab25b and Venus-Rab25a were primarily distributed near plasma membrane regions between 50 and 80% epiboly, as well as in small dynamic cytoplasmic puncta (Video 2). Notably, as marginal EVL cells intercalated into submarginal zones, Rab25 constructs became enriched at tricellular vertices contacting the yolk cell (Video 3). Overall, the redistribution of Rab25 constructs to centrosomes and the midbody are suggestive of a role in cell division. While Rab25 has not previously been shown to regulate these processes, the closely related Rab11 has well known functions in mitosis and cytokinesis (Hehnly and Doxsey, 2014; Rathbun et al., 2020). Furthermore, recruitment of fluorescent-Rab25 to cell vertices is similar to Rab11 distribution in the Xenopus laevis neuroepithelium (Ossipova et al., 2014), implicating Rab25 in cell shape changes during epiboly.
 
-## Rab25a and Rab25b are required for normal epiboly movements
+![Video 2.](https://cdn.elifesciences.org/articles/66060/elife-66060-video2.mp4.jpg)
+
+**Video 2.:** WT embryo expressing eGfp-Rab25b beginning at 6hpf; Scale bar 20 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/66060/elife-66060-video3.mp4.jpg)
+
+**Video 3.:** WT embryo expressing Venus-Rab25a beginning at 7hpf; Scale bar 20 μm.
+
+### Rab25a and Rab25b are required for normal epiboly movements
 
 To explore the functions of Rab25a and Rab25b, CRISPR/Cas9 gene editing was used to generate maternal-zygotic (MZ) mutant lines. Guide RNAs were designed to target exon two which encodes the GTPase domain, the functional domain of Rab proteins (Mitra et al., 2017). We characterized two rab25a mutant alleles from two founder fish, a 13-base pair (bp) deletion (2.3) and 29 bp insertion (4). Each allele contained a premature stop codon that disrupted the GTPase domain (see Materials and methods). An 18 bp deletion was generated in rab25b which produced an in-frame mutation and deleted a portion of the GTPase domain (see Materials and methods). Quantitative PCR analysis of transcript levels at shield stage showed undetectable levels of rab25a transcripts and reduced rab25b transcripts in MZrab25a and MZrab25b embryos, respectively (Figure 2—figure supplement 1A). Nonsense-mediated decay can result in genetic compensation of similar sequences hence we examined the levels of rab25a, rab25b and rab11a in mutant embryos (El-Brolosy and Stainier, 2017; Rossi et al., 2015). MZrab25a embryos had elevated levels of rab25b transcript, whereas MZrab25b mutants did not have elevated levels of rab25a transcript. rab11a transcript levels were similar to WT in both mutants. Thus, MZrab25a mutants appeared to exhibit genetic compensation in the form of transcriptional adaption of rab25b, whereas MZrab25b mutants did not. Double MZrab25a/rab25b embryos exhibited phenotypes similar to those of MZrab25b single mutants (Figure 2—figure supplement 1B) with moderate increases in the severity of the EVL defects compared to either MZrab25a or MZrab25b single mutants. These results support our hypothesis that genetic compensation by rab25b partially rescues MZrab25a mutant embryos, producing a milder phenotype than MZrab25b or MZrab25a/rab25b mutants.
 
 To examine the mutant phenotypes, WT, MZrab25a, and MZrab25b embryos were time-matched and examined live by light microscopy. A subset of MZrab25a (36/100) and MZrab25b (30/100) embryos exhibited abnormal blastoderm morphology during early blastula stages (Figure 2—figure supplement 1D). Notably, the majority of MZrab25a (20/36) and MZrab25b (20/30) mutant embryos with early blastoderm defects recovered by 4.3hpf and MZrab25a and MZrab25b embryos initiated epiboly on time (Figure 2A, 4.3hpf, dome). Following this, MZrab25a and MZrab25b mutants exhibited strong epiboly delays that worsened over time, with the greatest delays observed at late epiboly stages (Figure 2A, 6-9hpf, Figure 2B). The epiboly delay in MZrab25b embryos could be rescued by a transgenic construct expressing full length rab25b under the control of a ß-actin promoter, indicating that the phenotype results from the loss of Rab25b (Figure 2—figure supplement 1C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time-matched bright field images of lateral views of WT, MZrab25a and MZrab25b embryos during epiboly. Arrowheads indicate blastoderm margin, asterisks denote embryonic organizer (shield). (B) Quantification of epiboly progression after 8hpf in: WT (n = 80), MZrab25a (2.3, n = 87), MZrab25a (4,n = 28); WT (n = 97), Mrab25a (2.3,n = 73), MZrab25a (4,n = 49); WT (n = 29), MZrab25b (n = 21), Mrab25b (n = 18). Means: SEM; Two-Way ANOVA; ***p<0.001, ****p<0.0001.(N = 3). (C) Confocal z-projections of time-matched lateral views of WT, MZrab25a and MZrab25b embryos at 8hpf stained with phalloidin and corresponding apical surface area heat maps. Cooler colors represent smaller areas, warmer colors represent larger areas. Yellow boxes indicate cells with reduced apices. Red arrows denote cells with increased apical surface areas. White arrows indicate curved cell junctions. Scale bar 100 μm. (D) Frequency distribution of apical surface areas of WT (n = 817, N = 8), MZrab25a 2.3 (n = 651, N = 14), MZrab25a 4 (n = 654, N = 15) and MZrab25b (n = 503, N = 15) embryos at 6hpf. (E) EVL Cell number in WT (n = 8), MZrab25b (n = 8), MZrab25a 2.3 (n = 9) and MZrab25a 4 (n = 7) embryos at 6hpf. Means: SEM; Two-Way ANOVA; ***p<0.001. (F) Frequency distributions of EVL cellular contacts number at 6hpf in WT (n = 817, N = 8), MZrab25a 2.3 (n = 651, N = 14), MZrab25a 4 (n = 654, N = 15) and MZrab25b (n = 503, N = 15). (G) Circularity quantifications for WT and MZrab25b embryos during epiboly. 30% epiboly: WT (n = 7), Mrab25b (n=7). Shield: WT (n=14), Mrab25b (n=10). 80% epiboly: WT (n=8), Mrab25b (n=9). Means: SEM: One-way ANOVA, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) qPCR analysis of rab25a, rab25b, and rab11a transcripts levels in WT, MZrab25a, and MZrab25b embryos at shield stage. (B) Time-matched phalloidin stained WT and MZrab25b double mutants at 8hpf. Scale bar 100 μm. (C) Tg: MZrab25b (ß-actin;rab25b) epiboly movements rescued compared to MZrab25b mutants. WT (n = 8), MZrab25b (n = 6), and MZrab25b Tg (ß-actin; rab25b) (n = 7) time-matched at 8hpf. Means:SEM; One-Way ANOVA, *p<0.05. (D) Bright-field images of WT and MZrab25b embryos positioned laterally at 3hpf. (E) Stage-matched WT, MZrab25a and MZrab25b embryos at 75% epiboly showing phalloidin staining of F-actin (red) and sytox green labeling of nuclei (green). Embryos positioned laterally with animal pole to the top; Scale bar 100 μm. (F) Whole-mount in situ hybridizations using indicated probes at indicated stages. Scale bar 100 μm. Arrows indicate sox17 staining.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Time-matched phalloidin stained WT, MZrab25a, and MZrab25b embryos at 1hpf; Yellow box shows disorganized cortical actin network. Scale bar 100 μm. (B,B’) EVL morphology does not resemble mutant embryos when WT yolk cell F-actin networks are perturbed. Stage-matched embryos positioned laterally at 6hpf stained with phalloidin. Scale bar 100 μm. (C) EVL defects emerge over the duration of epiboly in MZrab25b mutant embryos. Stage-matched WT and MZrab25b embryos positioned laterally stained with phalloidin. Scale bar 100 μm.
+
 The mutant phenotypes apparently did not result from a general developmental delay, as the zebrafish organizer formed at the same time as time-matched WT embryos (Figure 2A, 6hpf, white asterisk). During epiboly, deep cells are positioned behind the leading edge of the EVL and do not move past the EVL margin (reviewed in Bruce and Heisenberg, 2020). Examination of deep cell and EVL epiboly revealed they were equally delayed, suggesting the blastoderm delay could be the result of an EVL-specific defect (Figure 2—figure supplement 1E). Overall, we found that MZrab25b phenotypes were more severe than either of the MZrab25a alleles. Despite the strong epiboly delay, most MZrab25a (87/100) and MZrab25b (99/100) embryos completed gastrulation and survived to adulthood.
 
 We examined patterning and germ layer specification by in situ hybridization. EVL differentiation is required for normal epiboly (Fukazawa et al., 2010), and we found that expression of the EVL marker keratin4 (krt4) was similar in mutant and WT embryos (Figure 2—figure supplement 1F). Analysis of the mesoderm marker, goosecoid, and the endodermal marker sox17, also showed normal expression patterns (Figure 2—figure supplement 1F). Occasionally, sox17 staining showed that the dorsal forerunner cluster was disorganized in MZrab25a and MZrab25b embryos (Figure 2—figure supplement 1F). Overall, germ layer specification appeared to be largely normally in mutant embryos. Together these data suggested that Rab25a and Rab25b may have a specific role in epiboly during zebrafish gastrulation.
 
-## Cell shape and rearrangements indicative of epithelial defects in MZrab25a and MZrab25b embryos
+### Cell shape and rearrangements indicative of epithelial defects in MZrab25a and MZrab25b embryos
 
 The EVL restricted expression of rab25a and rab25b pointed to a primary defect in the EVL of Rab25 mutant embryos, consistent with the epithelial-specific role of Rab25 in mammals (Goldenring et al., 1993; Jeong et al., 2019). Consistent with an EVL defect, analysis of phalloidin stained Rab25 mutant embryos revealed striking cellular size and shape heterogeneity compared to wild type (Figure 2C). Our examination also revealed that yolk cell actin networks were perturbed in MZrab25a and MZrab25b embryos, suggesting yolk cell defects may contribute to the mutant phenotypes (Figure 2C). Disorganization of the yolk cell cytoskeleton can be the result of defective egg development and can impact the rate of epiboly (Li-Villarreal et al., 2016). Thus, we examined the cortical actin networks of four-cell stage mutant embryos by phalloidin staining to address this possibility.
 
@@ -78,29 +110,69 @@ Cell size is reported to scale with nuclear number (Cao et al., 2017). Thus, we 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig3-v2.jpg)
 
-**Figure 3.:** rab25b embryos.(A) Confocal z-projections of stage-matched WT and MZrab25b embryos at 50% epiboly expressing mGfp (green) and H2A-Rfp (magenta). Embryos positioned laterally. Scale bar 40 μm. (B) Apical surface area quantifications of WT mononucleate (n = 151, N = 6), MZrab25a binucleate (n = 10, N=6) and MZrab25b bi-(n = 3, N=4) and multinucleate (n = 9, N=4) at 80% epiboly. Mean: SEM; One-Way ANOVA; ****, p<0.0001. (C–C”) z-projection of stills from confocal time-lapses of WT and MZrab25b embryos labeled for microtubules (green), nuclei (magenta), and plasma membrane (magenta) starting at dome stage; white arrow marks WT bridge; yellow arrows marks bridge regression in MZrab25b cell. (C”) Red arrowheads indicate cytokinetic bridge torn open by neighboring morphogenic stress. Scale bar 20 μm. (D) Intercellular bridge duration in WT (n = 17, N = 3) and MZrab25b (n = 15, N = 4) embryos during epiboly initiation in EVL marginal regions. Mean: SEM; Mann- Whitney Test; ***, p<0.001. (E) Intercellular bridge length following formation in WT (n = 17,N = 3) and MZrab25b (n = 26,N = 4) embryos during epiboly initiation in EVL marginal regions. Mean: SEM; Mann-Whitney Test; *p<0.05.
+**Figure 3.:** (A) Confocal z-projections of stage-matched WT and MZrab25b embryos at 50% epiboly expressing mGfp (green) and H2A-Rfp (magenta). Embryos positioned laterally. Scale bar 40 μm. (B) Apical surface area quantifications of WT mononucleate (n = 151, N = 6), MZrab25a binucleate (n = 10, N=6) and MZrab25b bi-(n = 3, N=4) and multinucleate (n = 9, N=4) at 80% epiboly. Mean: SEM; One-Way ANOVA; ****, p<0.0001. (C–C”) z-projection of stills from confocal time-lapses of WT and MZrab25b embryos labeled for microtubules (green), nuclei (magenta), and plasma membrane (magenta) starting at dome stage; white arrow marks WT bridge; yellow arrows marks bridge regression in MZrab25b cell. (C”) Red arrowheads indicate cytokinetic bridge torn open by neighboring morphogenic stress. Scale bar 20 μm. (D) Intercellular bridge duration in WT (n = 17, N = 3) and MZrab25b (n = 15, N = 4) embryos during epiboly initiation in EVL marginal regions. Mean: SEM; Mann- Whitney Test; ***, p<0.001. (E) Intercellular bridge length following formation in WT (n = 17,N = 3) and MZrab25b (n = 26,N = 4) embryos during epiboly initiation in EVL marginal regions. Mean: SEM; Mann-Whitney Test; *p<0.05.
 
-## Cytokinetic abscission defects during epiboly in MZrab25b mutants
+### Cytokinetic abscission defects during epiboly in MZrab25b mutants
 
 Localization of eGfp-Rab25b near the cytokinetic midbody and the presence of large multinuclear EVL cells in MZrab25a and MZrab25b embryos indicated that Rab25 may function in cytokinesis. To investigate potential abscission defects in Rab25 mutants, we focused on MZrab25b embryos because they exhibited more severe defects than MZrab25a embryos. Cytokinetic bridges were characterized by labeling microtubules, nuclei and membrane in WT and mutant embryos. Following mitosis in WT cells, equatorial midzone microtubules were organized into apical cytokinetic bridges (Figure 3C, white arrows, Video 4). Initially, cytokinetic bridges underwent a fast phase of bridge narrowing and shortening, over approximately 10–12 min (Figure 3C, t = 16:36 m-27:40 m). Intercellular bridges then remained connected for an additional 15–20 min, in which bridge length did not change significantly before abscission (Figure 3C, t = 27:40-38:48 min).
 
+![Video 4.](https://cdn.elifesciences.org/articles/66060/elife-66060-video4.mp4.jpg)
+
+**Video 4.:** WT embryo injected with mrfp (magenta) and gal4 mRNA and H2A-rfp(magenta)-dUAS-dcx-gfp (green) plasmid imaged beginning at dome stage. Scale bar 20 μm.
+
 During mononucleate cytokinesis in MZrab25b embryos, the plasma membrane at the cleavage furrow underwent ingression similar to WT embryos (Figure 3C’, C”). Following cleavage, two types of abscission defects were detected. The first occurred during the initial, fast phase of bridge formation when bridge regression occurred in a small proportion of mutant cells during cytokinesis (5/23), leading to the formation of binucleate cells (Figure 3C’, yellow arrows, Video 5). In these instances, MZrab25b embryos expressing the midbody marker mCherry-Mklp1, showed a failure of mCherry-Mklp1 coalescence in unstable cytokinetic bridges, which preceded bridge regression (Video 6; WT (left panel), MZrab25b (right panel)).
+
+![Video 5.](https://cdn.elifesciences.org/articles/66060/elife-66060-video5.mp4.jpg)
+
+**Video 5.:** Mrab25b embryo injected with mrfp (magenta) and gal4 mRNA and H2A-rfp(magenta)-dUAS-dcx-gfp (green) plasmid imaged beginning at dome stage. Scale bar 20 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/66060/elife-66060-video6.mp4.jpg)
+
+**Video 6.:** Left panel: Tg:(Dcx-Gfp) (magenta) expressing mCherry-Mklp1 (green) imaged beginning at dome stage showing formation of midbody in wild-type embryo. Right panel: Apical z-projection of Mrab25b embryo expressing mRfp (magenta) and mCherry-Mklp1 (green); coalescence of the cytokinetic midbody which precedes bridge regression; Scale bar 20 μm.
 
 The second defect occurred later during the abscission process. Despite being initially longer following their formation (Figure 3E), cytokinetic bridges in these contexts appeared to shorten and narrow normally (Figure 3C'', red arrowhead). In WT embryos, daughter cells remained interconnected for ~26.23 min before bridge scission (n = 17), while in mutants, bridges persisted almost twice as long, suggesting abscission either failed or was delayed (Figure 3D) (~50.35 mins; n = 15). While some bridges were still present at the end of the time-lapses, most long-lasting intercellular bridges appeared to be pulled open by morphogenetic stress in adjacent EVL regions, such as mitosis or basal cell extrusion, resulting in multinucleation (Figure 3C”, red arrowheads, Video 7). Overall, these observations are similar to in vitro work showing intracellular membrane trafficking regulates both cytokinetic bridge stability and timing of abscission (Dambournet et al., 2011).
 
-## Multipolar cytokinesis in MZrab25b embryos
+![Video 7.](https://cdn.elifesciences.org/articles/66060/elife-66060-video7.mp4.jpg)
+
+**Video 7.:** Mrab25b embryo injected with mrfp (magenta) and gal4 mRNA and H2A-rfp (magenta)-dUAS-dcx-gfp (green) plasmids imaged beginning at dome stage. Scale bar 20 μm.
+
+### Multipolar cytokinesis in MZrab25b embryos
 
 Binucleate cells remained mitotically active in MZrab25b embryos, resulting in continuous cytokinesis failures which produced multinucleated cells. Notably, in MZrab25b embryos, spindles in mono- and multinucleated EVL cells deviated from both the long axis of the cell and the animal-vegetal axis (Figure 4—figure supplement 1A,A’). Thus, misoriented spindles likely contributed to the disorganized EVL cell arrangements (Campinho et al., 2013). During multipolar cytokinesis, both cleavage and abscission failures were seen. In some multinucleated cells, the plasma membrane appeared to snap back following furrow ingression, suggesting that the F-actin cytokinetic ring might be unstable (6/21) (Figure 4—figure supplement 1D). To investigate actin dynamics during cytokinesis, embryos were co-injected with RNAs encoding membrane-Rfp and Gfp-Utrophin. Cytokinetic rings progressed from basal to apical, as in other vertebrate epithelia (Figure 4A,B; Higashi et al., 2016). During multinucleate cell cleavage in mutant embryos, we often observed failed contraction of the actin cytokinetic ring of EVL cells followed by cytokinesis failures (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig4-v2.jpg)
+
+**Figure 4.:** (A–A”) Confocal z-projections of stills from time-lapse of a WT EVL cell during mitosis expressing Gfp-Utrophin (green) and mRfp (magenta). Scale bar 20 μm. (B) Lateral views with apical to the top of stills from single-plane confocal time-lapses of WT EVL cells during mitosis expressing Gfp-Utrophin (green) and mRfp (magenta). Arrowheads denote cleavage furrow ingression from basal to apical. (C) Confocal z-projections of stills from time-lapse of MZrab25b multipolar cleavage failure. F-actin labeled with Gfp-Utrophin. Scale bar 20 μm. (C’) Confocal z-projections of time-lapse of MZrab25b Tg (Myl1.1-Gfp) (Fire-LUT) during multipolar cytokinesis failure. White arrows indicate Myosin-Gfp foci. (D) Confocal z-projection of MZrab25b embryo showing an array of EVL cells interconnected via cytokinetic bridges at 30% epiboly. Microtubules (green), nuclei (magenta), and plasma membrane (magenta), arrows and numbers denote connected cells and cytokinetic bridges. Scale bar 20 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal z-projections of stills from confocal time lapse of Mrab25b mononucleate EVL cell during mitosis at 30% epiboly. Microtubules (green), membrane (magenta), and nuclei (magenta). Arrowhead indicates reduced density of astral microtubules. Relative proportions of spindle orientations along the long axis of cells during mitosis. Scale bar 20 μm. (B) Confocal z-projections of stills from confocal time lapse of Mrab25b mitotic spindles fusing during multipolar cytokinesis. Time-lapses began at 30% epiboly in marginal regions; arrows denote fusing spindles: Microtubules (green), membrane (magenta), and nuclei (magenta). Scale bar 10 μm. (C) Confocal z-projections of stills from confocal time lapse of a WT embryo imaged beginning at dome stage. Shaded cells are dividing; Nuclei and membranes labeled. Scale bar 20 μm. (D) Confocal z-projections of stills from confocal time lapse of multipolar mitosis in MZrab25b embryos beginning at 30% epiboly. Failed cleavage indicated by arrows; Successful cleavage generates cells with reduced apices indicated by numerals; Nuclei and membranes labeled. Scale bar 10 μm. (E) Confocal z-projection of a MZrab25b EVL cell expressing mGfp undergoing basal cell extrusion. Scale bar 10 μm. (F) Quantifications of means of (1) proliferation events in WT (n = 5), MZrab25a (n = 7) and MZrab25b (n = 7);(2) Cytokinesis events in WT (n = 9), MZrab25a (n = 13) and MZrab25b (n = 9); (3) non-sister cell fusions in WT (n = 5), MZrab25ba (n = 7) and MZrab25b (n = 7); (4) Basal Cell Extrusion events in WT (n = 8), MZrab25a (n = 7) and MZrab25b (n = 9). Means: SEM; One-Way ANOVA; *, **, ***, ****, p<0.05, 0.01, 0.001, 0.0001.
+
 When multinucleate cells in MZrab25b mutants successfully completed cleavage (15/21), multiple daughter cells were generated that typically had reduced apical surface areas compared to surrounding cells (Figure 4—figure supplement 1D). Thus, successful cleavage during multipolar cytokinesis likely explains the presence of cells with reduced apical surface areas in mutant embryos. Most, but not all, daughter cells contained nuclei (not shown). Multipolar cytokinesis resulted in arrays of daughter cells interconnected through cytokinetic bridges across the EVL in MZrab25b embryos (Figure 4D, numerals and arrowheads, Video 8). As seen in mononuclear cell divisions, in multipolar divisions, intercellular bridges were not observed to undergo abscission but instead appeared to be torn open due to morphogenic stress, causing cytokinesis failures (Video 8). Following multipolar division failures, Myosin-Gfp foci were often observed along individual cell junctions, suggesting myosin was unevenly distributed along these EVL cell contacts (Figure 4C’, white arrows). Myosin-Gfp foci were apparently remnants of de novo tricellular vertices that are normally established along newly formed daughter cell interfaces, as observed in Xenopus during ectoderm cell divisions (Higashi et al., 2016).
+
+![Video 8.](https://cdn.elifesciences.org/articles/66060/elife-66060-video8.mp4.jpg)
+
+**Video 8.:** Mrab25b embryo injected with mrfp (magenta) and gal4 mRNA and H2A-rfp(magenta)-dUAS-dcx-gfp (green) plasmid imaged beginning at dome stage. Scale bar 20 μm.
 
 We observed that cytokinetic intercellular bridge abscission failures resulted in the progressive formation of bi-and multinucleate cells during epiboly in MZrab25b embryos. The abscission defects disrupted EVL organization in mutant embryos, as cells exhibited variable sizes, shapes, and number. Contributing to the tissue defects were basal cell extrusion events, cell-cell fusions and misoriented mitotic spindles (Figure 4—figure supplement 1E,F). Cytokinesis defects causing epithelial spreading delays aligns with previous work implicating cell division in epithelial cell rearrangements and epiboly (Campinho et al., 2013; Higashi et al., 2016).
 
-## Marginal EVL cell rearrangements are disrupted during epiboly progression in MZrab25b embryos
+### Marginal EVL cell rearrangements are disrupted during epiboly progression in MZrab25b embryos
 
 The cellular defects in MZrab25a and MZrab25b embryos appeared largely to be the product of cytokinesis failures. We next sought to characterize cell behaviors during later epiboly stages, when the epiboly delay was greatest. During epiboly progression, marginal EVL cells elongate along the animal-vegetal axis and a subset of cells rearrange and intercalate into submarginal regions which enables the marginal circumference to narrow to eventually close the blastopore (Keller and Trinkaus, 1987; Köppen et al., 2006). To analyze EVL cell shape changes, live imaging of wild type and mutant embryos expressing mRfp and Gfp-Utrophin was performed starting at 7 hpf.
 
 In wild-type embryos, marginal EVL cells elongated as expected and a few cells changed shape by shortening their contacts with the yolk cell along the EVL margin (Figure 5A, green cells). Following these shape changes, three to four cells share one vertex with the underlying yolk cell (Figure 5A, red circle, t = 25:26 m), akin to a multicellular rosette. Resolution of rosettes in other contexts is linked to cell intercalation rates and tissue-shape changes (Blankenship et al., 2006; Zallen and Blankenship, 2008). Multicellular-yolk vertices resolved on average 22 min following their formation (Figure 5E). Resolution of marginal EVL rosettes resulted in de novo junctions formed between cells adjacent to intercalating cells as they exited into submarginal EVL regions (Figure 5A, orange cells, dotted line). Enrichment of cortical actin was observed when EVL cells intercalated into submarginal zones (Figure 5A’, Video 9, left panel).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig5-v2.jpg)
+
+**Figure 5.:** (A) Confocal z-projections of stills from a time-lapse of a WT embryo expressing mGfp starting at 7hpf. Lateral view focused on the margin. Green shaded cells shrink the EVL-YC junction and intercalate into submarginal zones. Orange shaded cells establish new cell-cell contacts following intercalation events (denoted by red dotted line). Circle denotes shared vertex with underlying yolk cell. Scale bar 20 μm (A’) Confocal z-projection time-lapse of WT embryo labeled for F-actin; (Fire-LUT) (Gfp-Utrophin) starting at 7hpf; lateral view; scale bar 20 μm. (B) Confocal z-projection of stills from a confocal time-lapse starting at 7hpf of an MZrab25b embryo expressing membrane-Gfp. Purple shaded cells exit EVL marginal region. Scale bar 20 μm (B’) Confocal z-projection of stills from time-lapse starting at 7hpf of an MZrab25b embryo labeled for F-actin (Fire-LUT) (Gfp-Utrophin); scale bar 20 μm. Shaded cells denote an EVL circumferential stretching event. Scale bar 20 μm. (C–D) EVL-YC mean contact length or shortening rate over time in rearranging EVL marginal cells in WT (N = 5) and MZrab25b embryos (N = 5). Mean:SEM. Each color indicates a separate trial of a single embryo. Each line represents the average of the contact length or junction shrink rate in each trial (n = 2–5). (E) Resolution times following formation of EVL-YC multicellular vertices. Mean: SEM. WT (n = 20,N = 4) and MZrab25b (n = 12,N = 5), unresolved MZrab25b vertices (red) (n = 6,N = 5). Mann-Whitney, *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Individual marginal cell EVL-YC contact length over time in WT (n = 8, N = 3) and MZrab25b (n = 13, N = 3) beginning at 7hpf. (B) Confocal z-projections of stills from confocal time lapse of stage-matched WT and MZrab25b embryos during late epiboly stained for F-actin. Arrowhead denotes uneven EVL margin in MZrab25b embryos; Scale bar 20 μm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/66060/elife-66060-video9.mp4.jpg)
+
+**Video 9.:** Left Panel: WT embryo expressing Gfp-Utrophin (Fire-LUT) imaged beginning at 7hpf; Enrichment of cortical F-actin during marginal EVL cell rearrangements. Right panel: MZrab25b embryo expressing Gfp-Utrophin (Fire-LUT) imaged beginning at 7hpf. Cells with reduced and large apices shorten their EVL-YC contact; Scale bar 20 μm.
 
 Overall, EVL-YC junction shortening took longer in MZrab25b embryos compared to wild-type embryos (Figure 5C). Additionally, while WT EVL-YC contact shrink rates were initially fast and slowed over time, MZrab25b contacts displayed more uniform, slower rates of shortening during epiboly (Figure 5D). Cells of all sizes were observed to shorten their yolk cell contacts in mutant embryos (Video 9, right panel). However, compared to wild-type, mutant cells with normal and large apical surface areas were slower to shrink their yolk cell contact, while cells with reduced apices did so more quickly (Figure 5—figure supplement 1A). This data suggests that the cell size defects impacted the rate of EVL cell shape changes, contributing to the slowed rate of epiboly in mutant embryos.
 
@@ -108,15 +180,27 @@ Resolution of multicellular-yolk vertices was significantly slower in mutant emb
 
 Despite the epiboly delay in MZrab25b embryos, EVL cells were able to rearrange into submarginal zones (Figure 5B, purple cells), with adjacent cells with large apices being stretched toward the site of intercalation (Figure 5B’, colored cells). Marginal EVL cell stretching was in contrast to wild-type cell shape changes and would be predicted to slow the rate of epiboly, as cells normally maintain their shape or narrow and elongate along the embryonic AV axis (Köppen et al., 2006).
 
-## Actomyosin network organization in MZrab25b embryos
+### Actomyosin network organization in MZrab25b embryos
 
 Our observations that EVL cells in mutant embryos exhibit misoriented and uncoordinated cell shape changes prompted us to examine F-actin and myosin in more detail, given their fundamental roles in cell shape and rearrangements (Jewett et al., 2017). A gradual reduction in cortical actin over the course of epiboly was observed in phalloidin stained mutant embryos, which was first detected at 30% epiboly in MZrab25b embryos (Figure 6A–A’, Figure 6—figure supplement 1A). While cells of all sizes exhibited reduced F-actin signal intensity (Figure 6A, red arrows, Figure 6—figure supplement 1B), as cell size increased, cortical actin further decreased (Figure 6A, yellow arrows).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig6-v2.jpg)
+
+**Figure 6.:** (A) Lateral views with animal pole to the top of z-confocal projections of phalloidin stained WT, MZrab25a and MZrab25b embryos stage-matched at 80% epiboly; red arrows show reduced cortical actin in normal sized cells; yellow arrows show reduced actin in large cells; Scale bar 20 μm. (A’) Quantification of normalized tricellular and bicellular F-actin intensity at 80% epiboly. WT (n = 90,N = 9), MZrab25a (n = 90,N = 9) and MZrab25b (n = 90,N = 9). Means: SEM; Mann-Whitney, **,p<0.001. (B) Confocal z-confocal projections of WT and MZrab25b embryos at 80% epiboly antibody stained for pMyosin. Red arrows denote uneven distribution of pMyosin along individual MZrab25b cellular junctions. Scale bar 20 μm. (C–D’) Confocal z-confocal projections of WT or MZrab25a Tg(Myl1.1-Gfp) at 60% epiboly; lateral positioned embryo focused on EVL margin; red line marks the ablated junction. Scale bar 5 μm. (E–G’) Initial recoil velocity, relaxation time and distance retracted in WT and MZrab25a embryos following junction laser cutting (see Materials and methods). WT and MZrab25a perpendicular and parallel cuts (n = 26,23);(n = 21,25).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal z-projections WT and MZrab25b embryos stage-matched at 30% epiboly and stained for f-actin (phalloidin). Quantifications of EVL tri-or bicellular f-actin intensity in WT (n = 40, N=4) and MZrab25b embryos (n = 70, N = 7). Means:SEM; t-test **, p<0.01. Scale bar 20 μm. (B) Confocal z-projections of stage-matched WT Tg(Myl1.1-gfp) and MZrab25a Tg(Myl1.1-Gfp) at 60% epiboly positioned laterally. Confocal z-projections of phalloidin stained stage-matched WT and MZrab25b embryos at 80% epiboly. Scale bars 20 μm.
 
 Antibody staining for phosphorylated myosin (pMyosin), the active form of myosin and a proxy for contractility, revealed that most EVL cells in MZrab25b embryos exhibited reduced junctional pMyosin compared to wild-type embryos at 80% epiboly (Figure 6B,B’). In MZrab25b embryos, we occasionally observed some EVL cells with elevated levels of cortical pMyosin (Figure 6B”). Furthermore, while junctional pMyosin was uniformly distributed along individual cell-cell contacts in wild-type embryos (Figure 6A), in MZrab25b mutants, it was often diffuse and fragmented along cell-cell contacts (Figure 6B’–B”, arrows). Overall, reduced cortical actin was associated with weak junctional pMyosin in MZrab25b embryos, with some localized increases in pMyosin in individual cells.
 
 We next characterized the distribution of actin and myosin in live embryos. In MZrab25b embryos transgenic for Myosin light chain 12, genome duplicate 1-gfp (Myl12.1-Gfp) myosin intensity was often weak at shield stage compared to wild type and became heterogeneously distributed in the EVL, as some cells contained elevated levels of cortical myosin following aberrant shape changes (Video 10). Gfp-Utrophin was also disorganized in MZrab25b EVL cells following aberrant cell behaviors (Video 9, right panel). Collectively, these data indicated that ectopic activation of actomyosin in localized EVL regions are likely the result of disorderly cell movements and rearrangements. This is similar to the accumulation of actomyosin in the Drosophila germband during unorganized cell rearrangements (West et al., 2017). We propose the abnormal cell shape changes and behaviors in MZrab25b mutant embryos are likely the product of the overall reduction of contractile actomyosin networks and disrupted tissue architecture.
 
-## Altered viscoelastic responses in MZrab25a mutant EVL cells
+![Video 10.](https://cdn.elifesciences.org/articles/66060/elife-66060-video10.mp4.jpg)
+
+**Video 10.:** Left Panel: WT Tg(Myl1.1-Gfp) (Fire-LUT) embryo imaged starting at 7hpf. Right Panel: MZrab25b Tg(Myl1.1-Gfp) (Fire-LUT) embryo imaged starting at 7hpf; Myosin-Gfp becomes heterogeneously distributed in EVL marginal regions Scale bar 20 μm.
+
+### Altered viscoelastic responses in MZrab25a mutant EVL cells
 
 The initial recoil velocity of laser ablated junctions is a measure of tension (Hutson et al., 2003). Reduced cortical actin and pMyosin suggested decreased contractility in the EVL of MZrab25a and MZrab25b embryos. To examine this, junctions perpendicular and parallel to the EVL-YSL margin were ablated in WT and MZrab25a mutant embryos that were transgenic for Myosin-Gfp. We analyzed cells near the EVL margin in embryos at 60–70% epiboly, when EVL tension is highest (Campinho et al., 2013) and epiboly was the most delayed in MZrab25a and MZrab25b embryos. To eliminate potential effects of contact length on tension, only cell junctions with similar lengths were quantified.
 
@@ -126,9 +210,25 @@ In MZrab25a embryos, the initial recoil velocities of parallel and perpendicular
 
 Overall, this suggests that forces are more balanced in the EVL and that viscoelastic responses are defective in Rab25 mutant embryos. Anisotropic tensions and contraction drive epithelial wound closure in Drosophila and epithelial monolayers in culture (Zulueta-Coarasa and Fernandez-Gonzalez, 2018). Thus, balanced forces would be predicted to disrupt force patterns in the EVL that drive oriented cell shape changes required for tissue elongation during epiboly progression. The overall reduction in actomyosin density and contractile networks likely contributes to the relaxation of tensions within the EVL of mutant embryos. Importantly, force is propagated across tissues through the actomyosin cytoskeleton. Accordingly, reduced actomyosin and tension would also be predicted to impact force transmission across the EVL during epiboly, disrupting the rate of tissue spreading. Lastly, inhibition of cell divisions in amniotes has been shown to increase viscosity, lending support to our data suggesting an association between cytokinesis failures and increased tissue viscosity (Saadaoui et al., 2020). Increased viscosity would slow the rate of EVL deformation in response to yolk cell pulling forces, given that viscous responses are slower than elastic deformations (Petridou and Heisenberg, 2019).
 
-## MZrab25a and MZrab25b mutants exhibit endocytic trafficking defects
+### MZrab25a and MZrab25b mutants exhibit endocytic trafficking defects
 
 Rab25 is reported to direct recycling endosome pathways (Casanova et al., 1999). While our previous analysis of fluorescent Rab25 dynamics supports Rab25 trafficking in the EVL, we wanted to determine Rab25’s position in the endocytic-recycling pathway. To do this, Venus-Rab25a or eGfp-Rab25b were co-expressed with mCherry-Rab11a, a marker of recycling endosomes (Mavor et al., 2016). Spatiotemporally, mCherry-Rab11a dynamics largely overlapped with Venus-Rab25a and eGfp-Rab25b over the duration of epiboly, with Rab11 and Rab25 constructs colocalizing within the cytosol and at the plasma membrane (Figure 7A, Figure 7—figure supplement 1A). During cell division, mCherry-Rab11a became enriched at centrosomes in parallel with fluorescently tagged Rab25 (Video 11, Figure 7—figure supplement 1A, black arrows). Given Rab11’s established association with recycling endosomes (REs) (van Ijzendoorn, 2006), localization of Rab25 with Rab11 compartments during cell division and epiboly implies Rab25 localizes to REs in the zebrafish.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig7-v2.jpg)
+
+**Figure 7.:** (A) z-projection stills of a wild-type embryo at 80% epiboly co-expressing mCherry-Rab11a (green) and eGfp-Rab25b (magenta); arrowhead denotes overlap. (B) Live WT, MZrab25a and MZrab25b embryos expressing Lyn-eGfp (green) and containing cytoplasmic pHRodo dextran puncta (magenta) following incubation. Scale bar 20 μm. (C,D) Rhodamine phalloidin stained (magenta) and Rab11b antibody (green) stained WT and MZrab25b embryos at 80% epiboly; arrowheads denote large Rab11b endosomes. Scale bar 20 μm (E) Schematic of pHRodo dextran apical endocytosis (F) Mean number of Lyn-eGfp- or pHRodo-positive vesicles/cell. WT, MZrab25a and MZrab25b embryos (N = 7,7,6). Fluorescence intensity measured over a 1 μm line in pHRodo-positive vesicles; WT (n = 15); MZrab25a (n = 46); MZrab25b (n = 54). Mean surface area of pHRodo vesicles; WT(n = 6); MZrab25a and MZrab25b (n = 23,13). Means: SEM; significance using Mann-Whitney test. Scale bars, (A–C) 20 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Confocal z-projections of N-terminally fluorescently tagged Rab constructs at 30% epiboly in WT embryos. Constructs co-localize at the plasma membrane, cytosol, centrosomes (black arrows), and tricellular vertices (red arrows); Scale bar 20 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66060/elife-66060-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Means: SEM;t-test,*, p<0.05.
+
+![Video 11.](https://cdn.elifesciences.org/articles/66060/elife-66060-video11.mp4.jpg)
+
+**Video 11.:** Left Panel: Confocal time-lapse of a WT embryo expressing mCherry-Rab11a (magenta) and Venus-Rab25a (green) beginning at 30% epiboly. Middle Panel: Venus-Rab25a. Right Panel: mCherry-Rab11a. Scale Bar 20 μm.
 
 We next postulated that a vesicular trafficking defect may underlie the mutant phenotypes. To analyze this, Lyn-eGfp expressing WT and MZrab25a and MZrab25b embryos were incubated in pHRodo dextran. The fluorescently tagged peptide Lyn-eGfp labels intracellular membrane compartments during trafficking (Sonal et al., 2014). pHRodo dextran can only be internalized by EVL cells through apical endocytosis (Figure 7E), labeling endosomes positioned in endocytic pathways. In WT cells, we detected a small number of Lyn-eGfp cytoplasmic vesicular bodies with faint pHRodo dextran signal (Figure 7B). In contrast, both Lyn-eGfp- and pHRodo-positive vesicles accumulated in MZrab25a and MZrab25b embryos, consistent with defects in apical-endocytic membrane trafficking (Figure 7B,F). We also observed reduced junctional Lyn-eGfp in mutants compared to wild type, perhaps representing reduced fusion of vesicles with the plasma membrane, which we speculate could reflect recycling defects. Notably, the greatest accumulation of intracellular vesicles was observed in cells with large apices. Vesicles also accumulated in cells with normal morphologies and small apices, although to a lesser extent. These findings led us to hypothesize that the MZrab25a and MZrab25b phenotypes could be associated with trafficking defects and that these defects at least partially reflect the loss of Rab25 in mutant embryos as opposed to a secondary effect from changes in EVL cell morphology.
 
@@ -140,7 +240,7 @@ Rab GTPases comprise the largest family of small GTPases and are an important cl
 
 Zebrafish rab25a and rab25b are expressed in the surface epithelial layer, the EVL, during gastrulation. MZrab25a and MZrab25b mutant embryos exhibit epiboly delays and EVL cellular morphology defects. As described further below, we propose that the heterogeneous EVL cell sizes in mutant embryos, resulting from cytokinesis failures, impairs epiboly in two ways: by hindering local cell rearrangements and altering the viscoelastic properties of cells.
 
-## Role for Rab25 in cytokinetic abscission
+### Role for Rab25 in cytokinetic abscission
 
 The overall subcellular distribution of Rab25 constructs is consistent with a function in trafficking (Hehnly and Doxsey, 2014; van Ijzendoorn, 2006; Langevin et al., 2005). Rab25 constructs were highly motile in the cytoplasm as puncta and transited toward the plasma membrane, suggestive of membrane and/or cargo delivery. During mitosis, Rab25 localized near centrosomes, where recycling endosomes are positioned to direct membrane to the intercellular bridge during cytokinesis (Frémont and Echard, 2018). Lastly, Rab25 co-localized with the known recycling protein Rab11.
 
@@ -154,13 +254,13 @@ Rab11 vesicle trafficking has been shown to be important for cytokinesis during 
 
 An open question is why Rab25a or Rab11 cannot compensate for loss of Rab25b in MZrab25b mutant embryos. A possible explanation may be that more Rab25b protein is maternally deposited compared to Rab11a or Rab25a, thus, disruption of Rab25b without transcriptional adaptation of rab25a or rab11a may not be able to rescue the abscission phenotypes. Given the lack of Rab25b antibody this is difficult to determine. Membrane trafficking becomes increasingly important in morphogenetically active tissues, as a higher degree of plasma membrane remodeling occurs (reviewed in Pinheiro and Bellaïche, 2018). This is exemplified in the related teleost fish Fundulus, where membrane turnover in the EVL was shown to steadily increase as epiboly progressed (Fink and Cooper, 1996), suggesting that membrane recycling may similarly increase. Thus, having high amounts of Rab trafficking molecules during epiboly is most likely needed for normal cytokinesis.
 
-## Cytokinesis failures disrupt EVL morphogenesis
+### Cytokinesis failures disrupt EVL morphogenesis
 
 Cell division appears to have two major roles in epithelial morphogenesis. Cell-division-mediated intercalations (CMI) power epithelial rearrangements in chick, quail, and Xenopus embryos during gastrulation (Firmino et al., 2016; Higashi et al., 2016; Saadaoui et al., 2020). In general, cell rearrangements have well-defined roles in tissue morphogenesis and embryonic development (reviewed in Zallen and Blankenship, 2008). Thus, failed CMI disrupts rearrangements critical for tissue development, as shown in amniote gastrulation and mouse limb bud development (Firmino et al., 2016; Lau et al., 2015; Saadaoui et al., 2020; Wyngaarden et al., 2010). A second role of cell divisions is the regulation of tissue fluidity and viscoelasticity (reviewed in Petridou and Heisenberg, 2019). Recent experiments using laser ablation and micropipette assays on amniote epiblast cells and zebrafish deep cells have shown that inhibiting cell division increases tissue viscosity, effectively slowing tissue shape changes (Petridou et al., 2019; Saadaoui et al., 2020). Our data in MZrab25a and MZrab25b embryos suggests that failed cytokinesis disrupted cell intercalation events during epithelial epiboly and increased tissue viscosity, with both likely contributing to slow EVL spreading.
 
 Marginal epithelial cell rearrangements are required for normal epiboly movements of surface epithelia in zebrafish, Fundulus, and Tribolium embryos (Jain et al., 2019; Keller and Trinkaus, 1987; Köppen et al., 2006). Similar to T1 transitions and rosette resolution described in the Drosophila germband (Blankenship et al., 2006), marginal EVL cell intercalations bring into contact initially non-neighboring cells. Marginal intercalation leads to EVL circumference narrowing needed to close the blastopore (Köppen et al., 2006). The EVL cell shape heterogeneity in mutant embryos led to an overall slowing of marginal cell intercalation events, which likely impaired EVL circumference narrowing and the rate of epiboly in MZrab25a and MZrab25b embryos. While we investigated cell rearrangement events predominantly in EVL marginal regions, our time-lapses of wild-type embryos revealed EVL cell neighbor exchanges throughout most regions of the epithelium, which to date has not been reported.
 
-## Rab proteins and cytoskeletal dynamics
+### Rab proteins and cytoskeletal dynamics
 
 Tension anisotropy promotes tissue shape changes during morphogenesis. For example, heterogenous contractile networks are required for timely wound healing and apical cell extrusion (Ap et al., 2020; Zulueta-Coarasa and Fernandez-Gonzalez, 2018). Our laser cutting analysis revealed polarized tensions within the EVL, with cell junctions aligned parallel to the EVL-YC boundary having high recoil velocities compared to perpendicular junctions elongating during epiboly progression. Higher tensions along parallel contacts indicate cells may dynamically narrow along the circumferential embryonic axis during late-phase epiboly, consistent with the tissue narrowing and elongating. It may also mean some junctions are resisting external forces to maintain their initial length. In support of our notion that tension heterogeneity drives EVL morphogenesis, the overall relaxation of tensions in mutant embryos disrupted polarized force patterns which was associated with disorganized and stochastic cell behaviors that hindered collective cell movements and epiboly.
 
@@ -176,63 +276,69 @@ We propose a two branched model by which Rab25 functions during epithelial epibo
 
 ## Materials and methods
 
-## Zebrafish handling
+### Zebrafish handling
 
 Animals were maintained under standard conditions in accordance with the policies and procedures of the University of Toronto animal care committee. Fish stocks were housed at 28–29°C in an Aquaneering Zebrafish Housing System with a pH from 7.2 to 7.8 and conductivity between 500 and 700 µS. Adults used were on average 1 year old with no prior manipulations or apparent health issues. Embryos were collected from natural spawnings using a tea strainer and rinsed and stored in facility water or E3 medium at 28.5–30°C. Embryos were staged as described by Kimmel et al., 1995.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Quantifications represent data collected from cells visualized within a given area illuminated by confocal microscopy and not estimates of embryo wide measurements.
 
-## Epiboly Progression
+#### Epiboly Progression
 
 To assess the extent of epiboly progression, the leading edge of the blastoderm was labeled using either phalloidin or by in situ hybridization against ta (ntla). Embryos were photographed and ImageJ was used to measure the distance from the animal pole to EVL leading edge and compared to the overall length of the embryo along the animal-vegetal axis (AV) (SF 1D).
 
-## Cell contact analysis
+#### Cell contact analysis
 
 The number of bicellular contacts between an EVL cell and its neighbors EVL cells or the YC was counted.
 
-## Apical surface area, circularity, and heat maps
+#### Apical surface area, circularity, and heat maps
 
-Surface area, circularity and heat maps were calculated and generated using SIESTA and custom scripts written in MATLAB (Zuluerta-Coarasa et al., 2017).Circularity=p2/4πa,where p is the cell apical surface perimeter and α is cell apical surface area. Circularity is one for circles and larger than one for non-circular shapes.
+Surface area, circularity and heat maps were calculated and generated using SIESTA and custom scripts written in MATLAB (Zuluerta-Coarasa et al., 2017).
 
-## Phalloidin fluorescence intensity
+$$
+Circularity=p^{2}/4\pia,
+$$
+
+where p is the cell apical surface perimeter and α is cell apical surface area. Circularity is one for circles and larger than one for non-circular shapes.
+
+#### Phalloidin fluorescence intensity
 
 Phalloidin levels were measured in fixed embryos in EVL marginal regions at the stages described using a 2 µM line at bicellular and tricellular contacts. For each experiment, all measurements were then corrected and normalized to ZO-1 levels in the same regions using the measure tool in ImageJ.
 
-## Myosin intensity
+#### Myosin intensity
 
 Myosin levels were measured across a 2 µM line in the middle of bicellular junctions in live embryos expressing Myl12.1-eGFP pre-ablation. For each experiment, all measurements were then corrected and normalized to myosin intensity at tricellular contacts along the same junction using the measure tool in ImageJ.
 
-## pHRodo dextran and Lyn-eGFP vesicle counts and fluorescence intensity
+#### pHRodo dextran and Lyn-eGFP vesicle counts and fluorescence intensity
 
 In each experiment, vesicles > 0.75 µM were counted in images from live confocal z-projections of EVL cells. To measure the fluorescence intensity of pHRodo positive vesicles, intensity across a line spanning the diameter of the vesicles was measured. Analysis was done using the measure tool in ImageJ.
 
-## Cytokinetic bridge length and duration
+#### Cytokinetic bridge length and duration
 
 Bridge length and duration in wild-type embryos was quantified in marginal and animal regions in live AB embryos expressing Dcx-Gfp from plasmid injection; Tg:(XIEef1a:eGFP-tubα8I) or; Tg:(XIEef1a1:Dclk2DeltaK-GFP). All methods produced similar bridge lengths and durations. Mutants embryos expressing Dcx-Gfp from plasmid injection were used for bridge analysis. Bridge length for all genotypes were measured following intercellular bridge formation. Bridge duration analysis began following cleavage, when microtubules were first organized into bridges. Duration analysis ended when microtubules were no longer visible, indicating abscission. Duration analysis also ended in mutants if bridges were present at the end of time-lapses or when bridges regressed or were torn open. Initial bridge length following formation was measured using the measure tool on ImageJ.
 
-## Spindle orientation
+#### Spindle orientation
 
 The angle of EVL mitotic spindles was compared to the long axis of the cell in live wild-type and mutant embryos in marginal and animal regions using the measure tool in ImageJ. Microtubules in wild-type embryos were labeled by Dcx-Gfp from plasmid injection; Tg:(XIEef1a:eGfp-tubα8I) or; Tg:(XIEef1a1:dclk2DeltaK-Gfp). In mutant embryos, microtubules were labeled with Dcx-Gfp from plasmid injection. Embryos also expressed membrane-Rfp and H2A-Rfp.
 
-## EVL-YC contact shortening
+#### EVL-YC contact shortening
 
 The length of EVL-yolk cell contact was measured each frame over the duration of time-lapses using the measure tool in ImageJ.
 
-## Multicellular EVL-YC vertex resolution
+#### Multicellular EVL-YC vertex resolution
 
 Following formation of multicellular vertices along the EVL-YC boundary, resolution of rosettes was determined when a new cell contact was observed to form between cells adjacent to intercalating cells.
 
-## Rab11b recycling endosome number and size
+#### Rab11b recycling endosome number and size
 
 To assess the number of Rab11b-positive compartments, Rab11b-positive endosomes with diameters > 1 µM were counted in individual EVL cells of WT and MZrab25b embryos stained with Rab11b antibodies and phalloidin. The diameter of Rab11 compartments was measured to compare the sizes of Rab11 positive endosomes between genotypes and was performed using the measure tool in ImageJ.
 
-## Statistics
+#### Statistics
 
 Statistical Analysis was performed using PRISM software. Sample means p values were compared to infer significance, with the type of test indicated in figure captions.
 
-## CRISPR/Cas9 mutant generation
+### CRISPR/Cas9 mutant generation
 
 To determine Cas9 target sites against rab25a and rab25b (ZFIN ID: ZDB-Gene-041212–69; ZDB-Gene-050706–113), the CHOPCHOP tool was used (https://chopchop-cbu-uib-no.myaccess.library.utoronto.ca). The following target sites were chosen for rab25a: Exon 2 (Rab GTPase Domain), 5’-AGTGGTTTTAATTGGAGAATCAGG-3’; for rab25b: Exon 2 (Rab GTPAse Domain), 5’-CTGGATTGGAGCGGTACCGC −3’. To generate gRNA’s, sgDNA templates were generated using PCR without cloning:
 
@@ -244,7 +350,7 @@ rab25a and rab25b PCR products were digested with Hinf1 and Kpn1, respectively. 
 
 We had difficulty rescuing the mutant phenotypes by RNA injection, likely due to the required maternal contribution of rab25a and rab25b. We also observed that rab25a mutant alleles produced more severe phenotypes over successive generations of in-crossing.
 
-## Cloning
+### Cloning
 
 AB, MZrab25a, or MZrab25b embryos at 24hpf were dechorionated and RNA was extracted from 60 to 80 embryos using Trizol (Invitrogen). cDNA was generated using Postscript II first strand cDNA synthesis kit (NEB). Coding sequences were PCR amplified from cDNA or vectors with Q5 high-fidelity Taq Polymerase (NEB) using the following primers:
 
@@ -256,30 +362,30 @@ N-terminal venus fusion protein was generated by digesting vector and insert wit
 
 rab25b PCR products were gel extracted and recombined with pDONR221 using BP clonase. Clones were validated by sequencing. Fusion proteins and transgenic vectors were generated by gateway recombination using LR Clonase.
 
-## mRNA synthesis and microinjections
+### mRNA synthesis and microinjections
 
 Unless specified otherwise, Not1-digested plasmids were used as templates for in vitro transcription using the SP6 mMessage mMachine Kit (Ambion). mRNA was purified using MEGAclear kit or NucAway Spin Columns (Ambion). RNAs were injected into the yolk cell or blastoderm of one-cell stage embryos, as described (Bruce et al., 2003). Doses of injected RNA were: h2a-rfp (50 pg), mrfp/gfp (50 pg), lyn-egfp (50 pg), gfp-Utrch (100 pg), mcherry-rab11a (300 pg), egfp-rab25b (300 pg), venus-rab25a (300 pg), mcherry-rab25b (300 pg), mcherry-mklp1 (150–200 pg). Plasmids were injected at doses ranging from 10 to 20 pg.
 
-## Whole-mount immunohistochemistry
+### Whole-mount immunohistochemistry
 
 Antibody staining was performed as previously described (Lepage et al., 2014). Dilutions were as follows: rhodamine-phalloidin (1:200), anti-E-cadherin (Abcam, 1:1000), anti-ZO-1 (1:500), anti-phospho-myosin-light chain 2 Ser 19 (cell signaling, 1:100). Embryos were mounted in either 80% glycerol or 0.05% low-melt agarose. Secondary antibodies used were goat-anti-mouse Alexa 488 (Invitrogen, 1:500) and goat anti-rabbit-Cy3 (Jackson immunoresearch,1:500). Sytox green (Invitrogen) was dilution to 0.5 µM in fixative.
 
-## Whole-mount in situ hybridization
+### Whole-mount in situ hybridization
 
 Whole mount in situ hybridizations were performed as previously described (Jowett and Lettice, 1994). keratin4, ta, rab25a, rab25b, gsc, sox17 probes were generated by linearizing pBS vectors and transcribing using T7 RNA polymerase (ThermoFisher Scientific). Probes were purified using NucAway Spin Columns (Ambion).
 
-## pHRodo dextran assay
+### pHRodo dextran assay
 
 Embryos were injected into the yolk cell at the one-cell stage with lyn-egfp mRNA, dechorionated and bathed in pHRodo red dextran (Invitrogen, P10361) dissolved in E3 medium (100 µg/ml). WT and MZrab25b embryos were incubated in the same media, while MZrab25a embryos were in a separate dish. Treatments were performed in petri dishes and embryos were incubated from high stage until 90% epiboly at 30°C. MZrab25b embryos were identified by their phenotype and mounted laterally in 0.05% low-melt agarose on glass bottom dishes (Matek).
 
-## Laser ablations
+### Laser ablations
 
 Tg:(actb1:myl12.1-eGfp) and MZrab25a Tg:(actb1:myl12.1-eGfp) embryos at 60% epiboly were dechorionated and mounted laterally in 0.05% low-melt agarose on glass bottom dishes (Matek). Imaging was done at room temperature using a Revolution XD spinning disk confocal microscope (Andor Technology) with an iXon Ultra 897 camera (Andor Technology), a 40X (NA1.35; Olympus) oil-immersion lens and Metamorph software (Molecular Devices). Ablations were performed in marginal regions, 2–3 cell rows back from the EVL-yolk cell margin on junctions parallel and perpendicular to the margin. Junctions were cut using a pulsed Micropoint nitrogen laser (Andor technology) tuned to 365 nm. The tissue was imaged immediately before and after ablation in which 10 laser pulses were delivered. 16-bit z-stacks were acquired every 3 s at 3 µm stacks and projected for analysis.
 
-## qPCR
+### qPCR
 
 Total RNA was purified from shield stage of zebrafish embryos using Trizol, and an additional DNase I (Turbo DNaseI from Thermo Fisher Scientific) step was used to remove genomic DNA. RNA was reverse-transcribed with random primers using the high-capacity cDNA synthesis kit (Thermo Fisher Scientific). Gene expression was monitored by quantitative real time PCR (qPCR) using primers that distinguish individual transcripts (Key Resources Table). The standard curve method was used to calculate expression levels, with zebrafish genomic DNA used to generate the standard curves. Levels of lsm12b RNA were used to normalize expression values; primer sequences are shown in the Key Resources Table. All samples were confirmed not to have DNA contamination by generating a reverse transcriptase negative sample and confirming there was no lsm12b amplification. At least three biological replicates were analyzed for each experiment. Significant differences in gene expression between shield stage embryos were determined by t-test.
 
-## Imaging
+### Imaging
 
 Imaging was performed on a Leica TCS SP8 confocal microscope unless otherwise specified.

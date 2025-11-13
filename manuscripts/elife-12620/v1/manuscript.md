@@ -51,17 +51,19 @@
 
 ## Abstract
 
-10.7554/eLife.12620.001 Bacterial phototaxis was first recognized over a century ago, but the method by
+Bacterial phototaxis was first recognized over a century ago, but the method by
                     which such small cells can sense the direction of illumination has remained
                     puzzling. The unicellular cyanobacterium Synechocystis sp. PCC
                     6803 moves with Type IV pili and measures light intensity and color with a range
-                    of photoreceptors. Here, we show that individual Synechocystis cells do not respond to a spatiotemporal gradient in light intensity, but rather
+                    of photoreceptors. Here, we show that individual Synechocystis
+                    cells do not respond to a spatiotemporal gradient in light intensity, but rather
                     they directly and accurately sense the position of a light source. We show that
-                    directional light sensing is possible because Synechocystis cells act as spherical microlenses, allowing the cell to see a light source and
+                    directional light sensing is possible because Synechocystis
+                    cells act as spherical microlenses, allowing the cell to see a light source and
                     move towards it. A high-resolution image of the light source is focused on the
                     edge of the cell opposite to the source, triggering movement away from the
                     focused spot. Spherical cyanobacteria are probably the world’s smallest
-                    and oldest example of a camera eye. DOI: http://dx.doi.org/10.7554/eLife.12620.001
+                    and oldest example of a camera eye.
 
 ## Introduction
 
@@ -136,17 +138,45 @@ Previous studies of Synechocystis single cell phototaxis
 
 ## Results
 
-## Synechocystis phototaxis is based on direct light
+### Synechocystis phototaxis is based on direct light
                     perception, rather than a biased random walk
 
-Individual
+Individual Synechocystis cells moving in two dimensions on
+                    an agarose surface in response to different light regimes were tracked
+                    microscopically to determine whether single cells are capable of direct
+                    perception of the position of a light source. First, we tested the response of
+                    cells to a light intensity gradient projected onto the surface from the
+                    microscope condenser (Figure 1a), using a
+                    gradient of white light from 0–20 µmol photons
+                        m–2 s–1, an intensity range that is
+                    relevant for positive phototaxis (Choi et al.,
+                        1999; Bhaya, 2004; Chau et al., 2015). However, the cells
+                    moved randomly without any significant directional bias (Figure 1b; Video
+                        1). If Synechocystis phototaxis were based on a
+                    biochemical memory like E. coli chemotaxis, cells would
+                    perceive temporal changes in light intensity as they move across the surface
+                    through the light gradient and would then accumulate in regions of optimal light
+                    intensity. This did not occur (Figure 1b,
+                        Video 1). By contrast, when cells
+                    were illuminated by a unidirectional light source (RGB illumination at 10
+                    µmol photons m–2 s–1) at an angle
+                    oblique to the surface (Figure 1a), the
+                    majority of motile cells switched direction within about 1 min, and then moved
+                    directly towards the light source (Figure
+                        1c,d,f; Video 1). Under
+                    illumination from two equal-intensity orthogonal light sources, the majority of
+                    cells moved towards a point midway between the two light sources (Figure 1e; Video 1). These behaviors are not consistent with a
+                    run-and-tumble mechanism or any kind of biased random walk. In accord with
+                    previous studies (Choi et al., 1999;
+                        Chau et al., 2015), we conclude that
+                    individual cells can directly and accurately perceive the position of a light
+                    source and control their motility accordingly.
 
 ![Figure
                                 1.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig1-v1.jpg)
 
 **Figure
-                                1.:** Synechocystis cells under different light
-                                regimes.Displacement over a 5 min time-frame was measured
+                                1.:** Displacement over a 5 min time-frame was measured
                                 1 min after the onset of illumination. The mean resultant
                                 length from a Rayleigh test (r) and the number of
                                 tracked cells (n) are shown. See also Video 1. All data were
@@ -170,17 +200,54 @@ Individual
                                 length from a Rayleigh test (r) where 0 indicates
                                 random displacements and 1 indicates maximal clustering in the
                                 direction of illumination. LED, light emitting
-                                    diode.DOI:
-                                http://dx.doi.org/10.7554/eLife.12620.003
+                                    diode.
 
-## Shading is minimal in single Synechocystis cells
+![Video
+                                1.](https://cdn.elifesciences.org/articles/12620/elife-12620-media1.mp4.jpg)
+
+**Video
+                                1.:** The video
+                                gives a schematic overview of the experimental set-up, followed by
+                                movement of cells in a projected light gradient, and with oblique
+                                illumination from two orthogonal directions, and then from both
+                                directions simultaneously. In each case, the raw video data is
+                                followed by the same movie clip with the tracks of cells
+                                superimposed. Time in minutes is indicated.
+
+### Shading is minimal in single Synechocystis cells
+
+Synechocystis cells contain a dense lamellar system of thylakoid
+                    membranes packed with photosynthetic complexes, and we initially postulated that
+                    light direction sensing depends on shading by the thylakoids, with the motility
+                    apparatus activated by brighter light at the illuminated side of the cell and
+                    deactivated at the shaded side of the cell. To assess the plausibility of this
+                    idea, we estimated the transmission spectrum of a single motile cell, scaling
+                    the absorption spectrum for a cell suspension according to the mean cellular
+                    pigment content. To ensure that pigment content was appropriate for phototactic
+                    cells, we used cells taken from moving colonies on motility plates (Figure 2). The transmission spectrum shows
+                    that even at peak absorption wavelengths, a single cell can absorb only about
+                    20% of the photons that pass through it (Figure
+                        2). Although local pigment concentrations within the cell are quite
+                    high (Figure 2), the very short optical
+                    path length means that light absorption by the cell is low. Note
+                    that our estimate assumes a homogeneous distribution of pigments within the
+                    thylakoid region of the cell: in reality, pigment clustering will tend to
+                    decrease the cell absorbance due to enhanced self-shading of pigments (Duysens, 1956). Thus, 20% represents a
+                    maximum estimate of the proportion of photons that can be absorbed, and the
+                    light intensity gradient across the cell due to shading must be almost
+                    negligible. The direct measurement of single cell absorption spectra is
+                    technically challenging, and we are aware of only one such measurement in the
+                    literature for a cyanobacterium. Sugiura and
+                        Itoh (2012) show that the peak absorbance for a single cell of
+                        Nostoc sp. is about 0.04. This corresponds to a peak
+                    absorption of about 10% of the photons that pass through the cell, which is even
+                    lower than our estimate for Synechocystis.
 
 ![Figure
                                 2.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig2-v1.jpg)
 
 **Figure
-                                2.:** Synechocystis
-                                cell.Estimate obtained by scaling and converting the
+                                2.:** Estimate obtained by scaling and converting the
                                 absorption spectrum for a suspension of cells from a moving
                                     Synechocystis colony, as detailed in Materials
                                 and methods. Pigments (including chlorophyll: Chl and
@@ -193,15 +260,25 @@ Individual
                                 cell, since the estimate assumes a homogeneous distribution of
                                 pigments within the thylakoid region. In reality, inhomogeneous
                                 distribution of membranes and pigments will tend to decrease
-                                absorption due to enhanced self-shading (Duysens, 1956).DOI:
-                                http://dx.doi.org/10.7554/eLife.12620.005
+                                absorption due to enhanced self-shading (Duysens, 1956).
 
-## Synechocystis cells act as microscopic spherical
+### Synechocystis cells act as microscopic spherical
                     lenses
 
 Most light microscopy uses illumination orthogonal to the surface on which the
                     sample rests, with the exception of dark-field microscopy, which uses oblique
-                    illumination from all sides. While investigating
+                    illumination from all sides. While investigating Synechocystis
+                    phototaxis, we observed cells instead with oblique illumination from one side
+                    only. Observations with this unusual illumination suggest a solution to the
+                    problem of directional light perception in Synechocystis. These
+                    images reveal that each cell acts as a microscopic spherical lens, focusing an
+                    intense light spot close to the opposite side of the cell from
+                    the light source and the direction of movement (Figure 3a). Images from two orthogonal light sources (as employed in
+                    one of the motility assays in Figure 1e
+                    and Video 1) are focused at different
+                    points on the cell periphery (Figure 3a),
+                    indicating that the cell can focus an image of its surroundings at the plasma
+                            membrane.
 
 ![Figure
                                 3.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig3-v1.jpg)
@@ -235,14 +312,13 @@ Most light microscopy uses illumination orthogonal to the surface on which the
                                     field. The wave patterns represent a snapshot of the
                                     oscillating electromagnetic field propagating through the model
                                     cell. GFP, green fluorescent
-                                        protein.DOI:
-                                    http://dx.doi.org/10.7554/eLife.12620.006
+                                        protein.
 
 ![Figure 3—figure
                                 supplement 1.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig3-figsupp1-v1.jpg)
 
 **Figure 3—figure
-                                supplement 1.:** Figure 3c).Fluorescence excitation was
+                                supplement 1.:** Fluorescence excitation was
                                     achieved by near-total internal reflection fluorescence (TIRF)
                                     (“highly inclined”/“oblique”)
                                     illumination of the samples, with fiber-coupled 488 nm laser
@@ -255,8 +331,7 @@ Most light microscopy uses illumination orthogonal to the surface on which the
                                     be translated across the BFP to adjust the inclination angle of
                                     the beam through the sample. Images were captured using a GFP
                                     filter set. BFP, back focal plane; GFP, green
-                                    fluorescent protein.DOI:
-                                    http://dx.doi.org/10.7554/eLife.12620.007
+                                    fluorescent protein.
 
 The images in Figure 3a do not give a
                     quantitative picture of the lensing effect since the focused light spot is
@@ -325,10 +400,56 @@ To probe the physical basis for the lensing effect, we modeled light perturbatio
                     similar sharply focused light beams at the edge of the object opposite to
                     the light source: these are termed “photonic nanojets” (Ferrand et al., 2008; Heifetz et al., 2009).
 
-## Synechocystis positive phototaxis is a photophobic response
+### Synechocystis positive phototaxis is a photophobic response
                     to excitation of one side of the cell
 
-The micro-optic effects shown in
+The micro-optic effects shown in Figure 3
+                    produce intensity differences across Synechocystis cells that
+                    are opposite in orientation and at least 20 times greater than those predicted
+                    from shading due to light absorption by the photosynthetic pigments (compare
+                        Figure 3c with Figure 2). Figure
+                        3a,b,c,e provide direct experimental confirmation that light
+                    intensity is highest at the edge of the cell furthest from the light source.
+                    This suggests that the basis for directional light perception by
+                        Synechocystis should depend on the lensing properties of
+                    the cells, with positive phototaxis based on the cell moving away from the light
+                    spot focused at its periphery. We tested this idea by using a
+                    highly focused laser light spot (Lowe
+                        et al., 2015) as an alternative way to selectively illuminate one
+                    edge of the cell. Synechocystis cells moving directionally on
+                    an agarose surface towards a red (625 nm) light emitting diode (LED) light
+                    source were visualized by fluorescence from the photosynthetic pigments excited
+                    by the LED light. Focused spots of light at the rear periphery of the cell were
+                    again observed under this illumination regime (Figure 4a, Video 2),
+                    showing that the focused light spots extend into the thylakoid membrane region.
+                    The moving cells were allowed to encounter a spot of 640 nm laser light focused
+                    on the agarose surface (Figure 4; Video 2). The intensity gradient at the
+                    edge of the laser spot was steep enough to ensure specific exposure of one side
+                    of the cell to the light (Figure 4a).
+                    Whenever one edge of a cell encountered the edge of the laser spot, the cell
+                    changed direction to move away from the laser illumination (Figure 4b; Video
+                        2). Cells did not cross the center of the intense laser spot, but
+                    instead changed direction when the laser light intensity at the front edge of
+                    the cell exceeded the intensity of the light spot focused by the cell at its
+                    rear periphery by a factor of about 2–10, as assessed from the brightness
+                    of fluorescence from the photosynthetic pigments (Figure 4c). In accord with our hypothesis, this shows that
+                        Synechocystis phototaxis is essentially a photophobic
+                    response to selective excitation of one side of the cell. The data in Figure 4 and Video 2 indicate that this photophobic response is
+                    increasingly strong with stronger localized excitation: thus, when the cells
+                    encounter laser light that is stronger than the focused light spot at the rear
+                    edge of the cell, they change direction to move away from the laser light.
+
+![Video
+                                2.](https://cdn.elifesciences.org/articles/12620/elife-12620-media2.mp4.jpg)
+
+**Video
+                                2.:** Cells are imaged by
+                                fluorescence from the photosynthetic pigments, and are moving
+                                towards an oblique LED light at the bottom of the frame: note the
+                                focused light spot at the rear edge of each cell. The superimposed
+                                red spot indicates the position of the laser, and time in min is
+                                shown at the top left. LED, light emitting
+                                    diode.
 
 ![Figure
                                     4.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig4-v1.jpg)
@@ -363,16 +484,13 @@ The micro-optic effects shown in
                                     cells in which autofluorescence induced by the laser exceeds
                                     autofluorescence induced by the light focused on the cell for
                                     phototaxis by at least two-fold. LED, light emitting
-                                    diodeDOI:
-                                    http://dx.doi.org/10.7554/eLife.12620.009
+                                    diode
 
 ![Figure 4—figure
                                 supplement 1.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig4-figsupp1-v1.jpg)
 
 **Figure 4—figure
-                                supplement 1.:** Synechocystis cells to a
-                                    highly focused laser light spot (Figure 4; Video
-                                    2).(a) The
+                                supplement 1.:** (a) The
                                     time lapse microscope was constructed on the base of an
                                     Olympus IX81 microscope, using a 40x× objective lens
                                     (Air, NA 0.75). Two air-cooled electron-multiplying
@@ -407,12 +525,11 @@ The micro-optic effects shown in
                                     during acquisition. A third LED (625 nm, 3 mW) was mounted close
                                     to the sample at an oblique angle to provide directional
                                     illumination for the motility assay. LED, light emitting
-                                    diode.DOI:
-                                    http://dx.doi.org/10.7554/eLife.12620.010
+                                    diode.
 
 ## Discussion
 
-## Directional light perception in Synechocystis depends on
+### Directional light perception in Synechocystis depends on
                     lensing, not shading
 
 Here we have shown that Synechocystis cells act as very
@@ -429,7 +546,7 @@ Here we have shown that Synechocystis cells act as very
                     for directional light perception, which would predict that light in this
                     intensity range should attract the cells.
 
-## Directional control of motility in Synechocystis
+### Directional control of motility in Synechocystis
 
 Synechocystis motility depends on the extension, adhesion and
                     retraction of T4P (Bhaya, 2004), which
@@ -449,7 +566,7 @@ Synechocystis motility depends on the extension, adhesion and
                         Myxococcus xanthus, both PilB and PilT show dynamic
                     relocalization between the two cell poles, on comparable timescales (Bulyha et al., 2009).
 
-## Phototactic signal transduction in Synechocystis
+### Phototactic signal transduction in Synechocystis
 
 It is clear that multiple photoreceptors are involved in
                         Synechocystis phototaxis, with light sensors that absorb at
@@ -483,16 +600,34 @@ Downstream signal transduction from PixJ1 likely involves the products of
                         2012), these response regulators might interact directly with the
                         Synechocystis motility apparatus.
 
-## A model for directional light perception and phototaxis
+### A model for directional light perception and phototaxis
 
 Combining our current results with the previous study on PilB1 localization and
-                    motility in
+                    motility in Synechocystis (Schuergers et al., 2015) and the likely scheme for signal
+                    transduction discussed above leads to a simple model for control of positive
+                    phototaxis in Synechocystis, which is illustrated in Figure 5. The bright focused image of the
+                    light source is perceived by PixJ1 in the plasma membrane, resulting in local
+                    changes in the phosphorylation status of the response regulators PixG and/or
+                    PixH, which leads to local inactivation of the T4P motility apparatus and
+                    dispersal of the motor proteins (PilB1 and likely also PilT). The motility
+                    apparatus therefore assembles at the side of the cell facing the light,
+                    resulting in movement towards the source (Figure
+                        5). The 1 min timescale for direction switching in
+                        Synechocystis (Figure
+                        1f) is consistent with the rapid kinetics of relocalization of PilB1
+                    patches (Schuergers et al., 2015).
+                    Responses to multiple light sources (as in Figure 1e and Figure 4) can
+                    be explained if it is assumed that the dispersal signal is graded with light
+                    intensity. Thus when a cell is exposed to a stronger light source at one edge
+                    (as with cells encountering the focused laser spot in Figure 4 and Video
+                        2), the motility apparatus is always most strongly inactivated in the
+                    region of strongest local illumination.
 
 ![Figure
                                 5.](https://cdn.elifesciences.org/articles/12620/elife-12620-fig5-v1.jpg)
 
 **Figure
-                                5.:** Synechocystis.Directional
+                                5.:** Directional
                                 illumination of the cell produces a sharply focused and
                                 intense spot of light (resembling a photonic nanojet) at the cell
                                 periphery on the opposite side from the light source. The focused
@@ -503,10 +638,9 @@ Combining our current results with the previous study on PilB1 localization and
                                 Consequently, patches of the motor proteins can only form on the
                                 side of the cell facing the light source. Pili are extended and
                                 retracted at this side of the cell, which therefore moves towards
-                                the light. T4P, Type IV pili.DOI:
-                                http://dx.doi.org/10.7554/eLife.12620.011
+                                the light. T4P, Type IV pili.
 
-## Vision in Synechocystis
+### Vision in Synechocystis
 
 The model in Figure 5 implies that,
                     essentially the Synechocystis cell functions as a microscopic
@@ -529,7 +663,7 @@ From the observed dimensions of the spot of 488 nm light focused by
                     comes between initial light perception and the response of the motility
                     apparatus.
 
-## Wider implications
+### Wider implications
 
 Our model (Figure 5) implies that the
                     maximum efficiency of directional light sensing will be achieved in a
@@ -571,7 +705,7 @@ Cyanobacteria are not the only unicellular organisms capable of directional ligh
 
 ## Materials and methods
 
-## Strain, growth conditions and phototaxis assay
+### Strain, growth conditions and phototaxis assay
 
 We used a motile sub-strain of the original Synechocystis sp.
                     PCC 6803 wild type from the Pasteur Culture Collection, acquired from the lab of
@@ -586,7 +720,7 @@ We used a motile sub-strain of the original Synechocystis sp.
                         s–1 (Phillips MASTER TL-D Super 80 18W/840, Philips GmbH
                     Market DACH, Germany).
 
-## Video measurement of single cell motility
+### Video measurement of single cell motility
 
 Cells from the moving front of a colony on a motility plate were resuspended in
                     fresh BG11 medium and 3 µl aliquots were directly spotted on top of 5 ml
@@ -606,7 +740,7 @@ Cells from the moving front of a colony on a motility plate were resuspended in
                     stated, the exposure time was 200 ms to reduce the background light needed for
                     visualizing the cells.
 
-## Single cell tracking and data analysis
+### Single cell tracking and data analysis
 
 We developed the BacteriaMobilityQuant software (https://web.fe.up.pt/~dee11017/software/BacterialMobilityQuant.zip)
                     implemented in MATLAB for tracking single cells in time lapse
@@ -633,7 +767,7 @@ We developed the BacteriaMobilityQuant software (https://web.fe.up.pt/~dee11017/
                     the reliability of quantitative comparisons. The experiment is representative of
                     >10 such experiments carried out under comparable conditions.
 
-## Estimate of a single cell transmission spectrum
+### Estimate of a single cell transmission spectrum
 
 Synechocystis cells were scraped from a moving colony on a
                     motility plate and resuspended in fresh BG11 medium. An absorption spectrum for
@@ -671,7 +805,7 @@ Synechocystis cells were scraped from a moving colony on a
                     due to enhanced mutual shading of pigments (Duysens, 1956). Therefore, the spectrum shown represents a minimum
                     estimate of light transmission through a single cell.
 
-## Fluorescence measurements with oblique excitation
+### Fluorescence measurements with oblique excitation
 
 The Synechocystis torA-gfp mutant, expressing GFP fused to the
                     TorA leader sequence for export to the periplasm, was previously described
@@ -706,7 +840,7 @@ The Synechocystis torA-gfp mutant, expressing GFP fused to the
                     an anti-clockwise direction back to the origin. The line width was 3 pixels and
                     the analysis was done in ImageJ.
 
-## Photolithography
+### Photolithography
 
 Permanent EPON epoxy-based photosensitive resin (SU-8 3000 series, MicroChem,
                     Westborough, MA) with outstandingly low absorption in the near-UV range (LaBianca and Gelorme, 1995) was applied
@@ -729,7 +863,7 @@ Permanent EPON epoxy-based photosensitive resin (SU-8 3000 series, MicroChem,
                     axially symmetric profiles was computed in order to average out the influence of
                     surface roughness.
 
-## Modeling of micro-optic effects
+### Modeling of micro-optic effects
 
 The optical field distribution was computed by the FDTD method. The algorithm
                     solves the time-dependent Maxwell curl equations by using discrete time steps
@@ -742,7 +876,7 @@ The optical field distribution was computed by the FDTD method. The algorithm
                     space and time grid (Δx = Δy = 10 nm, Δt =
                         10–8 s).
 
-## Motility assays with localized laser excitation
+### Motility assays with localized laser excitation
 
 Wild-type motile Synechocystis cells were freshly plated in a
                     line on motility plates and grown overnight at 30°C with directional

@@ -60,19 +60,371 @@ To understand what MEs exist in bacterial cells and how they might form, we unde
 
 We examined tens of thousands of electron cryo-tomograms of ~90 bacterial species collected in the Jensen lab for various projects over the past 15 years together with tomograms collected in the Briegel lab. Most cells were intact, but some had naturally lysed. Note that we make this classification based on the cells’ appearance in tomograms; intact cells have an unbroken cell envelope, uniform periplasmic width, and consistently dense cytoplasm. In addition to cryo-tomograms of cells, this dataset also included naturally shed vesicles purified from S. oneidensis. In all, we identified OMEs and OMVs in 13 bacterial species (summarized in Table 1, Table 2).
 
-## I – The diverse forms of bacterial membrane structures
+**Table 1.**
+ A summary of the species included in this study and the major membrane structures identified in each species.Note that the approximation symbol before the number of cells indicates that in many tomograms we only see a part of the cell(s).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Species</th>
+      <th rowspan="3">Class</th>
+      <th rowspan="3">No. of cells</th>
+      <th colspan="8">Features observed</th>
+    </tr>
+    <tr>
+      <th colspan="4">Tubes</th>
+      <th colspan="2">Vesicle chains</th>
+      <th>Budding/ vesicles</th>
+      <th>Nanopods</th>
+    </tr>
+    <tr>
+      <th>Uniform diameter – scaffold</th>
+      <th>Uniform diameter – no scaffold</th>
+      <th>Variable diameter</th>
+      <th>Pearling</th>
+      <th>Connectors</th>
+      <th>No connectors</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shewanella oneidensis</td>
+      <td>Gammaproteobacteria</td>
+      <td>~700</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Subramanian et al., 2018</td>
+      <td>&gt; 100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pseudoalteromonas luteoviolacea</td>
+      <td>Gammaproteobacteria</td>
+      <td>~67</td>
+      <td></td>
+      <td>~100</td>
+      <td></td>
+      <td>~10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hylemonella gracilis</td>
+      <td>Betaproteobacteria</td>
+      <td>~105</td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>4</td>
+      <td></td>
+      <td></td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Delftia acidovorans</td>
+      <td>Betaproteobacteria</td>
+      <td>n.a.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>See Shetty et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Magnetospirillum magneticum</td>
+      <td>Alphaproteobacteria</td>
+      <td>~56</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Caulobacter crescentus</td>
+      <td>Alphaproteobacteria</td>
+      <td>~464</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Helicobacter hepaticus</td>
+      <td>Epsilonproteobacteria</td>
+      <td>~28</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Helicobacter pylori</td>
+      <td>Epsilonproteobacteria</td>
+      <td>~883</td>
+      <td>&gt;100</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&gt;100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Myxococcus xanthus</td>
+      <td>Deltaproteobacteria</td>
+      <td>~2000</td>
+      <td></td>
+      <td>&gt;100</td>
+      <td></td>
+      <td>&gt;100</td>
+      <td></td>
+      <td></td>
+      <td>&gt;100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Borrelia burgdorferi</td>
+      <td>Spirochaetes</td>
+      <td>~61</td>
+      <td></td>
+      <td>9</td>
+      <td></td>
+      <td></td>
+      <td>19</td>
+      <td></td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flavobacterium johnsoniae</td>
+      <td>Flavobacteria</td>
+      <td>~203</td>
+      <td></td>
+      <td>~45</td>
+      <td></td>
+      <td>~15</td>
+      <td></td>
+      <td></td>
+      <td>&gt;100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flavobacterium anhuiense</td>
+      <td>Flavobacteria</td>
+      <td>~49</td>
+      <td></td>
+      <td></td>
+      <td>5</td>
+      <td>7</td>
+      <td></td>
+      <td>4</td>
+      <td>&gt;100 (including the teardrop-like extensions)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chitinophaga pinensis</td>
+      <td>Chitinophagia</td>
+      <td>~61</td>
+      <td></td>
+      <td></td>
+      <td>11</td>
+      <td>12</td>
+      <td></td>
+      <td>3</td>
+      <td>81</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ The different bacterial strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Strain</th>
+      <th>Relevant references</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shewanella oneidensis</td>
+      <td>MR-1 211,586</td>
+      <td>Subramanian et al., 2018; Kaplan et al., 2019a; Kaplan et al., 2019b</td>
+    </tr>
+    <tr>
+      <td>Pseudoaltermonas luteoviolacea</td>
+      <td>43,657</td>
+      <td>Shikuma et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Hylemonella gracilis</td>
+      <td>ATCC 19624 887,062</td>
+      <td>Kaplan et al., 2020; Chen et al., 2011; Kaplan et al., 2021b</td>
+    </tr>
+    <tr>
+      <td>Delftia acidovorans</td>
+      <td>Cs1-4 80,866</td>
+      <td>Shetty et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Magnetospirillum magneticum</td>
+      <td>AMB-1 342,108</td>
+      <td>Cornejo et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Caulobacter crescentus</td>
+      <td>NA1000</td>
+      <td>Kaplan et al., 2021c</td>
+    </tr>
+    <tr>
+      <td>Helicobacter hepaticus</td>
+      <td>ATCC 51449 235,279</td>
+      <td>Chen et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Helicobacter pylori</td>
+      <td>26,695</td>
+      <td>Chang et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Myxococcus xanthus</td>
+      <td>DK1622</td>
+      <td>Chang et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Borrelia burgdorferi</td>
+      <td>B31 224,326</td>
+      <td>Briegel et al., 2009; Chen et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Flavobacterium johnsoniae</td>
+      <td>CJ2618</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Flavobacterium anhuiense</td>
+      <td>98</td>
+      <td>Carrión et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Chitinophaga pinensis</td>
+      <td>94</td>
+      <td>Carrión et al., 2019</td>
+    </tr>
+  </tbody>
+</table>
+
+### I – The diverse forms of bacterial membrane structures
 
 Based on their features, we classified membrane projections into the following categories: (1) tubular extensions with a uniform diameter and with an internal scaffold (Figure 1a and b and Figure 1—figure supplements 1 and 2); (2) tubular extensions with a uniform diameter and without a clear internal scaffold (Figure 1c–g and Figure 1—figure supplement 3); (3) tubular extensions with a vesicular dilation at the tip (a teardrop-like structure) and irregular dark densities inside (Figure 1h); (4) tubular extensions with irregular diameter or pearling tubes (Figure 2a–g); (5) interconnected chains of vesicles with uniform neck-like connectors (Figure 2h & i); (6) budding or detached vesicles: budding vesicles were still attached to the membrane, while detached vesicles were observed near a cell and could have budded directly or from a tube that pearled (Figure 3a–d and Figure 3—figure supplement 1); (7) nanopods: tubes of S-layer containing OMVs (Figure 3e–i). See Table 1 for a summary of these observations.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig1-v2.jpg)
+
+**Figure 1.:** Slices through electron cryo-tomograms of the indicated bacterial species highlighting the presence of outer membrane extensions (OMEs) with uniform diameters and either with (a–b) or without (c–g) an internal scaffold, and teardrop-like extensions (h). In this and all subsequent figures, red boxes indicate enlarged views of the same slice. Scale bars are 50 nm, except in main panel (h) 100 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The tubes stemming from vesicles in (b and d) have a bulging at their end due to the absence of the scaffold protein and dark densities can be seen at the other base of these tubes. Scale bars in black boxed panels are 100 nm, in red boxed panels 50 nm except in (b and d) 20 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Dashed red arrow in (d) points to the scaffold structure inside the tube. Scale bars are 100 nm in (a–c) and 50 nm in (d–f).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Scale bar is 50 nm. Dashed red line indicates a composite image of two slices through the tomogram at different z-heights.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig2-v2.jpg)
 
 **Figure 2.:** Slices through electron cryo-tomograms of the indicated bacterial species highlighting the presence of pearling tubes (a–e), tubes with irregular diameter (f–g), or outer membrane vesicle (OMV) chains connected by neck-like bridges (h–i). White arrows in the enlargement in (h) and in panel (i) point to the 14 nm connectors in Borrelia burgdorferi. Scale bars are 50 nm, except in main panel (g) 100 nm.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig3-v2.jpg)
+
+**Figure 3.:** Slices through electron cryo-tomograms of the indicated bacterial species highlighting the presence of budding vesicles (a–d) or nanopods (e– i). Scale bars are 50 nm in main panels and 20 nm in enlargements.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a and b) Slices through electron cryo-tomograms of purified membrane extensions (MEs) and membrane vesicles (MVs) from Shewanella oneidensis. Scale bar is 10 nm. (c) A slice through an electron cryo-tomogram of an Myxococcus xanthus cell highlighting the presence of outer MVs (OMVs). Scale bars are 100 nm and 20 nm in the enlargement on the right.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** For both species, p < 0.001 (determined using t-test: two-sample assuming unequal variances).
+
 Scaffolded membrane tubes were observed only in H. pylori and had a uniform diameter of 40 nm. The H. pylori strain imaged (fliP*) contains a naturally occurring point mutation that disrupts the function of FliP, the platform upon which other CORE proteins assemble (Fukumura et al., 2017; Fabiani et al., 2017; Minamino et al., 2019). In addition, the dataset contained other mutants in this fliP* background including additional CORE proteins (ΔfliO and ΔfliQ), flagellar basal body proteins (ΔfliM and ΔfliG), and the tyrosine kinase required for expression of the class II flagellar genes (ΔflgS) (Lertsethtakarn et al., 2011; Figures 1a–b–4, Figure 1—figure supplement 1 and Table 3). This suggests that the H. pylori membrane tubes are unrelated to the CORE-dependent nanotubes that mediate cytoplasmic exchange in B. subtilis and other species (Bhattacharya et al., 2019; Pal et al., 2019).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig4-v2.jpg)
 
-**Figure 4.:** Helicobacter pylori mutants, including CORE mutants.Slices through electron cryo-tomograms of the indicated H. pylori mutants (all in the fliP* background) showing the presence of membrane tubes. The enlargement in (f) highlights a dilation at the end of the tube (dark blue arrow) due to the absence of the scaffold (orange arrow). Light blue arrows indicate the end points of the scaffold. Scale bar is 100 nm.
+**Figure 4.:** Slices through electron cryo-tomograms of the indicated H. pylori mutants (all in the fliP* background) showing the presence of membrane tubes. The enlargement in (f) highlights a dilation at the end of the tube (dark blue arrow) due to the absence of the scaffold (orange arrow). Light blue arrows indicate the end points of the scaffold. Scale bar is 100 nm.
+
+**Table 3.**
+ Numbers of tubes identified in different Helicobacter pylori mutants.Note that the approximation symbol before the number of cells indicates that in many tomograms we only see a part of the cell(s).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutant</th>
+      <th>Number of cells</th>
+      <th>Number of tubes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. pylori ∆fliG fliP*</td>
+      <td>~47</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>H. pylori ∆fliM fliP*</td>
+      <td>~265</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>H. pylori ∆fliO fliP*</td>
+      <td>~267</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>H. pylori ∆fliQ fliP*</td>
+      <td>~220</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>H. pylori ∆flgS fliP*</td>
+      <td>~84</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
 
 Previously, H. pylori tubes were described as forming in the presence of eukaryotic host cells (Chang et al., 2018). Here, however, we observed tubes in H. pylori grown on agar plates in the absence of eukaryotic cells, suggesting that they also form in the absence of host cells. We observed some differences, though, from the tubes formed in the presence of host cells: the tube ends were closed, no clear lateral ports were seen, and the tubes were usually straight. While some of these tubes extended more than 0.5 μm, we never observed pearling. However, in some tubes, the internal scaffold did not extend all the way to the tip, and its absence caused the tube to dilate (from 40 nm in the presence of the scaffold to 66 nm in its absence, see Figure 4f and examples in Figure 1—figure supplement 1b and d). In some cases we also observed tubes stemming from vesicles resulting from cell lysis (Figure 4f, Figure 1—figure supplement 1b and d, Figure 1—figure supplement 2), and dark densities could be seen at the base of many of these tubes associated with vesicles (Figure 1—figure supplement 1d).
 
@@ -80,9 +432,21 @@ In Flavobacterium anhuiense and Chitinophaga pinensis, which are both endophytic
 
 When both tubes and vesicles were observed in the same species, the tubes generally had a more uniform diameter than the vesicles, which were of variable sizes and often had larger diameters than the tubes (Figure 3—figure supplement 1 and Figure 3—figure supplement 2). In addition, when a tube pearled into vesicles, there was no clear correlation between the length of the tube and the initiation point of pearling, with some tubes extending for many micrometers without pearling while other, shorter tubes were in the process of forming vesicles (Video 1, Video 2, Video 3, and Figure 2). As usually only one (or part of a) cell is present in the cryo-tomogram, we cannot exclude that differences in the extracellular environments, like the presence of a cluster of cells in the vicinity of the individual cells with pearling tubes, might play a role in this observation. Pearling tubes differ from tubes with irregular diameter by the presence of a deep constriction in some part of the tube, while chains of vesicles are entirely made up of semi-circular vesicles connected by thin constrictions suggesting different mechanisms are responsible for the formation of these different extensions. While most pearling was seen at the tips of tubes, pearling occasionally occurred simultaneously at both proximal and distal ends of the same tube (Video 3). With one exception, pearling was seen in all species with tubes of uniform diameter and no internal scaffold. The exception was lysed Pseudoalteromonas luteoviolacea, which had narrow tubes only 20 nm in diameter (Figure 1g). Some lysed P. luteoviolacea contained wider, pearling tubes (Figure 2c). Interestingly, the tubes of various M. xanthus strains (see Materials and methods) and P. luteoviolacea could bifurcate into branches, each of which had a uniform diameter similar to that of the main branch (Video 4 and Figure 1d and Figure 1—figure supplement 3).
 
+![Video 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/73099/elife-73099-video2.mp4.jpg)
+
+**Video 2.:** Note the wavy outer membrane of the cell.
+
+![Video 3.](https://cdn.elifesciences.org/articles/73099/elife-73099-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/73099/elife-73099-video4.mp4.jpg)
+
 In Caulobacter crescentus tomograms, we identified structures very similar to the ‘nanopod’ extensions previously reported in D. acidovorans (Shetty et al., 2011). These structures consist of a tube made of the S-layer encasing equally spaced OMVs (Figure 3e–h and Video 5). The diameter of the S-layer tubes was ~45 nm and vesicles exhibited diameters ranging from ~13 to 25 nm. The nanopods were seen either detached from the cell (Figure 3e–g) or budding from the pole of C. crescentus (Figure 3h).
 
-## II – Protein complexes associated with membrane structures
+![Video 5.](https://cdn.elifesciences.org/articles/73099/elife-73099-video5.mp4.jpg)
+
+### II – Protein complexes associated with membrane structures
 
 Next, we examined protein complexes associated with OMEs and OMVs that we could identify in our cryo-tomograms. These complexes fell into three categories: (1) seemingly randomly located complexes found on OMEs, OMVs, and cells; (2) seemingly randomly located complexes observed only on OMEs and OMVs; and (3) complexes exclusively located at the tip of OMEs/OMVs.
 
@@ -90,11 +454,33 @@ In the first category, we observed what appeared to be the OM-associated portion
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig5-v2.jpg)
 
-**Figure 5.:** Myxococcus xanthus and purified membrane vesicles (MVs) of Shewanella oneidensis.(a and b) Slices through electron cryo-tomograms of M. xanthus indicating the presence of pearling tubes with top (a) and side (b) views of type IVa pilus basal bodies (T4aP). Scale bar is 50 nm. (c and d) Slices through electron cryo-tomograms of purified S. oneidensis naturally shed MEs and MVs highlighting the presence of trapezoidal structures on the outside (c) and inside (d) of vesicles. Scale bar is 10 nm.
+**Figure 5.:** (a and b) Slices through electron cryo-tomograms of M. xanthus indicating the presence of pearling tubes with top (a) and side (b) views of type IVa pilus basal bodies (T4aP). Scale bar is 50 nm. (c and d) Slices through electron cryo-tomograms of purified S. oneidensis naturally shed MEs and MVs highlighting the presence of trapezoidal structures on the outside (c) and inside (d) of vesicles. Scale bar is 10 nm.
 
 The second category of protein complexes, observed only on MEs and not on cells, contained two structures. The first was a trapezoidal structure observed on purified OMVs of S. oneidensis. The structure was ~11 nm wide at its base at the membrane and was seen sometimes on the outside (Figure 5c) and sometimes the inside of vesicles (Figure 5d). The second structure was a large crown-like complex. We first observed these complexes on the outer surface of MVs associated with lysed M. xanthus cells (Figure 6a). Occasionally, they were also present on what appeared to be the inner leaflet of the inner membrane of lysed cells (Figure 6b). The exact topology is difficult to determine, however, since the arrangement of IM and OM can be confounded by cell lysis. The structure of this complex was consistent enough to produce a subtomogram average from nine examples, improving the signal-to-noise ratio and revealing greater detail (Figure 6c). These crown-like complexes are ~40 nm tall with a concave top and a base ~35 nm wide at the membrane (Figure 6c). No such complexes were seen on OMEs and OMVs associated with intact M. xanthus cells. We identified a morphologically similar crown-like complex on the outside of some tubes and vesicles purified from S. oneidensis (Figure 6d–f). However, this complex was smaller, ~15 nm tall and ~20 nm wide at its base. As these MEs/MVs from S. oneidensis were purified, we cannot know whether they stemmed from lysed or intact cells. Interestingly, we found a similar large crown-like structure associated with lysed cells of two other species in which we did not identify MEs, namely Pseudomonas flexibilis and P. aeruginosa (Figure 6g–j and Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig6-v2.jpg)
+
+**Figure 6.:** Slices through electron cryo-tomograms of lysed cells (a, b, g, h, and j) or purified membrane extensions (MEs) and membrane vesicles (MVs) (d and e) showing the presence of MVs and lysed membranes with a crown-like complex (red arrows and red boxed enlargements). Scale bars: 50 nm (a, b, h, and j), 100 nm (g), 10 nm (d and e). (c, f, and i) Central slices through subtomogram averages (with twofold symmetry along the Y-axis applied) of nine particles (c), four particles, (f), or three particles (i) of the crown-like complex in the indicated species. Scale bar is 20 nm. OL = outer leaflet, IL = inner leaflet.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Panels on the right are enlargements of the boxed areas. Scale bar is 50 nm.
+
 In the third category, we observed a secretin-like complex in many tubes and vesicles of F. johnsoniae. Secretins are proteins that form a pore in the OM and are associated with many secretion systems like type IV pili and type II secretion systems (T2SS) (Chang et al., 2016; Ghosal et al., 2019; Gold et al., 2015). In tubes attached to the cell, the complex was always located at the distal tip (Figure 7, Figure 7—figure supplement 1, and Video 6). From 35 membrane tubes seen attached to cells, we identified a secretin-like complex at the tip of 25 of them (~70%). In OMEs disconnected from the cell, the secretin-like complex was always located at one end (Figure 7b & e). In total, we identified 88 secretin-like particles in 198 tomograms, none of which were located in the middle of a tube. As the MEs are less crowded than cellular periplasm and usually thinner than intact cells, we could clearly distinguish an extracellular density and three periplasmic densities in side views (red and purple arrows, respectively, in Figure 7a). Top views showed a plug in the center of the upper part of the complex (yellow arrows in Figure 7g & h). Subtomogram averaging revealed details of the complex, including the plug and a distinct lower periplasmic ring (Figure 7i & j & Figure 7—figure supplement 2). While the upper two periplasmic rings were clearly distinguishable in many of the individual particles (e.g. Figure 7a), they did not resolve as individual densities in the subtomogram average (Figure 7i). The extracellular density was not resolved at all in the average, suggesting flexibility in this part.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig7-v2.jpg)
+
+**Figure 7.:** Slices through electron cryo-tomograms of F. johnsoniae illustrating the presence of secretin-like complexes (side views in a–f), top views in (g and h) with yellow arrows pointing to the plug in OMEs and OMVs of F. johnsoniae. Red arrows point to the extracellular part of the complex. Purple arrows in the enlargement in (a) point to the three periplasmic densities. Scale bars are 50 nm in main panels and 20 nm in enlargements. (i) A central slice through the subtomogram average of 88 particles of the secretin-like complex (with twofold symmetry along the Y-axis applied). Scale bar is 10 nm. (j) A schematic representation of the STA shown in (i). (k) A central slice through the subtomogram average of the secretin of the type II secretion systems (T2SS) of Legionella pneumophila (EMD 20713, see Ghosal et al., 2019). Scale bar is 10 nm. (l) A schematic representation of the STA shown in (k).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Note that the rotation of the slices on the left is optimized to show the full tube stemming from the cell, while the rotation of the enlargements on the right is optimized to show the best view of the secretin-like complex. Scale bar is 50 nm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73099/elife-73099-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Central slice through the unsymmetrized subtomogram average of the secretin-like complex present in outer membrane (OM) extensions in Flavobacterium johnsoniae. Scale bar is 10 nm. (b) FSC curve of the subtomogram average shown in (a). The different colored curves represent different subsets of particles.
+
+![Video 6.](https://cdn.elifesciences.org/articles/73099/elife-73099-video6.mp4.jpg)
 
 Previous studies showed that a species which belongs to the same phylum as F. johnsoniae, namely Cytophaga hutchinsonii, uses a putative T2SS to degrade cellulose (Wang et al., 2017). Since F. johnsoniae also degrades polysaccharides and other polymers, we BLASTed the sequence of the well-characterized V. cholerae T2SS secretin protein, GspD (UniProt ID P45779), against the genome of F. johnsoniae and found a hit, GspD-like T2SS secretin protein (A5FMB4), with an e-value of 1e–9. This result and the general morphological similarity of this secretin to the published structure of the T2SS (Ghosal et al., 2019) suggested that the complex we observed might be the secretin of a T2SS. We therefore compared our subtomogram average with the only available in situ structure of a T2SS, a recent subtomogram average of the Legionella pneumophila T2SS (Ghosal et al., 2019; Figure 7i–l). The two structures were generally similar in length and both had a plug in the upper part of the complex. However, we also observed differences between the two structures. In L. pneumophila, the widest part of the secretin (15 nm) is located near the plug close to the OM, and the lower end of the complex is narrower (12 nm). In F. johnsoniae, this topology is reversed, with the narrowest part near the plug and OM (Figure 7i–l). Additionally, the lowest domain of the L. pneumophila secretin did not resolve into a distinct ring as we saw in F. johnsoniae and no extracellular density was observed in L. pneumophila, either in the subtomogram average or single particles (Ghosal et al., 2019).
 
@@ -124,7 +510,7 @@ Early in the history of life, lipid vesicles and elementary protocells likely ex
 
 ## Materials and methods
 
-## Strains and growth conditions
+### Strains and growth conditions
 
 Hylemonella gracilis cells were grown as described in Kaplan et al., 2020. P. luteoviolacea were grown as described in Shikuma et al., 2014. Magnetospirillum magneticum were grown as described in Cornejo et al., 2016. P. flexibilis 706570 were grown in lactose growth medium. S. oneidensis MR-1 cells were grown, as detailed in Phillips et al., 2020, in Luria Bertani (LB) media under aerobic conditions at 30°C with shaking at 200 rpm until they reached OD600 of ~3. M. xanthus PilY1.3-sfGFP, M. xanthus ΔtsaP, and M. xanthus SA6892 strains were grown as described in Chang et al., 2016. B. burgdorferi B31 ATCC 35210 and H. hepaticus ATCC 51,449 cells were grown in standard media (see Briegel et al., 2009 and references therein).
 
@@ -136,16 +522,16 @@ H. pylori mutants (ΔfliM fliP*, ΔfliO fliP*, ΔflgS fliP*, ΔfliG fliP*, Δfli
 
 F. anhuiense (strain 98, see Carrión et al., 2019) and C. pinensis (strain 94, see Carrión et al., 2019) cells were grown overnight in 1/10 TSB at 25°C and 300 rpm shaking in 50 mL cultures. For sample preparation, cells were first concentrated by centrifugation; 3 μL aliquots of the cell suspension were applied to glow-discharged R2/2, 200 mesh copper Quantifoil grids (Quantifoil Micro Tools), the sample was pre-blotted for 30 s, and then blotted for 2.5 s (F. anhuiense) and 1 s (C. pinensis). Grids were pre-blotted and blotted at 20°C and at 95% humidity. Subsequently, the grids were plunge-frozen in liquid ethane using an automated Leica EM GP system (Leica Microsystems) and stored in liquid nitrogen.
 
-## Purification of S. oneidensis OMVs
+### Purification of S. oneidensis OMVs
 
 S. oneidensis OMVs were purified as described in Phillips et al., 2020. First, S. oneidensis were grown in LB media until they reached OD600 of 3. Subsequently, the cells were centrifuged at 5000 × g for 20 min at 4°C; the pellet contained whole cells while the supernatant contained the OMVs. To remove any cells present in the supernatant, it was filtered through a 0.45 µm filter. Subsequently, the supernatant was centrifuged at 38,400 × g for 1 hr at 4°C; the OMVs were in the resultant pellet. The pellet was resuspended in 20 mL of 50 mM HEPES pH 6.8 buffer, filtered through a 0.22 µm filter, spun again as described above, and ultimately resuspended in 50 mM HEPES pH 6.8.
 
-## Cryo-ET sample preparation and imaging
+### Cryo-ET sample preparation and imaging
 
 For cellular samples, 10 nm gold beads were first coated with BSA (bovine serum albumin) and then mixed with the cells. Subsequently, 4 µL of this mixture was applied to a glow-discharged, thick carbon-coated, R2/2, 200 mesh copper Quantifoil grid (Quantifoil Micro Tools) in an FEI Vitrobot chamber with 100% humidity. Excess fluid was blotted away with filter paper and the grid was plunge-frozen in a mixture of ethane/propane. For the purified OMVs of S. oneidensis, the sample was first diluted to a 0.4 mg/mL concentration before it was applied to the grid (Phillips et al., 2020). Cryo-ET imaging of the samples was done either on an FEI Polara 300 keV field emission gun transmission electron microscope equipped with a Gatan imaging filter and a K2 Summit direct electron detector in counting mode, or a Thermo Fisher Titan Krios 300 keV field emission gun transmission electron microscope equipped with a Gatan imaging filter and a K2 Summit counting electron detector. For data collection, either the UCSF Tomography (Zheng et al., 2007) or SerialEM (Mastronarde, 2005) software was used. For OMVs, tilt series spanned –60° to 60° with an increment of 3°, an underfocus of 1–5 µm, and a cumulative electron dose of 121 e/Å2. For F. johnsoniae, tilt series spanned –55° to 55° with 1° increment, an underfocus of 4 µm, a cumulative electron dose of 100 e/Å2, and a 3.9 Å pixel size. For M. xanthus, tilt-series spanned –60° to 60° with an increment of 1°, an underfocus of 6 µm, and a cumulative electron dose of 180 e/Å2. For B. burgdorferi, tilt series spanned –60° to 60° with 1° increment, an underfocus of 10 µm, and a cumulative electron dose of 160 e/Å2. For H. hepaticus, tilt series spanned –60° to 60° with increments of 1°, an underfocus of 12 µm, and a cumulative electron dose of 165 e/Å2.
 
 F. anhuiense and C. pinensis images were recorded with a Gatan K3 Summit direct electron detector equipped with a Gatan GIF Quantum energy filter with a slit width of 20 eV. Images were taken at magnification corresponding to a pixel size of 3.28 Å (C.pinensis) and 4.4 Å (F. anhuiense). Tilt series were collected using SerialEM with a bidirectional dose-symmetric tilt scheme (–60° to 60°, starting from 0°) with a 2° increment. The defocus was set to – 8 to 10 μm and the cumulative exposure per tilt series was 100 e−/A2. Images were reconstructed with the IMOD software package.
 
-## Image processing and subtomogram averaging
+### Image processing and subtomogram averaging
 
 Reconstruction of tomograms of cellular samples was done using the automatic RAPTOR pipeline implemented in the Jensen lab at Caltech (Ding et al., 2015). Tomograms of purified S. oneidensis OMVs were reconstructed using a combination of ctffind4 (Rohou and Grigorieff, 2015) and the IMOD software package (Kremer et al., 1996). Subtomogram averaging was done using the PEET program (Nicastro, 2006), with twofold symmetry applied along the particle Y-axis.

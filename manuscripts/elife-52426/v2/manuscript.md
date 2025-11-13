@@ -36,7 +36,7 @@ To learn more about reader engagement with Wikipedia’s external references, th
 
 With the approval and support of the Wikimedia Foundation (WMF), we collected the data presented in this study between March 22nd – April 22nd, 2019 from Wikimedia’s Event Logging system and the production MediaWiki database. The data remained within that system, as required by WMF, for a year before being deleted (see Acknowledgements). We anonymized the aggregated data by removing IP addresses, any identifying browser information, and reader-sessions associated with page edits. While this data is not publicly available, data may be available upon request from the WMF research team. To gain access to the data, researchers should review the WMF Research team’s current procedures for data requests (https://www.mediawiki.org/wiki/wikimedia_research/research_and_data). The WMF Research Team will evaluate the request based on Wikimedia’s data access criteria. The code utilized to collect and analyze the data, however, is organized and made publicly available in a collated series of Jupyter notebooks in GitHub (Steinberg and Picardi, 2019; copy archived here).
 
-## Data collection
+### Data collection
 
 The data is drawn from English Wikipedia pages in the main namespace, a designation that contains the encyclopedia proper. Wikipedia pages or topics were identified as being part of two main groups: WikiProject Medicine pages (WPM) and the rest of Wikipedia (W). To be included in the study, the pages from each group had to have at least one external link in the externallinks table. The categorylinks table was used to define the WPM pages, with each possessing a Talk page bearing the category “All WikiProject Medicine articles.” Both the externallinks and categorylinks tables were queried twice (April 1st, 2019 and April 20th, 2019) during a 32 day study period (March 22nd – April 22nd, 2019).
 
@@ -46,17 +46,48 @@ Pageview data was gathered from the wmf.pageview_hourly table. WMF employs metho
 
 Reader engagement with external links was gathered from Wikimedia’s Event Logging system using the CitationUsage schema, instrumented by Wikimedia’s programmers, following a month of piloting and refinement for this study. The CitationUsage schema collected all sessions with reader engagement, except for those involving anonymous Wikipedia editors (21 sessions out of 72,953,065 total, which translated into the removal of 34 citation events out of a total of 113,520,376). For the entire study period (March 22nd – April 22nd, 2019), the CitationUsage schema captured the following types of engagement: (a) clicking an external link; (b) clicking on a reference link listed among a page’s set of references; (c) clicking a footnote link leading to a reference on the page; (d) hovering over a reference link (defined as a reader’s cursor lingering over a link for 1000 milliseconds or more, revealing a rollover label); (e) time from pageview to event (Table 1). Additionally, the CitationUsage schema captured the clicking of links bearing the “freely accessible” icon.
 
-## Analysis
+**Table 1.**
+ Types of engagement with external linksDifferent events captured by the CitationUsage Schema that reflect how readers of Wikipedia pages engage with external links.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Engagement type</th>
+      <th>General description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>External click</td>
+      <td>A click on a link located on a Wikipedia page leading to a web page outside of Wikipedia.</td>
+    </tr>
+    <tr>
+      <td>Hover</td>
+      <td>An event that occurs when a reader hovers over a link for at least 1000 milliseconds on a Wikipedia page.</td>
+    </tr>
+    <tr>
+      <td>Footnote click</td>
+      <td>A click of an internal footnote link – [1] – that takes the reader to the reference section at the bottom of the Wikipedia page.</td>
+    </tr>
+    <tr>
+      <td>Up click</td>
+      <td>A click of an arrow – ^ – that takes the reader from the reference at the bottom of the Wikipedia page back to the citation in the main text.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis
 
 Descriptive statistics were calculated using Excel (Redmond, WA). Inferential statistics were calculated to determine the significance in the difference between engagements in WPM and W using the Python library SciPy. In our analysis, we verified the statistical differences between WPM and W page for the following parameters: (a) time to first engagement with a link, (b) length of the articles, and (c) the number of page loads per event. For parameters (a) and (b) we used a normality test to determine the type of statistical test to apply. In both comparisons, after rejecting the normality hypothesis, we applied Mann-Whitney U-Test, a non-parametric test that does not require normality assumptions on the two distributions. For the third parameter (c), we compared the two groups over all possible combinations of access method and type of engagement with a two-tailed Fisher's exact test. To explore and visualize the data, we used respectively Spark/Pandas and the library Seaborn. The complete analysis is available in the project’s publicly accessible Github repository (Steinberg and Picardi, 2019).
 
-## Stakeholder engagement
+### Stakeholder engagement
 
 This study was possible through collaboration with the WMF research team beginning in 2018, with our publishing of a research proposal to Wikimedia’s Meta-Wiki (Maggio et al., 2018). Members of the Wikipedia community, including members of WPM, were invited to provide feedback and pose questions. Over several months, we held teleconferences and in-person meetings with the WMF research team to understand Wikimedia’s infrastructure, parameters of data use (e.g., best practices for accessing the data securely; duration of data access), and the expectations of the Wikipedia community. Prior to data collection, a WMF research team member posted to Wikipedia’s Village Pump, a set of Wikipedia pages dedicated to discussing technical issues and policies, an announcement of the data collection (Redi, 2019). The announcement invited the Wikipedia community to post public comments and provided contact information for expressing concerns about the research.
 
 ## Results
 
-## Wikipedia pages and external links
+### Wikipedia pages and external links
 
 This study compares readers’ engagement with the pages curated by WikiProject Medicine (WPM) to their engagement with the rest of the English edition of Wikipedia (W). At the time of this study, WPM represented 34,324 pages (i.e., subject or topic entries), while the rest of W had 5,839,083 pages (Table 2). WPM pages possessed more than twice as many links to external references and other sites than the rest of Wikipedia. WPM pages were 13,084.9 characters in length on average (SD = 19,3780.4; median = 6,6280.0; IQR = 11,640), which was 70.1% longer than the average page in the rest of Wikipedia at 7,676.4 characters (SD = 13,6320.4; median = 3,8650.0; IQR = 5,789) (Figure 1; Table 6). WPM pages also demonstrated a greater “link density” with an external link appearing on pages with links every 450.3 characters, compared to a link every 657.3 characters for the rest of Wikipedia.
 
@@ -64,15 +95,161 @@ This study compares readers’ engagement with the pages curated by WikiProject 
 
 **Figure 1.:** Distribution of page lengths in characters for WikiProject Medicine (WPM) pages and the rest of Wikipedia (W) on April 20th, 2019. The difference between the two distributions is statistically significant according to Mann–Whitney U test (p<0.001, two-tailed).
 
+**Table 2.**
+ Factors that distinguish WPM pages from the rest of Wikipedia.Differences between WPM pages and pages in the rest of Wikipedia (W) based on data collected on April 20th, 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WPM</th>
+      <th>W</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wikipedia pages</td>
+      <td>34,324</td>
+      <td>5,839,083</td>
+    </tr>
+    <tr>
+      <td>Pages with external links</td>
+      <td>32,609</td>
+      <td>5,210,746</td>
+    </tr>
+    <tr>
+      <td>External links</td>
+      <td>945,645</td>
+      <td>60,851,396</td>
+    </tr>
+    <tr>
+      <td>Links per page (with links)</td>
+      <td>29.0</td>
+      <td>11.7</td>
+    </tr>
+    <tr>
+      <td>Page length (characters)</td>
+      <td>13,084.9</td>
+      <td>7,676.4</td>
+    </tr>
+    <tr>
+      <td>Characters per link (pages with links)</td>
+      <td>450.3</td>
+      <td>657.3</td>
+    </tr>
+  </tbody>
+</table>
+
 The biomedical literature, including research reviews and studies, was a leading source of WPM external links. For example, the most common hostname was “www.ncbi.nlm.nih.gov,” accounting for 25.2% of the WPM’s external links. This indicates that research papers found through the PubMed database run by the National Institutes of Health (NIH) are likely to be cited. It was followed by the hostnames “www.worldcat.org” with 2.7%, and “www.google.com” with 1.2% of the external links. As for the hostnames that prevailed among external links in the rest of Wikipedia, the three leading hostnames were “tools.wmflabs.org” (where Wikimedia hosts tools developed to assist editors) at 3.5%, “www.google.com” at 2.9% and “books.google.com” at 2.0%, while “www.ncbi.nlm.nih.gov” still accounted for 1.8% of the external links outside of WPM.
 
-## Pageviews and events
+### Pageviews and events
 
 Readers viewed 5,875,470.4 WPM pages a day on average, compared to 228,445,128.4 pages for readers of the rest of Wikipedia (Table 3). While the number of WPM pages is 0.6% of W pages, the number of pageviews that WPM received from readers was 2.6% of that for W. This suggests that WPM pages were viewed more than four times as frequently as the rest of Wikipedia. The majority of these views for both WPM and W took place on mobile devices, with WPM readers the heavier users of mobile devices in accessing Wikipedia.
+
+**Table 3.**
+ Comparing pageviews between WikiProject Medicine (WPM) and other Wikipedia (W) pages.The average number of pageviews WikiProject Medicine (WPM) and the rest of Wikipedia (W) received per day for different types of devices between March 22nd and April 22nd, 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WPM (%)</th>
+      <th>W (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pageviews on desktop device</td>
+      <td>1,957,821.6 (33.3)</td>
+      <td>97,956,273.1 (42.9)</td>
+    </tr>
+    <tr>
+      <td>Pageviews on mobile device</td>
+      <td>3,917,648.8 (66.7)</td>
+      <td>130,488,855.3 (57.1)</td>
+    </tr>
+    <tr>
+      <td>Total number of pageviews</td>
+      <td>5,875,470.4 (100)</td>
+      <td>228,445,128.4 (100)</td>
+    </tr>
+  </tbody>
+</table>
 
 We also found that readers spent more time on a page before first clicking an external link after loading a WPM page. The WPM reader’s median time of 47.5 s (SD = 1.2; mean = 82.5; IQR = 147,306) was 44.8% longer than the median time of 32.8 s (SD = 5.6; mean = 39.1; IQR = 86,424) for W readers (Table 6). The difference between the two distributions is statistically significant according to Mann–Whitney U test (p<0.001, two-tailed).
 
 Among the four types of events recorded, WPM readers were more likely to hover over a footnote or other link, especially on their desktop devices, and more likely to click on footnote links, compared to W readers (Table 4). On the other hand, W readers were more likely to click on external links than WPM readers, favoring their mobile devices in that regard. The WPM readers are interested, it appears, in seeing what evidence is being drawn upon in making the statements set out on a WPM page rather than trying to view the source compared to readers of the rest of Wikipedia.
+
+**Table 4.**
+ Frequency of different types of link engagement per day.The average number of times per day that readers of WPM and W pages engaged with external links using one of the event types captured from March 22nd to April 22nd, 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Event type</th>
+      <th colspan="3">WPM</th>
+      <th colspan="3">W</th>
+    </tr>
+    <tr>
+      <th>Total (%)</th>
+      <th>Desktop (%)</th>
+      <th>Mobile (%)</th>
+      <th>Total (%)</th>
+      <th>Desktop (%)</th>
+      <th>Mobile (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hover over link</td>
+      <td>48,748.9 (46.9)</td>
+      <td>45,814.8 (60.3)</td>
+      <td>2,934.1 (10.5)</td>
+      <td>1,122,704.0 (32.7)</td>
+      <td>1,057,982.0 (47.2)</td>
+      <td>64,722.0 (5.4)</td>
+    </tr>
+    <tr>
+      <td>Footnote click</td>
+      <td>27,739.4 (26.7)</td>
+      <td>10,948.8 (14.4)</td>
+      <td>16,790.6 (60.3)</td>
+      <td>722,131.0 (21.0)</td>
+      <td>235,245.0 (10.5)</td>
+      <td>486,886.7 (40.7)</td>
+    </tr>
+    <tr>
+      <td>External click</td>
+      <td>25,811.9 (24.9)</td>
+      <td>17,792.3 (23.4)</td>
+      <td>8,019.7 (28.8)</td>
+      <td>1,557,125.0 (45.3)</td>
+      <td>915,445.1 (40.9)</td>
+      <td>641,676.4 (53.6)</td>
+    </tr>
+    <tr>
+      <td>Up click</td>
+      <td>1,539.5 (1.5)</td>
+      <td>1,422.8 (1.9)</td>
+      <td>116.4 (0.4)</td>
+      <td>34,738.0 (1.0)</td>
+      <td>31,230.1 (1.4)</td>
+      <td>3,508.1 (0.3)</td>
+    </tr>
+    <tr>
+      <td>All events</td>
+      <td>103,839.7 (100)</td>
+      <td>75,978.7 (100)</td>
+      <td>27,860.8 (100)</td>
+      <td>3,436,698.0 (100)</td>
+      <td>2,239,902.2 (100)</td>
+      <td>1,196,793.2 (100)</td>
+    </tr>
+  </tbody>
+</table>
 
 Among the external links in WPM, 22.1% of the research citations drawn from PubMed are labeled as “freely accessible”, and on desktop devices include a link bearing an open access icon (a green open lock, with the rollover label “freely accessible”), as shown in Figure 2. However, there was no evidence to suggest that links with these icons were clicked more frequently than other links. This may be, in part, because the typical research citation has three or four links leading to (a) the article on the publisher’s site (DOI link); (b) its PubMed entry (PMID link); and (c) PubMed Central (PMC link and article title link) if the article is open access.
 
@@ -82,9 +259,149 @@ Among the external links in WPM, 22.1% of the research citations drawn from PubM
 
 To further compare event data (i.e. the type of engagement with external links) between WPM and W, the number of pageviews per event was calculated to determine how many pages readers viewed before engaging with an external link (Table 5). Overall, readers of WPM pages were more likely (56.6 pageviews per event) to engage with a link than W readers (66.5 pageviews per event). The differences in engagement were most pronounced with WPM readers hovering over a link on their desktop device. Yet, W readers more frequently clicked external links, with the difference especially notable when on their mobile device, where they were almost twice as likely to click an external link than WPM readers. This suggests that the external links in WPM may not be as mobile-friendly. The up click, in which a reader clicks the link from a footnote back (up) to the text, was not a function that appeared on the iOS and Android mobile devices we tested, as the footnote appears at the bottom of the screen when clicked and disappears on touching the text (Figure 2).
 
+**Table 5.**
+ Number of pageviews per engagement event.The frequency of each event per day was divided by the average number of daily pageviews for WPM and W pages from March 22nd to April 22nd, 2019. The lower the number of pageviews per event the greater the event frequency. Difference between each pair of WPM and W distributions is statistically significant as derived from Fisher’s exact test (p<0.001, two-tailed).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Pageviews/event</th>
+      <th colspan="3">WPM</th>
+      <th colspan="3">W</th>
+    </tr>
+    <tr>
+      <th>Total</th>
+      <th>Desktop</th>
+      <th>Mobile</th>
+      <th>Total</th>
+      <th>Desktop</th>
+      <th>Mobile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hover over link</td>
+      <td>120.5</td>
+      <td>42.7</td>
+      <td>1,335.2</td>
+      <td>203.5</td>
+      <td>92.6</td>
+      <td>2,016.1</td>
+    </tr>
+    <tr>
+      <td>Footnote click</td>
+      <td>211.8</td>
+      <td>178.8</td>
+      <td>233.3</td>
+      <td>316.3</td>
+      <td>416.4</td>
+      <td>268.0</td>
+    </tr>
+    <tr>
+      <td>External click</td>
+      <td>227.6</td>
+      <td>110.0</td>
+      <td>488.5</td>
+      <td>146.7</td>
+      <td>107.0</td>
+      <td>203.4</td>
+    </tr>
+    <tr>
+      <td>Up click</td>
+      <td>3,816.6</td>
+      <td>1,376.1</td>
+      <td>33,655.0</td>
+      <td>6,576.2</td>
+      <td>3,136.6</td>
+      <td>37,196.5</td>
+    </tr>
+    <tr>
+      <td>All events</td>
+      <td>56.6</td>
+      <td>25.8</td>
+      <td>140.6</td>
+      <td>66.5</td>
+      <td>43.7</td>
+      <td>109.0</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 The Wikipedia pages maintained by WPM are longer, possess a greater density of external links (references), and are viewed considerably more often, on average, than the pages on the rest of Wikipedia (Table 6). The popularity of the pages also speaks to the valuable contribution that WPM makes to Wikipedia’s role as a source of health and medical information, as well as the level of trust that WPM readers have in Wikipedia’s coverage of health and medical topics.
+
+**Table 6.**
+ Summary of data collected.Summary statistics selected from the tables above, comparing WikiProject Medicine (WPM) pages and readers to the rest of Wikipedia (W) pages and readers. (a) The “4.4 more pageviews” reflects the ratio of WPM to W pages (0.6%) compared to the ratio of WPM to W pageviews/day (2.6%). (b)“WPM readers” and “W readers” refer to the behaviors of those reading a WPM and/or W page during the data collection period.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WPM pages</th>
+      <th>W pages</th>
+      <th>WPM pages, compared to other W pages,...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Page length (characters)</td>
+      <td>13,085</td>
+      <td>7676</td>
+      <td>…are 70.5% longer by character count.</td>
+    </tr>
+    <tr>
+      <td>Characters/external link (on pages with links)</td>
+      <td>450.3</td>
+      <td>657.3</td>
+      <td>…possess a 31.5% greater external link density.</td>
+    </tr>
+    <tr>
+      <td>Pageviews/day</td>
+      <td>5,875,470.40</td>
+      <td>228,445,128.40</td>
+      <td>…receive 4.4 more pageviews per day.a</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>WPM readers</td>
+      <td>W readers</td>
+      <td>WPM readers, compared to rest of W readers,...b</td>
+    </tr>
+    <tr>
+      <td>Time before engagement (sec)</td>
+      <td>47.5</td>
+      <td>32.8</td>
+      <td>…take 44.8% longer before engaging in a link activity.</td>
+    </tr>
+    <tr>
+      <td>Pageviews/link engagement</td>
+      <td>56.60</td>
+      <td>66.47</td>
+      <td>…engage 17.5% more often with links per pageview.</td>
+    </tr>
+    <tr>
+      <td>Pageviews/hover</td>
+      <td>120.5</td>
+      <td>203.5</td>
+      <td>…hover over links 68.9% more often per pageview.</td>
+    </tr>
+    <tr>
+      <td>Pageviews/footnote click</td>
+      <td>211.8</td>
+      <td>316.3</td>
+      <td>…click footnote numbers 49.3% more often per pageview.</td>
+    </tr>
+    <tr>
+      <td>Pageviews/external click</td>
+      <td>227.6</td>
+      <td>146.7</td>
+      <td>…click external links 35.5% less often per pageview.</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition, the readers of WPM pages not only engage more often with external links, but spend longer on the page before engaging with the links, compared to readers of the rest of Wikipedia (Table 6). WPM readers are more likely to hover over references, causing them to appear in a window, and more likely to view the footnotes than other readers. But readers of WPM pages click on external links less often than readers of other parts of Wikipedia.
 

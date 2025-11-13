@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/025xvn046 Science & Technology of Music and Sound Laboratory, IRCAM/CNRS/Sorbonne Université Paris France
+1. Science & Technology of Music and Sound Laboratory, IRCAM/CNRS/Sorbonne Université Paris France ([ROR:025xvn046](https://ror.org/025xvn046))
 
 † Corresponding author
 

@@ -44,9 +44,7 @@ Ki values were calculated as suggested with the formula IC50=Ki(1+[S]/Km). To th
 
 To verify the correctness of our assumptions (i.e. to verify the relation IC50=Ki(1+[S]/Km) at least for one example, Km and vmax values for ATP hydrolysis at different ATP-g-S concentrations were determined at 50 °C for TM287/288. Km/vmax was plotted against the inhibitor concentration, the values were fitted by linear regression and the intercept with the x-axis was used to determine Ki. As can be seen in the graph plotted below, the determined data points could be fitted well by linear regression. The determined Ki for ATP-g-S of
 
-43.5 nM was basically identical with the procedure described above (IC50 determination by hyperbolic function and IC50 to Ki conversion by formula IC50=Ki(1+[S]/Km), for which a Ki for ATP-g-S of 43.9 nM was determined (see Table 2). Because we only have determined the Ki value for ATP-g-S at 50 °C in this manner, we did not include this piece of data in the paper.10.7554/eLife.20236.027Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20236.027
-
-DOI: http://dx.doi.org/10.7554/eLife.20236.027
+43.5 nM was basically identical with the procedure described above (IC50 determination by hyperbolic function and IC50 to Ki conversion by formula IC50=Ki(1+[S]/Km), for which a Ki for ATP-g-S of 43.9 nM was determined (see Table 2). Because we only have determined the Ki value for ATP-g-S at 50 °C in this manner, we did not include this piece of data in the paper.10.7554/eLife.20236.027Author response image 1.
 
 5) Interpretation of nucleotide efficiencies to stabilize OF state
 

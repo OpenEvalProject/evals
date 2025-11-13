@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Common garden experiments that inoculate a standardised growth medium with synthetic microbial communities (i.e. constructed from individual isolates or using dilution cultures) suggest that the ability of the community to resist invasions by additional microbial taxa can be predicted by the overall community productivity (broadly defined as cumulative cell density and/or growth rate). However, to the best of our knowledge, no common garden study has yet investigated the relationship between microbial community composition and invasion resistance in microcosms whose compositional differences reflect natural, rather than laboratory-designed, variation. We conducted experimental invasions of two bacterial strains ( Pseudomonas fluorescens and Pseudomonas putida ) into laboratory microcosms inoculated with 680 different mixtures of bacteria derived from naturally occurring microbial communities collected in the field. Using 16S rRNA gene amplicon sequencing to characterise microcosm starting composition, and high-throughput assays of community phenotypes including productivity and invader survival, we determined that productivity is a key predictor of invasion resistance in natural microbial communities, substantially mediating the effect of composition on invasion resistance. The results suggest that similar general principles govern invasion in artificial and natural communities, and that factors affecting resident community productivity should be a focal point for future microbial invasion experiments.
+Common garden experiments that inoculate a standardised growth medium with synthetic microbial communities (i.e. constructed from individual isolates or using dilution cultures) suggest that the ability of the community to resist invasions by additional microbial taxa can be predicted by the overall community productivity (broadly defined as cumulative cell density and/or growth rate). However, to the best of our knowledge, no common garden study has yet investigated the relationship between microbial community composition and invasion resistance in microcosms whose compositional differences reflect natural, rather than laboratory-designed, variation. We conducted experimental invasions of two bacterial strains (Pseudomonas fluorescens and Pseudomonas putida) into laboratory microcosms inoculated with 680 different mixtures of bacteria derived from naturally occurring microbial communities collected in the field. Using 16S rRNA gene amplicon sequencing to characterise microcosm starting composition, and high-throughput assays of community phenotypes including productivity and invader survival, we determined that productivity is a key predictor of invasion resistance in natural microbial communities, substantially mediating the effect of composition on invasion resistance. The results suggest that similar general principles govern invasion in artificial and natural communities, and that factors affecting resident community productivity should be a focal point for future microbial invasion experiments.
 
 ## Introduction
 
@@ -31,13 +31,13 @@ We grew and invaded these communities in a common garden, complex medium reflect
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic depicting the sampling and processing of communities (field sampling and growth of lab acclimation of communities), the cryopreservation and sequencing of the lab-acclimated communities, and the setup and sampling scheme of the laboratory experiment described here. (B) Invader survival values for both invaders at each of the three sampling points in monoculture (diamonds) and in communities (circles). Larger, white points represent the means for the respective subsets of the data; grey line represents the estimated cells/ml detection limit; dashed line represent inferred trajectories between the inoculation density and the invasion densities, as the inoculation density was measured in the invader culture prior to its inoculation into communities.Figure 1—source data 1.The invader survival data columns are labelled in the format ‘invader identity.cell density per ml.hours since invasion’.Figure 1—source data 2.Key columns are invader (invader assayed – P. fluorescens SBW25 or P. putida KT2440), rep (replicate), the cfu.00 columns (cells per ml at n hours of growth) and the lum.00 columns (lux at n hours of growth).Figure 1—source data 3.Figure 1—source data 1 but with TRUE/FALSE values instead of values indicating which invader survival measurements were below the detection limit of 12 lumens (TRUE) before conversion to cells/ml.
+**Figure 1.:** (A) Schematic depicting the sampling and processing of communities (field sampling and growth of lab acclimation of communities), the cryopreservation and sequencing of the lab-acclimated communities, and the setup and sampling scheme of the laboratory experiment described here. (B) Invader survival values for both invaders at each of the three sampling points in monoculture (diamonds) and in communities (circles). Larger, white points represent the means for the respective subsets of the data; grey line represents the estimated cells/ml detection limit; dashed line represent inferred trajectories between the inoculation density and the invasion densities, as the inoculation density was measured in the invader culture prior to its inoculation into communities.
 
 Following previous experiments, we analysed the relationship between invader survival and the composition of the community added to each microcosm at the start of the experiment. Unlike previous experiments using synthetic microbial assemblages, the inoculated communities were naturally occurring bacterial assemblages. We quantified the starting community composition of the microcosms using amplicon sequencing (16S rRNA locus) to estimate the sequence abundances of OTUs inoculated into the microcosms (Day 0). As well as estimating the starting community composition in this way (i.e. 16S genotypes present), we also took various phenotypic measurements of the communities at 7 and 14 days of growth in the laboratory microcosms (the latter being the day of invasion). Community productivity was the primary community-level phenotype of interest to us, quantified by measuring cell density and respiration before invasion. Additionally, we took phenotypic measurements related to metabolic activity as an alternative hypothesis to productivity, and to further contextualise any results related to composition and productivity. These measurements were the potential metabolic activity (ATP levels) and capacity of the communities to degrade a set of four specific substrates that we expected to be important components of these environments (cellulose, chitin, xylose, and phosphate). The experiment allowed us to identify the main components of invasion resistance in natural communities, and assess whether the effects of resident community composition on invasion resistance primarily manifest as effects on productivity.
 
 ## Results
 
-## Most important explanatory variables for invader survival
+### Most important explanatory variables for invader survival
 
 To select the components of resident community starting composition and realised community phenotype that best predicted the two invaders’ survival in the microcosms across the three sampling points, we compared explanatory variable importance using random forest regressions (Materials and methods: Statistical techniques). Random forest regressions included all explanatory variables relating to starting composition and realised phenotype. The best representation of composition was selected by testing different dimensionality reduction techniques and selecting the best compromise between variance explained and number of variables. We selected a network approach reducing composition to key species' communities, hereafter termed functional groups (see Materials and methods: Computational techniques).
 
@@ -45,17 +45,55 @@ Explanatory power of the random forest regressions ranged from 8.14% to 59.37% (
 
 Across random forests, phenotypic measures related to community productivity before invasion were by far the strongest and most consistent individual predictors of invader survival (Figure 2). Measures of community cell yield and respiration consistently had the highest variable importance values – quantified as the relative increase in the Mean Square Error (% IncMSE) obtained when the data associated to the variable under analysis is absent from a regression (Figure 1). The variable importance of cell yield and respiration was generally higher than that of other variables relating to either phenotype or the starting composition of the microcosms. However, the abundance of Functional Group 18 (containing 12 OTUs assigned to Cedecea spp., Citrobacter werkmanii, Erwinia persicina, Erwinia rhapontici, Escherichia shigella spp., Klebsiella pneumoniae, Pantoea agglomerans, Pantoea vagens, Serratia fonticola, Serratia liquefaciens, Serratia quinivorans, and Trabulsiella spp.) was sometimes of comparable variable importance to the productivity variables. All these variables were approximately linearly and negatively correlated with invader survival; increasing cell yield, respiration and abundance of Functional Group 18 was correlated with lower invader success (Figure 3, Figure 3—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig2-v2.jpg)
+
+**Figure 2.:** Total variance explained is calculated as pseudo R-squared: 1-Mean Squared Error/variance (invader survival) of the random forest. Variable importance values are the percentage increase in Mean Squared Error (IncMSE %) when the variable is not permuted i.e. a high (low) value represents a variable of high (low) importance to explaining invasion success. Each column in the variable importance heatmap represents the variable importance values of the random forest using functional Groups represented by the orange bar in the top figure. The heatmap is split into compositional (above split) and functional (below split) variables. Compositional variables labelled 'FG+number' refer to the functional group ids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The PCoA was performed on the distance matrix of the Jensen-Shannon divergence (Endres and Schindelin, 2003) of OTU abundances using the ‘dudi.pcoa’ function from the ade4 package (Chessel et al., 2004).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig2-figsupp3-v2.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig3-v2.jpg)
+
+**Figure 3.:** Colours represent the mean abundance of OTUs belong to Functional Group 18 in each community (blue low, red high).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Colours represent the mean abundance of OTUs belong to Functional Group 18 in each community (blue low, red high).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Colours represent the mean abundance of OTUs belong to Functional Group 18 in each community (blue low, red high).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Colours represent the mean abundance of OTUs belong to Functional Group 18 in each community (blue low, red high).
+
 Other variables relating to starting composition were weaker individual predictors of invader survival. As well as Functional Group 18, other functional groups including Functional Group 5 (Acinetobacter genomospecies 3, Acinetobacter towneri, Novispirillum itersonii and Ralstonia pickettii) and 20 (Acidovorax spp., Acinetobacter calcoaceticus, Acinetobacter johnsonii, Aquabacterium spp., Brevundimonas aurantiaca, Caenimonas spp., Delftia lacustris, Herbaspirillum rubrisubalbicans, Herbaspirillum spp., Leptothrix spp., Massilia timonae, Paucimonas spp., Phenylobacterium spp, Pseudomonas balearica, Pseudomonas pseudoalcaligenes and Stenotrophomonas maltophilia) also appeared to be somewhat important for invader survival. There was some evidence of a weak negative relationship between Simpson’s diversity and invader survival (Figures 2,3 Figure 3—figure supplement 1) – although the abundance of key functional groups was a more reliable indicator of invader survival across time-points and invaders (Figure 2). There was little evidence for a strong effect of phylogenetic diversity (Rao’s quadratic entropy; a phylogenetic equivalent to Simpson’s diversity index) or phylogenetic distance of the community from the invader (although these results are subject to the reliability of 16S phylogenetic tree; see Discussion: Unexplained variation).
 
 Overlaying the abundance of the most important functional group (Functional Group 18) on the above described relationships (Figure 3, Figure 3—figure supplement 1) suggested that the presence of particular 16S genotypes determined overall community phenotype (in terms of productivity and invasion resistance realised in laboratory microcosms). Highly invadable communities with a low cell density and respiration were also those with a low abundance of Functional Group 18 OTUs and similarly, communities with a low abundance of Functional Group 18 had a lower level of respiration (blue colours in Figure 3 and Figure 3—figure supplement 1).
 
 There was little evidence for strong effects of more specific measures of community phenotype, with ATP activity and the potential to degrade specific substrates having a weak effect overall (Figure 2; Figure 3—figure supplements 2 and 3).
 
-## Mediation of the effect of starting composition by productivity (structural equation models)
+### Mediation of the effect of starting composition by productivity (structural equation models)
 
 Having identified community productivity as the most important predictor of invasion resistance and identified the abundance of functional groups inoculated into the microcosms as the putative cause of this, we aimed to estimate the extent to which the effect of starting composition on invasion resistance was mediated by productivity. We used structural equation models (SEMs) to identify whether starting community composition was associated with lower invader survival solely because it determined the productivity of communities. Having specified the latent variables using the most important explanatory variables (the functional group abundances and the two measures of cell density; see Materials and methods: Statistical techniques), we sought to understand the mediation of composition by productivity across our experiments by using three different SEMs in which these latent (dependent) variables Composition and Productivity influence the latent (independent) variable Invasion following one of these hypothesis:
 
 Model comparison strongly supported the idea that the effect of starting composition on invader survival was strongly mediated by realised productivity, with the No Mediation model being easily rejected (ΔAIC = 166.98). The Partial Mediation model was the best fitting of the three models and was significantly better than the Complete model (likelihood ratio test, ΔChi2 = 7.81, pval = 0.0052) - though this should be interpreted with caution as the quality of the models is not optimal (CFI ~ 0.63). Based on the estimated coefficients of the best, Partial Mediation model (Figure 4), we estimated that a minimum of 48% of the effect starting composition on invader survival (the product of coefficients C→P x P→I) was mediated by productivity (0.47 x −0.63 = −0.30; which represents a proportion −0.30/–0.63 = 0.48 of the total effect). Furthermore, comparing the total (direct + indirect) effects of productivity (P→I + C|P→I) and composition (C→I + C|P→I) revealed that the total effect of productivity (−0.33 + −0.3 = −0.63) was much stronger than that of composition (−0.13 + −0.30 = −0.43).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig4-v2.jpg)
+
+**Figure 4.:** Arrows between nodes represent regressions between dependent and independent variables (blue = direct effect of composition, red = direct effect of productivity, purple = composition effect mediated by productivity). Direction and value of each path is indicated by arrow type (positive effect = solid line, dotted line = negative effect) and the standardised regression coefficient adjacent to the arrow. In the path P → I the total effect of productivity (sum of direct and composition-mediated effects) is shown between both lines in black.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71811/elife-71811-fig4-figsupp3-v2.jpg)
 
 Given the relatively small (but significant) difference between the Partial and Complete mediation model fits, the strong effects of productivity in the Partial model, and the sub-optimal quality of the models, we conducted an additional sensitivity analysis (see Materials and methods: Statistical methods). This sensitivity analysis tested how sensitive model selection was to the invader survival values fell below the strict detection limit of the invasion assay (see Materials and methods: Laboratory techniques). The sensitivity analysis supported the Complete (the best model in 97.4% of permutations) over the Partial mediation model (the best model in 2.6% of permutations), highlighting the marginality of the model selection result.
 
@@ -65,7 +103,7 @@ Taking everything into account, we believe the most conservative interpretation 
 
 We found that even in complex, species-rich bacterial communities, community productivity is a key determinant of invasion resistance, with much of the effect of community composition manifesting as effects on productivity. This is consistent with the results of earlier experiments with simpler, more artificial communities (Bonanomi et al., 2014; Eisenhauer et al., 2013; Hodgson et al., 2002; van Elsas et al., 2012). Productivity (pre-invasion cell density and to a lesser extent respiration) were certainly the most useful individual explanatory variables for invasion success in our experiments, though with certain compositional variables also having a strong effect (Figure 2). Furthermore, structural equation modelling suggested that much of compositional effect was due to the effect that the bacteria inoculated into that microcosms had on productivity, which in turn affected invasion success (Figure 4). Nonetheless, there is likely a still a (smaller) role for more direct, productivity-independent effects of composition – again, consistent with previous work with artificial communities (De Roy et al., 2013; Hodgson et al., 2002), and for composition-independent effects of productivity.
 
-## Productivity-mediated effects of composition
+### Productivity-mediated effects of composition
 
 There is ample evidence that resident community productivity reduces the potential for the growth of invading species in microbes and non-microbes alike (Crawley and Heard, 1999; Hodgson et al., 2002; Jousset et al., 2011; Kinnunen et al., 2016). Cell density and respiration were likely important predictors of invasion resistance in our system because they were good proxies for how much the resident community had used the available resources that could otherwise have been used by the invader i.e. resource limitation. Interestingly, productivity at 7 days before (rather than immediately prior to) invasion had the most explanatory power in the models – suggesting that resource limitation may have operated in complex ways. One possibility is that those communities that could degrade the resource base most rapidly could also do so most efficiently, leaving less resource for the invader at 14 days. Alternatively, communities that have been at carrying capacity for longer periods may exhibit behaviours that select against invasion. For example, limited resources and/or metabolic stress can select for antibiotic production (Craney et al., 2013) or the production of inhibitory secondary metabolites (Watrous et al., 2013).
 
@@ -73,7 +111,7 @@ Structural equation modelling revealed that productivity strongly mediates the e
 
 The most parsimonious explanation for this effect in our system was simply that this was the most productive functional group, and a higher starting abundance gave this group of bacteria a better chance of outcompeting other bacteria and raising the level of growth in the community (i.e. a priority effect). Alternatively, the starting abundance of particular functional groups in a microcosm may determine community productivity in more complex ways – for example, because the most abundant early colonisers cause local environmental changes that affect the growth potential of other colonising bacteria (e.g. through cross-feeding and competition). In dental biofilms it has been demonstrated that a full biofilm can only be achieved with a certain order of colonisation, with metabolically-similar groups of early colonisers causing local environmental changes that allow for subsequent bacteria to colonise, allowing the full development of the biofilm (Mazumdar et al., 2013). Similarly, in a study system more similar to our own, it has been shown that the ability bacterial species to colonise a new phyllosphere environment depends on the local density (and by implication, identity) of other neighbouring bacteria colonising the environment at the same time – likely because more intense competition for resources reduces the average growth success of the population (Remus-Emsermann et al., 2012). Such species interactions/succession-type dynamics are likely to be at least partly driving productivity-mediated effects of composition in our system also – especially as our previous work has shown our ‘functional groups’ correspond to distinct metabolic profiles inferred from predicted metagenomes (Pascual-García and Bell, 2020a).
 
-## Productivity-independent effects of composition
+### Productivity-independent effects of composition
 
 There was also some evidence that community composition impacted invasion resistance independently of the impacts of community productivity, although in a more minor way – as has been seen in a more limited sense in previous studies with artificial communities (De Roy et al., 2013; Hodgson et al., 2002).
 
@@ -81,7 +119,7 @@ One explanation for this is that groups of bacteria which were abundant in some 
 
 Another possible explanation is that particular resident species acted as ecosystem engineers (Pascual-García et al., 2020). We have already mentioned the possibility of bacteria-driven environmental changes setting limits on the community productivity and leaving certain communities more vulnerable to invasion. Additionally, there may be other ways in which particular species engineer the environment to affect invader survival more directly - such as by modifying the pH of the environment or producing reactive oxygen species. Regarding pH modification, bacterial acidification has been shown to be an important factor in recent microbial invasion experiments in soil microcosms, which showed that Pseudomonas may be prevented from invading by the presence of species that alter the growth medium towards more acidic pH values (Amor et al., 2020). Regarding the production of reactive oxygen species, this has recently been demonstrated to be important in in-host studies of invasion resistance; E. faecalis has been shown to protect C. elegans nematodes from Staphylococcus aureus invasion by the producing reactive oxygen species which act as an antimicrobial to kill the invaders (Ford and King, 2021). However, whilst these more specialised mechanisms of invasion resistance are likely to be fairly common, we emphasise again that they are likely to play a more minor role c more general factors such as community growth rate.
 
-## Sub-hypotheses with weaker or no support
+### Sub-hypotheses with weaker or no support
 
 We found some evidence for the expected negative relationship between the diversity (Simpson’s diversity of OTUs) of the inoculated community and the invaders’ survival (Figure 3, Figure 3—figure supplement 1) in this semi-natural system, although this was relatively weak (R2 = 0.09 and 0.06 for P. fluorescens and P. putida, respectively). Although it is hard to make a direct comparison, superficially at least, this weak relationship contrasted with previous experiments using artificial communities constructed from isolates or created by dilution-to-extinction of natural communities, where the relationship was clearer (De Roy et al., 2013; Eisenhauer et al., 2013; van Elsas et al., 2012). Nonetheless, given that previous experiments often found that the negative diversity-invasion relationship plateaued at higher diversities (Bonanomi et al., 2014; Eisenhauer et al., 2013; van Elsas et al., 2012), the weak negative slope observed in our high-diversity experiment may simply be because our communities all had relatively high levels of diversity. This suggests that species-like diversity is likely to be a less important predictor of invasion resistance in natural rather than artificial communities.
 
@@ -89,7 +127,7 @@ Phylogenetic diversity metrics had even poorer explanatory power, though this re
 
 More specific measures of community phenotype related to bacterial metabolism were not informative. Again, this suggested that invasion resistance is primarily the result of generic rather than specific mechanisms.
 
-## Unexplained variation
+### Unexplained variation
 
 Finally, although we successfully explained much of the variation in invasion using the measured variables, a large component of the variation remained unexplained across the six sub-experiments. Given the predominant role of composition and productivity, we expect that some of this unexplained variation is due to the limitations of our techniques in capturing these key components of the resident communities.
 
@@ -99,7 +137,7 @@ Regarding productivity, the strong predictive power of productivity at 7 days (i
 
 Aside from productivity and composition, measuring additional variables in the growth period including pH (Amor et al., 2020) and better inferring functional performance using metagenomics and/or metabolomics could have also helped identify the role of environmental modification in preventing invasions. We also do not exclude the possibility that the unexplained variation may result from the stochastic nature of invasions, since stochastic processes can partly govern invader survival in microbial communities (Amor et al., 2020; Kinnunen et al., 2018).
 
-## Conclusion
+### Conclusion
 
 Experiments with artificial communities have suggested that the composition of microbial communities mostly affects invasion resistance by affecting their productivity (Bonanomi et al., 2014; Eisenhauer et al., 2013; Hodgson et al., 2002; van Elsas et al., 2012; Yang et al., 2018). Our experiment lends support to the extension of this claim to natural communities; semi-natural microcosms of bacteria mostly achieve invasion resistance primarily (though not wholly) as the result of their productivity, which is the result of the identity and abundance of the bacteria with which they are inoculated.
 
@@ -107,25 +145,133 @@ A new generation of microbial invasion ecology experiments with more natural mic
 
 ## Materials and methods
 
-## Field techniques
+**Key resources table**
 
-## Field sampling of communities
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Communities</td>
+      <td>Rivett and Bell, 2018; 10.1038/s41564-018-0180-0</td>
+      <td>NA</td>
+      <td>Cryopreserved tree hole communities archived in the lab of Professor Thomas Bell</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ZR-96 DNA Soil extraction kits</td>
+      <td>Zymo Research Ltd</td>
+      <td>11–324H</td>
+      <td>DNA extraction kit</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BLT</td>
+      <td>Rivett and Bell, 2018; 10.1038/s41564-018-0180-0</td>
+      <td>NA</td>
+      <td>Bespoke culture medium made from Autumn/Fall beech leaves and water</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD Accuri C6 Flow Cytometer</td>
+      <td>BD Biosciences</td>
+      <td>NA</td>
+      <td>Flow cytometer used for cell counts with Thiazole Orange (now discontinued)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MicroResp</td>
+      <td>The James Hutton Institute</td>
+      <td>001</td>
+      <td>Used for respiration assays</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>BacTiter-Glo</td>
+      <td>Promega</td>
+      <td>G8231</td>
+      <td>Used for ATP assays</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylose (β-xylosidase substrate); chitin (β-N-acetylhexosaminidase substrate); cellulose (β-glucosidase substrate); phosphate groups (phosphatase substrate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>M7008; M2133; M3633; M8883</td>
+      <td>Fluorescent substrates used for enzyme assays</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas fluorescens)</td>
+      <td>SBW25</td>
+      <td>Labs of Professors Thomas Bell and Craig MacClean; Vogwill et al., 2016</td>
+      <td>NA</td>
+      <td>Lux-transformed P. fluorescens SBW25 invader strain with IPTG-inducable luciferase reported gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas putida)</td>
+      <td>KT2440</td>
+      <td>Labs of Professors Thomas Bell and Craig MacClean; Vogwill et al., 2016</td>
+      <td>NA</td>
+      <td>Lux-transformed P. putida KT2440 invader strain with IPTG-inducable luciferase reported gene</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6758</td>
+      <td>Needed to induce luminescence in the lux-tagged strains</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R; RStudio</td>
+      <td>R Project for Statistical Computing; RStudio</td>
+      <td>RRID:SCR_001905; RRID:SCR_000432</td>
+      <td>Used for the majority of data wrangling and analysis.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious 2.0</td>
+      <td>Biomatters Ltd</td>
+      <td>RRID:SCR_010519</td>
+      <td>Used for construction of phylogenetic tree.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Functional group abundances</td>
+      <td>APG’s Github repository version 1.0.0 deposited in Zenodo [DOI: 10.5281/zenodo.5562687; (Pascual-García, 2021) this paper’s OSF repository https://doi.org/10.17605/OSF.IO/HC57W]</td>
+      <td>NA</td>
+      <td>Functional group abundances and the computational methods used to produce them (APG’s Github repository).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Field techniques
+
+#### Field sampling of communities
 
 We used naturally occurring bacterial communities collected from 680 tree hole communities across Southern England between August 2013 and April 2014. The term ‘tree hole’ refers to the naturally occurring, semi-permanent pools of rainwater that collect in the pans formed by the buttress roots of Fagus sylvatica beech trees (Bell et al., 2005a). Bacterial communities inhabit these phytotelmata, thriving on the organic matter (the bulk of which is beech leaf litter) that collects in them. Communities were sampled in the field by actively searching for pools of water in the buttress roots of beech trees. Once located, GPS coordinates and date of collection was recorded, the tree holes were homogenised using a sterile plastic Pasteur pipette, and 1 ml was transferred into a sterile 1.5 ml centrifuge tube (Starlab; Milton Keynes, UK). Samples were transported to the lab at an ambient temperature within 24 hr of collection, where they were diluted 1:4 in sterile phosphate buffered saline and filtered (pore size 20–22 μm, Whatman four filter paper) to remove debris and large organisms. 500 μl of this filtrate was then used to inoculate 5 mL of beech leaf tea medium (see ‘Laboratory culturing of communities’ for a description) containing 200 μg ml−1 cyclohexamide (Sigma-Aldrich) to remove fungi, and the communities allowed to grow for 7 days at 22°C to reach stationary phase and acclimatise to laboratory conditions. Communities were then frozen in 60% glycerol with NaCl solution (Sigma-Aldrich; Gillingham, UK) to produce a frozen community archive, and revived from these frozen stocks for further experiments.
 
 Thus, these communities were ‘natural communities’ to the extent that they had only been subject to manipulations for practical purposes – dilution for filtering, the removal of fungi, acclimation to the laboratory growth medium, and freezing/thawing. We consider that the 1:4 dilution for filtering was minor compared to that typically used in dilution-to-extinction experiments (typically 90% at each dilution step). The removal of fungi as a practical simplification of the communities is perhaps most contentious manipulation, as fungi are likely to be important decomposers of leaf litter in this system. However, previous experiments also typically worked with bacteria-only resident communities and so our results are comparable. Finally, freezing the communities and re-growing them from frozen stocks for each experiment was a practical step to allow repeatable experiments using the same, fully sequenced starting community. To ameliorate this, the whole procedure of re-growing, functionally characterising and invading communities was repeated in four separate assays and the means of these four pseudo-replicated measurements used for the final analysis.
 
-## Laboratory techniques
+### Laboratory techniques
 
-## Amplicon sequencing of inocula communities
+#### Amplicon sequencing of inocula communities
 
 Communities were sequenced at the point of freezing/archiving and thus, when we talk about ‘composition’ in this paper, we are referring to the composition of the inocula added to the microcosms at the start of the experiment – as is conventional for microbial diversity/composition-invasion resistance experiments. Briefly, immediately prior to archiving, DNA was extracted from all communities using ZR-96 DNA Soil extraction kits (Zymo Research Ltd, Irvine, CA, USA). Extractions were amplified on the V4 region of the 16S rRNA gene, using the barcoded 515F and 806R PCR primers using the HotStarTaq Plus Master Mix Kit (Qiagen; Valencia, CA, USA). The PCR cycle used was: 94°C for 3 min, followed by 28 cycles of 94°C for 30 s, 53°C for 40 s and 72°C for 1 min, followed by a final elongation step at 72°C for 5 min. Sequencing was performed by MR DNA using the MiSeq platform (https://www.mrdnalab.com; Shallowater, TX, USA), with primers and barcodes removed according to their standard procedure.
 
-## Laboratory culturing of communities
+#### Laboratory culturing of communities
 
 The common garden culture medium selected for this experiment was a ‘beech leaf tea’ (BLT), designed to approximate the predominant nutrient conditions found in tree holes. To produce this medium, 50 g of autumn-fall beech leaves were autoclaved with 500 ml of distilled water to create a concentrated solution that was diluted 32-fold to produce the final BLT culture medium. To begin the common garden experiment, communities were revived from the acclimatised stocks by adding 50 μl of each stock to 1.8 ml of BLT in 1.8 ml deep-well 96 well plates and growing for 14 days at 22°C before invasion treatments were applied.
 
-## Productivity measures
+#### Productivity measures
 
 During the 14 day growth period prior to invasion, cell density and respiration were characterised at 7 (7 days before invasion) and 14 days (the day of invasion) as estimates of productivity.
 
@@ -133,7 +279,7 @@ Cumulative density of the communities was measured by sub-sampling the communiti
 
 Respiration of each community was measured by sub-sampling and using the MicroResp system (The James Hutton Institute; Aberdeen, UK). Briefly, agar-set indicator gels were suspended above growing sub-cultures at 7 and 14 days in a deep-well 96-well plate in an airtight system. As growing cells respired, CO2 released was absorbed by the indicator gels above the cultures, and the gel colour changed from pink to purple. Colour change is read via a spectrophotometer prior to suspension above cultures (OD600 at 0 hr), and after 24 hr of respiration/after suspension above cultures. The change in colour is used to calculate mgCO2 released in the 24 hr period using a standard curve.
 
-## Additional phenotypic measurements
+#### Additional phenotypic measurements
 
 We also took phenotypic measurements related to the metabolic activity of communities at 7 and 14 days by performing assays of ATP and enzyme activity. ATP activity assays provide a general estimate of how metabolically active communities are, and we expected that communities that were more metabolically active (i.e. producing more ATP) would be more able to actively defend against invaders (e.g. through resource competition or direct competition).
 
@@ -141,25 +287,25 @@ ATP activity assays were performed at 7 and 14 days of community growth prior to
 
 Enzyme activity assays measured the degree to which communities were degrading particular substrates present in the BLT. We measured the metabolism of the following substrates by the following enzymes; hemi-cellulose by β-xylosidase, chitin by β-N-acetylhexosaminidase, cellulose by β-glucosidase and phosphate groups by phosphatase. These substrates are common in beech leaf litter (Aneja et al., 2006), the complex substrate constituting the BLT medium. Substrates labelled with the fluorescent moiety 4-methylumbelliferone (MUB) (Sigma-Aldrich; Gillingham, UK) were incubated with communities at a working concentration of 400 M for 1 hr, as per Frossard et al., 2013. Fluorescence is generated when labelled substrates are cleaved and deprotonated by bacterially produced enzymes. Fluorescence detected spectrophotometrically is thus used to calculate mg/ml of each enzyme associated with each substrate present in each community – a measure of the capacity of communities to metabolise certain substrates in the BLT.
 
-## Invasion assays
+#### Invasion assays
 
 After the 14 day growth period during which productivity and metabolic activity were characterised, two lux-tagged, IPTG-inducable bacteria - Pseudomonas fluorescens SBW25 and Pseudomonas putida KT2440 – were separately introduced into each of the 680 communities. To perform these two invasion assays, communities were homogenised and aliquoted out twice into 237.5 μl volumes in sterile white microtitre plates. Each invader was grown in 10 ml of BLT medium for 96 hr prior to invasion, and 10 μl added to the community aliquots with 2.5 μl of 100 mM IPTG solution (final concentration 1 mM IPTG). Invaders reached mean densities of 2.5 X 107 ± cells/mL in 48 hr, and so this represented a high invasion pressure of approximately 105 invader cells entering each community containing an average of 105 cells according to cytometry readings.
 
-## Choice of invaders
+#### Choice of invaders
 
 Pseudomonas were chosen as invaders both because of the aforementioned evidence of their abundance on beech leaves, and because they are fast-growing, metabolically versatile bacteria that are common colonisers, contaminants and pathogens in microbial communities (Nikel et al., 2014). Furthermore, Pseudomonas is one of the most cosmopolitan bacterial genera, its members being found in many very diverse environments (Pascual-García et al., 2014) and being a significant component of the bacterial flora of leaves (e.g. Aneja et al., 2006), especially just prior to the beginning of litterfall where they represent approximately 106 cells per gram according to one available estimate (Holm and Jensen, 1972). Combined with the high invasion pressure, we therefore considered them good candidates to be successful invaders, allowing us to study invasion resistance under conditions where it was likely to be most possible and detectable, and invader-side factors were less limiting.
 
 The choice of two closely related species was initially motivated by the intention to explore, in a minor sense, whether invasion resistance and its mechanisms were different between communities that did not have a high abundance of conspecifics to the invader and those that did. None of the OTUs present in the resident communities was aligned to Pseudomonas fluorescens whilst one was aligned to Pseudomonas putida and had a mean abundance of 2.35% ± 0.02 (and so P. fluorescens represented a more ‘true’ invader). As detailed in our Results, anecdotally our results support the idea that invasion resistance is greater where there is a high abundance of conspecifics, but that the mechanisms of invasion resistance are similar regardless. However, there could have been many more reasons for this and species-level resolution for OTUs is unreliable (Janda and Abbott, 2007; Johnson et al., 2019; Knight et al., 2018). In order to support this hypothesis robustly a more dedicated study would need to be done, probably supported by metagenomic sequencing approaches.
 
-## Invader survival
+#### Invader survival
 
 Luminescence of lux-tagged bacterial strains is directly related to the density of metabolically active cells (Close et al., 2012). Therefore, luminescence values of each microcosm were used to calculate the number of metabolically active invader cells (invader survival) produced from the original invader inoculum. As described previously (Jones et al., 2017), we calibrated the luminescence values by performing growth assays of the invader in BLT medium with IPTG (1 mM) prior to the experiment, measuring luminescence and plating cultures onto LB agar to obtain cell numbers. There was a strong relationship between log10 luminescence and log10 plate counts (R2 = 0.87 and 0.82 for P. fluorescens and P. putida, respectively) during log phase, so we used the calibration curve to convert luminescence values into invader cell densities. Invader survival was defined as the density of metabolically active invader cells/ml−1 in the resident communities after some defined period since invasion (24, 96, and 168 hr). The upper detection limit of the luminescence assay was 12 lumens (the maximum background luminescence of 1000 sterile BLT microcosms), which equates to estimated invader survival detection limits of 6.26 x 103 cells/mL for P. fluorescens and 1.06 x 104 cells/mL for P. putida. These detection limits were accounted for in our sensitivity analysis (see Materials and methods: Statistical techniques) which suggested that values below the detection limit contained some real invader signal as well as noise.
 
 In total, therefore, we assayed 680 communities (n = 680) for invasion resistance to two invaders with invader survival measured at three time points (680 x 2 x 3 = 4063 measurements total). 680 was the number of communities remaining from the original set of 753 communities after the removal of communities with less than 10,000 sequences and without all growth assay and/or invasion assay data. This entire 3 week long assay of 4063 measurements (2 weeks of community growth, followed by invasion and measurement of invader survival up until 1 week after invasion) was repeated four times (technical replicates = 4) from frozen stocks to the last measurement (invader survival at 168 hr after invasion). Values used in the experimental analysis are the means calculated from these technical replicates. No explicit power analysis was used as our study was not straightforwardly hypothesis-driven (or at least there were many possible hypotheses) and we had a very large number of replicates (n = 680).
 
-## Computational techniques
+### Computational techniques
 
-## Diversity metrics calculated from compositional data
+#### Diversity metrics calculated from compositional data
 
 Sequenced communities were characterised with bioinformatics implemented at the sequencing centre (Molecular Research DNA; https://www.mrdnalab.com) as described previously (Rivett and Bell, 2018). Briefly, sequences under 150 bp and/or with ambiguous calls were removed, and then the remaining sequences were subjected to de-noising and chimera removal. Sequences were then classified into operational taxonomic units (OTUs) at 97% similarity. Subsequently, extremely rare OTUs occurring in less than 10 samples or with under 100 reads across all samples were removed. We also removed communities with less than 10,000 reads/sequences per sample. This process produced an OTU abundance table of 581 OTUs with the abundance of OTUs being the number of sequences per OTU (Source data 1, Figure 2—figure supplement 1). We used this OTU abundance table for all downstream analysis relating to community composition. OTU diversity (Simpon’s Index) was computed from the species abundance table using the diversity function from the R package vegan (Oksanen et al., 2019). Simpson’s Index was chosen over Shannon’s because it gives more weight to relative abundance vs. species richness, and many OTUs had single digit abundances in some communities. Inspection of exploratory plots of invasion against the two diversity indices also revealed that there was a clearer correlation between invader survival and Simpson’s diversity.
 
@@ -167,7 +313,7 @@ The two phylogenetic metrics were calculated based on the OTU abundance table an
 
 Using this 16S phylogenetic gene tree, a phylogenetic diversity metric (Rao’s quadratic entropy) was computed from the species abundance table using the diversity function from the function rao.diversity from the R package SYNCSA (Debastiani and Pillar, 2012). Rao’s quadratic entropy is a phylogenetic equivalent to Simpson’s diversity, giving the mean phylogenetic distance between any two randomly chosen individuals (in this case OTUs) in the community, taking into account their relative abundance (Rao, 1982). Phylogenetic distance between the invader and community was calculated as follows. First, the cophenetic function of the picante package (Kembel et al., 2010) was used to calculate the pairwise distances between all OTUs in the master phylogenetic tree and each of the invaders, resulting in two vectors of the phylogenetic distance (number of branch lengths; number of inferred substitutions per 16S gene) between each invader and all OTUs. Second, these vectors were used to calculate an abundance weighted invader-community phylogenetic distance metric using the weighted.mean function (stats package; R Development Core Team, 2020) to calculate the phylogenetic distance between the invader and each OTU, weighted by the relative abundance of that OTU in each community.
 
-## Dimensionality reduction approaches tested
+#### Dimensionality reduction approaches tested
 
 Given the difficulty of analysing the effects of 581 OTUs with only 680 samples, we opted to reduce the dimensionality of the starting composition data before proceeding with our main analyses, testing seven approaches.
 
@@ -177,21 +323,21 @@ For the sixth approach, we performed a principal coordinates analysis of the dis
 
 For the seventh and final approach, we calculated a network representing significant correlations between OTU abundances inferred with SparCC (Friedman and Alm, 2012), considering only significant links (pseudo p-value<0.01, absolute value of the correlation coefficient > 0.2) leading to a network whose links represent either segregations (negative correlations) or aggregations (positive correlations) between species. Note that these links do not necessarily reflect ecological interactions, since correlations may be caused by bacteria’s environmental preferences (Pascual-García et al., 2014). We next partitioned the network into functional groups using functionInk (Pascual-García and Bell, 2020b). Briefly, functionInk is a community-detection method that classifies the nodes in the network clustering together those nodes sharing approximately the same number and type of links (aggregations and segregations in our case) with respect to the same neighbours. Since the nodes have the same links with the same neighbours, we say they have the same functional role in the network, hence the name of functional groups. In previous work, we observed that a classification of the samples according to their beta-diversity distance, led to the identification of six community-classes, and that these classes had distinct functional and metagenomic signatures (Pascual-García and Bell, 2020a). To identify these functional groups (Supplementary file 1), we run functionInk on the network finding an optimal partition at the maximum of the total partition density (Pascual-García and Bell, 2020b) with 63 functional groups. For the final analysis, we selected groups that had three or more members, plus a group of functional groups of Paenibacillus species that had less than three members. This was done on the basis of the high abundance of Paenibacillus borealis across the communities, and the high connectivity of Paenibacillus OTUs. This whole process resulted in the selection of 19 functional groups (+ 1 variable representing the total mean abundance of remaining OTUs) as the representation of composition for this approach.
 
-## Selection of a dimensionality reduction approach
+#### Selection of a dimensionality reduction approach
 
 To select the most appropriate dimensionality reduction approach for our analysis, we compared their explanatory power for invader survival using random forest regressions (see below). To do this, before our main analyses, we computed 7 sets of random forest regressions using only these dimensionality reductions of starting composition as the explanatory variables, and P. fluorescens and P. putida invader survival at 24, 96, and 168 hr (1, 3, and 7 days since invasion) as the response variable. In total, there were therefore 21 random forests compared (seven dimensionality reduction approaches x 2 invaders x three sampling points). We compared the dimensionality-reduction techniques by plotting the total variance explained against the number of variables permuted in each of the 21 random forests (Figure 2—figure supplement 3). This revealed functional groups approach (Pascual-García and Bell, 2020b) to be the most appropriate dimensionality reduction of composition to explain invasion, offering the best compromise in terms of variance explained vs. number of variables permuted. We therefore proceeded with using the abundances of the 19+1 functional groups as explanatory variables in the main analysis random forests, adding the phenotypic explanatory variables alongside them to explain invader survival.
 
-## Statistical techniques
+### Statistical techniques
 
 All statistical analyses were performed in the R programming language (R Development Core Team, 2017). Before carrying out analyses, we visually inspected plots of the two-way relationships between invader survival and each of the explanatory variables under various transformations to identify appropriate transformations. The response variable, invader survival, was log10 transformed after adding a pseudocount (+1) to each of the density/ml estimates, in order to deal with zero values. All the explanatory variables except for the three diversity indices (Simpson’s diversity and phylogenetic distance from the invader) were log10 transformed.
 
-## Random forest regressions
+#### Random forest regressions
 
 We used random forest regressions implemented using the ‘randomForest’ package (Liaw and Wiener, 2002) to find the most important individual explanatory variables for invader survival among many. The main advantage of the random forest approach for this was that it is able to deal well with overfitting associated with having many explanatory variables, by randomly shuffling the explanatory variables (and samples) permuted in each constituent regression tree and calculating their mean importance across the ‘forest’. It also makes few assumptions about the relationships between dependent and independent variables than parametric approaches, accounting somewhat for non-independence and non-linearity, for example.
 
 For the main analysis, random forests were computed for each of the six sub-experiments (2 invaders x three time points). For each community, starting composition was computed using the selected dimensionality reduction approach i.e. the mean sequence abundance (across species in the group) in each of the 19 (+1) functional groups). Additionally, the 14 phenotypic measurements of the communities were included as explanatory variables, totalling 37 explanatory variables. We used the variable importance values from the random forests to narrow down the 37 explanatory variables to the best predictors of P. fluorescens and P. putida invader survival.
 
-## Structural equation models
+#### Structural equation models
 
 The random forest approach was useful for identifying the key explanatory variables for invader survival in our system, but as a black box approach, it is difficult to use to understand the shape of the relationships between explanatory and response variables, and assess fit. In our second part of our main analysis therefore, we sought to estimate the putative chain of causation between composition, productivity and invasion resistance using structural equation modelling (SEMs). This approach allowed us to test three scenarios to estimate the extent by which the productivity mediated the effect of composition on invasion (see main text). SEMs were implemented using the lavaan package (Rosseel, 2012).
 
@@ -201,10 +347,10 @@ The chosen explanatory variables (the abundance of the 19+1 functional groups, S
 
 We conducted sensitivity analyses as part of the SEM analysis, in order to validate that the results of the main analysis on the raw data were not an artefact of random noise below the detection threshold of the luminescence assay (which was converted into CFU/ml units). For this analysis, we randomly shuffled the under detection limit invader survival values 999 times by sampling the CFU-converted under detection limit data without replacement using the ‘sample’ function (base package). To assess sensitivity, we examined the average model fit parameters for the Complete, Partial and No Mediation models fit to the 999 generated datasets. When values below the detection limit were randomly shuffled, the model comparison very marginally supported the Complete (mean ΔAIC = 0.97) over the Partial mediation model (mean ΔAIC = 0.02). However, the AIC values of all three models also increased by 1383.71–1400 (i.e. fit decreased) - indicating that at least some the values below the conservative detection limit were informative in the original models. Despite the sensitivity of the result therefore, the nature of the change was consistent with the idea that productivity-independent effects of composition played a role in invasion resistance alongside effects of productivity.
 
-## Other R packages used
+### Other R packages used
 
 Other R packages used include ‘rstudioapi’ for setting working directory (Ushey et al., 2020), ‘tibble’, ‘stringr’ and ‘plyr’ for data wrangling (Müller and Wickham, 2020; Wickham, 2019; Wickham, 2011), ‘plotrix’ for standard error calculation (Lemon, 2006), ‘caret for extracting variable importance values from random forests (Kuhn, 2020), RColorBrewer for figure production (Neuwirth, 2014), ape for phylogenetic tree wrangling (Paradis and Schliep, 2019) and ‘grateful’ for generating a bibliography of the packages used (Rodríguez-Sánchez and Hutchins, 2020).
 
-## Data availability
+### Data availability
 
 Data and R code is available via OSF and Github, copy archived at swh:1:rev:476dcf8bdf672b9126ccdb8a3b463125721aea89 (Jones, 2021).

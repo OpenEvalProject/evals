@@ -55,49 +55,93 @@ In this study, we take a biochemical approach using purified proteins to reconst
 
 ## Results
 
-## Quantitative and time-resolved XL-MS reveal domain-specific changes in crosslink abundances underlying condensate formation
+### Quantitative and time-resolved XL-MS reveal domain-specific changes in crosslink abundances underlying condensate formation
 
 To investigate the condensate-specific interactions of FUS after phase separation, we diluted purified FUS-G156E protein (Patel et al., 2015; Nomura et al., 2014), called FUSm throughout this manuscript, either into a low salt solution, which induces phase separation or into a high salt buffer, which prevents phase separation. After crosslinking of lysine residues and subsequent digestion, equal amounts of peptides were subjected to mass spectrometry analysis to reveal condensate-specific crosslink patterns (Figure 1A, Figure 1—figure supplement 1A, Supplementary file 1). These crosslinks can either reflect the spatial proximity of regions and protein-domains within a given protein, called intra-links, or between different proteins, called inter-links. For a detailed description of the different crosslink types see Figure 1—figure supplement 1B. When the crosslinker reacts twice within one peptide, this is called a loop-link. Additional information comes from crosslinking of one side of the crosslinker with the protein and hydrolysis on the other side. This is called a mono-link and reveals information on the accessibility of a specific lysine residue. In some cases, we can also follow links between proteins of the same species (homo-dimeric link). These are crosslinks between overlapping peptides whose sequence is unique within the protein and that must therefore originate from different copies of the same protein.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig1-v2.jpg)
+
+**Figure 1.:** (A) Workflow of quantitative crosslinking coupled to mass spectrometry (qXL-MS) of FUSm condensates. (B) Crosslink abundance plot from reconstituted FUSm condensates. Plotted are the relative enrichment (droplet vs. non-droplet) for each unique crosslinking site (y-axis) sorted according to the known domain structure within FUSm (x-axis). Shown are only high confidence crosslinking sites (see Materials and methods for details) from three biologically independent sets of experiments (n=3; circles in different shades of gray). Please note that FUSm used throughout this manuscript contains both a C-terminal GFP used for visualization and a 5 AA N-terminal tag used for purification. All uxIDs therefore have an offset of 5 AA compared to the UniProt entry for human FUS (P35637). Crosslinking sites that were consistently upregulated or downregulated twofold or more (log2ratio≥1 or ≤−1 and FDR≤0.05) in at least two out of three biological replicate sets and in addition contained no opposing regulation in any replicate set were considered significant and are highlighted with a green (enriched in droplets) or red background rectangle (decreased in droplets). All other changes in crosslinking abundances were considered insignificant and are shown on gray background. The significance threshold of twofold enrichment is indicated as dashed red line. Dimeric links are indicated by an additional ‘−d’, loop-links by a ‘−l’ and mono-links by an ‘-mono’ at their respective unique crosslinking site. Domain structures within FUSm are color-coded as in (A). RGG refers to AAs 220–289. (C) Upper panel: workflow time-resolved quantitative XL-MS. The conversion of fresh FUSm condensates via the gel state into fibers was monitored by fluorescence microscopy. Scale bar is 10 µm. At indicated time points, aliquots of the stock solution were crosslinked for 5 min, flash-frozen in liquid nitrogen, and subsequently analyzed by MS (see Materials and methods for details). Lower panel: shown are changes of RRM crosslinks during aging that were increased during condensation (B). The logarithmic total MS1 area for each time point during aging is plotted (SDs; n=6). Domain structures within FUSm are color-coded as in (A). RRM, RNA recognition motif.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Statistical validation of crosslinking data. Left panel shows the relationship between the log2ratio and FDR for qXL-MS data. FDR values are p-values corrected for multiple testing (see Materials and methods for details). Significant crosslinks are shown in the blue-shaded area (log2ratio≥1 or ≤−1 and FDR≤0.05). The majority of crosslinks with a high FDR value are found between the log2ratios of −1 and +1. The middle panel shows that quantifications are highly reproducible within triplicate measurements. Plotted is the absolute mean MS1 peak area per crosslink and experiment in log2-scale (where the mean is made up of the light and heavy state and the biological replicates of a crosslink) (x-axis) versus the relative standard deviation of the mean (y-axis). It increases with a decreasing mean but remains below 10% for virtually all crosslinks. The right panel shows that the overall distribution of log2ratios is centered around 0, confirming that the data has no systematic bias. (B) Disuccinimidyl suberate (DSS) was used to introduce covalent bonds between proximal primary amines in order to link lysine residues within studied proteins. The actual crosslinking sites are subsequently identified by MS and reflect the spatial proximity of regions and protein-domains within a given protein (intra-link) or between different proteins (inter-link). Additionally, the crosslinker can react twice within one peptide (loop-link) or only on one side with the protein and hydrolyze on the other side (mono-link), revealing information on the accessibility of a specific lysine residue. XL-MS cannot readily discriminate if a crosslink has formed within one polypeptide chain (defined as intra-link, vide supra) or between homodimers or even higher oligomers of the same protein. This is usually not a problem, but in the case of the high protein concentrations within condensates it may play a role. However, as we detect all shown intra-links within FUSm and HspB8 also under the relatively low-concentration regime of the dilute phase, it is fair to assume that all of the links are indeed intra-links as usually defined—for example occurring within one FUSm polypeptide chain—as we assume in the current version of the manuscript. For some specific intra-links, we do however know that they must have occurred between different molecules of the same protein; these are crosslinks between overlapping peptides whose sequence is unique within the protein and that must therefore originate from different copies of the same protein (homo-dimeric link). (C) Significantly shorter crosslinking time periods than conventionally used lead to reproducible and sufficient crosslinking yields. A test protein was crosslinked for different time periods (1 min, 5 min, and the standard 30 min) before the reaction was quenched and crosslinks were identified by LC-MS/MS (data for two biological replicates are shown). In order to minimize the induced error rate due to sample handling, a crosslinking period of 5 min was chosen for all time points. (D) Crosslinks of FUSm from fresh droplets (T1=0 hr) (upper panel) and the final fiber state (T11=24 hr) (lower panel) reveal a similar overall crosslinking pattern. Experiments were carried out in triplicates and crosslinks were only considered, if they were identified in two out of three replicates with a deltaS<0.95, a minimum Id score≥20, and an ld score≥25 in at least one replicate (filtering was done on the level of the unique crosslinking site) and an FDR<0.05. (E) Overview plot of all crosslinks consistently quantified over 11 time points during the aging process. Crosslinks with a significant change relative to fresh condensates (T1) (log2ratio≥1 or ≤−1 and FDR≤0.05) were colored orange while non-significantly changed crosslinks were colored blue. (F) Comparison of the overall differential crosslinking pattern from FUSm from the final fiber state (T11=24 hr) versus fresh droplets (T1=0 hr). Crosslinking sites that were upregulated or downregulated twofold or more (log2ratio≥±1.0 and FDR≤0.05) were considered significant and are highlighted in green (i.e., relative enrichment in final fiber state) or red (i.e., relative decrease in final fiber state). All other changes in crosslinking abundances were considered insignificant and are shown in gray background.
 
 Please note that the crosslinker used throughout this manuscript, disuccinimidyl suberate (DSS), will react with primary amines and thus primarily link lysine residues within studied proteins. It is important to remember that the LCD of FUS contains no lysines and therefore our approach is not picking up interactions between and amongst the LCD domains (for information on the LCD of FUS see lysine-rich variant FUS_K9 in Figure 2—figure supplement 1G).
 
 The most prominent feature we detected after FUSm condensation was that multiple intra-links within the RRM domain of FUSm increased inside the condensates. This suggests that there are augmented contacts within the RRM domain, indicative of a structural change. In addition, there was an increase in homo-dimeric links between RRM domains, indicative of interactions between RRM domains of different FUSm molecules. Additionally, links between the RRM domain and the nuclear localization sequence (NLS) were increased, while links within the Zinc-finger domain were decreased (Figure 1B). Taken together, these results suggest structural changes in the RRM domain accompany condensation.
 
-## Crosslinks within the RRM domain change during molecular aging
+### Crosslinks within the RRM domain change during molecular aging
 
 It has been shown previously that FUSm (FUS-G156E) shows an increased propensity for aggregation in vitro and in vivo (Nomura et al., 2014), resulting in slowed down internal dynamics over time (Patel et al., 2015; Nomura et al., 2014; Jawerth et al., 2020; Jawerth et al., 2018) and enabling us to study molecular aging of FUS condensates in vitro. To study protein dynamics and conformational changes during aging, we devised a time-resolved, quantitative XL-MS approach (Figure 1C) based on significantly shortened crosslinking times than conventionally used (Iacobucci et al., 2019; Figure 1—figure supplement 1C), which put us into the position to assess all stages of the aging process (Figure 1—figure supplement 1D). We then monitored the conversion of fresh FUSm condensates into fibers by fluorescence microscopy (Figure 1C). At indicated time points, the assemblies were crosslinked and analyzed by MS. We looked at 11 time points during the aging process and consistently quantified 77 crosslinks relative to fresh condensates (T1) (Supplementary file 2). A global view of all quantified crosslinking sites shows that the vast majority of changes are happening during the formation of fiber states (Figure 1—figure supplement 1E). A closer examination focusing on those crosslinks within the RRM that were increased during condensation shows that these also change during molecular aging and particularly during fiber formation (Figure 1C and Figure 1—figure supplement 1F). For instance, the link within the RRM bridging positions 339 and 362 decreases as fibers form. The general trend is for interactions between RRM domains and within RRM domains to decrease as condensates age.
 
-## The small heat shock protein HspB8 partitions into FUS condensates and interacts with the RRM domain
+### The small heat shock protein HspB8 partitions into FUS condensates and interacts with the RRM domain
 
 To test whether these changes in links are indeed driven by aging, we next looked for ways to slow down the aging process. sHSPs are ATP-independent chaperones and are structurally divided into IDRs and a folded chaperone domain called αCD (Carra et al., 2019). HspB8 has previously been localized to stress granules (Ganassi et al., 2016). We therefore purified HspB8 (Figure 2—figure supplement 1A) and looked at its interaction with FUSm condensates in vitro. We find that HspB8 was sequestered into reconstituted FUSm condensates (Figure 2A) and that its fluorescence signal superimposed with the FUSm-GFP signal (Figure 2B), while it did not form droplets on its own under these conditions (Figure 2—figure supplement 1B). Another closely related sHSP that has been localized to stress granules (Mateju et al., 2017), HspB1, did not accumulate inside FUSm droplets (Figure 2C, Figure 2D, Figure 2—figure supplement 1A). Using the fluorescence signal of labeled HspB8 and a calibration curve, we determined the concentration of HspB8 inside FUSm condensates to be 2.4 mM (Figure 2—figure supplement 1C and D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig2-v2.jpg)
+
+**Figure 2.:** (A) 0.25 µM Cy3-labeled HspB8, 4.75 µM unlabeled HspB8 (1:20 mix), and 5 µM FUSm-GFP were mixed in low salt buffer and the resulting droplets were imaged in a confocal microscope. Scale bar is 10 µm. (B) Fluorescence intensity plot profile spanning a FUSm-HspB8 droplet in (A). (C) 0.25 µM Cy3-labeled HspB1, 4.75 µM unlabeled HspB1 (1:20 mix), and 5 µM FUSm-GFP were mixed in low salt buffer and imaged in a confocal microscope. Scale bar is 10 µm. (D) Fluorescence intensity plot profile spanning a FUSm-HspB1 droplet in (C). (E) Overall crosslinking pattern of mixtures of FUSm and HspB8 that were crosslinked under condensate-inducing low salt conditions (75 mM) and separated into the dilute phase (left) and dense phase of the condensates (right) by centrifugation. Experiments were carried out in three biologically independent sets of experiments (meaning separate batches of expressed protein). For one set of experiments, each sample was independently crosslinked in triplicates and crosslinks were only considered, if they were identified in two out of three replicates with a deltaS<0.95, a minimum Id score≥20, and an ld score≥25 in at least one replicate (filtering was done on the level of the unique crosslinking site) and an FDR≤0.05. Inter-links are shown in black and the total number of identifications is indicated by the thickness of the connection. Intra-links are shown in violet, mono-links with a flag, loop links with a pointed triangle, and homo-dimeric links with a loop. (F) Representative overview of observed crosslinks between the LCD and RRM domains in FUSm and the IDR and αCD domains in HspB8 in the dilute and the dense phase as detected by XL-MS (based on (E), Figure 2—figure supplement 1F and G). αCD, α-crystallin domain; IDR, intrinsically disordered region; LCD, low complexity domain; RRM, RNA recognition motif.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) SDS-PAGE of purified FUSm, HspB8, and HspB1 proteins used in this study. (B) 5 µM HspB8 (1:20 mix of Cy3-labeled:unlabeled) in the absence and presence of 5 µM FUSm, Cy3 channel is shown. Scale bar is 10 µm. (C) Calibration curve for pure Cy3-labeled HspB8 in the absence of condensates. (D) Cy3 fluorescence signal inside condensates formed by 5 µM FUSm in the presence of different ratios of Cy3-labeled and unlabeled HspB8. The Cy3 fluorescence signal inside the condensates is linear up to a ratio of 1:20 of labeled:unlabeled HspB8 (labeled HspB8 fraction of 0.05). (E) To test for a potential interaction between HspB8 and FUSm in the dilute phase, protein-protein interactions of 33 nM FUSm and HspB8 (left panel) and Taf-15 (right panel) were assessed under non-phase separating conditions (500 mM KCl) by Microscale Thermophoresis (Jerabek-Willemsen et al., 2011). While FUSm tightly bound to the stress granule protein Taf-15 with a KD of 260 nM, there was no detectable interaction between HspB8 and FUSm, even at a chaperone concentration of 120 µM. (F) Overall crosslinking pattern from mixtures of recombinant FUSm and HspB8 under identical high salt (500 mM NaCl) (left) and condensate inducing low salt (75 mM NaCl) (right) conditions as used for the fluorescence microscopy experiments (Figure 2A and C). (G) Overall crosslinking pattern of mixtures of the recombinant FUSm_K9 variant and HspB8 under high salt (500 mM KCl) (left) and condensate inducing low salt (75 mM KCl) (right) conditions. As FUSm contains no lysine residues within its LCD which are amenable to our NHS-ester crosslinker, we generated a FUSm variant with an additional ‘26’ lysines in the LCD (FUSm_K9), which resembles FUSm in its condensation behavior even though it does not exhibit a similar aging phenotype. We find that in the dense phase of the condensates the number of inter-links between the LCD of FUSm and both the IDR and the αCD of HspB8 was strongly increased, confirming previous results on the role of the LCD during phase separation (Wang et al., 2018). However, only inter-links between the αCD of HspB8 and the RRM of FUSm were exclusively detected inside condensates. (H) Microscopic images of FUSm and lactalbumin under condensate inducing high salt conditions (500 mM NaCl). Scale bar is 10 µm. (I) As a control, we investigated the interaction between FUSm and lactalbumin. Lactalbumin is a molten globule protein that partitions into FUSm condensates likely mediated by unspecific interactions between partially exposed hydrophobic patches in the client and the condensate scaffold protein. Mixtures of FUSm and lactalbumin that were crosslinked under condensate inducing low salt conditions (75 mM) and subsequently separated into the dilute phase (left) and dense phase of the condensates (right) by centrifugation did not show any significant differences in the overall crosslink patterns of dilute and dense phase. This suggests that in contrast to the HspB8: FUSm interaction, partitioning of lactalbumin into FUSm condensates is caused by unspecific interactions. (F, G, I) Samples were independently crosslinked in triplicates and crosslinks were only considered, if they were identified in two out of three replicates with a deltaS<0.95, a minimum Id score≥20, and an ld score≥25 in at least one replicate (filtering was done on the level of the unique crosslinking site) and an FDR≤0.05. Inter-links are shown in black, intra-links are shown in violet, mono-links with a flag, loop links with a pointed triangle, and homo-dimeric links with a loop. Cases where a looplink and a homo-dimeric link were identified on the same lysine are indicated by a triangle pointed downwards. LCD, RGG, RRM, ZnF, and NLS of FUSm are shown in different shades of brown and blue, respectively. The IDR and αCD in HspB8 are colored in dark violet and dark blue, respectively. αCD, α-crystallin domain; IDR, intrinsically disordered region; LCD, low complexity domain; RRM, RNA recognition motif.
+
 We then used XL-MS, to probe PPIs between FUSm and HspB8 inside the condensates. Inter-links (crosslinks between different proteins) predominantly formed inside the dense phase of the condensates (Figure 2E, Supplementary file 3). Together with data from thermophoresis binding experiments (Figure 2—figure supplement 1E), this suggests that HspB8 specifically binds to FUSm inside and not outside condensates. We find the majority of inter-links within the droplets were formed between the αCD of HspB8 and the RRM of FUSm, and to a lesser degree the FUS-NLS. This condensate-specific and highly reproducible crosslinking pattern (Figure 2E, Figure 2—figure supplement 1F and G) was not seen when lactalbumin, a FUS-unrelated molten globule protein that unspecifically partitions into FUSm condensates (Figure 2—figure supplement 1H and I) was used as a control. Taken together, interactions between HspB8 and FUSm show a condensate-specific increase; in particular, interactions between the αCD of HspB8 and the FUSm-RRM are significantly upregulated inside condensates (Figure 2F).
 
-## HspB8 prevents hardening and fiber formation of FUS droplets and keeps them dynamic
+### HspB8 prevents hardening and fiber formation of FUS droplets and keeps them dynamic
 
 A time-course experiment using photobleaching recovery (fluorescence recovery after photobleaching [FRAP]) revealed that in the presence of HspB8, FUSm retained its liquidity over a time span of 24 hr (Figure 3A–C, Figure 3—figure supplement 1A–D). FUSm droplets were able to fuse even after 6 hr (Figure 3D): the relaxation times of the fusion events were not affected (Figure 3E) and the drops no longer adhered to each other (Figure 3—figure supplement 1E). In addition to protecting fresh FUSm condensates from converting into fibers (Figure 3F), the chaperone prevented further conversion of pre-aged FUSm droplets, and prevented seeding of fiber growth (Figure 3G, Video 1). This correlated with the localization of HspB8 to FUSm assemblies (Figure 3—figure supplement 1F). The protective effect of HspB8 on FUSm was also observed at sub-stoichiometric HspB8 concentrations (Figure 3H).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig3-v2.jpg)
+
+**Figure 3.:** (A) FRAP experiment of fresh FUSm condensates (0 hr) and condensates incubated for 5 hr. A kymograph shown below illustrates the kinetics of the process. (B) FRAP experiment of fresh FUSm condensates mixed with HspB8 (0 hr) and condensates incubated for 5 hr. A kymograph shown below illustrates the kinetics of the process. (C) Kinetics of the FUSm aging process. Plotted are the initial slopes of the FRAP recovery curves for FUSm condensates in the absence (black) or presence of HspB8 (red). (D) Successful complete fusion events were registered over time, demonstrating the aging process of the FUSm sample in the absence (turquoise, N=40) or the presence of HspB8 (yellow, N=330). The half-life of liquid-like FUSm condensates alone was estimated to be around 1.5 hr from logistic regression. (E) The size-normalized coalescence relaxation time is an indicator for the material state of the condensates. While it increases for FUSm condensates during the hardening process, it stays constant over 6 hr in the presence of HspB8. Tweezer experiments were performed with fresh samples of 5 μM FUSm with or without 20 μM HspB8. (F) Aging process of 5 µM FUSm condensates in the absence and presence of 5 µM HspB8. In the presence of the chaperone, the droplet morphology is maintained over the whole timeframe of the experiment (12 hr). Scale bar is 10 µm. (G) Left panel: shown is the total area of droplet material (green line) or fibrous material (red line) within FUSm droplets as a function of time after FUSm droplets were added to the existing fibrous material. Spacing between data points is 30 min. Right panel: shown is the total area of droplet material (green line) and fibrous material (red line) within FUSm droplets as a function of time after FUSm droplets and HspB8 were added to the existing fibrous material. Spacing between data points is 30 min. (H) The onset of 5 µM FUSm fiber formation as a function of HspB8 concentration. FRAP, fluorescence recovery after photobleaching.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Quantification of a half-bleach FRAP experiment of fresh FUSm condensates (black) and condensates incubated for 5 hr (red). (B) Same experiment as in (A) in the presence of 5 µM HspB8. (C) HspB8-dependent decrease in mobility has an EC50 of 1.5 µM. Plotted are the initial slopes of the FRAP recovery curves for 5 µM FUSm condensates in the presence of different concentrations of HspB8. (D) Quantification of a full-bleach FRAP experiment of fresh FUSm condensates in the absence (black) and presence of 5 µM HspB8 (red). (E) Representative images of attempted fusion events at early and late stages. Attempts to fuse several droplets of FUSm condensates after hardening result in large amorphous assemblies (red arrow). Scale bar is 3 μm. (F) Colocalization of gels or fibers formed by FUSm and Cy3-labeled HspB8. Scale bar is 10 µm. (G) Crosslink abundance plot from reconstituted FUSm:HspB8 condensates. Plotted are the relative enrichment (droplet vs. non-droplet) for each unique crosslinking site (y-axis) sorted according to the known domain structure within FUSm and HspB8 (x-axis). Shown are only high confidence crosslinking sites (see Materials and methods for details) from five biologically independent sets of experiments (n=5; circles in different shades of gray). Crosslinking sites that were consistently upregulated or downregulated twofold or more (log2ratio≥1 or ≤−1 and FDR≤0.05) in at least two out of five biological replicate sets of experiments and in addition contained no opposing regulation in any replicate set were considered significant and are highlighted with a green (enriched in droplets) or red background rectangle (decreased in droplets). All other changes in crosslinking abundances were considered insignificant and are shown on gray background. The significance threshold of twofold enrichment is indicated as dashed red lines. Dimeric links are indicated by an additional ‘−d’, loop-links by a ‘−l’, and mono-links by an ‘-mono’ at their respective unique crosslinking site. (H) Overall crosslinking pattern of FUSm:HspB8 condensates that were allowed to mature and that were crosslinked 3 hr after their initial formation. (I) Focus on the RRM domain. A comparison of the crosslinks within the RRM (intra, loop, and mono-links) shows no change in abundance when FUSm:HspB8 condensates of fresh droplets were compared with those that were crosslinked 3 hr after their initial formation. FRAP, fluorescence recovery after photobleaching; RRM, RNA recognition motif.
+
+![Video 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-video1.mp4.jpg)
+
+**Video 1.:** Time-lapse movie of FUSm fiber growth in the presence and absence of HspB8. The y-direction images are scaled by a factor of 3 to match the scale bar for the other maximum projection. The histograms/contrast are automatically set using the enhance contrast command in FIJI with 0.3% saturated pixels.
+
 In order to investigate the molecular effect of HspB8 on the hardening of FUSm, we conducted quantitative XL-MS experiments in the presence of HspB8 and looked at crosslinks between FUSm peptides. We found that previously observed crosslink patterns for pure FUSm droplets, in particular upregulated crosslinks of the FUS-RRM, were still seen in the presence of HspB8 (Figure 3—figure supplement 1G, Supplementary file 4). However, interactions between both the RRM with RGG and the RRM with the ZnF decreased, as did links within the ZnF and between the ZnF and the NLS. Our data show that HspB8 binds to the FUS-RRM also during prolonged incubation times via the αCD::RRM interface established during condensation (Figure 3—figure supplement 1H & I). This suggests that HspB8 binds to the RRM domain in condensates and prevents it from forming aberrant interactions with other domains in the protein.
 
-## The disordered region of HspB8 directs the αCD into FUS condensates for chaperoning
+### The disordered region of HspB8 directs the αCD into FUS condensates for chaperoning
 
 sHSPs consist of an αCD and flanking regions that are thought to be intrinsically disordered (Sudnitsyna et al., 2012). Disorder prediction and circular dichroism analysis revealed that HspB8 is likely to be significantly more disordered than the closely related HspB1 (Figure 4—figure supplement 1A–D). To dissect the influence of the conserved αCD and the disordered IDR on the aging process of FUSm we designed SNAP fusion constructs where we fused either only the IDR, the αCD, or full-length HspB8 to a fluorescently labeled SNAP-tag (Figure 4A). While the IDR-SNAP fusion construct was still recruited to FUSm condensates, the αCD-SNAP variant no longer partitioned (Figure 4B). A decreased partitioning of the IDR-SNAP compared to the full-length construct indicated a contribution of the αCD (Figure 4B, Figure 4—figure supplement 1E). The IDR-SNAP construct was also not active in preventing FUSm fiber formation (Figure 4C), while the αCD-SNAP construct showed slight activity at high concentrations (Figure 4—figure supplement 1F). Similarly, in a FRAP assay, the αCD-SNAP construct showed slight activity, while IDR-SNAP was inactive in preventing FUSm gelation (Figure 4—figure supplement 1G). A partitioning analysis of these variants with droplets formed only by the LCD of FUS (AA1–211) under crowding conditions revealed a similar partitioning pattern as compared to the full-length FUSm (Figure 4—figure supplement 1H), indicating that the HspB8-IDR interacts with the FUS-LCD. In order to rule out potential perturbations of HspB8 domain activity by fusion to the SNAP moiety, we designed additional swap variants of HspB8 and the closely related HspB1 (Figure 4—figure supplement 1I) and all our experiments with the HspB8-HspB1 swap variants mirrored the results with the HspB8-SNAP fusions (Figure 4—figure supplement 1J-N).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overview of HspB8 truncation variants used in this study. FL (full-length HspB8 fused to a SNAP-tag), αCD (HspB8 alpha-crystallin domain [AA72–196] fused to a SNAP-tag), and IDR (HspB8-N-terminus [AA1–71] fused to a SNAP-tag). (B) Partitioning of 5 µM HspB8 SNAP constructs (1:20 mix of labeled:unlabeled) into 5 µM FUSm condensates. Scale bar is 10 µm. (C) Aging assay of 5 µM FUSm condensates in the absence (ctrl) and presence of 5 µM HspB8 truncation variants. Scale bar is 10 µm. (D) Partitioning of 5 µM HspB8 (1:20 mix of labeled:unlabeled) into condensates formed by 5 µM FUS wildtype (27 Y, WT) or a variant with a reduced number of tyrosines in its IDR (17 Y). (E) Location of Arg residues in the primary structure of HspB8. 10 Arg residues are located in the N-terminus of HspB8-WT (10 R). In the HspB8-0R variant, these Arg residues are replaced by Gly residues (0 R). (F) Partitioning of 5 µM HspB8-WT or HspB8-0R variant (1:20 mix of labeled:unlabeled) into condensates formed by 5 µM FUSm. (G) HeLa Kyoto cells expressing HSPB8-WT-3xmyc or HSPB8-0R-3xmyc from a plasmid were subjected to heat shock at 43.5°C for 1 hr. Cells were fixed and stained with myc and eIF4G specific antibodies. Merged image composed of eIF4G (green) and myc (red) signals is shown. (H) The onset of 5 µM FUSm fiber formation as a function of HspB8-0R concentration. IDR, intrinsically disordered region.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Disorder prediction and circular dichroism of HspB8 and closely related HspB1. (A) Disorder prediction plot using Dis-EMBL1.5 (Linding et al., 2003) for HspB8 shows that except for the αCD a large portion of the chaperone is predicted to be disordered while (C) HspB1 is predicted to be much less disordered. The αCD of HspB8 was predicted by sequence similarity to the crystallized αCD of HspB1. (B) Circular dichroism analysis shows the typical spectrum of a disordered protein for HspB8, while the analysis of HspB1 (D) reveals mainly beta-sheet content. (E) Quantification of the partitioning of HspB8 truncation variants into condensates formed by full-length FUSm as shown in (Figure 4B). (F) The onset of 5 µM FUSm fiber formation as a function of HspB8 truncation variant concentration. (G) Kinetics of the FUSm aging process. Plotted are the initial slopes of the FRAP recovery curves for FUSm condensates in the absence and presence of 5 µM HspB8 truncation variants. (H) Quantification of the partitioning of HspB8 truncation variants into condensates formed by the FUS-LCD in the presence of 10% Dextran. (I) Overview of HspB8-HspB1 swap variants used in this study. IDR8αCD1 carries an IDR from HspB8 and an αCD from HspB1. IDR1αCD8 carries an IDR from HspB1 and an αCD from HspB8. (J) Partitioning of 5 µM HspB8-HspB1 swap variants (1:20 mix of labeled:unlabeled) into 5 µM FUSm condensates. Scale bar is 10 µm. (K) Quantification of the partitioning experiment described in (G). (L) Aging assay of 5 µM FUSm condensates in the absence (ctrl) and presence of 5 µM HspB8 truncation variants. Scale bar is 10 µm. (M) The onset of 5 µM FUSm fiber formation as a function of HspB8-HspB1 swap variant concentration. (N) Kinetics of the FUSm aging process. Plotted are the initial slopes of the FRAP recovery curves for FUSm condensates in the absence and presence of 5 µM HspB8-HspB1 swap variants. αCD, α-crystallin domain; FRAP, fluorescence recovery after photobleaching; IDR, intrinsically disordered region; LCD, low complexity domain.
+
 In summary, these results suggest that the IDR of HspB8 targets the αCD to condensates via interaction with the LCD of phase separated FUS and that the HspB8-αCD is the active domain in preventing FUS aging.
 
-## Arginines in the disordered region of HspB8 direct the αCD into FUS condensates
+### Arginines in the disordered region of HspB8 direct the αCD into FUS condensates
 
 Recent studies identified interactions between tyrosines in the LCD and arginines in the RBD of FUS to be crucial for its ability to phase separate (Qamar et al., 2018; Wang et al., 2018; Schuster et al., 2020). Because HspB8 partitions into condensates formed only by the FUS-LCD (Figure 4—figure supplement 1N), we hypothesized that HspB8 could interact with tyrosines in the LCD of FUS. We tested the partitioning of HspB8 into a variant of FUS with a decreased number of tyrosines in the FUS-LCD. FUS wildtype (WT) has 27 tyrosines in its LCD. Mutating all of these to serines in the 0 Y variant abrogates phase separation, but the 17 Y FUS variant still undergoes phase separation (Wang et al., 2018; Figure 4D). Partitioning of HspB8 was significantly reduced for FUS condensates formed by the 17 Y variant (Figure 4D), suggesting that tyrosines in the FUS-LCD interact with HspB8. HspB8 has 10 arginines in its predicted IDR (Figure 4E). We exchanged these for glycines resulting in the 0 R variant of HspB8. This variant did not accumulate in FUSm droplets in vitro (Figure 4F) and did not partition into stress granules in cells, contrary to the behavior of HspB8-WT (Figure 4G). When we tested the 0 R variant of HspB8 in a FUSm aging assay we found that its ability to prevent fiber formation was completely abolished (Figure 4H).
 
-## RRM unfolding drives FUS aging and is rescued by HspB8
+### RRM unfolding drives FUS aging and is rescued by HspB8
 
 Next, we sought to test the consequences of the interaction between the HspB8-αCD and the FUS-RRM for FUS aging. To this end, we deleted the RRM in the variant FUSm∆RRM (∆AA285–371) and monitored its aging process in the presence and absence of HspB8 (Figure 5A, Figure 5—figure supplement 1A). First, FUSm aging was observed after 4 hr in the control condition, while co-incubation with HspB8 prevented the aging process over the time course of the experiment. Deletion of the RRM domain in FUSm∆RRM significantly slowed down aging and first aggregates were observed after 36 hr. Remarkably, HspB8 was not able to prevent aging of the FUSm∆RRM variant, indicating that HspB8 binding to the FUS-RRM is required for HspB8 to act as a chaperone for FUS. Our XL-MS data shows that the majority of inter-links between FUSm and HspB8 that were significantly increased within condensates in fact formed between the αCD of HspB8 and the RRM of FUSm (Figure 5B). Thus, while the RRM domain does not seem to be solely responsible for FUS aging, it significantly contributes to the initiation of the process.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig5-v2.jpg)
+
+**Figure 5.:** (A) Aging process of molecular condensates containing either FUSm or the FUSm∆RRM (∆AA285–371) variant in the presence or absence of HspB8 monitored by fluorescence microscopy over time. Scale bar is 10 µm. (B) Inter-link abundances from reconstituted FUSm:HspB condensates. Plotted are the relative enrichment (droplet vs. non-droplet) for each unique crosslinking site (y-axis) sorted according to the known domain structure within FUSm and HspB8 (x-axis). Shown are only high confidence crosslinking sites (see Materials and methods for details) from five biologically independent sets of experiments (n=5; circles in different shades of gray). Crosslinking sites that were consistently upregulated or downregulated twofold or more (log2ratio≥1 or ≤−1 and FDR≤0.05) in at least two out of five biological replicate sets of experiments and in addition contained no opposing regulation in any replicate set were considered significant and are highlighted with a green (enriched in droplets) or red background rectangle (decreased in droplets). All other changes in crosslinking abundances were considered insignificant and are shown on gray background. The significance threshold of twofold enrichment is indicated as dashed red line. (C) Fluorescence microscopy images of FUSm and FUSm∆RRM variant during and after incubation under heat shock conditions. Samples were heated to 55°C for 10 min followed by a 5 min cool-down step to 25°C. Scale bar is 10 µm. (D) FUSm:HspB8 condensates were crosslinked in the presence (black) or absence (white) of a customized RNA oligonucleotide previously shown to bind to FUS (Maharana et al., 2018) and analyzed by LC-MS/MS (n=3; FDR≤0.05). RRM, RNA recognition motif.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69377/elife-69377-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Aging process of molecular condensates containing either FUSm or the FUSm∆RRM (∆AA285–371) variant in the presence of HspB8 monitored by fluorescence microscopy over time. Scale bar is 10 µm. Shown are images after excitation with a 488 nm laser (green) or a 561 nm laser (orange) and the merged images (yellow). (B) A disorder prediction plot (Xue et al., 2010) predicts the FUS-RRM to be folded. (C) FUSm:HspB8 condensates were crosslinked in the presence (black) or absence (white) of a customized RNA oligonucleotide previously shown to bind to FUS (Maharana et al., 2018) and analyzed by LC-MS/MS (n=3; FDR≤0.05). RRM, RNA recognition motif.
 
 The RRM domain of FUS is a folded domain in an otherwise disordered protein (Figure 5—figure supplement 1B). We suspected that RRM unfolding might serve as a seed for the formation of FUS aberrant conformations that would initiate FUS aggregation and fiber formation. To test this hypothesis, we performed a heat shock experiment to unfold the RRM domain of FUS (Figure 5C). The melting temperature of the isolated FUS-RRM has been reported to be 52°C (Lu et al., 2017). We prepared reactions of condensates formed by full-length FUS or FUSm∆RRM and incubated these for 10 min at 55°C to unfold the RRM. At this temperature, FUSm condensates were dissolved (Figure 5C). We then cooled down the reactions to 25°C and assessed the reactions by fluorescence microscopy. While full-length FUSm formed amorphous aggregates after cooling down from heat shock, the FUSm∆RRM variant condensed into spherical droplets (Figure 5C). This result strongly suggests that unfolding of the RRM domain is an integral part of the aging process and deletion of the RRM prevents temperature-induced aggregation of FUSm condensates.
 
 It has been shown that RNA can bind to the FUS-RRM, prevent aging of FUS and dissolve condensates at high concentrations (Kramer et al., 2014; Maharana et al., 2018). Hence, we were wondering whether RNA exerts these effects by virtue of binding and stabilizing the RRM domain. We tested this by looking at competition between RNA and HspB8 binding to FUSm using XL-MS and crosslinked condensates of FUSm and HspB8 in the presence or absence of RNA. While the addition of RNA led to a significant decrease in the number of detected inter-links between FUSm and HspB8, it did not alter the number of intra-links within FUSm or HspB8 (Figure 5D and Figure 5—figure supplement 1C, Supplementary file 5). This result suggests that RNA and HspB8 can compete for binding to FUSm and indicates a similar mechanism by which they stabilize its RRM domain to prevent FUSm aging.
 
-## A disease-associated mutation interferes with HspB8 activity
+### A disease-associated mutation interferes with HspB8 activity
 
 Mutations of the lysine 141 residue in the αCD of HspB8 have been associated with Charcot-Marie Tooth disease, a currently incurable dominant autosomal disorder of the peripheral nervous system leading to muscular dystrophies (Irobi et al., 2004; Figure 6A). The mechanistic cause of the disease is still enigmatic, although experimental evidence indicates a decreased chaperone activity for HspB8-K141E (Kim et al., 2006; Carra et al., 2010; Carra et al., 2008). We introduced the K141E mutation into HspB8 and when we tested HspB8-K141E for localization to FUSm droplets, we found that it still partitioned into reconstituted FUSm droplets (Figure 6B). While the HspB8 WT was active in a FUSm aging experiment, HspB8-K141E could not prevent FUSm aging (Figure 6C) and when mixed with the WT, the mutant exerted a dominant-negative effect over the WT, preventing the WT from being active. By using FRAP, we found that the mutant was much less effective compared to the WT in keeping FUSm in a dynamic state (Figure 6D). Remarkably, the WT-mutant mix showed even lower chaperone activity, underlining the dominant-negative role of HspB8-K141E mutant over the WT (Figure 6D).
 
@@ -129,43 +173,389 @@ In summary, by adapting existing XL-MS workflows, we were able to monitor PPIs a
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hela Kyoto FUS-GFP BAC line</td>
+      <td>PMID:26496610 PMID:28377462</td>
+      <td>5063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Hela Kyoto WT</td>
+      <td>PMID:26496610</td>
+      <td>5067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Escherichia coli)</td>
+      <td>BL21-AI One Shot</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# C607003</td>
+      <td>Chemically competent E. coli</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSS-H12/D12 (BisSulfoSuccinimidylSuberate)</td>
+      <td>Creative Molecules Inc</td>
+      <td>Cat# 001S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N-Dimethylformamide (DMF)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D4551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium bicarbonate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 09830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# U5378</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DTT (1,4-Dithiothreito)</td>
+      <td>Carl Roth</td>
+      <td>Cat# 6908.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Promega</td>
+      <td>Cat# V5113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCEP (Tris(2-carboxyethyl)phosphine hydrochloride)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C4706-2G (CAS 51805-45-9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I1149-5G (CAS 144-48-9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sep-Pak (C18)</td>
+      <td>Waters</td>
+      <td>Cat# WAT054960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-GFP (plasmid)</td>
+      <td>PMID:26317470</td>
+      <td></td>
+      <td>FUS-GFP expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-G156E-GFP (FUSm) (plasmid)</td>
+      <td>PMID:26317470</td>
+      <td></td>
+      <td>FUS-G156E-GFP expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-G156E-K9-GFP (FUSm_K9) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FUS-K9-GFP expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-G156E-ΔRRM-GFP (FUSmΔRRM) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FUS-G156E-ΔRRM-GFP expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-17Y-GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>FUS-GFP-17Y expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FUS-LCD-GFP (plasmid)</td>
+      <td>PMID:29961577</td>
+      <td></td>
+      <td>FUS-LCD-GFP expression in Sf9 cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-WT (plasmid)</td>
+      <td>PMID:15879436</td>
+      <td></td>
+      <td>HspB8-WT expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-K141E (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-K141E expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-SNAP (FL) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-SNAP expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-IDR-SNAP (IDR) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-IDR-SNAP expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-αCD-SNAP (αCD) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-αCD-SNAP expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SNAP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>SNAP expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-IDR-HspB1-αCD (IDR8αCD1) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-IDR-HspB1-αCD expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB1-IDR-HspB8-αCD (IDR8αCD1) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB1-IDR-HspB8-αCD expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-0R (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-0R expression in E. coli</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-WT-3xmyc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-WT-3xmyc expression in human cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HspB8-0R-3xmyc (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HspB8-0R-3xmyc expression in human cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-myc (monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Clone 9E10</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eIF4G (monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Clone H-300</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa Fluor 594 (monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21203</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor 594 (monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21206</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xQuest 2.1.3</td>
+      <td>PMID:24356771</td>
+      <td>http://proteomics.ethz.ch/cgi-bin/xquest2_cgi/download.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xProphet 2.1.3</td>
+      <td>PMID:24356771</td>
+      <td>http://proteomics.ethz.ch/cgi-bin/xquest2_cgi/download.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xTract 1.0.2</td>
+      <td>PMID:26501516</td>
+      <td>http://proteomics.ethz.ch/cgi-bin/xtract_cgi/index.cgi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xiNET</td>
+      <td>PMID:25648531</td>
+      <td>http://crosslinkviewer.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>python 3.7.2 and 3.7.6</td>
+      <td></td>
+      <td>https://python.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pandas 1.0.3</td>
+      <td></td>
+      <td>https://pandas.pydata.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>altair 4.1.0</td>
+      <td>Altair Developers, 2020</td>
+      <td>https://altair-viz.github.io</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>seaborn 0.9.0</td>
+      <td></td>
+      <td>https://seaborn.pydata.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperdexPeptide 3.2/30</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 29-0362-31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acclaim PepMap RSLC</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P/N 164943</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EASY-nLC 1200 system</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LC140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orbitrap FusionTribridMass Spectrometer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Deposited Data: MS raw files</td>
+      <td>PRIDE https://www.ebi.ac.uk/pride/</td>
+      <td>PXD021114 PXD021115</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 FUS-G156E-GFP (FUSm) was purified as described (Patel et al., 2015). HspB8 and corresponding variants were subcloned in a pET11d vector as N-terminal 3C protease-cleavable GST fusion proteins. Fusion proteins were expressed and purified from BL21 Codon RIL (Stratagene). Expression was induced by adding 0.15 mM IPTG for 4.5 hr at 37°C. Bacteria were lysed in 1× PBS, 5 mM DTT, 1 mM EDTA with EDTA-free Protease inhibitors tablet (Roche), and GST purified. Eluates were dialyzed with a 3500 Da MWCO membrane against 1× PBS, 5 mM DTT, and cleaved with PreScission protease. Cleaved off GST was removed by reverse GST purification. HspB8 proteins were subjected to ResourceQ ion-exchange chromatography, concentrated, dialyzed to HspB8 buffer (20 mM Tris, pH 7.4, 20 mM KCl, and 1 mM DTT), and validated by MS.
 
-## In vitro experiments
+### In vitro experiments
 
 Frozen aliquots of FUSm were thawed for 10 min at room temperature (RT), cleared from aggregates by centrifugation for 1 min at 21,000×g using a 0.2 µm spin filter device. Molecular aging experiments were performed according to Alberti et al., 2018 at 5 µM FUSm in reaction buffer (20 mM Tris-HCl, pH 7.4, 75 mM KCl, 0.75% Glycerol, and 1 mM DTT). FRAP experiments were performed and analyzed according to Patel et al., 2015 at 5 µM FUSm in reaction buffer. For partitioning experiments, HspB8 and variants thereof were labeled with Cyanine-3-monosuccinimidyl ester (AAT bioquest, ABD-141) at equimolar ratio in HspB8 buffer and excess dye was removed by dialysis against HspB8 buffer with 1 mM DTT. Labeled HspB8 was mixed with unlabeled protein at a molar ratio of 1:20 and 5 µM FUSm was mixed with 5 µM total HspB8 in reaction buffer. Samples were applied into an imaging chamber with a coverslip passivated with polyethylene glycol. Fluorescence and DIC microscopy were performed on a confocal spinning disk microscope. Images were analyzed using Fiji software (Schindelin et al., 2012).
 
-## Optical tweezer experiments
+### Optical tweezer experiments
 
 To characterize the material state of FUSm condensates with or without HspB8, controlled fusion experiments were performed in a custom-build dual-trap optical tweezer microscope (Patel et al., 2015; Jahnel et al., 2011). 5 μM FUSm condensates were phase-separated at T0 in reaction buffer with or without 20 μM HspB8 and immediately applied to a sample chamber. Two condensate droplets were trapped in two optical traps of the same trap stiffness at low overall light intensity to minimize local heating. With the first trap stationary, the second trap was moved to bring the droplets into contact and initiate coalescence, after which both traps were kept stationary. Laser signals and bright-field microscopy images were simultaneously recorded. Signals from the two traps—equal in magnitude, opposite in sign—were combined into the differential signal, from which coalescence relaxation times were deduced (Wang et al., 2018). To quantify the coalescence dynamics and account for droplets of different sizes, the relaxation time was normalized by the geometric radius of the two fusing droplets. Successful droplet coalescence was scored as yes (Banani et al., 2017) or no (0) depending on whether the process resulted in a near-spherical shape of the final droplet within 60 s. This duration was an order of magnitude longer than the earliest coalescence relaxation times under all conditions. Coalescence success/failure data of FUSm without HspB8 were fit with a logistic regression model to estimate the half-life of liquid-like FUSm condensates.
 
-## Time-lapse microscopy of fiber growth
+### Time-lapse microscopy of fiber growth
 
 FUSm was aged in a centrifuge tube for >24 hr to allow most of the protein to convert to fibrous/aged material. A small amount of aged material was flowed into a custom-built flow cell which includes upper and lower glass surfaces; the bottom glass surface was passivated with polyethylene glycol. After incubation, the chamber was flushed with freshly formed FUSm condensates in reaction buffer either in the presence or absence of 20 µM HspB8. An image stack representing a volume of approximately 100 µm3 and a voxel size of 0.1 µm×0.1 µm×0.3 µm was acquired every 30 min using a spinning disk confocal equipped with a glycerol immersion 60× objective. In the resulting image stacks, fibers tend to be relatively dim with bright cores. To produce an image that allows for good visualization of the process of fiber growth, we smoothed each stack and subsequently applied an enhanced local contrast method (CLAHE). This method uses tiles throughout the image and calculates an appropriate contrast for each tile. We used CLAHE implemented in ImageJ with a block size of 30. For each stack, we create a maximum projection of the resulting stack that produces a single image. Finally, we used an image registration method (using the stackreg plugin in ImageJ) to remove any small translational drift which occurs through the process. The resulting movie is shown as Video 1.
 
-## Image analysis to identify droplets and fibers
+### Image analysis to identify droplets and fibers
 
 The identification of fibers and droplets in images was carried out using custom-made scripts in MATLAB. In short, each image is resized eight times using a bicubic interpolation. An image is subsequently automatically thresholded using Otsu’s method through the imthresh command. Objects are identified as regions of connected pixels. Any objects which intersect the picture border or are very small are discarded from further analysis. Fibrous objects are identified as either objects with an eccentricity above 0.7 or, if the eccentricity is low, as objects that have a roughness above 6.4 pixels. The eccentricity is found by fitting an ellipse to a connected region and is defined as the ratio of the distance between the foci of the ellipse and its major axis length (implemented using the eccentricity argument in the regionprops command). To determine the roughness, each object is fit by a circle. The roughness is defined as the mean distance between the object border and the circular fit. Objects with low surface roughness as well as low eccentricity were considered droplets. All objects and their subsequent classification are also reviewed finally by eye to ensure that the parameters for the images are set properly.
 
-## Immunostaining of sHSPs in stressed cells
+### Immunostaining of sHSPs in stressed cells
 
 HeLa Kyoto WT (Identifier 5067) and HeLa Kyoto FUS-GFP (Identifier 5063) BAC cells were cultured in Dulbecco's modified Eagle's medium containing 4.5 g/L glucose (Gibco Life Technologies) supplemented with 10% fetal bovine serum, 100 U/ml Penicillin+100 μg/ml Streptomycin. 250 μg/ml Geneticin (all Gibco Life Technologies) was added to the HeLa Kyoto FUS-GFP BAC cells. Cells were maintained at 37°C in a 5% CO2 incubator (Thermo Fisher Scientific). HeLa Kyoto FUS-GFP BAC cells were described previously (Mateju et al., 2017). For immunostaining of HspB8-WT and HspB8-0R in stress granules, HeLa Kyoto cells were transfected with 200 ng of plasmids coding for HspB8-0R-3xmyc or HSPB8-WT-3xmyc using Lipofectamine 2000 (Life Technologies) following the manufacturer's instructions. 24 hr post-transfection, cells were subjected to heat shock in a water bath at 43.5°C for 1 hr. Cells were fixed with 3.7% formaldehyde for 9 min at RT and permeabilized with acetone for 5 min at −20°C and stained with c-Myc (9E10, Santa Cruz Biotechnology) and eIF4G (H-300, Santa Cruz Biotechnology) specific antibodies. Secondary antibodies used were anti-mouse Alexa Fluor 594 (A-21203, Thermo Fisher Scientific) and anti-rabbit Alexa Fluor 488 (A-21206, Thermo Fisher Scientific).
 
-## Crosslinking of molecular condensates
+### Crosslinking of molecular condensates
 
 Frozen aliquots of FUSm and FUSm_K9 protein stored in 50 mM Tris-HCl pH 7.5, 500 mM KCl, 5% Glycerol, and 1 mM DTT were thawed for 10 min at RT, cleared from aggregates by centrifugation for 1 min at 21,000×g using a 0.2 µm spin filter device and subsequently diluted in water to a low salt solution (final concentration of 75 mM KCl) to induce phase separation or into a high salt solution (final concentration of 500 mM KCl) to prevent phase separation. In order to reconstitute FUSm:HspB8 condensates HspB8-WT or HspB8-K141E mutant were added to FUSm condensates at equal mass ratio and subsequently incubated on ice for 10 min to allow for sufficient mixing. Molecular condensates were crosslinked by addition of 0.9 mM H12/D12 DSS (Creative Molecules) (Figure 2E, Figure 2—figure supplement 1I), 1.9 mM (Figures 1B, C, 6E and F, Figure 2—figure supplement 1F and G), or 1.5 mM (Figure 5D) at a molar ratio crosslinker to lysines of ~3.6, ~2.3, or ~3.6, respectively, for 30 min at 37°C shaking at 650 rpm in a Thermomixer (Eppendorf). Protein samples were quenched by the addition of ammonium bicarbonate to a final concentration of 50 mM and either directly evaporated to dryness or after an additional centrifugation step for 60 min at 21,000×g in order to separate the dense phase of the condensates from the dilute phase. The dilute phase containing supernatant was transferred to a fresh tube and both phases were evaporated to dryness. Thus, samples were subjected to MS analysis either directly after adjustment of the high salt/low salt solution containing mixtures of essentially dilute phase or dense phase of the condensates (Figures 1B, C, 5B, 6E and F, Figure 2—figure supplement 1F & G, Figure 3—figure supplement 1G) or after an additional separating step by centrifugation fully separating reconstituted droplets that had formed under low salt solution from the remaining dilute phase as described above (Figures 2E, 5B and D, Figure 2—figure supplement 1I, Figure 3—figure supplement 1G). For a detailed description, also of the lysine-rich variant FUS_K9 see also legend Figure 2—figure supplement 1G.
 
-## Crosslinking coupled to mass spectrometry (XL-MS)
+### Crosslinking coupled to mass spectrometry (XL-MS)
 
 Crosslinked samples were processed essentially as described (Leitner et al., 2014). In short, the dried protein samples were denatured in 8 M Urea, reduced by the addition of 2.5 mM TCEP at 37°C for 30 min, and subsequently alkylated using 5 mM Iodacetamid at RT for 30 min in the dark. Samples were digested by the addition of 2% (w/w) trypsin (Promega) overnight at 37°C after adding 50 mM ammonium hydrogen carbonate to a final concentration of 1 M urea. Digested peptides were separated from the solution and retained by a C18 solid-phase extraction system (SepPak Vac 1cc tC18 [50 mg cartridges, Waters]) and eluted in 50% ACN, 0.1% FA. After desalting the peptides were evaporated to dryness and stored at −20°C. Dried peptides were reconstituted in 30% ACN, 0.1% TFA, and then separated by size exclusion chromatography on a Superdex 30 increase 3.2/300 (GE Life Science) to enrich for crosslinked peptides. The three early-eluting fractions were collected for MS measurement, evaporated to dryness, and reconstituted in 5% ACN, 0.1% FA. Concentrations were normalized by A215 nm measurement to ensure equal amounts of dilute and dense phase and peptides separated on a PepMap C18 2 µM, 50 µM×150 mm (Thermo Fisher Scientific) using a gradient of 5–35% ACN for 45 min. MS measurement was performed on an Orbitrap Fusion Tribrid mass spectrometer (Thermo Fisher Scientific) in data dependent acquisition mode with a cycle time of 3 s. The full scan was done in the Orbitrap with a resolution of 120,000, a scan range of 400–1500 m/z, AGC Target 2.0e5, and injection time of 50 ms. Monoisotopic precursor selection and dynamic exclusion were used for precursor selection. Only precursor charge states of 3–8 were selected for fragmentation by collision-induced dissociation using 35% activation energy. MS2 was carried out in the ion trap in normal scan range mode, AGC target 1.0e4, and injection time of 35 ms. Data were searched using xQuest in ion-tag mode. Carbamidomethylation (+57.021 Da) was used as a static modification for cysteine. As database the sequences of the measured recombinant proteins along with reversed and shuffled sequences were used for the FDR calculation by xProphet.
 
 Experiments were carried out in three biologically independent sets of experiments (meaning separate batches of expressed protein). For one set of experiments, each sample was independently crosslinked in triplicates and each of these was measured in technical duplicates. Crosslinks were only considered, if they were identified in two out of three replicates with a deltaS<0.95, a minimum Id score≥20, and an ld score≥25 in at least one replicate (filtering was done on the level of the unique crosslinking site), and an FDR≤0.05 as calculated by xProphet for at least one replicate.
 
-## Quantitation of crosslinked peptides from condensates (qXL-MS)
+### Quantitation of crosslinked peptides from condensates (qXL-MS)
 
-## Quantitation
+#### Quantitation
 
 Initial processing of identified crosslinked peptides for quantitation was performed essentially as described (Sailer et al., 2018). In short, the chromatographic peaks of identified crosslinks were integrated and summed up over different peak groups for quantification by xTract (taking different charge states and different unique crosslinked peptides for each unique crosslinking site into account). Only high-confidence crosslinks that fulfilled the above introduced criteria were selected for further quantitative analysis.
 
@@ -175,18 +565,18 @@ Data were additionally filtered using a light-heavy filter as described (Walztho
 
 In the next step, log2ratios were calculated as the difference between the log2-converted MS1 peak areas (instead of the ratio). Here, the MS1 area for each experiment was shifted into a log2 scale after all summing operations but before taking any means, allowing us to calculate meaningful standard deviations between biological replicates and to avoid the influence of outliers in the original log-normal scale. P-value calculations were otherwise performed as described (Walzthoeni et al., 2015), with one notable exception: MS1 peak areas were not split by technical replicates in order to avoid artificially improved p-values with increasing numbers of technical replicates. FDR values were p-values corrected for multiple testing, following the Benjamini–Hochberg procedure.
 
-## Significance
+#### Significance
 
 Only high-confidence crosslinking sites (see above) that were detected reliably and consistently with a deltaS<0.95, a minimum Id score≥20, and a ld score≥25 in at least one replicate (filtering was done on the level of the unique crosslinking site), and an FDR≤0.05 were used for quantitation. Changes in crosslinking abundances were throughout the paper quantified against the dilute phase (i.e., relative enrichment within droplets is shown in green; relative decrease in red). Only crosslinking sites that were upregulated or downregulated twofold or more (log2ratio≥1 or ≤−1 and FDR≤0.05) in at least two biological replicate sets of experiments and in addition contained no opposing regulation in any replicate set were considered significant.
 
-## Time-resolved quantitative crosslinking coupled to mass spectrometry
+### Time-resolved quantitative crosslinking coupled to mass spectrometry
 
 Fresh FUSm condensates formed under low salt (75 mM KCl) conditions were left shaking at 650 rpm in a Thermomixer (Eppendorf) at 28°C and monitored by fluorescence microscopy at regular intervals until conversion into fibers. The stock solution was aliquoted prior to dilution into low salt buffer to induce condensation and aliquots (n=3) were crosslinked for 5 min and flash-frozen in liquid nitrogen at indicated time points: T1–T6 (0 hr, 20 min, 40 min, 1 hr, 1 hr 20 min, 1 hr 40 min; condensates), T7–T9 (2 hr 20 min, 2 hr 40 min, 3 hr; gels), and T10–T11 (12 hr and 24 hr; fibers). While thawing, 1M ammonium bicarbonate was added to a final concentration of 50 mM and samples were evaporated to dryness. Crosslinks were subsequently identified and quantified exactly as described above.
 
-## Visualization of Crosslink data
+### Visualization of Crosslink data
 
 In order to both validate and visualize the crosslink information, multiple in-house scripts have been written. The visualization scripts either interface directly with the quantitation script described above or use xTract-like output for an input. In either case, the filtering and significance criteria as described above for the quantitation script were used. Crosslink data were transformed via pandas (version 1.0.3) for assessment. Figures 1B and 5B, Figure 3—figure supplement 1G were created with altair (version 4.1.0) running on Python version 3.7.6. Figure 1C and Figure 1—figure supplement 1A (left and right Panel) were created with seaborn (version 0.9.0) running on python (version 3.7.2). Figure 1—figure supplement 1A (middle panel) was created using the in-built pandas dataframe plot functions.
 
-## RNA competition assay
+### RNA competition assay
 
 FUSm:HspB8 condensates were prepared as described and either incubated with RNA oligonucleotide PrD (Maharana et al., 2018) in sub-stoichiometric amounts (three times molar excess of FUSm) or equal volume of water. Samples were checked by microscopy before crosslinking to ensure that the addition of RNA did not dissolve the condensates. The dense phase of the condensates was separated from the dilute phase by centrifugation and the concentration normalized prior to MS measurement as described above.

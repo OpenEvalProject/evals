@@ -22,7 +22,7 @@
 
 ## Abstract
 
-Asthma is a dynamic disease, in which lung mechanical and inflammatory processes interact in a complex manner, often resulting in exaggerated physiological, in particular, inflammatory responses to exogenous triggers. We hypothesize that this may be explained by respiratory disease-related systems instability and loss of adaptability to changing environmental conditions, manifested in highly fluctuating biomarkers and symptoms. Using time series of inflammatory (eosinophils, neutrophils, FeNO), clinical and lung function biomarkers (PEF, FVC,FEV 1 ), we estimated this loss of adaptive capacity (AC) during an experimental rhinovirus infection in 24 healthy and asthmatic human volunteers. Loss of AC was estimated by comparing similarities between pre- and post-challenge time series. Unlike healthy participants, the asthmatic’s post-viral-challenge state resembled more other rhinovirus-infected asthmatics than their own pre-viral-challenge state (hypergeometric-test: p=0.029). This reveals loss of AC and supports the concept that in asthma, biological processes underlying inflammatory and physiological responses are unstable, contributing to loss of control.
+Asthma is a dynamic disease, in which lung mechanical and inflammatory processes interact in a complex manner, often resulting in exaggerated physiological, in particular, inflammatory responses to exogenous triggers. We hypothesize that this may be explained by respiratory disease-related systems instability and loss of adaptability to changing environmental conditions, manifested in highly fluctuating biomarkers and symptoms. Using time series of inflammatory (eosinophils, neutrophils, FeNO), clinical and lung function biomarkers (PEF, FVC,FEV1), we estimated this loss of adaptive capacity (AC) during an experimental rhinovirus infection in 24 healthy and asthmatic human volunteers. Loss of AC was estimated by comparing similarities between pre- and post-challenge time series. Unlike healthy participants, the asthmatic’s post-viral-challenge state resembled more other rhinovirus-infected asthmatics than their own pre-viral-challenge state (hypergeometric-test: p=0.029). This reveals loss of AC and supports the concept that in asthma, biological processes underlying inflammatory and physiological responses are unstable, contributing to loss of control.
 
 ## Introduction
 
@@ -42,15 +42,46 @@ With this approach we found experimental evidence for the loss of adaptive capac
 
 ## Results
 
-## Experimental rhinovirus challenge while monitoring cohort participants
+### Experimental rhinovirus challenge while monitoring cohort participants
 
 In all cohort participants (12 healthy and 12 asthmatic volunteers), the biomarkers/parameters listed in Table 1 below were measured during two months before, and during one month immediately after deliberate experimental inoculation with rhinovirus, resulting in pre- and post-viral-challenge time series of each biomarker/parameter. Plots of the time series of each biomarker can be found in Supplementary file 2. For the healthy and the asthmatics groups separately, summary statistics of the average before the viral challenge (average over 2 months) and after the viral challenge (average over 1 month) of each of these biomarkers/parameters can be found in the Appendix.
 
-## Hierarchical clustering of biomarker time series
+**Table 1.**
+ Biomarkers/parameters measured in each cohort participant during two months before, and during one month immediately after deliberate experimental inoculation with rhinovirus.The corresponding sampling frequencies can be found in columns 2 and 3. See the Materials and methods section below for more details on the study design, and on the measurement procedures and laboratory assays used. FEV1: forced expiratory volume in one second. FVC: forced vital capacity. PEF: peak expiratory flow. FeNO: fractional expired concentration of nitric oxide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biomarker or parameter</th>
+      <th>Sampling frequency before rhinovirus challenge</th>
+      <th>Sampling frequency after rhinovirus challenge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lung function (FEV1, FVC, FEV1/FVC, PEF)</td>
+      <td>2x daily</td>
+      <td>2x daily</td>
+    </tr>
+    <tr>
+      <td>Exhaled Nitric Oxide (FeNO)</td>
+      <td>3x weekly</td>
+      <td>3x weekly</td>
+    </tr>
+    <tr>
+      <td>Eosinophil and neutrophil cell density in nasal lavage fluid</td>
+      <td>1x weekly</td>
+      <td>3x weekly</td>
+    </tr>
+  </tbody>
+</table>
+
+### Hierarchical clustering of biomarker time series
 
 In order to quantitatively establish the degree of similarity or ‘proximity’ between two time series of a given biomarker, we used the Earth Mover’s Distance (EMD), which regards each of the time series as a univariate empirical distribution of the biomarker at hand (see Materials and methods and Appendix for more details). The pre- and post-challenge time series (also referred to as uninfected participant and infected participant, respectively) of individual biomarker time series from all participants (both healthy and asthmatics) were clustered using the EMD as the distance metric between the time series. The outcomes for the levels of exhaled nitric oxide (FeNO), and the percentage of eosinophils in nasal lavage fluid are presented here, whereas the results for the other biomarkers are presented in the Appendix.
 
-## Time series of exhaled Nitric Oxide (FeNO)
+#### Time series of exhaled Nitric Oxide (FeNO)
 
 Findings are summarized in Table 2. The corresponding dendrogram is depicted in Figure 1. In brief, we found three clusters. Cluster 1 consists of four time series stemming from two asthmatics. As can be read off of the dendrogram in Figure 1 below, and of the distance matrix depicted in Panel C of Figure 2 (see Materials and methods section below), these two participants are prominently different from the rest (regarding their FeNO time series), and might be regarded as outliers. Cluster 2 contains more healthy participants than expected by chance. In other words, Cluster 2 is enriched in healthy participants. Conversely, due to the balanced design of the cohort (equal numbers of healthy and of asthmatic participants), Cluster 2 is also depleted of asthmatic participants, that is it contains fewer asthmatic participants than expected by chance. And finally, Cluster 3, which is enriched in asthmatic participants. While all, but one, of the time series from healthy participants are grouped together in Cluster 2, the vast majority of time series from asthmatic participants are split into two different Clusters, namely Clusters 1 and 3. This suggest a higher heterogeneity among the asthmatics. In Cluster 2, the tendency for infected participants to be clustered together with their corresponding uninfected counterpart is statistically significant (p-value=0.007, see Table 2 below). This is not the case for Cluster 3. The difference in this regard between Cluster 2 (mainly healthy participants) and Cluster 3 (mainly asthmatic participants) is further underpinned by the fact that, on average, the cophenetic distances (see Materials and methods section for the definition of cophenetic distance) between the infected cluster members and their uninfected counterparts are statistically significantly lower in Cluster 2 when compared to Cluster 3 (p-value=0.033, one-tailed Mann-Whitney-U-test, see Appendix 1—figure 3).
 
@@ -58,31 +89,294 @@ Findings are summarized in Table 2. The corresponding dendrogram is depicted in 
 
 **Figure 1.:** The distance between any two-time series was calculated using the EMD. Rectangles mark the clusters and sub-clusters identified. From top to bottom: Cluster 1, Cluster 2 (subdivided into Clusters 2.1, 2.2, and 2.3), and Cluster 3 (subdivided into Clusters 3.1 and 3.2, and 3.3). Patient IDs are indicated by Pxy, their health status using H/A, denoting Healthy or Asthmatic, and their RV infection status by Uninf/Inf, which stands for Uninfected/Infected. Cluster 1 consists of time series from asthmatics which are prominently different from those from other asthmatic subjects in Cluster three and also from healthy subjects in Cluster 2. These might be regarded as outliers.
 
+**Table 2.**
+ Composition, enrichment analysis, and grouping characteristics of the clusters found by comparison of each participant’s pre- and post-challenge time series of FeNO.Enrichment is marked in bold letters, depletion in italics; the corresponding p-values were calculated using the hypergeometric test. The empirical p-values for the proportion of pre- and post-pairs were calculated using simulated permutations (see Materials and methods section). A participant is fully represented in a given cluster if both their pre- and post-challenge time series of measurements are contained in the cluster. For example, the healthy participant ‘P08H’ is fully represented in Cluster 2, as both their pre- and post-challenge time series of FeNO measurements are members of Cluster 2 (see Figure 1 below). Partial representation corresponds to the scenario in which only one of the two time series (pre- and post-challenge) is a member of the cluster. For instance, the asthmatic participant " P07A’ is only partially represented in Cluster 2, because their pre-challenge time series of FeNO measurements is part of Cluster 2, whereas their post-challenge time series of FeNO belongs to Cluster 3 (see Figure 1 below). See also the Materials and methods section for the definition of neighbors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic \ cluster number</th>
+      <th>Cluster 1</th>
+      <th>Cluster 2</th>
+      <th>Cluster 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Size (%)</td>
+      <td>4 (8.33 %)</td>
+      <td>26 (54.17 %)</td>
+      <td>18 (37.5 %)</td>
+    </tr>
+    <tr>
+      <td>Fully represented healthy participants</td>
+      <td>0</td>
+      <td>11</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Partially represented healthy participants</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Fully represented asthmatic participants</td>
+      <td>2</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Partially represented asthmatic participants</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Number of time series from healthy participants (%)</td>
+      <td>0 (0%)</td>
+      <td>23 (88.46 %)</td>
+      <td>1 (5.56 %)</td>
+    </tr>
+    <tr>
+      <td>p-value of enrichment/depletion in time series from healthy participants</td>
+      <td>0.055</td>
+      <td>1.78E-09</td>
+      <td>1.15E-06</td>
+    </tr>
+    <tr>
+      <td>Number of neighboring pre- and post-pairs (%)</td>
+      <td>2 (100 %)</td>
+      <td>4 (28.57 %)</td>
+      <td>2 (20 %)</td>
+    </tr>
+    <tr>
+      <td>Empirical p-value (probability of observing, under the null hypothesis, the number of neighboring pre- and post-pairs found in the data, as listed in the previous row above)</td>
+      <td>0.003</td>
+      <td>0.007</td>
+      <td>0.097</td>
+    </tr>
+  </tbody>
+</table>
+
 The sub-clusters found within Clusters 2 and 3, respectively (marked with orange and blue rectangles in Figure 1), were analyzed in terms of enrichment in or depletion of pre- and post-challenge time series. The results are presented in Table 3. This analysis provides evidence for a statistically significant separation of pre- and post-challenge time series within Cluster 3. Indeed, the union of subclusters 3.1 and 3.2 is enriched in pre-challenge time series (p-value=0.029, see Table 3 below), whereas subcluster 3.3 is enriched in post-challenge time series (p-value=0.029, see Table 3 below). Such a separation cannot be observed within Cluster 2.
 
 A bootstrap based sensitivity analysis of these findings can be found in the Appendix.
 
-## Time series of percentage of eosinophils in nasal lavage fluid
+**Table 3.**
+ Enrichment analysis of the sub-clusters found within the clusters described in Table 2 above (the clusters marked with orange and blue rectangles in Figure 1).Enrichment in pre-challenge time series is marked in bold letters, depletion of pre-challenge time series (and consequently enrichment in post-challenge time series) in italics; the corresponding p-values were calculated using the hypergeometric test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sub-cluster number \ characteristic</th>
+      <th>Size (%)</th>
+      <th>Number of pre-challenge series (%)</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cluster 2.1</td>
+      <td>7 (26.92 %)</td>
+      <td>3 (42.86 %)</td>
+      <td>0.404</td>
+    </tr>
+    <tr>
+      <td>Cluster 2.2</td>
+      <td>11 (42.31 %)</td>
+      <td>8 (72.73 %)</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>Cluster 2.3</td>
+      <td>8 (30.77 %)</td>
+      <td>3 (37.5 %)</td>
+      <td>0.246</td>
+    </tr>
+    <tr>
+      <td>Cluster 3.1 and 3.2</td>
+      <td>13 (72.22 %)</td>
+      <td>8 (61.54 %)</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>Cluster 3.3</td>
+      <td>5 (27.78 %)</td>
+      <td>0 (0.00 %)</td>
+      <td>0.029</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Time series of percentage of eosinophils in nasal lavage fluid
 
 Findings are summarized in Table 4. The corresponding dendrogram is depicted in Appendix 1—figure 1. In brief, three clusters were identified. Cluster 1 consists of four time series stemming from three asthmatics. As can be read off of the dendrogram depicted in Appendix 1—figure 1, these time series are prominently different from all the other time series, and might be regarded as outliers. Cluster 2 is enriched in healthy participants. And finally, Cluster 3, which is enriched in asthmatic participants. As seen in the analysis of FeNO, while the vast majority of the time series from healthy participants are grouped together in Cluster 2, most of the time series from asthmatic participants are split into two different Clusters, namely Clusters 1 and 3. This suggest a higher heterogeneity among the asthmatics. However, Cluster 1 in the eosinophil analysis and Cluster 1 in the FeNO analysis only have one asthmatic patient in common. Again, in Cluster 2, the tendency for infected participants to be clustered together with their corresponding uninfected counterpart is statistically significant (p-value=0.001, see Table 4 below). This is not the case for Clusters 1 and 3. The difference in this regard between Cluster 2 (mainly healthy participants) and Cluster 3 (mainly asthmatic participants) is further substantiated by the fact that, on average, the cophenetic distances between the infected cluster members and their uninfected counterparts are statistically significantly lower in Cluster 2 when compared to Cluster 3 (p-value=8.96e-05, one-tailed Mann-Whitney-U-test, see Appendix 1—figure 2).
 
-## Autocorrelation properties of the biomarker time series
+**Table 4.**
+ Composition, enrichment analysis, and grouping characteristics of the clusters found by comparison of each participant’s pre- and post-challenge time series of percentage of eosinophils in nasal lavage fluid.Enrichment is marked in bold letters, depletion in italics; the corresponding p-values were calculated using the hypergeometric test. The empirical p-values for the proportion of pre- and post-pairs were calculated using simulated permutations (see Materials and methods section). A participant is fully represented in a given cluster if both their pre- and post-challenge time series of measurements are contained in the cluster. Partial representation corresponds to the scenario in which only one of the two time series (pre- and post-challenge) is a member of the cluster. See also the Materials and methods section for the definition of neighbors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic \ cluster number</th>
+      <th>Cluster 1</th>
+      <th>Cluster 2</th>
+      <th>Cluster 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Size (%)</td>
+      <td>4 (8.33 %)</td>
+      <td>26 (54.17 %)</td>
+      <td>18 (37.50 %)</td>
+    </tr>
+    <tr>
+      <td>Fully represented healthy participants</td>
+      <td>0</td>
+      <td>11</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Partially represented healthy participants</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fully represented asthmatic participants</td>
+      <td>1</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Partially represented asthmatic participants</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Number of time series from healthy participants (%)</td>
+      <td>0 (0%)</td>
+      <td>22 (84.62 %)</td>
+      <td>2 (11.11 %)</td>
+    </tr>
+    <tr>
+      <td>p-value of enrichment/depletion in time series from healthy participants</td>
+      <td>0.055</td>
+      <td>1.09E-07</td>
+      <td>2.89E-05</td>
+    </tr>
+    <tr>
+      <td>Number of neighboring pre- and post-pairs (%)</td>
+      <td>1 (33.33 %)</td>
+      <td>5 (38.46 %)</td>
+      <td>1 (10 %)</td>
+    </tr>
+    <tr>
+      <td>Empirical p-value (probability of observing, under the null hypothesis, the number of neighboring pre- and post-pairs found in the data, as listed in the previous row above)</td>
+      <td>0.123</td>
+      <td>0.001</td>
+      <td>0.424</td>
+    </tr>
+  </tbody>
+</table>
+
+### Autocorrelation properties of the biomarker time series
 
 For every participant, the autocorrelation coefficient of the lung function parameters time series and of the FeNO time series was calculated using a for each parameter type physiologically meaningful time lag. More specifically, a one-day lag was used for lung function parameters, and a two-days lag for FeNO. Due to the low sampling frequency used before the viral challenge, the time series of eosinophil and neutrophil cell density in nasal lavage fluid were not included in the autocorrelation analysis.
 
 The resulting autocorrelation coefficients were then used to compare the groups of asthmatic and healthy participants prior to and after the viral challenge (see Appendix 1—figures 10–14). Briefly, in terms of autocorrelation, the lung function parameters PEF (% predicted), FVC, and FEV1/FVC discriminate significantly between the pre- and post-infection status in both healthy and asthmatic participants. Indeed, for these three parameters, there is a moderate positive autocorrelation before the challenge, which then disappears after the challenge. Furthermore, in terms of autocorrelation, only FeNO discriminates significantly between healthy and asthmatic participants, and it does so only after the challenge. More specifically, only asthmatics exhibit a moderate autocorrelation of their FeNO time series after the challenge. However, after a multiple pairwise-comparison correction aimed at controlling the false discovery rate, only the parameters FVC and FEV1/FVC discriminate significantly between the pre- and post-infection status in both healthy and asthmatic participants, while the other findings lose their statistical significance. The results after multiple pairwise-comparison correction are summarized in Appendix 1—table 2.
 
-## Individual response to the viral challenge with respect to the biomarkers measured
+### Individual response to the viral challenge with respect to the biomarkers measured
 
 In order to test the effectiveness of the virus challenge, we measured the individual patient’s response with respect to each of the biomarkers measured. However, prior to doing that, the efficacy of the inoculation with RV16 needed to be established. Indeed, the results of blood antibody tests (RV16 seroconversion) along with RV Polymerase Chain Reaction (PCR) conducted on nasal lavage fluid taken from every participant after the inoculation indicated that 11 out of 12 healthy participants and 12 out of 12 asthmatics were effectively infected with the RV16 after inoculation (Appendix 1—table 1). According to the above mentioned laboratory tests, one healthy participant did not become infected. However, this participant did develop cold symptoms within a few days after the virus inoculation, suggesting that the laboratory tests failed to detect the ongoing infection although the participant was positively infected. Consequently, this participant was included in the analyses.
 
 We then explored, for each of the biomarkers measured (listed in the first column of Table 5), for how many participants a statistically significant within-subject change upon infection can be observed (‘responders’, see Table 5). To this end, two criteria for ‘responders’ were implemented. The first criterion, which regards time series as univariate empirical distributions of the biomarker at hand, aimed at detecting distributional changes in a given biomarker induced by the viral challenge: Here, each participant’s pre- and post-challenge time series of each biomarker were compared using the Kolmogorov-Smirnov test. The second criterion aimed at detecting short-term and transient relative changes induced by the viral challenge in the context of the relative changes observed prior to the challenge. Here, throughout the entire period of observation, we assessed the relative change of each biomarker taking place within time intervals of 10 days. (see Subsection 5.2 and Figure 3 in the Materials and methods section below).
 
+**Table 5.**
+ Proportions of responders within the groups of healthy and asthmatic participants, respectively.Two different criteria were used in order to establish a statistically significant response. According to the first criterion, a participant is considered a responder with respect to a given biomarker if the outcome of comparing the pre-challenge time series and the post-challenge time series of the same biomarker by means of the Kolmogorov-Smirnov test results in a p-value<=0.05 (columns 2 and 3). According to the second criterion, a participant is considered a responder with respect to a given biomarker if the outcome of comparing, by means of a Mann-Whitney-U-test, the magnitude of relative changes observed during 10 day time intervals prior to the challenge with the magnitude of relative changes that took place during 10 day time intervals that contained the day of the challenge results in a p-value<=0.05 (columns 4 and 5). For calculating the proportion of responders within each group the p-values were corrected for multiple testing using the false discovery rate (FDR) method of Benjamini and Hochberg. FEV1: forced expiratory volume in one second. FVC: forced vital capacity. PEF: peak expiratory flow. FeNO: fractional expired concentration of nitric oxide. The lung function parameters FEV1 and FVC, and thereby their ratio FEV1/FVC, were normalized using the standardized reference equations recommended by Global Lung Function Initiative (GLI) Task Force for comparisons across different populations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Biomarker name</th>
+      <th>% Healthy responders (distributional changes)</th>
+      <th>% Asthmatic responders (distributional changes)</th>
+      <th>% Healthy responders (relative change within 10 days)</th>
+      <th>% Asthmatic responders (relative change within 10 days)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PEF (% of predicted)</td>
+      <td>50.0%</td>
+      <td>75.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Normalized FEV1</td>
+      <td>75.0%</td>
+      <td>66.7%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Normalized FVC</td>
+      <td>83.3%</td>
+      <td>100.0%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Normalized FEV1/FVC</td>
+      <td>75.0%</td>
+      <td>66.7%</td>
+      <td>16.7%</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>FeNO</td>
+      <td>8.3%</td>
+      <td>0.0%</td>
+      <td>41.7%</td>
+      <td>8.3%</td>
+    </tr>
+    <tr>
+      <td>Cell density in nasal lavage fluid</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>66.7%</td>
+      <td>41.7%</td>
+    </tr>
+    <tr>
+      <td>Neutrophils in nasal lavage fluid (%)</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>25.0%</td>
+      <td>16.7%</td>
+    </tr>
+    <tr>
+      <td>Eosinophils in nasal lavage fluid (%)</td>
+      <td>8.3%</td>
+      <td>0.0%</td>
+      <td>0.0%</td>
+      <td>16.7%</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 In this proof of concept study, we provided experimental evidence for the loss of adaptive capacity in the human respiratory system due to asthma. To this end, we hypothesized that a loss of adaptive capacity could be experimentally demonstrated by detection of a similarity diminution between the pre- and post-perturbation dynamics of the system. Using a data-driven clustering approach, we have shown that, in particular, FeNO and eosinophil time series were similar prior to and following the challenge in healthy subjects, suggesting stable homeokinetic behavior. In asthmatics, however, this similarity was predominantly reduced, suggesting a marked impact of the asthmatic condition on dynamic properties of the respiratory system, consistent with more unstable behavior and loss of adaptive capacity following the perturbation with viral infection. This loss of self-similarity is not merely the result of a larger response to the virus infection. Rather, we detected changes in the overall biomarker fluctuation dynamics elicited by the viral challenge that render asthmatics more similar to other infected asthmatic participants than to their uninfected counterparts.
 
-## Experimental evidence supporting our hypothesis of a loss of adaptive capacity of the respiratory system in asthma
+### Experimental evidence supporting our hypothesis of a loss of adaptive capacity of the respiratory system in asthma
 
 Our hypothesis in this study is based on the following question: For which type of participant, healthy or asthmatic, and for which biomarker is the disruption introduced by the viral challenge strong enough to render infected individuals more similar among themselves than to their uninfected counterparts? Our cluster analysis of the pre- and post-challenge time series of the percentage of eosinophils in nasal lavage fluid resulted in two main clusters: Cluster 2, which is statistically significantly enriched in healthy participants, and Cluster 3, which is mainly composed of asthmatic participants. In Cluster 2, the tendency for infected participants to be clustered together with their corresponding uninfected counterpart is statistically significant and clearly higher than in Cluster 3. In the clustering of the pre- and post-challenge time series of FeNO we found Cluster 2, mainly composed of healthy participants, and Cluster 3, made of nearly 95% asthmatics. Furthermore, within Cluster 3 we found a statistically significant separation of pre- and post-challenge time series. No such separation was found within Cluster 2. For both biomarkers (percentage of eosinophils in nasal lavage fluid and FeNO), the difference in this regard between Cluster 2 (mainly healthy participants) and Cluster 3 (mainly asthmatic participants) is further substantiated by the fact that, on average, the cophenetic distances between the infected cluster members and their uninfected counterparts are statistically significantly lower in Cluster 2 when compared to Cluster 3.
 
@@ -90,23 +384,23 @@ In our clustering based on time series of cell density in nasal lavage fluid, th
 
 Summarizing, we have found evidence for the tendency of infected asthmatic participants to be more similar to other infected asthmatic participants than to their own uninfected counterparts when similarity is measured in terms of the biomarker dynamics of FeNO, of the percentage of eosinophils in nasal lavage fluid, and of cell density in nasal lavage fluid. This tendency was, however, not observed, when similarity was measured in terms of the biomarker dynamics of lung function parameters, and of neutrophil cell density in nasal lavage fluid.
 
-## Physiological interpretation of the group differences in autocorrelation properties of the biomarker time series
+### Physiological interpretation of the group differences in autocorrelation properties of the biomarker time series
 
 We and others have previously shown that time series of lung function over days display a weak intrinsic autocorrelation over long- and short-time scales in asthmatic and healthy subjects (Frey et al., 2005; Delgado-Eckert et al., 2018; Thamrin et al., 2016). Lung function is correlated with lung function values of previous days; these correlation properties are related to severity of asthma and disease control (Thamrin et al., 2016). It has been hypothesized that such correlation properties are related to the balance between disease stability and adaptability of the system (Frey et al., 2011). We and others have previously shown that external stimuli such as medication can alter these correlation properties dependent on the applied drug action (Frey et al., 2005; Thamrin et al., 2016). Here, we provide first evidence that viral stimuli can also alter these correlation properties. In both healthy and asthmatic subjects, correlation of daily lung function was weakened by the viral challenge of the respiratory system. We hypothesize that following the viral challenge, the lung mechanical system properties are less deterministic consistent with a lower stability of the respiratory system.
 
-## Asthma as a chronic disease: Causal chain of mechanisms or complex system behavior?
+### Asthma as a chronic disease: Causal chain of mechanisms or complex system behavior?
 
 The classical analytical approach in asthma research is the identification of individual mechanisms (e.g., airway obstruction) or a series of mechanisms involved in the disease process (e.g. viral trigger → inflammation → bronchial hyperreactivity→ airway obstruction→ respiratory symptoms). However, epidemiological observations have questioned such a simple causal relationship between these mechanisms. For example, our previous work demonstrates that the strength of the trigger is often not proportional to the degree of response and symptoms (Frey and Suki, 2008). Also, the degree of inflammation, airway obstruction and bronchial responsiveness are often not closely related. Response to triggers (e.g., environmental pollutants) can occur with time lags and also in various degrees of intensity depending on the pre-existing conditions of the respiratory system (e.g. increased bronchial hyperresponsiveness following allergic sensitization or viral infection). Such a behavior is better explained by complex system behavior of a chronic disease. However, so far, the latter is difficult to capture and remained a theoretical concept.
 
 We believe that the current experiment provided significant evidence to support the existence of such system behavior in asthma. In a well-established human challenge model, the respiratory system was challenged with a standardized (viral) stimulus, an established approach to test the behavior of complex network systems. We made the following observations: First, prior and after the challenge a set of lung functional and inflammatory asthma-biomarkers showed temporal fluctuations, in both healthy and asthmatic human subjects. There was a large inter and intra-individual variation. Second, the temporal relationship between inflammatory and lung functional biomarkers and symptoms was weak, not supporting the concept of simple proportional interactions of the above-mentioned causal chain of mechanisms. Third, despite these fluctuations and despite the absence of a strong response to the viral challenge in a distinct mechanistic biomarker, we identified differences between healthy and asthmatic humans in these dynamic variations. This indicates that the complex interactions of inflammatory and lung functional parameters and thus the control of biological responses relevant to the respiratory system must be different in asthma. Our data support the hypothesis of a loss of adaptive capacity in asthma, which impedes the fast return to the pre-challenge stable dynamic steady state. We hypothesize that some clinical phenomena are consistent with such loss of adaptive capacity, such as, for example increased morbidity and prolonged respiratory symptoms after viral infection in asthmatics, persistent bronchial hyperresponsiveness after viral challenge, or slower return of airway obstruction following viral challenge (Busse et al., 2010).
 
-## Variable and heterogeneous effect of the viral challenge on lung function and inflammatory/immune biomarkers
+### Variable and heterogeneous effect of the viral challenge on lung function and inflammatory/immune biomarkers
 
 We carried out a quantitative characterization of individual response to the viral perturbation. This was done using two computational/statistical approaches. One approach aimed to capture the changes elicited by the viral challenge taking place over longer time periods (comparison of the pre- and post-challenge time series, viewed as empirical distributions), whereas the other assessed relative short-term changes occurring at shorter time scales (comparison of the magnitude of relative changes observed during 10 day time intervals).
 
 There is a clear macroscopic/functional manifestation of the kindling RV infection, as reflected at the level of distributional changes induced by the viral challenge on lung function parameters. Indeed, with respect to this criterion, 50% or more statistically significant responders in each of the two groups (healthy and asthmatics) were found (see rows 1–4 in Table 5 above). Notably, significant differences found between pre- and post-challenge time series were, in general, not attributable to changes in the variance, as verified using Levene’s test (results not shown). Nevertheless, for most participants the lung function parameters did not show short-term/transient relative changes induced by the viral challenge that were statistically significantly different in magnitude from short-term changes observed during the pre-challenge phase (see columns 4 and 5, and rows 1–4 in Table 5 above, and Supplementary file 1). Taken together, these results suggest that the changes in lung function elicited by the viral challenge are, both for healthy and asthmatic participants, subtle, spread over comparatively longer time periods, and unlike a transient decline. This is in line with the results of previous studies (Seemungal et al., 2001), which concluded that after RV challenge lung function in asthmatic subjects did change, but did not decline dramatically in comparison to the changes observed in healthy controls. In contrast, our analyses indicate that changes in the inflammatory or immunological biomarkers at the cellular or molecular level are short-term and transient in nature (see rows 5–8 in Table 5 above, and Supplementary file 1). Nevertheless, for these parameters fewer responders were found, when compared to the lung function parameters. However, our results also hint at a relatively short time scale of response of these inflammatory/immunological biomarkers. Thus, the sampling frequency used in this study may not entirely capture the rapidly changing magnitudes. The observed differences in the type of response between the lung function and the inflammatory/immunological biomarkers may be a manifestation of the interplay of different temporal and spatial scales.
 
-## Potential physiological and inflammatory mechanisms responsible for the biomarker dynamics observed in the group of asthmatics and the resulting reduction in adaptive capacity
+### Potential physiological and inflammatory mechanisms responsible for the biomarker dynamics observed in the group of asthmatics and the resulting reduction in adaptive capacity
 
 One potential explanation for the differences in biomarker dynamics observed between healthy and asthmatic participants could be the level of airway obstruction. Indeed, Dames et al. quantitatively assessed the overall variability and complexity of airflow time series in patients with COPD during resting breathing. They found that airflow pattern complexity was reduced proportionally to airway obstruction measured with spirometric indices (Dames et al., 2014).
 
@@ -114,11 +408,11 @@ Changes at the level of airway smooth muscle (ASM) could also be associated with
 
 Inflammatory mediators and pathways involved in asthma could also explain the observed fluctuations in biomarker dynamics. With respect to the inflammatory biomarker dynamics it is well known that the production of inflammatory mediators is strictly controlled to ensure a limited but effective inflammatory response. To that end, most mRNAs encoding inflammatory mediators contain regulatory motifs like AU-rich elements in their 3’-untranslated region, which affect both transcriptional control, mRNA half-life and translational control (Hao and Baltimore, 2009). Changes in these regulatory mechanisms are likely to lead to less well-controlled inflammatory responses and in fact beyond that as the expression of many response genes are controlled by these regulatory motifs. We have recently shown that this translational control of AU-rich containing mRNAs in primary bronchial epithelial cells from mild and severe asthma patients compared to that from healthy controls is defective (Ravi et al., 2019). This led to exaggerated ex vivo production of, for example mediators driving neutrophilic inflammation, which correlated with the in vivo neutrophilic inflammation. In a follow-up study (A. Ravi et al, submitted) we showed that a RV16 challenge worsened this defect and with that the neutrophilic inflammation whereas this was not the case in healthy controls. The strong correlations between this defect and neutrophilic inflammation are suggestive of causality although formal proof is still lacking. This defect in the bronchial epithelial cells in asthma may underlie loss of adaptive capacity in response to a RV16 challenge.
 
-## Limitations of the study
+### Limitations of the study
 
 Our findings need to be judged in light of the limitations of our study. One of the limitations is that we only included mild asthmatics and therefore our findings may not be directly translatable to moderate and severe asthma. A similar study setting for severe asthma is not feasible because it is ethically not acceptable to challenge those asthma patients with RV16 and in addition severe asthmatics are likely to be on corticosteroid treatment therefore introducing a confounding factor. Another possible shortcoming of this study is the relatively small sample size. However, this drawback is compensated for by the unprecedented high sampling frequency at which the participants were screened in our study.
 
-## Conclusion and implications
+### Conclusion and implications
 
 We presented evidence supporting the notion that a chronic disease such as asthma may alter the properties of a homeokinetic physiologic system in a way that compromises its capacity to appropriately react to a possibly harmful environmental stimulus. This loss of adaptive capacity in the asthmatic lung may be understood as changes that render the system overly unstable (Frey et al., 2011). As a proof of concept, such changes in homeokinetic system properties would provide evidence supporting the idea that not only singular factors in isolation, but their interaction and also system properties, such as the interactions between their constituent parts, may contribute to disease dynamics and phenotype stability.
 
@@ -130,13 +424,127 @@ Future studies involving time series of biomarker measurements may help us under
 
 This study was approved by the medical ethical committee from the Amsterdam University Medical Center and registered at the Netherlands Trial Register (NTR5426/NL5317).
 
-## Participant cohort
+### Participant cohort
 
 Twelve non-smoking, atopic (as determined by positive skin prick test to common aeroallergens), mild to moderate asthmatic subjects (based on ATS/ERS criteria), not using steroids were chosen for inclusion. Similarly, 12 non-smoking, non-atopic healthy subjects were also included in the study as controls. All participants provided written informed consent. The demographics of the study population are summarized in Table 6. All the participants were required to have their serum antibody titer of RV16 <1:8 during screening. The age group for the study population was 18–30 years. Individuals with concomitant disease and pregnant women were excluded.
 
+**Table 6.**
+ The demographics of the study population.BMI is Body Mass Index. Only one healthy subject smoked two pack years or less 2 years before recruitment to our study, which is considered an insignificant smoking history. FEV1: forced expiratory volume in one second. PEF: peak expiratory flow.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Demographic features</th>
+      <th>Healthy</th>
+      <th>Asthmatic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number, n</td>
+      <td>12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Female gender, n (%)</td>
+      <td>7 (58.3%)</td>
+      <td>8 (66.7%)</td>
+    </tr>
+    <tr>
+      <td>Age (years), mean (SD)</td>
+      <td>21 ± 1.5</td>
+      <td>22.2 ± 2.2</td>
+    </tr>
+    <tr>
+      <td>Ethnicity (Caucasian), n (non-Caucasian, n)</td>
+      <td>11</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>BMI, mean (SD)</td>
+      <td>22.2 ± 1.6</td>
+      <td>22.8 ± 3.1</td>
+    </tr>
+    <tr>
+      <td>Smoking (pack years), n</td>
+      <td>1 (0.17 PY)</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Height (centimeters)</td>
+      <td>177.7 ± 8.6</td>
+      <td>172.5 ± 13.0</td>
+    </tr>
+    <tr>
+      <td>Weight (KG)</td>
+      <td>70.4 ± 10.1</td>
+      <td>67.8 ± 12.4</td>
+    </tr>
+    <tr>
+      <td>Baseline spirometry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FEV1 %predicted</td>
+      <td>105.7 ± 11.6</td>
+      <td>101.0 ± 10.0</td>
+    </tr>
+    <tr>
+      <td>FVC %predicted</td>
+      <td>104.2 ± 10.5</td>
+      <td>104.2 ± 10.2</td>
+    </tr>
+    <tr>
+      <td>PEF %predicted</td>
+      <td>108.4 ± 14.0</td>
+      <td>104.7 ± 12.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>mean ± standard deviation</td>
+    </tr>
+  </tbody>
+</table>
+
 The basic inclusion criteria for the study populations followed standard recommendations and were as shown in Table 7 below.
 
-## Study design
+**Table 7.**
+ Basic characteristics of the study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Healthy</th>
+      <th>Asthmatics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No history of episodic chest symptoms</td>
+      <td>History of episodic chest symptoms</td>
+    </tr>
+    <tr>
+      <td>Baseline FEV1 ≥ 80% predicted</td>
+      <td>Baseline FEV1 ≥ 70% predicted</td>
+    </tr>
+    <tr>
+      <td>AHR to methacholine (PC20) ≥ 19.6 mg/ml</td>
+      <td>AHR to methacholine (PC20) ≤ 9.8 mg/ml</td>
+    </tr>
+    <tr>
+      <td>SPT negative for all 12 common Aeroallergens</td>
+      <td>SPT positive for at least 1 out of 12 common Aeroallergens</td>
+    </tr>
+  </tbody>
+</table>
+
+_FEV1: forced expiratory volume in one second, AHR: Airway Hyper Responsiveness, PC20: Provocative Concentration causing a 20% fall in FEV1, SPT: Skin Prick Test._
+
+### Study design
 
 The project represents a prospective observational, follow-up study including patients with asthma and healthy controls with an experimental RV intervention.
 
@@ -144,35 +552,83 @@ The study participants were recruited after meticulous screening of volunteers (
 
 The schematic work flow of the phases mentioned, is provided in the Appendix 1—figure 15.
 
-## Measurement and collection of biomarkers
+### Measurement and collection of biomarkers
 
-## Lung function assessment
+#### Lung function assessment
 
 Spirometry was performed only once on the screening visit at the clinic to include participants based on inclusion criteria using a daily calibrated spirometer according to European Respiratory Society (ERS) recommendations (Miller et al., 2005).
 
 Home monitoring of morning and evening lung function was done by hand held devices (Micro Diary, CareFusion, yielding the FEV1, FVC, FEV1/FVC and PEF values analyzed in this study. Moreover, the Asthma Control Questionnaire was administered.
 
-## Exhaled Nitric Oxide (FeNO)
+#### Exhaled Nitric Oxide (FeNO)
 
 Measurement of fractionated exhaled nitric oxide (FENO) was performed using the NIOX MINO (Aerocrine AB, Sweden). Single measurements per person were recorded at the clinic, thrice weekly, according to recommendations by the ATS (Dweik et al., 2011).
 
-## Nasal lavage
+#### Nasal lavage
 
 Nasal lavage was collected from the study participants once weekly before RV challenge and was up scaled to thrice weekly after the challenge at the clinic as previously described (Grünberg et al., 2001) [Refer to Appendix for details].
 
 Table 8 provides an overview of the different sample measurements along with their frequency before and after rhinovirus challenge.
 
-## Rhinovirus challenge
+**Table 8.**
+ The overview of different measurements performed in the study along with the frequency of sampling before and after rhino-virus challenge.Measures 1–4 include repeated measurements and 5,6 represent one-time measurement to screen the subjects for the study. eight refers to the experimental intervention in the study. FEV1: forced expiratory volume in one second. FVC: forced vital capacity. PEF: peak expiratory flow. FeNO: fractional expired concentration of nitric oxide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measurements of biomarkers</th>
+      <th>Frequency before rhinovirus challenge</th>
+      <th>Frequency after rhinovirus challenge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lung function with pocket-size spirometers (FEV1, FVC, FEV1/FVC, PEF)</td>
+      <td>2x daily</td>
+      <td>2x daily</td>
+    </tr>
+    <tr>
+      <td>Exhaled Nitric Oxide (FeNO)</td>
+      <td>3x weekly</td>
+      <td>3x weekly</td>
+    </tr>
+    <tr>
+      <td>Differential cell counts</td>
+      <td>1x weekly</td>
+      <td>3x weekly</td>
+    </tr>
+    <tr>
+      <td>Asthma Control Questionnaire</td>
+      <td>2x daily</td>
+      <td>2x daily</td>
+    </tr>
+    <tr>
+      <td>Spirometry</td>
+      <td colspan="2">Performed once during screening to include subjects in the study</td>
+    </tr>
+    <tr>
+      <td>Methacholine challenge</td>
+      <td colspan="2">Performed once during screening to include subjects in the study</td>
+    </tr>
+    <tr>
+      <td>Rhinovirus challenge</td>
+      <td colspan="2">Performed after 2 months into the study</td>
+    </tr>
+  </tbody>
+</table>
+
+### Rhinovirus challenge
 
 The study participants were exposed to rhinovirus 16 (RV16) using a standardized and validated challenge approach, based on previous studies by ourselves and other groups (Grünberg et al., 1999). All participants were screened for the presence of respiratory viruses just before the challenge, to rule out a concomitant infection resulting in a cold (see Appendix for more details). Those participants with a positive outcome of this test were excluded from the study. An experimental RV16 infection was induced by using a relatively low-dose inoculum of 100 TCID50 (Tissue Culture Infective Dose determining the amount of virus required to cause cytopathy in 50% of the cells) to mimic a natural exposure. The study protocol along with the viral dose used and its safety have been approved by the institutional Medical Ethics Committee in Amsterdam University Medical Centre, the details of which have been included in Appendix. Data from our previous study show that a low dose is sufficient to induce mild cold-symptoms (Mallia et al., 2006). Furthermore, this low-dose inoculum previously resulted in a slight decrease of FEV1 (loss of asthma control) in asthmatic patients between day 4 and 6 after RV16 exposure, whereas no decrease has been observed in healthy controls (Grünberg et al., 1999).
 
 Refer to Appendix for further details.
 
-## Statistical and computational analysis
+### Statistical and computational analysis
 
 Statistical tests resulting in a p-value less or equal to 0.05 were regarded as significant.
 
-## Assessment of differences: Pre- vs. post-viral-challenge
+#### Assessment of differences: Pre- vs. post-viral-challenge
 
 For each participant, their time series of a given biomarker prior to and after the viral challenge were compared. This comparison was based on the Kolmogorov-Smirnov test, whereby the time series were treated as empirical distributions, thus disregarding the chronological order of the measurements.
 
@@ -186,15 +642,15 @@ The time series of a given biomarker, prior to and after the viral challenge, we
 
 **Figure 2.:** (A) Depicts two pre-challenge time series of FeNO obtained from a healthy (blue curve), and from an asthmatic (red curve) participant, respectively. (B) Each of the time series is represented as empirical distribution. This representation of the two time series allows for the calculation of a distance or ‘dissimilarity’ between the two by means of the Earth Mover’s Distance (EMD). The EMD-comparison of all possible pairs of time series (both pre- and post-challenge) results in a symmetric matrix of pair-wise distances, as shown in (C) using a color-coded (violet to green) heat-map. Each row in this matrix corresponds to one time series. The color bar on the left hand side of the matrix encodes the ‘type’ of time series: Cyan marks a pre-challenge time series originating from a healthy participant; Blue marks a post-challenge time series originating from a healthy participant; Pink marks a pre-challenge time series originating from an asthmatic participant; Red marks a post-challenge time series originating from an asthmatic participant. The information stored in the matrix of pair-wise distances is then used within an agglomerative clustering algorithm in order to group the time series in different clusters. The outcome of this procedure is represented using a dendrogram as depicted in Figure 1 above.
 
-## Calculation of short-term/transient changes
+#### Calculation of short-term/transient changes
 
 For each participant individually, and for each biomarker, throughout the entire period of observation, the biomarker’s relative change in value taking place within time intervals of 10 days was calculated. This choice of time interval length was made based on published literature whereby 5 days post exposure to respiratory viruses was shown to be critical. Hence a 10 day window for comparison would include 5 days before challenge to contrast with 5 days after challenge (Denlinger et al., 2011). This was done throughout the entire period of observation considering all possible time intervals consisting of 10 consecutive days. In order to assess the statistical significance of the short-term relative changes possibly elicited by the viral challenge, the magnitude (that is, the absolute value) of relative changes observed during 10 day time intervals starting at least 10 days prior to the challenge were compared, by means of a Mann-Whitney-U-test, to the magnitude of relative changes that took place during 10 day time intervals that contained the day of the challenge. See Figure 3 and the Appendix for more details.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47969/elife-47969-fig3-v4.jpg)
 
-**Figure 3.:** (A) Graphical representation of a biomarker time series t. For the calculation of short-term/transient changes, a gliding interval or window is moved, one day at a time, along the time series. The relative change between the first and last entry of the gliding window is calculated, resulting in a new time series of short-term relative changes ir. (iB) A healthy participant’s time series of short-term relative changes in FeNO is depicted. A gliding interval of size 10 days was used to calculate it from the participant’s time series of FeNO measurements. The start position of the gliding window is expressed relative to the day of the viral challenge, which is marked as day 0. When the position of the gliding window was such that the day of the viral challenge was contained within the gliding window, the corresponding value of the relative change is marked in red. In order to assess the statistical significance of the short-term relative changes possibly elicited by the viral challenge, the relative change values located to the left of those marked in red were compared to the values marked in red by means of a Mann-Whitney-U-test. Visual inspection of the time series in B correctly suggests that the outcome of this test is not significant. The reason being that the relative changes within time intervals of 10 days observed prior to the viral challenge are comparable to changes observed within intervals of the same length containing the day of the viral challenge. (C) Depicting data from a different healthy participant, the situation is clearly different, as verified by a significant outcome of the corresponding Mann-Whitney-U-test. In such cases, the participant is called a ‘responder’ with respect to the ‘relative change within 10 days criterion’.
+**Figure 3.:** (A) Graphical representation of a biomarker time series ti. For the calculation of short-term/transient changes, a gliding interval or window is moved, one day at a time, along the time series. The relative change between the first and last entry of the gliding window is calculated, resulting in a new time series of short-term relative changes ri. (B) A healthy participant’s time series of short-term relative changes in FeNO is depicted. A gliding interval of size 10 days was used to calculate it from the participant’s time series of FeNO measurements. The start position of the gliding window is expressed relative to the day of the viral challenge, which is marked as day 0. When the position of the gliding window was such that the day of the viral challenge was contained within the gliding window, the corresponding value of the relative change is marked in red. In order to assess the statistical significance of the short-term relative changes possibly elicited by the viral challenge, the relative change values located to the left of those marked in red were compared to the values marked in red by means of a Mann-Whitney-U-test. Visual inspection of the time series in B correctly suggests that the outcome of this test is not significant. The reason being that the relative changes within time intervals of 10 days observed prior to the viral challenge are comparable to changes observed within intervals of the same length containing the day of the viral challenge. (C) Depicting data from a different healthy participant, the situation is clearly different, as verified by a significant outcome of the corresponding Mann-Whitney-U-test. In such cases, the participant is called a ‘responder’ with respect to the ‘relative change within 10 days criterion’.
 
-## Characterization of the dendrogram clusters
+#### Characterization of the dendrogram clusters
 
 In order to evaluate the discriminatory power of a given biomarker, the clusters found in the clustering dendrogram were tested for enrichment in or depletion of healthy or asthmatic participants, and/or for enrichment in or depletion of pre- or post-challenge distributions. Statistically significant enrichment or depletion were established using the hypergeometric test (Rubner et al., 1998).
 
@@ -208,6 +664,6 @@ Under the null-hypothesis that the branching in the dendrogram is the result of 
 
 A participant is fully represented in a given cluster if both their pre- and post-challenge time series of measurements are contained in the cluster. For example, the healthy participant ‘P08H’ is fully represented in Cluster 2, as both their pre- and post-challenge time series of FeNO measurements are members of Cluster 2 (see Figure 1 above). Partial representation corresponds to the scenario in which only one of the two time series (pre- and post-challenge) is a member of the cluster. For instance, the asthmatic participant " P07A’ is only partially represented in Cluster 2, because their pre-challenge time series of FeNO measurements is part of Cluster 2, whereas their post-challenge time series of FeNO belongs to Cluster 3 (see Figure 1 above).
 
-## Autocorrelation of time series
+#### Autocorrelation of time series
 
-The autocorrelation of a given time series was calculated using the sample Pearson correlation coefficient of the original time series and the time series resulting after forward-shifting the original time series by the lag utilized. In other words, if the original time series consists of the values x1,…,xn and L is the lag, all complete (i.e., no member of the pair is a missing value) pairs (xt,xt-L) for t=L+1,…,n are used to calculate the covariance in the formula of the sample Pearson correlation coefficient.
+The autocorrelation of a given time series was calculated using the sample Pearson correlation coefficient of the original time series and the time series resulting after forward-shifting the original time series by the lag utilized. In other words, if the original time series consists of the values $x_{1},…,x_{n}$ and $L$ is the lag, all complete (i.e., no member of the pair is a missing value) pairs $(x_{t},x_{t-L})$ for $t=L+1,…,n$ are used to calculate the covariance in the formula of the sample Pearson correlation coefficient.

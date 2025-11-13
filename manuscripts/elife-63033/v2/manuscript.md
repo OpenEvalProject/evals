@@ -33,11 +33,144 @@ Here, we examined if NMR-based metabolic biomarkers from blood samples collected
 
 A flow diagram of eligible study participants and case numbers is shown in Figure 1. Clinical characteristics of the study population are listed in Table 1. Among the 105,146 UK Biobank study participants with complete data on metabolic biomarkers and severe pneumonia outcomes, and no prior history of diagnosed pneumonia, there were 2507 severe pneumonia events recorded in hospital or death registries after the baseline blood sampling (median follow-up time 8.1 years).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig1-v2.jpg)
+
+**Figure 1.:** Overview of eligible study participants for the analysis of metabolic biomarkers for the susceptibility to severe pneumonia and COVID-19 in the UK Biobank. Case and control definitions are described in Materials and methods.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Number of individuals with PCR-confirmed COVID-19 in the UK Biobank as a function of time. (B) Number of hospitalised individuals with PCR-confirmed COVID-19 in the UK Biobank as a function of time. (C) Number of individuals with PCR-confirmed COVID-19 in the subset of the UK biobank with metabolic biomarker data available analysed in the present paper as a function of time. (D) Number of hospitalised individuals with PCR-confirmed COVID-19 in the subset of the UK Biobank with metabolic biomarker data available analysed in the present paper as a function of time. COVID-19 data were only available from assessment centres in England, but not from assessment centres in Scotland and Wales. (E) Hospitalised individuals with COVID-19 in the whole of England during the pandemic (https://coronavirus.data.gov.uk/; accessed March 17 2021). The prevalence of hospitalised individuals for COVID-19 in the present study was 703 per 100,000 individuals, whereas it was 625 in the whole of England as per 1st of February 2021.
+
+**Table 1.**
+ Clinical characteristics of the UK Biobank participants in the current study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Severe pneumonia (diagnosis in hospital or death record)</th>
+      <th colspan="2">Severe COVID-19 (diagnosis in hospital)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Incident cases</th>
+      <th>Controls</th>
+      <th>Incident cases</th>
+      <th>Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individuals with NMR biomarker measures</td>
+      <td>2507</td>
+      <td>102 639</td>
+      <td>652</td>
+      <td>92 073</td>
+    </tr>
+    <tr>
+      <td>Age at blood sampling (median, [range])</td>
+      <td>62 [40-70]</td>
+      <td>58 [39-70]</td>
+      <td>60 [40-70]</td>
+      <td>58 [39-70]</td>
+    </tr>
+    <tr>
+      <td>Females (%)</td>
+      <td>44%</td>
+      <td>54%</td>
+      <td>43%</td>
+      <td>54%</td>
+    </tr>
+    <tr>
+      <td>Body mass index (mean, kg/m2)</td>
+      <td>28.5</td>
+      <td>27.4</td>
+      <td>28.7</td>
+      <td>27.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Proportion with prevalent diseases</td>
+    </tr>
+    <tr>
+      <td>Cardiovascular disease (%)</td>
+      <td>17.5%</td>
+      <td>6.6%</td>
+      <td>14.7%</td>
+      <td>6.4%</td>
+    </tr>
+    <tr>
+      <td>Diabetes (%)</td>
+      <td>9.3%</td>
+      <td>3.9%</td>
+      <td>9.2%</td>
+      <td>3.8%</td>
+    </tr>
+    <tr>
+      <td>Lung cancer (%)</td>
+      <td>0.4%</td>
+      <td>0.1%</td>
+      <td>0.3%</td>
+      <td>0.1%</td>
+    </tr>
+    <tr>
+      <td>Chronic obstructive pulmonary disease (%)</td>
+      <td>6.1%</td>
+      <td>0.7%</td>
+      <td>1.8%</td>
+      <td>0.8%</td>
+    </tr>
+    <tr>
+      <td>Liver diseases (%)</td>
+      <td>1.5%</td>
+      <td>0.7%</td>
+      <td>1.7%</td>
+      <td>0.7%</td>
+    </tr>
+    <tr>
+      <td>Renal failure (%)</td>
+      <td>3.6%</td>
+      <td>1.3%</td>
+      <td>2.9%</td>
+      <td>1.4%</td>
+    </tr>
+    <tr>
+      <td>Dementia (%)</td>
+      <td>0.1%</td>
+      <td>0.01%</td>
+      <td>0.0%</td>
+      <td>0.01%</td>
+    </tr>
+  </tbody>
+</table>
+
+_The number of individuals analysed for severe COVID-19 is slightly lower than for severe pneumonia, since COVID-19 data were not available from assessment centres in Scotland and Wales._
+
 For the severe COVID-19 analyses, there were 652 PCR-confirmed positive cases diagnosed in hospital (inferred as severe cases in this study) among the 92,725 individuals with COVID-19 data linkage available per 3rd of February 2021. The number of severe COVID-19 cases in the UK Biobank closely followed the trends in hospitalised individuals for COVID-19 in England (Figure 1—figure supplement 1). In February 2021, the age range of study participants was 49–84 years. The median duration from blood sampling to the COVID-19 pandemic was 11.2 years (interquartile range 10.0–12.6). The prevalence of chronic respiratory and cardiometabolic diseases was similar for study participants who developed severe pneumonia and those who contracted COVID-19 and required hospitalisation, with the exception of COPD. There were 33 overlapping cases between severe pneumonia and COVID-19.
 
-## Metabolic biomarkers and severe pneumonia risk
+### Metabolic biomarkers and severe pneumonia risk
 
 Figure 2A shows the associations of 37 biomarkers with severe pneumonia events occurring during the follow-up in the entire study population (n = 105 146). The biomarkers highlighted here are those with a regulatory approval for diagnostics use in the Nightingale Health NMR platform. These biomarkers span most of the different metabolic pathways captured with the NMR platform; results for all 249 metabolic measures quantified are shown in Figure 2—figure supplements 1–3. Strong associations were observed across several metabolic pathways: increased plasma concentrations of cholesterol measures, omega-3 and omega-6 fatty acid levels, histidine, branched-chain amino acids and albumin were associated with lower susceptibility to contracting severe pneumonia. Increased concentrations of monounsaturated and saturated fatty acids, as well glycoprotein acetyls (GlycA, a marker of low-grade inflammation) were associated with elevated susceptibility to contracting severe pneumonia.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig2-v2.jpg)
+
+**Figure 2.:** (A) Odds ratios with severe pneumonia (2507 hospitalisations or deaths during a median of 8 years of follow-up) for 37 clinically validated biomarkers measured simultaneously in a single assay by Nightingale Health NMR platform. (B) Odds ratio with severe pneumonia for the multi-biomarker infectious disease score. The infectious disease score comprises of the weighted sum of 25 out of 37 clinically validated biomarkers, optimised for association with severe pneumonia based on one half of the study population using LASSO regression. Biomarkers included in the infectious disease score are marked by #. The odds ratio for infectious disease score is evaluated in the other half of the study population (n = 52 573; 1250 events). All models are adjusted for age, sex, and assessment centre. Odds ratios are per 1-SD increment in the biomarker levels. Horizontal bars denote 95% confidence intervals. Closed circles denote p-value<0.001 and open circles p-value≥0.001. BCAA indicates branched-chain amino acids; DHA: docosahexaenoic acid; MUFA: monounsaturated fatty acids; PUFA: polyunsaturated fatty acids; SFA: saturated fatty acids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Odds ratios with severe pneumonia (2507 hospitalisations or deaths during a median of 8 years of follow-up) for 56 metabolic measures quantified by the Nightingale Health NMR platform. The metabolic measures cover cholesterol and triglycerides in major lipoprotein fractions, lipoprotein particle size, apolipoproteins, glycolysis related metabolites, absolute levels of fatty acids and corresponding ratio measures relative to total circulating concentration of fatty acids, amino acids, ketone bodies, and markers of fluid balance and inflammation. Statistical models are adjusted for age, sex, and assessment centre. Odds ratios are per 1-SD increment in biomarker levels. Horizontal bars denote 95% confidence intervals. Closed circles denote p-value<0.001 and open circles p-value>0.001. Abbreviations: ApoA1, apolipoprotein A1; ApoB, apolipoprotein B; BCAA: branched-chain amino acids; C, cholesterol; DHA, docosahexaenoic acid; HDL, high-density lipoprotein; LA, linoleic acid; LDL, low-density lipoprotein; LA, linoleic acid; MUFA, monounsaturated fatty acids; NA; not available; PUFA, polyunsaturated fatty acids; SFA, saturated fatty acids; TG, triglycerides; VLDL, very-low-density lipoprotein.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Odds ratios with severe pneumonia (2507 hospitalisations or deaths during a median of 8 years of follow-up) for 81 metabolic measures quantified by the Nightingale Health NMR platform. The metabolic measures cover lipid concentrations in major lipoprotein fractions and 14 lipoprotein subclasses. Percentage measures are concentration of specific lipid relative to total lipid concentration within the given lipoprotein subclass. Statistical models are adjusted for age, sex, and assessment centre. Odds ratios are per 1-SD increment in biomarker levels. Horizontal bars denote 95% confidence intervals. Closed circles denote p-value<0.001 and open circles p-value>0.001. C, cholesterol; CE, cholesteryl esters; FC, free cholesterol; HDL, high-density lipoprotein; IDL, intermediate-density lipoprotein; LDL, low-density lipoprotein; P, particle concentration; PG, phosphoglycerides; PL, phospholipids; TG, triglycerides; VLDL, very-low-density lipoprotein.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Odds ratios with severe pneumonia (2507 hospitalisations or deaths during a median of 8 years of follow-up) for 112 metabolic measures quantified by the Nightingale Health NMR platform. The metabolic measures cover lipid concentrations in 14 lipoprotein subclasses. Percentage measures are concentration of specific lipid relative to total lipid concentration within the given lipoprotein subclass. Statistical models are adjusted for age, sex, and assessment centre. Odds ratios are per 1-SD increment in biomarker levels. Horizontal bars denote 95% confidence intervals. Closed circles denote p-value<0.001 and open circles p-value>0.001. CE, cholesteryl esters; FC, free cholesterol; HDL, high-density lipoprotein; IDL, intermediate-density lipoprotein; L, total lipid concentration; LDL, low-density lipoprotein; PL, phospholipids; VLDL, very-low-density lipoprotein.
 
 Since all the biomarkers are quantified in the same single measurement, we examined if even stronger associations with severe pneumonia could be obtained using a combination of multiple biomarkers. We derived this multi-biomarker combination, denoted ‘infectious disease score’, using logistic regression with LASSO for variable selection, considering the 37 clinically validated biomarkers in a half of the study population as the training set. This resulted in an infectious disease score comprised of the weighted sum of 25 biomarkers, with the weights selected by the machine learning algorithm (Supplementary file 1). Broadly similar results were obtained using all 249 metabolic measures quantified in the Nightingale Health NMR platform to derive the multi-biomarker score.
 
@@ -47,9 +180,17 @@ To assess the robustness of the multi-biomarker score association with severe pn
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig3-v2.jpg)
 
-**Figure 3.:** (A) Odds ratios with severe pneumonia after additional adjustments for BMI, smoking status, and prevalent diseases. (B) Odds ratios with severe pneumonia in study participants with and without prevalent diseases. (C) Odds ratios by age tertiles at the time of blood sampling. (D) Odds ratios for men and women separately. All models are adjusted for age, sex, and assessment centre. The left-hand side shows odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side odds ratios for comparing individuals in the highest and lowest quintiles of the score. The results are based on the validation half of the study population not used in deriving the infectious disease score (1250 events during a median of 8 years of follow-up).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Odds ratios with severe pneumonia after additional adjustments for BMI, smoking status, and prevalent diseases. (B) Odds ratios with severe pneumonia in study participants with and without prevalent diseases. (C) Odds ratios by age tertiles at the time of blood sampling. (D) Odds ratios for men and women separately. All models are adjusted for age, sex, and assessment centre. The left-hand side shows odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side odds ratios for comparing individuals in the highest and lowest quintiles of the score. The results are based on the validation half of the study population not used in deriving the infectious disease score (1250 events during a median of 8 years of follow-up).
 
 To mimic the influence of the decade-long lag from blood sample collection to the COVID-19 pandemic, we tested the association of the multi-biomarker infectious disease score with severe pneumonia events occurring during 7–11 years after the blood sampling (Figure 4A). Since there were only few severe pneumonia events recorded with more than 9 years of follow-up, we could not fully mimic the decade long time lag to the COVID-19 pandemic. The risk elevation observed in this time-lag accounting scenario was only approximately half of that observed for severe pneumonia events occurring within the first 7 years (odds ratio 1.43 vs 1.75 per 1-SD, respectively; and 2.59 vs 4.27 for individuals in the highest vs lowest quintile of the infectious disease score).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig4-v2.jpg)
+
+**Figure 4.:** (A) Odds ratios with severe pneumonia events occurring within the first 7 years after the blood sampling, compared to events that occurred 7–11 years after blood sampling. (B) Odds ratios for severe pneumonia occurring within and after the first 2 years of blood sampling. Models are adjusted for age, sex, and assessment centre. The left-hand side shows odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side odds ratios for comparing individuals in the highest and lowest quintiles of the score. The results are based on the validation half of the study population that was not used in deriving the infectious disease score.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Odds ratios of the multi-biomarker infectious disease score with severe pneumonia events occurring within the first 7 years of blood sampling and events occurring 7–11 years after blood sampling, showing the influence of the adjustment for BMI, smoking status and prevalent diseases. (B) Odds ratios of the multi-biomarker infectious disease score with severe pneumonia events occurring within and after the first 2 years of blood sampling, showing the influence of additional adjustment for BMI, smoking status and prevalent diseases. All models are adjusted for age, sex, and assessment centre. The left-hand side shows odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side odds ratios for comparing individuals in the highest and lowest quintiles of the score. The results are based on the validation half of the study population that was not used in deriving the infectious disease score.
 
 To interpolate to a screening scenario conducted today, we also tested the association with short-term risk of severe pneumonia by analysing events occurring within the first 2 years after the blood sampling (Figure 4B). The association magnitude in this analysis of short-term risk scenario was approximately twice as strong as for severe pneumonia events occurring more than 2 years after blood sampling (odds ratio 2.21 vs 1.59 per 1-SD; 7.95 vs 3.35 for individuals in the highest vs lowest quintile of the infectious disease score). The elevated susceptibility to severe pneumonia associated with the multi-biomarker score was therefore three to four times stronger when examining short-term risk as compared to risk of severe pneumonia events occurring almost a decade after the blood sampling.
 
@@ -57,17 +198,25 @@ The elevation in the short-term risk for severe pneumonia for high levels of the
 
 We further explored the risk gradient for a future onset of severe pneumonia along increasing levels of the infectious disease score, since non-linear effects could potentially facilitate the identification of thresholds for individuals at high susceptibility. Figure 5A shows the increase in the proportion of individuals who contracted severe pneumonia according to percentiles of the score. The risk increased prominently in the highest quintile, and particularly for the highest few percentiles. The time-resolved plot of the cumulative probability of severe pneumonia during follow-up is shown in Figure 5B. The susceptibility to severe pneumonia was particularly elevated among individuals with the very highest levels of the multi-biomarker infectious disease score. This was observed already during the first few years of follow-up, corroborating the results for long-term and short-term risk shown in Figure 3. The prominent and immediate elevation in susceptibility to severe pneumonia was also observed when limiting analyses to individuals without chronic respiratory and cardiometabolic diseases at the time of blood sampling (Figure 5—figure supplement 1).
 
-## Metabolic biomarkers and severe COVID-19
+![Figure 5.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig5-v2.jpg)
+
+**Figure 5.:** (A) Proportion of individuals who contracted severe pneumonia during a median follow-up time of 8.1 years after the blood sampling according to percentiles of the multi-biomarker infectious disease score. Each point represents approximately 500 individuals. (B) Kaplan-Meier curves of the cumulative probability for severe pneumonia in quantiles of the multi-biomarker infectious disease score. The follow-up time was truncated at 9.5 years since only a small fraction of individuals were followed longer. Results are based on the validation half of the study population that was not used in deriving the infectious disease score (n = 52,573). The corresponding plots for individuals free of baseline respiratory and cardiometabolic diseases are shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Proportion of individuals, without prevalent diseases at the time of blood sampling, who contracted severe pneumonia during a median of 8 years of follow-up according to percentiles of the multi-biomarker infectious disease score. Each dot represents approximately 450 individuals. (B) Kaplan-Meier curves of the cumulative probability of severe pneumonia in quantiles of the infectious disease score. The follow-up time was truncated at 9.5 years since only a small fraction of individuals were followed longer. Both plots show results based on the validation half of the study population that was not used for deriving the infectious disease score. Individuals with the following diseases at time of blood sampling were excluded: cardiovascular disease, diabetes, lung cancer, COPD, liver diseases, renal failure and dementia.
+
+### Metabolic biomarkers and severe COVID-19
 
 Figure 6 shows the associations of the 37 clinically validated biomarkers and the infectious disease score with the future onset of severe COVID-19 (defined as PCR-confirmed positive inpatient diagnosis). Many of the individual biomarkers had significant associations (p-value<0.001) with increased risk for severe COVID-19. These biomarkers for susceptibility to severe COVID-19 include lower levels of omega-3 omega-6 fatty acids as well as albumin, and higher levels of GlycA. We observed a high concordance in the overall pattern of COVID-19 biomarker associations with severe pneumonia (Figure 2A), with a Spearman correlation of 0.89 between the overall biomarker association signatures for severe pneumonia and severe COVID-19 (Figure 7).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig6-v2.jpg)
 
-**Figure 6.:** (A) Odds ratios with severe COVID-19 (defined as PCR-positive diagnosis in hospital; 652 cases out of 92 725 individuals) for 37 clinically validated biomarkers measured by NMR. (B) Odds ratio with severe COVID-19 for the multi-biomarker infectious disease score. Biomarkers included in the infectious disease score are marked by #. Odds ratios are per 1-SD increment in the biomarker levels. Models are adjusted for age, sex, and assessment centre.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Odds ratios with severe COVID-19 (defined as PCR-positive diagnosis in hospital; 652 cases out of 92 725 individuals) for 37 clinically validated biomarkers measured by NMR. (B) Odds ratio with severe COVID-19 for the multi-biomarker infectious disease score. Biomarkers included in the infectious disease score are marked by #. Odds ratios are per 1-SD increment in the biomarker levels. Models are adjusted for age, sex, and assessment centre.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig7-v2.jpg)
 
-**Figure 7.:** Biomarker associations with future onset of severe pneumonia (y-axis) plotted against the corresponding associations with severe COVID-19 (x-axis). The odds ratios, with adjustment for age, sex, and assessment centre, for each of the 37 clinically validated biomarkers in the Nightingale Health NMR platform are given with 95% confidence intervals in vertical and horizontal error bars. The dashed line denotes the diagonal.Figure 7—source data 1.Figure 7.
+**Figure 7.:** Biomarker associations with future onset of severe pneumonia (y-axis) plotted against the corresponding associations with severe COVID-19 (x-axis). The odds ratios, with adjustment for age, sex, and assessment centre, for each of the 37 clinically validated biomarkers in the Nightingale Health NMR platform are given with 95% confidence intervals in vertical and horizontal error bars. The dashed line denotes the diagonal.
 
 The multi-biomarker infectious disease score derived for the future onset of severe pneumonia was also robustly associated with the future onset of severe COVID-19. The odds ratio was 1.40 per 1-SD increment and 2.90 for comparing individuals in the highest quintile of the multi-biomarker infectious disease score to those in the lowest quintile. This magnitude of association with susceptibility to severe COVID-19 was similar to that observed with severe pneumonia events occurring during the interval of 7–11 years after the blood sampling.
 
@@ -75,7 +224,7 @@ We further examined the association of the multi-biomarker infectious disease sc
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63033/elife-63033-fig8-v2.jpg)
 
-**Figure 8.:** (A) Odds ratios with severe COVID-19 after additional adjustments for BMI, smoking status and prevalent diseases. (B) Odds ratios with severe pneumonia in study participants with and without prevalent diseases at the time of blood sampling. (C) Odds ratios by age tertiles at the time of the COVID-19 pandemic. (D) Odds ratios for men and women, separately. The left-hand side shows the odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side the odds ratios for comparing individuals in the highest and lowest quintiles of the score. All models are adjusted for age, sex, and assessment centre.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Odds ratios with severe COVID-19 after additional adjustments for BMI, smoking status and prevalent diseases. (B) Odds ratios with severe pneumonia in study participants with and without prevalent diseases at the time of blood sampling. (C) Odds ratios by age tertiles at the time of the COVID-19 pandemic. (D) Odds ratios for men and women, separately. The left-hand side shows the odds ratios per 1-SD increment in the multi-biomarker infectious disease score, and the right-hand side the odds ratios for comparing individuals in the highest and lowest quintiles of the score. All models are adjusted for age, sex, and assessment centre.
 
 Finally, we examined the technical repeatability and biological stability of measuring the multi-biomarker infectious disease score. The measurement repeatability was high (Pearson correlation 0.94 in blind duplicate samples; Figure 9A). Even though the blood samples were primarily non-fasting, the levels of the infectious disease score remained broadly stable during 4 years based on blood samples from repeat visits (Pearson correlation 0.61 between baseline and repeat visit measurements; Figure 9B).
 
@@ -99,32 +248,32 @@ In conclusion, a metabolic signature of perturbed blood biomarkers is associated
 
 ## Materials and methods
 
-## Study population
+### Study population
 
 Details of the design of the UK Biobank have been reported previously (Sudlow et al., 2015). Briefly, the UK Biobank recruited 502,639 participants aged 37–70 years in 22 assessment centres across the UK. All study participants had to be able to attend the assessment centres by their own means, and there was no enrolment at nursing homes. All participants provided written informed consent and ethical approval was obtained from the North West Multi-Center Research Ethics Committee. Blood samples were drawn at baseline between 2007 and 2010. The current analysis was approved under UK Biobank Project 30418. No selection criteria were applied to the sampling.
 
-## Metabolic biomarker profiling
+### Metabolic biomarker profiling
 
 From the entire UK Biobank population, a random subset of non-fasting baseline plasma samples (aliquot 3) from 118 466 individuals and 1298 repeat-visit samples were measured using high-throughput NMR spectroscopy (Nightingale Health Plc; biomarker quantification version 2020). This provides simultaneous quantification of 249 metabolic biomarker measures in a single assay, including routine lipids, lipoprotein subclass profiling with lipid concentrations within 14 subclasses, fatty acid composition, and various low-molecular-weight metabolites such as amino acids, ketone bodies, and glycolysis metabolites quantified in molar concentration units. Technical details and epidemiological applications of the metabolic biomarker data have been reviewed (Soininen et al., 2015; Würtz et al., 2017). The Nightingale NMR platform has received various regulatory approvals, including CE-mark, and 37 biomarkers in the panel have been certified for diagnostics use. We focused on this particular set of certified biomarkers, as we wanted to investigate if these markers of systemic metabolism — commonly linked to cardiometabolic diseases — could also be associated with future risk for severe infectious disease. Furthermore, these clinically validated biomarkers span most of the different metabolic pathways measured by the NMR platform and could facilitate potential translational applications as they are certified for diagnostics use and are measured simultaneously in a single assay. The mean and standard deviation of concentrations for 249 quantified metabolic biomarkers are given in Supplementary file 2.
 
 Measurements of the metabolic biomarkers were conducted blinded prior to the linkage to the UK Biobank health outcomes. The metabolic biomarker data were curated and linked to UK Biobank clinical data in late-May 2020. The metabolic biomarker dataset has been made available for the research community through the UK biobank in March 2021.
 
-## Severe pneumonia outcomes
+### Severe pneumonia outcomes
 
 We combined ICD-10 codes J12–J18 to define the pneumonia endpoint. To strengthen the analogy with the analysis of severe COVID-19, we focused on severe pneumonia events, defined as diagnosis in hospital or death records based on UK Hospital Episode Statistics data and national death registries (2507 incident cases in the current study). All analyses are based on the first occurrence of a diagnosis. Therefore, 2658 individuals with recorded hospitalisation of pneumonia prior to the blood sampling were excluded. Additionally, 346 individuals with pneumonia diagnosis recorded in primary care settings and by self-reports were also omitted from the analyses. The registry-based follow-up was from blood sampling in 2007–2010 through to 2016–2017, depending on assessment centre (850,000 person-years).
 
-## Severe COVID-19 outcomes
+### Severe COVID-19 outcomes
 
 We used COVID-19 data available in the UK Biobank per 3rd of February 2021, which covers test results from 16 March to 1st of February 2021. These data include information on positive/negative PCR-based diagnosis results and explicit evidence in the microbiological record on whether the participant was an inpatient (Resource UKBiobankD, 2020). For the present analyses, we focused on PCR-positive inpatient diagnoses. These hospitalised cases are here denoted as severe COVID-19 (652 cases in the current study). COVID-19 data were not available for assessment centres in Scotland and Wales, so individuals from these centres were excluded. Individuals who had died during follow-up prior to 2018 were also excluded, since they were never exposed to COVID-19.
 
-## Control group
+### Control group
 
 The entire study population of non-cases was used as controls in the statistical analyses (n = 102,639 for severe pneumonia and n = 92,073 for severe COVID-19, respectively). This choice of controls is consistent with the majority of publications examining risk factors for susceptibility to severe COVID-19 (e.g. Ho et al., 2020; Williamson et al., 2020). It allows to address the question of whether an initially healthy person with a high value of a given biomarker is at an increased risk of eventually getting the disease outcome (severe pneumonia or COVID-19 hospitalisation) compared to people from the general population with low levels of the biomarker. This choice of controls also overcomes biases that may arise from analyses using confirmed mild infections as the control group, such as collider bias caused by non-random testing of the control group compared to the rest of the study population (Griffith et al., 2020).
 
-## Prevalent diseases
+### Prevalent diseases
 
 To examine the influence of prevalent diseases in the prospective analyses of severe pneumonia and severe COVID-19, we used the following: prevalent cardiovascular disease (ICD-10 codes I20–I25, I50, I60–I64, and G45), diabetes (E10–E14), lung cancer (C33–C34, D02.2, Z85.1), chronic obstructive pulmonary disease (COPD; J43–J44), liver diseases (K70–K77), renal failure (N17–N19), and dementia (F00-F03).
 
-## Statistical methods
+### Statistical methods
 
 Biomarker levels outside four interquartile ranges from median were considered as outliers and excluded. All 37 biomarkers were scaled to standard deviation (SD) units prior to analyses. For biomarker association testing with severe pneumonia and with severe COVID-19 (as separate outcomes), we used logistic regression models adjusted for age, sex, and assessment centre. To examine the utility of multiple biomarkers in combination, we used a weighted sum of the biomarkers optimised for association with future risk of severe pneumonia; this multi-biomarker score was denoted as ‘infectious disease score’. To minimise the collinearity of the biomarkers, the multi-biomarker score was trained using logistic regression with least absolute shrinkage and selection operator (LASSO), which uses L1 regularisation that adds penalty equal to the absolute value of the magnitude of the coefficients. The multi-biomarker infectious disease score was trained using half of the study population with complete data available for the 37 clinically validated biomarkers (n = 52,573 and 1257 severe pneumonia events) using five-fold cross-validation to optimise the regularizsation parameter λ. The remaining half of the study population was used in validating the performance of the biomarker score in relation to future risk for severe pneumonia. The multi-biomarker infectious disease score was subsequently tested for association with severe pneumonia and COVID-19 in logistic regression models adjusted for age, sex, and assessment centre. We further examined the effect of additional adjustment for body mass index (BMI) and smoking status (never, former, current) and prevalent diseases. The associations were also examined by omitting individuals with prevalent diseases and stratified by age and sex. In the case of severe pneumonia, we further examined the association magnitudes according to follow-up time: we used severe pneumonia events occurring during 7–11 years after the blood sampling to mimic the decade long lag from blood sampling to the COVID-19 pandemic, and severe pneumonia events occurring within the first 2 years to interpolate to the scenario of preventative COVID-19 screening carried out today. In both scenarios, the confined follow-up times were arbitrarily chosen to be as short as possible while ensuring sufficient numbers of events. Finally, to explore potential non-linear effects, the infectious disease score was plotted as a proportion of individuals who contracted severe pneumonia during follow-up when binning individuals into percentiles of the infectious disease score (Khera et al., 2018). The time-resolution was further examined by Kaplan-Meier curves of the cumulative risk for severe pneumonia.

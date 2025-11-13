@@ -14,12 +14,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01an7q238 Department of Physics, University of California Berkeley United States
-2. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California Berkeley United States
-3. https://ror.org/01an7q238 Helen Wills Neuroscience Institute, University of California Berkeley United States
-4. https://ror.org/01an7q238 School of Optometry, University of California Berkeley United States
-5. https://ror.org/01an7q238 Vision Science Program, University of California Berkeley United States
-6. https://ror.org/02jbv0t02 Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory Berkeley United States
+1. Department of Physics, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+2. Department of Molecular and Cell Biology, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+3. Helen Wills Neuroscience Institute, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+4. School of Optometry, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+5. Vision Science Program, University of California Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+6. Molecular Biophysics and Integrated Bioimaging Division, Lawrence Berkeley National Laboratory Berkeley United States ([ROR:02jbv0t02](https://ror.org/02jbv0t02))
 
 † Corresponding author
 
@@ -39,9 +39,25 @@ The aims of this work are to provide a resource for in vivo retinal imaging usin
 
 ## Results
 
-## Optimized AO-2PFM for in vivo mouse retinal imaging
+### Optimized AO-2PFM for in vivo mouse retinal imaging
 
 A home-built two-photon fluorescence microscope equipped with a segmented deformable mirror (DM) and a Shack-Hartmann (SH) sensor (Li et al., 2020b) was modified for in vivo mouse retinal imaging by replacing the objective lens with an add-on eye imaging module (Qin et al., 2020; Grulkowski et al., 2018; Figure 1A, Materials and methods). The module consisted of an electrically tunable lens (ETL) whose adaptive surface was conjugated to the DM, a turning mirror, and two lens groups (L7 and L8) that relayed the adaptive surface of the ETL to the pupil of the mouse eye. With this design, the optics of the mouse eye focused 920 nm light onto the retina to excite fluorescent markers and collected the emitted fluorescence for detection. The ETL allowed us to adjust the focal plane in the mouse eye without translating the mouse (Jian et al., 2013) or optics (McNabb et al., 2019) in the imaging system. For all experiments, system aberrations in the two-photon illumination path were measured with a modal AO method and corrected before image acquisition (Materials and methods; ‘No AO’ images: system aberration correction only).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematics of AO-2PFM. Inset 1: direct wavefront measurement by a Shack-Hartmann (SH) sensor composed of a lenslet array and a camera. Inset 2: wavefront correction with a deformable mirror composed of 163 segments with piston, tip, and tilt controls. Grey dashed box: eye imaging module. Bottom: 3D assembly of eye imaging module. L, lens; D, dichroic mirror; DM, deformable mirror; PMT, photomultiplier tube; ETL, electrically tunable lens. (B) Maximum intensity projections (MIPs) of image stacks (72×72×25 µm3) of RGC axons measured without and with AO, respectively, normalized to AO image. Insets: kXkY spatial frequency representation of the images and corrective wavefront. (C) MIPs of image stacks (132×97×32 µm3) of fine RGC processes measured without and with AO, respectively, normalized to AO image. ‘No AO’ image brightness artificially increased by 10.6× for better visualization. White arrowheads: putative synaptic structures. Inset: corrective wavefront. Bottom: i: lateral signal profiles along white dashed line i; ii: axial signal profiles of process ii (white arrow). Signals in the line profiles were normalized to the maximal value of the AO condition. Representative data from >3 experiments (technical replicates).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 3D rendering of the eye imaging module. (B) Additional corrective wavefronts for system aberrations measured with 0, 20, 40, 60, and 80 mA ETL currents, relative to the corrective wavefront measured with 0 ETL current. (C) MIPs of dye-injected retinal vasculature image stacks (550×550×127 µm3) measured with corresponding system corrections in (B). (D) Top: Zemax ray tracing of the eye imaging module. Bottom: illustration of mouse eye alignment (not to scale). D: distance between the mouse eye pupil and L8 focal plane. (E) Wavefront errors versus scanning angle (at the ETL) for different ETL currents with the mouse eye placed at D=0 mm and D=4 mm, respectively, obtained by ray tracing. (F) Relative focal shift and imaging FOV versus ETL current at different D values, obtained by ray tracing.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Design of the customized contact lens (CL). (B) 2PFM single-plane images of (left) retinal vasculature and (right) retinal cells acquired (i) with CL and eye gel and (ii) without CL or eye gel. All images taken with system aberration correction and normalized to (i). WT: wildtype. (C) Shack-Hartmann (SH) sensor images acquired from the Thy1-YFP-16 mouse retina in (B), normalized to SH image in (i). Brightness of SH image in (ii) artificially increased by 1.5× for better visualization.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** All corrective wavefronts and Zernike decompositions were calculated excluding piston, tip, tilt, and defocus.
 
 To ensure optimal performance, we thoroughly characterized our AO-2PFM. We investigated how ETL current and mouse eye placement (with a longitudinal displacement of up to 4 mm in typical experiments) impacted imaging performance (Figure 1—figure supplement 1). We found that aberrations introduced by the ETL at different control currents minimally affected image quality and that axial focal shift varied linearly with ETL current while field-of-view (FOV) size remained mostly constant. We also optimized sample preparation procedure. We discovered that a custom-designed 0-diopter contact lens (CL; design parameters in Figure 1—figure supplement 2A) in combination with a single application of eye gel between the CL and the cornea reduced aberrations, prevented cataract formation, and improved wavefront sensing and imaging for hours (Figure 1—figure supplement 2).
 
@@ -49,23 +65,35 @@ In order to achieve diffraction-limited imaging of the mouse retina in vivo, we 
 
 All in vivo imaging experiments were conducted in anesthetized mice with dilated pupil (Materials and methods). In most experiments, an area of 19×19 µm2 of the retina was scanned for 3–10 s for wavefront sensing. To estimate the spatial resolution of our AO-2PFM for in vivo mouse retinal imaging, we imaged Thy1-GFP line M transgenic mice that had green fluorescent protein (GFP) expressed in a subset of RGCs (Feng et al., 2000). The image taken without AO showed dim and distorted RGC axons; after aberration correction, we achieved an 8.6× increase in signal and proper visualization of the fine RGC axons (Figure 1B). The spatial frequency space representations of the images indicated that AO enhanced the ability of the imaging system to acquire higher resolution information and led to a lateral resolution that was better than ~0.8 µm (Figure 1B, insets). For some thin RGC processes (Figure 1C), restoring diffraction-limited resolution led to an increase in signal (by 10.6×) and contrast (Figure 1C, i), and, for the first time, enabled in vivo 2PFM visualization of varicosities resembling synaptic structures in the mouse retina (Figure 1C, white arrowheads). From the axial profile of a thin process (Figure 1C, ii), we estimated the axial resolution after AO correction to be 6.7 µm. Both the lateral and axial resolution estimations were close to the theoretical diffraction-limited resolution for a fully-dilated mouse eye with 0.49 numerical aperture (Geng et al., 2011).
 
-## AO improves in vivo imaging of retinal vasculature
+### AO improves in vivo imaging of retinal vasculature
 
 Retinal vasculature supports the physiological functions of the retina. Retinal vascular diseases can lead to vision loss. Abnormalities in retinal vasculature morphology and physiology serve as important biomarkers for various cerebral and systemic diseases (Patton et al., 2005; Frost et al., 2013; Ikram et al., 2013; Liew et al., 2008). Therefore, in vivo characterization of retinal vasculature, especially at the microvasculature level, is of great physiological and clinical importance. Utilizing either confocal microscopy (Biss et al., 2007; Wahl et al., 2019) or 2PFM (Qin et al., 2020; Bar-Noam et al., 2016; Wang et al., 2021), previous publications have achieved in vivo visualization of retinal microvasculature through either full correction of the mouse eye aberrations (Biss et al., 2007; Wahl et al., 2019; Qin et al., 2020), partial correction of the anterior optics of the mouse eye (Wang et al., 2021), or stringent selection of imaging lenses (Bar-Noam et al., 2016). These prior demonstration-of-principle experiments suggest that in order to image retinal microvasculature in vivo, mouse eye aberrations need to be corrected, either fully or partially. With our optimized imaging system, we aimed to determine whether aberration correction was indeed essential for visualizing microvasculature. Furthermore, we proceeded to systematically characterize the spatial dependence of mouse eye aberrations and how large a FOV can benefit from a single AO correction.
 
 To verify the necessity of AO in resolving mouse retinal microvasculature and characterize mouse eye induced aberrations, we performed in vivo 2PFM angiography by retro-orbitally injecting dextran-conjugated fluorescein isothiocyanate (FITC) into the non-imaged eye. Aberrations were measured with fluorescence emitted from vessels in the superficial plexus (red asterisk, Figure 2A; wavefront sensing area: 19×19 µm2). After AO correction, we observed a 2–10× enhancement in signal (Figure 2B and C). Comparing the line signal profiles (along the orange dashed lines, Figure 2A and B), we found that AO improved signal for all vessels while its impact on signal of smaller capillaries (Figure 2C, black asterisks; 6–10× improvement) was more substantial than on larger vessels (Figure 2C, black circles; 2–3× improvement). Despite the substantial signal improvements enabled by AO, we found that most capillaries, due to their size and sparse distribution in space, could be resolved in 3D without AO by our optimized 2PFM, albeit at reduced contrast and resolution (Figure 2D and E). Our results indicate that a properly designed 2PFM is capable of acquiring retinal angiograms at the level of individual capillaries.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig2-v1.jpg)
+
+**Figure 2.:** (A,B) MIPs of image stacks (580×580×128 µm3) of vasculature measured (A) without and (B) with AO, respectively, normalized to AO image. Red asterisk: center of 19×19 µm2 wavefront sensing (WS) area. Gamma correction: 0.7. Representative data from >25 experiments (technical replicates). (C) Lateral line profiles along orange dashed lines in A and B. Black circles: large vessels; black asterisks: capillaries. (D) Single image planes at 0, 23, 40, and 53 µm below the superficial vascular plexus acquired without and with AO correction performed at the superficial plexus (0 µm), normalized to AO images. (E) Axial profiles of capillary structures (i-iv in D). Red dashed lines: depth of wavefront sensing area. (F) Left: MIPs of image stacks (580×580×110 µm3) acquired with WS performed at different locations in the FOV (red asterisks). Middle: AO/No AO pixel ratio maps. Right: radially averaged profiles of pixel ratio maps, centered at WS sites. Insets: corrective wavefronts. MIPs and pixel ratio maps individually normalized.
+
 We further evaluated how the mouse ocular aberrations varied with imaging depth and field position. We found that AO performed at the superficial plexus was beneficial for imaging deeper layers, with the correction at superficial depth improving signal, resolution, and contrast of deeper vasculature (Figure 2D and E). This result indicated that most aberrations of the mouse eye arose from cornea and crystalline lens, instead of retina. Because the crystalline lens of the mouse eye has a gradient refractive index distribution (Campbell and Hughes, 1981; Remtulla and Hallett, 1985), ocular aberrations should also be field dependent (Wang and Ji, 2012; Wang and Ji, 2013). Field-dependent aberrations might also be introduced when the mouse eye was positioned off-axis with respect to the eye imaging module. We therefore examined how aberrations varied with FOV position and characterized the area within which a single correction led to substantial signal improvement. We performed AO at different locations of the superficial plexus in the FOV (Figure 2F, left column, red asterisks; Figure 2—video 1) and compared their performance. The ‘AO/No AO’ pixel ratio maps (Figure 2F, middle column) exhibited field-dependent signal increase with larger gain achieved at pixels closer to the locations of aberration measurements. We quantified the effective area of AO in terms of signal improvement by calculating the radially averaged profiles of these pixel ratio maps (Figure 2F, right column; origins at the wavefront sensing locations). We found signal improvement (‘AO/No AO’ pixel ratio ≥1) within a radius of ~216 µm when AO was performed at the FOV center of this mouse (Figure 2F, [1]). For off-center locations, this radius was slightly smaller (Figure 2F, [2] and [3]).
 
-## AO enables 3D cellular resolution imaging of neurons in the mouse retina
+### AO enables 3D cellular resolution imaging of neurons in the mouse retina
 
 The mouse retina consists of multiple layers of neurons with different cell types and distinct physiological properties. In the early stage of retinal diseases, abnormal morphology and function are usually confined to specific cell types within a single layer (Hoon et al., 2014). Therefore, for microscopic investigations of retinal physiology and pathology, it is essential to resolve cells in 3D. We evaluated whether our optimized 2PFM was capable of 3D cellular resolution imaging without correcting the severe aberrations of the mouse eye.
 
 For this purpose, we imaged the densely fluorescent Thy1-YFP-16 mouse retina in vivo, where all bipolar cells, amacrine cells, and retinal ganglion cells were labeled with yellow fluorescence protein (Feng et al., 2000) (YFP). A single AO correction acquired by scanning a 19×19 µm2 area centered on the red asterisk in (Figure 3A) substantially improved signal and resolution (Figure 3A and B; Figure 3—video 1). 2D Fourier transforms of these retinal images indicated that AO recovered higher spatial frequency information (i.e. farther away from the center of Figure 3C and D) thus improved both lateral and axial resolution. The resolution enhancement was especially striking along the axial direction, allowing retinal layers to be more clearly differentiated by better resolving neurons at different depths (Figure 3A and B, XZ images). This improvement in axial resolution is especially important for functional imaging, because it minimizes neuropil contamination and ensures accurate characterization of the functional properties of neurons (Ji et al., 2012; Wang et al., 2014a; Sun et al., 2016). Therefore, AO was necessary for 3D cellular resolution imaging of retinal neurons in vivo. In the lateral image planes, our optimized 2PFM design and mouse preparation allowed the identification of individual neurons without AO, albeit at lower signal and poorer resolution than those achieved with AO, for inner nuclear layer, inner plexiform layer, and ganglion cell layer (Figure 3E). In contrast, subcellular processes could not be clearly visualized without aberration correction (e.g. processes in the inner plexiform layer, Figure 3E, white boxes in the middle column; more examples in Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig3-v1.jpg)
+
+**Figure 3.:** (A,B) MIPs of image stacks (580×580×80 µm3) of a Thy1-YFP-16 retina, measured (A) without and (B) with AO, respectively, normalized to AO images. Red asterisk: center of a 19×19 µm2 WS area. Top: lateral (XY) MIPs. Bottom: axial (XZ) MIPs; ‘No AO’ image brightness artificially increased by 2.9× for visualization. Representative data from>10 experiments (technical replicates). (C,D) kXkY and kXkZ spatial frequency space representation of images in (A,B). (E) Images of different retinal layers within the red dashed box in A acquired (top) without and (bottom) with AO, respectively, normalized to AO images. INL: inner nuclear layer; IPL: inner plexiform layer; GCL: ganglion cell layer. INL/GCL: MIPs of 4.9/7.8-µm-thick image stacks; IPL: single image plane. ‘No AO’ image brightness artificially increased for visualization (gains shown in each image). White boxes: zoomed-in views. (F) Single image planes in GCL at FOV edge (blue dashed box in A) acquired (top) without AO, (middle) with central AO (WS area centered at red asterisk in A), and (bottom) with local AO (WS area centered at blue asterisk in A), respectively. Images normalized to local AO image. ‘No AO’ image brightness artificially increased by 2.5× for visualization. (G) AO/No AO pixel ratio map. (H) Radially averaged profile of pixel ratio map, centered at red asterisk in A.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Lateral images of neurons in a Thy1-YFP-16 retina, measured (top) without and (bottom) with AO, respectively. Insets with white borders highlight the subcellular features within the white dashed boxes. All images are individually normalized to increase visibility. (B) Signal profiles along red dashed lines in A.
+
 Similar to our vascular imaging results, the Thy1-YFP-16 mouse eye exhibited field-dependent aberrations. For areas away from the AO measurement location (e.g. blue dashed box in Figure 3A), although resolution improvement remained, the correction acquired at the FOV center (Figure 3F, Central AO) did not increase signal strength as much as the locally acquired correction (centered on the blue asterisk in Figure 3A; Figure 3F, Local AO). For the Thy1-YFP-16 mouse, the effective area of AO performed at the FOV center was estimated from the ‘AO/No AO’ ratio map (Figure 3G) to have a radius of ~185 µm (Figure 3H).
 
-## Strategy for enlarging the effective area of AO correction for 3D cellular resolution imaging
+### Strategy for enlarging the effective area of AO correction for 3D cellular resolution imaging
 
 Imaging retinal vascular and neuronal structures, we found that the spatially varying aberrations of the mouse eye limited the effective area for AO correction that was acquired by sensing wavefront from a small region of the retina (e.g. 19×19 µm2 for Figures 1—3). Although this approach succeeded in resolving varicosities (Figure 1C) and neuronal processes (Figure 3E and F), for applications requiring 3D neuronal population imaging, synaptic resolution can be sacrificed in favor of cellular resolution imaging capability over larger FOVs. The latter can be achieved by correcting only for global mouse eye aberrations measured by scanning a larger retinal region for wavefront sensing.
 
@@ -73,27 +101,47 @@ As a demonstration, for a 580×580 µm2 FOV, we measured aberrations from areas 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig4-v1.jpg)
 
-**Figure 4.:** (A) Top: AO/NoAO pixel ratio maps for corrections with differently sized WS areas (yellow dashed boxes; i, 19×19 µm2; ii, 95×95 µm2; iii, 190×190 µm2; iv, 380×380 µm2). Bottom: (for [i]) corrective wavefront and (for [ii-iv]) difference in wavefronts between [ii-iv] corrective wavefronts and [i] corrective wavefront. (B) Radially averaged profiles of pixel ratio maps in (A). Insets: zoomed-in views of shaded areas. (C) Single image planes acquired (top) from INL and (bottom) GCL without and with AO using corrective wavefronts [i-iv], respectively. Insets: zoomed-in views of areas at FOV (a) center and (b,c) edge. All images normalized to AO images (AO [i] for inset a; AO [iv] for inset b,c). (D) Lateral (along red dashed lines) and axial (at the center of the neurons indicated by orange arrows) profiles of neurons in the (a) central and (b) edge regions.Figure 4—source data 1.‘No AO’ stack: ‘1_NoAO_9fAvg_stack.tif’‘AO [i]’ stack: ‘2_AO[i]_2_2.8_9fAvg_stack.tif’ ‘AO [ii]’ stack: ‘3_AO[ii]_10_14_9fAvg_stack.tif’ ‘AO [iii]’ stack: ‘4_AO[iii]_20_28_9fAvg_stack.tif’ ‘AO [iv]’ stack: ‘5_AO[iv]_40_56_9fAvg_stack.tif’.
+**Figure 4.:** (A) Top: AO/NoAO pixel ratio maps for corrections with differently sized WS areas (yellow dashed boxes; i, 19×19 µm2; ii, 95×95 µm2; iii, 190×190 µm2; iv, 380×380 µm2). Bottom: (for [i]) corrective wavefront and (for [ii-iv]) difference in wavefronts between [ii-iv] corrective wavefronts and [i] corrective wavefront. (B) Radially averaged profiles of pixel ratio maps in (A). Insets: zoomed-in views of shaded areas. (C) Single image planes acquired (top) from INL and (bottom) GCL without and with AO using corrective wavefronts [i-iv], respectively. Insets: zoomed-in views of areas at FOV (a) center and (b,c) edge. All images normalized to AO images (AO [i] for inset a; AO [iv] for inset b,c). (D) Lateral (along red dashed lines) and axial (at the center of the neurons indicated by orange arrows) profiles of neurons in the (a) central and (b) edge regions.
 
 Importantly, this approach enabled large-scale imaging of the retina with 3D cellular resolution, as indicated by retinal cell images taken from the center and edge locations (Figure 4C). A more localized wavefront correction (e.g. AO [i], Figure 4C) gave rise to brighter and sharper images at the scanning center (Figure 4C, insets a; Figure 4D, line profiles for a), while a more global wavefront measurement (e.g. AO [iv], Figure 4C) benefited more the visualization of neurons towards the edge of the FOV (Figure 4C, insets b and c; Figure 4D, line profiles for b). Moreover, with global corrections, neuronal images at the center of the area maintained cellular resolution despite reduction in signal gain (Figure 4C, insets a; Figure 4D, orange line profiles for a). Our results suggest that for diffraction-limited imaging of fine structures within a small FOV, a localized wavefront measurement is required, whereas a global wavefront measurement is preferable for 3D cellular resolution imaging over large FOVs.
 
-## High-resolution in vivo identification of abnormal capillaries in a pathological mouse model
+### High-resolution in vivo identification of abnormal capillaries in a pathological mouse model
 
 Having demonstrated the effectiveness of our AO-2PFM in improving signal, contrast, and spatial resolution for in vivo retinal imaging, we utilized our system to study retinal microvascular pathology. Retinal angiomatous proliferation (RAP), a subtype of age-related macular degeneration, is characterized by capillary proliferation that originates from the sensory retina and extends into the subretinal space (Yannuzzi et al., 2001). Replicating the characteristic phenotypes of human RAP, a transgenic mouse model, the very low-density lipoprotein receptor knockout (VLDLR-KO) mouse, has been employed to study the underlying mechanism of RAP. In this model, the gene encoding VLDLR, which mediates anti-angiogenic signaling in retinal vasculature, is knocked out, leading to overgrown intraretinal vasculature and subretinal neovascularization (Heckenlively et al., 2003; Hu et al., 2008). In addition, fluorescein angiography revealed that the VLDLR-KO model of proliferative vascular retinopathy has extensive focal vascular leakage (Heckenlively et al., 2003; Hu et al., 2008; Li, 2007; Xia et al., 2013). However, the lack of sufficient spatial resolution and optical sectioning capability makes it challenging for fluorescence angiography to identify the 3D location and characterize the structure of the vascular lesions in vivo.
 
 We utilized AO-2PFM to image in vivo the retina of VLDLR-KO/Sca1-GFP and their wildtype control WT/Sca1-GFP mice, both with vascular endothelial cells in the retina labeled with GFP (Xia et al., 2013). In order to detect microscopic capillary pathology, we used 19×19 µm2 wavefront sensing area to achieve diffraction-limited imaging performance, which led to high-resolution images of endothelial cell linings of retinal vessels in both mouse lines (Figure 5A and B). Interestingly, in the VLDLR-KO/Sca1-GFP retina, images acquired with AO revealed a disruption in the capillary endothelium labeled by GFP, where the endothelial cells lined the walls of a short capillary branch but not its end face, leading to a ring-like structure (Figure 5A and C, yellow asterisks, insets i-ii; Figure 5—video 1). Such ring-like structures were not observed in the WT/Sca1-GFP retina (Figure 5B). We further confirmed the presence of such microvascular lesions using ex vivo 2PFM imaging of dissected VLDLR-KO/Sca1-GFP retinas (Figure 5—figure supplement 1A and C; Figure 5—video 2). Whereas similarly structured capillary disruptions were observed in the VLDLR-KO/Sca1-GFP retina, consistent with the in vivo investigation, capillaries in the wildtype control had endothelial cells fully enclosing both the walls and the ends of capillary branches (Figure 5—figure supplement 1B and D; Figure 5—video 3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig5-v1.jpg)
+
+**Figure 5.:** (A,B) Left: MIPs of image stacks of (A) VLDLR-KO/Sca1-GFP (580×580×94 µm3) and (B) WT/Sca1-GFP (520×520×120 µm3) mouse retinas, measured (arrow start) without and (arrow end) with AO. Asterisks: capillary disruptions. Insets: zoomed-in views individually normalized for better visualization. ‘No AO’ inset brightness artificially increased for visualization (gains shown in inset). (C) A single image plane of a VLDLR-KO/Sca1-GFP mouse retina before FITC injection. Inset: MIP of a zoomed-in image stack (58×58×8.2 µm3) showing capillary lesion (orange box). (D) The same FOV in (C) after FITC injection. Dashed region: area with heightened fluorescence outside the vasculature. (E) MIP of an image stack (580×580×150 µm3) of a WT/Sca1-GFP mouse retina after FITC injection. (F) Retinal images taken on (top) day 1, (middle) day 2, and (bottom) day 3 after Evans Blue (EB) injection. Left: near-infrared channel showing EB-labeled vasculature and tissue staining (MIP of a 580×580×166 µm3 volume). Middle: green channel showing GFP-labeled vasculature (single planes). Right: merged images. Insets: zoomed-in views of white boxes within the GFP images. (G) Microglia observed in EB-injected VLDLR-KO/Sca1-GFP mouse retina on day 3 near the lesion site (orange dashed box in F). Top: microglia imaged without and with AO. Middle: multiple microglia in the leaking region. Signal in the boxed region was artificially increased by 8.3× for visualization. Bottom: time-lapse images of the microglia in white dashed circle. All images are single planes. Wavefront sensing area: 19×19 µm2. In vivo data in this Figure were obtained from 3 VLDLR-KO and 2WT mice (biological replicates).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A,B) Ex vivo MIPs of image stacks from (A) VLDLR-KO/Sca1-GFP (1380×1380×82 µm3) and (B) WT/Sca1-GFP (1380×1380×71 µm3) mouse retinas. (C) Top: 3D projected view of an example capillary lesion (red arrow) displayed at viewing angles of 169° and 353°, respectively. Bottom: MIPs of 6 more FOVs showing capillary disruptions (red arrows). Insets: single-plane zoomed-in images. (D) Top: 3D projected view of an example normal capillary (blue arrow) displayed at viewing angles of 180° and 22°, respectively. Bottom: MIPs of 6 more FOVs showing normal capillary structures (blue arrows). Insets: single-plane zoomed-in images. Image contrast was adjusted individually for better visualization.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A–C) MIPs of image stacks of (580×580×130 µm3) WT/Sca1-GFP retina measured in the (A) near-infrared EB and (B) green GFP channels, and (C) merged images. (D–F) Single-plane images from (A–C) with 12.5 µm Z step. White dashed circles: EB leakage areas.
+
 We hypothesized that these lesions as capillary disruptions observed in the VLDLR-KO/Sca1-GFP retina were the locations of dye leakage. To test this hypothesis, enabled by AO, we first located a microvascular lesion in a VLDLR-KO/Sca1-GFP mouse retina (Figure 5C, orange box, inset). Then we retro-orbitally injected the green fluorescent dye FITC into the non-imaged eye, which labeled the blood plasma within the retinal vasculature (Figure 5D). Immediately after dye injection, we observed dye leakage around the lesion site (Figure 5D, orange dashed area). A control experiment was carried out by introducing FITC into the healthy WT/Sca1-GFP mouse retina retro-orbitally, where neither capillary disruptions nor dye leakage were observed (Figure 5E).
 
 To further study the association between dye leakage and microvascular lesions, we injected the NIR dye Evans Blue (EB) into the retinal vasculature and performed dual-color two-photon imaging of the VLDLR-KO retina. Similar to the experiments with FITC, we observed leakage in the knockout mouse retina, with EB persistently staining retinal tissue and the stained volume expanding over 3 days of consecutive imaging (Figure 5F). We observed capillary lesions (Figure 5F, insets) in the stained volume, suggesting a spatial correlation between dye leakage and capillary abnormalities. Moreover, on the third day, we observed GFP-positive cells within the dye-stained retinal volume that were absent in previous 2 days (Figure 5G). The morphology of these cells resembled that of activated microglia (Joseph et al., 2021; Ozaki et al., 2022). We speculated that the leakage of EB triggered local immune response and recruited ocular immune cells to the impacted area. With the subcellular resolution provided by AO-2PFM, we were able to track dynamic changes in the processes of the same cell over time (Figure 5G, bottom). Control experiment in WT/Sca1-GFP retina showed local small-scale EB leakage (Figure 5—figure supplement 2), probably resulting from normal remodeling of the retinal vasculature (Selvam et al., 2018). Our findings revealed, for the first time, the microscopic morphological details of vasculature lesions and suggested that these capillary disruptions served as intraretinal origins of vascular leakage in the VLDLR knockout mouse. Here, AO was essential for 2PFM to achieve high-resolution identification and characterization of microvasculature lesions in vivo. Together with our optimized sample preparation, AO-2PFM also allowed us to track these lesions, dye leakage, and associated immune response longitudinally, making it possible to investigate the development and progression of vasculature-associated diseases at subcellular resolution in vivo.
 
-## High-resolution in vivo imaging of retinal pharmacology
+### High-resolution in vivo imaging of retinal pharmacology
 
 With the 3D cellular resolution imaging capability enabled by AO-2PFM, we can now image the functional activity of retinal neurons with high fidelity in healthy or diseased retina in vivo using activity sensors such as the genetically encoded calcium indicator GCaMP6s (Chen et al., 2013).
 
 As a demonstration, we studied how pharmacological manipulation affects RGC activity in vivo in a mouse model of retinal degeneration. As the afferent neurons of the retina, RGCs deliver retinal circuit output to the rest of the brain and play a crucial role in visual perception. RGCs in the rd1 mouse, the oldest and most widely studied animal model of retinal degeneration (Chang et al., 2002), become hyperactive after photoreceptor death caused by a mutation in the Pde6b gene (Sekirnjak et al., 2011; Telias et al., 2019). Recent studies have suggested that RGC hyperactivity masks light-evoked signals initiated by surviving photoreceptors and impedes remaining light-elicited behaviors (Telias et al., 2019; Telias et al., 2022). Studying RGC hyperactivity therefore is of great importance both for understanding the pathology of retinal degeneration and for developing pharmacological therapies (Cao et al., 2021). However, RGC hyperactivity has been only studied ex vivo on dissected retinas (Telias et al., 2019; Cao et al., 2021), preventing longitudinal evaluation of degeneration progression and therapeutic approaches.
 
 Here, we characterized RGC hyperactivity in vivo and studied the effect of Lidocaine, a use-dependent Na+ channel blocker, on alleviating hyperactivity of RGCs in the rd1-Thy1-GCaMP6s mouse using AO-2PFM and calcium imaging. The rd1-Thy1-GCaMP6s mice selectively express GCaMP6s in their RGC layer of the retina (O’Brien et al., 2014; Chen et al., 2012). Because RGC hyperactivity is usually studied by ex vivo tools such as multi-electrode array (MEA) or single cell electrophysiology recordings, to establish the calcium signature of RGC hyperactivity, we first carried out simultaneous cell-attached and ex vivo 2PFM calcium recordings of the same hyperactive alpha RGCs in a dissected rd1 mouse retina (Figure 6A). Consistent with previous reports on ex vivo retina (Telias et al., 2019; Telias et al., 2022; Cao et al., 2021), RGC hyperactivity was observed as high-frequency action potentials. In terms of calcium signaling (quantified as calcium response magnitude ΔF/F, with F being baseline brightness and ΔF being the difference from baseline brightness), hyperactivity measured ex vivo was correlated with a heightened ΔF/F of the GCaMP6s-expressing soma. A temporally varying firing rate led to transient fluctuations in its calcium signal (ROI 1, Figure 6A), whereas a sustained high firing rate led to heightened fluorescence brightness without obvious transients (ROI 2, Figure 6A). After ~20 seconds of 2% Lidocaine bath perfusion, spontaneous spiking from the RGC was largely suppressed with a ΔF/F close to 0. After artificial cerebrospinal fluid (ACSF) washout, RGC hyperactivity partially recovered, which was associated with an increase of ΔF/F magnitude. The observed time course and suppressive effect of Lidocaine application on RGC hyperactivity were consistent with ex vivo multi-electrode array (MEA) recordings (Figure 6—figure supplement 1A and B). The characteristics of the corresponding calcium responses were also observed in 2-photon population imaging of multiple RGCs in dissected rd1 retina (Figure 6B), with the brightness and ΔF/F of the GCaMP6s-expressing neurons reduced by Lidocaine application and followed by partial or full recovery after washout.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig6-v1.jpg)
+
+**Figure 6.:** (A) Simultaneous cell-attached and 2PFM calcium recordings of two RGCs before, during, and 45 min after Lidocaine treatment. Representative data from >3 cells. (B) Top: average intensity projections of ex vivo 2PFM images of RGCs in a dissected retina (i) before, (ii) right after, and (iii) 2 hr after Lidocaine treatment, normalized to the left image. Bottom: Ex vivo calcium dynamics of 6 RGCs therein. Representative data from >3 retinas. (C) In vivo single image planes of RGCs acquired without and with AO, respectively, normalized to AO images. Insets: zoomed-in views and corrective wavefront; ‘No AO’ inset brightness artificially increased by 4.0× for visualization. Representative data from >3 retinas. (D) In vivo calcium dynamics of 6 RGCs (i) before, (ii) right after, (iii) 30 minutes after, and (iv) 60 minutes after Lidocaine treatment, respectively. Wavefront sensing area: 19×19 µm2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84853/elife-84853-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MEA setup for RGC spontaneous spike activity recording. Inset: illustration of retina placement relative to MEA. (B) Raster and average firing frequency plots of RGCs in dissected rd1 mouse retina (left) before and (middle) right after Lidocaine bath perfusion, and (right) 2 hr post washout, respectively.
 
 Having confirmed that RGC hyperactivity was associated with heighted calcium levels, we next performed AO-2PFM calcium imaging to directly study how Lidocaine affected RGC hyperactivity in vivo. Through the rd1-Thy1-GCaMP6s mouse eye, AO increased RGC brightness by on average 4× and enabled high-resolution visualization of both RGC somata and their processes (Figure 6C). The signal increase enabled by AO was particularly important for the rd1-Thy1-GCaMP6s mouse, because the RGCs here had dimmer fluorescence than the other lines that we investigated. For these RGCs, correcting the eye-induced aberration was essential for their visualization and high-fidelity functional investigations at cellular resolution in vivo. To maximize the fluorescence signal, we performed AO with a small (19×19 µm2) wavefront sensing area. Before injecting Lidocaine, we observed slow fluctuations in the brightness of GCaMP6s-expressing RGCs (Figure 6D, i), similar to the slow dynamic events in RGC calcium traces measured ex vivo. One minute after retro-orbital injection of Lidocaine into the non-imaged eye, hyperactivities from these cells were substantially inhibited for an hour as indicated by the reduction of RGC GCaMP6s fluorescence brightness (Figure 6D, ii and iii). Imaging the same RGCs 60 min after injection (Figure 6D, iv), we detected partial recovery of RGC brightness, consistent with our ex vivo recordings after washing out. Here, by studying the suppression effects of Lidocaine on RGC hyperactivity within living mice, we demonstrated that AO-2PFM can monitor the pathology and pharmacology of retinal diseases at high resolution in vivo.
 
@@ -117,51 +165,138 @@ We also applied our AO-2PFM to in vivo activity imaging of RGCs in a mouse model
 
 ## Materials and methods
 
-## Animal use
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6 J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Thy1-YFP)16Jrs/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #003709</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6.Cg-Tg(Ly6a-EGFP)G5Dzk/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #012643</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>B6;129S7-Vldlrtm1Her/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #002529</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C3H/HeJ</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #000659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #024275</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>http://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>https://graphpad.com</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lidocaine</td>
+      <td>Phoenix</td>
+      <td>NDC: 57319-533-05</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal use
 
 All animal experiments were conducted according to the National Institutes of Health guidelines for animal research. Procedures and protocols (AUP-2020-06-13343) were approved by the Institutional Animal Care and Use Committee at the University of California, Berkeley.
 
-## AO two-photon fluorescence microscope (AO-2PFM)
+### AO two-photon fluorescence microscope (AO-2PFM)
 
 The AO-2PFM was built upon a homebuilt 2PFM (Figure 1A) incorporated with a direct-wavefront-sensing-based AO module, as described in detail previously (Li et al., 2020b). Briefly, 920 nm output from a femtosecond Ti:Sapphire laser (Coherent, Chameleon Ultra II) was expanded (2×, Thorlabs, GBE02-B) after a Pockel Cell (ConOptics, 350–80-LA-02-BK). The beam was then scanned with a pair of optically conjugated (by L1-L2, FL = 85 mm; Edmund Optics, 49–359-INK) galvanometer mirrors (Cambridge Technology, 6215H). A pair of achromatic lenses (L3-L4, FL = 85 and 300 mm; Edmund Optics, 49–359-INK and 49–368-INK) relayed the galvos to the DM (Iris AO, PTT489). The focal plane position of two-photon excitation in the mouse retina was controlled by an electrically tunable lens (ETL; Optotune, EL-16–40-TC-VIS-5D-C), which was conjugated to the DM (by L5-L6, FL = 175 and 400 mm; Edmund Optics, 49–363-INK and Newport, PAC090). The ETL was then relayed to the pupil of the mouse eye by L7 (FL = 200 mm; Thorlabs, AC254-200-AB) and L8, which was composed of two identical lenses (FL = 50 mm; Thorlabs, AC254-050-AB). The two 50-mm-FL lenses in L8 were used together with a combined FL of 25 mm, and they were mounted with their curved surfaces facing and almost touching each other (Figure 1—figure supplement 1A and D ) to minimize aberrations during large-angle scanning. For 2PFM imaging, the emitted fluorescence from the mouse retina was collected by the mouse eye, travelled through L8-L7 and the ETL, reflected by a dichroic mirror (D2; Semrock, Di02-R785−25×36), focused by a lens (L9, FL = 75 mm; Thorlabs, LB1309-A), and detected by a photomultiplier tube (PMT, Hamamatsu, H7422-40). For direct wavefront sensing, D2 was moved out of the light path and the emitted fluorescence was descanned by the galvo pair, reflected by a dichroic mirror (D1; Semrock, Di03-R785-t3-25×36), and relayed to a Shack-Hartmann (SH) sensor by a pair of lenses (L10-L11, FL = 60 and 175 mm; Edmund Optics, 47–638-INK and 47–644-INK). The SH sensor was composed of a lenslet array (Advanced Microoptic System GmbH, APH-Q-P500-R21.1) and a camera (Hamamatsu, Orca Flash 4.0) that was placed at the focal plane of the lenslet array. Wavefront aberrations were measured from the shifts of SH pattern foci, reconstructed with custom MATLAB code, and the corresponding corrective pattern was then applied to the DM.
 
-## System correction
+### System correction
 
 Before imaging the mouse retina, system aberration caused by imperfect and/or misaligned optics was corrected. Due to the path difference between the two-photon illumination and the fluorescence wavefront sensing paths (Sulai and Dubra, 2014), system correction was performed with a modal-based optimization approach (Wahl et al., 2019; Booth, 2014). Specifically, with 0 mA applied to the ETL, we imaged a fluorescent lens tissue sample at the focal plane of L7 and applied 11 values (–0.1~0.1 µm rms at an increment of 0.02 µm) for each of the first 21 Zernike modes excluding piston, tip, tilt, and defocus. The optimal value for each Zernike mode was determined by maximizing the fluorescence intensity of the sample and it was applied to the DM before proceeding to the next Zernike mode. An SH pattern was obtained with system aberration corrected and was used as the SH reference for calculating sample-induced aberrations. All images taken with system correction were indicated in the main text as ‘No AO’.
 
 To change the focal plane within the retina, we varied the electric current applied to the ETL. We characterized how system aberrations varied with the ETL current (Figure 1—figure supplement 1). We carried out system correction with 0 mA ETL current applied (Figure 1—figure supplement 3A). Additional aberrations introduced by setting ETL current to 20, 40, 60, and 80 mA were negligible (Figure 1—figure supplement 1B) compared with eye-induced aberrations (Figure 1—figure supplement 3) and minimally affected in vivo imaging (Figure 1—figure supplement 1C). We also evaluated how system aberrations varied with the distance D between the mouse eye pupil and the imaging module (Figure 1—figure supplement 1D). Using Zemax for ray tracing, we found its effect to be similarly minimal (Figure 1—figure supplement 1E). Our typical in vivo retinal imaging was performed with 10~60 mA of ETL currents and 2~4 mm D values (Figure 1—figure supplement 1D). Simulating the mouse eye as an ideal lens behind a 0-diopter contact lens (Figure 1—figure supplement 2A) made of PMMA (1.49 refractive index) and 0.5-mm-thick eye gel (1.33 refractive index), we calculated the focal shifts and FOVs for different ETL currents using Zemax and found a linear focal shift with ETL current and relatively constant FOV during 3D imaging (Figure 1—figure supplement 1F). Imaging FOV and axial shift were determined from Zemax simulation for D=2 mm.
 
-## In vivo imaging
+### In vivo imaging
 
 All mice (Wild-type C57BL/6 J and Thy1-YFP-16, the Jackson laboratory; VLDLR-KO/Sca1-GFP and WT/Sca1-GFP, Gong lab; GCaMP6s-rd1, Kramer lab) were at least 8 weeks old at the time of imaging. The rd1-Thy1-GCaMP6s mice were generated by crossing rd1 (C3H/HeJ, the Jackson laboratory) with Thy1-GCaMP6s (C57BL/6J-Tg(Thy1-GCaMP6s)GP4.3Dkim/J, the Jackson laboratory). In vivo imaging was carried out on mice under isoflurane anesthesia (~1.0% by volume in O2). Prior to imaging, the mouse pupil was dilated with one drop of 2.5% phenylephrine hydrochloride (Paragon BioTeck, Inc) and one drop of 1% tropicamide (Akorn, Inc). A 0-diopter customized rigid contact lens (Figure 1—figure supplement 2A, Advanced Vision Technologies) was placed on the eye, with eye gel (Genteal) applied in between the eye and the contact lens to prevent cornea drying and clouding. Excessive eye gel was removed by gently pressing the contact lens onto the mouse eyeball. One single application of eye gel was sufficient in keeping the cornea moist for a 2~4 hr imaging session. During imaging, mice were stabilized on a bite-bar on a 3D translational stage with two rotational degrees of freedom (Thorlabs, PR01) and the body temperature was maintained with a heating pad (Kent Scientific, RT-0515). The mouse head was carefully aligned to make the eye perpendicular to the illumination beam, minimizing off-axis aberrations and illumination clipping by the contact lens and mouse pupil. Fluorescent dyes were injected retro-orbitally into the non-imaged eye. In wild-type mice, 40–80 µL of 5% (w/v) 2 M-Da dextran-conjugated FITC was injected for vasculature visualization. In some VLDLR-KO/Sca1-GFP mice, 30–40 µL of 5 mg/mL FITC or 5 mg/mL Evans Blue were injected. To generate bright enough fluorescent guide star for direct wavefront sensing in the weakly-fluorescent mouse line rd1-Thy1-GCaMP6s, 20–40 µL of 5 mg/mL Evans Blue was injected. To suppress RGC hyperactivity in rd1-Thy1-GCaMP6s mouse retina, we retro-orbitally injected 10 µL of 2% Lidocaine into the non-imaged eye.
 
 All imaging parameters, including laser power at the mouse pupil, are listed in Supplementary file 1.
 
-## Retina dissection
+### Retina dissection
 
 Mice were first euthanized by isoflurane overdose followed by cervical dislocation. Then the eyes were removed, and the retinas were isolated and immersed in standard oxygenated (95% O2, 5% CO2) artificial cerebrospinal fluid (ACSF) at room temperature and pH 7.2.
 
-## Ex vivo two-photon structural imaging of dissected Sca1-GFP mouse retinas
+### Ex vivo two-photon structural imaging of dissected Sca1-GFP mouse retinas
 
 A commercial twophoton fluorescence microscope (Bergamo, Thorlabs) was used to image dissected Sca1-GFP mouse retinas (Figure 5—figure supplement 1). Two-photon excitation at 920 nm was provided by a femto-second laser (Coherent, Chameleon Ultra II). Ex vivo images were acquired by a 16× 0.8 NA water-dipping objective lens (Nikon). Hardware controls and data acquisition were performed by ThorImage.
 
-## Multielectrode array (MEA) recordings
+### Multielectrode array (MEA) recordings
 
 Isolated ex vivo rd1-Thy1-GCaMP6s retinas were cut into three pieces. Each piece was mounted onto a 60-electrode MEA chip (60ThinMEA200/300iR0ITO, Multichannel Systems) with the inner retina facing the array, so that RGCs were in close contact with electrodes. The chip was connected to an amplifier (MEA1060, Multichannel Systems) for wide-band extracellular recording of multi-unit activity. Before the onset of recording, the retina was perfused with oxygenated ACSF at 34 °C for 30 min with a flowrate of 1 mL/min. For pharmacological blockade of actional potentials, Lidocaine (2% in saline) was applied to the bath during corresponding recordings. Washout of Lidocaine was performed by continuously perfusing oxygenated ACSF at 34 °C over the course of two hours with a flowrate of 1 mL/min.
 
 Recorded activity from RGCs were high-pass filtered at 200 Hz, digitized at 20 kHz, and analyzed offline. Extracellular spikes were defined as transient signals with peak deflection of >3.5 standard deviations from the root mean square of background signal. Because individual electrodes can detect spikes from multiple RGCs, we utilized principal component analysis to sort unique units (Offline Sorter v3, Plexon), which accepted units having interspike intervals >1ms. Each unit was compiled into a raster plot. The analysis code for processing sorted spike data into rasters is available online (https://github.com/kevjcao/Multielectrode-array, copy archived at Cao, 2023).
 
-## Cell attached recordings of alpha-RGCs in rd1-Thy1-GCaMP6s retinas
+### Cell attached recordings of alpha-RGCs in rd1-Thy1-GCaMP6s retinas
 
 Isolated ex vivo rd1-Thy1-GCaMP6s retinas were mounted onto filter paper (0.45 mm nitrocellulose membranes, MF-Millipore) with an optical window with the ganglion cell layer facing up. RGCs were visualized with DODT contrast infrared optics (Luigs and Neumann) and were targeted for whole cell recording with glass electrodes (4–6 MOhm) filled with ACSF. Loose- (<1 GΩ) and tight-seal patches (>1 GΩ) were obtained under voltage clamp with the command voltage set to maintain an amplifier current of 0 pA. Input resistance and series resistance were monitored throughout recording to ensure stable recording quality and cell health.
 
-## Ex vivo two-photon calcium imaging of rd1 mouse retina
+### Ex vivo two-photon calcium imaging of rd1 mouse retina
 
 Two-photon calcium imaging of rd1-Thy1-GCaMP6s retina was carried out on a custom galvo-scanning microscope equipped with a 20×1.0 NA water immersion objective (XLUMPLFLN20XW, Olympus). Excitation at 920 nm was provided by a tunable Ti:Sapphire ultrafast laser (Chameleon Ultra, Coherent). Imaging parameters were controlled by ScanImage 3.8.1 software (http://scanimage.vidriotechnologies.com/): 256×256 pixels at 1.25 Hz (2ms per line). GCaMP6s emission was collected with a GaAsP PMT shielded by a longpass filter (ET500lp, Chroma).
 
 Isolated retinas were cut into four-leaf clovers and transferred onto filter paper (0.45 mm nitrocellulose membranes, MF-Millipore) with the ganglion cell layer facing up. Oxygenated ACSF was then perfused over the retina at 34 °C for 30 minutes with a flowrate of 1 mL/min. An initial imaging session performed to account for potential two-photon sensitivity. Experimental imaging was performed with the laser power at the sample ≤5 mW. For pharmacological blockade of actional potentials, Lidocaine (2% in saline) was applied to the bath during corresponding recordings. Washout of Lidocaine was performed by continuously perfusing oxygenated ACSF at 34 °C over the course of two hours with a flowrate of 1 mL/min.
 
-## Image processing and analysis
+### Image processing and analysis
 
 All image processing, visualization, and analysis were performed in ImageJ (Schindelin et al., 2012). To remove motion-induced artifacts, image registration (TurboReg and StackReg plugins) was performed.
 

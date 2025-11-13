@@ -33,11 +33,55 @@ When cells are permeabilized by physical tearing or pore-forming proteins, Ca2+ 
 
 ## Results
 
-## BCR interaction with surface-associated antigen induces B-cell PM permeabilization at antigen-binding sites
+### BCR interaction with surface-associated antigen induces B-cell PM permeabilization at antigen-binding sites
 
 We initially utilized two experimental models previously used to study BCR-mediated internalization of surface-associated antigen: F(ab’)2-anti-mouse IgM+ G (αM, which binds and activates mouse BCRs) immobilized on beads or tethered to planar lipid bilayers (PLB) by biotin-streptavidin interaction. Beads or PLB coated with transferrin (Tf) at similar surface density as αM were used as controls, as Tf does not activate the BCR and interacts with the Tf receptor with similar affinity as the bona fide antigen hen egg lysozyme (HEL) binds to the BCR of transgenic MD4 mouse B-cells (Batista and Neuberger, 1998; Fuchs and Gessner, 2002). Strikingly, live imaging revealed influx of the membrane-impermeable dye propidium iodide (PI) at sites of mouse splenic B-cell contact with αM-beads, indicating that PM permeabilization occurred at bead-binding locations (Figure 1A, Figure 1—figure supplement 1 and Videos 1–3). While similar percentages of B-cells bound αM- or Tf-beads (Figure 1B), a significantly higher fraction of B-cells binding αM-beads became PI-positive (Figure 1C). Flow cytometry analysis confirmed the increased PI entry in B-cells binding αM-beads when compared to Tf-beads (Figure 1D–G and Figure 1—figure supplement 2). Addition of soluble F(ab’)2-anti-mouse IgM+ G (sαM, also capable of binding and activating the BCR) did not increase the frequency of PI entry in B-cells binding to Tf-beads (Figure 1F). The percentage of cells positive for cleaved caspase-3, an early apoptotic marker, was similar in B-cells interacting or not with αM- or Tf-beads and only increased significantly after treatment with staurosporine (Figure 1—figure supplement 3), suggesting that PM permeabilization is not associated with apoptosis. Similar observations were made using the PLB system that allows lateral movement of the tethered antigen (Dustin et al., 2007). Significantly more B-cells became PI-positive when contacting αM-PLB when compared to Tf-PLB (Figure 1H–J).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-v2.jpg)
+
+**Figure 1.:** (A) Time-lapse images of a splenic B-cell incubated with αM-beads (1:2 cell:bead ratio) in the presence of PI (Video 1). (B) Percentages of B-cells bound to beads. (C) Percentages of PI-positive (PI+) cells in bead-bound B-cells at 30 min. (D) Gate for bead-bound B-cells in forward and side scatter flow cytometry dot plot. (E) Histograms of PI fluorescence intensity (FI) of αM- and Tf-bead-bound B-cells after 30 min incubation, showing 1000 cells per condition. (F) Percentages of PI+ bead-bound B-cells after 30 min incubation with αM- or Tf-beads with or without soluble αM (sαM). (G) Percentages of PI+ bead-bound B-cells after 30 min at indicated cell:αM bead ratios. (H) Time-lapse images of a B-cell interacting with αM-PLB in the presence of FM1-43 and PI (arrows, FM1-43 or PI entry, Video 4). (I) Mean fluorescence intensity of FM1-43 (green lines) and PI (red lines) in a defined intracellular region of a permeabilized (top) and non-permeabilized (bottom) cell over time. (J) Percentages of PI+ B cells interacting with αM- or Tf-PLB for 60 min. (K) Percentages of B-cells interacting with αM- or Tf-PLB for 30 min showing intracellular FM staining (FM+). Data points represent independent experiments (mean ± SD) (B, C, F, G, J, K). Bars, 5 μm. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.005, unpaired Student’s t-test (B, C, J, K) or one-way ANOVA (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Live spinning-disk microscopy images of splenic B-cells incubated with αM- or Tf-beads before and after 60 min at 37°C in the presence of PI. The arrows point to bead-bound B-cells that became PI+ during the incubation (Video 1). (B) Live spinning disk time-lapse images and corresponding fluorescence intensity (FI) pseudo-color images of A20 B-cells incubated with αM-beads in the presence of PI. The arrow points to beads that caused permeabilization; the arrowhead points to the site of PI entry (Video 2). Beads appear faintly red due to autofluorescence. (C) Live spinning disk time-lapse images of splenic B-cells incubated with αM-beads in the presence of PI. The arrow points to a bead that was exchanged between cells (#1, #2) and caused permeabilization of cell #2 (Video 3). Bars, 5 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Splenic B-cells were incubated with αM-conjugated yellow-green fluorescence beads in the presence of PI and analyzed by flow cytometry. Representative dot plots of side scatter (SSC) versus forward scatter (FSC) and fluorescence intensity histograms of yellow-green beads and PI are shown. Bead-bound B-cells were identified by sizes and the presence of yellow-green fluorescence.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Splenic B-cells treated or not with staurosporine for 24 hr were incubated with αM- or Tf-beads for 30 min at 37°C, fixed, permeabilized, stained with antibodies against cleaved caspase-3, and analyzed by flow cytometry. (A) Identification of bead-bound and unbound B-cell populations on a side scatter (SSC) versus forward scatter (FSC) plot. The percentage of cells positive for cleaved caspase-3 was determined in the bead-bound (B) or unbound (C) cell populations and expressed relative to the Tf-bead control. Data points represent independent experiments (mean ± SD). *p ≤ 0.05; ***p ≤ 0.005, unpaired Student’s t-test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Live spinning disk time-lapse images of splenic B-cells (permeabilized or non-permeabilized) after contact with αM-PLB in the presence of FM1-43 and PI at 37 °C. The arrows point to B-cell sites where intracellular FM or PI was initially detected. (B) Mean fluorescence intensity (MFI) of FM (green) and PI (red) over time in a defined intracellular region (Video 4) in permeabilized (left, 5 examples) or non-permeabilized cells (right, 5 examples). Bar, 5 µm.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The images show eight examples of FM4-64 nuclear envelope staining (arrows) in splenic B-cells permeabilized by αM-PLB after 60 min incubation at 37°C and imaged by live spinning disk fluorescence microscopy. Bar, 5 µm.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Spinning disk time-lapse images of B-cells pre-labeled with soluble anti-BCR antibodies and FM1-43 (green) at 4°C and then imaged at 37°C after addition of secondary fluorochrome-labeled crosslinking antibodies (magenta), in the presence of FM1-43 (green) and PI (red, not detected). The arrows point to areas at the cell periphery where small puncta of internalized FM1-43 were visualized next to anti-BCR clusters (Video 4). No PI influx was detected, indicating that the B-cells were not permeabilized. Bars, 5 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-video1.mp4.jpg)
+
+**Video 1.:** Splenic B-cells were incubated with αM-beads at 4 °C and warmed to 37 °C in a live imaging chamber with 5 % CO2 in DMEM-BSA. Time-lapse images were acquired for 60 min at one frame/15 s in the presence of PI (red) using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective). The arrow indicates the moment of PI entry. Time is displayed as hour: minutes: seconds. The video is displayed at 20 frames/s. Bar, 5 μm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/66984/elife-66984-video2.mp4.jpg)
+
+**Video 2.:** A20 B-cells were incubated with αM-beads in a live imaging chamber at 37 °C with 5 % CO2 in DMEM/BSA. Time-lapse images were acquired for 65 min at one frame/20 s in the presence of PI using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective). The arrow points to the beads and the arrowhead points to the site of entry and subsequent flow of PI into the cell. Beads appear red as a result of autofluorescence. Time is displayed as hour: minutes: seconds. The video is displayed at 20 frames/s. Bar, 5 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/66984/elife-66984-video3.mp4.jpg)
+
+**Video 3.:** Splenic B-cells were incubated with αM-beads in a live imaging chamber at 37 °C with 5 % CO2 in DMEM-BSA. Images were acquired for 60 min at one frame/30 s in the presence of PI using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective). The arrow points to the bead that was exchanged between cells (#1 and #2) and caused permeabilization of cell #2. Beads appear red as a result of autofluorescence. Time is displayed as hour: minutes: seconds. The video is displayed at 10 frames/s. Bar, 5 μm.
+
 PM permeabilization in B-cells binding to αM-PLB was also observed using membrane-impermeable lipophilic FM probes. These fluorescent dyes have been used extensively to assess PM integrity, because they only label the outer PM leaflet of intact cells but rapidly stain intracellular membranes when entering the cytosol (Bansal et al., 2003; McNeil et al., 2003; Demonbreun et al., 2019). After >30 min of interaction with αM-PLB, we observed sudden, massive increases in FM1-43 staining of intracellular membranes, including the nuclear envelope (Figure 1H and I, Figure 1—figure supplements 4 and 5 and Video 4). Consistent with the PI entry results (Figure 1J), significantly more B-cells showed a sudden increase in intracellular FM staining when contacting αM-PLB compared to Tf-PLB (Figure 1K). This characteristic pattern of sudden FM influx with staining of the nuclear envelope was only observed in B-cells that eventually became PI-positive, not in cells that remained PI-negative during interaction with αM-PLB (Figure 1—figure supplement 4). Since FM lipophilic dyes can also be internalized through surface receptor endocytosis, we activated BCR endocytosis by cross-linking surface BCRs using soluble F(ab’)2 goat-anti-mouse IgM+ G antibodies followed by fluorescent F(ab’)2 anti-goat-IgG (Song et al., 1995; Hoogeboom and Tolar, 2016). Under these conditions, which did not cause PM permeabilization, we observed FM1-43 uptake appearing as small peripheral puncta that colocalized with BCR cross-linking antibodies. Such endosome-associated FM1-43 staining pattern was markedly different from the sudden, massive FM influx observed shortly before PI entry in permeabilized cells (Figure 1—figure supplement 6 and Video 4). Collectively, these data show that the sudden, massive influx of FM dyes during αM-PLB binding is caused by B-cell permeabilization, and not by a gradual endocytosis of the PM-associated tracer triggered by BCR engagement.
+
+![Video 4.](https://cdn.elifesciences.org/articles/66984/elife-66984-video4.mp4.jpg)
+
+**Video 4.:** Top: B-cells pre-labeled with FM1-43 (green) were added to αM-PLB (surface-associated ligand). Bottom: B-cells pre-labeled with FM1-43 (green) and anti-BCR antibodies followed by secondary fluorochrome-labeled crosslinking antibodies (magenta) (soluble ligand). Under both conditions, cells were imaged at 37 °C in the presence of FM1-43 (green), and PI (red) was added to detect PM permeabilization. Images were acquired for 60 min at one frame/30 s or 15 s using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 60 × 1.4 N.A. oil objective). Time is displayed as minutes: seconds after cells contacted αM-PLB. The white box indicates the intracellular area used to measure FI levels of intracellular FM1-43 (see Figure 1I and Figure 1—figure supplement 4). The arrow indicates the massive influx of FM1-43 in cells permeabilized during contact with αM-PLB. The arrowheads indicate areas where peripheral FM1-43 puncta (likely endosomes) were observed next to clusters of crosslinked BCR (magenta). The video is displayed at 20 frames/s. Bar, 5 μm.
 
 As an independent method to demonstrate antigen-induced permeabilization of B-cells, we took advantage of the ability of membrane-impermeable Ponceau 4R to quench cytosolic fluorophores upon entering cells (Tay et al., 2019). Instead of monitoring nuclear or intracellular membrane staining by membrane-impermeable fluorescent dyes, we determined the percentage of B-cells pre-loaded with carboxyfluorescein succinimidyl ester (CFSE) that lost their cytosolic fluorescence as a consequence of Ponceau 4R entry during PM permeabilization. To validate this method, we first permeabilized B-cells with the pore-forming toxin streptolysin O (SLO). In the presence of Ponceau 4R, the percentage of B-cells with reduced CFSE fluorescence increased significantly after exposure to SLO (Figure 2A and B), mimicking what we previously observed for PI entry in SLO-treated B-cells (Miller et al., 2015). Thus, quenching of cytoplasmic CFSE by the membrane-impermeable Ponceau 4R is a potent indicator of PM permeabilization. Using this method, we compared B-cells incubated with αM- or Tf-PLB by live imaging. A significantly higher fraction of CFSE-labeled B-cells showed fluorescence quenching when interacting with αM-PLB, quantified as the percentage of cells that lost >70% of their initial CFSE fluorescence (Figure 2C and D and Video 5). The average time for detection of αM-PLB-induced B-cell permeabilization measured by this quenching method was similar to what was observed for FM entry, while the average time for intracellular detection of PI showed a ~ 8 min delay (Figure 2E, Figure 1—figure supplement 4 and Video 4). An analysis of the cumulative rate of influx of the three distinct tracers confirmed the small delay in PI detection (Figure 2F). Thus, FM influx and Ponceau 4R-mediated quenching are more sensitive methods for detecting the onset of B-cell PM permeabilization when compared to PI influx, which is only clearly visualized after intercalation into double-stranded DNA inside the nucleus. Based on consistent results obtained with three different methods, we conclude that BCR binding to αM-coated surfaces (but not to soluble αM) causes localized permeabilization of the B-cell PM.
 
@@ -45,29 +89,105 @@ As an independent method to demonstrate antigen-induced permeabilization of B-ce
 
 **Figure 2.:** (A) Flow cytometry histograms of CFSE FI in B-cells incubated with or without SLO for 10 min in the presence or absence of Ponceau 4R, showing 8500 cells per condition. (B) Percentages of cells with reduced CFSE in the presence or absence of Ponceau 4R after treatment with or without SLO. Data points represent independent experiments (mean ± SD). (C) Time-lapse images of B-cells pre-stained with CFSE interacting with αM-PLB in the presence of Ponceau 4R (arrows, cells with Ponceau 4R quenching of cytoplasmic CFSE) (Video 5). (D) Percentages of B-cells with more than 70 % loss of CFSE FI after 60 min interaction with αM- or Tf -PLB. Data points represent independent experiments (mean ± SD). (E) Timing of PI, FM1-43 entry or Ponceau 4R-mediated CFSE quenching in B-cells interacting with αM-PLB. Data points represent individual cells in at least four independent experiments (mean ± SD). (F) Cumulative percentages of total permeabilized B-cells detected over time in four independent experiments. Bars, 5 μm. **p ≤ 0.01, ***p ≤ 0.005, unpaired Student’s t-test (B, D) or one-way ANOVA (E).
 
+![Video 5.](https://cdn.elifesciences.org/articles/66984/elife-66984-video5.mp4.jpg)
+
+**Video 5.:** Splenic B cells pre-labeled with CFSE in the cytosol were added to αM-PLB in a live imaging chamber at 37 °C with 5 % CO2 in DMEM/BSA. Images were acquired for 60 min at one frame/10 s in the presence of Ponceau 4R using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 40 × 1.4 N.A. oil objective). The arrow indicates CFSE-labeled B-cells that lost their cytosolic fluorescence as a result of PM permeabilization and Ponceau 4R influx. Time is displayed as hour: minutes: seconds. The video is displayed at 30 frames/s. Bar, 5 μm.
+
 We next determined whether HEL, a bona fide antigen recognized by the BCR from MD4 mice, also caused B-cell permeabilization when tethered to artificial surfaces or presented as an integral membrane protein (mHEL) on the surface of live cells (Batista et al., 2001). Flow cytometry analysis revealed that similar fractions of MD4 B-cells become PI-positive after binding beads coupled to αM or to HEL (Figure 3A–C). In contrast, WT B-cells binding to HEL- beads showed a low percentage of PI-positive cells, similar to what is observed with Tf-beads (Figures 1F and 3A–C). Importantly, transmembrane mHEL-GFP expressed on the surface of live COS-7 cells co-clustered with the BCR at sites of interaction with MD4 B-cells, followed by PI influx. This dramatic clustering pattern followed by permeabilization was not observed in WT B-cells, whose BCR is incapable of specifically recognizing HEL (Figure 3D and Videos 6 and 7). A significantly higher percentage of MD4 B-cells showed PI influx after interaction with COS-7 cells expressing mHEL-GFP, when compared to WT B-cells (Figure 3E). The percentage of PI-positive MD4 B-cells was also significantly higher after incubation with mHEL-expressing COS-7 cells than with mock-transfected cells (Figure 3F). Collectively, these results show that BCR binding to surface-associated antigen can cause permeabilization of the B-cell PM.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig3-v2.jpg)
 
 **Figure 3.:** (A) Flow cytometry histograms of PI FI in WT or MD4 B-cells incubated with αM- or HEL-beads for 30 min by flow cytometry, showing 1000 cells per condition. (B) Percentages of WT and MD4 B-cells binding αM- or HEL-beads. Data points represent independent experiments (mean ± SD). (C) Percentages of PI+ bead-bound WT or MD4 B-cells after 30 min incubation. Data points represent independent experiments (mean ± SD). (D) Spinning disk time-lapse images of a MD4 B-cell (left panels) and a WT B-cell (right panels) interacting with a mHEL-GFP-expressing COS-7 cell in the presence of PI (Videos 6 and 7). Arrows, clustering of mHEL-GFP during B-cell binding; arrowheads, PI entry in the B-cell. (E) Percentages of PI+ MD4 and WT B-cells interacting with COS-7 cells transfected with mHEL-GFP. (F) Percentages of PI+ MD4 B-cells interacting with COS-7 cells transfected with mHEL-GFP or mock-transfected. Data points (E and F) represent individual videos from three to four independent experiments (mean ± SD). Bars, 5 μm *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.005, unpaired Student’s t-test (E, F) or one-way ANOVA (B, C).
 
-## Antigen-induced B-cell permeabilization requires high-affinity BCR-antigen binding, BCR signaling, and NMII motor activity
+![Video 6.](https://cdn.elifesciences.org/articles/66984/elife-66984-video6.mp4.jpg)
+
+**Video 6.:** MD4 splenic B-cells were incubated with mHEL-GFP-expressing COS-7 cells cultured on fibronectin-coated coverslips at 37 °C with 5 % CO2 in DMEM/BSA. Images were acquired for 120 min at one frame/20 s in the presence of PI using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 40 × 1.3 N.A. oil objective). Shown are representative videos of XY (top) and XZ (bottom) views showing clustering of mHEL-GFP (arrows) and the intracellular influx of PI (arrowheads) at cell interacting sites. Time is displayed as minutes: seconds after the cell contacted the mHEL-GFP expressing COS cell. The video is displayed at 15 frames/s. Bar, 5 μm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/66984/elife-66984-video7.mp4.jpg)
+
+**Video 7.:** WT splenic B-cells were incubated with mHEL-GFP-expressing COS-7 cells cultured on fibronectin-coated coverslips at 37 °C with 5 % CO2 in DMEM/BSA. Images were acquired for 120 min at one frame/20 s in the presence of PI using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 40 × 1.3 N.A. oil objective). Shown are representative videos of XY (top) and XZ (bottom) views. Time is displayed as minutes: seconds after the cell contacted the mHEL-GFP expressing COS cell. The video is displayed at 15 frames/s. Bar, 5 μm.
+
+### Antigen-induced B-cell permeabilization requires high-affinity BCR-antigen binding, BCR signaling, and NMII motor activity
 
 High-affinity binding of the BCR to antigen associated with non-internalizable surfaces induces high levels of BCR signaling, cytoskeleton reorganization, and antigen endocytosis (Batista and Neuberger, 1998; Batista and Neuberger, 2000; Fleire et al., 2006). To examine the impact of the BCR-binding affinity on antigen-induced PM permeabilization, we incubated MD4 B-cells with beads coated with equal densities of HEL or the duck egg lysozyme isoform DEL-I. The MD4 BCR binds DEL-I with >100 fold lower affinity than it binds HEL (Langley et al., 2017). As expected, the percentage of B-cells binding multiple beads was reduced when the BCR-antigen affinity decreased (Figure 4—figure supplement 1A), but B-cells binding one single bead were detected for both HEL and DEL-I and also Tf (Figure 4—figure supplement 1). In these single bead-bound populations, DEL-I-beads caused significantly less PI entry than HEL-beads (Figure 4A). Inhibition of signaling with the Src kinase inhibitor PP2 (Cheng et al., 2001) (iSrc) or the Bruton’s Tyrosine Kinase inhibitor AVL-292 (Aalipour and Advani, 2013) (iBTK) (Figure 4B and C) also reduced PI entry in cells binding HEL-beads (Figure 4D). After contact with αM-PLB or αM-beads but not Tf-PLB or Tf-beads, surface BCRs became polarized toward PLB- or bead-binding sites within ~10 min, a period markedly shorter than what is required for detection of PM permeabilization through FM influx (Figure 4E–H, Figure 4—figure supplement 2, and Video 8). Importantly, the activated form of the actin motor protein NMII, detected through its phosphorylated light chain (pMLC), accumulated along with the BCR at αM-bead-binding sites (Figure 4G, Figure 4—figure supplement 3 and Video 9). The fluorescence intensity ratios (FIR) of surface BCRs and pMLC were significantly higher in B-cells binding αM-beads than in cells binding Tf-beads (Figure 4H and I). Notably, inhibition of NMII motor activity with blebbistatin (Bleb) markedly reduced the number of B-cells that became PI-positive during interaction with αM-beads, without affecting the cells’ ability to bind the beads (Figure 4J and K). Live imaging detected PI entry following a ‘tug-of-war’ between two B-cells simultaneously engaging an αM-bead (Video 3 and Figure 1—figure supplement 1C), further supporting a role for NMII-mediated traction forces in antigen-induced PM permeabilization. Thus, our results indicate that PM permeabilization caused by surface-associated antigen requires strong BCR-antigen interaction and the subsequent activation of signaling and NMII motor activity.
 
-## Antigen-induced B-cell permeabilization triggers lysosomal exocytosis as a PM repair response
+![Video 8.](https://cdn.elifesciences.org/articles/66984/elife-66984-video8.mp4.jpg)
+
+**Video 8.:** Splenic B-cells stained with anti-BCR antibodies were added to αM-PLB and imaged in a live imaging chamber at 37 °C with 5 % CO2 in DMEM/BSA. Images were acquired for 60 min at one frame/20 s in the presence of FM4-64 using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 60 × 1.4 N.A. oil objective). Top: XZ view showing BCR (green) polarization towards the αM-PLB (white arrow). Bottom: XY view showing intracellular influx of FM4-64 (red, yellow arrow). Time is displayed as minutes: seconds after the cell contacted the αM-PLB. The video is displayed at 15 frames/s. Bar, 5 μm.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig4-v2.jpg)
+
+**Figure 4.:** (A) Percentages of PI+ single bead-binding B-cells after incubation with HEL-, DEL-I- or Tf-beads (1:4 cell:bead ratio) for 30 min. Data points represent independent experiments (mean ± SD). (B) Mean fluorescence intensity (MFI) of phosphotyrosine (pY) in HEL-bead-bound B-cells treated or untreated (NT) with a Src kinase inhibitor (iSrc) by flow cytometry. Data points represent independent experiments (mean ± SD). (C) Western blot analysis of phosphorylated BTK (pBTK) and BTK in B-cells incubated with HEL-beads in the presence or absence of a BTK inhibitor (iBTK) for 30 min. (D) Percentages of PI+ HEL-bead-bound cells treated with iSrc or iBTK relative to not-treated (NT) at 30 min. Data points represent independent experiments (mean ± SD). (E) Spinning disk time-lapse images of BCR polarization (yellow arrow) in a B-cell incubated with αM-PLB in the presence of FM4-64 (white arrow, intracellular FM). (F) Timing of BCR polarization and FM entry of individual cells interacting with αM-PLB (Video 8). Data points represent individual cells in three independent experiments (mean ± SD). (G) Confocal images of BCR and phosphorylated NMII light chain (pMLC) staining in B-cells interacting with αM- or Tf-beads (arrows, bead binding sites). (H and I) FI ratio (FIR) of BCR (H) and pMLC (I) staining at the bead-binding site relative to the opposite PM in αM- and Tf-bead-bound cells over time. Data represent the averages of three independent experiments (mean ± SD). (J) Percentages of PI+ bead-binding B-cells incubated with αM-beads for 30 min with or without blebbistatin (Bleb). Data points represent individual videos from three independent experiments (mean ± SD). (K) Percentages of bead-bound B-cells incubated with αM-beads for 30 min in the presence or absence of Bleb. Data points represent independent experiments (mean ± SD). Bars, 5 μm. *p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.005, ****p ≤ 0.001, unpaired Student’s t-test (B, H, I, K) or one-way ANOVA (A, D, J).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Splenic B-cells were incubated with HEL, DEL-I or Tf-beads at the indicated cell:bead ratios for 30 min at 37 °C and analyzed by flow cytometry. (A) Representative SSC versus FSC dot plots gated for bead-bound populations. Outlined areas indicate populations of cells binding one single bead. (B) Percentages of total B-cells that bound to beads. Data points represent independent experiments (mean ± SD). (C) Percentages of bead-bound B-cells binding one single bead. Data points represent independent experiments (mean ± SD). No statistically significant differences were detected (one-way ANOVA).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Splenic B-cells stained for surface BCR (green) were incubated with Tf-PLB (top panels) or αM-PLB (bottom panels) for 60 min at 37 °C in the presence of FM4-64 (red) and imaged by live spinning disk fluorescence microscopy. (B) Percentages of B-cells with BCR polarization after incubation with Tf- or αM-PLB. Data points represent independent experiments (mean ± SD). ***p ≤ 0.005, unpaired Student’s t-test.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The images show several examples of splenic B-cells stained for surface BCRs with a Cy3-labeled Fab fragment of donkey anti-mouse IgM+G (red), incubated with αM (left, 5 examples)- or Tf (right, 5 examples)-beads, fixed, permeabilized, and stained for pMLC (magenta) and analyzed by confocal fluorescence microscopy. The arrows point to bead contact sites in B-cells. Bars, 3 μm.
+
+![Video 9.](https://cdn.elifesciences.org/articles/66984/elife-66984-video9.mp4.jpg)
+
+**Video 9.:** Shown is a 3D representation of co-polarization of the BCR (red) and pMLC (green) towards the site of αM-bead (white) binding in a splenic B-cell. Z-stack images were acquired using a Zeiss LSM710 confocal fluorescence microscope (63 × 1.4 N.A. oil objective) and the 3D reconstruction was generated using Volocity software (PerkinElmer). Bar, 3 μm.
+
+### Antigen-induced B-cell permeabilization triggers lysosomal exocytosis as a PM repair response
 
 Permeabilization with the pore-forming toxin SLO triggers exocytosis of lysosomes in mouse primary B-cells (Miller et al., 2015), a response to Ca2+ influx that is observed in several cell types and is required for the resealing of PM wounds (Reddy et al., 2001). To determine if permeabilization by surface-associated αM or HEL triggered exocytosis of lysosomes in B-cells, we first examined whether luminal epitopes of the lysosomal membrane protein LIMP-2 were exposed on the cell surface. Flow cytometry detected surface LIMP-2 in a higher percentage of B-cells binding αM-beads than in B-cells binding Tf-beads (Figure 5A and B). Notably, surface exposure of LIMP-2 was lower in MD4 B-cells binding DEL-I-beads compared to HEL-beads (Figure 5C). These results reveal a close correlation between the extent of PM permeabilization (Figure 4A) and lysosomal exocytosis induced by surface-associated αM, HEL or DEL-I (Figure 5B–C). Surface LIMP-2 was predominantly detected at sites of αM-bead binding (Figure 5D and Figure 5—figure supplement 1) and this polarized pattern, measured by FIR, increased after ~30 min of interaction with αM- but not Tf-beads (Figure 5E). Notably, this timeframe was similar to the average period required for PM permeabilization (Figure 2E). Next, we performed live total internal reflection fluorescence (TIRF) microscopy of B-cells preloaded with the luminal lysosomal probe SiR-Lyso (a membrane-permeable fluorescent peptide that binds to the lysosomal enzyme cathepsin D) while contacting αM-PLB. Exocytosis events were identified by rises in the fluorescence intensity of SiR-Lyso puncta (reflecting lysosome entry into the TIRF evanescent field adjacent to the PM) followed by sharp decreases within ~2 s (reflecting dye dispersion upon fusion of lysosomes with the PM) (Figure 5F and G, Figure 5—figure supplement 2 and Video 10). Exocytosis events were observed in the majority of individual PI-positive cells interacting with αM-PLB (Figure 5H) and occurred predominantly ~30–45 min after αM-PLB contact (Figure 5H and I), a timing similar to PM permeabilization and LIMP-2 exposure. Lysosomal exocytosis events were significantly more frequent in permeabilized B-cells when compared to B-cells that remained intact (Figure 5J). These results show that permeabilization of B-cells by surface-associated antigen triggers exocytosis of lysosomes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig5-v2.jpg)
+
+**Figure 5.:** (A) Flow cytometry analysis of surface-exposed (no detergent permeabilization) and/or intracellular LIMP-2 (with detergent permeabilization) of bead-bound B-cells after incubation with αM- or Tf-beads for 30 min, showing 3000 cells per condition. (B and C) Percentages of cells with surface-exposed LIMP-2 (relative to values with secondary antibody alone) in bead-bound B-cells incubated with αM- or Tf-beads (B) or with HEL-, DEL-I- or Tf-beads (C) for 30 min. Data points represent independent experiments (mean ± SD). (D) Confocal images of surface-exposed LIMP-2 in B-cells incubated with αM- or Tf-beads (arrows, bead-binding sites). (E) FIR (bead-binding site:opposite PM) of surface-exposed LIMP-2 in individual cells over time. Data points represent individual cells (mean ± SD). (F) Total internal reflection microscopy (TIRF) images (left) and FI surface plots (right) of SiR-Lyso at the B-cell surface contacting αM-PLB (Video 10). (G) Representative MFI versus time plot of a SiR-Lyso-loaded lysosome undergoing exocytosis. (H) SiR-Lyso exocytosis events (circles) in individual B-cells during the first 0–15 min or 25–45 min of incubation with αM-PLB. (I) Timing of individual SiR-Lyso exocytosis events in B-cells incubated with αM-PLB for 45 min. Data points represent individual SiR-Lyso exocytosis events from three independent experiments (mean ± SD). (J) Numbers of SiR-Lyso exocytosis events per B-cell permeabilized (PI+) or not permeabilized (PI-) by αM-PLB during 45 min. Data points represent individual cells from three independent experiments (mean ± SD). *p ≤ 0.05, **p ≤ 0.01, unpaired Student’s t-test (B and J) or one-way ANOVA (C and E). Bars, 5 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The images show several examples of splenic B-cells incubated with αM (left)- or Tf (right)-beads for 30 min at 37 °C, stained with LIMP-2-specific antibodies (green) at 4 °C without detergent permeabilization, followed by fixation, staining with secondary antibodies, and analysis by confocal fluorescence microscopy. Arrows, sites of bead binding on B-cells. Bar, 5 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Splenic B-cells were added to αM-PLB and imaged by TIRF at eight frames/s. Live time-lapse XY images of individual SiR-Lyso puncta (top rows), their FI surface plots (bottom rows), and MFI (plots on right) within the TIRF evanescent field over time are shown for four examples where lysosomal exocytosis occurred (A, rapid decrease in MFI, consistent with rapid dye loss upon PM fusion) or not (B, slow reduction in MFI, likely due to lysosome movement away from the PM).
+
+![Video 10.](https://cdn.elifesciences.org/articles/66984/elife-66984-video10.mp4.jpg)
+
+**Video 10.:** Splenic B-cells preloaded with SiR-Lyso were incubated with αM-PLB in a coverslip chamber at 37 °C with 5 % CO2 in DMEM/BSA for 30 min. Time-lapse images were acquired for 20 min at eight frames/s using a TIRF microscope (NIKON Eclipse Ti-E TIRF, 63 × 1.49 NA oil objective). Top: TIRF images of a lysosome appearing in the TIRF evanescent field and then rapidly losing the SiR-Lyso signal due to fusion with the B-cell PM. Bottom: FI surface plot corresponding to the video on the top. Time is displayed in seconds. The video is displayed at 15 frames/s.
+
 We next determined if B-cells were capable of resealing their PM, by using an assay involving sequential exposure to two different membrane-impermeable fluorescent dyes (Reddy et al., 2001). Resealed cells were quantified by flow cytometry as the percentage of permeabilized cells binding αM-beads (stained intracellularly with FM4-64 kept throughout the assay) that excluded the membrane-impermeable dye SYTOX Blue (added only during the last 10 min of the assay) (Figure 6A). Under these conditions, ~50 % of B-cells permeabilized by surface-associated antigen resealed their PM within the assay period (Figure 6B). Inhibition of lysosomal exocytosis with bromoenol lactone (BEL) (Fensome-Green et al., 2007; Tam et al., 2010) significantly reduced the percentage of resealed cells (Figure 6A and B). We found no evidence that the reduction in resealed cells after BEL treatment was due to toxicity of this inhibitor. B-cell populations with low forward-scatter versus side-scatter values typical of dead cells did not increase after BEL treatment (Figure 6—figure supplement 1). Exposure to BEL also did not increase the small fraction ( < 7%) of Tf-bead-binding B-cells that was permeable to SYTOX Blue (Figure 6—figure supplement 1). These data suggest that lysosomal exocytosis is required for the resealing of B-cells permeabilized by binding to surface-associated antigen. To confirm that individual antigen-permeabilized B-cells resealed, we used live imaging to visualize cells incubated with αM-PLB in the presence of SYTOX Green. PI was then added for the last 10 min of the 4 hr incubation. Time-lapse images showed that B-cells that became permeable to SYTOX Green during interaction with αM-PLB subsequently excluded PI – a direct indication that their PM resealed during the 4 hr assay period (Figure 6C and Video 11). As expected, cells that were already permeable to SYTOX Green at the beginning of the incubation (likely non-viable cells that were damaged prior to the incubation) were also permeable to PI (which causes strong quenching of the SYTOX green fluorescence upon entering cells - Figure 6C and Video 11). Interestingly, primary B-cells permeabilized during interaction with αM-beads (Figure 1A and Video 1) or αM-PLB (Figures 1H and 6C and Video 11) often displayed a shape change visualized as an increase in cell diameter, but after resealing this morphological change was gradually reversed (Figure 6C, Figure 6—figure supplement 2, Videos 11 and 12). Collectively, our results indicate that B-cell PM permeabilization by binding to surface-associated antigen is a reversible event, and that lysosomal exocytosis is required for PM resealing as previously shown for other cell types (Andrews et al., 2014).
 
-## B-cell permeabilization and lysosomal exocytosis facilitate internalization and presentation of surface-associated antigen
+![Figure 6.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig6-v2.jpg)
+
+**Figure 6.:** (A) B-cells were incubated with αM-beads and permeabilized/resealed cells were assessed by flow cytometry of FM4-64 (added from the start) and SYTOX Blue (added in the last 10 min) FI, in the presence or absence of BEL. (B) Percentages of permeabilized αM-bead-bound cells that resealed in the presence or absence of BEL. Data points represent independent experiments (mean ± SD). (C) Time-lapse images of splenic B-cells incubated with αM-PLB in the presence of SYTOX Green. PI was added for 10 min at the end (Video 11). Arrows, cells that became permeabilized after contacting the αM-PLB and later excluded PI; arrowhead, cell that was SYTOX + since the start of the video and did not exclude PI. *p ≤ 0.05, unpaired Student’s t-test (B). Bar, 5 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Splenic B-cells were pretreated or not with BEL and incubated with αM-beads in the presence of FM4-64 and analyzed by flow cytometry. (A) Representative dot plots of side scatter (SSC) versus forward scatter (FSC) of B-cells incubated with αM-beads. Outlined areas indicate the low SSC/FSC populations that correspond to dead cells. (B) Percentage of low SSC/FSC B-cells incubated with αM-beads treated or not with BEL. Data points represent independent experiments (mean ± SD). (C) Representative dot plots of side scatter (SSC) versus forward scatter (FSC) of B-cells incubated with Tf-beads in the presence of SYTOX Blue throughout the experiment (30 min) or only in the last 5 min. Outlined areas indicate B-cell populations binding Tf beads. (D) Percentages of SYTOX Blue-positive (+) Tf-bead-bound cells. Data points represent independent experiments (mean ± SD). No statistically significant differences were detected (Student’s t-test).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Spinning disk time-lapse images of B-cells interacting with αM-PLB in the presence of PI (red). The dashed line indicates the maximum cell diameter initially reached by a B-cell that became permeabilized, allowing PI influx (Video 12). The later frames indicate that the cell gradually recovers its original morphology. Bars, 5 μm.
+
+![Video 11.](https://cdn.elifesciences.org/articles/66984/elife-66984-video11.mp4.jpg)
+
+**Video 11.:** Splenic B-cells were added to αM-PLB and imaged in a live imaging chamber at 37 °C with 5 % CO2 in DMEM 2 % of FBS in the presence of SYTOX Green (green). Images were acquired for 4 hr at one frame/30 s using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 60 × 1.4 N.A. oil objective). PI (red) was added for 10 min at the end of the time-lapse image acquisition. The video is displayed as minutes: seconds after the cell contacted the αM-PLB. White arrows indicate cells that became permeabilized and later excluded PI. The yellow arrow indicates a cell that was stained by SYTOX Green since the beginning of the video and was not able to exclude PI. The video is displayed at 20 frames/s. Bar, 5 μm.
+
+![Video 12.](https://cdn.elifesciences.org/articles/66984/elife-66984-video12.mp4.jpg)
+
+**Video 12.:** Splenic B-cells were added to αM-PLB and imaged in a live imaging chamber at 37 °C with 5 % CO2 in DMEM without phenol red containing 2 % FBS in the presence of PI (red). Images were acquired for 4 hr at one frame/30 s using a spinning disk fluorescence microscope (UltraVIEW VoX, PerkinElmer with a 60 × 1.4 N.A. oil objective). Time is displayed as minutes: seconds after the cells first contacted the αM-PLB. The arrow points to a cell that became permeabilized. The dashed line indicates the maximum diameter of the B-cell after permeabilization. The video is displayed at 20 frames/s. Bar, 5 μm.
+
+### B-cell permeabilization and lysosomal exocytosis facilitate internalization and presentation of surface-associated antigen
 
 We investigated the relationship between PM permeabilization by surface-associated antigen and antigen internalization using fluorescent αM covalently bound to beads or tethered to PLB. Live imaging detected αM puncta moving away from bead-binding sites into B-cells, increasing progressively between 30 and 60 min of interaction (Figure 7A and B and Video 13). In contrast, intracellular fluorescent puncta were markedly less abundant during the same time period in cells not binding αM-beads, or binding Tf-beads (Figure 7B). Inhibition of antigen-mediated PM permeabilization with blebbistatin significantly reduced extraction and internalization of αM coupled to beads (Figure 7C). When similar experiments were performed with PLB, the fraction of cells containing internalized αM and the total amount of αM uptake were significantly higher in permeabilized cells with high levels of intracellular FM staining (FM-high), compared to non-permeabilized cells with low FM staining (FM-low) (Figure 7D–F). These data suggest that αM-induced PM permeabilization, rapidly followed by lysosomal exocytosis, promotes extraction and internalization of αM from non-internalizable surfaces.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66984/elife-66984-fig7-v2.jpg)
 
 **Figure 7.:** (A) Confocal live imaging of a B-cell interacting with fluorescent αM-beads (arrows, internalized αM). (B) Percentages of cells containing internalized αM or Tf, bound or not to αM- or Tf-beads, over time. Data points represent individual fields in three independent experiments (mean ± SD). (C) Percentages of bead-bound B-cells with internalized αM in the presence or absence of Bleb after 60 min. Data points represent individual fields in four independent experiments (mean ± SD). (D) Confocal images (xz) of αM internalization in B-cells permeabilized (FM-high) or not permeabilized (FM-low) by αM-PLB after 60 min. (E) Percentages of B-cells, permeabilized (FM-high) or not permeabilized (FM-low) by αM-PLB, containing internalized αM over time. Data points represent individual fields in three independent experiments (mean ± SD). (F) MFI values of internalized αM in individual B-cells permeabilized (FM-high) or not (FM-low) by αM-PLB over time. Data points represent independent experiments (mean ± SD). (G) IL-2 secretion by 3A9 T-cells activated by B-cells incubated with or without (no Ag) soluble HEL or DEL-I (10 µg/ml) for 72 hr. Data points represent independent experiments (mean ± SD). (H) IL-2 secretion by 3A9 T-cells activated by B-cells incubated with or without HEL-, DEL-I- or Tf-beads (1:4 cell:bead ratio) for 72 hr. Bars, 5 μm. Data points represent independent experiments (mean ± SD). *p ≤ 0.05, **p ≤ 0.01, **p ≤ 0.005, ****p ≤ 0.0001, unpaired Student’s t-test (C, E, F), one-way ANOVA (G and H) or Kruskal-Wallis non-parametric test (B). (I) Cartoon depicting a working model for the spatiotemporal relationship of events initiated by the interaction of the BCR with surface-associated antigen. High-affinity binding stabilizes BCR-antigen interaction and induces strong BCR signaling (1) and NMII activation (2). Activated NMII generates local traction forces that permeabilize the PM (3), triggering a localized PM repair response mediated by lysosomal exocytosis. Lysosome exocytosis releases hydrolases that cleave antigen off surfaces (4), facilitating endocytosis (5) and presentation to T-cells (6).
+
+![Video 13.](https://cdn.elifesciences.org/articles/66984/elife-66984-video13.mp4.jpg)
+
+**Video 13.:** The surface BCRs of splenic B-cells were labeled with Cy3-Fab-donkey anti-mouse IgM+ G at 4 °C. Labeled B-cells were incubated with AF488-αM-beads at 37 °C with 5 % CO2 for 60 min and then fixed. Images were acquired using a Zeiss LSM710 (63 × 1.4 N.A. oil objective), and the 3D reconstruction was generated with Volocity software (PerkinElmer). The arrow points to internalized AF488-αM.
 
 Next, we investigated whether antigen internalization enhanced by PM permeabilization and lysosomal exocytosis impacts antigen presentation by B-cells. We compared levels of IL-2 secretion by the 3A9 T-cell hybridoma line (Allen and Unanue, 1984) after activation by B-cells exposed to HEL- or DEL-I-beads. B-cells exposed to high concentrations of soluble HEL or DEL-I induced similar levels of IL-2 secretion (Figure 7G), demonstrating that the primary B-cells used in these assays could process and present the conserved peptide present in both HEL and DEL-I for T-cell activation. In contrast, when the B-cells were exposed to lower amounts of surface-associated antigens, B-cells exposed to HEL-beads activated T-cells to produce IL-2 at markedly higher levels than cells exposed to DEL-I-beads (Figure 7H). These results indicate that B-cell permeabilization resulting from high-affinity antigen-BCR interaction, with its corresponding lysosomal exocytosis response, facilitates the presentation of antigen associated with non-internalizable surfaces.
 
@@ -97,29 +217,438 @@ Collectively, our results provide important insights into the spatiotemporal rel
 
 ## Materials and methods
 
-## Mice, B-cell isolation, and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>A20</td>
+      <td>ATCC</td>
+      <td>TIB-208</td>
+      <td>B-cell lymphoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>3A9</td>
+      <td>ATCC</td>
+      <td>CRL-3293</td>
+      <td>T-cell hybridoma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>CRL-1651</td>
+      <td>Kidney fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>WT (C57BL/6)</td>
+      <td>Jackson Laboratories</td>
+      <td>000664</td>
+      <td>Primary B-cells freshly isolated from C57BL/6’ spleen</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>MD4 (C57BL/6-Tg (IghelMD4)4Ccg/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>002595</td>
+      <td>Primary B-cells freshly isolated from C57BL/6-Tg (IghelMD4)4Ccg/J’s spleen</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>B10.BR-H2K2 H2-T18a/ SgSnJJrep</td>
+      <td>Jackson Laboratories</td>
+      <td>004804</td>
+      <td>Primary B-cells freshly isolated from B10.BR-H2K2 H2-T18a/ SgSnJJrep’s spleen</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphotyrosine mAb 4G10 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>05–321</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488-anti-mouse IgG2b (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21141</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF647-anti-goat IgG (H + L) (donkey polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21447</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase-3 (Asp175) (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9661T</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy5-Fab anti-mouse IgG (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-175-151</td>
+      <td>5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488-anti-rabbit IgG (H + L) highly cross-adsorbed secondary antibody (donkey polyclonal)</td>
+      <td>Thermo FisherScientific</td>
+      <td>A-21206</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BTK (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>8,547</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-BTK (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>68,217</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-anti-rabbit (goat polyclonal)</td>
+      <td>Jackson Immune Research</td>
+      <td>111-035-144</td>
+      <td>1:1,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-Fab-anti–mouse IgM+ G (goat polyclonal)</td>
+      <td>Jackson Immune Research</td>
+      <td>115-165-166</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phosphorylated myosin light chain (pMLC) (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3,671 S</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF633-anti-rabbit IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A-21070</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LIMP-2 (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>SAB3500449-100UG</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488 donkey-anti-rabbit IgG (donkey polyclonal)</td>
+      <td>Life technology</td>
+      <td>A32790</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD90.2 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>105,310</td>
+      <td>1 µl/ 2 × 106 cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>αM (F(ab’)2 goat-anti-mouse IgM+ G) (goat polyclonal)</td>
+      <td>Jackson Immune Research</td>
+      <td>115-006-068</td>
+      <td>Binds to BCR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488-αMAffiniPure F(ab')₂ fragments of anti- mouse IgG (H + L) (goat polyclonal)</td>
+      <td>Jackson Immune Research</td>
+      <td>115-546-003</td>
+      <td>Binds to BCR</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-SP (long spacer)-conjugated Fab fragments of anti-mouse IgG (H + L) (goat polyclonal)</td>
+      <td>Jackson Immune Research</td>
+      <td>115-067-003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SiR-Lysosome and Verapamil</td>
+      <td>Cytoskeleton</td>
+      <td>CY-SC012</td>
+      <td>Lysosome probe1 µM and 10 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-2 ELISA kit</td>
+      <td>Biolegend</td>
+      <td>431,804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23,235</td>
+      <td>Protein measurement during bead preparation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity Suite</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td>https://ir.perkinelmer.com/news-releases/news-release details/perkinelmer-launches-volocityr-60-high-performance-3d-cellular</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIH Image J</td>
+      <td>NIH</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>Abcam</td>
+      <td>120,056</td>
+      <td>Apoptosis induction(1 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PP2</td>
+      <td>Millipore-Sigma</td>
+      <td>529,573</td>
+      <td>Src kinase inhibitor(5 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AVL-292</td>
+      <td>Selleckchem</td>
+      <td>S7173</td>
+      <td>BTK inhibitor(10 nM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BEL (Bromoenol lactone)</td>
+      <td>Sigma-Aldrich</td>
+      <td>B1552</td>
+      <td>12 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>B0560</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latex NH2-beads</td>
+      <td>Polysciences</td>
+      <td>17145–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEL (hen egg lysozyme)</td>
+      <td>Sigma-Aldrich</td>
+      <td>L6876</td>
+      <td>Binds to BCR from MD4 mice</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DEL-1 (duck egg lysozyme)</td>
+      <td>David B. Langley and Daniel Christ laboratory</td>
+      <td></td>
+      <td>Binds to BCR from MD4 mice</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tf (holo- transferrin)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T0665-50MG</td>
+      <td>Binds to transferrin receptor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotinylated transferrin (Tf-PLB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3915-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin-conjugated Yellow-Green latex beads</td>
+      <td>Polysciences</td>
+      <td>24159–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4170-10MG</td>
+      <td>50 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FM1-43FX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>F35355</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FM4-64FX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>F34653</td>
+      <td>10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYTOX Blue</td>
+      <td>Invitrogen</td>
+      <td>S11348</td>
+      <td>300 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYTOX Green</td>
+      <td>Invitrogen</td>
+      <td>S7020</td>
+      <td>300 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guinea pig complement</td>
+      <td>Innovative Research</td>
+      <td>IGGPCSER</td>
+      <td>100 µl/ 4 × 107 cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphocholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850375 P</td>
+      <td>5 mM (PLB)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3- phosphoethanolamine-cap-biotin</td>
+      <td>Avanti Polar Lipids</td>
+      <td>870273 C</td>
+      <td>50 µM (PLB)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ponceau 4R</td>
+      <td>Sigma-Aldrich</td>
+      <td>18,137</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CFSE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C34553</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3,000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine fibronectin</td>
+      <td>Millipore</td>
+      <td>341,631</td>
+      <td>5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AF88-Tf (transferrin from human serum, Alexa Fluor 488 conjugate)</td>
+      <td>Thermo Fisher Scientifc</td>
+      <td>T13342</td>
+      <td>Binds to transferrin receptor</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Cercopithecus aethiops)</td>
+      <td>mHEL-GFP</td>
+      <td>Michael R. Gold laboratory</td>
+      <td>Wang et al., 2018a (DOI: 10.1007/978-1-4939-7474-0_10)</td>
+      <td>Wild-type HEL protein, the complete EGFP protein, the transmembrane region of H-2Kb, and the 23-amino acid cytoplasmic domain of H-2Kb</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice, B-cell isolation, and culture
 
 Primary B-cells were isolated from the spleens of wild-type C57BL/6, MD4 transgenic (C57BL/6 background), B10.BR-H2k2 H2-T18a/SgSnJJrep (Jackson Laboratories), and F1 of B10.BR-H2k2 H2-T18a/SgSnJJrep x MD4 mice using a previously published protocol (Miller et al., 2015). Briefly, mononuclear cells were isolated by Ficoll density-gradient centrifugation (Sigma-Aldrich). T-cells were removed with anti-mouse CD90.2 mAb (BD Biosciences) and guinea pig complement (Innovative Research, Inc) and monocytes and dendritic cells by panning. B-cells were kept at 37 °C and 5 % CO2 before and during experiments. All procedures involving mice were approved by the Institutional Animal Care and Usage Committee of the University of Maryland.
 
 The A20 B-cell lymphoma line (ATCC #TIB-208) was cultured in DMEM (Lonza) supplemented with 10 % of FBS (Thermo Fisher Scientific), 0.05 mM 2-mercaptoethanol (Sigma-Aldrich), 10 mM MOPS, 100 units/ml penicillin, and 100 µg/ml streptomycin (Gemini) at 37 °C and 5 % CO2. The 3A9 T-cell hybridoma line (ATCC #CRL-3293) was cultured in DMEM (ATCC) supplemented with 5 % FBS (Thermo Fisher Scientific), 0.05 mM 2-mercaptoethanol (Sigma-Aldrich) at 37 °C and 5 % CO2. ATCC follows the highest manufacturing standards and uses the most reliable procedures to verify and authenticate every cell line and to ensure there is no mycoplasma contamination.
 
-## Antigen-coated beads
+### Antigen-coated beads
 
 Latex NH2-beads (3 μm diameter, 3.5 × 108 beads/preparation, Polysciences) were activated with 8 % glutaraldehyde in 0.5 ml PBS for 120 min under rotation at room temperature, washed with PBS, and incubated overnight with equal molar amounts of F(ab’)2 goat-anti-mouse IgM+ G (αM, 20 μg/ml, Jackson ImmunoResearch Laboratories), hen egg lysozyme (HEL, 5.8 μg/ml, Sigma-Aldrich), duck egg lysozyme (DEL)-I (Langley et al., 2017), holo-transferrin (Tf, 32 μg/ml, Sigma-Aldrich), Alexa Fluor (AF) 488-conjugated Tf (AF488-Tf, 32 μg/ml, Thermo Fisher Scientific), or AF488-F(ab’)2 goat-anti-mouse IgM+ G (AF488-αM, 20 μg/ml, Jackson ImmunoResearch Laboratories) in 1 ml PBS. Protein content determination (BCA, Thermo Fisher Scientific) of coupling solutions before and after bead incubation confirmed that similar molar amounts of protein were conjugated in each case. The beads were then blocked with PBS 1 % BSA for 30 min under rotation, washed to remove unconjugated proteins, counted in a Neubauer chamber and stored at 4 °C in PBS containing 1 % BSA and 5 % glycerol. Streptavidin-conjugated Yellow-Green latex beads (2 μm diameter, 5 × 108 beads/preparation, Polysciences) were washed with 1 % BSA in PBS and incubated with Biotin-SP (long spacer)-conjugated Fab fragments of goat-anti-mouse IgG (H + L) (40 μg of biotinylated antibody/mg of beads, Jackson ImmunoResearch Laboratories) for 30 min at 4 °C, washed, counted in a Neubauer chamber and stored at 4 °C in PBS containing 1 % BSA and 5 % glycerol.
 
-## Antigen-coated planar lipid bilayers (PLB)
+### Antigen-coated planar lipid bilayers (PLB)
 
 PLB were prepared as previously described (Dustin et al., 2007; Liu et al., 2012; Spillane and Tolar, 2017). Briefly, liposomes were generated from 5 mM 1,2-dioleoyl-sn-glycero-3-phosphocholine plus 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-cap-biotin (Avanti Polar Lipids) at a 100:1 molar ratio by sonication. Eight-well coverslip chambers (Lab-Tek) were incubated with liposomes for 20 min at room temperature and washed with PBS. The chambers were then incubated with 1 μg/ml streptavidin (Jackson ImmunoResearch Laboratories) for 10 min, washed, and incubated with 10 μg/ml mono-biotinylated Fab’ goat-anti-IgM+ G (αM-PLB) (Liu et al., 2012) or the same molar amount of biotinylated Tf (16 μg/ml, Sigma-Aldrich) (Tf-PLB) for 10 min at room temperature.
 
-## COS-7 cells expressing membrane hen egg lysozyme-GFP (MHEL-GFP)
+### COS-7 cells expressing membrane hen egg lysozyme-GFP (MHEL-GFP)
 
 COS-7 cells were transiently transfected with mHEL-GFP (Batista et al., 2001) (plasmid kindly provided by Dr. Michael Gold, University of British Columbia) using Lipofectamine 3000 (Thermo Fisher Scientific) and a published protocol (Wang et al., 2018a), and used for experiments 24 hr post-transfection.
 
-## Flow cytometry analysis of PM permeabilization
+### Flow cytometry analysis of PM permeabilization
 
 Mouse splenic B-cells were incubated with beads coated with αM, HEL, DEL-I or Tf in DMEM containing 6 mg/ml BSA (DMEM-BSA) at a cell:bead ratio of 1:2 (or as indicated), or with soluble F(ab’)2 goat-anti-mouse IgM+ G (sαM, 0.5 μg/ml) for 30 min at 37 °C with 5 % CO2. Propidium iodide (PI, Sigma-Aldrich) was present during the 37 °C incubation as an indicator of PM permeabilization. Cells were then analyzed by flow cytometry (BD FACSCanto II) at 10,000 cell counts/sample. Bead-bound cells were identified based on their forward- (FSC) and side-scatter (SSC) properties and on fluorescence intensity (FI) when using fluorescent beads (Figure 1—figure supplement 2). The percentages of PI-positive (PI+) cells among the bead-bound cell populations were quantified using FlowJo 10.1 software.
 
-## Live cell imaging of PM permeabilization
+### Live cell imaging of PM permeabilization
 
 To assess PM permeabilization by protein-coated beads, mouse splenic B-cells or a B-cell line (A20) were incubated for 30 min at 4 °C in 35 mm glass-bottom dishes (MatTek) coated with poly-lysine and then with protein-coated beads at a cell:bead ratio of 1:2 for another 30 min at 4 °C. Cells were washed with DMEM-BSA and imaged in a Live Cell System chamber (Pathology Devices) at 37 °C with 5 % CO2 in the presence of 50 μg/ml PI (Sigma-Aldrich) with or without 50 µM blebbistatin (Sigma-Aldrich). Images were acquired for 60 min at one frame/15–30 s using a spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective). Images were analyzed using Volocity Suite (PerkinElmer) and NIH ImageJ. More than 200 cells from three independent experiments were analyzed for each condition.
 
@@ -129,11 +658,11 @@ PM permeabilization was also assessed using Ponceau 4R-mediated quenching of a c
 
 To assess the ability of antigen exposed on the surface of mammalian cells to permeabilize B-cells, COS-7 cells mock-transfected or transfected with mHEL-GFP were seeded on fibronectin-coated coverslips and cultured for 24 hr. WT or MD4 B-cells pre-stained with AF674-conjugated Fab fragments of donkey-anti–mouse IgM+ G (Jackson ImmunoResearch Laboratories) were then added to the COS-7 cells in the presence of 50 μg/ml PI and imaged immediately at 37 °C with 5 % CO2 using a spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer with a 40 × 1.3 N.A. oil objective). Images were acquired at one frame/20 s and analyzed using NIH ImageJ software. More than 240 cells from three independent experiments were analyzed for each condition.
 
-## Cleaved caspase-3 detection
+### Cleaved caspase-3 detection
 
 Splenic B-cells were pretreated or not with 1 µM staurosporine (Abcam) for 24 hr at 37 °C in DMEM-BSA to induce apoptosis (Diaz et al., 2004), exposed to αM- or Tf-beads for 30 min at 37 °C, washed, fixed with 4 % paraformaldehyde (PFA), blocked with 1 % BSA, and permeabilized with 0.05 % saponin. Cells were then incubated with antibodies specific for cleaved caspase-3 (Asp175) (Cell Signaling Technology) followed by AF488 donkey-anti-rabbit IgG (Life Technologies) and analyzed by flow cytometry (BD FACSCanto II) at 10,000 cell counts/sample. The percentages of cells with cleaved caspase-3 staining were determined using FlowJo 10.1 software.
 
-## BCR signaling
+### BCR signaling
 
 BCR signaling was analyzed using both flow cytometry and western blotting. For flow cytometry assays, splenic B-cells from MD4 mice were pretreated or not with 5 μM of the Src kinase inhibitor PP2 (Millipore) (Cheng et al., 2001) for 30 min at 37 °C (conditions selected not to cause B-cell toxicity) and then incubated with HEL-beads in the presence or not of the inhibitor at 37 °C for 30 min. Cells were fixed with 4 % PFA, permeabilized with 0.05 % saponin, incubated with mouse anti-phosphotyrosine mAb (4G10, Millipore) followed by AF488-goat-anti-mouse IgG2b (Thermo Fisher Scientific) secondary antibodies, and analyzed by flow cytometry (BD FACSCanto II) at 10,000 cell counts/sample. The data were analyzed using FlowJo 10.1 software.
 
@@ -141,35 +670,35 @@ For western blot assays, splenic B-cells from MD4 mice were pretreated or not wi
 
 To check if signaling affected PM permeabilization, splenic B-cells from MD4 mice were pretreated or not with 5 μM PP2 (Cheng et al., 2001) or 10 nM AVL-292 (Aalipour and Advani, 2013) for 30 min at 37 °C and then incubated with HEL-beads in the presence or not of the inhibitor and 50 μg/ml PI (Sigma-Aldrich) at 37 °C for 30 min. The percentage of PI+ cells was expressed relative to the untreated condition.
 
-## BCR and NMII polarization
+### BCR and NMII polarization
 
 BCRs on the surface of mouse splenic B-cells were stained with Cy3-Fab donkey-anti–mouse IgM+ G (Jackson ImmunoResearch Laboratories) for 30 min at 4 °C. Cells were then incubated with αM- or Tf-beads at 4 °C for 30 min and 37 °C for different lengths of time. Cells were fixed with 4 % PFA, permeabilized with 0.05 % saponin, and incubated with rabbit anti-phosphorylated myosin light chain 2 (pMLC2) antibodies (Cell Signaling Technology) to label activated NMII (Bresnick, 1999), followed by AF633-goat-anti-rabbit IgG (Invitrogen). Cells were analyzed by confocal fluorescence microscopy (Zeiss LSM710 with a 63 × 1.4 N.A. oil objective). The percentages of cells with polarization of surface labeled BCRs and activated NMII towards bead-binding sites were quantified by visual inspection. More than 300 cells from three independent experiments were analyzed for each condition.
 
-## PM repair assays
+### PM repair assays
 
 Mouse splenic B-cells were pretreated or not with 12 μM bromoenol lactone (BEL, Sigma-Aldrich) in DMEM-BSA for 30 min at 37 °C before and during assays, to inhibit lysosomal exocytosis and PM repair (Fensome-Green et al., 2007). Cells were then incubated with αM-beads (1:2 cell:bead ratio) with or without inhibitors at 4 °C for 5 min and 37 °C for 30 min in the presence of FM4-64FX (Thermo Fisher Scientific) to stain wounded cells. Cells were then incubated with SYTOX Blue nucleic acid stain (300 nM, Invitrogen) at 4 °C for 10 min to stain cells that failed to repair PM wounds during the 30 min incubation. Cells were analyzed by flow cytometry (BD FACSCanto II) at 10,000 cell counts/sample. Cells that were FM4-64FX positive but SYTOX Blue negative were identified as permeabilized cells that resealed. The percentages of resealed cells among all bead-bound permeabilized cells were quantified using FlowJo 10.1 software.
 
 To assess the resealing capacity of B-cells permeabilized by ligand-coated PLB using live cell imaging, splenic B-cells were incubated with SYTOX Green (Thermo Fisher Scientific) in DMEM-BSA for 5 min at 4 °C and added to coverslip chambers containing mono-biotinylated Fab’ goat-anti-IgM+ G or biotinylated Tf tethered to PLB. Cells were imaged at one frame/30 s for 4 hr at 37 °C with 5 % CO2 using a spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective), followed by addition of 50 μg/ml PI (Thermo Fisher Scientific) at the end of the assay and final image acquisition.
 
-## BCR polarization in relation to permeabilization
+### BCR polarization in relation to permeabilization
 
 Surface BCRs of splenic B-cells were labeled with Cy5-Fab donkey-anti mouse IgG (Jackson ImmunoResearch) at 4 °C for 30 min. Cells were incubated with αM-PLB in the presence of FM 4–64 FX (Thermo Fisher Scientific) and imaged immediately at 37 °C with 5 % CO2 using a spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer with a 60 × 1.4 N.A. oil objective). Images were acquired at one frame/20 s for 60 min and analyzed using a custom-made MATLAB script (MathWorks) and NIH ImageJ software. BCR polarization was analyzed using maximal projection of XZ images and quantified by the MFI ratio between defined regions within the bottom half (closer to PLB) and the top half (away from PLB) of individual cells. Cells with bottom to top ratios ≥ 2 were considered polarized. More than 20 cells from three independent experiments were analyzed.
 
-## Lysosome exocytosis
+### Lysosome exocytosis
 
 To detect LIMP-2 exposed on the cell surface, splenic B-cells (C57BL/6 or MD4) were incubated with αM-, HEL-, DEL-I or Tf-beads for 30 min at 37 °C, cooled to 4 °C, and incubated with rabbit-anti-LIMP-2 antibodies (Sigma-Aldrich) for 60 min at 4 °C. Cells were then washed and fixed with 4 % PFA, washed, blocked with 1 % BSA in PBS and incubated with AF488 donkey-anti-rabbit IgG (Life Technologies) secondary antibodies. For intracellular LIMP-2 staining, B-cells were fixed with 4 % PFA, washed, permeabilized with 0.05 % saponin for 20 min, and incubated with rabbit anti-LIMP-2 antibodies followed by AF488 donkey-anti-rabbit IgG. Flow cytometry (BD FACSCanto II) was performed at 10,000 cell counts/sample. Cells were also analyzed by confocal fluorescence microscopy (Leica SPX5 with a 63 × 1.4 N.A. oil objective). Polarization of LIMP-2 toward bound beads was quantified by calculating the fluorescence intensity ratio (FIR) of anti-LIMP-2 at the B-cell-bead contact site relative to the opposite side of the cell PM, using NIH ImageJ and a custom-made MATLAB script (MathWorks).
 
 Individual events of lysosome exocytosis were captured using total internal reflection fluorescence (TIRF). Splenic B-cells were preloaded with SiR-Lysosome (1 µM, Cytoskeleton) in the presence of verapamil (10 µM, Cytoskeleton) for 30 min at 37 °C. Cells were added to coverslip chambers containing mono-biotinylated Fab’ goat anti-IgM+ G tethered to PLB and imaged at 37 °C with 5 % CO2 in the presence of PI (50 µg/ml, Sigma-Aldrich) using a TIRF microscope (NIKON Eclipse Ti-E TIRF, 63 × 1.49 NA oil objective). Images were acquired at eight frames/s during 15–20 min intervals of the 45 min incubation and analyzed using NIH ImageJ and Nikon NIS Elements software. Increases in the FI of individual SiR-Lysosome puncta (reflecting lysosome movement within the TIRF evanescent field toward the PM in contact with PLB) followed by sharp decreases within a period of 1–2 s (corresponding to a loss of the SiR-Lysosome signal upon PM fusion) were scored as exocytosis events (Jaiswal et al., 2002). More than 20 cells were analyzed in four independent experiments.
 
-## FM endocytosis after BCR crosslinking
+### FM endocytosis after BCR crosslinking
 
 Mouse splenic B-cells were incubated with F(ab’)2 goat-anti-mouse IgM+ G (10 μg/ml, Jackson ImmunoResearch Laboratories) for 10 min, followed by AF674-conjugated donkey-anti-goat (10 μg/ml, Invitrogen) for 30 min at 4 °C in coverslip chambers, to label and crosslink surface BCRs. FM1-43FX (10 µg/ml, Thermo Fisher Scientific) was added at the last 5 min of the 30 min incubation at 4 °C. Cells were washed and imaged at 37 °C with 5 % CO2 in the presence of 50 μg/ml PI and 10 µg/ml FM1-43FX using a spinning disk confocal microscope (UltraVIEW VoX, PerkinElmer with a 63 × 1.4 N.A. oil objective). Images were acquired at one frame/30 s for 60 min and analyzed using Volocity (PerkinElmer).
 
-## Assessment of BEL toxicity
+### Assessment of BEL toxicity
 
 Mouse splenic B-cells were pre-treated or not with 12 μM bromoenol lactone (BEL, Sigma-Aldrich) in DMEM-BSA for 30 min at 37 °C and then incubated with Tf-beads (1:2 cell-bead ratio) with or without the inhibitors at 37 °C for 30 min in the presence of SYTOX Blue (300 nM, Invitrogen). Cells were analyzed by flow cytometry (BD FACSCanto II) at 10,000 cell counts/sample. Bead-bound cells and SYTOX-Blue-positive cells were gated. The percentages of SYTOX Blue positive cells among all bead-bound permeabilized cells were quantified using FlowJo 10.1 software.
 
-## Antigen internalization
+### Antigen internalization
 
 For live imaging of antigen internalization, splenic B-cells were incubated with AF488-αM-beads (1:4 cell:bead ratio) in the presence of 1 μM SiR-Lysosome and 10 μM verapamil for 30 min at 4 °C, washed with DMEM-BSA and imaged by confocal fluorescence microscopy (Leica SPX5 with a 63 × 1.4 N.A. oil objective) for 60 min at one frame/min at 37 °C. Live time-lapse images were analyzed using NIH ImageJ.
 
@@ -177,10 +706,10 @@ For fixed cell imaging, splenic B-cells were pretreated or not with 50 µM blebb
 
 For live imaging of B-cells interacting with PLB, mouse splenic B-cells were added to coverslip chambers containing PLB coated with AF488-conjugated mono-biotinylated Fab’ goat-anti-mouse IgM+ G and incubated at 37 °C with 5 % CO2 in the presence of 10 µg/ml FM 4–64 FX (Thermo Fisher Scientific) for varying lengths of time. Samples were then moved to 4 °C for 5 min and immediately imaged using a confocal microscope (Leica SPX5 with a 63 × 1.4 N.A. oil objective). Internalization of antigen was quantified by determining the percentages of cells with intracellularly-located AF488-Fab’ goat-anti-mouse IgM+ G puncta in each field and by measuring the AF488 FI associated with intracellular puncta in individual cells, using a custom-made MATLAB (MathWorks) script. Cells with high FM staining were identified as wounded and those with low FM staining as unwounded. More than 15 fields or ~90 cells from three independent experiments (high or low FM staining) were analyzed for each condition.
 
-## Antigen presentation and T-cell activation
+### Antigen presentation and T-cell activation
 
 To detect antigen presentation to T-cells, splenic B-cells from F1 mice of a crossing between B10.BR-H2k2 H2-T18a/SgSnJJrep and MD4 mice were co-cultured with 3A9 T-cell hybridoma cells (ATCC CRL-3293) at equal concentrations (3.75 × 106 cells/ml). Cells were incubated in DMEM supplemented with 5 % FBS and 0.05 mM 2-mercaptoethanol for 72 hr in the presence or not of soluble HEL or DEL-I (10 µg/ml), or of beads coated with HEL, DEL-I or Tf (1:4 cell: bead ratio). After incubation, the concentration of IL-2 in the supernatant was measured using an IL-2 ELISA kit (Biolegend).
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was assessed using unpaired, two-tailed Student’s t-tests (Prism - GraphPad software) when only two groups were compared, and one-way ANOVA (parametric) or Kruskal-Wallis (non-parametric) when three or more groups were compared. All data were presented as the mean ± SD (standard deviation).

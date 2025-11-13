@@ -88,9 +88,7 @@ We agree that the CD95-induced conformational changes are E-selectin-dependent. 
 
 B) Additionally in Figure 4F the cells stained with DAPI do not seem to exhibit a multi-lobed nucleus. Have these HL-60 cells truly been differentiated into PMN like cells? Additionally, the authors do not quantify F-actin concentration per cell. Based on the images provided I would say cells presented with CD95L have more phalloidin binding. This would imply a greater amount of actin polymerization and could help further the authors' claims.
 
-In this study, HL-60 cells were allowed to differentiate in presence of 1.3% DMSO for 6 days before used. The DAPI staining pictures in Figure 4F were derived from maximal projections of multi stacks pictures, therefore they lost some information of the nucleus morphology. The following pictures show the selected stacks of DAPI staining for cells showed in Figure 4F. The nucleuses are non-spherical and exhibit as lobed structure.10.7554/eLife.18542.014Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18542.014
-
-DOI: http://dx.doi.org/10.7554/eLife.18542.014
+In this study, HL-60 cells were allowed to differentiate in presence of 1.3% DMSO for 6 days before used. The DAPI staining pictures in Figure 4F were derived from maximal projections of multi stacks pictures, therefore they lost some information of the nucleus morphology. The following pictures show the selected stacks of DAPI staining for cells showed in Figure 4F. The nucleuses are non-spherical and exhibit as lobed structure.10.7554/eLife.18542.014Author response image 1.
 
 It is a great idea to quantify the F-actin polymerization in control and CD95L-treated cells, since it further supports the data showing activation of integrin upon CD95L treatment. There was more phalloidin binding in CD95L-treated cells as compared to control cells, however it is not significantly different with the limited number of cells we examined (see revised Figure 4—figure supplement 1H and also subsection “CD95 recruits and associates with integrin”, first paragraph).
 

@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.31153.001 A highly evolved RNA polymerase ribozyme was found to also be capable of functioning as a reverse transcriptase, an activity that has never been demonstrated before for RNA. This activity is thought to have been crucial for the transition from RNA to DNA genomes during the early history of life on Earth, when it similarly could have arisen as a secondary function of an RNA-dependent RNA polymerase. The reverse transcriptase ribozyme can incorporate all four dNTPs and can generate products containing up to 32 deoxynucleotides. It is likely that this activity could be improved through evolution, ultimately enabling the synthesis of complete DNA genomes. DNA is much more stable compared to RNA and thus provides a larger and more secure repository for genetic information.
+A highly evolved RNA polymerase ribozyme was found to also be capable of functioning as a reverse transcriptase, an activity that has never been demonstrated before for RNA. This activity is thought to have been crucial for the transition from RNA to DNA genomes during the early history of life on Earth, when it similarly could have arisen as a secondary function of an RNA-dependent RNA polymerase. The reverse transcriptase ribozyme can incorporate all four dNTPs and can generate products containing up to 32 deoxynucleotides. It is likely that this activity could be improved through evolution, ultimately enabling the synthesis of complete DNA genomes. DNA is much more stable compared to RNA and thus provides a larger and more secure repository for genetic information.
 
 ## Introduction
 
@@ -33,9 +33,29 @@ Through many successive generations of in vitro evolution, the class I polymeras
 
 The 24–3 polymerase was tested for its ability to catalyze the RNA-templated addition of dNTPs to the 3´ end of an RNA or DNA primer (Figure 1A). The enzyme was found to be capable of multiple successive dNTP additions, which is not the case for its evolutionary predecessors (Attwater et al., 2013). Employing a 15mer primer that binds to a complementary RNA template, the primer can be extended to generate full-length products, together with a ladder of partial extension products (Figure 1B). For short C-rich templates, such as 3´-GCCCCCAC-5´ (template 1) or 3´-GCCCCCACGCCCCCUC-3´ (template 2), a substantial fraction of the products are full-length, whereas for templates that are less C-rich and/or contain regions of stable secondary structure (templates 3 and 4), there is little or no full-length product. Long and unstructured C-rich templates, such as 3´-GCCCCCACGCCCCCUCGCCCCCACGCCCCCUC-3´ (template 5), can give rise to full-length products, in this case requiring the addition of two or more residues of each of the four dNTPs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig1-v2.jpg)
+
+**Figure 1.:** (A) Secondary structure of the complex formed by the ribozyme, template, and primer (nucleotide sequences are listed in supplementary file 1). The template consists of four regions: primer binding site, sequence to be copied, A3 or A5 spacer, and ribozyme-pairing domain (listed 3´→5´). The ribozyme was tested for its ability to copy five different template sequences (1–5). For sequences of other regions of the template, see supplementary file 1. (B) Extension of a deoxynucleotide-terminated RNA primer on an RNA template. Reaction conditions: 100 nM ribozyme, 125 nM template, 125 nM primer, 2 mM each dNTP, 200 mM MgCl2, pH 8.3 or 9.0, 20°C, 3 or 22 hr. Black dots indicate the expected position of full-length products.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Extension of (A) all-RNA primer, (B) deoxynucleotide-terminated RNA primer, or (C) all-DNA primer on an RNA template. Reaction conditions: 100 nM ribozyme, 125 nM template 1, 125 nM primer, 2 mM each dNTP, 200 mM MgCl2, pH 8.3 or 9.0, 20°C, 3 or 22 hr. Black dots indicate the expected position of full-length products.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Extension of an all-RNA primer on either an RNA or DNA template, employing either dNTPs or NTPs. The sequences of the RNA templates (6 and 4) and corresponding DNA templates (d6 and d4) are listed in supplementary file 1. Reaction conditions: 100 nM ribozyme, 125 nM template, 125 nM primer, 2 mM each dNTP or NTP, 200 mM MgCl2, pH 8.3, 20°C, 21 hr.
+
 For all templates tested, the reaction proceeds similarly using either an all-RNA primer or an RNA primer that has a single 3´-terminal deoxynucleotides (Figure 1—figure supplement 1). When an all-DNA primer is used, the reaction proceeds similarly for the more favorable templates, but is less efficient for the more challenging templates. This behavior presumably reflects the greater difficulty of DNA versus RNA hybridization when primer binding must compete with secondary structure in the primer-binding region of the template. The 24–3 enzyme has negligible activity in the DNA-templated polymerization of either dNTPs or NTPs (Figure 1—figure supplement 2). This is true even when an all-RNA primer is used, which enables addition of a single nucleotide, but almost no subsequent nucleotide addition.
 
 Two approaches were taken to confirm the identity of the reverse transcription products obtained using template 1. First, the presumed full-length materials, initiated by either an all-RNA or an all-DNA primer, were purified by denaturing polyacrylamide gel electrophoresis and subjected to partial digestion with DNase I. This enzyme degrades 3´,5´-phosphodiester linkages in DNA but not RNA. For the RNA-primed products, the extended portion was degraded by DNase and the primer portion remained intact, whereas for the DNA-primed products the entire molecule was degraded (Figure 2A). Authentic standards were treated in a side-by-side manner and gave rise to the same pattern of degradation products.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig2-v2.jpg)
+
+**Figure 2.:** (A) Partial DNase I digestion of full-length products obtained using template 1, in comparison to authentic materials, with either an RNA primer (left 7 lanes) or DNA primer (right 7 lanes). For the RNA-primed reaction, only the extended portion is cleaved; for the DNA-primed reaction, both the primer and extended portion are cleaved. (B,C) LC/MS analysis of purified full-length products obtained using template 1 and either an RNA or a DNA primer, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Extension of an all-RNA primer on template four yielded a product with a calculated mass of 8874.432 and observed mass of 8874.441. The parent ion was fragmented at internucleotide linkages within the DNA portion of the molecule to generate secondary ions that were analyzed by tandem MS. Successive fragments a–h correspond to 3´-terminal subsequences within the DNA portion of the molecule.
 
 The second confirmatory approach involved analysis of the gel-purified, full-length materials by liquid chromatography/mass spectrometry. The RNA or DNA primer contained a 5´-fluorescein label to permit visualization in the gel and the reaction involved addition of deoxynucleotides residues having the sequence 5´-CGGGGGTG-3´. For the RNA-primed reaction the calculated mass was 8252.4 and the observed mass was 8252.4 (Figure 2B); for the DNA-primed reaction the calculated mass was 8068.5 and the observed mass was 8068.1 (Figure 2C). High-resolution ion trap tandem MS was used to confirm the sequence of the 10mer reverse transcript obtained using template 4. This partial-length product contains all four deoxynucleotides and has the sequence 5´-GCGAGGAGTG-3´. For the RNA-primed reaction, the calculated mass was 8874.432 and the observed mass was 8874.441. From the parent ion, 3´-terminal fragments were generated that contained 2–9 deoxynucleotides and had observed masses matching the calculated masses for these materials (Figure 2—figure supplement 1).
 
@@ -49,7 +69,7 @@ Time-course experiments were carried out to determine the rate of reverse transc
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31153/elife-31153-fig4-v2.jpg)
 
-**Figure 4.:** Time course of the reaction using either NTPs (filled circles) or dNTPs (open circles), measuring the rate of single-nucleotide addition to a deoxynucleotide-terminated primer on template 1. The data were fit to a double exponential rise to maximum (r = 0.996 for RNA polymerization; r = 0.983 for DNA polymerization). Inset depicts the data over the first 2 min of the reaction. Reaction conditions: 100 nM ribozyme, 125 nM template, 125 nM primer, 2 mM NTPs or dNTPs, 200 mM MgCl2, pH 8.3, 20°C.10.7554/eLife.31153.012Figure 4—source data 1.
+**Figure 4.:** Time course of the reaction using either NTPs (filled circles) or dNTPs (open circles), measuring the rate of single-nucleotide addition to a deoxynucleotide-terminated primer on template 1. The data were fit to a double exponential rise to maximum (r = 0.996 for RNA polymerization; r = 0.983 for DNA polymerization). Inset depicts the data over the first 2 min of the reaction. Reaction conditions: 100 nM ribozyme, 125 nM template, 125 nM primer, 2 mM NTPs or dNTPs, 200 mM MgCl2, pH 8.3, 20°C.
 
 Reverse transcription is accelerated at pH 9.0 compared to pH 8.3 (Figure 1B). For reactions initiated by an RNA primer, the higher pH results in some degradation of the primer portion of the extended products. The RNA enzyme has a high requirement for Mg2+, typically 200 mM, which also promotes RNA degradation. However, once sequence information has been copied from RNA to DNA, the DNA product can be maintained under high-pH, high-Mg2+ conditions.
 
@@ -65,24 +85,24 @@ All discussion pertaining to the transition from RNA to DNA genomes is speculati
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 All oligonucleotides used in this study are listed in supplementary file 1. Synthetic oligonucleotides were either purchased from Integrated DNA Technologies (Coralville, IA) or prepared by solid-phase synthesis using an Expedite 8909 DNA/RNA synthesizer, with reagents and phosphoramidites purchased from Glen Research (Sterling, VA). RNA templates were prepared by in vitro transcription from synthetic DNA templates. Polymerase ribozymes were prepared by in vitro transcription of double-stranded DNA templates generated by PCR from corresponding plasmid DNA. All RNA templates and ribozymes were purified by denaturing polyacrylamide gel electrophoresis (PAGE) and ethanol precipitation prior to use. NTPs were purchased from Sigma-Aldrich (St. Louis, MO) and dNTPs were from Denville Scientific (Holliston, MA). TURBO DNase I, Superscript II reverse transcriptase, and streptavidin C1 Dynabeads were from ThermoFisher (Grand Island, NY).
 
-## In vitro transcription
+### In vitro transcription
 
 RNA templates were transcribed from 0.5 μM single-stranded DNA that had been annealed with 0.5 µM of a synthetic oligodeoxynucleotide encoding the second strand of the T7 RNA polymerase promoter. Transcription was carried out in a mixture containing 15 U/μL T7 RNA polymerase, 0.002 U/μL inorganic pyrophosphatase, 5 mM each NTP, 25 mM MgCl2, 2 mM spermidine, 10 mM DTT, and 40 mM Tris (pH 8.0), which was incubated at 37°C for 2 hr. The DNA then was digested by adding 0.1 U/μL TURBO DNase I and continuing incubation for 1 hr. Ribozymes were transcribed from fully double-stranded DNA templates (20 µg/mL) that were obtained by PCR amplification of plasmid DNA encoding the 24–3 ribozyme (courtesy of David Horning).
 
-## RNA-catalyzed polymerization
+### RNA-catalyzed polymerization
 
 RNA-templated polymerization of either RNA and DNA was performed using 100 nM ribozyme, 125 nM template, and 125 nM primer. The primer, which consisted of RNA, DNA, or RNA with a single 3´-terminal deoxynucleotide, contained both a fluorescein label and biotin moiety at its 5´ end. The ribozyme, template, and primer first were heated at 80°C for 2 min, then cooled to 17°C over 5 min and added to the reaction mixture, which also contained 2 mM each NTP or dNTP, 200 mM MgCl2, 0.05% TWEEN20, and 50 mM Tris (pH 8.3 or 9.0). Polymerization was carried out at 20°C and quenched by adding 250 mM EDTA. The biotinylated primers and extended products were captured on streptavidin C1 Dynabeads, washed twice with alkali (25 mM NaOH, 1 mM EDTA, and 0.05% TWEEN20) and once with TE-urea (1 mM EDTA, 0.05% TWEEN20, 10 mM Tris (pH 8.0), and 8 M urea), then eluted with 98% formamide and 10 mM EDTA (pH 8.0) at 95°C for 15 min. The reaction products were analyzed by denaturing PAGE.
 
 Defined-length extension products for analysis by either DNase digestion or LC/MS were prepared using 1 µM ribozyme, 1 µM template, and 0.8 μM RNA or DNA primer. The reaction was carried out as described above at pH 8.3 for 21 hr. Presumed full-length materials were purified by electrophoresis in a denaturing 15% polyacrylamide gel, excised from the gel, eluted with 200 mM NaCl, 1 mM EDTA, and 10 mM Tris (pH 7.5), and ethanol precipitated.
 
-## DNase digestion
+### DNase digestion
 
 The purified extension products were subjected to partial DNase digestion in a mixture containing 1 μM oligonucleotide, 0.1 U/μL TURBO DNase I, 10 mM MgCl2, 0.5 mM CaCl2, and 20 mM Tris (pH 7.5), which was incubated at 37°C for 30 min, then quenched with 20 mM EDTA, followed by heat inactivation of the enzyme at 75°C for 10 min. The resulting products were analyzed by electrophoresis in a denaturing 15% polyacrylamide gel.
 
-## LC/MS analysis
+### LC/MS analysis
 
 Liquid chromatography/mass spectrometry analysis was performed by Novatia LLC (Newtown, PA) using 50 pmol of purified extension products. Standard analyses were performed by electrospray ionization LC/MS on the Oligo HTCS platform, which achieves mass accuracy of 0.01–0.02%. Oligonucleotide sequence confirmation was performed by high-resolution ion trap tandem MS on an LTQ-Orbitrap ion mass spectrometer, which achieves mass resolution of 0.003% (FWHM). The parent ion was used to generate a fragment spectrum resulting from cleavage at phosphodiester linkages within the DNA portion of the molecule. ReSpect deconvolution software (Positive Probability Ltd.) was used to deisotope the MS/MS spectrum and to obtain a simplified fragment spectrum with exact masses.

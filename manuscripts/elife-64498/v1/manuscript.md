@@ -37,13 +37,33 @@ To functionally analyze proteins, the introduction of small immune epitopes or f
 
 ## Results
 
-## A strategy to generate endogenously tagged fluorescent β-catenin isoforms
+### A strategy to generate endogenously tagged fluorescent β-catenin isoforms
 
 Previously, the dynamics and biochemical properties of β-catenin in cells were investigated by using transiently or stably overexpressed fluorescent fusion proteins (Giannini et al., 2000; Jamieson et al., 2011; Kafri et al., 2016; Krieghoff et al., 2006). To study wild-type and mutant β-catenin at physiological expression levels, we utilized the diploid colon cancer cell line HCT116 that harbors both a wild-type and a ∆Ser45 mutant allele. This in-frame ∆Ser45 deletion results in a loss of phosphorylation at this position, leading to the stabilization of β-catenin and constant activation of Wnt downstream targets (Hagen and Vidal-Puig, 2002).
 
 To generate endogenously tagged β-catenin, we applied a gene replacement strategy using CRISPR/Cas9 editing (Mali et al., 2013; Ran et al., 2013; Yang et al., 2014) to introduce different fluorescent tags in the two alleles of the β-catenin locus of HCT116 cells in one step (Figure 1, Figure 1—figure supplement 1A). To this end, we identified a suitable sgRNA sequence for targeting the C-terminal region of β-catenin. This target site was chosen because it has previously been shown that C-terminal tagging did not affect β-catenin function in overexpression experiments (Giannini et al., 2000; Jamieson et al., 2011; Kafri et al., 2016; Krieghoff et al., 2006). Then, two donor templates with 180 bp homology arms were designed close to the sgRNA PAM sequence (Elliott et al., 1998; Natsume et al., 2016) encoding two different fluorophores. We chose mClover3 and mCherry2 for their favorable biophysical properties such as spectral absorbance, brightness, photostability, and maturation time (Bajar et al., 2016; Shen et al., 2017; Thorn, 2017). In the following, for the sake of brevity, we will refer to these two fluorescent proteins as Clover and Cherry, respectively. Moreover, FLAG and V5-tags were integrated between the C-terminal domain of β-catenin and the flexible GS linker to enable biochemical experiments. To avoid steric hindrance of the different domains, a flexible GS linker consisting of three repeats of glycine and serine residues, (Gly-Gly-Gly-Gly-Ser)3, was inserted between the FLAG/V5 tags and the fluorescent proteins (Trinh et al., 2004; Figure 1, Figure 1—figure supplement 1A). Gene resistance cassettes flanked by loxP sites were also introduced after the fluorescent proteins for selection of edited cells after homology-directed repair (HDR) (Smirnikhina et al., 2019). Selection cassettes encoded for antibiotic resistance to hygromycin and blasticidin on the Clover and Cherry donor templates, respectively (Figure 1—figure supplement 1A). The loxP sites were included to allow resistance cassette removal upon expression of Cre recombinase.
 
-## Generation and characterization of β-catenin tagged cells
+![Figure 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig1-v1.jpg)
+
+**Figure 1.:** (Left panels) Schematic representation of CTNNB1/β-catenin tagging strategy, the CTNNB1/β-catenin locus and tagged β-catenin proteins. (Right panels) Workflow for the generation of endogenously tagged β-catenin in HCT116 colorectal cancer cells. See also Figure 1—figure supplement 1A for more details. bp, base pair; HA, homology arm; kDa, kilo Dalton; sgRNA, single guide RNA; UTR, untranslated region.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of CTNNB1/β-catenin tagging strategy and workflow of bi-allelic β-catenin tagged HCT116 cells generation. (B) The editing efficiency between the two donor templates was different. The donor template Clover was more efficiently integrated than the Cherry one. (i) Parental HCT116 cells were used as “unstained” sample for FACS analysis (ii) HCT116 cells transfected with sgCTNNB1 and Cherry donor template were used to define the gate P3 (mCherry+ cells), (iii) HCT116 transfected with sgCTNNB1 and Clover donor template were used to set the gate P4 (mClover+ cells), (iv) edited cells transfected with sgCTNNB1 and both Cherry and Clover donor templates are double-positive (gate P5). Percentages of positive cells are shown in each panel. (C) Table summarizing the obtained HCT116 single clones with their according genotypes. FACS, fluorescence-activated cell sorting.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) The schemes indicate primers used for genotyping of single-cell clones. PCR analysis shows genotyping of HCT116 single-cell clones #33, #37, #45, and #24. Parental HCT116 β-cateninWT/Δ45, HCT116 β-cateninWT/−, and donor templates were used as controls.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The sequences are combination/alignment of several (5–6) Sanger sequences performed with the primers shown in the scheme Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The sequences are combination/alignment of several (5–6) Sanger sequences performed with the primers shown in the scheme Figure 1—figure supplement 2.
+
+### Generation and characterization of β-catenin tagged cells
 
 To generate cell lines with endogenously allele-specific tagged β-catenin, we transfected HCT116 cells with plasmids encoding for both the sgRNA targeting β-catenin (sgCTNNB1) and Cas9 protein from Streptococcus pyogenes (Mali et al., 2013) and the donor template encoding either V5-mCherry BRS (blasticidinS) or FLAG-mClover HygR (hygromycin resistance) (Figure 1, Figure 1—figure supplement 1A). Transfected HCT116 cells were first selected with puromycin for 48 hr and subsequently with blasticidin/hygromycin for 5 days. Pooled edited cells were analyzed and sorted into single-cell clones by fluorescence-activated cell sorting (FACS) (Figure 1, Figure 1—figure supplement 1B). Infrequent fluorophore expression was observed, regardless of whether a single donor template was used (1.4% of Cherry- and 17.3% of Clover-labeled cells) or both donors were co-transfected simultaneously (0.9% of only Cherry-, 7.4% of only Clover-, and 0.1% of double-labeled cells) (Figure 1—figure supplement 1B).
 
@@ -55,23 +75,59 @@ Next, we sequenced the amplicons from our genotyping PCRs (Figure 1—figure sup
 
 Subsequently, PCR was performed to determine which allele (wild-type or ∆Ser45) was tagged with Clover and which with Cherry using cDNA from reverse-transcribed mRNA of each isogenic cell line and specific reverse primers to Clover or Cherry. Sanger sequencing of cDNA templates revealed that both clones #37 and #45 carried the Cherry fluorophore in the ∆Ser45 allele (Figure 2A). In contrast, clones #33 and #37 harbored the Clover fluorophore in the wild-type allele, as indicated by the in-frame sequence with Ser45.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sanger sequencing confirms bi-allelic tagging of β-catenin. Sequencing results show clones #45 (β-cateninWT/∆45Cherry) and #37 (β-cateninWTClover/∆45Cherry) Cherry is in-frame with the mutant allele and clones #33 (β-cateninWTClover/∆45) and #37 (β-cateninWTClover/∆45Cherry) Clover is in-frame with wild-type allele (codon TCT). (B) Cell lysates of indicated HCT116 cell lines analyzed by Western blotting with a β-catenin antibody; β-actin served as a loading control. (C) HCT116 β-cateninWTClover/∆45Cherry (clone #37) immunoprecipitation with GFP, Cherry and control beads, or with a β-catenin antibody followed by immunoblotting with indicated antibodies. Representative results from three independent experiments are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) HCT116 β-cateninWTClover/∆45Cherry (clone #37) cells express comparable amounts of β-catenin to the parental HCT116 WT cells. (B–D) Immunoprecipitation using HCT116 β-cateninWTClover/∆45 (clone #33 – left), β-cateninWT/∆45Cherry (clone #45 – middle), and β-cateninWTClover/∆45 (clone #24 – right) were performed with GFP/Cherry or control beads, followed by Western blotting with the indicated antibodies. Representative results from three independent experiments are shown.
+
 Next, total cell lysates of parental and isogenic knock-in cell lines were analyzed for β-catenin fusion proteins by Western blot (Figure 2B, Figure 2—figure supplement 1A). As shown in Figure 2B, clones #33 and #45 have one of the tagged variants of β-catenin, whereas clone #37 has two high molecular weight bands indicative of both tagged β-catenin variants. Furthermore, immunoprecipitations using either affinity beads for the Clover (GFP) and Cherry (RFP) fluorophores, or anti-β-catenin antibodies were performed and analyzed by Western blotting. GFP-immunoprecipitated lysates of clone #37 (Figure 2C), a β-catenin variant with molecular mass higher than 97 kDa was recognized by β-catenin, GFP, and Flag antibodies. By contrast, upon RFP/Cherry immunoprecipitation a band around 97 kDa was detected by β-catenin, Cherry and V5 antibodies. Pulldown with a β-catenin antibody demonstrated two different β-catenin variants that were either detected by GFP/Flag or Cherry/V5 antibodies. These results confirm the presence of two differently tagged β-catenin variants in clone #37 at the protein level. Similarly, we analyzed clones #33 and clone #45 by immunoprecipitation (Figure 2—figure supplement 1B,C). In clone #33, GFP-immunoprecipitated lysates showed a β-catenin variant higher than 97 kDa. By contrast, in clone #45 upon Cherry-immunoprecipitation β-catenin, Cherry and V5 antibodies recognized bands around 97 kDa.
 
 Wild-type β-catenin-Clover protein runs higher than 97 kDa and it is recognized by both GFP and Flag antibodies (Figure 2B and C, Figure 2—figure supplement 1). Mutant β-catenin-Cherry protein runs around 97 kDa as a single band, as detected in the whole-cell lysate (Figure 2B and C). Upon immunoprecipitation, especially with RFP beads, several bands of mutant β-catenin-Cherry are frequently detected. To evaluate whether this is due to modifications of mutant β-catenin or due to the Cherry-tag itself, we analyzed clone #24 expressing a mutant β-catenin tagged with Clover. All three antibodies, β-catenin, GFP, and Flag, detected only one band representing the mutant β-catenin-Clover protein (Figure 2—figure supplement 1D), suggesting that the additional bands of mutant β-catenin-Cherry arise from the Cherry-tag. One possible explanation is that the mCherry protein undergoes chemical modification during sample preparation, for example, by TCEP in the loading dye (Cloin et al., 2017). Alternatively, mCherry might undergo backbone cleavage during chromophore maturation (Barondeau et al., 2006; Nienhaus et al., 2005; Wei et al., 2015). Importantly, such cleavage during maturation does not impair the fluorescence emission, as fragments remain tightly associated to form the fluorescent beta-barrel structure (Barondeau et al., 2006; Nienhaus et al., 2005).
 
-## Functional characterization of endogenously tagged β-catenin cell lines
+### Functional characterization of endogenously tagged β-catenin cell lines
 
 To test whether the C-terminal fluorescent tags of β-catenin interfere with its physiological functions, we tested the novel cell lines in different assays. First, we compared cell proliferation of the clonal cell lines to the parental β-cateninWT/∆45 and the β-cateninWT+/− cell line, which only had a wild-type but not a mutant β-catenin allele. All three clones #33, #37, and #45 showed a similar growth behavior as the parental β-cateninWT/∆45 cells (Figure 3A), whereas the cell line carrying a single wild-type allele (β-cateninWT+/−) displayed impaired growth. Next, we tested the functionality and localization of the endogenously tagged β-catenin variants. We performed siRNA-mediated silencing of β-catenin and analyzed gene expression by RT-qPCR (Figure 3B, Figure 3—figure supplement 1A). We found that downregulation of β-catenin led to the reduction in fluorophore levels as well as the Wnt target gene AXIN2. Consistently, depletion of β-catenin resulted in a reduction of Cherry and Clover, as shown by immunofluorescence on the protein level (Figure 3C, Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig3-v1.jpg)
+
+**Figure 3.:** (A) Proliferation of the indicated HCT116 cell clones was monitored by live-cell imaging using an Incucyte instrument. (B) In HCT116 β-cateninWTClover/∆45Cherry, mRNA-levels of CTNNB1, AXIN2, Cherry, and Clover were determined by RT-qPCR in control conditions and upon depletion of CTNNB1/β-catenin by siRNA (n=5; mean ± SD). (C) Representative immunofluorescence images of HCT116 β-cateninWTClover/∆45Cherry after siRNA-mediated knockdown of CTNNB1 are shown (n=3; scale bars: 100 μm). (D) β-catenin accumulates at cell-cell junctions (arrow). Representative immunofluorescence images of HCT116 β-cateninWTClover/∆45Cherry and parental HCT116 β-cateninWT/Δ45 stained with a β-catenin antibody are shown (scale bars: 10 μm). (E) Immunoprecipitation of HCT116 clone β-cateninWTClover/∆45Cherry with E-cadherin confirms its interaction with β-catenin. Representative results from three independent experiments are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In HCT116 β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry, mRNA-levels of CTNNB1, AXIN2, CHERRY, and CLOVER were determined by RT-qPCR upon silencing of CTNNB1/β-catenin. Immunofluorescence analysis of HCT116 β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry after siRNA-mediated knockdown of CTNNB1 is shown (n=3; mean ± SEM; scale bar: 100 μm). (B) β-catenin accumulates at cell-cell junctions (arrow). Representative immunofluorescence of HCT116 β-cateninWTClover/∆45, β-cateninWT/∆45Cherry, and parental HCT116WT/Δ45 stained with β-catenin antibody is shown. Scale bar=10 μm. (C) Immunoprecipitation of HCT116 β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry with E-cadherin validates its interaction with β-catenin. A representative immunoblot is displayed.
+
 In addition to its functional role in Wnt signaling, β-catenin interacts with the cytoplasmic domains of E-cadherin and α-catenin to bridge the cell-adhesion complex and actin cytoskeleton inside the cells, thereby localizing it to the cell membrane (Aberle et al., 1994; Hoschuetzky et al., 1994). Immunofluorescence analysis confirmed the localization of the endogenously tagged β-catenin variants at the cell membrane as observed in the parental HCT116 cell line (Figure 3D, Figure 3—figure supplement 1B). Immunoprecipitation with an E-cadherin antibody demonstrated the interaction of β-catenin and E-cadherin in all clones (Figure 3E, Figure 3—figure supplement 1C). Taken together, these results indicate that endogenously tagging of β-catenin did neither affect its localization and adhesive function nor its ability to activate the Wnt pathway.
 
-## Wild-type and mutant β-catenin variants contribute both to canonical Wnt signaling output
+### Wild-type and mutant β-catenin variants contribute both to canonical Wnt signaling output
 
 We next investigated the impact of endogenously tagged β-catenin on the activation of Wnt signaling. Wnt activity was measured by TCF4/Wnt-dependent reporter assay and analyzing AXIN2 levels in the isogenic knock-in clones and parental cell line upon treatment with either the GSK3β inhibitor CHIR99021 or ICG001, an inhibitor of CBP/β-catenin interaction (Figure 4A). Upon CHIR99021 treatment, TCF4/Wnt-reporter activity was induced and AXIN2 gene expression levels were increased similarly in all isogenic cell lines. Treatment with the Wnt inhibitor ICG001 decreased Wnt reporter activity and AXIN2 expression levels in all cell lines, as expected (Figure 4A). In addition, immunofluorescence analysis demonstrated that after addition of CHIR99021, nuclear β-catenin was increased in all clones indicative of increased nuclear translocation of β-catenin upon Wnt activation (Figure 4B, Figure 4—figure supplements 1 and 2). Consistent with its mechanism of action, treatment with ICG001 did neither affect cytoplasmic nor nuclear β-catenin localization in the endogenously tagged or parental cell clones. Upon inhibition of Wnt secretion by addition of porcupine inhibitor LGK974, the signal of both, mutant as well as wild-type β-catenin allele, decreased but could be rescued by addition of recombinant Wnt3a (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left: Scheme showing the mode of action of GSK3β inhibitor CHIR99021 and CBP inhibitor ICG-001. Right: Indicated HCT116 cell lines were treated with 10 μM CHIR99021 and 10 μM ICG-001 for 24 hr, then Wnt activity was determined by a luciferase-based TCF4/Wnt-reporter assay (upper panel) and quantification of AXIN2 mRNA-levels by RT-qPCR (n=3; mean ± SD). (B) Immunofluorescence analysis of HCT116 β-cateninWTClover/∆45Cherry after 24 hr treatment with 10 μM CHIR99021 and 10 μM ICG-001 is shown (scale bar: 10 μm). The graph on the right depicts the ratio of nuclear to cytoplasmic fluorescent signal intensity for Clover and Cherry in HCT116 β-cateninWTClover/∆45Cherry. Data from three independent experiments, each with at least 250 cells per condition, are shown as mean ± SEM. Every experiment includes at least 250 cells per condition. Enlarged representative images are shown in the Figure 4—figure supplement 2. (C) HCT116 β-cateninWTClover/∆45Cherry were treated with LGK974 for 80 hr then 200 ng/ml of recombinant Wnt3a was added for 16 hr. Intensities of the Clover or Cherry signals were measured per slide and normalized to the intensity of Hoechst staining and to the control. 10–20 slides were measured per condition in one experiment. Data of three independent experiments are shown as mean ± SEM. Each dot represents an independent experiment. WRE, Wnt responsive element. Scale bar: 10 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Immunofluorescence analysis of HCT116 β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry after 24 hr treatment with 10 μM CHIR99021 and 10 μM ICG-001 is shown. The graphs on the right show the ratio of nuclear to cytoplasmic fluorescence intensities for Clover and Cherry in β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry, respectively (n=3 and 4; mean ± SEM). Scale bar: 10 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Representative images from Figure 4B of HCT116 β-cateninWTClover/∆45 and β-cateninWT/∆45Cherry after 24 hr treatment with 10 μM CHIR99021 are shown. Scale bar: 10 μm.
+
 To analyze the impact of both wild-type and mutant variants on Wnt signaling, we performed knockdown experiments with siRNAs targeting either Cherry or Clover, thereby depleting either mutant or wild-type β-catenin alleles. Silencing of either Clover or Cherry in clone #37 reduced β-catenin and AXIN2 expression levels in a similar manner, whereas combined knockdown of both had an additive effect comparable to siRNA β-catenin/CTNNB1 (Figure 5A). Results of mRNA expression are in line with the immunofluorescence staining. Silencing of Cherry or Clover led to a decrease in signal intensity of the corresponding β-catenin alleles (Figure 5B, Figure 5—figure supplement 1). These results indicate that both wild-type and mutant β-catenin alleles contribute to Wnt activity. This is also consistent with previous results in HCT116 cells demonstrating that Wnt secretion is essential for maintaining Wnt activity (Voloshanenko et al., 2013).
 
-## Fluorescence correlation spectroscopy reveals differences in the dynamics of wild-type and mutant β-catenin
+![Figure 5.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig5-v1.jpg)
+
+**Figure 5.:** (A) Expression levels of AXIN2, CTNNB1/β-catenin, Cherry, and Clover were measured 72 hr after knockdown with siRNAs directed against Clover, Cherry or both in HCT116 β-cateninWTClover/∆45Cherry (n=4, mean ± SD). (B) Immunofluorescence analysis of HCT116 β-cateninWTClover/∆45Cherry upon transfection with siRNAs targeting CTNNB1, CLOVER, CHERRY, or a combination of CLOVER and CHERRY (scale bar: 25 μm). Intensities of the Clover or Cherry signals were measured per slide and normalized to the intensity of Hoechst staining. 5–10 slides were measured per condition and are shown as dots. Representative one from four independent experiments (Figure 5—figure supplement 1) is shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative images from Figure 5B. Scale bar: 25 μm. Immunofluorescence analysis of HCT116 β-cateninWTClover/∆45Cherry upon transfection with siRNAs targeting CTNNB1, CLOVER, CHERRY, or a combination of CLOVER and CHERRY (scale bar: 25 μm). Intensity of Clover or Cherry signal was measured per slide and normalized to the intensity of Hoechst staining and then normalized to control. 5–10 slides per condition were measured. Data of four independent experiments are shown as mean ± SEM. Each dot represents an independent experiment.
+
+### Fluorescence correlation spectroscopy reveals differences in the dynamics of wild-type and mutant β-catenin
 
 Fluorescence correlation spectroscopy (FCS) is a powerful quantitative microscopy method for measuring local concentrations and diffusional mobilities of fluorescent molecules in cells and tissues, for example, to determine Wnt ligand-receptor interactions in the cell membrane (Eckert et al., 2020). To simultaneously monitor the dynamics of wild-type Clover-tagged and mutant Cherry-tagged β-catenin of HCT116 cells clone #37, we used FCS with detection in two color channels. With this method, we recorded the fluorescence intensity emanating from a tiny observation volume (ca. 1 fL) as a function of time. For each cell studied, two measurements were performed, with the observation volume first positioned into the cytosol and then into the nucleus. Thus, we focused on the freely diffusing β-catenin fraction, which mediates Wnt signaling, and excluded the membrane-bound fraction, which is responsible for cell-cell adhesion and has been previously shown by FRAP to tightly interact with cadherins, which markedly reduces its mobility (Krieghoff et al., 2006).
 
@@ -79,17 +135,33 @@ From the intensity time traces in the two color channels, autocorrelation functi
 
 On the basis of FCS experiments in the cytosol of more than 40 cells, we calculated a median D value of 10.6 ± 1.8 µm² s–1 for mutant Cherry-tagged β-catenin, which is significantly smaller than the one of wild-type Clover-tagged β-catenin (D=17.3 ± 6.1 µm² s–1, Figure 6A). The ratio of diffusion coefficients indicates that mutant Cherry-tagged β-catenin diffuses as part of a larger complex, with a more than fourfold larger volume/overall mass than wild-type Clover-tagged β-catenin. For Clover and Cherry overexpressed in HCT116 cells, we measured D=43 ± 8 µm² s–1 in the cytosol. Taking this number and dividing it by the cube root of the molecular mass ratio between wild-type Clover-tagged β-catenin and Clover (120 kDa:26 kDa), we obtain an estimated D=26 ± 5 µm² s–1 for the tagged β-catenin, which is on the high end of the distribution of D values of the respective ensemble (Figure 6A). Thus, Clover-tagged β-catenin may diffuse as an individual entity or as part of a smaller complex (compared to the one that mutant Cherry-tagged β-catenin is bound to).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig6-v1.jpg)
+
+**Figure 6.:** (A) Concentrations (left) and diffusion coefficients (right) of Clover-tagged wild-type β-catenin and Cherry-tagged mutant β-catenin in the cytosol of HCT116 β-cateninWTClover/∆45Cherry. (B) Protein concentrations (medians of the distributions shown in panel (A)). (C) Concentrations (left) and diffusion coefficients (right) of Clover-tagged wild-type β-catenin and Cherry-tagged mutant β-catenin measured on HCT116 β-cateninWTClover/∆45Cherry cells that were treated for 14–26 hr with either 10 µM CHIR99021 or DMSO as control. (D) HCT116 β-cateninwtClover/∆45Cherry cells were treated with 5 µM of LGK974 for 96 hr. Sixteen hours before termination of the experiment, 200 ng/ml of recombinant Wnt3a was added. FCS analysis was performed in the cytosol (data shown here) and in the nucleus (data shown in Figure 6—figure supplement 1). Each data point represents a 120 s FCS measurement in a single cell. In total, more than 40 cells per condition were measured in three independent experiments per box plot. p-values were calculated with the Mann-Whitney test (*** <0.001; ** <0.01; * <0.05; NS – non-significant). See also Supplementary file 1. FCS, fluorescence correlation spectroscopy.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Shown are representative autocorrelation curves (green, red) and the cross-correlation (blue) from 120 s FCS measurements in the cytosol and the nucleus of HCT116 β-cateninWTClover/∆45Cherry. The non-zero amplitudes of the autocorrelation curves in the green and red color channels indicate the presence of both β-catenin isoforms in the cytosol and in the nucleus. Jagged lines: experimental data, smooth lines, fits with a model function, y-axis: amplitudes of the pair correlation functions. (B) HCT116 β-cateninWTClover/∆45Cherry cells were treated with 5 µM of LGK974 for 96 hr. Sixteen hours before termination of the experiment, 200 ng/ml of recombinant Wnt3a was added. Afterward, FCS measurements were performed in the cytosol (data shown in Figure 6C) and in the nucleus (shown here). For each data point, a 120 s FCS measurement was carried out in a single cell. Per box plot, more than 40 cells were examined in three independent experiments. p-values were calculated with the Mann-Whitney test (*** <0.001; ** <0.01; * <0.05; NS – non-significant:) The exact values are provided as the Supplementary file 1.
+
 From the autocorrelation amplitudes in the green and red color channels, the concentrations of wild-type Clover-tagged β-catenin and mutant Cherry-tagged β-catenin were determined as 32 ± 9 nM and 75 ± 11 nM (medians of distributions over more than 40 cells, Figure 6A and B). These data agree well with previous measurements in the RKO cell line, which revealed β-catenin concentrations of ~52 nM upon Wnt3A stimulation (Hernández et al., 2012) and in HEK293T and colon cancer cell lines (Tan et al., 2012).
 
 Next, we were interested in whether activation of the Wnt signaling pathway had an impact on the diffusional dynamics of wild-type and mutant β-catenin. Therefore, FCS measurements were performed in the presence of the GSK3β inhibitor CHIR99021, which induces canonical Wnt signaling, as depicted in Figure 4A. Under control conditions (DMSO), wild-type β-catenin was less abundant and diffused faster than mutant β-catenin in the cytosol (Figure 6C). Interestingly, treatment with CHIR99021 changed the diffusion coefficients and concentrations of wild-type β-catenin so that they became similar to the ones of mutant β-catenin, whereas smaller effects were observed for the mutant isoform. Essentially, the same effects were obtained for both isoforms in the nuclear fraction (Figure 6C). These observations suggest that, by applying the drug, wild-type β-catenin was also incorporated into a larger complex. The increased concentration suggests that complex formation reduces the probability of β-catenin degradation. Taken together, these results indicate that GSK3β inhibition renders the concentration and diffusional dynamics of wild-type β-catenin such that they are in the range of those of the mutant isoform.
 
 The next question which we addressed was how inhibition of Wnt secretion influences concentration and dynamics of wild-type and mutant β-catenin. To this end, HCT116 β-cateninWTClover/∆45Cherry cells were treated with the porcupine inhibitor, LGK974, for 5–6 days before FCS measurements were performed (Figure 6D, Figure 6—figure supplement 1B). Upon this treatment, the concentration of wild-type β-catenin was found to be reduced, whereas the decrease of mutant β-catenin concentration was less pronounced. These concentration changes could be rescued by addition of recombinant Wnt3a, whereas addition of recombinant Wnt3a to cells without inhibitor treatment increased the wild-type β-catenin amount only slightly (Figure 6D, Figure 6—figure supplement 1B). Inhibition of Wnt secretion also affected the diffusional dynamics of Clover-tagged wild-type β-catenin (Figure 6D, Figure 6—figure supplement 1B). Upon LGK974 treatment, the diffusivity of the Clover-tagged β-catenin fraction was two times as large as for the control, DWT,LGK=24.0 ± 2.8 µm² s−1; however, the diffusivity of the mutant Cherry-tagged β-catenin fraction did not increase (Figure 6D, Figure 6—figure supplement 1B). Additional Wnt3a treatment reversed the effect of LGK974 treatment on the diffusivity of wild-type β-catenin. The FCS analysis yielded DWT,LGK+Wnt3a=11.6 ± 2.3 µm² s−1, which is essentially identical to that of the control.
 
-## APC truncation affects the dynamics of the wild-type β-catenin isoform
+### APC truncation affects the dynamics of the wild-type β-catenin isoform
 
 APC mutations are frequently found in colorectal cancer and define the onset of the transition from adenoma to carcinoma. The complete loss of APC is very rare; truncating mutations lacking the C-terminal domain are, however, frequently observed (Cancer Genome Atlas Network, 2012; Fearnhead et al., 2001). Hence, we engineered cell lines carrying mutant truncated APC using CRISPR/Cas9 editing in the biallelically tagged HCT116 clone #37, and quantitatively assessed the impact of APC truncations on wild-type and mutant β-catenin protein in the same cell.
 
 A sgRNA (sgAPCb) was designed by E-CRISP to target the mutation cluster region (MCR) in exon 15 of APC (Heigwer et al., 2014; Zhan et al., 2019), introducing a premature stop codon (Figure 7A). Edited single-cell clone was verified by amplicon sequencing confirming the homozygous APC mutation (Figure 7A). Subsequently, FCS measurements were performed to study the cytosolic and nuclear fractions of both parental HCT116 β-cateninWTClover/∆45Cherry and HCT116 β-cateninWTClover/∆45Cherry APCLOF (sgAPC) cells. In the cytosol (Figure 7B) and in the nucleus (Figure 7—figure supplement 1A) of APCLOF cells, the concentration and diffusional dynamics of wild-type β-catenin were different in comparison to cells with wild-type APC.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic representation of the APC locus and target site of sgACP in the mutation cluster region (MCR) domain. (B) Concentrations (left) and diffusion coefficients (right) of Clover-tagged wild-type β-catenin and Cherry-tagged mutant β-catenin in the cytosol of HCT116 β-cateninWTClover/∆45Cherry and sgAPC targeted clone (APCLOF) cells that were treated for ~16 hr with either 10 µM CHIR9901 or DMSO as control. Subsequently, FCS measurements were performed in the cytosol (data shown here) and in the nucleus (data shown in Figure 7—figure supplement 1A). Each data point in the box plots represents a result from a 120 s FCS measurement in a single cell. Per box plot, more than 40 cells were investigated in three independent experiments. p-values were calculated with the Mann-Whitney test (*** <0.001; ** <0.01; * <0.05; NS – non-significant). The exact values are provided in the Supplementary file 1. FCS, fluorescence correlation spectroscopy.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64498/elife-64498-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) HCT116 β-cateninWTClover/∆45Cherry and sgAPC targeted clone (APCLOF) cells were treated for ~16 hr with either 10 µM CHIR9901 or DMSO as control. Afterward, FCS measurements were performed in the cytosol (data shown in Figure 7) and in the nucleus (shown here). For each data point, a 120 s FCS measurement was carried out in a single cell. Per box plot, more than 40 cells were examined in three independent experiments. p-values were calculated with the Mann-Whitney test (*** <0.001; ** <0.01; * <0.05; NS – non-significant:) The exact values are provided as the Supplementary file 1. (B) Both β-catenin alleles of HCT116 cells bind to APC, GSK3β, and Axin1. IP with anti-APC antibody was performed GFP/Clover and Cherry were detected (left panel). IPs with RFP/Cherry and GFP/Clover beads were performed and β-catenin, Axin1, and GSK3β were detected (right panel). Representative experiments from three independent are shown.
 
 To investigate whether mutant β-catenin can still be found in the destruction complex, we performed immunoprecipitations with an APC antibody and with GFP/Clover and RFP/Cherry beads. Both wild-type β-catenin-Clover and mutant β-catenin-Cherry bind to APC, Axin1, and GSK3β (Figure 7—figure supplement 1B), indicating that both isoforms are part of the destruction complex. Both alleles of β-catenin can be regulated by the destruction complex but the level of regulation is different. Mutant β-catenin shows slight regulation upon inhibition of GSK3β or truncation of APC while the wild-type allele is more sensitive to these perturbations.
 
@@ -111,37 +183,740 @@ In summary, we engineered, to our knowledge, the first biallelically tagged cell
 
 ## Materials and methods
 
-## Cell Culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCT116</td>
+      <td>ATCC</td>
+      <td>CCL-247/CVCL_0291</td>
+      <td>Human colon cancer cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Top 10 E. coli</td>
+      <td>Life Technologies GmbH</td>
+      <td>C404003</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TransIT-LT1</td>
+      <td>VWR</td>
+      <td>731-0029</td>
+      <td>Plasmid transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>Life technologies GmbH</td>
+      <td>13778150</td>
+      <td>siRNA transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:UBC</td>
+      <td>GE HealthcareDharmacon/Horizon</td>
+      <td>MU-019408-01-0002</td>
+      <td>#1 GTGAAGACCCTGACTGGTA#2 AAGCAAAGATCCAGGACAA#3 GAAGATGGACGCACCCTGT#4 GTAAGACCATCACTCTCGA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:Non targeting</td>
+      <td>GE HealthcareDharmacon/Horizon</td>
+      <td>D‐001810‐02</td>
+      <td>UGGUUUACAUGUUGUGUGA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:Control</td>
+      <td>Ambion</td>
+      <td>S29712</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:GFP</td>
+      <td>GE HealthcareDharmacon//Horizon</td>
+      <td>D-001300-01-05</td>
+      <td>GCAAGCTGACCCTGAAGTTC</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:CTNNB1</td>
+      <td>Ambion</td>
+      <td>S438</td>
+      <td>CUGUUGGAUUGAUUCGAAAtt</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA:Cherry</td>
+      <td>IDT</td>
+      <td>Custom design</td>
+      <td>rCrArU rGrGrC rCrArU rCrArU rCrArA rGrGrA rGrUrU rCrArU rG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin HRP, (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: 47778/ RRID:AB_2714189</td>
+      <td>WB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin, (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: 47778/ RRID:AB_2714189</td>
+      <td>WB (1:40,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin, (Mouse monoclonal)</td>
+      <td>Dianova/Affinity BioReagent</td>
+      <td>Cat#: MA1-2001/ RRID:AB_326078</td>
+      <td>WB (1:3000),IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cherry, (Mouse monoclonal)</td>
+      <td>ClonTech</td>
+      <td>Cat#: 632543/ RRID:AB_2307319</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 332600/ RRID:AB_2533111</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A6455/ RRID:AB_221570</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E-Cadherin, (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 610182/ RRID:AB_397581</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5, (Rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat#: 600-401−378/ RRID:AB_828437</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5, (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 15253/ RRID:AB_10977225</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag, (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F7425/ RRID:AB_439687</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag, mouse (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F3165/ RRID:AB_259529</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-APC ALI 12–28, (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-53165/ RRID:AB_628734</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Axin1 C76H11, (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: 2087/ RRID:AB_2274550</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSK3β D5C5Z, (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 12456/ RRID:AB_2636978</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Normal IgG, (Rabbit)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#: 2729/ RRID:AB_1031062</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG1 K isotype control (Mouse)</td>
+      <td>eBioscience</td>
+      <td>Cat#: 16-4714-81/ RRID:AB_470160</td>
+      <td>IP (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-HRP (Goat)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#: 115-035-003/ RRID:AB_10015289</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-HRP (Goat)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat#: 111-035-003/ RRID:AB_2313567</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>True Blot ULTRA Anti-mouse IgG-HRP</td>
+      <td>eBioscience</td>
+      <td>Cat#: 18-8817-33/ RRID:AB_2610851</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRL actin-Renilla</td>
+      <td>Nickles et al., 2012</td>
+      <td></td>
+      <td>Renilla luciferase reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pgl4.23 TCF4/Wnt-luciferase</td>
+      <td>Demir et al., 2013</td>
+      <td></td>
+      <td>TCF4/Wnt-Firefly Luciferase reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>px459</td>
+      <td>Mali et al., 2013</td>
+      <td>RRID:SCR_002037</td>
+      <td>Cloning of the sgRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>px459sgCTNNB1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Figure 1—figure supplement 1– sgRNA:TGACCTGTAAATCATCCTTT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>px459sgAPC#b</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods, Figure 7A sgRNA: TAGAACCAAATCCAGCAGA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)–2A-GFP (PX458)</td>
+      <td>Mali et al., 2013</td>
+      <td>RRID:SCR_002037</td>
+      <td>Control vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMK-RQ HA-FLAG-mClover-PGK-HygRHA</td>
+      <td>This study</td>
+      <td></td>
+      <td>Donor template, See Materials and methods, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMK-RQ HA-V5-mCherry-PGK-BRS-HA</td>
+      <td>This study</td>
+      <td></td>
+      <td>Donor template, See Materials and methods, Figure 1—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Merck Millipore</td>
+      <td>361571</td>
+      <td>GSK-3β inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LGK974</td>
+      <td>Hölzel Diagnostika</td>
+      <td>TRC-L397640-50mg</td>
+      <td>Porcupine inhibitor</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Mouse Wnt3a</td>
+      <td>PeproTech</td>
+      <td>315-20-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8787-250ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NP-40</td>
+      <td>Sigma-Aldrich</td>
+      <td>NP40S-100ml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GFP-(gta) magnetic beads/agarose</td>
+      <td>Chromotec</td>
+      <td>gtak-20gtma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RFP-Trap(rta) magnetic beads/agarose</td>
+      <td>Chromotec</td>
+      <td>rta-20rtma-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–12% NuPAGE Bis-Tris gels</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>NW04122BOX;NW00120BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3–8% NuPAGE Tris acetate gels</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>EA03752BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nitrocellulose membranes</td>
+      <td>GE Healthcare</td>
+      <td>GE10600002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Takara</td>
+      <td>639650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads Protein G magnetic beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECL reagent</td>
+      <td>Merck Millipore</td>
+      <td>WBKLS0100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECL reagent</td>
+      <td>BiozolDiagnostica</td>
+      <td>MBL-JM-K820-500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hyperfilm ECL; 18×24 cm2</td>
+      <td>Amersham/GE Healthcare</td>
+      <td>GE28-9068-36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hygromycin</td>
+      <td>Gibco/Thermo Fisher Scientific</td>
+      <td>10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Blasticidin</td>
+      <td>Life Technologies GmbH</td>
+      <td>R21001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood &amp; Tissue Kit</td>
+      <td>QIAGEN</td>
+      <td>69504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RevertAid H Minus First Strand cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific/VWR</td>
+      <td>K1632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAfilter Plasmid Maxi Kit</td>
+      <td>QIAGEN</td>
+      <td>12263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>12571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>McCoy</td>
+      <td>Life Technologies GmbH</td>
+      <td>26600080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Light Cycler 480 Probes Master Mix QPCR</td>
+      <td>Roche</td>
+      <td>4887301001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Q5 Hot Start High-Fidelity DNA Polymerase</td>
+      <td>New England Biolabs</td>
+      <td>M0493S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>dNTP Set 100 mM</td>
+      <td>VWR/Fermentas/Thermo Fisher Scientific</td>
+      <td>R0182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Light Cycler 480 Probes Master Mix QPCR</td>
+      <td>Roche</td>
+      <td>4887301001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PFA/ paraformaldehyde</td>
+      <td>VWR</td>
+      <td>43,368.9 L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4% paraformaldehyde in PBS</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-281692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VectashieldDAPI solution</td>
+      <td>Biozol Diagnostica</td>
+      <td>C-H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342; trihydrochloride; trihydrate</td>
+      <td>Life Technologies GmbH</td>
+      <td>H1399</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BSA</td>
+      <td>Gerbu</td>
+      <td>5010500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS</td>
+      <td>Sigma-Aldrich</td>
+      <td>P3813-10PAK</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Goat serum</td>
+      <td>Cell Signaling Technology</td>
+      <td>5425S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microscope slides 76×26 mm2</td>
+      <td>Carl Roth GmbH</td>
+      <td>H868.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>µ-Slide eight well</td>
+      <td>Ibidi</td>
+      <td>80826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #011</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>4685105001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #148</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>04685148001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #152</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>4694384001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #088</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>4689135001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #060</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>4688589001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Universal probe library #021</td>
+      <td>Roche/Sigma-Aldrich</td>
+      <td>4686942001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA used for targeting CTNNB1 (px459sgCTNNB1)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TGACCTGTAAATCATCCTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRNA used for targeting APC(px459sgAPC#b)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TAGAACCAAATCCAGCAGA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CS6</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Affinity Designer</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_016952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>PRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td></td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biorender</td>
+      <td></td>
+      <td>RRID:SCR_018361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OriginPro</td>
+      <td></td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td></td>
+      <td>RRID:SCR_013499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fibronectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1141-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DPBS</td>
+      <td>Gibco (ThermoFisher Scientific)</td>
+      <td>14190-144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>8-well Nunc Lab-Tek chambered cover glass</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>155411 (#1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>McCoy’s 5A - w/ L-Gln, w/o Phenol RedMcCoy’s 5AMedium w/ L-Glutamine w/o Phenol red and Sodium bicarbonate</td>
+      <td>GE Lifesciences/HyClone (Thermo Fisher Scientific)HIMEDIA (NeoLab)</td>
+      <td>SH30270.01/10358633AT179-5L</td>
+      <td>Sodiumbicar-bonate was added before sterile filtration</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10266262</td>
+      <td>Reference dye</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa 546</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10534783</td>
+      <td>Reference dye</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Xfect</td>
+      <td>Takara ClonTech</td>
+      <td>631318</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>Primers (Supplementary files 5 and 6)</td>
+      <td>Eurofins</td>
+      <td></td>
+      <td>See Supplementary files 5 and 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell Culture
 
 The parental colon cancer HCT116 (β-cateninWT/∆45) cell line was purchased from the American Type Culture Collection. HCT116 β-cateninWT+/− cells were obtained from Horizon Discovery. Cells were culture in McCoy’s medium (Gibco) supplemented with 10% fetal bovine serum (Biochrom GmbH). Cells were grown at 37°C and 10% CO2 in a humidified atmosphere. Cells were tested for cross-contamination using SNP profiling by a Multiplex human Cell Authentication (MCA) assay (Multiplexion) and regularly checked for Mycoplasma contamination.
 
-## Transfection
+### Transfection
 
 Transient transfections were performed using TransIT-LT1 Transfection Reagent (731-0029; VWR) for DNA plasmids and Lipofectamine RNAiMax (Thermo Fisher Scientific) for siRNAs according to the manufacturer’s protocol. 15–25 nM Dharmacon siRNAs (Horizon Discovery) and 5–10 nM Ambion siRNAs (Thermo Fisher Scientific) were used for reverse siRNA transfection (Supplementary file 2).
 
-## Small-molecule inhibitors
+### Small-molecule inhibitors
 
 GSK-3β inhibitor CHIR99021 (Cat. no. 361571) was obtained from Merck Millipore. ICG001 (Cat. no. Cay16257-1) was obtained from Biomol. DMSO was used as the vehicle control. LGK974 (TRC-L397640-50mg) was synthesized by Hölzel Diagnostika.
 
-## Western blot and co-immunoprecipitations assays
+### Western blot and co-immunoprecipitations assays
 
 Whole-cell lysates were extracted using a buffer containing non-ionic detergents such as Triton X-100 or NP-40, supplemented with protease inhibitors (Roche). Protein concentration was determined using BCA Protein Assay Kit (Thermo Fisher Scientific) according to the manufacturer’s instructions. Samples were loaded on 4–12% NuPAGE Bis-Tris gels or 3–8% NuPAGE Tris acetate gels (Thermo Fisher Scientific) and transferred to the nitrocellulose membranes (GE Healthcare, GE10600002) following standard Western blotting procedure. Antibodies and their dilutions are listed in Supplementary file 3. Clover- and Cherry-tagged proteins were immunoprecipitated by incubation with either GFP-(gta) or RFP-Trap(rta) magnetic beads/agarose (Chromotek) for 1 hr at 4°C with rotation. For E-cadherin and β-catenin IPs extracts were incubated with control or respective antibody (Supplementary file 3) together with Dynabeads Protein G magnetic beads (Thermo Fisher Scientific) for 14–16 hr at 4°C. For signal visualization, blots were incubated with ECL reagent (WBKLS0100; Merck Millipore). Full Western blot scans are provided in the Source Data files. Adobe Photoshop was used for equal adjustment of brightness and contrast across the whole image.
 
 sgRNA design and cloning sgRNAs sequences targeting the CTNNB1 and APC genes were designed using E-CRISP (Heigwer et al., 2014), synthesized by Eurofins and cloned into the px459 plasmid (#62988, Addgene) (Supplementary file 4), according to a previously described protocol (Mali et al., 2013). To generate donor plasmids the desired homology arm’s regions and epitope tag (either V5 or FLAG) were synthetized by Invitrogen GeneArt Gene Synthesis and cloned into the vector backbone pMK-RQ. The Clover PGK-HygR and Cherry PGK-BRS were cloned from the published vectors pMK278 (Addgene #72794) and pMK282 (Addgene #72798), respectively (Natsume et al., 2016). PCR primers are listed in Supplementary file 6.
 
-## Generation and validation of allele-specific endogenously tagged β-catenin cell lines
+### Generation and validation of allele-specific endogenously tagged β-catenin cell lines
 
 HCT116 cells were transfected with px459sgCTNNB1 and the two donor template-encoding plasmids KOZAK_FLAG_mClover3 and KOZAK_V5_mCherry2 using TransIT (731-0029; VWR) according to manufacturer’s instructions. As controls, each donor template was also transfected alone together with px459sgCTNNB1 to generate single-tagged β-catenin cells and to adjust gates for FACS sorting. After 72 hr, cells were selected with 2 µg/ml puromycin (P9620, Sigma-Aldrich). After 48 h, 100 µg/ml hygromycin 10687010 (Gibco/Thermo Fisher Scientific) and 10 µg/ml blasticidin (R21001, Life Technologies GmbH) were added to select edited cells for 5 days. Subsequently, surviving cells were sorted as single-cell clones by FACS into 96-well plates for cultivating. To validate correctly endogenously tagged β-catenin clones genotyping was performed. Genomic DNA was extracted with phenol-chloroform or with DNeasy Blood & Tissue Kit (QIAGEN, 69504). Different primer pair combinations were designed for genotyping (Supplementary file 6). Primer pair (a) binds to the endogenous β-catenin locus flanking the donor cassette indicating homo- or heterozygous integration of the donor template. Primer pairs (b), (b’), and (c) bind outside and inside the donor indicating the correct in-frame integration. Primer pair (d) binds inside the donor indicating which fluorophore was integrated. PCR products were analyzed by agarose gel electrophoresis.
 
-## TCF4/Wnt-reporter activity assay
+### TCF4/Wnt-reporter activity assay
 
 To determine Wnt signaling activity, the luciferase-based dual Wnt reporter assay was performed as described previously (Demir et al., 2013). Briefly, cells were transfected with plasmids encoding the TCF4/Wnt-driven firefly luciferase and actin-promoter driven Renilla luciferase as control (Supplementary file 4). Dual-luciferase readout was performed 48 hr after transfection using Mithras LB940 plate reader (Berthold Technologies). Wnt activity was calculated by normalization of the TCF4/Wnt-luciferase values to the actin-Renilla values.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA from cell pellets was isolated with the RNeasy Mini Kit (QIAGEN) according to the manufacturer’s protocol. RNA was reverse-transcribed into cDNA using the RevertAid H Minus First Strand cDNA Synthesis Kit (Thermo Fisher Scientific). qPCR was performed using the Universal probe library (Roche) with the LightCycler 480 (Roche) instrument according to the manufacturer’s instructions. A list of primers used in this paper for qPCR is shown in Supplementary file 5.
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 Sterile coverslips (Thermo Fisher Scientific) were placed into 12-well plates and cell suspension was added. After 1 day, cells were treated with the indicated drugs for 20–24 hr. Cells were fixed using 4% PFA (VWR) for 20 min at room temperature. For antibody staining, cells were permeabilized with 0.25% Triton/phosphate-buffered saline (PBS). After several washing steps, cells were blocked for 1 hr with 5% goat serum (v/v) and 5% BSA (v/v) in PBS at room temperature. After overnight incubation with the primary antibody at 4°C, cells were incubated with fluorescently labeled secondary antibodies (1:250) for 1 hr at room temperature in the dark. Antibodies were diluted in PBS with 5% goat serum (v/v) and 5% BSA (v/v). Finally, cover slips were gently transferred onto microscope slides (Carl Roth GmbH) and fixed with Vectashield mounting media containing DAPI solution (Biozol Diagnostica). Fluorescence images were acquired with a Leica TCS SP5 confocal microscope. For live-cell imaging, cells were added into μ-slide with a glass bottom (Ibidi) and staining was performed as described. For automated microscopy, cells were seeded into 384-well plates and subjected to fixation using the CybiWell Vario robotic system. Fluorescence images were acquired using InCell Analyzer 2200 microscope (GE Healthcare) at 20× magnification in three channels (DAPI, Cy3, and FITC) with four sites per well.
 
@@ -149,11 +924,11 @@ For LGK974 treatment, cells were seeded into wells of a six-well plate and treat
 
 In the silencing experiment, CTNNB1, CLOVER, and CHERRY were downregulated by applying siRNA directly on the Ibidi µ-Slide for 72 hr. Subsequently, the staining and analysis were performed similar to the LGK974 experiment.
 
-## Image analysis
+### Image analysis
 
 Image analysis of automatic microscopy was performed using R package EBImage (Pau et al., 2010) and adapted based on previous analysis methods (Carpenter et al., 2006; Fuchs et al., 2010). Nuclei and cell body were segmented and features for intensity, shape, and texture were extracted for each cell based on the DAPI, actin, and tubulin staining. Features were then summarized per experiment by mean calculation over all cells. As a proxy for cell count, the number of segmented nuclei was used. Images were assembled using Affinity Designer, Biorender, and Adobe Illustrator.
 
-## Fluorescence correlation spectroscopy
+### Fluorescence correlation spectroscopy
 
 To prepare fibronectin-coated sample chambers, fibronectin was diluted to 50 µg ml–1 in Dulbecco’s phosphate buffered saline (DPBS, no calcium, no magnesium, Sigma-Aldrich). Each well of a eight-well Nunc Lab-Tek chambered cover glass (Thermo Fisher Scientific) was incubated with 200 µl of the solution for at least 1 hr at room temperature. Afterward, the solution was removed by aspiration, and the wells were allowed to dry. These chambers were either used immediately or stored at 4°C for a maximum of 1–2 weeks and washed with DPBS directly before use. For FCS measurements, HCT116 cells were cultured in McCoy’s medium without phenol red in the chambers. For drug treatment, the cell culture medium was replaced with a medium containing 10 µM CHIR99021 ~16‒26 hr before the FCS measurements. For LGK974 treatment, cells were seeded in six-well plates and incubated with 5 µM LGK974 for 5 days. During this period, the drug-containing medium was renewed and, if necessary, cells were split. On day 6, cells were transferred into fibronectin-coated eight-well chambered cover glass, where they were left to adhere for ~4‒6 hr before adding 100 ng ml–1 of recombinant Wnt3a. FCS measurements were started at ~16‒26 hr after Wnt treatment. All FCS measurements were carried out at 37°C and 5% CO2.
 

@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Department of Microbiology and Physiological Systems, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/0464eyp60 MassBiologics of the University of Massachusetts Chan Medical School Boston United States
-3. https://ror.org/0464eyp60 Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States
-4. https://ror.org/0464eyp60 Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School Worcester United States
+1. Department of Microbiology and Physiological Systems, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. MassBiologics of the University of Massachusetts Chan Medical School Boston United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+3. Program in Molecular Medicine, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
@@ -30,13 +30,25 @@ Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) is the etiologic ag
 
 To infect host cells, SARS-CoV-2 binds the cell receptor angiotensin-converting enzyme 2 (ACE2) through its envelope glycoprotein spike (S), which subsequently promotes membrane fusion and cell entry (Hoffmann et al., 2020; Lan et al., 2020; Letko et al., 2020; Shang et al., 2020; Walls et al., 2020; ; Wang et al., 2020; Wrapp et al., 2020; Yan et al., 2020; Zhou et al., 2020b). S is a trimer of heterodimers, with each protomer consisting of S1 and S2 subunits (Figure 1). S1 contains the receptor-binding domain (RBD), which includes the ACE2 receptor-binding motif (RBM). S2, which forms the spike stalk, undergoes a large-scale refolding during promotion of membrane fusion (Cai et al., 2020; Tortorici and Veesler, 2019; Walls et al., 2017; Zhang et al., 2021b). Structures of the soluble trimeric ectodomain of the SARS-CoV-2 S glycoprotein in two prefusion conformations have been reported (Walls et al., 2020; Wrapp et al., 2020; Yurkovetskiy et al., 2020). These distinct conformations demonstrate that the RBD of each protomer can independently adopt either a ‘down’ (closed) or an ‘up’ (open) position, giving rise to asymmetric trimer configurations (Figure 1A). The RBM is occluded in the down conformation, suggesting that the RBD must transition to the up conformation to bind ACE2. Indeed, structures of S bound to ACE2 show the RBD in the up conformation (Zhou et al., 2020a). Structural data were corroborated by real-time analysis of the conformational dynamics of S through single-molecule Förster resonance energy transfer (smFRET) imaging (Lu et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig1-v2.jpg)
+
+**Figure 1.:** (A) (Left) SARS-CoV-2 SΔTM containing a single fluorescently labeled A4-tagged protomer within an otherwise untagged trimer was immobilized on a streptavidin‐coated quartz microscope slide by way of a C-terminal 8x-His-tag and biotin‐NiNTA. For clarity, only a monomer is depicted. Individual SΔTM trimers were visualized with prism-based TIRF microscopy using a 532 nm laser. Overlay of two S protomers with receptor-binding domains (RBD) in the ‘up’ (blue) and ‘down’ (green) conformations are shown with approximate positions of fluorophores indicated by green (LD550) and red (LD650) stars. (Right) Top view of the same S protomer overlay. The approximate distances between the sites of labeling are shown. Structures adapted from PDB 6VSB. (B) Domain organization of the SARS-CoV-2 SΔTM construct used for smFRET experiments, indicating the sites of A4 tag insertion. The S1 and S2 subunits are in blue and orange, respectively. Additional domains and features are as follows, ordered from N- to C-terminus: signal peptide, dark green; NTD, N-terminal domain; RBD and RBM, receptor-binding domain and motif (purple), respectively; SD1, subunit domain 1; SD2, subunit domain 2; SGAG, furin cleavage site mutation; FP, fusion peptide; HR1 and HR2, heptad repeat 1 and 2, respectively; PP, diproline mutations; T4 fibritin trimerization motif (foldon), magenta; TEV protease cleavage site, brown; 8x-His-tag, green. (Bottom) Amino acid sequence alignments indicating sites of A4 tag insertions in SΔTM. A4 peptide sequences (DSLDMLEW) are underlined. Fluorophores get attached to the serine amino acid within the A4 peptide.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Chromatogram from size exclusion chromatography (SEC) purification of SΔTM D614 (orange) as described in Materials and methods, with a gel filtration standard (Bio-Rad) overlaid. The 670, 158, 44, 17, and 1.35 kDa molecular weight references are numbered as 1, 2, 3, 4, and 5, respectively. (B) The same SEC data for SΔTM D614G and (C) ACE2. (D) Cy5 labeling of purified ACE2 was analyzed by denaturing PAGE. Representative gel showing gel Coomassie staining (top) and Cy5 fluorescence (bottom) with unlabeled and labeled ACE2 in lanes 1 and 2, respectively. (E) SEC purification, displayed as in (A), for LD550/650-labeled A4-tagged SΔTM D614 and (F) SΔTM D614G hetero-trimers. (G) Denaturing PAGE analysis of purified unlabeled and labeled proteins. Labeling was performed as described in Materials and methods. Coomassie staining (top) and in-gel fluorescence detection are as indicated. Lane 1: SΔTM D614; lane 2: LD550/650-labeled SΔTM D614; lane 3: SΔTM D614G; LD550/650-labeled SΔTM D614G; and lane 5: unlabeled ACE2. Raw data is provided in Figure 1—figure supplement 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) S domains and regions recognized by the monoclonal antibodies (mAbs) used in this study are indicated. An S protomer with its receptor-binding domain (RBD) in the up conformation is depicted in colors: RBD, blue; N-terminal domain (NTD), dark green; cyan and magenta spheres, stalk epitopes for 1A9 (Zheng et al., 2020) and 2G12 (Williams et al., 2021), respectively. The remainder of the protomer is shown in light blue. The remaining two protomers with their RBDs in the down conformation are shown in gray. Structure adapted from PDB 6VSB. (B) ELISA indicating mAb binding to A4-tagged SΔTM spikes as described in Materials and methods. Results from three independent experiments with two technical replicates each, using both untagged (white bars) or A4-tagged (black bars) SΔTM D614 spikes and the indicated mAbs are shown. Statistical significance was evaluated as described in Materials and methods and p-values < 0.05 were considered significant. Significance values are indicated as **p < 0.01 and ****p < 0.0001. Raw data is provided in Figure 1—figure supplement 2—source data 1.
+
 These structural and biophysical data suggest that modulating the conformational equilibrium of the RBD of S might be a determinant of SARS-CoV-2 infectivity and neutralization sensitivity. By the summer of 2020, the SARS-CoV-2 S variant D614G (B.1 lineage) had supplanted the ancestral virus (strain Wuhan-1) worldwide, and structural analysis showed that D614G disrupts an interprotomer contact (Zhang et al., 2021a). This disruption results in a shift in the RBD conformation toward the up position, which is competent for ACE2 binding, consistent with increases in in vitro virus-cell binding mediated by ACE2 and infectivity (Korber and Fischer, 2020; Yurkovetskiy et al., 2020). At the same time, the enhanced exposure of the RBM in the D614G variant led to increased sensitivity to neutralizing antibodies (Weissman et al., 2020). Furthermore, the RBD showed stabilization in the up position, as well as an intermediate conformation, upon treatment with a neutralizing S2 stalk-directed antibody (Li et al., 2022a; Ullah et al., 2021).
 
 Here, we report on the conformational dynamics of SARS-CoV-2 S in the absence or presence of ligands visualized using an smFRET imaging assay (Figure 1A). Our results indicate that ACE2 binding is controlled by the conformational dynamics of the RBD, with ACE2 capturing the intrinsically accessible up conformation rather than inducing a conformational change. We find that antibodies that target diverse epitopes—including epitopes in the N-terminal domain (NTD) and in the S2 stalk, which are distal to the RBD—tend to shift the RBD equilibrium on the D614 spike toward the up conformation, enhancing ACE2 binding. The D614G spike existed in an equilibrium where the RBD favors the up conformation prior to antibody binding. Nonetheless, antibodies that target the S2 stalk further promoted the RBD-up conformation on the D614G spike. We thus observe long-range allosteric modulation of the RBD equilibrium, which in turn regulates exposure of the ACE2-binding site. Inducing exposure of key neutralizing epitopes with antibodies will inform the design of novel therapeutic cocktails (Corti et al., 2021; Hurt and Wheatley, 2021; Sun and Ho, 2020).
 
 ## Results
 
-## Tagged SARS-CoV-2 S maintains a native conformation
+### Tagged SARS-CoV-2 S maintains a native conformation
 
 With the aim of visualizing the conformational dynamics in real time of SARS-CoV-2 S, we developed an smFRET imaging assay. We specifically sought to probe the movement of the RBD between the up and down positions. To this end, guided by the available structural data (Walls et al., 2020; Wrapp et al., 2020; Figure 1A), we inserted the 8-amino-acid A4 peptide into the spike ectodomain (SΔTM) within loops located between the β7 and β8 strands in the NTD at position 161, and between helix α1 and strand β1 in the RBD at position 345 (Figure 1B). Fluorophores were then enzymatically attached to the A4 tags through incubation with AcpS (Zhou et al., 2008). This approach was chosen because it was previously used for conformational dynamics studies of S, as well as the spike proteins from HIV-1 and Ebola virus (Alsahafi et al., 2019; Durham et al., 2020; Lu et al., 2020; Munro et al., 2014). Structural analysis indicated an increase in the distance between the attachment sites of LD550 and LD650 fluorophores after the RBD transitions from the down to the up conformation, suggesting that this labeling strategy would allow us to visualize this dynamic event (Figure 1A; Lu et al., 2020).
 
@@ -44,29 +56,91 @@ Before proceeding to smFRET imaging, we first sought to validate the structure a
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig2-v2.jpg)
 
-**Figure 2.:** (A) Cy5-labeled ACE2 was incubated in the absence or presence of untagged or A4-tagged SΔTM spikes. The diffusion of Cy5-ACE2 was evaluated by FCS using a 647 nm laser as indicated in Materials and methods. (B) Representative normalized autocorrelation curves for Cy5-ACE2 in the absence (circles) or presence (squares) of SΔTM, and the corresponding fits are shown in blue or magenta, respectively. The shift in the autocorrelation to longer timescales seen in the presence of SΔTM reflects the slower diffusion resulting from the larger size of the complex. (C) Cy5-ACE2 (100 nM) was incubated with different concentrations of the indicated SΔTM spikes and the resulting mixture was evaluated by FCS as described in Materials and methods. Dissociation constants (K) determined from fitting the titration are indicated for the different SΔTM constructs. Data are presented as the mean ± standard deviation from three independent measurements. Raw data is provided in DFigure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) Cy5-labeled ACE2 was incubated in the absence or presence of untagged or A4-tagged SΔTM spikes. The diffusion of Cy5-ACE2 was evaluated by FCS using a 647 nm laser as indicated in Materials and methods. (B) Representative normalized autocorrelation curves for Cy5-ACE2 in the absence (circles) or presence (squares) of SΔTM, and the corresponding fits are shown in blue or magenta, respectively. The shift in the autocorrelation to longer timescales seen in the presence of SΔTM reflects the slower diffusion resulting from the larger size of the complex. (C) Cy5-ACE2 (100 nM) was incubated with different concentrations of the indicated SΔTM spikes and the resulting mixture was evaluated by FCS as described in Materials and methods. Dissociation constants (KD) determined from fitting the titration are indicated for the different SΔTM constructs. Data are presented as the mean ± standard deviation from three independent measurements. Raw data is provided in Figure 2—source data 1.
 
-## Effects of ACE2 on the SARS-CoV-2 S RBD conformational equilibrium
+### Effects of ACE2 on the SARS-CoV-2 S RBD conformational equilibrium
 
 To monitor the conformational dynamics of SΔTM D614 and D614G, we purified SΔTM hetero-trimers, formed by co-transfection of 161/345A4-tagged and untagged SΔTM plasmids at a 1:2 ratio. This ensured that on average the SΔTM trimers were comprised of one tagged protomer and two untagged protomers. The SΔTM hetero-trimers were then labeled with equimolar concentrations of LD550 and LD650 fluorophores. The labeled trimers were then incubated in the absence or presence of ACE2 before immobilization on a quartz microscope slide and imaging with TIRF microscopy. smFRET trajectories acquired from individual unbound SΔTM D614 molecules showed transitions between high (~0.65) and low (~0.35) FRET states, suggestive of the down and up RBD positions, respectively (Figure 3A–B). Hidden Markov modeling (HMM) confirmed that a kinetic model with two non-zero FRET states, and a 0-FRET state corresponding to photobleaching, was sufficient to describe the dynamics observed in the smFRET trajectories (Figure 3—figure supplement 1). Consistent with SΔTM D614 preferring the down conformation, HMM analysis indicated 60% ± 3% occupancy in the high-FRET state and 40% ± 3% occupancy in the low-FRET state (Figure 3C). The same FRET states were detected after incubation with ACE2, but the conformational equilibrium shifted to 34% ± 3% in the high-FRET state and 66% ± 3% occupancy in the low-FRET state (Figure 3B–C). This result is consistent with ACE2 promoting the RBD-up conformation. HMM analysis also indicated a reduction in the overall dynamics upon ACE2 binding, as indicated by the transition density plots (TDPs; Figure 3D), which display the relative frequencies of transitions between the high- and low-FRET states. The rates of transition were determined through maximum likelihood optimization of the three-state kinetic model. This analysis indicated that transition from the RBD-down (high FRET) to the RBD-up (low FRET) conformation occurred at kup = 2.6 ± 0.2 s–1, whereas the RBD-up to RBD-down transition occurred at kdown = 3.8 ± 0.2 s–1. ACE2 binding had minimal effect on the RBD-down to the RBD-up transition (kup = 2.2 ± 0.2 s–1) but reduced the RBD-up to RBD-down transition to kdown = 1.3 ± 0.1 s–1 (Figure 3E). This analysis thus specified that the effect of ACE2 binding is to capture and stabilize the RBD-up conformation and reduce transitions to the RBD-down conformation. ACE2 binding does not significantly affect the stability of the down conformation, nor induce transitions to the up conformation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative single-molecule Förster resonance energy transfer (smFRET) trajectory acquired from an individual SΔTM trimer (blue). Idealization resulting from Hidden Markov modeling (HMM) analysis is overlaid (red). The high-FRET (0.65) and low-FRET (0.35) states correspond to the RBD-down and RBD-up conformations, respectively, as indicated. Bulk fluorescence lifetime and anisotropy measurements supported the interpretation of changes in FRET as arising due to conformational transitions that reposition the fluorophores and are presented in Table 1. (B) (Left) FRET histogram for unbound SΔTM D614 overlaid with the sum of two Gaussian distributions centered at 0.65 and 0.35 FRET (sum, red; single distributions, gray) generated from the results of HMM analysis. FRET histograms are presented as the mean ± standard error determined from three technical replicates. The total number of smFRET traces used in the HMM analysis is shown (N). (Right) The same data for the ACE2-bound SΔTM D614 spike. (C) Violin plots indicating the distribution of occupancies in the 0.65-FRET (RBD-down) and 0.35-FRET (RBD-up) states seen for the smFRET traces analyzed. For each plot the gray circles and horizontal lines indicate the median and mean occupancy, respectively. The vertical gray lines extend to the 25th and 75th quantiles. The statistical significance of the differences in occupancies seen for the unbound and ACE2-bound SΔTM D614 trimers was evaluated with a one-way ANOVA (p-value is indicated). (D) Transition density plots (TDPs) for (left) unbound and (right) ACE2-bound SΔTM D614 indicating the frequency of observed FRET transitions determined through HMM analysis. The assignment of the two transitions is indicated on the left-hand TDP. (E) (Top) Kinetic scheme defining the rates of transition between FRET states. (Bottom) Rates of transition for unbound and ACE2-bound SΔTM D614 determined from HMM analysis of the individual smFRET traces. Rate constants are presented as the mean ± standard error determined from the same populations of smFRET traces used to construct the FRET histograms. (F) FRET histograms for the unbound and ACE2-bound SΔTM D614G spike, displayed as in (B). (G) Violin plots indicating FRET state occupancies for the SΔTM D614G spike, displayed as in (C). (H) TDPs for the SΔTM D614G spike, displayed as in (D). (I) Rate constants for the unbound and ACE2-bound SΔTM D614G spike, displayed as in (E). Numeric data are provided in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The Akaike information criterion ( AIC) values were calculated from the maximized log-likelihoods per trace determined using the maximum point likelihood (MPL) algorithm. Model fitness was evaluated using both the SΔTM D614 and D614G data sets, which yielded equivalent results. A circular model with two non-zero FRET states and a 0-FRET state (three states in total with six rate constants) was selected as the simplest model that adequately represented the data. AIC values were not further reduced, indicating no improvement in model fitness, upon consideration of models with greater numbers of parameters.
+
+**Table 1.**
+ Fluorescence lifetime and anisotropy measurements.Data are presented as the mean ± standard error determined from three technical replicates. ACE2, angiotensin-converting enzyme 2; ND, not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Lifetime (ns)</th>
+      <th>Anisotropy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LD550</td>
+      <td>1.167 ± 0.004</td>
+      <td>0.143 ± 0.002</td>
+    </tr>
+    <tr>
+      <td>SΔTM-LD550</td>
+      <td>1.463 ± 0.006</td>
+      <td>0.101 ± 0.003</td>
+    </tr>
+    <tr>
+      <td>SΔTM-LD550 + ACE2</td>
+      <td>1.523 ± 0.008</td>
+      <td>0.093 ± 0.004</td>
+    </tr>
+    <tr>
+      <td>LD650</td>
+      <td>ND</td>
+      <td>0.140 ± 0.001</td>
+    </tr>
+    <tr>
+      <td>SΔTM-LD650</td>
+      <td>ND</td>
+      <td>0.258 ± 0.004</td>
+    </tr>
+    <tr>
+      <td>SΔTM-LD650 + ACE2</td>
+      <td>ND</td>
+      <td>0.247 ± 0.003</td>
+    </tr>
+  </tbody>
+</table>
+
 We next sought to determine the effect of the D614G mutation on the conformational dynamics of SΔTM. We observed the same two FRET states for SΔTM D614G as for the ancestral D614 spike (Figure 3F). However, the unbound SΔTM D614G displayed greater occupancy in the RBD-up conformation (59% ± 3%), and the overall level of dynamics was reduced as compared to D614 (Figure 3G–H). The rate constants, kup and kdown, were reduced to 2.0 ± 0.2 and 1.6 ± 0.2 s–1, respectively (Figure 3I). ACE2 binding further increased the RBD-up occupancy to 69% ± 4% and reduced the overall level of dynamics shown in the TDPs (Figure 3G–H). As seen for D614, ACE2 binding had minimal effect on the rate of transition from the RBD-down to the RBD-up conformation (kup = 2.0 ± 0.4 s–1) but reduced the rate of transition to the RBD-down conformation to kdown = 0.7 ± 0.1 s–1 (Figure 3I). Thus, consistent with structural studies (Yurkovetskiy et al., 2020; Zhang et al., 2021a), the D614G mutation shifted the conformational equilibrium in favor of the RBD-up conformation. Also, here again, ACE2 binding stabilized the RBD-up conformation without affecting the energetics of the RBD-down conformation.
 
-## RBD-targeting antibodies promote the RBD-up conformation of S D614
+### RBD-targeting antibodies promote the RBD-up conformation of S D614
 
 Numerous neutralizing monoclonal antibodies (mAbs) targeting SARS-CoV-2 S have been identified (Li et al., 2022b). However, their mechanisms of action have only been partially described, especially for mAbs that target epitopes outside of the RBD. We first sought to use our smFRET imaging approach to explore the effect of RBD-directed mAbs on SΔTM dynamics for both the D614 and D614G variants. We chose neutralizing RBD-directed mAbs from different classified groups according to the epitope targeted (Gavor et al., 2020): (1) MAb362 (isoforms IgG1 and IgA1) that directly targets the RBM (Ejemel et al., 2020); (2) REGN10987, which binds an epitope located on the side of the RBD, blocking ACE2 binding without directly interacting with the RBM (Hansen et al., 2020); (3) and S309 and CR3022 that bind the RBD but do not compete with ACE2 binding (Pinto et al., 2020; Yuan et al., 2020). Imaging SΔTM pre-incubated with each of the above mAbs revealed a predominant low-FRET state associated with the RBD-up conformation (Figure 4—figure supplement 1). In all cases, the mAbs stabilized the RBD-up conformation of SΔTM D614 as compared to the unbound spike, although none to the extent seen for ACE2 (Figure 4A); and the effect of REGN10987 and S309 did not reach statistical significance. As observed during ACE2 binding, the mAbs generally induced a larger effect on the rate of transition from the RBD-up to the RBD-down conformation (kdown), with a minor effect on the reverse transition (kup; Figure 4B). In contrast, none of the mAbs stabilized the RBD-up conformation for SΔTM D614G to a significant extent (Figure 4C–D), suggesting that the effect of the D614G mutation is sufficient to enable mAb binding without further conformational changes.
 
-## NTD- and Stalk-targeting mAbs allosterically modulate the RBD position
+![Figure 4.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig4-v2.jpg)
+
+**Figure 4.:** (A) The RBD-up conformation occupancy (low-Förster resonance energy transfer [FRET] state) determined through Hidden Markov modeling (HMM) analysis for SΔTM D614 in the absence or presence of the indicated monoclonal antibodies (mAbs). Occupancy data are presented as violin plots as in Figure 3. The indicated p-values were determined by comparing mAb-bound to unbound SΔTM through one-way ANOVA. (B) (Top) Kinetic scheme defining the rates of transition between RBD-up and -down conformations. (Bottom) Rates of transition for SΔTM D614 in the presence of mAbs determined through HMM analysis of the single-molecule FRET (smFRET) traces. Rate constants are presented as mean ± standard error determined from three technical replicates. (C) RBD-up conformation occupancy data for SΔTM D614G displayed as in (A). (D) Kinetic data for SΔTM D614G displayed as in (B). Corresponding FRET histograms for each mAb-bound SΔTM trimer is shown in Figure 4—figure supplement 1. Data are shown numerically in Tables 2 and 3 and provided in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data are shown for both the D614 and D614G spikes in the presence of the indicated mAbs and are presented exactly as in Figure 3. Raw data are provided in Figure 4—figure supplement 1—source data 1.
+
+### NTD- and Stalk-targeting mAbs allosterically modulate the RBD position
 
 Several mAbs have been identified that target epitopes outside of the RBD, some of which bind the NTD and are potently neutralizing (Cerutti et al., 2021; Chi et al., 2020; McCallum et al., 2021b; Suryadevara et al., 2021). We therefore explored the conformational dynamics of both SΔTM D614 and D614G pre-treated with the NTD-targeting mAb 4A8 (Chi et al., 2020), and with the S2 stalk-directed mAbs 1A9 (Zheng et al., 2020) and 2G12 (Williams et al., 2021). 4A8 treatment of SΔTM D614 stabilized the low-FRET state to a comparable extent as seen for the RBD-targeted mAbs, although the effect did not reach statistical significance (Figure 4A). The change in transition rates also followed a similar trend as seen for RBD-targeted mAbs with the RBD-up to RBD-down (kdown) transition being reduced, with a minor effect on the reverse transition (kup; Figure 4B). The stalk-directed mAbs 1A9 and 2G12 significantly stabilized the RBD-up conformation (Figure 4A), although kinetic analysis revealed a modulation of the dynamics that was distinct from the S1-targeted mAbs. Here, in both cases kdown was reduced, while kup was increased (Figure 4B). For SΔTM D614G, 4A8 had only a minor effect on RBD-up occupancy or kinetics, again suggesting that the mAb binds without affecting the conformational equilibrium (Figure 4C–D). However, the stalk-targeting 1A9 and 2G12 mAbs stabilized RBD-up, though not to a statistically significant extent, and induced increases in kup (Figure 4C–D). These data indicate that the S2 stalk-targeting mAbs studied here allosterically induce transition of the RDB to the up conformation on both the D614 and D614G spikes. In contrast, the RBD- and NTD-targeting mAbs studied here capture the up conformation without actively inducing a conformational change, similar to the effects of ACE2 on the RBD conformation.
 
-## Stalk-targeting mAbs allosterically enhance ACE2 binding
+### Stalk-targeting mAbs allosterically enhance ACE2 binding
 
 We next asked if stabilization of the RBD-up conformation by NTD- and stalk-targeted mAbs would increase ACE2 binding. We therefore applied our FCS assay for ACE2 binding after pre-treating SΔTM D614 or D614G with mAbs. MAb362IgA1 and REGN10987 mAbs were used as controls because of their documented ACE2-blocking properties (Ejemel et al., 2020; Hansen et al., 2020). Incubation of SΔTM D614 or D614G with MAb362IgA1 or REGN10987 resulted in statistically significant reductions in ACE2 binding that are consistent with previous reports at comparable concentrations (Ejemel et al., 2020; Hansen et al., 2020; Figure 5A, B). Overall, mAbs that stabilized the RBD-up conformation without blocking the ACE2-binding site tended to promote ACE2 binding (Figure 5). Calculation of the Spearman coefficient indicated a very strong correlation (rs = 0.9048) between ACE2 binding and modulation of the SΔTM RBD conformational equilibrium across all the mAbs under consideration (Figure 5C). S309 and 4A8 provided a slight enhancement of ACE2 binding to SΔTM D614, consistent with their modest impacts on RBD conformation. In contrast, S309 had no significant effect on ACE2 binding to SΔTM D614G, and 4A8 had a slight inhibition of ACE2 binding, again consistent with their modulation of RBD conformation. Of note, the stalk-targeting 1A9 and 2G12 mAbs induced the greatest enhancement of ACE2 binding to SΔTM D614 and D614G, consistent with their allosteric modulation of RBD conformation.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/75433/elife-75433-fig5-v2.jpg)
 
-**Figure 5.:** (A) Binding of ACE2 by (A) SΔTM D614 or (B) D614G spikes pre-incubated with the indicated monoclonal antibodies (mAbs) was measured by fluorescence correlation spectroscopy (FCS) as described in Materials and methods. Data are presented as the average of two independent experiments, each consisting of 20–25 10 s acquisitions. Statistical significance was evaluated through a two-tailed, unpaired Mann-Whitney test as indicated in Materials and methods. p-Values < 0.05 were considered significant and significance values are indicated as *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (C) The change in the RBD-up conformation of SΔTM spikes pre-incubated with the indicated mAbs exhibited a positive correlation with the binding of ACE2 determined through FCS. Statistical significance (p = 0.0046) was found when Spearman test was performed with the 95% level of confidence (α = 0.05). Raw data are provided in Figure 5—source data 1.Figure 5—source data 1.
+**Figure 5.:** (A) Binding of ACE2 by (A) SΔTM D614 or (B) D614G spikes pre-incubated with the indicated monoclonal antibodies (mAbs) was measured by fluorescence correlation spectroscopy (FCS) as described in Materials and methods. Data are presented as the average of two independent experiments, each consisting of 20–25 10 s acquisitions. Statistical significance was evaluated through a two-tailed, unpaired Mann-Whitney test as indicated in Materials and methods. p-Values < 0.05 were considered significant and significance values are indicated as *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (C) The change in the RBD-up conformation of SΔTM spikes pre-incubated with the indicated mAbs exhibited a positive correlation with the binding of ACE2 determined through FCS. Statistical significance (p = 0.0046) was found when Spearman test was performed with the 95% level of confidence (α = 0.05). Raw data are provided in Figure 5—source data 1.
 
 ## Discussion
 
@@ -86,54 +160,648 @@ The use of therapeutic mAb cocktails is a promising strategy, which has been exp
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>ExpiCHO-S</td>
+      <td>Gibco, Thermo Fisher Scientific (Waltham, MA)</td>
+      <td>Cat. No. A29127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Expi293F</td>
+      <td>Gibco, Thermo Fisher Scientific (Waltham, MA)</td>
+      <td>Cat. No. A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MAb362-IgG1(Human monoclonal)</td>
+      <td>PMID:32826914</td>
+      <td></td>
+      <td>ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MAb362-IgA1(Human monoclonal)</td>
+      <td>PMID:32826914</td>
+      <td></td>
+      <td>ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>REGN10987(Mouse monoclonal)</td>
+      <td>This work and PMID:32540901</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S309(Human monoclonal)</td>
+      <td>This work andPMID:32422645</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CR3022(Human monoclonal)</td>
+      <td>This work and PMID:16796401</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>2G12(Human monoclonal)</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>4A8(Human monoclonal)</td>
+      <td>BioVision (Milpitas, CA)</td>
+      <td>Cat. No. A2269-100</td>
+      <td>ELISA (600 nM),FCS (600 nM), smFRET (see Materials and methods section ‘smFRET imaging and data analysis’).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>1A9(Mouse monoclonal)</td>
+      <td>GeneTex (Irvine, CA)</td>
+      <td>Cat. No. GTX632604</td>
+      <td>ELISA (600 nM),FCS (600 nM),SmFRET: see Materials and methods section ‘smFRET imaging and data analysis’,WB (1:2000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-6x-His-tag(Rabbit polyclonal)</td>
+      <td>Invitrogen (Waltham, MA)</td>
+      <td>Cat. No. PA1-983B</td>
+      <td>WB (1:2000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgG Fc(Rabbit polyclonal)</td>
+      <td>Invitrogen (Waltham, MA)</td>
+      <td>Cat. No. 31455</td>
+      <td>ELISA (1:5000), WB (1:5000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-human IgG Fc(Goat polyclonal)</td>
+      <td>Invitrogen (Waltham, MA)</td>
+      <td>Cat. No. A18823</td>
+      <td>ELISA (1:10,000), WB (1:10,000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-human kappa(Goat polyclonal)</td>
+      <td>SouthernBiotech (Birmingham, AL)</td>
+      <td>Cat. No. 2060–05</td>
+      <td>ELISA (1:4000).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit IgG(Goat polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab205718</td>
+      <td>WB (1:50,000).</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_ REGN10987-heavy_chain­</td>
+      <td>This work and PMID:32540901</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_ REGN10987-light_chain­</td>
+      <td>This work and PMID:32540901</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_S309-heavy_chain­</td>
+      <td>This work andPMID:32422645</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_S309-light_chain­</td>
+      <td>This work andPMID:32422645</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_CR3022-heavy_chain­</td>
+      <td>This work and PMID:16796401</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1_CR3022-light_chain­</td>
+      <td>This work and PMID:16796401</td>
+      <td></td>
+      <td>See Materials and methods section ‘Antibodies’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid_2G12-heavy_chain­</td>
+      <td>Peter D Kwong laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid_2G12-light_chain­</td>
+      <td>Peter D Kwong laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 SARS-CoV-2 SΔTM (plasmid)</td>
+      <td>This work.GenScript (Piscataway, NJ)</td>
+      <td></td>
+      <td>See Materials and methods section ‘Plasmids and site-directed mutagenesis’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 SARS-CoV-2 SΔTM 161/345A4 double-tagged (plasmid)</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Plasmids and site-directed mutagenesis’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 SARS-CoV-2 SΔTM D614G (plasmid)</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Plasmids and site-directed mutagenesis’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1 SARS-CoV-2 SΔTM D614G 161/345A4 double-tagged (plasmid)</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Plasmids and site-directed mutagenesis’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-ACE2-his (plasmid)</td>
+      <td>PMID:32991842</td>
+      <td>Addgene No. 158089 (Watertown, MA)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 SΔTM</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Protein expression and purification’.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 SΔTM 161/345A4 double-tagged</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Protein expression and purification’.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 SΔTM D614G</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Protein expression and purification’.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SARS-CoV-2 SΔTM D614G 161/345A4 double-tagged</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Protein expression and purification’.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ACE2</td>
+      <td>This work</td>
+      <td></td>
+      <td>See Materials and methods section ‘Protein expression and purification’.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Acyl carrier protein synthase (AcpS)</td>
+      <td>PMID:31952255</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs(Ipswich, MA)</td>
+      <td>Cat. No. E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Coomassie Plus (Bradford) Assay Kit</td>
+      <td>Thermo Fisher Scientific (Waltham, MA)</td>
+      <td>Cat. No. 23,236</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperSignal West Pico PLUS Chemiluminescent Substrate</td>
+      <td>Thermo Scientific (Waltham, MA)</td>
+      <td>Cat. No. 34580</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>1-Step Ultra TBM-ELISA</td>
+      <td>Thermo Scientific (Waltham, MA)</td>
+      <td>Cat. No. 34028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy5-conjugated n-hydroxysuccinimide ester</td>
+      <td>Cytiva (Marlborough, MA)</td>
+      <td>Cat. No. PA15100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coenzyme A (CoA)-conjugated LD550 fluorophore</td>
+      <td>Lumidyne Technologies (New York, NY),</td>
+      <td>Cat. No. LD550-CS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coenzyme A (CoA)-conjugated LD650 fluorophore</td>
+      <td>Lumidyne Technologies (New York, NY),</td>
+      <td>Cat. No. LD650-CS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Micromanager</td>
+      <td>PMID:25606571micro-manager.org</td>
+      <td>v2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPARTAN</td>
+      <td>https://www.scottcblanchardlab.com/software and PMID:26878382</td>
+      <td>Version 3.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab (Mathworks, Natick, MA)</td>
+      <td>Mathworks (Natick, MA)</td>
+      <td>Version R2018b</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Maximum point likelihood algorithm</td>
+      <td>PMID:11023897</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software(San Diego, CA)</td>
+      <td>Version 9.2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL software</td>
+      <td>The PyMOL Molecular Graphic System, Schrödinger Inc(New York, NY)</td>
+      <td>Version 2.0.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce Protein G Agarose</td>
+      <td>Thermo Fisher Scientific (Waltham, MA)</td>
+      <td>Cat. No. 20398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA Agarose</td>
+      <td>Invitrogen (Waltham, MA)</td>
+      <td>Cat. No. R901-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 10/300 GL column</td>
+      <td>GE Healthcare (Chicago, IL)</td>
+      <td>Cat. No. 28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gel Filtration Standard</td>
+      <td>Bio-Rad (Hercules, CA)</td>
+      <td>Cat. No. 1511901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Synergy H1 microplate reader</td>
+      <td>BioTek (Winooski, VT)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Typhoon 9,410variable mode imager</td>
+      <td>GE Amersham Biosciences (Amersham, UK)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CorTector SX100 instrument</td>
+      <td>LightEdge Technologies(Beijing, China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>QuantaMaster 400 fluorimeter</td>
+      <td>Horiba (Kyoto, Japan)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 ExpiCHO-S and Expi293F cell lines (Gibco, Thermo Fisher Scientific, Waltham, MA) were cultured in ExpiCHO Expression and Expi293 Expression media (Gibco, Thermo Fisher Scientific, Waltham, MA), respectively. Both cell lines were maintained at 37°C, 8% CO2 with orbital shaking according to manufacturer’s instructions. Expi293F cells were confirmed to be mycoplasma negative, while ExpiCHO-S were not tested.
 
-## Antibodies
+### Antibodies
 
 Monoclonal antibodies MAb362 isotypes IgG1 and IgA1 have been described before (Ejemel et al., 2020). REGN10987, S309, and CR3022 antibodies heavy and light variable region sequences (Hansen et al., 2020; ter Meulen et al., 2006; Pinto et al., 2020) were synthesized and cloned into pcDNA3.1 vector (Invitrogen, Thermo Fisher Scientific, Waltham, MA) in-frame with human IgG heavy or light chain Fc fragment. The recombinant constructs of heavy and light chain were transfected at 1:1 ratio into Expi293F cells using the ExpiFectamine 293 Transfection Kit (Gibco, Thermo Fisher Scientific, Waltham, MA). Four to five days after transfection the antibodies were purified from the supernatant by protein A affinity resin (ProSep-vA ultra, Millipore, Burlington, MA) and dialyzed into phosphate buffered saline pH 7.2 (PBS) overnight at 4°C. 2G12 mAb (Buchacher et al., 1994; Scanlan et al., 2002; Trkola et al., 1996), was expressed in ExpiCHO-S cells through co-transfection of plasmids encoding light and IgG heavy chains (Peter Kwong laboratory) using the ExpiFectamine CHO transfection kit (Gibco, Thermo Fisher Scientific, Waltham, MA) according to manufacturer’s instructions. The antibody was purified from the cell culture supernatant 12 days post-transfection through protein G affinity resin (Thermo Fisher Scientific, Waltham, MA), and buffer exchanged and concentrated in PBS using centrifugal concentrators (Sartorius AG, Göttingen, Germany; Millipore, Burlington, MA). Monoclonal antibodies 4A8 and 1A9 were purchased from BioVision (Milpitas, CA) and GeneTex (Irvine, CA), respectively. Anti-6x-His-tag polyclonal antibody, and both horseradish peroxidase (HRP)-conjugated anti-mouse IgG Fc and anti-human IgG Fc were purchased from Invitrogen (Waltham, MA). Both HRP-conjugated anti-human kappa and anti-rabbit IgG were purchased from SouthernBiotech (Birmingham, AL) and Abcam (Cambridge, UK), respectively.
 
-## Plasmids and site-directed mutagenesis
+### Plasmids and site-directed mutagenesis
 
 The mammalian codon-optimized gene coding SARS-CoV-2 (Wuhan-Hu-1 strain, GenBank ID: MN908947.3) glycoprotein ectodomain (SΔTM) (residues Q14–K1211) with SGAG substitution at the furin cleavage site (R682–R685), and proline substitutions at K986 and V987, was synthesized by GenScript (Piscataway, NJ) and inserted into pcDNA3.1(-). A C-terminal T4 fibritin foldon trimerization motif, a TEV protease cleavage site, and a His-tag were synthesized downstream of the SARS-CoV-2 SΔTM (Figure 1B). Insertion of A4 peptide (DSLDMLEW) at amino acid positions 161 and 345 in SARS-CoV-2 SΔTM was done through overlap-extension PCR (Heckman and Pease, 2007). The D614G amino acid change into both untagged and 161/345A4-tagged SΔTM constructs was done using the Q5 Site-Directed Mutagenesis Kit (NEB, Ipswich, MA) according to the manufacturer’s instructions. Insertions and site-directed mutagenesis were confirmed through Sanger sequencing (GENEWIZ, Cambridge, MA).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Expression SΔTM trimers were performed by transfection of ExpiCHO-S cells with the plasmids described above using the ExpiFectamine CHO transfection kit (Gibco, Thermo Fisher Scientific, Waltham, MA) and according to manufacturer’s instructions. SΔTM hetero-trimers for smFRET experiments were expressed by co-transfection with both the untagged SΔTM (D614 or D614G) construct and the corresponding 161/345A4-tagged SΔTM plasmid at a 2:1 molar ratio. Untagged SΔTM trimers or A4-tagged hetero-trimers were purified from cell culture supernatants as follows. Supernatants containing soluble SΔTM trimers were harvested 9 days post-transfection and adjusted to 20 mM imidazole, 1 mM NiSO4, and pH 8.0 before binding to the Ni-NTA resin. The resin was washed, and protein was eluted from the column with 300 mM imidazole, 500 mM NaCl, 20 mM Tris-HCl pH 8.0, and 10% (v/v) glycerol. Elution fractions containing SΔTM were pooled and concentrated by centrifugal concentrators (Sartorius AG, Göttingen, Germany). The SΔTM protein was then further purified by size exclusion chromatography on a Superdex 200 Increase 10/300 GL column (GE Healthcare, Chicago, IL) (Figure 1—figure supplement 1). Double 161/345A4-tagged SΔTM homo-trimers for functional assays were extracted from ExpiCHO-S cells at 6 days post-transfection with a non-denaturing lysis buffer (20 mM Tris-HCl pH 8.0, 500 mM NaCl, 10% (v/v) glycerol, 1% (v/v) Triton X-100, 2 mg/ml aprotinin, 1 mg/ml leupeptin, and 1 mg/ml pepstatin A (Sigma-Aldrich, St Louis, MO)). After 20 min of centrifugation at 4000 × g, the soluble fraction was diluted with two volumes of the same buffer without Triton X-100. These extracts were then passed through a 0.45 mm polyethersulfone filter unit (Nalgene, Thermo Fisher Scientific, Waltham, MA), and the tagged SΔTM was purified by affinity chromatography using Ni-NTA agarose beads (Invitrogen, Waltham, MA) and size exclusion chromatography as described above.
 
 A plasmid encoding soluble monomeric ACE2 with a C-terminal 6x-His-tag was transfected into ExpiCHO-S cells as described above. Supernatant containing ACE2 was harvested 6 days post-transfection, dialyzed at 4°C into 20 mM Tris-HCl pH 8.0, 500 mM NaCl, and 10% (v/v) glycerol buffer, using a 10 kDa MWCO dialysis membrane (Spectrum Repligen, Waltham, MA). For ACE2 purification, the dialyzed supernatant was supplemented with 20 mM imidazole pH 8.0 before purification as described above for SΔTM. Purified protein concentrations were estimated by UV absorbance at 280 nm and Bradford assay (Thermo Fisher Scientific, Waltham, MA). SΔTM concentration was also estimated by densitometric analysis of protein bands on immunoblots with the mAb 1A9 as described below, and using ImageJ software v1.52q (NIH, Bethesda, MD).
 
-## PAGE and immunoblots
+### PAGE and immunoblots
 
 Protein expression was evaluated by denaturing PAGE in 4–20% acrylamide (Bio-Rad, Hercules, CA) and either staining with Coomassie blue or with immunoblots performed as follows. Protein gels were transferred into nitrocellulose membranes (Bio-Rad, Hercules, CA) according to the manufacturer’s instructions. After 1 hr of blocking with 5% (w/v) skim milk in 0.1% (v/v) Tween-20 (Fisher Scientific, Hampton, NH) and PBS (PBS-T), membranes were incubated by shaking overnight at 4°C with dilutions 1:2000 in blocking buffer of the primary antibody. We used a rabbit anti-6x-His antibody (Invitrogen, Waltham, MA) to detect histidine-tagged proteins or mouse 1A9 antibody (GeneTex, Irvine, CA) for specific detection of SARS-CoV-2 SΔTM. Membranes were washed three times with PBS-T and then incubated with secondary HRP-conjugated anti-rabbit IgG (Abcam, Cambridge, UK) or anti-mouse IgG (Invitrogen, Waltham, MA) antibodies diluted in 0.5% (w/v) skim milk/PBS-T and incubated for 1 hr at room temperature. After three washes with PBS-T, membranes were developed using SuperSignal West Pico PLUS Chemiluminescent Substrate (Thermo Scientific, Waltham, MA) according to the manufacturer’s instructions.
 
-## ELISA
+### ELISA
 
 Ninety-six-well polystyrene plates (Thermo Scientific, Waltham, MA) were coated either with 200 ng of SARS-CoV-2 SΔTM proteins or bovine serum albumin (BSA, Thermo Scientific, Waltham, MA) through incubation overnight at 4°C. Plates were washed three times with PBS and blocked for 1 hr at room temperature with the immunoblot blocking buffer described above. After three washes with PBS, plates were incubated with 600 nM of the indicated antibodies diluted in PBS for 2 hr at room temperature. As secondary antibodies, HRP-conjugated anti-human kappa antibody (SouthernBiotech, Birmingham, AL) diluted 1:4000 in PBS was used in wells treated with MAb362, CR3022, and S309 antibodies, while HRP-conjugated anti-human IgG Fc (Invitrogen, Waltham, MA) diluted 1:10,000 in PBS was used in wells treated with REGN10987, 4A8, and 2G12 antibodies. A 1:5000 dilution of HRP-conjugated anti-mouse IgG Fc antibody in PBS was used in 1A9 antibody-treated wells. Plates were incubated with the secondary antibody dilutions for 1 hr at 37°C and developed with 1-Step Ultra TBM-ELISA (Thermo Scientific, Waltham, MA) reagent according to the manufacturer’s instructions. The absorbances at 450 nm were measured using a Synergy H1 microplate reader (BioTek Winooski, VT). Absorbance values from non-specific binding to BSA-coated wells were subtracted from the values obtained for SΔTM-coated wells. The background-subtracted absorbance values were then normalized to the values obtained from antibodies binding to untagged SΔTM.
 
-## Fluorescent labeling of proteins
+### Fluorescent labeling of proteins
 
 Purified A4-tagged SΔTM hetero-trimers for smFRET imaging were prepared by overnight incubation at room temperature with 5 μM each of coenzyme A (CoA)-conjugated LD550 and LD650 fluorophores (Lumidyne Technologies, New York, NY), 10 mM MgOAc, 50 mM HEPES pH 7.5, and 5 μM acyl carrier protein synthase (AcpS). Labeled protein was purified away from unbound dye and AcpS by size exclusion chromatography as above described, and elution fractions containing labeled SΔTM hetero-trimers were pooled and concentrated. Aliquots were stored at –80°C until use. Purified ACE2 was labeled with Cy5 conjugated to n-hydroxysuccinimide ester (Cytiva, Marlborough, MA) according to the manufacturer’s instructions. ACE2 was then purified away from unbound dye by Ni-NTA affinity chromatography as described above, followed by buffer exchanged into PBS pH 7.4 using 10 kDa MWCO centrifuge concentrators (Millipore, Burlington, MA).
 
 Purified LD550/LD650-labeled SΔTM spikes and Cy5-labeled ACE2 samples were analyzed by denaturing PAGE and in-gel fluorescence was visualized using a Typhoon 9410 variable mode imager (GE Amersham Biosciences, Amersham, UK) by laser excitation at 532 nm (emission filter: 580 BP 30 Cy3) to detect LD550, or 633 nm (emission filter: 670 BP 30 Cy5) to detect LD650 or Cy5 (Figure 1—figure supplement 1). To verify that changes in FRET could be interpreted as arising due to conformational transitions that reposition the fluorophores with respect to one another, bulk measurements of fluorescence lifetime and anisotropy were performed with a QuantaMaster 400 fluorimeter (Horiba, Kyoto, Japan). Measurements were performed in triplicate using 10 nM LD550/LD650-labeled SΔTM in the absence or presence of ACE2, under conditions identical to those described below for smFRET imaging, as well as using equivalent concentrations of unbound LD550 and LD650 fluorophores. While modest changes were seen when comparing free fluorophore to labeled SDTM, no significant changes in lifetime or anisotropy were seen when comparing unbound to ACE2-bound SΔTM.
 
-## smFRET imaging and data analysis
+### smFRET imaging and data analysis
 
 Labeled SΔTM spikes (100 nM) were incubated in the absence or presence of 600 nM unlabeled ACE2 or the indicated antibody for 90 min at room temperature in Imaging Buffer (50 mM Tris-HCl pH 7.5, 50 mM KCl). This ligand concentration is approximately 100- to 1000-fold above reported dissociation constants for ACE2 and mAbs under consideration (Chi et al., 2020; Ejemel et al., 2020; Hansen et al., 2020; Pinto et al., 2020; Walls et al., 2020; Yuan et al., 2020; Yurkovetskiy et al., 2020). The exception here is mAb 2G12, which recognizes a glycan epitope with relatively low affinity (343 nM) (Williams et al., 2021). Our results may thus underestimate the effects of 2G12 on SΔTM conformation due to incomplete binding. Overall, reported rates of dissociation are in the range of 10–5 to 10–2 s–1. Thus, it remains possible that after 90 min incubation, some of the SΔTM:ligand interactions may not be fully equilibrated. The 6x-His-tagged SΔTM was then immobilized on streptavidin-coated quartz microscope slides by way of Ni-NTA-biotin (vendor) and imaged using wide‐field prism‐based TIRF microscopy in Imaging Buffer as described (Alsahafi et al., 2019; Das et al., 2020; Das et al., 2018; Durham et al., 2020). Imaging was performed in the continued presence of ligands at room temperature and smFRET data were collected using Micromanager (Edelstein et al., 2014) v2.0 (micro-manager.org) at 25 frames/s. All smFRET data were processed and analyzed using the SPARTAN software (https://www.scottcblanchardlab.com/software) in Matlab (Mathworks, Natick, MA) (Juette et al., 2016). Figures displaying smFRET data were also prepared in Matlab. smFRET traces were identified according to following criteria: mean fluorescence intensity from both donor and acceptor were greater than 50, duration of smFRET trajectory exceeded five frames, correlation coefficient calculated from the donor and acceptor fluorescence traces ranged between –1.1 and 0.5, and signal‐to‐noise ratio was greater than 8. Traces that fulfilled these criteria were then verified manually. Traces from each of three technical replicates were then compiled into FRET histograms and the mean probability per histogram bin ± standard error were calculated, as shown in Figure 3 and Figure 4—figure supplement 1. Traces were idealized to a three-state HMM (two non-zero-FRET states and a 0-FRET state) and the transition rates were optimized using the maximum point likelihood (MPL) algorithm (Qin et al., 2000) implemented in SPARTAN. The rates reported in Figures 3 and 4, and Tables 2 and 3 reflect the mean ± standard error determined from three technical replicates. The three-state model was selected by comparing the Akaike information criterion (AIC) across multiple different models with a range of state numbers and topologies. For each model the maximized log-likelihood per trace was estimated using the MPL algorithm. The AIC values were calculated according to AICi = 2·Ni – 2·LLi, where Ni and LLi are the number of model parameters and the maximized log-likelihood per trace for the ith model considered. In this analysis, of the models considered, the model with the minimum AIC value is taken to be the model that best reflects the experimental data. Accordingly, we found that the three-state model adequately reflects the data, with no further reduction in AIC resulting from inclusion of addition states or model parameters (Figure 3—figure supplement 1). The idealizations from the total population of traces analyzed were used to construct Gaussian distributions, which were overlaid on the FRET histograms to visualize the results of the HMM analysis. These idealizations were also used to calculate the distribution in occupancies (fraction of time until photobleaching) in the 0.65- and 0.35-FRET states across the total population of traces. The distributions in occupancies were used to construct violin plots in Matlab, as well as calculate median occupancy, mean occupancy, 25th and 75th quantiles, and standard errors, as displayed in Figures 3 and 4, and Table 2; Table 3. Statistical significance measures (p-values) were determined by one-way ANOVA in Matlab. This analysis displays the full breadth of dynamic behavior across the total population of traces analyzed. The total number of traces analyzed was sufficient to ensure minimally 85% statistical power during comparison of occupancy data from unbound to ligand-bound SΔTM.
 
-## FCS-based ACE2-binding assay
+**Table 2.**
+ Förster resonance energy transfer (FRET)-state occupancies and rate constants for SΔTM D614.Data are presented at mean ± standard error determined from the total population of traces analyzed.
 
-ACE2 binding to the untagged and A4-tagged SΔTM spikes was evaluated by FCS as follows. Several concentrations ranging from 0.1 to 200 nM SΔTM were incubated with 100 nM Cy5-labeled ACE2 in PBS pH 7.4 for 1 hr at room temperature. Where indicated, 200 nM SΔTM was incubated with 600 nM of the indicated antibody for 1 hr at room temperature, before adding 100 nM Cy5-labeled ACE2. Non-specific antibody binding to Cy5-labeled ACE2 was determined by incubation in the absence of SΔTM. Samples were then placed on No. 1.5 coverslips (ThorLabs, Newton, NJ) and mounted on a CorTector SX100 instrument (LightEdge Technologies, Beijing, China) equipped with a 638 nm laser; 10–25 autocorrelation measurements per independent experiment were made for 10 s each at room temperature for each condition. To obtain the fractions of unbound and bound (f) ACE2 after incubation with SΔTM, normalized autocorrelation curves were fit to a model of the diffusion of two species in a three-dimensional Gaussian confocal volume (Ducas and Rhoades, 2012; Ries and Schwille, 2012),G(τ)=(1−f)⋅gunbound(τ)+f⋅gbound(τ),
 
-wheregi(τ)=(1+ττi)−1(1+τs2τi)−1/2
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">SARS-CoV-2 spikes D614</th>
+      <th colspan="2">FRET-state occupancies (%)</th>
+      <th colspan="2">Rate constants (s–1)</th>
+    </tr>
+    <tr>
+      <th>Low-FRET (0.35)RBD-up conformation</th>
+      <th>High-FRET (0.65)RBD-down conformation</th>
+      <th>kdown(Low to high FRET)</th>
+      <th>kup(High to low FRET)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unbound</td>
+      <td>40 ± 3</td>
+      <td>60 ± 3</td>
+      <td>3.8 ± 0.2</td>
+      <td>2.6 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ ACE2</td>
+      <td>66 ± 3</td>
+      <td>34 ± 3</td>
+      <td>1.3 ± 0.1</td>
+      <td>2.2 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ MAb362IgG1</td>
+      <td>52 ± 2</td>
+      <td>48 ± 2</td>
+      <td>2.2 ± 0.1</td>
+      <td>2.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ MAb362IgA1</td>
+      <td>54 ± 2</td>
+      <td>46 ± 2</td>
+      <td>1.8 ± 0.1</td>
+      <td>2.0 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ REGN10987</td>
+      <td>52 ± 3</td>
+      <td>48 ± 3</td>
+      <td>2.4 ± 0.2</td>
+      <td>2.2 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ S309</td>
+      <td>49 ± 3</td>
+      <td>51 ± 3</td>
+      <td>2.3 ± 0.1</td>
+      <td>2.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ CR3022</td>
+      <td>54 ± 4</td>
+      <td>46 ± 4</td>
+      <td>2.3 ± 0.2</td>
+      <td>3.1 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ 4A8</td>
+      <td>48 ± 2</td>
+      <td>52 ± 2</td>
+      <td>2.3 ± 0.1</td>
+      <td>2.3 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ 1A9</td>
+      <td>60 ± 2</td>
+      <td>40 ± 2</td>
+      <td>2.2 ± 0.1</td>
+      <td>3.4 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ 2G12</td>
+      <td>59 ± 2</td>
+      <td>41 ± 2</td>
+      <td>2.5 ± 0.1</td>
+      <td>3.4 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Förster resonance energy transfer (FRET)-state occupancies and rate constants for SΔTM D614G.Data are presented at mean ± standard error determined from the total population of traces analyzed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">SARS-CoV-2 spikes D614G</th>
+      <th colspan="2">FRET-state occupancies (%)</th>
+      <th colspan="2">Rate constants (s–1)</th>
+    </tr>
+    <tr>
+      <th>Low-FRET (0.35)RBD-up conformation</th>
+      <th>High-FRET (0.65)RBD-down conformation</th>
+      <th>kdown(Low to high FRET)</th>
+      <th>kup(High to low FRET)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unbound</td>
+      <td>59 ± 3</td>
+      <td>41 ± 3</td>
+      <td>1.6 ± 0.2</td>
+      <td>2.0 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ ACE2</td>
+      <td>69 ± 4</td>
+      <td>31 ± 4</td>
+      <td>0.7 ± 0.1</td>
+      <td>2.0 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>+ MAb362IgG1</td>
+      <td>58 ± 2</td>
+      <td>42 ± 2</td>
+      <td>2.0 ± 0.1</td>
+      <td>2.6 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ MAb362IgA1</td>
+      <td>63 ± 2</td>
+      <td>37 ± 2</td>
+      <td>1.6 ± 0.1</td>
+      <td>2.6 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>+ REGN10987</td>
+      <td>63 ± 4</td>
+      <td>37 ± 4</td>
+      <td>2.0 ± 0.2</td>
+      <td>3.7 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>+ S309</td>
+      <td>54 ± 3</td>
+      <td>46 ± 3</td>
+      <td>2.2 ± 0.1</td>
+      <td>2.4 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ CR3022</td>
+      <td>65 ± 4</td>
+      <td>35 ± 4</td>
+      <td>1.1 ± 0.2</td>
+      <td>1.8 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ 4A8</td>
+      <td>57 ± 3</td>
+      <td>43 ± 3</td>
+      <td>2.0 ± 0.2</td>
+      <td>2.3 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ 1A9</td>
+      <td>66 ± 3</td>
+      <td>34 ± 3</td>
+      <td>1.7 ± 0.1</td>
+      <td>3.2 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>+ 2G12</td>
+      <td>69 ± 3</td>
+      <td>31 ± 3</td>
+      <td>1.4 ± 0.1</td>
+      <td>2.7 ± 0.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### FCS-based ACE2-binding assay
+
+ACE2 binding to the untagged and A4-tagged SΔTM spikes was evaluated by FCS as follows. Several concentrations ranging from 0.1 to 200 nM SΔTM were incubated with 100 nM Cy5-labeled ACE2 in PBS pH 7.4 for 1 hr at room temperature. Where indicated, 200 nM SΔTM was incubated with 600 nM of the indicated antibody for 1 hr at room temperature, before adding 100 nM Cy5-labeled ACE2. Non-specific antibody binding to Cy5-labeled ACE2 was determined by incubation in the absence of SΔTM. Samples were then placed on No. 1.5 coverslips (ThorLabs, Newton, NJ) and mounted on a CorTector SX100 instrument (LightEdge Technologies, Beijing, China) equipped with a 638 nm laser; 10–25 autocorrelation measurements per independent experiment were made for 10 s each at room temperature for each condition. To obtain the fractions of unbound and bound (f) ACE2 after incubation with SΔTM, normalized autocorrelation curves were fit to a model of the diffusion of two species in a three-dimensional Gaussian confocal volume (Ducas and Rhoades, 2012; Ries and Schwille, 2012),
+
+$$
+G(\tau)=(1−f)⋅g_{unbound}(\tau)+f⋅g_{bound}(\tau),
+$$
+
+where
+
+$$
+g_{i}(\tau)=(1+\frac{\tau}{\tau_{i}})^{−1}(1+\frac{\tau}{s^{2}\tau_{i}})^{−1/2}
+$$
 
 and ti is the diffusion time for bound or unbound ACE2 and s is the structure factor that parameterizes the dimensions of the confocal volume. To determine tunbound FCS data was obtained for ACE2 in the absence of SΔTM and fit to a model of a single diffusing species (f = 0). This value was then fixed during fitting of the FCS data obtained after incubation of ACE2 with SΔTM, so that only tbound and f were allowed to vary. ACE2 binding was expressed as the average bound fraction (f) at each SΔTM concentration normalized either to the fraction bound at the highest SΔTM concentration (Figure 2C) or to the fraction bound in the absence of antibodies (Figure 5C). All fitting was performed with a non-linear least-squares algorithm in MATLAB (The MathWorks, Waltham, MA). Dissociation constants (KD) were determined using GraphPad Prism version 9.2.0 (GraphPad Software, San Diego, CA).
 
-## Structural analysis
+### Structural analysis
 
 Protein structures from RCSB PDB were visualized and analyzed using PyMOL software version 2.0.7 (The PyMOL Molecular Graphic System, Schrödinger Inc, New York, NY).
 
-## Correlation and statistical analysis
+### Correlation and statistical analysis
 
 Data sets subjected to statistical analysis were first tested for normality using GraphPad Prism version 9.2.0 (GraphPad Software, San Diego, CA). Where indicated, statistical significances were evaluated through either two-tailed parametric (unpaired t-test with Welch’s correction) or nonparametric (unpaired Mann-Whitney) tests. Both tests were performed with 95% confidence levels and p-values < 0.05 were considered significant. Significance values are indicated as *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. Two-tailed nonparametric Spearman test with 95% confidence was performed to evaluate the correlation level between the occupancy of SΔTM in the open conformation due to allosteric antibody binding and ACE2 binding (Figures 4 and 5). The correlation level between the above variables was determined according to established criteria (Schober et al., 2018) regarding Spearman coefficients (rs) rank values as follows: 0.00–0.10 = ‘negligible’, 0.10–0.39 = ‘weak’, 0.40–0.69 = ‘moderate’, 0.70–0.89 = ‘strong’, and 0.90–1.00 = ‘very strong’ correlation.

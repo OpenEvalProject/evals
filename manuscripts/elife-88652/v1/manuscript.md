@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04dkp9463 Integrative Model-Based Cognitive Neuroscience Research Unit, University of Amsterdam Amsterdam Netherlands
-2. https://ror.org/01nfmeh72 Sensorimotor Neuroscience and Ageing Research Lab, School of Psychological Sciences, University of Tasmania Hobart Australia
-3. https://ror.org/027bh9e22 Department of Psychology, Faculty of Social Sciences, Leiden University Leiden Netherlands
+1. Integrative Model-Based Cognitive Neuroscience Research Unit, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+2. Sensorimotor Neuroscience and Ageing Research Lab, School of Psychological Sciences, University of Tasmania Hobart Australia ([ROR:01nfmeh72](https://ror.org/01nfmeh72))
+3. Department of Psychology, Faculty of Social Sciences, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
 4. Full brain picture Analytics Leiden Netherlands
 
 † Corresponding author
@@ -36,9 +36,80 @@ Here, we reprocess and reanalyse five functional SST datasets to shed light on t
 
 ## Results
 
-## Behavioural analyses
+### Behavioural analyses
 
 Table 1 summarizes the descriptive statistics of the behavioural data from each dataset. Consistent with the assumptions of the standard horse-race model (Logan and Cowan, 1984), the median failed stop RT is significantly faster within all datasets than the median go RT (Aron_3T: p < 0.001, BFlog10 = 2.77; Poldrack_3T: p < 0.001, BFlog10 = 23.49; deHollander_7T: p < 0.001, BFlog10 = 8.88; Isherwood_7T: p < 0.001, BFlog10 = 2.95; Miletic_7T: p = 0.0019, BFlog10 = 1.35). Mean SSRTs were calculated using the integration method and are all within normal range across the datasets. The mean stopping accuracy (near 50%) across all datasets indicates that the staircasing procedure operated accordingly and successfully kept stop-signal delays (SSDs) tailored to the SSRT of participants during the task. Longer RTs were found in the Isherwood_7T dataset in comparison to the four other datasets. The only difference in procedure in the Isherwood_7T dataset is the use of a visual stop signal as opposed to an auditory stop signal. This RT difference is consistent with previous research, where auditory stop signals and visual go stimuli have been associated with faster RTs compared to unimodal visual presentation (Carrillo-de-la-Peña et al., 2019; Weber et al., 2024). The mean SSRTs and probability of stopping are within normal range, indicating that participants understood the task and responded in the expected manner.
+
+**Table 1.**
+ Descriptive statistics of behaviour in the SST across each dataset.Standard errors are given.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Median go RT (ms)</th>
+      <th>Median failed stop RT (ms)</th>
+      <th>Go omissions (%)</th>
+      <th>Go errors (%)</th>
+      <th>Mean SSRT (ms)</th>
+      <th>Median SSD (ms)</th>
+      <th>Mean stopping accuracy (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aron_3T</td>
+      <td>423 ± 18</td>
+      <td>382 ± 11</td>
+      <td>0.7 ± 0.4</td>
+      <td>0.6 ± 0.2</td>
+      <td>189 ± 8</td>
+      <td>227 ± 17</td>
+      <td>53 ± 1</td>
+    </tr>
+    <tr>
+      <td>Poldrack_3T</td>
+      <td>466 ± 9</td>
+      <td>426 ± 8</td>
+      <td>0.1 ± 0.04</td>
+      <td>0.9 ± 0.1</td>
+      <td>209 ± 5</td>
+      <td>279 ± 11</td>
+      <td>52 ± .6</td>
+    </tr>
+    <tr>
+      <td>deHollander_7T</td>
+      <td>472 ± 24</td>
+      <td>439 ± 22</td>
+      <td>1.6 ± 0.5</td>
+      <td>0.3 ± 0.1</td>
+      <td>219 ± 8</td>
+      <td>250 ± 22</td>
+      <td>54 ± 2</td>
+    </tr>
+    <tr>
+      <td>Isherwood_7T</td>
+      <td>626 ± 25</td>
+      <td>543 ± 22</td>
+      <td>1.9 ± 0.4</td>
+      <td>2.2 ± 0.4</td>
+      <td>256 ± 8</td>
+      <td>350 ± 30</td>
+      <td>54 ± 1</td>
+    </tr>
+    <tr>
+      <td>Miletic_7T</td>
+      <td>445 ± 17</td>
+      <td>414 ± 15</td>
+      <td>1.1 ± 0.5</td>
+      <td>0.7 ± 0.2</td>
+      <td>219 ± 20</td>
+      <td>230 ± 23</td>
+      <td>50 ± 1</td>
+    </tr>
+  </tbody>
+</table>
 
 To observe quantitative differences in signal quality between the datasets, we first calculated region of interest (ROI)-wise temporal signal-to-noise ratio (tSNR) maps of the unsmoothed data. In Figure 1, we show both the corrected and uncorrected tSNR values for five ROIs. As the tSNR values across each hemisphere were similar, we opted to take the mean across both. The corrected tSNR values display the clear benefit of 7T acquisition compared to 3T in terms of data quality. In the cortical ROIs, the 7T datasets appear to perform equally well, though when zooming in on subcortical ROIs, the deHollander_7T and Miletic_7T datasets display superiority. The uncorrected tSNR values paint a different picture. These tSNRs are even across all the datasets, with the exception of the Isherwood_7T dataset which appears to suffer, most likely due to its increased multiband factor (Chen et al., 2015). It should be noted that interpretation of the uncorrected tSNR values is difficult, due to the inherent proportionality of tSNR and voxel volume (Edelstein et al., 1986). That is, the 3T datasets acquire data with a voxel volume approximately 10 times smaller than that of the 7T datasets and therefore have an advantage when not correcting for this difference.
 
@@ -46,13 +117,45 @@ To observe quantitative differences in signal quality between the datasets, we f
 
 **Figure 1.:** The values are derived from the mean tSNR values of both hemispheres. Error bars are standard errors. Corrected tSNRs are equal to the uncorrected tSNRs divided by the volume of a single voxel. IFG, inferior frontal gyrus; SN, substantia nigra; STN, subthalamic nucleus; Tha, thalamus; VTA, ventral tegmental area.
 
-## Voxel-wise general linear models
+### Voxel-wise general linear models
 
 We calculated whole-brain voxel-wise general linear models (GLMs) using the canonical hemodynamic response function (HRF) with a temporal derivative to statistically test the brain areas underlying behaviour in the SST. The three trial types result in three possible contrasts: FS > GO, FS > SS, and SS > GO. Due to the restricted field of view (FOV) of the images acquired in the deHollander_7T dataset, group-level statistical parametric maps (SPMs) display a limited activation pattern at the most superior part of the cortex, as no data were acquired there for one dataset. We first show the group-level SPMs of the overall contrasts of the SST across all datasets (see Figure 2), the SPMs for each contrast of each individual dataset can be found in Figure 2—figure supplements 1–3. See Figure 2—figure supplement 4 for the group analyses where the FS and SS trials were time-locked to the stop-signal onset. Significant BOLD responses for the FS > GO contrast were found in the bilateral IFG, preSMA, SN, STN, and ventral tegmental area (VTA). It can be clearly seen that this contrast elicits the largest subcortical response out of the three. The FS > SS contrast shows significant bilateral activation in the IFG, STN, Tha, and VTA. The SS > GO contrast shows significant activation in the bilateral IFG and Tha.
 
-## ROI-wise GLMs
+![Figure 2.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig2-v1.jpg)
+
+**Figure 2.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Two sagittal, one axial, and one zoomed in coronal view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm). FS, failed stop; SS, successful stop.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Sagittal (top), axial (middle), and a zoomed in coronal (bottom) view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm); slices are drawn through x = 51 (top), y = −13 (bottom), and z = 2 (middle).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Sagittal (top), axial (middle), and a zoomed in coronal (bottom) view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm); slices are drawn through x = 51 (top), y = −13 (bottom), and z = 2 (middle).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Sagittal (top), axial (middle), and a zoomed in coronal (bottom) view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm); slices are drawn through x = 51 (top), y = −13 (bottom), and z = 2 (middle).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Two sagittal, one axial, and one zoomed in coronal view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm). FS, failed stop; SS, successful stop.
+
+### ROI-wise GLMs
 
 To further statistically compare the functional results between datasets, we then fit a set of GLMs using the canonical HRF with a temporal derivative to the timeseries extracted from each ROI. Below we show the results of the group-level ROI analyses over all datasets using z-scores (Figure 3) and log-transformed Bayes Factors (BFs; Figure 4). Note that these values were time-locked to the onset of the go signal. See Figure 3—figure supplement 1 for analyses where the FS and SS trials were time-locked to the onset of the stop signal. To account for multiple comparisons, threshold values were set using the false discovery rate (FDR) method for the frequentist analyses.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig3-v1.jpg)
+
+**Figure 3.:** Thresholds are set using false discovery rate (FDR) correction (q < 0.05), varying between contrasts. The thresholds for each contrast are as follows: 3.01 for FS > GO, 2.26 for FS > SS, and 3.1 for SS > GO. Regions that do not reach significance are coloured white. Left and right hemispheres are shown separately, denoted by ‘-l’ or ‘-r’, respectively. IFG, inferior frontal gyrus; M1, primary motor cortex; preSMA, pre-supplementary motor area; GPe, globus pallidus externa; GPi, globus pallidus interna; SN, substantia nigra; STN, subthalamic nucleus; Tha, thalamus; VTA, ventral tegmental area.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Thresholds are set using false discovery rate (FDR) correction (q < 0.05), varying between contrasts. The thresholds for each contrast are as follows: 3.01 for FS > GO, 2.26 for FS > SS, and 3.1 for SS > GO. Regions that do not reach significance are coloured white. Left and right hemispheres are shown separately, denoted by ‘-l’ or ‘-r’, respectively. IFG, inferior frontal gyrus; M1, primary motor cortex; preSMA, pre-supplementary motor area; GPe, globus pallidus externa; GPi, globus pallidus interna; SN, substantia nigra; STN, subthalamic nucleus; Tha, thalamus; VTA, ventral tegmental area.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The 0 point on each axis represents no evidence for an effect. Large absolute z-values are expected to also yield a high log BF, hence the inverted U-shape shows good correspondence between the two estimates.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig4-v1.jpg)
 
@@ -62,9 +165,17 @@ For the FS > GO contrast, the frequentist analysis found significant positive z-
 
 Although the frequentist and Bayesian analyses are mostly in line with one another, they do detect some differences, particularly in the contrasts with FS. In the FS > GO contrast, the interpretation of the GPi, GPe, putamen, and SN differ. The frequentist models suggest significantly increased activation for these regions (bar left GPi) in FS trials. In the Bayesian model, this evidence was found to be anecdotal in the SN and right GPi, and moderate in the right GPe, while finding anecdotal or moderate evidence for the null hypothesis in the left GPe, left GPi, and putamen. For the FS > SS contrast, the frequentist analysis found significant activation in all regions except for the left GPi, whereas the Bayesian analysis found this evidence to be only anecdotal, or in favour of the null for a large number of regions (see Figure 4 for details; note that Figure 3) shows z-scores, thus more extreme values indicate an effect in that direction. In contrast, Figure 4 shows log BFs, and thus positive values indicated support of an effect in any direction. Figure 3—figure supplement 2 shows a comparison between the z-scores and the BFs.
 
-## Smoothing comparison
+### Smoothing comparison
 
 To visualize the effect of spatial smoothing on voxel-wise GLMs, we computed SST contrasts using base-level kernels and a kernel of 5 mm. The difference in group-level SPMs for SS > GO contrast is prominent (see Figure 5). Comparisons for the contrasts of FS > GO and FS > SS contrasts can be found in Figure 5—figure supplement 1. If we were to make inferences based on the group-level SPMs calculated using the 5 mm kernel, this study could potentially conclude that both the SN and VTA are significantly activated in SS trials compared to GO trials. Much larger regions of significant activation can be seen in the 5 mm smoothed SPMs, both cortically and subcortically. This comparison demonstrates the prominent consequences that preprocessing pipelines can have on the overall analysis of functional data.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig5-v1.jpg)
+
+**Figure 5.:** SPMs resulting from general linear models (GLMs) computed on base-level spatially smoothed data can be seen on the top row, with SPMs resulting from GLMs computed on data spatially smoothed with a full width half maximum (FWHM) of 5 mm. Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Two sagittal, one axial, and one zoomed in coronal view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm). FS, failed stop; SS, successful stop.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88652/elife-88652-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Activation colours indicate false discovery rate (FDR) thresholded (q < 0.05) z-values. Two sagittal, one axial, and one zoomed in coronal view are shown. Coloured contour lines indicate regions of interest (inferior frontal gyrus [IFG] in white, M1 in grey, pre-supplementary motor area [preSMA] in orange, Caudate in dark blue, Putamen in light blue, GPe in dark green, globus pallidus interna [GPi] in light green, substantia nigra [SN] in pink, subthalamic nucleus [STN] in red, thalamus in yellow, and ventral tegmental area [VTA] in black). The background template and coordinates are in MNI2009c (1 mm). FS, failed stop; SS, successful stop.
 
 ## Discussion
 
@@ -88,13 +199,78 @@ This paper serves as a proof of concept for methods of meta-analysis that allow 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This study combined data from five datasets, two acquired at 3T and three at 7T: Aron_3T (Aron and Poldrack, 2006), Poldrack_3T (Poldrack et al., 2016), deHollander_7T (de Hollander et al., 2017), Isherwood_7T (Isherwood et al., 2023), and Miletic_7T (Miletić et al., 2020). The number of participants and their relevant demographics for each dataset are as follows: Aron_3T – 14 participants (4 females; mean age 28.1 ± 4.1), Poldrack_3T – 130 participants (62 females; mean age 31 ± 8.7; age range 21–50), deHollander_7T – 20 participants (10 females; mean age 26 ± 2.6; age range 22–32), Isherwood_7T – 37 participants (20 females; mean age 26.3 ± 5.6; age range 19–39), and Miletic_7T – 17 participants (9 females; mean age 23.7 ± 3.2).
 
-## Scanning protocols
+### Scanning protocols
 
 This section describes the MR acquisition procedure for each dataset. The main acquisition parameters of the functionals scans can be found in Table 2, with a detailed account of each dataset’s structural and functional scans in the following paragraphs.
+
+**Table 2.**
+ The principal MR acquisition parameters of the functional scans for each dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>TR (ms)</th>
+      <th>TE (ms)</th>
+      <th>Voxel size (mm)</th>
+      <th>FOV (mm)</th>
+      <th>No. slices</th>
+      <th>GRAPPA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aron_3T</td>
+      <td>2000</td>
+      <td>30</td>
+      <td>3.125 × 3.125 × 4</td>
+      <td>200 × 200 × 132</td>
+      <td>33</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Poldrack_3T</td>
+      <td>2000</td>
+      <td>30</td>
+      <td>3 × 3 × 4</td>
+      <td>192 × 192 × 136</td>
+      <td>34</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>deHollander_7T</td>
+      <td>2000</td>
+      <td>14</td>
+      <td>1.5 × 1.5 × 1.5</td>
+      <td>192 × 192 × 97</td>
+      <td>60</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Isherwood_7T</td>
+      <td>1380</td>
+      <td>14</td>
+      <td>1.5 × 1.5 × 1.5</td>
+      <td>192 × 192 × 128</td>
+      <td>82</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Miletic_7T</td>
+      <td>3000</td>
+      <td>14</td>
+      <td>1.6 × 1.6 × 1.6</td>
+      <td>192 × 192 × 112</td>
+      <td>70</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
 
 For the Aron_3T dataset, each participant was scanned on a Siemens Allegra 3T scanner. The session consisted of three functional runs of the SST and an anatomical T1w image. The functional data were collected using a single echo 2D-echo planar imaging (EPI) BOLD sequence (TR = 2000 ms; TE = 30 ms; voxel size = 3.125 × 3.125 × 4 mm; flip angle = 90°; FOV = 200 × 200 × 132 mm; matrix size = 64 × 64; slices = 33; phase-encoding direction = A >> P). A 1-mm isotropic T1w image was acquired during each session using the MPRAGE sequence (TR = 2300 ms; TE = 2.1 ms; matrix size = 192 × 192).
 
@@ -106,54 +282,206 @@ For the Isherwood_7T dataset, each participant was scanned on a Siemens MAGNETOM
 
 For the Miletic_7T dataset, each participant was scanned on a Siemens MAGNETOM 7T scanner with a 32-channel head coil. The session consisted of three functional runs of the SST, B0 field map acquisition (TR  = 1500 ms, TE1 = 6 ms, TE2 = 7.02 ms), and an anatomical T1w image. The functional data were collected using a single echo 2D-EPI BOLD sequence (TR = 3000 ms; TE = 14 ms; GRAPPA = 3; voxel size = 1.6 mm isotropic; partial Fourier = 6/8; flip angle = 70°; FOV = 192 × 192 × 112 mm; matrix size = 120 × 120; BW = 1436 Hz/Px; slices = 70; phase-encoding direction = A >> P; echo spacing = 0.8 ms). A 0.7-mm isotropic T1w image was acquired during each session using the MP2RAGE sequence (TR = 5000 ms; TE = 2.45 ms; inversions TI1 = 900 ms, TI2 = 2750 ms; flip angle 1 = 5°; flip angle 2 = 3°; Marques et al., 2010).
 
-## Procedure and exclusions
+### Procedure and exclusions
 
 Participants that were not accompanied by a T1w anatomical image were automatically excluded from the study as the image is required for registration during preprocessing. In addition, the behavioural data of each participant from each database were quality controlled on the basis of a specific set of exclusion criteria. These criteria are: (1) more than 10% go omissions across all functional runs; (2) a stopping accuracy of less than 35% or more than 65%; (3) a go-accuracy of less than 95%; (4) mean signal respond RTs that were longer on average than go RTs (inconsistent with the standard race model). Based on these criteria, no subjects were excluded from the Aron_3T dataset. Twenty-four subjects were excluded from the Poldrack_3T dataset (3 based on criterion 1, 9 on criterion 2, 11 on criterion 3, and 8 on criterion 4). Three subjects were excluded from the deHollander_7T dataset (2 based on criterion 1 and 1 on criterion 2). Five subjects were excluded from the Isherwood_7T dataset (2 based on criterion 1, 1 on criterion 2, and 2 on criterion 4). Two subjects were excluded from the Miletic_7T dataset (1 based on criterion 2 and 1 on criterion 4). Note that some participants in the Poldrack_3T study failed to meet multiple inclusion criteria. A further nine participants were excluded from the Poldrack_3T dataset due to a lack of T1w image or a lack of SST data. As the specific genders and ages of each participant in each dataset are not all available due to General Data Protection Regulations, we were unable to recalculate participant demographics after exclusions. The final number of participants in each dataset after screening is as follows: Aron_3T, 14 participants; Poldrack_3T, 97 participants; deHollander_7T, 17 participants; Isherwood_7T, 31 participants; Miletic_7T, 15 participants. Therefore, the analyses in this paper are based on stop-signal data from 5 datasets, 174 participants, and 293 runs.
 
-## Stop-signal task
+### Stop-signal task
 
 All datasets used a simple, two alternative choice stop-signal paradigm. This paradigm consists of two trial types, go trials, and stop trials. On each trial, an arrow is presented on the screen in either the left or right direction (the go stimulus). The participant presses the button corresponding to the direction of the arrow. On a subset of trials (25%), a stop signal appears shortly after go signal onset, indicating the participant should try to inhibit their movement and not respond in that trial. In the auditory SST, this stop signal is presented as a ‘beep’ sound. In the visual SST, this stop signal is presented as a change in visual stimulus; for example, in the Isherwood_7T dataset, the circle surrounding the arrow would change from white to red. The time between the presentation of the go stimulus and the stop signal is defined by the SSD. The SSD is adapted iteratively during the task. Generally, if the participant responds during a stop trial, the SSD is reduced by 50 ms on the next stop trial, meaning the stop signal will appear earlier in the next trial and it will be easier for the participant to inhibit their response. Conversely, if the participant stops successfully, the SSD will increase by 50 ms and the stop signal will appear later in the next trial. This method of SSD adaptation is known as a staircase procedure and ensures that each participant is able to inhibit their actions approximately 50% of the time. Task performance in this paradigm is characterized by the race model (Logan and Cowan, 1984). The model assumes a go process and a stop process race independently and whichever finishes first defines whether a participant responds or inhibits their actions. The go process is characterized by the observable go RT, whereas the stop process is characterized by the latent SSRT, which is estimated based on the effects of the SSD throughout the task.
 
 Although the SST employed in each dataset is similar, there are some differences which are detailed in Table 3. We note here the most important differences in design aspects of the SSTs, these include (1) Response modality, describing the manual response and whether left (L), right (R), or both (L/R) hands were used; (2) Type, describing whether the stop signal was auditory or visual; (3) Stop-signal duration, how long the auditory or visual stop signal was presented for; (4) Number of staircases, describing the number of staircases used to track the SSD of each participant during the task; (5) SSD range, describing the minimum and maximum values that the SSD could be during the task; (6) Total trial number, the number of trials each participant performed over all runs; (7) Stop trials, the percentage of overall trials that were stop trials (as opposed to go trials).
 
-## Behavioural analyses
+**Table 3.**
+ Task details for the SST in each dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Response modality</th>
+      <th>Type</th>
+      <th>Stop-signal duration (ms)</th>
+      <th>No. staircases</th>
+      <th>SSD range (ms)</th>
+      <th>Total no. trials</th>
+      <th>Stop trials (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aron_3T</td>
+      <td>Hand, R</td>
+      <td>Auditory</td>
+      <td>500</td>
+      <td>4</td>
+      <td>100–250</td>
+      <td>384</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Poldrack_3T</td>
+      <td>Hand, R</td>
+      <td>Auditory</td>
+      <td>250</td>
+      <td>2</td>
+      <td>0–1000</td>
+      <td>128</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>deHollander_7T</td>
+      <td>Hand, L/R</td>
+      <td>Auditory</td>
+      <td>62</td>
+      <td>4</td>
+      <td>0–900</td>
+      <td>384</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Isherwood_7T</td>
+      <td>Hand, L/R</td>
+      <td>Visual</td>
+      <td>300</td>
+      <td>1</td>
+      <td>50–900</td>
+      <td>200</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Miletic_7T</td>
+      <td>Hand, L/R</td>
+      <td>Auditory</td>
+      <td>62</td>
+      <td>2</td>
+      <td>0–900</td>
+      <td>342</td>
+      <td>25</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavioural analyses
 
 For all runs within each dataset, median RTs on go and stop trials, the mean SSD and proportion of successful stops were calculated. For each participant, the SSRT was calculated using the integration method, with replacement of go omissions (Verbruggen et al., 2019) estimated by integrating the RT distribution and calculating the point at which the integral equals p(respond|signal). The completion time of the stop process aligns with the nth RT, where n equals the number of RTs in the RT distribution of go trials multiplied by the probability of responding to a signal. Both frequentist and Bayesian analyses methods were used to calculate the correlation between mean SSRTs and median go RTs, as well as to test the statistical difference between median failed stop RTs and median go RTs.
 
-## fMRIprep preprocessing pipeline
+### fMRIprep preprocessing pipeline
 
 fMRIPrep was used to preprocess all acquired anatomical and functional data (Esteban et al., 2019; Esteban et al., 2020). The following two sections describe, in detail, the preprocessing steps that fMRIPrep performed on each dataset.
 
-## Anatomical data preprocessing
+### Anatomical data preprocessing
 
 A total of 1 T1-weighted (T1w) images was found within the input for each subject of each BIDS dataset. The T1-weighted (T1w) image was corrected for intensity non-uniformity with N4BiasFieldCorrection (Tustison et al., 2010), distributed with ANTs 2.3.3 (Avants et al., 2008, RRID:SCR_004757), and used as T1w reference throughout the workflow. The T1w reference was then skull-stripped with a Nipype implementation of the antsBrainExtraction.sh workflow (from ANTs), using OASIS30ANTs as target template. Brain tissue segmentation of cerebrospinal fluid (CSF), white matter (WM), and grey matter (GM) was performed on the brain-extracted T1w using fast (FSL 5.0.9, RRID:SCR_002823, Zhang et al., 2001). Brain surfaces were reconstructed using recon-all (FreeSurfer 6.0.1, RRID:SCR_001847, Dale et al., 1999), and the brain mask previously estimated was refined with a custom variation of the method to reconcile ANTs- and FreeSurfer-derived segmentations of the cortical GM of Mindboggle (RRID:SCR_002438, Klein et al., 2017). Volume-based spatial normalization to one standard space (MNI152NLin2009cAsym) was performed through nonlinear registration with antsRegistration (ANTs 2.3.3) using brain-extracted versions of both T1w reference and the T1w template. The following template was selected for spatial normalization: ICBM 152 Nonlinear Asymmetrical template version 2009c (Fonov et al., 2009, RRID:SCR_008796; TemplateFlow ID: MNI152NLin2009cAsym).
 
-## Functional data preprocessing
+### Functional data preprocessing
 
 For each of the BOLD runs per subject (across all datasets), the following preprocessing was performed. First, a reference volume and its skull-stripped version were generated using a custom methodology of fMRIPrep. For datasets where a distortion correction image was not acquired (Aron_3T and Poldrack_3T), a deformation field to correct for susceptibility distortions was estimated based on fMRIPrep’s fieldmap-less approach. The deformation field is that resulting from co-registering the BOLD reference to the same-subject T1w reference with its intensity inverted (Wang et al., 2017). Registration is performed with antsRegistration (ANTs 2.3.3), and the process regularized by constraining deformation to be nonzero along the phase-encoding direction, and modulated with an average fieldmap template (Treiber et al., 2016). For the deHollander_7T and Miletic_7T datasets, a B0-nonuniformity map (or fieldmap) was estimated based on a phase-difference map calculated with a dual-echo gradient-recall echo sequence, processed with a custom workflow of SDCFlows inspired by the epidewarp.fsl script with further improvements in HCP Pipelines (Uğurbil et al., 2013). The fieldmap was then co-registered to the target EPI reference run and converted to a displacements field map (amenable to registration tools such as ANTs) with FSL’s fugue and other SDCflows tools. For the Isherwood_7T dataset, a B0-nonuniformity map (or fieldmap) was estimated based on two EPI references with opposing phase-encoding directions, with 3dQwarp (Cox and Hyde, 1997; AFNI 20160207).
 
 Based on the estimated susceptibility distortion, a corrected EPI reference was calculated for a more accurate co-registration with the anatomical reference. The BOLD reference was then co-registered to the T1w reference using bbregister (FreeSurfer) which implements boundary-based registration (Greve and Fischl, 2009). Co-registration was configured with six degrees of freedom. Head-motion parameters with respect to the BOLD reference (transformation matrices, and six corresponding rotation and translation parameters) were estimated before any spatiotemporal filtering using mcflirt (FSL 5.0.9, Jenkinson et al., 2002). BOLD runs were slice-time corrected using 3dTshift from AFNI 20160207 (Cox and Hyde, 1997; RRID:SCR_005927). The BOLD timeseries (including slice-timing correction when applied) were resampled onto their original, native space by applying a single, composite transform to correct for head-motion and susceptibility distortions. These resampled BOLD timeseries will be referred to as preprocessed BOLD in original space, or just preprocessed BOLD. Several confounding timeseries were calculated based on the preprocessed BOLD: framewise displacement (FD), DVARS, and three region-wise global signals. FD was computed using two formulations following Power (absolute sum of relative motions, Power et al., 2014) and Jenkinson (relative root mean square displacement between affines, Jenkinson et al., 2002). FD and DVARS are calculated for each functional run, both using their implementations in Nipype (following the definitions by Power et al., 2014). The three global signals are extracted within the CSF, the WM, and the whole-brain masks. Additionally, a set of physiological regressors were extracted to allow for component-based noise correction (Behzadi et al., 2007). Principal components are estimated after high-pass filtering the preprocessed BOLD timeseries (using a discrete cosine filter with 128 s cut-off) for the two CompCor variants: temporal (tCompCor) and anatomical (aCompCor). tCompCor components are then calculated from the top 2% variable voxels within the brain mask. For aCompCor, three probabilistic masks (CSF, WM, and combined CSF + WM) are generated in anatomical space. The implementation differs from that of Behzadi et al. in that instead of eroding the masks by 2 pixels on BOLD space, the aCompCor masks are subtracted a mask of pixels that likely contain a volume fraction of GM. This mask is obtained by dilating a GM mask extracted from the FreeSurfer’s aseg segmentation, and it ensures components are not extracted from voxels containing a minimal fraction of GM. Finally, these masks are resampled into BOLD space and binarized by thresholding at 0.99 (as in the original implementation). Components are also calculated separately within the WM and CSF masks. For each CompCor decomposition, the k components with the largest singular values are retained, such that the retained components’ timeseries are sufficient to explain 50% of variance across the nuisance mask (CSF, WM, combined, or temporal). The remaining components are dropped from consideration. The head-motion estimates calculated in the correction step were also placed within the corresponding confounds file. The confound timeseries derived from head-motion estimates and global signals were expanded with the inclusion of temporal derivatives and quadratic terms for each (Satterthwaite et al., 2013). Frames that exceeded a threshold of.5 mm FD or 1.5 standardized DVARS were annotated as motion outliers. All resamplings can be performed with a single interpolation step by composing all the pertinent transformations (i.e., head-motion transform matrices, susceptibility distortion correction when available, and co-registrations to anatomical and output spaces). Gridded (volumetric) resamplings were performed using antsApplyTransforms (ANTs), configured with Lanczos interpolation to minimize the smoothing effects of other kernels (Lanczos, 1964). Non-gridded (surface) resamplings were performed using mri_vol2surf (FreeSurfer).
 
-## Temporal signal-to-noise ratios
+### Temporal signal-to-noise ratios
 
 Sequence sensitivity in BOLD fMRI can be approximated by the calculation of the tSNR. While it is not possible discriminate the exact source of noise causing temporal fluctuations in measured signal, they are thought to arise from either thermal or physiological interference. To get a feel for the image quality in different regions of the brain between datasets, we here compared ROI-wise tSNRs. Using probabilistic atlases, we took the mean of the ROI signal and divided by its standard deviation across time. Each voxels contribution to the mean signal of the region was weighted by its probability of belonging to the region While simple to calculate, tSNR comparison between data of differing acquisition methods is less trivial. Here, we only correct for the differences in voxel size between datasets. As spatial resolution is directly proportional to MR signal, we divided these tSNR values by the volume of a single voxel (Edelstein et al., 1986). tSNR was calculated using the exact same data used in the ROI-wise GLMs. That is, unsmoothed but preprocessed data from fMRIprep.
 
-## fMRI analysis – GLMs
+### fMRI analysis – GLMs
 
 GLM analyses were computed at both a whole-brain voxel-wise and region-specific level. A canonical double gamma HRF with temporal derivative was used as the basis set for both methods of analysis (Glover, 1999). The design matrix consisted of the three task-specific regressors for each of the three experimental conditions: failed stop (FS) trials, successful stop (SS) trials, and go (GO) trials, six motion parameters (three translational and three rotational) as well as DVARS and FD estimated during preprocessing. The first 20 aCompCor components from fMRIPrep were used to account for physiological noise (Behzadi et al., 2007). For the main GLM analyses, all events were time-locked to the GO signal onset, but see the supplementary analyses (Figure 2—figure supplement 4, Figure 3—figure supplement 1) for results where SS and FS trials were time-locked to the stop-signal onset. Following data preprocessing through fMRIPrep, all data were high-pass filtered (cut-off 1/128 Hz) to remove slow drift. Three SST contrasts were computed for both the whole-brain and ROI GLMs: FS > GO, FS > SS, and SS > GO. While many regressors were computed in the preprocessing of the fMRI data, not all were used in the subsequent analysis. The exact regressors used for the analysis can be found above. For example, tCompCor and global signals were calculated in our generic preprocessing pipeline but not part of the analysis. The code used for preprocessing and analysis can be found in the data and code availability statement.
 
-## Voxel-wise
+### Voxel-wise
 
 Whole-brain analyses were computed using the FILM method from FSL FEAT (version 6.0.5.2; Jenkinson et al., 2012; Woolrich et al., 2001) as implemented in the Python package wrapper Nipype (version 1.7.0; Gorgolewski et al., 2011). Run-level GLMs accounting for autocorrelated residuals were computed, the results warped to MNI152NLin2009cAsym space, and subsequently combined per subject using fixed effects analyses. Data for the whole-brain GLMs were spatially smoothed using the SUSAN method with a full width half maximum (FWHM) equal to the voxel size of the functional image (Smith and Brady, 1997). Therefore, a 3.125-mm kernel was applied to the Aron_3T dataset, a 3-mm kernel to the Poldrack_3T dataset, a 1.5-mm kernel to the deHollander_7T and Isherwood_7T datasets, and a 1.6-mm kernel to the Miletic_7T dataset. These base-level kernels were applied to the data used for the main statistical analyses. Group-level models were subsequently estimated using FMRIB Local Analysis of Mixed Effects (FLAME) 1 and FLAME 2 from FSL (Woolrich et al., 2001), taking advantage of the fact that FLAME allows the estimation of different variances for each dataset. Dummy variables were used as regressors to allow the categorization of data into different datasets so that they could be estimated separately and then combined. SPMs were generated to visualize the resulting group-level models. The maps were corrected for the FDR using critical value of q < 0.05 (Yekutieli and Benjamini, 1999).
 
-## ROI-wise
+### ROI-wise
 
 ROI analyses were then performed. Timeseries were extracted from each subcortical ROI using probabilistic masks provided by MASSP (Bazin et al., 2020), except in the case of the putamen and caudate nucleus, which were provided by the Harvard-Oxford subcortical atlas (Rizk-Jackson et al., 2011). Each voxels contribution to the mean signal of the region was therefore weighted by its probability of belonging to the region. Cortical regions parcellations were provided by the Harvard-Oxford cortical atlas (Rizk-Jackson et al., 2011). These timeseries were extracted from unsmoothed data so to ensure regional specificity. ROI analyses were computed using the FILM method of FSL FEAT. To do this, we inputted each run for each participant in MNI152NLin2009cAsym space, where the signal of each region was replaced with its mean extracted timeseries. Hence, the signal within each region was homogenous on each given volume. Note that the standard implementation of FSL FILM uses a spatial smoothing procedure prior to estimating temporal autocorrelations which is suitable for use only on voxel-wise data (Woolrich et al., 2001). We therefore turned this spatial smoothing procedure off and instead estimated autocorrelation using each voxel’s individual timeseries. ROIs were therefore defined before implementing the ROI analyses. The regions include the IFG, primary motor cortex (M1), preSMA, caudate nucleus (caudate), GPe, GPi, putamen, SN, STN, Tha, and VTA. Due to the restricted FOV of the deHollander_7T dataset, this dataset was not used in the ROI-wise analysis of the M1 and preSMA regions. M1 and preSMA ROI-wise results are therefore based only on the Aron_3T, Poldrack_3T, Isherwood_7T, and Miletic_7T datasets. After the run-level GLMs were computed using FILM, the same fixed effects analyses and subsequent mixed-effects analyses used in the voxel-wise GLMs were performed. In addition to the frequentist analysis, we computed BFs for each contrast per ROI and hemisphere. To do this, we extracted the beta weights for each individual trial type from our first-level model. We then compared the beta weights from each trial type to one another using the ‘BayesFactor’ package as implemented in R (Morey and Rouder, 2015).
 
 We compared the full model (H1) comprising trial type, dataset and subject as predictors to the null model (H0) comprising only the dataset and subject as predictor. Datasets and subjects were modelled as random factors in both cases. Since effect sizes in fMRI analyses are typically small, we set the scaling parameter on the effect size prior for fixed effects to 0.25, instead of the default of 0.5, which assumes medium effect sizes (note that the same qualitative conclusions would be reached with the default prior setting; Rouder et al., 2009). We calculated the BF for the full model over the null model, to provide evidence for or against a difference in beta weights for each trial type. To interpret the BFs, we used a modified version of Jeffreys’ scale (Andraszewicz et al., 2015; Jeffreys, 1939). To facilitate interpretation of the BFs, we converted them to the logarithmic scale. The approximate conversion between the interpretation of logarithmic BFs and standard interpretation on the adjusted Jeffreys’ scale can be found in Table 4.
 
-## tSNRs
+**Table 4.**
+ Approximate interpretation of logarithmically transformed Bayes Factors.H1 represents the alternative hypothesis, H0 represents the null hypothesis.
 
-## Smoothing comparison
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Log10 BF</th>
+      <th>Interpretation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>&gt;</td>
+      <td>2</td>
+      <td>Extreme evidence for H1</td>
+    </tr>
+    <tr>
+      <td>1.5</td>
+      <td>–</td>
+      <td>2</td>
+      <td>Very strong evidence for H1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>–</td>
+      <td>1.5</td>
+      <td>Strong evidence for H1</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>–</td>
+      <td>1</td>
+      <td>Moderate evidence for H1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>–</td>
+      <td>0.5</td>
+      <td>Anecdotal evidence for H1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>0</td>
+      <td></td>
+      <td>No evidence</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>–</td>
+      <td>−0.5</td>
+      <td>Anecdotal evidence for H0</td>
+    </tr>
+    <tr>
+      <td>−0.5</td>
+      <td>–</td>
+      <td>−1</td>
+      <td>Moderate evidence for H0</td>
+    </tr>
+    <tr>
+      <td>−1</td>
+      <td>–</td>
+      <td>−1.5</td>
+      <td>Strong evidence for H0</td>
+    </tr>
+    <tr>
+      <td>−1.5</td>
+      <td>–</td>
+      <td>−2</td>
+      <td>Very strong evidence for H0</td>
+    </tr>
+    <tr>
+      <td>−2</td>
+      <td>&gt;</td>
+      <td></td>
+      <td>Extreme evidence for H0</td>
+    </tr>
+  </tbody>
+</table>
+
+### tSNRs
+
+#### Smoothing comparison
 
 To further understand the impact of preprocessing on fMRI analyses, we computed voxel-wise GLM results based on a more lenient smoothing kernel. To observe the effect of smoothing on these analyses, we compared the results of our main statistical analyses, using base-level kernel sizes, to the same data when all datasets were smoothed using a 5-mm FWHM kernel. We chose to compared base-level smoothing kernels to 5 mm as this was the kernel sized used in the Aron and Poldrack, 2006 study. To do this, the same voxel-wise GLM method was used as described above.

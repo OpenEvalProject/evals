@@ -41,19 +41,39 @@ Considerably less is known about the "reciprocal" inter-enlargement pathway: the
 
 ## Results
 
-## Histological detection of conditionally silenced LAPNs
+### Histological detection of conditionally silenced LAPNs
 
 Spinal circuits located in the intermediate gray matter of the caudal cervical and rostral lumbar segments are the primary rhythmogenic sites for locomotor output (Cazalets et al., 1995; Juvin et al., 2005; Ballion et al., 2001). LAPNs, which are primarily embedded within the intermediate gray matter of the rostral lumbar segments, send ipsilateral or contralateral projections to the caudal cervical enlargement with sparse resident projections within the lumbar neuraxis (Figure 1—figure supplement 1). Given the critical involvement of cervical and lumbar CPGs for locomotion and the anatomical profile of the long ascending projections which connect these rhythmogenic foci, we set out to silence LAPNs in the freely behaving adult rat. We used the dual-virus TetOn system originally developed by Isa and colleagues (18), which allows doxycycline-induced reversible silencing of anatomically defined projection neurons (details in methods). Using two pairs of microinjections into the intermediate gray matter, we simultaneously targeted ipsilateral and commissural LAPNs that connect the key rhythmogenic foci (L1-L3 and C6-C8) reasoning that their silencing would lead to overt changes in hindlimb-forelimb coordination (Figure 1a). Behavioral testing was performed at Baseline (prior to injection), pre-silencing (Pre-Dox1), during DoxOn conditional silencing of LAPNs, and post-silencing (DoxOff) (Figure 1b). Repeat assessments were performed one month later (Dox2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig1-v2.jpg)
+
+**Figure 1.:** (a–b) Experimental design (see Materials and methods for details). (c–f) Volume rendered, high magnification images showing enhanced eTeNT.EGFP putative fibers (green) surrounding NeuN-stained neurons (red) and neurofilament-marked neural processes (magenta) in the cervical spinal cord (100x; x-y-z axis orientation shown in bottom right). Neuron in panel e is rotated about x-y-z axis to show eTeNT.EGFP fibers surrounding somata (inset panels right side). Neurofilament staining excluded in panel f for clarity (eTeNT.EGFP enshrouding cervical neuron). (g–h) eTeNT.EGFP signal co-localizes with synaptophysin (red). XZ-YZ orthogonal cross-sections through putative synapses shown in panel (h). eTeNT.EGFP signal co-localizes with the excitatory neurotransmitter marker vesicular glutamate transporter 2 (i, vGlut2; magenta) as well as the inhibitory neurotransmitter marker vesicular GABA transporter (j, vGat; magenta) (XZ-YZ orthogonal cross-sections shown). (k) Isotype controls revealed little-to-no immunoreactivity (IgG controls for synaptophysin and eTeNT.EGFP shown). (l–n) DAB enhancement of eTeNT.EGFP at the lumbar segments revealed dark immunoreactive neurons in the rostral lumbar segments (filled arrowheads) intermingled with DAB-negative neurons (open arrowheads). (o–p) Isotype control revealed little-to-no immunoreactivity. (c–k Scale bar = 25 µm; g,k scale bar = 10 µm; l,o,p Scale bar = 100 µm; m,n Scale bar = 50 µm).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–i) Intrasegmental distribution profile of LAPNs. Scatter plot of (a) ipsilateral (n = 1,069) and (b) commissural-projecting LAPNs (n = 1,379) at spinal L1 with overlaid contour map (N = 11 animals; see methods for details). (c) Heatmap illustrating intrasegmental distribution of ipsilateral and commissural-projecting LAPNs at spinal L1 (n = 2448 neurons). Scatter-contour plots with corresponding heatmaps shown for spinal L2 (d-f, n = 3047 total LAPNs) and L3 (g–i, n = 2342 total LAPNs), respectively (L2: n = 1407 ipsi- and n = 1640 commissural LAPNs, N = 11 animals; L3: n = 1106 ipsi- and n = 1236 commissural LAPNs, N = 8 animals, see methods for details). (j,k) Experimental design to quantify L2 LAPNs with projections to rostral (L1) or caudal (L5) lumbar segments. (l) Representative image of spinal L2 LAPNs that are negative (left panel) and positive (right panel, insets 1–2) for resident projections in lumbar enlargement (maximum intensity projection of collapsed z-stack taken at 20x; magenta = LAPNs labeled with CTB Alexa647 (injected on the left side), green = neurons with L5 projections; scale bar = 100 µm). (m, left) The significant majority of L2 LAPNs lack local projections to spinal L1 (83.75 ± 2.88% negative vs 16.25 ± 2.88% positive; ***p<0.001; two-way analysis of variance (ANOVA) with Bonferroni post hoc). (m, right) Of the L2 LAPNs that have local projections to spinal L1, the significant majority are ipsilateral in nature (69.05 ± 12.25% ipsi- vs 30.95 ± 12.25% contralateral; ***p<0.001). (n, left) The significant majority of L2 LAPNs lack local projections to spinal L5 (91.05 ± 1.02% negative vs 8.95 ± 1.02% positive; ***p<0.001). (n, right) The few L2 LAPNs that project to spinal L5 do so with equal contributions of ipsilateral and commissural projections (54.07 ± 8.98% ipsi- vs 45.93 ± 8.98% commissural; p=0.99).
 
 To confirm that any silencing-induced behavioral changes were concomitant with eTeNT-expression in LAPNs, animals were euthanized during Dox2On LAPN silencing, following terminal behavioral assessments, and the spinal cords were processed for eTeNT.EGFP immunoreactivity. Histological analyses of the caudal cervical enlargement revealed that eTeNT.EGFP-expressing putative fibers surrounded and closely apposed neuronal somata and processes (Figure 1c–f). Moreover, eTeNT.EGFP co-localized with the synapse-related markers synaptophysin (Figure 1g–h), vesicular glutamate transporter 2 (Figure 1i, excitatory neurotransmitter), and vesicular GABA transporter (Figure 1j, inhibitory neurotransmitter). Collectively, these data suggest that the cervical projections derived from double-infected LAPNs express eTeNT and were silenced in vivo.
 
 We next screened for the double-infected LAPN somata in the lumbar spinal cord. Using immunoperoxidase to enhance the eTeNT.EGFP signal, we observed EGFP+ neurons distributed throughout the rostral lumbar enlargement (Figure 1l–n, filled arrowheads). Intermingled with the double-infected LAPNs were non-infected lumbar neurons (open arrowheads). Isotype controls revealed little-to-no immunoreactivity suggesting that the histological detection of the conditionally expressed eTeNT.EGFP was specific (Figure 1k,o–p).
 
-## LAPNs organize interlimb coupling at each girdle during overground stepping
+### LAPNs organize interlimb coupling at each girdle during overground stepping
 
 After validating that double-infected LAPNs conditionally expressed eTENT.EGFP in the presence of doxycycline, we next set out to determine the functional consequences of silencing this inter-enlargement pathway in the freely behaving adult rat.
 
 Prior to silencing, animals stepped in a stereotypic walk or trot-like gait with the left-right limbs moving out-of-phase (alternating) at each girdle and the contralateral hindlimb-forelimb pairs moving in-phase (synchronously) (Figure 2a–c). Conditionally silencing LAPNs resulted in a striking spectrum of stepping behaviors, ranging from mild disruptions in left-right hindlimb alternation to a half-bound-like gait where the hindlimbs moved synchronously as the forelimbs "galloped," all the way to a full-bound where both the left-right forelimbs and hindlimbs moved synchronously (Video 1). The stepping behavior reverted back to the usual walk and trot-like gaits when silencing was reversed by removing Dox (Figure 2—figure supplement 1). Re-silencing LAPNs one month later reproduced and, in some cases, even enhanced these effects (Figure 2—figure supplement 1e). These data suggest that LAPNs secure multiple interlimb coupling patterns, not strictly hindlimb-forelimb coordination as we initially hypothesized.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig2-v2.jpg)
+
+**Figure 2.:** (a–c) Representative swing-stance graphs of stepping behaviors observed at control time points. Left: orange = homolateral HL-FL movements (out-of-phase, 0.5), blue = diagonal HL-FL movements (in-phase, 0.0/1.0). Right: green = left -right forelimb, purple = left-right hindlimb, each out-of-phase. Insets = one complete stride cycle (right limb reference). (d) Circular 0–1 phase data are transformed into a linear scale (0.5–1.0 or 0.0–0.5). (e) Left: silencing LAPNs does not disrupt homolateral ("ipsi") HL-FL coordination (# steps beyond control variability: Control n = 19/480 [3.95%] vs Dox n = 17/600 [2.83%]; p=0.31, z = 1.01, Binomial Proportion Test; circles = individual step cycles; shaded region = values beyond control variability). Right: diagonal ("contra") HL-FL coordination is significantly disrupted (Control n = 17/480 [3.54%] vs Dox n = 98/600 [16.33%]; ***p<0.001, z = 7.47). (f) Silencing LAPNs significantly disrupts left-right forelimb and left-right hindlimb coordination, respectively (forelimbs: Control n = 26/480 [5.42%] vs Dox n = 135/600 [22.50%]; p<0.001, z = 8.57; hindlimbs: Control n = 26/480 [5.42%] vs Dox n = 177/600 [29.50%]; ***p<0.001, z = 11.31). (g) Silencing LAPNs disrupts left-right movements more than hindlimb-forelimb (% total altered steps: hindlimb-forelimb 26.20 ± 3.02% vs left-right 73.80 ± 3.37%; ***p<0.001, critical t = 2.17, paired t-test; bars = group mean± S.D.; circles=% total steps taken that are altered for individual animals). (h) The quadrupedal stepping index remained unchanged during silencing (Control: 100.78 ± 0.87 vs Dox: 100.76 ± 1.55; p=0.97, critical t = 2.17; paired t-test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a–d) Individual time point comparisons for silencing-induced changes in interlimb coordination. Time points: BL = Baseline, PD1 = Pre-Dox1, D1D3 = Dox1 On-Day 3, D1D5 = Dox1 On-Day 5, D1D8 = Dox1 On-Day 8, DOFF = DoxOff, SC = sugar water (vehicle) control, PD2 = PreDox2, D2D3 = Dox2 On-Day 3, D2D5 = Dox2 On-Day 5. (a) Ipsilateral hindlimb-forelimb was not affected during LAPN silencing. (b) Silencing LAPNs significantly disrupted contralateral hindlimb-forelimb coordination as seen by the increase in the proportion of steps that deviated beyond normal control variability associated with overground walking (Pre-Dox1 [PD1, n = 5/120 step cycles] vs Dox1On-D3/5/8: *p<0.05 [n = 14/120], ***p<0.001 [n = 20/120], *p<0.05 [n = 15/120], Binomial Proportion Test). Re-silencing one month later reproduced the effect (Pre-Dox2 [n = 7/120] vs D2D5 [n = 35/120]: ***p<0.001). (c) Silencing LAPNs significantly disrupted left-right forelimb alternation (PD1 [n = 10/120] vs D1D5 [n = 29/120], ***p<0.001; vs D1D8 [n = 24/120], **p<0.01). Re-silencing one month later reproduced the effect (PD2 [n = 7/120] vs D2D3 [n = 23/120], **p<0.01; vs D2D5 [n = 41/120], ***p<0.001). (d) Silencing LAPNs significantly disrupted left-right hindlimb alternation (PD1 [n = 9/120] vs D1D3 [n = 26/120], **p<0.01; vs D1D5 [n = 29/120]/D1D8 [n = 35/120], both ***p<0.001). Re-silencing one month later reproduced the effect (PD2 [n = 6/120] vs D2D3 [n = 34/120]/D2D5 [n = 53/120], each ***p<0.001). Apart from the left-right forelimbs at Baseline vs Pre-Dox1 (n = 1/120 vs n = 10/120 steps), no significant differences were detected between control time points across all limb pairs analyzed. The vehicle control (sucrose water; "sugar control, SC") did not affect interlimb coordination. Group data shown (N = 13). Individual circles = individual steps (n = 84/time point, except sugar control where n = 50 steps). Circles plotted in shaded region denote steps with coordination values that deviated beyond control variability. (e) More animals showed peak disruption to interlimb coordination during Dox2 silencing vs Dox1. Bars denote % group that showed peak disruption to stepping at Dox1 vs Dox2. Circles denote peak % steps affected for each animal. Blue = contralateral hindlimb-forelimb, green = left -right forelimb, purple = left-right hindlimb coordination. Filled circle denotes an animal that showed no changes to hindlimb coordination during silencing. (f) Plots illustrating inter-related changes in coordination during LAPN silencing. The majority of locomotor bouts (one complete step cycle for all four limbs) with affected contralateral hindlimb-forelimb coordination were concomitant with changes in left-right coordination (panel i, gray denotes positive association, n = 68/103 steps [66.02%] vs white denoting no association 35/103 steps [33.98%], ***p<0.001 shown in red; z = 4.85). The reciprocal comparison (changes in left-right forelimb coordination are concomitant with changes in contralateral hindlimb-forelimb) did not show this relationship (panel iv, gray: n = 68/133 steps showing positive association vs white, n = 65/133 steps showing no association; p>0.5; z = 0.37). Similar results were found when comparing the inter-relationship between affected contralateral hindlimb-forelimb coordination and affected left-right hindlimb coordination (panel ii; gray: n = 78/103 steps showing positive association vs white, n = 23/103 steps showing no association; ***p<0.001 shown in red; z = 8.61). Once again, the reciprocal comparison showed no association (panel v; gray: n = 90/175 steps showing positive association vs white, n = 85/175 steps showing no association; p>0.5; z = 0.53). The majority of affected forelimb steps were concomitant with altered hindlimb steps (panel iii, gray: n = 90/133 steps showing positive association vs white, n = 43/133 steps showing no association; ***p<0.001 shown in red; z = 6.16). The reciprocal comparison did not show this association (panel vi, gray: n = 90/175 steps showing positive association vs white, n = 85/175 steps showing no association; p>0.5; z = 0.53).
+
+![Video 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-video1.mp4.jpg)
+
+**Video 1.:** DoxOn videos shown from two independent experiments, three separate animals at Dox1On Day 8 of LAPN silencing. Videos shown from the same animal at 1x, 0.5x, and 0.25x speed.
 
 In light of the unexpected changes to overall stepping behavior, we quantified the silencing-induced disruption of interlimb coordination. We first linearized the circular phase data to account for inter-animal variability in preferred lead limb during stepping (Pocratsky et al., 2017; Figure 2d) (e.g. for the left-right hindlimbs, coordination values of 0.25 or 0.75 are both gallop patterns). We then pooled the phase data from all control time points, calculated the mean temporal relationship for each limb pair, and set a control threshold based on normal variability observed during overground stepping (see methods for details) (Pocratsky et al., 2017).
 
@@ -61,21 +81,37 @@ When we gated our analyses to hindlimb-forelimb coordination, we observed an int
 
 We then pooled the stepping bouts with altered coordination and compared the frequency of perturbed patterns (hindlimb-forelimb vs intra-girdle left-right). We found that perturbations to left-right alternation at each girdle was the primary deficit during LAPN silencing (Figure 2g). Moreover, when we screened for concurrent changes across the limb pairs, we found that the majority of hindlimb-forelimb perturbations were concomitant with intra-girdle left-right disruptions, but not vice versa (Figure 2—figure supplement 1f). These data suggest that LAPNs play a key role in securing left-right coordination at each girdle, and that changes to inter-girdle (hindlimb-forelimb) coordination are likely indirect. Despite the silencing-induced freedom in pattern expression observed within each girdle, all four limbs continued to step in a fixed 1:1 ratio (Figure 2h), indicating that other key features of locomotor control remain intact.
 
-## Intralimb coordination and postural control endure despite silencing-induced interlimb discoordination
+### Intralimb coordination and postural control endure despite silencing-induced interlimb discoordination
 
 During stepping, temporal information is distributed between (interlimb) and within (intralimb) each limb (Kiehn, 2006). Given the overt disruption to interlimb coordination, we set out to determine if intralimb movements were also affected during LAPN silencing. Using a three-segment, two-angle model of the hindlimb (Pocratsky et al., 2017; Kuerzi et al., 2010), we quantified both the spatial and temporal properties of intralimb coordination during stepping (Figure 3a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig3-v2.jpg)
 
-**Figure 3.:** (a) Three-segment (iliac crest-hip, hip-ankle, ankle-toe), two-angle model of intralimb coordination. Five phases of step cycle illustrated with corresponding hindlimb range-of-motion (peak-to-trough excursion of the proximal and distal angles) and intralimb kinematics (b). (c) Range-of-motion was not altered during silencing (right hindlimb shown, group average ± S.D. [Baseline to Dox2On-D5]; p>0.5, mixed model ANOVA, Bonferroni post hoc). (d) Representative example of proximal-to-distal temporal coordination for one stride cycle (temporal overlap in peak angular excursions). Intralimb coordination plotted on circular graph where 0 denotes in-phase coordination. (e) Silencing long ascending propriospinal neurons (LAPNs) did not disrupt the proximal-to-distal temporal relationship across the hindlimb segments (p>0.5 for all comparisons; Watson’s U (Orlovskiĭ et al., 1999) test). White inset = control variability. Individual circles = peak to-peak proximal or distal excursion for one stride cycle. (f) Summary schematic. (g) Silencing LAPNs did not affect hindlimb base-of-support during overground stepping (Baseline vs Dox1On-D5: left hindlimb, 20.23 ± 3.00° [n = 220 steps] vs 19.13 ± 3.38° [n = 223 steps], p=0.31; right hindlimb, 19.76 ± 4.19° [n = 227 steps] vs 20.37 ± 3.39° [n = 229 steps], p=0.62; paired t-tests). (h) The number of hindlimb foot falls on the ladder significantly decreased during silencing versus control (Control 3.33 ± 2.47 vs DoxOn1.43 ± 1.33, **p<0.01; excluding outlier [red circle] yielded similar results – see Materials and mmethods for details). No significant differences were detected on the beam (Control 0.55 ± 0.38 vs Dox 0.55 ± 0.32, p=0.96). (i) Frequency of spontaneously evoked rearing events remained unchanged during silencing (Control 7.62 ± 4.89 vs Dox 9.46 ± 4.74, p=0.29). There was a slight, but significant increase in the duration of the rearing events during silencing (Control 1.56 ± 0.31 s vs Dox 1.92 ± 0.47 s, p=0.045). (j) Trunk angle during swimming remained unchanged during silencing (Control 10.23 ± 2.87° vs Dox 9.49 ± 3.78°, p=0.54). Data shown from N = 13 animals. Circles = individual averages; bars = group average± S.D.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.Figure 3—source data 5.
+**Figure 3.:** (a) Three-segment (iliac crest-hip, hip-ankle, ankle-toe), two-angle model of intralimb coordination. Five phases of step cycle illustrated with corresponding hindlimb range-of-motion (peak-to-trough excursion of the proximal and distal angles) and intralimb kinematics (b). (c) Range-of-motion was not altered during silencing (right hindlimb shown, group average ± S.D. [Baseline to Dox2On-D5]; p>0.5, mixed model ANOVA, Bonferroni post hoc). (d) Representative example of proximal-to-distal temporal coordination for one stride cycle (temporal overlap in peak angular excursions). Intralimb coordination plotted on circular graph where 0 denotes in-phase coordination. (e) Silencing long ascending propriospinal neurons (LAPNs) did not disrupt the proximal-to-distal temporal relationship across the hindlimb segments (p>0.5 for all comparisons; Watson’s U (Orlovskiĭ et al., 1999) test). White inset = control variability. Individual circles = peak to-peak proximal or distal excursion for one stride cycle. (f) Summary schematic. (g) Silencing LAPNs did not affect hindlimb base-of-support during overground stepping (Baseline vs Dox1On-D5: left hindlimb, 20.23 ± 3.00° [n = 220 steps] vs 19.13 ± 3.38° [n = 223 steps], p=0.31; right hindlimb, 19.76 ± 4.19° [n = 227 steps] vs 20.37 ± 3.39° [n = 229 steps], p=0.62; paired t-tests). (h) The number of hindlimb foot falls on the ladder significantly decreased during silencing versus control (Control 3.33 ± 2.47 vs DoxOn1.43 ± 1.33, **p<0.01; excluding outlier [red circle] yielded similar results – see Materials and mmethods for details). No significant differences were detected on the beam (Control 0.55 ± 0.38 vs Dox 0.55 ± 0.32, p=0.96). (i) Frequency of spontaneously evoked rearing events remained unchanged during silencing (Control 7.62 ± 4.89 vs Dox 9.46 ± 4.74, p=0.29). There was a slight, but significant increase in the duration of the rearing events during silencing (Control 1.56 ± 0.31 s vs Dox 1.92 ± 0.47 s, p=0.045). (j) Trunk angle during swimming remained unchanged during silencing (Control 10.23 ± 2.87° vs Dox 9.49 ± 3.78°, p=0.54). Data shown from N = 13 animals. Circles = individual averages; bars = group average± S.D.
 
 At control time points, the hindlimbs showed normal range-of-motion throughout the step cycle (Figure 3b) and normal proximal-to-distal coordination (Figure 3c). This spatial coordination persisted during silencing, even during bouts of synchronous stepping events. We next examined the temporal features of intralimb movement. Typically, peak excursion of both the proximal and distal limb components occurs at the end of stance phase just prior to lift-off (Figure 3d; Pocratsky et al., 2017). This salient feature of intralimb coordination also remained intact during LAPN silencing (Figure 3e), indicating that altered coordination between limb pairs did not affect the coordination of the limb itself (Figure 3f).
 
 Given the generalized disruption to interlimb coordination, we also explored how balance/postural stability is affected during LAPN silencing. LDPNs, the pathway reciprocal to LAPNs, play a key role in this supportive feature of locomotion (Ruder et al., 2016). To interrogate postural stability, animals were challenged using a series of graded tasks with increased demand for balance control. Posturally-challenged animals often externally rotate their hindpaws during stepping to increase the overall base-of-support (Basso et al., 1995). We found no increase in the per-step angular rotation of the hindpaws during LAPN silencing, suggesting that base-of-support remained unchanged despite the disrupted phase relationship between limb pairs at each girdle (Figure 3g). Similarly, silencing LAPNs did not lead to increased footfalls on the narrow beam or horizontal ladder (Figure 3h), tasks with increased demand for balance control. Silencing LAPNs also did not negatively impact the frequency and duration of spontaneous rearing events, a task where quadrupedal animals stand bipedally (Figure 3i). Finally, animals were challenged with lap swimming, a task where the limbs are unloaded and postural control is essential for effective hindlimb-driven propulsion (Gruner and Altman, 1980). Using the body angle relative to the water surface as a proxy for trunk stability, we again found that LAPN silencing did not affect overall postural control (Figure 3j). Thus, silencing LAPNs leads to a generalized disruption of interlimb coordination without altering intralimb coordination or overall balance/postural control, key features that are required for effective locomotion.
 
-## Silencing LAPNs disrupts interlimb coordination independent of other salient features of locomotion
+### Silencing LAPNs disrupts interlimb coordination independent of other salient features of locomotion
 
 Hallmark features of locomotion are speed-dependent changes in interlimb coordination that are classified into different locomotor gaits, each defined by a unique set of limb coupling patterns (Hildebrand, 1965). As each gait is expressed as a function of speed, the underlying spatiotemporal features of limb movement predictably change (Lemieux et al., 2016). This fundamental relationship is highlighted in data collected from age-matched control rats assessed in a three meter long runway that allowed the full range of speed-dependent gaits to be expressed (Figure 4a, Figure 4—figure supplement 1; see methods for detail). As the speed increased (with concomitant changes in interlimb coordination and gait), the stride and stance durations decreased while the stride lengthened (Figure 4b–d).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic illustrating the speed-dependent gaits with representative swing-stance graphs (purple = walk trot; blue = gallop; green = half-bound; yellow = full-bound). (b) Schematic illustrating stride time (duration of one stride) and its normal relationship with speed for the volitionally expressed gaits (N = 12 age-matched controls, see methods; circles = individual steps). This relationship persisted during silencing (forelimbs: c,d, Control: p<0.001, rS = −0.845, R2 = 0.714 [n = 480 steps] vs Dox: p<0.001, rS = −0.889, R2 = 0.790 [n = 600]) (hindlimbs: e,f, Control: p<0.001, rS = −0.864, R2 = 0.746 vs Dox: p<0.001, rS = −0.908, R2 = 0.824; steps with silencing-induced altered coordination shown in blue for clarity; altered step defined as step cycle with a phase relationship that deviates beyond control variability; dashed line = line of best fit). (g) Schematic illustrating stance time (duration of paw contact for one stride) and its normal relationship with speed. This relationship persisted during silencing (h,i, forelimbs, Control: p<0.001, rS = −0.905, R2 = 0.819 vs Dox: p<0.001, rS = −0.929, R2 = 0.863) (j,k, hindlimbs, Control: p<0.001, rS = −0.901, R2 = 0.812 vs Dox: p<0.001, rS = −0.946, R2 = 0.895). (l) Schematic illustrating stride length (distance traveled for one stride) and its normal relationship with speed. This relationship persisted during silencing (m,n, forelimbs, Control: p<0.001, rS = 0.784, R2 = 0.615 vs Dox: p<0.001, rS = 0.736, R2 = 0.582; o,p, hindlimbs, Control: p<0.001, rS = 0.801, R2 = 0.642 vs Dox: p<0.001, rS = 0.787, R2 = 0.619). There was a slight change in the slopes for the lines of best fit for stride length versus speed during silencing (n, *p<0.05; t = 2.18; p, *p<0.05, t = 2.42). (q) Phase-frequency plot illustrating phase change as a function of frequency. (r) Left-right forelimb and left-right hindlimb phase-frequency relationships for the speed-dependent gaits (dashed circle = 5 Hz transition zone from the walk-trot to gallop Gillis and Biewener, 2001; Muir and Whishaw, 2000). Silencing LAPNs functionally decoupled the left-right fore- and hindlimbs, respectively (s, left: forelimbs, Control vs Dox, ***p<0.001, U2 = 0.67, n1 = 123, n2 = 187, Watson’s U (Orlovskiĭ et al., 1999) test; (s), right: hindlimbs: Control vs Dox, ***p<0.001, U2 = 1.45, n1 = 131, n2 = 204; refer to Supplementary file 2; white inset denotes control variability, circles denote individual step cycles). The decoupled limb pairs stepped at Control-level frequencies (forelimbs, Control: 99.80% [n = 479/480] at ≤5 Hz; Dox: 92.50% [n = 555/600]; hindlimbs, Control: 100% [n = 480/480] at ≤5 Hz; Dox: 95.30% [n = 572/600]).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Schematic illustrating custom-built long tank to analyze volitionally-expressed locomotor gaits (see methods for details). (b–e) Schematics and representative swing-stance graphs illustrating stereotypic locomotor gaits (purple = walk trot, blue = gallop, green = half -bound, yellow = full-bound). The corresponding polar plots denote the observed coupling patterns expressed for the various limb pairs across each gait (0/1 = synchrony; 0.5 = alternation) (walk-trot: n = 160 step cycles; gallop: n = 50 step cycles; half-bound: n = 108 step cycles; full-bound: n = 80 step cycles). Fewer gallop step cycles were analyzed due to the transient nature of this gait. Data collected from N = 12 age-matched controls across six time points (see Materials and mmethods for detail). Gaits were defined based on previously described criteria (Pocratsky et al., 2017). Source file: "Figure 4—source data 1."
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a–l) The fundamental relationship between speed and various speed-dependent spatiotemporal features of locomotion remained intact during silencing-induced changes to hindlimb-forelimb coordination (Control: n = 480 steps; Dox: n = 600 steps; blue circles = steps where interlimb coordination was significantly disrupted; dashed black line = line of best fit; dashed gray line = speed transition zone from walk-trot to gallop; Gillis and Biewener, 2001; Muir and Whishaw, 2000). (m) No differences were detected when comparing the average stride (i), stance (ii), and swing (iii) durations for Control vs Dox within and between the fore- and hindlimbs, respectively (multivariate ANOVA with speed as a co-variate followed by Sidák post hoc t-tests where appropriate). Group data are shown (N = 13). Bars = group average ± S.D. Circles = individual values.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Silencing LAPNs does not affect the underlying stride duration of the forelimbs (p>0.05; repeated measures ANOVA with speed as a co-variate followed by Sidák post hoc t-tests where appropriate) during overground locomotion. (b) A slight increase in the overall stride duration was detected in the hindlimbs when comparing Baseline to DoxOff nearly 6 weeks later (0.271 ± 0.004 s vs 0.298 ± 0.006 s, *p<0.05). (c,d) No differences were detected when comparing forelimb vs hindlimb stride durations within (e.g. comparing average stride duration of left versus right forelimb at Dox1On-D5) and between time points (e.g. comparing average stride duration of right hindlimb at Baseline vs Dox1On-D5) with or without controlling for the effects of speed (p>0.05; multivariate ANOVA with or without speed as a co-variate followed by Sidák post hoc t-tests where appropriate). Despite the disruption to intra- and inter-girdle temporal coordination, no differences in per-step stride durations were detected when comparing between left-right forelimbs (e), left-right hindlimbs (f), contralateral forelimb-hindlimbs (g), and ipsilateral hindlimb-forelimbs (h) for Control (n = 480 step cycles) vs Dox time points (n = 600 step cycles) (e–f, averaged datasets with lines of best fit for control [black] and DoxOn [red, dashed] overlaid onto raw; inset denotes similar slopes for lines of best fit for Control and DoxOn; g,h, averaged data excluded for clarity to demonstrate overall variability observed in raw datasets [circles = individual step cycles]; multivariate ANOVAs followed by Sidák post hoc t-tests performed on averaged datasets). Data shown in a-d are group means ± S.D. with overlaid circles denoting individual animal means.
 
 Strikingly, this fundamental feature of locomotor control was unaffected during LAPN silencing. Despite the altered temporal coupling patterns expressed at the forelimbs, hindlimbs, and hindlimb-forelimb limb pairs, the spatiotemporal relationships of limb movements and speed remained intact (Figure 4e–p; blue circles = altered step cycles; Figure 4—figure supplement 2a–l). We saw no changes to the overall stride, stance, and swing durations (Figure 4—figure supplement 2m). Individual time point comparisons substantiated these results (Supplementary file 1).
 
@@ -85,17 +121,45 @@ At control time points, the left-right limb pairs at each girdle primarily alter
 
 Despite the temporal decoupling of the fore- and hindlimb pairs, stepping frequencies remained similar to those of control time points (≤5 Hz). This led us to further explore the underlying stride duration within and between the girdles, with and without controlling for the effect of speed. Once again, silencing LAPNs had no impact on the underlying locomotor rhythm (Figure 4—figure supplement 3a–d). As a more sensitive assessment, we compared the stride durations between various limb pairs on a moment-by-moment basis. Each limb pair maintained a predictable relationship in the per-step stride duration despite the silencing-induced disruption to left-right coordination at each girdle (Figure 4—figure supplement 3e–h). Together, these data suggest that the rhythm of locomotor output is maintained despite the silencing-induced decoupling of limb pairs, indicating that temporal coordination can be selectively manipulated in an otherwise precisely controlled system.
 
-## Silencing-induced disruption to interlimb coordination is context-dependent
+### Silencing-induced disruption to interlimb coordination is context-dependent
 
 Thus far, results suggest that LAPNs coordinate interlimb movement during volitional overground stepping. To generalize the functional importance of LAPNs beyond this select condition, we assessed interlimb coordination across various locomotor tasks, behavioral modes, and external environments.
 
 We first queried a different locomotor task: treadmill-based stepping. We found that intra-girdle left-right alternation was preferentially affected during overground locomotion as compared to treadmill stepping (Figure 5a; Video 2; Figure 5—figure supplement 1d–f; Supplementary file 3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig5-v2.jpg)
+
+**Figure 5.:** (a) Intra-girdle left-right coordination was affected to a greater extent during overground stepping as compared to treadmill during long ascending propriospinal neuron (LAPN) silencing (forelimbs, overground n = 135/600 [22.50%] vs treadmill n = 22/151 [17.05%], *p<0.05 [z = 2.38]; hindlimbs, overground n = 177/600 [29.50%] vs treadmill n = 28/151 [22.76%], **p<0.01 [z = 2.99]; Figure 5—figure supplement 1a–f; Supplementary file 3). (b) Silencing LAPNs does not affect interlimb coordination during exploratory-like stepping as compared to a more "directed" stepping mode ("going from A to B") (DoxOn forelimbs, non-exploratory overground n = 135/600 [22.50%] vs exploratory overground n = 13/95 [13.68%], *p<0.05 [z = 2.25]; DoxOn hindlimbs, non-exploratory overground n = 177/600 [29.50%] vs exploratory overground n = 7/95 [7.37%], **p<0.001 [z = 6.78]; Figure 5—figure supplement 1g–i; Supplementary file 3) (see Materials and methods for details). Silencing LAPNs does not affect intra-girdle left-right coordination while stepping on an uncoated plexiglass surface as compared to a Sylgard-coated base (N = 8 animals from a separate set of experiments; see methods for details; forelimbs, uncoated plexiglass n = 11/166 [6.63%] vs Sylgard-coated n = 39/170 [22.94%], ***p<0.001 [z = 4.34]; hindlimbs, uncoated plexiglass n = 12/166 [7.23%] vs Sylgard-coated n = 60/170 [35.29%], ***p<0.001 [z = 2.99]; Figure 5—figure supplement 1j–o; Supplementary file 3). (d) Silencing LAPNs did not affect left-right hindlimb alternation during swimming (n = 2/390 and 0/390 stroke cycles at Control and Dox, respectively; deviated beyond control variability; p>0.5 [z = 1.0]; Figure 5—figure supplement 1p; Supplementary file 3). Data shown in a,b, and d are from N = 13 animals. Data shown in c are from separate set of N = 8 animals. Circles = individual step or stroke cycles. Shaded region denotes variability beyond that observed at control time points for each condition described.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Left-right forelimb (a,d,g,j,m), left-right hindlimb (b,e,h,k,n,p), and diagonal hindlimb-forelimb coordination (c,f,i,l,o) were assessed across the various behavioral contexts. Left-right forelimb and contralateral hindlimb-forelimb coordination analyses were excluded for the swim assessment as this task is primarily hindlimb-driven. Statistics are reported in Supplementary file 3. White inset denotes control variability. Circles denote individual step cycles. **p<0.01, ***p<0.001 (Watsons U﻿2 test).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53565/elife-53565-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Hindlimb stride time vs speed (a–j), stride frequency vs speed (k–t), and stride length vs speed (u–dd) relationships observed at Control and DoxOn long ascending propriospinal neuron (LAPN) silencing across the various behavioral contexts. Circles = individual step cycles at control (gray) and DoxOn (red), yellow circles = irregular coordination observed during DoxOn, gray inset = speed range observed at control time points, pink inset = expanded speed range observed during DoxOn LAPN silencing. Preponderance of silencing-induced changes to hindlimb coordination fell within speed range observed at control time points (percentages shown in b), (d, f, h, j). Data shown in overground, treadmill, and exploratory stepping from N = 13 animals. Overground stepping: Control, n = 400 total steps at Baseline, Pre-Dox1, DoxOff, (Pre-Dox2) and DoxOn, n = 600 total steps at Dox1On-Day 3, D5, D8 and Dox2On-Day 3 and D 5. Treadmill stepping: Control, n = 277 total steps at Baseline, Pre-Dox1, DoxOff, and Pre-Dox2 and DoxOn, n = 150 total steps at Dox1On-Day four and Dox2On-Day 4. Volitional exploratory stepping: Control, n = 100 total steps at Baseline, Pre-Dox1, DoxOff, and Pre-Dox2 and DoxOn, n = 95 total steps at Dox1On-Day 3, D5, D8 and Dox2On-Day 3 and D 5. Stepping surface data generated from a separate set of N = 8 animals. Control, n = 251 and 240 total steps at Baseline, Pre-Dox1 and DoxOff for acrylic and Sylgard-coated stepping chambers, respectively. DoxOn, n = 166 and 170 total steps at Dox1On-Day five and D8 for smooth and coated stepping chambers, respectively. (ee) Instantaneous per-hindlimb step speed ranges observed across the various behavioral contexts at Control (gray) and DoxOn LAPN silencing (red). Yellow denotes speed range observed for the silencing-induced changes to hindlimb coordination. Group average and standard deviations overlaid onto bar plots. (ff, left panel) The significant majority of steps taken during silencing were ≤90 cm/s for forelimbs (solid bars; 82.70 ± 16.18% vs 17.30 ± 16.18%; ***p<0.001, paired t-test) and hindlimbs (striped bars; 81.30 ± 16.97% vs 18.70 ± 16.97%; ***p<0.001), respectively. (ff, right panel) The silencing-induced changes to interlimb coordination were not speed-dependent (percent of affected steps that occurred at ≤90 cm/s vs >90 cm/s: forelimbs, 63.90 ± 34.02% vs 36.10 ± 34.02%; p=0.17, paired t-test; hindlimbs, 63.59 ± 28.87% vs 36.41 ± 28.87%; p=0.12). Group data shown (N = 13). Bars = group average± S.D. Circles = individual values.
+
+![Video 2.](https://cdn.elifesciences.org/articles/53565/elife-53565-video2.mp4.jpg)
+
+**Video 2.:** Videos shown from the same animal at 1x, 0.5x, and 0.25x speed during overground and treadmill stepping at Dox1OnDays 4 and 5.
+
 We then examined interlimb coordination during exploratory-like versus non-exploratory-like locomotion. Exploratory-like stepping was defined as overground locomotor passes where the snout was pointed down and was in close proximity to the ground (see methods for details) (Video 3). The non-exploratory stepping mode is the curated dataset shown thus far (Figure 5b, right panel, included for comparison purposes). In contrast to non-exploratory locomotion (snout up, "going from A to B"), silencing LAPNs had little-to-no effect on interlimb coordination during exploratory-like locomotion (Figure 5b, left panel; Video 3; Figure 5—figure supplement 1g–i; Supplementary file 3).
+
+![Video 3.](https://cdn.elifesciences.org/articles/53565/elife-53565-video3.mp4.jpg)
+
+**Video 3.:** Videos shown from the same animal at the same DoxOn time point at 1x, 0.5x, and 0.25x speed.
 
 In a separate experiment, animals were tested on two stepping surfaces with different coefficients of friction: an uncoated acrylic surface (CoF: 0.44) and a Sylgard-coated acrylic surface (CoF: 1.73). Silencing LAPNs significantly affected left-right alternation when animals stepped on the Sylgard coated surface, but had little-to-no effect when stepping on the uncoated surface (Figure 5c; Video 4; Figure 5—figure supplement 1j–o; Supplementary file 3). No differences in the base-of-support were detected between the two surfaces, suggesting that balance/postural changes likely do not account for this intriguing result (18.36 ± 2.97° vs 21.44 ± 4.48°; p>0.05, paired t-test).
 
+![Video 4.](https://cdn.elifesciences.org/articles/53565/elife-53565-video4.mp4.jpg)
+
+**Video 4.:** Videos shown from the same animal at the Control and DoxOn time points at 1x and 0.5x speed.
+
 We then explored the effects of LAPN silencing on left-right hindlimb coordination in a different environmental context: water. Swimming is a bipedal task where the hindlimbs provide the major propulsive force while the forelimbs occasionally steer (Gruner and Altman, 1980). As the limbs are unloaded, both proprioceptive and cutaneous feedback associated with plantar stepping is altered (Akay et al., 2014). In contrast to our overground findings, silencing LAPNs had no effect on left-right hindlimb alternation during swimming (Figure 5d; Video 5; Figure 5—figure supplement 1p; Supplementary file 3), further supporting the concept that LAPNs help secure interlimb coordination in a context-dependent manner.
+
+![Video 5.](https://cdn.elifesciences.org/articles/53565/elife-53565-video5.mp4.jpg)
+
+**Video 5.:** Videos shown from the same animal at 1x, 0.5x, and 0.25x speed.
 
 Finally, we explored if the context-specificity of silencing-induced disruptions to interlimb coordination was related to speed and speed-related gait changes. We discovered that silencing modestly expanded the speed ranges expressed when speed was determined by the animal (overground, exploratory, coated and smooth). However, the vast majority of disrupted steps occurred at speeds that were shared across the behavioral contexts examined, whether there were few (treadmill, exploratory and smooth surface) or many (overground and coated; Figure 5e, Figure 5—figure supplement 2). Using the data generated from age-matched control rats on the three meter long runway (Figure 4a, Figure 4—figure supplement 1) we found, as expected, a strong relationship between speed and hindlimb coordination (data not shown; Spearman Rank correlation coefficient = 0.753, N = 12 age-matched control rats, n = 403 total steps analyzed). In contrast, when we ran a similar comparison for the DoxOn overground stepping data, we could find no predictable relationship (Spearman Rank correlation coefficient = 0.410, N = 13, n = 600 total steps analyzed) suggesting that silencing the LAPNs resulted in interlimb coordination disruptions that were not speed-dependent. Overall, these data show that disrupted steps occurred throughout the speed range regardless of behavioral context, and that the majority occurred at speeds (≤90 cm/s) normally associated with walk-trot (alternating gaits; Figure 5—figure supplement 2ee), illustrating that silencing-induced changes to interlimb coordination were not related to speed-dependent gait change.
 
@@ -113,21 +177,199 @@ In conclusion, by reversibly silencing LAPNs in the otherwise intact adult rat, 
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (female Sprague-Dawley rats)</td>
+      <td></td>
+      <td>Envigo</td>
+      <td></td>
+      <td>200–220 g, approximately 10–12 weeks old</td>
+    </tr>
+    <tr>
+      <td>Antibody (GFP)</td>
+      <td>Rabbit IgG</td>
+      <td>Abcam ab290</td>
+      <td></td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody (NeuN)</td>
+      <td>Guinea pig IgG</td>
+      <td>Millipore ABN90P</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (NeuN)</td>
+      <td>Mouse IgM</td>
+      <td>Millipore MAB377</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (neurofilament)</td>
+      <td>Mouse IgM</td>
+      <td>Sigma N5264</td>
+      <td></td>
+      <td>1:30,000</td>
+    </tr>
+    <tr>
+      <td>Antibody (synaptophysin)</td>
+      <td>Mouse IgM</td>
+      <td>Millipore MAB5258-50UG</td>
+      <td></td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody (vesicular glutamate transporter 2)</td>
+      <td>Guinea pig IgG</td>
+      <td>Millipore AB2251-I</td>
+      <td></td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody (vesicular GABA transporter)</td>
+      <td>Goat igG</td>
+      <td>Frontier Institute VGAT-Go-Af620</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody (non-immune sera)</td>
+      <td>Rabbit IgG</td>
+      <td>Jackson ImmunoResearch #711-005-152</td>
+      <td></td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 488)</td>
+      <td>Rabbit IgG</td>
+      <td>Jackson ImmunoResearch # 711-545-152</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 594)</td>
+      <td>Guinea pig IgG</td>
+      <td>Jackson ImmunoResearch #706-585-148</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 594)</td>
+      <td>Mouse IgG</td>
+      <td>Jackson ImmunoResearch # 715-585-150</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 647)</td>
+      <td>Mouse IgG</td>
+      <td>Jackson ImmunoResearch # 715-605-151</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 647)</td>
+      <td>Guinea pig IgG</td>
+      <td>Jackson ImmunoResearch # 706-546-148</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary AlexaFluor 647)</td>
+      <td>Goat IgG</td>
+      <td>Jackson ImmunoResearch # 705-605-147</td>
+      <td></td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>HiRet-TRE-EGFP.eTeNT</td>
+      <td></td>
+      <td>Generous gift from Tadashi Isa</td>
+      <td></td>
+      <td>1.6 × 107 vp/ml</td>
+    </tr>
+    <tr>
+      <td>AAV2-CMV-rtTAV16</td>
+      <td></td>
+      <td>Generous gift from Tadashi Isa</td>
+      <td></td>
+      <td>4.8 × 1012 vp/ml</td>
+    </tr>
+    <tr>
+      <td>HiRet-Cre</td>
+      <td></td>
+      <td>Generous gift from Zhigang He</td>
+      <td></td>
+      <td>1.6 × 1012 vp/ml</td>
+    </tr>
+    <tr>
+      <td>AAV2-CAG-FLEx-GFP</td>
+      <td></td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td>3.5 × 1012 vp/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound (Sylgard)</td>
+      <td>Sylgard-coated surface</td>
+      <td>Sylgard 184 Silicone Elastomer Kit, Dow Corning</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound (cholera toxin B subunit conjugate)</td>
+      <td>CTB-488</td>
+      <td>Invitrogen/Molecular Probes C-34775</td>
+      <td></td>
+      <td>1.5% solution in sterile saline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound (cholera toxin B subunit conjugate)</td>
+      <td>CTB-594</td>
+      <td>Invitrogen/Molecular Probes C-34777</td>
+      <td></td>
+      <td>1.5% solution in sterile saline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound (cholera toxin B subunit conjugate)</td>
+      <td>CTB-647</td>
+      <td>Invitrogen/Molecular Probes C-34778</td>
+      <td></td>
+      <td>1.5% solution in sterile saline</td>
+    </tr>
+  </tbody>
+</table>
+
 Experiments were performed in accordance with the Public Health Service Policy on Humane Care and Use of Laboratory Animals, and with the approval of the Institutional Animal Care and Use and Institutional Biosafety Committees at the University of Louisville.
 
 A total of N = 45 adult female Sprague-Dawley rats (Envigo; 200–220 g, approximately 10–12 weeks of age) were used throughout this study. Animals were housed two per cage under 12 hr light:dark cycle with ad libitum food and water. Power analysis of previous silencing experiments revealed that N = 6 was sufficient to detect a significant difference in behavioral outcome measures with 90–99% power (Pocratsky et al., 2017). Silencing data shown in Figures 2–5 represent two separate experiments, each N = 6 and N = 7, respectively. Experiments were performed in a staggered fashion separated by one month such that when the first group was undergoing Dox2 testing, the second group was performing Dox1 testing. No significant differences were detected between the two groups. Data shown are from the pooled samples (N = 13).
 
-## Viral vector production
+### Viral vector production
 
 Dr. Tadashi Isa and colleagues generously provided the plasmid vectors (Kinoshita et al., 2012). The HiRet-TRE-EGFP.eTeNT and AAV2-CMV-rtTAV16 viral vectors were built following previously described methods with viral titers of 1.6 × 107 vp/ml and 4.8 × 1012 vp/ml, respectively (Pocratsky et al., 2017; Abdellatif et al., 2006; Sommer et al., 2003).
 
-## Intraspinal injections to double infect and silence LAPNs
+### Intraspinal injections to double infect and silence LAPNs
 
 Intraspinal injections were performed as described previously (Pocratsky et al., 2017). Procedural details have been deposited into the Nature Protocol Exchange (http://dx.doi.org/10.1038/protex.2017.125).
 
 We adapted this protocol to target LAPNs by performing a C6-C7 laminectomy to expose spinal C6 and injected HiRet-TRE-EGFP.eTeNT using coordinates of 0.6 mm mediolateral and 1.3 mm dorsoventral. The AAV2-CMV-rtTAV16 viral vector was similarly injected into L2 at 0.6 mm mediolateral and 1.5 mm dorsoventral. In double-infected neurons that constitutively express rtTAV16, doxycycline (DOX) induces enhanced tetanus neurotoxin (eTeNT) expression. eTeNT is then transported to the terminal field where it prevents exocytosis of synaptic vesicles, thereby silencing neurotransmission. Removing DOX from the drinking water restores neurotransmission, allowing acute and reversible silencing of this anatomically defined pathway in the otherwise intact adult rat.
 
-## LAPN silencing experimental timeline
+### LAPN silencing experimental timeline
 
 The experimental design used is similar to that of our previous silencing experiments (Pocratsky et al., 2017). In addition to the previously described control and Dox time points, we included an additional vehicle control (sucrose water without doxycycline). N = 6 animals underwent behavioral testing following 4 days of sucrose water. No significant differences were detected between the Sugar control and all other control (or Dox) time points.
 
@@ -135,11 +377,11 @@ Animals were acclimated to the stepping chamber prior to Baseline acquisition. A
 
 Unless otherwise stated, control data reflect the combined data from the following time points: Baseline, Pre-Dox1, DoxOff, and Pre-Dox2. Similarly, the Dox data reflect the combined data from the following time points: Dox1ONDay 3 ("-D3"), -D5, -D8 and Dox2OND3, and -D5. Unless otherwise stated, "Control" refers to collapsed data from all control time points (excluding sugar control) and "Dox" refers to collapsed data from all Dox time points.
 
-## Hindlimb kinematics and intralimb coordination analyses
+### Hindlimb kinematics and intralimb coordination analyses
 
 Hindlimb kinematic analyses were performed as previously described (Pocratsky et al., 2017; Kuerzi et al., 2010; Magnuson et al., 2009) , using custom-built Excel add-in macros (Morehouse, 2020; copy archived at https://github.com/elifesciences-publications/KSCIRC-Gait-Addin).
 
-## Overground locomotion analyses
+### Overground locomotion analyses
 
 The overground locomotor analysis was performed following previously described methods and inclusion/exclusion criteria (Pocratsky et al., 2017). Data were analyzed with and without speed as a co-variate.
 
@@ -151,7 +393,7 @@ Interlimb coordination (phase)-frequency polar plots were created in SigmaPlot (
 
 The underlying rhythm indices were analyzed as described previously (Pocratsky et al., 2017). Briefly, we first confirmed that there were no significant differences between the left and right limbs at Control and Dox time points, respectively. We then calculated the average stride duration for the fore- and hindlimbs, respectively. We also compared between the limb pairs for Control and DOX as well (bars: group mean ± S.D.; circles: individual means). Regression and slope analyses were performed (comparing Control vs Dox) on the following: left versus right forelimb stride duration, left versus right forelimb stride frequency, left versus right hindlimb stride duration, left versus right hindlimb stride frequency, forelimb versus hindlimb stride duration, and forelimb versus hindlimb stride frequency. The inter-girdle comparisons had the left and right limb pairs averaged together before hindlimb versus forelimb analyses.
 
-## Postural stability
+### Postural stability
 
 Balance, posture, and trunk control were assessed through a series of graded tasks. Base-of- support analyses were focused on the hindlimbs as this is the site wherein the major propulsive forces for locomotor behaviors are generated. Using a three-point angle model (point 1: area between shoulder blades, 2: groin, 3: hind paw position at initial contact), the rotation of the hind paws at initial contact were quantified for each step cycle. We chose to use the initial contact instead of lift-off as there is some normal rotation of the paw as weight is differentially transferred to the hindlimb throughout the stance phase. Both the left and right hindlimbs were analyzed at Baseline (n = 220–227 total step cycles analyzed per left or right hindlimb for N = 13 animals) and Dox1On-D5 (n = 223–229 total step cycles).
 
@@ -163,7 +405,7 @@ Sagittal recordings of animals in the stepping chamber were analyzed for volitio
 
 The trunk angle (degree at which the animals held their bodies relative to the water surface) was calculated using a four-point angle model (points 1 and 2: water surface [left and right extremes of the videos], 3: iliac crest; 4: hip). The trunk angle was calculated throughout the stroke cycle on a stroke-by-stroke basis for each swimming pass. Data shown are from Pre-Dox1 and Dox1ON-D5 with a total of n = 7873 and n = 10,520 trunk angles analyzed, respectively, for each hindlimb per animal. Data shown are the group mean ± S.D. (circles denote individual animal means).
 
-## Generalized behavioral analyses: context is key
+### Generalized behavioral analyses: context is key
 
 Treadmill-based locomotion (Single Lane Gait Analysis Treadmill, Columbus Instruments; Columbus, OH, USA) was analyzed following previously described methods (Pocratsky et al., 2017; Beare et al., 2009). Treadmill testing was performed at the following time points: Baseline, Pre-Dox1, Dox1On-D4, DoxOf, Pre-Dox2, and Dox2ON-D4. Inclusion criteria for the steps analyzed including the following: locomotor bouts where animals (1) consistently stepped in the middle of the treadmill, (2) did not hesitate/pause and "ride" to the back of the enclosure, (3) had minimal lateral deviations during stepping, and (4) did not have forward propulsive actions from the end of the enclosure to the middle and/or front. Recordings were analyzed using the MaxTRAQ software package (Innovision Systems Inc; Columbiaville, MI, USA). Care was taken to minimize the number of stepping sessions due to the adverse training effects associated with increased exposure to treadmill stepping (Beare et al., 2009; Hamers et al., 2006). We observed no instances where the animals spontaneously bounded (half or full) on the treadmill (N > 430 steps).
 
@@ -175,7 +417,7 @@ The coefficients of friction reported for each stepping surface were calculated 
 
 Hindlimb swim analyses were performed following previously described methods (Pocratsky et al., 2017).
 
-## Volitionally-expressed, speed-dependent gaits
+### Volitionally-expressed, speed-dependent gaits
 
 To interpret our silencing data with respect to the speed-dependent locomotor gaits, we had to devise a strategy that would allow animals to freely express these fast-paced gaits overground, but still be compatible with our in-house methods for gait analyses (ventral recordings). To do this, we designed and built a runway chamber ("long tank") that was 305 cm long, 30.5 cm wide, and 14 cm tall with four high-speed video cameras (200 Hz) evenly spaced beneath the stepping surface.
 
@@ -191,7 +433,7 @@ Data shown are from seven separate recording sessions that were spread out over 
 
 We did not test for the expression of the speed-dependent gaits in the long tank during LAPN silencing. In the long tank paradigm, we applied positive reinforcement to encourage the volitional expression of the faster-paced gaits. These gaits are volitional in the sense that the animals were not placed on a treadmill and "forced" to step a fast rates of speed. During silencing, we did not want to confound our results by "encouraging" the expression of distinct coupling patterns. It would be challenging to reconcile whether changes in the coupling patterns expressed were due to LAPN silencing or the reinforcement of fast-paced gait expression. Instead, we first wanted to assess how the nervous system would intrinsically respond to the "functional loss" of LAPNs. Going forward, these data may serve as a foundation for future experiments where the gaits are systematically assessed during conditional silencing.
 
-## Histological processing for double-infected LAPNs
+### Histological processing for double-infected LAPNs
 
 Following terminal assessments, animals were sacrificed with an overdose of ketamine:xylazine and transcardially perfused with 0.1 M PBS (pH 7.4) followed by 4% paraformaldehyde (PFA). Spinal cords were dissected, post-fixed in 4% PFA for 1 to 3 hr, and transferred to 30% sucrose for 3–4 days at 4°C. The cervical and lumbar injection sites were dissected, embedded in tissue- freezing medium, cryosectioned at 30 µm in five sets, and stored at −20°C.
 
@@ -199,13 +441,13 @@ Immunohistochemical detection of EGFP.eTeNT-positive terminals in the caudal cer
 
 Double-infected LAPNs were detected following methods previously described (Nature Protocol Exchange: http://dx.doi.org/10.1038/protex.2017.142). In light of the reduced post-fixation time (1–3 hr vs overnight), the following modifications were applied: (1) antigen retrieval was excluded, (2) rabbit anti-GFP was used at a range of 1:30,000 to 1:60,000 to amplify endogenous eTeNT.EGFP signal, and (3) the blocking, secondary, and streptavidin HRP steps were each 30 min in duration. For a negative control for GFP, an isotype-matched IgG at identical protein concentration and dilution was used (donkey anti-rabbit IgG; Jackson ImmunoResearch #711-005-152). The microscopy settings and post hoc image processing are previously described (Pocratsky et al., 2017).
 
-## LAPN anatomical work-up
+### LAPN anatomical work-up
 
-## CTB Labeling
+#### CTB Labeling
 
 Power analyses revealed that a sample size of N = 5 animals was sufficient to detect a significant difference in the number of ipsilateral-projecting vs contralateral-projecting rostral LAPNs, with or without local projections to spinal L1 or spinal L5, respectively (power >95%). A total of N = 11 adult female Sprague-Dawley rats (210–230 grams) were used in this study, with N = 5 and N = 6 comprising two separate groups (described below).
 
-## Cervical and lumbar injections were performed during the same day of surgery
+#### Cervical and lumbar injections were performed during the same day of surgery
 
 Animals were anesthetized with a cocktail of ketamine/xylazine/acepromazine (80 mg/kg, 4 mg/kg, and 305 mg/kg; i.p.) and received a C6-C7 laminectomy to expose spinal C6. Following previously described methods, two different AlexaFluor conjugates of cholera toxin B subunit (CTB) were bilaterally injected into the intermediate gray matter (Pocratsky et al., 2017). Animals received one unilateral injection of CTB-AlexaFluor-594 on the left field of view (FOV) and one unilateral injection of CTB-AlexaFluor-647 on the right field of view. Injection coordinates were 0.5 mm mediolateral and 1.3 mm dorsoventral, respectively. Following the cervical injections, animals were randomly assigned to two groups. One group received a T12 laminectomy to expose spinal L1 (N = 6) while the second group received a ~ T13 L1 laminectomy to expose spinal L5 (N = 5). Both groups received one unilateral injection of CTB-AlexaFluor-488 (right FOV). The L1 injections were performed at the rostral FOV with mediolateral-dorsoventral coordinates of 0.5 mm and 1.3 mm, respectively. The L5 injections were performed at the caudal FOV with mediolateral-dorsoventral coordinates of 0.5 mm and 1.4 mm, respectively. All CTB conjugates were prepared as a 1.5% solution (0.1 M PBS, pH 7.4; Molecular Probes, Eugene, OR, USA) and delivered in two, 0.25 µl boluses separated by three minutes to allow for tracer uptake. Post-operative care was performed as described above.
 
@@ -217,7 +459,7 @@ Laminar distribution analyses and heatmap generation were performed as previousl
 
 Immunohistochemical detection of putative synaptic inputs onto LAPNs was performed in accordance with methods previously described (Pocratsky et al., 2017).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using the SPSS v22 software package from IBM. Additional references for parametric and non-parametric testing were used in complementation to SPSS (Hays, 1981; Siegel and Castellan, 1988; Batschelet, 1972; Zar, 1974; Ott, 1977; Lenth, 2006). Differences between groups were deemed statistically significant at p≤0.05. Two-tail p values are reported.
 
@@ -243,6 +485,6 @@ Paired t-tests were used to detect significant differences in: (1) the magnitude
 
 Levene’s Test for Equality of Variances were performed to test for a normal distribution within the interlimb coordination datasets. Notably, at control time points (e.g. Baseline) the coordination data have a non-normal distribution as phase values will naturally concentrate towards one value (e.g. 0.5 for left-right alternation in the hindlimbs).
 
-## Code availability
+### Code availability
 
 Kinematic and gait data were analyzed using custom-built Excel add-in macros (Morehouse, 2020; copy archived at https://github.com/elifesciences-publications/KSCIRC-Gait-Addin). Heatmaps and contour plots of LAPN laminar distribution were generated using custom-designed MatLab and R scripts (States, 2020; copy archived at https://github.com/elifesciences-publications/Pocratsky_et_al_2020).

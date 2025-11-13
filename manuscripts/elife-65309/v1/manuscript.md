@@ -36,11 +36,35 @@ We demonstrate that this model network can generate excess population activity w
 
 ## Results
 
-## A recurrent neural network model with plastic inhibition can generate novelty responses
+### A recurrent neural network model with plastic inhibition can generate novelty responses
 
 Recent experimental studies have indicated an essential role of inhibitory circuits and inhibitory plasticity in adaptive phenomena and novelty responses (Chen et al., 2015; Kato et al., 2015; Natan et al., 2015; Hamm and Yuste, 2016; Natan et al., 2017; Heintz et al., 2020). To understand if and how plastic inhibitory circuits could explain the emergence of novelty responses, we built a biologically plausible spiking neuronal network model of recurrently connected 4000 excitatory and 1000 inhibitory neurons based on recent experimental findings on tuning, connectivity, and inhibitory and excitatory STDP in the cortex (Materials and methods). Excitatory-to-excitatory (E-to-E) synapses were plastic based on the triplet spike-timing-dependent plasticity (eSTDP) rule (Sjöström et al., 2001; Pfister and Gerstner, 2006; Gjorgjieva et al., 2011; Figure 1—figure supplement 1). The triplet STDP rule enabled the formation of strong bidirectional connections among similarly selective neurons (Gjorgjieva et al., 2011; Montangie et al., 2020). Plasticity of connections from inhibitory to excitatory neurons was based on an inhibitory STDP (iSTDP) rule measured experimentally (D'amour and Froemke, 2015), and shown to stabilize excitatory firing rate dynamics in recurrent networks (Vogels et al., 2011; Figure 1—figure supplement 1). In contrast to other frameworks which have found short-term plasticity as key for capturing adaptation phenomena, we only included long-term plasticity and did not explicitly model additional adaptation mechanisms.
 
 We targeted different subsets of excitatory and inhibitory neurons with different external stimuli, to model that these neurons are stimulus-specific (‘tuned’) to a given stimulus (Figure 1A, left, see Materials and methods). One neuron could be driven by multiple stimuli. Starting from an initially randomly connected network, presenting tuned input led to the emergence of excitatory assemblies, which are strongly connected, functionally related subsets of excitatory neurons (Figure 1—figure supplement 2C, left). Furthermore, tuned input also led to the stimulus-specific potentiation of inhibitory-to-excitatory connections (Figure 1—figure supplement 2E, left). We refer to this part of structure formation as the ‘pretraining phase’ of our simulations (Materials and methods). This pretraining phase imprinted structure in the network prior to the actual stimulation paradigm as a model of the activity-dependent refinement of structured connectivity during early postnatal development (Thompson et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left: A recurrently connected network of excitatory (E) neurons (blue triangles) and inhibitory (I) neurons (red circles) receiving tuned input. Excitatory neurons tuned to a sample stimulus A are highlighted in dark blue, the inhibitory counterparts in dark red. E-to-E synapses and I-to-E synapses were plastic, and all other synapses were fixed. Right: Schematic of the stimulation protocol. Multiple stimuli (A, B, and C) were presented in a sequence (ABC). Each sequence was repeated $n$ times in a sequence block. In the second-to-last sequence, the last stimulus was replaced by a novel stimulus (N). Multiple sequence blocks followed each other without interruption, with each block containing sequences of different stimuli. (B) Population average firing rate of all excitatory neurons as a function of time after the onset of a sequence block. Activity was averaged (solid line) across multiple non-repeated sequence blocks (transparent lines: individual blocks). A novel stimulus (dark gray) was presented as the last stimulus of the second-to-last sequence. (C) Spiking activity in response to a sequence (ABC) in a subset of 1000 excitatory neurons where the neurons were sorted according to the stimulus from which they receive tuned input. A neuron can receive input from multiple stimuli and can appear more than once in this raster plot. (D) A random unsorted subset of 50 excitatory neurons from panel C. Time was locked to the sequence block onset.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Synaptic weight change as a function of the time between pre- and postsynaptic spikes after the induction of 60 spike pairs at different pairing frequencies (0.1, 10, 20, and 50 Hz). Left: Triplet spike-timing-dependent plasticity rule of excitatory-to-excitatory connections $Δ⁢J^{E⁢E}$. Right: Inhibitory spike-timing-dependent plasticity rule of inhibitory-to-excitatory connections $Δ⁢J^{E⁢I}$.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A recurrently connected network of excitatory (E) neurons (blue triangles) and inhibitory (I) neurons (red circles) receives tuned input. Excitatory neurons tuned to a sample stimulus A are highlighted in dark blue, the inhibitory counterparts in dark red. Left: Average excitatory weights within stimulus-specific assembly A are determined by averaging all E-to-E weights within an assembly. Center: Average inhibitory weights onto stimulus-specific assembly A are determined by averaging the weights from all inhibitory neurons onto stimulus-specific assembly A. Right: Stimulus-specific inhibitory weights onto stimulus-specific assembly A are determined by averaging only the weights from the inhibitory neurons that are also tuned to stimulus A (dark red). (B) Evolution of the average excitatory weights corresponding to all repeated and 10 sample novel stimuli. Colored traces mark three stimulus-specific assemblies in sequence 1: A, B, and C. The legend is shared with panel D. (C) Left: Weight matrix of average excitatory (E–to–E) weights after pretraining (see panel B) for all repeated and 10 sample novel stimuli separated by the gray lines. The size of assemblies can be slightly different. The weights across assemblies (off-diagonal) are small compared to the weights within assemblies (diagonal). After pretraining, there is no apparent difference in connectivity for novel and repeated stimuli. The diagonal elements correspond to the traces plotted in B, that is, the time evolution of the bottom-left square, highlighted in dark blue corresponds to the dark blue trace in panel B. Right: Same as left after the repeated sequence stimulation paradigm (see final in panel B). Here, assembly weights for repeated stimuli are stronger. (D) Same as panel B for the average inhibitory weights. Arrows indicate end points of the pretraining and whole stimulation phase. (E) Left: Weight matrix of stimulus-specific inhibitory (I–to–E) weights after pretraining (see panel D) for all repeated and 10 sample novel stimuli separated by the gray lines. The size of assemblies can be slightly different. Inhibition is stimulus-specific (diagonal stronger than off diagonal), that is, the weights from inhibitory neurons tuned to a given stimulus onto excitatory neurons that are tuned to the same stimulus (diagonal) are larger that onto excitatory neurons that are tuned to different stimuli (off-diagonal). After pretraining, there is no apparent difference in connectivity for novel and repeated stimuli. Here, an entire column average approximately corresponds to the traces plotted in D, that is, the time evolution of the averaged first column, highlighted in dark blue corresponds to the dark blue trace in panel D. It is only approximate, since individual inhibitory neurons can be tuned to multiple repeated and novel stimuli and hence contribute to multiple averages shown here in the matrix. Right: Same as left after the repeated sequence stimulation paradigm (see final in panel D). Here, excitatory assemblies tuned to repeated stimuli receive more inhibition than those tuned to novel stimuli.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic of increased inhibitory weights onto stimulus-specific assemblies upon the repeated presentation of stimuli A and B (indicated by dark blue and turquoise) relative to neurons from other assemblies (light blue). Both, excitatory and inhibitory neurons were pretuned to different stimulus features (black and gray borders). (B) Population average firing rate of all excitatory neurons as a function of time after the onset of a sequence block. Activity was averaged (solid line) across multiple non-repeated sequence blocks (transparent lines: individual blocks). A novel stimulus was presented as the last stimulus of the second-to-last sequence. (C) Top: Evolution of the average excitatory weights corresponding to all repeated and 10 sample novel stimuli. Colored traces mark three stimulus-specific assemblies in sequence 1: A, B, and C. The legend is shared with bottom panel. Bottom: Same as top panel for the average inhibitory weights. Arrows indicate end points of the pretraining, early, intermediate and late time points and whole stimulation phase. (D) Top, left: Population average firing rate of all excitatory neurons during the repeated presentation of sequence 1 at an early time point (see panel C, bottom). The novelty response can be seen at the end of the stimulation period. Bottom, left: Close-up of panel C, bottom (rectangle). Top, right: Same as panel top, left but at intermediate and late time points (see panel C, bottom). Bottom, right: Corresponding dynamics of the average inhibitory weights onto all three stimulus-specific assemblies from sequence 1 at early, intermediate and late time points (see panel C, bottom). The dark purple trace (early) corresponds to the average of the three colored traces in bottom, left panel. Time is locked to sequence onset. (E) Left: Weight matrix of average excitatory (E–to–E) weights after pretraining (see panel C), sorted by repeated and novel stimuli (repeated and novel stimuli are separated by the black lines). Right: Same as left after the repeated sequence stimulation paradigm (see final in panel C, top). The diagonal elements correspond to the traces plotted in C, top. (F) Left: Weight matrix of stimulus-specific inhibitory (I–to–E) weights after pretraining (see panel C, bottom), sorted by repeated and novel stimuli (repeated and novel stimuli are separated by the black lines). Right: Same as left after the repeated sequence stimulation paradigm (see final in panel C,bottom). .
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Single neuron statistics measured for 100 ms directly after the onset of the stimulus (onset), after the onset of the novel stimulus (novelty) and shortly before the novel stimulus is presented (adapted). (A) Fraction of active excitatory neurons (at least one spike in a 100 ms window) for the three different time-points of the stimulation paradigm. Horizontal line indicates the median, boxes are drawn between the 25th and 75th percentile, whiskers extend above and below the box to the most extreme data points that are within a distance to the box equal to 1.5 times the interquartile range and points indicate all data points. Each data point corresponds to a unique sequence block. (B) Same as A for inhibitory neurons. (C) Spike raster of all neurons sorted according to neuron ID during one sequence block. Time is locked to sequence block onset.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Normalization time step $Δ⁢t$ does not affect the occurrence of a novelty response.(A) Population average firing rate of all excitatory neurons as a function of time after the onset of a sequence block for different normalization time steps $Δ⁢t=[0.02⁢s,0.5⁢s,1⁢s,2⁢s,10⁢s,50⁢s]$. Activity was averaged (solid line) across multiple non-repeated sequence blocks (transparent lines: individual blocks). A novel stimulus was presented as the last stimulus of the second-to-last sequence. (B) Left: Evolution of the average excitatory weights corresponding to 10 repeated stimuli with $Δ⁢t=50⁢s$. Arrows indicate the time-point of normalization. Colored traces mark three stimulus-specific assemblies in sequence 1: A, B, and C. Right: Same as left panel for the average inhibitory weights.
 
 To test the influence of inhibitory plasticity on the emergence of a novelty response, we followed an experimental paradigm used to study novelty responses in layer 2/3 (L2/3) of mouse primary visual cortex (V1) (Homann et al., 2017). In Homann et al., 2017, a single stimulus consisted of 100 randomly oriented Garbor patches. Three different stimuli (A, B, and C) were presented in a sequence (ABC) (Figure 1A, right). The same sequence (ABC) was then repeated several times in a sequence block. In the second-to-last sequence, the last stimulus was replaced by a novel stimulus (N). In the consecutive sequence block, a new sequence with different stimuli was presented (we refer to this as a unique sequence stimulation paradigm). The novel stimuli were also different for each sequence block. In this paradigm, we observed elevated population activity in the excitatory model population at the beginning of each sequence block (‘onset response’) and a steady reduction to a baseline activity level for the repeated sequence presentation (Figure 1B). Upon presenting a novel stimulus, the excitatory population showed excess activity, clearly discernible from baseline, called the ‘novelty response’. This novelty response was comparable in strength to the onset response. Sorting spike rasters according to sequence stimuli revealed that stimulation leads to high firing rates in the neurons that are selective to the presented stimulus (A, B, or C) (Figure 1C). When we used a different set of stimuli in the stimulation versus the pretraining phase to better match the randomly oriented Gabor patches presented in Homann et al., 2017 (Figure 1—figure supplement 3A, see Materials and methods), we found the same type of responses to repeated and novel stimuli (Figure 1—figure supplement 3B). When examining a random subset of neurons, we found general response sparseness and periodicity during sequence repetitions (Figure 1D), very similar to experimental findings (Homann et al., 2017). More concretely, sparse population activity for repeated stimuli in our model network was the result of each stimulus presentation activating a subset of excitatory neurons in the network, which were balanced by strong inhibitory feedback. Therefore, only neurons that directly received this feedforward drive were highly active, while most other neurons in the network were instead rather silent. Periodicity in the activity of single neurons resulted from the repetition of a sequence.
 
@@ -48,17 +72,17 @@ In the model, the fraction of active excitatory neurons was qualitatively simila
 
 Our results suggest that presenting repeated stimuli (and repeated sequences of stimuli) to a plastic recurrent network with tuned excitatory and inhibitory neurons readily leads to a reduction of the excitatory averaged population response, consistent with the observed adaptation in multiple experimental studies in various animal models and brain regions (Ulanovsky et al., 2003; Hamm and Yuste, 2016; Homann et al., 2017). Importantly, the model network generates a novelty response when presenting a novel stimulus by increasing the excitatory population firing rate at the time of stimulus presentation (Näätänen et al., 2007).
 
-## The dynamics of novelty and onset responses depend on sequence properties
+### The dynamics of novelty and onset responses depend on sequence properties
 
 To explore the dynamics of novelty responses, we probed the model network with a modified stimulation paradigm. Rather than fixing the number of sequence repetitions in one sequence block (Figure 1A, right), here we presented a random number of sequence repetitions (nine values between 4 and 45 repetitions) for each sequence block. This allowed us to measure the novelty and onset responses as a function of the number of sequence repetitions. Novelty and onset responses were observed after as few as four sequence repetitions (Figure 2A). After more than 15 sequence repetitions, the averaged excitatory population activity reached a clear baseline activity level (Figure 2A). The novelty response amplitude, measured by the population rate of the novelty peak minus the baseline population rate, increased with the number of sequence repetitions before saturating for a high number of sequence repeats (Figure 2B, black dots). The onset response amplitude after the respective sequence block followed the same trend (Figure 2B, gray dots). Next, we varied the number of stimuli in a sequence, resulting in different sequence lengths across blocks (3 to 15 stimuli per sequence). By averaging excitatory population responses across sequence blocks with equal length, we found that the decay of the onset response depends on the number of stimuli in a sequence (Figure 2C). Upon fitting an exponentially decaying function to the activity of the onset response, we derived a linear relationship between the number of stimuli in a sequence and the decay constant (Figure 2D).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig2-v1.jpg)
 
-**Figure 2.:** (A) Population average firing rate of all excitatory neurons for a different number of sequence repetitions within a sequence block. Time is locked to the sequence block onset. (B) The response amplitude of the onset (gray) and the novelty (black) response as a function of sequence repetitions fit with an exponential with a time constant . (τC) Population average firing rate of all excitatory neurons for varying sequence length fit with an exponential function (red). Time is locked to the sequence block onset. (D) The onset decay time constant (fit with an exponential, as shown in panel C) as a function of sequence length. The simulated data was fit with a linear function with slope . (mB, D) Error bars correspond to the standard deviation across five simulated instances of the model.
+**Figure 2.:** (A) Population average firing rate of all excitatory neurons for a different number of sequence repetitions within a sequence block. Time is locked to the sequence block onset. (B) The response amplitude of the onset (gray) and the novelty (black) response as a function of sequence repetitions fit with an exponential with a time constant $\tau$. (C) Population average firing rate of all excitatory neurons for varying sequence length fit with an exponential function (red). Time is locked to the sequence block onset. (D) The onset decay time constant (fit with an exponential, as shown in panel C) as a function of sequence length. The simulated data was fit with a linear function with slope $m$. (B, D) Error bars correspond to the standard deviation across five simulated instances of the model.
 
-In summary, we found that novelty responses arise for different sequence variations. Our model network suggests that certain features of the novelty response depend on the properties of the presented sequences. Changing the number of sequence repetitions modifies the onset and novelty response amplitude (Figure 2A,B), while a longer sequence length leads to a longer adaptation time constant (Figure 2C,D). Interestingly, both findings are in good qualitative agreement with experimental data that presented similar sequence variations (Homann et al., 2017). An exponential fit of the experimental data found a time constant of τ=3.2±0.7 repetitions when the number of sequence repetitions was varied (Homann et al., 2017). The time constant in our model network was somewhat longer (τ=9±1 repetitions), but on a similar order of magnitude (Figure 2B). Similarly, our model network produced a linear relationship between the adaptation time constant and sequence length with a slope of m=1.6±0.04 (Figure 2D), very close to the slope extracted from the data (m=2.1±0.3) (Homann et al., 2017). Therefore, grounded on biologically-plausible plasticity mechanisms, and capable of capturing the emergence and dynamics of novelty responses, our model network provides a suitable framework for a mechanistic dissection of the circuit contributions in the generation of a novelty response.
+In summary, we found that novelty responses arise for different sequence variations. Our model network suggests that certain features of the novelty response depend on the properties of the presented sequences. Changing the number of sequence repetitions modifies the onset and novelty response amplitude (Figure 2A,B), while a longer sequence length leads to a longer adaptation time constant (Figure 2C,D). Interestingly, both findings are in good qualitative agreement with experimental data that presented similar sequence variations (Homann et al., 2017). An exponential fit of the experimental data found a time constant of $\tau=3.2\pm0.7$ repetitions when the number of sequence repetitions was varied (Homann et al., 2017). The time constant in our model network was somewhat longer ($\tau=9\pm1$ repetitions), but on a similar order of magnitude (Figure 2B). Similarly, our model network produced a linear relationship between the adaptation time constant and sequence length with a slope of $m=1.6\pm0.04$ (Figure 2D), very close to the slope extracted from the data ($m=2.1\pm0.3$) (Homann et al., 2017). Therefore, grounded on biologically-plausible plasticity mechanisms, and capable of capturing the emergence and dynamics of novelty responses, our model network provides a suitable framework for a mechanistic dissection of the circuit contributions in the generation of a novelty response.
 
-## Stimulus periodicity in the sequence is not required for the generation of a novelty response
+### Stimulus periodicity in the sequence is not required for the generation of a novelty response
 
 Experimental studies have often reported novelty or deviant responses by averaging across several trials due to poor signal-to-noise ratios of the measured physiological activity (Homann et al., 2017; Vinken et al., 2017). Therefore, we investigated the network response to paradigms with repeated individual sequence blocks (Figure 3A), which we refer to as the repeated sequence stimulation paradigm. We randomized the order of the sequence block presentation to avoid additional temporal structure beyond the stimulus composition of the sequences. Repeating sequence blocks dampened the onset response at sequence onset compared to the unique sequence stimulation paradigm (compare Figure 1B and Figure 2A,B with Figure 3A). Next, we wondered whether the excitatory and inhibitory population responses to repeated and novel stimuli are related. We found that both excitatory and inhibitory populations adapt to the repeated stimuli and show a prominent novelty peak that is larger than the respective averaged onset response (Figure 3B,C). Based on these findings, we make the following predictions for future experiments: (1) A novelty response is detectable in both the excitatory and inhibitory populations. (2) The sequence onset response is dampened for multiple presentations of the same sequence block compared to the presentation of unique sequence blocks.
 
@@ -68,9 +92,21 @@ Experimental studies have often reported novelty or deviant responses by averagi
 
 Next, we investigated whether the generation of novelty responses observed in the model network depends on the sequence structure. If the novelty responses were to truly signal the violation of the sequence structure or the stimulus predictability in a sequence, we would expect a novelty response to occur if two stimuli in a sequence were swapped, that is, ACB instead of ABC. We found that swapping the last and second-to-last stimulus, instead of presenting a novel stimulus, does not elicit a novelty response (Figure 3D). Additionally, we asked whether the periodicity of the stimuli within a sequence influences the novelty response. Shuffling the stimuli within a sequence block still generates a novelty response and adaptation to the repeated stimuli, similar to the strictly periodic case (Figure 3E, compare to Figure 3A). Finally, we investigated if the novelty peak depends on the input firing rate of the novel stimulus. We found that a reduction of the input drive decreases the novelty peak, revealing a monotonic dependence of the novelty response on stimulus strength (Figure 3F). Based on these results, we make two additional predictions: (3) The periodicity of stimuli in the sequence is not required for the generation of a novelty response. Hence, the novelty response encodes the distribution of presented stimuli, rather than the structure of a sequence. (4) A novelty response depends on the strength of the novel stimulus.
 
-## Increased inhibition onto highly active neurons leads to adaptation
+### Increased inhibition onto highly active neurons leads to adaptation
 
 To gain an intuitive understanding for the sensitivity of novelty responses to stimulus identity but lack of sensitivity to stimulus periodicity in the sequence, we more closely examined the role of inhibitory plasticity as the leading mechanism behind the novelty responses in our model. We found that novelty responses arise because inhibitory plasticity fails to sufficiently increase inhibitory input and to counteract the excess excitatory input into excitatory neurons upon the presentation of a novel stimulus. In short, novelty responses can be understood as the absence of adaptation in an otherwise adapted response. Adaptation in the network arises through increased inhibition onto highly active neurons through selective strengthening of I-to-E weights (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of increased inhibitory weights onto two stimulus-specific assemblies upon the repeated presentation of stimuli A and B (indicated in dark blue and turquoise) relative to neurons from other assemblies (light blue). (B) Evolution of the average inhibitory weights onto stimulus-specific assemblies. Colored traces mark three stimulus-specific assemblies in sequence 1: A, B, and C. Arrows indicate time points of early, intermediate, and late sequence block presentation shown in C and D. (C) Top: Population average firing rate of all excitatory neurons during the repeated presentation of sequence 1 at an early time point (see panel B). Time is locked to sequence onset. Bottom: Close-up of panel B (rectangle). Time is locked to sequence onset. (D) Top: Same as panel C (top) but at intermediate and late time points (see panel B). Bottom: Corresponding dynamics of the average inhibitory weights onto all three stimulus-specific assemblies from sequence 1 at early, intermediate and late time points (see panel B). The dark purple trace (early) corresponds to the average of the three colored traces in C (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The novelty peak height as a function of the number of repetitions. The same 65 stimuli were presented during the pretraining and the consecutive stimulation paradigm (paradigm stimuli). (B) Evolution of the average inhibitory weights onto all stimulus-specific assemblies of repeated (full line) or novel (dashed line) stimuli. Shades of gray represent the average inhibitory weights for different number of repetitions of each stimulus. (C) The novelty peak height as a function of the total number of stimuli in the pretraining phase. Each of the 65 paradigm stimuli and $n$(0 to 100) additional stimuli are repeated five times during pretraining. (D) Same as panel B, where now shades of gray represent the average inhibitory weights for different number of stimuli.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Population average firing rate of all excitatory neurons as a function of time after the onset of a sequence block. Activity was averaged (solid line) across multiple non-repeated sequence blocks (transparent lines: individual blocks). A novel stimulus was presented as the last stimulus of the second-to-last sequence. Each panel shows the population average for a different inhibitory learning rate $η$. For reference, we use $η=1pF$ in the remaining of the manuscript. (B) The response amplitude of the novelty response as a function of the inhibitory learning rate $η$. (C) The onset decay time constant (fit with an exponential) as a function of the inhibitory learning rate $η$. Error bars correspond to the standard deviation, dots are results from a single run.
 
 To determine how inhibitory plasticity drives the generation of novelty responses or, equivalently, adaptation in our model, we studied the evolution of inhibitory weights. The inhibitory weights onto stimulus-specific assemblies tuned to the stimuli in a given sequence increased upon presentation of the corresponding sequence block, and decreased otherwise (Figure 4B). The population firing rate during repeated presentation of a sequence decreased (adapted) on the same timescale as the increase of the inhibitory weights related to this sequence (Figure 4C). When a stimulus was presented to the network for the first time, the total excitatory input to the corresponding excitatory neurons was initially not balanced by inhibition. Hence, the neurons within the assembly tuned to that stimulus exhibited elevated activity at sequence onset, leading to what we called the ‘onset response’ (Figure 1B). The same was true for the novelty responses as reflected in low inhibitory weights onto novelty assemblies relative to repeated assemblies (Figure 1—figure supplement 2D,E). Consequently, the generation of a novelty response did not depend on the specific periodicity of the stimuli within a sequence (Figure 3). Swapping two stimuli did not generate a novelty response since the corresponding assemblies of each stimulus were already in an adapted state. Therefore, our results suggest that the exact sequence structure of stimulus presentations is not relevant for the novelty response, as long as the overall distribution of stimuli is maintained.
 
@@ -80,11 +116,11 @@ Using a different set of stimuli in the stimulation versus the pretraining phase
 
 Furthermore, we observed that the dynamics of inhibitory plasticity and the generation of a novelty response did not depend on the exact parameters of the pretraining phase (Figure 4—figure supplement 1). Specifically, increasing the number of repetitions in the pretraining phase increased the height of the novelty peak, but eventually reached a plateau at 10 repetitions (Figure 4—figure supplement 1A). Increasing the number of stimuli decreased the height of the novelty peak (Figure 4—figure supplement 1C). However, these pretraining parameters only affected some aspects of the novelty response, but preserved the generation of the novelty response. Even without a pretraining phase (zero number of repetitions), a novelty response could be generated.
 
-Based on our result that inhibitory plasticity is the underlying mechanism of adapted and novelty responses in our model, we wondered how fast it needs to be. Hence, we tested the influence of the inhibitory learning rate (η) in the unique sequence stimulation paradigm. We found that inhibitory plasticity needs to be fast for both results, the generation of a novelty response (Figure 4—figure supplement 2A,B) and adaptation to repeated stimuli (Figure 4—figure supplement 2C). Whether such fast inhibitory plasticity operates in the sensory cortex to underlie the adapted and novelty responses is still unknown.
+Based on our result that inhibitory plasticity is the underlying mechanism of adapted and novelty responses in our model, we wondered how fast it needs to be. Hence, we tested the influence of the inhibitory learning rate ($η$) in the unique sequence stimulation paradigm. We found that inhibitory plasticity needs to be fast for both results, the generation of a novelty response (Figure 4—figure supplement 2A,B) and adaptation to repeated stimuli (Figure 4—figure supplement 2C). Whether such fast inhibitory plasticity operates in the sensory cortex to underlie the adapted and novelty responses is still unknown.
 
 In summary, we identified the plasticity of connections from inhibitory to excitatory neurons belonging to a stimulus-specific assembly as the key mechanism in our framework for the generation of novelty responses and for the resulting adaptation of the network response to repeated stimuli. This adaptation occurs on multiple timescales, covering the range from the timescale of inhibitory plasticity (milliseconds) to sequence block adaptation (seconds) to the presentation of multiple sequence blocks (minutes).
 
-## The adapted response depends on the interval between stimulus presentations
+### The adapted response depends on the interval between stimulus presentations
 
 Responses to repeated stimuli do not stay adapted but can recover if the repeated stimulus is no longer presented (Ulanovsky et al., 2004; Cohen-Kashi Malina et al., 2013). We investigated the recovery of adapted responses in the unique sequence stimulation paradigm (Figure 5A). Similar to Figure 2C, we changed the number of stimuli in the sequence, which leads to different inter-repetition intervals of a repeated sequence stimulus (the interval until the same stimulus is presented again). For example, if two repeated stimuli (A, B) are presented, the inter-repetition interval for each stimulus is 300 ms because each stimulus is presented for 300 ms (Figure 5C). If four repeated stimuli are presented (A, B, C, D), the inter-repetition interval for each stimulus is 900 ms. We defined the adaptation level as the difference of the onset population rate, measured at the onset of the stimulation, and the baseline rate, measured shortly before the presentation of a novel stimulus. We found that an increase in the inter-repetition interval reduced the adaptation level of the excitatory population (Figure 5A,D) due to a decrease of inhibitory synaptic strength onto stimulus-specific assemblies (Figure 5B,E). More specifically, the population average of all excitatory neurons tuned to stimulus A was high when stimulus A was presented and low when stimulus B was presented (Figure 5C). Hence, inhibitory weights onto stimulus-specific assembly A increased while A was presented and decreased otherwise (Figure 5B).
 
@@ -94,11 +130,19 @@ Responses to repeated stimuli do not stay adapted but can recover if the repeate
 
 In summary, longer inter-repetition intervals provide more time for the inhibitory weights onto stimulus-specific assemblies to decrease, hence, weakening the adaptation.
 
-## Inhibitory plasticity and tuned inhibitory neurons support stimulus-specific adaptation
+### Inhibitory plasticity and tuned inhibitory neurons support stimulus-specific adaptation
 
 Next, we investigated whether inhibitory plasticity of tuned inhibitory neurons support additional computational capabilities beyond the generation of novelty responses and adaptation of responses to repeated stimuli on multiple timescales. Therefore, we implemented a different stimulation paradigm to investigate the phenomenon of stimulus-specific adaptation (SSA). At the single-cell level, SSA typically involves a so-called oddball paradigm where two stimuli elicit an equally strong response when presented in isolation, but when one is presented more frequently, the elicited response is weaker than for a rarely presented stimulus (Natan et al., 2015).
 
 We implemented a similar paradigm at the network level where the excitatory neurons corresponding to two stimuli A and B were completely overlapping and the inhibitory neurons were partially overlapping (Figure 6A). Upon presenting stimulus A several times, the neuronal response gradually adapted to the baseline level of activity, while presenting the oddball stimulus B resulted in an increased population response (Figure 6B). Therefore, this network was able to generate SSA. Even though stimuli A and B targeted the same excitatory cells, the network response adapted only to stimulus A, while generating a novelty response for stimulus B. Even after presenting stimulus B, activating stimulus A again preserved the adapted response (Figure 6B). This form of SSA exhibited by our model network is in agreement with many experimental findings in the primary auditory cortex, primary visual cortex, and multiple other brain areas and animal models (Nelken, 2014). In our model network, SSA could neither be generated with adaptive neurons and static synapses (Figure 6C, top; Materials and methods), nor with inhibitory plasticity without inhibitory tuning (Figure 6C, bottom). In fact, including an adaptive current in the model neurons (Brette and Gerstner, 2005) did not even lead to adaptation of the response to a frequent stimulus since firing rates rapidly adapted during stimulus presentation and completely recovered in the inter-stimulus pause (Figure 6C, top).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig6-v1.jpg)
+
+**Figure 6.:** (A) Stimuli A and B provided input to the same excitatory neurons (dark blue and turquoise). Some neurons in the inhibitory population were driven by both A and B (dark red and rose) and some by only one of the two stimuli (dark red or rose). (B,C) Population average firing rate of excitatory neurons over time while stimulus A was presented 20 times. Stimulus B was presented instead of A as the second-to-last stimulus. Time is locked to stimulation onset. (B) Top: Population average of all excitatory neurons in the network with inhibitory plasticity (iSTDP) and inhibitory tuning. Bottom: Population average of stimulated excitatory neurons only (stimulus-specific to A and B). (C) Top: Same as panel B (top) for neurons with an adaptive current in a non-plastic recurrent network. Bottom: Same as panel B (top) for the network with inhibitory plasticity (iSTDP) and no inhibitory tuning. (D) Weight evolution of stimulus-specific inhibitory weights corresponding to stimuli A and B and average inhibitory weights.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65309/elife-65309-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The stimulus is shown nine times while the population response adapts. This is followed by a long pause, and then the same stimulus is shown once more. The inter-stimulus interval here is 900 ms, while stimuli are presented for 300 ms. (A) Population average of all excitatory neurons during repeated presentation of stimulus A followed by a short pause (9 s) and then another presentation of A (top). Weight evolution of stimulus-specific inhibitory weights during the stimulation paradigm (bottom). Time is locked to stimulus onset. (B) Same as A but with a much longer pause (225 s). The initial stimulation paradigm in panel A is the same as in panel B (indicated with the box).
 
 We investigated the dynamics of inhibitory weights to understand the mechanism behind SSA in our model network. During the presentation of stimulus A, stimulus-specific inhibitory weights corresponding to stimulus A (average weights from inhibitory neurons tuned to stimulus A onto excitatory neurons tuned to stimulus A, see Figure 1—figure supplement 2A, right) increased their strength, while stimulus-specific inhibitory weights corresponding to stimulus B remained low (Figure 6D). Hence, upon presenting the oddball stimulus B, the stimulus-specific inhibitory weights corresponding to stimulus B remained sufficiently weak to keep the firing rate of excitatory neurons high, thus resulting in a novelty response.
 
@@ -106,7 +150,7 @@ We next asked about the recovery of the adapted response in this SSA paradigm (F
 
 In summary, our results suggest that the combination of inhibitory plasticity and inhibitory tuning can give rise to SSA. Previous work has argued that inhibition or inhibitory plasticity does not allow for SSA (Nelken, 2014). However, this is only true if inhibition is interpreted as a ‘blanket’ without any tuning in the inhibitory population. Including recent experimental evidence for tuned inhibition into the model, (Lee et al., 2014; Xue et al., 2014; Znamenskiy et al., 2018), can indeed capture the emergence of SSA.
 
-## Disinhibition leads to novelty response amplification and a dense population response
+### Disinhibition leads to novelty response amplification and a dense population response
 
 Beyond the bottom-up computations captured by the network response to the different stimuli, we next explored the effect of additional modulations or top-down feedback into our network model. Top-down feedback has been frequently postulated to signal the detection of an error or irregularity in the framework of predictive coding (Clark, 2013; Spratling, 2017). Therefore, we specifically tested the effect of disinhibitory signals on sequence violations by inhibiting the population of inhibitory neurons during the presentation of a novel stimulus (Figure 7A). Recent evidence has identified a differential disinhibitory effect in sensory cortex in the context of adapted and novelty responses (Natan et al., 2015). However, due to the scarcity of detailed knowledge about higher order feedback signals or within-layer modulations in this context, we did not directly model the source of disinhibition.
 
@@ -124,7 +168,7 @@ We developed a recurrent network model with plastic synapses to unravel the mech
 
 Based on experimental evidence (Ohki and Reid, 2007; Griffen and Maffei, 2014), we included specific input onto both the excitatory and the inhibitory populations (Figure 1A, left). Such tuned inhibition (as opposed to untuned, ‘blanket’ inhibition commonly used in previous models) enabled the model network to generate SSA (Figure 6). Additionally, in the presence of tuned inhibition, a top-down disinhibitory signal achieved a flexible control of the amplitude and density of novelty responses (Figure 7). Therefore, besides providing a mechanistic explanation for the generation of adapted and novelty responses to repeated and novel sensory stimuli, respectively, our network model enabled us to formulate multiple experimentally testable predictions, as we describe below.
 
-## Inhibitory plasticity as an adaptive mechanism
+### Inhibitory plasticity as an adaptive mechanism
 
 We proposed inhibitory plasticity as the key mechanism that allows for adaptation to repeated stimulus presentation and the generation of novelty responses in our model. Many experimental studies have characterized spike-timing-dependent plasticity (STDP) of synapses from inhibitory onto excitatory neurons (Holmgren and Zilberter, 2001; Woodin et al., 2003; Haas et al., 2006; Maffei et al., 2006; Wang and Maffei, 2014; D'amour and Froemke, 2015; Field et al., 2020). In theoretical studies, network models usually include inhibitory plasticity to dynamically stabilize recurrent network dynamics (Vogels et al., 2011; Litwin-Kumar and Doiron, 2014; Zenke et al., 2015). In line with recent efforts to uncover additional functional roles of inhibitory plasticity beyond the stabilization of firing rates (Hennequin et al., 2017), here, we investigated potential functional consequences of inhibitory plasticity in adaptive phenomena. We were inspired by recent experimental work in the mammalian cortex (Chen et al., 2015; Kato et al., 2015; Natan et al., 2015; Hamm and Yuste, 2016; Natan et al., 2017; Heintz et al., 2020), and simpler systems, such as Aplysia (Fischer et al., 1997; Ramaswami, 2014) and in Drosophila (Das et al., 2011; Glanzman, 2011) along with theoretical reflections (Ramaswami, 2014; Barron et al., 2017), which all point towards a prominent role of inhibition and inhibitory plasticity in the generation of the MMN, SSA, and habituation. For example, Natan and colleagues observed that in the mouse auditory cortex, both PV and SOM interneurons contribute to SSA (Natan et al., 2015), possibly due to inhibitory potentiation (Natan et al., 2017). In the context of habituation, daily passive sound exposure has been found to lead to an upregulation of the activity of inhibitory neurons (Kato et al., 2015). Furthermore, increased activity to a deviant stimulus in the MMN is diminished when inhibitory neurons are suppressed (Hamm and Yuste, 2016).
 
@@ -134,23 +178,23 @@ One line of evidence to speak against inhibitory plasticity argues that SSA migh
 
 In our model, the direction of inhibitory weight change (iLTD or iLTP) depends on the firing rate of the postsynaptic excitatory cells (see Vogels et al., 2011). Postsynaptic firing rates above a ‘target firing rate’ will on average lead to iLTP, while postsynaptic firing rates below the target rate will lead to iLTD. In turn, the average magnitude of inhibitory weight change depends on the firing rate of the presynaptic inhibitory neurons (see Vogels et al., 2011). Therefore, if the background activity between stimulus presentations in our model is very low, recovery from adaptation will only happen on a very slow timescale (as in Figure 6—figure supplement 1). However, if the activity between stimulus presentations is higher (either because of a higher background firing rate or because of evoked activity from other sources, for example other stimuli), the adapted stimulus can recover faster (as in Figure 5). Therefore, we conclude that our model can capture the reduced adaptation for longer inter-stimulus intervals as found in experiments (Ulanovsky et al., 2004; Cohen-Kashi Malina et al., 2013) when background activity in the inter-stimulus interval is elevated.
 
-## Alternative mechanisms can account for adapted and novelty responses
+### Alternative mechanisms can account for adapted and novelty responses
 
 Undoubtedly, mechanisms other than inhibitory plasticity might underlie the difference in network response to repeated and novel stimuli. These mechanisms can be roughly summarized in two groups: mechanisms which are unspecific, and mechanisms which are specific to the stimulus. Two examples of unspecific mechanisms are intrinsic plasticity and an adaptive current. Intrinsic plasticity is a form of activity-dependent plasticity, adjusting the neurons’ intrinsic excitability (Debanne et al., 2019) and has been suggested to explain certain adaptive phenomena (Levakova et al., 2019). Other models at the single neuron level incorporate an additional current variable, the adaptive current, which increases for each postsynaptic spike and decreases otherwise. This adaptive current leads to a reduction of the neuron’s membrane potential after a spike (Brette and Gerstner, 2005). However, any unspecific mechanism can only account for firing-rate adaptation but not for SSA (Nelken, 2014; Figure 6C). Examples of stimulus-specific mechanisms are short-term plasticity and long-term plasticity of excitatory synapses. Excitatory short-term depression, usually of thalamocortical synapses, is the most widely hypothesized mechanism to underlie adaptive phenomena in cortex (Nelken, 2014).
 
 Short-term plasticity (Abbott, 1997; Tsodyks et al., 1998) has been implicated in a number of adaptation phenomena in different sensory cortices and contexts. One example is an already established model to explain SSA, namely the ‘Adaptation of Narrowly Tuned Modules’ (ANTM) model (Nelken, 2014; Khouri and Nelken, 2015). This model has been extensively studied in the context of adaptation to tone frequencies (Mill et al., 2011a; Taaseh et al., 2011; Mill et al., 2012; Hershenhoren et al., 2014). Models based on short-term plasticity have also been extended to recurrent networks (Yarden and Nelken, 2017) and multiple inhibitory sub-populations (Park and Geffen, 2020). Experimental work has shown that short-term plasticity can be different at the synapses from PV and SOM interneurons onto pyramidal neurons, and can generate diverse temporal responses (facilitated, depressed and stable responses) in pyramidal neurons in the auditory cortex (Seay et al., 2020). Short-term plasticity can also capture the differences in responses to periodic versus random presentation of repeated stimuli in a sequence (Yaron et al., 2012; Chait, 2020). Finally, short-term plasticity has been suggested to explain a prominent phenomenon in the auditory cortex, named ‘forward masking’ (Brosch and Schreiner, 1997), in which a preceding masker stimulus influences the response to a following stimulus (Phillips et al., 2017). This highlights short-term plasticity as a key player in adaptive processes in the different sensory cortices, although it likely works in tandem with long-term plasticity.
 
-## Timescales of plasticity mechanisms
+### Timescales of plasticity mechanisms
 
 The crucial parameter for the generation of adaptation based on short-term plasticity is the timescale of the short-term plasticity mechanism. Experimental studies find adaptation timescales from hundreds of milliseconds to tens of seconds (Ulanovsky et al., 2004; Lundstrom et al., 2010; Homann et al., 2017; Latimer et al., 2019), and in the case of habituation even multiple days (Haak et al., 2014; Ramaswami, 2014). At the same time, the timescales of short-term plasticity can range from milliseconds to minutes (Zucker and Regehr, 2002). Hence, explaining the different timescales of adaptive phenomena would likely require a short-term plasticity timescale that can be dynamically adjusted. Our work shows that inhibitory plasticity can readily lead to adaptation on multiple timescales without the need for any additional assumptions (Figure 4). However, it is unclear whether inhibitory plasticity can act sufficiently fast to explain adaptation phenomena on the timescale of seconds, as in our model (Figure 4C,D). Most computational models of recurrent networks with plastic connections rely on fast inhibitory plasticity to stabilize excitatory rate dynamics (Sprekeler, 2017; Zenke et al., 2017). Decreasing the learning rate of inhibitory plasticity five-fold eliminates the adaptation to repeated stimuli and the novelty response in our model (Figure 4—figure supplement 2). Experimentally, during the induction of inhibitory plasticity, spikes are paired for several minutes and it takes several tens of minutes to reach a new stable baseline of inhibitory synaptic strength (D'amour and Froemke, 2015; Field et al., 2020). Nonetheless, inhibitory postsynaptic currents increase significantly immediately after the induction of plasticity (see e.g. D'amour and Froemke, 2015; Field et al., 2020). This suggests that changes of inhibitory synaptic strength already occur while the plasticity induction protocol is still ongoing. Hence, we propose that inhibitory long-term plasticity is a suitable, though not the only, candidate to explain the generation of novelty responses and adaptive phenomena over multiple timescales.
 
-## Robustness of the model
+### Robustness of the model
 
 We probed our findings against key parameters and assumptions in our model. First, we tested if the specific choice of pretraining parameters and complexity of presented stimuli affects the generation of adapted and novelty responses. Varying the pretraining duration and the number of pretraining stimuli did not qualitatively change the novelty response and its properties (Figure 4—figure supplement 1). In addition, presenting different stimuli in the stimulation phase compared to the pretraining phase (Materials and methods) to mimic the scenario of randomly oriented Gabor patches in Homann et al., 2017, preserved the adaptation to repeated stimuli and the generation of a novelty response (Figure 1—figure supplement 3).
 
 Second, we explored how the timescale of inhibitory plasticity and of the normalization mechanism affects the generation of adapted and novelty responses. In many computational models, normalization mechanisms are often justified by experimentally observed synaptic scaling. In our model, like in most computational work, the timescale of this normalization was much faster than synaptic scaling (Zenke et al., 2017). However, slowing normalization down did not affect the generation of adapted and novelty responses (Figure 1—figure supplement 5). Since the change in inhibitory synaptic weights through iSTDP is the key mechanism behind the generation of adapted and novelty responses, the speed of normalization was not crucial as it only affected the excitatory and not the inhibitory weights. In contrast, we found that the learning rate of inhibitory plasticity needs to be ‘sufficiently fast’ . Slow inhibitory plasticity failed to homeostatically stabilize firing rates in the network. Hence, the network no longer showed an adapted response to repeated stimuli and novelty responses became indiscernible from noise (Figure 4—figure supplement 2).
 
-## Disinhibition as a mechanism for novelty response amplification
+### Disinhibition as a mechanism for novelty response amplification
 
 Upon including a top-down disinhibitory signal in our model network, we observed: (1) an active amplification of the novelty response (Figure 7B); (2) a dense novelty response (Figure 7C), similar to experimental findings (Homann et al., 2017) (without a disinhibitory signal, the novelty response was not dense, see Figure 1—figure supplement 4); and (3) a flexible manipulation of neuronal responses through a change in the disinhibitory strength (Figure 7D,E).
 
@@ -162,13 +206,13 @@ Experimental data which points towards a flexible modulation of novelty and adap
 
 Hence, we suggest that disinhibition is a flexible mechanism to control several aspects of novelty responses, including the density of the response, which might be computationally important in signaling change detection to downstream areas (Homann et al., 2017). Altogether, our results suggest that disinhibition is capable of accounting for various aspects of novelty responses that cannot be accounted for by bottom-up computations. The functional purpose of a dense response to novel stimuli are yet to be explored.
 
-## Functional implications of adapted and novelty responses
+### Functional implications of adapted and novelty responses
 
 In theoretical terms, our model is an attractor network. It differs from classic attractor models where inhibition is considered unspecific (like a ‘blanket’) (Amit and Brunel, 1997). Computational work is starting to uncover the functional role of specific inhibition in static networks (Rost et al., 2018; Najafi et al., 2020; Rostami et al., 2020) as well as the plasticity mechanisms that allow for specific connectivity to emerge (Mackwood et al., 2021). These studies have argued that inhibitory assemblies can improve the robustness of attractor dynamics (Rost et al., 2018) and keep a local balance of excitation and inhibition (Rostami et al., 2020). We showed that specific inhibitory connections readily follow from a tuned inhibitory population (Figure 1A, Figure 1—figure supplement 2). Our results suggest that adaptation is linked to a stimulus-specific excitatory/inhibitory (E/I) balance. Presenting a novel stimulus leads to a short-term disruption of the E/I balance, triggering inhibitory plasticity, which aims to restore the E/I balance (Figure 4; Vogels et al., 2011; D'amour and Froemke, 2015; Field et al., 2020). Disinhibition, which effectively disrupts the E/I balance, allows for flexible control of adapted and novelty responses (Figure 7). This links to the notion of disinhibition as a gating mechanism for learning and plasticity (Froemke et al., 2007; Letzkus et al., 2011; Kuhlman et al., 2013).
 
 A multitude of functional implications have been suggested for the role of adaptation (Weber et al., 2019; Snow et al., 2017). We showed that one of these roles, the detection of unexpected (or novel) events, follows from the lack of selective adaptation to those events. A second, highly considered functional implication is predictive coding. In the predictive coding framework, the brain is viewed as an inference or a prediction machine. It is thought to generate internal models of the world which are compared to the incoming sensory inputs (Bastos et al., 2012; Clark, 2013; Friston, 2018). According to predictive coding, the overall goal of our brain is to minimize the prediction error, that is the difference between the internal prediction and the sensory input (Rao and Ballard, 1999; Clark, 2013; Friston, 2018). Most predictive coding schemes hypothesize the existence of two populations of neurons. First, prediction error units that signal a mismatch between the internal model prediction and the incoming sensory stimuli. And second, a prediction population unit that reflects what the respective layer ‘knows about the world’ (Rao and Ballard, 1999; Clark, 2013; Spratling, 2017). Our model suggests that primary sensory areas allow for bottom-up detection of stimulus changes without the need for an explicit population of error neurons or an internal model of the world. However, one could also interpret the state of all inhibitory synaptic weights as an implicit internal model of the recent frequency of various events in the environment.
 
-## Predictions and outlook
+### Predictions and outlook
 
 Our approach to mechanistically understand the generation of adapted and novelty responses leads to several testable predictions. First, the most general implication from our study is that inhibitory plasticity might serve as an essential mechanism underlying many adaptive phenomena. Our work suggests that inhibitory plasticity allows for adaptation on multiple timescales, ranging from the adaptation to sequence blocks on the timescale of seconds to slower adaptation on the timescale of minutes, corresponding to repeating multiple sequence blocks (Figure 4C,D). A second prediction follows from the finding that both excitatory and inhibitory neuron populations show adaptive behavior and novelty responses (Figure 3B,C). Adaptation of inhibitory neurons on the single-cell level has already been verified experimentally (Chen et al., 2015; Natan et al., 2015). Third, we further predict that a violation of the sequence order does not lead to a novelty response. Therefore, the novelty response should not be interpreted as signaling a violation of the exact sequence structure (Figure 3D,E). However, previous work has found a reduction in the response to repeated stimuli if the stimuli are presented periodically, rather than randomly, in a sequence (Yaron et al., 2012) (but see Mehra et al., 2021). Fourth, the height of the novelty peak in the population average depends on the input drive, where decreasing the input strength decreases the novelty response (Figure 3F). This could be tested, for example, in the visual system, by presenting visual stimuli with different contrasts.
 
@@ -180,37 +224,392 @@ In sum, we have proposed a mechanistic model for the emergence of adapted and no
 
 We built a biologically plausible spiking neuronal network model of the mammalian cortex based on recent experimental findings on tuning, connectivity, and synaptic plasticity. The model consists of 4000 excitatory exponential integrate-and-fire (EIF) neurons and 1000 inhibitory leaky integrate-and-fire (LIF) neurons (Table 1). Excitatory (E) and inhibitory (I) neurons were randomly recurrently connected (Table 2). Excitatory-to-excitatory and inhibitory-to-excitatory connections were plastic (see below). In addition, excitatory-to-excitatory weight dynamics were stabilized by a homeostatic mechanism (Fiete et al., 2010), which preserved the total sum of all incoming synaptic weights into an excitatory neuron. All other synapses in the network were fixed. Both excitatory and inhibitory neurons received an excitatory baseline feedforward input in the form of Poisson spikes. Furthermore, different subsets of excitatory and inhibitory neurons received excess input with elevated Poisson rate to model the presentation of stimuli (see below, Figure 1A, left; Table 4).
 
-## Dynamics of synaptic conductances and the membrane potential
+**Table 1.**
+ Parameters for the excitatory (EIF) and inhibitory (LIF) membrane dynamics (Litwin-Kumar and Doiron, 2014).
 
-The membrane dynamics of each excitatory neuron was modeled as an exponential integrate-and-fire (EIF) neuron model (Fourcaud-Trocmé et al., 2003):(1)C⁢dd⁢t⁢V⁢(t)=-gL⁢(V⁢(t)-VrestE)+gL⁢ΔT⁢exp⁢(V⁢(t)-VTΔT)-gE⁢E⁢(t)⁢(V⁢(t)-VrevE)-gE⁢I⁢(t)⁢(V⁢(t)-VrevI),where V⁢(t) is the membrane potential of the modeled neuron, C the membrane capacitance, gL the membrane conductance, and ΔT is the slope factor of the exponential rise. The membrane potential was reset to Vreset once the diverging potential reached the threshold peak voltage Vpeak. Inhibitory neurons were modeled via a leaky-integrate-and-fire neuron model(2)C⁢dd⁢t⁢V⁢(t)=-gL⁢(V⁢(t)-VrestI)-gI⁢E⁢(t)⁢(V⁢(t)-VrevE)-gI⁢I⁢(t)⁢(V⁢(t)-VrevI).
 
-Once the membrane potential reached the threshold voltage Vthr, the membrane potential was reset to Vreset. The absolute refractory period was modeled by clamping the membrane voltage of a neuron that just spiked to the reset voltage Vreset for the duration τabs. In this study, we did not model additional forms of adaptation, such as adaptive currents or spiking threshold VT adaptation. To avoid extensive parameter tuning, we used previously published parameter values (Litwin-Kumar and Doiron, 2014; Table 1).
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NE</td>
+      <td>Number of E neurons</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>NI</td>
+      <td>Number of I neurons</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>τE,τI</td>
+      <td>E, I neuron resting membrane time constant</td>
+      <td>20 ms</td>
+    </tr>
+    <tr>
+      <td>VrestE</td>
+      <td>E neuron resting potential</td>
+      <td>- 70 mV</td>
+    </tr>
+    <tr>
+      <td>VrestI</td>
+      <td>I neuron resting potential</td>
+      <td>- 62 mV</td>
+    </tr>
+    <tr>
+      <td>ΔT</td>
+      <td>Slope factor of exponential</td>
+      <td>2 mV</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Membrane capacitance</td>
+      <td>300 pF</td>
+    </tr>
+    <tr>
+      <td>gL</td>
+      <td>Membrane conductance</td>
+      <td>C/τE</td>
+    </tr>
+    <tr>
+      <td>VrevE</td>
+      <td>E reversal potential</td>
+      <td>0 mV</td>
+    </tr>
+    <tr>
+      <td>VrevI</td>
+      <td>I reversal potential</td>
+      <td>- 75 mV</td>
+    </tr>
+    <tr>
+      <td>Vthr</td>
+      <td>Threshold potential</td>
+      <td>- 52 mV</td>
+    </tr>
+    <tr>
+      <td>Vpeak</td>
+      <td>Peak threshold potential</td>
+      <td>20 mV</td>
+    </tr>
+    <tr>
+      <td>Vreset</td>
+      <td>E, I neuron reset potential</td>
+      <td>- 60 mV</td>
+    </tr>
+    <tr>
+      <td>τabs</td>
+      <td>E, I absolute refractory period</td>
+      <td>1 ms</td>
+    </tr>
+  </tbody>
+</table>
 
-We compared this model to one where we froze plasticity and included adaptive currents wadapt (Figure 6C, top). We modeled this by subtracting wadapt(t) on the right hand side of Equation 1 (Brette and Gerstner, 2005). Upon a spike, wadapt(t) increased by bw and the sub-threshold dynamics of the adaptive current were described by τw⁢dd⁢t⁢wadapt⁢(t)=-wadapt⁢(t)+aw⁢(V⁢(t)-VrestE), where aw = 4 nS denotes the subthreshold and bw = 80.5 pA the spike-triggered adaptation. The adaptation time scale was set to τw = 150 ms.
+**Table 2.**
+ Parameters for feedforward and recurrent connections (Litwin-Kumar and Doiron, 2014).
 
-The conductance of neuron i which is part of population X and is targeted by another neuron in population Y was denoted with giX⁢Y. Both X and Y could refer either to the excitatory or inhibitory population, that is X,Y∈[E,I]. The shape of the synaptic kernels F⁢(t) was a difference of exponentials and differed for excitatory and inhibitory input depending on the rise and decay times τdecayY and τriseY:(3)FY(t)=e−tτdecayY−e−tτriseYτdecayY−τriseY.
 
-This kernel was convolved with the total inputs to neuron i weighted with the respective synaptic strength to yield the total conductance(4)giX⁢Y⁢(t)=FY⁢(t)*(Je⁢x⁢tX⁢Y⁢si,e⁢x⁢tX⁢Y⁢(t)+∑jJi⁢jX⁢Y⁢sjY⁢(t)),where sjY⁢(t) is the spike train of neuron j in the network and si,e⁢x⁢tX⁢Y denotes the spike train of the external input to neuron i. The external spike trains were generated in an independent homogeneous Poisson process. The synaptic strength from the input neurons to the network neurons, Je⁢x⁢tX⁢Y, was assumed to be constant.
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>p</td>
+      <td>Connection probability</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>τriseE</td>
+      <td>Rise time for E synapses</td>
+      <td>1 ms</td>
+    </tr>
+    <tr>
+      <td>τdecayE</td>
+      <td>Decay time for E synapses</td>
+      <td>6 ms</td>
+    </tr>
+    <tr>
+      <td>τriseI</td>
+      <td>Rise time for I synapses</td>
+      <td>0.5 ms</td>
+    </tr>
+    <tr>
+      <td>τdecayI</td>
+      <td>Decay time for I synapses</td>
+      <td>2 ms</td>
+    </tr>
+    <tr>
+      <td>r¯extE⁢E</td>
+      <td>Avg. rate of external input to E neurons</td>
+      <td>4.5 kHz</td>
+    </tr>
+    <tr>
+      <td>r¯extI⁢E</td>
+      <td>Avg. rate of external input to I neurons</td>
+      <td>2.25 kHz</td>
+    </tr>
+    <tr>
+      <td>JminE⁢E</td>
+      <td>Minimum E to E synaptic weight</td>
+      <td>1.78 pF</td>
+    </tr>
+    <tr>
+      <td>JmaxE⁢E</td>
+      <td>Maximum E to E synaptic weight</td>
+      <td>21.4 pF</td>
+    </tr>
+    <tr>
+      <td>J0E⁢E</td>
+      <td>Initial E to E synaptic weight</td>
+      <td>2.76 pF</td>
+    </tr>
+    <tr>
+      <td>JminE⁢I</td>
+      <td>Minimum I to E synaptic weight</td>
+      <td>48.7 pF</td>
+    </tr>
+    <tr>
+      <td>JmaxE⁢I</td>
+      <td>Maximum I to E synaptic weight</td>
+      <td>243 pF</td>
+    </tr>
+    <tr>
+      <td>J0E⁢I</td>
+      <td>Initial I to E synaptic weight</td>
+      <td>48.7 pF</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>Synaptic weight from E to I</td>
+      <td>1.27 pF</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>Synaptic weight from I to I</td>
+      <td>16.2 pF</td>
+    </tr>
+    <tr>
+      <td>JE⁢E⁢x</td>
+      <td>Synaptic weight from external input population to E</td>
+      <td>1.78 pF</td>
+    </tr>
+    <tr>
+      <td>JI⁢E⁢x</td>
+      <td>Synaptic weight from external input population to I</td>
+      <td>1.27 pF</td>
+    </tr>
+  </tbody>
+</table>
 
-## Excitatory and inhibitory plasticity
+### Dynamics of synaptic conductances and the membrane potential
 
-We implemented the plasticity from an excitatory to an excitatory neuron JE⁢E based on the triplet spike-time-dependent plasticity rule (triplet STDP), which uses triplets of pre- and postsynaptic spikes to evoke synaptic change (Sjöström et al., 2001; Pfister and Gerstner, 2006). The addition of a third spike for the induction of synaptic plasticity modifies the amount of potentiation and depression induced by the classical pair-based STDP, where pairs of pre- and postsynaptic spikes induce plasticity based on their timing and order (Bi and Poo, 1998). The triplet eSTDP rule has been shown to capture the dependency of plasticity on firing rates found experimentally, whereby a high frequency of pre- and postsynaptic spike pairs leads to potentiation rather than no synaptic change as predicted by pair-based STDP (Sjöström et al., 2001; Pfister and Gerstner, 2006; Gjorgjieva et al., 2011; Table 3). In the triplet rule, four spike accumulators, r1,r2,o1, and o2, increase by one, once a spike of the corresponding neuron occurs and otherwise decrease exponentially depending on their respective time constant τ+,τx,τ−,andτy:(5)dr1(t)dt=−r1(t)τ+ift=tprethenr1→r1+1,dr2(t)dt=−r2(t)τxift=tprethenr2→r2+1,do1(t)dt=−o1(t)τ−ift=tposttheno1→o1+1,do2(t)dt=−o2(t)τyift=tposttheno2→o2+1.
+The membrane dynamics of each excitatory neuron was modeled as an exponential integrate-and-fire (EIF) neuron model (Fourcaud-Trocmé et al., 2003):
 
-The E-to-E weights were updated as(6)ΔJEE(t)=−o1(t)[A2−+A3−r2(t−ϵ)]ift=tpre,ΔJEE(t)=r1(t)[A2++A3+o2(t−ϵ)]ift=tpost,where the A+,A- corresponds to the excitatory LTP or LTD amplitude, and the subscript refers to the triplet (3) or pairwise term (2). The parameter ϵ>0 ensures that the weights are updated prior to increasing the respective spike accumulators by 1. Spike detection was modeled in an all-to-all approach.
+$$
+C⁢\frac{d}{d⁢t}⁢V⁢(t)=-g_{L}⁢(V⁢(t)-V_{rest}^{E})+g_{L}⁢Δ_{T}⁢exp⁢(\frac{V⁢(t)-V_{T}}{Δ_{T}})-g^{E⁢E}⁢(t)⁢(V⁢(t)-V_{rev}^{E})-g^{E⁢I}⁢(t)⁢(V⁢(t)-V_{rev}^{I}),
+$$
 
-The plasticity of inhibitory-to-excitatory connections, JE⁢I, was modeled based on a symmetric inhibitory pairwise STDP (iSTDP) rule, initially suggested on theoretical grounds for its ability to homeostatically stabilize firing rates in recurrent networks (Vogels et al., 2011). According to this rule, the timing but not the order of pre- and postsynaptic spikes matters for the induction of synaptic plasticity. Other inhibitory rules have also been measured experimentally, including classical Hebbian and anti-Hebbian (e.g. Holmgren and Zilberter, 2001; Woodin et al., 2003; Haas et al., 2006; for a review see Hennequin et al., 2017), and some may even depend on the type of the interneuron (Udakis et al., 2020). We chose the iSTDP rule because it can stabilize excitatory firing rate dynamics in recurrent networks (Vogels et al., 2011; Litwin-Kumar and Doiron, 2014) and was recently verified to operate in the auditory cortex of mice (D'amour and Froemke, 2015). The plasticity parameters are shown in Table 3. The two spike accumulators yE/I, for the inhibitory pre- and the excitatory post-synaptic neuron, have the same time constant τyinhib. Their dynamics were described by(7)dyI(t)dt=−yI(t)τyinhibift=tpre/IthenyI→yI+1anddyE(t)dt=−yE(t)τyinhibift=tpost/EthenyE→yE+1.
+where $V⁢(t)$ is the membrane potential of the modeled neuron, $C$ the membrane capacitance, $g_{L}$ the membrane conductance, and $Δ_{T}$ is the slope factor of the exponential rise. The membrane potential was reset to $V_{reset}$ once the diverging potential reached the threshold peak voltage $V_{peak}$. Inhibitory neurons were modeled via a leaky-integrate-and-fire neuron model
 
-The I-to-E weights were updated as (8)ΔJijEI(t)=η(yiE(t)−2r0τyinhib)ift=tpre/IΔJijEI(t)=ηyjI(t)ift=tpost/E,where η is the learning rate, and r0 corresponds to the target firing rate of the excitatory neuron. In Figure 4—figure supplement 2 we investigated the inhibitory learning rate η. Figure 1—figure supplement 1 shows the excitatory and inhibitory STDP rules for different pairing frequencies.
+$$
+C⁢\frac{d}{d⁢t}⁢V⁢(t)=-g_{L}⁢(V⁢(t)-V_{rest}^{I})-g^{I⁢E}⁢(t)⁢(V⁢(t)-V_{rev}^{E})-g^{I⁢I}⁢(t)⁢(V⁢(t)-V_{rev}^{I}).
+$$
 
-## Additional homeostatic mechanisms
+Once the membrane potential reached the threshold voltage $V_{thr}$, the membrane potential was reset to $V_{reset}$. The absolute refractory period was modeled by clamping the membrane voltage of a neuron that just spiked to the reset voltage $V_{reset}$ for the duration $\tau_{abs}$. In this study, we did not model additional forms of adaptation, such as adaptive currents or spiking threshold $V_{T}$ adaptation. To avoid extensive parameter tuning, we used previously published parameter values (Litwin-Kumar and Doiron, 2014; Table 1).
 
-Inhibitory plasticity alone is considered insufficient to prevent runaway activity in this network implementation. Hence, additional mechanisms were implemented that also have a homeostatic effect. To avoid unlimited weight increase, the synaptic weights were bound from below and from above, see Table 2. Subtractive normalization ensured that the total synaptic input to an excitatory neuron remains constant throughout the simulation. This was implemented by scaling all incoming weights to each neuron every Δ⁢t= 20 ms according to(9)Δ⁢Ji⁢jE⁢E⁢(t)=-∑jJi⁢jE⁢E⁢(t)-∑jJi⁢jE⁢E⁢(0)NiE,where i is the index of the post-synaptic and j of the pre-synaptic neurons. NiE is the number of excitatory connections onto neuron i (Fiete et al., 2010). In Figure 1—figure supplement 5 we investigated the effect of the normalization timestep Δ⁢t on the novelty response.
+We compared this model to one where we froze plasticity and included adaptive currents $w_{adapt}$ (Figure 6C, top). We modeled this by subtracting $w_{adapt}(t)$ on the right hand side of Equation 1 (Brette and Gerstner, 2005). Upon a spike, $w_{adapt}(t)$ increased by $b_{w}$ and the sub-threshold dynamics of the adaptive current were described by $\tau_{w}⁢\frac{d}{d⁢t}⁢w_{adapt}⁢(t)=-w_{adapt}⁢(t)+a_{w}⁢(V⁢(t)-V_{rest}^{E})$, where $a_{w}$ = 4 nS denotes the subthreshold and $b_{w}$ = 80.5 pA the spike-triggered adaptation. The adaptation time scale was set to $\tau_{w}$ = 150 ms.
 
-## Stimulation protocol
+The conductance of neuron $i$ which is part of population $X$ and is targeted by another neuron in population $Y$ was denoted with $g_{i}^{X⁢Y}$. Both $X$ and $Y$ could refer either to the excitatory or inhibitory population, that is $X,Y\in[E,I]$. The shape of the synaptic kernels $F⁢(t)$ was a difference of exponentials and differed for excitatory and inhibitory input depending on the rise and decay times $\tau_{decay}^{Y}$ and $\tau_{rise}^{Y}$:
 
-All neurons received external excitatory baseline input. The baseline input to excitatory neurons rextE was higher than the input to inhibitory neurons rextI (Table 4). An external input of rextE=4.5 kHz can be interpreted as 1000 external presynaptic neurons with average firing rates of 4.5 Hz (compare Litwin-Kumar and Doiron, 2014).
+$$
+F^{Y}(t)=\frac{e^{\frac{−t}{\tau_{decay}^{Y}}}−e^{\frac{−t}{\tau_{rise}^{Y}}}}{\tau_{decay}^{Y}−\tau_{rise}^{Y}}.
+$$
 
-The stimulation paradigm was inspired by a recent study in the visual system (Homann et al., 2017). In Homann et al., 2017, the stimulation consisted of images with 100 randomly chosen, superimposed Gabor patches. Rather than explicitly modeling oriented and spatially localized Gabor patches, in our model, stimuli that correspond to Gabor patches of a given orientation were implemented by simultaneously co-activating subsets of cells by strongly driving them. Hence, the model analog of the presentation of a sensory stimulus, in our experiments, is increased input to a subset of neurons. Every time a particular stimulus is presented again, the same set of neurons receives strong external stimulation, rstimE and rstimI. Therefore, while a stimulus in our stimulation paradigm is functionally similar to presenting Gabor patches with similar orientations, it does not represent the Gabor patches themselves.
+This kernel was convolved with the total inputs to neuron $i$ weighted with the respective synaptic strength to yield the total conductance
+
+$$
+g_{i}^{X⁢Y}⁢(t)=F^{Y}⁢(t)*(J_{e⁢x⁢t}^{X⁢Y}⁢s_{i,e⁢x⁢t}^{X⁢Y}⁢(t)+\sumjJ_{i⁢j}^{X⁢Y}⁢s_{j}^{Y}⁢(t)),
+$$
+
+where $s_{j}^{Y}⁢(t)$ is the spike train of neuron $j$ in the network and $s_{i,e⁢x⁢t}^{X⁢Y}$ denotes the spike train of the external input to neuron $i$. The external spike trains were generated in an independent homogeneous Poisson process. The synaptic strength from the input neurons to the network neurons, $J_{e⁢x⁢t}^{X⁢Y}$, was assumed to be constant.
+
+### Excitatory and inhibitory plasticity
+
+We implemented the plasticity from an excitatory to an excitatory neuron $J^{E⁢E}$ based on the triplet spike-time-dependent plasticity rule (triplet STDP), which uses triplets of pre- and postsynaptic spikes to evoke synaptic change (Sjöström et al., 2001; Pfister and Gerstner, 2006). The addition of a third spike for the induction of synaptic plasticity modifies the amount of potentiation and depression induced by the classical pair-based STDP, where pairs of pre- and postsynaptic spikes induce plasticity based on their timing and order (Bi and Poo, 1998). The triplet eSTDP rule has been shown to capture the dependency of plasticity on firing rates found experimentally, whereby a high frequency of pre- and postsynaptic spike pairs leads to potentiation rather than no synaptic change as predicted by pair-based STDP (Sjöström et al., 2001; Pfister and Gerstner, 2006; Gjorgjieva et al., 2011; Table 3). In the triplet rule, four spike accumulators, $r_{1},r_{2},o_{1},$ and $o_{2}$, increase by one, once a spike of the corresponding neuron occurs and otherwise decrease exponentially depending on their respective time constant $\tau_{+},\tau_{x},\tau_{−},and\tau_{y}$:
+
+$$
+\frac{dr_{1}(t)}{dt}=−\frac{r_{1}(t)}{\tau_{+}}ift=t^{pre}thenr_{1}→r_{1}+1,\frac{dr_{2}(t)}{dt}=−\frac{r_{2}(t)}{\tau_{x}}ift=t^{pre}thenr_{2}→r_{2}+1,\frac{do_{1}(t)}{dt}=−\frac{o_{1}(t)}{\tau_{−}}ift=t^{post}theno_{1}→o_{1}+1,\frac{do_{2}(t)}{dt}=−\frac{o_{2}(t)}{\tau_{y}}ift=t^{post}theno_{2}→o_{2}+1.
+$$
+
+**Table 3.**
+ Parameters for the implementation of Hebbian and homeostatic plasticity (Pfister and Gerstner, 2006; Litwin-Kumar and Doiron, 2014).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τ-</td>
+      <td>Time constant of pairwise pre-synaptic detector (+)</td>
+      <td>33.7 ms</td>
+    </tr>
+    <tr>
+      <td>τ+</td>
+      <td>Time constant of pairwise post-synaptic detector (-)</td>
+      <td>16.8 ms</td>
+    </tr>
+    <tr>
+      <td>τx</td>
+      <td>Time constant of triplet pre-synaptic detector (-)</td>
+      <td>101 ms</td>
+    </tr>
+    <tr>
+      <td>τy</td>
+      <td>Time constant of triplet post-synaptic detector (+)</td>
+      <td>125 ms</td>
+    </tr>
+    <tr>
+      <td>A2+</td>
+      <td>Pairwise potentiation amplitude</td>
+      <td>7.5×10-10 pF</td>
+    </tr>
+    <tr>
+      <td>A3+</td>
+      <td>Triplet potentiation amplitude</td>
+      <td>9.3×10-3 pF</td>
+    </tr>
+    <tr>
+      <td>A2-</td>
+      <td>Pairwise depression amplitude</td>
+      <td>7×10-3 pF</td>
+    </tr>
+    <tr>
+      <td>A3-</td>
+      <td>Triplet depression amplitude</td>
+      <td>2.3×10-4 pF</td>
+    </tr>
+    <tr>
+      <td>τyinhib</td>
+      <td>Time constant of low-pass filtered spike train</td>
+      <td>20 ms</td>
+    </tr>
+    <tr>
+      <td>η</td>
+      <td>Inhibitory plasticity learning rate</td>
+      <td>1 pF</td>
+    </tr>
+    <tr>
+      <td>r0</td>
+      <td>Target firing rate</td>
+      <td>3 Hz</td>
+    </tr>
+  </tbody>
+</table>
+
+The E-to-E weights were updated as
+
+$$
+ΔJ^{EE}(t)=−o_{1}(t)[A_{2}^{−}+A_{3}^{−}r_{2}(t−ϵ)]ift=t^{pre},ΔJ^{EE}(t)=r_{1}(t)[A_{2}^{+}+A_{3}^{+}o_{2}(t−ϵ)]ift=t^{post},
+$$
+
+where the $A^{+},A^{-}$ corresponds to the excitatory LTP or LTD amplitude, and the subscript refers to the triplet (3) or pairwise term (2). The parameter $ϵ>0$ ensures that the weights are updated prior to increasing the respective spike accumulators by 1. Spike detection was modeled in an all-to-all approach.
+
+The plasticity of inhibitory-to-excitatory connections, $J^{E⁢I}$, was modeled based on a symmetric inhibitory pairwise STDP (iSTDP) rule, initially suggested on theoretical grounds for its ability to homeostatically stabilize firing rates in recurrent networks (Vogels et al., 2011). According to this rule, the timing but not the order of pre- and postsynaptic spikes matters for the induction of synaptic plasticity. Other inhibitory rules have also been measured experimentally, including classical Hebbian and anti-Hebbian (e.g. Holmgren and Zilberter, 2001; Woodin et al., 2003; Haas et al., 2006; for a review see Hennequin et al., 2017), and some may even depend on the type of the interneuron (Udakis et al., 2020). We chose the iSTDP rule because it can stabilize excitatory firing rate dynamics in recurrent networks (Vogels et al., 2011; Litwin-Kumar and Doiron, 2014) and was recently verified to operate in the auditory cortex of mice (D'amour and Froemke, 2015). The plasticity parameters are shown in Table 3. The two spike accumulators $y^{E/I}$, for the inhibitory pre- and the excitatory post-synaptic neuron, have the same time constant $\tau_{y}^{inhib}$. Their dynamics were described by
+
+$$
+\frac{dy^{I}(t)}{dt}=−\frac{y^{I}(t)}{\tau_{y}^{inhib}}ift=t^{pre/I}theny^{I}→y^{I}+1and\frac{dy^{E}(t)}{dt}=−\frac{y^{E}(t)}{\tau_{y}^{inhib}}ift=t^{post/E}theny^{E}→y^{E}+1.
+$$
+
+The I-to-E weights were updated as 
+
+$$
+ΔJ_{ij}^{EI}(t)=η(y_{i}^{E}(t)−2r_{0}\tau_{y}^{inhib})ift=t^{pre/I}ΔJ_{ij}^{EI}(t)=ηy_{j}^{I}(t)ift=t^{post/E},
+$$
+
+where $η$ is the learning rate, and r0 corresponds to the target firing rate of the excitatory neuron. In Figure 4—figure supplement 2 we investigated the inhibitory learning rate $η$. Figure 1—figure supplement 1 shows the excitatory and inhibitory STDP rules for different pairing frequencies.
+
+### Additional homeostatic mechanisms
+
+Inhibitory plasticity alone is considered insufficient to prevent runaway activity in this network implementation. Hence, additional mechanisms were implemented that also have a homeostatic effect. To avoid unlimited weight increase, the synaptic weights were bound from below and from above, see Table 2. Subtractive normalization ensured that the total synaptic input to an excitatory neuron remains constant throughout the simulation. This was implemented by scaling all incoming weights to each neuron every $Δ⁢t=$ 20 ms according to
+
+$$
+Δ⁢J_{i⁢j}^{E⁢E}⁢(t)=-\frac{\sum_{j}J_{i⁢j}^{E⁢E}⁢(t)-\sum_{j}J_{i⁢j}^{E⁢E}⁢(0)}{N_{i}^{E}},
+$$
+
+where $i$ is the index of the post-synaptic and $j$ of the pre-synaptic neurons. $N_{i}^{E}$ is the number of excitatory connections onto neuron $i$ (Fiete et al., 2010). In Figure 1—figure supplement 5 we investigated the effect of the normalization timestep $Δ⁢t$ on the novelty response.
+
+### Stimulation protocol
+
+All neurons received external excitatory baseline input. The baseline input to excitatory neurons $r_{ext}^{E}$ was higher than the input to inhibitory neurons $r_{ext}^{I}$ (Table 4). An external input of $r_{ext}^{E}=4.5$ kHz can be interpreted as 1000 external presynaptic neurons with average firing rates of 4.5 Hz (compare Litwin-Kumar and Doiron, 2014).
+
+**Table 4.**
+ Parameters for the stimulation paradigm and stimulus tuning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rextE</td>
+      <td>External baseline input to E</td>
+      <td>4.5 kHz</td>
+    </tr>
+    <tr>
+      <td>rextI</td>
+      <td>External baseline input to I</td>
+      <td>2.25 kHz</td>
+    </tr>
+    <tr>
+      <td>rstimE</td>
+      <td>Additional input to E during stimulus presentation</td>
+      <td>12 kHz</td>
+    </tr>
+    <tr>
+      <td>rstimI</td>
+      <td>Additional input to I during stimulus presentation</td>
+      <td>1.2 kHz</td>
+    </tr>
+    <tr>
+      <td>rdisinhI</td>
+      <td>Additional input to I during disinhibition</td>
+      <td>−1.5 kHz</td>
+    </tr>
+    <tr>
+      <td>pmemberE</td>
+      <td>Probability for an E neuron to be driven by a stimulus</td>
+      <td>5%</td>
+    </tr>
+    <tr>
+      <td>pmemberI</td>
+      <td>Probability for an I neuron to be driven by a stimulus</td>
+      <td>15%</td>
+    </tr>
+  </tbody>
+</table>
+
+The stimulation paradigm was inspired by a recent study in the visual system (Homann et al., 2017). In Homann et al., 2017, the stimulation consisted of images with 100 randomly chosen, superimposed Gabor patches. Rather than explicitly modeling oriented and spatially localized Gabor patches, in our model, stimuli that correspond to Gabor patches of a given orientation were implemented by simultaneously co-activating subsets of cells by strongly driving them. Hence, the model analog of the presentation of a sensory stimulus, in our experiments, is increased input to a subset of neurons. Every time a particular stimulus is presented again, the same set of neurons receives strong external stimulation, $r_{stim}^{E}$ and $r_{stim}^{I}$. Therefore, while a stimulus in our stimulation paradigm is functionally similar to presenting Gabor patches with similar orientations, it does not represent the Gabor patches themselves.
 
 We first implemented a pretraining phase. In this phase, we sequentially stimulated subsets of neurons that are driven by all stimuli (repeated and novel stimuli) eventually used in the stimulation phase. The stimuli were presented in random order, leading to a change in network connectivity that is only stimulus but not sequence-dependent (Figure 4B, first 100 s shown here for five repetitions of each stimulus). Hence, the pretraining phase is a phenomenological model of the development process to generate a structure in the network connections prior to the actual stimulation paradigm. This can be interpreted as imprinting a ‘backbone’ of orientation selective neurons, where cells which are selective to similar features (e.g. similar orientations) become strongly connected due to synaptic plasticity (as seen in experiments, see for e.g. Ko et al., 2011; Ko et al., 2013).
 
@@ -224,8 +623,8 @@ In contrast to several previous plastic recurrent networks, we did not only cons
 
 Stimulus tuning in both populations led to the formation of stimulus-specific excitatory assemblies due to synaptic plasticity, where the subsets of excitatory neurons receiving the same input developed strong connections among each other as noted above (Figure 1—figure supplement 2C) and found experimentally (Ko et al., 2011; Miller et al., 2014; Lee et al., 2016). The strong, bidirectional connectivity among similarly selective neurons in our model was a direct consequence of the triplet STDP rule (Gjorgjieva et al., 2011; Montangie et al., 2020). Additionally, the connections from similarly tuned inhibitory to excitatory neurons also became stronger, as seen in experiments (Lee et al., 2014; Xue et al., 2014; Znamenskiy et al., 2018; Najafi et al., 2020). The number of stimulus-specific assemblies varied depending on the stimulation paradigm and corresponded to the number of unique stimuli presented in a given paradigm. We did not impose topographic organization of these assemblies (for e.g. tonotopy in the auditory cortex) since it would not influence the generation of adapted and novelty responses, but increase model complexity. Such spatial organization could, however, be introduced by allowing the assemblies for neighboring stimuli to overlap.
 
-Disinhibition in the model was implemented via additional inhibiting input to the inhibitory population rinhibI. This was modeled in a purely phenomenological way, and we are agnostic as to what causes the additional inhibition.
+Disinhibition in the model was implemented via additional inhibiting input to the inhibitory population $r_{inhib}^{I}$. This was modeled in a purely phenomenological way, and we are agnostic as to what causes the additional inhibition.
 
-## Simulation details
+### Simulation details
 
 The simulations were performed using the Julia programming language. Further evaluation and plotting was done in Python. Euler integration was implemented using a time step of 0.1 ms. Code implementing our model and generating the stimulation protocols can be found here: https://github.com/comp-neural-circuits/novelty-via-inhibitory-plasticity (Schulz, 2021; copy archived at swh:1:rev:d368b14a2368925b290923c2c11411d7b7a40bd1).

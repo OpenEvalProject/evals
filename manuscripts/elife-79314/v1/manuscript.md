@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01eezs655 Animal Comparative Economics laboratory, Department of Zoology, University of Regensburg Regensburg Germany
-2. https://ror.org/04jr1s763 Department of Biology, University of Florence Florence Italy
+1. Animal Comparative Economics laboratory, Department of Zoology, University of Regensburg Regensburg Germany ([ROR:01eezs655](https://ror.org/01eezs655))
+2. Department of Biology, University of Florence Florence Italy ([ROR:04jr1s763](https://ror.org/04jr1s763))
 
 † Corresponding author
 
@@ -25,7 +25,7 @@ A major insight lying at the heart of behavioural economics is that value is per
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79314/elife-79314-fig1-v1.jpg)
 
-**Figure 1.:** Kahneman and Tversky, 1979, with a graphical illustration of bundling and segregation.On the x-axis, actual value of a gain or a loss (here exemplified with money). Perceived utility does not scale linearly with value, but logarithmically. Receiving a gain of €100 (segregated) twice will produce a level of ‘happiness’ of ‘2s’, more than the level ‘b’ perceived when receiving €200 all together (bundled). The same is true for ‘losing’ the same amounts, where two losses of €100 are felt stronger than a single one of €200.
+**Figure 1.:** On the x-axis, actual value of a gain or a loss (here exemplified with money). Perceived utility does not scale linearly with value, but logarithmically. Receiving a gain of €100 (segregated) twice will produce a level of ‘happiness’ of ‘2s’, more than the level ‘b’ perceived when receiving €200 all together (bundled). The same is true for ‘losing’ the same amounts, where two losses of €100 are felt stronger than a single one of €200.
 
 The non-linear nature of perceived value results in many behavioural biases, a very prominent one being the bundling vs. segregation effect. Crucial to the current experiment, the perceived value of a compound item or option can be changed by presenting it either as one option (bundling) or as multiple small parts (segregation). Due to diminishing returns, bundling results in a weaker total sensation than segregation – either lower value for positive value options or lower cost for negative value options (see Figure 1). This is because more of the sensation occurs on the shallow part of the curve. This fact is regularly exploited by consumer psychologists and marketing experts, for example by bundling option when selling new cars: when spending €50,000 on a new car, spending €51,000 for the model with included sound system might not be experienced as painfully costly, even if, considered by itself, €1000 might be more than most people are willing to spend on a sound system for a car. Bundling and segregation have been extensively studied by consumer psychologists (Johnson et al., 1999; Naylor and Frank, 2001; Noone and Mattila, 2009).
 
@@ -41,17 +41,17 @@ In order to study bundling and segregation in ants, we segregated rewards spatia
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We used a total of 144 L. niger individuals, coming from 19 queen-less colony fragments, consisting of around 1000 ants each. Sample size was set a priori, based on the time and resources available (Lakens, 2022), while maintaining a minimum amount of ants per condition based on our previous experience with these types of experiment. Each fragment was collected from a different wild colony on the University of Regensburg campus. Workers from colony fragments forage, deposit pheromone, and learn well (Evison et al., 2008; Oberhauser et al., 2018). Each fragment was housed in a transparent plastic box (30 × 20 × 40 cm3), with a layer of plaster on the bottom. A circular plaster nest, 14 cm in diameter and 2 cm thick, was also provided. The colonies were kept at room temperature (21–25°C) and humidity (45–55%), on 12:12 light:dark cycle for around 9 months. Each colony was fed exclusively on 0.5 M sucrose solution ad libitum, and deprived of food 4 days prior to each test. Water was provided ad libitum and was always present.
 
-## Procedure
+### Procedure
 
 All four experiments reported in this paper used a conditioning procedure described in Czaczkes, 2018c. The procedure was generally the same, with a few modifications dictated by the specific conditions.
 
 For each tested subject the procedure started by connecting a drawbridge to the nest box. This bridge was composed of a 20 cm long, 1 cm wide, slanted section, one end of which laid on the plaster floor of the nest box. The other end led to a straight 10 cm long, 1 cm wide, runway section. Both of these were covered by unscented paper overlays. Depending on the visit, this bridge could lead either to a straight runway or to the stem of a Y-maze. In the first visit, multiple ants were allowed on the bridge. A 0.5 M sucrose solution drop was placed at the end of the bridge. The first ant to reach the drop and start drinking was marked on the abdomen with a dot of acrylic paint. The non-marked ants were gently returned to the nest box, while the marked one was allowed to drink to satiation, then allowed to return to the nest on her own. In the nest the marked ant performed trophallaxis (mouth to mouth food transfer) with nest-mates, and then returned to the bridge location ready for the following visit, which varied depending on the experiment being run.
 
-## Pilot experiment – Is increased food distance negatively perceived?
+### Pilot experiment – Is increased food distance negatively perceived?
 
 As described in the Introduction, segregated rewards should be perceived as being of higher value than an equal-quality bundled alternative. However, this is also true for punishments. Since in our experiment we segregated rewards by placing them on different parts of a long runway (see next paragraph), we needed to test first whether increased travelled distance makes rewards less preferred.
 
@@ -65,17 +65,19 @@ The same procedure was repeated another time. Thus, the ant experienced the long
 
 **Figure 2.:** In (A), a marked Lasius niger ant pauses and presses its abdomen to the runway, leaving pheromone mark. See Video 1. The number of pheromone depositions was counted. Photo : Julia Giehr. (B) shows a schematic representation of the Y-maze used for the binary choice test. Coming from the nest, the ant walks on an unscented runway, constituting the Y-maze stem, until it reaches the bifurcation. The two Y-maze arms were scented with two different odours, corresponding to the ones present during the previous visits and associated with the two experienced treatments. The bifurcation tapers in the middle to ensure that the ant senses both odours before making a choice.
 
+![Video 1.](https://cdn.elifesciences.org/articles/79314/elife-79314-video1.mp4.jpg)
+
 After these four visits, the ant was allowed onto the bridge one last time. This time, the bridge was connected to the 10 cm long stem of a Y-maze (Figure 2B). The stem was covered with unscented paper, and tapered to a 2 mm wide point. Here, the two arms of the Y-maze started, also tapered, in order to ensure that the ant to contact both arms at the same time once at the end of the stem. One of the two arms was scented with the long runway odour, while the other was scented with the short runway odour. We noted on which of the two arms the ant ran for at least 2 cm (considered the ‘initial’ decision), and at the end of which of the two it arrived first (considered the ‘final’ decision). Once this happened, the ant was picked up with a piece of paper and moved back at the start of the stem to be retested. This way, we could test the ants’ preference three times. After the test, the ant was permanently removed from the colony.
 
 A total of 24 ants from five different colonies was used for this experiment.
 
-## Main experiment – bundling vs. segregation
+### Main experiment – bundling vs. segregation
 
 Having established that increased travel distance makes food sources less attractive (see Results), we proceeded with the main experiment.
 
 The procedure is very similar to the pilot. Each marked ant was allowed onto the bridge, after which it was presented with a scented runway. This scented runway could correspond to one of three different treatments:
 
-## ‘Segregated all’ (rewards and costs) (Figure 3A)
+#### ‘Segregated all’ (rewards and costs) (Figure 3A)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79314/elife-79314-fig3-v1.jpg)
 
@@ -87,21 +89,21 @@ In this treatment, the reward (drops) was segregated into three different experi
 
 However, in this treatment also the cost is segregated: Rather than being experienced as a single 75 cm long runway, the ant encountered three 25 cm ones, interspersed by rewards. Thus, this condition is expected to enhance both the perceived value and the perceived cost.
 
-## ‘Segregated reward’ (bundled costs) (Figure 3B)
+#### ‘Segregated reward’ (bundled costs) (Figure 3B)
 
 In this second treatment, the ant encountered a 75 cm long runway. At every 25 cm mark, a narrowing portion was present, but in this treatment no small sugar drops were provided. The narrowing of the paper was maintained to ensure consistency with the previous treatment. To assure consistency among treatments, the experimenter followed the same procedure of the ‘segregated all condition’: the micropipette was brought to the narrowing point at the end of the 25 cm runway when the ant got near it and the plunger depressed delivering no drop (i.e. a sham treatment). At the end of the 75 cm, two 0.2 µl, 1.5 M drops were presented in short succession, just 5 mm from each other. After another 5 mm, the third ad libitum drop was placed. Thus, in this treatment, the distance travelled (=cost) remained bundled, while the reward was still segregated.
 
-## ‘Bundled’ (rewards and costs) (Figure 3C)
+#### ‘Bundled’ (rewards and costs) (Figure 3C)
 
 In this third treatment, the ants encountered the same runway as above. However, instead of presenting three drops at the end, only the third ad libitum drop was offered. Thus, in this treatment, both the reward and the cost are bundled. The sham pipetting was also carried out in this treatment.
 
-## Pairwise training and a priori hypotheses
+### Pairwise training and a priori hypotheses
 
 We performed three different conditions, corresponding to the three different pairings of the three treatments (A vs. B, A vs. C, B vs. C). Forty ants were tested per condition, for a total of 120. Each ant would experience one of the three treatments for the first visit, associated with a distinct odour. On the subsequent one, the animal encountered a second treatment, associated with another odour. This procedure was repeated for four times, for a total of eight visits alternating between the two selected treatments. This way, each ant experienced four times each treatment. On the way back to the nest, we counted the pheromone deposited by each ant (Figure 2A) in each of the three runway sections. In the end, the ant was presented with a Y-maze, and had to choose between the two treatment odours. As for the pilot experiment, the Y-maze test (Figure 2B) was repeated three times, by picking up the ant immediately upon reaching the end of the chosen arm and placing it back at the start of the stem.
 
 Broadly, we expect the following preference structure:
 
-## Data analysis
+### Data analysis
 
 The entire statistical analysis code, including data handling, figure code, and analysis results, is presented in supplement ESM2. Raw data is available in supplement ESM1. All the statistical analyses were performed in R 4.1.2 (R Development Core Team, 2020). The packages readODS (Schutten et al., 2020) and reshape2 (Wickham, 2007) were used to load and prepare the data. We focused on two measures: the binomial choice at the last experimental visit, and the number of pheromone depositions during the training visits for the different options.
 
@@ -117,15 +119,15 @@ Examining the results of the aforementioned model, we discovered a possible cont
 
 ## Results
 
-## Pilot experiment – cost of travelled distance
+### Pilot experiment – cost of travelled distance
 
 In the pilot experiment, the ants were asked to choose between two odours: one associated with a short runway and the other associated with a long one. We observed a 90% probability of the ants choosing the short-associated odour when encountering the Y-maze for the first time, significantly higher than chance level (GLMM post hoc: prob.=0.896, SE = 0.056, DF = 136, t=3.589, p=0.0014). The probability quickly dropped to chance level for the two subsequent visits (visit 2: prob.=0.547, SE = 0.124, DF = 136, t=0.376, p=1; visit 3: prob.=0.484, SE = 0.123, DF = 136, t=−0.129, p=1). This is generally to be expected in this type of experiment, as the lack of a reward and manipulation easily disrupts the ant decision.
 
 The pheromone deposition analysis confirms this pattern, as indeed ants deposit double the amount of pheromone per unit length on the short runway over the long one (GLMM post hoc ratio = 2, SE = 0.231, DF = 185, t=5.973, p<0.0001).
 
-## Main experiment – bundling vs. segregation
+### Main experiment – bundling vs. segregation
 
-## Condition 1: ‘Segregated reward’ vs. ‘bundled’
+#### Condition 1: ‘Segregated reward’ vs. ‘bundled’
 
 In this experiment, we expected ants to prefer the ‘segregated reward’ treatment over the ‘bundled’ one due to bundling.
 
@@ -143,7 +145,7 @@ Regarding the effect of the first encountered treatment (Figure 5), we observed 
 
 **Figure 5.:** Y-axis: amount of deposited pheromone per runway section. Error bars represent standard error. n=40 for each condition. When ‘segregated reward’ is encountered first, in condition 2, the overall pheromone deposited is higher in respect to the ‘segregated all’ option (glmm post-hoc p=0.0022). In condition 3, when the ‘bundled’ option is encountered first, the overall pheromone deposited is lower in respect to the ‘segregated all’ option (glmm post-hoc p=0.0001).
 
-## Condition 2: ‘Segregated reward’ vs. ‘segregated all’
+#### Condition 2: ‘Segregated reward’ vs. ‘segregated all’
 
 In this experiment we expected the ‘segregated reward’ treatment to be preferred over the ‘segregated all’ treatment.
 
@@ -153,7 +155,7 @@ Regarding pheromone deposition (Figure 4), we observed a difference between the 
 
 Regarding the effect of the first encountered treatment (Figure 5), the ants deposited overall more pheromone when they encountered the ‘segregated reward’ option first, irrespective of the currently experienced treatment (GLMM post hoc: ratio = 0.472, SE = 0.0991, DF = 830, t=−3.576, p=0.002). We also observed that when the ‘segregated reward’ treatment was encountered first, the ant significantly preferred it to the ‘segregated all’ option (ratio = 0.296, SE = 0.1081, DF = 830, t=−3.333, p=0.0054) section. However, when they encountered the ‘segregated all’ treatment first the ants showed no difference (ratio = 0.703, SE = 0.2536, DF = 830, t=−0.976, p=1). Ants deposited more pheromone for the ‘segregated reward’ option when it was encountered first in respect to when it was encountered second (ratio = 0.306, SE = 0.1092, DF = 830, t=−3.318, p=0.0057).
 
-## Condition 3: ‘Segregated all’ vs. ‘bundled’
+#### Condition 3: ‘Segregated all’ vs. ‘bundled’
 
 In this experiment, ‘bundled’ treatment was expected to be preferred over the ‘segregated all’ one.
 

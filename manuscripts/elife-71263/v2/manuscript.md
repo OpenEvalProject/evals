@@ -30,31 +30,113 @@ Here, we address this question by studying an alternative mechanism for the emer
 
 To understand the emergence of transient responses in recurrent neural networks, we studied rate-based population models with a supralinear, power law input-output function (Figure 1A and B; Ahmadian et al., 2013; Hennequin et al., 2018), which captures essential aspects of neuronal activation (Priebe et al., 2004), while also being analytically tractable. We first considered an isolated neuronal ensemble consisting of one excitatory (E) and one inhibitory (I) population (Figure 1A).
 
-The dynamics of this network are given by(1)τE⁢d⁢rEd⁢t=-rE+[JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE ,(2)τI⁢d⁢rId⁢t=-rI+[JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI ,
+![Figure 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig1-v2.jpg)
 
-where rE and rI are the firing rates of the excitatory and inhibitory population, τE and τI represent the corresponding time constants, JX⁢Y denotes the synaptic strength from the population Y to the population X, where  X,Y∈{E,I}, gE and gI are the external inputs to the respective populations. Finally, αE and αI, the exponents of the respective input-output functions, are fixed at two unless mentioned otherwise. For ease of notation, we further define the weight matrix J of the compound system as follows:(3)J=[JEE−JEIJIE −JII].
+**Figure 1.:** (A) Schematic of the recurrent ensemble model consisting of an excitatory (blue) and an inhibitory population (red). (B) Supralinear input-output function given by a rectified power law with exponent $\alpha=2$. (C) Firing rates of the excitatory (blue) and inhibitory population (red) in response to external stimulation during the interval from 2 to 4  s (gray bar). The stimulation was implemented by temporarily increasing the input $g_{E}$. (D) Phase portrait of the system before stimulation (left; C orange) and during stimulation (right; C green). (E) Characteristic function $F⁢(z)$ for varying input strength $g_{E}$. Note that the function loses its zero crossings, which correspond to fixed points of the system for increasing external input. (F) Heat map showing the evoked firing rate of the excitatory population for different parameter combinations $J_{E⁢E}$ and $g_{E}$. The gray region corresponds to the parameter regime with unstable dynamics.
 
-We were specifically interested in networks with strong recurrent excitation that can generate positive feedback dynamics in response to external inputs gE. Therefore, we studied networks with(4)det(J)=−JEEJII+JIEJEI<0.
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig1-figsupp1-v2.jpg)
 
-In contrast, networks in which recurrent excitation is met by strong feedback inhibition such that det(J)>0 are unable to generate positive feedback dynamics provided that inhibition is fast enough (Ahmadian et al., 2013). Importantly, we assumed that most inhibition originates from recurrent connections (Franks et al., 2011; Large et al., 2016) and, hence, we kept the input to the inhibitory population gI fixed unless mentioned otherwise.
+**Figure 1—figure supplement 1.:** (A) Characteristic function $F⁢(z)$ for different inputs $g_{E}$ and $g_{I}$. (B) Firing rates of the excitatory (blue) and inhibitory population (red) in response to stimulation from 2 to 4  s (gray bar). During stimulation $g_{E}$ and $g_{I}$ are simultaneously changed to the stated values.
 
-## Nonlinear amplification of inputs above a critical threshold
+The dynamics of this network are given by
 
-We initialized the network in a stable low-activity state in the absence of external stimulation, consistent with spontaneous activity in cortical networks (Figure 1C). However, an input gE of sufficient strength, destabilized the network (Figure 1C). Importantly, this behavior is distinct from linear network models in which the network stability is independent of inputs (Materials and methods). The transition from stable to unstable dynamics can be understood by examining the phase portrait of the system (Figure 1D). Before stimulation, the system has a stable and an unstable fixed point (Figure 1D, left). However, both fixed points disappear for an input gE above a critical stimulus strength (Figure 1D, right).
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}} ,
+$$
 
-To further understand the system’s bifurcation structure, we consider the characteristic function(5)F(z)=JEE[z]+αE−JEI[det(J)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−z+gE,
 
-where z denotes the total current into the excitatory population and det(J) represents the determinant of the weight matrix (Kraynyukova and Tchumatchenko, 2018; Materials and methods). The characteristic function reduces the original two-dimensional system to one dimension, whereby the zero crossings of the characteristic function correspond to the fixed points of the original system (Eq. (1)-(2)). We use this correspondence to visualize how the fixed points of the system change with the input gE. Increasing gE shifts F⁢(z) upwards, which eventually leads to all zero crossings disappearing and the ensuing unstable dynamics (Figure 1E; Materials and methods). Importantly, for any weight matrix J with negative determinant, there exists a critical input gE at which all fixed points disappear (Materials and methods). While for weak recurrent E-to-E connection strength JE⁢E, the transition from stable dynamics to unstable is gradual, in that it happens at higher firing rates (Figure 1F), it becomes more abrupt for stronger JE⁢E. Thus, our analysis demonstrates that individual neuronal ensembles with negative determinant det(J) nonlinearly amplify inputs above a critical threshold by switching from initially stable to unstable dynamics.
 
-## Short-term plasticity, but not spike-frequency adaptation, can re-stabilize ensemble dynamics
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}} ,
+$$
+
+where $r_{E}$ and $r_{I}$ are the firing rates of the excitatory and inhibitory population, $\tau_{E}$ and $\tau_{I}$ represent the corresponding time constants, $J_{X⁢Y}$ denotes the synaptic strength from the population $Y$ to the population $X$, where  $X,Y\in{E,I}$, $g_{E}$ and $g_{I}$ are the external inputs to the respective populations. Finally, $\alpha_{E}$ and $\alpha_{I}$, the exponents of the respective input-output functions, are fixed at two unless mentioned otherwise. For ease of notation, we further define the weight matrix $J$ of the compound system as follows:
+
+$$
+J=[J_{EE}−J_{EI}J_{IE} −J_{II}].
+$$
+
+We were specifically interested in networks with strong recurrent excitation that can generate positive feedback dynamics in response to external inputs $g_{E}$. Therefore, we studied networks with
+
+$$
+det(J)=−J_{EE}J_{II}+J_{IE}J_{EI}<0.
+$$
+
+In contrast, networks in which recurrent excitation is met by strong feedback inhibition such that $det(J)>0$ are unable to generate positive feedback dynamics provided that inhibition is fast enough (Ahmadian et al., 2013). Importantly, we assumed that most inhibition originates from recurrent connections (Franks et al., 2011; Large et al., 2016) and, hence, we kept the input to the inhibitory population $g_{I}$ fixed unless mentioned otherwise.
+
+### Nonlinear amplification of inputs above a critical threshold
+
+We initialized the network in a stable low-activity state in the absence of external stimulation, consistent with spontaneous activity in cortical networks (Figure 1C). However, an input $g_{E}$ of sufficient strength, destabilized the network (Figure 1C). Importantly, this behavior is distinct from linear network models in which the network stability is independent of inputs (Materials and methods). The transition from stable to unstable dynamics can be understood by examining the phase portrait of the system (Figure 1D). Before stimulation, the system has a stable and an unstable fixed point (Figure 1D, left). However, both fixed points disappear for an input $g_{E}$ above a critical stimulus strength (Figure 1D, right).
+
+To further understand the system’s bifurcation structure, we consider the characteristic function
+
+$$
+F(z)=J_{EE}[z]_{+}^{\alpha_{E}}−J_{EI}[det(J)⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}}−z+g_{E},
+$$
+
+where $z$ denotes the total current into the excitatory population and $det(J)$ represents the determinant of the weight matrix (Kraynyukova and Tchumatchenko, 2018; Materials and methods). The characteristic function reduces the original two-dimensional system to one dimension, whereby the zero crossings of the characteristic function correspond to the fixed points of the original system (Eq. (1)-(2)). We use this correspondence to visualize how the fixed points of the system change with the input $g_{E}$. Increasing $g_{E}$ shifts $F⁢(z)$ upwards, which eventually leads to all zero crossings disappearing and the ensuing unstable dynamics (Figure 1E; Materials and methods). Importantly, for any weight matrix $J$ with negative determinant, there exists a critical input $g_{E}$ at which all fixed points disappear (Materials and methods). While for weak recurrent E-to-E connection strength $J_{E⁢E}$, the transition from stable dynamics to unstable is gradual, in that it happens at higher firing rates (Figure 1F), it becomes more abrupt for stronger $J_{E⁢E}$. Thus, our analysis demonstrates that individual neuronal ensembles with negative determinant $det(J)$ nonlinearly amplify inputs above a critical threshold by switching from initially stable to unstable dynamics.
+
+### Short-term plasticity, but not spike-frequency adaptation, can re-stabilize ensemble dynamics
 
 Since unstable dynamics are not observed in neurobiology, we wondered whether neuronal spike frequency adaptation (SFA) or STP could re-stabilize the ensemble dynamics while keeping the nonlinear amplification character of the system. Specifically, we considered SFA of excitatory neurons, E-to-E short-term depression (STD), and E-to-I short-term facilitation (STF). We focused on these particular mechanisms because they are ubiquitously observed in the brain. Most pyramidal cells exhibit SFA (Barkai and Hasselmo, 1994) and most synapses show some form of STP (Markram et al., 1998; Zucker and Regehr, 2002; Pala and Petersen, 2015). Moreover, the time scales of these mechanisms are well-matched to typical timescales of perception, ranging from milliseconds to seconds (Tsodyks and Markram, 1997; Fairhall et al., 2001; Pozzorini et al., 2013).
 
 When we simulated our model with SFA (Eqs. (21)–(23)), we observed different network behaviors depending on the adaptation strength. When adaptation strength was weak, SFA was unable to stabilize run-away excitation (Figure 2A; Materials and methods). Increasing the adaptation strength eventually prevented run-away excitation, but to give way to oscillatory ensemble activity (Figure 2—figure supplement 1). Finally, we confirmed analytically that SFA cannot stabilize excitatory run-away dynamics at a stable fixed point (Materials and methods). In particular, while the input is present, strong SFA creates a stable limit cycle with associated oscillatory ensemble activity (Figure 2—figure supplement 1; Materials and methods), which was also shown in previous modeling studies (van Vreeswijk and Hansel, 2001), but is not typically observed in sensory systems (DeWeese et al., 2003; Rupprecht and Friedrich, 2018).
 
-Next, we considered STP, which is capable of saturating the effective neuronal input-output function (Mongillo et al., 2012; Zenke et al., 2015; Eqs. (37)–(39), Eqs. (41)–(43)). We first analyzed the stimulus-evoked network dynamics when we added STD to the recurrent E-to-E connections. Strong depression of synaptic efficacy resulted in a brief onset transient after which the ensemble dynamics quickly settled into a stimulus-evoked steady-state with slightly higher activity than the baseline (Figure 2B, left). After stimulus removal, the ensemble activity returned back to its baseline level (Figure 2B, left; Figure 2C). Notably, the ensemble dynamics settled at a stable steady state with a much higher firing rate, when inhibition was inactivated during stimulus presentation (Figure 2B, right). This shows that STP is capable of creating a stable high-activity fixed point, which is fundamentally different from the SFA dynamics discussed above. This difference in ensemble dynamics can be readily understood by analyzing the stability of the three-dimensional dynamical system (Materials and methods). We can gain a more intuitive understanding by considering self-consistent solutions of the characteristic function F⁢(z). Initially, the ensemble is at the stable low activity fixed point. But the stimulus causes this fixed point to disappear, thus giving way to positive feedback which creates the leading edge of the onset transient (Figure 2B). However, because E-to-E synaptic transmission is rapidly reduced by STD, the curvature of F⁢(z) changes and a stable fixed point is created, thereby allowing excitatory run-away dynamics to terminate and the ensemble dynamics settle into a steady-state at low activity levels (Figure 2D). We found that E-to-I STF leads to similar dynamics (Figure 2E, left; Appendix 1) with the only difference that this configuration requires inhibition for network stability (Figure 2E, right), whereas E-to-E STD stabilizes activity even without inhibition, albeit at physiologically implausibly high activity levels. Importantly, the re-stabilization through either form of STP did not impair an ensemble’s ability to amplify stimuli during the initial onset phase.
+![Figure 2.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-v2.jpg)
 
-Crucially, transient amplification in supralinear networks with STP occurs above a critical threshold (Figure 2—figure supplement 2), and requires recurrent excitation JEE to be sufficiently strong (Figure 2—figure supplement 2C, D). To quantify the amplification ability of these networks, we calculated the ratio of the evoked peak firing rate to the input strength, henceforth called the ‘Amplification index’. We found that amplification in STP-stabilized supralinear networks can be orders of magnitude larger than in linear networks with equivalent weights and comparable stabilized supralinear networks (SSNs) without STP (Figure 2—figure supplement 3). We stress that the resulting firing rates are parameter-dependent (Figure 2—figure supplement 4) and their absolute value can be high due to the high temporal precision of the onset peak and its short duration. In experiments, such high rates manifest themselves as precisely time-locked spikes with millisecond resolution (DeWeese et al., 2003; Wehr and Zador, 2003; Bolding and Franks, 2018; Gjoni et al., 2018).
+**Figure 2.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in the presence of spike-frequency adaptation (SFA). During stimulation (gray bar) additional input is injected into the excitatory population. The inset shows a cartoon of how SFA affects spiking neuronal dynamics in response to a step current input. (B) Left: Same as (A) but in the presence of E-to-E short-term depression (STD). Right: Same as left but inactivating inhibition in the period marked in purple. (C) 3D plot of the excitatory activity $r_{E}$, inhibitory activity $r_{I}$, and the STD variable $x$ of the network in B left. The orange and green points mark the fixed points before/after and during stimulation. (D) Characteristic function $F⁢(z)$ in networks with E-to-E STD. Different brightness levels correspond to different time points in B left. (E) Same as (B) but in the presence of E-to-I short-term facilitation (STF). (F) Inhibition-stabilized network (ISN) index, which corresponds to the largest real part of the eigenvalues of the Jacobian matrix of the E-E subnetwork with STD, as a function of time for the network with E-to-E STD in B left. For values above zero (dashed line), the ensemble is an ISN. (G) Analytical solution of non-ISN (magenta), ISN (green), paradoxical, and non-paradoxical regions for different parameter combinations $J_{E⁢E}$ and the STD variable $x$. The solid line separates the non-ISN and ISN regions, whereas the dashed line separates the non-paradoxical and paradoxical regions. (H) The normalized firing rates of the excitatory (blue) and inhibitory population (red) when injecting additional excitatory current into the inhibitory population before stimulation (left; orange bar in B), and during stimulation (right; green bar in B). Initially, the ensemble is in the non-ISN regime and injecting excitatory current into the inhibitory population increases its firing rate. During stimulation, however, the ensemble is an ISN. In this case, excitatory current injection into the inhibitory population results in a reduction of its firing rate, also known as the paradoxical effect.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in the presence of strong SFA (left) with $b=200$. The zoomed-in activity from 3.0 s to 3.2 s (right) corresponding to the green period (left) indicates oscillatory behavior in networks with strong SFA. (B) 3D plot of the excitatory activity $r_{E}$, inhibitory activity $r_{I}$, and the SFA variable $a$ of the network in the period marked with the green bar in A. Networks with different conditions starting from different gray dots converge to the same stable limit cycle marked with the black line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The onset peak amplitude (triangles) and fixed point activity (circles) as a function of input $g_{E}$ in networks with E-to-E STD. Here, $J_{E⁢E}=1.8$. (B) The ratio of the onset peak amplitude to fixed point activity as a function of input $g_{E}$. The vectical dashed line indicates the input level which leads to unstable network dynamics without E-to-E STD. (C and D) Same as A and B but as a function of $J_{E⁢E}$. Here, $g_{E}=2.0$.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Amplification index,which is defined as the ratio of the peak amplitude to input $g_{E}$, as a function of input $g_{E}$ for NTA (blue) and linear network (orange) in the presence of E-to-E STD. (B) Same as A but for SSN without STP (green).SSN is constructed by keep-ing $J_{EE}$ the same while changing $J_{IE}$ to $J_{II}$ such that the determinant of the weight matrix det(J) becomes positive. (C) Example of firing rates of the excitatory (blue) and inhibitory population (red) in linear networks with E-to-E STD. During stimulation (gray bar) additional input is injected into the excitatory population. Same as Figure 2B (left) but with $\alpha_{E}=\alpha_{1}=1$ and $g_{E}=2$. (D) Example of firing rates of the excitatory (blue) and inhibitory population (red) in SSNs with $g_{E}=2$.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in response to stimulation in the presence of E-to-I STF with different time constants $\tau_{u}$. The stimulation period from 2 s to 4 s is marked with the gray bar. The stimulation is implemented by changing input $gE$. (B) Peak amplitude (solid line) and fixed point activity (dashed line) of the excitatory population during stimulation with different STF time constants. (C and D) Same as A and B, but with different maximum allowed facilitation levels $U_{max}$.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in the presence of E-to-E STD in an example of a network initially in the ISN regime. During stimulation (gray bar) additional input is injected into the excitatory population. (B) ISN index of the network. (C) Depression variable (black) in an example of a network shown in A. The orange dashed line represents the depression variable threshold above which the network exhibits the paradoxical effect. (D) The normalized firing rates of the excitatory (blue) and inhibitory population (red) when injecting additional excitatory current into the inhibitory population before stimulation (left; orange bar in A), and during stimulation (right; green bar in A). Both before stimulation and during stimulation, the ensemble is in the ISN regime and injecting excitatory current into inhibitory population decreases its firing rate. (E) Firing rates of the excitatory (blue) and inhibitory population (red) when a small transient perturbation to excitatory population activity is introduced marked with arrows while freezing inhibition before stimulation (left) and during stimulation (right). The periods in which inhibition is frozen are marked with black bars. Both before stimulation and during stimulation, the ensemble is in the ISN regime and a small transient excitatory perturbation to the excitatory population results in a transient explosion of the excitatory firing rate.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) ISN index of the network with E-to-I STF in Figure 2E (left). The horizontal dashed line indicates an ISN index of 0. (B) The normalized firing rates of the excitatory (blue) and inhibitory population (red) when injecting additional excitatory current into the inhibitory population before stimulation (left, Figure 2E), and during stimulation (right, Figure 2E). The horizontal dashed lines indicate a normalized firing rate of 1.0.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** (A) ISN index of the network with E-to-E STD as a function of input $g_{E}$. The horizontal dashed line indicates an ISN index of 0. For values above zero, the ensemble is an ISN. The vertical dashed line separates the non-paradoxical and paradoxical regions. (B) Firing rates of the excitatory (blue) and inhibitory population (red) in an ensemble with the input level marked with the black dot in A when a small transient perturbation to excitatory population activity is introduced marked with arrows while freezing inhibition. The periods in which inhibition is frozen are marked with the black bar. A small transient perturbation to the excitatory population results in a transient explosion of the excitatory firing rate, indicating that the ensemble is an ISN. (C) The normalized firing rates of the excitatory (blue) and inhibitory population (red) when injecting excitatory input into the inhibitory population of an ensemble with the input level marked with the black dot in A. The horizontal dashed line indicates a normalized firing rate of 1.0. Despite being an ISN, the ensemble does not exhibit the paradoxical effect.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Depression variable (black) in an example of a network initially in the non-ISN regime shown in Figure 2B left. The orange dashed line represents the depression variable threshold above which the network exhibits the paradoxical effect. (B) Firing rates of the excitatory (blue) and inhibitory population (red) when a small transient perturbation to excitatory population activity is introduced marked with arrows while freezing inhibition before stimulation (left; Figure 2B left) and during stimulation (right; Figure 2B left). The periods in which inhibition is frozen are marked with black bars. Initially, the ensemble is in the non-ISN regime and the firing rate of the excitatory slightly increases and then returns to its baseline after introducing a small transient perturbation to the excitatory population. During stimulation, however, the ensemble is an ISN. In this case, a small transient perturbation to the excitatory population results in a transient explosion of the excitatory firing rate.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in response to stimulation in a rate-based model. Additional excitatory inputs are injected into excitatory neurons in the period marked in gray. Firing rates are capped at 300 Hz. (B) Same as A but incorporating SFA. (C) Same as A but incorporating E-to-E STD. (D) Same as A but incorporating E-to-I STF. (E) Same as B but incorporating stronger SFA (left). The zoomed-in activity from 3.0 s to 3.2 s (right) corresponding to the green period (left) indicates oscillatory behavior in networks with strong SFA.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** (A) Spike raster plot of the excitatory (top, blue) and inhibitory population (top, red) in response to stimulation in a spiking neural network model, and firing rates calculated with 10 ms time bins (bottom). Additional excitatory inputs are injected into excitatory neurons in the period marked in gray. (B) Same as A but incorporating SFA. (C) Same as A but incorporating E-to-E STD. (D) Same as A but incorporating E-to-I STF.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp11-v2.jpg)
+
+**Figure 2—figure supplement 11.:** (A) Firing rates of the excitatory (blue) and inhibitory population (red) in networks with positive determinant in response to external stimulation during the interval from 2 to 4 s (gray bar). The stimulation was implemented by temporarily increasing the input $g_{E}$ . (B) Phase portrait of the system before stimulation (left; A orange) and during stimulation (right; A green). (C) Same as (A) but in the presence of weak SFA (left) and strong SFA (right). (D) Same as (A) but in the presence of E-to-E STD. (E) Same as (A) but in the presence of E-to-I STF.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig2-figsupp12-v2.jpg)
+
+**Figure 2—figure supplement 12.:** (A) Example of activity when the change in the input of the inhibitory population Δgt is larger than the the change in the input of the excitatory population ΔgE . Here, ΔgE = 1.8, and ΔgI = 3. (B) The ratio of the onset peak amplitude to the baseline activity as a function of the change in the input of the excitatory population ΔgE and the change in the input of the inhibitory population ΔgI . The diagonal dashed line indicates the border at which ΔgE is identical to ΔgI in networks with E-to-E STD. The star symbol represents the example shown in A.
+
+Next, we considered STP, which is capable of saturating the effective neuronal input-output function (Mongillo et al., 2012; Zenke et al., 2015; Eqs. (37)–(39), Eqs. (41)–(43)). We first analyzed the stimulus-evoked network dynamics when we added STD to the recurrent E-to-E connections. Strong depression of synaptic efficacy resulted in a brief onset transient after which the ensemble dynamics quickly settled into a stimulus-evoked steady-state with slightly higher activity than the baseline (Figure 2B, left). After stimulus removal, the ensemble activity returned back to its baseline level (Figure 2B, left; Figure 2C). Notably, the ensemble dynamics settled at a stable steady state with a much higher firing rate, when inhibition was inactivated during stimulus presentation (Figure 2B, right). This shows that STP is capable of creating a stable high-activity fixed point, which is fundamentally different from the SFA dynamics discussed above. This difference in ensemble dynamics can be readily understood by analyzing the stability of the three-dimensional dynamical system (Materials and methods). We can gain a more intuitive understanding by considering self-consistent solutions of the characteristic function $F⁢(z)$. Initially, the ensemble is at the stable low activity fixed point. But the stimulus causes this fixed point to disappear, thus giving way to positive feedback which creates the leading edge of the onset transient (Figure 2B). However, because E-to-E synaptic transmission is rapidly reduced by STD, the curvature of $F⁢(z)$ changes and a stable fixed point is created, thereby allowing excitatory run-away dynamics to terminate and the ensemble dynamics settle into a steady-state at low activity levels (Figure 2D). We found that E-to-I STF leads to similar dynamics (Figure 2E, left; Appendix 1) with the only difference that this configuration requires inhibition for network stability (Figure 2E, right), whereas E-to-E STD stabilizes activity even without inhibition, albeit at physiologically implausibly high activity levels. Importantly, the re-stabilization through either form of STP did not impair an ensemble’s ability to amplify stimuli during the initial onset phase.
+
+Crucially, transient amplification in supralinear networks with STP occurs above a critical threshold (Figure 2—figure supplement 2), and requires recurrent excitation $J_{EE}$ to be sufficiently strong (Figure 2—figure supplement 2C, D). To quantify the amplification ability of these networks, we calculated the ratio of the evoked peak firing rate to the input strength, henceforth called the ‘Amplification index’. We found that amplification in STP-stabilized supralinear networks can be orders of magnitude larger than in linear networks with equivalent weights and comparable stabilized supralinear networks (SSNs) without STP (Figure 2—figure supplement 3). We stress that the resulting firing rates are parameter-dependent (Figure 2—figure supplement 4) and their absolute value can be high due to the high temporal precision of the onset peak and its short duration. In experiments, such high rates manifest themselves as precisely time-locked spikes with millisecond resolution (DeWeese et al., 2003; Wehr and Zador, 2003; Bolding and Franks, 2018; Gjoni et al., 2018).
 
 Recent studies suggest that cortical networks operate as inhibition-stabilized networks (ISNs) (Sanzeni et al., 2020; Sadeh and Clopath, 2021), in which the excitatory network is unstable in the absence of feedback inhibition (Tsodyks et al., 1997; Ozeki et al., 2009). To that end, we investigated how ensemble re-stabilization relates to the network operating regime at baseline and during stimulation. Whether a network is an ISN or not is mathematically determined by the real part of the leading eigenvalue of the Jacobian of the excitatory-to-excitatory subnetwork (Tsodyks et al., 1997). We computed the leading eigenvalue in our model incorporating STP and referred to it as ‘ISN index’ (Materials and methods; Appendix 2). We found that in networks with STP the ISN index can switch sign from negative to positive during external stimulation, indicating that the ensemble can transition from a non-ISN to an ISN (Figure 2F). Notably, this behavior is distinct from linear network models in which the network operating regime is independent of the input (Materials and methods). Whether this switch between non-ISN to ISN occurred, however, was parameter dependent and we also found network configurations that were already in the ISN regime at baseline and remained ISNs during stimulation (Figure 2—figure supplement 5). Thus, re-stabilization was largely unaffected by the network state and consistent with experimentally observed ISN states (Sanzeni et al., 2020).
 
@@ -64,41 +146,85 @@ Despite the fact that the supralinear input-output function of our framework cap
 
 In summary, we found that neuronal ensembles can rapidly, nonlinearly, and transiently amplify inputs by briefly switching from stable to unstable dynamics before being re-stabilized through STP mechanisms. We call this mechanism nonlinear transient amplification (NTA) which, in contrast to balanced amplification (Murphy and Miller, 2009; Hennequin et al., 2012), arises from population dynamics with supralinear neuronal activation functions interacting with STP. While we acknowledge that there may be other nonlinear transient amplification mechanisms, in this article we restrict our analysis to the definition above. NTA is characterized by a large onset response, a subsequent ISN steady-state while the stimulus persists, and a return to a unique baseline activity state after the stimulus is removed. Thus, NTA is ideally suited to rapidly and nonlinearly amplify sensory inputs through recurrent excitation, like reported experimentally (Ko et al., 2011; Cossell et al., 2015), while avoiding persistent activity.
 
-## Co-tuned inhibition broadens the parameter regime of NTA in the absence of persistent activity
+### Co-tuned inhibition broadens the parameter regime of NTA in the absence of persistent activity
 
 Up to now, we have focused on a single neuronal ensemble. However, to process information in the brain, several ensembles with different stimulus selectivity presumably coexist and interact in the same circuit. This coexistence creates potential problems. It can lead to multi-stable persistent attractor dynamics, which are not commonly observed and could have adverse effects on the processing of subsequent stimuli. One solution to this issue could be EI co-tuning, which arises in network models with plastic inhibitory synapses (Vogels et al., 2011) and has been observed experimentally in several sensory systems (Wehr and Zador, 2003; Froemke et al., 2007; Okun and Lampl, 2008; Rupprecht and Friedrich, 2018).
 
 To characterize the conditions under which neuronal ensembles nonlinearly amplify stimuli without persistent activity, we analyzed the case of two interacting ensembles. More specifically, we considered networks with two excitatory ensembles and distinguished between global and co-tuned inhibition (Figure 3A). In the case of global inhibition, one inhibitory population non-specifically inhibits both excitatory populations (Figure 3A, left). In contrast, in networks with co-tuned inhibition, each ensemble is formed by a dedicated pair of an excitatory and an inhibitory population which can have cross-over connections, for instance, due to overlapping ensembles (Figure 3A, right).
 
-Global inhibition supports winner-take-all competition and is therefore often associated with multi-stable attractor dynamics (Wong and Wang, 2006; Mongillo et al., 2008). We first illustrated this effect in a network model with global inhibition. When the recurrent excitatory connections within each ensemble were sufficiently strong, small amounts of noise in the initial condition led to one of the ensembles spontaneously activating at elevated firing rates, while the other ensemble’s activity remained low (Figure 3B, left). A specific external stimulation could trigger a switch from one state to the other in which the other ensemble was active at a high firing rate. Importantly, this change persisted even after the stimulus had been removed, a hallmark of multi-stable dynamics. In contrast, uni-stable systems have a global symmetric state in which both ensembles have the same activity in the absence of stimulation. While the stimulated ensemble showed elevated firing rates in response to the stimulus, its activity returned to the baseline level after the stimulus is removed (Figure 3B, right), consistent with experimental observations (DeWeese et al., 2003; Rupprecht and Friedrich, 2018; Bolding and Franks, 2018). Note that the only difference between these two models is that JE⁢E is larger in the multi-stable example than in the uni-stable one.
+![Figure 3.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of two neuronal ensembles with global inhibition (left) and with co-tuned inhibition (right). (B) Firing rate dynamics of bi/multi-stable ensemble dynamics (left) and uni-stable (right). In both cases, additional excitatory inputs are injected into excitatory ensemble E1 during the period marked in gray. (C) Analytical solution of uni- and bi/multi-stability regions for global inhibition (left) and co-tuned inhibition (right). Co-tuning results in a larger parameter regime of uni-stability. The triangles correspond to the two examples in B.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Examples of activity in networks with global inhibition (left) and in networks with co-tuned inhibition (right) in the presence of E-to-E STD. (B) Amplification index for networks with global inhibition (black) and network with co-tuned inhibition (gray) as a function of input $g_{E}$ in networks with E-to-E STD. Data points at $g_{E}=2.5$ correspond to the examples shown in A.
+
+Global inhibition supports winner-take-all competition and is therefore often associated with multi-stable attractor dynamics (Wong and Wang, 2006; Mongillo et al., 2008). We first illustrated this effect in a network model with global inhibition. When the recurrent excitatory connections within each ensemble were sufficiently strong, small amounts of noise in the initial condition led to one of the ensembles spontaneously activating at elevated firing rates, while the other ensemble’s activity remained low (Figure 3B, left). A specific external stimulation could trigger a switch from one state to the other in which the other ensemble was active at a high firing rate. Importantly, this change persisted even after the stimulus had been removed, a hallmark of multi-stable dynamics. In contrast, uni-stable systems have a global symmetric state in which both ensembles have the same activity in the absence of stimulation. While the stimulated ensemble showed elevated firing rates in response to the stimulus, its activity returned to the baseline level after the stimulus is removed (Figure 3B, right), consistent with experimental observations (DeWeese et al., 2003; Rupprecht and Friedrich, 2018; Bolding and Franks, 2018). Note that the only difference between these two models is that $J_{E⁢E}$ is larger in the multi-stable example than in the uni-stable one.
 
 Symmetric baseline activity is most consistent with activity observed in sensory areas. Hence, we sought to understand which inhibitory connectivity would be most conducive to maintain it. To that end, we analytically identified the uni-stability conditions, which are determined by the leading eigenvalue of the Jacobian matrix of the system, for networks with varying degrees of EI co-tuning (Materials and methods). We found that a broader parameter regime underlies uni-stability in networks with co-tuned inhibition than global inhibition (Figure 3C). Notably, this conclusion is general and extends to networks with an arbitrary number of ensembles (Materials and methods). In comparison to the ensemble with global inhibition, the ensemble with co-tuned inhibition exhibits weaker — but still strong — NTA (Figure 3—figure supplement 1). Thus, co-tuned inhibition broadens the parameter regime in which NTA is possible while simultaneously avoiding persistent attractor dynamics.
 
-## NTA provides better pattern completion than fixed points while retaining stimulus selectivity
+### NTA provides better pattern completion than fixed points while retaining stimulus selectivity
 
 Neural circuits are capable of generating stereotypical activity patterns in response to partial cues and forming distinct representations in response to different stimuli (Carrillo-Reid et al., 2016; Marshel et al., 2019; Bolding et al., 2020; Vinje and Gallant, 2000; Cayco-Gajic and Silver, 2019). To test whether NTA achieves pattern completion while retaining stimulus selectivity, we analyzed the transient onset activity in our models and compared it to the fixed point activity.
 
-To investigate pattern completion and stimulus selectivity in our model, we considered a co-tuned network with E-to-E STD and two distinct excitatory ensembles E⁢1 and E⁢2. We gave additional input gE⁢1 to a Subset 1, consisting of 75% of the neurons in ensemble E⁢1 (Figure 4A). We then measured the evoked activity in the remaining 25% of the excitatory neurons in E⁢1 to quantify pattern completion. To assess stimulus selectivity, we injected additional input gE⁢1 into the entire E⁢1 ensemble during the second stimulation phase (Figure 4A) while measuring the activity of E⁢2. We found that neurons in Subset 2, which did not receive additional input, showed large onset responses, their steady-state activity was largely suppressed (Figure 4B). Despite the fact that inputs to E⁢1 caused increased transient onset responses in E⁢2, the amount of increase was orders of magnitude smaller than in E⁢1 (Figure 4B). To quantify pattern completion, we defined the(6)Association index=1+rE⁢12-rE⁢11rE⁢12+rE⁢11 .
+To investigate pattern completion and stimulus selectivity in our model, we considered a co-tuned network with E-to-E STD and two distinct excitatory ensembles $E⁢1$ and $E⁢2$. We gave additional input $g_{E⁢1}$ to a Subset 1, consisting of 75% of the neurons in ensemble $E⁢1$ (Figure 4A). We then measured the evoked activity in the remaining 25% of the excitatory neurons in $E⁢1$ to quantify pattern completion. To assess stimulus selectivity, we injected additional input $g_{E⁢1}$ into the entire $E⁢1$ ensemble during the second stimulation phase (Figure 4A) while measuring the activity of $E⁢2$. We found that neurons in Subset 2, which did not receive additional input, showed large onset responses, their steady-state activity was largely suppressed (Figure 4B). Despite the fact that inputs to $E⁢1$ caused increased transient onset responses in $E⁢2$, the amount of increase was orders of magnitude smaller than in $E⁢1$ (Figure 4B). To quantify pattern completion, we defined the
 
-Here, rE⁢11 and rE⁢12 correspond to the subpopulation activities of E⁢1, respectively. By definition, the Association index ranges from zero to one, with larger values indicating stronger associativity. In addition, to quantify the selectivity between E⁢1 and E⁢2, we considered a symmetric binary classifier (Figure 4A, inset) and measured the distance to the decision boundary (Materials and methods). Note that the Association index was computed during Phase one and the distance to the decision boundary during Phase two in this simulation paradigm (Figure 4B).
+$$
+Association index=1+\frac{r_{E⁢1_{2}}-r_{E⁢1_{1}}}{r_{E⁢1_{2}}+r_{E⁢1_{1}}} .
+$$
 
-With these definitions, we ran simulations with different input strengths gE⁢1. We found that the onset peaks showed stronger association than the fixed point activity (Figure 4C). Note that the Association index at the fixed point remained zero, a direct consequence of rE⁢12 being suppressed to zero. Furthermore, we found that the distance between the transient onset response and the decision boundary was always greater than for the fixed point activity (Figure 4D) showing that onset responses retain stimulus selectivity. While the fixed point activity of the unstimulated co-tuned neurons is zero in the given example, stimulating a subset of neurons in one ensemble can lead to an increase in the fixed point activity of the unstimulated neurons in the same ensemble under certain conditions (Figure 4—figure supplement 1; Appendix 4), which is consistent with pattern completion experiments (Carrillo-Reid et al., 2016; Marshel et al., 2019) showing that unstimulated neurons from the same ensemble can remain active throughout the whole stimulation period.
+![Figure 4.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig4-v2.jpg)
 
-To investigate how the recurrent excitatory connectivity affects both pattern completion and stimulus selectivity, we introduced the parameter β which controls recurrent excitatory tuning by trading off within-ensemble E-to-E strength JE⁢E relative to the inter-ensemble strength JE⁢E′ (Figure 4A) such that JE⁢E=β⁢Jtot and JE⁢E′=(1-β)⁢Jtot. These definitions ensure that the total weight Jtot=JE⁢E+JE⁢E′ remains constant for any choice of β. Notably, the overall recurrent excitation strength within an ensemble JE⁢E increases with increasing β. When β is larger than 0.5, the excitatory connection strength within the ensemble JE⁢E exceeds the one between ensembles JE⁢E′.
+**Figure 4.:** (A) Schematic of the network setup used to probe pattern completion and stimulus selectivity. To assess the effect on pattern completion, 75% of the neurons (Subset 1) in ensemble E1 received additional input gE1 during Phase one (2–4 s), while we recorded the firing rate of the remaining 25% (Subset 2) in the excitatory ensemble E1. To evaluate the impact on stimulus selectivity, all neurons in E1 received additional inputs gE1 in Phase two (6–8 s) while the firing rate of E2 was measured. A downstream neuron’s ability to discriminate between E1 or E2 being active depends on whether their activity is well separated by a symmetric decision boundary (inset). (B) Examples of firing rates of Subset 2 of E1 (left, blue) and E2 (right, green) with E-to-E STD. (C) Association index as a function of input gE1 for the onset peak amplitude (magenta solid line) and fixed point activity (gray dashed line) for E-to-E STD. (D) Distance to the decision boundary (see panel A, inset) as a function of input gE1 for the onset peak amplitude (magenta solid line) and fixed point activity (gray dashed line) for E-to-E STD. (E and F) Same as C and D but as a function of β, which controls the inner- and inter-ensemble connection strength.
 
-We found that pattern completion ability monotonically increases with β with a pronounced onset for β§gt;0.6 where NTA takes hold (Figure 4E). Moreover, in this regime the two stimulus representations are well separated (Figure 4F) which ensures stimulus selectivity also during onset transients. Together, these findings recapitulate the point that recurrent excitatory tuning is a key determinant of network dynamics. Finally, we confirmed that our findings were also valid in networks with E-to-I STF (Figure 4—figure supplement 2), which is commonly observed in the brain (Markram et al., 1998; Zucker and Regehr, 2002; Pala and Petersen, 2015). In summary, NTA’s transient onset responses maintain stimulus selectivity and result in overall better pattern completion than fixed point activity.
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig4-figsupp1-v2.jpg)
 
-## NTA provides higher amplification and pattern separation in morphing experiments
+**Figure 4—figure supplement 1.:** (A) Examples of firing rates of Subset 2 of E1 (blue) and E2 (green) for gE = 3 (left) and for gE = 4 (right) in networks with E-to-E STD. (B) The ratio of the fixed point activity to the baseline activity for unstimulated co-tuned neurons (E1 Subset 2) as a function of input gE in rate-based models with E-to-E STD. The horizontal dashed line indicates a ratio of 1 at which the fixed point activity is identical to the baseline activity.
 
-So far, we only considered input to one ensemble. To examine how representations in our model are affected by ambiguous inputs to several ensembles, we performed additional morphing experiments (Freedman et al., 2001; Niessing and Friedrich, 2010). To that end, we introduced the parameter p which interpolates between two input stimuli which target E⁢1 and E⁢2 respectively. When p is zero, all additional input is injected into E⁢1. For p equal to one, all additional input is injected into E⁢2. Finally, p equal to 0.5 corresponds to the symmetric case in which E⁢1 and E⁢2 receive the same amount of additional input (Figure 5A).
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig4-figsupp2-v2.jpg)
 
-First, we investigated how the recurrent excitatory connection strength within each ensemble JE⁢E affects the onset peak amplitude and fixed point activity. We found that the peak amplitudes depend strongly on JE⁢E, whereas the fixed point activity was only weakly dependent on JE⁢E (Figure 5B and C). When we disconnected the ensembles by completely eliminating all recurrent excitatory connections, activity was noticeably decreased (Figure 5B and C). This illustrates, that recurrent excitation does play an important role in selectively amplifying specific stimuli similar to experimental observations (Marshel et al., 2019; Peron et al., 2020), but that amplification is highest at the onset.
+**Figure 4—figure supplement 2.:** (A) Association index as a function of input gE1 for the onset peak amplitude (magenta solid line) and fixed point activity (gray dashed line) for E-to-I STF. (B) Distance to the decision boundary as a function of input gE1 for the onset peak amplitude (magenta solid line) and fixed point activity (gray dashed line) for E-to-I STF. (C and D) Same as A and B but as a function of β, which controls the inner- and inter-ensemble connection strength.
 
-Further, we examined the impact of competition through lateral inhibition as a function of the E-to-I inter-ensemble strength JI⁢E′ (Materials and methods). As above, we quantified its impact by measuring the representational distance to the decision boundary for the transient onset responses and fixed point activity. We found that regardless of the specific STP mechanism, the distance was larger for the onset responses than for the fixed point activity, consistent with the notion that the onset dynamics separate stimulus identity reliably (Figure 5D and E). Since the absolute activity levels between onset and fixed point differed substantially, we further computed the relative pattern Separation index (rE⁢2-rE⁢1)/(rE⁢1+rE⁢2) and found that the onset transient provides better pattern separation ability for ambiguous stimuli with p close to 0.5 (Figure 5—figure supplement 1) provided that the E-to-I connection strength across ensembles JI⁢E′ is strong enough. All the while separability for the onset transient was slightly decreased for distinct inputs with p∈{0,1} in comparison to the fixed point. In contrast, fixed points clearly separated such pure stimuli while providing weaker pattern separation for ambiguous input combinations. Importantly, these findings qualitatively held for networks with NTA mediated by E-to-I STF (Figure 5—figure supplement 2). Thus, NTA provides stronger amplification and pattern separation than fixed point activity in response to ambiguous stimuli.
+Here, $r_{E⁢1_{1}}$ and $r_{E⁢1_{2}}$ correspond to the subpopulation activities of $E⁢1$, respectively. By definition, the Association index ranges from zero to one, with larger values indicating stronger associativity. In addition, to quantify the selectivity between $E⁢1$ and $E⁢2$, we considered a symmetric binary classifier (Figure 4A, inset) and measured the distance to the decision boundary (Materials and methods). Note that the Association index was computed during Phase one and the distance to the decision boundary during Phase two in this simulation paradigm (Figure 4B).
 
-## NTA in spiking neural networks
+With these definitions, we ran simulations with different input strengths $g_{E⁢1}$. We found that the onset peaks showed stronger association than the fixed point activity (Figure 4C). Note that the Association index at the fixed point remained zero, a direct consequence of $r_{E⁢1_{2}}$ being suppressed to zero. Furthermore, we found that the distance between the transient onset response and the decision boundary was always greater than for the fixed point activity (Figure 4D) showing that onset responses retain stimulus selectivity. While the fixed point activity of the unstimulated co-tuned neurons is zero in the given example, stimulating a subset of neurons in one ensemble can lead to an increase in the fixed point activity of the unstimulated neurons in the same ensemble under certain conditions (Figure 4—figure supplement 1; Appendix 4), which is consistent with pattern completion experiments (Carrillo-Reid et al., 2016; Marshel et al., 2019) showing that unstimulated neurons from the same ensemble can remain active throughout the whole stimulation period.
+
+To investigate how the recurrent excitatory connectivity affects both pattern completion and stimulus selectivity, we introduced the parameter $\beta$ which controls recurrent excitatory tuning by trading off within-ensemble E-to-E strength $J_{E⁢E}$ relative to the inter-ensemble strength $J_{E⁢E}^{^{′}}$ (Figure 4A) such that $J_{E⁢E}=\beta⁢J_{tot}$ and $J_{E⁢E}^{^{′}}=(1-\beta)⁢J_{tot}$. These definitions ensure that the total weight $J_{tot}=J_{E⁢E}+J_{E⁢E}^{^{′}}$ remains constant for any choice of $\beta$. Notably, the overall recurrent excitation strength within an ensemble $J_{E⁢E}$ increases with increasing $\beta$. When $\beta$ is larger than 0.5, the excitatory connection strength within the ensemble $J_{E⁢E}$ exceeds the one between ensembles $J_{E⁢E}^{^{′}}$.
+
+We found that pattern completion ability monotonically increases with $\beta$ with a pronounced onset for $\beta§gt;0.6$ where NTA takes hold (Figure 4E). Moreover, in this regime the two stimulus representations are well separated (Figure 4F) which ensures stimulus selectivity also during onset transients. Together, these findings recapitulate the point that recurrent excitatory tuning is a key determinant of network dynamics. Finally, we confirmed that our findings were also valid in networks with E-to-I STF (Figure 4—figure supplement 2), which is commonly observed in the brain (Markram et al., 1998; Zucker and Regehr, 2002; Pala and Petersen, 2015). In summary, NTA’s transient onset responses maintain stimulus selectivity and result in overall better pattern completion than fixed point activity.
+
+### NTA provides higher amplification and pattern separation in morphing experiments
+
+So far, we only considered input to one ensemble. To examine how representations in our model are affected by ambiguous inputs to several ensembles, we performed additional morphing experiments (Freedman et al., 2001; Niessing and Friedrich, 2010). To that end, we introduced the parameter $p$ which interpolates between two input stimuli which target $E⁢1$ and $E⁢2$ respectively. When $p$ is zero, all additional input is injected into $E⁢1$. For $p$ equal to one, all additional input is injected into $E⁢2$. Finally, $p$ equal to 0.5 corresponds to the symmetric case in which $E⁢1$ and $E⁢2$ receive the same amount of additional input (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic of the morphing stimulation paradigm. The fraction of the additional inputs into the two excitatory ensembles is controlled by the parameter p. (B) Peak amplitude of E1 (blue) and E2 (green) as a function of p for E-to-E STD. Brightness levels represent different recurrent E-to-E connection strengths JEE . (C) Same as in B but for fixed point activity. (D) Distance to the decision boundary as a function of p for the peak onset response (magenta solid line) and fixed point activity (gray dashed line) for E-to-E STD in a network with J’IE = 0.4. (E) Same as D but with different E-to-I connection strengths J’IE across ensembles for a network with JEE = 1.2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Separation index, defined as $(r_{E2}−r_{E1})/(r_{E1}+r_{E2})$, as a function of p for the peak onset response (magenta solid line) and fixed point activity (gray dashed line) for E-to-E STD. Different levels of brightness represent different recurrent E-to-E connection strengths JEE . (B) Same as A but with different E-to-I connection strengths J’IE across ensembles.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Distance to the decision boundary as a function of for the peak onset response (magenta solid line) and fixed point activity (gray dashed line) for E-to-I STF. (B) Same as A but with different E-to-I connection strengths J’IE across ensembles. (C and D) Same as A and B but quantified by Separation index, defined as $(r_{E2}−r_{E1})/(r_{E1}+r_{E2})$.
+
+First, we investigated how the recurrent excitatory connection strength within each ensemble $J_{E⁢E}$ affects the onset peak amplitude and fixed point activity. We found that the peak amplitudes depend strongly on $J_{E⁢E}$, whereas the fixed point activity was only weakly dependent on $J_{E⁢E}$ (Figure 5B and C). When we disconnected the ensembles by completely eliminating all recurrent excitatory connections, activity was noticeably decreased (Figure 5B and C). This illustrates, that recurrent excitation does play an important role in selectively amplifying specific stimuli similar to experimental observations (Marshel et al., 2019; Peron et al., 2020), but that amplification is highest at the onset.
+
+Further, we examined the impact of competition through lateral inhibition as a function of the E-to-I inter-ensemble strength $J_{I⁢E}^{^{′}}$ (Materials and methods). As above, we quantified its impact by measuring the representational distance to the decision boundary for the transient onset responses and fixed point activity. We found that regardless of the specific STP mechanism, the distance was larger for the onset responses than for the fixed point activity, consistent with the notion that the onset dynamics separate stimulus identity reliably (Figure 5D and E). Since the absolute activity levels between onset and fixed point differed substantially, we further computed the relative pattern Separation index $(r_{E⁢2}-r_{E⁢1})/(r_{E⁢1}+r_{E⁢2})$ and found that the onset transient provides better pattern separation ability for ambiguous stimuli with $p$ close to 0.5 (Figure 5—figure supplement 1) provided that the E-to-I connection strength across ensembles $J_{I⁢E}^{^{′}}$ is strong enough. All the while separability for the onset transient was slightly decreased for distinct inputs with $p\in{0,1}$ in comparison to the fixed point. In contrast, fixed points clearly separated such pure stimuli while providing weaker pattern separation for ambiguous input combinations. Importantly, these findings qualitatively held for networks with NTA mediated by E-to-I STF (Figure 5—figure supplement 2). Thus, NTA provides stronger amplification and pattern separation than fixed point activity in response to ambiguous stimuli.
+
+### NTA in spiking neural networks
 
 Thus far, our analysis relied on power law neuronal input-output functions in the interest of analytical tractability. To test whether our findings also qualitatively apply to more realistic network models, we built a spiking neural network consisting of randomly connected 800 excitatory and 200 inhibitory neurons, in which the E-to-E synaptic connections were subject to STD (Materials and methods). Here, we defined five overlapping ensembles, each corresponding to 200 randomly selected excitatory neurons. During an initial simulation phase (0–22 s), we consecutively stimulated each ensemble by giving additional input to their excitatory neurons, whereas the input to other neurons remained unchanged (Figure 6A). In addition, we also tested pattern completion by stimulating only 75% (Subset 1) of the neurons belonging to Ensemble 5 (22–24  s; Figure 6A). We quantified each ensemble’s activity by calculating the population firing rate of the ensemble (Materials and methods). As in the case of the rate-based model, the neuronal ensembles in the spiking model generated pronounced transient onset responses. We then measured the difference of peak ensemble activity and fixed point activity between the stimulated ensemble and the remaining unstimulated ensembles (Materials and methods). As for the rate-based networks, this difference was consistently larger for the onset peak than for the fixed point (Figure 6B and C). Thus, transient onset responses allow better stimulus separation than fixed points also in spiking neural network models.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig6-v2.jpg)
+
+**Figure 6.:** (A) Spiking activity of excitatory (blue) and inhibitory (red) neurons in a spiking neural network. From 2 to 20 s, Ensembles 1–5 individually received additional input for 2 s each (colored bars). From 22 to 24 s, 75% of Ensemble 5 neurons (Subset 1) received additional input, whereas the rest 25% of Ensemble 5 neurons (Subset 2) did not receive additional input. The symbols at the top designate the different simulation phases of baseline activity, the onset transients, and the fixed point activity. Different colors correspond to the distinct stimulation periods. (B) Ensemble activity (colors). (C) Difference in ensemble activity between the stimulated ensemble with the remaining ensembles for the transient onset peak and the fixed point. Points correspond to the different stimulation periods. (D) Spiking activity during the interval 0–10 s represented in the PCA basis spanned by the first two principal components which captured approximately 40% of the total variance. The colored lines represent the PC trajectories of the first two stimuli shown in A and B. Triangles, points and crosses correspond to the onset peak, fixed point, and baseline activity, respectively. (E) Ensemble activity of Subset 1 (purple) and Subset 2 (gray) of Ensemble 5 from 16 to 26 s. Onset peaks are marked by triangles.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71263/elife-71263-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The ratio of the fixed point activity to the baseline activity for unstimulated co-tuned neurons (Ensemble 5, Subset 2) as a function of feedforward input to Subset one in spiking neural networks with E-to-E STD. The horizontal dashed line indicates a ratio of one at which the fixed point activity is identical to the baseline activity. Each point corresponds to a measurement from a randomly initialized network.
 
 Finally, to visualize the neural activity, we projected the binned spiking activity during the first 10  s of our simulation onto its first two principal components. Notably, the PC trajectory does not exhibit a pronounced rotational component (Figure 6D) as activity is confined to one specific ensemble, consistent with experiments (Marshel et al., 2019). Furthermore, we computed the fifth ensemble’s activity for Subset 1 and 2 during the time interval 16–26  s. In agreement with our rate models, neurons in Subset 2 which did not receive additional inputs showed a strong response at the onset (Figure 6E), but not at the fixed point, suggesting that the strongest pattern completion occurs during the initial amplification phase. Finally, we also observed higher-than-baseline fixed point activity in unstimulated neurons of Subset 2 in spiking neural networks (Figure 6—figure supplement 1). Thus, the key characteristics of NTA are preserved across rate-based and more realistic spiking neural network models.
 
@@ -108,7 +234,7 @@ In this study, we demonstrated that neuronal ensemble models with recurrent exci
 
 Several theoretical studies approached the problem of transient amplification in recurrent neural network models. Loebel and Tsodyks, 2002 have described an NTA-like mechanism as a driver for powerful ensemble synchronization in rate-based networks and in spiking neural network models of auditory cortex (Loebel et al., 2007). Here, we generalized this work to both E-to-E STD and E-to-I STF and provide an in-depth characterization of its amplification capabilities, pattern completion properties, and the resulting network states with regard to their inhibition-stabilization properties. Moreover, we showed that SFA cannot provide similar network stabilization and explored how EI co-tuning interacts with NTA. Finally, we contrasted NTA to alternative transient amplification mechanisms. Balanced amplification is a particularly well-studied transient amplification mechanism (Murphy and Miller, 2009; Goldman, 2009; Hennequin et al., 2014; Bondanelli and Ostojic, 2020; Gillett et al., 2020; Christodoulou et al., 2021) that relies on non-normality of the connectivity matrix to selectively and rapidly amplify stimuli. Importantly, balanced amplification occurs in networks in which strong recurrent excitation is appropriately balanced by strong recurrent inhibition. It is capable of generating rich transient activity in linear network models (Hennequin et al., 2014), and selectively amplifies specific activity patterns, but without a specific activation threshold. In addition, in spiking neural networks, strong input can induce synchronous firing at the population level which is subsequently stabilized by strong feedback inhibition without the requirement for STP mechanisms (Stern et al., 2018). These properties contrast with NTA, which has a nonlinear activation threshold and intrinsically relies on STP to stabilize otherwise unstable run-away dynamics. Due to the switch of the network’s dynamical state, NTA’s amplification can be orders of magnitudes larger than balanced amplification (Figure 2—figure supplement 3). Interestingly, after the transient amplification phase, ensemble dynamics settle in an inhibitory-stabilized state, which renders NTA compatible with previous work on SSNs but in the presence of STP. Finally, although NTA and balanced amplification rely on different amplification mechanisms, they are not mutually exclusive and could, in principle, co-exist in biological networks.
 
-NTA’s requirement to generate positive feedback dynamics through recurrent excitation, motivated our focus on networks with det(J)<0. As demonstrated in previous work (Ahmadian et al., 2013), supralinear networks with det(J)>0 and instantaneous inhibition (τI/τE→0) are always stable for any given input, they are thus unable to generate positive feedback dynamics. In addition, networks with det(J)>0 can exhibit a range of interesting behaviors, for example, oscillatory dynamics and persistent activity (Kraynyukova and Tchumatchenko, 2018). It is worth noting, however, that for delayed or slow inhibition, stimulation can still lead to unstable network dynamics in networks with det(J)>0. Nevertheless, our simulations suggest that our main conclusions about the stabilization mechanisms still hold (Figure 2—figure supplement 11).
+NTA’s requirement to generate positive feedback dynamics through recurrent excitation, motivated our focus on networks with $det(J)<0$. As demonstrated in previous work (Ahmadian et al., 2013), supralinear networks with $det(J)>0$ and instantaneous inhibition ($\tau_{I}/\tau_{E}→0$) are always stable for any given input, they are thus unable to generate positive feedback dynamics. In addition, networks with $det(J)>0$ can exhibit a range of interesting behaviors, for example, oscillatory dynamics and persistent activity (Kraynyukova and Tchumatchenko, 2018). It is worth noting, however, that for delayed or slow inhibition, stimulation can still lead to unstable network dynamics in networks with $det(J)>0$. Nevertheless, our simulations suggest that our main conclusions about the stabilization mechanisms still hold (Figure 2—figure supplement 11).
 
 NTA shares some properties with the notion of network criticality in the brain, like synchronous activation of cell ensembles (Plenz and Thiagarajan, 2007) and STP which can tune networks to a critical state (Levina et al., 2007). However, in contrast to most models of criticality, in NTA an ensemble briefly transitions to supercritical dynamics in a controlled, stimulus-dependent manner rather than spontaneously. Yet, how the two paradigms are connected at a more fundamental level, is an intriguing question left for future work. Furthermore, recurrent co-tuned inhibition is essential for NTA to ensure uni-stability and selectivity through the suppression of ensembles with different tuning. This requirement is similar in flavor to semi-balanced networks characterized by excess inhibition to some excitatory ensembles while others are balanced (Baker et al., 2020). However, the theory of semi-balanced networks has, so far, only been applied to steady-state dynamics while ignoring transients and STP. EI co-tuning prominently features in several models and was shown to support network stability (Vogels et al., 2011; Hennequin et al., 2017; Znamenskiy et al., 2018), efficient coding (Denève and Machens, 2016), novelty detection (Schulz et al., 2021), changes in neuronal variability (Hennequin et al., 2018; Rost et al., 2018), and correlation structure (Wu et al., 2020). Moreover, some studies have argued that EI balance and co-tuning could increase robustness to noise in the brain (Rubin et al., 2017). The present work mainly highlights its importance for preventing multi-stability and delay activity in circuits not requiring such long-timescale dynamics.
 
@@ -122,227 +248,661 @@ In summary, we introduced a general theoretical framework of selective transient
 
 ## Materials and methods
 
-## Stability conditions for supralinear networks
+### Stability conditions for supralinear networks
 
-The dynamics of a neuronal ensemble consisting of one excitatory and one inhibitory population with a supralinear, power law input-output function can be described as follows:(7)τE⁢d⁢rEd⁢t=-rE+[JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE(8)τI⁢d⁢rId⁢t=-rI+[JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI
+The dynamics of a neuronal ensemble consisting of one excitatory and one inhibitory population with a supralinear, power law input-output function can be described as follows:
 
-The Jacobian M of the system is given by(9)M=[τE−1(JEEαErEαE−1αE−1)−τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI −τI−1(1+JIIαIrIαI−1αI)]
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}}
+$$
 
-To ensure that the system is stable, the product of M’s eigenvalues λ1⁢λ2, which is equivalent to the determinant of M, has to be positive. In addition, the sum of the two eigenvalues λ1+λ2, which corresponds to tr(M), has to be negative. We therefore obtained the following two stability conditions(10)λ1⁢λ2=-τE-1⁢τI-1⁢(JE⁢E⁢αE⁢rEαE-1αE-1)⁢(1+JI⁢I⁢αI⁢rIαI-1αI)+τE-1⁢τI-1⁢JE⁢I⁢αE⁢rEαE-1αE⁢JI⁢E⁢αI⁢rIαI-1αI§gt;0(11)λ1+λ2=τE-1⁢(JE⁢E⁢αE⁢rEαE-1αE-1)-τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)§lt;0
 
-Notably, the stability conditions depend on the firing rate of the excitatory population rE and the inhibitory population rI. Since firing rates are input-dependent, the stability of supralinear networks is input-dependent. In contrast, in linear networks in which αE=αI=1, the conditions can be simplified to(12)λ1⁢λ2=-τE-1⁢τI-1⁢(JE⁢E-1)⁢(1+JI⁢I)+τE-1⁢τI-1⁢JE⁢I⁢JI⁢E§gt;0(13)λ1+λ2=τE-1⁢(JE⁢E-1)-τI-1⁢(1+JI⁢I)§lt;0
+
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}}
+$$
+
+The Jacobian $M$ of the system is given by
+
+$$
+M=[\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}} −\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})]
+$$
+
+To ensure that the system is stable, the product of $M$’s eigenvalues $\lambda_{1}⁢\lambda_{2}$, which is equivalent to the determinant of $M$, has to be positive. In addition, the sum of the two eigenvalues $\lambda_{1}+\lambda_{2}$, which corresponds to $tr(M)$, has to be negative. We therefore obtained the following two stability conditions
+
+$$
+\lambda_{1}⁢\lambda_{2}=-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}-1)⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})+\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢J_{E⁢I}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}⁢J_{I⁢E}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}}§gt;0
+$$
+
+
+
+$$
+\lambda_{1}+\lambda_{2}=\tau_{E}^{-1}⁢(J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}-1)-\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})§lt;0
+$$
+
+Notably, the stability conditions depend on the firing rate of the excitatory population $r_{E}$ and the inhibitory population $r_{I}$. Since firing rates are input-dependent, the stability of supralinear networks is input-dependent. In contrast, in linear networks in which $\alpha_{E}=\alpha_{I}=1$, the conditions can be simplified to
+
+$$
+\lambda_{1}⁢\lambda_{2}=-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(J_{E⁢E}-1)⁢(1+J_{I⁢I})+\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢J_{E⁢I}⁢J_{I⁢E}§gt;0
+$$
+
+
+
+$$
+\lambda_{1}+\lambda_{2}=\tau_{E}^{-1}⁢(J_{E⁢E}-1)-\tau_{I}^{-1}⁢(1+J_{I⁢I})§lt;0
+$$
 
 and are thus input-independent.
 
-## ISN index for supralinear networks
+### ISN index for supralinear networks
 
-If an ensemble is unstable without feedback inhibition, then the ensemble is an ISN (Tsodyks et al., 1997). To determine whether a given system is an ISN, we analyzed the stability of the E-E subnetwork, which is determined by the real part of the leading eigenvalue of the Jacobian of the E-E subnetwork. In the following, we call this leading eigenvalue the ‘ISN index’, which is defined as follows:(14)ISN index=τE-1⁢(JE⁢E⁢αE⁢rEαE-1αE-1)
+If an ensemble is unstable without feedback inhibition, then the ensemble is an ISN (Tsodyks et al., 1997). To determine whether a given system is an ISN, we analyzed the stability of the E-E subnetwork, which is determined by the real part of the leading eigenvalue of the Jacobian of the E-E subnetwork. In the following, we call this leading eigenvalue the ‘ISN index’, which is defined as follows:
 
-A positive ISN index indicates the system is an ISN. Otherwise, the system is non-ISN. For supralinear networks in which αE§gt;1, the ISN index depends on the firing rates, inputs can therefore switch the network from non-ISN to ISN. In contrast, αE=1 for linear networks which renders the ISN index firing rate independent.
+$$
+ISN index=\tau_{E}^{-1}⁢(J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}-1)
+$$
 
-## Characteristic function
+A positive ISN index indicates the system is an ISN. Otherwise, the system is non-ISN. For supralinear networks in which $\alpha_{E}§gt;1$, the ISN index depends on the firing rates, inputs can therefore switch the network from non-ISN to ISN. In contrast, $\alpha_{E}=1$ for linear networks which renders the ISN index firing rate independent.
 
-To investigate how network stability changes with input, we trace the steps of Kraynyukova and Tchumatchenko, 2018 and define the characteristic function F⁢(z) as follows:(15)F(z)=JEE[z]+αE−JEI[det(J)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−z+gE
+### Characteristic function
 
-where(16)z=JE⁢E⁢rE-JE⁢I⁢rI+gE
+To investigate how network stability changes with input, we trace the steps of Kraynyukova and Tchumatchenko, 2018 and define the characteristic function $F⁢(z)$ as follows:
 
-is the current into the excitatory population. The characteristic function simplifies the original two-dimensional system to a one-dimensional system, and the zero crossings of F⁢(z) correspond to the fixed points of the original system. For z≥0, we note:(17)dF(z)dz=JEEαErEαE−1αE−JEIαI(det(J)⋅JEI−1αErEαE−1αE+JEI−1JII)rIαI−1αI−1=−τEτIλ1λ2
+$$
+F(z)=J_{EE}[z]_{+}^{\alpha_{E}}−J_{EI}[det(J)⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}}−z+g_{E}
+$$
 
-Therefore, if the derivative of F⁢(z) evaluated at one of its roots is positive, the corresponding fixed point is a saddle point. Note that as rE and rI increase, the term in parenthesis becomes dominant. To ensure that λ1⁢λ2 is negative also for large rE and rI, the determinant of the weight matrix det(J) has to be positive. Therefore, det(J) has a decisive impact on the curvature of F⁢(z). In systems with negative determinant, F⁢(z) bends upwards for large z. In contrast, F⁢(z) asymptotically bends downwards in systems with positive determinant. Hence, the high-activity steady-state of systems with negative determinant is unstable. In addition, we can simplify the above condition to the determinant of the weight matrix which is a necessary condition for network stability at any firing rate:(18)det(J)=−JEEJII+JIEJEI>0
+where
 
-To investigate how the network stability changes with input gE, we examined how F⁢(z) varies with changing input gE by calculating the derivative of F⁢(z) with respect to gE,(19)dF(z)dgE=αIJII[det(J)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−1+1
+$$
+z=J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}
+$$
 
-Since d⁢F⁢(z)d⁢gE is positive, increasing gE always shifts F⁢(z) upwards, eventually leading to the vanishing of all roots and, thus, unstable dynamics in supralinear networks with negative det(J). In scenarios in which feedforward input to the inhibitory population also changes, we have(20)dF(z)dt=∂F(z)∂gEdgEdt+∂F(z)∂gIdgIdt=(αIJII[det(J)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−1+1)ΔgE−αIJEI[det(J)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−1ΔgI
+is the current into the excitatory population. The characteristic function simplifies the original two-dimensional system to a one-dimensional system, and the zero crossings of $F⁢(z)$ correspond to the fixed points of the original system. For $z\geq0$, we note:
 
-When the change in stimulation strength into the excitatory (Δ⁢gE) and the inhibitory population (Δ⁢gI) are the same, d⁢F⁢(z)d⁢t is always positive provided JI⁢I is greater than JE⁢I. Hence, depending on the value of JI⁢IJE⁢I, stimulation can lead to unstable network dynamics even when the input to the inhibitory population increases more than to the excitatory population.
+$$
+\frac{dF(z)}{dz}=J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−J_{EI}\alpha_{I}(det(J)⋅J_{EI}^{−1}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}+J_{EI}^{−1}J_{II})r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}−1=−\tau_{E}\tau_{I}\lambda_{1}\lambda_{2}
+$$
 
-## Spike-frequency adaptation (SFA)
+Therefore, if the derivative of $F⁢(z)$ evaluated at one of its roots is positive, the corresponding fixed point is a saddle point. Note that as $r_{E}$ and $r_{I}$ increase, the term in parenthesis becomes dominant. To ensure that $\lambda_{1}⁢\lambda_{2}$ is negative also for large $r_{E}$ and $r_{I}$, the determinant of the weight matrix $det(J)$ has to be positive. Therefore, $det(J)$ has a decisive impact on the curvature of $F⁢(z)$. In systems with negative determinant, $F⁢(z)$ bends upwards for large $z$. In contrast, $F⁢(z)$ asymptotically bends downwards in systems with positive determinant. Hence, the high-activity steady-state of systems with negative determinant is unstable. In addition, we can simplify the above condition to the determinant of the weight matrix which is a necessary condition for network stability at any firing rate:
 
-We modeled SFA of excitatory neurons as an activity-dependent negative feedback current (Benda and Herz, 2003; Brette and Gerstner, 2005):(21)τE⁢d⁢rEd⁢t=-rE+[JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE-a(22)τI⁢d⁢rId⁢t=-rI+[JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI(23)τa⁢d⁢ad⁢t=-a+b⁢rE
+$$
+det(J)=−J_{EE}J_{II}+J_{IE}J_{EI}>0
+$$
 
-where a is the adaptation variable, τa is the adaptation time constant, and b is the adaptation strength.
+To investigate how the network stability changes with input $g_{E}$, we examined how $F⁢(z)$ varies with changing input $g_{E}$ by calculating the derivative of $F⁢(z)$ with respect to $g_{E}$,
 
-## Stability conditions in networks with SFA
+$$
+\frac{dF(z)}{dg_{E}}=\alpha_{I}J_{II}[det(J)⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}−1}+1
+$$
 
-The Jacobian MSFA of the system with SFA is given by(24)MSFA=[τE−1(JEEαErEαE−1αE−1)−τE−1JEIαErEαE−1αE−τE−1τI−1JIEαIrIαI−1αI−τI−1(1+JIIαIrIαI−1αI)0τa−1b0−τa−1]
+Since $\frac{d⁢F⁢(z)}{d⁢g_{E}}$ is positive, increasing $g_{E}$ always shifts $F⁢(z)$ upwards, eventually leading to the vanishing of all roots and, thus, unstable dynamics in supralinear networks with negative $det(J)$. In scenarios in which feedforward input to the inhibitory population also changes, we have
 
-The characteristic polynomial of the system with SFA can be written as follows (Horn and Johnson, 1985):(25)λ3−tr(MSFA)λ2+(A11+A22+A33)λ−det(MSFA)=0
+$$
+\frac{dF(z)}{dt}=\frac{∂F(z)}{∂g_{E}}\frac{dg_{E}}{dt}+\frac{∂F(z)}{∂g_{I}}\frac{dg_{I}}{dt}=(\alpha_{I}J_{II}[det(J)⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}−1}+1)Δg_{E}−\alpha_{I}J_{EI}[det(J)⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}−1}Δg_{I}
+$$
 
-where tr(MSFA) and det(MSFA) are the trace and the determinant of the Jacobian matrix MSFA, A11, A22, and A33 are the matrix cofactors. More specifically,(26)tr(MSFA)=τE−1(JEEαErEαE−1αE−1)−τI−1(1+JIIαIrIαI−1αI)−τa−1(27)A11=|-τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)00-τa-1|=τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)⁢τa-1(28)A22=|τE-1⁢(JE⁢E⁢αE⁢rEαE-1αE-1)-τE-1τa-1⁢b-τa-1|=-τE-1⁢(JE⁢E⁢αE⁢rEαE-1αE-1)⁢τa-1+τa-1⁢b⁢τE-1(29)A33=|τE−1(JEEαErEαE−1αE−1)−τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI−τI−1(1+JIIαIrIαI−1αI)|=−τE−1(JEEαErEαE−1αE−1)τI−1(1+JIIαIrIαI−1αI)+τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI(30)A11+A22+A33=τI−1(1+JIIαIrIαI−1αI)τa−1−τE−1(JEEαErEαE−1αE−1)τa−1+τa−1bτE−1−τE−1(JEEαErEαE−1αE−1)τI−1(1+JIIαIrIαI−1αI)+τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI(31)det(MSFA)=τE−1(JEEαErEαE−1αE−1)τI−1(1+JIIαIrIαI−1αI)τa−1−τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αIτa−1−τa−1bτE−1τI−1(1+JIIαIrIαI−1αI)
+When the change in stimulation strength into the excitatory ($Δ⁢g_{E}$) and the inhibitory population ($Δ⁢g_{I}$) are the same, $\frac{d⁢F⁢(z)}{d⁢t}$ is always positive provided $J_{I⁢I}$ is greater than $J_{E⁢I}$. Hence, depending on the value of $\frac{J_{I⁢I}}{J_{E⁢I}}$, stimulation can lead to unstable network dynamics even when the input to the inhibitory population increases more than to the excitatory population.
 
-To ensure that the dynamics of the system are stable, the real parts of the eigenvalues of the Jacobian at the fixed point, and thus all roots of the characteristic polynomial have to be negative. Since the product of the roots is equal to det(MSFA), −det(MSFA) has to be positive. We then have(32)b>αErEαE−1αE(JEE−det(J)⋅αIrIαI−1αI)1+JIIαIrIαI−1αI−1
+### Spike-frequency adaptation (SFA)
 
-Since SFA does not modify the synaptic connections, the term JEE−det(J)⋅αIrIαI−1αI is positive for networks with det(J)<0.
+We modeled SFA of excitatory neurons as an activity-dependent negative feedback current (Benda and Herz, 2003; Brette and Gerstner, 2005):
 
-In the large rE limit, if b is small such that the above condition cannot be fulfilled, det(MSFA) is then positive, suggesting that the Jacobian of the system has always at least one positive eigenvalue. Therefore, the dynamics of the system cannot be stabilized in the presence of small b.
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}}-a
+$$
 
-In addition, A11+A22+A33 is equal to λ1⁢λ2+λ2⁢λ3+λ1⁢λ3, with the roots of the characteristic polynomial λ1, λ2, and λ3. If all roots are real and negative, A11+A22+A33 has to be positive. If one root is real and negative and two other roots are complex conjugates, to ensure that all roots have negative real parts, one necessary condition is A11+A22+A33§gt;0. From the tr(MSFA) and det(MSFA) conditions, we have(33)A11+A22+A33§gt;τa-1⁢(-τa-1+b⁢τE-1)-b⁢τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)
 
-As a result, if τa-1⁢(-τa-1+b⁢τE-1)-b⁢τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)§gt;0, A11+A22+A33 is guaranteed to be positive. We therefore have(34)b⁢[τa-1⁢τE-1-τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)]§gt;τa-2
 
-Note that τa has to be small, in other words, SFA has to be fast, so that τa-1⁢τE-1-τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI) is positive for arbitrary rI. For positive τa-1⁢τE-1-τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI), we have(35)b§gt;τa-2τa-1⁢τE-1-τE-1⁢τI-1⁢(1+JI⁢I⁢αI⁢rIαI-1αI)
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}}
+$$
 
-Since τa has to be small, the above condition cannot be satisfied for small b.
 
-Next, we consider the system with large b. Suppose that the firing rate rE and rI in the initial network are of order 1, and b is of order K, where K is a large number. We therefore have −tr(MSFA)∼O(1), A11+A22+A33∼O⁢(K), and −det(MSFA)∼O(K). The discriminant of the characteristic polynomial is(36)(−tr(MSFA))2(A11+A22+A33)2−4(A11+A22+A33)3−4(−tr(MSFA))3(−det(MSFA))−27(−det(MSFA))2+18(−tr(MSFA))(A11+A22+A33)(−det(MSFA))=(A11+A22+A33)3[(−tr(MSFA))2A11+A22+A33−4−4(−tr(MSFA))3(−det(MSFA))(A11+A22+A33)3−27(−det(MSFA))2(A11+A22+A33)3+18(−tr(MSFA))(−det(MSFA))(A11+A22+A33)2]
 
-Clearly, in the large b limit, the discriminant is negative, suggesting that the characteristic polynomial has one real root and two complex conjugate roots (Irving, 2004).
+$$
+\tau_{a}⁢\frac{d⁢a}{d⁢t}=-a+b⁢r_{E}
+$$
 
-As the input gE increases, the complex conjugate eigenvalues cross the imaginary axis when tr(MSFA)(A11+A22+A33) equals det(MSFA). As a result, the system undergoes a supercritical Hopf bifurcation. We numerically confirmed that the resulting limit cycle is stable (Figure 2—figure supplement 1), consistent with previous work (van Vreeswijk and Hansel, 2001). Thus, the system shows oscillatory behavior instead of stable steady state.
+where $a$ is the adaptation variable, $\tau_{a}$ is the adaptation time constant, and $b$ is the adaptation strength.
 
-## Short-term plasticity (STP)
+#### Stability conditions in networks with SFA
 
-We modeled E-to-E STD following previous work (Tsodyks and Markram, 1997; Varela et al., 1997):(37)τE⁢d⁢rEd⁢t=-rE+[x⁢JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE(38)τI⁢d⁢rId⁢t=-rI+[JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI(39)d⁢xd⁢t=1-xτx-Ud⁢x⁢rE
+The Jacobian $M_{SFA}$ of the system with SFA is given by
 
-where x is the depression variable, which is limited to the interval (0,1), τx is the depression time constant, and Ud is the depression rate. The steady-state solution x* is given by(40)x*=11+Ud⁢rE⁢τx
+$$
+M_{SFA}=[\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−\tau_{E}^{−1}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}−\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})0\tau_{a}^{−1}b0−\tau_{a}^{−1}]
+$$
 
-Similarly, we modeled E-to-I STF as(41)τE⁢d⁢rEd⁢t=-rE+[JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE(42)τI⁢d⁢rId⁢t=-rI+[u⁢JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI(43)d⁢ud⁢t=1-uτu+Uf⁢(Um⁢a⁢x-u)⁢rE
+The characteristic polynomial of the system with SFA can be written as follows (Horn and Johnson, 1985):
 
-where u is the facilitation variable constrained to the interval (1,Umax) , Um⁢a⁢x is the maximal facilitation value, τu is the time constant of STF, and Uf is the facilitation rate. The steady-state solution u* is given by(44)u*=1+Uf⁢Um⁢a⁢x⁢rE⁢τu1+Uf⁢rE⁢τu
+$$
+\lambda^{3}−tr(M_{SFA})\lambda^{2}+(A_{11}+A_{22}+A_{33})\lambda−det(M_{SFA})=0
+$$
 
-## Stability conditions for networks with E-to-E STD
+where $tr(M_{SFA})$ and $det(M_{SFA})$ are the trace and the determinant of the Jacobian matrix $M_{SFA}$, A11, A22, and A33 are the matrix cofactors. More specifically,
 
-The Jacobian MSTD of the system with E-to-E STD is given by(45)MSTD=[τE−1(xJEEαErEαE−1αE−1)−τE−1JEIαErEαE−1αEτE−1JEEαErE2αE−1αEτI−1JIEαIrIαI−1αI −τI−1(1+JIIαIrIαI−1αI)0−Udx0−τx−1−UdrE]
+$$
+tr(M_{SFA})=\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})−\tau_{a}^{−1}
+$$
 
-and the characteristic polynomial can be written as follows:(46)λ3−tr(MSTD)λ2+(A11+A22+A33)λ−det(MSTD)=0
 
-where tr(MSTD) and det(MSTD) are the trace and the determinant of the Jacobian matrix MSTD, A11, A22, and A33 are the matrix cofactors. More specifically,(47)tr(MSTD)=τE−1(xJEEαErEαE−1αE−1)−τI−1(1+JIIαIrIαI−1αI)−τx−1−UdrE
 
-In the case of unstable dynamics, rE goes to infinity due to run-away excitation. However, the depression variable x approaches zero in this limit, as limrE→∞⁡x=limrE→∞⁡11+Ud⁢rE⁢τx=0. Therefore, in the large rE limit, −tr(MSTD) is positive.(48)A11+A22+A33=τI−1(1+JIIαIrIαI−1αI)(τx−1+UdrE)+τE−1(xJEEαErEαE−1αE−1)(−τx−1−UdrE)−τE−1JEEαErE2αE−1αE(−Udx)−τE−1(xJEEαErEαE−1αE−1)τI−1(1+JIIαIrIαI−1αI)+τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI
+$$
+A_{11}=|-\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})00-\tau_{a}^{-1}|=\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})⁢\tau_{a}^{-1}
+$$
 
-Similarly, in the large rE limit, A11+A22+A33 is positive.(49)det(MSTD)=τE−1(xJEEαErEαE−1αE−1)τI−1(1+JIIαIrIαI−1αI)(τx−1+UdrE)−τE−1JEIαErEαE−1αEτI−1JIEαIrIαI−1αI(τx−1+UdrE)−τE−1JEEαErE2αE−1αEUdxτI−1(1+JIIαIrIαI−1αI)
 
-Similarly, in the large rE limit, −det(MSTD) is positive.
+
+$$
+A_{22}=|\tau_{E}^{-1}⁢(J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}-1)-\tau_{E}^{-1}\tau_{a}^{-1}⁢b-\tau_{a}^{-1}|=-\tau_{E}^{-1}⁢(J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}-1)⁢\tau_{a}^{-1}+\tau_{a}^{-1}⁢b⁢\tau_{E}^{-1}
+$$
+
+
+
+$$
+A_{33}=|\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}−\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})|=−\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})+\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}
+$$
+
+
+
+$$
+A_{11}+A_{22}+A_{33}=\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})\tau_{a}^{−1}−\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{a}^{−1}+\tau_{a}^{−1}b\tau_{E}^{−1}−\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})+\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}
+$$
+
+
+
+$$
+det(M_{SFA})=\tau_{E}^{−1}(J_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})\tau_{a}^{−1}−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}\tau_{a}^{−1}−\tau_{a}^{−1}b\tau_{E}^{−1}\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})
+$$
+
+To ensure that the dynamics of the system are stable, the real parts of the eigenvalues of the Jacobian at the fixed point, and thus all roots of the characteristic polynomial have to be negative. Since the product of the roots is equal to $det(M_{SFA})$, $−det(M_{SFA})$ has to be positive. We then have
+
+$$
+b>\frac{\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}(J_{EE}−det(J)⋅\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})}{1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}}−1
+$$
+
+Since SFA does not modify the synaptic connections, the term $J_{EE}−det(J)⋅\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}$ is positive for networks with $det(J)<0$.
+
+In the large $r_{E}$ limit, if $b$ is small such that the above condition cannot be fulfilled, $det(M_{SFA})$ is then positive, suggesting that the Jacobian of the system has always at least one positive eigenvalue. Therefore, the dynamics of the system cannot be stabilized in the presence of small $b$.
+
+In addition, $A_{11}+A_{22}+A_{33}$ is equal to $\lambda_{1}⁢\lambda_{2}+\lambda_{2}⁢\lambda_{3}+\lambda_{1}⁢\lambda_{3}$, with the roots of the characteristic polynomial $\lambda_{1}$, $\lambda_{2}$, and $\lambda_{3}$. If all roots are real and negative, $A_{11}+A_{22}+A_{33}$ has to be positive. If one root is real and negative and two other roots are complex conjugates, to ensure that all roots have negative real parts, one necessary condition is $A_{11}+A_{22}+A_{33}§gt;0$. From the $tr(M_{SFA})$ and $det(M_{SFA})$ conditions, we have
+
+$$
+A_{11}+A_{22}+A_{33}§gt;\tau_{a}^{-1}⁢(-\tau_{a}^{-1}+b⁢\tau_{E}^{-1})-b⁢\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})
+$$
+
+As a result, if $\tau_{a}^{-1}⁢(-\tau_{a}^{-1}+b⁢\tau_{E}^{-1})-b⁢\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})§gt;0$, $A_{11}+A_{22}+A_{33}$ is guaranteed to be positive. We therefore have
+
+$$
+b⁢[\tau_{a}^{-1}⁢\tau_{E}^{-1}-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})]§gt;\tau_{a}^{-2}
+$$
+
+Note that $\tau_{a}$ has to be small, in other words, SFA has to be fast, so that $\tau_{a}^{-1}⁢\tau_{E}^{-1}-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})$ is positive for arbitrary $r_{I}$. For positive $\tau_{a}^{-1}⁢\tau_{E}^{-1}-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})$, we have
+
+$$
+b§gt;\frac{\tau_{a}^{-2}}{\tau_{a}^{-1}⁢\tau_{E}^{-1}-\tau_{E}^{-1}⁢\tau_{I}^{-1}⁢(1+J_{I⁢I}⁢\alpha_{I}⁢r_{I}^{\frac{\alpha_{I}-1}{\alpha_{I}}})}
+$$
+
+Since $\tau_{a}$ has to be small, the above condition cannot be satisfied for small $b$.
+
+Next, we consider the system with large $b$. Suppose that the firing rate $r_{E}$ and $r_{I}$ in the initial network are of order 1, and $b$ is of order $K$, where $K$ is a large number. We therefore have $−tr(M_{SFA})∼O(1)$, $A_{11}+A_{22}+A_{33}∼O⁢(K)$, and $−det(M_{SFA})∼O(K)$. The discriminant of the characteristic polynomial is
+
+$$
+(−tr(M_{SFA}))^{2}(A_{11}+A_{22}+A_{33})^{2}−4(A_{11}+A_{22}+A_{33})^{3}−4(−tr(M_{SFA}))^{3}(−det(M_{SFA}))−27(−det(M_{SFA}))^{2}+18(−tr(M_{SFA}))(A_{11}+A_{22}+A_{33})(−det(M_{SFA}))=(A_{11}+A_{22}+A_{33})^{3}[\frac{(−tr(M_{SFA}))^{2}}{A_{11}+A_{22}+A_{33}}−4−\frac{4(−tr(M_{SFA}))^{3}(−det(M_{SFA}))}{(A_{11}+A_{22}+A_{33})^{3}}−\frac{27(−det(M_{SFA}))^{2}}{(A_{11}+A_{22}+A_{33})^{3}}+\frac{18(−tr(M_{SFA}))(−det(M_{SFA}))}{(A_{11}+A_{22}+A_{33})^{2}}]
+$$
+
+Clearly, in the large $b$ limit, the discriminant is negative, suggesting that the characteristic polynomial has one real root and two complex conjugate roots (Irving, 2004).
+
+As the input $g_{E}$ increases, the complex conjugate eigenvalues cross the imaginary axis when $tr(M_{SFA})(A_{11}+A_{22}+A_{33})$ equals $det(M_{SFA})$. As a result, the system undergoes a supercritical Hopf bifurcation. We numerically confirmed that the resulting limit cycle is stable (Figure 2—figure supplement 1), consistent with previous work (van Vreeswijk and Hansel, 2001). Thus, the system shows oscillatory behavior instead of stable steady state.
+
+### Short-term plasticity (STP)
+
+We modeled E-to-E STD following previous work (Tsodyks and Markram, 1997; Varela et al., 1997):
+
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[x⁢J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}}
+$$
+
+
+
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}}
+$$
+
+
+
+$$
+\frac{d⁢x}{d⁢t}=\frac{1-x}{\tau_{x}}-U_{d}⁢x⁢r_{E}
+$$
+
+where $x$ is the depression variable, which is limited to the interval $(0,1)$, $\tau_{x}$ is the depression time constant, and $U_{d}$ is the depression rate. The steady-state solution $x^{*}$ is given by
+
+$$
+x^{*}=\frac{1}{1+U_{d}⁢r_{E}⁢\tau_{x}}
+$$
+
+Similarly, we modeled E-to-I STF as
+
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}}
+$$
+
+
+
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[u⁢J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}}
+$$
+
+
+
+$$
+\frac{d⁢u}{d⁢t}=\frac{1-u}{\tau_{u}}+U_{f}⁢(U_{m⁢a⁢x}-u)⁢r_{E}
+$$
+
+where $u$ is the facilitation variable constrained to the interval $(1,U_{max})$ , $U_{m⁢a⁢x}$ is the maximal facilitation value, $\tau_{u}$ is the time constant of STF, and $U_{f}$ is the facilitation rate. The steady-state solution $u^{*}$ is given by
+
+$$
+u^{*}=\frac{1+U_{f}⁢U_{m⁢a⁢x}⁢r_{E}⁢\tau_{u}}{1+U_{f}⁢r_{E}⁢\tau_{u}}
+$$
+
+#### Stability conditions for networks with E-to-E STD
+
+The Jacobian $M_{STD}$ of the system with E-to-E STD is given by
+
+$$
+M_{STD}=[\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}} −\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})0−U_{d}x0−\tau_{x}^{−1}−U_{d}r_{E}]
+$$
+
+and the characteristic polynomial can be written as follows:
+
+$$
+\lambda^{3}−tr(M_{STD})\lambda^{2}+(A_{11}+A_{22}+A_{33})\lambda−det(M_{STD})=0
+$$
+
+where $tr(M_{STD})$ and $det(M_{STD})$ are the trace and the determinant of the Jacobian matrix $M_{STD}$, A11, A22, and A33 are the matrix cofactors. More specifically,
+
+$$
+tr(M_{STD})=\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})−\tau_{x}^{−1}−U_{d}r_{E}
+$$
+
+In the case of unstable dynamics, $r_{E}$ goes to infinity due to run-away excitation. However, the depression variable $x$ approaches zero in this limit, as $lim_{r_{E}→∞}⁡x=lim_{r_{E}→∞}⁡\frac{1}{1+U_{d}⁢r_{E}⁢\tau_{x}}=0$. Therefore, in the large $r_{E}$ limit, $−tr(M_{STD})$ is positive.
+
+$$
+A_{11}+A_{22}+A_{33}=\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})(\tau_{x}^{−1}+U_{d}r_{E})+\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)(−\tau_{x}^{−1}−U_{d}r_{E})−\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}(−U_{d}x)−\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})+\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}
+$$
+
+Similarly, in the large $r_{E}$ limit, $A_{11}+A_{22}+A_{33}$ is positive.
+
+$$
+det(M_{STD})=\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})(\tau_{x}^{−1}+U_{d}r_{E})−\tau_{E}^{−1}J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}\tau_{I}^{−1}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}(\tau_{x}^{−1}+U_{d}r_{E})−\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}U_{d}x\tau_{I}^{−1}(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})
+$$
+
+Similarly, in the large $r_{E}$ limit, $−det(M_{STD})$ is positive.
 
 According to the Descartes’ rule of signs, the number of positive roots is at most the number of sign changes in the sequences of polynomial’s coefficients. Therefore, there are no positive roots for the above characteristic polynomial and the network dynamics can be stabilized by E-to-E STD.
 
-## Characteristic function approximation for networks with E-to-E STD
+#### Characteristic function approximation for networks with E-to-E STD
 
-As demonstrated above, E-to-E STD is able to restabilize the system, there exists a stable steady state for which the STD variable x is constant x=x*. Because x changes slowly compared to the neuronal dynamics, we can approximate it as constant which results in a natural reduction to a 2D system in which the weights with STD are modified. The stability of this 2D system can be readily characterized by the characteristic function F⁢(z) (Kraynyukova and Tchumatchenko, 2018), which depends on the previous steady state value of x. The characteristic function approximation with E-to-E STD can therefore be written as follows:(50)F(z)=xJEE[z]+αE−JEI[det(JSTD)⋅JEI−1[z]+αE+JEI−1JIIz−JEI−1JIIgE+gI]+αI−z+gE
+As demonstrated above, E-to-E STD is able to restabilize the system, there exists a stable steady state for which the STD variable $x$ is constant $x=x^{*}$. Because $x$ changes slowly compared to the neuronal dynamics, we can approximate it as constant which results in a natural reduction to a 2D system in which the weights with STD are modified. The stability of this 2D system can be readily characterized by the characteristic function $F⁢(z)$ (Kraynyukova and Tchumatchenko, 2018), which depends on the previous steady state value of $x$. The characteristic function approximation with E-to-E STD can therefore be written as follows:
 
-where(51)det(JSTD)=|xJEE−JEIJIE−JII|=−xJEEJII+JIEJEI
+$$
+F(z)=xJ_{EE}[z]_{+}^{\alpha_{E}}−J_{EI}[det(J_{STD})⋅J_{EI}^{−1}[z]_{+}^{\alpha_{E}}+J_{EI}^{−1}J_{II}z−J_{EI}^{−1}J_{II}g_{E}+g_{I}]_{+}^{\alpha_{I}}−z+g_{E}
+$$
 
-Note that det(JSTD) can now change its sign due to E-to-E STD, the characteristic function can therefore change its bending shape. We used this relation to visualize how E-to-E STD effectively changes the network stability of the reduced system in Figure 2D.
+where
 
-## Conditions for ISN in networks with E-to-E STD
+$$
+det(J_{STD})=|xJ_{EE}−J_{EI}J_{IE}−J_{II}|=−xJ_{EE}J_{II}+J_{IE}J_{EI}
+$$
 
-Here, we identify the condition of being in the ISN regime in supralinear networks with E-to-E STD. When the level of inhibition is frozen, the Jacobian of the system reduces to the following:(52)M1=[τE−1(xJEEαErEαE−1αE−1)τE−1JEEαErE2αE−1αE−Udx−τx−1−UdrE]
+Note that $det(J_{STD})$ can now change its sign due to E-to-E STD, the characteristic function can therefore change its bending shape. We used this relation to visualize how E-to-E STD effectively changes the network stability of the reduced system in Figure 2D.
 
-For the system with frozen inhibition, the dynamics are stable if(53)tr(M1)=τE−1(xJEEαErEαE−1αE−1)−τx−1−UdrE<0
+#### Conditions for ISN in networks with E-to-E STD
 
-and(54)det(M1)=τE−1(xJEEαErEαE−1αE−1)(−τx−1−UdrE)+τE−1JEEαErE2αE−1αEUdx>0
+Here, we identify the condition of being in the ISN regime in supralinear networks with E-to-E STD. When the level of inhibition is frozen, the Jacobian of the system reduces to the following:
 
-Therefore, if the network is an ISN at the fixed point, the following condition has to be satisfied:(55)x§gt;min⁢(1JE⁢E⁢αE⁢rEαE-1αE,τx+τE+τE⁢τx⁢Ud⁢rEτx⁢JE⁢E⁢αE⁢rEαE-1αE)
+$$
+M_{1}=[\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}−U_{d}x−\tau_{x}^{−1}−U_{d}r_{E}]
+$$
 
-Furthermore, we define the largest real part of the eigenvalues of M1 as the ISN index for networks with E-to-E STD. More specifically,(56)ISN index=Re[τE−1(xJEEαErEαE−1αE−1)−τx−1−UdrE2+14(τE−1(xJEEαErEαE−1αE−1)+τx−1+UdrE)2−τE−1JEEαErE2αE−1αEUdx]
+For the system with frozen inhibition, the dynamics are stable if
 
-## Conditions for paradoxical response in networks with E-to-E STD
+$$
+tr(M_{1})=\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{x}^{−1}−U_{d}r_{E}<0
+$$
 
-Next, we identify the condition of having the paradoxical effect in supralinear networks with E-to-E STD. To that end, we exploit a separation of timescales between the fast neural activity and the slow STP variable. Therefore, set the depression variable to its value at the fixed point corresponding to the fixed point value of rE. The excitatory nullcline is defined as follows(57)τE⁢d⁢rEd⁢t=-rE+[11+τx⁢Ud⁢rE⁢JE⁢E⁢rE-JE⁢I⁢rI+gE]+αE=0
+and
 
-For rE,I§gt;0, we have(58)rI=11+τx⁢Ud⁢rE⁢JE⁢E⁢rE-rE1αE+gEJE⁢I
+$$
+det(M_{1})=\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)(−\tau_{x}^{−1}−U_{d}r_{E})+\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}U_{d}x>0
+$$
 
-The slope of the excitatory nullcline in the rE/rI plane where x axis is rE and y axis is rI can be written as follows(59)kS⁢T⁢DE=1JE⁢I⁢(-JE⁢E(1+τx⁢Ud⁢rE)2⁢τx⁢Ud⁢rE+JE⁢E1+τx⁢Ud⁢rE-1αE⁢rE1αE-1)
+Therefore, if the network is an ISN at the fixed point, the following condition has to be satisfied:
 
-Note that the slope of the excitatory nullcline is nonlinear. To have paradoxical effect, the slope of the excitatory nullcline at the fixed point of the system has to be positive. Therefore, the STD variable x at the fixed point has to satisfy the following condition(60)x§gt;1JE⁢E⁢αE⁢rEαE-1αE
+$$
+x§gt;min⁢(\sqrt{\frac{1}{J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}}},\frac{\tau_{x}+\tau_{E}+\tau_{E}⁢\tau_{x}⁢U_{d}⁢r_{E}}{\tau_{x}⁢J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}})
+$$
 
-The inhibitory nullcline can be written as follows(61)τI⁢d⁢rId⁢t=-rI+[JI⁢E⁢rE-JI⁢I⁢rI+gI]+αI=0
+Furthermore, we define the largest real part of the eigenvalues of $M_{1}$ as the ISN index for networks with E-to-E STD. More specifically,
 
-In the region of rates rE,I§gt;0, we have(62)rI=JI⁢E⁢rE-rI1αI+gIJI⁢I
+$$
+ISN index=Re[\frac{\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)−\tau_{x}^{−1}−U_{d}r_{E}}{2}+\sqrt{\frac{1}{4}(\tau_{E}^{−1}(xJ_{EE}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}−1)+\tau_{x}^{−1}+U_{d}r_{E})^{2}−\tau_{E}^{−1}J_{EE}\alpha_{E}r_{E}^{\frac{2\alpha_{E}−1}{\alpha_{E}}}U_{d}x}]
+$$
 
-The slope of the inhibitory nullcline can be written as follows(63)kS⁢T⁢DI=JI⁢EJI⁢I+1αI⁢rI1-αIαI
+#### Conditions for paradoxical response in networks with E-to-E STD
 
-In addition to the positive slope of the excitatory nullcline, the slope of the inhibitory nullcline at the fixed point of the system has to be larger than the slope of the excitatory nullcline. We therefore have(64)JEIαErEαE−1αEJIEαIrIαI−1αI(τx−1+UdrE)>(1+JIIαIrIαI−1αI)(−JEEUdrE1+τxUdrEαErEαE−1αE+JEE1+τxUdrEαErEαE−1αE(τx−1+UdrE)−(τx−1+UdrE))
+Next, we identify the condition of having the paradoxical effect in supralinear networks with E-to-E STD. To that end, we exploit a separation of timescales between the fast neural activity and the slow STP variable. Therefore, set the depression variable to its value at the fixed point corresponding to the fixed point value of $r_{E}$. The excitatory nullcline is defined as follows
+
+$$
+\tau_{E}⁢\frac{d⁢r_{E}}{d⁢t}=-r_{E}+[\frac{1}{1+\tau_{x}⁢U_{d}⁢r_{E}}⁢J_{E⁢E}⁢r_{E}-J_{E⁢I}⁢r_{I}+g_{E}]_{+}^{\alpha_{E}}=0
+$$
+
+For $r_{E,I}§gt;0$, we have
+
+$$
+r_{I}=\frac{\frac{1}{1+\tau_{x}⁢U_{d}⁢r_{E}}⁢J_{E⁢E}⁢r_{E}-r_{E}^{\frac{1}{\alpha_{E}}}+g_{E}}{J_{E⁢I}}
+$$
+
+The slope of the excitatory nullcline in the $r_{E}/r_{I}$ plane where $x$ axis is $r_{E}$ and $y$ axis is $r_{I}$ can be written as follows
+
+$$
+k_{S⁢T⁢D}^{E}=\frac{1}{J_{E⁢I}}⁢(-\frac{J_{E⁢E}}{(1+\tau_{x}⁢U_{d}⁢r_{E})^{2}}⁢\tau_{x}⁢U_{d}⁢r_{E}+\frac{J_{E⁢E}}{1+\tau_{x}⁢U_{d}⁢r_{E}}-\frac{1}{\alpha_{E}}⁢r_{E}^{\frac{1}{\alpha_{E}}-1})
+$$
+
+Note that the slope of the excitatory nullcline is nonlinear. To have paradoxical effect, the slope of the excitatory nullcline at the fixed point of the system has to be positive. Therefore, the STD variable $x$ at the fixed point has to satisfy the following condition
+
+$$
+x§gt;\sqrt{\frac{1}{J_{E⁢E}⁢\alpha_{E}⁢r_{E}^{\frac{\alpha_{E}-1}{\alpha_{E}}}}}
+$$
+
+The inhibitory nullcline can be written as follows
+
+$$
+\tau_{I}⁢\frac{d⁢r_{I}}{d⁢t}=-r_{I}+[J_{I⁢E}⁢r_{E}-J_{I⁢I}⁢r_{I}+g_{I}]_{+}^{\alpha_{I}}=0
+$$
+
+In the region of rates $r_{E,I}§gt;0$, we have
+
+$$
+r_{I}=\frac{J_{I⁢E}⁢r_{E}-r_{I}^{\frac{1}{\alpha_{I}}}+g_{I}}{J_{I⁢I}}
+$$
+
+The slope of the inhibitory nullcline can be written as follows
+
+$$
+k_{S⁢T⁢D}^{I}=\frac{J_{I⁢E}}{J_{I⁢I}+\frac{1}{\alpha_{I}}⁢r_{I}^{\frac{1-\alpha_{I}}{\alpha_{I}}}}
+$$
+
+In addition to the positive slope of the excitatory nullcline, the slope of the inhibitory nullcline at the fixed point of the system has to be larger than the slope of the excitatory nullcline. We therefore have
+
+$$
+J_{EI}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}J_{IE}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}}(\tau_{x}^{−1}+U_{d}r_{E})>(1+J_{II}\alpha_{I}r_{I}^{\frac{\alpha_{I}−1}{\alpha_{I}}})(−\frac{J_{EE}U_{d}r_{E}}{1+\tau_{x}U_{d}r_{E}}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}+\frac{J_{EE}}{1+\tau_{x}U_{d}r_{E}}\alpha_{E}r_{E}^{\frac{\alpha_{E}−1}{\alpha_{E}}}(\tau_{x}^{−1}+U_{d}r_{E})−(\tau_{x}^{−1}+U_{d}r_{E}))
+$$
 
 The above condition is the same as the stability condition of the determinant of the Jacobian of the system with E-to-E STD (Eq. (49)). Therefore, the condition is always satisfied when the system with E-to-E STD is stable.
 
-Based on the condition of being ISN shown in Eq. (55) and the condition of having paradoxical effect shown in Eq. (60), we therefore can conclude that in supralinear networks with E-to-E STD, the paradoxical effect implies inhibitory stabilization, whereas inhibitory stabilization does not necessarily imply paradoxical responses. This is consistent with recent work by Sanzeni et al., 2020, in which threshold-linear networks with STP have been studied. Here, we showed analytically that the conclusion holds for any rectified power-law activation function with positive α.
+Based on the condition of being ISN shown in Eq. (55) and the condition of having paradoxical effect shown in Eq. (60), we therefore can conclude that in supralinear networks with E-to-E STD, the paradoxical effect implies inhibitory stabilization, whereas inhibitory stabilization does not necessarily imply paradoxical responses. This is consistent with recent work by Sanzeni et al., 2020, in which threshold-linear networks with STP have been studied. Here, we showed analytically that the conclusion holds for any rectified power-law activation function with positive $\alpha$.
 
-To visualize the conditions in a two-dimensional plane, we reduced the conditions into a function of JE⁢E and x. For Figure 2G, rE=1. In Figure 2—figure supplement 5 and Figure 2—figure supplement 8, the depression variable thresholds above which the network exhibits the paradoxical effect were calculated based on Eq. (60).
+To visualize the conditions in a two-dimensional plane, we reduced the conditions into a function of $J_{E⁢E}$ and $x$. For Figure 2G, $r_{E}=1$. In Figure 2—figure supplement 5 and Figure 2—figure supplement 8, the depression variable thresholds above which the network exhibits the paradoxical effect were calculated based on Eq. (60).
 
-## Uni-stability conditions
+### Uni-stability conditions
 
-The system is said to be ‘uni-stable’, when it has a single stable fixed point. We first identified the uni-stability condition for networks with global inhibition. To that end, we considered a general network with N excitatory populations and N inhibitory populations. To treat this problem analytically, we did not take STP into account in our analysis. The Jacobian matrix of networks with global inhibition Q, can be written as follows,(65)Q=[JE←EJE←IJI←EJI←I]
+The system is said to be ‘uni-stable’, when it has a single stable fixed point. We first identified the uni-stability condition for networks with global inhibition. To that end, we considered a general network with $N$ excitatory populations and $N$ inhibitory populations. To treat this problem analytically, we did not take STP into account in our analysis. The Jacobian matrix of networks with global inhibition $Q$, can be written as follows,
 
-where JE←E, JE←I, JI←E, and JI←I are N by N block matrices defined below.(66)JE←E=[a−eka⋯kakaa−e⋯ka⋮⋮⋱⋮kaka⋯a−e](67)JE←I=−bJN,N(68)JI←E=cJN,N(69)JI←I=[−d−f−d⋯−d−d−d−f⋯−d⋮⋮⋱⋮−d−d⋯−d−f]
+$$
+Q=[J_{E←E}J_{E←I}J_{I←E}J_{I←I}]
+$$
 
-where a=τE-1⁢JE⁢E⁢αE⁢[zE]+αE-1, b=τE-1⁢JE⁢I⁢αE⁢[zE]+αE-1, c=τI-1⁢JI⁢E⁢αI⁢[zI]+αI-1, d=τI-1⁢JI⁢I⁢αI⁢[zI]+αI-1, e=τE-1, and f=τI-1. Here, zE and zI denote the total current into the excitatory and inhibitory population, respectively. Note that all these parameters are non-negative. Parameter k controls the excitatory connection strength across different populations. JN,N is a N by N matrix of ones.
+where $J_{E←E}$, $J_{E←I}$, $J_{I←E}$, and $J_{I←I}$ are $N$ by $N$ block matrices defined below.
 
-The eigenvalues of the Jacobian Q are roots of its characteristic polynomial,(70)det((JE←E−λ1)(JI←I−λ1)−JE←IJI←E)=0
+$$
+J_{E←E}=[a−eka⋯kakaa−e⋯ka⋮⋮⋱⋮kaka⋯a−e]
+$$
 
-where 1 represents the identity matrix of size N. The characteristic polynomial can be expanded to:(71)[(a-e-k⁢a-λ)⁢(-f-λ)]N-1⁢[(a-e+(N-1)⁢k⁢a-λ)⁢(-N⁢d-f-λ)+N2⁢b⁢c]=0
 
-We therefore had four distinct eigenvalues:(72)λ1=a-e-k⁢a(73)λ2=-f
 
-and(74)λ3/4=12[(a−e−f−Nd+(N−1)ka)±(a−e−f−Nd+(N−1)ka)2−4((−af+ef+kaf)−N(a−e)d−Nkaf−N(N−1)kad+N2bc)]
+$$
+J_{E←I}=−bJ_{N,N}
+$$
 
-Note that the eigenvalues λ1 and λ2 have an algebraic and geometric multiplicity of (N–1), whereas the eigenvalues λ3 and λ4 have an algebraic and geometric multiplicity of 1.
 
-In analogy to networks with global inhibition, the Jacobian matrix of networks with co-tuned inhibition R, can be written as(75)R=[JE←EJE←IJI←EJI←I]
 
-where JE←E, JE←I, JI←E, and JI←I are N by N block matrices defined as follows:(76)JE←E=[a−eka⋯kakaa−e⋯ka⋮⋮⋱⋮kaka⋯a−e](77)JE←I=[−Nb+(N−1)mb−mb⋯−mb−mb−Nb+(N−1)mb⋯−mb⋮⋮⋱⋮−mb−mb⋯−Nb+(N−1)mb](78)JI←E=[Nc−(N−1)mcmc⋯mcmcNc−(N−1)mc⋯mc⋮⋮⋱⋮mcmc⋯Nc−(N−1)mc](79)JI←I=[−Nd+(N−1)md−f−md⋯−md−md−Nd+(N−1)md−f⋯−md⋮⋮⋱⋮−md−md⋯−Nd+(N−1)md−f]
+$$
+J_{I←E}=cJ_{N,N}
+$$
 
-where m controls the degree of co-tuning in the network. If m=0, the network decouples into N independent ensembles and inhibition is perfectly co-tuned with excitation. In the case m=1, inhibition is global and the block matrices become identical to the above case of global inhibition.
 
-The eigenvalues of the matrix R are given as the roots of the characteristic polynomial defined by:(80)det((JE←E−λ1)(JI←I−λ1)−JE←IJI←E)=0
 
-which yields the following expression:(81)[λ2-(a-e-k⁢a-N⁢d+N⁢m⁢d-f)⁢λ-(a-e-k⁢a)⁢(N⁢d-N⁢m⁢d-f)+N2⁢b⁢c⁢(1-m)2]N-1⁢[(a-e+(N-1)⁢k⁢a-λ)⁢(-N⁢d-f-λ)+N2⁢b⁢c]=0
+$$
+J_{I←I}=[−d−f−d⋯−d−d−d−f⋯−d⋮⋮⋱⋮−d−d⋯−d−f]
+$$
 
-We therefore had four distinct eigenvalues:(82)λ1/2′=12⁢[(a-e-k⁢a-N⁢d+N⁢m⁢d-f)±(a-e-k⁢a+N⁢d-N⁢m⁢d+f)2-4⁢N2⁢b⁢c⁢(1-m)2](83)λ3/4′=12[(a−e−f−Nd+(N−1)ka)±(a−e−f−Nd+(N−1)ka)2−4((−af+ef+kaf)−N(a−e)d−Nkaf−N(N−1)kad+N2bc)]
+where $a=\tau_{E}^{-1}⁢J_{E⁢E}⁢\alpha_{E}⁢[z_{E}]_{+}^{\alpha_{E}-1}$, $b=\tau_{E}^{-1}⁢J_{E⁢I}⁢\alpha_{E}⁢[z_{E}]_{+}^{\alpha_{E}-1}$, $c=\tau_{I}^{-1}⁢J_{I⁢E}⁢\alpha_{I}⁢[z_{I}]_{+}^{\alpha_{I}-1}$, $d=\tau_{I}^{-1}⁢J_{I⁢I}⁢\alpha_{I}⁢[z_{I}]_{+}^{\alpha_{I}-1}$, $e=\tau_{E}^{-1}$, and $f=\tau_{I}^{-1}$. Here, $z_{E}$ and $z_{I}$ denote the total current into the excitatory and inhibitory population, respectively. Note that all these parameters are non-negative. Parameter $k$ controls the excitatory connection strength across different populations. $J_{N,N}$ is a $N$ by $N$ matrix of ones.
 
-The eigenvalues λ1′ and λ2′ have an algebraic and geometric multiplicity of (N–1), whereas the eigenvalues λ3′ and λ4′ have an algebraic and geometric multiplicity of 1. We noted that λ3=λ3′, λ4=λ4′.
+The eigenvalues of the Jacobian $Q$ are roots of its characteristic polynomial,
 
-To compare under which conditions networks with different structures are uni-stable, we examined the different eigenvalues derived above. As λ2§lt;0, and λ1′§gt;λ2′, we only had to compare λ1′ to λ1. For networks with co-tuned inhibition, we have m§lt;1,(84)λ1′=12[(a−e−ka−Nd+Nmd−f)+(a−e−ka+Nd−Nmd+f)2−4N2bc(1−m)2]<12[(a−e−ka−Nd+Nmd−f)+(a−e−ka+Nd−Nmd+f)2]=a−e−ka=λ1
+$$
+det((J_{E←E}−\lambda1)(J_{I←I}−\lambda1)−J_{E←I}J_{I←E})=0
+$$
 
-The inequality, λ1′§lt;λ1, indicates that networks with co-tuned inhibition have a broad parameter regime in which they are uni-stable than networks with global inhibition. Note that in the absence of a saturating nonlinearity of the input-output function and in the absence of any additional stabilization mechanisms, systems with positive eigenvalues of the Jacobian are unstable. In this case, networks with co-tuned inhibition have a broad parameter regime of being stable than networks with global inhibition.
+where $1$ represents the identity matrix of size $N$. The characteristic polynomial can be expanded to:
 
-To visualize the conditions in a two-dimensional plane, we reduced the conditions into a function of a and d. For Figure 3C, k=0.1, m=0.5 and b⁢c=0.9⁢a⁢d.
+$$
+[(a-e-k⁢a-\lambda)⁢(-f-\lambda)]^{N-1}⁢[(a-e+(N-1)⁢k⁢a-\lambda)⁢(-N⁢d-f-\lambda)+N^{2}⁢b⁢c]=0
+$$
 
-## Distance to the decision boundary
+We therefore had four distinct eigenvalues:
 
-To calculate the distance to the decision boundary in Figures 4 and 5, Figure 4—figure supplement 2 and Figure 5—figure supplement 2, we first projected the excitatory activity in Phase two onto a two-dimensional Cartesian coordinate system in which the horizontal axis is the activity of the first excitatory ensemble rE⁢1 and the vertical axis is the activity of the second excitatory ensemble rE⁢2. We denote the location of the projected data point in the Cartesian coordinate system by (x, y), where x and y equal rE⁢1 and rE⁢2, respectively. The distance L between the projected data and the decision boundary which corresponds to the diagonal line in the coordinate system can be expressed as follows:(85)L=x2+y2⁢sin⁢(|45o-arcsin⁢(xx2+y2)|)
+$$
+\lambda_{1}=a-e-k⁢a
+$$
+
+
+
+$$
+\lambda_{2}=-f
+$$
+
+and
+
+$$
+\lambda_{3/4}=\frac{1}{2}[(a−e−f−Nd+(N−1)ka)\pm\sqrt{(a−e−f−Nd+(N−1)ka)^{2}−4((−af+ef+kaf)−N(a−e)d−Nkaf−N(N−1)kad+N^{2}bc)}]
+$$
+
+Note that the eigenvalues $\lambda_{1}$ and $\lambda_{2}$ have an algebraic and geometric multiplicity of ($N$–1), whereas the eigenvalues $\lambda_{3}$ and $\lambda_{4}$ have an algebraic and geometric multiplicity of 1.
+
+In analogy to networks with global inhibition, the Jacobian matrix of networks with co-tuned inhibition $R$, can be written as
+
+$$
+R=[J_{E←E}J_{E←I}J_{I←E}J_{I←I}]
+$$
+
+where $J_{E←E}$, $J_{E←I}$, $J_{I←E}$, and $J_{I←I}$ are $N$ by $N$ block matrices defined as follows:
+
+$$
+J_{E←E}=[a−eka⋯kakaa−e⋯ka⋮⋮⋱⋮kaka⋯a−e]
+$$
+
+
+
+$$
+J_{E←I}=[−Nb+(N−1)mb−mb⋯−mb−mb−Nb+(N−1)mb⋯−mb⋮⋮⋱⋮−mb−mb⋯−Nb+(N−1)mb]
+$$
+
+
+
+$$
+J_{I←E}=[Nc−(N−1)mcmc⋯mcmcNc−(N−1)mc⋯mc⋮⋮⋱⋮mcmc⋯Nc−(N−1)mc]
+$$
+
+
+
+$$
+J_{I←I}=[−Nd+(N−1)md−f−md⋯−md−md−Nd+(N−1)md−f⋯−md⋮⋮⋱⋮−md−md⋯−Nd+(N−1)md−f]
+$$
+
+where $m$ controls the degree of co-tuning in the network. If $m=0$, the network decouples into $N$ independent ensembles and inhibition is perfectly co-tuned with excitation. In the case $m=1$, inhibition is global and the block matrices become identical to the above case of global inhibition.
+
+The eigenvalues of the matrix $R$ are given as the roots of the characteristic polynomial defined by:
+
+$$
+det((J_{E←E}−\lambda1)(J_{I←I}−\lambda1)−J_{E←I}J_{I←E})=0
+$$
+
+which yields the following expression:
+
+$$
+[\lambda^{2}-(a-e-k⁢a-N⁢d+N⁢m⁢d-f)⁢\lambda-(a-e-k⁢a)⁢(N⁢d-N⁢m⁢d-f)+N^{2}⁢b⁢c⁢(1-m)^{2}]^{N-1}⁢[(a-e+(N-1)⁢k⁢a-\lambda)⁢(-N⁢d-f-\lambda)+N^{2}⁢b⁢c]=0
+$$
+
+We therefore had four distinct eigenvalues:
+
+$$
+\lambda_{1/2}^{^{′}}=\frac{1}{2}⁢[(a-e-k⁢a-N⁢d+N⁢m⁢d-f)\pm\sqrt{(a-e-k⁢a+N⁢d-N⁢m⁢d+f)^{2}-4⁢N^{2}⁢b⁢c⁢(1-m)^{2}}]
+$$
+
+
+
+$$
+\lambda_{3/4}^{^{′}}=\frac{1}{2}[(a−e−f−Nd+(N−1)ka)\pm\sqrt{(a−e−f−Nd+(N−1)ka)^{2}−4((−af+ef+kaf)−N(a−e)d−Nkaf−N(N−1)kad+N^{2}bc)}]
+$$
+
+The eigenvalues $\lambda_{1}^{^{′}}$ and $\lambda_{2}^{^{′}}$ have an algebraic and geometric multiplicity of ($N$–1), whereas the eigenvalues $\lambda_{3}^{^{′}}$ and $\lambda_{4}^{^{′}}$ have an algebraic and geometric multiplicity of 1. We noted that $\lambda_{3}=\lambda_{3}^{^{′}}$, $\lambda_{4}=\lambda_{4}^{^{′}}$.
+
+To compare under which conditions networks with different structures are uni-stable, we examined the different eigenvalues derived above. As $\lambda_{2}§lt;0$, and $\lambda_{1}^{^{′}}§gt;\lambda_{2}^{^{′}}$, we only had to compare $\lambda_{1}^{^{′}}$ to $\lambda_{1}$. For networks with co-tuned inhibition, we have $m§lt;1$,
+
+$$
+\lambda_{1}^{^{′}}=\frac{1}{2}[(a−e−ka−Nd+Nmd−f)+\sqrt{(a−e−ka+Nd−Nmd+f)^{2}−4N^{2}bc(1−m)^{2}}]<\frac{1}{2}[(a−e−ka−Nd+Nmd−f)+\sqrt{(a−e−ka+Nd−Nmd+f)^{2}}]=a−e−ka=\lambda_{1}
+$$
+
+The inequality, $\lambda_{1}^{^{′}}§lt;\lambda_{1}$, indicates that networks with co-tuned inhibition have a broad parameter regime in which they are uni-stable than networks with global inhibition. Note that in the absence of a saturating nonlinearity of the input-output function and in the absence of any additional stabilization mechanisms, systems with positive eigenvalues of the Jacobian are unstable. In this case, networks with co-tuned inhibition have a broad parameter regime of being stable than networks with global inhibition.
+
+To visualize the conditions in a two-dimensional plane, we reduced the conditions into a function of $a$ and $d$. For Figure 3C, $k=0.1$, $m=0.5$ and $b⁢c=0.9⁢a⁢d$.
+
+### Distance to the decision boundary
+
+To calculate the distance to the decision boundary in Figures 4 and 5, Figure 4—figure supplement 2 and Figure 5—figure supplement 2, we first projected the excitatory activity in Phase two onto a two-dimensional Cartesian coordinate system in which the horizontal axis is the activity of the first excitatory ensemble $r_{E⁢1}$ and the vertical axis is the activity of the second excitatory ensemble $r_{E⁢2}$. We denote the location of the projected data point in the Cartesian coordinate system by ($x$, $y$), where $x$ and $y$ equal $r_{E⁢1}$ and $r_{E⁢2}$, respectively. The distance $L$ between the projected data and the decision boundary which corresponds to the diagonal line in the coordinate system can be expressed as follows:
+
+$$
+L=\sqrt{x^{2}+y^{2}}⁢sin⁢(|45^{o}-arcsin⁢(\frac{x}{\sqrt{x^{2}+y^{2}}})|)
+$$
 
 Note that the inverse trigonometric function arcsin gives the value of the angle in degrees.
 
-## Inhibitory feedback pathways for suppressing unwanted neural activation
+### Inhibitory feedback pathways for suppressing unwanted neural activation
 
-To identify the important neural pathways for the suppression of unwanted neural activation, we analyzed how the activity of the second excitatory ensemble rE⁢2 changes with the input to the first excitatory ensemble gE⁢1. To that end, we considered a general weight matrix for networks with two interacting ensembles(86)J=[JE1E1JE1E2−JE1I1−JE1I2JE2E1JE2E2−JE2I1−JE2I2JI1E1JI1E2−JI1I1−JI1I2JI2E1JI2E2−JI2I1−JI2I2]
+To identify the important neural pathways for the suppression of unwanted neural activation, we analyzed how the activity of the second excitatory ensemble $r_{E⁢2}$ changes with the input to the first excitatory ensemble $g_{E⁢1}$. To that end, we considered a general weight matrix for networks with two interacting ensembles
 
-We can write the change in firing rate of the excitatory population in the second ensemble δ⁢rE⁢2 as a function of the change in the input to the other δ⁢gE⁢1:(87)δrE2=1det(1−FJ)[(−fE2′JE2E1)fI1′JI1I2fI2′JI2I1+fE2′JE2I1(−fI1′JI1E1)(1+fI2′JI2I2)+fE2′JE2I2(1+fI1′JI1I1)(−fI2′JI2E1)−(−fE2′JE2E1)(1+fI1′JI1I1)(1+fI2′JI2I2)−fE2′JE2I1fI1′JI1I2(−fI2′JI2E1)−fE2′JE2I2(−fI1′JI1E1)fI2′JI2I1]fE1′δgE1
+$$
+J=[J_{E1E1}J_{E1E2}−J_{E1I1}−J_{E1I2}J_{E2E1}J_{E2E2}−J_{E2I1}−J_{E2I2}J_{I1E1}J_{I1E2}−J_{I1I1}−J_{I1I2}J_{I2E1}J_{I2E2}−J_{I2I1}−J_{I2I2}]
+$$
 
-where 1 is the identity matrix. And F is given by(88)F=[fE1′0000fE2′0000fI1′0000fI2′]
+We can write the change in firing rate of the excitatory population in the second ensemble $\delta⁢r_{E⁢2}$ as a function of the change in the input to the other $\delta⁢g_{E⁢1}$:
 
-where fE⁢1′, fE⁢2′, fI⁢1′ and fI⁢2′ are the derivatives of the input-output functions evaluated at the fixed point.
+$$
+\deltar_{E2}=\frac{1}{det(1−FJ)}[(−f_{E2}^{^{′}}J_{E2E1})f_{I1}^{^{′}}J_{I1I2}f_{I2}^{^{′}}J_{I2I1}+f_{E2}^{^{′}}J_{E2I1}(−f_{I1}^{^{′}}J_{I1E1})(1+f_{I2}^{^{′}}J_{I2I2})+f_{E2}^{^{′}}J_{E2I2}(1+f_{I1}^{^{′}}J_{I1I1})(−f_{I2}^{^{′}}J_{I2E1})−(−f_{E2}^{^{′}}J_{E2E1})(1+f_{I1}^{^{′}}J_{I1I1})(1+f_{I2}^{^{′}}J_{I2I2})−f_{E2}^{^{′}}J_{E2I1}f_{I1}^{^{′}}J_{I1I2}(−f_{I2}^{^{′}}J_{I2E1})−f_{E2}^{^{′}}J_{E2I2}(−f_{I1}^{^{′}}J_{I1E1})f_{I2}^{^{′}}J_{I2I1}]f_{E1}^{^{′}}\deltag_{E1}
+$$
 
-Assuming that JE⁢1⁢E⁢1=JE⁢2⁢E⁢2=JE⁢E, JI⁢1⁢E⁢1=JI⁢2⁢E⁢2=JI⁢E, JE⁢1⁢I⁢1=JE⁢2⁢I⁢2=JE⁢I, JI⁢1⁢I⁢1=JI⁢2⁢I⁢2=JI⁢I, JE⁢1⁢E⁢2=JE⁢2⁢E⁢1=JE⁢E′, JI⁢1⁢E⁢2=JI⁢2⁢E⁢1=JI⁢E′, JE⁢1⁢I⁢2=JE⁢2⁢I⁢1=JE⁢I′ and JI⁢1⁢I⁢2=JI⁢2⁢I⁢1=JI⁢I′, we find(89)δrE2=1det(1−FJ)[(−fE2′JEE′)fI1′JII′fI2′JII′+fE2′JEI′(−fI1′JIE)(1+fI2′JII)+fE2′JEI(1+fI1′JII)(−fI2′JIE′)−(−fE2′JEE′)(1+fI1′JII)(1+fI2′JII)−fE2′JEI′fI1′JII′(−fI2′JIE′)−fE2′JEI(−fI1′JIE)fI2′JII′]fE1′δgE1
+where $1$ is the identity matrix. And $F$ is given by
 
-By further assuming that the weight strengths across ensembles are weak and ignoring the corresponding higher-order terms, we get(90)δrE2≈1det(1−FJ)[fE2′JEI′(−fI1′JIE)(1+fI2′JII)+fE2′JEI(1+fI1′JII)(−fI2′JIE′)−(−fE2′JEE′)(1+fI1′JII)(1+fI2′JII)−fE2′JEI(−fI1′JIE)fI2′JII′]fE1′δgE1=1det(1−FJ)[(JII′JEI′fI2′−(1JEI+fI2′JIIJEI))JEI′JEIJIEfE2′fI1′+(JEE′JIE′(1+JIIfI2′)−JEIfI2′)JIE′fE2′(1+fI1′JII)]fE1′δgE1
+$$
+F=[f_{E1}^{^{′}}0000f_{E2}^{^{′}}0000f_{I1}^{^{′}}0000f_{I2}^{^{′}}]
+$$
 
-Note that JE⁢E′JI⁢E′ and JI⁢I′JE⁢I′ are terms regulating the respective excitatory and inhibitory input from one ensemble to the excitatory and inhibitory population in another ensemble. The term det(1−FJ) is positive to ensure the stability of the system.
+where $f_{E⁢1}^{^{′}}$, $f_{E⁢2}^{^{′}}$, $f_{I⁢1}^{^{′}}$ and $f_{I⁢2}^{^{′}}$ are the derivatives of the input-output functions evaluated at the fixed point.
 
-To suppress the activity of the excitatory population in the second ensemble rE⁢2, in other words, to ensure that δ⁢rE⁢2§lt;0, JI⁢E′ or/and JE⁢I′ have to be large. Therefore, we identified JI⁢E′ and JE⁢I′ as important synaptic connections which lead to suppression of the unwanted neural activation, suggesting that inhibition can be provided via JI⁢E′ through the E⁢1-I⁢2-E⁢2 pathway or via JE⁢I′ through the E⁢1-I⁢1-E⁢2 pathway.
+Assuming that $J_{E⁢1⁢E⁢1}=J_{E⁢2⁢E⁢2}=J_{E⁢E}$, $J_{I⁢1⁢E⁢1}=J_{I⁢2⁢E⁢2}=J_{I⁢E}$, $J_{E⁢1⁢I⁢1}=J_{E⁢2⁢I⁢2}=J_{E⁢I}$, $J_{I⁢1⁢I⁢1}=J_{I⁢2⁢I⁢2}=J_{I⁢I}$, $J_{E⁢1⁢E⁢2}=J_{E⁢2⁢E⁢1}=J_{E⁢E}^{^{′}}$, $J_{I⁢1⁢E⁢2}=J_{I⁢2⁢E⁢1}=J_{I⁢E}^{^{′}}$, $J_{E⁢1⁢I⁢2}=J_{E⁢2⁢I⁢1}=J_{E⁢I}^{^{′}}$ and $J_{I⁢1⁢I⁢2}=J_{I⁢2⁢I⁢1}=J_{I⁢I}^{^{′}}$, we find
+
+$$
+\deltar_{E2}=\frac{1}{det(1−FJ)}[(−f_{E2}^{^{′}}J_{EE}^{^{′}})f_{I1}^{^{′}}J_{II}^{^{′}}f_{I2}^{^{′}}J_{II}^{^{′}}+f_{E2}^{^{′}}J_{EI}^{^{′}}(−f_{I1}^{^{′}}J_{IE})(1+f_{I2}^{^{′}}J_{II})+f_{E2}^{^{′}}J_{EI}(1+f_{I1}^{^{′}}J_{II})(−f_{I2}^{^{′}}J_{IE}^{^{′}})−(−f_{E2}^{^{′}}J_{EE}^{^{′}})(1+f_{I1}^{^{′}}J_{II})(1+f_{I2}^{^{′}}J_{II})−f_{E2}^{^{′}}J_{EI}^{^{′}}f_{I1}^{^{′}}J_{II}^{^{′}}(−f_{I2}^{^{′}}J_{IE}^{^{′}})−f_{E2}^{^{′}}J_{EI}(−f_{I1}^{^{′}}J_{IE})f_{I2}^{^{′}}J_{II}^{^{′}}]f_{E1}^{^{′}}\deltag_{E1}
+$$
+
+By further assuming that the weight strengths across ensembles are weak and ignoring the corresponding higher-order terms, we get
+
+$$
+\deltar_{E2}≈\frac{1}{det(1−FJ)}[f_{E2}^{^{′}}J_{EI}^{^{′}}(−f_{I1}^{^{′}}J_{IE})(1+f_{I2}^{^{′}}J_{II})+f_{E2}^{^{′}}J_{EI}(1+f_{I1}^{^{′}}J_{II})(−f_{I2}^{^{′}}J_{IE}^{^{′}})−(−f_{E2}^{^{′}}J_{EE}^{^{′}})(1+f_{I1}^{^{′}}J_{II})(1+f_{I2}^{^{′}}J_{II})−f_{E2}^{^{′}}J_{EI}(−f_{I1}^{^{′}}J_{IE})f_{I2}^{^{′}}J_{II}^{^{′}}]f_{E1}^{^{′}}\deltag_{E1}=\frac{1}{det(1−FJ)}[(\frac{J_{II}^{^{′}}}{J_{EI}^{^{′}}}f_{I2}^{^{′}}−(\frac{1}{J_{EI}}+f_{I2}^{^{′}}\frac{J_{II}}{J_{EI}}))J_{EI}^{^{′}}J_{EI}J_{IE}f_{E2}^{^{′}}f_{I1}^{^{′}}+(\frac{J_{EE}^{^{′}}}{J_{IE}^{^{′}}}(1+J_{II}f_{I2}^{^{′}})−J_{EI}f_{I2}^{^{′}})J_{IE}^{^{′}}f_{E2}^{^{′}}(1+f_{I1}^{^{′}}J_{II})]f_{E1}^{^{′}}\deltag_{E1}
+$$
+
+Note that $\frac{J_{E⁢E}^{^{′}}}{J_{I⁢E}^{^{′}}}$ and $\frac{J_{I⁢I}^{^{′}}}{J_{E⁢I}^{^{′}}}$ are terms regulating the respective excitatory and inhibitory input from one ensemble to the excitatory and inhibitory population in another ensemble. The term $det(1−FJ)$ is positive to ensure the stability of the system.
+
+To suppress the activity of the excitatory population in the second ensemble $r_{E⁢2}$, in other words, to ensure that $\delta⁢r_{E⁢2}§lt;0$, $J_{I⁢E}^{^{′}}$ or/and $J_{E⁢I}^{^{′}}$ have to be large. Therefore, we identified $J_{I⁢E}^{^{′}}$ and $J_{E⁢I}^{^{′}}$ as important synaptic connections which lead to suppression of the unwanted neural activation, suggesting that inhibition can be provided via $J_{I⁢E}^{^{′}}$ through the $E⁢1$-$I⁢2$-$E⁢2$ pathway or via $J_{E⁢I}^{^{′}}$ through the $E⁢1$-$I⁢1$-$E⁢2$ pathway.
 
 For Figures 4 and 5, the rate-based model consists of two ensembles, each of which is composed of 100 excitatory and 25 inhibitory neurons with all-to-all connectivity.
 
-## Spiking neural network model
+### Spiking neural network model
 
-The spiking neural network model was composed of NE excitatory and NI inhibitory leaky integrate-and-fire neurons. Neurons were randomly connected with probability of 20%. The dynamics of membrane potential of neuron i, Ui, as defined by Zenke et al., 2015:(91)τm⁢d⁢Uid⁢t=(Urest-Ui)+giext⁢(t)⁢(Uexc-Ui)+giinh⁢(t)⁢(Uinh-Ui)
+The spiking neural network model was composed of $N_{E}$ excitatory and $N_{I}$ inhibitory leaky integrate-and-fire neurons. Neurons were randomly connected with probability of 20%. The dynamics of membrane potential of neuron i, $U_{i}$, as defined by Zenke et al., 2015:
 
-Here, τm is the membrane time constant and Urest is the resting potential. Spikes are triggered when the membrane potential reaches the spiking threshold Uthr. After a spike is emitted, the membrane potential is reset to Urest and the neuron enters a refractory period of τref. Inhibitory neurons obeyed the same integrate-and-fire formalism but with a shorter membrane time constant.
+$$
+\tau^{m}⁢\frac{d⁢U_{i}}{d⁢t}=(U^{rest}-U_{i})+g_{i}^{ext}⁢(t)⁢(U^{exc}-U_{i})+g_{i}^{inh}⁢(t)⁢(U^{inh}-U_{i})
+$$
 
-Excitatory synapses contain a fast AMPA component and a slow NMDA component. The dynamics of the excitatory conductance are described by:(92)τampa⁢d⁢giampad⁢t=-giampa+∑j∈excJi⁢j⁢Sj⁢(t)(93)τnmda⁢d⁢ginmdad⁢t=-ginmda+giampa(94)giexc⁢(t)=ξ⁢giampa⁢(t)+(1-ξ)⁢ginmda⁢(t)
+Here, $\tau^{m}$ is the membrane time constant and $U^{rest}$ is the resting potential. Spikes are triggered when the membrane potential reaches the spiking threshold $U^{thr}$. After a spike is emitted, the membrane potential is reset to $U^{rest}$ and the neuron enters a refractory period of $\tau^{ref}$. Inhibitory neurons obeyed the same integrate-and-fire formalism but with a shorter membrane time constant.
 
-Here, Ji⁢j denotes the synaptic strength from neuron j to neuron i. If the connection does not exist, Ji⁢j was set to 0. Sj⁢(t) is the spike train of neuron j, which is defined as Sj⁢(t)=∑kδ⁢(t-tjk), where δ is the Dirac delta function and tjk the spikes times k of neuron j. ξ is a weighting parameter. The dynamics of inhibitory conductances are governed by:(95)τgaba⁢d⁢giinhd⁢t=-giinh+∑j∈inhJi⁢j⁢Sj⁢(t)
+Excitatory synapses contain a fast AMPA component and a slow NMDA component. The dynamics of the excitatory conductance are described by:
 
-In the spiking neural network models, SFA of excitatory neurons is modeled as follows,(96)τm⁢d⁢Uid⁢t=(Urest-Ui)+giext⁢(t)⁢(Uexc-Ui)+(giinh⁢(t)+ai⁢(t))⁢(Uinh-Ui)(97)d⁢aid⁢t=-aiτa+b⁢Si⁢(t)
+$$
+\tau^{ampa}⁢\frac{d⁢g_{i}^{ampa}}{d⁢t}=-g_{i}^{ampa}+\sumj\inexcJ_{i⁢j}⁢S_{j}⁢(t)
+$$
+
+
+
+$$
+\tau^{nmda}⁢\frac{d⁢g_{i}^{nmda}}{d⁢t}=-g_{i}^{nmda}+g_{i}^{ampa}
+$$
+
+
+
+$$
+g_{i}^{exc}⁢(t)=ξ⁢g_{i}^{ampa}⁢(t)+(1-ξ)⁢g_{i}^{nmda}⁢(t)
+$$
+
+Here, $J_{i⁢j}$ denotes the synaptic strength from neuron $j$ to neuron i. If the connection does not exist, $J_{i⁢j}$ was set to 0. $S_{j}⁢(t)$ is the spike train of neuron $j$, which is defined as $S_{j}⁢(t)=\sum_{k}\delta⁢(t-t_{j}^{k})$, where $\delta$ is the Dirac delta function and $t_{j}^{k}$ the spikes times $k$ of neuron $j$. $ξ$ is a weighting parameter. The dynamics of inhibitory conductances are governed by:
+
+$$
+\tau^{gaba}⁢\frac{d⁢g_{i}^{inh}}{d⁢t}=-g_{i}^{inh}+\sumj\ininhJ_{i⁢j}⁢S_{j}⁢(t)
+$$
+
+In the spiking neural network models, SFA of excitatory neurons is modeled as follows,
+
+$$
+\tau^{m}⁢\frac{d⁢U_{i}}{d⁢t}=(U^{rest}-U_{i})+g_{i}^{ext}⁢(t)⁢(U^{exc}-U_{i})+(g_{i}^{inh}⁢(t)+a_{i}⁢(t))⁢(U^{inh}-U_{i})
+$$
+
+
+
+$$
+\frac{d⁢a_{i}}{d⁢t}=-\frac{a_{i}}{\tau_{a}}+b⁢S_{i}⁢(t)
+$$
 
 where i is the index of excitatory neurons.
 
-The dynamics of E-to-E STD are given by(98)d⁢xi⁢jd⁢t=1-xi⁢jτx-Ud⁢xi⁢j⁢Sj⁢(t)(99)τampa⁢d⁢giampad⁢t=-giampa+∑j∈excxi⁢j⁢Ji⁢j⁢Sj⁢(t)
+The dynamics of E-to-E STD are given by
+
+$$
+\frac{d⁢x_{i⁢j}}{d⁢t}=\frac{1-x_{i⁢j}}{\tau_{x}}-U_{d}⁢x_{i⁢j}⁢S_{j}⁢(t)
+$$
+
+
+
+$$
+\tau^{ampa}⁢\frac{d⁢g_{i}^{ampa}}{d⁢t}=-g_{i}^{ampa}+\sumj\inexcx_{i⁢j}⁢J_{i⁢j}⁢S_{j}⁢(t)
+$$
 
 where i represents the index of excitatory neurons.
 
-The dynamics of E-to-I STF are governed by(100)d⁢ui⁢jd⁢t=1-ui⁢jτu+Uf⁢(Um⁢a⁢x-ui⁢j)⁢Sj⁢(t)(101)τampa⁢d⁢giampad⁢t=-giampa+∑j∈excui⁢j⁢Ji⁢j⁢Sj⁢(t)
+The dynamics of E-to-I STF are governed by
+
+$$
+\frac{d⁢u_{i⁢j}}{d⁢t}=\frac{1-u_{i⁢j}}{\tau_{u}}+U_{f}⁢(U_{m⁢a⁢x}-u_{i⁢j})⁢S_{j}⁢(t)
+$$
+
+
+
+$$
+\tau^{ampa}⁢\frac{d⁢g_{i}^{ampa}}{d⁢t}=-g_{i}^{ampa}+\sumj\inexcu_{i⁢j}⁢J_{i⁢j}⁢S_{j}⁢(t)
+$$
 
 where i denotes the index of inhibitory neurons.
 
@@ -350,8 +910,555 @@ For Figure 6, each excitatory and inhibitory neuron received external excitatory
 
 For Figure 2—figure supplement 10, each excitatory and inhibitory neuron received external excitatory input from 300 neurons firing with Poisson statistics at an average firing rate of 0.1 Hz at the baseline. During stimulation, each excitatory neuron received external excitatory input from 300 neurons firing with Poisson statistics at an average firing rate of 0.3 Hz.
 
-For Figure 6—figure supplement 1, the firing rates of 300 neurons are varying from 4/15 Hz to 7/15 Hz.
+For Figure 6—figure supplement 1, the firing rates of 300 neurons are varying from $4/15$ Hz to $7/15$ Hz.
 
-## Simulations
+### Simulations
 
 Simulations were performed in Python and Mathematica. All differential equations were implemented by Euler integration with a time step of 0.1 ms. All simulation parameters are listed in Tables 1–5 and Appendix 5—Tables 1–10. The simulation source code to reproduce the figures is publicly available at https://github.com/fmi-basel/gzenke-nonlinear-transient-amplification (Wu, 2021 copy archived at swh:1:rev:6ff6ff10b9f4994a0f948a987a66cc82f98451e1).
+
+**Table 1.**
+ Parameters for Figure 1C–E.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JE⁢E</td>
+      <td>1.8</td>
+      <td>-</td>
+      <td>E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>0.6</td>
+      <td>-</td>
+      <td>I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>αE</td>
+      <td>2</td>
+      <td>-</td>
+      <td>Power of excitatory input-output function</td>
+    </tr>
+    <tr>
+      <td>αI</td>
+      <td>2</td>
+      <td>-</td>
+      <td>Power of inhibitory input-output function</td>
+    </tr>
+    <tr>
+      <td>τE</td>
+      <td>20</td>
+      <td>ms</td>
+      <td>Time constant of excitatory firing dynamics</td>
+    </tr>
+    <tr>
+      <td>τI</td>
+      <td>10</td>
+      <td>ms</td>
+      <td>Time constant of inhibitory firing dynamics</td>
+    </tr>
+    <tr>
+      <td>gEb⁢s</td>
+      <td>1.55</td>
+      <td>-</td>
+      <td>Input to the E population at baseline</td>
+    </tr>
+    <tr>
+      <td>gEs⁢t⁢i⁢m</td>
+      <td>3.0</td>
+      <td>-</td>
+      <td>Input to the E population during stimulation</td>
+    </tr>
+    <tr>
+      <td>gI</td>
+      <td>2.0</td>
+      <td>-</td>
+      <td>Input to the I population</td>
+    </tr>
+    <tr>
+      <td colspan="4">Parameters for Figure 1F</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>0.45</td>
+      <td>-</td>
+      <td>E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>1.5</td>
+      <td>-</td>
+      <td>I-to-I connection strength</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Parameters for Figure 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>τa</td>
+      <td>200</td>
+      <td>ms</td>
+      <td>Time constant of SFA</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>Strength of SFA</td>
+    </tr>
+    <tr>
+      <td>τx</td>
+      <td>200</td>
+      <td>ms</td>
+      <td>Time constant of STD</td>
+    </tr>
+    <tr>
+      <td>Ud</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>Depression rate</td>
+    </tr>
+    <tr>
+      <td>τu</td>
+      <td>200</td>
+      <td>ms</td>
+      <td>Time constant of STF</td>
+    </tr>
+    <tr>
+      <td>Uf</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>Facilitation rate</td>
+    </tr>
+    <tr>
+      <td>Um⁢a⁢x</td>
+      <td>6.0</td>
+      <td>-</td>
+      <td>Maximal facilitation value</td>
+    </tr>
+    <tr>
+      <td colspan="4">Note that these values are also applied elsewhere unless mentioned otherwise.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Parameters for Figure 3 bi/multi-stable example.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JE⁢E</td>
+      <td>1.4</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>0.6</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>0.6</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢E′</td>
+      <td>0.14</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E′</td>
+      <td>0.6</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I′</td>
+      <td>1.0</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I′</td>
+      <td>0.6</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>gE⁢1b⁢s</td>
+      <td>2.2</td>
+      <td>-</td>
+      <td>Input to the E1 population at baseline</td>
+    </tr>
+    <tr>
+      <td>gE⁢1s⁢t⁢i⁢m</td>
+      <td>3.0</td>
+      <td>-</td>
+      <td>Input to the E1 population during stimulation</td>
+    </tr>
+    <tr>
+      <td>gE⁢2</td>
+      <td>2.2</td>
+      <td>-</td>
+      <td>Input to the E2 population</td>
+    </tr>
+    <tr>
+      <td>gI</td>
+      <td>2.0</td>
+      <td>-</td>
+      <td>Input to the I population</td>
+    </tr>
+    <tr>
+      <td colspan="4">Parameters for Figure 3 uni-stable example</td>
+    </tr>
+    <tr>
+      <td>JE⁢E</td>
+      <td>1.3</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢E′</td>
+      <td>0.13</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-E connection strength</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Parameters for Figures 4 and 5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NE</td>
+      <td>200</td>
+      <td>-</td>
+      <td>Number of excitatory neurons</td>
+    </tr>
+    <tr>
+      <td>NI</td>
+      <td>50</td>
+      <td>-</td>
+      <td>Number of inhibitory neurons</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>2</td>
+      <td>-</td>
+      <td>Number of ensembles</td>
+    </tr>
+    <tr>
+      <td>JE⁢E</td>
+      <td>1.2/(NE/2-1)</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>1.0/(NE/2)</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I</td>
+      <td>1.0/(NI/2)</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>1.0/(NI/2-1)</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢E′</td>
+      <td>0.36/(NE/2-1)</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E′</td>
+      <td>0.4/(NE/2)</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I′</td>
+      <td>0.1/(NI/2)</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I′</td>
+      <td>0.1/(NI/2)</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>gI</td>
+      <td>2.0</td>
+      <td>-</td>
+      <td>Input to the I population</td>
+    </tr>
+    <tr>
+      <td colspan="4">Parameters for Figure 4</td>
+    </tr>
+    <tr>
+      <td>gE⁢1b⁢s</td>
+      <td>1.35</td>
+      <td>-</td>
+      <td>Input to the E1 population</td>
+    </tr>
+    <tr>
+      <td>gE⁢1s⁢t⁢i⁢m</td>
+      <td>4.0</td>
+      <td>-</td>
+      <td>Input to the E1 population during stimulation</td>
+    </tr>
+    <tr>
+      <td>gE⁢2</td>
+      <td>1.35</td>
+      <td>-</td>
+      <td>Input to the E2 population</td>
+    </tr>
+    <tr>
+      <td colspan="4">Parameters for Figure 5</td>
+    </tr>
+    <tr>
+      <td>gE⁢1b⁢s</td>
+      <td>1.35</td>
+      <td>-</td>
+      <td>Input to the E1 population at baseline</td>
+    </tr>
+    <tr>
+      <td>gE⁢1s⁢t⁢i⁢m</td>
+      <td>1.35 + (4.0–1.35) (1-p)</td>
+      <td>-</td>
+      <td>Input to the E1 population during stimulation</td>
+    </tr>
+    <tr>
+      <td>gE⁢2b⁢s</td>
+      <td>1.35</td>
+      <td>-</td>
+      <td>Input to the E2 population at baseline</td>
+    </tr>
+    <tr>
+      <td>gE⁢2s⁢t⁢i⁢m</td>
+      <td>1.35 + (4.0–1.35)p</td>
+      <td>-</td>
+      <td>Input to the E2 population during stimulation</td>
+    </tr>
+    <tr>
+      <td colspan="4">Here, p is a parameter between 0 and 1 controlling the additional inputs to E1 and E2.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Parameters for Figure 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Value</th>
+      <th>Unit</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NE</td>
+      <td>400</td>
+      <td>-</td>
+      <td>Number of excitatory neurons</td>
+    </tr>
+    <tr>
+      <td>NI</td>
+      <td>100</td>
+      <td>-</td>
+      <td>Number of inhibitory neurons</td>
+    </tr>
+    <tr>
+      <td>Urest</td>
+      <td>–70</td>
+      <td>mV</td>
+      <td>Resting membrane potential</td>
+    </tr>
+    <tr>
+      <td>Uexc</td>
+      <td>0</td>
+      <td>mV</td>
+      <td>Excitatory reversal potential</td>
+    </tr>
+    <tr>
+      <td>Uinh</td>
+      <td>–80</td>
+      <td>mV</td>
+      <td>Inhibitory reversal potential</td>
+    </tr>
+    <tr>
+      <td>τref</td>
+      <td>3</td>
+      <td>ms</td>
+      <td>Duration of refractory period</td>
+    </tr>
+    <tr>
+      <td>τexcm</td>
+      <td>20</td>
+      <td>ms</td>
+      <td>Membrane time constant of excitatory neurons</td>
+    </tr>
+    <tr>
+      <td>τinhm</td>
+      <td>10</td>
+      <td>ms</td>
+      <td>Membrane time constant of inhibitory neurons</td>
+    </tr>
+    <tr>
+      <td>τampa</td>
+      <td>5</td>
+      <td>ms</td>
+      <td>Time constant of AMPA receptor</td>
+    </tr>
+    <tr>
+      <td>τgaba</td>
+      <td>10</td>
+      <td>ms</td>
+      <td>Time constant of GABA receptor</td>
+    </tr>
+    <tr>
+      <td>τnmda</td>
+      <td>100</td>
+      <td>ms</td>
+      <td>Time constant of NMDA receptor</td>
+    </tr>
+    <tr>
+      <td>ξ</td>
+      <td>0.5</td>
+      <td>-</td>
+      <td>Receptor weighting factor</td>
+    </tr>
+    <tr>
+      <td>JE⁢E</td>
+      <td>0.19</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E</td>
+      <td>0.10</td>
+      <td>-</td>
+      <td>Within-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I</td>
+      <td>0.10</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I</td>
+      <td>0.06</td>
+      <td>-</td>
+      <td>Within-ensemble I-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢E′</td>
+      <td>0.019</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢E′</td>
+      <td>0.05</td>
+      <td>-</td>
+      <td>Inter-ensemble E-to-I connection strength</td>
+    </tr>
+    <tr>
+      <td>JE⁢I′</td>
+      <td>0.04</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-E connection strength</td>
+    </tr>
+    <tr>
+      <td>JI⁢I′</td>
+      <td>0.006</td>
+      <td>-</td>
+      <td>Inter-ensemble I-to-I connection strength</td>
+    </tr>
+  </tbody>
+</table>

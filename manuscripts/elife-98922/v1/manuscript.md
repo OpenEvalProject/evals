@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Nuffield Department of Clinical Neuroscience, University of Oxford Oxford United Kingdom
-2. https://ror.org/02tyrky19 Trinity College Institute of Neuroscience and Department of Psychology, Trinity College Dublin Dublin Ireland
-3. https://ror.org/00cv9y106 Department of Experimental, Clinical and Health Psychology, Ghent University Ghent Belgium
-4. https://ror.org/052gg0110 Nuffield Department of Surgical Sciences, University of Oxford Oxford United Kingdom
+1. Nuffield Department of Clinical Neuroscience, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Trinity College Institute of Neuroscience and Department of Psychology, Trinity College Dublin Dublin Ireland ([ROR:02tyrky19](https://ror.org/02tyrky19))
+3. Department of Experimental, Clinical and Health Psychology, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))
+4. Nuffield Department of Surgical Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
 
 † Corresponding author
 
@@ -36,37 +36,459 @@ Here, we ask whether blocking muscarinic receptors would reduce motivation and i
 
 After fixating on one of three circles, participants heard an incentive cue stating the maximum reward available for the trial (50p or 0p), and 1500 ms after a preparation cue they made a saccade towards the circle that dimmed, and received a proportion of the maximum reward depending on their speed. On half of the trials, the non-target circle lit up, presenting a high-salience distractor. Participants completed this task once after receiving THP (M1r antimuscarinic acetylcholine antagonist) and once after placebo (double-blinded), and we measured saccade initiation times, velocity, and the pull of the distractor on the saccade trajectory, along with EEG.
 
-## Acetylcholine modulates invigoration by incentives
+### Acetylcholine modulates invigoration by incentives
 
 We measured vigour as the residual peak velocity of saccades within each drug session (see Figure 1c and Methods/Eye-tracking), which is each trial’s deviation of velocity from the main sequence. This removes any overall effects of the drug on saccade velocity, while still allowing incentives and distractors to have different effects within each drug condition. We used single-trial mixed-effects linear regression (20 participants, 18,585 trials in total) to assess the effects of incentive, distractors, and THP, along with all the interactions of these (and a random intercept per participant), on residual velocity and saccadic RT. As predicted, residual peak velocity was increased by incentives (Figure 1d; β=0.1266, p<0.0001), while distractors slightly slowed residual velocity (β=–0.0158, p=0.0294; see Table 1 for full behavioural statistics). THP decreased the effect of incentives on velocity (incentive * THP: β=–0.0216, p=0.0030), indicating that muscarinic blockade diminished motivation by incentives. Figure 1d shows that this effect was similar in distractor absent/present trials, although slightly stronger when the distractor was absent; the three-way (distractor*incentive*THP) interaction was not significant (p>0.05), suggesting that the distractor-present trials had the same effect but weaker (Figure 1d).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig1-v1.jpg)
+
+**Figure 1.:** (a) Trial structure for a high incentive trial with a salient distractor. After fixation on the pink starting circle, the incentive cue plays, and after a short fixation wait the preparation cue is given which is the fixation cross turning white. 1500 ms later, one circle dims, which is the target, and on 50% of trials the other circle brightens (salient distractor). Feedback is given when participants saccade to the target, based on their speed. Timings are given below each screen. (b) Eye position as a function of time for a selection of saccades. Saccade reaction time (RT) is the time at which the saccade begins, peak velocity is the maximal speed during the movement (steepest slope here), and amplitude is the distance to the saccade endpoint. (c) Plotting peak velocity against amplitude (sample data) shows the main sequence effect (dashed lines) where larger saccades have higher velocity. We regressed velocity on amplitude separately within each drug session (to control for potential drug effects on amplitude, velocity, or the main sequence), giving residual peak velocity as our measure of vigour (solid vertical lines). (d) Mean peak residual velocity for each condition (20 participants, 18585 trials). Incentives increased velocity (single-trial linear mixed-effects regression; β=0.1266, p<0.0001; see Table 1 for full statistics), distractors decreased it (β=–0.0158, p=0.0294), and THP reduced the invigoration by incentives (β=–0.0216, p=0.0030). This interaction was significant only for the no-distractor trials. Crosses show individual participant means for each condition, and error bars show within-subject SEM. (e) Mean saccadic RT for each condition (log RT was analysed, raw values plotted here). High incentives decreased RT (β=–0.0767, p<0.0001), distractors slowed RT (β=0.0358, p<0.0001), and THP reduced the effect of incentive on RT (β=0.0218, p=0.0002) – which was driven by trials with distractors present. Crosses show individual participant means for each condition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The correlation is negative as RT is inverse to response speed, meaning in both variables the drug is reducing the incentive speeding effect. Each dot shows one participant’s mean (20 participants), the line is the linear correlation, the shading shows the 95% confidence interval of the slope, and the text shows the Spearman’s correlation and p-value. (a) Incentive effect is measured as the mean difference in RT and velocity between 50p and 0p conditions, averaged across drug and distractor factors. (b) THP*incentive effect is measured as the mean difference between incentive effects for the drug and placebo conditions, averaged across the distractor levels.
+
+**Table 1.**
+ Linear mixed-effects single-trial regression outputs for behavioural variables.Each model included a random effect of participant (20 participants, 18585 trials), along with all lower-order interactions and main effects: ‘behaviour ~ 1 + incentive * distractor * THP + (1 | participant)’. RT was log-transformed for this analysis. Significant effects are shown in bold italics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Term</th>
+      <th>β</th>
+      <th>CI</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Residual velocity(df = 1, 18,577)</td>
+      <td>Incentive</td>
+      <td>0.1266</td>
+      <td>0.1123, 0.1408</td>
+      <td>0.0073</td>
+      <td>17.4001</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>–0.0158</td>
+      <td>−0.0301,–0.0016</td>
+      <td>0.0073</td>
+      <td>–2.1786</td>
+      <td>0.0294</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>–0.0001</td>
+      <td>–0.0144, 0.0141</td>
+      <td>0.0073</td>
+      <td>–0.0153</td>
+      <td>0.9878</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>–0.0067</td>
+      <td>0.0201, 0.0076</td>
+      <td>0.0073</td>
+      <td>–0.9143</td>
+      <td>0.3605</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>–0.0216</td>
+      <td>−0.0358,–0.0073</td>
+      <td>0.0073</td>
+      <td>–2.9678</td>
+      <td>0.0030</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>0.0023</td>
+      <td>–0.0120, 0.0165</td>
+      <td>0.0073</td>
+      <td>0.3152</td>
+      <td>0.7526</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>0.0052</td>
+      <td>–0.0091, 0.0195</td>
+      <td>0.0073</td>
+      <td>0.7158</td>
+      <td>0.4741</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Saccade RT(df = 1, 18,577)</td>
+      <td>Incentive</td>
+      <td>–0.0767</td>
+      <td>−0.0884,–0.0651</td>
+      <td>0.0059</td>
+      <td>–12.9162</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>0.0348</td>
+      <td>0.0231, 0.0464</td>
+      <td>0.0059</td>
+      <td>5.8549</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>0.0244</td>
+      <td>0.0127, 0.0360</td>
+      <td>0.0059</td>
+      <td>4.1010</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>–0.0035</td>
+      <td>–0.0151, 0.0082</td>
+      <td>0.0059</td>
+      <td>–0.5826</td>
+      <td>0.5601</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>0.0218</td>
+      <td>0.0102, 0.0335</td>
+      <td>0.0059</td>
+      <td>3.6723</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>–0.0117</td>
+      <td>−0.0233,–0.0001</td>
+      <td>0.0059</td>
+      <td>–1.9689</td>
+      <td>0.0490</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>0.0076</td>
+      <td>–0.0041, 0.0192</td>
+      <td>0.0059</td>
+      <td>1.2714</td>
+      <td>0.2036</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Distractor pull(df = 1, 18,577)</td>
+      <td>Incentive</td>
+      <td>0.0023</td>
+      <td>–0.0114, 0.0160</td>
+      <td>0.0070</td>
+      <td>0.3261</td>
+      <td>0.7444</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>0.2446</td>
+      <td>0.2309, 0.2583</td>
+      <td>0.0070</td>
+      <td>35.0416</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>0.0283</td>
+      <td>0.0146, 0.0420</td>
+      <td>0.0070</td>
+      <td>4.0570</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>0.0028</td>
+      <td>–0.0109, 0.0165</td>
+      <td>0.0070</td>
+      <td>0.3982</td>
+      <td>0.6905</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>0.0030</td>
+      <td>–0.0107, 0.0167</td>
+      <td>0.0070</td>
+      <td>0.4340</td>
+      <td>0.6643</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>0.0226</td>
+      <td>0.0089, 0.0363</td>
+      <td>0.0070</td>
+      <td>3.2348</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>–0.0039</td>
+      <td>–0.0177, 0.0098</td>
+      <td>0.0070</td>
+      <td>–0.5631</td>
+      <td>0.5734</td>
+    </tr>
+  </tbody>
+</table>
+
 Saccadic RT (time to initiation of saccade) was slower when participants were given THP (β=0.0244, p=<0.0001), faster with incentives (Figure 1e; β=–0.0767, p<0.0001), and slowed by distractors (β=0.0358, p<0.0001). Again, THP reduced the effects of incentives (incentive*THP: β=0.0218, p=0.0002). Figure 1e shows that this effect was similar in distractor absent/present trials, although slightly stronger when the distractor was present; as the three-way (distractor*incentive*THP) interaction was not significant and the direction of effects was the same in the two, it suggests the effect was similar in both conditions. Additionally, the THP*incentive interactions were correlated between saccadic RT and residual velocity at the participant level (Figure 1—figure supplement 1).
 
-## Cholinergic blockade increases distractibility
+### Cholinergic blockade increases distractibility
 
 We measured distractibility as the angular deviation of the eye position away from the target’s orientation towards the distractor’s location, at the start of the saccade (Figure 2a), which indicates the pull of the distractor. The distribution of distractor pull is bimodal, with saccades directed towards either the target or distractor locations (Figure 2c). When the distractor did not light up, the mean distractor angle was negative (i.e. away from the distractor angle), indicating repulsion away from the angle of the distractor, whereas when the distractor lit up and was salient the mean angle was biased towards the distractor (Figure 2b; β=0.2446, p<0.0001; see Table 1). Single-trial linear mixed-effects regression found that THP increased the pull (main effect of drug, β=0.0283, p<0.0001), but only when the distractor was salient (THP*distractor, β=0.0226, p=0.0012, pairwise drug effect: distractor absent: p>0.3; present: β=0.0511, p<0.0001). Unlike in previous work, we found no effect of incentives on distraction (β=0.0023, p=0.7444), although speed-accuracy trade-off curves (Figure 2—figure supplement 1) showed that incentives sped up responses in such a way that distraction was reduced for a given RT.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig2-v1.jpg)
+
+**Figure 2.:** (a) Sample saccades showing fixation at the bottom left circle, the target on the right, and the distractor on the top. Distractor pull is the angle of the eye when it leaves the fixation circle, relative to a straight line from the fixation to target circle (positive values reflect angles towards the distractor, zero is flat, negative reflects repulsion). (b) Mean distractor pulls for low and high incentives when the salient distractor is and is not present (crosses show individual participant means per condition, error-bars are within-subject SEM; 20 participants, 18585 trials). Distractor pull was negative (i.e. below the horizontal line in panel a) reflecting repulsion from the distractor when it did not light up. However, when the distractor did light up, distractor pull was positive (single-trial linear mixed-effects regression; β=0.2446, p<0.0001), reflecting a bias towards it, and this bias was greater on trihexyphenidyl (THP) than placebo (distractor*THP interaction: β=0.0226, p=0.0012; full statistics are given in Table 1). (c) Mean kernel-smoothed density of distractor pulls for all trials with a distractor (averaged across all other conditions) with shading showing the within-subject standard errors. There is a smaller peak centred on the distractor’s orientation (grey dashed line and circle). Negative distractor pulls show the repulsive bias away from the distractor location. (d) Mean kernel-smoothed densities showing the effects of incentive (i.e. 50p – 0p) and THP (i.e. THP – incentive) for all ‘with distractor’ trials. Cluster-based permutation testing showed that THP reduced the number of trials biased around –30° (p<0.05), indicating reduced repulsive bias when muscarinic receptors are antagonised.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** For all trials with a distractor present, after binning RT into 80 percentile windows for each subject (N=20) and condition, and plotting mean distractor pull angle for each bin. Distractor pull was greatest for quickest saccades, and incentives sped responses (solid lines shifted leftwards), while trihexyphenidyl (THP) increased distraction (orange lines shifted upwards) and slowed RT (small rightwards shift). This means that for a given speed, distraction was lessened by incentives and increased by THP.
 
 The drug-related increase in distraction could be due to either greater pull or reduced repulsion. To distinguish these possibilities, we plotted the distribution of distractor pull across trials where the distractor was present (Figure 2c). THP reduced the probability of repulsion (Figure 2d) around –30°, indicating that THP reduced the repulsion away from the distractor’s location. This suggests weaker attentional suppression of the distractor. Incentives had little effect on the distribution (yellow line) in keeping with the averages in Figure 2b.
 
 Therefore, acetylcholine antagonism reduced the invigoration of saccades by incentives, and decreased the repulsion of salient distractors. We next asked whether these effects were coupled with changes in preparatory neural activity.
 
-## Preparatory neural activity is modulated by incentive and acetylcholine
+### Preparatory neural activity is modulated by incentive and acetylcholine
 
 We examined EEG activity in the delay period between the preparation cue and the target (and distractor) onset, first using three time-windows of interest, then a cluster-based permutation approach. There was an early fronto-central positive event-related potential (ERP) with a peak around 220 ms, consistent with the P3a (Figure 3a), which was then followed by a growing negative potential centrally, consistent with the CNV. From the grand-average ERP over all conditions, we chose 200–280 ms at Cz for the early ERP, and 1200–1500 ms at Cz for the CNV. Note that both these periods began >1.5 s after the incentive was presented.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig3-v1.jpg)
+
+**Figure 3.:** (a) Grand-average ERPs in electrode Cz split for the four conditions (low and high incentive, placebo and trihexyphenidyl [THP]; 20 participants, within-subject SEM error-bars). The three time-windows are highlighted in different colours, and correspond to the columns of panels below, with topographies of the mean amplitude within each window superimposed. The ‘incentive’ window is a non-contiguous window of 900–1100 ms after the incentive cue, just before the preparation cue appears, which contains the late negative potential after the incentive cue. (b–d) The mean voltages within each time-window for the different incentive and drug conditions (individual participants’ data are shown in Figure 3—figure supplement 1, and full statistics are given in Table 2). (b) Late ERP to the incentive cue (900:1100 ms at Cz) was more negative when on THP than placebo (single-trial linear mixed-effects regression with 16627 trials; β=–0.0597, p<0.0001), but it was not affected by incentive (p>0.05). (c) Mean P3a (200:280 ms after the preparation cue) is decreased by high incentives (β=–0.0187, p=0.0142) but unaffected by THP (p>0.1, note the different y-axis scale to b and d). (d) The contingent negative variation (CNV) (1200:1500 ms after the preparation cue) is strengthened (more negative) by incentives (β=–0.0928, p<0.0001) and THP (β=–0.0502, p<0.0001), with a weak interaction (β=0.0172, p=0.0213) as THP slightly reduces the incentive effect (flatter slope for the orange line; and THP lines are closer than placebo lines in panel a). (e–g) The beta-coefficients from regressing each component against each behavioural variable, with stars representing significant associations (p<0.0056; Bonferroni-corrected for nine comparisons, error bars are 95% CI). (h) Difference waves showing the effects of incentive (50p – 0p, averaged over other factors) and THP (THP – placebo, averaged over other factors). Incentive starts decreasing (i.e. strengthening) the CNV early (during the P3a window), while the THP effect starts around 900 ms after the preparation cue. (i) Difference waves showing incentive effects within each drug condition separately. Incentives strengthen the CNV for both conditions, with the effect growing more slowly for the THP condition, reflecting the THP*incentive interaction reported in the main text.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The means for each individual person (N=20) are superimposed on top. These figures can be created using Figure 3—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** We used difference waves, and difference-of-difference waves for the interaction, with cluster-based permutation testing (20 participants, 2500 iterations, family-wise error rate [FWER] = 0.05; DMGroppe Mass Univariate toolbox; Groppe et al., 2011). (a) t-Statistics for the incentive difference wave (i.e. 50p – 0p, averaged across other factors) for three selected channels, with the solid bar at the bottom showing significant clusters (FWER = 0.05). The topographies below show the t-statistics for all channels at the times written on the x-axis, with the yellow dots representing electrodes in significant clusters. Higher incentives lead to more negative voltages centro-posteriorly from about 400 ms after the preparation cue began, and this increases over the epoch. (b) t-Statistics for the drug difference wave (THP – placebo) shows no significant clusters at any channels or time-points, suggesting that THP did not change the voltage overall. (c) Difference of difference waves showing the THP*incentive interaction ((drug 50p – 0p) – (placebo 50p – 0p)) also shows no cluster of significant difference.
+
 We used single-trial linear mixed-effects regression to see the effects of incentive and THP on each ERP (20 participants, 16,627 trials; distractor was included too, along with all interactions, and a random intercept by participant). Prior to the preparation cue (900–1100 ms after incentive cue, baselining at the incentive cue; green shaded area in Figure 3a), THP strengthened negativity (Figure 3b, β=–0.0597, p<0.0001; see Table 2 for full ERP statistics), but incentives had no effect or interaction (p>0.05). After the preparation cue, the P3a (Figure 3c) was significantly smaller for high incentive trials (β=–0.0187, p=0.0142) with no other significant effects (p>0.1). The subsequent CNV was strengthened (i.e. more negative; Figure 3d) by incentive (β=–0.0928, p<0.0001) and THP (β=–0.0502, p<0.0001), with an interaction whereby THP decreased the incentive effect (β=0.0172, p=0.0213). Figure 3h shows the effects of incentive and THP on the CNV separately, using difference waves, and Figure 3i shows the incentive effect grows more slowly in the THP condition than the placebo condition.
+
+**Table 2.**
+ Linear mixed-effects single-trial regression outputs for P3a and contingent negative variation (CNV).Significant effects are shown in bold italics. Each model also included a random effect of participant, along with all lower-order interactions and main effects: ‘ERP ~ 1 + incentive * distractor * THP + (1 | participant)’. There were 20 participants and 16627 trials in total.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Term</th>
+      <th>β</th>
+      <th>CI</th>
+      <th>SE</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">P3a(df = 1, 16,619)</td>
+      <td>Incentive</td>
+      <td>–0.0186</td>
+      <td>−0.0335,–0.0037</td>
+      <td>0.0076</td>
+      <td>–2.4509</td>
+      <td>0.0143</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>–0.0088</td>
+      <td>–0.0237, 0.0061</td>
+      <td>0.0076</td>
+      <td>–1.1572</td>
+      <td>0.2472</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>0.0004</td>
+      <td>–0.0153, 0.0145</td>
+      <td>0.0076</td>
+      <td>0.0490</td>
+      <td>0.9610</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>–0.0042</td>
+      <td>–0.0191, 0.0107</td>
+      <td>0.0076</td>
+      <td>–0.5557</td>
+      <td>0.5785</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>–0.0002</td>
+      <td>–0.0169, 0.0129</td>
+      <td>0.0076</td>
+      <td>–0.2656</td>
+      <td>0.7906</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>–0.0095</td>
+      <td>–0.0244, 0.0054</td>
+      <td>0.0076</td>
+      <td>–1.2467</td>
+      <td>0.2125</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>0.0054</td>
+      <td>–0.0095, 0.0203</td>
+      <td>0.0076</td>
+      <td>0.7118</td>
+      <td>0.4766</td>
+    </tr>
+    <tr>
+      <td rowspan="7">CNV(df = 1, 16,619)</td>
+      <td>Incentive</td>
+      <td>–0.0917</td>
+      <td>−0.0106,–0.0771</td>
+      <td>0.0075</td>
+      <td>–12.258</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>–0.0032</td>
+      <td>–0.0178, 0.0115</td>
+      <td>0.0075</td>
+      <td>–0.4278</td>
+      <td>0.6688</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>–0.0512</td>
+      <td>−0.0659,–0.0365</td>
+      <td>0.0075</td>
+      <td>–6.8409</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>–0.0002</td>
+      <td>–0.0149, 0.0144</td>
+      <td>0.0075</td>
+      <td>–0.0301</td>
+      <td>0.9760</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>0.0165</td>
+      <td>0.0018, 0.0311</td>
+      <td>0.0075</td>
+      <td>2.2036</td>
+      <td>0.0276</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>–0.0042</td>
+      <td>–0.0188, 0.0105</td>
+      <td>0.0075</td>
+      <td>–0.5560</td>
+      <td>0.5762</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>–0.0037</td>
+      <td>–0.0184, 0.0109</td>
+      <td>0.0075</td>
+      <td>–0.4974</td>
+      <td>0.6189</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Pre-preparation cue(df = 1, 15,879)</td>
+      <td>Incentive</td>
+      <td>–0.0006</td>
+      <td>–0.0158, 0.0147</td>
+      <td>0.0078</td>
+      <td>–0.0712</td>
+      <td>0.9430</td>
+    </tr>
+    <tr>
+      <td>Distractor</td>
+      <td>0.0064</td>
+      <td>–0.0089, 0.0216</td>
+      <td>0.0078</td>
+      <td>0.8186</td>
+      <td>0.4130</td>
+    </tr>
+    <tr>
+      <td>THP</td>
+      <td>–0.0597</td>
+      <td>−0.0751,–0.0443</td>
+      <td>0.0078</td>
+      <td>–7.6126</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor</td>
+      <td>–0.0039</td>
+      <td>–0.0191, 0.0114</td>
+      <td>0.0078</td>
+      <td>–0.4959</td>
+      <td>0.6200</td>
+    </tr>
+    <tr>
+      <td>Incentive * THP</td>
+      <td>–0.0127</td>
+      <td>–0.0279, 0.0026</td>
+      <td>0.0078</td>
+      <td>–1.6256</td>
+      <td>0.1041</td>
+    </tr>
+    <tr>
+      <td>Distractor * THP</td>
+      <td>–0.0015</td>
+      <td>–0.0168, 0.0137</td>
+      <td>0.0078</td>
+      <td>–0.1963</td>
+      <td>0.8444</td>
+    </tr>
+    <tr>
+      <td>Incentive * distractor * THP</td>
+      <td>–0.0030</td>
+      <td>–0.0183, 0.0123</td>
+      <td>0.0078</td>
+      <td>–0.3843</td>
+      <td>0.7008</td>
+    </tr>
+  </tbody>
+</table>
 
 This suggests that while incentives strengthened the incentive-cue response and the CNV and weakened the P3a, muscarinic antagonism strengthened the CNV, and the incentive*THP interaction was only seen on the CNV in the same direction as that seen with the vigour and RT – THP reduced the incentive effect. Thus, although the drug and reward both increased the CNV build-up, the drug reduced the reward effect.
 
-## Neural preparation predicts RT and distraction
+### Neural preparation predicts RT and distraction
 
 We regressed the mean amplitude of the pre-preparation activity, P3a and CNV against velocity, RT, and distractor pull (including incentive, distractor, and drug conditions as covariates), and Bonferroni-corrected the p-values for nine multiple comparisons. Pre-preparation voltage and P3a did not predict any behavioural variable (Figure 3e–f), while CNV predicted RT and distractor pull (Figure 3g, p<0.0001; see Figure 3—source data 2 for statistics) but not vigour.
 
 As vigour was not associated with our a priori ERPs, we ran a window-free analysis to find spatial or temporal regions of the EEG activity that was associated with vigour, as well as RT and distractor pull. This is an exploratory analysis, and given the small sample size should be interpreted with caution. We regressed each electrode and time-point against the three behavioural variables separately, while controlling for effects of incentive, distractor, THP, the interactions of those factors, and a random effect of participant. This analysis therefore asks whether trial-to-trial neural variability predicts behavioural variability. To assess significance, we used cluster-based permutation tests (DMGroppe Mass Univariate toolbox; Groppe et al., 2011), shuffling the trials within each condition and person, and repeating it 2500 times, to build a null distribution of ‘cluster mass’ from the t-statistics (Bullmore et al., 1999; Maris and Oostenveld, 2007) which was used to calculate two-tailed p-values with a family-wise error rate (FWER) of 0.05 (see Methods/Analysis for details). Velocity, RT, and distraction were predicted by preparatory EEG voltages before the onset of the target, each with distinct patterns (Figure 4). Residual velocity was significantly predicted by frontal electrodes from about 280 ms after the preparation cue, which was strongest on electrode AF8. This did not encompass electrode Cz. RT was strongly predicted by EEG voltage over a very large scalp area, centred on Cz from about 250 ms onwards. Distractor pull was predicted by frontal electrodes from about 120 ms after preparation cue, and this spread posteriorly to reach central and posterior electrodes by about 650 ms.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig4-v1.jpg)
+
+**Figure 4.:** The time series show the regression coefficients for three chosen electrodes, with the solid bars at the bottom showing significant clusters for those electrodes (family-wise error rate [FWER] = 0.05; 20 participants, 16627 trials). Topographies are shown below the graph at the times written on the x-axis, with the colours showing the regression coefficient and yellow electrodes showing significant clusters. (a) Residual velocity is predicted by voltage in the frontal electrodes briefly from 150:190 ms after preparation cue, and then again from 280 ms onwards, and gradually spreads backwards. (b) Reaction time (RT) is predicted by almost all electrodes from 250 ms onwards, and is strongest centrally. (c) Distractor pull is predicted by frontal electrodes from 120 ms and this grows stronger over time, the central and posterior electrodes have a brief cluster around 180 ms but only become consistently associated from 650 ms.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The association between the electroencephalography (EEG) signals and each behavioural measure remained after accounting for the other two measures, with a very similar pattern to the main results (Figure 4). The time series show the regression coefficients for three chosen electrodes, with the solid bars at the bottom showing significant clusters for those electrodes (family-wise error rate [FWER] = 0.05; 20 participants). Topographies are shown below the graph at the times written on the x-axis, with the colours showing the regression coefficient and yellow electrodes showing significant clusters. (a) Residual velocity is predicted by voltage in the frontal electrodes briefly from 150:190 ms after preparation cue, and then again from 280 ms onwards, and gradually spreads backwards. (b) Reaction time (RT) is predicted by almost all electrodes from 250 ms onwards, and is strongest centrally. (c) Distractor pull is predicted by frontal electrodes from 120 ms and this grows stronger over time, the central and posterior electrodes have a brief cluster around 180 ms but only become consistently associated from 650 ms.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** We included either the number of microsaccades (left), or the mean ocular drift speed (right) during the entire preparation period, as covariates in the regression model. (We did not do the permutation testing for this control analysis, due to time constraints.) The beta-coefficients are almost unchanged from the analyses presented in Figure 4, either in the time-course of the selected channels or in the topographies.
+
 To check that these associations were not confounded by correlations between the saccadic measures themselves (e.g. RT is negatively correlated with residual velocity; r=–0.0681, p<0.0001), we re-ran this analysis while controlling for the other two saccadic measures. This did not materially change the results, indicating that preparatory EEG predicts these aspects of performance independently (Figure 4—figure supplement 1). An additional control analysis found that these results were not driven by microsaccades or ocular drift during the preparation period, as including these as trial-wise covariates did not substantially change the beta-coefficients (Figure 4—figure supplement 2).
 
-## Preparatory activity explains incentive effects on RT but not movement speed
+### Preparatory activity explains incentive effects on RT but not movement speed
 
 We have found that neural preparatory activity can predict residual velocity and RT, and is also affected by incentives and THP. Finally, we ask whether the neural activity can explain the effects of incentives and THP, through mediation analyses. We used the Baron and Kenny, 1986, method to assess mediation (see Methods/Analysis for full details). This tests whether the significant incentive effect on behaviour could be partially reduced (i.e. explained) by including the CNV as a mediator in a mixed-effects single-trial regression. We measured mediation as the reduction in (absolute) beta-coefficient for the incentive effect on behaviour when the CNV was included as a mediator (i.e. RT ~ 1 + incentive + CNV + incentive*CNV + (1 | participant)). This is a directional hypothesis of a reduced effect, and to assess significance we ran a permutation test, shuffling the CNV within participants, and measuring the change in absolute beta-coefficient for the incentive effect on behaviour. This generates a distribution of mediation effects where there is no relationship between CNV and RT on a trial (i.e. a null distribution). We ran 2500 permutations, and calculated the proportion with an equal or more negative change in absolute beta-coefficient, equivalent to a one-tailed test. We ran this mediation analysis separately for the two behavioural variables of RT and residual velocity, but not for distractor pull as it was not affected by incentive, so failed the assumptions of mediation analyses (Baron and Kenny, 1986; Muller et al., 2005). We took the mean CNV amplitude from 1200:1500 ms as our mediator.
 
@@ -74,7 +496,7 @@ Residual velocity passed all the assumption tests for mediation analysis, but no
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/98922/elife-98922-fig5-v1.jpg)
 
-**Figure 5.:** Black lines show significant associations, with single-trial regression coefficients (20 participants, 16627 trials), and significance indicated by the text, dashed red lines show significant mediations (permutation testing), and dashed orange lines show significant mediated moderations (permutation testing). (a) There was no mediation of the incentive effect on residual velocity by the mean CNV (1200:1500 ms). (b) However, CNV does partially mediate the effect of incentive on saccadic RT (dashed red line shows the indirect effect, which is the partial mediation). (c) Mediated moderation analysis: CNV mediated the moderation of trihexyphenidyl (THP) on the incentive effect.Figure 5—source data 1.Figure 5—source data 2.
+**Figure 5.:** Black lines show significant associations, with single-trial regression coefficients (20 participants, 16627 trials), and significance indicated by the text, dashed red lines show significant mediations (permutation testing), and dashed orange lines show significant mediated moderations (permutation testing). (a) There was no mediation of the incentive effect on residual velocity by the mean CNV (1200:1500 ms). (b) However, CNV does partially mediate the effect of incentive on saccadic RT (dashed red line shows the indirect effect, which is the partial mediation). (c) Mediated moderation analysis: CNV mediated the moderation of trihexyphenidyl (THP) on the incentive effect.
 
 However, RT did show a significant mediation of the incentive effect by CNV: incentive predicted RT: (β=−0.0868, t(1,16,476)=−14.9330, p<0.0001); incentive predicted CNV (β=−0.9122, t(1,16,476)=−12.1800, p<0.0001); and CNV predicted RT when included alongside incentive (β=0.0127, t(1,16,475)=21.3160, p<0.0001). The CNV mediated the effect of incentive on RT, reducing the absolute beta-coefficient (β=−0.0752, t(1,16,475)=−13.0570, p<0.0001; change in absolute coefficient: Δβ=–0.0116). We assessed the significance of this change via permutation testing, shuffling the CNV across trials (within participants) and calculating the change in absolute beta-coefficient for the incentive effect on RT when the permuted CNV was included as a mediator. We repeated this 2500 times to build a null distribution of Δβ, and calculated the proportion with equal or stronger reductions for a one-tailed p-value, which was highly significant (p<0.0001). This suggests that the incentive effect on RT is partially mediated by the CNV’s amplitude during the preparation period, and this is not the case for residual velocity.
 
@@ -100,29 +522,29 @@ While we have interpreted these effects as due to incentivisation, other closely
 
 Care should be taken when interpreting a lack of effects in this study, given the reduced power due to a smaller than expected sample size. This may be more applicable to the whole-brain regressions and the mediation analysis, so future replications would be useful to verify these results. Additionally, as this study only tested young men, it is not known how generalisable the findings are to older adults, who may have age-induced changes in their cholinergic function, or indeed to patients with Parkinson’s disease, who have additional dopaminergic deficits. Recent work showed that cholinesterase inhibitor withdrawal in patients with Parkinson’s disease impaired a range of attentional and memory functions (Fallon et al., 2023), and investigating motivational impairments would be useful too. The effects of acetylcholine on motivation are of crucial importance in Parkinson’s disease, where the balance between dopamine and acetylcholine is disrupted (Pisani et al., 2007; Schulz et al., 2018), leading to apathy or impulsivity (Devos et al., 2014). As THP is often used to treat tremor in Parkinson’s disease, the finding that it impairs motivation suggests that it may worsen motivational symptoms in a population already troubled by apathy.
 
-## Conclusion
+### Conclusion
 
 Muscarinic M1r antagonism reduced the incentivisation of saccadic peak velocity and RT, suggesting that normally M1r activity is important for motivation. The incentives strengthened the CNV, a preparatory EEG component, and this mediated the incentivisation of RT and the reduction of this incentivisation by the drug, implicating the CNV as a potential marker of muscarinic invigoration.
 
 ## Methods
 
-## Design
+### Design
 
 We used a randomised, counterbalanced, double-blinded, placebo-controlled trial of THP. Participants were tested twice (minimum 1 week separation), once on placebo, and once on THP, making this a within-subject study. Ethical approval was granted by the University of Oxford MSIDREC (R45265/RE001).
 
-## Drugs
+### Drugs
 
 Participants were administered 2 mg THP or 200 mg lactose pills, both encapsulated in a digestible shell, and labelled A and B by a colleague not involved in the study. Participants were randomised to receive either tablet A or B on their first session, and B or A on their second. The experimenters did not know whether A or B contained the drug until all data were collected and pre-processed. On arrival, we checked participants felt well, and administered the dose. Testing began 1.5–2 hr later.
 
 The risks of THP in pregnancy are unknown, but the Summary Product of Characteristics states that it ‘should not be used during pregnancy unless clearly necessary’. As this was a basic research study with no immediate clinical applications, there was no justification for any risk of administering the drug during pregnancy, so we only recruited male participants to keep this risk at zero.
 
-## Participants
+### Participants
 
 Our sample size calculations suggested 27 participants would detect a 0.5 effect size with 0.05 sensitivity and 0.8 power. We recruited 27 male participants (see Drugs section above), but due to the pandemic, we had to halt the study part-way, with 20 completed participants and 5 participants who had completed one session only. We only analysed the 20 completed participants, which achieved a post hoc power of 0.7. The mean age was 28.15 years (SD = 8.03 years).
 
 Participants read the information sheet, and gave written informed consent. Participants were screened for contraindications (e.g. cardiovascular disease, hypo/hypertension, cardiac arrhythmia, stroke, kidney/liver disease, psychiatric conditions, gastrointestinal haemorrhage, glaucoma, epilepsy, lactose hypersensitivity, porphyria) for the drug and placebo, and 1-lead ECG was taken to check for prolonged QTc interval of over 480 ms. A medical doctor checked all this information before the participant was admitted to the study.
 
-## Task
+### Task
 
 To measure invigoration of saccades by incentives, we adapted an incentivised saccade task (Manohar and Husain, 2015), where participants had to make speeded saccades to a low-salience target in exchange for money, while avoiding a high-salience distractor. The task was run in Matlab R2018b and Psychtoolbox-3 (Kleiner et al., 2007).
 
@@ -134,7 +556,7 @@ Participants were given 24 practice trials during the screening visit and before
 
 In addition to this task, two other tasks were performed that are not reported in this paper, including a working memory task and a reversal learning task. We asked participants to rate how they felt on a visual analogue scale before and after the tasks, and participants also performed a pro- and anti-saccade task, and measurement of the pupillary light reflex.
 
-## Eye-tracking
+### Eye-tracking
 
 We tracked participants’ eyes with an EyeLink 2000 (SR Research) at 1000 Hz. Participants were seated 75 cm from the screen, with their head on a chin-rest and forehead-rest. Nine-point calibration was performed at the start of the task, and one-point validation was done at the start of each block, with re-calibrations if necessary. Stimuli were shown on an ASUS VG248Qe3D screen (53×30 cm, 1920×1080 pixels, 60 Hz).
 
@@ -144,7 +566,7 @@ Saccadic velocity is correlated with the amplitude of the saccade, an effect kno
 
 Saccadic RT was taken as the time between target onset and the start of the saccade (as detected by EyeLink velocity and acceleration criteria; Figure 1b) in ms; we used log RT for the analyses but plot raw RT. Distractor pull was measured as the angular deviation of the eye from a straight line linking the fixation and target circles (Figure 2a) when it left the fixation circle; positive values reflected a bias towards the distractor, while negative values reflected a bias away from the distractor.
 
-## EEG acquisition and pre-processing
+### EEG acquisition and pre-processing
 
 We recorded EEG with a Refa72 amplifier (TMSi, B.v Netherlands) at 1024 Hz and using OpenVibe software (Renard et al., 2010). We used a 64-channel cap (TMSi). The ground was placed on the left clavicle, and we recorded horizontal EOG with bipolar electrodes placed either side of the eyes. Due to the cap, we could not place an EOG electrode above the eye, so one was placed 1 cm under the left eye, and this was converted into a bipolar EOG signal as the difference from electrode FP1, which was the closest cap electrode to the left eye. Impedances were kept below 10 kΩ as it was a high-impedance system.
 
@@ -154,7 +576,7 @@ Epochs were from –200:1500 ms around the preparation cue onset, and were basel
 
 We took the late CNV period (1200:1500 ms) at electrode Cz as our a priori region of interest, along with the cue-P3 (200–280 ms). In order to see whether our results were specific to preparatory activity, we looked at activity before the preparation cue began, and looked at the late ERP to the incentive cue. We epoched the data from –200:1100 ms around the incentive cue onset (which was the duration of the incentive cue), and used the same artefact rejection criteria as above.
 
-## Analysis
+### Analysis
 
 Behavioural and EEG analysis included all 20 participants, although trials with EEG artefacts were included in the behavioural analyses (18,585 trials in total) and not the EEG analyses (16,627 trials in total), to increase power in the former. Removing these trials did not change the findings of the behavioural analyses.
 

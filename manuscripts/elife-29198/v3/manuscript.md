@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.29198.001 Suspected malaria cases in Africa increasingly receive a rapid diagnostic test (RDT) before antimalarials are prescribed. While this ensures efficient use of resources to clear parasites, the underlying cause of the individual’s fever remains unknown due to potential coinfection with a non-malarial febrile illness. Widespread use of RDTs does not necessarily prevent over-estimation of clinical malaria cases or sub-optimal case management of febrile patients. We present a new approach that allows inference of the spatiotemporal prevalence of both Plasmodium falciparum malaria-attributable and non-malarial fever in sub-Saharan African children from 2006 to 2014. We estimate that 35.7% of all self-reported fevers were accompanied by a malaria infection in 2014, but that only 28.0% of those (10.0% of all fevers) were causally attributable to malaria. Most fevers among malaria-positive children are therefore caused by non-malaria illnesses. This refined understanding can help improve interpretation of the burden of febrile illness and shape policy on fever case management.
+Suspected malaria cases in Africa increasingly receive a rapid diagnostic test (RDT) before antimalarials are prescribed. While this ensures efficient use of resources to clear parasites, the underlying cause of the individual’s fever remains unknown due to potential coinfection with a non-malarial febrile illness. Widespread use of RDTs does not necessarily prevent over-estimation of clinical malaria cases or sub-optimal case management of febrile patients. We present a new approach that allows inference of the spatiotemporal prevalence of both Plasmodium falciparum malaria-attributable and non-malarial fever in sub-Saharan African children from 2006 to 2014. We estimate that 35.7% of all self-reported fevers were accompanied by a malaria infection in 2014, but that only 28.0% of those (10.0% of all fevers) were causally attributable to malaria. Most fevers among malaria-positive children are therefore caused by non-malaria illnesses. This refined understanding can help improve interpretation of the burden of febrile illness and shape policy on fever case management.
 
 ## Introduction
 
@@ -29,25 +29,31 @@ Ambiguity around causality in RDT-positive fever cases is problematic from both 
 
 Diagnosing and treating NMFI is challenging as symptoms of many of these diseases can be non-specific and similar to malaria, for example bacterial infections such as pneumonia (Hildenwall et al., 2016; Källander et al., 2004) and meningitis (Gwer et al., 2007). Additionally, routine diagnostic tests have not yet been developed or are not commonplace for many of these diseases (Chappuis et al., 2013). From the health systems perspective, case management may be inadequate if individuals who receive a positive RDT result but have a co-infection with another pathogen do not receive effective treatment for their fever. For these reasons, there is a pressing need to understand the contribution of malaria to febrile illness and how this varies spatially and temporally across endemic Africa.
 
-## Estimating malaria-attributable fever prevalence
+### Estimating malaria-attributable fever prevalence
 
 The rate of fever associated with (but not necessarily caused by) a malaria infection has been shown to have declined over time in some settings, halving between 1986 and 2007 in one collation of field studies (D'Acremont et al., 2010); a trend likely driven by the declining prevalence of malaria over the latter portion of that time period. Estimating the fraction of these fevers in which the malaria infection is the causal pathogen (i.e. the malaria-attributable fraction) is challenging, and various methods have been developed. Attempts have been made to measure the malaria-attributable fraction arithmetically using case-control trials, where the difference in the rate of malaria positivity in febrile and afebrile individuals is used to calculate the attributable fraction (Ehrhardt et al., 2006; Schellenberg et al., 1994; Smith et al., 1994). Alternatively, logistic regression approaches have been developed to estimate causal fractions based on measurements of blood parasite density. This approach has been demonstrated in numerous field trials, including various settings in Kenya (Afrane et al., 2014; Bloland et al., 1999), in an area of seasonal transmission in Burkina Faso (Bisoffi et al., 2010), and in a national survey in Mozambique (Mabunda et al., 2009). Computational simulations of malaria transmission can also be adapted to estimate an upper bound on the malaria-attributable fraction of fevers at varying levels of Plasmodium falciparum prevalence (PfPR), by monitoring the proportion of parasite-positive individuals within a simulation with a symptomatic infection (here, a symptomatic infection is synonymous with a malaria attributable fever, as co-infections with other pathogens are not typically simulated) (Griffin et al., 2010; Ross et al., 2006). None of these approaches make use of the rich trove of national household survey data recording malaria infection status as well as fever history that are now available for multiple countries and years from sources such as the DHS Program (DHS Program, 2017) and the UNICEF Multiple Indicator Cluster Surveys (UNICEF, 2017).
 
-## Using household survey data to model malaria-attributable fever and non-malarial febrile illness
+### Using household survey data to model malaria-attributable fever and non-malarial febrile illness
 
 Household survey data on malaria infection status and two-week fever history do not allow direct attribution of malaria causality at the individual level. However, when data from multiple individuals are combined, then the causal contribution of malaria infections to fevers within the group can be explored by measuring the extent to which fevers are more common in infected versus uninfected individuals. Building on this intuitive logic, we have developed a multinomial geospatial model (described in detail in Materials and methods) that uses the georeferenced survey data on individual-level malaria infection and fever status to infer the community-level fraction of malaria positive fevers that are either caused by or coincident with underlying malaria infections, and subsequently to map these quantities across sub-Saharan Africa. This refined understanding of the contribution of malaria versus other causes to febrile illness can improve disease burden estimation and interpretation and thus inform case management policy in sub-Saharan Africa.
 
 ## Results
 
-## Model overview
+### Model overview
 
 Using a total of 38 household surveys in 24 Saharan African countries collected between 2006 and 2014, we collated 155,369 observations of two-week fever prevalence and RDT diagnostic outcome for P. falciparum in children from 10,606 locations with two modelled predictor variables: P. falciparum prevalence in children under five years of age (PfPR0-5); and suitability for fever without a malaria infection. The final hierarchical Bayesian model predicted the proportion of individuals with a fever directly attributable to malaria (hereafter Malaria Attributable Fever, MAF) and the proportion of individuals with a fever not attributable to malaria (hereafter Non-Malarial Febrile Illness, NMFI) within each 5 × 5 km pixel across the stable P. falciparum transmission zones on the African continent for each year 2006–2014. These maps were used to derive a series of further metrics as outlined below. Details of model validation are provided in Materials and methods and Figure 1—figure supplement 1.
 
-## Prevalence of all-cause fever
+### Prevalence of all-cause fever
 
 All-cause fever prevalence was calculated as the sum of the two metrics estimated by the model: prevalence of P. falciparum malaria-attributable fever (MAF) and non-malarial febrile illness (NMFI). In 2014, the prevalence of fever of any cause across the stable limits of P. falciparum transmission was 31.0%, and increased slightly over the study period, from 27.0% in 2006. Countries were highly heterogeneous in their overall fever burden, with Niger (53.4%), Gabon (44.9%) and Nigeria (42.8%) having the highest all-cause fever prevalence in 2014. The countries with the lowest fever burden in the same year were Swaziland (4.60%), Eritrea (5.3%) and Somalia (10.1%) The mapped posterior prediction of all-cause fever prevalence across Africa is shown in Figure 1.
 
-## Malaria-attributable fevers among malaria-infected children
+![Figure 1.](https://cdn.elifesciences.org/articles/29198/elife-29198-fig1-v3.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29198/elife-29198-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The uniform shape of the histogram shows that predictions at sites held out from the initial model drawn from the predicted posterior distribution for the prevalence of febrile illness matched well.
+
+### Malaria-attributable fevers among malaria-infected children
 
 In 2014, we estimate that less than one-third (28.0%) of all fevers in P. falciparum malaria-infected children under five were attributable to P. falciparum in any given two-week period. This fraction varied geographically, as shown in Figure 2, with the largest contribution of MAF to malaria-positive fevers in 2014 in Swaziland (86.9%), Eritrea (81.9%) and Somalia (69.9%) and the lowest in Niger (14.7%), Gabon (20.9%) and Nigeria (20.9%). The fraction also varied though time, decreasing continent-wide from 36.1% in 2006 to 28.0% in 2014. Time-series estimates for all countries are shown in Figure 3.
 
@@ -63,13 +69,19 @@ Age of the child was also shown to have an effect on the likelihood of a child d
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29198/elife-29198-fig4-v3.jpg)
 
-**Figure 4.:** PfPR0-5 and probability of a malaria-attributable fever (MAF) in the past two weeks.(a) shows this relationship in children under five years of age, and (b) disaggregated into children under 2 years of age, and children aged 2–4 years. The probability of MAF in the past two weeks is greater for children under 2 years of age than for children above 2 years of age in areas with a PfPR0-5 higher than approximately 0.3. Median values of the posterior distribution are shown, with shaded 95% credible intervals.
+**Figure 4.:** (a) shows this relationship in children under five years of age, and (b) disaggregated into children under 2 years of age, and children aged 2–4 years. The probability of MAF in the past two weeks is greater for children under 2 years of age than for children above 2 years of age in areas with a PfPR0-5 higher than approximately 0.3. Median values of the posterior distribution are shown, with shaded 95% credible intervals.
 
-## Malaria infections within all fevers
+### Malaria infections within all fevers
 
 In 2014, we estimate that 35.7% of all fevers in children under five were accompanied by an RDT-patent P. falciparum infection, and that this fraction has declined from 48.5% in 2006. The countries with the highest proportion of malaria-positive fevers in 2014 were the Central African Republic (71.0%), Equatorial Guinea (66.2%) and Guinea (65.7%) and the lowest were Ethiopia (1.4%), Botswana (1.6%) and Swaziland (2.9%). Figure 5 highlights the large disparity between the fraction of all fevers that are malaria positive (35.7% continent-wide in 2014) and the fraction of all fevers that are causally attributable to malaria (10.0% continent-wide in 2014).
 
-## Contribution of non-malarial febrile illness to all fevers
+![Figure 5.](https://cdn.elifesciences.org/articles/29198/elife-29198-fig5-v3.jpg)
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/29198/elife-29198-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Response data relationship between all-cause fever (black line) and malaria-positive fevers (blue line), and predicted incidence (symptomatic illness) for the duration of the past two to four weeks (grey dashed line) and past zero to two weeks (grey dotted line)* with PfPR0-5 from household survey datasets; and (b) the modelled relationship between all-cause fever (black line), malaria-positive fevers (blue line), and malaria attributable fevers (red line), and predicted incidence in the past two to four weeks (grey dashed line) and past zero to two weeks (grey dotted line)* with PfPR0-5 sampled from 10,000 pixels in predicted raster layers. Mean lines were fitted using locally-weighted regression, and shaded with 95% confidence intervals. *In both plots, the predicted incidence lines are generated from an ensemble of transmission models estimating the relationship between P. falciparum prevalence and incidence, standardised to ages 0 to 4 years old (Cameron et al., 2015). The grey dashed line depicts the estimated proportion of children in the past two to four weeks who had a clinical episode of malaria, and the grey dotted line depicts the estimated proportion of children in the past zero to two weeks who had a clinical episode of malaria, each with increasing P. falciparum malaria prevalence. A good fit between predicted MAF and transmission model estimations of clinical incidence indicates our model has strong predictive performance.
+
+### Contribution of non-malarial febrile illness to all fevers
 
 Non-malarial febrile illness (NMFI) arises in two forms: (i) fevers in malaria-negative individuals, and (ii) fevers in P. falciparum malaria-positive individuals where the fever is coincident with but not caused by the malaria infection (hereafter referred to as Malaria-Coincident Fevers, MCF). The sum of these two types of febrile illness are referred to here as NMFI, and are estimated directly by the model. The fraction of all fevers that are due to NMFI increased over the study period, from 82.5% in 2006 to 90.0% in 2014. The countries with the largest fractions of NMFI to all fevers were Ethiopia (99.4%), Botswana (99.2%) and Gambia (98.5%), and the smallest were Guinea (58.2%), Equatorial Guinea (60.4%) and Central African Republic (64.6%).
 
@@ -97,13 +109,13 @@ This suite of maps demonstrates the need for better diagnostic tests for other p
 
 ## Materials and methods
 
-## Household survey data
+### Household survey data
 
 Thirty-eight cross sectional, nationally-representative georeferenced surveys of malaria prevalence in children less than five years of age across 24 countries in sub-Saharan Africa were obtained from the Malaria Atlas Project database (Guerra et al., 2007; Malaria Atlas Project , 2017). These surveys originate from a variety of sources such as the DHS Program, UNICEF Multiple Indicator Cluster Surveys, and national Ministries of Health in malaria-endemic countries. Full details of the surveys used can be found in Supplementary file 2.
 
 In these surveys, a blood sample was taken from any children present and tested for malaria parasites with both a RDT and Giemsa-stained microscopy. Here, we used the RDT-derived diagnostic outcome as an indicator of malaria positivity within the last two weeks, to lessen the possibility of a recent infection having been cleared via artemisinin combination therapy (ACT) (and therefore presenting as a negative result by microscopy). RDTs offer a more accurate representation of two-week infection than microscopy due to the persistence of histidine-rich protein II in the blood for up to 14 days after parasite clearance with ACT (Mayxay et al., 2001). Diagnostic and fever history outcomes from a total of 155,369 children that were aggregated within 5 × 5 km raster cells, resulting in a total 10,606 data points. In addition to the diagnostic and fever history outcomes, the wealth quintile (i.e. poorest, poorer, middle, richer, richest) of the individual’s household was also extracted for use as an household-level predictor of fever in the final multinomial model.
 
-## Covariates
+### Covariates
 
 Independent model-based spatiotemporal predictions of both the prevalence of P. falciparum infection (PfPR0-5) and for the environmental suitability for background (non-malarial) fevers in children under five years of age across Africa for each year within the span of the household survey data (2006–2015) were constructed as covariates for use in the final multinomial model.
 
@@ -119,23 +131,81 @@ To reduce the number of covariates an exploratory BRT model was constructed usin
 
 The final model, using the reduced set of 174 non-collinear predictor variables, was fitted with 2000 trees, a tree complexity of 5, and a reduced learning rate of 0.01 (reducing the learning rate improves model performance [Elith et al., 2008]). A list of the 174 predictor variables and each variable’s contribution to the final model used can be found in Supplementary file 3. Predictions for the environmental suitability for background fever amongst children under five years old for each month between January 2006 and December 2014 across the area of stable malaria transmission in Africa were generated using the fitted BRT model and the 174 predictor variables. For a number of predictor variables, data were unavailable in November and December 2014, so data from the same month in the previous year were used instead. Yearly predictions for 2006–2014 were generated as a mean of each monthly prediction for use in the multinomial model. Gaps in the resulting predicted layers, caused by small gaps in the remotely-sensed covariate layers, were filled by recursively scanning through each raster cell by cell, and filling in cells with no data with the mean of the first layer of surrounding cells until no gaps remained.
 
-## Multinomial model
+### Multinomial model
 
 A training dataset for the multinomial model was constructed from all 10,606 points in the household survey dataset. Of these points, 25% (2,652) were selected for the holdout dataset, where probability of selection was directly proportional to the distance of the nearest neighbouring point, to avoid clustering of hold-out points in areas of dense data coverage. The remaining 75% of points (7,954) were used in the training dataset.
 
-The observed data at each site, i (a 5 × 5 km pixel), with Ntot.i surveyed individuals may be represented as a two-by-two categorical table of counts according to fever status (febrile or afebrile) and RDT-based P. falciparum parasite status (positive or negative). The hierarchical Bayesian model we construct here thus takes a top-level likelihood with multinomial distribution having four unknown parameters, {q1i,q2i,q3i,q4i}, that describe the expected proportion of counts in each category; i.e.,[Nfeb. & pos.i,Nfeb. & neg.i,Nafeb. & pos.i,Nafeb. & neg.i] ∼ Multinomial[{q1i, q2i,q3i,q4i}|Ntot.i].
+The observed data at each site, $i$ (a 5 × 5 km pixel), with $N_{tot.}^{i}$ surveyed individuals may be represented as a two-by-two categorical table of counts according to fever status (febrile or afebrile) and RDT-based P. falciparum parasite status (positive or negative). The hierarchical Bayesian model we construct here thus takes a top-level likelihood with multinomial distribution having four unknown parameters, ${q_{1}^{i},q_{2}^{i},q_{3}^{i},q_{4}^{i}}$, that describe the expected proportion of counts in each category; i.e.,
+
+$$
+[N_{feb. & pos.}^{i},N_{feb. & neg.}^{i},N_{afeb. & pos.}^{i},N_{afeb. & neg.}^{i}] ∼ Multinomial[{q_{1}^{i}, q_{2}^{i},q_{3}^{i},q_{4}^{i}}|N_{tot.}^{i}].
+$$
 
 Since each expected proportion must lie between zero and one while their joint sum is strictly unity, the effective dimension of unknown parameters here is three, with constraint to the standard 3-simplex. Our parameterisation takes three components accordingly, which we define so as both to respect these constraints and to represent the key targets of our inference as shown in Table 1.
 
-Here ppos.i is the expected prevalence of malaria parasites in children under five years of age, pbgi is the expected prevalence of background fever (within a two-week window) in the same cohort, and rmafi gives the expected proportion of P. falciparum positives reporting a fever attributable to malaria. By convention (and in line with our objectives) we define the prevalence of these ‘malaria-attributable fevers’, pmafi, as pmafi=ppos.irmafi(1−pbgi) ; that is, excluding causal fevers ‘coexisting’ with a background fever.
+**Table 1.**
+ Four-way infection outcome table and formulae for deriving targets of inference.
 
-Our representation of the local parasite prevalence in children under five years of age takes the form of a spatial generalized linear model (GLM) in which the logit transform of predicted prevalence from the MAP PfPR2-10 space-time cube (Bhatt et al., 2015), age-standardised to PfPR0-5 (Smith et al., 2007), is used as a linear predictor for the logit transform of the under-five year old prevalence, augmented with a latent (spatial) Gaussian random field (GRF). That is,logit ppos.i=logit PfPRMAPi+fx(i),f ∼ GRFθ.
 
-An identical model is used for the rate of background fevers in this cohort, except that the predictor variable is now the logit of the environmental suitability for background fevers predicted by the BRT model outlined above. Hence,logit pbgi=logit FEVBRTi+gx(i),g ∼ GRFϕ.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pf pos.</th>
+      <th>Pf neg.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Febrile</td>
+      <td>q1i=ppos.i(rmafi(1−pbgi)+pbgi)</td>
+      <td>q2i=(1−ppos.i)pbgi</td>
+    </tr>
+    <tr>
+      <td>Afebrile</td>
+      <td>q3i=ppos.i(1−rmafi)(1−pbgi)</td>
+      <td>q4i=(1−ppos.i)(1−pbgi)</td>
+    </tr>
+  </tbody>
+</table>
 
-Our model for the proportion of parasite positives with a causal malaria fever is a simple quadratic dependence on the local prevalence, motivated by the form observed in a previously described transmission model (Maire et al., 2006; Ross et al., 2006; Smith et al., 2006a; Smith et al., 2006b). Namely,logit rmafi=δ+ψ× logit ppos.i+ξ×(logit ppos.i)2.
+Here $p_{pos.}^{i}$ is the expected prevalence of malaria parasites in children under five years of age, $p_{bg}^{i}$ is the expected prevalence of background fever (within a two-week window) in the same cohort, and $r_{maf}^{i}$ gives the expected proportion of P. falciparum positives reporting a fever attributable to malaria. By convention (and in line with our objectives) we define the prevalence of these ‘malaria-attributable fevers’, $p_{maf}^{i}$, as $p_{maf}^{i}=p_{pos.}^{i}r_{maf}^{i}(1−p_{bg}^{i})$ ; that is, excluding causal fevers ‘coexisting’ with a background fever.
 
-For computational tractability we adopt a Gaussian Markov Random Field (GMRF) approximation to the continuous GRF components of our model using the version for Matern GRFs identified by Lindgren et al. (Lindgren et al., 2011) from the INLA package (Rue et al., 2009). Implementation of this model requires construction of a mesh-based tessellation enclosing the African continent (plus Madagascar) which we also perform with the INLA package using 6280 mesh nodes. We fixed the smoothness of both GMRFs used in our model to ν=1 (α=2,d=2) and set (weakly informative) standard Normal priors on the logarithm of the hyperparameters for each,  κ (i.e., 22×inverse range) and τ (i.e., inverse variance). Finally, we complete our model by placing priors on the intercept and two slope coefficients of the logit rmafi model:δ ∼ Normal[−2,1.02], ψ ∼ Normal[0,0.252], and        ξ ∼ Normal[0,0.252].
+Our representation of the local parasite prevalence in children under five years of age takes the form of a spatial generalized linear model (GLM) in which the logit transform of predicted prevalence from the MAP PfPR2-10 space-time cube (Bhatt et al., 2015), age-standardised to PfPR0-5 (Smith et al., 2007), is used as a linear predictor for the logit transform of the under-five year old prevalence, augmented with a latent (spatial) Gaussian random field (GRF). That is,
+
+$$
+logit p_{pos.}^{i}=logit PfPR_{MAP}^{i}+f_{x(i),}
+$$
+
+
+
+$$
+f ∼ GRF_{\theta.}
+$$
+
+An identical model is used for the rate of background fevers in this cohort, except that the predictor variable is now the logit of the environmental suitability for background fevers predicted by the BRT model outlined above. Hence,
+
+$$
+logit p_{bg}^{i}=logit FEV_{BRT}^{i}+g_{x(i),}
+$$
+
+
+
+$$
+g ∼ GRF_{ϕ.}
+$$
+
+Our model for the proportion of parasite positives with a causal malaria fever is a simple quadratic dependence on the local prevalence, motivated by the form observed in a previously described transmission model (Maire et al., 2006; Ross et al., 2006; Smith et al., 2006a; Smith et al., 2006b). Namely,
+
+$$
+logit r_{maf}^{i}=\delta+ψ\times logit p_{pos.}^{i}+ξ\times(logit p_{pos.}^{i})^{2}.
+$$
+
+For computational tractability we adopt a Gaussian Markov Random Field (GMRF) approximation to the continuous GRF components of our model using the version for Matern GRFs identified by Lindgren et al. (Lindgren et al., 2011) from the INLA package (Rue et al., 2009). Implementation of this model requires construction of a mesh-based tessellation enclosing the African continent (plus Madagascar) which we also perform with the INLA package using 6280 mesh nodes. We fixed the smoothness of both GMRFs used in our model to $ν=1 (\alpha=2,d=2)$ and set (weakly informative) standard Normal priors on the logarithm of the hyperparameters for each, $ κ (i.e., 2\sqrt{2}\timesinverse range)$ and $\tau (i.e., inverse variance)$. Finally, we complete our model by placing priors on the intercept and two slope coefficients of the $logit r_{maf}^{i}$ model:
+
+$$
+\delta ∼ Normal[−2,1.0^{2}], ψ ∼ Normal[0,0.25^{2}], and        ξ ∼ Normal[0,0.25^{2}].
+$$
 
 Model fitting was performed with the TMB package (Kristensen et al., 2015) for automatic differentiation, which returns functions for the likelihood plus gradient and Hessian matrices with respect to all parameters of our model after (approximate) marginalisation over the random fields via a Laplace approximation. These are then plugged into the ‘nlminb’ function in R and optimised to find the empirical Bayes solution with the local Hessian used to form approximate credible intervals as summarized in Supplementary file 4. Additional model fits to response data disaggregated by age (children over and under two years of age) were conducted to assess the age-effect on the likelihood of developing MAF with varying PfPR.
 

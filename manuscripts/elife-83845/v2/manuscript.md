@@ -17,15 +17,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03b94tp07 School of Biological Sciences, University of Auckland Auckland New Zealand
-2. https://ror.org/03y7q9t39 School of Biological Sciences, University of Canterbury Christchurch New Zealand
-3. https://ror.org/02kpeqv85 Division of Applied Life Sciences,Graduate School of Agriculture, Kyoto University Kyoto Japan
+1. School of Biological Sciences, University of Auckland Auckland New Zealand ([ROR:03b94tp07](https://ror.org/03b94tp07))
+2. School of Biological Sciences, University of Canterbury Christchurch New Zealand ([ROR:03y7q9t39](https://ror.org/03y7q9t39))
+3. Division of Applied Life Sciences,Graduate School of Agriculture, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
 
 † Corresponding author
 
 ## Abstract
 
-Life requires ribonucleotide reduction for de novo synthesis of deoxyribonucleotides. As ribonucleotide reduction has on occasion been lost in parasites and endosymbionts, which are instead dependent on their host for deoxyribonucleotide synthesis, it should in principle be possible to knock this process out if growth media are supplemented with deoxyribonucleosides. We report the creation of a strain of Escherichia coli where all three ribonucleotide reductase operons have been deleted following introduction of a broad spectrum deoxyribonucleoside kinase from Mycoplasma mycoides. Our strain shows slowed but substantial growth in the presence of deoxyribonucleosides. Under limiting deoxyribonucleoside levels, we observe a distinctive filamentous cell morphology, where cells grow but do not appear to divide regularly. Finally, we examined whether our lines can adapt to limited supplies of deoxyribonucleosides, as might occur in the switch from de novo synthesis to dependence on host production during the evolution of parasitism or endosymbiosis. Over the course of an evolution experiment, we observe a 25-fold reduction in the minimum concentration of exogenous deoxyribonucleosides necessary for growth. Genome analysis reveals that several replicate lines carry mutations in deoB and cdd . deoB codes for phosphopentomutase, a key part of the deoxyriboaldolase pathway, which has been hypothesised as an alternative to ribonucleotide reduction for deoxyribonucleotide synthesis. Rather than complementing the loss of ribonucleotide reduction, our experiments reveal that mutations appear that reduce or eliminate the capacity for this pathway to catabolise deoxyribonucleotides, thus preventing their loss via central metabolism. Mutational inactivation of both deoB and cdd is also observed in a number of obligate intracellular bacteria that have lost ribonucleotide reduction. We conclude that our experiments recapitulate key evolutionary steps in the adaptation to life without ribonucleotide reduction.
+Life requires ribonucleotide reduction for de novo synthesis of deoxyribonucleotides. As ribonucleotide reduction has on occasion been lost in parasites and endosymbionts, which are instead dependent on their host for deoxyribonucleotide synthesis, it should in principle be possible to knock this process out if growth media are supplemented with deoxyribonucleosides. We report the creation of a strain of Escherichia coli where all three ribonucleotide reductase operons have been deleted following introduction of a broad spectrum deoxyribonucleoside kinase from Mycoplasma mycoides. Our strain shows slowed but substantial growth in the presence of deoxyribonucleosides. Under limiting deoxyribonucleoside levels, we observe a distinctive filamentous cell morphology, where cells grow but do not appear to divide regularly. Finally, we examined whether our lines can adapt to limited supplies of deoxyribonucleosides, as might occur in the switch from de novo synthesis to dependence on host production during the evolution of parasitism or endosymbiosis. Over the course of an evolution experiment, we observe a 25-fold reduction in the minimum concentration of exogenous deoxyribonucleosides necessary for growth. Genome analysis reveals that several replicate lines carry mutations in deoB and cdd. deoB codes for phosphopentomutase, a key part of the deoxyriboaldolase pathway, which has been hypothesised as an alternative to ribonucleotide reduction for deoxyribonucleotide synthesis. Rather than complementing the loss of ribonucleotide reduction, our experiments reveal that mutations appear that reduce or eliminate the capacity for this pathway to catabolise deoxyribonucleotides, thus preventing their loss via central metabolism. Mutational inactivation of both deoB and cdd is also observed in a number of obligate intracellular bacteria that have lost ribonucleotide reduction. We conclude that our experiments recapitulate key evolutionary steps in the adaptation to life without ribonucleotide reduction.
 
 ## Introduction
 
@@ -37,13 +37,25 @@ While ribonucleotide reduction is essential, we reasoned that it should be possi
 
 ## Results
 
-## Creation of an E. coli line lacking ribonuclease reduction
+### Creation of an E. coli line lacking ribonuclease reduction
 
 E. coli carries genes for three RNRs: aerobic class Ia (encoded by the nrdAB operon), class Ib (nrdHIEF), and anaerobic class III (nrdDG) (Figure 1). Under aerobic growth, ribonucleotide reduction is primarily performed by the iron-dependent class Ia enzyme (Monje-Casas et al., 2001), while class Ib has a manganese metal centre (Cotruvo and Stubbe, 2011) and is therefore able to support growth when iron is scarce (Martin and Imlay, 2011).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of each of the three RNR operons in E. coli and the genomic regions following scarless deletion. Arrows indicate locations of PCR primers (Supplementary file 1B) used to confirm RNR operon presence/absence. (B) Results of PCR with primers external to all three nrd operons in ΔRNR compared with the wild-type progenitor strain (REL606). Lane 1, ladder; lanes 2 and 6, no template. Lanes 3–5, band sizes consistent with operon deletion (ΔnrdAB 1645 bp, ΔnrdDG 1620 bp and ΔnrdHIEF 1477 bp) in the ΔRNR line. Lanes 6–9, band sizes for all three operons in wild-type E. coli REL606 (nrdAB 5303 bp, nrdDG 4382 bp, and nrdHIEF 5191 bp).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** RT-PCR using primers for (a) nrdA, (b) nrdB, (c) nrdD, (d) nrdG, (e) nrdH, (f) nrdI, (g) nrdE, and (h) nrdF on total RNA from ∆RNR or wild-type (REL606) indicate transcripts are not detected in ∆RNR, whereas expression was observed in REL606. (i) Internal primers for the gstA housekeeping gene were used as a control for RT-PCR, confirming that the absence of amplification in ∆RNR was not due to the absence of RNA in the samples. For each primer pair the order of lanes is as follows: lane 1, 1kb+ ladder; lane 2, REL606 RT+ (RT enzyme added); lane 3, REL606 RT- (no RT enzyme added); lane 4, 1kb+ ladder; lane 5, ∆RNR RT+; lane 6, ∆RNR RT-.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** RT-PCR using primers for codon-optimised Mm-dAK on total RNA from ∆RNR and wild-type (REL606) indicates Mm-dAK expression is observed in ∆RNR carrying the pBAD33::Mm-dAK construct, regardless of whether the cells are IPTG-induced (+IPTG) or uninduced (-IPTG) lines. Lane 1, 1kb+ ladder; lanes 2–5 RT enzyme added (RT+): lane 2, WT+ IPTG; lane 3, ∆RNR+ IPTG; lane 4, WT- IPTG; lane 5, ∆RNR- IPTG. Lanes 6–9 controls without RT enzyme (RT-): lane 6, WT+ IPTG; lane 7, ∆RNR+ IPTG; lane 8, WT- IPTG; lane 9, ∆RNR- IPTG.
+
 We reasoned that, while ribonucleotide reduction is an essential process, it should be possible to compensate for its loss via media supplementation. To eliminate ribonucleotide reduction, we sequentially deleted the RNR operons using a scarless deletion protocol (Materials and methods). We first deleted nrdDG, as this operon is known not to be expressed under aerobic conditions. We next deleted the nrdHIEF operon from the resulting ΔnrdDG line. Finally, we attempted to delete the nrdAB operon the ΔnrdHIEF ΔnrdDG line, grown in the presence of deoxyribonucleosides (dNs). We were initially unsuccessful in deleting nrdAB. This is not unexpected as, while dNs are known to be taken up, some (deoxyguanine [dG], deoxycytidine [dC], deoxyadenine [dA]) are unavailable for DNA synthesis, even when genes in the DERA pathway are mutated, preventing their catabolism (Karlström, 1970). We reasoned that may be because of the absence of a suitable deoxynucleoside kinase activity for converting those dNs to deoxyribonucleotides. We therefore tried knocking out nrdAB in the presence of a heterologously expressed deoxyadenosine kinase (dAK) gene from M. mycoides. Mycoplasmas are known to possess deoxyadenosine kinases genes that permit utilisation of dNs for DNA synthesis (Wang et al., 2001). To establish if resulting lines lacked all three nrd operons, we first PCR screened for evidence of chromosomal nrd operon deletions. Our results indicate that all three operons were successfully deleted (Figure 1). As deletion does not exclude relocation of functional gene copies to another genomic location, we confirmed gene absence via PCR using primers internal to nrd genes and performed RT-PCR to confirm absence of gene expression (Figure 1—figure supplement 1). Finally, knockout status was confirmed with whole genome sequencing. This confirmed deletion of all genes for ribonucleotide reduction, with the nrdAB operon successfully deleted under heterologous expression of dAK from M. mycoides (Figure 1—figure supplement 2). Of four knockout lines, we selected one isolate (hereafter called ΔRNR) for all subsequent work. In addition to lacking all nrd genes, genome sequencing revealed 23 SNPs that likely appeared during the creation of ΔRNR from wild-type progenitor line (REL606) (Supplementary file 1C).
 
-## ΔRNR is dependent on dN supplementation
+### ΔRNR is dependent on dN supplementation
 
 Our ΔRNR line was created in the presence of dN supplementation, but this does not mean it is dependent on dN supplementation for growth. We therefore sought to understand what supplementation, if any, our ΔRNR line requires. To determine the lowest concentration of dNs that permits growth, we generated a series of growth curves for differing dN concentrations. At high dN concentrations (1 mg/mL), ΔRNR grows favourably, though shows a clear lag compared to wild-type on equivalent media (Figure 2A). At lower dN concentrations, ΔRNR growth is impaired, but there is still discernible growth at 0.05 mg/mL (Figure 2C). When this is dropped to 0.01 mg/mL we observed only marginal growth of ΔRNR (Figure 2D). As expected, in the absence of dN supplementation no growth is observed, while wild-type lines are unaffected (Figure 2E). Finally, we tried growing ΔRNR on dR plus the four bases (A, G, C, T). No growth was observed (Figure 2F). These results indicate that deletion of the three nrd operons from ΔRNR has completely eliminated the capacity for de novo deoxyribonucleotide synthesis; no other genes appear able to compensate for this deficiency.
 
@@ -57,7 +69,7 @@ We next sought to establish whether ΔRNR requires supplementation of all four d
 
 **Figure 3.:** Growth was monitored for wild-type (REL606, black) and ΔRNR (orange) in 1× MOPS media + 1% glucose, with deoxyribonucleoside (dN) supplementation, as indicated. Growth was monitored for 25 hr. Curves show mean OD595, error bars show SEM, all experiments performed in triplicate. (A) Deoxyadenine (dA) (0.25 mg/mL), (B) deoxyguanine (dG) (0.25 mg/mL), (C) deoxythymine (dT) (0.25 mg/mL), (D) deoxycytidine (dC) (0.25 mg/mL), (E) dA, dG, dT, each at 0.25 mg/mL.
 
-## ΔRNR exhibits a filamentous cell morphology when grown under limiting dNs
+### ΔRNR exhibits a filamentous cell morphology when grown under limiting dNs
 
 During our growth assays we observed a ‘clumping’ phenotype when ΔRNR is grown in liquid media at concentrations of dNs that limit growth. This contrasts with the uniform cloudy appearance of wild-type E. coli (Figure 4C, top left panel). Examination of cells at ×100 magnification revealed that ΔRNR cells are elongated and filamentous at very low levels of dNs, whereas ΔRNR cells have a similar morphology to wild-type at higher dN concentrations (Figure 4A). Some cells reached lengths several times that of wild-type (Supplementary file 1D).
 
@@ -69,7 +81,7 @@ This phenotype appears most pronounced at low dN concentrations. We therefore so
 
 One possibility is that, under low [dN], cells are growing but unable to complete cell division. If so, this might be reflected by the presence of multiple DNA-dense regions across the length of the cells. To visualise DNA within filamentous cells, we stained ΔRNR cells grown in low [dN] (0.01 mg/mL) with FITC and DAPI. This revealed the presence of multiple DAPI-stained regions across the length of the cells (Figure 4B), suggestive of the presence of multiple DNA nucleoids in ΔRNR cells grown at low [dN].
 
-## Evolution of ∆RNR lines under restricted dN supplementation
+### Evolution of ∆RNR lines under restricted dN supplementation
 
 The loss of ribonucleotide reduction in obligate intracellular lifestyles presumably resulted from relaxed selection on deoxyribonucleotide production when deoxyribonucleotides are available from the environment. However, for both parasitism and endosymbiosis, the host dNTP pool must be shared. We were therefore interested to assess if the ∆RNR line adapts to a reduction in dN availability, as might occur in the evolutionary switch from de novo synthesis to dependency on host production.
 
@@ -79,7 +91,7 @@ In order to allow the strains to adapt to a lower concentration of dN supplement
 
 **Figure 5.:** Five lines of ΔRNR and three lines of wild-type progenitor (REL606) were established at one of two conditions (1 mg/mL or 0.25 mg/mL deoxyribonucleosides [dNs] in MOPS + 1% glucose), and serially passaged for 30 transfers. Genomic material from each line was then extracted from a single colony and sent for sequencing giving us clonal-level genome information. To further investigate adaptation to low concentrations of dNs, the ‘fittest’ ΔRNR line grown at 0.25 mg/mL dNs (ΔRNR_250_T30_1) was used to seed a subsequent experiment. Ten replicate lines of ΔRNR_250_T30 _1 were serially passaged for an additional 10 transfers in MOPS + 1% glucose and 0.01 mg/mL dNs. DNA from a single colony of each of these 10 lines (ΔRNR_10_T40_1–10) was then extracted and sent for whole genome sequencing.
 
-## Elongate cell morphology in ∆RNR lines diminishes over the course of the evolution experiment
+### Elongate cell morphology in ∆RNR lines diminishes over the course of the evolution experiment
 
 Our initial observations of unevolved ∆RNR (henceforth ∆RNR_T0) revealed an elongated filamentous cellular phenotype at lower concentrations of dNs (Figure 4). We therefore monitored cell morphology during our evolution experiment. Every five transfers, we examined length of ∆RNR and REL606 cells from each condition (1 mg/mL or 0.25 mg/mL dNs; cells from well position A1 [∆RNR] and A1 or B1 [REL606] were used for all measurements, and mean length calculated). At the beginning of the experiment, ∆RNR cells are substantially longer than wild-type, particularly at 0.25 mg/mL dNs (Figure 6). We recorded cell lengths of 20 μM at this lower concentration (average of 6 μM), a staggering 10–20 times the length of wild-type cells. By the time the experiment had reached 30 transfers, average cell length was comparable to wild-type at both dN concentrations (Figure 6A). These changes in gross morphology suggest cells had begun to adapt to restricted dN availability.
 
@@ -87,21 +99,49 @@ Our initial observations of unevolved ∆RNR (henceforth ∆RNR_T0) revealed an 
 
 **Figure 6.:** (A) Mean cell length during the course of a 30-transfer evolution experiment. Cell length was determined for 20 cells for replicate line 1 of ∆RNR and REL606 evolved in either 1 mg/mL or 0.25 mg/mL deoxyribonucleosides (dNs). Cell measurements were taken every five transfers. Over the course of the evolution experiment, ∆RNR cell length gradually reduces at both dN concentrations. (B) Morphology of wild-type (top row) and ∆RNR (bottom row) cells at transfer 1 and transfer 30 at each dN concentration (1 mg/mL or 0.25 mg/mL) (magnification ×1000; scale bar 2 μM).
 
-## ∆RNR lines exhibit improved growth following evolution under restricted dN availability
+### ∆RNR lines exhibit improved growth following evolution under restricted dN availability
 
 After 30 transfers, we sought to determine if ∆RNR lines had improved their capacity to grow under restricted (either 1 mg/mL or 0.25 mg/mL) dN availability. We use the following nomenclature for our evolution lines: ∆RNR_[dN] _transfer#_line#, so ∆RNR1000_T30_L1 is replicate line #1 of ∆RNR evolved at 1 mg/mL (i.e. 1000 μg/mL) dNs for 30 transfers. At 1 mg/mL, ∆RNR1000_T30_L1 through L5 all showed improved growth relative to ∆RNR_T0 (Figure 7A). Moreover, compared to ∆RNR_T0, which exhibited almost no growth at 0.01 mg/mL dNs (Figure 2D), all evolved lines (∆RNR1000_T30_L1–5) showed improved growth at this low concentration (Figure 7D). A similar overall pattern of improvement was also seen for the five ∆RNR replicate lines evolved in 0.25 mg/mL (∆RNR250_T30_L1–5) (Figure 7—figure supplement 1). Note however that elongate cell morphology and clumping preclude use of OD measurements for accurate estimation of doubling time or cell counts (Stevenson et al., 2016) (reflected in the large standard error relative to REL606 controls), so can only be used to give a general indication of growth. All lines failed to grow in the absence of dN supplementation (Figure 7E, Figure 7—figure supplement 1), indicating they remain reliant on media supplementation.
 
-## Evolution of ∆RNR at 0.25 mg/mL dNs results in A:T → G:C mutational skew
+![Figure 7.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig7-v2.jpg)
+
+**Figure 7.:** Growth was monitored for wild-type (REL606), ancestor (∆RNR_T0), and evolved lines (∆RNR1000_T30_L1–5, evolved in 1 mg/mL dNs for 30 transfers). Growth experiments were performed in 1× MOPS media + 1% glucose with the addition of dNs at indicated concentrations. Growth was monitored for 25 hr. Curves show mean OD595, error bars show SEM, all experiments performed in triplicate. (A) 1 mg/mL dNs, (B) 0.25 mg/mL dNs, (C) 0.055 mg/mL dNs, (D) 0.011 mg/mL dNs, (E) 0 mg/mL dNs.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Growth was monitored for wild-type (REL606), ancestor (∆RNR_T0), and evolved lines (∆RNR250_T30_L1–5, evolved in 250 μg/mL dNs for 30 transfers). Growth experiments were performed in 1× MOPS media + 1% glucose with dN supplementation, as indicated. Growth was monitored for 25 hr. Curves show mean OD595, error bars show SEM, all experiments performed in triplicate. (A) 1 mg/mL dNs, (B) 0.25 mg/mL dNs, (C) 0.05 mg/mL dNs, (D) 0.01 mg/mL dNs, (E) 0 mg/mL.
+
+### Evolution of ∆RNR at 0.25 mg/mL dNs results in A:T → G:C mutational skew
 
 Following 30 transfers, we sequenced the genomes of ∆RNR_T0, our lines evolved in 0.25 mg/mL dNs (∆RNR250_T30_L1–5) and 1 mg/mL dNs (∆RNR1000_T30_L1–5), and each set of three wild-type control lines (REL606_1000_T30_L1–3 and REL606_250_T30_L1–3) from single colonies. The filamentous phenotype of our ∆RNR lines under restricted dN supplement precluded accurate estimation of the number of generations per transfer, which in turn precluded reliable calculation of mutation rates. We therefore report total observed mutations (single nucleotide substitutions plus indels) for each experimental line (Figure 8, Supplementary file 1E). Our evolved knockout lines (∆RNR250_T30_L1–5 and ∆RNR1000_T30_L1–5) all accumulated substantially more mutations than wild-type controls evolved at the same dN concentration (Figure 8, Supplementary file 1E). Our ∆RNR250_T30 lines accumulated the greatest numbers of mutations (range: 39–118 SNPs). ∆RNR1000_T30 lines did exhibit a small but significant increase in total SNPs relative to wild-type (Figure 8—figure supplement 1 and Supplementary file 1E; p=0.01, unpaired t-test). There was no significant difference in total mutations between wild-type lines evolved in either 1 mg/mL or 0.25 mg/mL dNs (p=0.10; unpaired t-test).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig8-v2.jpg)
+
+**Figure 8.:** Total single nucleotide substitutions plus indels present in each line at T30. For evolution in 1 mg/mL deoxyribonucleosides (dNs), REL606=control, RNR = ∆RNR1000_T30_L1–5. For evolution in 0.25 mg/mL, REL 606=control, RNR = ∆RNR250_T30_L1–5.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Total single nucleotide substitutions plus indels present in each line at T30 REL606 control lines; RNR = ∆RNR1000_T30_L1–5 (left) and ∆RNR250_T30_L1–5 (right).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Wild-type genomic region. (B) Deletion of cdd and upstream gene (yohk) occurs in seven lines (Supplementary file 1F and G). (C) SNP in cdd locus of ∆RNR_T30_250_L5 results in ORF truncation at genomic position 2,183,352, resulting in a stop codon at codon position 91 in cdd.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Schematic indicating approximate position of primers. See Supplementary file 2 for primer sequences. (B) PCR shows cdd deletion in the ∆RNR31 (∆RNR_T0) population but not in wild-type. All 10 lines at T30 carry deletion as well as WT variant, suggesting that this deletion has not gone to fixation. (C) The population derived from another ∆RNR isolate (∆RNR34) lacks the cdd deletion (left panel). The cdd locus was monitored in the cell populations over two transfers. By the second transfer (T2), evidence of cdd deletion appeared in four lines (1–3, 5), indicating it is readily lost under the conditions of the evolution experiment. Lines grown in MOPS + 1% glucose + 250 μg/mL deoxyribonucleosides (dNs). Note: experiment terminated after two transfers due to COVID-related lockdown.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/83845/elife-83845-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** (For a description of the lines, see Figure 5.) (A) Total SNPs present in each line at T40. (B) Types of mutations for all SNPs over the genome.
+
 It is well documented that RNRs keep deoxyribonucleotide pool sizes balanced through allosteric regulation (Hofer et al., 2012). We were therefore interested to see whether loss of ribonucleotide reduction resulted in mutational skew in E. coli. Our null expectation was that there would not be any detectable skew as our lines are supplemented with equal concentrations of all four dNs. If there was skew, we expected this to be most evident in our ∆RNR250_T30 lines, as these accumulated the greatest number of mutations. Indeed, 88% of SNPs in our ∆RNR250_T30 lines are of one type: A:T→G:C (Figure 8, Figure 8—figure supplement 1).
 
-## ∆RNR lines lose cytidine deaminase
+### ∆RNR lines lose cytidine deaminase
 
 Analysis of our genome data from lines at transfer 30 revealed that one gene, cdd, which codes for cytidine deaminase, was mutated in 8 of 10 lines from transfer 30 (Supplementary file 1F and G). Cytidine deaminase catalyses deamination of cytidine and dC to uridine and deoxyuridine. Analysis of the data revealed that seven of eight lines carried an identical deletion (Supplementary file 1F, G; Figure 8—figure supplement 2), while one line possessed an SNP that was predicted to result in a truncation. As the deletions are identical, we suspected that this deletion may have occurred in the ancestral population, but was not fixed at the time we initiated our evolution experiment. These genome data were derived from colony isolates, meaning it was not possible to determine if this was the case. Thus, the significance of this mutation was unclear in the context of our evolution experiment. To determine whether cdd is lost in response to the experimental conditions, we screened our original ∆RNR isolates to establish if any carried intact cdd. We undertook PCR screening of glycerol stocks for two knockout lines (∆RNR31, ∆RNR34). This revealed that the glycerol stock that we used to establish our evolution experiments (∆RNR31) was a mixed population, with both intact and cdd deletion present (Figure 8—figure supplement 3). Moreover, it appears that, after 30 transfers, all 10 lines (∆RNR_T30_1000_L1–5, ∆RNR_T30_250_L1–5) were polymorphic for the deleted locus. Together, this indicates the deletion is very likely to have occurred in the ancestral population, and that our lines were derived from a genetically heterogeneous population, despite the knockout lines being established from individual colonies following scarless deletion of nrdAB (Methods and methods). Screening of ∆RNR34 glycerol stock however revealed no evidence of a deletion (Figure 8—figure supplement 3). We therefore established a short evolution experiment with five independent ∆RNR34 lines, in 0.25 mg/mL dNs, mimicking the early stages of our evolution experiment with the ∆RNR31 isolate. After two transfers, we observed the emergence of a cdd deletion in several replicate lines (Figure 8—figure supplement 3). In similar experiments not reported here and using these lines, we repeatedly see loss of the cdd locus under similar growth conditions (data not shown). Finally, that ∆RNR_T30_250_L5 carried an inactivating mutation in cdd but not the upstream locus (yohk), suggesting that it is deletion of the cdd locus that is selected under these conditions.
 
-## ∆RNR lines evolved in 0.01 mg/mL dNs mutate the DERA salvage pathway
+### ∆RNR lines evolved in 0.01 mg/mL dNs mutate the DERA salvage pathway
 
 By transfer 30, one of our lines (∆RNR_T30_250_L1) exhibited growth similar to wild-type when grown in 0.25 mg/mL dNs (Figure 7—figure supplement 1). Using this line as progenitor, we initiated a second evolution experiment using 10 parallel lines, grown in 0.01 mg/mL dNs (Figure 5). After 10 transfers, we sequenced these lines (∆RNR_T40_10_L1.1–1.10). All exhibited a marked accumulation of mutations, with L1.7 accumulating 220 SNPs (Figure 8—figure supplement 4). As with the lines from our first 30 transfers, the majority of mutations were A:T→G:C substitutions.
 
@@ -113,9 +153,174 @@ One gene, deoB, was mutated in eight lines (Table 1), and is particularly notewo
 
 **Figure 9.:** (A) Deoxyribonucleotides in free-living bacteria are primarily synthesised intracellularly via ribonucleotide reduction (RNR), with some uptake of deoxyribonucleosides (dNs) from the environment also possible in principle. Deoxyribonucleotides are required for genome synthesis, but may also be metabolised via the DERA pathway, the end product (G3P) of which feeds into glycolysis (grey arrows). (B) In intracellular bacteria lacking RNR (crossed-out light green arrow), deoxyribonucleotides must instead be derived from the host as dNs (dark green arrow). Loss of RNR leads to loss of phosphopentomutase (PPMase) activity (crossed-out light blue arrow), which prevents loss of dNs via glycolysis. Abbreviations: RNR—ribonucleotide reductase; dNs—deoxyribonucleosides; DR1P—2-deoxyribose 1-phosphate; DR5P—2-deoxyribose 5-phosphate; G3P—D-glyceraldehyde 3-phosphate; DHAP—dihydroxyacetone phosphate; Glu—glucose; FDP—fructose 1,6-diphosphate; Pyr—pyruvate, dNKases—deoxynucleotide kinases; DERA—deoxyriboaldolase.
 
+**Table 1.**
+ Genome sequencing of ∆RNR10_T40 lines identifies multiple mutations to deoB.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Location in ORF</th>
+      <th>Effect</th>
+      <th>Lines impacted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Substitution</td>
+      <td>1057 (A→C)</td>
+      <td>AA substitution (T353P)</td>
+      <td>L1L8</td>
+    </tr>
+    <tr>
+      <td>Deletion</td>
+      <td>583 (G(1)→G(0))</td>
+      <td>ORF truncation (frameshift)</td>
+      <td>L2</td>
+    </tr>
+    <tr>
+      <td>Deletion</td>
+      <td>926 (G(4)→G(3))</td>
+      <td>ORF truncation (frameshift)</td>
+      <td>L3L5L10</td>
+    </tr>
+    <tr>
+      <td>Substitution</td>
+      <td>932 (A→C)</td>
+      <td>AA substitution (H311P)</td>
+      <td>L4</td>
+    </tr>
+    <tr>
+      <td>Substitution</td>
+      <td>1147 (A→C)</td>
+      <td>AA substitution (T383P)</td>
+      <td>L6</td>
+    </tr>
+  </tbody>
+</table>
+
 To next sought to assess the impact of the mutations in deoB, on phosphopentomutase function. We first generated an alignment of 100 homologous phosphopentomutases, including from E. coli (REL606) and Bacillus cereus (Supplementary file 3). The latter was included as protein structure and active site residues have been characterised (Panosian et al., 2011). Using the alignment as a guide, we next assessed functional impact of observed deoB mutations by mapping these onto the structure of B. cereus phosphopentomutase (PDB ID: C3M8). Of the five unique mutations observed in our experiment (Table 1), three directly impact conserved active site residues, either through truncation or mutation of active site residues (Table 2). The remaining two mutations are not directly associated with the active site but result in amino acid substitutions not observed in any sequences in our alignment. We therefore conclude that these mutations to the deoB gene are all likely to impact phosphopentomutase function, with some expected to completely inactivate the enzyme.
 
-## Loss of ribonucleotide reduction among natural obligate intracellular bacteria is frequently associated with loss of deoB and cdd coding potential
+**Table 2.**
+ Predicted impact of observed deoB mutations on phosphopentomutase function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>B. cereus PPMase*</th>
+      <th>E. coli PPMase†</th>
+      <th>L1, L8</th>
+      <th>L2</th>
+      <th>L4</th>
+      <th>L6</th>
+      <th>L3, L5, L10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="7">Active site residues</td>
+    </tr>
+    <tr>
+      <td>D13</td>
+      <td>D10</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>T85</td>
+      <td>T98</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>D156</td>
+      <td>D173</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>D286</td>
+      <td>D306</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+    </tr>
+    <tr>
+      <td>H291</td>
+      <td>H311</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>H311P</td>
+      <td>✓</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>A327</td>
+      <td>D347</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>H328</td>
+      <td>H348</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>H339</td>
+      <td>H359</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="7">Non-active site residues</td>
+    </tr>
+    <tr>
+      <td>I333</td>
+      <td>T353</td>
+      <td>T353P</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>T365</td>
+      <td>T383P</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>T383P</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_*PDB ID: 3M8W.†Homologous residues derived from multiple sequence alignment (Supplementary file 3)._
+
+### Loss of ribonucleotide reduction among natural obligate intracellular bacteria is frequently associated with loss of deoB and cdd coding potential
 
 Loss of ribonucleotide reduction genes has previously been noted in a small number species (Lundin et al., 2009), including the bacteria B. burgdorferi, U. urealyticum, and B. aphidicola str. Cc. We were therefore interested in examining if loss of deoB and cdd genes observed in our experiments extends to these species and the genera to which they belong. Sequences used for blast searches are given in Supplementary file 1J. For the three specific species above, blastp searches (Supplementary file 1K) confirmed absence of RNRs and phosphopentomutase (encoded by deoB). A hit to cytidine deaminase (encoded by cdd) was identified for B. burgdorferi. To examine if our results extend to other members of each genus, we repeated our searches for all members of each genus for which there are genome assemblies in the NCBI genome database (https://www.ncbi.nlm.nih.gov/genome/). For Ureaplasma (taxid:2129), of 58 genome assemblies, only one, Candidatus Ureaplasma intestinipullorum (a MAG from a chicken gut microbiome study; Gilroy et al., 2021) returned hits to RNR query sequences (Supplementary file 1L). No other Ureaplasma assemblies revealed evidence of RNR, PPMase, CDD, or YohK coding potential. Thus, with the possible exception of Candidatus Ureaplasma intestinipullorum, no members of the genus Ureaplasma carry genes for RNR, PPM, or CDD. These results align well with our experimental evolution study, where loss of ribonucleotide reduction resulted in subsequent loss of deoB and cdd genes.
 
@@ -155,13 +360,13 @@ It remains to be seen whether there are conditions wherein the reverse DERA path
 
 ## Materials and methods
 
-## Strains and growth conditions
+### Strains and growth conditions
 
 All E. coli strains used in this study are listed in Supplementary file 1A. E. coli B strain REL606 (Lenski et al., 1991) was used as the wild-type strain for all experiments. We elected to perform experiments using REL606 as it is well suited for experimental evolution, having been subjected to a long-running evolution experiment (Lenski et al., 1991). Two key features that make this strain convenient for such work are genomically coded resistance against streptomycin and a selectively neutral mutation in the araA gene, making it easy to detect via colony colour when grown on tetrazolium arabinose. This makes it suitable for tracing during competition assays.
 
 Strains were grown in LB (1% tryptone, 1% NaCl, and 0.5% yeast extract ± 2% agar) with the addition of 1 mg/mL each of the four dNs (dG, dA, dC, and dT (AK Scientific)) for mutant strains, unless stated otherwise. For evolution experiments, strains were grown in 1× MOPS media (Neidhardt et al., 1974) supplemented with dNs, as specified. All experiments were conducted in the presence of 100 μg/mL streptomycin.
 
-## Creation of an RNR mutant
+### Creation of an RNR mutant
 
 E. coli has three RNR operons: nrdAB codes for class Ia RNR, nrdDG codes for class III RNR, and nrdHIEF codes for the class Ib enzyme. Deletion of RNR operons from the BL-21 E. coli line REL606 (Supplementary file 1A) was carried out in series using a scarless genome engineering method (Fehér, 2008): the nrdDG operon (class III RNR) was deleted first, followed by nrdHIEF (class IB) then nrdAB (class IA). For each operon, 500 bp upstream and downstream from the start and stop codon was PCR amplified. A second round of overlap PCR combined fragments together and the three resulting product was cloned into pST76a. The resulting construct was transformed into wild-type at 30°C, then with genome integration induced by increasing temperature to 42°C. Helper plasmid (pSTKST) was transformed into the resulting strain, and deletion was induced with chlortetracycline. Successful deletion was confirmed using PCR across the operon (primers used in this study are listed in Supplementary file 1B).
 
@@ -169,29 +374,29 @@ To knock out the nrdAB operon, we sought to identify conditions where de novo de
 
 The resulting strain, ΔRNR (Supplementary file 1A), was confirmed to lack all three operons coding for ribonucleotide reduction (ΔnrdAB, ΔnrdHIEF, ΔnrdDG) using PCR, RT-PCR (Figure 1—figure supplement 1), and whole genome sequencing.
 
-## Total RNA extraction and RT-PCR
+### Total RNA extraction and RT-PCR
 
 To confirm absence of RNR expression, strains were grown overnight in LB and diluted to 1:100 in 10 mL fresh media after reaching stationary phase. The cultures were then grown for ~3 hr and total RNA was isolated from mid-log phase cultures using TRIzol Max Bacterial Isolation kit (Thermo Fisher, Catalogue# 16096020). RNA was quantified using a Qubit 4.0 fluorometer. Purified RNA was diluted to 300 ng/mL and treated with TURBO DNaseI (Ambion, Catalogue# AM2238). This DNA-free RNA was then subjected to RT-PCR using the SuperScript III One-Step RT-PCR system with Platinum Taq DNA Polymerase kit (Invitrogen, Catalogue# 12574018) with primers specific to the gene of interest (Supplementary file 1B). Mm-dAK expression was also confirmed using RT-PCR. We observed Mm-dAK expression in our ΔRNR line with and without IPTG induction (Figure 1—figure supplement 2). We therefore elected to perform evolution experiments without IPTG.
 
-## Growth assays
+### Growth assays
 
 Bacterial strains were retrieved from –80°C stocks and grown overnight in LB (1 mg/mL dNs were added to media for growth of ΔRNR lines). Cultures were washed twice in 1× PBS and 10 μL equivalent was added to fresh 24-well plates containing 1 mL of 1× MOPS + 1% glucose. Differing concentrations of dNs were added from a 20 mg/mL stock solution to each individual well. Growth was monitored for 24–48 hr, taking measurements (OD595) every 6 min using a FLUOstar Omega Microplate Reader (BMG Labtech). All experiments were performed in triplicate.
 
-## Microscopy
+### Microscopy
 
 Overnight cultures were grown at 37°C in MOPS media (with dNs added as required). Cultures were twice spun down and washed in 1× PBS. Ten µl of culture was aliquoted onto a microscope slide. Brightfield images were taken using a LEICA ICC50 W microscope (Leica, v.3.2.0) and imported to Photoshop (v.22.4.2) for cell length measurement. Cell length measurements were determined for each strain by averaging from 20 observations (length of the first five cells from top left to right were counted from each of four images).
 
 To visualise DNA, we used a modified version of a FITC/DRAQ-5 double-staining protocol (Silva et al., 2010) instead using DAPI in place of DRAQ-5. Coverslips were coated in poly-D-lysine and placed at 37°C overnight. Coverslips were washed twice with water, dried, and stored at 4°C until ready for use. Overnight cultures were washed in 1× PBS, resuspended, and placed on a poly-D-lysine-coated coverslip at 37°C for 1 hr. Cells were washed with PBS, and fixed using 4% paraformaldehyde at room temperature for 10 min. Coverslips were washed with 1× PBS, followed by 1% Triton X-100 for 5 min. Following a further wash with 1× PBS, coverslips were then incubated in 1× PBS containing 6 µg/mL FITC for 30 min at 37°C. The coverslips were washed again with 1× PBS, then suspended in 1× PBS containing 5 µg/mL DAPI and placed in the dark for 10 min. Coverslips were lastly washed twice more in 1× PBS, then were mounted on microscope slides. Strains were visualised on a Nikon Ni-E Fluorescence microscope using fluorescent filter cubes for DAPI and FITC, and a ×100 oil objective lens. Images were overlaid using Nikon NIS-Elements software.
 
-## Experimental evolution
+### Experimental evolution
 
 All evolution experiments were performed at 37°C. Original bacterial strains were retrieved from –80°C stocks and grown overnight in LB (1 mg/mL dNs were added to media for growth of ΔRNR lines). Cultures were then washed twice in 1× PBS and 50 μL equivalent was added to fresh six-well plates containing 5 mL 1× MOPS media (1% glucose) supplemented with the dN concentration required for each condition (1 mg/mL, 0.25 mg/mL, 0.01 mg/mL). Five lineages of ΔRNR and 3 for WT (E. coli REL606; Lenski et al., 1991; Jeong et al., 2009) were passaged for each condition until transfer 30. Line 1 of ΔRNR grown at 0.25 mg/mL (ΔRNR_T30_250_1) was serially passaged as 10 independent lines for an additional 10 transfers in MOPS + 1% glucose and 0.01 mg/mL dNs (ΔRNR_T40_10_1–10). Plates were left to reach stationary with agitation at 120 rpm. Approximately 107–108 of wash cells were transferred to a fresh well. A glycerol stock was created for each line every five transfers. PCR contamination checks were performed every five transfers.
 
-## Sequencing and genome assembly
+### Sequencing and genome assembly
 
 All strains and lineages required for sequencing were streaked for single colonies on LB media, with a single colony being used to inoculate an overnight culture to give clonal-level sequencing data. Genomic material was isolated using 20 μg genomic tips (QIAGEN) as per the manufacturer’s instructions and DNA quantified using a Qubit 4.0 fluorometer (Thermo Fisher). Libraries were generated using the NEXTFLEX rapid XP DNA-seq kit (PerkinElmer, Catalogue# NOVA-5149-21) and NEXTFLEX UDI Barcodes (PerkinElmer, Catalogue# NOVA-514150). Strains were sequenced to approximately 50-fold coverage at Auckland Genomics Facility using an Illumina MiSeq Platform with 2×150 bp paired-end reads. Reads were trimmed using the BBDuk (Bushnell, 2014) 1.0 plug-in for Geneious Prime 2021.1.1 (https://www.geneious.com). Mapping to the E. coli REL606 genome reference was performed using Bowtie2 (v.2.3.2) (Langmead and Salzberg, 2012) plug-in (v.7.2.1) and visualised using default settings in Geneious.
 
-## Sequence analyses
+### Sequence analyses
 
 For creation of the phosphopentomutase alignment (Supplementary file 3), we first ran BLASTP with default settings (E-value threshold = 0.1, BLOSUM62, Filtering: none, Gapped: yes, Hits: 1000) against the Uniprot reference genomes plus Swiss-Prot database (https://www.uniprot.org/blast/) using the DeoB protein sequence from E. coli (REL606) as query. To create our alignment dataset, we filtered results for Swiss-Prot sequences and removed duplicates. We then added the E. coli REL606 query sequence and the phosphopentomutase from B. cereus, the crystal structure of which has been determined (Panosian et al., 2011). We generated our alignment with Muscle (Edgar, 2004) using the Geneious plugin (v.3.8.425) and default settings.
 

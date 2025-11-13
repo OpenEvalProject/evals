@@ -16,11 +16,19 @@
 
 ## Abstract
 
-10.7554/eLife.41208.001 Gap genes mediate the division of the anterior-posterior axis of insects into different fates through regulating downstream hox genes. Decades of tinkering the segmentation gene network of Drosophila melanogaster led to the conclusion that gap genes are regulated (at least initially) through a threshold-based mechanism, guided by both anteriorly- and posteriorly-localized morphogen gradients. In this paper, we show that the response of the gap gene network in the beetle Tribolium castaneum upon perturbation is consistent with a threshold-free ‘Speed Regulation’ mechanism, in which the speed of a genetic cascade of gap genes is regulated by a posterior morphogen gradient. We show this by re-inducing the leading gap gene (namely, hunchback ) resulting in the re-induction of the gap gene cascade at arbitrary points in time. This demonstrates that the gap gene network is self-regulatory and is primarily under the control of a posterior regulator in Tribolium and possibly other short/intermediate-germ insects.
+Gap genes mediate the division of the anterior-posterior axis of insects into different fates through regulating downstream hox genes. Decades of tinkering the segmentation gene network of Drosophila melanogaster led to the conclusion that gap genes are regulated (at least initially) through a threshold-based mechanism, guided by both anteriorly- and posteriorly-localized morphogen gradients. In this paper, we show that the response of the gap gene network in the beetle Tribolium castaneum upon perturbation is consistent with a threshold-free ‘Speed Regulation’ mechanism, in which the speed of a genetic cascade of gap genes is regulated by a posterior morphogen gradient. We show this by re-inducing the leading gap gene (namely, hunchback) resulting in the re-induction of the gap gene cascade at arbitrary points in time. This demonstrates that the gap gene network is self-regulatory and is primarily under the control of a posterior regulator in Tribolium and possibly other short/intermediate-germ insects.
 
 ## Introduction
 
 The French Flag model is one of the earliest models of pattern formation in development (Wolpert, 1969), in which thresholds of a morphogen gradient (e.g. T1 and T2 in Figure 1A’) set the boundaries between different gene expression domains. Recent studies of morphogen-mediated patterning, however, presented several challenges to this simple picture. First, gene expression domains are usually found to be dynamic, and in many cases, are expressed sequentially in a wave-like fashion (e.g. during neural tube and limb bud patterning in vertebrates and during anterior-posterior (AP) fate specification in vertebrates and insects) (Briscoe and Small, 2015; Panovska-Griffiths et al., 2013; Cohen et al., 2014; Balaskas et al., 2012; Dessaud et al., 2007; Zeller, 2004; Harfe et al., 2004; El-Sherif et al., 2014; El-Sherif et al., 2012a; Zhu et al., 2017; Kuhlmann and El-Sherif, 2018). Even if activated simultaneously, gene expression domains usually undergo continuous shifts in space (e.g. gap and pair-rule domains in Drosophila) (El-Sherif and Levine, 2016; Verd et al., 2018; Jaeger et al., 2004). In such cases, it is difficult to correlate the locations of gene expression domains with specific values of morphogen concentrations. Second, morphogen exposure time was found to have a crucial effect on patterning. For example, the exposure time of Caudal (Cad) regulates the timing of gap and pair-rule genes in insects and that of Hox genes in vertebrates (Zhu et al., 2017; Neijts et al., 2017). Similarly, the concentration and exposure time of Sonic hedgehog (Shh) determines which fate a cell in the vertebrate neural tube and limb bud will take (Dessaud et al., 2007; Zeller, 2004; Harfe et al., 2004).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig1-v2.jpg)
+
+**Figure 1.:** (A–A’’). In the French Flag (FF) model, different concentrations of a morphogen gradient (grey) activate different cellular states (A, A’) based on a set of morphogen thresholds (here T1 and T2; A’). In A and A’, cells are represented by circles and cellular states are shown in blue, red and green. Shown in A’’ is a GRN realization of the FF model (genes representing different cellular states are shown in circles; arrowheads stand for activation, and flat bars stand for repression; the thicker the line, the stronger the activation/repression; dashed lines stand for the weakest activation/repression). (B-B’’) In the Speed Regulation (SR) model, all cells (shown in circles in B and B’) transit through different cellular states (shown in blue, red, and green) with a speed that is proportional to the concentration of a morphogen gradient (grey). Shown in B’’ is a GRN realization of the SR model (genes representing different cellular states are shown in circles; arrowheads stand for activation, and flat bars stand for repression; dashed lines stand for weak activation/repression). (C,E) Computer simulation of FF GRN shown as plots of expression domains along space for selected time points (C) and as a kymograph (E). (D,F) Computer simulation of SR GRN shown as plots of expression domains along space for selected time points (D) and as a kymograph (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Shown are kymographs of computer simulations of French Flag (FF) GRN, French Flag with Timer Gene (FFTG) GRN, and Speed Regulation (SR) GRN. For FF GRN, genes are expressed initially in sequential waves, but eventually reach steady state. For FFTG and SR GRNs, genes are expressed in sequential waves that keep propagating and shrinking as long as the morphogen gradient (shown in grey) is applied.
 
 For these reasons, recent works in morphogen-mediated patterning are suggesting a more dynamic and time-based paradigm rather than threshold-based (Briscoe and Small, 2015; Dessaud et al., 2007; Zhu et al., 2017; Verd et al., 2018; Jaeger et al., 2004; Verd et al., 2017; Clark, 2017; Clark and Akam, 2016; Clark and Peel, 2018; Brena and Akam, 2013; García-Solache et al., 2010; Chipman and Akam, 2008). However, the general description of the French Flag model (Wolpert, 1969) (Figure 1A,A’) is purely phenomenological (i.e. descriptive). Hence, it is unclear if a gene regulatory network (GRN) realization of the French Flag model, while still threshold-based, would reconciliate the experimentally observed deviations (namely, the dynamic nature of gene expression domains and the sensitivity of patterning to morphogen exposure times). In this paper, we show that indeed important classes of GRN realization of the French Flag model ‘transiently’ exhibit exactly these features. In particular, at an initial transient phase, gene expression domains are dynamic and keep shifting and shrinking as long as the morphogen gradient is applied, hence its sensitivity to the exposure time of the morphogen gradient. However, gene expression domains finally stabilize at the thresholds set by the morphogen gradient, adhering to the tenets of the French Flag model. Hence, we argue that the defining feature of the French Flag model is not its transient dynamics, but its threshold-based steady state behavior.
 
@@ -32,7 +40,7 @@ The paper is organized as follows. First, we contrast the French Flag model to S
 
 ## Results
 
-## Comparing French Flag and Speed Regulation models in patterning non-growing tissues
+### Comparing French Flag and Speed Regulation models in patterning non-growing tissues
 
 A common problem in development is how to divide a group of cells into different identities, each specified by the expression of one or more genes. Two different patterning mechanisms to partition a static (i.e. non-growing) tissue along a spatial axis are shown in Figure 1: the French Flag (FF) model (Figure 1A,A’) (Wolpert, 1969) and the Speed Regulation (SR) model (Figure 1B,B’) (Zhu et al., 2017; Kuhlmann and El-Sherif, 2018). In the FF model, different ranges of a morphogen concentration (grey in Figure 1A,A’) activate different cellular states (specified by the expression of one or a group of genes; different states are given different colors in Figure 1A,A’).
 
@@ -42,11 +50,31 @@ While the final results of both models are the same, their dynamics look very di
 
 Using in silico evolution techniques, Francois and Siggia in ref (François and Siggia, 2010) performed an unbiased exploration of possible morphogen-regulated GRNs that can divide an embryonic tissue into different fates. Although several solutions were found, they were mostly variations on the same underlying principle, which happened to be a straightforward realization of the FF model. A simple instance of this family of GRN solutions is shown in Figure 1A’’ using three genes (more genes can be added to the scheme in a straightforward manner; see Appendix 1). In the example GRN in Figure 1A’’, the morphogen gradient (grey) activates different genes with different strengths: strongly activates the blue gene, moderately activates the red gene, and weakly activates the green gene. Cross-regulatory interaction between genes further delimit gene expression bands (See Appendix 1 for description of how the FF GRN in Figure 1A’’ works; see simulation of a 5-genes FF GRN in Figure 1C, Video 1 and Video 2).
 
+![Video 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-video1.mp4.jpg)
+
+**Video 1.:** A computer simulation of a 5-genes French Flag GRN (a 5-genes version of Figure 1A’’). Genes are initially expressed in sequential waves, but their expressions eventually reache a steady state. Patterning genes are shown in blue, red, green, gold, and brown. Morphogen gradient is shown in grey. Horizontal axis is space and vertical axis is gene expression concentration.
+
+![Video 2.](https://cdn.elifesciences.org/articles/41208/elife-41208-video2.mp4.jpg)
+
+**Video 2.:** A computer simulation of a 5-genes French Flag GRN (a 5-genes version of Figure 1A’’) with gradient buildup dynamics. Wave dynamics are more pronounced due to gradient buildup.
+
 Now we turn to a molecular realization for the SR model recently suggested in refs (Zhu et al., 2017; Kuhlmann and El-Sherif, 2018). In this realization, two GRN modules are employed: a dynamic module and a static module (see Figure 1B’’ for a 3-genes realization and Appendix 1 for a 5-genes realization). The dynamic module is a genetic cascade that mediates the sequential activation of its constituent genes. The static module is a multi-stable network that mediates the refinement and stabilization of gene expression patterns. The morphogen gradient activates the dynamic but represses the static module. Hence, as we go from high to low values of the morphogen gradient, the dynamic module experiences excessively higher stabilizing effect from the static module, and consequently, runs slower. This is a straightforward realization of the core mechanism of the SR model (Figure 1B,B’) and, hence, a morphogen gradient applied to such scheme induces sequential kinematic waves that propagate from the high to the low end of the gradient as shown by the computer simulations in Figure 1D and Videos 3–5.
+
+![Video 3.](https://cdn.elifesciences.org/articles/41208/elife-41208-video3.mp4.jpg)
+
+**Video 3.:** A computer simulation of a 5-genes Speed Regulation GRN (a 5-genes version of Figure 1B’’). Genes are expressed in sequential waves that never stabilize (except for a small region at the low end of the morphogen). Patterning genes are shown in blue, red, green, gold, and brown. Morphogen gradient is shown in grey. Horizontal axis is space and vertical axis is gene expression concentration.
+
+![Video 4.](https://cdn.elifesciences.org/articles/41208/elife-41208-video4.mp4.jpg)
+
+**Video 4.:** A computer simulation of a 5-genes Speed Regulation GRN (a 5-genes version of Figure 1B’’) driven by a continuously decaying morphogen gradient (grey). Genes are expressed in sequential waves that gradually stabilize due to the morphogen gradient decay. Patterning genes are shown in blue, red, green, gold, and brown. Morphogen gradient is shown in grey. Horizontal axis is space, and vertical axis is gene expression concentration.
+
+![Video 5.](https://cdn.elifesciences.org/articles/41208/elife-41208-video5.mp4.jpg)
+
+**Video 5.:** A computer simulation of a 5-genes Speed Regulation GRN (a 5-genes version of Figure 1B’’) driven by a continuously building up then decaying morphogen gradient (grey).
 
 Comparing the spatiotemporal dynamics of the molecular realizations of the FF model and that of the SR model shows striking similarities, where gene expression domains are activated sequentially at the high end of the morphogen gradient (grey) and propagate in kinematic waves towards the low end of the gradient (compare Figure 1C,E–1D,F and Videos 1–4), especially if a morphogen buildup dynamics are introduced (compare Video 2 and Video 5). Both morphogen concentration and exposure time are important factors to determine which cellular state a certain cell will have at a certain point of time (at least at the initial transient phase). A main difference, however, is that gene expression domains in the FF model realizations are only dynamic during the initial transient phase, but eventually reach a steady state where they stabilize at certain morphogen thresholds (Figure 1—figure supplement 1A, Video 1). On the other hand, gene expression domains in the SR model keep shrinking and propagating towards the low end of the morphogen and never stabilize or reach a steady state (Figure 1—figure supplement 1C, Video 3), unless the morphogen gradient decays or retracts (Videos 4 and 5).
 
-## Comparing French Flag and Speed Regulation models in reproducing the phenomenology of insect development and evolution
+### Comparing French Flag and Speed Regulation models in reproducing the phenomenology of insect development and evolution
 
 So far, we have considered the application of the FF and SR models in patterning a static group of cells (i.e. a non-growing tissue). Here, we consider their application to the problem of insect development and evolution, where a patterning mechanism is needed to pattern both growing and non-growing tissues.
 
@@ -58,23 +86,55 @@ The anterior fates of insects (Figure 2A) form in a non-growing tissue (called t
 
 In ref (Zhu et al., 2017), it was suggested that AP fate specification in short- and intermediate-germ insects is mediated by the SR model, where a posterior morphogen (cad in Tribolium, or some other graded factor which expression correlates with that of cad) regulates the sequential activation of the AP-determinant genes of the gap class. This suggestion was based on the observation that the SR model can operate in two modes (Figure 2B): a gradient-based, which can pattern a non-elongating tissue (as discussed in the previous section), and a wavefront-based mode in which the posterior morphogen gradient continuously retracts as the tissue elongates, in a set-up similar to the Clock-and-Wavefront model (Pourquié, 2003; Palmeirim et al., 1997; Dubrulle et al., 2001; Lauschke et al., 2013). The wavefront-based mode is best suited for patterning elongating tissues. It was also shown that the flexibility of the SR model to pattern both elongating and non-elongating tissues could offer an evolutionary mechanism where a smooth transition between short- and long-germ modes of insect development is possible (Video 6).
 
+![Video 6.](https://cdn.elifesciences.org/articles/41208/elife-41208-video6.mp4.jpg)
+
+**Video 6.:** A computer simulation of fate specification in insects with different germ types using a 5-genes Speed Regulation GRN. (A) In short-germ insects, the posterior morphogen (grey) continuously retracts towards posterior with axis elongation. (B) In intermediate-germ insects, the posterior morphogen is initially expressed in a static gradient that eventually retracts towards posterior with axis elongation. (C) In long-germ insects, the posterior morphogen is expressed in a static gradient throughout the patterning process. Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
+
 However, in ref (François and Siggia, 2010), Francois and Siggia suggested a simple modification that enables also the FF model to exhibit such flexibility in patterning both elongating and non-elongating tissues. In this scheme, the posterior morphogen (fourth column in Figure 2A, and grey in Figure 2C) activates a gene (termed a ‘Timer Gene’ (François and Siggia, 2010); fifth column in Figure 2A, and black in Figure 2C). The Timer Gene is assumed to have negligible decay rate, so that it continuously builds up in a non-growing tissue (left column in Figure 2C). In a growing tissue, the expression of the Timer Gene (black in Figure 2C, right column) builds up in the presence of the retracting posterior gradient (grey in Figure 2C, right column), while it stabilizes upon its retraction. Hence, a long-range gradient of the Timer Gene forms along the whole axis of the full-grown tissue (last row in the fifth column of Figure 2A and the right column of Figure 2C). Thresholds of different concentrations of the Timer Gene then set the boundaries between different fates, in a similar fashion to the FF model (thresholds are shown in arrows in Figure 2C). We call this scheme ‘French Flag model with a Timer Gene’ (FFTG). We notice that both the SR model and the FFTG model can operate in gradient-based and wavefront-based modes (and, hence, can pattern both non-elongating and elongating tissues) and exhibit similar dynamics and final pattern (compare Figure 2B and C; see Figure 1—figure supplement 1).
 
 A transition from a gradient-based to wavefront-based patterning would still result in a long-range gradient of the Timer Gene along the tissue axis (Figure 2D). Hence, similar to the SR model, the FFTG model can mediate AP fate specification in insects of different germ types: operating in the wavefront-based mode for short-germ insects, operating in the gradient-based mode for long-germ insects, and operating in the gradient-based then switching to wavefront-based mode for intermediate-germ insects (Video 7; compare to Video 6).
+
+![Video 7.](https://cdn.elifesciences.org/articles/41208/elife-41208-video7.mp4.jpg)
+
+**Video 7.:** A computer simulation of fate specification in insects with different germ types using a 5-genes French Flag with a Timer Gene GRN. (A) In short-germ insects, the posterior morphogen (grey) continuously retracts towards posterior with axis elongation. (B) In intermediate-germ insects, the posterior morphogen is initially expressed in a static gradient that eventually retracts towards posterior with axis elongation. (C) In long-germ insects, the posterior morphogen is expressed in a static gradient throughout the patterning process. Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Timer Gene is shown in black. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
 
 Since gene expression dynamics of both the SR and FFTG models are very similar, we sought an experimental test to differentiate between the two models. In our demonstration of the experimental test, we will use the GRN realization of both SR and the FFTG models (5-genes version of Figure 1B’’ and 5-genes version of 1A’’ after adding a Timer Gene, respectively; see Appendix 1). We apply both models to the case of AP fate specification of an intermediate-germ insect.
 
 Here, we note that the sequential activation of genes in the SR model is mediated by the interaction between the fate-specifying genes themselves, whereas the Timer Gene is the mediator of sequential gene activation in the FFTG model. Hence, force-resetting the fate-specification gene sequence will reset the SR model, whereas resetting the expression pattern for the FFTG model would require resetting the Timer Gene instead. This is evident in our simulations of both models in Figure 2E and Videos 8 and 9. After the expression of the first three AP fate-specifying genes (blue, red, and green in Figure 2E), the blue gene was briefly re-induced. In the FFTG model, the blue gene becomes briefly dominant, but the already formed pattern and the newly forming pattern are largely unchanged (compare 5th to 3rd column of Figure 2E). This is a natural consequence of the fact that the Timer Gene (Figure 2E, second column) is the main driver of the patterning process, which is unaffected by the blue gene re-induction. On the other hand, re-inducing the blue gene had two consequences in the case of our GRN realization of the SR model (compare 4th and 6th columns of Figure 2E): (i) the already formed pattern outside of the expression domain of the posterior morphogen is deleted and dominated by the continued expression of the blue gene, and (ii) the temporal gene sequence is re-established within the expression of the posterior morphogen, resulting in the re-establishment of the patterning process. This dual effect results from the dual regulation mode of our realization of the SR model: a dynamic genetic module is active within the posterior morphogen expression domain, whereas a static module is active outside. In our GRN realization, re-inducing the blue gene resets the dynamic module (which is basically a genetic cascade), while it down-regulates all the genes of the static module except the re-induced blue gene (since it is a multi-stable mutually exclusive GRN).
 
-## A dual response upon re-inducing hunchback in the Tribolium embryo
+![Video 8.](https://cdn.elifesciences.org/articles/41208/elife-41208-video8.mp4.jpg)
+
+**Video 8.:** Re-inducing the leading gene (blue) in the Speed Regulation GRN during a simulation of intermediate-germ patterning results in dual response: already established genes in the anterior are down-regulated, while the sequential activation of genes is reset within the expression domain of the posterior morphogen (grey). Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
+
+![Video 9.](https://cdn.elifesciences.org/articles/41208/elife-41208-video9.mp4.jpg)
+
+**Video 9.:** Re-inducing the leading gene (blue) in the French Flag with a Timer Gene GRN during a simulation of intermediate-germ patterning results in a transient dominance of the leading gene, but eventual formation of the normal gene expression pattern. Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
+
+### A dual response upon re-inducing hunchback in the Tribolium embryo
 
 During AP patterning of the Tribolium embryo, gap genes (namely, hunchback (hb), Krüppel (Kr), milles-pattes (mlpt), and giant (gt); Figure 3) (Bucher and Klingler, 2004; Wolff et al., 1998; Savard et al., 2006; Cerny et al., 2005; Marques-Souza, 2007) are expressed in sequential waves of gene expressions that propagate from posterior to anterior in the presence of a gradient of the master regulator caudal (cad) (based on a correlational evidence, however) (Zhu et al., 2017). Hereafter, we will call the region of the embryo where cad is expressed: the ‘Active-Zone’. Upon retraction of the cad gradient, gap gene expressions stabilize into static domains before they gradually fade. Some of the gap genes have two trunk expression domains, namely: hb, mlpt and gt (shown in blue, green and gold, respectively in Figure 3; late trunk domains are outlined in black).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig3-v2.jpg)
 
-**Figure 3.:** caudal and gap genes during AP axis specification in Tribolium. caudal is expressed in a static (i.e. non-retracting) posterior-to-anterior gradient during the blastoderm stage, while is expressed in a retracting posterior-to-anterior gradient during the germband stage. Gap genes are expressed in sequential waves of gene expressions that propagate from posterior to anterior. Expression of different gap genes are tracked with differed colors: blue for hb, red for Kr, green for mlpt, and gold for gt. The second trunk domains of hb, mlpt and gt are outlined in black. Weak expressions are shown in faint colors. Non-trunk and extraembryonic expressions of gap genes (not considered in our analysis) are marked with asterisks. Posterior to the right in all embryos shown.
+**Figure 3.:** caudal is expressed in a static (i.e. non-retracting) posterior-to-anterior gradient during the blastoderm stage, while is expressed in a retracting posterior-to-anterior gradient during the germband stage. Gap genes are expressed in sequential waves of gene expressions that propagate from posterior to anterior. Expression of different gap genes are tracked with differed colors: blue for hb, red for Kr, green for mlpt, and gold for gt. The second trunk domains of hb, mlpt and gt are outlined in black. Weak expressions are shown in faint colors. Non-trunk and extraembryonic expressions of gap genes (not considered in our analysis) are marked with asterisks. Posterior to the right in all embryos shown.
 
 To determine whether the FF or the SR model is involved in regulating gap genes in Tribolium, we sought to re-induce the first gene in the gap gene sequence, namely hb, at arbitrary times during AP patterning in the Tribolium embryo. To this end, we constructed a transgenic line carrying a hb CDS under the control of a heat-shock promoter (hs-hb line; see Materials and methods and Figure 4—figure supplement 1). Briefly heat-shocking hs-hb embryos at 26–29 hr After Egg Lay (AEL) indeed resulted in a ubiquitous expression of hb that lasted for 6 hr post heat-shock (Figure 4—figure supplement 2; for a basic description of the cuticular and morphological phenotypes of heat-shocked hs-hb embryos, see Appendix 1). As a control, we also heat-shocked WT embryos at 26–29 hr AEL, and noticed a normal progression of gap gene expression, albeit with an initial delay of around 9 hr, compared to non-heat-shocked WT embryos (compare Figure 4A and Figure 4—figure supplement 2 to Figure 3; see also Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig4-v2.jpg)
+
+**Figure 4.:** (A) Expression dynamics of gap genes Kr, mlpt, and gt upon heat-shocking both WT and hs-hb embryos at 26–29 hr AEL. Shown are posterior halves of embryos (see Figure 4—figure supplement 2 for whole embryos). Expression of different gap genes are tracked with differed colors: red for Kr, green for mlpt, and gold for gt. The second trunk domains of mlpt and gt are outlined in black. Weak expressions are shown in faint colors. Posterior to the right in all embryos shown. (B) Dividing heat-shocked Tribolium embryos into three domains: Active-Zone (caudal-expressing zone at the posterior end of the embryo), Anterior (anterior to the Active-Zone), and HS Anterior (anterior to the Active-Zone at the time of applying heat-shock). See Materials and methods for a description of the used morphological landmarks to differentiate between these three regions. (C) Quantification (see Materials and methods) of gap gene expressions in WT, heat-shocked WT, and heat-shocked hs-hb embryos (heat-shocks applied at 26–29 hr AEL). Quantifications are carried out separately for HS Anterior, Anterior, and Active-Zone. While heat-shock application resulted in only a temporal delay in gap gene expression in WT, it resulted in dual response for hs-hb embryos: already established gap gene domains are pre-maturely down-regulated in HS Anterior, while the gap gene sequence is re-activated in Active-Zone. Re-induced gap gene sequence eventually propagates into Anterior. Time-windows where heat-shock is applied are shown in yellow.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Shown are relevant features of the plasmid pBac[hsp68-dsRed-hsp68-hb]: enzyme restriction sites AscI, FseI, XbaI and XhoI, the 3’ and the 5’ UTRs flanking the full length hb sequence, and the internal control dsRed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Expression dynamics of gap genes hb, Kr, mlpt, and gt upon heat-shocking both WT and hs-hb embryos at 26–29 hr AEL. Posterior to the right. HS-WT: heat-shocked WT embryos.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Quantified expression dynamics of gap genes hb (blue), Kr (red), mlpt (green), and gt (gold) in (A) HS Anterior, (B) Anterior, and (C) Active-Zone (see Materials and methods and Figure 4B for definitions of these regions) upon heat-shocking both WT (solid lines) and hs-hb embryos (dashed lines) at 26–29 hr AEL. y-axis represents proportion of eggs showing detectable gene expression at the designated region of the embryo (either HS Anterior, Anterior, or Active-Zone) within a timed egg collection. x-axis represents consecutive timed egg collections. Error bars represent standard error (see Materials and methods).
 
 Next, we examined and contrasted the expressions of the other gap genes (Kr, mlpt, and gt) in heat-shocked hs-hb and heat-shocked WT embryos. We observed that cells in hs-hb embryos had two distinct responses depending on whether they are within or anterior to the active-zone. Gene expression domains anterior to the active-zone are pre-maturely repressed, compared to heat-shocked WT. Within the active-zone, the gap gene domains sequence is re-induced, and eventually propagates towards anterior (Figure 4A). Specifically, in heat-shocked hs-hb embryos, at around 35–38 hr AEL, Kr expression anterior to the active-zone was down-regulated (Figure 4A). At around 41 hr AEL, Kr expression was re-initiated in the active-zone of heat-shocked hs-hb embryos, an effect that is not noticed in heat-shocked WT embryos (Figure 4A). The re-initiated Kr expression then propagated towards anterior. A similar effect is observed for the gap gene mlpt. At 35 hr AEL, the already established mlpt expression at the anterior of hs-hb embryos was down-regulated. By 41 hr AEL, mlpt expression was re-established in the active-zone and propagated towards anterior. The second domain of the re-established mlpt expression appeared at 56 hr AEL. Similarly, the already formed two domains of gt expression were repressed in the anterior and new two domains of expressions were re-established in the posterior of hs-hb embryos that eventually propagated towards anterior (Figure 4A).
 
@@ -84,9 +144,49 @@ It is worth noting here that, in WT, starting from 14 hr AEL, hb, Kr, mlpt and g
 
 So far, we considered the effects of re-inducing hb at 26–29 hr AEL, a time window where the active-zone is void of gap gene expressions. This helped avoiding a possible interference between gap gene expressions already present in the active-zone and the re-induced expressions. To investigate the outcome of re-inducing the gap gene sequence while the original gene expression sequence is unfolding, we preformed our heat-shock experiments also at time windows 23–26 hr AEL (Figure 5A and Figure 5—figure supplement 1; See Figure 5—figure supplement 2 for error bars; see Figure 5—source data 1 for source data and sample sizes) and 20–23 hr AEL (Figure 5B and Figure 5—figure supplement 3; See Figure 5—figure supplement 4 for error bars; see Figure 5—source data 2 for source data and sample sizes). For both time windows, the expression within the active-zone suffered a transient down-regulation before the gap gene sequence is re-induced. This indicates that the gap gene clock is based on a genetic cascade with mutual-repressive links, like the one we used in our theoretical analysis (dynamic module in Figure 1B’’).
 
-## The re-induction of gap gene sequence upon re-inducing hb is specific to the active-zone
+![Figure 5.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig5-v2.jpg)
+
+**Figure 5.:** Quantification (see Materials and methods) of gap gene expressions in WT, heat-shocked WT, and heat-shocked hs-hb embryos. Heat-shocks are applied at 23–26 hr AEL (A) and 20–23 hr AEL (B). Quantifications are carried out separately for HS Anterior, Anterior, and Active-Zone. While heat-shock application resulted in only a temporal delay in gap gene expression in WT, it resulted in dual response for hs-hb embryos: already established gap gene domains are pre-maturely down-regulated in HS Anterior, while the gap gene sequence is re-activated in Active-Zone. Re-induced gap gene sequence eventually propagates into Anterior. Time-windows where heat-shock is applied are shown in yellow.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Expression dynamics of gap genes hb, Kr, mlpt, and gt upon heat-shocking both WT and hs-hb embryos at 23–26 hr AEL. Posterior to the right. HS-WT: heat-shocked WT embryos.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Quantified expression dynamics of gap genes hb (blue), Kr (red), mlpt (green), and gt (gold) in (A) HS Anterior, (B) Anterior, and (C) Active-Zone (see Materials and methods and Figure 4B for definitions of these regions) upon heat-shocking both WT (solid lines) and hs-hb embryos (dashed lines) at 23–26 hr AEL. y-axis represents the proportion of eggs showing detectable gene expression at the designated region of the embryo (either HS Anterior, Anterior, or Active-Zone) within a timed egg collection. x-axis represents consecutive timed egg collections. Error bars represent standard error (see Materials and methods).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Expression dynamics of gap genes hb, Kr, mlpt, and gt upon heat-shocking both WT and hs-hb embryos at 20–23 hr AEL. Posterior to the right. HS-WT: heat-shocked WT embryos.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Quantified expression dynamics of gap genes hb (blue), Kr (red), mlpt (green), and gt (gold) in (A) HS Anterior, (B) Anterior, and (C) Active-Zone (see Materials and methods and Figure 4B for definitions of these regions) upon heat-shocking both WT (solid lines) and hs-hb embryos (dashed lines) at 20–23 hr AEL. y-axis represents the proportion of eggs showing detectable gene expression at the designated region of the embryo (either HS Anterior, Anterior, or Active-Zone) within a timed egg collection. x-axis represents consecutive timed egg collections. Error bars represent standard error (see Materials and methods).
+
+### The re-induction of gap gene sequence upon re-inducing hb is specific to the active-zone
 
 In our earlier theoretical analysis (Zhu et al., 2017), we considered a realization of the SR model that relies on the gradual switching between two genetic modules. An alternative realization would be to jointly regulate the activation and degradation rates of gap genes by a posterior morphogen gradient (computational modeling in Appendix 1; Video 10). A major prediction of the module switching model in the case of gap gene regulation in Tribolium is that the genetic wiring of gap genes in the presence of the morphogen cad (i.e. within the active-zone) is different from their wiring in the absence of cad (i.e. anterior to the active-zone). As discussed above, the difference in response to the re-induction of hb between the active-zone and the anterior supports the module switching model (and disfavors a degradation rate modulation model; Video 11). To further test this, we sought to examine if the transient down-regulation and the subsequent re-activation of gap genes is specific to the active-zone, i.e. the region of the embryo expressing cad. To this end, we utilized the axin (axn) RNAi phenotype in Tribolium, where the cad gradient extends to cover most of the embryo, transforming the embryo into an enlarged active-zone (albeit still expressed in a gradient; Figure 6—figure supplement 1) (Zhu et al., 2017; Fu et al., 2012). We performed our heat-shock experiments at 20–23 hr AEL time window for WT embryos, hs-hb embryos, embryos laid by WT mothers injected with axn dsRNA (axn RNAi embryos), and embryos laid by hs-hb mothers injected with axn dsRNA (hs-hb; axn RNAi embryos). We then analyzed the expression of mlpt at consecutive 3 hr time windows starting from 32 hr AEL. As shown earlier, in hs-hb embryos, mlpt initially suffered a transient down-regulation. Shortly after, mlpt expression is re-established within the active-zone. In axn RNAi embryos, mlpt expression proceeded as in WT but propagated across the whole embryo and never stabilized, consistent with the fact that the whole embryo transformed into an active-zone (Zhu et al., 2017). In hs-hb; axn RNAi embryos, after a transient down-regulation of mlpt expression, mlpt expression emerged at the posterior then expanded to cover the whole embryo, an effect only observed in the active-zone in WT embryos. This effect is recapitulated in a computer simulation of the axn phenotype (Video 12; Appendix 1). This supports the hypothesis that the re-activation of gap gene sequence in Tribolium upon re-inducing hb is specific to the region of the embryo where the posterior morphogen cad is expressed.
+
+![Video 10.](https://cdn.elifesciences.org/articles/41208/elife-41208-video10.mp4.jpg)
+
+**Video 10.:** A computer simulation of the Speed Regulation model realized by jointly modulating gene activity and gene products decay rates (described in Appendix 1) applied to the problem of patterning the anterior-posterior axis of an intermediate-germ insect. Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
+
+![Video 11.](https://cdn.elifesciences.org/articles/41208/elife-41208-video11.mp4.jpg)
+
+**Video 11.:** Re-inducing the leading gene (blue) in the Speed Regulation GRN realization by jointly modulating gene activity and gene products decay rates during a simulation of intermediate-germ patterning results resetting the sequential activation of patterning genes within the expression of the posterior morphogen (grey) but leaves the already established gene expression in the anterior intact. Patterning genes are shown in blue, red, green, gold, and brown. Posterior morphogen gradient is shown in grey. Horizontal axis represents the Anterior-Posterior axis. Posterior to the right. Vertical axis is gene expression concentration.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig6-v2.jpg)
+
+**Figure 6.:** mlpt expression is re-activated only in the active-zone (posterior cad-expressing region) upon heat-shocking hs-hb embryos (compare WT and hs-hb embryos). Knocking-down axn completely posteriorized Tribolium embryos (axn RNAi) such that nearly the entire embryo becomes a big active-zone (as evident from cad expression; see Figure 6—figure supplement 1), where mlpt expression is very dynamic and propagates across the entire embryo. Upon heat-shocking hs-hb embryos whose mothers had been injected with axn dsRNA (hs-hb; axn RNAi), mlpt expression is first activated at the posterior then propagates to cover the whole embryo, supporting the hypothesis that gap gene re-activation in specific to the cad-expressing domain (the active-zone). mlpt expresssion is tracked in green. The second trunk domain of mlpt is outlined in black. Weak expressions are shown in faint colors. Posterior to the right in all embryos shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41208/elife-41208-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** In WT germbands, cad is expressed in a posterior-to-anterior gradient that is spatially restricted to the posterior end of the embryo (A; see quantification of the gradient using ImageJ in A’). In axn RNAi embryos, cad gradient extends to cover most of the embryo (B; albeit still expressed in a gradient; see quantification of the gradient using ImageJ in B’). Regions of the embryo used for gradient quantification is enclosed with a yellow box.
+
+![Video 12.](https://cdn.elifesciences.org/articles/41208/elife-41208-video12.mp4.jpg)
+
+**Video 12.:** Shown are simulations of the SR model in simulated (A) axn RNAi background and (B) hs-hb; axn RNAi in Tribolium. The axn RNAi phenotype is simulated by not retracting the cad gradient (grey).
 
 ## Discussion
 
@@ -106,34 +206,78 @@ In summary, in this paper we showed that the gene expression dynamics driven by 
 
 ## Materials and methods
 
-## In situ hybridization, RNAi, and imaging of fixed embryos
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Tribolium castaneum)</td>
+      <td>San Bernardino WT (SB)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Most Tribolium labs (including El-Sherif and Klinger labs)</td>
+    </tr>
+    <tr>
+      <td>Strain background (Tribolium castaneum)</td>
+      <td>vermilion white v(w)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Most Tribolium labs (including El-Sherif and Klinger labs)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBac[3xP3-v; Tc'hsp68-Tc’hb-Tc'hsp68 3’UTR]</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Klingler lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### In situ hybridization, RNAi, and imaging of fixed embryos
 
 In situ hybridization was performed using DIG-labeled RNA probes and anti-DIG::AP antibody (Roche). Signal was developed using NBT/BCIP (BM Purple, Roche) according to standard protocols (Schinko et al., 2009; Shippy et al., 2009). All expression analyses were performed using embryos from uninjected females or females injected with double-stranded RNA (dsRNA) of gene of interest. dsRNA was synthesized using the T7 megascript kit (Ambion) and mixed with injection buffer (5 mM KCl, 0.1 mM KPO4, pH 6.8) before injection. Used dsRNA concentration for axn RNAi: 100 ng/µl. Embryos were imaged using ProgRes CFcool camera on Zeiss Axio Scope.A1 microscope and ProgRes CapturePro image acquisition software. Brightness and contrast of all images were adjusted and placed on a white background using Adobe Photoshop.
 
-## Overexpression construct
+### Overexpression construct
 
 A 1757 bp fragment of the Tc-hb mRNA cDNA22 (Wolff et al., 1995) was amplified using PCR primers Tc-hb_left 5’-CGTCTAGAGCAAAAATTTCGAACAGTCG-3’ and Tc-hb_right 5’-CCGCTCGAGTCCAACCCGTACATCTCCAT-3’ which were designed to include restriction sites XbaI and XhoI, respectively. This Tc-hb fragment contains the complete coding region and partial 5'UTR and 3'UTR sequences and was cloned between a Tc'hsp68 promotor and 3'UTR sequences via the XbaI-XhoI sites in plasmid pSLfa[Tc'hsp5'-dsRedEx-3'UTR; 5'3'UTR]fa (Johannes Schinko and Gregor Bucher, unpublished). From this plasmid, an AscI-FseI fragment including the hs-hb cassette was subcloned as AscI-FseI fragment into the piggyBac transformation vector pBac[3xP3-gTcv] (Johannes Schinko, unpublished), resulting in pBac[3xP3-v; Tc'hsp68-Tc’hb-Tc'hsp68 3’UTR] (Figure 4—figure supplement 1). This vector uses the Tribolium vermilion gene as transformation marker (Lorenzen et al., 2002).
 
-## Generation of hs-hb transgenic beetles
+### Generation of hs-hb transgenic beetles
 
 Plasmid DNAs were isolated using the Quiagen plasmid Midi Kit, and germline transformation was performed as described in refs (Berghammer et al., 1999; Berghammer et al., 2009). In one experimental series, 408 vermilion white embryos were injected of which 22% hatched. 44 crosses were set up, from which 10 transgenic strains could be generated. In another experimental series, 210 embryos were injected with a hatch rate of 56%. 59 crosses were set up, from which five transgenic strains could be generated. Ten of these hs-hb lines were tested for heat-shock phenotypes. Phenotype strength was measured by determining the proportion of larvae which (i) developed homeotic transformations, and (ii) which displayed, in addition to the homeotic transformations, additional trunk segments (see Appendix 1 for basic description of the cuticle phenotype of heat-shocked hs-hb embryos). Two out of those ten lines (hs-hb one and hs-hb 2) seemed most effective in generating heat-shock phenotypes and were further studied. The strain hs-hb two was used to generate the data in this paper.
 
-## Non-heat-shocked egg collections
+### Non-heat-shocked egg collections
 
 Three hours developmental windows were generated by incubating three-hours egg collections at 23–24°C for the desired length of time before fixation. Beetles were reared in whole-wheat flour supplemented with 5% dried yeast.
 
-## Heat-shocked egg collections
+### Heat-shocked egg collections
 
 Three hours developmental windows were generated by incubating three-hours egg collections at 23–24°C for the desired length of time. Egg collections are then heat-shocked in a water bath at 48°C for 10 min and then re-incubated at 23–24°C for the desired length of time before fixation.
 
-## Quantification of gene expressions in HS Anterior, Anterior, and Active-Zone
+### Quantification of gene expressions in HS Anterior, Anterior, and Active-Zone
 
 Gene expression quantifications (Figure 4C and Figure 5, with numerical data in Figures 4—figure supplement 3, Figure 5—figure supplements 2 and 4, Figure 5—figure supplement 4 see source data in Figure 5—source data 1, and Figure 5—source data 2) were created by counting proportions of embryos that have detectable expression in the three regions: HS Anterior, Anterior, and Active-Zone. Dividing an embryo into HS Anterior, Anterior, and Active-Zone is carried out using morphological markers in the Tribolium germband (Figure 4B) as follows. The posterior end of the germband usually has a roundish shape that gets gradually fused into a long rectangular shape as we go towards anterior, ending with the head at far anterior. The ‘Active-Zone’ starts from the posterior end of the germband and ends at the point of fusion of the roundish posterior and the rectangular region of the embryo. The ‘Anterior’ is everything anterior to the Active-Zone. The ‘HS Anterior’ is only the rectangular region of the germband. These morphological landmarks are still present in heat-shocked hs-hb germbands, albeit the whole germband is shortened.
 
-Error bars in Figures 4—figure supplement 3, Figure 5—figure supplements 2 and 4, Figures 4-figure supplement 4 represent standard error (SE) of proportions, estimated with the formula:SE=p(1−p)nwhere p is the proportion of embryos with detectable expression in the designated region of the embryo (either HS Anterior, Anterior, or Active Zone) within an egg collection, while n is the total number of embryos in the egg collection.
+Error bars in Figures 4—figure supplement 3, Figure 5—figure supplements 2 and 4, Figures 4-figure supplement 4 represent standard error (SE) of proportions, estimated with the formula:
+
+$$
+SE=\sqrt{\frac{p(1−p)}{n}}
+$$
+
+where p is the proportion of embryos with detectable expression in the designated region of the embryo (either HS Anterior, Anterior, or Active Zone) within an egg collection, while n is the total number of embryos in the egg collection.
 
 We used egg collections of 15 embryos on average (see Figure 5—source data 1, Figure 5—source data 1, and Figure 5—source data 2 for exact sample sizes), which yielded standard errors small enough for our analysis (See Figures 4—figure supplement 3, Figure 5—figure supplements 2 and 4, Figures 4-figure supplement 4). We used one replicate for each egg collection (per gene visualized per time point). However, the large number of consecutive time points and parallel egg collections (each per gene visualized) carried out in this study confirms the described trend in the presented data. A total of 3500 embryos were analyzed in this study.
 
-## Computational modeling
+### Computational modeling
 
 See Appendix 1 and Supplementary file 1.

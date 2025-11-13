@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45766.001 Flavodiiron proteins (FDPs) constitute a group of modular enzymes widespread in Bacteria, Archaea and Eukarya. Synechocystis sp. PCC 6803 has four FDPs (Flv1-4), which are essential for the photoprotection of photosynthesis. A direct comparison of light-induced O 2 reduction (Mehler-like reaction) under high (3% CO 2 , HC) and low (air level CO 2 , LC) inorganic carbon conditions demonstrated that the Flv1/Flv3 heterodimer is solely responsible for an efficient steady-state O 2 photoreduction under HC, with flv2 and flv4 expression strongly down-regulated. Conversely, under LC conditions, Flv1/Flv3 acts only as a transient electron sink, due to the competing withdrawal of electrons by the highly induced NDH-1 complex. Further, in vivo evidence is provided indicating that Flv2/Flv4 contributes to the Mehler-like reaction when naturally expressed under LC conditions, or, when artificially overexpressed under HC. The O 2 photoreduction driven by Flv2/Flv4 occurs down-stream of PSI in a coordinated manner with Flv1/Flv3 and supports slow and steady-state O 2 photoreduction.
+Flavodiiron proteins (FDPs) constitute a group of modular enzymes widespread in Bacteria, Archaea and Eukarya. Synechocystis sp. PCC 6803 has four FDPs (Flv1-4), which are essential for the photoprotection of photosynthesis. A direct comparison of light-induced O2 reduction (Mehler-like reaction) under high (3% CO2, HC) and low (air level CO2, LC) inorganic carbon conditions demonstrated that the Flv1/Flv3 heterodimer is solely responsible for an efficient steady-state O2 photoreduction under HC, with flv2 and flv4 expression strongly down-regulated. Conversely, under LC conditions, Flv1/Flv3 acts only as a transient electron sink, due to the competing withdrawal of electrons by the highly induced NDH-1 complex. Further, in vivo evidence is provided indicating that Flv2/Flv4 contributes to the Mehler-like reaction when naturally expressed under LC conditions, or, when artificially overexpressed under HC. The O2 photoreduction driven by Flv2/Flv4 occurs down-stream of PSI in a coordinated manner with Flv1/Flv3 and supports slow and steady-state O2 photoreduction.
 
 ## Introduction
 
@@ -33,9 +33,21 @@ Here, we provide in vivo evidence for Flv2/Flv4 mediated O2 photoreduction in on
 
 ## Results
 
-## Extent and kinetics of the Mehler-like reaction in cells acclimated to low (LC) and high Ci (HC) conditions
+### Extent and kinetics of the Mehler-like reaction in cells acclimated to low (LC) and high Ci (HC) conditions
 
 Application of membrane inlet mass spectrometry (MIMS) with 18O-enriched oxygen allows differentiation between photosynthetic gross O2 production and O2 uptake under illumination. The flv4-2/OE cells, accumulating high amounts of Flv2, Sll0218 and Flv4 both in LC and HC (>1% CO2 in air, HC) conditions (Bersanini et al., 2014), demonstrated substantially higher O2 photoreduction rates compared to respective WT cells (Figure 1A, B and D). The Flv3 protein level was similar in flv4-2/OE and wild-type (WT) cells grown under both LC and HC (Figure 1C), strongly supporting the in vivo contribution of flv4-2 operon proteins to O2 photoreduction during illumination. Gross O2 evolution rates of flv4-2/OE and WT cells grown under LC did not differ significantly from each other. However, a significant increase in the gross O2 evolution rate was observed in HC grown flv4-2/OE cells (Figure 1—source data 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) O2 reduction rate of WT, flv4-2/OE and (D) the M55 mutant (∆ndhB) was recorded in darkness (gray background) and under illumination (white background). The experiment was conducted in three independent biological replicates and a representative plot is shown. (Figure 1—source data 1). (C) Immunoblot detection of Flv3 and Flv4 in WT and flv4-2/OE. Pre-cultures were grown in BG-11, pH 8.2 under 3% CO2 (HC) for 3 days, after that cells were harvested and resuspended in fresh BG-11, pH 8.2 at OD750 = 0.2. The experimental cultures were grown under HC or under LC. For the MIMS experiments the cells were harvested and resuspended in fresh BG-11, pH 8.2 at 10 µg Chl a mL−1. O2 photoreduction was recorded during the transition from darkness to high-light intensity of 500 µmol photons m−2s−1. In order to create comparable conditions for MIMS measurements, LC-grown cells were supplemented with 1.5 mM NaHCO3 prior to the measurements. Independent experiments performed on WT cells grown in BG-11 lacking Na2CO3, but supplied with 1.5 mM NaHCO3 prior to MIMS measurement showed no significant difference in O2 photoreduction rates (Figure 1—figure supplement 2), thus allowing confident comparison of the MIMS results. Different phases of O2 photoreduction kinetics are indicated as {I}, {II}, {III}. 50% WT, corresponds to 1:2 diluted WT total protein sample.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cells were grown under 3% CO2 (BG-11, pH 8.2), harvested and resuspended in fresh BG-11 at 10 µg Chl a mL−1 . O2 uptake was recorded during the transition from dark to high-light (500 µmol photons m−2 s−1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The cells were harvested and inoculated in the fresh BG-11 7.5 without Na2CO3. Prior to MIMS measurement, cells were supplemented with 1.5 mM NaHCO3 (solid line), or measured in the absence of an additional carbon source.
 
 As reported earlier, the Ci level has a remarkable effect on the expression of FDPs at both transcript and protein level: Flv2, Flv4 and Flv3 have been shown to be strongly upregulated under LC (Zhang et al., 2009; Wang et al., 2004; Battchikova et al., 2010), and down-regulated upon a shift to HC (Zhang et al., 2009; Hackenberg et al., 2009; Figure 1C). Nevertheless, a direct comparison of the efficiency and kinetics of the Mehler-like reaction in HC- and LC-acclimated cells has not been reported, thus the contribution of different FDPs to O2 photoreduction has been difficult to assess. Our initial approach to evaluating the contributions of the different FDPs was based on determining the activity of the Mehler-like reaction in Synechocystis cells grown under LC and HC (3% CO2) conditions, at pH 8.2.
 
@@ -45,15 +57,31 @@ Upon a shift from darkness to light, the ∆flv2 and ∆flv4 mutants grown under
 
 To uncover the reason for the fast decay of O2 photoreduction observed under LC conditions (Figure 1A), we first tested putative competition between the NAD(P)H:quinone oxidoreductase (NDH-1) complex and FDPs for available photosynthetic electrons. The NDH-1 complex is a powerful machinery utilizing electrons for cyclic electron transport (CET) around PSI, CO2 uptake and respiration under LC conditions (Zhang et al., 2004; Schuller et al., 2019). To this end, O2 photoreduction was measured in the M55 mutant (ΔndhB), which is deficient in the hydrophobic NdhB subunit (Ogawa, 1991) and thus lacks all NDH-1 complexes (Zhang et al., 2004). The M55 mutant cells (grown under LC, pH 8.2 conditions) demonstrated a fast induction of O2 photoreduction (phase I) similar to the WT, which continued at steady-state, lacking the second phase of O2 photoreduction after the dark-to-light transition (Figure 1D). Importantly, the M55 mutant showed a slow induction (see phase I of gross O2 evolution in Figure 1—source data 2) and considerably lower gross O2 evolution rate compared to the WT cells (see phase III of gross O2 evolution in Figure 1—source data 2). This suggests that a steady-state O2 photoreduction in M55 is not due to increased electron flow from PSII. The lack of a strong second phase in O2 photoreduction kinetics resembles the situation in WT cells grown under HC (Figure 1B; Figure 1—figure supplement 1), where the expression of the NDH-1 complex is strongly reduced, and thus suggests competition for electrons between the NDH-1 complexes and FDPs under LC conditions.
 
-## The extent and kinetics of the Mehler-like reaction are strongly dependent on the pH and carbonate concentration of the growth medium
+### The extent and kinetics of the Mehler-like reaction are strongly dependent on the pH and carbonate concentration of the growth medium
 
 The pH and the presence of carbonate in the growth medium were evaluated as possible modulators of the extent and kinetics of the Mehler-like reaction and the accumulation of FDPs under LC conditions. Standard BG-11 medium containing sodium carbonate (Na2CO3) at a final concentration of 0.189 mM was used for all growth experiments, other than those indicated to be Ci limited. In these experiments, performed under atmospheric CO2, Ci limitation was achieved by omitting Na2CO3 from the BG-11 growth media.
 
-## The effect of pH
+#### The effect of pH
 
 The WT cells grown at pH 9 demonstrated a strong but only transient Mehler-like reaction: the O2 photoreduction rate reached its maximum during the first 30 s of illumination, then quickly dropped (within 1 min) to the initial level of dark O2 uptake (Figure 2, right panel). Similarly to the WT, the ∆flv4 mutant cells demonstrated only a transient O2 photoreduction upon illumination. There was no significant O2 photoreduction detected for ∆flv1/∆flv3 and ∆flv3/∆flv4 mutants grown at pH 9.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig2-v2.jpg)
+
+**Figure 2.:** O2 reduction rate was recorded in darkness (gray background) and under illumination with actinic white light at an intensity of 500 µmol photons m−2 s−1 (white background). Pre-cultures were grown in standard BG-11 medium (containing Na2CO3 at a final concentration of 0.189 mM) under HC for 3 days at different pH levels. For MIMS experiments, cells were shifted to LC at OD750≈0.2 (same pH) and grown for 4 days before measurements. Exceptions were: (i) pH 6 experimental cultures were inoculated from pH 8.2 pre-cultures; and (ii) pH 7.5 pre-culture was shifted to LC in standard BG-11 containing Na2CO3 at a final concentration of 0.189 mM or in BG-11 without Na2CO3 (dotted line ‘- Na2CO3’). The experiment was conducted in three independent biological replicates (except experiment at pH 6 with n = 2 independent biological replicates) and a representative plot is shown. (Figure 2—source data 1). In order to create comparable conditions for MIMS measurements, all cells were supplemented with 1.5 mM NaHCO3 prior to the measurements.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Pre-cultures were grown under HC for 3 days at pH 7.5 or pH 8.2 in BG-11 media with or without Na2CO3. For O2 photoreduction experiments, cells were shifted to LC at OD750≈0.2 and grown for 4 days.
+
 Immunoblotting using specific antibodies showed that, as for WT cells grown under HC (Figure 1D), Flv2 and Flv4 proteins were almost undetectable in the WT grown under LC at pH 9 (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) The effect of the pH and (B, C) sodium carbonate in the growth medium (A, C) on the protein and (B) transcript levels of FDP. (D) Protein immunoblots demonstrating the accumulation of bicarbonate transporter (SbtA) and NDH-1 subunits (NdhD3 and NdhJ) in the cells grown at different pH and CO2 concentration. Cells were pre-grown at different pH levels (+Na2CO3) under HC for 3 days, harvested, resuspended in fresh BG-11 (pH maintained), adjusted to OD750≈0.2 and shifted to LC for 4 days. At pH 7.5, the cells were grown at LC in the presence (+ Na2CO3, at final concentration of 0.189 mM) or in the absence (- Na2CO3) of sodium carbonate (B, C). Transcript abundance is presented as mean ± SD, n = 2–4 biological replicates, asterisks indicate a statistically significant difference to the WT (*p<0.05; ***p<0.001) (Figure 3—source data 1). Numbers 1–3 indicate different biological replicates. 25% and 50% correspond to 1:4, 1:2 diluted total protein sample, and 100% indicates undiluted total protein sample.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The cells were grown at LC in BG-11 at pH 7.5. 25 µM DBMIB and 50 µM HQNO were added directly to the cuvette immediately prior to MIMS measurement. The arrow indicates the time when inhibitor was added to the sample. The ∆cyd mutant was previously described in Howitt and Vermaas (1998).
 
 In line with protein data, the transcript levels of both flv2 and flv4 were significantly down-regulated in the cells grown at pH 9 (Figure 3B), suggesting a pH-dependent transcriptional regulation of flv4 and flv2. This is consistent with earlier transcriptional profiling experiments reporting downregulation of flv2 and flv4 transcripts after transferring Synechocystis from pH 7.5 to pH 10 (Summerfield and Sherman, 2008). Importantly, the accumulation of Flv3 was not affected at pH 9. These results strongly suggest that the conspicuous but transient O2 photoreduction observed in the WT and ∆flv4 mutant cells at pH 9 originates mainly from the activity of Flv1/Flv3 heterodimer.
 
@@ -71,35 +99,55 @@ The expression of the SbtA protein closely followed the changes in the expressio
 
 Unlike the growth media at pH 6–8.2, the Ci-pool at pH 9 contains an additional species, CO32-. It is possible that a small amount of CO32- in the external growth medium acts as a signal to trigger the regulation of flv2 and flv4 expression via antisense RNA as1-flv4 and the master transcription factors, ndhR or cmpR (Eisenhut et al., 2012). Considering that the double negative charge of CO32- prevents its diffusion through the cell membrane, and the fact that an active carbonate uptake transporter is currently unknown, we cannot yet consider CO32- to be an internal sensor. To gain further insight to the carbonate effect on O2 photoreduction, MIMS experiments were performed on FDP mutants grown in BG-11 medium in the presence (0.189 mM) and absence of sodium carbonate.
 
-## The effect of sodium carbonate
+#### The effect of sodium carbonate
 
 Culturing the cells without Na2CO3 at pH 7.5 clearly enhanced O2 photoreduction in the WT and all studied FDP mutants (Figure 2, middle panel). Despite such a clear variation in O2 photoreduction rates in the WT, no significant difference in gene transcript (Figure 3B) and protein levels (Figure 3C) of FDPs were observed in the presence or absence of Na2CO3.
 
-## FDP induced O2 photoreduction does not occur at PSII or PQ-pool level
+### FDP induced O2 photoreduction does not occur at PSII or PQ-pool level
 
 In order to establish where in the electron transport chain the Flv2/Flv4 heterodimer-related O2 photoreduction occurs, we focused on the flv4-2/OE mutant (grown at LC, pH 7.5, without carbonate). This mutant showed especially high accumulation of Flv2 and Flv4 proteins and a higher O2 photoreduction rate than the WT (Figure 1). When linear electron transport was blocked at Cytochrome b6f (Cyt b6f) level using DBMIB as an inhibitor (Draber et al., 1970; Yan et al., 2006), both the WT (Ermakova et al., 2016) and flv4-2/OE mutant cells demonstrated a strong light-induced O2 uptake (Figure 3—figure supplement 1). As expected, in the Δcyd mutant the light-induced O2 uptake was not detected in the presence of DBMIB (Ermakova et al., 2016), Figure 3—figure supplement 1). The addition of HQNO, an inhibitor of Cytochrome bd quinol oxidase (Cyd) (Pils et al., 1997) and Cyt b6f (Fernández-Velasco et al., 2001) to the DBMIB-treated WT and flv4-2/OE completely eliminated O2 photoreduction. These results confirmed that Cyd was solely responsible for the observed O2 photoreduction occurring at the PQ-pool level.
 
-## Growth phenotype of FDP deletion mutants under fluctuating light intensities
+### Growth phenotype of FDP deletion mutants under fluctuating light intensities
 
 We have previously demonstrated that the Flv1/Flv3 heterodimer enables cell growth under fluctuating light, by functioning in the Mehler-like reaction as an efficient electron sink (Allahverdiyeva et al., 2013). However, the results of the current study clearly suggest an additional involvement of the Flv2/Flv4 heterodimer in the Mehler-like reaction, particularly under conditions of LC and at pH values of 8.2 or lower (Figures 1 and 2). These findings led us to more precisely examine the combined effects of the pH of the growth medium and the fluctuating growth light conditions (FL) on the growth performance of various FDP mutants. To this end, both severe (FL20/500, when 20 µmol photons m−2 s−1 background light was interrupted every 5 min by 30 s light pulse intensity of 500 µmol photons m−2 s−1) and mild (FL50/500, when 50 µmol photons m−2 s−1 background light was interrupted every 5 min by 30 s light pulse intensity of 500 µmol photons m−2 s−1) fluctuating lights were applied at different levels of pH. In line with our previous work, the ∆flv1/∆flv3 mutant (also ∆flv3/∆flv4) failed to grow under severe (FL20/500) light fluctuations, independent of the pH of the growth medium (Figure 4; Figure 4—figure supplement 1). Differently to the severe FL20/500 condition, under mild fluctuating light (FL50/500), the ∆flv1/∆flv3 mutant demonstrated slower growth than the WT under alkaline pH (pH 9, Figure 4 and pH 8.2 (Mustila et al., 2016), Figure 4—figure supplement 1)). Growth was similar to the WT at pH 7.5 (Mustila et al., 2016), Figure 4—figure supplement 1) and pH 6 (Figure 4). Importantly, the ∆flv4 mutant grew similarly to the WT at all studied pH levels, both under mild and severe FL conditions (Figure 4). The ∆flv2, ∆sll0218 and flv4-2/OE mutants also demonstrated similar growth to the WT under severe FL20/500 at pH 7.5 and 8.2 (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig4-v2.jpg)
+
+**Figure 4.:** Pre-cultures were grown in BG-11 medium under HC for 3 days illuminated with constant light of 50 µmol photons m−2 s−1. The cells pre-grown at pH 9 or pH 8.2 (for experimental culture at pH 6) were harvested, resuspended in fresh BG-11 (pH 9 or 6), adjusted to OD750 = 0.1 and shifted to LC. Experimental cultures were grown under FL 20/500 or 50/500 regime for 8 days. The experiment was conducted in two independent biological replicates and average values was plotted.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Cells were grown in BG-11 (pH 7.5) in the absence of Na2CO3 and shifted from HC to LC at pH 7.5 or pH 8.2.
+
 The results above strongly suggest that, in contrast to the Flv1/Flv3-originated Mehler-like reaction, Flv2/Flv4-driven O2 photoreduction is not essential for the survival of cells under fluctuating light.
 
-## Effect of increasing light intensities on the Mehler-like reaction
+### Effect of increasing light intensities on the Mehler-like reaction
 
 In order to assess the response of the O2 photoreduction to different light intensities, the WT, ∆flv4 and ∆flv1/∆flv3 mutant cells were illuminated with 500, 1000 and 1500 µmol photons m−2 s−1 white light (Figure 5). Under LC conditions, increasing the light intensity from 500 to 1000 µmol photons m−2 s−1 resulted in a two-fold increase of the maximum O2 photoreduction rate in the WT (Figure 5A and D). The further increase (1500 µmol photons m−2 s−1) only slightly enhanced (2.3-fold) the maximum O2 photoreduction rate, suggesting that the applied light intensity was nearly saturating. Likewise, the ∆flv4 mutant demonstrated about 1.9- and 2.3-fold enhancements of the maximum rate of transient light-induced O2 reduction under 1000 and 1500 µmol photons m−2 s−1, respectively (Figure 5C and D). Contrasting this was the results of the ∆flv1/∆flv3 mutant, which showed lesser responses to increasing light intensities (1.6- and 1.8-fold enhancement in the maximum rate at 1000 and 1500 µmol photons m−2 s −1, respectively) (Figure 5B and D). It is important to note that both the ∆flv4 and ∆flv1/∆flv3 mutants accumulate nearly the WT level of the Flv3 or Flv4/Flv2 proteins, respectively (Zhang et al., 2009; Mustila et al., 2016). Moreover, increasing light intensity from 500 to 1500 µmol photons m−2 s−1 also resulted in enhancement of the O2 photoreduction rate in the WT cells grown under HC (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig5-v2.jpg)
+
+**Figure 5.:** O2 reduction rate was recorded in darkness (gray background) and under illumination with actinic white light intensities of 500, 1000 and 1500 µmol photons m−2 s−1 (white background). In order to create comparable conditions for MIMS measurements, all cells were supplemented with 1.5 mM NaHCO3 prior to the measurements. Pre-cultures were grown in BG-11 medium (pH 7.5) under 3% CO2 (HC) for 3 days and then shifted to LC (atmospheric 0.04% CO2 in air) at OD750 = 0.2 and pH 7.5 for 4 days. For MIMS measurements, cells were harvested and resuspended in fresh BG-11 medium at a Chl a concentration of 10 µg mL−1. (D) Maximum rate of light-induced O2 uptake (O2 µmol mgChl a−1 hr−1) of WT, ∆flv1/∆flv3 and ∆flv4 mutant cells at different light intensities applied. The experiment was conducted in three independent biological replicates and a representative plot is shown (Figure 5—source data 1).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** O2 reduction rate was recorded in darkness (gray background) and under illumination with actinic white light intensities of 500 and 1500 µmol photons m−2 s−1 (white background). Cells were grown under 3% CO2 (BG-11, pH 8.2), harvested and resuspended in fresh BG-11 at Chla 10 ug/ml for MIMS measurements.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Cells were grown in BG-11 (pH 7.5) and shifted from HC to LC for 4 d and illuminated with 50 µmol photons m−2s−1. Prior to the HL treatment, Chl a concentration was set to 10 µgmL-1. Measurements were made in dark-adapted samples after 0 hr and 2 hr of HL treatment (1500 µmol photons m−2 s−1). The PSII oxygen evolving activity was in measured in the presence of 0.5 mM DMBQ under 1000 µmol photons m−2s−1 white illumination. Pm was determined under far red illumination by applying a strong white pulse (5000 µmol photons m−2 s−1). Data are represented as mean of 2 biological replicates (± SD).
 
 The fast and transient response of ∆flv4 mutant cells to drastic increases in light intensity (Figure 5C) confirmed the high capacity of Flv1/Flv3-related O2 photoreduction to act as an electron sink. These results explain the essential role of Flv1/Flv3, unlike Flv2/Flv4, for the survival of cells under fluctuating light intensities. Intriguingly, both the fast induction phase {I} and quasi-stable phase {III} of O2 photoreduction rates of the WT were greater than the sum of the individual O2 photoreduction rates from ∆flv1/∆flv3 and ∆flv4, implying a strong enhancement of O2 photoreduction by various oligomer activities in the presence of all four FDPs.
 
 Echoing trends seen in O2 photoreduction rates, gross O2 evolution rates of the WT strongly enhanced with increasing light intensities (1.6- and 1.8-fold increase in 1000 and 1500 µmol photons m−2 s−1, respectively), whereas the Δflv4 mutant showed only limited increases of gross O2 evolution rates (1.3- and 1.5-fold in 1000 and 1500 µmol photons m−2 s−1, respectively), and Δflv1/∆flv3 O2 evolution rates were already at maximum levels under the lowest light intensity of 500 µmol photons m−2 s−1 (Figure 1—source data 2). It is worth mentioning that, neither the Δflv1/∆flv3 nor Δflv4 mutant achieved a steady-state gross O2 evolution during the 5 min of illumination: Δflv1/∆flv3 demonstrated gradual increase, whereas Δflv4 showed gradual decrease in gross O2 evolution. Next, PSII (O2 evolving activity monitored in the presence of artificial electron acceptor, DMBQ) and PSI (maximum oxidizable amount of P700, Pm) activities were measured in cells grown under moderate light (50 µmol photons m−2 s−1) and exposed to high light (1500 µmol photons m−2 s−1) for 2 hr. After 2 hr of high light treatment, ∆flv1/∆flv3 showed no significant difference in the maximum oxidizable amount of P700 (Pm) and PSII activity compared to the WT and Δflv4 mutant (Figure 5—figure supplement 2). This is in line with previous studies proving that other photoprotective mechanisms are able to replace Flv1/Flv3 (Zhang et al., 2009) unless the cells experience abrupt fluctuations in light intensity (Allahverdiyeva et al., 2013). It has already been shown that a strong high light (1500 µmol photons m−2 s−1) causes slightly slow growth and a short high light treatment decreases PSII activity in the Δflv4 mutant compared to the WT (Figure 5—figure supplement 2; Zhang et al., 2009; Bersanini et al., 2014; Bersanini et al., 2017). Importantly, Δflv4 demonstrated a Pm level comparable to that of the WT after 2 hr of high-light treatment. This suggests the importance of the Flv2/Flv4 driven steady-state O2 photoreduction in photoacclimation, by the prevention of PSII photodamage caused by the over-reduction of the photosynthetic chain.
 
-## The functional expression of FDPs is highly modulated by Ci conditions and light penetration
+### The functional expression of FDPs is highly modulated by Ci conditions and light penetration
 
 The inoculum size (starting OD750 value) determines the extent of light penetration upon starting a cultivation. In previous studies, cells were pre-grown in HC, then harvested at late logarithmic phase and inoculated in fresh BG-11 (pH 8.2) at OD750≈0.4–0.5, before shifting to LC for the next 3 days (Allahverdiyeva et al., 2011; Allahverdiyeva et al., 2013; Ermakova et al., 2016). To ensure better light penetration of the cultures and to improve the acclimation of cells to the conditions used in this study, the experimental WT and ∆flv1/∆flv3 cultures were inoculated at a low OD750≈0.1–0.2 and then cultivated for 4 days (instead of 3 days in previous studies). The WT cells grown under LC from a lower OD (OD750≈0.2) demonstrated notably higher O2 uptake during illumination, compared to the cells shifted to LC at OD750≈0.5 (Figure 6A). Importantly, the ∆flv1/∆flv3 mutant cells shifted to LC at a lower OD (OD750≈0.2) also demonstrated a residual steady-state O2 photoreduction activity.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45766/elife-45766-fig6-v2.jpg)
 
-**Figure 6.:** 2 photoreduction and accumulation of FDPs in the WT and Δflv1/Δflv3 mutant cells.(A) Rates of O2 uptake measured by MIMS during darkness (gray background) and under illumination with actinic white light at an intensity of 500 µmol photos m−2s−1 (white background). In order to create comparable conditions for MIMS measurements, all cells were supplemented with 1.5 mM NaHCO3 prior to the measurements. (B) Protein immunoblots showing the relative accumulation of different FDPs in the WT and Δflv1/Δflv3 mutant cells. Pre-cultures were grown in BG-11 (pH 8.2) under HC until late logarithmic phase (OD750≈2.5), then harvested and inoculated in fresh BG-11 under LC at OD750 = 0.2 for 4 days or OD750 = 0.5 for 3 days. The experiment was conducted in three independent biological replicates and a representative plot is shown in (A). WT_50% corresponds to 1:2 diluted total protein sample and 100% to undiluted total protein sample.10.7554/eLife.45766.021Figure 6—source data 1.2 reduction of WT, ∆flv1/∆flv3 and ∆flv4 mutant cells grown at different inoculum size.
+**Figure 6.:** (A) Rates of O2 uptake measured by MIMS during darkness (gray background) and under illumination with actinic white light at an intensity of 500 µmol photos m−2s−1 (white background). In order to create comparable conditions for MIMS measurements, all cells were supplemented with 1.5 mM NaHCO3 prior to the measurements. (B) Protein immunoblots showing the relative accumulation of different FDPs in the WT and Δflv1/Δflv3 mutant cells. Pre-cultures were grown in BG-11 (pH 8.2) under HC until late logarithmic phase (OD750≈2.5), then harvested and inoculated in fresh BG-11 under LC at OD750 = 0.2 for 4 days or OD750 = 0.5 for 3 days. The experiment was conducted in three independent biological replicates and a representative plot is shown in (A). WT_50% corresponds to 1:2 diluted total protein sample and 100% to undiluted total protein sample.
 
 Immunoblot analysis using specific FDP antibodies showed that the WT cells transferred from HC to LC at OD750 = 0.2 accumulated higher amount of the Flv2, Flv3 and Flv4 proteins compared to the cells shifted to LC at OD750 = 0.5 (Figure 6B). A similar trend was also observed in the ∆flv1/∆flv3 mutant, which accumulated more Flv2 and Flv4 when cultivated at LC from OD750 = 0.2. This is in line with previous results showing that the accumulation of flv2 and flv4 transcripts in Synechocystis (upon a shift from HC to LC, Zhang et al., 2009) and vegetative cell-specific flv1A and flv3A transcripts in Anabaena sp. PCC 7120 (upon a shift from dark to light, Ermakova et al., 2013) strongly depended on light intensity.
 
@@ -107,7 +155,7 @@ The results above highlight that Ci and light penetration upon a shift of cells 
 
 ## Discussion
 
-## The Flv2/Flv4 heterodimer contributes to the Mehler-like reaction when naturally expressed under LC conditions or artificially overexpressed under HC
+### The Flv2/Flv4 heterodimer contributes to the Mehler-like reaction when naturally expressed under LC conditions or artificially overexpressed under HC
 
 By characterizing Synechocystis mutants specifically affected in the accumulation of various FDPs, we show here that Flv2 and Flv4, together with Flv1 and Flv3 proteins, are involved in O2 photoreduction in vivo. Until recently, it has generally been accepted that the Flv1/Flv3 proteins safeguard PSI under both HC and LC conditions (Allahverdiyeva et al., 2013), whereas proteins encoded by the flv4-2 operon and being highly expressed under LC, function in the photoprotection of PSII, presumably by directing excess electrons from PSII to an as yet unknown acceptor (Zhang et al., 2009; Zhang et al., 2012; Shimakawa et al., 2015). The possibility of an Flv2/Flv4 contribution to O2 photoreduction in vivo was neglected due to a lack of evidence for light-induced O2 uptake in ∆flv1 and/or ∆flv3 mutants (Helman et al., 2003; Allahverdiyeva et al., 2011; Allahverdiyeva et al., 2013). Thus, Flv1 and Flv3 were assumed to be solely responsible for the Mehler-like reaction. Recently, it was demonstrated that Synechocystis Flv4 expressed in E. coli is capable of NADH-dependent O2-reduction in vitro (Shimakawa et al., 2015). However, the reported reaction rate was extremely low (almost residual) compared to the activity of FDP for example from anaerobic protozoa (Di Matteo et al., 2008) and the enzyme showed no affinity to NADPH. A similar scenario was previously presented for the Flv3 protein, where in vitro studies performed on recombinant Synechocystis protein led to a claim that Flv3 functions as a homodimer in NADH-dependent O2 reduction (very low affinity to NADPH) (Vicente et al., 2002), whilst subsequent study with ∆flv1-OEflv3 (or ∆flv3-OEflv1) mutants clearly demonstrated that homooligomers of Flv3 (or Flv1) do not function in O2 photoreduction in vivo (Mustila et al., 2016). Such discrepancies between the in vitro and in vivo results suggest that the in vitro assays conducted thus far have apparently failed to take into full consideration all the complex intracellular interactions, for example the involvement of Fed or FNR as an electron donor for FDPs, or the in vitro experiments do not necessarily demonstrate the processes occurring in vivo.
 
@@ -119,13 +167,13 @@ The complete elimination of light-induced O2 reduction in WT cells grown at pH 8
 
 From the results discussed above, it can be concluded that both the Flv1/Flv3 and Flv2/Flv4 heterodimers have capacity to drive the Mehler-like reaction, functioning downstream of PSI.
 
-## The Flv1/Flv3 heterodimer drives a strong and steady-state O2 photoreduction under HC
+### The Flv1/Flv3 heterodimer drives a strong and steady-state O2 photoreduction under HC
 
 It is generally accepted that under LC conditions, the slowing down of the Calvin-Benson cycle leads to a build-up of reduced stromal components (Cooley and Vermaas, 2001; Holland et al., 2015), which would stimulate the Mehler reaction to dissipate excess electrons (Ort and Baker, 2002). However, under HC conditions, the Mehler reaction would be expected to direct relatively low electron flux to O2. In this study, we provide evidence that HC-grown WT cells are capable of equally high O2 photoreduction as respective LC-grown WT cells, and that cells are capable of maintaining the steady-state activity at least during the first 5–10 min of illumination (Figure 1A). Compared to the WT, a drastically lower O2 photoreduction rate is observed in the ∆flv1/∆flv3 and ∆flv3/∆flv4 mutants grown in HC, confirming that O2 uptake under these conditions is mostly due to the Flv1/Flv3-driven Mehler-like reaction (Figure 1—figure supplement 1).
 
 It is important to note that the O2 photoreduction capacity of Synechocystis generally correlates with the abundance of FDPs (Figures 1 and 6). However, protein abundance is not the only factor that determines O2 photoreduction capacity. Indeed, despite strong and steady-state O2 photoreduction, HC-grown cells demonstrate nearly undetectable levels of Flv2 and Flv4 and low amount of Flv3, compared to levels observed under LC conditions. Furthermore, the increase in O2 photoreduction rates (Figure 2, middle panel) obtained by omitting sodium carbonate from the BG-11 growth media at pH 7.5, does not correlate with any significant change in transcript and protein levels of the FDPs, thus suggesting a possible redox regulation of the enzyme activity.
 
-## Under LC, the Flv1/Flv3 heterodimer is a rapid, strong and transient electron sink whereas Flv2/Flv4 supports steady-state O2 photoreduction
+### Under LC, the Flv1/Flv3 heterodimer is a rapid, strong and transient electron sink whereas Flv2/Flv4 supports steady-state O2 photoreduction
 
 The Mehler-like reaction of WT cells grown under LC at pH 6–8.2 exhibits triphasic kinetics of O2 photoreduction originating from the activity of both Flv1/Flv3 and Flv2/Flv4 heterodimers (Figure 2). In this study, we were able to unravel the contribution of Flv1/Flv3 and Flv2/Flv4 heterodimers to the O2 photoreduction kinetics: Flv1/Flv3 is mainly responsible for the rapid transient phase, whereas Flv2/Flv4 mostly contributes to the slow steady-state phase.
 
@@ -143,7 +191,7 @@ The growth inhibition of ∆flv1/∆flv3 cells under severe fluctuating light co
 
 The intracellular location of these enzymes may partially contribute to the difference in O2 photoreduction: Flv1 and Flv3 are soluble cytosolic proteins able to quickly associate with soluble Fed and direct electrons towards O2 photoreduction. In line with this, the possible interaction between Synechocystis Flv1, Flv3 and Fed (Hanke et al., 2011), Flv3 and Fed9 (Cassier-Chauvat and Chauvat, 2014), Chlamydomonas reinhardtii FLVB and FED1 (Peden et al., 2013) have been reported. The Flv2/Flv4 heterodimer, specific for cyanobacteria, was suggested to bind to the thylakoid membrane upon increases in Mg2+ concentration on the cytoplasmic surface of the thylakoid membrane when lights are turned on (Zhang et al., 2012). It is likely that the association of Flv2/Flv4 with the membrane enhances electron transfer from Fed (or FNR) to Flv2/Flv4 and would probably result in a delayed and limited O2 photoreduction activity by Flv2/Flv4. However, the possibility that FDPs accept electrons from different and specific Fed paralogs cannot be excluded.
 
-## Traffic downstream of PSI affects the FDP-mediated Mehler-like reaction
+### Traffic downstream of PSI affects the FDP-mediated Mehler-like reaction
 
 Unlike WT cells demonstrating biphasic decay kinetics of O2 photoreduction under LC conditions (Figure 1A and Figure 2), the M55 mutant (deficient in NDH-1 mediated CET, CO2 uptake and respiration) (Ohkawa et al., 2000) shows steady-state O2 photoreduction, similar to the HC-grown WT (Figure 1B and D). This suggests that the strongly upregulated NDH-1 complex under LC in Synechocystis (Zhang et al., 2004) contributes to a rapid quenching of O2 photoreduction (Figure 1A, phase {II}) by efficient withdrawal of electrons from reduced Fed. Under such circumstances, the low but steady-state activity of the Flv2/Flv4 heterodimer is likely to be important for keeping linear electron transport in an oxidized state. This would explain why the PQ-pool is more oxidized in the presence of Flv2/Flv4 and more reduced in its absence, indirectly affecting PSII activity (Zhang et al., 2012; Bersanini et al., 2014) and Chukhutsina et al., 2015). Thus, by allocating different roles for FDPs between the two pairs of heterodimers (Flv1/Flv3 and Flv2/Flv4), the cells are well positioned to respond appropriately to changing Ci levels as well as to abrupt changes in light intensity, in a coordinated and energetically efficient manner.
 
@@ -155,7 +203,157 @@ Figure 7 provides a summary scheme of our understanding of the function and inte
 
 ## Materials and methods
 
-## Strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Synechocystis sp. PCC 6803)</td>
+      <td>WT, Wild-type</td>
+      <td>Williams, 1988</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆flv2</td>
+      <td>Zhang et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆flv4</td>
+      <td>Zhang et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆flv1/∆flv3</td>
+      <td>Allahverdiyeva et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆flv3/∆flv4</td>
+      <td>Helman et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆sll0218‐flv2</td>
+      <td>Helman et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>flv4-2/OE</td>
+      <td>Bersanini et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Synechocystis sp. PCC 6803)</td>
+      <td>∆sll0218</td>
+      <td>Bersanini et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Flv2 (rabbit polyclonal)</td>
+      <td>AntiProt, against amino acids 521–535 of Synechocystis Flv2</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Flv3 (rabbit polyclonal)</td>
+      <td>AntiProt, against amino acids 377–391 of Synechocystis Flv3</td>
+      <td></td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Flv4 (rabbit polyclonal)</td>
+      <td>AntiProt, against amino acids 412–426 of Synechocystis Flv4</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-NdhD3 (rabbit polyclonal)</td>
+      <td>Eurogentec, against amino acids 185 to 196 and 346 to 359 of Synechocystis NdhD3</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-SbtA</td>
+      <td>Kind gift from T. Ogawa, against amino acids 184 to 203 of Synechocystis SbtA</td>
+      <td></td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-NdhJ</td>
+      <td>Kind gift from J. Appel</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibody, Amersham ECL Rabbit IgG, HRP-linked F(ab')₂ fragment (from donkey)</td>
+      <td>GE Healthcare</td>
+      <td>NA9340-1ML</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amersham ECL Western Blotting Detection Reagent</td>
+      <td>GE Healthcare</td>
+      <td>RPN2209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>BioRad, USA</td>
+      <td>Cat. #170–8891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iQ SYBR Green Supermix</td>
+      <td>BioRad, USA</td>
+      <td>Cat. #170–8882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>qbase + software</td>
+      <td>Biogazelle, Zwijnaarde, Belgium - www.qbaseplus.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and culture conditions
 
 The glucose-tolerant Synechocystis sp. PCC 6803 was used as wild type (WT) strain (Williams, 1988). The FDP inactivation mutants ∆flv2, ∆flv4 (Zhang et al., 2012), and the double mutants ∆flv1/∆flv3 (Allahverdiyeva et al., 2011), and ∆flv3/∆flv4 (Helman et al., 2003), ∆sll0218‐flv2 (Helman et al., 2003) have been described previously. The flv4-2/OE and ∆sll0218 mutants were described in Bersanini et al. (2014); Bersanini et al. (2017).
 
@@ -163,16 +361,16 @@ Pre-experimental cultures were grown at 30°C in BG-11 medium, illuminated with 
 
 Absence of contamination with heterotrophic bacteria was checked by dropping liquid culture on LB and R2A agar plates and kept at 30°C.
 
-## Isolation of total RNA and Real-time quantitative PCR (RT-qPCR)
+### Isolation of total RNA and Real-time quantitative PCR (RT-qPCR)
 
 Total RNA was isolated from exponentially growing Synechocystis by hot-phenol method previously described (Tyystjärvi et al., 2001). After removing any residual genomic DNA, the RNA concentration and purity were measured with a NanoDrop spectrophotometer (Thermo Scientific, USA). RNA integrity was verified by agarose gel electrophoresis.
 
 Complementary DNA was synthesized from 1 μg of purified RNA using the iScript cDNA Synthesis Kit (BioRad, USA) according to the manufacturer’s protocol. Synthesized cDNA was diluted four-fold and used as template for the RT-qPCR. The samples for RT‐qPCR were labeled by iQ SYBR Green Supermix (BioRad, USA) to detect accumulation of amplicons in 96-well plates. The primers to detect transcripts of flv1 and flv2 as well as for the reference genes rnpB and rimM are described in Mustila et al. (2016). The forward and reverse primers for flv3 were 5’-CAACTCAATCCCCGCATTAC-3’ and 5’-CAGTGGAGATTCGGAGCACT-3’ and for flv4 5’-ACGATGCCTGGAGTCAAAAC-3’ and 5’-GGGTATCCGCCACACTTAGA-3’. The PCR protocol was as follows: 3 min initial denaturation of cDNA at 95°C, followed by 40 cycles of 95°C for 10 s, annealing in 57°C for 30 s and extension in 72°C for 35 s. A melting curve analysis was performed at the end. Relative changes in the gene expression were determined using the qbase + software by Biogazelle. One-way ANOVA analysis performed with SigmaPlot was used to determine significant changes in gene expression.
 
-## MIMS experiments
+### MIMS experiments
 
 In vivo measurements of 16O2 (mass 32) and 18O2 (mass 36) exchange was performed using a Membrane-inlet mass spectrometry (MIMS) as described previously in Mustila et al. (2016). Cells were harvested, adjusted to 10 µg Chl a mL−1 in fresh BG-11 medium and acclimated for 1 hr to the same experimental conditions as was applied for the cultivation.
 
-## Protein isolation, electrophoresis and immunodetection
+### Protein isolation, electrophoresis and immunodetection
 
 Total cell extracts and the soluble fractions of Synechocystis cells were isolated as described (Zhang et al., 2009). Proteins were separated by 12% (w/v) SDS-PAGE containing 6 M urea and transferred onto a PVDF membrane (Immobilion-P; Millipore, Germany) and immunodetected by protein specific antibodies. Horseradish peroxidase (HRP) conjugated secondary antibody (anti-rabbit IgG from donkey) was used for recognizing the primary antibodies and Amersham ECL Western Blotting Detection Reagent (GE Healthcare) was used for the visualization of the antibodies.

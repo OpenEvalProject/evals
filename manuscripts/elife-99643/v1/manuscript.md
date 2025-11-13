@@ -9,13 +9,13 @@
 
 ### Affiliations
 
-1. https://ror.org/01s5ya894 Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States
+1. Molecular Physiology and Biophysics Section, Porter Neuroscience Research Center, National Institute of Neurological Disorders and Stroke, National Institutes of Health Bethesda United States ([ROR:01s5ya894](https://ror.org/01s5ya894))
 
 † Corresponding author
 
 ## Abstract
 
-Transient receptor potential (TRP) channels are a large and diverse family of tetrameric cation-selective channels that are activated by many different types of stimuli, including noxious heat or cold, organic ligands such as vanilloids or cooling agents, or intracellular Ca 2+ . Structures available for all subtypes of TRP channels reveal that the transmembrane domains are closely related despite their unique sensitivity to activating stimuli. Here, we use computational and electrophysiological approaches to explore the conservation of the cooling agent binding pocket identified within the S1–S4 domain of the Melastatin subfamily member TRPM8, the mammalian sensor of noxious cold, with other TRPM channel subtypes. We find that a subset of TRPM channels, including TRPM2, TRPM4, and TRPM5, contain pockets very similar to the cooling agent binding pocket in TRPM8. We then show how the cooling agent icilin modulates activation of mouse TRPM4 to intracellular Ca 2+ , enhancing the sensitivity of the channel to Ca 2+ and diminishing outward-rectification to promote opening at negative voltages. Mutations known to promote or diminish activation of TRPM8 by cooling agents similarly alter activation of TRPM4 by icilin, suggesting that icilin binds to the cooling agent binding pocket to promote opening of the channel. These findings demonstrate that TRPM4 and TRPM8 channels share related ligand binding pockets that are allosterically coupled to opening of the pore.
+Transient receptor potential (TRP) channels are a large and diverse family of tetrameric cation-selective channels that are activated by many different types of stimuli, including noxious heat or cold, organic ligands such as vanilloids or cooling agents, or intracellular Ca2+. Structures available for all subtypes of TRP channels reveal that the transmembrane domains are closely related despite their unique sensitivity to activating stimuli. Here, we use computational and electrophysiological approaches to explore the conservation of the cooling agent binding pocket identified within the S1–S4 domain of the Melastatin subfamily member TRPM8, the mammalian sensor of noxious cold, with other TRPM channel subtypes. We find that a subset of TRPM channels, including TRPM2, TRPM4, and TRPM5, contain pockets very similar to the cooling agent binding pocket in TRPM8. We then show how the cooling agent icilin modulates activation of mouse TRPM4 to intracellular Ca2+, enhancing the sensitivity of the channel to Ca2+ and diminishing outward-rectification to promote opening at negative voltages. Mutations known to promote or diminish activation of TRPM8 by cooling agents similarly alter activation of TRPM4 by icilin, suggesting that icilin binds to the cooling agent binding pocket to promote opening of the channel. These findings demonstrate that TRPM4 and TRPM8 channels share related ligand binding pockets that are allosterically coupled to opening of the pore.
 
 ## Introduction
 
@@ -27,23 +27,31 @@ The founding member of the transient receptor potential (TRP) channel family was
 
 Vanilloids and cooling agents were originally proposed to bind to similar regions of TRPV1 and TRPM8 because mutations affecting channel activation by these compounds could be found in similar TM regions (Chuang et al., 2004). However, structures solved using cryogenic electron microscopy (cryo-EM) have since revealed that vanilloids bind to a membrane-facing pocket positioned at the interface between the pore domain formed by S5–S6 and the peripheral S1–S4 domains (Cao et al., 2013b; Liao et al., 2013; Gao et al., 2016; Zhang et al., 2021), whereas cooling agents bind within a pocket formed entirely by the S1–S4 helices that opens to the cytoplasm (Yin et al., 2018; Yin et al., 2019a; Yin and Lee, 2020; Figure 1). The vanilloid binding pocket in TRPV1 can be occupied by vanilloid agonists and antagonists (Cao et al., 2013b; Liao et al., 2013; Gao et al., 2016; Kwon et al., 2021; Zhang et al., 2021; Kwon et al., 2022; Neuberger et al., 2023), in addition to membrane lipids that have been proposed to stabilize a closed state of the channel (Cao et al., 2013a; Gao et al., 2016; Zhang et al., 2021; Arnold et al., 2024). Cryo-EM maps for all five available TRPM8 structures with the cooling agent icilin bound (6nr3, 7wrc, 7wrd, 7wre, and 7wrf) show a large non-protein density consistent with icilin nestled within the S1–S4 domain (Yin et al., 2018; Yin et al., 2019a; Yin and Lee, 2020; Zhao et al., 2022; Figure 1). This cooling agent binding pocket is lined by residues where mutations are known to modulate sensitivity to icilin and/or the cooling agent menthol (Chuang et al., 2004; Bandell et al., 2006; Yin et al., 2019a; Yin and Lee, 2020; Zhao et al., 2022), supporting the assignment of this density to icilin during model building (Figure 2). Other TRPM8 ligands have also been observed in this pocket, including cooling agents WS-12 (6nr2) and C3 (8e4l, 8e4m, 9b6h) and the antagonists AMTB (6o6r, 9b6g), TC-I 2014 (6o72, 9b6e, 9b6h, 9b6i), and AMG2850 (9b6f) (Diver et al., 2019; Yin et al., 2019a; Yin and Lee, 2020; Yin et al., 2022; Zhao et al., 2022; Yin et al., 2024). Interestingly, other TRP channel structures from the Canonical and Vanilloid subfamilies also show small molecule ligands bound to a similar location within the S1–S4 domain (7b0s, 7b05, 7wdb, 7d4p, 6uza, 7dxg, 6dvy, 6dvz, 7ras, 7rau, 6pbe, 6d7o, 6d7q, 6d7t, 6d7v, 6d7x) (Singh et al., 2018a, Singh et al., 2018b; Hughes et al., 2019; Bai et al., 2020; Vinayagam et al., 2020; Neuberger et al., 2021; Song et al., 2021; Guo et al., 2022), raising the possibility that this pocket may be a hot spot for ligand modulation across the TRP channel family.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig2-v1.jpg)
+
+**Figure 2.:** (A) Structure-based sequence alignment of S1–S4 peripheral domains and transient receptor potential (TRP) helix of selected TRP channel structures, with residues contributing to the icilin binding pocket in TRPM8 structures (7wre and 6nr3) highlighted in blue. The equivalent residues in other channels are colored according to the alignment quality score calculated from multiple sequence alignments, where highly conserved residues are color blue and poorly conserved residues are colored in white. Alignment quality score calculated in Jalview based on BLOSUM 62 scores (Henikoff and Henikoff, 1992). Teal asterisks indicate Ca2+-coordinating residues in structures of TRPM channels. Black asterisks indicated Ca2+-coordinating residues in TRPA1. Red asterisks indicated residues where mutation influence cooling agent sensitivity in TRPM8. Gold asterisks indicate residues mutated in the present study. (B) Chemical structure of icilin. (C) S1–S4 residues contributing to the icilin binding pocket in TRPM8 structures (7wre and 6nr3) are shown as blue licorice, viewed from the intracellular side of the membrane as in Figure 1C, with the TRP box omitted for clarity. Cooling agent binding pocket mutations used in the present study are shown with carbon atoms colored gold and labeled in TRPM8 and TRPM4, and the equivalent residues in other channels are colored based on the alignment quality score, as in panel A. 7wre is mTRPM8, 6nr3 is faTRPM8 containing the A805G mutation, 6co7 is Nematostella vectensis TRPM2, 8ddr is mTRPM3, 6bqv is hTRPM4, and 7mbq is zebra fish TRPM5. Sequence identity between residues within the icilin binding pocket of TRPM8 and corresponding residues in the other TRP channel is as follows: TRPM5 (94%), TRPM4 (89%), TRPM2 (78%), TRPM3 and TRPM7 (44%), TRPA1 (22%), and TRPV3 (11%).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Cooling agent binding pocket mutations used in the present study are shown with carbon atoms colored gold and labeled in TRPM8 and TRPM4, and the equivalent residues in other channels are colored based on the alignment quality score, as in Figure 2A.
+
 The cytoplasmic entrance to the cooling agent binding pocket in TRPM8 also contains a binding site for a Ca2+ ion (6nr3, 7wrb, 7wrc, 7wrd, 7wre, 7wrf, 8e4l, 8e4m, 6o77, 9b6i, 9b6j, 9b6k) (Figure 1; Diver et al., 2019; Yin et al., 2019a; Yin et al., 2022; Zhao et al., 2022; Yin et al., 2024). While Ca2+ alone has not been described to modulate TRPM8 activity, it is an essential cofactor for activation of TRPM8 by icilin (Chuang et al., 2004), and several residues, including E782 in S2 and D802 in S3 of TRPM8 from Ficedula albicollis (faTRPM8) and mouse (mTRPM8), are located within 4 Å of both the Ca2+ ion and the icilin molecule (Yin et al., 2019a; Zhao et al., 2022). Mutations in N799 and D802 in S3 of TRPM8 from rats (rTRPM8) and humans (hTRPM8) have been implicated in selective loss of icilin sensitivity (Chuang et al., 2004; Winking et al., 2012; Kühn et al., 2013; Beccari et al., 2017). Because N799 does not contact the icilin molecule directly, it presumably perturbs icilin sensitivity by disrupting binding of the obligate cofactor, Ca2+. Interestingly, the equivalent Ca2+-binding site has been observed in several other TRPM channel structures (6bqv, 6co7, 6d73, 6drj, 6nr3, 6o77, 6pkx, 6pus, 6puu, 7mbq, 7mbs, 7mbu, 7mbv, 7wrb, 7wrc, 7wrd, 7wre, 7wrf) (Autzen et al., 2018; Huang et al., 2018; Zhang et al., 2018b, Diver et al., 2019; Huang et al., 2019; Yin et al., 2019a; Yin et al., 2019b; Ruan et al., 2021; Zhao et al., 2022), including TRPM2, TRPM4, and TRPM5, for which intracellular Ca2+ is the key physiological agonist, and where mutations to the Ca2+-coordinating residues have been shown to alter channel activation by intracellular Ca2+ (Guo et al., 2017; Autzen et al., 2018; Zhang et al., 2018b, Yamaguchi et al., 2019). Structures from other TRP channel subfamilies—including Canonical (5z96, 6aei, 6jzo, 7b05, 7b0j, 7b0s, 7b16, 7b1g, 7d4p, 7d4q, 7dxb, 7dxf, 7e4t, 7wdb) (Duan et al., 2018; Vinayagam et al., 2018; Duan et al., 2019; Song et al., 2021; Guo et al., 2022; Yang et al., 2022), Ankyrin (6v9v, 6v9w, 7or0, 7or1) (Zhao et al., 2020), and Polycystin (7d7e, 7d7f) (Su et al., 2021) families—also contain cryo-EM density attributed to ions in this location. As in the cooling agent binding pocket, the presence of this ion-binding pocket within the S1–S4 domains across the TRP channel family indicates that it is another key regulatory location.
 
 The structural observations of related binding pockets for different activators across the TRP channel family may be connected to the conservation of mechanisms of channel activation between channels that exhibit different sensitivity to activating stimuli. For example, TRPV2 and TRPV3 are insensitive to the TRPV1-specific high-affinity vanilloid agonist Resiniferatoxin (RTx), but sensitivity to this vanilloid can be readily engineered into both TRPV channels by mutating only a few key residues within the vanilloid binding site (Yang et al., 2016; Zhang et al., 2016; Zubcevic et al., 2018; Zhang et al., 2019), revealing that the mechanisms responsible for coupling occupancy of the vanilloid site to channel opening are conserved in these three TRPV channels. In the present study, our aim was to explore the extent to which the cooling agent binding pocket described in TRPM8 is conserved in other TRPM channels and to then determine whether cooling agents can modulate channel opening in channels other than TRPM8. Our results suggest that the cooling agent binding pocket is well-conserved in several TRPM channels that were not previously reported to be sensitive to cooling agents and we find that icilin can bind to this well-conserved site in TRPM4 and promote opening of the pore by intracellular Ca2+ and alter the outwardly rectifying properties of the channel.
 
 ## Results
 
-## Identification of residues lining the icilin binding pocket
+### Identification of residues lining the icilin binding pocket
 
 We first investigated the icilin binding pocket using available structures of TRPM8 in complex with icilin and its obligate cofactor, Ca2+ (Yin et al., 2018; Yin et al., 2019a; Yin and Lee, 2020; Zhao et al., 2022). We defined the icilin binding pocket to include residues located near the icilin molecules in the available icilin-bound TRPM8 structures. With sufficient structural resolution, icilin’s asymmetric arrangement of a hydroxyl group on one terminal benzene ring and a nitro group on the other benzene ring (Figure 2) should facilitate identification of the ligand’s physiological binding pose. Unfortunately, the electron densities attributed to icilin lack sufficient definition to fit these asymmetric functional groups in all but one of the five icilin-bound structures, even though the S1–S4 helices have relatively high local resolution in these structures. Interestingly, the structure with the most asymmetric icilin density (7wrd, with 2.98 Å overall nominal resolution) is not the highest resolution structure (7wre, with 2.52 Å overall nominal resolution). Previous comparison of these two binding poses has indicated that both poses are similarly plausible (Palchevskyi et al., 2023), although the energy minimization performed in this study was conducted in the absence of the obligate cofactor, Ca2+, which may be important for stabilizing icilin binding. We therefore decided to consider both icilin binding poses as possibly valid in defining the icilin binding pocket.
 
 We identified the residues lining the icilin binding pocket based on residue proximity to icilin and on the ligand–protein interaction fingerprint generated by PoseFilter (Williams and Kalyaanamoorthy, 2021), which classifies interactions between the protein and ligand based on their chemistry in addition to proximity. We chose to use the most inclusive definition of binding pocket lining residues, counting any residue that was within 4 Å of the icilin molecule in either pose (6nr3 or 7wre), which also included all interacting residues identified by PoseFilter (Figure 2). In addition, we included the Ca2+-coordinating residues in the binding pocket because Ca2+ is an essential cofactor and mutations in Ca2+-coordinating residues have been described to specifically disrupt icilin sensitivity in TRPM8 (Chuang et al., 2004; Winking et al., 2012; Kühn et al., 2013; Zhao et al., 2022).
 
-## Conservation of the icilin binding site in the Melastatin subfamily
+### Conservation of the icilin binding site in the Melastatin subfamily
 
 To compare identified icilin binding pocket residues to other TRP channels, we utilized a structural alignment approach as described previously (Huffer et al., 2020), but expanding the scope of analysis to include a total of 264 structures of TRP channels determined to date. Comparing other Melastatin subfamily channels to TRPM8 revealed unexpectedly high conservation in the residues lining the cooling agent binding pocket in TRPM2 (78% identical), TRPM4 (89% identical) and TRPM5 (94% identical) (Figure 2), channels that have not previously been reported to be sensitive to icilin. Mutations of residues in the structurally identified cooling agent binding pocket located within the S1–S4 domain of rTRPM8, including those corresponding to Y745 in S1, Q785 in S2, N799 and D802 in S3, R842 and H845 in S4, and Y1005 in the TRP box, are known to functionally influence cooling agent sensitivity in mTRPM8, rTRPM8, hTRPM8, Parus major TRPM8 (pmTRPM8) or faTRPM8 (Chuang et al., 2004; Bandell et al., 2006; Voets et al., 2007; Malkia et al., 2009; Winking et al., 2012; Kühn et al., 2013; Beccari et al., 2017; Yin et al., 2018; Diver et al., 2019; Yin et al., 2019a; Yin and Lee, 2020; Plaza-Cayón et al., 2022; Zhao et al., 2022). These important residues (Figure 2A; red asterisks), along with other residues located within 4 Å of icilin or Ca2+ in TRPM8 (Figure 2A; blue highlighting), are highly conserved between TRPM8 and TRPM2, TRPM4, and TRPM5. These channels also show structural similarity in the shape of the pocket and orientation of the equivalent residues (Figure 2C). Although a recently reported structure of TRPM4 prepared at physiological temperatures reveals interesting structural changes within the intracellular melastatin domains compared to earlier structures, the structure of the cooling agent binding pocket is very similar (Hu et al., 2024). The one notable and important difference near the cooling agent binding pocket between TRPM8, TRPM2, TRPM4, and TRPM5 is at the position corresponding to G805 in rTRPM8, a position that is conserved in mammalian TRPM8 channels that are sensitive to icilin, but is substituted by an Ala in avian TRPM8 channels that are insensitive to icilin (Chuang et al., 2004). Because this critical position in TRPM8 is an Ala in most other TRPM channels (Figure 2), we predicted that TRPM2, TRPM4, and TRPM5 might be insensitive to icilin but could be rendered sensitive to icilin by substituting a Gly, similar to the icilin-sensitizing mutants engineered into avian TRPM8 channels (Chuang et al., 2004; Yin et al., 2019a). In the case of TRPM3 and TRPM7, in addition to lacking the critical Gly residue, there is less conservation in the icilin- and Ca2+-adjacent residues (44% identity in both cases) (Figure 2), suggesting that these channels may not be sensitive to icilin. TRPM1 and TRPM6, which were not included in the structural alignment because structures are not available, were predicted to behave similar to TRPM3 and TRPM7 based on conventional sequence alignments in the S1–S4 region (not shown). Interestingly, TRPA1 and TRPV3, which have both been previously described to be sensitive to icilin (Story et al., 2003; Doerner et al., 2007; Sherkheli et al., 2010; Sherkheli et al., 2012; Billen et al., 2015), do not show homology in the equivalent binding pocket (Figure 2; Figure 2—figure supplement 1; see Discussion).
 
-## Characterization of TRPM4 sensitivity to icilin
+### Characterization of TRPM4 sensitivity to icilin
 
 Based on the observed structural conservation, we considered attempting to engineer icilin sensitivity into TRPM2, TRPM4, or TRPM5. TRPM2 requires co-activation by intracellular Ca2+ and ADP ribose (ADPR) and its permeability to Ca2+ alters the local intracellular Ca2+ concentration (Perraud et al., 2001; Sano et al., 2001), making TRPM2 more challenging to study. In contrast, TRPM4 and TRPM5 are monovalent-selective and are activated by intracellular Ca2+ binding to the conserved Ca2+-binding site near the cooling agent binding pocket (Launay et al., 2002; McKemy et al., 2002; Hofmann et al., 2003; Liu and Liman, 2003; Prawitt et al., 2003; Story et al., 2003; Andersson et al., 2004; Chuang et al., 2004; Yamaguchi et al., 2019). In both TRPM4 and TRPM5, Ca2+ dependence is also conferred by a second, intracellular Ca2+-binding site unrelated to the Ca2+-binding site near the cytoplasmic entrance of the cooling agent binding pocket in TRPM8 (Ruan et al., 2021; Hu et al., 2024; Karuppan et al., 2024). At the time this study was initiated, the presence of this second Ca2+ site in TRPM4 was not appreciated, so we chose to focus on TRPM4 as a simpler system, based on the fact that it is relatively impermeable to Ca2+ (Launay et al., 2002) and the assumption that activation is controlled by a single stimulus binding to a single binding site in each subunit. TRPM4 is also widely expressed in the body and plays important physiological roles in the cardiovascular, immune, endocrine, and nervous systems (Hasan and Zhang, 2018; Wang et al., 2019). Pharmacological modulators of TRPM4 have been explored for a variety of conditions, including cancer, stroke, multiple sclerosis and heart disease (Bianchi et al., 2018; Dienes et al., 2021; Kovács et al., 2022).
 
@@ -51,13 +59,21 @@ We began by characterizing WT mouse TRPM4 (mTRPM4) using the inside-out configur
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig3-v1.jpg)
 
-**Figure 3.:** 2+, voltage, and icilin.(A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with TRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were obtained from tail current measurements. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.Figure 3—source data 1.Figure 3B.Figure 3—source data 2.Figure 3C.
+**Figure 3.:** (A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with TRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were obtained from tail current measurements. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.
 
 We first tested the sensitivity of mTRPM4 to icilin and found that the channel was not activated by 25 µM icilin applied alone over a wide range of voltages (Figure 3A–C). Icilin sensitivity in TRPM8 is known to require Ca2+ as a co-agonist, so we next tested whether icilin affects the activation of mTRPM4 by different concentrations of Ca2+. In contrast to our prediction that TRPM4 would be insensitive to icilin based on G805 in TRPM8 not being conserved in TRPM4 (A867), we observed that icilin potentiates the activation mTRPM4 by intracellular Ca2+ (Figure 3A–C). This potentiation occurs at both positive and negative voltages at subsaturating Ca2+ concentrations (500 µM). In contrast, at saturating concentrations of Ca2+ (3 mM) (Nilius et al., 2006; Guo et al., 2017), minimal potentiation is observed at positive voltages, but notable potentiation is observed at negative voltages in both I–V and conductance–voltage (G–V) relations, indicating that icilin also diminishes the extent of outward-rectification (Figure 3A–C). Icilin also changes the kinetics of TRPM4 activation by voltage steps by enhancing the fraction of current elicited instantaneously after voltage steps and diminishing the fraction that activates more slowly on the timescale of 100–200 ms (Figure 3A). To quantify this, we defined steady-state currents (Iss) observed at the end of 200 ms voltage steps to a maximally activating voltage of +160 mV as the sum of current that activates instantaneously upon depolarization (Iinst) and the relaxing current that slowly activates during the voltage step (Figure 4A). The fraction of instantaneous current (Iinst/Iss) increased with both Ca2+ and icilin (Figure 4B), indicating that both stimuli diminish outward-rectification. We also noticed that closure of TRPM4 channels following removal of both Ca2+ and icilin appeared to be slower compared to when the channel was only activated by Ca2+ alone (Figure 4C, D). From these results, we concluded that icilin interacts with TRPM4 and modulates activation of the channel by intracellular Ca2+.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig4-v1.jpg)
+
+**Figure 4.:** (A) Sample current traces illustrating the fraction of current that activates rapidly (Iinst) compared to the steady-state current at the end of the pulse (ISS). The pulse protocols used a holding voltage of −60 mV with 200 ms steps to +160 mV in the presence of varying concentrations of intracellular Ca2+. Traces were obtained in the absence (left) or presence (right) of 25 µM icilin. (B) Instantaneous fraction of current (Iinst/ISS) calculated using voltage steps to +160 mV at various concentrations of intracellular Ca2+ for individual cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Error bars indicate standard error of the mean. (C) Fraction of current remaining after application of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT TRPM4. Currents were elicited by voltage steps from −100 to +100 mV. (D) Fraction of current remaining 14 s after removal of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT TRPM4. Currents were elicited by voltage steps from −100 to +160 mV.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sample current families obtained using a holding voltage of −60 mV with 50 ms prepulses to −150 mV before 100 ms steps to voltages between −160 and +160 mV (Δ 20 mV), and then returning to −60 mV. Control traces in the left column were obtained with TRPM3α2 in the absence of icilin (left, triangles), and traces in the right column were obtained in the presence of 25 µM icilin (right, circles). Activation of TRPM3 current is achieved with 40 µM pregnenolone sulfate (PregS, navy). (B) Corresponding normalized I–V relations and (C) plots of normalized current evoked at +160 mV in populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Absolute values were obtained from steady-state current measurements. For each cell, values are normalized to the absolute current at +160 mV in the presence of 40 µM PregS. Error bars indicate standard error of the mean.
+
 We also tested whether icilin modulates TRPM3 as several of the residues in TRPM8 that are critical for activation by cooling agents are not conserved in TRPM3. TRPM3 is activated by pregnenolone sulfate (PregS) and exhibits an outward-rectifying I–V relationship with that agonist (Oberwinkler et al., 2005; Vriens et al., 2011; Held et al., 2015), a property that is also common to both TRPM8 and TRPM4 in response to their activators. Because TRPM3 is inhibited by external Na+ ions (Oberwinkler et al., 2005), similar to TRPV1 (Jara-Oseguera et al., 2016), we used Cs+ as the primary charge carrier and recorded the activity of TRPM3 over a wide range of voltages before and after application of PregS. Application of 25 µM icilin did not appear to activate TRPM3 when applied alone and we observed outwardly rectifying currents in response to PregS application, but these were not detectably altered by the prior application of icilin (Figure 4—figure supplement 1).
 
-## TRPM4 mutations altering the effects of icilin
+### TRPM4 mutations altering the effects of icilin
 
 We next tested whether the icilin sensitivity observed in TRPM4 is mediated by binding of the cooling agent to the site identified in TRPM8. We first identified cooling agent binding pocket residues where mutations have been shown to specifically affect icilin sensitivity in TRPM8 without disrupting Ca2+ activation of TRPM4. Although some of the previously identified mutations like N799 and D802 in rTRPM8 and hTRPM8 disrupt icilin sensitivity (Chuang et al., 2004; Winking et al., 2012; Kühn et al., 2013; Beccari et al., 2017), they likely do so by disrupting binding of the obligate cofactor Ca2+ (Yin et al., 2019a; Zhao et al., 2022) and mutations in the equivalent Ca2+-coordinating residues in rTRPM4 (N859, D862) have been shown to decrease Ca2+ affinity (Yamaguchi et al., 2019). In contrast, one of the key determinants of icilin sensitivity in rTRPM8 is G805 (Chuang et al., 2004), which is directly adjacent to L806 within the icilin binding pocket even though G805 itself is not within 4 Å of icilin in the available structures (Figure 2). G805 in rTRPM8 corresponds to an Ala in icilin-insensitive chicken TRPM8 (cTRPM8), and the G805A mutation decreases the sensitivity of rTRPM8 to icilin while the inverse Ala to Gly mutation in cTRPM8 or faTRPM8 introduces sensitivity to icilin (Chuang et al., 2004; Yin et al., 2019a). We hypothesized that because mTRPM4 is already sensitive to icilin, making the equivalent A867G mutation might further enhance the sensitivity of the channel to icilin.
 
@@ -65,21 +81,21 @@ We first tested whether the A867G mutation in mTRPM4 alters channel activation a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig5-v1.jpg)
 
-**Figure 5.:** 2+ and voltage, but has enhanced sensitivity to icilin.(A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with A867G mTRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were calculated from steady-state currents. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.Figure 5—source data 1.Figure 5B.Figure 5—source data 2.Figure 5C.
+**Figure 5.:** (A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with A867G mTRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were calculated from steady-state currents. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig6-v1.jpg)
 
-**Figure 6.:** (A) Sample current traces illustrating the fraction of current that activates rapidly (Iinst) compared to the steady-state current at the end of the pulse (ISS). The pulse protocols used a holding voltage of −60 mV with 200 ms steps to +160 mV in the presence of varying concentrations of intracellular Ca2+. Traces were obtained in the absence (left) or presence (right) of 25 µM icilin. (B) Instantaneous fraction of current (Iinst/ISS) calculated using +160 mV voltage steps at various concentrations of intracellular Ca2+ for individual cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Error bars indicate standard error of the mean. (C) Fraction of current remaining after application of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT TRPM4 (gray) or A867G TRPM4 (purple). Currents were elicited by voltage steps from −100 to +100 mV. (D) Fraction of current remaining 14 s after removal of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT (left) or A867G TRPM4 (right). Currents were elicited by voltage steps from −100 to +160 mV.Figure 6—source data 1.Figure 6B–D.
+**Figure 6.:** (A) Sample current traces illustrating the fraction of current that activates rapidly (Iinst) compared to the steady-state current at the end of the pulse (ISS). The pulse protocols used a holding voltage of −60 mV with 200 ms steps to +160 mV in the presence of varying concentrations of intracellular Ca2+. Traces were obtained in the absence (left) or presence (right) of 25 µM icilin. (B) Instantaneous fraction of current (Iinst/ISS) calculated using +160 mV voltage steps at various concentrations of intracellular Ca2+ for individual cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Error bars indicate standard error of the mean. (C) Fraction of current remaining after application of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT TRPM4 (gray) or A867G TRPM4 (purple). Currents were elicited by voltage steps from −100 to +100 mV. (D) Fraction of current remaining 14 s after removal of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT (left) or A867G TRPM4 (right). Currents were elicited by voltage steps from −100 to +160 mV.
 
 Another critical determinant of icilin sensitivity in hTRPM8 is R842 (Figure 2), a residue where mutations to His dramatically diminish activation by the cooling agents icilin and menthol and that is within 4 Å of key substituent groups in icilin in the two possible docking orientations of the cooling agent (Voets et al., 2007; Palchevskyi et al., 2023). If icilin binds to the equivalent pocket in TRPM4 as in TRPM8, we hypothesized that the equivalent mutation in TRPM4 (R901H) would disrupt icilin sensitivity. As with the A867G mutant, we began by testing whether R901H in TRPM4 exhibits similar behavior to the WT channel and observed Ca2+ sensitivity similar to WT TRPM4, though it notably enhanced outward-rectification (Figure 7). The R901H mutant was insensitive to icilin applied alone, as observed for WT and the A867G mutant in mTRPM4, however, unlike WT and the A867G mutant in mTRPM4, activation of the R901H mutant is not enhanced by icilin, regardless of whether subsaturating or saturating concentrations of intracellular Ca2+ are tested (Figure 7), and icilin does not alter the instantaneously activating fraction of current or prolong channel closure (Figure 8). These results in the R901H mutant of TRPM4 are consistent with the loss of icilin sensitivity in R842H mutant of rTRPM8, providing further evidence that icilin binds to the conserved binding pocket in hTRPM4 to modulate channel activation by intracellular Ca2+.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig7-v1.jpg)
 
-**Figure 7.:** 2+ and voltage, but icilin does not promote opening.(A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with R901H mTRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. For the cell shown, current families were not obtained in the presence of icilin and the absence of Ca2+. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were obtained from tail current measurements. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.Figure 7—source data 1.Figure 7B.Figure 7—source data 2.Figure 7C.
+**Figure 7.:** (A) Sample current families obtained using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ 20 mV) before returning to −60 mV. Control traces in the left column were obtained with R901H mTRPM4 in the absence of icilin and the presence of the labeled Ca2+ concentrations, and traces in the right column were obtained in the presence of 25 µM icilin and the labeled Ca2+ concentrations. For the cell shown, current families were not obtained in the presence of icilin and the absence of Ca2+. (B) Normalized I–V and (C) normalized G–V plots for populations of cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Conductance values were obtained from tail current measurements. For each cell, values are normalized to the steady-state current or conductance at +160 mV in the presence of 500 µM Ca2+. Error bars indicate standard error of the mean.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/99643/elife-99643-fig8-v1.jpg)
 
-**Figure 8.:** (A) Sample current traces illustrating the fraction of current that activates rapidly (Iinst) compared to the steady-state current at the end of the pulse (ISS). The pulse protocols used a holding voltage of −60 mV with 200 ms steps to +160 mV in the presence of varying concentrations of intracellular Ca2+. Traces were obtained in the absence (left) or presence (right) of 25 µM icilin. For the cell shown, current families were not obtained in the presence of icilin and absence of Ca2+. (B) Instantaneous fraction of current (Iinst/ISS) calculated using +160 mV voltage steps at various concentrations of intracellular Ca2+ for individual cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Error bars indicate standard error of the mean. (C) Fraction of current remaining after 14 s of 0 mM Ca2+ wash, following removal of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT (left) or R901H TRPM4 (right). Currents were measured between −100 and +160 mV (Δ20 mV), but only +160 mV current fractions are shown.Figure 8—source data 1.Figure 8B, C.
+**Figure 8.:** (A) Sample current traces illustrating the fraction of current that activates rapidly (Iinst) compared to the steady-state current at the end of the pulse (ISS). The pulse protocols used a holding voltage of −60 mV with 200 ms steps to +160 mV in the presence of varying concentrations of intracellular Ca2+. Traces were obtained in the absence (left) or presence (right) of 25 µM icilin. For the cell shown, current families were not obtained in the presence of icilin and absence of Ca2+. (B) Instantaneous fraction of current (Iinst/ISS) calculated using +160 mV voltage steps at various concentrations of intracellular Ca2+ for individual cells in the absence (left, triangles) or presence (right, circles) of 25 µM icilin. Error bars indicate standard error of the mean. (C) Fraction of current remaining after 14 s of 0 mM Ca2+ wash, following removal of 3 mM Ca2+ alone (triangles) or both 3 mM Ca2+ and 25 µM icilin (squares) for WT (left) or R901H TRPM4 (right). Currents were measured between −100 and +160 mV (Δ20 mV), but only +160 mV current fractions are shown.
 
 ## Discussion
 
@@ -101,19 +117,155 @@ Finally, our findings here with TRPM4 may also be relevant for understanding the
 
 ## Materials and methods
 
-## Structure-based sequence alignment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573ATCC Cat# PTA-4488, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>mTRPM4b (plasmid)</td>
+      <td>Received from Youxing Jiang</td>
+      <td></td>
+      <td>pEGFP-N1 vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>mTRPM3α2 (plasmid)</td>
+      <td>Received from Thomas Voets</td>
+      <td></td>
+      <td>pCAGGS/IRES-GFP vector</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FuGENE6 Transfection Reagent</td>
+      <td>Promega</td>
+      <td>E269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Lightning</td>
+      <td>Agilent Technologies</td>
+      <td>21051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Icilin</td>
+      <td>Sigma</td>
+      <td>CAS 36945-98-9</td>
+      <td>Source # 0000088284Source # 0000141718</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pregnenolone sulfate</td>
+      <td>Sigma</td>
+      <td>P162-25MG</td>
+      <td>Lot # MKCQ8813</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python programming language</td>
+      <td></td>
+      <td>RRID:SCR_008394</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td></td>
+      <td>RRID:SCR_008058</td>
+      <td>Data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matplotlib</td>
+      <td></td>
+      <td>RRID:SCR_008624</td>
+      <td>Data visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>seaborn</td>
+      <td></td>
+      <td>RRID:SCR_018132</td>
+      <td>Data visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>RRID:SCR_000305</td>
+      <td>Structure visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PoseFilter</td>
+      <td>Subha Kalyaanamoorthy;https://doi.org/10.1093/bioinformatics/btab188</td>
+      <td></td>
+      <td>Data analysisPyMOL Plugin</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 11</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>Acquisition patch clamp data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JalView</td>
+      <td></td>
+      <td>RRID:SCR_006459</td>
+      <td>Sequence alignment visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fr-TM-Align</td>
+      <td>Pandit &amp; Skolnick;https://doi.org/10.1186/1471-2105-9-531</td>
+      <td></td>
+      <td>Data analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structure-based sequence alignment
 
 Structural alignment of TRPM and TRPA1 structure TM domains (pre-S1-TRP box) was performed using Fr-TM-Align as described previously (Huffer et al., 2020). Representative structures were selected based on nominal resolution. Sequence alignments were made in Jalview. Structures were visualized with PyMOL.
 
-## Channel constructs
+### Channel constructs
 
 The mTRPM4b DNA plasmid tagged with EGFP at the C-terminus was a generous gift from Dr. Youxing Jiang (UT Southwestern) and was transfected into HEK293 cells using FuGENE6 transfection reagent. Mouse TRPM3α2 DNA in the bicistronic pCAGGS/IRES-GFP vector (Vriens et al., 2014) was provided by Dr. Thomas Voets (Catholic University, Leuven, Belgium) and transfected as for mTRPM4. All mutations in mTRPM4 were made using the QuikChange Lightning technique (Agilent Technologies) and confirmed by DNA sequencing (Macrogen).
 
-## Cell culture
+### Cell culture
 
 Authenticated Human Embryonic Kidney (HEK293) cells were obtained from ATCC (CRL-1573) and cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum and 10 mg l−1 of gentamicin. HEK293 cells between passage numbers 5–25 were used and passaged when cells were between 40% and 80% confluent. Mycoplasma contamination was routinely tested and found to be negative. The cells were treated with trypsin and then seeded on glass coverslips at about 15% of the original confluency in 35 mm Petri dishes. Transfections were done using the FuGENE6 Transfection Reagent (Promega). Transfected cells were incubated at 37°C with 95% air and 5% CO2 overnight for use in patch-clamp recordings; 16–48 hr depending on the construct.
 
-## Electrophysiology
+### Electrophysiology
 
 For recording the activity of TRPM4 in inside-out patches, the pipette (extracellular) solution contained 130 mM NaCl, 2 mM MgCl2, 0.5 mM CaCl2, 10 mM HEPES (4-(2-Hydroxyethyl)piperazine-1-ethane-sulfonic acid), with pH adjusted to 7.4 using NaOH. The bath (intracellular) solutions all contained 125 mM CsCl, 5 mM NaCl, 2 mM MgCl2, 10 mM HEPES, with pH adjusted to 7.4 using CsOH. CaCl2 was varied, and 0 mM CaCl2 solutions contained 1 mM EGTA (ethylene glycol tetraacetic acid). For EGTA-containing solutions, MgCl2 concentrations were adjusted using MaxChelator such that there was 2 mM free MgCl2 (Bers et al., 2010). For recording the activity of TRPM3 in whole-cell recordings, the pipette (intracellular) solution contained 130 mM CsCl, 1 mM (free) MgCl2, 10 mM HEPES, 10 mM EGTA, with pH adjusted to 7.2 using CsOH. The external (extracellular) solution contained 130 mM CsCl, 1 mM MgCl2, 10 mM HEPES, with pH adjusted to 7.4 using CsOH. The bathing solution in which seals were obtained contained 130 mM NaCl, 1 mM MgCl2, 10 mM HEPES, with pH adjusted to 7.4 with NaOH. Bath and ground chambers were connected by an agar bridge containing 3 M KCl. Icilin powder (Sigma) was dissolved in DMSO to a stock concentration of 40 mM, aliquoted, and stored at −80°C. As icilin is known to degrade (Kühn et al., 2009), the stock was not subjected to repeated freeze–thaw cycles. Cs+-based solutions increased successful Giga seal formation over Na-based solutions. K+ was omitted to prevent contamination of Kv channel currents. Mg2+ was added to all solutions to inhibit endogenous TRPM7 currents that were observed in some passages (Nadler et al., 2001; Hermosura et al., 2002; Kozak and Cahalan, 2003). Patch pipette resistance ranged from 1 to 5 MOhms, with a typical value around 3 MOhms. Inside-out patch-clamp recordings were performed using a holding voltage of −60 mV with 200 ms steps to voltages between −100 and +160 mV (Δ20 mV). Electrophysiology data was acquired with an Axopatch 200B amplifier at a sampling frequency of 10 kHz and filtered to 5 kHz with a low-pass filter. Variable PIP2-depletion-induced current rundown was observed (Nilius et al., 2006), so all measurements were taken after current had reached a steady state. Patches that did not exhibit response to Ca2+ were excluded because this either indicated that the pulled patch had formed a vesicle, precluding access to the intracellular face of the membrane, or that TRPM4 expression was too low for our experiments. For long timecourses with multiple exposures, only currents that returned to baseline upon removal of Ca2+ were considered. Because icilin is thought to partition into the membrane, all non-icilin traces included in population data for I–V and G–V relations were collected prior to the application of icilin, even if icilin appeared to wash during the experiment. Patches that exhibited very large currents (>5 nA) were also excluded because they would result in substantial voltage errors and/or changes in the concentrations of ions. Currents were normalized to steady-state currents obtained in the presence of 500 µM Ca2+ at +160 mV for each cell. Baseline current subtraction was performed for each cell by subtracting leak currents obtained in the absence of Ca2+.
 

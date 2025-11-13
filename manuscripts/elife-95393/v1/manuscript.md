@@ -10,12 +10,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02z1vqm45 Department of Pediatrics, Peking University First Hospital Beijing China
+1. Department of Pediatrics, Peking University First Hospital Beijing China ([ROR:02z1vqm45](https://ror.org/02z1vqm45))
 2. Department of Pediatrics, Miyun Country Maternal and Child Health Hospital Beijing China
-3. https://ror.org/043dxc061 Institute of Brain and Psychological Sciences, Sichuan Normal University Chengdu China
+3. Institute of Brain and Psychological Sciences, Sichuan Normal University Chengdu China ([ROR:043dxc061](https://ror.org/043dxc061))
 4. Shenzhen-Hong Kong Institute of Brain Science Shenzhen China
-5. https://ror.org/04ewct822 China Center for Behavioral Economics and Finance, Southwestern University of Finance and Economics Chengdu China
-6. https://ror.org/01c4jmp52 School of Psychology, Chengdu Medical College Chengdu China
+5. China Center for Behavioral Economics and Finance, Southwestern University of Finance and Economics Chengdu China ([ROR:04ewct822](https://ror.org/04ewct822))
+6. School of Psychology, Chengdu Medical College Chengdu China ([ROR:01c4jmp52](https://ror.org/01c4jmp52))
 
 † Corresponding author
 
@@ -41,17 +41,17 @@ The MMR was extracted using ERP difference waves, computed by subtracting the ER
 
 **Figure 1.:** The MMR is extracted by subtracting the event-related potential (ERP) elicited by the standard stimulus (neutral condition) from the ERP evoked by the deviant stimulus (happy condition).
 
-Initially, we conducted a three-way repeated measures ANOVA on the mean MMR amplitudes (time window: 150–400 ms after sound onset) with factors including condition (vocal/nonvocal), hemisphere (left/right frontal, i.e. F3/F4) as within-subjects factors, and neonatal group (GA = 35, 36, 37, 38, 39, and 40 weeks) as the between-subjects factor. However, neither the main effect nor the interaction effects involving the hemisphere factor were statistically significant. In particular, the main effect of the hemisphere is not significant, F(1,114) = 0.153, p=0.696, ηp2 = 0.001. The interaction between hemisphere and group is not significant, F(5,114) = 0.249, p=0.940, ηp2 = 0.011. The interaction between of hemisphere and stimuli is not significant, F(1,114) = 0.474, p=0.492, ηp2 = 0.004. The three-way interaction is not significant, F(5,114) = 0.666, p=0.650, ηp2 = 0.028. Consequently, we removed the hemisphere factor and averaged the MMR waveforms recorded at the F3 and F4 electrodes.
+Initially, we conducted a three-way repeated measures ANOVA on the mean MMR amplitudes (time window: 150–400 ms after sound onset) with factors including condition (vocal/nonvocal), hemisphere (left/right frontal, i.e. F3/F4) as within-subjects factors, and neonatal group (GA = 35, 36, 37, 38, 39, and 40 weeks) as the between-subjects factor. However, neither the main effect nor the interaction effects involving the hemisphere factor were statistically significant. In particular, the main effect of the hemisphere is not significant, F(1,114) = 0.153, p=0.696, $η_{p}^{2}$ = 0.001. The interaction between hemisphere and group is not significant, F(5,114) = 0.249, p=0.940, $η_{p}^{2}$ = 0.011. The interaction between of hemisphere and stimuli is not significant, F(1,114) = 0.474, p=0.492, $η_{p}^{2}$ = 0.004. The three-way interaction is not significant, F(5,114) = 0.666, p=0.650, $η_{p}^{2}$ = 0.028. Consequently, we removed the hemisphere factor and averaged the MMR waveforms recorded at the F3 and F4 electrodes.
 
-Subsequently, we performed a two-way repeated measures ANOVA with condition and group as the two factors. The main effect of stimuli was significant, F(1,114) = 38.827, p<0.001,  ηp2 = 0.254. Specifically, vocal stimuli elicited larger MMRs (mean ± standard deviation: 3.839 ± 4.855 μV) compared to nonvocal stimuli (0.496 ± 4.779 μV). The main effect of group was also significant, F(5,114) = 3.228, p=0.009,  ηp2 = 0.124. In general, MMR amplitudes were smaller in the GA35 (0.590 ± 4.579 μV) and GA36 (0.141 ± 4.807 μV) groups compared to the GA37 (2.801 ± 5.585 μV), GA38 (2.760 ± 4.382 μV), GA39 (3.401 ± 4.871 μV), and GA40 groups (3.311 ± 5.491 μV). However, no significant differences were found in pairwise comparisons after Bonferroni adjustment for multiple comparisons.
+Subsequently, we performed a two-way repeated measures ANOVA with condition and group as the two factors. The main effect of stimuli was significant, F(1,114) = 38.827, p<0.001,  $η_{p}^{2}$ = 0.254. Specifically, vocal stimuli elicited larger MMRs (mean ± standard deviation: 3.839 ± 4.855 μV) compared to nonvocal stimuli (0.496 ± 4.779 μV). The main effect of group was also significant, F(5,114) = 3.228, p=0.009,  $η_{p}^{2}$ = 0.124. In general, MMR amplitudes were smaller in the GA35 (0.590 ± 4.579 μV) and GA36 (0.141 ± 4.807 μV) groups compared to the GA37 (2.801 ± 5.585 μV), GA38 (2.760 ± 4.382 μV), GA39 (3.401 ± 4.871 μV), and GA40 groups (3.311 ± 5.491 μV). However, no significant differences were found in pairwise comparisons after Bonferroni adjustment for multiple comparisons.
 
-The interaction between stimuli and group was significant, F(5,114) = 3.127, p=0.011, ηp2 = 0.121 (as shown in Figure 2). Simple effect analysis revealed that MMR amplitudes were larger in the vocal condition compared to the nonvocal condition in the GA37 (F(1,114) = 15.254, p<0.001, ηp2 = 0.118; vocal = 5.367 ± 5.165 μV, nonvocal = 0.235 ± 4.847 μV), GA38 (F(1,114) = 16.072, p<0.001, ηp2 = 0.124; vocal = 5.394 ± 3.145 μV, nonvocal = 0.126 ± 3.861 μV), GA39 (F(1,114) = 8.393, p=0.005, ηp2 = 0.069; vocal = 5.305 ± 4.011 μV, nonvocal = 1.498 ± 4.998 μV), and GA40 groups (F(1,114) = 14.482, p<0.001, ηp2 = 0.113; vocal = 5.811 ± 5.298 μV, nonvocal = 0.811 ± 4.546 μV). However, there were no significant differences in MMR amplitudes between the two kinds of stimuli in the GA35 (F(1,114) = 0.026, p=0.873, ηp2 < 0.001; vocal = 0.695 ± 4.031 μV, nonvocal = 0.485 ± 5.173 μV) and GA36 groups (F(1,114) = 0.236, p=0.628, ηp2 = 0.002; vocal = 0.460 ± 4.104 μV, nonvocal = –0.179 ± 5.511 μV).
+The interaction between stimuli and group was significant, F(5,114) = 3.127, p=0.011, $η_{p}^{2}$ = 0.121 (as shown in Figure 2). Simple effect analysis revealed that MMR amplitudes were larger in the vocal condition compared to the nonvocal condition in the GA37 (F(1,114) = 15.254, p<0.001, $η_{p}^{2}$ = 0.118; vocal = 5.367 ± 5.165 μV, nonvocal = 0.235 ± 4.847 μV), GA38 (F(1,114) = 16.072, p<0.001, $η_{p}^{2}$ = 0.124; vocal = 5.394 ± 3.145 μV, nonvocal = 0.126 ± 3.861 μV), GA39 (F(1,114) = 8.393, p=0.005, $η_{p}^{2}$ = 0.069; vocal = 5.305 ± 4.011 μV, nonvocal = 1.498 ± 4.998 μV), and GA40 groups (F(1,114) = 14.482, p<0.001, $η_{p}^{2}$ = 0.113; vocal = 5.811 ± 5.298 μV, nonvocal = 0.811 ± 4.546 μV). However, there were no significant differences in MMR amplitudes between the two kinds of stimuli in the GA35 (F(1,114) = 0.026, p=0.873, $η_{p}^{2}$ < 0.001; vocal = 0.695 ± 4.031 μV, nonvocal = 0.485 ± 5.173 μV) and GA36 groups (F(1,114) = 0.236, p=0.628, $η_{p}^{2}$ = 0.002; vocal = 0.460 ± 4.104 μV, nonvocal = –0.179 ± 5.511 μV).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95393/elife-95393-fig2-v1.jpg)
 
 **Figure 2.:** (A) Event-related potential (ERP) waveforms (averaged at the F3 and F4 electrodes) across the six gestational age (GA) groups. The time window for assessing MMR amplitude is indicated between the two vertical gray lines. (B) Violin plot illustrating MMR amplitudes in the six GA groups. Simple effect analysis was performed with pairwise comparisons, corrected using the Bonferroni method: **p<0.010, ***p<0.001.
 
-Further analysis revealed that vocal stimuli evoked varying MMR amplitudes across groups, F(5,114) = 6.768, p<0.001, ηp2 = 0.229. Specifically, the MMRs evoked by vocal stimuli were smaller in the GA35 group compared to GA37 (p=0.014), GA38 (p=0.013), GA39 (p=0.017), and GA40 groups (p=0.005). Similarly, the MMRs evoked by vocal stimuli were smaller in the GA36 group compared to GA37 (p=0.008), GA38 (p=0.008), GA39 (p=0.009), and GA40 groups (p=0.003). However, nonvocal stimuli did not elicit significantly different MMR amplitudes across groups, F(5,114) = 0.300, p=0.912, ηp2 = 0.013.
+Further analysis revealed that vocal stimuli evoked varying MMR amplitudes across groups, F(5,114) = 6.768, p<0.001, $η_{p}^{2}$ = 0.229. Specifically, the MMRs evoked by vocal stimuli were smaller in the GA35 group compared to GA37 (p=0.014), GA38 (p=0.013), GA39 (p=0.017), and GA40 groups (p=0.005). Similarly, the MMRs evoked by vocal stimuli were smaller in the GA36 group compared to GA37 (p=0.008), GA38 (p=0.008), GA39 (p=0.009), and GA40 groups (p=0.003). However, nonvocal stimuli did not elicit significantly different MMR amplitudes across groups, F(5,114) = 0.300, p=0.912, $η_{p}^{2}$ = 0.013.
 
 ## Discussion
 
@@ -71,7 +71,7 @@ In summary, this study highlights a pivotal developmental change – the emergen
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 The research received approval from both the Ethical Committee of Peking University First Hospital and the Chinese Clinical Trial Registry (ChiCTR2300069898). Initially, we planned to include 120 healthy neonates, with 60 being boys, in the data analysis. These participants were categorized into six groups based on their GA, specifically 35, 36, 37, 38, 39, and 40 weeks, with each group comprising twenty subjects. For instance, the GA35 group comprised neonates with GA ranging from 35 weeks plus 0 day to 6 days. However, we ultimately recruited 198 neonates to obtain 120 valid datasets due to the non-cooperation of newborns (n=75) or technical issues (n=3). Specially, 11, 12, 11, 14, 13, and 14 neonates were excluded from data analysis in the GA35, GA36, GA37, GA38, GA39, and GA40 groups, respectively, due to crying or irritable movements during EEG device preparation and EEG recording.
 
@@ -81,7 +81,7 @@ Prior to data collection, written consent was obtained from the parents or legal
 
 All subjects met the following inclusion criteria: (1) normal birth weight for their GA; (2) absence of clinical symptoms at the time of EEG recording; (3) no previous sedation or medication prior to EEG recording; and (4) normal hearing results in an evoked otoacoustic emissions test (ILO88 Dpi, Otodynamics Ltd, Hatfield, UK). Additionally, subjects did not exhibit any of the following neurological or metabolic disorders: (1) hypoxic-ischemic encephalopathy, (2) intraventricular hemorrhage or white matter damage detected by cranial ultrasound, (3) congenital malformation, (4) central nervous system infection, (5) metabolic disorder, (6) clinical evidence of seizures, and (7) signs of asphyxia.
 
-## Stimuli
+### Stimuli
 
 A total of 85 possible combinations of consonants and vowels, which are standard in Chinese (Lee and Zee, 2003) and common to most human languages (e.g. ‘dada’ and ‘keke’), were recorded by a native Chinese-speaking adult woman with the Peking dialect. Each disyllable was recorded with four repetitions, two using a happy prosody and two with a neutral prosody, resulting in a total of 340 disyllables (85×4). Twenty Chinese undergraduate students (10 men, mean age 20.1 ± 1.2 years) performed a discrimination task, distinguishing between happy and neutral stimuli, and rated the affective content of these stimuli.
 
@@ -93,18 +93,78 @@ To ensure that neonates were discriminating based on prosodic cues containing em
 
 To optimize the diversity of our material and increase the generalizability of our results, we utilized ten sets of sounds. Each set included both positive and neutral prosodic voices, along with their respective nonvocal counterparts. These auditory materials were distributed randomly and evenly within each neonatal GA group, ensuring that each set was presented twice (to two individuals) in each GA group.
 
-## Procedure
+### Procedure
 
 The sound stimuli were presented in two blocks: the vocal and nonvocal conditions, utilizing the odd-ball paradigm. The standard stimulus was either a vocal or nonvocal neutral sound, while the deviant stimulus was either a vocal or nonvocal happy sound. Each block consisted of 240 standard stimuli (80%) and 60 deviant stimuli (20%). The standard and deviant stimuli were presented randomly, ensuring that each deviant stimulus was followed by at least two standard stimuli. Each sound had a duration of 400 ms, and the inter-trial interval was silent, with varying durations ranging from 500 to 700 ms. Each block lasted for 5 min, and the order of the vocal and nonvocal blocks was counterbalanced across participants. A 5 min break separated the two blocks, resulting in a total EEG recording duration of 15 min.
 
 The experiment took place in the neonatal ward of Peking University First Hospital. Neonates were transported to a designated testing room for EEG recording as soon as their condition stabilized after birth. In this room, they were separated from their mothers to minimize any natural exposure to speech or speech stimuli other than those utilized in the experiment. Auditory stimuli were presented through a pair of loudspeakers positioned approximately 30 cm away from the neonates’ left and right ears, at a sound pressure level of 55–60 dB, with an average background noise intensity level of 30 dB. EEG recording was conducted while the neonates were in a natural sleep state (Cheour et al., 2002; Wu et al., 2022).
 
-## Data recording and analysis
+### Data recording and analysis
 
 We recorded brain electrical activity using an electrical amplifier (NeuSen.W32, Neuracle, Changzhou, China) at a sampling frequency of 1000 Hz. Initially, the data were recorded online with reference to the left mastoid and subsequently re-referenced offline to the average of the left and right mastoids. The ground electrode was positioned on the forehead. For the recording of vertical eye movements, an electrooculogram (EOG) electrode was positioned beneath the left eye, while another was placed at the left external canthi for recording horizontal eye movements. Throughout the recording process, electrode impedances were meticulously maintained below 10 kΩ.
 
 We eliminated ocular artifacts from the EEG data using a regression procedure implemented in NeuroScan software (Scan 4.3, NeuroScan, Herndon, VA). Subsequently, we employed Matlab (v.2021b; Mathworks, Inc, Sherborn, MA) for data processing and result presentation. The EOG-corrected EEG data were then offline filtered with a half-amplitude cutoff range of 0.01–30 Hz and segmented from 200 ms before sound presentation until 1000 ms after sound onset. Epochs were baseline-corrected relative to the mean voltage during the 200 ms preceding sound presentation. Any epochs containing artifacts with peak deflections exceeding ± 200 μV were rejected (see also Biro et al., 2021; Di Lorenzo et al., 2021; Kumaravel et al., 2022), followed by averaging for each experimental condition. The time window for the MMR component was pre-defined as 150–400 ms after sound onset, based on prior knowledge (Cheour et al., 2002), and utilized throughout the data analysis.
 
-The number of valid epochs did not exhibit a significant difference across neonatal groups. In particular, for happy trials, a six (group) × two (condition: vocal/nonvocal) ANOVA was performed. Neither the main effect of condition (F(1,114) = 0.533, p=0.467, ηp2 = 0.005) nor group (F(5,114) = 0.795, p=0.555, ηp2 = 0.034) was found to be significant. The interaction between group and condition was also not significant (F(5,114) = 1.654, p=0.151, ηp2 = 0.068). For neutral trials, another 6×2 ANOVA was performed. Again, neither the main effect of condition (F(1,114) = 1.137, p=0.289, ηp2 = 0.010) nor group (F(5,114) = 1.225, p=0.302, ηp2 = 0.051) was significant. The interaction between group and condition was not significant (F(5,114) = 1.012, p=0.414, ηp2 = 0.043). Epoch numbers in different conditions are reported in Table 1.
+The number of valid epochs did not exhibit a significant difference across neonatal groups. In particular, for happy trials, a six (group) × two (condition: vocal/nonvocal) ANOVA was performed. Neither the main effect of condition (F(1,114) = 0.533, p=0.467, $η_{p}^{2}$ = 0.005) nor group (F(5,114) = 0.795, p=0.555, $η_{p}^{2}$ = 0.034) was found to be significant. The interaction between group and condition was also not significant (F(5,114) = 1.654, p=0.151, $η_{p}^{2}$ = 0.068). For neutral trials, another 6×2 ANOVA was performed. Again, neither the main effect of condition (F(1,114) = 1.137, p=0.289, $η_{p}^{2}$ = 0.010) nor group (F(5,114) = 1.225, p=0.302, $η_{p}^{2}$ = 0.051) was significant. The interaction between group and condition was not significant (F(5,114) = 1.012, p=0.414, $η_{p}^{2}$ = 0.043). Epoch numbers in different conditions are reported in Table 1.
 
-We performed statistical analyses using SPSS Statistics (v. 20.0; IBM, Somers, USA). Descriptive data are reported as mean ± standard deviation. The significance level was set at 0.05. We applied the Greenhouse-Geisser correction for ANOVA tests when deemed appropriate. Post-hoc tests for significant main effects were conducted using the Bonferroni method. Significant interactions were explored through simple effects models. We reported partial eta-squared (ηp2) as a measure of effect size in ANOVA tests.
+**Table 1.**
+ Epoch numbers in different conditions (mean ± standard deviation).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GA group(week)</th>
+      <th>Vocal happy</th>
+      <th>Nonvocal happy</th>
+      <th>Vocal neutral</th>
+      <th>Nonvocal neutral</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>35</td>
+      <td>53.15 ± 4.86</td>
+      <td>52.65 ± 6.79</td>
+      <td>215.55 ± 16.58</td>
+      <td>214.10 ± 21.80</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>51.20 ± 7.18</td>
+      <td>48.80 ± 11.04</td>
+      <td>201.90 ± 30.78</td>
+      <td>196.25 ± 38.24</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>48.45 ± 6.79</td>
+      <td>50.40 ± 5.98</td>
+      <td>191.40 ± 38.00</td>
+      <td>199.70 ± 32.30</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>48.35 ± 9.03</td>
+      <td>51.00 ± 6.47</td>
+      <td>197.95 ± 35.37</td>
+      <td>202.60 ± 27.40</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>49.40 ± 7.06</td>
+      <td>49.65 ± 8.11</td>
+      <td>198.35 ± 31.65</td>
+      <td>198.25 ± 36.47</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>49.80 ± 6.53</td>
+      <td>50.35 ± 5.71</td>
+      <td>192.95 ± 32.55</td>
+      <td>202.85 ± 24.42</td>
+    </tr>
+  </tbody>
+</table>
+
+We performed statistical analyses using SPSS Statistics (v. 20.0; IBM, Somers, USA). Descriptive data are reported as mean ± standard deviation. The significance level was set at 0.05. We applied the Greenhouse-Geisser correction for ANOVA tests when deemed appropriate. Post-hoc tests for significant main effects were conducted using the Bonferroni method. Significant interactions were explored through simple effects models. We reported partial eta-squared ($η_{p}^{2}$) as a measure of effect size in ANOVA tests.

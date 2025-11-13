@@ -29,15 +29,23 @@ Here, we use confocal microscopy and biochemical characterization to determine t
 
 ## Results
 
-## Endogenous cGAS is predominantly a nuclear protein
+### Endogenous cGAS is predominantly a nuclear protein
 
 We screened numerous commercially available antibodies to human cGAS for their ability to identify endogenous cGAS unambiguously and specifically using immunofluorescence microscopy. We chose to image HeLa cells, which express endogenous cGAS that is inactive in resting cells and potently activated to produce cGAMP upon transfection of calf thymus DNA (Figure 1—figure supplement 1A). Despite this potent activation of cGAS and production of cGAMP after DNA transfection, HeLa cells fail to activate the type I interferon response because the E7 oncoprotein of human papillomavirus 18 blocks STING-dependent signaling (Lau et al., 2015). To test for specificity of staining, we used lentiCRISPR to generate clonal lines of cGAS-deficient HeLa cells (Figure 1—figure supplement 1B; (Gray et al., 2016). We found that the D1D3G rabbit monoclonal antibody that detects an epitope in the N terminus of human cGAS was suitable for analysis of endogenous cGAS by microscopy. Unexpectedly, endogenous cGAS was localized almost exclusively in the nuclei of all HeLa cells, with little cytosolic staining (Figure 1A, Figure 1—videos 1 and 2). Identically prepared cGAS-deficient HeLa cells had no detectable immunostaining, confirming the specificity of this antibody for endogenous cGAS (Figure 1A). We noted three additional reproducible patterns of cGAS localization in addition to the uniform nuclear staining. First, as observed previously (Yang et al., 2017), we found that cGAS was associated with condensed mitotic chromatin (Figure 1B). Second, we found cGAS in rare, spontaneous, DAPI-positive, micronucleus-like extranuclear structures (Figure 1B). Whereas cGAS localization to micronuclei has been reported recently in a number of studies that primarily visualized overexpressed cGAS (Bartsch et al., 2017; Dou et al., 2017; Glück et al., 2017; Harding et al., 2017; Mackenzie et al., 2017; Yang et al., 2017), we found that all cells with such structures also had extensive endogenous cGAS staining in the main nucleus (Figure 1B). Third, we found endogenous cGAS localized to ‘chromatin bridges’ between adjacent cells (Figure 1B), the origins of which are thought to involve chromosome fusions and incomplete segregation of DNA between daughter cells during mitosis (Maciejowski et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47491/elife-47491-fig1-v2.jpg)
+
+**Figure 1.:** (A) Clonal lines of HeLa cells were generated using lentiCRISPR encoding either a non-targeting H1 control gRNA (top row) or a cGAS-targeted gRNA (cGAS KO). Cells were fixed with methanol, stained with antibodies to human cGAS and beta-tubulin, counter-stained with DAPI, and visualized by confocal microscopy. (B) We noted three reproducible patterns of cGAS localization in addition to the nucleus: condensed mitotic chromatin (top row), structures resembling micronuclei (middle row), and tendril-like bridges between cells. (C) Mouse Cgas+/+ and Cgas-/- primary bone marrow-derived macrophages were stained using a mouse antibody to cGAS and processed as in (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47491/elife-47491-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HeLa cells were transduced with LentiCRISPR encoding H1 non-targeting control gRNA or cGAS-targeted gRNA, cloned by limiting dilution, and tested for production of cGAMP in cell lysates four hours after transfection of calf thymus DNA (CT-DNA). (B) Lysates from H1 control and cGAS KO clonal HeLa cells were separated into cytosol (C) and nuclear pellet (NP), and then blotted for endogenous cGAS. (C) H1 control and cGAS KO HeLa cells were fixed with 4% paraformaldehyde, permeabilized with 0.1% Triton X-100, and stained for endogenous cGAS. (D) cGAS KO HeLa cells were transduced with pSLIK lentivirus encoding doxycyline-inducible GFP-mouse cGAS (mcGAS), and then treated with doxycyline to induce GFP-mcGAS expression. Cells were then stained with DRAQ5 and visualized with an imaging flow cytometer (Amnis ImageStream). Representative images shown in (D). (E) Analysis of ImageStream data for thousands of individual cells showing percent nuclear and cytosolic localization of GFP-mcGAS.
 
 To extend our findings to primary cells of another species, we searched for antibodies that could identify endogenous mouse cGAS by microscopy. Using primary bone marrow-derived macrophages (BMMs) from wild-type and cGAS-deficient mice and a mouse-specific cGAS antibody, we found nearly exclusive localization of mouse cGAS to the nucleus (Figure 1C). However, even with optimization of blocking conditions and antibody dilutions, we noted that cGAS-deficient mouse macrophages displayed a pattern of nuclear staining that was distinct in its distribution and less abundant than the cGAS staining of wild-type cells (Figure 1C). Despite the imperfect background fluorescence, this was the most sensitive and specific cGAS staining we could identify among the antibodies that we tested.
 
 In our microscopy experiments, we used methanol fixation/extraction because we found that the epitope of the antibody to human cGAS was sensitive to paraformaldehyde (PFA) fixation, which reduced the signal of the specific staining and increased background staining. However, it has been suggested that methanol fixation might also extract a membrane-bound pool of cytosolic cGAS (Barnett et al., 2019), leading to an overestimation of the amount of nuclear cGAS in our images. We found that PFA fixation followed by 0.1% Triton X-100 permeabilization, which would preserve such a pool of cGAS, resulted in a pattern of endogenous cGAS staining that was almost exclusively nuclear and nearly identical to the staining observed in methanol-fixed cells (Figure 1—figure supplement 1C). Finally, to rule out any role for fixation in our interpretation of cGAS localization, we performed Amnis imaging flow cytometry on live, unfixed cGAS KO HeLa cells stably expressing a GFP-cGAS fusion protein. Analysis of thousands of individual cells revealed that the great majority of cGAS colocalized with a fluorescent DNA-intercalating dye that marked the nucleus (Figure 1—figure supplement 1D). Together, these data reveal that, contrary to expectation, cGAS is primarily a nuclear protein in both human and mouse cells.
 
-## cGAS is tethered tightly in the nucleus
+### cGAS is tethered tightly in the nucleus
 
 We sought to reconcile the nuclear localization of endogenous cGAS in Figure 1 with the widely accepted notion that cGAS is primarily a cytosolic protein. To track endogenous cGAS localization thoroughly, we modified a protocol for salt-based elution of histones from purified nuclei (Shechter et al., 2007). We prepared extracts separating cytosol from nuclei using a solution containing 0.2% NP-40 detergent followed by low speed centrifugation. After washing the pellets with detergent-free lysis buffer, we lysed the nuclei in a solution of 3 mM EDTA and 0.3 mM EGTA in water. Following this zero salt nuclear lysis, the pellets remaining after centrifugation were treated with stepwise increases of NaCl in a buffer containing 50 mM Tris-HCl pH 8.0 and 0.05% NP-40. We tracked endogenous cGAS throughout this sequential extraction and elution protocol using six different cell lines from humans and mice, sampling primary cells, immortalized cells, and tumor cells. These included cells that were actively dividing (HeLa, SiHa, mouse fibroblasts, human fibroblasts) as well as primary mouse macrophages that are largely non-dividing (Luo et al., 2005). We monitored the specificity of the extractions using the cytosolic protein tubulin, the nuclear zero/low salt elution-enriched protein LSD1, and nuclear pellet-localized histones H2B and H3. In all of these cells, we found that the vast majority of cGAS was not only in the nuclear fractions, but it was remarkably resistant to salt-based elution (Figure 2A). In most of these cells, a NaCl concentration of 0.75 M or higher was required to solubilize the majority of cGAS, similar to the amount of salt required to initiate the liberation of histones (Figure 2A). Importantly, the salt elutions reflect sequential treatments of the same nuclear extracts such that the sum of all the cGAS signals in these fractions can be compared to the cytosolic extracts in order to determine the relative amounts of cGAS in the cytosol and nucleus. These comparisons, calculated by densitometry analysis (Figure 2B), corroborate the microscopy studies in Figure 1 and reveal that the great majority of endogenous cGAS is in the nucleus, not in the cytosol. Moreover, our findings demonstrate that the conventional nuclear washes of ~420 mM NaCl that are typically used to isolate nuclear proteins are insufficient to liberate cGAS from the nucleus (Sun et al., 2013). Such tight tethering of cGAS in the nucleus cannot be explained by its low intrinsic affinity for DNA, the dissociation constant of which has been estimated at 1–2 μM (Civril et al., 2013; Li et al., 2013).
 
@@ -45,7 +53,7 @@ We sought to reconcile the nuclear localization of endogenous cGAS in Figure 1 w
 
 **Figure 2.:** (A) Mouse and human cell lines were separated into cytosolic and nuclear fractions, followed by sequential stepwise elutions of nuclear pellets with the indicated concentrations of NaCl. cGAS and the indicated control proteins (shown for HeLa cells) were monitored throughout the elution by western blot. (B) Densitometry measurements quantitating the relative amounts of endogenous cGAS protein in the cytosol, the 0 salt nuclear lysis, and the cumulative nuclear pellet.
 
-## cGAS is nuclear regardless of cell cycle phase or activation state
+### cGAS is nuclear regardless of cell cycle phase or activation state
 
 One potential explanation for the nuclear localization of cGAS, particularly in dividing cells like HeLa cells, is that this reflects the previously observed association of cGAS with condensed mitotic chromatin. Thus, recently divided cells might still retain cGAS in the nucleus before its redistribution to the cytosol via mechanisms that remain unexplained. Importantly, the fact that almost 95% of cGAS is nuclear in largely post-mitotic, differentiated primary mouse macrophages argues against this possibility (Figures 1C and 2). We further tested this by tracking the localization of endogenous cGAS throughout controlled cell cycles in HeLa cells. Based on our observation that nuclear cGAS is resistant to salt elution up to 0.75 M NaCl (Figure 2), we used a widely available commercial extraction kit to separate cytosol from the nuclear proteins that elute in ~420 mM NaCl (nuclear supernatant, NS), and we additionally examined the residual pellets to visualize the entire pool of tightly tethered cGAS (nuclear pellet, NP). We used double-thymidine block to synchronize HeLa cells at the G1/S boundary (Bootsma et al., 1964), followed by release that resulted in a uniform progression through a single cell cycle. At 4 and 8 hr post release, PI staining confirmed uniform populations of cells in S and G2/M phases, respectively (Figure 3A). By 24 hr, the cells had become asynchronous again (Figure 3A). At all of these time points, we found that the localization of the majority of cGAS to the nuclear pellet did not change (Figure 3B). Thus, endogenous cGAS is a tightly tethered nuclear protein, regardless of cell cycle phase.
 
@@ -55,9 +63,17 @@ One potential explanation for the nuclear localization of cGAS, particularly in 
 
 Next, we asked whether cGAS localization is dependent on its activation state. We transfected HeLa cells with calf thymus DNA and harvested them four hours later, at a time when they were making large amounts of cGAMP (Figure 1—figure supplement 1A). We performed sequential extractions and salt elutions, comparing cGAS distribution in control and stimulated cells. We did not observe any concerted relocalization of cGAS into the cytosol, despite its robust activation at this time point (Figure 3C). These data demonstrate that activation of cGAS by foreign DNA does not result in a dramatic redistribution to the cytosol.
 
-## cGAS nuclear tethering and cGAS activation are governed by separate mechanisms
+### cGAS nuclear tethering and cGAS activation are governed by separate mechanisms
 
 We next determined the domains of cGAS that contribute to its tight tethering in the nucleus. The core of human cGAS is comprised of a bilobed nucleotidyltransferase (NTase) structure bridged by an alpha-helical spine (Figure 4A) (Civril et al., 2013; Li et al., 2013). In addition, the N-terminal ~150 residues of cGAS form an unstructured domain that is positively charged and refractory to crystallization. Interestingly, this N terminus of cGAS was recently demonstrated to be essential for its activation by DNA through a process of phase condensation that assembles cGAS on long double-stranded DNA (Du and Chen, 2018). We reconstituted cGAS-deficient HeLa cells with GFP-cGAS fusions of full-length human cGAS and several truncation mutants corresponding to the structural domains of cGAS. To do this, we cloned a GFP-cGAS expression construct into a doxycycline-regulated lentiviral vector that enabled transduction of cGAS-deficient HeLa cells followed by selection for these transduced cells in the absence of cGAS expression. Induction of GFP-cGAS expression with doxycycline (Dox) allowed us to examine its localization in the absence of exogenous DNA stimulation, unlike standard transient transfections in which the plasmid DNA encoding cGAS also serves as a potent activating ligand. Our panel of truncation mutants revealed a number of important features of its nuclear tethering. First, we found that the GFP-cGAS (161-522) truncation mutant lacking the N terminus remained tethered in the nuclear pellet, and that the isolated N terminus of cGAS (1-161) localized to the cytosol and nuclear supernatant, with very little signal in the nuclear pellet (Figure 4B). Second, we found that removal of either the alpha-helical spine (161-213) or the C-terminal lobe of cGAS (383-522) resulted in a protein that was mislocalized and, in the case of the 213–522 mutant, also unstable (Figure 4B). Thus, the intact core of cGAS is required for its nuclear tethering.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47491/elife-47491-fig4-v2.jpg)
+
+**Figure 4.:** (A) Structure of human cGAS with domains colorized. (B) TERT-immortalized human foreskin fibroblasts were reconstituted with the indicated Dox-inducible GFP-cGAS lentivirus constructs, treated with 0.1 μg/ml Dox for 24 hr, and then separated into cytosolic (Cyt), nuclear supernatant (NS), and nuclear pellet (NP) fractions. FL: Full-Length. (C) cGAS-deficient HeLa cells reconstituted with the indicated GFP-cGAS constructs were induced for 24 hr with three doses of Dox. Whole cell lysates that recover all cGAS were prepared and blotted with anti-GFP antibody. (D) Cells from (C) were transfected with CT-DNA for four hours, followed by cGAMP measurement in lysates by modified ELISA. (E) Cells described in C-D were treated with 0.1 μg/ml Dox for 24 hr to induce GFP-cGAS expression, then harvested and used for sequential fractionation and salt elution as in Figure 2. (F) Dox-inducible, full-length mouse cGAS constructs were introduced into hTERT-immortalized human fibroblasts. Cells were treated with 0.1 μg/ml Dox for 24 hr followed by stimulation for 4 hr and measurement of cGAMP in cell lysates. (G) Unstimulated cells from (F) were fractionated and blotted for cGAS.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47491/elife-47491-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) H1-targeted control HeLa clone and four independent NONO KO HeLa clones were lysed and separated into Cytosol (Cyt), Nuclear supe (NS), and nuclear pellet (NP) fractions, and blotted for NONO and endogenous cGAS. The asterisk indicates a non-specific band detected by the NONO antibody. (B) Cells from (A) were transfected with CT-DNA for four hours, followed by cGAMP measurement in lysates by modified ELISA. (C) TERT-immortalized human fibroblasts were transduced with lentiCRISPR constructs encoding either control gRNA or gRNA targeting IFI16, selected with puromycin to enrich for transduced cells, and then fractionated and blotted with the indicated antibodies.
 
 We compared the full-length and N-terminal deletion mutant of cGAS in more detail. We tested a 100-fold range of dox concentrations that induced varying levels of the GFP-cGAS fusion constructs, from robust to nearly undetectable (Figure 4C). Consistent with the recent definition of the requirement of the N terminus for cGAS condensation onto DNA (Du and Chen, 2018), we found that the mutant lacking the N terminus of cGAS was severely compromised for DNA-activated cGAMP production at all levels of expression when compared to full-length cGAS (Figure 4D). However, sequential salt elution of the two forms of cGAS revealed nearly identical distribution and similarly tight tethering in the nucleus (Figure 4E).
 
@@ -65,7 +81,7 @@ We analyzed six additional mutants in the context of full-length murine cGAS to 
 
 We tested two additional potential cGAS tethering mechanisms. The nuclear protein NONO was recently found to bind to HIV capsid and mediate cGAS detection of HIV cDNA in the nucleus of human dendritic cells (Lahaye et al., 2018). Interestingly, NONO was responsible for the nuclear localization of a pool of cGAS that was extractable by ~400 mM salt in these cells (Lahaye et al., 2018). To test whether NONO is also essential for the tight tethering of the majority of nuclear cGAS, we generated four independent clonal lines of NONO-deficient HeLa cells (Figure 4—figure supplement 1A). We found that NONO-deficient cells produced normal amounts of cGAMP after DNA transfection (Figure 4—figure supplement 1B), consistent with the prior report (Lahaye et al., 2018). However, the tight nuclear tethering of cGAS was unaffected in NONO-deficient HeLa cells (Figure 4—figure supplement 1A). NONO may act as a ‘bridge’ to enable cGAS detection of virus-encapsidated DNA, as demonstrated in the prior study (Lahaye et al., 2018), but it is not the primary tether of cGAS. Lastly, we used a validated lentiCRISPR approach to disrupt the gene encoding IFI16 (Gray et al., 2016), which has been proposed to interact with cGAS and contribute to its activation (Orzalli et al., 2015). We found that IFI16 was extracted by ~420 mM salt into the nuclear supernatant and that IFI16 disruption resulted in no change in cGAS protein levels or its tight tethering in the nuclear pellet (Figure 4—figure supplement 1C).
 
-## Intact chromatin is required for cGAS tethering
+### Intact chromatin is required for cGAS tethering
 
 cGAS binds to DNA in a sequence-independent fashion, and its association with chromatin is thought to be generic, limited to mitosis, and mediated by its intrinsic affinity for DNA. To broadly assess the requirement for chromatin in the tethering of nuclear cGAS, we treated nuclei from both THP1 and HeLa cells with two broad-spectrum nucleases that digest both DNA and RNA. First, we digested the nuclear extracts after the zero salt lysis step for 30 min at 37° C with micrococcal nuclease, which was sufficient to convert the vast majority of chromatin into nucleosome-protected DNA fragments under 200 bp in length (Figure 5A). Second, we added salt-active nuclease (SAN) to the 250 mM salt elution step, which eliminated all detectable DNA from the samples (Figure 5A). In both cases, the nuclease digestions resulted in a collapsed salt elution profile for histones and cGAS, with the majority of cGAS released from the pellets at 250 mM and 500 mM salt (Figure 5B). These data demonstrate that intact chromatin is required for the organization of cGAS nuclear tethering.
 
@@ -73,7 +89,7 @@ cGAS binds to DNA in a sequence-independent fashion, and its association with ch
 
 **Figure 5.:** (A) THP-1 or HeLa cell nuclear extracts were left untreated (NoTx), treated after the 0 salt wash step with micrococcal nuclease (MN), or treated with at the 0.25 M NaCl elution step with Salt Active Nuclease (SAN). Supernatants (supe) and pellets were collected, and the untreated pellet was sonicated to shear large genomic DNA. DNA was extracted, run on an agarose gel, and visualized with SYBR Safe. (B) Extracts treated as described above were used for sequential salt elution, followed by blotting for Histone H2B or cGAS.
 
-## Identification of the evolutionarily conserved cGAS tethering surface
+### Identification of the evolutionarily conserved cGAS tethering surface
 
 In the course of our studies of the relationship between DNA binding and nuclear tethering, we generated the R222E mutant of mouse cGAS (Li et al., 2013). This mutant, purified in recombinant form lacking the cGAS N terminus, was previously shown to be defective for binding to short (45 bp) double-stranded DNA oligonucleotides in vitro, with reduced DNA-activated cGAMP production (Li et al., 2013). However, in a transient transfection-based IFN-luciferase assay, R222E cGAS activated STING at levels comparable to WT cGAS (Li et al., 2013). We introduced the R222E mutation into full-length murine cGAS and transduced cGAS-deficient HeLa cells using our dox-inducible lentivirus system. Remarkably, we found that dox-induced expression alone, which did not activate WT cGAS, resulted in massive cGAMP production by the R222E mutant (Figure 6A). This constitutive cGAMP production by R222E cGAS was similar to the amount made by WT cGAS upon DNA transfection (Figure 6A). Importantly, DNA transfection did not further activate R222E, demonstrating that it was maximally active in the absence of exogenous DNA (Figure 6A).
 
@@ -109,7 +125,535 @@ In conclusion, we have found that two separate processes govern the resting and 
 
 ## Materials and methods
 
-## Cell lines and mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>SiHa</td>
+      <td>ATCC</td>
+      <td>HTB-35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>THP1</td>
+      <td>ATCC</td>
+      <td>TIB-202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Primary human foreskin fibroblasts</td>
+      <td>Millipore</td>
+      <td>Cat # SCC-058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>mouse bone marrow macrophages, C57BL/6J</td>
+      <td>Gray EE et al, J Immunol 2015 195:1939 PMID: 27496731</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa H1 LentiCRISPR control clonal lines</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS LentiCRISPR clonal lines</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Hela cGAS KO pSLIK GFP</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Hela cGAS KO pSLIK GFP FL mcGAS</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK GFP mcGAS 161–522</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS WT</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R222E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R222E/K335E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R222E/K335E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R222E/K395M/K399M</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R222E/K382A</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS K240E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R241E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS R244E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK mcGAS ΔLoop</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK hcGAS WT</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK hcGAS R236E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HeLa cGAS KO pSLIK hcGAS R255E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS full length (FL)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (161-522)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (1-161)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (213-522)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (161-213)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (161-382)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK GFP-mcGAS (213-382)</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS K335E</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS K395M/K399M</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS Zinc thumbless</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS K382A</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS E386A</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast pSLIK mcGAS E211A/D213A</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast H1 lentiCRISPR control</td>
+      <td>Gray EE et al, Immunity 2016 45:255 PMID: 27496731</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hTERT human fibroblast IFI16 lentiCRISPR</td>
+      <td>Gray EE et al, Immunity 2016 45:255 PMID: 27496731</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>mouse bone marrow macrophages, Cgas-/-</td>
+      <td>Gray EE et al, J Immunol 2015 195:1939 PMID: 26223655</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>WT MEF (mouse embryonic fibroblasts)</td>
+      <td>Gray EE et al, J Immunol 2015 195:1939 PMID: 26223655</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSLIK-Neo</td>
+      <td>Addgene</td>
+      <td>Plasmid #25735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pSLIK-Blasticidin</td>
+      <td>This Paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-cgas D1D3G</td>
+      <td>Cell Signaling</td>
+      <td>cat # 15102S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-cgas, mouse specific</td>
+      <td>Cell Signaling</td>
+      <td>cat # 31659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-LSD1 C69G12</td>
+      <td>Cell Signaling</td>
+      <td>cat # 2184S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-histone H3</td>
+      <td>abcam</td>
+      <td>cat # ab1791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-histone H2B</td>
+      <td>abcam</td>
+      <td>cat # ab1790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>abcam</td>
+      <td>cat # 6556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Ifi16</td>
+      <td>abcam</td>
+      <td>cat # 55328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-NONO</td>
+      <td>Sigma Aldrich</td>
+      <td>cat # N8789-200UL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti- α/β tubulin</td>
+      <td>Cell Signaling</td>
+      <td>cat # 2148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-β actin</td>
+      <td>SIGMA</td>
+      <td>cat # A5441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit IgG control</td>
+      <td>Fisher</td>
+      <td>cat # 10500C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-cgas</td>
+      <td>SIGMA</td>
+      <td>cat # HPA031700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-β-tubulin</td>
+      <td>Cell Signaling</td>
+      <td>cat # 86298</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NE-PER nuclear and cytoplasmic extraction reagents</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>cat # PI78835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>propidium iodide</td>
+      <td>SIGMA</td>
+      <td>cat # P4170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>cat # E4550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>2',3'-Cyclic GAMP Direct EIA Kit</td>
+      <td>Arbor Assays</td>
+      <td>cat # K067-H1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>thymidine</td>
+      <td>VWR</td>
+      <td>cat # 80058–750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SAN (salt active nuclease)</td>
+      <td>SIGMA</td>
+      <td>cat # SRE0015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>calf thymus DNA</td>
+      <td>SIGMA</td>
+      <td>cat # D4764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>micrococcal nuclease</td>
+      <td>New England Biolabs</td>
+      <td>cat # M0247S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>SIGMA</td>
+      <td>cat # D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR safe</td>
+      <td>Apex Bio</td>
+      <td>cat # A8743</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DRAQ5</td>
+      <td>Thermo Fisher</td>
+      <td>cat # 62251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP-40 substitute</td>
+      <td>SIGMA</td>
+      <td>cat # 74385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>protease inhibitor tablet</td>
+      <td>Pierce</td>
+      <td>cat # PIA32955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prolong Gold Antifade mountant</td>
+      <td>Thermo Fisher</td>
+      <td>cat # P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Roche Block</td>
+      <td>Sigma</td>
+      <td>cat # 11921673001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon-FL PVDF, 0.45 µm western blot membrane</td>
+      <td>SIGMA</td>
+      <td>cat # IPFL00010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon-PSQ PVDF,0.2 µm western blot membrane</td>
+      <td>SIGMA</td>
+      <td>cat # ISEQ00010</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and mice
 
 The following human cell lines were purchased from ATCC. Some of these lines are on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee; we used STR profiling from the University of Arizona Genetics Core to confirm their identity. We also tested for Mycoplasma contamination using a commercially available kit (ABM, cat # G238). All cell lines used in this study tested negative for Mycoplasma contamination.
 
@@ -117,46 +661,46 @@ Primary human foreskin fibroblasts were purchased from Millipore, cat # SCC058, 
 
 C57BL/6J mice were purchased from Jackson Laboratories. Cgas-/- mice were generated previously, and bone marrow macrophages and MEFs were made as described (Gray et al., 2015).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 HeLa cells or primary mouse bone marrow-derived macrophages (BMMs) were seeded onto glass coverslips overnight, then fixed and permeabilized with ice cold methanol at −20 degrees C for 10 min. Cells were then washed in PBS and blocked at room temperature for 2 hr (HeLa cells in Roche block in PBS; BMM in 5% normal goat serum in PBS). Cells were then incubated with primary antibody in block overnight at 4° C. For HeLa cells, we used anti-cGAS CST D1D3G Ab at 1:50 and anti-β-tubulin CST D3U1W Ab at 1:100. For mouse BMMs, we used anti-cGAS CST D3080 Ab at 1:250. Cells were washed in PBS and incubated with secondary Ab (goat anti-rabbit Alexafluor 488, goat anti-mouse Alexafluor 546, Invitrogen) at 1:500 for 1 hr at room temperature. Cells were then washed with PBS, stained with DAPI and mounted on glass slides with ProLong Gold Antifade Mountant (Thermo Fisher). For PFA fixation, cells were fixed in 4% PFA for 10 min, washed in PBS, then permeabilized in 0.1% Triton X-100 in PBS for 10 min. Cells were then washed in PBS, blocked for one hour at room temperature in Roche block in PBS, then stained as stated above. Images were captured with a Nikon C2RSi Scanning Laser Microscope, using a Plan Apo VC 60 × Oil DIC N2 objective in the 405, 488, and 562 dichroic channels and z-steps of 0.125 µm with NISElements software, and then pseudocolored using Fiji open source software. Z-series and 3D volume views were created with NISElements software.
 
-## Generation of cGAS and NONO knockout HeLa cells
+### Generation of cGAS and NONO knockout HeLa cells
 
 LentiCRISPR vector generation and lentiviral transductions were done as described previously (Gray et al., 2016). Clonal lines of HeLa cells were generated by limiting dilution and then assessed for targeting by Sanger sequencing, western blot analysis, and functional assays for cGAMP production. The guide RNAs used were:
 
 H1 off-target control: 5’-(G)ACGGAGGCTAAGCGTCGCAA (Sanjana et al., 2014), where the (G) denotes a nucleotide added to enable robust transcription from the U6 promoter; cGAS: 5’-GGCGCCCCTGGCATTCCGTGCGG, where the underlined sequence denotes the Protospacer Adjacent Motif (PAM); NONO: 5’-CTGGACAATATGCCACTCCGTGG.
 
-## Amnis imagestream analysis
+### Amnis imagestream analysis
 
 cGAS KO HeLa cells transduced with pSLIK GFP-mcGAS were treated with 1 μg/ml dox for 24 hr. Cells were washed in PBS and then rested in complete media for 24 hr. Cells were then released from the plate with trypsin, washed in PBS, and stained with 3.125 μM DRAQ5 in PBS before running on an Amnis Imagestream X Mark II imaging cytometer. Data were analyzed with Ideas software (version 6.2).
 
-## Salt extractions
+### Salt extractions
 
 We modified a published protocol for histone extraction (Shechter et al., 2007). Cells were pelleted, washed in PBS, resuspended in 1 mL extraction buffer (10 mM Hepes pH 7.9, 10 mM KCl, 1.5 mM MgCl2, 0.34 M sucrose, 10% glycerol, 0.2% NP-40, and Pierce protease inhibitors), and incubated on ice for 10 min with occasional vortexing. Nuclei were spun at 6500 x g for 5 min at 4° C. The cytosolic fraction (supernatant) was collected for further analysis. Nuclei were then washed for 1 min on ice in extraction buffer without NP-40 and spun at 6500 x g for 5 min at 4°C. Pelleted nuclei were then resuspended in 1 mL zero salt buffer (3 mM EDTA, 0.2 mM EGTA, and protease inhbitors), and vortexed intermittently for 1 min (10 s on, 10 s off). Nuclei were then incubated on ice for 30 min, vortexing for 15 s every 10 min. Lysates were then spun at 6500 x g for 5 min at 4° C. The zero salt supernatant was collected for further analysis. The remaining pellets were then resuspended in first salt buffer (50 mM Tris-HCl, pH 8.0, 0.05% NP-40, 250 mM NaCl), incubated on ice for 15 min with vortexing for 15 s every 5 min. Lysates were spun at full speed (15,000 rpm) at 4°C for 5 min. Supernatants were collected for further analysis. Subsequent salt extractions were performed on the pellet with sequential increases in NaCl concentration (500 mM, 750 mM, 1 M, 1.25 M, 1.5 M, 1.75 M, and 2 M). Samples in each salt wash were incubated on ice for 15 min with vortexing for 15 s every 5 min. Supernatants following each salt condition were collected for further analysis. The final pellet was then resuspended in salt buffer with 2M NaCl and sonicated with a Covaris M220 focused ultrasonicator at 5% ChIP (factory setting), or digested with Salt Active Nuclease (SAN) where the buffer was supplemented with 20 mM MgCl2. All samples were supplemented with denaturing SDS-PAGE sample buffer, separated on acrylamide gels, transferred to membranes for western blot (0.2 μM pore size for histone blots, 0.45 μM pore size for all other blots), and blotted with the indicated primary and secondary antibodies using standard approaches. Western blot images were acquired and densitometry analysis was performed using a BioRad Chemidoc and associated software.
 
-## NE-PERS kit modification
+### NE-PERS kit modification
 
 The NE-PERS kit instructions (Thermo Fisher) were followed completely, with the following modification: after spinning the pellet out of the NER buffer, the supernatant was removed and saved as ‘nuclear supernatant (NS)'. The remaining pellet was resuspended in a volume of NER buffer equal to the first, and either sonicated (using Covaris M220 5% ChIP factory setting), or digested with SAN in NER buffer supplemented with 20 mM MgCl2. This was then saved as ‘nuclear pellet (NP)'.
 
-## Double Thymidine block
+### Double Thymidine block
 
 Cells were seeded onto plates to achieve 40% confluency. The next day cells were treated with 2 mM thymidine in complete media for 19 hr. Cells were then washed in warm PBS and rested in complete media for 9 hr. Cells were then treated again with 2 mM thymidine in complete media for 16 hr. Cells were then either harvested for analysis by western blot or flow cytometry, or washed and returned to complete media for harvest at post-release time points. Flow cytometry analysis was performed as described above.
 
-## cGAMP quantitation assay
+### cGAMP quantitation assay
 
 Cells were plated at 100,000 cells/well in a 24 well tissue culture dish. 24 hr later, cells were transfected with either 10 μg/ml CT-DNA in lipofectamine 2000 (Invitrogen; ratio of 1 μL lipofectamine per 1 μg CT-DNA) (Stetson and Medzhitov, 2006), or with an identical volume of lipofectamine 2000 alone. 4 hr later, cells were harvested and lysates were prepared using cGAMP EIA assay protocol provided by manufacturer (Arbor Assays), in a volume of 200 μL sample suspension buffer.
 
-## Constructs
+### Constructs
 
 The pSLIK-Neo doxycycline-inducible lentiviral vector was obtained from Addgene and modified to replace the Neo cassette with a blasticidin resistance cassette. GFP fusions to the murine cGAS open reading frame were generated by PCR mutagenesis and designed to incorporate a four-glycine flexible linker between the last amino acid of GFP and the first amino acid of cGAS. Lentivirus production and blasticidin selection were done using standard techniques.
 
 cGAS-deficient HeLa cells were reconstituted with Dox-inducible lentiviruses encoding GFP, the indicated GFP-human cGAS fusions, or the indicated GFP-mouse cGAS constructs. Cells were plated at 50,000 cells per well in a 24 well plate for quantitation of cGAMP, or 250,000 cells per well in a 6-well plate for salt extractions. 24 hr later, cells were treated with doxycycline for 24 hr. Then, cells were harvested directly for anti-GFP western blot from the 6-well dishes, and the 24-well dishes were transfected with either 10 μg/mL CT-DNA complexed with lipofectamine 2000, or with lipofectamine 2000 alone. 4 hr later, lysates were prepared and analyzed for cGAMP content as described above (whole cells lysed in 200 μL sample suspension buffer).
 
-## Nuclease digestions and salt elutions
+### Nuclease digestions and salt elutions
 
 Salt extractions were performed as described above with the following modifications. 1 × 106 cells were used for each condition. Following the zero salt wash, all samples were resuspended in digestion buffer (50 mM Tris pH 8.0, 0.05% NP-40, 1 mM MgCl2, 5 mM CaCl2). For the MNase digestion, MNase was added at 20,000 gel units per sample. For the SAN digestion, 50 units SAN nuclease plus 20 mM MgCl2 were added at the 250 mM NaCl step. All samples were incubated at 37°C for 10 min. Samples were then spun down and supernatants and pellets were separated and then processed for western blots using the salt elution protocol. For analysis of DNA content, the MNase-digested supernatants and pellets were analyzed after digestion and before commencement of salt elution. For the SAN digestion, the pellet was collected after the 500 mM NaCl elution for assessment of DNA content. DNA was run on an agarose gel, stained using SYBR-Safe reagent (Apex Bio), and visualized using a BioRad Chemidoc.
 
-## Experimental replicates and reproducibility
+### Experimental replicates and reproducibility
 
 All data presented in this paper are representative of 2–4 independent experiments with comparable results.

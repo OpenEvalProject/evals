@@ -27,6 +27,28 @@ The innate immune system uses a small number of multifunctional proteins to resp
 
 One such multifunctional protein is S100A9 (A9), a small, soluble protein found at high concentrations in the extracellular space during an inflammatory response (Berntzen and Fagerhol, 1990). It has at least two key immune functions. As a homodimer, A9 potently activates inflammation via Toll-like receptor 4 (TLR4) (Vogl et al., 2012; Källberg et al., 2012; Duan et al., 2018; Shepherd et al., 2006; Schiopu and Cotoi, 2013; Laouedj et al., 2017; He et al., 2016; Gao et al., 2015; Tsai et al., 2014; Lee et al., 2016; Björk et al., 2009; Kang et al., 2015; Stríz and Trebichavský, 2004). As a heterocomplex with S100A8 (A8/A9, also known as calprotectin), it is antimicrobial (Figure 1a; Besold et al., 2018a; Hadley et al., 2018; Damo et al., 2013; Clark et al., 2016; Besold et al., 2018b; Nakashige et al., 2016; Hayden et al., 2013; Nakashige et al., 2015; Liu et al., 2012; Brunjes Brophy et al., 2013; Brophy et al., 2012; Baker et al., 2017; Gagnon et al., 2015; Nisapakultorn et al., 2001). A9 exacerbates endotoxin-induced shock in mice (Vogl et al., 2007). Both A9 and A8/A9 are primary biomarkers for many human inflammatory diseases (Vogl et al., 2014; Hara et al., 2012; Obry et al., 2014; Horvath et al., 2016; Huang et al., 2015). Further, dysregulation of A9 is associated with various cancers, pulmonary disorders, and Alzheimer’s disease (Källberg et al., 2012; Vogl et al., 2014; Hara et al., 2012; Obry et al., 2014; Horvath et al., 2016; Huang et al., 2015; Kim et al., 2009; Averill et al., 2012). Understanding the mechanisms by which A9 performs its innate immune functions is critical for developing treatments for A9-mediated diseases.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-v2.jpg)
+
+**Figure 1.:** (a) Table of A9 and A8/A9 properties. ‘~” represents weak or ambiguously characterized function, check marks and red ‘X’ represent confirmed property (check) or lack thereof (‘x’). (b) Schematic of previously published S100 protein tree. Colored nodes represent single protein sequences. Species cartoons shown are human, opossum, and chicken. Ancestrally reconstructed protein nodes are labeled. Branch lengths not to scale. (c) Representative growth curves for Staphylococcus epidermidis in the presence or absence of 10 μM S100 proteins. Each point represents optical density at 600 nm. S. epidermidis growth alone and in the presence of modern proteins are shown as circles, growth in the presence of ancestrally reconstructed proteins shown as triangles. Error bars are standard deviation of three technical replicates. (d) Percent of untreated S. epidermidis growth at 12 hr with S100 protein treatments. Data are average of three biological replicates. Error bars are standard error of the mean. Species cartoon labels are the same as in (b).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Human (h), mouse (m), opossum (op), maximum likelihood therian mammalian ancestors (anc), and AltAll ancestors (altanc) shown. Alignment truncated to show conservation of key hexahistidine site metal- binding residues (boxed + arrows). A8s conserve two (positions 17 and 27 in human A8), while A9s conserve four (positions 91, 95, 103, and 105 of human A9). Consensus residues for alignment are highlighted.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Differential refractive index (left y-axis, lines) and calculated molecular weights from light scattering detectors (right y-axis, points) for modern S100 proteins used in this study. h = human, op = opossum, ch = chicken species. Opossum A8 + A9 sample is an equimolar mixture of opossum A8 and A9 homodimers. Table below shows summary data calculated using Wyatt Astra software.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative S. epidermidis growth curves in the presence of (a) human A9, (b) human A9 M63F, (c) human A8/A9, (d) human A8/A9 M63F, (e) opossum A8/A9 (cysteine-free), (f) opossum A8/A9 (containing cysteines), (g) ancA8/A9, and h) altancA8/A9. Error bars are the standard deviation for three technical replicates, points show one representative biological replicate for each protein at four different concentrations.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Data shown are the average of 3 scans. Solid lines are maximum likelihood ancestral proteins, dotted lines are alt-all ancestors (colored the same as matching maximum likelihood ancestor for comparison).
+
 The mechanism of A8/A9 antimicrobial activity is well established: it sequesters a variety of transition metals through both a hexahistidine site and a His3Asp site formed at the A8/A9 heterodimer interface, thereby limiting the concentrations of essential microbial nutrients in the extracellular space (Besold et al., 2018a; Hadley et al., 2018; Damo et al., 2013; Clark et al., 2016; Besold et al., 2018b; Nakashige et al., 2016; Hayden et al., 2013; Nakashige et al., 2015; Liu et al., 2012; Brunjes Brophy et al., 2013; Brophy et al., 2012; Baker et al., 2017; Gagnon et al., 2015; Nisapakultorn et al., 2001). Other S100 proteins exert weaker antimicrobial activity via the His3Asp site, which has lower metal-binding affinity and binds fewer types of transition metals than the A8/A9 hexahistidine site (Nakashige et al., 2016; Hayden et al., 2013; Nakashige et al., 2015; Liu et al., 2012; Brunjes Brophy et al., 2013; Bozzi and Nolan, 2020; Cunden and Nolan, 2018). In contrast, the proinflammatory mechanism of A9 is not well understood. A9 acts as a Damage-Associated Molecular Pattern (DAMP), activating NF-κB and other cytokines through Toll-like receptor 4 (TLR4) (Vogl et al., 2012; Källberg et al., 2012; Duan et al., 2018; Shepherd et al., 2006; Schiopu and Cotoi, 2013; Laouedj et al., 2017; He et al., 2016; Gao et al., 2015; Tsai et al., 2014; Lee et al., 2016; Björk et al., 2009; Kang et al., 2015; Chen et al., 2015). The interaction interface(s), affinity, and stoichiometry for the A9/TLR4 interaction are not known. A small region of A9 has been suggested to form part of the A9/TLR4 binding surface, (Vogl et al., 2018) but no mutant of A9 has been identified that substantially compromises its activation of TLR4.
 
 An additional layer of A9 immune function is that A9 and A8/A9 are thought to be regulated in the extracellular milieu by proteases. Neutrophils release multiple proteases along with A9 at sites of inflammation that regulate the inflammatory response (Henry et al., 2016; Stapels et al., 2015; Kessenbrock et al., 2011; Heutinck et al., 2010; Janoff, 1972; Jerke et al., 2015). A9 is very susceptible to proteolytic degradation, while A8/A9 is highly resistant (Figure 1a; Nacken and Kerkhoff, 2007; Riva et al., 2013). Proteolysis may serve to purge proinflammatory A9 from sites of inflammation and thus selectively enrich for antimicrobial A8/A9. There may even be a direct, functional link between A9 proteolytic degradation and inflammation. Proteolytic fragments of A9 are sufficient to activate TLR4, (Vogl et al., 2018) and proinflammatory stimuli are thought to stabilize A9 homodimers against proteolytic degradation (Riva et al., 2013). Directly testing the relationship between A9 proteolytic susceptibility and proinflammatory activity, however, has been challenging. There is no obvious way to selectively increase the proteolytic resistance of A9 and test its effect on A9 activation of TLR4, making it difficult to understand the relationship, if any, between these two functions.
@@ -37,7 +59,7 @@ We took an evolutionary biochemical approach to mechanistically dissect the evol
 
 We first set out to establish when A9 evolved three innate immune properties: antimicrobial activity via formation of the A8/A9 complex, proinflammatory activation of TLR4 by A9 alone, and the differential proteolytic susceptibility of A9 and A8/A9.
 
-## A9s evolved to form antimicrobial A8/A9 complexes early in mammals
+### A9s evolved to form antimicrobial A8/A9 complexes early in mammals
 
 We sought to determine when A9 evolved to form the antimicrobial A8/A9 complex. We hypothesized that A8/A9 antimicrobial activity evolved in the ancestor of therian mammals (the shared ancestor of marsupials and placental mammals) for several reasons. First, the broad-spectrum antimicrobial activity of human and mouse A8/A9 is well established (Hadley et al., 2018; Damo et al., 2013; Clark et al., 2016; Besold et al., 2018b; Nakashige et al., 2016; Hayden et al., 2013; Nakashige et al., 2015; Liu et al., 2012; Brunjes Brophy et al., 2013; Brophy et al., 2012; Baker et al., 2017; Gagnon et al., 2015; Nisapakultorn et al., 2001). Second, A9 and A8 genes are only found together in therian mammals (Figure 1b; Loes et al., 2018); therefore the A8/A9 complex could not have arisen earlier than in the ancestor of therian mammals. Lastly, the residues composing the antimicrobial hexahistidine metal-binding site are fully conserved across therian mammals (Figure 1—figure supplement 1).
 
@@ -51,9 +73,25 @@ We then measured the antimicrobial activity of ancA8/A9 against S. epidermidis. 
 
 Taken together, the antimicrobial activity of modern mammalian A8/A9 complexes (human, mouse, and opossum) and the antimicrobial activity of the reconstructed ancA8/A9 complex suggest that A9s evolved to form the antimicrobial A8/A9 complex in the ancestor of mammals.
 
-## A9s evolved potent proinflammatory activity from a weakly active amniote ancestor
+### A9s evolved potent proinflammatory activity from a weakly active amniote ancestor
 
 We next sought to determine when A9s evolved potent proinflammatory activity via activation of TLR4. Our previous work revealed that human A9 potently activates not only human TLR4 in functional assays, but also opossum and chicken TLR4 (Figure 2a; Loes et al., 2018). In contrast, chicken MRP126, the sauropsid ortholog of A9s, was found to be a weak activator of all TLR4s, including chicken TLR4. Both human and opossum A9 activate chicken TLR4 better than chicken MRP126 does. Two possibilities are consistent with these observations. Either mammalian A9s evolved enhanced proinflammatory activity from a less active amniote ancestral state, or A9s maintained a potent ancestral activity that was lost by chicken MRP126.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic of previously measured proinflammatory activity of S100s against various TLR4s. Species labels on x and y-axes of heatmap are the same as Figure 1. Heatmap coloring is scaled to match 2 μM S100 activity levels measured in supplementary figure S2 of Loes et al. (2018). (b) and (c) NF-κB production of human and opossum TLR4 in response to treatment with modern and ancestral S100 proteins. Bars represent average of >3 biological replicates, error bars are standard error of the mean. All values are background-subtracted and normalized to LPS positive control (see methods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Top panel: Activity of LPS (0.2 ng/µl) against human (left) and opossum TLR4 (right) is inhibited by the addition of Polymyxin B (PB, 0.2 µg/µl). Middle and bottom panels: S100 activation of human (middle) and opossum (bottom) TLR4 with no PB, 0.2 µg/µl PB (+) and 0.25 µg/µl PB (++). No-PB data were not collected for hA9, opA9, and opA9 M60F against opossum TLR4 (bottom panel). Data were background-subtracted using the LPS + PB control and normalized to LPS activity against either human or opossum TLR4. Error bars are standard deviation.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Points are the average of >3 biological replicates each consisting of 3 technical triplicates, error bars are standard error of the mean. An asterisk (*) indicates a concentration at which a single biological replicate was measured. Data were background-subtracted using the LPS + PB control and normalized to LPS activity against human TLR4.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Points are the average of >3 biological replicates each consisting of 3 technical triplicates, error bars are standard error of the mean. An asterisk (*) indicates a concentration at which a single biological replicate was measured. Data were background-subtracted using the LPS + PB control and normalized to LPS activity against opossum TLR4.
 
 To differentiate between these two possibilities, we determined the ancestral proinflammatory activity of these proteins. We used ASR to reconstruct the shared amniote ancestor of A9s, A8s, A12s, and MRP126s. This group of proteins is known collectively as the ‘calgranulins’, so we will refer to this ancestral protein as ancCG (ancestor of calgranulins). We also constructed an alternate, ‘alt All’ version of this ancestor (altancCG, supplementary file 1), which differed from ancCG by eight amino acids. The average posterior probability of ancCG was 0.86 (Figure 1—figure supplement 4). We also expressed and purified ancA9 and altancA9 – the A9 subunits from the ancestral A8/A9 complexes described above. We confirmed that each protein was folded and had secondary structure content similar to that of modern S100s using far-UV CD spectroscopy (Figure 1—figure supplement 5).
 
@@ -63,9 +101,29 @@ We predicted that opossum TLR4 would be a better protein to probe ancestral S100
 
 These findings suggest that A9s evolved enhanced proinflammatory activity early in mammals from a weakly proinflammatory amniote ancestor, while A8/A9s and chicken MRP126 maintained weak, ancestral proinflammatory activity.
 
-## A9s evolved proteolytic susceptibility from a proteolytically resistant amniote ancestor
+### A9s evolved proteolytic susceptibility from a proteolytically resistant amniote ancestor
 
 We next sought to determine when the differential proteolytic susceptibility of A9 and A8/A9 evolved. We used a simple in vitro assay to monitor S100 protein degradation over time in the presence of proteinase K, a potent non-specific serine protease (Figure 3a). Proteinase K was chosen both because of its low specificity and to mimic other serine proteases that A9 and A8/A9 encounter when released from neutrophils during an inflammatory response (Henry et al., 2016; Stapels et al., 2015; Kessenbrock et al., 2011; Heutinck et al., 2010; Fu et al., 2018). Proteolytic decay rates were estimated by fitting a single exponential decay function to the data (Figure 3b, Figure 3—figure supplements 1–4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig3-v2.jpg)
+
+**Figure 3.:** (a) In vitro proteolytic resistance assay showing SDS-PAGE gel of S100 protein degradation via proteinase K over time. Gels were quantified using densitometry and normalized to the undigested protein band intensity. (b) A single exponential decay model was globally fit to the data to quantify decay rates. Points are biological replicates, lines are model fit to data. (c) S100 protein proteolysis rates mapped onto schematized S100 phylogeny. X-axis cartoon labels same as in Figure 1. Circles indicate proteolytic susceptibility (faded/dashed) and resistance (solid), with predicted resistance shown for ancA8, ancA9, and ancCG nodes. (d) Decay rates for ancestrally reconstructed proteins, with gels shown on the right. For panels (c) and (d), error bars are the square root of the diagonalized covariance matrix from the fit and the y-axis is in log scale. (e) Summary model for proposed evolution of A9 and A8/A9 innate immune properties. Box around A8/A9 and A9 indicate location in tree (ancestor of therian mammals) where immune functions evolved.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Blue dots are biological replicates, orange line is a single exponential decay fit (see methods). Protein is listed at the top. Pixel intensity was quantified by densitometry from SDS-PAGE gels.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Blue dots are biological replicates, orange line is a single exponential decay fit (see methods). Protein is listed at the top. Pixel intensity was quantified by densitometry from SDS-PAGE gels. Longer time points were collected for proteins with slower degradation rates (see x-axis).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Blue dots are biological replicates, orange line is a single exponential decay fit (see methods). Protein is listed at the top. Pixel intensity was quantified by densitometry from SDS-PAGE gels. Longer time points were collected for proteins with slower degradation rates (see x-axis).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Blue dots are biological replicates, orange line is a single exponential decay fit (see methods). Protein is listed at the top. Pixel intensity was quantified by densitometry from SDS-PAGE gels. Longer time points were collected for proteins with slower degradation rates (see x-axis).
 
 Human A8/A9 has been described as extremely resistant to proteases (Nacken and Kerkhoff, 2007); however, it has not been compared to S100 proteins besides human A8 and A9. To establish a baseline expectation for S100 protein proteolytic resistance, we characterized the proteolytic resistance of a broad set of human S100s against proteinase K. As previously shown, (Nacken and Kerkhoff, 2007) human A9 and A8 alone were rapidly proteolytically degraded, while the human A8/A9 complex exhibited strong resistance (Figure 3c, Figure 3—figure supplements 1–2). Under our conditions, the degradation rates for human A8 and A9 were approximately three orders of magnitude faster than that of the human A8/A9 heterocomplex. We then characterized closely related protein human S100A12 (A12), the chicken ortholog MRP126, and six distantly related human S100s (Wheeler et al., 2016). Human A12, chicken MRP126, and five out of six more distantly related human S100s exhibited intermediate to strong proteolytic resistance, each degrading 1–2 orders of magnitude slower than human A8 or A9 but, on average, one order of magnitude faster than human A8/A9 (Figure 3c, Figure 3—figure supplements 1–2). Notably, human A12 and chicken MRP126 formed predominantly homodimers by SEC MALS under these conditions (Figure 1—figure supplement 2), indicating that higher-order oligomerization (>2 subunits) isn’t required for S100 proteolytic resistance. Lastly, human A14 degraded faster than A9 or A8. This protein is evolutionarily distant (Wheeler et al., 2016) and therefore likely reflects independent evolution of this property. Taken together, these data show that the A8/A9 complex, A9, and A8 indeed fall at the extremes of human S100 proteolytic resistance; human A9 and A8 are among the fastest-degrading S100s tested, while human A8/A9 is one of the slowest.
 
@@ -77,7 +135,7 @@ To distinguish between these possibilities, we characterized ancestrally reconst
 
 Finally, we sought to better resolve when A9s acquired proteolytic susceptibility. We hypothesized that this occurred in the ancestor of mammalian A9s before the divergence of therian mammals and marsupials. To test this hypothesis, we measured the proteolytic susceptibility of therian mammalian ancA9 and found that it degraded rapidly (Figure 3). However, its alternative reconstruction (altancA9), was slow to degrade, with a rate two orders of magnitude slower than ancA9 and comparable to other highly resistant S100s. Because the descendants of ancA9 all exhibit proteolytic susceptibility (Figure 3), the simplest explanation is that altancA9 is a low-quality reconstruction that does not capture the properties of the historical protein. Alternatively, proteolytic susceptibility could have been independently acquired along marsupial and placental mammal lineages.
 
-## A single substitution had pleiotropic effects on A9 proinflammatory activity and proteolytic resistance
+### A single substitution had pleiotropic effects on A9 proinflammatory activity and proteolytic resistance
 
 We found above that A9 evolved to form the antimicrobial A8/A9 complex, gained potent proinflammatory activity, and lost proteolytic resistance over the narrow evolutionary interval after the divergence of mammals and sauropsids but before the divergence of placental mammals and marsupials. We next sought to determine how A9 evolved its antimicrobial and proinflammatory activities and lost proteolytic resistance.
 
@@ -85,23 +143,47 @@ The mechanism by which A9 evolved to form the antimicrobial A8/A9 complex is str
 
 The mechanisms by which A9s gained proinflammatory activity and lost proteolytic resistance are less obvious, particularly because the mechanism by which A9 activates TLR4 is not well understood. We reasoned that we could identify functionally important amino acid substitutions by focusing on the evolutionary interval over which these properties evolved. We therefore compared the sequences of ancCG (weakly proinflammatory and resistant to proteolytic degradation) and ancA9 (potently proinflammatory and susceptible to proteolytic degradation). We further narrowed down sequence changes of interest by looking for residues conserved in modern A9s (Figure 4—figure supplement 1). Finally, we focused on amino acid changes in helix III of A9, as this region is thought to be important for A9 activation of TLR4 based on in vitro binding studies and in silico docking studies (Vogl et al., 2018). Only one historical amino acid substitution met all three criteria: position 63 (human A9 numbering). This residue is a phenylalanine in both ancCG and altancCG, is conserved as a phenylalanine in 95% of modern A8s and A12s and has been substituted for a methionine or leucine (M/L) in 97% of A9s (Figure 4a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic S100 phylogenetic tree with the amino acid state of position 63 shown at key nodes. Wedges represent clades, colored as in Figure 1. Lines indicate proteolytic susceptibility (faded/dashed) and resistance (solid). Circles indicate characterized ancestors. Amino acid labels represent maximum likelihood state/alternate amino acid state for position 63 at ancestral nodes, while labels at clade tips represent percent conservation across modern S100 protein sequences. (b–c) NF-κB production of S100 point mutants at position 63 against human (b) and opossum (c) TLR4. (d) Proteolysis rates for S100 point mutants at position 63 (human A9 numbering). Error bars and y-axis are the same as in Figure 1. (e) Antimicrobial activity of hA9 and hA8/A9 with and without M63F mutation against S. epidermidis. Axes and error bars same as in Figure 1d.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** S100 protein sequences are grouped into proteolytically susceptible (top) or resistant and potently proinflammatory (red text) or not (black text). Only the first 90 residues out of 114 total were examined as the disordered A9 tail (residues ~ 93–114) are highly variable and the tail is dispensable for A9 proinflammatory activity. Residues are colored when found to be the consensus residue for a column.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Blue dots are biological replicates, orange line is a single exponential decay fit (see methods). Protein is listed at the top of each graph. Pixel intensity was quantified by densitometry from SDS-PAGE gels. Longer time points were collected for proteins with slower degradation rates (see x-axis). Representative SDS-PAGE gels are shown for 0–120 min digestion with each protease.
+
 We hypothesized that reverting this site to its amniote ancestral state—M63F—might affect A9 proinflammatory activity. We mutated this position to a phenylalanine in human A9 and opossum A9 and tested each protein for TLR4 activation. Strikingly, we found that introducing M63F into human A9 severely compromised its ability to activate human TLR4 (Figure 4b, Figure 2—figure supplement 2). This was also true for opossum A9: introduction of M63F (human numbering) strongly decreased opossum A9 activation of opossum TLR4 (Figure 4c, Figure 2—figure supplement 3). We next introduced the forward substitution, F63M, into ancCG and tested its proinflammatory activity against opossum TLR4. We observed a modest increase in ancCG activity with the F63M substitution, with activity comparable to that of opossum A9 (Figure 4c, Figure 2—figure supplement 3).
 
 For most proteins we studied, the amino acid at position 63 did indeed play an important role in determining the pro-inflammatory activity of A9. The effects of toggling position 63 between Met and Phe were not, however, universal. We introduced M63F into ancA9 and observed no change in proinflammatory activity (Figure 4c, Figure 2—figure supplement 3). Further, altancA9 has a Phe at position 63 but activates TLR4 in the assay (Figure 2c, Figure 2—figure supplement 3). Thus, while position 63 is an important contributor to activity in modern A9s, other substitutions were also important for the transition from a weakly pro-inflammatory ancestor to the modern set of potently pro-inflammatory A9s.
 
 Because A9s lost proteolytic resistance and gained proinflammatory activity over the same evolutionary time interval, we reasoned that the F63M substitution might have also played a role in A9 loss of proteolytic resistance. To test this, we characterized the proteolytic resistance of human A9 M63F and ancA9 M63F. Strikingly, reversion of this single mutation rendered both ancA9 and human A9 strongly resistant to proteolytic degradation, decreasing their respective degradation rates by 1–2 orders of magnitude and approaching the degradation rates of ancCG and various A8/A9 complexes (Figure 4d, Figure 3—figure supplement 4). To relate these findings to proteases that A9 might encounter at sites of inflammation, we also measured the proteolytic resistance of human A9 and human A9 M63F against two neutrophil-specific proteases – cathepsin G and neutrophil elastase (Figure 4—figure supplement 2). Neutrophils release these proteases along with A9 at sites of inflammation, often through Neutrophil Extracellular Traps (NETs) (Henry et al., 2016; Stapels et al., 2015; Kessenbrock et al., 2011; Heutinck et al., 2010; Janoff, 1972; Jerke et al., 2015; O'Donoghue et al., 2013). We found that M63F decreased the rate of human A9 degradation in the presence of cathepsin G and neutrophil elastase in vitro by approximately one order of magnitude, matching our results using proteinase K (Figure 4—figure supplement 2). Lastly, we tested the effect of the forward mutation – F63M – on ancCG proteolytic resistance. We observed no change in resistance for ancCG F63M, indicating that additional substitutions were required to render ancA9 proteolytically susceptible. Together these data show that a single historical reversion is sufficient to render A9s proteolytically resistant, indicating that this position played a role in the loss of A9 proteolytic resistance early in therian mammals.
 
-## The pleiotropic substitution minimally affects the A8/A9 complex
+### The pleiotropic substitution minimally affects the A8/A9 complex
 
 A primary goal of this study was to understand the role of pleiotropy in the evolution of multifunctionality. M63F clearly has pleiotropic effects on A9, altering both its proinflammatory activity and proteolytic resistance (Figure 4b–d). We next asked whether introducing M63F would pleiotropically affect the antimicrobial A8/A9 complex. Position 63 is somewhat distant from the A8/A9 interface and the antimicrobial hexahistidine site (~10 Å in the manganese-bound A8/A9 crystal structure) (Damo et al., 2013); we therefore hypothesized that M63F should not affect A8/A9 complex formation or function. To test this hypothesis, we introduced M63F into human A8/A9 and tested it for oligomeric state, proteolytic resistance, and antimicrobial activity against S. epidermidis. As predicted, human A8/A9 M63F predominantly formed a heterotetramer in the presence of calcium by SECMALS with a molecular weight similar to that of wildtype human A8/A9 (48.7 ± 4.2 kDa – Figure 1—figure supplement 2). We found that human A8/A9 M63F was also strongly resistant to proteolytic degradation, similar to human A8/A9 (Figure 4d). Lastly, M63F had minimal impact on human A8/A9 antimicrobial activity against S. epidermidis, retaining potent antimicrobial activity (Figure 4e). In contrast, neither human A9 nor human A9 M63F were antimicrobial against S. epidermidis (Figure 4e). These findings suggest that this single amino acid position had important effects on the evolution of A9 activation of TLR4 and loss of proteolytic resistance without significantly impacting A8/A9 oligomeric state, proteolytic resistance, or antimicrobial activity.
 
-## M63F increases protein thermodynamic stability and decreases unfolding rate of human A9
+### M63F increases protein thermodynamic stability and decreases unfolding rate of human A9
 
 We next asked what effect M63F has on the biophysical properties of human A9. Residue 63 sits in the middle of helix III of A9, pointing inward toward helix II, and is neither a core residue nor fully surface-exposed (Figure 5a; Itou et al., 2002). Based on the published structure of human A9, (Itou et al., 2002) a Phe at position 63 could be plausibly tolerated without a steric clash. Using circular dichroism (CD) spectroscopy, we found that the bulk secondary structure content of human A9 M63F was similar to that of hA9 (Figure 5b). We measured the oligomeric state of human A9 M63F by SEC MALS and found that it predominantly forms a homodimer in solution similarly to human A9, with no detectable monomers or larger oligomers (Figure 5c and f). These data together indicate that M63F does not significantly alter human A9’s secondary structure or oligomeric state.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig5-v2.jpg)
+
+**Figure 5.:** (a) Crystal structure of hA9 (PDB entry 1irj) (Itou et al., 2002). Cartoon depiction left, surface view right. Calcium ions are blue spheres. M63 is highlighted in red – two total for homodimeric A9. (b) Far-UV circular dichroism (CD) spectroscopy scans of hA9 and hA9 M63F. Data represent average of 3 scans. (c) SEC MALS analysis of hA9 and hA9 M63F oligomeric state. Solid lines are refractive index (left y-axis), points and molecular weights in table below represent molar mass calculated from light scattering detectors using ASTRA software (right y-axis - see methods). (d) Equilibrium chemical denaturation (urea) of 5 µM hA9 and hA9 M63F monitored by CD at 222 nm. Solid lines represent two-state unfolding model fit to data. (e) Kinetics of hA9 and hA9 M63F unfolding via chemical denaturation (guanidinium hydrochloride). Graph depicts one representative unfolding experiment. (f) Thermodynamic parameters estimated from (d) and molecular weights estimated from (c). Errors are standard deviations calculated from fit (see methods).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Chemical denaturation experiments using urea (left) and guanidinium hydrochloride (right). Graphs represent >3 replicates. Human A9 is shown in purple, A9 M63F in red. An apparent two-state unfolding model was fit to the data to estimate thermodynamic parameters, shown as a solid line.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Time course measurement of hA9 (top) and hA9 M63F (bottom) unfolding upon addition of 6M gdn-HCl. Each curve is a single replicate at one concentration, monitoring CD signal at 222 nm (y-axis).
+
 We then examined whether M63F alters the stability of human A9. We measured equilibrium unfolding curves for human A9 and human A9 M63F using CD spectroscopy and chemical denaturation via urea. We found that M63F appears to stabilize human A9, increasing the apparent free energy of unfolding by more than four kcal/mol and shifting the Cm by ~2M urea (Figure 5d and f, Figure 5—figure supplement 1). We also measured the unfolding kinetics of human A9 and human A9 M63F in the presence of calcium by spiking protein directly into 6M guanidinium hydrochloride (gdn-HCl) denaturant and monitoring its unfolding rate by CD spectroscopy. Strikingly, human A9 M63F takes several minutes to unfold under these conditions, while human A9 unfolds immediately within the dead time of the experiment (Figure 5e–f, Figure 5—figure supplement 2). We note that the folding pathway for A9 is complex and almost certainly not two-state—calcium binding, monomer folding, and dimerization all contribute—and thus we cannot reliably determine how M63F affects the stability of each of these potential folding intermediates. The large increase in apparent stability and unfolding rate suggests, however, that the mutation stabilizes some aspect of the folded structure.
 
-## Proteolysis is not required for A9 activation of TLR4
+### Proteolysis is not required for A9 activation of TLR4
 
 The work above identified a mutation that, when introduced into human A9, increases the stability of the protein while also potently compromising its ability to activate TLR4. The mutation is not at a surface position and is therefore not likely a direct participant in the A9/TLR4 protein/protein interface. Further, the same mutation dramatically decreases the proteolytic susceptibility of the protein. One simple way to explain these observations would be if the proteolytic susceptibility itself was the feature that evolved to allow activation of TLR4. This would be consistent with a previous observation that proteolytic products of A9 activate TLR4 (Vogl et al., 2018).
 
@@ -109,7 +191,7 @@ To test whether proteolysis itself was sufficient for activity, we engineered an
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54100/elife-54100-fig6-v2.jpg)
 
-**Figure 6.:** (a) Proteolytic decay rates for human point mutants at position 63. Error bars and axes are the same as in Figure 3. (b) NF-κB production of human TLR4 in response to treatment with hA9, hA9 M63F, and hA9 M63A. Error bars the same as in Figure 2. (c) Western blot of hA9 and position 63 point mutants before and after proinflammatory activity assay. Left bands represent 10 and 15 kDa ladder. (d) NF-κB production of human TLR4 in response to hA9 and hA9 M63F pre-proteolyzed with proteinase K for increasing amounts of time. Points are biological replicates and are the average of three technical replicates. Western blots below depict the amount of full-length A9 remaining over time. Left blot shows antibody sensitivity to A9, right shows digestion time course samples. Ladder and antibody same as in (c).Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (a) Proteolytic decay rates for human point mutants at position 63. Error bars and axes are the same as in Figure 3. (b) NF-κB production of human TLR4 in response to treatment with hA9, hA9 M63F, and hA9 M63A. Error bars the same as in Figure 2. (c) Western blot of hA9 and position 63 point mutants before and after proinflammatory activity assay. Left bands represent 10 and 15 kDa ladder. (d) NF-κB production of human TLR4 in response to hA9 and hA9 M63F pre-proteolyzed with proteinase K for increasing amounts of time. Points are biological replicates and are the average of three technical replicates. Western blots below depict the amount of full-length A9 remaining over time. Left blot shows antibody sensitivity to A9, right shows digestion time course samples. Ladder and antibody same as in (c).
 
 Although proteolysis does not appear to be a requirement for TLR4 activation, this does not rule out that proteolysis could increase A9 proinflammatory activity by releasing proinflammatory fragments of A9. To test for this possibility, we treated human A9 with agarose-immobilized proteinase K for increasing amounts of time, removed the protease, and then measured the proinflammatory activity of A9 degradation products (Figure 6d). If proteolytic products of A9 are the most proinflammatory form of the protein, we might expect to observe a spike in TLR4 activation upon A9 digestion. Instead, we observed a steady decrease in human A9 activity with increasing digestion time. This suggests that full-length human A9 is the most potent activator of TLR4.
 
@@ -119,21 +201,21 @@ We did observe moderate activity for proteolytic products of human A9, as previo
 
 The work presented here provides insight into how the multifunctional protein A9 evolved critical innate immune functions. We find that mammalian A9s gained enhanced proinflammatory activity and lost proteolytic resistance from a weakly proinflammatory, proteolytically resistant amniote ancestor. A single substitution played a key role in the evolution of these properties without significantly affecting the antimicrobial activity of the A8/A9 heterocomplex. This work contributes to our mechanistic understanding of how A9 activates TLR4 to drive inflammation and clarifies the role of proteolysis in A9 innate immune function.
 
-## Innate immune functions of A9 continued to evolve within the mammals
+### Innate immune functions of A9 continued to evolve within the mammals
 
 Our data suggest that the proinflammatory and antimicrobial activities of A9 and the A8/A9 complex have undergone further optimization in placental mammals since these functions evolved. While the histidines composing the high-affinity metal-binding site of A8/A9 complexes are conserved, we observed differences in antimicrobial potency for different A8/A9 complexes. In particular, human A8/A9 is one of the most potently antimicrobial A8/A9 complexes characterized. This suggests that further optimization of the metal-binding site has occurred in along the human lineage within mammals. We also observed differences in activation of TLR4 by different A9s—human A9 is a potent, promiscuous activator of TLR4s from multiple species, while earlier-diverging A9s and other S100s exhibit weaker proinflammatory activity (Loes et al., 2018). Future studies are necessary to understand how, mechanistically, later-diverging A9s and A8/A9 complexes have optimized these critical innate immune functions.
 
-## Why did A9s lose proteolytic resistance?
+### Why did A9s lose proteolytic resistance?
 
 While proteolysis is not required for A9 activation of TLR4, it remains unclear why A9s lost proteolytic resistance. We suggest three possibilities. The first is that loss of proteolytic resistance in A9s was simply a byproduct of evolving proinflammatory activity. No A9 characterized in this study, with the exception of the alternate reconstruction of ancA9, is both proteolytically resistant and potently proinflammatory. This indicates that the molecular requirements for A9 proteolytic resistance may be incompatible with those required for A9 activation of TLR4: A9s may have gained proinflammatory activity at the expense of proteolytic resistance. A second possibility is that A9 proteolytic susceptibility is being maintained to actively remove proinflammatory A9 from the cell and retain the antimicrobial A8/A9 complex. The last possibility for A9 loss of proteolytic resistance is adaptive constraint. There could be selection for some property of A9 or A8/A9 that we did not measure that is incompatible with A9 proteolytic resistance.
 
 While we cannot explicitly distinguish between each of these possibilities, the end result is that A9s lost proteolytic resistance from a resistant ancestor. As A9s activate TLR4 in the protease-rich extracellular space, the functional result of A9 loss of proteolytic resistance is that A9s evolved a proteolytic ‘timer’ concomitantly with evolving proinflammatory activity, all without affecting A8/A9 function.
 
-## Novel mechanistic insight into A9 activation of TLR4
+### Novel mechanistic insight into A9 activation of TLR4
 
 Our findings suggest new directions for understanding how A9 potently activates TLR4. TLR4-driven inflammation has been the focus of intense study for over 20 years, (Källberg et al., 2012; Laouedj et al., 2017; He et al., 2016; Gao et al., 2015; Lee et al., 2016; Anderson et al., 2019; Ibrahim et al., 2013; Nagai et al., 2002; Poltorak et al., 1998; Prince et al., 2011) and the structural basis of TLR4 activation by exogenous agonists, such as the bacterial cell wall component lipopolysaccharide (LPS), is well understood (Park et al., 2009). In contrast, little is known about how A9 activates TLR4. We have shown here that proteolytic degradation appears dispensable for activation; however, smaller fragments of the protein are sufficient activate TLR4 (Figure 6). Given the effect of mutating position 63 on A9 proinflammatory activity, we propose that the region surrounding it—helix III—is important for activity. This is independently supported by Vogl et al., who identified four pairs of double mutants within helix III (amino acids 64, 65, 73, and 77) that, when mutated to alanines in pairs, decrease A9 binding to TLR4 in vitro (Vogl et al., 2018). Biophysical characterization of hA9 M63F (Figure 5) indicates that it is more stable and unfolds more slowly, yet it maintains its bulk secondary structure and oligomeric state. The simplest explanation for these data is that M63F is affecting some functionally important dynamic process of the protein, possibly mediated by helix III, that is critical for A9 activation of TLR4. The proteolytic susceptibility of A9s also supports this hypothesis, as proteolysis is a dynamic process that often relies on substrate flexibility and local unfolding events to proceed (Guharoy et al., 2016; Fontana et al., 1997; Hubbard, 1998; Ottesen, 1967; Imoto et al., 1986). Damage-Associated Molecular Patterns (DAMPs) often interact with their targets via hydrophobic surfaces (Garg et al., 2010; Rubartelli and Lotze, 2007; Bianchi, 2007); one possibility is that A9 undergoes a local unfolding event that exposes a hydrophobic surface to interact with TLR4. This would mean that studies of the native structure of A9 might not be sufficient to gain mechanistic understanding of how it activates TLR4. Further work is required to understand the nature of the active functional state of A9.
 
-## Pleiotropic mutations can facilitate the evolution of multifunctionality
+### Pleiotropic mutations can facilitate the evolution of multifunctionality
 
 Finally, our results suggest a positive role for pleiotropy in the evolution of protein function. Pleiotropy is often viewed as a constraint on evolution: as functional complexity is added to a polypeptide sequence, it becomes increasingly challenging to introduce substitutions—and new functions—without perturbing existing ones (Lee et al., 2018; Stearns, 2010; Paaby and Rockman, 2013; He and Zhang, 2006; Pavličev and Cheverud, 2015; Hirano, 1999). Here, however, we find a single mutation that had beneficial pleiotropic effects on two important properties of A9: proinflammatory activity and proteolytic susceptibility. If A9 evolved potent proinflammatory activity without gaining susceptibility, it could potentially overstimulate inflammation simply by lingering in the extracellular milieu. Since both properties evolved at once, however, mammals evolved a proinflammatory molecule with a built-in ‘timer’: they gained a new inflammatory signal while avoiding potentially deleterious effects. This shows how pleiotropy can positively contribute to the evolution of new functions.
 
@@ -143,17 +225,209 @@ These findings reveal the diversity of pleiotropic roles that a single mutation 
 
 ## Materials and methods
 
-## Phylogenetics and ancestral sequence reconstruction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PAML4</td>
+      <td>Yang, 2007</td>
+      <td></td>
+      <td>For ancestral sequence reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PhyML</td>
+      <td>Guindon et al., 2010</td>
+      <td></td>
+      <td>Published tree details in Loes et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETDuet-1 (plasmid)</td>
+      <td>Millipore</td>
+      <td>71146–3</td>
+      <td>For S100 protein recombinant expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET His6 MBP TEV LIC (plasmid)</td>
+      <td>Addgene</td>
+      <td>29656</td>
+      <td>For S100 protein recombinant expression</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL10-Gold Ultracompetent Cells</td>
+      <td>Agilent Technologies</td>
+      <td>200315</td>
+      <td>For plasmid storage/propagation</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta(DE3)pLysS Competent Cells</td>
+      <td>Millipore</td>
+      <td>70956–3</td>
+      <td>For recombinant protein expression</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QuickChange Lightning Kit</td>
+      <td>Agilent Technologies</td>
+      <td>210519</td>
+      <td>For mutagenesis</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Proteinase K from Tritirachium album</td>
+      <td>Sigma Aldrich</td>
+      <td>P2308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cathepsin G from human neutrophils</td>
+      <td>Athens research</td>
+      <td>16-14-030107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Neutrophil elastase from human neutrophils</td>
+      <td>Millipore Sigma</td>
+      <td>324681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gelquant</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Python-based scripts for gel densitometry analysis</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T/17</td>
+      <td>ATCC CRL-11268</td>
+      <td></td>
+      <td>For transient transfections</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Human TLR4</td>
+      <td>Addgene</td>
+      <td>#13086</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Human CD14</td>
+      <td>Addgene</td>
+      <td>#13654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>ELAM-Luc</td>
+      <td>Addgene</td>
+      <td>#13029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Human MD2</td>
+      <td>DNASU repository</td>
+      <td>HsCD00439889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Opossum TLR4</td>
+      <td>Genscript</td>
+      <td>Loes et al., 2018 (UniProt #F6Y6W8)</td>
+      <td>In pcDNA3.1(+) backbone</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Opossum MD2</td>
+      <td>Genscript</td>
+      <td>Loes et al., 2018 (UniProt #F6QBE6)</td>
+      <td>In pcDNA3.1(+) backbone</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Opossum CD14</td>
+      <td>Genscript</td>
+      <td>Loes et al., 2018 (NCB Accession #XP_007473804.1)</td>
+      <td>In pcDNA3.1(+) backbone</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Escherichia coli)</td>
+      <td>K-12 LPS</td>
+      <td>Invivogen</td>
+      <td>tlrl-eklps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dual-Glo luciferase assay system</td>
+      <td>Promega</td>
+      <td>E2940</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polymyxin B</td>
+      <td>Sigma Aldrich</td>
+      <td>P4932-1MU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Agarose-immobilized proteinase K</td>
+      <td>Sigma Aldrich</td>
+      <td>P9290-10UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody (mouse monoclonal)</td>
+      <td>Anti-S100A9 M13 Clone 1CD22 (monoclonal)</td>
+      <td>Abnova</td>
+      <td>H00006280-M13</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody (goat polyclonal)</td>
+      <td>IRDye Goat anti-mouse 800CW IgG (H+L)</td>
+      <td>Licor</td>
+      <td>926–32210</td>
+      <td>WB 1:10,000</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetics and ancestral sequence reconstruction
 
 We reconstructed ancestral sequences using a previously published a phylogenetic tree of S100 proteins containing 172 sequences from 30 amniote taxa (Supplementary files 1–2; Loes et al., 2018). We used PAML4 to generate maximum likelihood ancestors (marginal probability method) (Yang et al., 1995; Yang, 2007) using the previously-identified maximum likelihood (ML) substitution model (LG+Γ8) (Jones et al., 1992) on the ML tree. To account for reconstruction uncertainty, we also generated ‘altAll’ versions of each ancestor (Eick et al., 2016). We took every site in which the alternate reconstruction had a posterior probability >0.20 and substituted that amino acid into the maximum-likelihood ancestor. These alternate reconstructions had an average of 12 sequence differences relative to the maximum-likelihood ancestors (Figure 1—figure supplement 4). They represent a ‘worst case’ reconstruction relative to our best, maximum likelihood reconstruction.
 
 We also investigated the effect of topological uncertainty on our reconstructed ancestors. In the published phylogenetic analysis, A8s, A9s, A12s, and MRP126s all formed distinct and well-supported clades; however, the branching pattern between these four clades could not be resolved with high confidence (Loes et al., 2018). To explore how this uncertainty altered our reconstructed ancestral proteins, we constructed all 15 possible topologies for the A8, A9, A12, and MRP126 clades—i.e ((A8,A9),(A12,MRP126)), ((A8,A12),(MRP126,A9)), etc.—while maintaining species-corrected, within-clade topologies. We then optimized the tree branch lengths and substitution rates for each tree using PhyML (Guindon et al., 2010). Finally, we used PAML to reconstruct ancA9, ancCG, and ancA8 for all 15 possible arrangements of the MRP126, A12, A8, and A9 clades. The average number of sequence differences for ancestors reconstructed using different topologies was less than or equal to the number of sequence differences between the ML and altAll reconstructions (Figure 1—figure supplement 4). Further, the sites that differed were a subset of those that differed between the ML and altAll reconstructions. Thus, the altAll reconstructions account for sequence changes due to both uncertainty given the ML tree and uncertainty due to topological uncertainty.
 
-## Cloning and mutagenesis
+### Cloning and mutagenesis
 
 All S100 genes in this study were purchased as synthetic constructs in pUC57 vectors from Genscript. S100 genes (A8s, A9s, A12s, MRP126s, and ancestrally reconstructed genes) were sub-cloned into a pETDuet-1 (pD) vector (Millipore). A8s, A12s, MRP126s, and ancCGs were cloned into multiple cloning site #1 (MCS1) of the pD vector, while A9s were cloned into MCS2. For expression and purification of A8/A9 heterocomplexes (A8/A9s), pD plasmids containing an A8 gene in MCS1 and an A9 gene in MCS2 were used as previously described (Futami et al., 2016). Opossum A8 was sub-cloned into an MBP-LIC vector to yield a His-MBP-TEV-opA8 construct. For opossum A8/A9, the entire His-MBP-TEV-A8 construct was then sub-cloned into MCS1 of a pD vector containing a marsupial A9 in MCS2. Other S100s (A1, A5, A7, A11, A14, and P) were previously cloned into a pET28/30 vector to yield a TEV-cleavable N-terminal His tag (Wheeler et al., 2016). Cysteine-free versions of all S100 genes, as well as point mutants, were prepared using site-directed mutagenesis (Agilent).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Recombinant protein overexpression was conducted in E. coli BL21 (DE3) pLysS Rosetta cells. Cultures were innoculated in luria broth overnight at 37°C, shaking at 250 rpm, in the presence of ampicillin and chloramphenicol. The following day, 10 ml of saturated culture was diluted into 1.5 L of media with antibiotics, grown to OD600 = 0.6–1, and then induced overnight at 16°C using 1 mM IPTG. Cells were pelleted at 3,000 rpm for 20 min and stored at −20°C for no more than three months.
 
@@ -161,21 +435,27 @@ Lysates were prepared by vortexing pellets (3–5 g) in tris buffer (25 mM tris,
 
 Opossum A8 and A8/A9 lysates were prepared as above and then flowed over a nickel column, eluting over a 50 ml gradient from 25 to 1000 mM imidazole in tris buffer. Peak elution was pooled and the MBP tag was cleaved by incubation with ~1:5 TEV protease at 4°C overnight in 4 L of tris buffer. The MBP tag was then removed by flowing the sample over an MBPTrap column, step-eluting with 10 mM maltose. Additional MBP columns were run until all MBP was removed from the purified protein, assessed by SDS-PAGE. If necessary, an additional anion exchange step at pH eight was performed to complete purification. All purified proteins were dialyzed overnight at 4°C in tris buffer + 2 g/L Chelex-100 resin (Biorad), flash-frozen the following day in liquid nitrogen, and stored at −80°C.
 
-## Biophysical and biochemical characterization
+### Biophysical and biochemical characterization
 
 For all experiments, protein aliquots were thawed fresh from freezer stocks and were either dialyzed in the appropriate experimental buffer overnight at 4°C or exchanged 3X into experimental buffer using 3K microsep spin concentrator columns (Pall Corporation). All samples were filter-sterilized using 0.1 µm spin filters (EMD Millipore) prior to measuring concentration and using in experiments. Thawed aliquots were used for no more than one week before discarding. All concentrations were measured by Bradford assay and correspond to micromolar dimeric protein.
 
-For in vitro proteolytic susceptibility experiments, proteins were dialyzed or exchanged into tris buffer + 1 mM CaCl2. 12.5 µM S100 protein was treated with 5 µM monomeric Proteinase K from Tritirachium album (Sigma Aldrich), cathepsin G from human neutrophils (Athens Research), or neutrophil elastase from human neutrophils (Millipore Sigma) in thin-walled PCR tubes, which were held at a constant temperature of 25°C over the course of the experiment using a thermal cycler. Proteinase K activity was quenched at different time points by directly pipetting an aliquot of the reaction into an equal volume of 95% Laemmli SDS-PAGE loading buffer + 5% BME at 95°C in a separate thermal cycler. Time points were analyzed via SDS-PAGE, and gels were quantified by densitometry using in-house gel analysis software (https://github.com/harmslab/gelquant, v1.0; copy archived at https://github.com/elifesciences-publications/gelquant; Harman, 2020). An exponential decay function (Aoe-kt) was fit to the data to extract the decay rate, floating Ao and k. Standard deviations were calculated from fits by taking the square root of the diagonalized covariance matrix and by error propagation.
+For in vitro proteolytic susceptibility experiments, proteins were dialyzed or exchanged into tris buffer + 1 mM CaCl2. 12.5 µM S100 protein was treated with 5 µM monomeric Proteinase K from Tritirachium album (Sigma Aldrich), cathepsin G from human neutrophils (Athens Research), or neutrophil elastase from human neutrophils (Millipore Sigma) in thin-walled PCR tubes, which were held at a constant temperature of 25°C over the course of the experiment using a thermal cycler. Proteinase K activity was quenched at different time points by directly pipetting an aliquot of the reaction into an equal volume of 95% Laemmli SDS-PAGE loading buffer + 5% BME at 95°C in a separate thermal cycler. Time points were analyzed via SDS-PAGE, and gels were quantified by densitometry using in-house gel analysis software (https://github.com/harmslab/gelquant, v1.0; copy archived at https://github.com/elifesciences-publications/gelquant; Harman, 2020). An exponential decay function ($A_{o}e^{-kt}$) was fit to the data to extract the decay rate, floating $A_{o}$ and $k.$ Standard deviations were calculated from fits by taking the square root of the diagonalized covariance matrix and by error propagation.
 
 Oligomeric states were measured using a superose 12 10/300 GL size exclusion column (Amersham Biosciences) with in-line concentration detection using refractive index (RI) and particle mass measured using a multiangle laser light scattering (MALS) instrument (Dawn Heleos, Wyatt Technology). Samples were concentrated to 0.5–2 mg/ml in tris buffer + 0.5 mM CaCl2, 0.1 µm sterile-filtered, and analyzed at a flow rate of 0.2 ml/min. Data were processed using manufacturer’s software (Astra).
 
-Circular dichroism (CD) and chemical denaturation experiments were performed using a Jasco J-815 CD spectrometer and spectroscopy-grade guanidine hydrochloride (gdn-HCl) or urea. Chemical denaturation was performed using 25 µM dimeric protein in tris buffer with CaCl2, with tris substituted for spectroscopy-grade trizma. Reversible unfolding and refolding curves were constructed by making concentrated 100 µM protein stocks in either buffer or 6M gdm or 10M urea and then preparing protein dilutions in various concentrations of gdn-HCl or urea in buffer. Samples were left to equilibrate in denaturant between three hours and overnight to allow for equilibration and were then analyzed by CD. Unfolding/refolding equilibration was confirmed by comparing unfolded vs. refolded protein at the same concentration. CD signal was quantified at 222 nm in a 1 mm cuvette using a 1 nm bandwidth, standard sensitivity, and 2 s D.I.T. HT voltage was <600 V. We fit a two-state unfolding model:bf + mfx+(bu + mux)e- ∆G-mxRT1 + e- ∆G-mxRT  to the data to extract thermodynamic parameters, where bf, mf,bu, and mu are the folded and unfolded baseline y-intercepts and slopes, ∆G is the unfolding free energy, m is the m-value, R = 0.001987 J⋅K−1mol−1 and T = 298.15 K. Standard deviations were calculated from fits by taking the square root of the diagonalized covariance matrix and by error propagation. Apparent unfolding kinetics studies were performed using the above conditions by spiking concentrated protein stock directly into 6M gdm and immediately monitoring CD signal at 222 nm.
+Circular dichroism (CD) and chemical denaturation experiments were performed using a Jasco J-815 CD spectrometer and spectroscopy-grade guanidine hydrochloride (gdn-HCl) or urea. Chemical denaturation was performed using 25 µM dimeric protein in tris buffer with CaCl2, with tris substituted for spectroscopy-grade trizma. Reversible unfolding and refolding curves were constructed by making concentrated 100 µM protein stocks in either buffer or 6M gdm or 10M urea and then preparing protein dilutions in various concentrations of gdn-HCl or urea in buffer. Samples were left to equilibrate in denaturant between three hours and overnight to allow for equilibration and were then analyzed by CD. Unfolding/refolding equilibration was confirmed by comparing unfolded vs. refolded protein at the same concentration. CD signal was quantified at 222 nm in a 1 mm cuvette using a 1 nm bandwidth, standard sensitivity, and 2 s D.I.T. HT voltage was <600 V. We fit a two-state unfolding model:
 
-## Cell lines
+$$
+\frac{b_{f}+m_{f}x+(b_{u}+m_{u}x)e^{-\frac{\DeltaG-mx}{RT}}}{1+e^{-\frac{\DeltaG-mx}{RT}}}
+$$
+
+to the data to extract thermodynamic parameters, where $b_{f},m_{f},$$b_{u},andm_{u}$ are the folded and unfolded baseline y-intercepts and slopes, $\DeltaG$ is the unfolding free energy, $m$ is the m-value, R = 0.001987 J⋅K−1mol−1 and T = 298.15 K. Standard deviations were calculated from fits by taking the square root of the diagonalized covariance matrix and by error propagation. Apparent unfolding kinetics studies were performed using the above conditions by spiking concentrated protein stock directly into 6M gdm and immediately monitoring CD signal at 222 nm.
+
+### Cell lines
 
 We purchased commercially distributed HEK293T cells from ATCC (CRL-11268). Because we are using this cell line as a host for heterologous transient transfections, the appropriate control for consistency between assays is the measurement of reporter output for a set of control plasmids and a panel of known treatments. Upon thawing each batch of cells, we run a positive control for ligand-induced response. We transfect the cells with plasmids encoding human CD14, human MD-2, human TLR4, renilla luciferase behind a constitutive promoter, and firefly luciferase behind an NF-KB promoter. We then characterize the raw luciferase output for five treatments: 1) mock, 2) LPS, 3) LPS + polymyxin B, 4) S100A9 + polymyxin B, and 5) S100A9 + 1.25x polymyxin B. This has a stereotypical pattern of responses in renilla luciferase (high for all) and firefly luciferase (low, high, low, high, high). To validate that this response is dependent on the transfected TLR4 complex as opposed to the cells themselves, we repeat the experiment but exclude the TLR4 plasmid. This should give identical renilla luciferase values but no firefly luciferase output in response to any treatment. To ensure that the cells maintain their properties between passages, we repeat the mock, LPS, and LPS + polymyxin B control on every single experimental plate. This assay has a built-in control for mycoplasma contamination: high firefly luciferase signal in the absence of added agonist. This indicates that there is another source of TLR4-induced NF-kappa B output in the cells—most plausibly, contamination. This mycoplasma sensing approach is used in the commercially available HEK-BLUE mycoplasma detection kit (Invivogen). We discard any cells that exhibit high background values or reach 30 passages.
 
-## Functional assays
+### Functional assays
 
 The antimicrobial activity of S100s was measured against S. epidermidis using a well-established assay (Hadley et al., 2018; Nakashige et al., 2016; Brunjes Brophy et al., 2013; Brophy et al., 2012; Cunden et al., 2016). The day before, a 5 ml starter culture of S. epidermidis in tryptic soy broth (TSB) was grown overnight. The next day, the culture was diluted ~1:100 in TSB and grown for approximately 2 hr to an OD600 of ~0.8. Immediately prior to experiment, the S. epidermidis culture was again diluted 1:100 at a ratio of 62:38 experimental buffer (25 mM tris, 100 mM NaCl, 3 mM CaCl2, pH 7.4):TSB. S100 proteins were exchanged into experimental buffer. Each well of a sterile 96-well plate was prepared with 40 µl of S. epidermidis diluted in experimental buffer + TSB, S100 protein at the desired concentration in experimental buffer, and then filled to 200 µl, maintaining a ratio of 62:38 experimental buffer:TB. S. epidermidis growth was monitored on a plate reader, measuring OD600 every 15 min for 13 hr. Each measurement was collected in technical triplicate and background-subtracted using a blank containing experimental buffer and TSB alone. Protein samples were confirmed to lack bacterial contamination by measuring S100 protein growth in experimental buffer and TSB lacking S. epidermidis.
 
@@ -183,6 +463,6 @@ All plasmids, cell culture conditions, and transfections for measuring the activ
 
 For TLR4 activation measurements by A9 proteolytic products, 12.5 µM hA9 or hA9 M63F were incubated with 2.5 mg/ml Proteinase K immobilized to agarose at 37°C for increasing amounts of time. The reaction was quenched by spin-filtering the sample to remove Proteinase K. 2 µM A9 proteolysis treatments were then added to cells as outlined above. Western blots were performed by running an SDS-PAGE gel and transferring to a nitrocellulose membrane. Membranes were blocked using Odyssey Blocking Buffer for 1 hr, incubated with 1:1000 mouse anti-S100A9 primary antibody (M13 clone 1CD22, Abnova) for 1 hr, and incubated with 1:10,000 IRDye Goat anti-mouse 800CW IgG (H+L, Licor) for 1 hr, with 3 × 5 min TBST washes in between each step. Blots were imaged using the Licor Odyssey Fc imaging system.
 
-## Species cartoons
+### Species cartoons
 
 All species cartoons were taken from the following websites: http://phylopic.org/image/c089caae-43ef-4e4e-bf26-973dd4cb65c5/, http://phylopic.org/image/aff847b0-ecbd-4d41-98ce-665921a6d96e/, http://phylopic.org/image/0f6af3d8-49d2-4d75-8edf-08598387afde/, http://phylopic.org/image/dde4f926-c04c-47ef-a337-927ceb36e7ef/. We acknowledge Sarah Werning and David Liao as authors of the opossum and mouse cartoons respectively, which were made publicly available through the creative commons attributions 3.0 unported license (https://creativecommons.org/licenses/by/3.0/).

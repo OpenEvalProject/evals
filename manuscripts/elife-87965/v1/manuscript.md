@@ -10,16 +10,16 @@
 
 ### Affiliations
 
-1. https://ror.org/009avj582 Neuroscience Graduate Program, Oregon Health & Science University Portland United States
-2. https://ror.org/054484h93 Operative Care Division, Portland VA Health Care System Portland United States
-3. https://ror.org/009avj582 Anesthesiology and Perioperative Medicine, Oregon Health & Science University Portland United States
-4. https://ror.org/009avj582 Vollum Institute, Oregon Health & Science University Portland United States
+1. Neuroscience Graduate Program, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
+2. Operative Care Division, Portland VA Health Care System Portland United States ([ROR:054484h93](https://ror.org/054484h93))
+3. Anesthesiology and Perioperative Medicine, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
+4. Vollum Institute, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
 
 † Corresponding author
 
 ## Abstract
 
-Dystroglycan (Dag1) is a transmembrane glycoprotein that links the extracellular matrix to the actin cytoskeleton. Mutations in Dag1 or the genes required for its glycosylation result in dystroglycanopathy, a type of congenital muscular dystrophy characterized by a wide range of phenotypes including muscle weakness, brain defects, and cognitive impairment. We investigated interneuron (IN) development, synaptic function, and associated seizure susceptibility in multiple mouse models that reflect the wide phenotypic range of dystroglycanopathy neuropathology. Mice that model severe dystroglycanopathy due to forebrain deletion of Dag1 or Pomt2 , which is required for Dystroglycan glycosylation, show significant impairment of CCK + /CB 1 R + IN development. CCK + /CB 1 R + IN axons failed to properly target the somatodendritic compartment of pyramidal neurons in the hippocampus, resulting in synaptic defects and increased seizure susceptibility. Mice lacking the intracellular domain of Dystroglycan have milder defects in CCK + /CB 1 R + IN axon targeting, but exhibit dramatic changes in inhibitory synaptic function, indicating a critical postsynaptic role of this domain. In contrast, CCK + /CB 1 R + IN synaptic function and seizure susceptibility was normal in mice that model mild dystroglycanopathy due to partially reduced Dystroglycan glycosylation. Collectively, these data show that inhibitory synaptic defects and elevated seizure susceptibility are hallmarks of severe dystroglycanopathy, and show that Dystroglycan plays an important role in organizing functional inhibitory synapse assembly.
+Dystroglycan (Dag1) is a transmembrane glycoprotein that links the extracellular matrix to the actin cytoskeleton. Mutations in Dag1 or the genes required for its glycosylation result in dystroglycanopathy, a type of congenital muscular dystrophy characterized by a wide range of phenotypes including muscle weakness, brain defects, and cognitive impairment. We investigated interneuron (IN) development, synaptic function, and associated seizure susceptibility in multiple mouse models that reflect the wide phenotypic range of dystroglycanopathy neuropathology. Mice that model severe dystroglycanopathy due to forebrain deletion of Dag1 or Pomt2, which is required for Dystroglycan glycosylation, show significant impairment of CCK+/CB1R+ IN development. CCK+/CB1R+ IN axons failed to properly target the somatodendritic compartment of pyramidal neurons in the hippocampus, resulting in synaptic defects and increased seizure susceptibility. Mice lacking the intracellular domain of Dystroglycan have milder defects in CCK+/CB1R+ IN axon targeting, but exhibit dramatic changes in inhibitory synaptic function, indicating a critical postsynaptic role of this domain. In contrast, CCK+/CB1R+ IN synaptic function and seizure susceptibility was normal in mice that model mild dystroglycanopathy due to partially reduced Dystroglycan glycosylation. Collectively, these data show that inhibitory synaptic defects and elevated seizure susceptibility are hallmarks of severe dystroglycanopathy, and show that Dystroglycan plays an important role in organizing functional inhibitory synapse assembly.
 
 ## Introduction
 
@@ -33,9 +33,21 @@ Here, we use multiple mouse models that recapitulate the full range of dystrogly
 
 ## Results
 
-## Characterizing dystroglycan localization and glycosylation in multiple models of dystroglycanopathy
+### Characterizing dystroglycan localization and glycosylation in multiple models of dystroglycanopathy
 
 While conditional deletion of Dag1 from pyramidal neurons causes a loss of CCK+/CB1R+ IN innervation in the forebrain, this has not been examined in dystroglycanopathy relevant mouse models exhibiting more widespread loss of functional Dystroglycan. We therefore generated five distinct mouse models; three to provide mechanistic insight into Dystroglycan function and two of which model mild dystroglycanopathy (schematized in Figure 1A). Since complete loss of Dag1 results in early embryonic lethality in mice, we generated forebrain-specific conditional knockouts by crossing Emx1Cre with Dystroglycan floxed mice (Dag1Flox/Flox), to drive recombination in neuroepithelial cells in the dorsal forebrain beginning at embryonic day 10.5 (E10.5) (Gorski et al., 2002; Liang et al., 2012). We verified the recombination pattern of Emx1Cre with the mCherry reporter Rosa26Lox-STOP-Lox-H2B:mCherry. H2B:mCherry signal was present in all excitatory neurons and astrocytes throughout the forebrain (Figure 1—figure supplement 1A, B and D) but not microglia or interneurons (Figure 1—figure supplement 1C and E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depiction of Dystroglycan in different mouse models. The IIH6 antibody recognizes the matriglycan repeats on extracellular αDag1. Hippocampal CA1 of P30 mice immunostained for Dystroglycan glycosylation (IIH6, green) and nuclear marker Hoechst (blue) show puncta of glycosylated Dystroglycan localized to the perisomatic region of pyramidal cells and to blood vessels (magenta arrowheads); scale bar = 50 μm. Lower panels show cell bodies in SP; scale bar = 25 μm. CA1 layers: SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum. (B) WGA-enriched lysates from P0 forebrain were immunoblotted for IIH6, β-Dag1, and β-tubulin. (C–D) Quantification of immunoblot in (B). Error bars show mean + SEM. See Supplementary file 1 for Ns.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Left; endogenous red fluorescence in the forebrain of P60 Emx1Cre:R26LSL-H2B-mCherry reporter mice (scale bar = 1 mm). Right; coronal section of the forebrain from Emx1Cre:R26LSL-H2B-mCherry mice showing robust nuclear mCherry signal (magenta) in the cortex and hippocampus (scale bar = 500 μm). (B–E) mCherry+ nuclei shown with markers of multiple cell types in the brain including astrocytes (GFAP, green) (B), microglia (Iba1, green) (C), and neurons (NeuN, green) (D) (scale bar = 100 μm). Insets show enlarged images of mCherry+ nuclei with cell type markers (scale bar = 20 μm). (E) mCherry+ nuclei with markers for different interneuron subtype markers (yellow arrowheads) (scale bar = 100 μm) (VIP = Vasoactive intestinal peptide, NECAB = Neuronal calcium-binding protein 1, SOM = Somatostatin). CA1 layers: SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunostaining for matriglycan (IIH6, green) and β-Dag1 (magenta) in CA1 pyramidal cells of WT controls, Emx1Cre:Dag1 cKOs, Emx1Cre:Pomt2 cKOs, and Dag1cyto/- mutants. Scale bars = 25 μm. (B) WGA-enriched lysates from P21 to P30 hippocampus were immunoblotted for IIH6 and β-Dag1. (C–D) Quantification of immunoblot in (B). Error bars show mean + SEM. See Supplementary file 1 for Ns.
 
 To model loss of Dystroglycan glycosylation, Emx1Cre was crossed with Pomt2Flox/Flox conditional mice to generate Emx1Cre:Pomt2 cKO mice. Pomt2 (protein O-mannosyltransferase 2) is a glycosyltransferase that functions in a heterocomplex with Pomt1 to add O-mannose at the beginning of the Dystroglycan glycan chain (Manya et al., 2004). Without the initial O-mannose, no additional sugar moieties can be added to the glycan chain, resulting in near complete loss of Dystroglycan glycosylation. This is lethal embryonically in a global Pomt2 knockout, however Emx1Cre:Pomt2 cKO mice are viable and survive into adulthood (Hu et al., 2016; van Reeuwijk, 2005; Yanagisawa et al., 2007).
 
@@ -49,15 +61,47 @@ We next prepared WGA-enriched lysate from neonatal (P0) forebrain and immunoblot
 
 We next examined Dag1 protein levels during synaptogenesis using WGA-enriched lysate from P21-P30 hippocampus. As expected, Dag1 glycosylation assessed by IIH6 immunoblotting was severely reduced in Emx1Cre:Dag1 cKOs and Emx1Cre:Pomt2 cKOs but normal in Dag1cyto/- mice (Figure 1—figure supplement 2B–C). Immunoblotting for β-Dag1 showed a significant reduction in Emx1Cre:Dag1 cKOs and Dag1cyto/- mutants but normal levels in Emx1Cre:Pomt2 cKOs (Figure 1—figure supplement 2B, D). Although localization of Dag1 was not punctate in Emx1Cre:Pomt2 cKOs (Figure 1—figure supplement 2A), the overall level of β-Dag1 was normal by WGA-enrichment, which enriches for proteins in the plasma membrane (Figure 1—figure supplement 2B, D). It therefore remains possible that Dag1 still trafficks to the cell surface in Emx1Cre:Pomt2 cKOs but fails to contact presynaptic axons and therefore does not permit synaptogenesis.
 
-## Dystroglycan is required for cortical neuron migration in a glycosylation-dependent manner
+### Dystroglycan is required for cortical neuron migration in a glycosylation-dependent manner
 
 In neocortex, Dag1 expression in radial glia is required for proper migration of neurons, with Dag1 conditional deletion from neuroepithelial cells or radial glia resulting in Type II lissencephaly (Moore et al., 2002; Pawlisz and Feng, 2011; Satz et al., 2008; Satz et al., 2010). This requires proper Dystroglycan glycosylation, but not its expression in neurons (Chan et al., 2010; Holzfeind et al., 2002; Hu et al., 2011; Wright et al., 2012). To compare cortical migration across our five models of dystroglycanopathy, we performed immunostaining for the upper layer marker Cux1 (layers II/III-IV) and the deep layer marker Tbr1 (layers III, VI) in P30 somatosensory cortex (Figure 2A–B). Emx1Cre:Dag1 cKOs and Emx1Cre:Pomt2 cKOs showed complete cortical dyslamination with 100% penetrance, whereas the cytoplasmic (Dag1cyto/-) deletion mutants appeared normal (Figure 2C–D). B4gat1M155T/M155T missense mutants showed a migration phenotype only at the cortical midline, while FkrpP448L/P448L missense mutants did not show any cortical migration phenotype (Figure 2C–D, Figure 2—figure supplement 1A). These results indicate that cortical migration depends on Dystroglycan glycosylation but does not require its cytoplasmic domain. Furthermore, taken with the data in Figure 1B–D, they illustrate that the severity of the cortical migration phenotype scales with the degree of Dystroglycan hypoglycosylation; Emx1Cre:Dag1 cKOs and Emx1Cre:Pomt2 cKOs model a severe form of dystroglycanopathy (Walker-Warburg Syndrome, Muscle-Eye-Brain disease) and B4gat1M155T/M155T and FkrpP448L/P448L mutants modeling a milder form of the disease.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig2-v1.jpg)
+
+**Figure 2.:** Immunostaining for cortical layer markers (A) Cux1 (layers 2–4) and (B) Tbr1 (layers 3 and 6) in P30 somatosensory cortex (scale bar = 200 μm). Layer markers are shown in green. Nuclear marker Hoechst is shown in magenta. Quantification of fluorescence intensity of layer markers shown for (C) Cux1 and (D) Tbr1. Shaded regions of intensity profile illustrate ± SEM. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. CC, corpus callosum; A.U., arbitrary units.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunostaining for cortical layer marker Cux1 (layers 2–4) in P30 somatosensory cortex (scale bar = 500 μm). Cux1 is shown in green. Nuclear marker Hoechst is shown in magenta. Cortical migration is normal in both B4gat1 and Fkrp point mutants except at midline, where the B4gat1 mutants show a migration phenotype not seen in the Fkrp point mutants. This phenotype was observed with 100% penetrance in the B4gat1 mutants and 0% in the Fkrp mutants.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Immunostaining for ECM protein Laminin (green). Nuclear marker Hoechst is shown in blue. Scale bar = 1000 μm.
+
 To further assess the impact of our functional domain mutations, we assessed Laminin localization, the canonical interacting partner of Dystroglycan in the extracellular matrix (ECM), in adult neocortex (Ibraghimov-Beskrovnaya et al., 1992). Under WT conditions, Laminin immunoreactivity was evident at the pial surface where Laminin and Dystroglycan interact at the interface between radial glial endfeet and the cortical basement membrane (Satz et al., 2010). Laminin was also present in blood vessels, where Dystroglycan-expressing perivascular astrocytes contribute to the maintenance of water homeostasis (Menezes et al., 2014). In Emx1Cre:Dag1 cKO cortex, Laminin immunoreactivity at the pial surface was patchy and vascular Laminin showed evidence of the neuronal migration phenotype described in Figure 2, Figure 2—figure supplement 2A. Laminin immunoreactivity in Emx1Cre:Pomt2 cKO cortex similarly showed a patchy appearance, albeit less severe than Emx1Cre:Dag1 cKOs, along with the evident cortical migration phenotype (Figure 2—figure supplement 2B). Dag1cyto/- mutants, on the other hand, exhibited normal Laminin immunoreactivity both at the pial surface and with regards to vascular organization (Figure 2—figure supplement 2C).
 
-## Perisomatic CCK+/CB1R+ interneuron targeting requires dystroglycan in a non-cell autonomous manner
+### Perisomatic CCK+/CB1R+ interneuron targeting requires dystroglycan in a non-cell autonomous manner
 
 CCK+/CB1R+ IN innervation is largely absent from the cortex and hippocampus when Dag1 is deleted selectively from pyramidal neurons using NeuroD6Cre (NEXCre) (Früh et al., 2016; Miller and Wright, 2021). However, the development and function of CCK+/CB1R+ INs has not been examined in mouse models that more broadly lack Dag1 throughout the CNS and thus more accurately reflect the neuropathology of dystroglycanopathy. We focused our analysis on region CA1 of the hippocampus, as its overall architecture is grossly unaffected in each of our mouse models. Both Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice exhibited a mild granule cell migration phenotype in dentate gyrus (Figure 3A, yellow arrows); however, CA1-CA3 showed normal pyramidal neuron organization.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig3-v1.jpg)
+
+**Figure 3.:** (A) Nuclear marker Hoechst (upper panels) shows hippocampal morphology. Granule cell migration is disrupted in dentate gyrus of Emx1Cre:Dag1 cKOs and Emx1Cre:Pomt2 cKOs (yellow arrows). CA1-3 gross morphology is normal in all models. CB1R immunostaining (lower panels) shows abnormal CCK+/CB1R+ basket interneuron targeting in CA1-3 to varying degrees across models (scale bar = 400 μm). (B) Higher magnification view of CB1R immunostaining in CA1 (scale bar = 50 μm). (C) Quantification of CA1 CB1R fluorescence intensity profile. Shaded regions of intensity profile illustrate ± SEM. Gray region highlights SP. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. A.U., arbitrary units; SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** CB1R immunostaining in hippocampal CA1 of control mice (left panels) and Dag1 cKOs (right panels) generated using Emx1Cre (forebrain progenitors, E10.5) (A), NestinCre (neural stem cells in the central and peripheral nervous systems, E11.5) (B), and NeuroD6Cre (forebrain postmitotic excitatory neurons, E12.5) (C). Scale bar = 50 μm. SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunostaining in hippocampal CA1 for NECAB1 (left) and PV (right) in Emx1Cre:Dag1 control and Emx1Cre:Dag1 cKO mice. NECAB1 labeling is evident in PV+ cells (example shown in blue inset) and in an additional PV- population that contains the CCK+/CB1R+ population (example shown in magenta inset). The average number of NECAB1+;PV- cells per 100 μm of SP is quantified in (B). Immunostaining for NECAB2 (C) and PV (D) with cell number quantification in (E) and (F). Scale bar = 100 μm. Error bars show mean + SEM. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. SP, stratum pyramidale; PV, parvalbumin.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Parvalbumin (PV) immunostaining in P30 hippocampal CA1 shows that PV+ basket interneurons exhibit normal distribution in CA1 for all genetic models except for an increase in PV intensity within stratum pyramidale of Emx1Cre:Dag1 cKOs (scale bar = 50 μm). (B) Quantification of CA1 PV fluorescence intensity profile. Shaded regions of intensity profile illustrate ± SEM. Gray region highlights SP. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. A.U., arbitrary units; SO, stratum oriens.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) CB1R immunostaining in P30 coronal sections showing somatosensory cortex (Ctx) and CA1 of hippocampus (Hipp) (scale bar = 400 μm). (B) CB1R immunostaining (green) shown with nuclear marker Hoechst (magenta) in basolateral amygdala (BLA) (scale bar = 250 μm).
 
 In WT control mice, CCK+/CB1R+ IN axon terminals were abundant throughout the hippocampus, with their highest innervation density in the CA1 pyramidal cell body layer (stratum pyramidale, SP) where they form characteristic basket synapses onto pyramidal neurons (Figure 3A–C, Figure 3—figure supplement 1A). In Emx1Cre:Dag1 cKO mice, CCK+/CB1R+ axons were present but failed to target the pyramidal cell layer (Figure 3A–C, Figure 3—figure supplement 1A), a surprising difference from the phenotype observed in NeuroD6Cre:Dag1 cKO mice which lack CCK+/CB1R+ IN innervation entirely (Früh et al., 2016; Miller and Wright, 2021; Figure 3—figure supplement 1C). To confirm the CCK+/CB1R+ IN innervation pattern in the context of widespread Dag1 deletion, we generated NestinCre:Dag1 cKO mice. NestinCre, similar to Emx1Cre, drives Cre recombination in forebrain progenitors, however Emx1Cre recombination begins around E10.5 and NestinCre recombination begins around E11.5 (Liang et al., 2012; Tronche et al., 1999). NestinCre:Dag1 cKOs showed the same CCK+/CB1R+ axon targeting phenotype as Emx1Cre:Dag1 cKOs (Figure 3—figure supplement 1B), further suggesting that the observed Emx1Cre:Dag1 cKO phenotype faithfully models dystroglycanopathy neuropathology.
 
@@ -69,25 +113,49 @@ Due to the axonal targeting defect in the CCK+/CB1R+ IN population, we next exam
 
 Notably, CB1R expression was also abnormal in brain regions outside of the hippocampus. In somatosensory cortex, CB1R immunostaining reflected the dyslamination phenotype in both the Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice throughout neocortex and the B4gat1M155T/M155T mice at midline, while it appeared normal in cortex of Dag1cyto/- and FkrpP448L/P448L mice (Figure 3—figure supplement 4A). CB1R staining was also reduced and disorganized in the basolateral amygdala (BLA) in Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice (Figure 3—figure supplement 4B). Interestingly, CB1R immunostaining in the inner molecular layer (IML) of dentate gyrus appears normal in all mutants (Figure 3A). In the IML, CB1R is present in excitatory mossy cell axons targeting dentate granule cells whereas in both cortex and amygdala CB1R expression is restricted to GABAergic interneurons (Földy et al., 2006; Katona et al., 2001; Monory et al., 2015). Therefore, glycosylated Dystroglycan instructs the development of inhibitory CB1R+ interneuron populations in multiple brain regions.
 
-## Dystroglycan is required for CCK+/CB1R+ interneuron axon targeting during early postnatal development
+### Dystroglycan is required for CCK+/CB1R+ interneuron axon targeting during early postnatal development
 
 During early postnatal development, CCK+/CB1R+ IN axons undergo a dramatic laminar rearrangement, progressing from more distal localization amongst pyramidal cell dendrites, to eventually target pyramidal neuron cell bodies in the hippocampus (Miller and Wright, 2021; Morozov et al., 2009; Morozov and Freund, 2003a; Morozov and Freund, 2003b). We examined the developmental time course of CCK+/CB1R+ IN axon targeting in our Emx1Cre:Dag1 cKO mice beginning at P5, when the axons are first readily identifiable (Berghuis et al., 2007; Eggan et al., 2010; Mulder et al., 2008; Vitalis et al., 2008). At P5 in Emx1Cre:Dag1 control mice, CCK+/CB1R+ axons were initially concentrated in the stratum radiatum (SR) of the hippocampus (Figure 4A–C). Between P10 and P30, the CCK+/CB1R+ axons underwent developmental reorganization, with reduced innervation of SR coinciding with a progressive increase in innervation of SP. In contrast, overall CCK+/CB1R+ innervation was initially reduced in the hippocampus of mutant Emx1Cre:Dag1 cKO mice at P5, and these axons failed to undergo laminar reorganization as they developed (Figure 4A–C). By P30, after IN synapse formation and targeting are largely complete in control mice, the density of CCK+/CB1R+ axons in Emx1Cre:Dag1 cKO mice was uniform across all hippocampal lamina (Figure 4A–C). Therefore, Dystroglycan plays a critical developmental role during the first two postnatal weeks, for the proper laminar distribution and perisomatic targeting of CCK+/CB1R+ IN axons in the hippocampus.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig4-v1.jpg)
 
-**Figure 4.:** Dag1 is required for CCK+/CB1R+ IN axon targeting during early postnatal development.(A) Immunostaining for CB1R+ axon terminals (green) in the hippocampus of Emx1 controls (left) and cKOs (right) at ages P5-P30. Nuclear marker Hoechst is shown in magenta. White arrowheads indicate migration errors in dentate granule cells Cre:Dag1Emx1 cKO mice. Scale bar = 500 μm. (Cre:Dag1B) Higher magnification images of CB1R+ axon terminals in CA1 of Emx1 controls (left) and cKOs (right) at ages P5-P30. Scale bar = 100 μm. (Cre:Dag1C) Quantification of CB1R fluorescence intensity profile in CA1. Shaded regions of intensity profile illustrate ± SEM. Gray region highlights SP. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. A.U., arbitrary units; SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.Figure 4—source data 1.Figure 4C.
+**Figure 4.:** (A) Immunostaining for CB1R+ axon terminals (green) in the hippocampus of Emx1Cre:Dag1 controls (left) and cKOs (right) at ages P5-P30. Nuclear marker Hoechst is shown in magenta. White arrowheads indicate migration errors in dentate granule cells Emx1Cre:Dag1 cKO mice. Scale bar = 500 μm. (B) Higher magnification images of CB1R+ axon terminals in CA1 of Emx1Cre:Dag1 controls (left) and cKOs (right) at ages P5-P30. Scale bar = 100 μm. (C) Quantification of CB1R fluorescence intensity profile in CA1. Shaded regions of intensity profile illustrate ± SEM. Gray region highlights SP. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. A.U., arbitrary units; SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
 
-## CCK+/CB1R+ IN synapse formation requires postsynaptic glycosylated dystroglycan
+### CCK+/CB1R+ IN synapse formation requires postsynaptic glycosylated dystroglycan
 
 Given the perturbed distribution of CCK+/CB1R+ IN axons in the hippocampus, we next wanted to determine whether the remaining CCK+/CB1R+ IN axons were capable of forming synapses in dystroglycanopathy models. Using VGAT as a marker of inhibitory presynaptic terminals, we saw no difference in total VGAT puncta density in SP in any of the mouse models, indicating that the total number of inhibitory synapses is normal (Figure 5B–D). Immunostaining for CB1R showed a significant decrease in CB1R in SP of Emx1Cre:Dag1 cKO, Emx1Cre:Pomt2 cKO, B4gat1M155T/M155T, and FkrpP448L/P448L mutants, but not Dag1cyto/- mutants (Figure 5E). This suggests that the difference in CB1R+ axon distribution described in SP of Dag1cyto/- mutants in Figure 3A–C likely reflects a change in CCK+/CB1R+ IN axon targeting but not synapse formation, whereas Emx1Cre:Dag1 cKO and all three glycosylation mutants exhibit a reduction in CCK+/CB1R+ IN axon targeting and synapse number in SP. It should be noted that the data in Figure 3A–C reflects axonal CB1R intensity across all hippocampal layers, whereas the quantification in Figure 5E reflects the density of axonal swellings within SP. These data therefore suggest that there is an overall reduction in CB1R intensity in SP of Dag1cyto/- mutants that does not influence the number of CB1R+ axonal swellings. In contrast to CCK+/CB1R+ INs, the PV+ population of basket interneurons showed no change in puncta density in SP in any of the models (Figure 5—figure supplement 2A–E; analysis of VGAT, CB1R, and PV densities in SO and SR included in Figure 5—figure supplement 1A–B and Figure 5—figure supplement 3A.)
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig5-v1.jpg)
+
+**Figure 5.:** P30 coronal sections immunostained for (A) CB1R and (B) VGAT in hippocampal CA1; merged image in (C) shows CB1R in magenta and VGAT in green. (A–C) Scale bar = 50 μm. (Higher magnification view of SP in (C’); scale bar = 10 μm.) (D) Quantification of VGAT puncta density in SP expressed as a percent of control. (E) Quantification of CB1R puncta density in SP expressed as a percent of control. (F) Quantification of co-localization between VGAT and CB1R in SP to estimate putative CB1R+ basket cell synapse formation. Error bars show mean + SEM. (For quantification of puncta densities and co-localization in SO and SR see Figure 5—figure supplement 1.) See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Quantification within hippocampal CA1 SO and SR regions and all regions pooled together. (A) Quantification of VGAT puncta density expressed as a percent of control. (B) Quantification of CB1R puncta density expressed as a percent of control. (C) Quantification of co-localization between VGAT and CB1R to estimate putative CB1R+ basket cell synapse formation. Error bars show mean + SEM. (To see quantification of puncta densities and co-localization in SP see Figure 5D–F.) See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** P30 coronal sections immunostained for (A) PV and (B) VGAT in hippocampal CA1; merged image in (C) shows PV in magenta and VGAT in green. Yellow arrows indicate PV+ interneuron cell bodies. (A–C) Scale bar = 50 μm. (Higher magnification view of SP in (C’); scale bar = 10 μm.) (D) Quantification of PV puncta density in SP expressed as a percent of control. (E) Quantification of co-localization between VGAT and PV in SP to estimate putative PV+ basket synapse formation. Error bars show mean + SEM. (To see quantification of puncta densities and co-localization in SO and SR see Figure 5—figure supplement 3.) See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. PV, parvalbumin; SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Quantification within hippocampal CA1 SO and SR regions and all regions pooled together. (A) Quantification of PV puncta density expressed as a percent of control. (B) Quantification of co-localization between VGAT and PV to estimate putative PV+ basket cell synapse formation. Error bars show mean + SEM. (To see quantification of puncta densities and co-localization in SP see Figure 5—figure supplement 2D, E). See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. PV, parvalbumin; SO, stratum oriens; SP, stratum pyramidale; SR, stratum radiatum.
 
 To better approximate the extent of basket synapse formation, we quantified the co-localization between VGAT and CB1R or PV. In SP, the percent of CB1R puncta co-localized with VGAT was reduced in the same models that showed a reduction in CB1R density (Emx1Cre:Dag1 cKO, Emx1Cre:Pomt2 cKO, B4gat1M155T/M155T, and FkrpP448L/P448L mutants) but not Dag1cyto/- mutants (Figure 5C and F), suggesting that CCK+/CB1R+ INs require postsynaptic glycosylated Dystroglycan in order to form synapses whereas the cytoplasmic domain is required for axon targeting but not synapse formation.
 
 Interestingly, the percent of PV co-localized with VGAT increased in the SP of Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice, with no change in any of the other models (Figure 5—figure supplement 2C, E; analysis of co-localization in SO and SR included in Figure 5—figure supplement 1C, Figure 5—figure supplement 3B). It is possible that the reduction in inhibitory CCK+/CB1R+ synapses prompts homeostatic compensation through an increase in PV+ synapses. Alternatively, this may reflect competition between CCK+/CB1R+ and PV+ INs for physical space on the perisomatic region of pyramidal cells, with the decrease in CCK+/CB1R+ synapses in Emx1Cre:Dag1 cKOs and Emx1Cre:Pomt2 cKOs allowing additional PV+ IN synapses to form.
 
-## CCK+/CB1R+ interneuron basket synapse function is dependent on dystroglycan function
+### CCK+/CB1R+ interneuron basket synapse function is dependent on dystroglycan function
 
 Perisomatic inhibitory basket cell synapses powerfully control activity in the hippocampal circuit (Freund and Katona, 2007). Previous studies in NeuroD6Cre:Dag1 cKO mice, in which CCK+/CB1R+ INs are absent, demonstrated reduced inhibitory synaptic function (Früh et al., 2016). In the current study, however, CCK+/CB1R+ INs are present but mistargeted. Thus, we wanted to determine whether with the changes in CCK+/CB1R+ basket synapse localization in our mouse models were associated with altered inhibitory synaptic function. CCK+/CB1R+ IN basket cells can be selectively activated by muscarinic receptor activation, which increases the rate of spontaneous inhibitory post-synaptic currents (sIPSCs) in nearby pyramidal cells (Früh et al., 2016; Nagode et al., 2014). Thus, to assay function at CCK+/CB1R+ IN synapses, we performed whole cell patch clamp electrophysiology from CA1 pyramidal neurons in slices from control and mutant mice. After recording 5 minutes of baseline sIPSCs, the cholinergic receptor agonist Carbachol (CCh) was added to the bath and an additional 5 minutes of sIPSCs were recorded. While both Emx1Cre:Dag1 control and Emx1Cre:Dag1 cKO cells displayed a CCh-mediated change in sIPSC frequency, this response was dramatically attenuated in Emx1Cre:Dag1 cKOs mice compared to Emx1Cre:Dag1 control mice (Figure 6A–C). Furthermore, in Emx1Cre:Dag1 controls, 19/21 cells (90.5%) responded to CCh application (defined as a>20% increase in sIPSC frequency), whereas only 13/22 cells (59.1%) responded in Emx1Cre:Dag1 cKOs (Figure 6—figure supplement 1B). Proper Dystroglycan glycosylation was also required for CCK+/CB1R+ IN synapse function, as Emx1Cre:Pomt2 cKO mice exhibited the same phenotype as Emx1Cre:Dag1 cKOs: a reduced response to CCh overall, and a reduced proportion of responsive cells (Figure 6A–C, Figure 6—figure supplement 1B). CCh also increased the mean sIPSC amplitude in each of the controls (Figure 6—figure supplement 1A), which may reflect an increased contribution of larger-amplitude action potential-mediated perisomatic events elicited by CCh (Früh et al., 2016; Nagode et al., 2014). Consistent with the decreased function of CCK+/CB1R+ IN synapses, a CCh-mediated change in sIPSC amplitude was also absent in each of these models (Figure 6—figure supplement 1A). Together, these data indicate that the altered perisomatic CCK+/CB1R+ IN synaptic localization in CA1 is associated with a functional deficit in synaptic signaling.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative traces showing + seconds of sIPSC recordings at baseline (top) and after the addition of carbachol (bottom). (B) Quantification of average sIPSC frequency at baseline and after the addition of carbachol. (C) Quantification of the change in sIPSC frequency with the addition of carbachol. Error bars show mean + SEM. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. Abbreviations: sIPSC, spontaneous inhibitory postsynaptic current; CCh, carbachol.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of average sIPSC amplitude at baseline and after the addition of carbachol. Error bars show mean + SEM. (B) Quantification of the proportion of carbachol-sensitive cells within each genotype. Non-responsive cells are shown in lighter color, responsive cells are shown in darker color. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05. Abbreviations: sIPSC, spontaneous inhibitory postsynaptic current; CCh, carbachol.
 
 Dag1cyto/- mutants also had a dramatically attenuated sIPSC response to CCh compared to WT controls (Figure 6C). Notably, even baseline sIPSC frequency was reduced in Dag1cyto/- mutants (2.27±1.70 Hz) compared to WT controls (4.46±2.04 Hz, p=0.002), whereas baseline sIPSC frequencies appeared normal in all other mutants when compared to their respective controls. Together with the finding that these mutants contain a normal number of CCK+/CB1R+ basket synapses (as measured using immunohistochemistry; Figure 5A–D), these results indicate that the cytoplasmic domain of Dystroglycan may play a critical role in mediating the assembly of functional postsynaptic signaling/receptor complexes at these synapses.
 
@@ -95,11 +163,19 @@ Neither of the more mildly hypoglycosylated mutants (B4gat1M155T/M155T, FkrpP448
 
 Together, these results suggest that Dystroglycan is required for the function of CCK+/CB1R+ IN perisomatic basket synapses in a glycosylation-dependent manner, as evidenced by the Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO synaptic phenotypes, and that the intracellular domain of Dystroglycan is also required for normal CCK+/CB1R+ IN basket synapse function. However, we cannot rule out the possibility that CCK+/CB1R+ INs are simply less responsive to CCh in the mutants, as we lack the tools to identify CCK+/CB1R+ INs in live tissue for targeted recordings. In contrast, B4gat1M155T/M155T and FkrpP448L/P448L hypomorphic mutants both appear to retain sufficient Dystroglycan glycosylation to maintain normal synapse function.
 
-## Increased seizure susceptibility in models of dystroglycanopathy
+### Increased seizure susceptibility in models of dystroglycanopathy
 
 Human patients with dystroglycanopathy have an increased risk of seizures and epilepsy (Al Dhaibani et al., 2018; Di Rosa et al., 2011; Raphael et al., 2014; Yang et al., 2022), however the underlying cause has yet to be determined. The observed defects in inhibitory basket synapse function suggest that alterations in neuronal circuit inhibition could potentially predispose mutant mice to seizures. To test whether mouse models of dystroglycanopathy exhibit a reduced seizure threshold, we exposed mice to the volatile chemoconvulsant flurothyl and measured the latency to generalized tonic-clonic seizure (TCS) (Egawa et al., 2021).
 
 The latency to TCS was significantly faster in Emx1Cre:Dag1 cKO mice than their littermate controls (a 40.9% reduction on average, Figure 7A), with no difference in seizure latency between sexes in either group (Figure 7—figure supplement 1C). Emx1Cre:Pomt2 cKOs and Dag1cyto/- mutants also had a significantly shorter latency to TCS than littermate controls (42.9% and 33.6% reductions, respectively; Figure 7A), indicating that the mechanism underlying Dystroglycan’s role in seizure susceptibility requires both extracellular glycosylation and intracellular interactions. B4gat1M155T/M155T mutants showed a small but significant reduction (16%) in seizure latency, despite exhibiting no detectable functional deficit by electrophysiology (Figure 6A–C, Figure 7A). Finally, FkrpP448L/P448L mutants showed no significant change in seizure susceptibility (Figure 7A). Thus, the reduction in seizure latency reflects the severity of the synaptic phenotypes across the various models of dystroglycanopathy. These results demonstrate that disruptions in Dystroglycan function, including both its extracellular glycosylation and intracellular interactions, increase sensitivity to seizures.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig7-v1.jpg)
+
+**Figure 7.:** (A) Quantification of latency (in seconds) to generalized tonic clonic seizure upon exposure to 10% flurothyl delivered at a constant rate. Open points denote statistical outliers. See Supplementary file 1 for Ns. Significance: *=p < 0.05, **=p < 0.01, ***=p < 0.001, NS = p ≥ 0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87965/elife-87965-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Proportion of mice that died as a direct result of a flurothyl-induced seizure. Survivors are depicted in darker colors, fatalities in lighter colors. (B) To minimize the number of animals needed for this experiment, certain genotypes were pooled together. Here we show that pooled genotypes are not different. Statistical tests were run where Ns were sufficient to provide meaningful comparison. (C) Seizure latencies split by sex. Note: only the Emx1Cre:Dag1 group is powered sufficiently to statistically compare sexes. Open points denote statistical outliers. Error bars show mean + SEM.
 
 ## Discussion
 
@@ -109,19 +185,19 @@ We found that CCK+/CB1R+ IN synapse formation and function are dependent on prop
 
 A milder reduction in glycosylation (B4gat1M155T/M155T) resulted in a cortical migration phenotype that was restricted to midline (Figure 3—figure supplement 4) and a small reduction in CCK+/CB1R+ axon terminals and synaptic puncta density in CA1 which did not appear to affect synapse function (Figures 3 and 5–6). The mildest reduction in glycosylation amongst our models was observed in FkrpP448L/P448L mutants, which exhibited normal cortical migration but the same mild defect in CCK+/CB1R+ IN axon targeting and synaptic puncta density observed in B4gat1M155T/M155T mutants (Figures 3 and 5–6). Together, these three glycosylation mutants illustrate the degree of hypoglycosylation required for neurodevelopmental processes and show that defects in synaptic function only arise in the context of severely reduced glycosylation; the residual Dystroglycan function present in B4gat1M155T/M155T and FkrpP448L/P448L mutants is sufficient for most aspects of brain development. Finally, using Dag1cyto/- mutants that lack the intracellular domain of Dystroglycan, we found that the intracellular domain plays a role in some, but not all, neurodevelopmental processes. The intracellular domain is not required for neuronal migration in neocortex or synapse formation in CA1 (Figures 2 and 5) but is required for the proper targeting of CCK+/CB1R+ IN axons in CA1-3 (Figure 3) and for subsequent CCK+/CB1R+ IN basket synapse function (Figure 6).
 
-## Dystroglycan is an essential transsynaptic organizing molecule for CCK+/CB1R+ basket synapses
+### Dystroglycan is an essential transsynaptic organizing molecule for CCK+/CB1R+ basket synapses
 
 Synaptogenesis requires multiple distinct steps: (1) synaptic partner recognition, (2) recruitment and assembly of core pre- and post-synaptic machinery, (3) differentiation and maturation of synaptic identity, and (4) synaptic maintenance (Südhof, 2018). Based on data from this study (Figure 4) and previous work from our group and others, mice lacking Dystroglycan exhibit defects in CCK+/CB1R+ IN development at the earliest time point they can be reliably identified (P0-P5), before the peak phase of inhibitory synapse formation (P9), suggesting that Dystroglycan functions at the earliest stages of synaptogenesis such as synaptic partner recognition (Favuzzi et al., 2019). Determining the precise onset of synapse targeting and formation for most IN subtypes, including CCK+/CB1R+INs, is limited by a lack of genetic tools for visualizing and manipulating IN subtypes during developmental stages.
 
 The impairment in CCK+/CB1R+ IN development throughout the forebrain suggests a trans-synaptic role for Dystroglycan (Figure 3, Figure 3—figure supplement 4). The identity of the trans-synaptic binding partner between Dystroglycan-expressing cells and CCK+/CB1R+ INs remains unknown. Our data in Emx1Cre:Pomt2 cKO mice point to a critical role for the glycan chains on Dystroglycan mediating this binding. All proteins that bind to the glycan chains on Dystroglycan do so through at least one Laminin G (LG) domain. There are over 25 LG-domain containing extracellular or transmembrane proteins expressed in the hippocampus. Neurexins, a family of highly alternatively spliced synaptic cell-adhesion molecules (NRXN1-3) which each contain multiple LG domains, bind Dystroglycan in a glycosylation-dependent manner (Boucard et al., 2005; Fuccillo et al., 2015; Reissner et al., 2014; Sugita et al., 2001). The specific splice isoforms of Nrxns that bind Dystroglycan are expressed by CCK+/CB1R+ INs (Fuccillo et al., 2015; Ullrich et al., 1995). Neurexin-3 conditional knockout (targeting all Nrxn3 isoforms) and CRISPR-mediated Dag1 knockout both result in similar synaptic deficits in olfactory bulb and prefrontal cortex (Trotter et al., 2023). While a Dystroglycan knock-in mouse with reduced glycosylation that impairs Neurexin binding (Dag1T190M) shows normal CCK+/CB1R+ synapse formation by immunohistochemistry, the functionality of these synapses was not assessed by electrophysiology (Früh et al., 2016). Similar to B4gat1M155T/M155T and FkrpP448L/P448L mutants, the Dag1T190M mutation does not fully eliminate Dystroglycan glycosylation, and therefore does not rule out the possibility that Neurexins play a role at CCK+/CB1R+ synapses. It is also possible that a yet undescribed Dystroglycan interacting protein is required for initial synapse recognition, and Nrxn-Dag1 interactions are required for subsequent synapse maturation and maintenance only. Indeed, the majority of studies indicate that Neurexins are not required for the initial formation of synapses, but rather regulate the maturation and structural maintenance of synapses after they have formed (Chen et al., 2017; Dudanova et al., 2007; Lin et al., 2023; Missler et al., 2003; Trotter et al., 2023). Interestingly, while Dystroglycan localizes to both PV+ and CCK+/CB1R+ inhibitory basket synapses in CA1, only the CCK+/CB1R+ IN population was affected in the dystroglycanopathy models (Früh et al., 2016). Presumably, PV+ INs have a distinct developmental program independent of Dystroglycan and likely require a different postsynaptic recognition partner.
 
-## A role for the dystrophin-glycoprotein complex in CCK+/CB1R+ interneuron development
+### A role for the dystrophin-glycoprotein complex in CCK+/CB1R+ interneuron development
 
 In brain and muscle tissue, Dystroglycan forms a complex with Dystrophin and several other proteins, collectively known as the Dystrophin Glycoprotein Complex (DGC). Like Dystroglycan, Dystrophin is also expressed throughout the forebrain and is associated with inhibitory synapses in multiple brain regions (Knuesel et al., 1999). Patients with mutations in Dystrophin develop Duchenne Muscular Dystrophy (DMD), and frequently exhibit cognitive impairments in the absence of brain malformations, suggesting a general role for the DGC in synapse development and function (Jagadha and Becker, 1988; Moizard et al., 2000; Naidoo and Anthony, 2020). A mouse model of DMD lacking all neuronal Dystrophin isoforms (mdx) exhibits defects in CCK+/CB1R+ IN synapse development and abnormal innervation in the hippocampus, resembling the innervation pattern we observed in Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice in this study (Krasowska et al., 2014). Since Dystroglycan interacts with Dystrophin through its intracellular domain, we expected to observe similar phenotypes in mice lacking the intracellular domain of Dystroglycan (Dag1cyto/-). However, Dag1cyto/- showed a milder axon targeting defect than Emx1Cre:Dag1 cKO or mdx mice. In addition, IIH6 puncta were normally localized to the somatodendritic compartment in Dag1cyto/- mutants, suggesting that Dystroglycan does not require interactions with Dystrophin for is localization to somatodendritic synapses. However, Dystroglycan’s synaptic localization has not been examined in the mdx mutants. Clearly, additional work is required to better understand the relationship between Dystroglycan and Dystrophin at synapses in the brain.
 
 While the density of CCK+/CB1R+ IN synaptic puncta was normal in Dag1cyto/- mice, synaptic function was impaired to the same level as Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice, and seizure latency was reduced. Given that Dag1cyto/- and B4gat1M155T/M155T mutants show a similar reduction in Dystroglycan glycosylation (Figure 1B–C), our observation that the functional synaptic phenotype is restricted to the Dag1cyto/- mutant reinforces the notion that the intracellular domain of Dystroglycan plays an active role in organizing essential postsynaptic signaling elements. One possibility is that the intracellular domain of Dystroglycan is required to recruit additional postsynaptic scaffolding elements and receptors necessary for CCK+/CB1R+ basket synapse function (Uezu et al., 2019). Importantly, Dag1cyto/- mice did not show a cortical migration phenotype (Figure 2A–D), indicating that the functional synaptic deficits and reduced seizure latency occurred independent of cortical malformation.
 
-## Altered inhibitory synapse development and function may contribute to neurological symptoms in dystroglycanopathy
+### Altered inhibitory synapse development and function may contribute to neurological symptoms in dystroglycanopathy
 
 In addition to muscular atrophy and hypotonia, dystroglycanopathy patients often present with central nervous system symptoms. Patients with the most severe forms of dystroglycanopathy (FCMD, Muscle-Eye-Brain disease, and Walker-Warburg Syndrome) exhibit structural changes including hypoplasia of the retina, brainstem and spinal cord, cerebellar cysts, hydrocephalus, Type II lissencephaly, and microcephaly, associated with seizures and cognitive disability (Meilleur et al., 2014; Mercuri et al., 2009). Patients with milder forms of dystroglycanopathy may show cognitive disability and/or seizures without gross brain malformations, suggesting that there may be synaptic deficits independent of early neurodevelopmental processes (e.g. neuronal migration, axon guidance; Mercuri et al., 2009; Yang et al., 2022). The mouse models used in this study recapitulate the full spectrum of brain malformations seen in human patients. Emx1Cre:Dag1 cKO and Emx1Cre:Pomt2 cKO mice show Type II lissencephaly consistent with severe dystroglycanopathy, whereas B4gat1M155T/M155T and FkrpP448L/P448L mutants have relatively normal cortical development consistent with mild dystroglycanopathy. Mutations in any of the genes involved in the glycosylation of Dystroglycan can result in dystroglycanopathy with seizures, but the incidence and severity of seizures is higher in patients with brain malformations (Mercuri et al., 2009; Wang et al., 2017; Yang et al., 2022).
 
@@ -129,61 +205,336 @@ Mice have been used to model dystroglycanopathy for decades; however, to our kno
 
 While our B4gat1M155T/M155T mutants showed only a slightly reduced seizure latency, the mutants experienced more severe seizures than the other mouse models, resulting in death in 50% of cases (4/8 mutants compared to 0/6 fatalities among littermate controls) (Figure 7—figure supplement 1A). Flurothyl-induced seizures are typically generalized forebrain seizures; however in seizure-prone mouse models or in mice exposed to higher concentrations of flurothyl, mice can experience a suppression of brainstem oscillations followed by sudden death (Gu et al., 2022; Kadiyala et al., 2016). The B4gat1M155T/M155T mutation was originally identified based on a hindbrain axon guidance phenotype, suggesting they may have currently unknown defects in brainstem development or circuitry that could render them more susceptible to fatal brainstem seizures (Wright et al., 2012). Because the Dag1 and Pomt2 mutants are forebrain-specific conditional knockouts, (Figure 1—figure supplement 1A), we would not anticipate abnormal axon guidance in the brainstem or hindbrain of these mutants. Further research on the nature and progression of seizures observed in mouse models may have a profound impact on our understanding of dystroglycanopathy and potential therapeutic interventions.
 
-## Potential therapeutics for the restoration of synapse function in patients with dystroglycanopathy
+### Potential therapeutics for the restoration of synapse function in patients with dystroglycanopathy
 
 Most patients with dystroglycanopathy present with mutations in one of the 19 genes required for the glycosylation of Dystroglycan, resulting in hypoglycosylated Dystroglycan. We have demonstrated that a mild reduction in the glycosylation of Dystroglycan, as seen in FkrpP448L/P448L and B4gat1M155T/M155T mutants, does not significantly disrupt synapse function. This suggests that glycosylation may not need to be restored to wild-type levels in order to achieve normal synapse function. Gene replacement therapy may be well suited to treat certain forms of dystroglycanopathy by rescuing glycosylation. AAV-mediated delivery of fully functional glycosyltransferases has been shown to significantly improve muscle pathology and function in dystrophic mice, however synaptic phenotypes have not been examined (Kanagawa, 2021). Supplementation with (CDP)-ribitol, which is synthesized by Crppa (previously known as ISPD), can restore functional Dystroglycan glycosylation and improve muscle function in mouse models with hypomorphic mutations in Crppa or Fkrp (Cataldi et al., 2018). In mice lacking functional Crppa or Fkrp in skeletal muscle, (CDP)-ribitol can further enhance the therapeutic impact of gene restoration (Cataldi et al., 2020). However, whether (CDP)-ribitol treatment can improve Dystroglycan function in other models of dystroglycanopathy, or is capable of restoring Dystroglycan glycosylation and synaptic function in the nervous system, remains untested.
 
-## Conclusions
+### Conclusions
 
 We demonstrate that Dystroglycan is critical for the postnatal development of CCK+/CB1R+ interneuron axon targeting and synapse formation/function in the hippocampus of severe mouse models of dystroglycanopathy. Extracellular glycosylation of Dystroglycan and intracellular interactions involving the cytoplasmic domain are both essential for Dystroglycan’s synaptic organizing role. Mice with a partial reduction in glycosylation have relatively normal CCK+/CB1R+ interneuron axon targeting and synapse function, suggesting that even a partial restoration of glycosylation may have some therapeutic benefit. These findings suggest that CCK+/CB1R+ interneuron axon targeting defects may contribute to cognitive impairments and seizure susceptibility in dystroglycanopathy.
 
 ## Materials and methods
 
-## Animal husbandry
+### Animal husbandry
 
 All animals were housed and cared for by the Department of Comparative Medicine (DCM) at Oregon Health and Science University (OHSU), an AAALAC-accredited institution. Animal procedures were approved by OHSU Institutional Animal Care and Use Committee (Protocol # IS00000539), adhered to the NIH Guide for the care and use of laboratory animals, and provided with 24 hr veterinary care. Animal facilities are regulated for temperature and humidity and maintained on a 12 hr light-dark cycle and were provided food and water ad libitum. Animals older than postnatal day 6 (P6) were euthanized by administration of CO2, animals <P6 were euthanized by rapid decapitation.
 
-## Mouse strains and genotyping
+### Mouse strains and genotyping
 
 The day of birth was designated postnatal day 0 (P0). Ages of mice used for each analysis are indicated in the figure and figure legends. Mouse strains used in this study have been previously described and were obtained from Jackson Labs, unless otherwise indicated (Table 1; Chan et al., 2010; Cohn et al., 2002; Goebbels et al., 2006; Gorski et al., 2002; Hu et al., 2011; Peron et al., 2015; Satz et al., 2009; Tronche et al., 1999; Wright et al., 2012). Dag1+/- mice were generated by crossing the Dag1flox/flox line to a Sox2Cre line to generate germline Dag1Δ/+ mice hereafter referred to as Dag1+/- as the resultant transcript is nonfunctional. These mice were thereafter maintained as heterozygotes. Breeding schemas are as described in Table 2. Where possible, mice were maintained on a C57BL/6J background. Dag1cyto/- mice occurred at a frequency lower than Mendelian, suggesting that a proportion of progeny die embryonically. To increase viability of pups, the Dag1cyto line was outcrossed to a CD-1 background for one generation. The B4gat1 line has a mixed genetic background: it was founded on a C3H/He background and then crossed on to C57BL/6J for future generations. Genomic DNA extracted from toe or tail samples (Quanta BioSciences) was used to genotype animals. Primers for genotyping can be found on the JAX webpage or originating article. Dag1+/- mice were genotyped with the following primers: CGAACACTGAGTTCATCC (forward) and CAACTGCTGCATCTCTAC (reverse). For each mouse strain, littermate controls were used for comparison with mutant mice. For all experiments, unless otherwise noted, mice of both sexes were used indiscriminately. See Supplementary file 1 for a summary of sexes used in each experiment.
 
-## Perfusions and tissue preparation
+**Table 1.**
+ Mouse strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Common name</th>
+      <th>Strain name</th>
+      <th>Reference</th>
+      <th>Stock #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dag1Flox</td>
+      <td>B6.129(Cg)-Dag1tm2.1Kcam/J</td>
+      <td>Cohn et al., 2002</td>
+      <td>009652</td>
+    </tr>
+    <tr>
+      <td>Dag1cyto</td>
+      <td>N/A</td>
+      <td>Satz et al., 2009</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Pomt2Flox</td>
+      <td>POMT2tm1.1Hhu/J</td>
+      <td>Hu et al., 2011</td>
+      <td>017880</td>
+    </tr>
+    <tr>
+      <td>B4gat1M155T</td>
+      <td>B6(C3)-B4GAT1m1Ddg/J</td>
+      <td>Wright et al., 2012</td>
+      <td>022018</td>
+    </tr>
+    <tr>
+      <td>FkrpP448L</td>
+      <td>C57BL/6NJ-Fkrpem1Lgmd/J</td>
+      <td>Chan et al., 2010</td>
+      <td>034659</td>
+    </tr>
+    <tr>
+      <td>R26LSL-H2B-mCherry</td>
+      <td>B6.Gt(ROSA)26Sortm1.1Ksvo</td>
+      <td>Peron et al., 2015</td>
+      <td>023139</td>
+    </tr>
+    <tr>
+      <td>Emx1Cre</td>
+      <td>B6.129S2-Emx1tm1(cre)Krj/J</td>
+      <td>Gorski et al., 2002</td>
+      <td>005628</td>
+    </tr>
+    <tr>
+      <td>NestinCre</td>
+      <td>B6.Cg-Tg(Nes-cre)1Kln/J</td>
+      <td>Tronche et al., 1999</td>
+      <td>003771</td>
+    </tr>
+    <tr>
+      <td>NEXCre</td>
+      <td>NeuroD6tm1(cre)Kan</td>
+      <td>Goebbels et al., 2006</td>
+      <td>MGI:4429523</td>
+    </tr>
+    <tr>
+      <td>Sox2Cre</td>
+      <td>B6N.Cg-Edil3Tg(Sox2-cre)1Amc/J</td>
+      <td>Hayashi et al., 2002</td>
+      <td>014094</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Breeding schemes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Breeding Scheme</th>
+      <th>Control Genotype</th>
+      <th>Mutant Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emx1Cre/+;Dag1+/- x Dag1Flox/Flox</td>
+      <td>Emx1Cre/+;Dag1Flox/+</td>
+      <td>Emx1Cre/+;Dag1Flox/-</td>
+    </tr>
+    <tr>
+      <td>NestinCre/+;Dag1+/- x Dag1Flox/Flox</td>
+      <td>NestinCre/+;Dag1Flox/+</td>
+      <td>NestinCre/+;Dag1Flox/-</td>
+    </tr>
+    <tr>
+      <td>NEXCre/+;Dag1+/- x Dag1Flox/Flox</td>
+      <td>NEXCre/+;Dag1Flox/+</td>
+      <td>NEXCre/+;Dag1Flox/-</td>
+    </tr>
+    <tr>
+      <td>Emx1Cre/+;Pomt2Flox/+ x Pomt2Flox/Flox</td>
+      <td>Emx1Cre/+;Pomt2Flox/+</td>
+      <td>Emx1Cre/+;Pomt2Flox/Flox</td>
+    </tr>
+    <tr>
+      <td>Dag1cyto/+ x Dag1+/-</td>
+      <td>WT</td>
+      <td>Dag1cyto/-</td>
+    </tr>
+    <tr>
+      <td>B4gat1M155T/+ x B4gat1M155T/+</td>
+      <td>WT</td>
+      <td>B4gat1M155T/M155T</td>
+    </tr>
+    <tr>
+      <td>FkrpP448L/+ x FkrpP448L/+</td>
+      <td>WT</td>
+      <td>FkrpP448L/P448L</td>
+    </tr>
+  </tbody>
+</table>
+
+### Perfusions and tissue preparation
 
 Brains from mice younger than P15 were dissected and drop fixed in 5 mLs of 4% paraformaldehyde (PFA) in phosphate buffered saline (PBS) overnight for 18–24 hr at 4 °C. Mice P15 and older were deeply anesthetized using CO2 and transcardially perfused with ice cold 0.1 M PBS for two minutes to clear blood from the brain, followed by 15 mL of ice cold 4% PFA in PBS. After perfusion, brains were dissected and post-fixed in 4% PFA for 30 min at room temperature. Brains were rinsed with PBS, embedded in 4% low-melt agarose (Fisher cat. no. 16520100), and sectioned at 50 μm using a vibratome (VT1200S, Leica Microsystems Inc, Buffalo Grove, IL) into 24-well plates containing 1 mL of 0.1 M PBS with Sodium Azide.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Single and multiple immunofluorescence detection of antigens was performed as follows: free-floating vibratome sections (50 μm) were briefly rinsed with PBS, then blocked for 1 hr in PBS containing 0.2% Triton-X (PBST) plus 2% normal goat or donkey serum. Sections were incubated with primary antibodies (Table 3) diluted in blocking solution at 4 °C for 48–72 hr. For staining of Dystroglycan synaptic puncta, an antigen retrieval step was performed prior to incubation in primary antibody. Briefly, sections were incubated in sodium citrate solution for 15 min at 95°C in a water bath followed by 15 minutes at room temperature. Following incubation in primary antibody, sections were rinsed with PBS then washed with PBST three times for 20 min each. Sections were then incubated with a cocktail of secondary antibodies (1:500, Alexa Fluor 488, 546, 647) in blocking solution overnight at room temperature. Sections were washed with PBS three times for 20 min each and counterstained with Hoechst 33342 (1:10,000, Life Technologies, Cat# H3570) for 20 min to visualize nuclei. Finally, sections were mounted on slides using Fluoromount-G (SouthernBiotech) and sealed using nail polish.
 
-## Microscopy
+**Table 3.**
+ Primary antibodies used for immunohistochemistry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Host species</th>
+      <th>Dilution</th>
+      <th>Source</th>
+      <th>Catalog #</th>
+      <th>RRID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>α-Dystroglycan (IIH6C4)</td>
+      <td>Mouse</td>
+      <td>1:250</td>
+      <td>Millipore</td>
+      <td>05–593</td>
+      <td>AB_309828</td>
+    </tr>
+    <tr>
+      <td>β-Dystroglycan</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>Leica Biosystems</td>
+      <td>NCL-b-DG</td>
+      <td>AB_442043</td>
+    </tr>
+    <tr>
+      <td>CB1R</td>
+      <td>Guinea pig</td>
+      <td>1:1000</td>
+      <td>Synaptic Systems</td>
+      <td>258–104</td>
+      <td>AB_2661870</td>
+    </tr>
+    <tr>
+      <td>Cux1</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-13024</td>
+      <td>AB_2261231</td>
+    </tr>
+    <tr>
+      <td>Laminin</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Sigma-Aldrich</td>
+      <td>L9393</td>
+      <td>AB_477163</td>
+    </tr>
+    <tr>
+      <td>NECAB1</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA023629</td>
+      <td>AB1848014</td>
+    </tr>
+    <tr>
+      <td>NECAB2</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>Proteintech</td>
+      <td>12257–1-AP</td>
+      <td>AB_2877841</td>
+    </tr>
+    <tr>
+      <td>NeuN</td>
+      <td>Mouse</td>
+      <td>1:250</td>
+      <td>Millipore</td>
+      <td>MAB377</td>
+      <td>AB_2298772</td>
+    </tr>
+    <tr>
+      <td>Parvalbumin</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Swant</td>
+      <td>PV27</td>
+      <td>AB_2631173</td>
+    </tr>
+    <tr>
+      <td>Parvalbumin</td>
+      <td>Mouse</td>
+      <td>1:50</td>
+      <td>Swant</td>
+      <td>235</td>
+      <td>AB_10000343</td>
+    </tr>
+    <tr>
+      <td>Somatostatin</td>
+      <td>Rabbit</td>
+      <td>1:2000</td>
+      <td>Peninsula Labs</td>
+      <td>T-4103</td>
+      <td>AB_518614</td>
+    </tr>
+    <tr>
+      <td>Tbr1</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>Millipore</td>
+      <td>AB10554</td>
+      <td>AB_10806888</td>
+    </tr>
+    <tr>
+      <td>VGAT</td>
+      <td>Rabbit</td>
+      <td>1:500</td>
+      <td>Synaptic Systems</td>
+      <td>131–003</td>
+      <td>AB_887869</td>
+    </tr>
+    <tr>
+      <td>VGAT</td>
+      <td>Guinea Pig</td>
+      <td>1:500</td>
+      <td>Synaptic Systems</td>
+      <td>131–005</td>
+      <td>AB_1106810</td>
+    </tr>
+    <tr>
+      <td>VGlut3</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>Synaptic Systems</td>
+      <td>135–203</td>
+      <td>AB_887886</td>
+    </tr>
+    <tr>
+      <td>VIP</td>
+      <td>Rabbit</td>
+      <td>1:1000</td>
+      <td>ImmunoStar</td>
+      <td>20077</td>
+      <td>AB_572270</td>
+    </tr>
+  </tbody>
+</table>
+
+### Microscopy
 
 Imaging was performed on either a Zeiss Axio Imager M2 fluorescence upright microscope equipped with an Apotome.2 module or a Zeiss LSM 980 laser scanning confocal build around a motorized Zeiss Axio Observer Z1 inverted microscope with a Piezo stage. The Axio Imager M2 uses a metal halide light source (HXP 200 C), Axiocam 506 mono camera, and 10X/0.3 NA EC Plan-Neofluar, 20X/0.8 NA Plan-Apochromat objectives. The LSM 980 confocal light path has two multi-alkali PMTs and two GaAsP PMTs for four track imaging. Confocal images were acquired using a 63X/1.4 NA Plan-Apochromat Oil DIC M27 objective. Z-stack images were acquired and analyzed offline in ImageJ/FIJI (Schindelin et al., 2012) or Imaris 9.8 (Oxford Instruments). Images used for quantification between genotypes were acquired using the same exposure times. Brightness and contrast were adjusted in FIJI to improve visibility of images for publication. Figures were composed in Adobe Illustrator 2023 (Adobe Systems).
 
-## Image quantification
+### Image quantification
 
 For imaging experiments, 4–8 images were acquired from 2 to 4 coronal sections per animal, and at least three animals per genotype were used for analysis.
 
-## Cortical lamination
+#### Cortical lamination
 
 Images of somatosensory cortex were acquired using a 10X objective on a Zeiss Axio Imager M2. 4 μm z-stacks covering 16 μm were acquired and multiple tiles were stitched together. Maximum projections were used for analysis. In FIJI, the straight line tool with a 300 μm line width was used to measure the fluorescence profile from corpus callosum to pial surface. Background fluorescence was determined as the average fluorescence of the 20 darkest pixels; background was then subtracted from all points. The cortical distance was broken into 10 bins and average fluorescence within each bin was compared between genotypes.
 
-## Hippocampal CA1 CB1R and PV distribution
+#### Hippocampal CA1 CB1R and PV distribution
 
 Images of dorsal hippocampal CA1 were acquired using a 20X objective on a Zeiss Axio Imager M2. Maximum projection images of 0.6 μm z-stacks covering 9 μm were analyzed in FIJI. The straight line tool with a 300 μm line width was used to measure the fluorescence profile within SO, SP, and SR of CA1, avoiding Parvalbumin+ cell bodies. Background fluorescence was determined as the average fluorescence of the 50 darkest pixels; background was then subtracted from all points. The thickness of SP was determined using Hoechst fluorescence. Average fluorescence within SO/SP/SR was compared between genotypes.
 
-## Interneuron cell counts in CA1
+#### Interneuron cell counts in CA1
 
 Images of dorsal hippocampal CA1 were acquired using a 10X objective on a Zeiss Axio Imager M2. Maximum projection images of 4 μm z-stacks covering 40 μm were analyzed in FIJI. Immunolabeled NECAB1/NECAB2/PV cell bodies were counted if they were within 100 μm of stratum pyramidale. The freehand line tool was used to measure the length of stratum pyramidale. Cell number was normalized to the length of stratum pyramidale present in the analyzed region.
 
-## Hippocampal CB1R/PV/VGAT density and co-localization
+#### Hippocampal CB1R/PV/VGAT density and co-localization
 
 Images of dorsal hippocampal CA1 were acquired using a 63X objective on a Zeiss LSM 980. 0.2 μm z-stacks covering 3 μm were analyzed in Imaris. Hoechst fluorescence was used to determine the bounds of SP. The Imaris Spots function was used to determine the location of synaptic puncta in 3-dimensional space. Synaptic puncta were deemed to be co-localized if they were within 1 μm of each other.
 
-## Western blot
+### Western blot
 
 Cortex or hippocampus was dissected and solubilized in 1 mL of lysis buffer containing 100 mM NaCl, 50 nM Tris, 2.5 mM CaCl2, 1% Triton X-100, 1% n-Octyl-β-D-glucopyranoside, and protease inhibitors. Lysate was incubated at 4 °C for 1 hr and then spun at 12,500 g for 25 min. Supernatant containing 3000 μg (cortex) or 2000 μg (hippocampus) of protein (as determined by Pierce BCA Protein Assay) was applied to agarose-bound Wheat Germ Agglutinin (WGA) (Vector Labs) overnight at 4 °C. Beads were washed 3 times in TBS and boiled in 1X LDS sample buffer with 2-Mercaptoethanol (1:100) for 5 min. Samples were run on a 4–15% gradient polyacrylamide gel at 100 V for 75 min and then transferred to a PVDF membrane (100 V for 100 min). For immunoblotting, membranes were blocked in 5% milk TBST and then incubated overnight at 4 °C in 5% milk TBST containing primary antibody. Antibodies used: α-Dystroglycan (IIH6C4) (Millipore cat. no. 05–593, RRID: AB_309828, mouse IgM, 1:500), MANDAG2 (DSHB cat. no. 7D11, RRID: AB_2211772, mouse IgG1, 1:500), β3-tubulin (Cell Signaling Technology cat. no. 5568, RRID: AB_10694505, rabbit, 1:2000). Membranes were washed 3 times in TBST for 15 minutes each and incubated on fluorescent IRDye secondary antibody (1:10,000, LI-COR) in 5% milk TBST for 1 hr at room temperature. Membranes were imaged using a LI-COR Odyssey CLx 0918 imager and signal analyzed using LI-COR Image Studio Lite version 5.2.
 
-## Electrophysiology
+### Electrophysiology
 
 For acute slice preparation, mice were deeply anesthetized in 4% isoflurane and subsequently injected with a lethal dose of 2% 2, 2, 2-Tribromoethanol in sterile water followed by transcardial perfusion with 10 mL ice cold cutting solution containing the following (in mM): 93 NMDG, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 24 glucose, 5 Na Ascorbate, 2 Thiourea, 3 Na Pyruvate, 13 N-Acetyl Cysteine, 1 Kynurenic acid, 10 MgSO4, 0.5 CaCl2; pH 7.3, 300–340 mmol/kg. After rapid decapitation, the brain was briefly submerged in ice cold cut solution bubbled with carbogen (95% oxygen, 5% CO2) and then sectioned into 300 μm sagittal sections (Leica VT1200S vibratome) in bubbled ice-cold cut solution. Slices were recovered in 37 °C cut solution, bubbled, for 15 min followed by 1 hr in room temperature recording ACSF (containing, in mM: 125 NaCl, 25 NaHCO3, 1.25 NaH2PO4, 3 KCl, 25 D-Glucose, 2 CaCl2, 1 MgCl2) with an osmolarity of 310–320 mmol/kg and supplemented with 1.5 mM Na Ascorbate, bubbled.
 
@@ -191,10 +542,10 @@ CA1 pyramidal cells were patched in whole cell configuration using 3–5 MΩ bor
 
 To calculate the proportion of cells that responded to Carbachol, cells were sorted into ‘responsive’ and ‘non-responsive’ categories. Cells were categorized as responsive if sIPSC frequency increased by 20% or more with the addition of Carbachol. If sIPSC frequency in a cell changed by less than 20% or less than 0.5 Hz it was deemed non-responsive.
 
-## Flurothyl seizure induction
+### Flurothyl seizure induction
 
 Mice aged P40-P55 were used for the flurothyl-induced seizure susceptibility assay to determine seizure threshold. Briefly, mice were placed in an enclosed glass chamber equipped with a vaporization chamber out of reach of the mouse. Volatile liquid 10% Bis (2,2,2-Trifluorotheyl) Ether (Millipore Sigma cat. no 287571) in 95% EtOH was delivered to the vaporization chamber at a rate of 6 mL/hr. Seizure latency was determined as the amount of time until generalized tonic-clonic seizure (TCS). Upon exhibiting TCS, animals were immediately removed from the chamber and returned to their home cage, whereupon seizures ceased rapidly. Sample size was determined using power analysis as described below. The Emx1Cre:Dag1 experimental groups were powered sufficiently to determine sex differences. Because no sex difference was found (Figure 7—figure supplement 1C), sexes were pooled for the remaining experiments. For statistical tests, outliers were excluded. Outliers were calculated as follows: first, the interquartile range (IQR) was calculated and multiplied by 1.5. This 1.5*IQR value was subtracted from the 25% quartile (Q1) and added to the 75% quartile (Q3). Points outside of the range Q1 - 1.5*IQR <x < Q3+1.5*IQR were categorized as outliers and indicated as such on all graphs. This was done to remove bias from extreme outliers observed in this experiment.
 
-## Statistical analysis
+### Statistical analysis
 
 Phenotypic analyses were conducted using tissue collected from at least three mice per genotype from at least two independent litters. The number of mice and replicates used for each analysis (‘N’) are indicated in Supplementary file 1. Samples from each mouse were only used for one technical replicate. Power analysis using pilot data was used to determine samples sizes with α=0.05 and β=0.80. Phenotypes were indistinguishable between male and female mice and were analyzed together. Although experimenters were blind to genotype during analysis, in many cases highly penetrant phenotypes revealed the genotypes of the mice and no blinding could be faithfully performed. Unless otherwise stated, no data was excluded from analysis. For comparisons between two groups, significance was determined using a two-tailed Students t-test. For comparisons between more than two groups, significance was determined using a two-way ANOVA with Tukey HSD post-hoc analysis. Statistical significance was set at α=0.05 (p<0.05) and data presented as means ± SEM. Individual statistical tests and specific p-values are reported in Supplementary file 2. Statistical analyses and data visualization were performed in R (version 4.0.2).

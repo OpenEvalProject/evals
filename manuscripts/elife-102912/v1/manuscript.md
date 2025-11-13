@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Program in Microbiome Dynamics, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/0464eyp60 Department of Microbiology, University of Massachusetts Chan Medical School Worcester United States
-3. https://ror.org/0464eyp60 Program in Systems Biology, University of Massachusetts Chan Medical School Worcester United States
+1. Program in Microbiome Dynamics, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Department of Microbiology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+3. Program in Systems Biology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 
 ## Abstract
 
-Interspecies interactions involving direct competition via bacteriocin production play a vital role in shaping ecological dynamics within microbial ecosystems. For instance, the ribosomally produced siderophore bacteriocins, known as class IIb microcins, affect the colonization of host-associated pathogenic Enterobacteriaceae species. Notably, to date, only five of these antimicrobials have been identified, all derived from specific Escherichia coli and Klebsiella pneumoniae strains. We hypothesized that class IIb microcin production extends beyond these specific compounds and organisms. With a customized informatics-driven approach, screening bacterial genomes in public databases with BLAST and manual curation, we have discovered 12 previously unknown class IIb microcins in seven additional Enterobacteriaceae species, encompassing phytopathogens and environmental isolates. We introduce three novel clades of microcins (MccW, MccX, and MccZ), while also identifying eight new variants of the five known class IIb microcins. To validate their antimicrobial potential, we heterologously expressed these microcins in E. coli and demonstrated efficacy against a variety of bacterial isolates, including plant pathogens from the genera Brenneria , Gibbsiella, and Rahnella . Two newly discovered microcins exhibit activity against Gram-negative ESKAPE pathogens, i.e., Acinetobacter baumannii or Pseudomonas aeruginosa, providing the first evidence that class IIb microcins can target bacteria outside of the Enterobacteriaceae family. This study underscores that class IIb microcin genes are more prevalent in the microbial world than previously recognized and that synthetic hybrid microcins can be a viable tool to target clinically relevant drug-resistant pathogens. Our findings hold significant promise for the development of innovative engineered live biotherapeutic products tailored to combat these resilient bacteria.
+Interspecies interactions involving direct competition via bacteriocin production play a vital role in shaping ecological dynamics within microbial ecosystems. For instance, the ribosomally produced siderophore bacteriocins, known as class IIb microcins, affect the colonization of host-associated pathogenic Enterobacteriaceae species. Notably, to date, only five of these antimicrobials have been identified, all derived from specific Escherichia coli and Klebsiella pneumoniae strains. We hypothesized that class IIb microcin production extends beyond these specific compounds and organisms. With a customized informatics-driven approach, screening bacterial genomes in public databases with BLAST and manual curation, we have discovered 12 previously unknown class IIb microcins in seven additional Enterobacteriaceae species, encompassing phytopathogens and environmental isolates. We introduce three novel clades of microcins (MccW, MccX, and MccZ), while also identifying eight new variants of the five known class IIb microcins. To validate their antimicrobial potential, we heterologously expressed these microcins in E. coli and demonstrated efficacy against a variety of bacterial isolates, including plant pathogens from the genera Brenneria, Gibbsiella, and Rahnella. Two newly discovered microcins exhibit activity against Gram-negative ESKAPE pathogens, i.e., Acinetobacter baumannii or Pseudomonas aeruginosa, providing the first evidence that class IIb microcins can target bacteria outside of the Enterobacteriaceae family. This study underscores that class IIb microcin genes are more prevalent in the microbial world than previously recognized and that synthetic hybrid microcins can be a viable tool to target clinically relevant drug-resistant pathogens. Our findings hold significant promise for the development of innovative engineered live biotherapeutic products tailored to combat these resilient bacteria.
 
 ## Introduction
 
@@ -32,13 +32,213 @@ With the hypothesis that class IIb microcin production is a common trait among E
 
 Our informatics-driven analysis identified 12 promising class IIb microcin candidates from seven gene clusters with high similarity to Ec CA46 and Kp RYC492 in seven species across the Enterobacteriaceae family (Figure 1A, Figure 1—figure supplement 2): (i) Brenneria goodwinii (Bg; 2; GenBank: CP014137), (ii) Gibbsiella quercinecans (Gq; 1; CP014136), (iii) Klebsiella oxytoca (Ko; 1; CP033844), (iv) Pantoea sp. (Ps; 1; CP034363), (v) Raoultella ornithinolytica (Ro; 4; CP008886), (vi) Salmonella enterica (Se; 2; CP030220), (vii) Serratia fonticola (Sf; 1; CP033055). Although it has traditionally been a defining characteristic of class IIb microcins that all required genes are encoded within the chromosome (Sassone-Corsi et al., 2016), the gene cluster we discovered for Se is situated on a 159 kbp plasmid. Phylogenetic sequence analysis of both the antimicrobial and immunity peptide genes revealed the presence of eight different clades represented in both trees, respectively (Figure 1B and C). Regarding the well-established class IIb microcins MccH47, MccI47, MccM, MccG492, and MccE492, we identified novel members for each group, supported by nucleotide sequence similarity, amino acid identity, the closest blastp match, and domain predictions (Table 1, Figure 1—figure supplement 3). It is important to note that application of established tools for secondary metabolite identification (e.g. antiSMASH 7.0) (Blin et al., 2023) to these genomes did not yield identification of any of the old or novel microcins providing support of the relevance of our approach. In order to then ensure that these novel microcins are unique and not part of any other microcin class, we performed phylogenetic analysis for all known microcin genes from the classes I, IIa, and IIb and show distinct clustering for all newly described sequences (Figure 1—figure supplement 4). In light of this discovery, we propose a new nomenclature for class IIb microcins that includes the species initials in which they were identified (e.g. Ec, Kp), the closest relative already characterized class IIb microcin (G492, E492, H47, I47 or M), as well as the identifiers ‘A’ for antimicrobial or ‘I’ for immunity gene.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sequence alignments of the newly identified microcin and immunity genes with the gene clusters of E. coli (Ec) CA46 and K. pneumoniae (Kp) RYC492 using Easyfig (Sullivan et al., 2011). Antimicrobial (A) and immunity (I) genes in the center are represented by darker and lighter shades, respectively. X=mchX, I=mchI, B=mchB, E=mceE, L=mceL, M=mceM. (B,C) Phylogenetic trees of antimicrobial and corresponding immunity genes using codon-aligned nucleotide sequences with general time reversible model with discrete gamma distribution (GTR+G) and the Hasegawa-Kishino-Yano model with discrete gamma distribution (HKY+G), respectively. (D) MUSCLE (Edgar, 2004) alignment of the amino acid sequence of the signal peptide sequence as well as the C-terminus of the antimicrobial peptides.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** BLAST sequence comparison of gene clusters was created using Easyfig (Sullivan et al., 2011). (A) Antimicrobial and immunity genes of each cluster are represented by darker and lighter shades, respectively. Colored polygons represent functional microcins MccE492 (pink) and MccG492 (dark blue) from K. pneumoniae as well as MccH47 (light blue), MccI47 (red), and MccM (green) from E. coli. X=mchX, I=mchI, B=mchB, E=mceE, L=mceL, M=mceM. Asterisks indicate truncated and non-functional microcin or immunity genes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** BLAST sequence comparison of gene clusters was created using Easyfig (Sullivan et al., 2011). (A-G) Antimicrobial and immunity genes of each cluster are represented by darker and lighter shades, respectively. Colored polygons represent novel microcins from the genome indicated on the left: MccE492 (pink), MccG492 (dark blue), MccH47 (light blue), MccI47 (red), MccM (green), MccX (black), MccW (dark red), and MccZ (dark green). X=mchX, I=mchI, B=mchB, E=mceE, L=mceL, M=mceM. Asterisks indicate truncated and non-functional microcin or immunity genes.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Previously known proteins are highlighted in bold.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Phylogenetic tree of all known microcin genes using codon-aligned nucleotide sequences with general time reversible model with discrete gamma distribution (GTR+G). The respective signal peptides were removed to ensure alignment of the active regions with antimicrobial activity. Previously known class IIb microcins are highlighted in bold.
+
+**Table 1.**
+ Blastp results and closest matches to the known class IIb microcins MccE492, MccG492, MccH47, MccI47, or MccM.Red color indicates no significant match found.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Microcin name</th>
+      <th>Species</th>
+      <th>Accession no.</th>
+      <th>Antimicrobial gene name</th>
+      <th>Antimicrobial closest match</th>
+      <th>Identical/total length</th>
+      <th>E-value</th>
+      <th>Immunity gene name</th>
+      <th>Immunity closest match</th>
+      <th>Identical/total length</th>
+      <th>E-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bg E492</td>
+      <td>Brenneria goodwinii</td>
+      <td>CP014137</td>
+      <td>Bg E492A</td>
+      <td>Kp E492A (mceA)</td>
+      <td>35/106</td>
+      <td>2.00E-14</td>
+      <td>Bg E492I</td>
+      <td>Kp E492I (mceB)</td>
+      <td>14/94</td>
+      <td>6.00E-04</td>
+    </tr>
+    <tr>
+      <td>Bg X</td>
+      <td>Brenneria goodwinii</td>
+      <td>CP014137</td>
+      <td>Bg XA</td>
+      <td>Kp E492A (mceA)</td>
+      <td>21/98</td>
+      <td>6.90E-02</td>
+      <td>Bg XI</td>
+      <td>Ec MI (mcmI)</td>
+      <td>10/78</td>
+      <td>2.60E+00</td>
+    </tr>
+    <tr>
+      <td>Gq W</td>
+      <td>Gibbsiella quercinecans</td>
+      <td>CP014136</td>
+      <td>Gq WA</td>
+      <td>Ec I47A (mciA)</td>
+      <td>7/103</td>
+      <td>8.10E+00</td>
+      <td>Gq WI</td>
+      <td>Ec MI (mcmI)</td>
+      <td>8/74</td>
+      <td>3.30E+02</td>
+    </tr>
+    <tr>
+      <td>Ko H47</td>
+      <td>Klebsiella oxytoxa</td>
+      <td>CP033844</td>
+      <td>Ko H47A</td>
+      <td>Ec H47A (mchB)</td>
+      <td>32/77</td>
+      <td>1.00E-07</td>
+      <td>Ko H47I</td>
+      <td>Ec H47I (mchI)</td>
+      <td>19/69</td>
+      <td>2.00E-14</td>
+    </tr>
+    <tr>
+      <td>Ps G492</td>
+      <td>Pantoea sp.</td>
+      <td>CP034363</td>
+      <td>Ps G492A</td>
+      <td>Kp G492A (mceL)</td>
+      <td>43/89</td>
+      <td>6.00E-09</td>
+      <td>Ps G492I</td>
+      <td>Kp G492I (mceM)</td>
+      <td>37/85</td>
+      <td>2.00E-20</td>
+    </tr>
+    <tr>
+      <td>Ro Z</td>
+      <td>Raoultella ornithinolytica</td>
+      <td>CP008886</td>
+      <td>Ro ZA</td>
+      <td>Ec MA (mcmA)</td>
+      <td>21/64</td>
+      <td>1.00E-03</td>
+      <td>Ro ZI</td>
+      <td>Ec MI (mcmI)</td>
+      <td>5/74</td>
+      <td>2.00E+01</td>
+    </tr>
+    <tr>
+      <td>Ro H47</td>
+      <td>Raoultella ornithinolytica</td>
+      <td>CP008886</td>
+      <td>Ro H47A</td>
+      <td>Ec H47A (mchB)</td>
+      <td>31/79</td>
+      <td>2.00E-07</td>
+      <td>Ro H47I</td>
+      <td>Ec H47I (mchI)</td>
+      <td>21/69</td>
+      <td>4.00E-14</td>
+    </tr>
+    <tr>
+      <td>Ro I47</td>
+      <td>Raoultella ornithinolytica</td>
+      <td>CP008886</td>
+      <td>Ro I47A</td>
+      <td>Ec I47A (mciA)</td>
+      <td>37/79</td>
+      <td>4.00E-26</td>
+      <td>Ro I47I</td>
+      <td>Ec I47I (mciI)</td>
+      <td>64/135</td>
+      <td>1.00E-43</td>
+    </tr>
+    <tr>
+      <td>Ro X</td>
+      <td>Raoultella ornithinolytica</td>
+      <td>CP008886</td>
+      <td>Ro XA</td>
+      <td>Ec MA (mcmA)</td>
+      <td>18/99</td>
+      <td>4.40E-01</td>
+      <td>Ro XI</td>
+      <td>Ec MI (mcmI)</td>
+      <td>9/61</td>
+      <td>1.00E-02</td>
+    </tr>
+    <tr>
+      <td>Sf H47</td>
+      <td>Serratia fonticola</td>
+      <td>CP033055</td>
+      <td>Sf H47A</td>
+      <td>Ec H47A (mchB)</td>
+      <td>38/87</td>
+      <td>8.00E-11</td>
+      <td>Sf H47I</td>
+      <td>Ec H47I (mchI)</td>
+      <td>48/68</td>
+      <td>4.00E-22</td>
+    </tr>
+    <tr>
+      <td>Se G492</td>
+      <td>Salmonella enterica</td>
+      <td>CP030220</td>
+      <td>Se G492A</td>
+      <td>Kp G492A (mceL)</td>
+      <td>56/85</td>
+      <td>1.00E-11</td>
+      <td>Se G492I</td>
+      <td>Kp G492I (mceM)</td>
+      <td>38/84</td>
+      <td>1.00E-23</td>
+    </tr>
+    <tr>
+      <td>Se M</td>
+      <td>Salmonella enterica</td>
+      <td>CP030220</td>
+      <td>Se MA</td>
+      <td>Ec MA (mcmA)</td>
+      <td>34/90</td>
+      <td>1.00E-17</td>
+      <td>Se MI</td>
+      <td>Ec MI (mcmI)</td>
+      <td>38/71</td>
+      <td>6.00E-04</td>
+    </tr>
+  </tbody>
+</table>
+
 Based on this, the novel G492 relative found in S. enterica will be called Se G492 with the antimicrobial peptide identified as Se G492A and the immunity peptide identified as Se G492I. It is worth highlighting that in the case of the G492 group, all its members have the immunity gene located downstream of the antimicrobial gene, whereas for the other clades, this arrangement is reversed. In addition to uncovering eight novel variants of the five previously characterized microcins, we have identified four additional microcins through manual curation of ORFs in proximity to the microcin maturation genes. These novel microcins, which we name microcin W (MccW), microcin X (MccX), and microcin Z (MccZ), seem to belong to three entirely new clades based on nucleotide similarity (Figure 1B and C). The two members of the microcin X group, found in B. goodwinii (Bg X) and R. ornithinolytica (Ro X), only show significant similarity between one another, but not to any of the other antimicrobial or immunity peptides. This holds true for the nucleotide similarity (Figure 1B and C) as well as amino acid identity and the closest blastp hits (Figure 1D, Table 1, Supplementary file 1). Similarly, MccW from G. quercinecans (Gq W) does not show any sequence similarity to either the known or novel antimicrobial or immunity peptides in terms of nucleotide similarity, amino acid identity, the respective blastp hits, or phylogenetic localization (Figure 1, Table 1, Supplementary file 1). Lastly, MccZ from R. ornithinolytica (Ro Z) shows insignificant amino acid similarity with Ec MA (mcmA) for the antimicrobial, whereas the immunity peptide does not have any match among the known or the novel microcins (Figure 1C, Table 1, Supplementary file 1). Crucially, the identification of MccX, and MccZ within the same gene clusters as representatives of the E492 (Bg E492), H47 (Ro H47), and I47 (Ro I47) groups, strongly implies that they are functional components of a microcin gene cluster.
 
 To test the newly identified microcins for antimicrobial activity, we used our previously established Ec overexpression system (Mortzfeld et al., 2022; Palmer et al., 2020). All antimicrobial and immunity peptides were codon optimized, synthesized, and cloned into an inducible high copy vector (see Materials and methods). Thus, we extracted the novel microcins out of their native genomic context of siderophore biosynthesis and transferred them into a heterologous expression background optimized for microcin-monoglycosylated enterobactin (MGE) linkage (Mortzfeld et al., 2022; Palmer et al., 2020). This allowed us to create hybrid compounds that could be efficiently tested for antimicrobial activity in an E. coli background. Through static plate inhibition assays involving live-producing cells (Mortzfeld et al., 2022; Palmer et al., 2020; Palmer et al., 2018), we successfully validated robust antimicrobial activity of 11 out of the 12 newly discovered microcins (Figure 2A). Notably, antimicrobial activity was only observed in iron-depleted media (Figure 2B and C). The hybrid microcins exhibit a range of specificities, with some inhibiting targets narrowly (e.g. Ps G492AI), while others exert a broader effect against multiple bacteria (e.g. Se G492AI). Moreover, our study also provides the first evidence of inhibitory activity by Kp G492, a microcin whose existence and function have only been proposed in the scientific literature based on genetic sequence (Vassiliadis et al., 2010).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/102912/elife-102912-fig2-v1.jpg)
 
-**Figure 2.:** Enterobacteriaceae and Gram-negative ESKAPE pathogens.(A) Heatmap summarizing the inhibitory potential of known and novel class IIb microcins against a library of Enterobacteriaceae, Pseudomonadales, and Gram-positive bacteria, including multidrug-resistant isolates (red) as determined by static inhibition assays with live-producing bacteria. *=activity determined through microcin purification and minimum inhibitory concentration assays (Mortzfeld et al., 2022; Palmer et al., 2020). (B) Relative minimum inhibitory concentrations for S. enterica (Se) G492 against different bacterial species. Note that Se G492 is 256 times more potent against A. baumannii (BAA 1790) compared to K. pneumoniae (BAA 1705). (C) Static inhibition assays comparing K. pneumoniae (Kp) E492, Kp G492, Ec H47, E. coli (Ec) I47, Ec M, and Se G492 activity from single colony production against multidrug-resistant A. baumannii (BAA 1790) and Pseudomonas aeruginosa (PA14). Note that iron-limited conditions (DP) are required for antimicrobial activity, confirming action of class IIb microcins. L-ara=L-arabinose, DP = 2,2-dipyridyl, scale bars: 1 cm.
+**Figure 2.:** (A) Heatmap summarizing the inhibitory potential of known and novel class IIb microcins against a library of Enterobacteriaceae, Pseudomonadales, and Gram-positive bacteria, including multidrug-resistant isolates (red) as determined by static inhibition assays with live-producing bacteria. *=activity determined through microcin purification and minimum inhibitory concentration assays (Mortzfeld et al., 2022; Palmer et al., 2020). (B) Relative minimum inhibitory concentrations for S. enterica (Se) G492 against different bacterial species. Note that Se G492 is 256 times more potent against A. baumannii (BAA 1790) compared to K. pneumoniae (BAA 1705). (C) Static inhibition assays comparing K. pneumoniae (Kp) E492, Kp G492, Ec H47, E. coli (Ec) I47, Ec M, and Se G492 activity from single colony production against multidrug-resistant A. baumannii (BAA 1790) and Pseudomonas aeruginosa (PA14). Note that iron-limited conditions (DP) are required for antimicrobial activity, confirming action of class IIb microcins. L-ara=L-arabinose, DP = 2,2-dipyridyl, scale bars: 1 cm.
 
 To this date class IIb microcins have been only shown to be very selective and only active against different species within the Enterobacteriaceae family (Mortzfeld et al., 2022; Vassiliadis et al., 2010; Palmer et al., 2020; Palmer et al., 2018). While the activity for the novel microcins varies, we here report, for the first time, antimicrobial activity outside of the Enterobacteriaceae family utilizing hybrid antimicrobial peptides. We demonstrate that microcins Ps G492 and Se G492 have activity against Gram-negative multidrug-resistant ESKAPE pathogens with both being capable of inhibiting A. baumannii (BAA 1790), and with microcin Se G492 alone also showing activity against P. aeruginosa (PA14) (Figure 2). Specifically, compared to K. pneumoniae (BAA 1705) Se G492 is 256 times more effective against A. baumannii (BAA 1790), 128 times more effective against E. coli (BAA 196), and 8 times more effective against P. aeruginosa (PA14) (Figure 2B).
 
@@ -54,26 +254,26 @@ In this study, we challenge the prevailing notion that class IIb microcin produc
 
 ## Materials and methods
 
-## Bioinformatic class IIb microcin identification
+### Bioinformatic class IIb microcin identification
 
 We developed a pipeline that by leveraging BLAST (Boratyn et al., 2012) enabled us to mine publicly available genome databases for novel, previously undescribed class IIb microcins. We included mchCDEF and mcmL for Ec as well as mceCDGHIJ for Kp for posttranslational modification and export, expecting more reliable hits for longer and functionally conserved proteins in close proximity to class IIb microcin and immunity genes. Thus, we first ran tblastn (Boratyn et al., 2012) against RefSeq (O’Leary et al., 2016), to screen for all genes related to biosynthesis pathways, known microcin genes, as well as immunity gene sequences exhibiting homology to the microcin gene clusters found in Ec CA46 and Kp RYC492. Homology to the microcin gene clusters were guided by BLAST parameters sseqid (genome ID), pident (percentage of identical positions) along with sstart (start of alignment in genome) and send (end of alignment position in genome). Resulting hits were concatenated by genome ID and assessed for their proximity to one another in the genome. These gene clusters should, at best, contain all the known genes required for toxin maturation, including mchCDEF and mcmL (Vassiliadis et al., 2010; Palmer et al., 2020). In addition to genomic hits to the known microcins, small ORFs of 50–150 amino acids in size close to the biosynthesis genes were screened and annotated manually using the criteria described below as well as their domains were predicted using SMART (Letunic et al., 2021). The ORFs were meticulously examined and assessed against established class IIb microcin criteria known from Ec H47, Ec I47, Ec M, Kp E492, and Kp G492: (i) a serine-rich C-terminus culminating in a final serine, (ii) the presence of fewer than two cysteine residues, (iii) a signal peptide within the initial 15 amino acids ending with GG or GA, and (iv) close proximity (≤200 bp) to an ORF featuring a predicted transmembrane domain, typically encoding an immunity peptide. The identified genes were included in the pipeline’s input to expand the scope of gene detection. We repeated this process iteratively through the pipeline until no additional genes were added to the output. Subsequently, blastp was used to assess microcin similarity as shown in Table 1 and Supplementary file 1.
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 For the native full-length coding sequence of the microcin and immunity genes, a codon-based sequence alignment was generated using the MUSCLE algorithm (Edgar, 2004). For phylogeny of all microcins, the nucleotide sequences without the respective signal peptides were codon-aligned. Subsequently, we determined the best fit substitution models for maximum likelihood phylogenetic analyses, resulting in the general time reversible model with discrete gamma distribution (GTR+G) and the Hasegawa-Kishino-Yano model with discrete gamma distribution (HKY+G), respectively. A bootstrap test with 1000 replicates for maximum likelihood and random seed was conducted for all trees. Alignment, model testing, and tree building were performed in MEGA11 (Tamura et al., 2021).
 
-## antiSMASH analyses
+### antiSMASH analyses
 
 To test if similar results of class IIb microcin identification could be obtained with automated bioinformatic tools, we ran antiSMASH 7.0 (Blin et al., 2023), a widely used tool for microbial genome mining and biosynthetic gene cluster detection. As input, we utilized the seven genomes from the newly identified class IIb microcins: (i) Bg CP014137, (ii) Gq CP014136, (iii) Ko CP033844, (iv) Ps CP034363, (v) Ro CP008886, (vi) Se CP030220, (vii) Sf CP033055. As a positive control for the well-established microcins Kp E492 and Kp G492 as well as Ec H47 and Ec M, we used the accession numbers CP127839 (Kp RYC492) and CP148105 (Ec Nissle 1917), respectively. Notably, using the ‘loose’ setting, in none of the cases a class IIb microcin biosynthesis gene cluster was detected, nor were any microcin genes identified. This was the case for both, the novel microcins and the original, well-annotated, microcins.
 
-## Plasmids and heterologous class IIb microcin expression
+### Plasmids and heterologous class IIb microcin expression
 
 ORFs of identified microcin and immunity genes were codon optimized for frequent Ec codon usage without creating repetitive sequences and synthesized by Integrated DNA Technologies (Coralville, IA, USA) with 18 bp of native 5’ upstream sequence and 20 bp of native 3’ downstream sequence, respectively. Using Gibson Assembly (Gibson et al., 2009), the genes were cloned into our previously established Ec class IIb microcin expression system that results in mature class IIb microcins posttranslationally modified with an MGE (Mortzfeld et al., 2022; Palmer et al., 2020). Briefly, the antimicrobial and the immunity genes are co-expressed under the control of an arabinose-inducible pBad/araC promoter in a high copy plasmid with a pUC-derived origin of replication. All assemblies were verified using whole plasmid sequencing. DNA files for all used plasmids can be found as supplementary material.
 
-## Static inhibition assays
+### Static inhibition assays
 
 Cultures of strains with confirmed plasmid assemblies were spread on LB agar plates containing 100 µg/ml ampicillin. In addition to a pUC19 control without microcin expression, single colonies for each microcin were picked with a sterile pipet tip and all stabbed into the same solid LB agar plate containing 100 µg/ml ampicillin for plasmid retention, 0.2 mM 2,2-dipyridyl to create iron-limited conditions during the growth phase, and 0.4% L-arabinose for induction of gene expression. Plates were incubated at 37°C for up to 72 hr, before they were overlaid with the target bacterial isolates. Note that testing all microcin-expressing stains on the same plate allowed us to confidently assess differential inhibitory activity between all 17 tested microcins. For the overlay, the microcin-producing bacteria in the stabs were inactivated using chloroform vapors and 10 min under ultraviolet light. Then, target bacteria were diluted 1:2000 from overnight culture in LB media containing 100 µg/ml ampicillin and 0.2 mM 2,2-dipyridyl. Ec and Shigella flexneri strains were diluted 1:200 to acquire dense bacterial lawns. Finally, 0.5 ml of molten agar was added to 2 ml of liquid media and the resulting soft agar was spread on the plate with the inactivated bacteria and incubated for 16 hr at 37°C. The pUC19 control strain was unable to create any zone of inhibition against any of the tested target bacteria. Note that not all tested target bacteria confer resistance to ampicillin, however, placing stabs for 17 ampicillin-resistant microcin producers and the negative control evenly spaced into a single plate degrades the antibiotic within 24 hr of incubation and thus before the overlay with the target bacteria is added.
 
-## Relative MIC dilution factors
+### Relative MIC dilution factors
 
 For enrichment of microcin Se G492, an MBP-microcin fusion protein was expressed from pHMT-SeG492 in E. coli BL21 cells as previously described (Mortzfeld et al., 2022; Palmer et al., 2020). Cells harvested from 6 l culture were resuspended in 50 ml column buffer (200 mM NaCl, 20 mM Tris-HCl, pH 7.5), lysed by sonication, and passed through 5 ml of high flow amylose resin (New England Biolabs, Ipswich, MA, USA) as recommended by the manufacturer. The protein was eluted with 30 ml 10 mM maltose, cleaved with Tobacco etch virus (TEV) protease, and further processed as previously reported (Mortzfeld et al., 2022; Palmer et al., 2020). After removal of the histidine-tagged TEV protease, the relative MIC assays were conducted using sterile 96-well round bottom microplates. The plates were prepared as follows: the first row contained 20 µl of 2× LB with 0.4 mM 2,2’-dipyridyl and 20 µl of Se G492 containing solution in amylose resin elution buffer (200 mM NaCl, 20 mM Tris-HCl, 10 mM maltose, pH 7.5). All other wells were filled with 20 µl of 1× LB, 0.2 mM 2,2’-dipyridyl, and 0.5× amylose resin elution buffer, and a twofold serial dilution was performed across the plate. The target bacteria were grown overnight in LB at 200 rpm and 37°C and were added to a final dilution of 10–4 into the wells. The plates were then incubated in the dark at 37°C with gentle agitation. Relative MICs were determined as the lowest concentration at which no growth was observed after 24 hr. All reported values represent the median of at least three biological replicates.

@@ -48,21 +48,49 @@ Here, we aimed to delineate the mechanisms underlying DSB recognition. We found 
 
 ## Results
 
-## SIRT6 directly recognizes DNA double-strand breaks
+### SIRT6 directly recognizes DNA double-strand breaks
 
 Nuclear SIRTs (SIRT1/6/7) are quickly mobilized to DSBs (Figure 1—figure supplement 1) and serve as a scaffold for DNA repair factors (Vazquez et al., 2016; Dobbin et al., 2013; Toiber et al., 2013). Intriguingly, these nuclear SIRTs are also activated by RNA and the nucleosome (Gil et al., 2013; Tong et al., 2017). We thus reasoned that SIRTs might directly sense DNA breaks, especially DSBs. To test our hypothesis, we established a molecular docking simulation using AutoDock Vina software (Trott and Olson, 2010). We obtained the crystal structures for SIRT1 (PDB code 4I5I) (Zhao et al., 2013), SIRT6 (PDB code 3PKI) (Pan et al., 2011) and SIRT7 (PDB code 5IQZ) (Priyanka et al., 2016) from the Protein Data Bank (https://www.rcsb.org). We removed the heteroatoms to expose interaction regions and added Gasteiger charges to construct docking models. A DSB structure was extracted from the PDB code 4DQY (Langelier et al., 2012). As SIRTs use NAD+ as a co-substrate in amide bond hydrolysis, which shares a similar skeleton to the phosphate, base and ribose groups on broken DSB ends, we included NAD+ as a simulation control.
 
 We found that the binding affinity between NAD+ and all nuclear SIRTs was within the range of –eight to –10 kcal/mol (Figure 1A). Surprisingly, only the binding between the DSB and SIRT6 was energetically favored (–12.7 kcal/mol), being even lower than that of NAD+ (Figure 1A,B). This finding suggested that SIRT6 might directly bind to DSBs and prompted us to gain further experimental evidence.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig1-v2.jpg)
+
+**Figure 1.:** (A) The predicted binding affinity (kcal/mol) between sirtuins (SIRTs) and ligands (NAD+ and a DSB) by molecular docking analysis. (B) Molecular docking of SIRT6 with a DSB (right) and NAD+ (left) using AutoDock Vina software. (C) A biotin-labeled DNA duplex was incubated with the indicated recombinant SIRTs. Streptavidin beads were pulled down and blotted with anti-GST antibodies. (D) The fluorescence polarization (FP) of FAM-labeled DNA (20 nM) was detected after incubation with GST-SIRT1, GST-SIRT6, GST-SIRT7 or GST at the indicated concentration. (E) A pulldown assay comprising a biotin-labeled DNA duplex with GST-SIRT6 in the presence of unlabeled linear DNA or circular DNA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) GFP-fused SIRT1, SIRT6 and SIRT7 were introduced into mouse embryonic fibroblasts (MEFs). The fluorescence signal was captured at 20 s and 1 min after laser-induced DNA damage. Scale bar, 10 μm. (B) The relative intensity of GFP-SIRTs was calculated in Fiji (Image J). The data represent the means ± s.e.m., *p<0.05, ns: not significant, n = 10.
+
 We next generated a DSB-mimicking biotin-conjugated DNA duplex and performed an in vitro pulldown assay. Recombinant SIRT6 (rSIRT6), but not rSIRT1 or rSIRT7, bound to the DNA duplex (Figure 1C). This finding was verified by a fluorescence polarization (FP) assay using a FAM-labeled DNA duplex. We observed dynamic FP (Kd = 166.3 nM; Figure 1D), supporting a specific and direct interaction between the DNA duplex and rSIRT6. By contrast, the FP was minimal for rSIRT1, rSIRT7 and GST control (Figure 1D). To interrogate whether such binding is specific to broken DNA, we repeated the pulldown assay in the presence of unlabeled linear or circular DNA. While linearized DNA inhibited rSIRT6 binding to the DNA duplex, circular DNA had a minimal effect (Figure 1E). Together, these data indicate that SIRT6, but not SIRT1 or SIRT7 recognizes and directly binds to DSBs.
 
-## SIRT6 is dynamically acetylated in the N terminus at K33
+### SIRT6 is dynamically acetylated in the N terminus at K33
 
 As predicted from the crystallographic data, SIRT6s form an asymmetric hexamer (Pan et al., 2011) that generates three potential DSB binding pockets; each of these pockets consist of two N-termini and two C-termini from two adjacent molecules (Figure 2—figure supplement 1A). Both the N-termini and C-termini are essential for SIRT6 to associate with chromatin (Tennen et al., 2010). To gain biochemical evidence for SIRT6 polymerization, we employed a biomolecule fluorescence compensation system (BiFC). In brief, we cloned SIRT6 cDNA into either the N-terminal or C-terminal of a yellow fluorescence protein (YFP), herein termed N-SIRT6 and C-SIRT6. The yellow fluorescence was detectable by FACS only when N-SIRT6 directly interacted with C-SIRT6. After co-transfecting these constructs into HEK293 cells, we detected a strong fluorescence signal by FACS in >24% cells (Figure 2—figure supplement 1B), suggesting a direct interaction between the two SIRT6 molecules. By contrast, fluorescence signal was rarely detected in BiFC analysis of N-SIRT6 and C-SIRT3 or non-tagged SIRT6 and C-SIRT3 (Figure 2—figure supplement 1C). To confirm this SIRT6 polymerization event, we performed co-immunoprecipitation (Co-IP) in HEK293 cells in which we had co-overexpressed FLAG-SIRT6 and HA-SIRT6. Consistently, we detected FLAG-SIRT6 but not FLAG-SIRT3 in the anti-HA-SIRT6 immunoprecipitates (Figure 2—figure supplement 1D).
 
 The DSB phosphate backbone is negatively charged. The positive-charged environment of SIRT6 thus favors its binding to DSBs. Indeed, one of our predicted DSB-binding pockets formed by two adjacent molecules in SIRT6 hexamer consisted of six positively charged residues at the edge, namely four arginine (R32/39) and two lysine (K33) residues (Figure 2—figure supplement 1E). Acetylation is the most redundant post-translational modification that converts positively charged K to neutral Kac. This property is utilized by proteins with a lysine-rich domain (KRD), for example Histones, Ku70 and p53, for mediating dynamic interactions with proteins harboring an acidic domain like SET (Wang et al., 2016). The heterodimerized Ku70 and Ku80 complex directly senses DSBs via a flexible C-termini containing multiple K residues, and regulates NHEJ (Hu et al., 2012). We therefore examined whether SIRT6 is (de)acetylated on these K residues thus sensing DSBs. We immunoprecipitated FLAG-SIRT6 with an anti-FLAG antibody and then probed the immunoprecipitate with anti-Kac antibodies. As shown, Kac was detected in the precipitated FLAG-SIRT6 immunocomplex (Figure 2A). We then purified FLAG-SIRT6 and performed high-resolution LC-MS/MS to identify which K residues are acetylated (Supplementary file 1). We identified K15 and K33 in the N-terminus. To confirm these acetylated K residues, we generated K15R and K33R point mutants, with K17R serving as a negative control. While neither K15R nor K17R affected the FLAG-SIRT6 acetylation level, K33R significantly inhibited it (Figures 2A and Figure 2—figure supplement 2), supporting that K33 is dynamically (de)acetylated.
 
-## Dynamic SIRT6 K33 (de)acetylation regulates DSB sensing
+![Figure 2.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig2-v2.jpg)
+
+**Figure 2.:** (A) The acetylation levels of FLAG-SIRT6 WT and K33R were assessed by western blotting with pan-acetyl antibodies in anti-FLAG immunoprecipitates in HEK293T cells. (B) Streptavidin pulldown assay showing the interactions between a biotin-labeled DNA duplex and the indicated GST-SIRT6 recombinant proteins. (C) Fluorescence polarization (FP) of Fam-labeled DNA was detected after incubating with GST-SIRT6 WT, K133R or K133Q recombinant proteins. (D–E) The dynamic recruitment of GFP-SIRT6, K33R, K33Q and HY (H133Y) to laser-induced DNA breaks was assessed by confocal microscopy. Representative images are shown (D) and the white dot circles indicate the damage sites. Scale bar, 10 μm. The relative intensity was calculated in Fiji (Image J) (E). The data represent the means ± s.e.m., *p<0.05, ns: not significant, n = 30. (F) A schematic of the DR-GFP construct, which contains a single I-SceI site to create DNA break in the presence of triamcinolone acetonide and I-SceI endonuclease. The positions of the amplification primers 2K and 5K downstream I-SceI site used for q-PCR are indicated. (G) DNA breaks were generated in DR-GFP stably transfected HeLa cells after triamcinolone acetonide (TA) treatment for 20 min, as evidenced by elevated γH2AX staining. (H) ChIP-PCR analysis of the enrichment of SIRT6 and various SIRT6 mutants at DNA break sites. The relative SIRT6 expression was confirmed by western blotting. The qPCR data were normalized to the input DNA and a sample not treated with I-SceI endonuclease (no cut). The data represent the means ± s.e.m., *p<0.05, ns: not significant, n = 3. (I–J) Fluorescence imaging of GFP-SIRT6 WT, indicated mutants, immune-stained H3K9ac and H3K56ac in Sirt6–/– MEFs after laser induced DNA damage. PAR immunostaining reveals the damage site. Scale bar, 10 μm. The relative fluorescence intensity was calculated by Fiji (Image J) (J). The data represent the means ± s.e.m., **p<0.01, ns: not significant, n = 30.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of one putative DSB-binding pocket, consisting of two N-termini (yellow and aquamarine) and two C-termini (orange and lime green) of two adjacent SIRT6 hexamer molecules. (B) Schematic of the BiFC system (upper left) and yellow fluorescence detection in HEK293 cells co-transfected with empty vectors; N-SIRT6 and C-SIRT6; N-SIRT6 and C-SIRT3 via the BiFC system. (C) Yellow fluorescence detection in HEK293 cells ectopically expressing untagged SIRT6 and C-SIRT3. (D) Co-IP and western blot analysis of potential interaction between HA-SIRT6 and FLAG-SIRT6 WT, K33R, K33Q and H133Y. FLAG-SIRT3 was included as control. (E) Schematic of a SIRT6 N-terminal peptide showing the positively (blue) and negatively charged residues (red).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** SIRT6 K15/17R acetylation levels were determined by IP and western blotting with a pan anti-acetyl lysine antibody in HEK293 cells.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Western blotting analysis of the acetylation levels of histone H3 in SIRT6 KO HEK293 cells reconstituted with SIRT6 WT or indicated mutants. (B) Cell fractionation analysis to detect the chromatin enrichment of SNF2H and SIRT6 in FLAG-SIRT6, K33R, K33Q and HY reconstituted SIRT6 KO HEK293T cells. WCL: whole cell lysate. (C) Recombinant GST-SIRT6, K33R, K33Q and H133Y (HY) deacetylation activities (Vmax) were detected in vitro (CycLex). The data represent the means ± s.e.m., *p<0.05, ns: not significant, n = 3.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Yellow fluorescence detection by FACS in HEK293 cells ectopically expressing vector only, SIRT6-WT, SIRT6-KR, SIRT6-KQ or SIRT6-HY via the BiFC system. Green ovals indicate yellow-fluorescence-positive cell population. (B) The percent of yellow-fluorescence-positive cells from each group shown in A. The data represent the means ± s.e.m., **p<0.01, ns: not significant, n = 3.
+
+### Dynamic SIRT6 K33 (de)acetylation regulates DSB sensing
 
 To understand the function of SIRT6 K33 acetylation, we examined whether it is required for binding to DSBs. We used our K33R mutant and generated a new K33Q mutant to mimic deacetylated or acetylated SIRT6, respectively (Tang et al., 2017). We also mutated SIRT6 H133 to a tyrosine residue (H133Y) to blunt SIRT6 enzymatic activity (Toiber et al., 2013). K33Q and H133Y binding to the DNA duplex was significantly compromised compared to WT and K33R binding (Figure 2B). Consistently, we recorded notable FP for SIRT6 K33R (Kd = 104.9 nM) but little FP for SIRT6 K33Q (Figure 2C).
 
@@ -72,35 +100,87 @@ Upon DNA damage, the acetylation levels of H3K9 and H3K56 decline, and after rep
 
 We next analyzed whether dynamic K33 (de)acetylation modulates SIRT6 polymerization. We co-overexpressed HA-SIRT6 and various FLAG-SIRT6 mutants and performed Co-IP. We detected FLAG-SIRT6 in the anti-HA immunoprecipitates, supporting that SIRT6 polymerization occurs (Figure 2—figure supplement 1D). While HA-SIRT6 was still able to bind to FLAG-SIRT6 K33R, its binding to SIRT6 K33Q was significantly jeopardized. Of note, the enzyme-dead H133Y mutation also jeopardized SIRT6 polymerization. This finding is consistent with the fact that the H133 site is important for both SIRT6 deacetylase activity and for mediating the chromatin association (Tennen et al., 2010). We confirmed this jeopardized polymerization in the K33Q mutant condition by BiFC assay (Figure 2—figure supplement 4A,B). Together, these data implicate that dynamic SIRT6 K33 (de)acetylation modulates SIRT6 polymerization and thus DSB binding.
 
-## SIRT6 interacts with SIRT1
+### SIRT6 interacts with SIRT1
 
 Having confirmed SIRT6 (de)acetylation, we moved to examine potential deacetylase of SIRT6. To this end, we first tested the effect of various HDAC inhibitors on SIRT6 acetylation level. We noticed that the level of acetylated SIRT6 was largely elevated in the presence of the class III HDAC (SIRTs) inhibitor nicotinamide (NAM) or the SIRT1-specific inhibitor Ex527, but not the class I/II HADC inhibitor Trichostatin A (TSA) (Figure 3—figure supplement 1). This finding suggested that SIRT1 might be involved in SIRT6 deacetylation. Indeed, co-IP and western blotting revealed that FLAG-SIRT6 interacted with endogenous SIRT1 (Figure 3A) and vice versa in HEK293 cells (Figure 3B). In addition, we detected SIRT1 in the anti-SIRT6 immunoprecipitates and vice versa (Figure 3C,D). A GST pulldown assay confirmed that His-SIRT1 directly interacted with GST-SIRT6 (Figure 3E). Further, we observed co-localization between SIRT6 and SIRT1 by confocal microscopy in cells co-transfected with GFP-SIRT6 and DsRed-SIRT1 or in cells co-stained with specific antibodies (Figure 3F and Figure 3—figure supplement 2A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig3-v2.jpg)
+
+**Figure 3.:** (A) Western blot analysis of SIRT1 levels in anti-FLAG immunoprecipitates in HEK293 cells transfected with FLAG-SIRT6 or an empty vector. (B) Western blot analysis of SIRT6 levels in anti-FLAG immunoprecipitates in HEK293 cells transfected with FLAG-SIRT1 or an empty vector. (C) Western blot analysis of SIRT1 in anti-SIRT6 immunoprecipitates in HeLa cells. (D) Western blot analysis of SIRT6 in anti-SIRT1 immunoprecipitates in HeLa cells. (E) GST pulldown assay between GST-SIRT6 and His-SIRT1 in vitro. (F) Representative images of DsRed-SIRT1 and GFP-SIRT6 localization in U2OS cells, determined by confocal microscopy. Scale bar, 10 μm. (G) Co-immunoprecipitation and western blot analysis of FLAG-SIRT1 in HEK293 cells overexpressing FLAG-SIRT1 and HA-SIRT6 ΔN (N-terminus deleted), ΔC (C-terminus deleted) or ΔCN (N-/C-termini deleted).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The acetylation levels of FLAG-SIRT6 in the presence of NAM (5 mM), TSA (1 μM) or Ex527 (1 μM) were determined by anti-FLAG IP and western blotting using an anti-pan-acetyl lysine antibody in HEK293 cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunofluorescence analysis of endogenous SIRT1 (Green) and SIRT6 (Red) protein levels. Representative images are shown, captured under a confocal imaging microscope. Scale bar, 10 μm. (B) A schematic of the various domain-modified SIRT6 constructs. (C) Co-IP and western blot analysis of the interaction between SIRT1 and various domain modified SIRT6 constructs overexpressed in HEK293 cells.
+
 SIRTs contain a conserved Sir2 domain and flexible N-termini and C-termini. To locate the exact SIRT6 domains that interact with SIRT1, we deleted the N-terminus and C-terminus, as previously reported (Tennen et al., 2010; Figure 3—figure supplement 2B,C). Western blotting analysis showed that the interaction between SIRT6 and SIRT1 was lost if the N-terminus or C-terminus of SIRT6 was deleted (Figure 3G). As the C-terminus contains the nuclear location signal (Tennen et al., 2010), we speculate that its depletion may restrict SIRT6 in cytoplasm, thus preventing the interaction between SIRT1 and SIRT6. Thus, the data indicate that SIRT6 physically interacts with SIRT1, most likely through the N-terminus of SIRT6.
 
-## SIRT1 deacetylates SIRT6 at K33
+### SIRT1 deacetylates SIRT6 at K33
 
 We next examined whether SIRT1 deacetylates SIRT6 via the direct interaction that we identified above. Overexpression of SIRT1 but not of other sirtuins inhibited FLAG-SIRT6 acetylation (Figure 4A). Conversely, knocking down SIRT1 significantly upregulated endogenous SIRT6 acetylation in HEK293 cells (Figure 4B). Furthermore, the SIRT6 acetylation level decreased in the presence of ectopic SIRT1 but not in the presence of its catalytic mutant SIRT1-H363Y (Figure 4C), despite the two proteins still showing a physical interaction, suggesting that SIRT6 is likely a deacetylation target of SIRT1. To test our hypothesis, we established an in vitro deacetylation assay. We eluted recombinant FLAG-SIRT6 with a FLAG peptide from HEK293 cell lysate. We found that SIRT1 deacetylated SIRT6 in the presence of NAD+, while NAM inhibited this process (Figure 4D,E). The deacetylase-inactive SIRT1-H363Y was unable to deacetylate SIRT6.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig4-v2.jpg)
+
+**Figure 4.:** (A) The acetylation level of FLAG-SIRT6 in HEK293 cells ectopically expressing SIRT1-5 and SIRT7. (B) The acetylation level of endogenous SIRT6 in HEK293 cells treated si-SIRT1 or scramble (Scram) siRNAs. The intensity of acetylated bands was quantified by Image J and normalized to scramble control. The data represent the means ± s.e.m., *p<0.05, n = 3. (C) The acetylation level of HA-SIRT6 in SIRT1–/– cells reconstituted with SIRT1 or the enzyme-inactive SIRT1 H363Y. The intensity of acetylated bands was quantified by Image J and normalized to scramble control. The data represent the means ± s.e.m. *p<0.05, ns: not significant, n = 3. (D–E) The acetylation level of HA-SIRT6 in the presence of FLAG-SIRT1, H363Y, NAD+ (500 μM) and/or NAM (2 mM) (D). The intensity of acetylated bands was quantified by Image J and normalized to scramble control (E).The data represent the means ± s.e.m. *p<0.05, ns: not significant, n = 3. (F) The acetylation level of FLAG-SIRT6 and FLAG-SIRT6 K33R in SIRT1–/– and WT HEK293 cells. (G) The acetylation level of FLAG-SIRT6 and K33R in HEK293 cells with or without ectopic SIRT1. (H) GST pulldown assay with GST-SIRT6 WT, ΔN, ΔC and His-SIRT1 in the presence or absence of 10 μM K33ac peptide [PEELERK(ac)VWELARL], which represents a 14-aa peptide containing acetylated SIRT6 K33.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) SIRT6 K143/145R acetylation levels in anti-FLAG IPs derived from HEK293 cells, was determined by western blotting with a pan anti-acetyl lysine antibody. (B) FLAG-SIRT1 acetylation levels in anti-FLAG IPs derived from HEK293 cells overexpressing ectopic HA-SIRT6, were determined by western blotting with a pan anti-acetyl lysine antibody.
+
 As SIRT1 might interact with the SIRT6 N-terminus, we hypothesized that it might also deacetylate K33ac. While the acetylation level of SIRT6 was increased in SIRT1–/– HEK293 cells, that of K33R was hardly affected (Figure 4F). Additionally, the acetylation level of SIRT6 K33R was minimally changed upon SIRT1 overexpression (Figure 4G), whereas that of K143/145R was downregulated upon ectopic SIRT1 (Figure 4—figure supplement 1A). These data support that K33ac is a target of SIRT1. By contrast, the SIRT1 acetylation level was relatively unaffected upon SIRT6 overexpression (Figure 4—figure supplement 1B). To further validate these findings, we synthesized a K33ac-containing peptide and found that it effectively blocked the in vitro binding of SIRT6 to SIRT1 (Figure 4H). Of note, the GST pulldown assay suggested that the N-terminus rather than the C-terminus of SIRT6 was responsible for its interaction with SIRT1. Together, these data suggest that SIRT1 deacetylates SIRT6 at K33.
 
-## γH2AX ensures SIRT6 retention surrounding DSBs
+### γH2AX ensures SIRT6 retention surrounding DSBs
 
 γH2AX is dispensable for the initial DSB recognition but serves as a platform for recruiting DDR factors (Celeste et al., 2003). Because SIRT6 is enriched at DNA breaks, we next asked whether γH2AX is involved in SIRT6 recruitment. We thus performed a co-IP of endogenous SIRT6 in cells treated with or without camptothecin (CPT). Interestingly, H2AX and γH2AX were detected in the anti-SIRT6 precipitates only when the cells were treated with CPT (Figure 5A,B). We also performed an in vitro pulldown assay with a biotin-labeled C-terminal γH2AX peptide (biotin-γH2AXp) or H2AX peptide (biotin-H2AXp). Consistently, GST-SIRT6 recognized the γH2AX peptide but not the H2AX peptide (Figure 5C). To identify the interacting domain, we purified various GST-SIRT6 truncation mutants. Peptide pulldown assay revealed that the N-terminus truncation was enough to abolish SIRT6 binding to γH2AX peptide, while the C-terminus truncation had a minimal effect (Figure 5D). We then investigated whether SIRT1-mediated deacetylation contributes to SIRT6 binding to γH2AX. Here, the K33R mutant efficiently bound to γH2AX to a similar extent as WT SIRT6, but the binding was abolished in the case of K33Q (Figure 5E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig5-v2.jpg)
+
+**Figure 5.:** (A,B) Representative western blots showing H2AX (A) and γ-H2AX (B) levels in anti-SIRT6 immunoprecipitates from HEK293 cells treated with or without 1 μM camptothecin (CPT). The IgG control experiment was performed in mixed lysate from cells treated with CPT and cells without CPT. (C) Streptavidin pulldown (PD) assay and western blot analysis of the interactions between GST-SIRT6 and biotinylated γH2AX (biotin-γH2AXp) and H2AX peptides (biotin-H2AXp). (D) Streptavidin pulldown assay and western blot analysis of the interactions between biotin-γH2AXp, GST-SIRT6 WT and truncated GST-SIRT6 ΔN and ΔC. (E) Streptavidin pulldown assay and western blot analysis of the interactions between biotin-γH2AXp and GST-SIRT6 WT, K33R and K33Q. (F–I) Laser MicroPoint analysis of SIRT6 recruitment in H2ax+/+ and H2ax–/– MEFs (F–G), and in H2ax–/– MEFs reconstituted with H2AX WT, S139D mimicking hyper-phosphorylation or S139A mimicking hypo-phosphorylation (H–I). PAR immunostaining was used to identify the DNA damage site. Scale bar, 10 μm. The relative fluorescence intensity was calculated by Fiji (Image J) (G and J). The data represent the means ± s.e.m., **p<0.01, ns: not significant, n = 10.
+
+![Figure 5—figure supplement 1](https://cdn.elifesciences.org/articles/55828/elife-55828-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1:** (A) Laser MicroPoint analysis of SIRT6 recruitment in MEFs treated with caffeine (5 mM) 1 hr. Scale bar, 10 μm. (B) The relative intensity was calculated in Fiji (Image J). The data represent the means ± s.e.m., **p<0.01,n.s.: not significant, n = 10. (C) Western blot analysis of γH2AX, pS1981 ATM and pT68 CHK2 levels in MEFs after caffeine treatment.
+
 To investigate the functional relevance of this SIRT6–γH2AX interaction, we applied laser-induced DNA damage in MEFs lacking H2ax and then tracked the distribution of SIRT6 by immunofluorescence microscopy. GFP-SIRT6 was immediately recruited to DNA lesions in H2ax+/+ and H2ax−/− MEFs (Figure 5F,G), implying that H2AX is dispensable for initial SIRT6 recruitment. Interestingly, GFP-SIRT6 diminished from DNA lesions at 10 min after laser treatment in H2ax–/– MEFs but persisted in H2ax+/+ cells. H2AX is rapidly phosphorylated at serine 139 in response to DSBs (Rogakou et al., 1998). When we re-introduced H2AX WT, S139A and S139D into H2ax–/– MEFs, SIRT6 retention was restored in WT and S139D-re-expressing cells but not in S139A-re-expressing cells (Figure 5H,I). Moreover, we used caffeine, an ATM/ATR kinase inhibitor, to treat cells and did SIRT6 recruitment assay. The data showed that caffeine inhibited the level of γH2AX and subsequent retention of SIRT6 at DSBs after laser-induced DNA damage in MEFs (Figure 5—figure supplement 1). Together, these data indicate that SIRT6 recognizes γH2AX surrounding DSBs and that this recognition is enhanced by SIRT1-mediated deacetylation.
 
-## SIRT1 and SIRT6 cooperatively promote DNA repair
+### SIRT1 and SIRT6 cooperatively promote DNA repair
 
 The physical interaction between SIRT1 and SIRT6 prompted us to further investigate whether SIRT1 and SIRT6 cooperatively modulate the DDR and DNA repair. To do so, we combined the DR-GFP reporter system with a ChIP-PCR analysis. First, we found that FLAG-SIRT6 recruitment to the DSB vicinity was significantly reduced when SIRT1 was silenced by siRNA in HEK293 cells (Figure 6A,B). Then we monitored the dynamic recruitment of GFP-SIRT6 upon laser-induced DNA damage using a MicroPoint system. GFP-SIRT6 was rapidly recruited to DSBs in WT cells, but this process was largely deferred in Sirt1–/– MEFs (Figure 6C,D), suggesting an indispensable role of SIRT1 in the initial recruitment of SIRT6 to DSBs. By contrast, SIRT1 recruitment to DSBs was relatively unaffected by SIRT6 downregulation, as determined by the DR-GFP reporter system (Figure 6E,F) and the MicroPoint system (Figure 6G,H).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig6-v2.jpg)
 
-**Figure 6.:** (A,B) ChIP-qPCR analysis of the SIRT6 levels in the vicinity of a DSB in cells treated with a SIRT1 siRNA (si-SIRT1) or a scrambled negative control (NC). The western blots show the FLAG-SIRT6 and SIRT1 protein levels. The data represent the means ± s.e.m., *p<0.05, n = 3. (C,D) GFP-SIRT6 was introduced into Sirt1 and +/+Sirt1–/– MEFs and the fluorescence signal was captured at various time points after laser-induced DNA damage. Representative images are shown (C). The white dashed circles indicate the damage sites. Scale bar, 10 μm. The relative intensity was calculated in Image J (D). The data represent the means ± s.e.m., **p<0.01, ns: not significant, n = 30. (E,F) ChIP-qPCR analysis of the SIRT1 levels in the vicinity of a DSB in cells treated with SIRT6 siRNA (si-SIRT6) or NC. The western blots show the FLAG-SIRT1 and SIRT6 protein levels. The data represent the means ± s.e.m., ns: not significant, n = 3, determined by Student t test. (G–H) GFP-SIRT1 was introduced into Sirt6+/+ and Sirt6– MEFs and the fluorescence signal was captured after laser-induced damage at various time points. Representative images are shown. The red dashed lines indicate laser-induced damage sites. Scale bar, 10 μm. The data represent the means ± s.e.m., ns: not significant, n = 32./–
+**Figure 6.:** (A,B) ChIP-qPCR analysis of the SIRT6 levels in the vicinity of a DSB in cells treated with a SIRT1 siRNA (si-SIRT1) or a scrambled negative control (NC). The western blots show the FLAG-SIRT6 and SIRT1 protein levels. The data represent the means ± s.e.m., *p<0.05, n = 3. (C,D) GFP-SIRT6 was introduced into Sirt1+/+ and Sirt1–/– MEFs and the fluorescence signal was captured at various time points after laser-induced DNA damage. Representative images are shown (C). The white dashed circles indicate the damage sites. Scale bar, 10 μm. The relative intensity was calculated in Image J (D). The data represent the means ± s.e.m., **p<0.01, ns: not significant, n = 30. (E,F) ChIP-qPCR analysis of the SIRT1 levels in the vicinity of a DSB in cells treated with SIRT6 siRNA (si-SIRT6) or NC. The western blots show the FLAG-SIRT1 and SIRT6 protein levels. The data represent the means ± s.e.m., ns: not significant, n = 3, determined by Student t test. (G–H) GFP-SIRT1 was introduced into Sirt6+/+ and Sirt6–/– MEFs and the fluorescence signal was captured after laser-induced damage at various time points. Representative images are shown. The red dashed lines indicate laser-induced damage sites. Scale bar, 10 μm. The data represent the means ± s.e.m., ns: not significant, n = 32.
 
-## SIRT6 rescues DNA repair defects caused by SIRT1 deficiency
+### SIRT6 rescues DNA repair defects caused by SIRT1 deficiency
 
 In our final set of assays, we wanted to determine the function of SIRT6 deacetylation in DNA repair. We found that the interaction of SIRT1 and SIRT6 was enhanced upon DNA damage (Figure 7A). In addition, SIRT6 acetylation was significantly decreased upon CPT treatment, but that the effects of CPT were abolished in the presence of SIRT6 K33R or in the absence of SIRT1 (Figure 7B,C). These data imply that SIRT6 is deacetylated by SIRT1 upon DNA damage. We then examined the effects of the SIRT6 mutants on DNA repair by comet assay, which assesses the DNA repair ability at the single cell level. We overexpressed SIRT6 K33R or K33Q in SIRT6–/– cells and then examined the DNA repair efficacy. Here, overexpression of SIRT6 significantly enhanced DNA repair efficacy upon CPT treatment, while K33Q or H133Y lost the ability. By contrast, the overexpression of SIRT6 K33R promoted DNA repair to an extent comparable to WT (Figure 7D,E and Figure 7—figure supplement 1A). An HR assay showed that SIRT6 WT and K33R but neither K33Q nor H133Y enhanced HR capacity (Figure 7F and Figure 7—figure supplement 1B). We further assessed cell viability of SIRT6–/– HEK293 cells reconstituted with SIRT6 mutants using an MTS assay. The data showed that the viability of cells transfected with SIRT6 WT or K33R was much higher than those transfected with empty vector, SIRT6 K33Q or H133Y after CPT or IR treatment (Figure 7—figure supplement 2). In HeLa cells, overexpression of SIRT6 K33Q also inhibited the colony-forming capacity upon CPT or IR treatment compared to SIRT6 WT and K33R (Figure 7—figure supplement 3). In addition, less γH2AX foci was noticed in HeLa cells transfected ectopic SIRT6 WT or K33R compared to K33Q or H133Y at 8 hr after IR (Figure 7—figure supplement 4). These data implicate that SIRT6 deacetylation at K33 is indispensable for DNA repair.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-v2.jpg)
+
+**Figure 7.:** (A) Co-IP and western blot analysis of the interaction of FLAG-SIRT1 and SIRT6 in HEK293 cells overexpressing FLAG-SIRT1 and treated with CPT (1 μM) for 1 hr. (B–C) The acetylation level of SIRT6 WT and K33R SIRT1+/+ and SIRT1–/– HEK293 cells treated or not with CPT (1 μM) for 1 hr. The intensity of acetylated bands was quantified by Image J and normalized to scramble control. The data represent the means ± s.e.m., *p<0.05, ns: not significant, n = 3. (D–E) Representative images of comet assay in FLAG-SIRT6, K33R, K33Q and HY reconstituted SIRT6 KO cells treated with CPT for 1 hr (D). Tail moment were calculated by software Open Comet. The data represent the means ± s.e.m., **p<0.01, n = 50. (F) HR assay in U2OS cells ectopically expressing FLAG-SIRT6, K33R, K33Q or HY. The percent GFP-positive cells was calculated. The data represent the means ± s.e.m., **p<0.01, n = 3. (G–H) Comet assay in SIRT1–/– HEK293 cells transfected with FLAG-SIRT6, K33R, K33Q, HY and SIRT1 and treated with CPT for 1 hr. Tail moment were calculated by software Open Comet. The data represent the means ± s.e.m., **p<0.01, n = 50. (I) HR assay in SIRT1–/– HEK293 cells ectopically expressing FLAG-SIRT6, K33R, K33Q, HY and SIRT1-WY. The percent GFP positive cells was calculated. The data represent the means ± s.e.m., **p<0.01, n = 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Western blots showing SIRT6 protein levels in SIRT6–/– HEK293 cells transfected with FLAG-SIRT6 WT, K33R, K33Q and H133Y constructs. Related to Figure 7D,E. (B) Western blots showing SIRT6 protein levels in SIRT6–/– HEK293 cells transfected with FLAG-SIRT6 WT, K33R, K33Q and H133Y constructs. Related to Figure 7F.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Western blots showing SIRT6 protein levels in SIRT6–/– HEK293 cells transfected with FLAG-SIRT6 WT, K33R, K33Q or H133Y constructs. (B) Cell viability of SIRT6–/– HEK293 cells expressing ectopic FLAG-SIRT6, K33R, K33Q or H133Y was assessed by MTS assay after CPT (1 μM) treatment at 48 hr. (C) Cell viability of SIRT6–/– HEK293 cells expressing ectopic FLAG-SIRT6, K33R, K33Q or H133Y was assessed by MTS assay after IR (2 Gy, 4 Gy, 6 Gy) at 48 hr. The data represent the means ± s.e.m., *p<0.05, n = 3.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Western blots showing SIRT6 protein levels in HeLa cells stably transfected with FLAG-SIRT6 WT, K33R, K33Q constructs. (B) Colony-forming assay in HeLa cells ectopically expressing FLAG-SIRT6, K33R or K33Q. The data represent the means ± s.e.m., **p<0.01, n = 3. (C) Western blots showing SIRT6 protein levels in HeLa cells stably transfected with FLAG-SIRT6 WT, K33R, K33Q or H133Y constructs. (D) Colony-forming assay in HeLa cells stably overexpressing ectopic FLAG-SIRT6 WT, K33R, K33Q or H133Y after radiation at indicated dose. The data represent the means ± s.e.m., *p<0.05, n = 3.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Immunofluorescence staining of γH2AX foci in HeLa cells expressing ectopic FLAG-SIRT6 WT, K33R, K33Q or H133Y at 8 hr after radiation. Scale bar, 10 μm. (B) Quantification of γH2AX foci-positive cells (>5 foci per cell). A total of 100 cells per sample was counted. The data represent the means ± s.e.m., **p<0.01, n = 3.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/55828/elife-55828-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** (A) Western blots showing SIRT6 and SIRT1 levels in SIRT1–/– cells transfected with SIRT6 WT, K33R, K33Q, H133Y or SIRT1 constructs. (B) Western blots showing SIRT6 and SIRT1 levels in SIRT1–/– cells transfected with SIRT6 WT, K33R, K33Q, H133Y or SIRT1 constructs.
 
 SIRT1 regulates DNA repair (Wang et al., 2008). To elucidate the synergistic effects of SIRTs in DNA repair, we examined whether SIRT6 hyper-acetylation is responsible for the defective DNA repair capacity seen in SIRT1–/– HEK293 cells. SIRT6 WT, K33R and SIRT1 overexpression rescued the defective DNA repair imposed by the SIRT1 deficiency, while SIRT6 K33Q and H133Y had minimal rescue effect (Figure 7G,H and Figure 7—figure supplement 5A). Notably, both SIRT6 WT and K33R had similar function in rescuing the DNA repair defect in SIRT1 KO cells, suggesting that overexpressed exogenous SIRT6 WT might not be effectively acetylated. Further, the HR assay showed that SIRT6 WT and K33R, but neither K33Q nor H133Y rescued the HR defect caused by SIRT1 deficiency (Figure 7I and Figure 7—figure supplement 5B).
 
@@ -124,11 +204,196 @@ Known as longevity-associated genes, SIRT6 and SIRT1 are redundant in DNA repair
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SIRT6</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 51548</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SIRT1</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 23411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>H2ax</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 15270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>H2AX</td>
+      <td>National Center for Biotechnology Information</td>
+      <td>Gene ID: 3014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>ATCC CRM-CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MEF</td>
+      <td>Dr Linyu Lu (Zhejiang University, China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>H2ax-/- MEF</td>
+      <td>Dr Linyu Lu (Zhejiang University, China)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SIRT6 (rabbit, polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>Cat# ab62738, RRID:AB_956299</td>
+      <td>Applications: WB; Dilution: 1:1000;Immunofluorescence; Dilution:1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SIRT1 (mouse, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 8469, RRID:AB_10999470</td>
+      <td>Applications: WB;Dilution:1:1000;Immunofluorescence; Dilution:1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F1804; RRID:AB_262044</td>
+      <td>Applications: WB; Dilution: 1:1000; Chromatin immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H3663; RRID:AB_262051</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GST(mouse, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2624, RRID:AB_2189875</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>γH2AX (rabbit, monoclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>Cat# ab81299; RRID:AB_1640564</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9ac (rabbit, polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 07–352; RRID:AB_310544</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K56ac(Rabbit, Polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat# 07–677, RRID:AB_390167</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>acetyl Lysine (Rabbit, Polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>Cat# ab80178, RRID:AB_1640674</td>
+      <td>Applications: WB; Dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pDR-GFP</td>
+      <td>Addgene (Cambridge, MA)</td>
+      <td>RRID:Addgene_26475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CycLex SIRT6 Deacetylase Fluorometric Assay Kit</td>
+      <td>MBL life science</td>
+      <td>CY-1156V2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ex527</td>
+      <td>Sigma-Aldrich</td>
+      <td>E7034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>T1952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotinamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>N3376</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Camptothecin</td>
+      <td>Sigma-Aldrich</td>
+      <td>C9911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 HEK293 (CRL-1573) cells and HeLa (CCL-2) cells were ordered from ATCC. H2ax WT and KO mouse embryonic fibroblasts (MEFs) were provided as a kind gift from Dr Linyu Lu (Zhejiang University, China). The cell lines were authenticated by short tandem repeat (STR) profile analysis and genotyping and were mycoplasma free. Cells were routinely cultured in Gibco High Glucose DMEM (Life Technologies, USA) with 10% fetal bovine serum (FBS), 100 U/ml penicillin and streptomycin (P/S) at 37°C in 5% CO2 and atmospheric oxygen conditions.
 
-## Oligos and plasmids
+### Oligos and plasmids
 
 The following oligos (Genewiz) were used for RNA interference:
 
@@ -138,57 +403,57 @@ The following gRNA sequences were used for CRISPR/Cas9 gene editing:
 
 Human SIRT6 was cloned into pCDNA3.1 with a FLAG tag (Invitrogen, USA); a 3 × FLAG-SIRT1 and DR-GFP plasmids were obtained from Addgene. SIRT6ΔC and ΔN were amplified with specific primers and cloned into pKH3HA (Addgene) and pGex vectors (GE Healthcare Life Sciences). The SIRT6 KR, KQ and HY mutants were obtained by converting SIRT6 lysine 33 to arginine (KR), or to glutamine (KQ) and SIRT6 133 histidine to tyrosine (HY) via site-directed mutagenesis, as described below.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 The primers used for mutagenesis were designed using the online Quick Change Primer Design Program provided by Agilent Technologies. The mutagenesis was performed using Pfu DNA polymerase (Agilent) and 300 ng plasmid template, according to the manufacturer’s instructions. The PCR product was digested with DpnI endonuclease for 1 hr at 37°C, before transformation and sequencing.
 
 The following primers were used to generate the SIRT6 KR, KQ and HY mutants:
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 HEK293T cells were transfected with the indicated plasmids using Lipofetamine3000 (Invitrogen, USA), according to the manufacturer’s instructions. The cells were lysed 48 hr post-transfection in lysis buffer [50 mM Tris-HCl, pH 7.4, 200 mM NaCl, 0.2% NP40, 10% glycerol, 1 mM NaF, 1 mM Sodium butyrate, 10 mM Nicotinamide and a Complete protease inhibitor cocktail (Roche)]. The cell extracts were incubated with anti-FLAG M2 monoclonal antibody-conjugated agarose beads (Sigma) at 4°C overnight with rotation. The immunoprecipitates were boiled IN 2 × laemmli buffer and then analyzed by western blotting.
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 I-SceI-GR assays were performed as previously described (Soutoglou et al., 2007). HeLa cells stably transfected with DR-GFP were transiently transfected with RFP-I-SceI-GR together with FLAG-SIRT6, KR, KQ or HY. The cells were treated with 10−7 M triamcinolone acetonide (TA, Sangon, Shanghai) for 20 min, 48 hr after transfection, and then fixed with 1% paraformaldehyde at 37°C for 10 min to crosslink the chromatin. The reaction was stopped upon the addition of 0.125 M glycine. The chromatin was sonicated to 200 bps ~ 600 bps and incubated with the indicated antibodies. After de-cross linking, the ChIP-associated DNA was isolated and analyzed by quantitative real-time PCR (qRT-PCR).
 
-## Comet assay
+### Comet assay
 
 A comet assay was performed as previously described (Olive and Banáth, 2006). Briefly, after CPT treatment, the cells were digested into a single cell suspension, mixed with 1% agarose at the density of 1 × 105, coated on the slide and then incubated in lysis buffer (2% sarkosyl, 0.5M Na2EDTA, 0.5 mg/ml proteinase K) overnight at 37°C. The slides were incubated with N2 buffer (90 mM Tris, 90 mM boric acid and 2 mM Na2EDTA) and subjected to electrophoresis for 25 min at 0.6 V/cm. The slides were then incubated in staining solution containing 2.5 μg/ml propidium iodide for 30 min at room temperature. Images were captured under a fluorescent microscope.
 
-## Cell fractionation
+### Cell fractionation
 
 Cells were scraped and washed with cold PBS. The cell pellet was resuspended in nuclei lysis buffer (10 mM HEPES, 10 mM KCl, 1.5 mM MgCl2, 0.34M sucrose, 10% glycerol, 1 mM DTT, 0.1% TrionX-100.) for 10 min on ice and then centrifuged at 1300 g for 10 min. The pellet was resuspended in lysis buffer (3 mM EDTA, 0.2 mM EGTA, 1 mM DTT) for 10 min on ice and centrifuged at 1700 g for 10 min. The pellet was saved as the chromatin fraction.
 
-## MicroPoint laser irradiation and microscopy
+### MicroPoint laser irradiation and microscopy
 
 U2OS cells or MEFs were seeded on a dish with a thin glass bottom (NEST), then locally irradiated with a 365 nm pulsed UV laser (16 Hz pulse, 56% laser output), generated by the MicroPoint Laser Illumination and Ablation System (Andor; power supply TPES24-T120MM, Laser NL100, 24V 50W), which is coupled to the fluorescence path of the Nikon A1 confocal imaging system (TuCam). Fluorescent protein recruitment and retention were continuously monitored by time-lapse imaging every 20 s for 10 min. The fluorescence intensity was quantified at each time-point using Fiji (Image J) software.
 
-## CRISPR/Cas9-mediated gene editing
+### CRISPR/Cas9-mediated gene editing
 
 CRISPR/Cas9-mediated gene editing was conducted as described (Ran et al., 2013). Briefly, a pX459 vector (Addgene#48139) was digested with BbsI and ligated with annealed oligonucleotides. The constructs containing the target gRNAs were transfected into HEK293T cells with Lipofetamine3000 (Invitrogen). The cells were selected for 5 days with puromycin 24 hr after transfection. Single clones were picked for sequencing.
 
-## Peptide pulldown assay
+### Peptide pulldown assay
 
 The C termini of H2AX (BGKKATQASQEY) and γH2AX (BGKKATQApSQEY) were synthesized and conjugated with biotin (GL Biochem, Shanghai). For one reaction, 1 μg biotinylated peptides was incubated with 1 μg GST-SIRT6 in binding buffer (50 mM Tirs-HCl, 200 mM NaCl, 0.05% NP40) overnight at 4°C. Streptavidin Sepharose beads (GE) was then used to pulldown the peptide and protein complexes for 1 hr at 4°C, and the samples were analyzed by western blotting.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 The cells were washed with PBS and fixed with 4% formaldehyde for 20 min, followed by permeabilization with cold methanol (−20°C) for 5 min and blocking with 5% BSA for 30 min. Then, the cells were incubated with primary antibodies (SIRT1, 1:200 dilution in 1% BSA; γH2AX, 1:500 dilution in 1% BSA; SIRT6, 1:200 dilution in 1% BSA) for 1 hr and secondary antibodies (donkey anti-rabbit IgG Alexa Fluor 594 and donkey anti-mouse IgG FITC from Invitrogen, 1:500 dilution in1% BSA) for 1 hr at room temperature in the dark. The cells were then co-stained with DAPI (Invitrogen) and observed under a fluorescent microscope.
 
-## HR assay
+### HR assay
 
 U2OS cells stably transfected with DR-GFP were transfected with HA-I-SceI together with FLAG-SIRT6 WT, K33R, K33Q or H133Y. After transfection for 48 hr, the cells were harvested and the GFP-positive cell ratio per 104 cells was analyzed by flow cytometry (BD Biosciences). The relative HR efficiency was normalized to the vector control.
 
-## Assessment of cell viability by MTS assay
+### Assessment of cell viability by MTS assay
 
 Cell proliferation rate was examined using a CellTiter 96 AQueous Non-Radioactive Cell Proliferation assay (MTS) (Promega, USA). Approximately 2 × 103 cells/well were seeded in a 96-well plate and allowed to grow overnight. Cells were treated with CPT (0, 1 µM) for 1 hr or IR (2 Gy, 4 Gy, 6 Gy) and allowed to recover for 48 hr. MTS reagent (20 µL per well) was added, followed by incubation in the darkness at 37°C for 3 hr. The absorbance were measured at 490 nm using Bradford Reagent (Bio-Rad Laboratories). Cell viability was calculated as the ratio of absorbance of treated cells to control.
 
-## Colony formation assay
+### Colony formation assay
 
 HeLa cells were seeded into six-well plates 24 hr after transfection in defined numbers. Then, 24 hr after re-plating, the cells were exposed to increasing amounts of ionizing radiation delivered by an X-Rad 320 irradiator (Precision X-Ray Inc N. Branford, CT, USA). Fresh media was added after 7 days. Colonies containing at least 50 cells (10–14 days) were fixed with 20% methanol and stained with crystal violet and analyzed.
 
-## DNA pulldown assay
+### DNA pulldown assay
 
 The DNA binding assay was performed as previously described (Falck et al., 2005). Briefly, a biotin-conjugated DNA duplex 220 bp in size was generated by PCR amplification using biotin-labeled primers and a I-SceI plasmid as a template.
 
@@ -198,10 +463,10 @@ For linear and circular DNA competition assays, the ratios of the non-biotin lab
 
 The following sequences were used for PCR:
 
-## FP assay
+### FP assay
 
 SIRT1, SIRT6 and SIRT7 recombinant proteins were purified in vitro, and incubated with a FAM-conjugated DNA duplex (20 nM) for 30 min on ice at the indicated concentration. The FP value of each sample was measured on 96 plates using a Multimode Plate Reader VictorTM X5 (PerkinElmer, USA) with an excitation wavelength of 480 nm and an emission wavelength of 535 nm. Curve fitting was performed in GraphPad prism.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were conducted using two-tailed Student’s t-test between two groups. All data are presented as mean ± s.e.m. as indicated, and a p value < 0.05 was considered statistically significant. Independent experiments were performed in triplicates.

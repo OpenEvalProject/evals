@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00dvg7y05 Division of Endocrinology, Boston Children's Hospital, Harvard Medical School Boston United States
-2. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
+1. Division of Endocrinology, Boston Children's Hospital, Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+2. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
 
 † Corresponding author
 

@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Department of Pharmacology, Feinberg School of Medicine, Northwestern University Chicago United States
-2. https://ror.org/000e0be47 Department of Biomedical Engineering, McCormick School of Engineering and Applied Science, Northwestern University Evanston United States
-3. https://ror.org/000e0be47 Center for Synthetic Biology, Northwestern University Evanston United States
-4. https://ror.org/000e0be47 Chemistry of Life Processes Institute, Northwestern University Evanston United States
+1. Department of Pharmacology, Feinberg School of Medicine, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Department of Biomedical Engineering, McCormick School of Engineering and Applied Science, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+3. Center for Synthetic Biology, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
+4. Chemistry of Life Processes Institute, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))
 
 † Corresponding author
 
@@ -32,46 +32,128 @@ To address this, we have developed a completely synthetic method to assay ion ch
 
 We began by carrying out CFE in vitro synthesis of PKD2L1 protein in the presence and absence of lipid vesicles. Plasmid DNA encoding human PKD2L1 with C-terminally tagged green fluorescent protein (PKD2L1-GFP) was added to the cell-free expression components (PURExpress, New England Biolabs) and induced protein translation by heat (Figure 1A, see methods). Each reaction produced 8 ± 3.5 ng/μl of synthetic channel protein as estimated by a standardized GFP absorbance assay (Figure 1—figure supplement 1A). The synthetically derived channel protein identity was confirmed using two methods. First, by western blot of the cell-free reaction where the PKD2L1-GFP protein was sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gel separated from the reactants and detected by an anti-GFP monoclonal antibody (Figure 1B). Second, the PKD2L1 protein was confirmed by mass spectroscopy with 46% coverage (Figure 1—figure supplement 1B, C). Since polycystins are transmembrane proteins, we hypothesize that channel membrane incorporation would be facilitated by including lipid substrates into the CFE reaction. Thus, we compared channel synthesis in the presence or absence of small unilamellar vesicles (SUVs) comprised of 1,2-diphytanoyl-sn-glycero-phosphocholine (DPhPC; 4ME16:0PC) and cholesterol (Figure 1A). We monitored PKD2L1-GFP protein production over time through fluorescence which is dependent on complete channel translation and correct GFP folding (Müller-Lucks et al., 2012). We observed a dramatic increase in fluorescence output which plateaued after 3 hr when CFEs reactions were supplemented with SUVs— an effect not observed in water-supplement (H2O) control reactions (Figure 1C; Klammt et al., 2006). Minimal changes in fluorescence were detected when a control plasmid (Ctrl) encoding a non-fluorescent protein (dihydrofolate reductase) was used in the reaction. Polycystin channels function as tetramers, thus we examined CFE-derived PKD2L1 oligomeric assembly in SUVs using fluorescence-detection size-exclusion chromatography (FSEC). As controls, we tested recombinant (cell-derived) GFP and GFP-tagged polycystin proteins which produced monodispersed peaks in the fluorescent signal which provided a reference for their respective elution times off the column (Figure 1—figure supplement 1D). Although not as robust, the fluorescence signal from CFE + SUV-derived PKD2L1 protein produced a symmetrical peak at the expected elution time of channel tetramers, along with fractions which may correspond to unassembled protomers (Figure 1—figure supplement 1E). Taken together, these results demonstrate the feasibility of synthesizing full-length polycystin channels using the cell-free expression system, and the enhancement of transmembrane protein synthesis and channel assembly through lipid vesicle incorporation during these reactions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of cell-free protein expression into synthetic lipid vesicles and subsequent electroformation with Vesicle Prep Pro (Nanion). (B) Full-length PKD2L1-GFP protein detected by western blot after cell-free expression into vesicles. (C) Monitored fluorescence over time of cell-free expressed PKD2L1-GFP and a non-fluorescent control plasmid produced in the presence or absence of lipid vesicles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Top, fluorescence (488γ) standard curve determined with a recombinant GFP-tagged protein fit with a linear regression. PURExpress synthesized PKD2L1-GFP and PKD2-GFP were measured after 3 hr of expression at 37°C. (GFP standard curve N = 5, PKD2L1 and PKD2 N = 3 replicates). Bottom, average protomer and tetramer protein production from the PURExpress reaction. Error bars represent SEM. (B) Representative sequence coverage of PKD2L1-GFP (top) and PKD2-GFP (bottom) from tandem mass spectrometry spectra. (C) Mass spectrometry outputs identifying polycystin proteins. (D, E) Fluorescence-detection size-exclusion chromatography (FSEC) of polycystin proteins derived from recombinant and cell-free protein expression (CFE) sources. Recombinant human PKD2-GFP and PKD2L1-GFP protein was obtained from lysates of 0.5 × 106 HEK cells stably expressing the channels. Purified Aequorea Victoria GFP His-tag protein was obtained from Thermo Fisher Scientific. SUVs containing CFE-derived polycystins were lysed using dodecyl β-D-maltoside (DDM) prior to FSEC analysis (see methods).
+
 One caveat of membrane protein vesicle reconstitution is the potential for misorientation after lipid integration. To assay channel orientation, we synthesized PKD2L1 with a C-terminal SNAP-tag fusion protein (PKD2L1-SNAP) in SUVs then electroformed them into GUVs for the assay. The SNAP-tag specifically reacts with fluorescent O2-benzylcytosine derivatives and, depending on the derivatives membrane permeability, will react with lipid integrated proteins based on the tag’s accessibility (Figure 2—figure supplement 1). GUVs containing CFE synthesized PKD2L1-SNAP were formed by electroformation after passing current through indium tin oxide slides treated with dried SUV-channel protein mixture (Boban et al., 2021). We then added two SNAP fluorescent derivatives, membrane permeable SNAP-Cell Oregon Green (Cell488) and membrane impermeable SNAP-Surface Alexa Fluor 647 (Surface647), to monitor orientation-dependent membrane protein reactivity with the SNAP label (Figure 2A, Figure 2—figure supplement 1). We hypothesized there will be two fluorescent outcomes. First, if all channels orient correctly, then we should see only Cell488 fluorescence with no Surface647 at the membrane (Figure 2A). Second, if the channels are in opposite or in mixed orientations, then we expect to see dual fluorescence of Cell488 and Surface647 (Figure 2B). We imaged over 60 GUVs and found 38.5% of the vesicles exhibited sole Cell488 fluorescence—indicating their correct channel orientation within this population (Figure 2B, C). Importantly, none of the vesicle membranes labeled with both Cell488 and Surface647 while retaining a clear lumen—suggesting that the population of GUVs containing misoriented channels was nominal. In some cases, vesicles can encapsulate dye through compromised integrity or mechanisms other than membrane permeability. This is apparent when fluorescence can be seen in the vesicle lumen, rather than on the membrane (Figure 2C). While the encapsulated fluorescent vesicles account for most of the vesicles imaged, there were no vesicles seen with Cell488 and Surface647 fluorescence at the membrane with a clear lumen (Figure 2B, C). Based on these results, we conclude that our cell-free synthesized PKD2L1 channels are successfully reconstituted in GUVs in the correct orientation, and this preparation is suitable to assay PKD2L1 channels using electrophysiology.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of possible ion channel orientation outcomes from PKD2L1 cell-free expression (top) and hypothesized fluorescence results when Cell488 and Surface647 added (bottom). (B) Fluorescent confocal images from the SNAP-tagged vesicles. The scale bar represents 10 μm for all images. (C) Vesicle percentage depicts the percent of vesicles with each fluorescent output (N = 65 vesicles).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Schematic of PKD2L1-SNAP incorporated into GUVs, followed by SNAP staining with cell permeable (Cell488), and cell impermeable (Surface647) SNAP-Tag marker.
+
 Native and transgene expressed PKD2L1 channels conduct monovalent cations, thus we established symmetric potassium ion (K+) recording conditions to measure synthetic polycystin currents from GUVs. GUVs containing PKD2L1 were voltage clamped using 4–7 MΩ resistance (R) glass electrodes in the inside-out membrane patch configuration (Figure 3A). Single-channel events were frequently observed while establishing high-resistance seals (R > 10 GΩ); however, the majority of PKD2L1 GUV patches were unstable during voltage steps and these results were excluded from the final analysis. We hypothesize that patch instability and low seal resistance likely results from over-incorporation of PKD2L1 tetramers into the GUV membranes, as supported by the FSEC data. In addition, membrane instability was not observed from empty GUV recordings, suggesting that opening of incorporated CFE synthesized polycystins is likely responsible for patch destabilization. From the stable recordings, two magnitudes of single channels were readily observed from GUVs containing PKD2L1, suggesting unique full and sub-conductance states (Figure 3B, C and Table 1). In some recordings, only one conductance predominates, which can be estimated from recordings from individual GUVs (Figure 3—figure supplement 1A, B). While in other recordings, both full (FC) and sub-conductive (SC) states can be identified by histogram analysis of the unitary current (Figure 3—figure supplement 1C, D). Importantly, no single-channel events were observed from GUVs (N = 11) derived from CFE reactions with the empty plasmid—indicating that the measured conductance is not due to contaminates from lipid or cell-free reagents (Figure 3B). To assess the selectivity of the synthetic PKD2L1 pore, we substituted the pipette K+ charge carrier for methyl-D-glucamine ions (NMDG+). We did not observe any outward single-channel currents (i.e. toward the bath), indicating the large cation was not permeable through PKD2L1 which is consistent with previous reports (Figure 3D, E; DeCaen et al., 2016; Ng et al., 2019). To determine the feasibility of using this approach to assess the function of other polycystin channels, we followed the same steps to assay PKD2 channel biophysics. As observed in our PKD2L1 results, unitary single-channel currents of synthetic PKD2 channels reconstituted in GUVs yield sub- and full conductances, which were terminated by substitution of K+ with NMDG+ in the electrode (Figure 4A–C; Figure 3—figure supplement 1E–H). To compare the properties of the synthetic and biologically derived channels, we recorded native PKD2L1 and PKD2 channel single-channel currents from the primary cilia membranes of hippocampal neurons and inner medullary collecting duct (IMCD) cell line, respectively (Figure 4—figure supplement 1; Vien et al., 2023; Kleene and Kleene, 2017; Liu et al., 2018). Like the synthetic PKD2 and PKD2L1 channels, native polycystins produced sub- and full K+ conductances with inward currents having the greater magnitudes. Here, the synthetic PKD2L1 GUV conductance approximates the native full and sub-conductances recorded from hippocampal primary cilia membranes cultured from neonatal mice (ARL13B-EGFPtg). However, the PKD2 K+ conductance magnitudes recorded from IMCD cilia were significantly smaller than those assayed using the CFE–GUV synthetic system (Table 1). These differences might arise from the lack of post-translational modifications (e.g. phosphorylation and N-glycosylation) to the synthetic PKD2 peptides, which are normally found in biologically derived channels (Su et al., 2018; Cai et al., 1999; Newby et al., 2002). In addition, the GUVs are comprised of synthetic lipids which does not reflect the composition of organelle (cilia or ER) membranes of the cell (Nakatsu, 2015). Thus, while retaining the native ion selectivity and ion channel functionality despite their cell-free origin, synthetic PKD2 has different conductance magnitudes compared to cell-derived channels, which presents a limitation of using this approach to recapitulating physiological channel functions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig3-v1.jpg)
+
+**Figure 3.:** (A) Images of voltage-clamped giant unilamellar vesicles (GUVs) with incorporated PKD2L1-GFP channels. Left, establishing high-resistance seals in the on-cell patch configuration. Right, transitioning to the inside-our patch configuration. Scale bar = 20 μm. (B) Example unitary single-channel current records from GUVs reconstituted with or without PKD2L1 protein. Vesicles were patched using the symmetrical 150 mM K+ conditions (see methods) and PKD2L1 single-channel current producing full and sub-conductances are colored black and blue, respectively. (C) Average single-channel current amplitudes. Conductance (γ) estimated by fitting the average single-channel currents to a linear equation. Error (gray) indicates SEM from N = 3–8 GUVs. Several replicates lacked single-channel openings at all test potentials. (D) PKD2L1 single-channel current recorded using asymmetric cationic solutions, with 150 mM K+ in the bath and 150 mM NMDG+ in the pipette. (E) Resulting average single-channel current amplitudes where no inward single-channel current was detected (N = 3–4 GUVs).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, E) Single-channel current amplitudes measured from individual GUVs (open circles). GUVs with open channel events measure at four or more potentials in inward and outward direction were fit to a linear equation to estimate their conductance. (B, F) Resulting violin plots of the sub- (SC, blue) and full (FC, black) polycystin conductance as estimated from individual GUV recordings (N = 5–7 GUVs). (C, G) Unitary single-channel currents measured from GUVs expressing polycystins held at 100 mV. Examples on the top demonstrated channels transitioning from closed (C) to the full conductance current levels, whereas examples below are measured from channels shifting between sub- and fully conductive current levels. (D, H) Resulting histogram analysis of the corresponding single-channel currents.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig4-v1.jpg)
+
+**Figure 4.:** (A) Example unitary single-channel current records from giant unilamellar vesicles (GUVs) reconstituted with PKD2 protein in symmetrical 150 mM K+ conditions producing full (black traces) and sub-conductances (blue traces), respectively. (B, C) Average single-channel current amplitudes recorded using K+ or NMDG+ in the recording electrode solution. Conductance (γ) estimated by fitting the average single-channel currents to a linear equation. Error (gray) indicate SEM from K+ (N = 3–12 GUVs) and NMDG+ (N = 2–5 GUVs) conditions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Top, images of voltage-clamped primary cilia from mouse hippocampal neurons and inner medullary kidney collecting duct cells (IMCD) harvested from transgenic mice expressing a fluorescent cilia reporter (ARL13B-EGFPtg) (Delling et al., 2013). Scale bar = 20 μm. Previous work has genetically identified PKD2L1 and PKD2 as essential ion channel subunit in the primary cilia of the renal collecting duct cells and hippocampal neurons (Vien et al., 2023; Kleene and Kleene, 2017). Bottom, average single-channel current amplitudes recorded from primary cilia using K+ in the recording electrode solution. Conductance (γ) estimated by fitting the average single-channel currents to a linear equation. Error indicates SEM (N = 6 cilia).
+
+**Table 1.**
+ Conductance properties of polycystins measured from giant unilamellar vesicle (GUV) and cilia membranes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Polycystin channel and membrane context</th>
+      <th colspan="2">Major K+ g (pS) ± SD</th>
+      <th colspan="2">Minor K+ g (pS) ± SD</th>
+    </tr>
+    <tr>
+      <th>Inward</th>
+      <th>Outward</th>
+      <th>Inward</th>
+      <th>Outward</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PKD2 (GUV membrane, cell-free expression)</td>
+      <td>282 ± 38</td>
+      <td>153 ± 32</td>
+      <td>23 ± 4</td>
+      <td>21 ± 3</td>
+    </tr>
+    <tr>
+      <td>PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)</td>
+      <td>144 ± 9</td>
+      <td>110 ± 6</td>
+      <td>46 ± 4</td>
+      <td>34 ± 4</td>
+    </tr>
+    <tr>
+      <td>PKD2L1 (GUV membrane, cell-free expression)</td>
+      <td>148 ± 29</td>
+      <td>114 ± 28</td>
+      <td>30 ± 6</td>
+      <td>31 ± 7</td>
+    </tr>
+    <tr>
+      <td>PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)</td>
+      <td>165 ± 10</td>
+      <td>113 ± 6</td>
+      <td>40 ± 4</td>
+      <td>29 ± 3</td>
+    </tr>
+  </tbody>
+</table>
 
 In summary, we have established a synthetic approach to assay ion channel biophysics using two polycystin members to validate our method. Previously CFE has been used to study membrane protein integration, drug delivery, and the study of actin dynamics (Jacobs and Kamat, 2022; Noireaux and Liu, 2020; Göpfrich et al., 2019). The novelty of our approach rests with the adaptation of CFE-derived channels and their GUV reconstitution to carry out single-channel electrophysiology experiments. The described method represents a highly reductionist approach to assay channel function which can be generalized to other channels resistant to characterization using traditional electrophysiology approaches. Furthermore, the CFE–GUV electrophysiology method can be leveraged for future inquiry into lipid-channel regulation and effects of channel subunit composition. PKD2-related protomers form heteromeric complexes (e.g. PKD1–PKD2; PKD1L1–PKD2L1) with PKD1-related polycystins which are notoriously difficult to assay using traditional electrophysiology techniques (as reviewed) (Esarte Palomero et al., 2023). Using the CFE method to co-synthesize and GUV reconstitute these subunits presents a potential avenue to assay their function with patch clamp recordings. The approach may be further developed into high throughput drug screening assays using cation reporters (e.g. Fura derivatives) or multi-well planer electrophysiology instruments (Zhou et al., 2021; Yu et al., 2016). With our pipette patch electrodes, we observed considerable instability of our high resistant seals when the bath solutions were exchanged. Thus, future work could explore alternative membrane compositions (e.g. additional cholesterol) and stabilizing cationic conditions (internal CsF) to mitigate this effect. The folding and membrane integration of many ion channels require their association with stabilizing chaperone proteins produced in cells (Li et al., 2017; Chen et al., 2023; Bai et al., 2018). Thus, while the co-expression of chaperones with these channels using the CFS + GUV system is likely required for their functionality, the approach may also be leveraged to study chaperone-assisted folding in vitro.
 
 ## Methods
 
-## Protein production
+### Protein production
 
 Cell-free protein production was performed with PURExpress In Vitro Protein Synthesis Kit from New England Biolabs, Inc (Ipswich, MA, USA). Both PKD2 and PKD2L1 are in a pET19b plasmid under T7 promoter. We utilized the manufacturer’s protocol with 1 mg target DNA and a maximum reaction volume of 30 μl. When appropriate, we added substituted diH2O for SUVs. The reactions were placed in 37°C water bath or heated plate reader between 2 and 3 hr and then placed at 4°C for storage.
 
-## Vesicle formation
+### Vesicle formation
 
 Lipids DPhPC (4ME16:0PC) and cholesterol (ovine) were obtained from Avanti Polar Lipids (Alabaster, AL, USA) and mixed in chloroform to the desired mol percentage, 95% DPhPC and 5% cholesterol. SUVs were formed following the previously described (Varghese et al., 2006). Briefly, lipids were reconstituted in chloroform in a glass vial and the chloroform was evaporated until a thin lipid layer is deposited on the bottom of the glass vial. The lipid layer is then placed under vacuum, –23 inhg, for >4 hr. Lipids are then rehydrated in 1 ml of diH2O overnight at 60°C. The following day, lipids are vortexed and then passed through a 100-nm polycarbonate filter with the Mini-Extruder (Avanti Polar Lipids, Alabaster, AL, USA) seven times and stored at 4°C for 2 weeks. SUVs with or without channel incorporated are dried onto indium tin oxide-coated glass slides from Nanion Technologies (Munich, Germany). The dried slides are placed on the Vesicle Prep Pro (Nanion Technologies) with a rubber o-ring and 300 mM sucrose. GUVs are formed using the standard program. GUVs are electroformed and used for electrophysiology experiments the same day. SUVs with channel incorporated are stored at 4°C for 3 days.
 
-## Monitoring fluorescence and cell-free protein synthesis quantification
+### Monitoring fluorescence and cell-free protein synthesis quantification
 
 We monitored fluorescent folding with PKD2L1 C-terminally tagged GFP during PURExpress reaction in the presence and absence of SUVs. GFP fluorescence was monitored every 10 min for 3 hr at 37°C on the BioTek Cytation5 Imaging Reader (Agilent, Santa Clara, CA, USA). Control plasmid was the PURExpress Control DHFR Plasmid (NEB, Ipswich, MA, USA) with no fluorescent tag. GFP standard curve was created from dilutions of Aequorea Victoria GFP His-tag recombinant protein (Thermo Fisher Scientific, Cat. No. A42613) and measured on the BioTek Cytation5 Imaging Reader. A linear regression (Igor Pro, WaveMetrics, Portland, OR, USA) was used to create a standard curve. Target protein fluorescent measurements were made after in vitro protein synthesis for 3 hr.
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed on PKD2L1–GFP plasmid after PURExpress protein expression in the presence of SUVs. SUV and protein mixture were separated on SDS–PAGE gel, Novex Tris-Glycine mini protein gels, 4–20%, 1.0 mm, WedgeWell format (Thermo Fisher, Waltham, MA, USA). The SDS–PAGE was run with 10 μl Spectra Multicolor Broad Range Protein Ladder (Thermo Fisher Scientific, Cat. No. 26634). The gel was then transferred to Amersham Hybond P 0.45 PVDF blotting membrane (Cytiva, Cat. No. 10600029) and PKD2L1-GFP was detected with an anti eGFP monoclonal antibody (F56-6A1.2.3) (Invitrogen, Cat. No. MA1-952) diluted 1:1000 in TBS with 0.1% (vol/vol) Tween-20 and 5% (5/vol) milk overnight at 4°C. The goat anti-mouse AF555 secondary (Invitrogen, Cat. No. A32727) diluted 1:5000 in TBS with 0.1% Tween-20 and 5% milk was incubated for 1 hr at room temperature.
 
-## SNAP staining
+### SNAP staining
 
 Channel orientation was visualized with N-terminally tagged PKD2L1 with SNAP Tag sequence (NEB, Ipswich, MA, USA). After PKD2L1-SNAP-tag production and incorporation into GUVs, two SPAP-tag substrates were added to the solution, cell permeable SNAP-Cell Oregon Green and the cell impermeable SNAP-Surface Alexa Fluor 647, according to the manufacturer’s instructions. Images were collected on Nikon A1 confocal microscope and all images were analyzed with Nikon Elements (Melville, NY, USA). Briefly, regions of interests were manually outlined around the vesicle membrane. Then Pearson’s correlation coefficients were measured for fluorescence overlap of the two substrates.
 
-## Fluorescence-detection size-exclusion chromatography
+### Fluorescence-detection size-exclusion chromatography
 
 As controls for the polycystin FSEC elution time, Aequorea Victoria GFP His-tag recombinant protein (Thermo Fisher Scientific, Cat. No. A42613) and polycystin channel protein was harvested from lysates of 0.5 × 109 HEK293T (ATCC, Cat. No. CRL-3216) PKD2Null cell lines (Vien et al., 2020) stably expressing PKD2-GFP and PKD2L1-GFP. Sythetic channel protein from three CFE reactions were synthesized in the presence of SUVs, as previously described. The SUVs were lysed using dodecyl β-D-maltoside (DDM) (GoldBio) and protein supinates collected after centrifugation for 20 min at 20,000 rpm. Samples were then diluted in 50–100 μl of SEC running buffer containing (ml) 150 mM NaCl, 25 mM N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid (HEPES), 1 mM CaCl2·6H2O, 0.05% DDM, 0.005% cholesteryl hemisuccinate, pH 7. 50 μl of each sample were separated on an analytical size-exclusion column (Superose 6 5/150 GL; GE Healthcare) at 0.2 ml/min flow rate. Fluorescent proteins were detected (excitation: 480  nm, emission: 512  nm) using an RF-20Axs detector (Shimadzu, Japan).
 
-## Isolation of primary hippocampal neurons and IMCD cell culture for cilia electrophysiology
+### Isolation of primary hippocampal neurons and IMCD cell culture for cilia electrophysiology
 
 All mice utilized in these procedures are housed in our AAALAC-approved Center for Comparative Medicine (CCM) at Northwestern University, Feinberg School of Medicine. NU Institutional Animal Care and Use Committee has approved this facility and was monitored by an Animal Care Supervisor as well as a veterinarian from the Division of Laboratory Animal Medicine (DLAM). All of those who handled animals and perform the approved protocols were properly trained prior to start of work to ensure no animal discomfort. Mice were anesthetized using isoflurane and sacrificed by severing the spinal cord. Hippocampi were dissected from 3 to 6 ARL13B-EGFPtg mice (ages P0–P1, sex undetermined, background strain C57BL/6J) and digested in ~20 units of papain (LK003176, Worthington) and ~200 units of deoxyribonuclease (LK003172, Worthington) dissolved to basal medium eagle solution (B1522, Sigma) at 37°C for 25 min (Vien et al., 2023). Tissues were washed with beta-mercaptoethanol (BME) and triturated to release cells. Cells were centrifuged at 300 × g for 4 min and plated on polylysine-coated glass coverslip at 1–4 × 105 density in basal medium eagle solution containing B27 supplement (17504044, Gibco), N-2 supplement (17502048, Gibco), 0.5% penicillin/streptomycin (15140148, Gibco), 5% fetal bovine serum, 5% horse serum (260500,Gibco), and GlutaMax (350500, Gibco). Hippocampal neurons were cultured for 2–7 days prior to conducting electrophysiology experiments. IMCD cells stably expressing ARL13B-EGFP cilia reporters were cultured in F12/DMEM media (Sigma) with 10% fetal bovine serum (Sigma) and 50 I.U./ml penicillin–streptomycin (30-2300, ATCC) antibiotic.
 
-## Electrophysiology
+### Electrophysiology
 
 All research chemicals used in the electrophysiology experiments were purchased from Millipore-Sigma. Single-channel recordings were recorded from primary cilia and GUV membranes. All GUV patch electrodes were made using borosilicate glass electrodes and were fire polished to resistances greater than 5–10 MΩ and primary cilia patch electrodes were polished to a resistance greater than 15 MΩ. Renal primary cilia PKD2 currents were recorded from mIMCD-3 (ATCC, Catalog No. CRL-2123) cells expressing the cilia reporter ARL13B-EGFP, as previously described (Kleene and Kleene, 2017; Kleene and Kleene, 2012; DeCaen et al., 2013; Vien et al., 2020; Liu et al., 2017). Primary cilia PKD2L1 currents were recorded from isolated neonatal hippocampal neurons from ARL13B-EGFPtg using previously described procedure (Vien et al., 2023). Recording solutions for mammalian culture consisted of symmetrical recording solutions with 150 mM KCl, 10 mM HEPES, and 300 mM glucose, unless the charge carrier was changed when mentioned. Recordings were collected in voltage clamp with voltage steps from −100 to +100 mV and a holding potential of −40 mV with ClampEx v.11.2.0.59 (MolecularDevices, San Jose, CA, USA) using a Axopatch 200B amplifier. Recordings were digitized with the Digidata 1550B (MolecularDevices) at 25 kHz and low pass filtered at 5 kHz. Recordings were analyzed with ClampFit v11.2.0.59 (Molecular Devices, San Jose, CA, USA) and IGOR Pro 8.04 (WaveMetrics, Portland, OR, USA). As a predetermined criteria, data was excluded from analysis when seal resistance fell below 5 MΩ due insufficient voltage control of the patched membrane. Conductance was determined by determining the slope of the current–voltage relationship. Probability of open time was calculated by measuring the time at which a channel spends in an open confirmation divided by the total time in the voltage step.
 
-## Materials availability statement
+### Materials availability statement
 
 All CFE and mammalian cell expression constructs used in this study are available without restriction upon written request to the corresponding author.

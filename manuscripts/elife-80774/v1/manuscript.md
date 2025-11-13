@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Department of Laboratory Medicine and Pathobiology, Faculty of Medicine, University of Toronto Toronto Canada
-2. https://ror.org/03dbr7087 Department of Biochemistry, Faculty of Medicine, University of Toronto Toronto Canada
+1. Department of Laboratory Medicine and Pathobiology, Faculty of Medicine, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. Department of Biochemistry, Faculty of Medicine, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
@@ -23,6 +23,60 @@ von Hippel-Lindau (VHL) disease is a rare hereditary cancer syndrome that causes
 von Hippel-Lindau (VHL) disease is a hereditary cancer syndrome passed down in an autosomal-dominant fashion. It is named after physicians Eugen von Hippel and Arvid Lindau, who first described families with a genetic predisposition to retinal and central nervous system (CNS) hemangioblastoma, respectively (Lindau, 1904; Davison et al., 1936; Hippel, 1904). VHL disease is rare, afflicting approximately 1 in 35,000 people (Neumann and Wiestler, 1991; Maher et al., 1991). In addition to the retinal and central nervous system hemangioblastoma, other cardinal features of VHL disease include clear-cell renal cell carcinoma (RCC), the commonest form of kidney cancer, and pheochromocytoma, a neuroendocrine tumor derived from adrenal chromaffin cells, in addition to pancreatic, renal and epididymal cysts, endolymphatic sac tumors, and polycythemia (Lindau, 1904 ; Davison et al., 1936; Hippel, 1904).
 
 In 1993, the VHL gene was cloned and mutations of the locus were determined to be causative of VHL disease (Latif et al., 1993). By sequencing the VHL gene in various families afflicted with VHL disease, a complex genotype-phenotype correlation emerged. First, VHL disease is broadly separated into two types based on the propensity of developing pheochromocytoma where Type 1 patients have a low risk while Type 2 patients have a high risk of pheochromocytoma. Type 1 patients also develop hemangioblastoma and RCC. Type 2 disease is further stratified into Type 2a (high risk of hemangioblastoma with low risk of RCC), Type 2b (high risk of hemangioblastoma and RCC), and Type 2c (only pheochromocytoma without the other disease manifestations). Moreover, VHL mutations have been found to be causative of autosomal-recessive familial polycythemia, which is sometimes referred to as Type 3 VHL disease (Table 1). While polycythemia refers to a nonspecific increase in the volume percentage of red blood cells in the blood, also known as hematocrit, this increase in VHL disease and other pseudohypoxic diseases is known to result from excess red blood cell production, termed erythrocytosis. VHL disease Type 1 and 2 are inherited in an autosomal-dominant manner, which predisposes an individual to developing cancer upon the loss of the remaining wild-type allele. In other words, there must be a loss of heterozygosity resulting either from large deletions, mitotic recombination, or hypermethylation of the wild-type allele in a susceptible cell for a tumor to form (Prowse et al., 1997). However, to develop polycythemia associated with VHL disease Type 3, an individual must inherit two mutated VHL alleles, meaning it is an autosomal-recessive disease.
+
+**Table 1.**
+ VHL disease classification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">VHL disease</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Type 1</th>
+      <th>Type 2A</th>
+      <th>Type 2B</th>
+      <th>Type 2C</th>
+      <th>Type 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RCC</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Hemangioblastoma</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PPGL</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Polycythemia</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
 
 The protein product of VHL is termed pVHL, which forms an E3 ubiquitin ligase complex (pVHL-E3) with elongin B, elongin C, cullin 2, and Rbx1 (Kamura et al., 1999; Cardote et al., 2017). pVHL serves as the substrate-conferring component of the pVHL-E3 ligase, an integral component in the metazoan oxygen-sensing pathway (Figure 1). The best-characterized substrates of the pVHL-E3 ligase remain the hypoxia-inducible factor (HIF) alpha subunit paralogs HIF1α, HIF2α, and HIF3α. HIFs are heterodimeric transcription factors consisting of an oxygen-labile α subunit and a constitutively expressed β subunit (Figure 1). In the presence of sufficient oxygen, prolyl hydroxylase (PHD) enzymes hydroxylate the conserved proline residues on HIFα, which results in pVHL binding to HIFα and subsequent polyubiquitylation leading to 26 S proteasomal-mediated degradation of HIFα (Figure 1; Epstein et al., 2001; Jaakkola et al., 2001; Ivan et al., 2001; Bruick and McKnight, 2001). Under hypoxic conditions, HIFα remains unhydroxylated, escapes recognition via pVHL, and is therefore not degraded. This pool of stabilized HIFα is able to both dimerize with HIFβ and translocate to the nucleus where it transcriptionally regulates many genes involved in the adaptive hypoxic response including metabolic enzymes, erythropoietin (EPO), and vascular endothelial growth factor (VEGF) (Figure 1; Jiang et al., 1996).
 
@@ -40,9 +94,9 @@ To better understand VHL disease, researchers searched for other targets and/or 
 
 A subset of these potential pVHL regulatory targets, including AKT, are proposed to interact with pVHL in a hydroxylproline-dependent manner following PHD-mediated hydroxylation. Notably, a systemic attempt to detect PHD-mediated hydroxylation of 24 non-HIFα substrates failed to reproduce and confirm previously published findings (Cockman et al., 2019). Further, a list of potential pVHL substrates, including fibronectin, collagen, tubulin, HuR, and p14/ARF, have been identified as pVHL interactors in high throughput studies with additional low-throughput supporting evidence in the BioGRID database (Oughtred et al., 2021). Each of these potential interactors, however, have only been identified in a single high-throughput experiment and all but HuR have been identified by the same high-throughput study (Lai et al., 2011; Oughtred et al., 2021). In contrast, the HIFα substrates of pVHL have been identified by numerous high-throughput and low throughput studies (143 identify HIF1α and 19 identify HIF2α in the BioGRID database) demonstrating a disparity in the confidence of the interactions (Oughtred et al., 2021). Thus, strong evidence of non-HIFα related bona fide biological functions of pVHL remains lacking.
 
-## Evidence for a HIF-centric model of VHL disease
+### Evidence for a HIF-centric model of VHL disease
 
-## Clinical evidence
+#### Clinical evidence
 
 Since the association of pVHL mutations with VHL disease, clinicians noted that largely unique groups of pVHL mutations were associated with the different types of VHL disease. It has been generally accepted that mutations that more markedly impact the ability of pVHL to degrade HIFα result in more ‘severe’ VHL disease phenotypes. Patients with large deletion and frameshift mutations generally develop Type 1 VHL disease, while patients with missense mutations develop Type 2 disease (Chen et al., 1995; Stolle et al., 1998; Maher et al., 1996). This concept can be further extrapolated to explain the heterogeneity of phenotypes within Type 2 VHL disease. Type 2c pVHL mutants, for example, cause exclusively pheochromocytoma and have been shown to degrade HIFα nearly as well as wild-type pVHL (Hoffman et al., 2001). Further, some pVHL mutations are associated with incomplete phenotypic penetrance, which has even been observed among members of the same VHL disease family. Thus, we propose that the various clinical phenotypes associated with VHL disease require different ‘doses’ of HIF. From polycythemia to pheochromocytoma to hemangioma/hemangioblastoma to RCC, a greater dose of HIF is required for disease onset. Inter-family heterogeneity among VHL disease patients reflects a differential loss of pVHL function — a mutation that completely abrogates the ability of pVHL to negatively regulate HIF leads to a greater HIF dose and more severe phenotype than mutations that only mildly impair pVHL function. Lastly, observed intra-family heterogeneity supports the idea that different phenotypes associated with VHL disease exist on a gradient of increasing HIF dose. Some individuals in a family, due to environmental, metabolic, and/or genetic factors, experience greater stabilization of HIF than other relatives with the same mutation, which leads to the development of phenotypes otherwise associated with greater loss of pVHL function (Figure 2).
 
@@ -60,6 +114,48 @@ As mentioned above, Type 2c VHL disease has perplexed the field as Type 2c pVHL 
 
 HIF2-driven disease is particularly interesting because like VHL disease, it also presents as a gradient with escalating phenotypes comparable to Type 3, Type 2c, and even Type 2a VHL disease. Patients with mutations in EPAS1, the gene encoding HIF2α, have been reported to develop polycythemia and neuroendocrine tumors in dozens of patients (Därr et al., 2016; Taieb et al., 2016; Tarade et al., 2018). HIF2-driven disease can be segregated into two broad classes: Class 1 characterized by the presence of pheochromocytoma and/or paraganglioma (PPGL) with or without polycythemia, and Class 2 in which patients present solely with polycythemia (Tarade et al., 2018). Class 1 is further divided into three sub-classes where Class 1a presents with PPGL, somatostatinoma, and polycythemia, Class 1b presents with PPGL and polycythemia, and Class 1c presents with PPGL exclusively (Table 2). More rarely, patients with gain-of-function HIF2α mutations also present with hemangiomas and hemangioblastoma. While there is only a single case of hemangioblastoma linked to a HIF2α gain-of-function mutation, a unique and uncharacterized double F374Y and Q561K missense mutation, (Taieb et al., 2016) the clinical literature includes three reports of patients with HIF2-driven disease developing hemangiomas of the retina, liver, and cranial vault (Pacak et al., 2013; Dmitriev et al., 2020; Buffet et al., 2014). All three of these patients also developed polycythemia and pheochromocytoma/paraganglioma and were determined to have a HIF2α gain-of-function mutation otherwise associated with a complete penetrance of PPGL. While there is less clinical evidence of HIF2α driving hemangioma, relative to PPGL, liver hemangiomas associated with loss-of-pVHL mouse models can be rescued by co-deletion of HIF2α or HIFβ, which provides further evidence for the gatekeeping role of HIF2α in hemangioma and hemangioblastoma (Rankin et al., 2008; Rankin et al., 2005). Much like Type 2c VHL disease, Class 1a/b HIF2-driven disease can sometimes ‘spillover’ and trigger the formation of vascular hemangioma tumors. The remarkable fact that HIF2α gain-of-function mutations can phenocopy Type 2a VHL disease provides strong evidence for the role of HIF2α in Type 2c VHL disease. Not only do some canonical Type 2c VHL mutations also cause hemangiomas, a phenotype strongly linked with HIF2α signaling in Type 2a VHL disease, some VHL disease patients concurrently develop polycythemia, pheochromocytoma, and somatostatinoma, which matches the phenotypic profile of Class 1a HIF2-driven disease (Karasawa et al., 2001).
 
+**Table 2.**
+ HIF2-driven disease classification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">HIF2-driven disease</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Class 1A</th>
+      <th>Class 1B</th>
+      <th>Class 1C</th>
+      <th>Class 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PPGL</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Somatostatinoma</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Polycythemia</td>
+      <td>+</td>
+      <td>+</td>
+      <td>-</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
 PHD2 mutations have been widely found to cause polycythemia. More rarely, PHD2 mutations, like PHD2 H374R and PHD2 A228S, trigger development of pheochromocytoma and/or paraganglioma (PPGL) in addition to polycythemia (Gardie et al., 2014; Ladroue et al., 2008; Yang et al., 2015). The patient harboring the H374R mutant originally presented with erythrocytosis, but a tumor matching the characteristics of a paraganglioma was later diagnosis at 43 years old (Ladroue et al., 2008) This individual displayed loss of the remaining wild-type EGLN1 allele. This observed loss of heterozygosity suggests that PHD2 plays a tumor suppressor role in chromaffin cells and the closely related paraganglia cells that are transformed in paraganglioma. Other reports of PHD2 mutation in polycythemia note that patients inherit a single mutated allele (Percy et al., 2006; Percy et al., 2007; Barradas et al., 2018). This could imply that haploinsufficiency of wild-type PHD2 might be enough to induce symptoms. Indeed, deletion of a single PHD2 allele or knock-in of a single mutant PHD2 allele in mice successfully recapitulates polycythemia, which was also found to be dependent on HIF2α (Arsenault et al., 2013). These cases also suggest mutations of EGLN1 may have a limited phenotypic range compared to VHL and HIF2-driven disease. The loss of PHD2 function may be compensated for by the other PHD paralogs, PHD1 and PHD3, preventing most instances of tumor formation but not all. Indeed, there has been one documented case of a disease-causing PHD1 mutation. This mutant, S61R, induced erythrocytosis development by age 6 and recurrent PPGL at age 14 (Yang et al., 2015).
 
 There have also been documented cases of pVHL mutant-induced polycythemia (Type 3 VHL disease). R200W and H191D have both been identified as autosomal-recessive pVHL mutations that cause polycythemia (Pastore et al., 2003; Ang et al., 2002). And similarly to the role of HIF2α in liver hemangioma pathogenesis in loss-of-pVHL mouse models, inhibition of HIF2α rescues polycythemia in mouse models of polycythemia driven by the R200W mutation (Ghosh et al., 2021; Hickey et al., 2007; Ghosh et al., 2018).
@@ -68,7 +164,7 @@ While pVHL induced polycythemia is generally inherited in an autosomal-recessive
 
 Just like VHL disease, HIF2α and PHD2 mutations can present a wide range of phenotypes where mutations that most stabilize HIF2α cause the worst phenotypes (more on this later). Thus, mutations in these three separate components of the HIFα-degradation pathway — substrate (HIF2α), hydroxylase (PHD2), and E3 ubiquitin ligase (pVHL) — all present with similar phenotypes. The common factor in the disruption of these three components of the pathway is the ultimate stabilization of HIFα, in particular HIF2α, and the correlation between the severity of disease and the degree of disruption to the HIFα degradation pathway naturally suggest that the causative factor is HIFα (Figure 2).
 
-## Biochemical evidence
+### Biochemical evidence
 
 The clinical evidence that pseudohypoxic diseases resulting from mutations in multiple components of the metazoan oxygen-sensing pathway have similar phenotypes to VHL disease suggests a common mechanism underlying these diseases. The notion that the magnitude of HIF stabilization is the sole mechanism that gives rise to the various phenotypic spectrum of VHL disease would infer that the downstream pathways and gene regulation by HIF have sufficient complexity to explain the multifaceted genotype-phenotype relationship. The oxygen-sensing pathway in humans is canonically comprised of three PHD paralogs (PHD1, PHD2, PHD3), three HIFα paralogs (HIF1α, HIF2α, HIF3α), two HIFβ paralogs (ARNT and ARNT2), and a single pVHL-E3 ligase (Figure 1; Kaelin and Ratcliffe, 2008). The complexity of the pathway is also influenced by the differential behavior of the paralogs of each component; each PHD paralog has varying hydroxylation activity toward the HIFα paralogs (Appelhoff et al., 2004), each HIFα paralog has 2 hydroxylation sites with varying oxygen-dependent hydroxylation sensitivities (Tarhonskaya et al., 2015), HIF3α has multiple splice variants (Maynard et al., 2003) and the HIFα paralogs regulate partially overlapping as well as unique sets of genes (Schödel et al., 2011). Thus, the complexity of the oxygen-sensing pathway allows for mutations to have differential effects on HIF stabilization and the expression of downstream genes and pathways depending on the specific component of the pathway affected and the severity of the mutation.
 
@@ -80,7 +176,7 @@ As mentioned above, there are also reports of mutations in PHD2 and one mutation
 
 However, mutations in HIF2ɑ and PHD2 have not been observed to be causative of RCC indicating that HIF2α stabilization independent of improper HIF1α regulation is not sufficient to drive the development of RCC. This is interesting as in vivo experiments using nude mouse xenograft assays provide some insight into the role of HIF2α in RCC. Tumors extracted from mice injected with 786-O cells co-expressing Type 2a pVHL mutant (Y98H or Y112H) and a stabilized form of HIF2α (proline hydroxylation site double mutant, P405A and P531A) were observed to have increased RCC tumor mass as compared to mice injected with cells lacking the stabilized HIF2α. The opposite effect was observed in nude mouse xenograft assays where mice were injected with 786-O cells co-expressing Type 2b mutant pVHL (Y98N or Y112N) and a HIF2α-targeted shRNA to knockdown HIF2α expression. Additionally, a ~50% decrease in the number of mice with tumors relative to mice injected with cells expressing the control shRNA was observed with the Y112N pVHL mutant. These observations suggested that increases to intracellular HIF2α concentration promotes RCC tumor growth and decreases to the intracellular HIF2α concentration inhibits tumor growth and initiation (Li et al., 2007). A recent mouse model system using induced gene deletion of combinations of VHL, HIF1α, HIF2α, Trp53, and Rb1 revealed that RCC tumor formation is strongly dependent on HIF1α (Hoefflin et al., 2020). VHLΔ/ΔHIF1αΔ/Δ mice (Note: all mice in the study were also Trp53 Δ/ΔRb1Δ/Δ) showed a drastic reduction in tumor frequency relative to VHLΔ/Δ mice. VHLΔ/ΔHIF2αΔ/Δ mice by comparison only had a moderate reduction in tumor frequency relative to VHLΔ/Δ mice (Hoefflin et al., 2020). It was also observed that the stabilization of both HIF1α and HIF2α in VHLΔ/Δ mice promotes the clear cell phenotype of tumor cells while tumor cells from VHLΔ/ΔHIF1αΔ/Δ mice and VHLΔ/ΔHIF2αΔ/Δ mice had reduced frequency of the clear cell phenotype (Hoefflin et al., 2020). These data suggest a more complex relationship between the relative expression of HIF1α and HIF2α in RCC. Taken together, the deregulation of HIF2α expression alone is sufficient to explain a subset of VHL disease phenotypes (i.e. Type 2A, 2C, and 3 VHL disease), and there are data to suggest that the remaining phenotypes related to RCC (i.e. Type 1 and 2B VHL disease) could be explained by the co-involvement of HIF1α and HIF2α.
 
-## Dual role of HIF1α and HIF2α in kidney cancer
+### Dual role of HIF1α and HIF2α in kidney cancer
 
 Given the clear clinical and biochemical evidence pointing towards HIF2α driving polycythemia and PPGL, the balance of HIF-dependent or HIF-independent pVHL roles in RCC instead becomes the focus. Unlike the other cardinal stigmata associated with VHL disease, loss-of-function PHD2 mutations or gain-of-function HIF2α mutations have not been observed in RCC (Morris et al., 2009; Astuti et al., 2011). This suggests that either the dysregulation of HIF-independent VHL functions plays a role in RCC or the coupled deregulation of HIF1α and HIF2α is uniquely required for RCC.
 
@@ -94,13 +190,13 @@ Importantly, this model of RCC does not need to appeal to HIF-independent functi
 
 ## Other considerations
 
-## Distinguishing SNPs from disease-causing mutations
+### Distinguishing SNPs from disease-causing mutations
 
 When studying mutations in VHL, EGLN1, and EPAS1, it is imperative to exclude single nucleotide polymorphisms (SNP), hypomorphic alleles, and passenger mutations observed in individuals presenting with pseudohypoxic diseases when other verified disease-causing mutations are also present. These apparent mutations are not causative of disease and thus can confound genotype-phenotype relationships. One example of this is the P25L VHL mutant. This mutation was found in conjunction with another VHL mutant P86R in a patient diagnosed with VHL disease. P86R has been identified as a disease-causing mutation, suggesting P25L is a rare polymorphic allele of VHL rather than a disease-causing mutation (Rothberg et al., 2001). When considering that P25L localizes to the N-terminal acidic domain, which has no known role in regulating HIF, we argue that this mutation should be excluded from genotype-phenotype studies.
 
 Although most reported HIF2α mutations cluster around the C-terminal hydroxylation site, P531, a handful impact residues with no clear role in HIFα regulation. Although it is tempting to speculate about new modes of HIF regulation, most of these mutations present as rare SNPs, including F374Y (rs150797491), M538I (rs61757375), and T519M (rs377001303). Indeed, by comparing the frequency of the previously mentioned F374 allele in cohorts with and without PPGL, a lifetime penetrance of only 5% was predicted (Dwight et al., 2021). This is consistent with the observation that in familial cases, the F374Y mutation is uncoupled from the PPGL phenotype (Lorenzo et al., 2013). Thus, mutations with well-characterized biochemical or molecular mechanism and firmly associated with a particular phenotype ought to be the focus of future genotype-phenotype studies and care should be taken to assess whether novel mutations are truly disease causing or not.
 
-## The intersection of genetic lesions and environment
+### The intersection of genetic lesions and environment
 
 In addition to the presence of SNPs mis-identified as bona fide disease-causing mutations, those investigating the genetic basis of pseudohypoxic diseases must also keep in mind the interaction between genetic lesions and the environment. We argue that environmental factors can complicate disease presentation. Generally, hypoxemia associated with living at altitude or a chronic health condition like cyanotic heart disease is a known risk factor for developing a carotid body paraganglioma (Lack, 1977; Lack, 1978; Arias-Stella and Valcarcel, 1976; Heath et al., 1970). Further, it has been reported that patients with germline mutations in SDHD, the gene encoding succinate dehydrogenase subunit D, are more likely to present with multiple PPGL tumors if they live at altitude than patients living at sea level (Astrom et al., 2003). The implication is that low levels of hypoxemia or systemic hypoxia increases HIF2α activity, which drives hyperplasia and increases the odds of multiple transformation events occurring over time (Astrom et al., 2003). It is also broadly accepted that as an individual ages, the risk of cancer increases due to various factors such as telomere shortening and accumulated exposure to carcinogens (Anisimov, 2003). Patients with pseudohypoxic disease therefore may develop additional symptoms as they age, shifting their disease presentation into a different class or type.
 
@@ -122,6 +218,6 @@ Another possible model for testing the HIF-centric hypothesis is the in vitro re
 
 Lastly, the development and clinical evaluation of a specific HIF2α inhibitor, Belzutifan, represents another opportunity to assess the necessity of HIF2α activity for the various clinical manifestations associated with VHL disease (Cho et al., 2016; Chen et al., 2016). Recently, Belzutifan received approval in the US for treatment of RCC, hemangioblastoma, and pancreatic neuroendrocrine tumors (pNET) associated with VHL disease following a successful phase 3 clinical trial (Fallah et al., 2022). A small number of pheochromocytoma tumors in that clinical trial meant that the critical requirement of HIF2α signaling for VHL disease-associated pheochromocytoma could not be assessed, but a single-patient clinical trial of a patient with Pacak-Zhuang syndrome (another name for Class 1a/b HIF2-driven disease) revealed that Belzutifan treatment can result in the shrinkage of paraganglioma tumors and the resolution of polycythemia (Kamihara et al., 2021). Expanded studies evaluating the efficacy of Belzutifan in PPGL tumors associated with VHL disease and HIF2-driven disease will allow for the exploration of the necessity of HIF2α for PPGL in different genetic contexts.
 
-## Conclusions
+### Conclusions
 
 VHL disease is a rare hereditary cancer syndrome that causes a perplexingly wide variety of phenotypes. Despite a myriad of suggested HIF-independent functions for pVHL, we propose that the complexities of VHL disease can be explained solely within the context of HIF dysregulation. The most striking supportive evidence of this notion is the genetics of HIF2- and PHD2-driven diseases in which mutations in these critical components of the metazoan oxygen-sensing pathway have been found to cause similar phenotypes to those observed in VHL disease. Disease caused by mutations in HIF2α, PHD2, and pVHL all stabilize HIF to cause an inappropriate hypoxic response. A gradient can be observed in which mutations that most stabilize HIF induce the most severe phenotypes (Figure 2). A complex molecular interplay between HIF1α and HIF2α is likely required for the development of RCC, which in turn can explain some puzzling aspects of VHL disease. Further investigations surrounding the complexities of VHL disease should not overlook, but rather return to, the one bona fide function of pVHL to interrogate how differing VHL mutations affect the degree of stabilization of HIFα.

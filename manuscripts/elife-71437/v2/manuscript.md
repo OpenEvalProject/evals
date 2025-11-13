@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02crff812 Department of Molecular Life Sciences, University of Zurich Zurich Switzerland
+1. Department of Molecular Life Sciences, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 2. Zurich Ph.D. Program in Molecular Life Sciences Zurich Switzerland
-3. https://ror.org/02crff812 Neuroscience Center Zurich, University of Zurich/ETH Zurich Zurich Switzerland
+3. Neuroscience Center Zurich, University of Zurich/ETH Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
 ## Abstract
 
-Synaptic proteins and synaptic transmission are under homeostatic control, but the relationship between these two processes remains enigmatic. Here, we systematically investigated the role of E3 ubiquitin ligases, key regulators of protein degradation-mediated proteostasis, in presynaptic homeostatic plasticity (PHP). An electrophysiology-based genetic screen of 157 E3 ligase-encoding genes at the Drosophila neuromuscular junction identified thin , an ortholog of human tripartite motif-containing 32 ( TRIM32 ), a gene implicated in several neurological disorders, including autism spectrum disorder and schizophrenia. We demonstrate that thin functions presynaptically during rapid and sustained PHP. Presynaptic thin negatively regulates neurotransmitter release under baseline conditions by limiting the number of release-ready vesicles, largely independent of gross morphological defects. We provide genetic evidence that thin controls release through dysbindin , a schizophrenia-susceptibility gene required for PHP. Thin and Dysbindin localize in proximity within presynaptic boutons, and Thin degrades Dysbindin in vitro. Thus, the E3 ligase Thin links protein degradation-dependent proteostasis of Dysbindin to homeostatic regulation of neurotransmitter release.
+Synaptic proteins and synaptic transmission are under homeostatic control, but the relationship between these two processes remains enigmatic. Here, we systematically investigated the role of E3 ubiquitin ligases, key regulators of protein degradation-mediated proteostasis, in presynaptic homeostatic plasticity (PHP). An electrophysiology-based genetic screen of 157 E3 ligase-encoding genes at the Drosophila neuromuscular junction identified thin, an ortholog of human tripartite motif-containing 32 (TRIM32), a gene implicated in several neurological disorders, including autism spectrum disorder and schizophrenia. We demonstrate that thin functions presynaptically during rapid and sustained PHP. Presynaptic thin negatively regulates neurotransmitter release under baseline conditions by limiting the number of release-ready vesicles, largely independent of gross morphological defects. We provide genetic evidence that thin controls release through dysbindin, a schizophrenia-susceptibility gene required for PHP. Thin and Dysbindin localize in proximity within presynaptic boutons, and Thin degrades Dysbindin in vitro. Thus, the E3 ligase Thin links protein degradation-dependent proteostasis of Dysbindin to homeostatic regulation of neurotransmitter release.
 
 ## Introduction
 
@@ -30,15 +30,35 @@ Here, we realized an electrophysiology-based genetic screen to systematically an
 
 ## Results
 
-## An electrophysiology-based genetic screen identifies thin
+### An electrophysiology-based genetic screen identifies thin
 
 To systematically test the roles of E3 ligases in PHP, we first generated a list of genes predicted to encode E3 ligases in D. melanogaster. To this end, we browsed the D. melanogaster genome for known E3-ligase domains (Du et al., 2011; Ketosugbo et al., 2017). Moreover, we included homologs of predicted vertebrate E3 ligases (see Figure 1—figure supplement 1). This approach yielded 281 putative E3 ligase-encoding genes (Figure 1A), significantly higher than previously predicted for D. melanogaster (207 genes; Du et al., 2011). To explore the relationship between the number of E3 ligase-encoding genes and the number of protein-coding genes, we plotted the number of putative E3 ligase-encoding genes over the total protein-coding gene number of three species and compared it to the relationship between protein kinase-encoding genes and genome size (Figure 1A). The relatively constant ratio between the predicted number of E3 ligase-encoding genes and genome size across species (~0.02–0.03; Figure 1A; Ketosugbo et al., 2017), suggests an evolutionarily conserved stoichiometry between E3 ligases and target proteins, similar to protein kinases (Figure 1A). Hence, a core mechanism of the UPS – protein ubiquitination – is likely conserved in D. melanogaster.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig1-v2.jpg)
+
+**Figure 1.:** (A) The number of putative E3 ubiquitin ligase-encoding genes (E3) and protein kinase-encoding genes (PK) as a function of total protein-coding gene number of C. cerevisiae, D. melanogaster, and H. sapiens. Note the similar relationship between E3 number or PK number and total protein-coding gene number across species. (B) Top: 157 E3 ligase-encoding genes and 11 associated genes (180 lines; presynaptic RNAi expression, elavc155-Gal4>UAS RNAi, or mutants, note that some genes were targeted by more than one line) were tested using two-electrode voltage clamp analysis at the Drosophila neuromuscular junction (NMJ) in the presence of the glutamate receptor (GluR) antagonist philanthotoxin-443 (‘PhTX’) to assess presynaptic homeostatic plasticity (PHP) (see Materials and methods). Bottom: Exemplary miniature excitatory postsynaptic potentials (mEPSPs) and action potential (AP)-evoked excitatory postsynaptic currents (EPSCs) recorded from wild-type (WT), WT in the presence of PhTX (‘WT + PhTX’), and a PHP mutant in the presence of PhTX (‘PHP mutant + PhTX’). Note the decrease in mEPSP amplitude after PhTX treatment, indicating GluR inhibition, and the similar EPSC amplitude between WT and WT + PhTX, suggesting PHP. Small EPSC amplitudes in the presence of PhTX (red arrow) imply a defect in PHP or baseline synaptic transmission. (C) Histogram of mean mEPSP amplitudes for each transgenic or mutant line (mean n = 4 NMJs per line, range 3–12; N = 180 lines) following PhTX treatment. WT averages under control conditions (‘WT’, n = 16) and in the presence of PhTX (‘WT + PhTX’, n = 16) are shown as gray and black arrows, respectively. (D) Histogram of mean EPSC amplitudes (as in C). The red bars indicate transgenic or mutant lines with EPSC amplitudes significantly different from WT in the presence of PhTX (black arrow). (E) Volcano plot of the ratio between the mean EPSC amplitude of a transgenic or mutant line and WT (‘EPSCx/EPSCWT’) in the presence of PhTX (p values from one-way analysis of variance [ANOVA] with Tukey’s multiple comparisons). Transgenic or mutant lines with mean EPSC amplitude changes with p ≤ 0.01 (dashed line) are shown in red. A deletion in the gene thin (CG15105; thinΔA; LaBeau-DiMenna et al., 2012) that was selected for further analysis is shown as a filled red circle. One-way ANOVA with Tukey’s multiple comparisons was performed for statistical testing (C–E).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Flow chart describing the prioritization process of the E3 list. Generation: First, we used the Gene Ontology (GO) search of Flybase (Larkin et al., 2021) to identify genes annotated to encode for proteins with E3 ubiquitin ligase domains within the Drosophila melanogaster genome. This yielded an initial list of 221 genes, including confirmed and putative E3 ligase-encoding genes, similar to previous estimates (Du et al., 2011). Next, we added genes encoding domains contributing to the formation of the E3 complex, including the F-box domain, the Cullin domain, the N-recognin domain, the SKP1 domain, and the U-box domain. Subsequently, we searched human E3 ligase-encoding genes (Li et al., 2008) for D. melanogaster orthologs using the Drosophila RNAi Screening Center Integrative Ortholog Prediction Tool (DIOPT; version 8.0; http://www.flyrnai.org/diopt) (Hu et al., 2011). In total, this approach identified 281 putative E3 ligase-encoding genes in the D. melanogaster genome. Prioritization: We used a combination of four different criteria to create a score (normalized to max.) to prioritize the E3 list for screening the most relevant candidates. First, we prioritized for evolutionary conservation according to the overall DIOPT score of each putative E3 ligase-encoding gene with regard to its human ortholog (Hu et al., 2011) (score 1, ‘ω1’). Second, we prioritized for genes with predicted central nervous system expression based on transcriptomics data from modENCODE (modENCODE Consortium et al., 2009) and FlyAtlas (Chintapalli et al., 2007) (ω2). Third, we prioritized for genes encoding for proteins predicted to interact with synaptic proteins. In short, we created a literature-based list of known synaptic genes and calculated an interaction probability between each putative E3 ligase-encoding gene and all synaptic genes using STRING (von Mering et al., 2005) (ω3). Fourth, we considered the probability of synaptic function predicted by machine-learning based analysis of transcriptomics data (Pazos Obregón et al., 2015; Pazos Obregón et al., 2019) (ω4). The list of putative E3 ligase-encoding genes was sorted according to the sum of the four scores for each gene. (B) Distribution of the total score (summed weights) for all putative E3 ligase-encoding genes. The red bars indicate the lines selected for analysis (arbitrary threshold). In addition, genes encoding E3 ligases with known targets implicated in synaptic transmission or synaptic plasticity based on previously published data were added to our screen. Altogether, we tested 157 out of the 281 genes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic representation of the domain organization of Drosophila Thin isoforms and its closest human TRIM family homologs. thin encodes an E3 ligase with a N-terminal tripartite motif (TRIM), containing one RING-finger domain (black triangle), a zinc-finger domain (B box, partially conserved, gray oval), and coiled-coil region (gray triangle), followed by disordered domains (brown ovals). Four out of five Thin isoforms harbor six C-terminal NHL repeats (red boxes). All TRIM proteins contain a N-terminal TRIM and are grouped into different families based on their C-terminal domain composition (Short and Cox, 2006). TRIM proteins with C-terminal NHL repeats form family C-VII. Hence, Thin’s domain composition is most similar to TRIM proteins of the C-VII family. Within the C-VII TRIM family, TRIM32 is the only member that harbors NHL repeats in addition to the TRIM motif. Other TRIM proteins of this family contain an additional Filamin domain (blue square), which is absent in Thin. Thus, Thin’s domain composition resembles the one of TRIM32, suggesting that TRIM32 is the closest human homolog of Thin. Alignment of RING domains (B) and NHL domains (C) of Thin and human TRIM family C-VII members implies evolutionary conservation of both domains between Thin and TRIM C-VII members (Ozato et al., 2008). The results of our analysis agree with LaBeau-DiMenna et al., 2012.
+
 After prioritizing for evolutionarily conserved genes that were shown or predicted to be expressed in the nervous system (Figure 1—figure supplement 1), we investigated PHP after genetic perturbation of 157 putative E3 ligase genes and 11 associated genes (180 lines, Supplementary file 1, Figure 1B). Specifically, we recorded spontaneous miniature excitatory postsynaptic potentials (mEPSPs) and action potential (AP)-evoked excitatory postsynaptic currents (EPSCs) after applying subsaturating concentrations of the GluR antagonist philanthotoxin-443 (PhTX) for 10 min (20 μM; extracellular Ca2+ concentration, 1.5 mM). At wild-type (WT) NMJs, PhTX treatment significantly reduced mEPSP amplitude compared to untreated controls (Figure 1C, black and gray arrows), indicating GluR perturbation. By contrast, AP-evoked EPSC amplitudes were similar between PhTX-treated and untreated WT NMJs (Figure 1D, black and gray arrows). Together with a reduction in mEPSP amplitude, a similar EPSC amplitude suggests a homeostatic increase in neurotransmitter release after PhTX treatment in WT, consistent with PHP (Frank et al., 2006). PhTX also reduced mean mEPSP amplitudes in the 180 transgenic or mutant lines (either presynaptic/neuronal RNAi expression, elavc155-Gal4>UAS RNAi; or mutations within the respective coding sequence, see Materials and methods) compared to untreated WT controls (Figure 1C). Moreover, the mean EPSC amplitude of the majority of the tested lines did not differ significantly from the mean WT EPSC amplitudes recorded at PhTX-treated NMJs (Figure 1D, compare white bars with black arrow). The combination of a decrease in mEPSP amplitude and largely unchanged EPSC amplitude indicates that the majority of the tested lines likely display PHP. We also identified 21 transgenic or mutant lines with significantly smaller EPSC amplitudes compared to PhTX-treated WT NMJs, and two lines with increased EPSC amplitudes (Figure 1D, E, red data). The lines with smaller EPSC amplitudes represent candidate transgenic or mutant lines with disrupted PHP. One of the mutant lines with significantly smaller EPSC amplitudes in the presence of PhTX was a previously described deletion of the gene thin/abba (tn, CG15105), henceforth called thin (thinΔA; LaBeau-DiMenna et al., 2012; Figure 1E, filled red data). thin encodes an E3 ligase with a N-terminal tripartite motif (TRIM), which contains one RING-finger domain, two zinc-finger domains (B1 box and B2 box), and its associated coiled-coil region, followed by a disordered region and C-terminal NHL repeats (Figure 1—figure supplement 2). Based on this domain composition, thin likely represents the Drosophila ortholog of human TRIM32 (Figure 1—figure supplement 2), consistent with earlier work (LaBeau-DiMenna et al., 2012). thin was selected for further analysis.
 
-## Presynaptic thin promotes PHP
+### Presynaptic thin promotes PHP
 
 In the genetic screen, we compared synaptic transmission between a given genotype and WT controls in the presence of PhTX (Figure 1C–E). Hence, the small EPSC amplitude of thinΔA mutants seen after PhTX application could be either due to impaired PHP, or a defect in baseline synaptic transmission. To distinguish between these possibilities, we next quantified synaptic transmission in the absence and presence of PhTX in thinΔA mutants (Figure 2). Similar to WT controls, PhTX application significantly reduced mEPSC amplitude by ~40% in thinΔA mutants (Figure 2A, B), suggesting similar receptor impairment. At WT synapses, EPSC amplitudes were similar in the absence and presence of PhTX (Figure 2A, C). In combination with the decrease in mEPSC amplitude (Figure 2B), PhTX incubation increased quantal content (EPSC amplitude/mEPSC amplitude) in WT (Figure 2D), indicating homeostatic release potentiation. By contrast, PhTX treatment significantly reduced EPSC amplitudes in thinΔA mutants (Figure 2A, C) and did not increase quantal content (Figure 2D). These data show that thin is required for acute PHP expression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of wild-type (WT) (gray), thinΔA mutants (red), presynaptic thin expression in thinΔA mutants (elavc155-Gal4>UAS-thin; thinΔA, ‘thinΔA pre. rescue’, blue), and postsynaptic thin expression in thinΔA mutants (24B-Gal4>UASthin; thinΔA, ‘thinΔA post. rescue’, green) in the absence and presence of philanthotoxin-443 (PhTX) (‘+PhTX’, darker colors). Stimulation artifacts were blanked for clarity. Note the decreased EPSC amplitudes at PhTX-treated thinΔA mutant neuromuscular junctions (NMJs) and thinΔA post. rescue NMJs, indicating impaired presynaptic homeostatic plasticity (PHP). Mean mEPSC amplitudes (B), EPSC amplitudes (C), quantal content after PhTX treatment normalized to the respective untreated control (D), in the absence (‘−’) and presence (‘+’) of PhTX, as well as baseline quantal content of the indicated genotypes in the absence (‘−’) of PhTX normalized to WT (E). Note that PhTX did not enhance quantal content in thinΔA mutants (D), indicating impaired PHP. Also note the increased quantal content under baseline conditions in thinΔA mutants (E), suggesting increased release. The PHP and baseline synaptic transmission defects are restored upon presynaptic thin expression in the mutant background. Mean ± standard error of the mean (SEM) (WT − PhTX: n = 14, WT + PhTX: n = 13; thinΔA − PhTX: n = 18; thinΔA + PhTX: n = 21; pre. res. − PhTX: n = 11; pre. res.+ PhTX: n = 10; post. res. − PhTX: n = 25; post. res.+ PhTX: n = 24); *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant; two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test (B–D) and one-way ANOVA with Tukey’s multiple comparisons (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of wild-type (WT) (gray), GluRIIASP16 mutants (dark gray), thinΔA mutants (red), and thinΔA, GluRIIASP16 double mutants (dark red). Stimulation artifacts were blanked for clarity. Mean mEPSC amplitudes (B), EPSC amplitudes (C), and quantal content (D) of the indicated genotypes. Note that there is no quantal content increase in thinΔA, GluRIIASP16 compared to thinΔA, indicating impaired presynaptic homeostatic plasticity (PHP). The similarity between mEPSC amplitudes in GluRIIASP16 and thinΔA, GluRIIASP16 mutants may indicate reduced GluR levels in thinΔA mutants. Mean ± standard error of the mean (SEM) (WT: n = 11; GluRIIASP16: n = 13; thinΔA: n = 16; thinΔA, GluRIIASP16: n = 14); *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant; two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test.
 
 To test if presynaptic or postsynaptic thin promotes PHP, and if the PHP defect is indeed caused by loss of thin, we assessed PHP after presynaptic or postsynaptic expression of a thin transgene in the thinΔA mutant background. PhTX treatment significantly reduced mEPSC amplitudes after neural/presynaptic (elavc155-Gal4) or postsynaptic (24B-Gal4) expression of thin (UAS-thin) in thinΔA mutants (Figure 2A, B). After presynaptic thin expression in thinΔA mutants (presynaptic rescue or ‘pre. rescue’), quantal content was significantly increased upon PhTX treatment (Figure 2D, blue data), and EPSC amplitudes were restored toward control levels in the absence of PhTX (Figure 2A, C, blue data). Note that the partial rescue may be due to thin overexpression or defects in muscle architecture (LaBeau-DiMenna et al., 2012). By contrast, quantal content was similar between PhTX-treated and untreated NMJs after postynaptic thin expression in the thinΔA mutant background (postsynaptic rescue or ‘post. rescue’; Figure 2D, green data), and PhTX application reduced EPSC amplitudes (Figure 2A, C, green data). Thus, presynaptic, but not postsynaptic thin expression enhanced quantal content after PhTX treatment in the thinΔA mutant background (Figure 2D), implying a presynaptic role for thin in PHP.
 
@@ -46,29 +66,57 @@ We also noted a decrease in mEPSC amplitude in thinΔA mutants compared to WT in
 
 At the Drosophila NMJ, genetic ablation of the GluRIIA subunit in GluRIIASP16 mutants reduces quantal size and induces sustained PHP (Petersen et al., 1997). To test if thin is required for sustained PHP expression, we generated recombinant flies carrying the GluRIIASP16 and the thinΔA mutation (‘GluRIIASP16, thinΔA’). While we observed a significant increase in quantal content in GluRIIASP16 mutants compared to wild type (Figure 2—figure supplement 1), indicating sustained PHP expression, there was no increase in quantal content in GluRIIASP16, thinΔA double mutants compared to thinΔA mutants (Figure 2—figure supplement 1). Hence, thin is also necessary for sustained PHP expression, providing independent evidence for its role in homeostatic release regulation.
 
-## Changes in NMJ development unlikely underlie the PHP defect in thin mutants
+### Changes in NMJ development unlikely underlie the PHP defect in thin mutants
 
 The PHP defect and the release enhancement under baseline conditions after presynaptic thin perturbation may arise from impaired synaptic development. To test this possibility, we investigated NMJ morphology in thin mutants (Figure 3). Immunostainings with an antibody detecting neuronal membrane (anti-horseradish peroxidase, ‘HRP’; Figure 3A; Jan and Jan, 1982) revealed no changes in HRP area in thinΔA mutants or after presynaptic rescue (thinΔA; elavc155-Gal4>UAS thin), and a trend toward increased HRP area after postsynaptic rescue (thinΔA; 24BGal4>UAS thin) compared to WT (Figure 3B). Analysis of the active-zone marker Bruchpilot (anti-Bruchpilot, ‘Brp’; Kittel et al., 2006) uncovered no changes in Brp puncta number per NMJ in thinΔA mutants or after presynaptic rescue, and a slight increase after postsynaptic rescue compared to WT (Figure 3A, C). Brp density (Brp puncta #/HRP area) was unchanged in thinΔA mutants or after postsynaptic rescue, and slightly increased after presynaptic rescue (Figure 3D). Finally, we observed a decrease in Brp puncta intensity in thinΔA mutants and upon presynaptic rescue (Figure 3E). In principle, these morphological alterations could be related to the PHP defect, or the release enhancement seen in thinΔA mutants. However, while HRP area and Brp puncta number were unchanged in thinΔA mutants (Figure 3B, C), PHP was blocked, and baseline synaptic transmission enhanced (Figure 2). In addition, postsynaptic thin expression in WT induced an increase in HRP area and Brp puncta number (Figure 3—figure supplement 1B, C), but neither impaired PHP nor enhanced release (Figure 3—figure supplement 1F–K). Furthermore, Brp intensity was decreased after presynaptic rescue (Figure 3E) and postsynaptic thin overexpression in WT (Figure 3—figure supplement 1E), whereas synaptic physiology was unchanged in these genotypes (Figure 2, Figure 3—figure supplement 1F–K). Conversely, Brp intensity was unchanged after presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi), while PHP was blocked and baseline synaptic transmission enhanced (Figure 4, Figure 4—figure supplement 1). Collectively, these data suggest that the morphological changes seen after thin perturbation are separable from synaptic physiology. Thus, although we cannot rule out that changes in NMJ morphology contribute to the PHP defect or the increase in release in thin mutants, we consider this possibility unlikely (see Discussion).
 
-## thin negatively regulates release-ready vesicle number
+![Figure 3.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig3-v2.jpg)
+
+**Figure 3.:** (A) Maximum intensity projection of a wild-type (WT) (left) and thinΔA mutant NMJ (right) (muscle 6) stained against the Drosophila neuronal membrane marker anti-HRP (‘HRP’) and the active-zone marker Bruchpilot (‘Brp’); scale bar, 10 µm. Mean HRP area per NMJ ‘HRP area’ (B), Brp puncta number per NMJ ‘Brp puncta #’ (C), Brp puncta number/HRP area per NMJ ‘Brp density’ (D), and Brp puncta fluorescence intensity (E) of the indicated genotypes (‘Postsynaptic rescue’: 24B-Gal4>UAS-thin; thinΔA; ‘presynaptic rescue’: elavc155-Gal4>UASthin; thinΔA). Although changes in the recorded parameters may contribute to changes in synaptic physiology, altered NMJ morphology was separable from synaptic physiology (see Results, Discussion, Figure 2, Figure 3—figure supplement 1, Figure 4, Figure 4—figure supplement 1). Mean ± standard error of the mean (SEM); WT: n = 10, thinΔA: n = 8, pre. res.: n = 12; post. res.: n = 13; *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant; Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Maximum intensity projection of a control (24B-Gal4/+, ‘muscle-Gal4’, left and 24B-Gal4>UAS thin, ‘muscle-Gal4>UAS-thin’, right) neuromuscular junction (NMJ) (muscle 6) stained against the Drosophila neuronal membrane marker anti-HRP (‘HRP’) and the active-zone marker Bruchpilot (‘Brp’); scale bar, 20µm. Mean HRP area per NMJ (‘HRP area’) (B), Brp puncta number per NMJ (‘Brp puncta #’) (C), Brp puncta number/HRP area per NMJ ‘Brp density’ (D), and Brp puncta fluorescence intensity (E) of the indicated genotypes. 24B-Gal4/+: n = 10; 24B-Gal4>UAS-thin: n = 12. (F) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of a control NMJ (24B-Gal4/+, ‘muscle Gal4’) in the absence (light gray) and presence of philanthotoxin-443 (PhTX) (‘+PhTX’, dark gray). Stimulation artifacts were blanked for clarity. (G) Same as in (F) for an NMJ overexpressing thin in the muscle (24B-Gal4>UAS thin, ‘muscle-Gal4>UAS-thin’). Mean mEPSC amplitudes (H), EPSC amplitudes (I), and quantal content (J) of control (24B-Gal4/+, ‘mGal4’, gray) and postsynaptic thin overexpression (24B-Gal4>UAS thin, ‘mGal4 >thin’, red) without (light colors) and after PhTX treatment (dark colors). (K) mEPSC amplitude (white) and quantal content (black) in the presence of PhTX normalized to control (without PhTX) of the indicated genotypes. PhTX treatment increased quantal content after postsynaptic thin overexpression, indicating PHP expression. Postsynaptic thin overexpression did not change baseline miniature excitatory postsynaptic potential (mEPSP) or EPSC amplitude. The increase in HRP area (B), Brp number (C), or the decrease in Brp intensity (E) upon postsynaptic thin overexpression thus do not translate into apparent changes in PHP or baseline synaptic transmission. Mean ± standard error of the mean (SEM); 24B-Gal4/+ − PhTX: n = 16, 24B-Gal4/++PhTX: n = 17; 24B-Gal4>UAS thin − PhTX: n = 13, 24B-Gal4>UAS thin + PhTX: n = 23; ***p < 0.001; n.s.: not significant; Student’s t-test for pairwise comparison between control (24B-Gal4/+) and postsynaptic thin overexpression (24B-Gal4>UAS thin).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of controls (elavc155-Gal4>UAS-mCherryRNAi, ‘Ctrl.’, gray) and presynaptic thinRNAi (elavc155-Gal4>UAS-thinRNAi, ‘thinRNAi (pre)’, red). Mean mEPSC amplitudes (B), EPSC amplitudes (C), and quantal content (D) of the indicated genotypes. (E) Representative EPSC train (60 Hz, 60 stimuli, top) and cumulative EPSC amplitudes (‘cum. EPSC’, bottom) of control and presynaptic thinRNAi. The blue line is a line fit to the last 15 cum. EPSC amplitudes that was back-extrapolated to t = 0 (see Materials and methods). Mean readilyreleasable vesicle pool (RRP) size (cum. EPSC/mEPSC) (F), release probability (‘pr’, EPSC1/cum. EPSC) (G), and paired-pulse ratio (‘PPR’, EPSC2/EPSC1) (H) of the indicated genotypes. Note the increase in EPSC amplitude and RRP size in presynaptic thinRNAi. Mean ± standard error of the mean (SEM); Ctrl.: n = 16, thinRNAi: n = 17; *p < 0.05; ***p < 0.001; n.s.: not significant; Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Maximum intensity projection of a control neuromuscular junction (NMJ) (elavc155-Gal4>UAS-mCherryRNAi, ‘Ctrl.’, left) and after presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi, ‘thinRNAi’, right) (muscle 6) stained against the Drosophila neuronal membrane marker anti-HRP (‘HRP’) and the active-zone marker Bruchpilot (‘Brp’); scale bar, 10 µm. Mean HRP area per NMJ ‘HRP area’ (B), Brp puncta number per NMJ ‘Brp puncta #’ (C), Brp puncta number/HRP area per NMJ ‘Brp density’ (D), and Brp puncta fluorescence intensity (E) of the indicated genotypes. Elavc155-Gal4>UAS-mCherryRNAi: n = 12, elavc155-Gal4>UAS-thinRNAi: n = 16. (F) Representative mEPSCs (top) and excitatory postsynaptic currents (EPSCs) (bottom, individual sweeps and averages are shown in light colors and black, respectively) after presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi, ‘thinRNAi’) in the absence (left, light red) and presence of the glutamate receptor (GluR) antagonist philanthotoxin-443 (PhTX) (right, dark red). Mean mEPSC amplitudes (G), EPSC amplitudes (H), and quantal content (I) in the absence (‘−’, light red) and presence (‘+’, dark red) of PhTX. Note that PhTX did not enhance quantal content after presynaptic thinRNAi expression, indicating impaired PHP. Mean ± standard error of the mean (SEM); thinRNAi − PhTX: n = 14, thinRNAi + PhTX: n = 13; ***p < 0.001; n.s.: not significant; Student’s t-test.
+
+### thin negatively regulates release-ready vesicle number
 
 Having established that thin is required for acute and sustained PHP expression, we next explored the role of thin in the regulation of neurotransmitter release under baseline conditions. thinΔA mutants display increased neurotransmitter release in the absence of PhTX, and this increase in release is rescued by presynaptic thin expression (Figure 2). We also noted a decrease in mEPSC amplitude in thinΔA mutants (Figure 2B), which may confound conclusions regarding presynaptic thin function. We therefore focused our further analyses on the effects of presynaptic thinRNAi expression.
 
 First, we tested PHP after presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi) and observed a complete PHP block (Figure 4—figure supplement 1F–I), providing independent evidence for a role of presynaptic thin in PHP. To elucidate the mechanisms through which thin negatively modulates release under baseline conditions, we probed the size of the readily releasable pool of synaptic vesicles (RRP) and neurotransmitter release probability (pr) after presynaptic thin perturbation (Figure 4). Presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi) significantly increased EPSC amplitudes and quantal content (Figure 4A, C, D), with no significant effects on mEPSC amplitudes compared to controls (elavc155-Gal4>UAS-mCherryRNAi; Figure 4A, B), suggesting that presynaptic thin represses release, consistent with the data obtained from thinΔA mutants (Figure 2). Note that the smaller mEPSC and EPSC amplitudes under baseline conditions after postsynaptic thin rescue (Figure 2B, C) compared to thinRNAi (Figure 4B, C) are most likely due to non-endogenous postsynaptic Thin levels caused by thin overexpression in the thinΔA mutant background. Next, we estimated RRP size using cumulative EPSC amplitude analysis during high-frequency stimulation (60 Hz; Weyhersmüller et al., 2011; Müller et al., 2012; Figure 4E). This analysis revealed a significantly larger RRP size upon presynaptic thinRNAi expression compared to controls (Figure 4E, F), implying that presynaptic thin negatively regulates RRP size. We then estimated pr based on the ratio between the first EPSC amplitude of the stimulus train and the cumulative EPSC amplitude, and observed no significant pr differences between presynaptic thinRNAi and controls (Figure 4G). We noted that the paired-pulse ratio between the second and first EPSC amplitude during 60 Hz stimulation was slightly increased after presynaptic thinRNAi expression compared to controls (Figure 4H), implying a slight decrease in pr. These data suggest that the increase in release after presynaptic thinRNAi expression is unlikely caused by an increase in pr, and that presynaptic thinRNAi expression may even slightly decrease pr. Presynaptic thinRNAi expression also slightly increased Brp number (Figure 4—figure supplement 1), which may contribute to the increase in release after presynaptic thinRNAi expression (see Discussion). However, our analysis of thinΔA mutants implies that changes in NMJ size unlikely underlie the defects in synaptic physiology after presynaptic loss of thin (Figures 2 and 3). Together, we conclude that presynaptic thin opposes release by limiting the number of release-ready synaptic vesicles with largely unchanged pr.
 
-## Thin localizes in proximity to Dysbindin
+### Thin localizes in proximity to Dysbindin
 
 TRIM32, Thin’s predicted human ortholog (Figure 1—figure supplement 2), ubiquitinates Dysbindin and targets it for degradation in cultured human cells (Locke et al., 2009). dysbindin, in turn, is required for PHP at the Drosophila NMJ (Dickman and Davis, 2009), and genetic evidence suggests that the UPS controls Dysbindin under baseline conditions and during PHP at the Drosophila NMJ (Wentzel et al., 2018). We therefore explored the relationship between Thin and Dysbindin. First, we investigated the localization of Thin in relation to Dysbindin within synaptic boutons (Figure 5). Previous studies suggest very low endogenous Dysbindin levels that preclude direct immunohistochemical analysis at the Drosophila NMJ (Dickman and Davis, 2009; Wentzel et al., 2018). However, presynaptic expression of a fluorescently tagged dysbindin transgene revealed that Dysbindin localizes in close proximity to synaptic vesicle markers (Dickman and Davis, 2009; Figure 5—figure supplement 1A–C). The localization of fluorescently tagged Dysbindin likely overlaps with the one of endogenous Dysbindin, as its presynaptic expression rescues the PHP defect in dysbindin mutants (Dickman and Davis, 2009). Although we observed anti-Thin fluorescence in close proximity to Brp (Figure 5—figure supplement 1D, E), thin expression in Drosophila muscles makes it difficult to distinguish between presynaptic and postsynaptic Thin (LaBeau-DiMenna et al., 2012; Figure 5—figure supplement 1D, E). This prompted us to analyze the localization of fluorescently tagged Thin, which we expressed presynaptically (elavc155-Gal4>UAS-thinmCherry), in relation to Dysbindin. Presynaptic ThinmCherry partially overlapped with presynaptic fluorescently tagged Dysbindin (elavc155-Gal4>UAS-dysbvenus) at confocal resolution (Figure 5A and B). The localization of fluorescently tagged Thin also likely overlaps with endogenous Thin, because presynaptic thin expression restores PHP and synaptic transmission in thin mutants (Figure 2). As indicated by the line profile across a bouton (Figure 5B), Dysbindin and Thin fluorescence intensity increased toward the bouton periphery (Figure 5B), similar to synaptic vesicle markers, such as synapsin (Figure 5—figure supplement 1A, B). With stimulated emission depletion microscopy with time-gated detection (gSTED), fluorescently tagged Thin and Dysbindin appeared as distinct spots (Figure 5C). To investigate the relationship between fluorescently tagged Thin and Dysbindin, we quantified the nearest-neighbor distance (NND) between Thin and Dysbindin spots (Figure 5D; see Materials and methods). This analysis revealed significantly smaller NNDs between ThinmCherry and Dysbvenus spots than expected from random spot distributions (Figure 5E), implying a relationship between Thin and Dysbindin localization within synaptic boutons. Based on the proximity between Dysbindin and synaptic vesicle markers (Dickman and Davis, 2009; Figure 5—figure supplement 1A–C), these data indicate that a fraction of Thin localizes in the vicinity of Dysbindin and synaptic vesicles.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig5-v2.jpg)
+
+**Figure 5.:** (A) Confocal maximum intensity projection of a representative neuromuscular junction (NMJ) branch (muscle 6–7) after presynaptic coexpression (elavc155-Gal4) of venus-tagged Dysbindin (UAS-venus-Dysbindin, ‘Dysbvenus’, green) and mCherry-tagged Thin (UAS-mCherry-thin, ‘ThinmCherry’, magenta) detected with anti-GFP and anti-DsRed, respectively. (B) Single plane of the synaptic bouton highlighted by the white square in (A) with corresponding line profile (right). The yellow line demarks the location of the line profile. (C) gSTED image of the synaptic bouton shown in (B) with corresponding line profile (right). Scale bar, A: 5 µm; B, C: 2 µm. Note the partial overlap between ThinmCherry and Dysbindinvenus at confocal and STED resolution. (D) Left: Schematic of nearest-neighbor (NND) analysis between ThinmCherry and Dysbindinvenus puncta at STED resolution. Right: ThinmCherry puncta (‘+’, maximum locations, see Materials and methods) and the NNDs and locations of Dysbindinvenus puncta (color code denotes NND) of a representative bouton. (E) Histogram of mean ThinmCherry − Dysbindinvenus NND per bouton of the recorded gSTED data (blue), or after randomized punctum distribution (gray, see Materials and methods). N = 10 NMJs, average n = 13 boutons per NMJ for data and simulations. Observed vs. randomized NNDs, p < 0.001; Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal maximum intensity projection of a representative NMJ branch (muscle 6–7) after presynaptic expression (elavc155-Gal4) of venus-tagged Dysbindin (UAS-venus-dysbindin, ‘Dysbvenus’) stained with anti-GFP (green, ‘Dysbvenus’) and anti-Synapsin (magenta, ‘Synapsin’). (B) Single slice of the synaptic bouton highlighted by the yellow square in (A) with corresponding line profile (right). The yellow line demarks the location of the line profile. (C) gSTED image of the synaptic bouton shown in (B) with corresponding line profile (right). Note the partial overlap between Dysbvenus and the synaptic vesicle marker Synapsin at confocal and STED resolution. Scale bar, A: 4 µm; B, C: 1 µm. (D) Confocal single slice of two representative wild-type (WT) NMJ boutons (muscle 6) stained with the neuronal membrane marker anti-HRP (‘HRP’, blue), the active-zone marker Bruchpilot (anti-Brpnc82, ‘Brp’, green), and anti-Thin (‘LaBeau-DiMenna et al., 2012, magenta). (E) Same staining as in (D) for a thinΔA mutant NMJ. Note that some Thin puncta localize in close proximity to Brp within WT boutons (white arrowheads, D, right), suggesting presynaptic Thin puncta in the vicinity of AZs. A quantitative analysis of the relationship between anti-Thin and presynaptic markers could not be realized because of postsynaptic anti-Thin puncta in the muscle cell (not shown, LaBeau-DiMenna et al., 2012). Little to no anti-Thin signal was detected at thinΔA mutant NMJs (E). Scale bar, 1 µm. (F) Mean HRP area per muscle 6/7 NMJ (‘HRP area’), Brp puncta number per NMJ (‘Brp puncta #’), Brp puncta number/HRP area per NMJ (‘Brp density’), and Brp puncta fluorescence intensity of control (elavc155-Gal4/+, ‘nGal4’, gray) and after presynaptic expression of venus-tagged Dysbindin in WT (elavc155-Gal4>UAS-venus-dysbindin, ‘nGal4>dysb’, blue). Note that all morphological parameters were largely unchanged after presynaptic dysbindin overexpression, implying no major changes in NMJ morphology. Mean ± standard error of the mean (SEM); nGal4: n = 9, nGal4>Dysb: n = 11; n.s.: not significant; Student’s t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Confocal images (single planes) of Drosophila S2 cells stained with anti-Dysbindin (green) and anti-Thin (magenta) under control conditions (top) and after dysbindin overexpression (UAS-venus-Dysbindin, ‘Dysb OE’, middle). Note the redistribution of Thin upon dysbindin expression resulting in overlapping Thin and Dysbindin fluorescence. Bottom: Excitation of channel 1 (anti-Dysbindin) did not produce significant fluorescence in channel 2 (anti-Thin), implying no major crosstalk between the two channels. (B) Pearson’s correlation coefficient (r) between anti-Dysbindin and anti-Thin fluorescence intensities per pixel after dysbindin overexpression (‘Dsyb OE’) (n = 22). The r density (with Gaussian fit) was obtained from simulated Thin and Dysbindin localizations after sampling random point spread function-sized chunks of the data (see Materials and methods, n = 22). The average observed r = 0.84 is significantly higher than expected from random Thin and Dysbindin localizations. (C) Representative western Blot of S2 cells transfected for 72 hr with constant levels of pUAS-venus-Dysbindin (‘Dysbindinvenus’) and the indicated relative cDNA concentrations of pUAS-HA-thin (‘ThinHA’) normalized to pUAS-venus-dysbindin (‘1×’, ‘2×’). Dysbindinvenus and ThinHA were detected with anti-GFP (‘a-GFP’) and anti-HA (‘a-HA’), respectively. Anti-Tubulin (‘a-Tubulin’) served as a loading control. (D) Quantification of Dysbindinvenus/Tubulin fluorescence intensity at different relative ThinHA concentrations (‘1×’, ‘2×’) relative to Dysbindinvenus (n = 4). Note the decrease in Dysbindinvenus/Tubulin upon thin overexpression. Scale bar, A: 5 µm; B, C: 2 µm.
+
 To provide independent evidence for a relationship between Thin and Dysbindin localization, and to explore if Thin acts as an E3 ubiquitin ligase for Dysbindin in Drosophila, we turned to cultured Drosophila Schneider 2 (S2) cells. Interestingly, while anti-Thin fluorescence was homogenously distributed within S2 cells under control conditions (Figure 5—figure supplement 2A), dysbindin (dysbvenus) overexpression led to a redistribution of anti-Thin fluorescence into clusters that localized in close proximity to anti-Dysbindin clusters (Figure 5—figure supplement 2A). Moreover, anti-Thin and anti-Dysbindin fluorescence intensities were highly correlated (Figure 5—figure supplement 2B), suggesting a possible interaction between Thin and Dysbindin in S2 cells, similar to the Drosophila NMJ (Figure 5). Next, we assessed whether Thin expression affects Dysbindin abundance in S2 cells by western blot analysis. We observed a decrease in Dysbvenus levels upon increasing ThinHA expression levels (Figure 5—figure supplement 2C, D). Although we cannot exclude the possibility that Thin overexpression induced artificial Dysbindin ubiquitination by excess enzyme binding with low affinity, these data are consistent with the idea that Thin acts as an E3 ligase for Dysbindin in Drosophila, similar to TRIM32 in humans (Locke et al., 2009).
 
-## thin represses release through dysbindin
+### thin represses release through dysbindin
 
 We next explored a possible genetic interaction between thin and dysbindin in the context of synaptic physiology. As thin and dysbindin mutants alone disrupt PHP, the analysis of double mutants would not be informative. We therefore investigated baseline synaptic transmission after presynaptic thinRNAi expression in the dysbindin mutant background (Figure 6). Neither presynaptic thinRNAi expression (elavc155-Gal4>UAS-thinRNAi) in the WT background, nor in the dysb1 mutant background affected mEPSC amplitude (Figure 6A, B). While presynaptic thinRNAi expression enhanced EPSC amplitude and quantal content in the WT background (Figure 6C, D; see also Figure 4), presynaptic thinRNAi expression neither affected EPSC amplitude (Figure 6C) nor quantal content (Figure 6D) in the dysb1 mutant background. These data provide genetic evidence that thin negatively controls release through dysbindin (Figure 6E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/71437/elife-71437-fig6-v2.jpg)
 
-**Figure 6.:** Thin represses release through dysbindin.(A) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of wild-type (WT) (gray) and presynaptic thin (RNAielav>c155-Gal4UAS-thin, ‘+RNAithin (pre)’, dark gray), RNAidysb mutants (light red), and presynaptic 1thin in the RNAidysb mutant background (1elav/Y; c155-Gal4UAS-thin/+; RNAidysb, ‘+1thin (pre)’, dark red). Mean mEPSC amplitudes (RNAiB), EPSC amplitudes (C), and quantal content (D) of the indicated genotypes. Note that presynaptic thin expression increases EPSC amplitude and quantal content in WT, but not in RNAidysb mutants. Mean ± standard error of the mean (SEM); WT: 1n = 17, elav>c155-Gal4UAS-thin: RNAin = 17, dysb: 1n = 12, elav/Y; c155-Gal4UAS-thin/+; RNAidysb: 1n = 12; *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant; two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test. (E) Working model: Our genetic data support a model in which thin controls neurotransmitter release (‘Release’) through negative regulation of dysbindin (‘dysb’).Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Representative excitatory postsynaptic currents (EPSCs) (individual sweeps and averages are shown in light colors and black, respectively), and mEPSCs (insets) of wild-type (WT) (gray) and presynaptic thinRNAi (elavc155-Gal4>UAS-thinRNAi, ‘+thinRNAi (pre)’, dark gray), dysb1 mutants (light red), and presynaptic thinRNAi in the dysb1 mutant background (elavc155-Gal4/Y; UAS-thinRNAi/+; dysb1, ‘+thinRNAi (pre)’, dark red). Mean mEPSC amplitudes (B), EPSC amplitudes (C), and quantal content (D) of the indicated genotypes. Note that presynaptic thinRNAi expression increases EPSC amplitude and quantal content in WT, but not in dysb1 mutants. Mean ± standard error of the mean (SEM); WT: n = 17, elavc155-Gal4>UAS-thinRNAi: n = 17, dysb1: n = 12, elavc155-Gal4/Y; UAS-thinRNAi/+; dysb1: n = 12; *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant; two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test. (E) Working model: Our genetic data support a model in which thin controls neurotransmitter release (‘Release’) through negative regulation of dysbindin (‘dysb’).
 
 ## Discussion
 
@@ -90,15 +138,417 @@ TRIM32, the human ortholog of thin, is required for synaptic down-scaling in cul
 
 ## Materials and methods
 
-## Fly stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>thinΔA</td>
+      <td>LaBeau-DiMenna et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-abba</td>
+      <td>LaBeau-DiMenna et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mCherry-thin</td>
+      <td>This study</td>
+      <td></td>
+      <td>Stock is available upon request</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GluRIIASP16</td>
+      <td>Petersen et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>dysbindin1</td>
+      <td>Dickman and Davis, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-thinRNAi</td>
+      <td>Perkins et al., 2015</td>
+      <td>RRID:BDSC_42826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mCherryRNAi (P{VALIUM20-mCherry}attP2)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-venus-dysbindin</td>
+      <td>Dickman and Davis, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>elavc155-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>24B-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_1767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Bruchpilot (nc82) (mouse monoclonal)</td>
+      <td>DSHB, University of Iowa, USA</td>
+      <td>RRID:AB_2314866</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# G10362, RRID:AB_2536526</td>
+      <td>IF: (1:500)WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse mono clonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-11120, RRID:AB_221568</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DsRed (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-390909, RRID:AB_2801575</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SYNORF1 (Synapsin, 3C11) (mouse monoclonal)</td>
+      <td>DSHB, University of Iowa, USA</td>
+      <td>RRID:AB_528479</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Thin (guinea pig polyclonal)</td>
+      <td>LaBeau-DiMenna et al., 2012</td>
+      <td></td>
+      <td>Larva: (1:200)S2:(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HRP Alexa-Fluor 647 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Jackson ImmunoResearch Labs Cat# 123-605-021, RRID:AB_2338967</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>BioLegend Cat# 901533, RRID:AB_2801249</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BetaTubulin (mouse monoclonal)</td>
+      <td>DSHB, University of Iowa, USA</td>
+      <td>DSHB Cat# E7, RRID:AB_528499</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H+L) Secondary Antibody, HRP (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# 31430, RRID:AB_228307</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H+L) Secondary Antibody, HRP (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# 32460, RRID:AB_1185567</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa-Fluor anti-mouse 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A32723, RRID:AB_2633275</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor anti-guinea pig 555(goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A-21435 RRID:AB_2535856</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Atto 594 conjugated anti-mouse (goat polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# 76,085</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Abberior STAR 635P (goat polyclonal)</td>
+      <td>Abberior</td>
+      <td>Abberior Cat# ST635P-1002-500 UG, RRID:AB_2893229</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bouin’s fixative</td>
+      <td>Sigma-Aldrich</td>
+      <td>HT-10132</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>Merck</td>
+      <td>CAS# 64-17-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProLong Gold Antifade</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>P36930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Philanthotoxin-433</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-255421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Schneider’s Drosophila medium</td>
+      <td>Gibco</td>
+      <td>Cat# 21720024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD</td>
+      <td>Promega</td>
+      <td>Cat# E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Merck</td>
+      <td>HT501128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP-40</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>85,125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deoxycholate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete</td>
+      <td>Sigma-Aldrich</td>
+      <td>11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ECL Prime Western Blotting Detection Reagent</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28980926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>Drosophila Schneider 2 (S2) Cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Nitrocellulose membrane</td>
+      <td>Amersham Hibond GE Healthcare</td>
+      <td>Cat# 88,018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMT-Gal4</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_53366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji / ImageJ</td>
+      <td>https://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td>Version 1.51n</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Axon CNS, Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Huygens Software</td>
+      <td>https://svi.nl/HuygensSoftware</td>
+      <td>RRID:SCR_014237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>Version 6.37</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>Rothman and Silver, 2018</td>
+      <td>RRID:SCR_004186</td>
+      <td>Version 3.0c</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NumPy</td>
+      <td>https://www.numpy.org</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>https://www.scipy.org</td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IPython</td>
+      <td>http://ipython.org</td>
+      <td>RRID:SCR_001658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neo</td>
+      <td>http://neuralensemble.org/neo</td>
+      <td>RRID:SCR_000634</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Shapely</td>
+      <td>(Gillies, 2007) https://github.com/shapely/shapely</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>(R Studio Team, 2020)http://www.rstudio.com/</td>
+      <td>RRID:SCR_000432</td>
+      <td>Version 2021.09.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pwr-package</td>
+      <td>(Champely, 2020)https://github.com/heliosdrm/pwr</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GNU Image Manipulation Program</td>
+      <td>https://www.gimp.org/</td>
+      <td>RRID:SCR_003182</td>
+      <td>Version 2.8.10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Inkscape</td>
+      <td>http://www.inkscape.org</td>
+      <td>RRID:SCR_014479</td>
+      <td>Version 0.92.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>https://affinity.serif.com/en-us/designer/</td>
+      <td>RRID:SCR_016952</td>
+      <td>Version 1.10.4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetics
 
 Drosophila stocks were maintained at 21–25°C on normal food. The w1118 strain was used as the WT control. GluRIIASP16 mutants (Petersen et al., 1997) and dysbindin1 mutants (Dickman and Davis, 2009) were a kind gift from Graeme Davis’ lab. thinΔA mutants and UAS-abba transgenic flies, now referred to as UAS-thin (LaBeau-DiMenna et al., 2012), were a generous gift from Erika Geisbrecht. The UAS-thinRNAi stock (BDSC stock 42826, Perkins et al., 2015) and the UAS-mCherryRNAi stock (BDSC stock 35785) were obtained from the Bloomington Drosophila Stock Center (BDSC, Bloomington, IN, USA), and the UAS-venus-dysbindin line was provided by Dion Dickman’s lab. For pan-neuronal expression, the elavc155-Gal4 (on the X chromosome) driver line was used and analysis was restricted to male larvae. For expression in muscle cells, we used the 24B-Gal4 driver line. Both driver lines were obtained from the BDSC. Standard second and third chromosome balancer lines (BDSC) and genetic strategies were used for all crosses and for maintaining the mutant lines. For the generation of transgenic flies carrying UAS-mCherry-thin, constructs based on the pUAST-attB vector backbone were injected into the ZP-attP-86Fb fly line harboring a landing site on the third chromosome according to standard procedures (Bischof et al., 2014).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Schneider S2 cells were obtained from Thermo Fisher Scientific (‘Gibco Drosophila S2 cells’; Cat# R69007). The supplier’s Master Seed Bank was characterized by isozyme and karyotype analysis, and was tested for contamination of bacteria, yeast, mycoplasma, and virus. We have not independently verified cell line identity or tested for mycoplasma contamination. However, contamination with other cell lines is unlikely, because the used cell line is (1) the only cell line used in the lab, (2) the only Drosophila cell line present at the institute, and (3) cells grow at 25° and in a different medium compared to human cell lines. Cells were used within 10 months after purchase. Schneider S2 cells were cultivated in standard Schneider’s Drosophila medium (Gibco) containing 10% fetal calf serum and 5% penicilin/streptomycin at 25°C. For immunohistochemistry and microscopy, cells were plated on cover slips in 12-well plates with 80% density and transfected with 1.5 μg (total) vector DNA using FuGENE HD Transfection Reagent according to the standard protocol. The following vectors were used: pMT-Gal4 (Addgene), pUAS-mCherry-thin, pUAS-HA-thin, pUAS-venus-dysbindin (Dion Dickman), and empty pUAS to adjust to equal DNA levels. Twenty-four hours after plating, CuSO4 (0.5 mM) was added to the culture for 24 hr to induce the expression of the pMT vector driving Gal4, which in turn drives transcription of UAS constructs.
 
-## Plasmid construction
+### Plasmid construction
 
 For the pUAS-mCherry-thin vector, mCherry was cloned into pUAS-attB (Addgene) via EcoRI/NotI using the following primers:
 
@@ -114,51 +564,51 @@ pUAS-HA-thin was generated by In-Fusion mutagenesis (TaKaRa) from the pUAS-mCher
 
 Correct cloning was confirmed by sequencing on all final vectors.
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological recordings were made from third-instar larvae at the wandering stage. Larvae were dissected and sharp-electrode recordings were made from muscle 6 in abdominal segments 3 and 4 using an Axoclamp 900 A amplifier (Molecular Devices). The extracellular HL3 saline contained (in mM): 70 NaCl, 5 KCl, 10 MgCl2, 10 Na-HEPES (N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid), 115 sucrose, 5 trehalose, 5 HEPES, 1.5 CaCl2. To induce PHP, larvae were incubated with 20 μM PhTX-433 (Santa Cruz Biotechnology) for 10 min at room temperature after partial dissection (see Frank et al., 2006). AP-evoked EPSCs were induced by stimulating hemi-segmental nerves with single APs (0.3-ms stimulus duration, 0.3 Hz), and recorded with a combination of a HS-9A × 10 and a HS-9A × 0.1 headstage (Molecular Devices) in two-electrode voltage clamp mode. mEPSPs and mEPSCs were recorded with one or two HS-9A × 0.1 headstage(s) (Molecular Devices), respectively. Muscle cells were clamped to a membrane potential of −65 mV for EPSC and −100 mV for mEPSC recordings to increase the signal-to-noise ratio.
 
 A total of 50 EPSCs were averaged to obtain the mean EPSC amplitude for each NMJ. mEPSCs and EPSCs were recorded in different NMJs because different headstage combinations were used to improve the signal-to-noise-ratio for mEPSC recordings. Hence, quantal content was calculated by dividing the mean EPSC amplitude of each NMJ by the average of the average mEPSC amplitude of all NMJs of a given experimental group. RRP size was estimated by the method of cumulative EPSC amplitudes (Schneggenburger et al., 1999). NMJs were stimulated with 60 Hz trains (60 stimuli, 5 trains per cell), and the cumulative EPSC amplitude was obtained by back-extrapolating a linear fit to the last 15 cumulative EPSC amplitude values of the 60 Hz train to time zero. The cumulative EPSC amplitude of each NMJ was then divided by the average mEPSC amplitude of all NMJs of a given experimental group to obtain the RRP estimate.
 
-## Immunohistochemistry and microscopy
+### Immunohistochemistry and microscopy
 
-## Drosophila NMJ
+#### Drosophila NMJ
 
 Third-instar larval preparations were fixed for 3 min with Bouin’s fixative (100%, Sigma-Aldrich) for confocal microscopy, or ice-cold ethanol (100%, Merck) for 10 min for confocal/STED microscopy. Preparations were washed thoroughly with phosphate-buffered saline (PBS) containing 0.1% Triton X-100 (PBST). After washing, preparations were blocked with 3% normal goat serum in PBST. Incubation with the primary antibody was done at 4°C on a rotating platform overnight. The following antibodies and dilutions were used for NMJ stainings: (Primary) anti-Bruchpilot (nc82, mouse, DSHB, 1:100), anti-GFP (rabbit, Thermo Fisher Scientific, 1:500), anti-GFP (mouse, Thermo Fisher Scientific, 1:500), anti-DsRed (mouse, Santa Cruz Biotechnology, 1:500), anti-SYNORF1 (Synapsin, 3C11, mouse, DSHB, 1:250), anti-Thin (guinea pig, gift from Erika R. Geisbrecht, 1:200), and anti-HRP Alexa-Fluor 647 (goat, Jackson ImmunoResearch, 1:200). For confocal microscopy, Alexa-Fluor anti-mouse 488 (Thermo Fisher Scientific; 1:500) and Alexa Fluor anti-guinea pig 555 (Thermo Fisher Scientific; 1:400) were applied overnight at 4°C on a rotating platform. For gSTED microscopy, the following secondary antibodies (1:100) were applied for 2 hr at room temperature (RT) on a rotating platform: Atto 594 (anti-mouse, Sigma-Aldrich) and Abberior STAR 635P (anti-rabbit, Abberior). Experimental groups of a given experiment were processed in parallel in the same tube. Preparations were mounted onto slides with ProLong Gold (Thermo Fisher Scientific).
 
-## S2 cell culture
+#### S2 cell culture
 
 S2 cells grown on coverslips were washed with PBST and fixed with 10% PFA (paraformaldehyde) for 10 min. After washing three times with PBST, preparations were blocked with 5% normal goat serum in PBST for 30 min. Incubation with primary antibodies was done at RT on a rotating platform for 2 hr. The following antibodies were used for S2 cell stainings: anti-thin (guinea pig, gift from Erika R. Geisbrecht, 1:400), anti-Dysbindin (mouse, gift from Dion Dickman, 1:400). After washing three times with PBST, cells were incubated with the secondary antibodies Alexa Fluor anti-guinea pig 555 and Alexa Fluor anti-mouse 488 (Thermo Fisher Scientific; both 1:400) at RT on a rotating platform for 2 hr. Cover slips were mounted onto slides with ProLong Gold (Thermo Fisher Scientific) after three PBST washes.
 
-## Confocal and gSTED microscopy
+#### Confocal and gSTED microscopy
 
 Images were acquired with an inverse Leica TCS SP8 STED 3× microscope (Leica Microsystems, Germany) of the University of Zurich Center for Microscopy and Image Analysis. Excitation light (580 or 640 nm) of a flexible white light laser was focused onto the specimen using a 100× objective (HC PL APO 1.40 NA Oil STED WHITE; Leica Microsystems, Germany) with immersion oil conforming to ISO 8036 with a diffraction index of n = 1.5180 (Leica Microsystems, Germany). For gSTED imaging, the flexible white light laser was combined with a 775 nm STED depletion laser. Emitted light was detected with two HyD detectors in photon counting mode (Leica Microsystems, Germany). Pixel size was 20 × 20 nm and z-stacks were acquired with a step size of 120 nm. For STED imaging, we used time-gated single photon detection (empirical adjustment within a fluorescence lifetime interval from 0.7 to 6.0 ns). Line accumulation was set to 1 and 6 for confocal and STED imaging, respectively. Images were acquired with Leica Application Suite X software (Leica Application Suite X, version 2.0; Leica Microsystems, Germany). Experimental groups were imaged side-by-side with identical settings.
 
 Images were processed and deconvolved with Huygens Professional (Huygens compute engine 17.04, Scientific Volume Imaging B.V., Netherlands). In brief, the ‘automatic background detection’ tool (radius = 0.7 µm), and the ‘auto stabilize’ feature were used to correct for background and lateral drift. Images were deconvolved using the Good’s roughness Maximum Likelihood algorithm with default parameter settings (maximum iterations: 10; signal-to-noise ratio: 7 for STED and 15 for confocal; quality threshold: 0.003).
 
-## Western blot
+### Western blot
 
 Transfected cells in 12-well plates were harvested after 72 hr, washed with PBS and lysed by adding 50 µl of RIPA buffer (50 mM Tris, pH 8.0, 150 mM NaCl, 1% Nonidet P-40, 0.5% deoxycholate, 0.1% sodium dodecyl sulfate (SDS), 0.4 mM EDTA (ethylenediaminetetraacetic acid), 10% glycerol) containing protease inhibitors (cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail, Sigma-Aldrich) for 30 min on ice. The lysates were sonified three times for 1 min and boiled for 5 min in SDS-sample buffer containing 5% β-mercaptoethanol. Samples were separated on acrylamide gels using SDS–polyacrylamide gel electrophoresis (PAGE), then transferred to nitrocellulose membranes (Amersham Hibond GE Healthcare). After blocking in 5% milk in PBST for 1 hr, membranes were incubated in the following primary antibodies: anti-GFP (rabbit, Thermo Fisher Scientific, 1:1000), anti-HA (mouse, Biolegend, 1:1000), and anti-Tubulin (E7, mouse, DSHB, 1:1000) in blocking solution overnight. Horseradish peroxidase-conjugated secondary antibodies (anti-mouse-HRP and anti-rabbit-HRP, 1:2000 in blocking solution) were applied to membranes for 2 hr. Detection was performed using ECL Reagent (GE Healthcare, Chicago, IL, USA). Western blots were revealed using enhanced chemiluminescence and imaged using a Fusion FX7 system (Vilber Lourmat). Densitometric analyses (mean pixel intensity of a ROI containing a band of interest) were done in Fiji/ImageJ.
 
-## Data analysis
+### Data analysis
 
-## Electrophysiology
+#### Electrophysiology
 
 Electrophysiology data were acquired with Clampex (Axon CNS, Molecular Devices) and analyzed with custom-written routines in Igor Pro (Wavemetrics). For the genetic screen data, mEPSPs were detected with a template matching algorithm implemented in Neuromatic (Rothman & Silver, 2018) running in Igor Pro (Wavemetrics). The average mEPSP amplitude was calculated from all detected events in a recording after visual inspection for false positives. For the remaining data, mEPSC data were analyzed using routines written with scientific python libraries, including numpy, scipy, IPython and neo (Garcia et al., 2014), and mEPSCs were detected using an implementation of a template-matching algorithm (Clements and Bekkers, 1997).
 
-## NMJ morphology
+#### NMJ morphology
 
 Microscopy images were analyzed using custom-written routines in ImageJ/Fiji (version 1.51n, National Institutes of Health, USA). Brp quantification was performed as follows: First, individual Brp puncta were isolated by segmenting binary fluorescence intensity threshold masks (15% or 35% of the maximum intensity value) of background corrected (rolling ball, radius = 1 μm) and filtered (3 × 3 median) maximum intensity projection images. The number of Brp objects in the mask served as a proxy for AZ number and was normalized to the area of the HRP mask (binary mask, 15% or 35% of the maximum intensity value). Average Brp-intensity values were calculated for each Brp punctum from background-corrected, unfiltered maximum intensity projection images.
 
-## NND analysis
+#### NND analysis
 
 For the NND analysis (Figure 5), individual synaptic boutons were segmented manually within a deconvolved gSTED stack and a single plane in the middle of the bouton was extracted for further analysis. Next, Fiji’s ‘Find Maxima’ algorithm was used to obtain the x,y coordinate of the brightest pixel within each Dysbindinvenus and ThinmCherry punctum. For the maximum of each Dysbindin punctum, the distances to the maxima of all Thin puncta within the same bouton were measured and the NNDs were calculated. For each bouton, the analysis was repeated after assigning random x,y coordinates to each Dysbindin and Thin punctum within the bouton boundaries using the Python package Shapely (Gillies and others, 2007; https://github.com/shapely/shapely). NND values were averaged for each bouton.
 
-## Correlation analysis S2 cells
+#### Correlation analysis S2 cells
 
 Pearson’s correlation coefficients (r) were calculated for each pixel in single confocal planes of Drosophila S2 cells coexpressing Dysbindinvenus and ThinmCherry using Costes’ approach (Costes et al., 2004) implemented in the JACoP toolbox of ImageJ/Fiji (Bolte and Cordelières, 2006; Figure 5—figure supplement 2B). The algorithm also creates simulated images by randomly sampling point spread function-sized chunks of the original image, and calculating r for each pixel of the simulated data.
 
-## Statistics
+#### Statistics
 
 Statistical analyses were done using RStudio Team (2021). RStudio: Integrated Development Environment for R. RStudio, PBC, Boston, MA, http://www.rstudio.com/. For more than two factors, we used two-way analysis of variance (ANOVA) followed by Tukey’s post hoc test to correct for multiple comparisons between genotypes and conditions. For one factor with more than two groups, one-way ANOVA with Tukey’s multiple comparisons was performed. Two-sided Student’s t-tests or nonparametric Mann–Whitney U-tests were used for comparison between two groups after a Shapiro–Wilk test and a Levene’s test. Statistical significance (p) was set to 0.05 (*), 0.01 (**), and 0.001 (***). Power analysis was performed using the pwr-package of Rstudio. Minimum desired effect size based on Cohen’s d value was used to estimate the minimum sample size for a power ≥0.8 and a significance level of 0.05 for two-sided Student’s t-tests or Mann–Whitney U-tests. Data are given as mean ± standard error of the mean (SEM).
 

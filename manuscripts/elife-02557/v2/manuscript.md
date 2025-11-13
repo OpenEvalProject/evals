@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.02557.001 Hox genes are essential regulators of embryonic development. Their step-wise transcriptional activation follows their genomic topology and the various states of activation are subsequently memorized into domains of progressively overlapping gene products. We have analyzed the 3D chromatin organization of Hox clusters during their early activation in vivo, using high-resolution circular chromosome conformation capture. Initially, Hox clusters are organized as single chromatin compartments containing all genes and bivalent chromatin marks. Transcriptional activation is associated with a dynamic bi-modal 3D organization, whereby the genes switch autonomously from an inactive to an active compartment. These local 3D dynamics occur within a framework of constitutive interactions within the surrounding Topological Associated Domains, indicating that this regulation process is mostly cluster intrinsic. The step-wise progression in time is fixed at various body levels and thus can account for the chromatin architectures previously described at a later stage for different anterior to posterior levels. DOI: http://dx.doi.org/10.7554/eLife.02557.001
+Hox genes are essential regulators of embryonic development. Their step-wise transcriptional activation follows their genomic topology and the various states of activation are subsequently memorized into domains of progressively overlapping gene products. We have analyzed the 3D chromatin organization of Hox clusters during their early activation in vivo, using high-resolution circular chromosome conformation capture. Initially, Hox clusters are organized as single chromatin compartments containing all genes and bivalent chromatin marks. Transcriptional activation is associated with a dynamic bi-modal 3D organization, whereby the genes switch autonomously from an inactive to an active compartment. These local 3D dynamics occur within a framework of constitutive interactions within the surrounding Topological Associated Domains, indicating that this regulation process is mostly cluster intrinsic. The step-wise progression in time is fixed at various body levels and thus can account for the chromatin architectures previously described at a later stage for different anterior to posterior levels.
 
 ## Introduction
 
@@ -37,77 +37,328 @@ However, in-embryo conformation studies were reported so far only in the context
 
 ## Results
 
-## Inactive Hox genes in ES cells are organized into a single 3D compartment
+### Inactive Hox genes in ES cells are organized into a single 3D compartment
 
-In order to monitor the 3D organization of
+In order to monitor the 3D organization of Hox clusters during their sequential activation, we considered ES cells as a starting point of our time curve. These cells indeed represent early embryonic cells related to blastocyst inner cell mass cells, that is when Hox genes are all supposedly silent. We hypothesized that these cells reflect the ground state 3D architecture of the Hox clusters, which we assessed by using high-resolution 4C-seq (Circular Chromosome Conformation Capture; Noordermeer et al., 2011; van de Werken et al., 2012) and a variety of viewpoints within all four Hox clusters. These various baits generated similar interaction profiles with the majority of sequence reads covering the gene clusters and extending within several kilobases (kb) on either sides, as illustrated by Hoxd13, Hoxd9 and Hoxd4 (Figure 1A, Figure 1—figure supplements 1–4). Additional contacts were scored in the flanking gene deserts, though with significantly lower frequencies (see section ‘Temporal colinearity within a constitutive framework of long-range interactions’). The overall size of the strong interaction profiles exactly matched the distribution of bivalent chromatin marks in these cells, with a moderate level of H3K27me3 covering the cluster and rather weak H3K4me3 peaks labeling promoters (Figure 1A, Figure 1—figure supplements 1–4; Bernstein et al., 2006; Soshnikova and Duboule, 2009). Therefore, prior to their activation, Hox clusters are already organized into 3D chromatin compartments that physically separate the chromatin decorated by bivalent marks from the genomic surroundings, even though some contacts are established at a larger scale, outside the gene cluster itself (see section ‘Temporal colinearity within a constitutive framework of long-range interactions’).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-v2.jpg)
 
-**Figure 1.:** Hox clusters in ES cells are organized as 3D compartments.(A) Quantitative local 4C-seq signal for the Hoxd13 (top), Hoxd9 (middle) and Hoxd4 (bottom) viewpoints in ES cells. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The boundaries of the inactive Hox gene compartments are indicated by dashed lines. The locations of Hox genes (red) and of other transcripts (black) are shown below. (B) Quantitative local 4C-seq signal for the Hoxd13 (left) and Hoxb9 (right) viewpoints, either in ES (orange) or in E10.5 forebrain (green) cells. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. Ratios between the 4C-seq signals in ES cells and E10.5 forebrain are indicated between the profiles, with signal in one color indicating that the viewpoint interacts more with this fragment in the sample represented by this color. Regions of increased interactions outside the 3D Hox gene compartments in ES cells are highlighted in orange. (C) Distribution of ratios inside and outside the inactive 3D Hox gene compartments in both ES and E10.5 forebrain cells. Fragments are classified either as positive in ES cells (orange), or positive in E10.5 forebrain cells (green). The number of fragments is indicated below. Significance between distribution inside and outside 3D compartments was calculated using a G-test of independence. (D) Model of 3D compartmentalization of the inactive HoxD and HoxB clusters in both ES cells and E10.5 forebrain cells. The increased contacts with the surrounding chromatin in ES cells are illustrated by invading grey lines.DOI: http://dx.doi.org/10.7554/eLife.02557.003
+**Figure 1.:** (A) Quantitative local 4C-seq signal for the Hoxd13 (top), Hoxd9 (middle) and Hoxd4 (bottom) viewpoints in ES cells. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The boundaries of the inactive Hox gene compartments are indicated by dashed lines. The locations of Hox genes (red) and of other transcripts (black) are shown below. (B) Quantitative local 4C-seq signal for the Hoxd13 (left) and Hoxb9 (right) viewpoints, either in ES (orange) or in E10.5 forebrain (green) cells. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. Ratios between the 4C-seq signals in ES cells and E10.5 forebrain are indicated between the profiles, with signal in one color indicating that the viewpoint interacts more with this fragment in the sample represented by this color. Regions of increased interactions outside the 3D Hox gene compartments in ES cells are highlighted in orange. (C) Distribution of ratios inside and outside the inactive 3D Hox gene compartments in both ES and E10.5 forebrain cells. Fragments are classified either as positive in ES cells (orange), or positive in E10.5 forebrain cells (green). The number of fragments is indicated below. Significance between distribution inside and outside 3D compartments was calculated using a G-test of independence. (D) Model of 3D compartmentalization of the inactive HoxD and HoxB clusters in both ES cells and E10.5 forebrain cells. The increased contacts with the surrounding chromatin in ES cells are illustrated by invading grey lines.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** HoxD cluster are less discrete in ES cells than in embryonic brain cells.Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxd genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.DOI: http://dx.doi.org/10.7554/eLife.02557.004
+**Figure 1—figure supplement 1.:** Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxd genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** HoxD and HoxB cluster are less discrete in ES cells than in embryonic brain cells.Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxd and Hoxb genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.DOI: http://dx.doi.org/10.7554/eLife.02557.005
+**Figure 1—figure supplement 2.:** Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxd and Hoxb genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** HoxB cluster are less discrete in ES cells than in embryonic brain cells.Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxb genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.DOI: http://dx.doi.org/10.7554/eLife.02557.006
+**Figure 1—figure supplement 3.:** Comparison of quantitative local 4C-seq signals for replicate samples with the indicated viewpoints, either in ES (orange) or E10.5 forebrain (green) cells. All six comparisons between two replicates in each condition are given. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxb genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** HoxC and HoxA cluster are less discrete in ES cells than in embryonic brain cells.Comparison of quantitative local 4C-seq signals with the indicated viewpoints in ES (orange) or E10.5 forebrain (green) cells. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxc and Hoxa genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.DOI: http://dx.doi.org/10.7554/eLife.02557.007
+**Figure 1—figure supplement 4.:** Comparison of quantitative local 4C-seq signals with the indicated viewpoints in ES (orange) or E10.5 forebrain (green) cells. Viewpoints are indicated with arrowheads and regions excluded around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the corresponding profiles. The locations of Hoxc and Hoxa genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** Hox gene compartments in both ES and E10.5 forebrain cells.The comparison between replicate samples one (as used in the main text) is indicated on the left, the comparison between combined replicate samples is indicated at the center left, the comparison between ES cell replicates is indicated at the center right and the comparison between E10.5 forebrain replicates is indicated on the right. Fragments are classified as positive either in ES (orange) or in E10.5 forebrain (green) cells within the region covered by the random 4C-seq libraries. The number of fragments is indicated below. Significance between distribution inside and outside the 3D compartments was calculated using a G-test of independence.DOI: http://dx.doi.org/10.7554/eLife.02557.008
+**Figure 1—figure supplement 5.:** The comparison between replicate samples one (as used in the main text) is indicated on the left, the comparison between combined replicate samples is indicated at the center left, the comparison between ES cell replicates is indicated at the center right and the comparison between E10.5 forebrain replicates is indicated on the right. Fragments are classified as positive either in ES (orange) or in E10.5 forebrain (green) cells within the region covered by the random 4C-seq libraries. The number of fragments is indicated below. Significance between distribution inside and outside the 3D compartments was calculated using a G-test of independence.
 
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp6-v2.jpg)
 
-**Figure 1—figure supplement 6.:** (A) Distribution of 4C-seq signal on chromosome 2 from viewpoints in the HoxD cluster. On the right, a schematic representation of chromosome 2 is given, with color codes for the three categories that have been quantified in ES cells and E10.5 forebrain indicated below. Comparison of distributions between ES cells and E10.5 forebrain show that TAD signal in ES cells are considerably increased, but that more distal signal is reduced. Elevated signal in the TADs in ES cells is therefore not a representation of generally increased background signal. (B) Distribution of 4C-seq signal on chromosome 11 from viewpoints in the HoxB cluster. Similar effects are observed as for viewpoints in the HoxD cluster.DOI: http://dx.doi.org/10.7554/eLife.02557.009
+**Figure 1—figure supplement 6.:** (A) Distribution of 4C-seq signal on chromosome 2 from viewpoints in the HoxD cluster. On the right, a schematic representation of chromosome 2 is given, with color codes for the three categories that have been quantified in ES cells and E10.5 forebrain indicated below. Comparison of distributions between ES cells and E10.5 forebrain show that TAD signal in ES cells are considerably increased, but that more distal signal is reduced. Elevated signal in the TADs in ES cells is therefore not a representation of generally increased background signal. (B) Distribution of 4C-seq signal on chromosome 11 from viewpoints in the HoxB cluster. Similar effects are observed as for viewpoints in the HoxD cluster.
 
 ![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig1-figsupp7-v2.jpg)
 
-**Figure 1—figure supplement 7.:** Hox background transcription in ES cells.(A) Expression levels of Hox genes and of four housekeeping genes in both ES and E10.5 forebrain cells, as determined by RNA-seq. The large majority of Hox genes show low level activity in ES cells, whereas only few, very low, transcribed Hox genes are identified in E10.5 forebrain. In contrast, the expression levels of selected housekeeping genes are within a similar range (maximum threefold difference). (B) Overall gene expression patterns in ES and E10.5 forebrain cells are not significantly different. Box plots showing the overall distribution of RNA-seq signals per gene (RPKM), with colored boxes indicating the 25 to 75% range and whiskers indicating the 10 to 90% range. Differences between distributions were scored using a two-sided Welch two samples t test. (C) Quantitation of selected spliced Hox gene transcripts in ES cell and E10.5 forebrain samples as determined by RT-qPCR, with amounts in each sample relative to the Tubb2c gene. Below each sample, the specific product of a representative qPCR reaction is displayed. Color-coded dots are used to classify the different outcomes (see legend).DOI: http://dx.doi.org/10.7554/eLife.02557.010
+**Figure 1—figure supplement 7.:** (A) Expression levels of Hox genes and of four housekeeping genes in both ES and E10.5 forebrain cells, as determined by RNA-seq. The large majority of Hox genes show low level activity in ES cells, whereas only few, very low, transcribed Hox genes are identified in E10.5 forebrain. In contrast, the expression levels of selected housekeeping genes are within a similar range (maximum threefold difference). (B) Overall gene expression patterns in ES and E10.5 forebrain cells are not significantly different. Box plots showing the overall distribution of RNA-seq signals per gene (RPKM), with colored boxes indicating the 25 to 75% range and whiskers indicating the 10 to 90% range. Differences between distributions were scored using a two-sided Welch two samples t test. (C) Quantitation of selected spliced Hox gene transcripts in ES cell and E10.5 forebrain samples as determined by RT-qPCR, with amounts in each sample relative to the Tubb2c gene. Below each sample, the specific product of a representative qPCR reaction is displayed. Color-coded dots are used to classify the different outcomes (see legend).
 
 These global 3D domains including the Hox clusters and their immediate flanking DNAs resemble the chromatin architecture found in embryonic forebrain cells, where the silent Hox clusters are covered by high levels of H3K27me3 only (Noordermeer et al., 2011). A more quantitative comparison in 3D architectures between ES cells and E10.5 forebrain cells nevertheless indicated that in ES cells, Hox genes interacted more with the outside chromatin, relative to their interactions within the cluster, as compared to forebrain cells (Figure 1B,C, Figure 1—figure supplements 1–5). Therefore, despite the fact that the clusters are presumably inactive in both situations, the presence of bivalent marks in ES cells coincided with a 3D domain that has elevated relative levels of interactions with the directly surrounding regions, when compared to its counterpart in brain cells (Figure 1D, left and Figure 1—figure supplement 6A). This difference is more pronounced at the HoxB cluster (Figure 1B, right). In embryonic forebrain cells, HoxB forms a single 3D compartment, excluding the 80 kb large repeat-rich intergenic region located between Hoxb13 and Hoxb9, which loops out (Noordermeer et al., 2011). In contrast, both the Hoxb13 and Hoxb9 viewpoints revealed local 3D compartments in ES cells, matching again the extent of bivalent histone marks, yet these two compartments remained separated and did not fuse. Rather, they displayed increased interactions with the nearby chromatin, as if decreased internal interactions would increase contacts outside the cluster (Figure 1B,C, Figure 1—figure supplements 2, 3 and 5). In ES cells, the HoxB cluster is thus organized in two 3D compartments, which have more interactions with their genomic surroundings than in forebrain cells (Figure 1D, right and Figure 1—figure supplement 6B).
 
-To have a possibly more unbiased view on how 3D compartments and the presence of H3K27me3 and H3K4me3 modifications relate to each other, in both ES and brain cells, we devised an approach to correlate 4C-seq signals with either H3K27me3 or H3K4me3 ChIP-seq signal (Table 1; ‘Materials and methods’). In both cell types, H3K27me3 marks strongly correlated with the 3D organization, suggesting a direct link between these two readouts. A considerably lower correlation was scored for HoxB, perhaps related to the absence of clustering of the two H3K27me3 marked sub-domains. In contrast, no particular correlation was observed between the 3D organization and the presence of H3K4me3 marks, in the bivalent state (Table 1), suggesting that H3K4me3 marks and/or the associated factors do not noticeably contribute to the formation of 3D compartments in ES cells.10.7554/eLife.02557.011Table 1.Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samplesDOI: http://dx.doi.org/10.7554/eLife.02557.011ChIP-seq4C-seqInputH3K27me3H3K4me3Hoxd13 ES cells 1−0.140.520.24Hoxd13 ES cells 2−0.070.400.22Hoxd13 E8.5 PSM−0.030.580.13Hoxd13 E10.5 Forebrain 1−0.120.670.26Hoxd13 E10.5 Forebrain 2−0.090.690.25Hoxd13 E10.5 Anterior trunk−0.070.800.30Hoxd9 ES cells 1−0.080.630.28Hoxd9 ES cells 2−0.130.590.26Hoxd9 E8.5 PSM−0.050.310.29Hoxd9 E10.5 Forebrain 1−0.080.660.26Hoxd9 E10.5 Forebrain 2−0.120.610.28Hoxd9 E10.5 Anterior trunk−0.150.670.47Hoxd4 ES cells 10.010.480.11Hoxd4 ES cells 2−0.070.500.29Hoxd4 E8.5 PSM−0.040.040.38Hoxd4 E10.5 Forebrain 1−0.050.590.24Hoxd4 E10.5 Forebrain 2−0.040.580.27Hoxd4 E10.5 Anterior trunk−0.070.160.59Hoxc13 ES cells 1−0.030.390.20Hoxc13 E8.5 PSM−0.030.55−0.03Hoxc13 E10.5 Forebrain 1−0.070.570.18Hoxc13 E10.5 Anterior trunk−0.050.820.00Hoxb13 ES cells 1−0.050.120.02Hoxb13 ES cells 2−0.08−0.010.15Hoxb13 E8.5 PSM0.100.29−0.17Hoxb13 E10.5 Forebrain 10.020.480.09Hoxb13 E10.5 Forebrain 20.080.440.10Hoxb13 E10.5 Anterior trunk−0.030.490.26Hoxb9 ES cells 10.010.470.09Hoxb9 ES cells 20.030.340.04Hoxb9 E8.5 PSM−0.04−0.300.57Hoxb9 E10.5 Forebrain 10.020.630.19Hoxb9 E10.5 Forebrain 20.030.590.16Hoxb9 E10.5 Anterior trunk0.06−0.010.69Hoxa13 ES cells 10.100.520.14Hoxa13 E8.5 PSM0.100.580.12Hoxa13 E10.5 Forebrain 10.070.600.22Hoxa13 E10.5 Anterior trunk0.060.730.20Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samples in different samples (see section ‘Material and methods’ for methodology). For each 4C-seq sample, the highest correlating ChIP-seq sample is highlighted in bold.
+To have a possibly more unbiased view on how 3D compartments and the presence of H3K27me3 and H3K4me3 modifications relate to each other, in both ES and brain cells, we devised an approach to correlate 4C-seq signals with either H3K27me3 or H3K4me3 ChIP-seq signal (Table 1; ‘Materials and methods’). In both cell types, H3K27me3 marks strongly correlated with the 3D organization, suggesting a direct link between these two readouts. A considerably lower correlation was scored for HoxB, perhaps related to the absence of clustering of the two H3K27me3 marked sub-domains. In contrast, no particular correlation was observed between the 3D organization and the presence of H3K4me3 marks, in the bivalent state (Table 1), suggesting that H3K4me3 marks and/or the associated factors do not noticeably contribute to the formation of 3D compartments in ES cells.
 
-## Hox genes are transcribed at low levels in ES cells
+**Table 1.**
+ Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samples
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">ChIP-seq</th>
+    </tr>
+    <tr>
+      <th>4C-seq</th>
+      <th>Input</th>
+      <th>H3K27me3</th>
+      <th>H3K4me3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hoxd13 ES cells 1</td>
+      <td>−0.14</td>
+      <td>0.52</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Hoxd13 ES cells 2</td>
+      <td>−0.07</td>
+      <td>0.40</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Hoxd13 E8.5 PSM</td>
+      <td>−0.03</td>
+      <td>0.58</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Hoxd13 E10.5 Forebrain 1</td>
+      <td>−0.12</td>
+      <td>0.67</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Hoxd13 E10.5 Forebrain 2</td>
+      <td>−0.09</td>
+      <td>0.69</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Hoxd13 E10.5 Anterior trunk</td>
+      <td>−0.07</td>
+      <td>0.80</td>
+      <td>0.30</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 ES cells 1</td>
+      <td>−0.08</td>
+      <td>0.63</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 ES cells 2</td>
+      <td>−0.13</td>
+      <td>0.59</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 E8.5 PSM</td>
+      <td>−0.05</td>
+      <td>0.31</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 E10.5 Forebrain 1</td>
+      <td>−0.08</td>
+      <td>0.66</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 E10.5 Forebrain 2</td>
+      <td>−0.12</td>
+      <td>0.61</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>Hoxd9 E10.5 Anterior trunk</td>
+      <td>−0.15</td>
+      <td>0.67</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 ES cells 1</td>
+      <td>0.01</td>
+      <td>0.48</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 ES cells 2</td>
+      <td>−0.07</td>
+      <td>0.50</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 E8.5 PSM</td>
+      <td>−0.04</td>
+      <td>0.04</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 E10.5 Forebrain 1</td>
+      <td>−0.05</td>
+      <td>0.59</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 E10.5 Forebrain 2</td>
+      <td>−0.04</td>
+      <td>0.58</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Hoxd4 E10.5 Anterior trunk</td>
+      <td>−0.07</td>
+      <td>0.16</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Hoxc13 ES cells 1</td>
+      <td>−0.03</td>
+      <td>0.39</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Hoxc13 E8.5 PSM</td>
+      <td>−0.03</td>
+      <td>0.55</td>
+      <td>−0.03</td>
+    </tr>
+    <tr>
+      <td>Hoxc13 E10.5 Forebrain 1</td>
+      <td>−0.07</td>
+      <td>0.57</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Hoxc13 E10.5 Anterior trunk</td>
+      <td>−0.05</td>
+      <td>0.82</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 ES cells 1</td>
+      <td>−0.05</td>
+      <td>0.12</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 ES cells 2</td>
+      <td>−0.08</td>
+      <td>−0.01</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 E8.5 PSM</td>
+      <td>0.10</td>
+      <td>0.29</td>
+      <td>−0.17</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 E10.5 Forebrain 1</td>
+      <td>0.02</td>
+      <td>0.48</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 E10.5 Forebrain 2</td>
+      <td>0.08</td>
+      <td>0.44</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Hoxb13 E10.5 Anterior trunk</td>
+      <td>−0.03</td>
+      <td>0.49</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 ES cells 1</td>
+      <td>0.01</td>
+      <td>0.47</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 ES cells 2</td>
+      <td>0.03</td>
+      <td>0.34</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 E8.5 PSM</td>
+      <td>−0.04</td>
+      <td>−0.30</td>
+      <td>0.57</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 E10.5 Forebrain 1</td>
+      <td>0.02</td>
+      <td>0.63</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 E10.5 Forebrain 2</td>
+      <td>0.03</td>
+      <td>0.59</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Hoxb9 E10.5 Anterior trunk</td>
+      <td>0.06</td>
+      <td>−0.01</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Hoxa13 ES cells 1</td>
+      <td>0.10</td>
+      <td>0.52</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>Hoxa13 E8.5 PSM</td>
+      <td>0.10</td>
+      <td>0.58</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Hoxa13 E10.5 Forebrain 1</td>
+      <td>0.07</td>
+      <td>0.60</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Hoxa13 E10.5 Anterior trunk</td>
+      <td>0.06</td>
+      <td>0.73</td>
+      <td>0.20</td>
+    </tr>
+  </tbody>
+</table>
+
+_Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samples in different samples (see section ‘Material and methods’ for methodology). For each 4C-seq sample, the highest correlating ChIP-seq sample is highlighted in bold._
+
+### Hox genes are transcribed at low levels in ES cells
 
 It was previously reported that genes covered by bivalent marks in ES cells can be transcribed at low levels, resulting in detectable spliced transcripts (Stock et al., 2007). We assessed whether the observed difference in the strength and homogeneity of the interaction profiles between ES cells and embryonic brain cells was associated with distinct levels of background transcription. In ES cells, RNA-seq detected transcription for most Hox genes, though generally at very low level (Figure 1—figure supplement 7A,B). RT-qPCR of a subset of transcripts confirmed that some of these low-level transcripts (particularly the Hoxd13 and Hoxb13 transcripts) constitute genuine processed transcripts (Figure 1—figure supplement 7C). In contrast, transcription of Hox genes in E10.5 forebrain cells was rarely detected, and no reliable spliced transcripts were detected (Figure 1—figure supplement 7). Therefore, when Hox genes are decorated by bivalent chromatin marks, they appear more permissive for background transcription as compared to other cell types where they are covered by H3K27me3 marks only, likely illustrating the increased resistance to transcription of the latter condition. In this context, posterior Hox genes seems to be more prone to background transcriptional activation in ES cells than more anterior Hox genes, in contrast to their subsequent dynamics of activation in future embryonic tissues where anterior genes come first. This may reflect the presence of strong enhancers in their vicinity (Montavon et al., 2011).
 
-## Dynamics of 3D compartments during sequential Hox gene activation
+### Dynamics of 3D compartments during sequential Hox gene activation
 
-Next, we assessed whether this large 3D domain observed in ES cells is modified when
+Next, we assessed whether this large 3D domain observed in ES cells is modified when Hox genes become activated in the pre-somitic mesoderm (PSM) or instead, whether the previously observed positive and negative compartments are only established at a later stage to fix and memorize particular combinations of Hox gene activities determined at earlier stages and at various body levels. For this purpose, we compared the 4C-seq profiles from ES cells with those obtained from early embryonic E8.5 PSM cells dissected out at Theiler stage 13, posterior from the approximate level of the 12th to 14th forming somite (Figure 2A, scheme; Figure 2—figure supplements 1 and 2). In the most caudal aspect of this latter cellular territory, transcriptional activation had progressed up to the Hoxd9 gene, whereas the Hoxd10 to Hoxd13 loci remained silent (Soshnikova and Duboule, 2009). This cellular population was thus composed of a mixture of cells positive and negative for Hoxd9 expression, whereas all cells were negative for Hoxd13. Conversely, the majority of cells expressed Hoxd4. The inactive Hoxd13 viewpoint interacted mostly with the domain labeled by H3K27me3, at the centromeric side of the cluster (Figure 2A, bottom left). In contrast, the active Hoxd4 gene essentially interacted with the other transcribed genes on the telomeric side of the cluster, labeled by H3K4me3 marks (Figure 2A, bottom right). The same bi-modal 3D organization was observed for all Hox gene clusters (Figure 2—figure supplements 1 and 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig2-v2.jpg)
 
-**Figure 2.:** Hox clusters upon sequential activation.(A) Quantitative local 4C-seq signal for the Hoxd13 (left, centromeric side of HoxD cluster) and Hoxd4 (right, telomeric side of HoxD cluster) viewpoints, either in ES (orange), or E8.5 pre-somitic mesoderm (cyan) cells. Below, the H3K27me3 and H3K4me3 ChIP-seq profiles are aligned. The colinear expression status of Hoxd genes in each sample is schematized below the ChIP-seq profiles, with active genes in blue and inactive genes in red. Ratios between the 4C-seq signals in different samples are indicated between the profiles. The boundaries separating active from inactive Hox gene compartments are indicated by dashed lines. The locations of Hoxd genes (red) and other transcripts (black) are shown below. The samples are shown on the left and cartoons summarizing the genome organizations are indicated on the right. (B) Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samples, in early and late embryonic material.DOI: http://dx.doi.org/10.7554/eLife.02557.012
+**Figure 2.:** (A) Quantitative local 4C-seq signal for the Hoxd13 (left, centromeric side of HoxD cluster) and Hoxd4 (right, telomeric side of HoxD cluster) viewpoints, either in ES (orange), or E8.5 pre-somitic mesoderm (cyan) cells. Below, the H3K27me3 and H3K4me3 ChIP-seq profiles are aligned. The colinear expression status of Hoxd genes in each sample is schematized below the ChIP-seq profiles, with active genes in blue and inactive genes in red. Ratios between the 4C-seq signals in different samples are indicated between the profiles. The boundaries separating active from inactive Hox gene compartments are indicated by dashed lines. The locations of Hoxd genes (red) and other transcripts (black) are shown below. The samples are shown on the left and cartoons summarizing the genome organizations are indicated on the right. (B) Spearman's rank correlation coefficient between pairs of 4C-seq and ChIP-seq samples, in early and late embryonic material.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** HoxD cluster adopts a bi-modal 3D organization.Quantitative local 4C-seq signals for the indicated Hoxd gene viewpoints. Profiles are displayed for ES (orange) and E8.5 pre-somitic mesoderm (cyan) cells. The viewpoints are indicated with arrowheads and excluded regions around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the respective profiles, with the signal in one particular color indicating that the viewpoint interacts more with fragments in the sample of the same color. The locations of Hoxd genes (red) and other transcripts (black) are shown below. Only the region covered by the random 4C-seq library is shown.DOI: http://dx.doi.org/10.7554/eLife.02557.013
+**Figure 2—figure supplement 1.:** Quantitative local 4C-seq signals for the indicated Hoxd gene viewpoints. Profiles are displayed for ES (orange) and E8.5 pre-somitic mesoderm (cyan) cells. The viewpoints are indicated with arrowheads and excluded regions around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the respective profiles, with the signal in one particular color indicating that the viewpoint interacts more with fragments in the sample of the same color. The locations of Hoxd genes (red) and other transcripts (black) are shown below. Only the region covered by the random 4C-seq library is shown.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Hox clusters adopt a bi-modal 3D organization as well.Quantitative local 4C-seq signals for the indicated Hox gene viewpoints in other Hox clusters. Profiles are displayed for ES (orange) and E8.5 pre-somitic mesoderm (cyan) cells. The viewpoints are indicated with arrowheads and excluded regions around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the respective profiles, with the signal in one particular color indicating that the viewpoint interacts more with fragments in the sample of the same color. The locations of both Hox genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.DOI: http://dx.doi.org/10.7554/eLife.02557.014
+**Figure 2—figure supplement 2.:** Quantitative local 4C-seq signals for the indicated Hox gene viewpoints in other Hox clusters. Profiles are displayed for ES (orange) and E8.5 pre-somitic mesoderm (cyan) cells. The viewpoints are indicated with arrowheads and excluded regions around the viewpoints are indicated with light grey boxes. Below, the H3K27me3 and H3K4me3 ChIP-seq signals are aligned. The ratios between 4C-seq signals are indicated between the respective profiles, with the signal in one particular color indicating that the viewpoint interacts more with fragments in the sample of the same color. The locations of both Hox genes (red) and other transcripts (black) are shown below. Only regions covered by the random 4C-seq libraries are shown.
 
 We correlated 4C-seq signals with ChIP-seq data in both early and late embryonic samples (Figure 2B; Table 1) and Hoxd13 always strongly correlated with H3K27me3 histone marks. In contrast, in both the E8.5 tail bud and the E10.5 anterior trunk, the interactions of the active Hoxd4 gene correlated primarily with H3K4me3 marks. The contacts established by Hoxd9 correlated both with H3K27me3 and H3K4me3, either in E8.5 tailbuds, or in E10.5 anterior trunk, likely due to the presence of both expressing and non-expressing cells. At both stages where Hox clusters are partially active, the patterns of 3D compartmentalization and histone marks thus strongly correlated. Therefore, step wise Hox gene transcriptional activation, at least for the Hoxd9 to Hoxd13 genes, is accompanied by a conformational separation between active and inactive domains, which pre-figures their 3D organization at later developmental stages along the AP-axis (Figure 2; Noordermeer et al., 2011).
 
-## Posterior Hoxd genes switch autonomously between 3D compartments
+### Posterior Hoxd genes switch autonomously between 3D compartments
 
 Temporal colinearity was initially defined as the sequential activation of Hox genes according to their positions in the clusters (Izpisua-Belmonte et al., 1991; Duboule, 1994). However, studies on the global transcriptional organization of the HoxD cluster, at least in the developing spinal cord, revealed two large and regulatory-independent modules, which separate ‘posterior’ genes (the AbdB-related Hoxd9 to Hoxd13 genes) from the rest of the gene cluster (Tschopp et al., 2012). Also, in different developmental contexts such as the limbs and the cecum, groups of neighboring Hoxd genes are activated as single regulatory blocks (Montavon et al., 2011; Andrey et al., 2013; Delpretti et al., 2013). We thus assessed whether the transition in chromatin domains also occurred stepwise or, alternatively, if large domains consisting of multiple genes were initially organized in space, followed by sequential gene transcription within these domains.
 
-We first compared the 3D cluster architecture over the course of embryonic development, between the E8.5 PSM and dissected E9.5 tail buds (
+We first compared the 3D cluster architecture over the course of embryonic development, between the E8.5 PSM and dissected E9.5 tail buds (Figure 3). This latter sample was obtained after cutting off the most caudal part of E9.5 embryos (Theiler stage 15) right after the incipient hind limb bud, that is at ca. somite 26–27 level. Accordingly, this sample contained the tail bud proper as well as some tissue localized slightly more rostral. During this 24 hr time interval, the Hoxd10 and Hoxd11 genes become robustly activated in these cells, which are derived from a sub-population of the sample dissected at E8.5. In the E8.5 PSM, Hoxd10 and Hoxd11 are still silenced.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig3-v2.jpg)
 
-**Figure 3.:** Hoxd genes switch compartments.Quantitative local 4C-seq signals for the Hoxd13, Hoxd11 Hoxd9 and Hoxd4 viewpoints in either E8.5 pre-somitic mesoderm (cyan), E9.5 tail bud (brown) or E10.5 tail bud (purple) cells. The colinear expression status of Hoxd genes is schematized below each profile and, on the left, below each cartoon. Ratios between 4C-seq signals in different samples are indicated between the corresponding profiles. The boundaries between active and inactive Hox gene compartments are indicated by dashed lines and regions displaying important changes in interactions, as discussed in the text, are highlighted. Black arrows point towards opposing interacting behaviors due to the heterogeneous activity state of the viewpoint in the sample. The locations of Hoxd genes (red) and other transcripts (black) are shown below.DOI: http://dx.doi.org/10.7554/eLife.02557.015
+**Figure 3.:** Quantitative local 4C-seq signals for the Hoxd13, Hoxd11 Hoxd9 and Hoxd4 viewpoints in either E8.5 pre-somitic mesoderm (cyan), E9.5 tail bud (brown) or E10.5 tail bud (purple) cells. The colinear expression status of Hoxd genes is schematized below each profile and, on the left, below each cartoon. Ratios between 4C-seq signals in different samples are indicated between the corresponding profiles. The boundaries between active and inactive Hox gene compartments are indicated by dashed lines and regions displaying important changes in interactions, as discussed in the text, are highlighted. Black arrows point towards opposing interacting behaviors due to the heterogeneous activity state of the viewpoint in the sample. The locations of Hoxd genes (red) and other transcripts (black) are shown below.
 
 The re-organization of compartmentalization occurring along with gene activation over this 24 hr period was clearly revealed by comparing the profile obtained when using Hoxd11 as a viewpoint with those obtained with either Hoxd4 or Hoxd13 (Figure 3, top ratio between E8.5 PSM and E9.5 Tail bud). When switching from an inactive to an active state, Hoxd11 re-deployed its interactions from the inactive, centromeric compartment (Figure 3, top ratio: blue shaded area) to the active telomeric compartment (Figure 3, top ratio: brown shaded area). These negative and positive compartments can be identified by the interaction profile of either Hoxd13 (Figure 3, top left) or Hoxd4 (Figure 3, top right), respectively. Accordingly, Hoxd4 shifted its interactions towards the centromeric (active) part of the cluster in both E9.5 and E10.5 samples (Figure 3; right), to contact Hoxd10, Hoxd11 and, to some extent, Hoxd12 (Figure 3, top ratio: brown shaded area). Of note, the dissected E8.5 PSM contained a mixture of cells either positive or negative for Hoxd9 transcription, which coincided with this gene showing conspicuous contacts with both extremities of the gene cluster, depending whether it was active (right) or inactive (left) (Figure 3, top, black arrows). In contrast, the E9.5 dissection contains a more homogenous cell population, strongly expressing this gene. As a consequence, in this latter sample, Hoxd9 contacts more strongly the now expressed Hoxd10 and Hoxd11 genes, whereas the interactions with Hoxd13 or Evx2 are strongly diminished (Figure 3; compare top with middle panels).
 
@@ -115,13 +366,13 @@ In the E10.5 tail bud, the terminal part of the cluster containing Hoxd12 and Ho
 
 Therefore, it appears that the colinear time sequence in Hox genes activation is paralleled by a progressive transition in the chromatin structure, with a positive domain gaining in size along with time, at the expense of the negative domain, as best seen by the extension of Hoxd4 contacts. At E8.5, these interactions extended up to Hoxd8-Hoxd9. In E9.5 samples Hoxd10 was clearly contacted, and in E10.5 Hoxd11 and Hoxd12 were also involved (Figure 3, right column). These dynamic topologies suggest a stepwise transition of the genes from the negative to the positive compartment, rather than the switch of large groups of multiple transcription units, following a discrete and global chromatin re-organization.
 
-## Memorizing bimodal chromatin configurations
+### Memorizing bimodal chromatin configurations
 
-During axial extension,
+During axial extension, Hox genes are activated in the most posterior aspect of the elongating embryo (Deschamps and van Nes, 2005). It is thus possible that cells implementing this stepwise transition in chromatin domains can fix and memorize their bimodal distribution once they exit the posterior zone of activation, leading to the colinear Hox conformations observed along the AP-axis (Noordermeer et al., 2011). Accordingly, one would expect cellular territories along the developing body axis to maintain the same bimodal combinations as those established at the time of their origin, during early axial extension. We looked at the similarities in bimodal profiles between posterior samples dissected at different times on the one hand, and various samples micro-dissected at different body levels, from E10.5 embryos, on the other hand (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig4-v2.jpg)
 
-**Figure 4.:** Hox cluster may help memorize states of colinear expression.Quantitative local 4C-seq signals for the Hoxd13, Hoxd11 Hoxd9 and Hoxd4 viewpoints, in samples taken at various anterior to posterior positions along the developing body axis from E10.5 embryos. Anterior trunk (red), lumbo-sacral trunk (blue) and tail bud (purple) tissues were used and the approximate expression status of Hoxd genes in every sample is schematized below each profile (as for Figure 3). Ratios between 4C-seq signals in the different samples are indicated between the corresponding profiles. The boundaries between active and inactive Hox gene compartments are indicated by dashed lines and regions displaying important changes in interactions, as discussed in the text, are highlighted. The locations of Hoxd genes (red) and other transcripts (black) are shown below. On the right, cartoons summarizing the 3D genome organization of the HoxD cluster are indicated.DOI: http://dx.doi.org/10.7554/eLife.02557.016
+**Figure 4.:** Quantitative local 4C-seq signals for the Hoxd13, Hoxd11 Hoxd9 and Hoxd4 viewpoints, in samples taken at various anterior to posterior positions along the developing body axis from E10.5 embryos. Anterior trunk (red), lumbo-sacral trunk (blue) and tail bud (purple) tissues were used and the approximate expression status of Hoxd genes in every sample is schematized below each profile (as for Figure 3). Ratios between 4C-seq signals in the different samples are indicated between the corresponding profiles. The boundaries between active and inactive Hox gene compartments are indicated by dashed lines and regions displaying important changes in interactions, as discussed in the text, are highlighted. The locations of Hoxd genes (red) and other transcripts (black) are shown below. On the right, cartoons summarizing the 3D genome organization of the HoxD cluster are indicated.
 
 The profile obtained from E8.5 PSM (Figure 3, top), right at the onset of Hoxd9 activation globaly aligned with that observed in the ‘anterior trunk’ sample at E10.5 (Figure 4, top), that is a cellular domain with a posterior boundary positioned approximately at the Hoxd9 anterior limit of expression. In both cases, Hoxd9 clearly contacted the negative domain, as defined by the Hoxd13 contacts (Figure 4, top), whereas some weak contacts were also scored with the positive domain, as determined by Hoxd4 contacts, indicating that the posterior limit of the dissection was slightly below the Hoxd9 boundary. These contacts were somehow stronger, in proportion, in the E8.5 than in the E10.5 dissection.
 
@@ -129,23 +380,23 @@ At E9.5 (Theiler stage 14), the ‘tail bud’ (i.e., from the start of the non-
 
 In this lumbo-sacral sample, neither Hoxd12 nor Hoxd13 are as yet transcribed, which coincided with the absence of contact between Hoxd13 and the active part of the gene cluster (Figure 4, middle, left). On the other hand, Hoxd11 expectedly displayed a mixed interaction profile, contacting both the negative and positive domains, likely reflecting the presence of both expressing and non-expressing cells (Figure 4, middle). In the most caudal piece of the E10.5 mouse embryo, interactions between Hoxd12, Hoxd13 and the positive domain were finally detected, suggesting that the entire cluster falls into a single spatial domain (Figure 4, bottom ratio: purple shading). Here again, however, though the interactions were significant, they were not particularly strong, suggesting the presence of a mixed cell population. Based on these data, we propose that the bimodal distributions are frozen in those cells leaving the zone of proliferation, at the caudal aspect of the embryo where temporal colinearity is potentially processed. These 3D structures, and hence the Hox transcription programs, will thus be maintained and memorize the various AP levels from which they originate.
 
-## Temporal colinearity within a constitutive framework of long-range interactions
+### Temporal colinearity within a constitutive framework of long-range interactions
 
 In different developmental contexts, the transcriptional activity of Hoxd genes coincides with an overall remodeling of long-range chromatin interactions with the flanking gene deserts, which harbor essential enhancer elements active in these developing tissues (Montavon et al., 2011; Andrey et al., 2013; Berlivet et al., 2013; Delpretti et al., 2013). Colinear activation of Hoxd genes along the developing trunk is thought to primarily rely on regulatory influences intrinsic to the gene cluster itself (Spitz et al., 2001). However, and even though their importance remains unclear, contributions of the flanking regulatory landscapes in this process have been proposed (Tschopp et al., 2009; Tschopp and Duboule, 2011b). Therefore, we assessed whether or not the reported changes in local interactions are associated with variations in long-range contacts during temporal colinearity, as was observed during limb and intestinal development (Montavon et al., 2011; Andrey et al., 2013; Delpretti et al., 2013).
 
-By using a recently developed analytical methodology (
+By using a recently developed analytical methodology (Woltering et al., 2014), we found that all interrogated Hoxd genes displayed substantial interactions with the flanking gene deserts (Figure 5A, Figure 5—figure supplement 1A). The quantification of interactions over both the centromeric and telomeric gene deserts revealed a gene-specific interaction preference towards either one or the other desert (Figure 5B), similar to what was previously described in limb bud cells (Montavon et al., 2011; Andrey et al., 2013). However, in marked contrast, the dynamics of these long-range chromatin interactions were moderate, if any, and no clear modification in the contact profiles were detected between the inactive state in ES cells, and the subsequent transcriptional activation (Figure 5B,C). Hierarchical clustering of global patterns of long-range interactions revealed that the Hoxd4, Hoxd9 and Hoxd11 viewpoints systematically cluster together, whereas the Hoxd13 viewpoint always behaves as outlier (Figure 5—figure supplement 1B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig5-v2.jpg)
 
-**Figure 5.:** Hoxd gene activation occurs without drastic remodeling of long-range interactions.(A) Distribution of long-range contacts in both the centromeric and telomeric gene deserts surrounding the HoxD cluster. Smoothed 4C-seq signals (11 fragment window size) are shown for the Hoxd13 and Hoxd4 gene viewpoints in ES and E9.5 tail bud cells. The analyzed genomic interval is the same as in Woltering et al. (2014). The location of topological domains (TADs) in ES cells are obtained from Dixon et al. (2012) and indicated on the top with the HoxD cluster and both the centromeric and telomeric gene deserts indicated by arrows. The dashed lines demarcate the domain of high signal over the HoxD cluster, which is excluded from the analysis. (B) Summaries of the distributions in long-range signals within the centromeric and telomeric gene deserts surrounding the HoxD cluster, for all Hoxd genes assayed at various stages of their sequential activation. Each Hoxd gene specifically interacts with either the centromeric or the telomeric gene desert and these privileged contacts remain largely invariant during transcriptional activation. (C) Cumulative signals over the centromeric and telomeric gene deserts and the HoxD cluster for all Hoxd genes assayed at various stages of their sequential activation.DOI: http://dx.doi.org/10.7554/eLife.02557.017
+**Figure 5.:** (A) Distribution of long-range contacts in both the centromeric and telomeric gene deserts surrounding the HoxD cluster. Smoothed 4C-seq signals (11 fragment window size) are shown for the Hoxd13 and Hoxd4 gene viewpoints in ES and E9.5 tail bud cells. The analyzed genomic interval is the same as in Woltering et al. (2014). The location of topological domains (TADs) in ES cells are obtained from Dixon et al. (2012) and indicated on the top with the HoxD cluster and both the centromeric and telomeric gene deserts indicated by arrows. The dashed lines demarcate the domain of high signal over the HoxD cluster, which is excluded from the analysis. (B) Summaries of the distributions in long-range signals within the centromeric and telomeric gene deserts surrounding the HoxD cluster, for all Hoxd genes assayed at various stages of their sequential activation. Each Hoxd gene specifically interacts with either the centromeric or the telomeric gene desert and these privileged contacts remain largely invariant during transcriptional activation. (C) Cumulative signals over the centromeric and telomeric gene deserts and the HoxD cluster for all Hoxd genes assayed at various stages of their sequential activation.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Distribution of long-range contacts in the centromeric and telomeric gene deserts surrounding the HoxD cluster. Smoothed 4C-seq signals (11 fragment window size) for the indicated HoxD viewpoints either in ES (orange), E8.5 pre-somitic mesoderm (cyan), E9.5 tail bud (brown) or E10.5 tail bud (purple) cells over the same genomic interval as analyzed in Woltering et al. (2014). Genomic location of the HoxD cluster and surrounding genes is indicated below. TADs observed in ES cells (from Dixon et al. 2012) are indicated on the top. The positions of both the HoxD cluster and the centromeric and telomeric gene deserts are indicated by arrows. The dashed lines demarcate the domain of high signals over the HoxD cluster, which is excluded from the analysis. (B) Hierarchical clustering of global patterns of long-range interactions in the surrounding gene deserts, for Hoxd viewpoints in ES cells and at different stages of sequential Hox gene activation. The Hoxd4, Hoxd11 and Hoxd13 viewpoints are consistently clustered together, with the Hoxd13 behaving as an outlier. The correlations between samples (indicated by heatmaps) were calculated using Spearman's ranking of smoothed 4C-seq signals (11 fragment window size) over the combined genomic intervals as used in Woltering et al. (2014), with the HoxD cluster itself excluded. The samples were subsequently clustered (top) according to standard hierarchical clustering. (C) Hierarchical clustering of global patterns of long-range interactions in the surrounding gene deserts for Hoxd viewpoints in autopod (digits) and zeugopod (limbs) cells. Data are from Woltering et al. (2014).DOI: http://dx.doi.org/10.7554/eLife.02557.018
+**Figure 5—figure supplement 1.:** (A) Distribution of long-range contacts in the centromeric and telomeric gene deserts surrounding the HoxD cluster. Smoothed 4C-seq signals (11 fragment window size) for the indicated HoxD viewpoints either in ES (orange), E8.5 pre-somitic mesoderm (cyan), E9.5 tail bud (brown) or E10.5 tail bud (purple) cells over the same genomic interval as analyzed in Woltering et al. (2014). Genomic location of the HoxD cluster and surrounding genes is indicated below. TADs observed in ES cells (from Dixon et al. 2012) are indicated on the top. The positions of both the HoxD cluster and the centromeric and telomeric gene deserts are indicated by arrows. The dashed lines demarcate the domain of high signals over the HoxD cluster, which is excluded from the analysis. (B) Hierarchical clustering of global patterns of long-range interactions in the surrounding gene deserts, for Hoxd viewpoints in ES cells and at different stages of sequential Hox gene activation. The Hoxd4, Hoxd11 and Hoxd13 viewpoints are consistently clustered together, with the Hoxd13 behaving as an outlier. The correlations between samples (indicated by heatmaps) were calculated using Spearman's ranking of smoothed 4C-seq signals (11 fragment window size) over the combined genomic intervals as used in Woltering et al. (2014), with the HoxD cluster itself excluded. The samples were subsequently clustered (top) according to standard hierarchical clustering. (C) Hierarchical clustering of global patterns of long-range interactions in the surrounding gene deserts for Hoxd viewpoints in autopod (digits) and zeugopod (limbs) cells. Data are from Woltering et al. (2014).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Virtual 4C carried out from HiC datasets, using bins covering the indicated Hoxd genes as viewpoints. Bins used as viewpoints are indicated in red. The interactions with bins covering the surrounding centromeric and telomeric TADs are given in light orange. TADs in ES cells (obtained from Dixon et al. 2012) are indicated on the top and the location of the HoxD cluster is indicated below. The dashed lines demarcate the assigned TAD boundaries in ES cells. (B) Comparison of the distribution of long-range signals in both the centromeric and telomeric gene deserts, as obtained either by virtual 4C (light orange, data from Dixon et al. 2012) or by 4C-seq (bright orange, this study). Despite large differences in both the size of the viewpoints and the resolution, the distribution is largely similar. The distribution of the HiC bin covering the promoters of the Hoxd13 and Hoxd11 genes behaves as a mix of the two individual 4C-seq viewpoints. (C) Coordinates of the centromeric and telomeric TADs surrounding the HoxD cluster (from Dixon et al. 2012). (D) Detailed location of the HiC bins covering the HoxD cluster. (E) 4C-seq and virtual 4C patterns obtained when using a viewpoint covering the regulatory region CNS39 (Andrey et al., 2013), within the telomeric gene desert. In contrast to Hoxd gene viewpoints, the interactions observed with the centromeric gene desert are near background.DOI: http://dx.doi.org/10.7554/eLife.02557.019
+**Figure 5—figure supplement 2.:** (A) Virtual 4C carried out from HiC datasets, using bins covering the indicated Hoxd genes as viewpoints. Bins used as viewpoints are indicated in red. The interactions with bins covering the surrounding centromeric and telomeric TADs are given in light orange. TADs in ES cells (obtained from Dixon et al. 2012) are indicated on the top and the location of the HoxD cluster is indicated below. The dashed lines demarcate the assigned TAD boundaries in ES cells. (B) Comparison of the distribution of long-range signals in both the centromeric and telomeric gene deserts, as obtained either by virtual 4C (light orange, data from Dixon et al. 2012) or by 4C-seq (bright orange, this study). Despite large differences in both the size of the viewpoints and the resolution, the distribution is largely similar. The distribution of the HiC bin covering the promoters of the Hoxd13 and Hoxd11 genes behaves as a mix of the two individual 4C-seq viewpoints. (C) Coordinates of the centromeric and telomeric TADs surrounding the HoxD cluster (from Dixon et al. 2012). (D) Detailed location of the HiC bins covering the HoxD cluster. (E) 4C-seq and virtual 4C patterns obtained when using a viewpoint covering the regulatory region CNS39 (Andrey et al., 2013), within the telomeric gene desert. In contrast to Hoxd gene viewpoints, the interactions observed with the centromeric gene desert are near background.
 
 This clustering of interactions matches with the position of a previously mapped boundary between ‘topological associated domains’ (TADs; Dixon et al., 2012; Nora et al., 2012). In ES cells indeed, two TADs cover approximately the gene deserts on either side and have their border at the level of the Hoxd12-Hoxd11 genes (Dixon et al., 2012; Figure 5A, Figure 5—figure supplement 1A). Virtual 4C from HiC data with bins that cover the Hoxd genes show highly similar priming of interactions with the surrounding TADs when compared to our 4C-seq analysis, confirming that both approaches score similar chromatin behavior (Figure 5—figure supplement 2; Sexton et al., 2012 for analysis strategy). During limb development, genes located near this boundary (Hoxd9 to Hoxd11) change their tropism and switch their contacts from one TAD to the other, such as to interact sequentially with the appropriate enhancers (Andrey et al., 2013). This structural re-organization is clearly illustrated in our hierarchical clustering with Hoxd11 changing its association from Hoxd4 to Hoxd13 (Figure 5—figure supplement 1C). During temporal colinearity, however, such structural re-organization is not observed and hence the stepwise transcriptional activation of Hoxd genes appears to occur within a largely constitutive framework of long-range interactions; genes up to Hoxd11 interact mostly with the telomeric domain, either before or after their activation, and Hoxd13 always interacts with the centromeric domain. This opposed tropism for Hoxd genes in ES cells, as revealed by HiC and the consequent TAD structures, is somewhat at odds with the local clustering of Hoxd genes when in a negative state, which we report here by using 4C. This paradox is discussed below.
 
@@ -153,7 +404,7 @@ This clustering of interactions matches with the position of a previously mapped
 
 In this study we present the dynamics of local and long-range 3D chromatin organization during temporal colinear activation of Hox genes in vivo. Prior to their sequential activation, Hox genes are organized into local 3D chromatin compartments that encompass all bivalently marked chromatin (Bernstein et al., 2006). In ES cells, however, these 3D compartments appear less defined than the fully inactive and H3K27me3-only marked compartments observed in differentiated cells. This difference in discreteness was paralleled by the amount of observable background transcription, which was substantially higher in ES cells that in brain cells, though the biological impact of these very low level transcripts, if any, remains to be determined. This supports the view whereby a generally relaxed chromatin organization in ES cell may accompany the plasticity required for cell-faith commitment (Mattout and Meshorer, 2010). Interestingly, in ES cells grown in the presence of two kinase-inhibitors and thought to be in a somehow more naïve developmental state, H3K27me3 marks are almost absent from Hox clusters (Marks et al., 2012). Considering the high correlation between the presence of H3K27me3 marks and the existence of 3D chromatin compartments, we would anticipate Hox clusters within these ES cells not to group into 3D compartments as distinct as those visible in ‘canonical’ ES cells. We therefore hypothesize that structuring into fully inactive 3D compartments is a gradual process occurring over the course of several days during embryonic development.
 
-## The spatial dynamics of temporal colinearity
+### The spatial dynamics of temporal colinearity
 
 We also observe that the sequential transcriptional activation of Hox genes in the PSM coincides with a gene-by-gene transfer or positioning from the inactive H3K27me3-decorated compartment to a newly formed 3D compartment containing active genes only. This indicates that the presence of Hox genes in 3D compartments of various extents, along the developed body axis (Noordermeer et al., 2011) is not an a posteriori mechanism used to fix and secure the long-term maintenance of various states of activity, fixed earlier by ‘classical’ transcriptional regulations acting in trans. Instead, it suggests that such spatial structures are instrumental in the precise regulation of their transcriptional timing. This is observed at least for the Hoxd9 to Hoxd13 genes and we infer that the same process occurs in the part of the cluster containing from Hoxd1 to Hoxd8. It is however not possible to assess this experimentally due to technical limitations associated with the size of the embryonic material at the corresponding developmental stages.
 
@@ -161,25 +412,25 @@ Temporal colinearity was originally proposed as a mechanism to translate time in
 
 Studies using internal Hox cluster deletions and duplications indeed showed that the relative position of Hox genes, rather than their promoters, determines their responses to activating signals (Tschopp et al., 2009). In this view, graded signals emanating from the posterior aspect of the developing embryo would lead to a progressive de-repression of Hox clusters, implying that these clusters would display some directional sensitivity. While the nature of the activating factors is elusive, a link with the segmentation clock was proposed (Dubrulle et al., 2001; Zakany et al., 2001). Concerning the directional sensitivity, Polycomb group (Pc-G) gene products may play an important role in this process, as the distribution of H3K27me3 marks correlate with the size of the inactive 3D compartments. Recently, a somewhat graded distribution of both EZH2 and RING1B, two proteins members of the PRC2 and PRC1 complexes, respectively, was described over the HoxD cluster in ES cells, with the highest signals covering the most ‘posterior’ genes (Li et al., 2011). Directionality may therefore derive from a weaker ‘anterior’ repression exerted by the Pc system. In this context, progressive alterations of the repressive system should sensitize the transcriptional threshold, while keeping on with directionality. This effect was observed in Cbx2−/− mutant embryos (a component of the PRC1 complex formerly known as M33), where the efficiency of the PRC1 complex was moderately decreased: RA treatment resulted in premature yet colinear activation of Hoxd genes (Bel-Vialar et al., 2000). Alternatively, collinear activation may rely upon a different kind of model involving for example biophysical forces (Almirantis et al., 2013). Future experiments where the process will be witnessed at the cellular level in real time may be informative in this context.
 
-## Transcriptional maintenance
+### Transcriptional maintenance
 
 Hox genes are originally activated in the most posterior aspect of the gastrulating embryo. This initial wave of activation seems to involve first a poised transcriptional status (Forlani et al., 2003), followed by an apparent anterior forward spreading (Deschamps and Wijgerde, 1993; Gaunt and Strachan, 1994; Gaunt, 2001), which will ultimately lead to the positioning and initiation of the expression domains in the pre-somitic mesoderm (PSM). The colinear processing of this early phase may involve preparatory modifications in the chromatin status, making the system poised for activation by factors emanating from posterior cells (Forlani et al., 2003). In this view, the observed anterior forward spreading in expressing cells (Deschamps and Wijgerde, 1993; Gaunt and Strachan, 1994; Gaunt, 2001) may reflect a prolonged exposure to low levels of signals diffusing from the posterior end of the primitive streak (Forlani et al., 2003). A second (non-exclusive) possibility is that it illustrates the initial difficulty to maintain a robust boundary in Pc repression in a gene cluster where some anterior genes are fully active, with a tendency for the nearby-located genes to be de-repressed and activated.
 
 However, our results suggest that once the expression is finally established within the PSM, the boundary between the active and inactive compartments remain rather stable for the next couple of days, until the axial skeleton is fully determined. In this view, these chromatin domains may represent part of the machinery used to fix a given state of activation and thus translate a temporal parameter into spatial coordinates. As such, early heterochronies in Hox gene activation within the PSM will lead to subsequent re-positioning of the expression boundary, as previously observed (Gerard et al., 1997).
 
-## Long-range contacts
+### Long-range contacts
 
 By using genetic approaches, it was previously argued that the time-sequenced activation of Hoxd genes primarily uses regulatory influences located within the gene cluster itself (Spitz et al., 2001), with some contributions coming from more distant flanking regions (Tschopp et al., 2009; Tschopp and Duboule, 2011b). We now report that such a transcriptional activation is implemented with little-if any-differences in the interaction profiles between the target genes and their neighboring gene deserts, unlike the situation observed during limb development where new contacts appear upon gene activation (Montavon et al., 2011; Andrey et al., 2013). However, temporal colinearity does occur within a framework of constitutive long-range interactions, which may provide a scaffold helping the bimodal separation of active and inactive genes to take place. Further experiments with mice carrying large re-arrangements of these two gene deserts will be necessary to clearly weight the importance of flanking regions in the implementation of the Hox clock.
 
-Finally, while the comparison between published HiC data (
+Finally, while the comparison between published HiC data (Dixon et al., 2012) and our 4C datasets are generally highly consistent (e.g., Figure 5, Figure 5—figure supplement 1; Andrey et al., 2013), the data reported here using ES cells raise an apparent paradox. HiC analysis in ES cells identified a boundary between topological domains positioned around the Hoxd12 to Hoxd11 gene (Dixon et al., 2012; Figure 5—figure supplement 2D) and such boundaries are thought to impose or reflect a physical separation between the two interaction landscapes (e.g., Nora et al., 2013). As a consequence, Hoxd13 should display more interactions with its flanking gene desert than with the other part of the HoxD gene cluster. Yet, by using several viewpoints in a 4C set-up, the HoxD cluster in ES cells appears to form a single negative compartment, despite the interspersed presence of this TAD boundary (Figure 1). In fact, a detailed analysis of the HiC dataset reveals that the HoxD cluster itself forms a ‘micro-TAD’, displaying strong internal interactions, in agreement with the 4C results reported here. As such, we consider it likely that the TAD boundary identified by HiC in ES cells (Dixon et al., 2012) represents an average description of two distinct configurations (Figure 6). For each allele, either the most posterior Hoxd13 gene forms stable interactions within the TAD on the centromeric side or, alternatively, the Hoxd11 to Hoxd1 genes interact with the TAD on the telomeric side (Figure 6). As a consequence, for each allele the entire HoxD 3D compartment becomes located towards a single TAD, on one side of the cluster with a physical separation from the other side. Molecule(s) causing these interactions are elusive and may include proteins that mediate constitutive loops between Hoxd gene promoters and their regulatory elements. The CTCF protein, which may play a role in scaffolding TADs, binds multiple sites around the Hoxd13 to Hoxd8 region (Ferraiuolo et al., 2010; Phillips-Cremins et al., 2013). Because formaldehyde crosslinking has a very short range of action (Orlando et al., 1997), the system generates a graded pattern of 4C and HiC interactions from the location of the actual binding sites. Therefore, while in ES cells and for each allele, TAD borders are likely located at either side of the HoxD 3D compartment (Figure 6A, black lines), our analysis of a large population of cells reflects the equilibrium that exists between these two situations (Figure 6E). At later stages, when the HoxD cluster adopts a bimodal 3D organization, the tethering of interactions, as illustrated by the existence of TADs on either side, may help implement the separation between activated and repressed Hox genes, thereby potentially reducing deleterious regulatory interferences and premature activation of the most posterior Hox genes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02557/elife-02557-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic organization of topological domains in ES cells (from Dixon et al. 2012) matching the centromeric and telomeric gene deserts, with an apparent boundary assigned near the Hoxd11 gene (grey diagonal lines). All Hoxd genes in ES cells have considerable interactions on either side of the cluster, suggesting that this border is more diffuse and hence the entire HoxD cluster can be integrated in either TAD (diagonal black lines). (B) Various states of activity for Hoxd genes in different samples, analyzed during sequential activation. The assigned TAD boundary in ES cells is indicated by the dashed line. (C) Conceptual 2D representation of chromatin organization within the HoxD cluster chromatin compartment and surrounding centromeric and telomeric TADs in ES cells. (D) Schemes illustrating the dynamics of local 3D compartmentalization for the HoxD cluster (red and blue compartments) vs the constitutive nature of interactions in the context of the surrounding TADs during sequential activation. (E) A dynamic equilibrium to explain the paradox in the observed local vs long-range interactions. Genes located at the centromeric or telomeric extremities of the HoxD cluster form stable interactions with DNA sequences located with the flanking gene deserts, thereby dragging the HoxD 3D chromatin compartments into either one of the TADs. Within a cellular population, this process is in equilibrium, resulting in a read-out where Hoxd genes have a graded preference to interact with either the centromeric or the telomeric deserts, despite being organized into a single 3D chromatin compartment.DOI: http://dx.doi.org/10.7554/eLife.02557.020
+**Figure 6.:** (A) Schematic organization of topological domains in ES cells (from Dixon et al. 2012) matching the centromeric and telomeric gene deserts, with an apparent boundary assigned near the Hoxd11 gene (grey diagonal lines). All Hoxd genes in ES cells have considerable interactions on either side of the cluster, suggesting that this border is more diffuse and hence the entire HoxD cluster can be integrated in either TAD (diagonal black lines). (B) Various states of activity for Hoxd genes in different samples, analyzed during sequential activation. The assigned TAD boundary in ES cells is indicated by the dashed line. (C) Conceptual 2D representation of chromatin organization within the HoxD cluster chromatin compartment and surrounding centromeric and telomeric TADs in ES cells. (D) Schemes illustrating the dynamics of local 3D compartmentalization for the HoxD cluster (red and blue compartments) vs the constitutive nature of interactions in the context of the surrounding TADs during sequential activation. (E) A dynamic equilibrium to explain the paradox in the observed local vs long-range interactions. Genes located at the centromeric or telomeric extremities of the HoxD cluster form stable interactions with DNA sequences located with the flanking gene deserts, thereby dragging the HoxD 3D chromatin compartments into either one of the TADs. Within a cellular population, this process is in equilibrium, resulting in a read-out where Hoxd genes have a graded preference to interact with either the centromeric or the telomeric deserts, despite being organized into a single 3D chromatin compartment.
 
 ## Materials and methods
 
-## Animal care, tissue sampling, ES cell culture and sample preparation
+### Animal care, tissue sampling, ES cell culture and sample preparation
 
 All experiments were performed in agreement with the Swiss law on animal protection (LPA). Tissue samples were isolated at the indicated time points (with maximum 6 hr delay), with day E0.5 being noon on the day of the vaginal plug. Tissue pieces for 4C-sequencing, ChIP-sequencing, RNA-sequencing and Reverse Transcriptase-qPCR were isolated in PBS and subsequently transferred to PBS supplemented with 10% Fetal Calf Serum. 4C-seq and ChIP-seq material was incubated for 45 min with 1 mg/ml collagenase (Sigma-Aldrich, St. Louis, MO), and 4C-seq material was further made single cell using a cell strainer (BD Falcon).
 
@@ -187,22 +438,263 @@ Mouse ES cells were grown under feeder-free conditions on gelatinized plates in 
 
 Embryonic 4C-seq samples consisted of pooled material from multiple embryos: 129 embryos for E8.5 pre-somatic mesoderm samples, 196 embryos for E9.5 tail bud, 143 embryos for E10.5 tail bud or E10.5 lumbo-sacral trunks and around 20 embryos for each E10.5 forebrain sample. For embryonic ChIP samples, 50 μg of chromatin was cross-linked at a time, of which 10 μg was used per ChIP. To obtain 50 μg of chromatin, 750 E8.5 pre-somatic mesoderm samples or 10 E10.5 forebrains were pooled. Total RNA from E10.5 forebrain was isolated from single embryos. ES cell 4C-seq and ChIP-seq samples were prepared from samples consisting of 20 million cells. 10 μg of ES cell chromatin was used per ChIP. Total RNA was isolated from 1 million cells.
 
-## 4C-sequencing
+### 4C-sequencing
 
-4C–seq libraries were constructed as previously described (Noordermeer et al., 2011). NlaIII (New England Biolabs, Ipswich, MA) was used as the primary restriction enzyme and DpnII (New England Biolabs) was used as the secondary restriction enzyme. For each viewpoint, a total of 1 μg (E9.5 tail bud, E10.5 tail bud, E10.5 lumbo-sacral trunks, E10.5 forebrain and ES cells) or 50 ng (E8.5 pre-somatic mesoderm) of each 4C-seq library was amplified using 16 individual PCR reactions with inverse primers including Illumina Solexa adapter sequences (primer sequences in Table 2). Illumina sequencing was done on multiplexed samples, containing PCR amplified material of up to 7 viewpoints, using 100 bp Single end reads on the Illumina HiSeq system according to the manufacturer's specifications.10.7554/eLife.02557.021Table 2.4C-seq Inverse primer sequencesDOI: http://dx.doi.org/10.7554/eLife.02557.021ViewpointInverse primerSequenceHoxd13iHoxd13 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAAAATCCTAGACCTGGTCATGchr2:74504328-74504348iHoxd13 reverse*CAAGCAGAAGACGGCATACGAGGCCGATGGTGCTGTATAGGchr2:74505579-74505598Hoxd11iHoxd11 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGCATACTTCCTCAGAAGAGGCAchr2:74523621-74523643iHoxd11 reverse*CAAGCAGAAGACGGCATACGACTAGGAAAATTCCTAATTTCAGGchr2:74523881-74523903Hoxd9iHoxd9 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTACGAACACCTCGTCGCCCTchr2:74536168-74536185iHoxd9 reverse*CAAGCAGAAGACGGCATACGACCCTCAGCTTGCAGCGATchr2:74536797-74536814Hoxd4iHoxd4 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGGACAATAAAGCATCCATAGGCGchr2:74561330-74561353iHoxd4 reverse*CAAGCAGAAGACGGCATACGATCCAGTGGAATTGGGTGGGATchr2:74562171-74562191Hoxc13iHoxc13 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAGATAATTTTCCTGAGACATTGTAACchr15:102756108-102756132iHoxc13 reverse*CAAGCAGAAGACGGCATACGAGCTCAATGTTCCCTTCCCTAACGchr15:102755251-102755273Hoxb13iHoxb13 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAGGACTGTTCCTCGGGGCTATchr11:96057673-96057692iHoxb13 reverse*CAAGCAGAAGACGGCATACGAATCTGGCGTTCAGAGAGGCTchr11:96057448-96057467Hoxb9iHoxb9 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGATTGAGGAGTCTGGCCACTTchr11:96136070-96136091iHoxb9 reverse*CAAGCAGAAGACGGCATACGATCATCAAACCAAGCAGGGCAchr11:96136671-96136690Hoxa13iHoxa13 forward*AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAACACTTGCACAACCAGAAATGCchr6:52212211-52212232iHoxa13 reverse*CAAGCAGAAGACGGCATACGAGGCGAGGCTCAGGCTTTTATchr6:52212476-52212495CNS(39)iCNS(39) forward†AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTATCCAAGGAGAAAGGTGTTGGTCchr2:74975258-74975279iCNS(39) reverse†CAAGCAGAAGACGGCATACGACAGGGCGTTGGGTCACTCTchr2:74975670-74975687Location of primers according to NCBI37 (mm9).*Primers from Noordermeer D, Leleu M, Splinter E, Rougemont J, De Laat W, Duboule D. 2011. The dynamic architecture of Hox gene clusters. Science 334:222–225.†Primers from Andrey G, Montavon T, Mascrez B, Gonzalez F, Noordermeer D, Leleu M, Trono D, Spitz F, Duboule D. 2013. A switch between topological domains underlies HoxD genes collinearity in mouse limbs. Science 340:1234167.
+4C–seq libraries were constructed as previously described (Noordermeer et al., 2011). NlaIII (New England Biolabs, Ipswich, MA) was used as the primary restriction enzyme and DpnII (New England Biolabs) was used as the secondary restriction enzyme. For each viewpoint, a total of 1 μg (E9.5 tail bud, E10.5 tail bud, E10.5 lumbo-sacral trunks, E10.5 forebrain and ES cells) or 50 ng (E8.5 pre-somatic mesoderm) of each 4C-seq library was amplified using 16 individual PCR reactions with inverse primers including Illumina Solexa adapter sequences (primer sequences in Table 2). Illumina sequencing was done on multiplexed samples, containing PCR amplified material of up to 7 viewpoints, using 100 bp Single end reads on the Illumina HiSeq system according to the manufacturer's specifications.
+
+**Table 2.**
+ 4C-seq Inverse primer sequences
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Viewpoint</th>
+      <th>Inverse primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Hoxd13</td>
+      <td rowspan="2">iHoxd13 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAAAATCCTAGACCTGGTCATG</td>
+    </tr>
+    <tr>
+      <td>chr2:74504328-74504348</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxd13 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGAGGCCGATGGTGCTGTATAGG</td>
+    </tr>
+    <tr>
+      <td>chr2:74505579-74505598</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxd11</td>
+      <td rowspan="2">iHoxd11 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGCATACTTCCTCAGAAGAGGCA</td>
+    </tr>
+    <tr>
+      <td>chr2:74523621-74523643</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxd11 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGACTAGGAAAATTCCTAATTTCAGG</td>
+    </tr>
+    <tr>
+      <td>chr2:74523881-74523903</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxd9</td>
+      <td rowspan="2">iHoxd9 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTACGAACACCTCGTCGCCCT</td>
+    </tr>
+    <tr>
+      <td>chr2:74536168-74536185</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxd9 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGACCCTCAGCTTGCAGCGAT</td>
+    </tr>
+    <tr>
+      <td>chr2:74536797-74536814</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxd4</td>
+      <td rowspan="2">iHoxd4 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGGACAATAAAGCATCCATAGGCG</td>
+    </tr>
+    <tr>
+      <td>chr2:74561330-74561353</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxd4 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGATCCAGTGGAATTGGGTGGGAT</td>
+    </tr>
+    <tr>
+      <td>chr2:74562171-74562191</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxc13</td>
+      <td rowspan="2">iHoxc13 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAGATAATTTTCCTGAGACATTGTAAC</td>
+    </tr>
+    <tr>
+      <td>chr15:102756108-102756132</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxc13 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGAGCTCAATGTTCCCTTCCCTAACG</td>
+    </tr>
+    <tr>
+      <td>chr15:102755251-102755273</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxb13</td>
+      <td rowspan="2">iHoxb13 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAGGACTGTTCCTCGGGGCTAT</td>
+    </tr>
+    <tr>
+      <td>chr11:96057673-96057692</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxb13 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGAATCTGGCGTTCAGAGAGGCT</td>
+    </tr>
+    <tr>
+      <td>chr11:96057448-96057467</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxb9</td>
+      <td rowspan="2">iHoxb9 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAAGATTGAGGAGTCTGGCCACTT</td>
+    </tr>
+    <tr>
+      <td>chr11:96136070-96136091</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxb9 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGATCATCAAACCAAGCAGGGCA</td>
+    </tr>
+    <tr>
+      <td>chr11:96136671-96136690</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Hoxa13</td>
+      <td rowspan="2">iHoxa13 forward*</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTAACACTTGCACAACCAGAAATGC</td>
+    </tr>
+    <tr>
+      <td>chr6:52212211-52212232</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iHoxa13 reverse*</td>
+      <td>CAAGCAGAAGACGGCATACGAGGCGAGGCTCAGGCTTTTAT</td>
+    </tr>
+    <tr>
+      <td>chr6:52212476-52212495</td>
+    </tr>
+    <tr>
+      <td rowspan="4">CNS(39)</td>
+      <td rowspan="2">iCNS(39) forward†</td>
+      <td>AATGATACGGCGACCACCGAACACTCTTTCCCTACACGACGCTCTTCCGATCTATCCAAGGAGAAAGGTGTTGGTC</td>
+    </tr>
+    <tr>
+      <td>chr2:74975258-74975279</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iCNS(39) reverse†</td>
+      <td>CAAGCAGAAGACGGCATACGACAGGGCGTTGGGTCACTCT</td>
+    </tr>
+    <tr>
+      <td>chr2:74975670-74975687</td>
+    </tr>
+  </tbody>
+</table>
+
+_Location of primers according to NCBI37 (mm9).*Primers from Noordermeer D, Leleu M, Splinter E, Rougemont J, De Laat W, Duboule D. 2011. The dynamic architecture of Hox gene clusters. Science 334:222–225.†Primers from Andrey G, Montavon T, Mascrez B, Gonzalez F, Noordermeer D, Leleu M, Trono D, Spitz F, Duboule D. 2013. A switch between topological domains underlies HoxD genes collinearity in mouse limbs. Science 340:1234167._
 
 4C-seq reads were sorted, aligned, and translated to restriction fragments using the 4C-seq pipeline of the BBCF HTSstation (available at http://htsstation.epfl.ch; Noordermeer et al., 2011; David et al., 2014) according to ENSEMBL Mouse assembly NCBIM37 (mm9). 4C-seq patterns were corrected vs previously generated random 4C–seq libraries (Noordermeer et al., 2011), consisting of BACs covering the mouse Hox clusters (HoxD: RP23-331E7; HoxC: RP23-430C12; HoxB: RP23-381I12 and RP23-196F5; HoxA: RP24-298M24). After random correction, three restriction fragments were removed that returned aberrant values (HoxD: chr2:74’597’000-74’597’732; chr2:74’608’796-74’609’312, HoxB: chr11:95’999’958-96’000’916) due to sequence abnormalities in the BAC template (confirmed by Sanger sequencing; not shown). Normalization and further data processing was done as previously described (Noordermeer et al., 2011). Quantitative log2 ratios were calculated by dividing the quantitative fragment count between tissue samples. Unprocessed 4C-seq data is available from the Gene Expression Omnibus (GEO) repository under accession number GSE55344. Random corrected tracks are available from http://duboule-lab.epfl.ch/data.
 
 The directionality of long-range interactions was calculated as previously described (Woltering et al., 2014). In Figure 5A, the smoothed 4C-seq patterns (running mean, window size 11) were obtained using the 4C-seq pipeline of the BBCF HTSstation (available at http://htsstation.epfl.ch; David et al., 2014). HiC data on topological associated domains (TADs) from ES cells were obtained from (http://chromosome.sdsc.edu/mouse/hi-c/database.php; Dixon et al., 2012). Two TADs located centromeric and telomeric of the clusters were selected, covering genomic coordinates chr2:73400000-75960000 (discussed in Woltering et al., 2014). Spearman correlation of long-range patterns was done over the region covering these TADs, with signal on the HoxD cluster itself removed (excluded region: chr2:74484971-74607492). Conventional hierarchical clustering was done to score for relationships between viewpoints.
 
-## ChIP-sequencing
+### ChIP-sequencing
 
 ChIP was performed as previously described (Noordermeer et al., 2011). Cells were fixed for 5 min in a 2% formaldehyde solution at room temperature. ChIP-seq samples were fragmented to a range of 200–500 bp using tip sonication (Misonix S4000, Misonix, Farmingdale, NY), For all ChIP assays, 10 μg of cross-linked chromatin was used. Antibodies used: anti Histone H3K27me3 (#17-622; Millipore, Billerica, MA) and anti H3K4me3 (#17-614; Millipore). ChIP-seq libraries were constructed from 6 to 10 nanograms of immune-precipitated DNA according to the manufacturers instructions (Illumina, San Diego, CA). Sequencing was done using 50 or 100 bp Single end reads on the Illumina HiSeq system according to the manufacturer's specifications. ChIP-seq reads were mapped to ENSEMBL Mouse assembly NCBIM37 (mm9), and extended to 100 bp if read lengths smaller than 100 bp were used, using the ChIP-seq pipeline of the BBCF HTSstation (available at http://htsstation.epfl.ch; David et al., 2014). ChIP-seq data is available from the Gene Expression Omnibus (GEO) repository under accession numbers GSE55344 and GSE31570.
 
-## Correlation of 4C-seq and ChIP-seq samples
+### Correlation of 4C-seq and ChIP-seq samples
 
 Random corrected 4C-seq and ChIP-seq samples were correlated by ranking experimental values within restriction fragments (Table 1). First, to each NlaIII restriction fragment covered by the random 4C tracks within the regions visualized in Figures 1 and 2 (HoxD cluster: chr2:74454783-74622413; HoxC cluster: chr15:102715179-102909417; HoxB cluster: chr11:95992344-96244915; HoxA cluster: chr6:52058584-52234371), the average ChIP-seq signal was assigned for each condition. Restriction fragment within individual samples were ranked based on their 4C-seq or ChIP-seq value and subsequently the Spearman's rank correlation coefficient was calculated between pairs of samples.
 
-## RNA-sequencing and Reverse Transcriptase-qPCR
+### RNA-sequencing and Reverse Transcriptase-qPCR
 
-Total RNA from tissue samples was isolated using Trizol LS reagent (Life Technologies). Total RNA from ES cell samples was isolated using Trizol reagent (Life Technologies). For RNA-seq, the RNA was depleted from rRNAs and, subsequently, strand-specific total RNA-seq libraries were constructed according to the manufacturers instructions (Illumina). Sequencing was done using 50 bp Single end reads on the Illumina HiSeq system according to the manufacturer's specifications. RNA-seq reads were mapped to ENSEMBL Mouse assembly NCBIM37 (mm9) and translated into reads per gene (RPKM) using the RNA-seq pipeline of the BBCF HTSstation (available at http://htsstation.epfl.ch; David et al., 2014). RNA-seq data is available from the Gene Expression Omnibus (GEO) repository under accession numbers GSE55344. For RT-qPCR, cDNA was synthesized after DNAseI treatment (Life Technologies) using SuperScript III (Life Technologies) and oligo-dT primers (Life Technologies), using the manufacturer's instructions. For ES cells and E10.5 forebrain, 2 μg of RNA was used as input for the cDNA synthesis, for E10.5 posterior trunk 1 μg of RNA was used. Products were quantified by qPCR using EXPRESS SYBR GreenER mixes (Life Technologies) on a CFX96 PCR Detection System (BioRad, Hercules, CA). Sequences of intron-spanning primers are provided in Table 3.10.7554/eLife.02557.022Table 3.RT-qPCR primer sequencesDOI: http://dx.doi.org/10.7554/eLife.02557.022FragmentPrimerSequencemRNAmRNA Tubb2c forward*GCAGTGCGGCAACCAGAT chr2:25080064-25080081Tubb2cmRNA Tubb2c reverse*AGTGGGATCAATGCCATGCT chr2:25079711-25079730mRNAmRNA Tbp forward*TTGACCTAAAGACCATTGCACTTC chr17:15644342-15644365TbpmRNA Tbp reverse*TTCTCATGATGACTGCAGCAAA chr17:15650497-15650518mRNAmRNA Hoxd13 forward*GGTGTACTGTGCCAAGGATCAG chr2:74507077-74507098Hoxd13mRNA Hoxd13 reverse*TTAAAGCCACATCCTGGAAAGG over intron boundrymRNAmRNA Hoxd9 forward*GCAGCAACTTGACCCAAACA over intron boundryHoxd9mRNA Hoxd9 reverse*GGTGTAGGGACAGCGCTTTTT chr2:74537278-74537298mRNAmRNA Hoxd4 forwardTCAAGCAGCCCGCTGTGGTC chr2:74565709-74565728Hoxd4mRNA Hoxd4 reverseTCTGGTGTAGGCCGTCCGGG chr2:74566355-74566374mRNAmRNA Hoxb13 forwardGTCCATTCTGGAAAGCAG chr11:96056334-96056351Hoxb13mRNA Hoxb13 reverseAAACTTGTTGGCTGCATACT chr11:96057389-96057408mRNAmRNA Hoxb9 forwardGGCAGGGAGGCTGTCCTGTCT chr11:96133282-96133302Hoxb9mRNA Hoxb9 reverseGCCAGTTGGCAGAGGGGTTGG chr11:96135938-96135958Location of primers according to NCBI37 (mm9).*Primers from Montavon T, Le Garrec JF, Kerszberg M, Duboule D. 2008. Modeling Hox gene regulation in digits: reverse collinearity and the molecular origin of thumbness. Genes Dev 22:346–359.
+Total RNA from tissue samples was isolated using Trizol LS reagent (Life Technologies). Total RNA from ES cell samples was isolated using Trizol reagent (Life Technologies). For RNA-seq, the RNA was depleted from rRNAs and, subsequently, strand-specific total RNA-seq libraries were constructed according to the manufacturers instructions (Illumina). Sequencing was done using 50 bp Single end reads on the Illumina HiSeq system according to the manufacturer's specifications. RNA-seq reads were mapped to ENSEMBL Mouse assembly NCBIM37 (mm9) and translated into reads per gene (RPKM) using the RNA-seq pipeline of the BBCF HTSstation (available at http://htsstation.epfl.ch; David et al., 2014). RNA-seq data is available from the Gene Expression Omnibus (GEO) repository under accession numbers GSE55344. For RT-qPCR, cDNA was synthesized after DNAseI treatment (Life Technologies) using SuperScript III (Life Technologies) and oligo-dT primers (Life Technologies), using the manufacturer's instructions. For ES cells and E10.5 forebrain, 2 μg of RNA was used as input for the cDNA synthesis, for E10.5 posterior trunk 1 μg of RNA was used. Products were quantified by qPCR using EXPRESS SYBR GreenER mixes (Life Technologies) on a CFX96 PCR Detection System (BioRad, Hercules, CA). Sequences of intron-spanning primers are provided in Table 3.
+
+**Table 3.**
+ RT-qPCR primer sequences
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fragment</th>
+      <th>Primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Tubb2c forward*</td>
+      <td>GCAGTGCGGCAACCAGAT chr2:25080064-25080081</td>
+    </tr>
+    <tr>
+      <td>Tubb2c</td>
+      <td>mRNA Tubb2c reverse*</td>
+      <td>AGTGGGATCAATGCCATGCT chr2:25079711-25079730</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Tbp forward*</td>
+      <td>TTGACCTAAAGACCATTGCACTTC chr17:15644342-15644365</td>
+    </tr>
+    <tr>
+      <td>Tbp</td>
+      <td>mRNA Tbp reverse*</td>
+      <td>TTCTCATGATGACTGCAGCAAA chr17:15650497-15650518</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Hoxd13 forward*</td>
+      <td>GGTGTACTGTGCCAAGGATCAG chr2:74507077-74507098</td>
+    </tr>
+    <tr>
+      <td>Hoxd13</td>
+      <td>mRNA Hoxd13 reverse*</td>
+      <td>TTAAAGCCACATCCTGGAAAGG over intron boundry</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Hoxd9 forward*</td>
+      <td>GCAGCAACTTGACCCAAACA over intron boundry</td>
+    </tr>
+    <tr>
+      <td>Hoxd9</td>
+      <td>mRNA Hoxd9 reverse*</td>
+      <td>GGTGTAGGGACAGCGCTTTTT chr2:74537278-74537298</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Hoxd4 forward</td>
+      <td>TCAAGCAGCCCGCTGTGGTC chr2:74565709-74565728</td>
+    </tr>
+    <tr>
+      <td>Hoxd4</td>
+      <td>mRNA Hoxd4 reverse</td>
+      <td>TCTGGTGTAGGCCGTCCGGG chr2:74566355-74566374</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Hoxb13 forward</td>
+      <td>GTCCATTCTGGAAAGCAG chr11:96056334-96056351</td>
+    </tr>
+    <tr>
+      <td>Hoxb13</td>
+      <td>mRNA Hoxb13 reverse</td>
+      <td>AAACTTGTTGGCTGCATACT chr11:96057389-96057408</td>
+    </tr>
+    <tr>
+      <td>mRNA</td>
+      <td>mRNA Hoxb9 forward</td>
+      <td>GGCAGGGAGGCTGTCCTGTCT chr11:96133282-96133302</td>
+    </tr>
+    <tr>
+      <td>Hoxb9</td>
+      <td>mRNA Hoxb9 reverse</td>
+      <td>GCCAGTTGGCAGAGGGGTTGG chr11:96135938-96135958</td>
+    </tr>
+  </tbody>
+</table>
+
+_Location of primers according to NCBI37 (mm9).*Primers from Montavon T, Le Garrec JF, Kerszberg M, Duboule D. 2008. Modeling Hox gene regulation in digits: reverse collinearity and the molecular origin of thumbness. Genes Dev 22:346–359._

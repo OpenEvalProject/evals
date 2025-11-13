@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.43584.001 Assembly of microtubule-associated protein tau into filamentous inclusions underlies a range of neurodegenerative diseases. Tau filaments adopt different conformations in Alzheimer’s and Pick’s diseases. Here, we used cryo- and immuno- electron microscopy to characterise filaments that were assembled from recombinant full-length human tau with four (2N4R) or three (2N3R) microtubule-binding repeats in the presence of heparin. 2N4R tau assembles into multiple types of filaments, and the structures of three types reveal similar ‘kinked hairpin’ folds, in which the second and third repeats pack against each other. 2N3R tau filaments are structurally homogeneous, and adopt a dimeric core, where the third repeats of two tau molecules pack in a parallel manner. The heparin-induced tau filaments differ from those of Alzheimer’s or Pick’s disease, which have larger cores with different repeat compositions. Our results illustrate the structural versatility of amyloid filaments, and raise questions about the relevance of in vitro assembly.
+Assembly of microtubule-associated protein tau into filamentous inclusions underlies a range of neurodegenerative diseases. Tau filaments adopt different conformations in Alzheimer’s and Pick’s diseases. Here, we used cryo- and immuno- electron microscopy to characterise filaments that were assembled from recombinant full-length human tau with four (2N4R) or three (2N3R) microtubule-binding repeats in the presence of heparin. 2N4R tau assembles into multiple types of filaments, and the structures of three types reveal similar ‘kinked hairpin’ folds, in which the second and third repeats pack against each other. 2N3R tau filaments are structurally homogeneous, and adopt a dimeric core, where the third repeats of two tau molecules pack in a parallel manner. The heparin-induced tau filaments differ from those of Alzheimer’s or Pick’s disease, which have larger cores with different repeat compositions. Our results illustrate the structural versatility of amyloid filaments, and raise questions about the relevance of in vitro assembly.
 
 ## Introduction
 
@@ -40,9 +40,21 @@ Here, we used cryo-EM to determine the structures of heparin-induced filaments a
 
 ## Results
 
-## Comparative morphology of heparin-induced 2N4R and 2N3R tau filaments
+### Comparative morphology of heparin-induced 2N4R and 2N3R tau filaments
 
 For 2N4R tau, we distinguished at least four different types of filaments in raw cryo-EM micrographs and in 2D class averages, (Figure 1A). We named the two most common types snake (~45%) and twister (~30%). Snake filaments have a crossover distance of 650 Å and vary in width between 40 and 100 Å. They display a sigmoidal curvature pattern, with deviations of up to 70 Å from a hypothetical straight line through their centre. Twister filaments have an almost constant width of 80 Å, and a crossover distance that is approximately two times shorter (~250 Å) than that of the snake filaments. We called the least common types of filaments hose (~20%) and jagged (~5%). Hose filaments display a sigmoidal curvature pattern that is less regular and has much wider curves compared to snake filaments, and hose filaments often appear to stop twisting. Jagged filaments are straighter than snake filaments, and are named after their somewhat rugged appearance around the edges, with filament widths ranging from 50 to 90 Å. They have a crossover distance of approximately 450 Å. In some micrographs, we observed filaments that change from one type into another (Figure 1—figure supplement 1). We observed the following transitions: twister to snake; twister to jagged; hose to snake and hose to jagged. Similar changes were also observed for tau filaments from AD brains and PiD brains, where a continuous filament could transition from a PHF to a SF, and from a NPF to a WPF, respectively (Crowther, 1991; Falcon et al., 2018b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cryo-EM image of heparin-induced 2N4R tau filaments. (B) Cryo-EM image of heparin-induced 2N3R tau filaments. 2D class averages of each filament type are shown as insets. Scale bars, 50 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Scale bars, 50 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bars, 50 nm.
 
 Reference-free 2D class averaging of manually selected data sets for the four types confirmed the differences between them (Figure 1A-inset). For snake, twister and jagged filaments, 3D reconstructions led to maps with separated β-strands along the helical axis, which allowed for de novo atomic modelling (see below). However, 3D reconstruction failed for hose filaments, possibly because of a large degree of bending and an apparent lack of twisting in many segments.
 
@@ -50,31 +62,296 @@ Heparin-induced 2N3R tau filaments were more homogeneous than their 2N4R counter
 
 Since tau filaments of AD consist of a mixture of 3R and 4R isoforms, we also performed heparin-induced in vitro assembly with equimolar amounts of 2N4R and 2N3R tau. A mixture of the same five filament types described above was observed (Figure 1—figure supplement 2). Although no co-assemblies with different morphologies were present, we cannot exclude the possibility that filaments with a mixed composition can adopt the same morphologies as observed for the homogeneous samples.
 
-## Cryo-EM structure of 2N4R tau snake filaments
+### Cryo-EM structure of 2N4R tau snake filaments
 
 Of all heparin-induced tau filaments, the best helical reconstruction was obtained for the snake. The structure has a helical twist of −1.26°, an overall resolution of 3.3 Å, and a clear separation of β-strands along the helical axis (Figure 2; Figure 2—figure supplement 1). A pronounced offset of the centre of the ordered core from the helical axis explains the sigmoidal appearance of the filaments in projection (Figure 2B). The map allowed unambiguous de novo atomic modelling (Figure 2, Methods). The ordered core of the snake filament comprises residues 272–330, i.e. the last three residues of R1, all of R2 and most of R3 (Figure 2A). In the core, there are six β-strands, three from R2: β1 (274–280), β2 (282–291) and β3 (295–298), and three from R3: β4 (305–310), β5 (313–321) and β6 (327–330). Four of these strands form two stacks of cross-β, with β1 packing against β5 and β2 against β4. Both interfaces have mixed compositions of polar and hydrophobic groups (Figure 2C,D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig2-v2.jpg)
+
+**Figure 2.:** (A) β-strands and loop regions in the filaments are shown in different colours below the primary sequence of the microtubule-binding repeats (R1–R4). (B) Central slice of the 3D map. The position of the helical axis is indicated by a red cross, extra densities close to outward-facing lysines by yellow arrows, and extra density in front of the hydrophobic patches by a pink arrow. (C) Cryo-EM density with the atomic model. The sharpened, high-resolution map is in blue, and an unsharpened, 4.0 Å low-pass filtered map in grey. (D) Schematic view of the snake filament. (E) Rendered view of secondary structure elements in three successive rungs. (F) As in E, but in a view perpendicular to the helical axis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fourier shell correlation curves between two independently refined half-maps (black, solid), of the final model versus the full map (red, solid), of a model refined in the first independent half map versus the first half map (green, solid), and of the same model versus the second independent half map, which was not used for refinement (blue, dashed) (B) Side views of the 3D reconstruction. The detailed view of the helical axis is at higher threshold to show it more clearly.
 
 Both cross-β stacks are connected at an angle by short arcs, shaping the overall structure into a kinked hairpin (Figure 2E,F). The angle between β4 and β5 is 69° (Figure 7C), as measured from the coordinates of the Cα atoms of their first and last residues in the plane perpendicular to the helical axis. The inner corner of the kink is formed by K281 and L282, with both residues pointing towards the inside of the core; the outer corner is formed by Y310 and K311, both of which point outwards. A broad, hammerhead-like arc, harbouring β3, connects β2 to β4. Weaker density, which is still sufficiently well-defined for unambiguous tracing of the main chain, suggests that this arc is more flexible than the rest of the core. The 290KCGSKD295 motif, which adopts a very similar conformation to the homologous 353KIGSLD358 and 259KIGSTE263 motifs in the tau filament structures from AD and PiD, respectively (Falcon et al., 2018b; Fitzpatrick et al., 2017), connects β2 and β3. On the other side of the hammerhead arc, the 301PGGG304 motif forms part of a turn that connects β3 and β4. The hammerhead arc represents a new type of chain direction reversal in tau filaments, different from the triangular β-helix of the Alzheimer fold (Fitzpatrick et al., 2017), and the tighter U-turns of the Pick fold (Falcon et al., 2018b). The other end of the kinked hairpin is capped by the 322CGSLG326 motif, which brings C-terminal glycine 326 into close contact with N-terminal glycines 272 and 273. It is followed by a short C-terminal β-strand (β6), which is exposed to solvent on both sides, reminiscent of the C-terminus of the Pick fold (Falcon et al., 2018b).
 
 In the core of snake filaments, there are 12 positively charged amino acids (9 lysines and three histidines), but only three negatively charged residues (all aspartates). The aspartates appear to form salt bridges: D283 to K280 on the inside corner of the kink; D295 to K290 inside the hammerhead arc; and D314 to K281 in the cross-β interfaces of β5 and β1. Most of the positively charged side-chains are exposed on the filament surface, where they face diffuse external densities (Figure 2B, indicated by yellow arrows), presumably corresponding to negatively charged groups of heparin. In addition, there is a significant external density covering a large exposed hydrophobic patch on the filament surface, formed by V306, I308 and Y310 (Figure 2B, indicated by a pink arrow).
 
-## Cryo-EM structure of 2N4R tau twister filaments
+### Cryo-EM structure of 2N4R tau twister filaments
 
 The twister filament reconstruction, with an overall resolution of 3.3 Å and a helical twist of −3.38°, also allowed de novo atomic modelling (Figure 3; Figure 3—figure supplement 1). The ordered core of the twister filament is smaller than that of the snake filament, and is positioned much closer to the helical axis (Figure 3B). The ordered core comprises only residues 274–321 (Figure 3A), i.e. the last residue of R1, all of R2 and half of R3. As in the snake filament, these are organised into a kinked hairpin structure of two cross-β stacks connected by a hammerhead arc (Figure 3C,D). In the core, there are four β-strands, two from R2: β1 (274–284) and β2 (286–291), and two from R3: β3 (305–310) and β4 (313–321). The twister shares secondary structure with the snake for the ordered part of R3, with Y310 and K311 forming the outer corner of the kink, which is more bent (with an angle between β3 and β4 of 72°) (Figure 7C) than in the snake. In contrast, on the R2 side of the hairpin, the inner corner of the kink is formed by S285 and N286, extending β1 and shortening β2, compared to the snake filament. The change of R2 secondary structure in the twister filament reverses the interior/exterior orientations of four residues: the polar side-chains of D283 and S285 point towards the inside of the core, whereas hydrophobic residues L282 and L284 point outwards. This results in the twister filament core having a more polar interior, and a more hydrophobic exterior than that of the snake. It also results in a repacking of both cross-β interfaces. Again, the density of the residues that form the hammerhead arc is weaker than that of the rest of the structure. The lower quality of the map in this region led to ambiguity in how the strands on opposite sides of the core connected to each other (Figure 3E,F). Therefore, we chose not to build an atomic model of residues 293–303 in this part of the structure.
 
-## Cryo-EM structure of 2N4R tau jagged filaments
+![Figure 3.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig3-v2.jpg)
+
+**Figure 3.:** (A) β-strands and loop regions in the filaments are shown in different colours below the primary sequence of the microtubule-binding repeats (R1–R4). (B) Central slice of the 3D map. The position of the helical axis is indicated by a red cross, extra densities close to the outward-facing lysines by yellow arrows, and extra density in front of the hydrophobic patches by pink arrows. (C) Cryo-EM density with the atomic model. The sharpened, high-resolution map is in blue, and an unsharpened, 4.0 Å low-pass filtered map in grey. (D) Schematic view of the twister filament. (E) Rendered view of secondary structure elements in three successive rungs. (F) As in E, but in a view perpendicular to the helical axis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fourier shell correlation curves between two independently refined half-maps (black, solid), of the final model versus the full map (red, solid), of a model refined in the first independent half map versus the first half map (green, solid), and of the same model versus the second independent half map, which was not used for refinement (blue, dashed) (B) Side views of the 3D reconstruction. The detailed view of the helical axis is at higher threshold to show it more clearly.
+
+### Cryo-EM structure of 2N4R tau jagged filaments
 
 At 3.5 Å, the overall resolution for the jagged filament structure was lower than for the other two 4R filament types and the side-chain densities were resolved less well than for snake and twister filaments. Still, aided by the models for the other 4R tau filament structures, the map was of sufficient quality to propose an atomic model (Figure 4; Figure 4—figure supplement 1). The helical twist of −2.03° for the jagged structure falls between those of the snake and twister filaments (Table 1); the offset of the centre of the packing unit from the helical axis also lies in-between (Figure 4B). The extent of the ordered core, comprising residues 274–321, is almost identical to that of twister filament (Figure 4A). There are three β-strands, β1 (274–290), β2 (305–310) and β3 (313–321). Again, the structure is characterised by an overall kink, which, with an angle of 52° between β2 and β3 (Figure 7C), is the least pronounced of the three 4R tau filament structures (Figure 4C,D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig4-v2.jpg)
+
+**Figure 4.:** (A) β-strands and loop regions in the filaments are shown in different colours below the primary sequence of the microtubule-binding repeats (R1–R4). (B) Central slice of the 3D map. The position of the helical axis is indicated by a red cross, extra densities close to the outward-facing lysines by yellow arrows, and extra density in front of hydrophobic patches by a pink arrow. (C) Cryo-EM density with the atomic model. The sharpened, high-resolution map is in blue, and an unsharpened, 4.0 Å low-pass filtered map in grey. (D) Schematic view of the jagged filament. (E) Rendered view of the secondary structure elements in three successive rungs. (F) As in E, but in a view perpendicular to the helical axis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fourier shell correlation curves between two independently refined half-maps (black, solid), of the final model versus the full map (red, solid), of a model refined in the first independent half map versus the first half map (green, solid), and of the same model versus the second independent half map, which was not used for refinement (blue, dashed) (B) Side views of the 3D reconstruction. The detailed view of the helical axis is at higher threshold to show it more clearly.
+
+**Table 1.**
+ Cryo-EM structure determination and model statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">4 R-s</th>
+      <th colspan="2">4 R-t</th>
+      <th colspan="2">4 R-j</th>
+      <th colspan="3">3R</th>
+    </tr>
+    <tr>
+      <th>Data collection and processing</th>
+      <th colspan="2"></th>
+      <th colspan="2"></th>
+      <th colspan="2"></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="2">Polara</td>
+      <td colspan="2">Polara</td>
+      <td colspan="2">Polara</td>
+      <td colspan="3">Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="2">300</td>
+      <td colspan="2">300</td>
+      <td colspan="2">300</td>
+      <td colspan="3">300</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td colspan="2">Falcon-III</td>
+      <td colspan="2">Falcon-III</td>
+      <td colspan="2">Falcon-III</td>
+      <td colspan="3">K2 (post-GIF)</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td colspan="2">50</td>
+      <td colspan="2">50</td>
+      <td colspan="2">50</td>
+      <td colspan="3">50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="2">−1.7 to −2.8</td>
+      <td colspan="2">−1.7 to −2.8</td>
+      <td colspan="2">−1.7 to −2.8</td>
+      <td colspan="3">−0.8 to −2.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="2">1.38</td>
+      <td colspan="2">1.38</td>
+      <td colspan="2">1.38</td>
+      <td colspan="3">1.04</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td colspan="2">303,754</td>
+      <td colspan="2">187,555</td>
+      <td colspan="2">44,456</td>
+      <td colspan="3">788,359</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td colspan="2">52,441</td>
+      <td colspan="2">141,461</td>
+      <td colspan="2">35,695</td>
+      <td colspan="3">149,909</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td colspan="2">3.3</td>
+      <td colspan="2">3.3</td>
+      <td colspan="2">3.5</td>
+      <td colspan="3">3.7</td>
+    </tr>
+    <tr>
+      <td>Helical rise (Å)</td>
+      <td colspan="2">4.70</td>
+      <td colspan="2">4.70</td>
+      <td colspan="2">4.70</td>
+      <td colspan="3">4.70</td>
+    </tr>
+    <tr>
+      <td>Helical twist (°)</td>
+      <td colspan="2">−1.26</td>
+      <td colspan="2">−3.38</td>
+      <td colspan="2">−2.03</td>
+      <td colspan="3">−1.05</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td colspan="2">−41.26</td>
+      <td colspan="2">−58.51</td>
+      <td colspan="2">−33.2</td>
+      <td colspan="3">−95.9</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Model composition Non-hydrogen atoms Protein residues</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td colspan="2">1302</td>
+      <td colspan="2">846</td>
+      <td colspan="2">816</td>
+      <td colspan="3">1218</td>
+    </tr>
+    <tr>
+      <td colspan="2">177</td>
+      <td colspan="2">111</td>
+      <td colspan="2">105</td>
+      <td colspan="3">162</td>
+    </tr>
+    <tr>
+      <td rowspan="3">R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td colspan="2">0.0094</td>
+      <td colspan="2">0.0102</td>
+      <td colspan="2">0.0099</td>
+      <td colspan="3">0.0209</td>
+    </tr>
+    <tr>
+      <td colspan="2">0.9007</td>
+      <td colspan="2">1.0727</td>
+      <td colspan="2">1.1342</td>
+      <td colspan="3">1.0457</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Validation MolProbity score Clashscore Poor rotamers (%)</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td colspan="2">1.56</td>
+      <td colspan="2">1.92</td>
+      <td colspan="2">1.13</td>
+      <td colspan="3">1.65</td>
+    </tr>
+    <tr>
+      <td colspan="2">1.49</td>
+      <td colspan="2">7.3</td>
+      <td colspan="2">1.74</td>
+      <td colspan="3">4.78</td>
+    </tr>
+    <tr>
+      <td colspan="2">1.96</td>
+      <td colspan="2">0</td>
+      <td colspan="2">0</td>
+      <td colspan="3">0</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td colspan="2">92.98</td>
+      <td colspan="2">90.91</td>
+      <td colspan="2">96.77</td>
+      <td colspan="3">94.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">100</td>
+      <td colspan="2">100</td>
+      <td colspan="2">100</td>
+      <td colspan="3">98.0</td>
+    </tr>
+    <tr>
+      <td colspan="2">0</td>
+      <td colspan="2">0</td>
+      <td colspan="2">0</td>
+      <td colspan="3">2</td>
+    </tr>
+    <tr>
+      <td>EMPIAR</td>
+      <td colspan="2">10243</td>
+      <td colspan="2">10243</td>
+      <td colspan="2">10243</td>
+      <td colspan="3">10242</td>
+    </tr>
+    <tr>
+      <td>EMDB</td>
+      <td colspan="2">4563</td>
+      <td colspan="2">4564</td>
+      <td colspan="2">4565</td>
+      <td colspan="3">4566</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td colspan="2">6QJH</td>
+      <td colspan="2">6QJM</td>
+      <td colspan="2">6QJP</td>
+      <td colspan="3">6QJQ</td>
+    </tr>
+  </tbody>
+</table>
+
 As in the other two types, the ordered part of R3 shares the same secondary structure, with Y310 and K311 forming the outer corner of the kink. However, unlike in the snake and twister filaments, there is no inner corner of the kink. Instead, one long, slightly bent β-strand extends from residues 274–290. Compared to the snake filament, the pair of adjacent lysine residues changes to interior/exterior orientations. The K280 side-chain points towards the inside of the core and makes a salt bridge with D314, whereas the K281 side-chain points outwards, and forms a salt bridge with D283. The strand residues on the N-terminal side of K280 have also their orientations reversed, and form a new cross-β interface with the β3 strand of R3. In contrast, the C-terminal half of this strand (residues 282–290) forms essentially the same cross-β interface with the β2 strand of R3, as in snake filaments. A hammerhead arc connecting these two strands may be similar to that in the snake. As in the other 4R tau filament structures, its density is weaker than that of the rest of the core, suggesting increased flexibility. The density of the whole arc was not good enough for model building, resulting in the omission of residues 291–303 from the atomic model, and ambiguity in how the strands on opposite sides of the core connected to each other (Figure 4E,F).
 
-## Cryo-EM structure of 2N3R tau filaments
+### Cryo-EM structure of 2N3R tau filaments
 
 At an overall resolution of 3.7 Å, and with clear separation of β-strands along the helical axis, cryo-EM reconstruction of the 2N3R tau filaments allowed unambiguous de novo atomic modelling (Figure 5; Figure 5—figure supplement 1). With a helical twist of −1.05°, the 3R filament twists less than any of its 4R counterparts (Table 1). Again, an offset of the centre of the packing unit from the helical axis explains the sigmoidal patterns observed in projection (Figure 5B). The structure is strikingly different from those of the 2N4R tau filaments. Whereas all three 4R filaments contain a single molecule of tau per rung in the β-sheet, the 3R filament core contains two tau molecules on each rung. There exists no exact symmetry between the two molecules, which are arranged in a parallel cross-β packing (Figure 5E,F). In one molecule, residues 274–330 are ordered; in the other, residues 272–330 are ordered, i.e. the structured core comprises only the last residues of R1, and most of the residues of R3 (this being a 3R tau isoform, residues 275–305 of R2 are not present). At the N-terminal end of the two molecules, residues 274–310 form the first parallel β-strands (β1). The two tyrosines at the end of these strands point towards each other, which marks the beginning of a wider gap between the two molecules, which comprises in each K311, P312 and a small β-strand formed by residues 313–315 (β2). After that, the β-strands comprising residues 317–325 (β3) of both molecules come close together, to engage in tight and interdigitating cross-β packing, provided by the side-chains of S320, C322, S324 and the backbone of G326. At the C-terminal end of the ordered core of each tau molecule, residues 328–330 form a β-strand that faces away. It is equivalent to the C-terminal strand of the snake filaments, and likewise is exposed to solvent on both sides.
 
-## Immuno-EM supports the atomic models
+![Figure 5.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig5-v2.jpg)
+
+**Figure 5.:** (A) β-strands and loop regions in the filaments are shown in different colours below the primary sequence of the microtubule-binding repeats (R1–R4). (B) Central slice of the 3D map. The position of the helical axis is indicated by a red cross, extra densities close to outward-facing lysines by yellow arrows, and extra density in front of hydrophobic patches by pink arrows. (C) Cryo-EM density with the atomic model. The sharpened, high-resolution map is in blue, an unsharpened, 4.0 Å low-pass filtered map in grey. (D) Schematic view of 2N3R tau filament. (E) Rendered view of the secondary structure elements in three successive rungs. (F) As in E, but in a view perpendicular to the helical axis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fourier shell correlation curves between two independently refined half-maps (black, solid), of the final model versus the full map (red, solid), of a model refined in the first independent half map versus the first half map (green, solid), and of the same model versus the second independent half map, which was not used for refinement (blue, dashed) (B) Side views of the 3D reconstruction. The detailed view of the helical axis is at higher threshold to show it more clearly.
+
+### Immuno-EM supports the atomic models
 
 In previous studies, we used immuno-EM to confirm which microtubule-binding repeats form part of the ordered core of tau filaments from AD and PiD brains (Falcon et al., 2018a; Falcon et al., 2018b; Fitzpatrick et al., 2017). Epitopes of repeat-specific, anti-tau antibodies that are buried in the cores of tau filaments are not accessible, while epitopes located in the fuzzy coat are labelled. Moreover, pronase removes the fuzzy coat, which abolishes this positive labelling. We applied the same methods to corroborate the cryo-EM structures of heparin-induced filaments of 2N4R and 2N3R tau (Figure 6). We used antibodies specific for residues 1–16 at the N-terminus (BR133); 244–257 in R1 (BR136); 275–291 in R2 (Anti4R); 323–335 in R3 (BR135); 354–369 in R4 (TauC4); and 428–441 at the C-terminus (BR134). All antibodies labelled bands on Western blots of recombinant proteins (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of 2N4R tau with N-terminal inserts (N1 and N2) and microtubule-binding repeats (R1, R2, R3, R4) highlighted. The epitopes of antibodies BR133 (residues 1–16), BR136 (244-257), Anti4R (275-291), BR135 (323-335), TauC4 (354–369) and BR134 (428-441) are underlined. (B) Representative immuno-EM images with antibodies BR133, BR136, Anti4R, BR135, TauC4, and BR134 of heparin-induced 2N4R and 2N3R tau filaments without (-) and with pronase (+) treatment. Scale bar, 100 nm. (C) Table summarising the results from B, and comparison with the immuno-EM results of AD and PiD. Tick marks indicate antibody decoration of filaments; crosses indicate absence of decoration. The four boxes where the human diseases differ from the in vitro heparin-induced filaments are highlighted in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43584/elife-43584-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Western blots of recombinant 2N3R and 2N4R tau using BR133, BR136, Anti4R, BR135, TauC4 and BR134.
 
 As expected, heparin-induced 2N4R and 2N3R tau filaments were labelled by BR133 and BR134 before, but not after, pronase treatment. Similarly, BR136 and TauC4 decorated 2N4R and 2N3R filaments before, but not after, pronase treatment. By contrast, Anti4R and BR135 did not decorate 2N4R tau filaments, either before or after pronase treatment. BR135 also failed to decorate 2N3R tau filaments. This suggests that the N- and C-termini of tau, as well as the N-terminus of R1 and the C-terminus of R4 are in the fuzzy coat of all heparin-induced filaments, whereas R2 and R3 in 2N4R, and R3 in 2N3R tau filaments are in their ordered cores. These findings are consistent with the tau sequences observed in the core structures of 2N4R and 2N3R filaments.
 
@@ -112,19 +389,143 @@ Our results demonstrate that a single protein, in this case tau, can adopt many 
 
 ## Materials and methods
 
-## Tau expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Plasmid: pRK172-2N4R</td>
+      <td>PMID: 2124967; 8849730; 9407097</td>
+      <td>NCBI Reference Sequence: NM_005910.5</td>
+      <td>Plasmid can be provided upon reasonable request.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA</td>
+      <td>Plasmid: pRK172-2N3R</td>
+      <td>PMID: 2124967</td>
+      <td>NCBI Reference Sequence: NM_001203252.1</td>
+      <td>Plasmid can be provided upon reasonable request.</td>
+    </tr>
+    <tr>
+      <td>Strain, strainback ground (E. coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>Agilent Technologies</td>
+      <td>200131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin</td>
+      <td>Sigma-Aldrich</td>
+      <td>H4784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chymostatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7268</td>
+      <td>Protease inhibitor</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BR133 (Anti- N- terminus of tau proteins, Rabbit polyclonal)</td>
+      <td>In house PMID: 28678775; 30158706</td>
+      <td></td>
+      <td>WB dilution: 1:4000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BR134 (Anti- C- terminus of tau proteins, Rabbit polyclonal)</td>
+      <td>In house PMID: 28678775; 30158706</td>
+      <td></td>
+      <td>WB dilution: 1:4000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BR136 (Anti-R1 of tau proteins, Rabbit polyclonal)</td>
+      <td>In house PMID: 30158706; 30276465</td>
+      <td></td>
+      <td>WB dilution: 1:4000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-4R (Anti-R2 of 2N4R tau protein, Rabbit polyclonal)</td>
+      <td>Cosmo Bio PMID: 28678775; 30158706; 30276465</td>
+      <td>CACTIP4RTP01</td>
+      <td>WB dilution: 1:2000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BR135 (Anti-R3 of tau proteins, Rabbit polyclonal)</td>
+      <td>In house PMID: 28678775; 30158706; 30276465</td>
+      <td></td>
+      <td>WB dilution: 1:4000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TauC4 (Anti-R4 of tau proteins, Rabbit polyclonal)</td>
+      <td>Masato Hasegawa PMID: 28678775; 30158706; 30276465</td>
+      <td></td>
+      <td>WB dilution: 1:2000 EM dilution: 1:50</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID: 30412051</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>PMID: 20383002</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REFMAC</td>
+      <td>PMID: 15299926</td>
+      <td>RRID:SCR_014225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID: 20124702</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_WB: Western Blot; EM: Electron microscopy._
+
+### Tau expression and purification
 
 Tau was expressed and purified as described (Bugiani et al., 1999; Hasegawa et al., 1998), with some modifications. The cDNAs coding for human 2N4R and 2N3R tau were cloned into pRK172, which was transformed into Escherichia coli BL21 (DE3). Cells were cultured in 2xTY medium supplemented with 5 mM MgCl2 and 100 mg/l ampicillin at 37°C until an OD600 of 0.8, when expression was induced by addition of 0.4 mM isopropyl-1-thio-β-D-galactopyranoside. After 3 hr, cells were collected by centrifugation, resuspended in buffer A (50 mM MES pH6.5, 50 mM NaCl, 10 mM EDTA, 5 mM MgCl2, 5 mM TCEP, 0.1 mM AEBSF, 0.03 mM Chymostatin supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail (Roche)) and lysed by ultrasonication (Sonics VCX-750 Vibra Cell Ultra Sonic Processor, 3 min of working time, 3 s on, 6 s off, at 40% amplitude). After incubation with 40 μg/ml DNAse (Sigma) and 10 μg/ml RNAse (Sigma) for 5 min, the lysates were centrifuged at 15,000 × g for 30 min at 4°C. Supernatants were loaded onto a Hitrap CaptoS column (GE Healthcare) and eluted with a 50–500 mM NaCl gradient. Peak fractions were analysed by Tris-Glycine SDS-PAGE (4–20%) and stained with Coomassie brilliant blue R250 (Fisher Chemical). The purified fractions were pooled and precipitated with 38% ammonium sulphate. The pellets were resuspended in buffer B (PBS plus 5 mM TCEP, 0.1 mM AEBSF, 0.015 mM Chymostatin supplemented with cOmplete EDTA-free Protease Inhibitor Cocktail) and centrifuged at 100,000 × g at 4°C for 1 hr. The supernatants were loaded onto a pre-equilibrated HiLoad 16/60 Superdex 200 column (GE Healthcare) with buffer B and eluted at a flow rate of 1 ml/min. Fractions were pooled and concentrated to 3.0 mg/ml. Aliquots of purified protein were snap-frozen and stored at −20°C.
 
-## Heparin-induced filament assembly of tau
+### Heparin-induced filament assembly of tau
 
 Tau proteins (3.0 mg/ml) were incubated with heparin (400 μg/ml, 6–30 kDa, Sigma) in 30 mM MOPS, pH 7.2, 1 mM AEBSF; and 4 mM TCEP at 37°C for 3 days, as described (Goedert et al., 1996). The molar ratio of tau:heparin was approximately 4:1.
 
-## Electron cryo-microscopy
+### Electron cryo-microscopy
 
 Before making cryo-grids, the heparin-induced assembly reactions were centrifuged at 100,000 g for 30 min at 4°C. The resulting pellets were resuspended in 20 mM Tris, pH 7.4, 100 mM NaCl. Pronase-treated tau filaments (3 μl, at 2.0 mg/ml) were applied to glow-discharged holey carbon grids (Quantifoil Au R1.2/1.3, 300 mesh), blotted with filter paper and plunge-frozen in liquid ethane using an FEI Vitrobot Mark IV. For 2N4R filaments, imaging was performed on an FEI Tecnai G2 Polara microscope operating at 300 kV using a Falcon III detector prototype in integrating mode. A total of 717 movies of 30 frames was recorded during 1.0 s exposures, at a pixel size of 1.38 Å on the specimen, and a total dose of approximately 48 e/Å2. Defocus values ranged from −1.7 to −2.8 μm. For 2N3R filaments, imaging was performed on a Gatan K2-Summit detector in counting mode, using an FEI Titan Krios at 300 kV. A GIF-quantum energy filter (Gatan) was used with a slit width of 20 eV to remove inelastically scattered electrons. A total of 2051 movies of 44 frames was recorded during 11 s exposures, at a pixel size of 1.04 Å on the specimen, and a total dose of 50 electrons per Å2. Defocus values ranged from −0.8 to −2.2 μm. Further details are presented in Table 1.
 
-## Helical reconstruction for the 2N4R filaments
+### Helical reconstruction for the 2N4R filaments
 
 Movie frames were gain-corrected, aligned, dose weighted and then summed into a single micrograph using MOTIONCOR2 (Zheng et al., 2017). Aligned, non-dose-weighted micrographs were used to estimate the contrast transfer function (CTF) using CTFFIND4.1 (Rohou and Grigorieff, 2015). All subsequent image-processing steps were performed using helical reconstruction methods in RELION 3.0 (He and Scheres, 2017; Scheres, 2012; Zivanov et al., 2018). Each of the four types of filaments was selected manually in the micrographs, and the resulting data sets were processed independently.
 
@@ -134,16 +535,16 @@ Twister and jagged filaments were processed in a similar manner. Twister segment
 
 For hose filaments, 124,458 segments were extracted using a box size of 1200 pixels, and down-scaled to 384 pixels to speed up 2D classification. Similar to the other 4R filament types, de novo initial model generation was attempted from the reference-free 2D class averages. However, possibly due to the large degree of bending and an apparent lack of twist in many filaments, all 3D reconstruction attempts failed.
 
-## Helical reconstruction for the 2N3R filaments
+### Helical reconstruction for the 2N3R filaments
 
 Processing of the 2N3R dataset was similar to the 2N4R dataset, but CTF parameters were estimated using Gctf (Zhang, 2016) instead of CTFFIND4.1, and 788,359 segments were selected using automated picking procedures for helices in RELION-3.0 (He and Scheres, 2017). Segments were initially extracted with a box size of 800 pixels and down-scaled to 256 pixels for reference-free 2D class averaging. Two types of 2D class averages were observed, corresponding to narrow and wide filaments. We only proceeded with the narrow filaments, as they comprised 98% of the segments. An initial helical twist of −1.1° was estimated from the crossover distance of filaments in micrographs, and used for de novo 3D initial model calculation from the 2D class averages. Parameters for the final reconstruction are given in Table 1.
 
-## Model building and refinement
+### Model building and refinement
 
 Atomic models were built de novo in the maps with imposed helical symmetry using COOT (Emsley et al., 2010). Model building was started from a distinctive feature of the 3R filament: a cross-β packing with a very short distance between the β-sheets that can only be achieved for residues with small or no side chains at the interface. In the tau sequence, there is only one segment that could form a β-strand with four sufficiently small, inwards facing residues, 320SKCGSLG326 from R3, making this sequence assignment unambiguous. Extension of the sequence towards the N- and C-terminal regions, by manually adding amino acids in COOT, confirmed this assignment with other distinctive residues, like the large aromatic side chains of Y310, matching their clear densities. The assignment of lysine side-chains on the filament surface brought their ε-amino groups close to the observed external diffuse densities, presumably corresponding to the sulphate groups of heparin. This observation then also allowed ready identification of lysine residues in the 4R tau filament structures. The clear densities of the di-lysine 317KVTSK321 motifs, combined with good densities for other bulky side chains like Y310, provided the starting point for complete sequence assignment.
 
 The four structures are devoid of strong handedness, and, at the reported resolutions, it is not possible to determine their absolute hand based on densities for carbonyl groups of the main chain. For the snake filaments, we assumed the same handedness for the 290KCGSKD295 motif as we observed for the homologous 353KIGSLD358 motif in the tau filament structures from AD (Fitzpatrick et al., 2017). This corresponded to a negative twist angle, similar to that observed for AD filaments. The direction of twist of the other three structures was then kept the same as for the snake filaments. Initial manual model building was followed by targeted real-space refinement in COOT. The model was then translated to give a stack of three consecutive monomers to preserve nearest-neighbour interactions for the middle chain in subsequent refinements using a combination of rigid-body fitting in COOT and Fourier-space refinement in REFMAC (Murshudov et al., 1997). Because most residues adopted a β-strand conformation, hydrogen-bond restraints were imposed to preserve a parallel, in-register hydrogen-bonding pattern in earlier stages of Fourier-space refinements. Local symmetry restraints were imposed to keep all β-strand rungs identical. Side-chain clashes were detected using MOLPROBITY (Chen et al., 2010), and corrected by iterative cycles of real-space refinement in COOT and Fourier-space refinement in REFMAC and PHENIX (Adams et al., 2010). For each refined structure, separate model refinements were performed against a single half-map, and the resulting model was compared to the other half-map to confirm the absence of overfitting. The final models were stable in refinements without additional restraints. Statistics for the final models are shown in Table 1.
 
-## Immunolabelling
+### Immunolabelling
 
 Western blotting and immuno-EM were carried out as described (Falcon et al., 2018b; Fitzpatrick et al., 2017; Goedert et al., 1992). For immuno-EM, pronase treatment was performed by incubating filaments with 0.4 mg/ml pronase (Sigma) for 1 hr at 21°C. Blocking used PBS and 0.5% BSA. Primary and secondary antibodies were used at 1:50 and 1:20, respectively.

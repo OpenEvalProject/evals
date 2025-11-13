@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.31732.001 Skeletal muscle from mdx mice is characterized by increased Nox2 ROS, altered microtubule network, increased muscle stiffness, and decreased muscle/respiratory function. While microtubule de-tyrosination has been suggested to increase stiffness and Nox2 ROS production in isolated single myofibers, its role in altering tissue stiffness and muscle function has not been established. Because Nox2 ROS production is upregulated prior to microtubule network alterations and ROS affect microtubule formation, we investigated the role of Nox2 ROS in diaphragm tissue microtubule organization, stiffness and muscle/respiratory function. Eliminating Nox2 ROS prevents microtubule disorganization and reduces fibrosis and muscle stiffness in mdx diaphragm. Fibrosis accounts for the majority of variance in diaphragm stiffness and decreased function, implicating altered extracellular matrix and not microtubule de-tyrosination as a modulator of diaphragm tissue function. Ultimately, inhibiting Nox2 ROS production increased force and respiratory function in dystrophic diaphragm, establishing Nox2 as a potential therapeutic target in Duchenne muscular dystrophy.
+Skeletal muscle from mdx mice is characterized by increased Nox2 ROS, altered microtubule network, increased muscle stiffness, and decreased muscle/respiratory function. While microtubule de-tyrosination has been suggested to increase stiffness and Nox2 ROS production in isolated single myofibers, its role in altering tissue stiffness and muscle function has not been established. Because Nox2 ROS production is upregulated prior to microtubule network alterations and ROS affect microtubule formation, we investigated the role of Nox2 ROS in diaphragm tissue microtubule organization, stiffness and muscle/respiratory function. Eliminating Nox2 ROS prevents microtubule disorganization and reduces fibrosis and muscle stiffness in mdx diaphragm. Fibrosis accounts for the majority of variance in diaphragm stiffness and decreased function, implicating altered extracellular matrix and not microtubule de-tyrosination as a modulator of diaphragm tissue function. Ultimately, inhibiting Nox2 ROS production increased force and respiratory function in dystrophic diaphragm, establishing Nox2 as a potential therapeutic target in Duchenne muscular dystrophy.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Because the altered MT network and fibrosis develop later in the disease patholo
 
 ## Results
 
-## Genetic deletion of Nox2 ROS production prevents disorganization of the microtubule network in dystrophic muscle
+### Genetic deletion of Nox2 ROS production prevents disorganization of the microtubule network in dystrophic muscle
 
 Previous data have shown that tubulin content is upregulated in muscular dystrophy, and DT-tubulin may influence MT stability (Kerr et al., 2015; Khairallah et al., 2012; Prins et al., 2009). However, Belanto et al. (2016) have suggested that the relative DT-tubulin level is not elevated in mdx muscle. Our data confirm that α-, β-, and DT-tubulin are elevated with muscular dystrophy and extend these findings to show that eliminating Nox2 ROS production in mdx mice prevents the increase in all three forms of tubulin (Figure 1B–D). Because DT-tubulin is the de-tyrosinated form of α-tubulin, and both DT- and α-tubulin are elevated in mdx muscle, we assessed the fraction of α-tubulin that is de-tyrosinated. We found that there is no difference in the DT-/α-tubulin ratio between groups (Figure 1E), suggesting that the increase in DT-tubulin is likely due to increased α-tubulin. Khairallah et al. (2012) demonstrated Nox2 ROS production is increased in response to a polymerized MT network. We found that Nox2 ROS production leads to increased MT disorganization (Figure 1G–H) and density (Figure 1I) in dystrophic diaphragm muscle which was prevented by eliminating Nox2 ROS. These results indicate that Nox2-generated ROS increases tubulin content, MT disorganization and MT polymerization in dystrophic diaphragm muscle and questions the role of DT-tubulin in MT stabilization or density.
 
@@ -44,7 +44,7 @@ Previous data have shown that tubulin content is upregulated in muscular dystrop
 
 **Figure 1.:** (A) Representative western blot images of α-, β-, and DT-tubulin content in all three genotypes. (B–D) Eliminating Nox2 ROS production decreases absolute α-, β- and DT-tubulin content in dystrophic diaphragm muscle. (E) The relative amount of DT-/α-tubulin is not different between groups. (F) Representative images of diaphragm myofibers stained with α-tubulin. (G–I) The lack of Nox 2 ROS prevents microtubule disorganization and the increase in microtubule density seen in mdx muscle. p≤0.05 *Significant difference between groups in at least (A–E) nanimals = 6 and (F–I) nanimals = 3 and nfibers = 15.
 
-## Genetic inhibition of Nox2 ROS decreases skeletal muscle fibrosis
+### Genetic inhibition of Nox2 ROS decreases skeletal muscle fibrosis
 
 Increased fibrosis is a pathological hallmark of muscular dystrophy. In accordance with previous studies, we observed increased diaphragm fibrosis in mdx compared with WT mice (Figure 2). Eliminating Nox2 ROS in dystrophic muscle resulted in reduced collagen as measured by Trichrome staining (Figure 2A), hydroxyproline concentration(Figure 2B), and collagen I content (Figure 2C) as well as fibronectin content (Figure 2C). These data suggest that decreasing Nox2 ROS results in a significant decrease in fibrosis in the mdx diaphragm.
 
@@ -52,19 +52,164 @@ Increased fibrosis is a pathological hallmark of muscular dystrophy. In accordan
 
 **Figure 2.:** (A) Representative trichrome images of fibrosis in all three genotypes. Eliminating Nox2 ROS production in dystrophic muscle reduced fibrosis compared with mdx mice. (B) Hydroxyproline levels were elevated in dystrophic muscle and eliminating Nox2 ROS reduced hydroxyproline content compared with mdx mice. (C) Representative western blot images for fibronectin and collagen I content in all three genotypes. Fibronectin and collagen I content were elevated in mdx diaphragm and eliminating Nox2 ROS reduced both toward WT levels. p≤0.05 * Significant difference between groups in at least nanimals = 6 for trichrome and hydroxyproline and nanimals = 3 for fibronectin and collagen I.
 
-## Muscle stiffness and stretch induced ROS are reduced in Nox2 deficient dystrophic muscle
+### Muscle stiffness and stretch induced ROS are reduced in Nox2 deficient dystrophic muscle
 
 Microtubules have been shown to be sensitive to the extracellular environment (Myers et al., 2011; Putnam et al., 2003; Putnam et al., 2001) and cell-to-cell (transverse) interactions are critical in skeletal muscle force transduction (Passerieux et al., 2007; Purslow and Trotter, 1994; Ramaswamy et al., 2011). We evaluated the role of Nox2 ROS in diaphragm mechanical properties using two distinct methods: passive stretch to evaluate the series and parallel elastic components together and optical coherence elastography (OCE) to differentiate between the contributions of series (longitudinal stiffness) and parallel (transverse stiffness) components within overall muscle tissue stiffness. Figure 3A and E demonstrate the system design for both passive stretch and OCE, respectively, Figure 3F shows a sample OCT image of the diaphragm and Figure 3—video 1 illustrates a sample wave propagation taken during OCE. Passive stiffness while lengthening the diaphragm to 120% Lo was increased in mdx compared with WT mice, and eliminating Nox2 ROS resulted in reduced tissue stiffness compared with mdx diaphragm (Figure 3B–C). Transverse and longitudinal stiffness, using OCE, was increased in diaphragm of mdx mice compared with WT mice. Interestingly, eliminating Nox2 ROS production reduced only longitudinal stiffness in Ncf1-/-::mdx (designated as p47(-/-)/mdx) mice to WT levels (Figure 3G–H). Muscle function was measured pre- and post-OCE to ensure OCE measurements did not compromise tissue health. Muscle function for all genotypes was not altered following OCE measurements (Figure 3I). We also found that stretch induced ROS was elevated in mdx diaphragm compared with both WT and p47(-/-)/mdx diaphragm tissue (Figure 3D). These data suggest that elevated Nox2 ROS increases diaphragm stiffness in dystrophic muscle and demonstrate Nox2 as the source of stretch induced ROS at the tissue level. In addition, stiffness measured using OCE can detect changes in tissue elastic properties based on fiber orientation and indicate a direction-dependent response to alterations in tissue stiffness.
 
-## Fibrosis is a major determinant of diaphragm stiffness
+![Figure 3.](https://cdn.elifesciences.org/articles/31732/elife-31732-fig3-v2.jpg)
+
+**Figure 3.:** (A) Image of the passive stretch experimental set-up. (B) Average passive diaphragm force recorded during stretch for each genotype. (C) Eliminating Nox2 ROS production reduced diaphragm tissue stiffness. (D) Stretch induced ROS in mdx muscle was elevated above WT levels and eliminated in p47-/-/mdx diaphragm. (E) Image of the OCE experimental set-up. (F) Representative OCT image of the diaphragm taken prior to OCE experiments. (G) Transverse diaphragm muscle stiffness increased in mdx compared with WT mice; eliminating Nox2 ROS resulted in a decrease toward WT (p=0.09). (H) Genetic inhibition of Nox2 ROS reduced longitudinal diaphragm stiffness to WT values. (I) Muscle function was not altered following OCE measurements. p≤0.05 *Significant difference between groups in at least nanimals = 6 per group.
+
+### Fibrosis is a major determinant of diaphragm stiffness
 
 Increased DT-tubulin has been suggested to stabilize the microtubule network resulting in less dynamic microtubules thereby increasing tissue stiffness (Kerr et al., 2015; Robison et al., 2016). Our results demonstrate that while both α- and DT-tubulin are upregulated in dystrophic muscle the ratio of DT- to α-tubulin revealed no significant difference between groups (Figure 1E). A linear regression analysis demonstrated that fibrosis, DT-tubulin and α-tubulin significantly correlate to transverse and longitudinal diaphragm stiffness while the DT-/α-tubulin ratio only demonstrated a significant correlation with longitudinal stiffness (Table 1). A multiple linear regression analysis with either DT- or DT-/α-tubulin ratio and fibrosis revealed that the variance was no different than fibrosis alone (Table 1). Fibrosis accounted for 45% of the variance in the longitudinal and nearly 70% in the transverse direction. These data indicate that while tubulin content correlates with muscle stiffness, fibrosis accounts for the majority of the variance in muscle stiffness at the tissue level.
 
-## Eliminating Nox2 ROS improves diaphragm muscle and respiratory function
+**Table 1.**
+ Tubulin and stiffness correlations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Adj R2</th>
+      <th>Fibrosis</th>
+      <th>α-tubulin</th>
+      <th>β-tubulin</th>
+      <th>DT-tubulin</th>
+      <th>DT-/α-tubulin</th>
+      <th>MLR (fibrosis/DT)</th>
+      <th>MLR (fibrosis/ratio)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transverse</td>
+      <td>0.69 *</td>
+      <td>0.46 *</td>
+      <td>0.51 *</td>
+      <td>0.51 *</td>
+      <td>0.10</td>
+      <td>0.69</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Longitudinal</td>
+      <td>0.44 *</td>
+      <td>0.20 *</td>
+      <td>0.40 *</td>
+      <td>0.41 *</td>
+      <td>0.19 *</td>
+      <td>0.44</td>
+      <td>0.49</td>
+    </tr>
+  </tbody>
+</table>
+
+_Most variables significantly correlated with both transverse and longitudinal stiffness. MLR revealed fibrosis accounted for the majority of the variance observed in either stiffness measure. p≤0.05 *Significant correlation in at least nanimals = 6._
+
+### Eliminating Nox2 ROS improves diaphragm muscle and respiratory function
 
 Diaphragm muscle and respiratory function are compromised in mdx mice (Huang et al., 2011; Ishizaki et al., 2008; Pal et al., 2014; Percival et al., 2012). We previously have shown that eliminating Nox2 ROS production protected against diaphragm alterations in young (4–6 wks) mdx mice (Pal et al., 2014). Given muscle dysfunction in dystrophy is progressive, we wanted to determine whether eliminating Nox2 ROS provided protection against muscle/diaphragm dysfunction in older dystrophic mice. Here, we show that diaphragm function is impaired in adult (16–24 wks) mdx muscle and eliminating Nox2 ROS partially protected against the force deficits (Figure 4A). Eliminating Nox2 ROS in adult dystrophic muscle also protected against alterations in diaphragm fiber cross sectional area, fiber type and central nuclei Figure 4—figure supplement 1). These results, in combination with our previous data (Pal et al., 2014), indicate the lack of Nox2 ROS provides protection against pathophysiological alterations observed in dystrophic diaphragm muscle at different stages of disease pathology. In addition, eliminating Nox2 ROS protected against decrements in respiratory rate (f), minute ventilation (Mv), and peak inspiratory flow (PIF) in adult mdx mice (Table 3). A linear regression analysis demonstrated that fibrosis (Figure 4B) and both transverse and longitudinal diaphragm stiffness (Figure 4—figure supplement 2) significantly correlated with peak diaphragm force. A multiple linear regression analysis revealed when either transverse or longitudinal diaphragm stiffness was included with fibrosis, the variance was no different than fibrosis alone (Table 2). These data indicate Nox2-derived ROS drive alterations in mdx diaphragm which lead to diaphragm and respiratory dysfunction.
 
-## Taxol-induced MT polymerization has no effect on tissue stiffness but induced ROS production
+![Figure 4.](https://cdn.elifesciences.org/articles/31732/elife-31732-fig4-v2.jpg)
+
+**Figure 4.:** (A) WT was significantly different from mdx and p47-/-/mdx animals at all stimulation frequencies. The p47-/-/mdx animals were different from mdx at 60–100 Hz and trended toward significance at 40 Hz (p=0.098). (B) Fibrosis significantly correlated with muscle force. p≤0.05 *Significant difference between groups in at least nanimals = 6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31732/elife-31732-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Eliminating Nox2 ROS increased median cross sectional area compared with mdx diaphragm. (C) In dystrophic diaphragm lacking Nox2 ROS production the number of centralized nuclei were reduced compared with mdx diaphragm tissue. (D) Representative hematoxylin and eosin stained images of diaphragm cross-section showing central nuclei (arrow head) and smaller fibers (arrow). (E) Fiber type distribution was maintained by eliminating Nox2 ROS production in dystrophic diaphragm muscle. (F) Representative immunofluorescently labeled diaphragm cross-sectional images showing fiber type distribution. Type I (red), IIA (green), IIB/IIX (white x, unstained and viewed from bright field overlay). p≤0.05 *Significant difference between groups in at least nanimals = 3.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31732/elife-31732-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** There was a significant correlation between peak force and transverse as well as peak force and longitudinal diaphragm stiffness.
+
+**Table 2.**
+ Force and stiffness correlations
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Adj R2</th>
+      <th>Fibrosis</th>
+      <th>MLR (fibrosis/trans)</th>
+      <th>MLR (fibrosis/long)</th>
+      <th>MLR (fibrosis/long/trans)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Force</td>
+      <td>0.57</td>
+      <td>0.52</td>
+      <td>0.52</td>
+      <td>0.49</td>
+    </tr>
+  </tbody>
+</table>
+
+_MLR revealed fibrosis accounted for a majority of the variance observed in diaphragm muscle function. p≤0.05 *Significant difference between groups in at least nanimals = 6._
+
+Respiratory function.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT</th>
+      <th>mdx</th>
+      <th>p47-/-/mdx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>f (breath/min)</td>
+      <td>408.2 ± 14.5 *</td>
+      <td>279.8 ± 18.3</td>
+      <td>377.3 ± 17.0 *</td>
+    </tr>
+    <tr>
+      <td>Tv (ml)</td>
+      <td>0.25 ± 0.009</td>
+      <td>0.24 ± 0.008</td>
+      <td>0.26 ± 0.012</td>
+    </tr>
+    <tr>
+      <td>Mv (ml)</td>
+      <td>100.3 ± 5.6 *</td>
+      <td>65.9 ± 17.6</td>
+      <td>99.2 ± 8.6 *</td>
+    </tr>
+    <tr>
+      <td>PIF (ml/s)</td>
+      <td>7.6 ± 0.30 *</td>
+      <td>5.9 ± 0.56</td>
+      <td>8.0 ± 0.51 *</td>
+    </tr>
+    <tr>
+      <td>PEF (ml/s)</td>
+      <td>4.2 ± 0.25</td>
+      <td>3.2 ± 0.24</td>
+      <td>4.4 ± 0.39 *</td>
+    </tr>
+    <tr>
+      <td>Ti (s)</td>
+      <td>0.057 ± 0.002 *</td>
+      <td>0.080 ± 0.007</td>
+      <td>0.057 ± 0.002 *</td>
+    </tr>
+    <tr>
+      <td>Te (s)</td>
+      <td>0.129 ± 0.009 *</td>
+      <td>0.190 ± 0.012</td>
+      <td>0.138 ± 0.008 *</td>
+    </tr>
+  </tbody>
+</table>
+
+_Dystrophic mice lacking Nox 2 ROS production maintained respiratory function similar to WT levels. p≤0.05 *Significant difference vs. mdx in at least nanimals = 9._
+
+### Taxol-induced MT polymerization has no effect on tissue stiffness but induced ROS production
 
 To further elucidate the role of the MT network in tissue stiffness and ROS production, we incubated WT diaphragm with Taxol to polymerize the MT network. We observed similar alterations in the MT network between Taxol-treated WT and mdx animals (Figure 1F–I; Figure 5A–D). Taxol increased MT density (Figure 5D) and resulted in disorganization of the MT network (Figure 5B–C). There was no difference in passive stiffness between Taxol and DMSO-treated diaphragm tissue (Figure 5E–F); however, there was a difference in stretch-induced ROS production (Figure 5G). These data, in combination with our previous data, support the idea that while alterations in the MT network increase ROS production, increases in DT-tubulin, MT density or MT disorganization do not influence tissue stiffness.
 
@@ -90,56 +235,68 @@ Nox2 protein level and ROS production are upregulated early in dystrophic muscle
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 C57Bl/6J (WT) and C57Bl/10ScSn-Dmdmdx/J (mdx) were purchased from Jackson Laboratories (Bar Harbor, ME) and bred following their breeding strategy. Mice lacking p47phox (B6(Cg)-Ncf1m1J/J, JaxMice) were crossed with mdx mice to generate Ncf1-/-::mdx (p47 (-/-)/mdx) mice (Pal et al., 2014)). At approximately 5 months of age and in accordance with National Institutes of Health guidelines and approved by the Institutional Animal Care and Use Committee of Baylor College of Medicine, mice were anesthetized by isoflurane (2%) inhalation and euthanized by rapid cervical dislocation followed by thoracotomy.
 
-## Diaphragm passive stretch
+### Diaphragm passive stretch
 
 Diaphragm muscle was surgically dissected and sectioned into diaphragm strips with the rib end attached to a fixed hook and the other to the lever arm of a dual-mode lever system (305C-LR-FP; Aurora Scientific Inc., Aurora, ON, Canada) using silk suture (4-0). The diaphragm was placed in a physiological saline solution containing (in mM): 2.0 CaCl2, 120.0 NaCl, 4.0 KCl, 1.0 MgSO4, 25.0 NaHCO3, 1.0 KH2PO4, 10.0 glucose, pH 7.3 and continuously gassed with 95% O2–5% CO2 at 25°C. Muscle length was adjusted to elicit maximum twitch force (optimal length, Lo). A hand-held electronic caliper was used to measure Lo and the lever arm was programmed to passively stretch the diaphragm strip to 120% of Lo at 1 Lo/s for 5 min. At the end of the stretch protocol fiber bundles were removed from the rib, trimmed of excess connective tissue, blotted dry, and weighed. Muscle weight and Lo were used to estimate absolute forces expressed as N/cm2 (Close, 1972).
 
-To determine tissue stiffness, the Veronda-Westman model (Veronda and Westmann, 1970) was employed to quantify Young’s modulus for the first stretch. The Veronda-Westman model describes a nonlinear relationship between stress and strain and previously has been utilized to study the elasticity of a number of biological tissues, such as breast and skin (Krouskop et al., 1998; Veronda and Westmann, 1970). Assuming the diaphragm tissue as an incompressible Veronda-Westman material, under uniaxial tension, the axial stress σ is related to the resulted stretch λ through equation 1: (Oberai et al., 2009; Pavan et al., 2010)(1)σ= 2E3(λ2−1λ)(eγ(λ2+2λ−3)−12λ),where λ = 1 + ε (ε is the strain), Ε is the Young’s modulus of the diaphragm tissue at zero strain and γ is a nonlinear parameter representing the exponential increase rate of the Young’s modulus over the increase of strain. Young’s modulus was calculated through fitting the experimental data with Equation 1 in Matlab (MathWorks; Natick, MA).
+To determine tissue stiffness, the Veronda-Westman model (Veronda and Westmann, 1970) was employed to quantify Young’s modulus for the first stretch. The Veronda-Westman model describes a nonlinear relationship between stress and strain and previously has been utilized to study the elasticity of a number of biological tissues, such as breast and skin (Krouskop et al., 1998; Veronda and Westmann, 1970). Assuming the diaphragm tissue as an incompressible Veronda-Westman material, under uniaxial tension, the axial stress σ is related to the resulted stretch λ through equation 1: (Oberai et al., 2009; Pavan et al., 2010)
 
-## ROS measurements
+$$
+\sigma= \frac{2E}{3}(\lambda^{2}−\frac{1}{\lambda})(e^{\gamma(\lambda^{2}+\frac{2}{\lambda}−3)}−\frac{1}{2\lambda}),
+$$
+
+where λ = 1 + ε (ε is the strain), Ε is the Young’s modulus of the diaphragm tissue at zero strain and γ is a nonlinear parameter representing the exponential increase rate of the Young’s modulus over the increase of strain. Young’s modulus was calculated through fitting the experimental data with Equation 1 in Matlab (MathWorks; Natick, MA).
+
+### ROS measurements
 
 Diaphragm intracellular ROS was measured using 6-carboxy-2′,7′-dichlorodihydrofluorescein diacetate (DCFH-DA) (Invitrogen, Carlsbad, CA). Prior to stretch, the diaphragm was incubated with DCFH-DA for 30 min, washed using the physiological saline solution and de-esterified for an additional 30 min at 25°C. All cell-loading and imaging was performed in the dark to prevent light-induced oxidation of DCFH-DA. A Sutter Lamda DG-5 Ultra high-speed wavelength switcher was used to excite DCF at 470/20 nm and emission intensity was collected at 535/48 nm on a charge coupled device (CCD) Camera (CoolSNAP MYO, Photometrics, Tucson, AZ) attached to an Axio Observer (Zeiss) inverted microscope (20 × objective, 0.5 NA) at a rate of 0.2 Hz. Alterations in the rate of ROS production were baseline corrected and calculated over the final minute of the stretch period.
 
-## Effect of taxol on tissue stiffness and ROS production
+### Effect of taxol on tissue stiffness and ROS production
 
 WT diaphragm tissue was incubated with 20 μM Taxol (Sigma-Aldrich, St. Louis, MO) or DMSO (Sigma-Aldrich, St. Louis, MO) control for 2 hr at RT. After 1 hr, the tissue was incubated with DCFH-DA, de-esterified and passively stretched as described above.
 
-## Optical coherence elastography
+### Optical coherence elastography
 
-Optical coherence elastography (OCE) is a novel technique for nondestructive assessment of mechanical properties of tissues (Kennedy et al., 2017; Larin and Sampson, 2017). The principle of OCE is based on producing a pressure wave on the sample and monitoring the propagation of the wave using phase-sensitive optical coherence tomography (OCT) imaging on nanometer scale. The velocity of the wave propagation in different directions along the surface is used to deduct tissue elasticity anisotropically (Li et al., 2012; Wang et al., 2012). A home-built OCE system was utilized which contains a focused air-puff device for tissue stimulation (Wang et al., 2013) and a spectral-domain OCT system to capture the tissue mechanical response (Wang et al., 2014). The air-puff system provided a highly localized (~150 µm in diameter), short-duration (~1 ms), and low-pressure (below 10 Pa) air stream to stimulate the surface of the diaphragm tissue in a noncontact fashion. The induced tissue displacement had a micro-scale amplitude. The OCT system had an axial resolution of ~5 µm in tissue, an imaging beam diameter of ~4 µm at the focal plane, and a displacement sensitivity of ~11 nm with the phase of the OCT complex signal. The tissue displacement over time was detected using the temporal phase profile from the OCT system. A previously reported shear wave imaging OCT approach (Wang and Larin) was utilized to capture the elastic wave propagation in a depth-resolved 2D field of view with a time resolution of 16 µs. Cross-correlation of tissue displacement profiles was used to measure the time delay formed by the wave propagation at different locations. The elastic wave velocity was thus quantified based on the slope from a linear fit of the time delay with respect to the wave propagation distance. A surface wave model (Doyle, 1997) that relates the sample Young’s modulus Ε to the wave velocity C was utilized to estimate the tissue elasticity through Equation 2: (Li et al., 2012; Wang et al., 2012)(2)E=2ρ×(1+ν)3×C2(0.87+1.12ν)2where ρ is the tissue density and ν is the Poisson’s ratio; diaphragm density was 1060 kg/m3 (Mendez and Keys, 1960). Due to the nearly incompressibility of soft tissue, the Poisson’s ratio of 0.5 was utilized (Mathur et al., 2001). The averaged wave velocity value from 0 to 0.1 mm depth range from the tissue surface was used for calculation of the Young’s modulus. For each diaphragm sample, the elastic wave assessment was conducted in the transverse and longitudinal directions of the muscle fiber.
+Optical coherence elastography (OCE) is a novel technique for nondestructive assessment of mechanical properties of tissues (Kennedy et al., 2017; Larin and Sampson, 2017). The principle of OCE is based on producing a pressure wave on the sample and monitoring the propagation of the wave using phase-sensitive optical coherence tomography (OCT) imaging on nanometer scale. The velocity of the wave propagation in different directions along the surface is used to deduct tissue elasticity anisotropically (Li et al., 2012; Wang et al., 2012). A home-built OCE system was utilized which contains a focused air-puff device for tissue stimulation (Wang et al., 2013) and a spectral-domain OCT system to capture the tissue mechanical response (Wang et al., 2014). The air-puff system provided a highly localized (~150 µm in diameter), short-duration (~1 ms), and low-pressure (below 10 Pa) air stream to stimulate the surface of the diaphragm tissue in a noncontact fashion. The induced tissue displacement had a micro-scale amplitude. The OCT system had an axial resolution of ~5 µm in tissue, an imaging beam diameter of ~4 µm at the focal plane, and a displacement sensitivity of ~11 nm with the phase of the OCT complex signal. The tissue displacement over time was detected using the temporal phase profile from the OCT system. A previously reported shear wave imaging OCT approach (Wang and Larin) was utilized to capture the elastic wave propagation in a depth-resolved 2D field of view with a time resolution of 16 µs. Cross-correlation of tissue displacement profiles was used to measure the time delay formed by the wave propagation at different locations. The elastic wave velocity was thus quantified based on the slope from a linear fit of the time delay with respect to the wave propagation distance. A surface wave model (Doyle, 1997) that relates the sample Young’s modulus Ε to the wave velocity C was utilized to estimate the tissue elasticity through Equation 2: (Li et al., 2012; Wang et al., 2012)
 
-## Ex vivo force measurements
+$$
+E=\frac{2ρ\times(1+ν)^{3}\timesC^{2}}{(0.87+1.12ν)^{2}}
+$$
+
+where ρ is the tissue density and ν is the Poisson’s ratio; diaphragm density was 1060 kg/m3 (Mendez and Keys, 1960). Due to the nearly incompressibility of soft tissue, the Poisson’s ratio of 0.5 was utilized (Mathur et al., 2001). The averaged wave velocity value from 0 to 0.1 mm depth range from the tissue surface was used for calculation of the Young’s modulus. For each diaphragm sample, the elastic wave assessment was conducted in the transverse and longitudinal directions of the muscle fiber.
+
+### Ex vivo force measurements
 
 Diaphragm muscle was surgically dissected from mice and sectioned into diaphragm strips with one end attached to a fixed hook and the other to a force transducer (F30, Harvard Apparatus) using silk suture (4-0) in a physiological saline solution continuously gassed with 95% O2–5% CO2 at 25°C. Diaphragm strips were incubated at 25°C for 10 min and optimal muscle length (Lo) and voltage (Vmax) were adjusted to elicit maximum twitch force. Following a 5-min rest period, the diaphragm strip was stimulated at 150 Hz with pulse and train durations of 0.5 and 250 ms, respectively. Immediately after stimulation, Lo was determined using a hand-held electronic caliper and the diaphragm strip was placed at Lo in a 100 × 15 mm petri dish (VWR, Radnor, PA) for OCE measurements. Following OCE, the diaphragm was re-suspended from the force transducer at Lo and after a 5-min rest period stimulated again at 150 Hz to ensure OCE measurements did not compromise the diaphragms functional properties.
 
 To determine the force-frequency relationship, diaphragm strips were incubated at 30°C for 15 min and Lo and Vmax were adjusted to elicit maximum twitch force. Following a 5-min rest period, force-frequency characteristics were measured at stimulation frequencies of 1, 5, 10, 20, 40, 60, 80, and 100 Hz every minute with pulse and train durations of 0.5 and 250 ms. At the end of the contractile protocol, Lo was measured using a hand-held electronic caliper. Following both stimulation protocols, fiber bundles were trimmed of excess bone and connective tissue, blotted dry, and weighed. Muscle weight and Lo were used to estimate cross-sectional area and absolute forces expressed as N/cm2 (Close).
 
-## Unrestrained whole-body plethysmography
+### Unrestrained whole-body plethysmography
 
 Respiratory function was monitored in unrestrained mice using Buxco small animal whole-body plethysmography (Data Sciences International, New Brighton, MN) and FinePointe software (Data Sciences International, New Brighton, MN). The system was calibrated each day prior to data collection. On the day of data collection, animals were placed in individual chambers and given 30 min to acclimate; followed by 60 min of data collection. The software averaged the data over each minute and recorded a value every minute for 60 min. To ensure data was representative, breath frequency was used to ensure the mouse had not held its breath, buried its head under its body or was breathing too rapidly. Mean breath frequency was calculated and data which fell outside 1SD of the mean was excluded from the data analysis (Roberts et al., 2015).
 
-## Western blot
+### Western blot
 
 Lysates from diaphragm tissue were extracted and quantified with the bicinchoninic acid (BCA) protein assay kit (Pierce, Rockford, IL), using BSA as the standard. Lysates were separated via SDS-PAGE and transferred to polyvinyldifluoride (PVDF) membranes. All tubulin blots were incubated in blocking buffer (5%, w/v, dried skimmed milk in Tris-buffered saline, pH 7.4, and 0.2% Tween 20; TBST) for 60 min and incubated overnight with anti-α-tubulin (Santa Cruz Biotechnologies), anti-β-tubulin (Cell Signaling Technology), anti-detyrosinatedtubulin (Millipore) and anti-GAPDH (Millipore) in blocking buffer. Fibronectin and collagen blots were blocked for 60 min in blocking buffer as above except with. 05% Tween 20 and incubated with anti-fibronectin (Millipore), anti-collagen (Abcam) and anti-GAPDH for 60 min at room temperature (RT). Tubulin and fibronectin blots were exposed to IRDye Secondary Antibodies (LI-COR Biosciences) diluted in TBST for 60 min at RT and washed again. The LI-COr Odyssey Infrared Imaging System was used for blot detection and ImageJ software for blot analysis. The collagen blot was probed with secondary antibodies; ECL anti-mouse IgG HRP (NA931, GE Healthcare) and ECL Anti-rabbit IgG HRP (NA93401, GE Healthcare) for 60 min at RT. The membrane was imaged using the Chemidoc touch with Clarity and Clarity Max ECL reagent (Bio-Rad, Hercules, CA). Image analysis was performed using Biorad Image Lab 6.0 software.
 
-## Hydroxyproline assay
+### Hydroxyproline assay
 
 Diaphragm collagen content was measured using a hydroxyproline assay kit (Sigma-Aldrich, St. Louis, MO). Briefly, diaphragm tissue was homogenized and hydrolyzed in 200 µl of 6 M hydrochloric acid at 100°C for 3 hr. Hydrolysate was transferred to a 96-well plate (Corning, Corning, NY) and evaporated in an oven at 60°C. Following evaporation, the Chloromine T/Oxidation Buffer mixture was added to all wells and incubated for 5 min at RT. DMAB (4-(Dimethylamino) benzaldehyde) was diluted in a Perchloric Acid/Isopropanol solution, added to all wells, and incubated for 90 min at 60°C. A hydroxyproline standard curve (0–1.0 µg) was included in the assay to quantify hydroxyproline content in each sample. All samples, including the standard curve, were performed in duplicate and absorbance was measured at 560 nm. Results are reported as µg of hydroxyproline per mg of tissue (µg/mg).
 
-## Immunofluorescence
+### Immunofluorescence
 
 For fiber-type, serial diaphragm sections of 12–14 µm thickness were sectioned at −24°C using a refrigerated cryostat (Shandon Cryotome E, Thermo). Sections were fixed with cold methanol for 20 min and incubated overnight in a humid box at 4°C with Anti-Type I (BA-F8) and anti-Type IIA (SC-71) antibodies purchased from Developmental Studies Hybridoma Bank (DSHB; Iowa City, IA). Sections were then incubated for 3 hr with IgG1 and IgG2b isotype-specific secondary antibodies (Invitrogen, Waltham, MA). Slides were mounted with VECTASHIELD anti-fade mounting media containing DAPI (Vector Laboratories, Berlingame, CA). Images were acquired using a CCD camera (Digital Sight DS-Fi1, Nikon) attached to an upright microscope (Nikon Eclipse 80i, 10 × objective, 0.45 NA). Images were analyzed using ImageJ software.
 
 For α–tubulin staining, diaphragm tissue was fixed at Lo using 10% neutral buffered formalin (VWR, Radnor, PA) for 2 hr at room temperature. The tissue was rinsed three times and stored in PBS (ThermoScientific, Waltham, MA) plus 1 mM EDTA (Invitrogen, Waltham, MA). Diaphragm fibers were mechanically dissociated from the fixed diaphragm strip into single fibers and placed in 35-mm glass bottom culture dishes (MatTek, Ashland, MA) containing PBS plus 1 mM EDTA. Fibers were permeabilized with 0.1% Triton X-100 in PBS plus 1 mM EDTA for 10 min. After rinsing three times with PBS plus 1 mM EDTA, a blocking agent was added (0.1% saponin, 10% FBS in PBS plus 1 mM EDTA) for 1 hr at RT. Fibers were incubated with an Alexa-Fluor 488 conjugated α-tubulin antibody (Life Technologies, Waltham, MA) for 2 d at 4°C. Diaphragm fibers were washed with PBS and mounted with VECTASHIELD anti-fade mounting media containing DAPI (Vector Laboratories, Berlingame, CA) prior to microscopy. Fibers were imaged using a Zeiss LSM 780 confocal microscope (Zeiss, Oberkochen, Germany). Microtubule organization was analyzed using custom software (Liu and Ralston, 2014; software available through request to Dr Ralston) and microtubule density was assessed by summing 10 images from the intra-myofibrillar region of each fiber (>3 µm from surface), converted to a binary image and quantified using ImageJ software. Images were subjected to background subtraction and contrast enhancement using Image J for figure presentation only.
 
-## Histology
+### Histology
 
 Using a refrigerated cryostat (Shandon Cryotome E, Thermo), 12–14 μm thick serial sections were cut from the mid-belly region of the diaphragm at −24°C. Sections were stained using Masson’s Trichrome for fibrosis and Hematoxylin and Eosin for cross-sectional area (CSA) and centralized nuclei. Images were acquired using a CCD camera (Digital Sight DS-Fi1, Nikon) attached to an upright microscope (Nikon Eclipse 80i, 10 × objective, 0.45 NA). Images were analyzed using ImageJ software.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are reported as mean ±SEM, unless otherwise specified. A 1-way ANOVA was used to measure statistical differences between groups. A two-way RM ANOVA was used to determine statistical differences between groups for the force-frequency data. For CSA, a Kruskal-Wallis ANOVA was used to determine differences between groups. Tukey’s post-hoc test was used when statistical differences were identified. Linear regression and multiple linear regression models were used to determine correlations between variables. Statistical analysis was performed in Origin Pro (OriginLab Corporation, Northhampton, MA) with significance set a priori at p≤0.05.
